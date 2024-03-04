@@ -1,10 +1,15 @@
 ---
-tags: 
+tags:
+  - bit
+  - binary
+  - memory
 author:
   - jacgit18
-Status: 
+  - chatgpt
+Comments: This documentation discusses
+Status: Done
 Started: 
-EditDate: 
+EditDate: 2024-03-04
 Relates:
 ---
 **Bits and Binary Representation:**

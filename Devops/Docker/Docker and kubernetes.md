@@ -9,7 +9,7 @@ Started:
 EditDate: 2024-02-22
 Relates:
 ---
-Docker and Kubernetes are versatile tools capable of handling both stateless and stateful applications.
+[[Docker InDeph.canvas|Docker]] and Kubernetes are versatile tools capable of handling both stateless and stateful applications.
 
 - **Stateless Applications:**
   - Stateless applications don't need to retain any information.

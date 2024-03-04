@@ -4,6 +4,7 @@ tags:
   - streams
 author:
   - jacgit18
+  - chatgpt
 Comments: This documentation discusses Byte stream.
 Status: Done
 Started: 
