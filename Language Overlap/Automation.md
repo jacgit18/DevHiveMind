@@ -3,12 +3,15 @@ tags:
   - automation
   - linux
   - python
+  - CLI
+  - scripting
 author:
   - jacgit18
   - chatgpt
-Status: 
+Comments: This documentation discusses automation in different contexts.
+Status: Done
 Started: 
-EditDate: 
+EditDate: 2024-03-04
 Relates:
 ---
 ### Python for Automation and System Administration
