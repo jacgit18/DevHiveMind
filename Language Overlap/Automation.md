@@ -1,7 +1,11 @@
 ---
-tags: 
+tags:
+  - automation
+  - linux
+  - python
 author:
   - jacgit18
+  - chatgpt
 Status: 
 Started: 
 EditDate: 
@@ -42,3 +46,6 @@ Bash handles file operations adeptly—copying, moving, deleting files, and crea
 Bash proves invaluable in automating a spectrum of system administration tasks, including user management, package installations, network configurations, and system-wide setup.
 
 Both Python and Bash stand as indispensable tools, each with its unique strengths, ensuring a robust toolkit for automation and system administration across diverse environments.
+
+
+
