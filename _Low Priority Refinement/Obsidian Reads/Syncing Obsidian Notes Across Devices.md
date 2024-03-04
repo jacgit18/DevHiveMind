@@ -43,3 +43,39 @@ Sure! Here are the common directories you may find in an Obsidian vault:
 6. **`trash` directory**: When you delete notes or files within Obsidian, they are moved to the `trash` directory. This directory holds the deleted items until you decide to permanently delete them or restore them.
 
 Remember that the exact directory structure may vary depending on your operating system and how you've set up your Obsidian vault. It's recommended to double-check your specific vault configuration to confirm the directory names and locations.
+
+
+sudo systemctl start syncthing@jac  
+  
+sudo systemctl enable syncthing@jac  
+  
+  
+If you have a device with other devices connected and want to connect a third device that you want to give access to that device and the devices it's connected to check introducer  
+  
+  
+  
+https://youtu.be/PSx-BkMOPF4
+
+
+
+[Unit]  
+Description=SyncThing Continuous File Synchronization  
+  
+[Service]  
+ExecStart=/path/to/syncthing  
+Restart=always  
+User=your_username  
+Environment=HOME=/home/your_username  
+  
+[Install]  
+[WantedBy=multi-user.target](http://wantedby%3Dmulti-user.target/)  
+  
+  
+sudo apt update  
+sudo apt install syncthing  
+syncthing  
+clear  
+sudo nano /etc/systemd/system/syncthing.service  
+sudo systemctl daemon-reload  
+sudo systemctl enable syncthing  
+sudo systemctl start syncthing
