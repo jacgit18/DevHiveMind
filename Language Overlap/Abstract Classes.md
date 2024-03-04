@@ -10,36 +10,41 @@ Started: 2023-10-29
 EditDate: 2023-10-29
 Relates:
 ---
-## Abstraction
-  - The function and uses of a class are known
-  - The actual implementation is hidden from the user.
-    - This can be done using an abstract class or an Interface to define the behavior of a class without implementing it.
-  - Abstraction can be achieved by using abstract classes and interfaces.
-  - Deferring the behavior of an object to its child classes
-## Abstract Class vs. Interface
+## Abstraction in Object-Oriented Programming
 
-- What is the difference between an abstract class and an interface?
-  - An abstract class permits you to make a functionality that subclasses can implement or override
-  - An interface only permits you to state functionality but not to implement it.
-  - A class can extend only one abstract class, while a class can implement multiple interfaces.
-  - An abstract class is a class that contains the keyword abstract, while an Interface is a class with a method without a body that uses the keyword implement.
-  - Neither creates an object in java.
+- Abstraction involves:
+  - Understanding the function and uses of a class.
+  - Hiding the actual implementation from the user, promoting simplicity and ease of use.
+  - Achieved through abstract classes or interfaces, defining class behavior without implementation.
+  - Deferring object behavior to its child classes.
 
-## Inheritance vs. Abstraction
+## Abstract Class vs Interface Distinctions
 
-- What are the differences between inheritance and abstraction?
-  - The key difference between the two principles lies in how abstraction focuses on the privacy of functionality, while inheritance focuses on sharing functionality (and reusability).
+- **Abstract Class:**
+  - Allows defining functionality for subclasses to implement or override.
+  - Permits both method declaration and implementation.
+  - Supports single inheritance; a class can extend only one abstract class.
+  - Identified by the 'abstract' keyword.
+
+- **Interface:**
+  - Permits stating functionality but not implementing it.
+  - Includes method declarations without bodies.
+  - Supports multiple inheritance; a class can implement multiple interfaces.
+  - Identified by the 'interface' keyword.
+  - Neither abstract class nor interface creates objects in Java.
+
+## Inheritance vs Abstraction: Differentiating Principles
+
+- **Inheritance:**
+  - Focuses on sharing and reusing functionality.
+  - Allows a class to inherit attributes and behaviors from another class.
+  - Enhances code reusability and extensibility.
+
+- **Abstraction:**
+  - Focuses on hiding the implementation details.
+  - Simplifies complex systems for user interaction.
+  - Declares abstract classes or interfaces to define behavior without specifying implementation details.
+
+Understanding these principles aids in designing flexible, maintainable, and scalable object-oriented systems.
 # Structural model
 ![[Abstract class Diagram.png]]
-
-
-Abstract classes typically feature the abstract keyword in their declaration and should contain at least one abstract method, i.e., a method without a body. They can also have multiple concrete methods. The inheriting classes are obliged to implement the abstract methods, ensuring a consistent structure across subclasses.
-
-The key reasons for using abstract classes include:
-
-1. Offering default functionality for subclasses.
-2. Providing a template for future specific classes.
-3. Defining a common interface for its subclasses.
-4. Facilitating code reusability.
-
-In the context of Java, abstraction is the process of presenting only essential information to a user. This abstraction can be achieved using abstract classes or interfaces. The keyword "abstract" is used for classes and methods. Abstract classes cannot be used to create objects; access is only granted through inheritance. Abstract methods, which lack a method body, can only be used in abstract classes. These abstract classes can contain a combination of abstract and regular methods.
