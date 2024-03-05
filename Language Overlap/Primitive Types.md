@@ -1,10 +1,14 @@
 ---
-tags: 
+tags:
+  - dataType
+  - languageOverlap
 author:
   - jacgit18
-Status: 
+  - chatgpt
+Comments: This documentation discusses primitive types.
+Status: Refinement
 Started: 
-EditDate: 
+EditDate: 2024-03-05
 Relates:
 ---
 ![[Primitive.gif]]
@@ -67,7 +71,8 @@ testPrim.info = "sample"
 // is undefined because we create a wrapper that gets deleted but there wasn’t a previous value before  
 ```
 
->[!note] Using a string method doesn't mutate the string because string is a primitive values which  are immutable . 
+>[!note] 
+>Using a string method doesn't mutate the string because string is a primitive values which  are immutable . 
 ```javascript
 var bar = "baz"; 
 console.log(bar);               // baz 
@@ -75,7 +80,8 @@ bar.toUpperCase(); 
 console.log(bar);               // baz 
 ```
 
->[!note] Assignment gives the primitive a new (not a mutated) value
+>[!note] 
+>Assignment gives the primitive a new (not a mutated) value
 ```javascript
 bar = bar.toUpperCase();       // BAZ 
 == // compares values and converts type 

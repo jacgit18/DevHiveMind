@@ -1,10 +1,14 @@
 ---
-tags: 
+tags:
+  - CPU
+  - processes
 author:
   - jacgit18
-Status: 
+  - chatgpt
+Status: Refinement
+Comments: This documentation discusses how cpu works with processes.
 Started: 
-EditDate: 
+EditDate: 2024-03-05
 Relates:
 ---
 ![[Cores vs Threads.jpg]]
@@ -27,7 +31,7 @@ Multithreading is used a lot in game development but not as much in business app
 A daemon is a type of useful support thread that performs unique tasks like running continuously as a background process and wakes up to handle periodic service requests, which often come from remote processes. 
 
 ## Multiprocessing 
-[[Multiprocessing example | Multiprocessing]] - the idea of, instead of spinning up threads in a single process that shares the same resources of the process. we create individual unique processes with there on memory structure and you just communicate between these process using inter process communication or centralized Redis database, there are many ways to communicate between processes. 
+Multiprocessing - the idea of, instead of spinning up threads in a single process that shares the same resources of the process. we create individual unique processes with there on memory structure and you just communicate between these process using inter process communication or centralized Redis database, there are many ways to communicate between processes. 
 
 Multiprocessing is good for scaling up to be used on multiple machines and can used to brute force through a password with a hash 
 

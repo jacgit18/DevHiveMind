@@ -1,44 +1,51 @@
 ---
-tags: 
+tags:
+  - codeExecution
+  - languageOverlap
 author:
   - jacgit18
-Status: 
+  - chatgpt
+Comments: This documentation discusses name space and order of the operations of code.
+Status: Done
 Started: 
-EditDate: 
-Relates:
+EditDate: 2024-03-05
+Relates: "[[Flow of Control]]"
 ---
-Namespace refers to the programming paradigm of providing scope to the identifiers (names of types, functions, variables, etc) to prevent collisions between them. For instance, the same variable name might be required in a program in different contexts. Using namespaces in such a scenario will isolate these contexts such that the same identifier can be used in different namespaces. In this article, we will discuss how namespaces can be initialized and used in JavaScript. JavaScript does not provide namespace by default. However, we can replicate this functionality by making a global object which can contain all functions and variables. 
+### JavaScript Namespace and Scope:
 
-You only can go up a scope chain  
+A namespace in programming provides scope to identifiers, preventing collisions between names in different contexts. In JavaScript, which lacks native namespace support, we can emulate it by creating a global object containing functions and variables.
 
-The highest scope chain is the global which can only access itself 
+#### Scope Chain in JavaScript:
 
-The next is outer scope the outer scope is like a parent function it has access to itself and the global 
+JavaScript's scope chain follows a hierarchy:
 
- and the inner scope is the lowest scope and can access the outer scope and global scope 
+1. Global Scope: Accessible only to itself.
+2. Outer Scope: Similar to a parent function, accessible to itself and the global scope.
+3. Inner Scope: The lowest scope, accessing both outer and global scopes.
 
-for(var i = 0; i < 5; i++){ 
+#### Variable Scoping Examples:
 
-  console.log(i) = 4 
+```javascript
+// Function-scoped variable with 'var'
+for (var i = 0; i < 5; i++) {
+    console.log(i); // Outputs 0 to 4
+}
+console.log(i); // Outputs 5 since 'var' is function-scoped
 
-} 
+// Blocked-scoped variable with 'let'
+for (let j = 0; j < 5; j++) {
+    console.log(j); // Outputs 0 to 4
+}
+// console.log(j); // Won't run, as 'let' is blocked-scoped
 
-console.log(i) = 5 // will run since were are function scoped 
+// 'const' is also blocked-scoped
+const exampleConst = "Blocked Scoped";
 
-for(let j = 0; j < 5; j++){ 
+// Order of Operation
+console.log(typeof 1); // Outputs 'number'
+console.log(typeof (typeof 1)); // Outputs 'string'
+```
 
-  console.log(j) = 4 
+### Conclusion:
 
-} 
-
-console.log(j) = 5 // wont run because were blocked scoped 
-
-const is also blocked scoped 
-
-order of operation 
-
-------------------- 
-
-console.log(typeof 1) is number 
-
-console.log(typeof (typeof 1)) is string
+JavaScript lacks native namespace support, but we can emulate it by organizing functions and variables within a global object. Understanding scope chains and the differences between 'var,' 'let,' and 'const' is crucial for effective variable scoping in JavaScript. The examples showcase the impact of scoping on variables and the order of operations when using the `typeof` operator.

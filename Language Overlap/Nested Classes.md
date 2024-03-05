@@ -5,95 +5,83 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses
+Comments: This documentation discusses Nested Classes.
 Status: Refinement
 Started: 
 EditDate: 2024-03-04
 Relates:
 ---
-In Java, it is possible to define a class within another class, such classes are known as nested classes. They enable you to logically group classes that are only used in one place, thus this increases the use of encapsulation, and creates more readable and maintainable code.
+### Nested Classes in Java:
 
-The scope of a nested class is bounded by the scope of its enclosing class. Thus in below example, class NestedClass does not exist independently of class OuterClass.
+In Java, nested classes enable the logical grouping of classes used exclusively in one place, promoting encapsulation and enhancing code readability and maintainability.
 
-A nested class has access to the members, including private members, of the class in which it is nested. But the enclosing class does not have access to the members of the nested class.
+#### Key Points:
 
-A nested class is also a member of its enclosing class.
+- **Scope and Independence:**
+  - The scope of a nested class is bound by the scope of its enclosing class.
+  - In the example, `NestedClass` does not exist independently of `OuterClass`.
+  
+- **Access to Members:**
+  - A nested class has access to the members, including private ones, of its enclosing class.
+  - The enclosing class does not have direct access to members of the nested class.
+  
+- **Membership:**
+  - A nested class is also considered a member of its enclosing class.
+  
+- **Categories:**
+  - **Static Nested Class:** Declared as static, it is a nested class that can be accessed without creating an instance of the outer class.
+  - **Inner Class:** A non-static nested class.
 
-As a member of its enclosing class, a nested class can be declared private, public, protected, or package private(default).
-
-Nested classes are divided into two categories:
-
-static nested class : Nested classes that are declared static are called static nested classes.
-
-inner class : An inner class is a non-static nested class.
+#### Example:
 
 ```java
-class OuterClass  
-{  
-...  
-    class NestedClass  
-    {  
-        ...  
-    }  
+class OuterClass {
+    // ...
+
+    class InnerClass {
+        // ...
+    }
 }
 ```
 
+In this example, `InnerClass` is a non-static nested class of `OuterClass`. Nested classes provide a structured way to organize and group related functionality within a class.
 ![[classes.png]]
 
-In the case of normal or regular inner classes, without an outer class object existing, there cannot be an inner class object. i.e., an object of the inner class is always strongly associated with an outer class object. But in the case of static nested class, Without an outer class object existing, there may be a static nested class object. i.e., an object of a static nested class is not strongly associated with the outer class object.As with class methods and variables, a static nested class is associated with its outer class. And like static class methods, a static nested class cannot refer directly to instance variables or methods defined in its enclosing class: it can use them only through an object reference.They are accessed using the enclosing class name.
+### Inner Classes and Packages in Java:
 
-[https://www.geeksforgeeks.org/local-inner-class-java/](https://www.geeksforgeeks.org/local-inner-class-java/)
+#### Inner Classes:
+In regular inner classes, an object of the inner class is strongly associated with an outer class object. However, in the case of a static nested class, there may be a static nested class object without a corresponding outer class object. A static nested class is associated with its outer class, similar to class methods and variables. It cannot directly refer to instance variables or methods in the enclosing class but can use them through an object reference, accessed using the enclosing class name.
 
-[https://www.geeksforgeeks.org/anonymous-inner-class-java/](https://www.geeksforgeeks.org/anonymous-inner-class-java/)
+[More about Inner Classes](https://docs.oracle.com/javase/tutorial/java/javaOO/nested.html)
 
+#### Packages in Java:
+Java has two types of packages: built-in (part of the Java API) and user-defined (created by developers). To use a package in a class, use the `import` keyword followed by the package name using dot notation.
 
+#### Java Enums:
+Java Enums represent a group of constants and are declared using the `enum` keyword. Enum constants are in uppercase letters.
 
-Type of packages 
+[More about Java Enums](https://docs.oracle.com/javase/tutorial/java/javaOO/enum.html)
 
-These are the types of packages: 
+#### Java User Input:
+Java User Input is captured using the `Scanner` class, which can parse primitive types and strings, breaking down input into tokens using a delimiter pattern.
 
--   Built-in - are a part of the Java API and are free to use. 
-    
--   User-defined - created by the developer. 
-    
+[Scanner Class Documentation](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Scanner.html)
 
-To use a package in a class, use the keyword import and the package name with dot notation. 
+### Multiple Classes in a Java File:
 
-Java Inner Classes 
+While each Java file needs at least one class, it can have multiple classes. However, only one class can be declared as public, and the file must be named after the public class. If there are multiple public classes in the same file, the code will not compile. Accessing methods and instances of other classes is possible by creating their respective objects in the public class.
 
-[Java Inner classes](https://docs.oracle.com/javase/tutorial/java/javaOO/nested.html) (nested classes) allow developers to define a class within another.  Java Inner classes are a way to group classes only used in one place, increase encapsulation and lead to more readable and maintainable code. 
+Example:
+```java
+public class Test {
+    public static void main(String... s) {
+        System.out.println("Hello Guys");
+    }
+}
 
-Java Enums 
+class Test1 {}
 
-[Java Enums](https://docs.oracle.com/javase/tutorial/java/javaOO/enum.html) represent a group of constants.  Use the keyword enum and separate the constants with commas.  Enum constants are in uppercase letters. 
+class Test2 {}
+```
 
-Java User Input 
-
-Java User Input is captured using the [Scanner](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Scanner.html) class.  Scanner can parse primitive types and strings.  It breaks down the input into tokens using a delimiter pattern.
-
-
-
-
-Each java file needs at least one class and cant have multiple classes  
-
-Yes, we can have multiple classes in same java file. But, there is one restriction over here, which is that you can have as many classes in one file but only one public class is allowed. If we try to declare 2 classes as public in the same file, the code will not compile. 
-
-The reason being is you need to name the file with the name of the class which is declared as public and we cannot have the same file with different names, and also that public class should be containing the main method as the compiler will check for the main method first. So, there is no chance to have two public classes in one file. 
-
-If we want to access the methods, instances of the other classes we can just make their respective objects in the public file and simply access them. 
-
-
-
-public class test{ 
-
-public static void main(String...s){ 
-
-System.out.println("Hello Guys"); 
-
-} 
-
-} 
-
-class test1{} 
-
-class test2{}
+In this example, the file is named `Test.java`, and the public class is `Test` containing the `main` method. Classes `Test1` and `Test2` can be accessed within the same file.

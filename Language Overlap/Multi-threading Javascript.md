@@ -5,30 +5,77 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses multi threading in javascript
+Comments: This documentation discusses multi threading in javascript.
 Status: Refinement
 Started: 
 EditDate: 2024-03-05
 Relates:
 ---
-es, JavaScript does support multithreading, but with some limitations. In traditional JavaScript, which runs in web browsers, the language itself is single-threaded. This means that it executes one instruction at a time, in a sequential manner. This single thread is known as the "main thread" and handles all JavaScript code execution, DOM manipulation, and event handling.
+JavaScript primarily operates as a single-threaded language, executing one instruction at a time sequentially in the main thread. However, it supports multithreading through Web Workers in web browser environments. Web Workers allow background execution of JavaScript code in separate threads, enabling parallel processing for tasks such as data processing and heavy computations. These threads communicate with the main thread through a message-passing system.
 
-However, JavaScript also provides mechanisms for concurrent programming through Web Workers. Web Workers allow you to run JavaScript code in the background using separate threads, apart from the main thread. Web Workers can perform tasks such as data processing, heavy computations, or other time-consuming operations without blocking the main thread and affecting the responsiveness of the user interface.
+It's crucial to note that Web Workers have limitations. They run in a distinct global context without direct access to the DOM, and communication with the main thread involves serialized data through explicit message passing. Browser support for Web Workers varies, so compatibility checks are essential.
 
-Web Workers enable [[CPUs#^2862c2 |parallel processing]]  by allowing multiple threads of execution to work concurrently. They communicate with the main thread using a message-passing system, passing data back and forth. This way, you can leverage multithreading in JavaScript to improve the performance and responsiveness of web applications.
+Outside the web browser, environments like Node.js offer multithreading capabilities. Node.js utilizes features like the "cluster" module, enabling concurrent processing through multiple worker processes. These processes can run on separate threads, leveraging multiple CPU cores for enhanced performance.
 
-It's important to note that [[Web Workers ]]have their own limitations and considerations. For instance, they run in a separate global context and don't have direct access to the DOM or other APIs available to the main thread. Communication between the main thread and web workers is done through serialized data, requiring explicit message passing. Additionally, browser support for web workers is widespread but not universal, so it's important to check for compatibility with the target browsers.
+In summary, while traditional JavaScript is single-threaded, Web Workers provide a mechanism for multithreading in web browsers, and additional features or libraries in environments like Node.js can further utilize multithreading for improved performance.
 
-Apart from Web Workers, JavaScript environments outside the web browser, such as Node.js, can also utilize multithreading through additional features or libraries. For example, Node.js provides the "cluster" module to facilitate concurrent processing using multiple worker processes. These processes can run on separate threads, taking advantage of multiple CPU cores for improved performance.
+### `async/await` in JavaScript:
 
-In summary, while traditional JavaScript itself is single-threaded, you can leverage multithreading capabilities in JavaScript through Web Workers in web browser environments and through additional features or libraries in other JavaScript runtime environments like Node.js.
+The `async/await` syntax simplifies asynchronous programming in JavaScript by enhancing readability and structure when working with Promises. It does not introduce multithreading but rather facilitates the handling of asynchronous operations within the single thread of execution. Asynchronous operations rely on non-blocking I/O, event loops, and callback queues.
 
+The example Java code illustrates multiprocessing using `ExecutorService`, while the JavaScript code showcases multithreading using Node.js worker threads. Both examples demonstrate parallel execution of time-consuming tasks, emphasizing the differences between multithreading and the event-driven architecture of JavaScript.
 
+```java
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
 
-avaScript is inherently single-threaded, meaning it has a single thread of execution.  
-  
-The purpose of `async/await` is to simplify asynchronous programming by providing a more readable and structured way to work with Promises, which are used to handle asynchronous operations in JavaScript. It allows you to write asynchronous code that looks and behaves more like synchronous code, making it easier to reason about.  
-  
-Under the hood, asynchronous operations in JavaScript are typically handled by non-blocking I/O operations, event loops, and callback queues. When an asynchronous operation is encountered, it is scheduled to run in the background, and the JavaScript engine continues executing other code. Once the asynchronous operation completes, a callback is triggered, and the associated code is executed.  
-  
-This means that while `async/await` allows you to write code that appears synchronous, it doesn't introduce multithreading or parallel execution. It still relies on the single thread of execution and event-driven architecture of JavaScript.
+public class MultiprocessingExample {
+
+    public static void main(String[] args) {
+        System.out.println("Start");
+
+        // Create an ExecutorService with a fixed number of threads
+        ExecutorService executorService = Executors.newFixedThreadPool(2);
+
+        // Submit tasks to the ExecutorService
+        executorService.submit(MultiprocessingExample::task1);
+        executorService.submit(MultiprocessingExample::task2);
+
+        // Shutdown the ExecutorService
+        executorService.shutdown();
+
+        System.out.println("End");
+    }
+
+    private static void task1() {
+        System.out.println("Executing Task 1");
+        // Perform some time-consuming operation
+        System.out.println("Task 1 completed");
+    }
+
+    private static void task2() {
+        System.out.println("Executing Task 2");
+        // Perform some time-consuming operation
+        System.out.println("Task 2 completed");
+    }
+}
+```
+
+```javascript
+// Node.js Worker Threads Example
+const { Worker } = require('worker_threads');
+
+console.log("Start");
+
+// Create workers for Task 1 and Task 2
+const worker1 = new Worker('./task1.js');
+const worker2 = new Worker('./task2.js');
+
+// Listen for messages and handle worker termination
+worker1.on('message', message => console.log(`Task 1 completed: ${message}`));
+worker2.on('message', message => console.log(`Task 2 completed: ${message}`));
+worker1.on('exit', () => console.log("Worker 1 terminated"));
+worker2.on('exit', () => console.log("Worker 2 terminated"));
+
+console.log("End");
+```

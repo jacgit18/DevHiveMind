@@ -1,10 +1,15 @@
 ---
-tags: 
+tags:
+  - multiThreading
+  - parallelProcesses
+  - streams
+  - example
 author:
   - jacgit18
-Status: 
+Comments: This documentation discusses an example of code using parallel streams and multithreading.
+Status: Refinement
 Started: 
-EditDate: 
+EditDate: 2024-03-05
 Relates:
 ---
 Use parallel stream to handle writing to file with multithreading
