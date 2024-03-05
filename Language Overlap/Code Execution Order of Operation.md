@@ -1,14 +1,15 @@
 ---
 tags:
-  - innerWorkings
   - asynchronous
   - codeExecution
+  - synchronous
 author:
   - jacgit18
-Status: 
+  - chatgpt
+Status: Done
 Started: 
-EditDate: 
-Relates:
+EditDate: 2024-03-04
+Relates: "[[Asynchronous Programming]]"
 ---
 The terms "asynchronous" and "synchronous" refer to different approaches to handling tasks or operations in a program. Let's understand the purpose of asynchronous and synchronous code:
 

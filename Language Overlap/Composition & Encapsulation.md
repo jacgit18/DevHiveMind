@@ -1,11 +1,14 @@
 ---
 tags:
   - ClassStructure
+  - OOP
 author:
   - jacgit18
-Status: 
+  - chatgpt
+Comments: This documentation discusses Composition and Encapsulation.
+Status: Done
 Started: 
-EditDate: 
+EditDate: 2024-03-04
 Relates:
 ---
 
