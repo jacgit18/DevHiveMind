@@ -15,12 +15,13 @@ Relates:
 ![[Inheritance Class Diagram.png]]
 
 
-With inheritance you just access what another class can do
+In the realm of programming, inheritance serves as a gateway to accessing the functionalities of another class. It facilitates the reuse of code and allows a class to inherit attributes and methods from a parent class. This mechanism promotes code organization and fosters a hierarchical structure in object-oriented programming.
 
-Composition is when one class has a field with a reference to an object of another class and used
 
-A closure is an example of encapsulation: it encapsulates the body of code together with the lexical scope. The only means of access into the capsule is through the function: the function is like a "method", and the elements of the captured lexical environment are like "slots" in an object.
+Contrasting with inheritance, composition involves one class containing a field that references an object of another class. This approach emphasizes building complex functionalities by combining simpler, independent components. Composition enhances flexibility, as it enables a class to use the features of another without establishing a rigid parent-child relationship.
 
+
+A closure encapsulates a body of code along with its lexical scope. It serves as an exemplar of encapsulation by bundling related functionalities together. Access to the encapsulated elements is solely through the function, akin to a "method," while the lexical environment's components act as "slots" within this programming capsule. Closures showcase the elegance of encapsulation in managing and protecting code logic.
 ## Inheritance
 
 Obviously, you’ll want to use inheritance in all object-oriented languages, C++, C#, Java, Go… Wait. No, Go is a no-go, it doesn’t have any inheritance. Anyways - some languages support object-oriented paradigms fuller than others. C++ for example offers multiple inheritances. That’s right - every class can have multiple parents. Standard even says that every compiler has to support at least 1024 parents.

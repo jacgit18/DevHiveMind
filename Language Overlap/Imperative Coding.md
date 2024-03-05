@@ -1,11 +1,14 @@
 ---
 tags:
   - CodebaseDecision
+  - imperative
 author:
   - jacgit18
-Status: 
+  - chatgpt
+Comments: This documentation discusses imperative coding.
+Status: Done
 Started: 
-EditDate: 
+EditDate: 2024-03-05
 Relates:
 ---
 Imperative programming is a paradigm that focuses on defining how to achieve a task step by step, emphasizing a sequential and low-level approach. This method of programming is often divided into various approaches:

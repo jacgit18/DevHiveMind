@@ -1,10 +1,16 @@
 ---
-tags: 
+tags:
+  - keywords
+  - languageOverlap
+  - OOP
+  - interfaces
 author:
   - jacgit18
-Status: 
+  - chatgpt
+Comments: This documentation discusses implement keyword.
+Status: Refinement
 Started: 
-EditDate: 
+EditDate: 2024-03-05
 Relates:
 ---
 Implements: In Java, the implements keyword is used to implement an interface. An interface is a special type of class which implements a complete abstraction and only contains abstract methods. To access the interface methods, the interface must be “implemented” by another class with the implements keyword and the methods need to be implemented in the class which is inheriting the properties of the interface. Since an interface is not having the implementation of the methods, a class can implement any number of interfaces at a time. 
@@ -89,7 +95,7 @@ if (can(someObject, "quack")) 
 } 
 ```
 
---------------------------------------------- 
+
 
 Here is an approach to Interfaces / Abstract Classes that is not very cumbersome, is explicative, keeps implementations inside of Abstractions to a minimum, and leaves enough room for dynamic or custom methodologies: 
 
