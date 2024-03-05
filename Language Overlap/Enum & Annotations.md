@@ -1,13 +1,16 @@
 ---
-tags: 
+tags:
+  - enum
+  - metaData
 author:
   - jacgit18
-Status: 
+  - chatgpt
+Comments: This documentation discusses uses enums and annotation.
+Status: Done
 Started: 
-EditDate: 
+EditDate: 2024-03-05
 Relates:
 ---
-
 Enums in Java are used to define a fixed set of constants. An enum type is a special type of class that represents a group of related constants. Enums provide a way to create a collection of predefined values that can be used as options or choices in your program.
 
 
@@ -20,12 +23,10 @@ enum LicenseType {
 ```
 
 ## Annotations
+Annotations in Java provide a way to add metadata or extra information to your code. They can be applied to classes, methods, variables, and other program elements. Annotations do not define constants like enums; instead, they are used to provide additional information or instructions to the compiler, runtime, or other tools.
 
-Certainly! Let's update the fields in the `@LicenseInfo` annotation to something more meaningful for the context of a driving school. We can change the fields to `category` and `issuedBy`, which represent the license category and the authority that issued the license, respectively.
-
-Annotations: Annotations in Java provide a way to add metadata or extra information to your code. They can be applied to classes, methods, variables, and other program elements. Annotations do not define constants like enums; instead, they are used to provide additional information or instructions to the compiler, runtime, or other tools.
-
->[!note] Annotations are a special kind of interface which acts as meta data while not changing target behavior but must be interpreted. 
+>[!note] 
+>Annotations are a special kind of interface which acts as meta data while not changing target behavior but must be interpreted. 
 ```java
 @interface LicenseInfo {
     String category();
@@ -33,7 +34,7 @@ Annotations: Annotations in Java provide a way to add metadata or extra informat
 }
 ```
 
-Now, we can apply the updated `@LicenseInfo` annotation to each enum constant in the `LicenseType` enum, providing specific information about the license category and the authority that issued the license.
+Now, we can apply the `@LicenseInfo` annotation to each enum constant in the `LicenseType` enum, providing specific information about the license category and the authority that issued the license.
 
 ```java
 @LicenseInfo(category = "Car License", issuedBy = "Department of Motor Vehicles")
@@ -48,7 +49,7 @@ TRUCK
 
 In this example, the `category` field represents the type of license, such as a car license, motorcycle license, or truck license. The `issuedBy` field represents the authority responsible for issuing the license, such as the Department of Motor Vehicles or the Department of Transportation.
 
-Feel free to adapt these fields to match the specific categories and issuing authorities relevant to your driving school scenario.
+
 
 
 

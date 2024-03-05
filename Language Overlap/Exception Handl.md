@@ -1,5 +1,6 @@
 ---
-tags: 
+tags:
+  - exception
 author:
   - jacgit18
 Status: 
@@ -7,26 +8,56 @@ Started:
 EditDate: 
 Relates:
 ---
-## Background
+## Understanding Java Exceptions
 
-Have you ever accessed one of your applications and seen weird errors like IOException or IllegalNullPointer?  In Java, an [Exception](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Exception.html) aka “exceptional event” is an event that occurs during the execution of a program and can disrupt its normal flow. Don’t confuse errors with exceptions.  Exceptions are events from which we can recover, errors are serious problems that cannot be recovered from but require code changes. The JDK covers most general cases, but Java does allow developers to create their exceptions. This is frowned upon but sometimes necessary, depending on the scenario.
+**Background:**
 
-## The Call Stack
+Encountered bizarre errors like IOException or IllegalNullPointer in your Java applications? These are examples of [Exceptions](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Exception.html), also known as "exceptional events," disrupting the normal flow of program execution. It's essential to distinguish exceptions from errors; exceptions are recoverable events, while errors are severe issues requiring code modifications. While the JDK covers general cases, Java allows developers to create their exceptions, albeit this practice is discouraged.
 
-Let’s understand how this works.  When an error occurs within a method, the method creates an exception object and hands it off to the runtime system. The exception object contains information about the error, such as its type and the program's state when the error occurred.  Next, the runtime system searches the call stack for an exception handler which is a method that contains a block of code that can handle the exception. Once an exception handler is found that meets the criteria of the error, the runtime system passes the exception object to the handler.  This is known as catching the exception.  If the runtime system cannot find an appropriate exception handler, then the runtime system terminates, which also terminates your application.
+**The Call Stack:**
 
-## Benefits of Exception handling
+Understanding the mechanism:
+1. When an error arises in a method, an exception object is created, holding details about the error.
+2. The runtime system traverses the call stack, searching for an exception handler—a method with code to manage the exception.
+3. Once a matching handler is found, the exception object is passed to it, a process known as catching the exception.
+4. If no suitable handler is found, the runtime system terminates, leading to the application's termination.
 
--   Separation from regular code. This keeps the main logic of the program separate from the code that handles exceptional events.
--   Propagating the error to the appropriate method.
--   Grouping and differentiating error types. The developer has the choice to handle specific exceptions (FileNotFoundException), combine exceptions (IOException), or a catch-all by catching the Exception class.
+**Benefits of Exception Handling:**
 
-## Type of Exceptions
+- **Separation from Regular Code:** Keeps the primary program logic separate from code dealing with exceptional events.
+- **Error Propagation:** Facilitates passing errors to the appropriate method.
+- **Grouping and Differentiation:** Enables categorizing specific exceptions (e.g., FileNotFoundException), combining exceptions (e.g., IOException), or a catch-all by handling the Exception class.
 
-There are two types of exceptions:  Checked and Unchecked.
+**Types of Exceptions:**
 
--   Checked exceptions that can be handled at compile time. The catch or specify requirement applies. This means the exception can be handled or propagated up the class stack. To be propagated, the keyword throw is used. All exceptions are checked exceptions except subclasses of Runtime Exception or Error. FileNotFoundException is an example of a checked exception.  
-    For example:
+Two categories exist: Checked and Unchecked.
+
+- **Checked Exceptions:** Handleable at compile time. The catch or specify requirement applies, meaning the exception can be managed or propagated up the class stack using the `throw` keyword. All exceptions, except subclasses of RuntimeException or Error, fall into this category. An example is FileNotFoundException.
+
+*For example:*
+```java
+package tech.strategio.tau.eclipse
+
+import java.io.file
+import java.io.IOException
+
+public class ExceptionHandeling{
+	public static void main(String args[]){
+		createNewFile();
+	}
+	
+	public static void createNewFile(){
+		File file = new File("resources/nonexist.txt");
+		try {
+		file.createNewFile();
+		} catch (IOException e) {
+		System.out.print
+		e.printStackTrace();
+		}
+	}	
+
+}
+```
 
 ![[Exception.png]]
 
