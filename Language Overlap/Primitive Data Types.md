@@ -1,15 +1,16 @@
 ---
 tags:
   - dataType
+  - languageOverlap
 author:
   - jacgit18
-Status: 
+  - chatgpt
+Comments: This documentation discusses Primitive Data Types.
+Status: Done
 Started: 
-EditDate: 
-Relates:
+EditDate: 2024-03-05
+Relates: "[[Primitive Types]]"
 ---
-Here is a list of commonly used primitive types across various programming languages:
-
 1. Integer:
    - C/C++: int, short, long, char
    - Java: int, short, long, byte, char

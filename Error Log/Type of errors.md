@@ -1,13 +1,15 @@
 ---
 tags:
   - error
+  - errorHandling
 author:
   - jacgit18
+  - chatgpt
 Comments: This documentation discusses type of errors.
 Status: Done
 Started: 
 EditDate: 2024-02-03
-Relates:
+Relates: "[[Exception Handling]]"
 ---
 ## Syntax Error 
 Typically associated when you forget a bracket or put the wrong sign 

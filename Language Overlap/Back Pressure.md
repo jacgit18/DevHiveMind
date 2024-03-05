@@ -5,11 +5,11 @@ tags:
   - architecturalParadigm
 author:
   - jacgit18
-Comments: This documentation discusses
+Comments: This documentation discusses back pleasure.
 Status: Done
 Started: 
-EditDate: 
-Relates:
+EditDate: 2024-03-04
+Relates: "[[Asynchronous Programming]]"
 ---
 **Understanding Back Pressure in Asynchronous Programming and Reactive Systems**
 
@@ -17,7 +17,8 @@ Back pressure is a fundamental concept within the realm of asynchronous programm
 
 To manage back pressure effectively, systems often employ buffers or queues to temporarily store surplus events or data until the system can catch up. Reactive frameworks such as RxJava, Project Reactor, and Akka Streams frequently come equipped with built-in tools for handling back pressure, making it more manageable.
 
-> [!info] Back pressure is less relevant in synchronous code since execution is typically blocking, and the producer will wait for the consumer to process the data.
+> [!info] 
+> Back pressure is less relevant in synchronous code since execution is typically blocking, and the producer will wait for the consumer to process the data.
 
 While back pressure is a concept deeply rooted in reactive programming, it can also prove valuable in event-driven architectures, especially when designing systems that depend on asynchronous communication and need to manage varying rates of event generation and consumption.
 
@@ -163,7 +164,7 @@ In this example:
 - The `simulateWork` method simulates some heavy computation or network call.  
 - We use a `sleep` method to allow the subscription to run for a certain period, demonstrating back pressure.  
 
-`BackPressureExample::processData`, represents a method reference. [[Static Method Reference | Method references]] are a shorthand way to refer to a method as a lambda expression for specific contexts, particularly when working with functional interfaces. In your example, `BackPressureExample::processData` accomplishes the following:
+`BackPressureExample::processData`, represents a method reference. [[Static Method Reference |Method references]] are a shorthand way to refer to a method as a lambda expression for specific contexts, particularly when working with functional interfaces. In your example, `BackPressureExample::processData` accomplishes the following:
 
 1. **Reference to a Method:** It refers to the `processData` method of the `BackPressureExample` class.
 

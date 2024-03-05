@@ -2,6 +2,7 @@
 tags: 
 author:
   - jacgit18
+Comments: Need to cleanup.
 Status: Perpetual
 Started: 
 EditDate: 
@@ -207,7 +208,7 @@ Ask chat GPT how would you write integration test for a particular function
 
 # <mark style="background: #FF5582A6;">Future immediate</mark>
   #todo/High/Future
-- [ ] Open Source [[To Look into]]
+-[ ]
 
   
   
@@ -216,8 +217,8 @@ Ask chat GPT how would you write integration test for a particular function
 ## <mark style="background: #FFB86CA6;">Future Med</mark>
 #todo/Med/Future
 - [ ]  [https://www.geeksforgeeks.org/convert-a-string-into-a-square-matrix-grid-of-characters/](https://www.geeksforgeeks.org/convert-a-string-into-a-square-matrix-grid-of-characters/)    
-- [ ]  [https://stackoverflow.com/questions/360040/which-is-faster-hash-lookup-or-binary-search](https://stackoverflow.com/questions/360040/which-is-faster-hash-lookup-or-binary-search)
-- [ ] Look into darkbert ai
+- [ ] [https://stackoverflow.com/questions/360040/which-is-faster-hash-lookup-or-binary-search](https://stackoverflow.com/questions/360040/which-is-faster-hash-lookup-or-binary-search)
+
 
 
 ## <mark style="background: #BBFABBA6;">Future Low</mark>

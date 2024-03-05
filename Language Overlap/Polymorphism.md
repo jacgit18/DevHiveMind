@@ -4,8 +4,11 @@ tags:
   - MacroCodebaseDecision
   - MicroCodebaseDecision
   - OOP
+  - Inheritance
 author:
   - jacgit18
+  - chatgpt
+Comments: This documentation discusses Polymorphism.
 Status: Refinement
 Started: 
 EditDate: 2023-10-29
@@ -157,7 +160,7 @@ function add(a, b) { return a + b; } 
 
 ...and you're always calling this function with integers, this method might be optimized by compiling a function that does integer summation on the CPU, which is fast. If after optimization you feed it a non-integer value, then the VM deoptimizes the function and falls back to the unoptimized version, since it cannot perform integer summation on non-integers and the function would return erroneous results. 
 
-In languages where you specify overloaded monomorphic methods you can get around this problem by simply compiling multiple versions like [[Dynamic and Static Polymorphism#^4a17f7 | here]]  of the same method name with different argument signatures which are then optimized on their own. This means that you call different optimized methods because using differently typed arguments requires you to use a different overloaded method, so there's no question of which method you're using. 
+In languages where you specify overloaded monomorphic methods you can get around this problem by simply compiling multiple versions like [[Dynamic & Static Polymorphism#^4a17f7| here]]  of the same method name with different argument signatures which are then optimized on their own. This means that you call different optimized methods because using differently typed arguments requires you to use a different overloaded method, so there's no question of which method you're using. 
 
 You might think that you could keep multiple copies of optimized functions in the VM and check types to determine which optimized compiled function to use. In theory, that would work, if type checking before method invocation were free or very inexpensive. In practice, that usually doesn't turn out to be the case, and you'd probably want to balance things against real-world code to determine the best trade-off threshold. 
 

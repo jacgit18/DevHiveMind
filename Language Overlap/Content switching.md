@@ -1,13 +1,24 @@
 ---
-tags: 
+tags:
+  - CPU
+  - concurrency
+  - multiThreading
+  - OS
 author:
   - jacgit18
-Status: 
+  - chatgpt
+Comments: This documentation discusses context switching.
+Status: Done
 Started: 
-EditDate: 
+EditDate: 2024-03-04
 Relates:
 ---
-Content switching, also known as **context switching**, is a mechanism employed by CPU cores to efficiently switch between different execution contexts or tasks. It allows a CPU core to handle multiple tasks concurrently, giving the appearance of parallel execution.
+## Flashcard
+#contextSwitch
+What's a context switch;; Context switch enables thread state storage for programmers.
+
+## Content switching Indepth
+Content switching, also known as context switching, is a mechanism employed by CPU cores to efficiently switch between different execution contexts or tasks. It allows a CPU core to handle multiple tasks concurrently, giving the appearance of parallel execution.
 
 When a CPU core performs a content switch, it saves the current state of the executing task, including the values of registers, program counters, and other relevant information, into a data structure known as a context or a context block. This context block contains all the necessary information to resume the task at a later point.
 
@@ -27,9 +38,6 @@ Content switching is an essential mechanism in modern multitasking operating sys
 
 
 
-## Flash
-#contextSwitchFlash
-What's a context switch;;context switch allows programmers to store the current state of a thread. 
 
 
 

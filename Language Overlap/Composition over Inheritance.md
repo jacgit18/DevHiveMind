@@ -1,11 +1,15 @@
 ---
 tags:
   - ClassStructure
+  - Inheritance
+  - languageOverlap
 author:
   - jacgit18
-Status: 
+  - chatgpt
+Comments: This documentation discusses using Composition over Inheritance.
+Status: Done
 Started: 
-EditDate: 
+EditDate: 2024-03-04
 Relates:
 ---
 ### Composition Example:
@@ -179,8 +183,6 @@ So, while functions themselves don't inherit from each other, they can be used a
   - Reuse of code is a primary concern.
 
 Choose based on your specific needs and design principles.
-
-
 
 
 ## more examples 

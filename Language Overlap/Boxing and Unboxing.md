@@ -1,16 +1,18 @@
 ---
 tags:
   - MicroCodebaseDecision
+  - casting
+  - wrappers
 author:
   - jacgit18
-Status: 
+  - chatgpt
+Comments: This documentation discusses boxing and unboxing.
+Status: Done
 Started: 
-EditDate: 
+EditDate: 2024-03-04
 Relates:
 ---
-
-1. Unboxing:
-Unboxing is the process of converting a wrapper class object to its corresponding primitive type. In Java, automatic unboxing is performed when a wrapper object is assigned to a primitive variable. Here's an example:
+1. Unboxing: is the process of converting a wrapper class object to its corresponding primitive type. In Java, automatic unboxing is performed when a wrapper object is assigned to a primitive variable. Here's an example:
 
 ```java
 Integer wrapperObj = 10; // Autoboxing - Integer wrapper object
@@ -21,8 +23,7 @@ System.out.println(primitiveVar); // Output: 10
 
 In the above example, the `Integer` wrapper object `wrapperObj` is automatically unboxed to the primitive `int` type when assigning it to the variable `primitiveVar`.
 
-2. Boxing Casting:
-Boxing casting involves explicitly converting a primitive type to its corresponding wrapper class object. Here's an example:
+2. Boxing Casting: involves explicitly converting a primitive type to its corresponding wrapper class object. Here's an example:
 
 ```java
 int primitiveVar = 20; // Primitive int variable
@@ -33,8 +34,7 @@ System.out.println(wrapperObj); // Output: 20
 
 In the above example, the primitive `int` variable `primitiveVar` is explicitly boxed to the `Integer` wrapper object using the `valueOf()` method.
 
-3. Casting between wrapper classes:
-Casting can also be performed between different wrapper classes. Here's an example:
+3. Casting between wrapper classes: can also be performed between different wrapper classes. Here's an example:
 
 ```java
 Integer wrapperObj1 = 30; // Integer wrapper object

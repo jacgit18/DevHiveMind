@@ -1,10 +1,13 @@
 ---
-tags: 
+tags:
+  - languageOverlap
 author:
   - jacgit18
-Status: 
+  - chatgpt
+Comments: This documentation discusses different domain languages.
+Status: Done
 Started: 
-EditDate: 
+EditDate: 2024-03-05
 Relates:
 ---
 1. SQL (Structured Query Language): used for database management

@@ -1,13 +1,14 @@
 ---
 tags:
-  - revist
-  - review
-  - CombinePart1
+  - OOP
+  - instance
 author:
   - jacgit18
+  - chatgpt
+Comments: This documentation discusses class instances.
 Status: Refinement
 Started: 
-EditDate: 
+EditDate: 2024-03-04
 Relates:
 ---
 In Java, a class instance represents an object created from a class blueprint. Here's a brief overview of the topics you mentioned:
@@ -46,14 +47,10 @@ public class Main {
         System.out.println("Simple Name: " + theClass.getSimpleName());
     }
 }
-
- 
 ```
 
-***[[static Keyword | static]] on the `doWork` and `showName` methods:***
-
 - Since these methods are called from the `main` method (which is static), they need to be static as well.
-- When a method is declared as `static`, it can be called on the class itself rather than on an instance of the class. This is why you can call `doWork(acct)` even though `acct` is an instance variable.
+- When a method is declared as [[static Keyword |static]], it can be called on the class itself rather than on an instance of the class. This is why you can call `doWork(acct)` even though `acct` is an instance variable.
 - In summary, the use of `static` in this context is due to the fact that the methods (`main`, `doWork`, and `showName`) are being called from a static context (the `main` method) and, therefore, need to be static themselves. If you were to create an instance of the `Main` class and call these methods on that instance, you might consider removing the `static` modifier from these methods.
 
 3. **Instances from String Name or Type Literal:**
@@ -69,8 +66,6 @@ public class Main {
 
 7. **Excluding Object Class Methods:**
    - When iterating through methods, filter out those from `Object` class.
-
-
 
 ## Wrapper Class
   - A class that encapsulates primitive data types into objects
@@ -104,6 +99,12 @@ public class ClassExample {
         // Reflection using string name
             Class<?> c = Class.forName("com.jwhh.finance.BankAccount");
             Object instance = c.getDeclaredConstructor().newInstance();
+```
+3. `Object instance = c;`
+
+   This line creates a variable `instance` of type `Object` and assigns the `BankAccount` instance (`c`) to it. This is an example of polymorphism, where you can assign an object of a subclass (`BankAccount`) to a variable of the superclass type (`Object`).
+
+```java
 
             // Direct access using type literal
             Class<?> a = BankAccount.class;
@@ -122,6 +123,17 @@ public class ClassExample {
             e.printStackTrace();
         }
     }
+```
+
+1. `Class<BankAccount> d = BankAccount.class;`
+
+   This line creates a variable `d` of type `Class<BankAccount>`. It represents the class object associated with the `BankAccount` class. It's often used in scenarios where you want to work with the class itself, perhaps for reflection or other advanced use cases.
+
+2. `BankAccount d = new BankAccount('1234');`
+
+   This line creates an instance of the `BankAccount` class and assigns it to a variable `d`. It involves instantiation, and now `d` is an object of type `BankAccount`. You've also provided a constructor argument (`'1234'`) when creating the `BankAccount` instance.
+
+```java
 
     static void showDetails(Class<?> theClass) {
         System.out.println("Class Name with package: " + theClass.getName());
@@ -165,29 +177,33 @@ public class ClassExample {
 
         System.out.println(); // Add a blank line for better output separation
 
-       // Excluding Object class methods
-        for (Method method : methods) {
-            if (!method.getDeclaringClass().equals(Object.class)) {
-                System.out.println("Method: " + method.getName());
+// Excluding Object class methods
+for (Method method : methods) {
+            if(!method.getDeclaringClass().equals(Object.class)) {
+            
+    System.out.println("Method: " + method.getName());
 
-                // Accessing method access modifiers
-                int methodModifiers = method.getModifiers();
-                System.out.println("   Modifiers: " + Modifier.toString(methodModifiers));
+// Accessing method access modifiers
+    int methodModifiers = method.getModifiers();
+     
+System.out.println("Modifiers: " + Modifier.toString(methodModifiers));
 
-                // Accessing method parameters
-                Class<?>[] parameterTypes = method.getParameterTypes();
-                System.out.println("   Parameters: " + Arrays.toString(parameterTypes));
+    // Accessing method parameters
+Class<?>[] parameterTypes = method.getParameterTypes();
+                
+System.out.println("   Parameters: " + Arrays.toString(parameterTypes));
 
-                // Accessing return type
-                Class<?> returnType = method.getReturnType();
-                System.out.println("   Return Type: " + returnType.getSimpleName());
+    // Accessing return type
+Class<?> returnType = method.getReturnType();
 
-                // Invoking methods
-                if (Modifier.isPublic(methodModifiers)) {
-                    method.invoke(instance); // Invoke only public methods
-                }
+System.out.println("   Return Type: " + returnType.getSimpleName());
 
-                System.out.println("------");
+    // Invoking methods
+    if (Modifier.isPublic(methodModifiers)) {
+    method.invoke(instance); // Invoke only public methods
+      }
+
+      System.out.println("------");
             }
 
     }
@@ -247,10 +263,7 @@ public class MyClass {
 Remember to handle exceptions like `ClassNotFoundException`, `InstantiationException`, `IllegalAccessException`, and others that may arise during reflection operations. Additionally, be cautious about performance implications when using reflection extensively, as it may incur overhead.
 
 
-
-
-
-
+## Runtime class of an object
 
 In Java, `Class<?>` is a generic type where `Class` is a non-generic class representing the runtime class of an object. The `<?>` part is a wildcard that denotes an unknown type. Here's a breakdown:
 
@@ -281,33 +294,5 @@ let typeOfMyNumber: typeof myNumber; // This is a type literal
 
 This restricts the `Class` object to represent only the `String` class.
 
-
-
-
-
-
-
-
-The lines you've provided involve different concepts in Java related to class types and instantiation. Let's break down each line:
-
-1. `Class<BankAccount> d = BankAccount.class;`
-
-   This line creates a variable `d` of type `Class<BankAccount>`. It represents the class object associated with the `BankAccount` class. It's often used in scenarios where you want to work with the class itself, perhaps for reflection or other advanced use cases.
-
-2. `BankAccount d = new BankAccount('1234');`
-
-   This line creates an instance of the `BankAccount` class and assigns it to a variable `d`. It involves instantiation, and now `d` is an object of type `BankAccount`. You've also provided a constructor argument (`'1234'`) when creating the `BankAccount` instance.
-
-3. `Object instance = d;`
-
-   This line creates a variable `instance` of type `Object` and assigns the `BankAccount` instance (`d`) to it. This is an example of polymorphism, where you can assign an object of a subclass (`BankAccount`) to a variable of the superclass type (`Object`).
-
-To summarize:
-
-- The first line (`Class<BankAccount> d = BankAccount.class;`) deals with the class object itself.
-  
-- The second line (`BankAccount d = new BankAccount('1234');`) involves creating an instance of the class (`BankAccount`).
-
-- The third line (`Object instance = d;`) showcases polymorphism, where the `BankAccount` instance is assigned to a variable of type `Object`.
 
 

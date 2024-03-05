@@ -2,12 +2,14 @@
 tags:
   - CodebaseDecision
   - codeFlow
-  - editMerge
+  - languageOverlap
 author:
   - jacgit18
+  - chatgpt
+Comments: This documentation discusses flow of control for business logic.
 Status: Refinement
 Started: 
-EditDate: 
+EditDate: 2024-03-05
 Relates:
 ---
 ![[Flow of control.gif]]
@@ -102,7 +104,7 @@ function factorial(n: number): number {
 }
 ```
 
-7. [[Exception Handl|Exception Handl]]: In cases of errors or exceptional situations, the flow of control can be redirected to an exception handling block to handle the error gracefully instead of terminating the program.
+7. [[Exception Handling|Exception Handling]]: In cases of errors or exceptional situations, the flow of control can be redirected to an exception handling block to handle the error gracefully instead of terminating the program.
 
 8. **Throwing Exception**: Execution of the current function will stop (the statements after throw won't be executed), and control will be passed to the first catch block in the call stack. If no catch block exists among caller functions, the program will terminate. 
 

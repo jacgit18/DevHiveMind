@@ -1,10 +1,13 @@
 ---
-tags: 
+tags:
+  - multiThreading
 author:
   - jacgit18
-Status: 
+  - chatgpt
+Comments: This documentation discusses process isolation.
+Status: Done
 Started: 
-EditDate: 
+EditDate: 2024-03-05
 Relates:
 ---
 Each process in the application should be isolated, stateless, and independent of other processes. This enables horizontal scalability and fault tolerance. If one process becomes unhealthy or unresponsive, it can be terminated and replaced without affecting the overall application.

@@ -1,13 +1,18 @@
 ---
-tags: 
+tags:
+  - asynchronous
+  - concurrency
+  - codeExecution
 author:
   - jacgit18
-Status: 
+  - chatgpt
+Comments: This documentation discusses Asynchronous programming.
+Status: Done
 Started: 
-EditDate: 
+EditDate: 2024-03-04
 Relates:
 ---
-Asynchronous programming, on the other hand, allows tasks to be executed independently and concurrently. It doesn't block the execution of the program, enabling multiple operations to be performed simultaneously. This approach is particularly useful when dealing with I/O operations or time-consuming tasks.
+Asynchronous programming allows tasks to be executed independently and concurrently. It doesn't block the execution of the program, enabling multiple operations to be performed simultaneously. This approach is particularly useful when dealing with I/O operations or time-consuming tasks.
 
 ```java
 import java.util.concurrent.CompletableFuture;
@@ -96,3 +101,7 @@ Executing Task 2
 Task 2 completed
 Task 1 completed
 End
+
+
+
+

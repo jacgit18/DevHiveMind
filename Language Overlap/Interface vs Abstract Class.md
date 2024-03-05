@@ -1,75 +1,74 @@
 ---
-tags: 
+tags:
+  - interfaces
+  - abstraction
 author:
   - jacgit18
-Status: 
+  - chatgpt
+Comments: This documentation discusses interfaces vs abstract classes.
+Status: Refinement
 Started: 
-EditDate: 
+EditDate: 2024-03-05
 Relates:
 ---
-An abstract class permits you to make functionality that subclasses can implement or override whereas an interface only permits you to state functionality but not to implement it. A class can extend only one abstract class while a class can implement multiple interfaces.  
-  
-Abstract class is Abstract & concrete methods,  
-An abstract class defines the identity of a class.  
-classes can inherit only one Abstract Class, can be overridden  
-abstract Class can have an access modifier.  
-the class can have data fields.  
-An abstract class allows you to define both fields and constants  
-An abstract class can inherit a class and multiple interfaces.  
-An abstract class can declare constructors and destructors.  
-An abstract class has protected and public abstract methods.  
-  
-should be used To avoid independence, should be used when various implementations of the same kind share a common behavior.  
-  
-Interface  
-Implement several Interfaces  
-Abstract methods  
-the interface cannot contain data fields.  
-An interface is abstract so that it can’t provide any code.  
-use for Future enhancement  
-It is better to use interface when various implementations share only method signature. Polymorphic hierarchy of value types.  
-  
-Interfaces help to define the peripheral abilities of a class.  
-No fields can be defined  
-An interface can inherit multiple interfaces but cannot inherit a class.  
-An interface cannot declare constructors or destructors.  
-An interface can have only public abstract methods.  
-  
-While adding new stuff to the interface, it is a nightmare to find all the implementors and implement newly defined stuff.  
-  
-The interface does not have access modifiers. Everything defined inside the interface is assumed public modifier.  
-  
-  
-  
-```java
-interface Pet {  
-public void test();  
-}  
-class Dog implements Pet {  
-public void test() {  
-System.out.println("Interface Method Implemented");  
-}  
-public static void main(String args[]) {  
-Pet p = new Dog();  
-p.test();  
-}  
-}  
-  
-  
+#### Abstract Class:
+- Permits functionality for subclasses to implement or override.
+- Defines identity, allowing inheritance of only one abstract class.
+- Can have both abstract and concrete methods.
+- Allows data fields, constants, constructors, and destructors.
+- Can have access modifiers.
+- Used to share common behavior among various implementations.
+- Suitable for scenarios where multiple implementations share fields and constants.
 
-abstract class Shape {  
-int b = 20;  
-abstract public void calculateArea();  
-}  
-  
-public class Rectangle extends Shape {  
-public static void main(String args[]) {  
-Rectangle obj = new Rectangle();  
-obj.b = 200;  
-obj.calculateArea();  
-}  
-public void calculateArea() {  
-System.out.println("Area is " + (b * b));  
-}  
+#### Interface:
+- Permits stating functionality without implementation.
+- Supports multiple interface implementations.
+- Contains only abstract methods and cannot have data fields.
+- Abstract to provide code.
+- Used for future enhancements and when implementations share only method signatures.
+- Defines peripheral abilities of a class.
+- No constructors or destructors allowed.
+- No access modifiers; everything is assumed public.
+
+### Code Examples:
+
+#### Interface Implementation:
+```java
+interface Pet {
+    public void test();
+}
+
+class Dog implements Pet {
+    public void test() {
+        System.out.println("Interface Method Implemented");
+    }
+
+    public static void main(String args[]) {
+        Pet p = new Dog();
+        p.test();
+    }
 }
 ```
+
+#### Abstract Class Implementation:
+```java
+abstract class Shape {
+    int b = 20;
+
+    abstract public void calculateArea();
+}
+
+public class Rectangle extends Shape {
+    public static void main(String args[]) {
+        Rectangle obj = new Rectangle();
+        obj.b = 200;
+        obj.calculateArea();
+    }
+
+    public void calculateArea() {
+        System.out.println("Area is " + (b * b));
+    }
+}
+```
+
+These examples illustrate the usage and distinctions between abstract classes and interfaces in Java. Abstract classes allow a mix of abstract and concrete elements, while interfaces focus on defining method signatures without implementation.

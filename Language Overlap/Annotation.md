@@ -1,11 +1,14 @@
 ---
-tags: 
+tags:
+  - languageOverlap
+  - metaData
 author:
   - jacgit18
-Comments: 
+  - chatgpt
+Comments: This documentation discusses what are Annotation and there uses cases.
 Status: Done
 Started: 
-EditDate: 
+EditDate: 2024-03-04
 Relates:
 ---
 In Java, annotations are a type of metadata that can be added to various code elements, such as classes, methods, variables, and parameters. Annotations provide additional information about the associated code elements and are denoted by the "@" symbol followed by the annotation name.
@@ -73,7 +76,7 @@ Annotation types and regular interfaces in Java have distinct purposes and usage
 
 4. Instantiation: Instances of annotations are created automatically, whereas regular interfaces require using the `new` keyword to create instances.
 
-**Here's a simple example to illustrate:  **
+**Here's a simple example to illustrate:**
   
 ```java  
 // Annotation Type  
@@ -88,7 +91,7 @@ void myMethod();
 }  
 ```  
 
-**Here's a advanced example to illustrate:  **
+**Here's a advanced example to illustrate:**
 
 ```java
 @Target(ElementType.TYPE)
@@ -116,7 +119,7 @@ public class BankAccount {
 
 The provided code snippet defines a custom annotation called `ProcessedBy` which is annotated with `@Target(ElementType.TYPE)`, specifying that this annotation can be applied only to types (e.g., classes).
 
-The `@Retention(RetentionPolicy.RUNTIME)` annotation indicates that the `ProcessedBy` annotation information should be retained at runtime, allowing [[introspection and reflection |reflection]] to access it.
+The `@Retention(RetentionPolicy.RUNTIME)` annotation indicates that the `ProcessedBy` annotation information should be retained at runtime, allowing [[Introspection vs Reflection|reflection]] to access it.
 
 The annotation has one element, `value()`, which is of type `Class<?>`. This implies that when you use `@ProcessedBy`, you need to provide a class as its value.
 

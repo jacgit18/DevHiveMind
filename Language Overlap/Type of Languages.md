@@ -1,5 +1,6 @@
 ---
-tags: 
+tags:
+  - languageOverlap
 author:
   - jacgit18
 Status: 
@@ -10,9 +11,7 @@ Relates:
 ![[Language Categories.png]]
 
 
----
-
-## **[[Tech Glossary#^acb92b| Typed Languages]]:**
+## [[Tech Glossary#^acb92b|Typed Languages]]
 
 ### **Statically Typed Languages:**
 
@@ -37,13 +36,13 @@ Dynamically typed languages allow more flexibility in variable types:
 
 Examples include Ruby, Python, JavaScript, and Bash.
 
----
+
 
 ## **Performance Differences:**
 
 Statically typed languages offer better runtime performance due to the absence of runtime type checking. Dynamically typed languages excel during development and provide greater flexibility.
 
----
+
 
 ## **Programming Language Categories:**
 
@@ -61,7 +60,7 @@ High-level languages provide a high level of abstraction, making them user-frien
 
 Note: These categories aren't always distinct, and some languages may fit into multiple categories.
 
----
+
 
 ## **Other Categories of Languages:**
 

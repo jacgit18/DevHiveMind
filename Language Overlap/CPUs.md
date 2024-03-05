@@ -1,10 +1,14 @@
 ---
-tags: 
+tags:
+  - CPU
+  - processes
 author:
   - jacgit18
-Status: 
+  - chatgpt
+Status: Refinement
+Comments: This documentation discusses how cpu works with processes.
 Started: 
-EditDate: 
+EditDate: 2024-03-05
 Relates:
 ---
 ![[Cores vs Threads.jpg]]
@@ -27,7 +31,7 @@ Multithreading is used a lot in game development but not as much in business app
 A daemon is a type of useful support thread that performs unique tasks like running continuously as a background process and wakes up to handle periodic service requests, which often come from remote processes. 
 
 ## Multiprocessing 
-[[Multiprocessing example | Multiprocessing]] - the idea of, instead of spinning up threads in a single process that shares the same resources of the process. we create individual unique processes with there on memory structure and you just communicate between these process using inter process communication or centralized Redis database, there are many ways to communicate between processes. 
+Multiprocessing - the idea of, instead of spinning up threads in a single process that shares the same resources of the process. we create individual unique processes with there on memory structure and you just communicate between these process using inter process communication or centralized Redis database, there are many ways to communicate between processes. 
 
 Multiprocessing is good for scaling up to be used on multiple machines and can used to brute force through a password with a hash 
 
@@ -43,20 +47,16 @@ Multiprocessing is good for scaling up to be used on multiple machines and can
 
 
 
-## CPU FlashCard
-#processor
-Why use multithreading in your applications?
+## Flashcard
+#threads
+Why use multithreading in your applications;; concurrent execution of multiple threads
+What is a daemon thread;; A daemon thread is a low-priority thread used for unique task
 
-What is a daemon thread? A daemon thread is a low-priority thread used for unique task.
 
-what is an example of those task? one example is providing background services or support to the other threads. 
 
-Multithreading is important because it facilitates a wide range of benefits not provided by other programming techniques. This question allows you to demonstrate to the interviewer how well you appreciate the advantages of multithreading. When you answer this question, explain one or two of the main advantages of multithreading, including more efficient CPU usage, faster task execution and simplification of application structures.
 
-Example: "Since each thread runs concurrently, multithreading makes efficient use of the CPU. You can have background processes running while the application receives user input. Also, tasks can execute faster since each thread runs independently."
 
-***FIX
-[[CPU Thread Flash]]
+
 
 
 

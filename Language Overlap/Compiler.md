@@ -1,11 +1,14 @@
 ---
-tags: 
+tags:
+  - compile
+  - languageOverlap
 author:
   - jacgit18
+  - chatgpt
 Comments: This documentation discusses what compiler is and how it woks.
 Status: Done
 Started: 2024-02-26
-EditDate: ""
+EditDate: 2024-03-04
 Relates:
 ---
 A compiler is a software tool that translates source code written in a high-level programming language into machine code or an intermediate code that can be executed by a computer. The purpose of a compiler is to facilitate the execution of a program by converting the human-readable code written by a programmer into a format that the computer's hardware can understand.
@@ -42,3 +45,13 @@ Here is a step-by-step breakdown of how a compiler works:
    - The final output of the compilation process is an executable file or binary code that can be run on a computer.
 
 It's important to note that this is a simplified overview, and different compilers may implement these phases in slightly different ways. Additionally, some languages may have additional steps or specific optimizations tailored to their characteristics. The compilation process is a crucial step in software development, enabling programmers to write code in a high-level language and execute it on various hardware platforms.
+
+
+### Compiled programming languages
+A compiled language is translated into machine code for direct execution by the processor, resulting in faster program execution.
+
+In contrast, an interpreted language executes instructions directly without prior compilation into machine language, making interpreted programs run slower.
+
+Compiled languages allow code execution by the CPU, while interpreted languages rely on real-time interpretation without a separate compilation step.
+
+An example of a compiled language is C++. In C++, the source code is translated into machine code or an intermediate code by a compiler before execution, providing faster and more efficient performance. Other compiled languages include C, Java (partially compiled to bytecode), and Rust.

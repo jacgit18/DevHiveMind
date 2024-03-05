@@ -1,10 +1,17 @@
 ---
-tags: 
+tags:
+  - automation
+  - linux
+  - python
+  - CLI
+  - scripting
 author:
   - jacgit18
-Status: 
+  - chatgpt
+Comments: This documentation discusses automation in different contexts.
+Status: Done
 Started: 
-EditDate: 
+EditDate: 2024-03-04
 Relates:
 ---
 ### Python for Automation and System Administration
@@ -42,3 +49,6 @@ Bash handles file operations adeptly—copying, moving, deleting files, and crea
 Bash proves invaluable in automating a spectrum of system administration tasks, including user management, package installations, network configurations, and system-wide setup.
 
 Both Python and Bash stand as indispensable tools, each with its unique strengths, ensuring a robust toolkit for automation and system administration across diverse environments.
+
+
+

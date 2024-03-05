@@ -1,5 +1,6 @@
 ---
-tags: 
+tags:
+  - multiThreading
 author:
   - jacgit18
 Status: Refinement
@@ -7,7 +8,7 @@ Started:
 EditDate: 
 Relates:
 ---
-  ## What's a thread pool?
+## What's a thread pool?
 
 A thread pool is a design pattern used to facilitate multithreading. Asking about thread pools might be one way for an interviewer to determine if you know how to write performance-efficient code. When answering the question, give a brief but precise definition and explain why thread pools are useful.
 

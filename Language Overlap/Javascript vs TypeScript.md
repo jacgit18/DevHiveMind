@@ -1,6 +1,7 @@
 ---
 tags:
   - languageOverlap
+  - bindings
 author:
   - jacgit18
   - chatgpt

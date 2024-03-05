@@ -1,11 +1,14 @@
 ---
 tags:
   - MicroCodebaseDecision
+  - casting
 author:
   - jacgit18
-Status: 
+  - chatgpt
+Comments: This documentation discusses
+Status: Refinement
 Started: 
-EditDate: 
+EditDate: 2024-03-05
 Relates:
 ---
 ## Widening Casting or Implicit(Js) conversion/Coercion
@@ -130,19 +133,19 @@ let length: number = parseInt(value as string); // or <string>value
 
 This code will correctly cast the string "42" to the number 42.
 
-##  [[Boxing and Unboxing]]:
--  Java also supports automatic conversion between primitive types and their corresponding wrapper classes, known as boxing and unboxing.
+##  [[Boxing and Unboxing]]
+- Java also supports automatic conversion between primitive types and their corresponding wrapper classes, known as boxing and unboxing.
 - Boxing is the process of converting a primitive value to its corresponding wrapper class (e.g., `int` to `Integer`).
 - Unboxing is the reverse process, converting a wrapper class object to its corresponding primitive value.
 - Java performs boxing and unboxing automatically when needed, allowing seamless conversion between primitives and their wrapper classes.
 
-## [[Boxing and Unboxing#Reference Type Casting Example | Reference Type Casting]]:
+## [[Boxing and Unboxing#Reference Type Casting Example |Reference Type Casting]]
    - Reference type casting is used when working with objects and class hierarchies. It is applicable to classes and interfaces in Java. Reference type casting can be performed between two types related by inheritance or implementation.
-	   - Upcasting ([[#^3799d1 | implicit]] casting): It involves casting an object to one of its superclasses or implemented interfaces.
+	   - Upcasting ([[#^3799d1 |implicit]] casting): It involves casting an object to one of its superclasses or implemented interfaces.
 		   - Upcasting is safe and can be done implicitly without an explicit cast.
 		   - For example, casting a `Circle` object to a `Shape` object, where `Circle` extends `Shape`.
 
-	   - Downcasting ([[#^13a274 | explicit]] casting): It involves casting an object to one of its subclasses.
+	   - Downcasting ([[#^13a274 |explicit]] casting): It involves casting an object to one of its subclasses.
 		   - Downcasting requires an explicit cast and may result in a `ClassCastException` if the object being cast is not actually an instance of the target class.
 		   - For example, casting a `Shape` object to a `Circle` object, where `Shape` is a superclass of `Circle`.
 

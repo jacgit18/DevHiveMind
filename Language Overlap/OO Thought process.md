@@ -3,11 +3,14 @@ tags:
   - Develop
   - Domain
   - OOP
+  - Inheritance
 author:
   - jacgit18
+  - chatgpt
+Comments: This documentation discusses
 Status: Refinement
 Started: 
-EditDate: 
+EditDate: 2024-03-05
 Relates:
 ---
 # Object Oriented Program explained 

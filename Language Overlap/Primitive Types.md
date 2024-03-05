@@ -1,10 +1,14 @@
 ---
-tags: 
+tags:
+  - dataType
+  - languageOverlap
 author:
   - jacgit18
-Status: 
+  - chatgpt
+Comments: This documentation discusses primitive types.
+Status: Refinement
 Started: 
-EditDate: 
+EditDate: 2024-03-05
 Relates:
 ---
 ![[Primitive.gif]]
@@ -14,7 +18,8 @@ In JavaScript, a primitive (primitive value, primitive data type) is data that i
 Most of the time, a primitive value is represented directly at the lowest level of the language implementation. 
 
 All primitives are *Immutable(pure/no-mutation)*, i.e., they cannot be altered. It is important not to confuse a primitive itself with a variable assigned a primitive value which are *mutable(mutate/impure)*. The variable may be reassigned a new value, but the existing value can not be changed in the ways that objects, arrays, and functions can be altered. 
->[!note] Assignment gives the primitive a new vale it is not being mutated 
+>[!note] 
+>Assignment gives the primitive a new vale it is not being mutated 
 
 ## Number 
 
@@ -23,7 +28,8 @@ Number wrapper
 let number = new Number()
 ```
 
->[!note] Unlike many other programming languages, **JavaScript does not define different types of numbers**, like integers, short, long, floating-point etc.
+>[!note] 
+>Unlike many other programming languages, **JavaScript does not define different types of numbers**, like integers, short, long, floating-point etc.
 
 Long has a higher max value vs int has a low max but takes of less space but the overall space isn't that much
 
@@ -67,7 +73,8 @@ testPrim.info = "sample"
 // is undefined because we create a wrapper that gets deleted but there wasn’t a previous value before  
 ```
 
->[!note] Using a string method doesn't mutate the string because string is a primitive values which  are immutable . 
+>[!note] 
+>Using a string method doesn't mutate the string because string is a primitive values which  are immutable . 
 ```javascript
 var bar = "baz"; 
 console.log(bar);               // baz 
@@ -75,7 +82,8 @@ bar.toUpperCase(); 
 console.log(bar);               // baz 
 ```
 
->[!note] Assignment gives the primitive a new (not a mutated) value
+>[!note] 
+>Assignment gives the primitive a new (not a mutated) value
 ```javascript
 bar = bar.toUpperCase();       // BAZ 
 == // compares values and converts type 
@@ -83,7 +91,8 @@ bar = bar.toUpperCase();       // BAZ 
 ```
 
 
->[!note] But using an array method mutates the array 
+>[!note] 
+>But using an array method mutates the array 
 ```javascript
 var foo = []; 
 console.log(foo);               // [] 
