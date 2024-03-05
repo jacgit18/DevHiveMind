@@ -44,19 +44,17 @@ Multiprocessing is good for scaling up to be used on multiple machines and can
 
 
 ## Flashcard
-#processors
+#threads
 Why use multithreading in your applications;; concurrent execution of multiple threads
+What is a daemon thread;; A daemon thread is a low-priority thread used for unique task
 
-What is a daemon thread? A daemon thread is a low-priority thread used for unique task.
 
-what is an example of those task? one example is providing background services or support to the other threads. 
 
-Multithreading is important because it facilitates a wide range of benefits not provided by other programming techniques. This question allows you to demonstrate to the interviewer how well you appreciate the advantages of multithreading. When you answer this question, explain one or two of the main advantages of multithreading, including more efficient CPU usage, faster task execution and simplification of application structures.
 
-Example: "Since each thread runs concurrently, multithreading makes efficient use of the CPU. You can have background processes running while the application receives user input. Also, tasks can execute faster since each thread runs independently."
 
-***FIX
-[[CPU Thread Flash]]
+
+
+
 
 
 
