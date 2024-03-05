@@ -5,7 +5,7 @@ author:
 Comments: This documentation discusses what compiler is and how it woks.
 Status: Done
 Started: 2024-02-26
-EditDate: ""
+EditDate: 
 Relates:
 ---
 A compiler is a software tool that translates source code written in a high-level programming language into machine code or an intermediate code that can be executed by a computer. The purpose of a compiler is to facilitate the execution of a program by converting the human-readable code written by a programmer into a format that the computer's hardware can understand.
@@ -42,3 +42,33 @@ Here is a step-by-step breakdown of how a compiler works:
    - The final output of the compilation process is an executable file or binary code that can be run on a computer.
 
 It's important to note that this is a simplified overview, and different compilers may implement these phases in slightly different ways. Additionally, some languages may have additional steps or specific optimizations tailored to their characteristics. The compilation process is a crucial step in software development, enabling programmers to write code in a high-level language and execute it on various hardware platforms.
+
+
+
+
+
+
+
+
+
+The lines you've provided involve different concepts in Java related to class types and instantiation. Let's break down each line:
+
+1. `Class<BankAccount> d = BankAccount.class;`
+
+   This line creates a variable `d` of type `Class<BankAccount>`. It represents the class object associated with the `BankAccount` class. It's often used in scenarios where you want to work with the class itself, perhaps for reflection or other advanced use cases.
+
+2. `BankAccount d = new BankAccount('1234');`
+
+   This line creates an instance of the `BankAccount` class and assigns it to a variable `d`. It involves instantiation, and now `d` is an object of type `BankAccount`. You've also provided a constructor argument (`'1234'`) when creating the `BankAccount` instance.
+
+3. `Object instance = d;`
+
+   This line creates a variable `instance` of type `Object` and assigns the `BankAccount` instance (`d`) to it. This is an example of polymorphism, where you can assign an object of a subclass (`BankAccount`) to a variable of the superclass type (`Object`).
+
+To summarize:
+
+- The first line (`Class<BankAccount> d = BankAccount.class;`) deals with the class object itself.
+  
+- The second line (`BankAccount d = new BankAccount('1234');`) involves creating an instance of the class (`BankAccount`).
+
+- The third line (`Object instance = d;`) showcases polymorphism, where the `BankAccount` instance is assigned to a variable of type `Object`.
