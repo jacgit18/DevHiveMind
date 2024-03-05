@@ -1,5 +1,6 @@
 ---
-tags: 
+tags:
+  - Generics
 author:
   - jacgit18
 Status: 

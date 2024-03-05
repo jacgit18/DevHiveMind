@@ -1,6 +1,7 @@
 ---
 tags:
   - MicroCodebaseDecision
+  - casting
 author:
   - jacgit18
 Status: 

@@ -4,6 +4,7 @@ tags:
   - MicroCodebaseDecision
   - MacroCodebaseDecision
   - example
+  - Generics
 author:
   - jacgit18
 Comments: This documentation discusses areas where it make sense to use Multi threading, concurrency, collections, generics, and annotations.

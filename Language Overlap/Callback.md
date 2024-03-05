@@ -1,62 +1,45 @@
 ---
-tags: 
+tags:
+  - FunctionTypes
+  - languageOverlap
 author:
   - jacgit18
-Status: 
+  - chatgpt
+Comments: This documentation discusses callback functions
+Status: Done
 Started: 
-EditDate: 
+EditDate: 2024-03-04
 Relates:
 ---
-  
-when passing callbacks in the context of using third-party library that require you passing a call back function something in the library can change like maybe it takes another parameter that you didn't put in initially or maybe it doesn't use the call back anymore whatever the case is when using callbacks it can create a black box affect why you don't know what's going on in a particular library when you are passing in that call back  
-  
-This can end up breaking an app where part of its functionality when things like this happen that is why you sometimes have to debug or log what's going on when you are using functionality for me another library to verify it's not an issue with your actual code but with the library itself like in the case where Morgan was giving off weird HTTP error  
-  
-known as a inversion of control  
-  
-  
-But promises tend to help with these issue
+**Understanding Callback Challenges in Third-Party Libraries:**
 
-## higher Order & callback Function 
+When incorporating callbacks in third-party libraries, unforeseen changes within the library, such as additional parameters or altered callback usage, can create a "black box" effect. This lack of visibility into the library's internal workings can lead to unexpected issues, potentially breaking the app's functionality. Debugging or logging becomes essential to ensure the problem lies with the library rather than the code, exemplified by instances like Morgan generating peculiar HTTP errors—an occurrence known as the inversion of control.
 
-()=> (dispatch)=> 
+**Mitigating Issues with Promises:**
 
-A higher order function is a function that takes a function as an argument, or returns a function. Higher order function is in contrast to first order functions, which don’t take a function as an argument or return a function as output. 
+To address these challenges, promises offer a more structured and reliable alternative. Promises help circumvent the unpredictability associated with callbacks, providing a clearer and more manageable flow in asynchronous operations.
 
-Earlier we saw examples of .map() and .filter(). Both of them take a function as an argument. They're both higher order functions 
-
-A callback function is a function that is passed to another function as an argument with the expectation that the other function will  call it inside the outer function to complete some kind of routine or action. 
-
-So a callback is not necessarily itself a higher-order function, but a function which receives a callback as an argument is. Consider a very common case, the DOM event listener: 
-
-when passing a function as a parameter avoid  
-
-get(arr, calc())  //you are passing but also calling function 
-
-get(arr, calc)// this way is passing referencing the function 
-
-function greeting(name) { 
-
-  alert('Hello ' + name); 
-
-  } 
-
-function processUserInput(callback) { 
-
-  var name = prompt('Please enter your name.'); 
-
-    callback(name); 
-
-    } 
-
-processUserInput(greeting);
-
-
-
+## Higher Order & Callback Functions:
 
 ```javascript
+()=> (dispatch)=>
+```
 
+**Higher Order Function:**
+A higher-order function is one that either takes a function as an argument or returns a function. This stands in contrast to first-order functions that neither accept a function nor yield one as output. Examples like `.map()` and `.filter()` showcase higher-order functions, as they take functions as arguments.
+
+**Callback Function:**
+A callback function is passed to another function as an argument, with the expectation that the outer function will invoke it internally to execute a specific routine or action. While a callback itself may not be a higher-order function, a function receiving a callback as an argument qualifies as such. Consider the common case of a DOM event listener.
+
+**Avoiding Function Invocation when Passing as a Parameter:**
+```javascript
+get(arr, calc); // Passing by referencing the function, not invoking it
+```
+
+**Inline Callback Example:**
+```javascript
 // Inline callback 
 (function(element, index, array) { /* ... */ }, thisArg)  
-
 ```
+
+Understanding these concepts is crucial for effective usage of callbacks and higher-order functions in JavaScript, promoting cleaner and more maintainable code structures.
