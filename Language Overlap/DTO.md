@@ -1,5 +1,6 @@
 ---
-tags: 
+tags:
+  - data
 author:
   - jacgit18
 Status: 
