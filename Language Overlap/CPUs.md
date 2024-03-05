@@ -43,9 +43,9 @@ Multiprocessing is good for scaling up to be used on multiple machines and can
 
 
 
-## CPU FlashCard
-#processor
-Why use multithreading in your applications?
+## Flashcard
+#processors
+Why use multithreading in your applications;; concurrent execution of multiple threads
 
 What is a daemon thread? A daemon thread is a low-priority thread used for unique task.
 
