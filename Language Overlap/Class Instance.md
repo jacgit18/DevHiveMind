@@ -98,6 +98,12 @@ public class ClassExample {
         // Reflection using string name
             Class<?> c = Class.forName("com.jwhh.finance.BankAccount");
             Object instance = c.getDeclaredConstructor().newInstance();
+```
+3. `Object instance = c;`
+
+   This line creates a variable `instance` of type `Object` and assigns the `BankAccount` instance (`c`) to it. This is an example of polymorphism, where you can assign an object of a subclass (`BankAccount`) to a variable of the superclass type (`Object`).
+
+```java
 
             // Direct access using type literal
             Class<?> a = BankAccount.class;
@@ -116,6 +122,17 @@ public class ClassExample {
             e.printStackTrace();
         }
     }
+```
+
+1. `Class<BankAccount> d = BankAccount.class;`
+
+   This line creates a variable `d` of type `Class<BankAccount>`. It represents the class object associated with the `BankAccount` class. It's often used in scenarios where you want to work with the class itself, perhaps for reflection or other advanced use cases.
+
+2. `BankAccount d = new BankAccount('1234');`
+
+   This line creates an instance of the `BankAccount` class and assigns it to a variable `d`. It involves instantiation, and now `d` is an object of type `BankAccount`. You've also provided a constructor argument (`'1234'`) when creating the `BankAccount` instance.
+
+```java
 
     static void showDetails(Class<?> theClass) {
         System.out.println("Class Name with package: " + theClass.getName());
