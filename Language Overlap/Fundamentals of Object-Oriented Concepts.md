@@ -2,6 +2,7 @@
 tags:
   - ClassStructure
   - OOP
+  - Inheritance
 author:
   - jacgit18
 Comments: This documentation discusses Inheritance, Composition, and Encapsulation

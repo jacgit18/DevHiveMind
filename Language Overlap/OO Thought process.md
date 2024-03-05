@@ -3,6 +3,7 @@ tags:
   - Develop
   - Domain
   - OOP
+  - Inheritance
 author:
   - jacgit18
 Status: Refinement

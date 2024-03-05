@@ -3,6 +3,9 @@ tags:
   - OOP
   - languageOverlap
   - ClassStructure
+  - Inheritance
+  - interfaces
+  - Abstraction
 author:
   - jacgit18
   - chatgpt
@@ -10,7 +13,7 @@ Comments: This documentation discusses abstract classes.
 Status: Done
 Started: 2023-10-29
 EditDate: 2024-03-04
-Relates:
+Relates: "[[Fundamentals of Object-Oriented Concepts]]"
 ---
 Abstract classes, identified by the `abstract` keyword, are crucial in object-oriented programming. They contain at least one abstract method, devoid of a body, and may feature multiple concrete methods. The inheritance mechanism enforces the implementation of abstract methods, ensuring uniformity among subclasses.
 

@@ -4,6 +4,7 @@ tags:
   - MacroCodebaseDecision
   - MicroCodebaseDecision
   - OOP
+  - Inheritance
 author:
   - jacgit18
 Status: Refinement

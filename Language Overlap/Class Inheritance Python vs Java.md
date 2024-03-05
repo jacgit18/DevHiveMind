@@ -1,11 +1,15 @@
 ---
-tags: 
+tags:
+  - languageOverlap
+  - Inheritance
 author:
   - jacgit18
-Status: Capture
+  - chatgpt
+Comments: This documentation discusses Class inheritance in the context of python and Java.
+Status: Done
 Started: 2023-11-21
-EditDate: 
-Relates:
+EditDate: 2024-03-04
+Relates: "[[Fundamentals of Object-Oriented Concepts]]"
 ---
 Class inheritance in Python and Java shares some common principles but also has differences in their implementation. Here are some key points to consider:  
   

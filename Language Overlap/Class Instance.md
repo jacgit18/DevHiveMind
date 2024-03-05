@@ -50,7 +50,7 @@ public class Main {
  
 ```
 
-***[[static Keyword | static]] on the `doWork` and `showName` methods:***
+***[[static Keyword |static]] on the `doWork` and `showName` methods:***
 
 - Since these methods are called from the `main` method (which is static), they need to be static as well.
 - When a method is declared as `static`, it can be called on the class itself rather than on an instance of the class. This is why you can call `doWork(acct)` even though `acct` is an instance variable.
