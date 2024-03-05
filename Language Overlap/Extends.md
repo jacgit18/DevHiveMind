@@ -1,38 +1,36 @@
 ---
-tags: 
+tags:
+  - keywords
+  - languageOverlap
 author:
   - jacgit18
-Status: 
+  - chatgpt
+Comments: This documentation discusses extends keyword.
+Status: Done
 Started: 
-EditDate: 
+EditDate: 2024-03-05
 Relates:
 ---
-Extends: In Java, the extends keyword is used to indicate that the class which is being defined is derived from the base class using inheritance. So basically, extends keyword is used to extend the functionality of the parent class to the subclass. In Java, multiple inheritances are not allowed due to ambiguity. Therefore, a class can extend only one class to avoid ambiguity. 
+In the realm of Java, the `extends` keyword takes center stage, serving as the gateway to inheritance. Its primary role is to signify that the class under definition is an extension or derivation of the base class. In essence, `extends` empowers a subclass by inheriting the functionalities of its parent class, allowing for an augmentation of capabilities.
+
+It's crucial to note that Java imposes a restriction on multiple inheritances to evade ambiguity issues. Consequently, a class can extend only one class, steering clear of potential conflicts.
+
+Let's delve into a simple example to illuminate the prowess of `extends`:
 
 ```java
-class One { 
+class One { 
+    public void methodOne() { 
+        // Some Functionality 
+    } 
+}
 
-    public void methodOne() { 
-
-        // Some Functionality 
-
-    } 
-
-} 
-
-class Two extends One { 
-
-    public static void main(String args[]){ 
-
-        Two t = new Two(); 
-
-        // Calls the method one 
-
-        // of the above class 
-
-        t.methodOne(); 
-
-    } 
-
+class Two extends One { 
+    public static void main(String args[]) { 
+        Two t = new Two(); 
+        // Invokes the methodOne from the parent class 
+        t.methodOne(); 
+    } 
 }
 ```
+
+In this illustrative snippet, class `Two` extends class `One`, thereby inheriting its `methodOne`. The `main` method demonstrates the invocation of `methodOne` from the parent class within the subclass. This showcases the seamless integration of functionalities through the art of inheritance in Java.

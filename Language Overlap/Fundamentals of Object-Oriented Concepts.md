@@ -5,6 +5,7 @@ tags:
   - Inheritance
 author:
   - jacgit18
+  - chatgpt
 Comments: This documentation discusses Inheritance, Composition, and Encapsulation
 Status: Refinement
 Started: 
@@ -86,10 +87,6 @@ Encapsulation as we know is another key feature of OOP, and when one class inher
 Other issue is the permanent nature of such a relation: inheritance is forever: when you decide on a child class in compile-time, you won’t be able to change it runtime, you will have to destroy an object and create another, unlike a composition, where you can swap and switch however you like.
 
 in JavaScript a way to create a private  variable is through encapsulation by creating a method that has a variable then you return another function that returns that other variable essentially using the scope to make it private also known as closure but you can use typescript for private variable
-
-
-
-
 
 ### Encapsulation, Closure, and Currying Example
 
