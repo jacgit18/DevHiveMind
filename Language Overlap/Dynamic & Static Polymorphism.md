@@ -3,12 +3,15 @@ tags:
   - MicroCodebaseDecision
   - MacroCodebaseDecision
   - CodebaseDecision
+  - polymorphism
+  - static
 author:
   - jacgit18
-Comments: This documentation discusses
+  - chatgpt
+Comments: This documentation discusses Dynamic and Static Polymorphism.
 Status: Done
 Started: 
-EditDate: 
+EditDate: 2024-03-05
 Relates:
 ---
 Dynamic polymorphism and static polymorphism are two forms of polymorphism in programming, and they differ in the timing of binding between the method call and the method implementation.
@@ -26,8 +29,7 @@ Dynamic polymorphism and static polymorphism are two forms of polymorphism in pr
    - **Implementation:** Achieved through method overloading.
 
 
-
-Certainly, let's illustrate dynamic polymorphism with a simple example in Java using method overriding:
+dynamic polymorphism with a simple example in Java using method overriding:
 
 ```java
 class Animal {
