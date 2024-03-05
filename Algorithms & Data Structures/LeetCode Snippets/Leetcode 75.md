@@ -9,7 +9,7 @@ Comments: This is a coded snippet
 Status: Done
 Started: 2024-03-03
 EditDate: 2024-03-03
-Relates:
+Relates: "[[Mind Maps/Leetcode 75|Leetcode 75]]"
 ---
 ## Attempt
 ```javascript
@@ -74,23 +74,24 @@ function sortColors(nums) {
 Ask yourself how many swap checks 
 makes sense
 ## Explained
-Let's simplify this problem and its solution like I'm explaining it to a child, using something familiar, like sorting colored balls.  
-  
-Imagine you have a line of balls in front of you. These balls are only in three colors: red, white, and blue. Your job is to sort them so that all red balls come first, then all white balls, and blue balls at the end.  
-  
-You have three baskets in front of you to help with sorting:  
-1. The "Red Basket" on your left for red balls.  
-2. The "Blue Basket" on your right for blue balls.  
-3. You hold the "Sorting Basket" in your hands for white balls, but you don't really need to move white balls; you just leave them in the line as you find them.  
-  
-Now, you start from the beginning of the line with your Sorting Basket. Here's what you do:  
-  
-- **When you see a red ball (0):** You swap it with the ball at the position of the Red Basket because you want all red balls to be at the start. Then, you move the Red Basket one step to the right because the next red ball should go next to the one you just moved. You also move one step to the right in the line.  
-  
-- **When you see a white ball (1):** You don't have to do anything with it; just move one step to the right in the line. White balls are fine where they are because you're moving red and blue balls to their correct places, which automatically sorts the white balls.  
-  
-- **When you see a blue ball (2):** You swap it with the ball at the position of the Blue Basket because you want all blue balls at the end. Then, you move the Blue Basket one step to the left because the next blue ball should go next to the one you just moved. But, you don't move to the next ball in line yet because the ball you just swapped from the end could be red, and you need to check it and possibly move it to the Red Basket.  
-  
-You keep doing this until you reach the Blue Basket. At that point, all balls are sorted: red balls are with the Red Basket, white balls are where they were but now correctly in the middle because you've sorted the red and blue balls around them, and blue balls are with the Blue Basket.  
-  
-The key moments when you move your position in the line (the `i` index) are when you place a red ball in its correct position or when you confirm a ball is white. You don't move forward when you place a blue ball because you need to check the ball you just swapped from the end.
+Alright, imagine you have a bunch of colorful balls, and you want to arrange them in a certain order. You have red balls (represented by 0), blue balls (represented by 1), and green balls (represented by 2).
+
+Now, we want to organize these balls in such a way that all the red balls are on the left side, followed by the blue balls, and then the green balls on the right side.
+
+So, we have three baskets: one for red balls (left), one for blue balls (middle), and one for green balls (right). Our goal is to sort these balls by moving them into the correct baskets.
+
+Here's how we do it step by step:
+
+1. **Create Pointers:** We have two special friends, one standing on the left side and the other on the right side. They are helping us organize the balls. Let's call them Lefty and Righty.
+
+2. **Start Sorting:** Now, we go through each ball one by one (represented by the `i` variable).
+
+3. **If it's a Red Ball (0):** If the ball is red, we quickly swap it with the ball that Lefty is pointing to. Lefty then takes a step to the right, and we also move our finger (i) to the next ball.
+
+4. **If it's a Green Ball (2):** If the ball is green, we do a similar swap with the ball that Righty is pointing to. But, we don't move our finger (i) immediately because the ball we swapped might be red or blue. We leave it for the next round to check.
+
+5. **If it's a Blue Ball (1):** If the ball is blue, we just move our finger to the next ball without any swapping. No need to involve Lefty or Righty for blue balls.
+
+6. **Keep Going:** We repeat these steps until our finger (i) reaches the same spot as Righty. That means we've checked and organized all the balls.
+
+By doing this, we cleverly use Lefty and Righty to put the red balls on the left, green balls on the right, and blue balls in the middle, just like magic! And that's how we sort these colorful balls using a cool trick in our code.
