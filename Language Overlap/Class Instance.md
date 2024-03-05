@@ -1,6 +1,7 @@
 ---
 tags:
   - OOP
+  - instance
 author:
   - jacgit18
   - chatgpt

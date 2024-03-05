@@ -1,10 +1,15 @@
 ---
-tags: 
+tags:
+  - languageOverlap
+  - math
+  - CodingProblem
 author:
   - jacgit18
-Status: 
+  - chatgpt
+Comments: This documentation discusses Modulo.
+Status: Done
 Started: 
-EditDate: 
+EditDate: 2024-03-05
 Relates:
 ---
 Division involves the relationship: dividend / divisor = quotient. For long division, it's expressed as divisor * quotient = dividend. Think of long division as the backend of regular division, introducing remainders. Take, for instance, 228 / 4:

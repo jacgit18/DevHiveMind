@@ -1,10 +1,14 @@
 ---
-tags: 
+tags:
+  - asynchronous
+  - keywords
 author:
   - jacgit18
-Status: 
+  - chatgpt
+Comments: This documentation discusses async keyword in Java.
+Status: Done
 Started: 
-EditDate: 
+EditDate: 2024-03-05
 Relates:
 ---
 Java does not have native support for `async`/`await` syntax like some other programming languages, such as JavaScript with Node.js or C# with .NET. 

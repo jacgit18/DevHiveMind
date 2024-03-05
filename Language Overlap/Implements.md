@@ -157,144 +157,96 @@ var ConcreteImplementation = function ConcreteImplementation() { 
 
 ## Participants 
 
-### Precept Resolver 
+### Precept Resolver
 
-The resolvePrecept function is a utility & helper function to use inside of your Abstract Class. Its job is to allow for customized implementation-handling of encapsulated Precepts (data & behavior). It can throw errors or warn -- AND -- assign a default value to the Implementor class. 
+The `resolvePrecept` function serves as a utility and helper function within your Abstract Class, facilitating customized implementation-handling of encapsulated Precepts. It can throw errors or warnings and assign default values to the Implementor class.
 
-### iAbstractClass 
+### iAbstractClass
 
-The iAbstractClass defines the interface to be used. Its approach entails a tacit agreement with its Implementor class. This interface assigns each precept to the same exact precept namespace -- OR -- to whatever the Precept Resolver function returns. However, the tacit agreement resolves to a context -- a provision of Implementor. 
+The `iAbstractClass` defines the interface, establishing a tacit agreement with its Implementor class. The interface assigns each precept to the same namespace or whatever the Precept Resolver function returns. The agreement is contextual, providing a provision for the Implementor.
 
-### Implementor 
+### Implementor
 
-The Implementor simply 'agrees' with an Interface (iAbstractClass in this case) and applies it by the use of Constructor-Hijacking: iAbstractClass.apply(this). By defining the data & behavior above, and then hijacking the Interface's constructor -- passing Implementor's context to the Interface constructor -- we can ensure that Implementor's overrides will be added, and that Interface will explicate warnings and default values. 
+The Implementor agrees with the Interface (`iAbstractClass`) and applies it through Constructor-Hijacking: `iAbstractClass.apply(this)`. By defining data and behavior, then hijacking the Interface's constructor, we ensure Implementor's overrides are added, and Interface explicates warnings and default values.
 
-This is a very non-cumbersome approach which has served my team & I very well for the course of time and different projects. However, it does have some caveats & drawbacks. 
+While non-cumbersome, this approach has served well with some drawbacks:
 
-### Drawbacks 
+### Drawbacks
 
-Though this helps implement consistency throughout your software to a significant degree, it does not implement true interfaces -- but emulates them. Though definitions, defaults, and warnings or errors are explicated, the explication of use is enforced & asserted by the developer (as with much of JavaScript development). 
+- It emulates true interfaces but doesn't enforce them.
+- Definitions, defaults, warnings, or errors are explicated but rely on developer adherence.
+- Missing assertions for return types, signatures, object freeze, and other specifics within the JavaScript community.
 
-This is seemingly the best approach to "Interfaces in JavaScript", however, I would love to see the following resolved: 
+This method, while the best approach to "Interfaces in JavaScript" for now, awaits improvements such as:
 
-Assertions of return types 
+- Assertions for return types.
+- Assertions for signatures.
+- Object freeze to prevent deletions.
+- Assertions for other prevalent JavaScript-specific needs.
 
-Assertions of signatures 
+Despite these considerations, it has proven beneficial for our team and projects, providing consistency in software development.
 
-Freeze objects from delete actions 
 
-Assertions of anything else prevalent or needed in the specificity of the JavaScript community 
-
-That said, I hope this helps you as much as it has my team and I. 
-
-## Other Example in Java 
-
-### Example 1 
+### Example 1
 
 ```java
-interface One { 
+interface One { 
+    // Abstract method 
+    void methodOne(); 
+} 
 
-    // Abstract method 
+class Two { 
+    public void methodTwo() { 
+    } 
+}
 
-    void methodOne(); 
-
-} 
-
-class Two { 
-
-      public void methodTwo() { 
-
-    } 
-
-} 
-
-// Class which extends the class Two 
-
-// and implements the interface One 
-
-class Three EXTENDS Two IMPLEMENTS One { 
-
-    public void methodOne() { 
-
-        // Implementation of the method 
-
-    } 
-
-} 
+// Class extending the Two class 
+// and implementing the One interface 
+class Three extends Two implements One { 
+    public void methodOne() { 
+        // Implementation of the method 
+    } 
+}
 ```
 
---------------- 
-
-Exmaple 2 
-
-------------------- 
+### Example 2
 
 ```java
-// Defining an interface 
+// Defining the interface One 
+interface One { 
+    public void methodOne(); 
+} 
 
-interface One { 
+// Defining the second interface Two 
+interface Two { 
+    public void methodTwo(); 
+} 
 
-    public void methodOne(); 
-
-} 
-
-// Defining the second interface 
-
-interface Two { 
-
-    public void methodTwo(); 
-
-} 
-
-// Implementing the two interfaces 
-
-class Three IMPLEMENTS One, Two { 
-
-    public void methodOne(){ 
-
-        // Implementation of the method 
-
-    } 
-
-    public void methodTwo() { 
-
-        // Implementation of the method 
-
-    } 
-
-} 
+// Class implementing both interfaces 
+class Three implements One, Two { 
+    public void methodOne() { 
+        // Implementation of the method 
+    } 
+    public void methodTwo() { 
+        // Implementation of the method 
+    } 
+}
 ```
 
---------------- 
-
-Exmaple 3 
-
-------------------- 
+### Example 3
 
 ```java
-// Defining the interface One 
+// Defining the interface One 
+interface One { 
+    void methodOne(); 
+} 
 
-interface One { 
+// Defining the interface Two 
+interface Two { 
+    void methodTwo(); 
+} 
 
-    void methodOne(); 
-
-} 
-
-// Defining the interface Two 
-
-interface Two { 
-
-    void methodTwo(); 
-
-} 
-
-// Interface extending both the 
-
-// defined interfaces 
-
-interface Three extends One, Two { 
-
-} 
+// Interface extending both defined interfaces 
+interface Three extends One, Two { 
+}
 ```
-
-https://stackoverflow.com/questions/3710275/does-javascript-have-the-interface-type-such-as-javas-interface#:~:text=JavaScript%20Interfaces%3A,do%20so%3B%20and%20frequently%20emulated.

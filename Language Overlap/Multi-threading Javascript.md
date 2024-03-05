@@ -4,17 +4,18 @@ tags:
   - javascript
 author:
   - jacgit18
-Comments: This documentation discusses
+  - chatgpt
+Comments: This documentation discusses multi threading in javascript
 Status: Refinement
 Started: 
-EditDate: 
+EditDate: 2024-03-05
 Relates:
 ---
 es, JavaScript does support multithreading, but with some limitations. In traditional JavaScript, which runs in web browsers, the language itself is single-threaded. This means that it executes one instruction at a time, in a sequential manner. This single thread is known as the "main thread" and handles all JavaScript code execution, DOM manipulation, and event handling.
 
 However, JavaScript also provides mechanisms for concurrent programming through Web Workers. Web Workers allow you to run JavaScript code in the background using separate threads, apart from the main thread. Web Workers can perform tasks such as data processing, heavy computations, or other time-consuming operations without blocking the main thread and affecting the responsiveness of the user interface.
 
-Web Workers enable [[CPUs#^2862c2 | parallel processing]]  by allowing multiple threads of execution to work concurrently. They communicate with the main thread using a message-passing system, passing data back and forth. This way, you can leverage multithreading in JavaScript to improve the performance and responsiveness of web applications.
+Web Workers enable [[CPUs#^2862c2 |parallel processing]]  by allowing multiple threads of execution to work concurrently. They communicate with the main thread using a message-passing system, passing data back and forth. This way, you can leverage multithreading in JavaScript to improve the performance and responsiveness of web applications.
 
 It's important to note that [[Web Workers ]]have their own limitations and considerations. For instance, they run in a separate global context and don't have direct access to the DOM or other APIs available to the main thread. Communication between the main thread and web workers is done through serialized data, requiring explicit message passing. Additionally, browser support for web workers is widespread but not universal, so it's important to check for compatibility with the target browsers.
 

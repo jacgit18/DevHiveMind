@@ -1,13 +1,16 @@
 ---
-tags: 
+tags:
+  - languageOverlap
+  - career
 author:
   - jacgit18
+  - chatgpt
 Comments: This documentation discusses a potential approach on learning new languages.
-Status: Capture
+Status: Done
 Started: 
-EditDate: 
+EditDate: 2024-03-05
 Relates:
 ---
-To streamline your learning approach, consider dedicating 10-15% of your time to grasp the foundational syntax, focusing on essential aspects that cover 60-70% of common tasks in a language like JavaScript. For instance, concentrate on built-in functions for arrays, strings, numbers, and math, omitting more advanced topics like prototypes and asynchronous code initially. This strategy can be applied when acquiring additional languages to become language-agnostic, reserving the exploration of advanced functionalities for future learning based on your role requirements. Prioritize mastering the syntax that proves instrumental in solving coding challenges efficiently.
+To optimize your learning, allocate 10-15% of your time to grasp foundational syntax, emphasizing key aspects covering 60-70% of common tasks in languages such as JavaScript. Focus on built-in functions for arrays, strings, numbers, and math, deferring more advanced topics like prototypes and asynchronous code initially. This approach proves effective when acquiring new languages, fostering language-agnostic proficiency, and saving exploration of advanced functionalities for future learning, aligned with role requirements. Prioritize mastering syntax crucial for efficiently solving coding challenges.
 
-You can practice doing does whenever you have to back on the job hunt like try doing challenges in different languages. 
+Apply this strategy during job hunts by practicing challenges in various languages, enhancing your adaptability and proficiency.

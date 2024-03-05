@@ -1,9 +1,12 @@
 ---
-tags: 
+tags:
+  - formats
+  - Serialization
 author:
   - jacgit18
+  - chatgpt
 Comments: This documentation discusses message formats and originated from a medium article.
-Status: Capture
+Status: Done
 Started: 2024-03-03
 EditDate: 
 Relates:
