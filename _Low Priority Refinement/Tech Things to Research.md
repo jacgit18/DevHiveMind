@@ -15,12 +15,10 @@ Relates:
 - [ ] https://awesomewm.org
 - [ ] ascii art  
 - [ ] does nvidia support multi monitor free sync monitor
-- [ ] nvidia 3d surround on amd freesync monitors  
 - [ ] find out how to backup ide and text editor plugins  
-- [ ] look into restrict full screen on ultrawide monitor to avoid taking up fullscreen  
+
 - [ ] separate password for root and user  
 - [ ] look into setting up eclipse default vm arguments for javafx  
-- [ ] difference between float and double  
 - [ ] tech law  
 
 - [ ] editing gnome dconf  
@@ -29,13 +27,12 @@ Relates:
 - [ ] why bridge network adapters  
 - [ ] blockvault  
 - [ ] faraday cage for computer  
-- [ ] torrenting on ad hoc  
-- [ ] ad hoc  
+ 
 - [ ] Truecrypt  
 - [ ] driver injection  
 - [ ] code text Art  
 - [ ] registry edit that speeds up keyboard  
-- [ ] Hdmi Over Ethernet  
+
 - [ ] should you compress c drive windows 10  
 - [ ] secondary computer pre rendering game  
 - [ ] document scanner  
