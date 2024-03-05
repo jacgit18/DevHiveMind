@@ -5,6 +5,7 @@ tags:
   - parameters
 author:
   - jacgit18
+  - chatgpt
 Comments: This documentation discusses different types of parameters.
 Status: Done
 Started: 

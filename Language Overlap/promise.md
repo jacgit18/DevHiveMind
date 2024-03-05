@@ -7,48 +7,41 @@ Started:
 EditDate: 
 Relates:
 ---
-new promise (resolve, reject )=>{
+```javascript
+// Create a promise with resolve and reject functions
+var porm = new Promise((resolve, reject) => {
+    setTimeout(() => {
+        // Uncomment either resolve() or reject() to test
+        // resolve();
+        reject();
+    }, 2000);
+});
 
-listen for promise state
-
-a promise is a object with multiple properties
-
-like catch, finally, then
-
-.then wraps what ever you pass in , into a new promise so you can contentiously chain
-
-resolve() // when this happens the then is called
-
-reject() // when this is called catch happens
-
+// Function to be executed on success
+function succ() {
+    console.log('Success!');
 }
 
-function succ(){
-
-    console.log('yeah')
-
+// Function to be executed on error
+function err() {
+    console.log('Error!');
 }
 
-var porm = new Promise((resolve, reject)=>{
+// Handle promise using .then() for success and .catch() for error
+porm.then(succ).catch(err);
 
-    setTimeout(()=>{
+// Using async function with await to handle promise
+async function handlePromise() {
+    try {
+        await porm;
+        succ();
+    } catch (error) {
+        err();
+    }
+}
 
-        // switch between to test
+// Uncomment the line below to test async/await
+// handlePromise();
+```
 
-        // resolve()
-
-        reject()
-
-    },2000)
-
-})
-
-// porm.then(succ)
-
-// porm.catch(succ) // almost like a type error or infinite loop never returns anything since catch is for handling reject response not resolve
-
-// porm.then(succ) // similar issue but handling a reject with a then instead of catch
-
-porm.catch(succ)
-
-aysnc function always return promise  and can be used with await to handle errors can use try catch or .then
+In this example, a promise (`porm`) is created with `resolve` and `reject` functions. Depending on whether `resolve` or `reject` is called, the promise will either be fulfilled (success) or rejected (error). The `.then()` method is used to handle success, and the `.catch()` method is used to handle errors. Additionally, the code includes an async function (`handlePromise`) using `async/await` to demonstrate an alternative way of handling promises with error handling.

@@ -3,9 +3,10 @@ tags:
 author:
   - jacgit18
 Status: 
+Comments: This documentation discusses
 Started: 
 EditDate: 
-Relates:
+Relates: "[[Primitive Wrappers Across Languages]]"
 ---
 const str = 'This is a string'; 
 

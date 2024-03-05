@@ -18,7 +18,8 @@ In JavaScript, a primitive (primitive value, primitive data type) is data that i
 Most of the time, a primitive value is represented directly at the lowest level of the language implementation. 
 
 All primitives are *Immutable(pure/no-mutation)*, i.e., they cannot be altered. It is important not to confuse a primitive itself with a variable assigned a primitive value which are *mutable(mutate/impure)*. The variable may be reassigned a new value, but the existing value can not be changed in the ways that objects, arrays, and functions can be altered. 
->[!note] Assignment gives the primitive a new vale it is not being mutated 
+>[!note] 
+>Assignment gives the primitive a new vale it is not being mutated 
 
 ## Number 
 
@@ -27,7 +28,8 @@ Number wrapper
 let number = new Number()
 ```
 
->[!note] Unlike many other programming languages, **JavaScript does not define different types of numbers**, like integers, short, long, floating-point etc.
+>[!note] 
+>Unlike many other programming languages, **JavaScript does not define different types of numbers**, like integers, short, long, floating-point etc.
 
 Long has a higher max value vs int has a low max but takes of less space but the overall space isn't that much
 
@@ -89,7 +91,8 @@ bar = bar.toUpperCase();       // BAZ 
 ```
 
 
->[!note] But using an array method mutates the array 
+>[!note] 
+>But using an array method mutates the array 
 ```javascript
 var foo = []; 
 console.log(foo);               // [] 

@@ -5,7 +5,7 @@ author:
 Status: 
 Started: 
 EditDate: 
-Relates:
+Relates: "[[promise]]"
 ---
 A Promise in NodeJS is similar to a promise in real life. It is an assurance that something will be done. Promise is used to keep track of whether the asynchronous event has been executed or not and determines what happens after the event has occurred. It is an object having 3 states namely: 
 

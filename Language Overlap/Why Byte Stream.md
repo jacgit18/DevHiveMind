@@ -3,6 +3,7 @@ tags:
   - Serialization
 author:
   - jacgit18
+  - chatgpt
 Comments: This documentation discusses why you would want to use Byte Streams.
 Status: Done
 Started: 

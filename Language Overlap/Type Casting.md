@@ -6,9 +6,9 @@ author:
   - jacgit18
   - chatgpt
 Comments: This documentation discusses
-Status: 
+Status: Refinement
 Started: 
-EditDate: 
+EditDate: 2024-03-05
 Relates:
 ---
 ## Widening Casting or Implicit(Js) conversion/Coercion

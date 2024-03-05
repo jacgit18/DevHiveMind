@@ -1,5 +1,6 @@
 ---
-tags: 
+tags:
+  - synchronous
 author:
   - jacgit18
 Status: 

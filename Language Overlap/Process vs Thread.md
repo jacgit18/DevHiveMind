@@ -1,10 +1,13 @@
 ---
-tags: 
+tags:
+  - multiThreading
 author:
   - jacgit18
-Status: 
+  - chatgpt
+Comments: This documentation discusses
+Status: Refinement
 Started: 
-EditDate: 
+EditDate: 2024-03-05
 Relates:
 ---
 Process

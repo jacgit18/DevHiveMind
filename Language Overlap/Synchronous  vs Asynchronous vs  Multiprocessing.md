@@ -1,5 +1,7 @@
 ---
-tags: 
+tags:
+  - synchronous
+  - multiThreading
 author:
   - jacgit18
 Status: 

@@ -9,7 +9,7 @@ Comments: This documentation discusses Primitive Data Types.
 Status: Done
 Started: 
 EditDate: 2024-03-05
-Relates:
+Relates: "[[Primitive Types]]"
 ---
 1. Integer:
    - C/C++: int, short, long, char
