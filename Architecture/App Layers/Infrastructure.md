@@ -1,12 +1,15 @@
 ---
-tags: 
+tags:
+  - systemComponent
 author:
   - jacgit18
-Comments: This documentation discusses
-Status: Capture
+  - chatgpt
+Comments: This documentation discusses infrastructure layer of a web app.
+Status: Done
 Started: 
-EditDate: 
-Relates:
+EditDate: 2024-03-06
+Relates: 
+Peer Reviewed: "0"
 ---
 In the context of a web application, the Infrastructure layer refers to the underlying technology and components that provide the foundation for the application to run and function properly. It serves as the backbone of the entire web application architecture, supporting higher-level components and ensuring that the application is accessible, scalable, reliable, and secure. The Infrastructure layer typically includes the following key elements:
 

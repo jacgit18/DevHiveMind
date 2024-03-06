@@ -38,6 +38,7 @@ Relates:
 - **jQuery**: A JavaScript library for implementing website functionalities and effects.
 
 - **Logical Call Stack**: A conceptual representation in asynchronous programming for tracking execution flow.
+- **Methodology**: a system of methods used in a particular area of study or activity.
 
 - **MetaData**: Metadata is the data about the data. Metadata describes data relationships and characteristics, and is often referred to as a data dictionary, though that seems to be a term more prevalent in the relational world (though not exclusive to it by any means).
 

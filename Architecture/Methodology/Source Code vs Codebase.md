@@ -4,16 +4,13 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses
+Comments: This documentation discusses the difference between source code and codebases.
 Status: Done
 Started: 
 EditDate: 2024-03-06
 Relates: 
 Peer Reviewed: "0"
 ---
-
-**Methodology**: a system of methods used in a particular area of study or activity.
-
 "Source code" and "codebase" are related terms in software development, but they refer to slightly different concepts.
 
 ## Source Code
