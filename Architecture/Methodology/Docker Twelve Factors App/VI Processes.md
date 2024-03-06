@@ -1,12 +1,21 @@
 ---
 tags:
   - processes
+  - methodology
+  - Docker
+  - 12FactorApp
+  - stateless
+  - instance
+  - scalability
 author:
   - jacgit18
-Status: 
+  - chatgpt
+Comments: This documentation Twelve Factor App, factor six in the context of Docker.
+Status: Done
 Started: 
-EditDate: 
-Relates:
+EditDate: 2024-03-06
+Relates: 
+Peer Reviewed: Yes
 ---
 Processes: Your app should be executed as one or more stateless processes. Docker containers are designed to be lightweight, isolated, and stateless, making it easier to scale and manage multiple instances of the app and it process. A single container should run a single foreground process, and you can use multiple containers to run the various pieces of a more complex application. 
 

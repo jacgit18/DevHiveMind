@@ -1,6 +1,7 @@
 ---
 tags:
   - methodology
+  - 12FactorApp
 author:
   - jacgit18
 Comments: This documentation is the official description of Twelve Factor App factor number four.

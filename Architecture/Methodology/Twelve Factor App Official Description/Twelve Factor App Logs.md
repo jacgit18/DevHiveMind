@@ -2,6 +2,7 @@
 tags:
   - methodology
   - 12FactorApp
+  - monitoring
 author:
   - jacgit18
 Comments: This documentation is the official description of Twelve Factor App factor number eleven.

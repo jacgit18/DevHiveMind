@@ -1,11 +1,21 @@
 ---
-tags: 
+tags:
+  - methodology
+  - Docker
+  - 12FactorApp
+  - environment
+  - devops
+  - phases
+  - testing
 author:
   - jacgit18
-Status: 
+  - chatgpt
+Comments: This documentation Twelve Factor App, factor ten in the context of Docker.
+Status: Done
 Started: 
-EditDate: 
-Relates:
+EditDate: 2024-03-06
+Relates: 
+Peer Reviewed: Yes
 ---
 >[!note] 
 >Parity the state or condition of being equal, example having a environment-specific Configurations like different DB depending on the environment 
