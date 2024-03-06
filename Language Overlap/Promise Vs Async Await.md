@@ -10,7 +10,7 @@ Comments: This documentation discusses promises and async functions.
 Status: Refinement
 Started: 
 EditDate: 
-Relates: "[[promise]]"
+Relates: 
 Peer Reviewed: "0"
 ---
 A Promise in NodeJS mirrors the concept of a promise in real life, providing an assurance that a specific task will be completed. It serves to track the execution status of asynchronous events and dictates the course of action post-event completion. A promise object encompasses three states:
@@ -60,6 +60,49 @@ Promise.any([fetchPromise1, fetchPromise2, fetchPromise3])
     console.error(`Failed to fetch: ${error}`);
   });
 ```
+
+
+## Alt Example 
+```javascript
+// Create a promise with resolve and reject functions
+var porm = new Promise((resolve, reject) => {
+    setTimeout(() => {
+        // Uncomment either resolve() or reject() to test
+        // resolve();
+        reject();
+    }, 2000);
+});
+
+// Function to be executed on success
+function succ() {
+    console.log('Success!');
+}
+
+// Function to be executed on error
+function err() {
+    console.log('Error!');
+}
+
+// Handle promise using .then() for success and .catch() for error
+porm.then(succ).catch(err);
+
+// Using async function with await to handle promise
+async function handlePromise() {
+    try {
+        await porm;
+        succ();
+    } catch (error) {
+        err();
+    }
+}
+
+// Uncomment the line below to test async/await
+// handlePromise();
+```
+
+In this example, a promise (`porm`) is created with `resolve` and `reject` functions. Depending on whether `resolve` or `reject` is called, the promise will either be fulfilled (success) or rejected (error). The `.then()` method is used to handle success, and the `.catch()` method is used to handle errors. Additionally, the code includes an async function (`handlePromise`) using `async/await` to demonstrate an alternative way of handling promises with error handling.
+
+
 
 For more detailed information on promises, async/await, and fetch in modern JavaScript, refer to the following resources:
 
