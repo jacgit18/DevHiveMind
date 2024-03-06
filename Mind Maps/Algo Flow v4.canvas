@@ -185,13 +185,13 @@
 		{"id":"5821d09cadc7d49f","type":"file","file":"Algorithms & Data Structures/_Infographic/Stack.png","x":4818,"y":2020,"width":65,"height":151},
 		{"id":"cae3a9b501113eeb","type":"text","text":"## **Imperative**","x":2612,"y":2404,"width":313,"height":60},
 		{"id":"3499ff7e5bb5953c","type":"text","text":"## **_Declarative_**","x":2612,"y":2624,"width":313,"height":60},
-		{"id":"0a4b2038cfea7570","type":"text","text":"Sorts are comparison based","x":3852,"y":-440,"width":433,"height":60},
 		{"id":"6ad57008140b0a00","type":"text","text":"# Two Pointer","x":2840,"y":600,"width":348,"height":60,"color":"3"},
 		{"id":"299bea4e5c92629f","x":2423,"y":748,"width":367,"height":60,"type":"text","text":"## [[In place]] Sort"},
 		{"id":"4f973a46835d122b","type":"text","text":"# Relates to Arrays","x":2401,"y":200,"width":524,"height":59,"color":"3"},
 		{"id":"a5083ad284352cf5","x":3665,"y":187,"width":703,"height":72,"color":"4","type":"text","text":"# Relates to Linked List"},
 		{"id":"4e25041bfead4c18","type":"text","text":"# Dummy Node","x":3325,"y":600,"width":374,"height":60,"color":"4"},
-		{"id":"2d74e066321dd411","type":"text","text":"# Fast Slow Pointer","x":3969,"y":600,"width":493,"height":60,"color":"4"}
+		{"id":"2d74e066321dd411","type":"text","text":"# Fast Slow Pointer","x":3969,"y":600,"width":493,"height":60,"color":"4"},
+		{"id":"0a4b2038cfea7570","type":"text","text":"a lot of sorts are comparison based","x":3652,"y":-524,"width":317,"height":125}
 	],
 	"edges":[
 		{"id":"96d016acd65b0fff","fromNode":"ca62e46b96c8640f","fromSide":"right","toNode":"fd325d709a909001","toSide":"left","color":"2"},
