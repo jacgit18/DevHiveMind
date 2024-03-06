@@ -1,12 +1,17 @@
 ---
 tags:
   - servers
+  - backend
+  - proxy
 author:
   - jacgit18
+  - chatgpt
+Comments: This documentation discusses backend  server and proxy server.
 Status: Done
 Started: 
-EditDate: 
+EditDate: 2024-03-06
 Relates: "[[Proxy]]"
+Peer Reviewed: "0"
 ---
 **Backend Servers:**  
 - A backend server refers to the server-side of an application, responsible for processing requests, handling business logic, and interacting with databases.  
