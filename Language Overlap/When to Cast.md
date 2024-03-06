@@ -4,7 +4,8 @@ tags:
   - casting
 author:
   - jacgit18
-Comments: This documentation discusses
+  - chatgpt
+Comments: This documentation discusses when to cast.
 Status: Refinement
 Started: 
 EditDate: 2024-03-06

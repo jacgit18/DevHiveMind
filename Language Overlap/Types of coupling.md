@@ -1,11 +1,17 @@
 ---
-tags: 
+tags:
+  - data
+  - ty
+  - ClassStructure
 author:
   - jacgit18
+  - chatgpt
+Comments: This documentation discusses Types of coupling
 Status: Refinement
 Started: 
-EditDate: 
+EditDate: 2024-03-06
 Relates: "[[Coupling vs Cohesion]]"
+Peer Reviewed: "0"
 ---
 ## Best to Worst 
 
@@ -27,6 +33,5 @@ Data coupling: When one function passes data to another function that may be use
 
 **Stamp coupling**: When the signature of one of Class B's functions has class A as its argument or return type. 
 
-**Import coupling**: When a library is imported for use inside a program. For example, when include and import statements are used in #Ctt and #Java, respectively.
+**Import coupling**: When a library is imported for use inside a program. For example, when include and import statements are used in C++ and Java, respectively.
 
-C++ = Ctt

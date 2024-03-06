@@ -2,9 +2,10 @@
 tags: 
 author:
   - jacgit18
+  - chatgpt
 Status: Refinement
 Started: 
-EditDate: 
+EditDate: 2024-03-06
 Relates: "[[Coupling vs Cohesion]]"
 ---
 ## Best to Worst 
