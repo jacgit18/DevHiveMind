@@ -1,12 +1,17 @@
 ---
-tags: 
+tags:
+  - pureFunction
+  - impureFunction
+  - mutability
 author:
   - jacgit18
-Comments: This documentation discusses
+  - chatgpt
+Comments: This documentation discusses shallow and deep copy.
 Status: Refinement
 Started: 
-EditDate: 
-Relates:
+EditDate: 2024-03-06
+Relates: 
+Peer Reviewed: "0"
 ---
 ![[Shallow and Deep Copy.gif]]
 Shallow copy involves creating a new object with an exact copy of values from the original. If the object contains references to other objects, only the memory addresses are copied.
