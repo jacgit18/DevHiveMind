@@ -5,7 +5,7 @@ tags:
 author:
   - jacgit18
 Comments: This documentation is the official description of Twelve Factor App factor number one.
-Status: Done
+Status: Final
 Started: 
 EditDate: 2024-03-06
 Relates: 
