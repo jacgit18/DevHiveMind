@@ -1,12 +1,16 @@
 ---
 tags:
   - pattern
+  - principles
 author:
   - jacgit18
-Status: 
+  - chatgpt
+Comments: This documentation discusses GRASP principle.
+Status: Done
 Started: 
-EditDate: 
-Relates:
+EditDate: 2024-03-06
+Relates: 
+Peer Reviewed: "0"
 ---
 General Responsibility Assignment Software Patterns (GRASP) is another set of design principles.
 
@@ -43,7 +47,7 @@ And if so, it would seem to make sense to nominate those objects as taking that�
 
 > A common design pattern that applies this principle is called [Factory Pattern](http://en.wikipedia.org/wiki/Factory_(object-oriented_programming)).
 
-## Low Coupling
+## Low [[Types of coupling |Coupling]]
 
 It means you try to reduce the dependency between your objects.
 
@@ -53,7 +57,7 @@ Lots of dependencies meaning lots of potential for breaking things if you make a
 
 Now _low_ coupling does not mean no coupling. Objects do need to know about each other, but as much as possible they should do what they can with the minimum of dependencies.
 
-## High Cohesion
+## High [[Types of Cohesion |Cohesion]]
 
 The more you have a class that has relevant and focused responsibilities, the higher cohesion you will have.
 

@@ -3,12 +3,16 @@ tags:
   - CodebaseDecision
   - CleanPrinciples
   - AlgorithmComponent
+  - principles
 author:
   - jacgit18
-Status: done
+  - chatgpt
+Comments: This documentation discusses BUD principle.
+Status: Done
 Started: 
 EditDate: 2023-12-03
-Relates:
+Relates: 
+Peer Reviewed: "0"
 ---
 ![[Bud.gif]]
 

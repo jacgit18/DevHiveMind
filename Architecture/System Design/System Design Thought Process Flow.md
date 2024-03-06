@@ -90,6 +90,7 @@ For more info read [[System Design Interview An Insider’s Guide.pdf]] and [[Sy
 - [ ] Look into https://blog.quastor.org/p/rate-limiting-stripe
 - [ ] talk picking languages and libraries and frameworks
 - [ ] Talk [[🌐 Internet Communication Process]] in terms of what you would use
+- [ ] [[System Scalability Strategies]]
 
 
 
