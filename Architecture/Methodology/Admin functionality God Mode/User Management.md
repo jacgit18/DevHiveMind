@@ -5,7 +5,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses admin process around user management process.
+Comments: This documentation discusses admin process around user management processes.
 Status: Done
 Started: 
 EditDate: 2024-03-06
