@@ -10,7 +10,7 @@ Comments: This documentation discusses admin process around database migrations 
 Status: Done
 Started: 
 EditDate: 2024-03-06
-Relates: 
+Relates: "[[Migration Plan]]"
 Peer Reviewed: "0"
 ---
 Applying changes to the database schema is a crucial aspect of managing the evolution of an application. As an application evolves, its data requirements may change, necessitating modifications to the underlying database structure. This process involves tasks such as adding new tables, altering existing ones, and performing data transformations. Here's a detailed expansion on this process:

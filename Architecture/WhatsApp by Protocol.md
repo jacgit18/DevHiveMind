@@ -1,12 +1,17 @@
 ---
-tags: 
+tags:
+  - protocol
+  - systemDesign
+  - example
 author:
   - jacgit18
-Comments: This documentation discusses
-Status: Capture
+  - chatgpt
+Comments: This documentation discusses WhatsApp from a system design standpoint around different protocols.
+Status: Done
 Started: 
-EditDate: 
-Relates:
+EditDate: 2024-03-06
+Relates: 
+Peer Reviewed: "0"
 ---
 In designing a chat application like WhatsApp for a system design interview, consider using a combination of protocols to ensure efficient and secure communication.  
   

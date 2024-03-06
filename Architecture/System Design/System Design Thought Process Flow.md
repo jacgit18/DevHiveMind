@@ -2,6 +2,10 @@
 tags:
   - interview
   - architecturalParadigm
+  - systemDesign
+  - systemComponent
+  - systemHealth
+  - distributedSystem
 author:
   - jacgit18
 Comments: Still cleaning up this documentation I might convert to a mind map or something visual like some type of decision tree.

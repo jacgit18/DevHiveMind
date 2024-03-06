@@ -1,12 +1,16 @@
 ---
-tags: 
+tags:
+  - systemDesign
+  - business
 author:
   - jacgit18
-Status: Capture
-Started: 
-EditDate: 
-Relates: 
+  - chatgpt
 Comments: This documentation discuss the type of question to ask when it comes to user base when designing a system.
+Status: Done
+Started: 
+EditDate: 2024-03-06
+Relates: 
+Peer Reviewed: "0"
 ---
 In a system design interview, understanding the user base is crucial for designing scalable and efficient systems. Here are some questions you might ask or consider when discussing the user base:  
   

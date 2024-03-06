@@ -9,7 +9,7 @@ Comments: This documentation discusses admin process around cache clearing proce
 Status: Done
 Started: 
 EditDate: 2024-03-06
-Relates: 
+Relates: "[[Caches]]"
 Peer Reviewed: "0"
 ---
 Clearing cached data is a critical operational task that involves removing stored data from a cache, especially when it becomes stale or irrelevant. Caches are used to improve performance by storing frequently accessed or computed data, but ensuring the freshness and accuracy of this data is essential. Here's an in-depth expansion on the process of clearing cached data:
