@@ -5,11 +5,12 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses
+Comments: This documentation discusses type casting.
 Status: Refinement
 Started: 
 EditDate: 2024-03-05
-Relates:
+Relates: 
+Peer Reviewed: "0"
 ---
 ## Widening Casting or Implicit(Js) conversion/Coercion
 
