@@ -3,6 +3,7 @@ tags:
   - monitoring
   - performance
   - systemHealth
+  - adminProcesses
 author:
   - jacgit18
   - chatgpt
