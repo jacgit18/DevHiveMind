@@ -4,6 +4,7 @@ tags:
   - Docker
   - 12FactorApp
   - monitoring
+  - performance
 author:
   - jacgit18
   - chatgpt
