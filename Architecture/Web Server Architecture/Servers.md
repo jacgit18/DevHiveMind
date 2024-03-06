@@ -1,5 +1,6 @@
 ---
-tags: 
+tags:
+  - servers
 author:
   - jacgit18
 Status: Done
@@ -25,3 +26,5 @@ A CDN is a web server that acts like a cache and communicate with the origin bac
 - Proxies can be configured to route requests to different backend servers based on certain criteria, enhancing scalability and performance.  
   
 In summary, while a backend server is primarily responsible for handling application logic and data, a proxy server serves as an intermediary between clients and servers, offering additional functionality such as load balancing, caching, or security measures. They can work together in a system architecture to optimize various aspects of communication between clients and servers.
+
+

@@ -1,13 +1,20 @@
 ---
 tags:
   - routes
-  - practices
+  - servers
+  - bestPractices
+  - caches
+  - data
+  - security
 author:
   - jacgit18
-Status: Capture
+  - chatgpt
+Comments: This documentation discusses best practices for server routes for user accounts.
+Status: Done
 Started: 2024-01-01
-EditDate: 
-Relates:
+EditDate: 2024-03-06
+Relates: 
+Peer Reviewed: "0"
 ---
 ## Login Route
 

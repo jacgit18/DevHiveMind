@@ -1,11 +1,20 @@
 ---
-tags: 
+tags:
+  - servers
+  - web
+  - backend
+  - HTTP
+  - databases
+  - processes
 author:
   - jacgit18
-Status: Capture
+  - chatgpt
+Comments: This documentation discusses the difference between backend and web servers.
+Status: Done
 Started: 
-EditDate: 
-Relates:
+EditDate: 2024-03-06
+Relates: 
+Peer Reviewed: "0"
 ---
 The backend and web server are distinct components in a web application:
 
