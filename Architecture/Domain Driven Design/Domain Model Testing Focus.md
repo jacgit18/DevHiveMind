@@ -4,10 +4,13 @@ tags:
   - testing
 author:
   - jacgit18
-Status: init
+  - chatgpt
+Comments: This documentation discusses
+Status: Done
 Started: 2023-11-26
 EditDate: 
-Relates:
+Relates: 
+Peer Reviewed: "0"
 ---
 In Domain-Driven Design (DDD), unit testing is crucial for ensuring the correctness and robustness of your domain logic. Here's a breakdown of where you should focus your unit test writing in the context of DDD, considering entities, value objects, domain events, and aggregates:  
   
