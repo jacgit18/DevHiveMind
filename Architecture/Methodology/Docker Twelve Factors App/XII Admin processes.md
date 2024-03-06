@@ -16,7 +16,7 @@ Status: Done
 Started: 
 EditDate: 2024-03-06
 Relates: 
-Peer Reviewed: Yes
+Peer Reviewed: "1"
 ---
 Admin processes: Administrative tasks, such as [[Database Migrations]], [[Data Seeding]], or [[User Management]], that should be kept separate from the main application processes to prevent interference with regular application operations along with separate deployment from the main application . Using Docker allows you to execute administrative processes within a container, ensuring consistency and avoiding environment-specific issues while maintaining separation of concerns ensuring that administrative activities don't impact the stability, performance, maintenance, and security of the main running application.
 
