@@ -50,6 +50,7 @@ Relates:
 1. Two Pointer
 2. Fast Slow Pointer
 3. Dummy Node
+4. Cyclic Sort(sort are comparison based)
 #### Range 
 4. Sliding Window
 #### Search 
