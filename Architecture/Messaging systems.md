@@ -9,11 +9,13 @@ tags:
   - concurrency
 author:
   - jacgit18
+  - chatgpt
 Comments: This documentation discusses message systems.
-Status: Defining Relationships
+Status: Refinement
 Started: 2023-09-01
 EditDate: 2024-02-03
-Relates:
+Relates: 
+Peer Reviewed: "0"
 ---
 ![[Message Systems.gif]]
 Backend developers need to possess the essential skill of working with messaging systems, which are crucial tools for enabling asynchronous communication between various components of a system, including services, applications, and devices. Messaging systems facilitate the transmission of messages containing data or commands without necessitating a direct connection or synchronous responses.
@@ -30,7 +32,7 @@ The significance of messaging systems in backend development lies in their abili
 
 There are diverse types of messaging systems, including message brokers, message queues, and message buses:
 
-- **Message Brokers:** These act as intermediaries between message producers and consumers, offering routing, filtering, transforming, and aggregating capabilities to manage message flow.  [[Apache Kafka]] and RabbitMQ are popular brokers, commonly found in event-driven architectures and microservices.
+- **Message Brokers:** These act as intermediaries between message producers and consumers, offering routing, filtering, transforming, and aggregating capabilities to manage message flow. [[Apache Kafka]] and RabbitMQ are popular brokers, commonly found in event-driven architectures and microservices.
 
 - **Message Buses:** Connecting various system components through a common communication channel, they provide functionalities like broadcasting, subscribing, and publishing for event-driven communication.
 

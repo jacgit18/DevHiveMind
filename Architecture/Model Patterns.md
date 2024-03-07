@@ -4,11 +4,13 @@ tags:
   - MacroCodebaseDecision
 author:
   - jacgit18
+  - chatgpt
 Comments: This documentation discusses some of the different patterns.
 Status: Done
 Started: 
 EditDate: 2024-02-26
-Relates:
+Relates: 
+Peer Reviewed: "0"
 ---
 ![[Model Patterns.gif]]
 Design patterns are essential tools for any developer, offering a framework for structuring code in a clean, maintainable, and scalable way.  
