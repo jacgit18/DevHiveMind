@@ -6,11 +6,13 @@ tags:
   - potentialMerge
 author:
   - jacgit18
+  - chatgpt
 Comments: This documentation discusses different aspect of a algorithm to examine.
 Status: Refinement
 Started: 
 EditDate: 
 Relates: "[[Iteration vs Recursion]]"
+Peer Reviewed: "0"
 ---
 ![[paths.gif]]
 ## Problem Identification

@@ -5,7 +5,8 @@ tags:
   - dataStructure
 author:
   - jacgit18
-Comments: This documentation discusses
+  - chatgpt
+Comments: This documentation discusses Abstract Data Types
 Status: Refinement
 Started: 
 EditDate: 2024-02-29

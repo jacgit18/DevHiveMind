@@ -3,11 +3,13 @@ tags:
   - AlgorithmExamination
 author:
   - jacgit18
+  - chatgpt
 Comments: Random thought
 Status: Done
 Started: 
 EditDate: 
-Relates:
+Relates: 
+Peer Reviewed: "0"
 ---
 ![[Thought.gif]]
 

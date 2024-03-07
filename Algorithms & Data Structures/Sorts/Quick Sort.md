@@ -6,11 +6,13 @@ tags:
   - comparisonSort
 author:
   - jacgit18
+  - chatgpt
 Comments: This documentation discusses
-Status: Capture
+Status: Refinement
 Started: 
 EditDate: 
-Relates:
+Relates: 
+Peer Reviewed: "0"
 ---
 ![[quickSort.gif]]
 

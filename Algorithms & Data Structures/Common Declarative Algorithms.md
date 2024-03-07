@@ -4,11 +4,13 @@ tags:
   - CodingProblem
 author:
   - jacgit18
-Comments: This documentation discusses
-Status: Refinement
+  - chatgpt
+Comments: This documentation discusses Common Declarative Algorithms
+Status: Done
 Started: 
-EditDate: 
-Relates:
+EditDate: 2024-03-07
+Relates: 
+Peer Reviewed: "0"
 ---
 ### [[Declarative Coding]] Example
 
