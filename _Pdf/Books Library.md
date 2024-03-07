@@ -3,7 +3,7 @@ tags:
   - 📚Books
 author:
   - jacgit18
-Comments: This documentation discusses
+Comments: This documentation is a early stage book tracker using dataview.js
 Status: Refinement
 Started: 
 EditDate: 2024-03-07

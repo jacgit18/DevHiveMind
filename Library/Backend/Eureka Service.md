@@ -36,7 +36,7 @@ Key features of Eureka:
    - Clients, when querying for a service, can use information from Eureka to implement client-side load balancing strategies.
 
 6. **Fault Tolerance:**
-   - Eureka is designed with [[Fault tolerance]] in mind. If one Eureka server goes down, clients can still discover services by querying other available Eureka servers in the system.
+   - Eureka is designed with [[Fault Tolerance]] in mind. If one Eureka server goes down, clients can still discover services by querying other available Eureka servers in the system.
 
 7. **Integration with Spring Cloud:**
    - Eureka is commonly used in conjunction with Spring Cloud, a framework for building Java-based microservices. Spring Cloud provides seamless integration with Eureka for service discovery.

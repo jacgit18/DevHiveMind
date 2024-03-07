@@ -10,7 +10,7 @@ author:
 Status: Refinement
 Started: 2024-01-08
 EditDate: 
-Relates: "[[Fault tolerance]]"
+Relates: "[[Fault Tolerance]]"
 Comments: This documentation discusses
 Peer Reviewed: "0"
 ---
