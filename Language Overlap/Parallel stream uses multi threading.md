@@ -6,11 +6,13 @@ tags:
   - example
 author:
   - jacgit18
+  - chatgpt
 Comments: This documentation discusses an example of code using parallel streams and multithreading.
 Status: Refinement
 Started: 
 EditDate: 2024-03-05
-Relates:
+Relates: 
+Peer Reviewed: "0"
 ---
 Use parallel stream to handle writing to file with multithreading
 

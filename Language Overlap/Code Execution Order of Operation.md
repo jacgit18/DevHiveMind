@@ -3,13 +3,16 @@ tags:
   - asynchronous
   - codeExecution
   - synchronous
+  - OrderOfOperations
 author:
   - jacgit18
   - chatgpt
+Comments: This documentation discusses Code Execution Order of Operation
 Status: Done
 Started: 
 EditDate: 2024-03-04
 Relates: "[[Asynchronous Programming]]"
+Peer Reviewed: "0"
 ---
 The terms "asynchronous" and "synchronous" refer to different approaches to handling tasks or operations in a program. Let's understand the purpose of asynchronous and synchronous code:
 

@@ -8,7 +8,8 @@ Comments: This documentation discusses Object Setter & Getter.
 Status: Done
 Started: 
 EditDate: 2024-03-02
-Relates:
+Relates: 
+Peer Reviewed: "0"
 ---
 ### Harnessing the Power of Getters and Setters in JavaScript
 

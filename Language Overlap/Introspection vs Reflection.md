@@ -10,7 +10,8 @@ Comments: This documentation discusses Introspection and Reflection.
 Status: Done
 Started: 
 EditDate: 2024-03-04
-Relates:
+Relates: 
+Peer Reviewed: "0"
 ---
 Introspection and reflection are both concepts in computer science and programming that involve examining and manipulating the structure and behavior of a program or its components at runtime. While they share some similarities, they serve different purposes and are used in different contexts.
 

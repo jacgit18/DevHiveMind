@@ -12,7 +12,8 @@ Comments: This documentation discusses Dynamic and Static Polymorphism.
 Status: Done
 Started: 
 EditDate: 2024-03-05
-Relates:
+Relates: 
+Peer Reviewed: "0"
 ---
 Dynamic polymorphism and static polymorphism are two forms of polymorphism in programming, and they differ in the timing of binding between the method call and the method implementation.
 

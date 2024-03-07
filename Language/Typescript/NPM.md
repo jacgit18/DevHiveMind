@@ -4,11 +4,13 @@ tags:
   - typescript
 author:
   - jacgit18
+  - chatgpt
 Comments: This documentation discusses NPM.
 Status: Done
 Started: 
 EditDate: 2024-02-26
-Relates:
+Relates: 
+Peer Reviewed: "0"
 ---
 **(@) Prefix on NPM Packages**
 

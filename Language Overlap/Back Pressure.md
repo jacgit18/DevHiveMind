@@ -5,11 +5,13 @@ tags:
   - architecturalParadigm
 author:
   - jacgit18
+  - chatgpt
 Comments: This documentation discusses back pleasure.
 Status: Done
 Started: 
 EditDate: 2024-03-04
 Relates: "[[Asynchronous Programming]]"
+Peer Reviewed: "0"
 ---
 **Understanding Back Pressure in Asynchronous Programming and Reactive Systems**
 

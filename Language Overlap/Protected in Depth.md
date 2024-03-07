@@ -10,7 +10,8 @@ Comments: This documentation discusses protected keywords.
 Status: Done
 Started: 
 EditDate: 2024-03-04
-Relates:
+Relates: 
+Peer Reviewed: "0"
 ---
 In Java, the `protected` keyword is an access modifier that can be applied to class members (fields, methods, and nested classes) to control their visibility and accessibility within a class hierarchy. Here's an explanation of the `protected` keyword:
 

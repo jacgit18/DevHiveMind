@@ -9,7 +9,8 @@ Comments: This documentation discusses YAMl.
 Status: Done
 Started: 
 EditDate: 2024-02-29
-Relates:
+Relates: 
+Peer Reviewed: "0"
 ---
 YAML (YAML Ain't Markup Language) is a human-readable data serialization format commonly used for configuration files, data exchange, and storing structured data. It was designed to be easily readable by humans and easy to parse by machines.
 

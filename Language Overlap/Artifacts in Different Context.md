@@ -5,11 +5,13 @@ tags:
   - maven
 author:
   - jacgit18
+  - chatgpt
 Comments: This documentation discusses the term artifacts in different context.
 Status: Done
 Started: 
 EditDate: 2024-03-03
 Relates: "[[Deployment Artifacts]]"
+Peer Reviewed: "0"
 ---
 The term "artifact" in the context of Maven specifically refers to the individual software components, libraries, or files stored in a Maven repository. These artifacts, commonly in the form of JAR (Java Archive) files, contain compiled code, resources, and other necessary elements for a project. The identification of each artifact involves coordinates such as Group ID, Artifact ID, Version, and sometimes a Packaging type.
 

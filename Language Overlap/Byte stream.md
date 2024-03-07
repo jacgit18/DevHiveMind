@@ -9,7 +9,8 @@ Comments: This documentation discusses Byte stream.
 Status: Done
 Started: 
 EditDate: 2024-02-17
-Relates:
+Relates: 
+Peer Reviewed: "0"
 ---
 In Java, a byte stream is a sequence of bytes used for reading from or writing to a source or destination. It provides a low-level, fundamental way of handling binary data.
 
