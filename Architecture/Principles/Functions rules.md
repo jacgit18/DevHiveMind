@@ -5,13 +5,14 @@ tags:
   - functionStructure
   - bestPractices
   - FunctionTypes
+  - languageOverlap
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses
+Comments: This documentation discusses Functions rules.
 Status: Refinement
 Started: 
-EditDate: 
+EditDate: 2024-03-07
 Relates: 
 Peer Reviewed: "0"
 ---
@@ -20,7 +21,7 @@ Peer Reviewed: "0"
 - Use descriptive names.
 - Prefer fewer arguments.
 - Have no side effects.
-- Don't use [[flag arguments]]. Split method into several independent methods that can be called from the client without the flag.  flag would be some boolean value you use as a arg in a function and use it within your conditional logic 
+- Don't use [[Flag Arguments]]. Split method into several independent methods that can be called from the client without the flag.  flag would be some boolean value you use as a arg in a function and use it within your conditional logic 
 - So, another way to know that a function is doing more than “one thing” is if you can extract another function from it with a name that is not merely a restatement of its implementation.
 
 

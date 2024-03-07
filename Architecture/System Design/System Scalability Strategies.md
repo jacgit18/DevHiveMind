@@ -6,7 +6,7 @@ author:
   - jacgit18
   - chatgpt
 Comments: This documentation discusses the three primary scaling methodology that you end up picking from.
-Status: Capture
+Status: Refinement
 Started: 
 EditDate: 
 Relates:
