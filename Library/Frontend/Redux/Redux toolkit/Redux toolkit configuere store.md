@@ -8,11 +8,13 @@ tags:
   - reduxToolKit
 author:
   - jacgit18
+  - chatgpt
 Comments: This documentation is a code snippet showing how to configure store.
-Status: Done
+Status: Final
 Started: 
 EditDate: 2024-02-08
-Relates:
+Relates: 
+Peer Reviewed: "1"
 ---
 ```jsx
 import { configureStore, getDefaultMiddleware } from '@reduxjs/toolkit';

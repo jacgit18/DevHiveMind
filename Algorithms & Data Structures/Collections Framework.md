@@ -4,11 +4,13 @@ tags:
   - Java
 author:
   - jacgit18
-Comments: This documentation discusses
+  - chatgpt
+Comments: This documentation discusses Collections Framework
 Status: Done
 Started: 
-EditDate: 
-Relates:
+EditDate: 2024-03-07
+Relates: 
+Peer Reviewed: "0"
 ---
 ![[Collections in Java.png]]
 ### Background

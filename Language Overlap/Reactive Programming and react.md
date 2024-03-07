@@ -5,11 +5,12 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses
+Comments: This documentation discusses Reactive Programming and react
 Status: Refinement
 Started: 2023-10-10
 EditDate: 
-Relates:
+Relates: 
+Peer Reviewed: "0"
 ---
 React and Redux, while not typically classified as event-driven and reactive programming frameworks, do have some elements that can be related to these concepts:  
   

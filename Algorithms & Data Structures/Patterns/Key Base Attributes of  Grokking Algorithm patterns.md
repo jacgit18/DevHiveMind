@@ -3,11 +3,12 @@ tags:
   - MicroCodebaseDecision
 author:
   - jacgit18
-Comments: This documentation discusses
-Status: 
+Comments: This documentation discusses Grokking Algorithm patterns
+Status: Refinement
 Started: 
 EditDate: 
-Relates:
+Relates: 
+Peer Reviewed: "0"
 ---
 > [!note] The pattern names are just visual abstraction of the pattern
 ## Sliding Window

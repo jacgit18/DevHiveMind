@@ -5,18 +5,20 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses
+Comments: This documentation discusses best practices for sorting.
 Status: Done
 Started: 2023-11-01
 EditDate: 2024-02-27
 Relates: "[[All Sorts of Sorts]]"
+Peer Reviewed: "0"
 ---
 Sorting algorithms do not always need to return `void`. The return type of a sorting algorithm depends on the specific programming language and the design of the algorithm. Sorting algorithms can have different return types:  
   
 1. **Void**: In many cases, sorting algorithms modify the input data in place, and therefore, they return `void`, meaning they do not return any value but directly change the order of the elements in the input data.  
   
 2. **New Array/Collection**: Some sorting algorithms create a new sorted array or collection and return that sorted data, leaving the original data unchanged. In this case, the return type is typically the same as the type of the elements being sorted. 
->[!note] This is typically better practice but it seems when it comes to sorting. I try and do this instead of modify original value in general outside of sorting this relates to this note [[Shallow Copy and Deep Copy(clone)]]
+>[!note] 
+>This is typically better practice but it seems when it comes to sorting. I try and do this instead of modify original value in general outside of sorting this relates to this note [[Shallow Copy and Deep Copy(clone)]]
   
 3. **Boolean**: Sorting algorithms can return a boolean value to indicate whether the sorting operation was successful or not.  
   

@@ -5,7 +5,7 @@ tags:
 author:
   - jacgit18
 Comments: This documentation discusses ways to address anti patterns
-Status: Capture
+Status: Refinement
 Started: 
 EditDate: 
 Relates:

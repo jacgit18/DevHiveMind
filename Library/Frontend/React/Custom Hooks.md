@@ -8,11 +8,13 @@ tags:
   - hooks
 author:
   - jacgit18
+  - chatgpt
 Comments: This documentation discusses what custom hooks are.
 Status: Done
 Started: 
 EditDate: 2024-02-06
 Relates: "[[Hooks]]"
+Peer Reviewed: "0"
 ---
 A custom hook in JavaScript is essentially a function prefixed with "use." It has the flexibility to utilize other hooks as necessary. Custom hooks serve as a way to share logic between multiple components, offering an alternative to Higher-Order Components ([[Props#Higher Order Components (HOC) and Render Prop Pattern |HOCs]]) and Render Props.
 

@@ -8,7 +8,8 @@ Comments: This documentation discusses process isolation.
 Status: Done
 Started: 
 EditDate: 2024-03-05
-Relates:
+Relates: 
+Peer Reviewed: "0"
 ---
 Each process in the application should be isolated, stateless, and independent of other processes. This enables horizontal scalability and fault tolerance. If one process becomes unhealthy or unresponsive, it can be terminated and replaced without affecting the overall application.
 

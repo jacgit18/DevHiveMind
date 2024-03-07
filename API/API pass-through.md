@@ -8,11 +8,12 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses
+Comments: This documentation discusses API pass-through
 Status: Capture
 Started: 
 EditDate: 2024-03-03
 Relates: "[[Proxy]]"
+Peer Reviewed: "0"
 ---
 An API pass-through, often referred to as an API gateway or reverse proxy, serves several purposes in the context of software architecture and API management:  
   

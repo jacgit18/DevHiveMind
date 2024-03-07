@@ -5,7 +5,7 @@ tags:
   - AI
 author:
   - jacgit18
-Status: Express
+Status: Perpetual
 Started: 2023-11-20
 EditDate: 
 Relates:

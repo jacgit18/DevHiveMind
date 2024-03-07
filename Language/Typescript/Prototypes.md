@@ -9,7 +9,8 @@ Comments: This documentation discusses what are prototypes.
 Status: Done
 Started: 
 EditDate: 2024-02-25
-Relates:
+Relates: 
+Peer Reviewed: "0"
 ---
 Objects in JavaScript have an internal property known as prototype. It is simply a reference to another object and contains common attributes/properties across all instances of the object. An object’s prototype attribute specifies the object from which it inherits properties.  
 

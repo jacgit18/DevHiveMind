@@ -3,15 +3,14 @@ tags:
   - UML
 author:
   - jacgit18
+  - chatgpt
 Comments: This documentation discusses different UML diagrams.
 Status: Refinement
 Started: 
 EditDate: 
-Relates:
+Relates: 
+Peer Reviewed: "0"
 ---
-
-
-
 
 ![[Modeling.png]]
 

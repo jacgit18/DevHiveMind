@@ -4,11 +4,13 @@ tags:
   - dataStructure
 author:
   - jacgit18
+  - chatgpt
 Comments: This documentation discusses
 Status: Refinement
 Started: 
 EditDate: 2024-02-29
 Relates: "[[Type of Linked List]]"
+Peer Reviewed: "0"
 ---
 
 

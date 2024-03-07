@@ -3,13 +3,16 @@ tags:
   - databases
   - security
   - data
+  - governance
 author:
   - jacgit18
+  - chatgpt
 Comments: This documentation discusses database data governance.
-Status: Capture
+Status: Done
 Started: 2024-02-06
 EditDate: 
-Relates:
+Relates: 
+Peer Reviewed: "0"
 ---
 Database data governance involves establishing and maintaining policies, procedures, and standards to ensure the quality, integrity, and security of data within a database. It encompasses activities such as data classification, access control, data auditing, and data lifecycle management.
 

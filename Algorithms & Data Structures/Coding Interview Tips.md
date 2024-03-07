@@ -4,11 +4,13 @@ tags:
   - interview
 author:
   - jacgit18
+  - chatgpt
 Comments: This documentation discusses tips for interview.
-Status: 
+Status: Refinement
 Started: 
 EditDate: 
-Relates:
+Relates: 
+Peer Reviewed: "0"
 ---
 ![[Whiteboarding.gif]]
 

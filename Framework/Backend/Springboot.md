@@ -6,11 +6,13 @@ tags:
   - spring
 author:
   - jacgit18
+  - chatgpt
 Comments: This documentation discusses Spring vs Spring Boot.
 Status: Done
 Started: 
 EditDate: 2024-02-04
-Relates:
+Relates: 
+Peer Reviewed: "0"
 ---
 [Spring](https://spring.io/projects/spring-boot)  and Spring Boot are related frameworks, but they serve different purposes and have some key differences:
 

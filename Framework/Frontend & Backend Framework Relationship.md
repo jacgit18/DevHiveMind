@@ -5,11 +5,13 @@ tags:
   - Framework
 author:
   - jacgit18
+  - chatgpt
 Comments: This documentation discusses the responsibilities between frontend and backend frameworks.
-Status: Capture
+Status: Refinement
 Started: 2024-02-04
 EditDate: 
-Relates:
+Relates: 
+Peer Reviewed: "0"
 ---
 Frontend and backend frameworks work together to create a cohesive and functional web application. Here's an overview of how they collaborate:
 

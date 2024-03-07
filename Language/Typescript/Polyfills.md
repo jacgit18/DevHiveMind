@@ -7,7 +7,8 @@ Comments: This documentation discusses polyfills.
 Status: Done
 Started: 
 EditDate: 2024-02-26
-Relates:
+Relates: 
+Peer Reviewed: "0"
 ---
 ### Understanding Polyfills in JavaScript
 

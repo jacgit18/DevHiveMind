@@ -4,12 +4,14 @@ tags:
   - career
   - documentation
 author:
+  - jacgit18
   - chatgpt
 Comments: This documentation discusses writing styles.
-Status: Done
+Status: Final
 Started: 
 EditDate: 2024-02-20
-Relates:
+Relates: 
+Peer Reviewed: "0"
 ---
 There are numerous writing styles, each with its own characteristics and purposes. Some common styles include:  
   

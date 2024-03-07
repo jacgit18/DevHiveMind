@@ -8,7 +8,8 @@ Comments: This documentation discusses finding conditional logic.
 Status: Done
 Started: 
 EditDate: 2024-02-29
-Relates:
+Relates: 
+Peer Reviewed: "0"
 ---
 To identify conditional logic in a coding challenge problem statement, you can:
 

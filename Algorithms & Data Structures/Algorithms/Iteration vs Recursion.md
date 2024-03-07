@@ -6,11 +6,13 @@ tags:
   - linear
 author:
   - jacgit18
+  - chatgpt
 Comments: This documentation discusses Linear Iteration vs Linear Recursion vs Binary Iteration vs Binary Recursion
 Status: Done
 Started: 
 EditDate: 2024-02-27
 Relates: "[[Iterating vs Traversing]]"
+Peer Reviewed: "0"
 ---
 ![[many Ways.gif]]
 

@@ -3,11 +3,13 @@ tags:
   - programming
 author:
   - jacgit18
-Comments: This documentation discusses
+  - chatgpt
+Comments: This documentation discusses Discrete math in the context of programming.
 Status: Done
 Started: 
 EditDate: 
-Relates:
+Relates: 
+Peer Reviewed: "0"
 ---
 The nature of Discrete Math 1 and 2 courses can vary significantly based on the professor teaching them. In my experience, the first part of the course delved deeply into mathematical concepts but transitioned into a more computer science-focused approach in the latter stages, involving numerous programming assignments, especially in Exam 3.
 

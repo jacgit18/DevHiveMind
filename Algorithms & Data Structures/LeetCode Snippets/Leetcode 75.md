@@ -5,6 +5,7 @@ tags:
   - pattern
 author:
   - jacgit18
+  - chatgpt
 Comments: This is a coded snippet
 Status: Done
 Started: 2024-03-03

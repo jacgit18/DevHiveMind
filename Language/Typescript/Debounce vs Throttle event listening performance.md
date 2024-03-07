@@ -12,7 +12,8 @@ Comments: This documentation discusses the difference between Throttling and Deb
 Status: Done
 Started: 
 EditDate: 2024-03-02
-Relates:
+Relates: 
+Peer Reviewed: "0"
 ---
 Addressing performance concerns is a common challenge in JavaScript applications, and two essential techniques for achieving better control over function invocation rates are throttling and debouncing. These techniques are indispensable for web developers, particularly in scenarios involving event handler assignments.
 

@@ -4,11 +4,12 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses
+Comments: This documentation discusses development stages.
 Status: Refinement
 Started: 
 EditDate: 2024-02-22
-Relates:
+Relates: 
+Peer Reviewed: "0"
 ---
 ![[Software Life Cycle.gif]]
 

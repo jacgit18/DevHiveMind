@@ -10,11 +10,13 @@ tags:
   - typescript
 author:
   - jacgit18
+  - chatgpt
 Comments: This documentation is a code snippet showing how make API call in Redux with promises instead of Async Await.
-Status: Done
+Status: Final
 Started: 
 EditDate: 2024-02-07
-Relates:
+Relates: 
+Peer Reviewed: "1"
 ---
 ```jsx
 const redux = require('redux');

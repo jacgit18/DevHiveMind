@@ -2,13 +2,16 @@
 tags:
   - devops
   - Java
+  - buildStage
 author:
   - jacgit18
+  - chatgpt
 Comments: This documentation discusses build tools specif ally in the Java ecosystem.
 Status: Done
 Started: 
 EditDate: 2024-02-22
-Relates:
+Relates: 
+Peer Reviewed: "0"
 ---
 ![[Maven v Gradle.png]]
 ***Maven*** and ***Gradle*** belong to the realm of [[build]] tools, serving to automate the process of transforming application source code into publishable artifacts.

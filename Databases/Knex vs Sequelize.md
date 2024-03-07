@@ -7,11 +7,13 @@ tags:
   - QueryBuilder
 author:
   - jacgit18
+  - chatgpt
 Comments: This documentation discusses libraries to interact with databases and data models.
-Status: Capture
+Status: Refinement
 Started: 
 EditDate: 
-Relates:
+Relates: 
+Peer Reviewed: "0"
 ---
 Sequelize.js and Knex.js are both JavaScript libraries used in Node.js applications for interacting with relational databases. However, they serve different purposes and have different focuses:  
   

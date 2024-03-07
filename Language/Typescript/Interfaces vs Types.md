@@ -10,7 +10,8 @@ Comments: This documentation discusses the difference between interfaces and typ
 Status: Done
 Started: 
 EditDate: 2024-03-02
-Relates:
+Relates: 
+Peer Reviewed: "0"
 ---
 ```typescript
 // Defining a type

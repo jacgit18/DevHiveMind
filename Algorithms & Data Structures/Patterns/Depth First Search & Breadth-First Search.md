@@ -8,11 +8,13 @@ tags:
   - traversal
 author:
   - jacgit18
-Comments: This documentation discusses
-Status: 
+  - chatgpt
+Comments: This documentation discusses DFS & BFS
+Status: Refinement
 Started: 
 EditDate: 
-Relates:
+Relates: 
+Peer Reviewed: "0"
 ---
 ![[TreeTraversal.gif]]
 

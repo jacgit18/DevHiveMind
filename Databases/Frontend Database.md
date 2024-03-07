@@ -4,11 +4,13 @@ tags:
   - frontend
 author:
   - jacgit18
+  - chatgpt
 Comments: This documentation discusses frontend application that use a database design for the frontend.
 Status: Done
 Started: 
 EditDate: 
-Relates:
+Relates: 
+Peer Reviewed: "0"
 ---
 Some times a database can serve as a frontend where users interact with the data, while a script or a backend process generates or manipulates the data that populates the database records or produces an Excel spreadsheet.
 

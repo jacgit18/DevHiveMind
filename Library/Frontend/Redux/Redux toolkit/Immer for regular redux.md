@@ -7,11 +7,13 @@ tags:
   - reduxToolKit
 author:
   - jacgit18
+  - chatgpt
 Comments: This documentation is a code snippet showing how to work with immer.
-Status: Done
+Status: Final
 Started: 
 EditDate: 2024-02-08
-Relates:
+Relates: 
+Peer Reviewed: "1"
 ---
 ```jsx
 import { createStore } from 'redux';

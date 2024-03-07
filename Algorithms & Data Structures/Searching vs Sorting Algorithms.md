@@ -5,10 +5,11 @@ author:
   - jacgit18
   - chatgpt
 Comments: This documentation discusses the purpose of searching algorithm and sorting algorithm.
-Status: Capture
+Status: Refinement
 Started: 2024-02-19
 EditDate: 
-Relates:
+Relates: 
+Peer Reviewed: "0"
 ---
 The statement "Search algorithms are more about structure vs sort algorithms are more about value" highlights the fundamental difference in the objectives of search and sort algorithms.  
   

@@ -3,11 +3,13 @@ tags:
   - devops
 author:
   - jacgit18
+  - chatgpt
 Comments: This documentation discusses JavaScript build tool.
 Status: Done
 Started: 
 EditDate: 2024-02-22
-Relates:
+Relates: 
+Peer Reviewed: "0"
 ---
 **Webpack** is an open-source JavaScript module bundler, primarily designed for front-end assets like HTML, CSS, and images. It facilitates a modular approach in web development, handling dependencies and providing a built-in development server known as webpack dev server.
 

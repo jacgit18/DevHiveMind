@@ -9,7 +9,8 @@ Comments: This documentation discusses common library used in Java ecosystem.
 Status: Done
 Started: 
 EditDate: 2024-03-03
-Relates:
+Relates: 
+Peer Reviewed: "0"
 ---
 **Google Guava: A Comprehensive Overview**
 

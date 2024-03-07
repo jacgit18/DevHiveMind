@@ -10,7 +10,8 @@ Comments: This documentation discusses using Composition over Inheritance.
 Status: Done
 Started: 
 EditDate: 2024-03-04
-Relates:
+Relates: 
+Peer Reviewed: "0"
 ---
 ### Composition Example:
 

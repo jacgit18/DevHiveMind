@@ -10,7 +10,8 @@ Comments: This documentation discusses how to debug database queries with built 
 Status: Done
 Started: 
 EditDate: 
-Relates:
+Relates: 
+Peer Reviewed: "0"
 ---
 When debugging Knex.js queries, you may find the following methods helpful to log or inspect the generated SQL queries:  
   

@@ -10,7 +10,8 @@ Comments: This documentation discusses what are deployment artifacts.
 Status: Done
 Started: 
 EditDate: 2024-02-22
-Relates:
+Relates: 
+Peer Reviewed: "0"
 ---
 In the realm of deployment, the inclusion or separation of admin code and processes within versioned artifacts—such as container images or deployable packages—may vary based on deployment strategies and the desired level of isolation.
 

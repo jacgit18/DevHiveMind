@@ -4,11 +4,13 @@ tags:
   - obsidian
 author:
   - jacgit18
+  - chatgpt
 Comments: This documentation highlights the most common views of data view.
-Status: Capture
+Status: Refinement
 Started: 
 EditDate: 
-Relates:
+Relates: 
+Peer Reviewed: "0"
 ---
 DataView in Obsidian supports various types of views that allow you to visualize and manipulate structured data within your notes. The primary views include:
 

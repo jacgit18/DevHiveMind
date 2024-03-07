@@ -9,7 +9,8 @@ Comments: The motivation behind this regimen is basically how I would prepare an
 Status: Perpetual
 Started: 2023-12-15
 EditDate: 
-Relates:
+Relates: 
+Peer Reviewed: "0"
 ---
 ![[Regimen.gif]]
 ## Prep  

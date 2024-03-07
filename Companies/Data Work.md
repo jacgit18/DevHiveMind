@@ -3,11 +3,13 @@ tags:
   - career
 author:
   - jacgit18
+  - chatgpt
 Comments: This documentation discusses best practices when it comes to data and some of the types of roles.
 Status: Refinement
 Started: 
 EditDate: 2024-02-20
-Relates:
+Relates: 
+Peer Reviewed: "0"
 ---
 ![[DataBuisness.png]]
 ## Describe Data in a Meaningful Way 

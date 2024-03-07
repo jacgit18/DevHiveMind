@@ -4,11 +4,13 @@ tags:
   - non-linear
 author:
   - jacgit18
+  - chatgpt
 Comments: This documentation discusses
 Status: Refinement
 Started: 
 EditDate: 2023-11-02
 Relates: "[[Graph]]"
+Peer Reviewed: "0"
 ---
 ![[Graph.gif]]
 

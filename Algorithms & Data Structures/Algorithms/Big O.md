@@ -4,11 +4,13 @@ tags:
   - timeComplexity
 author:
   - jacgit18
+  - chatgpt
 Comments: This documentation discusses runtime complexity.
 Status: Refinement
 Started: 
 EditDate: 2024-02-27
-Relates:
+Relates: 
+Peer Reviewed: "0"
 ---
 
 ![[BigO.gif]]

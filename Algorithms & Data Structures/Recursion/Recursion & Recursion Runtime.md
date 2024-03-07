@@ -4,11 +4,13 @@ tags:
   - timeComplexity
 author:
   - jacgit18
-Comments: This documentation discusses
-Status: 
+  - chatgpt
+Comments: This documentation discusses Recursion Runtime
+Status: Refinement
 Started: 
 EditDate: 
-Relates:
+Relates: 
+Peer Reviewed: "0"
 ---
 ![[BigORecursion.png]]
 # Understanding Recursion

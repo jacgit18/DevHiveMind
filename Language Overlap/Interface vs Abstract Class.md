@@ -9,7 +9,8 @@ Comments: This documentation discusses interfaces vs abstract classes.
 Status: Refinement
 Started: 
 EditDate: 2024-03-05
-Relates:
+Relates: 
+Peer Reviewed: "0"
 ---
 #### Abstract Class:
 - Permits functionality for subclasses to implement or override.

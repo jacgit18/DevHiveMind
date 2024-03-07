@@ -4,11 +4,13 @@ tags:
   - schema
 author:
   - jacgit18
+  - chatgpt
 Comments: This documentation discusses database constraint types.
 Status: Done
 Started: 
 EditDate: 
-Relates:
+Relates: 
+Peer Reviewed: "0"
 ---
 In databases, there are various types of constraints:
 

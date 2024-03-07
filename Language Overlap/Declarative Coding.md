@@ -9,7 +9,8 @@ Comments: This documentation discusses declarative coding.
 Status: Done
 Started: 
 EditDate: 2024-03-05
-Relates:
+Relates: 
+Peer Reviewed: "0"
 ---
 Declarative programming emphasizes specifying "what should be done" at a high level, focusing on logic, concepts, and the desired end result without detailing specific steps. It encompasses various paradigms, such as Functional, Logic, and Data-Driven programming.
 

@@ -4,11 +4,13 @@ tags:
   - dataStructure
 author:
   - jacgit18
+  - chatgpt
 Comments: This documentation discusses Doubly Linked List.
-Status: Capture
+Status: Refinement
 Started: 
 EditDate: 
 Relates: "[[Type of Linked List]]"
+Peer Reviewed: "0"
 ---
 ![[DoubleLinkedLists.gif]]
 

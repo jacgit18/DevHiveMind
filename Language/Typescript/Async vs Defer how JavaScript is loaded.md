@@ -4,11 +4,13 @@ tags:
   - bestPractices
 author:
   - jacgit18
-Comments: This documentation discusses
-Status: Capture
+  - chatgpt
+Comments: This documentation discusses Async vs Defer how JavaScript is loaded
+Status: Refinement
 Started: 
 EditDate: 2024-02-09
-Relates:
+Relates: 
+Peer Reviewed: "0"
 ---
 When working with script tags in HTML, it's essential to consider various attributes for optimal performance and functionality. Here are some best practices:
 

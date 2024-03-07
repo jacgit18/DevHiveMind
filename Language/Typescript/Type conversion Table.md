@@ -4,11 +4,13 @@ tags:
   - typescript
 author:
   - jacgit18
+  - chatgpt
 Comments: This documentation list JavaScript type conversion.
 Status: Done
 Started: 2023-12-07
 EditDate: 
-Relates:
+Relates: 
+Peer Reviewed: "0"
 ---
 | Value           | String conversion | Number conversion | Boolean conversion |
 | --------------- | ----------------- | ----------------- | ------------------ |

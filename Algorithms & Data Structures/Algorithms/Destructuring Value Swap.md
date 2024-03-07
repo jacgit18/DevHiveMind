@@ -3,11 +3,13 @@ tags:
   - AlgorithmComponent
 author:
   - jacgit18
+  - chatgpt
 Comments: This documentation discusses swapping values in an array.
 Status: Done
 Started: 
 EditDate: 2024-02-29
 Relates: "[[Arrays]]"
+Peer Reviewed: "0"
 ---
 ```javascript
 // Initialize two arrays

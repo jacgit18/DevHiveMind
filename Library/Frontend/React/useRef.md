@@ -7,11 +7,13 @@ tags:
   - hooks
 author:
   - jacgit18
+  - chatgpt
 Comments: This documentation discusses useRef hook.
 Status: Done
 Started: 
 EditDate: 2024-02-14
-Relates:
+Relates: 
+Peer Reviewed: "0"
 ---
 ## `useRef` Hook in React:
 

@@ -6,11 +6,13 @@ tags:
   - postProcessing
 author:
   - jacgit18
+  - chatgpt
 Comments: This documentation discusses the world of sorting algorithms.
 Status: Refinement
 Started: 
 EditDate: 2024-02-10
 Relates: "[[Big O]]"
+Peer Reviewed: "0"
 ---
 ## Array Sorting Algorithms
 

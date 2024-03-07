@@ -6,34 +6,43 @@ tags:
   - components
 author:
   - jacgit18
+  - chatgpt
+Comments: This documentation discusses
 Status: Refinement
 Started: 
 EditDate: 2023-10-29
-Relates:
+Relates: 
+Peer Reviewed: "0"
 ---
-Returns the expected output and runs as expected basically predictable in behavior when process input and return output  
+In pure functional programming, a function returns the expected output and consistently runs as anticipated when processing input. This predictability allows for referential transparency, enabling the replacement of a function with its output. This characteristic simplifies debugging and testing processes.
 
-So it allows us to replace the function with output which is known as referential transparency which makes it easy to debug and test  
+**Parameters and Side Effects:**
 
-Takes in at least one param otherwise you just create variable  
+A pure function takes at least one parameter, distinguishing it from a variable creation scenario. Additionally, it avoids side effects like accessing variables in the global scope outside of the function, ensuring purity. To maintain this purity, the function refrains from interacting with external entities such as databases, APIs, data stores, or file systems.
 
-No side effects like accessing a variable in the global scope outside of function which makes it impure  
+**Avoiding Impure Actions:**
 
-So in order to be pure it cant access DB, API, DataStore, or File System 
+An impure function modifies the Document Object Model (DOM), uses `console.log`, or introduces input state mutations. To maintain purity, a pure function abstains from these actions, promoting a cleaner, more reliable codebase.
 
-also no Modifying DOM or console.log 
+**Immutable Input Data:**
 
-no input state  can be modified, no data should be mutated, and input data should be Immutable otherwise avoid mutating it  
+In pursuit of purity, input data should be immutable. No modifications or mutations are allowed; instead, new data is generated. This approach ensures that the original data remains intact and unchanged.
 
-Ex: let x = 1                                                                                          
+**Example Illustration:**
 
-pureIncrement = (num) => num += 1                                                                     
+```javascript
+// Original data
+let x = 1;
 
-pureIncrement(x) pure because x is,nt mutated 
+// Pure function: Increment without mutating x
+pureIncrement = (num) => num + 1;
 
-needs to return something 
+// Applying pure function to maintain immutability
+let result = pureIncrement(x);
+```
 
-Impure harder to test and debug
+**Benefits and Considerations:**
 
+Pure functional programming, by adhering to these principles, enhances testability and debugging. Functions become more modular, making the codebase easier to reason about. The absence of side effects contributes to a clearer understanding of the program's behavior, fostering maintainability and scalability.
 
-- **Pure Functional Programming:** Within this, state is not stored, and incoming data is not mutated; you return new data.
+In contrast, impure functions, which violate these principles, pose challenges in testing and debugging, often leading to a less predictable and more error-prone codebase. The adoption of pure functional programming principles brings about a paradigm shift towards more reliable and maintainable software development practices.

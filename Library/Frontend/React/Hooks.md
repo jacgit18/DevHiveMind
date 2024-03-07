@@ -7,11 +7,13 @@ tags:
   - hooks
 author:
   - jacgit18
+  - chatgpt
 Status: Done
 Comments: This documentation discusses react hooks.
 Started: 
 EditDate: 2024-02-06
-Relates:
+Relates: 
+Peer Reviewed: "0"
 ---
 A distinctive feature in React, hooks facilitate the use of React functionalities without resorting to class components, promoting a more functional coding style. Classes, while powerful, come with challenges such as navigating the intricacies of the 'this' keyword, binding event handlers, and suboptimal minification and hot-reloading reliability.
 

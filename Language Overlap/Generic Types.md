@@ -9,7 +9,8 @@ Comments: This documentation discusses Generics in typescript.
 Status: Done
 Started: 
 EditDate: 2024-03-04
-Relates:
+Relates: 
+Peer Reviewed: "0"
 ---
 **Understanding TypeScript Generics:**
 

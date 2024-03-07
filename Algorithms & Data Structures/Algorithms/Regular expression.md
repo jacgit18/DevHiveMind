@@ -6,11 +6,13 @@ tags:
   - CodingProblem
 author:
   - jacgit18
+  - chatgpt
 Comments: This documentation discusses regular expressions.
 Status: Refinement
 Started: 2024-02-11
 EditDate: 
-Relates:
+Relates: 
+Peer Reviewed: "0"
 ---
 The runtime of functions that take in regular expression (regex) strings can vary based on factors such as the complexity of the regex pattern, the size of the input data, and the efficiency of the regex engine used by the programming language or library.  
   

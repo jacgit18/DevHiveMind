@@ -9,11 +9,13 @@ tags:
   - typescript
 author:
   - jacgit18
-Comments: This documentation discusses
-Status: Done
+  - chatgpt
+Comments: This documentation discusses redux action.
+Status: Final
 Started: 
 EditDate: 2024-02-07
-Relates:
+Relates: 
+Peer Reviewed: "1"
 ---
 ```javascript
 const DO_ACTION = 'DO_ACTION';

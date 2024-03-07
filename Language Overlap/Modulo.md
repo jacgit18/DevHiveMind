@@ -10,7 +10,8 @@ Comments: This documentation discusses Modulo.
 Status: Done
 Started: 
 EditDate: 2024-03-05
-Relates:
+Relates: 
+Peer Reviewed: "1"
 ---
 Division involves the relationship: dividend / divisor = quotient. For long division, it's expressed as divisor * quotient = dividend. Think of long division as the backend of regular division, introducing remainders. Take, for instance, 228 / 4:
 
@@ -48,9 +49,6 @@ This process results in a remainder of 0.
 Modulo essentially mirrors long division. While dividend / divisor = quotient may yield a decimal (e.g., 10 / 3 = 3.333), modulo returns an integer remainder. For instance, 10 % 4 equals 2, indicating that 4 goes into 10 twice (8), leaving a remainder of 2. If the initial division isn't exact, the remainder is derived by subtracting the closest multiple of the divisor from the dividend.
 
 
-
-Certainly, here's the updated representation with the quotient 57 at the top and listing each step:
-
 ```
    57
 __________
@@ -75,10 +73,6 @@ __________
 This layout includes the quotient 57 at the top and details each step in the long division process.
 
 
-
-
-Certainly, here's the updated representation for the division of 60 by 30:
-
 ```
    2
 __________
@@ -90,8 +84,7 @@ __________
 
 In this case, the quotient is 2, and there is no remainder.
 
-
-Certainly! The modulo operation, represented by the `%` symbol, gives the remainder of the division of one number by another. Let's break down the example `30 % 60` step by step:  
+The modulo operation, represented by the `%` symbol, gives the remainder of the division of one number by another. Let's break down the example `30 % 60` step by step:  
   
 1. **Divide:** Divide 30 by 60: `30 / 60 = 0.5`.  
 2. **Take Integer Part:** Keep only the integer part of the result: `0`.  

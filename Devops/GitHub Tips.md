@@ -4,11 +4,13 @@ tags:
   - bestPractices
 author:
   - jacgit18
+  - chatgpt
 Comments: This documentation discusses some best practices around git.
 Status: Done
 Started: 
 EditDate: 2024-02-22
-Relates:
+Relates: 
+Peer Reviewed: "0"
 ---
 When forking a repository, refrain from adding collaborators to preserve pull request permissions. This ensures that any collaborator cannot make a request and merge without approval from the master repository.
 

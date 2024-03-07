@@ -5,11 +5,12 @@ tags:
 author:
   - jacgit18
   - chatgpt
-St: Done
 Comments: This documentation discusses Mutex.
+Status: Done
 Started: 2023-11-20
 EditDate: 
-Relates:
+Relates: 
+Peer Reviewed: "0"
 ---
 A Mutex, short for mutual exclusion, is a synchronization mechanism used in programming to ensure that only one thread can access a shared resource or critical section at a time. This prevents data corruption and ensures the integrity of shared data.
 

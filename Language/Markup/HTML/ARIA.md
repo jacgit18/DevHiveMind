@@ -4,11 +4,13 @@ tags:
   - accessibility
 author:
   - jacgit18
+  - chatgpt
 Comments: This documentation discusses ARIA and its purpose.
-Status: Capture
+Status: Refinement
 Started: 
 EditDate: 2024-02-26
-Relates:
+Relates: 
+Peer Reviewed: "0"
 ---
 ARIA, which stands for Accessible Rich Internet Applications, is a set of attributes that can be added to HTML elements to enhance the accessibility of web content, especially for people with disabilities. ARIA provides additional information to assistive technologies, such as screen readers, in understanding and presenting content more effectively.
 

@@ -8,19 +8,22 @@ tags:
   - hooks
 author:
   - jacgit18
+  - chatgpt
 Comments: This documentation discusses Redux hooks
-Status: Done
+Status: Final
 Started: 
 EditDate: 2024-02-08
 Relates: "[[Hooks]]"
+Peer Reviewed: "1"
 ---
+An alternative approach utilizing Hooks, particularly beneficial when working with Redux Toolkit in conjunction with react-redux for state management.
+
+This code can be rendered directly in the App component, eliminating the need for 
+
+`connect(mapStateToProps, mapDispatchToProps)(App)`
+
+While the code structure differs, the core concept remains the same.
 ```JSX
-// An alternative approach utilizing Hooks, particularly beneficial when working with Redux Toolkit in conjunction with react-redux for state management.
-
-// This code can be rendered directly in the App component, eliminating the need for connect(mapStateToProps, mapDispatchToProps)(App).
-
-// While the code structure differs, the core concept remains the same.
-
 import { buyCake } from '../redux';
 
 function HooksCakeContainer() {

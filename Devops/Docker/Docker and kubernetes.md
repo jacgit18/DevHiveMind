@@ -3,11 +3,13 @@ tags:
   - Docker
 author:
   - jacgit18
+  - chatgpt
 Comments: This documentation discusses relationship between Docker and kubernetes.
 Status: Done
 Started: 
 EditDate: 2024-02-22
-Relates:
+Relates: 
+Peer Reviewed: "0"
 ---
 [[Docker InDeph.canvas|Docker]] and Kubernetes are versatile tools capable of handling both stateless and stateful applications.
 

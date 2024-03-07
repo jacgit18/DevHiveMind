@@ -11,7 +11,8 @@ Comments: This documentation discusses type narrowing and union types.
 Status: Refinement
 Started: 
 EditDate: 2024-03-02
-Relates:
+Relates: 
+Peer Reviewed: "0"
 ---
 The pipe symbol (|) in TypeScript is used to create unions, allowing a variable to have multiple possible types. For instance, `number | string | boolean` represents a type that can be a number, a string, or a boolean.
 

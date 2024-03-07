@@ -3,11 +3,13 @@ tags:
   - devops
 author:
   - jacgit18
+  - chatgpt
 Comments: This documentation discusses what Maven is and its history.
 Status: Done
 Started: 
 EditDate: 2024-02-22
-Relates:
+Relates: 
+Peer Reviewed: "0"
 ---
 ### Why Maven was created
 

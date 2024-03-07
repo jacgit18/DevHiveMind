@@ -6,11 +6,13 @@ tags:
   - not-binary-by-Nature
 author:
   - jacgit18
-Comments: This documentation discusses
-Status: Capture
+  - chatgpt
+Comments: This documentation discusses Heap Sort
+Status: Refinement
 Started: 
 EditDate: 2024-02-27
-Relates:
+Relates: 
+Peer Reviewed: "0"
 ---
 ![[HeapSort.gif]]
 
