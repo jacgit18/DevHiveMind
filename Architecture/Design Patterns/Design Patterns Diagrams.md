@@ -5,7 +5,9 @@ author:
 Status: Capture
 Started: 
 EditDate: 
-Relates:
+Relates: 
+Comments: This documentation discusses
+Peer Reviewed: "0"
 ---
 ![[Design Pattern 1.webp]]
 

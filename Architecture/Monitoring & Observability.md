@@ -6,7 +6,7 @@ Comments: This documentation discusses
 Status: Capture
 Started: 
 EditDate: 
-Relates: "[[Distributed tracking and monitoring]]"
+Relates: "[[Distributed tracking & monitoring]]"
 ---
 ![[logging metrics.gif]]
 

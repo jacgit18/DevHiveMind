@@ -1,11 +1,18 @@
 ---
-tags: 
+tags:
+  - backend
+  - frontend
+  - versionControl
+  - devops
 author:
   - jacgit18
-Status: Capture
+  - chatgpt
+Comments: This documentation discusses pros and cons of having version controlled codebase in one or more repositories.
+Status: Done
 Started: 
-EditDate: 
-Relates:
+EditDate: 2024-03-06
+Relates: 
+Peer Reviewed: "0"
 ---
 The decision to have both the front end and back end in the same GitHub repository or separate repositories is influenced by various factors, and both approaches are common. Here are considerations for each option:  
   

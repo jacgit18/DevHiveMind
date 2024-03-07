@@ -4,11 +4,13 @@ tags:
   - architecturalParadigm
 author:
   - jacgit18
+  - chatgpt
+Comments: This documentation discusses the difference between paradigms and patterns.
 Status: Done
 Started: 
-EditDate: 
+EditDate: 2024-03-06
 Relates: "[[Event Driven Architecture]]"
-Comments:
+Peer Reviewed: "0"
 ---
 Patterns and paradigms are two distinct concepts in the field of software engineering and design.  
   

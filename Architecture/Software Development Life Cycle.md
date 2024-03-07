@@ -1,5 +1,6 @@
 ---
-tags: 
+tags:
+  - devops
 author:
   - jacgit18
 Status: 

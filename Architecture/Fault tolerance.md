@@ -128,7 +128,7 @@ This is a basic example, and in a real-world scenario, you might want to conside
 
 By implementing the Retry Pattern, the system has a higher chance of successfully completing the operation even in the presence of intermittent failures, improving fault tolerance.
 
-There is also [[Distributed tracking and monitoring]]
+There is also [[Distributed tracking & monitoring]]
 
 ## Other Patterns
 

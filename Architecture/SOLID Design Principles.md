@@ -7,6 +7,7 @@ tags:
   - SOLID
 author:
   - jacgit18
+  - chatgpt
 Status: 
 Started: 
 EditDate: 

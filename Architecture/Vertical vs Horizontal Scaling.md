@@ -1,16 +1,17 @@
 ---
 tags:
-  - scaling
-  - revist
-  - review
   - systemDesign
+  - scalability
+  - processes
 author:
   - jacgit18
+  - chatgpt
 Comments: This documentation discusses Scaling.
 Status: Refinement
 Started: 
 EditDate: 2024-02-25
 Relates: "[[Dynamic Scaling]]"
+Peer Reviewed: "0"
 ---
 ![[System Scaling.png]]
 # Horizontal scaling  

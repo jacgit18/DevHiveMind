@@ -1,11 +1,16 @@
 ---
-tags: 
+tags:
+  - bestPractices
+  - principles
 author:
   - jacgit18
+  - chatgpt
+Comments: This documentation discusses a counter argument to aspects of clean code.
 Status: Done
 Started: 
-EditDate: 
-Relates:
+EditDate: 2024-03-06
+Relates: 
+Peer Reviewed: "0"
 ---
 While clean code is often considered a best practice in software development, it's essential to recognize that it is not the absolute solution for every situation. Certain aspects of clean code might not always be the best approach, and there are nuances to consider:
 

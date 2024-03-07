@@ -7,11 +7,13 @@ tags:
   - Generics
 author:
   - jacgit18
+  - chatgpt
 Comments: This documentation discusses areas where it make sense to use Multi threading, concurrency, collections, generics, and annotations.
 Status: Done
 Started: 
 EditDate: 2024-02-26
-Relates:
+Relates: 
+Peer Reviewed: "0"
 ---
 In the driving school system, here are some areas where it makes sense to utilize multi-threading, concurrency, collections, generics, and annotations:
 

@@ -3,14 +3,18 @@ tags:
   - CodebaseDecision
   - MacroCodebaseDecision
   - MicroCodebaseDecision
-  - editMerge
+  - bestPractices
+  - ClassStructure
+  - principles
 author:
   - jacgit18
+  - chatgpt
+Comments: This documentation discusses clean code.
 Status: Refinement
 Started: 
-EditDate: 
+EditDate: 2024-03-06
 Relates: 
-Comments:
+Peer Reviewed: "0"
 ---
 Clean code is clear, understandable, and maintainable. When you write clean code, you're thinking of the others who may read and interpret it later. Help others understand the purpose of your code so they can change it eventually.
 

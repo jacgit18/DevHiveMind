@@ -7,11 +7,13 @@ tags:
   - scalability
 author:
   - jacgit18
+  - chatgpt
 Comments: This documentation discusses Backend For Frontend pattern.
 Status: Done
 Started: 2024-03-02
 EditDate: 2024-03-02
-Relates:
+Relates: 
+Peer Reviewed: "0"
 ---
 ![[BFF.jpg]]
 The Backend For Frontend (BFF) pattern is a design approach that tailors the backend services to the specific requirements of each frontend application. In modern software development, where applications often have multiple client-facing interfaces such as web, mobile, and desktop applications, the BFF pattern plays a crucial role in providing a customized backend for each frontend. Typically, the development and management of a BFF are handled by the frontend team, enabling a more streamlined and focused development process that caters directly to the frontend's needs.
