@@ -5,7 +5,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses Express.js.
+Purpose: This documentation discusses Express.js.
 Status: Done
 Started: 
 EditDate: 2024-02-06

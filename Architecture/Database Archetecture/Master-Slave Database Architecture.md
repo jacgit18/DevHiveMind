@@ -11,7 +11,7 @@ Status: Refinement
 Started: 2024-01-08
 EditDate: 
 Relates: "[[Fault Tolerance]]"
-Comments: This documentation discusses
+Purpose: This documentation discusses
 Peer Reviewed: "0"
 ---
 Databases play a crucial role in storing, organizing, and retrieving data for various applications and systems. In the context of distributed systems and data management, the master-slave database architecture is a common approach to ensure high availability, fault tolerance, and scalability.

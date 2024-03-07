@@ -10,7 +10,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses message systems.
+Purpose: This documentation discusses message systems.
 Status: Refinement
 Started: 2023-09-01
 EditDate: 2024-02-03

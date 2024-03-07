@@ -4,7 +4,7 @@ tags:
   - query
 author:
   - jacgit18
-Comments: This IFrame to a SQL query tool.
+Purpose: This IFrame to a SQL query tool.
 Status: Done
 Started: 
 EditDate: 

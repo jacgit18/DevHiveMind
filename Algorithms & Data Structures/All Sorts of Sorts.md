@@ -7,7 +7,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses the world of sorting algorithms.
+Purpose: This documentation discusses the world of sorting algorithms.
 Status: Refinement
 Started: 
 EditDate: 2024-02-10

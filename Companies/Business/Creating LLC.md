@@ -8,7 +8,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses how to create a LLC and things to consider.
+Purpose: This documentation discusses how to create a LLC and things to consider.
 Status: Done
 Started: 
 EditDate: 2024-03-04

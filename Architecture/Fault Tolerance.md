@@ -6,7 +6,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses Fault tolerance.
+Purpose: This documentation discusses Fault tolerance.
 Status: Refinement
 Started: 
 EditDate: 2024-03-07

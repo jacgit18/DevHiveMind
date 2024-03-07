@@ -9,7 +9,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses Redux hooks
+Purpose: This documentation discusses Redux hooks
 Status: Final
 Started: 
 EditDate: 2024-02-08

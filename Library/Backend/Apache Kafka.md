@@ -7,7 +7,7 @@ tags:
   - CodebaseDecision
 author:
   - jacgit18
-Comments: This documentation discusses Apache Kafka.
+Purpose: This documentation discusses Apache Kafka.
 Status: Refinement
 Started: 2023-11-06
 EditDate: 2024-02-03

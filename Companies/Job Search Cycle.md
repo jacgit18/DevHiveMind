@@ -6,7 +6,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses different things to consider while on the job hunt.
+Purpose: This documentation discusses different things to consider while on the job hunt.
 Status: Perpetual
 Started: 
 EditDate: 2024-02-20

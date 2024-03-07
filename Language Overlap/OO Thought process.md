@@ -6,7 +6,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses OO Thought process
+Purpose: This documentation discusses OO Thought process
 Status: Refinement
 Started: 
 EditDate: 2024-03-05

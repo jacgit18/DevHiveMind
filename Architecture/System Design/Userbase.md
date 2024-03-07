@@ -5,7 +5,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discuss the type of question to ask when it comes to user base when designing a system.
+Purpose: This documentation discuss the type of question to ask when it comes to user base when designing a system.
 Status: Done
 Started: 
 EditDate: 2024-03-06

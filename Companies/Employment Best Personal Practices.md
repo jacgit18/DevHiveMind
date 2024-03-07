@@ -5,7 +5,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses best personal practices.
+Purpose: This documentation discusses best personal practices.
 Status: Perpetual
 Started: 
 EditDate: 2024-02-20

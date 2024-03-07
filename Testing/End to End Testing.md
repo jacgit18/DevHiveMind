@@ -4,7 +4,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses End to End Testing.
+Purpose: This documentation discusses End to End Testing.
 Status: Done
 Started: 2024-02-02
 EditDate: 2024-03-07

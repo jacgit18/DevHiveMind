@@ -4,7 +4,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses Knapsack Pattern
+Purpose: This documentation discusses Knapsack Pattern
 Status: Refinement
 Started: 2023-12-09
 EditDate: 

@@ -5,7 +5,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses ARIA and its purpose.
+Purpose: This documentation discusses ARIA and its purpose.
 Status: Refinement
 Started: 
 EditDate: 2024-02-26

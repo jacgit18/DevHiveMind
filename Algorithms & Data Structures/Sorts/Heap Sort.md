@@ -7,7 +7,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses Heap Sort
+Purpose: This documentation discusses Heap Sort
 Status: Refinement
 Started: 
 EditDate: 2024-02-27

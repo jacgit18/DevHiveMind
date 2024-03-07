@@ -6,7 +6,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses PHP and Node.
+Purpose: This documentation discusses PHP and Node.
 Status: Done
 Started: 2024-02-26
 EditDate: 

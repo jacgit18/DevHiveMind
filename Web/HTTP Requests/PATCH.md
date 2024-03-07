@@ -5,7 +5,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses Patch request.
+Purpose: This documentation discusses Patch request.
 Status: Done
 Started: 
 EditDate: 

@@ -4,7 +4,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses the difference between source code and codebases.
+Purpose: This documentation discusses the difference between source code and codebases.
 Status: Done
 Started: 
 EditDate: 2024-03-06

@@ -5,7 +5,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses Reactive Programming and react
+Purpose: This documentation discusses Reactive Programming and react
 Status: Refinement
 Started: 2023-10-10
 EditDate: 

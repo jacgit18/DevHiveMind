@@ -5,7 +5,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses DeMorgans law from discrete math and some of its overlap in programming.
+Purpose: This documentation discusses DeMorgans law from discrete math and some of its overlap in programming.
 Status: Done
 Started: 
 EditDate: 2024-02-27

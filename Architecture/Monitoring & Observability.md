@@ -5,7 +5,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses Monitoring & Observability
+Purpose: This documentation discusses Monitoring & Observability
 Status: Refinement
 Started: 
 EditDate: 2024-03-07

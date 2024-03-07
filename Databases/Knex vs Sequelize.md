@@ -8,7 +8,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses libraries to interact with databases and data models.
+Purpose: This documentation discusses libraries to interact with databases and data models.
 Status: Refinement
 Started: 
 EditDate: 

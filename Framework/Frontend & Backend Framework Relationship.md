@@ -6,7 +6,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses the responsibilities between frontend and backend frameworks.
+Purpose: This documentation discusses the responsibilities between frontend and backend frameworks.
 Status: Refinement
 Started: 2024-02-04
 EditDate: 

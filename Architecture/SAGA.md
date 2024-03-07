@@ -8,7 +8,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses SAGA.
+Purpose: This documentation discusses SAGA.
 Status: Refinement
 Started: 
 EditDate: 2024-03-07

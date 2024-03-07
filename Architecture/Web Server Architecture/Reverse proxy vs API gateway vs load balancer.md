@@ -6,7 +6,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses the difference between reverse proxies, API gateway, and load balancer.
+Purpose: This documentation discusses the difference between reverse proxies, API gateway, and load balancer.
 Status: Refinement
 Started: 
 EditDate: 2024-03-06

@@ -5,7 +5,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses Async vs Defer how JavaScript is loaded
+Purpose: This documentation discusses Async vs Defer how JavaScript is loaded
 Status: Refinement
 Started: 
 EditDate: 2024-02-09

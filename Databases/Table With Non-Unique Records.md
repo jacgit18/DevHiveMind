@@ -5,7 +5,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses table With Non-Unique Records.
+Purpose: This documentation discusses table With Non-Unique Records.
 Status: Done
 Started: 
 EditDate: 

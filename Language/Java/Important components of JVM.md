@@ -5,7 +5,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses the different components of JVM.
+Purpose: This documentation discusses the different components of JVM.
 Status: Done
 Started: 
 EditDate: 2024-03-03

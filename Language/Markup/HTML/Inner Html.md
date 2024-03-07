@@ -7,7 +7,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses Inner Html and its risk.
+Purpose: This documentation discusses Inner Html and its risk.
 Status: Done
 Started: 
 EditDate: 2024-02-26

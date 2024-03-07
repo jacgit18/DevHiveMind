@@ -5,7 +5,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses YAMl.
+Purpose: This documentation discusses YAMl.
 Status: Done
 Started: 
 EditDate: 2024-02-29
@@ -22,7 +22,7 @@ Here are some key features and characteristics of YAML:
     
 2.  Structure and data types: YAML supports various data types such as scalars (strings, numbers, booleans), lists (arrays), and maps (key-value pairs). It allows nesting of these data types to represent complex structures.
     
-3.  Comments: YAML allows comments to be included in the data using the '#' symbol. Comments can be used to provide additional information or annotate the configuration.
+3.  Purpose: YAML allows comments to be included in the data using the '#' symbol. Comments can be used to provide additional information or annotate the configuration.
     
 4.  Readability: YAML emphasizes readability by avoiding unnecessary symbols and characters. It uses colons (":") to separate keys from values and hyphens ("-") for list items.
     

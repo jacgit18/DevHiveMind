@@ -4,7 +4,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses choosing Resource Granularity.
+Purpose: This documentation discusses choosing Resource Granularity.
 Status: Refinement
 Started: 
 EditDate: 2024-03-07

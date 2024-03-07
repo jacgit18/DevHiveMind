@@ -4,7 +4,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses python ecosystem.
+Purpose: This documentation discusses python ecosystem.
 Status: Refinement
 Started: 
 EditDate: 2024-02-26

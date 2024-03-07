@@ -4,7 +4,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses Parallelism
+Purpose: This documentation discusses Parallelism
 Status: Refinement
 Started: 
 EditDate: 2024-03-05

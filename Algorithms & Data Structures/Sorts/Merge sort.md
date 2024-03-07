@@ -6,7 +6,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses Merge sort
+Purpose: This documentation discusses Merge sort
 Status: Refinement
 Started: 
 EditDate: 

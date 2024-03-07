@@ -7,7 +7,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses why to avoid DNS-over-HTTPS.
+Purpose: This documentation discusses why to avoid DNS-over-HTTPS.
 Status: Done
 Started: 2024-01-31
 EditDate: 

@@ -4,7 +4,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses Externalized Configuration.
+Purpose: This documentation discusses Externalized Configuration.
 Status: Done
 Started: 
 EditDate: 2024-03-07

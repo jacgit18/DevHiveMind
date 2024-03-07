@@ -8,7 +8,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses scaling at the codebase level.
+Purpose: This documentation discusses scaling at the codebase level.
 Status: Refinement
 Started: 
 EditDate: 2024-02-25

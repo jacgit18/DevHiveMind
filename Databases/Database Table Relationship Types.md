@@ -7,7 +7,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses database table relationships.
+Purpose: This documentation discusses database table relationships.
 Status: Done
 Started: 
 EditDate: 2024-02-06

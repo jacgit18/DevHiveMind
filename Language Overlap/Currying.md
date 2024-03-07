@@ -4,7 +4,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses currying.
+Purpose: This documentation discusses currying.
 Status: Done
 Started: 
 EditDate: 2024-03-04

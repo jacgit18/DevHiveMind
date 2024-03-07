@@ -6,7 +6,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses attack vectors.
+Purpose: This documentation discusses attack vectors.
 Status: Done
 Started: 2024-02-04
 EditDate: 

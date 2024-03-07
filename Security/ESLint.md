@@ -5,7 +5,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses ESLint.
+Purpose: This documentation discusses ESLint.
 Status: Refinement
 Started: 2023-11-23
 EditDate: 2023-12-04

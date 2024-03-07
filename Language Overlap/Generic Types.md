@@ -5,7 +5,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses Generics in typescript.
+Purpose: This documentation discusses Generics in typescript.
 Status: Done
 Started: 
 EditDate: 2024-03-04

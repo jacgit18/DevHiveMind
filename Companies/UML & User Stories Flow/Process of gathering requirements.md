@@ -5,7 +5,7 @@ tags:
   - career
 author:
   - jacgit18
-Comments: This documentation discusses the process of gathering business requirements as BSA.
+Purpose: This documentation discusses the process of gathering business requirements as BSA.
 Status: Done
 Started: 2023-12-12
 EditDate: 2024-02-20

@@ -9,7 +9,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses Eureka service and its use.
+Purpose: This documentation discusses Eureka service and its use.
 Status: Done
 Started: 2024-02-03
 EditDate: 

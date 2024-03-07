@@ -5,7 +5,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses Null in the the context of DBMS.
+Purpose: This documentation discusses Null in the the context of DBMS.
 Status: Done
 Started: 2024-01-11
 EditDate: 

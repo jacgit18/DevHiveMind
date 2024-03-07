@@ -5,7 +5,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses potential design choice for an API.
+Purpose: This documentation discusses potential design choice for an API.
 Status: Done
 Started: 
 EditDate: 2024-03-02

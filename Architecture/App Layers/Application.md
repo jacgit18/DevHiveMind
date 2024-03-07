@@ -5,7 +5,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses application layer of a web app.
+Purpose: This documentation discusses application layer of a web app.
 Status: Done
 Started: 
 EditDate: 2024-03-06

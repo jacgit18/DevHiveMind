@@ -9,7 +9,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses database queries and its relationship to server endpoints.
+Purpose: This documentation discusses database queries and its relationship to server endpoints.
 Status: Done
 Started: 
 EditDate: 

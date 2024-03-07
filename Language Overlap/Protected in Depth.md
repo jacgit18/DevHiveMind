@@ -6,7 +6,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses protected keywords.
+Purpose: This documentation discusses protected keywords.
 Status: Done
 Started: 
 EditDate: 2024-03-04

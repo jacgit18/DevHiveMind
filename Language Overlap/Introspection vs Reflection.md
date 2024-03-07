@@ -6,7 +6,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses Introspection and Reflection.
+Purpose: This documentation discusses Introspection and Reflection.
 Status: Done
 Started: 
 EditDate: 2024-03-04

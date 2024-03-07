@@ -7,7 +7,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation Twelve Factor App, factor three in the context of Docker.
+Purpose: This documentation Twelve Factor App, factor three in the context of Docker.
 Status: Done
 Started: 
 EditDate: 2024-03-06

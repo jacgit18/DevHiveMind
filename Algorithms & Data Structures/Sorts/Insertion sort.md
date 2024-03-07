@@ -8,7 +8,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses Insertion sort
+Purpose: This documentation discusses Insertion sort
 Status: Done
 Started: 
 EditDate: 

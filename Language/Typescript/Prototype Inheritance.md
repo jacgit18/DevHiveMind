@@ -5,7 +5,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses Prototype Inheritance.
+Purpose: This documentation discusses Prototype Inheritance.
 Status: Capture
 Started: 2024-02-04
 EditDate: 2024-02-04

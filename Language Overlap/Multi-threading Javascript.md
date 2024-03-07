@@ -5,7 +5,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses multi threading in javascript.
+Purpose: This documentation discusses multi threading in javascript.
 Status: Refinement
 Started: 
 EditDate: 2024-03-05

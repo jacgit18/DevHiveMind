@@ -5,7 +5,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses type of errors.
+Purpose: This documentation discusses type of errors.
 Status: Done
 Started: 
 EditDate: 2024-02-03

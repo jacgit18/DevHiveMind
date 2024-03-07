@@ -8,7 +8,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses useState hook.
+Purpose: This documentation discusses useState hook.
 Status: Done
 Started: 
 EditDate: 2024-02-07

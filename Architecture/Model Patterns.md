@@ -5,7 +5,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses some of the different patterns.
+Purpose: This documentation discusses some of the different patterns.
 Status: Done
 Started: 
 EditDate: 2024-02-26

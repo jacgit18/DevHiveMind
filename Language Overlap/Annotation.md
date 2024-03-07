@@ -5,7 +5,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses what are Annotation and there uses cases.
+Purpose: This documentation discusses what are Annotation and there uses cases.
 Status: Done
 Started: 
 EditDate: 2024-03-04

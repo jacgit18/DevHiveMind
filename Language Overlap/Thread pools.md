@@ -4,7 +4,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses thread pools.
+Purpose: This documentation discusses thread pools.
 Status: Refinement
 Started: 
 EditDate: 2024-03-06

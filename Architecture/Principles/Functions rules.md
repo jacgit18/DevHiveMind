@@ -9,7 +9,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses Functions rules.
+Purpose: This documentation discusses Functions rules.
 Status: Refinement
 Started: 
 EditDate: 2024-03-07

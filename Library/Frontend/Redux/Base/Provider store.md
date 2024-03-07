@@ -9,7 +9,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses providers in Redux.
+Purpose: This documentation discusses providers in Redux.
 Status: Done
 Started: 
 EditDate: 2024-02-14

@@ -4,7 +4,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses Gang of Four patterns.
+Purpose: This documentation discusses Gang of Four patterns.
 Status: Done
 Started: 
 EditDate: 2024-03-06

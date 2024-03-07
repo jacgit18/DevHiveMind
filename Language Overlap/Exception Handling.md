@@ -6,7 +6,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses exception handling.
+Purpose: This documentation discusses exception handling.
 Status: Refinement
 Started: 
 EditDate: 2024-03-05

@@ -5,7 +5,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses what bit binary is.
+Purpose: This documentation discusses what bit binary is.
 Status: Refinement
 Started: 
 EditDate: 2024-02-27

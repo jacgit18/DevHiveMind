@@ -4,7 +4,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses test cases.
+Purpose: This documentation discusses test cases.
 Status: Capture
 Started: 
 EditDate: 2024-02-03

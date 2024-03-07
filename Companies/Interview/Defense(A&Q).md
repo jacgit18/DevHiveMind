@@ -6,7 +6,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses question you will answer.
+Purpose: This documentation discusses question you will answer.
 Status: Perpetual
 Started: 
 EditDate: 2024-02-20

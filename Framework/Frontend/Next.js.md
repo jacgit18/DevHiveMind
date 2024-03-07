@@ -6,7 +6,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses what Next.js.
+Purpose: This documentation discusses what Next.js.
 Status: Done
 Started: 
 EditDate: 2024-02-06

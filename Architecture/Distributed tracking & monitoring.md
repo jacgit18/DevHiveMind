@@ -6,7 +6,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses distributed tracking and monitoring.
+Purpose: This documentation discusses distributed tracking and monitoring.
 Status: Done
 Started: 
 EditDate: 2024-03-06

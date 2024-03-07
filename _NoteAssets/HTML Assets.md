@@ -4,7 +4,7 @@ tags:
   - HTML
 author:
   - jacgit18
-Comments: This documentation list HTML assets.
+Purpose: This documentation list HTML assets.
 Status: Done
 Started: 
 EditDate: 

@@ -11,7 +11,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation is a code snippet showing how make API call in Redux with promises instead of Async Await.
+Purpose: This documentation is a code snippet showing how make API call in Redux with promises instead of Async Await.
 Status: Final
 Started: 
 EditDate: 2024-02-07

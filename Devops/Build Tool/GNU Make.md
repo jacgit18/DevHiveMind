@@ -5,7 +5,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses what GNU make is and what it does.
+Purpose: This documentation discusses what GNU make is and what it does.
 Popularity: High
 Status: Done
 Started: 

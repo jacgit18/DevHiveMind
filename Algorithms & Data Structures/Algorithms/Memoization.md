@@ -5,7 +5,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses Memoization more in-depth.
+Purpose: This documentation discusses Memoization more in-depth.
 Status: Done
 Started: 
 EditDate: 2024-02-29

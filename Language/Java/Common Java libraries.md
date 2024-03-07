@@ -5,7 +5,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses common library used in Java ecosystem.
+Purpose: This documentation discusses common library used in Java ecosystem.
 Status: Done
 Started: 
 EditDate: 2024-03-03

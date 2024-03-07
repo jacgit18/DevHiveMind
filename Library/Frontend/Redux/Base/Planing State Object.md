@@ -9,7 +9,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation explains Redux state object.
+Purpose: This documentation explains Redux state object.
 Status: Done
 Started: 
 EditDate: 2024-02-07

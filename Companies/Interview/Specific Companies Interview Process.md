@@ -5,7 +5,7 @@ tags:
   - employment
 author:
   - jacgit18
-Comments: This documentation discusses technical interview process for popular companies.
+Purpose: This documentation discusses technical interview process for popular companies.
 Status: Done
 Started: 
 EditDate: 2024-02-20

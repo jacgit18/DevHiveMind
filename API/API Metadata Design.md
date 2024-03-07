@@ -6,7 +6,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses API meta data design.
+Purpose: This documentation discusses API meta data design.
 Status: Done
 Started: 
 EditDate: 2024-03-02

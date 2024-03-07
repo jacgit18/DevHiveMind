@@ -4,7 +4,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses Heuristic
+Purpose: This documentation discusses Heuristic
 Status: Refinement
 Started: 
 EditDate: 

@@ -5,7 +5,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses JavaScript and typescript relationship.
+Purpose: This documentation discusses JavaScript and typescript relationship.
 Status: Done
 Started: 
 EditDate: 2024-03-02

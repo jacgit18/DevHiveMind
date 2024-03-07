@@ -4,7 +4,7 @@ tags:
   - CodingProblem
 author:
   - jacgit18
-Comments: This documentation discusses ways to address anti patterns
+Purpose: This documentation discusses ways to address anti patterns
 Status: Refinement
 Started: 
 EditDate: 

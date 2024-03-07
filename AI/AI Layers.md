@@ -6,7 +6,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses layers of AI.
+Purpose: This documentation discusses layers of AI.
 Status: Refinement
 Started: 
 EditDate: 2024-02-20

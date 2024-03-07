@@ -5,7 +5,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses user story types available in Jira.
+Purpose: This documentation discusses user story types available in Jira.
 Status: Done
 Started: 
 EditDate: 2024-02-20

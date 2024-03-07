@@ -9,7 +9,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses types of bankruptcy.
+Purpose: This documentation discusses types of bankruptcy.
 Status: Done
 Started: 
 EditDate: 2024-03-04

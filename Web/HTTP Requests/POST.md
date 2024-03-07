@@ -5,7 +5,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses Post request.
+Purpose: This documentation discusses Post request.
 Status: Done
 Started: 
 EditDate: 2024-01-29

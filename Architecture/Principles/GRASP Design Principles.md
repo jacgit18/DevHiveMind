@@ -6,7 +6,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses GRASP principle.
+Purpose: This documentation discusses GRASP principle.
 Status: Done
 Started: 
 EditDate: 2024-03-06

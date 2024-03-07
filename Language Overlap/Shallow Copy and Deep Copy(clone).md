@@ -6,7 +6,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses shallow and deep copy.
+Purpose: This documentation discusses shallow and deep copy.
 Status: Refinement
 Started: 
 EditDate: 2024-03-06

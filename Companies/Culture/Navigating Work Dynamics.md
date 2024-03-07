@@ -7,7 +7,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses work dynamics.
+Purpose: This documentation discusses work dynamics.
 Status: Done
 Started: 
 EditDate: 2024-02-27

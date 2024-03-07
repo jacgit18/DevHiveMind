@@ -6,7 +6,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses different testing paradigms using jest library.
+Purpose: This documentation discusses different testing paradigms using jest library.
 Status: Done
 Started: 2023-11-06
 EditDate: 2024-02-02

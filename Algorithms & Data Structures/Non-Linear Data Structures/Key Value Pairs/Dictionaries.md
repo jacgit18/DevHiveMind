@@ -4,7 +4,7 @@ tags:
   - non-linear
 author:
   - jacgit18
-Comments: This documentation discusses
+Purpose: This documentation discusses
 Status: Done
 Started: 
 EditDate: 

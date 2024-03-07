@@ -4,7 +4,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses computer processes.
+Purpose: This documentation discusses computer processes.
 Status: Refinement
 Started: 
 EditDate: 2024-03-06

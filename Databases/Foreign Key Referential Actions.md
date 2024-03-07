@@ -5,7 +5,7 @@ tags:
   - schema
 author:
   - jacgit18
-Comments: This documentation discusses Foreign Key Referential Actions.
+Purpose: This documentation discusses Foreign Key Referential Actions.
 Status: Refinement
 Started: 
 EditDate: 

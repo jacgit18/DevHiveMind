@@ -5,7 +5,7 @@ tags:
   - Domain
 author:
   - jacgit18
-Comments: This documentation discusses Tracflo startup and the construction industry.
+Purpose: This documentation discusses Tracflo startup and the construction industry.
 Status: Done
 Started: 
 EditDate: 2024-02-20

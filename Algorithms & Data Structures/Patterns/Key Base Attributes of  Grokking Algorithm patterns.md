@@ -3,7 +3,7 @@ tags:
   - MicroCodebaseDecision
 author:
   - jacgit18
-Comments: This documentation discusses Grokking Algorithm patterns
+Purpose: This documentation discusses Grokking Algorithm patterns
 Status: Refinement
 Started: 
 EditDate: 

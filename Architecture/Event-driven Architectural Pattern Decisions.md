@@ -6,7 +6,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses the different combinations of architecture to use together.
+Purpose: This documentation discusses the different combinations of architecture to use together.
 Status: Refinement
 Started: 
 EditDate: 2024-03-07

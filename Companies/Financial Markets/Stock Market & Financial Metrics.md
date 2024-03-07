@@ -6,7 +6,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses some basic things about the stock market.
+Purpose: This documentation discusses some basic things about the stock market.
 Status: Done
 Started: 
 EditDate: 2024-03-04

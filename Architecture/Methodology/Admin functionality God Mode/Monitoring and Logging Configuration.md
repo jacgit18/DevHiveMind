@@ -7,7 +7,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses admin process around monitoring and Logging Configuration processes.
+Purpose: This documentation discusses admin process around monitoring and Logging Configuration processes.
 Status: Done
 Started: 
 EditDate: 2024-03-06

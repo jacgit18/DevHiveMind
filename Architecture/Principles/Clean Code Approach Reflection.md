@@ -6,7 +6,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses a counter argument to aspects of clean code.
+Purpose: This documentation discusses a counter argument to aspects of clean code.
 Status: Done
 Started: 
 EditDate: 2024-03-06

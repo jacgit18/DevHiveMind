@@ -6,7 +6,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses choosing between shares and options.
+Purpose: This documentation discusses choosing between shares and options.
 Status: Done
 Started: 
 EditDate: 2024-02-20

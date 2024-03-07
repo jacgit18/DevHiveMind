@@ -8,7 +8,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation proper risk management strategies in stock market.
+Purpose: This documentation proper risk management strategies in stock market.
 Status: Perpetual
 Started: 
 EditDate: 2024-03-04

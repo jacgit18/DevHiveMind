@@ -5,7 +5,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses Microservices.
+Purpose: This documentation discusses Microservices.
 Status: Refinement
 Started: 
 EditDate: 2024-03-07

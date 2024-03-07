@@ -2,7 +2,7 @@
 tags:
   - Java
   - tool
-Comments: This documentation discusses tools in java ecosystem.
+Purpose: This documentation discusses tools in java ecosystem.
 author:
   - jacgit18
   - chatgpt

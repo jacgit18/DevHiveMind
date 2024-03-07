@@ -6,7 +6,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses setTimeout and setInterval.
+Purpose: This documentation discusses setTimeout and setInterval.
 Status: Done
 Started: 
 EditDate: 2024-03-06

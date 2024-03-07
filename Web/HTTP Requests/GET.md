@@ -5,7 +5,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses talks about get request.
+Purpose: This documentation discusses talks about get request.
 Status: Done
 Started: 
 EditDate: 

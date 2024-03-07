@@ -8,7 +8,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses building a business.
+Purpose: This documentation discusses building a business.
 Status: Perpetual
 Started: 
 EditDate: 2024-03-04

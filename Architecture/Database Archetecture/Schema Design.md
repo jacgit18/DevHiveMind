@@ -8,7 +8,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses schema design from database structure to SEO and APIs.
+Purpose: This documentation discusses schema design from database structure to SEO and APIs.
 Status: Refinement
 Started: 
 EditDate: 2024-03-06

@@ -8,7 +8,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses architectural styles.
+Purpose: This documentation discusses architectural styles.
 Status: Done
 Started: 
 EditDate: 2024-03-06

@@ -9,7 +9,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses decentralized data management architecture.
+Purpose: This documentation discusses decentralized data management architecture.
 Status: Done
 Started: 
 EditDate: 2024-03-06

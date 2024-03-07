@@ -3,7 +3,7 @@ tags:
   - bsa
 author:
   - jacgit18
-Comments: This documentation discusses validating business requirements.
+Purpose: This documentation discusses validating business requirements.
 Status: Done
 Started: 
 EditDate: 2024-02-20

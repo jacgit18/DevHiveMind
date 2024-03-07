@@ -6,7 +6,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses the different constraint of an API.
+Purpose: This documentation discusses the different constraint of an API.
 Status: Done
 Started: 
 EditDate: 2024-03-02

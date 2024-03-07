@@ -5,7 +5,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses the distinction between parameters and arguments.
+Purpose: This documentation discusses the distinction between parameters and arguments.
 Status: Done
 Started: 2024-03-02
 EditDate: 

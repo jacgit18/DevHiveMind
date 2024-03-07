@@ -8,7 +8,7 @@ tags:
   - URL
 author:
   - jacgit18
-Comments: This documentation discusses explains URI structure and best practices.
+Purpose: This documentation discusses explains URI structure and best practices.
 Status: Refinement
 Started: 
 EditDate: 2024-01-30

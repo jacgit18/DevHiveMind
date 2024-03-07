@@ -4,7 +4,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses why you would want to use Byte Streams.
+Purpose: This documentation discusses why you would want to use Byte Streams.
 Status: Done
 Started: 
 EditDate: 2024-02-17

@@ -5,7 +5,7 @@ tags:
   - services
 author:
   - jacgit18
-Comments: This documentation discusses Zookeeper service.
+Purpose: This documentation discusses Zookeeper service.
 Status: Refinement
 Started: 2023-09-04
 EditDate: 2024-02-03

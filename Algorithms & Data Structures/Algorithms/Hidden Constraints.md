@@ -4,7 +4,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses hidden constraints.
+Purpose: This documentation discusses hidden constraints.
 Status: Done
 Started: 2024-02-11
 EditDate: 

@@ -5,7 +5,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses Custom HTTP Headers and Methods.
+Purpose: This documentation discusses Custom HTTP Headers and Methods.
 Status: Done
 Started: 
 EditDate: 

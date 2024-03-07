@@ -6,7 +6,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses GUIDs.
+Purpose: This documentation discusses GUIDs.
 Status: Done
 Started: 2023-11-23
 EditDate: 

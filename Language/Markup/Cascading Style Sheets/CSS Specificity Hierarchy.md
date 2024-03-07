@@ -5,7 +5,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses the override order of css.
+Purpose: This documentation discusses the override order of css.
 Status: Done
 Started: 
 EditDate: 2024-02-26

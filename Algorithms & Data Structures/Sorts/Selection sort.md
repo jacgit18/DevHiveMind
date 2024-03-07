@@ -8,7 +8,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses Selection sort
+Purpose: This documentation discusses Selection sort
 Status: Done
 Started: 
 EditDate: 

@@ -4,7 +4,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses string encoding.
+Purpose: This documentation discusses string encoding.
 Status: Done
 Started: 
 EditDate: 2024-02-26

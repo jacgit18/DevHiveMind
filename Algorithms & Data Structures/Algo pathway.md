@@ -7,7 +7,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses different aspect of a algorithm to examine.
+Purpose: This documentation discusses different aspect of a algorithm to examine.
 Status: Refinement
 Started: 
 EditDate: 

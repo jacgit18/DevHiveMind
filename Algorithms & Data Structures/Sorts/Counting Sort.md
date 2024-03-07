@@ -7,7 +7,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses Counting Sort
+Purpose: This documentation discusses Counting Sort
 Status: Refinement
 Started: 
 EditDate: 

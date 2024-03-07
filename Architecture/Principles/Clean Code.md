@@ -10,7 +10,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses clean code.
+Purpose: This documentation discusses clean code.
 Status: Refinement
 Started: 
 EditDate: 2024-03-06

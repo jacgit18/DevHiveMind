@@ -8,7 +8,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses Bubble sort
+Purpose: This documentation discusses Bubble sort
 Status: Done
 Started: 
 EditDate: 

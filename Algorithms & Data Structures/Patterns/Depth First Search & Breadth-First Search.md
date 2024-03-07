@@ -9,7 +9,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses DFS & BFS
+Purpose: This documentation discusses DFS & BFS
 Status: Refinement
 Started: 
 EditDate: 

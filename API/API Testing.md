@@ -5,7 +5,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses API testing.
+Purpose: This documentation discusses API testing.
 Status: Done
 Started: 2024-02-03
 EditDate: 

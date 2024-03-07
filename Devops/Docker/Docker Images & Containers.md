@@ -4,7 +4,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses uses cases of Docker images.
+Purpose: This documentation discusses uses cases of Docker images.
 Status: Done
 Started: 2024-02-22
 EditDate: 

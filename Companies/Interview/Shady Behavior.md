@@ -7,7 +7,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses behavior to be aware of.
+Purpose: This documentation discusses behavior to be aware of.
 Status: Done
 Started: 
 EditDate: 2024-02-20

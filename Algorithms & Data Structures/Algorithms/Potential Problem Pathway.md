@@ -4,7 +4,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses weather to prioritize examining potential built in functions vs focusing on Data Structures to leverages.
+Purpose: This documentation discusses weather to prioritize examining potential built in functions vs focusing on Data Structures to leverages.
 Status: Done
 Started: 
 EditDate: 2024-02-29

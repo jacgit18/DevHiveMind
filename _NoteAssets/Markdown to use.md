@@ -4,7 +4,7 @@ tags:
   - favorite
 author:
   - jacgit18
-Comments: This documentation list Markdown syntax to use in obsidian.
+Purpose: This documentation list Markdown syntax to use in obsidian.
 Status: Done
 Started: 2022-11-01
 EditDate: 

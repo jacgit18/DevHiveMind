@@ -5,7 +5,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses callback functions
+Purpose: This documentation discusses callback functions
 Status: Done
 Started: 
 EditDate: 2024-03-04

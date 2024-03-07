@@ -5,7 +5,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses Class inheritance in the context of python and Java.
+Purpose: This documentation discusses Class inheritance in the context of python and Java.
 Status: Done
 Started: 2023-11-21
 EditDate: 2024-03-04

@@ -6,7 +6,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses web sockets and when to use them.
+Purpose: This documentation discusses web sockets and when to use them.
 Status: Done
 Started: 
 EditDate: 2024-01-29

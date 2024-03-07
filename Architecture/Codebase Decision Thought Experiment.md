@@ -8,7 +8,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses areas where it make sense to use Multi threading, concurrency, collections, generics, and annotations.
+Purpose: This documentation discusses areas where it make sense to use Multi threading, concurrency, collections, generics, and annotations.
 Status: Done
 Started: 
 EditDate: 2024-02-26

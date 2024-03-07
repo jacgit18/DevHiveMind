@@ -4,7 +4,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This is a medium article that discuss basic API design
+Purpose: This is a medium article that discuss basic API design
 Status: Done
 Started: 
 EditDate: 2024-02-25

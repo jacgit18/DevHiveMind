@@ -7,7 +7,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses Radix Sort
+Purpose: This documentation discusses Radix Sort
 Status: Refinement
 Started: 
 EditDate: 

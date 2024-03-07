@@ -7,7 +7,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses in and outs about Binary search
+Purpose: This documentation discusses in and outs about Binary search
 Status: Done
 Started: 
 EditDate: 

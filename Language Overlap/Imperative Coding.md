@@ -5,7 +5,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses imperative coding.
+Purpose: This documentation discusses imperative coding.
 Status: Done
 Started: 
 EditDate: 2024-03-05

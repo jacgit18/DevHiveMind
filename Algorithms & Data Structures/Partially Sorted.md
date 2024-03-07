@@ -5,7 +5,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses Partially Sorted arrays.
+Purpose: This documentation discusses Partially Sorted arrays.
 Status: Done
 Started: 2024-02-19
 EditDate: 

@@ -5,7 +5,7 @@ tags:
   - questions
 author:
   - jacgit18
-Comments: This documentation discusses what questions to ask.
+Purpose: This documentation discusses what questions to ask.
 Status: Perpetual
 Started: 
 EditDate: 2024-02-20

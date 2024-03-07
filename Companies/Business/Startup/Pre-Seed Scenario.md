@@ -8,7 +8,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses Pre-Seed Stage of a startup.
+Purpose: This documentation discusses Pre-Seed Stage of a startup.
 Status: Done
 Started: 
 EditDate: 2024-03-04

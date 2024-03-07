@@ -6,7 +6,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses the difference between interfaces and types.
+Purpose: This documentation discusses the difference between interfaces and types.
 Status: Done
 Started: 
 EditDate: 2024-03-02

@@ -4,7 +4,7 @@ tags:
   - example
 author:
   - jacgit18
-Comments: This documentation discusses driving school example of a feature.
+Purpose: This documentation discusses driving school example of a feature.
 Status: Done
 Started: 
 EditDate: 2024-02-20

@@ -5,7 +5,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses batch and stream processing.
+Purpose: This documentation discusses batch and stream processing.
 Status: Done
 Started: 
 EditDate: 2024-03-04

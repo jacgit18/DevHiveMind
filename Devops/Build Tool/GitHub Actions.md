@@ -6,7 +6,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses GitHub Actions.
+Purpose: This documentation discusses GitHub Actions.
 Popularity: High
 Status: Done
 Started: 

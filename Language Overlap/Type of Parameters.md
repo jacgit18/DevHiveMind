@@ -6,7 +6,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses different types of parameters.
+Purpose: This documentation discusses different types of parameters.
 Status: Done
 Started: 
 EditDate: 2024-03-02
