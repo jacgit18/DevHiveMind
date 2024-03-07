@@ -5,11 +5,13 @@ tags:
   - schema
 author:
   - jacgit18
+  - chatgpt
 Comments: This documentation discusses Functional Dependencies.
 Status: Refinement
 Started: 
 EditDate: 
-Relates:
+Relates: 
+Peer Reviewed: "0"
 ---
 
 

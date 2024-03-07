@@ -1,13 +1,16 @@
 ---
 tags:
   - dataStructure
+  - non-linear
 author:
   - jacgit18
-Comments: This documentation discusses
+  - chatgpt
+Comments: This documentation discusses trees
 Status: Refinement
 Started: 
 EditDate: 
-Relates:
+Relates: 
+Peer Reviewed: "0"
 ---
 ![[tree.gif]]
 ## Tree 

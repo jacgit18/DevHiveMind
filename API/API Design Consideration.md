@@ -9,7 +9,8 @@ Comments: This documentation discusses potential design choice for an API.
 Status: Done
 Started: 
 EditDate: 2024-03-02
-Relates:
+Relates: 
+Peer Reviewed: "0"
 ---
 ### **Get-and-Set**
 *A fundamental approach in API design, comprising two operations:*

@@ -6,11 +6,13 @@ tags:
   - obsidian
 author:
   - jacgit18
+  - chatgpt
 Comments: This documentation discusses obsidian data view.
-Status: Capture
+Status: Refinement
 Started: 
 EditDate: 
-Relates:
+Relates: 
+Peer Reviewed: "0"
 ---
 DataView.js is a JavaScript library that allows you to work with data efficiently. In DataView.js, query types refer to different methods of retrieving and manipulating data. The two main query types are:
 

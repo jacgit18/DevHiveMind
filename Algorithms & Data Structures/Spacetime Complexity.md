@@ -4,11 +4,13 @@ tags:
   - timeComplexity
 author:
   - jacgit18
-Comments: This documentation discusses
+  - chatgpt
+Comments: This documentation discusses Spacetime Complexity
 Status: Done
 Started: 
 EditDate: 
-Relates:
+Relates: 
+Peer Reviewed: "0"
 ---
 ![[Space.gif]]
 ## Space Complexity and Its Determinants

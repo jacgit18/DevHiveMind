@@ -8,11 +8,13 @@ tags:
   - distributedSystem
 author:
   - jacgit18
+  - chatgpt
 Comments: This documentation discusses Database Sharding.
 Status: Done
 Started: 
 EditDate: 2024-02-17
-Relates:
+Relates: 
+Peer Reviewed: "0"
 ---
 ![[Database Sharding.jpeg]]
 

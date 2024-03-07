@@ -4,11 +4,13 @@ tags:
   - query
 author:
   - jacgit18
+  - chatgpt
 Comments: This documentation discusses Database Core Functionality.
 Status: Done
 Started: 
 EditDate: 
-Relates:
+Relates: 
+Peer Reviewed: "0"
 ---
 A database is a named collection of tables with fields or columns and records or rows. A database can also contain views, indexes, sequences, data types, operators, and functions. 
 

@@ -5,11 +5,13 @@ tags:
   - schema
 author:
   - jacgit18
+  - chatgpt
 Comments: This documentation discusses different DBMS Keys.
 Status: Done
 Started: 
 EditDate: 
-Relates:
+Relates: 
+Peer Reviewed: "0"
 ---
 In the realm of Database Management Systems (DBMS), a database key holds a critical role, representing either a singular attribute or a combination of attributes. Its primary function is to uniquely identify a tuple (row/record) within a relation (table). However, the significance of keys extends beyond mere identification, playing a pivotal role in establishing relationships across various tables and columns within a relational database.
 

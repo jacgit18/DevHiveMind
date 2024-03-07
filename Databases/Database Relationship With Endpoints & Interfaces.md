@@ -8,11 +8,13 @@ tags:
   - MicroCodebaseDecision
 author:
   - jacgit18
+  - chatgpt
 Comments: This documentation discusses database queries and its relationship to server endpoints.
-Status: Capture
+Status: Done
 Started: 
 EditDate: 
-Relates:
+Relates: 
+Peer Reviewed: "0"
 ---
 Consider the dynamics of database table relationships when crafting business logic within a codebase. As data tables and their associations may evolve over time, it's essential to maintain flexibility in your code. Organize endpoints in alignment with the dependencies of database tables to ensure a structured and coherent approach. Additionally, when handling network request bodies, leverage interfaces to seamlessly append data to fields that might not currently exist in the tables.
 

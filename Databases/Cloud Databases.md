@@ -4,11 +4,13 @@ tags:
   - cloud
 author:
   - jacgit18
+  - chatgpt
 Comments: This documentation discusses cloud databases.
 Status: Done
 Started: 
 EditDate: 
-Relates:
+Relates: 
+Peer Reviewed: "0"
 ---
 Cloud databases fall into different service models within cloud computing:
 

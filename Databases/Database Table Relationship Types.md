@@ -6,11 +6,13 @@ tags:
   - UML
 author:
   - jacgit18
+  - chatgpt
 Comments: This documentation discusses database table relationships.
 Status: Done
 Started: 
 EditDate: 2024-02-06
-Relates:
+Relates: 
+Peer Reviewed: "0"
 ---
 ![[DB UML relationship types.jpeg]]
 

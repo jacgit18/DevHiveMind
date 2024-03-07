@@ -4,6 +4,7 @@ tags:
   - career
 author:
   - jacgit18
+  - chatgpt
 Comments: This documentation discusses best personal practices.
 Status: Perpetual
 Started: 

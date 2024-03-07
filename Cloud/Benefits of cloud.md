@@ -9,7 +9,8 @@ Comments: This documentation discusses types of cloud infrastructure.
 Status: Done
 Started: 
 EditDate: 2024-02-04
-Relates:
+Relates: 
+Peer Reviewed: "0"
 ---
 ![[Service Types.jpg]]
 

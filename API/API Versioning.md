@@ -9,7 +9,8 @@ Comments: This documentation discusses API versioning.
 Status: Done
 Started: 
 EditDate: 2024-03-02
-Relates:
+Relates: 
+Peer Reviewed: "0"
 ---
 API versioning is a critical strategy in software development, focusing on managing various iterations of an API effectively. It's essential for several reasonsd:
 

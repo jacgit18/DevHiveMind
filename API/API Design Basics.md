@@ -3,11 +3,13 @@ tags:
   - API
 author:
   - jacgit18
+  - chatgpt
 Comments: This is a medium article that discuss basic API design
 Status: Done
 Started: 
 EditDate: 2024-02-25
-Relates:
+Relates: 
+Peer Reviewed: "0"
 ---
 
 

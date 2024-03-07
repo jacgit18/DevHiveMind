@@ -3,11 +3,13 @@ tags:
   - career
 author:
   - jacgit18
-Comments: This documentation discusses
-Status: Express
+  - chatgpt
+Comments: This documentation discusses career pathway.
+Status: Perpetual
 Started: 
-EditDate: 
-Relates:
+EditDate: 2024-03-07
+Relates: 
+Peer Reviewed: "0"
 ---
 ## **Application Architecture:**
 Involves designing individual applications with a focus on specific technical details, including components, modules, and interfaces. Salary: $116,000 per year.
