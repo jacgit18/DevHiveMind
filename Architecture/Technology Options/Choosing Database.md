@@ -12,7 +12,7 @@ Comments: Guide to selecting a database.
 Status: Refinement
 Started: 
 EditDate: 2024-01-02
-Relates: 
+Relates: "[[Choosing Schema]]"
 Peer Reviewed: "0"
 ---
 ![[Structured vs Unstructured Data.webp]]

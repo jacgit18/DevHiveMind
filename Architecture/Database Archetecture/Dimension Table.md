@@ -8,7 +8,7 @@ author:
   - jacgit18
   - chatgpt
 Comments: This documentation discusses dimension table.
-Status: Done
+Status: Refinement
 Started: 2024-01-07
 EditDate: 2024-03-06
 Relates: 
@@ -49,3 +49,31 @@ Here are key characteristics and components of a dimension table:
    - Dimension tables play a central role in star schema and snowflake schema designs, which are widely used in data warehousing. In a star schema, dimension tables are directly connected to a central fact table. In a snowflake schema, dimension tables may be normalized into sub-dimensions, creating a more normalized structure.
 
 In summary, dimension tables provide descriptive context for measurements stored in fact tables in the context of data warehousing and business intelligence. They help organize and categorize data, enabling analysts and decision-makers to perform meaningful analyses and gain insights into various business aspects.
+
+
+
+### Unveiling Common Dimension Table Types
+
+**Time Dimension Table:**
+- Stores date and time-related information for analyzing trends and patterns over time (year, quarter, month, week, day, hour, minute, second).
+
+**Geography Dimension Table:**
+- Contains geographical details like country, state, city, postal code, longitude, and latitude for analyzing data based on geography.
+
+**Product Dimension Table:**
+- Houses product information such as name, category, brand, size, and color for analyzing sales and inventory data.
+
+**Customer Dimension Table:**
+- Stores customer details like name, age, gender, address, email, and loyalty status for analyzing behavior and preferences.
+
+**Salesperson Dimension Table:**
+- Captures salesperson information including name, department, territory, and commission rate for analyzing sales performance.
+
+**Promotion Dimension Table:**
+- Records promotion details such as name, start date, end date, discount rate, and coupon code for analyzing marketing campaign effectiveness.
+
+**Supplier Dimension Table:**
+- Contains supplier information like name, address, contact details, and supplied products for analyzing supplier performance.
+
+**Flexibility in Dimension Table Choices:**
+- The selection of dimension tables depends on the specific data analyzed and organizational needs in a data warehouse or business intelligence system.

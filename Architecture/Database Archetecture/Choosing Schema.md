@@ -13,7 +13,7 @@ Comments: This documentation discusses things to consider when deciding on a dat
 Status: Done
 Started: 
 EditDate: 2024-03-06
-Relates: "[[Choosing Database]]"
+Relates: "[[Schema Design]]"
 Peer Reviewed: "0"
 ---
 ![[Star vs Snow.png]]

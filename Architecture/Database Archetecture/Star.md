@@ -12,7 +12,7 @@ EditDate: 2024-03-06
 Relates: "[[Normalization & Denormalization]]"
 Peer Reviewed: "0"
 ---
-A star schema in data warehousing serves as an efficient organizational structure, primarily composed of fact and dimension tables. Here's an in-depth exploration of its components, types of tables, and associated challenges:
+A star schema in data warehousing serves as an efficient organizational structure, primarily composed of  [[Fact table|Fact tables]] and [[Dimension Table]]. Here's an in-depth exploration of its components, types of tables, and associated challenges:
 
 ##### Core Components of a Star Schema
 

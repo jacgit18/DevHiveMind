@@ -10,7 +10,7 @@ author:
   - jacgit18
   - chatgpt
 Comments: This documentation discusses fact tables.
-Status: Done
+Status: Refinement
 Started: 
 EditDate: 2024-03-06
 Relates: 
@@ -76,3 +76,21 @@ As a data engineer, understanding business requirements and data sources is para
    - Suitable for dimension tables with hierarchical structures or context-specific attributes.
 
 In summary, fact table selection depends on specific business needs, considering factors like granularity, measurement type, dimension count, update frequency, and aggregation requirements. By carefully evaluating these aspects, data engineers can make informed decisions for effective data warehousing.
+
+
+### Navigating Multiple Fact Tables in a Schema
+
+**Possibility of Multiple Fact Tables:**
+- Indeed, a schema can host multiple fact tables in a data warehouse, each containing distinct measures such as sales, revenue, or customer interactions.
+- Example: A retail company may have separate fact tables for sales and inventory data, connected through common dimensions like product, store, and time.
+
+**Benefits and Considerations:**
+- Multiple fact tables enhance data analysis complexity, facilitating in-depth insights and report creation.
+- Design precision is crucial to ensure well-defined relationships and efficient query execution within the schema.
+
+**Fact Tables vs. Dimensional Tables Ratio:**
+- While less common, having more fact tables than dimensional tables is feasible based on the nature and complexity of the analyzed data.
+- Example: In a customer relationship management system, various fact tables for different interactions may share a common dimensional table for customer data.
+
+**Schema Design Principles:**
+- Emphasizes designing a schema that mirrors data relationships and hierarchy while optimizing query efficiency.
