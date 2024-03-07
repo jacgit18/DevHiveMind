@@ -2,12 +2,21 @@
 tags:
   - architecturalPatterns
   - eventDriven
+  - coupling
+  - events
+  - asynchronous
+  - scalability
+  - synchronous
+  - microservices
 author:
   - jacgit18
-Status: Capture
+  - chatgpt
+Comments: This documentation discusses Event Driven Architecture.
+Status: Refinement
 Started: 
-EditDate: 
-Relates:
+EditDate: 2024-03-07
+Relates: 
+Peer Reviewed: "0"
 ---
 ![[Event Driven Arch.jpg]]
 
@@ -47,7 +56,8 @@ Event-Driven Architecture (EDA) is a software design pattern that focuses on the
 11. **Pub-Sub Model:**
    - EDA can be implemented using a Publish-Subscribe (Pub-Sub) model, where event producers publish events to specific topics or channels, and event consumers subscribe to these topics to receive relevant events.
 
-> [!info] An interesting aspect is that event-driven architecture can be integrated into various architectural styles, including microservices.
+> [!info] 
+> An interesting aspect is that event-driven architecture can be integrated into various architectural styles, including microservices.
 
 ## Event Bus and Broker
 

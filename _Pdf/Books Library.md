@@ -1,12 +1,14 @@
 ---
-tags: 
+tags:
+  - 📚Books
 author:
   - jacgit18
-Status: Capture
+Comments: This documentation discusses
+Status: Refinement
 Started: 
-EditDate: 
+EditDate: 2024-03-07
 Relates: 
-Comments:
+Peer Reviewed: "0"
 ---
 ## To Read
 ```dataview

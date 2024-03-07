@@ -4,6 +4,7 @@ tags:
 title: '"The Talent Code"'
 author:
   - "[Daniel Coyle]"
+Comments: This documentation discusses
 category: Self-Help
 publisher: Bantam
 publishdate: 2009-04-28
@@ -13,7 +14,6 @@ cover: http://books.google.com/books/content?id=gIHSN-ht0xQC&printsec=frontcover
 Read: 
 Started: 
 DateFinished: 
-Comments: 
 Relates: 
 rating: ⭐⭐⭐⭐⭐
 pdf: "[[The Talent Code Greatness Isn_t Born.pdf]]"
