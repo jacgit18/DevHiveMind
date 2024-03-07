@@ -13,9 +13,9 @@ EditDate: 2024-03-06
 Relates: "[[Star]]"
 Peer Reviewed: "0"
 ---
-In a star schema, fact tables and dimension tables work collaboratively to efficiently organize and integrate data. Consider the following illustration and explanation:
+In a star schema, [[Fact table|Fact tables]] and [[Dimension Table]] work collaboratively to efficiently organize and integrate data. Consider the following illustration and explanation:
 
-#### Dimension Tables:
+#### Dimension Tables
 
 1. **Surrogate Primary Key:**
    - Dimension tables typically include a surrogate primary key, represented by a single-column integer. This surrogate key maps to attributes related to the natural key.
