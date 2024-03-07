@@ -8,11 +8,13 @@ tags:
   - API
 author:
   - jacgit18
+  - chatgpt
 Comments: This documentation is a code snippet showing how to make API call in Redux with thunk.
 Status: Done
 Started: 
 EditDate: 2024-02-08
-Relates:
+Relates: 
+Peer Reviewed: "0"
 ---
 ```jsx
 import axios from 'axios';

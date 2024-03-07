@@ -7,11 +7,13 @@ tags:
   - stateStore
 author:
   - jacgit18
+  - chatgpt
 Comments: This documentation is a code snippet showing how redux toolkit store works.
 Status: Done
 Started: 
 EditDate: 2024-02-08
-Relates:
+Relates: 
+Peer Reviewed: "0"
 ---
 ```jsx
 import store from './app/store';
