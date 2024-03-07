@@ -4,11 +4,13 @@ tags:
   - dataStructure
 author:
   - jacgit18
+  - chatgpt
 Comments: This documentation discusses Queues.
-Status: Capture
+Status: Refinement
 Started: 
 EditDate: 2024-02-29
-Relates:
+Relates: 
+Peer Reviewed: "0"
 ---
 ![[Standard queue.gif]]
 

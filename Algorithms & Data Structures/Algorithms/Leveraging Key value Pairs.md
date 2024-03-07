@@ -3,11 +3,13 @@ tags:
   - CodingProblem
 author:
   - jacgit18
+  - chatgpt
 Comments: This documentation discusses leetcode 20 checking for valid parentheses.
 Status: Done
 Started: 
 EditDate: 2024-02-29
 Relates: "[[Map]]"
+Peer Reviewed: "0"
 ---
 ```javascript
 function isWellFormed(expression) {

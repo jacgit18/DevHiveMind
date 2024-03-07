@@ -4,11 +4,13 @@ tags:
   - CodingProblem
 author:
   - jacgit18
+  - chatgpt
 Comments: This documentation discusses Greedy algorithms and relation to Top k element patterns.
 Status: Done
 Started: 2023-12-05
 EditDate: 2024-02-29
-Relates:
+Relates: 
+Peer Reviewed: "0"
 ---
 ## Greedy Algorithm Relationship to Top k elements
 

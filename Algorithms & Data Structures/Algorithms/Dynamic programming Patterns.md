@@ -5,11 +5,13 @@ tags:
   - MicroCodebaseDecision
 author:
   - jacgit18
+  - chatgpt
 Comments: This documentation discusses Dynamic programming.
 Status: Done
 Started: 2023-12-09
 EditDate: 2024-02-27
-Relates:
+Relates: 
+Peer Reviewed: "0"
 ---
 Dynamic programming is a powerful technique used in computer science and mathematics to solve optimization problems by breaking them down into smaller overlapping subproblems. There are several common dynamic programming patterns that are frequently used to design efficient algorithms.
 

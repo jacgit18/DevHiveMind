@@ -5,11 +5,13 @@ tags:
   - MicroCodebaseDecision
 author:
   - jacgit18
+  - chatgpt
 Comments: This documentation discusses different types of search.
 Status: Done
 Started: 
 EditDate: 2024-02-29
-Relates:
+Relates: 
+Peer Reviewed: "0"
 ---
 ![[Linear(Sequential) v Binary search.gif]]
 

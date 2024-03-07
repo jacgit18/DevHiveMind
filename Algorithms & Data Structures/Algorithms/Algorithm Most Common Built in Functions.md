@@ -4,11 +4,13 @@ tags:
   - CodingProblem
 author:
   - jacgit18
+  - chatgpt
 Comments: This documentation discusses the most common built in functions used in coding challenge problems.
 Status: Done
 Started: 
 EditDate: 2024-02-23
-Relates:
+Relates: 
+Peer Reviewed: "1"
 ---
 ## Common Math 
 

@@ -4,11 +4,13 @@ tags:
   - dataStructure
 author:
   - jacgit18
+  - chatgpt
 Comments: This documentation discusses
 Status: Refinement
 Started: 
 EditDate: 
-Relates:
+Relates: 
+Peer Reviewed: "0"
 ---
 A priority queue and a heap are closely related concepts, but they serve different purposes and have different implementations.
 

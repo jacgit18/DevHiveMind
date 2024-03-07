@@ -4,11 +4,13 @@ tags:
   - dataStructure
 author:
   - jacgit18
+  - chatgpt
 Comments: This documentation discusses different aspects of arrays
 Status: Refinement
 Started: 
 EditDate: 2024-02-29
-Relates:
+Relates: 
+Peer Reviewed: "0"
 ---
 An array is a data structure in programming that represents a collection of elements, where each element can be accessed by an index or a key. It is a fundamental and versatile data structure used in many programming languages, including JavaScript, Python, Java, C++, and more.
 

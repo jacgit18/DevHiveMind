@@ -4,11 +4,13 @@ tags:
   - non-linear
 author:
   - jacgit18
+  - chatgpt
 Comments: This documentation discusses
-Status: 
+Status: Refinement
 Started: 
 EditDate: 
 Relates: "[[Graph]]"
+Peer Reviewed: "0"
 ---
 List & Matrix represent and are used to store the relationships between nodes (vertices) and edges in a graph. Each has its own advantages and is chosen based on the specific characteristics of the graph and the types of operations you need to perform.
 

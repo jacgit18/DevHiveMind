@@ -3,12 +3,14 @@ tags:
   - CodingProblem
   - AlgorithmComponent
 author:
+  - jacgit18
   - chatgpt
 Comments: This documentation discusses the difference between iterating and traversing.
 Status: Done
 Started: 2023-11-01
 EditDate: 
-Relates:
+Relates: 
+Peer Reviewed: "0"
 ---
 In programming, "iterating" and "traversing" are often used interchangeably to describe the process of accessing each element or item in a data structure, such as an array, list, or collection, one by one. However, there can be a subtle difference in their usage based on the context:
 

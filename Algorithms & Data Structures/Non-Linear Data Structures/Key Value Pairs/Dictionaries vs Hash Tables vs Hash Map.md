@@ -1,12 +1,16 @@
 ---
-tags: 
+tags:
+  - dataStructure
+  - non-linear
 author:
   - jacgit18
+  - chatgpt
 Comments: This documentation discusses
 Status: Done
 Started: 
 EditDate: 
-Relates:
+Relates: 
+Peer Reviewed: "0"
 ---
 1. **Dictionaries**:
    - In many contexts, "dictionaries" refer to abstract data types used for mapping keys to values like this `KEY => VALUE`. 
