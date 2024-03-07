@@ -1834,7 +1834,7 @@
       },
       "active": "9ab54d95b888b3a4"
     },
-    "enm": {
+    "fhjf": {
       "main": {
         "id": "0cbb3f0709975816",
         "type": "split",
@@ -1844,74 +1844,18 @@
             "type": "tabs",
             "children": [
               {
-                "id": "e313d310728eebd2",
+                "id": "4391603bfc7af501",
                 "type": "leaf",
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "Architecture/Microservices.md",
-                    "mode": "source",
-                    "source": false
-                  }
-                }
-              },
-              {
-                "id": "a176eb395be5e9df",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "Architecture/Vertical vs Horizontal Scaling.md",
+                    "file": "Architecture/SOLID Design Principles.md",
                     "mode": "source",
                     "source": false
                   }
                 }
               }
-            ],
-            "currentTab": 1
-          },
-          {
-            "id": "4734bb63fedc78eb",
-            "type": "tabs",
-            "children": [
-              {
-                "id": "a9fdf08c543e696b",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "Architecture/Enums Decision.md",
-                    "mode": "source",
-                    "source": false
-                  }
-                }
-              },
-              {
-                "id": "19af0b85058708a5",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "Architecture/microservices and monolithic architecture.md",
-                    "mode": "source",
-                    "source": false
-                  }
-                }
-              },
-              {
-                "id": "79fdf5cb201b8b6e",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "Architecture/Microservices best practices.md",
-                    "mode": "source",
-                    "source": false
-                  }
-                }
-              }
-            ],
-            "currentTab": 2
+            ]
           }
         ],
         "direction": "vertical"
@@ -1993,7 +1937,7 @@
                 "state": {
                   "type": "backlink",
                   "state": {
-                    "file": "Architecture/Vertical vs Horizontal Scaling.md",
+                    "file": "Architecture/SOLID Design Principles.md",
                     "collapseAll": false,
                     "extraContext": false,
                     "sortOrder": "alphabetical",
@@ -2010,7 +1954,7 @@
                 "state": {
                   "type": "outgoing-link",
                   "state": {
-                    "file": "Architecture/Vertical vs Horizontal Scaling.md",
+                    "file": "Architecture/SOLID Design Principles.md",
                     "linksCollapsed": false,
                     "unlinkedCollapsed": true
                   }
@@ -2033,7 +1977,7 @@
                 "state": {
                   "type": "outline",
                   "state": {
-                    "file": "Architecture/Vertical vs Horizontal Scaling.md"
+                    "file": "Architecture/SOLID Design Principles.md"
                   }
                 }
               },
@@ -2177,8 +2121,8 @@
           }
         ]
       },
-      "active": "a176eb395be5e9df"
+      "active": "4391603bfc7af501"
     }
   },
-  "active": "enm"
+  "active": "server"
 }

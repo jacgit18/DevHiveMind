@@ -1,11 +1,15 @@
 ---
-tags: 
+tags:
+  - thoughtExamination
 author:
   - jacgit18
-Status: done
+  - chatgpt
+Comments: This documentation discusses thoughts around User Interface.
+Status: Done
 Started: 
-EditDate: 
-Relates:
+EditDate: 2024-03-07
+Relates: 
+Peer Reviewed: "0"
 ---
 As a technology user, I generally avoid heavy use of social media, but I do utilize it to stay connected with family. My primary engagement, however, is on YouTube, where I've created playlists and implemented a subscription manager to control my video feed and limit my consumption. I've even dedicated a separate account solely for software development-related content.
 

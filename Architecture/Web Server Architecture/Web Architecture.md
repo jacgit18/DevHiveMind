@@ -1,11 +1,15 @@
 ---
-tags: 
+tags:
+  - web
+  - systemDesign
 author:
   - jacgit18
-Status: 
+Comments: This documentation discusses Web Architecture.
+Status: Refinement
 Started: 
-EditDate: 
-Relates:
+EditDate: 2024-03-07
+Relates: 
+Peer Reviewed: "0"
 ---
 -   Client–Server 
     

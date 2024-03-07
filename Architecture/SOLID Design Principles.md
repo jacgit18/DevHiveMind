@@ -8,10 +8,12 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Status: 
+Comments: This documentation discusses SOLID Design Principles
+Status: Refinement
 Started: 
-EditDate: 
-Relates:
+EditDate: 2024-03-07
+Relates: 
+Peer Reviewed: "0"
 ---
 ![[DataBuisness.png]]
 Find out were to put 
