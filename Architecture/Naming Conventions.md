@@ -1,11 +1,17 @@
 ---
-tags: 
+tags:
+  - principles
+  - MicroCodebaseDecision
+  - bestPractices
 author:
   - jacgit18
+  - chatgpt
+Comments: This documentation discusses
 Status: Refinement
 Started: 
 EditDate: 
-Relates:
+Relates: 
+Peer Reviewed: "0"
 ---
 ![[Camel Case.png]]
 Be cognizant of naming convention  

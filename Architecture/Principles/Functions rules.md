@@ -85,7 +85,7 @@ public class OutputArgumentsExample {
 
 Output arguments are harder to understand than input arguments. When we read a function, we are used to the idea of information going  in to the function through arguments and  out  through the return value. We don’t usually expect information to be going out through the arguments. So output arguments often cause us to do a double-take.
 
-[[monadic functions]]
+[[Monadic functions]]
 
 
 ## Argument Objects
