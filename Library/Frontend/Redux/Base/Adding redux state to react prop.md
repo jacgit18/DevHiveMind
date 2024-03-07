@@ -11,11 +11,13 @@ tags:
   - stateStore
 author:
   - jacgit18
+  - chatgpt
 Comments: This documentation is a code snippet showing how add redux state to react props.
-Status: Done
+Status: Final
 Started: 
 EditDate: 2024-02-07
 Relates: "[[Props]]"
+Peer Reviewed: "1"
 ---
 ```jsx
 const logger = createLogger();

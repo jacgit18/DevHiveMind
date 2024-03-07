@@ -6,11 +6,13 @@ tags:
   - react
 author:
   - jacgit18
+  - chatgpt
 Comments: This documentation discusses componentWillUnmount() lifecycle method.
 Status: Done
 Started: 
 EditDate: 2024-02-07
 Relates: "[[Lifecycle methods]]"
+Peer Reviewed: "0"
 ---
 The `componentWillUnmount()` lifecycle method is called immediately before a React component is unmounted and destroyed. During this phase, you can perform cleanup operations, such as canceling network requests, removing event handlers, unsubscribing from any subscriptions, and invalidating timers created with `setTimeout` or `setInterval`. Importantly, it's crucial to note that you should never set state within the `componentWillUnmount()` method, as the component is about to be unmounted and any state changes would be ineffective.
 

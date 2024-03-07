@@ -9,11 +9,13 @@ tags:
   - typescript
 author:
   - jacgit18
+  - chatgpt
 Comments: This documentation is a code snippet showing how mapStateToProps and mapDispatchToProps are used.
-Status: Done
+Status: Final
 Started: 
 EditDate: 2024-02-07
-Relates:
+Relates: 
+Peer Reviewed: "1"
 ---
 ```jsx
 // mapStateToProps & mapDispatchToProps has second param called ownProps which is rarely used but is used with conditional rendering

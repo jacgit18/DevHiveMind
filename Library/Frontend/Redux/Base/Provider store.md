@@ -8,11 +8,13 @@ tags:
   - stateStore
 author:
   - jacgit18
+  - chatgpt
 Comments: This documentation discusses providers in Redux.
 Status: Done
 Started: 
 EditDate: 2024-02-14
-Relates:
+Relates: 
+Peer Reviewed: "0"
 ---
 The `Provider` in Redux facilitates access to the state by wrapping the app, and it accomplishes this by receiving the Redux store as a prop. Connecting Redux to React is achieved through the `Provider`, streamlining state management.
 

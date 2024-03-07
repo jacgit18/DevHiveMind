@@ -9,7 +9,7 @@ author:
   - jacgit18
   - chatgpt
 Comments: This documentation discusses Redux stores.
-Status: Done
+Status: Final
 Started: 
 EditDate: 2024-02-08
 Relates: 

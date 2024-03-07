@@ -10,11 +10,13 @@ tags:
   - typescript
 author:
   - jacgit18
+  - chatgpt
 Comments: This documentation is a code snippet showing connect higher order component.
-Status: Done
+Status: Final
 Started: 
 EditDate: 2024-02-07
 Relates: "[[Props#Higher Order Components (HOC) and Render Prop Pattern |HOC]]"
+Peer Reviewed: "1"
 ---
 ```jsx
 import React, { Component } from 'react';

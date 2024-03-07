@@ -7,11 +7,13 @@ tags:
   - hooks
 author:
   - jacgit18
+  - chatgpt
 Comments: This documentation discusses useReducer hook.
 Status: Done
 Started: 
 EditDate: 2024-02-07
-Relates:
+Relates: 
+Peer Reviewed: "0"
 ---
 ## `useReducer` Hook in React for State Management
 

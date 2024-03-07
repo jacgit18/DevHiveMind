@@ -6,11 +6,13 @@ tags:
   - react
 author:
   - jacgit18
+  - chatgpt
 Comments: This documentation discusses Modal & Portals.
 Status: Done
 Started: 
 EditDate: 2024-02-06
-Relates:
+Relates: 
+Peer Reviewed: "0"
 ---
 ![[React Portal Modal.png]]
 

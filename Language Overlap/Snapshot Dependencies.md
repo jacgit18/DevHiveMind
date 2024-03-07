@@ -11,7 +11,8 @@ Comments: This documentation discusses what snapshot dependencies and some best 
 Status: Done
 Started: 2024-03-03
 EditDate: 
-Relates:
+Relates: 
+Peer Reviewed: "0"
 ---
 In the context of Java and dependency management systems like Maven and Gradle, a "snapshot dependency" refers to a dependency on a version of a library or module that is currently in active development. The term "snapshot" is used because it represents a dynamic and evolving state of the codebase, often associated with the latest changes committed by developers.
 

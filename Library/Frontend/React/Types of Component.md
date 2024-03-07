@@ -7,11 +7,13 @@ tags:
   - bestPractices
 author:
   - jacgit18
+  - chatgpt
 Comments: This documentation discusses type of components.
 Status: Done
 Started: 
 EditDate: 2024-02-07
-Relates:
+Relates: 
+Peer Reviewed: "0"
 ---
 ### Components in React:
 

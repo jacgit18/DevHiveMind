@@ -11,7 +11,8 @@ Comments: This documentation discusses what react and what problem it addressed.
 Status: Done
 Started: 
 EditDate: 2024-02-06
-Relates:
+Relates: 
+Peer Reviewed: "0"
 ---
 ![[React Icon.gif]]
 React, a JavaScript library by Facebook, empowers developers to build reusable UI components and manage application state efficiently. Its declarative approach simplifies creating interactive web applications, updating the UI responsively to data changes.

@@ -9,7 +9,7 @@ author:
   - jacgit18
   - chatgpt
 Comments: This documentation is a code snippet showing how to create a store with root reducers and applying middleware.
-Status: Done
+Status: Final
 Started: 
 EditDate: 2024-02-08
 Relates: 

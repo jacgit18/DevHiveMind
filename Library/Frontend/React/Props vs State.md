@@ -6,11 +6,13 @@ tags:
   - react
 author:
   - jacgit18
+  - chatgpt
 Comments: This documentation discusses the intricacies of using props and states together.
 Status: Done
 Started: 
 EditDate: 2024-02-06
 Relates: "[[Props]]"
+Peer Reviewed: "0"
 ---
 Before distinguishing between props and state, let's identify their commonalities:
 

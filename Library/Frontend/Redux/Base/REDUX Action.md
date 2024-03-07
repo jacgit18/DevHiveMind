@@ -10,11 +10,12 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses
-Status: Done
+Comments: This documentation discusses redux action.
+Status: Final
 Started: 
 EditDate: 2024-02-07
-Relates:
+Relates: 
+Peer Reviewed: "1"
 ---
 ```javascript
 const DO_ACTION = 'DO_ACTION';

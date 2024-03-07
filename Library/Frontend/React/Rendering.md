@@ -6,11 +6,13 @@ tags:
   - react
 author:
   - jacgit18
+  - chatgpt
 Comments: This documentation discusses rendering in react.
 Status: Done
 Started: 
 EditDate: 2024-02-07
 Relates: "[[Lifecycle methods]]"
+Peer Reviewed: "0"
 ---
 ## React Rendering Process
 
