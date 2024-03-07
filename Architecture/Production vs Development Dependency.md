@@ -1,11 +1,17 @@
 ---
-tags: 
+tags:
+  - environment
+  - systemDesign
+  - dependencies
 author:
   - jacgit18
-Status: 
+  - chatgpt
+Comments: This documentation discusses the difference in dependencies by environment.
+Status: Done
 Started: 
-EditDate: 
-Relates:
+EditDate: 2024-03-07
+Relates: 
+Peer Reviewed: "0"
 ---
 Deciding what should go into production versus being a development dependency in your project involves considerations related to efficiency, security, and best practices. Here's how you should think about what to put where:  
   

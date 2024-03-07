@@ -1,12 +1,16 @@
 ---
-tags: 
+tags:
+  - serverLess
+  - cloud
 author:
   - jacgit18
-Comments: This documentation discusses
-Status: Capture
+  - chatgpt
+Comments: This documentation discusses serverless architecture.
+Status: Refinement
 Started: 
-EditDate: 
-Relates:
+EditDate: 2024-03-07
+Relates: 
+Peer Reviewed: "0"
 ---
 ![[Serverless.gif]]
 In serverless architecture, you typically use functions as a service ([[Benefits of cloud#FAAS |FAAS]]). Here's a simple example using AWS Lambda and JavaScript:  

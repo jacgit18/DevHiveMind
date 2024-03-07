@@ -2,6 +2,7 @@
 tags: 
 author:
   - jacgit18
+Comments: This documentation discusses Software Architecture vs System Design
 Status: Refinement
 Started: 2023-11-26
 EditDate: 

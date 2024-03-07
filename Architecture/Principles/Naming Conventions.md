@@ -6,10 +6,10 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses
+Comments: This documentation discusses proper naming conventions.
 Status: Refinement
 Started: 
-EditDate: 
+EditDate: 2024-03-07
 Relates: 
 Peer Reviewed: "0"
 ---
