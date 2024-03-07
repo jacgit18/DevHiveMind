@@ -2,13 +2,16 @@
 tags:
   - testing
   - data
+  - mockData
 author:
   - jacgit18
+  - chatgpt
 Comments: This documentation discusses Data-Driven Testing.
-Status: Capture
+Status: Done
 Started: 
 EditDate: 2024-02-02
-Relates:
+Relates: 
+Peer Reviewed: "0"
 ---
 Data-Driven Testing is not necessarily about mock data, although mock data can be used as part of a data-driven testing strategy. Data-Driven Testing is a testing approach that focuses on running the same test script or test case with multiple sets of data to validate how the system or application behaves under various input conditions. 
 
