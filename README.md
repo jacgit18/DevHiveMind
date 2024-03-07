@@ -2,11 +2,6 @@
 <img src="_NoteAssets/_Main/Brain-Patterns-Illustration.gif" alt="Brain Patterns Illustration">
 
 <div style="text-align:center;"><h1>Dev Journey Knowledge Repository </h1></div>
-
-##### Peer Review Branch Coming Soon
-
-##### Public Contribution Branch Coming Soon
-
 ## Overview
 This Software Development Knowledge Repository is a centralized and organized collection of information on various software development topics. It's designed to be a valuable resource for developers, both experienced and beginners, as well as anyone interested in the field.
 
@@ -30,11 +25,22 @@ I encourage contributions from the community. Here are some best practices for m
 
 - **Adding Authors**: Include yourself as an author or attribute authors to the respective notes to give credit for contributions. It's important to acknowledge and appreciate the work of contributors.
 
-- **Status and Categorization**: Use note properties or tags to categorize notes by status (e.g., refinement, done, perpetual, or create status that make sense) and topic. This helps users quickly find relevant content.
 
 - **Sharing Personal Experience**: I also believe in the value of personal experiences. Contributors are encouraged to share their real-world experiences in companies and teams. These stories can provide valuable insights, lessons learned, and tips for navigating the industry.
 
 - **Draft Pull Requests (PRs)**: If you decide to fork an initial project for your repository, consider using draft PRs for contributions. This allows contributors to collaborate on changes before merging them. It's a good practice for maintaining transparency and ensuring that everyone is on the same page.
+
+### Peer Review Guideline
+1. **Final**: These notes represent the pinnacle of quality within your system. They are detailed, grammatically sound, and structurally solid. Each one is enriched with relevant backlinks and tags, ensuring seamless integration into the larger knowledge vault. While they are considered complete, there is always a possibility for minor improvements, such as updating tags to reflect evolving topics or expanding the vault. Crucially, notes at this stage have either undergone peer review or are marked for it, confirming their accuracy and thoroughness. Notes with a "peer reviewed" property value of 1 have completed this process.
+
+2. **Done**: Notes classified as Done are robust in content and structure, yet still have potential for greater integration within the vault. This could involve adding additional backlinks to establish stronger connections with related notes or incorporating new tags to enhance findability and categorization. Although these notes do not require significant modifications to their core content, the process of enriching their network within the vault can increase their overall utility. Like Final notes, those in the Done category should also undergo peer review, marked by a "peer reviewed" property value of 1 once reviewed.
+
+3. **Refinement**: This category is for notes in the midst of active development. They may be in the process of being restructured, having content added, or both. The emphasis for these notes is on enhancing their integration within the vault through the addition of backlinks, broadening their tagging for improved navigation and organization, and evaluating their potential to be split into separate notes or combined with existing ones. Peer review at this stage is crucial to ensure that these notes evolve in line with the vault's standards for quality and coherence. Notes are marked with a "peer reviewed" property value of 0 initially, indicating pending review.
+
+4. **Draft**: Representing the initial creative burst, Draft status notes are raw and foundational. They provide a basic structure for ideas and information that will be further developed and refined. At this stage, notes are not typically subjected to peer review, as they are still too nascent in their development. These notes have a "peer reviewed" property value of 0, reflecting their early stage in the note development process.
+
+This systematic approach ensures a dynamic and structured progression for each note, from conception through to finalization, enhancing the overall richness and connectivity of the knowledge vault.
+
 
 ## Benefits
 
