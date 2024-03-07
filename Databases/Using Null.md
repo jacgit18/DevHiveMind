@@ -4,11 +4,13 @@ tags:
   - schema
 author:
   - jacgit18
+  - chatgpt
 Comments: This documentation discusses Null in the the context of DBMS.
-Status: Capture
+Status: Done
 Started: 2024-01-11
 EditDate: 
-Relates:
+Relates: 
+Peer Reviewed: "0"
 ---
 In SQL, it's crucial to explicitly state whether a column allows NULL values meaning that the value is optional vs not null meaning it is required, rather than relying on defaults. Assuming null-ability based on defaults can lead to confusion, especially when rules governing the omission of this option for a given datatype are complex and not easily explainable. It's essential to avoid assumptions that your team or successors might not comprehend.
 

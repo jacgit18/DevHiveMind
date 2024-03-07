@@ -2,14 +2,16 @@
 tags:
   - projectIdeas
   - protocol
+  - web
 author:
   - jacgit18
   - chatgpt
 Comments: This documentation discusses potential project use case for WebSockets.
-Status: Capture
+Status: Done
 Started: 2023-11-22
-EditDate: 
-Relates:
+EditDate: 2024-03-06
+Relates: 
+Peer Reviewed: "0"
 ---
 A WebSocket chat client is a web application that uses WebSocket technology to establish a full-duplex communication channel between a web browser and a server. Unlike traditional HTTP connections, which are request-response based and stateless, WebSocket connections remain open, enabling real-time bidirectional communication. A chat client built with WebSockets allows users to exchange messages in near real-time without the need to repeatedly poll the server for updates.  
   

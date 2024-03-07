@@ -7,11 +7,13 @@ tags:
   - example
 author:
   - jacgit18
+  - chatgpt
 Comments: This documentation discusses performance testing using jest and benchmark library
 Status: Done
 Started: 2023-10-30
 EditDate: 2024-02-02
 Relates: "[[Testing in Jest]]"
+Peer Reviewed: "0"
 ---
 1. Install Necessary Dependencies:
    Make sure you have TypeScript and the benchmarking library installed. You can install them with npm or yarn:

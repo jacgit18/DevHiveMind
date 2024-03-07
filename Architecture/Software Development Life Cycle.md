@@ -1,11 +1,16 @@
 ---
-tags: 
+tags:
+  - devops
+  - scalability
 author:
   - jacgit18
-Status: 
+  - chatgpt
+Comments: This documentation discusses Software Development Life Cycle.
+Status: Refinement
 Started: 
-EditDate: 
-Relates:
+EditDate: 2024-03-07
+Relates: 
+Peer Reviewed: "0"
 ---
 ![[Software Life Cycle.gif]]
 

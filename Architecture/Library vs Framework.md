@@ -1,36 +1,38 @@
 ---
-tags: 
+tags:
+  - SEO
+  - library
+  - Framework
 author:
   - jacgit18
-Status: Refinement
+  - chatgpt
+Comments: This documentation discusses the difference between libraries and framework.
+Status: Done
 Started: 
-EditDate: 
-Relates:
+EditDate: 2024-03-06
+Relates: 
+Peer Reviewed: "0"
 ---
-Developers often use the terms “library” and “framework” interchangeably. But there is a difference. 
+Developers frequently use "library" and "framework" interchangeably, but there's a crucial difference between them.
 
-Both frameworks and libraries are code written by someone else that is used to help solve common problems. 
+**Library Analogy - Ikea Furniture:**
+- A library is comparable to Ikea; you have an existing home but need assistance with furniture.
+- Libraries allow you to pick and choose components, maintaining control over your application.
 
-A library is like going to Ikea. You already have a home, but you need a bit of help with furniture. You don’t feel like making your own table from scratch. Ikea allows you to pick and choose different things to go in your home. You are in control. 
+**Framework Analogy - Model Home Construction:**
+- A framework is like building a model home with blueprints and limited design choices.
+- The framework and its blueprint are in control, guiding your input at specific points.
 
-A framework, on the other hand, is like building a model home. You have a set of blueprints and a few limited choices when it comes to architecture and design. Ultimately, the contractor and blueprint are in control. And they will let you know when and where you can provide your input. 
+**Inversion of Control (IoC):**
+- The technical distinction lies in IoC, where a library lets you control the application flow, while a framework takes charge of it.
 
-framework use SSR- sever side rendering which support SEO 
+**Framework Benefits - SSR and SEO:**
+- Frameworks often incorporate Server-Side Rendering (SSR), supporting Search Engine Optimization (SEO).
 
-The technical difference between a framework and library lies in a term called inversion of control. 
+**Example: jQuery (Library) vs. Vue.js (Framework):**
+- Using jQuery (library), you control the flow and call the library as needed.
+- With Vue.js (framework), the framework manages the flow, calling your code at specified points.
 
-When you use a library, you are in charge of the flow of the application. You are choosing when and where to call the library. When you use a framework, the framework is in charge of the flow. It provides some places for you to plug in your code, but it calls the code you plugged in as needed. 
-
-Let’s look at an example using jQuery (a library) and Vue.js (a framework). 
-
-Imagine we want to display an error message when an error is present. In our example, we will click a button, and pretend an error occurs.
-
-
-
-A library is more lightweight and can be used in any part of the code base  
-
-A framework is more heavy and involved and focuses on all of the things like front end and back end workflow stuff where react is more specific to just the front end
-
-
-
-
+**Lightweight Library vs. Heavy Framework:**
+- A library, like jQuery, is lightweight and adaptable, applicable throughout the code base.
+- A framework, such as React, is more substantial, addressing both frontend and backend workflows. React is specifically tailored to frontend development.

@@ -3,11 +3,13 @@ tags:
   - web
 author:
   - jacgit18
+  - chatgpt
 Comments: This documentation discusses Hypermedia.
 Status: Done
 Started: 
 EditDate: 2024-01-30
-Relates:
+Relates: 
+Peer Reviewed: "0"
 ---
 ![[Hypertext vs Hypermedia.png]]
 

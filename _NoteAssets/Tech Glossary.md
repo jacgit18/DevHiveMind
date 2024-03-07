@@ -35,6 +35,8 @@ Relates:
 
 - **Duck typing**: in computer programming is an application of the duck test—"If it walks like a duck and it quacks like a duck, then it must be a duck"—to determine whether an object can be used for a particular purpose. With normal typing, suitability is determined by an object's type. In duck typing, an object's suitability is determined by the presence of certain methods and properties, rather than the type of the object itself.
 
+- **Rubber ducky**: updating the firmware of a flash drive to register as a keyboard and make it register keystrokes
+
 - **jQuery**: A JavaScript library for implementing website functionalities and effects.
 
 - **Logical Call Stack**: A conceptual representation in asynchronous programming for tracking execution flow.
@@ -51,6 +53,8 @@ Relates:
 - **Verbose**: Using more words than necessary to express something.
 
 - **Convertor:** A utility class responsible for converting data between plain, often raw, format and structured business objects. It plays a role in transforming information from a general form to one that aligns with the needs of specific applications or systems.
+
+- **Spaghetti code**: a whole bunch of functions and variables everywhere decentralized basically functions and variables all over the place not very organized well
 
 - **Serializer:** A utility class focused on converting business objects into a format suitable for storage or transmission, commonly transforming them into a serialized form like JSON or XML. This process is crucial for data persistence or communication between different software components.
 

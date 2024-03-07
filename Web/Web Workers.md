@@ -6,11 +6,13 @@ tags:
   - multiThreading
 author:
   - jacgit18
+  - chatgpt
 Comments: This documentation discusses Web Workers which relates to multi threading but in the Javascript ecosystem.
-Status: Capture
+Status: Done
 Started: 2023-11-23
-EditDate: 2024-01-30
-Relates:
+EditDate: 2024-02-06
+Relates: 
+Peer Reviewed: "0"
 ---
 You can leverage the `Worker` API to execute functions concurrently in pure JavaScript, eliminating the need for HTML. Here's an illustrative example: 
 

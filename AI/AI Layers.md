@@ -7,7 +7,7 @@ author:
   - jacgit18
   - chatgpt
 Comments: This documentation discusses layers of AI.
-Status: Capture
+Status: Refinement
 Started: 
 EditDate: 2024-02-20
 Relates: 

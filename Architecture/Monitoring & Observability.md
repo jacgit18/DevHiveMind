@@ -1,12 +1,16 @@
 ---
-tags: 
+tags:
+  - monitoring
+  - traceability
 author:
   - jacgit18
-Comments: This documentation discusses
-Status: Capture
+  - chatgpt
+Comments: This documentation discusses Monitoring & Observability
+Status: Refinement
 Started: 
-EditDate: 
-Relates: "[[Distributed tracking and monitoring]]"
+EditDate: 2024-03-07
+Relates: "[[Distributed tracking & monitoring]]"
+Peer Reviewed: "0"
 ---
 ![[logging metrics.gif]]
 

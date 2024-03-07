@@ -6,11 +6,13 @@ tags:
   - data
 author:
   - jacgit18
+  - chatgpt
 Comments: This documentation discusses black box testing tools and techniques.
-Status: Capture
+Status: Done
 Started: 
 EditDate: 2024-02-02
 Relates: "[[Type of Testing Techniques]]"
+Peer Reviewed: "0"
 ---
 ## Ranorex: Black Box Security Testing Tools
 

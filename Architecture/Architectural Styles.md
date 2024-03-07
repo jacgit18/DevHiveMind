@@ -1,11 +1,17 @@
 ---
-tags: 
+tags:
+  - monolithic
+  - microservices
+  - REST
+  - SOA
+  - eventDriven
 author:
   - jacgit18
-Comments: This documentation discusses
-Status: Capture
+  - chatgpt
+Comments: This documentation discusses architectural styles.
+Status: Done
 Started: 
-EditDate: 
+EditDate: 2024-03-06
 Relates: 
 Peer Reviewed: "0"
 ---

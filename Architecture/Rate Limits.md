@@ -1,6 +1,9 @@
 ---
 tags:
   - API
+  - HTTP
+  - business
+  - techDebt
 author:
   - jacgit18
   - chatgpt
@@ -8,7 +11,8 @@ Comments: This documentation discusses rate limits.
 Status: Done
 Started: 
 EditDate: 2024-03-03
-Relates:
+Relates: 
+Peer Reviewed: "0"
 ---
 ### **Understanding Business-Level Rate Limits (Quotas)**
 

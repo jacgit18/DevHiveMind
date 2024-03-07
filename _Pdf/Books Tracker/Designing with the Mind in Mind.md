@@ -4,6 +4,7 @@ tags:
 title: '"Designing with the Mind in Mind"'
 author:
   - "[Jeff Johnson]"
+Comments: This documentation discusses
 category: Computers
 publisher: Elsevier
 publishdate: 2013-12-17
@@ -13,7 +14,6 @@ cover: http://books.google.com/books/content?id=5K07AgAAQBAJ&printsec=frontcover
 Read: 
 Started: 
 DateFinished: 
-Comments: 
 Relates: 
 rating: ⭐⭐⭐⭐
 pdf: "[[Designing with the Mind in Mind Simple.pdf]]"

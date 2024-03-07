@@ -5,11 +5,13 @@ tags:
   - example
 author:
   - jacgit18
+  - chatgpt
 Comments: This documentation discusses different testing paradigms using jest library.
 Status: Done
 Started: 2023-11-06
 EditDate: 2024-02-02
-Relates:
+Relates: 
+Peer Reviewed: "0"
 ---
 Iteration can be useful in unit tests when you need to test a piece of code against multiple inputs or when you want to verify that a function behaves correctly across various scenarios. 
   
@@ -32,7 +34,7 @@ expect(a + b).toBe(expected);
 });  
 ```  
   
-2. **[[Test Cases#Boundary Case |Boundary Testing]]**:  
+2. **[[Test Cases Guideline & Types#Boundary Case|Boundary Testing]]**:  
   
 Testing boundary conditions ensures correct behavior near limits. Boundary testing can be a type of unit testing, but it can also extend to integration testing. It involves testing the behavior of the code at boundary conditions, ensuring it handles edge cases properly. The focus is still on the code's behavior in isolation.
   
@@ -46,7 +48,7 @@ expect(Math.sqrt(1)).toBe(1);
 });  
 ```  
   
-3. **[[Test Cases#Edge Case |Edge Cases]]**:  
+3. **[[Test Cases Guideline & Types#Edge Case|Edge Cases]]**:  
   
 You want to test edge cases and corner cases to ensure that the code handles extreme or uncommon scenarios properly.  Similar to boundary testing, testing edge cases can be part of unit testing, especially when you're examining how the code behaves in specific extreme scenarios.
 

@@ -2,6 +2,7 @@
 tags:
   - linux
   - OS
+  - fileType
 author:
   - jacgit18
   - chatgpt
@@ -16,7 +17,7 @@ Peer Reviewed: "0"
 - Regular files
 - Directories
 - Symbolic (soft) links/hard links
-- Pipe
+- [[Linux Pipe]]
 - Block/character
 - Socket
 

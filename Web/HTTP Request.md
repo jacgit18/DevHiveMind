@@ -5,11 +5,13 @@ tags:
   - protocol
 author:
   - jacgit18
+  - chatgpt
 Comments: This documentation discusses network request and request structure.
 Status: Refinement
 Started: 
 EditDate: 2024-01-30
-Relates:
+Relates: 
+Peer Reviewed: "0"
 ---
 ![[Http Request Method.gif]]
 

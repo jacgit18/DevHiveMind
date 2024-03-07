@@ -1,36 +1,41 @@
 ---
-tags: 
+tags:
+  - databases
+  - data
+  - coupling
+  - ACID
+  - distributedSystem
 author:
   - jacgit18
-Status: 
+  - chatgpt
+Comments: This documentation discusses SAGA.
+Status: Refinement
 Started: 
-EditDate: 
-Relates:
+EditDate: 2024-03-07
+Relates: 
+Peer Reviewed: "0"
 ---
-SAGA is one of the best solutions to keep consistency with data in distributed architecture without having the ACID principles. SAGA is responsible for committing multiple commentary transactions by giving rollback opportunities.
 
-  
+SAGA emerges as a robust solution for maintaining data consistency in distributed architectures without strictly adhering to ACID principles. Operating by orchestrating multiple compensatory transactions, SAGA introduces rollback opportunities to ensure consistent and reliable outcomes.
 
-There are two ways to achieve the saga's
+**Two Approaches to Implementing SAGA:**
 
-  
+1. **Choreography:**
+   - In the choreography saga, there is no centralized orchestration. Each service independently executes its transaction and publishes events.
+   - Other services respond to these events, carrying out their respective tasks, with the option to publish additional events based on the scenario.
 
-1. Choreography
+2. **Orchestration:**
+   - In the orchestration saga, each participating service executes its transactions and publishes events.
+   - Other services respond to these events, completing their tasks in a coordinated manner.
 
-2. Orchestration.
+**Advantages of SAGA:**
 
-In this choreography saga, there is no central orchestration. Each service in the Saga carries out its transaction and publishes events. The other services respond to those occurrences and carry out their tasks. In addition, depending on the scenario, they may or may not publish additional events.
+1. **Consistency Across Multiple Services:**
+   - SAGA effectively maintains data consistency across multiple services without imposing tight coupling. This flexibility is instrumental in distributed architectures.
 
-In the Orchestration saga, each service participating in the saga performs their transactions and publish events. The other services respond to those events and complete their tasks.
+**Disadvantages of SAGA:**
 
-#### Advantage of using SAGA 
+1. **Complexity in Design:**
+   - The SAGA design pattern can be perceived as complex from a programmer's perspective. The intricacies of orchestrating and compensating transactions may pose challenges, especially for developers less accustomed to working with sagas compared to traditional transactions.
 
-1. Can be used to maintain the data consistency across multiple services without tight coupling.
-
-  
-
-#### The disadvantage of using SAGA
-
-1. Complexity of the SAGA design pattern is high from the programmer's point of view and developers are not well accustomed to writing sagas as traditional transactions.
-
-
+While SAGA introduces a powerful mechanism for achieving data consistency in distributed systems, its implementation choices of choreography or orchestration bring distinct advantages and challenges, making it essential for developers to carefully consider the suitability of each approach based on specific requirements.

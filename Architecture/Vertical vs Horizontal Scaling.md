@@ -1,16 +1,17 @@
 ---
 tags:
-  - scaling
-  - revist
-  - review
   - systemDesign
+  - scalability
+  - processes
 author:
   - jacgit18
+  - chatgpt
 Comments: This documentation discusses Scaling.
 Status: Refinement
 Started: 
 EditDate: 2024-02-25
 Relates: "[[Dynamic Scaling]]"
+Peer Reviewed: "0"
 ---
 ![[System Scaling.png]]
 # Horizontal scaling  
@@ -28,7 +29,7 @@ Scaling is easier from a hardware perspective - All horizontal scaling requires 
 
 Fewer periods of downtime - Because you’re adding a machine, you don’t have to switch the old machine off while scaling. If done effectively, there may never be a need for downtime and clients are less likely to be impacted. 
 
-Increased resilience and [[Fault tolerance]] - Relying on a single node for all your data and operations puts you at a high risk of losing it all when it fails. Distributing it among several nodes saves you from losing it all.  
+Increased resilience and [[Fault Tolerance]] - Relying on a single node for all your data and operations puts you at a high risk of losing it all when it fails. Distributing it among several nodes saves you from losing it all.  
 
 Increased performance - If you are using horizontal scaling to manage your network traffic, it allows for more endpoints for connections, considering that the load will be delegated among multiple machines.    
 

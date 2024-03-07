@@ -1,11 +1,15 @@
 ---
-tags: 
+tags:
+  - codebase
 author:
   - jacgit18
-Status: 
+  - chatgpt
+Comments: This documentation discusses
+Status: Refinement
 Started: 
-EditDate: 
-Relates:
+EditDate: 2024-03-07
+Relates: 
+Peer Reviewed: "0"
 ---
 “pages/” vs. “ui/” 
 

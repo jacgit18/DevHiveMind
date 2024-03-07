@@ -1,11 +1,15 @@
 ---
-tags: 
+tags:
+  - systemDesign
 author:
   - jacgit18
-Status: Capture
+  - chatgpt
+Comments: This documentation discusses Network Infrastructure to use
+Status: Refinement
 Started: 
-EditDate: 
-Relates:
+EditDate: 2024-03-07
+Relates: 
+Peer Reviewed: "0"
 ---
 The choice between using a load balancer, a proxy server, or an API gateway depends on the specific needs and characteristics of your architecture, whether it's a monolith or a microservices-based system.  
   

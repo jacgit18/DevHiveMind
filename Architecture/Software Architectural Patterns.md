@@ -1,11 +1,15 @@
 ---
-tags: 
+tags:
+  - pattern
 author:
   - jacgit18
-Status: 
+  - chatgpt
+Comments: This documentation discusses Software Architectural Patterns
+Status: Refinement
 Started: 
-EditDate: 
-Relates:
+EditDate: 2024-03-07
+Relates: 
+Peer Reviewed: "0"
 ---
 1. Model-View-Controller (MVC): Separates the application into three interconnected components: the model (data and logic), the view (user interface), and the controller (handles user input and updates the model and view).
 2. MVVM stands for Model-View-ViewModel, and it is often used in the context of graphical user interfaces (GUIs) and applications with rich user interactions.

@@ -3,14 +3,19 @@ tags:
   - CodebaseDecision
   - MacroCodebaseDecision
   - MicroCodebaseDecision
-  - editMerge
+  - bestPractices
+  - ClassStructure
+  - principles
+  - languageOverlap
 author:
   - jacgit18
+  - chatgpt
+Comments: This documentation discusses clean code.
 Status: Refinement
 Started: 
-EditDate: 
+EditDate: 2024-03-06
 Relates: 
-Comments:
+Peer Reviewed: "0"
 ---
 Clean code is clear, understandable, and maintainable. When you write clean code, you're thinking of the others who may read and interpret it later. Help others understand the purpose of your code so they can change it eventually.
 
@@ -233,3 +238,42 @@ And then there’s feature envy. If a class seems to do very little except it us
 
 
 
+**Effective Code Reviews:**
+
+Successful code reviews necessitate clear context through comments and descriptions. Engaging in polite and constructive discussions is pivotal for thorough assessments. The role of reviewers, whether managers, tech leads, or engineers, significantly impacts the duration of the review process. Evaluation should encompass aspects like tests, comments, variable/function naming, and the automation of the build pipeline.
+
+Inquiries about deployment procedures, staging environments, and canarying shed light on team dynamics and workflow, enhancing collaboration and understanding.
+
+**Comprehensive Review Considerations:**
+
+Beyond the code structure, it's essential to inquire about authentication, authorization, and data models during code reviews. Assessing test coverage ensures robustness in code functionality.
+
+Identifying clear input and output patterns within the codebase helps maintain orientation and logic comprehension. Regularly revisiting these elements contributes to a deeper understanding of the codebase and the logic being developed.
+
+
+
+**Codebase Tips:**
+
+Deprecation in programming involves marking older code as obsolete without immediate removal to prevent regression errors. Understanding the reasons behind new features and their priorities aids comprehension. Keeping track of key information and submitting findings when reassigned to new tasks enhances communication.
+
+**Debugging:**
+
+Debugging is an art that involves reassessment and abstraction. Taking a step back, abstracting problems to a more general level, and examining perspectives contribute to effective debugging. Utilizing the `debugger` statement in code and browser consoles facilitates the process.
+
+
+**Docker**
+
+Avoid unnecessary Docker builds without recreating the package file. Incrementally adding npm packages and committing changes minimizes the risk of breaking existing functionality.
+
+
+**Tips to Understand the Codebase:**
+
+Refactoring, creating methods, and adding tests contribute to a clearer understanding of the codebase.
+
+**Use Abstraction to Your Advantage:**
+
+Abstraction, hiding implementation details, focuses on functionality rather than implementation. Interview problem-solving benefits from abstraction by breaking code into smaller, purpose-specific functions. Identifying functions that would simplify the process aids in structuring code effectively.
+
+Breaking down complex problems into manageable components during interviews showcases clarity of thinking. Writing code assuming hypothetical functions and later implementing them allows for a basic working code, clarity, and flexibility in handling minutiae.
+
+This approach promotes clarity in thinking and code organization, making it easier to tackle intricate problems.

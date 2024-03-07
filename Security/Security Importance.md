@@ -3,11 +3,13 @@ tags:
   - security
 author:
   - jacgit18
+  - chatgpt
 Comments: This documentation discusses the importance of security and originated from a medium article.
-Status: Capture
+Status: Done
 Started: 
 EditDate: 2024-03-03
-Relates:
+Relates: 
+Peer Reviewed: "0"
 ---
 Security is an important topic in the field of software engineering. There are many different aspects to security. You can secure communications with encryption or TLS. You can prevent network intrusion with firewall rules and proper network configuration. You can study common software vulnerabilities and protect against denial of service attacks. As a software engineer, it is important to be familiar with the different types of security risks and how to mitigate them.
 

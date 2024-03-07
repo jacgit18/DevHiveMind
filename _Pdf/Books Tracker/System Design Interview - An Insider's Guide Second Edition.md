@@ -4,6 +4,7 @@ tags:
 title: "\"System Design Interview - An Insider's Guide, Second Edition\""
 author:
   - "[Alex Xu]"
+Comments: This documentation discusses
 category: Interview
 publisher: 
 publishdate: 2020-12-06
@@ -13,7 +14,6 @@ cover: http://books.google.com/books/content?id=TZWmzQEACAAJ&printsec=frontcover
 Read: 
 Started: 
 DateFinished: 
-Comments: 
 Relates: 
 rating: ⭐⭐⭐⭐
 pdf: "[[System Design Interview An Insider’s Guide.pdf]]"

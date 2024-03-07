@@ -2,19 +2,26 @@
 tags:
   - MacroCodebaseDecision
   - CleanPrinciples
+  - functionStructure
+  - bestPractices
+  - FunctionTypes
+  - languageOverlap
 author:
   - jacgit18
+  - chatgpt
+Comments: This documentation discusses Functions rules.
 Status: Refinement
 Started: 
-EditDate: 
-Relates:
+EditDate: 2024-03-07
+Relates: 
+Peer Reviewed: "0"
 ---
 - Small.
 - Do one thing.
 - Use descriptive names.
 - Prefer fewer arguments.
 - Have no side effects.
-- Don't use [[flag arguments]]. Split method into several independent methods that can be called from the client without the flag.  flag would be some boolean value you use as a arg in a function and use it within your conditional logic 
+- Don't use [[Flag Arguments]]. Split method into several independent methods that can be called from the client without the flag.  flag would be some boolean value you use as a arg in a function and use it within your conditional logic 
 - So, another way to know that a function is doing more than “one thing” is if you can extract another function from it with a name that is not merely a restatement of its implementation.
 
 
@@ -78,7 +85,7 @@ public class OutputArgumentsExample {
 
 Output arguments are harder to understand than input arguments. When we read a function, we are used to the idea of information going  in to the function through arguments and  out  through the return value. We don’t usually expect information to be going out through the arguments. So output arguments often cause us to do a double-take.
 
-[[monadic functions]]
+[[Monadic functions]]
 
 
 ## Argument Objects

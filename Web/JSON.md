@@ -2,13 +2,17 @@
 tags:
   - web
   - data
+  - formats
+  - schema
 author:
   - jacgit18
+  - chatgpt
 Comments: This documentation discusses JSON.
-Status: Capture
+Status: Done
 Started: 
 EditDate: 2024-01-30
-Relates:
+Relates: 
+Peer Reviewed: "0"
 ---
 ### Working with JSON
 

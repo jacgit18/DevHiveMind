@@ -6,10 +6,11 @@ author:
   - jacgit18
   - chatgpt
 Comments: This documentation discusses difference between Backend and API.
-Status: Done
+Status: Refinement
 Started: 
 EditDate: 2024-03-03
-Relates:
+Relates: 
+Peer Reviewed: "0"
 ---
 Backend applications encompass more than just APIs. They handle data processing, database management, and overall functionality. APIs, on the other hand, facilitate communication between software components. While APIs are crucial to the backend, they represent a subset designed for external communication and integration.
 

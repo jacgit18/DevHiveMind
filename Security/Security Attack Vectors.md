@@ -1,15 +1,17 @@
 ---
 tags:
   - security
-  - vulnerabilities
+  - vulnerability
+  - OSI
 author:
   - jacgit18
   - chatgpt
 Comments: This documentation discusses attack vectors.
-Status: Capture
+Status: Done
 Started: 2024-02-04
 EditDate: 
-Relates:
+Relates: 
+Peer Reviewed: "0"
 ---
 ![[Security By OSI Layer.jpeg]]
 

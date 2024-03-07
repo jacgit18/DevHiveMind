@@ -2,10 +2,12 @@
 tags: 
 author:
   - jacgit18
-Status: Capture
+Comments: This documentation discusses
+Status: Refinement
 Started: 
 EditDate: 
-Relates:
+Relates: 
+Peer Reviewed: "0"
 ---
 ![[Design Pattern 1.webp]]
 

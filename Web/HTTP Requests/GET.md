@@ -4,11 +4,13 @@ tags:
   - HTTP
 author:
   - jacgit18
+  - chatgpt
 Comments: This documentation discusses talks about get request.
 Status: Done
 Started: 
 EditDate: 
-Relates:
+Relates: 
+Peer Reviewed: "0"
 ---
 ## **GET Method: Retrieving Resources**
 

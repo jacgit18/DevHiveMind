@@ -1,6 +1,5 @@
 ---
 tags:
-  - Develop
   - Domain
   - OOP
   - Inheritance
@@ -11,7 +10,8 @@ Comments: This documentation discusses
 Status: Refinement
 Started: 
 EditDate: 2024-03-05
-Relates:
+Relates: 
+Peer Reviewed: "0"
 ---
 # Object Oriented Program explained 
 

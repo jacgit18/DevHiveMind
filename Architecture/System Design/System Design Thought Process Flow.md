@@ -88,13 +88,14 @@ For more info read [[System Design Interview An Insider’s Guide.pdf]] and [[Sy
 - [ ] Talk about centralized systems in comparison to decentralized systems which is mostly covered here need to research more about centralized systems 
 - [ ] monolithic architecture is an example of a centralized system. In a monolithic architecture, the entire application is built as a single, indivisible unit, making it centralized and typically deployed on a single server or a closely connected set of servers.
 - [ ] Also add stuff around security, maintainability, and user experience to cover the rest of the core concepts of system design.
-- [ ] Integrate and talk [[Fault tolerance]]
+- [ ] Integrate and talk [[Fault Tolerance]]
 - [ ] look into talk about Load shedding and distributed Locking
 - [ ] maybe add stuff around circuit break pattern seems relevant to system design but you can say that about all design patterns but it seems like this one is used heavily in comparison to others patterns or one of the heavily used patterns need to verify this
 - [ ] Look into https://blog.quastor.org/p/rate-limiting-stripe
 - [ ] talk picking languages and libraries and frameworks
 - [ ] Talk [[🌐 Internet Communication Process]] in terms of what you would use
 - [ ] [[System Scalability Strategies]]
+- [ ] [[Network Infrastructure to use]]
 
 
 

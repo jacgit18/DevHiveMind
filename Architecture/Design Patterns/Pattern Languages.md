@@ -1,11 +1,15 @@
 ---
-tags: 
+tags:
+  - pattern
 author:
   - jacgit18
-Status: 
+  - chatgpt
+Comments: This documentation discusses Gang of Four patterns.
+Status: Done
 Started: 
-EditDate: 
-Relates:
+EditDate: 2024-03-06
+Relates: 
+Peer Reviewed: "0"
 ---
 Pattern languages are broader and more comprehensive collections of related patterns that provide guidance for solving complex problems in a particular domain. They collectively address design problems in a particular domain. They are often used in software design but have broader applications. 
 

@@ -4,11 +4,13 @@ tags:
   - HTTP
 author:
   - jacgit18
+  - chatgpt
 Comments: This documentation discusses HTTP Responses & Common Status Codes
 Status: Done
 Started: 2023-11-29
 EditDate: 2024-01-31
-Relates:
+Relates: 
+Peer Reviewed: "0"
 ---
 ![[Status Codes.jpg]]
 

@@ -1,12 +1,14 @@
 ---
-tags: 
+tags:
+  - jargon
 author:
   - jacgit18
-Status: 
+  - chatgpt
+Comments: This documentation discusses Software vs Firmware
+Status: Refinement
 Started: 
-EditDate: 
-Relates:
+EditDate: 2024-03-07
+Relates: 
+Peer Reviewed: "0"
 ---
-Software is designed to be updated frequently and usually can be removed or edited in a system without much consequence – other than perhaps loss of important data. ...  
-
-Firmware is a term for a piece of software that is stored on a hardware device in order to make it run properly.
+Software is intentionally crafted for regular updates, allowing for seamless modifications or removal within a system, albeit with potential risks such as data loss. In contrast, firmware refers to specialized software embedded in hardware devices, crucial for their optimal functioning. This distinction emphasizes the significance of firmware as an integral component tightly integrated with hardware for overall system stability.

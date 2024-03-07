@@ -4,6 +4,7 @@ tags:
 title: '"Beginning Node.js"'
 author:
   - "[Basarat Syed]"
+Comments: This documentation discusses
 category: Computers
 publisher: Apress
 publishdate: 2014-12-02
@@ -13,7 +14,6 @@ cover: http://books.google.com/books/content?id=AlknCgAAQBAJ&printsec=frontcover
 Read: true
 Started: 2023-01-21
 DateFinished: 
-Comments: 
 Relates: 
 rating: 
 pdf: "[[Beginning Nodejs.pdf]]"

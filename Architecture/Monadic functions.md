@@ -1,11 +1,15 @@
 ---
-tags: 
+tags:
+  - FunctionTypes
 author:
   - jacgit18
-Status: 
+  - chatgpt
+Comments: This documentation discusses Monadic functions.
+Status: Refinement
 Started: 
-EditDate: 
-Relates:
+EditDate: 2024-03-07
+Relates: 
+Peer Reviewed: "0"
 ---
 In functional programming, a monadic function is a function that operates on values wrapped inside a monadic type. Monads are a programming construct that allows for encapsulating values with additional context or behavior.
 

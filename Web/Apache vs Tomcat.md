@@ -4,11 +4,13 @@ tags:
   - Java
 author:
   - jacgit18
+  - chatgpt
 Comments: This documentation discusses the difference between Tomcat and Apache HTTP Server.
-Status: Capture
+Status: Done
 Started: 2024-02-04
-EditDate: 
-Relates:
+EditDate: 2024-03-06
+Relates: 
+Peer Reviewed: "0"
 ---
 ### Apache HTTP Server:
 - **Purpose:** Primarily serves static content.

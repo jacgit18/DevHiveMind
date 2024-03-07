@@ -1,8 +1,11 @@
 ---
-tags: 
+tags:
+  - microservices
+  - bestPractices
 author:
   - jacgit18
-Status: 
+  - chatgpt
+Status: Refinement
 Started: 
 EditDate: 
 Relates:

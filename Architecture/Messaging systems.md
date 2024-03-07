@@ -9,11 +9,13 @@ tags:
   - concurrency
 author:
   - jacgit18
+  - chatgpt
 Comments: This documentation discusses message systems.
-Status: Defining Relationships
+Status: Refinement
 Started: 2023-09-01
 EditDate: 2024-02-03
-Relates:
+Relates: 
+Peer Reviewed: "0"
 ---
 ![[Message Systems.gif]]
 Backend developers need to possess the essential skill of working with messaging systems, which are crucial tools for enabling asynchronous communication between various components of a system, including services, applications, and devices. Messaging systems facilitate the transmission of messages containing data or commands without necessitating a direct connection or synchronous responses.
@@ -30,11 +32,11 @@ The significance of messaging systems in backend development lies in their abili
 
 There are diverse types of messaging systems, including message brokers, message queues, and message buses:
 
-- **Message Brokers:** These act as intermediaries between message producers and consumers, offering routing, filtering, transforming, and aggregating capabilities to manage message flow.  [[Apache Kafka]] and RabbitMQ are popular brokers, commonly found in event-driven architectures and microservices.
+- **Message Brokers:** These act as intermediaries between message producers and consumers, offering routing, filtering, transforming, and aggregating capabilities to manage message flow. [[Apache Kafka]] and RabbitMQ are popular brokers, commonly found in event-driven architectures and microservices.
 
 - **Message Buses:** Connecting various system components through a common communication channel, they provide functionalities like broadcasting, subscribing, and publishing for event-driven communication.
 
-- **Message Queues:** Message queues are crucial components for storing messages in a first-in, first-out (FIFO) order until they are consumed. They offer a range of features such as message buffering, [[Dynamic Scaling|Load balancing]], [[Fault tolerance]], and more, to effectively manage message loads. Message queues are widely used for sending messages within or between applications and services [[Asynchronous Programming |asynchronously]]. Some popular options in this category include RabbitMQ, Apache Kafka, and Apache ActiveMQ. The typical use cases of messaging queues tend to send clients notifications. These notifications can be alerts, emails, messages, etc.
+- **Message Queues:** Message queues are crucial components for storing messages in a first-in, first-out (FIFO) order until they are consumed. They offer a range of features such as message buffering, [[Dynamic Scaling|Load balancing]], [[Fault Tolerance]], and more, to effectively manage message loads. Message queues are widely used for sending messages within or between applications and services [[Asynchronous Programming |asynchronously]]. Some popular options in this category include RabbitMQ, Apache Kafka, and Apache ActiveMQ. The typical use cases of messaging queues tend to send clients notifications. These notifications can be alerts, emails, messages, etc.
 
 Backend developers must carefully select a messaging system that aligns with their project's requirements, considering factors like latency, throughput, consistency, and availability. Additionally, they need to become proficient in utilizing messaging frameworks or libraries, which simplify the development of messaging systems.
 

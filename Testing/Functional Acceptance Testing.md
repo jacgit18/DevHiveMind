@@ -3,11 +3,13 @@ tags:
   - testing
 author:
   - jacgit18
+  - chatgpt
 Comments: This documentation discusses functional acceptance testing.
-Status: Capture
+Status: Done
 Started: 2024-02-03
 EditDate: 
-Relates:
+Relates: 
+Peer Reviewed: "0"
 ---
 Functional Acceptance Testing (FAT) is a testing phase that focuses on verifying that the software system meets the specified functional requirements as outlined in the project's requirements documentation. This type of testing is conducted to ensure that the entire application or system functions correctly as a whole, rather than just validating individual components or features.
 

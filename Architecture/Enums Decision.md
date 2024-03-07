@@ -5,10 +5,13 @@ tags:
   - MicroCodebaseDecision
 author:
   - jacgit18
-Status: 
+  - chatgpt
+Comments: This documentation discusses decision that goes into using enums.
+Status: Done
 Started: 
-EditDate: 
-Relates:
+EditDate: 2024-03-07
+Relates: 
+Peer Reviewed: "0"
 ---
 Enums are commonly used in various scenarios and system design decisions where a fixed set of constants or options need to be represented. Here are some examples:
 

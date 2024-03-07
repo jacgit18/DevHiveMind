@@ -1,11 +1,16 @@
 ---
-tags: 
+tags:
+  - web
+  - systemDesign
 author:
   - jacgit18
-Status: 
+  - chatgpt
+Comments: This documentation discusses
+Status: Refinement
 Started: 
-EditDate: 
-Relates:
+EditDate: 2024-03-07
+Relates: 
+Peer Reviewed: "0"
 ---
 In the realm of RESTful web services, controllers play a pivotal role in enhancing the separation of concerns between servers and clients, fostering network efficiency, and facilitating the atomic implementation of complex operations.
 

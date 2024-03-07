@@ -1,12 +1,15 @@
 ---
-tags: 
+tags:
+  - configuration
 author:
   - jacgit18
-Comments: This documentation discusses
-Status: Capture
+  - chatgpt
+Comments: This documentation discusses Externalized Configuration.
+Status: Done
 Started: 
-EditDate: 
-Relates:
+EditDate: 2024-03-07
+Relates: "[[III Config]]"
+Peer Reviewed: "0"
 ---
 ![[external-configuration-store-overview.png]]
 ### Externalized Configuration
