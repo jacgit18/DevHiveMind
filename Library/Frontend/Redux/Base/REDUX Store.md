@@ -7,11 +7,13 @@ tags:
   - stateStore
 author:
   - jacgit18
+  - chatgpt
 Comments: This documentation discusses Redux stores.
 Status: Done
 Started: 
 EditDate: 2024-02-08
-Relates:
+Relates: 
+Peer Reviewed: "1"
 ---
 ```jsx
 const { createStore, applyMiddleware, bindActionCreators } = redux;

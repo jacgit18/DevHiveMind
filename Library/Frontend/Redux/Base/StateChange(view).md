@@ -4,13 +4,16 @@ tags:
   - frontend
   - library
   - redux
+  - CodebaseDecision
 author:
   - jacgit18
+  - chatgpt
 Comments: This documentation discusses state change.
 Status: Done
 Started: 
 EditDate: 2024-02-08
-Relates:
+Relates: 
+Peer Reviewed: "0"
 ---
 Consider the following questions to guide your tool selection:
 

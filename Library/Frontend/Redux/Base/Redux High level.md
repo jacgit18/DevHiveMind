@@ -6,11 +6,13 @@ tags:
   - redux
 author:
   - jacgit18
+  - chatgpt
 Comments: This documentation discusses Redux.
 Status: Done
 Started: 
 EditDate: 2024-02-07
 Relates: "[[StateChange(view)]]"
+Peer Reviewed: "0"
 ---
 ![[Redux state flow.gif]]
 

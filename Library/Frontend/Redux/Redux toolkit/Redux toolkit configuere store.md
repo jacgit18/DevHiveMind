@@ -14,7 +14,7 @@ Status: Done
 Started: 
 EditDate: 2024-02-08
 Relates: 
-Peer Reviewed: "0"
+Peer Reviewed: "1"
 ---
 ```jsx
 import { configureStore, getDefaultMiddleware } from '@reduxjs/toolkit';

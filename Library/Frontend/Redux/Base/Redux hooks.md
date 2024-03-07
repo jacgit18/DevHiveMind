@@ -8,11 +8,13 @@ tags:
   - hooks
 author:
   - jacgit18
+  - chatgpt
 Comments: This documentation discusses Redux hooks
 Status: Done
 Started: 
 EditDate: 2024-02-08
 Relates: "[[Hooks]]"
+Peer Reviewed: "1"
 ---
 ```JSX
 // An alternative approach utilizing Hooks, particularly beneficial when working with Redux Toolkit in conjunction with react-redux for state management.

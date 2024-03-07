@@ -9,6 +9,7 @@ tags:
   - typescript
 author:
   - jacgit18
+  - chatgpt
 Comments: This documentation discusses
 Status: Done
 Started: 
