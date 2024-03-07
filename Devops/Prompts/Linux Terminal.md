@@ -5,8 +5,9 @@ tags:
   - ChatGpt
 author:
   - jacgit18
+  - chatgpt
 Comments: This is a ChatGpt prompt for making ChatGpt act as a Linux terminal.
-Status: Perpetual
+Status: Final
 Started: 
 EditDate: 2024-02-21
 Relates:

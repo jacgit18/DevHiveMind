@@ -9,7 +9,8 @@ Comments: This documentation discusses HTML box model layout.
 Status: Done
 Started: 
 EditDate: 2024-02-26
-Relates:
+Relates: 
+Peer Reviewed: "0"
 ---
 ![[Box model layout.png]]
 

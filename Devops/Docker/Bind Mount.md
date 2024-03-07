@@ -3,11 +3,13 @@ tags:
   - Docker
 author:
   - jacgit18
+  - chatgpt
 Comments: This documentation discusses the purpose of bind mounts.
 Status: Done
 Started: 2024-01-09
 EditDate: 
-Relates:
+Relates: 
+Peer Reviewed: "0"
 ---
 A bind mount in containerization allows you to link a directory or file from the host machine to a directory inside the container, creating a shared view of the data. To persist changes made inside a container to the host machine, you would use a bind mount.
 

@@ -5,11 +5,13 @@ tags:
   - query
 author:
   - jacgit18
+  - chatgpt
 Comments: This documentation discusses Self-joining relationships.
 Status: Done
 Started: 
 EditDate: 
-Relates:
+Relates: 
+Peer Reviewed: "0"
 ---
 A self-join is when a table is joined to itself, typically to compare or relate the data within the same table. For example, in an employee database, a self-join could be used to find pairs of employees who have the same manager. In this case, the table would be joined to itself based on the manager ID column. 
 

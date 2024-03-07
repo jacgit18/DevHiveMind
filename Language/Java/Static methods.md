@@ -2,6 +2,7 @@
 tags:
   - MicroCodebaseDecision
   - CodebaseDecision
+  - static
 author:
   - jacgit18
   - chatgpt
@@ -9,7 +10,8 @@ Comments: This documentation discusses static methods.
 Status: Refinement
 Started: 
 EditDate: 2024-03-04
-Relates:
+Relates: 
+Peer Reviewed: "0"
 ---
 
 ```java

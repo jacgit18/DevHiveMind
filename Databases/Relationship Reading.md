@@ -9,7 +9,8 @@ Comments: This documentation discusses how to read database table relationships.
 Status: Done
 Started: 
 EditDate: 
-Relates:
+Relates: 
+Peer Reviewed: "0"
 ---
 ## Simple Relational Model Representation
 

@@ -3,11 +3,13 @@ tags:
   - devops
 author:
   - jacgit18
+  - chatgpt
 Comments: This documentation discusses what Gradle is.
 Status: Done
 Started: 
 EditDate: 2024-02-22
-Relates:
+Relates: 
+Peer Reviewed: "0"
 ---
 Gradle employs a domain-specific language (DSL) rather than XML, a departure from Maven's XML-centric approach. There are tools available to convert Gradle to Maven and vice versa, translating between Gradle build files and Maven's pom XML.
 

@@ -12,6 +12,7 @@ Status: Done
 Started: 
 EditDate: 2024-03-03
 Relates: "[[Java Dependencies]]"
+Peer Reviewed: "0"
 ---
 Groovy is a dynamic, object-oriented programming language designed for the Java Virtual Machine (JVM). It shares similarities with Java but incorporates features inspired by scripting languages like Python and Ruby. It also serves as a versatile option that can be employed anywhere Java is used. Groovy facilitates combining Java modules, extending existing Java applications, and crafting entirely new applications. Groovy's main characteristics include:
 

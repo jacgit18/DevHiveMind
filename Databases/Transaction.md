@@ -4,11 +4,13 @@ tags:
   - query
 author:
   - jacgit18
+  - chatgpt
 Comments: This documentation discusses database transaction.
 Status: Done
 Started: 
 EditDate: 
-Relates:
+Relates: 
+Peer Reviewed: "0"
 ---
 ### Transactions
 - A database transaction is  a sequence of operations that is performed on a database that can also be performed as a single unit of work typically through [[Stored Procedure]] or alternative methods.

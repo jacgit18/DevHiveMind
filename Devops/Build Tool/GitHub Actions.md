@@ -5,12 +5,14 @@ tags:
   - automation
 author:
   - jacgit18
+  - chatgpt
 Comments: This documentation discusses GitHub Actions.
 Popularity: High
 Status: Done
 Started: 
 EditDate: 2024-02-22
-Relates:
+Relates: 
+Peer Reviewed: "0"
 ---
 GitHub Actions operate on the foundation of workflows, which are sequences of jobs triggered by specific events. These jobs contain explicit instructions for GitHub Actions to execute. Typically, a workflow unfolds as follows:
 

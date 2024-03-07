@@ -3,11 +3,13 @@ tags:
   - Docker
 author:
   - jacgit18
+  - chatgpt
 Comments: This documentation discusses the relationship between containers, images, and volumes.
 Status: Done
 Started: 
 EditDate: 2024-02-22
 Relates: "[[Docker Images & Containers]]"
+Peer Reviewed: "0"
 ---
 ![[Docker.gif]]
 

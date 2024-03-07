@@ -4,12 +4,14 @@ tags:
   - automation
 author:
   - jacgit18
+  - chatgpt
 Comments: This documentation discusses what GNU make is and what it does.
 Popularity: High
 Status: Done
 Started: 
 EditDate: 2024-02-22
-Relates:
+Relates: 
+Peer Reviewed: "0"
 ---
 GNU Make is a build automation tool that plays a crucial role in managing the compilation and building of software projects. Developed by the Free Software Foundation (FSF), it is part of the GNU Project and is widely used in the software development process.
 

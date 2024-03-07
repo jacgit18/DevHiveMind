@@ -10,7 +10,8 @@ Comments: This documentation discusses how to make classes Serializable.
 Status: Done
 Started: 
 EditDate: 2024-03-03
-Relates:
+Relates: 
+Peer Reviewed: "0"
 ---
 When crafting a Java class for serialization, meticulous attention to system design is crucial. Here's a refined breakdown:
 

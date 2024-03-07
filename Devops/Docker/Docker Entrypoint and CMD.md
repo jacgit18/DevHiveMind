@@ -3,11 +3,13 @@ tags:
   - Docker
 author:
   - jacgit18
+  - chatgpt
 Comments: This documentation discusses the docker Entrypoint and CMD commands.
 Status: Done
 Started: 
 EditDate: 2024-02-22
-Relates:
+Relates: 
+Peer Reviewed: "0"
 ---
 Dockerfile, the "entry point" is a configuration that specifies the default command that should be run when a Docker container is started from the image created by that Dockerfile. It's like the initial process that kicks off when the container begins. This could be a script, an executable, or a command.
 

@@ -10,6 +10,7 @@ Status: Done
 Started: 
 EditDate: 2024-03-03
 Relates: "[[Java Dependencies]]"
+Peer Reviewed: "0"
 ---
 Kotlin is a modern, statically-typed programming language that runs on the Java Virtual Machine (JVM) and can be used for a variety of applications, including Android app development. Developed by JetBrains, Kotlin is designed to be concise, expressive, and interoperable with existing Java code. It aims to address some of the shortcomings of Java while providing features that make development more efficient and enjoyable.
 

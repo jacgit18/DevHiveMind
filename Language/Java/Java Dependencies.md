@@ -10,7 +10,8 @@ Comments: This documentation discusses java dependencies.
 Status: Done
 Started: 
 EditDate: 2024-03-03
-Relates:
+Relates: 
+Peer Reviewed: "0"
 ---
 Both Groovy and Kotlin are programming languages that can be used in Gradle scripts, but Kotlin has gained more popularity in recent years for Gradle scripting due to its modern features and advantages. However, Groovy is still used in many existing projects and environments. Let's look at the pros and cons of each and when it makes sense to use one over the other:  
   

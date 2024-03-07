@@ -3,11 +3,13 @@ tags:
   - Docker
 author:
   - jacgit18
+  - chatgpt
 Comments: This documentation discusses uses cases of Docker images.
 Status: Done
 Started: 2024-02-22
 EditDate: 
-Relates:
+Relates: 
+Peer Reviewed: "0"
 ---
 ![[Docker.png]]
 

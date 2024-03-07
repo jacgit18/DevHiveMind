@@ -5,11 +5,13 @@ tags:
   - schema
 author:
   - jacgit18
+  - chatgpt
 Comments: This documentation discusses GUIDs.
 Status: Done
 Started: 2023-11-23
 EditDate: 
-Relates:
+Relates: 
+Peer Reviewed: "0"
 ---
 Using GUIDs (Globally Unique Identifiers) in programs offers several benefits:
 

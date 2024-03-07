@@ -5,11 +5,13 @@ tags:
   - systemDesign
 author:
   - jacgit18
+  - chatgpt
 Comments: This documentation discusses managing multiple microservices within docker.
 Status: Done
 Started: 2024-01-09
 EditDate: 
-Relates:
+Relates: 
+Peer Reviewed: "0"
 ---
 Containerizing microservices in JavaScript typically involves using Docker to create container images for each microservice and then possibly using a tool like Docker Compose to manage and orchestrate these containers. Below is a simplified example of how you might structure the setup:  
   
