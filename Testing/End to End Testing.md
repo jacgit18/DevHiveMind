@@ -3,11 +3,13 @@ tags:
   - testing
 author:
   - jacgit18
+  - chatgpt
 Comments: This documentation discusses End to End Testing.
-Status: Capture
+Status: Done
 Started: 2024-02-02
 EditDate: 
-Relates:
+Relates: 
+Peer Reviewed: "0"
 ---
 End to end testing takes the longest and is also known as end-to-end testing because it's testing core functionality.   
 

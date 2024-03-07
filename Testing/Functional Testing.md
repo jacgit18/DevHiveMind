@@ -3,11 +3,13 @@ tags:
   - testing
 author:
   - jacgit18
+  - chatgpt
 Comments: This documentation discusses functional testing.
-Status: Capture
+Status: Done
 Started: 2024-02-02
 EditDate: 
-Relates:
+Relates: 
+Peer Reviewed: "0"
 ---
 ![[Ways to Test.gif]]
 
