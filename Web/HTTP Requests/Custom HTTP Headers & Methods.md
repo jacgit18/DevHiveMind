@@ -4,11 +4,13 @@ tags:
   - HTTP
 author:
   - jacgit18
+  - chatgpt
 Comments: This documentation discusses Custom HTTP Headers and Methods.
 Status: Done
 Started: 
 EditDate: 
-Relates:
+Relates: 
+Peer Reviewed: "0"
 ---
 ### When and How to Use Custom HTTP Headers
 

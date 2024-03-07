@@ -4,11 +4,13 @@ tags:
   - protocol
 author:
   - jacgit18
+  - chatgpt
 Comments: This documentation discusses IP addresses.
 Status: Done
 Started: 
 EditDate: 2024-01-30
-Relates:
+Relates: 
+Peer Reviewed: "0"
 ---
 An IP (Internet Protocol) address is a numerical label assigned to each device connected to a computer network that uses the Internet Protocol for communication. It serves two primary functions: host or network interface identification and location addressing. IP addresses enable devices to send and receive data across the Internet. 
 

@@ -4,11 +4,13 @@ tags:
   - HTTP
 author:
   - jacgit18
+  - chatgpt
 Comments: This documentation discusses Cross-Origin Resource Sharing.
-Status: Capture
+Status: Done
 Started: 
 EditDate: 2024-01-31
-Relates:
+Relates: 
+Peer Reviewed: "0"
 ---
 Cross-Origin Resource Sharing (CORS) is an HTTP-header based mechanism facilitating secure resource sharing between web pages from distinct origins. It enables a server to specify which external origins (domains, schemes, or ports) are permitted to load resources, safeguarding against unauthorized access.
 

@@ -4,11 +4,13 @@ tags:
   - HTTP
 author:
   - jacgit18
+  - chatgpt
 Comments: This documentation discusses what Out request do and the difference between Put and Post request.
 Status: Done
 Started: 
 EditDate: 2024-01-29
-Relates:
+Relates: 
+Peer Reviewed: "0"
 ---
 ![[PutVPatch.gif]]
 ## **PUT(Update) Method: Complete Replacement**

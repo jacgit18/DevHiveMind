@@ -6,11 +6,13 @@ tags:
   - eventDriven
 author:
   - jacgit18
+  - chatgpt
 Comments: This documentation discusses the differences between WebHooks, WebSockets, and HTTP Streaming.
-Status: Capture
+Status: Refinement
 Started: 
 EditDate: 2024-01-30
-Relates:
+Relates: 
+Peer Reviewed: "0"
 ---
 Exploring event-driven API options reveals distinct differences among WebHooks, WebSockets, and HTTP Streaming. 
 

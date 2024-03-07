@@ -3,13 +3,16 @@ tags:
   - web
   - query
   - HTTP
+  - URL
 author:
   - jacgit18
+  - chatgpt
 Comments: This documentation discusses URI a super-set of  URL, talking about query design.
-Status: Capture
+Status: Done
 Started: 
 EditDate: 2024-01-30
 Relates: "[[Structuring URL]]"
+Peer Reviewed: "0"
 ---
 A Query String assigns values to specified Query Parameters and is typically encoded. It is initiated by the "?" within the URL and includes parameters and their corresponding values, such as "id" and "123". Parameters are occasionally employed for session IDs.
 

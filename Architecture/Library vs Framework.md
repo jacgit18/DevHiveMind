@@ -1,11 +1,17 @@
 ---
-tags: 
+tags:
+  - SEO
+  - library
+  - Framework
 author:
   - jacgit18
+  - chatgpt
+Comments: This documentation discusses
 Status: Refinement
 Started: 
-EditDate: 
-Relates:
+EditDate: 2024-03-06
+Relates: 
+Peer Reviewed: "0"
 ---
 Developers often use the terms “library” and “framework” interchangeably. But there is a difference. 
 

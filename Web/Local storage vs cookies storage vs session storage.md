@@ -2,13 +2,17 @@
 tags:
   - web
   - MicroCodebaseDecision
+  - comparison
+  - HTTP
 author:
   - jacgit18
+  - chatgpt
 Comments: This documentation discusses different types of storage around browsers.
-Status: Capture
+Status: Refinement
 Started: 
 EditDate: 2024-01-30
-Relates:
+Relates: 
+Peer Reviewed: "0"
 ---
 ### Cookie Storage
 

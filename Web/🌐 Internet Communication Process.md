@@ -6,11 +6,13 @@ tags:
   - DNS
 author:
   - jacgit18
+  - chatgpt
 Comments: This documentation discusses Internet Protocol.
 Status: Refinement
 Started: 
 EditDate: 2024-01-31
-Relates:
+Relates: 
+Peer Reviewed: "0"
 ---
 ![[Protocol.gif]]
 

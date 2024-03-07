@@ -5,13 +5,15 @@ tags:
   - protocol
   - processes
   - bestPractices
+  - URL
 author:
   - jacgit18
 Comments: This documentation discusses explains URI structure and best practices.
-Status: Capture
+Status: Refinement
 Started: 
 EditDate: 2024-01-30
-Relates:
+Relates: 
+Peer Reviewed: "0"
 ---
 ![[URL Structure.jpeg]]
 

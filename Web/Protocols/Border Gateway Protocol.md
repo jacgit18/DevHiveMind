@@ -4,11 +4,13 @@ tags:
   - protocol
 author:
   - jacgit18
+  - chatgpt
 Comments: This documentation discusses Border Gateway Protocol.
-Status: Capture
+Status: Done
 Started: 2024-01-31
 EditDate: 
-Relates:
+Relates: 
+Peer Reviewed: "0"
 ---
 Border Gateway Protocol (BGP) is a standardized exterior gateway protocol used to exchange routing and reachability information between different autonomous systems (ASes) on the Internet. An autonomous system is a collection of IP networks and routers under the control of a single organization that presents a common routing policy to the internet.
 
