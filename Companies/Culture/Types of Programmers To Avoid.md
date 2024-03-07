@@ -6,7 +6,7 @@ tags:
   - people
 author:
   - jacgit18
-Comments: This documentation discusses type of developers you can run into.
+Purpose: This documentation discusses type of developers you can run into.
 Status: Done
 Started: 
 EditDate: 2024-02-20

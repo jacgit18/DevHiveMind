@@ -5,7 +5,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses microservices in the context of 12 factor app briefly.
+Purpose: This documentation discusses microservices in the context of 12 factor app briefly.
 Status: Done
 Started: 
 EditDate: 2024-03-06

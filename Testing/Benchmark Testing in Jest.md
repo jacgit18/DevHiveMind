@@ -8,7 +8,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses performance testing using jest and benchmark library
+Purpose: This documentation discusses performance testing using jest and benchmark library
 Status: Done
 Started: 2023-10-30
 EditDate: 2024-02-02

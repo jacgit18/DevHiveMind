@@ -7,7 +7,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses pros and cons of having version controlled codebase in one or more repositories.
+Purpose: This documentation discusses pros and cons of having version controlled codebase in one or more repositories.
 Status: Done
 Started: 
 EditDate: 2024-03-06

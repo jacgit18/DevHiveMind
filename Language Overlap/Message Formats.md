@@ -5,7 +5,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses message formats and originated from a medium article.
+Purpose: This documentation discusses message formats and originated from a medium article.
 Status: Done
 Started: 2024-03-03
 EditDate: 

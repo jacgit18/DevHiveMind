@@ -4,7 +4,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses studying techniques.
+Purpose: This documentation discusses studying techniques.
 Status: Perpetual
 Started: 
 EditDate: 2024-03-05

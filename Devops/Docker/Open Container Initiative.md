@@ -4,7 +4,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses Open Container Initiative.
+Purpose: This documentation discusses Open Container Initiative.
 Status: Done
 Started: 
 EditDate: 2024-02-22

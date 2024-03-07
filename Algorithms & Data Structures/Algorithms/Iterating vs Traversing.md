@@ -5,7 +5,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses the difference between iterating and traversing.
+Purpose: This documentation discusses the difference between iterating and traversing.
 Status: Done
 Started: 2023-11-01
 EditDate: 

@@ -6,7 +6,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses casting and generics.
+Purpose: This documentation discusses casting and generics.
 Status: Done
 Started: 
 EditDate: 2024-03-04

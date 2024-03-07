@@ -7,7 +7,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses Lifecycle Methods Execution Order.
+Purpose: This documentation discusses Lifecycle Methods Execution Order.
 Status: Done
 Started: 
 EditDate: 2024-02-07

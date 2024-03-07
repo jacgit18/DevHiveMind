@@ -5,7 +5,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses responsibilities of a software development engineer in test.
+Purpose: This documentation discusses responsibilities of a software development engineer in test.
 Status: Done
 Started: 
 EditDate: 2024-02-20

@@ -9,7 +9,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses conditional logic.
+Purpose: This documentation discusses conditional logic.
 Status: Refinement
 Started: 
 EditDate: 2024-02-11

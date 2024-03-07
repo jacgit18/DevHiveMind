@@ -5,7 +5,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses what compiler is and how it woks.
+Purpose: This documentation discusses what compiler is and how it woks.
 Status: Done
 Started: 2024-02-26
 EditDate: 2024-03-04

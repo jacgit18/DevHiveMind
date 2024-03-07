@@ -4,7 +4,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: Random thought
+Purpose: Random thought
 Status: Done
 Started: 
 EditDate: 

@@ -5,7 +5,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses types of Cohesion in software engineering.
+Purpose: This documentation discusses types of Cohesion in software engineering.
 Status: Refinement
 Started: 
 EditDate: 2024-03-06

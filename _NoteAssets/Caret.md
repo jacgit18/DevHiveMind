@@ -5,7 +5,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses caret symbol.
+Purpose: This documentation discusses caret symbol.
 Status: Done
 Started: 
 EditDate: 2024-03-05

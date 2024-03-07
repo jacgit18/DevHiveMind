@@ -6,8 +6,11 @@ tags:
   - systemComponent
   - systemHealth
   - distributedSystem
+  - OrderOfOperations
 author:
   - jacgit18
+  - chatgpt
+Purpose: This documentation discusses
 Comments: Still cleaning up this documentation I might convert to a mind map or something visual like some type of decision tree.
 Status: Refinement
 Started: 2024-01-04

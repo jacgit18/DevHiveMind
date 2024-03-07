@@ -5,7 +5,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses Sets
+Purpose: This documentation discusses Sets
 Status: Refinement
 Started: 
 EditDate: 

@@ -5,7 +5,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses DTO.
+Purpose: This documentation discusses DTO.
 Status: Done
 Started: 
 EditDate: 2024-03-05

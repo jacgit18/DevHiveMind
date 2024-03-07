@@ -8,7 +8,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation is a code snippet showing how createSlice empowers you to mutate state without requiring explicit state return.
+Purpose: This documentation is a code snippet showing how createSlice empowers you to mutate state without requiring explicit state return.
 Status: Final
 Started: 
 EditDate: 2024-02-08

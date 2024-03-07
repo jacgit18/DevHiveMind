@@ -4,7 +4,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses different types of languages.
+Purpose: This documentation discusses different types of languages.
 Status: Refinement
 Started: 
 EditDate: 2024-03-06

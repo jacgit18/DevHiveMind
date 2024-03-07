@@ -5,7 +5,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses things to do to maintain relationships in your career.
+Purpose: This documentation discusses things to do to maintain relationships in your career.
 Status: Done
 Started: 
 EditDate: 2024-02-20

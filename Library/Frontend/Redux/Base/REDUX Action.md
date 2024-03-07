@@ -10,7 +10,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses redux action.
+Purpose: This documentation discusses redux action.
 Status: Final
 Started: 
 EditDate: 2024-02-07

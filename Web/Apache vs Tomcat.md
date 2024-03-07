@@ -5,7 +5,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses the difference between Tomcat and Apache HTTP Server.
+Purpose: This documentation discusses the difference between Tomcat and Apache HTTP Server.
 Status: Done
 Started: 2024-02-04
 EditDate: 2024-03-06

@@ -6,7 +6,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses Data-Driven Testing.
+Purpose: This documentation discusses Data-Driven Testing.
 Status: Done
 Started: 
 EditDate: 2024-02-02

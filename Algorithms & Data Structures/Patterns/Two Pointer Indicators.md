@@ -4,7 +4,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses Indicators of Two Pointer
+Purpose: This documentation discusses Indicators of Two Pointer
 Status: Done
 Started: 2024-02-27
 EditDate: 

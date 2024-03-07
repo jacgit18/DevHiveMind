@@ -7,7 +7,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation is a code snippet showing how reducers are being combined.
+Purpose: This documentation is a code snippet showing how reducers are being combined.
 Status: Final
 Started: 
 EditDate: 2024-02-08

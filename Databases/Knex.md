@@ -7,7 +7,7 @@ tags:
   - questions
 author:
   - jacgit18
-Comments: This documentation discusses Knex.js library.
+Purpose: This documentation discusses Knex.js library.
 Status: Refinement
 Started: 
 EditDate: 

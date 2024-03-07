@@ -5,7 +5,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses DRY principle.
+Purpose: This documentation discusses DRY principle.
 Status: Done
 Started: 2023-12-03
 EditDate: 2024-03-06

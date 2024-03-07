@@ -5,7 +5,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses streams.
+Purpose: This documentation discusses streams.
 Status: Refinement
 Started: 
 EditDate: 2024-03-04

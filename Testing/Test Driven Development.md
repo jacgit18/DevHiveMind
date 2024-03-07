@@ -5,7 +5,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses test driven development.
+Purpose: This documentation discusses test driven development.
 Status: Done
 Started: 
 EditDate: 2024-03-07

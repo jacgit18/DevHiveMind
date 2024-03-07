@@ -7,7 +7,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses Dynamic scaling.
+Purpose: This documentation discusses Dynamic scaling.
 Status: Refinement
 Started: 2024-02-25
 EditDate: 2024-03-06

@@ -6,7 +6,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses admin process around configuration change processes.
+Purpose: This documentation discusses admin process around configuration change processes.
 Status: Done
 Started: 
 EditDate: 2024-03-06

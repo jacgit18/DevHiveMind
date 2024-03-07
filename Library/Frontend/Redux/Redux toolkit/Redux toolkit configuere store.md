@@ -9,7 +9,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation is a code snippet showing how to configure store.
+Purpose: This documentation is a code snippet showing how to configure store.
 Status: Final
 Started: 
 EditDate: 2024-02-08

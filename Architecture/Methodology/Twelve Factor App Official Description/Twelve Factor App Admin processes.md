@@ -4,7 +4,7 @@ tags:
   - 12FactorApp
 author:
   - jacgit18
-Comments: This documentation is the official description of Twelve Factor App factor number twelve.
+Purpose: This documentation is the official description of Twelve Factor App factor number twelve.
 Status: Final
 Started: 
 EditDate: 2024-03-06

@@ -6,7 +6,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses different types of search.
+Purpose: This documentation discusses different types of search.
 Status: Done
 Started: 
 EditDate: 2024-02-29

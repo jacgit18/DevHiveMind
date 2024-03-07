@@ -5,7 +5,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses primitive wrappers.
+Purpose: This documentation discusses primitive wrappers.
 Status: Done
 Started: 
 EditDate: 2024-03-05

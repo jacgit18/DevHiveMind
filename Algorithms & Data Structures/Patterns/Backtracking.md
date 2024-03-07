@@ -4,7 +4,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses a leetcode problem where you create a spiral over a matrix.
+Purpose: This documentation discusses a leetcode problem where you create a spiral over a matrix.
 Status: Done
 Started: 
 EditDate: 

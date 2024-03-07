@@ -6,7 +6,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses the relationship between visual abstractions and algorithms.
+Purpose: This documentation discusses the relationship between visual abstractions and algorithms.
 Status: Done
 Started: 2023-12-05
 EditDate: 

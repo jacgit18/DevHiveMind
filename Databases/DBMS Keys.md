@@ -6,7 +6,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses different DBMS Keys.
+Purpose: This documentation discusses different DBMS Keys.
 Status: Done
 Started: 
 EditDate: 

@@ -4,7 +4,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses difference between Dockerd and Containerd.
+Purpose: This documentation discusses difference between Dockerd and Containerd.
 Status: Done
 Started: 
 EditDate: 2024-02-22

@@ -9,7 +9,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses what custom hooks are.
+Purpose: This documentation discusses what custom hooks are.
 Status: Done
 Started: 
 EditDate: 2024-02-06

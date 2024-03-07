@@ -6,7 +6,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses Content Delivery Network.
+Purpose: This documentation discusses Content Delivery Network.
 Status: Done
 Started: 
 EditDate: 2024-03-06

@@ -8,7 +8,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses state change.
+Purpose: This documentation discusses state change.
 Status: Done
 Started: 
 EditDate: 2024-02-08

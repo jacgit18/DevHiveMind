@@ -7,7 +7,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses the intricacies of using props and states together.
+Purpose: This documentation discusses the intricacies of using props and states together.
 Status: Done
 Started: 
 EditDate: 2024-02-06

@@ -6,7 +6,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses the difference in dependencies by environment.
+Purpose: This documentation discusses the difference in dependencies by environment.
 Status: Done
 Started: 
 EditDate: 2024-03-07

@@ -6,7 +6,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses the difference between libraries and framework.
+Purpose: This documentation discusses the difference between libraries and framework.
 Status: Done
 Started: 
 EditDate: 2024-03-06

@@ -8,7 +8,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses Polymorphism.
+Purpose: This documentation discusses Polymorphism.
 Status: Refinement
 Started: 
 EditDate: 2023-10-29

@@ -7,7 +7,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses URI a super-set of  URL, talking about query design.
+Purpose: This documentation discusses URI a super-set of  URL, talking about query design.
 Status: Done
 Started: 
 EditDate: 2024-01-30

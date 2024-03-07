@@ -8,7 +8,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses SOLID Design Principles
+Purpose: This documentation discusses SOLID Design Principles
 Status: Refinement
 Started: 
 EditDate: 2024-03-07

@@ -5,7 +5,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses Search Engine Optimization in terms of website visibility.
+Purpose: This documentation discusses Search Engine Optimization in terms of website visibility.
 Status: Done
 Started: 2023-10-01
 EditDate: 2024-02-02

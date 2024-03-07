@@ -5,7 +5,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses HTML box model layout.
+Purpose: This documentation discusses HTML box model layout.
 Status: Done
 Started: 
 EditDate: 2024-02-26

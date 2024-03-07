@@ -4,7 +4,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses Pre Acceptance Testing.
+Purpose: This documentation discusses Pre Acceptance Testing.
 Status: Done
 Started: 
 EditDate: 2024-02-02

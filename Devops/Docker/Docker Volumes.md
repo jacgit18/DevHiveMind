@@ -4,7 +4,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses uses cases of Docker volumes.
+Purpose: This documentation discusses uses cases of Docker volumes.
 Status: Done
 Started: 
 EditDate: 2024-02-22

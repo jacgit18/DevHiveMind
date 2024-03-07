@@ -4,7 +4,7 @@ tags:
   - questions
 author:
   - jacgit18
-Comments: This documentation discusses best practices to have a productive meeting along with what line of question to ask.
+Purpose: This documentation discusses best practices to have a productive meeting along with what line of question to ask.
 Status: Done
 Started: 
 EditDate: 

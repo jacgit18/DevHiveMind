@@ -9,7 +9,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses when to use close components vs wrapper components.
+Purpose: This documentation discusses when to use close components vs wrapper components.
 Status: Done
 Started: 
 EditDate: 2024-02-06

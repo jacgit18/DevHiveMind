@@ -13,7 +13,7 @@ cover: "{{coverUrl}}"
 Read: 
 Started: 
 DateFinished: 
-Comments: This documentation discusses
+Purpose: This documentation discusses
 Relates: 
 rating: 
 pdf: '"[Book PDF](pdfs/book_filename.pdf)"'

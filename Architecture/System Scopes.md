@@ -4,7 +4,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses System Scope
+Purpose: This documentation discusses System Scope
 Status: Done
 Started: 
 EditDate: 2024-03-07

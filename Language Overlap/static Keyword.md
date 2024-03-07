@@ -5,7 +5,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses static keyword.
+Purpose: This documentation discusses static keyword.
 Status: Done
 Started: 
 EditDate: 2024-03-04

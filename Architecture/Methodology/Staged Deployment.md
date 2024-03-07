@@ -5,7 +5,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses Staged Deployment.
+Purpose: This documentation discusses Staged Deployment.
 Status: Done
 Started: 
 EditDate: 2024-03-06

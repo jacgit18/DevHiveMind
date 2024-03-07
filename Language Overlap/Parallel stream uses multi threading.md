@@ -7,7 +7,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses an example of code using parallel streams and multithreading.
+Purpose: This documentation discusses an example of code using parallel streams and multithreading.
 Status: Refinement
 Started: 
 EditDate: 2024-03-05

@@ -7,7 +7,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses Web Workers which relates to multi threading but in the Javascript ecosystem.
+Purpose: This documentation discusses Web Workers which relates to multi threading but in the Javascript ecosystem.
 Status: Done
 Started: 2023-11-23
 EditDate: 2024-02-06

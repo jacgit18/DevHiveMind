@@ -4,7 +4,7 @@ tags:
 title: '"Beginning Node.js"'
 author:
   - "[Basarat Syed]"
-Comments: This documentation discusses
+Purpose: This documentation discusses
 category: Computers
 publisher: Apress
 publishdate: 2014-12-02

@@ -5,7 +5,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses how to read database table relationships.
+Purpose: This documentation discusses how to read database table relationships.
 Status: Done
 Started: 
 EditDate: 

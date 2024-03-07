@@ -5,7 +5,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses using certain patterns.
+Purpose: This documentation discusses using certain patterns.
 Status: Refinement
 Started: 2024-03-05
 EditDate: 

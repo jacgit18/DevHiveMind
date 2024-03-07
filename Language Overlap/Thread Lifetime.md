@@ -4,7 +4,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses thread lifetime.
+Purpose: This documentation discusses thread lifetime.
 Status: Done
 Started: 2024-02-26
 EditDate: 

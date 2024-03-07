@@ -7,7 +7,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses type narrowing and union types.
+Purpose: This documentation discusses type narrowing and union types.
 Status: Refinement
 Started: 
 EditDate: 2024-03-02

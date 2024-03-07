@@ -6,7 +6,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses type of question to ask working as a BSA.
+Purpose: This documentation discusses type of question to ask working as a BSA.
 Status: Done
 Started: 
 EditDate: 2024-02-20

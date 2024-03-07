@@ -6,7 +6,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses the decision between aiming for a high salary vs company equity.
+Purpose: This documentation discusses the decision between aiming for a high salary vs company equity.
 Status: Done
 Started: 
 EditDate: 2024-02-20

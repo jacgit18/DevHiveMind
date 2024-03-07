@@ -7,7 +7,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This list out financial terminology.
+Purpose: This list out financial terminology.
 Status: Refinement
 Started: 
 EditDate: 2024-03-04

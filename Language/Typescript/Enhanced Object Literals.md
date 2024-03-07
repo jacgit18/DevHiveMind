@@ -3,7 +3,7 @@ tags:
   - javascript
 author:
   - jacgit18
-Comments: This documentation discusses Enhanced object literals.
+Purpose: This documentation discusses Enhanced object literals.
 Status: Done
 Started: 
 EditDate: 2024-03-02

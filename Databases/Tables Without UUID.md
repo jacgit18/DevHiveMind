@@ -5,7 +5,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses database tables without UUID.
+Purpose: This documentation discusses database tables without UUID.
 Status: Refinement
 Started: 
 EditDate: 

@@ -6,7 +6,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses the order of operations for server routes.
+Purpose: This documentation discusses the order of operations for server routes.
 Status: Done
 Started: 
 EditDate: 2024-03-06

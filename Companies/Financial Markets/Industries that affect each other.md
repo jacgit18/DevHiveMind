@@ -8,7 +8,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses how different industries can effect each other.
+Purpose: This documentation discusses how different industries can effect each other.
 Status: Done
 Started: 
 EditDate: 2024-03-04

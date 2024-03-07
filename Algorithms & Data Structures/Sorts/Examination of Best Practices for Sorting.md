@@ -5,7 +5,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses best practices for sorting.
+Purpose: This documentation discusses best practices for sorting.
 Status: Done
 Started: 2023-11-01
 EditDate: 2024-02-27

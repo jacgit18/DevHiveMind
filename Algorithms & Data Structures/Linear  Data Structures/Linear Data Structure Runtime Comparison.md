@@ -5,7 +5,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses Linear Data Structure and there runtime for there action.
+Purpose: This documentation discusses Linear Data Structure and there runtime for there action.
 Status: Done
 Started: 
 EditDate: 2024-02-29

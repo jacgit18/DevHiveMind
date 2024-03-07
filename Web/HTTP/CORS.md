@@ -5,7 +5,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses Cross-Origin Resource Sharing.
+Purpose: This documentation discusses Cross-Origin Resource Sharing.
 Status: Done
 Started: 
 EditDate: 2024-01-31

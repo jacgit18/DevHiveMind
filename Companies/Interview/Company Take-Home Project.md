@@ -3,7 +3,7 @@ tags:
   - interview
 author:
   - jacgit18
-Comments: This documentation discusses things to consider for take home projects from companies.
+Purpose: This documentation discusses things to consider for take home projects from companies.
 Status: Done
 Started: 2023-12-15
 EditDate: 

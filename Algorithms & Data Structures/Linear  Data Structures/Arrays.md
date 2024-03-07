@@ -5,7 +5,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses different aspects of arrays
+Purpose: This documentation discusses different aspects of arrays
 Status: Refinement
 Started: 
 EditDate: 2024-02-29

@@ -4,7 +4,7 @@ tags:
   - JVM
 author:
   - jacgit18
-Comments: This documentation discusses java.
+Purpose: This documentation discusses java.
 Status: Done
 Started: 
 EditDate: 2024-03-03

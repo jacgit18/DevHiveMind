@@ -7,7 +7,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses Webhooks vs Polling.
+Purpose: This documentation discusses Webhooks vs Polling.
 Status: Done
 Started: 
 EditDate: 2024-03-06

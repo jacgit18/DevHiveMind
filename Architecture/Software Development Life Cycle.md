@@ -5,7 +5,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses Software Development Life Cycle.
+Purpose: This documentation discusses Software Development Life Cycle.
 Status: Refinement
 Started: 
 EditDate: 2024-03-07

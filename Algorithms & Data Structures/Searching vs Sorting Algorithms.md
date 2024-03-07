@@ -4,7 +4,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses the purpose of searching algorithm and sorting algorithm.
+Purpose: This documentation discusses the purpose of searching algorithm and sorting algorithm.
 Status: Refinement
 Started: 2024-02-19
 EditDate: 

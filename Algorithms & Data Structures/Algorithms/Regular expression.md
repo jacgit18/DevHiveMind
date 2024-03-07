@@ -7,7 +7,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses regular expressions.
+Purpose: This documentation discusses regular expressions.
 Status: Refinement
 Started: 2024-02-11
 EditDate: 

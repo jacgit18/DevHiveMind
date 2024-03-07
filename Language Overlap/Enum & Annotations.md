@@ -5,7 +5,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses uses enums and annotation.
+Purpose: This documentation discusses uses enums and annotation.
 Status: Done
 Started: 
 EditDate: 2024-03-05

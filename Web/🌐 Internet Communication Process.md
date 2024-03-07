@@ -7,7 +7,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses Internet Protocol.
+Purpose: This documentation discusses Internet Protocol.
 Status: Refinement
 Started: 
 EditDate: 2024-01-31

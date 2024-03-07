@@ -4,7 +4,7 @@ tags:
 title: '"Thinking, Fast and Slow"'
 author:
   - "[Daniel Kahneman]"
-Comments: This documentation discusses
+Purpose: This documentation discusses
 category: Psychology
 publisher: Farrar, Straus and Giroux
 publishdate: 2011-10-25

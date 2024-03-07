@@ -4,7 +4,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses Software vs Firmware
+Purpose: This documentation discusses Software vs Firmware
 Status: Refinement
 Started: 
 EditDate: 2024-03-07

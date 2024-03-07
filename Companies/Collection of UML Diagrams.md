@@ -4,7 +4,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses different UML diagrams.
+Purpose: This documentation discusses different UML diagrams.
 Status: Refinement
 Started: 
 EditDate: 

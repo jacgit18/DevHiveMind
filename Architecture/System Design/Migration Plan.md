@@ -6,7 +6,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses migration plans.
+Purpose: This documentation discusses migration plans.
 Status: Done
 Started: 
 EditDate: 2024-03-06

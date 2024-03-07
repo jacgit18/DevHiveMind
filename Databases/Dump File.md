@@ -7,7 +7,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses what a Dump File is and how to create one.
+Purpose: This documentation discusses what a Dump File is and how to create one.
 Status: Capture
 Started: 
 EditDate: 

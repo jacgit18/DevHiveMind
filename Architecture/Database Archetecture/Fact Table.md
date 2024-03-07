@@ -9,7 +9,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses fact tables.
+Purpose: This documentation discusses fact tables.
 Status: Refinement
 Started: 
 EditDate: 2024-03-06

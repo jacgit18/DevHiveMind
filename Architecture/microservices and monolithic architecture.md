@@ -6,7 +6,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses microservices and monolithic architecture.
+Purpose: This documentation discusses microservices and monolithic architecture.
 Status: Done
 Started: 
 EditDate: 2024-03-07

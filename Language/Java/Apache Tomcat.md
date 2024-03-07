@@ -6,7 +6,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses Apache Tomcat.
+Purpose: This documentation discusses Apache Tomcat.
 Status: Done
 Started: 
 EditDate: 2024-03-03

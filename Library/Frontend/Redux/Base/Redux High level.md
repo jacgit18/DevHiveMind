@@ -7,7 +7,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses Redux.
+Purpose: This documentation discusses Redux.
 Status: Done
 Started: 
 EditDate: 2024-02-07

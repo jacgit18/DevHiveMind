@@ -5,7 +5,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses class instances.
+Purpose: This documentation discusses class instances.
 Status: Refinement
 Started: 
 EditDate: 2024-03-04

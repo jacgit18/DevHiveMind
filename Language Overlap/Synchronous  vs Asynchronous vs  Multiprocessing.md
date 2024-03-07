@@ -6,7 +6,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses the difference between Synchronous, Asynchronous, and Multiprocessing.
+Purpose: This documentation discusses the difference between Synchronous, Asynchronous, and Multiprocessing.
 Status: Refinement
 Started: 
 EditDate: 2024-03-06

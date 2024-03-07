@@ -7,7 +7,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses lessons learnt from working at TD bank.
+Purpose: This documentation discusses lessons learnt from working at TD bank.
 Status: Done
 Started: 
 EditDate: 2024-02-20

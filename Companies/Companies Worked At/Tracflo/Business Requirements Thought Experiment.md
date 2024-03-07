@@ -5,7 +5,7 @@ tags:
   - example
 author:
   - jacgit18
-Comments: This documentation is a thought experiment in the context of tracflo and business requirements.
+Purpose: This documentation is a thought experiment in the context of tracflo and business requirements.
 Status: Done
 Started: 2023-12-12
 EditDate: 

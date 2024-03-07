@@ -4,7 +4,7 @@ tags:
   - MicroCodebaseDecision
 author:
   - jacgit18
-Comments: This documentation discusses how to choose loops.
+Purpose: This documentation discusses how to choose loops.
 Status: Refinement
 Started: 2024-02-19
 EditDate: 

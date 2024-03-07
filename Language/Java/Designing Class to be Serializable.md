@@ -6,7 +6,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses how to make classes Serializable.
+Purpose: This documentation discusses how to make classes Serializable.
 Status: Done
 Started: 
 EditDate: 2024-03-03

@@ -6,7 +6,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses file types on  Linux.
+Purpose: This documentation discusses file types on  Linux.
 Status: Done
 Started: 
 EditDate: 2024-03-06

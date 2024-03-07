@@ -7,7 +7,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses dimension table.
+Purpose: This documentation discusses dimension table.
 Status: Refinement
 Started: 2024-01-07
 EditDate: 2024-03-06

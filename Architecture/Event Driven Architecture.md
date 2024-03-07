@@ -11,7 +11,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses Event Driven Architecture.
+Purpose: This documentation discusses Event Driven Architecture.
 Status: Refinement
 Started: 
 EditDate: 2024-03-07

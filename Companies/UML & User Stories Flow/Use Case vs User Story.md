@@ -4,7 +4,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses the distinction between use cases and user stories.
+Purpose: This documentation discusses the distinction between use cases and user stories.
 Status: Done
 Started: 2024-01-08
 EditDate: 

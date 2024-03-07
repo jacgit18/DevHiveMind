@@ -5,7 +5,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses the difference between paradigms and patterns.
+Purpose: This documentation discusses the difference between paradigms and patterns.
 Status: Done
 Started: 
 EditDate: 2024-03-06

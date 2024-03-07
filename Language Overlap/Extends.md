@@ -5,7 +5,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses extends keyword.
+Purpose: This documentation discusses extends keyword.
 Status: Done
 Started: 
 EditDate: 2024-03-05

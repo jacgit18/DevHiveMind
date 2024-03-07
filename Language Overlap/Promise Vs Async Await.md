@@ -7,7 +7,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses promises and async functions.
+Purpose: This documentation discusses promises and async functions.
 Status: Refinement
 Started: 
 EditDate: 

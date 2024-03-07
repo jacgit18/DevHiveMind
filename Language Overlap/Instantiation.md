@@ -5,7 +5,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses Instantiation.
+Purpose: This documentation discusses Instantiation.
 Status: Capture
 Started: 
 EditDate: 2024-03-05

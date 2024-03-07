@@ -3,7 +3,7 @@ tags:
   - agile
 author:
   - jacgit18
-Comments: This documentation discusses attributes of user stories and business requirements.
+Purpose: This documentation discusses attributes of user stories and business requirements.
 Status: Done
 Started: 2023-12-12
 EditDate: 

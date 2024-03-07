@@ -4,7 +4,7 @@ tags:
   - dataStructure
 author:
   - jacgit18
-Comments: This documentation discusses Singly Linked List.
+Purpose: This documentation discusses Singly Linked List.
 Status: Refinement
 Started: 
 EditDate: 2024-02-29

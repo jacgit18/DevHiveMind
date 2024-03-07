@@ -5,7 +5,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses User Interface Testing.
+Purpose: This documentation discusses User Interface Testing.
 Status: Done
 Started: 2024-02-02
 EditDate: 

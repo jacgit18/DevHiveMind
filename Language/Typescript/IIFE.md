@@ -5,7 +5,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses Immediately Invoked Function Expression.
+Purpose: This documentation discusses Immediately Invoked Function Expression.
 Status: Done
 Started: 
 EditDate: 2024-03-05

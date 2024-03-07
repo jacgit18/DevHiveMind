@@ -5,7 +5,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses DNS.
+Purpose: This documentation discusses DNS.
 Status: Done
 Started: 
 EditDate: 2024-01-31

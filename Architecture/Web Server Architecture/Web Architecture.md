@@ -4,7 +4,7 @@ tags:
   - systemDesign
 author:
   - jacgit18
-Comments: This documentation discusses Web Architecture.
+Purpose: This documentation discusses Web Architecture.
 Status: Refinement
 Started: 
 EditDate: 2024-03-07

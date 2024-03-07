@@ -6,7 +6,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses route authentication.
+Purpose: This documentation discusses route authentication.
 Status: Done
 Started: 2024-01-01
 EditDate: 2024-03-06

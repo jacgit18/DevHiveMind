@@ -4,7 +4,7 @@ tags:
   - employment
 author:
   - jacgit18
-Comments: This documentation discusses company stability.
+Purpose: This documentation discusses company stability.
 Status: Done
 Started: 
 EditDate: 2024-02-20

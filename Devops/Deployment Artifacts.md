@@ -6,7 +6,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses what are deployment artifacts.
+Purpose: This documentation discusses what are deployment artifacts.
 Status: Done
 Started: 
 EditDate: 2024-02-22

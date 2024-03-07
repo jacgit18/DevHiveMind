@@ -5,7 +5,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses Bitwise XOR.
+Purpose: This documentation discusses Bitwise XOR.
 Status: Refinement
 Started: 
 EditDate: 2024-02-27

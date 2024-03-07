@@ -6,7 +6,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This a temp side not to determine what order to talk about different system design components in the system design interview.
+Purpose: This a temp side not to determine what order to talk about different system design components in the system design interview.
 Status: Draft
 Started: 
 EditDate: 2024-03-06

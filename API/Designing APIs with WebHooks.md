@@ -6,7 +6,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses what a web hook is and the benefits of using it for an API.
+Purpose: This documentation discusses what a web hook is and the benefits of using it for an API.
 Status: Done
 Started: 
 EditDate: 2024-03-03

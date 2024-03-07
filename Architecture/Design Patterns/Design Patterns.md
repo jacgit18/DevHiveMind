@@ -5,7 +5,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses design patterns.
+Purpose: This documentation discusses design patterns.
 Status: Distilling
 Started: 
 EditDate: 2024-03-06

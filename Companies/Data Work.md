@@ -4,7 +4,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses best practices when it comes to data and some of the types of roles.
+Purpose: This documentation discusses best practices when it comes to data and some of the types of roles.
 Status: Refinement
 Started: 
 EditDate: 2024-02-20

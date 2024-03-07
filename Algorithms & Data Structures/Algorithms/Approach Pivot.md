@@ -5,7 +5,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: The purpose of this documentation is to identify when should you change your approach around solving a coding challenge.
+Purpose: The purpose of this documentation is to identify when should you change your approach around solving a coding challenge.
 Status: Done
 Started: 
 EditDate: 2024-02-27

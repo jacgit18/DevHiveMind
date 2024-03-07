@@ -9,7 +9,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses Database Sharding.
+Purpose: This documentation discusses Database Sharding.
 Status: Done
 Started: 
 EditDate: 2024-02-17

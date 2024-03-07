@@ -8,7 +8,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses incrementing and decrementing in business logic.
+Purpose: This documentation discusses incrementing and decrementing in business logic.
 Status: Done
 Started: 
 EditDate: 2024-03-05

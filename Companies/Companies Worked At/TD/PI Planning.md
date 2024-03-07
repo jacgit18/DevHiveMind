@@ -3,7 +3,7 @@ tags:
   - agile
 author:
   - jacgit18
-Comments: This documentation discusses PI planing at TD.
+Purpose: This documentation discusses PI planing at TD.
 Status: Done
 Started: 
 EditDate: 2024-02-20

@@ -5,7 +5,7 @@ tags:
   - companies
 author:
   - jacgit18
-Comments: This documentation discusses lessons learnt from working at startup.
+Purpose: This documentation discusses lessons learnt from working at startup.
 Status: Done
 Started: 
 EditDate: 2024-02-20

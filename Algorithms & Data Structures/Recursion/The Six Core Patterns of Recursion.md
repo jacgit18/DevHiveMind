@@ -4,7 +4,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses Patterns of Recursion
+Purpose: This documentation discusses Patterns of Recursion
 Status: Refinement
 Started: 
 EditDate: 

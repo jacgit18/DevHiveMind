@@ -5,7 +5,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses Snowflake Schema.
+Purpose: This documentation discusses Snowflake Schema.
 Status: Done
 Started: 
 EditDate: 2024-03-06

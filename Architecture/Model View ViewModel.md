@@ -4,7 +4,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses MVVM pattern and how it interacts with application services.
+Purpose: This documentation discusses MVVM pattern and how it interacts with application services.
 Status: Done
 Started: 
 EditDate: 2024-02-26

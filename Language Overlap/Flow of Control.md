@@ -6,7 +6,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses flow of control for business logic.
+Purpose: This documentation discusses flow of control for business logic.
 Status: Refinement
 Started: 
 EditDate: 2024-03-05

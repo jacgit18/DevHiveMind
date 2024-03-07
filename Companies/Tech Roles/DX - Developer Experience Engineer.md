@@ -5,7 +5,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses responsibilities of a DX engineer.
+Purpose: This documentation discusses responsibilities of a DX engineer.
 Status: Done
 Started: 
 EditDate: 2024-02-20

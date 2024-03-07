@@ -5,7 +5,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses Stacks.
+Purpose: This documentation discusses Stacks.
 Status: Refinement
 Started: 
 EditDate: 

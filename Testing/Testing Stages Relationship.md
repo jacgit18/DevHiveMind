@@ -5,7 +5,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses the different testing stages and how they relate to each other.
+Purpose: This documentation discusses the different testing stages and how they relate to each other.
 Status: Done
 Started: 2024-02-03
 EditDate: 2024-02-03

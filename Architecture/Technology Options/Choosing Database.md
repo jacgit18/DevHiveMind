@@ -8,7 +8,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: Guide to selecting a database.
+Purpose: Guide to selecting a database.
 Status: Refinement
 Started: 
 EditDate: 2024-01-02

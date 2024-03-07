@@ -7,7 +7,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses what react and what problem it addressed.
+Purpose: This documentation discusses what react and what problem it addressed.
 Status: Done
 Started: 
 EditDate: 2024-02-06

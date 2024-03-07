@@ -2,8 +2,8 @@
 tags: 
 author:
   - jacgit18
-Comments: This documentation discusses
-Status: Capture
+Purpose: This documentation discusses
+Status: 
 Started: 
 EditDate: 
 Relates: 

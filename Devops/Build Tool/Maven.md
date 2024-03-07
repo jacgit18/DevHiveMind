@@ -4,7 +4,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses what Maven is and its history.
+Purpose: This documentation discusses what Maven is and its history.
 Status: Done
 Started: 
 EditDate: 2024-02-22
