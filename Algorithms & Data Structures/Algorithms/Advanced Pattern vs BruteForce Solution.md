@@ -7,7 +7,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses how a advanced algorithm pattern isn't also the most optimal approach.
+Purpose: This documentation discusses how a advanced algorithm pattern isn't also the most optimal approach.
 Status: Done
 Started: 
 EditDate: 2024-02-27

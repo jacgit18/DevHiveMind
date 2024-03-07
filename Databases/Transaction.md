@@ -5,7 +5,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses database transaction.
+Purpose: This documentation discusses database transaction.
 Status: Done
 Started: 
 EditDate: 

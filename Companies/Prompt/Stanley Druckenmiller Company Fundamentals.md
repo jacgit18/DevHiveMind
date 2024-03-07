@@ -5,7 +5,7 @@ tags:
   - AI
 author:
   - jacgit18
-Comments: This is a ChatGpt prompt for listing companies to potentially invest into.
+Purpose: This is a ChatGpt prompt for listing companies to potentially invest into.
 Status: Perpetual
 Started: 
 EditDate: 2024-02-20

@@ -8,7 +8,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses database table Normalization & Denormalization.
+Purpose: This documentation discusses database table Normalization & Denormalization.
 Status: Refinement
 Started: 
 EditDate: 

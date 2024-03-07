@@ -7,7 +7,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses black box testing tools and techniques.
+Purpose: This documentation discusses black box testing tools and techniques.
 Status: Done
 Started: 
 EditDate: 2024-02-02

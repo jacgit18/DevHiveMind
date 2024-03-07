@@ -5,7 +5,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses interfaces vs abstract classes.
+Purpose: This documentation discusses interfaces vs abstract classes.
 Status: Refinement
 Started: 
 EditDate: 2024-03-05

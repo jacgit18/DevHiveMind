@@ -4,7 +4,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses career pathway.
+Purpose: This documentation discusses career pathway.
 Status: Perpetual
 Started: 
 EditDate: 2024-03-07

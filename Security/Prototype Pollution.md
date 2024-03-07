@@ -6,7 +6,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses prototype pollution.
+Purpose: This documentation discusses prototype pollution.
 Status: Refinement
 Started: 2023-11-21
 EditDate: 

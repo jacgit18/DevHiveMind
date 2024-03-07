@@ -6,7 +6,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses things to consider when sign with a company.
+Purpose: This documentation discusses things to consider when sign with a company.
 Status: Done
 Started: 
 EditDate: 2024-02-20

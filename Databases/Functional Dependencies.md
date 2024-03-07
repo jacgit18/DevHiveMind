@@ -6,7 +6,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses Functional Dependencies.
+Purpose: This documentation discusses Functional Dependencies.
 Status: Refinement
 Started: 
 EditDate: 

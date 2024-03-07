@@ -6,7 +6,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses Inheritance, Composition, and Encapsulation
+Purpose: This documentation discusses Inheritance, Composition, and Encapsulation
 Status: Refinement
 Started: 
 EditDate: 2023-10-29

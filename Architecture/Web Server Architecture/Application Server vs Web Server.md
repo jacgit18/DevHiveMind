@@ -4,7 +4,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses the difference between Application Server and Web Servers.
+Purpose: This documentation discusses the difference between Application Server and Web Servers.
 Status: Refinement
 Started: 
 EditDate: 2024-01-31

@@ -5,7 +5,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses types of cloud infrastructure.
+Purpose: This documentation discusses types of cloud infrastructure.
 Status: Done
 Started: 
 EditDate: 2024-02-04

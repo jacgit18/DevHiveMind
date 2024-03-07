@@ -8,7 +8,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses the distinction between Authentication and Authorization.
+Purpose: This documentation discusses the distinction between Authentication and Authorization.
 Status: Done
 Started: 
 EditDate: 2024-03-03

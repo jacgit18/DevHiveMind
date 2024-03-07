@@ -7,7 +7,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses types of tables in logical database models.
+Purpose: This documentation discusses types of tables in logical database models.
 Status: Done
 Started: 
 EditDate: 

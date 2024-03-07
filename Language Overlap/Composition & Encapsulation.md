@@ -5,7 +5,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses Composition and Encapsulation.
+Purpose: This documentation discusses Composition and Encapsulation.
 Status: Done
 Started: 
 EditDate: 2024-03-04

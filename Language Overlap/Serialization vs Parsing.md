@@ -4,7 +4,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses Encoding and Parsing in the context of Deserialization and Serialization.
+Purpose: This documentation discusses Encoding and Parsing in the context of Deserialization and Serialization.
 Status: Done
 Started: 
 EditDate: 2024-02-17

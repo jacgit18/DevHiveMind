@@ -7,7 +7,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses what snapshot dependencies and some best practices.
+Purpose: This documentation discusses what snapshot dependencies and some best practices.
 Status: Done
 Started: 2024-03-03
 EditDate: 

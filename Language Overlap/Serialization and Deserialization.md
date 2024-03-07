@@ -5,7 +5,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses Serialization and Deserialization.
+Purpose: This documentation discusses Serialization and Deserialization.
 Status: Done
 Started: 
 EditDate: 2024-02-17

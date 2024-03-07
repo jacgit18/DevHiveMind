@@ -5,7 +5,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses Stored Procedure.
+Purpose: This documentation discusses Stored Procedure.
 Status: Done
 Started: 
 EditDate: 

@@ -7,7 +7,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses obsidian data view.
+Purpose: This documentation discusses obsidian data view.
 Status: Refinement
 Started: 
 EditDate: 

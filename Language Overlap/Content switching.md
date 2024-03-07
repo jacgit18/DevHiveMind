@@ -7,7 +7,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses context switching.
+Purpose: This documentation discusses context switching.
 Status: Done
 Started: 
 EditDate: 2024-03-04

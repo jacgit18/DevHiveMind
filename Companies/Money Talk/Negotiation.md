@@ -5,7 +5,7 @@ tags:
   - pay
 author:
   - jacgit18
-Comments: This documentation discusses Negotiation.
+Purpose: This documentation discusses Negotiation.
 Status: Perpetual
 Started: 
 EditDate: 2024-02-20

@@ -5,7 +5,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses Database Core Functionality.
+Purpose: This documentation discusses Database Core Functionality.
 Status: Done
 Started: 
 EditDate: 

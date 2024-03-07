@@ -6,7 +6,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses what a load balancer purpose.
+Purpose: This documentation discusses what a load balancer purpose.
 Status: Refinement
 Started: 2024-01-07
 EditDate: 2024-03-06

@@ -7,7 +7,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses Bucket Sort
+Purpose: This documentation discusses Bucket Sort
 Status: Refinement
 Started: 
 EditDate: 

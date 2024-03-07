@@ -9,7 +9,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses things to consider when deciding on a database schema.
+Purpose: This documentation discusses things to consider when deciding on a database schema.
 Status: Done
 Started: 
 EditDate: 2024-03-06

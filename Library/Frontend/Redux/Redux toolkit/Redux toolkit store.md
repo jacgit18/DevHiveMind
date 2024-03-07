@@ -8,7 +8,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation is a code snippet showing how redux toolkit store works.
+Purpose: This documentation is a code snippet showing how redux toolkit store works.
 Status: Final
 Started: 
 EditDate: 2024-02-08

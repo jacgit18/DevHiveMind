@@ -5,7 +5,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses general things about taxes.
+Purpose: This documentation discusses general things about taxes.
 Status: Perpetual
 Started: 
 EditDate: 2024-03-04

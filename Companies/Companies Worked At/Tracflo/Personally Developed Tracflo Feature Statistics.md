@@ -4,7 +4,7 @@ tags:
   - dev
 author:
   - jacgit18
-Comments: This documentation discusses personal features worked on.
+Purpose: This documentation discusses personal features worked on.
 Status: Done
 Started: 2023-12-14
 EditDate: 

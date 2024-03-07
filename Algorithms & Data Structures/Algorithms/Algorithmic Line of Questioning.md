@@ -7,7 +7,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses list different question asked about a coding challenge.
+Purpose: This documentation discusses list different question asked about a coding challenge.
 Status: Done
 Started: 
 EditDate: 2024-02-29

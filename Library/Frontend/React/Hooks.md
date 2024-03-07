@@ -9,7 +9,7 @@ author:
   - jacgit18
   - chatgpt
 Status: Done
-Comments: This documentation discusses react hooks.
+Purpose: This documentation discusses react hooks.
 Started: 
 EditDate: 2024-02-06
 Relates: 

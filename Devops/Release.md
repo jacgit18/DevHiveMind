@@ -4,7 +4,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses the software release process.
+Purpose: This documentation discusses the software release process.
 Status: Done
 Started: 
 EditDate: 2024-02-22

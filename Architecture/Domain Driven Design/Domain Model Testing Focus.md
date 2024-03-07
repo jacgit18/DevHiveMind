@@ -5,7 +5,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses
+Purpose: This documentation discusses
 Status: Done
 Started: 2023-11-26
 EditDate: 

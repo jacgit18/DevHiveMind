@@ -4,7 +4,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses finding conditional logic.
+Purpose: This documentation discusses finding conditional logic.
 Status: Done
 Started: 
 EditDate: 2024-02-29

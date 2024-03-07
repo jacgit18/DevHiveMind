@@ -7,7 +7,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses what retention targets are in system design.
+Purpose: This documentation discusses what retention targets are in system design.
 Status: Done
 Started: 
 EditDate: 2024-03-06

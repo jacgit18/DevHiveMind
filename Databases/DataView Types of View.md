@@ -5,7 +5,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation highlights the most common views of data view.
+Purpose: This documentation highlights the most common views of data view.
 Status: Refinement
 Started: 
 EditDate: 

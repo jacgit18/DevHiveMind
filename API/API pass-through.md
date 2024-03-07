@@ -8,7 +8,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses API pass-through
+Purpose: This documentation discusses API pass-through
 Status: Capture
 Started: 
 EditDate: 2024-03-03

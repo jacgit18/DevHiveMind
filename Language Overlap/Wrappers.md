@@ -6,7 +6,7 @@ author:
   - jacgit18
   - chatgpt
 Status: Done
-Comments: This documentation discusses wrappers.
+Purpose: This documentation discusses wrappers.
 Started: 
 EditDate: 2024-03-06
 Relates: "[[Primitive Wrappers Across Languages]]"

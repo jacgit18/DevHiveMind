@@ -6,7 +6,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses Scaling.
+Purpose: This documentation discusses Scaling.
 Status: Refinement
 Started: 
 EditDate: 2024-02-25

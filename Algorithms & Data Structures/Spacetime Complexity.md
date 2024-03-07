@@ -5,7 +5,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses Spacetime Complexity
+Purpose: This documentation discusses Spacetime Complexity
 Status: Done
 Started: 
 EditDate: 

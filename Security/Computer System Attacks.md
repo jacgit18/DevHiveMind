@@ -5,7 +5,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses computer security.
+Purpose: This documentation discusses computer security.
 Status: Done
 Started: 2024-02-03
 EditDate: 2024-02-04

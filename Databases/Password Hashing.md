@@ -7,7 +7,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses password hashing.
+Purpose: This documentation discusses password hashing.
 Status: Refinement
 Started: 
 EditDate: 

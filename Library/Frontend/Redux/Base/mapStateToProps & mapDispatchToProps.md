@@ -10,7 +10,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation is a code snippet showing how mapStateToProps and mapDispatchToProps are used.
+Purpose: This documentation is a code snippet showing how mapStateToProps and mapDispatchToProps are used.
 Status: Final
 Started: 
 EditDate: 2024-02-07

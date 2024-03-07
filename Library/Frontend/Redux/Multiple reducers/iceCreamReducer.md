@@ -7,7 +7,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation is a code snippet showing how reducer manages state change for ice cream actions being dispatch.
+Purpose: This documentation is a code snippet showing how reducer manages state change for ice cream actions being dispatch.
 Status: Final
 Started: 
 EditDate: 2024-02-08

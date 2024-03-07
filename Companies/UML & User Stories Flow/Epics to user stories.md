@@ -4,7 +4,7 @@ tags:
   - example
 author:
   - jacgit18
-Comments: This documentation discusses a driving school related user story example with acceptance criteria.
+Purpose: This documentation discusses a driving school related user story example with acceptance criteria.
 Status: Done
 Started: 
 EditDate: 2024-02-27

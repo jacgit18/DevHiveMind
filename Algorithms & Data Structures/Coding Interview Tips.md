@@ -5,7 +5,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses tips for interview.
+Purpose: This documentation discusses tips for interview.
 Status: Refinement
 Started: 
 EditDate: 

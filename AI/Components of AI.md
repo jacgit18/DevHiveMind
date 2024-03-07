@@ -4,7 +4,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses different components of AI.
+Purpose: This documentation discusses different components of AI.
 Status: Done
 Started: 2023-09-29
 EditDate: 2024-02-20

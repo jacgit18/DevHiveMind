@@ -4,7 +4,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses functional acceptance testing.
+Purpose: This documentation discusses functional acceptance testing.
 Status: Done
 Started: 2024-02-03
 EditDate: 

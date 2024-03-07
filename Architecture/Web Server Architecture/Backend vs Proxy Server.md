@@ -6,7 +6,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses backend  server and proxy server.
+Purpose: This documentation discusses backend  server and proxy server.
 Status: Refinement
 Started: 
 EditDate: 2024-03-06

@@ -6,14 +6,18 @@ tags:
   - systemComponent
   - systemHealth
   - distributedSystem
+  - OrderOfOperations
 author:
   - jacgit18
+  - chatgpt
+Purpose: This documentation discusses order to talk about system in system design interview.
 Comments: Still cleaning up this documentation I might convert to a mind map or something visual like some type of decision tree.
 Status: Refinement
 Started: 2024-01-04
 EditDate: 2024-01-26
 Version: 2.8.0
-Relates:
+Relates: 
+Peer Reviewed: "0"
 ---
 ![[System design core concepts.gif]]
 ### Step 1: Requirements Gathering 

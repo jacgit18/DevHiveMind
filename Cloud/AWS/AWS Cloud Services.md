@@ -6,7 +6,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses AWS cloud services.
+Purpose: This documentation discusses AWS cloud services.
 Status: Refinement
 Started: 
 EditDate: 2024-02-04

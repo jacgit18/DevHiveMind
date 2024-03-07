@@ -8,7 +8,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses automation in different contexts.
+Purpose: This documentation discusses automation in different contexts.
 Status: Done
 Started: 
 EditDate: 2024-03-04

@@ -6,7 +6,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses the coffee chat.
+Purpose: This documentation discusses the coffee chat.
 Status: Done
 Started: 
 EditDate: 2024-02-20

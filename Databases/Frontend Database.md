@@ -5,7 +5,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses frontend application that use a database design for the frontend.
+Purpose: This documentation discusses frontend application that use a database design for the frontend.
 Status: Done
 Started: 
 EditDate: 

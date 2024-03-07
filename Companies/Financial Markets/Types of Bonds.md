@@ -7,7 +7,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses bond types and their stability.
+Purpose: This documentation discusses bond types and their stability.
 Status: Done
 Started: 
 EditDate: 2024-03-04

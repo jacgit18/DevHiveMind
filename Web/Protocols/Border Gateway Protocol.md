@@ -5,7 +5,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses Border Gateway Protocol.
+Purpose: This documentation discusses Border Gateway Protocol.
 Status: Done
 Started: 2024-01-31
 EditDate: 

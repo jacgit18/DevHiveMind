@@ -5,7 +5,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses architect decision.
+Purpose: This documentation discusses architect decision.
 Status: Refinement
 Started: 
 EditDate: 2024-03-06

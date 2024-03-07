@@ -8,7 +8,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses how Redux toolkit deals with boiler plate code.
+Purpose: This documentation discusses how Redux toolkit deals with boiler plate code.
 Status: Done
 Started: 
 EditDate: 2024-02-08

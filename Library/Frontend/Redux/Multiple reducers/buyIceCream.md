@@ -7,7 +7,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation is a code snippet showing a Redux action for buying ice cream.
+Purpose: This documentation is a code snippet showing a Redux action for buying ice cream.
 Status: Final
 Started: 
 EditDate: 2024-02-08

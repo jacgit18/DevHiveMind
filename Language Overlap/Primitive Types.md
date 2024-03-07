@@ -5,7 +5,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses primitive types.
+Purpose: This documentation discusses primitive types.
 Status: Refinement
 Started: 
 EditDate: 2024-03-05

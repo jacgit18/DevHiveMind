@@ -5,7 +5,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses admin process around backup and restoration processes.
+Purpose: This documentation discusses admin process around backup and restoration processes.
 Status: Done
 Started: 
 EditDate: 2024-03-06

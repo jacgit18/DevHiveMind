@@ -4,7 +4,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses strings.
+Purpose: This documentation discusses strings.
 Status: Refinement
 Started: 
 EditDate: 2024-02-29

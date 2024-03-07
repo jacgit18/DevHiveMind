@@ -5,7 +5,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses NPM.
+Purpose: This documentation discusses NPM.
 Status: Done
 Started: 
 EditDate: 2024-02-26

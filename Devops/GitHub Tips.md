@@ -5,7 +5,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses some best practices around git.
+Purpose: This documentation discusses some best practices around git.
 Status: Done
 Started: 
 EditDate: 2024-02-22

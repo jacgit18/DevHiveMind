@@ -5,7 +5,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses runtime complexity.
+Purpose: This documentation discusses runtime complexity.
 Status: Refinement
 Started: 
 EditDate: 2024-02-27

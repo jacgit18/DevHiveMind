@@ -7,7 +7,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses implement keyword.
+Purpose: This documentation discusses implement keyword.
 Status: Refinement
 Started: 
 EditDate: 2024-03-05

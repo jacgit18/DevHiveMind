@@ -8,7 +8,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses bond investments and there affect on the stock market.
+Purpose: This documentation discusses bond investments and there affect on the stock market.
 Status: Done
 Started: 
 EditDate: 2024-03-04

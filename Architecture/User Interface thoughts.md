@@ -4,7 +4,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses thoughts around User Interface.
+Purpose: This documentation discusses thoughts around User Interface.
 Status: Done
 Started: 
 EditDate: 2024-03-07

@@ -6,7 +6,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This is a coded snippet
+Purpose: This is a coded snippet
 Status: Done
 Started: 2024-03-03
 EditDate: 2024-03-03

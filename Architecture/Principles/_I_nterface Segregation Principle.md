@@ -7,7 +7,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses interface segregation in SOLID principles.
+Purpose: This documentation discusses interface segregation in SOLID principles.
 Status: Refinement
 Started: 
 EditDate: 2024-03-06

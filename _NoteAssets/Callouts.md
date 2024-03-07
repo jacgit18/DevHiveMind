@@ -4,7 +4,7 @@ tags:
   - Markup
 author:
   - jacgit18
-Comments: This documentation list different markdown Callouts.
+Purpose: This documentation list different markdown Callouts.
 Status: Done
 Started: 2022-11-07
 EditDate: 

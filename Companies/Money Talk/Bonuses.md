@@ -6,7 +6,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses the intricacies of bonus.
+Purpose: This documentation discusses the intricacies of bonus.
 Status: Done
 Started: 
 EditDate: 2024-02-20

@@ -6,7 +6,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses admin process around database migrations processes.
+Purpose: This documentation discusses admin process around database migrations processes.
 Status: Done
 Started: 
 EditDate: 2024-03-06

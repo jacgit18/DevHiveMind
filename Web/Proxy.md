@@ -6,7 +6,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses proxies.
+Purpose: This documentation discusses proxies.
 Status: Refinement
 Started: 
 EditDate: 2024-01-30

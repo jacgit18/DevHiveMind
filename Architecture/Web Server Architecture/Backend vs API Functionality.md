@@ -5,7 +5,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses difference between Backend and API.
+Purpose: This documentation discusses difference between Backend and API.
 Status: Refinement
 Started: 
 EditDate: 2024-03-03

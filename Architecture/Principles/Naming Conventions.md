@@ -6,7 +6,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses proper naming conventions.
+Purpose: This documentation discusses proper naming conventions.
 Status: Refinement
 Started: 
 EditDate: 2024-03-07

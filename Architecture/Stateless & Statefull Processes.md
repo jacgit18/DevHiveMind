@@ -4,7 +4,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses Stateless & Statefull Processes.
+Purpose: This documentation discusses Stateless & Statefull Processes.
 Status: Refinement
 Started: 
 EditDate: 2024-03-07

@@ -6,7 +6,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses access modifiers in the context of UML and object oriented classes.
+Purpose: This documentation discusses access modifiers in the context of UML and object oriented classes.
 Status: Refinement
 Started: 
 EditDate: 2024-03-03

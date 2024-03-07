@@ -4,7 +4,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses the slight but significant difference between coding challenges and user stories.
+Purpose: This documentation discusses the slight but significant difference between coding challenges and user stories.
 Status: Done
 Started: 
 EditDate: 2024-02-20

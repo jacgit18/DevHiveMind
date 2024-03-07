@@ -10,7 +10,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses Sharding & Pagination relationship.
+Purpose: This documentation discusses Sharding & Pagination relationship.
 Status: Refinement
 Started: 
 EditDate: 

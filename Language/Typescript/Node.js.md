@@ -6,7 +6,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses what is Node.js and its inner working.
+Purpose: This documentation discusses what is Node.js and its inner working.
 Status: Done
 Started: 
 EditDate: 2024-03-02

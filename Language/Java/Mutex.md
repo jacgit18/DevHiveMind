@@ -5,7 +5,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses Mutex.
+Purpose: This documentation discusses Mutex.
 Status: Done
 Started: 2023-11-20
 EditDate: 

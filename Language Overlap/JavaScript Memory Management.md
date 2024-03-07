@@ -6,7 +6,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses memory management in javascript with Stacks, Heaps, and Event Loop.
+Purpose: This documentation discusses memory management in javascript with Stacks, Heaps, and Event Loop.
 Status: Done
 Started: 
 EditDate: 2024-03-04

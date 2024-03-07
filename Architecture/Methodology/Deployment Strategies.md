@@ -6,7 +6,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses Deployment Strategies.
+Purpose: This documentation discusses Deployment Strategies.
 Status: Done
 Started: 
 EditDate: 2024-03-06

@@ -5,7 +5,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses Delete request.
+Purpose: This documentation discusses Delete request.
 Status: Done
 Started: 
 EditDate: 

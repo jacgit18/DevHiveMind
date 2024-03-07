@@ -4,7 +4,7 @@ tags:
   - agile
 author:
   - jacgit18
-Comments: This documentation discusses risk management.
+Purpose: This documentation discusses risk management.
 Status: Done
 Started: 
 EditDate: 2024-02-20

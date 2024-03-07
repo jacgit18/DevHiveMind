@@ -9,7 +9,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses BUD principle.
+Purpose: This documentation discusses BUD principle.
 Status: Done
 Started: 
 EditDate: 2023-12-03

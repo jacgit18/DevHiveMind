@@ -4,7 +4,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses Hypermedia.
+Purpose: This documentation discusses Hypermedia.
 Status: Done
 Started: 
 EditDate: 2024-01-30

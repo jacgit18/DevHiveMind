@@ -5,7 +5,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses HTTP Streaming.
+Purpose: This documentation discusses HTTP Streaming.
 Status: Done
 Started: 
 EditDate: 2024-01-30

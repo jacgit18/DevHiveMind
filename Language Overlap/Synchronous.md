@@ -5,7 +5,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses Synchronous programming.
+Purpose: This documentation discusses Synchronous programming.
 Status: Refinement
 Started: 
 EditDate: 2024-03-06

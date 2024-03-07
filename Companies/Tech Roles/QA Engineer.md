@@ -5,7 +5,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses responsibilities of a QA engineer.
+Purpose: This documentation discusses responsibilities of a QA engineer.
 Status: Done
 Started: 
 EditDate: 2024-02-20

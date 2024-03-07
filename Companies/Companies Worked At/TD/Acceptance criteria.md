@@ -3,7 +3,7 @@ tags:
   - agile
 author:
   - jacgit18
-Comments: This documentation discusses acceptance criteria.
+Purpose: This documentation discusses acceptance criteria.
 Status: Done
 Started: 2023-12-12
 EditDate: 

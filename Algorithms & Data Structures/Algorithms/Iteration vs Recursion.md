@@ -7,7 +7,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses Linear Iteration vs Linear Recursion vs Binary Iteration vs Binary Recursion
+Purpose: This documentation discusses Linear Iteration vs Linear Recursion vs Binary Iteration vs Binary Recursion
 Status: Done
 Started: 
 EditDate: 2024-02-27

@@ -6,7 +6,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses margin accounts and how they differ from cash accounts.
+Purpose: This documentation discusses margin accounts and how they differ from cash accounts.
 Status: Done
 Started: 
 EditDate: 2024-03-04

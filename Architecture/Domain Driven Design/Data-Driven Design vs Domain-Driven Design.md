@@ -5,7 +5,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses data driven vs domain driven approach.
+Purpose: This documentation discusses data driven vs domain driven approach.
 Status: Done
 Started: 
 EditDate: 2024-03-06

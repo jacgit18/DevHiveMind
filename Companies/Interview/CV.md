@@ -4,7 +4,7 @@ tags:
   - employment
 author:
   - jacgit18
-Comments: This documentation discusses
+Purpose: This documentation discusses
 Status: Perpetual
 Started: 2023-12-12
 EditDate: 2023-12-15

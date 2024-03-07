@@ -6,7 +6,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses managing multiple microservices within docker.
+Purpose: This documentation discusses managing multiple microservices within docker.
 Status: Done
 Started: 2024-01-09
 EditDate: 

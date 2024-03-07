@@ -5,7 +5,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses cloud databases.
+Purpose: This documentation discusses cloud databases.
 Status: Done
 Started: 
 EditDate: 

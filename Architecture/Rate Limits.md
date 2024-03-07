@@ -7,7 +7,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses rate limits.
+Purpose: This documentation discusses rate limits.
 Status: Done
 Started: 
 EditDate: 2024-03-03

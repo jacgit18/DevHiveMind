@@ -5,7 +5,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses type of testing techniques.
+Purpose: This documentation discusses type of testing techniques.
 Status: Done
 Started: 
 EditDate: 2024-02-02

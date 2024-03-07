@@ -8,7 +8,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses technology option for Event-driven & Reactive programming.
+Purpose: This documentation discusses technology option for Event-driven & Reactive programming.
 Status: Refinement
 Started: 
 EditDate: 2024-02-26

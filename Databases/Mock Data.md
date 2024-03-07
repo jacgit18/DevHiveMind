@@ -6,7 +6,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses mock data.
+Purpose: This documentation discusses mock data.
 Status: Done
 Started: 
 EditDate: 

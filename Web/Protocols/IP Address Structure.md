@@ -5,7 +5,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses IP addresses.
+Purpose: This documentation discusses IP addresses.
 Status: Done
 Started: 
 EditDate: 2024-01-30

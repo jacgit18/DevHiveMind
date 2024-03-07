@@ -3,7 +3,7 @@ tags:
   - bsa
 author:
   - jacgit18
-Comments: This documentation discusses requirement governance.
+Purpose: This documentation discusses requirement governance.
 Status: Done
 Started: 
 EditDate: 2024-02-20

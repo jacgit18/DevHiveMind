@@ -9,7 +9,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses best practices for server routes for user accounts.
+Purpose: This documentation discusses best practices for server routes for user accounts.
 Status: Done
 Started: 2024-01-01
 EditDate: 2024-03-06

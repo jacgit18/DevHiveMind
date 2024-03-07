@@ -5,7 +5,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses locations in your code base were you can make API request.
+Purpose: This documentation discusses locations in your code base were you can make API request.
 Status: Done
 Started: 
 EditDate: 2024-03-03

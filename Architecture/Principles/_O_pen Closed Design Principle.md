@@ -8,7 +8,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses Open Close design in SOLID principles.
+Purpose: This documentation discusses Open Close design in SOLID principles.
 Status: Refinement
 Started: 
 EditDate: 2024-03-06

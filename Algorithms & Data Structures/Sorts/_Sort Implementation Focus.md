@@ -5,7 +5,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses programming Languages built in sorting algorithm implementations.
+Purpose: This documentation discusses programming Languages built in sorting algorithm implementations.
 Status: Refinement
 Started: 
 EditDate: 2024-02-10

@@ -6,7 +6,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses WhatsApp from a system design standpoint around different protocols.
+Purpose: This documentation discusses WhatsApp from a system design standpoint around different protocols.
 Status: Done
 Started: 
 EditDate: 2024-03-06

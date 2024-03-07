@@ -4,7 +4,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses how docker compose and docker file work together.
+Purpose: This documentation discusses how docker compose and docker file work together.
 Status: Done
 Started: 
 EditDate: 2024-02-22

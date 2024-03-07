@@ -6,7 +6,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses JavaFX library.
+Purpose: This documentation discusses JavaFX library.
 Status: Done
 Started: 
 EditDate: 2024-02-12

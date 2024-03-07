@@ -4,7 +4,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses Network Infrastructure to use
+Purpose: This documentation discusses Network Infrastructure to use
 Status: Refinement
 Started: 
 EditDate: 2024-03-07

@@ -6,7 +6,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses the decision making process around API call on the frontend versus the backend which depends on various factors, and there isn't a one-size-fits-all answer.
+Purpose: This documentation discusses the decision making process around API call on the frontend versus the backend which depends on various factors, and there isn't a one-size-fits-all answer.
 Status: Done
 Started: 
 EditDate: 2024-02-27

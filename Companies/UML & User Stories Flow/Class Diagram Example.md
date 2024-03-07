@@ -4,7 +4,7 @@ tags:
   - OOP
 author:
   - jacgit18
-Comments: This documentation discusses a class diagram based on the user stories for a driving school.
+Purpose: This documentation discusses a class diagram based on the user stories for a driving school.
 Status: Done
 Started: 
 EditDate: 2024-02-20

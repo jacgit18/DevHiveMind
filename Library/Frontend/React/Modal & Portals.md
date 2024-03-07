@@ -7,7 +7,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses Modal & Portals.
+Purpose: This documentation discusses Modal & Portals.
 Status: Done
 Started: 
 EditDate: 2024-02-06

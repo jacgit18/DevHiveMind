@@ -6,7 +6,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses the order to process to do when buying stocks.
+Purpose: This documentation discusses the order to process to do when buying stocks.
 Status: Done
 Started: 
 EditDate: 2024-03-04

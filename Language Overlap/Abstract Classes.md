@@ -9,7 +9,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses abstract classes.
+Purpose: This documentation discusses abstract classes.
 Status: Done
 Started: 2023-10-29
 EditDate: 2024-03-04

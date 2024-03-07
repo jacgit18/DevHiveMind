@@ -5,7 +5,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses database record life cycle.
+Purpose: This documentation discusses database record life cycle.
 Status: Capture
 Started: 
 EditDate: 

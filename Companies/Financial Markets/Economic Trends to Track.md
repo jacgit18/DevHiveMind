@@ -9,7 +9,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses different attributes of the stock market ebb and flow.
+Purpose: This documentation discusses different attributes of the stock market ebb and flow.
 Status: Perpetual
 Started: 
 EditDate: 2024-03-04

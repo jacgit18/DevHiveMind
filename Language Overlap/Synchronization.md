@@ -5,7 +5,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses Synchronization.
+Purpose: This documentation discusses Synchronization.
 Status: Refinement
 Started: 
 EditDate: 2024-03-06

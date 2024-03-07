@@ -5,7 +5,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses Hoisting.
+Purpose: This documentation discusses Hoisting.
 Status: Done
 Started: 
 EditDate: 2024-03-02

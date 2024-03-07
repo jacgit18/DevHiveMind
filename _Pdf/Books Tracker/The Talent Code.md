@@ -4,7 +4,7 @@ tags:
 title: '"The Talent Code"'
 author:
   - "[Daniel Coyle]"
-Comments: This documentation discusses
+Purpose: This documentation discusses
 category: Self-Help
 publisher: Bantam
 publishdate: 2009-04-28

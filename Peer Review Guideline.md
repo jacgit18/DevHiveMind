@@ -4,7 +4,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses note status in vault.
+Purpose: This documentation discusses note status in vault.
 Status: Final
 Started: 2024-03-07
 EditDate: 

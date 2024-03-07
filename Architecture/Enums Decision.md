@@ -6,7 +6,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses decision that goes into using enums.
+Purpose: This documentation discusses decision that goes into using enums.
 Status: Done
 Started: 
 EditDate: 2024-03-07

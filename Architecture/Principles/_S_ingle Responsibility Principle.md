@@ -8,7 +8,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses single responsibility in SOLID principles.
+Purpose: This documentation discusses single responsibility in SOLID principles.
 Status: Done
 Started: 
 EditDate: 2024-03-06

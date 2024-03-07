@@ -7,7 +7,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses Spring vs Spring Boot.
+Purpose: This documentation discusses Spring vs Spring Boot.
 Status: Done
 Started: 
 EditDate: 2024-02-04

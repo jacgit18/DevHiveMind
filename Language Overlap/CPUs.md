@@ -6,7 +6,7 @@ author:
   - jacgit18
   - chatgpt
 Status: Refinement
-Comments: This documentation discusses how cpu works with processes.
+Purpose: This documentation discusses how cpu works with processes.
 Started: 
 EditDate: 2024-03-05
 Relates: 

@@ -6,7 +6,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses potential project use case for WebSockets.
+Purpose: This documentation discusses potential project use case for WebSockets.
 Status: Done
 Started: 2023-11-22
 EditDate: 2024-03-06

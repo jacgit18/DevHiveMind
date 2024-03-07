@@ -8,7 +8,7 @@ tags:
   - bestPractices
 author:
   - jacgit18
-Comments: This documentation discusses error handling phase in react life cycle.
+Purpose: This documentation discusses error handling phase in react life cycle.
 Status: Done
 Started: 
 EditDate: 2024-02-06

@@ -3,7 +3,7 @@ tags:
   - error
 author:
   - jacgit18
-Comments: This documentation discusses
+Purpose: This documentation discusses
 Status: Draft
 Started: 
 EditDate: 

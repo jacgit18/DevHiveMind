@@ -4,7 +4,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses smoke test.
+Purpose: This documentation discusses smoke test.
 Status: Done
 Started: 
 EditDate: 2024-03-07

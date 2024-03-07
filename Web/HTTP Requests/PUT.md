@@ -5,7 +5,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses what Out request do and the difference between Put and Post request.
+Purpose: This documentation discusses what Out request do and the difference between Put and Post request.
 Status: Done
 Started: 
 EditDate: 2024-01-29

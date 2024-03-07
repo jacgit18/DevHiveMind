@@ -4,7 +4,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses Software Architecture vs System Design
+Purpose: This documentation discusses Software Architecture vs System Design
 Status: Refinement
 Started: 2023-11-26
 EditDate: 2024-03-07

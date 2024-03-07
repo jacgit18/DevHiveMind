@@ -5,7 +5,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses Semantic Versioning.
+Purpose: This documentation discusses Semantic Versioning.
 Status: Done
 Started: 2024-02-07
 EditDate: 

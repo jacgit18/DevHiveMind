@@ -4,7 +4,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses the docker Entrypoint and CMD commands.
+Purpose: This documentation discusses the docker Entrypoint and CMD commands.
 Status: Done
 Started: 
 EditDate: 2024-02-22

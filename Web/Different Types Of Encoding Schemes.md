@@ -8,7 +8,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses encoding schemes.
+Purpose: This documentation discusses encoding schemes.
 Status: Done
 Started: 
 EditDate: 2024-03-05

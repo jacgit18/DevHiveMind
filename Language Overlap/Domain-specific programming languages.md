@@ -4,7 +4,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses different domain languages.
+Purpose: This documentation discusses different domain languages.
 Status: Done
 Started: 
 EditDate: 2024-03-05

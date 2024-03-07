@@ -8,7 +8,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses unsafe function in code.
+Purpose: This documentation discusses unsafe function in code.
 Status: Done
 Started: 2023-11-21
 EditDate: 

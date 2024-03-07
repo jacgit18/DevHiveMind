@@ -5,7 +5,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses DNS resolver implementation.
+Purpose: This documentation discusses DNS resolver implementation.
 Status: Done
 Started: 2024-02-01
 EditDate: 

@@ -7,7 +7,7 @@ tags:
   - query
 author:
   - jacgit18
-Comments: This is a ChatGpt prompt for databases.
+Purpose: This is a ChatGpt prompt for databases.
 Status: Final
 Started: 
 EditDate: 2024-02-20

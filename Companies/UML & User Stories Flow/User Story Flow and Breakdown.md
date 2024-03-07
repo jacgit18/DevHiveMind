@@ -7,7 +7,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses the flow of user stories in the context of a playing card game example.
+Purpose: This documentation discusses the flow of user stories in the context of a playing card game example.
 Status: Done
 Started: 
 EditDate: 2024-02-20

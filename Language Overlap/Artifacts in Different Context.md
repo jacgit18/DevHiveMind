@@ -6,7 +6,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses the term artifacts in different context.
+Purpose: This documentation discusses the term artifacts in different context.
 Status: Done
 Started: 
 EditDate: 2024-03-03

@@ -8,7 +8,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses useMemo hook.
+Purpose: This documentation discusses useMemo hook.
 Status: Done
 Started: 
 EditDate: 2024-02-07

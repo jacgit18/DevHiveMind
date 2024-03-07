@@ -7,7 +7,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses repository manager and the different options.
+Purpose: This documentation discusses repository manager and the different options.
 Status: Refinement
 Started: 
 EditDate: 2024-02-03

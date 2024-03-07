@@ -5,7 +5,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses when to cast.
+Purpose: This documentation discusses when to cast.
 Status: Refinement
 Started: 
 EditDate: 2024-03-06

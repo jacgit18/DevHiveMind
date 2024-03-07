@@ -8,7 +8,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses useRef hook.
+Purpose: This documentation discusses useRef hook.
 Status: Done
 Started: 
 EditDate: 2024-02-14

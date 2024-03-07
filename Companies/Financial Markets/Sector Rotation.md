@@ -7,7 +7,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses sector rotations.
+Purpose: This documentation discusses sector rotations.
 Status: Perpetual
 Started: 
 EditDate: 2024-03-03

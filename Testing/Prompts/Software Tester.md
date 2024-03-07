@@ -6,7 +6,7 @@ tags:
   - testing
 author:
   - jacgit18
-Comments: This is a ChatGpt prompt for software test.
+Purpose: This is a ChatGpt prompt for software test.
 Status: Perpetual
 Started: 
 EditDate: 2024-02-20

@@ -6,7 +6,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses build tools specif ally in the Java ecosystem.
+Purpose: This documentation discusses build tools specif ally in the Java ecosystem.
 Status: Done
 Started: 
 EditDate: 2024-02-22

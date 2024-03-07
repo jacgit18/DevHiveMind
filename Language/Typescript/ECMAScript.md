@@ -4,7 +4,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses ECMAScript.
+Purpose: This documentation discusses ECMAScript.
 Status: Done
 Started: 2023-12-07
 EditDate: 

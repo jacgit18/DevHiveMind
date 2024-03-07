@@ -6,7 +6,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses Self-joining relationships.
+Purpose: This documentation discusses Self-joining relationships.
 Status: Done
 Started: 
 EditDate: 

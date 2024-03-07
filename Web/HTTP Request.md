@@ -6,7 +6,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses network request and request structure.
+Purpose: This documentation discusses network request and request structure.
 Status: Refinement
 Started: 
 EditDate: 2024-01-30

@@ -6,7 +6,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses Abstract Data Types
+Purpose: This documentation discusses Abstract Data Types
 Status: Refinement
 Started: 
 EditDate: 2024-02-29

@@ -6,7 +6,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses java dependencies.
+Purpose: This documentation discusses java dependencies.
 Status: Done
 Started: 
 EditDate: 2024-03-03

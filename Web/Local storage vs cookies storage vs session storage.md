@@ -7,7 +7,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses different types of storage around browsers.
+Purpose: This documentation discusses different types of storage around browsers.
 Status: Refinement
 Started: 
 EditDate: 2024-01-30
