@@ -6,11 +6,13 @@ tags:
   - binary
 author:
   - jacgit18
-Comments: This documentation discusses
-Status: 
+  - chatgpt
+Comments: This documentation discusses in and outs about Binary search
+Status: Done
 Started: 
 EditDate: 
-Relates:
+Relates: 
+Peer Reviewed: "0"
 ---
 ## Key Decisions in Binary Search
 

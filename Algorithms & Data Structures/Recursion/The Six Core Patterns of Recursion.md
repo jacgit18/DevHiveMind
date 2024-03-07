@@ -3,8 +3,9 @@ tags:
   - looping
 author:
   - jacgit18
-Comments: This documentation discusses
-Status: 
+  - chatgpt
+Comments: This documentation discusses Patterns of Recursion
+Status: Refinement
 Started: 
 EditDate: 
 Relates:

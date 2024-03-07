@@ -4,11 +4,13 @@ tags:
   - javascript
 author:
   - jacgit18
+  - chatgpt
 Comments: This documentation discusses programming Languages built in sorting algorithm implementations.
 Status: Refinement
 Started: 
 EditDate: 2024-02-10
-Relates:
+Relates: 
+Peer Reviewed: "0"
 ---
 ![[Sorts.gif]]
 

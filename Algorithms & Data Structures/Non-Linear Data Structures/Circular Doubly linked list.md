@@ -4,11 +4,13 @@ tags:
   - non-linear
 author:
   - jacgit18
+  - chatgpt
 Comments: This documentation discusses Doubly Linked List.
 Status: Refinement
 Started: 
 EditDate: 2024-02-29
 Relates: "[[Type of Linked List]]"
+Peer Reviewed: "0"
 ---
 ![[DoubleCircularLinkedLists.png]]
 

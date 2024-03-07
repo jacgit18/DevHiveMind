@@ -1,9 +1,11 @@
 ---
 tags:
   - linear
+  - dataStructure
 author:
   - jacgit18
-Comments: This documentation discusses
+  - chatgpt
+Comments: This documentation discusses Sets
 Status: Refinement
 Started: 
 EditDate: 

@@ -7,7 +7,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: This documentation discusses
+Comments: This documentation discusses Quick Sort
 Status: Refinement
 Started: 
 EditDate: 

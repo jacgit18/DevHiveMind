@@ -7,11 +7,13 @@ tags:
   - comparisonSort
 author:
   - jacgit18
-Comments: This documentation discusses
+  - chatgpt
+Comments: This documentation discusses Bubble sort
 Status: Done
 Started: 
 EditDate: 
-Relates:
+Relates: 
+Peer Reviewed: "1"
 ---
 
 ![[BuubleSort.gif]]

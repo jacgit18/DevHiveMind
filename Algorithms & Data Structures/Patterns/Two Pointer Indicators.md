@@ -2,12 +2,14 @@
 tags:
   - pattern
 author:
+  - jacgit18
   - chatgpt
-Comments: This documentation discusses
-Status: 
+Comments: This documentation discusses Indicators of Two Pointer
+Status: Done
 Started: 2024-02-27
 EditDate: 
-Relates:
+Relates: 
+Peer Reviewed: "0"
 ---
 When dealing with problems that involve the Two-Pointer technique, certain keywords or phrases might indicate its applicability. Look out for:
 
