@@ -37,6 +37,13 @@ Accumulating snapshot fact would maybe be used for something like the scale of a
 The accumulating snapshot fact table is thus a method to measure velocity within the business process. 
 
 
+Fact tables in data warehousing are not necessarily more numerical; they can contain both numerical and non-numerical data. Fact tables are a key component of a star schema or snowflake schema in a data warehouse, and they store the measurable, quantitative data of a business.
+
+In a typical fact table, you might find numerical measures, such as sales revenue, quantities sold, or profit margins. These numerical measures are often referred to as "facts" because they represent the measurable aspects of the business.
+
+However, fact tables can also contain non-numerical (categorical or textual) attributes. These attributes, sometimes called dimensions, provide context and additional information about the facts. For example, in a sales fact table, dimensions could include product categories, customer demographics, or geographic regions.
+
+In summary, while fact tables often include numerical measures, they are not limited to numerical data and can incorporate a combination of numerical and non-numerical attributes to provide a comprehensive view of business metrics in a data warehouse.
 
 GRAIN 
 
