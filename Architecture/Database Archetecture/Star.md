@@ -1,64 +1,78 @@
 ---
-tags: 
+tags:
+  - schema
+  - databases
 author:
   - jacgit18
-Status: Refinement
+  - chatgpt
+Comments: This documentation discusses Star schema.
+Status: Done
 Started: 
-EditDate: 
-Relates:
+EditDate: 2024-03-06
+Relates: "[[Normalization & Denormalization]]"
+Peer Reviewed: "0"
 ---
-dimension tables are not normalized. 
+A star schema in data warehousing serves as an efficient organizational structure, primarily composed of fact and dimension tables. Here's an in-depth exploration of its components, types of tables, and associated challenges:
 
-will only join the fact table with the dimension tables, leading to simpler, faster SQL queries. 
+##### Core Components of a Star Schema
 
-better for datamarts with simple relationships. 
+1. **Fact Tables and Dimension Tables:**
+   - Fact tables, residing at the center, store organized fact data, while dimension tables manage dimensional data. Dimension tables include descriptive attributes related to the surrogate primary key.
 
-Essentially, star schemas offer users a more efficient way to organize data and information in a data warehouse. 
+2. **Integration Through Fact Tables:**
+   - Fact tables act as integration points, enabling seamless querying of data across multiple dimension tables. Foreign keys in fact tables link to specific rows in dimension tables.
 
-The center of a star schema consists of one or multiple “fact tables” that index a series of “dimension tables.” 
+##### Types of Fact Tables
 
-The fact data gets organized into fact tables and the dimensional data into dimension tables. Fact tables are the points of integration at the center of the star schema in the data warehouse. They allow machine learning tools or OLAP(Online Analytical Processing) systems to analyze the data as a single unit, and they allow other business systems to access the data together. Dimension tables hold and manage the data—numerical and nonnumerical—which converges through fact tables that make up the data warehouse. You also typically have foreign keys in fact tables. 
+1. **Transaction Fact Tables:**
+   - Record information related to events, such as individual merchandise sales.
 
-# Types of Fact Tables 
+2. **Snapshot Fact Tables:**
+   - Record information applicable to specific moments in time, like year-end account statements.
 
-Transaction fact tables: These record information related to events, like individual merchandise sales. 
+3. **Accumulating Snapshot Tables:**
+   - Record information related to a running tally of data, such as year-to-date sales figures.
 
-Snapshot fact tables: These record information that applies to specific moments in time, like year-end account statements. 
+##### Types of Dimension Tables
 
-Accumulating snapshot tables: These record information related to a running tally of data, like year-to-date sales figures for specific merchandise or categories of merchandise. 
+1. **Time Dimension Tables:**
+   - Contain information to identify the exact time, date, month, and year of different events.
 
-# Types of Dimension Tables 
+2. **Geography Dimension Tables:**
+   - Store address/location information.
 
-#### Dimension tables normally store fewer records than fact tables; however—in addition to storing numerical data—the records in dimension tables also include descriptive attributes. There are many types of dimension tables depending on the information system. Here are some examples: 
+3. **Employee Dimension Tables:**
+   - Include information about employees and salespeople.
 
-Time dimension tables: Information to identify the exact time, date, month, and year different events happened. 
+4. **Merchandise Dimension Tables:**
+   - Hold descriptive information about products.
 
-Geography dimension tables: Address/location information. 
+5. **Customer Dimension Tables:**
+   - Contain customer details such as names, contact information, and addresses.
 
-Employee dimension tables: Information about employees and salespeople, such as addresses, phone numbers, names, employee numbers, and email addresses. 
+6. **Range Dimension Tables:**
+   - Provide information related to a range of values for time, price, and other quantities.
 
-Merchandise dimension tables: Descriptive information about products, their product numbers, etc. 
+##### Denormalization of Data in Star Schemas
 
-Customer dimension tables: Customer name, numbers, contact information, addresses, etc. 
+1. **Objective:**
+   - The star schema aims to enhance read queries and analysis for massive datasets within diverse databases with varying source schemas.
 
-Range dimension tables: Information relating to a range of values for time, price, and other quantities. 
+2. **Denormalization Process:**
+   - Star schemas achieve this by denormalizing data, departing from traditional normalization principles. It involves duplicating fact data (or ID number primary keys) from dimension tables into the fact table for faster read queries.
 
-## Denormalization of Data in Star Schemas 
+3. **Trade-Off:**
+   - While improving read query speed, denormalization sacrifices the speed of write commands. Write commands become slower due to the need to update all counterpart copies of denormalized data following each update.
 
-The star schema’s goal is to speed up read queries and analysis for massive amounts of data contained in diverse databases with different source schemas. The star schema achieves this goal through the “denormalization” of the data within the network of dimension tables. 
+##### Challenges of Star Schemas
 
-Traditionally, database managers sought the “normalization” of data by eliminating duplicate copies of the same data, which is to say, the normalization of the duplicate information into one copy. This made write commands faster because only one copy of the data needed updating. 
+1. **Decreased Data Integrity:**
+   - Due to the denormalized structure, star schemas may exhibit decreased data integrity. Simple insert or update commands can lead to data incongruities.
 
-When a data system expands into multiple dimension tables, however, accessing and analyzing data from multiple sources slows down read queries and analysis. To speed things up, the star schema relaxes the traditional rules of database normalization by “denormalizing” the data. 
+2. **Query Complexity Limitation:**
+   - Star schemas, designed for specific analytical needs, work optimally with a narrow set of simple queries. They may struggle with diverse and complex queries compared to normalized schemas.
 
-A star schema pulls the fact data (or ID number primary keys) from the dimension tables, duplicates this information, and stores it in the fact table. In that way, the fact table connects all of the information sources together. This makes read queries and analysis infinitely faster. However, it sacrifices the speed of write commands. The slower write commands happen because the system needs to update all counterpart copies of the “denormalized” data following each update. 
+3. **Many-to-Many Relationships:**
+   - Star schemas are less adept at handling many-to-many data relationships due to their single-dimension schema.
 
-## Challenges of Star Schemas 
-
-As mentioned before, improving read queries and analysis in a star schema could involve certain challenges: 
-
-Decreased data integrity: Because of the denormalized data structure, star schemas do not enforce data integrity very well. Although star schemas use countermeasures to prevent anomalies from developing, a simple insert or update command can still cause data incongruities. 
-
-Less capable of handling diverse and complex queries: Database designers build and optimize star schemas for specific analytical needs. As denormalized data sets, they work best with a relatively narrow set of simple queries. Comparatively, a normalized schema permits a far wider variety of query complexity. 
-
-No many-to-many relationships: Because they offer a single-dimension schema, star schemas don’t work well for “many-to-many data relationships.”
+In essence, a star schema offers an efficient approach to organizing data in data warehouses, emphasizing speed in querying and analysis while presenting specific challenges related to data integrity, query complexity, and many-to-many relationships.
