@@ -1,13 +1,17 @@
 ---
 tags:
   - servers
+  - systemComponent
+  - distributedSystem
 author:
   - jacgit18
-Comments: This documentation discusses
+  - chatgpt
+Comments: This documentation discusses caches.
 Status: Refinement
 Started: 
-EditDate: 
-Relates:
+EditDate: 2024-03-06
+Relates: 
+Peer Reviewed: "0"
 ---
 The main difference between unstructured data and structured data is that structured data is typically used for general stuff and it's very organized like user accounts and the information associated with that as for unstructured is typically did I like media audio, geo-location, and weather 
 

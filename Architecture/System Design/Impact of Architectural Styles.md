@@ -1,12 +1,15 @@
 ---
-tags: 
+tags:
+  - architecturalPatterns
 author:
   - jacgit18
-Status: Capture
+  - chatgpt
+Comments: This documentation discusses Impact of Architectural Styles.
+Status: Done
 Started: 
-EditDate: 
+EditDate: 2024-03-06
 Relates: "[[Architectural Styles]]"
-Comments: This documentation discusses
+Peer Reviewed: "0"
 ---
 When it comes to architectural styles they can man have a major effect on the components of a system. 
 

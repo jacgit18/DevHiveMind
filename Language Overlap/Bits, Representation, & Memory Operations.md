@@ -10,7 +10,7 @@ Comments: This documentation discusses
 Status: Done
 Started: 
 EditDate: 2024-03-04
-Relates:
+Relates: "[[Bit-Binary]]"
 ---
 **Bits and Binary Representation:**
 

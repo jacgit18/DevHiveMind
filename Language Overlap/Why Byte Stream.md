@@ -25,3 +25,6 @@ Converting objects to byte streams, also known as [[Serialization and Deserializ
 It's important to note that not all objects can be serialized. To be eligible for serialization, an object must implement the `java.io.Serializable` interface. Additionally, some objects or fields may need to be marked as `transient` to exclude them from serialization if they are not serializable or should not be persisted.
 
 Overall, converting objects to byte streams through serialization provides flexibility, portability, and enables various use cases such as persistence, network communication, caching, and interoperability in Java applications.
+
+
+

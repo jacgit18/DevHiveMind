@@ -1,12 +1,16 @@
 ---
-tags: 
+tags:
+  - frontend
 author:
   - jacgit18
-Status: Capture
+  - chatgpt
+Comments: This documentation discusses
+Status: Refinement
 Started: 
-EditDate: 
-Relates:
+EditDate: 2024-03-06
+Relates: 
+Peer Reviewed: "0"
 ---
-##### Event Driven Architecture which is implemented with Reactive Programming 
+##### Might relate with Event Driven Architecture which is implemented with Reactive Programming 
 ## Rendered View
 ## Services and event listeners

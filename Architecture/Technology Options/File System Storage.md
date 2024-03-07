@@ -1,13 +1,16 @@
 ---
 tags:
   - services
+  - data
 author:
   - jacgit18
+  - chatgpt
 Comments: This documentation discusses file system storage which is a service not a database per say from what I gather. It also talks about when to consider using one in your system architecture.
 Status: Done
 Started: 
-EditDate: 
-Relates:
+EditDate: 2024-03-06
+Relates: 
+Peer Reviewed: "0"
 ---
 A file is an unstructured collection of records, and file systems typically support two basic formats: Block Storage, organizing data in blocks on disk, commonly used in personal computers; and Object Storage, organizing data into containers of flexible sizes, prevalent in modern cloud systems like Amazon S3, designed for scalability, performance, and cost-effectiveness.
 

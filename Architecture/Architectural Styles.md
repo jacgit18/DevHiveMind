@@ -2,11 +2,12 @@
 tags: 
 author:
   - jacgit18
+Comments: This documentation discusses
 Status: Capture
 Started: 
 EditDate: 
 Relates: 
-Comments: This documentation discusses
+Peer Reviewed: "0"
 ---
 Some common architectural styles in system design include:
 

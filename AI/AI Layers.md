@@ -5,11 +5,13 @@ tags:
   - machineIntelligence
 author:
   - jacgit18
+  - chatgpt
 Comments: This documentation discusses layers of AI.
 Status: Capture
 Started: 
 EditDate: 2024-02-20
-Relates:
+Relates: 
+Peer Reviewed: "0"
 ---
 ![[AI vs Machine vs Deep.png]]
 

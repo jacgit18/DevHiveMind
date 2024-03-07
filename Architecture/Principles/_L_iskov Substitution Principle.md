@@ -1,12 +1,17 @@
 ---
 tags:
   - SOLID
+  - principles
+  - ClassStructure
 author:
   - jacgit18
-Status: 
+  - chatgpt
+Comments: This documentation discusses Liskov substitution in SOLID principles.
+Status: Refinement
 Started: 
-EditDate: 
-Relates:
+EditDate: 2024-03-06
+Relates: 
+Peer Reviewed: "0"
 ---
 A super class can be replaced by any of it’s inheriting sub classes at any parts of the system without any change in the code.
 
@@ -14,7 +19,8 @@ It means that the sub classes should extend the functionality of the super class
 
 That’s why we’ve mentioned earlier in [Class Diagram](https://medium.com/omarelgabrys-blog/e7535090824c) that it’s not a good case practice to override the methods of the super class in inheritance.
 
->[!note] LSP is closely related **to the Single responsibility principle** and **Interface Segregation Principle**.
+>[!note] 
+>LSP is closely related **to the Single responsibility principle** and **Interface Segregation Principle**.
 
 > The LSP states that objects of a superclass should be replaceable with objects of a subclass without affecting the correctness of the program.
 > If a subclass does not support all the functionality of its superclass, it violates the LSP. In other words, if the subclass overrides or extends the behavior of the superclass in a way that makes it incompatible with the expected functionality, it can lead to issues when substituting the subclass for the superclass. This can result in unexpected behavior and violates the principles of polymorphism and code reusability in object-oriented design.

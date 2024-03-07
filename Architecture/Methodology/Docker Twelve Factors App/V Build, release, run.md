@@ -2,12 +2,19 @@
 tags:
   - deployment
   - phases
+  - methodology
+  - devops
+  - Docker
+  - 12FactorApp
 author:
   - jacgit18
-Status: 
+  - chatgpt
+Comments: This documentation Twelve Factor App, factor five in the context of Docker.
+Status: Done
 Started: 
-EditDate: 
-Relates:
+EditDate: 2024-03-06
+Relates: 
+Peer Reviewed: "1"
 ---
 The activities of building, releasing, and running an application typically occur within the "Deployment and Maintenance" stage or phase of the application development lifecycle.
 

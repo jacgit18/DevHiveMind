@@ -1,14 +1,18 @@
 ---
 tags:
-  - scaling
   - systemDesign
+  - scalability
+  - systemComponent
+  - distributedSystem
 author:
   - jacgit18
+  - chatgpt
 Comments: This documentation discusses Dynamic scaling.
 Status: Refinement
 Started: 2024-02-25
-EditDate: 2024-02-25
-Relates:
+EditDate: 2024-03-06
+Relates: 
+Peer Reviewed: "0"
 ---
 Dynamic scaling, the ability to adjust resources based on real-time demand, synergizes effectively with both horizontal and vertical scaling.
 

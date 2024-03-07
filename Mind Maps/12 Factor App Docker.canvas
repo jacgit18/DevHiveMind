@@ -17,7 +17,7 @@
 		{"type":"file","file":"Architecture/Methodology/Docker Twelve Factors App/VII Port binding.md","id":"91a59303341dc2cb","x":-551,"y":-387,"width":464,"height":362,"color":"1"},
 		{"type":"file","file":"Architecture/Methodology/Docker Twelve Factors App/III Config.md","id":"aa9a44eb3106782b","x":80,"y":-234,"width":400,"height":209,"color":"1"},
 		{"type":"file","file":"Architecture/Methodology/Docker Twelve Factors App/IX-9 Disposability.md","id":"b077bb2dff1a3df3","x":-87,"y":580,"width":400,"height":400,"color":"#d721e4"},
-		{"id":"2a4cd67d94919353","type":"text","text":"# Other Admin Process\n- [[Backup and Restoration]]\n- [[Cache Clearing]]\n- [[Configuration Changes]]\n- [[Data Seeding]]\n- [[Monitoring and Logging Configuration]]\n- [[Vertical vs Horizontal Scaling|Resource Scaling]]\n- [[Task Scheduling]]","x":1640,"y":-2054,"width":420,"height":500},
+		{"id":"2a4cd67d94919353","type":"text","text":"# Other Admin Process\n- [[Backup & Restoration]]\n- [[Cache Clearing]]\n- [[Configuration Changes]]\n- [[Data Seeding]]\n- [[Monitoring and Logging Configuration]]\n- [[Vertical vs Horizontal Scaling|Resource Scaling]]\n- [[Task Scheduling]]","x":1640,"y":-2054,"width":420,"height":500},
 		{"type":"file","file":"Architecture/Methodology/Docker Twelve Factors App/IV Backing services.md","id":"ae4155b60f6cfde1","x":1122,"y":705,"width":400,"height":400,"color":"#0084ff"},
 		{"type":"text","text":"## Backing services can be containerized and along with there dependencies","id":"3f1638614a2c60ac","x":1522,"y":780,"width":598,"height":160,"color":"4"},
 		{"type":"file","file":"Architecture/Methodology/Docker Twelve Factors App/XI Logs.md","id":"fb32235e42193067","x":1124,"y":245,"width":400,"height":400,"color":"#0084ff"},

@@ -1,13 +1,18 @@
 ---
 tags:
   - data
+  - business
+  - governance
+  - dataEngineering
 author:
   - jacgit18
+  - chatgpt
 Comments: This documentation discusses what retention targets are in system design.
-Status: Capture
+Status: Done
 Started: 
-EditDate: 
+EditDate: 2024-03-06
 Relates: "[[Database data governance]]"
+Peer Reviewed: "0"
 ---
 The term "retention target" in the context of data design typically refers to the specified duration or period for which certain data should be retained or stored within a system. It's a crucial aspect of data management and governance, as it helps define policies regarding how long data should be kept before it is considered obsolete or eligible for deletion.  
   

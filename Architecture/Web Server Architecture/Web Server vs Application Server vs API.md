@@ -1,80 +1,128 @@
 ---
-tags: 
+tags:
+  - web
+  - servers
+  - API
 author:
   - jacgit18
-Status: 
+  - chatgpt
+Comments: This documentation discusses Web Server vs Application Server vs API.
+Status: Done
 Started: 
-EditDate: 
-Relates:
+EditDate: 2024-03-06
+Relates: 
+Peer Reviewed: "0"
 ---
-Web Server vs Application Server vs API 
+#### Web Server:
 
-web vs application server  
+A web server primarily serves static content and handles HTTP requests from clients. Its main functions include:
 
-web server host a program doesn't necessary execute it because that isnt it,s primary function it is there to provide request to a end user in terms of accessing what you are hosting almost like a basic api but it isn't processing things in terms of running a program 
+- Hosting and delivering files to end users (e.g., HTML, CSS, images).
+- Processing HTTP requests and responding with the appropriate static content.
+- Managing basic routing for different resources.
+- Examples include serving static pages, images, or downloadable files.
 
-an example of this is going to a linux site that have different iso files for there distro versions  
+#### Application Server:
 
-web server process http request 
+An application server is designed to execute dynamic, server-side applications. Key characteristics include:
 
-web app execute a program being hosted by web server 
+- Processing and executing business logic or application code.
+- Supporting dynamic content generation based on user input or data.
+- Managing connections to databases or other backend services.
+- Handling more complex processing beyond serving static files.
 
-so lets say you have tacflo api they just files until it is configured and added to something like Heroku thus it is a backend web app  because it is executing things 
+#### API (Application Programming Interface):
 
-web app server > API > web app server 
+APIs act as intermediaries that allow different software components to communicate. In the context of web development:
 
-web app collect network packets combines packets to form input data 
+- Serving as a contract or language between a source system and a target system.
+- Defining how data is formatted and exchanged between systems.
+- APIs enable interaction between different software applications.
 
-api process data > executes > then create result set 
+#### Web Server vs Application Server:
 
-api is a contract or language between a source system and target system both system understand the data coming in and out in terms of format 
+- **Web Server Hosting:** A web server hosts and delivers static content, handling basic HTTP requests without executing programs.
+  
+- **Application Server Execution:** An application server executes dynamic, server-side applications, processing business logic and generating dynamic content.
 
-web app server formats data from network transfers sending data 
+#### Web App Server and API Interaction:
+
+- **Web App Server Role:** A web app server collects network packets, combines them to form input data, and executes server-side programs.
+  
+- **API Contract:** An API acts as a contract or language between systems, processing data, executing tasks, and generating result sets.
+
+#### Example with Tacflo API:
+
+- **Backend Web App:** Tacflo API, when configured and added to a platform like Heroku, becomes a backend web app that executes tasks based on incoming requests.
+
+#### Data Processing Flow:
+
+- **Web App Server:** Collects network packets, combines them, and executes server-side programs.
+  
+- **API Processing:** Processes data, executes tasks, and creates result sets based on the API contract.
+
+In summary, while a web server handles static content and basic routing, an application server executes dynamic applications with more complex logic. APIs serve as communication contracts, defining how data is formatted and exchanged between different systems. The interaction between web app servers and APIs involves data processing, execution of tasks, and result set creation based on established contracts.
 
 ![[Web Services vs. Web Apps.jpg]]
 
+### Web Server vs Application Server:
 
-A web server accepts and fulfills requests from clients for static content (i.e., HTML pages, files, images, and videos) from a website. Web servers handle HTTP requests and responses only. 
+#### Web Server:
 
-An application server exposes business logic to the clients, which generates dynamic content. It is a software framework that transforms data to provide the specialized functionality offered by a business, service, or application. Application servers enhance the interactive parts of a website that can appear differently depending on the context of the request. 
+A web server fulfills requests from clients for static content, including HTML pages, files, images, and videos, from a website. Key characteristics include:
 
-Web Server 
+- **Content Delivery:** Delivers static content exclusively.
+  
+- **Protocol Usage:** Utilizes the HTTP protocol for content delivery.
+  
+- **Application Scope:** Serves web-based applications only.
+  
+- **Threading:** Lacks support for multi-threading.
+  
+- **Resource Intensity:** Best suited for web traffic that is not highly resource-intensive.
 
-Deliver static content. 
+#### Application Server:
 
-Content is delivered using the HTTP protocol only. 
+An application server exposes business logic to clients, generating dynamic content and transforming data to provide specialized functionality. Essential features include:
 
-Serves only web-based applications. 
+- **Content Delivery:** Delivers dynamic content.
+  
+- **Protocol Diversity:** Provides business logic using various protocols, including HTTP.
+  
+- **Application Scope:** Serves both web and enterprise-based applications.
+  
+- **Threading:** Employs multi-threading to support parallel requests.
+  
+- **Resource Intensity:** Suitable for longer running processes that are resource-intensive.
 
-No support for multi-threading. 
+### APIs, Web Servers, and Application Servers:
 
-Facilitates web traffic that is not very resource intensive. 
+APIs, web servers, and application servers serve distinct purposes in web development:
 
-Application Server 
+#### API (Application Programming Interface):
 
-Delivers dynamic content. 
+- **Definition:** A set of rules and protocols enabling developers to build software applications.
+  
+- **Communication:** Allows different applications to communicate and integrate functionality.
+  
+- **Accessibility:** Can be accessed over the internet.
+  
+- **Usage:** Enables integrations between different systems or exposes data to external developers.
 
-Provides business logic to application programs using several protocols (including HTTP). 
+#### Web Server:
 
-Can serve web and enterprise-based applications. 
+- **Role:** Software running on a server, serving web pages to clients such as web browsers.
+  
+- **Task:** Retrieves requested content and sends it back to the client.
+  
+- **Functions:** Hosts websites, serves static and dynamic content, manages user sessions.
 
-Uses multi-threading to support multiple requests in parallel. 
+#### Application Server:
 
-Facilitates longer running processes that are very resource-intensive .
+- **Function:** Provides a framework for developing and deploying applications.
+  
+- **Components:** Manages database connections, security, and transaction processing.
+  
+- **Runtime Environment:** Executes application code, often used for enterprise-level applications.
 
-
-
-
-
-
-
-
-APIs, web servers, and application servers are all technologies that are commonly used in web development, but they serve different purposes.
-
-An API, or application programming interface, is a set of rules and protocols that developers use to build software applications. APIs allow different applications to communicate with each other, enabling developers to integrate functionality from different systems into their own applications. APIs can be accessed over the internet, and are typically used to enable integrations between different systems or to expose data to external developers.
-
-A web server, on the other hand, is a piece of software that runs on a server and serves web pages to clients, such as web browsers. When a client makes a request for a web page, the web server retrieves the appropriate content and sends it back to the client. Web servers are used to host websites and web applications, and can handle a variety of tasks such as serving static content, handling requests for dynamic content, and managing user sessions.
-
-An application server is a software platform that provides a framework for developing and deploying applications. It typically includes components for managing database connections, security, and transaction processing, and provides a runtime environment for executing application code. Application servers are often used for building and deploying enterprise-level applications, such as customer relationship management (CRM) systems or supply chain management applications.
-
-In summary, APIs are used to enable communication between different applications, web servers are used to serve web pages to clients, and application servers provide a framework for developing and deploying applications.
+In summary, APIs enable communication between different applications, web servers serve web pages to clients, and application servers provide a comprehensive framework for developing and deploying applications, managing various components for enhanced functionality.

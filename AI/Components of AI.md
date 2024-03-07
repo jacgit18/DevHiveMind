@@ -8,7 +8,8 @@ Comments: This documentation discusses different components of AI.
 Status: Done
 Started: 2023-09-29
 EditDate: 2024-02-20
-Relates:
+Relates: 
+Peer Reviewed: "0"
 ---
 Firstly, there is generalized learning in artificial intelligence, where it assimilates information from its surroundings. For instance, when outside, it collects data such as weather conditions, lighting, dimensions, and other relevant factors to adapt and respond to different situations.
 

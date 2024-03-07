@@ -1,12 +1,15 @@
 ---
 tags:
   - methodology
+  - 12FactorApp
 author:
   - jacgit18
-Status: Done
+Comments: This documentation is the official description of Twelve Factor App factor number twelve.
+Status: Final
 Started: 
-EditDate: 
-Relates:
+EditDate: 2024-03-06
+Relates: 
+Peer Reviewed: "1"
 ---
 ### Run admin/management tasks as one-off processes
 

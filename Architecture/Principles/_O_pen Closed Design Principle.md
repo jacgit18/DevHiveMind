@@ -1,12 +1,18 @@
 ---
 tags:
   - SOLID
+  - OOP
+  - mutability
+  - principles
 author:
   - jacgit18
-Status: 
+  - chatgpt
+Comments: This documentation discusses Open Close design in SOLID principles.
+Status: Refinement
 Started: 
-EditDate: 
-Relates:
+EditDate: 2024-03-06
+Relates: 
+Peer Reviewed: "0"
 ---
 According to tho this OOP design principle, software entities like (“Classes, modules, methods, functions, etc...) should be Open for extension (new functionality) and Closed for modification.”
 

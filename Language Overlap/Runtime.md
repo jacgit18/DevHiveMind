@@ -1,12 +1,18 @@
 ---
-tags: 
+tags:
+  - languageOverlap
+  - codeExecution
+  - memory
+  - exception
 author:
   - jacgit18
-Comments: This documentation discusses
-Status: Capture
+  - chatgpt
+Comments: This documentation discusses runtime execution.
+Status: Done
 Started: 2024-02-26
-EditDate: 
-Relates:
+EditDate: 2024-03-06
+Relates: 
+Peer Reviewed: "0"
 ---
 In programming, the term "runtime" refers to the period during which a program is executing or running on a computer. It encompasses the time from the start of a program to its termination. During the runtime, the program interacts with the underlying hardware and performs the tasks specified by its source code.
 

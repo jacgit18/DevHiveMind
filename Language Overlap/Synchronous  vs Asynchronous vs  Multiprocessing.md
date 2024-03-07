@@ -2,12 +2,16 @@
 tags:
   - synchronous
   - multiThreading
+  - concurrency
 author:
   - jacgit18
-Status: 
+  - chatgpt
+Comments: This documentation discusses the difference between Synchronous, Asynchronous, and Multiprocessing.
+Status: Refinement
 Started: 
-EditDate: 
-Relates:
+EditDate: 2024-03-06
+Relates: "[[Asynchronous Programming]]"
+Peer Reviewed: "0"
 ---
 
 

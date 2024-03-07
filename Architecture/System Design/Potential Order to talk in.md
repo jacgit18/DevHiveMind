@@ -1,16 +1,18 @@
 ---
-tags: 
+tags:
+  - systemDesign
+  - interview
+  - OrderOfOperations
 author:
   - jacgit18
-Status: Capture
+  - chatgpt
+Comments: This a temp side not to determine what order to talk about different system design components in the system design interview.
+Status: Draft
 Started: 
-EditDate: 
-Relates:
+EditDate: 2024-03-06
+Relates: "[[System Design Thought Process Flow]]"
+Peer Reviewed: "0"
 ---
-
-
-
-
 1. **Requirements Clarification:**
    - Understand the goals and constraints of the system.
    - Ask relevant questions to gather more information.

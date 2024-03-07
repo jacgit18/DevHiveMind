@@ -1,25 +1,31 @@
 ---
-tags: 
+tags:
+  - proxy
+  - API
+  - loadBalancer
 author:
   - jacgit18
-Status: Capture
+  - chatgpt
+Comments: This documentation discusses the difference between reverse proxies, API gateway, and load balancer.
+Status: Done
 Started: 
-EditDate: 
+EditDate: 2024-03-06
 Relates: "[[Proxy]]"
+Peer Reviewed: "0"
 ---
 ![[Proxy v Gateway v Balancer .jpeg]]
 
 As modern websites and applications are like busy beehives, we use a variety of tools to manage the buzz. Here we'll explore three superheroes: Reverse Proxy, API Gateway, and Load Balancer.  
   
-🔹Reverse Proxy: change identity  
+## Reverse Proxy: change identity  
 - Fetching data secretly, keeping servers hidden.  
 - Perfect for shielding sensitive websites from cyber-attacks and prying eyes.  
   
-🔹API Gateway: postman  
+## API Gateway: postman  
 - Delivers requests to the right services.  
 - Ideal for bustling applications with numerous intercommunicating services.  
   
-🔹Load Balancer: traffic cop  
+## Load Balancer: traffic cop  
 - Directs traffic evenly across servers, preventing bottlenecks  
 - Essential for popular websites with heavy traffic and high demand.  
   

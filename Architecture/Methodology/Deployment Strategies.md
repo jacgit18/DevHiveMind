@@ -1,12 +1,17 @@
 ---
-tags: 
+tags:
+  - devops
+  - deployment
+  - systemDesign
 author:
   - jacgit18
   - chatgpt
-Status: Capture
+Comments: This documentation discusses Deployment Strategies.
+Status: Done
 Started: 
-EditDate: 
-Relates:
+EditDate: 2024-03-06
+Relates: 
+Peer Reviewed: "0"
 ---
 When it comes to deploying a codebase, there are several deployment strategies or approaches to consider. The choice of deployment strategy depends on the application's architecture, development practices, team requirements, and infrastructure capabilities. Here are some common types of deployment for a codebase:
 

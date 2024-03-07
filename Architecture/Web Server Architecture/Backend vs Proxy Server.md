@@ -1,11 +1,17 @@
 ---
-tags: 
+tags:
+  - servers
+  - backend
+  - proxy
 author:
   - jacgit18
+  - chatgpt
+Comments: This documentation discusses backend  server and proxy server.
 Status: Done
 Started: 
-EditDate: 
+EditDate: 2024-03-06
 Relates: "[[Proxy]]"
+Peer Reviewed: "0"
 ---
 **Backend Servers:**  
 - A backend server refers to the server-side of an application, responsible for processing requests, handling business logic, and interacting with databases.  
@@ -25,3 +31,5 @@ A CDN is a web server that acts like a cache and communicate with the origin bac
 - Proxies can be configured to route requests to different backend servers based on certain criteria, enhancing scalability and performance.  
   
 In summary, while a backend server is primarily responsible for handling application logic and data, a proxy server serves as an intermediary between clients and servers, offering additional functionality such as load balancing, caching, or security measures. They can work together in a system architecture to optimize various aspects of communication between clients and servers.
+
+

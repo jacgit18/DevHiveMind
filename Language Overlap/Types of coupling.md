@@ -1,32 +1,49 @@
 ---
-tags: 
+tags:
+  - data
+  - ClassStructure
+  - coupling
+  - modularity
+  - languageOverlap
 author:
   - jacgit18
+  - chatgpt
+Comments: This documentation discusses types of coupling in software development.
 Status: Refinement
 Started: 
-EditDate: 
+EditDate: 2024-03-06
 Relates: "[[Coupling vs Cohesion]]"
+Peer Reviewed: "0"
 ---
-## Best to Worst 
+Coupling measures the degree of interdependence between software modules; lower coupling is generally preferred as it indicates less dependency and higher modularity. Here's an outline from less to more tightly coupled scenarios:
 
-Data coupling: When one function passes data to another function that may be used for calculation. Although this is quite common, the passed data must have the same interpretation across the two functions. 
+### 1. **Data Coupling**(Best)
+- **Description**: Functions share data through parameters, emphasizing direct and clear communication with consistent data interpretation.
 
-**Control coupling**: When one function controls the flow of another function. 
+### 2. **Routine Call Coupling**
+- **Description**: One function calls another without passing any data. This is a basic level of coupling inherent in most software designs.
 
-**External**: When communicating with an external system. 
+### 3. **Stamp Coupling**
+- **Description**: A form of data coupling where a composite data structure (e.g., an object or struct) is passed between modules, requiring them to understand its structure.
 
-**Common coupling**: Is when two classes access the same shared data (e.g., a global variable). 
+### 4. **Type-use Coupling**
+- **Description**: One module defines a data type that another module uses, either as a member data type or through function calls.
 
-**Content coupling**: Is when one class modifies the content of another class. For example, in C++, friend classes can access each other’s private members. However, the benefit of friend classes is that they can increase the performance of a large-scale program by removing one layer of interaction. 
+### 5. **Import Coupling**
+- **Description**: A module uses definitions from another module, such as when libraries are imported. Relies on external modules but can lead to dependency issues.
 
-## Others 
+### 6. **External Coupling**
+- **Description**: Occurs when modules interact with external systems or hardware, linking module functionality to external processes or data structures.
 
-**Routine call coupling**: When one function calls another function without passing any data as arguments. Almost every program has a function that is calling another function(s), which is why it is impossible to completely remove coupling. 
+### 7. **Control Coupling**
+- **Description**: One module controls the flow of another by passing information on what to do (e.g., a flag or control variable), introducing dependencies on decision-making logic.
 
-**Type-use coupling**: When a data member of class B is of class A type. 
+### 8. **Common Coupling**
+- **Description**: Multiple modules share access to the same global data, leading to high inter-module dependency and potential for side-effects across the system.
 
-**Stamp coupling**: When the signature of one of Class B's functions has class A as its argument or return type. 
+### 9. **Content Coupling**(Worst)
+- **Description**: The highest and least desirable form of coupling, where one module directly affects the internal workings of another, such as modifying private data.
 
-**Import coupling**: When a library is imported for use inside a program. For example, when include and import statements are used in #Ctt and #Java, respectively.
+## Summary
 
-C++ = Ctt
+The goal in software design is often to minimize coupling where possible, striving for lower levels like data or routine call coupling and avoiding higher levels like common or content coupling. Lower coupling enhances modularity, making the software easier to understand, maintain, and extend.

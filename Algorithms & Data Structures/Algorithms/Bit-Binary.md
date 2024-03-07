@@ -4,6 +4,7 @@ tags:
   - CodingProblem
 author:
   - jacgit18
+  - chatgpt
 Comments: This documentation discusses what bit binary is.
 Status: Refinement
 Started: 

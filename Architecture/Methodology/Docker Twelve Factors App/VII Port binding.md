@@ -1,11 +1,19 @@
 ---
-tags: 
+tags:
+  - methodology
+  - Docker
+  - 12FactorApp
+  - CodebaseDecision
+  - networking
 author:
   - jacgit18
-Status: 
+  - chatgpt
+Comments: This documentation Twelve Factor App, factor seven in the context of Docker.
+Status: Done
 Started: 
-EditDate: 
-Relates:
+EditDate: 2024-03-06
+Relates: 
+Peer Reviewed: "1"
 ---
 Port binding: Your app should be self-contained and bind to a specific port  for external access. Docker enables you to expose and map container ports to host ports, allowing external access to the app through a designated port. 
 

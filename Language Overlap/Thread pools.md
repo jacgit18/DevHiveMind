@@ -3,10 +3,12 @@ tags:
   - multiThreading
 author:
   - jacgit18
+Comments: This documentation discusses thread pools.
 Status: Refinement
 Started: 
-EditDate: 
-Relates:
+EditDate: 2024-03-06
+Relates: 
+Peer Reviewed: "0"
 ---
 ## What's a thread pool?
 

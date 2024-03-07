@@ -1,12 +1,15 @@
 ---
 tags:
   - methodology
+  - 12FactorApp
 author:
   - jacgit18
-Status: Done
+Comments: This documentation is the official description of Twelve Factor App factor number ten.
+Status: Final
 Started: 
-EditDate: 
-Relates:
+EditDate: 2024-03-06
+Relates: 
+Peer Reviewed: "1"
 ---
 ### Keep development, staging, and production as similar as possible
 

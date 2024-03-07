@@ -1,13 +1,19 @@
 ---
-tags: 
+tags:
+  - asynchronous
+  - codeExecution
+  - functionCalls
 author:
   - jacgit18
-Status: 
+  - chatgpt
+Comments: This documentation discusses setTimeout and setInterval.
+Status: Done
 Started: 
-EditDate: 
-Relates:
+EditDate: 2024-03-06
+Relates: 
+Peer Reviewed: "0"
 ---
-Timeout is a delayed call & interval is a continuous call until set time elapses  
+Timeout is a delayed call & interval is a continuous call until set time elapses.  
 
 The global setTimeout() method sets a timer which executes a function or specified piece of code once the timer expires. 
 
