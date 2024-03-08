@@ -49,7 +49,6 @@
     "#todo/low/finance",
     "#todo/high/gen",
     "#todo/high/fin",
-    "#todo/low/dev/sideresearch",
     "#todo/high/future",
     "#todo/tosort",
     "#todo/fun/gaming",
@@ -69,7 +68,9 @@
     "#todo/med/dev",
     "#todo/perpetual/dev",
     "#todo/read/books",
-    "#todo/high/research"
+    "#todo/high/research",
+    "#todo/high/dev",
+    "#todo/low/dev/sideresearch"
   ],
   "_hiddenTags": []
 }
