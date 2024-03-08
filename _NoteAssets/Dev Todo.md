@@ -13,7 +13,7 @@ Relates:
 
 # <mark style="background: #FF5582A6;">Current </mark>
 #todo/High/Dev 
-- [ ] ***Refine notes based subject matter you are practicing like domain driven design not currently using it so low priority revisit and refine when actually using it ***
+- [ ] ***Refine notes based subject matter you are actively practicing like domain driven design not currently using it so low priority so when yo refine when actually using it ***
 - [ ] Edit article on [[Bootcamp]] ^923f61
 - [ ] Edit article on [Note taking](Note%20taking.md) ^776056
 - [ ] [[Data Project Idea]]
@@ -125,7 +125,6 @@ When you want to learn new languages in the future think about every time you ha
 - [ ] **Server-Side vs. Single-Page Applications:** Analyze and contrast the advantages and use cases of server-side rendering versus single-page applications, gaining a deep understanding of when to use each approach.
 - [ ] **Whiteboarding Abstraction Skills:** Acquire the art of creating lucid and effective abstractions when whiteboarding technical concepts, a vital skill for excelling in interviews.
 - [ ] create a long list LinkedIn post ideas about popular historical leaders like for example martin Luther king, also events around the year like breast cancer awareness and holidays give ideas for each month in the year on these topic
-- [ ] Look into [[Project idea]]
 - [ ] Search engine optimized for developers to find projects to contribute to or find common errors and issues
 - [x] Play around with lint more ✅ 2024-01-06
 

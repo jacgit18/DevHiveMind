@@ -34,7 +34,6 @@
     "#todo/read/api",
     "#todo/read/web",
     "#todo/read/obsidian",
-    "#todo/read/books",
     "#todo/read/chapgpt",
     "#todo/read/systemd",
     "#todo/med/future",
@@ -51,7 +50,6 @@
     "#todo/high/gen",
     "#todo/high/fin",
     "#todo/low/dev/sideresearch",
-    "#todo/perpetual/dev",
     "#todo/high/future",
     "#todo/tosort",
     "#todo/fun/gaming",
@@ -66,11 +64,12 @@
     "#todo/read/interview",
     "#todo/perpetual",
     "#todo/low/research",
-    "#todo/high/research",
-    "#todo/high/dev",
     "#todo/high/dev/codingchallenge",
     "#todo/med/dev/codingchallenge",
-    "#todo/med/dev"
+    "#todo/med/dev",
+    "#todo/perpetual/dev",
+    "#todo/read/books",
+    "#todo/high/research"
   ],
   "_hiddenTags": []
 }
