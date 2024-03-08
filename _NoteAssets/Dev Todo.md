@@ -13,7 +13,7 @@ Relates:
 
 # <mark style="background: #FF5582A6;">Current </mark>
 #todo/High/Dev 
-- [ ] ***Refine notes based subject matter you are actively practicing like domain driven design not currently using it so low priority so when yo refine when actually using it ***
+- [ ] ***Refine notes based subject matter you are actively practicing like domain driven design not currently using it so low priority so when you actually using it refine documentation on it***
 - [ ] Edit article on [[Bootcamp]] ^923f61
 - [ ] Edit article on [Note taking](Note%20taking.md) ^776056
 - [ ] [[Data Project Idea]]
@@ -24,17 +24,11 @@ Relates:
 - [ ] Looking to automating stock buys
 - [ ] Look if you can convert Algorithm Patterns solutions into declarative solutions still using the pattern
 - [ ] Develop practical fundamental skills around design patterns 
-- [ ] Code base decisions made at low level in the design of classes and functions and decisions being made  
-- [ ] Code base decisions made at a higher level in terms of components and services and overall architecture and put in the pieces together  
-- [ ] And maybe even a higher level with technologies and stuff
 - [ ] Design patterns mindmap
 - [ ] look into which info-graphics can be recreated and integrated in to note vault 
 - [ ] Use dataView to sort inputs by status  
-- [ ] Look into 12 Factor microservice
 - [ ] identify areas of automation were ever you see 
 - [ ] Identify most expensive manual process  
-- [ ] look a little into alt ways to exclude dir
-- [ ] find a way to categorize code snippets that aren't in cold snippet folder to make it easier to search probably use tags
 - [ ] Maybe try doing this [[WebSocket chat client]]
 
 
@@ -138,10 +132,9 @@ When you want to learn new languages in the future think about every time you ha
 
 ## Medium
 #todo/Read/Interview
-- [x] [[Top 10 Microservices Design Principles and Best Practices for Experienced Developers  by Soma  Javarevisited  Medium]]
 - [ ] [[Obsidian Understanding its Core Design Principles  by TfTHacker  Obsidian Observer  Medium]]
 - [ ] [[My Obsidian Setup — My Notes and My Theme settings  by Nuno Campos  Obsidian Observer  Apr, 2023  Medium]]
-- [ ] [[Mastering the Art of API Design - by Alex Xu]]
+
 
 ## <mark style="background: #BBFABBA6;">Low</mark>
 #todo/Low/Dev 
