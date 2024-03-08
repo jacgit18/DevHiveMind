@@ -6,6 +6,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
+Comments: Just a high level view that can be expanded on or relate to other topics in the vault.
 Purpose: This documentation discusses layers of AI.
 Status: Refinement
 Started: 
