@@ -6,7 +6,7 @@ author:
   - jacgit18
   - chatgpt
 Purpose: This documentation discusses caret symbol.
-Status: Done
+Status: Final
 Started: 
 EditDate: 2024-03-05
 Relates: "[[Markdown to use]]"

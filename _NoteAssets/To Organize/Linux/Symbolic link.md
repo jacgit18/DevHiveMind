@@ -1,15 +1,21 @@
 ---
-tags: 
+tags:
+  - linux
 author:
   - jacgit18
-Status: 
+  - chatgpt
+Status: Done
+Comments: Placeholder comment any thing else you want to mention about the document.
+Purpose: This documentation discusses symbolic links in linux.
 Started: 
-EditDate: 
-Relates:
+EditDate: 2024-03-09
+Relates: 
+Peer Reviewed: "0"
 ---
 In Linux, a soft link, also known as a symbolic link or symlink, is a special type of file that acts as a reference or pointer to another file or directory. It provides a way to create shortcuts or aliases to files and directories, allowing you to access them easily without having to navigate through the entire directory structure.
 
-Here are some key points about soft links in Linux:
+#todo/Low/Read 
+- [ ] Here are some key points about soft links in Linux:
 
 1. Structure: A soft link is essentially a file that contains the path or location of the target file or directory. It has its own unique inode (an index node that stores metadata about the file) and filename. The target can be a file or a directory on the same file system or even on a different partition or device.
 

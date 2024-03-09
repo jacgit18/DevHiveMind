@@ -66,10 +66,11 @@
     "#todo/high/dev/codingchallenge",
     "#todo/med/dev/codingchallenge",
     "#todo/med/dev",
-    "#todo/perpetual/dev",
-    "#todo/read/books",
     "#todo/high/research",
     "#todo/high/dev",
+    "#todo/read/books",
+    "#todo/read",
+    "#todo/low/read",
     "#todo/low/dev/sideresearch"
   ],
   "_hiddenTags": []
