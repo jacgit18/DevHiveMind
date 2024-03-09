@@ -26,7 +26,7 @@ Relates:
 - [ ] Develop practical fundamental skills around design patterns 
 - [ ] Design patterns mindmap
 - [ ] look into which info-graphics can be recreated and integrated in to note vault 
-- [ ] Use dataView to sort inputs by status  
+
 - [ ] identify areas of automation were ever you see 
 - [ ] Identify most expensive manual process  
 - [ ] Maybe try doing this [[WebSocket chat client]]

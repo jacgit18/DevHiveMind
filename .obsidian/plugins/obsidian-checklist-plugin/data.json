@@ -69,7 +69,8 @@
     "#todo/high/research",
     "#todo/high/dev",
     "#todo/low/dev/sideresearch",
-    "#todo/read/books"
+    "#todo/read/books",
+    "#todo/read"
   ],
   "_hiddenTags": []
 }
