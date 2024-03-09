@@ -1,16 +1,14 @@
 ---
-tags:
-  - project
-  - todo/High/Dev
+tags: 
 author:
   - jacgit18
-  - chatgpt
-Comments: 
-Purpose: 
+Comments: Placeholder comment any thing else you want to mention about the document.
+Purpose: This documentation discusses
 Status: Draft
 Started: 
 EditDate: 
-Relates:
+Relates: 
+Peer Reviewed: "0"
 ---
 | *Users* |               |           | FK  | FK table name | Primary | Length | Allow Null | Default             |
 | ------- | ------------- | --------- | --- | ------------- | ------- | ------ | ---------- | ------------------- |
@@ -25,7 +23,6 @@ Relates:
 |         | date_created  | TIMESTAMP | 0   |               | 0       |        | N          | 0000-00-00 00:00:00 |
 |         | date_modified | TIMESTAMP | 0   |               | 0       |        | N          | 0000-00-00 00:00:00 |
 
-^83f1d1
 
 
 
@@ -44,6 +41,6 @@ Relates:
 |  | date_created | TIMESTAMP | 0 |  | 0 |  | N | 0000-00-00 00:00:00 |
 |  |  |  |  |  |  |  |  |  |
 
-^cc78fc
+
 
 
