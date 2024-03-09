@@ -130,10 +130,6 @@ When you want to learn new languages in the future think about every time you ha
 - [ ] Clean Code A Handbook of Agile Software Craftsmanship 📅 2023-12-30 
 - [ ] Design Patterns
 
-## Medium
-#todo/Read/Interview
-- [ ] [[Obsidian Understanding its Core Design Principles  by TfTHacker  Obsidian Observer  Medium]]
-- [ ] [[My Obsidian Setup — My Notes and My Theme settings  by Nuno Campos  Obsidian Observer  Apr, 2023  Medium]]
 
 
 ## <mark style="background: #BBFABBA6;">Low</mark>
@@ -219,13 +215,13 @@ Ask chat GPT how would you write integration test for a particular function
 ![[Researching.gif]]
 #todo/Low/Dev/SideResearch
 - [ ] Personal online DATA [https://www.saymine.com](https://www.saymine.com/) 
-- [ ] Phone [https://noagendaphone.com/](https://noagendaphone.com/)  
-- [ ] https://awesomewm.org
+
+
 - [ ] ascii art  
 - [ ] does nvidia support multi monitor free sync monitor
 - [ ] find out how to backup ide and text editor plugins  
-- [ ] separate password for root and user  
-- [ ] look into setting up eclipse default vm arguments for javafx  
+
+
 - [ ] tech law  
 - [ ] editing gnome dconf  
 - [ ] Pop3 email server for email privacy  
@@ -242,8 +238,7 @@ Ask chat GPT how would you write integration test for a particular function
 - [ ] motherboard repair  
 - [ ] pc water cooling loop order  
 - [ ] open source partition recovery software  
-- [ ] what is tpn for networking  
-- [ ] ipmi  
+
 - [ ] Set up and understand Bitcoin wallet  
 - [ ] Monitor with built in kvm  
 - [ ] remove roles and features server 2016  
