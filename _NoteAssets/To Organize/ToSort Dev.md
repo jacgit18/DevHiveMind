@@ -1,12 +1,14 @@
 ---
 tags: 
 author:
-  - jacgit18
-Purpose: Need to cleanup.
+  - gitUserNamePlaceHolder
+Comments: Placeholder comment any thing else you want to mention about the document.
+Purpose: This documentation discusses
 Status: Perpetual
 Started: 
 EditDate: 
-Relates:
+Relates: 
+Peer Reviewed: "0"
 ---
 ![[Things Todo.gif]]
 
