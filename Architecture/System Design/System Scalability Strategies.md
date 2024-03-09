@@ -5,11 +5,13 @@ tags:
 author:
   - jacgit18
   - chatgpt
+Comments: 
 Purpose: This documentation discusses the three primary scaling methodology that you end up picking from.
 Status: Refinement
 Started: 
 EditDate: 
-Relates:
+Relates: 
+Peer Reviewed: "0"
 ---
 Designing a scalable software system for large-scale operations is a complex task that involves careful consideration of various options, each with its own set of advantages and disadvantages. Despite the multitude of choices, three primary methods stand out as key approaches to achieving scalability:
 
