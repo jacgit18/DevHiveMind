@@ -188,9 +188,9 @@ Ask chat GPT how would you write integration test for a particular function
 # Pull Into Current
 
 ## <mark style="background: #FF5582A6;">Future Long-term Spread BAU</mark>
-#todo/Perpetual/Dev 
+
 - [ ] Identify things to focus on and start doing and prioritize other things and where they should go in terms of bucket also breath and depth  
-- [ ] How to design an app using: mock-ups, models, and routes
+
 - [ ] Dealing with package dependencies
 
 
