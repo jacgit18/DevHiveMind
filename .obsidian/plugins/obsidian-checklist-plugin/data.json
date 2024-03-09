@@ -68,10 +68,10 @@
     "#todo/med/dev",
     "#todo/high/research",
     "#todo/high/dev",
-    "#todo/low/dev/sideresearch",
     "#todo/read/books",
     "#todo/read",
-    "#todo/low/read"
+    "#todo/low/read",
+    "#todo/low/dev/sideresearch"
   ],
   "_hiddenTags": []
 }

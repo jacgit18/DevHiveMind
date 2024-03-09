@@ -181,7 +181,6 @@ Ask chat GPT how would you write integration test for a particular function
 
 
 - [ ] Identify things to focus on and start doing and prioritize other things and where they should go in terms of bucket also breath and depth  
-
 - [ ] Dealing with package dependencies
 
 
@@ -214,17 +213,9 @@ Ask chat GPT how would you write integration test for a particular function
 
 ![[Researching.gif]]
 #todo/Low/Dev/SideResearch
-- [ ] Personal online DATA [https://www.saymine.com](https://www.saymine.com/) 
-
-
 - [ ] ascii art  
 - [ ] does nvidia support multi monitor free sync monitor
 - [ ] find out how to backup ide and text editor plugins  
-
-
-- [ ] tech law  
-- [ ] editing gnome dconf  
-- [ ] Pop3 email server for email privacy  
 - [ ] ASUS Tinker Board  
 - [ ] why bridge network adapters  
 - [ ] blockvault  
@@ -238,7 +229,6 @@ Ask chat GPT how would you write integration test for a particular function
 - [ ] motherboard repair  
 - [ ] pc water cooling loop order  
 - [ ] open source partition recovery software  
-
 - [ ] Set up and understand Bitcoin wallet  
 - [ ] Monitor with built in kvm  
 - [ ] remove roles and features server 2016  
