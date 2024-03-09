@@ -184,11 +184,6 @@ Ask chat GPT how would you write integration test for a particular function
 
 
 
-
-# Pull Into Current
-
-## <mark style="background: #FF5582A6;">Future Long-term Spread BAU</mark>
-
 - [ ] Identify things to focus on and start doing and prioritize other things and where they should go in terms of bucket also breath and depth  
 
 - [ ] Dealing with package dependencies
@@ -200,17 +195,12 @@ Ask chat GPT how would you write integration test for a particular function
 
 # <mark style="background: #FF5582A6;">Future immediate</mark>
   #todo/High/Future
--[ ]
+
 
   
-  
-
   
 ## <mark style="background: #FFB86CA6;">Future Med</mark>
 #todo/Med/Future
-- [ ]  [https://www.geeksforgeeks.org/convert-a-string-into-a-square-matrix-grid-of-characters/](https://www.geeksforgeeks.org/convert-a-string-into-a-square-matrix-grid-of-characters/)    
-- [ ] [https://stackoverflow.com/questions/360040/which-is-faster-hash-lookup-or-binary-search](https://stackoverflow.com/questions/360040/which-is-faster-hash-lookup-or-binary-search)
-
 
 
 ## <mark style="background: #BBFABBA6;">Future Low</mark>
