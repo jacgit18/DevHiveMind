@@ -10,8 +10,8 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Purpose: This documentation discusses order to talk about system in system design interview.
 Comments: Still cleaning up this documentation I might convert to a mind map or something visual like some type of decision tree.
+Purpose: This documentation discusses order to talk about system in system design interview.
 Status: Refinement
 Started: 2024-01-04
 EditDate: 2024-01-26

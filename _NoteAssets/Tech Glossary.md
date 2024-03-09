@@ -4,11 +4,13 @@ tags:
 author:
   - jacgit18
   - chatgpt
+Comments: 
 Purpose: This documentation discusses this is a glossary of technical terms with a brief explanation of technical jargon that can be backed link to.
 Status: Refinement
 Started: 
 EditDate: 2024-03-03
-Relates:
+Relates: 
+Peer Reviewed: "0"
 ---
 - **API (Application Programming Interface)**: It's a software-to-software interface enabling data exchange between applications, forming the backbone of modern technology.
 

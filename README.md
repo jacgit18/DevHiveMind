@@ -25,12 +25,13 @@ I encourage contributions from the community. Here are some best practices for m
 
 - **Adding Authors**: Include yourself as an author or attribute authors to the respective notes to give credit for contributions. It's important to acknowledge and appreciate the work of contributors.
 
-
 - **Sharing Personal Experience**: I also believe in the value of personal experiences. Contributors are encouraged to share their real-world experiences in companies and teams. These stories can provide valuable insights, lessons learned, and tips for navigating the industry.
 
 - **Draft Pull Requests (PRs)**: If you decide to fork an initial project for your repository, consider using draft PRs for contributions. This allows contributors to collaborate on changes before merging them. It's a good practice for maintaining transparency and ensuring that everyone is on the same page.
 
 ### Peer Review Guideline
+When submitting a request to merge, please direct it towards the Peer Review Branch.
+
 1. **Final**: These notes represent the pinnacle of quality within your system. They are detailed, grammatically sound, and structurally solid. Each one is enriched with relevant backlinks and tags, ensuring seamless integration into the larger knowledge vault. While they are considered complete, there is always a possibility for minor improvements, such as updating tags to reflect evolving topics or expanding the vault. Crucially, notes at this stage have either undergone peer review or are marked for it, confirming their accuracy and thoroughness. Notes with a "peer reviewed" property value of 1 have completed this process.
 
 2. **Done**: Notes classified as Done are robust in content and structure, yet still have potential for greater integration within the vault. This could involve adding additional backlinks to establish stronger connections with related notes or incorporating new tags to enhance findability and categorization. Although these notes do not require significant modifications to their core content, the process of enriching their network within the vault can increase their overall utility. Like Final notes, those in the Done category should also undergo peer review, marked by a "peer reviewed" property value of 1 once reviewed.
