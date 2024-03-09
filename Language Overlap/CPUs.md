@@ -52,7 +52,7 @@ Multiprocessing is good for scaling up to be used on multiple machines and can
 #threads
 Why use multithreading in your applications;; concurrent execution of multiple threads
 What is a daemon thread;; A daemon thread is a low-priority thread used for unique task
-
+Can you explain what the thread scheduler is and its relationship to thread priority;; The thread scheduler is a part of the operating system that manages the execution of threads, deciding which thread runs at any given time based on their priority and other factors. 
 
 
 
