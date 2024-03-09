@@ -19,11 +19,9 @@ This Software Development Knowledge Repository is a centralized and organized co
 
 I encourage contributions from the community. Here are some best practices for maintaining and growing the repository:
 
-- **Updating Existing Notes**: Contributors can update existing notes to keep them current by adding yourself as a author and update the "EditDate" property.
+- **Updating Existing Notes**: Contributors can update existing notes to keep them current by adding yourself as a author you can use github username and update the "EditDate" property if making changes to existing notes.
 
-- **Creating New Notes**: When creating new notes, use Markdown templates to maintain consistency in formatting. Obsidian can help with this using custom templates by pressing `alt + n`. You can create your own templates to suit specific note types or add templates that you found effective.
-
-- **Adding Authors**: Include yourself as an author or attribute authors to the respective notes to give credit for contributions. It's important to acknowledge and appreciate the work of contributors.
+- **Creating New Notes**: When creating new notes, use Markdown templates to maintain consistency in formatting specifically [[_Regular  Note]]template. Obsidian can help with this using custom templates by pressing `alt + n`. You can create your own templates to suit specific note types or add templates that you found effective.
 
 - **Sharing Personal Experience**: I also believe in the value of personal experiences. Contributors are encouraged to share their real-world experiences in companies and teams. These stories can provide valuable insights, lessons learned, and tips for navigating the industry.
 
