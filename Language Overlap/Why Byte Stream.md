@@ -9,7 +9,7 @@ Status: Done
 Started: 
 EditDate: 2024-02-17
 Relates: "[[Byte stream]]"
-Peer Reviewed: "0"
+Peer Reviewed: 0
 ---
 Converting objects to byte streams, also known as [[Serialization and Deserialization |serialization]], serves several purposes in Java programming. Here are a few reasons why you might want to convert objects to byte streams:
 

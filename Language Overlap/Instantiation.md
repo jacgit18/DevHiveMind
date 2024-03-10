@@ -6,14 +6,13 @@ author:
   - jacgit18
   - chatgpt
 Purpose: This documentation discusses Instantiation.
-Status: Capture
+Status: Done
 Started: 
 EditDate: 2024-03-05
 Relates: "[[Class Instance]]"
-Peer Reviewed: "0"
+Peer Reviewed: 0
 ---
 In programming, instantiation typically refers to the process of creating an instance of a class, which can represent an object or, in the context of servers and microservices, an independent unit or occurrence. It involves allocating memory and setting up the initial state of the instance based on the blueprint provided by the class or template.
-
 
 ```typescript
 class MyClass {

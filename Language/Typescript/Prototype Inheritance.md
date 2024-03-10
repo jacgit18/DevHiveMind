@@ -10,7 +10,7 @@ Status: Capture
 Started: 2024-02-04
 EditDate: 2024-02-04
 Relates: "[[Prototypes]]"
-Peer Reviewed: "0"
+Peer Reviewed: 0
 ---
 JavaScript's prototype inheritance provides a mechanism for objects to inherit properties and methods from other objects. While JavaScript does not have traditional classes like some other programming languages, it introduces syntax sugar that mimics class-based syntax. This includes the `class`, `extends`, and `super` keywords.
 

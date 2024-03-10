@@ -11,7 +11,7 @@ Status: Refinement
 Started: 
 EditDate: 2024-03-05
 Relates: 
-Peer Reviewed: "0"
+Peer Reviewed: 0
 ---
 Exception handling stands as a cornerstone in software development, serving as a shield against unforeseen events or errors that could derail a program's normal execution. These events might arise from invalid inputs, hardware glitches, network disturbances, or simple programming oversights.
 

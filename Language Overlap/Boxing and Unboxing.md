@@ -11,7 +11,7 @@ Status: Done
 Started: 
 EditDate: 2024-03-04
 Relates: 
-Peer Reviewed: "0"
+Peer Reviewed: 0
 ---
 1. Unboxing: is the process of converting a wrapper class object to its corresponding primitive type. In Java, automatic unboxing is performed when a wrapper object is assigned to a primitive variable. Here's an example:
 

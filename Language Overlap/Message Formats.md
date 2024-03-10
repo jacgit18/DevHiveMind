@@ -10,7 +10,7 @@ Status: Done
 Started: 2024-03-03
 EditDate: 
 Relates: 
-Peer Reviewed: "0"
+Peer Reviewed: 0
 ---
 Message formats go hand in hand with communication protocols; They describe in-wire format of the message being sent. They usually broken down into two types human readable and non-human readable. Examples are XML, JSON and [protocol buffers](https://youtu.be/46O73On0gyI).
 

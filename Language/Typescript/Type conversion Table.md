@@ -10,7 +10,7 @@ Status: Done
 Started: 2023-12-07
 EditDate: 
 Relates: 
-Peer Reviewed: "0"
+Peer Reviewed: 0
 ---
 | Value           | String conversion | Number conversion | Boolean conversion |
 | --------------- | ----------------- | ----------------- | ------------------ |

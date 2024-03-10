@@ -10,7 +10,7 @@ Purpose: This documentation discusses wrappers.
 Started: 
 EditDate: 2024-03-06
 Relates: "[[Primitive Wrappers Across Languages]]"
-Peer Reviewed: "0"
+Peer Reviewed: 0
 ---
 
 ```javascript

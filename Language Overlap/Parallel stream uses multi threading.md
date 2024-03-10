@@ -12,7 +12,7 @@ Status: Refinement
 Started: 
 EditDate: 2024-03-05
 Relates: 
-Peer Reviewed: "0"
+Peer Reviewed: 0
 ---
 Use parallel stream to handle writing to file with multithreading
 
