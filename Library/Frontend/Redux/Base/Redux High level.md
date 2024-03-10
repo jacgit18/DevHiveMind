@@ -12,7 +12,7 @@ Status: Done
 Started: 
 EditDate: 2024-02-07
 Relates: "[[StateChange(view)]]"
-Peer Reviewed: "0"
+Peer Reviewed: 0
 ---
 ![[Redux state flow.gif]]
 

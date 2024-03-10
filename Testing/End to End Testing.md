@@ -9,7 +9,7 @@ Status: Done
 Started: 2024-02-02
 EditDate: 2024-03-07
 Relates: 
-Peer Reviewed: "0"
+Peer Reviewed: 0
 ---
 End-to-end testing, often referred to as such due to its comprehensive nature, is a critical phase in software testing that meticulously examines core functionalities. It is aptly named for its approach of testing the entire application workflow, scrutinizing every component to ensure seamless collaboration and intended functionality.
 

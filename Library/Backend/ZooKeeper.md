@@ -5,11 +5,14 @@ tags:
   - services
 author:
   - jacgit18
+  - chatgpt
+Comments: Placeholder comment any thing else you want to mention about the document.
 Purpose: This documentation discusses Zookeeper service.
 Status: Refinement
 Started: 2023-09-04
 EditDate: 2024-02-03
 Relates: "[[Apache Kafka]]"
+Peer Reviewed: 0
 ---
 ZooKeeper is a distributed coordination service that is often used in distributed systems to manage configuration, maintain synchronization, and provide a high level of availability. In the context of Apache Kafka, ZooKeeper plays a crucial role in managing the Kafka cluster.
 

@@ -14,7 +14,7 @@ Status: Done
 Started: 2024-02-03
 EditDate: 
 Relates: 
-Peer Reviewed: "0"
+Peer Reviewed: 0
 ---
 Eureka is a service discovery(lookup table) tool primarily used in microservices architectures. Developed by Netflix and open-sourced as part of the Netflix OSS (Open Source Software) initiative, Eureka allows services to register themselves dynamically and discover other services within the system.
 

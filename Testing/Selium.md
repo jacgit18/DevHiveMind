@@ -13,7 +13,7 @@ Status: Done
 Started: 
 EditDate: 2024-02-02
 Relates: 
-Peer Reviewed: "0"
+Peer Reviewed: 0
 ---
 Selenium is a comprehensive toolset for web browser automation, encompassing various tools and libraries. It excels in frontend testing using Java and serves as a browser user agent library, allowing users to emulate diverse user interactions. Selenium follows a guiding principle of providing a common interface for major browser technologies, abstracting the complexities underneath. This uniformity enables users to write code for complex workflows, applicable across browsers like Firefox, Internet Explorer, and Chrome.
 

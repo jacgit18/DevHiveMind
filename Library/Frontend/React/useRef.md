@@ -13,7 +13,7 @@ Status: Done
 Started: 
 EditDate: 2024-02-14
 Relates: 
-Peer Reviewed: "0"
+Peer Reviewed: 0
 ---
 ## `useRef` Hook in React:
 
