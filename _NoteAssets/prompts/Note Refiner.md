@@ -5,7 +5,7 @@ tags:
   - ChatGpt
 author:
   - jacgit18
-Comments: 
+Comments: Placeholder comment any thing else you want to mention about the document.
 Purpose: This documentation list prompts for refining technical notes.
 Status: Refinement
 Started: 
