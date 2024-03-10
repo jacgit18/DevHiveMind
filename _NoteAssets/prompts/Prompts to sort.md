@@ -60,3 +60,5 @@ or a small part of a system
   
   
 Act as a senior developer create a partial skeleton of a Java assessment project to complete covering topics like Multi threading, single threading, and concurrency, collections, generics, and annotations to complete about a driving school
+
+
