@@ -10,7 +10,7 @@ Status: Done
 Started: 
 EditDate: 2024-03-03
 Relates: 
-Peer Reviewed: "0"
+Peer Reviewed: 0
 ---
 1. **Class Loader:**
    - The class loader is a vital subsystem responsible for loading class files and executing three key functions: Loading, Linking, and Initialization.

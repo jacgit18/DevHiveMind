@@ -13,7 +13,7 @@ Status: Done
 Started: 
 EditDate: 2024-03-04
 Relates: 
-Peer Reviewed: "0"
+Peer Reviewed: 0
 ---
 In Java Persistence API (JPA), a specification refers to a set of interfaces that define the programming contracts and rules to be followed by providers implementing JPA. These interfaces typically define the methods and behaviors that must be supported by any implementation.
 

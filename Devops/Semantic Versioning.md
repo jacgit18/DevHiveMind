@@ -10,7 +10,7 @@ Status: Done
 Started: 2024-02-07
 EditDate: 
 Relates: 
-Peer Reviewed: "0"
+Peer Reviewed: 0
 ---
 ![[Version.jpeg]]
 Semantic Versioning, often abbreviated as SemVer, is a versioning scheme designed to convey meaning about the underlying changes in software. It consists of three components: MAJOR.MINOR.PATCH.
