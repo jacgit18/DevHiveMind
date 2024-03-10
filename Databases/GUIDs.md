@@ -11,7 +11,7 @@ Status: Done
 Started: 2023-11-23
 EditDate: 
 Relates: 
-Peer Reviewed: "0"
+Peer Reviewed: 0
 ---
 Using GUIDs (Globally Unique Identifiers) in programs offers several benefits:
 

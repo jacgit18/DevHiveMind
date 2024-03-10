@@ -11,7 +11,7 @@ Status: Done
 Started: 
 EditDate: 2024-03-06
 Relates: 
-Peer Reviewed: "0"
+Peer Reviewed: 0
 ---
 In designing a chat application like WhatsApp for a system design interview, consider using a combination of protocols to ensure efficient and secure communication.  
   

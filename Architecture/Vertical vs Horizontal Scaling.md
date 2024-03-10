@@ -11,7 +11,7 @@ Status: Refinement
 Started: 
 EditDate: 2024-02-25
 Relates: "[[Dynamic Scaling]]"
-Peer Reviewed: "0"
+Peer Reviewed: 0
 ---
 ![[System Scaling.png]]
 # Horizontal scaling  

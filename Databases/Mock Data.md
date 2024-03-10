@@ -11,7 +11,7 @@ Status: Done
 Started: 
 EditDate: 
 Relates: 
-Peer Reviewed: "0"
+Peer Reviewed: 0
 ---
 ### Fixtures and Database Objects
 - A fixture is a database object that helps in testing.

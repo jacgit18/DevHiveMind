@@ -10,7 +10,7 @@ Status: Done
 Started: 
 EditDate: 
 Relates: 
-Peer Reviewed: "0"
+Peer Reviewed: 0
 ---
 Cloud databases fall into different service models within cloud computing:
 

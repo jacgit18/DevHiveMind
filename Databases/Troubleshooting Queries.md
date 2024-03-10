@@ -11,7 +11,7 @@ Status: Done
 Started: 
 EditDate: 
 Relates: 
-Peer Reviewed: "0"
+Peer Reviewed: 0
 ---
 When debugging Knex.js queries, you may find the following methods helpful to log or inspect the generated SQL queries:  
   
