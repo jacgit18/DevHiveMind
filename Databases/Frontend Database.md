@@ -10,7 +10,7 @@ Status: Done
 Started: 
 EditDate: 
 Relates: 
-Peer Reviewed: "0"
+Peer Reviewed: 0
 ---
 Some times a database can serve as a frontend where users interact with the data, while a script or a backend process generates or manipulates the data that populates the database records or produces an Excel spreadsheet.
 

@@ -11,7 +11,7 @@ Status: Done
 Started: 
 EditDate: 2024-03-06
 Relates: "[[III Config]]"
-Peer Reviewed: "0"
+Peer Reviewed: 0
 ---
 Making changes to an application's configuration settings, including adjustments to environment variables, is a crucial aspect of managing the operational aspects of the software. This process involves modifying various parameters that influence the behavior of the application, ensuring adaptability to different environments, and accommodating operational requirements. Here's a detailed expansion on this practice:
 

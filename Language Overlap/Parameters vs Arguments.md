@@ -10,7 +10,7 @@ Status: Done
 Started: 2024-03-02
 EditDate: 
 Relates: 
-Peer Reviewed: "0"
+Peer Reviewed: 0
 ---
 While commonly used interchangeably, "parameters" and "arguments" have distinct meanings in the context of programming:
 

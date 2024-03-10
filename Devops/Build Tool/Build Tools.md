@@ -11,7 +11,7 @@ Status: Done
 Started: 
 EditDate: 2024-02-22
 Relates: 
-Peer Reviewed: "0"
+Peer Reviewed: 0
 ---
 ![[Maven v Gradle.png]]
 ***Maven*** and ***Gradle*** belong to the realm of [[build]] tools, serving to automate the process of transforming application source code into publishable artifacts.

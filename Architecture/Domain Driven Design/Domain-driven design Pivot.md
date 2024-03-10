@@ -9,7 +9,7 @@ Status: Done
 Started: 2023-11-27
 EditDate: 
 Relates: 
-Peer Reviewed: "0"
+Peer Reviewed: 0
 ---
 Yes, it's possible for a company to reconsider or shift away from strict adherence to Domain-Driven Design (DDD) principles at certain stages in an application's life cycle. There are a few scenarios where this might happen:  
   

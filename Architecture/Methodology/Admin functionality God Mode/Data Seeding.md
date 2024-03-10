@@ -13,7 +13,7 @@ Status: Done
 Started: 
 EditDate: 2024-03-06
 Relates: 
-Peer Reviewed: "0"
+Peer Reviewed: 0
 ---
 Populating the database with initial or test data is a critical step in ensuring a consistent and functional starting point for an application. This process involves inserting predefined data into the database tables to simulate real-world scenarios, facilitate testing, and support the initial usage of the application. Here's an in-depth expansion on this practice:
 

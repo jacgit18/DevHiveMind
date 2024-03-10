@@ -9,7 +9,7 @@ Status: Done
 Started: 
 EditDate: 2024-02-22
 Relates: 
-Peer Reviewed: "0"
+Peer Reviewed: 0
 ---
 Docker and dockerd, as well as container and containerd, are related terms in the context of containerization and container management, but they refer to different components within the container ecosystem.
 

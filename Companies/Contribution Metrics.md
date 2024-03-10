@@ -6,13 +6,13 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: 
+Comments: Placeholder comment any thing else you want to mention about the document.
 Purpose: This documentation discusses career metrics to track.
 Status: Done
 Started: 
 EditDate: 2024-03-08
 Relates: "[[12 Key Metrics for Measuring Service Performance]]"
-Peer Reviewed: "0"
+Peer Reviewed: 0
 ---
 When describing the features you created in a codebase on your resume, you want to provide a comprehensive yet concise overview of your contributions. Here are some statistics and features you can consider collecting and presenting:  
   

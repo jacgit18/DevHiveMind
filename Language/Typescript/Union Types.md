@@ -12,7 +12,7 @@ Status: Refinement
 Started: 
 EditDate: 2024-03-02
 Relates: 
-Peer Reviewed: "0"
+Peer Reviewed: 0
 ---
 The pipe symbol (|) in TypeScript is used to create unions, allowing a variable to have multiple possible types. For instance, `number | string | boolean` represents a type that can be a number, a string, or a boolean.
 

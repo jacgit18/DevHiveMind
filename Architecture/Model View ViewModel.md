@@ -9,6 +9,7 @@ Status: Done
 Started: 
 EditDate: 2024-02-26
 Relates: "[[Model Patterns]]"
+Peer Reviewed: 0
 ---
 In the MVVM pattern, a deliberate separation is maintained between the View and the underlying data and logic (Model). This separation of concerns enhances the maintainability and testability of the codebase. Acting as a liaison between the View and the Model, the ViewModel handles data transformations, user input, and updates the Model as needed.
 

@@ -9,7 +9,7 @@ Status: Done
 Started: 
 EditDate: 2024-03-06
 Relates: "[[Architectural Styles]]"
-Peer Reviewed: "0"
+Peer Reviewed: 0
 ---
 When it comes to architectural styles they can man have a major effect on the components of a system. 
 

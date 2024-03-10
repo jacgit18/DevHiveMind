@@ -12,7 +12,7 @@ Status: Final
 Started: 
 EditDate: 2024-02-08
 Relates: 
-Peer Reviewed: "1"
+Peer Reviewed: 1
 ---
 ```jsx
 export const BUY_CAKE = 'BUY_CAKE'

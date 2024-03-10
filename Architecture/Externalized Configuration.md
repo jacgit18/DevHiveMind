@@ -9,7 +9,7 @@ Status: Done
 Started: 
 EditDate: 2024-03-07
 Relates: "[[III Config]]"
-Peer Reviewed: "0"
+Peer Reviewed: 0
 ---
 ![[external-configuration-store-overview.png]]
 ### Externalized Configuration

@@ -19,11 +19,9 @@ This Software Development Knowledge Repository is a centralized and organized co
 
 I encourage contributions from the community. Here are some best practices for maintaining and growing the repository:
 
-- **Updating Existing Notes**: Contributors can update existing notes to keep them current by adding yourself as a author and update the "EditDate" property.
+- **Updating Existing Notes**: Contributors can update existing notes to keep them current by adding yourself as a author you can use github username and update the "EditDate" property if making changes to existing notes.
 
-- **Creating New Notes**: When creating new notes, use Markdown templates to maintain consistency in formatting. Obsidian can help with this using custom templates by pressing `alt + n`. You can create your own templates to suit specific note types or add templates that you found effective.
-
-- **Adding Authors**: Include yourself as an author or attribute authors to the respective notes to give credit for contributions. It's important to acknowledge and appreciate the work of contributors.
+- **Creating New Notes**: When creating new notes, use Markdown templates to maintain consistency in formatting specifically [[_Regular  Note]]template. Obsidian can help with this using custom templates by pressing `alt + n`. You can create your own templates to suit specific note types or add templates that you found effective.
 
 - **Sharing Personal Experience**: I also believe in the value of personal experiences. Contributors are encouraged to share their real-world experiences in companies and teams. These stories can provide valuable insights, lessons learned, and tips for navigating the industry.
 
@@ -36,7 +34,7 @@ When submitting a request to merge, please direct it towards the Peer Review Bra
 
 2. **Done**: Notes classified as Done are robust in content and structure, yet still have potential for greater integration within the vault. This could involve adding additional backlinks to establish stronger connections with related notes or incorporating new tags to enhance findability and categorization. Although these notes do not require significant modifications to their core content, the process of enriching their network within the vault can increase their overall utility. Like Final notes, those in the Done category should also undergo peer review, marked by a "peer reviewed" property value of 1 once reviewed.
 
-3. **Refinement**: This category is for notes in the midst of active development. They may be in the process of being restructured, having content added, or both. The emphasis for these notes is on enhancing their integration within the vault through the addition of backlinks, broadening their tagging for improved navigation and organization, and evaluating their potential to be split into separate notes or combined with existing ones. Peer review at this stage is crucial to ensure that these notes evolve in line with the vault's standards for quality and coherence. Notes are marked with a "peer reviewed" property value of 0 initially, indicating pending review.
+3. **Refinement**: This category is for notes in the midst of active development `if your interested in learning more about a topic for these types of notes then add your self as a author and make a PR so one person is working on a document at a time`. They may be in the process of being restructured, having content added, or both. The emphasis for these notes is on enhancing their integration within the vault through the addition of backlinks, broadening their tagging for improved navigation and organization, and evaluating their potential to be split into separate notes or combined with existing ones. Peer review at this stage is crucial to ensure that these notes evolve in line with the vault's standards for quality and coherence. Notes are marked with a "peer reviewed" property value of 0 initially, indicating pending review.
 
 4. **Draft**: Representing the initial creative burst, Draft status notes are raw and foundational. They provide a basic structure for ideas and information that will be further developed and refined. At this stage, notes are not typically subjected to peer review, as they are still too nascent in their development. These notes have a "peer reviewed" property value of 0, reflecting their early stage in the note development process.
 
@@ -87,7 +85,7 @@ When managing intricate documentation in Enterprise-level companies, using tools
 
 ## Resources 
 >[!note] 
->Obsidian has a big YouTube community there is a lot of content about it but so little time which is another reason it made sense to create this Repo to share knowledge around Obsidian Eco system.
+> Obsidian has a big YouTube community there is a lot of content about it but so little time which is another reason it made sense to create this Repo to share knowledge around Obsidian Eco system at the minimum learn about back linking to effectively contribute.
 - [Beginner Guide to Obsidian ](https://www.dsebastien.net/the-ultimate-beginners-guide-to-obsidian/)
 - [Obsidian Playlist](https://youtube.com/playlist?list=PL7oLu8NfQd84_gsyqBVSVgUmCCgcvSZMx&si=PLMYW7pLlzDwNQty)
 

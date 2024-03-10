@@ -13,7 +13,7 @@ Status: Refinement
 Started: 
 EditDate: 2024-01-30
 Relates: 
-Peer Reviewed: "0"
+Peer Reviewed: 0
 ---
 ![[URL Structure.jpeg]]
 

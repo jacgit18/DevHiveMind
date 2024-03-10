@@ -8,6 +8,6 @@ Status:
 Started: 
 EditDate: 
 Relates: 
-Peer Reviewed: "0"
+Peer Reviewed: 0
 ---
 create note from template like `Alt +n`

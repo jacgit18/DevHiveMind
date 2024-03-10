@@ -12,7 +12,7 @@ Status: Refinement
 Started: 
 EditDate: 2024-02-10
 Relates: "[[Big O]]"
-Peer Reviewed: "0"
+Peer Reviewed: 0
 ---
 ## Array Sorting Algorithms
 

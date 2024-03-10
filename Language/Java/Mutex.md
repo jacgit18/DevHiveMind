@@ -10,7 +10,7 @@ Status: Done
 Started: 2023-11-20
 EditDate: 
 Relates: 
-Peer Reviewed: "0"
+Peer Reviewed: 0
 ---
 A Mutex, short for mutual exclusion, is a synchronization mechanism used in programming to ensure that only one thread can access a shared resource or critical section at a time. This prevents data corruption and ensures the integrity of shared data.
 

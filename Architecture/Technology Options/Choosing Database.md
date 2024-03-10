@@ -13,7 +13,7 @@ Status: Refinement
 Started: 
 EditDate: 2024-01-02
 Relates: "[[Choosing Schema]]"
-Peer Reviewed: "0"
+Peer Reviewed: 0
 ---
 ![[Structured vs Unstructured Data.webp]]
 

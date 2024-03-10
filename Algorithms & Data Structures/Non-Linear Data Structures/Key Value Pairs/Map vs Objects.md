@@ -10,7 +10,7 @@ Status: Done
 Started: 
 EditDate: 
 Relates: 
-Peer Reviewed: "0"
+Peer Reviewed: 0
 ---
 1. **Accidental Keys**:
    - Maps do not contain any keys by default; they only contain what is explicitly put into them.

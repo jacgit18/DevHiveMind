@@ -11,7 +11,7 @@ Status: Done
 Started: 2024-02-04
 EditDate: 
 Relates: 
-Peer Reviewed: "0"
+Peer Reviewed: 0
 ---
 ![[Security By OSI Layer.jpeg]]
 

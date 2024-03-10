@@ -13,7 +13,7 @@ Status: Refinement
 Started: 
 EditDate: 2024-03-06
 Relates: "[[Coupling vs Cohesion]]"
-Peer Reviewed: "0"
+Peer Reviewed: 0
 ---
 Coupling measures the degree of interdependence between software modules; lower coupling is generally preferred as it indicates less dependency and higher modularity. Here's an outline from less to more tightly coupled scenarios:
 

@@ -9,7 +9,7 @@ Status: Done
 Started: 
 EditDate: 2024-02-29
 Relates: 
-Peer Reviewed: "0"
+Peer Reviewed: 0
 ---
 The choice between identifying data structures or exploring built-in functions first can depend on the specific nature of the problem and your familiarity with the available data structures and functions. However, a common and effective approach is to identify potential data structures first. Here's why:  
   

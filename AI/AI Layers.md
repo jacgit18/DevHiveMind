@@ -12,7 +12,7 @@ Status: Refinement
 Started: 
 EditDate: 2024-02-20
 Relates: 
-Peer Reviewed: "0"
+Peer Reviewed: 0
 ---
 ![[AI vs Machine vs Deep.png]]
 

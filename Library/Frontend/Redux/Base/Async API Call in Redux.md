@@ -16,7 +16,7 @@ Status: Final
 Started: 
 EditDate: 2024-02-07
 Relates: 
-Peer Reviewed: "1"
+Peer Reviewed: 1
 ---
 ```jsx
 const redux = require('redux');

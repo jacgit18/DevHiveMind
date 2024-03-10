@@ -12,7 +12,7 @@ Status: Done
 Started: 
 EditDate: 2024-02-04
 Relates: 
-Peer Reviewed: "0"
+Peer Reviewed: 0
 ---
 [Spring](https://spring.io/projects/spring-boot)  and Spring Boot are related frameworks, but they serve different purposes and have some key differences:
 

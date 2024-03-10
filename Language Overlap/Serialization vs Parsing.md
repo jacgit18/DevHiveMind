@@ -9,7 +9,7 @@ Status: Done
 Started: 
 EditDate: 2024-02-17
 Relates: "[[Serialization and Deserialization]]"
-Peer Reviewed: "0"
+Peer Reviewed: 0
 ---
 Serialization involves translating data structures into a format for storage or transmission, commonly used for complex structures like trees or objects. Deserialization is the reverse process, converting formatted data back into its original structure.
 

@@ -9,7 +9,7 @@ Status: Done
 Started: 
 EditDate: 2024-02-02
 Relates: 
-Peer Reviewed: "0"
+Peer Reviewed: 0
 ---
 Acceptance Testing is the final phase of software testing, conducted to determine whether a system meets the specified acceptance criteria and is ready for deployment. The primary goal is to validate that the software satisfies the requirements set by the stakeholders, ensuring that it aligns with their expectations and business needs.
 

@@ -10,7 +10,7 @@ Status: Done
 Started: 
 EditDate: 2024-02-26
 Relates: 
-Peer Reviewed: "0"
+Peer Reviewed: 0
 ---
 In CSS, the cascade and specificity determine the order in which styles are applied.
 

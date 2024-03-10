@@ -9,7 +9,7 @@ Status: Done
 Started: 
 EditDate: 2024-02-22
 Relates: 
-Peer Reviewed: "0"
+Peer Reviewed: 0
 ---
 Running an application signifies its operation in a production environment, accessible to end-users. This encompasses tasks such as configuring servers, databases, and infrastructure components to host the application. When the "run" command is initiated, it not only triggers the [[Build]] process but also executes your project, making it ready for real-world utilization.
 

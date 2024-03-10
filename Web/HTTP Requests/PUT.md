@@ -10,7 +10,7 @@ Status: Done
 Started: 
 EditDate: 2024-01-29
 Relates: 
-Peer Reviewed: "0"
+Peer Reviewed: 0
 ---
 ![[PutVPatch.gif]]
 ## **PUT(Update) Method: Complete Replacement**

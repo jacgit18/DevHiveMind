@@ -11,7 +11,7 @@ Status: Done
 Started: 
 EditDate: 2024-02-02
 Relates: 
-Peer Reviewed: "0"
+Peer Reviewed: 0
 ---
 **Idempotence** refers to the characteristic of certain operations that can be applied multiple times without altering the outcome.
 

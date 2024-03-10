@@ -10,7 +10,7 @@ Purpose: This documentation discusses how cpu works with processes.
 Started: 
 EditDate: 2024-03-05
 Relates: 
-Peer Reviewed: "0"
+Peer Reviewed: 0
 ---
 ![[Cores vs Threads.jpg]]
 ## Prompt

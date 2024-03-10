@@ -10,7 +10,7 @@ Status: Done
 Started: 
 EditDate: 2024-03-02
 Relates: 
-Peer Reviewed: "0"
+Peer Reviewed: 0
 ---
 The pipe command (`|`) in Linux is a versatile tool for connecting and chaining multiple commands together. It allows you to take the output of one command and use it as the input for another command. Here are some common use case scenarios for the pipe command:
 

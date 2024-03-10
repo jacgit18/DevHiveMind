@@ -9,7 +9,7 @@ Status: Done
 Started: 2023-11-30
 EditDate: 
 Relates: "[[Testing in Jest]]"
-Peer Reviewed: "0"
+Peer Reviewed: 0
 ---
 Integration tests and system integration tests are two different levels of testing in software development that focus on ensuring that various components of a software system work together seamlessly. Let's break down each of these terms:
 

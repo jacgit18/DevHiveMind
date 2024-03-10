@@ -9,7 +9,7 @@ Status: Done
 Started: 2023-11-03
 EditDate: 
 Relates: 
-Peer Reviewed: "0"
+Peer Reviewed: 0
 ---
 A `TreeSet` is a data structure in Java that is part of the Java Collections Framework. It is an implementation of the `Set` interface, which means it represents a collection of unique elements. However, what sets the `TreeSet` apart from other `Set` implementations, like `HashSet`, is that it maintains the elements in a sorted order. it is also typically implemented as a red-black tree.
 

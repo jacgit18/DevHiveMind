@@ -10,7 +10,7 @@ Status: Done
 Started: 
 EditDate: 
 Relates: 
-Peer Reviewed: "0"
+Peer Reviewed: 0
 ---
 ### Transactions
 - A database transaction is  a sequence of operations that is performed on a database that can also be performed as a single unit of work typically through [[Stored Procedure]] or alternative methods.

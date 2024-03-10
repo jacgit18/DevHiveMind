@@ -10,7 +10,7 @@ Status: Done
 Started: 
 EditDate: 2024-03-07
 Relates: 
-Peer Reviewed: "1"
+Peer Reviewed: 1
 ---
 ### [[Imperative Coding]] Example
 

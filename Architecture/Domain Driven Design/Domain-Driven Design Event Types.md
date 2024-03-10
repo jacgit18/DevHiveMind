@@ -9,7 +9,7 @@ Status: Done
 Started: 2023-11-26
 EditDate: 
 Relates: 
-Peer Reviewed: "0"
+Peer Reviewed: 0
 ---
 There are typically two main types of events in DDD:
 

@@ -9,7 +9,8 @@ Purpose: This documentation discusses using certain patterns.
 Status: Refinement
 Started: 2024-03-05
 EditDate: 
-Relates:
+Relates: 
+Peer Reviewed: 0
 ---
 Both dummy nodes and the fast-slow pointer pattern are useful techniques, but their applicability depends on the specific problem you're trying to solve in a linked list.
 

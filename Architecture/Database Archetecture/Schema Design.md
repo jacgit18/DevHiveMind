@@ -13,7 +13,7 @@ Status: Refinement
 Started: 
 EditDate: 2024-03-06
 Relates: 
-Peer Reviewed: "0"
+Peer Reviewed: 0
 ---
 A database schema, pronounced SKEE-mah, serves as the organization or structure for a database in computer programming.
 

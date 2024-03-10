@@ -13,7 +13,7 @@ Status: Done
 Started: 
 EditDate: 2024-02-08
 Relates: 
-Peer Reviewed: "1"
+Peer Reviewed: 1
 ---
 Redux Toolkit is a set of utility functions and abstractions designed to simplify and streamline the process of managing state in a Redux-based application. It aims to reduce the boilerplate code traditionally associated with Redux, making the development process more efficient and maintainable.
 

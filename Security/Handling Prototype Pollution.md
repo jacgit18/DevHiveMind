@@ -12,7 +12,7 @@ Status: Done
 Started: 2024-02-04
 EditDate: 
 Relates: "[[Prototypes]]"
-Peer Reviewed: "0"
+Peer Reviewed: 0
 ---
 Protecting against prototype pollution involves implementing defensive coding practices to mitigate the risks associated with manipulating object prototypes. Here are some best practices to help safeguard against prototype pollution:
 

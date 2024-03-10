@@ -9,7 +9,7 @@ Status: Done
 Started: 
 EditDate: 2024-03-03
 Relates: 
-Peer Reviewed: "0"
+Peer Reviewed: 0
 ---
 In Java, properties refer to a key-value pair configuration that is often used for various settings in applications. The `Properties` class in Java is a part of the `java.util` package and provides a simple way to manage configuration data. Here are key aspects of Java properties:
 

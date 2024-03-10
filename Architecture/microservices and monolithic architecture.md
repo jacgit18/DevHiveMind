@@ -11,7 +11,7 @@ Status: Done
 Started: 
 EditDate: 2024-03-07
 Relates: "[[Project Structure]]"
-Peer Reviewed: "0"
+Peer Reviewed: 0
 ---
 When deciding between microservices and monolithic architecture for your software project, there are several important factors to consider. Both architectural approaches have their own advantages and challenges, and the choice should align with your specific project requirements and goals. Here are some key considerations:  
   

@@ -10,7 +10,7 @@ Status: Done
 Started: 
 EditDate: 
 Relates: 
-Peer Reviewed: "0"
+Peer Reviewed: 0
 ---
 ### When and How to Use Custom HTTP Headers
 

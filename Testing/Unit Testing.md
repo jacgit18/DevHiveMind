@@ -12,7 +12,7 @@ Status: Done
 Started: 2023-11-23
 EditDate: 2024-02-02
 Relates: 
-Peer Reviewed: "0"
+Peer Reviewed: 0
 ---
 Unit testing plays a crucial role in the development of complex systems, especially when dealing with large volumes of data or intricate functionaliCties such as processing video frames. Here are several ways in which unit tests can contribute to the progress of development in such scenarios:  
   
