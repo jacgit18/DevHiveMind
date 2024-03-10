@@ -14,7 +14,7 @@ Status: Done
 Started: 
 EditDate: 2024-03-06
 Relates: "[[Schema Design]]"
-Peer Reviewed: "0"
+Peer Reviewed: 0
 ---
 ![[Star vs Snow.png]]
 #### Factors to Consider:

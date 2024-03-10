@@ -11,7 +11,7 @@ Status: Done
 Started: 
 EditDate: 2024-03-02
 Relates: 
-Peer Reviewed: "0"
+Peer Reviewed: 0
 ---
 An API, or Application Programming Interface, acts as a set of features and rules within a software program, facilitating interactions with other software or hardware. In the context of REST APIs, it provides public and private tools for accessing and manipulating REST resources through verbs such as GET, POST, PUT, and DELETE.
 

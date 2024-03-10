@@ -9,7 +9,7 @@ Status: Refinement
 Started: 
 EditDate: 2024-01-31
 Relates: 
-Peer Reviewed: "0"
+Peer Reviewed: 0
 ---
 ![[Web Server vs Web App.png]]
 

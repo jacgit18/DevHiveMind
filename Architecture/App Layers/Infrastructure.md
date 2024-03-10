@@ -9,7 +9,7 @@ Status: Done
 Started: 
 EditDate: 2024-03-06
 Relates: 
-Peer Reviewed: "0"
+Peer Reviewed: 0
 ---
 In the context of a web application, the Infrastructure layer refers to the underlying technology and components that provide the foundation for the application to run and function properly. It serves as the backbone of the entire web application architecture, supporting higher-level components and ensuring that the application is accessible, scalable, reliable, and secure. The Infrastructure layer typically includes the following key elements:
 

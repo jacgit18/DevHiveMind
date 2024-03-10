@@ -10,7 +10,7 @@ Status: Done
 Started: 
 EditDate: 2024-02-26
 Relates: 
-Peer Reviewed: "0"
+Peer Reviewed: 0
 ---
 ![[Model Patterns.gif]]
 Design patterns are essential tools for any developer, offering a framework for structuring code in a clean, maintainable, and scalable way.  

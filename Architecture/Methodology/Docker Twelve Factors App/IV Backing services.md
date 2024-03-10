@@ -16,7 +16,7 @@ Status: Done
 Started: 
 EditDate: 2024-03-06
 Relates: 
-Peer Reviewed: "1"
+Peer Reviewed: 1
 ---
 Backing services: External services (such as databases, message queues, or caching systems) should be treated as attached resources. Docker's container networking capabilities enables your code to connect to and utilize these services as needed while maintaining modularity which can help with deployment strategies. ^558d6a
 

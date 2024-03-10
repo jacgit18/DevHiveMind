@@ -11,7 +11,7 @@ Status: Refinement
 Started: 
 EditDate: 2024-03-06
 Relates: 
-Peer Reviewed: "0"
+Peer Reviewed: 0
 ---
 The main difference between unstructured data and structured data is that structured data is typically used for general stuff and it's very organized like user accounts and the information associated with that as for unstructured is typically did I like media audio, geo-location, and weather 
 

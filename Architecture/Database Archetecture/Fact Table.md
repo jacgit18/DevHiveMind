@@ -14,7 +14,7 @@ Status: Refinement
 Started: 
 EditDate: 2024-03-06
 Relates: 
-Peer Reviewed: "0"
+Peer Reviewed: 0
 ---
 As a data engineer, understanding business requirements and data sources is paramount in choosing the appropriate type of fact table. Here are guidelines to aid in this decision:
 
