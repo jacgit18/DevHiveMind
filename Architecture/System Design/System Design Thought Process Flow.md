@@ -7,6 +7,7 @@ tags:
   - systemHealth
   - distributedSystem
   - OrderOfOperations
+  - favorite
 author:
   - jacgit18
   - chatgpt

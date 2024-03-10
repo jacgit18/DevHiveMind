@@ -1,6 +1,5 @@
 ---
 tags:
-  - favorite
   - Markup
 author:
   - jacgit18

@@ -7,11 +7,13 @@ tags:
 author:
   - jacgit18
   - chatgpt
+Comments: Placeholder comment any thing else you want to mention about the document.
 Purpose: This list out financial terminology.
 Status: Refinement
 Started: 
 EditDate: 2024-03-04
-Relates:
+Relates: 
+Peer Reviewed: "0"
 ---
 - **10-K:** The annual report filed by companies in the U.S. to the SEC, detailing financial performance. SEC.gov is a key resource for these reports.
 - **10-Q:** A quarterly report filed to the SEC by U.S. companies, providing a continuous view of their financial position.

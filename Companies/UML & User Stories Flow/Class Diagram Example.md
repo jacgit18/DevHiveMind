@@ -4,8 +4,10 @@ tags:
   - OOP
 author:
   - jacgit18
+  - chatgpt
+Comments: Placeholder comment any thing else you want to mention about the document.
 Purpose: This documentation discusses a class diagram based on the user stories for a driving school.
-Status: Done
+Status: Final
 Started: 
 EditDate: 2024-02-20
 Relates: "[[Epics to user stories]]"
