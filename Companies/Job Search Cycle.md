@@ -11,7 +11,7 @@ Status: Perpetual
 Started: 
 EditDate: 2024-02-20
 Relates: "[[Economic Trends to Track]]"
-Peer Reviewed: "0"
+Peer Reviewed: 0
 ---
 ![[Tech Layoffs.png]]
 

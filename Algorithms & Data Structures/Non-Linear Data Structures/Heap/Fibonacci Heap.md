@@ -10,7 +10,7 @@ Status: Refinement
 Started: 
 EditDate: 
 Relates: 
-Peer Reviewed: "0"
+Peer Reviewed: 0
 ---
 ![[Algorithms & Data Structures/_Infographic/fib.png]]
 

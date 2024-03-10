@@ -10,7 +10,7 @@ Status: Done
 Started: 2024-02-26
 EditDate: 2024-02-26
 Relates: 
-Peer Reviewed: "0"
+Peer Reviewed: 0
 ---
 C is renowned for its high performance, closely aligned with low-level languages, albeit less readable than high-level counterparts like Python. Despite lacking classes, C operates as a functional language, playing a crucial role in operating system development.
 

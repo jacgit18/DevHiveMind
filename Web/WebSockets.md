@@ -11,7 +11,7 @@ Status: Done
 Started: 
 EditDate: 2024-01-29
 Relates: 
-Peer Reviewed: "0"
+Peer Reviewed: 0
 ---
 WebSocket is a communication protocol facilitating two-way streaming over a single TCP connection, commonly between web clients and servers but also employed for server-to-server interactions. Major browsers support WebSocket, making it prevalent in real-time applications.
 

@@ -10,7 +10,7 @@ Status: Done
 Started: 2023-12-05
 EditDate: 2024-02-29
 Relates: 
-Peer Reviewed: "0"
+Peer Reviewed: 0
 ---
 ## Greedy Algorithm Relationship to Top k elements
 

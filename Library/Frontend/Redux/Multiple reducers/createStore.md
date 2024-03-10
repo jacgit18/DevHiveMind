@@ -13,7 +13,7 @@ Status: Final
 Started: 
 EditDate: 2024-02-08
 Relates: 
-Peer Reviewed: "1"
+Peer Reviewed: 1
 ---
 ```jsx
 import { createStore, applyMiddleware } from 'redux';

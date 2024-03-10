@@ -11,7 +11,7 @@ Status: Refinement
 Started: 
 EditDate: 2024-03-06
 Relates: "[[Proxy]]"
-Peer Reviewed: "0"
+Peer Reviewed: 0
 ---
 ![[Proxy v Gateway v Balancer .jpeg]]
 

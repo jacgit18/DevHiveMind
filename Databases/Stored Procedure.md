@@ -10,7 +10,7 @@ Status: Done
 Started: 
 EditDate: 
 Relates: 
-Peer Reviewed: "0"
+Peer Reviewed: 0
 ---
 A stored procedure is a set of SQL statements that are stored in a database and can be executed as a single unit. It is a precompiled collection of one or more SQL statements that are stored together in the database management system (DBMS). Here are key points about stored procedures:
 

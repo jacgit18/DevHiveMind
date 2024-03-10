@@ -7,6 +7,7 @@ tags:
   - systemHealth
   - distributedSystem
   - OrderOfOperations
+  - favorite
 author:
   - jacgit18
   - chatgpt
@@ -17,7 +18,7 @@ Started: 2024-01-04
 EditDate: 2024-01-26
 Version: 2.8.0
 Relates: 
-Peer Reviewed: "0"
+Peer Reviewed: 0
 ---
 ![[System design core concepts.gif]]
 ### Step 1: Requirements Gathering 

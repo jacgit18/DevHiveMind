@@ -9,7 +9,7 @@ Status: Refinement
 Started: 
 EditDate: 2024-03-07
 Relates: 
-Peer Reviewed: "0"
+Peer Reviewed: 0
 ---
 Certainly! Here's an integrated structural model that combines object-oriented programming (OOP) and functional programming (FP) concepts for a driving school website:
 

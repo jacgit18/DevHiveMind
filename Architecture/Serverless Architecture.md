@@ -10,7 +10,7 @@ Status: Refinement
 Started: 
 EditDate: 2024-03-07
 Relates: 
-Peer Reviewed: "0"
+Peer Reviewed: 0
 ---
 ![[Serverless.gif]]
 In serverless architecture, you typically use functions as a service ([[Benefits of cloud#FAAS |FAAS]]). Here's a simple example using AWS Lambda and JavaScript:  

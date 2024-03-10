@@ -12,7 +12,7 @@ Status: Done
 Started: 
 EditDate: 2024-02-22
 Relates: 
-Peer Reviewed: "0"
+Peer Reviewed: 0
 ---
 GitHub Actions operate on the foundation of workflows, which are sequences of jobs triggered by specific events. These jobs contain explicit instructions for GitHub Actions to execute. Typically, a workflow unfolds as follows:
 

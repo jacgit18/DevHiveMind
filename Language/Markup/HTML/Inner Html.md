@@ -12,7 +12,7 @@ Status: Done
 Started: 
 EditDate: 2024-02-26
 Relates: 
-Peer Reviewed: "0"
+Peer Reviewed: 0
 ---
 `innerHTML` is a property in JavaScript that allows you to access or modify the HTML content within an element. While it can be convenient, using it poses security risks, as it can inadvertently execute scripts and expose your application to cross-site scripting (XSS) attacks. It's recommended to use safer alternatives like `textContent` or DOM manipulation methods to avoid potential security vulnerabilities.
 

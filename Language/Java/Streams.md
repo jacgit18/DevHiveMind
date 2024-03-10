@@ -10,7 +10,7 @@ Status: Refinement
 Started: 
 EditDate: 2024-03-04
 Relates: 
-Peer Reviewed: "0"
+Peer Reviewed: 0
 ---
 ![[streamline.png]]
 A stream is an ordered sequence of data in Java, serving as a common I/O model that abstracts the details of the underlying source or destination. Streams facilitate iteration in Java and can be categorized into two types: Byte streams, which interact with binary data (e.g., 01101110), and Text streams. Despite their distinct data representations, the general interaction remains the same for both stream types. Streams are unidirectional, meaning you either read from or write to a stream, providing a versatile mechanism for handling input and output operations.

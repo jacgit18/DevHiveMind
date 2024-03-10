@@ -9,7 +9,7 @@ Status: Done
 Started: 
 EditDate: 2024-02-22
 Relates: 
-Peer Reviewed: "0"
+Peer Reviewed: 0
 ---
 In Docker, networks play a crucial role in facilitating communication between containers. When you run multiple containers, they may need to communicate with each other for various reasons, such as sharing data or providing services.
 

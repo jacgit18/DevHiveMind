@@ -7,11 +7,14 @@ tags:
   - CodebaseDecision
 author:
   - jacgit18
+  - chatgpt
+Comments: Placeholder comment any thing else you want to mention about the document.
 Purpose: This documentation discusses Apache Kafka.
 Status: Refinement
 Started: 2023-11-06
 EditDate: 2024-02-03
-Relates:
+Relates: 
+Peer Reviewed: 0
 ---
 ![[Apache Arch.gif]]
 

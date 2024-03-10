@@ -10,7 +10,7 @@ Status: Refinement
 Started: 
 EditDate: 
 Relates: 
-Peer Reviewed: "0"
+Peer Reviewed: 0
 ---
 Tables where you might not need a UUID as a primary key are typically those with straightforward structures and clear natural keys. Natural keys are columns that already exist in the real-world data and can uniquely identify each record without the need for an artificially generated identifier like a UUID. Here are a few examples:
 

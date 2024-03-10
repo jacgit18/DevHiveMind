@@ -12,7 +12,7 @@ Status: Refinement
 Started: 
 EditDate: 2024-01-30
 Relates: 
-Peer Reviewed: "0"
+Peer Reviewed: 0
 ---
 Exploring event-driven API options reveals distinct differences among WebHooks, WebSockets, and HTTP Streaming. 
 

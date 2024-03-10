@@ -10,7 +10,7 @@ Status: Refinement
 Started: 
 EditDate: 2024-03-06
 Relates: 
-Peer Reviewed: "0"
+Peer Reviewed: 0
 ---
 [[Type Casting]], in the context of system design, refers to the process of converting an object from one type to another in a programming language. It allows you to treat an object as an instance of a different class or interface temporarily. While casting can be a powerful tool in certain situations, it's important to use it judiciously and understand when it makes sense to cast and when to avoid it.
 

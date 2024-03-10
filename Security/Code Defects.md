@@ -10,7 +10,7 @@ Status: Done
 Started: 
 EditDate: 2024-02-02
 Relates: 
-Peer Reviewed: "0"
+Peer Reviewed: 0
 ---
 In software development, a program's behavior is often defined by its current state. A state represents the condition or situation of the system at a specific point in time. Defects can arise when there are inconsistencies or errors in how the code handles different states or transitions between them.
 

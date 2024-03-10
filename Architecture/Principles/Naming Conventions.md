@@ -11,7 +11,7 @@ Status: Refinement
 Started: 
 EditDate: 2024-03-07
 Relates: 
-Peer Reviewed: "0"
+Peer Reviewed: 0
 ---
 ![[Camel Case.png]]
 Be cognizant of naming convention  

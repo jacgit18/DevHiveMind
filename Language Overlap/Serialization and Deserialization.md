@@ -10,7 +10,7 @@ Status: Done
 Started: 
 EditDate: 2024-02-17
 Relates: 
-Peer Reviewed: "0"
+Peer Reviewed: 0
 ---
 Serialization and deserialization are processes used in Java to convert objects into a [[Byte stream]] and vice versa. These mechanisms allow objects to be saved to a file, transmitted over a network, or stored in a database. Another way to think about it is Serialization is like freezing your code in a snapshot, capturing a class's state. Deserialization then revives it with the same values. Be cautious, though – if you've made changes during deserialization, it might lead to compatibility issues and runtime errors. Stay in sync to avoid these hiccups.
 

@@ -7,12 +7,13 @@ tags:
 author:
   - jacgit18
   - chatgpt
+Comments: Placeholder comment any thing else you want to mention about the document.
 Purpose: This documentation discusses repository manager and the different options.
 Status: Refinement
 Started: 
 EditDate: 2024-02-03
 Relates: 
-Peer Reviewed: "0"
+Peer Reviewed: 0
 ---
 There are several alternative services and repositories to Maven Central that you can use for managing and hosting your Java project dependencies. Some popular ones include:  
   

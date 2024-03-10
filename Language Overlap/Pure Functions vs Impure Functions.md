@@ -12,7 +12,7 @@ Status: Refinement
 Started: 
 EditDate: 2023-10-29
 Relates: 
-Peer Reviewed: "0"
+Peer Reviewed: 0
 ---
 In pure functional programming, a function returns the expected output and consistently runs as anticipated when processing input. This predictability allows for referential transparency, enabling the replacement of a function with its output. This characteristic simplifies debugging and testing processes.
 

@@ -12,7 +12,7 @@ Status: Done
 Started: 
 EditDate: 2024-02-02
 Relates: "[[Type of Testing Techniques]]"
-Peer Reviewed: "0"
+Peer Reviewed: 0
 ---
 ## Ranorex: Black Box Security Testing Tools
 

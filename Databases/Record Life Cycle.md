@@ -10,7 +10,7 @@ Status: Capture
 Started: 
 EditDate: 
 Relates: "[[Database data governance]]"
-Peer Reviewed: "0"
+Peer Reviewed: 0
 ---
 A record is a full row with values from all columns/fields and a tuple is a partial record/row or subset of records with values from specific columns/fields. 
 

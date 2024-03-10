@@ -9,7 +9,7 @@ Status: Done
 Started: 
 EditDate: 2024-02-22
 Relates: 
-Peer Reviewed: "0"
+Peer Reviewed: 0
 ---
 Docker Compose and Dockerfile are two important components in the Docker ecosystem that work together to build and manage containerized applications. Here's an explanation of their relationship:  
   

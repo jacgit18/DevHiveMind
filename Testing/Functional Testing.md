@@ -9,7 +9,7 @@ Status: Done
 Started: 2024-02-02
 EditDate: 
 Relates: 
-Peer Reviewed: "0"
+Peer Reviewed: 0
 ---
 ![[Ways to Test.gif]]
 

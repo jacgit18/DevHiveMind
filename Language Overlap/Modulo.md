@@ -11,7 +11,7 @@ Status: Done
 Started: 
 EditDate: 2024-03-05
 Relates: 
-Peer Reviewed: "1"
+Peer Reviewed: 1
 ---
 Division involves the relationship: dividend / divisor = quotient. For long division, it's expressed as divisor * quotient = dividend. Think of long division as the backend of regular division, introducing remainders. Take, for instance, 228 / 4:
 

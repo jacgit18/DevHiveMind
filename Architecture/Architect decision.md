@@ -10,7 +10,7 @@ Status: Refinement
 Started: 
 EditDate: 2024-03-06
 Relates: 
-Peer Reviewed: "0"
+Peer Reviewed: 0
 ---
 In programming, "architecture" typically refers to the overall structure or design of a software system. It involves making high-level decisions about how the system will be organized and how its components will interact. Software architecture encompasses various elements, such as the organization of code, the choice of programming paradigms, the design patterns used, and the relationships between different modules or components.
 

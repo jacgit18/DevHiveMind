@@ -9,7 +9,7 @@ Status: Done
 Started: 
 EditDate: 2024-02-02
 Relates: 
-Peer Reviewed: "0"
+Peer Reviewed: 0
 ---
 Pre-Acceptance Testing, also known as Alpha Testing, occurs before formal acceptance testing. It involves in-house testing by the development team or an independent testing team within the organization. The primary goal is to identify and address major issues before presenting the software to stakeholders for formal acceptance.
 

@@ -13,7 +13,7 @@ Status: Refinement
 Started: 
 EditDate: 
 Relates: 
-Peer Reviewed: "0"
+Peer Reviewed: 0
 ---
 Sequelize.js and Knex.js are both JavaScript libraries used in Node.js applications for interacting with relational databases. However, they serve different purposes and have different focuses:  
   

@@ -10,7 +10,7 @@ Status: Perpetual
 Started: 2023-12-15
 EditDate: 
 Relates: 
-Peer Reviewed: "0"
+Peer Reviewed: 0
 ---
 ![[Regimen.gif]]
 ## Prep  

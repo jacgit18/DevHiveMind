@@ -12,7 +12,7 @@ Status: Capture
 Started: 
 EditDate: 
 Relates: 
-Peer Reviewed: "0"
+Peer Reviewed: 0
 ---
 A dump file in PostgreSQL is a textual or binary representation of a database's schema and/or data. It serves various purposes, including backup, migration, and replication. Dump files allow you to recreate a database or transfer it to another server.  
   

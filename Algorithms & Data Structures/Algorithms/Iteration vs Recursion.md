@@ -12,7 +12,7 @@ Status: Done
 Started: 
 EditDate: 2024-02-27
 Relates: "[[Iterating vs Traversing]]"
-Peer Reviewed: "0"
+Peer Reviewed: 0
 ---
 ![[many Ways.gif]]
 
