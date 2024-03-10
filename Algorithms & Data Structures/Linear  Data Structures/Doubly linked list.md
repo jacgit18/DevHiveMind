@@ -10,7 +10,7 @@ Status: Refinement
 Started: 
 EditDate: 
 Relates: "[[Type of Linked List]]"
-Peer Reviewed: "0"
+Peer Reviewed: 0
 ---
 ![[DoubleLinkedLists.gif]]
 

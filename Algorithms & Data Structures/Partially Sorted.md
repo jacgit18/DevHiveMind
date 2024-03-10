@@ -5,11 +5,13 @@ tags:
 author:
   - jacgit18
   - chatgpt
+Comments: Placeholder comment any thing else you want to mention about the document.
 Purpose: This documentation discusses Partially Sorted arrays.
 Status: Done
 Started: 2024-02-19
 EditDate: 
 Relates: "[[Types of Arrays]]"
+Peer Reviewed: 0
 ---
 A partially sorted array is not necessarily considered only a rotated array; there are other types of partially sorted orders as well. Partially sorted arrays can exhibit different patterns, and rotation is just one possibility. Here are a few examples of partially sorted arrays:  
   

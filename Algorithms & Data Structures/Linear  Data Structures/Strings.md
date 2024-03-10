@@ -9,7 +9,7 @@ Status: Refinement
 Started: 
 EditDate: 2024-02-29
 Relates: 
-Peer Reviewed: "0"
+Peer Reviewed: 0
 ---
 Strings, despite being one of the first data structures introduced to programmers, shouldn't be underestimated as "easy" in interview scenarios due to their versatility. Unlike data structures like trees or graphs that have specific algorithms like DFS/BFS or backtracking respectively, strings can incorporate a range of technical topics frequently asked in interviews. Strings are a linear data structure, and because of that all common algorithms related to linear data structures could potentially be involved in a string question. This means techniques like [two pointers](https://interviewing.io/two-pointers-interview-questions), [sliding windows](https://interviewing.io/sliding-window-interview-questions), [recursion](https://interviewing.io/recursion-interview-questions), backtracking, and [dynamic programming](https://interviewing.io/dynamic-programming-interview-questions) (to name just a few) can be used in a string question. Therefore, avoiding string practice due to perceived ease could lead to challenges in handling complex string problems in interviews.
 

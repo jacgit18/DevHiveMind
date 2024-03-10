@@ -9,7 +9,7 @@ Status: Done
 Started: 
 EditDate: 
 Relates: 
-Peer Reviewed: "0"
+Peer Reviewed: 0
 ---
 Implementing a hash table with an array and a linked list involves different strategies for handling collisions.  
   

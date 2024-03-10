@@ -10,7 +10,7 @@ Status: Done
 Started: 2023-11-01
 EditDate: 2024-02-27
 Relates: "[[All Sorts of Sorts]]"
-Peer Reviewed: "0"
+Peer Reviewed: 0
 ---
 Sorting algorithms do not always need to return `void`. The return type of a sorting algorithm depends on the specific programming language and the design of the algorithm. Sorting algorithms can have different return types:  
   

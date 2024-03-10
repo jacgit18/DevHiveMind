@@ -8,7 +8,7 @@ Status: Refinement
 Started: 
 EditDate: 
 Relates: 
-Peer Reviewed: "0"
+Peer Reviewed: 0
 ---
 > [!note] The pattern names are just visual abstraction of the pattern
 ## Sliding Window

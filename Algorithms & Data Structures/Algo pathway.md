@@ -12,7 +12,7 @@ Status: Refinement
 Started: 
 EditDate: 
 Relates: "[[Iteration vs Recursion]]"
-Peer Reviewed: "0"
+Peer Reviewed: 0
 ---
 ![[paths.gif]]
 ## Problem Identification

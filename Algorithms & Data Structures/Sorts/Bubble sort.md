@@ -13,7 +13,7 @@ Status: Done
 Started: 
 EditDate: 
 Relates: 
-Peer Reviewed: "1"
+Peer Reviewed: 1
 ---
 
 ![[BuubleSort.gif]]

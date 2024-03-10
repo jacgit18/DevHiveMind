@@ -11,7 +11,7 @@ Status: Done
 Started: 
 EditDate: 2024-02-29
 Relates: 
-Peer Reviewed: "0"
+Peer Reviewed: 0
 ---
 Patterns play a crucial role in problem-solving. Understanding when to apply a specific pattern is essential. However, real-world scenarios can be tricky. Our brains are wired to seek efficiency. When faced with a problem, we instinctively look for the path of perceived least resistance.
 Sometimes, this leads us to consider brute-force approaches because you lack familiarity with specific patterns or algorithms. Here are a few considerations:

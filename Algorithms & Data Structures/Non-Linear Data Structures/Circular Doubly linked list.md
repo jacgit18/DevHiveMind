@@ -10,7 +10,7 @@ Status: Refinement
 Started: 
 EditDate: 2024-02-29
 Relates: "[[Type of Linked List]]"
-Peer Reviewed: "0"
+Peer Reviewed: 0
 ---
 ![[DoubleCircularLinkedLists.png]]
 
