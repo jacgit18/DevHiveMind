@@ -1,7 +1,9 @@
 ---
-tags: 
+tags:
+  - linux
 author:
   - jacgit18
+  - chatgpt
 Comments: 
 Purpose: 
 Status: Done
