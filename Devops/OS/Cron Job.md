@@ -8,12 +8,12 @@ author:
   - jacgit18
   - chatgpt
 Comments: Placeholder comment any thing else you want to mention about the document.
-Purpose: 
-Status: Done
+Purpose: This documentation discusses
+Status: Refinement
 Started: 
 EditDate: 2024-03-11
 Relates: 
-Peer Reviewed:
+Peer Reviewed: 0
 ---
 ```bash
 * * * * *  /home/jac/Sync/DevMindMap/sync.sh

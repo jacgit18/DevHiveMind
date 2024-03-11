@@ -2,10 +2,13 @@
 tags: 
 author:
   - jacgit18
-Status: 
+Comments: 
+Purpose: 
+Status: Done
 Started: 
-EditDate: 
-Relates:
+EditDate: 2024-03-11
+Relates: 
+Peer Reviewed: 0
 ---
 In Linux and Unix-like systems, these symbols (`>`, `>>`, `&>`, `2>`, and `2>>`) are used for redirecting and handling input and output streams, particularly with regard to standard output (stdout) and standard error (stderr). Here's an explanation of the differences between them:
 
