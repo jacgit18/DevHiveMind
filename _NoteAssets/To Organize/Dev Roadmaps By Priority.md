@@ -1,10 +1,10 @@
 ---
-tags:
-  - revist
+tags: 
 author:
   - jacgit18
+Comments: 
 Purpose: Update maybe use OKR
-Status: Express
+Status: Perpetual
 Started: 2023-01-01
 EditDate: 
 Relates:
@@ -51,7 +51,6 @@ Relates:
 #todo/Low/Dev 
 - [ ] [[computer-science.pdf]]
 - [ ] [[devops.pdf]]
-- [ ] [[Tech Things to Research]]
 
 
 

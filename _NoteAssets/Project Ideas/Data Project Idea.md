@@ -1,13 +1,19 @@
 ---
-tags: 
+tags:
+  - data
 author:
   - jacgit18
   - chatgpt
-Status: init
+Comments: Placeholder comment any thing else you want to mention about the document.
+Purpose: This documentation discusses
+Status: Done
 Started: 2023-11-23
-EditDate: 
+EditDate: 2024-03-11
 Relates:
 ---
+#todo/Med/Dev 
+- [ ] Look into these project ideas
+
 To learn web workers in TypeScript, consider embarking on a project that involves parallelizing tasks or background processing. A compelling idea is to create a real-time data streaming application, focusing on the financial domain to build practical skills. Here are refined project ideas:
 
 ### Project Idea: Real-Time Financial Data Streaming App
