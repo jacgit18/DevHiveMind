@@ -6,10 +6,14 @@ tags:
   - automation
 author:
   - jacgit18
-Status: 
+  - chatgpt
+Comments: Placeholder comment any thing else you want to mention about the document.
+Purpose: 
+Status: Done
 Started: 
-EditDate: 
-Relates:
+EditDate: 2024-03-11
+Relates: 
+Peer Reviewed:
 ---
 ```bash
 * * * * *  /home/jac/Sync/DevMindMap/sync.sh

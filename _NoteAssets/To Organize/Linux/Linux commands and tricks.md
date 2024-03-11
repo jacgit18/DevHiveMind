@@ -2,10 +2,14 @@
 tags: 
 author:
   - jacgit18
-Status: 
+  - chatgpt
+Comments: Placeholder comment any thing else you want to mention about the document.
+Purpose: 
+Status: Done
 Started: 
 EditDate: 
-Relates:
+Relates: 
+Peer Reviewed:
 ---
 - **Erasing Content in a File:**
   - To erase the content of a file named "Going":

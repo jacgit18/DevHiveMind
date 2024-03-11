@@ -70,8 +70,8 @@
     "#todo/read",
     "#todo/low/read",
     "#todo/low/dev/sideresearch",
-    "#todo/med/dev",
-    "#todo/low/dev"
+    "#todo/prompts",
+    "#todo/med/dev"
   ],
   "_hiddenTags": []
 }
