@@ -13,9 +13,13 @@ EditDate: 2024-03-06
 Relates: 
 Peer Reviewed: 0
 ---
+![[cacheEveryWhere.jpeg]]
+
 The main difference between unstructured data and structured data is that structured data is typically used for general stuff and it's very organized like user accounts and the information associated with that as for unstructured is typically did I like media audio, geo-location, and weather 
 
 Besides that, you want the other servers for database application you would want a master that handles the crud(Create Read Update Delete) processes and the copies would handle the reading operation you'll probably have more slaves databases and proportion to master the reason we want this because it allows queries to be processed in parallel Which is good for performance 
+
+A cache is a small, faster storage layer that holds copies of frequently accessed data or computations, making future requests for that data faster than retrieving it from the original, slower storage location. It's used in various areas of computing, from web browsers (storing web pages or images for quicker access on return visits) to CPUs (storing instructions and data close to the processor to reduce the time it takes to execute programs). The fundamental idea is to reduce access times and improve data retrieval speeds, thereby enhancing overall system performance.
 
 
 
@@ -66,7 +70,7 @@ Implementing an expiration policy is crucial. It ensures timely removal of expir
 
 Consistency: This involves keeping the data store and the cache in sync. Inconsistency can happen because data-modifying operations on the data store and cache are not in single transaction. When scaling across multiple regions, maintaining consistency between the data store and cache is challenging 
 
-Mitigating failures: A single cache server represents a potential single point of failure(SPOF), defined in Wikipedia as follows: “A single point of failure (SPOF) is a part of a system that, if it fails, will stop the entire system from working” [8]. As a result, multiple cache servers across different data centers are recommended to avoid SPOF. Another recommended approach is to over provision the required memory by certain percentages.This provides a buffer as the memory usage increases. 
+Mitigating failures: A single cache server represents a potential single point of failure(SPOF), defined in Wikipedia as follows: “A single point of failure (SPOF) is a part of a system that, if it fails, will stop the entire system from working”. As a result, multiple cache servers across different data centers are recommended to avoid SPOF. Another recommended approach is to over provision the required memory by certain percentages.This provides a buffer as the memory usage increases. 
 
 Eviction Policy:Once the cache is full, any requests to add items to the cache might cause existing items to be removed. This is called cache eviction. Least-recently-used(LRU) is the most popular cache eviction policy. Other eviction policies, such as the Least Frequently Used (LFU) or First in First Out (FIFO), can be adopted to satisfy different use cases. 
 

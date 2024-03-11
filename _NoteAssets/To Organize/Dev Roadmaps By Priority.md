@@ -17,6 +17,7 @@ Relates:
 ## Main Long Quest
 #todo/High/Dev 
 >[!note] Get to the level were you are doing 1 coding question a month while working full time
+- [ ] AWS
 - [ ] [[Clean Code]]
 	- [ ] Code Reusability
 - [ ] [[Design Patterns Diagrams]]
@@ -37,7 +38,7 @@ Relates:
 - [ ] [[spring-boot.pdf]]
 - [[Python Learning Plan]]
 	- [ ] [[python.pdf]]
-- [ ] [[angular.pdf]]
+
 
 ## Side Quest Revist
 #todo/Med/Dev 
@@ -54,8 +55,6 @@ Relates:
 
 
 
-## Dev Tip
 
-### Cookbook explained 
-A cookbook in the programming context is collection of tiny programs that each demonstrate a particular programming concept. The Cookbook Method is the process of learning a programming language by building up a repository of small programs that implement specific programming concepts.
+
 

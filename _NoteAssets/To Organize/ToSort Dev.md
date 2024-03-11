@@ -7,8 +7,7 @@ Purpose: This documentation discusses
 Status: Perpetual
 Started: 
 EditDate: 
-Relates: 
-Peer Reviewed: "0"
+Relates:
 ---
 ![[Things Todo.gif]]
 
@@ -249,3 +248,5 @@ Ask chat GPT how would you write integration test for a particular function
 
 
 
+### Cookbook explained 
+A cookbook in the programming context is collection of tiny programs that each demonstrate a particular programming concept. The Cookbook Method is the process of learning a programming language by building up a repository of small programs that implement specific programming concepts.
