@@ -1,11 +1,16 @@
 ---
-tags: 
+tags:
+  - linux
 author:
   - jacgit18
-Status: 
+  - chatgpt
+Comments: 
+Purpose: 
+Status: Done
 Started: 
-EditDate: 
-Relates:
+EditDate: 2024-03-11
+Relates: 
+Peer Reviewed: 0
 ---
 Both of these commands are used to append a line of text to the `/etc/hosts` file in Linux, but they achieve this in different ways. Here's the difference between the two commands:
 

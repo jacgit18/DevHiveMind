@@ -5,6 +5,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
+Comments: Placeholder comment any thing else you want to mention about the document.
 Purpose: This documentation discusses pipe command and its application in Linux.
 Status: Done
 Started: 

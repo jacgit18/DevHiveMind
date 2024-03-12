@@ -7,8 +7,7 @@ Purpose: This documentation discusses
 Status: Perpetual
 Started: 
 EditDate: 
-Relates: 
-Peer Reviewed: "0"
+Relates:
 ---
 ![[Things Todo.gif]]
 
@@ -16,17 +15,13 @@ Peer Reviewed: "0"
 # <mark style="background: #FF5582A6;">Current </mark>
 #todo/High/Dev 
 - [ ] ***Refine notes based subject matter you are actively practicing like domain driven design not currently using it so low priority so when you actually using it refine documentation on it***
-- [ ] Edit article on [[Bootcamp]] ^923f61
-- [ ] Edit article on [Note taking](Note%20taking.md) ^776056
-- [ ] [[Data Project Idea]]
-- [ ] Read [Domain-driven design](Domain-driven%20design.md)
-- [ ] Look at what needs to be refined in react and redux notes
+
 - [ ] Get certified in Linux 
 - [ ] Continue reading [[Grokking Algorithms - An illustrated guide for programmers and other curious people.pdf#page=160|Grokking Algorithms - An illustrated guide for programmers and other curious people, page 160]]
 - [ ] Looking to automating stock buys
 - [ ] Look if you can convert Algorithm Patterns solutions into declarative solutions still using the pattern
-- [ ] Develop practical fundamental skills around design patterns 
-- [ ] Design patterns mindmap
+
+
 - [ ] look into which info-graphics can be recreated and integrated in to note vault 
 
 - [ ] identify areas of automation were ever you see 
@@ -143,6 +138,8 @@ When you want to learn new languages in the future think about every time you ha
 - [ ] **App Security Resources:** Discover a comprehensive programmer's guide to accessing and enhancing application security, emphasizing security as a primary consideration in software development.
 - [ ] **Secure Password Capture in Terminals:** Explore advanced techniques for securely capturing and managing passwords entered in terminal windows.
 - [ ] **Math Skills for Programming:** Elevate your mathematical aptitude, a fundamental skill essential for various programming tasks.
+- [ ] Edit article on [[Bootcamp]] ^923f61
+- [ ] Edit article on [Note taking](Note%20taking.md) ^776056
 ### Scripting
 - [ ] program a usb to automatically run a script in Linux
 - [ ] https://askubuntu.com/questions/1063331/how-to-install-google-chrome-extensions-though-terminal
@@ -249,3 +246,5 @@ Ask chat GPT how would you write integration test for a particular function
 
 
 
+### Cookbook explained 
+A cookbook in the programming context is collection of tiny programs that each demonstrate a particular programming concept. The Cookbook Method is the process of learning a programming language by building up a repository of small programs that implement specific programming concepts.

@@ -1,11 +1,17 @@
 ---
-tags: 
+tags:
+  - linux
+  - CLI
 author:
   - jacgit18
-Status: 
+  - chatgpt
+Comments: 
+Purpose: 
+Status: Done
 Started: 
-EditDate: 
-Relates:
+EditDate: 2024-03-11
+Relates: 
+Peer Reviewed: 0
 ---
 `sed` (stream editor) is a powerful command-line tool used for text processing and manipulation. It allows you to perform various operations on text, such as search and replace, text deletion, text insertion, and more. Here's a real-world example of how `sed` can be used:
 

@@ -1,11 +1,16 @@
 ---
-tags: 
+tags:
+  - linux
 author:
   - jacgit18
-Status: 
+  - chatgpt
+Comments: 
+Purpose: 
+Status: Done
 Started: 
 EditDate: 
-Relates:
+Relates: 
+Peer Reviewed: 0
 ---
 To create an image of a Linux distribution, you can follow these general steps:  
   
