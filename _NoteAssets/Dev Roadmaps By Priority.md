@@ -57,34 +57,19 @@ Relates:
 - [ ] [[computer-science.pdf]]
 
 
+In the ever-expanding landscape of software engineering, navigating the sea of information can be daunting, especially for newcomers. After years of refining my learning process, I'm excited to unveil DevHiveMind—a comprehensive knowledge repository tailored for software engineers.
 
+DevHiveMind serves as an encyclopedia crafted specifically for developers, representing the culmination of years of dedication. Now open for peer review and open-source contributions, this project aims to benefit the entire software development community.
 
+Whether you're a novice seeking direction or a seasoned engineer eager to share your expertise, DevHiveMind provides a platform for collective growth and learning.
 
+Sign up to explore and contribute: https://forms.gle/wsJtMZg15yjGKLiV9
 
-In today's world, the vast sea of information in software engineering can be overwhelming and sometimes, nebulous. Navigating and grasping the broader landscape of this field poses a significant challenge, especially for those new to the industry.  
-  
+I eagerly await your feedback, questions, and contributions. Let's work together to shape DevHiveMind into a pivotal resource for software engineers worldwide.
+
+🌟 Special thanks to everyone who has supported me on this journey: Tangy, Frederick, Chloe, Albright, Liza, Feng.
   
 
-  
-After years of navigating this complex environment through trial and error, and continuously refining my personal learning process, I'm thrilled to introduce my latest venture: Dev HiveMind.  
-  
-  
-  
-Dev HiveMind stands as a comprehensive knowledge repository tailored for software engineers. Imagine it as an encyclopedia crafted specifically for developers. This project is the culmination of years of dedication and is now open for peer review and open source contribution.  
-
-
-  
-This project is not just a personal milestone but a resource I believe can significantly benefit the software development community. Whether you're a novice seeking direction or a seasoned engineer looking to contribute your wealth of knowledge, Dev HiveMind offers a space for collective growth and learning.  
-  
-Signup: https://forms.gle/wsJtMZg15yjGKLiV9 
-  
-  
-I'm eager to hear your thoughts, answer any questions, and most importantly, invite you to explore and contribute to the Developer HiveMind. Together, let's shape this into a pivotal resource for software engineers everywhere.  
-  
-  
-  
-🌟 Special thanks to everyone who has helped me in my Journey so far Tangy Frederick Chloe Albright Liza Feng  
-  
   
   
   

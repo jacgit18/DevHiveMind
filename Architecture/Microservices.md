@@ -36,6 +36,9 @@ For each microservice has its own database
 
 Benefits of microservices is you can choose to expose certain services publicly like an API and keep others privately
 
+![[Microservice Roadmap.gif]]
+
+
 ## When to use microservice
 It makes sense to turn something into a microservice when you want to achieve scalability, maintainability, and independent deployment. However, administrative processes might not be suitable for microservices if they don't require frequent updates or scalability, and if their complexity doesn't warrant the overhead of a separate microservice. It's important to consider the trade-offs and benefits before deciding.
 
@@ -46,6 +49,8 @@ You can define microservices in yaml file
 
 
 In the realm of microservices and software development, it's imperative that systems exhibit responsiveness, resilience, elasticity, and embrace a message-driven architecture. This ensures not only efficient handling of tasks but also enhances adaptability to varying workloads. Responsive systems promptly react to user inputs, while resilient ones gracefully recover from failures. Elasticity facilitates scalability, enabling systems to handle fluctuating demands seamlessly. Incorporating a message-driven approach promotes effective communication between components, fostering a robust and interconnected software ecosystem.
+
+
 
 
 ##  Strangler Design
