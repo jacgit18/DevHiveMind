@@ -70,7 +70,6 @@ Dev HiveMind stands as a comprehensive knowledge repository tailored for softwar
 
   
   
-  
 This project is not just a personal milestone but a resource I believe can significantly benefit the software development community. Whether you're a novice seeking direction or a seasoned engineer looking to contribute your wealth of knowledge, Dev HiveMind offers a space for collective growth and learning.  
   
   
