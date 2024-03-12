@@ -16,7 +16,6 @@ Relates:
 #todo/High/Dev 
 - [ ] ***Refine notes based subject matter you are actively practicing like domain driven design not currently using it so low priority so when you actually using it refine documentation on it***
 
-- [ ] Look at what needs to be refined in react and redux notes
 - [ ] Get certified in Linux 
 - [ ] Continue reading [[Grokking Algorithms - An illustrated guide for programmers and other curious people.pdf#page=160|Grokking Algorithms - An illustrated guide for programmers and other curious people, page 160]]
 - [ ] Looking to automating stock buys

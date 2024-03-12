@@ -14,13 +14,12 @@ Relates:
 
 #### Plan your work and work your plan
 
-## Main Long Quest
+#### Main Long Quest By Order of Priority
 #todo/High/Dev 
 >[!note] 
 >Get to the level were you are doing 1 coding question a month while working full time
 - [ ] AWS
 - [ ] [[Clean Code]]
-	- [ ] Code Reusability: Code Reusability is the ability to reuse code in different parts of an application or in different applications. It is an important skill that can help developers save time and effort. However, code reusability is a secondary skill that is dependent on good design patterns and clean code.
 - [ ] [[Microservices]]
 - [ ] [[Event Driven Architecture]] 
 - [ ] [[Reactive programming]]
@@ -40,6 +39,11 @@ Relates:
 - [ ] [[spring-boot.pdf]]
 - [[Python Learning Plan]]
 	- [ ] [[python.pdf]]
+
+## Certs
+#todo/Med/Dev
+- [ ] AWS Cert 
+- [ ] Linux Cert
 
 
 ## Side Quest Revist
@@ -72,10 +76,7 @@ Dev HiveMind stands as a comprehensive knowledge repository tailored for softwar
   
 This project is not just a personal milestone but a resource I believe can significantly benefit the software development community. Whether you're a novice seeking direction or a seasoned engineer looking to contribute your wealth of knowledge, Dev HiveMind offers a space for collective growth and learning.  
   
-  
-  
 [https://github.com/jacgit18/DevHiveMind](https://github.com/jacgit18/DevHiveMind)  
-  
   
   
   
