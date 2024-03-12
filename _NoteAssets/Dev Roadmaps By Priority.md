@@ -70,14 +70,13 @@ After years of navigating this complex environment through trial and error, and 
   
   
   
-Dev HiveMind stands as a comprehensive knowledge repository tailored for software engineers. Imagine it as an encyclopedia crafted specifically for developers. This project is the culmination of years of dedication and is now open for peer review and public open source contribution.  
+Dev HiveMind stands as a comprehensive knowledge repository tailored for software engineers. Imagine it as an encyclopedia crafted specifically for developers. This project is the culmination of years of dedication and is now open for peer review and open source contribution.  
 
-  
+
   
 This project is not just a personal milestone but a resource I believe can significantly benefit the software development community. Whether you're a novice seeking direction or a seasoned engineer looking to contribute your wealth of knowledge, Dev HiveMind offers a space for collective growth and learning.  
   
-[https://github.com/jacgit18/DevHiveMind](https://github.com/jacgit18/DevHiveMind)  
-  
+Signup: https://forms.gle/wsJtMZg15yjGKLiV9 
   
   
 I'm eager to hear your thoughts, answer any questions, and most importantly, invite you to explore and contribute to the Developer HiveMind. Together, let's shape this into a pivotal resource for software engineers everywhere.  
