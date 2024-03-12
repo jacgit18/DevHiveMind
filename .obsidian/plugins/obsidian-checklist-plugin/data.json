@@ -70,6 +70,7 @@
     "#todo/read",
     "#todo/low/read",
     "#todo/low/dev/sideresearch",
+    "#todo/prompts",
     "#todo/med/dev",
     "#todo/low/dev"
   ],

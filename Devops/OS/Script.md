@@ -1,10 +1,14 @@
 ---
-tags: 
+tags:
+  - linux
 author:
   - jacgit18
-Status: 
+  - chatgpt
+Comments: 
+Purpose: 
+Status: Draft
 Started: 
-EditDate: 
+EditDate: 2024-03-11
 Relates:
 ---
 Certainly! Here's an example of a Bash install script that installs essential software and tools for software engineers:

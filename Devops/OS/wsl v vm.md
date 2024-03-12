@@ -1,11 +1,16 @@
 ---
-tags: 
+tags:
+  - OS
 author:
   - jacgit18
-Status: 
+  - chatgpt
+Comments: Placeholder comment any thing else you want to mention about the document.
+Purpose: 
+Status: Refinement
 Started: 
 EditDate: 
-Relates:
+Relates: 
+Peer Reviewed: 0
 ---
 WSL (Windows Subsystem for Linux), Docker containers, and virtual machines (VMs) are all technologies that enable different ways to run and manage software on a computer, but they have distinct differences in how they operate:  
   

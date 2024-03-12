@@ -1,15 +1,21 @@
 ---
-tags: 
+tags:
+  - schema
+  - databases
 author:
   - jacgit18
+  - chatgpt
 Comments: Placeholder comment any thing else you want to mention about the document.
 Purpose: This documentation discusses
 Status: Draft
 Started: 
-EditDate: 
+EditDate: 2024-03-11
 Relates: 
-Peer Reviewed: "0"
+Peer Reviewed: 0
 ---
+#todo/Med/Dev 
+- [ ] Expand on this schema
+
 | *Users* |               |           | FK  | FK table name | Primary | Length | Allow Null | Default             |
 | ------- | ------------- | --------- | --- | ------------- | ------- | ------ | ---------- | ------------------- |
 |         | user_id       | UUID      | 0   |               | 1       |        | N          | AUTO                |
