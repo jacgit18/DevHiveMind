@@ -2,13 +2,14 @@
 tags: 
 author:
   - jacgit18
-Status: 
+Comments: Placeholder comment any thing else you want to mention about the document.
+Purpose: This documentation discusses
+Status: Refinement
 Started: 
 EditDate: 
-Relates:
+Relates: "[[Python World]]"
+Peer Reviewed:
 ---
-
-
 
 Week 2-3: 
 
