@@ -87,23 +87,5 @@ When you want to learn new languages in the future think about every time you ha
 - [ ] Create a code base level mind map around decisions being made at the Code base level include things like asynchronized and synchronize code  
 
 
-In the ever-expanding landscape of software engineering, navigating the sea of information can be daunting, especially for newcomers. After years of refining my learning process, I'm excited to unveil DevHiveMind—a comprehensive knowledge repository tailored for software engineers.
-
-DevHiveMind serves as an encyclopedia crafted specifically for developers, representing the culmination of years of dedication. Now open for peer review and open-source contributions, this project aims to benefit the entire software development community.
-
-Whether you're starting your journey or already well-versed in your field, DevHiveMind offers a platform for collective growth and learning, allowing professionals to benefit from shared knowledge and experiences.
-
-Sign up to explore and contribute: https://forms.gle/wsJtMZg15yjGKLiV9
-
-I eagerly await your feedback, questions, and contributions. Let's work together to shape DevHiveMind into a pivotal resource for software engineers worldwide.
-
-🌟 Special thanks to everyone who has supported me on this journey: Tangy, Frederick, Chloe, Albright, Liza, Feng.
-  
-
-  
-  
-  
-  
-#technology #personaldevelopment #tech #goals #innovation #coding #programming #developer #techcommunity #problemsolving #careerdevelopment #continuouslearning #softwaredevelopment #softwareengineering #neverstoplearning #codingjourney #datastructures #SoftwareCarpentry #SoftwareArchitecture
 
 
