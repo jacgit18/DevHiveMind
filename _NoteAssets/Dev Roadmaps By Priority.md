@@ -2,8 +2,8 @@
 tags: 
 author:
   - jacgit18
-Purpose: Update maybe use OKR
-Comments: Placeholder comment any thing else you want to mention about the document.
+Purpose: This documentation discusses topics of focus for overall career to consider learning.
+Comments: Maybe update and use OKR dashboard need 1 to 3 OKR for a quarter
 Status: Perpetual
 Started: 2023-01-01
 EditDate: 
@@ -21,7 +21,9 @@ Relates:
 >[!note] 
 >Get to the level were you are doing 1 coding question a month while working full time
 - [ ] Continue reading [[Grokking Algorithms - An illustrated guide for programmers and other curious people.pdf#page=160|Grokking Algorithms - An illustrated guide for programmers and other curious people, page 160]]
-- [ ] AWS Cert
+- [ ] AWS Cert 
+- [ ] Portfolio Site
+- [ ] Build something specific clear goals
 - [ ] [[Clean Code]]
 - [ ] [[Microservices]]
 - [ ] [[Event Driven Architecture]] 
@@ -37,15 +39,31 @@ Relates:
 - [ ] [[software-architect.pdf]]
 
 
+## Books
+#todo/Read/Books  
+- [ ] The Richest Man in Babylon by George Samuel Clason
+- [ ] Grokking Algorithms📅 2023-12-21 
+- [ ] Clean Code A Handbook of Agile Software Craftsmanship 📅 2023-12-30 
+- [ ] Design Patterns
+
 ## New Path
+When you want to learn new languages in the future think about every time you have to prepare for technical interviews to start interviewing for a new job change what language you practice in once you feel like you have good understanding of how to build up solutions to programming challenges.
 #todo/Low/Dev 
 - [ ] [[spring-boot.pdf]]
 - [[Python Learning Plan]]
 	- [ ] [[python.pdf]]
+- [ ] https://brilliant.org/paths/probability-statistics-finance/
 
-## Certs
+
+## Alt Stuff to Try
 #todo/Med/Dev
 - [ ] Linux Cert
+- [ ] content management system  
+- [ ] shopify  
+- [ ] wix
+- [ ] WordPress
+- [ ] Create plugins WordPress  
+- [ ] Look into [[ChatGpt Extension generator Output]]
 
 ## Projects
 #todo/Med/Dev 
@@ -63,6 +81,7 @@ Relates:
 - [ ] [[postgresql-dba.pdf]]
 - [ ] [[Linux Learning Plan]]
 - [ ] [[computer-science.pdf]]
+- [ ] Create a code base level mind map around decisions being made at the Code base level include things like asynchronized and synchronize code  
 
 
 In the ever-expanding landscape of software engineering, navigating the sea of information can be daunting, especially for newcomers. After years of refining my learning process, I'm excited to unveil DevHiveMind—a comprehensive knowledge repository tailored for software engineers.
@@ -83,3 +102,5 @@ I eagerly await your feedback, questions, and contributions. Let's work together
   
   
 #technology #personaldevelopment #tech #goals #innovation #coding #programming #developer #techcommunity #problemsolving #careerdevelopment #continuouslearning #softwaredevelopment #softwareengineering #neverstoplearning #codingjourney #datastructures #SoftwareCarpentry #SoftwareArchitecture
+
+

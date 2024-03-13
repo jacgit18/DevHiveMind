@@ -102,3 +102,15 @@ can you recommend Pluralsight courses for each week
 
 
 Act as a senior developer recommending learning plan what order would you prioritize learning these skillets from domain driven design, Design patterns, Microservices, code reusability, clean code, pattern languages, and 12 factor
+
+
+
+Try 
+
+Act as a software engineer Identify domain for a driving school in domain driven design  
+  
+Kepner trego decision analysis around code base decisions and projects  
+  
+Copy book content section and have chatgpt summarize it  
+  
+Ask chat GPT how would you write integration test for a particular function

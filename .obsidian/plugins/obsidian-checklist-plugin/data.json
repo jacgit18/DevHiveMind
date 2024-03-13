@@ -71,8 +71,8 @@
     "#todo/low/read",
     "#todo/low/dev/sideresearch",
     "#todo/prompts",
-    "#todo/med/dev",
-    "#todo/low/dev"
+    "#todo/low/dev",
+    "#todo/med/dev"
   ],
   "_hiddenTags": []
 }

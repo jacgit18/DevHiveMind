@@ -13,66 +13,27 @@ Relates:
 
 
 # <mark style="background: #FF5582A6;">Current </mark>
-#todo/High/Dev 
-- [ ] Create a Queue Generator Method Using Linked Lists
-- [ ] Union find also known as Disjoint-Set Union https://www.youtube.com/watch?v=ayW5B2W9hfo
+
   
-meta & google  
+
   
-djikstra  
+
   
-min spanning tree
 
 
-tangibles to learn 
-content management system  
-shopify  
-wix
-
-Report to Ic3 immediately [https://www.ic3.gov/](https://www.ic3.gov/)
-
-
-
-Build sites for free and charge person or company a percentage of their revenue made  
   
-Automate dropship  
-  
-Use Google trends to generate business ideas  
-  
-inserting ads in your website  
-  
-Shopify WordPress  
-  
-[https://brilliant.org/paths/probability-statistics-finance/](https://brilliant.org/paths/probability-statistics-finance/)  
-  
-Create templates with JavaScript  
-  
-Like your own implementation of a slider  
-  
-  
-Create plugins WordPress  
-  
-  
-Create courses or teach  
-  
-Build app  
-  
-use Fiver  
 
 
 
 
-Build something specific clear goals
 
-Track reference notes in Obsidian Which are notes that are essentially Notes written in someone Else's words to reference 
 
-Create a code base level mind map around decisions being made at the Code base level include things like asynchronized and synchronize code  
   
   
-Take in user story convert into high level object oriented class Map breakdown down structure  
 
 
-When you want to learn new languages in the future think about every time you have to prepare for technical interviews to start interviewing for a new job change what language you practice in once you feel like you have good understanding of how to build up solutions to programming challenges
+
+
 
 
 
@@ -87,8 +48,6 @@ When you want to learn new languages in the future think about every time you ha
 
 ## <mark style="background: #FFB86CA6;">Dev Med</mark>
 #todo/Med/Dev
-- [ ] [[ChatGpt Extension generator Output]]
-- [ ] Finish LinkedIn video
 - [ ] **Problem-Solving Impatience:** Develop the ability to recognize and effectively manage impatience during problem-solving, adapting your approach to overcome challenges.
 - [ ] **Python & Async Debugging in VSCode:** Master advanced debugging techniques within VSCode, particularly tailored for Python and asynchronous code.
 - [ ] **React Debugging with VSCode:** Optimize your debugging process for React projects by harnessing the debugging tools offered by VSCode.
@@ -100,15 +59,10 @@ When you want to learn new languages in the future think about every time you ha
 - [ ] **Whiteboarding Abstraction Skills:** Acquire the art of creating lucid and effective abstractions when whiteboarding technical concepts, a vital skill for excelling in interviews.
 - [ ] create a long list LinkedIn post ideas about popular historical leaders like for example martin Luther king, also events around the year like breast cancer awareness and holidays give ideas for each month in the year on these topic
 - [ ] Search engine optimized for developers to find projects to contribute to or find common errors and issues
-- [x] Play around with lint more ✅ 2024-01-06
 
 
-## Books
-#todo/Read/Books  
-- [ ] The Richest Man in Babylon by George Samuel Clason
-- [ ] Grokking Algorithms📅 2023-12-21 
-- [ ] Clean Code A Handbook of Agile Software Craftsmanship 📅 2023-12-30 
-- [ ] Design Patterns
+
+
 
 
 
@@ -150,34 +104,13 @@ topics learned
 - [ ] Please proofread for spelling, grammar, and readability. also add more to this introduction while SEO optimizing.
 
 
-Try 
-
-Act as a software engineer Identify domain for a driving school in domain driven design  
-  
-Kepner trego decision analysis around code base decisions and projects  
-  
-Copy book content section and have chatgpt summarize it  
-  
-Ask chat GPT how would you write integration test for a particular function
-
-
-
-- [ ] Identify things to focus on and start doing and prioritize other things and where they should go in terms of bucket also breath and depth  
-- [ ] Dealing with package dependencies
 
 
 
 
 
 
-# <mark style="background: #FF5582A6;">Future immediate</mark>
-  #todo/High/Future
 
-
-  
-  
-## <mark style="background: #FFB86CA6;">Future Med</mark>
-#todo/Med/Future
 
 
 ## <mark style="background: #BBFABBA6;">Future Low</mark>
@@ -203,17 +136,11 @@ Ask chat GPT how would you write integration test for a particular function
 - [ ] blockvault  
 - [ ] faraday cage for computer  
 - [ ] Truecrypt  
-- [ ] driver injection  
-- [ ] code text Art  
 - [ ] registry edit that speeds up keyboard  
 - [ ] should you compress c drive windows 10  
 - [ ] secondary computer pre rendering game  
 - [ ] motherboard repair  
-- [ ] pc water cooling loop order  
-- [ ] open source partition recovery software  
-- [ ] Set up and understand Bitcoin wallet  
-- [ ] Monitor with built in kvm  
-- [ ] remove roles and features server 2016  
+
 
 
 
