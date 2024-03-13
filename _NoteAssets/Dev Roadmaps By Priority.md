@@ -15,7 +15,7 @@ Relates:
 #### Plan your work and work your plan
 
 #### Main Long Quest By Order of Priority
-***Refine notes based subject matter you are actively practicing like domain driven design not currently using it so low priority so when you actually using it refine documentation on it***
+***Refine notes based subject matter you are actively practicing like domain driven design not currently using it so low priority so when you actually using it refine documentation on it and Learn more.***
 
 #todo/High/Dev 
 >[!note] 
@@ -59,6 +59,7 @@ When you want to learn new languages in the future think about every time you ha
 - [[Python Learning Plan]]
 	- [ ] [[python.pdf]]
 - [ ] https://brilliant.org/paths/probability-statistics-finance/
+- [ ] create a long list LinkedIn post ideas about popular historical leaders like for example martin Luther king, also events around the year like breast cancer awareness and holidays give ideas for each month in the year on these topic
 
 
 ## Alt Stuff to Try
@@ -70,6 +71,8 @@ When you want to learn new languages in the future think about every time you ha
 - [ ] WordPress
 - [ ] Create plugins WordPress  
 - [ ] Look into [[ChatGpt Extension generator Output]]
+- [ ] Search engine optimized for developers to find projects to contribute to or find common errors and issues
+- [ ] **Code Generator Scripts:** Research, design, and implement scripts that streamline code generation for repetitive programming tasks, significantly enhancing your workflow efficiency.
 
 ## Projects
 #todo/Med/Dev 
@@ -88,7 +91,9 @@ When you want to learn new languages in the future think about every time you ha
 - [ ] [[Linux Learning Plan]]
 - [ ] [[computer-science.pdf]]
 - [ ] Create a code base level mind map around decisions being made at the Code base level include things like asynchronized and synchronize code  
-
+- [ ] **Python & Async Debugging in VSCode:** Master advanced debugging techniques within VSCode, particularly tailored for Python and asynchronous code.
+- [ ] **Gitbare Repository Problem Solving:** Tackle issues associated with Gitbare repositories and refine your Git version control skills.
+- [ ] **Performance Optimization:** Dive deep into the realm of performance optimization, including techniques for minimizing DOM updates and load balancing, ensuring applications run at their peak efficiency.
 
 
 
