@@ -90,7 +90,7 @@ When you want to learn new languages in the future think about every time you ha
 - [ ] [[postgresql-dba.pdf]]
 - [ ] [[Linux Learning Plan]]
 - [ ] [[computer-science.pdf]]
-- [ ] Create a code base level mind map around decisions being made at the Code base level include things like asynchronized and synchronize code  
+- [ ] Create a codebase level mind map around decisions being made at the Code base level include things like asynchronized and synchronize code  
 - [ ] **Python & Async Debugging in VSCode:** Master advanced debugging techniques within VSCode, particularly tailored for Python and asynchronous code.
 - [ ] **Gitbare Repository Problem Solving:** Tackle issues associated with Gitbare repositories and refine your Git version control skills.
 - [ ] **Performance Optimization:** Dive deep into the realm of performance optimization, including techniques for minimizing DOM updates and load balancing, ensuring applications run at their peak efficiency.

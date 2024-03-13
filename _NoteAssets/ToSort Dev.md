@@ -31,9 +31,8 @@ Relates:
 - [ ]  **JWT Sessions:**  Delve into the application of JSON Web Tokens (JWT) for robust and efficient session management in web applications.
 - [ ] **Progressive Web Apps (PWAs):** Discover the realm of progressive web applications and their compelling advantages in terms of user experience and enhanced functionality.
 - [ ] **Linux Firewall Management:** Elevate your proficiency in managing and configuring Linux firewalls, a critical skill for bolstering network security.
-- [ ] **AWS Lambda and Serverless Architectures:** Embark on a journey of exploration into AWS Lambda and immerse yourself in the world of serverless application architectures, a rapidly evolving trend in cloud computing.
-- [ ] **App Security Resources:** Discover a comprehensive programmer's guide to accessing and enhancing application security, emphasizing security as a primary consideration in software development.
-- [ ] **Secure Password Capture in Terminals:** Explore advanced techniques for securely capturing and managing passwords entered in terminal windows.
+
+
 - [ ] **Math Skills for Programming:** Elevate your mathematical aptitude, a fundamental skill essential for various programming tasks.
 ### Scripting
 - [ ] program a usb to automatically run a script in Linux
