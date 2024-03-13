@@ -46,6 +46,8 @@ Relates:
 - [ ] Grokking Algorithms📅 2023-12-21 
 - [ ] Clean Code A Handbook of Agile Software Craftsmanship 📅 2023-12-30 
 - [ ] Design Patterns
+- [ ] [[Designing Data-Intensive Applications The Big Ideas Behind Reliable, Scalable, and Maintainable Systems by Martin Kleppmann (z-lib.org).pdf]]
+- [ ] [[Software Architecture The Hard Parts Modern Trade-Off Analyses for Distributed Architectures (Neal Ford, Mark Richards, Pramod Sadalage etc.) (z-lib.org).pdf]]
 
 ## New Path
 When you want to learn new languages in the future think about every time you have to prepare for technical interviews to start interviewing for a new job change what language you practice in once you feel like you have good understanding of how to build up solutions to programming challenges.
