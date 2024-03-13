@@ -46,6 +46,7 @@ Peer Reviewed: 0
 	- Create helper functions for code modularity also implementing proper [[Naming Conventions]]. 
 
 
+
 ## Order of Patterns to Focus on 
 #### Pointer Manipulation/Comparison 
 1. Two Pointer

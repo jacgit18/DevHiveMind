@@ -16,42 +16,12 @@ Relates:
 
   
 
-  
-
-  
-
-
-  
-
-
-
-
-
-
-  
-  
-
-
-
-
-
-
-
-### Constraints
-- [ ] Relax constraints solve problems you want to solve within the problem or alternate problem that is similar or close to the original
-
-### Feature check
-- When learning a new feature/technology or library  think about how commonly used and at what stage of the development process or Codebase contribution process will it be used at to decide on the time you give to it in terms of the breath and depth 
-	- like if your deciding to go in depth into something you may do it immediately or in the future like with java class loaders or loggers
-- or over the long term like learning all the different Java versions in-depth or at least in breath over time in small chunks  
-
-
 ## <mark style="background: #FFB86CA6;">Dev Med</mark>
 #todo/Med/Dev
-- [ ] **Problem-Solving Impatience:** Develop the ability to recognize and effectively manage impatience during problem-solving, adapting your approach to overcome challenges.
+
 - [ ] **Python & Async Debugging in VSCode:** Master advanced debugging techniques within VSCode, particularly tailored for Python and asynchronous code.
-- [ ] **React Debugging with VSCode:** Optimize your debugging process for React projects by harnessing the debugging tools offered by VSCode.
-- [ ] **Programming Library Issue Identification:** Investigate and master methods for identifying and addressing challenges within programming libraries, contributing to the advancement of open-source development.
+
+
 - [ ] **Code Generator Scripts:** Research, design, and implement scripts that streamline code generation for repetitive programming tasks, significantly enhancing your workflow efficiency.
 - [ ] **Gitbare Repository Problem Solving:** Tackle issues associated with Gitbare repositories and refine your Git version control skills.
 - [ ] **Performance Optimization:** Dive deep into the realm of performance optimization, including techniques for minimizing DOM updates and load balancing, ensuring applications run at their peak efficiency.
@@ -85,20 +55,6 @@ Relates:
 
 
 
-create user story on real world topic  > convert to uml class diagram > implement
-
-
-convert to assessment covering  
-  
-multi thread, stream, thread  
-  
-topics learned
-
-
-## Organize Gpt Prompt better
-- [ ] Ask chatgpt to summarize a book  
-- [ ] use chat GPT to create junction table ideas
-- [ ] Please proofread for spelling, grammar, and readability. also add more to this introduction while SEO optimizing.
 
 
 
@@ -108,23 +64,6 @@ topics learned
 
 
 
-![[Researching.gif]]
-#todo/Low/Dev/SideResearch
-
-
-
-
-
-
-
-- [ ] [https://www.youtube.com/results?search_query=backmasking](https://www.youtube.com/results?search_query=backmasking) 
-- [ ] [https://blog.idrsolutions.com/2014/12/android-apps-ide-for-java-coder-programmers/](https://blog.idrsolutions.com/2014/12/android-apps-ide-for-java-coder-programmers/)  
-- [ ] [https://www.youtube.com/results?search_query=spoof+mac+address](https://www.youtube.com/results?search_query=spoof+mac+address)  
-- [ ] [https://www.youtube.com/results?search_query=NVIDIA+Jetson+Nano](https://www.youtube.com/results?search_query=NVIDIA+Jetson+Nano) 
-- [ ] [https://unraid.net/](https://unraid.net/)  
-- [ ] [https://www.qemu.org/](https://www.qemu.org/)  
-- [ ] [open source hyper-visor  ](https://xcp-ng.org/)
-- [ ] [hyper-visor paid version not open source  ](https://www.citrix.com/products/citrix-hypervisor/)
 
 
 

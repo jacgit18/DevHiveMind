@@ -73,7 +73,7 @@ When faced with a complex problem, consider two effective strategies: First, rel
 7. **Array Iteration:**
    - Prefer `map` over `forEach` for array operations. Avoid modifying objects directly.
 
-
+Try to relax constraints to solve problems you want to solve within the problem or alternate problem that is similar or close to the original.
 ## End  
 After coding a naive approach. (your first naive approach might be Greedy/Optimal sometimes if your very good still do a naive to explain your process) and go step by step 
 

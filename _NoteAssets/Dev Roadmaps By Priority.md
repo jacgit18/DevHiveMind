@@ -41,6 +41,9 @@ Relates:
 
 
 ## Books
+
+![[Researching.gif]]
+
 #todo/Read/Books  
 - [ ] The Richest Man in Babylon by George Samuel Clason
 - [ ] Grokking Algorithms📅 2023-12-21 

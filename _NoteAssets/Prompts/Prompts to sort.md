@@ -114,3 +114,19 @@ Kepner trego decision analysis around code base decisions and projects
 Copy book content section and have chatgpt summarize it  
   
 Ask chat GPT how would you write integration test for a particular function
+
+
+create user story on real world topic  > convert to uml class diagram > implement
+
+
+convert to assessment covering  
+  
+multi thread, stream, thread  
+  
+topics learned
+
+
+
+- [ ] Ask chatgpt to summarize a book  
+- [ ] use chat GPT to create junction table ideas
+- [ ] Please proofread for spelling, grammar, and readability. also add more to this introduction while SEO optimizing.
