@@ -79,7 +79,7 @@ When you want to learn new languages in the future think about every time you ha
 
 
 ## Side Quest Revist
-#todo/Low/Dev 
+#todo/Low/Dev/Personal 
 - [ ] [[java.pdf]]
 - [ ] [[nodejs.pdf]]
 - [ ] [[qa.pdf]]
