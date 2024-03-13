@@ -3,7 +3,7 @@ tags:
 author:
   - jacgit18
 Purpose: This documentation discusses topics of focus for overall career to consider learning.
-Comments: Maybe update and use OKR dashboard need 1 to 3 OKR for a quarter
+Comments: Anything high falls under OKRs.
 Status: Perpetual
 Started: 2023-01-01
 EditDate: 
