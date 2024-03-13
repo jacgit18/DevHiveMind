@@ -2,8 +2,8 @@
 tags: 
 author:
   - jacgit18
-Purpose: Update maybe use OKR
-Comments: Placeholder comment any thing else you want to mention about the document.
+Purpose: This documentation discusses topics of focus for overall career to consider learning.
+Comments: Anything high falls under OKRs.
 Status: Perpetual
 Started: 2023-01-01
 EditDate: 
@@ -15,15 +15,17 @@ Relates:
 #### Plan your work and work your plan
 
 #### Main Long Quest By Order of Priority
-#todo/High/Dev 
+***Refine notes based subject matter you are actively practicing like domain driven design not currently using it so low priority so when you actually using it refine documentation on it and Learn more.***
+![[Things Todo.gif]]
+#todo/Personal/High/Dev 
 >[!note] 
 >Get to the level were you are doing 1 coding question a month while working full time
-- [ ] AWS
 - [ ] [[Clean Code]]
 - [ ] [[Microservices]]
 - [ ] [[Event Driven Architecture]] 
 - [ ] [[Reactive programming]]
 - [ ] [[Design Patterns & Gang of 4]]
+- [ ] [[Chaos Engineering]]
 - [ ] [[Domain-driven design]]depends on domain which may vary
 - [ ] [[devops.pdf]]
 - [x] [[12 Factor App Docker.canvas|12 Factor App Docker]]
@@ -34,20 +36,50 @@ Relates:
 - [ ] [[software-architect.pdf]]
 
 
+## Books
+
+![[Researching.gif]]
+
+#todo/Personal/High/Dev  
+- [ ] Continue reading [[Grokking Algorithms - An illustrated guide for programmers and other curious people.pdf#page=160|Grokking page 160]]
+- [ ] The Richest Man in Babylon by George Samuel Clason
+- [ ] Clean Code A Handbook of Agile Software Craftsmanship 📅 2023-12-30 
+- [ ] Design Patterns
+- [ ] [[Designing Data-Intensive Applications The Big Ideas Behind Reliable, Scalable, and Maintainable Systems by Martin Kleppmann (z-lib.org).pdf]]
+- [ ] [[Software Architecture The Hard Parts Modern Trade-Off Analyses for Distributed Architectures (Neal Ford, Mark Richards, Pramod Sadalage etc.) (z-lib.org).pdf]]
+
 ## New Path
-#todo/Low/Dev 
+When you want to learn new languages in the future think about every time you have to prepare for technical interviews to start interviewing for a new job change what language you practice in once you feel like you have good understanding of how to build up solutions to programming challenges.
+#todo/Personal/Low/Dev  
 - [ ] [[spring-boot.pdf]]
 - [[Python Learning Plan]]
 	- [ ] [[python.pdf]]
+- [ ] https://brilliant.org/paths/probability-statistics-finance/
+- [ ] create a long list LinkedIn post ideas about popular historical leaders like for example martin Luther king, also events around the year like breast cancer awareness and holidays give ideas for each month in the year on these topic
 
-## Certs
-#todo/Med/Dev
-- [ ] AWS Cert 
+
+## Alt Stuff to Try
+#todo/Personal/Med/Dev 
 - [ ] Linux Cert
+- [ ] content management system  
+- [ ] shopify  
+- [ ] wix
+- [ ] WordPress
+- [ ] Create plugins WordPress  
+- [ ] Look into [[ChatGpt Extension generator Output]]
+- [ ] Search engine optimized for developers to find projects to contribute to or find common errors and issues
+- [ ] **Code Generator Scripts:** Research, design, and implement scripts that streamline code generation for repetitive programming tasks, significantly enhancing your workflow efficiency.
+- [ ] **Math Skills for Programming:** Elevate your mathematical aptitude, a fundamental skill essential for various programming tasks.
+
+## Projects
+#todo/Personal/Med/Dev
+- [ ] look into which info-graphics can be recreated and integrated in to note vault 
+- [ ] identify areas of automation were ever you see 
+- [ ] Identify most expensive manual process  
 
 
 ## Side Quest Revist
-#todo/Low/Dev 
+#todo/Personal/Low/Dev 
 - [ ] [[java.pdf]]
 - [ ] [[nodejs.pdf]]
 - [ ] [[qa.pdf]]
@@ -55,39 +87,12 @@ Relates:
 - [ ] [[postgresql-dba.pdf]]
 - [ ] [[Linux Learning Plan]]
 - [ ] [[computer-science.pdf]]
+- [ ] Create a codebase level mind map around decisions being made at the Code base level include things like asynchronized and synchronize code  
+- [ ] **Python & Async Debugging in VSCode:** Master advanced debugging techniques within VSCode, particularly tailored for Python and asynchronous code.
+- [ ] **Gitbare Repository Problem Solving:** Tackle issues associated with Gitbare repositories and refine your Git version control skills.
+- [ ] **Performance Optimization:** Dive deep into the realm of performance optimization, including techniques for minimizing DOM updates and load balancing, ensuring applications run at their peak efficiency.
+- [ ] Look into bots and creating a LinkedIn bot to assist in re-posting about Technology and programming
+- [ ]  **JWT Sessions:**  Delve into the application of JSON Web Tokens (JWT) for robust and efficient session management in web applications.
+- [ ] **Progressive Web Apps (PWAs):** Discover the realm of progressive web applications and their compelling advantages in terms of user experience and enhanced functionality.
+- [ ] **Linux Firewall Management:** Elevate your proficiency in managing and configuring Linux firewalls, a critical skill for bolstering network security.
 
-
-
-
-
-
-In today's world, the vast sea of information in software engineering can be overwhelming and sometimes, nebulous. Navigating and grasping the broader landscape of this field poses a significant challenge, especially for those new to the industry.  
-  
-  
-
-  
-After years of navigating this complex environment through trial and error, and continuously refining my personal learning process, I'm thrilled to introduce my latest venture: Dev HiveMind.  
-  
-  
-  
-Dev HiveMind stands as a comprehensive knowledge repository tailored for software engineers. Imagine it as an encyclopedia crafted specifically for developers. This project is the culmination of years of dedication and is now open for peer review and public open source contribution.  
-
-  
-  
-This project is not just a personal milestone but a resource I believe can significantly benefit the software development community. Whether you're a novice seeking direction or a seasoned engineer looking to contribute your wealth of knowledge, Dev HiveMind offers a space for collective growth and learning.  
-  
-[https://github.com/jacgit18/DevHiveMind](https://github.com/jacgit18/DevHiveMind)  
-  
-  
-  
-I'm eager to hear your thoughts, answer any questions, and most importantly, invite you to explore and contribute to the Developer HiveMind. Together, let's shape this into a pivotal resource for software engineers everywhere.  
-  
-  
-  
-🌟 Special thanks to everyone who has helped me in my Journey so far Tangy Frederick Chloe Albright Liza Feng  
-  
-  
-  
-  
-  
-#technology #personaldevelopment #tech #goals #innovation #coding #programming #developer #techcommunity #problemsolving #careerdevelopment #continuouslearning #softwaredevelopment #softwareengineering #neverstoplearning #codingjourney #datastructures #SoftwareCarpentry #SoftwareArchitecture

@@ -11,7 +11,7 @@ Started: 2023-11-23
 EditDate: 2024-03-11
 Relates:
 ---
-#todo/Med/Dev 
+#todo/Personal/Med/Dev 
 - [ ] Look into these project ideas
 
 To learn web workers in TypeScript, consider embarking on a project that involves parallelizing tasks or background processing. A compelling idea is to create a real-time data streaming application, focusing on the financial domain to build practical skills. Here are refined project ideas:

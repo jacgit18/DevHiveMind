@@ -21,6 +21,8 @@ A database schema, pronounced SKEE-mah, serves as the organization or structure 
 - It represents a logical view of the entire database, serving as a skeletal structure with constraints applied to the data.
 - Evolves through data modeling, influencing the order and structure of feature development.
 
+
+![[DBModels.gif]]
 **Varieties of Database Schemas:**
 - Six types: flat model(Excel), hierarchical model(JSON or XML), network model, relational model, star schema, and snowflake schema.
 - Relational databases, common in SQL, primarily use the term "database schema."

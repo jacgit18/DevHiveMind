@@ -28,16 +28,18 @@ Peer Reviewed: 0
 
 - **Compiler**: Translates high-level language programs into machine instructions, but additional steps like linking are needed for executable code.
 
-- **Concurrency** is crucial in programming to handle multiple tasks efficiently, especially in situations where tasks can be performed independently or where waiting for one task to complete before starting another would be inefficient. It's commonly used in systems dealing with input/output operations, network requests, and handling multiple user interactions simultaneously.
+- **Concurrency**: is crucial in programming to handle multiple tasks efficiently, especially in situations where tasks can be performed independently or where waiting for one task to complete before starting another would be inefficient. It's commonly used in systems dealing with input/output operations, network requests, and handling multiple user interactions simultaneously.
 
 - **Concurrent**: Concurrent refers to things happening or existing at the same time. In computing and programming, concurrency specifically relates to the concept of multiple tasks making progress at overlapping time intervals. It doesn't necessarily mean that these tasks are executed simultaneously, but rather they can be interleaved or partially overlapping in their execution.
  ^4f0064
 
 - **Consecutive**: Sequential order, e.g., serving one sentence after another.
 
-- **Convertor:** A utility class responsible for converting data between plain, often raw, format and structured business objects. It plays a role in transforming information from a general form to one that aligns with the needs of specific applications or systems.
+- **Convertor**: A utility class responsible for converting data between plain, often raw, format and structured business objects. It plays a role in transforming information from a general form to one that aligns with the needs of specific applications or systems.
 
-- **Deserializer:** A utility class that performs the reverse operation of a serializer. It converts serialized data, often in formats like JSON or XML, back into structured business objects. Deserialization is essential for reconstructing information after storage or transmission.
+- **Cookbook**: A cookbook in the programming context is collection of tiny programs that each demonstrate a particular programming concept. The Cookbook Method is the process of learning a programming language by building up a repository of small programs that implement specific programming concepts.
+
+- **Deserializer**: A utility class that performs the reverse operation of a serializer. It converts serialized data, often in formats like JSON or XML, back into structured business objects. Deserialization is essential for reconstructing information after storage or transmission.
 
 - **Duck typing**: in computer programming is an application of the duck test—"If it walks like a duck and it quacks like a duck, then it must be a duck"—to determine whether an object can be used for a particular purpose. With normal typing, suitability is determined by an object's type. In duck typing, an object's suitability is determined by the presence of certain methods and properties, rather than the type of the object itself.
 
@@ -49,23 +51,23 @@ Peer Reviewed: 0
 
 - **Methodology**: a system of methods used in a particular area of study or activity.
 
-- **Parallel Concurrency:** Tasks truly execute simultaneously, often achieved through multiple processors or cores. This type of concurrency is more about simultaneous execution.
+- **Parallel Concurrency**: Tasks truly execute simultaneously, often achieved through multiple processors or cores. This type of concurrency is more about simultaneous execution.
 
-- **Propagation** refers to the transmission, spread, or dissemination of something, such as information, signals, or effects, from one point or source to another. It involves the process of carrying or passing on these elements to reach a wider or different area, often involving a sequence of steps or changes as they move from their origin to their destination. Propagation can occur in various contexts, including in the fields of science, technology, communication, and biology. ^5487d3
+- **Propagation**: refers to the transmission, spread, or dissemination of something, such as information, signals, or effects, from one point or source to another. It involves the process of carrying or passing on these elements to reach a wider or different area, often involving a sequence of steps or changes as they move from their origin to their destination. Propagation can occur in various contexts, including in the fields of science, technology, communication, and biology. ^5487d3
 
 - **Rubber ducky**: updating the firmware of a flash drive to register as a keyboard and make it register keystrokes
 
-- **Sanity check:** In programming, a sanity check refers to a quick test or verification to ensure that a specific aspect of the code or system is functioning as expected. It helps developers identify obvious errors or inconsistencies early in the development process, ensuring the overall integrity of the program. Sanity checks are often simple and focused on key functionalities to catch potential issues before more extensive testing occurs.
+- **Sanity check**: In programming, a sanity check refers to a quick test or verification to ensure that a specific aspect of the code or system is functioning as expected. It helps developers identify obvious errors or inconsistencies early in the development process, ensuring the overall integrity of the program. Sanity checks are often simple and focused on key functionalities to catch potential issues before more extensive testing occurs.
 
-- **Sequential Concurrency (or Simulated Concurrency):** Tasks appear to be executed simultaneously by interleaving their execution. This is often achieved through techniques such as multitasking, where a system rapidly switches between different tasks.
+- **Sequential Concurrency (or Simulated Concurrency)**: Tasks appear to be executed simultaneously by interleaving their execution. This is often achieved through techniques such as multitasking, where a system rapidly switches between different tasks.
 
-- **Serializer:** A utility class focused on converting business objects into a format suitable for storage or transmission, commonly transforming them into a serialized form like JSON or XML. This process is crucial for data persistence or communication between different software components.
+- **Serializer**: A utility class focused on converting business objects into a format suitable for storage or transmission, commonly transforming them into a serialized form like JSON or XML. This process is crucial for data persistence or communication between different software components.
 
 - **Scope Creep**: Unauthorized addition of features or work beyond the agreed-upon scope.
 
 - **Spaghetti code**: a whole bunch of functions and variables everywhere decentralized basically functions and variables all over the place not very organized well
 
 
-- **Typed languages** - Languages where data types are defined, known by the machine at compile-time or runtime.   ^acb92b
+- **Typed languages**: Languages where data types are defined, known by the machine at compile-time or runtime.   ^acb92b
 
 - **Verbose**: Using more words than necessary to express something.

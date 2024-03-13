@@ -52,6 +52,12 @@ Clean code principles lead to highly modular source code easier to read and test
  Code Reusability: Code Reusability is the ability to reuse code in different parts of an application or in different applications. It is an important skill that can help developers save time and effort. However, code reusability is a secondary skill that is dependent on good design patterns and clean code.
 
 
+### Feature check
+- When learning a new feature/technology or library  think about how commonly used and at what stage of the development process or Codebase contribution process will it be used at to decide on the time you give to it in terms of the breath and depth 
+	- like if your deciding to go in depth into something you may do it immediately or in the future like with java class loaders or loggers
+- or over the long term like learning all the different Java versions in-depth or at least in breath over time in small chunks 
+
+
 ## [[Naming Conventions]]
 High level description
 
