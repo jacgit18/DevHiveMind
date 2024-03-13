@@ -14,25 +14,8 @@ Relates:
 
 # <mark style="background: #FF5582A6;">Current </mark>
 #todo/High/Dev 
-- [ ] ***Refine notes based subject matter you are actively practicing like domain driven design not currently using it so low priority so when you actually using it refine documentation on it***
-
-- [ ] Get certified in Linux 
-- [ ] Continue reading [[Grokking Algorithms - An illustrated guide for programmers and other curious people.pdf#page=160|Grokking Algorithms - An illustrated guide for programmers and other curious people, page 160]]
-- [ ] Looking to automating stock buys
-- [ ] Look if you can convert Algorithm Patterns solutions into declarative solutions still using the pattern
-
-
-- [ ] look into which info-graphics can be recreated and integrated in to note vault 
-
-- [ ] identify areas of automation were ever you see 
-- [ ] Identify most expensive manual process  
-- [ ] Maybe try doing this [[WebSocket chat client]]
-
-
-Create a Queue Generator Method Using Linked Lists  
-
-Union find also known as Disjoint-Set Union 
-  https://www.youtube.com/watch?v=ayW5B2W9hfo
+- [ ] Create a Queue Generator Method Using Linked Lists
+- [ ] Union find also known as Disjoint-Set Union https://www.youtube.com/watch?v=ayW5B2W9hfo
   
 meta & google  
   

@@ -15,10 +15,13 @@ Relates:
 #### Plan your work and work your plan
 
 #### Main Long Quest By Order of Priority
+***Refine notes based subject matter you are actively practicing like domain driven design not currently using it so low priority so when you actually using it refine documentation on it***
+
 #todo/High/Dev 
 >[!note] 
 >Get to the level were you are doing 1 coding question a month while working full time
-- [ ] AWS
+- [ ] Continue reading [[Grokking Algorithms - An illustrated guide for programmers and other curious people.pdf#page=160|Grokking Algorithms - An illustrated guide for programmers and other curious people, page 160]]
+- [ ] AWS Cert
 - [ ] [[Clean Code]]
 - [ ] [[Microservices]]
 - [ ] [[Event Driven Architecture]] 
@@ -42,8 +45,13 @@ Relates:
 
 ## Certs
 #todo/Med/Dev
-- [ ] AWS Cert 
 - [ ] Linux Cert
+
+## Projects
+#todo/Med/Dev 
+- [ ] look into which info-graphics can be recreated and integrated in to note vault 
+- [ ] identify areas of automation were ever you see 
+- [ ] Identify most expensive manual process  
 
 
 ## Side Quest Revist
