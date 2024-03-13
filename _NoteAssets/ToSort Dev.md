@@ -68,5 +68,4 @@ Relates:
 
 
 
-### Cookbook explained 
-A cookbook in the programming context is collection of tiny programs that each demonstrate a particular programming concept. The Cookbook Method is the process of learning a programming language by building up a repository of small programs that implement specific programming concepts.
+
