@@ -18,10 +18,12 @@ Relates:
 
 
 
-## Key 
+## Key Result
+
+measurable and quantifying
+statistics 
 
 
-## Result
 
 
 
