@@ -92,4 +92,5 @@ When managing intricate documentation in Enterprise-level companies, using tools
 > Obsidian has a big YouTube community there is a lot of content about it but so little time which is another reason it made sense to create this Repo to share knowledge around Obsidian Eco system at the minimum learn about back linking to effectively contribute.
 - [Beginner Guide to Obsidian ](https://www.dsebastien.net/the-ultimate-beginners-guide-to-obsidian/)
 - [Obsidian Playlist](https://youtube.com/playlist?list=PL7oLu8NfQd84_gsyqBVSVgUmCCgcvSZMx&si=PLMYW7pLlzDwNQty)
+- https://help.obsidian.md/Home
 
