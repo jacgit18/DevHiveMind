@@ -12,7 +12,7 @@ Started:
 EditDate: 2024-03-11
 Relates:
 ---
-#todo/Low/Dev 
+#todo/Personal/Low/Dev 
 - [ ] organize these prompts
 
 Act as a senior developer create a partial skeleton of a Java assessment project to complete covering topics like Multi threading, concurrency, serialization, collections, Java system logs, annotations, and streams to complete
@@ -102,3 +102,31 @@ can you recommend Pluralsight courses for each week
 
 
 Act as a senior developer recommending learning plan what order would you prioritize learning these skillets from domain driven design, Design patterns, Microservices, code reusability, clean code, pattern languages, and 12 factor
+
+
+
+Try 
+
+Act as a software engineer Identify domain for a driving school in domain driven design  
+  
+Kepner trego decision analysis around code base decisions and projects  
+  
+Copy book content section and have chatgpt summarize it  
+  
+Ask chat GPT how would you write integration test for a particular function
+
+
+create user story on real world topic  > convert to uml class diagram > implement
+
+
+convert to assessment covering  
+  
+multi thread, stream, thread  
+  
+topics learned
+
+
+
+- [ ] Ask chatgpt to summarize a book  
+- [ ] use chat GPT to create junction table ideas
+- [ ] Please proofread for spelling, grammar, and readability. also add more to this introduction while SEO optimizing.

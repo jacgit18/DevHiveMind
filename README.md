@@ -2,8 +2,12 @@
 <img src="_NoteAssets/_Main/Brain-Patterns-Illustration.gif" alt="Brain Patterns Illustration">
 
 <div style="text-align:center;"><h1>Dev Journey Knowledge Repository </h1></div>
-## Overview
+
 This Software Development Knowledge Repository is a centralized and organized collection of information on various software development topics. It's designed to be a valuable resource for developers, both experienced and beginners, as well as anyone interested in the field.
+
+
+>[!important]  
+>Only Commit PR to Peer Review Branch. There are no branch protections since private repo 
 
 
 ## Key Features

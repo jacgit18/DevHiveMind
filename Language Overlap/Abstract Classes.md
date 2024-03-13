@@ -46,7 +46,6 @@ Abstract classes, identified by the `abstract` keyword, are crucial in object-or
 
 Abstraction involves presenting essential information while concealing intricate details. Abstract classes or interfaces, using the "abstract" keyword, achieve this. Abstract classes allow access only through inheritance and consist of a mix of abstract and regular methods.
 
-
 ![[Abstract class Diagram.png]]
 
 **Understanding Abstract Classes and Abstract Methods in Java:**

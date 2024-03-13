@@ -21,7 +21,6 @@
     "#todo/mid",
     "#todo/dev/mid",
     "#todo/dev/low",
-    "#todo/high",
     "#todo/dev/med",
     "#todo/futurelow",
     "#todo/gen/low",
@@ -64,15 +63,18 @@
     "#todo/low/research",
     "#todo/high/dev/codingchallenge",
     "#todo/med/dev/codingchallenge",
-    "#todo/high/research",
-    "#todo/high/dev",
-    "#todo/read/books",
     "#todo/read",
-    "#todo/low/read",
     "#todo/low/dev/sideresearch",
-    "#todo/prompts",
+    "#todo/low/dev/personal",
+    "#todo/med/dev/personal",
+    "#todo/high/dev/personal",
+    "#todo/personal/high/dev",
+    "#todo/personal/low/dev",
+    "#todo/personal/med/dev",
+    "#todo/personal/prompts",
+    "#todo/low/dev",
     "#todo/med/dev",
-    "#todo/low/dev"
+    "#todo/high/dev"
   ],
   "_hiddenTags": []
 }
