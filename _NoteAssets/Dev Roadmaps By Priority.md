@@ -29,6 +29,7 @@ Relates:
 - [ ] [[Event Driven Architecture]] 
 - [ ] [[Reactive programming]]
 - [ ] [[Design Patterns & Gang of 4]]
+- [ ] [[Chaos Engineering]]
 - [ ] [[Domain-driven design]]depends on domain which may vary
 - [ ] [[devops.pdf]]
 - [x] [[12 Factor App Docker.canvas|12 Factor App Docker]]

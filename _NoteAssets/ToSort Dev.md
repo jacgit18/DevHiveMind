@@ -75,14 +75,11 @@ Relates:
 - [ ] **App Security Resources:** Discover a comprehensive programmer's guide to accessing and enhancing application security, emphasizing security as a primary consideration in software development.
 - [ ] **Secure Password Capture in Terminals:** Explore advanced techniques for securely capturing and managing passwords entered in terminal windows.
 - [ ] **Math Skills for Programming:** Elevate your mathematical aptitude, a fundamental skill essential for various programming tasks.
-- [ ] Edit article on [[Bootcamp]] ^923f61
-- [ ] Edit article on [Note taking](Note%20taking.md) ^776056
 ### Scripting
 - [ ] program a usb to automatically run a script in Linux
 - [ ] https://askubuntu.com/questions/1063331/how-to-install-google-chrome-extensions-though-terminal
 - [ ] [https://towardsdatascience.com/how-to-use-the-reddit-api-in-python-5e05ddfd1e5c](https://towardsdatascience.com/how-to-use-the-reddit-api-in-python-5e05ddfd1e5c)  
 - [ ] [https://www.youtube.com/watch?v=FdjVoOf9HN4&t=480s](https://www.youtube.com/watch?v=FdjVoOf9HN4&t=480s)  
-- [ ] read [Symbolic link](Symbolic%20link.md)
 - [ ] create a bot  
 	> can you create a LinkedIn bot to assist me to in re-posting about Technology and programming
 
@@ -109,21 +106,6 @@ topics learned
 
 
 
-
-
-
-
-## <mark style="background: #BBFABBA6;">Future Low</mark>
-#todo/Low/Future
--  look into:
-	- [ ] [Chaos Engineering](Chaos%20Engineering.md)
-	- [ ] [Project idea](Project%20idea.md)
-- [ ] Math & Logic Puzzles 
-- [ ] Sudoku back track 
-	- [https://github.com/dtyutyunik/Sudoku](https://github.com/dtyutyunik/Sudoku)  
-	- [https://github.com/mtajammulzia/sudoku-game](https://github.com/mtajammulzia/sudoku-game)  
-	- [https://github.com/Suhaan-Bhandary/Sudoku-Game](https://github.com/Suhaan-Bhandary/Sudoku-Game)
-- [ ]  https://brilliant.org/wiki/logical-puzzles/ 
 
 
 ![[Researching.gif]]
