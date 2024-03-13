@@ -16,14 +16,11 @@ Relates:
 
 #### Main Long Quest By Order of Priority
 ***Refine notes based subject matter you are actively practicing like domain driven design not currently using it so low priority so when you actually using it refine documentation on it and Learn more.***
-
+![[Things Todo.gif]]
 #todo/High/Dev 
 >[!note] 
 >Get to the level were you are doing 1 coding question a month while working full time
 - [ ] Continue reading [[Grokking Algorithms - An illustrated guide for programmers and other curious people.pdf#page=160|Grokking Algorithms - An illustrated guide for programmers and other curious people, page 160]]
-- [ ] AWS Cert 
-- [ ] Portfolio Site
-- [ ] Build something specific clear goals
 - [ ] [[Clean Code]]
 - [ ] [[Microservices]]
 - [ ] [[Event Driven Architecture]] 
@@ -73,6 +70,7 @@ When you want to learn new languages in the future think about every time you ha
 - [ ] Look into [[ChatGpt Extension generator Output]]
 - [ ] Search engine optimized for developers to find projects to contribute to or find common errors and issues
 - [ ] **Code Generator Scripts:** Research, design, and implement scripts that streamline code generation for repetitive programming tasks, significantly enhancing your workflow efficiency.
+- [ ] **Math Skills for Programming:** Elevate your mathematical aptitude, a fundamental skill essential for various programming tasks.
 
 ## Projects
 #todo/Med/Dev 
@@ -94,6 +92,8 @@ When you want to learn new languages in the future think about every time you ha
 - [ ] **Python & Async Debugging in VSCode:** Master advanced debugging techniques within VSCode, particularly tailored for Python and asynchronous code.
 - [ ] **Gitbare Repository Problem Solving:** Tackle issues associated with Gitbare repositories and refine your Git version control skills.
 - [ ] **Performance Optimization:** Dive deep into the realm of performance optimization, including techniques for minimizing DOM updates and load balancing, ensuring applications run at their peak efficiency.
-
-
+- [ ] Look into bots and creating a LinkedIn bot to assist in re-posting about Technology and programming
+- [ ]  **JWT Sessions:**  Delve into the application of JSON Web Tokens (JWT) for robust and efficient session management in web applications.
+- [ ] **Progressive Web Apps (PWAs):** Discover the realm of progressive web applications and their compelling advantages in terms of user experience and enhanced functionality.
+- [ ] **Linux Firewall Management:** Elevate your proficiency in managing and configuring Linux firewalls, a critical skill for bolstering network security.
 
