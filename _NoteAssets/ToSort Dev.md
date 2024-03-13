@@ -110,18 +110,9 @@ topics learned
 
 ![[Researching.gif]]
 #todo/Low/Dev/SideResearch
-- [ ] ascii art  
-- [ ] does nvidia support multi monitor free sync monitor
-- [ ] find out how to backup ide and text editor plugins  
-- [ ] ASUS Tinker Board  
-- [ ] why bridge network adapters  
-- [ ] blockvault  
-- [ ] faraday cage for computer  
-- [ ] Truecrypt  
-- [ ] registry edit that speeds up keyboard  
-- [ ] should you compress c drive windows 10  
-- [ ] secondary computer pre rendering game  
-- [ ] motherboard repair  
+
+
+
 
 
 
