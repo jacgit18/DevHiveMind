@@ -91,7 +91,7 @@ In the ever-expanding landscape of software engineering, navigating the sea of i
 
 DevHiveMind serves as an encyclopedia crafted specifically for developers, representing the culmination of years of dedication. Now open for peer review and open-source contributions, this project aims to benefit the entire software development community.
 
-Whether you're a novice seeking direction or a seasoned engineer eager to share your expertise, DevHiveMind provides a platform for collective growth and learning.
+Whether you're starting your journey or already well-versed in your field, DevHiveMind offers a platform for collective growth and learning, allowing professionals to benefit from shared knowledge and experiences.
 
 Sign up to explore and contribute: https://forms.gle/wsJtMZg15yjGKLiV9
 
