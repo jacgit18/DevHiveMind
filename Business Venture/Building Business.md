@@ -15,7 +15,7 @@ EditDate: 2024-03-04
 Relates:
 ---
 ![[Buzniss.gif]]
-#todo/High 
+#todo/Personal/Med/Dev 
 - [ ] Use Google trends to generate business ideas  and AI
 ## Simplifying Business Taxes
 

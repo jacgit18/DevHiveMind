@@ -17,7 +17,7 @@ Relates:
 #### Main Long Quest By Order of Priority
 ***Refine notes based subject matter you are actively practicing like domain driven design not currently using it so low priority so when you actually using it refine documentation on it and Learn more.***
 ![[Things Todo.gif]]
-#todo/High/Dev 
+#todo/Personal/High/Dev 
 >[!note] 
 >Get to the level were you are doing 1 coding question a month while working full time
 - [ ] [[Clean Code]]
@@ -40,7 +40,7 @@ Relates:
 
 ![[Researching.gif]]
 
-#todo/Read/Books 
+#todo/Personal/High/Dev  
 - [ ] Continue reading [[Grokking Algorithms - An illustrated guide for programmers and other curious people.pdf#page=160|Grokking page 160]]
 - [ ] The Richest Man in Babylon by George Samuel Clason
 - [ ] Clean Code A Handbook of Agile Software Craftsmanship 📅 2023-12-30 
@@ -50,7 +50,7 @@ Relates:
 
 ## New Path
 When you want to learn new languages in the future think about every time you have to prepare for technical interviews to start interviewing for a new job change what language you practice in once you feel like you have good understanding of how to build up solutions to programming challenges.
-#todo/Low/Dev 
+#todo/Personal/Low/Dev  
 - [ ] [[spring-boot.pdf]]
 - [[Python Learning Plan]]
 	- [ ] [[python.pdf]]
@@ -59,7 +59,7 @@ When you want to learn new languages in the future think about every time you ha
 
 
 ## Alt Stuff to Try
-#todo/Med/Dev
+#todo/Personal/Med/Dev 
 - [ ] Linux Cert
 - [ ] content management system  
 - [ ] shopify  
@@ -72,14 +72,14 @@ When you want to learn new languages in the future think about every time you ha
 - [ ] **Math Skills for Programming:** Elevate your mathematical aptitude, a fundamental skill essential for various programming tasks.
 
 ## Projects
-#todo/Med/Dev 
+#todo/Personal/Med/Dev
 - [ ] look into which info-graphics can be recreated and integrated in to note vault 
 - [ ] identify areas of automation were ever you see 
 - [ ] Identify most expensive manual process  
 
 
 ## Side Quest Revist
-#todo/Low/Dev/Personal 
+#todo/Personal/Low/Dev 
 - [ ] [[java.pdf]]
 - [ ] [[nodejs.pdf]]
 - [ ] [[qa.pdf]]

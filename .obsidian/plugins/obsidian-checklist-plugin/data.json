@@ -63,16 +63,17 @@
     "#todo/low/research",
     "#todo/high/dev/codingchallenge",
     "#todo/med/dev/codingchallenge",
-    "#todo/high/dev",
     "#todo/read",
     "#todo/low/dev/sideresearch",
-    "#todo/low/dev",
-    "#todo/med/dev",
+    "#todo/low/dev/personal",
+    "#todo/med/dev/personal",
+    "#todo/high/dev/personal",
     "#todo/low/read",
-    "#todo/high/research",
-    "#todo/high",
-    "#todo/prompts",
-    "#todo/read/books"
+    "#todo/personal/high/dev",
+    "#todo/personal/low/dev",
+    "#todo/personal/med/dev",
+    "#todo/personal/prompts",
+    "#todo/low/dev"
   ],
   "_hiddenTags": []
 }

@@ -38,7 +38,7 @@ What UML sign is for static member for attributes and methods;; underline or bol
 This product class diagram can repurposed for functions which would increase number of tables.
 ![[Class Diagram.png]]
 ### ChatGpt Prompt
-#todo/prompts
+#todo/Personal/prompts
 - [ ] Create a module functional programming structural model for a driving school website
 - [ ] Identify util functions in structural model
 - [ ] Create a object oriented programming structural model for a driving school website

@@ -11,7 +11,7 @@ Relates:
 ---
 
 ## Objective(specific clear goals)
-#todo/High/Dev 
+#todo/Personal/High/Dev 
 - [ ] Solve Coding Problems
 - [ ] System Design interview Prep
 - [ ] Portfolio Site

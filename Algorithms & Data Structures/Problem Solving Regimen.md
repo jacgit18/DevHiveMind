@@ -74,7 +74,7 @@ Peer Reviewed: 0
 14. DFS
 15. BFS 
 
-#todo/High/Dev 
+#todo/Personal/High/Dev  
 - [ ] Create a Queue Generator Method Using Linked Lists
 - [ ] Union find also known as Disjoint-Set Union https://www.youtube.com/watch?v=ayW5B2W9hfo
 - [ ] https://www.geeksforgeeks.org/kruskals-minimum-spanning-tree-algorithm-greedy-algo-2/

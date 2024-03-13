@@ -12,7 +12,7 @@ Started:
 EditDate: 2024-03-11
 Relates:
 ---
-#todo/Low/Dev 
+#todo/Personal/Low/Dev 
 - [ ] organize these prompts
 
 Act as a senior developer create a partial skeleton of a Java assessment project to complete covering topics like Multi threading, concurrency, serialization, collections, Java system logs, annotations, and streams to complete
