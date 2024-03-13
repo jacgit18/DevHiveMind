@@ -12,8 +12,11 @@ Relates:
 
 ## Objective(specific clear goals)
 #todo/High/Dev 
+- [ ] Solve Coding Problems
+- [ ] System Design interview Prep
 - [ ] Portfolio Site
 - [ ] AWS Cert 
+- [ ] Go out More
 
 
 

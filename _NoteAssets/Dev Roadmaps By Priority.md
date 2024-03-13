@@ -20,7 +20,6 @@ Relates:
 #todo/High/Dev 
 >[!note] 
 >Get to the level were you are doing 1 coding question a month while working full time
-- [ ] Continue reading [[Grokking Algorithms - An illustrated guide for programmers and other curious people.pdf#page=160|Grokking Algorithms - An illustrated guide for programmers and other curious people, page 160]]
 - [ ] [[Clean Code]]
 - [ ] [[Microservices]]
 - [ ] [[Event Driven Architecture]] 
@@ -41,9 +40,9 @@ Relates:
 
 ![[Researching.gif]]
 
-#todo/Read/Books  
+#todo/Read/Books 
+- [ ] Continue reading [[Grokking Algorithms - An illustrated guide for programmers and other curious people.pdf#page=160|Grokking page 160]]
 - [ ] The Richest Man in Babylon by George Samuel Clason
-- [ ] Grokking Algorithms📅 2023-12-21 
 - [ ] Clean Code A Handbook of Agile Software Craftsmanship 📅 2023-12-30 
 - [ ] Design Patterns
 - [ ] [[Designing Data-Intensive Applications The Big Ideas Behind Reliable, Scalable, and Maintainable Systems by Martin Kleppmann (z-lib.org).pdf]]
