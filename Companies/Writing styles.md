@@ -3,6 +3,7 @@ tags:
   - blog
   - career
   - documentation
+  - obsidian
 author:
   - jacgit18
   - chatgpt
