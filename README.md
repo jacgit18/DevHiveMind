@@ -31,7 +31,7 @@ I encourage contributions from the community. Here are some best practices for m
 
 - **Draft Pull Requests (PRs)**: If you decide to fork an initial project for your repository, consider using draft PRs for contributions. This allows contributors to collaborate on changes before merging them. It's a good practice for maintaining transparency and ensuring that everyone is on the same page.
 
-- **ToDo**: There notes in this vault that have todo check list the ones that include personal are my personal todos. While the ones without personal are open for anyone to address also more of these todos will be added throughout the vault for existing and future notes. 
+- **ToDo**: There are notes in this vault that have todo check list the ones that include personal are my personal todos. While the ones without personal are open for anyone to address also more of these todos will be added throughout the vault for existing and future notes or if there is a note added by someone you can add todo as well. 
 
 ### Peer Review Guideline
 When submitting a request to merge, please direct it towards the Peer Review Branch.
