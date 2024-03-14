@@ -2,8 +2,8 @@
 tags: 
 author:
   - gitUserNamePlaceHolder
-Comments: Placeholder comment any thing else you want to mention about the document.
-Purpose: This documentation discusses
+Comments: Order can vary
+Purpose: This documentation discusses language consistent language to use when solving problems.
 Status: 
 Started: 2024-03-14
 EditDate: 
