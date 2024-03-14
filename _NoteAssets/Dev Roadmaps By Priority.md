@@ -36,17 +36,6 @@ Relates:
 - [ ] [[software-architect.pdf]]
 
 
-## Books
-
-![[Researching.gif]]
-
-#todo/Personal/High/Dev  
-- [ ] Continue reading [[Grokking Algorithms - An illustrated guide for programmers and other curious people.pdf#page=160|Grokking page 160]]
-- [ ] The Richest Man in Babylon by George Samuel Clason
-- [ ] Clean Code A Handbook of Agile Software Craftsmanship 📅 2023-12-30 
-- [ ] Design Patterns
-- [ ] [[Designing Data-Intensive Applications The Big Ideas Behind Reliable, Scalable, and Maintainable Systems by Martin Kleppmann (z-lib.org).pdf]]
-- [ ] [[Software Architecture The Hard Parts Modern Trade-Off Analyses for Distributed Architectures (Neal Ford, Mark Richards, Pramod Sadalage etc.) (z-lib.org).pdf]]
 
 ## New Path
 When you want to learn new languages in the future think about every time you have to prepare for technical interviews to start interviewing for a new job change what language you practice in once you feel like you have good understanding of how to build up solutions to programming challenges.
@@ -55,9 +44,9 @@ When you want to learn new languages in the future think about every time you ha
 - [[Python Learning Plan]]
 	- [ ] [[python.pdf]]
 - [ ] https://brilliant.org/paths/probability-statistics-finance/
-- [ ] create a long list LinkedIn post ideas about popular historical leaders like for example martin Luther king, also events around the year like breast cancer awareness and holidays give ideas for each month in the year on these topic
 
 
+![[Researching.gif]]
 ## Alt Stuff to Try
 #todo/Personal/Med/Dev 
 - [ ] Linux Cert
@@ -92,7 +81,7 @@ When you want to learn new languages in the future think about every time you ha
 - [ ] **Gitbare Repository Problem Solving:** Tackle issues associated with Gitbare repositories and refine your Git version control skills.
 - [ ] **Performance Optimization:** Dive deep into the realm of performance optimization, including techniques for minimizing DOM updates and load balancing, ensuring applications run at their peak efficiency.
 - [ ] Look into bots and creating a LinkedIn bot to assist in re-posting about Technology and programming
-- [ ]  **JWT Sessions:**  Delve into the application of JSON Web Tokens (JWT) for robust and efficient session management in web applications.
+- [ ] **JWT Sessions:**  Delve into the application of JSON Web Tokens (JWT) for robust and efficient session management in web applications.
 - [ ] **Progressive Web Apps (PWAs):** Discover the realm of progressive web applications and their compelling advantages in terms of user experience and enhanced functionality.
 - [ ] **Linux Firewall Management:** Elevate your proficiency in managing and configuring Linux firewalls, a critical skill for bolstering network security.
 

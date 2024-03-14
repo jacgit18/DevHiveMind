@@ -15,6 +15,8 @@ Peer Reviewed: 0
 ---
 The term "Gang of Four" (GoF) is commonly referred to as a group of four authors who authored the book "Design Patterns: Elements of Reusable Object-Oriented Software." However, it's noteworthy that the design patterns discussed in the book primarily focus on the collaboration of three authors. The concepts presented in the book delve into three main pattern categories, each with its subcategories.
 
+[[Design Patterns Elements of Reusable Object Oriented Software .pdf]]
+
 For a detailed exploration of the Gang of Four design patterns, you can refer to the following resource: [Gangs of Four (GoF) Design Patterns](https://www.digitalocean.com/community/tutorials/gangs-of-four-gof-design-patterns).
 
 This clarification underscores that the term "Gang of Four" refers to the number of authors, but the design patterns themselves primarily stem from the collaborative efforts of three authors.
