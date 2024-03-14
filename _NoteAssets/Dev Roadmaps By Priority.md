@@ -3,7 +3,7 @@ tags:
 author:
   - jacgit18
 Purpose: This documentation discusses topics of focus for overall career to consider learning.
-Comments: Anything high falls under OKRs.
+Comments: Anything high overlaps with OKRs.
 Status: Perpetual
 Started: 2023-01-01
 EditDate: 
