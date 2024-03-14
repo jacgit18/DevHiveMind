@@ -40,7 +40,11 @@ When considering the features of your design, prioritize a forward-thinking appr
 
 *Delve into the design by following the flow from Database ▶ Server/Services (Architecture) ▶ Client Side design.
 
-For more info read [[System Design Interview An Insider’s Guide.pdf]] and [[System Design Interview - An Insider's Guide Second Edition|System Design notes]] on this book.
+For more info read 
+#todo/Personal/High/Dev  
+- [ ] [[System Design Interview An Insider’s Guide.pdf]] and [[System Design Interview - An Insider's Guide Second Edition|System Design notes]] on this book.
+- [ ] [[Designing Data-Intensive Applications The Big Ideas Behind Reliable, Scalable, and Maintainable Systems by Martin Kleppmann (z-lib.org).pdf |Designing Data-Intensive Applications]]
+- [ ] [[Software Architecture The Hard Parts Modern Trade-Off Analyses for Distributed Architectures (Neal Ford, Mark Richards, Pramod Sadalage etc.) (z-lib.org).pdf |Software Architecture The Hard Parts]]
 ### Data Design & Database Architecture 
   - Create an Entity Relationship Diagram (ERD) to define relationships.
   - Consider SQL for structured data and NoSQL for unstructured data.
@@ -101,6 +105,8 @@ For more info read [[System Design Interview An Insider’s Guide.pdf]] and [[Sy
 - [ ] Talk [[🌐 Internet Communication Process]] in terms of what you would use
 - [ ] [[System Scalability Strategies]]
 - [ ] [[Network Infrastructure to use]]
+- [ ] [[Potential Order to talk in]]
+- [ ] [[System Design interview Scope]]
 
 
 
