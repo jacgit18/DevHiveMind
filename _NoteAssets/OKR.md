@@ -57,9 +57,7 @@ Relates:
    - Enroll in at least 2 AWS certification preparation courses (e.g., AWS Certified Solutions Architect, AWS Certified Developer) from reputable platforms like Udemy, A Cloud Guru, or Coursera.
    - Allocate a minimum of 10 hours per week to study AWS concepts, services, and best practices.
 
-2. **Achieve a passing score on the AWS certification exam.**
-   - Set a target date for scheduling the certification exam within the next quarter.
-   - Aim to score at least 85% on practice exams and mock tests to ensure readiness for the real exam.
+
 
 3. **Complete hands-on labs and projects to reinforce learning.**
    - Complete a minimum of 10 hands-on labs or projects covering various AWS services, such as EC2, S3, Lambda, RDS, and IAM.
@@ -73,15 +71,9 @@ Relates:
    - Identify at least one personal or professional project that can benefit from AWS services and architecture.
    - Implement AWS solutions for scalability, reliability, and cost optimization, and document the process for future reference and portfolio enhancement.
 
-### Supporting Actions:
 
-- **Create a structured study plan.** Break down the learning objectives into weekly or daily milestones and allocate dedicated study time accordingly.
-- **Utilize AWS documentation and whitepapers effectively.** Supplement course materials with official AWS documentation, whitepapers, and case studies to gain a deeper understanding of AWS services and best practices.
-- **Join AWS study groups or find a study buddy.** Collaborate with peers or join study groups to share resources, discuss challenging topics, and hold each other accountable for progress.
-- **Set up a home lab environment for hands-on practice.** Utilize AWS Free Tier and other free resources to set up a sandbox environment for experimenting with AWS services without incurring additional costs.
-- **Track progress and celebrate milestones.** Monitor your progress against the OKR key results regularly and celebrate achievements along the way to stay motivated and focused on your learning journey.
 
-By following this OKR, you'll systematically acquire AWS skills, prepare effectively for the certification exam, and position yourself for career advancement opportunities in cloud computing.
+
 
 
 
