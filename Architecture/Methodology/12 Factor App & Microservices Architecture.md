@@ -5,6 +5,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
+Comments: Maybe expand and create a mindmap.
 Purpose: This documentation discusses microservices in the context of 12 factor app briefly.
 Status: Done
 Started: 
