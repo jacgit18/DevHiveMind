@@ -101,6 +101,8 @@ So I come from a technical bootcamp background and have experience as a full-sta
 What is the difference TypeScript, JavaScript, and Java the way I like to describe it is like Typescript is like using a stencil were it helps your trace clean lines vs javascript is like you are free hand writing without the stencil and java is like getting a a coloring book with some predefined lines.
 
 
+
+
 ## TD Bank - Business Systems Analyst 
 
 At TD I supported the transition to SAFe(Scaled agile framework) workflow, for both technical and non-technical teams. In agile ceremonies, I collaborated with Product Owners, Scrum Masters, and Stakeholders. Managing Jira tickets and doing backlog refinement for PI planing.
