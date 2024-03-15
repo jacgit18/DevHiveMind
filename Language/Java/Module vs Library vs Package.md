@@ -11,6 +11,7 @@ Started:
 EditDate: 2024-03-04
 Relates: 
 Peer Reviewed: 0
+dg-publish:
 ---
 In the Java ecosystem, the organizational hierarchy from small to big follows the structure: Package ➔ Module ➔ Library.
 

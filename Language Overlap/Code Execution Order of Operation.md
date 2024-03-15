@@ -13,6 +13,7 @@ Started:
 EditDate: 2024-03-04
 Relates: "[[Asynchronous Programming]]"
 Peer Reviewed: 0
+dg-publish:
 ---
 The terms "asynchronous" and "synchronous" refer to different approaches to handling tasks or operations in a program. Let's understand the purpose of asynchronous and synchronous code:
 

@@ -13,6 +13,7 @@ Started:
 EditDate: 2024-03-11
 Relates: 
 Peer Reviewed: 0
+dg-publish:
 ---
 - **Erasing Content in a File:**
   - To erase the content of a file named "Going":

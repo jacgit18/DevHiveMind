@@ -13,6 +13,7 @@ Started: 2024-01-25
 EditDate: 
 Relates: 
 Peer Reviewed: 0
+dg-publish:
 ---
 Race conditions occur in computing when the behavior of a program depends on the relative timing of events, such as the order in which threads or processes execute. This can lead to unexpected and undesirable outcomes because the outcome of the program becomes dependent on the sequence and timing of these concurrent operations.
 

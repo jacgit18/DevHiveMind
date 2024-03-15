@@ -11,6 +11,7 @@ Started: 2023-10-10
 EditDate: 
 Relates: 
 Peer Reviewed: 0
+dg-publish:
 ---
 React and Redux, while not typically classified as event-driven and reactive programming frameworks, do have some elements that can be related to these concepts:  
   

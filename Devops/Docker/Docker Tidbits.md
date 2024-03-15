@@ -10,6 +10,7 @@ Started:
 EditDate: 2024-02-22
 Relates: 
 Peer Reviewed: 0
+dg-publish:
 ---
 Containerizing [[microservices]] enhances isolation, employing two "COPY" commands to facilitate dependencies through layered caching in Docker. Utilizing official Docker images from reputable sources, like the node official image, ensures reliability.
 

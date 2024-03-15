@@ -11,6 +11,7 @@ Started:
 EditDate: 2024-03-05
 Relates: 
 Peer Reviewed: 0
+dg-publish:
 ---
 IIFE, or Immediately Invoked Function Expression, is a JavaScript design pattern used to create a function and execute it immediately after its creation. It is a self-invoking anonymous function enclosed within parentheses.
 

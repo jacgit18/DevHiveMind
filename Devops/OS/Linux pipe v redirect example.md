@@ -11,6 +11,7 @@ Started:
 EditDate: 2024-03-11
 Relates: 
 Peer Reviewed: 0
+dg-publish:
 ---
 Both of these commands are used to append a line of text to the `/etc/hosts` file in Linux, but they achieve this in different ways. Here's the difference between the two commands:
 
