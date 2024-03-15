@@ -58,14 +58,9 @@ For more info read
 ### Overall Architecture
 - If your thinking of Architectural Styles like for example Monolithic Architecture identify the specifics around it and talk about it maybe compare in contrast it to other [[Impact of Architectural Styles |Architectural Styles]].
 
-Overall fault tolerance in system design refers to a system's ability to continue operating properly in the face of various types of failures or errors. It involves designing systems in such a way that they can gracefully handle failures, maintain availability, and prevent or minimize disruptions to the user experience. Here are some key components and strategies for achieving fault tolerance in system design:
+- [[Fault Tolerance]] refers to the system's resilience against failures, errors, or faults, ensuring uninterrupted operation and maintaining user experience. It encompasses proactive measures to handle failures gracefully and sustain availability. This principle applies universally across hardware, software, networks, and systems architecture.At its essence, fault tolerance anticipates failures as inevitable and seeks to minimize their impact through proactive strategies.
 
-  
-The general concept of fault tolerance encompasses the idea of designing systems to continue functioning properly in the presence of faults, errors, or failures. It's a fundamental principle in engineering that applies across various domains, including hardware, software, networks, and systems architecture. Fault tolerance is not specific to any one thing; rather, it's a holistic approach to system design aimed at ensuring reliability, availability, and resilience in the face of adversity.
 
-At its core, fault tolerance acknowledges the inevitability of failures and seeks to mitigate their impact through proactive measures. Here are some key aspects of fault tolerance that apply broadly:
-
- [[Fault Tolerance]]
 
 - Depending on the Architectural Styles you then should talk and identify major components of your system like physical or virtual servers, databases, [[Caches]],  [[Messaging systems]], [[Monitoring & Observability |monitoring/logging for metrics]], and [[Benefits of cloud |cloud infrastructure]] talking about cloud  in terms of outsourcing functionality or infrastructure using different service architecture ranging from IAAS to SAAS.
   

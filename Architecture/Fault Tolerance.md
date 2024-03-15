@@ -3,6 +3,8 @@ tags:
   - CodebaseDecision
   - pattern
   - bestPractices
+  - processes
+  - MacroCodebaseDecision
 author:
   - jacgit18
   - chatgpt
