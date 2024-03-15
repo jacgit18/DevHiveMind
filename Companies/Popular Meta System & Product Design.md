@@ -5,11 +5,11 @@ author:
   - jacgit18
   - chatgpt
 Purpose: This documentation discusses popular Meta system and product design.
-Status: Capture
+Status: Done
 Started: 2024-01-29
 EditDate: 
 Relates: 
-dg-publish:
+dg-publish: true
 ---
 - How would you design Instagram / Instagram Stories?  
 - How would you design Whatsapp?  
