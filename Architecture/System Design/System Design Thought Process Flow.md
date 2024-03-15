@@ -56,7 +56,7 @@ For more info read
 [[When to use Domain-Driven Design]] still refining domain driven design documentation depending on domain complexity determines weather it is necessary to use meaning the more simpler the domain is the less need for domain driven design in my opinion.
 
 ### Overall Architecture
-- If your thinking of Architectural Styles like for example Monolithic Architecture identify the specifics around it and talk about it maybe compare in contrast it to other [[Architectural Styles]].
+- If your thinking of Architectural Styles like for example Monolithic Architecture identify the specifics around it and talk about it maybe compare in contrast it to other [[Impact of Architectural Styles |Architectural Styles]].
 
 Overall fault tolerance in system design refers to a system's ability to continue operating properly in the face of various types of failures or errors. It involves designing systems in such a way that they can gracefully handle failures, maintain availability, and prevent or minimize disruptions to the user experience. Here are some key components and strategies for achieving fault tolerance in system design:
 
@@ -91,6 +91,8 @@ At its core, fault tolerance acknowledges the inevitability of failures and seek
 ### Scalability and Performance
   - Distribute traffic across server pools for different types of traffic. talk about different trade-offs.
   
+ [[System Scalability Strategies]]
+
   - Implement local cache for improved response time.
 
   - you can also talk about [[Database Sharding]].
@@ -111,13 +113,11 @@ At its core, fault tolerance acknowledges the inevitability of failures and seek
 - [ ] Talk about centralized systems in comparison to decentralized systems which is mostly covered here need to research more about centralized systems 
 - [ ] monolithic architecture is an example of a centralized system. In a monolithic architecture, the entire application is built as a single, indivisible unit, making it centralized and typically deployed on a single server or a closely connected set of servers.
 - [ ] Also add stuff around security, maintainability, and user experience to cover the rest of the core concepts of system design.
-
 - [ ] look into talk about Load shedding and distributed Locking
 - [ ] maybe add stuff around circuit break pattern seems relevant to system design but you can say that about all design patterns but it seems like this one is used heavily in comparison to others patterns or one of the heavily used patterns need to verify this
 - [ ] Look into https://blog.quastor.org/p/rate-limiting-stripe
 - [ ] talk picking languages and libraries and frameworks
 - [ ] Talk [[🌐 Internet Communication Process]] in terms of what you would use
-- [ ] [[System Scalability Strategies]]
 - [ ] [[Network Infrastructure to use]]
 - [ ] [[System Design interview Scope]]
 
