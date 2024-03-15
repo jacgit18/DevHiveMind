@@ -14,7 +14,7 @@ Started:
 EditDate: 
 Relates: 
 Peer Reviewed: 1
-dg-publish:
+dg-publish: true
 ---
 
 ![[BuubleSort.gif]]

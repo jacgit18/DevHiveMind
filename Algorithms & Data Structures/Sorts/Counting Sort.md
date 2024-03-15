@@ -13,7 +13,7 @@ Started:
 EditDate: 
 Relates: 
 Peer Reviewed: 0
-dg-publish:
+dg-publish: true
 ---
 ![[CountingSort.gif]]
 
