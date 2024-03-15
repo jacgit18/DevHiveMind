@@ -62,7 +62,11 @@ For more info read
 
 
 
-- Depending on the Architectural Styles you then should talk and identify major components of your system like physical or virtual servers, databases, [[Caches]],  [[Messaging systems]], [[Monitoring & Observability |monitoring/logging for metrics]], and [[Benefits of cloud |cloud infrastructure]] talking about cloud  in terms of outsourcing functionality or infrastructure using different service architecture ranging from IAAS to SAAS.
+- Depending on the Architectural Styles you then should talk and identify major components of your system like physical or virtual servers, databases,
+- [[Messaging systems]]
+- [[Caches]], 
+- 
+, [[Monitoring & Observability |monitoring/logging for metrics]], and [[Benefits of cloud |cloud infrastructure]] talking about cloud  in terms of outsourcing functionality or infrastructure using different service architecture ranging from IAAS to SAAS.
   
 - Talk about selecting components for system from different perspectives like how is the community support or technical documentation around the different technology options also cost.
 
