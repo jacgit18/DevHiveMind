@@ -76,7 +76,7 @@ When managing intricate documentation in Enterprise-level companies, using tools
 ## Steps to Contribute
 **Follow these steps to contribute to a project:
 
-1. Fork the original repository to your GitHub account.
+1. Fork the original repository to your GitHub account When forking repo make sure to select option for multiple branches so you can get peer review branch in fork.
 2. Clone your fork to your local machine using Git.
 3. Create a new branch to work on your changes.
 4. Make your desired changes, commit them to your branch, and push the branch to your fork on GitHub.
