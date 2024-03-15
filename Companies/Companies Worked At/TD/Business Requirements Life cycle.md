@@ -1,8 +1,11 @@
 ---
 tags:
   - bsa
+  - business
 author:
   - jacgit18
+  - chatgpt
+Comments: Placeholder comment any thing else you want to mention about the document.
 Purpose: This documentation discusses life cycle of business requirements.
 Status: Done
 Started: 2023-12-12
