@@ -23,7 +23,11 @@ When it comes to architectural styles they can man have a major effect on the co
 
 A lot of these styles leverage event driven architecture which is discussed here [[Event-driven Architectural Pattern Decisions]].
 
-The chosen architecture significantly influences how different components interact, scale, and maintainability. Let's explore how these architectural styles affect key components:  
+The chosen architecture significantly influences how different components interact, scale, and maintainability.
+
+![[arch pattern.gif]]
+
+Let's explore how these architectural styles affect key components:  
   
 1. **Monolithic Architecture:**  
    - **Components:**  
@@ -62,7 +66,6 @@ The chosen architecture significantly influences how different components intera
 		- Centralized service orchestration may be used to coordinate interactions between services.  
   
 
-  
 6. **Serverless Architecture:**  
 	- **Components:**  
 		- Components are implemented as functions that are executed in response to events or triggers.  
@@ -120,18 +123,17 @@ The chosen architecture significantly influences how different components intera
    - **Impact:**  
      - Promotes interoperability, scalability, and simplicity in distributed systems.  
      - Enables stateless communication and resource-based interactions via HTTP methods.
-14. 
-**Database Master-Slave Architecture:**
-- **Component:**
-  - In the master-slave architecture, there are two types of database servers: the master and the slave. 
-  - The master server is responsible for handling write operations (insert, update, delete) and replicating the changes to one or more slave servers.
-  - The slave servers are read-only copies of the master database, updated through replication from the master.
-
-- **Impact:**
-  - Enhances scalability and fault tolerance by distributing read operations across multiple slave servers, relieving the master server from read-related loads.
-  - Improves performance by allowing read-heavy applications to leverage the distributed nature of slave servers for parallel query execution.
-  - Provides redundancy and high availability, as in case of failure of the master server, one of the slave servers can be promoted to serve as the new master without data loss.
-
+ 
+14. **Master-Slave Architecture:**
+	- **Component:**
+	  - In the master-slave architecture, there are two types of database servers: the master and the slave. 
+	  - The master server is responsible for handling write operations (insert, update, delete) and replicating the changes to one or more slave servers.
+	  - The slave servers are read-only copies of the master database, updated through replication from the master.
+	
+	- **Impact:**
+	  - Enhances scalability and fault tolerance by distributing read operations across multiple slave servers, relieving the master server from read-related loads.
+	  - Improves performance by allowing read-heavy applications to leverage the distributed nature of slave servers for parallel query execution.
+	  - Provides redundancy and high availability, as in case of failure of the master server, one of the slave servers can be promoted to serve as the new master without data loss.
 
 These additional architectural styles further illustrate the diverse approaches available for designing software systems, each with its own principles, benefits, and considerations.
   
