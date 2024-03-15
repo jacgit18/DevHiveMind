@@ -9,5 +9,6 @@ Started:
 EditDate: 
 Relates: 
 Peer Reviewed: 0
+dg-publish:
 ---
 create note from template like `Alt +n`
