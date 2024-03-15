@@ -11,6 +11,7 @@ Started:
 EditDate: 2024-03-07
 Relates: "[[Distributed tracking & monitoring]]"
 Peer Reviewed: 0
+dg-publish:
 ---
 ![[logging metrics.gif]]
 

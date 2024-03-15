@@ -10,6 +10,7 @@ Status: Done
 Started: 2023-12-12
 EditDate: 
 Relates: "[[Tracflo & Construction Industry]]"
+dg-publish:
 ---
 In the construction industry, a complex network of relationships exists among various entities, shaping the flow of data and responsibilities. Here's an overview of the hierarchical structure and the role data plays in this ecosystem:
 

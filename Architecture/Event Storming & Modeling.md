@@ -13,6 +13,7 @@ Started:
 EditDate: 2024-03-07
 Relates: 
 Peer Reviewed: 0
+dg-publish:
 ---
 Event Storming is a collaborative modeling technique designed to unite cross-functional teams in the exploration and comprehension of intricate business domains. This method proves particularly valuable for capturing the dynamic flow of events and interactions within a system. Typically conducted with sticky notes on a wall, Event Storming visually represents various facets of the domain, fostering a shared understanding among team members.
 

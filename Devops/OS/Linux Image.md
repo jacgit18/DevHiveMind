@@ -11,6 +11,7 @@ Started:
 EditDate: 
 Relates: 
 Peer Reviewed: 0
+dg-publish:
 ---
 To create an image of a Linux distribution, you can follow these general steps:  
   

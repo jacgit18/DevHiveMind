@@ -11,7 +11,8 @@ Purpose: This documentation discusses diversification.
 Status: Done
 Started: 
 EditDate: 2024-03-04
-Relates:
+Relates: 
+dg-publish:
 ---
 ![[Buffet principle.png]]
 

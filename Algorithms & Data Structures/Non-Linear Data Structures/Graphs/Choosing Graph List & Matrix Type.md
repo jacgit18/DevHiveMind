@@ -11,6 +11,7 @@ Started: 2023-11-02
 EditDate: 
 Relates: "[[Graph List & Matrix Type]]"
 Peer Reviewed: 0
+dg-publish:
 ---
 Selecting the most suitable representation for a graph involves a thoughtful assessment of several factors, taking into account the graph's characteristics, memory usage, required operations, dynamic needs, and compatibility with specific algorithms. Here's a comprehensive guide to help you make this decision:
 

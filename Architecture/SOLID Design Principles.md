@@ -14,6 +14,7 @@ Started:
 EditDate: 2024-03-07
 Relates: 
 Peer Reviewed: 0
+dg-publish:
 ---
 ![[DataBuisness.png]]
 Find out were to put 

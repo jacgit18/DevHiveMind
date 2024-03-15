@@ -10,7 +10,8 @@ Purpose: This documentation discusses the decision between aiming for a high sal
 Status: Done
 Started: 
 EditDate: 2024-02-20
-Relates:
+Relates: 
+dg-publish:
 ---
 Navigating compensation packages can be overwhelming, but considering key factors will help you make an informed decision:
 

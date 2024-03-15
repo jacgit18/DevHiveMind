@@ -13,6 +13,7 @@ Started: 2024-02-11
 EditDate: 
 Relates: 
 Peer Reviewed: 0
+dg-publish:
 ---
 The runtime of functions that take in regular expression (regex) strings can vary based on factors such as the complexity of the regex pattern, the size of the input data, and the efficiency of the regex engine used by the programming language or library.  
   

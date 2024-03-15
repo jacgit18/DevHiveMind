@@ -12,6 +12,7 @@ Started:
 EditDate: 2024-03-04
 Relates: 
 Peer Reviewed: 0
+dg-publish:
 ---
 Asynchronous programming allows tasks to be executed independently and concurrently. It doesn't block the execution of the program, enabling multiple operations to be performed simultaneously. This approach is particularly useful when dealing with I/O operations or time-consuming tasks.
 

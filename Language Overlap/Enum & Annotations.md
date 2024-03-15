@@ -11,6 +11,7 @@ Started:
 EditDate: 2024-03-05
 Relates: 
 Peer Reviewed: 0
+dg-publish:
 ---
 Enums in Java are used to define a fixed set of constants. An enum type is a special type of class that represents a group of related constants. Enums provide a way to create a collection of predefined values that can be used as options or choices in your program.
 

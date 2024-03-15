@@ -10,6 +10,7 @@ Started:
 EditDate: 2024-03-07
 Relates: 
 Peer Reviewed: 0
+dg-publish:
 ---
 Reactive microservices represent an architectural approach that combines the principles of microservices with reactive programming techniques to build highly responsive, resilient, and scalable distributed systems. This approach is well-suited for building systems that can handle a large number of concurrent users and effectively respond to changing workloads. Here are some key aspects of reactive microservices:  
   

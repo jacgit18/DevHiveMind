@@ -11,6 +11,7 @@ Started:
 EditDate: 
 Relates: 
 Peer Reviewed: 0
+dg-publish:
 ---
 There are scenarios where tables may not necessarily require each record to be unique. These situations often involve tables that store non-relational or aggregated data. Here are some examples:
 

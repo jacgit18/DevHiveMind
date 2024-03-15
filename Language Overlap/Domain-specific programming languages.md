@@ -10,6 +10,7 @@ Started:
 EditDate: 2024-03-05
 Relates: 
 Peer Reviewed: 0
+dg-publish:
 ---
 1. SQL (Structured Query Language): used for database management
 2. MATLAB: used for numerical analysis and scientific computing

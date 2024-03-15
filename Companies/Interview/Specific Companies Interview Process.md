@@ -9,7 +9,8 @@ Purpose: This documentation discusses technical interview process for popular co
 Status: Done
 Started: 
 EditDate: 2024-02-20
-Relates:
+Relates: 
+dg-publish: true
 ---
 ## Airbnb Interview Process:
 - Recruiter phone screen

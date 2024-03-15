@@ -10,6 +10,7 @@ Started: 2024-03-12
 EditDate: 
 Relates: 
 Peer Reviewed: 0
+dg-publish:
 ---
 Building websites for free and charging a percentage of revenue is a model known as revenue sharing or performance-based pricing you can also insert ads in your website. Here's how it typically works:
 

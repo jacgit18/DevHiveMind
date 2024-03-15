@@ -10,6 +10,7 @@ Started: 2024-02-03
 EditDate: 
 Relates: 
 Peer Reviewed: 0
+dg-publish: true
 ---
 Functional Acceptance Testing (FAT) is a testing phase that focuses on verifying that the software system meets the specified functional requirements as outlined in the project's requirements documentation. This type of testing is conducted to ensure that the entire application or system functions correctly as a whole, rather than just validating individual components or features.
 

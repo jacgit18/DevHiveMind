@@ -12,6 +12,7 @@ Started:
 EditDate: 2024-03-06
 Relates: "[[System Design Thought Process Flow]]"
 Peer Reviewed: 0
+dg-publish:
 ---
 1. **Requirements Clarification:**
    - Understand the goals and constraints of the system.

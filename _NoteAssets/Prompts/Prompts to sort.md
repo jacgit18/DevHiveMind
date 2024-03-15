@@ -10,7 +10,8 @@ Purpose:
 Status: Refinement
 Started: 
 EditDate: 2024-03-11
-Relates:
+Relates: 
+dg-publish:
 ---
 #todo/Personal/Low/Dev 
 - [ ] organize these prompts

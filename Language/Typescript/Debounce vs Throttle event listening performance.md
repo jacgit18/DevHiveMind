@@ -14,6 +14,7 @@ Started:
 EditDate: 2024-03-02
 Relates: 
 Peer Reviewed: 0
+dg-publish:
 ---
 Addressing performance concerns is a common challenge in JavaScript applications, and two essential techniques for achieving better control over function invocation rates are throttling and debouncing. These techniques are indispensable for web developers, particularly in scenarios involving event handler assignments.
 

@@ -12,6 +12,7 @@ Started:
 EditDate: 2024-03-04
 Relates: "[[Bit-Binary]]"
 Peer Reviewed: 0
+dg-publish:
 ---
 **Bits and Binary Representation:**
 

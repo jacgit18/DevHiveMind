@@ -17,6 +17,7 @@ Started:
 EditDate: 2024-02-07
 Relates: "[[Props#Higher Order Components (HOC) and Render Prop Pattern |HOC]]"
 Peer Reviewed: 1
+dg-publish:
 ---
 ```jsx
 import React, { Component } from 'react';

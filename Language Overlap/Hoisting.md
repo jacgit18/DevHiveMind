@@ -11,6 +11,7 @@ Started:
 EditDate: 2024-03-02
 Relates: "[[Parameters vs Arguments]]"
 Peer Reviewed: 0
+dg-publish:
 ---
 JavaScript Hoisting is a mechanism in which the interpreter appears to move the declarations of functions, variables, or classes to the top of their scope during the compilation phase, before the actual execution of the code. This enables functions to be safely referenced and used in the code before their formal declarations.
 

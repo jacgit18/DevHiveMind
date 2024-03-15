@@ -13,6 +13,7 @@ Started:
 EditDate: 2024-03-04
 Relates: 
 Peer Reviewed: 0
+dg-publish:
 ---
 A Maven repository is a centralized location where Maven, a widely used build and project management tool for Java projects, stores and manages project artifacts (such as JAR files, plugins, and libraries). It serves as a reliable and accessible storage space for software components that can be easily shared and reused across different projects.
 

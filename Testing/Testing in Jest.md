@@ -12,6 +12,7 @@ Started: 2023-11-06
 EditDate: 2024-02-02
 Relates: 
 Peer Reviewed: 0
+dg-publish: true
 ---
 Iteration can be useful in unit tests when you need to test a piece of code against multiple inputs or when you want to verify that a function behaves correctly across various scenarios. 
   

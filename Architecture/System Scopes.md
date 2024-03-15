@@ -10,6 +10,7 @@ Started:
 EditDate: 2024-03-07
 Relates: 
 Peer Reviewed: 0
+dg-publish:
 ---
 System architecture involves organizing a software system into various levels of abstraction, each serving a specific purpose. Let's break down the hierarchy from system to subsystem, layers, components, classes, and the associated data and methods:
 

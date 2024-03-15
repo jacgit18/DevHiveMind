@@ -12,6 +12,7 @@ Started: 2024-02-04
 EditDate: 
 Relates: 
 Peer Reviewed: 0
+dg-publish: true
 ---
 ![[Security By OSI Layer.jpeg]]
 

@@ -16,6 +16,7 @@ Started:
 EditDate: 2024-02-07
 Relates: 
 Peer Reviewed: 1
+dg-publish:
 ---
 ```jsx
 // mapStateToProps & mapDispatchToProps has second param called ownProps which is rarely used but is used with conditional rendering

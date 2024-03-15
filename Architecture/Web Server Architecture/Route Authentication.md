@@ -12,6 +12,7 @@ Started: 2024-01-01
 EditDate: 2024-03-06
 Relates: 
 Peer Reviewed: 0
+dg-publish:
 ---
 It's generally a good practice to leave authentication off for routes that handle user registration and login. These routes are typically the entry points for new users or users attempting to establish a session. Once a user is authenticated and has a valid session, subsequent requests to protected routes should be authenticated.  
   

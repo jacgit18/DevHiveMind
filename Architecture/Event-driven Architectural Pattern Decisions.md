@@ -12,6 +12,7 @@ Started:
 EditDate: 2024-03-07
 Relates: "[[Event Driven Architecture]]"
 Peer Reviewed: 0
+dg-publish:
 ---
 The appropriate combination depends on the specific use case, scalability needs, and architectural goals. Here are some common combinations when it comes :  
   

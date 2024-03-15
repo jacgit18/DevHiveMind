@@ -13,6 +13,7 @@ Started: 2024-02-25
 EditDate: 2024-03-06
 Relates: 
 Peer Reviewed: 0
+dg-publish:
 ---
 Dynamic scaling, the ability to adjust resources based on real-time demand, synergizes effectively with both horizontal and vertical scaling.
 

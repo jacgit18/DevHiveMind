@@ -19,6 +19,7 @@ EditDate: 2024-01-26
 Version: 2.8.0
 Relates: 
 Peer Reviewed: 0
+dg-publish:
 ---
 ![[System design core concepts.gif]]
 ### Step 1: Requirements Gathering 

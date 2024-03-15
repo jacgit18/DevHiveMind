@@ -13,6 +13,7 @@ Status: Perpetual
 Started: 
 EditDate: 2024-03-04
 Relates: "[[Economic Trends to Track]]"
+dg-publish:
 ---
 ### ETFs and Volatility:
 - Buying ETFs helps mitigate volatility.

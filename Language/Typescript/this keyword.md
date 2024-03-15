@@ -10,6 +10,7 @@ Started:
 EditDate: 2024-02-26
 Relates: 
 Peer Reviewed: 0
+dg-publish:
 ---
 In JavaScript, the `this` keyword is dynamic, depending on its invocation context. Key points include:
 

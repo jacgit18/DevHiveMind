@@ -10,6 +10,7 @@ Started: 2024-02-11
 EditDate: 
 Relates: 
 Peer Reviewed: 0
+dg-publish:
 ---
 In programming challenges, especially on platforms like LeetCode, the term "hidden constraints" is often used to refer to aspects of the problem that are not explicitly mentioned in the problem statement but can significantly impact the solution. These may include:  
   

@@ -9,7 +9,8 @@ Purpose: This documentation discusses responsibilities of a technical writer.
 Status: Done
 Started: 
 EditDate: 2024-02-20
-Relates:
+Relates: 
+dg-publish: true
 ---
 **Crafting Clarity in Complexity: The Dynamic Role of Technical Writers**
 

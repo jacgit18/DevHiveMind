@@ -11,6 +11,7 @@ Started:
 EditDate: 2024-02-22
 Relates: 
 Peer Reviewed: 0
+dg-publish:
 ---
 When forking a repository, refrain from adding collaborators to preserve pull request permissions. This ensures that any collaborator cannot make a request and merge without approval from the master repository.
 

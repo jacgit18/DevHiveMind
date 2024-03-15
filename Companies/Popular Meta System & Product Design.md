@@ -8,7 +8,8 @@ Purpose: This documentation discusses popular Meta system and product design.
 Status: Capture
 Started: 2024-01-29
 EditDate: 
-Relates:
+Relates: 
+dg-publish:
 ---
 - How would you design Instagram / Instagram Stories?  
 - How would you design Whatsapp?  

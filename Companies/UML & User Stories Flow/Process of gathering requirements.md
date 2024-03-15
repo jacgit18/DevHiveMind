@@ -10,6 +10,7 @@ Status: Done
 Started: 2023-12-12
 EditDate: 2024-02-20
 Relates: "[[Business Requirements Life cycle]]"
+dg-publish:
 ---
 1. **Gathering Requirements:**
    - **Objective:** Understand and document the needs and expectations of stakeholders.

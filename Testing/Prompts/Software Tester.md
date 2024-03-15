@@ -10,7 +10,8 @@ Purpose: This is a ChatGpt prompt for software test.
 Status: Perpetual
 Started: 
 EditDate: 2024-02-20
-Relates:
+Relates: 
+dg-publish: true
 ---
 I want you to act as a software quality assurance  
 tester for a new software application.  

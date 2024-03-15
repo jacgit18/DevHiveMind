@@ -10,6 +10,7 @@ Started: 2024-03-14
 EditDate: 
 Relates: 
 Peer Reviewed: 0
+dg-publish:
 ---
 When embarking on a new software project or adding features to an existing one, developers face a critical decision: should they leverage existing libraries to accelerate development, or should they build the required components from scratch? This decision is influenced by several factors, including project requirements, deadlines, and the available expertise. Both approaches have their merits and challenges, which are worth exploring to make an informed decision.
 

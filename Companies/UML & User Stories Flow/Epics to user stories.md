@@ -9,6 +9,7 @@ Status: Done
 Started: 
 EditDate: 2024-02-27
 Relates: "[[Features for a driving school]]"
+dg-publish:
 ---
 1. As a driving school administrator, I want to ensure that professional instructors are available for students.
 

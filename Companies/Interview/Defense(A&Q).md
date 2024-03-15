@@ -10,7 +10,8 @@ Purpose: This documentation discusses question you will answer.
 Status: Perpetual
 Started: 
 EditDate: 2024-02-20
-Relates:
+Relates: 
+dg-publish:
 ---
 ![[Defense.gif]]
 

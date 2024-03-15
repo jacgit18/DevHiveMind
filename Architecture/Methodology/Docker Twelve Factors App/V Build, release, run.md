@@ -15,6 +15,7 @@ Started:
 EditDate: 2024-03-06
 Relates: 
 Peer Reviewed: 1
+dg-publish:
 ---
 The activities of building, releasing, and running an application typically occur within the "Deployment and Maintenance" stage or phase of the application development lifecycle.
 

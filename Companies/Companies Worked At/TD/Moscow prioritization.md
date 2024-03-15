@@ -9,6 +9,7 @@ Status: Done
 Started: 
 EditDate: 2024-02-20
 Relates: "[[Business Requirements Life cycle]]"
+dg-publish:
 ---
 MoSCoW prioritization is a technique used in project management and software development to prioritize requirements or features based on their importance and urgency. The term "MoSCoW" is an acronym derived from the first letter of four prioritization categories: Must-haves, Should-haves, Could-haves, and Won't-haves. Here's an explanation of each category:
 

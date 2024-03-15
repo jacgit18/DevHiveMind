@@ -11,6 +11,7 @@ Started:
 EditDate: 2024-03-05
 Relates: 
 Peer Reviewed: 0
+dg-publish:
 ---
 JavaScript primarily operates as a single-threaded language, executing one instruction at a time sequentially in the main thread. However, it supports multithreading through Web Workers in web browser environments. Web Workers allow background execution of JavaScript code in separate threads, enabling parallel processing for tasks such as data processing and heavy computations. These threads communicate with the main thread through a message-passing system.
 

@@ -11,6 +11,7 @@ Started: 2023-11-21
 EditDate: 2024-03-04
 Relates: "[[Fundamentals of Object-Oriented Concepts]]"
 Peer Reviewed: 0
+dg-publish:
 ---
 Class inheritance in Python and Java shares some common principles but also has differences in their implementation. Here are some key points to consider:  
   

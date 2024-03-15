@@ -8,6 +8,7 @@ Status: Done
 Started: 2023-12-12
 EditDate: 
 Relates: "[[Attributes of Requirements & User Stories]]"
+dg-publish:
 ---
 
 ![[Requirement life cycle.svg]]

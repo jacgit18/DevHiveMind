@@ -11,6 +11,7 @@ Started:
 EditDate: 2024-02-26
 Relates: "[[Eureka Service]]"
 Peer Reviewed: 0
+dg-publish:
 ---
 In the JavaScript ecosystem, especially for microservices architecture, there isn't a direct equivalent to Eureka, which is a service registry and discovery server commonly used in Java-based microservices with Spring Cloud.  
   

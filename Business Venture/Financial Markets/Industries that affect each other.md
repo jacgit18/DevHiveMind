@@ -13,6 +13,7 @@ Status: Done
 Started: 
 EditDate: 2024-03-04
 Relates: "[[Economic Trends to Track]]"
+dg-publish:
 ---
 The interactions between different industries in an economy can be complex and interconnected. Changes in one industry can have ripple effects on others, and these relationships can vary based on factors such as supply chains, consumer behavior, economic conditions, and government policies. Here are a few ways industries can affect each other:  
   

@@ -11,6 +11,7 @@ Started: 2023-12-15
 EditDate: 
 Relates: 
 Peer Reviewed: 0
+dg-publish:
 ---
 ![[Regimen.gif]]
 ## Prep  

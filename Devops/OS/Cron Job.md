@@ -14,6 +14,7 @@ Started:
 EditDate: 2024-03-11
 Relates: 
 Peer Reviewed: 0
+dg-publish:
 ---
 ```bash
 * * * * *  /home/jac/Sync/DevMindMap/sync.sh

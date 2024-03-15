@@ -8,7 +8,8 @@ Purpose: This documentation discusses different UML diagrams.
 Status: Refinement
 Started: 
 EditDate: 
-Relates:
+Relates: 
+dg-publish:
 ---
 
 ![[Modeling.png]]

@@ -12,6 +12,7 @@ Started:
 EditDate: 2024-03-09
 Relates: 
 Peer Reviewed: 0
+dg-publish:
 ---
 In Linux, a soft link, also known as a symbolic link or symlink, is a special type of file that acts as a reference or pointer to another file or directory. It provides a way to create shortcuts or aliases to files and directories, allowing you to access them easily without having to navigate through the entire directory structure.
 

@@ -13,6 +13,7 @@ Started:
 EditDate: 2024-02-06
 Relates: 
 Peer Reviewed: 0
+dg-publish:
 ---
 During the mounting lifecycle in React, invoked when a component instance is created and inserted into the DOM, the process begins with the constructor. Here, state is initialized, and event handlers are bound to the class instance or state. It's crucial to call `super(props)` in the constructor, invoking the base class constructor for access to the overall props.
 

@@ -11,6 +11,7 @@ Started:
 EditDate: 
 Relates: "[[Graph]]"
 Peer Reviewed: 0
+dg-publish:
 ---
 List & Matrix represent and are used to store the relationships between nodes (vertices) and edges in a graph. Each has its own advantages and is chosen based on the specific characteristics of the graph and the types of operations you need to perform.
 

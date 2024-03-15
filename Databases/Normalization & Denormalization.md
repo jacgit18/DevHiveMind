@@ -14,6 +14,7 @@ Started:
 EditDate: 
 Relates: 
 Peer Reviewed: 0
+dg-publish:
 ---
 Normalization is a crucial technique in database design aimed at improving data integrity by reducing redundancy and inconsistency. It involves organizing data into multiple tables, adhering to specific rules to optimize database performance. Striking the right balance is key, as both over-normalization and under-normalization can lead to issues.
 

@@ -15,6 +15,7 @@ Started: 2023-10-29
 EditDate: 2024-03-04
 Relates: "[[Fundamentals of Object-Oriented Concepts]]"
 Peer Reviewed: 0
+dg-publish:
 ---
 Abstract classes, identified by the `abstract` keyword, are crucial in object-oriented programming. They contain at least one abstract method, devoid of a body, and may feature multiple concrete methods. The inheritance mechanism enforces the implementation of abstract methods, ensuring uniformity among subclasses.
 

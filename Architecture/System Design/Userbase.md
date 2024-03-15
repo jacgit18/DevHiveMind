@@ -11,6 +11,7 @@ Started:
 EditDate: 2024-03-06
 Relates: 
 Peer Reviewed: 0
+dg-publish:
 ---
 In a system design interview, understanding the user base is crucial for designing scalable and efficient systems. Here are some questions you might ask or consider when discussing the user base:  
   

@@ -9,7 +9,8 @@ Purpose: This documentation discusses responsibilities of a sales engineer.
 Status: Done
 Started: 
 EditDate: 2024-02-20
-Relates:
+Relates: 
+dg-publish: true
 ---
 **Elevating Sales Excellence: Core Responsibilities of Sales Engineers**
 

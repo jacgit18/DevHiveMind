@@ -11,6 +11,7 @@ Started:
 EditDate: 
 Relates: 
 Peer Reviewed: 0
+dg-publish:
 ---
 In computer science, the term "map" refers to a data structure that stores collections of key-value pairs, where each key is unique and used to access the associated value. Maps are utilized for efficient data retrieval and manipulation based on keys and are commonly implemented using hash tables or similar data structures.
 

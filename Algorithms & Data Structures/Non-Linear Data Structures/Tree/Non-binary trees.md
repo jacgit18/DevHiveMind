@@ -10,6 +10,7 @@ Started:
 EditDate: 
 Relates: "[[Types of Trees]]"
 Peer Reviewed: 0
+dg-publish:
 ---
 Non-binary trees, also known as non-binary trees or n-ary trees, are tree structures where nodes can have more than two children. There are various types of non-binary trees, and some of the common ones include:  
   

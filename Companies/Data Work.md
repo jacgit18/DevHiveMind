@@ -10,6 +10,7 @@ Started:
 EditDate: 2024-02-20
 Relates: 
 Peer Reviewed: 0
+dg-publish:
 ---
 ![[DataBuisness.png]]
 ## Describe Data in a Meaningful Way 

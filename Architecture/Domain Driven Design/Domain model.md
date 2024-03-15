@@ -10,6 +10,7 @@ Started: 2023-11-26
 EditDate: 2024-03-06
 Relates: 
 Peer Reviewed: 0
+dg-publish:
 ---
 In Domain-Driven Design (DDD), a domain model is a representation of the real-world concepts, rules, and processes that shape a particular business domain. The domain model includes entities, value objects, aggregates, and other elements that collectively capture the essential aspects of the domain. Let's explore the relationships between the domain model, aggregates, domain value types, and factories:  
   

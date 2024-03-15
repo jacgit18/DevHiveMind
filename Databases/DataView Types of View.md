@@ -11,6 +11,7 @@ Started:
 EditDate: 
 Relates: 
 Peer Reviewed: 0
+dg-publish:
 ---
 DataView in Obsidian supports various types of views that allow you to visualize and manipulate structured data within your notes. The primary views include:
 

@@ -13,6 +13,7 @@ Started:
 EditDate: 2024-03-06
 Relates: 
 Peer Reviewed: 0
+dg-publish: true
 ---
 The decision to have both the front end and back end in the same GitHub repository or separate repositories is influenced by various factors, and both approaches are common. Here are considerations for each option:  
   

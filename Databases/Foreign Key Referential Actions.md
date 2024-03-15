@@ -11,6 +11,7 @@ Started:
 EditDate: 
 Relates: 
 Peer Reviewed: 0
+dg-publish:
 ---
 [[Database Table Relationship Types#Referential Integrity |Referential integrity]]  is constrained by foreign keys, ensuring that values in a particular table match values that are found in a different table. 
 

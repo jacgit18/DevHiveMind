@@ -11,6 +11,7 @@ Started:
 EditDate: 2024-03-03
 Relates: 
 Peer Reviewed: 0
+dg-publish:
 ---
 Backend applications encompass more than just APIs. They handle data processing, database management, and overall functionality. APIs, on the other hand, facilitate communication between software components. While APIs are crucial to the backend, they represent a subset designed for external communication and integration.
 

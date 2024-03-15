@@ -9,7 +9,8 @@ Purpose:
 Status: Draft
 Started: 
 EditDate: 2024-03-11
-Relates:
+Relates: 
+dg-publish:
 ---
 Certainly! Here's an example of a Bash install script that installs essential software and tools for software engineers:
 

@@ -10,6 +10,7 @@ Status: Done
 Started: 2023-12-12
 EditDate: 
 Relates: "[[Construction Industry and Data Dynamics]]"
+dg-publish:
 ---
 ## Tracflo Hypothetical Business Requirements Thoughts Experiment
 

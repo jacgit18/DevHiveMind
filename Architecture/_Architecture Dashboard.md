@@ -4,6 +4,7 @@ cssclass: dashboard
 banner: "![[Archetecture.jpg]]"
 banner_y: 0.494
 banner_x: 0.5
+dg-publish: true
 
 ---
 <div class="title" style="color:yellow">Architecture Dashboard</div>

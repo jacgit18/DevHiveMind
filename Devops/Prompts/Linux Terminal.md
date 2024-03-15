@@ -10,7 +10,8 @@ Purpose: This is a ChatGpt prompt for making ChatGpt act as a Linux terminal.
 Status: Final
 Started: 
 EditDate: 2024-02-21
-Relates:
+Relates: 
+dg-publish: true
 ---
 I want you to act as a Linux terminal,  
 I will type commands and you will reply with what the terminal should show.  

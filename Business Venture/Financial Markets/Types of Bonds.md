@@ -11,7 +11,8 @@ Purpose: This documentation discusses bond types and their stability.
 Status: Done
 Started: 
 EditDate: 2024-03-04
-Relates:
+Relates: 
+dg-publish:
 ---
 1. **Government Bonds:**
    - **Treasury Bonds:**

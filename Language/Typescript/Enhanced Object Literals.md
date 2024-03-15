@@ -9,6 +9,7 @@ Started:
 EditDate: 2024-03-02
 Relates: 
 Peer Reviewed: 0
+dg-publish:
 ---
 ### Exploring Enhanced Object Literals in JavaScript
 
