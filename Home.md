@@ -36,4 +36,3 @@ banner_x: 0.5
 	- [ ] [[Dev Roadmaps By Priority#New Path | New Path of Exploration]]
 	- [ ] [[Dev Roadmaps By Priority#Side Quest Revist |  Side Quest]]
 
-

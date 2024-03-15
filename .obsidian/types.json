@@ -29,6 +29,8 @@
     "excalidraw-css": "text",
     "excalidraw-autoexport": "checkbox",
     "excalidraw-iframe-theme": "text",
-    "Peer Reviewed": "number"
+    "Peer Reviewed": "number",
+    "dg-home": "checkbox",
+    "dg-publish": "checkbox"
   }
 }
