@@ -25,7 +25,7 @@ dg-publish:
 ### Step 1: Requirements Gathering 
 > **Establish a Understanding and Design Scope of problem (3 - 10 minutes)
 
-During this step, it's crucial to clarify the system scope and priorities and gather [[Business Requirements Life cycle|Business Requirements]]. For instance, if asked to design an Instagram Reels feature, break down the problem into specific use cases, outlining interactions between system components. Identify key requirements like expected traffic, data volume, latency, and scalability. Inquire about the [[Userbase]] type which can give you insight for things like estimating resources  or  things like governance, like what if user base  is under aged, as this is crucial for scalability considerations. Understand potential constraints and bottlenecks that may arise with a growing user base. This leads to decisions on database considerations, determining whether a NoSQL or SQL database aligns with specific needs and the nature of the data.
+During this phase, it's pivotal to establish the system's scope and priorities while gathering  [[Business Requirements Life cycle|Business Requirements]]. For instance, when tasked with designing an Instagram Reels feature, it's essential to deconstruct the problem into distinct use cases, delineating interactions among system components. Key requirements such as anticipated traffic, data volume, latency, and scalability should be identified. Inquire about the [[Userbase]]type, as this insight aids in resource estimation and governance considerations, especially regarding scalability implications, such as underage user base scenarios. Understanding potential constraints and bottlenecks that may emerge with an expanding user base is imperative. This insight informs decisions regarding database considerations, determining whether a NoSQL or SQL database aligns with specific needs and data characteristics.
 #### [[Use Case vs User Story |User Story]] Example:
 >[!important]
 >Creating stories helps with building data model, also if dealing with complex feature might want to consider using Use Cases over Stories.
@@ -37,7 +37,7 @@ During this step, it's crucial to clarify the system scope and priorities and ga
 
 ### Step 2: Design Deep Dive (15 - 25 minutes)
 >[!important]
-When considering the features of your design, prioritize a forward-thinking approach that allows for future functionality. Ensure your design is flexible, accommodating potential expansions and enhancements seamlessly. Focus on building a foundation that supports scalability, making it easier to integrate additional features in the future. Think holistically about the design, anticipating potential modifications and advancements, and ensure that the architecture is adaptable to evolving requirements. This foresightedness will contribute to a more sustainable and extensible system over time.
+When crafting your design, prioritize a forward-thinking approach that anticipates future functionality. Ensure flexibility to seamlessly accommodate expansions and enhancements. Focus on constructing a foundation that facilitates scalability, simplifying the integration of additional features down the line. Adopt a holistic mindset, anticipating potential modifications and advancements, and ensure the architecture remains adaptable to evolving requirements. This proactive approach fosters a more sustainable and extensible system over time.
 
 *Delve into the design by following the flow from Database ▶ Server/Services (Architecture) ▶ Client Side design.
 
