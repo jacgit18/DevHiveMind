@@ -8,7 +8,8 @@ Purpose: This documentation discusses what it means to be BSA.
 Status: Done
 Started: 
 EditDate: 2024-02-20
-Relates:
+Relates: 
+dg-publish: true
 ---
 
 A **business systems analyst** serves as a vital intermediary between a company and its technology infrastructure. Their primary role is to assist businesses in leveraging computer systems and software to address challenges and enhance operational efficiency.

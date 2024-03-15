@@ -11,6 +11,7 @@ Started:
 EditDate: 2024-03-05
 Relates: "[[Primitive Types]]"
 Peer Reviewed: 0
+dg-publish:
 ---
 Primitive wrappers, also known as wrapper classes, are classes in programming languages that provide an object-oriented representation of primitive types. These classes allow primitive types to be used in contexts that require objects. Here's a list of primitive wrappers across different programming languages:
 

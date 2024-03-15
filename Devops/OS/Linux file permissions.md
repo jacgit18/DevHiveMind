@@ -11,6 +11,7 @@ Started:
 EditDate: 2024-03-11
 Relates: 
 Peer Reviewed: 0
+dg-publish:
 ---
 In the context of Linux file permissions, "octal" refers to a numerical representation used to specify and represent file permission settings. Linux and Unix-like operating systems use octal notation to define three sets of permissions: read (r), write (w), and execute (x) for three different user categories: owner, group, and others. These permissions are represented by a three-digit octal number.  
   

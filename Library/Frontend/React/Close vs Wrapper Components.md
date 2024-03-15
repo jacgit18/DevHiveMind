@@ -15,6 +15,7 @@ Started:
 EditDate: 2024-02-06
 Relates: 
 Peer Reviewed: 0
+dg-publish:
 ---
 In React, the decision to use close components or wrapper components depends on the specific requirements and design of your application. Let's understand each concept:  
   

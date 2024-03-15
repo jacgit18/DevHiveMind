@@ -12,6 +12,7 @@ Started:
 EditDate: 2024-03-06
 Relates: 
 Peer Reviewed: 0
+dg-publish: true
 ---
 A Content Delivery Network (CDN) is a network of dispersed servers that efficiently delivers static content like images, videos, and scripts. It can also cache dynamic content, such as HTML pages based on request attributes.
 

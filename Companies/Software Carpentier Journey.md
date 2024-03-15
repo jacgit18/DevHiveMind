@@ -10,6 +10,7 @@ Started:
 EditDate: 2024-03-07
 Relates: 
 Peer Reviewed: 0
+dg-publish:
 ---
 ## **Application Architecture:**
 Involves designing individual applications with a focus on specific technical details, including components, modules, and interfaces. Salary: $116,000 per year.

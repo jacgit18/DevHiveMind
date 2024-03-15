@@ -11,6 +11,7 @@ Started:
 EditDate: 2024-03-05
 Relates: 
 Peer Reviewed: 0
+dg-publish:
 ---
 In the realm of Java, the `extends` keyword takes center stage, serving as the gateway to inheritance. Its primary role is to signify that the class under definition is an extension or derivation of the base class. In essence, `extends` empowers a subclass by inheriting the functionalities of its parent class, allowing for an augmentation of capabilities.
 

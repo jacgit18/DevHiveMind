@@ -10,6 +10,7 @@ Started:
 EditDate: 2024-02-29
 Relates: "[[Arrays]]"
 Peer Reviewed: 0
+dg-publish:
 ---
 ```javascript
 // Initialize two arrays

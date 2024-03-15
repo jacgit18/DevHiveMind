@@ -10,6 +10,7 @@ Started: 2023-11-27
 EditDate: 
 Relates: 
 Peer Reviewed: 0
+dg-publish:
 ---
 The life cycle of practicing Domain-Driven Design (DDD) for an application involves several key phases:  
   

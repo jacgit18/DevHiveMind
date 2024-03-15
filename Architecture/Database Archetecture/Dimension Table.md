@@ -13,6 +13,7 @@ Started: 2024-01-07
 EditDate: 2024-03-06
 Relates: 
 Peer Reviewed: 0
+dg-publish:
 ---
 A dimension table is a fundamental concept in data warehousing and relational database design. It is a type of table that contains descriptive information about the entities in a business or analytical context, providing context and details for the measurements stored in fact tables. Dimension tables are a crucial component of the star schema and snowflake schema, common data warehouse modeling techniques.
 

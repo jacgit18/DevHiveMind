@@ -13,6 +13,7 @@ Started:
 EditDate: 
 Relates: 
 Peer Reviewed: 0
+dg-publish:
 ---
 A Promise in NodeJS mirrors the concept of a promise in real life, providing an assurance that a specific task will be completed. It serves to track the execution status of asynchronous events and dictates the course of action post-event completion. A promise object encompasses three states:
 

@@ -9,7 +9,8 @@ Purpose: This documentation discusses general things about taxes.
 Status: Perpetual
 Started: 
 EditDate: 2024-03-04
-Relates:
+Relates: 
+dg-publish:
 ---
   ![[Taxes.gif]]
   

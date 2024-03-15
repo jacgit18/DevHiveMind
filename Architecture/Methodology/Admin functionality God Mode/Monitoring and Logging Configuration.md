@@ -13,6 +13,7 @@ Started:
 EditDate: 2024-03-06
 Relates: "[[Monitoring & Observability]]"
 Peer Reviewed: 0
+dg-publish:
 ---
 [[XII Admin processes |Admin Processes]] are critical for maintaining the health, performance, and observability of applications in a systematic and efficient manner. Here's an expanded explanation of the mentioned admin processes:
 

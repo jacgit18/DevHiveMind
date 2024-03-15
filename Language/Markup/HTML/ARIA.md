@@ -11,6 +11,7 @@ Started:
 EditDate: 2024-02-26
 Relates: 
 Peer Reviewed: 0
+dg-publish:
 ---
 ARIA, which stands for Accessible Rich Internet Applications, is a set of attributes that can be added to HTML elements to enhance the accessibility of web content, especially for people with disabilities. ARIA provides additional information to assistive technologies, such as screen readers, in understanding and presenting content more effectively.
 

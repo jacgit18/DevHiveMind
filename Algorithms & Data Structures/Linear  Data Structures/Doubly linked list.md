@@ -11,6 +11,7 @@ Started:
 EditDate: 
 Relates: "[[Type of Linked List]]"
 Peer Reviewed: 0
+dg-publish:
 ---
 ![[DoubleLinkedLists.gif]]
 

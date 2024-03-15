@@ -12,7 +12,8 @@ Purpose: This documentation discusses Series A Stage of a startup.
 Status: Done
 Started: 
 EditDate: 2024-03-04
-Relates:
+Relates: 
+dg-publish:
 ---
 Joining a startup at the Series A stage represents a crucial phase where the company transitions from validating its product-market fit to scaling its operations and executing its go-to-market strategy. With fundraising amounts typically ranging from $3M to $8M, startups at this stage are poised for significant growth. Here’s what you need to know about equity compensation during Series A:
 

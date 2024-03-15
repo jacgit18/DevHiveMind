@@ -15,6 +15,7 @@ Started:
 EditDate: 2024-02-07
 Relates: 
 Peer Reviewed: 1
+dg-publish:
 ---
 When managing state for network requests, especially when fetching data from a database, the state structure might commonly include:
 

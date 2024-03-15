@@ -16,6 +16,7 @@ Started: 2023-09-01
 EditDate: 2024-02-03
 Relates: 
 Peer Reviewed: 0
+dg-publish:
 ---
 ![[Message Systems.gif]]
 Backend developers need to possess the essential skill of working with messaging systems, which are crucial tools for enabling asynchronous communication between various components of a system, including services, applications, and devices. Messaging systems facilitate the transmission of messages containing data or commands without necessitating a direct connection or synchronous responses.

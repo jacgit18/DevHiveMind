@@ -10,7 +10,8 @@ Purpose: This documentation discusses the coffee chat.
 Status: Done
 Started: 
 EditDate: 2024-02-20
-Relates:
+Relates: 
+dg-publish:
 ---
 1. Immerse yourself in information about the person, their company, and the industry or technology they're involved in.
 2. Avoid directly asking for a job; focus on understanding them, their role, and the company's significance.

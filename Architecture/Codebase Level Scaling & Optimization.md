@@ -14,6 +14,7 @@ Started:
 EditDate: 2024-02-25
 Relates: "[[Vertical vs Horizontal Scaling]]"
 Peer Reviewed: 0
+dg-publish:
 ---
 When it comes to optimizing your codebase at the component or process level, there are several strategies you can employ. This approach allows you to enhance the performance of a specific element within your codebase without necessitating a major architectural overhaul. Here are some key techniques:
 

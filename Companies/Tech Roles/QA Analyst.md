@@ -9,7 +9,8 @@ Purpose: This documentation discusses responsibilities of a QA Analyst engineer.
 Status: Done
 Started: 
 EditDate: 2024-02-20
-Relates:
+Relates: 
+dg-publish: true
 ---
 **Elevating Quality Assurance: Key Responsibilities of a QA Analyst**
 

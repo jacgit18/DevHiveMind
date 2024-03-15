@@ -10,6 +10,7 @@ Started: 2024-02-26
 EditDate: 
 Relates: 
 Peer Reviewed: 0
+dg-publish:
 ---
 In software development, a thread's lifetime refers to the duration it exists and is active within a program. Threads are independent units of execution that operate concurrently. Throughout their lifetime, threads can transition through different states, representing their current status and activity. The typical thread states in a multithreading environment are:
 

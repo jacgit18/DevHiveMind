@@ -6,7 +6,8 @@ author:
 Status: Draft
 Started: 
 EditDate: 
-Relates:
+Relates: 
+dg-publish:
 ---
 ## Next article the process simplification
 

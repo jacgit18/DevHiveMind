@@ -11,6 +11,7 @@ Started:
 EditDate: 2024-02-17
 Relates: "[[Javascript vs TypeScript]]"
 Peer Reviewed: 0
+dg-publish:
 ---
 Local binding refers to the association of a variable with a value within a specific scope, typically limited to a certain part of a program or function. The variable's existence and value are confined to that particular area, and it doesn't affect variables with the same name in other parts of the program. This helps in organizing and managing data within different sections of code without causing conflicts.
 

@@ -11,6 +11,7 @@ Started:
 EditDate: 2024-02-22
 Relates: 
 Peer Reviewed: 0
+dg-publish:
 ---
 ![[Deployment Patterns.jpeg]]
 

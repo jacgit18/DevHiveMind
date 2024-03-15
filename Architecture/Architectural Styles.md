@@ -14,6 +14,7 @@ Started:
 EditDate: 2024-03-06
 Relates: 
 Peer Reviewed: 0
+dg-publish:
 ---
 Some common architectural styles in system design include:
 

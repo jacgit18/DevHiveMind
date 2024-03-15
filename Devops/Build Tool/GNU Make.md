@@ -12,6 +12,7 @@ Started:
 EditDate: 2024-02-22
 Relates: 
 Peer Reviewed: 0
+dg-publish:
 ---
 GNU Make is a build automation tool that plays a crucial role in managing the compilation and building of software projects. Developed by the Free Software Foundation (FSF), it is part of the GNU Project and is widely used in the software development process.
 

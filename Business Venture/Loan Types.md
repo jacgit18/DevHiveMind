@@ -10,7 +10,8 @@ Purpose: This documentation discusses Loan types.
 Status: Done
 Started: 
 EditDate: 2024-03-04
-Relates:
+Relates: 
+dg-publish:
 ---
 ### Loan Basics:
 

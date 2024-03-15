@@ -11,6 +11,7 @@ Started: 2023-12-07
 EditDate: 
 Relates: 
 Peer Reviewed: 0
+dg-publish:
 ---
 | Value           | String conversion | Number conversion | Boolean conversion |
 | --------------- | ----------------- | ----------------- | ------------------ |

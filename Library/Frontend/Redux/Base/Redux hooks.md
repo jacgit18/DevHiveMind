@@ -15,6 +15,7 @@ Started:
 EditDate: 2024-02-08
 Relates: "[[Hooks]]"
 Peer Reviewed: 1
+dg-publish:
 ---
 An alternative approach utilizing Hooks, particularly beneficial when working with Redux Toolkit in conjunction with react-redux for state management.
 

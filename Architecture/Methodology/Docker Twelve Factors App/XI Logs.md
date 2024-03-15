@@ -14,6 +14,7 @@ Started:
 EditDate: 2024-03-06
 Relates: 
 Peer Reviewed: 1
+dg-publish:
 ---
 Logs: The app should generate logs as event streams for monitoring and troubleshooting, providing insight into its behavior. The app should only log to STDOUT or STDERR streams so standard container tools can forward them into a centralized logging system, which is required to monitor and troubleshoot your app.
 

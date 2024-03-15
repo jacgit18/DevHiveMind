@@ -10,7 +10,8 @@ Purpose: This documentation discusses the intricacies of bonus.
 Status: Done
 Started: 
 EditDate: 2024-02-20
-Relates:
+Relates: 
+dg-publish:
 ---
 ![[Job Offer.jpg]]
 

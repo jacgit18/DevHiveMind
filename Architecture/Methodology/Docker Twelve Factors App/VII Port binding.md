@@ -14,6 +14,7 @@ Started:
 EditDate: 2024-03-06
 Relates: 
 Peer Reviewed: 1
+dg-publish:
 ---
 Port binding: Your app should be self-contained and bind to a specific port  for external access. Docker enables you to expose and map container ports to host ports, allowing external access to the app through a designated port. 
 

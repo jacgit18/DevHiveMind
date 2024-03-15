@@ -10,6 +10,7 @@ Started: 2023-12-07
 EditDate: 
 Relates: 
 Peer Reviewed: 0
+dg-publish:
 ---
 It seems like you're referring to ECMAScript (often abbreviated as ES), which is the official standard specification for JavaScript. JavaScript is an implementation of ECMAScript, and various versions of ECMAScript define the features and syntax that JavaScript engines should support.  
   

@@ -11,6 +11,7 @@ Started: 2024-02-26
 EditDate: 2024-03-04
 Relates: 
 Peer Reviewed: 0
+dg-publish:
 ---
 A compiler is a software tool that translates source code written in a high-level programming language into machine code or an intermediate code that can be executed by a computer. The purpose of a compiler is to facilitate the execution of a program by converting the human-readable code written by a programmer into a format that the computer's hardware can understand.
 

@@ -11,6 +11,7 @@ Started:
 EditDate: 2024-02-22
 Relates: 
 Peer Reviewed: 0
+dg-publish:
 ---
 In the context of Docker, a "shim" refers to a small, intermediary component that facilitates communication between the Docker daemon and a container's individual processes. The purpose of a shim is to ensure proper interaction between Docker's higher-level management and orchestration functionalities and the lower-level container runtime.
 

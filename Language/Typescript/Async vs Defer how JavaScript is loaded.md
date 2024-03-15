@@ -11,6 +11,7 @@ Started:
 EditDate: 2024-02-09
 Relates: 
 Peer Reviewed: 0
+dg-publish:
 ---
 When working with script tags in HTML, it's essential to consider various attributes for optimal performance and functionality. Here are some best practices:
 

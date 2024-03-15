@@ -12,7 +12,8 @@ Purpose: This documentation discusses building a business.
 Status: Perpetual
 Started: 
 EditDate: 2024-03-04
-Relates:
+Relates: 
+dg-publish:
 ---
 ![[Buzniss.gif]]
 #todo/Personal/Med/Dev 

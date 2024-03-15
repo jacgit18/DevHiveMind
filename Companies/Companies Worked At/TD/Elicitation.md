@@ -8,7 +8,8 @@ Purpose: This documentation discusses best practices to have a productive meetin
 Status: Done
 Started: 
 EditDate: 
-Relates:
+Relates: 
+dg-publish:
 ---
 ## **Conducting Effective Conversations for Requirements Gathering:**
 

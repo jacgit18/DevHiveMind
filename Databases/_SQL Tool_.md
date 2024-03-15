@@ -9,6 +9,7 @@ Status: Done
 Started: 
 EditDate: 
 Relates: "[[]]"
+dg-publish: true
 ---
 
 <body style="margin: 0; overflow: hidden;"> 

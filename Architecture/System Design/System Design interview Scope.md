@@ -10,6 +10,7 @@ Started:
 EditDate: 
 Relates: 
 Peer Reviewed: 0
+dg-publish:
 ---
 In a system design interview, the balance between breadth and depth is crucial. The scope of your discussion should be broad enough to demonstrate your understanding of the system as a whole, yet focused enough to dive deep into the critical components that highlight your technical strengths and the specifics of the problem at hand. Here’s how to approach scoping and what to mention versus what to avoid:  
   

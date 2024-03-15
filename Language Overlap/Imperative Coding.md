@@ -11,6 +11,7 @@ Started:
 EditDate: 2024-03-05
 Relates: 
 Peer Reviewed: 0
+dg-publish:
 ---
 Imperative programming is a paradigm that focuses on defining how to achieve a task step by step, emphasizing a sequential and low-level approach. This method of programming is often divided into various approaches:
 

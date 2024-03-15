@@ -12,6 +12,7 @@ Started:
 EditDate: 
 Relates: 
 Peer Reviewed: 0
+dg-publish:
 ---
 Designing a scalable software system for large-scale operations is a complex task that involves careful consideration of various options, each with its own set of advantages and disadvantages. Despite the multitude of choices, three primary methods stand out as key approaches to achieving scalability:
 

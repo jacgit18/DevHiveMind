@@ -12,6 +12,7 @@ Started:
 EditDate: 2024-02-27
 Relates: 
 Peer Reviewed: 0
+dg-publish: true
 ---
 ### API Call on the Frontend:  
   

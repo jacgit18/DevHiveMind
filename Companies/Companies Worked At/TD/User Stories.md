@@ -9,6 +9,7 @@ Status: Done
 Started: 
 EditDate: 2024-02-20
 Relates: "[[PI Planning]]"
+dg-publish:
 ---
 >[!important] 
 >Scrum master is there to address blockers and help move things like reaching out to stakeholders on your behave if they aren't helping you out  with what you need. 

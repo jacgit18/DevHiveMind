@@ -12,6 +12,7 @@ Started:
 EditDate: 2024-03-06
 Relates: 
 Peer Reviewed: 0
+dg-publish:
 ---
 While clean code is often considered a best practice in software development, it's essential to recognize that it is not the absolute solution for every situation. Certain aspects of clean code might not always be the best approach, and there are nuances to consider:
 

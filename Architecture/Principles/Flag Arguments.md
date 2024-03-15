@@ -13,6 +13,7 @@ Started:
 EditDate: 2024-03-07
 Relates: "[[Parameters vs Arguments]]"
 Peer Reviewed: 0
+dg-publish:
 ---
 Flag arguments, also known as flag parameters or boolean parameters, are arguments that are used to indicate a specific condition or behavior in a function or method. They are typically boolean variables or values that control the flow or behavior of the function based on their true or false state. Flag arguments can be used to enable or disable certain features, configure optional behavior, or control the execution path within a function.
 

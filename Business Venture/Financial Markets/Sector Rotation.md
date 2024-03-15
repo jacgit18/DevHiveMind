@@ -12,6 +12,7 @@ Status: Perpetual
 Started: 
 EditDate: 2024-03-03
 Relates: "[[Economic Trends to Track]]"
+dg-publish:
 ---
 **Strategic Sector Rotation in Economic Cycles: A Guided Approach**
 

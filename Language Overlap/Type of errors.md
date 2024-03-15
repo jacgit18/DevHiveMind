@@ -11,6 +11,7 @@ Started:
 EditDate: 2024-02-03
 Relates: "[[Exception Handling]]"
 Peer Reviewed: 0
+dg-publish:
 ---
 ## Syntax Error 
 Typically associated when you forget a bracket or put the wrong sign 

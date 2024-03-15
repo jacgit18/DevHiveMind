@@ -12,6 +12,7 @@ Started: 2024-01-09
 EditDate: 
 Relates: 
 Peer Reviewed: 0
+dg-publish:
 ---
 Containerizing microservices in JavaScript typically involves using Docker to create container images for each microservice and then possibly using a tool like Docker Compose to manage and orchestrate these containers. Below is a simplified example of how you might structure the setup:  
   

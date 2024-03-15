@@ -8,6 +8,7 @@ Status: Done
 Started: 2023-12-15
 EditDate: 
 Relates: "[[Specific Companies Interview Process]]"
+dg-publish:
 ---
 1. **Clear Instructions:**
    - Ensure a comprehensive understanding of provided instructions and minimum specifications.

@@ -13,6 +13,7 @@ Started: 2023-10-15
 EditDate: 2024-01-31
 Relates: "[[Messaging systems]]"
 Peer Reviewed: 0
+dg-publish:
 ---
 In the context of programming, "consumers" and "producers" often refer to two roles or entities involved in a design pattern known as the Producer-Consumer pattern. This pattern is commonly used to manage concurrent or parallel processing of data in a multi-threaded or multi-process environment, and it helps ensure efficient communication and synchronization between different parts of a program.
 

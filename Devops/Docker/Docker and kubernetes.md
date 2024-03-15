@@ -10,6 +10,7 @@ Started:
 EditDate: 2024-02-22
 Relates: 
 Peer Reviewed: 0
+dg-publish:
 ---
 [[Docker InDeph.canvas|Docker]] and Kubernetes are versatile tools capable of handling both stateless and stateful applications.
 

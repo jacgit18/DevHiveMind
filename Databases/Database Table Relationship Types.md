@@ -12,7 +12,8 @@ Status: Done
 Started: 
 EditDate: 2024-02-06
 Relates: 
-Peer Reviewed: -2
+Peer Reviewed: 0
+dg-publish: true
 ---
 ![[DB UML relationship types.jpeg]]
 

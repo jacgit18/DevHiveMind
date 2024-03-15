@@ -12,7 +12,8 @@ Purpose: This documentation discusses Pre-Seed Stage of a startup.
 Status: Done
 Started: 
 EditDate: 2024-03-04
-Relates:
+Relates: 
+dg-publish:
 ---
 Joining a startup at the pre-seed stage offers a unique blend of high risk and high reward, particularly in terms of equity compensation. At this foundational phase, startups are typically fleshing out their team, seeking critical skills to complement the existing founding team’s capabilities. Here's a streamlined guide on what to expect and how to navigate equity negotiations at the pre-seed stage:
 

@@ -9,6 +9,7 @@ Started:
 EditDate: 
 Relates: 
 Peer Reviewed: 0
+dg-publish:
 ---
 > [!note] The pattern names are just visual abstraction of the pattern
 ## Sliding Window

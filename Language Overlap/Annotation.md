@@ -11,6 +11,7 @@ Started:
 EditDate: 2024-03-04
 Relates: 
 Peer Reviewed: 0
+dg-publish:
 ---
 In Java, annotations are a type of metadata that can be added to various code elements, such as classes, methods, variables, and parameters. Annotations provide additional information about the associated code elements and are denoted by the "@" symbol followed by the annotation name.
 

@@ -10,6 +10,7 @@ Started:
 EditDate: 2024-02-22
 Relates: 
 Peer Reviewed: 0
+dg-publish:
 ---
 **Webpack** is an open-source JavaScript module bundler, primarily designed for front-end assets like HTML, CSS, and images. It facilitates a modular approach in web development, handling dependencies and providing a built-in development server known as webpack dev server.
 

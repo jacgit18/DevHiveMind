@@ -8,6 +8,7 @@ Status: Done
 Started: 2023-12-12
 EditDate: 
 Relates: "[[User Stories]]"
+dg-publish:
 ---
 Crafting acceptance criteria is an iterative process that unfolds at the story's inception, matures in the middle, and gains additional insights towards completion. It is a crucial aspect written from the product perspective, defining scope and standing as one of the benchmarks for the definition of done.
 

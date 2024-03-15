@@ -9,7 +9,8 @@ Purpose: This documentation discusses Tracflo startup and the construction indus
 Status: Done
 Started: 
 EditDate: 2024-02-20
-Relates:
+Relates: 
+dg-publish:
 ---
 **Tracflo: Digitizing Construction Workflow for Efficient Project Management**
 

@@ -11,7 +11,8 @@ Purpose: This documentation discusses the flow of user stories in the context of
 Status: Done
 Started: 
 EditDate: 2024-02-20
-Relates:
+Relates: 
+dg-publish:
 ---
 ## Epic: Playing Card Game App
 

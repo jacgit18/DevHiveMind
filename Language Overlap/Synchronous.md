@@ -11,6 +11,7 @@ Started:
 EditDate: 2024-03-06
 Relates: 
 Peer Reviewed: 0
+dg-publish:
 ---
 Synchronous programming refers to the traditional way of executing code where each operation blocks the execution until it completes. In simple terms, the program waits for each task to finish before moving on to the next task. Synchronous programming is sequential and predictable.
 

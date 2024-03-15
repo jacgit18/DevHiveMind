@@ -11,6 +11,7 @@ Started:
 EditDate: 2023-11-02
 Relates: "[[Graph]]"
 Peer Reviewed: 0
+dg-publish:
 ---
 ![[Graph.gif]]
 

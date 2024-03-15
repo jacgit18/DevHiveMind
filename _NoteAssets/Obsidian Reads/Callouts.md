@@ -9,6 +9,7 @@ Status: Done
 Started: 2022-11-07
 EditDate: 
 Relates: "[[Markdown to use]]"
+dg-publish: true
 ---
 > [!bug]+
 > > sub text 2 plus make it close and open

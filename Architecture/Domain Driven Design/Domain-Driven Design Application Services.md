@@ -9,6 +9,7 @@ Started: 2023-11-26
 EditDate: 
 Relates: 
 Peer Reviewed: 0
+dg-publish:
 ---
 In the context of Domain-Driven Design (DDD) and application services, the relationships between repositories, factories, domain services, and application services contribute to building a well-structured and maintainable system. Unlike microservices, which are separate, independently deployable units of functionality, these DDD components are often organized within a monolithic application.  
   

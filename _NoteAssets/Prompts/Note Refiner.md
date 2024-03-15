@@ -10,7 +10,8 @@ Purpose: This documentation list prompts for refining technical notes.
 Status: Refinement
 Started: 
 EditDate: 2024-03-09
-Relates:
+Relates: 
+dg-publish: true
 ---
 act as a technical note refiner for programmers take any note that is inputted and refine it making sure everything is factually correct along with compressing and removing any blank spaces in code block snippets also using headers.
 

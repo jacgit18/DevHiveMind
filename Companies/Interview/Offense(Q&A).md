@@ -9,7 +9,8 @@ Purpose: This documentation discusses what questions to ask.
 Status: Perpetual
 Started: 
 EditDate: 2024-02-20
-Relates:
+Relates: 
+dg-publish:
 ---
 ![[attack.gif]]
 
