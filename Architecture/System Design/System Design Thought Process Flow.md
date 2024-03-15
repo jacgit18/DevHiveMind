@@ -66,6 +66,15 @@ Performance
 ### Overall Architecture
 - If your thinking of Architectural Styles like for example Monolithic Architecture identify the specifics around it and talk about it maybe compare in contrast it to other [[Architectural Styles]].
 
+Overall fault tolerance in system design refers to a system's ability to continue operating properly in the face of various types of failures or errors. It involves designing systems in such a way that they can gracefully handle failures, maintain availability, and prevent or minimize disruptions to the user experience. Here are some key components and strategies for achieving fault tolerance in system design:
+
+  
+The general concept of fault tolerance encompasses the idea of designing systems to continue functioning properly in the presence of faults, errors, or failures. It's a fundamental principle in engineering that applies across various domains, including hardware, software, networks, and systems architecture. Fault tolerance is not specific to any one thing; rather, it's a holistic approach to system design aimed at ensuring reliability, availability, and resilience in the face of adversity.
+
+At its core, fault tolerance acknowledges the inevitability of failures and seeks to mitigate their impact through proactive measures. Here are some key aspects of fault tolerance that apply broadly:
+
+ [[Fault Tolerance]]
+
 - Depending on the Architectural Styles you then should talk and identify major components of your system like physical or virtual servers, databases, [[Caches]],  [[Messaging systems]], [[Monitoring & Observability |monitoring/logging for metrics]], and [[Benefits of cloud |cloud infrastructure]] talking about cloud  in terms of outsourcing functionality or infrastructure using different service architecture ranging from IAAS to SAAS.
   
 - Talk about selecting components for system from different perspectives like how is the community support or technical documentation around the different technology options also cost.
@@ -103,7 +112,7 @@ Performance
 - [ ] Talk about centralized systems in comparison to decentralized systems which is mostly covered here need to research more about centralized systems 
 - [ ] monolithic architecture is an example of a centralized system. In a monolithic architecture, the entire application is built as a single, indivisible unit, making it centralized and typically deployed on a single server or a closely connected set of servers.
 - [ ] Also add stuff around security, maintainability, and user experience to cover the rest of the core concepts of system design.
-- [ ] Integrate and talk [[Fault Tolerance]]
+
 - [ ] look into talk about Load shedding and distributed Locking
 - [ ] maybe add stuff around circuit break pattern seems relevant to system design but you can say that about all design patterns but it seems like this one is used heavily in comparison to others patterns or one of the heavily used patterns need to verify this
 - [ ] Look into https://blog.quastor.org/p/rate-limiting-stripe
