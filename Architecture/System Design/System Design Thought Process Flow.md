@@ -56,13 +56,14 @@ For more info read
 [[When to use Domain-Driven Design]] still refining domain driven design documentation depending on domain complexity determines weather it is necessary to use meaning the more simpler the domain is the less need for domain driven design in my opinion.
 
 ### Overall Architecture
-- If your thinking of Architectural Styles like for example Monolithic Architecture identify the specifics around it and talk about it maybe compare in contrast it to other [[Impact of Architectural Styles |Architectural Styles]].
+In a system design choosing the right [[Impact of Architectural Styles |Architectural Styles]] is important think about what is needed and purpose of the style. 
 
-- [[Fault Tolerance]] refers to the system's resilience against failures, errors, or faults, ensuring uninterrupted operation and maintaining user experience. It encompasses proactive measures to handle failures gracefully and sustain availability. This principle applies universally across hardware, software, networks, and systems architecture.At its essence, fault tolerance anticipates failures as inevitable and seeks to minimize their impact through proactive strategies.
+- [[Fault Tolerance]] refers to the system's resilience against failures, errors, or faults, ensuring uninterrupted operation and maintaining user experience. It encompasses proactive measures to handle failures gracefully and sustain availability. This principle applies universally across hardware, software, networks, and systems architecture.At its essence, fault tolerance anticipates failures as inevitable and seeks to minimize their impact through proactive strategies. intergrate a talk about between each component 
 
 
 
-- Depending on the Architectural Styles you then should talk and identify major components of your system like physical or virtual servers, databases,
+- Depending on the Architectural Styles you then should talk and identify major components of your system like 
+- physical or virtual servers, 
 - [[Messaging systems]]
 - [[Caches]], 
 - 
@@ -73,8 +74,7 @@ For more info read
 - You can also talk tech stack compatibility in the context of planing out a [[Migration Plan]] like sometimes the technologies you start out with don't make sense or you want to manage cost of your system.
 
 - You can maybe talk about [[File System Storage]] services like Amazon S3.
-  
-- Networking components such as routers, [[Load Balancer]], firewalls, and Content Delivery Networks ([[Content Delivery Network |CDN]]) play a crucial role in ensuring that data is transmitted efficiently between clients and servers. Load balancers distribute incoming traffic to multiple servers for load distribution and redundancy.
+
   
 - Security measures like firewalls, intrusion detection systems, encryption, and access control mechanisms are part of the Infrastructure layer to protect the application from various security threats, including unauthorized access, data breaches, and DDoS attacks.
   
@@ -86,6 +86,8 @@ For more info read
 - Maybe talk [[Microservices]](might not be relevant since small scope) or leverage knowledge of [[12 Factor App Docker.canvas|12 Factor App Docker]] which has some overlap with everything mentioned, whatever comes to mind also [[Eureka Service]] for microservices.
 - Making [[Event-driven Architectural Pattern Decisions]].
 - Maybe talk testing architecture or [[Testing Hierarchy]] maybe using [[Test Driven Development]] or talk about test automation, [[Acceptance Testing]], [[Pre Acceptance Testing]],[[Type of Testing Techniques]]
+
+- Networking components such as routers, [[Load Balancer]], firewalls, and Content Delivery Networks ([[Content Delivery Network |CDN]]) play a crucial role in ensuring that data is transmitted efficiently between clients and servers. Load balancers distribute incoming traffic to multiple servers for load distribution and redundancy.
 
 ### Scalability and Performance
   - Distribute traffic across server pools for different types of traffic. talk about different trade-offs.
