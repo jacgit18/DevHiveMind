@@ -12,7 +12,7 @@ Started:
 EditDate: 
 Relates: 
 Peer Reviewed: 0
-dg-publish: false
+dg-publish: true
 ---
 ![[MergeSort.gif]]
 
