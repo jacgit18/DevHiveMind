@@ -3104,6 +3104,11 @@ var openFileInNewTab = async (file, workspace) => {
   await leaf.openFile(file);
   return leaf;
 };
+var pinLeaf = (leaf) => {
+  leaf.setPinned(true);
+  console.log(leaf);
+  showNotice(`auto-pinned "${leaf.getDisplayText()}"`);
+};
 
 // src/settings.ts
 var DEFAULT_SETTINGS = {
@@ -13670,14 +13675,16 @@ var removeStatus = (id2) => {
 };
 
 // src/session.ts
-var startSession = async (editor, file, plugin) => {
+var startSession = async (view, file, plugin) => {
   const settings = await getSettings(plugin);
+  const editor = view.editor;
   const id2 = initDocument(editor.getValue(), settings);
   syncedDocs[file.path] = id2;
   notifyOnCollaboratorsChanged(id2);
   addExtensionToEditor(id2, settings, editor);
   navigator.clipboard.writeText(settings.basePath + id2);
   showNotice("Session started for " + file.name + ". Link copied to Clipboard.");
+  pinLeaf(view.leaf);
   addStatus(file, plugin, settings);
 };
 var joinSession = async (url, plugin) => {
@@ -13712,6 +13719,7 @@ var joinSession = async (url, plugin) => {
     addExtensionToEditor(fileData.id, settings, editor);
     addStatus(fileData.file, plugin, settings);
     showNotice("Joined Session in " + fileData.file.name + ".");
+    pinLeaf(leaf);
     const owner = syncObj.doc.getText("owner");
     syncObj.provider.awareness.on("update", (msg) => {
       var _a;
@@ -13767,8 +13775,11 @@ var PeerDraftPlugin = class extends import_obsidian6.Plugin {
     plugin.addCommand({
       id: "start-session-with-active-document",
       name: "Start shared session",
-      editorCheckCallback: (checking, editor, ctx) => {
-        const file = ctx.file;
+      checkCallback(checking) {
+        const view = plugin.app.workspace.getActiveViewOfType(import_obsidian6.MarkdownView);
+        if (!view)
+          return false;
+        const file = view.file;
         if (!file)
           return false;
         const sharedAlready = syncedDocs[file.path];
@@ -13776,7 +13787,7 @@ var PeerDraftPlugin = class extends import_obsidian6.Plugin {
           return false;
         if (checking)
           return true;
-        startSession(editor, file, plugin);
+        startSession(view, file, plugin);
       }
     });
     plugin.addCommand({
