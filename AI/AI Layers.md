@@ -13,6 +13,7 @@ Started:
 EditDate: 2024-02-20
 Relates: 
 Peer Reviewed: 0
+dg-publish: true
 ---
 ![[AI vs Machine vs Deep.png]]
 
