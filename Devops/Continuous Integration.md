@@ -28,6 +28,8 @@ The line between CI and CD can blur. For instance, tests ensuring the main branc
 
 The terms **CI** and **CI/CD** are often used interchangeably, acknowledging the interconnected nature of these practices.
 
+
+
 #### **Types of CI Setups**
 
 To meet CI/CD requirements, a dedicated server for running tasks minimizes unpredictability risks. Two options exist: hosting a self-owned server or utilizing a cloud service.

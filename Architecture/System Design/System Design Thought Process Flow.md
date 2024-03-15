@@ -53,7 +53,16 @@ For more info read
   - What type of [[Schema Design]] makes sense.
   - You can also talk about [[Master-Slave Database Architecture]]
   - Talk about [[Data Retention Target]]
- 
+
+1. **Database Monitoring and Alerting:**
+    
+    - Deploy database monitoring tools to track performance metrics, identify bottlenecks, and proactively address issues before they impact users.
+    - Configure alerts for critical events such as high CPU utilization, disk space shortage, or database connectivity issues to enable prompt troubleshooting and resolution.
+2. **Database Versioning and Change Management:**
+    
+    - Implement version control and change management processes to track database schema changes and ensure consistency across environments.
+    - Use database migration tools and scripts to automate schema changes and ensure smooth deployments without impacting users.
+
 
 ### Domain Driven Design(Possible Pathway)
 [[When to use Domain-Driven Design]] still refining domain driven design documentation depending on domain complexity determines weather it is necessary to use meaning the more simpler the domain is the less need for domain driven design in my opinion.
