@@ -2,14 +2,18 @@
 tags:
   - services
   - data
+  - cloud
+  - OS
+  - performance
 author:
   - jacgit18
   - chatgpt
+Comments: Placeholder comment any thing else you want to mention about the document.
 Purpose: This documentation discusses file system storage which is a service not a database per say from what I gather. It also talks about when to consider using one in your system architecture.
 Status: Done
 Started: 
 EditDate: 2024-03-06
-Relates: 
+Relates: "[[AWS Cloud Services]]"
 Peer Reviewed: 0
 dg-publish:
 ---
