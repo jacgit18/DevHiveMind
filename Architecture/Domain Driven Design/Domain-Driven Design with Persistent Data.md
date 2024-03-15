@@ -10,6 +10,7 @@ Started: 2023-11-26
 EditDate: 
 Relates: 
 Peer Reviewed: 0
+dg-publish:
 ---
 **Domain-Driven Design (DDD):**  
 - DDD is a software design approach that focuses on understanding and modeling the problem domain as a set of interconnected and collaborating concepts, known as the "domain model."  

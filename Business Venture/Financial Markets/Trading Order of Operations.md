@@ -10,7 +10,8 @@ Purpose: This documentation discusses the order to process to do when buying sto
 Status: Done
 Started: 
 EditDate: 2024-03-04
-Relates:
+Relates: 
+dg-publish:
 ---
 1. **Annual Reports:**
    - **Action:** Begin by thoroughly examining annual reports for comprehensive insights into a company's financial health and future plans.

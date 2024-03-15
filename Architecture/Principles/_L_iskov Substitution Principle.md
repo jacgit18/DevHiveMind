@@ -13,6 +13,7 @@ Started:
 EditDate: 2024-03-06
 Relates: 
 Peer Reviewed: 0
+dg-publish:
 ---
 A super class can be replaced by any of it’s inheriting sub classes at any parts of the system without any change in the code.
 

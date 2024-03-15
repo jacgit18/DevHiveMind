@@ -10,7 +10,8 @@ Purpose: This documentation discusses some basic things about the stock market.
 Status: Done
 Started: 
 EditDate: 2024-03-04
-Relates:
+Relates: 
+dg-publish:
 ---
 #### Stock Market and Company Future
 - The stock market reflects the future of companies, making it an avenue for investing in their growth and improvement.

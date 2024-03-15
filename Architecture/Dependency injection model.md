@@ -10,6 +10,7 @@ Started:
 EditDate: 2024-03-06
 Relates: 
 Peer Reviewed: 0
+dg-publish:
 ---
 Dependency injection (DI) is a design pattern commonly used in software development to manage the dependencies between components of a system. DI helps improve the modularity, testability, and maintainability of software by decoupling components and making them more independent.
 

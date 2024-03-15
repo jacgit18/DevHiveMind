@@ -9,6 +9,7 @@ Started:
 EditDate: 
 Relates: 
 Peer Reviewed: 0
+dg-publish: false
 ---
 ## Before Creating Notes and Canvases
 First consider the current folder structure and existing notes/canvases. 

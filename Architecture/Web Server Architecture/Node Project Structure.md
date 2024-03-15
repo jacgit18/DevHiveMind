@@ -11,6 +11,7 @@ Started: 2023-11-23
 EditDate: 2024-03-07
 Relates: "[[Project Structure]]"
 Peer Reviewed: 0
+dg-publish:
 ---
 The placement of your utility functions folder in a Node.js project structure depends on your project's specific requirements and your preferred organization. Both approaches have their advantages and can be valid, so you should choose the one that best suits your project's needs and maintainability.  
   

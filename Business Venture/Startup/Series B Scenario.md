@@ -12,7 +12,8 @@ Purpose: This documentation discusses Series B Stage of a startup.
 Status: Done
 Started: 
 EditDate: 2024-03-04
-Relates:
+Relates: 
+dg-publish:
 ---
 By the time a startup is ready for Series B funding, it has successfully validated its go-to-market strategy during the Series A stage and is now poised for aggressive scaling. This phase is about expanding market share, outpacing competitors, and improving margins through increased scale, even though achieving profitability might not be the immediate goal. Series B funding, typically ranging from $10M to $20M, supports these objectives. Here’s what equity compensation looks like during this pivotal stage:
 

@@ -13,7 +13,8 @@ Purpose: This documentation discusses types of bankruptcy.
 Status: Done
 Started: 
 EditDate: 2024-03-04
-Relates:
+Relates: 
+dg-publish:
 ---
 When a company is in Chapter 11 bankruptcy, it signifies financial distress, and the possibility of liquidation or Chapter 7 bankruptcy can be concerning for investors. Chapter 7 involves the sale of a company's assets to repay creditors, often leaving shareholders with little or nothing. Therefore, Chapter 11 with a focus on restructuring is generally seen as a more favorable outcome for investors.
 

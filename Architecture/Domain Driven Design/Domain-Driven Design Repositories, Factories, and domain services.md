@@ -10,6 +10,7 @@ Started: 2023-11-26
 EditDate: 
 Relates: 
 Peer Reviewed: 0
+dg-publish:
 ---
 In Domain-Driven Design (DDD), various building blocks, such as repositories, factories, and domain services, play distinct roles in managing and interacting with entities, value objects, domain events, and aggregates. Let's explore their relationships:  
   

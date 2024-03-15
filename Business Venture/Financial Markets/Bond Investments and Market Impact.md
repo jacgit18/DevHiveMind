@@ -12,7 +12,8 @@ Purpose: This documentation discusses bond investments and there affect on the s
 Status: Done
 Started: 
 EditDate: 2024-03-04
-Relates:
+Relates: 
+dg-publish:
 ---
 1. **High-Yield Bonds (Junk Bonds):**
    - **Concern:** If a company issues high-yield or junk bonds, it indicates Wall Street's perception that the company may struggle to repay debts.

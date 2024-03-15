@@ -14,6 +14,7 @@ Started:
 EditDate: 2024-03-06
 Relates: 
 Peer Reviewed: 0
+dg-publish:
 ---
 Single Responsibility Principle is another SOLID design principle were you should have functions, classes, or objects should have one and only one responsibility.
 

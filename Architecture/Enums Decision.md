@@ -12,6 +12,7 @@ Started:
 EditDate: 2024-03-07
 Relates: 
 Peer Reviewed: 0
+dg-publish:
 ---
 Enums are commonly used in various scenarios and system design decisions where a fixed set of constants or options need to be represented. Here are some examples:
 

@@ -11,6 +11,7 @@ Started:
 EditDate: 2024-03-06
 Relates: 
 Peer Reviewed: 0
+dg-publish:
 ---
 A file is an unstructured collection of records, and file systems typically support two basic formats: Block Storage, organizing data in blocks on disk, commonly used in personal computers; and Object Storage, organizing data into containers of flexible sizes, prevalent in modern cloud systems like Amazon S3, designed for scalability, performance, and cost-effectiveness.
 

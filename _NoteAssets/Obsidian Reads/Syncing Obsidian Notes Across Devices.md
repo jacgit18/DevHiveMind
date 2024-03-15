@@ -10,7 +10,8 @@ Purpose: This documentation discusses using Syncthing to sync notes in  Obsidian
 Status: Done
 Started: 2022-12-01
 EditDate: 2024-02-03
-Relates:
+Relates: 
+dg-publish: true
 ---
 When using Syncthing to sync your Obsidian notes across devices, there are a few things you can avoid syncing to minimize the chances of sync conflicts:
 

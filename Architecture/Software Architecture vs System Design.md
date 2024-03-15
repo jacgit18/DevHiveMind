@@ -10,6 +10,7 @@ Started: 2023-11-26
 EditDate: 2024-03-07
 Relates: 
 Peer Reviewed: 0
+dg-publish:
 ---
 Architecture and system design are two related but distinct concepts in the field of software engineering and computer science.
 

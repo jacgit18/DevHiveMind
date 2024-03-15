@@ -13,6 +13,7 @@ Started:
 EditDate: 2024-02-25
 Relates: "[[Dynamic Scaling]]"
 Peer Reviewed: 0
+dg-publish:
 ---
 ![[System Scaling.png]]
 # Horizontal scaling  
