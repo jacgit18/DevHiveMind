@@ -52,14 +52,6 @@ For more info read
   - More things to think about when deciding between [[Choosing Database]] 
   - What type of [[Schema Design]] makes sense.
 
-Performance
-  - you can also talk about [[Database Sharding]].
-  
-  - You can also talk about [[Master-Slave Database Architecture]] in terms of replication and high availability
-  - Talk about 
-    - [[Data Retention Target]]
-    - [[Data Flow]]
-
 ### Domain Driven Design(Possible Pathway)
 [[When to use Domain-Driven Design]] still refining domain driven design documentation depending on domain complexity determines weather it is necessary to use meaning the more simpler the domain is the less need for domain driven design in my opinion.
 
@@ -100,6 +92,13 @@ At its core, fault tolerance acknowledges the inevitability of failures and seek
   - Distribute traffic across server pools for different types of traffic. talk about different trade-offs.
   
   - Implement local cache for improved response time.
+
+  - you can also talk about [[Database Sharding]].
+  
+  - You can also talk about [[Master-Slave Database Architecture]] in terms of replication and high availability
+  - Talk about 
+    - [[Data Retention Target]]
+    - [[Data Flow]]
 
   - You can talk about [[Vertical vs Horizontal Scaling]] in the context of database servers and instances of your application along with any microservices if you include that in your codebase architecture. Side note scaling can fall under Admin functionality weather that is resource scaling in a cloud environment or some custom built solution like creating an admin dashboard for internal use by developers with a frontend that includes different [[XII Admin processes]].
   
