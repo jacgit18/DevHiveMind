@@ -7,7 +7,8 @@ Purpose: This documentation discusses fiscal year and how it may vary by company
 Status: Done
 Started: 2023-12-12
 EditDate: 
-Relates:
+Relates: 
+dg-publish:
 ---
 A non-calendar fiscal year is basically when you go against the standard fiscal year start and end, which runs from January 1st to December 31st. Instead, a company like for example TD Bank may choose to use a fiscal year that aligns with its business cycle or strategic planning needs. The fiscal year is a 12-month period used by organizations for financial reporting and budgeting.  
   

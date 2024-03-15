@@ -10,7 +10,8 @@ Purpose: This documentation discusses type of developers you can run into.
 Status: Done
 Started: 
 EditDate: 2024-02-20
-Relates:
+Relates: 
+dg-publish:
 ---
 **Avoiding the Pitfalls: Programmer Archetypes to Steer Clear Of**
 

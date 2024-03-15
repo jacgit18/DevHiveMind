@@ -11,6 +11,7 @@ Status: Done
 Started: 
 EditDate: 2024-02-20
 Relates: "[[Decide between Salary and Equity]]"
+dg-publish:
 ---
 Navigating equity and stocks in startups requires a clear understanding of the terms involved. Here's a refined note to help clarify these concepts:
 

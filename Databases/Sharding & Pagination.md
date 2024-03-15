@@ -16,6 +16,7 @@ Started:
 EditDate: 
 Relates: "[[Database Sharding]]"
 Peer Reviewed: 0
+dg-publish:
 ---
 The relationship between sharding and pagination is relevant when dealing with large datasets in distributed databases. Sharding is a technique that involves dividing a large database into smaller, more manageable parts called shards, distributed across multiple servers. Pagination, on the other hand, is the practice of dividing query results into smaller, discrete pages for easier navigation and presentation.
 

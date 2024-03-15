@@ -13,6 +13,7 @@ Started:
 EditDate: 
 Relates: 
 Peer Reviewed: 0
+dg-publish:
 ---
 Password hashing on the database side is a crucial security practice to protect user passwords from unauthorized access, even if the database is compromised. Here's an explanation of the key concepts involved:
 

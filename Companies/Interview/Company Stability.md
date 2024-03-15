@@ -9,6 +9,7 @@ Status: Done
 Started: 
 EditDate: 2024-02-20
 Relates: "[[Negotiation]]"
+dg-publish:
 ---
 **Considering Company Stability and Compensation Bands:**
 

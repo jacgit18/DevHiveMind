@@ -7,7 +7,8 @@ Purpose: This documentation discusses requirement governance.
 Status: Done
 Started: 
 EditDate: 2024-02-20
-Relates:
+Relates: 
+dg-publish:
 ---
 ## **Approaches Comparison: Traditional vs. Adaptive**
 

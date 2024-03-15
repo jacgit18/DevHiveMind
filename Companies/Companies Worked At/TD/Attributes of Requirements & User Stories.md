@@ -8,6 +8,7 @@ Status: Done
 Started: 2023-12-12
 EditDate: 
 Relates: "[[User Stories]]"
+dg-publish:
 ---
 While stories and requirements share some attributes, they inherently differ. Specifications for implementation are often defined at the user story level, emphasizing the need for a high-level and adaptable description that prioritizes the customer's perspective. Notably, these definitions may evolve during discovery.
 

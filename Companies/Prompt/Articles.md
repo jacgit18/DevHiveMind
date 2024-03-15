@@ -10,7 +10,8 @@ Purpose: This is a prompt for writing tech articles and social media post
 Status: Perpetual
 Started: 
 EditDate: 2024-02-22
-Relates:
+Relates: 
+dg-publish: true
 ---
 ## Tech Writer
   

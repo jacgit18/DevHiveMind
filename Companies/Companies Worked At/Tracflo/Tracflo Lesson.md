@@ -10,6 +10,7 @@ Status: Done
 Started: 
 EditDate: 2024-02-20
 Relates: "[[Experience Script]]"
+dg-publish:
 ---
 ##### Working at a startup with a relatively new codebase involves:
 

@@ -8,6 +8,7 @@ Status: Done
 Started: 
 EditDate: 2024-02-20
 Relates: "[[Business Requirements Life cycle]]"
+dg-publish:
 ---
 Ensure ongoing alignment between solutions and needs by incorporating regular checks and communication strategies:
 

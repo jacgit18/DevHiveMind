@@ -12,6 +12,7 @@ Started:
 EditDate: 2024-02-20
 Relates: "[[Economic Trends to Track]]"
 Peer Reviewed: 0
+dg-publish:
 ---
 ![[Tech Layoffs.png]]
 

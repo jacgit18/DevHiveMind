@@ -11,6 +11,7 @@ Started:
 EditDate: 
 Relates: 
 Peer Reviewed: 0
+dg-publish:
 ---
 In databases, there are various types of constraints:
 

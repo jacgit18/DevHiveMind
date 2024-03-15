@@ -13,6 +13,7 @@ Started:
 EditDate: 
 Relates: 
 Peer Reviewed: 0
+dg-publish:
 ---
 When you run a migration using Knex.js, the library typically checks the current state of the database against the migration files to determine whether any changes need to be applied.  
 
