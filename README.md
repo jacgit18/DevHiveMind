@@ -25,7 +25,7 @@ I encourage contributions from the community. Here are some best practices for m
 
 - **Updating Existing Notes**: Contributors can update existing notes to keep them current by adding yourself as a author you can use github username and update the "EditDate" property if making changes to existing notes.
 
-- **Creating New Notes**: When creating new notes, use Markdown templates to maintain consistency in formatting specifically [[_Regular  Note]]template. Obsidian can help with this using custom templates by pressing `alt + n`. You can create your own templates to suit specific note types or add templates that you found effective.
+- **Creating New Notes**: When creating new notes, use Markdown templates to maintain consistency in formatting specifically [[_Regular  Note]]template. Obsidian can help with this using custom templates by pressing `alt + n`. You can create your own templates to suit specific note types or add templates that you found effective. also follow this guideline around [[Adding Content]].
 
 - **Sharing Personal Experience**: I also believe in the value of personal experiences. Contributors are encouraged to share their real-world experiences in companies and teams. These stories can provide valuable insights, lessons learned, and tips for navigating the industry.
 
@@ -76,7 +76,7 @@ When managing intricate documentation in Enterprise-level companies, using tools
 ## Steps to Contribute
 **Follow these steps to contribute to a project:
 
-1. Fork the original repository to your GitHub account.
+1. Fork the original repository to your GitHub account When forking repo make sure to select option for multiple branches so you can get peer review branch in fork.
 2. Clone your fork to your local machine using Git.
 3. Create a new branch to work on your changes.
 4. Make your desired changes, commit them to your branch, and push the branch to your fork on GitHub.

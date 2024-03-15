@@ -15,6 +15,8 @@ When terminated from a job, be sure to request a formal letter explaining the re
 
 Always think and ask what is your out in business deal or situations
 
+> Ensure you send recap emails to maintain a clear record of all interactions and understandings between you and your boss. This practice creates a documented trail, protecting you by ensuring both parties are aware and acknowledge the shared information and expectations.
+
 
 When beginning a new role, there are several important steps to consider:
 
