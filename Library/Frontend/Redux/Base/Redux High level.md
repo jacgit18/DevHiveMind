@@ -13,6 +13,7 @@ Started:
 EditDate: 2024-02-07
 Relates: "[[StateChange(view)]]"
 Peer Reviewed: 0
+dg-publish:
 ---
 ![[Redux state flow.gif]]
 

@@ -11,6 +11,7 @@ Started:
 EditDate: 2024-03-06
 Relates: "[[Coupling vs Cohesion]]"
 Peer Reviewed: 0
+dg-publish:
 ---
 Cohesion measures the degree of intra-dependability within elements of a module, indicating how closely related and focused the responsibilities of a module are. The higher the cohesion, the better the program design. There are seven types of cohesion, listed from best to worst:
 

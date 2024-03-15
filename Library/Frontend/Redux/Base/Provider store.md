@@ -15,6 +15,7 @@ Started:
 EditDate: 2024-02-14
 Relates: 
 Peer Reviewed: 0
+dg-publish:
 ---
 The `Provider` in Redux facilitates access to the state by wrapping the app, and it accomplishes this by receiving the Redux store as a prop. Connecting Redux to React is achieved through the `Provider`, streamlining state management.
 

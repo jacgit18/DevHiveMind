@@ -11,6 +11,7 @@ Started: 2023-11-23
 EditDate: 2023-12-04
 Relates: 
 Peer Reviewed: 0
+dg-publish: true
 ---
 ESLint is a widely used static code analysis tool that helps developers identify and fix problems in their JavaScript and TypeScript code. While ESLint itself is not a security tool per se, it plays a crucial role in enforcing coding standards, best practices, and catching potential vulnerabilities early in the development process.  
 

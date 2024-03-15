@@ -10,6 +10,7 @@ Started:
 EditDate: 2024-02-17
 Relates: "[[Fundamentals of Object-Oriented Concepts#Composition over Inheritance Composition Example Composition |Composition]]"
 Peer Reviewed: 0
+dg-publish:
 ---
 Decorators or wrappers, often implemented using closure and composition, are a mechanism for encapsulating and enhancing functions in a software context. Essentially, decorators "decorate" or wrap one piece of code with another, a concept synonymous with functional composition or higher-order functions.
 
