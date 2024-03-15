@@ -14,6 +14,7 @@ Started: 2023-11-21
 EditDate: 
 Relates: 
 Peer Reviewed: 0
+dg-publish: true
 ---
 Unsafe functions in JavaScript can lead to security vulnerabilities and unexpected behavior. Here are some examples of potentially unsafe functions and practices:
 
