@@ -106,7 +106,6 @@ For more info read
 - [ ] Talk [[🌐 Internet Communication Process]] in terms of what you would use
 - [ ] [[System Scalability Strategies]]
 - [ ] [[Network Infrastructure to use]]
-- [ ] [[Potential Order to talk in]]
 - [ ] [[System Design interview Scope]]
 
 
