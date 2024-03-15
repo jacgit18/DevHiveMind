@@ -49,9 +49,13 @@ For more info read
 ### Data Design & Database Architecture 
   - Create an Entity Relationship Diagram (ERD) to define relationships.
   - Consider SQL for structured data and NoSQL for unstructured data.
-  - More things to think about when deciding between [[Choosing Database]] you can also talk about [[Database Sharding]].
+  - More things to think about when deciding between [[Choosing Database]] 
   - What type of [[Schema Design]] makes sense.
-  - You can also talk about [[Master-Slave Database Architecture]]
+
+Performance
+  - you can also talk about [[Database Sharding]].
+  
+  - You can also talk about [[Master-Slave Database Architecture]] in terms of replication and high availability
   - Talk about 
     - [[Data Retention Target]]
     - [[Data Flow]]
