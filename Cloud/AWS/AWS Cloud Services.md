@@ -8,6 +8,7 @@ author:
   - chatgpt
 Purpose: This documentation discusses AWS cloud services.
 Status: Refinement
+Popularity: High
 Started: 
 EditDate: 2024-02-04
 Relates: 

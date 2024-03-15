@@ -11,6 +11,7 @@ Started: 2023-11-01
 EditDate: 
 Relates: 
 Peer Reviewed: 0
+dg-publish:
 ---
 In programming, "iterating" and "traversing" are often used interchangeably to describe the process of accessing each element or item in a data structure, such as an array, list, or collection, one by one. However, there can be a subtle difference in their usage based on the context:
 

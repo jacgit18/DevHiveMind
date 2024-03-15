@@ -13,6 +13,7 @@ Started:
 EditDate: 2024-02-27
 Relates: "[[Iterating vs Traversing]]"
 Peer Reviewed: 0
+dg-publish:
 ---
 ![[many Ways.gif]]
 

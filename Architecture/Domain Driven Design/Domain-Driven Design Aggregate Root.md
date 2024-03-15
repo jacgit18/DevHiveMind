@@ -10,6 +10,7 @@ Started: 2023-11-26
 EditDate: 
 Relates: 
 Peer Reviewed: 0
+dg-publish:
 ---
 In the context of Domain-Driven Design (DDD), an Aggregate Root is a concept used to define a boundary around a cluster of related entities and value objects. The primary purpose of an Aggregate Root is to ensure consistency and transactional integrity within its boundary. One important aspect of Aggregates is how they handle deletions.  
   

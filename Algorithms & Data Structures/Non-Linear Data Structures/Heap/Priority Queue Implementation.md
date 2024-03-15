@@ -11,6 +11,7 @@ Started:
 EditDate: 
 Relates: 
 Peer Reviewed: 0
+dg-publish:
 ---
 A priority queue and a heap are closely related concepts, but they serve different purposes and have different implementations.
 

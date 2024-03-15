@@ -10,6 +10,7 @@ Started: 2024-03-03
 EditDate: 
 Relates: 
 Peer Reviewed: 0
+dg-publish:
 ---
 Being "in place" means that an algorithm or operation is performed directly on the input data structure without requiring additional memory or a copy of the data. In the context of array manipulation, performing operations in place means modifying the given array without creating a new array to store the results.  
   

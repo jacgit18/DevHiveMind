@@ -11,6 +11,7 @@ Started: 2024-03-05
 EditDate: 
 Relates: 
 Peer Reviewed: 0
+dg-publish:
 ---
 Both dummy nodes and the fast-slow pointer pattern are useful techniques, but their applicability depends on the specific problem you're trying to solve in a linked list.
 
