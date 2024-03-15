@@ -1,14 +1,20 @@
 ---
 tags:
   - architecturalPatterns
+  - monolithic
+  - microservices
+  - REST
+  - SOA
+  - eventDriven
 author:
   - jacgit18
   - chatgpt
+Comments: Placeholder comment any thing else you want to mention about the document.
 Purpose: This documentation discusses Impact of Architectural Styles.
 Status: Done
 Started: 
 EditDate: 2024-03-06
-Relates: "[[Architectural Styles]]"
+Relates: 
 Peer Reviewed: 0
 dg-publish:
 ---
@@ -17,44 +23,44 @@ When it comes to architectural styles they can man have a major effect on the co
 The chosen architecture significantly influences how different components interact, scale, and maintainability. Let's explore how these architectural styles affect key components:  
   
 1. **Monolithic Architecture:**  
-- **Components:**  
-- In a monolithic architecture, all components (e.g., user interface, business logic, and data access) are tightly integrated into a single, cohesive unit.  
-- **Impact:**  
-- Simplifies development and deployment but can lead to challenges in scalability and maintainability as the application grows.  
-- Scaling typically involves replicating the entire monolith.  
+   - **Components:**  
+    - In a monolithic architecture, all components (e.g., user interface, business logic, and data access) are tightly integrated into a single, unified codebase for the entire application.  
+   - **Impact:**  
+    - Simplifies development and deployment but can lead to challenges in scalability and maintainability as the application grows.  
+    - Scaling typically involves replicating the entire monolith.  
   
 2. **Microservices Architecture:**  
-- **Components:**  
-- Decomposes the system into independently deployable and scalable services, each responsible for specific business capabilities.  
-- **Impact:**  
-- Enhances scalability, as individual services can scale independently.  
-- Facilitates independent development and deployment of services, promoting agility.  
-- Requires robust service communication mechanisms, often relying on APIs and message queues.  
+	- **Components:**  
+		- Decomposes the system into independently deployable and scalable services, each responsible for specific business capabilities.  
+	- **Impact:**  
+		- Enhances scalability, as individual services can scale independently.  
+		- Facilitates independent development and deployment of services, promoting agility.  
+		- Requires robust service communication mechanisms, often relying on APIs and message queues.  
   
 3. **Service-Oriented Architecture (SOA):**  
-- **Components:**  
-- Similar to microservices but may have larger, more coarse-grained services that communicate through standardized protocols.  
-- **Impact:**  
-- Promotes service reusability and interoperability across different systems.  
-- Centralized service orchestration may be used to coordinate interactions between services.  
+	- **Components:**  
+		- Similar to microservices but may have larger, more coarse-grained services that communicate through standardized protocols.  
+	- **Impact:**  
+		- Promotes service reusability and interoperability across different systems.  
+		- Centralized service orchestration may be used to coordinate interactions between services.  
   
 4. **Event-Driven Architecture (EDA):**  
-- **Components:**  
-- Components communicate through events and event handlers.  
-- **Impact:**  
-- Enables loosely coupled components, making it easier to adapt and extend the system.  
-- Supports real-time processing and responsiveness.  
+	- **Components:**  
+		- Components communicate through events and event handlers.  
+	- **Impact:**  
+		- Enables loosely coupled components, making it easier to adapt and extend the system.  
+		- Supports real-time processing and responsiveness.  
   
 5. **Serverless Architecture:**  
-- **Components:**  
-- Components are implemented as functions that are executed in response to events or triggers.  
-- **Impact:**  
-- Abstracts away infrastructure management, allowing developers to focus on code.  
-- Scales automatically based on demand.  
+	- **Components:**  
+		- Components are implemented as functions that are executed in response to events or triggers.  
+	- **Impact:**  
+		- Abstracts away infrastructure management, allowing developers to focus on code.  
+		- Scales automatically based on demand.  
   
 6. **Layered Architecture:**  
-- **Components:**  
-- Divides the system into logical layers (presentation, business logic, data access).  
+	- **Components:**  
+		- Divides the system into logical layers (presentation, business logic, data access).  
 - **Impact:**  
 - Separation of concerns simplifies maintenance and facilitates modular development.  
 - Each layer can be independently replaced or upgraded.  
