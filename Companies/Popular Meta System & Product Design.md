@@ -21,3 +21,9 @@ dg-publish: true
 - How would you design a distributed Botnet?  
 - How would you design a system that can handle millions of card transactions per hour?  
 - How would you design security for Facebook's corporate network from scratch (Security team interview)?
+
+
+
+
+#todo/Personal/High/Dev 
+- [ ] Read for Meta interview https://blog.quastor.org/p/architecture-facebooks-distributed-message-queue

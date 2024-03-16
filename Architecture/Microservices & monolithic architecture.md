@@ -109,6 +109,7 @@ package.json # Node.js package file
 index.js # Entry point for the API  
 ```  
 
+#### Check out & maybe integrate
 #todo/Personal/Low/Dev 
 - [ ] Read https://newsletter.techworld-with-milan.com/p/why-you-should-build-a-modular-monolith
 

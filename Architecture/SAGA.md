@@ -18,8 +18,11 @@ dg-publish:
 ---
 SAGA emerges as a robust solution for maintaining data consistency in distributed architectures without strictly adhering to ACID principles. Operating by orchestrating multiple compensatory transactions, SAGA introduces rollback opportunities to ensure consistent and reliable outcomes.
 
-#todo/Personal/Low/Dev 
-- [ ] Read 
+#### Check out & maybe integrate
+#todo/Low/Dev 
+- [ ] https://medium.com/javarevisited/what-is-saga-pattern-in-microservice-architecture-which-problem-does-it-solve-de45d7d01d2b
+- [ ] https://medium.com/design-microservices-architecture-with-patterns/saga-pattern-for-microservices-distributed-transactions-7e95d0613345
+- [ ] https://www.java67.com/2022/12/saga-microservice-design-pattern-in-java.html
 
 **Two Approaches to Implementing SAGA:**
 
