@@ -6,7 +6,7 @@ Purpose: This documentation discusses
 Status: Done
 Started: 2024-03-16
 EditDate: 
-Relates: 
+Relates: "[[Load Shedding Implementation]]"
 Peer Reviewed: 0
 dg-publish:
 ---
