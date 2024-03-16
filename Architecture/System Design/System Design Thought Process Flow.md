@@ -73,17 +73,22 @@ Depending on the Architectural Styles you then should talk and identify major co
 
 When it comes to cloud services like AWS there are a broad range of services like include for [[Messaging systems]], [[Caches]] which if you implement locally you can improve response time, and [[Monitoring & Observability |monitoring/logging for metrics]]. You have things like Amazon MQ, Amazon ElastiCache, and Amazon CloudWatch. Alternatively if you don't want cloud solutions you can use things like [[Apache Kafka]], Redis for caching, or something like Prometheus. You also have services for things like static [[File System Storage]] services like Amazon S3 which can be used with a [[Content Delivery Network |CDN]] improving traffic and fault tolerance. 
 
-When it comes to all these components you also want keep [[Data Flow]] in mind as well like all the different sources of data, the processing and transformation, storage, transportation and communication. A  
+When it comes to all these components you also want keep [[Data Flow]] in mind as well like all the different sources of data, the processing and transformation, storage, transportation and communication. Along with things like versioning, change management, and monitoring.  
 
 There are other things like Networking components such as routers like [[Reverse proxy vs API gateway vs load balancer]].
 
 
 ##### Testing
+#todo/Personal/High/Dev 
+- [ ] update testing portion
+
 Talk testing architecture or [[Testing Hierarchy]] maybe using [[Test Driven Development]] or talk about test automation, [[Acceptance Testing]], [[Pre Acceptance Testing]], or [[Type of Testing Techniques]]
 
 ##### Deployment
+#todo/Personal/High/Dev 
+- [ ] update devops portion
 
-- Maybe [[Continuous Integration |CI/CD]] which relates to [[V Build, release, run |12 factor app factor 5]]
+Maybe [[Continuous Integration |CI/CD]] which relates to [[V Build, release, run |12 factor app factor 5]]
 
 #### Things to consider
 
