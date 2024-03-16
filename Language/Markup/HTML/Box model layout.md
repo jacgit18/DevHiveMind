@@ -11,7 +11,7 @@ Started:
 EditDate: 2024-02-26
 Relates: 
 Peer Reviewed: 0
-dg-publish:
+dg-publish: true
 ---
 ![[Box model layout.png]]
 

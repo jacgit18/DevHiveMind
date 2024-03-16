@@ -11,7 +11,7 @@ Started:
 EditDate: 2024-02-26
 Relates: 
 Peer Reviewed: 0
-dg-publish:
+dg-publish: true
 ---
 CSS comprises a selector, which can be a tag, ID, class, or an advanced selector. Within the declaration block, various properties and values are assigned to the selected element within the HTML.
 
