@@ -58,16 +58,16 @@ For more info read
 ### Overall Architecture
 In a system design choosing the right [[Impact of Architectural Styles |Architectural Styles]] is important think about what is needed and purpose of the style. 
 
+Depending on the Architectural Styles you then should talk and identify major components of your system like [[Physical Servers vs Virtual Servers |physical or virtual servers]] which tend to be on premises or on cloud you can talk about the [[Benefits of cloud]] talking about cloud  in terms of outsourcing functionality or infrastructure using different service architecture ranging from IAAS to SAAS and benefiting from things like availability zones and other cloud services that add fault tolerance to the overall system. 
+
 - [[Fault Tolerance]] refers to the system's resilience against failures, errors, or faults, ensuring uninterrupted operation and maintaining user experience. It encompasses proactive measures to handle failures gracefully and sustain availability. This principle applies universally across hardware, software, networks, and systems architecture.At its essence, fault tolerance anticipates failures as inevitable and seeks to minimize their impact through proactive strategies. intergrate a talk about between each component 
 
 
-
-- Depending on the Architectural Styles you then should talk and identify major components of your system like 
-- physical or virtual servers, 
+- , 
 - [[Messaging systems]]
 - [[Caches]], 
 - 
-, [[Monitoring & Observability |monitoring/logging for metrics]], and [[Benefits of cloud |cloud infrastructure]] talking about cloud  in terms of outsourcing functionality or infrastructure using different service architecture ranging from IAAS to SAAS.
+, [[Monitoring & Observability |monitoring/logging for metrics]], 
   
 - Talk about selecting components for system from different perspectives like how is the community support or technical documentation around the different technology options also cost.
 
