@@ -1,8 +1,8 @@
 {
-  "githubRepo": "",
+  "githubRepo": "HiveGarden",
   "githubToken": "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",
   "githubUserName": "jacgit18",
-  "gardenBaseUrl": "https://dev-hive-mind-garden-diejsbaee-joshua-carpentiers-projects.vercel.app",
+  "gardenBaseUrl": "https://hive-garden.vercel.app",
   "prHistory": [],
   "baseTheme": "dark",
   "theme": "{\"name\":\"Royal Velvet\",\"author\":\"caro401\",\"repo\":\"caro401/royal-velvet\",\"screenshot\":\"royal-velvet.png\",\"modes\":[\"dark\",\"light\"],\"cssUrl\":\"https://raw.githubusercontent.com/caro401/royal-velvet/HEAD/theme.css\"}",
