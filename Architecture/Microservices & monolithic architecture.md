@@ -108,7 +108,10 @@ In a monolithic architecture, the entire application is typically organized with
 package.json # Node.js package file  
 index.js # Entry point for the API  
 ```  
-  
+
+#todo/Personal/Low/Dev 
+- [ ] Read https://newsletter.techworld-with-milan.com/p/why-you-should-build-a-modular-monolith
+
 In a monolith, all parts of the application are closely interconnected, and communication between different functionalities is often direct within the same codebase.  
 
 

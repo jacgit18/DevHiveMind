@@ -16,8 +16,10 @@ Relates:
 Peer Reviewed: 0
 dg-publish:
 ---
-
 SAGA emerges as a robust solution for maintaining data consistency in distributed architectures without strictly adhering to ACID principles. Operating by orchestrating multiple compensatory transactions, SAGA introduces rollback opportunities to ensure consistent and reliable outcomes.
+
+#todo/Personal/Low/Dev 
+- [ ] Read 
 
 **Two Approaches to Implementing SAGA:**
 
