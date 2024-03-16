@@ -55,36 +55,34 @@ For more info read
 ### Overall Architecture
 In a system design choosing the right [[Impact of Architectural Styles |Architectural Styles]] is important think about what is needed and purpose of the style. In addition to that you can leverage [[When to use Domain-Driven Design |Domain Driven Design]] with some of the different styles depending on domain complexity determines weather it is necessary to use meaning the more simpler the domain is the less need for domain driven design in my opinion.
 
+You should also consider [[Fault Tolerance]] which refers to the system's resilience against failures, errors, or faults, ensuring uninterrupted operation and maintaining user experience. It encompasses proactive measures to handle failures gracefully and sustain availability. This principle applies universally across hardware, software, networks, and systems architecture. At its essence, fault tolerance anticipates failures as inevitable and seeks to minimize their impact through proactive strategies it also applies at and between each system  component. 
+
 Depending on the Architectural Styles you then should talk and identify major components of your system like [[Physical Servers vs Virtual Servers |physical or virtual servers]] which tend to be on premises or on cloud you can talk about the [[Benefits of cloud]] talking about cloud  in terms of outsourcing functionality or infrastructure using different service architecture ranging from IAAS to SAAS and benefiting from things like availability zones and other cloud services that add fault tolerance to the overall system. 
 
-- [[Fault Tolerance]] refers to the system's resilience against failures, errors, or faults, ensuring uninterrupted operation and maintaining user experience. It encompasses proactive measures to handle failures gracefully and sustain availability. This principle applies universally across hardware, software, networks, and systems architecture.At its essence, fault tolerance anticipates failures as inevitable and seeks to minimize their impact through proactive strategies. intergrate a talk about between each component 
+When it comes to cloud services like AWS there are a broad range of services like include for [[Messaging systems]], [[Caches]], and [[Monitoring & Observability |monitoring/logging for metrics]]. You have things like Amazon MQ, Amazon ElastiCache, and Amazon CloudWatch. Alternatively if you don't want cloud solutions you can use things like [[Apache Kafka]], Redis for caching, or something like Prometheus. You also have services for things like static [[File System Storage]] services like Amazon S3 which can be used with a [[Content Delivery Network |CDN]] improving traffic and fault tolerance. 
 
+There are other things like Networking components such as routers like [[Reverse proxy vs API gateway vs load balancer]].
 
-- , 
-- [[Messaging systems]]
-- [[Caches]], 
-- 
-, [[Monitoring & Observability |monitoring/logging for metrics]], 
-  
+#### Things to consider
+
 - Talk about selecting components for system from different perspectives like how is the community support or technical documentation around the different technology options also cost.
 
-- You can also talk tech stack compatibility in the context of planing out a [[Migration Plan]] like sometimes the technologies you start out with don't make sense or you want to manage cost of your system.
+- Talk about leveraging [[Libraries vs Building From Scratch]] and the pros and cons around that in terms of potential dependencies issues.
 
-- You can maybe talk about [[File System Storage]] services like Amazon S3.
+- You can also talk about choosing tech stack based the potentially implementing a [[Migration Plan]] like sometimes the technologies you start out with doesn't make sense or you want to manage cost of your system.
 
-  
-- Security measures like firewalls, intrusion detection systems, encryption, and access control mechanisms are part of the Infrastructure layer to protect the application from various security threats, including unauthorized access, data breaches, and DDoS attacks.
+- Security measures like firewalls, intrusion detection systems, encryption, and access control mechanisms are part of the Infrastructure layer to protect the application from various security threats, including unauthorized access, data breaches, and DDoS attacks. you can also talk about [[Authentication vs Authorization]].
   
 - **Compliance and Governance***: Infrastructure may include tools and processes to enforce compliance with regulatory requirements and organizational policies, ensuring data security and legal compliance.
-
 - Maybe CI/CD stuff
 - Consider the use of APIs for certain functionalities.
 - Discuss [[Stateless & Statefull Processes |Stateless vs Statefull]] application or process.
 - Maybe talk [[Microservices]](might not be relevant since small scope) or leverage knowledge of [[12 Factor App Docker.canvas|12 Factor App Docker]] which has some overlap with everything mentioned, whatever comes to mind also [[Eureka Service]] for microservices.
-- Making [[Event-driven Architectural Pattern Decisions]].
 - Maybe talk testing architecture or [[Testing Hierarchy]] maybe using [[Test Driven Development]] or talk about test automation, [[Acceptance Testing]], [[Pre Acceptance Testing]],[[Type of Testing Techniques]]
 
-- Networking components such as routers, [[Load Balancer]], firewalls, and Content Delivery Networks ([[Content Delivery Network |CDN]]) play a crucial role in ensuring that data is transmitted efficiently between clients and servers. Load balancers distribute incoming traffic to multiple servers for load distribution and redundancy.
+
+
+
 
 ### Scalability and Performance
   - Distribute traffic across server pools for different types of traffic. talk about different trade-offs.
@@ -113,8 +111,6 @@ Depending on the Architectural Styles you then should talk and identify major co
 - [ ] Also add stuff around security, maintainability, and user experience to cover the rest of the core concepts of system design.
 - [ ] look into talk about Load shedding and distributed Locking
 - [ ] maybe add stuff around circuit break pattern seems relevant to system design but you can say that about all design patterns but it seems like this one is used heavily in comparison to others patterns or one of the heavily used patterns need to verify this
-- [ ] Look into https://blog.quastor.org/p/rate-limiting-stripe
-- [ ] talk picking languages and libraries and frameworks
 - [ ] Talk [[🌐 Internet Communication Process]] in terms of what you would use
 - [ ] [[Network Infrastructure to use]]
 - [ ] [[System Design interview Scope]]

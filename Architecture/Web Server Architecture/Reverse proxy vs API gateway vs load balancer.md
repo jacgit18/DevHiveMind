@@ -22,11 +22,11 @@ As modern websites and applications are like busy beehives, we use a variety of 
 - Fetching data secretly, keeping servers hidden.  
 - Perfect for shielding sensitive websites from cyber-attacks and prying eyes.  
   
-## API Gateway: postman  
+## [[API Gateway]]: postman  
 - Delivers requests to the right services.  
 - Ideal for bustling applications with numerous intercommunicating services.  
   
-## Load Balancer: traffic cop  
+## [[Load Balancer]]: traffic cop  
 - Directs traffic evenly across servers, preventing bottlenecks  
 - Essential for popular websites with heavy traffic and high demand.  
   
