@@ -10,7 +10,7 @@ Started:
 EditDate: 2024-03-04
 Relates: "[[Callback]]"
 Peer Reviewed: 0
-dg-publish:
+dg-publish: true
 ---
 Currying is an advanced technique used in various programming languages, including JavaScript. It transforms a function from being callable as `f(a, b, c)` to `f(a)(b)(c)`.
 
