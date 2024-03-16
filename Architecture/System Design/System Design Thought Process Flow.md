@@ -63,7 +63,6 @@ In terms of styles popular ones include [[Microservices]] which tends to be used
 - [ ] Identify where to integrate [[Stateless & Statefull Processes |Stateless vs Statefull]] application or process which relates to [[VIII Concurrency |12 factor app factor 8]].
 - [ ] Identify were to talk about  [[🌐 Internet Communication Process]] in terms of what you would use might be very granular or over kill could be wrong.
 - [ ] Also add stuff around security, maintainability, and user experience to cover the rest of the core concepts of system design.
-- [ ] look into talk about Load shedding and distributed Locking
 - [ ] maybe add stuff around circuit break pattern seems relevant to system design but you can say that about all design patterns but it seems like this one is used heavily in comparison to others patterns or one of the heavily used patterns need to verify this
 
 
