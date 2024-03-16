@@ -96,7 +96,7 @@ Maybe [[Continuous Integration |CI/CD]] which relates to [[V Build, release, run
 
 - Talk about selecting components for system from different perspectives like how is the community support or technical documentation around the different technology options also cost.
 
-- Talk about leveraging [[Libraries vs Building From Scratch]] and the pros and cons around that in terms of potential dependencies issues like for example this article discuss a library become legacy(or ).
+- Talk about leveraging [[Libraries vs Building From Scratch]] and the pros and cons around that in terms of potential dependencies issues.
 
 - Talk about API selection discuss the use of APIs for certain functionalities like auth or [[IV Backing services]].
 
