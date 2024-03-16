@@ -15,6 +15,7 @@ Relates:
 - [ ] Look into these project ideas
 - [ ] Look for open source project read this https://www.freecodecamp.org/news/github-search-tips/
 - [ ] Look in to these projects https://dev.to/bigsondev/10-projects-to-skyrocket-your-coding-skills-19hl
+- [ ] https://blog.devgenius.io/become-an-expert-backend-projects-that-define-senior-developers-61ac76e17d98
 
 To learn web workers in TypeScript, consider embarking on a project that involves parallelizing tasks or background processing. A compelling idea is to create a real-time data streaming application, focusing on the financial domain to build practical skills. Here are refined project ideas:
 
