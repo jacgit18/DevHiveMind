@@ -60,7 +60,7 @@ In terms of styles popular ones include [[Microservices]] which tends to be used
 
 
 #todo/Personal/High/Dev 
-- [ ] Identify where to integrate [[Stateless & Statefull Processes |Stateless vs Statefull]] application or process.
+- [ ] Identify where to integrate [[Stateless & Statefull Processes |Stateless vs Statefull]] application or process which relates to [[VIII Concurrency |12 factor app factor 8]].
 - [ ] Identify were to talk about  [[🌐 Internet Communication Process]] in terms of what you would use might be very granular or over kill could be wrong.
 - [ ] Also add stuff around security, maintainability, and user experience to cover the rest of the core concepts of system design.
 - [ ] look into talk about Load shedding and distributed Locking
@@ -73,6 +73,8 @@ Depending on the Architectural Styles you then should talk and identify major co
 
 When it comes to cloud services like AWS there are a broad range of services like include for [[Messaging systems]], [[Caches]] which if you implement locally you can improve response time, and [[Monitoring & Observability |monitoring/logging for metrics]]. You have things like Amazon MQ, Amazon ElastiCache, and Amazon CloudWatch. Alternatively if you don't want cloud solutions you can use things like [[Apache Kafka]], Redis for caching, or something like Prometheus. You also have services for things like static [[File System Storage]] services like Amazon S3 which can be used with a [[Content Delivery Network |CDN]] improving traffic and fault tolerance. 
 
+When it comes to all these components you also want keep [[Data Flow]] in mind as well like all the different sources of data, the processing and transformation, storage, transportation and communication. A  
+
 There are other things like Networking components such as routers like [[Reverse proxy vs API gateway vs load balancer]].
 
 
@@ -81,7 +83,7 @@ Talk testing architecture or [[Testing Hierarchy]] maybe using [[Test Driven Dev
 
 ##### Deployment
 
-- Maybe [[Continuous Integration |CI/CD]] stuff
+- Maybe [[Continuous Integration |CI/CD]] which relates to [[V Build, release, run |12 factor app factor 5]]
 
 #### Things to consider
 
