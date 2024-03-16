@@ -16,7 +16,7 @@ Purpose: This documentation discusses order to talk about system in system desig
 Status: Refinement
 Started: 2024-01-04
 EditDate: 2024-01-26
-Version: 2.8.0
+Version: 2.9.0
 Relates: 
 Peer Reviewed: 0
 dg-publish:
@@ -55,7 +55,7 @@ For more info read
 ### Overall Architecture
 In a system design choosing the right [[Impact of Architectural Styles |Architectural Styles]] is important think about what is needed and purpose of the style. In addition to that you can leverage [[When to use Domain-Driven Design |Domain Driven Design]] with some of the different styles depending on domain complexity determines weather it is necessary to use meaning the more simpler the domain is the less need for domain driven design in my opinion.
 
-In terms of styles popular ones include [[Microservices]] which tends to be used with [[Eureka Service]] and monolithic architecture which is an example of a centralized system. In a monolithic architecture, the entire application is built as a single, indivisible unit, making it centralized and typically deployed on a single server or a closely connected set of servers.  
+In terms of styles popular ones include [[Microservices]] which tends to be used with [[Eureka Service]] if built in Java and monolithic architecture which is an example of a centralized system. In a monolithic architecture, the entire application is built as a single, indivisible unit, making it centralized and typically deployed on a single server or a closely connected set of servers.  
 
 
 
@@ -76,10 +76,10 @@ When it comes to cloud services like AWS there are a broad range of services lik
 There are other things like Networking components such as routers like [[Reverse proxy vs API gateway vs load balancer]].
 
 
-#### Testing
+##### Testing
 Talk testing architecture or [[Testing Hierarchy]] maybe using [[Test Driven Development]] or talk about test automation, [[Acceptance Testing]], [[Pre Acceptance Testing]], or [[Type of Testing Techniques]]
 
-#### Deployment
+##### Deployment
 
 - Maybe [[Continuous Integration |CI/CD]] stuff
 
@@ -98,15 +98,17 @@ Talk testing architecture or [[Testing Hierarchy]] maybe using [[Test Driven Dev
 - Talk about [[Database data governance]]and compliance, Infrastructure may include tools and processes to enforce compliance with regulatory requirements and organizational policies, ensuring data security and legal compliance. 
 
 ### Scalability and Performance
-In the context of database servers and instances of your application, as well as any microservices within your codebase architecture, the concept of scaling can be categorized into [[Vertical vs Horizontal Scaling]]. Horizontal scaling is often preferred due to the limitations of vertical scaling. For instance, it's impossible to infinitely increase CPU and memory resources on a single server. Additionally, vertical scaling lacks failover and redundancy mechanisms. If one server experiences downtime, the entire website or application goes down with it completely.
+In the context of database servers and instances of your application, as well as any microservices within your codebase architecture, the concept of scaling can be categorized into [[Vertical vs Horizontal Scaling]]. Horizontal scaling is often preferred due to the limitations of vertical scaling. For instance, it's impossible to infinitely increase CPU and memory resources on a single server. Additionally, vertical scaling lacks failover and redundancy mechanisms. If one server experiences downtime, the entire website or application goes down with it completely. System tend to follow these common [[System Scalability Strategies]].
+
+To improve system scaling and performance you can use several technologies commonly used to distribute traffic across [[server pools]] like [[Load Balancer |load balancers]] 
 
 It's worth noting that scaling considerations can fall under administrative functionalities, whether that involves resource scaling in a cloud environment or implementing custom solutions such as creating an admin dashboard for internal use by developers. This dashboard could encompass various [[XII Admin processes]], offering insights and control over the scaling operations and other administrative tasks.
   
   
   
-  - Distribute traffic across server pools for different types of traffic. talk about different trade-offs.
+ 
   
- [[System Scalability Strategies]]
+
 
   - you can also talk about [[Database Sharding]].
   
