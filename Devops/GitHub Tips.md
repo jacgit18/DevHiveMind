@@ -31,6 +31,8 @@ Execute small changes in branches to minimize dependencies. Prefer drafting pull
 
 Handle merge conflicts diligently to maintain code integrity during the collaboration process.
 
+Git rebase to merge a feature branch at the tip of a get main so basically whatever the last commit the future branch that you created gets appended to the end of that.
+
 ## Update branch to latest 
 ```bash
 git checkout develop 

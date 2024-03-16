@@ -14,6 +14,9 @@ Peer Reviewed: 0
 dg-publish:
 ---
 AWK, sed, and grep are all powerful command-line utilities commonly used in Unix-like operating systems (such as Linux) for text processing tasks. While they can sometimes be used interchangeably for certain tasks, each tool has its own distinct features and strengths.  
+
+#todo/Personal/Low/Dev 
+- [ ] Read [[Effective awk Programming Universal Text Processing and Pattern Matching by Arnold Robbins (z-lib.org).pdf |Effective awk Programming Universal Text Processing and Pattern Matching]]
   
 ### AWK:  
 - **Purpose**: AWK is a programming language specifically designed for text processing and data extraction.  
