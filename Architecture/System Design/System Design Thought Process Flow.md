@@ -95,7 +95,7 @@ Talk testing architecture or [[Testing Hierarchy]] maybe using [[Test Driven Dev
 
 - Security measures like firewalls, intrusion detection systems, encryption, and access control mechanisms are part of the Infrastructure layer to protect the application from various security threats, including unauthorized access, data breaches, and DDoS attacks. you can also talk about [[Authentication vs Authorization]].
   
-- Talk about [[Database data governance]]and compliance, Infrastructure may include tools and processes to enforce compliance with regulatory requirements and organizational policies, ensuring data security and legal compliance. 
+- You can talk governance like [[Data Retention Target]] and [[Database data governance]] compliance, Infrastructure may include tools and processes to enforce compliance with regulatory requirements and organizational policies, ensuring data security and legal compliance. 
 
 ### Scalability and Performance
 In the context of database servers and instances of your application, as well as any microservices within your codebase architecture, the concept of scaling can be categorized into [[Vertical vs Horizontal Scaling]]. Horizontal scaling is often preferred due to the limitations of vertical scaling. For instance, it's impossible to infinitely increase CPU and memory resources on a single server. Additionally, vertical scaling lacks failover and redundancy mechanisms. If one server experiences downtime, the entire website or application goes down with it completely. System tend to follow these common [[System Scalability Strategies]].
