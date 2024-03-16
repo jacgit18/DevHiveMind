@@ -12,6 +12,9 @@ Relates:
 Peer Reviewed: 0
 dg-publish:
 ---
+![[encoding v encrypt v token.gif]]
+#todo/Low/Dev 
+- [ ] figure out were to put infographic
 
 
 ### Demystifying String Encoding in Node.js
