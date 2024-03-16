@@ -14,6 +14,7 @@ Relates:
 #todo/Personal/Med/Dev 
 - [ ] Look into these project ideas
 - [ ] Look for open source project read this https://www.freecodecamp.org/news/github-search-tips/
+- [ ] Look in Chatbots read https://thenewstack.io/javascript-react-library-lets-developers-build-ai-chatbots/
 - [ ] Look in to these projects https://dev.to/bigsondev/10-projects-to-skyrocket-your-coding-skills-19hl
 - [ ] https://blog.devgenius.io/become-an-expert-backend-projects-that-define-senior-developers-61ac76e17d98
 
