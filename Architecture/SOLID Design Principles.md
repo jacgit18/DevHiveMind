@@ -17,7 +17,8 @@ Peer Reviewed: 0
 dg-publish:
 ---
 ![[DataBuisness.png]]
-Find out were to put 
+#todo/Personal/Med/Dev 
+- [ ] Find out were to put this infographic and were it makes sense to place also is used in [[Data Work]] note
 
 merging data with interfaces and integrating business logic backed by requirements probably codebase 
 

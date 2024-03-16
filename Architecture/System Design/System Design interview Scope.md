@@ -11,7 +11,7 @@ Purpose: This documentation discusses
 Status: Done
 Started: 
 EditDate: 2024-03-15
-Relates: "[[System Design Thought Process Flow]]"
+Relates: 
 Peer Reviewed: 0
 dg-publish:
 ---
@@ -46,8 +46,6 @@ Questions
 7. **System Communication:**
    - Define communication protocols between system components.
    - Discuss API design, messaging systems, or other communication channels.
-
-
 
 
 8. **Scalability Measures:**
