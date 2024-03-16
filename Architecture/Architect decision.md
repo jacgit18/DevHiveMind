@@ -9,7 +9,7 @@ Purpose: This documentation discusses architect decision.
 Status: Refinement
 Started: 
 EditDate: 2024-03-06
-Relates: 
+Relates: "[[System Design Thought Process Flow]]"
 Peer Reviewed: 0
 dg-publish:
 ---

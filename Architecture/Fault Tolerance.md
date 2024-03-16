@@ -3,6 +3,8 @@ tags:
   - CodebaseDecision
   - pattern
   - bestPractices
+  - processes
+  - MacroCodebaseDecision
 author:
   - jacgit18
   - chatgpt
@@ -17,6 +19,17 @@ dg-publish:
 Fault tolerance refers to the ability of a system to continue operating properly even in the presence of faults or failures. It is a crucial aspect of designing robust and reliable software systems. Fault tolerance aims to minimize the impact of failures on the overall system by providing mechanisms to detect, handle, and recover from faults.
 
 One common pattern associated with fault tolerance is the Retry Pattern. The Retry Pattern enables an application to automatically retry a failed operation in order to overcome transient faults. Transient faults are temporary and can occur due to factors like network issues, resource unavailability, or temporary service disruptions. By applying the Retry Pattern, the system attempts to perform the failed operation again, typically with an increasing delay between retries, until the operation succeeds or a maximum retry limit is reached.
+
+1. **Isolation and Containment:** Designing systems with isolation and containment mechanisms to limit the impact of failures. By compartmentalizing different parts of the system, failures can be contained, preventing them from spreading and affecting the entire system.
+    
+2. **Monitoring and Alerting:** Employing monitoring systems to continuously monitor the health and performance of system components. Alerting mechanisms notify administrators or operations teams of potential issues or failures so they can take timely action to mitigate them.
+    
+3. **Graceful Degradation:** Building systems to degrade gracefully under high load or failure conditions rather than completely failing. Graceful degradation involves adjusting system behavior or reducing service quality to maintain overall functionality and performance.
+
+
+4. **Data Replication and Backup:** Replicating critical data in multiple locations and regularly backing up data to ensure data availability and integrity. Data replication and backup strategies help recover data in the event of data loss or corruption.
+    
+5. **Automated Recovery Processes:** Implementing automated recovery processes to restore system functionality or data integrity in the event of failures. Automated recovery processes automate the detection and resolution of failures, reducing manual intervention and downtime.
 
 Here's an example of implementing the Retry Pattern in Java:
 
@@ -131,7 +144,7 @@ This is a basic example, and in a real-world scenario, you might want to conside
 
 By implementing the Retry Pattern, the system has a higher chance of successfully completing the operation even in the presence of intermittent failures, improving fault tolerance.
 
-There is also [[Distributed tracking & monitoring]]
+There is also [[Distributed Tracking & Monitoring]]
 
 ## Other Patterns
 

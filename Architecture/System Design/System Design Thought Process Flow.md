@@ -11,13 +11,13 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: Still cleaning up this documentation I might convert to a mind map or something visual like some type of decision tree.
+Comments: Still deciding what else makes sense to mention I might convert to a mind map or something visual like some type of decision tree.
 Purpose: This documentation discusses order to talk about system in system design interview.
 Status: Refinement
 Started: 2024-01-04
-EditDate: 2024-01-26
-Version: 2.8.0
-Relates: 
+EditDate: 2024-03-16
+Version: 3.0.0
+Relates: "[[System Design interview Scope]]"
 Peer Reviewed: 0
 dg-publish:
 ---
@@ -25,7 +25,7 @@ dg-publish:
 ### Step 1: Requirements Gathering 
 > **Establish a Understanding and Design Scope of problem (3 - 10 minutes)
 
-During this step, it's crucial to clarify the system scope and priorities and gather [[Business Requirements Life cycle|Business Requirements]]. For instance, if asked to design an Instagram Reels feature, break down the problem into specific use cases, outlining interactions between system components. Identify key requirements like expected traffic, data volume, latency, and scalability. Inquire about the [[Userbase]] type which can give you insight for things like estimating resources  or  things like governance, like what if user base  is under aged, as this is crucial for scalability considerations. Understand potential constraints and bottlenecks that may arise with a growing user base. This leads to decisions on database considerations, determining whether a NoSQL or SQL database aligns with specific needs and the nature of the data.
+During this phase, it's pivotal to establish the system's scope and priorities while gathering  [[Business Requirements Life cycle|Business Requirements]]. For instance, when tasked with designing an Instagram Reels feature, it's essential to deconstruct the problem into distinct use cases, delineating interactions among system components. Key requirements such as anticipated traffic, data volume, latency, and scalability should be identified. Inquire about the [[Userbase]]type, as this insight aids in resource estimation and governance considerations, especially regarding scalability implications, such as underage user base scenarios. Understanding potential constraints and bottlenecks that may emerge with an expanding user base is imperative. This insight informs decisions regarding database considerations, determining whether a NoSQL or SQL database aligns with specific needs and data characteristics.
 #### [[Use Case vs User Story |User Story]] Example:
 >[!important]
 >Creating stories helps with building data model, also if dealing with complex feature might want to consider using Use Cases over Stories.
@@ -37,7 +37,7 @@ During this step, it's crucial to clarify the system scope and priorities and ga
 
 ### Step 2: Design Deep Dive (15 - 25 minutes)
 >[!important]
-When considering the features of your design, prioritize a forward-thinking approach that allows for future functionality. Ensure your design is flexible, accommodating potential expansions and enhancements seamlessly. Focus on building a foundation that supports scalability, making it easier to integrate additional features in the future. Think holistically about the design, anticipating potential modifications and advancements, and ensure that the architecture is adaptable to evolving requirements. This foresightedness will contribute to a more sustainable and extensible system over time.
+When crafting your design, prioritize a forward-thinking approach that anticipates future functionality. Ensure flexibility to seamlessly accommodate expansions and enhancements. Focus on constructing a foundation that facilitates scalability, simplifying the integration of additional features down the line. Adopt a holistic mindset, anticipating potential modifications and advancements, and ensure the architecture remains adaptable to evolving requirements. This proactive approach fosters a more sustainable and extensible system over time.
 
 *Delve into the design by following the flow from Database ▶ Server/Services (Architecture) ▶ Client Side design.
 
@@ -49,66 +49,68 @@ For more info read
 ### Data Design & Database Architecture 
   - Create an Entity Relationship Diagram (ERD) to define relationships.
   - Consider SQL for structured data and NoSQL for unstructured data.
-  - More things to think about when deciding between [[Choosing Database]] you can also talk about [[Database Sharding]].
+  - More things to think about when deciding between [[Choosing Database]] 
   - What type of [[Schema Design]] makes sense.
-  - You can also talk about [[Master-Slave Database Architecture]]
-  - Talk about [[Data Retention Target]]
- 
-
-### Domain Driven Design(Possible Pathway)
-[[When to use Domain-Driven Design]] still refining domain driven design documentation depending on domain complexity determines weather it is necessary to use meaning the more simpler the domain is the less need for domain driven design in my opinion.
 
 ### Overall Architecture
-- If your thinking of Architectural Styles like for example Monolithic Architecture identify the specifics around it and talk about it maybe compare in contrast it to other [[Architectural Styles]].
+In a system design choosing the right [[Impact of Architectural Styles |Architectural Styles]] is important think about what is needed and purpose of the style. In addition to that you can leverage [[When to use Domain-Driven Design |Domain Driven Design]] with some of the different styles depending on domain complexity determines weather it is necessary to use meaning the more simpler the domain is the less need for domain driven design in my opinion.
 
-- Depending on the Architectural Styles you then should talk and identify major components of your system like physical or virtual servers, databases, [[Caches]],  [[Messaging systems]], [[Monitoring & Observability |monitoring/logging for metrics]], and [[Benefits of cloud |cloud infrastructure]] talking about cloud  in terms of outsourcing functionality or infrastructure using different service architecture ranging from IAAS to SAAS.
-  
-- Talk about selecting components for system from different perspectives like how is the community support or technical documentation around the different technology options also cost.
+In terms of styles popular ones include [[Microservices]] which tends to be used with [[Eureka Service]] if built in Java and monolithic architecture which is an example of a centralized system. In a monolithic architecture, the entire application is built as a single, indivisible unit, making it centralized and typically deployed on a single server or a closely connected set of servers.  
 
-- You can also talk tech stack compatibility in the context of planing out a [[Migration Plan]] like sometimes the technologies you start out with don't make sense or you want to manage cost of your system.
-
-- You can maybe talk about [[File System Storage]] services like Amazon S3.
-  
-- Networking components such as routers, [[Load Balancer]], firewalls, and Content Delivery Networks ([[Content Delivery Network |CDN]]) play a crucial role in ensuring that data is transmitted efficiently between clients and servers. Load balancers distribute incoming traffic to multiple servers for load distribution and redundancy.
-  
-- Security measures like firewalls, intrusion detection systems, encryption, and access control mechanisms are part of the Infrastructure layer to protect the application from various security threats, including unauthorized access, data breaches, and DDoS attacks.
-  
-- **Compliance and Governance***: Infrastructure may include tools and processes to enforce compliance with regulatory requirements and organizational policies, ensuring data security and legal compliance.
-
-- Maybe CI/CD stuff
-- Consider the use of APIs for certain functionalities.
-- Discuss [[Stateless & Statefull Processes |Stateless vs Statefull]] application or process.
-- Maybe talk [[Microservices]](might not be relevant since small scope) or leverage knowledge of [[12 Factor App Docker.canvas|12 Factor App Docker]] which has some overlap with everything mentioned, whatever comes to mind also [[Eureka Service]] for microservices.
-- Making [[Event-driven Architectural Pattern Decisions]].
-- Maybe talk testing architecture or [[Testing Hierarchy]] maybe using [[Test Driven Development]] or talk about test automation, [[Acceptance Testing]], [[Pre Acceptance Testing]],[[Type of Testing Techniques]]
-
-### Scalability and Performance
-  - Distribute traffic across server pools for different types of traffic. talk about different trade-offs.
-  
-  - Implement local cache for improved response time.
-
-  - You can talk about [[Vertical vs Horizontal Scaling]] in the context of database servers and instances of your application along with any microservices if you include that in your codebase architecture. Side note scaling can fall under Admin functionality weather that is resource scaling in a cloud environment or some custom built solution like creating an admin dashboard for internal use by developers with a frontend that includes different [[XII Admin processes]].
-  
-  - Horizontal scaling is often more desirable since vertical scaling limitations like it is impossible to add unlimited CPU and memory to the server and it lacks fail over and redundancy if one server goes down the website app goes down with it completely 
-
-  
 
 
 #todo/Personal/High/Dev 
-- [ ] Talk about centralized systems in comparison to decentralized systems which is mostly covered here need to research more about centralized systems 
-- [ ] monolithic architecture is an example of a centralized system. In a monolithic architecture, the entire application is built as a single, indivisible unit, making it centralized and typically deployed on a single server or a closely connected set of servers.
+- [ ] Identify where to integrate [[Stateless & Statefull Processes |Stateless vs Statefull]] application or process which relates to [[VIII Concurrency |12 factor app factor 8 concurrency]] which also relates to [[Distributed Locking]] which can be implemented with many technologies like [[ZooKeeper]] also Redis.
+- [ ] Identify were to talk about  [[🌐 Internet Communication Process]] in terms of what you would use might be very granular or over kill could be wrong.
 - [ ] Also add stuff around security, maintainability, and user experience to cover the rest of the core concepts of system design.
-- [ ] Integrate and talk [[Fault Tolerance]]
-- [ ] look into talk about Load shedding and distributed Locking
 - [ ] maybe add stuff around circuit break pattern seems relevant to system design but you can say that about all design patterns but it seems like this one is used heavily in comparison to others patterns or one of the heavily used patterns need to verify this
-- [ ] Look into https://blog.quastor.org/p/rate-limiting-stripe
-- [ ] talk picking languages and libraries and frameworks
-- [ ] Talk [[🌐 Internet Communication Process]] in terms of what you would use
-- [ ] [[System Scalability Strategies]]
-- [ ] [[Network Infrastructure to use]]
-- [ ] [[Potential Order to talk in]]
-- [ ] [[System Design interview Scope]]
 
+
+You should also consider [[Fault Tolerance]] which refers to the system's resilience against failures, errors, or faults, ensuring uninterrupted operation and maintaining user experience. It encompasses proactive measures to handle failures gracefully and sustain availability. This principle applies universally across hardware, software, networks, and systems architecture. At its essence, fault tolerance anticipates failures as inevitable and seeks to minimize their impact through proactive strategies it also applies at and between each system  component. 
+
+Depending on the Architectural Styles you then should talk and identify major components of your system like [[Physical Servers vs Virtual Servers |physical or virtual servers]] which tend to be on premises or on cloud you can talk about the [[Benefits of cloud]] talking about cloud  in terms of outsourcing functionality or infrastructure using different service architecture ranging from IAAS to SAAS and benefiting from things like availability zones and other cloud services that add fault tolerance to the overall system. 
+
+When it comes to cloud services like AWS there are a broad range of services like include for [[Messaging systems]], [[Caches]] which if you implement locally you can improve response time, and [[Monitoring & Observability |monitoring/logging for metrics]]. You have things like `Amazon MQ`, `Amazon ElastiCache`, and `Amazon CloudWatch`. Alternatively if you don't want cloud solutions you can use things like [[Apache Kafka]], `Redis` for caching, or something like `Prometheus`. You also have services for things like static [[File System Storage]] services like `Amazon S3` which can be used with a [[Content Delivery Network |CDN]] improving traffic and fault tolerance. 
+
+When it comes to all these components you also want keep [[Data Flow]] in mind as well like all the different sources of data, the processing and transformation, storage, transportation and communication. Along with things like versioning, change management, and monitoring.  
+
+There are other things like Networking components such as routers like [[Reverse proxy vs API gateway vs load balancer]].
+
+
+##### Testing
+#todo/Personal/High/Dev 
+- [ ] update testing portion
+
+Talk testing architecture or [[Testing Hierarchy]] maybe using [[Test Driven Development]] or talk about test automation, [[Acceptance Testing]], [[Pre Acceptance Testing]], or [[Type of Testing Techniques]]
+
+##### Deployment
+#todo/Personal/High/Dev 
+- [ ] update devops portion
+
+Maybe [[Continuous Integration |CI/CD]] which relates to [[V Build, release, run |12 factor app factor 5]]
+
+#### Things to consider
+
+- Talk about selecting components for system from different perspectives like how is the community support or technical documentation around the different technology options also cost.
+
+- Talk about leveraging [[Libraries vs Building From Scratch]] and the pros and cons around that in terms of potential dependencies issues.
+
+- Talk about API selection discuss the use of APIs for certain functionalities like auth or [[IV Backing services]].
+
+- You can also talk about choosing tech stack based the potentially implementing a [[Migration Plan]] like sometimes the technologies you start out with doesn't make sense or you want to manage cost of your system.
+
+- Security measures like firewalls, intrusion detection systems, encryption, and access control mechanisms are part of the Infrastructure layer to protect the application from various security threats, including unauthorized access, data breaches, and DDoS attacks. you can also talk about [[Authentication vs Authorization]].
+  
+- You can talk governance like [[Data Retention Target]] and [[Database data governance]] compliance, Infrastructure may include tools and processes to enforce compliance with regulatory requirements and organizational policies, ensuring data security and legal compliance. 
+
+### Scalability and Performance
+In the context of database servers and instances of your application, as well as any microservices within your codebase architecture, the concept of scaling can be categorized into [[Vertical vs Horizontal Scaling]]. Horizontal scaling is often preferred due to the limitations of vertical scaling. For instance, it's impossible to infinitely increase CPU and memory resources on a single server. Additionally, vertical scaling lacks failover and redundancy mechanisms. If one server experiences downtime, the entire website or application goes down with it completely. System tend to follow these common [[System Scalability Strategies]].
+
+To improve system scaling and performance you can use several technologies commonly used to distribute traffic across [[server pools]] like [[Load Balancer |load balancers]] technologies like this also implement [[Load Shedding]] which improves fault tolerance.
+
+On the database side of thing there are things like [[Database Sharding]] and [[Master-Slave Database Architecture]] which tend to be used together the workload is distributed not only horizontally across shards but also vertically within each shard. This allows for greater scalability and performance gains by parallelizing both read and write operations across multiple database servers. Additionally, using master-slave setups within each shard provides fault tolerance and high availability within each shard. If the master server in a shard fails, one of the slave servers can be promoted to the new master, ensuring continuous operation and data availability for that shard.
+
+It's worth noting that scaling considerations can fall under administrative functionalities, whether that involves resource scaling in a cloud environment or implementing custom solutions such as creating an admin dashboard for internal use by developers. This dashboard could encompass various [[XII Admin processes]], offering insights and control over the scaling operations and other administrative tasks.
 
 
 ### Step 3: Wrap Up(3 - 5 minutes)
@@ -117,6 +119,7 @@ Summarize key design decisions, highlighting any alternative considerations. Inv
 # Talking Stats 
 
 ### Data Size:
+
 | Unit          | Equivalent in Bytes                    |
 |---------------|----------------------------------------|
 | 1 Kilobyte    | 1,024 Bytes                             |

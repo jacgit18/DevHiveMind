@@ -55,7 +55,7 @@ While the term "load balancer" is commonly associated with network traffic distr
 
 In summary, while load balancers are often associated with network traffic management, the concept of load balancing can be generalized to include the efficient distribution of various types of workloads or tasks within a system to achieve improved performance and resource utilization.
 
-
+![[load balancer cheet.gif]]
 
 Expanding the server count can introduce challenges, particularly with stateful servers. To mitigate this, separate stateless and stateful concerns by pushing state-related tasks to data cache or databases, relieving the application servers. Additionally, horizontally scaling with more servers may impact the database, prompting consideration for vertical scaling to enhance the database capacity rather than solely relying on horizontal scaling. Balancing server architecture ensures optimal performance and addresses potential issues with increased server count.
 

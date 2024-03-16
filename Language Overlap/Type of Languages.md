@@ -15,7 +15,7 @@ dg-publish:
 ![[Language Categories.png]]
 
 
-## [[Tech Glossary#^acb92b|Typed Languages]]
+## [[_Tech Glossary#^acb92b|Typed Languages]]
 
 ### **Statically Typed Languages:**
 
