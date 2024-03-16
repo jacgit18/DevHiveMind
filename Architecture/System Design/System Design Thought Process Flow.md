@@ -11,12 +11,12 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: Still cleaning up this documentation I might convert to a mind map or something visual like some type of decision tree.
+Comments: Still deciding what else makes sense to mention I might convert to a mind map or something visual like some type of decision tree.
 Purpose: This documentation discusses order to talk about system in system design interview.
 Status: Refinement
 Started: 2024-01-04
-EditDate: 2024-01-26
-Version: 2.9.0
+EditDate: 2024-03-16
+Version: 3.0.0
 Relates: 
 Peer Reviewed: 0
 dg-publish:
@@ -100,28 +100,11 @@ Talk testing architecture or [[Testing Hierarchy]] maybe using [[Test Driven Dev
 ### Scalability and Performance
 In the context of database servers and instances of your application, as well as any microservices within your codebase architecture, the concept of scaling can be categorized into [[Vertical vs Horizontal Scaling]]. Horizontal scaling is often preferred due to the limitations of vertical scaling. For instance, it's impossible to infinitely increase CPU and memory resources on a single server. Additionally, vertical scaling lacks failover and redundancy mechanisms. If one server experiences downtime, the entire website or application goes down with it completely. System tend to follow these common [[System Scalability Strategies]].
 
-To improve system scaling and performance you can use several technologies commonly used to distribute traffic across [[server pools]] like [[Load Balancer |load balancers]] 
+To improve system scaling and performance you can use several technologies commonly used to distribute traffic across [[server pools]] like [[Load Balancer |load balancers]]. 
+
+On the database side of thing there are things like [[Database Sharding]] and [[Master-Slave Database Architecture]] which tend to be used together the workload is distributed not only horizontally across shards but also vertically within each shard. This allows for greater scalability and performance gains by parallelizing both read and write operations across multiple database servers. Additionally, using master-slave setups within each shard provides fault tolerance and high availability within each shard. If the master server in a shard fails, one of the slave servers can be promoted to the new master, ensuring continuous operation and data availability for that shard.
 
 It's worth noting that scaling considerations can fall under administrative functionalities, whether that involves resource scaling in a cloud environment or implementing custom solutions such as creating an admin dashboard for internal use by developers. This dashboard could encompass various [[XII Admin processes]], offering insights and control over the scaling operations and other administrative tasks.
-  
-  
-  
- 
-  
-
-
-  - you can also talk about [[Database Sharding]].
-  
-  - You can also talk about [[Master-Slave Database Architecture]] in terms of replication and high availability
-  - Talk about 
-    - [[Data Retention Target]]
-    - [[Data Flow]]
-
-
-
-
-- [ ] [[System Design interview Scope]]
-
 
 
 ### Step 3: Wrap Up(3 - 5 minutes)
