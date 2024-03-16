@@ -10,7 +10,7 @@ Purpose: This documentation discusses the difference between reverse proxies, AP
 Status: Refinement
 Started: 
 EditDate: 2024-03-06
-Relates: "[[Proxy]]"
+Relates: "[[Network Infrastructure to use]]"
 Peer Reviewed: 0
 dg-publish:
 ---
@@ -18,7 +18,7 @@ dg-publish:
 
 As modern websites and applications are like busy beehives, we use a variety of tools to manage the buzz. Here we'll explore three superheroes: Reverse Proxy, API Gateway, and Load Balancer.  
   
-## Reverse Proxy: change identity  
+## [[Proxy |Reverse Proxy]]: change identity  
 - Fetching data secretly, keeping servers hidden.  
 - Perfect for shielding sensitive websites from cyber-attacks and prying eyes.  
   
