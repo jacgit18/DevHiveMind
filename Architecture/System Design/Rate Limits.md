@@ -36,3 +36,7 @@ While quotas are indispensable, excessive application can render a service unusa
 Quotas extend beyond external APIs, finding utility within corporate firewalls. For organizations opening enterprise "crown jewels" as APIs, quotas mitigate risks. They enable critical content availability for internal innovation, minimizing operational hiccups. Quotas empower internal API teams, infusing agility into the enterprise landscape.
 
 Unlocking API potential demands strategic orchestration aligning business objectives with data traffic nuances. Quotas emerge as linchpins, weaving business acumen and technical finesse in the dynamic realm of API management.
+
+
+#todo/Personal/High/Dev 
+- [ ] Look into https://blog.quastor.org/p/rate-limiting-stripe

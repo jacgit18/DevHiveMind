@@ -1,5 +1,6 @@
 ---
-tags: 
+tags:
+  - personalProcesses
 author:
   - jacgit18
 Purpose: This documentation discusses topics of focus for overall career to consider learning.
