@@ -18,6 +18,12 @@ dg-publish:
 #todo/Personal/Low/Dev 
 - [ ] https://towardsdatascience.com/why-im-learning-javascript-as-a-data-scientist-e2b87bcdac03
 
+#todo/Personal/Med/Dev 
+- [ ] https://towardsdatascience.com/how-to-talk-about-data-and-analysis-to-non-data-people-2457dc600219
+
+#todo/Personal/High/Dev 
+- [ ] https://learn.microsoft.com/en-us/credentials/certifications/power-bi-data-analyst-associate/
+
 The data should be described using business language, such as the attributes, related events, mappings of the values, example values, business rules, etc. An enterprise business glossary should be established to ensure each business term or acronym has a consistent definition for an organization. Appropriate categorizations and classification of data elements can further enhance the data descriptions. In other words, data should be described in a common language that anyone can understand and relate to what it represents. 
 
 ## Describe Data with Context and Data Flows 
