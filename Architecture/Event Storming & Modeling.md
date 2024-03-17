@@ -19,6 +19,10 @@ Event Storming is a collaborative modeling technique designed to unite cross-fun
 
 This collaborative approach to modeling serves as a catalyst for discussions and knowledge sharing, enabling the identification of crucial domain events, commands, and aggregates. By bringing together diverse perspectives, Event Storming helps uncover insights and align the team's understanding of the complex business domain.
 
+#todo/Personal/Low/Dev 
+- [ ] https://medium.com/lego-engineering/cloudy-with-a-chance-of-event-storming-73817afe10c2
+
+
 ## **Event Modeling**
 
 Event Modeling takes the insights gained from Event Storming further by creating a structured model based on the identified events. This modeling process often emphasizes specific subdomains to delve deeper into the intricacies of the system.
