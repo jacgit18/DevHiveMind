@@ -112,6 +112,7 @@ index.js # Entry point for the API
 #### Check out & maybe integrate
 #todo/Personal/Low/Dev 
 - [ ] Read https://newsletter.techworld-with-milan.com/p/why-you-should-build-a-modular-monolith
+- [ ] https://read.engineerscodex.com/p/how-airbnb-scaled-by-moving-away
 
 
 In a monolith, all parts of the application are closely interconnected, and communication between different functionalities is often direct within the same codebase.  

@@ -73,8 +73,8 @@
     "#todo/med/dev",
     "#todo/low/dev",
     "#todo/personal/low/dev",
-    "#todo/personal/high/dev",
-    "#todo/personal/med/dev"
+    "#todo/personal/med/dev",
+    "#todo/personal/high/dev"
   ],
   "_hiddenTags": []
 }
