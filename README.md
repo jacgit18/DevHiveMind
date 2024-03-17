@@ -25,7 +25,7 @@ I encourage contributions from the community. Here are some best practices for m
 
 - **Updating Existing Notes**: Contributors can update existing notes to keep them current by adding yourself as a author you can use github username and update the "EditDate" property if making changes to existing notes.
 
-- **Creating New Notes**: When creating new notes, use Markdown templates to maintain consistency in formatting specifically [[_Regular  Note]]template. Obsidian can help with this using custom templates by pressing `alt + n`. You can create your own templates to suit specific note types or add templates that you found effective. also follow this guideline around [[Adding Content]].
+- **Creating New Notes**: When creating new notes, use Markdown templates to maintain consistency in formatting specifically [[_Regular  Note]]template. Obsidian can help with this using custom templates by pressing `alt + n`. You can create your own templates to suit specific note types or add templates that you found effective. 
 
 - **Sharing Personal Experience**: I also believe in the value of personal experiences. Contributors are encouraged to share their real-world experiences in companies and teams. These stories can provide valuable insights, lessons learned, and tips for navigating the industry.
 
@@ -73,6 +73,7 @@ When managing intricate documentation in Enterprise-level companies, using tools
 5. Visit the original repository and click on the "New Pull Request" button.
 6. Select your branch as the source for the pull request and provide a clear explanation of your changes.
 7. The repository owner of the original project will review your pull request and decide whether to merge it into their repository.
+
 >[!note]
 >If you want auto push your local changes to your forked repo check out this script https://github.com/jacgit18/NoteScriptSyncer
 > 
