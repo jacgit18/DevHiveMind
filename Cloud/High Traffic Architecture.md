@@ -11,7 +11,7 @@ Started: 2024-03-16
 EditDate: 
 Relates: 
 Peer Reviewed: 0
-dg-publish:
+dg-publish: true
 ---
 To refine and optimize your setup, consider transitioning from Lambda and serverless architecture to using Elastic Beanstalk with EC2 instances. Since you're experiencing high traffic, Elastic Beanstalk provides more control and scalability compared to Lambda, which has some limitations regarding long-running processes and scalability for certain types of workloads.
 
