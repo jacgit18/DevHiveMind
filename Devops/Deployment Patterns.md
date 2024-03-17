@@ -5,11 +5,12 @@ tags:
 author:
   - jacgit18
   - chatgpt
+Comments: combine with related note.
 Purpose: This documentation discusses deployment patterns.
 Status: Done
 Started: 
 EditDate: 2024-02-22
-Relates: 
+Relates: "[[Deployment Strategies]]"
 Peer Reviewed: 0
 dg-publish:
 ---
