@@ -126,7 +126,10 @@ multi thread, stream, thread
   
 topics learned
 
-
+Create a linux command that can manipulate yaml front matter in markdown file like adding a property of a specific type  
+  
+  
+Use awk command and other Linux commands to deal with menial task
 
 - [ ] Ask chatgpt to summarize a book  
 - [ ] use chat GPT to create junction table ideas

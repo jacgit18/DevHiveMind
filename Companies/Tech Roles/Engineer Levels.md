@@ -5,7 +5,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Purpose: This documentation discusses responsibilities of a QA engineer.
+Purpose: This documentation discusses engineer levels.
 Status: Done
 Started: 
 EditDate: 2024-02-20
