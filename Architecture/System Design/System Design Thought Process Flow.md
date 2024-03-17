@@ -46,6 +46,7 @@ For more info read
 - [ ] [[System Design Interview An Insider’s Guide.pdf]] and [[System Design Interview - An Insider's Guide Second Edition|System Design notes]] on this book.
 - [ ] [[Designing Data-Intensive Applications The Big Ideas Behind Reliable, Scalable, and Maintainable Systems by Martin Kleppmann (z-lib.org).pdf |Designing Data-Intensive Applications]]
 - [ ] [[Software Architecture The Hard Parts Modern Trade-Off Analyses for Distributed Architectures (Neal Ford, Mark Richards, Pramod Sadalage etc.) (z-lib.org).pdf |Software Architecture The Hard Parts]]
+- [ ] https://betterprogramming.pub/graphic-design-for-software-engineers-and-architects-c616bb6c3366
 - [ ] https://medium.com/@karan99/system-design-netflix-6962b4f6222
 - [ ] https://interviewnoodle.com/algorithms-you-need-to-know-before-you-take-that-systems-design-interview-671608d61741
 ### Data Design & Database Architecture 

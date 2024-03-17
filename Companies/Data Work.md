@@ -13,7 +13,7 @@ Peer Reviewed: 0
 dg-publish:
 ---
 ![[DataBuisness.png]]
-## Describe Data in a Meaningful Way 
+## Describe Data Meaningfully 
 
 #todo/Personal/Low/Dev 
 - [ ] https://towardsdatascience.com/why-im-learning-javascript-as-a-data-scientist-e2b87bcdac03
