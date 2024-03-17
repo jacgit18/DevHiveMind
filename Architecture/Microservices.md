@@ -39,6 +39,8 @@ Benefits of microservices is you can choose to expose certain services publicly 
 
 ![[Microservice Roadmap.gif]]
 
+#todo/Personal/Low/Dev 
+- [ ] https://itnext.io/the-issue-with-sharing-data-in-a-microservice-architecture-d6a36f297ff5
 
 ## When to use microservice
 It makes sense to turn something into a microservice when you want to achieve scalability, maintainability, and independent deployment. However, administrative processes might not be suitable for microservices if they don't require frequent updates or scalability, and if their complexity doesn't warrant the overhead of a separate microservice. It's important to consider the trade-offs and benefits before deciding.

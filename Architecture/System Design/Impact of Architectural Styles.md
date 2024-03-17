@@ -29,7 +29,11 @@ The chosen architecture significantly influences how different components intera
 
 Let's explore how these architectural styles affect key components:  
 > These categories are not universally recognized or standardized within the field of software architecture just me grouping them 
-## **Codebase Integration**
+
+#todo/Personal/High/Dev 
+- [ ] https://medium.com/@iamprovidence/backend-side-architecture-evolution-n-layered-ddd-hexagon-onion-clean-architecture-643d72444ce4
+
+## Codebase Integration
 1. **Monolithic Architecture:**  
    - **Components:**  
     - In a monolithic architecture, all components (e.g., user interface, business logic, and data access) are tightly integrated into a single, unified codebase for the entire application.  
