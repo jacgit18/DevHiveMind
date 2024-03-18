@@ -9,7 +9,7 @@ This Software Development Knowledge Repository is a centralized and organized co
 >[!important]  
 >Only Commit PR to Peer Review Branch. There are no branch protections since private repo 
 
-
+Please Read [[CODE_OF_CONDUCT]]
 ## Key Features
 
 - **Topics Coverage**: The repository covers a wide range of software development topics, including programming languages, frameworks, design patterns, best practices, Architecture, and more.
@@ -62,7 +62,7 @@ Feel free to customize this template further to align with your specific goals f
 
 
 ## Steps to Contribute
-Follow these steps to contribute to a project also follow [[CODE_OF_CONDUCT]]:
+Follow these steps to contribute to a project:
 
 1. Fork the original repository to your GitHub account When forking repo make sure to select option for multiple branches so you can get peer review branch in fork.
 2. Clone your fork to your local machine using Git.
