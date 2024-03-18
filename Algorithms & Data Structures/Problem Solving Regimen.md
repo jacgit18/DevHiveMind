@@ -53,9 +53,9 @@ Go through leetcode hards make chatGPT add bugs and debug.
 ## Order of Patterns to Focus on 
 #### Pointer Manipulation/Comparison 
 1. Two Pointer
-2. Fast Slow Pointer
-3. Dummy Node
-4. Cyclic Sort(sort are comparison based) Low priority
+2. Fast Slow Pointer use While loop
+3. Dummy Node use While loop
+4. Cyclic Sort(sort are comparison based) Low priority use While loop
 #### Range 
 4. Sliding Window
 #### Search 
