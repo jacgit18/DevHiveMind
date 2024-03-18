@@ -1,9 +1,11 @@
 ---
-tags: 
+tags:
+  - personalProcesses
 author:
   - jacgit18
-Comments: Placeholder comment any thing else you want to mention about the document.
-Purpose: This documentation discusses
+  - chatgpt
+Comments: My developer roadmap along with the market is driving this OKR.
+Purpose: This documentation discusses current OKR working on.
 Status: Perpetual
 Started: 
 EditDate: 2024-03-13
@@ -72,7 +74,28 @@ dg-publish:
 
 
 
-
+  
+### Foundational Level:  
+1. **AWS Certified Cloud Practitioner**: Intended for individuals who have basic knowledge of AWS Cloud concepts, services, security, and architecture. It is a recommended starting point for those new to AWS.  
+  
+### Associate Level:  
+2. **AWS Certified Solutions Architect – Associate**: Designed for individuals who design distributed systems on AWS. It covers designing highly available, cost-efficient, fault-tolerant, and scalable systems.  
+3. **AWS Certified Developer – Associate**: Geared towards individuals who develop and maintain applications on AWS. It covers the development and deployment of AWS-based applications, as well as security best practices.  
+4. **AWS Certified SysOps Administrator – Associate**: Aimed at individuals who are responsible for deploying, managing, and operating systems on AWS. It covers tasks such as provisioning, operating, and maintaining systems.  
+  
+### Professional Level:  
+5. **AWS Certified Solutions Architect – Professional**: Intended for experienced solutions architects who design distributed systems on AWS. It covers advanced topics such as multi-tier architecture, migration strategies, and hybrid architecture.  
+6. **AWS Certified DevOps Engineer – Professional**: Geared towards individuals who perform DevOps roles with a focus on AWS. It covers continuous delivery, automation of security controls, and monitoring and logging practices.  
+  
+### Specialty Certifications:  
+7. **AWS Certified Advanced Networking – Specialty**: Designed for individuals who design and implement AWS and hybrid IT architectures at scale. It covers networking concepts, best practices, and security for complex networks.  
+8. **AWS Certified Security – Specialty**: Aimed at individuals who perform security-related tasks on AWS. It covers security best practices, data protection, and incident response.  
+9. **AWS Certified Machine Learning – Specialty**: Intended for individuals who design, implement, deploy, and maintain machine learning (ML) solutions on AWS. It covers ML concepts, algorithms, and AWS services for ML.  
+  
+### Business Professional:  
+10. **AWS Certified Alexa Skill Builder – Specialty**: Designed for individuals who build, test, and publish Amazon Alexa skills. It covers Alexa architecture, skill development, and testing.  
+  
+These certifications validate technical skills and expertise in various AWS technologies and services, ranging from foundational to advanced levels.
 
 
 
