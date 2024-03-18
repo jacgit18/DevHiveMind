@@ -7,22 +7,22 @@ Purpose: This documentation discusses
 Status: Perpetual
 Started: 
 EditDate: 2024-03-13
-Relates: 
+Relates: "[[Dev Roadmaps By Priority]]"
 dg-publish:
 ---
  
 ## Objective Key Results
 #todo/Personal/High/Dev 
 - [ ] Solve LeetCode problems and master Grokking Algorithm Patterns to pass technical interviews.
-	- [ ] Revisit mock technical problem next month.
-	- [ ] [[Problem Solving Regimen]]
+	- [ ] Revisit mock technical problems you tried next month.
+	- [ ] Follow [[Problem Solving Regimen]]
 	- [ ] Continue reading [[Grokking Algorithms - An illustrated guide for programmers and other curious people.pdf#page=160|Grokking page 160]]
-- [ ] System Design interview Prep [[System Design Thought Process Flow]]
-	- [ ] [[Popular Meta System & Product Design]]
-- [ ] AWS Cert or fundamentals look into pluralsight courses 
+- [ ] Brush up on AWS fundamentals and look into getting certs.
+- [ ] Finish [[System Design Thought Process Flow]] to start system Design interview Prep next month.
+	- [ ] Look into [[Popular Meta System & Product Design]] questions.
 - [ ] Portfolio Site
-	- [ ] Revisit Docker backend fix db and schema migration
-	- [ ] or Build frontend in docker as a tangible placeholder
+	- [ ] Revisit backend project with Docker fix Postgresql config so knex.js schema migration works
+	- [ ] or Build frontend in docker as a tangible placeholder and address postgresql later.
 	- [ ] Find API to leverage
 	- [ ] Refine [[Project Schema]]
 	- [ ] Maybe make it carpenter themed frontend to go with brand
@@ -30,9 +30,9 @@ dg-publish:
 
 
 
-## Coding Challenge Key Results
+## Coding Challenge Key Results 
 - Number of challenges a day.
-- Study solution try Debug exercise
+- Study solution use chatGpt to add bugs and try to debug.
 - Time Studying
 - Time of Day Coding
 - Time doing Mocks

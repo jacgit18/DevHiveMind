@@ -22,15 +22,22 @@ dg-publish:
 #todo/Personal/High/Dev 
 >[!note] 
 >Get to the level were you are doing 1 coding question a month while working full time
-- [ ] [[Clean Code]]
-- [ ] [[Microservices]]
+- [ ] Finish [[Clean Code]] documentation and review
+- [x] [[12 Factor App Docker.canvas|12 Factor App Docker]]
+
+#### Develop OKR for Next Quarter
+#todo/Personal/High/Dev 
+- [ ] [[Microservices]] 
 - [ ] [[Event Driven Architecture]] 
 - [ ] [[Reactive programming]]
 - [ ] [[Design Patterns & Gang of 4]]
 - [ ] [[Chaos Engineering]]
-- [ ] [[Domain-driven design]]depends on domain which may vary
+- [ ] [[Domain-driven design]] 
+	- [ ] Depends on domain which may vary identify the domain of interest and learn more about that domain and look for companies or company departments that align.   
+
+#### Review
+#todo/Personal/Med/Dev 
 - [ ] [[devops.pdf]]
-- [x] [[12 Factor App Docker.canvas|12 Factor App Docker]]
 - [ ] [[design-system.pdf]]
 - [ ] [[system-design.pdf]] 
 - [ ] [[api-security.pdf]]
