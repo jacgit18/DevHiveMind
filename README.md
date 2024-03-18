@@ -62,7 +62,7 @@ Feel free to customize this template further to align with your specific goals f
 
 
 ## Steps to Contribute
-**Follow these steps to contribute to a project:
+Follow these steps to contribute to a project also follow [[CODE_OF_CONDUCT]]:
 
 1. Fork the original repository to your GitHub account When forking repo make sure to select option for multiple branches so you can get peer review branch in fork.
 2. Clone your fork to your local machine using Git.
