@@ -12,7 +12,7 @@ Started: 2024-02-26
 EditDate: 
 Relates: 
 Peer Reviewed: 0
-dg-publish:
+dg-publish: true
 ---
 PHP, with its Zend Engine, serves as both [[Compiler]] and [[Runtime]] for the PHP scripting language. In contrast, [[Node.js]] utilizes the V8 engine. PHP is synchronous language offering tools for server installation, often used with Apache/ISS, while Node which is asynchronous operates as a JavaScript runtime, often with Express for dedicated servers. Composer is now a standard PHP package manager, whereas Node has NPM. PHP traditionally pairs with RDBMS like MySQL, while Node excels with NoSQL databases like MongoDB.
 

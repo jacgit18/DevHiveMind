@@ -15,7 +15,7 @@
   "noteIconKey": "dg-note-icon",
   "defaultNoteIcon": "",
   "showNoteIconOnTitle": true,
-  "showNoteIconInFileTree": false,
+  "showNoteIconInFileTree": true,
   "showNoteIconOnInternalLink": false,
   "showNoteIconOnBackLink": false,
   "showCreatedTimestamp": false,

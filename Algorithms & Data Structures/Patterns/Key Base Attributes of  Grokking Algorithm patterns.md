@@ -155,6 +155,7 @@ Reversing a linked list is a crucial technique in data structure manipulation an
 - **Use Cases:**
   - Sorting arrays with missing or duplicate elements in a known range.
   - Ensuring an array is sorted in place without additional memory overhead.
+  - The work is focused on the elements of array since fixed in terms of your dealing with a range of numbers with one or more numbers missing in the range.
 - **Hints:**
   - Look for problems involving array sorting without utilizing additional space.
   - Typically used when the elements are within a specific range and there are no duplicates.

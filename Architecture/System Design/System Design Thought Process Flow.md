@@ -46,6 +46,9 @@ For more info read
 - [ ] [[System Design Interview An Insider’s Guide.pdf]] and [[System Design Interview - An Insider's Guide Second Edition|System Design notes]] on this book.
 - [ ] [[Designing Data-Intensive Applications The Big Ideas Behind Reliable, Scalable, and Maintainable Systems by Martin Kleppmann (z-lib.org).pdf |Designing Data-Intensive Applications]]
 - [ ] [[Software Architecture The Hard Parts Modern Trade-Off Analyses for Distributed Architectures (Neal Ford, Mark Richards, Pramod Sadalage etc.) (z-lib.org).pdf |Software Architecture The Hard Parts]]
+- [ ] https://betterprogramming.pub/graphic-design-for-software-engineers-and-architects-c616bb6c3366
+- [ ] https://medium.com/@karan99/system-design-netflix-6962b4f6222
+- [ ] https://interviewnoodle.com/algorithms-you-need-to-know-before-you-take-that-systems-design-interview-671608d61741
 ### Data Design & Database Architecture 
   - Create an Entity Relationship Diagram (ERD) to define relationships.
   - Consider SQL for structured data and NoSQL for unstructured data.
@@ -71,6 +74,8 @@ You should also consider [[Fault Tolerance]] which refers to the system's resili
 Depending on the Architectural Styles you then should talk and identify major components of your system like [[Physical Servers vs Virtual Servers |physical or virtual servers]] which tend to be on premises or on cloud you can talk about the [[Benefits of cloud]] talking about cloud  in terms of outsourcing functionality or infrastructure using different service architecture ranging from IAAS to SAAS and benefiting from things like availability zones and other cloud services that add fault tolerance to the overall system. 
 
 When it comes to cloud services like AWS there are a broad range of services like include for [[Messaging systems]], [[Caches]] which if you implement locally you can improve response time, and [[Monitoring & Observability |monitoring/logging for metrics]]. You have things like `Amazon MQ`, `Amazon ElastiCache`, and `Amazon CloudWatch`. Alternatively if you don't want cloud solutions you can use things like [[Apache Kafka]], `Redis` for caching, or something like `Prometheus`. You also have services for things like static [[File System Storage]] services like `Amazon S3` which can be used with a [[Content Delivery Network |CDN]] improving traffic and fault tolerance. 
+
+If you expect system to process high traffic consider this [[High Traffic Architecture]]choice.
 
 When it comes to all these components you also want keep [[Data Flow]] in mind as well like all the different sources of data, the processing and transformation, storage, transportation and communication. Along with things like versioning, change management, and monitoring.  
 

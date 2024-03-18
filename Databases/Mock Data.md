@@ -14,6 +14,10 @@ Relates:
 Peer Reviewed: 0
 dg-publish:
 ---
+#todo/Personal/Low/Dev 
+- [ ] https://dev.to/omermorad/unit-test-like-a-pro-automock-my-open-source-answer-to-mocking-frustration-31p4
+- [ ] https://dev.to/iainfreestone/20-resources-for-generating-fake-and-mock-data-55g1
+
 ### Fixtures and Database Objects
 - A fixture is a database object that helps in testing.
 - When using mock data and adding, it's essential to check the fixture for previous data. If existing data is found, it should be flushed within the fixture method.

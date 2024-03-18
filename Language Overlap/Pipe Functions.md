@@ -11,7 +11,7 @@ Started:
 EditDate: 2024-03-02
 Relates: "[[Algorithm Most Common Built in Functions]]"
 Peer Reviewed: 0
-dg-publish:
+dg-publish: true
 ---
 ### Composition Function (Right-to-Left)
 

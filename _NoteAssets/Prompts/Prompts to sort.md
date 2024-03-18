@@ -126,8 +126,35 @@ multi thread, stream, thread
   
 topics learned
 
-
+Create a linux command that can manipulate yaml front matter in markdown file like adding a property of a specific type  
+  
+  
+Use awk command and other Linux commands to deal with menial task
 
 - [ ] Ask chatgpt to summarize a book  
 - [ ] use chat GPT to create junction table ideas
 - [ ] Please proofread for spelling, grammar, and readability. also add more to this introduction while SEO optimizing.
+
+# Stoicism for Business Success: 7 ChatGPT Prompts To Apply Its Wisdom
+
+“Assume the role of a business coach with a deep understanding of stoic philosophy and its application to modern business. In my current entrepreneurial endeavors, I'm facing specific obstacles such as `[describe the immediate challenges or situations you're dealing with]`. Can you help me reframe these current challenges as opportunities for growth and learning? How can I leverage these situations to benefit both my business and personal development?”
+
+
+“During my business activities, I often face situations such as [describe specific events or scenarios that trigger intense emotions]. Provide two simple exercises, based on the stoic principle of emotional detachment, that will help me cultivate emotional resilience and maintain a calm demeanor during these challenging times.”
+
+
+“In my business, I often find myself fixated on outcomes, especially in scenarios like [describe specific endeavors or efforts where the outcome was uncertain]. Can you provide guidance, drawing from Stoic principles, on how I can enjoy the process of doing the work rather than being fixated on the outcome? Additionally, suggest how I can change how I think about inputs to make them more enjoyable, so I become more indifferent to the results they may lead to.”
+
+
+“Recently, I've been working towards achieving [specific goal], and I've encountered a situation where I could potentially achieve more by [action that might compromise personal virtue], even though I know the right approach would be [ethical alternative]. Drawing from Stoic principles, can you guide me on how to navigate this situation while upholding my personal virtue and integrity? How can I make decisions that align with ethical conduct and long-term excellence, even when faced with tempting shortcuts?”
+
+
+
+“In my business, I’m working towards the following goals [list your goals] and it’s important that I [describe how you want to show up, and the values you want to live by]. To ensure continuous growth and learning, I want to adopt a daily reflective practice inspired by Stoic philosophy. Create a personalized set of five reflection questions based on what's important to me, so I can assess my decisions and actions at the end of each day.”
+
+
+
+“In my business, one process that could be unnecessarily complex is [describe the specific business process in detail]. Given the Stoic emphasis on simplicity and removing unnecessary elements, can you provide suggestions on how to streamline and simplify this process, ensuring it's more efficient and effective for both my team and our customers?”
+
+
+“Currently, my business focuses on [describe your business and its primary offerings or target market]. I want to think bigger and explore ways to serve a broader and more diverse community, inspired by the Stoic principle of cosmopolitanism. Can you provide insights and strategies on how I can expand my business's reach and impact, ensuring it resonates with a global audience?”
