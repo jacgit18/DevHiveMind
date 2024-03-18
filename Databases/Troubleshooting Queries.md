@@ -12,7 +12,7 @@ Started:
 EditDate: 
 Relates: 
 Peer Reviewed: 0
-dg-publish:
+dg-publish: true
 ---
 When debugging Knex.js queries, you may find the following methods helpful to log or inspect the generated SQL queries:  
   

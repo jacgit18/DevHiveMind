@@ -17,6 +17,15 @@ Relates:
 Peer Reviewed: 0
 dg-publish:
 ---
+#todo/Med/Dev 
+- [ ] refine and finalize format
+- [ ] https://www.gitclear.com/popular_software_engineering_metrics_and_how_they_are_gamed
+- [ ] https://keyua.org/blog/software-development-kpis-and-metrics/
+- [ ] https://www.stackshare.io/posts/software-engineering-metrics-kpis-your-starter-guide 
+- [ ] https://www.gitclear.com/diff_delta_factors
+
+![[metrics.gif]]
+
 ## Time to First Byte (TTFB)
 
 TTFB measures the time taken from the moment a client sends a request to a server until the client receives the first byte of data from the server. It is an indicator of server responsiveness and network latency. Example: A website’s TTFB is 200 milliseconds, indicating a fast initial response from the server.
@@ -92,10 +101,3 @@ Learning progress: It is important for software engineers to continually learn a
   
 It is important to note that while these metrics can provide valuable insights, they should not be used as the sole means of evaluating an individual's skills and learning. Other factors such as teamwork, communication, and problem-solving abilities should also be considered.  
   
-[https://www.gitclear.com/popular_software_engineering_metrics_and_how_they_are_gamed](https://www.gitclear.com/popular_software_engineering_metrics_and_how_they_are_gamed)  
-  
-[https://keyua.org/blog/software-development-kpis-and-metrics/](https://keyua.org/blog/software-development-kpis-and-metrics/)  
-  
-[https://www.stackshare.io/posts/software-engineering-metrics-kpis-your-starter-guide](https://www.stackshare.io/posts/software-engineering-metrics-kpis-your-starter-guide)  
-  
-[https://www.gitclear.com/diff_delta_factors](https://www.gitclear.com/diff_delta_factors)

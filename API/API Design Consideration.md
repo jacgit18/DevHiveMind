@@ -13,6 +13,10 @@ Relates:
 Peer Reviewed: 0
 dg-publish: true
 ---
+
+#todo/Personal/Low/Dev 
+- [ ] https://medium.com/api-center/api-design-practice-7fce69e6336c
+
 ### **Get-and-Set**
 *A fundamental approach in API design, comprising two operations:*
 - **Get:** Equivalent to CRUD's Read, returns the most recent resource value, null if non-existent.

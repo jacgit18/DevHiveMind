@@ -42,7 +42,8 @@ In summary, while gRPC is a powerful technology for server-to-server communicati
 
 
 ## gRPC Use Cases
-
+#todo/Personal/Low/Dev 
+- [ ] https://dev.to/zenstack/a-brief-history-of-api-rpc-rest-graphql-trpc-fme
 
 gRPC (gRPC Remote Procedure Call) is a high-performance, language-agnostic framework for building efficient and scalable distributed systems. You might choose to use gRPC in various scenarios:  
   

@@ -47,6 +47,8 @@ Unit testing plays a crucial role in the development of complex systems, especia
 In conclusion, unit testing is an invaluable practice in the development of complex systems, providing early bug detection, ensuring code stability, and contributing to the overall efficiency and reliability of the software development process.
 
 ## Unit Test Example
+#todo/Personal/Med/Dev 
+- [ ] Look into https://dev.to/one-beyond/the-5-principles-of-unit-testing-1p5f
 
 If you have an in-place sort function in TypeScript that doesn't return anything (i.e., it modifies the array in place), you can write unit tests for it using Jest. Here's an example:  
   
