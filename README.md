@@ -9,7 +9,9 @@ This Software Development Knowledge Repository is a centralized and organized co
 >[!important]  
 >Only Commit PR to Peer Review Branch. There are no branch protections since private repo 
 
-Please Read [CODE_OF_CONDUCT](./CODE_OF_CONDUCT.md)
+Please Read [[CODE_OF_CONDUCT]]
+
+
 ## Key Features
 
 - **Topics Coverage**: The repository covers a wide range of software development topics, including programming languages, frameworks, design patterns, best practices, Architecture, and more.

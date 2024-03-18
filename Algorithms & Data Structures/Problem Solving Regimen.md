@@ -53,7 +53,7 @@ dg-publish:
 1. Two Pointer
 2. Fast Slow Pointer
 3. Dummy Node
-4. Cyclic Sort(sort are comparison based)
+4. Cyclic Sort(sort are comparison based) work is focused on the elements of array since fixed in terms of your dealing with a range of numbers with one or
 #### Range 
 4. Sliding Window
 #### Search 
