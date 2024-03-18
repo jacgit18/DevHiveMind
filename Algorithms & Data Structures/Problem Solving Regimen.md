@@ -47,6 +47,8 @@ dg-publish:
 	- Create helper functions for code modularity also implementing proper [[Naming Conventions]]. 
 
 
+## Debug Regimen 
+Go through leetcode hards make chatGPT add bugs and debug.
 
 ## Order of Patterns to Focus on 
 #### Pointer Manipulation/Comparison 
