@@ -52,7 +52,7 @@ Go through leetcode hards make chatGPT add bugs and debug. Also while doing figu
 
 ## Order of Patterns to Focus on 
 #### Pointer Manipulation/Comparison 
-use while loop most of the time
+use while loop most of the time when number of iteration aren't known
 1. Two Pointer 
 2. Fast Slow Pointer 
 3. Dummy Node 
