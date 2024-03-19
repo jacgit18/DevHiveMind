@@ -58,15 +58,15 @@ For more info read
 ### Overall Architecture
 In a system design choosing the right [[Impact of Architectural Styles |Architectural Styles]] is important think about what is needed and purpose of the style. In addition to that you can leverage [[When to use Domain-Driven Design |Domain Driven Design]] with some of the different styles depending on domain complexity determines weather it is necessary to use meaning the more simpler the domain is the less need for domain driven design in my opinion. Also what [[IV Backing services]] would you leverage and why.
 
-#todo/Personal/High/Dev 
-- [ ] Finalize this part better
-In terms of styles popular ones include [[Microservices]] which tends to be used with [[Eureka Service]] if built in Java and monolithic architecture which is an example of a centralized system. In a monolithic architecture, the entire application is built as a single, indivisible unit, making it centralized and typically deployed on a single server or a closely connected set of servers. When it comes to microservices you can have stateless services and some statefull services that work together this relates to [[Stateless & Statefull Processes]] which relates to [[VIII Concurrency |12 factor app factor 8 concurrency]] which also relates to [[Distributed Locking]] which can be implemented with many technologies like [[ZooKeeper]] also Redis.
 
+In the realm of architectural styles, popular ones include [[Microservices]], often paired with [[Eureka Service]] in Java-based applications, and monolithic architecture, representing a centralized system. Monolithic architecture involves building the entire application as a single, indivisible unit, typically deployed on a single server or a closely connected set of servers. 
+
+Microservices, on the other hand, allow for both stateless and stateful services to collaborate. This concept is intertwined with [[Stateless & Statefull Processes]], which aligns with the   [[VIII Concurrency |Concurrency factor of the 12-factor app]]. Furthermore, this concurrency factor intersects with [[Distributed Locking]], which can be implemented using various technologies such as [[ZooKeeper]] and Redis.
 
 
 #todo/Personal/High/Dev 
 - [ ] Identify were to talk about  [[🌐 Internet Communication Process]] in terms of what you would use might be very granular or over kill could be wrong. also consider [[API Arch Styles]].
-- [ ] Also add stuff around security, maintainability, and user experience to cover the rest of the core concepts of system design.
+
 - [ ] maybe add stuff around circuit break pattern seems relevant to system design but you can say that about all design patterns but it seems like this one is used heavily in comparison to others patterns or one of the heavily used patterns need to verify this
 
 
@@ -82,6 +82,16 @@ When it comes to all these components you also want keep [[Data Flow]] in mind a
 
 There are other things like Networking components such as routers like [[Reverse proxy vs API gateway vs load balancer]].
 
+##### Deployment
+#todo/Personal/High/Dev 
+- [ ] update devops portion
+
+Maybe [[Continuous Integration |CI/CD]] which relates to [[V Build, release, run |12 factor app factor 5]]
+
+
+##### Security
+#todo/Personal/High/Dev 
+- [ ] Also add stuff around security, maintainability, and user experience to cover the rest of the core concepts of system design.
 
 ##### Testing
 #todo/Personal/High/Dev 
@@ -89,11 +99,7 @@ There are other things like Networking components such as routers like [[Reverse
 
 Talk testing architecture or [[Testing Hierarchy]] maybe using [[Test Driven Development]] or talk about test automation, [[Acceptance Testing]], [[Pre Acceptance Testing]], or [[Type of Testing Techniques]]
 
-##### Deployment
-#todo/Personal/High/Dev 
-- [ ] update devops portion
 
-Maybe [[Continuous Integration |CI/CD]] which relates to [[V Build, release, run |12 factor app factor 5]]
 
 #### Things to consider
 
