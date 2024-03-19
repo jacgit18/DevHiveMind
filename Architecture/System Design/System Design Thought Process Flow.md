@@ -59,7 +59,7 @@ For more info read
 In a system design choosing the right [[Impact of Architectural Styles |Architectural Styles]] is important think about what is needed and purpose of the style. In addition to that you can leverage [[When to use Domain-Driven Design |Domain Driven Design]] with some of the different styles depending on domain complexity determines weather it is necessary to use meaning the more simpler the domain is the less need for domain driven design in my opinion. Also what [[IV Backing services]] would you leverage and why.
 
 
-In the realm of architectural styles, popular ones include [[Microservices]], often paired with [[Eureka Service]] in Java-based applications, and monolithic architecture, representing a centralized system. Monolithic architecture involves building the entire application as a single, indivisible unit, typically deployed on a single server or a closely connected set of servers. 
+In the realm of architectural styles, popular ones include [[Microservices]] which can also help with overall system maintainability, often paired with [[Eureka Service]] in Java-based applications, and monolithic architecture, representing a centralized system. Monolithic architecture involves building the entire application as a single, indivisible unit, typically deployed on a single server or a closely connected set of servers. 
 
 Microservices, on the other hand, allow for both stateless and stateful services to collaborate. This concept is intertwined with [[Stateless & Statefull Processes]], which aligns with the   [[VIII Concurrency |Concurrency factor of the 12-factor app]]. Furthermore, this concurrency factor intersects with [[Distributed Locking]], which can be implemented using various technologies such as [[ZooKeeper]] and Redis.
 
@@ -91,7 +91,7 @@ Maybe [[Continuous Integration |CI/CD]] which relates to [[V Build, release, run
 
 ##### Security
 #todo/Personal/High/Dev 
-- [ ] Also add stuff around security, maintainability, and user experience to cover the rest of the core concepts of system design.
+- [ ] Also add stuff around security
 
 ##### Testing
 #todo/Personal/High/Dev 
@@ -99,7 +99,9 @@ Maybe [[Continuous Integration |CI/CD]] which relates to [[V Build, release, run
 
 Talk testing architecture or [[Testing Hierarchy]] maybe using [[Test Driven Development]] or talk about test automation, [[Acceptance Testing]], [[Pre Acceptance Testing]], or [[Type of Testing Techniques]]
 
-
+##### UI
+#todo/Personal/High/Dev 
+- [ ] State
 
 #### Things to consider
 
