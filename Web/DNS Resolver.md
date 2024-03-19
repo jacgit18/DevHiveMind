@@ -35,9 +35,9 @@ If you're using a load balancer, you'd typically connect to its IP or domain dir
   
 Keep in mind that browser-based JavaScript (client-side) is limited in making direct DNS queries due to security reasons. DNS resolution is usually handled by the browser or the underlying operating system. In a server-side environment (like Node.js), you have more flexibility.
 
+## DNS Resolver Implementation
 
-
-Load balancers like HAProxy and NGINX don't typically include a built-in DNS resolver themselves. They rely on the underlying operating system's DNS resolution capabilities. However, these load balancers are designed to work seamlessly with DNS.  
+[[Load balancer]] like HAProxy and NGINX don't typically include a built-in DNS resolver themselves. They rely on the underlying operating system's DNS resolution capabilities. However, these load balancers are designed to work seamlessly with DNS.  
   
 In a typical setup, you configure your load balancer with the IP addresses or hostnames of your backend servers. DNS resolution for these backend servers is performed by the system running the load balancer. If you need dynamic updates or have changing backend server addresses, you may need an external mechanism to update the load balancer's configuration.  
   

@@ -29,5 +29,6 @@ As modern websites and applications are like busy beehives, we use a variety of 
 ## [[Load Balancer]]: traffic cop  
 - Directs traffic evenly across servers, preventing bottlenecks  
 - Essential for popular websites with heavy traffic and high demand.  
-  
+![[loadvReverse.gif]]
+
 In a nutshell, choose a Reverse Proxy for stealth, an API Gateway for organized communications, and a Load Balancer for traffic control. Sometimes, it's wise to have all three - they make a super team that keeps your digital kingdom safe and efficient.
