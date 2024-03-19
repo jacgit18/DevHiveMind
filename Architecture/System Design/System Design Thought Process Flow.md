@@ -100,7 +100,9 @@ Maybe [[Continuous Integration |CI/CD]] which relates to [[V Build, release, run
 
 - Talk about leveraging [[Libraries vs Building From Scratch]] and the pros and cons around that in terms of potential dependencies issues.
 
-- Talk about API selection discuss the use of APIs for certain functionalities like auth or [[IV Backing services]].
+#todo/Personal/High/Dev 
+- [ ] Improve this part.
+- Talk about API selection discuss the use of APIs for [[API Provided Services]] or [[IV Backing services]] also picking API based on things like [[API Arch Styles]].
 
 - You can also talk about choosing tech stack based the potentially implementing a [[Migration Plan]] like sometimes the technologies you start out with doesn't make sense or you want to manage cost of your system.
 
