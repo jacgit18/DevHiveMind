@@ -22,6 +22,15 @@ Peer Reviewed: 0
 dg-publish:
 ---
 ![[System design core concepts.gif]]
+For more info read 
+#todo/Personal/High/Dev  
+- [ ] [[System Design Interview An Insider’s Guide.pdf]] and [[System Design Interview - An Insider's Guide Second Edition|System Design notes]] on this book.
+- [ ] [[Designing Data-Intensive Applications The Big Ideas Behind Reliable, Scalable, and Maintainable Systems by Martin Kleppmann (z-lib.org).pdf |Designing Data-Intensive Applications]]
+- [ ] [[Software Architecture The Hard Parts Modern Trade-Off Analyses for Distributed Architectures (Neal Ford, Mark Richards, Pramod Sadalage etc.) (z-lib.org).pdf |Software Architecture The Hard Parts]]
+- [ ] https://betterprogramming.pub/graphic-design-for-software-engineers-and-architects-c616bb6c3366
+- [ ] https://medium.com/@karan99/system-design-netflix-6962b4f6222
+- [ ] https://interviewnoodle.com/algorithms-you-need-to-know-before-you-take-that-systems-design-interview-671608d61741
+
 ### Step 1: Requirements Gathering 
 > **Establish a Understanding and Design Scope of problem (3 - 10 minutes)
 
@@ -41,14 +50,6 @@ When crafting your design, prioritize a forward-thinking approach that anticipat
 
 *Delve into the design by following the flow from Database ▶ Server/Services (Architecture) ▶ Client Side design.
 
-For more info read 
-#todo/Personal/High/Dev  
-- [ ] [[System Design Interview An Insider’s Guide.pdf]] and [[System Design Interview - An Insider's Guide Second Edition|System Design notes]] on this book.
-- [ ] [[Designing Data-Intensive Applications The Big Ideas Behind Reliable, Scalable, and Maintainable Systems by Martin Kleppmann (z-lib.org).pdf |Designing Data-Intensive Applications]]
-- [ ] [[Software Architecture The Hard Parts Modern Trade-Off Analyses for Distributed Architectures (Neal Ford, Mark Richards, Pramod Sadalage etc.) (z-lib.org).pdf |Software Architecture The Hard Parts]]
-- [ ] https://betterprogramming.pub/graphic-design-for-software-engineers-and-architects-c616bb6c3366
-- [ ] https://medium.com/@karan99/system-design-netflix-6962b4f6222
-- [ ] https://interviewnoodle.com/algorithms-you-need-to-know-before-you-take-that-systems-design-interview-671608d61741
 ### Data Design & Database Architecture 
   - Create an Entity Relationship Diagram (ERD) to define relationships.
   - Consider SQL for structured data and NoSQL for unstructured data.
@@ -64,12 +65,9 @@ In the realm of architectural styles, popular ones include [[Microservices]] whi
 Microservices, on the other hand, allow for both stateless and stateful services to collaborate. This concept is intertwined with [[Stateless & Statefull Processes]], which aligns with the   [[VIII Concurrency |Concurrency factor of the 12-factor app]]. Furthermore, this concurrency factor intersects with [[Distributed Locking]], which can be implemented using various technologies such as [[ZooKeeper]] and Redis.
 
 
-#todo/Personal/High/Dev 
-- [ ] Identify were to talk about  [[🌐 Internet Communication Process]] in terms of what you would use might be very granular or over kill could be wrong. also consider [[API Arch Styles]].
-
 You should also consider [[Fault Tolerance]] which refers to the system's resilience against failures, errors, or faults, ensuring uninterrupted operation and maintaining user experience. It encompasses proactive measures to handle failures gracefully and sustain availability. This principle applies universally across hardware, software, networks, and systems architecture. At its essence, fault tolerance anticipates failures as inevitable and seeks to minimize their impact through proactive strategies it also applies at and between each system component. 
 
-When it comes to fault tolerance there are many ways to improve including [[Circuit breaker pattern relationship with fault tolerance |Circuit Breaker Design Pattern]] which 
+When it comes to fault tolerance there are many ways to improve including [[Circuit breaker pattern relationship with fault tolerance |Circuit Breaker Design Pattern]] by monitoring interactions between services and, when a certain threshold of failures is reached, temporarily "opens" the circuit to prevent further requests from being sent. 
 
 Depending on the Architectural Styles you then should talk and identify major components of your system like [[Physical Servers vs Virtual Servers |physical or virtual servers]] which tend to be on premises or on cloud you can talk about the [[Benefits of cloud]] talking about cloud  in terms of outsourcing functionality or infrastructure using different service architecture ranging from IAAS to SAAS and benefiting from things like availability zones and other cloud services that add fault tolerance to the overall system. 
 
@@ -81,6 +79,11 @@ When it comes to all these components you also want keep [[Data Flow]] in mind a
 
 There are other things like Networking components such as routers like [[Reverse proxy vs API gateway vs load balancer]].
 
+
+#todo/Personal/High/Dev 
+- [ ] Identify were to talk about  [[🌐 Internet Communication Process]] in terms of what you would use might be very granular or over kill could be wrong. also consider [[API Arch Styles]].
+
+
 ##### Deployment
 #todo/Personal/High/Dev 
 - [ ] update devops portion
@@ -90,7 +93,8 @@ Maybe [[Continuous Integration |CI/CD]] which relates to [[V Build, release, run
 
 ##### Security
 #todo/Personal/High/Dev 
-- [ ] Also add stuff around security
+- [ ] update security portion
+Security measures like firewalls, intrusion detection systems, encryption, and access control mechanisms are part of the Infrastructure layer to protect the application from various security threats, including unauthorized access, data breaches, and DDoS attacks. you can also talk about [[Authentication vs Authorization]].
 
 ##### Testing
 #todo/Personal/High/Dev 
@@ -111,8 +115,6 @@ Talk testing architecture or [[Testing Hierarchy]] maybe using [[Test Driven Dev
 - Talk about API selection discuss the use of APIs for [[API Provided Services]] also picking API based on things like [[API Arch Styles]].
 
 - You can also talk about choosing tech stack based the potentially implementing a [[Migration Plan]] like sometimes the technologies you start out with doesn't make sense or you want to manage cost of your system.
-
-- Security measures like firewalls, intrusion detection systems, encryption, and access control mechanisms are part of the Infrastructure layer to protect the application from various security threats, including unauthorized access, data breaches, and DDoS attacks. you can also talk about [[Authentication vs Authorization]].
   
 - You can talk governance like [[Data Retention Target]] and [[Database data governance]] compliance, Infrastructure may include tools and processes to enforce compliance with regulatory requirements and organizational policies, ensuring data security and legal compliance. 
 
