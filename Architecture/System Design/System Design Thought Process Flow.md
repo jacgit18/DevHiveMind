@@ -56,15 +56,16 @@ For more info read
   - What type of [[Schema Design]] makes sense.
 
 ### Overall Architecture
-In a system design choosing the right [[Impact of Architectural Styles |Architectural Styles]] is important think about what is needed and purpose of the style. In addition to that you can leverage [[When to use Domain-Driven Design |Domain Driven Design]] with some of the different styles depending on domain complexity determines weather it is necessary to use meaning the more simpler the domain is the less need for domain driven design in my opinion.
+In a system design choosing the right [[Impact of Architectural Styles |Architectural Styles]] is important think about what is needed and purpose of the style. In addition to that you can leverage [[When to use Domain-Driven Design |Domain Driven Design]] with some of the different styles depending on domain complexity determines weather it is necessary to use meaning the more simpler the domain is the less need for domain driven design in my opinion. Also what [[IV Backing services]] you would leverage and why.
 
-In terms of styles popular ones include [[Microservices]] which tends to be used with [[Eureka Service]] if built in Java and monolithic architecture which is an example of a centralized system. In a monolithic architecture, the entire application is built as a single, indivisible unit, making it centralized and typically deployed on a single server or a closely connected set of servers.  
+#todo/Personal/High/Dev 
+- [ ] Finalize this part better
+In terms of styles popular ones include [[Microservices]] which tends to be used with [[Eureka Service]] if built in Java and monolithic architecture which is an example of a centralized system. In a monolithic architecture, the entire application is built as a single, indivisible unit, making it centralized and typically deployed on a single server or a closely connected set of servers. When it comes to microservices you can have stateless services and some statefull services that work together this relates to [[Stateless & Statefull Processes]] which relates to [[VIII Concurrency |12 factor app factor 8 concurrency]] which also relates to [[Distributed Locking]] which can be implemented with many technologies like [[ZooKeeper]] also Redis.
 
 
 
 #todo/Personal/High/Dev 
-- [ ] Identify where to integrate [[Stateless & Statefull Processes |Stateless vs Statefull]] application or process which relates to [[VIII Concurrency |12 factor app factor 8 concurrency]] which also relates to [[Distributed Locking]] which can be implemented with many technologies like [[ZooKeeper]] also Redis.
-- [ ] Identify were to talk about  [[🌐 Internet Communication Process]] in terms of what you would use might be very granular or over kill could be wrong.
+- [ ] Identify were to talk about  [[🌐 Internet Communication Process]] in terms of what you would use might be very granular or over kill could be wrong. also consider [[API Arch Styles]].
 - [ ] Also add stuff around security, maintainability, and user experience to cover the rest of the core concepts of system design.
 - [ ] maybe add stuff around circuit break pattern seems relevant to system design but you can say that about all design patterns but it seems like this one is used heavily in comparison to others patterns or one of the heavily used patterns need to verify this
 
@@ -100,9 +101,7 @@ Maybe [[Continuous Integration |CI/CD]] which relates to [[V Build, release, run
 
 - Talk about leveraging [[Libraries vs Building From Scratch]] and the pros and cons around that in terms of potential dependencies issues.
 
-#todo/Personal/High/Dev 
-- [ ] Improve this part.
-- Talk about API selection discuss the use of APIs for [[API Provided Services]] or [[IV Backing services]] also picking API based on things like [[API Arch Styles]].
+- Talk about API selection discuss the use of APIs for [[API Provided Services]] also picking API based on things like [[API Arch Styles]].
 
 - You can also talk about choosing tech stack based the potentially implementing a [[Migration Plan]] like sometimes the technologies you start out with doesn't make sense or you want to manage cost of your system.
 
