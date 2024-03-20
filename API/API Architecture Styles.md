@@ -22,7 +22,8 @@ dg-publish:
   
 2. **SOAP (Simple Object Access Protocol):** SOAP is a protocol for exchanging structured information in the implementation of web services. It typically uses XML for message formatting and can be transported over various protocols such as HTTP, SMTP, or TCP.  
   
-3. **REST (Representational State Transfer):** REST is an architectural style for designing networked applications, often used in the context of web services. It relies on standard HTTP methods (GET, POST, PUT, DELETE) for communication and operates over HTTP or HTTPS.  
+3. **REST (Representational State Transfer):** REST is an architectural style for designing networked applications, often used in the context of web services. It relies on standard HTTP methods (GET, POST, PUT, DELETE) for communication and operates over HTTP or HTTPS. 
+
 4. **Webhooks:** Webhooks are a mechanism for automatically sending real-time notifications or events from one application to another. They utilize HTTP(S) to deliver event payloads to predefined URLs, enabling integrations between different systems.  
   
 5. **GraphQL:** GraphQL is a query language and runtime for APIs, developed by Facebook. It provides a more efficient and flexible alternative to RESTful APIs by allowing clients to specify exactly what data they need from the server. GraphQL typically operates over HTTP or HTTPS.  
