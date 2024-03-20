@@ -11,7 +11,7 @@ Purpose: This documentation discusses black box testing tools and techniques.
 Status: Done
 Started: 
 EditDate: 2024-02-02
-Relates: "[[Type of Testing Techniques]]"
+Relates: "[[Types of Testing Technique]]"
 Peer Reviewed: 0
 dg-publish: true
 ---

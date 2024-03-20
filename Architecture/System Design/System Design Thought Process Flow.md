@@ -58,7 +58,7 @@ When crafting your design, prioritize a forward-thinking approach that anticipat
   - What type of [[Schema Design]] makes sense.
 
 ### Overall Architecture
-In a system design choosing the right [[Impact of Architectural Styles |Architectural Styles]] is important think about what is needed and purpose of the style. In addition to that you can leverage [[When to use Domain-Driven Design |Domain Driven Design]] with some of the different styles depending on domain complexity determines weather it is necessary to use meaning the more simpler the domain is the less need for domain driven design in my opinion. Also what [[IV Backing services]] would you leverage and why.
+In a system design choosing the right [[Impact of Architectural Styles |Architectural Styles]] is important think about what is needed and purpose of the style. In addition to that you can leverage [[When to use Domain-Driven Design |Domain Driven Design]] with some of the different styles depending on domain complexity determines weather it is necessary to use meaning the more simpler the domain is the less need for domain driven design in my opinion. Also what [[IV Backing services]] would you leverage and why also consider [[Test Driven Development]] depends on your priorities.
 
 
 In the realm of architectural styles, popular ones include [[Microservices]] which can also help with overall system maintainability, often paired with [[Eureka Service]] in Java-based applications, and monolithic architecture, representing a centralized system. Monolithic architecture involves building the entire application as a single, indivisible unit, typically deployed on a single server or a closely connected set of servers. 
@@ -81,39 +81,40 @@ When it comes to all these components you also want keep [[Data Flow]] in mind a
 There are other things like Networking components such as routers like [[Reverse proxy vs API gateway vs load balancer]].
 
 
-#todo/Personal/High/Dev 
-- [ ] Identify were to talk about  [[🌐 Internet Communication Process]] in terms of what you would use might be very granular or over kill could be wrong. also consider [[API Arch Styles]].
+##### API 
+When choosing an API, or other things like libraries, and frameworks you should prioritize alignment with your business requirements, including cost, long-term support, and desired functionality. Consider the [[API Provided Services |API specific services]] you need like maybe you need something like data retrieval, authentication, and file management. Evaluate [[API Architecture Styles]] like GraphQL, [[gRPC]], or REST to ensure compatibility with your system's needs.
 
+
+##### Protocols
+Depending on the feature you can leverage [[🌐 Internet Communication Process |web protocols]] like [[WebSockets]] directly or some library/framework that utilize it or both for things like chat apps or apps with real time data transmissions usually over TCP connection. But when it comes to other web protocols if your creating an feature with UDP protocol and this may be the same for other protocols your typically using the protocols indirectly meaning your leveraging a library or framework that is using protocols.
 
 ##### Deployment
-#todo/Personal/High/Dev 
-- [ ] update devops portion
+#todo/Personal/Med/Dev 
+- [ ] update devops portion may be overkill but also depends on the role and seniority as well. 
 
-Maybe [[Continuous Integration |CI/CD]] which relates to [[V Build, release, run |12 factor app factor 5]]
+[[Continuous Integration |CI/CD]] which relates to [[V Build, release, run |12 factor app factor 5 Build, Release, & Run]] also [[X-10 Dev prod parity]]
 
 
 ##### Security
-#todo/Personal/High/Dev 
-- [ ] update security portion
-Security measures like firewalls, intrusion detection systems, encryption, and access control mechanisms are part of the Infrastructure layer to protect the application from various security threats, including unauthorized access, data breaches, and DDoS attacks. you can also talk about [[Authentication vs Authorization]].
+For Security measures you can utilize several cloud services apart of your Infrastructure layer  like `AWS Firewall Manager`, `Amazon VPC`, `AWS IAM`, `AWS KMS`, and many other services to protect the application from various security threats, including [[Authentication vs Authorization |unauthorized]] access, data breaches, and DDoS attacks.
 
 ##### Testing
-#todo/Personal/High/Dev 
-- [ ] update testing portion
+Establish [[Pre Acceptance Testing]] and [[Acceptance Testing]] processes, integrating with DevOps for seamless deployment. Understand the [[Testing Hierarchy]], including unit, integration, system, and acceptance testing. Employ various [[Types of Testing Technique]] like black-box and white-box testing to ensure comprehensive test coverage and high-quality software delivery.
 
-Talk testing architecture or [[Testing Hierarchy]] maybe using [[Test Driven Development]] or talk about test automation, [[Acceptance Testing]], [[Pre Acceptance Testing]], or [[Type of Testing Techniques]]
+##### User Interface
+When designing user interface you want to consider multiple things like addhering to Web Content Accessibility Guidelines (WCAG) ensures your site is accessible to all users, including those with disabilities, fostering inclusivity and facilitating better search engine crawling and indexing, ultimately boosting SEO performance. 
 
-##### UI
-#todo/Personal/High/Dev 
-- [ ] ????
+There also things like Internationalization which is the practice of making your application adaptable to different languages, regions, and cultures without requiring code changes. Then you have Localization which  is the process of customizing a software application for a specific locale or target market, taking into account linguistic, cultural, and regulatory differences. This customization involves translating text strings, adapting date and time formats, adjusting currency symbols, and addressing other locale-specific requirements to ensure that the application resonates with users in the target region. This goes beyond translation; it involves tailoring the user experience to align with the cultural norms, preferences, and expectations of the target audience. This may include modifying images, colors, icons, and other visual elements to suit local sensibilities.
+
+Also implementing responsive design principles ensures your website adapts seamlessly to various devices, meeting Google's mobile-first indexing criteria and enhancing SEO performance. 
+
+You should also consider enhancing frontend performance by optimizing page load speed through strategies like minimizing HTTP requests, compressing images, leveraging browser caching, and using CDNs, thereby improving user experience and search engine rankings. 
 
 #### Things to consider
 
 - Talk about selecting components for system from different perspectives like how is the community support or technical documentation around the different technology options also cost.
 
 - Talk about leveraging [[Libraries vs Building From Scratch]] and the pros and cons around that in terms of potential dependencies issues.
-
-- Talk about API selection discuss the use of APIs for [[API Provided Services]] also picking API based on things like [[API Arch Styles]].
 
 - You can also talk about choosing tech stack based the potentially implementing a [[Migration Plan]] like sometimes the technologies you start out with doesn't make sense or you want to manage cost of your system.
   
