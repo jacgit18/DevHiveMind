@@ -23,10 +23,13 @@ The activities of building, releasing, and running an application typically occu
 
 These activities are tightly connected and usually occur within the Deployment and Maintenance stage because they are related to transitioning the application from the development and testing environment to the production environment. It's also within this stage that ongoing maintenance and support are provided to ensure the application runs smoothly and remains available to users.
 
+
 ![[Twelve Factor App Build, release, run]]
 
 ## Flashcard
-#devops
-what is the first stages of a application;;build
-what is the second stages of a application;;release
-what is the third stages of a application;;run
+#deploymentStages
+what is the first stages of a application;; Build stage.
+what is the second stages of a application;; Release stage.
+what is the third stages of a application;; Run stage.
+
+

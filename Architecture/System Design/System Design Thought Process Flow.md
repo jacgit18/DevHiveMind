@@ -92,7 +92,7 @@ Depending on the feature you can leverage [[🌐 Internet Communication Process 
 #todo/Personal/Med/Dev 
 - [ ] update devops portion may be overkill but also depends on the role and seniority as well. 
 
-[[Continuous Integration |CI/CD]] which relates to [[V Build, release, run |12 factor app factor 5 Build, Release, & Run]] also [[X-10 Dev prod parity]]
+[[Continuous Integration |CI/CD]] which relates to [[V Build, release, run |12 factor app factor 5 Build, Release, & Run]] also [[X-10 Dev prod parity]] across different environments.
 
 
 ##### Security
