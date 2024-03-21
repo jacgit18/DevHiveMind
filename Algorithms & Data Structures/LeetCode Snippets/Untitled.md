@@ -13,12 +13,12 @@ dg-publish:
 ---
 total sums is calculate using array length the reason this works is because were dealing with a fixed range of numbers 
 
-review
+
 `[1,2,3,5]` 
 
 ```javascript
 var missingNumber = function(nums) {
-    const n = nums.length;
+    const n = nums.length +1;
 
     let totalSum = (n * (n + 1)) / 2;
 
