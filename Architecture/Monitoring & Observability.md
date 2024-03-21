@@ -21,7 +21,7 @@ dg-publish:
   - **Components:** Monitoring tools generate alerts based on predefined thresholds, using metrics and logs to assess the system's overall health.
 
 ## Observability
-  - **Purpose:** Observability goes beyond monitoring by providing deep insights into the internal states and behaviors of a system.
+  - **Purpose:** Observability goes beyond monitoring by providing deep insights into the internal states and behaviors of a system also tends to be used along with [[Chaos Engineering]] in order to identify weakness in the overall system by injecting controlled failures and disrupption into a system.
   - **Components:** Observability relies on instrumentation, including logging and tracing, to gather detailed insights. Metrics contribute numerical data for a comprehensive understanding of system behavior.
 
 
