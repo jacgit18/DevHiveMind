@@ -15,3 +15,5 @@ dg-publish:
 When starting with AWS, the initial step involves creating a `root` account to gain administrative access to your AWS resources. Subsequently, it's crucial to establish a comprehensive budget within the `AWS Billing and Cost Management` console. This budget serves as a proactive measure to mitigate the risk of overspending by setting predefined spending thresholds. Additionally, configuring billing alerts can provide real-time notifications, ensuring timely intervention if expenditures approach or exceed the set limits. This proactive approach not only fosters financial accountability but also helps in optimizing resource allocation and cost-efficiency throughout your AWS journey.
 
 
+### AWS Trusted Advisor 
+This service offers comprehensive insights into your AWS infrastructure, allowing you to assess and refine your setup against industry best practices. It enables evaluation across various facets including cost optimization, performance, security, fault tolerance, and adherence to service limits.
