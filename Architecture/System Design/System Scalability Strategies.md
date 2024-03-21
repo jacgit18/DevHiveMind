@@ -5,7 +5,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: 
+Comments: Placeholder comment any thing else you want to mention about the document.
 Purpose: This documentation discusses the three primary scaling methodology that you end up picking from.
 Status: Refinement
 Started: 
@@ -38,3 +38,6 @@ Designing a scalable software system for large-scale operations is a complex tas
    - Challenges arise when attempting to optimize queries that span multiple data partitions.
 
 In summary, while these three main methods provide avenues for scalability, each has its trade-offs. Choosing the most appropriate approach depends on the specific requirements and characteristics of the software system, balancing factors such as simplicity, initial effort, and the need for independent scaling of components.
+
+
+Check out this insightful article on the nuances between performance and scalability: [Performance vs Scalability: Understanding the Difference](https://blog.professorbeekums.com/performance-vs-scalability/). It offers valuable insights into these key concepts, shedding light on their distinctions and importance in the realm of software engineering.
