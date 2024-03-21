@@ -12,7 +12,6 @@ Relates:
 Peer Reviewed: 0
 dg-publish:
 ---
-![[Docker.png]]
 
 A Docker image stands as a compact, self-sufficient, executable software entity encapsulating everything necessary for software execution — code, runtime, libraries, and system tools. Typically constructed from a Dockerfile, a text file with assembly instructions, these images are immutable, signifying that alterations prompt the creation of a new version rather than modifying the existing one.
 

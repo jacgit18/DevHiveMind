@@ -5,14 +5,19 @@ author:
   - jacgit18
   - chatgpt
 Purpose: This documentation discusses the relationship between containers, images, and volumes.
-Status: Done
+Status: Refinement
 Started: 
 EditDate: 2024-02-22
-Relates: "[[Docker Images & Containers]]"
+Relates: "[[12 Factor App Docker.canvas|12 Factor App Docker]]"
 Peer Reviewed: 0
 dg-publish:
 ---
 ![[Docker.gif]]
+Docker is a containerization platform that allows developers to package their applications and dependencies into lightweight, portable containers. These containers can run consistently across different environments, from development to production, without worrying about differences in underlying infrastructure.
+
+![[Docker.png]]
+
+
 
 - Docker Images and Containers: Docker images serve as blueprints for creating containers. Containers are instantiated from Docker images. Each container runs an instance of an image, allowing you to run multiple instances of the same application with isolated environments.  
   
