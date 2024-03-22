@@ -15,33 +15,8 @@ Relates:
 Peer Reviewed: 0
 dg-publish: true
 ---
-## Flashcard
-#modifiers
-which access modifier allows code visible to all classes;; public
-<!--SR:!2024-03-22,3,250-->
-What access modifier is limited to classes;; private
-<!--SR:!2024-03-22,3,250-->
-what modifier is limited to package;; protected
-<!--SR:!2024-03-22,3,250-->
-where can protected classes be accessed;; package and subclass
-<!--SR:!2024-03-22,3,250-->
-Which access modifier has more scope private or protected;; protected
-<!--SR:!2024-03-22,3,250-->
-What UML sign is for access [[Protected in Depth]] modifier;; hashtag
-<!--SR:!2024-03-22,3,250-->
-What UML sign is for access private modifier;; minus
-<!--SR:!2024-03-22,3,250-->
-What UML sign is for access public modifier;; plus
-<!--SR:!2024-03-22,3,250-->
-What UML sign is for mandatory;; asterisk
-<!--SR:!2024-03-22,3,250-->
-What UML sign is for optional;; O
-<!--SR:!2024-03-22,3,250-->
-What UML sign is for static member for attributes and methods;; underline or bold and underline
-<!--SR:!2024-03-22,3,250-->
-
 ## Modifiers 
- Access modifiers are keywords in certain languages that help to restrict the scope of ***attributes, classes, methods,and constructors (member):***
+ Access modifiers are keywords in certain languages that help to restrict the scope of attributes, classes, methods, and constructors (member)
 
 - **no-modifier** - this is `default` to what is known as "*package-private*" making it visible only within its packages (named groups of related classes). 
 
@@ -57,6 +32,32 @@ This product class diagram can repurposed for functions which would increase num
 - [ ] Create a object oriented programming structural model combined with a functional programming structural model
 - [ ] try using chatGPT to convert [[User Stories]] into high level object oriented class map breakdown down structure like below 
 
+
+## Flashcard
+**Doesn't show in spaced repetition plugin in probably obsidian reference under UML class sign** 
+
+#accessmod   
+which access modifier allows code visible to all classes;; public
+
+What access modifier is limited to classes;; private
+
+what modifier is limited to package;; protected
+
+where can protected classes be accessed;; package and subclass
+
+Which access modifier has more scope private or protected;; protected
+
+What UML sign is for access [[Protected in Depth]] modifier;; hashtag
+
+What UML sign is for access private modifier;; minus
+
+What UML sign is for access public modifier;; plus
+
+What UML sign is for mandatory;; asterisk
+
+What UML sign is for optional;; O
+
+What UML sign is for static member for attributes and methods;; underline or bold and underline
 
 ### UML Class Signs
 
@@ -118,3 +119,4 @@ This product class diagram can repurposed for functions which would increase num
 - **Synchronized** - methods can only be accessed by one thread at a time. 
 
 - **Volatile** - the value of an attribute is read from main memory and not cached thread-locally.
+

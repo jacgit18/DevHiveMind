@@ -30,7 +30,6 @@
   "podnotes",
   "obsidian-plugin-toc",
   "obsidian-textgenerator-plugin",
-  "obsidian-spaced-repetition",
   "convert-url-to-iframe",
   "obsidian-checklist-plugin",
   "readwise-official",
@@ -57,5 +56,6 @@
   "obsidian-sortable",
   "obsidian-rich-links",
   "digitalgarden",
-  "obsius-publish"
+  "obsius-publish",
+  "obsidian-spaced-repetition"
 ]

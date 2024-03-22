@@ -4,11 +4,14 @@
     "flashcardGoodText": "Good",
     "flashcardHardText": "Hard",
     "flashcardTags": [
+      "#accessmod",
       "#uml",
       "#contextSwitch",
-      "#modifiers"
+      "#deploymentStages",
+      "#cpuProcesses",
+      ""
     ],
-    "convertFoldersToDecks": false,
+    "convertFoldersToDecks": true,
     "cardCommentOnSameLine": false,
     "burySiblingCards": false,
     "showContextInCards": true,
@@ -44,5 +47,5 @@
   },
   "buryDate": "2024-03-21",
   "buryList": [],
-  "historyDeck": "UMLFlash"
+  "historyDeck": null
 }
