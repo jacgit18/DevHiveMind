@@ -9,7 +9,8 @@
       "#contextSwitch",
       "#deploymentStages",
       "#cpuProcesses",
-      "#API"
+      "#API",
+      "#deploymentKnowledge"
     ],
     "convertFoldersToDecks": true,
     "cardCommentOnSameLine": false,

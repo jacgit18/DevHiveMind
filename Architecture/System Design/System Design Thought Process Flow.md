@@ -89,29 +89,9 @@ When choosing an API, or other things like libraries, and frameworks you should 
 Depending on the feature you can leverage [[🌐 Internet Communication Process |web protocols]] like [[WebSockets]] directly or some library/framework that utilize it or both for things like chat apps or apps with real time data transmissions usually over TCP connection. But when it comes to other web protocols if your creating an feature with UDP protocol and this may be the same for other protocols your typically using the protocols indirectly meaning your leveraging a library or framework that is using protocols.
 
 ##### Deployment
-#todo/Personal/Med/Dev 
-- [ ] update devops portion may be overkill but also depends on the role and seniority as well. 
-
-[[Docker Construct Relationships |Docker]] containers encapsulate the application and all its dependencies, ensuring consistency between development, testing, and production environments streamlining the development lifecycle even at the local environment level also scaling well and integrates well with CI/CD piplines 
-
-in the context of devops and simplifying dev process for diff env 
-
-[[Continuous Integration |CI/CD]] which relates to [[V Build, release, run |12 factor app factor 5 Build, Release, & Run]] also [[X-10 Dev prod parity]] across different environments.
-
-[[Continuous Integration]]
-
-kubernetes container orchestration
+When building application you want to consider all your viable options this is were [[Deployment Strategies]] come in to play there are several ways you can go about then you can leverage technologies like [[Docker Construct Relationships |Docker]] and containerization which encapsulate the application along with all of its dependencies, ensuring consistency between development, testing, and production environments streamlining the development lifecycle even at the local environment level also scaling well and integrates well with CI/CD pipelines. This process relates to [[V Build, release, run |12 factor app factor 5 Build, Release, & Run]] also [[X-10 Dev prod parity]] which aims to maintain consistency across environments in terms of limiting the difference.
 
 
-[[Overview of Build Automation]]
-
-[[Deployment Strategies]]
-
-[[Deployment Patterns]]
-
-[[Staged Deployment]]
-
-[[Deployment Artifacts]]
 ##### Security
 For Security measures you can utilize several cloud services apart of your Infrastructure layer  like `AWS Firewall Manager`, `Amazon VPC`, `AWS IAM`, `AWS KMS`, and many other services to protect the application from various security threats, including [[Authentication vs Authorization |unauthorized]] access, data breaches, and DDoS attacks.
 

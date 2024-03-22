@@ -45,4 +45,4 @@ Staged deployment, also known as phased deployment or environment progression, i
 
 It's important to note that the specific stages and environments involved in a staged deployment may vary depending on the project's requirements and organization's practices. The key aspect is to progress through the environments in a controlled manner, ensuring that the code changes are thoroughly tested and validated before reaching the production environment.
 
-find /home/jac/Music/DevReps/src -type f -iname "*.jpg" -o -iname "*.png" -exec cp {} /home/jac/Videos/test \;
+
