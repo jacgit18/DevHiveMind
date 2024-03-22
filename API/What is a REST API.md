@@ -16,6 +16,12 @@ dg-publish: true
 ---
 An API, or Application Programming Interface, acts as a set of features and rules within a software program, facilitating interactions with other software or hardware. In the context of REST APIs, it provides public and private tools for accessing and manipulating REST resources through verbs such as GET, POST, PUT, and DELETE.
 
+### Use Cases of RESTful API
+- Building web services: RESTful APIs are commonly used to expose functionality and data from web applications to other systems or clients over the internet.  
+- Integrating systems: RESTful APIs enable different systems and applications to communicate and share data with each other in a standardized and interoperable manner.  
+- Mobile app development: RESTful APIs are often used as backend services for mobile apps, allowing them to interact with server-side resources and perform operations such as user authentication, data retrieval, and updates.  
+- Internet of Things (IoT): RESTful APIs can be used to facilitate communication between IoT devices and backend servers, enabling real-time data exchange and control of connected devices.
+
 ### API vs Servers
 APIs are deployed on servers, but it's important to understand that a server's capabilities extend far beyond hosting APIs. For instance, a server might be configured to perform regular tasks such as backing up your database every 24 hours, showcasing its versatile role in both maintenance and functionality.
 
@@ -82,3 +88,15 @@ In essence, the synergy of REST and API forms the backbone of modern web develop
 - RESTful routing involves creating URLs that are not only consistent but also aesthetically pleasing, promoting readability and maintainability for an overall elegant design.
 
 In essence, RESTful routing provides a structured and intuitive approach to designing APIs and web applications. By aligning with REST principles, developers can create powerful systems adhering to standardized and efficient patterns, fostering best practices in the ever-evolving landscape of web development. Embrace the RESTful philosophy, and let the elegance of your APIs mirror the simplicity and power of the underlying principles.
+
+## Flashcard
+#API
+What does API stand for;; Application Programming Interface.
+
+What does RESTful stand for;; Representational State Transfer.
+
+What is RESTful API;; an interface that allows systems to communicate and exchange data over HTTP.
+
+What is it based on;; It is based on a set of principles that define how resources are identified and addressed over the web.
+
+What are RESTful API used for;; API are used to expose functionality and data from web applications to other systems or clients over the internet.

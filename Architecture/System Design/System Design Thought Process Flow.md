@@ -98,7 +98,20 @@ in the context of devops and simplifying dev process for diff env
 
 [[Continuous Integration |CI/CD]] which relates to [[V Build, release, run |12 factor app factor 5 Build, Release, & Run]] also [[X-10 Dev prod parity]] across different environments.
 
+[[Continuous Integration]]
 
+kubernetes container orchestration
+
+
+[[Overview of Build Automation]]
+
+[[Deployment Strategies]]
+
+[[Deployment Patterns]]
+
+[[Staged Deployment]]
+
+[[Deployment Artifacts]]
 ##### Security
 For Security measures you can utilize several cloud services apart of your Infrastructure layer  like `AWS Firewall Manager`, `Amazon VPC`, `AWS IAM`, `AWS KMS`, and many other services to protect the application from various security threats, including [[Authentication vs Authorization |unauthorized]] access, data breaches, and DDoS attacks.
 

@@ -9,7 +9,7 @@
       "#contextSwitch",
       "#deploymentStages",
       "#cpuProcesses",
-      ""
+      "#API"
     ],
     "convertFoldersToDecks": true,
     "cardCommentOnSameLine": false,
@@ -28,7 +28,7 @@
     "multilineCardSeparator": "?",
     "multilineReversedCardSeparator": "??",
     "editLaterTag": "#edit-later",
-    "enableNoteReviewPaneOnStartup": true,
+    "enableNoteReviewPaneOnStartup": false,
     "tagsToReview": [
       "#review"
     ],
