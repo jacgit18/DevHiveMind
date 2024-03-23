@@ -48,7 +48,7 @@ Let's explore how these architectural styles affect key components:
      - Enhances maintainability by isolating changes within individual components.
 ## **Decomposition & Independence**
   
-3. **[[Microservices]] Architecture:**  
+3. **[[Microservices VS Monolithic Architecture |Microservices]] Architecture:**  
 	- **Components:**  
 		- Decomposes the system into independently deployable and scalable services, each responsible for specific business capabilities.  
 	- **Impact:**  

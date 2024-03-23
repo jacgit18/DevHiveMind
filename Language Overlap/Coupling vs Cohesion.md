@@ -35,7 +35,7 @@ Glasses offer loose coupling as they can be easily replaced without affecting th
 
 In the realm of software, microservices should embody loose coupling. This ensures they are not tightly dependent on one another, facilitating scalability and deployment ease.
 
-For instance, if one microservice encounters issues, others should continue functioning seamlessly. The diagram below illustrates the distinction between tightly coupled and loosely coupled [[Microservices]]:
+For instance, if one microservice encounters issues, others should continue functioning seamlessly. The diagram below illustrates the distinction between tightly coupled and loosely coupled [[Microservices VS Monolithic Architecture |Microservices]]:
 
 
 ![[coupling.jpg]]

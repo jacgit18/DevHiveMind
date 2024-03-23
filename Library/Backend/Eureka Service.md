@@ -22,7 +22,7 @@ Eureka is a service discovery(lookup table) tool primarily used in microservices
 Key features of Eureka:
 
 1. **Service Registration:**
-   - [[Microservices]] can register themselves with the Eureka server, providing metadata such as hostname, port, and health status.
+   - [[Microservices VS Monolithic Architecture |Microservices]] can register themselves with the Eureka server, providing metadata such as hostname, port, and health status.
 
 2. **Service Discovery:**
    - Eureka maintains a registry of all registered services. Other services can query this registry to discover the available services and their locations.

@@ -9,14 +9,17 @@ Purpose: This documentation discusses Microservices.
 Status: Refinement
 Started: 
 EditDate: 2024-03-07
-Relates: 
+Relates: "[[Project Structure]]"
 Peer Reviewed: 0
 dg-publish:
 ---
 ![[Monolithic vs Microservies.png]]
 
+When deciding between microservices and monolithic architecture for your software project, there are several important factors to consider. Both architectural approaches have their own advantages and challenges, and the choice should align with your specific project requirements and goals.
+
+
 ![[Monolithic to microservice progression.jpg]]
-Moving from Monolithic to microservice architecture stages.
+**Moving from Monolithic to microservice architecture stages.**
 
 
 The microservice architecture is a design paradigm where an application is structured to collect several independent services. The characteristics of these services are as follows: 

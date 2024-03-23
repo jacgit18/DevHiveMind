@@ -27,7 +27,7 @@ dg-publish:
 
 #### Develop OKR for Next Quarter
 #todo/Personal/High/Dev 
-- [ ] [[Microservices]] 
+- [ ] [[Microservices VS Monolithic Architecture |Microservices]] 
 - [ ] [[Event Driven Architecture]] 
 - [ ] [[Reactive programming]]
 - [ ] [[Design Patterns & Gang of 4]]
