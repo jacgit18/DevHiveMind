@@ -1,11 +1,11 @@
 ---
-cssclass: dashboard
+cssclasses:
+  - dashboard
 banner: "![[Hive Banner.gif]]"
 banner_y: 0.494
 banner_x: 0.5
 dg-home: true
 dg-publish: true
-
 ---
 <div class="title" style="color:#FFC300"; text-shadow: 0 0 10px rgba(255, 195, 0, 0.8);>Hive Mind Dashboard</div>
 
