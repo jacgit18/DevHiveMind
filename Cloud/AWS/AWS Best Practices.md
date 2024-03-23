@@ -1,5 +1,8 @@
 ---
-tags: 
+tags:
+  - cloud
+  - bestPractices
+  - AWS
 author:
   - jacgit18
   - chatgpt
@@ -15,6 +18,9 @@ dg-publish:
 ### Use Services like 
 
 AWS Trusted Advisor service offers comprehensive insights into your AWS infrastructure, allowing you to assess and refine your setup against industry best practices. It enables evaluation across various facets including cost optimization, performance, security, fault tolerance, and adherence to service limits.
+
+
+Instead of using the AWS Management Console user interface, consider leveraging the AWS Command Line Interface (CLI) or Software Development Kits (SDKs) for automation purposes. This approach allows for scripting and programmatic interaction with AWS services, streamlining repetitive tasks and enabling more efficient management of resources. Additionally, consider implementing automation workflows to further streamline processes, such as automatically executing tasks upon logging into the AWS account, reducing manual intervention and increasing productivity.
 
 ### AWS Account Setup & Budgeting
 - Create a `root` account to gain administrative access to AWS resources.

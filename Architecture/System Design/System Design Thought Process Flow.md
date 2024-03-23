@@ -57,6 +57,8 @@ When crafting your design, prioritize a forward-thinking approach that anticipat
   - More things to think about when deciding between [[Choosing Database]] 
   - What type of [[Schema Design]] makes sense.
 
+You can leverage ChatGPT to perform a CAP theorem analysis and a Kepner-Tregoe decision analysis, using weighted decisions to identify a concise list of choices for databases or other relevant technologies. This approach allows for a systematic evaluation of options based on their consistency, availability, and partition tolerance, as well as other criteria important to your decision-making process. By combining these analytical methods, you can efficiently narrow down your options and make informed decisions that align with your specific needs and preferences.
+
 ### Overall Architecture
 In a system design choosing the right [[Impact of Architectural Styles |Architectural Styles]] is important think about what is needed and purpose of the style. In addition to that you can leverage [[When to use Domain-Driven Design |Domain Driven Design]] with some of the different styles depending on domain complexity determines weather it is necessary to use meaning the more simpler the domain is the less need for domain driven design in my opinion. Also what [[IV Backing services]] would you leverage and why also consider [[Test Driven Development]] depends on your priorities.
 
@@ -91,6 +93,11 @@ Depending on the feature you can leverage [[🌐 Internet Communication Process 
 ##### Deployment
 When building application you want to consider all your viable options this is were [[Deployment Strategies]] come in to play there are several ways you can go about then you can leverage technologies like [[Docker Construct Relationships |Docker]] and containerization which encapsulate the application along with all of its dependencies, ensuring consistency between development, testing, and production environments streamlining the development lifecycle even at the local environment level also scaling well and integrates well with CI/CD pipelines. This process relates to [[V Build, release, run |12 factor app factor 5 Build, Release, & Run]] also [[X-10 Dev prod parity]] which aims to maintain consistency across environments in terms of limiting the difference.
 
+Popular technologies for things like CI/CD includes `Jenkins`, `Travis CI`, `CircleCI`, `TeamCity`, `Bamboo`, or `AWS CodePipeline`.
+
+If we decided on more of a manual deployment strategy you can use `Bash Scripts`, also config management tools like `Ansible` and deployment automation tools like `Capistrano` just know there are a lot of repetitive task between these tools and using a combination of these tools may introduce complexity and overhead, particularly when managing dependencies and ensuring consistency across deployments.
+
+When it comes Blue/Green deployment and Canary Releases/Deployments strategy you can use technologies like `AWS Elastic Beanstalk`, `AWS CodeDeploy`, `Kubernetes`, `Docker Swarm`, or `Terraform`
 
 ##### Security
 For Security measures you can utilize several cloud services apart of your Infrastructure layer  like `AWS Firewall Manager`, `Amazon VPC`, `AWS IAM`, `AWS KMS`, and many other services to protect the application from various security threats, including [[Authentication vs Authorization |unauthorized]] access, data breaches, and DDoS attacks.
