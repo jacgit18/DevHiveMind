@@ -11,7 +11,7 @@ Started:
 EditDate: 2024-01-31
 Relates: 
 Peer Reviewed: 0
-dg-publish: true
+dg-publish: false
 ---
 ![[CORS.gif]]
 Cross-Origin Resource Sharing (CORS) is an HTTP-header based mechanism facilitating secure resource sharing between web pages from distinct origins. It enables a server to specify which external origins (domains, schemes, or ports) are permitted to load resources, safeguarding against unauthorized access.

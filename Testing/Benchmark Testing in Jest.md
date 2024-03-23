@@ -14,7 +14,7 @@ Started: 2023-10-30
 EditDate: 2024-02-02
 Relates: "[[Testing in Jest]]"
 Peer Reviewed: 0
-dg-publish: true
+dg-publish: false
 ---
 1. Install Necessary Dependencies:
    Make sure you have TypeScript and the benchmarking library installed. You can install them with npm or yarn:

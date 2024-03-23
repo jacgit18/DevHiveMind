@@ -14,7 +14,7 @@ Status: Done
 Started: 
 EditDate: 2024-03-04
 Relates: 
-dg-publish: true
+dg-publish: false
 ---
 Venture capital firms are specialized financial entities that target startups and emerging companies with strong growth prospects. They primarily seek out businesses in sectors known for rapid expansion, such as tech, biotech, and software, where the potential for substantial returns on investment is high.
 

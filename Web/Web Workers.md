@@ -13,7 +13,7 @@ Started: 2023-11-23
 EditDate: 2024-02-06
 Relates: 
 Peer Reviewed: 0
-dg-publish: true
+dg-publish: false
 ---
 You can leverage the `Worker` API to execute functions concurrently in pure JavaScript, eliminating the need for HTML. Here's an illustrative example: 
 

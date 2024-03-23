@@ -9,7 +9,7 @@ Status: Done
 Started: 
 EditDate: 2024-02-20
 Relates: 
-dg-publish: true
+dg-publish: false
 ---
 
 A **business systems analyst** serves as a vital intermediary between a company and its technology infrastructure. Their primary role is to assist businesses in leveraging computer systems and software to address challenges and enhance operational efficiency.

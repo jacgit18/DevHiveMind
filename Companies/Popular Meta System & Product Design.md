@@ -9,7 +9,7 @@ Status: Done
 Started: 2024-01-29
 EditDate: 
 Relates: 
-dg-publish: true
+dg-publish: false
 ---
 - How would you design Instagram / Instagram Stories?  
 - How would you design Whatsapp?  

@@ -9,7 +9,7 @@ Status: Done
 Started: 2023-12-12
 EditDate: 
 Relates: "[[PI Planning]]"
-dg-publish: true
+dg-publish: false
 ---
 **Agile Frameworks Overview:**
 Agile is a mindset employing various frameworks like Scrum, an iterative and incremental software development framework. The process involves a product backlog transitioning into a sprint backlog after sprint planning.

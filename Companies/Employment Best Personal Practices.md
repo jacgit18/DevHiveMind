@@ -10,7 +10,7 @@ Status: Perpetual
 Started: 
 EditDate: 2024-02-20
 Relates: 
-dg-publish: true
+dg-publish: false
 ---
 When terminated from a job, be sure to request a formal letter explaining the reasons behind your termination. Additionally, avoid quitting a job abruptly, as it can have similar consequences to being fired, potentially impacting your eligibility for unemployment benefits.
 

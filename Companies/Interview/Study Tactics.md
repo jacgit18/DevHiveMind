@@ -10,7 +10,7 @@ Status: Perpetual
 Started: 
 EditDate: 2024-03-05
 Relates: 
-dg-publish: true
+dg-publish: false
 ---
 ## Effective Study Techniques
 - **Structured Study Sessions:** Dedicate 2 hours per study session with a 1-hour break in between, maintaining a 4-hour gap between sessions.

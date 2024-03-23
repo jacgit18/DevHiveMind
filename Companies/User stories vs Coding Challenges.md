@@ -10,7 +10,7 @@ Started:
 EditDate: 2024-02-20
 Relates: 
 Peer Reviewed: 0
-dg-publish: true
+dg-publish: false
 ---
 User stories and coding challenges share the commonality of presenting problems to solve, but they differ in scope and context. A coding challenge is typically a specific, isolated problem that requires a technical solution. It is akin to a puzzle that needs to be solved within the constraints of a provided prompt. In contrast, a user story is broader in scope and is generally framed within the context of business requirements, often articulated through OKRs (Objectives and Key Results). User stories involve a deeper understanding of the needs of end-users and can evolve with changing business priorities.
 

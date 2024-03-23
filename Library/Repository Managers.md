@@ -14,7 +14,7 @@ Started:
 EditDate: 2024-02-03
 Relates: 
 Peer Reviewed: 0
-dg-publish: true
+dg-publish: false
 ---
 There are several alternative services and repositories to Maven Central that you can use for managing and hosting your Java project dependencies. Some popular ones include:  
   

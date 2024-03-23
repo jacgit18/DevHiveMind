@@ -11,7 +11,7 @@ Started:
 EditDate: 2024-03-03
 Relates: "[[Model Patterns]]"
 Peer Reviewed: 0
-dg-publish: true
+dg-publish: false
 ---
 When making API calls on the backend it is typically done in the controller and service layers, there are other layers in which it might make sense to make API calls based on the design and requirements of your application. Here are a few examples:
 
