@@ -18,7 +18,7 @@ dg-publish:
 ---
 ![[Circle Implements Shape Interface.png]]
 
-#todo/Med/Dev 
+#todo/High/Dev
 - [ ] Clean up and combine or backlinks to other notes that discuss interface getting rid of repeating information.
 
 **The Interface Segregation Principle** states that a client should not implement an [interface](http://javarevisited.blogspot.com/2012/04/10-points-on-interface-in-java-with.html) if it doesn't use all of its functionality. This often occurs when an interface contains multiple features, but the client only requires one of them. Interfaces should be specific, focusing on individual tasks rather than trying to do many different things.

@@ -119,5 +119,5 @@ Certainly! Caches play a crucial role in optimizing data access and improving sy
 Each type of cache is designed to address specific performance challenges, balancing the trade-offs between speed, capacity, and complexity based on the requirements of the system or application.
 
 
-#todo/High/Dev 
+#todo/Personal/High/Dev 
 - [ ] Look into https://tigerabrodi.blog/deep-dive-into-http-caching
