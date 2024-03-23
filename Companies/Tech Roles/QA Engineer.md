@@ -10,7 +10,7 @@ Status: Done
 Started: 
 EditDate: 2024-02-20
 Relates: 
-dg-publish: false
+dg-publish: true
 ---
 **Elevating Quality Assurance Excellence: Core Responsibilities of QA Engineers**
 

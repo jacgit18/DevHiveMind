@@ -1,6 +1,6 @@
 ---
 tags: 
-author: []
+author: 
 Comments: Placeholder comment any thing else you want to mention about the document.
 Purpose: This documentation discusses
 Status: Done
@@ -8,7 +8,7 @@ Started: 2024-03-21
 EditDate: 
 Relates: 
 Peer Reviewed: 0
-dg-publish:
+dg-publish: true
 ---
 Regardless of the database technology you choose, whether it's PostgreSQL or another RDBMS, you'll need to host it somewhere. Hosting a database typically involves running it on servers, either on-premises or in the cloud.  
   

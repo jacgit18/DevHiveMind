@@ -10,7 +10,7 @@ Status: Done
 Started: 
 EditDate: 2024-02-20
 Relates: 
-dg-publish: false
+dg-publish: true
 ---
 **Crafting Clarity in Complexity: The Dynamic Role of Technical Writers**
 
