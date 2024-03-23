@@ -11,7 +11,7 @@ Started:
 EditDate: 
 Relates: 
 Peer Reviewed: 0
-dg-publish: false
+dg-publish: true
 ---
 ![[tree.gif]]
 ## Tree 

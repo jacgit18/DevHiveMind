@@ -10,7 +10,7 @@ Started:
 EditDate: 2024-02-22
 Relates: 
 Peer Reviewed: 0
-dg-publish: false
+dg-publish: true
 ---
 The release process in software development is a structured sequence of steps that ensures a new version of a software product is successfully delivered to users. Here's a detailed breakdown of the release process:
 

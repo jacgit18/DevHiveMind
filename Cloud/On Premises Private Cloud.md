@@ -1,7 +1,6 @@
 ---
 tags: 
-author:
-  - gitUserNamePlaceHolder
+author: []
 Comments: Placeholder comment any thing else you want to mention about the document.
 Purpose: This documentation discusses
 Status: Done
@@ -9,7 +8,7 @@ Started: 2024-03-21
 EditDate: 
 Relates: 
 Peer Reviewed: 0
-dg-publish:
+dg-publish: true
 ---
 Here are some technologies and steps commonly used to set up and manage an on-premises private cloud:
 

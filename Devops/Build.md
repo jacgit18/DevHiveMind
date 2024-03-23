@@ -10,7 +10,7 @@ Started:
 EditDate: 2024-02-22
 Relates: 
 Peer Reviewed: 0
-dg-publish: false
+dg-publish: true
 ---
 In programming, a 'build' refers to a specific version of a software program, identified by a unique build number. It involves compiling source code, linking libraries, packaging assets, and creating executable software. The 'Build' encompasses the entire process of delivering your software, including steps like generating sources, compiling and testing, packaging into formats like JAR or WAR, and performing health checks. Modern practices favor full automation through tools like Maven or Ant, enabling Continuous Integration for seamless development workflows.
 

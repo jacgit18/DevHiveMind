@@ -1,6 +1,7 @@
 ---
 tags:
   - devops
+  - scalability
 author:
   - jacgit18
   - chatgpt
@@ -10,7 +11,7 @@ Started:
 EditDate: 2024-02-22
 Relates: "[[Deployment Strategies]]"
 Peer Reviewed: 0
-dg-publish: false
+dg-publish: true
 ---
 ![[Software Life Cycle.gif]]
 

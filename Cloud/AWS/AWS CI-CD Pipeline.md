@@ -13,7 +13,7 @@ Started: 2024-03-23
 EditDate: 
 Relates: 
 Peer Reviewed: 0
-dg-publish:
+dg-publish: true
 ---
 After setting up your CI/CD pipeline with technologies like Jenkins or AWS services like ECS, EKS, or ECR for Docker container management and AWS CodePipeline for automation, you would typically use AWS CodeDeploy or Kubernetes-native deployment tools for releasing your application.  
   
