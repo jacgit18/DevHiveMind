@@ -22,23 +22,17 @@ When deciding between microservices and monolithic architecture for your softwar
 **Moving from Monolithic to microservice architecture stages.**
 
 
-The microservice architecture is a design paradigm where an application is structured to collect several independent services. The characteristics of these services are as follows: 
 
-For each microservice has its own database
+The microservice architecture is a design paradigm that structures an application into multiple independent services, each with its own database. These services exhibit the following characteristics:
 
--   Organized around a specific business capability 
-    
--   Own by a small team 
-    
--   Independently deployable 
-    
--   Highly scalable 
-    
--   Loosely coupled 
-    
--   Highly maintainable and testable
+- Organized around specific business capabilities
+- Owned by small, dedicated teams
+- Independently deployable
+- Highly scalable
+- Loosely coupled
+- Highly maintainable and testable
 
-Benefits of microservices is you can choose to expose certain services publicly like an API and keep others privately
+One of the key benefits of microservices is the flexibility to expose certain services publicly, such as through an API, while keeping others private.
 
 ![[Microservice Roadmap.gif]]
 
