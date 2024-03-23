@@ -16,10 +16,6 @@ dg-publish:
 ---
 ![[cacheEveryWhere.jpeg]]
 
-The main difference between unstructured data and structured data is that structured data is typically used for general stuff and it's very organized like user accounts and the information associated with that as for unstructured is typically did I like media audio, geo-location, and weather 
-
-Besides that, you want the other servers for database application you would want a master that handles the crud(Create Read Update Delete) processes and the copies would handle the reading operation you'll probably have more slaves databases and proportion to master the reason we want this because it allows queries to be processed in parallel Which is good for performance 
-
 A cache is a small, faster storage layer that holds copies of frequently accessed data or computations, making future requests for that data faster than retrieving it from the original, slower storage location. It's used in various areas of computing, from web browsers (storing web pages or images for quicker access on return visits) to CPUs (storing instructions and data close to the processor to reduce the time it takes to execute programs). The fundamental idea is to reduce access times and improve data retrieval speeds, thereby enhancing overall system performance.
 
 

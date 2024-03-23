@@ -12,7 +12,7 @@ Status: Final
 Started: 
 EditDate: 2024-02-20
 Relates: 
-dg-publish: true
+dg-publish: false
 ---
 create a process flow for a manager requesting for a new hire providing information like there name, job title, job level, location, and specific skills wanted for role in addition comparing the job level to a skill matrix with list of skills and things like priority, and proficiency level associated with specific job level for software engineers  
   

@@ -54,6 +54,7 @@ When crafting your design, prioritize a forward-thinking approach that anticipat
 ### Data Design & Database Architecture 
   - Create an Entity Relationship Diagram (ERD) to define relationships.
   - Consider SQL for structured data and NoSQL for unstructured data.
+  - You can discuss [[Industry Structured & Unstructured Data |Structured & Unstructured Data]]
   - More things to think about when deciding between [[Choosing Database]] 
   - What type of [[Schema Design]] makes sense.
 
