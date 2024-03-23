@@ -14,7 +14,10 @@ Relates:
 Peer Reviewed: 0
 dg-publish:
 ---
-A cache functions as a temporary storage layer, providing faster access to frequently used data or computations compared to the original, slower storage location. It is utilized in various computing domains, such as web browsers, where it accelerates access to web pages or images during return visits, and CPUs, where it stores instructions and data near the processor, reducing program execution times. Caches aim to reduce access times and improve data retrieval speeds, thereby enhancing overall system performance. Typically smaller in size and with faster access times, caches serve as temporary storage solutions to reduce latency and ease the load on servers and databases. They are present at multiple levels within computing systems, including:
+A cache functions as a temporary storage layer, providing faster access to frequently used data or computations compared to the original, slower storage location. It is utilized in various computing domains, such as web browsers, where it accelerates access to web pages or images during return visits, and CPUs, where it stores instructions and data near the processor, reducing program execution times. Caches aim to reduce access times and improve data retrieval speeds, thereby enhancing overall system performance. 
+
+
+Caches, usually smaller and faster in access times, act as temporary storage solutions, reducing latency and alleviating the burden on servers and databases. Effective cache utilization is advisable for data that is frequently read but infrequently modified. However, critical data should be stored in persistent data stores to mitigate the risk of volatile memory loss on cache server restarts.
 
 
 # Cache Types
@@ -83,9 +86,7 @@ Mitigating failures: A single cache server represents a potential single point o
 ## Cache Policies 
 Various policies govern the management of cached data, including LRU (Least Recently Used), LFU (Least Frequently Used), and FIFO (First-In-First-Out). LRU evicts cached data that hasn't been accessed for the longest time when the cache is full. LFU prioritizes evicting data accessed the least frequently. FIFO removes data stored in the cache for the longest duration when capacity is reached.
 
-Effective cache usage is recommended for frequently read, infrequently modified data. However, vital data should be stored in persistent data stores, as cache servers may lose volatile memory upon restart.
-
-Implementing an expiration policy is crucial. It ensures timely removal of expired cached data, preventing permanent storage in memory. Striking a balance in expiration dates is advised, avoiding excessively short durations to prevent frequent database reloads and steering clear of overly long durations to prevent stale data.
+Implementing an expiration policy is crucial. It ensures timely removal of expired cached data, preventing permanent storage in memory. Striking a balance in expiration dates is advised, avoiding excessively short duration's to prevent frequent database reloads and steering clear of overly long duration's to prevent stale data.
 
 Eviction Policy:Once the cache is full, any requests to add items to the cache might cause existing items to be removed. This is called cache eviction. Least-recently-used(LRU) is the most popular cache eviction policy. Other eviction policies, such as the Least Frequently Used (LFU) or First in First Out (FIFO), can be adopted to satisfy different use cases. 
 
