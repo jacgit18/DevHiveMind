@@ -55,28 +55,12 @@ When crafting your design, prioritize a forward-thinking approach that anticipat
 
 Create an Entity Relationship Diagram (ERD) to define clear relationships in data model and come up with general feature endpoints.
 
-#### Memory Storage Estimate Example
-- Memory: Read requests per day * average request size * 20%
-- Cache for Instagram highlights: 150 GB (300 million requests * 500 bytes)
-- Adjusted cache: 30 GB (20% of 150 GB)
-- Total memory: 90 GB (30 GB * 3 for replication)
-
-
-Can also use Chaos engineering other existing features to aid in identifying this by stress testing because if your creating a feature that assumes that there is a existing codebase with other features 
-#### Network Traffic Estimate Example:
-- Traffic: Daily active users * average reads and writes per user
-- Active users: 10 million 
-- User Post viewed: 30 views per user or 30 `GET Request`
-- GET traffic = 300 million (10 million * 30)
-- `GET Requests` total traffic per second: 3,000 (300 million / 86,400 seconds)
-- Active user `POST Request` per second: 115 (10 million / 86,400 seconds)
 
 #### Bandwidth Estimation Examples
+> Once you determine other estimation below you can address this last or ask about potential historical traffic using that as a baseline.
 - Bandwidth: Requests per day * average request size
 - Bandwidth required: 450,000 GB (300 million(Active users) \* 1.5 MB)
 - Bandwidth per second: 5.2 GB (450,000 GB / 86,400 seconds in a day)
-
-
 
 ### Data Design & Database Architecture 
 When [[Choosing Database]] type, consider whether you're dealing with [[Industry Structured & Unstructured Data |Structured or Unstructured Data]]then come up with a short list of databases to pick from. For instance, if the domain focuses on medical data, it's likely structured, favoring SQL databases. Conversely, media-related data tends to be unstructured, making NoSQL databases more suitable. Then consider and talking about [[Schema Design]] that makes sense.
@@ -87,14 +71,26 @@ When [[Choosing Database]] type, consider whether you're dealing with [[Industry
 - Daily storage for writes: 10 million writes \* 1.5 MB = 15 TB guesstimate
 - Yearly storage:(15 TB \* 365 days \* 10 years) = 55 PB guesstimate
 
+#### Network Traffic Estimate Examples
+- Traffic: Daily active users * average reads and writes per user
+- Active users: 10 million 
+- User Post viewed: 30 views per user or 30 `GET Request`
+- Active user views = (10 million \* 30) = 300 million `GET Requests`
+- Active user views total traffic per second = 3,000 (300 million / 86,400 seconds)
+- Active user `POST Request` per second: (10 million / 86,400 seconds) = 115 
+
+#### Memory Storage Estimate Example
+- Memory: Read requests per day * average request size * 20%
+- Cache for Instagram highlights: 150 GB (300 million requests * 500 bytes)
+- Adjusted cache: 30 GB (20% of 150 GB)
+- Total memory: 90 GB (30 GB * 3 for replication)
+
+
 You can leverage ChatGPT to perform a CAP theorem analysis and a Kepner-Tregoe decision analysis, using weighted decisions to identify a concise list of choices for databases or other relevant technologies. This approach allows for a systematic evaluation of options based on their consistency, availability, and partition tolerance, as well as other criteria important to your decision-making process. By combining these analytical methods, you can efficiently narrow down your options and make informed decisions that align with your specific needs and preferences.
 
 
 ### Overall Architecture
-
 In a system design choosing the right [[Impact of Architectural Styles |Architectural Styles]] is important think about what is needed and purpose of the style. In addition to that you can leverage [[When to use Domain-Driven Design |Domain Driven Design]] with some of the different styles depending on domain complexity determines weather it is necessary to use meaning the more simpler the domain is the less need for domain driven design in my opinion. Also what [[IV Backing services]] would you leverage and why also consider [[Test Driven Development]] depends on your priorities. Side note things like Test Driven and Domain design are meant to be used alongside architectural styles.
-
-
 
 
 In the realm of architectural styles, popular ones include [[Microservices VS Monolithic Architecture |Microservices]] which can also help with overall system maintainability, often paired with [[Eureka Service]] in Java-based applications, and monolithic architecture, representing a centralized system. Monolithic architecture involves building the entire application as a single, indivisible unit, typically deployed on a single server or a closely connected set of servers. 
@@ -106,7 +102,7 @@ When it comes to fault tolerance there are many ways to improve including [[Circ
 
 Depending on the Architectural Styles you then should talk and identify major components of your system like [[Physical Servers vs Virtual Servers |physical or virtual servers]] which tend to be on premises or on cloud you can talk about the [[Benefits of cloud]] talking about cloud  in terms of outsourcing functionality or infrastructure using different service architecture ranging from IAAS to SAAS and benefiting from things like availability zones and other cloud services that add fault tolerance to the overall system. 
 
-When it comes to cloud services like AWS there are a broad range of services like [[Messaging systems]], and [[Caches]] which if you implement locally you can improve response time but keep caching policies in my mind. You can also discuss the usage of [[Monitoring & Observability |monitoring/logging for metrics]] and using [[Chaos Engineering]] in order to identify weakness in the overall system by injecting controlled failures and disruption into a system. You have things like `Amazon MQ`, `Amazon ElastiCache`, and `Amazon CloudWatch`. Alternatively if you don't want cloud solutions you can use things like [[Apache Kafka]], `Redis` for caching, or something like `Prometheus`. You also have services for things like static [[File System Storage]] services like `Amazon S3` which can be used with a [[Content Delivery Network |CDN]] improving traffic and fault tolerance. 
+When it comes to cloud services like AWS there are a broad range of services like [[Messaging systems]], and [[Caches]] which if you implement locally you can improve response time but keep caching policies in my mind. You can also discuss the usage of [[Monitoring & Observability |monitoring/logging for metrics]] and using [[Chaos Engineering]] in order to identify weakness in the overall system by injecting controlled failures and disruption into a system or access system capacity to reevaluate things bandwidth and other resources needs. You have things like `Amazon MQ`, `Amazon ElastiCache`, and `Amazon CloudWatch`. Alternatively if you don't want cloud solutions you can use things like [[Apache Kafka]], `Redis` for caching, or something like `Prometheus`. You also have services for things like static [[File System Storage]] services like `Amazon S3` which can be used with a [[Content Delivery Network |CDN]] improving traffic and fault tolerance. 
 
 If you expect system to process high traffic consider this [[High Traffic Architecture]]choice.
 
