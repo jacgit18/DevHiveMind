@@ -13,7 +13,6 @@ dg-publish: true
 
 [[_Architecture Dashboard]]
 
-
 #todo/Low/Dev 
 - [ ] Fix button so you don't need backlink
 - [ ] Create dashboard for other folders using dataview queries.
