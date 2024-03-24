@@ -11,7 +11,7 @@ Started:
 EditDate: 2024-03-07
 Relates: "[[Project Structure]]"
 Peer Reviewed: 0
-dg-publish:
+dg-publish: true
 ---
 ![[Monolithic vs Microservies.png]]
 

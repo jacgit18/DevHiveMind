@@ -2,6 +2,11 @@
 tags:
   - scalability
   - codebase
+  - systemDesign
+  - buildStage
+  - testing
+  - deployment
+  - devops
 author:
   - jacgit18
   - chatgpt
@@ -19,11 +24,11 @@ Here are considerations for both options:
   
 1. **Utility Folder Inside the `src` Folder**:  
 - **Pros**:  
-- Keeps all project-related code, including utilities, within the project's main source directory.  
-- Easier to manage and maintain as it's closer to the rest of your application code.  
-- Create lib folder for utility functions that use libraries
+  - Keeps all project-related code, including utilities, within the project's main source directory.  
+  - Easier to manage and maintain as it's closer to the rest of your application code.  
+  - Create lib folder for utility functions that use libraries
 - **Cons**:  
-- May lead to a cluttered `src` directory if you have a significant number of utility functions.  
+  - May lead to a cluttered `src` directory if you have a significant number of utility functions.  
   
 Example structure:  
 ```  
@@ -37,10 +42,10 @@ app.js
   
 2. **Utility Folder Outside of the `src` Folder**:  
 - **Pros**:  
-- Separates utility functions from application-specific code, promoting a cleaner `src` directory.  
-- Allows you to reuse utility functions in multiple projects if organized properly.  
+  - Separates utility functions from application-specific code, promoting a cleaner `src` directory.  
+  - Allows you to reuse utility functions in multiple projects if organized properly.  
 - **Cons**:  
-- Requires more configuration for module resolution and imports because utilities are outside the main source directory.  
+  - Requires more configuration for module resolution and imports because utilities are outside the main source directory.  
   
 Example structure:  
 ```  
@@ -52,6 +57,7 @@ app.js
 /utils  
 ```  
 
+## Things to Consider in Build
 
 Including test files or artifacts in the "build" folder is generally not recommended. The "build" folder typically contains the compiled or generated files that are used for deploying and running your application or software. Test files are typically separate from the production code and are used for testing and quality assurance purposes.  
   
