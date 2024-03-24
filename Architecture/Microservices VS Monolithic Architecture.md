@@ -2,10 +2,11 @@
 tags:
   - microservices
   - bestPractices
+  - monolithic
 author:
   - jacgit18
   - chatgpt
-Purpose: This documentation discusses Microservices.
+Purpose: This documentation discusses Microservices and Monolithic architecture.
 Status: Refinement
 Started: 
 EditDate: 2024-03-07
@@ -57,7 +58,7 @@ dg-publish: true
   
 8. **Operational Overhead**:  
    - *Microservices*: Involves additional operational complexity, including service discovery, monitoring, and handling service failures.  
-   - *Monolith*: Simpler to operate but can become challenging as the codebase grows.  
+   - *Monolith*: Simpler to operate but can become challenging as the codebase grows because all parts of the application are closely interconnected, and communication between different functionalities is often direct within the same codebase.  
   
 9. **Testing and Debugging**:  
    - *Microservices*: Testing can be more granular but may require additional effort for integration testing.  

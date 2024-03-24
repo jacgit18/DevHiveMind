@@ -17,16 +17,6 @@ dg-publish:
 
 
 
-
-
-  
-
-
-
-In a monolith, all parts of the application are closely interconnected, and communication between different functionalities is often direct within the same codebase.  
-
-
-
 One of the primary distinctions between microservices and monolithic APIs lies in the architectural weight of the projects. In a microservice setup, multiple services communicate with each other. In contrast, a monolithic API, while sharing some architectural characteristics with microservices, essentially represents a single service with substantial complexity. This is particularly evident in the distribution of routes, as a monolithic API tends to concentrate a significant number of routes within a single service, whereas a microservice architecture spreads routes across multiple services, each handling a smaller set of routes
 
   
