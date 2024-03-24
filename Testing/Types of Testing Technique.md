@@ -11,7 +11,7 @@ Started:
 EditDate: 2024-02-02
 Relates: "[[Code Coverage]]"
 Peer Reviewed: 0
-dg-publish: false
+dg-publish: true
 ---
 ![[Black and white box.gif]]
 ### **What is Software/Application testing?**
