@@ -14,8 +14,8 @@ author:
 Purpose: This documentation discusses what to include in software builds also utility function.
 Status: Refinement
 Started: 2023-11-23
-EditDate: 2024-03-07
-Relates: "[[Project Structure]]"
+EditDate: 2024-03-23
+Relates: 
 Peer Reviewed: 0
 dg-publish:
 ---
@@ -74,7 +74,22 @@ In many projects, it's common to place utility functions in a separate folder ou
 Ultimately, the choice between these two options should be based on your project's specific needs, your team's conventions, and your preference for code organization. Just make sure to document your project's structure and any configuration changes to ensure that your team and collaborators understand how everything is organized.
 
 
+## Other Folders 
+The organization between "pages/" and "ui/" directories serves specific purposes and is intentionally designed. The "ui/" directory contains reusable React code such as components, hooks, and contexts, while the "pages/" directory is responsible for mapping components to routes and combining code from "ui/" and "lib/".
 
+In general, code from "pages/" should not be dependent on (import) code from other parts of the application, except for setting up top-level routes in "src/App.js" and for parent pages on sub-pages.
+
+The "lib/" folder is dedicated to non-UI code, including domain objects, business logic (often in the form of pure functions), and infrastructural code like network layer clients, formatting utilities, and platform communication (e.g., Browser Storage or IndexDB). Starting with "lib/" and "lib/core/" at the beginning of a project is recommended, allowing the remaining folders to evolve naturally.
+
+The "manifest.json" file in the "public" folder is used for Progressive Web App (PWA) configurations.
+
+Dependencies are made more explicit by adhering to certain rules:
+- Code from "lib/" never imports code from "ui/" or "pages/".
+- Code from "pages/" should import implementation code from "ui/" or "lib/".
+- Code from "ui/" may import code from "lib/", but not from "pages/".
+- Generally, code may import from within their own top-level namespace: i.e., "pages/", "lib/", "ui/".
+
+This organization helps maintain clarity and separation of concerns within the project, facilitating easier maintenance and scalability as the project evolves.
 
 
 

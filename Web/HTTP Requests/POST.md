@@ -11,7 +11,7 @@ Started:
 EditDate: 2024-01-29
 Relates: 
 Peer Reviewed: 0
-dg-publish: false
+dg-publish: true
 ---
 ## **POST Method: Creating Resources**
 

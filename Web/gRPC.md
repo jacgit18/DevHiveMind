@@ -14,7 +14,7 @@ Started:
 EditDate: 2024-01-30
 Relates: 
 Peer Reviewed: 0
-dg-publish: false
+dg-publish: true
 ---
 gRPC is a powerful technology for building efficient and high-performance APIs, but it's primarily designed for server-to-server communication. As a result, gRPC is not natively supported in web browsers. This can limit its adoption and use in certain scenarios, particularly in web development. Here are some key points regarding the limitations of gRPC in web browsers and its adoption:  
   
