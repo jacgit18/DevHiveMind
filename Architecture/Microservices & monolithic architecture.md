@@ -18,46 +18,9 @@ dg-publish:
 
 
 
-The folder architecture for a JavaScript Node.js application implementing a microservice and a monolith API can vary significantly based on the specific requirements and design choices. Here's a simplified comparison of the two:  
-  
-**Microservice Architecture:**  
-In a microservice architecture, each microservice is a separate and independent component of the application. Each microservice often has its own codebase and folder structure. Here's a basic folder structure for a microservice:  
-  
-```  
-/my-microservice  
-/src  
-/routes # API routes and controllers  
-/models # Data models  
-/services # Business logic  
-/config # Configuration files  
-/test # Unit and integration tests  
-/node_modules # Dependencies  
-package.json # Node.js package file  
-index.js # Entry point for the microservice  
-```  
-  
-Each microservice would have its own similar structure, and they can communicate with each other via APIs or message queues.  
-  
-**Monolith API:**  
-In a monolithic architecture, the entire application is typically organized within a single codebase and folder structure. Here's a simplified folder structure for a monolithic API:  
-  
-```  
-/my-monolith-api  
-/src  
-/routes # API routes and controllers  
-/models # Data models  
-/services # Business logic  
-/config # Configuration files  
-/test # Unit and integration tests  
-/node_modules # Dependencies  
-package.json # Node.js package file  
-index.js # Entry point for the API  
-```  
 
-#### Check out & maybe integrate
-#todo/Personal/Low/Dev 
-- [ ] Read https://newsletter.techworld-with-milan.com/p/why-you-should-build-a-modular-monolith
-- [ ] https://read.engineerscodex.com/p/how-airbnb-scaled-by-moving-away
+  
+
 
 
 In a monolith, all parts of the application are closely interconnected, and communication between different functionalities is often direct within the same codebase.  
@@ -87,19 +50,11 @@ One of the key benefits of microservices is the flexibility to expose certain se
 
 ![[Microservice Roadmap.gif]]
 
-#todo/Personal/Low/Dev 
-- [ ] https://itnext.io/the-issue-with-sharing-data-in-a-microservice-architecture-d6a36f297ff5
-
-#todo/Personal/Med/Dev 
-- [ ] https://medium.com/javarevisited/50-microservices-interview-questions-for-java-programmers-70a4a68c4349
-- [ ] https://medium.com/javarevisited/difference-between-microservices-and-monolithic-architecture-for-java-interviews-af525908c2d5
-
-## When to use microservice
-It makes sense to turn something into a microservice when you want to achieve scalability, maintainability, and independent deployment. However, administrative processes might not be suitable for microservices if they don't require frequent updates or scalability, and if their complexity doesn't warrant the overhead of a separate microservice. It's important to consider the trade-offs and benefits before deciding.
 
 
 
-You can define microservices in yaml file
+
+
 
 
 
