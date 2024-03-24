@@ -15,14 +15,14 @@ Started: 2024-02-03
 EditDate: 
 Relates: 
 Peer Reviewed: 0
-dg-publish: true
+dg-publish: false
 ---
 Eureka is a service discovery(lookup table) tool primarily used in microservices architectures. Developed by Netflix and open-sourced as part of the Netflix OSS (Open Source Software) initiative, Eureka allows services to register themselves dynamically and discover other services within the system.
 
 Key features of Eureka:
 
 1. **Service Registration:**
-   - [[Microservices]] can register themselves with the Eureka server, providing metadata such as hostname, port, and health status.
+   - [[Microservices VS Monolithic Architecture |Microservices]] can register themselves with the Eureka server, providing metadata such as hostname, port, and health status.
 
 2. **Service Discovery:**
    - Eureka maintains a registry of all registered services. Other services can query this registry to discover the available services and their locations.

@@ -12,7 +12,7 @@ Started: 2024-03-16
 EditDate: 
 Relates: 
 Peer Reviewed: 0
-dg-publish: true
+dg-publish: false
 ---
 Server pools, also known as server farms or server clusters, are collections of multiple servers that work together to handle and distribute incoming requests or tasks. These servers are interconnected and often share resources such as processing power, memory, and storage.
 

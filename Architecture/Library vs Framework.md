@@ -12,7 +12,7 @@ Started:
 EditDate: 2024-03-06
 Relates: 
 Peer Reviewed: 0
-dg-publish: true
+dg-publish: false
 ---
 Developers frequently use "library" and "framework" interchangeably, but there's a crucial difference between them.
 

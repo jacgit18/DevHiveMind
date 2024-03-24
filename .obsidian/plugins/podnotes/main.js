@@ -6648,7 +6648,15 @@ function downloadEpisodeWithNotice(episode, downloadPathTemplate) {
       }
     });
     const fileExtension = yield detectAudioFileExtension(blob);
-    if (!blob.type.contains("audio") || !fileExtension) {
+    if (!fileExtension) {
+      update2((bodyEl) => {
+        bodyEl.createEl("p", {
+          text: `Could not determine file extension for downloaded file. Blob: ${blob.size} bytes.`
+        });
+      });
+      throw new Error("Could not determine file extension");
+    }
+    if (!blob.type.contains("audio") && !fileExtension) {
       update2((bodyEl) => {
         bodyEl.createEl("p", {
           text: `Downloaded file is not an audio file. It is of type "${blob.type}". Blob: ${blob.size} bytes.`

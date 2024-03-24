@@ -5,15 +5,15 @@ author:
   - jacgit18
   - chatgpt
 Comments: Placeholder comment any thing else you want to mention about the document.
-Purpose: This documentation discusses
+Purpose: This documentation discusses a hypothetical situation around making the decision to go from Lambda(FAAS) to Serverless architecture
 Status: Done
 Started: 2024-03-16
 EditDate: 
 Relates: 
 Peer Reviewed: 0
-dg-publish: true
+dg-publish: false
 ---
-To refine and optimize your setup, consider transitioning from Lambda and serverless architecture to using Elastic Beanstalk with EC2 instances. Since you're experiencing high traffic, Elastic Beanstalk provides more control and scalability compared to Lambda, which has some limitations regarding long-running processes and scalability for certain types of workloads.
+To refine and optimize your setup, consider transitioning from Lambda and Serverless architecture to using Elastic Beanstalk with EC2 instances. Since you're experiencing high traffic, Elastic Beanstalk provides more control and scalability compared to Lambda, which has some limitations regarding long-running processes and scalability for certain types of workloads.
 
 With Elastic Beanstalk, you can still leverage the simplicity of deploying and managing applications without worrying about the underlying infrastructure, while having the flexibility to fine-tune your EC2 instances for optimal performance under high loads.
 

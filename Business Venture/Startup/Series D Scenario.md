@@ -13,7 +13,7 @@ Status: Done
 Started: 2024-03-04
 EditDate: 
 Relates: 
-dg-publish:
+dg-publish: true
 ---
 As a startup progresses into the Series D funding stage, it signifies a highly mature and established company. Series D rounds are characterized by large funding amounts, often exceeding previous rounds, and are designed to support initiatives such as international expansion, acquisitions, product diversification, or preparation for an IPO (Initial Public Offering). Here's an overview of the Series D scenario:
 

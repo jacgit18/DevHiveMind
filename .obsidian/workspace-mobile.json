@@ -4,15 +4,27 @@
     "type": "split",
     "children": [
       {
-        "id": "cfdc38d3e7022184",
+        "id": "e22dcdcded9bf7ad",
         "type": "tabs",
         "children": [
           {
-            "id": "51bc1370595dc75f",
+            "id": "8dbf3158f60aa520",
             "type": "leaf",
             "state": {
               "type": "graph",
               "state": {}
+            }
+          },
+          {
+            "id": "cf73a1d4ab537197",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Architecture/System Design/System Design Thought Process Flow.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -40,7 +52,7 @@
         "state": {
           "type": "search",
           "state": {
-            "query": "",
+            "query": "tag:OrderOfOperations",
             "matchingCase": false,
             "explainSearch": false,
             "collapseAll": false,
@@ -81,7 +93,7 @@
         }
       }
     ],
-    "currentTab": 0
+    "currentTab": 1
   },
   "right": {
     "id": "c132e8bf1ab9e4bd",
@@ -203,8 +215,11 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "51bc1370595dc75f",
+  "active": "8dbf3158f60aa520",
   "lastOpenFiles": [
-    "Home.md"
+    "Home.md",
+    "Architecture/System Design/System Design Thought Process Flow.md",
+    "Companies/Companies Worked At/TD/Business Requirements Life cycle.md",
+    "Architecture/System Design/Userbase.md"
   ]
 }

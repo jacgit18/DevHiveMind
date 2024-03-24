@@ -10,7 +10,7 @@ Status: Perpetual
 Started: 
 EditDate: 2024-02-20
 Relates: 
-dg-publish: true
+dg-publish: false
 ---
 ![[Money Talk.gif]]
 Negotiating your salary effectively requires a strategic approach. Consider the following steps:

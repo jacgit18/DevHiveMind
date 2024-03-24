@@ -2,7 +2,7 @@
 tags:
   - data
   - metaData
-  - APIs
+  - API
 author:
   - jacgit18
   - chatgpt

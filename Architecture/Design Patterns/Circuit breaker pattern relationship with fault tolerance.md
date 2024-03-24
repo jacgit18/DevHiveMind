@@ -38,3 +38,94 @@ The Circuit Breaker pattern is a software design pattern that is closely related
    - **Monitoring and Recovery:** The pattern provides valuable information about the health of services, enabling automated recovery and proactive measures to address issues.
 
 In summary, the Circuit Breaker pattern is a crucial tool for building fault-tolerant distributed systems and microservices architectures. It helps prevent the propagation of failures, maintain system stability, and enable controlled recovery when failures occur, ultimately contributing to the overall reliability and resilience of a software system.
+
+
+## Example 
+The Circuit Breaker design pattern is commonly used in JavaScript applications to handle failures and prevent cascading failures in distributed systems. Here's a basic implementation of the Circuit Breaker pattern in JavaScript:
+
+```javascript
+class CircuitBreaker {
+  constructor(threshold = 3, timeout = 5000) {
+    this.threshold = threshold; 
+    // Number of consecutive failures to trip the circuit
+    this.timeout = timeout; 
+    // Timeout period for the circuit to attempt a retry
+    this.failureCount = 0; 
+    // Counter for consecutive failures
+    this.isOpen = false; 
+    // Circuit state: open or closed
+    this.lastFailureTime = null; 
+    // Timestamp of the last failure
+  }
+
+  async execute(fn) {
+    if (this.isOpen && this.isTimeoutExpired()) {
+      this.reset();
+    }
+
+    if (this.isOpen) {
+      throw new Error('Circuit is open. Operation aborted.');
+    }
+
+    try {
+      const result = await fn();
+      this.reset();
+      return result;
+    } catch (error) {
+      this.failureCount++;
+      this.lastFailureTime = Date.now();
+
+      if (this.failureCount >= this.threshold) {
+        this.isOpen = true;
+        setTimeout(() => {
+          this.reset();
+        }, this.timeout);
+      }
+
+      throw error;
+    }
+  }
+
+  isTimeoutExpired() {
+    return Date.now() - this.lastFailureTime > this.timeout;
+  }
+
+  reset() {
+    this.failureCount = 0;
+    this.isOpen = false;
+    this.lastFailureTime = null;
+  }
+}
+
+// Example usage:
+
+const service = {
+  async request() {
+    // Simulate a service call
+    return new Promise((resolve, reject) => {
+      setTimeout(() => {
+        const rand = Math.random();
+        if (rand < 0.8) {
+          resolve('Success');
+        } else {
+          reject(new Error('Service error'));
+        }
+      }, 1000);
+    });
+  }
+};
+
+const circuitBreaker = new CircuitBreaker(3, 5000);
+
+(async () => {
+  for (let i = 0; i < 10; i++) {
+    try {
+      console.log(await circuitBreaker.execute(service.request));
+    } catch (error) {
+      console.error(error.message);
+    }
+  }
+})();
+```
+
+This implementation of the Circuit Breaker pattern allows you to wrap any asynchronous function (`fn`) and handle failures gracefully. It tracks the number of consecutive failures and trips the circuit if the threshold is exceeded. After a timeout period, the circuit resets and allows subsequent calls to be executed.

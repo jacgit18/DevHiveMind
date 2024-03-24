@@ -48,55 +48,39 @@ Multiprocessing is good for scaling up to be used on multiple machines and can
 [[Concurrent programming]]
 
 
+#todo/Personal/Med/Dev 
+- [ ] shorten answers
 
 ## Flashcard
-#threads
-Why use multithreading in your applications;; concurrent execution of multiple threads
-What is a daemon thread;; A daemon thread is a low-priority thread used for unique task
-Can you explain what the thread scheduler is and its relationship to thread priority;; The thread scheduler is what allocates CPU time to threads and determines the order in which threads execute
+#cpuProcesses
+What is a daemon thread;; A daemon thread is a low-priority thread used for unique task.
 
-
-Why might you describe thread behavior as unpredictable? "Because thread scheduling is determined by the CPU, different CPUs may give priority to different threads. This means there's a chance two CPUs might not run your threads in the same order, creating unpredictability in your code execution.
-
-
-What's time slicing?
-
-
-Time slicing is the process used by the thread scheduler to divide CPU time between the available active threads.
-
-
-What's thread starvation?
+Why use multithreading in your applications;; concurrent execution of multiple threads.
 
 
 
-Thread starvation is when there's insufficient CPU capacity to execute a thread. This can happen with low-priority threads or threads that programmers demote in favor of other threads.
+Can you explain what the thread scheduler is and its relationship to thread priority;; The thread scheduler is what allocates CPU time to threads and determines the order in which threads execute.
 
 
-Explain the busy spin technique and why you might use it.
+Why might you describe thread behavior as unpredictable;; Because thread scheduling is determined by the CPU, different CPUs may give priority to different threads. This means there's a chance two CPUs might not run your threads in the same order, creating unpredictability in your code execution.
 
 
-
-Busy spin is when you pause a thread by making it run an empty loop for a certain period. Unlike other methods like wait() or sleep(), a busy spin doesn't give up CPU control and therefore preserves CPU cache.
-
-
-Can you start a thread twice?
+What's time slicing;; Time slicing is the process used by the thread scheduler to divide CPU time between the available active threads.
 
 
-Once you execute a thread, it's dead and you can't restart it
+What's thread starvation;; Thread starvation is when there's insufficient CPU capacity to execute a thread. This can happen with low-priority threads or threads that programmers demote in favor of other threads.
 
 
-Can you describe a deadlock situation?
+Explain the busy spin technique and why you might use it;; Busy spin is when you pause a thread by making it run an empty loop for a certain period. Unlike other methods like wait() or sleep(), a busy spin doesn't give up CPU control and therefore preserves CPU cache.
 
 
-
-A deadlock situation occurs when multiple threads are waiting on one another to release CPU resources so they can run. For example, this can happen when a single thread has exclusive priority but needs resources from a waiting thread, or all the threads are depending on one another to release needed resources.
-
+Can you start a thread twice;; Once you execute a thread, it's dead and you can't restart it
 
 
+Can you describe a deadlock situation;; A deadlock situation occurs when multiple threads are waiting on one another to release CPU resources so they can run. For example, this can happen when a single thread has exclusive priority but needs resources from a waiting thread, or all the threads are depending on one another to release needed resources.
 
-What happens when a livelock occurs?
 
-A livelock is similar to a deadlock situation, except in a livelock, the state of the threads change without ever making progress. For instance, if all the threads are in infinite loops.
+What happens when a livelock occurs;; A livelock is similar to a deadlock situation, except in a livelock, the state of the threads change without ever making progress. For instance, if all the threads are in infinite loops.
 
 
 
