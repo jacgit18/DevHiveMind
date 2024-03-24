@@ -166,7 +166,7 @@ Summarize key design decisions, highlighting any alternative considerations. Inv
 ## Traffic Estimate Example:
 
 ### Network Traffic Estimate Example:
-- Active users Posting: 10 million `POST Request`
+- Active users: 10 million 
 - User Post viewed: 30 views per user or 30 `GET Request`
 - GET traffic = 300 million (10 million * 30)
 - `GET Requests` total traffic per second: 3,000 (300 million / 86,400 seconds)
