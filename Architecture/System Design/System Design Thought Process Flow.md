@@ -56,12 +56,6 @@ When crafting your design, prioritize a forward-thinking approach that anticipat
 Create an Entity Relationship Diagram (ERD) to define clear relationships in data model and come up with general feature endpoints.
 
 
-#### Bandwidth Estimation Examples
-> Once you determine other estimation below you can address this last or ask about potential historical traffic using that as a baseline.
-- Bandwidth: Requests per day * average request size
-- Bandwidth required: 450,000 GB (300 million(Active users) \* 1.5 MB)
-- Bandwidth per second: 5.2 GB (450,000 GB / 86,400 seconds in a day)
-
 ### Data Design & Database Architecture 
 When [[Choosing Database]] type, consider whether you're dealing with [[Industry Structured & Unstructured Data |Structured or Unstructured Data]]then come up with a short list of databases to pick from. For instance, if the domain focuses on medical data, it's likely structured, favoring SQL databases. Conversely, media-related data tends to be unstructured, making NoSQL databases more suitable. Then consider and talking about [[Schema Design]] that makes sense.
 
@@ -82,11 +76,17 @@ When [[Choosing Database]] type, consider whether you're dealing with [[Industry
 - Active user post = (10 million \* 10) = 100 million `POST Request`
 - Active user post per second =  (10 million / 86,400 seconds) = 115 `POST Request`
 
-#### Memory Storage Estimate Example
+#### Memory Storage Estimate Examples
 - Memory: Read requests per day \* average request size \* 20%
-- Cache for Instagram highlights: 150 GB (300 million requests \* 500 bytes)
-- Adjusted cache: 30 GB (20% of 150 GB)
-- Total memory: 90 GB (30 GB \* 3 for replication)
+- Cache for Instagram highlights:  (300 million requests \* 500 bytes) = 150 GB
+- Adjusted cache: (20% of 150 GB) = 30 GB
+- Total memory: (30 GB \* 3 for replication) = 90 GB 
+
+#### Bandwidth Estimation Examples
+> Once you determine other estimation you can address this last or ask about potential historical traffic using that as a baseline.
+- Bandwidth: Requests per day * average request size
+- Bandwidth required: 450,000 GB (300 million(Active users) \* 1.5 MB)
+- Bandwidth per second: 5.2 GB (450,000 GB / 86,400 seconds in a day)
 
 
 You can leverage ChatGPT to perform a CAP theorem analysis and a Kepner-Tregoe decision analysis, using weighted decisions to identify a concise list of choices for databases or other relevant technologies. This approach allows for a systematic evaluation of options based on their consistency, availability, and partition tolerance, as well as other criteria important to your decision-making process. By combining these analytical methods, you can efficiently narrow down your options and make informed decisions that align with your specific needs and preferences.
