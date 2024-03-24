@@ -41,7 +41,7 @@ dg-publish: true
    - *Monolith*: Easier for smaller teams to manage due to its single codebase.  
   
 4. **Deployment and CI/CD**:  
-   - *Microservices*: May require a more complex CI/CD pipeline and deployment strategy due to the distributed nature of services.  
+   - *Microservices*: May require a more complex CI/CD pipeline and deployment strategy due to the distributed nature of services. But one of the key benefits of microservices is the flexibility to expose certain services publicly, such as through an API, while keeping others private.
    - *Monolith*: Typically simpler to deploy and manage.  
   
 5. **Data Management**:  
@@ -87,7 +87,11 @@ In a microservice architecture, each microservice is a separate and independent 
 package.json # Node.js package file  
 index.js # Entry point for the microservice  
 ```  
-  
+
+One of the primary distinctions between microservices and monolithic APIs lies in the architectural weight of the projects. In a microservice setup, multiple services communicate with each other, leading to a distributed architecture. On the other hand, a monolithic API represents a single, tightly integrated service with substantial complexity. This distinction becomes apparent when considering the distribution of routes. In a monolithic API, a significant number of routes are centralized within a single service, whereas in a microservice architecture, routes are spread across multiple services, with each service handling a smaller set of routes.
+
+Please note that these descriptions provide a simplified overview, and the actual implementation details and folder structures may vary based on the specific requirements and design choices of your application. Regardless of the architectural approach chosen, maintaining good organization and documentation is crucial for managing and understanding the codebase effectively as it evolves.
+
 Each microservice would have its own similar structure, and they can communicate with each other via APIs or message queues.  
   
 **Monolith API:**  
@@ -107,6 +111,7 @@ index.js # Entry point for the API
 ```  
 
 
+![[Microservice Roadmap.gif]]
 #### Creating Microservice for Node Project
 
 Use `npm init` is one way to initialize a Node.js project, and you might use it for each microservice to set up its package.json file and manage dependencies. Each microservice would typically have its own project directory with its unique codebase and dependencies.  
