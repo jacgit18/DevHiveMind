@@ -75,9 +75,11 @@ When [[Choosing Database]] type, consider whether you're dealing with [[Industry
 - Traffic: Daily active users * average reads and writes per user
 - Active users: 10 million 
 - User Post viewed: 30 views per user or 30 `GET Request`
+- User Posting: 10 post `POST Request`
 - Active user views = (10 million \* 30) = 300 million `GET Requests`
-- Active user views total traffic per second = 3,000 (300 million / 86,400 seconds)
-- Active user `POST Request` per second: (10 million / 86,400 seconds) = 115 
+- Active user views total traffic per second = (300 million / 86,400 seconds) = 3,000 `GET Requests`
+- Active user post = (10 million \* 10) = 100 million `POST Request`
+- Active user post per second =  (10 million / 86,400 seconds) = 115 `POST Request`
 
 #### Memory Storage Estimate Example
 - Memory: Read requests per day * average request size * 20%
