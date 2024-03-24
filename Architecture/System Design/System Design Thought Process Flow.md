@@ -62,7 +62,7 @@ Create an Entity Relationship Diagram (ERD) to define clear relationships in dat
 - Total memory: 90 GB (30 GB * 3 for replication)
 
 
-Can also use Chaos engineering to aid in identifying this by stress testing
+Can also use Chaos engineering other existing features to aid in identifying this by stress testing because if your creating a feature that assumes that there is a existing codebase with other features 
 #### Network Traffic Estimate Example:
 - Traffic: Daily active users * average reads and writes per user
 - Active users: 10 million 
