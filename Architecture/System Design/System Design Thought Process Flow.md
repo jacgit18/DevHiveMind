@@ -66,6 +66,7 @@ Create an Entity Relationship Diagram (ERD) to define clear relationships in dat
 When [[Choosing Database]] type, consider whether you're dealing with [[Industry Structured & Unstructured Data |Structured or Unstructured Data]]then come up with a short list of databases to pick from. For instance, if the domain focuses on medical data, it's likely structured, favoring SQL databases. Conversely, media-related data tends to be unstructured, making NoSQL databases more suitable. Then consider and talking about [[Schema Design]] that makes sense.
 
 #### Storage Estimation Examples
+> Keep estimation simple focus on storage needed and not to much on queries especially if there are other critical things to discuss. 
 - Storage: Writes per day \* size of write \* time to store data
 - (10,000 thousand KB/day * 1.5 MB) = 14.65 MB \* 2 days = roughly 30 MB at minimum for storage since data is held for 2 days probably want a little more.
 - Daily storage for writes: 10 million writes \* 1.5 MB = 15 TB guesstimate
@@ -82,10 +83,10 @@ When [[Choosing Database]] type, consider whether you're dealing with [[Industry
 - Active user post per second =  (10 million / 86,400 seconds) = 115 `POST Request`
 
 #### Memory Storage Estimate Example
-- Memory: Read requests per day * average request size * 20%
-- Cache for Instagram highlights: 150 GB (300 million requests * 500 bytes)
+- Memory: Read requests per day \* average request size \* 20%
+- Cache for Instagram highlights: 150 GB (300 million requests \* 500 bytes)
 - Adjusted cache: 30 GB (20% of 150 GB)
-- Total memory: 90 GB (30 GB * 3 for replication)
+- Total memory: 90 GB (30 GB \* 3 for replication)
 
 
 You can leverage ChatGPT to perform a CAP theorem analysis and a Kepner-Tregoe decision analysis, using weighted decisions to identify a concise list of choices for databases or other relevant technologies. This approach allows for a systematic evaluation of options based on their consistency, availability, and partition tolerance, as well as other criteria important to your decision-making process. By combining these analytical methods, you can efficiently narrow down your options and make informed decisions that align with your specific needs and preferences.
