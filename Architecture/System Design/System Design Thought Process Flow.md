@@ -32,6 +32,8 @@ For more info read
 - [ ] https://medium.com/@karan99/system-design-netflix-6962b4f6222
 - [ ] https://interviewnoodle.com/algorithms-you-need-to-know-before-you-take-that-systems-design-interview-671608d61741
 
+Throughout the designing of the system you can discuss [[Fault Tolerance]] which refers to the system's resilience against failures, errors, or faults, ensuring uninterrupted operation and maintaining user experience. It encompasses proactive measures to handle failures gracefully and sustain availability. This principle applies universally across hardware, software, networks, and systems architecture. At its essence, fault tolerance anticipates failures as inevitable and seeks to minimize their impact through proactive strategies it also applies at and between each system component. 
+
 ### Step 1: Requirements Gathering 
 > **Establish a Understanding and Design Scope of problem (3 - 10 minutes)
 
@@ -51,16 +53,45 @@ When crafting your design, prioritize a forward-thinking approach that anticipat
 
 *Delve into the design by following the flow from Database ▶ Server/Services (Architecture) ▶ Client Side design.
 
+Create an Entity Relationship Diagram (ERD) to define clear relationships in data model and come up with general feature endpoints.
+
+#### Memory Storage Estimate Example
+- Memory: Read requests per day * average request size * 20%
+- Cache for Instagram highlights: 150 GB (300 million requests * 500 bytes)
+- Adjusted cache: 30 GB (20% of 150 GB)
+- Total memory: 90 GB (30 GB * 3 for replication)
+
+
+Can also use Chaos engineering to aid in identifying this by stress testing
+#### Network Traffic Estimate Example:
+- Traffic: Daily active users * average reads and writes per user
+- Active users: 10 million 
+- User Post viewed: 30 views per user or 30 `GET Request`
+- GET traffic = 300 million (10 million * 30)
+- `GET Requests` total traffic per second: 3,000 (300 million / 86,400 seconds)
+- Active user `POST Request` per second: 115 (10 million / 86,400 seconds)
+
+#### Bandwidth Estimation Examples
+- Bandwidth: Requests per day * average request size
+- Bandwidth required: 450,000 GB (300 million(Active users) \* 1.5 MB)
+- Bandwidth per second: 5.2 GB (450,000 GB / 86,400 seconds in a day)
+
+
+
 ### Data Design & Database Architecture 
-  - Create an Entity Relationship Diagram (ERD) to define relationships.
-  - Consider SQL for structured data and NoSQL for unstructured data.
-  - You can discuss [[Industry Structured & Unstructured Data |Structured & Unstructured Data]]
-  - More things to think about when deciding between [[Choosing Database]] 
-  - What type of [[Schema Design]] makes sense.
+When [[Choosing Database]] type, consider whether you're dealing with [[Industry Structured & Unstructured Data |Structured or Unstructured Data]]then come up with a short list of databases to pick from. For instance, if the domain focuses on medical data, it's likely structured, favoring SQL databases. Conversely, media-related data tends to be unstructured, making NoSQL databases more suitable. Then consider and talking about [[Schema Design]] that makes sense.
+
+#### Storage Estimation Examples
+- Storage: Writes per day \* size of write \* time to store data
+- (10,000 thousand KB/day * 1.5 MB) = 14.65 MB \* 2 days = roughly 30 MB at minimum for storage since data is held for 2 days probably want a little more.
+- Daily storage for writes: 10 million writes \* 1.5 MB = 15 TB guesstimate
+- Yearly storage:(15 TB \* 365 days \* 10 years) = 55 PB guesstimate
 
 You can leverage ChatGPT to perform a CAP theorem analysis and a Kepner-Tregoe decision analysis, using weighted decisions to identify a concise list of choices for databases or other relevant technologies. This approach allows for a systematic evaluation of options based on their consistency, availability, and partition tolerance, as well as other criteria important to your decision-making process. By combining these analytical methods, you can efficiently narrow down your options and make informed decisions that align with your specific needs and preferences.
 
+
 ### Overall Architecture
+
 In a system design choosing the right [[Impact of Architectural Styles |Architectural Styles]] is important think about what is needed and purpose of the style. In addition to that you can leverage [[When to use Domain-Driven Design |Domain Driven Design]] with some of the different styles depending on domain complexity determines weather it is necessary to use meaning the more simpler the domain is the less need for domain driven design in my opinion. Also what [[IV Backing services]] would you leverage and why also consider [[Test Driven Development]] depends on your priorities. Side note things like Test Driven and Domain design are meant to be used alongside architectural styles.
 
 
@@ -70,36 +101,6 @@ In the realm of architectural styles, popular ones include [[Microservices VS Mo
 
 Microservices, on the other hand, allow for both stateless and stateful services to collaborate. This concept is intertwined with [[Stateless & Statefull Processes]], which aligns with the   [[VIII Concurrency |Concurrency factor of the 12-factor app]]. Furthermore, this concurrency factor intersects with [[Distributed Locking]], which can be implemented using various technologies such as [[ZooKeeper]] and Redis.
 
-
-## Traffic Estimate Example:
-
-### Network Traffic Estimate Example:
-- Active users: 10 million 
-- User Post viewed: 30 views per user or 30 `GET Request`
-- GET traffic = 300 million (10 million * 30)
-- `GET Requests` total traffic per second: 3,000 (300 million / 86,400 seconds)
-- Active user `POST Request` per second: 115 (10 million / 86,400 seconds)
-
-### Memory Storage Estimate Example:
-- Cache for Instagram highlights: 150 GB (300 million requests * 500 bytes)
-- Adjusted cache: 30 GB (20% of 150 GB)
-- Total memory: 90 GB (30 GB * 3 for replication)
-
-### Bandwidth:
-- Bandwidth required: 450,000 GB (300 million(Active users) * 1.5 MB)
-- Bandwidth per second: 5.2 GB (450,000 GB / 86,400 seconds in a day)
-
-### Storage:
-- Daily storage for writes: 15 TB (10 million writes * 1.5 MB)
-- Yearly storage: 55 PB (15 TB * 365 days * 10 years)
-
-### Summary:
-- Traffic: Daily active users * average reads and writes per user
-- Memory: Read requests per day * average request size * 20%
-- Bandwidth: Requests per day * average request size
-- Storage: Writes per day * size of write * time to store data
-
-You should also consider [[Fault Tolerance]] which refers to the system's resilience against failures, errors, or faults, ensuring uninterrupted operation and maintaining user experience. It encompasses proactive measures to handle failures gracefully and sustain availability. This principle applies universally across hardware, software, networks, and systems architecture. At its essence, fault tolerance anticipates failures as inevitable and seeks to minimize their impact through proactive strategies it also applies at and between each system component. 
 
 When it comes to fault tolerance there are many ways to improve including [[Circuit breaker pattern relationship with fault tolerance |Circuit Breaker Design Pattern]]  which considered a stability pattern by monitoring interactions between services and, when a certain threshold of failures is reached, temporarily "opens" the circuit to prevent further requests from being sent. 
 
