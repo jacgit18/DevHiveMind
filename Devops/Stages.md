@@ -1,6 +1,7 @@
 ---
 tags:
   - devops
+  - scalability
 author:
   - jacgit18
   - chatgpt
@@ -8,7 +9,7 @@ Purpose: This documentation discusses development stages.
 Status: Refinement
 Started: 
 EditDate: 2024-02-22
-Relates: 
+Relates: "[[Deployment Strategies]]"
 Peer Reviewed: 0
 dg-publish: true
 ---

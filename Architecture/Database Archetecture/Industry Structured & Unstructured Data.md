@@ -28,7 +28,7 @@ Structured and unstructured data can be found across various industries and busi
   
 3. **Retail and E-commerce**:  
 	- **Structured Data**: Product catalogs, inventory levels, sales transactions, customer profiles, and purchase history are examples of structured data in retail and e-commerce systems.  
-	- **Unstructured Data**: Customer reviews, social media mentions, product images, and clickstream data contain unstructured information that retailers analyze for sentiment analysis, customer insights, and personalized marketing.  
+	- **Unstructured Data**: Customer reviews, social media mentions, product images, geo-location, and clickstream data contain unstructured information that retailers analyze for sentiment analysis, customer insights, and personalized marketing.  
   
 4. **Telecommunications**:  
 	- **Structured Data**: Call detail records (CDRs), subscriber information, network usage statistics, and billing data are structured data commonly found in telecommunications systems.  
@@ -40,6 +40,6 @@ Structured and unstructured data can be found across various industries and busi
   
 6. **Government and Public Sector**:  
 	- **Structured Data**: Census data, tax records, permits/licenses, and government contracts are examples of structured data managed by government agencies.  
-	- **Unstructured Data**: Social media posts, citizen feedback, news articles, and crime reports contain unstructured data used for policy analysis, public safety, and emergency response.  
+	- **Unstructured Data**: Social media posts, citizen feedback, news articles, weather, and crime reports contain unstructured data used for policy analysis, public safety, and emergency response.  
   
 These are just a few examples, and structured and unstructured data can be found in virtually every industry and business sector. Effectively managing and analyzing both types of data is essential for deriving actionable insights, making informed decisions, and driving innovation and growth.

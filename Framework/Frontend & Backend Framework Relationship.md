@@ -12,7 +12,7 @@ Started: 2024-02-04
 EditDate: 
 Relates: 
 Peer Reviewed: 0
-dg-publish: true
+dg-publish: false
 ---
 Frontend and backend frameworks work together to create a cohesive and functional web application. Here's an overview of how they collaborate:
 

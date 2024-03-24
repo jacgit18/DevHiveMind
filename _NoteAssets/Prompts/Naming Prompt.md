@@ -11,7 +11,7 @@ Status: Done
 Started: 
 EditDate: 2024-03-09
 Relates: 
-dg-publish: true
+dg-publish: false
 ---
 Propose a name for a new drink. It’s got Japanese gin, unsweetened tonic, lime, Szechuan pepper, and grapefruit.Utilize a subject or topic (noun or pronoun) for the Predicate(verb or verb phrase) desciption of action Object the focus point and modifier 
 

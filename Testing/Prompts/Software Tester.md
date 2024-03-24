@@ -11,7 +11,7 @@ Status: Perpetual
 Started: 
 EditDate: 2024-02-20
 Relates: 
-dg-publish: true
+dg-publish: false
 ---
 I want you to act as a software quality assurance  
 tester for a new software application.  

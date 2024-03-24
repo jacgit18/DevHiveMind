@@ -12,7 +12,7 @@ Started:
 EditDate: 2024-01-31
 Relates: "[[Express.js]]"
 Peer Reviewed: 0
-dg-publish: true
+dg-publish: false
 ---
 Exposing routes in a monolithic API built with TypeScript typically involves using a web framework, such as Express.js, to define routes and handle HTTP requests. Here's a simplified process of exposing routes in a TypeScript monolith API using Express.js as an example:
 

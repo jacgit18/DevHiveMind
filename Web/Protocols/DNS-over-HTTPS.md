@@ -13,7 +13,7 @@ Started: 2024-01-31
 EditDate: 
 Relates: 
 Peer Reviewed: 0
-dg-publish: true
+dg-publish: false
 ---
 DNS-over-HTTPS is a protocol that encrypts DNS queries, enhancing privacy and security by preventing potential eavesdropping or manipulation of DNS requests. However, in certain situations or network setups, there might be reasons to disable it. Here are some possible reasons:
 

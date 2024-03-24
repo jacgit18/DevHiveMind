@@ -12,7 +12,7 @@ Started:
 EditDate: 
 Relates: 
 Peer Reviewed: 0
-dg-publish: true
+dg-publish: false
 ---
 In the realm of Database Management Systems (DBMS), a database key holds a critical role, representing either a singular attribute or a combination of attributes. Its primary function is to uniquely identify a tuple (row/record) within a relation (table). However, the significance of keys extends beyond mere identification, playing a pivotal role in establishing relationships across various tables and columns within a relational database.
 
