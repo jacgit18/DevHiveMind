@@ -64,10 +64,40 @@ You can leverage ChatGPT to perform a CAP theorem analysis and a Kepner-Tregoe d
 In a system design choosing the right [[Impact of Architectural Styles |Architectural Styles]] is important think about what is needed and purpose of the style. In addition to that you can leverage [[When to use Domain-Driven Design |Domain Driven Design]] with some of the different styles depending on domain complexity determines weather it is necessary to use meaning the more simpler the domain is the less need for domain driven design in my opinion. Also what [[IV Backing services]] would you leverage and why also consider [[Test Driven Development]] depends on your priorities.
 
 
+
+
 In the realm of architectural styles, popular ones include [[Microservices VS Monolithic Architecture |Microservices]] which can also help with overall system maintainability, often paired with [[Eureka Service]] in Java-based applications, and monolithic architecture, representing a centralized system. Monolithic architecture involves building the entire application as a single, indivisible unit, typically deployed on a single server or a closely connected set of servers. 
 
 Microservices, on the other hand, allow for both stateless and stateful services to collaborate. This concept is intertwined with [[Stateless & Statefull Processes]], which aligns with the   [[VIII Concurrency |Concurrency factor of the 12-factor app]]. Furthermore, this concurrency factor intersects with [[Distributed Locking]], which can be implemented using various technologies such as [[ZooKeeper]] and Redis.
 
+
+## Traffic Estimate Example:
+
+### Network Traffic Estimate Example:
+- Active users: 10 million 
+- User Post viewed: 30 views per user or 30 `GET Request`
+- GET traffic = 300 million (10 million * 30)
+- `GET Requests` total traffic per second: 3,000 (300 million / 86,400 seconds)
+- Active user `POST Request` per second: 115 (10 million / 86,400 seconds)
+
+### Memory Storage Estimate Example:
+- Cache for Instagram highlights: 150 GB (300 million requests * 500 bytes)
+- Adjusted cache: 30 GB (20% of 150 GB)
+- Total memory: 90 GB (30 GB * 3 for replication)
+
+### Bandwidth:
+- Bandwidth required: 450,000 GB (300 million(Active users) * 1.5 MB)
+- Bandwidth per second: 5.2 GB (450,000 GB / 86,400 seconds in a day)
+
+### Storage:
+- Daily storage for writes: 15 TB (10 million writes * 1.5 MB)
+- Yearly storage: 55 PB (15 TB * 365 days * 10 years)
+
+### Summary:
+- Traffic: Daily active users * average reads and writes per user
+- Memory: Read requests per day * average request size * 20%
+- Bandwidth: Requests per day * average request size
+- Storage: Writes per day * size of write * time to store data
 
 You should also consider [[Fault Tolerance]] which refers to the system's resilience against failures, errors, or faults, ensuring uninterrupted operation and maintaining user experience. It encompasses proactive measures to handle failures gracefully and sustain availability. This principle applies universally across hardware, software, networks, and systems architecture. At its essence, fault tolerance anticipates failures as inevitable and seeks to minimize their impact through proactive strategies it also applies at and between each system component. 
 
@@ -163,33 +193,7 @@ Summarize key design decisions, highlighting any alternative considerations. Inv
 - 120,000,000,000 billion
 - 150,000,000,000,000 trillion
 
-## Traffic Estimate Example:
 
-### Network Traffic Estimate Example:
-- Active users: 10 million 
-- User Post viewed: 30 views per user or 30 `GET Request`
-- GET traffic = 300 million (10 million * 30)
-- `GET Requests` total traffic per second: 3,000 (300 million / 86,400 seconds)
-- Active user `POST Request` per second: 115 (10 million / 86,400 seconds)
-
-### Memory Storage Estimate Example:
-- Cache for Instagram highlights: 150 GB (300 million requests * 500 bytes)
-- Adjusted cache: 30 GB (20% of 150 GB)
-- Total memory: 90 GB (30 GB * 3 for replication)
-
-### Bandwidth:
-- Bandwidth required: 450,000 GB (300 million(Active users) * 1.5 MB)
-- Bandwidth per second: 5.2 GB (450,000 GB / 86,400 seconds in a day)
-
-### Storage:
-- Daily storage for writes: 15 TB (10 million writes * 1.5 MB)
-- Yearly storage: 55 PB (15 TB * 365 days * 10 years)
-
-### Summary:
-- Traffic: Daily active users * average reads and writes per user
-- Memory: Read requests per day * average request size * 20%
-- Bandwidth: Requests per day * average request size
-- Storage: Writes per day * size of write * time to store data
 
 
 # Alt Design
