@@ -107,11 +107,10 @@ Depending on the Architectural Styles you then should talk and identify major co
 
 When it comes to cloud services like AWS there are a broad range of services like [[Messaging systems]], and [[Caches]] which if you implement locally you can improve response time but keep caching policies in my mind. You can also discuss the usage of [[Monitoring & Observability |monitoring/logging for metrics]] and using [[Chaos Engineering]] in order to identify weakness in the overall system by injecting controlled failures and disruption into a system or access system capacity to reevaluate things bandwidth and other resources needs. You have things like `Amazon MQ`, `Amazon ElastiCache`, and `Amazon CloudWatch`. Alternatively if you don't want cloud solutions you can use things like [[Apache Kafka]], `Redis` for caching, or something like `Prometheus`. You also have services for things like static [[File System Storage]] services like `Amazon S3` which can be used with a [[Content Delivery Network |CDN]] improving traffic and fault tolerance. 
 
-If you expect system to process high traffic consider this [[High Traffic Architecture]]choice.
+If you expect system to process high traffic consider this [[High Traffic Architecture]].
 
 When it comes to all these components you also want keep [[Data Flow]] in mind as well like all the different sources of data, the processing and transformation, storage, transportation and communication. Along with things like versioning, change management, and monitoring.  
 
-There are other things like Networking components such as routers like [[Reverse proxy vs API gateway vs load balancer]].
 
 
 ##### API 
@@ -158,6 +157,8 @@ You should also consider enhancing frontend performance by optimizing page load 
 In the context of database servers and instances of your application, as well as any microservices within your codebase architecture, the concept of scaling can be categorized into [[Vertical vs Horizontal Scaling]]. Horizontal scaling is often preferred due to the limitations of vertical scaling. For instance, it's impossible to infinitely increase CPU and memory resources on a single server. Additionally, vertical scaling lacks failover and redundancy mechanisms. If one server experiences downtime, the entire website or application goes down with it completely. System tend to follow these common [[System Scalability Strategies]].
 
 To improve system scaling and performance you can use several technologies commonly used to distribute traffic across [[server pools]] like [[Load Balancer |load balancers]] technologies like this also implement [[Load Shedding]] which improves fault tolerance.
+
+There are Networking components that can improve performance such as routers like [[Reverse proxy vs API gateway vs load balancer]].
 
 On the database side of thing there are things like [[Database Sharding]] and [[Master-Slave Database Architecture]] which tend to be used together the workload is distributed not only horizontally across shards but also vertically within each shard. This allows for greater scalability and performance gains by parallelizing both read and write operations across multiple database servers. Additionally, using master-slave setups within each shard provides fault tolerance and high availability within each shard. If the master server in a shard fails, one of the slave servers can be promoted to the new master, ensuring continuous operation and data availability for that shard.
 
