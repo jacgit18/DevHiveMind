@@ -59,6 +59,9 @@ Create an Entity Relationship Diagram (ERD) to define clear relationships in dat
 ### Data Design & Database Architecture 
 When [[Choosing Database]] type, consider whether you're dealing with [[Industry Structured & Unstructured Data |Structured or Unstructured Data]]then come up with a short list of databases to pick from. For instance, if the domain focuses on medical data, it's likely structured, favoring SQL databases. Conversely, media-related data tends to be unstructured, making NoSQL databases more suitable. Then consider and talking about [[Schema Design]] that makes sense.
 
+You can talk governance like [[Data Retention Target]] and [[Database data governance]] compliance, Infrastructure may include tools and processes to enforce compliance with regulatory requirements and organizational policies, ensuring data security and legal compliance. 
+
+
 #### Storage Estimation Examples
 > Keep estimation simple focus on storage needed and not to much on queries especially if there are other critical things to discuss. 
 - Storage: Writes per day \* size of write \* time to store data
@@ -103,14 +106,15 @@ Microservices, on the other hand, allow for both stateless and stateful services
 
 When it comes to fault tolerance there are many ways to improve including [[Circuit breaker pattern relationship with fault tolerance |Circuit Breaker Design Pattern]]  which considered a stability pattern by monitoring interactions between services and, when a certain threshold of failures is reached, temporarily "opens" the circuit to prevent further requests from being sent. 
 
-Depending on the Architectural Styles you then should talk and identify major components of your system like [[Physical Servers vs Virtual Servers |physical or virtual servers]] which tend to be on premises or on cloud you can talk about the [[Benefits of cloud]] talking about cloud  in terms of outsourcing functionality or infrastructure using different service architecture ranging from IAAS to SAAS and benefiting from things like availability zones and other cloud services that add fault tolerance to the overall system. 
+Depending on the Architectural Styles you then should talk and identify major components of your system like [[Physical Servers vs Virtual Servers |physical or virtual servers]] which tend to be on premises or on cloud you can talk about the [[Benefits of cloud]] talking about cloud  in terms of outsourcing functionality or infrastructure using different service architecture ranging from IAAS to SAAS and benefiting from things like availability zones and other cloud services that add fault tolerance to the overall system also do a cost benefit analyst. 
 
-When it comes to cloud services like AWS there are a broad range of services like [[Messaging systems]], and [[Caches]] which if you implement locally you can improve response time but keep caching policies in my mind. You can also discuss the usage of [[Monitoring & Observability |monitoring/logging for metrics]] and using [[Chaos Engineering]] in order to identify weakness in the overall system by injecting controlled failures and disruption into a system or access system capacity to reevaluate things bandwidth and other resources needs. You have things like `Amazon MQ`, `Amazon ElastiCache`, and `Amazon CloudWatch`. Alternatively if you don't want cloud solutions you can use things like [[Apache Kafka]], `Redis` for caching, or something like `Prometheus`. You also have services for things like static [[File System Storage]] services like `Amazon S3` which can be used with a [[Content Delivery Network |CDN]] improving traffic and fault tolerance. 
+When it comes to cloud services like AWS there are a broad range of services like [[Messaging systems]], and [[Caches]] which if you implement locally you can improve response time but keep caching policies in my mind. You can also discuss the usage of [[Monitoring & Observability |monitoring/logging for metrics]] and using [[Chaos Engineering]] in order to identify weakness in the overall system by injecting controlled failures and disruption into a system or access system capacity to reevaluate things bandwidth and other resources needs. You have things like `Amazon MQ`, `Amazon ElastiCache`, and `Amazon CloudWatch` which could be very beneficial because of community support and documentation available. Alternatively if you don't want cloud solutions because of cost you can use things like [[Apache Kafka]], `Redis` for caching, or something like `Prometheus`. You also have services for things like static [[File System Storage]] services like `Amazon S3` which can be used with a [[Content Delivery Network |CDN]] improving traffic and fault tolerance. 
 
 If you expect system to process high traffic consider this [[High Traffic Architecture]].
 
 When it comes to all these components you also want keep [[Data Flow]] in mind as well like all the different sources of data, the processing and transformation, storage, transportation and communication. Along with things like versioning, change management, and monitoring.  
 
+You talk about choosing tech stack like deciding between leveraging [[Libraries vs Building From Scratch]] and the pros and cons around that in terms of potential dependencies issues. Besides that picking technologies based on the ability to potentially doing a future [[Migration Plan]] like sometimes the technologies you start out with doesn't make sense or you want to manage cost of your system.
 
 
 ##### API 
@@ -143,16 +147,6 @@ Also implementing responsive design principles ensures your website adapts seaml
 
 You should also consider enhancing frontend performance by optimizing page load speed through strategies like minimizing HTTP requests, compressing images, leveraging browser caching, and using CDNs, thereby improving user experience and search engine rankings. 
 
-#### Things to consider
-
-- Talk about selecting components for system from different perspectives like how is the community support or technical documentation around the different technology options also cost.
-
-- Talk about leveraging [[Libraries vs Building From Scratch]] and the pros and cons around that in terms of potential dependencies issues.
-
-- You can also talk about choosing tech stack based the potentially implementing a [[Migration Plan]] like sometimes the technologies you start out with doesn't make sense or you want to manage cost of your system.
-  
-- You can talk governance like [[Data Retention Target]] and [[Database data governance]] compliance, Infrastructure may include tools and processes to enforce compliance with regulatory requirements and organizational policies, ensuring data security and legal compliance. 
-
 ### Scalability and Performance
 In the context of database servers and instances of your application, as well as any microservices within your codebase architecture, the concept of scaling can be categorized into [[Vertical vs Horizontal Scaling]]. Horizontal scaling is often preferred due to the limitations of vertical scaling. For instance, it's impossible to infinitely increase CPU and memory resources on a single server. Additionally, vertical scaling lacks failover and redundancy mechanisms. If one server experiences downtime, the entire website or application goes down with it completely. System tend to follow these common [[System Scalability Strategies]].
 
@@ -168,7 +162,7 @@ It's worth noting that scaling considerations can fall under administrative func
 ### Step 3: Wrap Up(3 - 5 minutes)
 Summarize key design decisions, highlighting any alternative considerations. Invite questions and address outstanding concerns.
 
-# Talking Stats 
+# Stats 
 
 ### Data Size:
 
@@ -193,8 +187,6 @@ Summarize key design decisions, highlighting any alternative considerations. Inv
 - 900,000,000 million
 - 120,000,000,000 billion
 - 150,000,000,000,000 trillion
-
-
 
 
 # Alt Design
