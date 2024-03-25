@@ -24,6 +24,7 @@ dg-publish:
 >Get to the level were you are doing 1 coding question a month while working full time
 - [ ] Finish [[Clean Code]] documentation and review
 - [x] [[12 Factor App Docker.canvas|12 Factor App Docker]]
+- [ ] Create a unrestricted AI assistant like chatGpt without guardrails
 
 #### Develop OKR for Next Quarter
 #todo/Personal/High/Dev 
