@@ -12,28 +12,56 @@ Relates:
 Peer Reviewed: 0
 dg-publish:
 ---
-1. **Web Page Content:**
-   - **Inbound:** When a user requests a web page, the server sends the content (HTML, CSS, JavaScript) to the user's browser. The volume of inbound data is determined by the size of the web page content.
-   - **Outbound:** When the user's browser sends a request for a web page, it includes headers and possibly cookies. The volume of outbound data is relatively small compared to inbound data.
+Refined:
 
-2. **Images:**
-   - **Inbound:** When a user loads a web page containing images, the server sends the image files to the user's browser. The volume of inbound data is determined by the size and number of images on the web page.
-   - **Outbound:** When the user's browser requests images, it sends a request to the server. The volume of outbound data includes request headers and possibly cookies.
+## Web Page Content
+Considering an average web page size of 2MB, encompassing HTML, CSS, and JavaScript files, and receiving 10,000 daily visitors, the inbound data for web page content would total approximately 20 GB per day.
 
-3. **Videos:**
-   - **Inbound:** When a user watches a video on your website, the server sends the video file to the user's browser. The volume of inbound data is determined by the size and duration of the video.
-   - **Outbound:** When the user's browser requests the video, it sends a request to the server. The volume of outbound data includes request headers and possibly cookies.
+   - **Inbound:** When a user requests a web page, the server sends the content (HTML, CSS, JavaScript) to the user's browser. 
+   - **Outbound:** The user's browser request may include headers and cookies, generating relatively small outbound data.
 
-4. **Database Queries:**
-   - **Inbound:** When a user interacts with your website, such as searching for information, the user's browser sends a request to the server, which then queries the database for relevant data. The volume of inbound data includes the request headers and parameters.
-   - **Outbound:** When the server retrieves data from the database, it sends the query results back to the user's browser. The volume of outbound data is determined by the size of the query results.
+## Images
+Assuming each website image averages 500KB and each web page includes 10 images, the inbound data for images would approximate 5 GB per day for 10,000 visitors.
 
-5. **API Requests:**
-   - **Inbound:** When a user interacts with your website through an API, such as fetching user data or submitting a form, the user's browser sends a request to the server. The volume of inbound data includes the request headers and parameters.
-   - **Outbound:** When the server processes the API request, it sends a response back to the user's browser. The volume of outbound data is determined by the size of the response data.
+   - **Inbound:** When a user loads a web page with images, the server sends the image files to the user's browser.
+   - **Outbound:** Image requests from the user's browser entail outbound data including headers and cookies.
 
-6. **File Uploads/Downloads:**
-   - **Inbound:** When a user uploads a file to your website, the user's browser sends the file data to the server. The volume of inbound data is determined by the size of the uploaded file.
-   - **Outbound:** When the server sends a file to the user's browser for download, the server sends the file data to the user's browser. The volume of outbound data is determined by the size of the downloaded file.
+## Videos
+For hosted videos, inbound data estimation hinges on average video size, duration, and daily views.
 
-Each section involves both inbound and outbound data transfer, with the volume of data depending on various factors such as file size, request frequency, and user interactions.
+   - **Inbound:** Video files are sent from the server to the user's browser upon playback.
+   - **Outbound:** Requests for video playback initiate outbound data transmission, including headers and cookies.
+
+## Database Queries
+Inbound data for database queries varies with query complexity, database size, and frequency. For instance, 100,000 daily queries returning 1KB each would amount to about 100 MB per day.
+
+   - **Inbound:** User interactions prompt requests to the server, which queries the database.
+   - **Outbound:** Query results are sent back to the user's browser, influencing outbound data volume.
+
+## API Requests
+The volume of data transferred for API requests is contingent on request count and response size. For instance, 50,000 daily requests yielding 2KB each equates to about 100 MB per day.
+
+   - **Inbound:** User interactions with APIs trigger requests to the server, containing headers and parameters.
+   - **Outbound:** Server responses to API requests contribute to outbound data size, including response data.
+
+## File Uploads/Downloads
+Estimating inbound and outbound data for file transfers depends on average file size and upload/download frequency.
+
+   - **Inbound:** User file uploads transmit data to the server.
+   - **Outbound:** Server sends file data to user browsers upon download requests.
+
+## Alternative Approach
+
+You can use existing features or components within a system to establish a baseline for bandwidth requirements. Here's how you can approach it:  
+  
+1. **Identify Key Features or Components:** Begin by identifying the key features or components within your system that are representative of typical usage scenarios. These could be high-traffic areas of your application or functionality that involves significant data exchange.  
+  
+2. **Monitor Network Traffic:** Use network monitoring tools or performance monitoring features to track the network traffic associated with each identified feature or component. This may involve monitoring data transfer rates, packet sizes, and network latency during normal operation.  
+  
+3. **Collect Data:** Collect data over a period of time to capture variations in network usage, such as peak usage periods and fluctuations in traffic volume. Ensure that your monitoring covers different usage scenarios and user behaviors to capture a comprehensive view of network traffic patterns.  
+  
+4. **Analyze and Establish Baseline:** Analyze the collected data to establish baseline bandwidth requirements for each feature or component. This involves identifying average bandwidth usage, peak bandwidth usage, and any trends or patterns in network traffic over time. You can use statistical analysis techniques to determine the typical and maximum bandwidth requirements for each feature.  
+  
+5. **Iterate and Refine:** Continuously monitor and refine your baseline estimates as the system evolves and new features are introduced. Periodically reassess the bandwidth requirements for existing features and adjust your baseline accordingly based on changes in usage patterns or system architecture.  
+  
+By using existing features to establish a baseline for bandwidth requirements, you can gain insights into the network usage patterns of your application and ensure that your infrastructure is adequately provisioned to support current and future demands.

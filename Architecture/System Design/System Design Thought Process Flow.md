@@ -32,7 +32,7 @@ For more info read
 - [ ] https://medium.com/@karan99/system-design-netflix-6962b4f6222
 - [ ] https://interviewnoodle.com/algorithms-you-need-to-know-before-you-take-that-systems-design-interview-671608d61741
 
-Throughout the designing of the system you can discuss [[Fault Tolerance]] which refers to the system's resilience against failures, errors, or faults, ensuring uninterrupted operation and maintaining user experience. It encompasses proactive measures to handle failures gracefully and sustain availability. This principle applies universally across hardware, software, networks, and systems architecture. At its essence, fault tolerance anticipates failures as inevitable and seeks to minimize their impact through proactive strategies it also applies at and between each system component. 
+Throughout the designing of the system you can discuss [[Fault Tolerance]] which refers to the system's resilience against failures, errors, or faults, ensuring uninterrupted operation and maintaining user experience by reducing system downtime. It encompasses proactive measures to handle failures gracefully and sustain availability. This principle applies universally across hardware, software, networks, and systems architecture. At its essence, fault tolerance anticipates failures as inevitable and seeks to minimize their impact through proactive strategies it also applies at and between each system component. 
 
 ### Step 1: Requirements Gathering 
 > **Establish a Understanding and Design Scope of problem (3 - 10 minutes)
@@ -57,7 +57,8 @@ Create an Entity Relationship Diagram (ERD) to define clear relationships in dat
 
 
 ### Data Design & Database Architecture 
-When [[Choosing Database]] type, consider whether you're dealing with [[Industry Structured & Unstructured Data |Structured or Unstructured Data]]then come up with a short list of databases to pick from. For instance, if the domain focuses on medical data, it's likely structured, favoring SQL databases. Conversely, media-related data tends to be unstructured, making NoSQL databases more suitable. Then consider and talking about [[Schema Design]] that makes sense.
+When [[Choosing Database]] type, consider whether you're dealing with [[Industry Structured & Unstructured Data |Structured or Unstructured Data]] then come up with a short list of databases to pick from. For instance, if the domain focuses on medical data, it's likely structured, favoring SQL databases. Conversely, media-related data tends to be unstructured, making NoSQL databases more suitable. Then consider and talking about [[Schema Design]] that makes sense. all these factors also include database architecture can influence throughput in terms of number request, database transactions(`collection of quires`), and queries made.  
+
 
 You can talk governance like [[Data Retention Target]] and [[Database data governance]] compliance, Infrastructure may include tools and processes to enforce compliance with regulatory requirements and organizational policies, ensuring data security and legal compliance. 
 
@@ -85,12 +86,11 @@ You can talk governance like [[Data Retention Target]] and [[Database data gover
 - Adjusted cache: (20% of 150 GB) = 30 GB
 - Total memory: (30 GB \* 3 for replication) = 90 GB 
 
-#### Bandwidth Estimation Examples
+#### [[Bandwidth Estimation]] Examples
 > Once you determine other estimation you can address this last or ask about potential historical traffic using that as a baseline.
 - Bandwidth: Requests per day * average request size
 - Bandwidth required: 450,000 GB (300 million(Active users) \* 1.5 MB)
 - Bandwidth per second: 5.2 GB (450,000 GB / 86,400 seconds in a day)
-
 
 You can leverage ChatGPT to perform a CAP theorem analysis and a Kepner-Tregoe decision analysis, using weighted decisions to identify a concise list of choices for databases or other relevant technologies. This approach allows for a systematic evaluation of options based on their consistency, availability, and partition tolerance, as well as other criteria important to your decision-making process. By combining these analytical methods, you can efficiently narrow down your options and make informed decisions that align with your specific needs and preferences.
 
@@ -99,9 +99,9 @@ You can leverage ChatGPT to perform a CAP theorem analysis and a Kepner-Tregoe d
 In a system design choosing the right [[Impact of Architectural Styles |Architectural Styles]] is important think about what is needed and purpose of the style. In addition to that you can leverage [[When to use Domain-Driven Design |Domain Driven Design]] with some of the different styles depending on domain complexity determines weather it is necessary to use meaning the more simpler the domain is the less need for domain driven design in my opinion. Also what [[IV Backing services]] would you leverage and why also consider [[Test Driven Development]] depends on your priorities. Side note things like Test Driven and Domain design are meant to be used alongside architectural styles.
 
 
-In the realm of architectural styles, popular ones include [[Microservices VS Monolithic Architecture |Microservices]] which can also help with overall system maintainability, often paired with [[Eureka Service]] in Java-based applications, and monolithic architecture, representing a centralized system. Monolithic architecture involves building the entire application as a single, indivisible unit, typically deployed on a single server or a closely connected set of servers. 
+In the realm of architectural styles, popular ones include [[Microservices VS Monolithic Architecture |Microservices]] which can also help with overall system maintainability and scalability improving response times, often paired with [[Eureka Service]] in Java-based applications, and monolithic architecture, representing a centralized system. Monolithic architecture involves building the entire application as a single, indivisible unit, typically deployed on a single server or a closely connected set of servers. 
 
-Microservices, on the other hand, allow for both stateless and stateful services to collaborate. This concept is intertwined with [[Stateless & Statefull Processes]], which aligns with the   [[VIII Concurrency |Concurrency factor of the 12-factor app]]. Furthermore, this concurrency factor intersects with [[Distributed Locking]], which can be implemented using various technologies such as [[ZooKeeper]] and Redis.
+Microservices, are very good for segregating services and responsibilities allowing for both stateless and stateful services to work together. This concept is intertwined with [[Stateless & Statefull Processes]], which aligns with the   [[VIII Concurrency |Concurrency factor of the 12-factor app]]. Furthermore, this concurrency factor intersects with [[Distributed Locking]], which can be implemented using various technologies such as [[ZooKeeper]] and Redis.
 
 
 When it comes to fault tolerance there are many ways to improve including [[Circuit breaker pattern relationship with fault tolerance |Circuit Breaker Design Pattern]]  which considered a stability pattern by monitoring interactions between services and, when a certain threshold of failures is reached, temporarily "opens" the circuit to prevent further requests from being sent. 
@@ -109,6 +109,8 @@ When it comes to fault tolerance there are many ways to improve including [[Circ
 Depending on the Architectural Styles you then should talk and identify major components of your system like [[Physical Servers vs Virtual Servers |physical or virtual servers]] which tend to be on premises or on cloud you can talk about the [[Benefits of cloud]] talking about cloud  in terms of outsourcing functionality or infrastructure using different service architecture ranging from IAAS to SAAS and benefiting from things like availability zones and other cloud services that add fault tolerance to the overall system also do a cost benefit analyst. 
 
 When it comes to cloud services like AWS there are a broad range of services like [[Messaging systems]], and [[Caches]] which if you implement locally you can improve response time but keep caching policies in my mind. You can also discuss the usage of [[Monitoring & Observability |monitoring/logging for metrics]] and using [[Chaos Engineering]] in order to identify weakness in the overall system by injecting controlled failures and disruption into a system or access system capacity to reevaluate things bandwidth and other resources needs. You have things like `Amazon MQ`, `Amazon ElastiCache`, and `Amazon CloudWatch` which could be very beneficial because of community support and documentation available. Alternatively if you don't want cloud solutions because of cost you can use things like [[Apache Kafka]], `Redis` for caching, or something like `Prometheus`. You also have services for things like static [[File System Storage]] services like `Amazon S3` which can be used with a [[Content Delivery Network |CDN]] improving traffic and fault tolerance. 
+
+> When it comes to technologies like if you want to use a lot of open source technologies you should consider longevity of open source technology staying open source like Redis which has changed. 
 
 If you expect system to process high traffic consider this [[High Traffic Architecture]].
 
@@ -154,7 +156,12 @@ To improve system scaling and performance you can use several technologies commo
 
 There are Networking components that can improve performance such as routers like [[Reverse proxy vs API gateway vs load balancer]].
 
-On the database side of thing there are things like [[Database Sharding]] and [[Master-Slave Database Architecture]] which tend to be used together the workload is distributed not only horizontally across shards but also vertically within each shard. This allows for greater scalability and performance gains by parallelizing both read and write operations across multiple database servers. Additionally, using master-slave setups within each shard provides fault tolerance and high availability within each shard. If the master server in a shard fails, one of the slave servers can be promoted to the new master, ensuring continuous operation and data availability for that shard.
+On the database side of thing you can use techniques like [[Database Sharding]] and a [[Master-Slave Database Architecture]] which is simple to implement and is better in terms of data consistency while improving performance. This tandem approach distributes workload both horizontally across shards and vertically within each shard. This strategy enhances scalability and performance by parallelizing read and write operations across multiple database servers. Moreover, integrating master-slave setups within each shard ensures fault tolerance and high availability. In the event of a master server failure within a shard, a slave server can seamlessly assume the role of the new master, thereby guaranteeing uninterrupted operation and data accessibility for that shard. 
+
+Alternatively you can use Sharding with [[Leaderless Architecture]] improving high availability by distributing both data and operations across multiple shards and nodes. Each shard operates independently and can handle its own read and write requests without relying on a centralized coordinator. The benefits of this is you can easily scale horizontally adding more nodes or shards depending on the workload which helps with fault tolerance because there isn't a leader. You also have reduced latency because user can interact with the closest node which helps if in geographically distributed systems. Leaderless architectures offer flexibility in terms of data placement and replication strategies. Different shards can employ different replication methods, allowing organizations to tailor their data storage and redundancy options to their specific needs. the only thing is it can be more complex and hard to achieve strong consistency especially in the presence of network partitions or node failures.
+
+Picking between the two database architecture comes down to complexity, data consistency and predictable operations, vs high availability, fault tolerance, scalability, and decentralization operations. if you prefer CP(Consistency & Partitioning) then Master Slave is the way to go but if you prefer AP(Availability & Partitioning) Leaderless architecture is the way to go.  
+
 
 It's worth noting that scaling considerations can fall under administrative functionalities, whether that involves resource scaling in a cloud environment or implementing custom solutions such as creating an admin dashboard for internal use by developers. This dashboard could encompass various [[XII Admin processes]], offering insights and control over the scaling operations and other administrative tasks.
 
@@ -228,6 +235,3 @@ This estimation allows us to properly design and dimension the infrastructure to
 
 
 ![[System Design BluePrint.jpg]]
-
-## Advance Roadmap
-![[system-design.pdf]]
