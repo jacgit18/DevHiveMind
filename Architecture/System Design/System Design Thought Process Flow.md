@@ -57,7 +57,7 @@ Create an Entity Relationship Diagram (ERD) to define clear relationships in dat
 
 
 ### Data Design & Database Architecture 
-When [[Choosing Database]] type, consider whether you're dealing with [[Industry Structured & Unstructured Data |Structured or Unstructured Data]] then come up with a short list of databases to pick from. For instance, if the domain focuses on medical data, it's likely structured, favoring SQL databases. Conversely, media-related data tends to be unstructured, making NoSQL databases more suitable. Then consider and talking about [[Schema Design]] that makes sense. all these factors also include database architecture can influence throughput in terms of number request, database transactions(`collection of quires`), and queries made.  
+When [[Choosing Database]] type, consider whether you're dealing with [[Industry Structured & Unstructured Data |Structured or Unstructured Data]] then come up with a short list of databases to pick from. For instance, if the domain focuses on medical data, it's likely structured, favoring SQL databases. Conversely, media-related data tends to be unstructured, making NoSQL databases more suitable. Then consider and talking about [[Schema Design]] that makes sense along with table [[Normalization & Denormalization]]. all these factors also include database architecture can influence throughput in terms of number request, database transactions(`collection of quires`), and queries made.  
 
 
 You can talk governance like [[Data Retention Target]] and [[Database data governance]] compliance, Infrastructure may include tools and processes to enforce compliance with regulatory requirements and organizational policies, ensuring data security and legal compliance. 
