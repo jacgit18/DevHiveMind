@@ -153,7 +153,7 @@ You should also consider enhancing frontend performance by optimizing page load 
 ### Scalability and Performance
 In the context of database servers and instances of your application, as well as any microservices within your codebase architecture, the concept of scaling can be categorized into [[Vertical vs Horizontal Scaling]]. Horizontal scaling is often preferred due to the limitations of vertical scaling. For instance, it's impossible to infinitely increase CPU and memory resources on a single server. Additionally, vertical scaling lacks failover and redundancy mechanisms. If one server experiences downtime, the entire website or application goes down with it completely. System tend to follow these common [[System Scalability Strategies]].
 
-To improve system scaling and performance you can use several technologies commonly used to distribute traffic across [[server pools]] like [[Load Balancer |load balancers]] technologies like this also implement [[Load Shedding]] which improves fault tolerance.
+To improve system scaling and performance you can use several technologies commonly used to distribute traffic across [[server pools]] like [[Load Balancer |load balancers]] technologies like this also implement [[Load Shedding]] which improves fault tolerance. Also [[Rate Limiting]] can be implemented delaying or buffering excessive requests, ensuring that they are processed at a controlled pace.
 
 There are Networking components that can improve performance such as routers like [[Reverse proxy vs API gateway vs load balancer]].
 
