@@ -4,51 +4,30 @@
     "type": "split",
     "children": [
       {
-        "id": "6b9d0477f95cbba2",
+        "id": "e60c36bd9c009d48",
         "type": "tabs",
         "children": [
           {
-            "id": "4ee4487f1644389b",
+            "id": "567589941354ed17",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Home.md",
-                "mode": "preview",
+                "file": "Architecture/Fault Tolerance.md",
+                "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "38529f1eb750891a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Architecture/System Design/System Design Thought Process Flow.md",
-                "mode": "preview",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "4177ccc504b91399",
-            "type": "leaf",
-            "state": {
-              "type": "graph",
-              "state": {}
-            }
-          },
-          {
-            "id": "45a857eeb27f0914",
+            "id": "b46bd7ef1c893824",
             "type": "leaf",
             "state": {
               "type": "graph",
               "state": {}
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -134,6 +113,7 @@
         "state": {
           "type": "backlink",
           "state": {
+            "file": "Architecture/Fault Tolerance.md",
             "collapseAll": false,
             "extraContext": false,
             "sortOrder": "alphabetical",
@@ -150,6 +130,7 @@
         "state": {
           "type": "outgoing-link",
           "state": {
+            "file": "Architecture/Fault Tolerance.md",
             "linksCollapsed": false,
             "unlinkedCollapsed": true
           }
@@ -160,7 +141,9 @@
         "type": "leaf",
         "state": {
           "type": "outline",
-          "state": {}
+          "state": {
+            "file": "Architecture/Fault Tolerance.md"
+          }
         }
       },
       {
@@ -237,12 +220,12 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "4177ccc504b91399",
+  "active": "567589941354ed17",
   "lastOpenFiles": [
-    "Databases/Database data governance.md",
     "Architecture/System Design/System Design Thought Process Flow.md",
-    "Companies/Companies Worked At/TD/Business Requirements Life cycle.md",
     "Home.md",
+    "Companies/Companies Worked At/TD/Business Requirements Life cycle.md",
+    "Databases/Database data governance.md",
     "Architecture/System Design/Userbase.md"
   ]
 }
