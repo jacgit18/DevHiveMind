@@ -46,7 +46,7 @@ Here are some key functionalities and reasons for using an API Gateway:
 9. **Service Composition:**  
 - In some cases, API Gateways can aggregate data from multiple services into a single response. This is known as service composition and helps in reducing the number of requests clients need to make to fulfill a specific use case.  
 
-![[GatewayFunction.jpeg]]
+![[GatewayFunction.gif]]
   
 In addition to these functionalities, API Gateways play a crucial role in maintaining consistency, security, and performance across an API ecosystem. They serve as a central point of control and management for API-related concerns in distributed and microservices architectures.
 
