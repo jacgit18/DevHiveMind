@@ -11,7 +11,7 @@ Purpose: This documentation discusses rate limits.
 Status: Done
 Started: 
 EditDate: 2024-03-03
-Relates: 
+Relates: "[[Client Vs Server side Rate Limiting]]"
 Peer Reviewed: 0
 dg-publish:
 ---
