@@ -16,25 +16,6 @@ Relates: "[[Client Vs Server side Rate Limiting]]"
 Peer Reviewed: 0
 dg-publish:
 ---
-Rate limiters are essential for controlling the rate of requests or actions to prevent abuse, overuse, or misuse of resources. Here are some different types of rate limiters:  
-  
-1. **Fixed Window Rate Limiter**: In this approach, a fixed window of time is defined, such as one minute. The rate limiter counts the number of requests/actions within that window and enforces a limit. Once the window resets, the count is cleared.  
-  
-2. **Sliding Window Rate Limiter**: Unlike the fixed window approach, the sliding window rate limiter dynamically adjusts the window based on recent activity. It allows a smoother distribution of requests over time and prevents burst traffic from exceeding the limit.  
-  
-3. **Token Bucket Rate Limiter**: This rate limiter maintains a bucket of tokens, where each token represents permission to perform a single action/request. Tokens are added to the bucket at a fixed rate, and requests can only be made if tokens are available.  
-  
-4. **Leaky Bucket Rate Limiter**: Similar to the token bucket approach, the leaky bucket rate limiter regulates the rate of requests by allowing a fixed number of requests to leak out of the bucket per unit of time. Excess requests are either queued or discarded.  
-  
-5. **Distributed Rate Limiter**: In a distributed environment, a distributed rate limiter coordinates across multiple nodes or instances to enforce rate limits consistently. This ensures that rate limits are applied uniformly, regardless of the location of the requester.  
-  
-6. **Adaptive Rate Limiter**: Adaptive rate limiters dynamically adjust the rate limit based on various factors such as system load, user behavior, or traffic patterns. They provide flexibility to handle fluctuating loads effectively.  
-  
-7. **Custom Rate Limiters**: Depending on specific requirements, custom rate limiters can be designed and implemented. These may incorporate features such as dynamic adjustment based on user attributes, fine-grained control over limits, or integration with external systems for monitoring and management.  
-  
-Each type of rate limiter has its strengths and weaknesses, and the choice depends on factors such as the nature of the application, expected traffic patterns, scalability requirements, and desired level of control over rate limiting behavior.
-
-
 ### **Understanding Business-Level Rate Limits (Quotas)**
 
 Rate limiting, a crucial traffic management tool for API owners, safeguards systems from overload and aligns API usage with business goals. A closer look at rate limits, particularly the subcategories, offers a comprehensive view of traffic management strategies.
