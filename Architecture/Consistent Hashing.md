@@ -1,5 +1,7 @@
 ---
-tags: 
+tags:
+  - loadBalancer
+  - distributedSystem
 author:
   - jacgit18
   - chatgpt
@@ -30,3 +32,12 @@ By using consistent hashing, distributed systems can achieve efficient data dist
 
 
 This relates to [[System Design Interview An Insider’s Guide.pdf#page=71&selection=0,36,4,51|System Design Interview An Insider’s Guide Chapter 5]] 
+
+> Consistent hashing is widely used in real-world systems, including some notable ones:
+> • Partitioning component of Amazon’s Dynamo database [3] 
+> • Data partitioning across the cluster in Apache Cassandra [4] 
+> • Discord chat application [5] 
+> • Akamai content delivery network [6] 
+> • Maglev network load balancer [7]
+
+[[System Design Interview An Insider’s Guide.pdf#page=85&selection=10,0,15,34|System Design Interview An Insider’s Guide, page 85]]
