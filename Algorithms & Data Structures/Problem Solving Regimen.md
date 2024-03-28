@@ -62,16 +62,16 @@ use while loop most of the time when number of iteration aren't known
 3. Dummy Node 
 4. Cyclic Sort(sort are comparison based) 
 	- Low priority pattern
-#### Range(Priori) 
+#### Range(Priority) 
 4. Sliding Window
-#### Search 
+#### Search(Priority) 
 5. Binary Search
 #### Combination 
 6. Backtracking
 #### Merge 
 7. Merge Interval
 8. K way Merge
-#### Tree Search 
+#### Tree Search(Priority)
 9. DFS
 10. BFS 
 #### Optimization Pattern
