@@ -25,6 +25,8 @@ dg-publish:
 ![[STATE.gif]]
 Stateless processes, often referred to as stateless computing or stateless applications, are software systems or components that do not retain or rely on stored information, or "state," between interactions or transactions. In other words, each request or task is independent and self-contained, without any knowledge of past interactions. Essentially no data is stored in the local variables and should not maintain any client-specific state between requests.
 
+For a stateless architecture, data or state is retrieved from a database or shared store as needed, without the server maintaining session-specific information between requests. This means that each request is independent and self-contained, and the server does not retain any context or memory about previous interactions with the client. Instead, data is fetched from the database or shared store based on the current request parameters, ensuring scalability and fault tolerance.
+
 
 ## Characteristics of Processes
 Key characteristics of stateless and stateful processes include:
@@ -67,7 +69,7 @@ Stateless processes are more resilient to failures since they don't rely on spec
 Load balancing is easier to implement, as requests can be distributed evenly to any available instance without concern for session affinity.
 
 
-## Stateless Example:
+## Stateless Example
 
 ```typescript
 class StatelessCounter {
@@ -82,7 +84,7 @@ counterValue = StatelessCounter.increment(counterValue, 5); // Result: 5
 counterValue = StatelessCounter.increment(counterValue, 3); // Result: 8
 ```
 
-## Statefull Example:
+## Stateful Example
 In this example, `StatelessCounter` is a class that provides a stateless operation to increment a value. It takes the current value and an increment amount as parameters and returns the new value. The state is managed externally (in the `counterValue` variable), and each call to `increment` is independent of previous calls.
 
 

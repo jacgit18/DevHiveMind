@@ -10,9 +10,9 @@ author:
   - jacgit18
   - chatgpt
 Purpose: This documentation discusses Database Sharding.
-Status: Done
+Status: Refinement
 Started: 
-EditDate: 2024-02-17
+EditDate: 2024-03-28
 Relates: 
 Peer Reviewed: 0
 dg-publish:
@@ -22,6 +22,7 @@ dg-publish:
 Database sharding is a technique used in database management to improve scalability and performance by horizontally partitioning data across multiple databases or servers. The term "sharding" comes from the concept of dividing a larger object into smaller, manageable pieces or shards. This approach is particularly useful in handling large datasets and high transaction volumes.
 
 Database sharding is typically used when a single database becomes a bottleneck due to increased data volume or high transaction loads. It helps distribute data across multiple servers, improving performance and scalability. Use sharding when you need to handle large datasets, high traffic, or when horizontal scaling is necessary for your application.
+
 
 Here's an explanation of key aspects of database sharding:
 
@@ -53,9 +54,20 @@ Here's an explanation of key aspects of database sharding:
 
 In summary, database sharding is a technique that distributes a large database across multiple servers or nodes to improve scalability and performance. It's a powerful strategy for handling large datasets and high transaction volumes, commonly employed in modern, high-demand applications. However, it requires careful planning and consideration of data distribution, consistency, and scalability requirements.
 
+Data sharding differs from traditional partitioning in that it involves splitting data based on rows rather than columns. Each shard operates independently, handling its subset of data and processing queries in parallel with other shards.
+
+partitioning strategies
+
+There are different types of partitioning methods, including:  
+  
+1. **Range Partitioning:** Data is partitioned based on a range of values, such as date ranges or numeric ranges.  
+2. **List Partitioning:** Data is partitioned based on a predefined list of values, such as categories or regions.  
+3. **Hash Partitioning:** Data is partitioned based on a hash function applied to a specific column, distributing rows evenly across partitions.  
+4. **Composite Partitioning:** Data is partitioned using a combination of multiple partitioning methods.
 
 
 > Sharding can refer to both horizontal and vertical partitioning of a database, and the distinction lies in how the data is divided.
+
 
 1. **Horizontal Sharding (Sharding by Rows):**
    - This is the more common understanding of sharding. In horizontal sharding, the dataset is divided based on rows of data. Each shard contains a subset of the entire dataset, and the division is typically done based on a specific criterion like ranges of values, geographic regions, or other logical criteria.
