@@ -55,7 +55,7 @@ Go through leetcode hards make chatGPT add bugs and debug. Also while doing figu
 - [ ] [[System Design Interview An Insider’s Guide.pdf#page=132&selection=0,31,7,85|DESIGN A WEB CRAWLER]]
 
 #todo/Personal/Med/Dev 
-- [ ] Revisit chapter 2 also chapter 4 to 7
+- [ ] Revisit chapter 2 briefly also chapter 4 to 7
 
 ## Order of Patterns to Focus on 
 #### Pointer Manipulation/Comparison 
