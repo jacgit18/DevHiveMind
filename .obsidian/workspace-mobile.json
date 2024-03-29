@@ -4,27 +4,27 @@
     "type": "split",
     "children": [
       {
-        "id": "e22dcdcded9bf7ad",
+        "id": "e60c36bd9c009d48",
         "type": "tabs",
         "children": [
           {
-            "id": "8dbf3158f60aa520",
-            "type": "leaf",
-            "state": {
-              "type": "graph",
-              "state": {}
-            }
-          },
-          {
-            "id": "cf73a1d4ab537197",
+            "id": "567589941354ed17",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Architecture/System Design/System Design Thought Process Flow.md",
+                "file": "Architecture/Fault Tolerance.md",
                 "mode": "source",
                 "source": false
               }
+            }
+          },
+          {
+            "id": "b46bd7ef1c893824",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {}
             }
           }
         ]
@@ -52,7 +52,7 @@
         "state": {
           "type": "search",
           "state": {
-            "query": "tag:OrderOfOperations",
+            "query": "",
             "matchingCase": false,
             "explainSearch": false,
             "collapseAll": false,
@@ -93,7 +93,7 @@
         }
       }
     ],
-    "currentTab": 1
+    "currentTab": 0
   },
   "right": {
     "id": "c132e8bf1ab9e4bd",
@@ -113,6 +113,7 @@
         "state": {
           "type": "backlink",
           "state": {
+            "file": "Architecture/Fault Tolerance.md",
             "collapseAll": false,
             "extraContext": false,
             "sortOrder": "alphabetical",
@@ -129,6 +130,7 @@
         "state": {
           "type": "outgoing-link",
           "state": {
+            "file": "Architecture/Fault Tolerance.md",
             "linksCollapsed": false,
             "unlinkedCollapsed": true
           }
@@ -139,7 +141,9 @@
         "type": "leaf",
         "state": {
           "type": "outline",
-          "state": {}
+          "state": {
+            "file": "Architecture/Fault Tolerance.md"
+          }
         }
       },
       {
@@ -187,6 +191,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "digitalgarden:Digital Garden Publication Center": false,
       "obsidian-excalidraw-plugin:Create new drawing": false,
       "homepage:Open homepage": false,
       "janitor:Janitor: scan vault": false,
@@ -215,11 +220,12 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "8dbf3158f60aa520",
+  "active": "567589941354ed17",
   "lastOpenFiles": [
-    "Home.md",
     "Architecture/System Design/System Design Thought Process Flow.md",
+    "Home.md",
     "Companies/Companies Worked At/TD/Business Requirements Life cycle.md",
+    "Databases/Database data governance.md",
     "Architecture/System Design/Userbase.md"
   ]
 }

@@ -15,7 +15,7 @@ Peer Reviewed: 0
 dg-publish: false
 ---
 ![[Api Gateway.gif]]
-An API Gateway is a server that acts as an API front-end, receiving API requests, enforcing throttling and security policies, passing requests to the back-end service, and then passing the response back to the requester. It often acts as an entry point for microservices or other backend services.  
+An API Gateway is a server that acts as an API front-end, receiving API requests, enforcing throttling and security policies, passing requests to the back-end service, and then passing the response back to the requester. It often acts as an entry point for microservices or other backend services. It also can is used to implement a [[System Design Interview An Insider’s Guide.pdf#page=54&selection=0,79,4,23|Rate Limiter]]
   
 Here are some key functionalities and reasons for using an API Gateway:  
   
@@ -46,6 +46,28 @@ Here are some key functionalities and reasons for using an API Gateway:
 9. **Service Composition:**  
 - In some cases, API Gateways can aggregate data from multiple services into a single response. This is known as service composition and helps in reducing the number of requests clients need to make to fulfill a specific use case.  
 
-![[GatewayFunction.jpeg]]
+![[GatewayFunction.gif]]
   
 In addition to these functionalities, API Gateways play a crucial role in maintaining consistency, security, and performance across an API ecosystem. They serve as a central point of control and management for API-related concerns in distributed and microservices architectures.
+
+
+#### Configuration for Redundancy & Availability
+
+In API gateway architecture, the terms "hot-hot" and "hot-warm" refer to different configurations for redundancy and availability of the API gateway nodes. Here's an explanation of each:  
+  
+1. **Hot-Hot API Gateway Architecture:**  
+- In a hot-hot architecture, also known as an active-active configuration, all API gateway nodes are actively serving traffic simultaneously.  
+- Each node in the API gateway cluster is capable of processing incoming requests and routing them to the appropriate backend services.  
+- Requests are load-balanced across all active nodes in the cluster, distributing traffic evenly and providing high availability and scalability.  
+- If one node in the cluster fails or becomes unavailable, the remaining nodes continue to serve traffic, ensuring uninterrupted service and redundancy.  
+- Hot-hot architectures are well-suited for high-traffic environments and scenarios where maximum uptime and minimal latency are critical requirements.  
+  
+2. **Hot-Warm API Gateway Architecture:**  
+- In a hot-warm architecture, the API gateway cluster consists of both active (hot) and standby (warm) nodes.  
+- The hot nodes are actively serving traffic and processing requests, similar to the hot-hot configuration.  
+- The warm nodes are kept in a standby or passive state, ready to be activated in case of failover or increased traffic demand.  
+- Typically, the warm nodes do not actively participate in processing requests but are configured to quickly take over if a hot node fails or becomes overloaded.  
+- Hot-warm architectures provide a balance between resource utilization and redundancy. The standby nodes help to conserve resources and reduce costs while still providing failover capabilities.  
+- However, there may be a slightly longer failover time compared to hot-hot architectures since the standby nodes need to be activated before serving traffic.  
+  
+In summary, hot-hot API gateway architectures offer maximum redundancy and availability by having all nodes actively serving traffic, while hot-warm architectures provide a balance between resource utilization and redundancy by incorporating standby nodes for failover scenarios. The choice between the two architectures depends on the specific requirements of the application, including uptime objectives, traffic patterns, and cost considerations.
