@@ -15,6 +15,7 @@ dg-publish:
 ---
 #todo/Personal/Med/Dev 
 - [ ] Learn about health care industry but specifically human biology so much exploration in terms of a domain.
+- [ ] For medical engineering roles you can bring up your mom
 
 ## Industries or Subsectors 
 related to biology, human anatomy, and scientific fields.
