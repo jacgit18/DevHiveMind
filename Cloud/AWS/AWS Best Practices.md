@@ -17,6 +17,8 @@ dg-publish:
 ---
 You can utilize Amazon Inspector, an automated security assessment service tailored for `EC2` instances, to enhance your security posture and ensure compliance with security best practices.
 
+use Virtual Private Cloud and Virtual Private Cloud together 
+
 ### Use Services like 
 
 AWS Trusted Advisor service offers comprehensive insights into your AWS infrastructure, allowing you to assess and refine your setup against industry best practices. It enables evaluation across various facets including cost optimization, performance, security, fault tolerance, and adherence to service limits.
