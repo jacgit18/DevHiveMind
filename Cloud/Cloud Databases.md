@@ -13,7 +13,7 @@ Relates:
 Peer Reviewed: 0
 dg-publish:
 ---
-Cloud databases fall into different service models within cloud computing:
+When navigating the realm of databases in AWS, there exist various approaches. Cloud databases are categorized into different service models within cloud computing:
 
 1. **[[Benefits of cloud#SAAS |SAAS]] (Software as a Service):** Cloud databases under SaaS typically provide storage and data analytical tools. Users access these services through a web interface, and the provider manages infrastructure, maintenance, and updates.
 
