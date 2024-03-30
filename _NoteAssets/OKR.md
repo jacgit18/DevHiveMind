@@ -29,6 +29,7 @@ dg-publish:
 	- [ ] Refine [[Project Schema]]
 	- [ ] Maybe make it carpenter themed frontend to go with brand
 	- [ ] Look into potential libraries to use 
+	- [ ] Look into https://aws.amazon.com/rds/aurora/
 
 
 
