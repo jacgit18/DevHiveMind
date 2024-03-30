@@ -32,7 +32,7 @@ A Data Mart is akin to a specialty store in a large shopping complex. It's a foc
 
 ### Data Warehouse Unveiled
 
-In contrast, a data warehouse is the grand central station of an organization's data universe. It's a comprehensive repository that integrates data from many sources, including Amazon Redshift, ensuring a holistic view of operations. Designed for robust querying and analytics, Data Warehouses provide the foundation for strategic decision-making, offering insights drawn from historical and current data.
+In contrast, a data warehouse is the grand central station of an organization's data universe. It's a comprehensive repository that integrates data from many sources, including `Amazon Redshift`, ensuring a holistic view of operations. Designed for robust querying and analytics, Data Warehouses provide the foundation for strategic decision-making, offering insights drawn from historical and current data.
 
 ### Key Differences: Data Mart vs. Data Warehouse
 

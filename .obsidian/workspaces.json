@@ -1227,63 +1227,180 @@
       },
       "active": "c96f6aad006b5b9e"
     },
-    "read": {
+    "BIG DATA": {
       "main": {
         "id": "0cbb3f0709975816",
         "type": "split",
         "children": [
           {
-            "id": "0ff3cf197a163d0b",
+            "id": "7abe5b8f722fe387",
             "type": "tabs",
             "children": [
               {
-                "id": "69ce3eef1c662c8f",
+                "id": "8246e2e410eb3098",
                 "type": "leaf",
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "Architecture/System Design/System Design Thought Process Flow.md",
+                    "file": "Databases/Data Warehouse.md",
                     "mode": "source",
                     "source": false
                   }
                 }
               },
               {
-                "id": "a4a53af6772e0fbb",
+                "id": "220221ff6ad6bd14",
                 "type": "leaf",
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "Architecture/Consumers and Producers.md",
+                    "file": "Databases/Data Mart vs Data Warehouse.md",
                     "mode": "source",
                     "source": false
                   }
                 }
               },
               {
-                "id": "1069b08a58b47a67",
+                "id": "5a3ed15a3ca8e2aa",
                 "type": "leaf",
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "Architecture/Messaging systems.md",
+                    "file": "Databases/Data Mart.md",
                     "mode": "source",
                     "source": false
                   }
                 }
               },
               {
-                "id": "de14419c1e30ea69",
+                "id": "23c6db45e3cc2c4c",
                 "type": "leaf",
                 "state": {
-                  "type": "pdf",
+                  "type": "markdown",
                   "state": {
-                    "file": "_Pdf/Books/Interview/System Design Interview An Insider’s Guide.pdf"
+                    "file": "Databases/Data Grain.md",
+                    "mode": "source",
+                    "source": false
+                  }
+                }
+              },
+              {
+                "id": "4717658d7daa4226",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Architecture/Database Archetecture/Data Center vs Cloud Cost.md",
+                    "mode": "source",
+                    "source": false
+                  }
+                }
+              },
+              {
+                "id": "e1c1e22cf72075c1",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Cloud/Cloud Databases.md",
+                    "mode": "source",
+                    "source": false
+                  }
+                }
+              },
+              {
+                "id": "af360be29a16b6ac",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Architecture/Database Archetecture/Data Flow.md",
+                    "mode": "source",
+                    "source": false
                   }
                 }
               }
             ],
-            "currentTab": 3
+            "currentTab": 6
+          },
+          {
+            "id": "8b3a4aee26a2f638",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "42ff1f98a694b9a6",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Cloud/Benefits of cloud.md",
+                    "mode": "source",
+                    "source": false
+                  }
+                }
+              },
+              {
+                "id": "5b8fd6d15bf4b235",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Cloud/AWS Data Analyst Services.md",
+                    "mode": "source",
+                    "source": false
+                  }
+                }
+              },
+              {
+                "id": "ad9c52aeb727c287",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Cloud/AWS Processing Services.md",
+                    "mode": "source",
+                    "source": false
+                  }
+                }
+              },
+              {
+                "id": "0fd12ba3fdb1541d",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Language Overlap/Batch Processing vs Stream Processing.md",
+                    "mode": "source",
+                    "source": false
+                  }
+                }
+              },
+              {
+                "id": "2cfe9e957add8f22",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Architecture/Methodology/Admin functionality God Mode/Backup & Restoration.md",
+                    "mode": "source",
+                    "source": false
+                  }
+                }
+              },
+              {
+                "id": "36b287cc8c2b03e9",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Architecture/Methodology/Admin functionality God Mode/Database Migrations.md",
+                    "mode": "source",
+                    "source": false
+                  }
+                }
+              }
+            ],
+            "currentTab": 5
           }
         ],
         "direction": "vertical"
@@ -1312,7 +1429,7 @@
                 "state": {
                   "type": "search",
                   "state": {
-                    "query": "message",
+                    "query": "data ",
                     "matchingCase": false,
                     "explainSearch": false,
                     "collapseAll": true,
@@ -1345,12 +1462,12 @@
                   "state": {}
                 }
               }
-            ]
+            ],
+            "currentTab": 1
           }
         ],
         "direction": "horizontal",
-        "width": 463.5110321044922,
-        "collapsed": true
+        "width": 463.5110321044922
       },
       "right": {
         "id": "eef3a19b1c6d3fd3",
@@ -1366,7 +1483,7 @@
                 "state": {
                   "type": "backlink",
                   "state": {
-                    "file": "_Pdf/Books/Interview/System Design Interview An Insider’s Guide.pdf",
+                    "file": "Architecture/Methodology/Admin functionality God Mode/Database Migrations.md",
                     "collapseAll": false,
                     "extraContext": false,
                     "sortOrder": "alphabetical",
@@ -1383,7 +1500,7 @@
                 "state": {
                   "type": "outgoing-link",
                   "state": {
-                    "file": "_Pdf/Books/Interview/System Design Interview An Insider’s Guide.pdf",
+                    "file": "Architecture/Methodology/Admin functionality God Mode/Database Migrations.md",
                     "linksCollapsed": false,
                     "unlinkedCollapsed": true
                   }
@@ -1406,7 +1523,7 @@
                 "state": {
                   "type": "outline",
                   "state": {
-                    "file": "_Pdf/Books/Interview/System Design Interview An Insider’s Guide.pdf"
+                    "file": "Architecture/Methodology/Admin functionality God Mode/Database Migrations.md"
                   }
                 }
               },
@@ -1516,8 +1633,8 @@
           "periodic-notes:Open today": false
         }
       },
-      "active": "c18a64a686e80f59",
-      "mtime": "2024-03-26T16:28:07-04:00"
+      "active": "36b287cc8c2b03e9",
+      "mtime": "2024-03-30T18:26:20-04:00"
     }
   },
   "active": "read"

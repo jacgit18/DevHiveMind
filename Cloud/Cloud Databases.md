@@ -8,7 +8,7 @@ author:
 Purpose: This documentation discusses cloud databases.
 Status: Done
 Started: 
-EditDate: 
+EditDate: 2024-03-30
 Relates: 
 Peer Reviewed: 0
 dg-publish:
@@ -31,7 +31,7 @@ The benefits of cloud databases include performance at scale, security, high ava
 When opting for the Infrastructure as a Service (IaaS) approach, you have the flexibility to utilize an EC2 instance and deploy your preferred database directly onto it. This grants you greater control over configuration and customization aspects.
 ![[DB premises.png]]
 
-Alternatively, you can adopt more of a Software as a Service (SaaS) approach, where your focus shifts towards optimizing and configuring your application, rather than managing the underlying infrastructure. This can be achieved by leveraging managed services such as RDS or DynamoDB, allowing you to offload the operational overhead of database management to AWS.
+Alternatively, you can adopt more of a Software as a Service (SaaS) approach, where your focus shifts towards optimizing and configuring your application, rather than managing the underlying infrastructure. This can be achieved by leveraging managed services such as `RDS` which launches with AWS VPC by default or `DynamoDB` which is good for serverless architecture and can be used without a lot of setup, allowing you to offload the operational overhead of database management to AWS.
 ![[Benefits of Managed DB.png]]
 
 
