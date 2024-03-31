@@ -37,7 +37,7 @@ For storing and archiving data, Amazon S3 offers another service called S3 Glaci
 
 Amazon Elastic File System (EFS) is a fully managed file storage service designed for use with Linux-based operating systems. It has gained significant attention in the realm of networking due to its robust networking capabilities and seamless integration with AWS services. Here's a refined explanation:
 
-### Amazon Elastic File System (EFS):
+## Amazon Elastic File System (EFS)
 Amazon EFS provides scalable, elastic file storage that can be accessed concurrently from multiple Amazon EC2 instances, making it an ideal choice for applications that require shared file storage in the cloud. Key features and benefits of Amazon EFS include:
 
 1. **Scalability**: EFS automatically scales storage capacity as you add files, ensuring that your storage grows seamlessly with your application's needs. This eliminates the need for manual capacity planning and provides cost-effective storage solutions.
