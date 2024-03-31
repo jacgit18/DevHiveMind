@@ -51,9 +51,11 @@ Instead of using the AWS Management Console user interface, consider leveraging 
 - **Wavelength Zones**: Specialized zones connecting to 5G networks for mobile and edge computing applications.
 - **Edge Locations**: Endpoints for CDNs like Amazon CloudFront and DNS services like Amazon Route 53 to improve performance and scalability of web applications.
 
+For users with limited container experience, AWS App Runner offers a straightforward solution for deploying and managing containerized applications with ease.
 
+However, for more complex container management needs, Amazon ECS provides a robust container orchestration service suitable for handling multiple containers efficiently. Additionally, Amazon EKS, based on Kubernetes, offers advanced orchestration capabilities for orchestrating containerized workloads at scale.
 
-
+When utilizing these services, selecting a compute engine is essential. You can opt for Amazon EC2 for manual instance management or AWS Fargate, a serverless compute engine seamlessly integrated with container orchestration services. With Fargate, you eliminate the need for manual scaling and instance management, simplifying the deployment and operation of containerized applications.
 
 
 
