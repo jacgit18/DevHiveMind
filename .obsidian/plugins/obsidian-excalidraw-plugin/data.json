@@ -81,6 +81,82 @@
     "source": "https://github.com/zsviczian/obsidian-excalidraw-plugin/releases/tag/2.0.25",
     "libraryItems": [
       {
+        "id": "7oNreeIepCOffyYFWrD6b",
+        "status": "unpublished",
+        "elements": [
+          {
+            "type": "rectangle",
+            "version": 992,
+            "versionNonce": 687344088,
+            "isDeleted": false,
+            "id": "IA_WVmYm8YHGj3k4pD_d6",
+            "fillStyle": "solid",
+            "strokeWidth": 2,
+            "strokeStyle": "dashed",
+            "roughness": 0,
+            "opacity": 100,
+            "angle": 0,
+            "x": -672.7204756425301,
+            "y": 1690.0758333898548,
+            "strokeColor": "#c3b6ee",
+            "backgroundColor": "transparent",
+            "width": 262.81360008160584,
+            "height": 476.81825536082715,
+            "seed": 559339736,
+            "groupIds": [],
+            "frameId": null,
+            "roundness": null,
+            "boundElements": [
+              {
+                "type": "text",
+                "id": "Ae9JgOb8"
+              }
+            ],
+            "updated": 1711914478780,
+            "link": null,
+            "locked": false
+          },
+          {
+            "id": "Ae9JgOb8",
+            "type": "text",
+            "x": -667.7204756425301,
+            "y": 1695.0758333898548,
+            "width": 80.06402587890625,
+            "height": 45,
+            "angle": 0,
+            "strokeColor": "#1e1e1e",
+            "backgroundColor": "transparent",
+            "fillStyle": "solid",
+            "strokeWidth": 2,
+            "strokeStyle": "solid",
+            "roughness": 1,
+            "opacity": 100,
+            "groupIds": [],
+            "frameId": null,
+            "roundness": null,
+            "seed": 1014802856,
+            "version": 139,
+            "versionNonce": 164110248,
+            "isDeleted": false,
+            "boundElements": null,
+            "updated": 1711914478780,
+            "link": null,
+            "locked": false,
+            "text": "AZ 1",
+            "rawText": "AZ 1",
+            "fontSize": 36,
+            "fontFamily": 1,
+            "textAlign": "left",
+            "verticalAlign": "top",
+            "baseline": 32,
+            "containerId": "IA_WVmYm8YHGj3k4pD_d6",
+            "originalText": "AZ 1",
+            "lineHeight": 1.25
+          }
+        ],
+        "created": 1711914499053
+      },
+      {
         "status": "unpublished",
         "elements": [
           {
@@ -164353,7 +164429,7 @@
                 74.36842350889282
               ],
               [
-                -26.165879554521588,
+                -26.165879554521595,
                 116.11652344573342
               ],
               [
