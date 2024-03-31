@@ -1,10 +1,10 @@
 ---
 tags:
-  - scaling
   - systemDesign
   - CodebaseDecision
   - MacroCodebaseDecision
   - MicroCodebaseDecision
+  - scalability
 author:
   - jacgit18
   - chatgpt
