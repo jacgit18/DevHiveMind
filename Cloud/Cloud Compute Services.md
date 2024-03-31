@@ -12,9 +12,11 @@ Peer Reviewed: 0
 dg-publish:
 ---
 ## Amazon EC2
-Amazon EC2 instance types offer a variety of options tailored to different use cases and requirements. These instance types provide varying combinations of processing power, memory, storage, and networking capabilities. It's crucial to select the appropriate instance type based on the specific workload and performance needs.
+Amazon EC2 instance types offer a variety of options tailored to different use cases and requirements. These instance types provide varying combinations of processing power, memory, storage, and networking capabilities. It's crucial to select the appropriate instance type based on the specific workload and performance needs. This cannot be changed without first initiating downtime so you should be very careful when selecting instance types and launching them.
 
 Here are some common EC2 instance types and their use cases:
+
+> Depending on the instance type pricing may vary because some have more resources and stuff and you unique capabilities also make sure to consider region.
 
 1. **General Purpose Instances (e.g., t3, m5):**
    - Use Case: These instances are suitable for a wide range of applications, including web servers, development environments, small to medium databases, and enterprise applications.
@@ -42,5 +44,12 @@ Here are some common EC2 instance types and their use cases:
 
 When selecting an EC2 instance type, consider factors such as CPU, memory, storage, networking requirements, budget constraints, and geographic location. Additionally, it's essential to understand the characteristics of the root device type (instant store or Elastic Block Store) and configure network settings and user data appropriately for security and customization purposes.
 
+Distribution traffic across multiple targets integrates seamlessly with Amazon EC2, ECS (Elastic Container Service), and Lambda functions. This functionality allows for efficient load distribution and management across various targets, enhancing scalability and reliability. Moreover, it supports deployment across one or more availability zones within a region, ensuring high availability and fault tolerance for applications and services.
+
+Regarding the root device type, it encompasses two distinct options:
+
+1. **Instant Store**: Data stored in the instant store is ephemeral, meaning it does not persist when the server is shut down. This type of storage is suitable for temporary data or stateless applications where data persistence is not a requirement.
+    
+2. **Elastic Block Store (EBS)**: Often the preferred choice, EBS provides persistent storage that retains data even when the server is shut down. This durability makes it well-suited for applications requiring long-term data storage, databases, and mission-critical workloads where data integrity is paramount.
 ## Elastic Beanstalk
 Elastic Beanstalk simplifies the deployment and management of applications on EC2 by automating various tasks such as provisioning, load balancing, scaling, and monitoring. It's a platform-as-a-service (PaaS) offering that integrates with other AWS services and enables faster application deployment and customization. Elastic Beanstalk is particularly useful for developers and teams looking to streamline the deployment process and focus on application development rather than infrastructure management.

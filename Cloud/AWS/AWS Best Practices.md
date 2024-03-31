@@ -19,6 +19,9 @@ You can utilize Amazon Inspector, an automated security assessment service tailo
 
 use Virtual Private Cloud and Virtual Private Cloud together 
 
+
+Configure network settings to permit inbound HTTP traffic from the internet, enabling web access to your resources. Additionally, allow SSH traffic exclusively from your specified IP address, ensuring secure remote access to your instances while restricting unauthorized connections. This setup enhances network security by implementing precise access controls tailored to your requirements.
+
 ### Use Services like 
 
 AWS Trusted Advisor service offers comprehensive insights into your AWS infrastructure, allowing you to assess and refine your setup against industry best practices. It enables evaluation across various facets including cost optimization, performance, security, fault tolerance, and adherence to service limits.
