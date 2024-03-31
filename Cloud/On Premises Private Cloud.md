@@ -1,12 +1,12 @@
 ---
 tags: 
-author: []
+author: 
 Comments: Placeholder comment any thing else you want to mention about the document.
 Purpose: This documentation discusses
 Status: Done
 Started: 2024-03-21
 EditDate: 
-Relates: 
+Relates: "[[Cloud Storage#AWS Storage Gateway |AWS Storage Gateway]]"
 Peer Reviewed: 0
 dg-publish: true
 ---
