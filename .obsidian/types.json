@@ -27,10 +27,11 @@
     "excalidraw-font-color": "text",
     "excalidraw-border-color": "text",
     "excalidraw-css": "text",
-    "excalidraw-autoexport": "checkbox",
+    "excalidraw-autoexport": "text",
     "excalidraw-iframe-theme": "text",
     "Peer Reviewed": "number",
     "dg-home": "checkbox",
-    "dg-publish": "checkbox"
+    "dg-publish": "checkbox",
+    "excalidraw-open-md": "checkbox"
   }
 }

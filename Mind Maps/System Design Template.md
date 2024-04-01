@@ -227,10 +227,11 @@ EC2 ^tqBnDGi1
 
 EC2 ^84cy7kOi
 
-
 # Embedded files
 7ccfb268a5c308cde972814110183ccd1b9b2a12: [[aws Arch.gif]]
 b427ab9c89da4045131ae0d8ad552acf692d6c0e: [[Cloud Security.gif]]
+c89dd983ae880b0aa70621d39a337c3153956cd4: [[Cloud Monitoring Services.jpeg]]
+f515afbebcaf36331e4d52c81b8d03c6316c5612: [[Cloud Services.gif]]
 
 %%
 # Drawing
@@ -238,7 +239,7 @@ b427ab9c89da4045131ae0d8ad552acf692d6c0e: [[Cloud Security.gif]]
 {
 	"type": "excalidraw",
 	"version": 2,
-	"source": "https://github.com/zsviczian/obsidian-excalidraw-plugin/releases/tag/2.0.25",
+	"source": "https://github.com/zsviczian/obsidian-excalidraw-plugin/releases/tag/2.1.0",
 	"elements": [
 		{
 			"type": "line",
@@ -653,8 +654,7 @@ b427ab9c89da4045131ae0d8ad552acf692d6c0e: [[Cloud Security.gif]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Relational DB",
-			"lineHeight": 1.350000000000001,
-			"baseline": 15
+			"lineHeight": 1.350000000000001
 		},
 		{
 			"type": "line",
@@ -1146,8 +1146,7 @@ b427ab9c89da4045131ae0d8ad552acf692d6c0e: [[Cloud Security.gif]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "CDN",
-			"lineHeight": 1.2257881191819515,
-			"baseline": 28
+			"lineHeight": 1.2257881191819515
 		},
 		{
 			"type": "line",
@@ -1915,8 +1914,7 @@ b427ab9c89da4045131ae0d8ad552acf692d6c0e: [[Cloud Security.gif]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Service",
-			"lineHeight": 1.25,
-			"baseline": 16
+			"lineHeight": 1.25
 		},
 		{
 			"type": "rectangle",
@@ -2044,8 +2042,7 @@ b427ab9c89da4045131ae0d8ad552acf692d6c0e: [[Cloud Security.gif]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Multi Instance",
-			"lineHeight": 1.3218415496714844,
-			"baseline": 19
+			"lineHeight": 1.3218415496714844
 		},
 		{
 			"type": "diamond",
@@ -4756,8 +4753,7 @@ b427ab9c89da4045131ae0d8ad552acf692d6c0e: [[Cloud Security.gif]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Database",
-			"lineHeight": 1.25,
-			"baseline": 13
+			"lineHeight": 1.25
 		},
 		{
 			"type": "line",
@@ -4916,7 +4912,7 @@ b427ab9c89da4045131ae0d8ad552acf692d6c0e: [[Cloud Security.gif]]
 			"y": 854.6172150167423,
 			"strokeColor": "#000000",
 			"backgroundColor": "#228be6",
-			"width": 76.33703719671526,
+			"width": 76.323486328125,
 			"height": 19.32441241999104,
 			"seed": 48579726,
 			"groupIds": [
@@ -4937,8 +4933,7 @@ b427ab9c89da4045131ae0d8ad552acf692d6c0e: [[Cloud Security.gif]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Database",
-			"lineHeight": 1.25,
-			"baseline": 13
+			"lineHeight": 1.25
 		},
 		{
 			"type": "rectangle",
@@ -5010,8 +5005,7 @@ b427ab9c89da4045131ae0d8ad552acf692d6c0e: [[Cloud Security.gif]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "</>",
-			"lineHeight": 1.1267157397678071,
-			"baseline": 14
+			"lineHeight": 1.1267157397678071
 		},
 		{
 			"type": "rectangle",
@@ -5256,8 +5250,7 @@ b427ab9c89da4045131ae0d8ad552acf692d6c0e: [[Cloud Security.gif]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "CodePipeline",
-			"lineHeight": 1.2,
-			"baseline": 16
+			"lineHeight": 1.2
 		},
 		{
 			"type": "rectangle",
@@ -5521,8 +5514,7 @@ b427ab9c89da4045131ae0d8ad552acf692d6c0e: [[Cloud Security.gif]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "S3 Bucket",
-			"lineHeight": 1.2,
-			"baseline": 16
+			"lineHeight": 1.2
 		},
 		{
 			"type": "rectangle",
@@ -5937,8 +5929,7 @@ b427ab9c89da4045131ae0d8ad552acf692d6c0e: [[Cloud Security.gif]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "API Gateway",
-			"lineHeight": 1.2,
-			"baseline": 16
+			"lineHeight": 1.2
 		},
 		{
 			"type": "text",
@@ -5976,8 +5967,7 @@ b427ab9c89da4045131ae0d8ad552acf692d6c0e: [[Cloud Security.gif]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "RDS",
-			"lineHeight": 1.2,
-			"baseline": 16
+			"lineHeight": 1.2
 		},
 		{
 			"type": "rectangle",
@@ -7547,8 +7537,7 @@ b427ab9c89da4045131ae0d8ad552acf692d6c0e: [[Cloud Security.gif]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "CloudFront",
-			"lineHeight": 1.2,
-			"baseline": 16
+			"lineHeight": 1.2
 		},
 		{
 			"type": "ellipse",
@@ -7712,8 +7701,7 @@ b427ab9c89da4045131ae0d8ad552acf692d6c0e: [[Cloud Security.gif]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "cache",
-			"lineHeight": 1.25,
-			"baseline": 16
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
@@ -7751,8 +7739,7 @@ b427ab9c89da4045131ae0d8ad552acf692d6c0e: [[Cloud Security.gif]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "ElastiCache",
-			"lineHeight": 1.2,
-			"baseline": 16
+			"lineHeight": 1.2
 		},
 		{
 			"type": "rectangle",
@@ -9107,8 +9094,7 @@ b427ab9c89da4045131ae0d8ad552acf692d6c0e: [[Cloud Security.gif]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "ELB",
-			"lineHeight": 1.2,
-			"baseline": 16
+			"lineHeight": 1.2
 		},
 		{
 			"type": "ellipse",
@@ -9536,8 +9522,7 @@ b427ab9c89da4045131ae0d8ad552acf692d6c0e: [[Cloud Security.gif]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "ALB",
-			"lineHeight": 1.2,
-			"baseline": 16
+			"lineHeight": 1.2
 		},
 		{
 			"type": "text",
@@ -9575,8 +9560,7 @@ b427ab9c89da4045131ae0d8ad552acf692d6c0e: [[Cloud Security.gif]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "NLB",
-			"lineHeight": 1.2,
-			"baseline": 16
+			"lineHeight": 1.2
 		},
 		{
 			"type": "ellipse",
@@ -10375,8 +10359,7 @@ b427ab9c89da4045131ae0d8ad552acf692d6c0e: [[Cloud Security.gif]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Very fast Server",
-			"lineHeight": 1.2499999999999993,
-			"baseline": 2
+			"lineHeight": 1.2499999999999993
 		},
 		{
 			"type": "rectangle",
@@ -10761,8 +10744,7 @@ b427ab9c89da4045131ae0d8ad552acf692d6c0e: [[Cloud Security.gif]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Foward Proxy Server",
-			"lineHeight": 1.25,
-			"baseline": 11
+			"lineHeight": 1.25
 		},
 		{
 			"type": "rectangle",
@@ -10951,8 +10933,7 @@ b427ab9c89da4045131ae0d8ad552acf692d6c0e: [[Cloud Security.gif]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Very fast Server",
-			"lineHeight": 1.2499999999999993,
-			"baseline": 2
+			"lineHeight": 1.2499999999999993
 		},
 		{
 			"type": "rectangle",
@@ -11337,8 +11318,7 @@ b427ab9c89da4045131ae0d8ad552acf692d6c0e: [[Cloud Security.gif]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Reverse Proxy Server",
-			"lineHeight": 1.25,
-			"baseline": 11
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
@@ -11374,8 +11354,7 @@ b427ab9c89da4045131ae0d8ad552acf692d6c0e: [[Cloud Security.gif]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Load Balancer Options",
-			"lineHeight": 1.25,
-			"baseline": 16
+			"lineHeight": 1.25
 		},
 		{
 			"type": "frame",
@@ -11754,8 +11733,7 @@ b427ab9c89da4045131ae0d8ad552acf692d6c0e: [[Cloud Security.gif]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Route 53",
-			"lineHeight": 1.2,
-			"baseline": 16
+			"lineHeight": 1.2
 		},
 		{
 			"type": "rectangle",
@@ -11827,8 +11805,7 @@ b427ab9c89da4045131ae0d8ad552acf692d6c0e: [[Cloud Security.gif]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "53",
-			"lineHeight": 1.1922008740688725,
-			"baseline": 15
+			"lineHeight": 1.1922008740688725
 		},
 		{
 			"type": "line",
@@ -12362,8 +12339,7 @@ b427ab9c89da4045131ae0d8ad552acf692d6c0e: [[Cloud Security.gif]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "VPC",
-			"lineHeight": 1.2,
-			"baseline": 28
+			"lineHeight": 1.2
 		},
 		{
 			"type": "rectangle",
@@ -12884,7 +12860,7 @@ b427ab9c89da4045131ae0d8ad552acf692d6c0e: [[Cloud Security.gif]]
 			],
 			"frameId": "bqa93Jp8fAnGuSpcKAsSl",
 			"roundness": null,
-			"boundElements": null,
+			"boundElements": [],
 			"updated": 1711956489016,
 			"link": null,
 			"locked": false,
@@ -12896,8 +12872,7 @@ b427ab9c89da4045131ae0d8ad552acf692d6c0e: [[Cloud Security.gif]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "VPC",
-			"lineHeight": 1.2,
-			"baseline": 28
+			"lineHeight": 1.2
 		},
 		{
 			"type": "rectangle",
@@ -12926,7 +12901,7 @@ b427ab9c89da4045131ae0d8ad552acf692d6c0e: [[Cloud Security.gif]]
 			],
 			"frameId": "bqa93Jp8fAnGuSpcKAsSl",
 			"roundness": null,
-			"boundElements": null,
+			"boundElements": [],
 			"updated": 1711956489016,
 			"link": null,
 			"locked": false
@@ -12960,7 +12935,7 @@ b427ab9c89da4045131ae0d8ad552acf692d6c0e: [[Cloud Security.gif]]
 			"roundness": {
 				"type": 2
 			},
-			"boundElements": null,
+			"boundElements": [],
 			"updated": 1711956489016,
 			"link": null,
 			"locked": false,
@@ -13074,7 +13049,7 @@ b427ab9c89da4045131ae0d8ad552acf692d6c0e: [[Cloud Security.gif]]
 			],
 			"frameId": "bqa93Jp8fAnGuSpcKAsSl",
 			"roundness": null,
-			"boundElements": null,
+			"boundElements": [],
 			"updated": 1711956489016,
 			"link": null,
 			"locked": false,
@@ -13126,7 +13101,7 @@ b427ab9c89da4045131ae0d8ad552acf692d6c0e: [[Cloud Security.gif]]
 			"roundness": {
 				"type": 2
 			},
-			"boundElements": null,
+			"boundElements": [],
 			"updated": 1711956489016,
 			"link": null,
 			"locked": false,
@@ -13216,7 +13191,7 @@ b427ab9c89da4045131ae0d8ad552acf692d6c0e: [[Cloud Security.gif]]
 			],
 			"frameId": "bqa93Jp8fAnGuSpcKAsSl",
 			"roundness": null,
-			"boundElements": null,
+			"boundElements": [],
 			"updated": 1711956489016,
 			"link": null,
 			"locked": false,
@@ -13266,7 +13241,7 @@ b427ab9c89da4045131ae0d8ad552acf692d6c0e: [[Cloud Security.gif]]
 			],
 			"frameId": "bqa93Jp8fAnGuSpcKAsSl",
 			"roundness": null,
-			"boundElements": null,
+			"boundElements": [],
 			"updated": 1711956489016,
 			"link": null,
 			"locked": false,
@@ -13312,7 +13287,7 @@ b427ab9c89da4045131ae0d8ad552acf692d6c0e: [[Cloud Security.gif]]
 			],
 			"frameId": "bqa93Jp8fAnGuSpcKAsSl",
 			"roundness": null,
-			"boundElements": null,
+			"boundElements": [],
 			"updated": 1711956489016,
 			"link": null,
 			"locked": false,
@@ -13366,7 +13341,7 @@ b427ab9c89da4045131ae0d8ad552acf692d6c0e: [[Cloud Security.gif]]
 			],
 			"frameId": "bqa93Jp8fAnGuSpcKAsSl",
 			"roundness": null,
-			"boundElements": null,
+			"boundElements": [],
 			"updated": 1711956489016,
 			"link": null,
 			"locked": false,
@@ -13430,8 +13405,7 @@ b427ab9c89da4045131ae0d8ad552acf692d6c0e: [[Cloud Security.gif]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "VPC Endpoint\n(Gateway)",
-			"lineHeight": 1.2,
-			"baseline": 69
+			"lineHeight": 1.2
 		},
 		{
 			"type": "rectangle",
@@ -13964,8 +13938,7 @@ b427ab9c89da4045131ae0d8ad552acf692d6c0e: [[Cloud Security.gif]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "VPC Endpoint\n(Interface)",
-			"lineHeight": 1.2,
-			"baseline": 69
+			"lineHeight": 1.2
 		},
 		{
 			"type": "rectangle",
@@ -14772,8 +14745,7 @@ b427ab9c89da4045131ae0d8ad552acf692d6c0e: [[Cloud Security.gif]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "CloudWatch",
-			"lineHeight": 1.2,
-			"baseline": 16
+			"lineHeight": 1.2
 		},
 		{
 			"type": "text",
@@ -14811,8 +14783,7 @@ b427ab9c89da4045131ae0d8ad552acf692d6c0e: [[Cloud Security.gif]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Shield",
-			"lineHeight": 1.2,
-			"baseline": 16
+			"lineHeight": 1.2
 		},
 		{
 			"type": "rectangle",
@@ -15321,8 +15292,7 @@ b427ab9c89da4045131ae0d8ad552acf692d6c0e: [[Cloud Security.gif]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "WAF",
-			"lineHeight": 1.2,
-			"baseline": 16
+			"lineHeight": 1.2
 		},
 		{
 			"type": "rectangle",
@@ -16266,8 +16236,8 @@ b427ab9c89da4045131ae0d8ad552acf692d6c0e: [[Cloud Security.gif]]
 			"y": 681.3604908673677,
 			"strokeColor": "#000000",
 			"backgroundColor": "#7950f288",
-			"width": 28.24289763000857,
-			"height": 18.110827192565964,
+			"width": 28.23486328125,
+			"height": 19.2,
 			"seed": 511911950,
 			"groupIds": [
 				"vmZIgO19TXewlTyowsA2k",
@@ -16288,8 +16258,7 @@ b427ab9c89da4045131ae0d8ad552acf692d6c0e: [[Cloud Security.gif]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "</>",
-			"lineHeight": 1.1944756566625332,
-			"baseline": 14
+			"lineHeight": 1.1944756566625332
 		},
 		{
 			"type": "rectangle",
@@ -16918,8 +16887,7 @@ b427ab9c89da4045131ae0d8ad552acf692d6c0e: [[Cloud Security.gif]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "CodeDeploy",
-			"lineHeight": 1.2,
-			"baseline": 16
+			"lineHeight": 1.2
 		},
 		{
 			"type": "rectangle",
@@ -16969,8 +16937,8 @@ b427ab9c89da4045131ae0d8ad552acf692d6c0e: [[Cloud Security.gif]]
 			"y": 802.5330556857107,
 			"strokeColor": "#000000",
 			"backgroundColor": "#7950f288",
-			"width": 13.701509137340668,
-			"height": 8.786126250731488,
+			"width": 13.677978515625,
+			"height": 8.4,
 			"seed": 220955986,
 			"groupIds": [
 				"d9OwKILQZLQbSPyiKDEqF",
@@ -16991,8 +16959,7 @@ b427ab9c89da4045131ae0d8ad552acf692d6c0e: [[Cloud Security.gif]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "</>",
-			"lineHeight": 1.0771996604603333,
-			"baseline": 7
+			"lineHeight": 1.0771996604603333
 		},
 		{
 			"type": "rectangle",
@@ -17336,8 +17303,7 @@ b427ab9c89da4045131ae0d8ad552acf692d6c0e: [[Cloud Security.gif]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "CodeBuild",
-			"lineHeight": 1.2,
-			"baseline": 16
+			"lineHeight": 1.2
 		},
 		{
 			"type": "rectangle",
@@ -17387,8 +17353,8 @@ b427ab9c89da4045131ae0d8ad552acf692d6c0e: [[Cloud Security.gif]]
 			"y": 800.3468918988134,
 			"strokeColor": "#000000",
 			"backgroundColor": "#7950f288",
-			"width": 26.240713210040482,
-			"height": 16.82692153555003,
+			"width": 26.2298583984375,
+			"height": 16.8,
 			"seed": 858357650,
 			"groupIds": [
 				"7KWA3WVIvaEX66NZM2nvF",
@@ -17409,8 +17375,7 @@ b427ab9c89da4045131ae0d8ad552acf692d6c0e: [[Cloud Security.gif]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "</>",
-			"lineHeight": 1.1249130976280162,
-			"baseline": 13
+			"lineHeight": 1.1249130976280162
 		},
 		{
 			"type": "line",
@@ -17920,8 +17885,7 @@ b427ab9c89da4045131ae0d8ad552acf692d6c0e: [[Cloud Security.gif]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "CodeCommit",
-			"lineHeight": 1.2,
-			"baseline": 16
+			"lineHeight": 1.2
 		},
 		{
 			"type": "text",
@@ -17959,8 +17923,7 @@ b427ab9c89da4045131ae0d8ad552acf692d6c0e: [[Cloud Security.gif]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Elastic \nBeanstalk",
-			"lineHeight": 1.2,
-			"baseline": 40
+			"lineHeight": 1.2
 		},
 		{
 			"type": "rectangle",
@@ -18388,8 +18351,7 @@ b427ab9c89da4045131ae0d8ad552acf692d6c0e: [[Cloud Security.gif]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Amazon MQ",
-			"lineHeight": 1.2,
-			"baseline": 16
+			"lineHeight": 1.2
 		},
 		{
 			"type": "rectangle",
@@ -19328,8 +19290,7 @@ b427ab9c89da4045131ae0d8ad552acf692d6c0e: [[Cloud Security.gif]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Redshift\n(Analytics)",
-			"lineHeight": 1.2,
-			"baseline": 40
+			"lineHeight": 1.2
 		},
 		{
 			"type": "rectangle",
@@ -19992,8 +19953,7 @@ b427ab9c89da4045131ae0d8ad552acf692d6c0e: [[Cloud Security.gif]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "EC2",
-			"lineHeight": 1.2,
-			"baseline": 16
+			"lineHeight": 1.2
 		},
 		{
 			"type": "rectangle",
@@ -20216,8 +20176,7 @@ b427ab9c89da4045131ae0d8ad552acf692d6c0e: [[Cloud Security.gif]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "EC2",
-			"lineHeight": 1.2,
-			"baseline": 16
+			"lineHeight": 1.2
 		},
 		{
 			"type": "rectangle",
@@ -20440,8 +20399,7 @@ b427ab9c89da4045131ae0d8ad552acf692d6c0e: [[Cloud Security.gif]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "EC2",
-			"lineHeight": 1.2,
-			"baseline": 16
+			"lineHeight": 1.2
 		},
 		{
 			"type": "rectangle",
@@ -21634,8 +21592,7 @@ b427ab9c89da4045131ae0d8ad552acf692d6c0e: [[Cloud Security.gif]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Global\nAccelerator",
-			"lineHeight": 1.2,
-			"baseline": 40
+			"lineHeight": 1.2
 		},
 		{
 			"type": "text",
@@ -21671,8 +21628,7 @@ b427ab9c89da4045131ae0d8ad552acf692d6c0e: [[Cloud Security.gif]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Github Actions",
-			"lineHeight": 1.25,
-			"baseline": 19
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
@@ -21708,8 +21664,7 @@ b427ab9c89da4045131ae0d8ad552acf692d6c0e: [[Cloud Security.gif]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "PC",
-			"lineHeight": 1.25,
-			"baseline": 32
+			"lineHeight": 1.25
 		},
 		{
 			"type": "frame",
@@ -22461,8 +22416,7 @@ b427ab9c89da4045131ae0d8ad552acf692d6c0e: [[Cloud Security.gif]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "SQS",
-			"lineHeight": 1.2,
-			"baseline": 16
+			"lineHeight": 1.2
 		},
 		{
 			"type": "rectangle",
@@ -23118,8 +23072,7 @@ b427ab9c89da4045131ae0d8ad552acf692d6c0e: [[Cloud Security.gif]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Step Functions",
-			"lineHeight": 1.2,
-			"baseline": 16
+			"lineHeight": 1.2
 		},
 		{
 			"type": "text",
@@ -23157,8 +23110,7 @@ b427ab9c89da4045131ae0d8ad552acf692d6c0e: [[Cloud Security.gif]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Batch",
-			"lineHeight": 1.2,
-			"baseline": 16
+			"lineHeight": 1.2
 		},
 		{
 			"type": "rectangle",
@@ -24294,8 +24246,7 @@ b427ab9c89da4045131ae0d8ad552acf692d6c0e: [[Cloud Security.gif]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "EventBridge",
-			"lineHeight": 1.2,
-			"baseline": 16
+			"lineHeight": 1.2
 		},
 		{
 			"type": "text",
@@ -24333,8 +24284,7 @@ b427ab9c89da4045131ae0d8ad552acf692d6c0e: [[Cloud Security.gif]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Glue",
-			"lineHeight": 1.2,
-			"baseline": 16
+			"lineHeight": 1.2
 		},
 		{
 			"type": "rectangle",
@@ -24825,8 +24775,7 @@ b427ab9c89da4045131ae0d8ad552acf692d6c0e: [[Cloud Security.gif]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Glue",
-			"lineHeight": 1.2,
-			"baseline": 16
+			"lineHeight": 1.2
 		},
 		{
 			"type": "rectangle",
@@ -25317,8 +25266,7 @@ b427ab9c89da4045131ae0d8ad552acf692d6c0e: [[Cloud Security.gif]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Data Pipeline",
-			"lineHeight": 1.2,
-			"baseline": 16
+			"lineHeight": 1.2
 		},
 		{
 			"type": "rectangle",
@@ -25986,8 +25934,7 @@ b427ab9c89da4045131ae0d8ad552acf692d6c0e: [[Cloud Security.gif]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Data Pipeline",
-			"lineHeight": 1.2,
-			"baseline": 16
+			"lineHeight": 1.2
 		},
 		{
 			"type": "rectangle",
@@ -27454,8 +27401,7 @@ b427ab9c89da4045131ae0d8ad552acf692d6c0e: [[Cloud Security.gif]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Fargate",
-			"lineHeight": 1.2,
-			"baseline": 16
+			"lineHeight": 1.2
 		},
 		{
 			"type": "rectangle",
@@ -27719,13 +27665,12 @@ b427ab9c89da4045131ae0d8ad552acf692d6c0e: [[Cloud Security.gif]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "S3 Bucket",
-			"lineHeight": 1.2,
-			"baseline": 16
+			"lineHeight": 1.2
 		},
 		{
 			"type": "embeddable",
-			"version": 574,
-			"versionNonce": 2142152018,
+			"version": 662,
+			"versionNonce": 743565675,
 			"isDeleted": false,
 			"id": "CDN3244aPwqGNq7tlJyWq",
 			"fillStyle": "solid",
@@ -27734,8 +27679,8 @@ b427ab9c89da4045131ae0d8ad552acf692d6c0e: [[Cloud Security.gif]]
 			"roughness": 1,
 			"opacity": 100,
 			"angle": 0,
-			"x": 1818.1863370907238,
-			"y": -651.633385542221,
+			"x": 2773.186337090724,
+			"y": 1713.366614457779,
 			"strokeColor": "#1e1e1e",
 			"backgroundColor": "transparent",
 			"width": 834.1961308277895,
@@ -27747,7 +27692,7 @@ b427ab9c89da4045131ae0d8ad552acf692d6c0e: [[Cloud Security.gif]]
 				"type": 3
 			},
 			"boundElements": [],
-			"updated": 1711956755063,
+			"updated": 1711963721144,
 			"link": "https://www.workfall.com/learning/blog/how-to-set-up-an-aws-cloudfront-distribution-to-speed-up-content-delivery/",
 			"locked": false,
 			"scale": [
@@ -27820,8 +27765,7 @@ b427ab9c89da4045131ae0d8ad552acf692d6c0e: [[Cloud Security.gif]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Application\nserver",
-			"lineHeight": 1.3499999999999994,
-			"baseline": 33
+			"lineHeight": 1.3499999999999994
 		},
 		{
 			"type": "rectangle",
@@ -27859,8 +27803,8 @@ b427ab9c89da4045131ae0d8ad552acf692d6c0e: [[Cloud Security.gif]]
 		},
 		{
 			"type": "text",
-			"version": 66,
-			"versionNonce": 259389774,
+			"version": 67,
+			"versionNonce": 405760651,
 			"isDeleted": false,
 			"id": "QxiHmMbb",
 			"fillStyle": "solid",
@@ -27882,7 +27826,7 @@ b427ab9c89da4045131ae0d8ad552acf692d6c0e: [[Cloud Security.gif]]
 			"frameId": "Hh6T789NZuRc5aE0ZQR6v",
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1711956411553,
+			"updated": 1711963296108,
 			"link": null,
 			"locked": false,
 			"fontSize": 20,
@@ -27893,8 +27837,7 @@ b427ab9c89da4045131ae0d8ad552acf692d6c0e: [[Cloud Security.gif]]
 			"verticalAlign": "middle",
 			"containerId": "B1XDxADXIja3nrBs8WzaB",
 			"originalText": "Frontend ",
-			"lineHeight": 1.25,
-			"baseline": 16
+			"lineHeight": 1.25
 		},
 		{
 			"type": "rectangle",
@@ -27993,8 +27936,7 @@ b427ab9c89da4045131ae0d8ad552acf692d6c0e: [[Cloud Security.gif]]
 			"verticalAlign": "top",
 			"containerId": "IA_WVmYm8YHGj3k4pD_d6",
 			"originalText": "AZ 1",
-			"lineHeight": 1.25,
-			"baseline": 32
+			"lineHeight": 1.25
 		},
 		{
 			"type": "rectangle",
@@ -28062,8 +28004,7 @@ b427ab9c89da4045131ae0d8ad552acf692d6c0e: [[Cloud Security.gif]]
 			"verticalAlign": "top",
 			"containerId": "D10IOg3w_1zbyTYgmInwm",
 			"originalText": "AZ 2",
-			"lineHeight": 1.25,
-			"baseline": 32
+			"lineHeight": 1.25
 		},
 		{
 			"type": "rectangle",
@@ -28131,8 +28072,7 @@ b427ab9c89da4045131ae0d8ad552acf692d6c0e: [[Cloud Security.gif]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Region",
-			"lineHeight": 1.25,
-			"baseline": 50
+			"lineHeight": 1.25
 		},
 		{
 			"type": "rectangle",
@@ -28386,8 +28326,7 @@ b427ab9c89da4045131ae0d8ad552acf692d6c0e: [[Cloud Security.gif]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Storage \nGateway",
-			"lineHeight": 1.2,
-			"baseline": 40
+			"lineHeight": 1.2
 		},
 		{
 			"type": "rectangle",
@@ -28797,8 +28736,7 @@ b427ab9c89da4045131ae0d8ad552acf692d6c0e: [[Cloud Security.gif]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "RDS",
-			"lineHeight": 1.2,
-			"baseline": 16
+			"lineHeight": 1.2
 		},
 		{
 			"type": "rectangle",
@@ -29744,8 +29682,7 @@ b427ab9c89da4045131ae0d8ad552acf692d6c0e: [[Cloud Security.gif]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "EFS",
-			"lineHeight": 1.2,
-			"baseline": 16
+			"lineHeight": 1.2
 		},
 		{
 			"type": "rectangle",
@@ -30447,8 +30384,7 @@ b427ab9c89da4045131ae0d8ad552acf692d6c0e: [[Cloud Security.gif]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "IGW ",
-			"lineHeight": 1.2,
-			"baseline": 28
+			"lineHeight": 1.2
 		},
 		{
 			"type": "rectangle",
@@ -30858,8 +30794,7 @@ b427ab9c89da4045131ae0d8ad552acf692d6c0e: [[Cloud Security.gif]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Client VPN \nEndpoint",
-			"lineHeight": 1.2,
-			"baseline": 61
+			"lineHeight": 1.2
 		},
 		{
 			"type": "rectangle",
@@ -31566,8 +31501,7 @@ b427ab9c89da4045131ae0d8ad552acf692d6c0e: [[Cloud Security.gif]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "VGW",
-			"lineHeight": 1.2,
-			"baseline": 38
+			"lineHeight": 1.2
 		},
 		{
 			"type": "rectangle",
@@ -31936,8 +31870,7 @@ b427ab9c89da4045131ae0d8ad552acf692d6c0e: [[Cloud Security.gif]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "ELB",
-			"lineHeight": 1.2,
-			"baseline": 16
+			"lineHeight": 1.2
 		},
 		{
 			"type": "text",
@@ -31973,8 +31906,7 @@ b427ab9c89da4045131ae0d8ad552acf692d6c0e: [[Cloud Security.gif]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Public Subnet",
-			"lineHeight": 1.25,
-			"baseline": 32
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
@@ -32010,8 +31942,7 @@ b427ab9c89da4045131ae0d8ad552acf692d6c0e: [[Cloud Security.gif]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Private Subnet",
-			"lineHeight": 1.25,
-			"baseline": 32
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
@@ -32047,8 +31978,7 @@ b427ab9c89da4045131ae0d8ad552acf692d6c0e: [[Cloud Security.gif]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Private Subnet",
-			"lineHeight": 1.25,
-			"baseline": 32
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
@@ -32084,8 +32014,7 @@ b427ab9c89da4045131ae0d8ad552acf692d6c0e: [[Cloud Security.gif]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Private Subnet",
-			"lineHeight": 1.25,
-			"baseline": 32
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
@@ -32121,8 +32050,7 @@ b427ab9c89da4045131ae0d8ad552acf692d6c0e: [[Cloud Security.gif]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Private Subnet",
-			"lineHeight": 1.25,
-			"baseline": 32
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
@@ -32158,8 +32086,7 @@ b427ab9c89da4045131ae0d8ad552acf692d6c0e: [[Cloud Security.gif]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Public Subnet",
-			"lineHeight": 1.25,
-			"baseline": 32
+			"lineHeight": 1.25
 		},
 		{
 			"type": "arrow",
@@ -32249,8 +32176,7 @@ b427ab9c89da4045131ae0d8ad552acf692d6c0e: [[Cloud Security.gif]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Aurora",
-			"lineHeight": 1.2,
-			"baseline": 16
+			"lineHeight": 1.2
 		},
 		{
 			"type": "rectangle",
@@ -32861,8 +32787,7 @@ b427ab9c89da4045131ae0d8ad552acf692d6c0e: [[Cloud Security.gif]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Aurora Replication",
-			"lineHeight": 1.2,
-			"baseline": 16
+			"lineHeight": 1.2
 		},
 		{
 			"type": "rectangle",
@@ -33624,8 +33549,7 @@ b427ab9c89da4045131ae0d8ad552acf692d6c0e: [[Cloud Security.gif]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "NAT gateway",
-			"lineHeight": 1.2,
-			"baseline": 16
+			"lineHeight": 1.2
 		},
 		{
 			"type": "ellipse",
@@ -34025,8 +33949,7 @@ b427ab9c89da4045131ae0d8ad552acf692d6c0e: [[Cloud Security.gif]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "NAT gateway",
-			"lineHeight": 1.2,
-			"baseline": 16
+			"lineHeight": 1.2
 		},
 		{
 			"type": "ellipse",
@@ -35013,8 +34936,7 @@ b427ab9c89da4045131ae0d8ad552acf692d6c0e: [[Cloud Security.gif]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "1. User",
-			"lineHeight": 1.25,
-			"baseline": 32
+			"lineHeight": 1.25
 		},
 		{
 			"type": "arrow",
@@ -35819,8 +35741,7 @@ b427ab9c89da4045131ae0d8ad552acf692d6c0e: [[Cloud Security.gif]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "2. Remote Worker",
-			"lineHeight": 1.25,
-			"baseline": 32
+			"lineHeight": 1.25
 		},
 		{
 			"type": "arrow",
@@ -35937,8 +35858,7 @@ b427ab9c89da4045131ae0d8ad552acf692d6c0e: [[Cloud Security.gif]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "3. Corporate Data Center\n(On Premise)",
-			"lineHeight": 1.25,
-			"baseline": 59
+			"lineHeight": 1.25
 		},
 		{
 			"type": "rectangle",
@@ -36106,7 +36026,7 @@ b427ab9c89da4045131ae0d8ad552acf692d6c0e: [[Cloud Security.gif]]
 			"y": 2595.7137338804614,
 			"strokeColor": "#000000",
 			"backgroundColor": "#868e96",
-			"width": 37.45524825956084,
+			"width": 37.38978576660156,
 			"height": 5.645150284866739,
 			"seed": 1023846489,
 			"groupIds": [
@@ -36127,8 +36047,7 @@ b427ab9c89da4045131ae0d8ad552acf692d6c0e: [[Cloud Security.gif]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Very fast Server",
-			"lineHeight": 1.2499999999999993,
-			"baseline": 3
+			"lineHeight": 1.2499999999999993
 		},
 		{
 			"type": "rectangle",
@@ -36641,7 +36560,7 @@ b427ab9c89da4045131ae0d8ad552acf692d6c0e: [[Cloud Security.gif]]
 			"y": 2597.138465396516,
 			"strokeColor": "#000000",
 			"backgroundColor": "#868e96",
-			"width": 37.45524825956084,
+			"width": 37.38978576660156,
 			"height": 5.645150284866739,
 			"seed": 972664249,
 			"groupIds": [
@@ -36662,8 +36581,7 @@ b427ab9c89da4045131ae0d8ad552acf692d6c0e: [[Cloud Security.gif]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Very fast Server",
-			"lineHeight": 1.2499999999999993,
-			"baseline": 3
+			"lineHeight": 1.2499999999999993
 		},
 		{
 			"type": "rectangle",
@@ -37316,7 +37234,7 @@ b427ab9c89da4045131ae0d8ad552acf692d6c0e: [[Cloud Security.gif]]
 			],
 			"frameId": "bqa93Jp8fAnGuSpcKAsSl",
 			"roundness": null,
-			"boundElements": null,
+			"boundElements": [],
 			"updated": 1711956489016,
 			"link": null,
 			"locked": false,
@@ -37328,8 +37246,7 @@ b427ab9c89da4045131ae0d8ad552acf692d6c0e: [[Cloud Security.gif]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "4.",
-			"lineHeight": 1.25,
-			"baseline": 51
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
@@ -37367,8 +37284,7 @@ b427ab9c89da4045131ae0d8ad552acf692d6c0e: [[Cloud Security.gif]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Web Application",
-			"lineHeight": 1.3499999999999985,
-			"baseline": 24
+			"lineHeight": 1.3499999999999985
 		},
 		{
 			"type": "rectangle",
@@ -37559,8 +37475,7 @@ b427ab9c89da4045131ae0d8ad552acf692d6c0e: [[Cloud Security.gif]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "G",
-			"lineHeight": 1.2999999999999996,
-			"baseline": 20
+			"lineHeight": 1.2999999999999996
 		},
 		{
 			"type": "text",
@@ -37601,8 +37516,7 @@ b427ab9c89da4045131ae0d8ad552acf692d6c0e: [[Cloud Security.gif]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "o",
-			"lineHeight": 1.3000000000000003,
-			"baseline": 20
+			"lineHeight": 1.3000000000000003
 		},
 		{
 			"type": "text",
@@ -37643,8 +37557,7 @@ b427ab9c89da4045131ae0d8ad552acf692d6c0e: [[Cloud Security.gif]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "o",
-			"lineHeight": 1.3000000000000003,
-			"baseline": 20
+			"lineHeight": 1.3000000000000003
 		},
 		{
 			"type": "text",
@@ -37685,8 +37598,7 @@ b427ab9c89da4045131ae0d8ad552acf692d6c0e: [[Cloud Security.gif]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "g",
-			"lineHeight": 1.3,
-			"baseline": 20
+			"lineHeight": 1.3
 		},
 		{
 			"type": "text",
@@ -37727,8 +37639,7 @@ b427ab9c89da4045131ae0d8ad552acf692d6c0e: [[Cloud Security.gif]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "l",
-			"lineHeight": 1.3,
-			"baseline": 20
+			"lineHeight": 1.3
 		},
 		{
 			"type": "text",
@@ -37769,8 +37680,7 @@ b427ab9c89da4045131ae0d8ad552acf692d6c0e: [[Cloud Security.gif]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "e",
-			"lineHeight": 1.3000000000000003,
-			"baseline": 20
+			"lineHeight": 1.3000000000000003
 		},
 		{
 			"type": "rectangle",
@@ -37921,8 +37831,7 @@ b427ab9c89da4045131ae0d8ad552acf692d6c0e: [[Cloud Security.gif]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Mobile",
-			"lineHeight": 1.276888277439391,
-			"baseline": 14
+			"lineHeight": 1.276888277439391
 		},
 		{
 			"type": "rectangle",
@@ -38147,8 +38056,7 @@ b427ab9c89da4045131ae0d8ad552acf692d6c0e: [[Cloud Security.gif]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Lorem ipsum dolor sit amet, \nconsectetur adipiscing elit,sed\n do eiusmod tempor incididunt\n ut labore et dolore magna\n aliqua. Ut enim ad miveniam,\n quis nostrud exercitaullamco \nlaboris nisi ut aliquip ex ea \nommodo consequat. Duis aute \nirure dolor in reprehenderit i",
-			"lineHeight": 1.3706256908018875,
-			"baseline": 30
+			"lineHeight": 1.3706256908018875
 		},
 		{
 			"type": "text",
@@ -38189,8 +38097,7 @@ b427ab9c89da4045131ae0d8ad552acf692d6c0e: [[Cloud Security.gif]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Lorem ipsum dolor s, \nconsectetur adipng d\n do eiusmopor incididunt\nut labore et dolore magna\naliqua. Ut enim ad miveniam,\nquis nostrud exercitaullamco \nlaboris nisi ut aliquip ex ea \nommodo consequat. Duis aute \n",
-			"lineHeight": 1.3706256908018875,
-			"baseline": 30
+			"lineHeight": 1.3706256908018875
 		},
 		{
 			"type": "rectangle",
@@ -38748,8 +38655,7 @@ b427ab9c89da4045131ae0d8ad552acf692d6c0e: [[Cloud Security.gif]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "EC2",
-			"lineHeight": 1.2,
-			"baseline": 16
+			"lineHeight": 1.2
 		},
 		{
 			"type": "rectangle",
@@ -38777,7 +38683,7 @@ b427ab9c89da4045131ae0d8ad552acf692d6c0e: [[Cloud Security.gif]]
 			],
 			"frameId": "bqa93Jp8fAnGuSpcKAsSl",
 			"roundness": null,
-			"boundElements": null,
+			"boundElements": [],
 			"updated": 1711956489016,
 			"link": null,
 			"locked": false
@@ -38808,7 +38714,7 @@ b427ab9c89da4045131ae0d8ad552acf692d6c0e: [[Cloud Security.gif]]
 			],
 			"frameId": "bqa93Jp8fAnGuSpcKAsSl",
 			"roundness": null,
-			"boundElements": null,
+			"boundElements": [],
 			"updated": 1711956489016,
 			"link": null,
 			"locked": false
@@ -38840,7 +38746,7 @@ b427ab9c89da4045131ae0d8ad552acf692d6c0e: [[Cloud Security.gif]]
 			],
 			"frameId": "bqa93Jp8fAnGuSpcKAsSl",
 			"roundness": null,
-			"boundElements": null,
+			"boundElements": [],
 			"updated": 1711956489016,
 			"link": null,
 			"locked": false,
@@ -38899,7 +38805,7 @@ b427ab9c89da4045131ae0d8ad552acf692d6c0e: [[Cloud Security.gif]]
 			],
 			"frameId": "bqa93Jp8fAnGuSpcKAsSl",
 			"roundness": null,
-			"boundElements": null,
+			"boundElements": [],
 			"updated": 1711956489016,
 			"link": null,
 			"locked": false,
@@ -38955,7 +38861,7 @@ b427ab9c89da4045131ae0d8ad552acf692d6c0e: [[Cloud Security.gif]]
 			],
 			"frameId": "bqa93Jp8fAnGuSpcKAsSl",
 			"roundness": null,
-			"boundElements": null,
+			"boundElements": [],
 			"updated": 1711956489016,
 			"link": null,
 			"locked": false,
@@ -38967,8 +38873,7 @@ b427ab9c89da4045131ae0d8ad552acf692d6c0e: [[Cloud Security.gif]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "EC2",
-			"lineHeight": 1.2,
-			"baseline": 16
+			"lineHeight": 1.2
 		},
 		{
 			"type": "rectangle",
@@ -38996,7 +38901,7 @@ b427ab9c89da4045131ae0d8ad552acf692d6c0e: [[Cloud Security.gif]]
 			],
 			"frameId": "bqa93Jp8fAnGuSpcKAsSl",
 			"roundness": null,
-			"boundElements": null,
+			"boundElements": [],
 			"updated": 1711956489016,
 			"link": null,
 			"locked": false
@@ -39027,7 +38932,7 @@ b427ab9c89da4045131ae0d8ad552acf692d6c0e: [[Cloud Security.gif]]
 			],
 			"frameId": "bqa93Jp8fAnGuSpcKAsSl",
 			"roundness": null,
-			"boundElements": null,
+			"boundElements": [],
 			"updated": 1711956489016,
 			"link": null,
 			"locked": false
@@ -39059,7 +38964,7 @@ b427ab9c89da4045131ae0d8ad552acf692d6c0e: [[Cloud Security.gif]]
 			],
 			"frameId": "bqa93Jp8fAnGuSpcKAsSl",
 			"roundness": null,
-			"boundElements": null,
+			"boundElements": [],
 			"updated": 1711956489016,
 			"link": null,
 			"locked": false,
@@ -39118,7 +39023,7 @@ b427ab9c89da4045131ae0d8ad552acf692d6c0e: [[Cloud Security.gif]]
 			],
 			"frameId": "bqa93Jp8fAnGuSpcKAsSl",
 			"roundness": null,
-			"boundElements": null,
+			"boundElements": [],
 			"updated": 1711956489016,
 			"link": null,
 			"locked": false,
@@ -39174,7 +39079,7 @@ b427ab9c89da4045131ae0d8ad552acf692d6c0e: [[Cloud Security.gif]]
 			],
 			"frameId": "bqa93Jp8fAnGuSpcKAsSl",
 			"roundness": null,
-			"boundElements": null,
+			"boundElements": [],
 			"updated": 1711956489016,
 			"link": null,
 			"locked": false,
@@ -39186,32 +39091,31 @@ b427ab9c89da4045131ae0d8ad552acf692d6c0e: [[Cloud Security.gif]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "EC2",
-			"lineHeight": 1.2,
-			"baseline": 16
+			"lineHeight": 1.2
 		},
 		{
-			"id": "bqa93Jp8fAnGuSpcKAsSl",
 			"type": "frame",
-			"x": 1808.1526698189873,
-			"y": 2970.799433243961,
-			"width": 520.9450954861113,
-			"height": 391.9258626302085,
-			"angle": 0,
-			"strokeColor": "#bbb",
-			"backgroundColor": "transparent",
+			"version": 103,
+			"versionNonce": 1927937938,
+			"isDeleted": false,
+			"id": "bqa93Jp8fAnGuSpcKAsSl",
 			"fillStyle": "solid",
 			"strokeWidth": 2,
 			"strokeStyle": "solid",
 			"roughness": 0,
 			"opacity": 100,
+			"angle": 0,
+			"x": 1808.1526698189873,
+			"y": 2970.799433243961,
+			"strokeColor": "#bbb",
+			"backgroundColor": "transparent",
+			"width": 520.9450954861113,
+			"height": 391.9258626302085,
+			"seed": 837650510,
 			"groupIds": [],
 			"frameId": null,
 			"roundness": null,
-			"seed": 837650510,
-			"version": 103,
-			"versionNonce": 1927937938,
-			"isDeleted": false,
-			"boundElements": null,
+			"boundElements": [],
 			"updated": 1711956489016,
 			"link": null,
 			"locked": false,
@@ -39225,12 +39129,45 @@ b427ab9c89da4045131ae0d8ad552acf692d6c0e: [[Cloud Security.gif]]
 			"name": null
 		},
 		{
-			"id": "0V21jFVb",
 			"type": "image",
+			"version": 151,
+			"versionNonce": 1734507346,
+			"isDeleted": false,
+			"id": "0V21jFVb",
+			"fillStyle": "hachure",
+			"strokeWidth": 1,
+			"strokeStyle": "solid",
+			"roughness": 1,
+			"opacity": 100,
+			"angle": 0,
 			"x": 520.7266340126155,
 			"y": -666.4112033243969,
+			"strokeColor": "transparent",
+			"backgroundColor": "transparent",
 			"width": 1163.5985284788999,
 			"height": 1512.67808702257,
+			"seed": 64616,
+			"groupIds": [],
+			"frameId": null,
+			"roundness": null,
+			"boundElements": [],
+			"updated": 1711956747830,
+			"link": null,
+			"locked": false,
+			"status": "pending",
+			"fileId": "b427ab9c89da4045131ae0d8ad552acf692d6c0e",
+			"scale": [
+				1,
+				1
+			]
+		},
+		{
+			"id": "HLzVq3f9",
+			"type": "image",
+			"x": 1729.0549739736794,
+			"y": -642.7918809810906,
+			"width": 1103.3301209979659,
+			"height": 1463.636363636364,
 			"angle": 0,
 			"strokeColor": "transparent",
 			"backgroundColor": "transparent",
@@ -39240,16 +39177,47 @@ b427ab9c89da4045131ae0d8ad552acf692d6c0e: [[Cloud Security.gif]]
 			"roughness": 1,
 			"opacity": 100,
 			"roundness": null,
-			"seed": 64616,
-			"version": 151,
-			"versionNonce": 1734507346,
-			"updated": 1711956747830,
+			"seed": 92083,
+			"version": 245,
+			"versionNonce": 1163602187,
+			"updated": 1711963759481,
 			"isDeleted": false,
 			"groupIds": [],
 			"boundElements": [],
 			"link": null,
 			"locked": false,
-			"fileId": "b427ab9c89da4045131ae0d8ad552acf692d6c0e",
+			"fileId": "c89dd983ae880b0aa70621d39a337c3153956cd4",
+			"scale": [
+				1,
+				1
+			]
+		},
+		{
+			"id": "hd74pEW6",
+			"type": "image",
+			"x": 2932.827861863176,
+			"y": -794.7745649637743,
+			"width": 1246.493506493506,
+			"height": 1713.9285714285704,
+			"angle": 0,
+			"strokeColor": "transparent",
+			"backgroundColor": "transparent",
+			"fillStyle": "hachure",
+			"strokeWidth": 1,
+			"strokeStyle": "solid",
+			"roughness": 1,
+			"opacity": 100,
+			"roundness": null,
+			"seed": 70132,
+			"version": 97,
+			"versionNonce": 1161049195,
+			"updated": 1711963780654,
+			"isDeleted": false,
+			"groupIds": [],
+			"boundElements": [],
+			"link": null,
+			"locked": false,
+			"fileId": "f515afbebcaf36331e4d52c81b8d03c6316c5612",
 			"scale": [
 				1,
 				1
@@ -39271,10 +39239,10 @@ b427ab9c89da4045131ae0d8ad552acf692d6c0e: [[Cloud Security.gif]]
 		"currentItemTextAlign": "left",
 		"currentItemStartArrowhead": null,
 		"currentItemEndArrowhead": "arrow",
-		"scrollX": 1589.2417075128772,
-		"scrollY": 543.5192420429655,
+		"scrollX": -444.48370601901934,
+		"scrollY": 1061.0286234053335,
 		"zoom": {
-			"value": 0.9000000000000002
+			"value": 0.5499999999999999
 		},
 		"currentItemRoundness": "sharp",
 		"gridSize": null,
