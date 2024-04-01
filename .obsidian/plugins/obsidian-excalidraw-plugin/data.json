@@ -117,41 +117,41 @@
             "locked": false
           },
           {
-            "id": "Ae9JgOb8",
             "type": "text",
-            "x": -667.7204756425301,
-            "y": 1695.0758333898548,
-            "width": 80.06402587890625,
-            "height": 45,
-            "angle": 0,
-            "strokeColor": "#1e1e1e",
-            "backgroundColor": "transparent",
+            "version": 139,
+            "versionNonce": 164110248,
+            "isDeleted": false,
+            "id": "Ae9JgOb8",
             "fillStyle": "solid",
             "strokeWidth": 2,
             "strokeStyle": "solid",
             "roughness": 1,
             "opacity": 100,
+            "angle": 0,
+            "x": -667.7204756425301,
+            "y": 1695.0758333898548,
+            "strokeColor": "#1e1e1e",
+            "backgroundColor": "transparent",
+            "width": 80.06402587890625,
+            "height": 45,
+            "seed": 1014802856,
             "groupIds": [],
             "frameId": null,
             "roundness": null,
-            "seed": 1014802856,
-            "version": 139,
-            "versionNonce": 164110248,
-            "isDeleted": false,
-            "boundElements": null,
+            "boundElements": [],
             "updated": 1711914478780,
             "link": null,
             "locked": false,
-            "text": "AZ 1",
-            "rawText": "AZ 1",
             "fontSize": 36,
             "fontFamily": 1,
+            "text": "AZ 1",
+            "rawText": "AZ 1",
             "textAlign": "left",
             "verticalAlign": "top",
-            "baseline": 32,
             "containerId": "IA_WVmYm8YHGj3k4pD_d6",
             "originalText": "AZ 1",
-            "lineHeight": 1.25
+            "lineHeight": 1.25,
+            "baseline": 32
           }
         ],
         "created": 1711914499053
@@ -20823,7 +20823,7 @@
             "containerId": null,
             "originalText": "EMR",
             "lineHeight": 1.2,
-            "baseline": 17
+            "baseline": 16
           },
           {
             "type": "rectangle",
@@ -21834,7 +21834,7 @@
             "containerId": null,
             "originalText": "Kinesis",
             "lineHeight": 1.2,
-            "baseline": 17
+            "baseline": 16
           }
         ],
         "id": "VNQOFLXM1J3eJ4hETyzI0",
@@ -22503,7 +22503,7 @@
             "containerId": null,
             "originalText": "Kinesis \nData Firehose",
             "lineHeight": 1.2,
-            "baseline": 41
+            "baseline": 40
           }
         ],
         "id": "yrQtFO03ZTlfBXSnjpGBO",
@@ -23014,7 +23014,7 @@
             "containerId": null,
             "originalText": "Kinesis \nVideo Streams",
             "lineHeight": 1.2,
-            "baseline": 41
+            "baseline": 40
           }
         ],
         "id": "91zDESXIiQuyjYnsUtvaU",
@@ -23061,7 +23061,7 @@
             "containerId": null,
             "originalText": "Kinesis \nData Analytics",
             "lineHeight": 1.2,
-            "baseline": 41
+            "baseline": 40
           },
           {
             "type": "rectangle",
@@ -24403,7 +24403,7 @@
             "containerId": null,
             "originalText": "Kinesis \nData Streams",
             "lineHeight": 1.2,
-            "baseline": 41
+            "baseline": 40
           }
         ],
         "id": "SaaTtpn8C4dAJc3uhbvHt",
@@ -24450,7 +24450,7 @@
             "containerId": null,
             "originalText": "CloudSearch",
             "lineHeight": 1.2,
-            "baseline": 17
+            "baseline": 16
           },
           {
             "type": "rectangle",
@@ -24750,7 +24750,7 @@
             "containerId": null,
             "originalText": "Athena",
             "lineHeight": 1.2,
-            "baseline": 17
+            "baseline": 16
           },
           {
             "type": "rectangle",
@@ -25153,7 +25153,7 @@
             "containerId": null,
             "originalText": "Glue",
             "lineHeight": 1.2,
-            "baseline": 17
+            "baseline": 16
           },
           {
             "type": "rectangle",
@@ -25653,7 +25653,7 @@
             "containerId": null,
             "originalText": "Crawler",
             "lineHeight": 1.2,
-            "baseline": 17
+            "baseline": 16
           },
           {
             "type": "rectangle",
@@ -26687,7 +26687,7 @@
             "containerId": null,
             "originalText": "DataCatalog",
             "lineHeight": 1.2,
-            "baseline": 17
+            "baseline": 16
           },
           {
             "type": "rectangle",
@@ -27170,7 +27170,7 @@
             "containerId": null,
             "originalText": "Elastic Views",
             "lineHeight": 1.2,
-            "baseline": 17
+            "baseline": 16
           },
           {
             "type": "rectangle",
@@ -27786,7 +27786,7 @@
             "containerId": null,
             "originalText": "Lake Formation",
             "lineHeight": 1.2,
-            "baseline": 17
+            "baseline": 16
           },
           {
             "type": "rectangle",
@@ -28620,7 +28620,7 @@
             "containerId": null,
             "originalText": "Redshift",
             "lineHeight": 1.2,
-            "baseline": 17
+            "baseline": 16
           },
           {
             "type": "rectangle",
@@ -29112,7 +29112,7 @@
             "containerId": null,
             "originalText": "QuickSight",
             "lineHeight": 1.2,
-            "baseline": 17
+            "baseline": 16
           },
           {
             "type": "rectangle",
@@ -29557,7 +29557,7 @@
             "containerId": null,
             "originalText": "Data Pipeline",
             "lineHeight": 1.2,
-            "baseline": 17
+            "baseline": 16
           },
           {
             "type": "rectangle",
@@ -30234,7 +30234,7 @@
             "containerId": null,
             "originalText": "Managed Streaming\nfor Apache Kafka",
             "lineHeight": 1.2,
-            "baseline": 41
+            "baseline": 40
           },
           {
             "type": "rectangle",
@@ -30545,7 +30545,7 @@
             "containerId": null,
             "originalText": "K",
             "lineHeight": 1.1723115220561968,
-            "baseline": 13
+            "baseline": 12
           },
           {
             "type": "line",
@@ -30856,7 +30856,7 @@
             "containerId": null,
             "originalText": "Data Exchange",
             "lineHeight": 1.2,
-            "baseline": 17
+            "baseline": 16
           },
           {
             "type": "rectangle",
@@ -31406,7 +31406,7 @@
             "containerId": null,
             "originalText": "Glue DataBrew",
             "lineHeight": 1.2,
-            "baseline": 17
+            "baseline": 16
           },
           {
             "type": "rectangle",
@@ -31940,7 +31940,7 @@
             "containerId": null,
             "originalText": "OpenSearch \nService",
             "lineHeight": 1.2,
-            "baseline": 41
+            "baseline": 40
           },
           {
             "type": "rectangle",
@@ -33089,7 +33089,7 @@
             "containerId": null,
             "originalText": "SNS",
             "lineHeight": 1.2,
-            "baseline": 17
+            "baseline": 16
           }
         ],
         "id": "4cGi2CN_g6J8XiD8wxVft",
@@ -33745,7 +33745,7 @@
             "containerId": null,
             "originalText": "SQS",
             "lineHeight": 1.2,
-            "baseline": 17
+            "baseline": 16
           }
         ],
         "id": "Oh_ux_q4QUG_SbdunvQa9",
@@ -33792,7 +33792,7 @@
             "containerId": null,
             "originalText": "Amazon MQ",
             "lineHeight": 1.2,
-            "baseline": 17
+            "baseline": 16
           },
           {
             "type": "rectangle",
@@ -35278,7 +35278,7 @@
             "containerId": null,
             "originalText": "AppSync",
             "lineHeight": 1.2,
-            "baseline": 17
+            "baseline": 16
           }
         ],
         "id": "nM-JyJ1fHyHM2eATz46Mg",
@@ -35943,7 +35943,7 @@
             "containerId": null,
             "originalText": "Step Functions",
             "lineHeight": 1.2,
-            "baseline": 17
+            "baseline": 16
           }
         ],
         "id": "qhwDGYU-UAXt2VXlMPKIG",
@@ -36502,7 +36502,7 @@
             "containerId": null,
             "originalText": "EventBridge",
             "lineHeight": 1.2,
-            "baseline": 17
+            "baseline": 16
           }
         ],
         "id": "E0SjCmFXETQ42t9XUnKnf",
@@ -36549,7 +36549,7 @@
             "containerId": null,
             "originalText": "Managed Workflows\nfor Apache Airflow",
             "lineHeight": 1.2,
-            "baseline": 41
+            "baseline": 40
           },
           {
             "type": "rectangle",
@@ -36936,7 +36936,7 @@
             "containerId": null,
             "originalText": "AppFlow",
             "lineHeight": 1.2,
-            "baseline": 17
+            "baseline": 16
           },
           {
             "type": "rectangle",
@@ -37514,7 +37514,7 @@
             "containerId": null,
             "originalText": "API Gateway",
             "lineHeight": 1.2,
-            "baseline": 17
+            "baseline": 16
           }
         ],
         "id": "TeYPwo3dnTQktSMlOTY0y",
@@ -37842,7 +37842,7 @@
             "containerId": null,
             "originalText": "Endpoint",
             "lineHeight": 1.2,
-            "baseline": 17
+            "baseline": 16
           }
         ],
         "id": "WvM_ZIQpaxr4Qn5AOS1_I",
@@ -38471,7 +38471,7 @@
             "containerId": null,
             "originalText": "SES",
             "lineHeight": 1.2,
-            "baseline": 17
+            "baseline": 16
           }
         ],
         "id": "XhMA24VKJHiHzLr8NPQgJ",
@@ -38518,7 +38518,7 @@
             "containerId": null,
             "originalText": "Alexa for\nBusiness",
             "lineHeight": 1.2,
-            "baseline": 41
+            "baseline": 40
           },
           {
             "type": "rectangle",
@@ -38953,7 +38953,7 @@
             "containerId": null,
             "originalText": "Chime",
             "lineHeight": 1.2,
-            "baseline": 17
+            "baseline": 16
           },
           {
             "type": "rectangle",
@@ -39538,7 +39538,7 @@
             "containerId": null,
             "originalText": "Budgets",
             "lineHeight": 1.2,
-            "baseline": 17
+            "baseline": 16
           },
           {
             "type": "rectangle",
@@ -39929,7 +39929,7 @@
             "containerId": null,
             "originalText": "Cost & Usage\nReport",
             "lineHeight": 1.2,
-            "baseline": 41
+            "baseline": 40
           },
           {
             "type": "rectangle",
@@ -40624,7 +40624,7 @@
             "containerId": null,
             "originalText": "Cost Explorer",
             "lineHeight": 1.2,
-            "baseline": 17
+            "baseline": 16
           },
           {
             "type": "rectangle",
@@ -41642,7 +41642,7 @@
             "containerId": null,
             "originalText": "EC2",
             "lineHeight": 1.2,
-            "baseline": 17
+            "baseline": 16
           }
         ],
         "id": "x-qV-aG1-hOGvJ0XUFbDk",
@@ -41689,7 +41689,7 @@
             "containerId": null,
             "originalText": "Elastic \nBeanstalk",
             "lineHeight": 1.2,
-            "baseline": 41
+            "baseline": 40
           },
           {
             "type": "rectangle",
@@ -42289,7 +42289,7 @@
             "containerId": null,
             "originalText": "Lambda",
             "lineHeight": 1.2,
-            "baseline": 17
+            "baseline": 16
           }
         ],
         "id": "4YBMIUCRrPPPTaKBqdduz",
@@ -42336,7 +42336,7 @@
             "containerId": null,
             "originalText": "Outposts",
             "lineHeight": 1.2,
-            "baseline": 17
+            "baseline": 16
           },
           {
             "type": "rectangle",
@@ -42890,7 +42890,7 @@
             "containerId": null,
             "originalText": "EC2 Image\nBuilder",
             "lineHeight": 1.2,
-            "baseline": 41
+            "baseline": 40
           },
           {
             "type": "rectangle",
@@ -43328,7 +43328,7 @@
             "containerId": null,
             "originalText": "App Runner",
             "lineHeight": 1.2,
-            "baseline": 17
+            "baseline": 16
           },
           {
             "type": "rectangle",
@@ -43662,7 +43662,7 @@
             "containerId": null,
             "originalText": "Batch",
             "lineHeight": 1.2,
-            "baseline": 17
+            "baseline": 16
           },
           {
             "type": "rectangle",
@@ -44775,7 +44775,7 @@
             "containerId": null,
             "originalText": "Connect",
             "lineHeight": 1.2,
-            "baseline": 17
+            "baseline": 16
           }
         ],
         "id": "q-j8hf6ggppU4tQVjx5LR",
@@ -44824,7 +44824,7 @@
             "containerId": null,
             "originalText": "EKS",
             "lineHeight": 1.2,
-            "baseline": 17
+            "baseline": 16
           },
           {
             "type": "rectangle",
@@ -45046,7 +45046,7 @@
             "containerId": null,
             "originalText": "K",
             "lineHeight": 1.1582157100906016,
-            "baseline": 18
+            "baseline": 19
           }
         ],
         "id": "g4dcyC-jNqdtV30cOELmm",
@@ -45258,7 +45258,7 @@
             "containerId": null,
             "originalText": "ECR",
             "lineHeight": 1.2,
-            "baseline": 17
+            "baseline": 16
           }
         ],
         "id": "Yk_ltNUhL2BkhyJ0HvSLX",
@@ -45486,7 +45486,7 @@
             "containerId": null,
             "originalText": "ECS",
             "lineHeight": 1.2,
-            "baseline": 17
+            "baseline": 16
           }
         ],
         "id": "xpCH0nfRYnZo_IkTS3wkJ",
@@ -46732,7 +46732,7 @@
             "containerId": null,
             "originalText": "Fargate",
             "lineHeight": 1.2,
-            "baseline": 17
+            "baseline": 16
           }
         ],
         "id": "Em6o19BRr-9csn_Lq4m9V",
@@ -46779,7 +46779,7 @@
             "containerId": null,
             "originalText": "Support",
             "lineHeight": 1.2,
-            "baseline": 17
+            "baseline": 16
           },
           {
             "type": "rectangle",
@@ -47231,7 +47231,7 @@
             "containerId": null,
             "originalText": "Aurora",
             "lineHeight": 1.2,
-            "baseline": 17
+            "baseline": 16
           },
           {
             "type": "rectangle",
@@ -47846,7 +47846,7 @@
             "containerId": null,
             "originalText": "DocumentDB",
             "lineHeight": 1.2,
-            "baseline": 17
+            "baseline": 16
           },
           {
             "type": "rectangle",
@@ -49405,7 +49405,7 @@
             "containerId": null,
             "originalText": "DynamoDB",
             "lineHeight": 1.2,
-            "baseline": 17
+            "baseline": 16
           }
         ],
         "id": "ZkPx5cARDMmv0Kxlv7Y1R",
@@ -49452,7 +49452,7 @@
             "containerId": null,
             "originalText": "Keyspaces",
             "lineHeight": 1.2,
-            "baseline": 17
+            "baseline": 16
           },
           {
             "type": "rectangle",
@@ -49919,7 +49919,7 @@
             "containerId": null,
             "originalText": "*",
             "lineHeight": 1.1882739970350638,
-            "baseline": 17
+            "baseline": 16
           }
         ],
         "id": "J8WC_STIRvoqSOsSE_uNI",
@@ -49966,7 +49966,7 @@
             "containerId": null,
             "originalText": "DMS",
             "lineHeight": 1.2,
-            "baseline": 17
+            "baseline": 16
           },
           {
             "type": "rectangle",
@@ -50542,7 +50542,7 @@
             "containerId": null,
             "originalText": "Neptune",
             "lineHeight": 1.2,
-            "baseline": 17
+            "baseline": 16
           },
           {
             "type": "rectangle",
@@ -51407,7 +51407,7 @@
             "containerId": null,
             "originalText": "Quantum Ledger\nDatabase",
             "lineHeight": 1.2,
-            "baseline": 41
+            "baseline": 40
           },
           {
             "type": "rectangle",
@@ -52080,7 +52080,7 @@
             "containerId": null,
             "originalText": "RDS",
             "lineHeight": 1.2,
-            "baseline": 17
+            "baseline": 16
           },
           {
             "type": "rectangle",
@@ -53035,7 +53035,7 @@
             "containerId": null,
             "originalText": "Timestream",
             "lineHeight": 1.2,
-            "baseline": 17
+            "baseline": 16
           },
           {
             "type": "rectangle",
@@ -53737,7 +53737,7 @@
             "containerId": null,
             "originalText": "ElastiCache",
             "lineHeight": 1.2,
-            "baseline": 17
+            "baseline": 16
           },
           {
             "type": "rectangle",
@@ -54793,7 +54793,7 @@
             "containerId": null,
             "originalText": "MemoryDB\nfor Redis",
             "lineHeight": 1.2,
-            "baseline": 41
+            "baseline": 40
           },
           {
             "type": "rectangle",
@@ -55496,7 +55496,7 @@
             "containerId": null,
             "originalText": "Cloud9",
             "lineHeight": 1.2,
-            "baseline": 17
+            "baseline": 16
           },
           {
             "type": "rectangle",
@@ -56147,7 +56147,7 @@
             "containerId": null,
             "originalText": "CodeBuild",
             "lineHeight": 1.2,
-            "baseline": 17
+            "baseline": 16
           }
         ],
         "id": "KVRSYJq_5ZTswKkQ3hdfD",
@@ -56739,7 +56739,7 @@
             "containerId": null,
             "originalText": "CodeCommit",
             "lineHeight": 1.2,
-            "baseline": 17
+            "baseline": 16
           }
         ],
         "id": "jEuTeZ0uj-Tbg5fjt7ttD",
@@ -57450,7 +57450,7 @@
             "containerId": null,
             "originalText": "CodeDeploy",
             "lineHeight": 1.2,
-            "baseline": 17
+            "baseline": 16
           }
         ],
         "id": "TXUd2OsiMQD1AyqwBkXKI",
@@ -57777,7 +57777,7 @@
             "containerId": null,
             "originalText": "CodePipeline",
             "lineHeight": 1.2,
-            "baseline": 17
+            "baseline": 16
           }
         ],
         "id": "ExHn9-Y6ExJHPBJh39vuw",
@@ -57825,7 +57825,7 @@
             "containerId": null,
             "originalText": "X-Ray",
             "lineHeight": 1.2,
-            "baseline": 17
+            "baseline": 16
           },
           {
             "type": "rectangle",
@@ -58264,7 +58264,7 @@
             "containerId": null,
             "originalText": "CodeArtifact",
             "lineHeight": 1.2,
-            "baseline": 17
+            "baseline": 16
           },
           {
             "type": "rectangle",
@@ -58437,7 +58437,7 @@
             "containerId": null,
             "originalText": "</>",
             "lineHeight": 1.111784166841932,
-            "baseline": 12
+            "baseline": 11
           },
           {
             "type": "line",
@@ -58764,7 +58764,7 @@
             "containerId": null,
             "originalText": "Amplify",
             "lineHeight": 1.2,
-            "baseline": 17
+            "baseline": 16
           }
         ],
         "id": "stlRq3oPYoFHmZ6kl1v-I",
@@ -58811,7 +58811,7 @@
             "containerId": null,
             "originalText": "Device Farm",
             "lineHeight": 1.2,
-            "baseline": 17
+            "baseline": 16
           },
           {
             "type": "rectangle",
@@ -59587,7 +59587,7 @@
             "containerId": null,
             "originalText": "Location\nService",
             "lineHeight": 1.2,
-            "baseline": 41
+            "baseline": 40
           },
           {
             "type": "rectangle",
@@ -59952,7 +59952,7 @@
             "containerId": null,
             "originalText": "IoT Analytics",
             "lineHeight": 1.2,
-            "baseline": 17
+            "baseline": 16
           },
           {
             "type": "rectangle",
@@ -60525,7 +60525,7 @@
             "containerId": null,
             "originalText": "IoT Core",
             "lineHeight": 1.2,
-            "baseline": 17
+            "baseline": 16
           },
           {
             "type": "rectangle",
@@ -61207,7 +61207,7 @@
             "containerId": null,
             "originalText": "IoT ExpressLink",
             "lineHeight": 1.2,
-            "baseline": 17
+            "baseline": 16
           },
           {
             "type": "rectangle",
@@ -62236,7 +62236,7 @@
             "containerId": null,
             "originalText": "IoT TwinMaker",
             "lineHeight": 1.2,
-            "baseline": 17
+            "baseline": 16
           },
           {
             "type": "rectangle",
@@ -62778,7 +62778,7 @@
             "containerId": null,
             "originalText": "IoT FleetWise",
             "lineHeight": 1.2,
-            "baseline": 17
+            "baseline": 16
           },
           {
             "type": "rectangle",
@@ -63279,7 +63279,7 @@
             "containerId": null,
             "originalText": "IoT Device \nDefender",
             "lineHeight": 1.2,
-            "baseline": 41
+            "baseline": 40
           },
           {
             "type": "rectangle",
@@ -63869,7 +63869,7 @@
             "containerId": null,
             "originalText": "IoT Device\nManagement",
             "lineHeight": 1.2,
-            "baseline": 41
+            "baseline": 40
           },
           {
             "type": "rectangle",
@@ -64557,7 +64557,7 @@
             "containerId": null,
             "originalText": "IoT Events",
             "lineHeight": 1.2,
-            "baseline": 17
+            "baseline": 16
           },
           {
             "type": "rectangle",
@@ -65280,7 +65280,7 @@
             "containerId": null,
             "originalText": "IoT RoboRunner",
             "lineHeight": 1.2,
-            "baseline": 17
+            "baseline": 16
           },
           {
             "type": "rectangle",
@@ -65860,7 +65860,7 @@
             "containerId": null,
             "originalText": "IoT Greengrass",
             "lineHeight": 1.2,
-            "baseline": 17
+            "baseline": 16
           },
           {
             "type": "rectangle",
@@ -66244,7 +66244,7 @@
             "containerId": null,
             "originalText": "IoT SiteWise",
             "lineHeight": 1.2,
-            "baseline": 17
+            "baseline": 16
           },
           {
             "type": "rectangle",
@@ -66772,7 +66772,7 @@
             "containerId": null,
             "originalText": "Comprehend",
             "lineHeight": 1.2,
-            "baseline": 17
+            "baseline": 16
           },
           {
             "type": "rectangle",
@@ -67607,7 +67607,7 @@
             "containerId": null,
             "originalText": "Elastic Inference",
             "lineHeight": 1.2,
-            "baseline": 17
+            "baseline": 16
           },
           {
             "type": "rectangle",
@@ -68700,7 +68700,7 @@
             "containerId": null,
             "originalText": "Forecast",
             "lineHeight": 1.2,
-            "baseline": 17
+            "baseline": 16
           },
           {
             "type": "rectangle",
@@ -69016,7 +69016,7 @@
             "containerId": null,
             "originalText": "Lex",
             "lineHeight": 1.2,
-            "baseline": 17
+            "baseline": 16
           },
           {
             "type": "rectangle",
@@ -69651,7 +69651,7 @@
             "containerId": null,
             "originalText": "Personalize",
             "lineHeight": 1.2,
-            "baseline": 17
+            "baseline": 16
           },
           {
             "type": "rectangle",
@@ -70171,7 +70171,7 @@
             "containerId": null,
             "originalText": "Polly",
             "lineHeight": 1.2,
-            "baseline": 17
+            "baseline": 16
           },
           {
             "type": "rectangle",
@@ -71226,7 +71226,7 @@
             "containerId": null,
             "originalText": "Rekognition",
             "lineHeight": 1.2,
-            "baseline": 17
+            "baseline": 16
           },
           {
             "type": "rectangle",
@@ -72526,7 +72526,7 @@
             "containerId": null,
             "originalText": "SageMaker",
             "lineHeight": 1.2,
-            "baseline": 17
+            "baseline": 16
           }
         ],
         "id": "S2nfNq5kOm8DLYvpHvaf9",
@@ -73100,7 +73100,7 @@
             "containerId": null,
             "originalText": "Notebook",
             "lineHeight": 1.2,
-            "baseline": 17
+            "baseline": 16
           }
         ],
         "id": "bT_gP77tt5YU-yfvCmaIe",
@@ -73872,7 +73872,7 @@
             "containerId": null,
             "originalText": "Canvas",
             "lineHeight": 1.2,
-            "baseline": 17
+            "baseline": 16
           }
         ],
         "id": "4qeT8nRFJpkaxUJf49e-X",
@@ -74831,7 +74831,7 @@
             "containerId": null,
             "originalText": "Model",
             "lineHeight": 1.2,
-            "baseline": 17
+            "baseline": 16
           }
         ],
         "id": "pgmhIjd9iutB7YZe2o9k4",
@@ -75294,7 +75294,7 @@
             "containerId": null,
             "originalText": "Train",
             "lineHeight": 1.2,
-            "baseline": 17
+            "baseline": 16
           }
         ],
         "id": "zJtNIHI-XGe4LR6oh4h6C",
@@ -76170,7 +76170,7 @@
             "containerId": null,
             "originalText": "Ground Truth",
             "lineHeight": 1.2,
-            "baseline": 17
+            "baseline": 16
           }
         ],
         "id": "Pef_WG7W5V730cLSvbM45",
@@ -76218,7 +76218,7 @@
             "containerId": null,
             "originalText": "Textract",
             "lineHeight": 1.2,
-            "baseline": 17
+            "baseline": 16
           },
           {
             "type": "rectangle",
@@ -77090,7 +77090,7 @@
             "containerId": null,
             "originalText": "Transcribe",
             "lineHeight": 1.2,
-            "baseline": 17
+            "baseline": 16
           },
           {
             "type": "rectangle",
@@ -78091,7 +78091,7 @@
             "containerId": null,
             "originalText": "Translate",
             "lineHeight": 1.2,
-            "baseline": 17
+            "baseline": 16
           },
           {
             "type": "rectangle",
@@ -78385,7 +78385,7 @@
             "containerId": null,
             "originalText": "A",
             "lineHeight": 1.1853746295984429,
-            "baseline": 17
+            "baseline": 16
           },
           {
             "type": "line",
@@ -78977,7 +78977,7 @@
             "containerId": null,
             "originalText": "Deep Learning\nAMIs",
             "lineHeight": 1.2,
-            "baseline": 41
+            "baseline": 40
           },
           {
             "type": "rectangle",
@@ -79959,7 +79959,7 @@
             "containerId": null,
             "originalText": "Deep Learning\nContainers",
             "lineHeight": 1.2,
-            "baseline": 41
+            "baseline": 40
           },
           {
             "type": "rectangle",
@@ -80662,7 +80662,7 @@
             "containerId": null,
             "originalText": "DeepLens",
             "lineHeight": 1.2,
-            "baseline": 17
+            "baseline": 16
           },
           {
             "type": "rectangle",
@@ -81494,7 +81494,7 @@
             "containerId": null,
             "originalText": "DeepComposer",
             "lineHeight": 1.2,
-            "baseline": 17
+            "baseline": 16
           },
           {
             "type": "rectangle",
@@ -81992,7 +81992,7 @@
             "containerId": null,
             "originalText": "Augmented IA",
             "lineHeight": 1.2,
-            "baseline": 17
+            "baseline": 16
           },
           {
             "type": "rectangle",
@@ -82738,7 +82738,7 @@
             "containerId": null,
             "originalText": "Fraud Detector",
             "lineHeight": 1.2,
-            "baseline": 17
+            "baseline": 16
           },
           {
             "type": "rectangle",
@@ -83646,7 +83646,7 @@
             "containerId": null,
             "originalText": "Kendra",
             "lineHeight": 1.2,
-            "baseline": 17
+            "baseline": 16
           },
           {
             "type": "rectangle",
@@ -84278,7 +84278,7 @@
             "containerId": null,
             "originalText": "DevOps Guru",
             "lineHeight": 1.2,
-            "baseline": 17
+            "baseline": 16
           },
           {
             "type": "rectangle",
@@ -84726,7 +84726,7 @@
             "containerId": null,
             "originalText": "Panorama",
             "lineHeight": 1.2,
-            "baseline": 17
+            "baseline": 16
           },
           {
             "type": "rectangle",
@@ -85242,7 +85242,7 @@
             "containerId": null,
             "originalText": "SageMaker\nStudio Lab",
             "lineHeight": 1.2,
-            "baseline": 41
+            "baseline": 40
           },
           {
             "type": "rectangle",
@@ -85958,7 +85958,7 @@
             "containerId": null,
             "originalText": "Comprehend\nMedical",
             "lineHeight": 1.2,
-            "baseline": 41
+            "baseline": 40
           },
           {
             "type": "rectangle",
@@ -86566,7 +86566,7 @@
             "containerId": null,
             "originalText": "CloudTrail",
             "lineHeight": 1.2,
-            "baseline": 17
+            "baseline": 16
           },
           {
             "type": "rectangle",
@@ -87445,7 +87445,7 @@
             "containerId": null,
             "originalText": "CloudWatch",
             "lineHeight": 1.2,
-            "baseline": 17
+            "baseline": 16
           }
         ],
         "id": "DRDwN9W6UhEMhL5hxIRGk",
@@ -87705,7 +87705,7 @@
             "containerId": null,
             "originalText": "Alarm",
             "lineHeight": 1.2,
-            "baseline": 17
+            "baseline": 16
           }
         ],
         "id": "WsFIS94Y8u0DIy16oPTuC",
@@ -88342,7 +88342,7 @@
             "containerId": null,
             "originalText": "Dashboard",
             "lineHeight": 1.2,
-            "baseline": 17
+            "baseline": 16
           }
         ],
         "id": "c9dy6QVKv8ru0C6Jrj7gH",
@@ -88825,7 +88825,7 @@
             "containerId": null,
             "originalText": "Logs",
             "lineHeight": 1.2,
-            "baseline": 17
+            "baseline": 16
           }
         ],
         "id": "hOFSJtfoyVpkSUlttoUzA",
@@ -89472,7 +89472,7 @@
             "containerId": null,
             "originalText": "System Manager",
             "lineHeight": 1.2,
-            "baseline": 17
+            "baseline": 16
           }
         ],
         "id": "_7mDXDsANOjNtxEoVOvng",
@@ -89519,7 +89519,7 @@
             "containerId": null,
             "originalText": "Chatbot",
             "lineHeight": 1.2,
-            "baseline": 17
+            "baseline": 16
           },
           {
             "type": "rectangle",
@@ -90143,7 +90143,7 @@
             "containerId": null,
             "originalText": "Service Catalog",
             "lineHeight": 1.2,
-            "baseline": 17
+            "baseline": 16
           },
           {
             "type": "rectangle",
@@ -91051,7 +91051,7 @@
             "containerId": null,
             "originalText": "Application\nAuto Scaling",
             "lineHeight": 1.2,
-            "baseline": 41
+            "baseline": 40
           },
           {
             "type": "rectangle",
@@ -91756,7 +91756,7 @@
             "containerId": null,
             "originalText": "Config",
             "lineHeight": 1.2,
-            "baseline": 17
+            "baseline": 16
           },
           {
             "type": "rectangle",
@@ -92591,7 +92591,7 @@
             "containerId": null,
             "originalText": "Personal Health\nDashboard",
             "lineHeight": 1.2,
-            "baseline": 41
+            "baseline": 40
           },
           {
             "type": "rectangle",
@@ -92944,7 +92944,7 @@
             "containerId": null,
             "originalText": "CloudFormation",
             "lineHeight": 1.2,
-            "baseline": 17
+            "baseline": 16
           },
           {
             "type": "rectangle",
@@ -94114,7 +94114,7 @@
             "containerId": null,
             "originalText": "Well-Architected\nTool",
             "lineHeight": 1.2,
-            "baseline": 41
+            "baseline": 40
           }
         ],
         "id": "S09F7CQ_wDXBf5lJkvTaO",
@@ -94161,7 +94161,7 @@
             "containerId": null,
             "originalText": "Control Tower",
             "lineHeight": 1.2,
-            "baseline": 17
+            "baseline": 16
           },
           {
             "type": "rectangle",
@@ -95284,7 +95284,7 @@
             "containerId": null,
             "originalText": "Backint Agent",
             "lineHeight": 1.2,
-            "baseline": 17
+            "baseline": 16
           },
           {
             "type": "rectangle",
@@ -95953,7 +95953,7 @@
             "containerId": null,
             "originalText": "Distro for\nOpen Telemetry",
             "lineHeight": 1.2,
-            "baseline": 41
+            "baseline": 40
           },
           {
             "type": "rectangle",
@@ -96543,7 +96543,7 @@
             "containerId": null,
             "originalText": "Fault Injection\nSimulator",
             "lineHeight": 1.2,
-            "baseline": 41
+            "baseline": 40
           },
           {
             "type": "ellipse",
@@ -97327,7 +97327,7 @@
             "containerId": null,
             "originalText": "Managed Service\nfor Grafana",
             "lineHeight": 1.2,
-            "baseline": 41
+            "baseline": 40
           },
           {
             "type": "line",
@@ -97660,7 +97660,7 @@
             "containerId": null,
             "originalText": "Managed Service\nfor Prometheus",
             "lineHeight": 1.2,
-            "baseline": 41
+            "baseline": 40
           },
           {
             "type": "rectangle",
@@ -98113,7 +98113,7 @@
             "containerId": null,
             "originalText": "OpsWorks",
             "lineHeight": 1.2,
-            "baseline": 17
+            "baseline": 16
           },
           {
             "type": "rectangle",
@@ -98685,7 +98685,7 @@
             "containerId": null,
             "originalText": "System Manager\nIncident Manager",
             "lineHeight": 1.2,
-            "baseline": 41
+            "baseline": 40
           },
           {
             "type": "rectangle",
@@ -99308,7 +99308,7 @@
             "containerId": null,
             "originalText": "Resilience Hub",
             "lineHeight": 1.2,
-            "baseline": 17
+            "baseline": 16
           },
           {
             "type": "rectangle",
@@ -99698,7 +99698,7 @@
             "containerId": null,
             "originalText": "Organizations",
             "lineHeight": 1.2,
-            "baseline": 17
+            "baseline": 16
           },
           {
             "type": "rectangle",
@@ -100223,7 +100223,7 @@
             "containerId": null,
             "originalText": "AppConfig",
             "lineHeight": 1.2,
-            "baseline": 17
+            "baseline": 16
           },
           {
             "type": "rectangle",
@@ -100619,7 +100619,7 @@
             "containerId": null,
             "originalText": "Transfer Family",
             "lineHeight": 1.2,
-            "baseline": 17
+            "baseline": 16
           },
           {
             "type": "rectangle",
@@ -101095,7 +101095,7 @@
             "containerId": null,
             "originalText": "Application\nDiscovery Service",
             "lineHeight": 1.2,
-            "baseline": 41
+            "baseline": 40
           },
           {
             "type": "rectangle",
@@ -101543,7 +101543,7 @@
             "containerId": null,
             "originalText": "DataSync",
             "lineHeight": 1.2,
-            "baseline": 17
+            "baseline": 16
           },
           {
             "type": "rectangle",
@@ -102038,7 +102038,7 @@
             "containerId": null,
             "originalText": "Migration Hub",
             "lineHeight": 1.2,
-            "baseline": 17
+            "baseline": 16
           },
           {
             "type": "rectangle",
@@ -102824,7 +102824,7 @@
             "containerId": null,
             "originalText": "Server Migration\nService",
             "lineHeight": 1.2,
-            "baseline": 41
+            "baseline": 40
           },
           {
             "type": "rectangle",
@@ -103332,7 +103332,7 @@
             "containerId": null,
             "originalText": "Application \nMigration Service",
             "lineHeight": 1.2,
-            "baseline": 41
+            "baseline": 40
           },
           {
             "type": "rectangle",
@@ -103749,7 +103749,7 @@
             "containerId": null,
             "originalText": "Migration\nEvaluator",
             "lineHeight": 1.2,
-            "baseline": 41
+            "baseline": 40
           },
           {
             "type": "rectangle",
@@ -104556,7 +104556,7 @@
             "containerId": null,
             "originalText": "Transit Gateway",
             "lineHeight": 1.2,
-            "baseline": 17
+            "baseline": 16
           }
         ],
         "id": "nnoQKwi46w8yy_IKAU189",
@@ -105227,7 +105227,7 @@
             "containerId": null,
             "originalText": "CloudFront",
             "lineHeight": 1.2,
-            "baseline": 17
+            "baseline": 16
           }
         ],
         "id": "3dru4ej0u2wXAB1wTOvx0",
@@ -105274,7 +105274,7 @@
             "containerId": null,
             "originalText": "Route 53",
             "lineHeight": 1.2,
-            "baseline": 17
+            "baseline": 16
           },
           {
             "type": "rectangle",
@@ -105347,7 +105347,7 @@
             "containerId": null,
             "originalText": "53",
             "lineHeight": 1.1922008740688725,
-            "baseline": 16
+            "baseline": 15
           },
           {
             "type": "line",
@@ -105890,7 +105890,7 @@
             "containerId": null,
             "originalText": "VPC",
             "lineHeight": 1.2,
-            "baseline": 17
+            "baseline": 16
           },
           {
             "type": "rectangle",
@@ -106774,7 +106774,7 @@
             "containerId": null,
             "originalText": "Peering connection",
             "lineHeight": 1.2,
-            "baseline": 17
+            "baseline": 16
           }
         ],
         "id": "SfdybkytAyUkcaPA3vnBA",
@@ -106821,7 +106821,7 @@
             "containerId": null,
             "originalText": "Internet gateway",
             "lineHeight": 1.2,
-            "baseline": 17
+            "baseline": 16
           },
           {
             "type": "ellipse",
@@ -107114,7 +107114,7 @@
             "containerId": null,
             "originalText": "NAT gateway",
             "lineHeight": 1.2,
-            "baseline": 17
+            "baseline": 16
           },
           {
             "type": "ellipse",
@@ -107731,7 +107731,7 @@
             "containerId": null,
             "originalText": "VPN gateway",
             "lineHeight": 1.2,
-            "baseline": 17
+            "baseline": 16
           }
         ],
         "id": "2QgMXS9vqX86ISSAZtCws",
@@ -107778,7 +107778,7 @@
             "containerId": null,
             "originalText": "NACL",
             "lineHeight": 1.2,
-            "baseline": 17
+            "baseline": 16
           },
           {
             "type": "ellipse",
@@ -108476,7 +108476,7 @@
             "containerId": null,
             "originalText": "ELB",
             "lineHeight": 1.2,
-            "baseline": 17
+            "baseline": 16
           }
         ],
         "id": "zKnulndsXYsX_i6zY_wsA",
@@ -108913,7 +108913,7 @@
             "containerId": null,
             "originalText": "ALB",
             "lineHeight": 1.2,
-            "baseline": 17
+            "baseline": 16
           }
         ],
         "id": "i-z1AuczN55ftD84tohRC",
@@ -108960,7 +108960,7 @@
             "containerId": null,
             "originalText": "NLB",
             "lineHeight": 1.2,
-            "baseline": 17
+            "baseline": 16
           },
           {
             "type": "ellipse",
@@ -109362,7 +109362,7 @@
             "containerId": null,
             "originalText": "Direct Connect",
             "lineHeight": 1.2,
-            "baseline": 17
+            "baseline": 16
           },
           {
             "type": "rectangle",
@@ -109947,7 +109947,7 @@
             "containerId": null,
             "originalText": "PrivateLink",
             "lineHeight": 1.2,
-            "baseline": 17
+            "baseline": 16
           },
           {
             "type": "rectangle",
@@ -110323,7 +110323,7 @@
             "containerId": null,
             "originalText": "Client VPN",
             "lineHeight": 1.2,
-            "baseline": 17
+            "baseline": 16
           },
           {
             "type": "rectangle",
@@ -110826,7 +110826,7 @@
             "containerId": null,
             "originalText": "Site-to-Site \nVPN",
             "lineHeight": 1.2,
-            "baseline": 41
+            "baseline": 40
           },
           {
             "type": "rectangle",
@@ -112388,7 +112388,7 @@
             "containerId": null,
             "originalText": "Global\nAccelerator",
             "lineHeight": 1.2,
-            "baseline": 41
+            "baseline": 40
           }
         ],
         "id": "veo8l3bRo6tU760j3CTMs",
@@ -112435,7 +112435,7 @@
             "containerId": null,
             "originalText": "Network Firewall",
             "lineHeight": 1.2,
-            "baseline": 17
+            "baseline": 16
           },
           {
             "type": "rectangle",
@@ -113369,7 +113369,7 @@
             "containerId": null,
             "originalText": "Cognito",
             "lineHeight": 1.2,
-            "baseline": 17
+            "baseline": 16
           }
         ],
         "id": "S_i9gpqOMpfrr49sJtCYp",
@@ -113416,7 +113416,7 @@
             "containerId": null,
             "originalText": "GuardDuty",
             "lineHeight": 1.2,
-            "baseline": 17
+            "baseline": 16
           },
           {
             "type": "rectangle",
@@ -114018,7 +114018,7 @@
             "containerId": null,
             "originalText": "Inspector",
             "lineHeight": 1.2,
-            "baseline": 17
+            "baseline": 16
           },
           {
             "type": "rectangle",
@@ -114486,7 +114486,7 @@
             "containerId": null,
             "originalText": "Macie",
             "lineHeight": 1.2,
-            "baseline": 17
+            "baseline": 16
           },
           {
             "type": "rectangle",
@@ -114638,7 +114638,7 @@
             "containerId": null,
             "originalText": "Artifact",
             "lineHeight": 1.2,
-            "baseline": 17
+            "baseline": 16
           },
           {
             "type": "rectangle",
@@ -115271,7 +115271,7 @@
             "containerId": null,
             "originalText": "Certificate \nManager",
             "lineHeight": 1.2,
-            "baseline": 41
+            "baseline": 40
           },
           {
             "type": "rectangle",
@@ -115722,7 +115722,7 @@
             "containerId": null,
             "originalText": "CloudHSM",
             "lineHeight": 1.2,
-            "baseline": 17
+            "baseline": 16
           },
           {
             "type": "rectangle",
@@ -116367,7 +116367,7 @@
             "containerId": null,
             "originalText": "Directory \nService",
             "lineHeight": 1.2,
-            "baseline": 41
+            "baseline": 40
           },
           {
             "type": "rectangle",
@@ -116989,7 +116989,7 @@
             "containerId": null,
             "originalText": "Firewall Manager",
             "lineHeight": 1.2,
-            "baseline": 17
+            "baseline": 16
           },
           {
             "type": "rectangle",
@@ -117698,7 +117698,7 @@
             "containerId": null,
             "originalText": "IAM",
             "lineHeight": 1.2,
-            "baseline": 17
+            "baseline": 16
           },
           {
             "type": "rectangle",
@@ -118311,7 +118311,7 @@
             "containerId": null,
             "originalText": "Single Sign-On",
             "lineHeight": 1.2,
-            "baseline": 17
+            "baseline": 16
           },
           {
             "type": "rectangle",
@@ -118784,7 +118784,7 @@
             "containerId": null,
             "originalText": "KMS",
             "lineHeight": 1.2,
-            "baseline": 17
+            "baseline": 16
           },
           {
             "type": "rectangle",
@@ -119390,7 +119390,7 @@
             "containerId": null,
             "originalText": "Secrets Manager",
             "lineHeight": 1.2,
-            "baseline": 17
+            "baseline": 16
           },
           {
             "type": "rectangle",
@@ -120387,7 +120387,7 @@
             "containerId": null,
             "originalText": "Security Hub",
             "lineHeight": 1.2,
-            "baseline": 17
+            "baseline": 16
           },
           {
             "type": "rectangle",
@@ -121187,7 +121187,7 @@
             "containerId": null,
             "originalText": "Shield",
             "lineHeight": 1.2,
-            "baseline": 17
+            "baseline": 16
           },
           {
             "type": "rectangle",
@@ -121705,7 +121705,7 @@
             "containerId": null,
             "originalText": "WAF",
             "lineHeight": 1.2,
-            "baseline": 17
+            "baseline": 16
           },
           {
             "type": "rectangle",
@@ -122646,7 +122646,7 @@
             "containerId": null,
             "originalText": "Detective",
             "lineHeight": 1.2,
-            "baseline": 17
+            "baseline": 16
           },
           {
             "type": "rectangle",
@@ -123250,7 +123250,7 @@
             "containerId": null,
             "originalText": "Resource Access\nManager",
             "lineHeight": 1.2,
-            "baseline": 41
+            "baseline": 40
           },
           {
             "type": "rectangle",
@@ -123811,7 +123811,7 @@
             "containerId": null,
             "originalText": "Audit Manager",
             "lineHeight": 1.2,
-            "baseline": 17
+            "baseline": 16
           },
           {
             "type": "rectangle",
@@ -124571,7 +124571,7 @@
             "containerId": null,
             "originalText": "EBS",
             "lineHeight": 1.2,
-            "baseline": 17
+            "baseline": 16
           },
           {
             "type": "line",
@@ -125137,7 +125137,7 @@
             "containerId": null,
             "originalText": "EFS",
             "lineHeight": 1.2,
-            "baseline": 17
+            "baseline": 16
           },
           {
             "type": "rectangle",
@@ -125843,7 +125843,7 @@
             "containerId": null,
             "originalText": "Storage \nGateway",
             "lineHeight": 1.2,
-            "baseline": 41
+            "baseline": 40
           },
           {
             "type": "rectangle",
@@ -126488,7 +126488,7 @@
             "containerId": null,
             "originalText": "S3 Bucket",
             "lineHeight": 1.2,
-            "baseline": 17
+            "baseline": 16
           }
         ],
         "id": "epEJ8CTUhuISZof-LdEKb",
@@ -126535,7 +126535,7 @@
             "containerId": null,
             "originalText": "FSx",
             "lineHeight": 1.2,
-            "baseline": 17
+            "baseline": 16
           },
           {
             "type": "rectangle",
@@ -126659,7 +126659,7 @@
             "containerId": null,
             "originalText": "Backup",
             "lineHeight": 1.2,
-            "baseline": 17
+            "baseline": 16
           },
           {
             "type": "rectangle",
@@ -127473,7 +127473,7 @@
             "containerId": null,
             "originalText": "AWS account",
             "lineHeight": 1.25,
-            "baseline": 18
+            "baseline": 16
           },
           {
             "type": "rectangle",
@@ -127725,7 +127725,7 @@
             "containerId": null,
             "originalText": "Region",
             "lineHeight": 1.25,
-            "baseline": 18
+            "baseline": 16
           },
           {
             "type": "rectangle",
@@ -128229,7 +128229,7 @@
             "containerId": null,
             "originalText": "Auto Scaling group",
             "lineHeight": 1.2,
-            "baseline": 17
+            "baseline": 16
           }
         ],
         "id": "2R1XM0a75ZNPH66PIkZuD",
@@ -128922,7 +128922,7 @@
             "containerId": null,
             "originalText": "AWS Step Functions \nWorkflow",
             "lineHeight": 1.2,
-            "baseline": 41
+            "baseline": 40
           }
         ],
         "id": "SpGsUau-Ht9W0R6LUcefU",
@@ -129308,7 +129308,7 @@
             "containerId": null,
             "originalText": "EMPNO",
             "lineHeight": 1.2500000000000002,
-            "baseline": 6
+            "baseline": 5
           },
           {
             "type": "text",
@@ -129349,7 +129349,7 @@
             "containerId": null,
             "originalText": "ENAME",
             "lineHeight": 1.2499999999999998,
-            "baseline": 6
+            "baseline": 5
           },
           {
             "type": "text",
@@ -129390,7 +129390,7 @@
             "containerId": null,
             "originalText": "SAL",
             "lineHeight": 1.2499999999999996,
-            "baseline": 6
+            "baseline": 5
           },
           {
             "type": "text",
@@ -129431,7 +129431,7 @@
             "containerId": null,
             "originalText": "SMITH\nALLEN\nWARD\nJONES\nMARTIN\nBLAKE\nCLARK\nSCOTT\nKING\nTURNER\nADAMS\nJAMES\nFORD\nMILLER",
             "lineHeight": 1.2500000000000004,
-            "baseline": 127
+            "baseline": 126
           },
           {
             "type": "text",
@@ -129472,7 +129472,7 @@
             "containerId": null,
             "originalText": "800\n1600\n1250\n2975\n1250\n2850\n2450\n3000\n5000\n1500\n1100\n950\n3000\n1300",
             "lineHeight": 1.25,
-            "baseline": 127
+            "baseline": 126
           },
           {
             "type": "text",
@@ -129513,7 +129513,7 @@
             "containerId": null,
             "originalText": "7369\n7499\n7521\n7566\n7654\n7698\n7782\n7788\n7839\n7844\n7876\n7900\n7902\n7934",
             "lineHeight": 1.2499999999999991,
-            "baseline": 127
+            "baseline": 126
           },
           {
             "type": "line",
@@ -129602,7 +129602,7 @@
             "containerId": null,
             "originalText": "DATA",
             "lineHeight": 1.25,
-            "baseline": 25
+            "baseline": 24
           },
           {
             "type": "line",
@@ -129788,7 +129788,7 @@
             "containerId": null,
             "originalText": "SYSTEM",
             "lineHeight": 1.25,
-            "baseline": 25
+            "baseline": 24
           },
           {
             "type": "line",
@@ -129974,7 +129974,7 @@
             "containerId": null,
             "originalText": "SYSAUX",
             "lineHeight": 1.25,
-            "baseline": 25
+            "baseline": 24
           },
           {
             "type": "line",
@@ -130160,7 +130160,7 @@
             "containerId": null,
             "originalText": "UNDO",
             "lineHeight": 1.25,
-            "baseline": 25
+            "baseline": 24
           },
           {
             "type": "line",
@@ -130346,7 +130346,7 @@
             "containerId": null,
             "originalText": "SECRET",
             "lineHeight": 1.25,
-            "baseline": 25
+            "baseline": 24
           },
           {
             "type": "line",
@@ -130532,7 +130532,7 @@
             "containerId": null,
             "originalText": "TEMP",
             "lineHeight": 1.25,
-            "baseline": 25
+            "baseline": 24
           },
           {
             "type": "line",
@@ -131023,7 +131023,7 @@
             "containerId": null,
             "originalText": "EMPNO",
             "lineHeight": 1.2500000000000002,
-            "baseline": 6
+            "baseline": 5
           },
           {
             "type": "text",
@@ -131064,7 +131064,7 @@
             "containerId": null,
             "originalText": "ENAME",
             "lineHeight": 1.2499999999999998,
-            "baseline": 6
+            "baseline": 5
           },
           {
             "type": "text",
@@ -131105,7 +131105,7 @@
             "containerId": null,
             "originalText": "SAL",
             "lineHeight": 1.2499999999999998,
-            "baseline": 6
+            "baseline": 5
           },
           {
             "type": "text",
@@ -131146,7 +131146,7 @@
             "containerId": null,
             "originalText": "SMITH\nALLEN\nWARD\nJONES\nMARTIN\nBLAKE\nCLARK\nSCOTT\nKING\nTURNER\nADAMS\nJAMES\nFORD\nMILLER",
             "lineHeight": 1.2500000000000002,
-            "baseline": 126
+            "baseline": 125
           },
           {
             "type": "text",
@@ -131187,7 +131187,7 @@
             "containerId": null,
             "originalText": "800\n1600\n1250\n2975\n1250\n2850\n2450\n3000\n5000\n1500\n1100\n950\n3000\n1300",
             "lineHeight": 1.2499999999999998,
-            "baseline": 126
+            "baseline": 125
           },
           {
             "type": "text",
@@ -131228,7 +131228,7 @@
             "containerId": null,
             "originalText": "7369\n7499\n7521\n7566\n7654\n7698\n7782\n7788\n7839\n7844\n7876\n7900\n7902\n7934",
             "lineHeight": 1.2499999999999993,
-            "baseline": 126
+            "baseline": 125
           },
           {
             "type": "line",
@@ -131502,7 +131502,7 @@
             "containerId": null,
             "originalText": "Database",
             "lineHeight": 1.25,
-            "baseline": 18
+            "baseline": 16
           }
         ],
         "id": "6TtULe5tEHVmPnmq2_fcU",
@@ -131690,7 +131690,7 @@
             "containerId": null,
             "originalText": "Database",
             "lineHeight": 1.25,
-            "baseline": 18
+            "baseline": 16
           }
         ],
         "id": "6mFeiRe8JMwNkR2FjHNS2",
@@ -131878,7 +131878,7 @@
             "containerId": null,
             "originalText": "Database",
             "lineHeight": 1.25,
-            "baseline": 18
+            "baseline": 16
           }
         ],
         "id": "nAXb00GS2eNGeu-mhJ6Df",
@@ -132066,7 +132066,7 @@
             "containerId": null,
             "originalText": "Database",
             "lineHeight": 1.25,
-            "baseline": 18
+            "baseline": 16
           }
         ],
         "id": "UNaNtdoq4uIdBL4wIpl4U",
@@ -132647,7 +132647,7 @@
             "containerId": null,
             "originalText": "EMPNO",
             "lineHeight": 1.2500000000000004,
-            "baseline": 15
+            "baseline": 14
           },
           {
             "type": "text",
@@ -132688,7 +132688,7 @@
             "containerId": null,
             "originalText": "ENAME",
             "lineHeight": 1.2500000000000002,
-            "baseline": 15
+            "baseline": 14
           },
           {
             "type": "text",
@@ -132729,7 +132729,7 @@
             "containerId": null,
             "originalText": "SAL",
             "lineHeight": 1.2500000000000002,
-            "baseline": 15
+            "baseline": 14
           },
           {
             "type": "text",
@@ -133277,7 +133277,7 @@
             "containerId": null,
             "originalText": "Oracle\nDirectory",
             "lineHeight": 1.25,
-            "baseline": 43
+            "baseline": 41
           }
         ],
         "id": "Nw1lSA7HuM7h9uThcz_fr",
@@ -133654,7 +133654,7 @@
             "containerId": null,
             "originalText": "OpenLDAP\nDirectory",
             "lineHeight": 1.25,
-            "baseline": 43
+            "baseline": 41
           }
         ],
         "id": "SO-DP4tCwh3hfpMe2XfXQ",
@@ -134031,7 +134031,7 @@
             "containerId": null,
             "originalText": "Active\nDirectory",
             "lineHeight": 1.25,
-            "baseline": 43
+            "baseline": 41
           }
         ],
         "id": "eu94XG7ZAg73eFouTRqHw",
@@ -134077,7 +134077,7 @@
             "containerId": null,
             "originalText": "SYSTEM",
             "lineHeight": 1.25,
-            "baseline": 25
+            "baseline": 24
           },
           {
             "type": "line",
@@ -134264,7 +134264,7 @@
             "containerId": null,
             "originalText": "TEMP",
             "lineHeight": 1.25,
-            "baseline": 25
+            "baseline": 24
           },
           {
             "type": "line",
@@ -134451,7 +134451,7 @@
             "containerId": null,
             "originalText": "DATA",
             "lineHeight": 1.25,
-            "baseline": 25
+            "baseline": 24
           },
           {
             "type": "line",
@@ -134638,7 +134638,7 @@
             "containerId": null,
             "originalText": "SECRET",
             "lineHeight": 1.25,
-            "baseline": 25
+            "baseline": 24
           },
           {
             "type": "line",
@@ -134995,7 +134995,7 @@
             "containerId": null,
             "originalText": "Load\nBalancer",
             "lineHeight": 1.25,
-            "baseline": 43
+            "baseline": 41
           }
         ],
         "id": "DRbLXiDwggAabXjgq-2YL",
@@ -136965,7 +136965,7 @@
             "containerId": null,
             "originalText": "Firewall",
             "lineHeight": 1.25,
-            "baseline": 18
+            "baseline": 16
           }
         ],
         "id": "DH-3IhzsnhEeiY2lNjESE",
@@ -139893,7 +139893,7 @@
             "containerId": null,
             "originalText": "Server",
             "lineHeight": 1.25,
-            "baseline": 18
+            "baseline": 16
           }
         ],
         "id": "uzdSTiKzeyQLv03Hp5Ir9",
@@ -140759,7 +140759,7 @@
             "containerId": null,
             "originalText": "Server",
             "lineHeight": 1.25,
-            "baseline": 18
+            "baseline": 16
           },
           {
             "type": "rectangle",
@@ -140829,7 +140829,7 @@
             "containerId": null,
             "originalText": "host",
             "lineHeight": 1.25,
-            "baseline": 18
+            "baseline": 16
           },
           {
             "type": "rectangle",
@@ -141452,7 +141452,7 @@
             "containerId": null,
             "originalText": "Bastion Host",
             "lineHeight": 1.25,
-            "baseline": 18
+            "baseline": 16
           },
           {
             "type": "rectangle",
@@ -141520,7 +141520,7 @@
             "containerId": null,
             "originalText": "jumphost",
             "lineHeight": 1.25,
-            "baseline": 18
+            "baseline": 16
           },
           {
             "type": "rectangle",
@@ -144332,7 +144332,7 @@
             "containerId": null,
             "originalText": "Database\nServer",
             "lineHeight": 1.25,
-            "baseline": 43
+            "baseline": 41
           },
           {
             "type": "rectangle",
@@ -144402,7 +144402,7 @@
             "containerId": null,
             "originalText": "db19",
             "lineHeight": 1.25,
-            "baseline": 18
+            "baseline": 16
           },
           {
             "type": "rectangle",
@@ -145205,7 +145205,7 @@
             "containerId": null,
             "originalText": "Oracle Unified\nDirectory",
             "lineHeight": 1.25,
-            "baseline": 43
+            "baseline": 41
           },
           {
             "type": "rectangle",
@@ -145275,7 +145275,7 @@
             "containerId": null,
             "originalText": "oud",
             "lineHeight": 1.25,
-            "baseline": 18
+            "baseline": 16
           },
           {
             "type": "rectangle",
@@ -146686,7 +146686,7 @@
             "containerId": null,
             "originalText": "MS Active\nDirectory",
             "lineHeight": 1.25,
-            "baseline": 43
+            "baseline": 41
           },
           {
             "type": "rectangle",
@@ -146756,7 +146756,7 @@
             "containerId": null,
             "originalText": "winad",
             "lineHeight": 1.25,
-            "baseline": 18
+            "baseline": 16
           },
           {
             "type": "rectangle",
@@ -148183,7 +148183,7 @@
             "containerId": null,
             "originalText": "Oracle OEM\nRepository",
             "lineHeight": 1.25,
-            "baseline": 43
+            "baseline": 41
           },
           {
             "type": "rectangle",
@@ -148253,7 +148253,7 @@
             "containerId": null,
             "originalText": "oem2",
             "lineHeight": 1.25,
-            "baseline": 18
+            "baseline": 16
           },
           {
             "type": "rectangle",
@@ -149017,7 +149017,7 @@
             "containerId": null,
             "originalText": "Oracle OEM\nConsole",
             "lineHeight": 1.25,
-            "baseline": 43
+            "baseline": 41
           },
           {
             "type": "rectangle",
@@ -149087,7 +149087,7 @@
             "containerId": null,
             "originalText": "oem1",
             "lineHeight": 1.25,
-            "baseline": 18
+            "baseline": 16
           },
           {
             "type": "rectangle",
@@ -150249,7 +150249,7 @@
             "containerId": null,
             "originalText": "Windows\nWorkstation",
             "lineHeight": 1.25,
-            "baseline": 43
+            "baseline": 41
           },
           {
             "type": "rectangle",
@@ -150319,7 +150319,7 @@
             "containerId": null,
             "originalText": "win",
             "lineHeight": 1.25,
-            "baseline": 18
+            "baseline": 16
           },
           {
             "type": "rectangle",
@@ -153671,7 +153671,7 @@
             "containerId": null,
             "originalText": "TDE Master\nEncryption Key",
             "lineHeight": 1.25,
-            "baseline": 60
+            "baseline": 59
           },
           {
             "type": "text",
@@ -153825,7 +153825,7 @@
             "containerId": null,
             "originalText": "TDE Tablespace\nEncryption Key",
             "lineHeight": 1.25,
-            "baseline": 60
+            "baseline": 59
           },
           {
             "type": "text",
@@ -154350,7 +154350,7 @@
             "containerId": null,
             "originalText": "TDE Table\nEncryption Key",
             "lineHeight": 1.25,
-            "baseline": 60
+            "baseline": 59
           },
           {
             "type": "text",
@@ -155481,7 +155481,7 @@
             "containerId": null,
             "originalText": "SMITH\nALLEN\nWARD\nJONES\nMARTIN\nBLAKE\nCLARK\nSCOTT\nKING\nTURNER\nADAMS\nJAMES\nFORD\nMILLER",
             "lineHeight": 1.342857142857081,
-            "baseline": 98
+            "baseline": 97
           },
           {
             "type": "text",
@@ -155524,7 +155524,7 @@
             "containerId": null,
             "originalText": "800\n1600\n1250\n2975\n1250\n2850\n2450\n3000\n5000\n1500\n1100\n950\n3000\n1300",
             "lineHeight": 1.2499999999999996,
-            "baseline": 90
+            "baseline": 91
           },
           {
             "type": "text",
@@ -155567,7 +155567,7 @@
             "containerId": null,
             "originalText": "7369\n7499\n7521\n7566\n7654\n7698\n7782\n7788\n7839\n7844\n7876\n7900\n7902\n7934",
             "lineHeight": 1.2499999999999996,
-            "baseline": 90
+            "baseline": 91
           },
           {
             "type": "line",
@@ -164487,7 +164487,7 @@
             "containerId": null,
             "originalText": "K",
             "lineHeight": 1.1500000000000015,
-            "baseline": 111
+            "baseline": 112
           },
           {
             "type": "text",
@@ -164526,7 +164526,7 @@
             "containerId": null,
             "originalText": "n",
             "lineHeight": 1.1448423826039782,
-            "baseline": 71
+            "baseline": 72
           }
         ],
         "id": "Uady2ndgY8iOYi9R1aDqH",
@@ -167532,7 +167532,7 @@
             "containerId": null,
             "originalText": "Steps",
             "lineHeight": 1.2582208437337228,
-            "baseline": 13
+            "baseline": 12
           },
           {
             "type": "text",
@@ -167573,7 +167573,7 @@
             "containerId": null,
             "originalText": "👣",
             "lineHeight": 1.3538755729626375,
-            "baseline": 30
+            "baseline": 31
           },
           {
             "type": "line",
@@ -168187,7 +168187,7 @@
             "containerId": null,
             "originalText": "Intro",
             "lineHeight": 1.221897300043603,
-            "baseline": 7
+            "baseline": 8
           },
           {
             "type": "text",
@@ -169183,7 +169183,7 @@
             "containerId": null,
             "originalText": "x",
             "lineHeight": 1.21693603065231,
-            "baseline": 6
+            "baseline": 7
           },
           {
             "type": "ellipse",
@@ -169253,7 +169253,7 @@
             "containerId": null,
             "originalText": "y",
             "lineHeight": 1.21693603065231,
-            "baseline": 6
+            "baseline": 7
           },
           {
             "type": "text",
@@ -169617,7 +169617,7 @@
             "containerId": null,
             "originalText": "___ __\n____ ___ ____\n______________\n_______ _____\n_ __ _ __...",
             "lineHeight": 1.2235540052949927,
-            "baseline": 47
+            "baseline": 46
           },
           {
             "type": "rectangle",
@@ -170461,7 +170461,7 @@
             "containerId": null,
             "originalText": "Flow",
             "lineHeight": 1.2582208437337228,
-            "baseline": 13
+            "baseline": 12
           },
           {
             "type": "text",
@@ -170502,7 +170502,7 @@
             "containerId": null,
             "originalText": "🌊",
             "lineHeight": 1.3538755729626375,
-            "baseline": 30
+            "baseline": 31
           },
           {
             "type": "rectangle",
@@ -171186,7 +171186,7 @@
             "containerId": null,
             "originalText": "<-",
             "lineHeight": 1.1875,
-            "baseline": 25
+            "baseline": 24
           },
           {
             "type": "text",
@@ -171226,7 +171226,7 @@
             "containerId": null,
             "originalText": "<-",
             "lineHeight": 1.1875,
-            "baseline": 25
+            "baseline": 24
           },
           {
             "type": "rectangle",
@@ -171332,7 +171332,7 @@
             "containerId": null,
             "originalText": "1",
             "lineHeight": 1.2661130292467424,
-            "baseline": 17
+            "baseline": 16
           },
           {
             "type": "text",
@@ -171374,7 +171374,7 @@
             "containerId": null,
             "originalText": "Separator",
             "lineHeight": 1.2777777777777772,
-            "baseline": 10
+            "baseline": 11
           }
         ],
         "id": "wSyIJHzt44zD3aQ3fCUH_",
@@ -171461,7 +171461,7 @@
             "containerId": null,
             "originalText": "Please, jump in anytime",
             "lineHeight": 1.2422353349951198,
-            "baseline": 15
+            "baseline": 14
           },
           {
             "type": "rectangle",
@@ -172429,7 +172429,7 @@
             "containerId": null,
             "originalText": "〈〉",
             "lineHeight": 1.4166666666666665,
-            "baseline": 17
+            "baseline": 18
           },
           {
             "type": "rectangle",
@@ -172497,7 +172497,7 @@
             "containerId": null,
             "originalText": "〈〉",
             "lineHeight": 1.4166666666666665,
-            "baseline": 17
+            "baseline": 18
           },
           {
             "type": "text",
@@ -172903,7 +172903,7 @@
             "containerId": null,
             "originalText": "💭",
             "lineHeight": 1.3538755729626375,
-            "baseline": 30
+            "baseline": 31
           },
           {
             "type": "text",
@@ -172942,7 +172942,7 @@
             "containerId": null,
             "originalText": "✨",
             "lineHeight": 1.3538755729626375,
-            "baseline": 30
+            "baseline": 31
           },
           {
             "type": "line",
@@ -173293,7 +173293,7 @@
             "containerId": null,
             "originalText": "Now\n-----\n- MAU\n- QPS\n\n+5yrs\n-----\n",
             "lineHeight": 1.1796875,
-            "baseline": 146
+            "baseline": 147
           },
           {
             "type": "text",
@@ -173665,7 +173665,7 @@
             "containerId": null,
             "originalText": "〈〉",
             "lineHeight": 1.4166666666666665,
-            "baseline": 17
+            "baseline": 18
           },
           {
             "type": "text",
@@ -175185,7 +175185,7 @@
             "containerId": null,
             "originalText": "sends ___",
             "lineHeight": 1.25,
-            "baseline": 25
+            "baseline": 24
           },
           {
             "type": "text",
@@ -175222,7 +175222,7 @@
             "containerId": null,
             "originalText": "error ___",
             "lineHeight": 1.25,
-            "baseline": 25
+            "baseline": 24
           },
           {
             "type": "text",
@@ -175264,7 +175264,7 @@
             "containerId": null,
             "originalText": "success ___",
             "lineHeight": 1.25,
-            "baseline": 25
+            "baseline": 24
           },
           {
             "type": "arrow",
@@ -175643,7 +175643,7 @@
             "containerId": null,
             "originalText": "A",
             "lineHeight": 1.2674185406098053,
-            "baseline": 73
+            "baseline": 72
           }
         ],
         "id": "ADuQK2ZvIaaozHAuacoLy",
@@ -175965,7 +175965,7 @@
             "containerId": null,
             "originalText": "server",
             "lineHeight": 1.320687725575955,
-            "baseline": 18
+            "baseline": 19
           }
         ],
         "id": "TrgumWlT_exF45zFt5VnB",
@@ -176101,7 +176101,7 @@
             "containerId": null,
             "originalText": "Multi Instance",
             "lineHeight": 1.3218415496714844,
-            "baseline": 18
+            "baseline": 19
           }
         ],
         "id": "PkWePsXKRySjhNcRB5atP",
@@ -176999,7 +176999,7 @@
             "containerId": null,
             "originalText": "Object Storage",
             "lineHeight": 1.350000000000001,
-            "baseline": 16
+            "baseline": 15
           }
         ],
         "id": "Ea1-hrwXtP8fuVFbVYhGZ",
@@ -177905,7 +177905,7 @@
             "containerId": null,
             "originalText": "Cold Storage",
             "lineHeight": 1.3499999999999988,
-            "baseline": 16
+            "baseline": 15
           }
         ],
         "id": "AJNMy0AF6jqMtdkAGQDaa",
@@ -178187,7 +178187,7 @@
             "containerId": null,
             "originalText": "Document DB",
             "lineHeight": 1.4240667712990924,
-            "baseline": 17
+            "baseline": 18
           }
         ],
         "id": "v1QMmzfdFW8gSKy_OY7wE",
@@ -178233,7 +178233,7 @@
             "containerId": null,
             "originalText": "Columnar DB",
             "lineHeight": 1.3420772212688767,
-            "baseline": 16
+            "baseline": 15
           },
           {
             "type": "line",
@@ -181442,7 +181442,7 @@
             "containerId": null,
             "originalText": "DNS",
             "lineHeight": 1.2177715417832888,
-            "baseline": 25
+            "baseline": 24
           },
           {
             "type": "text",
@@ -181484,7 +181484,7 @@
             "containerId": null,
             "originalText": "www     127.0.0.1",
             "lineHeight": 1.0127659574468078,
-            "baseline": 8
+            "baseline": 9
           },
           {
             "type": "arrow",
@@ -182582,7 +182582,7 @@
             "containerId": null,
             "originalText": "Pipeline",
             "lineHeight": 1.2999999999999996,
-            "baseline": 21
+            "baseline": 22
           }
         ],
         "id": "LzJU1aqRnx0PhVsCXCWpU",
@@ -182935,7 +182935,7 @@
             "containerId": null,
             "originalText": "cloud",
             "lineHeight": 1.3499999999999974,
-            "baseline": 18
+            "baseline": 19
           }
         ],
         "id": "Z2dsFssnidungUYMOpYIJ",
@@ -184643,7 +184643,7 @@
             "containerId": null,
             "originalText": "Web Application",
             "lineHeight": 1.3499999999999985,
-            "baseline": 15
+            "baseline": 14
           },
           {
             "type": "rectangle",
@@ -185783,7 +185783,7 @@
             "containerId": null,
             "originalText": "step",
             "lineHeight": 1.2500000000000009,
-            "baseline": 12
+            "baseline": 13
           },
           {
             "type": "text",
@@ -185834,7 +185834,7 @@
             "containerId": null,
             "originalText": "step",
             "lineHeight": 1.2500000000000009,
-            "baseline": 12
+            "baseline": 13
           },
           {
             "type": "text",
@@ -185881,7 +185881,7 @@
             "containerId": null,
             "originalText": "step",
             "lineHeight": 1.2500000000000009,
-            "baseline": 12
+            "baseline": 13
           },
           {
             "type": "text",
@@ -185923,7 +185923,7 @@
             "containerId": null,
             "originalText": "s\nt\ne\np",
             "lineHeight": 1.1864406779661012,
-            "baseline": 39
+            "baseline": 38
           },
           {
             "type": "text",
@@ -185970,7 +185970,7 @@
             "containerId": null,
             "originalText": "s\nt\ne\np",
             "lineHeight": 1.1864406779661012,
-            "baseline": 39
+            "baseline": 38
           },
           {
             "type": "text",
@@ -186589,7 +186589,7 @@
             "containerId": null,
             "originalText": "Service",
             "lineHeight": 1.25,
-            "baseline": 18
+            "baseline": 16
           }
         ],
         "id": "BxoQIUJP2jgUq8ltnunY5",
@@ -186762,7 +186762,7 @@
             "containerId": null,
             "originalText": "cache",
             "lineHeight": 1.25,
-            "baseline": 18
+            "baseline": 16
           }
         ],
         "id": "_GROb0o_SA5Z8Pfja1W9m",
@@ -188275,7 +188275,7 @@
             "containerId": null,
             "originalText": "CDN",
             "lineHeight": 1.25,
-            "baseline": 18
+            "baseline": 16
           }
         ],
         "id": "pHLSgEyw0CDU7ZZFdaT0J",
@@ -189792,7 +189792,7 @@
             "containerId": null,
             "originalText": "CDN",
             "lineHeight": 1.25,
-            "baseline": 18
+            "baseline": 16
           }
         ],
         "created": 1691073675703,
@@ -190525,7 +190525,7 @@
             "containerId": "0UJXoC14CD_cHsE50d-kv",
             "originalText": "FCM",
             "lineHeight": 1.25,
-            "baseline": 18
+            "baseline": 16
           },
           {
             "type": "ellipse",
@@ -190606,7 +190606,7 @@
             "containerId": "nNMTeW881WMC6K-JG223q",
             "originalText": "APNS",
             "lineHeight": 1.25,
-            "baseline": 18
+            "baseline": 16
           },
           {
             "type": "diamond",
@@ -190780,7 +190780,7 @@
             "containerId": null,
             "originalText": "Cache",
             "lineHeight": 1.25,
-            "baseline": 18
+            "baseline": 16
           },
           {
             "type": "arrow",
@@ -192066,7 +192066,7 @@
             "containerId": null,
             "originalText": "Database",
             "lineHeight": 1.25,
-            "baseline": 18
+            "baseline": 16
           },
           {
             "type": "arrow",
@@ -192323,7 +192323,7 @@
             "containerId": null,
             "originalText": "Kafka",
             "lineHeight": 1.25,
-            "baseline": 18
+            "baseline": 16
           }
         ],
         "created": 1691073638284,
@@ -192424,7 +192424,7 @@
             "containerId": "LGkRWuPMF8ufIHaQsYzTG",
             "originalText": "API\nGateway",
             "lineHeight": 1.25,
-            "baseline": 43
+            "baseline": 41
           },
           {
             "type": "rectangle",
@@ -195104,7 +195104,7 @@
             "containerId": "uIZpQD_FGxkOgECue45wj",
             "originalText": "Apache Spark",
             "lineHeight": 1.25,
-            "baseline": 25
+            "baseline": 24
           },
           {
             "type": "text",
@@ -195145,7 +195145,7 @@
             "containerId": null,
             "originalText": "Cache",
             "lineHeight": 1.25,
-            "baseline": 18
+            "baseline": 16
           },
           {
             "type": "arrow",
@@ -195907,7 +195907,7 @@
             "containerId": null,
             "originalText": "Database",
             "lineHeight": 1.25,
-            "baseline": 18
+            "baseline": 16
           }
         ],
         "created": 1691071880917,
@@ -196606,7 +196606,7 @@
             "containerId": null,
             "originalText": "Database",
             "lineHeight": 1.25,
-            "baseline": 18
+            "baseline": 16
           }
         ],
         "created": 1691071806490,
@@ -196788,7 +196788,7 @@
             "containerId": null,
             "originalText": "Cache",
             "lineHeight": 1.25,
-            "baseline": 18
+            "baseline": 16
           },
           {
             "type": "arrow",
@@ -197958,7 +197958,7 @@
             "containerId": null,
             "originalText": "Database",
             "lineHeight": 1.25,
-            "baseline": 18
+            "baseline": 16
           },
           {
             "type": "rectangle",
@@ -201432,7 +201432,7 @@
             "containerId": null,
             "originalText": "Database",
             "lineHeight": 1.25,
-            "baseline": 18
+            "baseline": 16
           }
         ],
         "created": 1691070328336,
