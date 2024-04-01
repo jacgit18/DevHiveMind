@@ -129,5 +129,19 @@ In summary, while stateless architectures offer advantages in scalability and ma
 
 
 
+  In a monolithic architecture, the concepts of stateless and stateful architectures can still apply, but they might manifest differently compared to distributed systems. Here's a breakdown:  
   
+1. **Stateless Architecture in Monolithic Architecture:**  
+- In a stateless architecture within a monolithic project, each request to the application is treated independently, and the server does not retain any client data between requests.  
+- This means that the server does not store session information or any client-specific data beyond the duration of a single request-response cycle.  
+- In terms of your example with a controller, service, and data layer, in a stateless architecture, the controller would handle incoming requests, invoke services to process them, and interact with the data layer as needed. However, it wouldn't maintain any session-specific state.  
+- So, your assumption is correct that in a stateless architecture, you wouldn't typically store any values specific to a particular client session.  
+  
+2. **Stateful Architecture in Monolithic Architecture:**  
+- In a stateful architecture within a monolithic project, the server maintains client-specific state across multiple requests.  
+- This could involve storing session information, user authentication details, shopping cart contents, etc., on the server side.  
+- In your example, with a stateful architecture, the controller might interact with services and the data layer while also managing and updating session-specific data.  
+- So, in a stateful architecture, you might indeed store values specific to a particular client session.  
+  
+However, it's worth noting that in a monolithic architecture, the distinction between stateless and stateful can sometimes be less pronounced or may be handled differently compared to distributed systems. For instance, session management might rely on server-side session storage or database-backed session management, even in a stateless architecture, to maintain user sessions across requests.
 
