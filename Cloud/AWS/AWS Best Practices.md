@@ -24,6 +24,8 @@ Configure network settings to permit inbound HTTP traffic from the internet, ena
 
 ### Use Services like 
 
+![[AWS Services.png]]
+
 AWS Trusted Advisor service offers comprehensive insights into your AWS infrastructure, allowing you to assess and refine your setup against industry best practices. It enables evaluation across various facets including cost optimization, performance, security, fault tolerance, and adherence to service limits.
 
 
@@ -44,6 +46,7 @@ Instead of using the AWS Management Console user interface, consider leveraging 
 ### AWS Resource Management
 - **AWS Resource Tagging**: Assign metadata to AWS resources for organization and efficient spending analysis.
 - **AWS Organizations**: Consolidate billing and management across multiple AWS accounts for streamlined governance.
+- **Amazon Config:** is a service used to assess, audit, and evaluate the configurations of AWS resources. Amazon Config provides detailed histories of resource configs and helps Enterprise stay true to the compliance provided in their internal guidelines.
 
 ### AWS Infrastructure & Edge Locations
 - **AWS Regions and Availability Zones**: Specific geolocations with clusters of data centers. Currently, 30 launch regions and 96 availability zones globally.
@@ -58,8 +61,9 @@ However, for more complex container management needs, Amazon ECS provides a robu
 When utilizing these services, selecting a compute engine is essential. You can opt for Amazon EC2 for manual instance management or AWS Fargate, a serverless compute engine seamlessly integrated with container orchestration services. With Fargate, you eliminate the need for manual scaling and instance management, simplifying the deployment and operation of containerized applications.
 
 
+![[Cloud Services.gif]]
 
-
+![[Cloud Monitoring Services.jpeg]]
 
 
 

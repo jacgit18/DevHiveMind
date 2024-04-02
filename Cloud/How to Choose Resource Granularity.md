@@ -12,8 +12,6 @@ Relates:
 Peer Reviewed: 0
 dg-publish: false
 ---
-
-
 **Unlocking Cost Explorer's Capabilities:**
 - Resource granularity in AWS Cost Explorer provides insight into EC2 instances, enabling identification of specific cost-incurred resources.
 - Leverage time selection, filtering, and grouping features to focus on cost and usage details of specific workloads efficiently.
