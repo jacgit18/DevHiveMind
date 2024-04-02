@@ -28,3 +28,7 @@ Following CI, `AWS CodeDeploy` facilitates continuous deployment, providing an a
 Lastly, `AWS CodeStar` streamlines the development process by automating project setup and integration of various AWS services. It provides a unified user interface to manage code, CI/CD pipelines, and project resources. By leveraging CodeStar, teams can quickly start new projects and focus on building innovative solutions without worrying about infrastructure setup or configuration.
 
 In summary, while traditional version control platforms like GitHub remain popular, AWS offers a suite of integrated services like CodeCommit, CodeBuild, CodeDeploy, CodePipeline, and CodeStar that provide alternatives and streamline the software development lifecycle on the AWS cloud.
+
+
+
+But version control isn't just limited to Codebase it also used in database architecture were you maybe using certain  replication strategies to maintain data consistency and you have a lot of database transactions. 
