@@ -43,6 +43,9 @@ By doing this, we cleverly use Lefty and Righty to put the red balls on the left
 ==⚠  Switch to EXCALIDRAW VIEW in the MORE OPTIONS menu of this document. ⚠==
 
 
+# Code Section
+
+%%
 # Text Elements
 ```
 function sortArray(nums) {
@@ -105,7 +108,9 @@ function sortColors(nums) {
 
 Alt Logic ^00FajLwb
 
-%%
+# Element Links
+po2Rh2TQ: [[Algorithms & Data Structures/LeetCode Snippets/Leetcode 75.md#Code Section]]
+
 # Drawing
 ```json
 {
@@ -115,8 +120,8 @@ Alt Logic ^00FajLwb
 	"elements": [
 		{
 			"type": "text",
-			"version": 749,
-			"versionNonce": 932248368,
+			"version": 1021,
+			"versionNonce": 1980430128,
 			"isDeleted": false,
 			"id": "Q3C46MmA",
 			"fillStyle": "solid",
@@ -125,8 +130,8 @@ Alt Logic ^00FajLwb
 			"roughness": 1,
 			"opacity": 100,
 			"angle": 0,
-			"x": -796.4329822640618,
-			"y": -459.95640716607335,
+			"x": -485.663751494831,
+			"y": -583.0333302429963,
 			"strokeColor": "#1e1e1e",
 			"backgroundColor": "transparent",
 			"width": 565.0701293945312,
@@ -138,7 +143,7 @@ Alt Logic ^00FajLwb
 			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1712259235272,
+			"updated": 1712260528237,
 			"link": null,
 			"locked": false,
 			"fontSize": 10.477419354838714,
@@ -153,8 +158,8 @@ Alt Logic ^00FajLwb
 		},
 		{
 			"type": "text",
-			"version": 220,
-			"versionNonce": 1009390896,
+			"version": 492,
+			"versionNonce": 302289200,
 			"isDeleted": false,
 			"id": "5VD1f55W",
 			"fillStyle": "solid",
@@ -163,8 +168,8 @@ Alt Logic ^00FajLwb
 			"roughness": 1,
 			"opacity": 100,
 			"angle": 0,
-			"x": -580.3964543769151,
-			"y": -504.1321884160733,
+			"x": -269.6272236076843,
+			"y": -627.2091114929963,
 			"strokeColor": "#1e1e1e",
 			"backgroundColor": "transparent",
 			"width": 80.47991943359375,
@@ -176,7 +181,7 @@ Alt Logic ^00FajLwb
 			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1712259235272,
+			"updated": 1712260528237,
 			"link": null,
 			"locked": false,
 			"fontSize": 20,
@@ -191,8 +196,8 @@ Alt Logic ^00FajLwb
 		},
 		{
 			"type": "text",
-			"version": 379,
-			"versionNonce": 357562832,
+			"version": 491,
+			"versionNonce": 566603056,
 			"isDeleted": false,
 			"id": "I4eyAGwx",
 			"fillStyle": "solid",
@@ -201,8 +206,8 @@ Alt Logic ^00FajLwb
 			"roughness": 1,
 			"opacity": 100,
 			"angle": 0,
-			"x": -76.35543523400361,
-			"y": -545.6310775591309,
+			"x": 185.18302630445805,
+			"y": -710.2464621745155,
 			"strokeColor": "#1e1e1e",
 			"backgroundColor": "transparent",
 			"width": 1300.978759765625,
@@ -214,7 +219,7 @@ Alt Logic ^00FajLwb
 			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1712259311832,
+			"updated": 1712260526804,
 			"link": null,
 			"locked": false,
 			"fontSize": 20,
@@ -228,37 +233,37 @@ Alt Logic ^00FajLwb
 			"lineHeight": 1.25
 		},
 		{
-			"id": "00FajLwb",
 			"type": "text",
-			"x": 252.94132497993337,
-			"y": -614.6532676029867,
-			"width": 87.17991638183594,
-			"height": 25,
-			"angle": 0,
-			"strokeColor": "#1e1e1e",
-			"backgroundColor": "transparent",
+			"version": 238,
+			"versionNonce": 553158448,
+			"isDeleted": false,
+			"id": "00FajLwb",
 			"fillStyle": "solid",
 			"strokeWidth": 2,
 			"strokeStyle": "solid",
 			"roughness": 1,
 			"opacity": 100,
+			"angle": 0,
+			"x": 514.479786518395,
+			"y": -779.2686522183714,
+			"strokeColor": "#1e1e1e",
+			"backgroundColor": "transparent",
+			"width": 87.17991638183594,
+			"height": 25,
+			"seed": 2035558704,
 			"groupIds": [
 				"tJrhXg1ePmFMk5o2-cmlV"
 			],
 			"frameId": null,
 			"roundness": null,
-			"seed": 2035558704,
-			"version": 126,
-			"versionNonce": 315637712,
-			"isDeleted": false,
-			"boundElements": null,
-			"updated": 1712259311833,
+			"boundElements": [],
+			"updated": 1712260526804,
 			"link": null,
 			"locked": false,
-			"text": "Alt Logic",
-			"rawText": "Alt Logic",
 			"fontSize": 20,
 			"fontFamily": 1,
+			"text": "Alt Logic",
+			"rawText": "Alt Logic",
 			"textAlign": "left",
 			"verticalAlign": "top",
 			"containerId": null,
@@ -266,40 +271,48 @@ Alt Logic ^00FajLwb
 			"lineHeight": 1.25
 		},
 		{
-			"id": "GATL3kWY",
-			"type": "text",
-			"x": 160.63363267224133,
-			"y": -586.960959910679,
-			"width": 9.999984741210938,
-			"height": 25,
-			"angle": 0,
-			"strokeColor": "#1e1e1e",
-			"backgroundColor": "transparent",
-			"fillStyle": "solid",
-			"strokeWidth": 2,
+			"type": "embeddable",
+			"version": 56,
+			"versionNonce": 2025525040,
+			"isDeleted": false,
+			"id": "po2Rh2TQ",
+			"fillStyle": "hachure",
+			"strokeWidth": 1,
 			"strokeStyle": "solid",
 			"roughness": 1,
 			"opacity": 100,
+			"angle": 0,
+			"x": -160.9048288662202,
+			"y": -1276.8368841195202,
+			"strokeColor": "#000000",
+			"backgroundColor": "transparent",
+			"width": 400,
+			"height": 500,
+			"seed": 61174,
 			"groupIds": [],
 			"frameId": null,
 			"roundness": null,
-			"seed": 1062617392,
-			"version": 2,
-			"versionNonce": 1398271952,
-			"isDeleted": true,
-			"boundElements": null,
-			"updated": 1712259294709,
-			"link": null,
+			"boundElements": [],
+			"updated": 1712260790686,
+			"link": "[[Algorithms & Data Structures/LeetCode Snippets/Leetcode 75.md#Code Section]]",
 			"locked": false,
-			"text": "",
-			"rawText": "",
-			"fontSize": 20,
-			"fontFamily": 1,
-			"textAlign": "left",
-			"verticalAlign": "top",
-			"containerId": null,
-			"originalText": "",
-			"lineHeight": 1.25
+			"customData": {
+				"mdProps": {
+					"useObsidianDefaults": false,
+					"backgroundMatchCanvas": false,
+					"backgroundMatchElement": true,
+					"backgroundColor": "#fff",
+					"backgroundOpacity": 60,
+					"borderMatchElement": true,
+					"borderColor": "#fff",
+					"borderOpacity": 0,
+					"filenameVisible": false
+				}
+			},
+			"scale": [
+				1,
+				1
+			]
 		}
 	],
 	"appState": {
@@ -317,8 +330,8 @@ Alt Logic ^00FajLwb
 		"currentItemTextAlign": "left",
 		"currentItemStartArrowhead": null,
 		"currentItemEndArrowhead": "arrow",
-		"scrollX": 909.3663673277587,
-		"scrollY": 953.5715368337559,
+		"scrollX": 584.750982712374,
+		"scrollY": 1214.9859225810587,
 		"zoom": {
 			"value": 0.65
 		},
