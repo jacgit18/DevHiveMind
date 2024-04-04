@@ -10,6 +10,7 @@ Relates: "[[Cloud Storage#AWS Storage Gateway |AWS Storage Gateway]]"
 Peer Reviewed: 0
 dg-publish: true
 ---
+![[cloudOpt.png]]
 Here are some technologies and steps commonly used to set up and manage an on-premises private cloud:
 
 1. **Virtualization Technology**: Utilize virtualization software such as VMware vSphere, Microsoft Hyper-V, or KVM (Kernel-based Virtual Machine) to create virtual instances of servers, storage, and networking components.
@@ -27,6 +28,7 @@ Here are some technologies and steps commonly used to set up and manage an on-pr
 7. **Monitoring and Logging**: Set up monitoring and logging tools such as Prometheus, Grafana, ELK Stack (Elasticsearch, Logstash, Kibana), or VMware vRealize Operations to monitor the performance, availability, and security of the private cloud infrastructure and applications, enabling proactive troubleshooting and optimization.
 
 8. **Backup and Disaster Recovery**: Implement backup and disaster recovery solutions such as Veeam Backup & Replication, Commvault, or Rubrik to protect critical data and workloads within the private cloud environment, ensuring business continuity and data resilience in the event of unforeseen incidents.
+
 
 To achieve the setup of an on-premises private cloud, organizations typically follow these steps:
 
