@@ -275,6 +275,8 @@ beb88a937223c5cb69030dd35c828863fccfaf0d: [[Pasted Image 20240401091110_541.svg]
 1fdd9dc139459466d23e7c9c116486b45329843d: [[AWS Service Arch Example Two.png]]
 771414176e1fd0a7d30561e012f4b84d283adcaa: [[GetImage (11).png]]
 d149fa07d18dfe5949cd6a5cd51cd17343f74e52: [[GetImage (12).png]]
+644b7b1e21dc8120d7db5393f0af1e3673b6e0b3: [[GetImage (16).png]]
+77b9f22c4ea027b8e26da61273572f8275d46505: [[GetImage (15).png]]
 
 %%
 # Drawing
@@ -54923,6 +54925,68 @@ d149fa07d18dfe5949cd6a5cd51cd17343f74e52: [[GetImage (12).png]]
 				1,
 				1
 			]
+		},
+		{
+			"id": "UOgf0HZx",
+			"type": "image",
+			"x": 2077.5332045009095,
+			"y": -439.18254235619986,
+			"width": 863.7181303116147,
+			"height": 605.5461767626614,
+			"angle": 0,
+			"strokeColor": "transparent",
+			"backgroundColor": "transparent",
+			"fillStyle": "hachure",
+			"strokeWidth": 1,
+			"strokeStyle": "solid",
+			"roughness": 1,
+			"opacity": 100,
+			"roundness": null,
+			"seed": 61924,
+			"version": 107,
+			"versionNonce": 1890607060,
+			"updated": 1712239052557,
+			"isDeleted": false,
+			"groupIds": [],
+			"boundElements": [],
+			"link": null,
+			"locked": false,
+			"fileId": "644b7b1e21dc8120d7db5393f0af1e3673b6e0b3",
+			"scale": [
+				1,
+				1
+			]
+		},
+		{
+			"id": "ma4hsosq",
+			"type": "image",
+			"x": 1964.2525363775699,
+			"y": -887.5158756895332,
+			"width": 781.8340026773761,
+			"height": 342.1382542472173,
+			"angle": 0,
+			"strokeColor": "transparent",
+			"backgroundColor": "transparent",
+			"fillStyle": "hachure",
+			"strokeWidth": 1,
+			"strokeStyle": "solid",
+			"roughness": 1,
+			"opacity": 100,
+			"roundness": null,
+			"seed": 25586,
+			"version": 29,
+			"versionNonce": 1156298220,
+			"updated": 1712239062143,
+			"isDeleted": false,
+			"groupIds": [],
+			"boundElements": [],
+			"link": null,
+			"locked": false,
+			"fileId": "77b9f22c4ea027b8e26da61273572f8275d46505",
+			"scale": [
+				1,
+				1
+			]
 		}
 	],
 	"appState": {
@@ -54940,10 +55004,10 @@ d149fa07d18dfe5949cd6a5cd51cd17343f74e52: [[GetImage (12).png]]
 		"currentItemTextAlign": "left",
 		"currentItemStartArrowhead": null,
 		"currentItemEndArrowhead": "arrow",
-		"scrollX": 744.0203729700343,
-		"scrollY": -13.410463596178488,
+		"scrollX": 5132.851458551118,
+		"scrollY": 5101.523586728494,
 		"zoom": {
-			"value": 0.25
+			"value": 0.10000000000000002
 		},
 		"currentItemRoundness": "sharp",
 		"gridSize": null,

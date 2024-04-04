@@ -12,7 +12,9 @@ Peer Reviewed: 0
 dg-publish:
 ---
 ## Amazon EC2
+![[Ec2 lifecycle.png]]
 Amazon EC2 instance types offer a variety of options tailored to different use cases and requirements. These instance types provide varying combinations of processing power, memory, storage, and networking capabilities. It's crucial to select the appropriate instance type based on the specific workload and performance needs. This cannot be changed without first initiating downtime so you should be very careful when selecting instance types and launching them.
+
 
 Here are some common EC2 instance types and their use cases:
 
