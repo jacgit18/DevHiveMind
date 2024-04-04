@@ -69,12 +69,14 @@
     "#todo/med/dev/personal",
     "#todo/high/dev/personal",
     "#todo/personal/prompts",
-    "#todo/high/dev",
-    "#todo/low/dev",
     "#todo/personal/low/dev",
     "#todo/personal/high",
+    "#todo/personal/high/dev",
+    "#todo/personal/low",
+    "#todo/low/dev",
+    "#todo/high/dev",
     "#todo/med/dev",
-    "#todo/personal/high/dev"
+    "#todo/personal/med/dev"
   ],
   "_hiddenTags": []
 }
