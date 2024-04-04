@@ -13,7 +13,7 @@
             "state": {
               "type": "excalidraw",
               "state": {
-                "file": "Mind Maps/System Design Template.md"
+                "file": "Architecture/System Design/System Design Thought Process Flow.md"
               }
             }
           }
@@ -103,7 +103,7 @@
         "state": {
           "type": "backlink",
           "state": {
-            "file": "Mind Maps/System Design Template.md",
+            "file": "Architecture/System Design/System Design Thought Process Flow.md",
             "collapseAll": false,
             "extraContext": false,
             "sortOrder": "alphabetical",
@@ -120,7 +120,7 @@
         "state": {
           "type": "outgoing-link",
           "state": {
-            "file": "Mind Maps/System Design Template.md",
+            "file": "Architecture/System Design/System Design Thought Process Flow.md",
             "linksCollapsed": false,
             "unlinkedCollapsed": true
           }
@@ -132,7 +132,7 @@
         "state": {
           "type": "outline",
           "state": {
-            "file": "Mind Maps/System Design Template.md"
+            "file": "Architecture/System Design/System Design Thought Process Flow.md"
           }
         }
       },
@@ -213,6 +213,7 @@
   "active": "187f40793dfbf1d6",
   "lastOpenFiles": [
     "Home.md",
+    "Mind Maps/System Design Template.md",
     "_Pdf/Books/Interview/System Design Interview An Insider’s Guide.pdf",
     "Architecture/System Design/System Design Thought Process Flow.md",
     "_Pdf/Books/Architecture/System Analysis and Design Methods 7th.pdf"
