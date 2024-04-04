@@ -11,6 +11,7 @@ Relates:
 Peer Reviewed: 0
 dg-publish:
 ---
+![[S3.png]]
 ## Amazon S3
 
 a core service that serves as a robust storage solution for storing files as objects in buckets.
@@ -20,6 +21,8 @@ When you create a bucket in S3, you establish a unit of storage with configurabl
 One of the key features of Amazon S3 is its support for configurable rules for Data lifecycle management, aiding in governance and optimizing storage costs.
 
 S3 offers various storage classes to cater to different use cases. These include:
+
+![[S3 tiers.png]]
 
 - **S3 Standard**: Ideal for general-purpose storage needs.
 - **S3 Standard IA**: Designed for infrequently accessed data.
@@ -38,6 +41,7 @@ For storing and archiving data, Amazon S3 offers another service called S3 Glaci
 Amazon Elastic File System (EFS) is a fully managed file storage service designed for use with Linux-based operating systems. It has gained significant attention in the realm of networking due to its robust networking capabilities and seamless integration with AWS services. Here's a refined explanation:
 
 ## Amazon Elastic File System (EFS)
+![[efs.png]]
 Amazon EFS provides scalable, elastic file storage that can be accessed concurrently from multiple Amazon EC2 instances, making it an ideal choice for applications that require shared file storage in the cloud. Key features and benefits of Amazon EFS include:
 
 1. **Scalability**: EFS automatically scales storage capacity as you add files, ensuring that your storage grows seamlessly with your application's needs. This eliminates the need for manual capacity planning and provides cost-effective storage solutions.
@@ -84,6 +88,7 @@ In summary, AWS Storage Gateway empowers organizations to seamlessly integrate o
 
 
 ## Amazon Elastic Block Store
+![[block store.png]]
 Amazon Elastic Block Store (EBS) is a persistent block storage service provided by AWS, commonly used in conjunction with Amazon EC2 instances. Here's a refined explanation of its use case and benefits:
 
 ### Use Case:
