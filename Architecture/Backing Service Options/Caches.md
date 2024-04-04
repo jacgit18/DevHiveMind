@@ -14,6 +14,8 @@ Relates:
 Peer Reviewed: 0
 dg-publish:
 ---
+![[Cache 2.jpeg]]
+
 A cache functions as a temporary storage layer, providing faster access to frequently used data or computations compared to the original, slower storage location. It is utilized in various computing domains, such as web browsers, where it accelerates access to web pages or images during return visits, and CPUs, where it stores instructions and data near the processor, reducing program execution times. Caches aim to reduce access times and improve data retrieval speeds, thereby enhancing overall system performance. 
 
 
@@ -94,3 +96,5 @@ Eviction Policy:Once the cache is full, any requests to add items to the cache
 
 
 ![[Cache going wrong.gif]]
+
+![[Cache 1.jpeg]]
