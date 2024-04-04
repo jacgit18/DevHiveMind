@@ -24,7 +24,7 @@ dg-publish:
 ![[System design core concepts.gif]]
 For more info read 
 #todo/Personal/High/Dev  
-- [ ] [[System Design Interview An Insider’s Guide.pdf]] and [[System Design Interview - An Insider's Guide Second Edition|System Design notes]] on this book.
+- [ ] [[System Design Interview An Insider’s Guide.pdf]]
 - [ ] [[Designing Data-Intensive Applications The Big Ideas Behind Reliable, Scalable, and Maintainable Systems by Martin Kleppmann (z-lib.org).pdf |Designing Data-Intensive Applications]]
 - [ ] [[Software Architecture The Hard Parts Modern Trade-Off Analyses for Distributed Architectures (Neal Ford, Mark Richards, Pramod Sadalage etc.) (z-lib.org).pdf |Software Architecture The Hard Parts]]
 - [ ] [[Alex Petrov - Database Internals_ A Deep Dive into How Distributed Data Systems Work-O'Reilly Media (2019).pdf |Database Internals_ A Deep Dive into How Distributed Data Systems Work]]
@@ -34,6 +34,7 @@ For more info read
 - [ ] https://interviewnoodle.com/algorithms-you-need-to-know-before-you-take-that-systems-design-interview-671608d61741
 - [ ] https://www.workfall.com/learning/blog/how-to-set-up-an-aws-cloudfront-distribution-to-speed-up-content-delivery/
 - [ ] https://kasunprageethdissanayake.medium.com/tinder-fully-explained-system-design-and-architecture-1225ecdfe64e
+- [ ] https://www.outsystems.com/tech-hub/app-dev/technical-debt/#what-is-technical-debt
 - [ ] Refine and trim cloud notes not trying to document to many stuff just key details and relationships and stuff that may actually come up.
 
 Throughout the designing of the system you can discuss [[Fault Tolerance]] which refers to the system's resilience against failures, errors, or faults, ensuring uninterrupted operation and maintaining user experience by reducing system downtime. It encompasses proactive measures to handle failures gracefully and sustain availability. This principle applies universally across hardware, software, networks, and systems architecture. At its essence, fault tolerance anticipates failures as inevitable and seeks to minimize their impact through proactive strategies it also applies at and between each system component. 
