@@ -1,5 +1,7 @@
 ---
+excalidraw-plugin: parsed
 tags:
+  - excalidraw
   - codeSnippet
   - twoPointer
   - pattern
@@ -8,11 +10,12 @@ author:
   - chatgpt
 Purpose: This is a coded snippet
 Status: Done
-Started: 2024-03-03
-EditDate: 2024-03-03
-Relates: "[[Mind Maps/Leetcode 75|Leetcode 75]]"
+Started: 2024-03-03T00:00:00.000Z
+EditDate: 2024-03-03T00:00:00.000Z
+Relates: '[[Mind Maps/Leetcode 75|Leetcode 75]]'
 dg-publish: false
 ---
+
 ## Attempt
 ```javascript
 function sortArray(nums) {
@@ -97,3 +100,124 @@ Here's how we do it step by step:
 6. **Keep Going:** We repeat these steps until our finger (i) reaches the same spot as Righty. That means we've checked and organized all the balls.
 
 By doing this, we cleverly use Lefty and Righty to put the red balls on the left, green balls on the right, and blue balls in the middle, just like magic! And that's how we sort these colorful balls using a cool trick in our code.
+
+==⚠  Switch to EXCALIDRAW VIEW in the MORE OPTIONS menu of this document. ⚠==
+
+
+# Text Elements
+```
+function sortArray(nums) {
+    let left = 0;
+    let right = nums.length - 1;
+    let index = 0;
+
+    while (left < right) {
+        // Swap if left is greater than or equal to right
+        if (nums[left] >= nums[right]) {
+            [nums[left], nums[right]] = [nums[right], nums[left]];
+            right--;
+
+        } else if (nums[right] > nums[left]) { // This condition seems redundant due to the while loop's logic
+            left++;
+        }
+
+        // Additional swaps based on the index value
+        if (nums[index] > nums[left]) {
+            [nums[index], nums[left]] = [nums[left], nums[index]];
+        }
+
+        if (nums[index] > nums[right]) {
+            [nums[right], nums[index]] = [nums[index], nums[right]];
+        }
+
+        index++;
+    }
+}
+```
+
+ ^Q3C46MmA
+
+%%
+# Drawing
+```json
+{
+	"type": "excalidraw",
+	"version": 2,
+	"source": "https://github.com/zsviczian/obsidian-excalidraw-plugin/releases/tag/2.1.1",
+	"elements": [
+		{
+			"type": "text",
+			"version": 266,
+			"versionNonce": 1930262832,
+			"isDeleted": false,
+			"id": "Q3C46MmA",
+			"fillStyle": "solid",
+			"strokeWidth": 2,
+			"strokeStyle": "solid",
+			"roughness": 1,
+			"opacity": 100,
+			"angle": 0,
+			"x": -414.75,
+			"y": -456.8515625,
+			"strokeColor": "#1e1e1e",
+			"backgroundColor": "transparent",
+			"width": 565.0701293945312,
+			"height": 406.00000000000017,
+			"seed": 1068184016,
+			"groupIds": [],
+			"frameId": null,
+			"roundness": null,
+			"boundElements": [],
+			"updated": 1712258994962,
+			"link": null,
+			"locked": false,
+			"fontSize": 10.477419354838714,
+			"fontFamily": 1,
+			"text": "```\nfunction sortArray(nums) {\n    let left = 0;\n    let right = nums.length - 1;\n    let index = 0;\n\n    while (left < right) {\n        // Swap if left is greater than or equal to right\n        if (nums[left] >= nums[right]) {\n            [nums[left], nums[right]] = [nums[right], nums[left]];\n            right--;\n\n        } else if (nums[right] > nums[left]) { // This condition seems redundant due to the while loop's logic\n            left++;\n        }\n\n        // Additional swaps based on the index value\n        if (nums[index] > nums[left]) {\n            [nums[index], nums[left]] = [nums[left], nums[index]];\n        }\n\n        if (nums[index] > nums[right]) {\n            [nums[right], nums[index]] = [nums[index], nums[right]];\n        }\n\n        index++;\n    }\n}\n```\n\n",
+			"rawText": "```\nfunction sortArray(nums) {\n    let left = 0;\n    let right = nums.length - 1;\n    let index = 0;\n\n    while (left < right) {\n        // Swap if left is greater than or equal to right\n        if (nums[left] >= nums[right]) {\n            [nums[left], nums[right]] = [nums[right], nums[left]];\n            right--;\n\n        } else if (nums[right] > nums[left]) { // This condition seems redundant due to the while loop's logic\n            left++;\n        }\n\n        // Additional swaps based on the index value\n        if (nums[index] > nums[left]) {\n            [nums[index], nums[left]] = [nums[left], nums[index]];\n        }\n\n        if (nums[index] > nums[right]) {\n            [nums[right], nums[index]] = [nums[index], nums[right]];\n        }\n\n        index++;\n    }\n}\n```\n\n",
+			"textAlign": "left",
+			"verticalAlign": "top",
+			"containerId": null,
+			"originalText": "```\nfunction sortArray(nums) {\n    let left = 0;\n    let right = nums.length - 1;\n    let index = 0;\n\n    while (left < right) {\n        // Swap if left is greater than or equal to right\n        if (nums[left] >= nums[right]) {\n            [nums[left], nums[right]] = [nums[right], nums[left]];\n            right--;\n\n        } else if (nums[right] > nums[left]) { // This condition seems redundant due to the while loop's logic\n            left++;\n        }\n\n        // Additional swaps based on the index value\n        if (nums[index] > nums[left]) {\n            [nums[index], nums[left]] = [nums[left], nums[index]];\n        }\n\n        if (nums[index] > nums[right]) {\n            [nums[right], nums[index]] = [nums[index], nums[right]];\n        }\n\n        index++;\n    }\n}\n```\n\n",
+			"lineHeight": 1.25
+		}
+	],
+	"appState": {
+		"theme": "light",
+		"viewBackgroundColor": "#ffffff",
+		"currentItemStrokeColor": "#1e1e1e",
+		"currentItemBackgroundColor": "transparent",
+		"currentItemFillStyle": "solid",
+		"currentItemStrokeWidth": 2,
+		"currentItemStrokeStyle": "solid",
+		"currentItemRoughness": 1,
+		"currentItemOpacity": 100,
+		"currentItemFontFamily": 1,
+		"currentItemFontSize": 20,
+		"currentItemTextAlign": "left",
+		"currentItemStartArrowhead": null,
+		"currentItemEndArrowhead": "arrow",
+		"scrollX": 552.8399353027344,
+		"scrollY": 532.6757812499999,
+		"zoom": {
+			"value": 2
+		},
+		"currentItemRoundness": "round",
+		"gridSize": null,
+		"gridColor": {
+			"Bold": "#C9C9C9FF",
+			"Regular": "#EDEDEDFF"
+		},
+		"currentStrokeOptions": null,
+		"previousGridSize": null,
+		"frameRendering": {
+			"enabled": true,
+			"clip": true,
+			"name": true,
+			"outline": true
+		}
+	},
+	"files": {}
+}
+```
+%%

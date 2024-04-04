@@ -2949,49 +2949,12 @@ var require_simplepeer_min = __commonJS({
 // src/main.ts
 var main_exports = {};
 __export(main_exports, {
-  default: () => PeerDraftPlugin
+  default: () => main_default
 });
 module.exports = __toCommonJS(main_exports);
 
-// node_modules/monkey-around/mjs/index.js
-function around(obj, factories) {
-  const removers = Object.keys(factories).map((key) => around1(obj, key, factories[key]));
-  return removers.length === 1 ? removers[0] : function() {
-    removers.forEach((r) => r());
-  };
-}
-function around1(obj, method, createWrapper) {
-  const original = obj[method], hadOwn = obj.hasOwnProperty(method);
-  let current = createWrapper(original);
-  if (original)
-    Object.setPrototypeOf(current, original);
-  Object.setPrototypeOf(wrapper, current);
-  obj[method] = wrapper;
-  return remove;
-  function wrapper(...args2) {
-    if (current === original && obj[method] === wrapper)
-      remove();
-    return current.apply(this, args2);
-  }
-  function remove() {
-    if (obj[method] === wrapper) {
-      if (hadOwn)
-        obj[method] = original;
-      else
-        delete obj[method];
-    }
-    if (current === original)
-      return;
-    current = original;
-    Object.setPrototypeOf(wrapper, original || Function);
-  }
-}
-
-// src/main.ts
-var import_obsidian6 = require("obsidian");
-
-// src/cookie.ts
-var import_obsidian4 = require("obsidian");
+// src/peerdraftPlugin.ts
+var import_obsidian8 = require("obsidian");
 
 // src/settings.ts
 var import_obsidian3 = require("obsidian");
@@ -3047,58 +3010,6 @@ var showTextModal = (app, title, text2) => {
 var showNotice = (text2) => {
   new import_obsidian2.Notice(text2);
 };
-var EnterTextModal = class extends import_obsidian2.Modal {
-  constructor(app, inputDescriptions, cb) {
-    super(app);
-    this.inputDescriptions = inputDescriptions;
-    this.cb = cb;
-    this.result = inputDescriptions.map((description) => {
-      return {
-        name: description.name,
-        value: ""
-      };
-    });
-  }
-  async onOpen() {
-    for (let index = 0; index < this.inputDescriptions.length; index++) {
-      const description = this.inputDescriptions[index];
-      const setting = new import_obsidian2.Setting(this.contentEl);
-      setting.setName(description.name);
-      setting.setDesc(description.description);
-      setting.addText((text2) => {
-        text2.onChange((value) => {
-          this.result[index].value = value;
-        });
-      });
-    }
-    const buttons = new import_obsidian2.Setting(this.contentEl);
-    buttons.addButton((button) => {
-      button.setButtonText("Cancel");
-      button.onClick(() => {
-        this.close();
-        this.cb(this.result);
-      });
-    });
-    buttons.addButton((button) => {
-      button.setButtonText("Go");
-      button.setCta();
-      button.onClick(() => {
-        this.close();
-        this.cb(this.result);
-      });
-    });
-  }
-  onClose() {
-    this.cb(this.result);
-  }
-};
-var promptForMultipleTextInputs = async (app, inputDescriptions) => {
-  return new Promise((resolve2) => {
-    new EnterTextModal(app, inputDescriptions, (result) => {
-      resolve2(result);
-    }).open();
-  });
-};
 var openFileInNewTab = async (file, workspace) => {
   const leaf = workspace.getLeaf("tab");
   await leaf.openFile(file);
@@ -3106,17 +3017,28 @@ var openFileInNewTab = async (file, workspace) => {
 };
 var pinLeaf = (leaf) => {
   leaf.setPinned(true);
-  console.log(leaf);
   showNotice(`auto-pinned "${leaf.getDisplayText()}"`);
 };
+var usercolors = [
+  { dark: "#30bced", light: "#30bced33" },
+  { dark: "#6eeb83", light: "#6eeb8333" },
+  { dark: "#ffbc42", light: "#ffbc4233" },
+  { dark: "#ecd444", light: "#ecd44433" },
+  { dark: "#ee6352", light: "#ee635233" },
+  { dark: "#9ac2c9", light: "#9ac2c933" },
+  { dark: "#8acb88", light: "#8acb8833" },
+  { dark: "#1be7ff", light: "#1be7ff33" }
+];
 
 // src/settings.ts
 var DEFAULT_SETTINGS = {
   basePath: "https://www.peerdraft.app/cm/",
   subscriptionAPI: "https://www.peerdraft.app/subscription",
   connectAPI: "https://www.peerdraft.app/subscription/connect",
-  name: "",
+  sessionAPI: "https://www.peerdraft.app/session",
+  sync: "wss://www.peerdraft.app/sync",
   signaling: "wss://www.peerdraft.app/signal",
+  name: "",
   oid: createRandomId(),
   plan: {
     type: "hobby",
@@ -3126,9 +3048,19 @@ var DEFAULT_SETTINGS = {
   version: ""
 };
 var FORCE_SETTINGS = {
+  /*
+  basePath: "http://localhost:5173/cm/",
+  subscriptionAPI: "http://localhost:5173/subscription",
+  connectAPI: "http://localhost:5173/subscription/connect",
+  sessionAPI: "http://localhost:5173/session",
+  sync: "ws://localhost:5173/sync",
+  signaling: "ws://localhost:5173/signal",
+  */
   basePath: "https://www.peerdraft.app/cm/",
   subscriptionAPI: "https://www.peerdraft.app/subscription",
   connectAPI: "https://www.peerdraft.app/subscription/connect",
+  sessionAPI: "https://www.peerdraft.app/session",
+  sync: "wss://www.peerdraft.app/sync",
   signaling: "wss://www.peerdraft.app/signal"
 };
 var migrateSettings = async (plugin) => {
@@ -3147,6 +3079,7 @@ var getSettings = async (plugin) => {
 };
 var saveSettings = async (settings, plugin) => {
   await plugin.saveData(settings);
+  plugin.settings = settings;
 };
 var renderSettings = async (el, plugin) => {
   el.empty();
@@ -3184,7 +3117,6 @@ var renderSettings = async (el, plugin) => {
     }).addButton((button) => {
       button.setButtonText("Connect");
       button.onClick(async (e) => {
-        console.log("trying to get sub");
         const data = await (0, import_obsidian3.requestUrl)({
           url: settings.connectAPI,
           method: "POST",
@@ -3194,7 +3126,6 @@ var renderSettings = async (el, plugin) => {
             oid: settings.oid
           })
         }).json;
-        console.log(data);
         if (data && data.plan) {
           settings.plan = data.plan;
           saveSettings(settings, plugin), await renderSettings(el, plugin);
@@ -3232,49 +3163,6 @@ var createSettingsTab = (plugin) => {
     }
   }(plugin.app, plugin);
 };
-var createSettingsModal = (plugin) => {
-  return new class extends import_obsidian3.Modal {
-    async onOpen() {
-      const el = this.contentEl;
-      el.empty();
-      const settings = await getSettings(plugin);
-      el.createEl("h1", { text: "What's your name?" });
-      const setting = new import_obsidian3.Setting(el);
-      setting.setName("Name");
-      setting.setDesc("This name will be shown to your collaborators");
-      setting.addText((text2) => {
-        text2.setValue(settings.name);
-        text2.onChange(async (value) => {
-          settings.name = value;
-          await saveSettings(settings, plugin);
-        });
-      });
-    }
-    onClose() {
-      this.contentEl.empty();
-    }
-  }(plugin.app);
-};
-
-// src/cookie.ts
-var import_remote = require("@electron/remote");
-var prepareCommunication = async (plugin) => {
-  const settings = await getSettings(plugin);
-  if (import_obsidian4.Platform.isDesktopApp) {
-    await import_remote.session.defaultSession.cookies.set({ url: "https://www.peerdraft.app", "name": "oid", "value": settings.oid, "domain": "www.peerdraft.app", "path": "/", "secure": true, "httpOnly": true, "sameSite": "no_restriction" });
-  } else if (import_obsidian4.Platform.isMobileApp) {
-    const signalingURL = new URL(settings.signaling);
-    signalingURL.searchParams.append("oid", settings.oid);
-    settings.signaling = signalingURL.toString();
-    await saveSettings(settings, plugin);
-  }
-};
-
-// src/data.ts
-var syncedDocs = {};
-var syncObjects = {};
-var statusBars = {};
-var activeEditors = {};
 
 // node_modules/lib0/map.js
 var create = () => /* @__PURE__ */ new Map();
@@ -3285,10 +3173,10 @@ var copy = (m) => {
   });
   return r;
 };
-var setIfUndefined = (map2, key, createT) => {
-  let set = map2.get(key);
+var setIfUndefined = (map3, key, createT) => {
+  let set = map3.get(key);
   if (set === void 0) {
-    map2.set(key, set = createT());
+    map3.set(key, set = createT());
   }
   return set;
 };
@@ -3327,16 +3215,78 @@ var some = (arr, f) => {
   }
   return false;
 };
-var unfold = (len, f) => {
-  const array = new Array(len);
-  for (let i = 0; i < len; i++) {
-    array[i] = f(i, array);
-  }
-  return array;
-};
 var isArray = Array.isArray;
 
 // node_modules/lib0/observable.js
+var ObservableV2 = class {
+  constructor() {
+    this._observers = create();
+  }
+  /**
+   * @template {keyof EVENTS & string} NAME
+   * @param {NAME} name
+   * @param {EVENTS[NAME]} f
+   */
+  on(name, f) {
+    setIfUndefined(
+      this._observers,
+      /** @type {string} */
+      name,
+      create2
+    ).add(f);
+    return f;
+  }
+  /**
+   * @template {keyof EVENTS & string} NAME
+   * @param {NAME} name
+   * @param {EVENTS[NAME]} f
+   */
+  once(name, f) {
+    const _f = (...args2) => {
+      this.off(
+        name,
+        /** @type {any} */
+        _f
+      );
+      f(...args2);
+    };
+    this.on(
+      name,
+      /** @type {any} */
+      _f
+    );
+  }
+  /**
+   * @template {keyof EVENTS & string} NAME
+   * @param {NAME} name
+   * @param {EVENTS[NAME]} f
+   */
+  off(name, f) {
+    const observers = this._observers.get(name);
+    if (observers !== void 0) {
+      observers.delete(f);
+      if (observers.size === 0) {
+        this._observers.delete(name);
+      }
+    }
+  }
+  /**
+   * Emit a named event. All registered event listeners that listen to the
+   * specified name will receive the event.
+   *
+   * @todo This should catch exceptions
+   *
+   * @template {keyof EVENTS & string} NAME
+   * @param {NAME} name The event name.
+   * @param {Parameters<EVENTS[NAME]>} args The arguments that are applied to the event listener.
+   */
+  emit(name, args2) {
+    return from((this._observers.get(name) || create()).values()).forEach((f) => f(...args2));
+  }
+  destroy() {
+    this._observers = create();
+  }
+};
 var Observable = class {
   constructor() {
     this._observers = create();
@@ -3389,6 +3339,4844 @@ var Observable = class {
   }
 };
 
+// src/utils/peerdraftRecord.ts
+var PeerdraftRecord = class extends ObservableV2 {
+  constructor() {
+    super(...arguments);
+    this.record = {};
+  }
+  set(key, value) {
+    const oldValue = this.record[key];
+    this.record[key] = value;
+    if (oldValue === void 0) {
+      this.emit("add", [key, value]);
+    } else if (oldValue != value) {
+      this.emit("update", [key, oldValue, value]);
+    }
+  }
+  get(key) {
+    return this.record[key];
+  }
+  delete(key) {
+    const oldValue = this.record[key];
+    delete this.record[key];
+    this.emit("delete", [key, oldValue]);
+  }
+  get size() {
+    return Object.keys(this.record).length;
+  }
+  get keys() {
+    return Object.keys(this.record);
+  }
+};
+
+// node_modules/dexie/dist/modern/dexie.mjs
+var _global = typeof globalThis !== "undefined" ? globalThis : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : global;
+var keys = Object.keys;
+var isArray2 = Array.isArray;
+if (typeof Promise !== "undefined" && !_global.Promise) {
+  _global.Promise = Promise;
+}
+function extend(obj, extension) {
+  if (typeof extension !== "object")
+    return obj;
+  keys(extension).forEach(function(key) {
+    obj[key] = extension[key];
+  });
+  return obj;
+}
+var getProto = Object.getPrototypeOf;
+var _hasOwn = {}.hasOwnProperty;
+function hasOwn(obj, prop) {
+  return _hasOwn.call(obj, prop);
+}
+function props(proto, extension) {
+  if (typeof extension === "function")
+    extension = extension(getProto(proto));
+  (typeof Reflect === "undefined" ? keys : Reflect.ownKeys)(extension).forEach((key) => {
+    setProp(proto, key, extension[key]);
+  });
+}
+var defineProperty = Object.defineProperty;
+function setProp(obj, prop, functionOrGetSet, options) {
+  defineProperty(obj, prop, extend(functionOrGetSet && hasOwn(functionOrGetSet, "get") && typeof functionOrGetSet.get === "function" ? { get: functionOrGetSet.get, set: functionOrGetSet.set, configurable: true } : { value: functionOrGetSet, configurable: true, writable: true }, options));
+}
+function derive(Child) {
+  return {
+    from: function(Parent) {
+      Child.prototype = Object.create(Parent.prototype);
+      setProp(Child.prototype, "constructor", Child);
+      return {
+        extend: props.bind(null, Child.prototype)
+      };
+    }
+  };
+}
+var getOwnPropertyDescriptor = Object.getOwnPropertyDescriptor;
+function getPropertyDescriptor(obj, prop) {
+  const pd = getOwnPropertyDescriptor(obj, prop);
+  let proto;
+  return pd || (proto = getProto(obj)) && getPropertyDescriptor(proto, prop);
+}
+var _slice = [].slice;
+function slice(args2, start, end) {
+  return _slice.call(args2, start, end);
+}
+function override(origFunc, overridedFactory) {
+  return overridedFactory(origFunc);
+}
+function assert(b) {
+  if (!b)
+    throw new Error("Assertion Failed");
+}
+function asap$1(fn) {
+  if (_global.setImmediate)
+    setImmediate(fn);
+  else
+    setTimeout(fn, 0);
+}
+function arrayToObject(array, extractor) {
+  return array.reduce((result, item, i) => {
+    var nameAndValue = extractor(item, i);
+    if (nameAndValue)
+      result[nameAndValue[0]] = nameAndValue[1];
+    return result;
+  }, {});
+}
+function tryCatch(fn, onerror, args2) {
+  try {
+    fn.apply(null, args2);
+  } catch (ex) {
+    onerror && onerror(ex);
+  }
+}
+function getByKeyPath(obj, keyPath) {
+  if (typeof keyPath === "string" && hasOwn(obj, keyPath))
+    return obj[keyPath];
+  if (!keyPath)
+    return obj;
+  if (typeof keyPath !== "string") {
+    var rv = [];
+    for (var i = 0, l = keyPath.length; i < l; ++i) {
+      var val = getByKeyPath(obj, keyPath[i]);
+      rv.push(val);
+    }
+    return rv;
+  }
+  var period = keyPath.indexOf(".");
+  if (period !== -1) {
+    var innerObj = obj[keyPath.substr(0, period)];
+    return innerObj == null ? void 0 : getByKeyPath(innerObj, keyPath.substr(period + 1));
+  }
+  return void 0;
+}
+function setByKeyPath(obj, keyPath, value) {
+  if (!obj || keyPath === void 0)
+    return;
+  if ("isFrozen" in Object && Object.isFrozen(obj))
+    return;
+  if (typeof keyPath !== "string" && "length" in keyPath) {
+    assert(typeof value !== "string" && "length" in value);
+    for (var i = 0, l = keyPath.length; i < l; ++i) {
+      setByKeyPath(obj, keyPath[i], value[i]);
+    }
+  } else {
+    var period = keyPath.indexOf(".");
+    if (period !== -1) {
+      var currentKeyPath = keyPath.substr(0, period);
+      var remainingKeyPath = keyPath.substr(period + 1);
+      if (remainingKeyPath === "")
+        if (value === void 0) {
+          if (isArray2(obj) && !isNaN(parseInt(currentKeyPath)))
+            obj.splice(currentKeyPath, 1);
+          else
+            delete obj[currentKeyPath];
+        } else
+          obj[currentKeyPath] = value;
+      else {
+        var innerObj = obj[currentKeyPath];
+        if (!innerObj || !hasOwn(obj, currentKeyPath))
+          innerObj = obj[currentKeyPath] = {};
+        setByKeyPath(innerObj, remainingKeyPath, value);
+      }
+    } else {
+      if (value === void 0) {
+        if (isArray2(obj) && !isNaN(parseInt(keyPath)))
+          obj.splice(keyPath, 1);
+        else
+          delete obj[keyPath];
+      } else
+        obj[keyPath] = value;
+    }
+  }
+}
+function delByKeyPath(obj, keyPath) {
+  if (typeof keyPath === "string")
+    setByKeyPath(obj, keyPath, void 0);
+  else if ("length" in keyPath)
+    [].map.call(keyPath, function(kp) {
+      setByKeyPath(obj, kp, void 0);
+    });
+}
+function shallowClone(obj) {
+  var rv = {};
+  for (var m in obj) {
+    if (hasOwn(obj, m))
+      rv[m] = obj[m];
+  }
+  return rv;
+}
+var concat = [].concat;
+function flatten(a) {
+  return concat.apply([], a);
+}
+var intrinsicTypeNames = "BigUint64Array,BigInt64Array,Array,Boolean,String,Date,RegExp,Blob,File,FileList,FileSystemFileHandle,FileSystemDirectoryHandle,ArrayBuffer,DataView,Uint8ClampedArray,ImageBitmap,ImageData,Map,Set,CryptoKey".split(",").concat(flatten([8, 16, 32, 64].map((num) => ["Int", "Uint", "Float"].map((t) => t + num + "Array")))).filter((t) => _global[t]);
+var intrinsicTypes = intrinsicTypeNames.map((t) => _global[t]);
+arrayToObject(intrinsicTypeNames, (x) => [x, true]);
+var circularRefs = null;
+function deepClone(any2) {
+  circularRefs = typeof WeakMap !== "undefined" && /* @__PURE__ */ new WeakMap();
+  const rv = innerDeepClone(any2);
+  circularRefs = null;
+  return rv;
+}
+function innerDeepClone(any2) {
+  if (!any2 || typeof any2 !== "object")
+    return any2;
+  let rv = circularRefs && circularRefs.get(any2);
+  if (rv)
+    return rv;
+  if (isArray2(any2)) {
+    rv = [];
+    circularRefs && circularRefs.set(any2, rv);
+    for (var i = 0, l = any2.length; i < l; ++i) {
+      rv.push(innerDeepClone(any2[i]));
+    }
+  } else if (intrinsicTypes.indexOf(any2.constructor) >= 0) {
+    rv = any2;
+  } else {
+    const proto = getProto(any2);
+    rv = proto === Object.prototype ? {} : Object.create(proto);
+    circularRefs && circularRefs.set(any2, rv);
+    for (var prop in any2) {
+      if (hasOwn(any2, prop)) {
+        rv[prop] = innerDeepClone(any2[prop]);
+      }
+    }
+  }
+  return rv;
+}
+var { toString } = {};
+function toStringTag(o) {
+  return toString.call(o).slice(8, -1);
+}
+var iteratorSymbol = typeof Symbol !== "undefined" ? Symbol.iterator : "@@iterator";
+var getIteratorOf = typeof iteratorSymbol === "symbol" ? function(x) {
+  var i;
+  return x != null && (i = x[iteratorSymbol]) && i.apply(x);
+} : function() {
+  return null;
+};
+var NO_CHAR_ARRAY = {};
+function getArrayOf(arrayLike) {
+  var i, a, x, it;
+  if (arguments.length === 1) {
+    if (isArray2(arrayLike))
+      return arrayLike.slice();
+    if (this === NO_CHAR_ARRAY && typeof arrayLike === "string")
+      return [arrayLike];
+    if (it = getIteratorOf(arrayLike)) {
+      a = [];
+      while (x = it.next(), !x.done)
+        a.push(x.value);
+      return a;
+    }
+    if (arrayLike == null)
+      return [arrayLike];
+    i = arrayLike.length;
+    if (typeof i === "number") {
+      a = new Array(i);
+      while (i--)
+        a[i] = arrayLike[i];
+      return a;
+    }
+    return [arrayLike];
+  }
+  i = arguments.length;
+  a = new Array(i);
+  while (i--)
+    a[i] = arguments[i];
+  return a;
+}
+var isAsyncFunction = typeof Symbol !== "undefined" ? (fn) => fn[Symbol.toStringTag] === "AsyncFunction" : () => false;
+var debug = typeof location !== "undefined" && /^(http|https):\/\/(localhost|127\.0\.0\.1)/.test(location.href);
+function setDebug(value, filter) {
+  debug = value;
+  libraryFilter = filter;
+}
+var libraryFilter = () => true;
+var NEEDS_THROW_FOR_STACK = !new Error("").stack;
+function getErrorWithStack() {
+  if (NEEDS_THROW_FOR_STACK)
+    try {
+      getErrorWithStack.arguments;
+      throw new Error();
+    } catch (e) {
+      return e;
+    }
+  return new Error();
+}
+function prettyStack(exception, numIgnoredFrames) {
+  var stack = exception.stack;
+  if (!stack)
+    return "";
+  numIgnoredFrames = numIgnoredFrames || 0;
+  if (stack.indexOf(exception.name) === 0)
+    numIgnoredFrames += (exception.name + exception.message).split("\n").length;
+  return stack.split("\n").slice(numIgnoredFrames).filter(libraryFilter).map((frame) => "\n" + frame).join("");
+}
+var dexieErrorNames = [
+  "Modify",
+  "Bulk",
+  "OpenFailed",
+  "VersionChange",
+  "Schema",
+  "Upgrade",
+  "InvalidTable",
+  "MissingAPI",
+  "NoSuchDatabase",
+  "InvalidArgument",
+  "SubTransaction",
+  "Unsupported",
+  "Internal",
+  "DatabaseClosed",
+  "PrematureCommit",
+  "ForeignAwait"
+];
+var idbDomErrorNames = [
+  "Unknown",
+  "Constraint",
+  "Data",
+  "TransactionInactive",
+  "ReadOnly",
+  "Version",
+  "NotFound",
+  "InvalidState",
+  "InvalidAccess",
+  "Abort",
+  "Timeout",
+  "QuotaExceeded",
+  "Syntax",
+  "DataClone"
+];
+var errorList = dexieErrorNames.concat(idbDomErrorNames);
+var defaultTexts = {
+  VersionChanged: "Database version changed by other database connection",
+  DatabaseClosed: "Database has been closed",
+  Abort: "Transaction aborted",
+  TransactionInactive: "Transaction has already completed or failed",
+  MissingAPI: "IndexedDB API missing. Please visit https://tinyurl.com/y2uuvskb"
+};
+function DexieError(name, msg) {
+  this._e = getErrorWithStack();
+  this.name = name;
+  this.message = msg;
+}
+derive(DexieError).from(Error).extend({
+  stack: {
+    get: function() {
+      return this._stack || (this._stack = this.name + ": " + this.message + prettyStack(this._e, 2));
+    }
+  },
+  toString: function() {
+    return this.name + ": " + this.message;
+  }
+});
+function getMultiErrorMessage(msg, failures) {
+  return msg + ". Errors: " + Object.keys(failures).map((key) => failures[key].toString()).filter((v, i, s) => s.indexOf(v) === i).join("\n");
+}
+function ModifyError(msg, failures, successCount, failedKeys) {
+  this._e = getErrorWithStack();
+  this.failures = failures;
+  this.failedKeys = failedKeys;
+  this.successCount = successCount;
+  this.message = getMultiErrorMessage(msg, failures);
+}
+derive(ModifyError).from(DexieError);
+function BulkError(msg, failures) {
+  this._e = getErrorWithStack();
+  this.name = "BulkError";
+  this.failures = Object.keys(failures).map((pos) => failures[pos]);
+  this.failuresByPos = failures;
+  this.message = getMultiErrorMessage(msg, failures);
+}
+derive(BulkError).from(DexieError);
+var errnames = errorList.reduce((obj, name) => (obj[name] = name + "Error", obj), {});
+var BaseException = DexieError;
+var exceptions = errorList.reduce((obj, name) => {
+  var fullName = name + "Error";
+  function DexieError2(msgOrInner, inner) {
+    this._e = getErrorWithStack();
+    this.name = fullName;
+    if (!msgOrInner) {
+      this.message = defaultTexts[name] || fullName;
+      this.inner = null;
+    } else if (typeof msgOrInner === "string") {
+      this.message = `${msgOrInner}${!inner ? "" : "\n " + inner}`;
+      this.inner = inner || null;
+    } else if (typeof msgOrInner === "object") {
+      this.message = `${msgOrInner.name} ${msgOrInner.message}`;
+      this.inner = msgOrInner;
+    }
+  }
+  derive(DexieError2).from(BaseException);
+  obj[name] = DexieError2;
+  return obj;
+}, {});
+exceptions.Syntax = SyntaxError;
+exceptions.Type = TypeError;
+exceptions.Range = RangeError;
+var exceptionMap = idbDomErrorNames.reduce((obj, name) => {
+  obj[name + "Error"] = exceptions[name];
+  return obj;
+}, {});
+function mapError(domError, message) {
+  if (!domError || domError instanceof DexieError || domError instanceof TypeError || domError instanceof SyntaxError || !domError.name || !exceptionMap[domError.name])
+    return domError;
+  var rv = new exceptionMap[domError.name](message || domError.message, domError);
+  if ("stack" in domError) {
+    setProp(rv, "stack", { get: function() {
+      return this.inner.stack;
+    } });
+  }
+  return rv;
+}
+var fullNameExceptions = errorList.reduce((obj, name) => {
+  if (["Syntax", "Type", "Range"].indexOf(name) === -1)
+    obj[name + "Error"] = exceptions[name];
+  return obj;
+}, {});
+fullNameExceptions.ModifyError = ModifyError;
+fullNameExceptions.DexieError = DexieError;
+fullNameExceptions.BulkError = BulkError;
+function nop() {
+}
+function mirror(val) {
+  return val;
+}
+function pureFunctionChain(f1, f2) {
+  if (f1 == null || f1 === mirror)
+    return f2;
+  return function(val) {
+    return f2(f1(val));
+  };
+}
+function callBoth(on1, on2) {
+  return function() {
+    on1.apply(this, arguments);
+    on2.apply(this, arguments);
+  };
+}
+function hookCreatingChain(f1, f2) {
+  if (f1 === nop)
+    return f2;
+  return function() {
+    var res = f1.apply(this, arguments);
+    if (res !== void 0)
+      arguments[0] = res;
+    var onsuccess = this.onsuccess, onerror = this.onerror;
+    this.onsuccess = null;
+    this.onerror = null;
+    var res2 = f2.apply(this, arguments);
+    if (onsuccess)
+      this.onsuccess = this.onsuccess ? callBoth(onsuccess, this.onsuccess) : onsuccess;
+    if (onerror)
+      this.onerror = this.onerror ? callBoth(onerror, this.onerror) : onerror;
+    return res2 !== void 0 ? res2 : res;
+  };
+}
+function hookDeletingChain(f1, f2) {
+  if (f1 === nop)
+    return f2;
+  return function() {
+    f1.apply(this, arguments);
+    var onsuccess = this.onsuccess, onerror = this.onerror;
+    this.onsuccess = this.onerror = null;
+    f2.apply(this, arguments);
+    if (onsuccess)
+      this.onsuccess = this.onsuccess ? callBoth(onsuccess, this.onsuccess) : onsuccess;
+    if (onerror)
+      this.onerror = this.onerror ? callBoth(onerror, this.onerror) : onerror;
+  };
+}
+function hookUpdatingChain(f1, f2) {
+  if (f1 === nop)
+    return f2;
+  return function(modifications) {
+    var res = f1.apply(this, arguments);
+    extend(modifications, res);
+    var onsuccess = this.onsuccess, onerror = this.onerror;
+    this.onsuccess = null;
+    this.onerror = null;
+    var res2 = f2.apply(this, arguments);
+    if (onsuccess)
+      this.onsuccess = this.onsuccess ? callBoth(onsuccess, this.onsuccess) : onsuccess;
+    if (onerror)
+      this.onerror = this.onerror ? callBoth(onerror, this.onerror) : onerror;
+    return res === void 0 ? res2 === void 0 ? void 0 : res2 : extend(res, res2);
+  };
+}
+function reverseStoppableEventChain(f1, f2) {
+  if (f1 === nop)
+    return f2;
+  return function() {
+    if (f2.apply(this, arguments) === false)
+      return false;
+    return f1.apply(this, arguments);
+  };
+}
+function promisableChain(f1, f2) {
+  if (f1 === nop)
+    return f2;
+  return function() {
+    var res = f1.apply(this, arguments);
+    if (res && typeof res.then === "function") {
+      var thiz = this, i = arguments.length, args2 = new Array(i);
+      while (i--)
+        args2[i] = arguments[i];
+      return res.then(function() {
+        return f2.apply(thiz, args2);
+      });
+    }
+    return f2.apply(this, arguments);
+  };
+}
+var INTERNAL = {};
+var LONG_STACKS_CLIP_LIMIT = 100;
+var MAX_LONG_STACKS = 20;
+var ZONE_ECHO_LIMIT = 100;
+var [resolvedNativePromise, nativePromiseProto, resolvedGlobalPromise] = typeof Promise === "undefined" ? [] : (() => {
+  let globalP = Promise.resolve();
+  if (typeof crypto === "undefined" || !crypto.subtle)
+    return [globalP, getProto(globalP), globalP];
+  const nativeP = crypto.subtle.digest("SHA-512", new Uint8Array([0]));
+  return [
+    nativeP,
+    getProto(nativeP),
+    globalP
+  ];
+})();
+var nativePromiseThen = nativePromiseProto && nativePromiseProto.then;
+var NativePromise = resolvedNativePromise && resolvedNativePromise.constructor;
+var patchGlobalPromise = !!resolvedGlobalPromise;
+var stack_being_generated = false;
+var schedulePhysicalTick = resolvedGlobalPromise ? () => {
+  resolvedGlobalPromise.then(physicalTick);
+} : _global.setImmediate ? setImmediate.bind(null, physicalTick) : _global.MutationObserver ? () => {
+  var hiddenDiv = document.createElement("div");
+  new MutationObserver(() => {
+    physicalTick();
+    hiddenDiv = null;
+  }).observe(hiddenDiv, { attributes: true });
+  hiddenDiv.setAttribute("i", "1");
+} : () => {
+  setTimeout(physicalTick, 0);
+};
+var asap = function(callback, args2) {
+  microtickQueue.push([callback, args2]);
+  if (needsNewPhysicalTick) {
+    schedulePhysicalTick();
+    needsNewPhysicalTick = false;
+  }
+};
+var isOutsideMicroTick = true;
+var needsNewPhysicalTick = true;
+var unhandledErrors = [];
+var rejectingErrors = [];
+var currentFulfiller = null;
+var rejectionMapper = mirror;
+var globalPSD = {
+  id: "global",
+  global: true,
+  ref: 0,
+  unhandleds: [],
+  onunhandled: globalError,
+  pgp: false,
+  env: {},
+  finalize: function() {
+    this.unhandleds.forEach((uh) => {
+      try {
+        globalError(uh[0], uh[1]);
+      } catch (e) {
+      }
+    });
+  }
+};
+var PSD = globalPSD;
+var microtickQueue = [];
+var numScheduledCalls = 0;
+var tickFinalizers = [];
+function DexiePromise(fn) {
+  if (typeof this !== "object")
+    throw new TypeError("Promises must be constructed via new");
+  this._listeners = [];
+  this.onuncatched = nop;
+  this._lib = false;
+  var psd = this._PSD = PSD;
+  if (debug) {
+    this._stackHolder = getErrorWithStack();
+    this._prev = null;
+    this._numPrev = 0;
+  }
+  if (typeof fn !== "function") {
+    if (fn !== INTERNAL)
+      throw new TypeError("Not a function");
+    this._state = arguments[1];
+    this._value = arguments[2];
+    if (this._state === false)
+      handleRejection(this, this._value);
+    return;
+  }
+  this._state = null;
+  this._value = null;
+  ++psd.ref;
+  executePromiseTask(this, fn);
+}
+var thenProp = {
+  get: function() {
+    var psd = PSD, microTaskId = totalEchoes;
+    function then(onFulfilled, onRejected) {
+      var possibleAwait = !psd.global && (psd !== PSD || microTaskId !== totalEchoes);
+      const cleanup = possibleAwait && !decrementExpectedAwaits();
+      var rv = new DexiePromise((resolve2, reject2) => {
+        propagateToListener(this, new Listener(nativeAwaitCompatibleWrap(onFulfilled, psd, possibleAwait, cleanup), nativeAwaitCompatibleWrap(onRejected, psd, possibleAwait, cleanup), resolve2, reject2, psd));
+      });
+      debug && linkToPreviousPromise(rv, this);
+      return rv;
+    }
+    then.prototype = INTERNAL;
+    return then;
+  },
+  set: function(value) {
+    setProp(this, "then", value && value.prototype === INTERNAL ? thenProp : {
+      get: function() {
+        return value;
+      },
+      set: thenProp.set
+    });
+  }
+};
+props(DexiePromise.prototype, {
+  then: thenProp,
+  _then: function(onFulfilled, onRejected) {
+    propagateToListener(this, new Listener(null, null, onFulfilled, onRejected, PSD));
+  },
+  catch: function(onRejected) {
+    if (arguments.length === 1)
+      return this.then(null, onRejected);
+    var type2 = arguments[0], handler = arguments[1];
+    return typeof type2 === "function" ? this.then(null, (err) => err instanceof type2 ? handler(err) : PromiseReject(err)) : this.then(null, (err) => err && err.name === type2 ? handler(err) : PromiseReject(err));
+  },
+  finally: function(onFinally) {
+    return this.then((value) => {
+      onFinally();
+      return value;
+    }, (err) => {
+      onFinally();
+      return PromiseReject(err);
+    });
+  },
+  stack: {
+    get: function() {
+      if (this._stack)
+        return this._stack;
+      try {
+        stack_being_generated = true;
+        var stacks = getStack(this, [], MAX_LONG_STACKS);
+        var stack = stacks.join("\nFrom previous: ");
+        if (this._state !== null)
+          this._stack = stack;
+        return stack;
+      } finally {
+        stack_being_generated = false;
+      }
+    }
+  },
+  timeout: function(ms, msg) {
+    return ms < Infinity ? new DexiePromise((resolve2, reject2) => {
+      var handle = setTimeout(() => reject2(new exceptions.Timeout(msg)), ms);
+      this.then(resolve2, reject2).finally(clearTimeout.bind(null, handle));
+    }) : this;
+  }
+});
+if (typeof Symbol !== "undefined" && Symbol.toStringTag)
+  setProp(DexiePromise.prototype, Symbol.toStringTag, "Dexie.Promise");
+globalPSD.env = snapShot();
+function Listener(onFulfilled, onRejected, resolve2, reject2, zone) {
+  this.onFulfilled = typeof onFulfilled === "function" ? onFulfilled : null;
+  this.onRejected = typeof onRejected === "function" ? onRejected : null;
+  this.resolve = resolve2;
+  this.reject = reject2;
+  this.psd = zone;
+}
+props(DexiePromise, {
+  all: function() {
+    var values = getArrayOf.apply(null, arguments).map(onPossibleParallellAsync);
+    return new DexiePromise(function(resolve2, reject2) {
+      if (values.length === 0)
+        resolve2([]);
+      var remaining = values.length;
+      values.forEach((a, i) => DexiePromise.resolve(a).then((x) => {
+        values[i] = x;
+        if (!--remaining)
+          resolve2(values);
+      }, reject2));
+    });
+  },
+  resolve: (value) => {
+    if (value instanceof DexiePromise)
+      return value;
+    if (value && typeof value.then === "function")
+      return new DexiePromise((resolve2, reject2) => {
+        value.then(resolve2, reject2);
+      });
+    var rv = new DexiePromise(INTERNAL, true, value);
+    linkToPreviousPromise(rv, currentFulfiller);
+    return rv;
+  },
+  reject: PromiseReject,
+  race: function() {
+    var values = getArrayOf.apply(null, arguments).map(onPossibleParallellAsync);
+    return new DexiePromise((resolve2, reject2) => {
+      values.map((value) => DexiePromise.resolve(value).then(resolve2, reject2));
+    });
+  },
+  PSD: {
+    get: () => PSD,
+    set: (value) => PSD = value
+  },
+  totalEchoes: { get: () => totalEchoes },
+  newPSD: newScope,
+  usePSD,
+  scheduler: {
+    get: () => asap,
+    set: (value) => {
+      asap = value;
+    }
+  },
+  rejectionMapper: {
+    get: () => rejectionMapper,
+    set: (value) => {
+      rejectionMapper = value;
+    }
+  },
+  follow: (fn, zoneProps) => {
+    return new DexiePromise((resolve2, reject2) => {
+      return newScope((resolve3, reject3) => {
+        var psd = PSD;
+        psd.unhandleds = [];
+        psd.onunhandled = reject3;
+        psd.finalize = callBoth(function() {
+          run_at_end_of_this_or_next_physical_tick(() => {
+            this.unhandleds.length === 0 ? resolve3() : reject3(this.unhandleds[0]);
+          });
+        }, psd.finalize);
+        fn();
+      }, zoneProps, resolve2, reject2);
+    });
+  }
+});
+if (NativePromise) {
+  if (NativePromise.allSettled)
+    setProp(DexiePromise, "allSettled", function() {
+      const possiblePromises = getArrayOf.apply(null, arguments).map(onPossibleParallellAsync);
+      return new DexiePromise((resolve2) => {
+        if (possiblePromises.length === 0)
+          resolve2([]);
+        let remaining = possiblePromises.length;
+        const results = new Array(remaining);
+        possiblePromises.forEach((p, i) => DexiePromise.resolve(p).then((value) => results[i] = { status: "fulfilled", value }, (reason) => results[i] = { status: "rejected", reason }).then(() => --remaining || resolve2(results)));
+      });
+    });
+  if (NativePromise.any && typeof AggregateError !== "undefined")
+    setProp(DexiePromise, "any", function() {
+      const possiblePromises = getArrayOf.apply(null, arguments).map(onPossibleParallellAsync);
+      return new DexiePromise((resolve2, reject2) => {
+        if (possiblePromises.length === 0)
+          reject2(new AggregateError([]));
+        let remaining = possiblePromises.length;
+        const failures = new Array(remaining);
+        possiblePromises.forEach((p, i) => DexiePromise.resolve(p).then((value) => resolve2(value), (failure) => {
+          failures[i] = failure;
+          if (!--remaining)
+            reject2(new AggregateError(failures));
+        }));
+      });
+    });
+}
+function executePromiseTask(promise, fn) {
+  try {
+    fn((value) => {
+      if (promise._state !== null)
+        return;
+      if (value === promise)
+        throw new TypeError("A promise cannot be resolved with itself.");
+      var shouldExecuteTick = promise._lib && beginMicroTickScope();
+      if (value && typeof value.then === "function") {
+        executePromiseTask(promise, (resolve2, reject2) => {
+          value instanceof DexiePromise ? value._then(resolve2, reject2) : value.then(resolve2, reject2);
+        });
+      } else {
+        promise._state = true;
+        promise._value = value;
+        propagateAllListeners(promise);
+      }
+      if (shouldExecuteTick)
+        endMicroTickScope();
+    }, handleRejection.bind(null, promise));
+  } catch (ex) {
+    handleRejection(promise, ex);
+  }
+}
+function handleRejection(promise, reason) {
+  rejectingErrors.push(reason);
+  if (promise._state !== null)
+    return;
+  var shouldExecuteTick = promise._lib && beginMicroTickScope();
+  reason = rejectionMapper(reason);
+  promise._state = false;
+  promise._value = reason;
+  debug && reason !== null && typeof reason === "object" && !reason._promise && tryCatch(() => {
+    var origProp = getPropertyDescriptor(reason, "stack");
+    reason._promise = promise;
+    setProp(reason, "stack", {
+      get: () => stack_being_generated ? origProp && (origProp.get ? origProp.get.apply(reason) : origProp.value) : promise.stack
+    });
+  });
+  addPossiblyUnhandledError(promise);
+  propagateAllListeners(promise);
+  if (shouldExecuteTick)
+    endMicroTickScope();
+}
+function propagateAllListeners(promise) {
+  var listeners = promise._listeners;
+  promise._listeners = [];
+  for (var i = 0, len = listeners.length; i < len; ++i) {
+    propagateToListener(promise, listeners[i]);
+  }
+  var psd = promise._PSD;
+  --psd.ref || psd.finalize();
+  if (numScheduledCalls === 0) {
+    ++numScheduledCalls;
+    asap(() => {
+      if (--numScheduledCalls === 0)
+        finalizePhysicalTick();
+    }, []);
+  }
+}
+function propagateToListener(promise, listener) {
+  if (promise._state === null) {
+    promise._listeners.push(listener);
+    return;
+  }
+  var cb = promise._state ? listener.onFulfilled : listener.onRejected;
+  if (cb === null) {
+    return (promise._state ? listener.resolve : listener.reject)(promise._value);
+  }
+  ++listener.psd.ref;
+  ++numScheduledCalls;
+  asap(callListener, [cb, promise, listener]);
+}
+function callListener(cb, promise, listener) {
+  try {
+    currentFulfiller = promise;
+    var ret, value = promise._value;
+    if (promise._state) {
+      ret = cb(value);
+    } else {
+      if (rejectingErrors.length)
+        rejectingErrors = [];
+      ret = cb(value);
+      if (rejectingErrors.indexOf(value) === -1)
+        markErrorAsHandled(promise);
+    }
+    listener.resolve(ret);
+  } catch (e) {
+    listener.reject(e);
+  } finally {
+    currentFulfiller = null;
+    if (--numScheduledCalls === 0)
+      finalizePhysicalTick();
+    --listener.psd.ref || listener.psd.finalize();
+  }
+}
+function getStack(promise, stacks, limit) {
+  if (stacks.length === limit)
+    return stacks;
+  var stack = "";
+  if (promise._state === false) {
+    var failure = promise._value, errorName, message;
+    if (failure != null) {
+      errorName = failure.name || "Error";
+      message = failure.message || failure;
+      stack = prettyStack(failure, 0);
+    } else {
+      errorName = failure;
+      message = "";
+    }
+    stacks.push(errorName + (message ? ": " + message : "") + stack);
+  }
+  if (debug) {
+    stack = prettyStack(promise._stackHolder, 2);
+    if (stack && stacks.indexOf(stack) === -1)
+      stacks.push(stack);
+    if (promise._prev)
+      getStack(promise._prev, stacks, limit);
+  }
+  return stacks;
+}
+function linkToPreviousPromise(promise, prev) {
+  var numPrev = prev ? prev._numPrev + 1 : 0;
+  if (numPrev < LONG_STACKS_CLIP_LIMIT) {
+    promise._prev = prev;
+    promise._numPrev = numPrev;
+  }
+}
+function physicalTick() {
+  beginMicroTickScope() && endMicroTickScope();
+}
+function beginMicroTickScope() {
+  var wasRootExec = isOutsideMicroTick;
+  isOutsideMicroTick = false;
+  needsNewPhysicalTick = false;
+  return wasRootExec;
+}
+function endMicroTickScope() {
+  var callbacks, i, l;
+  do {
+    while (microtickQueue.length > 0) {
+      callbacks = microtickQueue;
+      microtickQueue = [];
+      l = callbacks.length;
+      for (i = 0; i < l; ++i) {
+        var item = callbacks[i];
+        item[0].apply(null, item[1]);
+      }
+    }
+  } while (microtickQueue.length > 0);
+  isOutsideMicroTick = true;
+  needsNewPhysicalTick = true;
+}
+function finalizePhysicalTick() {
+  var unhandledErrs = unhandledErrors;
+  unhandledErrors = [];
+  unhandledErrs.forEach((p) => {
+    p._PSD.onunhandled.call(null, p._value, p);
+  });
+  var finalizers = tickFinalizers.slice(0);
+  var i = finalizers.length;
+  while (i)
+    finalizers[--i]();
+}
+function run_at_end_of_this_or_next_physical_tick(fn) {
+  function finalizer() {
+    fn();
+    tickFinalizers.splice(tickFinalizers.indexOf(finalizer), 1);
+  }
+  tickFinalizers.push(finalizer);
+  ++numScheduledCalls;
+  asap(() => {
+    if (--numScheduledCalls === 0)
+      finalizePhysicalTick();
+  }, []);
+}
+function addPossiblyUnhandledError(promise) {
+  if (!unhandledErrors.some((p) => p._value === promise._value))
+    unhandledErrors.push(promise);
+}
+function markErrorAsHandled(promise) {
+  var i = unhandledErrors.length;
+  while (i)
+    if (unhandledErrors[--i]._value === promise._value) {
+      unhandledErrors.splice(i, 1);
+      return;
+    }
+}
+function PromiseReject(reason) {
+  return new DexiePromise(INTERNAL, false, reason);
+}
+function wrap(fn, errorCatcher) {
+  var psd = PSD;
+  return function() {
+    var wasRootExec = beginMicroTickScope(), outerScope = PSD;
+    try {
+      switchToZone(psd, true);
+      return fn.apply(this, arguments);
+    } catch (e) {
+      errorCatcher && errorCatcher(e);
+    } finally {
+      switchToZone(outerScope, false);
+      if (wasRootExec)
+        endMicroTickScope();
+    }
+  };
+}
+var task = { awaits: 0, echoes: 0, id: 0 };
+var taskCounter = 0;
+var zoneStack = [];
+var zoneEchoes = 0;
+var totalEchoes = 0;
+var zone_id_counter = 0;
+function newScope(fn, props2, a1, a2) {
+  var parent = PSD, psd = Object.create(parent);
+  psd.parent = parent;
+  psd.ref = 0;
+  psd.global = false;
+  psd.id = ++zone_id_counter;
+  var globalEnv = globalPSD.env;
+  psd.env = patchGlobalPromise ? {
+    Promise: DexiePromise,
+    PromiseProp: { value: DexiePromise, configurable: true, writable: true },
+    all: DexiePromise.all,
+    race: DexiePromise.race,
+    allSettled: DexiePromise.allSettled,
+    any: DexiePromise.any,
+    resolve: DexiePromise.resolve,
+    reject: DexiePromise.reject,
+    nthen: getPatchedPromiseThen(globalEnv.nthen, psd),
+    gthen: getPatchedPromiseThen(globalEnv.gthen, psd)
+  } : {};
+  if (props2)
+    extend(psd, props2);
+  ++parent.ref;
+  psd.finalize = function() {
+    --this.parent.ref || this.parent.finalize();
+  };
+  var rv = usePSD(psd, fn, a1, a2);
+  if (psd.ref === 0)
+    psd.finalize();
+  return rv;
+}
+function incrementExpectedAwaits() {
+  if (!task.id)
+    task.id = ++taskCounter;
+  ++task.awaits;
+  task.echoes += ZONE_ECHO_LIMIT;
+  return task.id;
+}
+function decrementExpectedAwaits() {
+  if (!task.awaits)
+    return false;
+  if (--task.awaits === 0)
+    task.id = 0;
+  task.echoes = task.awaits * ZONE_ECHO_LIMIT;
+  return true;
+}
+if (("" + nativePromiseThen).indexOf("[native code]") === -1) {
+  incrementExpectedAwaits = decrementExpectedAwaits = nop;
+}
+function onPossibleParallellAsync(possiblePromise) {
+  if (task.echoes && possiblePromise && possiblePromise.constructor === NativePromise) {
+    incrementExpectedAwaits();
+    return possiblePromise.then((x) => {
+      decrementExpectedAwaits();
+      return x;
+    }, (e) => {
+      decrementExpectedAwaits();
+      return rejection(e);
+    });
+  }
+  return possiblePromise;
+}
+function zoneEnterEcho(targetZone) {
+  ++totalEchoes;
+  if (!task.echoes || --task.echoes === 0) {
+    task.echoes = task.id = 0;
+  }
+  zoneStack.push(PSD);
+  switchToZone(targetZone, true);
+}
+function zoneLeaveEcho() {
+  var zone = zoneStack[zoneStack.length - 1];
+  zoneStack.pop();
+  switchToZone(zone, false);
+}
+function switchToZone(targetZone, bEnteringZone) {
+  var currentZone = PSD;
+  if (bEnteringZone ? task.echoes && (!zoneEchoes++ || targetZone !== PSD) : zoneEchoes && (!--zoneEchoes || targetZone !== PSD)) {
+    enqueueNativeMicroTask(bEnteringZone ? zoneEnterEcho.bind(null, targetZone) : zoneLeaveEcho);
+  }
+  if (targetZone === PSD)
+    return;
+  PSD = targetZone;
+  if (currentZone === globalPSD)
+    globalPSD.env = snapShot();
+  if (patchGlobalPromise) {
+    var GlobalPromise = globalPSD.env.Promise;
+    var targetEnv = targetZone.env;
+    nativePromiseProto.then = targetEnv.nthen;
+    GlobalPromise.prototype.then = targetEnv.gthen;
+    if (currentZone.global || targetZone.global) {
+      Object.defineProperty(_global, "Promise", targetEnv.PromiseProp);
+      GlobalPromise.all = targetEnv.all;
+      GlobalPromise.race = targetEnv.race;
+      GlobalPromise.resolve = targetEnv.resolve;
+      GlobalPromise.reject = targetEnv.reject;
+      if (targetEnv.allSettled)
+        GlobalPromise.allSettled = targetEnv.allSettled;
+      if (targetEnv.any)
+        GlobalPromise.any = targetEnv.any;
+    }
+  }
+}
+function snapShot() {
+  var GlobalPromise = _global.Promise;
+  return patchGlobalPromise ? {
+    Promise: GlobalPromise,
+    PromiseProp: Object.getOwnPropertyDescriptor(_global, "Promise"),
+    all: GlobalPromise.all,
+    race: GlobalPromise.race,
+    allSettled: GlobalPromise.allSettled,
+    any: GlobalPromise.any,
+    resolve: GlobalPromise.resolve,
+    reject: GlobalPromise.reject,
+    nthen: nativePromiseProto.then,
+    gthen: GlobalPromise.prototype.then
+  } : {};
+}
+function usePSD(psd, fn, a1, a2, a3) {
+  var outerScope = PSD;
+  try {
+    switchToZone(psd, true);
+    return fn(a1, a2, a3);
+  } finally {
+    switchToZone(outerScope, false);
+  }
+}
+function enqueueNativeMicroTask(job) {
+  nativePromiseThen.call(resolvedNativePromise, job);
+}
+function nativeAwaitCompatibleWrap(fn, zone, possibleAwait, cleanup) {
+  return typeof fn !== "function" ? fn : function() {
+    var outerZone = PSD;
+    if (possibleAwait)
+      incrementExpectedAwaits();
+    switchToZone(zone, true);
+    try {
+      return fn.apply(this, arguments);
+    } finally {
+      switchToZone(outerZone, false);
+      if (cleanup)
+        enqueueNativeMicroTask(decrementExpectedAwaits);
+    }
+  };
+}
+function getPatchedPromiseThen(origThen, zone) {
+  return function(onResolved, onRejected) {
+    return origThen.call(this, nativeAwaitCompatibleWrap(onResolved, zone), nativeAwaitCompatibleWrap(onRejected, zone));
+  };
+}
+var UNHANDLEDREJECTION = "unhandledrejection";
+function globalError(err, promise) {
+  var rv;
+  try {
+    rv = promise.onuncatched(err);
+  } catch (e) {
+  }
+  if (rv !== false)
+    try {
+      var event, eventData = { promise, reason: err };
+      if (_global.document && document.createEvent) {
+        event = document.createEvent("Event");
+        event.initEvent(UNHANDLEDREJECTION, true, true);
+        extend(event, eventData);
+      } else if (_global.CustomEvent) {
+        event = new CustomEvent(UNHANDLEDREJECTION, { detail: eventData });
+        extend(event, eventData);
+      }
+      if (event && _global.dispatchEvent) {
+        dispatchEvent(event);
+        if (!_global.PromiseRejectionEvent && _global.onunhandledrejection)
+          try {
+            _global.onunhandledrejection(event);
+          } catch (_) {
+          }
+      }
+      if (debug && event && !event.defaultPrevented) {
+        console.warn(`Unhandled rejection: ${err.stack || err}`);
+      }
+    } catch (e) {
+    }
+}
+var rejection = DexiePromise.reject;
+function tempTransaction(db, mode, storeNames, fn) {
+  if (!db.idbdb || !db._state.openComplete && (!PSD.letThrough && !db._vip)) {
+    if (db._state.openComplete) {
+      return rejection(new exceptions.DatabaseClosed(db._state.dbOpenError));
+    }
+    if (!db._state.isBeingOpened) {
+      if (!db._options.autoOpen)
+        return rejection(new exceptions.DatabaseClosed());
+      db.open().catch(nop);
+    }
+    return db._state.dbReadyPromise.then(() => tempTransaction(db, mode, storeNames, fn));
+  } else {
+    var trans = db._createTransaction(mode, storeNames, db._dbSchema);
+    try {
+      trans.create();
+      db._state.PR1398_maxLoop = 3;
+    } catch (ex) {
+      if (ex.name === errnames.InvalidState && db.isOpen() && --db._state.PR1398_maxLoop > 0) {
+        console.warn("Dexie: Need to reopen db");
+        db._close();
+        return db.open().then(() => tempTransaction(db, mode, storeNames, fn));
+      }
+      return rejection(ex);
+    }
+    return trans._promise(mode, (resolve2, reject2) => {
+      return newScope(() => {
+        PSD.trans = trans;
+        return fn(resolve2, reject2, trans);
+      });
+    }).then((result) => {
+      return trans._completion.then(() => result);
+    });
+  }
+}
+var DEXIE_VERSION = "3.2.6";
+var maxString = String.fromCharCode(65535);
+var minKey = -Infinity;
+var INVALID_KEY_ARGUMENT = "Invalid key provided. Keys must be of type string, number, Date or Array<string | number | Date>.";
+var STRING_EXPECTED = "String expected.";
+var connections = [];
+var isIEOrEdge = typeof navigator !== "undefined" && /(MSIE|Trident|Edge)/.test(navigator.userAgent);
+var hasIEDeleteObjectStoreBug = isIEOrEdge;
+var hangsOnDeleteLargeKeyRange = isIEOrEdge;
+var dexieStackFrameFilter = (frame) => !/(dexie\.js|dexie\.min\.js)/.test(frame);
+var DBNAMES_DB = "__dbnames";
+var READONLY = "readonly";
+var READWRITE = "readwrite";
+function combine(filter1, filter2) {
+  return filter1 ? filter2 ? function() {
+    return filter1.apply(this, arguments) && filter2.apply(this, arguments);
+  } : filter1 : filter2;
+}
+var AnyRange = {
+  type: 3,
+  lower: -Infinity,
+  lowerOpen: false,
+  upper: [[]],
+  upperOpen: false
+};
+function workaroundForUndefinedPrimKey(keyPath) {
+  return typeof keyPath === "string" && !/\./.test(keyPath) ? (obj) => {
+    if (obj[keyPath] === void 0 && keyPath in obj) {
+      obj = deepClone(obj);
+      delete obj[keyPath];
+    }
+    return obj;
+  } : (obj) => obj;
+}
+var Table = class {
+  _trans(mode, fn, writeLocked) {
+    const trans = this._tx || PSD.trans;
+    const tableName = this.name;
+    function checkTableInTransaction(resolve2, reject2, trans2) {
+      if (!trans2.schema[tableName])
+        throw new exceptions.NotFound("Table " + tableName + " not part of transaction");
+      return fn(trans2.idbtrans, trans2);
+    }
+    const wasRootExec = beginMicroTickScope();
+    try {
+      return trans && trans.db === this.db ? trans === PSD.trans ? trans._promise(mode, checkTableInTransaction, writeLocked) : newScope(() => trans._promise(mode, checkTableInTransaction, writeLocked), { trans, transless: PSD.transless || PSD }) : tempTransaction(this.db, mode, [this.name], checkTableInTransaction);
+    } finally {
+      if (wasRootExec)
+        endMicroTickScope();
+    }
+  }
+  get(keyOrCrit, cb) {
+    if (keyOrCrit && keyOrCrit.constructor === Object)
+      return this.where(keyOrCrit).first(cb);
+    return this._trans("readonly", (trans) => {
+      return this.core.get({ trans, key: keyOrCrit }).then((res) => this.hook.reading.fire(res));
+    }).then(cb);
+  }
+  where(indexOrCrit) {
+    if (typeof indexOrCrit === "string")
+      return new this.db.WhereClause(this, indexOrCrit);
+    if (isArray2(indexOrCrit))
+      return new this.db.WhereClause(this, `[${indexOrCrit.join("+")}]`);
+    const keyPaths = keys(indexOrCrit);
+    if (keyPaths.length === 1)
+      return this.where(keyPaths[0]).equals(indexOrCrit[keyPaths[0]]);
+    const compoundIndex = this.schema.indexes.concat(this.schema.primKey).filter((ix) => {
+      if (ix.compound && keyPaths.every((keyPath) => ix.keyPath.indexOf(keyPath) >= 0)) {
+        for (let i = 0; i < keyPaths.length; ++i) {
+          if (keyPaths.indexOf(ix.keyPath[i]) === -1)
+            return false;
+        }
+        return true;
+      }
+      return false;
+    }).sort((a, b) => a.keyPath.length - b.keyPath.length)[0];
+    if (compoundIndex && this.db._maxKey !== maxString) {
+      const keyPathsInValidOrder = compoundIndex.keyPath.slice(0, keyPaths.length);
+      return this.where(keyPathsInValidOrder).equals(keyPathsInValidOrder.map((kp) => indexOrCrit[kp]));
+    }
+    if (!compoundIndex && debug)
+      console.warn(`The query ${JSON.stringify(indexOrCrit)} on ${this.name} would benefit of a compound index [${keyPaths.join("+")}]`);
+    const { idxByName } = this.schema;
+    const idb = this.db._deps.indexedDB;
+    function equals(a, b) {
+      try {
+        return idb.cmp(a, b) === 0;
+      } catch (e) {
+        return false;
+      }
+    }
+    const [idx, filterFunction] = keyPaths.reduce(([prevIndex, prevFilterFn], keyPath) => {
+      const index = idxByName[keyPath];
+      const value = indexOrCrit[keyPath];
+      return [
+        prevIndex || index,
+        prevIndex || !index ? combine(prevFilterFn, index && index.multi ? (x) => {
+          const prop = getByKeyPath(x, keyPath);
+          return isArray2(prop) && prop.some((item) => equals(value, item));
+        } : (x) => equals(value, getByKeyPath(x, keyPath))) : prevFilterFn
+      ];
+    }, [null, null]);
+    return idx ? this.where(idx.name).equals(indexOrCrit[idx.keyPath]).filter(filterFunction) : compoundIndex ? this.filter(filterFunction) : this.where(keyPaths).equals("");
+  }
+  filter(filterFunction) {
+    return this.toCollection().and(filterFunction);
+  }
+  count(thenShortcut) {
+    return this.toCollection().count(thenShortcut);
+  }
+  offset(offset) {
+    return this.toCollection().offset(offset);
+  }
+  limit(numRows) {
+    return this.toCollection().limit(numRows);
+  }
+  each(callback) {
+    return this.toCollection().each(callback);
+  }
+  toArray(thenShortcut) {
+    return this.toCollection().toArray(thenShortcut);
+  }
+  toCollection() {
+    return new this.db.Collection(new this.db.WhereClause(this));
+  }
+  orderBy(index) {
+    return new this.db.Collection(new this.db.WhereClause(this, isArray2(index) ? `[${index.join("+")}]` : index));
+  }
+  reverse() {
+    return this.toCollection().reverse();
+  }
+  mapToClass(constructor) {
+    this.schema.mappedClass = constructor;
+    const readHook = (obj) => {
+      if (!obj)
+        return obj;
+      const res = Object.create(constructor.prototype);
+      for (var m in obj)
+        if (hasOwn(obj, m))
+          try {
+            res[m] = obj[m];
+          } catch (_) {
+          }
+      return res;
+    };
+    if (this.schema.readHook) {
+      this.hook.reading.unsubscribe(this.schema.readHook);
+    }
+    this.schema.readHook = readHook;
+    this.hook("reading", readHook);
+    return constructor;
+  }
+  defineClass() {
+    function Class(content) {
+      extend(this, content);
+    }
+    return this.mapToClass(Class);
+  }
+  add(obj, key) {
+    const { auto, keyPath } = this.schema.primKey;
+    let objToAdd = obj;
+    if (keyPath && auto) {
+      objToAdd = workaroundForUndefinedPrimKey(keyPath)(obj);
+    }
+    return this._trans("readwrite", (trans) => {
+      return this.core.mutate({ trans, type: "add", keys: key != null ? [key] : null, values: [objToAdd] });
+    }).then((res) => res.numFailures ? DexiePromise.reject(res.failures[0]) : res.lastResult).then((lastResult) => {
+      if (keyPath) {
+        try {
+          setByKeyPath(obj, keyPath, lastResult);
+        } catch (_) {
+        }
+      }
+      return lastResult;
+    });
+  }
+  update(keyOrObject, modifications) {
+    if (typeof keyOrObject === "object" && !isArray2(keyOrObject)) {
+      const key = getByKeyPath(keyOrObject, this.schema.primKey.keyPath);
+      if (key === void 0)
+        return rejection(new exceptions.InvalidArgument("Given object does not contain its primary key"));
+      try {
+        if (typeof modifications !== "function") {
+          keys(modifications).forEach((keyPath) => {
+            setByKeyPath(keyOrObject, keyPath, modifications[keyPath]);
+          });
+        } else {
+          modifications(keyOrObject, { value: keyOrObject, primKey: key });
+        }
+      } catch (_a) {
+      }
+      return this.where(":id").equals(key).modify(modifications);
+    } else {
+      return this.where(":id").equals(keyOrObject).modify(modifications);
+    }
+  }
+  put(obj, key) {
+    const { auto, keyPath } = this.schema.primKey;
+    let objToAdd = obj;
+    if (keyPath && auto) {
+      objToAdd = workaroundForUndefinedPrimKey(keyPath)(obj);
+    }
+    return this._trans("readwrite", (trans) => this.core.mutate({ trans, type: "put", values: [objToAdd], keys: key != null ? [key] : null })).then((res) => res.numFailures ? DexiePromise.reject(res.failures[0]) : res.lastResult).then((lastResult) => {
+      if (keyPath) {
+        try {
+          setByKeyPath(obj, keyPath, lastResult);
+        } catch (_) {
+        }
+      }
+      return lastResult;
+    });
+  }
+  delete(key) {
+    return this._trans("readwrite", (trans) => this.core.mutate({ trans, type: "delete", keys: [key] })).then((res) => res.numFailures ? DexiePromise.reject(res.failures[0]) : void 0);
+  }
+  clear() {
+    return this._trans("readwrite", (trans) => this.core.mutate({ trans, type: "deleteRange", range: AnyRange })).then((res) => res.numFailures ? DexiePromise.reject(res.failures[0]) : void 0);
+  }
+  bulkGet(keys3) {
+    return this._trans("readonly", (trans) => {
+      return this.core.getMany({
+        keys: keys3,
+        trans
+      }).then((result) => result.map((res) => this.hook.reading.fire(res)));
+    });
+  }
+  bulkAdd(objects, keysOrOptions, options) {
+    const keys3 = Array.isArray(keysOrOptions) ? keysOrOptions : void 0;
+    options = options || (keys3 ? void 0 : keysOrOptions);
+    const wantResults = options ? options.allKeys : void 0;
+    return this._trans("readwrite", (trans) => {
+      const { auto, keyPath } = this.schema.primKey;
+      if (keyPath && keys3)
+        throw new exceptions.InvalidArgument("bulkAdd(): keys argument invalid on tables with inbound keys");
+      if (keys3 && keys3.length !== objects.length)
+        throw new exceptions.InvalidArgument("Arguments objects and keys must have the same length");
+      const numObjects = objects.length;
+      let objectsToAdd = keyPath && auto ? objects.map(workaroundForUndefinedPrimKey(keyPath)) : objects;
+      return this.core.mutate({ trans, type: "add", keys: keys3, values: objectsToAdd, wantResults }).then(({ numFailures, results, lastResult, failures }) => {
+        const result = wantResults ? results : lastResult;
+        if (numFailures === 0)
+          return result;
+        throw new BulkError(`${this.name}.bulkAdd(): ${numFailures} of ${numObjects} operations failed`, failures);
+      });
+    });
+  }
+  bulkPut(objects, keysOrOptions, options) {
+    const keys3 = Array.isArray(keysOrOptions) ? keysOrOptions : void 0;
+    options = options || (keys3 ? void 0 : keysOrOptions);
+    const wantResults = options ? options.allKeys : void 0;
+    return this._trans("readwrite", (trans) => {
+      const { auto, keyPath } = this.schema.primKey;
+      if (keyPath && keys3)
+        throw new exceptions.InvalidArgument("bulkPut(): keys argument invalid on tables with inbound keys");
+      if (keys3 && keys3.length !== objects.length)
+        throw new exceptions.InvalidArgument("Arguments objects and keys must have the same length");
+      const numObjects = objects.length;
+      let objectsToPut = keyPath && auto ? objects.map(workaroundForUndefinedPrimKey(keyPath)) : objects;
+      return this.core.mutate({ trans, type: "put", keys: keys3, values: objectsToPut, wantResults }).then(({ numFailures, results, lastResult, failures }) => {
+        const result = wantResults ? results : lastResult;
+        if (numFailures === 0)
+          return result;
+        throw new BulkError(`${this.name}.bulkPut(): ${numFailures} of ${numObjects} operations failed`, failures);
+      });
+    });
+  }
+  bulkDelete(keys3) {
+    const numKeys = keys3.length;
+    return this._trans("readwrite", (trans) => {
+      return this.core.mutate({ trans, type: "delete", keys: keys3 });
+    }).then(({ numFailures, lastResult, failures }) => {
+      if (numFailures === 0)
+        return lastResult;
+      throw new BulkError(`${this.name}.bulkDelete(): ${numFailures} of ${numKeys} operations failed`, failures);
+    });
+  }
+};
+function Events(ctx) {
+  var evs = {};
+  var rv = function(eventName, subscriber) {
+    if (subscriber) {
+      var i2 = arguments.length, args2 = new Array(i2 - 1);
+      while (--i2)
+        args2[i2 - 1] = arguments[i2];
+      evs[eventName].subscribe.apply(null, args2);
+      return ctx;
+    } else if (typeof eventName === "string") {
+      return evs[eventName];
+    }
+  };
+  rv.addEventType = add;
+  for (var i = 1, l = arguments.length; i < l; ++i) {
+    add(arguments[i]);
+  }
+  return rv;
+  function add(eventName, chainFunction, defaultFunction) {
+    if (typeof eventName === "object")
+      return addConfiguredEvents(eventName);
+    if (!chainFunction)
+      chainFunction = reverseStoppableEventChain;
+    if (!defaultFunction)
+      defaultFunction = nop;
+    var context = {
+      subscribers: [],
+      fire: defaultFunction,
+      subscribe: function(cb) {
+        if (context.subscribers.indexOf(cb) === -1) {
+          context.subscribers.push(cb);
+          context.fire = chainFunction(context.fire, cb);
+        }
+      },
+      unsubscribe: function(cb) {
+        context.subscribers = context.subscribers.filter(function(fn) {
+          return fn !== cb;
+        });
+        context.fire = context.subscribers.reduce(chainFunction, defaultFunction);
+      }
+    };
+    evs[eventName] = rv[eventName] = context;
+    return context;
+  }
+  function addConfiguredEvents(cfg) {
+    keys(cfg).forEach(function(eventName) {
+      var args2 = cfg[eventName];
+      if (isArray2(args2)) {
+        add(eventName, cfg[eventName][0], cfg[eventName][1]);
+      } else if (args2 === "asap") {
+        var context = add(eventName, mirror, function fire() {
+          var i2 = arguments.length, args3 = new Array(i2);
+          while (i2--)
+            args3[i2] = arguments[i2];
+          context.subscribers.forEach(function(fn) {
+            asap$1(function fireEvent() {
+              fn.apply(null, args3);
+            });
+          });
+        });
+      } else
+        throw new exceptions.InvalidArgument("Invalid event config");
+    });
+  }
+}
+function makeClassConstructor(prototype, constructor) {
+  derive(constructor).from({ prototype });
+  return constructor;
+}
+function createTableConstructor(db) {
+  return makeClassConstructor(Table.prototype, function Table3(name, tableSchema, trans) {
+    this.db = db;
+    this._tx = trans;
+    this.name = name;
+    this.schema = tableSchema;
+    this.hook = db._allTables[name] ? db._allTables[name].hook : Events(null, {
+      "creating": [hookCreatingChain, nop],
+      "reading": [pureFunctionChain, mirror],
+      "updating": [hookUpdatingChain, nop],
+      "deleting": [hookDeletingChain, nop]
+    });
+  });
+}
+function isPlainKeyRange(ctx, ignoreLimitFilter) {
+  return !(ctx.filter || ctx.algorithm || ctx.or) && (ignoreLimitFilter ? ctx.justLimit : !ctx.replayFilter);
+}
+function addFilter(ctx, fn) {
+  ctx.filter = combine(ctx.filter, fn);
+}
+function addReplayFilter(ctx, factory, isLimitFilter) {
+  var curr = ctx.replayFilter;
+  ctx.replayFilter = curr ? () => combine(curr(), factory()) : factory;
+  ctx.justLimit = isLimitFilter && !curr;
+}
+function addMatchFilter(ctx, fn) {
+  ctx.isMatch = combine(ctx.isMatch, fn);
+}
+function getIndexOrStore(ctx, coreSchema) {
+  if (ctx.isPrimKey)
+    return coreSchema.primaryKey;
+  const index = coreSchema.getIndexByKeyPath(ctx.index);
+  if (!index)
+    throw new exceptions.Schema("KeyPath " + ctx.index + " on object store " + coreSchema.name + " is not indexed");
+  return index;
+}
+function openCursor(ctx, coreTable, trans) {
+  const index = getIndexOrStore(ctx, coreTable.schema);
+  return coreTable.openCursor({
+    trans,
+    values: !ctx.keysOnly,
+    reverse: ctx.dir === "prev",
+    unique: !!ctx.unique,
+    query: {
+      index,
+      range: ctx.range
+    }
+  });
+}
+function iter(ctx, fn, coreTrans, coreTable) {
+  const filter = ctx.replayFilter ? combine(ctx.filter, ctx.replayFilter()) : ctx.filter;
+  if (!ctx.or) {
+    return iterate(openCursor(ctx, coreTable, coreTrans), combine(ctx.algorithm, filter), fn, !ctx.keysOnly && ctx.valueMapper);
+  } else {
+    const set = {};
+    const union = (item, cursor, advance) => {
+      if (!filter || filter(cursor, advance, (result) => cursor.stop(result), (err) => cursor.fail(err))) {
+        var primaryKey = cursor.primaryKey;
+        var key = "" + primaryKey;
+        if (key === "[object ArrayBuffer]")
+          key = "" + new Uint8Array(primaryKey);
+        if (!hasOwn(set, key)) {
+          set[key] = true;
+          fn(item, cursor, advance);
+        }
+      }
+    };
+    return Promise.all([
+      ctx.or._iterate(union, coreTrans),
+      iterate(openCursor(ctx, coreTable, coreTrans), ctx.algorithm, union, !ctx.keysOnly && ctx.valueMapper)
+    ]);
+  }
+}
+function iterate(cursorPromise, filter, fn, valueMapper) {
+  var mappedFn = valueMapper ? (x, c, a) => fn(valueMapper(x), c, a) : fn;
+  var wrappedFn = wrap(mappedFn);
+  return cursorPromise.then((cursor) => {
+    if (cursor) {
+      return cursor.start(() => {
+        var c = () => cursor.continue();
+        if (!filter || filter(cursor, (advancer) => c = advancer, (val) => {
+          cursor.stop(val);
+          c = nop;
+        }, (e) => {
+          cursor.fail(e);
+          c = nop;
+        }))
+          wrappedFn(cursor.value, cursor, (advancer) => c = advancer);
+        c();
+      });
+    }
+  });
+}
+function cmp(a, b) {
+  try {
+    const ta = type(a);
+    const tb = type(b);
+    if (ta !== tb) {
+      if (ta === "Array")
+        return 1;
+      if (tb === "Array")
+        return -1;
+      if (ta === "binary")
+        return 1;
+      if (tb === "binary")
+        return -1;
+      if (ta === "string")
+        return 1;
+      if (tb === "string")
+        return -1;
+      if (ta === "Date")
+        return 1;
+      if (tb !== "Date")
+        return NaN;
+      return -1;
+    }
+    switch (ta) {
+      case "number":
+      case "Date":
+      case "string":
+        return a > b ? 1 : a < b ? -1 : 0;
+      case "binary": {
+        return compareUint8Arrays(getUint8Array(a), getUint8Array(b));
+      }
+      case "Array":
+        return compareArrays(a, b);
+    }
+  } catch (_a) {
+  }
+  return NaN;
+}
+function compareArrays(a, b) {
+  const al = a.length;
+  const bl = b.length;
+  const l = al < bl ? al : bl;
+  for (let i = 0; i < l; ++i) {
+    const res = cmp(a[i], b[i]);
+    if (res !== 0)
+      return res;
+  }
+  return al === bl ? 0 : al < bl ? -1 : 1;
+}
+function compareUint8Arrays(a, b) {
+  const al = a.length;
+  const bl = b.length;
+  const l = al < bl ? al : bl;
+  for (let i = 0; i < l; ++i) {
+    if (a[i] !== b[i])
+      return a[i] < b[i] ? -1 : 1;
+  }
+  return al === bl ? 0 : al < bl ? -1 : 1;
+}
+function type(x) {
+  const t = typeof x;
+  if (t !== "object")
+    return t;
+  if (ArrayBuffer.isView(x))
+    return "binary";
+  const tsTag = toStringTag(x);
+  return tsTag === "ArrayBuffer" ? "binary" : tsTag;
+}
+function getUint8Array(a) {
+  if (a instanceof Uint8Array)
+    return a;
+  if (ArrayBuffer.isView(a))
+    return new Uint8Array(a.buffer, a.byteOffset, a.byteLength);
+  return new Uint8Array(a);
+}
+var Collection = class {
+  _read(fn, cb) {
+    var ctx = this._ctx;
+    return ctx.error ? ctx.table._trans(null, rejection.bind(null, ctx.error)) : ctx.table._trans("readonly", fn).then(cb);
+  }
+  _write(fn) {
+    var ctx = this._ctx;
+    return ctx.error ? ctx.table._trans(null, rejection.bind(null, ctx.error)) : ctx.table._trans("readwrite", fn, "locked");
+  }
+  _addAlgorithm(fn) {
+    var ctx = this._ctx;
+    ctx.algorithm = combine(ctx.algorithm, fn);
+  }
+  _iterate(fn, coreTrans) {
+    return iter(this._ctx, fn, coreTrans, this._ctx.table.core);
+  }
+  clone(props2) {
+    var rv = Object.create(this.constructor.prototype), ctx = Object.create(this._ctx);
+    if (props2)
+      extend(ctx, props2);
+    rv._ctx = ctx;
+    return rv;
+  }
+  raw() {
+    this._ctx.valueMapper = null;
+    return this;
+  }
+  each(fn) {
+    var ctx = this._ctx;
+    return this._read((trans) => iter(ctx, fn, trans, ctx.table.core));
+  }
+  count(cb) {
+    return this._read((trans) => {
+      const ctx = this._ctx;
+      const coreTable = ctx.table.core;
+      if (isPlainKeyRange(ctx, true)) {
+        return coreTable.count({
+          trans,
+          query: {
+            index: getIndexOrStore(ctx, coreTable.schema),
+            range: ctx.range
+          }
+        }).then((count2) => Math.min(count2, ctx.limit));
+      } else {
+        var count = 0;
+        return iter(ctx, () => {
+          ++count;
+          return false;
+        }, trans, coreTable).then(() => count);
+      }
+    }).then(cb);
+  }
+  sortBy(keyPath, cb) {
+    const parts = keyPath.split(".").reverse(), lastPart = parts[0], lastIndex = parts.length - 1;
+    function getval(obj, i) {
+      if (i)
+        return getval(obj[parts[i]], i - 1);
+      return obj[lastPart];
+    }
+    var order = this._ctx.dir === "next" ? 1 : -1;
+    function sorter(a, b) {
+      var aVal = getval(a, lastIndex), bVal = getval(b, lastIndex);
+      return aVal < bVal ? -order : aVal > bVal ? order : 0;
+    }
+    return this.toArray(function(a) {
+      return a.sort(sorter);
+    }).then(cb);
+  }
+  toArray(cb) {
+    return this._read((trans) => {
+      var ctx = this._ctx;
+      if (ctx.dir === "next" && isPlainKeyRange(ctx, true) && ctx.limit > 0) {
+        const { valueMapper } = ctx;
+        const index = getIndexOrStore(ctx, ctx.table.core.schema);
+        return ctx.table.core.query({
+          trans,
+          limit: ctx.limit,
+          values: true,
+          query: {
+            index,
+            range: ctx.range
+          }
+        }).then(({ result }) => valueMapper ? result.map(valueMapper) : result);
+      } else {
+        const a = [];
+        return iter(ctx, (item) => a.push(item), trans, ctx.table.core).then(() => a);
+      }
+    }, cb);
+  }
+  offset(offset) {
+    var ctx = this._ctx;
+    if (offset <= 0)
+      return this;
+    ctx.offset += offset;
+    if (isPlainKeyRange(ctx)) {
+      addReplayFilter(ctx, () => {
+        var offsetLeft = offset;
+        return (cursor, advance) => {
+          if (offsetLeft === 0)
+            return true;
+          if (offsetLeft === 1) {
+            --offsetLeft;
+            return false;
+          }
+          advance(() => {
+            cursor.advance(offsetLeft);
+            offsetLeft = 0;
+          });
+          return false;
+        };
+      });
+    } else {
+      addReplayFilter(ctx, () => {
+        var offsetLeft = offset;
+        return () => --offsetLeft < 0;
+      });
+    }
+    return this;
+  }
+  limit(numRows) {
+    this._ctx.limit = Math.min(this._ctx.limit, numRows);
+    addReplayFilter(this._ctx, () => {
+      var rowsLeft = numRows;
+      return function(cursor, advance, resolve2) {
+        if (--rowsLeft <= 0)
+          advance(resolve2);
+        return rowsLeft >= 0;
+      };
+    }, true);
+    return this;
+  }
+  until(filterFunction, bIncludeStopEntry) {
+    addFilter(this._ctx, function(cursor, advance, resolve2) {
+      if (filterFunction(cursor.value)) {
+        advance(resolve2);
+        return bIncludeStopEntry;
+      } else {
+        return true;
+      }
+    });
+    return this;
+  }
+  first(cb) {
+    return this.limit(1).toArray(function(a) {
+      return a[0];
+    }).then(cb);
+  }
+  last(cb) {
+    return this.reverse().first(cb);
+  }
+  filter(filterFunction) {
+    addFilter(this._ctx, function(cursor) {
+      return filterFunction(cursor.value);
+    });
+    addMatchFilter(this._ctx, filterFunction);
+    return this;
+  }
+  and(filter) {
+    return this.filter(filter);
+  }
+  or(indexName) {
+    return new this.db.WhereClause(this._ctx.table, indexName, this);
+  }
+  reverse() {
+    this._ctx.dir = this._ctx.dir === "prev" ? "next" : "prev";
+    if (this._ondirectionchange)
+      this._ondirectionchange(this._ctx.dir);
+    return this;
+  }
+  desc() {
+    return this.reverse();
+  }
+  eachKey(cb) {
+    var ctx = this._ctx;
+    ctx.keysOnly = !ctx.isMatch;
+    return this.each(function(val, cursor) {
+      cb(cursor.key, cursor);
+    });
+  }
+  eachUniqueKey(cb) {
+    this._ctx.unique = "unique";
+    return this.eachKey(cb);
+  }
+  eachPrimaryKey(cb) {
+    var ctx = this._ctx;
+    ctx.keysOnly = !ctx.isMatch;
+    return this.each(function(val, cursor) {
+      cb(cursor.primaryKey, cursor);
+    });
+  }
+  keys(cb) {
+    var ctx = this._ctx;
+    ctx.keysOnly = !ctx.isMatch;
+    var a = [];
+    return this.each(function(item, cursor) {
+      a.push(cursor.key);
+    }).then(function() {
+      return a;
+    }).then(cb);
+  }
+  primaryKeys(cb) {
+    var ctx = this._ctx;
+    if (ctx.dir === "next" && isPlainKeyRange(ctx, true) && ctx.limit > 0) {
+      return this._read((trans) => {
+        var index = getIndexOrStore(ctx, ctx.table.core.schema);
+        return ctx.table.core.query({
+          trans,
+          values: false,
+          limit: ctx.limit,
+          query: {
+            index,
+            range: ctx.range
+          }
+        });
+      }).then(({ result }) => result).then(cb);
+    }
+    ctx.keysOnly = !ctx.isMatch;
+    var a = [];
+    return this.each(function(item, cursor) {
+      a.push(cursor.primaryKey);
+    }).then(function() {
+      return a;
+    }).then(cb);
+  }
+  uniqueKeys(cb) {
+    this._ctx.unique = "unique";
+    return this.keys(cb);
+  }
+  firstKey(cb) {
+    return this.limit(1).keys(function(a) {
+      return a[0];
+    }).then(cb);
+  }
+  lastKey(cb) {
+    return this.reverse().firstKey(cb);
+  }
+  distinct() {
+    var ctx = this._ctx, idx = ctx.index && ctx.table.schema.idxByName[ctx.index];
+    if (!idx || !idx.multi)
+      return this;
+    var set = {};
+    addFilter(this._ctx, function(cursor) {
+      var strKey = cursor.primaryKey.toString();
+      var found = hasOwn(set, strKey);
+      set[strKey] = true;
+      return !found;
+    });
+    return this;
+  }
+  modify(changes) {
+    var ctx = this._ctx;
+    return this._write((trans) => {
+      var modifyer;
+      if (typeof changes === "function") {
+        modifyer = changes;
+      } else {
+        var keyPaths = keys(changes);
+        var numKeys = keyPaths.length;
+        modifyer = function(item) {
+          var anythingModified = false;
+          for (var i = 0; i < numKeys; ++i) {
+            var keyPath = keyPaths[i], val = changes[keyPath];
+            if (getByKeyPath(item, keyPath) !== val) {
+              setByKeyPath(item, keyPath, val);
+              anythingModified = true;
+            }
+          }
+          return anythingModified;
+        };
+      }
+      const coreTable = ctx.table.core;
+      const { outbound, extractKey } = coreTable.schema.primaryKey;
+      const limit = this.db._options.modifyChunkSize || 200;
+      const totalFailures = [];
+      let successCount = 0;
+      const failedKeys = [];
+      const applyMutateResult = (expectedCount, res) => {
+        const { failures, numFailures } = res;
+        successCount += expectedCount - numFailures;
+        for (let pos of keys(failures)) {
+          totalFailures.push(failures[pos]);
+        }
+      };
+      return this.clone().primaryKeys().then((keys3) => {
+        const nextChunk = (offset) => {
+          const count = Math.min(limit, keys3.length - offset);
+          return coreTable.getMany({
+            trans,
+            keys: keys3.slice(offset, offset + count),
+            cache: "immutable"
+          }).then((values) => {
+            const addValues = [];
+            const putValues = [];
+            const putKeys = outbound ? [] : null;
+            const deleteKeys = [];
+            for (let i = 0; i < count; ++i) {
+              const origValue = values[i];
+              const ctx2 = {
+                value: deepClone(origValue),
+                primKey: keys3[offset + i]
+              };
+              if (modifyer.call(ctx2, ctx2.value, ctx2) !== false) {
+                if (ctx2.value == null) {
+                  deleteKeys.push(keys3[offset + i]);
+                } else if (!outbound && cmp(extractKey(origValue), extractKey(ctx2.value)) !== 0) {
+                  deleteKeys.push(keys3[offset + i]);
+                  addValues.push(ctx2.value);
+                } else {
+                  putValues.push(ctx2.value);
+                  if (outbound)
+                    putKeys.push(keys3[offset + i]);
+                }
+              }
+            }
+            const criteria = isPlainKeyRange(ctx) && ctx.limit === Infinity && (typeof changes !== "function" || changes === deleteCallback) && {
+              index: ctx.index,
+              range: ctx.range
+            };
+            return Promise.resolve(addValues.length > 0 && coreTable.mutate({ trans, type: "add", values: addValues }).then((res) => {
+              for (let pos in res.failures) {
+                deleteKeys.splice(parseInt(pos), 1);
+              }
+              applyMutateResult(addValues.length, res);
+            })).then(() => (putValues.length > 0 || criteria && typeof changes === "object") && coreTable.mutate({
+              trans,
+              type: "put",
+              keys: putKeys,
+              values: putValues,
+              criteria,
+              changeSpec: typeof changes !== "function" && changes
+            }).then((res) => applyMutateResult(putValues.length, res))).then(() => (deleteKeys.length > 0 || criteria && changes === deleteCallback) && coreTable.mutate({
+              trans,
+              type: "delete",
+              keys: deleteKeys,
+              criteria
+            }).then((res) => applyMutateResult(deleteKeys.length, res))).then(() => {
+              return keys3.length > offset + count && nextChunk(offset + limit);
+            });
+          });
+        };
+        return nextChunk(0).then(() => {
+          if (totalFailures.length > 0)
+            throw new ModifyError("Error modifying one or more objects", totalFailures, successCount, failedKeys);
+          return keys3.length;
+        });
+      });
+    });
+  }
+  delete() {
+    var ctx = this._ctx, range = ctx.range;
+    if (isPlainKeyRange(ctx) && (ctx.isPrimKey && !hangsOnDeleteLargeKeyRange || range.type === 3)) {
+      return this._write((trans) => {
+        const { primaryKey } = ctx.table.core.schema;
+        const coreRange = range;
+        return ctx.table.core.count({ trans, query: { index: primaryKey, range: coreRange } }).then((count) => {
+          return ctx.table.core.mutate({ trans, type: "deleteRange", range: coreRange }).then(({ failures, lastResult, results, numFailures }) => {
+            if (numFailures)
+              throw new ModifyError("Could not delete some values", Object.keys(failures).map((pos) => failures[pos]), count - numFailures);
+            return count - numFailures;
+          });
+        });
+      });
+    }
+    return this.modify(deleteCallback);
+  }
+};
+var deleteCallback = (value, ctx) => ctx.value = null;
+function createCollectionConstructor(db) {
+  return makeClassConstructor(Collection.prototype, function Collection2(whereClause, keyRangeGenerator) {
+    this.db = db;
+    let keyRange = AnyRange, error = null;
+    if (keyRangeGenerator)
+      try {
+        keyRange = keyRangeGenerator();
+      } catch (ex) {
+        error = ex;
+      }
+    const whereCtx = whereClause._ctx;
+    const table = whereCtx.table;
+    const readingHook = table.hook.reading.fire;
+    this._ctx = {
+      table,
+      index: whereCtx.index,
+      isPrimKey: !whereCtx.index || table.schema.primKey.keyPath && whereCtx.index === table.schema.primKey.name,
+      range: keyRange,
+      keysOnly: false,
+      dir: "next",
+      unique: "",
+      algorithm: null,
+      filter: null,
+      replayFilter: null,
+      justLimit: true,
+      isMatch: null,
+      offset: 0,
+      limit: Infinity,
+      error,
+      or: whereCtx.or,
+      valueMapper: readingHook !== mirror ? readingHook : null
+    };
+  });
+}
+function simpleCompare(a, b) {
+  return a < b ? -1 : a === b ? 0 : 1;
+}
+function simpleCompareReverse(a, b) {
+  return a > b ? -1 : a === b ? 0 : 1;
+}
+function fail(collectionOrWhereClause, err, T) {
+  var collection = collectionOrWhereClause instanceof WhereClause ? new collectionOrWhereClause.Collection(collectionOrWhereClause) : collectionOrWhereClause;
+  collection._ctx.error = T ? new T(err) : new TypeError(err);
+  return collection;
+}
+function emptyCollection(whereClause) {
+  return new whereClause.Collection(whereClause, () => rangeEqual("")).limit(0);
+}
+function upperFactory(dir) {
+  return dir === "next" ? (s) => s.toUpperCase() : (s) => s.toLowerCase();
+}
+function lowerFactory(dir) {
+  return dir === "next" ? (s) => s.toLowerCase() : (s) => s.toUpperCase();
+}
+function nextCasing(key, lowerKey, upperNeedle, lowerNeedle, cmp2, dir) {
+  var length3 = Math.min(key.length, lowerNeedle.length);
+  var llp = -1;
+  for (var i = 0; i < length3; ++i) {
+    var lwrKeyChar = lowerKey[i];
+    if (lwrKeyChar !== lowerNeedle[i]) {
+      if (cmp2(key[i], upperNeedle[i]) < 0)
+        return key.substr(0, i) + upperNeedle[i] + upperNeedle.substr(i + 1);
+      if (cmp2(key[i], lowerNeedle[i]) < 0)
+        return key.substr(0, i) + lowerNeedle[i] + upperNeedle.substr(i + 1);
+      if (llp >= 0)
+        return key.substr(0, llp) + lowerKey[llp] + upperNeedle.substr(llp + 1);
+      return null;
+    }
+    if (cmp2(key[i], lwrKeyChar) < 0)
+      llp = i;
+  }
+  if (length3 < lowerNeedle.length && dir === "next")
+    return key + upperNeedle.substr(key.length);
+  if (length3 < key.length && dir === "prev")
+    return key.substr(0, upperNeedle.length);
+  return llp < 0 ? null : key.substr(0, llp) + lowerNeedle[llp] + upperNeedle.substr(llp + 1);
+}
+function addIgnoreCaseAlgorithm(whereClause, match, needles, suffix) {
+  var upper, lower, compare, upperNeedles, lowerNeedles, direction, nextKeySuffix, needlesLen = needles.length;
+  if (!needles.every((s) => typeof s === "string")) {
+    return fail(whereClause, STRING_EXPECTED);
+  }
+  function initDirection(dir) {
+    upper = upperFactory(dir);
+    lower = lowerFactory(dir);
+    compare = dir === "next" ? simpleCompare : simpleCompareReverse;
+    var needleBounds = needles.map(function(needle) {
+      return { lower: lower(needle), upper: upper(needle) };
+    }).sort(function(a, b) {
+      return compare(a.lower, b.lower);
+    });
+    upperNeedles = needleBounds.map(function(nb) {
+      return nb.upper;
+    });
+    lowerNeedles = needleBounds.map(function(nb) {
+      return nb.lower;
+    });
+    direction = dir;
+    nextKeySuffix = dir === "next" ? "" : suffix;
+  }
+  initDirection("next");
+  var c = new whereClause.Collection(whereClause, () => createRange(upperNeedles[0], lowerNeedles[needlesLen - 1] + suffix));
+  c._ondirectionchange = function(direction2) {
+    initDirection(direction2);
+  };
+  var firstPossibleNeedle = 0;
+  c._addAlgorithm(function(cursor, advance, resolve2) {
+    var key = cursor.key;
+    if (typeof key !== "string")
+      return false;
+    var lowerKey = lower(key);
+    if (match(lowerKey, lowerNeedles, firstPossibleNeedle)) {
+      return true;
+    } else {
+      var lowestPossibleCasing = null;
+      for (var i = firstPossibleNeedle; i < needlesLen; ++i) {
+        var casing = nextCasing(key, lowerKey, upperNeedles[i], lowerNeedles[i], compare, direction);
+        if (casing === null && lowestPossibleCasing === null)
+          firstPossibleNeedle = i + 1;
+        else if (lowestPossibleCasing === null || compare(lowestPossibleCasing, casing) > 0) {
+          lowestPossibleCasing = casing;
+        }
+      }
+      if (lowestPossibleCasing !== null) {
+        advance(function() {
+          cursor.continue(lowestPossibleCasing + nextKeySuffix);
+        });
+      } else {
+        advance(resolve2);
+      }
+      return false;
+    }
+  });
+  return c;
+}
+function createRange(lower, upper, lowerOpen, upperOpen) {
+  return {
+    type: 2,
+    lower,
+    upper,
+    lowerOpen,
+    upperOpen
+  };
+}
+function rangeEqual(value) {
+  return {
+    type: 1,
+    lower: value,
+    upper: value
+  };
+}
+var WhereClause = class {
+  get Collection() {
+    return this._ctx.table.db.Collection;
+  }
+  between(lower, upper, includeLower, includeUpper) {
+    includeLower = includeLower !== false;
+    includeUpper = includeUpper === true;
+    try {
+      if (this._cmp(lower, upper) > 0 || this._cmp(lower, upper) === 0 && (includeLower || includeUpper) && !(includeLower && includeUpper))
+        return emptyCollection(this);
+      return new this.Collection(this, () => createRange(lower, upper, !includeLower, !includeUpper));
+    } catch (e) {
+      return fail(this, INVALID_KEY_ARGUMENT);
+    }
+  }
+  equals(value) {
+    if (value == null)
+      return fail(this, INVALID_KEY_ARGUMENT);
+    return new this.Collection(this, () => rangeEqual(value));
+  }
+  above(value) {
+    if (value == null)
+      return fail(this, INVALID_KEY_ARGUMENT);
+    return new this.Collection(this, () => createRange(value, void 0, true));
+  }
+  aboveOrEqual(value) {
+    if (value == null)
+      return fail(this, INVALID_KEY_ARGUMENT);
+    return new this.Collection(this, () => createRange(value, void 0, false));
+  }
+  below(value) {
+    if (value == null)
+      return fail(this, INVALID_KEY_ARGUMENT);
+    return new this.Collection(this, () => createRange(void 0, value, false, true));
+  }
+  belowOrEqual(value) {
+    if (value == null)
+      return fail(this, INVALID_KEY_ARGUMENT);
+    return new this.Collection(this, () => createRange(void 0, value));
+  }
+  startsWith(str) {
+    if (typeof str !== "string")
+      return fail(this, STRING_EXPECTED);
+    return this.between(str, str + maxString, true, true);
+  }
+  startsWithIgnoreCase(str) {
+    if (str === "")
+      return this.startsWith(str);
+    return addIgnoreCaseAlgorithm(this, (x, a) => x.indexOf(a[0]) === 0, [str], maxString);
+  }
+  equalsIgnoreCase(str) {
+    return addIgnoreCaseAlgorithm(this, (x, a) => x === a[0], [str], "");
+  }
+  anyOfIgnoreCase() {
+    var set = getArrayOf.apply(NO_CHAR_ARRAY, arguments);
+    if (set.length === 0)
+      return emptyCollection(this);
+    return addIgnoreCaseAlgorithm(this, (x, a) => a.indexOf(x) !== -1, set, "");
+  }
+  startsWithAnyOfIgnoreCase() {
+    var set = getArrayOf.apply(NO_CHAR_ARRAY, arguments);
+    if (set.length === 0)
+      return emptyCollection(this);
+    return addIgnoreCaseAlgorithm(this, (x, a) => a.some((n) => x.indexOf(n) === 0), set, maxString);
+  }
+  anyOf() {
+    const set = getArrayOf.apply(NO_CHAR_ARRAY, arguments);
+    let compare = this._cmp;
+    try {
+      set.sort(compare);
+    } catch (e) {
+      return fail(this, INVALID_KEY_ARGUMENT);
+    }
+    if (set.length === 0)
+      return emptyCollection(this);
+    const c = new this.Collection(this, () => createRange(set[0], set[set.length - 1]));
+    c._ondirectionchange = (direction) => {
+      compare = direction === "next" ? this._ascending : this._descending;
+      set.sort(compare);
+    };
+    let i = 0;
+    c._addAlgorithm((cursor, advance, resolve2) => {
+      const key = cursor.key;
+      while (compare(key, set[i]) > 0) {
+        ++i;
+        if (i === set.length) {
+          advance(resolve2);
+          return false;
+        }
+      }
+      if (compare(key, set[i]) === 0) {
+        return true;
+      } else {
+        advance(() => {
+          cursor.continue(set[i]);
+        });
+        return false;
+      }
+    });
+    return c;
+  }
+  notEqual(value) {
+    return this.inAnyRange([[minKey, value], [value, this.db._maxKey]], { includeLowers: false, includeUppers: false });
+  }
+  noneOf() {
+    const set = getArrayOf.apply(NO_CHAR_ARRAY, arguments);
+    if (set.length === 0)
+      return new this.Collection(this);
+    try {
+      set.sort(this._ascending);
+    } catch (e) {
+      return fail(this, INVALID_KEY_ARGUMENT);
+    }
+    const ranges = set.reduce((res, val) => res ? res.concat([[res[res.length - 1][1], val]]) : [[minKey, val]], null);
+    ranges.push([set[set.length - 1], this.db._maxKey]);
+    return this.inAnyRange(ranges, { includeLowers: false, includeUppers: false });
+  }
+  inAnyRange(ranges, options) {
+    const cmp2 = this._cmp, ascending = this._ascending, descending = this._descending, min2 = this._min, max2 = this._max;
+    if (ranges.length === 0)
+      return emptyCollection(this);
+    if (!ranges.every((range) => range[0] !== void 0 && range[1] !== void 0 && ascending(range[0], range[1]) <= 0)) {
+      return fail(this, "First argument to inAnyRange() must be an Array of two-value Arrays [lower,upper] where upper must not be lower than lower", exceptions.InvalidArgument);
+    }
+    const includeLowers = !options || options.includeLowers !== false;
+    const includeUppers = options && options.includeUppers === true;
+    function addRange2(ranges2, newRange) {
+      let i = 0, l = ranges2.length;
+      for (; i < l; ++i) {
+        const range = ranges2[i];
+        if (cmp2(newRange[0], range[1]) < 0 && cmp2(newRange[1], range[0]) > 0) {
+          range[0] = min2(range[0], newRange[0]);
+          range[1] = max2(range[1], newRange[1]);
+          break;
+        }
+      }
+      if (i === l)
+        ranges2.push(newRange);
+      return ranges2;
+    }
+    let sortDirection = ascending;
+    function rangeSorter(a, b) {
+      return sortDirection(a[0], b[0]);
+    }
+    let set;
+    try {
+      set = ranges.reduce(addRange2, []);
+      set.sort(rangeSorter);
+    } catch (ex) {
+      return fail(this, INVALID_KEY_ARGUMENT);
+    }
+    let rangePos = 0;
+    const keyIsBeyondCurrentEntry = includeUppers ? (key) => ascending(key, set[rangePos][1]) > 0 : (key) => ascending(key, set[rangePos][1]) >= 0;
+    const keyIsBeforeCurrentEntry = includeLowers ? (key) => descending(key, set[rangePos][0]) > 0 : (key) => descending(key, set[rangePos][0]) >= 0;
+    function keyWithinCurrentRange(key) {
+      return !keyIsBeyondCurrentEntry(key) && !keyIsBeforeCurrentEntry(key);
+    }
+    let checkKey = keyIsBeyondCurrentEntry;
+    const c = new this.Collection(this, () => createRange(set[0][0], set[set.length - 1][1], !includeLowers, !includeUppers));
+    c._ondirectionchange = (direction) => {
+      if (direction === "next") {
+        checkKey = keyIsBeyondCurrentEntry;
+        sortDirection = ascending;
+      } else {
+        checkKey = keyIsBeforeCurrentEntry;
+        sortDirection = descending;
+      }
+      set.sort(rangeSorter);
+    };
+    c._addAlgorithm((cursor, advance, resolve2) => {
+      var key = cursor.key;
+      while (checkKey(key)) {
+        ++rangePos;
+        if (rangePos === set.length) {
+          advance(resolve2);
+          return false;
+        }
+      }
+      if (keyWithinCurrentRange(key)) {
+        return true;
+      } else if (this._cmp(key, set[rangePos][1]) === 0 || this._cmp(key, set[rangePos][0]) === 0) {
+        return false;
+      } else {
+        advance(() => {
+          if (sortDirection === ascending)
+            cursor.continue(set[rangePos][0]);
+          else
+            cursor.continue(set[rangePos][1]);
+        });
+        return false;
+      }
+    });
+    return c;
+  }
+  startsWithAnyOf() {
+    const set = getArrayOf.apply(NO_CHAR_ARRAY, arguments);
+    if (!set.every((s) => typeof s === "string")) {
+      return fail(this, "startsWithAnyOf() only works with strings");
+    }
+    if (set.length === 0)
+      return emptyCollection(this);
+    return this.inAnyRange(set.map((str) => [str, str + maxString]));
+  }
+};
+function createWhereClauseConstructor(db) {
+  return makeClassConstructor(WhereClause.prototype, function WhereClause2(table, index, orCollection) {
+    this.db = db;
+    this._ctx = {
+      table,
+      index: index === ":id" ? null : index,
+      or: orCollection
+    };
+    const indexedDB2 = db._deps.indexedDB;
+    if (!indexedDB2)
+      throw new exceptions.MissingAPI();
+    this._cmp = this._ascending = indexedDB2.cmp.bind(indexedDB2);
+    this._descending = (a, b) => indexedDB2.cmp(b, a);
+    this._max = (a, b) => indexedDB2.cmp(a, b) > 0 ? a : b;
+    this._min = (a, b) => indexedDB2.cmp(a, b) < 0 ? a : b;
+    this._IDBKeyRange = db._deps.IDBKeyRange;
+  });
+}
+function eventRejectHandler(reject2) {
+  return wrap(function(event) {
+    preventDefault(event);
+    reject2(event.target.error);
+    return false;
+  });
+}
+function preventDefault(event) {
+  if (event.stopPropagation)
+    event.stopPropagation();
+  if (event.preventDefault)
+    event.preventDefault();
+}
+var DEXIE_STORAGE_MUTATED_EVENT_NAME = "storagemutated";
+var STORAGE_MUTATED_DOM_EVENT_NAME = "x-storagemutated-1";
+var globalEvents = Events(null, DEXIE_STORAGE_MUTATED_EVENT_NAME);
+var Transaction = class {
+  _lock() {
+    assert(!PSD.global);
+    ++this._reculock;
+    if (this._reculock === 1 && !PSD.global)
+      PSD.lockOwnerFor = this;
+    return this;
+  }
+  _unlock() {
+    assert(!PSD.global);
+    if (--this._reculock === 0) {
+      if (!PSD.global)
+        PSD.lockOwnerFor = null;
+      while (this._blockedFuncs.length > 0 && !this._locked()) {
+        var fnAndPSD = this._blockedFuncs.shift();
+        try {
+          usePSD(fnAndPSD[1], fnAndPSD[0]);
+        } catch (e) {
+        }
+      }
+    }
+    return this;
+  }
+  _locked() {
+    return this._reculock && PSD.lockOwnerFor !== this;
+  }
+  create(idbtrans) {
+    if (!this.mode)
+      return this;
+    const idbdb = this.db.idbdb;
+    const dbOpenError = this.db._state.dbOpenError;
+    assert(!this.idbtrans);
+    if (!idbtrans && !idbdb) {
+      switch (dbOpenError && dbOpenError.name) {
+        case "DatabaseClosedError":
+          throw new exceptions.DatabaseClosed(dbOpenError);
+        case "MissingAPIError":
+          throw new exceptions.MissingAPI(dbOpenError.message, dbOpenError);
+        default:
+          throw new exceptions.OpenFailed(dbOpenError);
+      }
+    }
+    if (!this.active)
+      throw new exceptions.TransactionInactive();
+    assert(this._completion._state === null);
+    idbtrans = this.idbtrans = idbtrans || (this.db.core ? this.db.core.transaction(this.storeNames, this.mode, { durability: this.chromeTransactionDurability }) : idbdb.transaction(this.storeNames, this.mode, { durability: this.chromeTransactionDurability }));
+    idbtrans.onerror = wrap((ev) => {
+      preventDefault(ev);
+      this._reject(idbtrans.error);
+    });
+    idbtrans.onabort = wrap((ev) => {
+      preventDefault(ev);
+      this.active && this._reject(new exceptions.Abort(idbtrans.error));
+      this.active = false;
+      this.on("abort").fire(ev);
+    });
+    idbtrans.oncomplete = wrap(() => {
+      this.active = false;
+      this._resolve();
+      if ("mutatedParts" in idbtrans) {
+        globalEvents.storagemutated.fire(idbtrans["mutatedParts"]);
+      }
+    });
+    return this;
+  }
+  _promise(mode, fn, bWriteLock) {
+    if (mode === "readwrite" && this.mode !== "readwrite")
+      return rejection(new exceptions.ReadOnly("Transaction is readonly"));
+    if (!this.active)
+      return rejection(new exceptions.TransactionInactive());
+    if (this._locked()) {
+      return new DexiePromise((resolve2, reject2) => {
+        this._blockedFuncs.push([() => {
+          this._promise(mode, fn, bWriteLock).then(resolve2, reject2);
+        }, PSD]);
+      });
+    } else if (bWriteLock) {
+      return newScope(() => {
+        var p2 = new DexiePromise((resolve2, reject2) => {
+          this._lock();
+          const rv = fn(resolve2, reject2, this);
+          if (rv && rv.then)
+            rv.then(resolve2, reject2);
+        });
+        p2.finally(() => this._unlock());
+        p2._lib = true;
+        return p2;
+      });
+    } else {
+      var p = new DexiePromise((resolve2, reject2) => {
+        var rv = fn(resolve2, reject2, this);
+        if (rv && rv.then)
+          rv.then(resolve2, reject2);
+      });
+      p._lib = true;
+      return p;
+    }
+  }
+  _root() {
+    return this.parent ? this.parent._root() : this;
+  }
+  waitFor(promiseLike) {
+    var root = this._root();
+    const promise = DexiePromise.resolve(promiseLike);
+    if (root._waitingFor) {
+      root._waitingFor = root._waitingFor.then(() => promise);
+    } else {
+      root._waitingFor = promise;
+      root._waitingQueue = [];
+      var store = root.idbtrans.objectStore(root.storeNames[0]);
+      (function spin() {
+        ++root._spinCount;
+        while (root._waitingQueue.length)
+          root._waitingQueue.shift()();
+        if (root._waitingFor)
+          store.get(-Infinity).onsuccess = spin;
+      })();
+    }
+    var currentWaitPromise = root._waitingFor;
+    return new DexiePromise((resolve2, reject2) => {
+      promise.then((res) => root._waitingQueue.push(wrap(resolve2.bind(null, res))), (err) => root._waitingQueue.push(wrap(reject2.bind(null, err)))).finally(() => {
+        if (root._waitingFor === currentWaitPromise) {
+          root._waitingFor = null;
+        }
+      });
+    });
+  }
+  abort() {
+    if (this.active) {
+      this.active = false;
+      if (this.idbtrans)
+        this.idbtrans.abort();
+      this._reject(new exceptions.Abort());
+    }
+  }
+  table(tableName) {
+    const memoizedTables = this._memoizedTables || (this._memoizedTables = {});
+    if (hasOwn(memoizedTables, tableName))
+      return memoizedTables[tableName];
+    const tableSchema = this.schema[tableName];
+    if (!tableSchema) {
+      throw new exceptions.NotFound("Table " + tableName + " not part of transaction");
+    }
+    const transactionBoundTable = new this.db.Table(tableName, tableSchema, this);
+    transactionBoundTable.core = this.db.core.table(tableName);
+    memoizedTables[tableName] = transactionBoundTable;
+    return transactionBoundTable;
+  }
+};
+function createTransactionConstructor(db) {
+  return makeClassConstructor(Transaction.prototype, function Transaction3(mode, storeNames, dbschema, chromeTransactionDurability, parent) {
+    this.db = db;
+    this.mode = mode;
+    this.storeNames = storeNames;
+    this.schema = dbschema;
+    this.chromeTransactionDurability = chromeTransactionDurability;
+    this.idbtrans = null;
+    this.on = Events(this, "complete", "error", "abort");
+    this.parent = parent || null;
+    this.active = true;
+    this._reculock = 0;
+    this._blockedFuncs = [];
+    this._resolve = null;
+    this._reject = null;
+    this._waitingFor = null;
+    this._waitingQueue = null;
+    this._spinCount = 0;
+    this._completion = new DexiePromise((resolve2, reject2) => {
+      this._resolve = resolve2;
+      this._reject = reject2;
+    });
+    this._completion.then(() => {
+      this.active = false;
+      this.on.complete.fire();
+    }, (e) => {
+      var wasActive = this.active;
+      this.active = false;
+      this.on.error.fire(e);
+      this.parent ? this.parent._reject(e) : wasActive && this.idbtrans && this.idbtrans.abort();
+      return rejection(e);
+    });
+  });
+}
+function createIndexSpec(name, keyPath, unique, multi, auto, compound, isPrimKey) {
+  return {
+    name,
+    keyPath,
+    unique,
+    multi,
+    auto,
+    compound,
+    src: (unique && !isPrimKey ? "&" : "") + (multi ? "*" : "") + (auto ? "++" : "") + nameFromKeyPath(keyPath)
+  };
+}
+function nameFromKeyPath(keyPath) {
+  return typeof keyPath === "string" ? keyPath : keyPath ? "[" + [].join.call(keyPath, "+") + "]" : "";
+}
+function createTableSchema(name, primKey, indexes) {
+  return {
+    name,
+    primKey,
+    indexes,
+    mappedClass: null,
+    idxByName: arrayToObject(indexes, (index) => [index.name, index])
+  };
+}
+function safariMultiStoreFix(storeNames) {
+  return storeNames.length === 1 ? storeNames[0] : storeNames;
+}
+var getMaxKey = (IdbKeyRange) => {
+  try {
+    IdbKeyRange.only([[]]);
+    getMaxKey = () => [[]];
+    return [[]];
+  } catch (e) {
+    getMaxKey = () => maxString;
+    return maxString;
+  }
+};
+function getKeyExtractor(keyPath) {
+  if (keyPath == null) {
+    return () => void 0;
+  } else if (typeof keyPath === "string") {
+    return getSinglePathKeyExtractor(keyPath);
+  } else {
+    return (obj) => getByKeyPath(obj, keyPath);
+  }
+}
+function getSinglePathKeyExtractor(keyPath) {
+  const split = keyPath.split(".");
+  if (split.length === 1) {
+    return (obj) => obj[keyPath];
+  } else {
+    return (obj) => getByKeyPath(obj, keyPath);
+  }
+}
+function arrayify(arrayLike) {
+  return [].slice.call(arrayLike);
+}
+var _id_counter = 0;
+function getKeyPathAlias(keyPath) {
+  return keyPath == null ? ":id" : typeof keyPath === "string" ? keyPath : `[${keyPath.join("+")}]`;
+}
+function createDBCore(db, IdbKeyRange, tmpTrans) {
+  function extractSchema(db2, trans) {
+    const tables2 = arrayify(db2.objectStoreNames);
+    return {
+      schema: {
+        name: db2.name,
+        tables: tables2.map((table) => trans.objectStore(table)).map((store) => {
+          const { keyPath, autoIncrement } = store;
+          const compound = isArray2(keyPath);
+          const outbound = keyPath == null;
+          const indexByKeyPath = {};
+          const result = {
+            name: store.name,
+            primaryKey: {
+              name: null,
+              isPrimaryKey: true,
+              outbound,
+              compound,
+              keyPath,
+              autoIncrement,
+              unique: true,
+              extractKey: getKeyExtractor(keyPath)
+            },
+            indexes: arrayify(store.indexNames).map((indexName) => store.index(indexName)).map((index) => {
+              const { name, unique, multiEntry, keyPath: keyPath2 } = index;
+              const compound2 = isArray2(keyPath2);
+              const result2 = {
+                name,
+                compound: compound2,
+                keyPath: keyPath2,
+                unique,
+                multiEntry,
+                extractKey: getKeyExtractor(keyPath2)
+              };
+              indexByKeyPath[getKeyPathAlias(keyPath2)] = result2;
+              return result2;
+            }),
+            getIndexByKeyPath: (keyPath2) => indexByKeyPath[getKeyPathAlias(keyPath2)]
+          };
+          indexByKeyPath[":id"] = result.primaryKey;
+          if (keyPath != null) {
+            indexByKeyPath[getKeyPathAlias(keyPath)] = result.primaryKey;
+          }
+          return result;
+        })
+      },
+      hasGetAll: tables2.length > 0 && "getAll" in trans.objectStore(tables2[0]) && !(typeof navigator !== "undefined" && /Safari/.test(navigator.userAgent) && !/(Chrome\/|Edge\/)/.test(navigator.userAgent) && [].concat(navigator.userAgent.match(/Safari\/(\d*)/))[1] < 604)
+    };
+  }
+  function makeIDBKeyRange(range) {
+    if (range.type === 3)
+      return null;
+    if (range.type === 4)
+      throw new Error("Cannot convert never type to IDBKeyRange");
+    const { lower, upper, lowerOpen, upperOpen } = range;
+    const idbRange = lower === void 0 ? upper === void 0 ? null : IdbKeyRange.upperBound(upper, !!upperOpen) : upper === void 0 ? IdbKeyRange.lowerBound(lower, !!lowerOpen) : IdbKeyRange.bound(lower, upper, !!lowerOpen, !!upperOpen);
+    return idbRange;
+  }
+  function createDbCoreTable(tableSchema) {
+    const tableName = tableSchema.name;
+    function mutate({ trans, type: type2, keys: keys3, values, range }) {
+      return new Promise((resolve2, reject2) => {
+        resolve2 = wrap(resolve2);
+        const store = trans.objectStore(tableName);
+        const outbound = store.keyPath == null;
+        const isAddOrPut = type2 === "put" || type2 === "add";
+        if (!isAddOrPut && type2 !== "delete" && type2 !== "deleteRange")
+          throw new Error("Invalid operation type: " + type2);
+        const { length: length3 } = keys3 || values || { length: 1 };
+        if (keys3 && values && keys3.length !== values.length) {
+          throw new Error("Given keys array must have same length as given values array.");
+        }
+        if (length3 === 0)
+          return resolve2({ numFailures: 0, failures: {}, results: [], lastResult: void 0 });
+        let req;
+        const reqs = [];
+        const failures = [];
+        let numFailures = 0;
+        const errorHandler = (event) => {
+          ++numFailures;
+          preventDefault(event);
+        };
+        if (type2 === "deleteRange") {
+          if (range.type === 4)
+            return resolve2({ numFailures, failures, results: [], lastResult: void 0 });
+          if (range.type === 3)
+            reqs.push(req = store.clear());
+          else
+            reqs.push(req = store.delete(makeIDBKeyRange(range)));
+        } else {
+          const [args1, args2] = isAddOrPut ? outbound ? [values, keys3] : [values, null] : [keys3, null];
+          if (isAddOrPut) {
+            for (let i = 0; i < length3; ++i) {
+              reqs.push(req = args2 && args2[i] !== void 0 ? store[type2](args1[i], args2[i]) : store[type2](args1[i]));
+              req.onerror = errorHandler;
+            }
+          } else {
+            for (let i = 0; i < length3; ++i) {
+              reqs.push(req = store[type2](args1[i]));
+              req.onerror = errorHandler;
+            }
+          }
+        }
+        const done = (event) => {
+          const lastResult = event.target.result;
+          reqs.forEach((req2, i) => req2.error != null && (failures[i] = req2.error));
+          resolve2({
+            numFailures,
+            failures,
+            results: type2 === "delete" ? keys3 : reqs.map((req2) => req2.result),
+            lastResult
+          });
+        };
+        req.onerror = (event) => {
+          errorHandler(event);
+          done(event);
+        };
+        req.onsuccess = done;
+      });
+    }
+    function openCursor2({ trans, values, query: query2, reverse, unique }) {
+      return new Promise((resolve2, reject2) => {
+        resolve2 = wrap(resolve2);
+        const { index, range } = query2;
+        const store = trans.objectStore(tableName);
+        const source = index.isPrimaryKey ? store : store.index(index.name);
+        const direction = reverse ? unique ? "prevunique" : "prev" : unique ? "nextunique" : "next";
+        const req = values || !("openKeyCursor" in source) ? source.openCursor(makeIDBKeyRange(range), direction) : source.openKeyCursor(makeIDBKeyRange(range), direction);
+        req.onerror = eventRejectHandler(reject2);
+        req.onsuccess = wrap((ev) => {
+          const cursor = req.result;
+          if (!cursor) {
+            resolve2(null);
+            return;
+          }
+          cursor.___id = ++_id_counter;
+          cursor.done = false;
+          const _cursorContinue = cursor.continue.bind(cursor);
+          let _cursorContinuePrimaryKey = cursor.continuePrimaryKey;
+          if (_cursorContinuePrimaryKey)
+            _cursorContinuePrimaryKey = _cursorContinuePrimaryKey.bind(cursor);
+          const _cursorAdvance = cursor.advance.bind(cursor);
+          const doThrowCursorIsNotStarted = () => {
+            throw new Error("Cursor not started");
+          };
+          const doThrowCursorIsStopped = () => {
+            throw new Error("Cursor not stopped");
+          };
+          cursor.trans = trans;
+          cursor.stop = cursor.continue = cursor.continuePrimaryKey = cursor.advance = doThrowCursorIsNotStarted;
+          cursor.fail = wrap(reject2);
+          cursor.next = function() {
+            let gotOne = 1;
+            return this.start(() => gotOne-- ? this.continue() : this.stop()).then(() => this);
+          };
+          cursor.start = (callback) => {
+            const iterationPromise = new Promise((resolveIteration, rejectIteration) => {
+              resolveIteration = wrap(resolveIteration);
+              req.onerror = eventRejectHandler(rejectIteration);
+              cursor.fail = rejectIteration;
+              cursor.stop = (value) => {
+                cursor.stop = cursor.continue = cursor.continuePrimaryKey = cursor.advance = doThrowCursorIsStopped;
+                resolveIteration(value);
+              };
+            });
+            const guardedCallback = () => {
+              if (req.result) {
+                try {
+                  callback();
+                } catch (err) {
+                  cursor.fail(err);
+                }
+              } else {
+                cursor.done = true;
+                cursor.start = () => {
+                  throw new Error("Cursor behind last entry");
+                };
+                cursor.stop();
+              }
+            };
+            req.onsuccess = wrap((ev2) => {
+              req.onsuccess = guardedCallback;
+              guardedCallback();
+            });
+            cursor.continue = _cursorContinue;
+            cursor.continuePrimaryKey = _cursorContinuePrimaryKey;
+            cursor.advance = _cursorAdvance;
+            guardedCallback();
+            return iterationPromise;
+          };
+          resolve2(cursor);
+        }, reject2);
+      });
+    }
+    function query(hasGetAll2) {
+      return (request) => {
+        return new Promise((resolve2, reject2) => {
+          resolve2 = wrap(resolve2);
+          const { trans, values, limit, query: query2 } = request;
+          const nonInfinitLimit = limit === Infinity ? void 0 : limit;
+          const { index, range } = query2;
+          const store = trans.objectStore(tableName);
+          const source = index.isPrimaryKey ? store : store.index(index.name);
+          const idbKeyRange = makeIDBKeyRange(range);
+          if (limit === 0)
+            return resolve2({ result: [] });
+          if (hasGetAll2) {
+            const req = values ? source.getAll(idbKeyRange, nonInfinitLimit) : source.getAllKeys(idbKeyRange, nonInfinitLimit);
+            req.onsuccess = (event) => resolve2({ result: event.target.result });
+            req.onerror = eventRejectHandler(reject2);
+          } else {
+            let count = 0;
+            const req = values || !("openKeyCursor" in source) ? source.openCursor(idbKeyRange) : source.openKeyCursor(idbKeyRange);
+            const result = [];
+            req.onsuccess = (event) => {
+              const cursor = req.result;
+              if (!cursor)
+                return resolve2({ result });
+              result.push(values ? cursor.value : cursor.primaryKey);
+              if (++count === limit)
+                return resolve2({ result });
+              cursor.continue();
+            };
+            req.onerror = eventRejectHandler(reject2);
+          }
+        });
+      };
+    }
+    return {
+      name: tableName,
+      schema: tableSchema,
+      mutate,
+      getMany({ trans, keys: keys3 }) {
+        return new Promise((resolve2, reject2) => {
+          resolve2 = wrap(resolve2);
+          const store = trans.objectStore(tableName);
+          const length3 = keys3.length;
+          const result = new Array(length3);
+          let keyCount = 0;
+          let callbackCount = 0;
+          let req;
+          const successHandler = (event) => {
+            const req2 = event.target;
+            if ((result[req2._pos] = req2.result) != null)
+              ;
+            if (++callbackCount === keyCount)
+              resolve2(result);
+          };
+          const errorHandler = eventRejectHandler(reject2);
+          for (let i = 0; i < length3; ++i) {
+            const key = keys3[i];
+            if (key != null) {
+              req = store.get(keys3[i]);
+              req._pos = i;
+              req.onsuccess = successHandler;
+              req.onerror = errorHandler;
+              ++keyCount;
+            }
+          }
+          if (keyCount === 0)
+            resolve2(result);
+        });
+      },
+      get({ trans, key }) {
+        return new Promise((resolve2, reject2) => {
+          resolve2 = wrap(resolve2);
+          const store = trans.objectStore(tableName);
+          const req = store.get(key);
+          req.onsuccess = (event) => resolve2(event.target.result);
+          req.onerror = eventRejectHandler(reject2);
+        });
+      },
+      query: query(hasGetAll),
+      openCursor: openCursor2,
+      count({ query: query2, trans }) {
+        const { index, range } = query2;
+        return new Promise((resolve2, reject2) => {
+          const store = trans.objectStore(tableName);
+          const source = index.isPrimaryKey ? store : store.index(index.name);
+          const idbKeyRange = makeIDBKeyRange(range);
+          const req = idbKeyRange ? source.count(idbKeyRange) : source.count();
+          req.onsuccess = wrap((ev) => resolve2(ev.target.result));
+          req.onerror = eventRejectHandler(reject2);
+        });
+      }
+    };
+  }
+  const { schema, hasGetAll } = extractSchema(db, tmpTrans);
+  const tables = schema.tables.map((tableSchema) => createDbCoreTable(tableSchema));
+  const tableMap = {};
+  tables.forEach((table) => tableMap[table.name] = table);
+  return {
+    stack: "dbcore",
+    transaction: db.transaction.bind(db),
+    table(name) {
+      const result = tableMap[name];
+      if (!result)
+        throw new Error(`Table '${name}' not found`);
+      return tableMap[name];
+    },
+    MIN_KEY: -Infinity,
+    MAX_KEY: getMaxKey(IdbKeyRange),
+    schema
+  };
+}
+function createMiddlewareStack(stackImpl, middlewares) {
+  return middlewares.reduce((down, { create: create7 }) => ({ ...down, ...create7(down) }), stackImpl);
+}
+function createMiddlewareStacks(middlewares, idbdb, { IDBKeyRange, indexedDB: indexedDB2 }, tmpTrans) {
+  const dbcore = createMiddlewareStack(createDBCore(idbdb, IDBKeyRange, tmpTrans), middlewares.dbcore);
+  return {
+    dbcore
+  };
+}
+function generateMiddlewareStacks({ _novip: db }, tmpTrans) {
+  const idbdb = tmpTrans.db;
+  const stacks = createMiddlewareStacks(db._middlewares, idbdb, db._deps, tmpTrans);
+  db.core = stacks.dbcore;
+  db.tables.forEach((table) => {
+    const tableName = table.name;
+    if (db.core.schema.tables.some((tbl) => tbl.name === tableName)) {
+      table.core = db.core.table(tableName);
+      if (db[tableName] instanceof db.Table) {
+        db[tableName].core = table.core;
+      }
+    }
+  });
+}
+function setApiOnPlace({ _novip: db }, objs, tableNames, dbschema) {
+  tableNames.forEach((tableName) => {
+    const schema = dbschema[tableName];
+    objs.forEach((obj) => {
+      const propDesc = getPropertyDescriptor(obj, tableName);
+      if (!propDesc || "value" in propDesc && propDesc.value === void 0) {
+        if (obj === db.Transaction.prototype || obj instanceof db.Transaction) {
+          setProp(obj, tableName, {
+            get() {
+              return this.table(tableName);
+            },
+            set(value) {
+              defineProperty(this, tableName, { value, writable: true, configurable: true, enumerable: true });
+            }
+          });
+        } else {
+          obj[tableName] = new db.Table(tableName, schema);
+        }
+      }
+    });
+  });
+}
+function removeTablesApi({ _novip: db }, objs) {
+  objs.forEach((obj) => {
+    for (let key in obj) {
+      if (obj[key] instanceof db.Table)
+        delete obj[key];
+    }
+  });
+}
+function lowerVersionFirst(a, b) {
+  return a._cfg.version - b._cfg.version;
+}
+function runUpgraders(db, oldVersion, idbUpgradeTrans, reject2) {
+  const globalSchema = db._dbSchema;
+  const trans = db._createTransaction("readwrite", db._storeNames, globalSchema);
+  trans.create(idbUpgradeTrans);
+  trans._completion.catch(reject2);
+  const rejectTransaction = trans._reject.bind(trans);
+  const transless = PSD.transless || PSD;
+  newScope(() => {
+    PSD.trans = trans;
+    PSD.transless = transless;
+    if (oldVersion === 0) {
+      keys(globalSchema).forEach((tableName) => {
+        createTable(idbUpgradeTrans, tableName, globalSchema[tableName].primKey, globalSchema[tableName].indexes);
+      });
+      generateMiddlewareStacks(db, idbUpgradeTrans);
+      DexiePromise.follow(() => db.on.populate.fire(trans)).catch(rejectTransaction);
+    } else
+      updateTablesAndIndexes(db, oldVersion, trans, idbUpgradeTrans).catch(rejectTransaction);
+  });
+}
+function updateTablesAndIndexes({ _novip: db }, oldVersion, trans, idbUpgradeTrans) {
+  const queue = [];
+  const versions = db._versions;
+  let globalSchema = db._dbSchema = buildGlobalSchema(db, db.idbdb, idbUpgradeTrans);
+  let anyContentUpgraderHasRun = false;
+  const versToRun = versions.filter((v) => v._cfg.version >= oldVersion);
+  versToRun.forEach((version) => {
+    queue.push(() => {
+      const oldSchema = globalSchema;
+      const newSchema = version._cfg.dbschema;
+      adjustToExistingIndexNames(db, oldSchema, idbUpgradeTrans);
+      adjustToExistingIndexNames(db, newSchema, idbUpgradeTrans);
+      globalSchema = db._dbSchema = newSchema;
+      const diff = getSchemaDiff(oldSchema, newSchema);
+      diff.add.forEach((tuple) => {
+        createTable(idbUpgradeTrans, tuple[0], tuple[1].primKey, tuple[1].indexes);
+      });
+      diff.change.forEach((change) => {
+        if (change.recreate) {
+          throw new exceptions.Upgrade("Not yet support for changing primary key");
+        } else {
+          const store = idbUpgradeTrans.objectStore(change.name);
+          change.add.forEach((idx) => addIndex(store, idx));
+          change.change.forEach((idx) => {
+            store.deleteIndex(idx.name);
+            addIndex(store, idx);
+          });
+          change.del.forEach((idxName) => store.deleteIndex(idxName));
+        }
+      });
+      const contentUpgrade = version._cfg.contentUpgrade;
+      if (contentUpgrade && version._cfg.version > oldVersion) {
+        generateMiddlewareStacks(db, idbUpgradeTrans);
+        trans._memoizedTables = {};
+        anyContentUpgraderHasRun = true;
+        let upgradeSchema = shallowClone(newSchema);
+        diff.del.forEach((table) => {
+          upgradeSchema[table] = oldSchema[table];
+        });
+        removeTablesApi(db, [db.Transaction.prototype]);
+        setApiOnPlace(db, [db.Transaction.prototype], keys(upgradeSchema), upgradeSchema);
+        trans.schema = upgradeSchema;
+        const contentUpgradeIsAsync = isAsyncFunction(contentUpgrade);
+        if (contentUpgradeIsAsync) {
+          incrementExpectedAwaits();
+        }
+        let returnValue;
+        const promiseFollowed = DexiePromise.follow(() => {
+          returnValue = contentUpgrade(trans);
+          if (returnValue) {
+            if (contentUpgradeIsAsync) {
+              var decrementor = decrementExpectedAwaits.bind(null, null);
+              returnValue.then(decrementor, decrementor);
+            }
+          }
+        });
+        return returnValue && typeof returnValue.then === "function" ? DexiePromise.resolve(returnValue) : promiseFollowed.then(() => returnValue);
+      }
+    });
+    queue.push((idbtrans) => {
+      if (!anyContentUpgraderHasRun || !hasIEDeleteObjectStoreBug) {
+        const newSchema = version._cfg.dbschema;
+        deleteRemovedTables(newSchema, idbtrans);
+      }
+      removeTablesApi(db, [db.Transaction.prototype]);
+      setApiOnPlace(db, [db.Transaction.prototype], db._storeNames, db._dbSchema);
+      trans.schema = db._dbSchema;
+    });
+  });
+  function runQueue() {
+    return queue.length ? DexiePromise.resolve(queue.shift()(trans.idbtrans)).then(runQueue) : DexiePromise.resolve();
+  }
+  return runQueue().then(() => {
+    createMissingTables(globalSchema, idbUpgradeTrans);
+  });
+}
+function getSchemaDiff(oldSchema, newSchema) {
+  const diff = {
+    del: [],
+    add: [],
+    change: []
+  };
+  let table;
+  for (table in oldSchema) {
+    if (!newSchema[table])
+      diff.del.push(table);
+  }
+  for (table in newSchema) {
+    const oldDef = oldSchema[table], newDef = newSchema[table];
+    if (!oldDef) {
+      diff.add.push([table, newDef]);
+    } else {
+      const change = {
+        name: table,
+        def: newDef,
+        recreate: false,
+        del: [],
+        add: [],
+        change: []
+      };
+      if ("" + (oldDef.primKey.keyPath || "") !== "" + (newDef.primKey.keyPath || "") || oldDef.primKey.auto !== newDef.primKey.auto && !isIEOrEdge) {
+        change.recreate = true;
+        diff.change.push(change);
+      } else {
+        const oldIndexes = oldDef.idxByName;
+        const newIndexes = newDef.idxByName;
+        let idxName;
+        for (idxName in oldIndexes) {
+          if (!newIndexes[idxName])
+            change.del.push(idxName);
+        }
+        for (idxName in newIndexes) {
+          const oldIdx = oldIndexes[idxName], newIdx = newIndexes[idxName];
+          if (!oldIdx)
+            change.add.push(newIdx);
+          else if (oldIdx.src !== newIdx.src)
+            change.change.push(newIdx);
+        }
+        if (change.del.length > 0 || change.add.length > 0 || change.change.length > 0) {
+          diff.change.push(change);
+        }
+      }
+    }
+  }
+  return diff;
+}
+function createTable(idbtrans, tableName, primKey, indexes) {
+  const store = idbtrans.db.createObjectStore(tableName, primKey.keyPath ? { keyPath: primKey.keyPath, autoIncrement: primKey.auto } : { autoIncrement: primKey.auto });
+  indexes.forEach((idx) => addIndex(store, idx));
+  return store;
+}
+function createMissingTables(newSchema, idbtrans) {
+  keys(newSchema).forEach((tableName) => {
+    if (!idbtrans.db.objectStoreNames.contains(tableName)) {
+      createTable(idbtrans, tableName, newSchema[tableName].primKey, newSchema[tableName].indexes);
+    }
+  });
+}
+function deleteRemovedTables(newSchema, idbtrans) {
+  [].slice.call(idbtrans.db.objectStoreNames).forEach((storeName) => newSchema[storeName] == null && idbtrans.db.deleteObjectStore(storeName));
+}
+function addIndex(store, idx) {
+  store.createIndex(idx.name, idx.keyPath, { unique: idx.unique, multiEntry: idx.multi });
+}
+function buildGlobalSchema(db, idbdb, tmpTrans) {
+  const globalSchema = {};
+  const dbStoreNames = slice(idbdb.objectStoreNames, 0);
+  dbStoreNames.forEach((storeName) => {
+    const store = tmpTrans.objectStore(storeName);
+    let keyPath = store.keyPath;
+    const primKey = createIndexSpec(nameFromKeyPath(keyPath), keyPath || "", false, false, !!store.autoIncrement, keyPath && typeof keyPath !== "string", true);
+    const indexes = [];
+    for (let j = 0; j < store.indexNames.length; ++j) {
+      const idbindex = store.index(store.indexNames[j]);
+      keyPath = idbindex.keyPath;
+      var index = createIndexSpec(idbindex.name, keyPath, !!idbindex.unique, !!idbindex.multiEntry, false, keyPath && typeof keyPath !== "string", false);
+      indexes.push(index);
+    }
+    globalSchema[storeName] = createTableSchema(storeName, primKey, indexes);
+  });
+  return globalSchema;
+}
+function readGlobalSchema({ _novip: db }, idbdb, tmpTrans) {
+  db.verno = idbdb.version / 10;
+  const globalSchema = db._dbSchema = buildGlobalSchema(db, idbdb, tmpTrans);
+  db._storeNames = slice(idbdb.objectStoreNames, 0);
+  setApiOnPlace(db, [db._allTables], keys(globalSchema), globalSchema);
+}
+function verifyInstalledSchema(db, tmpTrans) {
+  const installedSchema = buildGlobalSchema(db, db.idbdb, tmpTrans);
+  const diff = getSchemaDiff(installedSchema, db._dbSchema);
+  return !(diff.add.length || diff.change.some((ch) => ch.add.length || ch.change.length));
+}
+function adjustToExistingIndexNames({ _novip: db }, schema, idbtrans) {
+  const storeNames = idbtrans.db.objectStoreNames;
+  for (let i = 0; i < storeNames.length; ++i) {
+    const storeName = storeNames[i];
+    const store = idbtrans.objectStore(storeName);
+    db._hasGetAll = "getAll" in store;
+    for (let j = 0; j < store.indexNames.length; ++j) {
+      const indexName = store.indexNames[j];
+      const keyPath = store.index(indexName).keyPath;
+      const dexieName = typeof keyPath === "string" ? keyPath : "[" + slice(keyPath).join("+") + "]";
+      if (schema[storeName]) {
+        const indexSpec = schema[storeName].idxByName[dexieName];
+        if (indexSpec) {
+          indexSpec.name = indexName;
+          delete schema[storeName].idxByName[dexieName];
+          schema[storeName].idxByName[indexName] = indexSpec;
+        }
+      }
+    }
+  }
+  if (typeof navigator !== "undefined" && /Safari/.test(navigator.userAgent) && !/(Chrome\/|Edge\/)/.test(navigator.userAgent) && _global.WorkerGlobalScope && _global instanceof _global.WorkerGlobalScope && [].concat(navigator.userAgent.match(/Safari\/(\d*)/))[1] < 604) {
+    db._hasGetAll = false;
+  }
+}
+function parseIndexSyntax(primKeyAndIndexes) {
+  return primKeyAndIndexes.split(",").map((index, indexNum) => {
+    index = index.trim();
+    const name = index.replace(/([&*]|\+\+)/g, "");
+    const keyPath = /^\[/.test(name) ? name.match(/^\[(.*)\]$/)[1].split("+") : name;
+    return createIndexSpec(name, keyPath || null, /\&/.test(index), /\*/.test(index), /\+\+/.test(index), isArray2(keyPath), indexNum === 0);
+  });
+}
+var Version = class {
+  _parseStoresSpec(stores, outSchema) {
+    keys(stores).forEach((tableName) => {
+      if (stores[tableName] !== null) {
+        var indexes = parseIndexSyntax(stores[tableName]);
+        var primKey = indexes.shift();
+        if (primKey.multi)
+          throw new exceptions.Schema("Primary key cannot be multi-valued");
+        indexes.forEach((idx) => {
+          if (idx.auto)
+            throw new exceptions.Schema("Only primary key can be marked as autoIncrement (++)");
+          if (!idx.keyPath)
+            throw new exceptions.Schema("Index must have a name and cannot be an empty string");
+        });
+        outSchema[tableName] = createTableSchema(tableName, primKey, indexes);
+      }
+    });
+  }
+  stores(stores) {
+    const db = this.db;
+    this._cfg.storesSource = this._cfg.storesSource ? extend(this._cfg.storesSource, stores) : stores;
+    const versions = db._versions;
+    const storesSpec = {};
+    let dbschema = {};
+    versions.forEach((version) => {
+      extend(storesSpec, version._cfg.storesSource);
+      dbschema = version._cfg.dbschema = {};
+      version._parseStoresSpec(storesSpec, dbschema);
+    });
+    db._dbSchema = dbschema;
+    removeTablesApi(db, [db._allTables, db, db.Transaction.prototype]);
+    setApiOnPlace(db, [db._allTables, db, db.Transaction.prototype, this._cfg.tables], keys(dbschema), dbschema);
+    db._storeNames = keys(dbschema);
+    return this;
+  }
+  upgrade(upgradeFunction) {
+    this._cfg.contentUpgrade = promisableChain(this._cfg.contentUpgrade || nop, upgradeFunction);
+    return this;
+  }
+};
+function createVersionConstructor(db) {
+  return makeClassConstructor(Version.prototype, function Version2(versionNumber) {
+    this.db = db;
+    this._cfg = {
+      version: versionNumber,
+      storesSource: null,
+      dbschema: {},
+      tables: {},
+      contentUpgrade: null
+    };
+  });
+}
+function getDbNamesTable(indexedDB2, IDBKeyRange) {
+  let dbNamesDB = indexedDB2["_dbNamesDB"];
+  if (!dbNamesDB) {
+    dbNamesDB = indexedDB2["_dbNamesDB"] = new Dexie$1(DBNAMES_DB, {
+      addons: [],
+      indexedDB: indexedDB2,
+      IDBKeyRange
+    });
+    dbNamesDB.version(1).stores({ dbnames: "name" });
+  }
+  return dbNamesDB.table("dbnames");
+}
+function hasDatabasesNative(indexedDB2) {
+  return indexedDB2 && typeof indexedDB2.databases === "function";
+}
+function getDatabaseNames({ indexedDB: indexedDB2, IDBKeyRange }) {
+  return hasDatabasesNative(indexedDB2) ? Promise.resolve(indexedDB2.databases()).then((infos) => infos.map((info) => info.name).filter((name) => name !== DBNAMES_DB)) : getDbNamesTable(indexedDB2, IDBKeyRange).toCollection().primaryKeys();
+}
+function _onDatabaseCreated({ indexedDB: indexedDB2, IDBKeyRange }, name) {
+  !hasDatabasesNative(indexedDB2) && name !== DBNAMES_DB && getDbNamesTable(indexedDB2, IDBKeyRange).put({ name }).catch(nop);
+}
+function _onDatabaseDeleted({ indexedDB: indexedDB2, IDBKeyRange }, name) {
+  !hasDatabasesNative(indexedDB2) && name !== DBNAMES_DB && getDbNamesTable(indexedDB2, IDBKeyRange).delete(name).catch(nop);
+}
+function vip(fn) {
+  return newScope(function() {
+    PSD.letThrough = true;
+    return fn();
+  });
+}
+function idbReady() {
+  var isSafari = !navigator.userAgentData && /Safari\//.test(navigator.userAgent) && !/Chrom(e|ium)\//.test(navigator.userAgent);
+  if (!isSafari || !indexedDB.databases)
+    return Promise.resolve();
+  var intervalId;
+  return new Promise(function(resolve2) {
+    var tryIdb = function() {
+      return indexedDB.databases().finally(resolve2);
+    };
+    intervalId = setInterval(tryIdb, 100);
+    tryIdb();
+  }).finally(function() {
+    return clearInterval(intervalId);
+  });
+}
+function dexieOpen(db) {
+  const state = db._state;
+  const { indexedDB: indexedDB2 } = db._deps;
+  if (state.isBeingOpened || db.idbdb)
+    return state.dbReadyPromise.then(() => state.dbOpenError ? rejection(state.dbOpenError) : db);
+  debug && (state.openCanceller._stackHolder = getErrorWithStack());
+  state.isBeingOpened = true;
+  state.dbOpenError = null;
+  state.openComplete = false;
+  const openCanceller = state.openCanceller;
+  function throwIfCancelled() {
+    if (state.openCanceller !== openCanceller)
+      throw new exceptions.DatabaseClosed("db.open() was cancelled");
+  }
+  let resolveDbReady = state.dbReadyResolve, upgradeTransaction = null, wasCreated = false;
+  const tryOpenDB = () => new DexiePromise((resolve2, reject2) => {
+    throwIfCancelled();
+    if (!indexedDB2)
+      throw new exceptions.MissingAPI();
+    const dbName = db.name;
+    const req = state.autoSchema ? indexedDB2.open(dbName) : indexedDB2.open(dbName, Math.round(db.verno * 10));
+    if (!req)
+      throw new exceptions.MissingAPI();
+    req.onerror = eventRejectHandler(reject2);
+    req.onblocked = wrap(db._fireOnBlocked);
+    req.onupgradeneeded = wrap((e) => {
+      upgradeTransaction = req.transaction;
+      if (state.autoSchema && !db._options.allowEmptyDB) {
+        req.onerror = preventDefault;
+        upgradeTransaction.abort();
+        req.result.close();
+        const delreq = indexedDB2.deleteDatabase(dbName);
+        delreq.onsuccess = delreq.onerror = wrap(() => {
+          reject2(new exceptions.NoSuchDatabase(`Database ${dbName} doesnt exist`));
+        });
+      } else {
+        upgradeTransaction.onerror = eventRejectHandler(reject2);
+        var oldVer = e.oldVersion > Math.pow(2, 62) ? 0 : e.oldVersion;
+        wasCreated = oldVer < 1;
+        db._novip.idbdb = req.result;
+        runUpgraders(db, oldVer / 10, upgradeTransaction, reject2);
+      }
+    }, reject2);
+    req.onsuccess = wrap(() => {
+      upgradeTransaction = null;
+      const idbdb = db._novip.idbdb = req.result;
+      const objectStoreNames = slice(idbdb.objectStoreNames);
+      if (objectStoreNames.length > 0)
+        try {
+          const tmpTrans = idbdb.transaction(safariMultiStoreFix(objectStoreNames), "readonly");
+          if (state.autoSchema)
+            readGlobalSchema(db, idbdb, tmpTrans);
+          else {
+            adjustToExistingIndexNames(db, db._dbSchema, tmpTrans);
+            if (!verifyInstalledSchema(db, tmpTrans)) {
+              console.warn(`Dexie SchemaDiff: Schema was extended without increasing the number passed to db.version(). Some queries may fail.`);
+            }
+          }
+          generateMiddlewareStacks(db, tmpTrans);
+        } catch (e) {
+        }
+      connections.push(db);
+      idbdb.onversionchange = wrap((ev) => {
+        state.vcFired = true;
+        db.on("versionchange").fire(ev);
+      });
+      idbdb.onclose = wrap((ev) => {
+        db.on("close").fire(ev);
+      });
+      if (wasCreated)
+        _onDatabaseCreated(db._deps, dbName);
+      resolve2();
+    }, reject2);
+  }).catch((err) => {
+    if (err && err.name === "UnknownError" && state.PR1398_maxLoop > 0) {
+      state.PR1398_maxLoop--;
+      console.warn("Dexie: Workaround for Chrome UnknownError on open()");
+      return tryOpenDB();
+    } else {
+      return DexiePromise.reject(err);
+    }
+  });
+  return DexiePromise.race([
+    openCanceller,
+    (typeof navigator === "undefined" ? DexiePromise.resolve() : idbReady()).then(tryOpenDB)
+  ]).then(() => {
+    throwIfCancelled();
+    state.onReadyBeingFired = [];
+    return DexiePromise.resolve(vip(() => db.on.ready.fire(db.vip))).then(function fireRemainders() {
+      if (state.onReadyBeingFired.length > 0) {
+        let remainders = state.onReadyBeingFired.reduce(promisableChain, nop);
+        state.onReadyBeingFired = [];
+        return DexiePromise.resolve(vip(() => remainders(db.vip))).then(fireRemainders);
+      }
+    });
+  }).finally(() => {
+    state.onReadyBeingFired = null;
+    state.isBeingOpened = false;
+  }).then(() => {
+    return db;
+  }).catch((err) => {
+    state.dbOpenError = err;
+    try {
+      upgradeTransaction && upgradeTransaction.abort();
+    } catch (_a) {
+    }
+    if (openCanceller === state.openCanceller) {
+      db._close();
+    }
+    return rejection(err);
+  }).finally(() => {
+    state.openComplete = true;
+    resolveDbReady();
+  });
+}
+function awaitIterator(iterator) {
+  var callNext = (result) => iterator.next(result), doThrow = (error) => iterator.throw(error), onSuccess = step(callNext), onError = step(doThrow);
+  function step(getNext) {
+    return (val) => {
+      var next = getNext(val), value = next.value;
+      return next.done ? value : !value || typeof value.then !== "function" ? isArray2(value) ? Promise.all(value).then(onSuccess, onError) : onSuccess(value) : value.then(onSuccess, onError);
+    };
+  }
+  return step(callNext)();
+}
+function extractTransactionArgs(mode, _tableArgs_, scopeFunc) {
+  var i = arguments.length;
+  if (i < 2)
+    throw new exceptions.InvalidArgument("Too few arguments");
+  var args2 = new Array(i - 1);
+  while (--i)
+    args2[i - 1] = arguments[i];
+  scopeFunc = args2.pop();
+  var tables = flatten(args2);
+  return [mode, tables, scopeFunc];
+}
+function enterTransactionScope(db, mode, storeNames, parentTransaction, scopeFunc) {
+  return DexiePromise.resolve().then(() => {
+    const transless = PSD.transless || PSD;
+    const trans = db._createTransaction(mode, storeNames, db._dbSchema, parentTransaction);
+    const zoneProps = {
+      trans,
+      transless
+    };
+    if (parentTransaction) {
+      trans.idbtrans = parentTransaction.idbtrans;
+    } else {
+      try {
+        trans.create();
+        db._state.PR1398_maxLoop = 3;
+      } catch (ex) {
+        if (ex.name === errnames.InvalidState && db.isOpen() && --db._state.PR1398_maxLoop > 0) {
+          console.warn("Dexie: Need to reopen db");
+          db._close();
+          return db.open().then(() => enterTransactionScope(db, mode, storeNames, null, scopeFunc));
+        }
+        return rejection(ex);
+      }
+    }
+    const scopeFuncIsAsync = isAsyncFunction(scopeFunc);
+    if (scopeFuncIsAsync) {
+      incrementExpectedAwaits();
+    }
+    let returnValue;
+    const promiseFollowed = DexiePromise.follow(() => {
+      returnValue = scopeFunc.call(trans, trans);
+      if (returnValue) {
+        if (scopeFuncIsAsync) {
+          var decrementor = decrementExpectedAwaits.bind(null, null);
+          returnValue.then(decrementor, decrementor);
+        } else if (typeof returnValue.next === "function" && typeof returnValue.throw === "function") {
+          returnValue = awaitIterator(returnValue);
+        }
+      }
+    }, zoneProps);
+    return (returnValue && typeof returnValue.then === "function" ? DexiePromise.resolve(returnValue).then((x) => trans.active ? x : rejection(new exceptions.PrematureCommit("Transaction committed too early. See http://bit.ly/2kdckMn"))) : promiseFollowed.then(() => returnValue)).then((x) => {
+      if (parentTransaction)
+        trans._resolve();
+      return trans._completion.then(() => x);
+    }).catch((e) => {
+      trans._reject(e);
+      return rejection(e);
+    });
+  });
+}
+function pad(a, value, count) {
+  const result = isArray2(a) ? a.slice() : [a];
+  for (let i = 0; i < count; ++i)
+    result.push(value);
+  return result;
+}
+function createVirtualIndexMiddleware(down) {
+  return {
+    ...down,
+    table(tableName) {
+      const table = down.table(tableName);
+      const { schema } = table;
+      const indexLookup = {};
+      const allVirtualIndexes = [];
+      function addVirtualIndexes(keyPath, keyTail, lowLevelIndex) {
+        const keyPathAlias = getKeyPathAlias(keyPath);
+        const indexList = indexLookup[keyPathAlias] = indexLookup[keyPathAlias] || [];
+        const keyLength = keyPath == null ? 0 : typeof keyPath === "string" ? 1 : keyPath.length;
+        const isVirtual = keyTail > 0;
+        const virtualIndex = {
+          ...lowLevelIndex,
+          isVirtual,
+          keyTail,
+          keyLength,
+          extractKey: getKeyExtractor(keyPath),
+          unique: !isVirtual && lowLevelIndex.unique
+        };
+        indexList.push(virtualIndex);
+        if (!virtualIndex.isPrimaryKey) {
+          allVirtualIndexes.push(virtualIndex);
+        }
+        if (keyLength > 1) {
+          const virtualKeyPath = keyLength === 2 ? keyPath[0] : keyPath.slice(0, keyLength - 1);
+          addVirtualIndexes(virtualKeyPath, keyTail + 1, lowLevelIndex);
+        }
+        indexList.sort((a, b) => a.keyTail - b.keyTail);
+        return virtualIndex;
+      }
+      const primaryKey = addVirtualIndexes(schema.primaryKey.keyPath, 0, schema.primaryKey);
+      indexLookup[":id"] = [primaryKey];
+      for (const index of schema.indexes) {
+        addVirtualIndexes(index.keyPath, 0, index);
+      }
+      function findBestIndex(keyPath) {
+        const result2 = indexLookup[getKeyPathAlias(keyPath)];
+        return result2 && result2[0];
+      }
+      function translateRange(range, keyTail) {
+        return {
+          type: range.type === 1 ? 2 : range.type,
+          lower: pad(range.lower, range.lowerOpen ? down.MAX_KEY : down.MIN_KEY, keyTail),
+          lowerOpen: true,
+          upper: pad(range.upper, range.upperOpen ? down.MIN_KEY : down.MAX_KEY, keyTail),
+          upperOpen: true
+        };
+      }
+      function translateRequest(req) {
+        const index = req.query.index;
+        return index.isVirtual ? {
+          ...req,
+          query: {
+            index,
+            range: translateRange(req.query.range, index.keyTail)
+          }
+        } : req;
+      }
+      const result = {
+        ...table,
+        schema: {
+          ...schema,
+          primaryKey,
+          indexes: allVirtualIndexes,
+          getIndexByKeyPath: findBestIndex
+        },
+        count(req) {
+          return table.count(translateRequest(req));
+        },
+        query(req) {
+          return table.query(translateRequest(req));
+        },
+        openCursor(req) {
+          const { keyTail, isVirtual, keyLength } = req.query.index;
+          if (!isVirtual)
+            return table.openCursor(req);
+          function createVirtualCursor(cursor) {
+            function _continue(key) {
+              key != null ? cursor.continue(pad(key, req.reverse ? down.MAX_KEY : down.MIN_KEY, keyTail)) : req.unique ? cursor.continue(cursor.key.slice(0, keyLength).concat(req.reverse ? down.MIN_KEY : down.MAX_KEY, keyTail)) : cursor.continue();
+            }
+            const virtualCursor = Object.create(cursor, {
+              continue: { value: _continue },
+              continuePrimaryKey: {
+                value(key, primaryKey2) {
+                  cursor.continuePrimaryKey(pad(key, down.MAX_KEY, keyTail), primaryKey2);
+                }
+              },
+              primaryKey: {
+                get() {
+                  return cursor.primaryKey;
+                }
+              },
+              key: {
+                get() {
+                  const key = cursor.key;
+                  return keyLength === 1 ? key[0] : key.slice(0, keyLength);
+                }
+              },
+              value: {
+                get() {
+                  return cursor.value;
+                }
+              }
+            });
+            return virtualCursor;
+          }
+          return table.openCursor(translateRequest(req)).then((cursor) => cursor && createVirtualCursor(cursor));
+        }
+      };
+      return result;
+    }
+  };
+}
+var virtualIndexMiddleware = {
+  stack: "dbcore",
+  name: "VirtualIndexMiddleware",
+  level: 1,
+  create: createVirtualIndexMiddleware
+};
+function getObjectDiff(a, b, rv, prfx) {
+  rv = rv || {};
+  prfx = prfx || "";
+  keys(a).forEach((prop) => {
+    if (!hasOwn(b, prop)) {
+      rv[prfx + prop] = void 0;
+    } else {
+      var ap = a[prop], bp = b[prop];
+      if (typeof ap === "object" && typeof bp === "object" && ap && bp) {
+        const apTypeName = toStringTag(ap);
+        const bpTypeName = toStringTag(bp);
+        if (apTypeName !== bpTypeName) {
+          rv[prfx + prop] = b[prop];
+        } else if (apTypeName === "Object") {
+          getObjectDiff(ap, bp, rv, prfx + prop + ".");
+        } else if (ap !== bp) {
+          rv[prfx + prop] = b[prop];
+        }
+      } else if (ap !== bp)
+        rv[prfx + prop] = b[prop];
+    }
+  });
+  keys(b).forEach((prop) => {
+    if (!hasOwn(a, prop)) {
+      rv[prfx + prop] = b[prop];
+    }
+  });
+  return rv;
+}
+function getEffectiveKeys(primaryKey, req) {
+  if (req.type === "delete")
+    return req.keys;
+  return req.keys || req.values.map(primaryKey.extractKey);
+}
+var hooksMiddleware = {
+  stack: "dbcore",
+  name: "HooksMiddleware",
+  level: 2,
+  create: (downCore) => ({
+    ...downCore,
+    table(tableName) {
+      const downTable = downCore.table(tableName);
+      const { primaryKey } = downTable.schema;
+      const tableMiddleware = {
+        ...downTable,
+        mutate(req) {
+          const dxTrans = PSD.trans;
+          const { deleting, creating, updating } = dxTrans.table(tableName).hook;
+          switch (req.type) {
+            case "add":
+              if (creating.fire === nop)
+                break;
+              return dxTrans._promise("readwrite", () => addPutOrDelete(req), true);
+            case "put":
+              if (creating.fire === nop && updating.fire === nop)
+                break;
+              return dxTrans._promise("readwrite", () => addPutOrDelete(req), true);
+            case "delete":
+              if (deleting.fire === nop)
+                break;
+              return dxTrans._promise("readwrite", () => addPutOrDelete(req), true);
+            case "deleteRange":
+              if (deleting.fire === nop)
+                break;
+              return dxTrans._promise("readwrite", () => deleteRange(req), true);
+          }
+          return downTable.mutate(req);
+          function addPutOrDelete(req2) {
+            const dxTrans2 = PSD.trans;
+            const keys3 = req2.keys || getEffectiveKeys(primaryKey, req2);
+            if (!keys3)
+              throw new Error("Keys missing");
+            req2 = req2.type === "add" || req2.type === "put" ? { ...req2, keys: keys3 } : { ...req2 };
+            if (req2.type !== "delete")
+              req2.values = [...req2.values];
+            if (req2.keys)
+              req2.keys = [...req2.keys];
+            return getExistingValues(downTable, req2, keys3).then((existingValues) => {
+              const contexts = keys3.map((key, i) => {
+                const existingValue = existingValues[i];
+                const ctx = { onerror: null, onsuccess: null };
+                if (req2.type === "delete") {
+                  deleting.fire.call(ctx, key, existingValue, dxTrans2);
+                } else if (req2.type === "add" || existingValue === void 0) {
+                  const generatedPrimaryKey = creating.fire.call(ctx, key, req2.values[i], dxTrans2);
+                  if (key == null && generatedPrimaryKey != null) {
+                    key = generatedPrimaryKey;
+                    req2.keys[i] = key;
+                    if (!primaryKey.outbound) {
+                      setByKeyPath(req2.values[i], primaryKey.keyPath, key);
+                    }
+                  }
+                } else {
+                  const objectDiff = getObjectDiff(existingValue, req2.values[i]);
+                  const additionalChanges = updating.fire.call(ctx, objectDiff, key, existingValue, dxTrans2);
+                  if (additionalChanges) {
+                    const requestedValue = req2.values[i];
+                    Object.keys(additionalChanges).forEach((keyPath) => {
+                      if (hasOwn(requestedValue, keyPath)) {
+                        requestedValue[keyPath] = additionalChanges[keyPath];
+                      } else {
+                        setByKeyPath(requestedValue, keyPath, additionalChanges[keyPath]);
+                      }
+                    });
+                  }
+                }
+                return ctx;
+              });
+              return downTable.mutate(req2).then(({ failures, results, numFailures, lastResult }) => {
+                for (let i = 0; i < keys3.length; ++i) {
+                  const primKey = results ? results[i] : keys3[i];
+                  const ctx = contexts[i];
+                  if (primKey == null) {
+                    ctx.onerror && ctx.onerror(failures[i]);
+                  } else {
+                    ctx.onsuccess && ctx.onsuccess(
+                      req2.type === "put" && existingValues[i] ? req2.values[i] : primKey
+                    );
+                  }
+                }
+                return { failures, results, numFailures, lastResult };
+              }).catch((error) => {
+                contexts.forEach((ctx) => ctx.onerror && ctx.onerror(error));
+                return Promise.reject(error);
+              });
+            });
+          }
+          function deleteRange(req2) {
+            return deleteNextChunk(req2.trans, req2.range, 1e4);
+          }
+          function deleteNextChunk(trans, range, limit) {
+            return downTable.query({ trans, values: false, query: { index: primaryKey, range }, limit }).then(({ result }) => {
+              return addPutOrDelete({ type: "delete", keys: result, trans }).then((res) => {
+                if (res.numFailures > 0)
+                  return Promise.reject(res.failures[0]);
+                if (result.length < limit) {
+                  return { failures: [], numFailures: 0, lastResult: void 0 };
+                } else {
+                  return deleteNextChunk(trans, { ...range, lower: result[result.length - 1], lowerOpen: true }, limit);
+                }
+              });
+            });
+          }
+        }
+      };
+      return tableMiddleware;
+    }
+  })
+};
+function getExistingValues(table, req, effectiveKeys) {
+  return req.type === "add" ? Promise.resolve([]) : table.getMany({ trans: req.trans, keys: effectiveKeys, cache: "immutable" });
+}
+function getFromTransactionCache(keys3, cache, clone) {
+  try {
+    if (!cache)
+      return null;
+    if (cache.keys.length < keys3.length)
+      return null;
+    const result = [];
+    for (let i = 0, j = 0; i < cache.keys.length && j < keys3.length; ++i) {
+      if (cmp(cache.keys[i], keys3[j]) !== 0)
+        continue;
+      result.push(clone ? deepClone(cache.values[i]) : cache.values[i]);
+      ++j;
+    }
+    return result.length === keys3.length ? result : null;
+  } catch (_a) {
+    return null;
+  }
+}
+var cacheExistingValuesMiddleware = {
+  stack: "dbcore",
+  level: -1,
+  create: (core) => {
+    return {
+      table: (tableName) => {
+        const table = core.table(tableName);
+        return {
+          ...table,
+          getMany: (req) => {
+            if (!req.cache) {
+              return table.getMany(req);
+            }
+            const cachedResult = getFromTransactionCache(req.keys, req.trans["_cache"], req.cache === "clone");
+            if (cachedResult) {
+              return DexiePromise.resolve(cachedResult);
+            }
+            return table.getMany(req).then((res) => {
+              req.trans["_cache"] = {
+                keys: req.keys,
+                values: req.cache === "clone" ? deepClone(res) : res
+              };
+              return res;
+            });
+          },
+          mutate: (req) => {
+            if (req.type !== "add")
+              req.trans["_cache"] = null;
+            return table.mutate(req);
+          }
+        };
+      }
+    };
+  }
+};
+function isEmptyRange(node) {
+  return !("from" in node);
+}
+var RangeSet = function(fromOrTree, to) {
+  if (this) {
+    extend(this, arguments.length ? { d: 1, from: fromOrTree, to: arguments.length > 1 ? to : fromOrTree } : { d: 0 });
+  } else {
+    const rv = new RangeSet();
+    if (fromOrTree && "d" in fromOrTree) {
+      extend(rv, fromOrTree);
+    }
+    return rv;
+  }
+};
+props(RangeSet.prototype, {
+  add(rangeSet) {
+    mergeRanges(this, rangeSet);
+    return this;
+  },
+  addKey(key) {
+    addRange(this, key, key);
+    return this;
+  },
+  addKeys(keys3) {
+    keys3.forEach((key) => addRange(this, key, key));
+    return this;
+  },
+  [iteratorSymbol]() {
+    return getRangeSetIterator(this);
+  }
+});
+function addRange(target, from2, to) {
+  const diff = cmp(from2, to);
+  if (isNaN(diff))
+    return;
+  if (diff > 0)
+    throw RangeError();
+  if (isEmptyRange(target))
+    return extend(target, { from: from2, to, d: 1 });
+  const left = target.l;
+  const right = target.r;
+  if (cmp(to, target.from) < 0) {
+    left ? addRange(left, from2, to) : target.l = { from: from2, to, d: 1, l: null, r: null };
+    return rebalance(target);
+  }
+  if (cmp(from2, target.to) > 0) {
+    right ? addRange(right, from2, to) : target.r = { from: from2, to, d: 1, l: null, r: null };
+    return rebalance(target);
+  }
+  if (cmp(from2, target.from) < 0) {
+    target.from = from2;
+    target.l = null;
+    target.d = right ? right.d + 1 : 1;
+  }
+  if (cmp(to, target.to) > 0) {
+    target.to = to;
+    target.r = null;
+    target.d = target.l ? target.l.d + 1 : 1;
+  }
+  const rightWasCutOff = !target.r;
+  if (left && !target.l) {
+    mergeRanges(target, left);
+  }
+  if (right && rightWasCutOff) {
+    mergeRanges(target, right);
+  }
+}
+function mergeRanges(target, newSet) {
+  function _addRangeSet(target2, { from: from2, to, l, r }) {
+    addRange(target2, from2, to);
+    if (l)
+      _addRangeSet(target2, l);
+    if (r)
+      _addRangeSet(target2, r);
+  }
+  if (!isEmptyRange(newSet))
+    _addRangeSet(target, newSet);
+}
+function rangesOverlap(rangeSet1, rangeSet2) {
+  const i1 = getRangeSetIterator(rangeSet2);
+  let nextResult1 = i1.next();
+  if (nextResult1.done)
+    return false;
+  let a = nextResult1.value;
+  const i2 = getRangeSetIterator(rangeSet1);
+  let nextResult2 = i2.next(a.from);
+  let b = nextResult2.value;
+  while (!nextResult1.done && !nextResult2.done) {
+    if (cmp(b.from, a.to) <= 0 && cmp(b.to, a.from) >= 0)
+      return true;
+    cmp(a.from, b.from) < 0 ? a = (nextResult1 = i1.next(b.from)).value : b = (nextResult2 = i2.next(a.from)).value;
+  }
+  return false;
+}
+function getRangeSetIterator(node) {
+  let state = isEmptyRange(node) ? null : { s: 0, n: node };
+  return {
+    next(key) {
+      const keyProvided = arguments.length > 0;
+      while (state) {
+        switch (state.s) {
+          case 0:
+            state.s = 1;
+            if (keyProvided) {
+              while (state.n.l && cmp(key, state.n.from) < 0)
+                state = { up: state, n: state.n.l, s: 1 };
+            } else {
+              while (state.n.l)
+                state = { up: state, n: state.n.l, s: 1 };
+            }
+          case 1:
+            state.s = 2;
+            if (!keyProvided || cmp(key, state.n.to) <= 0)
+              return { value: state.n, done: false };
+          case 2:
+            if (state.n.r) {
+              state.s = 3;
+              state = { up: state, n: state.n.r, s: 0 };
+              continue;
+            }
+          case 3:
+            state = state.up;
+        }
+      }
+      return { done: true };
+    }
+  };
+}
+function rebalance(target) {
+  var _a, _b;
+  const diff = (((_a = target.r) === null || _a === void 0 ? void 0 : _a.d) || 0) - (((_b = target.l) === null || _b === void 0 ? void 0 : _b.d) || 0);
+  const r = diff > 1 ? "r" : diff < -1 ? "l" : "";
+  if (r) {
+    const l = r === "r" ? "l" : "r";
+    const rootClone = { ...target };
+    const oldRootRight = target[r];
+    target.from = oldRootRight.from;
+    target.to = oldRootRight.to;
+    target[r] = oldRootRight[r];
+    rootClone[r] = oldRootRight[l];
+    target[l] = rootClone;
+    rootClone.d = computeDepth(rootClone);
+  }
+  target.d = computeDepth(target);
+}
+function computeDepth({ r, l }) {
+  return (r ? l ? Math.max(r.d, l.d) : r.d : l ? l.d : 0) + 1;
+}
+var observabilityMiddleware = {
+  stack: "dbcore",
+  level: 0,
+  create: (core) => {
+    const dbName = core.schema.name;
+    const FULL_RANGE = new RangeSet(core.MIN_KEY, core.MAX_KEY);
+    return {
+      ...core,
+      table: (tableName) => {
+        const table = core.table(tableName);
+        const { schema } = table;
+        const { primaryKey } = schema;
+        const { extractKey, outbound } = primaryKey;
+        const tableClone = {
+          ...table,
+          mutate: (req) => {
+            const trans = req.trans;
+            const mutatedParts = trans.mutatedParts || (trans.mutatedParts = {});
+            const getRangeSet = (indexName) => {
+              const part = `idb://${dbName}/${tableName}/${indexName}`;
+              return mutatedParts[part] || (mutatedParts[part] = new RangeSet());
+            };
+            const pkRangeSet = getRangeSet("");
+            const delsRangeSet = getRangeSet(":dels");
+            const { type: type2 } = req;
+            let [keys3, newObjs] = req.type === "deleteRange" ? [req.range] : req.type === "delete" ? [req.keys] : req.values.length < 50 ? [[], req.values] : [];
+            const oldCache = req.trans["_cache"];
+            return table.mutate(req).then((res) => {
+              if (isArray2(keys3)) {
+                if (type2 !== "delete")
+                  keys3 = res.results;
+                pkRangeSet.addKeys(keys3);
+                const oldObjs = getFromTransactionCache(keys3, oldCache);
+                if (!oldObjs && type2 !== "add") {
+                  delsRangeSet.addKeys(keys3);
+                }
+                if (oldObjs || newObjs) {
+                  trackAffectedIndexes(getRangeSet, schema, oldObjs, newObjs);
+                }
+              } else if (keys3) {
+                const range = { from: keys3.lower, to: keys3.upper };
+                delsRangeSet.add(range);
+                pkRangeSet.add(range);
+              } else {
+                pkRangeSet.add(FULL_RANGE);
+                delsRangeSet.add(FULL_RANGE);
+                schema.indexes.forEach((idx) => getRangeSet(idx.name).add(FULL_RANGE));
+              }
+              return res;
+            });
+          }
+        };
+        const getRange = ({ query: { index, range } }) => {
+          var _a, _b;
+          return [
+            index,
+            new RangeSet((_a = range.lower) !== null && _a !== void 0 ? _a : core.MIN_KEY, (_b = range.upper) !== null && _b !== void 0 ? _b : core.MAX_KEY)
+          ];
+        };
+        const readSubscribers = {
+          get: (req) => [primaryKey, new RangeSet(req.key)],
+          getMany: (req) => [primaryKey, new RangeSet().addKeys(req.keys)],
+          count: getRange,
+          query: getRange,
+          openCursor: getRange
+        };
+        keys(readSubscribers).forEach((method) => {
+          tableClone[method] = function(req) {
+            const { subscr } = PSD;
+            if (subscr) {
+              const getRangeSet = (indexName) => {
+                const part = `idb://${dbName}/${tableName}/${indexName}`;
+                return subscr[part] || (subscr[part] = new RangeSet());
+              };
+              const pkRangeSet = getRangeSet("");
+              const delsRangeSet = getRangeSet(":dels");
+              const [queriedIndex, queriedRanges] = readSubscribers[method](req);
+              getRangeSet(queriedIndex.name || "").add(queriedRanges);
+              if (!queriedIndex.isPrimaryKey) {
+                if (method === "count") {
+                  delsRangeSet.add(FULL_RANGE);
+                } else {
+                  const keysPromise = method === "query" && outbound && req.values && table.query({
+                    ...req,
+                    values: false
+                  });
+                  return table[method].apply(this, arguments).then((res) => {
+                    if (method === "query") {
+                      if (outbound && req.values) {
+                        return keysPromise.then(({ result: resultingKeys }) => {
+                          pkRangeSet.addKeys(resultingKeys);
+                          return res;
+                        });
+                      }
+                      const pKeys = req.values ? res.result.map(extractKey) : res.result;
+                      if (req.values) {
+                        pkRangeSet.addKeys(pKeys);
+                      } else {
+                        delsRangeSet.addKeys(pKeys);
+                      }
+                    } else if (method === "openCursor") {
+                      const cursor = res;
+                      const wantValues = req.values;
+                      return cursor && Object.create(cursor, {
+                        key: {
+                          get() {
+                            delsRangeSet.addKey(cursor.primaryKey);
+                            return cursor.key;
+                          }
+                        },
+                        primaryKey: {
+                          get() {
+                            const pkey = cursor.primaryKey;
+                            delsRangeSet.addKey(pkey);
+                            return pkey;
+                          }
+                        },
+                        value: {
+                          get() {
+                            wantValues && pkRangeSet.addKey(cursor.primaryKey);
+                            return cursor.value;
+                          }
+                        }
+                      });
+                    }
+                    return res;
+                  });
+                }
+              }
+            }
+            return table[method].apply(this, arguments);
+          };
+        });
+        return tableClone;
+      }
+    };
+  }
+};
+function trackAffectedIndexes(getRangeSet, schema, oldObjs, newObjs) {
+  function addAffectedIndex(ix) {
+    const rangeSet = getRangeSet(ix.name || "");
+    function extractKey(obj) {
+      return obj != null ? ix.extractKey(obj) : null;
+    }
+    const addKeyOrKeys = (key) => ix.multiEntry && isArray2(key) ? key.forEach((key2) => rangeSet.addKey(key2)) : rangeSet.addKey(key);
+    (oldObjs || newObjs).forEach((_, i) => {
+      const oldKey = oldObjs && extractKey(oldObjs[i]);
+      const newKey = newObjs && extractKey(newObjs[i]);
+      if (cmp(oldKey, newKey) !== 0) {
+        if (oldKey != null)
+          addKeyOrKeys(oldKey);
+        if (newKey != null)
+          addKeyOrKeys(newKey);
+      }
+    });
+  }
+  schema.indexes.forEach(addAffectedIndex);
+}
+var Dexie$1 = class {
+  constructor(name, options) {
+    this._middlewares = {};
+    this.verno = 0;
+    const deps = Dexie$1.dependencies;
+    this._options = options = {
+      addons: Dexie$1.addons,
+      autoOpen: true,
+      indexedDB: deps.indexedDB,
+      IDBKeyRange: deps.IDBKeyRange,
+      ...options
+    };
+    this._deps = {
+      indexedDB: options.indexedDB,
+      IDBKeyRange: options.IDBKeyRange
+    };
+    const { addons } = options;
+    this._dbSchema = {};
+    this._versions = [];
+    this._storeNames = [];
+    this._allTables = {};
+    this.idbdb = null;
+    this._novip = this;
+    const state = {
+      dbOpenError: null,
+      isBeingOpened: false,
+      onReadyBeingFired: null,
+      openComplete: false,
+      dbReadyResolve: nop,
+      dbReadyPromise: null,
+      cancelOpen: nop,
+      openCanceller: null,
+      autoSchema: true,
+      PR1398_maxLoop: 3
+    };
+    state.dbReadyPromise = new DexiePromise((resolve2) => {
+      state.dbReadyResolve = resolve2;
+    });
+    state.openCanceller = new DexiePromise((_, reject2) => {
+      state.cancelOpen = reject2;
+    });
+    this._state = state;
+    this.name = name;
+    this.on = Events(this, "populate", "blocked", "versionchange", "close", { ready: [promisableChain, nop] });
+    this.on.ready.subscribe = override(this.on.ready.subscribe, (subscribe2) => {
+      return (subscriber, bSticky) => {
+        Dexie$1.vip(() => {
+          const state2 = this._state;
+          if (state2.openComplete) {
+            if (!state2.dbOpenError)
+              DexiePromise.resolve().then(subscriber);
+            if (bSticky)
+              subscribe2(subscriber);
+          } else if (state2.onReadyBeingFired) {
+            state2.onReadyBeingFired.push(subscriber);
+            if (bSticky)
+              subscribe2(subscriber);
+          } else {
+            subscribe2(subscriber);
+            const db = this;
+            if (!bSticky)
+              subscribe2(function unsubscribe2() {
+                db.on.ready.unsubscribe(subscriber);
+                db.on.ready.unsubscribe(unsubscribe2);
+              });
+          }
+        });
+      };
+    });
+    this.Collection = createCollectionConstructor(this);
+    this.Table = createTableConstructor(this);
+    this.Transaction = createTransactionConstructor(this);
+    this.Version = createVersionConstructor(this);
+    this.WhereClause = createWhereClauseConstructor(this);
+    this.on("versionchange", (ev) => {
+      if (ev.newVersion > 0)
+        console.warn(`Another connection wants to upgrade database '${this.name}'. Closing db now to resume the upgrade.`);
+      else
+        console.warn(`Another connection wants to delete database '${this.name}'. Closing db now to resume the delete request.`);
+      this.close();
+    });
+    this.on("blocked", (ev) => {
+      if (!ev.newVersion || ev.newVersion < ev.oldVersion)
+        console.warn(`Dexie.delete('${this.name}') was blocked`);
+      else
+        console.warn(`Upgrade '${this.name}' blocked by other connection holding version ${ev.oldVersion / 10}`);
+    });
+    this._maxKey = getMaxKey(options.IDBKeyRange);
+    this._createTransaction = (mode, storeNames, dbschema, parentTransaction) => new this.Transaction(mode, storeNames, dbschema, this._options.chromeTransactionDurability, parentTransaction);
+    this._fireOnBlocked = (ev) => {
+      this.on("blocked").fire(ev);
+      connections.filter((c) => c.name === this.name && c !== this && !c._state.vcFired).map((c) => c.on("versionchange").fire(ev));
+    };
+    this.use(virtualIndexMiddleware);
+    this.use(hooksMiddleware);
+    this.use(observabilityMiddleware);
+    this.use(cacheExistingValuesMiddleware);
+    this.vip = Object.create(this, { _vip: { value: true } });
+    addons.forEach((addon) => addon(this));
+  }
+  version(versionNumber) {
+    if (isNaN(versionNumber) || versionNumber < 0.1)
+      throw new exceptions.Type(`Given version is not a positive number`);
+    versionNumber = Math.round(versionNumber * 10) / 10;
+    if (this.idbdb || this._state.isBeingOpened)
+      throw new exceptions.Schema("Cannot add version when database is open");
+    this.verno = Math.max(this.verno, versionNumber);
+    const versions = this._versions;
+    var versionInstance = versions.filter((v) => v._cfg.version === versionNumber)[0];
+    if (versionInstance)
+      return versionInstance;
+    versionInstance = new this.Version(versionNumber);
+    versions.push(versionInstance);
+    versions.sort(lowerVersionFirst);
+    versionInstance.stores({});
+    this._state.autoSchema = false;
+    return versionInstance;
+  }
+  _whenReady(fn) {
+    return this.idbdb && (this._state.openComplete || PSD.letThrough || this._vip) ? fn() : new DexiePromise((resolve2, reject2) => {
+      if (this._state.openComplete) {
+        return reject2(new exceptions.DatabaseClosed(this._state.dbOpenError));
+      }
+      if (!this._state.isBeingOpened) {
+        if (!this._options.autoOpen) {
+          reject2(new exceptions.DatabaseClosed());
+          return;
+        }
+        this.open().catch(nop);
+      }
+      this._state.dbReadyPromise.then(resolve2, reject2);
+    }).then(fn);
+  }
+  use({ stack, create: create7, level, name }) {
+    if (name)
+      this.unuse({ stack, name });
+    const middlewares = this._middlewares[stack] || (this._middlewares[stack] = []);
+    middlewares.push({ stack, create: create7, level: level == null ? 10 : level, name });
+    middlewares.sort((a, b) => a.level - b.level);
+    return this;
+  }
+  unuse({ stack, name, create: create7 }) {
+    if (stack && this._middlewares[stack]) {
+      this._middlewares[stack] = this._middlewares[stack].filter((mw) => create7 ? mw.create !== create7 : name ? mw.name !== name : false);
+    }
+    return this;
+  }
+  open() {
+    return dexieOpen(this);
+  }
+  _close() {
+    const state = this._state;
+    const idx = connections.indexOf(this);
+    if (idx >= 0)
+      connections.splice(idx, 1);
+    if (this.idbdb) {
+      try {
+        this.idbdb.close();
+      } catch (e) {
+      }
+      this._novip.idbdb = null;
+    }
+    state.dbReadyPromise = new DexiePromise((resolve2) => {
+      state.dbReadyResolve = resolve2;
+    });
+    state.openCanceller = new DexiePromise((_, reject2) => {
+      state.cancelOpen = reject2;
+    });
+  }
+  close() {
+    this._close();
+    const state = this._state;
+    this._options.autoOpen = false;
+    state.dbOpenError = new exceptions.DatabaseClosed();
+    if (state.isBeingOpened)
+      state.cancelOpen(state.dbOpenError);
+  }
+  delete() {
+    const hasArguments = arguments.length > 0;
+    const state = this._state;
+    return new DexiePromise((resolve2, reject2) => {
+      const doDelete = () => {
+        this.close();
+        var req = this._deps.indexedDB.deleteDatabase(this.name);
+        req.onsuccess = wrap(() => {
+          _onDatabaseDeleted(this._deps, this.name);
+          resolve2();
+        });
+        req.onerror = eventRejectHandler(reject2);
+        req.onblocked = this._fireOnBlocked;
+      };
+      if (hasArguments)
+        throw new exceptions.InvalidArgument("Arguments not allowed in db.delete()");
+      if (state.isBeingOpened) {
+        state.dbReadyPromise.then(doDelete);
+      } else {
+        doDelete();
+      }
+    });
+  }
+  backendDB() {
+    return this.idbdb;
+  }
+  isOpen() {
+    return this.idbdb !== null;
+  }
+  hasBeenClosed() {
+    const dbOpenError = this._state.dbOpenError;
+    return dbOpenError && dbOpenError.name === "DatabaseClosed";
+  }
+  hasFailed() {
+    return this._state.dbOpenError !== null;
+  }
+  dynamicallyOpened() {
+    return this._state.autoSchema;
+  }
+  get tables() {
+    return keys(this._allTables).map((name) => this._allTables[name]);
+  }
+  transaction() {
+    const args2 = extractTransactionArgs.apply(this, arguments);
+    return this._transaction.apply(this, args2);
+  }
+  _transaction(mode, tables, scopeFunc) {
+    let parentTransaction = PSD.trans;
+    if (!parentTransaction || parentTransaction.db !== this || mode.indexOf("!") !== -1)
+      parentTransaction = null;
+    const onlyIfCompatible = mode.indexOf("?") !== -1;
+    mode = mode.replace("!", "").replace("?", "");
+    let idbMode, storeNames;
+    try {
+      storeNames = tables.map((table) => {
+        var storeName = table instanceof this.Table ? table.name : table;
+        if (typeof storeName !== "string")
+          throw new TypeError("Invalid table argument to Dexie.transaction(). Only Table or String are allowed");
+        return storeName;
+      });
+      if (mode == "r" || mode === READONLY)
+        idbMode = READONLY;
+      else if (mode == "rw" || mode == READWRITE)
+        idbMode = READWRITE;
+      else
+        throw new exceptions.InvalidArgument("Invalid transaction mode: " + mode);
+      if (parentTransaction) {
+        if (parentTransaction.mode === READONLY && idbMode === READWRITE) {
+          if (onlyIfCompatible) {
+            parentTransaction = null;
+          } else
+            throw new exceptions.SubTransaction("Cannot enter a sub-transaction with READWRITE mode when parent transaction is READONLY");
+        }
+        if (parentTransaction) {
+          storeNames.forEach((storeName) => {
+            if (parentTransaction && parentTransaction.storeNames.indexOf(storeName) === -1) {
+              if (onlyIfCompatible) {
+                parentTransaction = null;
+              } else
+                throw new exceptions.SubTransaction("Table " + storeName + " not included in parent transaction.");
+            }
+          });
+        }
+        if (onlyIfCompatible && parentTransaction && !parentTransaction.active) {
+          parentTransaction = null;
+        }
+      }
+    } catch (e) {
+      return parentTransaction ? parentTransaction._promise(null, (_, reject2) => {
+        reject2(e);
+      }) : rejection(e);
+    }
+    const enterTransaction = enterTransactionScope.bind(null, this, idbMode, storeNames, parentTransaction, scopeFunc);
+    return parentTransaction ? parentTransaction._promise(idbMode, enterTransaction, "lock") : PSD.trans ? usePSD(PSD.transless, () => this._whenReady(enterTransaction)) : this._whenReady(enterTransaction);
+  }
+  table(tableName) {
+    if (!hasOwn(this._allTables, tableName)) {
+      throw new exceptions.InvalidTable(`Table ${tableName} does not exist`);
+    }
+    return this._allTables[tableName];
+  }
+};
+var symbolObservable = typeof Symbol !== "undefined" && "observable" in Symbol ? Symbol.observable : "@@observable";
+var Observable2 = class {
+  constructor(subscribe2) {
+    this._subscribe = subscribe2;
+  }
+  subscribe(x, error, complete) {
+    return this._subscribe(!x || typeof x === "function" ? { next: x, error, complete } : x);
+  }
+  [symbolObservable]() {
+    return this;
+  }
+};
+function extendObservabilitySet(target, newSet) {
+  keys(newSet).forEach((part) => {
+    const rangeSet = target[part] || (target[part] = new RangeSet());
+    mergeRanges(rangeSet, newSet[part]);
+  });
+  return target;
+}
+function liveQuery(querier) {
+  let hasValue = false;
+  let currentValue = void 0;
+  const observable = new Observable2((observer) => {
+    const scopeFuncIsAsync = isAsyncFunction(querier);
+    function execute(subscr) {
+      if (scopeFuncIsAsync) {
+        incrementExpectedAwaits();
+      }
+      const exec = () => newScope(querier, { subscr, trans: null });
+      const rv = PSD.trans ? usePSD(PSD.transless, exec) : exec();
+      if (scopeFuncIsAsync) {
+        rv.then(decrementExpectedAwaits, decrementExpectedAwaits);
+      }
+      return rv;
+    }
+    let closed = false;
+    let accumMuts = {};
+    let currentObs = {};
+    const subscription = {
+      get closed() {
+        return closed;
+      },
+      unsubscribe: () => {
+        closed = true;
+        globalEvents.storagemutated.unsubscribe(mutationListener);
+      }
+    };
+    observer.start && observer.start(subscription);
+    let querying = false, startedListening = false;
+    function shouldNotify() {
+      return keys(currentObs).some((key) => accumMuts[key] && rangesOverlap(accumMuts[key], currentObs[key]));
+    }
+    const mutationListener = (parts) => {
+      extendObservabilitySet(accumMuts, parts);
+      if (shouldNotify()) {
+        doQuery();
+      }
+    };
+    const doQuery = () => {
+      if (querying || closed)
+        return;
+      accumMuts = {};
+      const subscr = {};
+      const ret = execute(subscr);
+      if (!startedListening) {
+        globalEvents(DEXIE_STORAGE_MUTATED_EVENT_NAME, mutationListener);
+        startedListening = true;
+      }
+      querying = true;
+      Promise.resolve(ret).then((result) => {
+        hasValue = true;
+        currentValue = result;
+        querying = false;
+        if (closed)
+          return;
+        if (shouldNotify()) {
+          doQuery();
+        } else {
+          accumMuts = {};
+          currentObs = subscr;
+          observer.next && observer.next(result);
+        }
+      }, (err) => {
+        querying = false;
+        hasValue = false;
+        observer.error && observer.error(err);
+        subscription.unsubscribe();
+      });
+    };
+    doQuery();
+    return subscription;
+  });
+  observable.hasValue = () => hasValue;
+  observable.getValue = () => currentValue;
+  return observable;
+}
+var domDeps;
+try {
+  domDeps = {
+    indexedDB: _global.indexedDB || _global.mozIndexedDB || _global.webkitIndexedDB || _global.msIndexedDB,
+    IDBKeyRange: _global.IDBKeyRange || _global.webkitIDBKeyRange
+  };
+} catch (e) {
+  domDeps = { indexedDB: null, IDBKeyRange: null };
+}
+var Dexie = Dexie$1;
+props(Dexie, {
+  ...fullNameExceptions,
+  delete(databaseName) {
+    const db = new Dexie(databaseName, { addons: [] });
+    return db.delete();
+  },
+  exists(name) {
+    return new Dexie(name, { addons: [] }).open().then((db) => {
+      db.close();
+      return true;
+    }).catch("NoSuchDatabaseError", () => false);
+  },
+  getDatabaseNames(cb) {
+    try {
+      return getDatabaseNames(Dexie.dependencies).then(cb);
+    } catch (_a) {
+      return rejection(new exceptions.MissingAPI());
+    }
+  },
+  defineClass() {
+    function Class(content) {
+      extend(this, content);
+    }
+    return Class;
+  },
+  ignoreTransaction(scopeFunc) {
+    return PSD.trans ? usePSD(PSD.transless, scopeFunc) : scopeFunc();
+  },
+  vip,
+  async: function(generatorFn) {
+    return function() {
+      try {
+        var rv = awaitIterator(generatorFn.apply(this, arguments));
+        if (!rv || typeof rv.then !== "function")
+          return DexiePromise.resolve(rv);
+        return rv;
+      } catch (e) {
+        return rejection(e);
+      }
+    };
+  },
+  spawn: function(generatorFn, args2, thiz) {
+    try {
+      var rv = awaitIterator(generatorFn.apply(thiz, args2 || []));
+      if (!rv || typeof rv.then !== "function")
+        return DexiePromise.resolve(rv);
+      return rv;
+    } catch (e) {
+      return rejection(e);
+    }
+  },
+  currentTransaction: {
+    get: () => PSD.trans || null
+  },
+  waitFor: function(promiseOrFunction, optionalTimeout) {
+    const promise = DexiePromise.resolve(typeof promiseOrFunction === "function" ? Dexie.ignoreTransaction(promiseOrFunction) : promiseOrFunction).timeout(optionalTimeout || 6e4);
+    return PSD.trans ? PSD.trans.waitFor(promise) : promise;
+  },
+  Promise: DexiePromise,
+  debug: {
+    get: () => debug,
+    set: (value) => {
+      setDebug(value, value === "dexie" ? () => true : dexieStackFrameFilter);
+    }
+  },
+  derive,
+  extend,
+  props,
+  override,
+  Events,
+  on: globalEvents,
+  liveQuery,
+  extendObservabilitySet,
+  getByKeyPath,
+  setByKeyPath,
+  delByKeyPath,
+  shallowClone,
+  deepClone,
+  getObjectDiff,
+  cmp,
+  asap: asap$1,
+  minKey,
+  addons: [],
+  connections,
+  errnames,
+  dependencies: domDeps,
+  semVer: DEXIE_VERSION,
+  version: DEXIE_VERSION.split(".").map((n) => parseInt(n)).reduce((p, c, i) => p + c / Math.pow(10, i * 2))
+});
+Dexie.maxKey = getMaxKey(Dexie.dependencies.IDBKeyRange);
+if (typeof dispatchEvent !== "undefined" && typeof addEventListener !== "undefined") {
+  globalEvents(DEXIE_STORAGE_MUTATED_EVENT_NAME, (updatedParts) => {
+    if (!propagatingLocally) {
+      let event;
+      if (isIEOrEdge) {
+        event = document.createEvent("CustomEvent");
+        event.initCustomEvent(STORAGE_MUTATED_DOM_EVENT_NAME, true, true, updatedParts);
+      } else {
+        event = new CustomEvent(STORAGE_MUTATED_DOM_EVENT_NAME, {
+          detail: updatedParts
+        });
+      }
+      propagatingLocally = true;
+      dispatchEvent(event);
+      propagatingLocally = false;
+    }
+  });
+  addEventListener(STORAGE_MUTATED_DOM_EVENT_NAME, ({ detail }) => {
+    if (!propagatingLocally) {
+      propagateLocally(detail);
+    }
+  });
+}
+function propagateLocally(updateParts) {
+  let wasMe = propagatingLocally;
+  try {
+    propagatingLocally = true;
+    globalEvents.storagemutated.fire(updateParts);
+  } finally {
+    propagatingLocally = wasMe;
+  }
+}
+var propagatingLocally = false;
+if (typeof BroadcastChannel !== "undefined") {
+  const bc = new BroadcastChannel(STORAGE_MUTATED_DOM_EVENT_NAME);
+  if (typeof bc.unref === "function") {
+    bc.unref();
+  }
+  globalEvents(DEXIE_STORAGE_MUTATED_EVENT_NAME, (changedParts) => {
+    if (!propagatingLocally) {
+      bc.postMessage(changedParts);
+    }
+  });
+  bc.onmessage = (ev) => {
+    if (ev.data)
+      propagateLocally(ev.data);
+  };
+} else if (typeof self !== "undefined" && typeof navigator !== "undefined") {
+  globalEvents(DEXIE_STORAGE_MUTATED_EVENT_NAME, (changedParts) => {
+    try {
+      if (!propagatingLocally) {
+        if (typeof localStorage !== "undefined") {
+          localStorage.setItem(STORAGE_MUTATED_DOM_EVENT_NAME, JSON.stringify({
+            trig: Math.random(),
+            changedParts
+          }));
+        }
+        if (typeof self["clients"] === "object") {
+          [...self["clients"].matchAll({ includeUncontrolled: true })].forEach((client) => client.postMessage({
+            type: STORAGE_MUTATED_DOM_EVENT_NAME,
+            changedParts
+          }));
+        }
+      }
+    } catch (_a) {
+    }
+  });
+  if (typeof addEventListener !== "undefined") {
+    addEventListener("storage", (ev) => {
+      if (ev.key === STORAGE_MUTATED_DOM_EVENT_NAME) {
+        const data = JSON.parse(ev.newValue);
+        if (data)
+          propagateLocally(data.changedParts);
+      }
+    });
+  }
+  const swContainer = self.document && navigator.serviceWorker;
+  if (swContainer) {
+    swContainer.addEventListener("message", propagateMessageLocally);
+  }
+}
+function propagateMessageLocally({ data }) {
+  if (data && data.type === STORAGE_MUTATED_DOM_EVENT_NAME) {
+    propagateLocally(data.changedParts);
+  }
+}
+DexiePromise.rejectionMapper = mapError;
+setDebug(debug, dexieStackFrameFilter);
+
+// src/permanentShareStore.ts
+var PermanentShareStore = class {
+  constructor(oid) {
+    this.oid = oid;
+    const db = new Dexie$1("peerdraft_" + this.oid);
+    db.version(1).stores({
+      sharedDocs: "path,persistenceId,shareId"
+    });
+    this.documentTable = db._allTables["sharedDocs"];
+  }
+  add(doc2) {
+    return this.documentTable.add({
+      path: doc2.path,
+      shareId: doc2.shareId,
+      persistenceId: createRandomId()
+    });
+  }
+  removeDoc(path2) {
+    return this.documentTable.delete(path2);
+  }
+  getAllDocs() {
+    return this.documentTable.toArray();
+  }
+};
+
+// src/serverAPI.ts
+var import_obsidian4 = require("obsidian");
+var ServerAPI = class {
+  constructor(opts) {
+    this.opts = opts;
+  }
+  async createPermanentSession() {
+    const data = await (0, import_obsidian4.requestUrl)({
+      url: this.opts.permanentSessionUrl,
+      method: "POST",
+      contentType: "application/json",
+      body: JSON.stringify({
+        oid: this.opts.oid
+      })
+    }).json;
+    if (!data || !data.id) {
+      showNotice("Error creating shared file");
+      return;
+    }
+    return data;
+  }
+};
+
+// src/sharedEntities/sharedDocument.ts
+var import_obsidian5 = require("obsidian");
+
 // node_modules/lib0/math.js
 var floor = Math.floor;
 var abs = Math.abs;
@@ -3396,127 +8184,8 @@ var log10 = Math.log10;
 var min = (a, b) => a < b ? a : b;
 var max = (a, b) => a > b ? a : b;
 var isNaN2 = Number.isNaN;
+var pow = Math.pow;
 var isNegativeZero = (n) => n !== 0 ? n < 0 : 1 / n < 0;
-
-// node_modules/lib0/time.js
-var getUnixTime = Date.now;
-
-// node_modules/lib0/websocket.js
-var reconnectTimeoutBase = 1200;
-var maxReconnectTimeout = 2500;
-var messageReconnectTimeout = 3e4;
-var setupWS = (wsclient) => {
-  if (wsclient.shouldConnect && wsclient.ws === null) {
-    const websocket = new WebSocket(wsclient.url);
-    const binaryType = wsclient.binaryType;
-    let pingTimeout = null;
-    if (binaryType) {
-      websocket.binaryType = binaryType;
-    }
-    wsclient.ws = websocket;
-    wsclient.connecting = true;
-    wsclient.connected = false;
-    websocket.onmessage = (event) => {
-      wsclient.lastMessageReceived = getUnixTime();
-      const data = event.data;
-      const message = typeof data === "string" ? JSON.parse(data) : data;
-      if (message && message.type === "pong") {
-        clearTimeout(pingTimeout);
-        pingTimeout = setTimeout(sendPing, messageReconnectTimeout / 2);
-      }
-      wsclient.emit("message", [message, wsclient]);
-    };
-    const onclose = (error) => {
-      if (wsclient.ws !== null) {
-        wsclient.ws = null;
-        wsclient.connecting = false;
-        if (wsclient.connected) {
-          wsclient.connected = false;
-          wsclient.emit("disconnect", [{ type: "disconnect", error }, wsclient]);
-        } else {
-          wsclient.unsuccessfulReconnects++;
-        }
-        setTimeout(setupWS, min(log10(wsclient.unsuccessfulReconnects + 1) * reconnectTimeoutBase, maxReconnectTimeout), wsclient);
-      }
-      clearTimeout(pingTimeout);
-    };
-    const sendPing = () => {
-      if (wsclient.ws === websocket) {
-        wsclient.send({
-          type: "ping"
-        });
-      }
-    };
-    websocket.onclose = () => onclose(null);
-    websocket.onerror = (error) => onclose(error);
-    websocket.onopen = () => {
-      wsclient.lastMessageReceived = getUnixTime();
-      wsclient.connecting = false;
-      wsclient.connected = true;
-      wsclient.unsuccessfulReconnects = 0;
-      wsclient.emit("connect", [{ type: "connect" }, wsclient]);
-      pingTimeout = setTimeout(sendPing, messageReconnectTimeout / 2);
-    };
-  }
-};
-var WebsocketClient = class extends Observable {
-  /**
-   * @param {string} url
-   * @param {object} opts
-   * @param {'arraybuffer' | 'blob' | null} [opts.binaryType] Set `ws.binaryType`
-   */
-  constructor(url, { binaryType } = {}) {
-    super();
-    this.url = url;
-    this.ws = null;
-    this.binaryType = binaryType || null;
-    this.connected = false;
-    this.connecting = false;
-    this.unsuccessfulReconnects = 0;
-    this.lastMessageReceived = 0;
-    this.shouldConnect = true;
-    this._checkInterval = setInterval(() => {
-      if (this.connected && messageReconnectTimeout < getUnixTime() - this.lastMessageReceived) {
-        this.ws.close();
-      }
-    }, messageReconnectTimeout / 2);
-    setupWS(this);
-  }
-  /**
-   * @param {any} message
-   */
-  send(message) {
-    if (this.ws) {
-      this.ws.send(JSON.stringify(message));
-    }
-  }
-  destroy() {
-    clearInterval(this._checkInterval);
-    this.disconnect();
-    super.destroy();
-  }
-  disconnect() {
-    this.shouldConnect = false;
-    if (this.ws !== null) {
-      this.ws.close();
-    }
-  }
-  connect() {
-    this.shouldConnect = true;
-    if (!this.connected && this.ws === null) {
-      setupWS(this);
-    }
-  }
-};
-
-// node_modules/lib0/error.js
-var create3 = (s) => new Error(s);
-var methodUnimplemented = () => {
-  throw create3("Method unimplemented");
-};
-var unexpectedCase = () => {
-  throw create3("Unexpected case");
-};
 
 // node_modules/lib0/binary.js
 var BIT1 = 1;
@@ -3560,20 +8229,6 @@ var BITS29 = BIT30 - 1;
 var BITS30 = BIT31 - 1;
 var BITS31 = 2147483647;
 
-// node_modules/lib0/webcrypto.js
-var subtle = crypto.subtle;
-var getRandomValues = crypto.getRandomValues.bind(crypto);
-
-// node_modules/lib0/random.js
-var rand = Math.random;
-var uint32 = () => getRandomValues(new Uint32Array(1))[0];
-var uuidv4Template = [1e7] + -1e3 + -4e3 + -8e3 + -1e11;
-var uuidv4 = () => uuidv4Template.replace(
-  /[018]/g,
-  /** @param {number} c */
-  (c) => (c ^ uint32() & 15 >> c / 4).toString(16)
-);
-
 // node_modules/lib0/number.js
 var MAX_SAFE_INTEGER = Number.MAX_SAFE_INTEGER;
 var MIN_SAFE_INTEGER = Number.MIN_SAFE_INTEGER;
@@ -3611,7 +8266,6 @@ var utf8TextDecoder = typeof TextDecoder === "undefined" ? null : new TextDecode
 if (utf8TextDecoder && utf8TextDecoder.decode(new Uint8Array()).length === 1) {
   utf8TextDecoder = null;
 }
-var repeat = (source, n) => unfold(n, () => source).join("");
 
 // node_modules/lib0/encoding.js
 var Encoder = class {
@@ -3704,7 +8358,6 @@ var _writeVarStringPolyfill = (encoder, str) => {
 };
 var writeVarString = utf8TextEncoder && /** @type {any} */
 utf8TextEncoder.encodeInto ? _writeVarStringNative : _writeVarStringPolyfill;
-var writeBinaryEncoder = (encoder, append2) => writeUint8Array(encoder, toUint8Array(append2));
 var writeUint8Array = (encoder, uint8Array) => {
   const bufferLen = encoder.cbuf.length;
   const cpos = encoder.cpos;
@@ -3776,10 +8429,10 @@ var writeAny = (encoder, data) => {
         writeVarUint8Array(encoder, data);
       } else {
         write(encoder, 118);
-        const keys2 = Object.keys(data);
-        writeVarUint(encoder, keys2.length);
-        for (let i = 0; i < keys2.length; i++) {
-          const key = keys2[i];
+        const keys3 = Object.keys(data);
+        writeVarUint(encoder, keys3.length);
+        for (let i = 0; i < keys3.length; i++) {
+          const key = keys3[i];
           writeVarString(encoder, key);
           writeAny(encoder, data[key]);
         }
@@ -3909,6 +8562,15 @@ var StringEncoder = class {
     writeUint8Array(encoder, this.lensE.toUint8Array());
     return toUint8Array(encoder);
   }
+};
+
+// node_modules/lib0/error.js
+var create3 = (s) => new Error(s);
+var methodUnimplemented = () => {
+  throw create3("Method unimplemented");
+};
+var unexpectedCase = () => {
+  throw create3("Unexpected case");
 };
 
 // node_modules/lib0/decoding.js
@@ -4154,6 +8816,32 @@ var StringDecoder = class {
   }
 };
 
+// node_modules/lib0/webcrypto.js
+var subtle = crypto.subtle;
+var getRandomValues = crypto.getRandomValues.bind(crypto);
+
+// node_modules/lib0/random.js
+var rand = Math.random;
+var uint32 = () => getRandomValues(new Uint32Array(1))[0];
+var uuidv4Template = [1e7] + -1e3 + -4e3 + -8e3 + -1e11;
+var uuidv4 = () => uuidv4Template.replace(
+  /[018]/g,
+  /** @param {number} c */
+  (c) => (c ^ uint32() & 15 >> c / 4).toString(16)
+);
+
+// node_modules/lib0/time.js
+var getUnixTime = Date.now;
+
+// node_modules/lib0/promise.js
+var create4 = (f) => (
+  /** @type {Promise<T>} */
+  new Promise(f)
+);
+var all = Promise.all.bind(Promise);
+var reject = (reason) => Promise.reject(reason);
+var resolve = (res) => Promise.resolve(res);
+
 // node_modules/lib0/conditions.js
 var undefinedToNull = (v) => v === void 0 ? null : v;
 
@@ -4199,13 +8887,20 @@ var offChange = (eventHandler) => usePolyfill || removeEventListener(
 
 // node_modules/lib0/object.js
 var assign = Object.assign;
-var keys = Object.keys;
+var keys2 = Object.keys;
 var forEach = (obj, f) => {
   for (const key in obj) {
     f(obj[key], key);
   }
 };
-var length2 = (obj) => keys(obj).length;
+var map2 = (obj, f) => {
+  const results = [];
+  for (const key in obj) {
+    results.push(f(obj[key], key));
+  }
+  return results;
+};
+var length2 = (obj) => keys2(obj).length;
 var isEmpty = (obj) => {
   for (const _k in obj) {
     return false;
@@ -4235,7 +8930,7 @@ var callAll = (fs, args2, i = 0) => {
     }
   }
 };
-var nop = () => {
+var nop2 = () => {
 };
 var id = (a) => a;
 var equalityStrict = (a, b) => a === b;
@@ -4366,6 +9061,38 @@ var production = hasConf("production");
 var forceColor = isNode && isOneOf(process.env.FORCE_COLOR, ["true", "1", "2"]);
 var supportsColor = !hasParam("no-colors") && (!isNode || process.stdout.isTTY || forceColor) && (!isNode || hasParam("color") || forceColor || getVariable("COLORTERM") !== null || (getVariable("TERM") || "").includes("color"));
 
+// node_modules/lib0/buffer.js
+var createUint8ArrayFromLen = (len) => new Uint8Array(len);
+var createUint8ArrayViewFromArrayBuffer = (buffer, byteOffset, length3) => new Uint8Array(buffer, byteOffset, length3);
+var createUint8ArrayFromArrayBuffer = (buffer) => new Uint8Array(buffer);
+var toBase64Browser = (bytes) => {
+  let s = "";
+  for (let i = 0; i < bytes.byteLength; i++) {
+    s += fromCharCode(bytes[i]);
+  }
+  return btoa(s);
+};
+var toBase64Node = (bytes) => Buffer.from(bytes.buffer, bytes.byteOffset, bytes.byteLength).toString("base64");
+var fromBase64Browser = (s) => {
+  const a = atob(s);
+  const bytes = createUint8ArrayFromLen(a.length);
+  for (let i = 0; i < a.length; i++) {
+    bytes[i] = a.charCodeAt(i);
+  }
+  return bytes;
+};
+var fromBase64Node = (s) => {
+  const buf = Buffer.from(s, "base64");
+  return createUint8ArrayViewFromArrayBuffer(buf.buffer, buf.byteOffset, buf.byteLength);
+};
+var toBase64 = isBrowser ? toBase64Browser : toBase64Node;
+var fromBase64 = isBrowser ? fromBase64Browser : fromBase64Node;
+var copyUint8Array = (uint8Array) => {
+  const newBuf = createUint8ArrayFromLen(uint8Array.byteLength);
+  newBuf.set(uint8Array);
+  return newBuf;
+};
+
 // node_modules/lib0/pair.js
 var Pair = class {
   /**
@@ -4377,7 +9104,7 @@ var Pair = class {
     this.right = right;
   }
 };
-var create4 = (left, right) => new Pair(left, right);
+var create5 = (left, right) => new Pair(left, right);
 var forEach2 = (arr, f) => arr.forEach((p) => f(p.left, p.right));
 
 // node_modules/lib0/dom.js
@@ -4428,18 +9155,18 @@ var DOCUMENT_TYPE_NODE = doc.DOCUMENT_TYPE_NODE;
 var DOCUMENT_FRAGMENT_NODE = doc.DOCUMENT_FRAGMENT_NODE;
 
 // node_modules/lib0/symbol.js
-var create5 = Symbol;
+var create6 = Symbol;
 
 // node_modules/lib0/logging.common.js
-var BOLD = create5();
-var UNBOLD = create5();
-var BLUE = create5();
-var GREY = create5();
-var GREEN = create5();
-var RED = create5();
-var PURPLE = create5();
-var ORANGE = create5();
-var UNCOLOR = create5();
+var BOLD = create6();
+var UNBOLD = create6();
+var BLUE = create6();
+var GREY = create6();
+var GREEN = create6();
+var RED = create6();
+var PURPLE = create6();
+var ORANGE = create6();
+var UNCOLOR = create6();
 var computeNoColorLoggingArgs = (args2) => {
   const strBuilder = [];
   const logArgs = [];
@@ -4463,7 +9190,7 @@ var createModuleLogger = (_print, moduleName) => {
   const doLogging = debugRegexVar !== null && (debugRegexVar === "*" || debugRegexVar === "true" || new RegExp(debugRegexVar, "gi").test(moduleName));
   nextColor = (nextColor + 1) % loggingColors.length;
   moduleName += ": ";
-  return !doLogging ? nop : (...args2) => {
+  return !doLogging ? nop2 : (...args2) => {
     const timeNow = getUnixTime();
     const timeDiff = timeNow - lastLoggingTime;
     lastLoggingTime = timeNow;
@@ -4482,16 +9209,16 @@ var createModuleLogger = (_print, moduleName) => {
 
 // node_modules/lib0/logging.js
 var _browserStyleMap = {
-  [BOLD]: create4("font-weight", "bold"),
-  [UNBOLD]: create4("font-weight", "normal"),
-  [BLUE]: create4("color", "blue"),
-  [GREEN]: create4("color", "green"),
-  [GREY]: create4("color", "grey"),
-  [RED]: create4("color", "red"),
-  [PURPLE]: create4("color", "purple"),
-  [ORANGE]: create4("color", "orange"),
+  [BOLD]: create5("font-weight", "bold"),
+  [UNBOLD]: create5("font-weight", "normal"),
+  [BLUE]: create5("color", "blue"),
+  [GREEN]: create5("color", "green"),
+  [GREY]: create5("color", "grey"),
+  [RED]: create5("color", "red"),
+  [PURPLE]: create5("color", "purple"),
+  [ORANGE]: create5("color", "orange"),
   // not well supported in chrome when debugging node with inspector - TODO: deprecate
-  [UNCOLOR]: create4("color", "black")
+  [UNCOLOR]: create5("color", "black")
 };
 var computeBrowserLoggingArgs = (args2) => {
   const strBuilder = [];
@@ -4543,214 +9270,6 @@ var warn = (...args2) => {
 var vconsoles = create2();
 var createModuleLogger2 = (moduleName) => createModuleLogger(print, moduleName);
 
-// node_modules/lib0/promise.js
-var create6 = (f) => (
-  /** @type {Promise<T>} */
-  new Promise(f)
-);
-var all = Promise.all.bind(Promise);
-var reject = (reason) => Promise.reject(reason);
-var resolve = (res) => Promise.resolve(res);
-
-// node_modules/lib0/buffer.js
-var createUint8ArrayFromLen = (len) => new Uint8Array(len);
-var createUint8ArrayViewFromArrayBuffer = (buffer, byteOffset, length3) => new Uint8Array(buffer, byteOffset, length3);
-var createUint8ArrayFromArrayBuffer = (buffer) => new Uint8Array(buffer);
-var toBase64Browser = (bytes) => {
-  let s = "";
-  for (let i = 0; i < bytes.byteLength; i++) {
-    s += fromCharCode(bytes[i]);
-  }
-  return btoa(s);
-};
-var toBase64Node = (bytes) => Buffer.from(bytes.buffer, bytes.byteOffset, bytes.byteLength).toString("base64");
-var fromBase64Browser = (s) => {
-  const a = atob(s);
-  const bytes = createUint8ArrayFromLen(a.length);
-  for (let i = 0; i < a.length; i++) {
-    bytes[i] = a.charCodeAt(i);
-  }
-  return bytes;
-};
-var fromBase64Node = (s) => {
-  const buf = Buffer.from(s, "base64");
-  return createUint8ArrayViewFromArrayBuffer(buf.buffer, buf.byteOffset, buf.byteLength);
-};
-var toBase64 = isBrowser ? toBase64Browser : toBase64Node;
-var fromBase64 = isBrowser ? fromBase64Browser : fromBase64Node;
-var copyUint8Array = (uint8Array) => {
-  const newBuf = createUint8ArrayFromLen(uint8Array.byteLength);
-  newBuf.set(uint8Array);
-  return newBuf;
-};
-
-// node_modules/lib0/broadcastchannel.js
-var channels = /* @__PURE__ */ new Map();
-var LocalStoragePolyfill = class {
-  /**
-   * @param {string} room
-   */
-  constructor(room) {
-    this.room = room;
-    this.onmessage = null;
-    this._onChange = (e) => e.key === room && this.onmessage !== null && this.onmessage({ data: fromBase64(e.newValue || "") });
-    onChange(this._onChange);
-  }
-  /**
-   * @param {ArrayBuffer} buf
-   */
-  postMessage(buf) {
-    varStorage.setItem(this.room, toBase64(createUint8ArrayFromArrayBuffer(buf)));
-  }
-  close() {
-    offChange(this._onChange);
-  }
-};
-var BC = typeof BroadcastChannel === "undefined" ? LocalStoragePolyfill : BroadcastChannel;
-var getChannel = (room) => setIfUndefined(channels, room, () => {
-  const subs = create2();
-  const bc = new BC(room);
-  bc.onmessage = (e) => subs.forEach((sub) => sub(e.data, "broadcastchannel"));
-  return {
-    bc,
-    subs
-  };
-});
-var subscribe = (room, f) => {
-  getChannel(room).subs.add(f);
-  return f;
-};
-var unsubscribe = (room, f) => {
-  const channel = getChannel(room);
-  const unsubscribed = channel.subs.delete(f);
-  if (unsubscribed && channel.subs.size === 0) {
-    channel.bc.close();
-    channels.delete(room);
-  }
-  return unsubscribed;
-};
-var publish = (room, data, origin = null) => {
-  const c = getChannel(room);
-  c.bc.postMessage(data);
-  c.subs.forEach((sub) => sub(data, origin));
-};
-
-// node_modules/lib0/mutex.js
-var createMutex = () => {
-  let token = true;
-  return (f, g) => {
-    if (token) {
-      token = false;
-      try {
-        f();
-      } finally {
-        token = true;
-      }
-    } else if (g !== void 0) {
-      g();
-    }
-  };
-};
-
-// node_modules/yjs/dist/yjs.mjs
-var yjs_exports = {};
-__export(yjs_exports, {
-  AbsolutePosition: () => AbsolutePosition,
-  AbstractConnector: () => AbstractConnector,
-  AbstractStruct: () => AbstractStruct,
-  AbstractType: () => AbstractType,
-  Array: () => YArray,
-  ContentAny: () => ContentAny,
-  ContentBinary: () => ContentBinary,
-  ContentDeleted: () => ContentDeleted,
-  ContentEmbed: () => ContentEmbed,
-  ContentFormat: () => ContentFormat,
-  ContentJSON: () => ContentJSON,
-  ContentString: () => ContentString,
-  ContentType: () => ContentType,
-  Doc: () => Doc,
-  GC: () => GC,
-  ID: () => ID,
-  Item: () => Item,
-  Map: () => YMap,
-  PermanentUserData: () => PermanentUserData,
-  RelativePosition: () => RelativePosition,
-  Snapshot: () => Snapshot,
-  Text: () => YText,
-  Transaction: () => Transaction,
-  UndoManager: () => UndoManager,
-  UpdateEncoderV1: () => UpdateEncoderV1,
-  XmlElement: () => YXmlElement,
-  XmlFragment: () => YXmlFragment,
-  XmlHook: () => YXmlHook,
-  XmlText: () => YXmlText,
-  YArrayEvent: () => YArrayEvent,
-  YEvent: () => YEvent,
-  YMapEvent: () => YMapEvent,
-  YTextEvent: () => YTextEvent,
-  YXmlEvent: () => YXmlEvent,
-  applyUpdate: () => applyUpdate,
-  applyUpdateV2: () => applyUpdateV2,
-  cleanupYTextFormatting: () => cleanupYTextFormatting,
-  compareIDs: () => compareIDs,
-  compareRelativePositions: () => compareRelativePositions,
-  convertUpdateFormatV1ToV2: () => convertUpdateFormatV1ToV2,
-  convertUpdateFormatV2ToV1: () => convertUpdateFormatV2ToV1,
-  createAbsolutePositionFromRelativePosition: () => createAbsolutePositionFromRelativePosition,
-  createDeleteSet: () => createDeleteSet,
-  createDeleteSetFromStructStore: () => createDeleteSetFromStructStore,
-  createDocFromSnapshot: () => createDocFromSnapshot,
-  createID: () => createID,
-  createRelativePositionFromJSON: () => createRelativePositionFromJSON,
-  createRelativePositionFromTypeIndex: () => createRelativePositionFromTypeIndex,
-  createSnapshot: () => createSnapshot,
-  decodeRelativePosition: () => decodeRelativePosition,
-  decodeSnapshot: () => decodeSnapshot,
-  decodeSnapshotV2: () => decodeSnapshotV2,
-  decodeStateVector: () => decodeStateVector,
-  decodeUpdate: () => decodeUpdate,
-  decodeUpdateV2: () => decodeUpdateV2,
-  diffUpdate: () => diffUpdate,
-  diffUpdateV2: () => diffUpdateV2,
-  emptySnapshot: () => emptySnapshot,
-  encodeRelativePosition: () => encodeRelativePosition,
-  encodeSnapshot: () => encodeSnapshot,
-  encodeSnapshotV2: () => encodeSnapshotV2,
-  encodeStateAsUpdate: () => encodeStateAsUpdate,
-  encodeStateAsUpdateV2: () => encodeStateAsUpdateV2,
-  encodeStateVector: () => encodeStateVector,
-  encodeStateVectorFromUpdate: () => encodeStateVectorFromUpdate,
-  encodeStateVectorFromUpdateV2: () => encodeStateVectorFromUpdateV2,
-  equalDeleteSets: () => equalDeleteSets,
-  equalSnapshots: () => equalSnapshots,
-  findIndexSS: () => findIndexSS,
-  findRootTypeKey: () => findRootTypeKey,
-  getItem: () => getItem,
-  getState: () => getState,
-  getTypeChildren: () => getTypeChildren,
-  isDeleted: () => isDeleted,
-  isParentOf: () => isParentOf,
-  iterateDeletedStructs: () => iterateDeletedStructs,
-  logType: () => logType,
-  logUpdate: () => logUpdate,
-  logUpdateV2: () => logUpdateV2,
-  mergeUpdates: () => mergeUpdates,
-  mergeUpdatesV2: () => mergeUpdatesV2,
-  obfuscateUpdate: () => obfuscateUpdate,
-  obfuscateUpdateV2: () => obfuscateUpdateV2,
-  parseUpdateMeta: () => parseUpdateMeta,
-  parseUpdateMetaV2: () => parseUpdateMetaV2,
-  readUpdate: () => readUpdate,
-  readUpdateV2: () => readUpdateV2,
-  relativePositionToJSON: () => relativePositionToJSON,
-  snapshot: () => snapshot,
-  snapshotContainsUpdate: () => snapshotContainsUpdate,
-  transact: () => transact,
-  tryGc: () => tryGc,
-  typeListToArraySnapshot: () => typeListToArraySnapshot,
-  typeMapGetSnapshot: () => typeMapGetSnapshot
-});
-
 // node_modules/lib0/iterator.js
 var createIterator = (next) => ({
   /**
@@ -4775,17 +9294,6 @@ var iteratorMap = (iterator, fmap) => createIterator(() => {
 });
 
 // node_modules/yjs/dist/yjs.mjs
-var AbstractConnector = class extends Observable {
-  /**
-   * @param {Doc} ydoc
-   * @param {any} awareness
-   */
-  constructor(ydoc, awareness) {
-    super();
-    this.doc = ydoc;
-    this.awareness = awareness;
-  }
-};
 var DeleteItem = class {
   /**
    * @param {number} clock
@@ -4979,26 +9487,6 @@ var readAndApplyDeleteSet = (decoder, transaction, store) => {
   }
   return null;
 };
-var equalDeleteSets = (ds1, ds2) => {
-  if (ds1.clients.size !== ds2.clients.size)
-    return false;
-  for (const [client, deleteItems1] of ds1.clients.entries()) {
-    const deleteItems2 = (
-      /** @type {Array<import('../internals.js').DeleteItem>} */
-      ds2.clients.get(client)
-    );
-    if (deleteItems2 === void 0 || deleteItems1.length !== deleteItems2.length)
-      return false;
-    for (let i = 0; i < deleteItems1.length; i++) {
-      const di1 = deleteItems1[i];
-      const di2 = deleteItems2[i];
-      if (di1.clock !== di2.clock || di1.len !== di2.len) {
-        return false;
-      }
-    }
-  }
-  return true;
-};
 var generateNewClientId = uint32;
 var Doc = class extends Observable {
   /**
@@ -5022,13 +9510,13 @@ var Doc = class extends Observable {
     this.meta = meta;
     this.isLoaded = false;
     this.isSynced = false;
-    this.whenLoaded = create6((resolve2) => {
+    this.whenLoaded = create4((resolve2) => {
       this.on("load", () => {
         this.isLoaded = true;
         resolve2(this);
       });
     });
-    const provideSyncedPromise = () => create6((resolve2) => {
+    const provideSyncedPromise = () => create4((resolve2) => {
       const eventHandler = (isSynced) => {
         if (isSynced === void 0 || isSynced === true) {
           this.off("sync", eventHandler);
@@ -5119,17 +9607,17 @@ var Doc = class extends Observable {
    * @public
    */
   get(name, TypeConstructor = AbstractType) {
-    const type = setIfUndefined(this.share, name, () => {
+    const type2 = setIfUndefined(this.share, name, () => {
       const t = new TypeConstructor();
       t._integrate(this, null);
       return t;
     });
-    const Constr = type.constructor;
+    const Constr = type2.constructor;
     if (TypeConstructor !== AbstractType && Constr !== TypeConstructor) {
       if (Constr === AbstractType) {
         const t = new TypeConstructor();
-        t._map = type._map;
-        type._map.forEach(
+        t._map = type2._map;
+        type2._map.forEach(
           /** @param {Item?} n */
           (n) => {
             for (; n !== null; n = n.left) {
@@ -5137,11 +9625,11 @@ var Doc = class extends Observable {
             }
           }
         );
-        t._start = type._start;
+        t._start = type2._start;
         for (let n = t._start; n !== null; n = n.right) {
           n.parent = t;
         }
-        t._length = type._length;
+        t._length = type2._length;
         this.share.set(name, t);
         t._integrate(this, null);
         return t;
@@ -5149,7 +9637,7 @@ var Doc = class extends Observable {
         throw new Error(`Type with the name ${name} has already been defined with a different constructor`);
       }
     }
-    return type;
+    return type2;
   }
   /**
    * @template T
@@ -5995,7 +10483,6 @@ var readUpdateV2 = (decoder, ydoc, transactionOrigin, structDecoder = new Update
     applyUpdateV2(transaction.doc, update);
   }
 }, transactionOrigin, false);
-var readUpdate = (decoder, ydoc, transactionOrigin) => readUpdateV2(decoder, ydoc, transactionOrigin, new UpdateDecoderV1(decoder));
 var applyUpdateV2 = (ydoc, update, transactionOrigin, YDecoder = UpdateDecoderV2) => {
   const decoder = createDecoder(update);
   readUpdateV2(decoder, ydoc, transactionOrigin, new YDecoder(decoder));
@@ -6082,14 +10569,9 @@ var ID = class {
 };
 var compareIDs = (a, b) => a === b || a !== null && b !== null && a.client === b.client && a.clock === b.clock;
 var createID = (client, clock) => new ID(client, clock);
-var writeID = (encoder, id2) => {
-  writeVarUint(encoder, id2.client);
-  writeVarUint(encoder, id2.clock);
-};
-var readID = (decoder) => createID(readVarUint(decoder), readVarUint(decoder));
-var findRootTypeKey = (type) => {
-  for (const [key, value] of type.doc.share.entries()) {
-    if (value === type) {
+var findRootTypeKey = (type2) => {
+  for (const [key, value] of type2.doc.share.entries()) {
+    if (value === type2) {
       return key;
     }
   }
@@ -6105,132 +10587,6 @@ var isParentOf = (parent, child) => {
   }
   return false;
 };
-var logType = (type) => {
-  const res = [];
-  let n = type._start;
-  while (n) {
-    res.push(n);
-    n = n.right;
-  }
-  console.log("Children: ", res);
-  console.log("Children content: ", res.filter((m) => !m.deleted).map((m) => m.content));
-};
-var PermanentUserData = class {
-  /**
-   * @param {Doc} doc
-   * @param {YMap<any>} [storeType]
-   */
-  constructor(doc2, storeType = doc2.getMap("users")) {
-    const dss = /* @__PURE__ */ new Map();
-    this.yusers = storeType;
-    this.doc = doc2;
-    this.clients = /* @__PURE__ */ new Map();
-    this.dss = dss;
-    const initUser = (user, userDescription) => {
-      const ds = user.get("ds");
-      const ids = user.get("ids");
-      const addClientId = (
-        /** @param {number} clientid */
-        (clientid) => this.clients.set(clientid, userDescription)
-      );
-      ds.observe(
-        /** @param {YArrayEvent<any>} event */
-        (event) => {
-          event.changes.added.forEach((item) => {
-            item.content.getContent().forEach((encodedDs) => {
-              if (encodedDs instanceof Uint8Array) {
-                this.dss.set(userDescription, mergeDeleteSets([this.dss.get(userDescription) || createDeleteSet(), readDeleteSet(new DSDecoderV1(createDecoder(encodedDs)))]));
-              }
-            });
-          });
-        }
-      );
-      this.dss.set(userDescription, mergeDeleteSets(ds.map((encodedDs) => readDeleteSet(new DSDecoderV1(createDecoder(encodedDs))))));
-      ids.observe(
-        /** @param {YArrayEvent<any>} event */
-        (event) => event.changes.added.forEach((item) => item.content.getContent().forEach(addClientId))
-      );
-      ids.forEach(addClientId);
-    };
-    storeType.observe((event) => {
-      event.keysChanged.forEach(
-        (userDescription) => initUser(storeType.get(userDescription), userDescription)
-      );
-    });
-    storeType.forEach(initUser);
-  }
-  /**
-   * @param {Doc} doc
-   * @param {number} clientid
-   * @param {string} userDescription
-   * @param {Object} conf
-   * @param {function(Transaction, DeleteSet):boolean} [conf.filter]
-   */
-  setUserMapping(doc2, clientid, userDescription, { filter = () => true } = {}) {
-    const users = this.yusers;
-    let user = users.get(userDescription);
-    if (!user) {
-      user = new YMap();
-      user.set("ids", new YArray());
-      user.set("ds", new YArray());
-      users.set(userDescription, user);
-    }
-    user.get("ids").push([clientid]);
-    users.observe((_event) => {
-      setTimeout(() => {
-        const userOverwrite = users.get(userDescription);
-        if (userOverwrite !== user) {
-          user = userOverwrite;
-          this.clients.forEach((_userDescription, clientid2) => {
-            if (userDescription === _userDescription) {
-              user.get("ids").push([clientid2]);
-            }
-          });
-          const encoder = new DSEncoderV1();
-          const ds = this.dss.get(userDescription);
-          if (ds) {
-            writeDeleteSet(encoder, ds);
-            user.get("ds").push([encoder.toUint8Array()]);
-          }
-        }
-      }, 0);
-    });
-    doc2.on(
-      "afterTransaction",
-      /** @param {Transaction} transaction */
-      (transaction) => {
-        setTimeout(() => {
-          const yds = user.get("ds");
-          const ds = transaction.deleteSet;
-          if (transaction.local && ds.clients.size > 0 && filter(transaction, ds)) {
-            const encoder = new DSEncoderV1();
-            writeDeleteSet(encoder, ds);
-            yds.push([encoder.toUint8Array()]);
-          }
-        });
-      }
-    );
-  }
-  /**
-   * @param {number} clientid
-   * @return {any}
-   */
-  getUserByClientId(clientid) {
-    return this.clients.get(clientid) || null;
-  }
-  /**
-   * @param {ID} id
-   * @return {string | null}
-   */
-  getUserByDeletedId(id2) {
-    for (const [userDescription, ds] of this.dss.entries()) {
-      if (isDeleted(ds, id2)) {
-        return userDescription;
-      }
-    }
-    return null;
-  }
-};
 var RelativePosition = class {
   /**
    * @param {ID|null} type
@@ -6238,8 +10594,8 @@ var RelativePosition = class {
    * @param {ID|null} item
    * @param {number} assoc
    */
-  constructor(type, tname, item, assoc = 0) {
-    this.type = type;
+  constructor(type2, tname, item, assoc = 0) {
+    this.type = type2;
     this.tname = tname;
     this.item = item;
     this.assoc = assoc;
@@ -6268,93 +10624,52 @@ var AbsolutePosition = class {
    * @param {number} index
    * @param {number} [assoc]
    */
-  constructor(type, index, assoc = 0) {
-    this.type = type;
+  constructor(type2, index, assoc = 0) {
+    this.type = type2;
     this.index = index;
     this.assoc = assoc;
   }
 };
-var createAbsolutePosition = (type, index, assoc = 0) => new AbsolutePosition(type, index, assoc);
-var createRelativePosition = (type, item, assoc) => {
+var createAbsolutePosition = (type2, index, assoc = 0) => new AbsolutePosition(type2, index, assoc);
+var createRelativePosition = (type2, item, assoc) => {
   let typeid = null;
   let tname = null;
-  if (type._item === null) {
-    tname = findRootTypeKey(type);
+  if (type2._item === null) {
+    tname = findRootTypeKey(type2);
   } else {
-    typeid = createID(type._item.id.client, type._item.id.clock);
+    typeid = createID(type2._item.id.client, type2._item.id.clock);
   }
   return new RelativePosition(typeid, tname, item, assoc);
 };
-var createRelativePositionFromTypeIndex = (type, index, assoc = 0) => {
-  let t = type._start;
+var createRelativePositionFromTypeIndex = (type2, index, assoc = 0) => {
+  let t = type2._start;
   if (assoc < 0) {
     if (index === 0) {
-      return createRelativePosition(type, null, assoc);
+      return createRelativePosition(type2, null, assoc);
     }
     index--;
   }
   while (t !== null) {
     if (!t.deleted && t.countable) {
       if (t.length > index) {
-        return createRelativePosition(type, createID(t.id.client, t.id.clock + index), assoc);
+        return createRelativePosition(type2, createID(t.id.client, t.id.clock + index), assoc);
       }
       index -= t.length;
     }
     if (t.right === null && assoc < 0) {
-      return createRelativePosition(type, t.lastId, assoc);
+      return createRelativePosition(type2, t.lastId, assoc);
     }
     t = t.right;
   }
-  return createRelativePosition(type, null, assoc);
+  return createRelativePosition(type2, null, assoc);
 };
-var writeRelativePosition = (encoder, rpos) => {
-  const { type, tname, item, assoc } = rpos;
-  if (item !== null) {
-    writeVarUint(encoder, 0);
-    writeID(encoder, item);
-  } else if (tname !== null) {
-    writeUint8(encoder, 1);
-    writeVarString(encoder, tname);
-  } else if (type !== null) {
-    writeUint8(encoder, 2);
-    writeID(encoder, type);
-  } else {
-    throw unexpectedCase();
-  }
-  writeVarInt(encoder, assoc);
-  return encoder;
-};
-var encodeRelativePosition = (rpos) => {
-  const encoder = createEncoder();
-  writeRelativePosition(encoder, rpos);
-  return toUint8Array(encoder);
-};
-var readRelativePosition = (decoder) => {
-  let type = null;
-  let tname = null;
-  let itemID = null;
-  switch (readVarUint(decoder)) {
-    case 0:
-      itemID = readID(decoder);
-      break;
-    case 1:
-      tname = readVarString(decoder);
-      break;
-    case 2: {
-      type = readID(decoder);
-    }
-  }
-  const assoc = hasContent(decoder) ? readVarInt(decoder) : 0;
-  return new RelativePosition(type, tname, itemID, assoc);
-};
-var decodeRelativePosition = (uint8Array) => readRelativePosition(createDecoder(uint8Array));
 var createAbsolutePositionFromRelativePosition = (rpos, doc2) => {
   const store = doc2.store;
   const rightID = rpos.item;
   const typeID = rpos.type;
   const tname = rpos.tname;
   const assoc = rpos.assoc;
-  let type = null;
+  let type2 = null;
   let index = 0;
   if (rightID !== null) {
     if (getState(store, rightID.client) <= rightID.clock) {
@@ -6365,9 +10680,9 @@ var createAbsolutePositionFromRelativePosition = (rpos, doc2) => {
     if (!(right instanceof Item)) {
       return null;
     }
-    type = /** @type {AbstractType<any>} */
+    type2 = /** @type {AbstractType<any>} */
     right.parent;
-    if (type._item === null || !type._item.deleted) {
+    if (type2._item === null || !type2._item.deleted) {
       index = right.deleted || !right.countable ? 0 : res.diff + (assoc >= 0 ? 0 : 1);
       let n = right.left;
       while (n !== null) {
@@ -6379,14 +10694,14 @@ var createAbsolutePositionFromRelativePosition = (rpos, doc2) => {
     }
   } else {
     if (tname !== null) {
-      type = doc2.get(tname);
+      type2 = doc2.get(tname);
     } else if (typeID !== null) {
       if (getState(store, typeID.client) <= typeID.clock) {
         return null;
       }
       const { item } = followRedone(store, typeID);
       if (item instanceof Item && item.content instanceof ContentType) {
-        type = item.content.type;
+        type2 = item.content.type;
       } else {
         return null;
       }
@@ -6394,12 +10709,12 @@ var createAbsolutePositionFromRelativePosition = (rpos, doc2) => {
       throw unexpectedCase();
     }
     if (assoc >= 0) {
-      index = type._length;
+      index = type2._length;
     } else {
       index = 0;
     }
   }
-  return createAbsolutePosition(type, index, rpos.assoc);
+  return createAbsolutePosition(type2, index, rpos.assoc);
 };
 var compareRelativePositions = (a, b) => a === b || a !== null && b !== null && a.tname === b.tname && compareIDs(a.item, b.item) && compareIDs(a.type, b.type) && a.assoc === b.assoc;
 var Snapshot = class {
@@ -6412,109 +10727,23 @@ var Snapshot = class {
     this.sv = sv;
   }
 };
-var equalSnapshots = (snap1, snap2) => {
-  const ds1 = snap1.ds.clients;
-  const ds2 = snap2.ds.clients;
-  const sv1 = snap1.sv;
-  const sv2 = snap2.sv;
-  if (sv1.size !== sv2.size || ds1.size !== ds2.size) {
-    return false;
-  }
-  for (const [key, value] of sv1.entries()) {
-    if (sv2.get(key) !== value) {
-      return false;
-    }
-  }
-  for (const [client, dsitems1] of ds1.entries()) {
-    const dsitems2 = ds2.get(client) || [];
-    if (dsitems1.length !== dsitems2.length) {
-      return false;
-    }
-    for (let i = 0; i < dsitems1.length; i++) {
-      const dsitem1 = dsitems1[i];
-      const dsitem2 = dsitems2[i];
-      if (dsitem1.clock !== dsitem2.clock || dsitem1.len !== dsitem2.len) {
-        return false;
-      }
-    }
-  }
-  return true;
-};
-var encodeSnapshotV2 = (snapshot2, encoder = new DSEncoderV2()) => {
-  writeDeleteSet(encoder, snapshot2.ds);
-  writeStateVector(encoder, snapshot2.sv);
-  return encoder.toUint8Array();
-};
-var encodeSnapshot = (snapshot2) => encodeSnapshotV2(snapshot2, new DSEncoderV1());
-var decodeSnapshotV2 = (buf, decoder = new DSDecoderV2(createDecoder(buf))) => {
-  return new Snapshot(readDeleteSet(decoder), readStateVector(decoder));
-};
-var decodeSnapshot = (buf) => decodeSnapshotV2(buf, new DSDecoderV1(createDecoder(buf)));
 var createSnapshot = (ds, sm) => new Snapshot(ds, sm);
 var emptySnapshot = createSnapshot(createDeleteSet(), /* @__PURE__ */ new Map());
-var snapshot = (doc2) => createSnapshot(createDeleteSetFromStructStore(doc2.store), getStateVector(doc2.store));
-var isVisible = (item, snapshot2) => snapshot2 === void 0 ? !item.deleted : snapshot2.sv.has(item.id.client) && (snapshot2.sv.get(item.id.client) || 0) > item.id.clock && !isDeleted(snapshot2.ds, item.id);
-var splitSnapshotAffectedStructs = (transaction, snapshot2) => {
+var isVisible = (item, snapshot) => snapshot === void 0 ? !item.deleted : snapshot.sv.has(item.id.client) && (snapshot.sv.get(item.id.client) || 0) > item.id.clock && !isDeleted(snapshot.ds, item.id);
+var splitSnapshotAffectedStructs = (transaction, snapshot) => {
   const meta = setIfUndefined(transaction.meta, splitSnapshotAffectedStructs, create2);
   const store = transaction.doc.store;
-  if (!meta.has(snapshot2)) {
-    snapshot2.sv.forEach((clock, client) => {
+  if (!meta.has(snapshot)) {
+    snapshot.sv.forEach((clock, client) => {
       if (clock < getState(store, client)) {
         getItemCleanStart(transaction, createID(client, clock));
       }
     });
-    iterateDeletedStructs(transaction, snapshot2.ds, (_item) => {
+    iterateDeletedStructs(transaction, snapshot.ds, (_item) => {
     });
-    meta.add(snapshot2);
+    meta.add(snapshot);
   }
 };
-var createDocFromSnapshot = (originDoc, snapshot2, newDoc = new Doc()) => {
-  if (originDoc.gc) {
-    throw new Error("Garbage-collection must be disabled in `originDoc`!");
-  }
-  const { sv, ds } = snapshot2;
-  const encoder = new UpdateEncoderV2();
-  originDoc.transact((transaction) => {
-    let size = 0;
-    sv.forEach((clock) => {
-      if (clock > 0) {
-        size++;
-      }
-    });
-    writeVarUint(encoder.restEncoder, size);
-    for (const [client, clock] of sv) {
-      if (clock === 0) {
-        continue;
-      }
-      if (clock < getState(originDoc.store, client)) {
-        getItemCleanStart(transaction, createID(client, clock));
-      }
-      const structs = originDoc.store.clients.get(client) || [];
-      const lastStructIndex = findIndexSS(structs, clock - 1);
-      writeVarUint(encoder.restEncoder, lastStructIndex + 1);
-      encoder.writeClient(client);
-      writeVarUint(encoder.restEncoder, 0);
-      for (let i = 0; i <= lastStructIndex; i++) {
-        structs[i].write(encoder, 0);
-      }
-    }
-    writeDeleteSet(encoder, ds);
-  });
-  applyUpdateV2(newDoc, encoder.toUint8Array(), "snapshot");
-  return newDoc;
-};
-var snapshotContainsUpdateV2 = (snapshot2, update, YDecoder = UpdateDecoderV2) => {
-  const updateDecoder = new YDecoder(createDecoder(update));
-  const lazyDecoder = new LazyStructReader(updateDecoder, false);
-  for (let curr = lazyDecoder.curr; curr !== null; curr = lazyDecoder.next()) {
-    if ((snapshot2.sv.get(curr.id.client) || 0) < curr.id.clock + curr.length) {
-      return false;
-    }
-  }
-  const mergedDS = mergeDeleteSets([snapshot2.ds, readDeleteSet(updateDecoder)]);
-  return equalDeleteSets(snapshot2.ds, mergedDS);
-};
-var snapshotContainsUpdate = (snapshot2, update) => snapshotContainsUpdateV2(snapshot2, update, UpdateDecoderV1);
 var StructStore = class {
   constructor() {
     this.clients = /* @__PURE__ */ new Map();
@@ -6630,7 +10859,7 @@ var iterateStructs = (transaction, structs, clockStart, len, f) => {
     f(struct);
   } while (index < structs.length && structs[index].id.clock < clockEnd);
 };
-var Transaction = class {
+var Transaction2 = class {
   /**
    * @param {Doc} doc
    * @param {any} origin
@@ -6662,10 +10891,10 @@ var writeUpdateMessageFromTransaction = (encoder, transaction) => {
   writeDeleteSet(encoder, transaction.deleteSet);
   return true;
 };
-var addChangedTypeToTransaction = (transaction, type, parentSub) => {
-  const item = type._item;
+var addChangedTypeToTransaction = (transaction, type2, parentSub) => {
+  const item = type2._item;
   if (item === null || item.id.clock < (transaction.beforeState.get(item.id.client) || 0) && !item.deleted) {
-    setIfUndefined(transaction.changed, type, create2).add(parentSub);
+    setIfUndefined(transaction.changed, type2, create2).add(parentSub);
   }
 };
 var tryToMergeWithLefts = (structs, pos) => {
@@ -6730,10 +10959,6 @@ var tryMergeDeleteSet = (ds, store) => {
     }
   });
 };
-var tryGc = (ds, store, gcFilter) => {
-  tryGcDeleteSet(ds, store, gcFilter);
-  tryMergeDeleteSet(ds, store);
-};
 var cleanupTransactions = (transactionCleanups, i) => {
   if (i < transactionCleanups.length) {
     const transaction = transactionCleanups[i];
@@ -6754,17 +10979,17 @@ var cleanupTransactions = (transactionCleanups, i) => {
         })
       );
       fs.push(() => {
-        transaction.changedParentTypes.forEach((events, type) => {
-          if (type._dEH.l.length > 0 && (type._item === null || !type._item.deleted)) {
+        transaction.changedParentTypes.forEach((events, type2) => {
+          if (type2._dEH.l.length > 0 && (type2._item === null || !type2._item.deleted)) {
             events = events.filter(
               (event) => event.target._item === null || !event.target._item.deleted
             );
             events.forEach((event) => {
-              event.currentTarget = type;
+              event.currentTarget = type2;
               event._path = null;
             });
             events.sort((event1, event2) => event1.path.length - event2.path.length);
-            callEventHandlerListeners(type._dEH, events, transaction);
+            callEventHandlerListeners(type2._dEH, events, transaction);
           }
         });
       });
@@ -6854,7 +11079,7 @@ var transact = (doc2, f, origin = null, local = true) => {
   let result = null;
   if (doc2._transaction === null) {
     initialCall = true;
-    doc2._transaction = new Transaction(doc2, origin, local);
+    doc2._transaction = new Transaction2(doc2, origin, local);
     transactionCleanups.push(doc2._transaction);
     if (transactionCleanups.length === 1) {
       doc2.emit("beforeAllTransactions", [doc2]);
@@ -6887,7 +11112,7 @@ var StackItem = class {
 };
 var clearUndoManagerStackItem = (tr, um, stackItem) => {
   iterateDeletedStructs(tr, stackItem.deletions, (item) => {
-    if (item instanceof Item && um.scope.some((type) => isParentOf(type, item))) {
+    if (item instanceof Item && um.scope.some((type2) => isParentOf(type2, item))) {
       keepItem(item, false);
     }
   });
@@ -6916,8 +11141,8 @@ var popStackItem = (undoManager, stack, eventType) => {
             }
             struct = item;
           }
-          if (!struct.deleted && scope.some((type) => isParentOf(
-            type,
+          if (!struct.deleted && scope.some((type2) => isParentOf(
+            type2,
             /** @type {Item} */
             struct
           ))) {
@@ -6926,7 +11151,7 @@ var popStackItem = (undoManager, stack, eventType) => {
         }
       });
       iterateDeletedStructs(transaction, stackItem.deletions, (struct) => {
-        if (struct instanceof Item && scope.some((type) => isParentOf(type, struct)) && // Never redo structs in stackItem.insertions because they were created and deleted in the same capture interval.
+        if (struct instanceof Item && scope.some((type2) => isParentOf(type2, struct)) && // Never redo structs in stackItem.insertions because they were created and deleted in the same capture interval.
         !isDeleted(stackItem.insertions, struct.id)) {
           itemsToRedo.add(struct);
         }
@@ -6943,9 +11168,9 @@ var popStackItem = (undoManager, stack, eventType) => {
       }
       result = performedChange ? stackItem : null;
     }
-    transaction.changed.forEach((subProps, type) => {
-      if (subProps.has(null) && type._searchMarker) {
-        type._searchMarker.length = 0;
+    transaction.changed.forEach((subProps, type2) => {
+      if (subProps.has(null) && type2._searchMarker) {
+        type2._searchMarker.length = 0;
       }
     });
     _tr = transaction;
@@ -6988,7 +11213,7 @@ var UndoManager = class extends Observable {
     this.ignoreRemoteMapChanges = ignoreRemoteMapChanges;
     this.captureTimeout = captureTimeout;
     this.afterTransactionHandler = (transaction) => {
-      if (!this.captureTransaction(transaction) || !this.scope.some((type) => transaction.changedParentTypes.has(type)) || !this.trackedOrigins.has(transaction.origin) && (!transaction.origin || !this.trackedOrigins.has(transaction.origin.constructor))) {
+      if (!this.captureTransaction(transaction) || !this.scope.some((type2) => transaction.changedParentTypes.has(type2)) || !this.trackedOrigins.has(transaction.origin) && (!transaction.origin || !this.trackedOrigins.has(transaction.origin.constructor))) {
         return;
       }
       const undoing = this.undoing;
@@ -7025,7 +11250,7 @@ var UndoManager = class extends Observable {
         transaction.deleteSet,
         /** @param {Item|GC} item */
         (item) => {
-          if (item instanceof Item && this.scope.some((type) => isParentOf(type, item))) {
+          if (item instanceof Item && this.scope.some((type2) => isParentOf(type2, item))) {
             keepItem(item, true);
           }
         }
@@ -7221,31 +11446,6 @@ var LazyStructReader = class {
     return this.curr;
   }
 };
-var logUpdate = (update) => logUpdateV2(update, UpdateDecoderV1);
-var logUpdateV2 = (update, YDecoder = UpdateDecoderV2) => {
-  const structs = [];
-  const updateDecoder = new YDecoder(createDecoder(update));
-  const lazyDecoder = new LazyStructReader(updateDecoder, false);
-  for (let curr = lazyDecoder.curr; curr !== null; curr = lazyDecoder.next()) {
-    structs.push(curr);
-  }
-  print("Structs: ", structs);
-  const ds = readDeleteSet(updateDecoder);
-  print("DeleteSet: ", ds);
-};
-var decodeUpdate = (update) => decodeUpdateV2(update, UpdateDecoderV1);
-var decodeUpdateV2 = (update, YDecoder = UpdateDecoderV2) => {
-  const structs = [];
-  const updateDecoder = new YDecoder(createDecoder(update));
-  const lazyDecoder = new LazyStructReader(updateDecoder, false);
-  for (let curr = lazyDecoder.curr; curr !== null; curr = lazyDecoder.next()) {
-    structs.push(curr);
-  }
-  return {
-    structs,
-    ds: readDeleteSet(updateDecoder)
-  };
-};
 var LazyStructWriter = class {
   /**
    * @param {UpdateEncoderV1 | UpdateEncoderV2} encoder
@@ -7259,71 +11459,6 @@ var LazyStructWriter = class {
   }
 };
 var mergeUpdates = (updates) => mergeUpdatesV2(updates, UpdateDecoderV1, UpdateEncoderV1);
-var encodeStateVectorFromUpdateV2 = (update, YEncoder = DSEncoderV2, YDecoder = UpdateDecoderV2) => {
-  const encoder = new YEncoder();
-  const updateDecoder = new LazyStructReader(new YDecoder(createDecoder(update)), false);
-  let curr = updateDecoder.curr;
-  if (curr !== null) {
-    let size = 0;
-    let currClient = curr.id.client;
-    let stopCounting = curr.id.clock !== 0;
-    let currClock = stopCounting ? 0 : curr.id.clock + curr.length;
-    for (; curr !== null; curr = updateDecoder.next()) {
-      if (currClient !== curr.id.client) {
-        if (currClock !== 0) {
-          size++;
-          writeVarUint(encoder.restEncoder, currClient);
-          writeVarUint(encoder.restEncoder, currClock);
-        }
-        currClient = curr.id.client;
-        currClock = 0;
-        stopCounting = curr.id.clock !== 0;
-      }
-      if (curr.constructor === Skip) {
-        stopCounting = true;
-      }
-      if (!stopCounting) {
-        currClock = curr.id.clock + curr.length;
-      }
-    }
-    if (currClock !== 0) {
-      size++;
-      writeVarUint(encoder.restEncoder, currClient);
-      writeVarUint(encoder.restEncoder, currClock);
-    }
-    const enc = createEncoder();
-    writeVarUint(enc, size);
-    writeBinaryEncoder(enc, encoder.restEncoder);
-    encoder.restEncoder = enc;
-    return encoder.toUint8Array();
-  } else {
-    writeVarUint(encoder.restEncoder, 0);
-    return encoder.toUint8Array();
-  }
-};
-var encodeStateVectorFromUpdate = (update) => encodeStateVectorFromUpdateV2(update, DSEncoderV1, UpdateDecoderV1);
-var parseUpdateMetaV2 = (update, YDecoder = UpdateDecoderV2) => {
-  const from2 = /* @__PURE__ */ new Map();
-  const to = /* @__PURE__ */ new Map();
-  const updateDecoder = new LazyStructReader(new YDecoder(createDecoder(update)), false);
-  let curr = updateDecoder.curr;
-  if (curr !== null) {
-    let currClient = curr.id.client;
-    let currClock = curr.id.clock;
-    from2.set(currClient, currClock);
-    for (; curr !== null; curr = updateDecoder.next()) {
-      if (currClient !== curr.id.client) {
-        to.set(currClient, currClock);
-        from2.set(curr.id.client, curr.id.clock);
-        currClient = curr.id.client;
-      }
-      currClock = curr.id.clock + curr.length;
-    }
-    to.set(currClient, currClock);
-  }
-  return { from: from2, to };
-};
-var parseUpdateMeta = (update) => parseUpdateMetaV2(update, UpdateDecoderV1);
 var sliceStruct = (left, diff) => {
   if (left.constructor === GC) {
     const { client, clock } = left.id;
@@ -7485,7 +11620,6 @@ var diffUpdateV2 = (update, sv, YDecoder = UpdateDecoderV2, YEncoder = UpdateEnc
   writeDeleteSet(encoder, ds);
   return encoder.toUint8Array();
 };
-var diffUpdate = (update, sv) => diffUpdateV2(update, sv, UpdateDecoderV1, UpdateEncoderV1);
 var flushLazyStructWriter = (lazyWriter) => {
   if (lazyWriter.written > 0) {
     lazyWriter.clientStructs.push({ written: lazyWriter.written, restEncoder: toUint8Array(lazyWriter.encoder.restEncoder) });
@@ -7528,121 +11662,6 @@ var convertUpdateFormat = (update, blockTransformer, YDecoder, YEncoder) => {
   writeDeleteSet(updateEncoder, ds);
   return updateEncoder.toUint8Array();
 };
-var createObfuscator = ({ formatting = true, subdocs = true, yxml = true } = {}) => {
-  let i = 0;
-  const mapKeyCache = create();
-  const nodeNameCache = create();
-  const formattingKeyCache = create();
-  const formattingValueCache = create();
-  formattingValueCache.set(null, null);
-  return (block) => {
-    switch (block.constructor) {
-      case GC:
-      case Skip:
-        return block;
-      case Item: {
-        const item = (
-          /** @type {Item} */
-          block
-        );
-        const content = item.content;
-        switch (content.constructor) {
-          case ContentDeleted:
-            break;
-          case ContentType: {
-            if (yxml) {
-              const type = (
-                /** @type {ContentType} */
-                content.type
-              );
-              if (type instanceof YXmlElement) {
-                type.nodeName = setIfUndefined(nodeNameCache, type.nodeName, () => "node-" + i);
-              }
-              if (type instanceof YXmlHook) {
-                type.hookName = setIfUndefined(nodeNameCache, type.hookName, () => "hook-" + i);
-              }
-            }
-            break;
-          }
-          case ContentAny: {
-            const c = (
-              /** @type {ContentAny} */
-              content
-            );
-            c.arr = c.arr.map(() => i);
-            break;
-          }
-          case ContentBinary: {
-            const c = (
-              /** @type {ContentBinary} */
-              content
-            );
-            c.content = new Uint8Array([i]);
-            break;
-          }
-          case ContentDoc: {
-            const c = (
-              /** @type {ContentDoc} */
-              content
-            );
-            if (subdocs) {
-              c.opts = {};
-              c.doc.guid = i + "";
-            }
-            break;
-          }
-          case ContentEmbed: {
-            const c = (
-              /** @type {ContentEmbed} */
-              content
-            );
-            c.embed = {};
-            break;
-          }
-          case ContentFormat: {
-            const c = (
-              /** @type {ContentFormat} */
-              content
-            );
-            if (formatting) {
-              c.key = setIfUndefined(formattingKeyCache, c.key, () => i + "");
-              c.value = setIfUndefined(formattingValueCache, c.value, () => ({ i }));
-            }
-            break;
-          }
-          case ContentJSON: {
-            const c = (
-              /** @type {ContentJSON} */
-              content
-            );
-            c.arr = c.arr.map(() => i);
-            break;
-          }
-          case ContentString: {
-            const c = (
-              /** @type {ContentString} */
-              content
-            );
-            c.str = repeat(i % 10 + "", c.str.length);
-            break;
-          }
-          default:
-            unexpectedCase();
-        }
-        if (item.parentSub) {
-          item.parentSub = setIfUndefined(mapKeyCache, item.parentSub, () => i + "");
-        }
-        i++;
-        return block;
-      }
-      default:
-        unexpectedCase();
-    }
-  };
-};
-var obfuscateUpdate = (update, opts) => convertUpdateFormat(update, createObfuscator(opts), UpdateDecoderV1, UpdateEncoderV1);
-var obfuscateUpdateV2 = (update, opts) => convertUpdateFormat(update, createObfuscator(opts), UpdateDecoderV2, UpdateEncoderV2);
-var convertUpdateFormatV1ToV2 = (update) => convertUpdateFormat(update, id, UpdateDecoderV1, UpdateEncoderV2);
 var convertUpdateFormatV2ToV1 = (update) => convertUpdateFormat(update, id, UpdateDecoderV2, UpdateEncoderV1);
 var errorComputeChanges = "You must not compute changes after the event-handler fired.";
 var YEvent = class {
@@ -7694,7 +11713,7 @@ var YEvent = class {
       if (this.transaction.doc._transactionCleanups.length === 0) {
         throw create3(errorComputeChanges);
       }
-      const keys2 = /* @__PURE__ */ new Map();
+      const keys3 = /* @__PURE__ */ new Map();
       const target = this.target;
       const changed = (
         /** @type Set<string|null> */
@@ -7740,10 +11759,10 @@ var YEvent = class {
               return;
             }
           }
-          keys2.set(key, { action, oldValue });
+          keys3.set(key, { action, oldValue });
         }
       });
-      this._keys = keys2;
+      this._keys = keys3;
     }
     return this._keys;
   }
@@ -7967,25 +11986,16 @@ var updateMarkerChanges = (searchMarker, index, len) => {
     }
   }
 };
-var getTypeChildren = (t) => {
-  let s = t._start;
-  const arr = [];
-  while (s) {
-    arr.push(s);
-    s = s.right;
-  }
-  return arr;
-};
-var callTypeObservers = (type, transaction, event) => {
-  const changedType = type;
+var callTypeObservers = (type2, transaction, event) => {
+  const changedType = type2;
   const changedParentTypes = transaction.changedParentTypes;
   while (true) {
-    setIfUndefined(changedParentTypes, type, () => []).push(event);
-    if (type._item === null) {
+    setIfUndefined(changedParentTypes, type2, () => []).push(event);
+    if (type2._item === null) {
       break;
     }
-    type = /** @type {AbstractType<any>} */
-    type._item.parent;
+    type2 = /** @type {AbstractType<any>} */
+    type2._item.parent;
   }
   callEventHandlerListeners(changedType._eH, event, transaction);
 };
@@ -8101,16 +12111,16 @@ var AbstractType = class {
   toJSON() {
   }
 };
-var typeListSlice = (type, start, end) => {
+var typeListSlice = (type2, start, end) => {
   if (start < 0) {
-    start = type._length + start;
+    start = type2._length + start;
   }
   if (end < 0) {
-    end = type._length + end;
+    end = type2._length + end;
   }
   let len = end - start;
   const cs = [];
-  let n = type._start;
+  let n = type2._start;
   while (n !== null && len > 0) {
     if (n.countable && !n.deleted) {
       const c = n.content.getContent();
@@ -8128,9 +12138,9 @@ var typeListSlice = (type, start, end) => {
   }
   return cs;
 };
-var typeListToArray = (type) => {
+var typeListToArray = (type2) => {
   const cs = [];
-  let n = type._start;
+  let n = type2._start;
   while (n !== null) {
     if (n.countable && !n.deleted) {
       const c = n.content.getContent();
@@ -8142,42 +12152,28 @@ var typeListToArray = (type) => {
   }
   return cs;
 };
-var typeListToArraySnapshot = (type, snapshot2) => {
-  const cs = [];
-  let n = type._start;
-  while (n !== null) {
-    if (n.countable && isVisible(n, snapshot2)) {
-      const c = n.content.getContent();
-      for (let i = 0; i < c.length; i++) {
-        cs.push(c[i]);
-      }
-    }
-    n = n.right;
-  }
-  return cs;
-};
-var typeListForEach = (type, f) => {
+var typeListForEach = (type2, f) => {
   let index = 0;
-  let n = type._start;
+  let n = type2._start;
   while (n !== null) {
     if (n.countable && !n.deleted) {
       const c = n.content.getContent();
       for (let i = 0; i < c.length; i++) {
-        f(c[i], index++, type);
+        f(c[i], index++, type2);
       }
     }
     n = n.right;
   }
 };
-var typeListMap = (type, f) => {
+var typeListMap = (type2, f) => {
   const result = [];
-  typeListForEach(type, (c, i) => {
-    result.push(f(c, i, type));
+  typeListForEach(type2, (c, i) => {
+    result.push(f(c, i, type2));
   });
   return result;
 };
-var typeListCreateIterator = (type) => {
-  let n = type._start;
+var typeListCreateIterator = (type2) => {
+  let n = type2._start;
   let currentContent = null;
   let currentContentIndex = 0;
   return {
@@ -8210,9 +12206,9 @@ var typeListCreateIterator = (type) => {
     }
   };
 };
-var typeListGet = (type, index) => {
-  const marker = findMarker(type, index);
-  let n = type._start;
+var typeListGet = (type2, index) => {
+  const marker = findMarker(type2, index);
+  let n = type2._start;
   if (marker !== null) {
     n = marker.p;
     index -= marker.index;
@@ -8434,15 +12430,8 @@ var typeMapHas = (parent, key) => {
   const val = parent._map.get(key);
   return val !== void 0 && !val.deleted;
 };
-var typeMapGetSnapshot = (parent, key, snapshot2) => {
-  let v = parent._map.get(key) || null;
-  while (v !== null && (!snapshot2.sv.has(v.id.client) || v.id.clock >= (snapshot2.sv.get(v.id.client) || 0))) {
-    v = v.left;
-  }
-  return v !== null && isVisible(v, snapshot2) ? v.content.getContent()[v.length - 1] : void 0;
-};
-var createMapIterator = (map2) => iteratorFilter(
-  map2.entries(),
+var createMapIterator = (map3) => iteratorFilter(
+  map3.entries(),
   /** @param {any} entry */
   (entry) => !entry[1].deleted
 );
@@ -8724,14 +12713,14 @@ var YMap = class extends AbstractType {
    * @return {YMap<MapType>}
    */
   clone() {
-    const map2 = new YMap();
+    const map3 = new YMap();
     this.forEach((value, key) => {
-      map2.set(key, value instanceof AbstractType ? (
+      map3.set(key, value instanceof AbstractType ? (
         /** @type {typeof value} */
         value.clone()
       ) : value);
     });
-    return map2;
+    return map3;
   }
   /**
    * Creates YMapEvent and calls observers.
@@ -8748,14 +12737,14 @@ var YMap = class extends AbstractType {
    * @return {Object<string,any>}
    */
   toJSON() {
-    const map2 = {};
+    const map3 = {};
     this._map.forEach((item, key) => {
       if (!item.deleted) {
         const v = item.content.getContent()[item.length - 1];
-        map2[key] = v instanceof AbstractType ? v.toJSON() : v;
+        map3[key] = v instanceof AbstractType ? v.toJSON() : v;
       }
     });
-    return map2;
+    return map3;
   }
   /**
    * Returns the size of the YMap (count of key/value pairs)
@@ -8886,8 +12875,8 @@ var YMap = class extends AbstractType {
   clear() {
     if (this.doc !== null) {
       transact(this.doc, (transaction) => {
-        this.forEach(function(_value, key, map2) {
-          typeMapDelete(transaction, map2, key);
+        this.forEach(function(_value, key, map3) {
+          typeMapDelete(transaction, map3, key);
         });
       });
     } else {
@@ -9204,17 +13193,17 @@ var cleanupContextlessFormattingGap = (transaction, item) => {
     item = item.left;
   }
 };
-var cleanupYTextFormatting = (type) => {
+var cleanupYTextFormatting = (type2) => {
   let res = 0;
   transact(
     /** @type {Doc} */
-    type.doc,
+    type2.doc,
     (transaction) => {
       let start = (
         /** @type {Item} */
-        type._start
+        type2._start
       );
-      let end = type._start;
+      let end = type2._start;
       let startAttributes = create();
       const currentAttributes = copy(startAttributes);
       while (end) {
@@ -9675,7 +13664,7 @@ var YText = class extends AbstractType {
    *
    * @public
    */
-  toDelta(snapshot2, prevSnapshot, computeYChange) {
+  toDelta(snapshot, prevSnapshot, computeYChange) {
     const ops = [];
     const currentAttributes = /* @__PURE__ */ new Map();
     const doc2 = (
@@ -9702,11 +13691,11 @@ var YText = class extends AbstractType {
     }
     const computeDelta = () => {
       while (n !== null) {
-        if (isVisible(n, snapshot2) || prevSnapshot !== void 0 && isVisible(n, prevSnapshot)) {
+        if (isVisible(n, snapshot) || prevSnapshot !== void 0 && isVisible(n, prevSnapshot)) {
           switch (n.content.constructor) {
             case ContentString: {
               const cur = currentAttributes.get("ychange");
-              if (snapshot2 !== void 0 && !isVisible(n, snapshot2)) {
+              if (snapshot !== void 0 && !isVisible(n, snapshot)) {
                 if (cur === void 0 || cur.user !== n.id.client || cur.type !== "removed") {
                   packStr();
                   currentAttributes.set("ychange", computeYChange ? computeYChange("removed", n.id) : { type: "removed" });
@@ -9744,7 +13733,7 @@ var YText = class extends AbstractType {
               break;
             }
             case ContentFormat:
-              if (isVisible(n, snapshot2)) {
+              if (isVisible(n, snapshot)) {
                 packStr();
                 updateCurrentAttributes(
                   currentAttributes,
@@ -9759,10 +13748,10 @@ var YText = class extends AbstractType {
       }
       packStr();
     };
-    if (snapshot2 || prevSnapshot) {
+    if (snapshot || prevSnapshot) {
       transact(doc2, (transaction) => {
-        if (snapshot2) {
-          splitSnapshotAffectedStructs(transaction, snapshot2);
+        if (snapshot) {
+          splitSnapshotAffectedStructs(transaction, snapshot);
         }
         if (prevSnapshot) {
           splitSnapshotAffectedStructs(transaction, prevSnapshot);
@@ -9971,14 +13960,14 @@ var YXmlTreeWalker = class {
    */
   next() {
     let n = this._currentNode;
-    let type = n && n.content && /** @type {any} */
+    let type2 = n && n.content && /** @type {any} */
     n.content.type;
-    if (n !== null && (!this._firstCall || n.deleted || !this._filter(type))) {
+    if (n !== null && (!this._firstCall || n.deleted || !this._filter(type2))) {
       do {
-        type = /** @type {any} */
+        type2 = /** @type {any} */
         n.content.type;
-        if (!n.deleted && (type.constructor === YXmlElement || type.constructor === YXmlFragment) && type._start !== null) {
-          n = type._start;
+        if (!n.deleted && (type2.constructor === YXmlElement || type2.constructor === YXmlFragment) && type2._start !== null) {
+          n = type2._start;
         } else {
           while (n !== null) {
             if (n.right !== null) {
@@ -10367,14 +14356,14 @@ var YXmlElement = class extends YXmlFragment {
   toString() {
     const attrs = this.getAttributes();
     const stringBuilder = [];
-    const keys2 = [];
+    const keys3 = [];
     for (const key in attrs) {
-      keys2.push(key);
+      keys3.push(key);
     }
-    keys2.sort();
-    const keysLen = keys2.length;
+    keys3.sort();
+    const keysLen = keys3.length;
     for (let i = 0; i < keysLen; i++) {
-      const key = keys2[i];
+      const key = keys3[i];
       stringBuilder.push(key + '="' + attrs[key] + '"');
     }
     const nodeName = this.nodeName.toLocaleLowerCase();
@@ -11491,8 +15480,8 @@ var ContentType = class {
   /**
    * @param {AbstractType<any>} type
    */
-  constructor(type) {
-    this.type = type;
+  constructor(type2) {
+    this.type = type2;
   }
   /**
    * @return {number}
@@ -12192,6 +16181,777 @@ if (glo[importIdentifier] === true) {
 }
 glo[importIdentifier] = true;
 
+// src/sharedEntities/sharedDocument.ts
+var import_state = require("@codemirror/state");
+
+// node_modules/y-codemirror.next/src/index.js
+var cmView4 = __toESM(require("@codemirror/view"), 1);
+var cmState4 = __toESM(require("@codemirror/state"), 1);
+
+// node_modules/y-codemirror.next/src/y-sync.js
+var cmState = __toESM(require("@codemirror/state"), 1);
+var cmView = __toESM(require("@codemirror/view"), 1);
+
+// node_modules/y-codemirror.next/src/y-range.js
+var YRange = class {
+  /**
+   * @param {Y.RelativePosition} yanchor
+   * @param {Y.RelativePosition} yhead
+   */
+  constructor(yanchor, yhead) {
+    this.yanchor = yanchor;
+    this.yhead = yhead;
+  }
+  /**
+   * @returns {any}
+   */
+  toJSON() {
+    return {
+      yanchor: relativePositionToJSON(this.yanchor),
+      yhead: relativePositionToJSON(this.yhead)
+    };
+  }
+  /**
+   * @param {any} json
+   * @return {YRange}
+   */
+  static fromJSON(json) {
+    return new YRange(createRelativePositionFromJSON(json.yanchor), createRelativePositionFromJSON(json.yhead));
+  }
+};
+
+// node_modules/y-codemirror.next/src/y-sync.js
+var YSyncConfig = class {
+  constructor(ytext, awareness) {
+    this.ytext = ytext;
+    this.awareness = awareness;
+    this.undoManager = new UndoManager(ytext);
+  }
+  /**
+   * Helper function to transform an absolute index position to a Yjs-based relative position
+   * (https://docs.yjs.dev/api/relative-positions).
+   *
+   * A relative position can be transformed back to an absolute position even after the document has changed. The position is
+   * automatically adapted. This does not require any position transformations. Relative positions are computed based on
+   * the internal Yjs document model. Peers that share content through Yjs are guaranteed that their positions will always
+   * synced up when using relatve positions.
+   *
+   * ```js
+   * import { ySyncFacet } from 'y-codemirror'
+   *
+   * ..
+   * const ysync = view.state.facet(ySyncFacet)
+   * // transform an absolute index position to a ypos
+   * const ypos = ysync.getYPos(3)
+   * // transform the ypos back to an absolute position
+   * ysync.fromYPos(ypos) // => 3
+   * ```
+   *
+   * It cannot be guaranteed that absolute index positions can be synced up between peers.
+   * This might lead to undesired behavior when implementing features that require that all peers see the
+   * same marked range (e.g. a comment plugin).
+   *
+   * @param {number} pos
+   * @param {number} [assoc]
+   */
+  toYPos(pos, assoc = 0) {
+    return createRelativePositionFromTypeIndex(this.ytext, pos, assoc);
+  }
+  /**
+   * @param {Y.RelativePosition | Object} rpos
+   */
+  fromYPos(rpos) {
+    const pos = createAbsolutePositionFromRelativePosition(createRelativePositionFromJSON(rpos), this.ytext.doc);
+    if (pos == null || pos.type !== this.ytext) {
+      throw new Error("[y-codemirror] The position you want to retrieve was created by a different document");
+    }
+    return {
+      pos: pos.index,
+      assoc: pos.assoc
+    };
+  }
+  /**
+   * @param {cmState.SelectionRange} range
+   * @return {YRange}
+   */
+  toYRange(range) {
+    const assoc = range.assoc;
+    const yanchor = this.toYPos(range.anchor, assoc);
+    const yhead = this.toYPos(range.head, assoc);
+    return new YRange(yanchor, yhead);
+  }
+  /**
+   * @param {YRange} yrange
+   */
+  fromYRange(yrange) {
+    const anchor = this.fromYPos(yrange.yanchor);
+    const head = this.fromYPos(yrange.yhead);
+    if (anchor.pos === head.pos) {
+      return cmState.EditorSelection.cursor(head.pos, head.assoc);
+    }
+    return cmState.EditorSelection.range(anchor.pos, head.pos);
+  }
+};
+var ySyncFacet = cmState.Facet.define({
+  combine(inputs) {
+    return inputs[inputs.length - 1];
+  }
+});
+var ySyncAnnotation = cmState.Annotation.define();
+var YSyncPluginValue = class {
+  /**
+   * @param {cmView.EditorView} view
+   */
+  constructor(view) {
+    this.view = view;
+    this.conf = view.state.facet(ySyncFacet);
+    this._observer = (event, tr) => {
+      if (tr.origin !== this.conf) {
+        const delta = event.delta;
+        const changes = [];
+        let pos = 0;
+        for (let i = 0; i < delta.length; i++) {
+          const d = delta[i];
+          if (d.insert != null) {
+            changes.push({ from: pos, to: pos, insert: d.insert });
+          } else if (d.delete != null) {
+            changes.push({ from: pos, to: pos + d.delete, insert: "" });
+            pos += d.delete;
+          } else {
+            pos += d.retain;
+          }
+        }
+        view.dispatch({ changes, annotations: [ySyncAnnotation.of(this.conf)] });
+      }
+    };
+    this._ytext = this.conf.ytext;
+    this._ytext.observe(this._observer);
+  }
+  /**
+   * @param {cmView.ViewUpdate} update
+   */
+  update(update) {
+    if (!update.docChanged || update.transactions.length > 0 && update.transactions[0].annotation(ySyncAnnotation) === this.conf) {
+      return;
+    }
+    const ytext = this.conf.ytext;
+    ytext.doc.transact(() => {
+      let adj = 0;
+      update.changes.iterChanges((fromA, toA, fromB, toB, insert) => {
+        const insertText2 = insert.sliceString(0, insert.length, "\n");
+        if (fromA !== toA) {
+          ytext.delete(fromA + adj, toA - fromA);
+        }
+        if (insertText2.length > 0) {
+          ytext.insert(fromA + adj, insertText2);
+        }
+        adj += insertText2.length - (toA - fromA);
+      });
+    }, this.conf);
+  }
+  destroy() {
+    this._ytext.unobserve(this._observer);
+  }
+};
+var ySync = cmView.ViewPlugin.fromClass(YSyncPluginValue);
+
+// node_modules/y-codemirror.next/src/y-remote-selections.js
+var cmView2 = __toESM(require("@codemirror/view"), 1);
+var cmState2 = __toESM(require("@codemirror/state"), 1);
+var yRemoteSelectionsTheme = cmView2.EditorView.baseTheme({
+  ".cm-ySelection": {},
+  ".cm-yLineSelection": {
+    padding: 0,
+    margin: "0px 2px 0px 4px"
+  },
+  ".cm-ySelectionCaret": {
+    position: "relative",
+    borderLeft: "1px solid black",
+    borderRight: "1px solid black",
+    marginLeft: "-1px",
+    marginRight: "-1px",
+    boxSizing: "border-box",
+    display: "inline"
+  },
+  ".cm-ySelectionCaretDot": {
+    borderRadius: "50%",
+    position: "absolute",
+    width: ".4em",
+    height: ".4em",
+    top: "-.2em",
+    left: "-.2em",
+    backgroundColor: "inherit",
+    transition: "transform .3s ease-in-out",
+    boxSizing: "border-box"
+  },
+  ".cm-ySelectionCaret:hover > .cm-ySelectionCaretDot": {
+    transformOrigin: "bottom center",
+    transform: "scale(0)"
+  },
+  ".cm-ySelectionInfo": {
+    position: "absolute",
+    top: "-1.05em",
+    left: "-1px",
+    fontSize: ".75em",
+    fontFamily: "serif",
+    fontStyle: "normal",
+    fontWeight: "normal",
+    lineHeight: "normal",
+    userSelect: "none",
+    color: "white",
+    paddingLeft: "2px",
+    paddingRight: "2px",
+    zIndex: 101,
+    transition: "opacity .3s ease-in-out",
+    backgroundColor: "inherit",
+    // these should be separate
+    opacity: 0,
+    transitionDelay: "0s",
+    whiteSpace: "nowrap"
+  },
+  ".cm-ySelectionCaret:hover > .cm-ySelectionInfo": {
+    opacity: 1,
+    transitionDelay: "0s"
+  }
+});
+var yRemoteSelectionsAnnotation = cmState2.Annotation.define();
+var YRemoteCaretWidget = class extends cmView2.WidgetType {
+  /**
+   * @param {string} color
+   * @param {string} name
+   */
+  constructor(color, name) {
+    super();
+    this.color = color;
+    this.name = name;
+  }
+  toDOM() {
+    return (
+      /** @type {HTMLElement} */
+      element("span", [create5("class", "cm-ySelectionCaret"), create5("style", `background-color: ${this.color}; border-color: ${this.color}`)], [
+        text("\u2060"),
+        element("div", [
+          create5("class", "cm-ySelectionCaretDot")
+        ]),
+        text("\u2060"),
+        element("div", [
+          create5("class", "cm-ySelectionInfo")
+        ], [
+          text(this.name)
+        ]),
+        text("\u2060")
+      ])
+    );
+  }
+  eq(widget) {
+    return widget.color === this.color;
+  }
+  compare(widget) {
+    return widget.color === this.color;
+  }
+  updateDOM() {
+    return false;
+  }
+  get estimatedHeight() {
+    return -1;
+  }
+  ignoreEvent() {
+    return true;
+  }
+};
+var YRemoteSelectionsPluginValue = class {
+  /**
+   * @param {cmView.EditorView} view
+   */
+  constructor(view) {
+    this.conf = view.state.facet(ySyncFacet);
+    this._listener = ({ added, updated, removed }, s, t) => {
+      const clients = added.concat(updated).concat(removed);
+      if (clients.findIndex((id2) => id2 !== this.conf.awareness.doc.clientID) >= 0) {
+        view.dispatch({ annotations: [yRemoteSelectionsAnnotation.of([])] });
+      }
+    };
+    this._awareness = this.conf.awareness;
+    this._awareness.on("change", this._listener);
+    this.decorations = cmState2.RangeSet.of([]);
+  }
+  destroy() {
+    this._awareness.off("change", this._listener);
+  }
+  /**
+   * @param {cmView.ViewUpdate} update
+   */
+  update(update) {
+    const ytext = this.conf.ytext;
+    const ydoc = (
+      /** @type {Y.Doc} */
+      ytext.doc
+    );
+    const awareness = this.conf.awareness;
+    const decorations = [];
+    const localAwarenessState = this.conf.awareness.getLocalState();
+    if (localAwarenessState != null) {
+      const hasFocus = update.view.hasFocus && update.view.dom.ownerDocument.hasFocus();
+      const sel = hasFocus ? update.state.selection.main : null;
+      const currentAnchor = localAwarenessState.cursor == null ? null : createRelativePositionFromJSON(localAwarenessState.cursor.anchor);
+      const currentHead = localAwarenessState.cursor == null ? null : createRelativePositionFromJSON(localAwarenessState.cursor.head);
+      if (sel != null) {
+        const anchor = createRelativePositionFromTypeIndex(ytext, sel.anchor);
+        const head = createRelativePositionFromTypeIndex(ytext, sel.head);
+        if (localAwarenessState.cursor == null || !compareRelativePositions(currentAnchor, anchor) || !compareRelativePositions(currentHead, head)) {
+          awareness.setLocalStateField("cursor", {
+            anchor,
+            head
+          });
+        }
+      } else if (localAwarenessState.cursor != null && hasFocus) {
+        awareness.setLocalStateField("cursor", null);
+      }
+    }
+    awareness.getStates().forEach((state, clientid) => {
+      if (clientid === awareness.doc.clientID) {
+        return;
+      }
+      const cursor = state.cursor;
+      if (cursor == null || cursor.anchor == null || cursor.head == null) {
+        return;
+      }
+      const anchor = createAbsolutePositionFromRelativePosition(cursor.anchor, ydoc);
+      const head = createAbsolutePositionFromRelativePosition(cursor.head, ydoc);
+      if (anchor == null || head == null || anchor.type !== ytext || head.type !== ytext) {
+        return;
+      }
+      const { color = "#30bced", name = "Anonymous" } = state.user || {};
+      const colorLight = state.user && state.user.colorLight || color + "33";
+      const start = min(anchor.index, head.index);
+      const end = max(anchor.index, head.index);
+      const startLine = update.view.state.doc.lineAt(start);
+      const endLine = update.view.state.doc.lineAt(end);
+      if (startLine.number === endLine.number) {
+        decorations.push({
+          from: start,
+          to: end,
+          value: cmView2.Decoration.mark({
+            attributes: { style: `background-color: ${colorLight}` },
+            class: "cm-ySelection"
+          })
+        });
+      } else {
+        decorations.push({
+          from: start,
+          to: startLine.from + startLine.length,
+          value: cmView2.Decoration.mark({
+            attributes: { style: `background-color: ${colorLight}` },
+            class: "cm-ySelection"
+          })
+        });
+        decorations.push({
+          from: endLine.from,
+          to: end,
+          value: cmView2.Decoration.mark({
+            attributes: { style: `background-color: ${colorLight}` },
+            class: "cm-ySelection"
+          })
+        });
+        for (let i = startLine.number + 1; i < endLine.number; i++) {
+          const linePos = update.view.state.doc.line(i).from;
+          decorations.push({
+            from: linePos,
+            to: linePos,
+            value: cmView2.Decoration.line({
+              attributes: { style: `background-color: ${colorLight}`, class: "cm-yLineSelection" }
+            })
+          });
+        }
+      }
+      decorations.push({
+        from: head.index,
+        to: head.index,
+        value: cmView2.Decoration.widget({
+          side: head.index - anchor.index > 0 ? -1 : 1,
+          // the local cursor should be rendered outside the remote selection
+          block: false,
+          widget: new YRemoteCaretWidget(color, name)
+        })
+      });
+    });
+    this.decorations = cmView2.Decoration.set(decorations, true);
+  }
+};
+var yRemoteSelections = cmView2.ViewPlugin.fromClass(YRemoteSelectionsPluginValue, {
+  decorations: (v) => v.decorations
+});
+
+// node_modules/y-codemirror.next/src/y-undomanager.js
+var cmState3 = __toESM(require("@codemirror/state"), 1);
+var cmView3 = __toESM(require("@codemirror/view"), 1);
+
+// node_modules/lib0/mutex.js
+var createMutex = () => {
+  let token = true;
+  return (f, g) => {
+    if (token) {
+      token = false;
+      try {
+        f();
+      } finally {
+        token = true;
+      }
+    } else if (g !== void 0) {
+      g();
+    }
+  };
+};
+
+// node_modules/y-codemirror.next/src/y-undomanager.js
+var YUndoManagerConfig = class {
+  /**
+   * @param {Y.UndoManager} undoManager
+   */
+  constructor(undoManager) {
+    this.undoManager = undoManager;
+  }
+  /**
+   * @param {any} origin
+   */
+  addTrackedOrigin(origin) {
+    this.undoManager.addTrackedOrigin(origin);
+  }
+  /**
+   * @param {any} origin
+   */
+  removeTrackedOrigin(origin) {
+    this.undoManager.removeTrackedOrigin(origin);
+  }
+  /**
+   * @return {boolean} Whether a change was undone.
+   */
+  undo() {
+    return this.undoManager.undo() != null;
+  }
+  /**
+   * @return {boolean} Whether a change was redone.
+   */
+  redo() {
+    return this.undoManager.redo() != null;
+  }
+};
+var yUndoManagerFacet = cmState3.Facet.define({
+  combine(inputs) {
+    return inputs[inputs.length - 1];
+  }
+});
+var yUndoManagerAnnotation = cmState3.Annotation.define();
+var YUndoManagerPluginValue = class {
+  /**
+   * @param {cmView.EditorView} view
+   */
+  constructor(view) {
+    this.view = view;
+    this.conf = view.state.facet(yUndoManagerFacet);
+    this._undoManager = this.conf.undoManager;
+    this.syncConf = view.state.facet(ySyncFacet);
+    this._beforeChangeSelection = null;
+    this._mux = createMutex();
+    this._onStackItemAdded = ({ stackItem, changedParentTypes }) => {
+      if (changedParentTypes.has(this.syncConf.ytext) && this._beforeChangeSelection && !stackItem.meta.has(this)) {
+        stackItem.meta.set(this, this._beforeChangeSelection);
+      }
+    };
+    this._onStackItemPopped = ({ stackItem }) => {
+      const sel = stackItem.meta.get(this);
+      if (sel) {
+        const selection = this.syncConf.fromYRange(sel);
+        view.dispatch(view.state.update({ selection }));
+        this._storeSelection();
+      }
+    };
+    this._storeSelection = () => {
+      this._beforeChangeSelection = this.syncConf.toYRange(this.view.state.selection.main);
+    };
+    this._undoManager.on("stack-item-added", this._onStackItemAdded);
+    this._undoManager.on("stack-item-popped", this._onStackItemPopped);
+    this._undoManager.addTrackedOrigin(this.syncConf);
+  }
+  /**
+   * @param {cmView.ViewUpdate} update
+   */
+  update(update) {
+    if (update.selectionSet && (update.transactions.length === 0 || update.transactions[0].annotation(ySyncAnnotation) !== this.syncConf)) {
+      this._storeSelection();
+    }
+  }
+  destroy() {
+    this._undoManager.off("stack-item-added", this._onStackItemAdded);
+    this._undoManager.off("stack-item-popped", this._onStackItemPopped);
+    this._undoManager.removeTrackedOrigin(this.syncConf);
+  }
+};
+var yUndoManager = cmView3.ViewPlugin.fromClass(YUndoManagerPluginValue);
+var undo = ({ state, dispatch }) => state.facet(yUndoManagerFacet).undo() || true;
+var redo = ({ state, dispatch }) => state.facet(yUndoManagerFacet).redo() || true;
+
+// node_modules/y-codemirror.next/src/index.js
+var yCollab = (ytext, awareness, { undoManager = new UndoManager(ytext) } = {}) => {
+  const ySyncConfig = new YSyncConfig(ytext, awareness);
+  const plugins = [
+    ySyncFacet.of(ySyncConfig),
+    ySync
+  ];
+  if (awareness) {
+    plugins.push(
+      yRemoteSelectionsTheme,
+      yRemoteSelections
+    );
+  }
+  if (undoManager !== false) {
+    plugins.push(
+      yUndoManagerFacet.of(new YUndoManagerConfig(undoManager)),
+      yUndoManager,
+      cmView4.EditorView.domEventHandlers({
+        beforeinput(e, view) {
+          if (e.inputType === "historyUndo")
+            return undo(view);
+          if (e.inputType === "historyRedo")
+            return redo(view);
+          return false;
+        }
+      })
+    );
+  }
+  return plugins;
+};
+
+// src/sharedEntities/sharedDocument.ts
+var import_state2 = require("@codemirror/state");
+
+// src/workspace/peerdraftLeaf.ts
+var PeerdraftLeaf = class extends ObservableV2 {
+  constructor(path2, isPreview) {
+    super();
+    this._isPreview = isPreview, this._path = path2;
+  }
+  get isPreview() {
+    return this._isPreview;
+  }
+  set isPreview(value) {
+    const old = this._isPreview;
+    this._isPreview = value;
+    if (value != old) {
+      this.emit("changeIsPreview", [old, value]);
+    }
+  }
+  get path() {
+    return this._path;
+  }
+  set path(value) {
+    const old = this._path;
+    this._path = value;
+    if (value != old) {
+      this.emit("changePath", [old, value]);
+    }
+  }
+};
+
+// src/workspace/peerdraftWorkspace.ts
+var updatePeerdraftWorkspace = (ws, pws) => {
+  var _a, _b;
+  const leafs = ws.getLeavesOfType("markdown");
+  const oldLeafIds = pws.keys;
+  const existingLeafIds = leafs.map((leaf) => {
+    return leaf.id;
+  });
+  for (const leaf of leafs) {
+    const leafId = leaf.id;
+    const isPreview = leaf.view.containerEl.getAttribute("data-mode") === "preview";
+    const path2 = (_b = (_a = leaf.view.file) == null ? void 0 : _a.path) != null ? _b : "";
+    let pleaf = pws.get(leafId);
+    if (pleaf) {
+      pleaf.isPreview = isPreview;
+      pleaf.path = path2;
+    } else {
+      pleaf = new PeerdraftLeaf(path2, isPreview);
+      pws.set(leafId, pleaf);
+    }
+  }
+  for (const oldLeafId of oldLeafIds) {
+    if (!existingLeafIds.contains(oldLeafId)) {
+      pws.delete(oldLeafId);
+    }
+  }
+};
+var getLeafsByPath = (path2, pws) => {
+  return pws.keys.map((key) => {
+    return pws.get(key);
+  }).filter((leaf) => {
+    return leaf.path === path2;
+  });
+};
+var getLeafIdsByPath = (path2, pws) => {
+  return pws.keys.filter((key) => {
+    pws.get(key).path === path2;
+  });
+};
+
+// node_modules/lib0/websocket.js
+var reconnectTimeoutBase = 1200;
+var maxReconnectTimeout = 2500;
+var messageReconnectTimeout = 3e4;
+var setupWS = (wsclient) => {
+  if (wsclient.shouldConnect && wsclient.ws === null) {
+    const websocket = new WebSocket(wsclient.url);
+    const binaryType = wsclient.binaryType;
+    let pingTimeout = null;
+    if (binaryType) {
+      websocket.binaryType = binaryType;
+    }
+    wsclient.ws = websocket;
+    wsclient.connecting = true;
+    wsclient.connected = false;
+    websocket.onmessage = (event) => {
+      wsclient.lastMessageReceived = getUnixTime();
+      const data = event.data;
+      const message = typeof data === "string" ? JSON.parse(data) : data;
+      if (message && message.type === "pong") {
+        clearTimeout(pingTimeout);
+        pingTimeout = setTimeout(sendPing, messageReconnectTimeout / 2);
+      }
+      wsclient.emit("message", [message, wsclient]);
+    };
+    const onclose = (error) => {
+      if (wsclient.ws !== null) {
+        wsclient.ws = null;
+        wsclient.connecting = false;
+        if (wsclient.connected) {
+          wsclient.connected = false;
+          wsclient.emit("disconnect", [{ type: "disconnect", error }, wsclient]);
+        } else {
+          wsclient.unsuccessfulReconnects++;
+        }
+        setTimeout(setupWS, min(log10(wsclient.unsuccessfulReconnects + 1) * reconnectTimeoutBase, maxReconnectTimeout), wsclient);
+      }
+      clearTimeout(pingTimeout);
+    };
+    const sendPing = () => {
+      if (wsclient.ws === websocket) {
+        wsclient.send({
+          type: "ping"
+        });
+      }
+    };
+    websocket.onclose = () => onclose(null);
+    websocket.onerror = (error) => onclose(error);
+    websocket.onopen = () => {
+      wsclient.lastMessageReceived = getUnixTime();
+      wsclient.connecting = false;
+      wsclient.connected = true;
+      wsclient.unsuccessfulReconnects = 0;
+      wsclient.emit("connect", [{ type: "connect" }, wsclient]);
+      pingTimeout = setTimeout(sendPing, messageReconnectTimeout / 2);
+    };
+  }
+};
+var WebsocketClient = class extends Observable {
+  /**
+   * @param {string} url
+   * @param {object} opts
+   * @param {'arraybuffer' | 'blob' | null} [opts.binaryType] Set `ws.binaryType`
+   */
+  constructor(url, { binaryType } = {}) {
+    super();
+    this.url = url;
+    this.ws = null;
+    this.binaryType = binaryType || null;
+    this.connected = false;
+    this.connecting = false;
+    this.unsuccessfulReconnects = 0;
+    this.lastMessageReceived = 0;
+    this.shouldConnect = true;
+    this._checkInterval = setInterval(() => {
+      if (this.connected && messageReconnectTimeout < getUnixTime() - this.lastMessageReceived) {
+        this.ws.close();
+      }
+    }, messageReconnectTimeout / 2);
+    setupWS(this);
+  }
+  /**
+   * @param {any} message
+   */
+  send(message) {
+    if (this.ws) {
+      this.ws.send(JSON.stringify(message));
+    }
+  }
+  destroy() {
+    clearInterval(this._checkInterval);
+    this.disconnect();
+    super.destroy();
+  }
+  disconnect() {
+    this.shouldConnect = false;
+    if (this.ws !== null) {
+      this.ws.close();
+    }
+  }
+  connect() {
+    this.shouldConnect = true;
+    if (!this.connected && this.ws === null) {
+      setupWS(this);
+    }
+  }
+};
+
+// node_modules/lib0/broadcastchannel.js
+var channels = /* @__PURE__ */ new Map();
+var LocalStoragePolyfill = class {
+  /**
+   * @param {string} room
+   */
+  constructor(room) {
+    this.room = room;
+    this.onmessage = null;
+    this._onChange = (e) => e.key === room && this.onmessage !== null && this.onmessage({ data: fromBase64(e.newValue || "") });
+    onChange(this._onChange);
+  }
+  /**
+   * @param {ArrayBuffer} buf
+   */
+  postMessage(buf) {
+    varStorage.setItem(this.room, toBase64(createUint8ArrayFromArrayBuffer(buf)));
+  }
+  close() {
+    offChange(this._onChange);
+  }
+};
+var BC = typeof BroadcastChannel === "undefined" ? LocalStoragePolyfill : BroadcastChannel;
+var getChannel = (room) => setIfUndefined(channels, room, () => {
+  const subs = create2();
+  const bc = new BC(room);
+  bc.onmessage = (e) => subs.forEach((sub) => sub(e.data, "broadcastchannel"));
+  return {
+    bc,
+    subs
+  };
+});
+var subscribe = (room, f) => {
+  getChannel(room).subs.add(f);
+  return f;
+};
+var unsubscribe = (room, f) => {
+  const channel = getChannel(room);
+  const unsubscribed = channel.subs.delete(f);
+  if (unsubscribed && channel.subs.size === 0) {
+    channel.bc.close();
+    channels.delete(room);
+  }
+  return unsubscribed;
+};
+var publish = (room, data, origin = null) => {
+  const c = getChannel(room);
+  c.bc.postMessage(data);
+  c.subs.forEach((sub) => sub(data, origin));
+};
+
 // node_modules/y-webrtc/src/y-webrtc.js
 var import_simplepeer_min = __toESM(require_simplepeer_min(), 1);
 
@@ -12220,7 +16980,7 @@ var writeUpdate = (encoder, update) => {
   writeVarUint(encoder, messageYjsUpdate);
   writeVarUint8Array(encoder, update);
 };
-var readUpdate2 = readSyncStep2;
+var readUpdate = readSyncStep2;
 var readSyncMessage = (decoder, encoder, doc2, transactionOrigin) => {
   const messageType = readVarUint(decoder);
   switch (messageType) {
@@ -12231,7 +16991,7 @@ var readSyncMessage = (decoder, encoder, doc2, transactionOrigin) => {
       readSyncStep2(decoder, doc2, transactionOrigin);
       break;
     case messageYjsUpdate:
-      readUpdate2(decoder, doc2, transactionOrigin);
+      readUpdate(decoder, doc2, transactionOrigin);
       break;
     default:
       throw new Error("Unknown message type");
@@ -13020,837 +17780,939 @@ var WebrtcProvider = class extends Observable {
   }
 };
 
-// src/document.ts
-var path = __toESM(require("path"));
-var getOrCreateSyncData = (id2, settings) => {
-  if (!syncObjects[id2]) {
-    const doc2 = new Doc();
-    const provider = new WebrtcProvider(id2, doc2, { signaling: [settings.signaling] });
-    const text2 = doc2.getText("content");
-    syncObjects[id2] = { doc: doc2, provider, content: text2 };
-  }
-  return syncObjects[id2];
-};
-var initDocument = (initial, settings) => {
-  const id2 = createRandomId();
-  const { content, doc: doc2, provider } = getOrCreateSyncData(id2, settings);
-  doc2.getText("owner").insert(0, provider.awareness.clientID.toFixed(0));
-  content.insert(0, initial);
-  return id2;
-};
-var initDocumentToJoin = (id2, settings) => {
-  return getOrCreateSyncData(id2, settings);
-};
-var stopSync = (id2) => {
-  console.log("stopping sync for " + id2);
-  const syncData = syncObjects[id2];
-  if (!syncData)
-    return;
-  syncData.provider.awareness.destroy();
-  syncData.provider.disconnect();
-  syncData.provider.destroy();
-  delete syncObjects[id2];
-  console.log("sync stopped");
-};
-var createDocumentWithSyncId = async (id2, app) => {
-  const initialFileName = `_peerdraft_session_${id2}_${generateRandomString()}.md`;
-  const parent = app.fileManager.getNewFileParent("", initialFileName);
-  const filePath = path.join(parent.path, initialFileName);
-  try {
-    const file = await app.vault.create(filePath, "");
-    return { file, id: id2 };
-  } catch (e) {
-  }
-  return;
-};
-
-// node_modules/y-codemirror.next/src/index.js
-var cmView4 = __toESM(require("@codemirror/view"), 1);
-var cmState4 = __toESM(require("@codemirror/state"), 1);
-
-// node_modules/y-codemirror.next/src/y-sync.js
-var cmState = __toESM(require("@codemirror/state"), 1);
-var cmView = __toESM(require("@codemirror/view"), 1);
-
-// node_modules/y-codemirror.next/src/y-range.js
-var YRange = class {
-  /**
-   * @param {Y.RelativePosition} yanchor
-   * @param {Y.RelativePosition} yhead
-   */
-  constructor(yanchor, yhead) {
-    this.yanchor = yanchor;
-    this.yhead = yhead;
-  }
-  /**
-   * @returns {any}
-   */
-  toJSON() {
-    return {
-      yanchor: relativePositionToJSON(this.yanchor),
-      yhead: relativePositionToJSON(this.yhead)
-    };
-  }
-  /**
-   * @param {any} json
-   * @return {YRange}
-   */
-  static fromJSON(json) {
-    return new YRange(createRelativePositionFromJSON(json.yanchor), createRelativePositionFromJSON(json.yhead));
+// node_modules/y-protocols/auth.js
+var messagePermissionDenied = 0;
+var readAuthMessage = (decoder, y, permissionDeniedHandler2) => {
+  switch (readVarUint(decoder)) {
+    case messagePermissionDenied:
+      permissionDeniedHandler2(y, readVarString(decoder));
   }
 };
 
-// node_modules/y-codemirror.next/src/y-sync.js
-var YSyncConfig = class {
-  constructor(ytext, awareness) {
-    this.ytext = ytext;
-    this.awareness = awareness;
-    this.undoManager = new UndoManager(ytext);
-  }
-  /**
-   * Helper function to transform an absolute index position to a Yjs-based relative position
-   * (https://docs.yjs.dev/api/relative-positions).
-   *
-   * A relative position can be transformed back to an absolute position even after the document has changed. The position is
-   * automatically adapted. This does not require any position transformations. Relative positions are computed based on
-   * the internal Yjs document model. Peers that share content through Yjs are guaranteed that their positions will always
-   * synced up when using relatve positions.
-   *
-   * ```js
-   * import { ySyncFacet } from 'y-codemirror'
-   *
-   * ..
-   * const ysync = view.state.facet(ySyncFacet)
-   * // transform an absolute index position to a ypos
-   * const ypos = ysync.getYPos(3)
-   * // transform the ypos back to an absolute position
-   * ysync.fromYPos(ypos) // => 3
-   * ```
-   *
-   * It cannot be guaranteed that absolute index positions can be synced up between peers.
-   * This might lead to undesired behavior when implementing features that require that all peers see the
-   * same marked range (e.g. a comment plugin).
-   *
-   * @param {number} pos
-   * @param {number} [assoc]
-   */
-  toYPos(pos, assoc = 0) {
-    return createRelativePositionFromTypeIndex(this.ytext, pos, assoc);
-  }
-  /**
-   * @param {Y.RelativePosition | Object} rpos
-   */
-  fromYPos(rpos) {
-    const pos = createAbsolutePositionFromRelativePosition(createRelativePositionFromJSON(rpos), this.ytext.doc);
-    if (pos == null || pos.type !== this.ytext) {
-      throw new Error("[y-codemirror] The position you want to retrieve was created by a different document");
-    }
-    return {
-      pos: pos.index,
-      assoc: pos.assoc
-    };
-  }
-  /**
-   * @param {cmState.SelectionRange} range
-   * @return {YRange}
-   */
-  toYRange(range) {
-    const assoc = range.assoc;
-    const yanchor = this.toYPos(range.anchor, assoc);
-    const yhead = this.toYPos(range.head, assoc);
-    return new YRange(yanchor, yhead);
-  }
-  /**
-   * @param {YRange} yrange
-   */
-  fromYRange(yrange) {
-    const anchor = this.fromYPos(yrange.yanchor);
-    const head = this.fromYPos(yrange.yhead);
-    if (anchor.pos === head.pos) {
-      return cmState.EditorSelection.cursor(head.pos, head.assoc);
-    }
-    return cmState.EditorSelection.range(anchor.pos, head.pos);
+// node_modules/lib0/url.js
+var encodeQueryParams = (params2) => map2(params2, (val, key) => `${encodeURIComponent(key)}=${encodeURIComponent(val)}`).join("&");
+
+// node_modules/y-websocket/src/y-websocket.js
+var messageSync2 = 0;
+var messageQueryAwareness2 = 3;
+var messageAwareness2 = 1;
+var messageAuth = 2;
+var messageHandlers = [];
+messageHandlers[messageSync2] = (encoder, decoder, provider, emitSynced, _messageType) => {
+  writeVarUint(encoder, messageSync2);
+  const syncMessageType = readSyncMessage(
+    decoder,
+    encoder,
+    provider.doc,
+    provider
+  );
+  if (emitSynced && syncMessageType === messageYjsSyncStep2 && !provider.synced) {
+    provider.synced = true;
   }
 };
-var ySyncFacet = cmState.Facet.define({
-  combine(inputs) {
-    return inputs[inputs.length - 1];
+messageHandlers[messageQueryAwareness2] = (encoder, _decoder, provider, _emitSynced, _messageType) => {
+  writeVarUint(encoder, messageAwareness2);
+  writeVarUint8Array(
+    encoder,
+    encodeAwarenessUpdate(
+      provider.awareness,
+      Array.from(provider.awareness.getStates().keys())
+    )
+  );
+};
+messageHandlers[messageAwareness2] = (_encoder, decoder, provider, _emitSynced, _messageType) => {
+  applyAwarenessUpdate(
+    provider.awareness,
+    readVarUint8Array(decoder),
+    provider
+  );
+};
+messageHandlers[messageAuth] = (_encoder, decoder, provider, _emitSynced, _messageType) => {
+  readAuthMessage(
+    decoder,
+    provider.doc,
+    (_ydoc, reason) => permissionDeniedHandler(provider, reason)
+  );
+};
+var messageReconnectTimeout2 = 3e4;
+var permissionDeniedHandler = (provider, reason) => console.warn(`Permission denied to access ${provider.url}.
+${reason}`);
+var readMessage2 = (provider, buf, emitSynced) => {
+  const decoder = createDecoder(buf);
+  const encoder = createEncoder();
+  const messageType = readVarUint(decoder);
+  const messageHandler = provider.messageHandlers[messageType];
+  if (
+    /** @type {any} */
+    messageHandler
+  ) {
+    messageHandler(encoder, decoder, provider, emitSynced, messageType);
+  } else {
+    console.error("Unable to compute message");
   }
-});
-var ySyncAnnotation = cmState.Annotation.define();
-var YSyncPluginValue = class {
-  /**
-   * @param {cmView.EditorView} view
-   */
-  constructor(view) {
-    this.view = view;
-    this.conf = view.state.facet(ySyncFacet);
-    this._observer = (event, tr) => {
-      if (tr.origin !== this.conf) {
-        const delta = event.delta;
-        const changes = [];
-        let pos = 0;
-        for (let i = 0; i < delta.length; i++) {
-          const d = delta[i];
-          if (d.insert != null) {
-            changes.push({ from: pos, to: pos, insert: d.insert });
-          } else if (d.delete != null) {
-            changes.push({ from: pos, to: pos + d.delete, insert: "" });
-            pos += d.delete;
-          } else {
-            pos += d.retain;
-          }
-        }
-        view.dispatch({ changes, annotations: [ySyncAnnotation.of(this.conf)] });
+  return encoder;
+};
+var setupWS2 = (provider) => {
+  if (provider.shouldConnect && provider.ws === null) {
+    const websocket = new provider._WS(provider.url);
+    websocket.binaryType = "arraybuffer";
+    provider.ws = websocket;
+    provider.wsconnecting = true;
+    provider.wsconnected = false;
+    provider.synced = false;
+    websocket.onmessage = (event) => {
+      provider.wsLastMessageReceived = getUnixTime();
+      const encoder = readMessage2(provider, new Uint8Array(event.data), true);
+      if (length(encoder) > 1) {
+        websocket.send(toUint8Array(encoder));
       }
     };
-    this._ytext = this.conf.ytext;
-    this._ytext.observe(this._observer);
-  }
-  /**
-   * @param {cmView.ViewUpdate} update
-   */
-  update(update) {
-    if (!update.docChanged || update.transactions.length > 0 && update.transactions[0].annotation(ySyncAnnotation) === this.conf) {
-      return;
-    }
-    const ytext = this.conf.ytext;
-    ytext.doc.transact(() => {
-      let adj = 0;
-      update.changes.iterChanges((fromA, toA, fromB, toB, insert) => {
-        const insertText2 = insert.sliceString(0, insert.length, "\n");
-        if (fromA !== toA) {
-          ytext.delete(fromA + adj, toA - fromA);
-        }
-        if (insertText2.length > 0) {
-          ytext.insert(fromA + adj, insertText2);
-        }
-        adj += insertText2.length - (toA - fromA);
-      });
-    }, this.conf);
-  }
-  destroy() {
-    this._ytext.unobserve(this._observer);
+    websocket.onerror = (event) => {
+      provider.emit("connection-error", [event, provider]);
+    };
+    websocket.onclose = (event) => {
+      provider.emit("connection-close", [event, provider]);
+      provider.ws = null;
+      provider.wsconnecting = false;
+      if (provider.wsconnected) {
+        provider.wsconnected = false;
+        provider.synced = false;
+        removeAwarenessStates(
+          provider.awareness,
+          Array.from(provider.awareness.getStates().keys()).filter(
+            (client) => client !== provider.doc.clientID
+          ),
+          provider
+        );
+        provider.emit("status", [{
+          status: "disconnected"
+        }]);
+      } else {
+        provider.wsUnsuccessfulReconnects++;
+      }
+      setTimeout(
+        setupWS2,
+        min(
+          pow(2, provider.wsUnsuccessfulReconnects) * 100,
+          provider.maxBackoffTime
+        ),
+        provider
+      );
+    };
+    websocket.onopen = () => {
+      provider.wsLastMessageReceived = getUnixTime();
+      provider.wsconnecting = false;
+      provider.wsconnected = true;
+      provider.wsUnsuccessfulReconnects = 0;
+      provider.emit("status", [{
+        status: "connected"
+      }]);
+      const encoder = createEncoder();
+      writeVarUint(encoder, messageSync2);
+      writeSyncStep1(encoder, provider.doc);
+      websocket.send(toUint8Array(encoder));
+      if (provider.awareness.getLocalState() !== null) {
+        const encoderAwarenessState = createEncoder();
+        writeVarUint(encoderAwarenessState, messageAwareness2);
+        writeVarUint8Array(
+          encoderAwarenessState,
+          encodeAwarenessUpdate(provider.awareness, [
+            provider.doc.clientID
+          ])
+        );
+        websocket.send(toUint8Array(encoderAwarenessState));
+      }
+    };
+    provider.emit("status", [{
+      status: "connecting"
+    }]);
   }
 };
-var ySync = cmView.ViewPlugin.fromClass(YSyncPluginValue);
-
-// node_modules/y-codemirror.next/src/y-remote-selections.js
-var cmView2 = __toESM(require("@codemirror/view"), 1);
-var cmState2 = __toESM(require("@codemirror/state"), 1);
-var yRemoteSelectionsTheme = cmView2.EditorView.baseTheme({
-  ".cm-ySelection": {},
-  ".cm-yLineSelection": {
-    padding: 0,
-    margin: "0px 2px 0px 4px"
-  },
-  ".cm-ySelectionCaret": {
-    position: "relative",
-    borderLeft: "1px solid black",
-    borderRight: "1px solid black",
-    marginLeft: "-1px",
-    marginRight: "-1px",
-    boxSizing: "border-box",
-    display: "inline"
-  },
-  ".cm-ySelectionCaretDot": {
-    borderRadius: "50%",
-    position: "absolute",
-    width: ".4em",
-    height: ".4em",
-    top: "-.2em",
-    left: "-.2em",
-    backgroundColor: "inherit",
-    transition: "transform .3s ease-in-out",
-    boxSizing: "border-box"
-  },
-  ".cm-ySelectionCaret:hover > .cm-ySelectionCaretDot": {
-    transformOrigin: "bottom center",
-    transform: "scale(0)"
-  },
-  ".cm-ySelectionInfo": {
-    position: "absolute",
-    top: "-1.05em",
-    left: "-1px",
-    fontSize: ".75em",
-    fontFamily: "serif",
-    fontStyle: "normal",
-    fontWeight: "normal",
-    lineHeight: "normal",
-    userSelect: "none",
-    color: "white",
-    paddingLeft: "2px",
-    paddingRight: "2px",
-    zIndex: 101,
-    transition: "opacity .3s ease-in-out",
-    backgroundColor: "inherit",
-    // these should be separate
-    opacity: 0,
-    transitionDelay: "0s",
-    whiteSpace: "nowrap"
-  },
-  ".cm-ySelectionCaret:hover > .cm-ySelectionInfo": {
-    opacity: 1,
-    transitionDelay: "0s"
+var broadcastMessage = (provider, buf) => {
+  const ws = provider.ws;
+  if (provider.wsconnected && ws && ws.readyState === ws.OPEN) {
+    ws.send(buf);
   }
-});
-var yRemoteSelectionsAnnotation = cmState2.Annotation.define();
-var YRemoteCaretWidget = class extends cmView2.WidgetType {
+  if (provider.bcconnected) {
+    publish(provider.bcChannel, buf, provider);
+  }
+};
+var WebsocketProvider = class extends Observable {
   /**
-   * @param {string} color
-   * @param {string} name
+   * @param {string} serverUrl
+   * @param {string} roomname
+   * @param {Y.Doc} doc
+   * @param {object} opts
+   * @param {boolean} [opts.connect]
+   * @param {awarenessProtocol.Awareness} [opts.awareness]
+   * @param {Object<string,string>} [opts.params]
+   * @param {typeof WebSocket} [opts.WebSocketPolyfill] Optionall provide a WebSocket polyfill
+   * @param {number} [opts.resyncInterval] Request server state every `resyncInterval` milliseconds
+   * @param {number} [opts.maxBackoffTime] Maximum amount of time to wait before trying to reconnect (we try to reconnect using exponential backoff)
+   * @param {boolean} [opts.disableBc] Disable cross-tab BroadcastChannel communication
    */
-  constructor(color, name) {
+  constructor(serverUrl, roomname, doc2, {
+    connect = true,
+    awareness = new Awareness(doc2),
+    params: params2 = {},
+    WebSocketPolyfill = WebSocket,
+    resyncInterval = -1,
+    maxBackoffTime = 2500,
+    disableBc = false
+  } = {}) {
     super();
-    this.color = color;
-    this.name = name;
+    while (serverUrl[serverUrl.length - 1] === "/") {
+      serverUrl = serverUrl.slice(0, serverUrl.length - 1);
+    }
+    const encodedParams = encodeQueryParams(params2);
+    this.maxBackoffTime = maxBackoffTime;
+    this.bcChannel = serverUrl + "/" + roomname;
+    this.url = serverUrl + "/" + roomname + (encodedParams.length === 0 ? "" : "?" + encodedParams);
+    this.roomname = roomname;
+    this.doc = doc2;
+    this._WS = WebSocketPolyfill;
+    this.awareness = awareness;
+    this.wsconnected = false;
+    this.wsconnecting = false;
+    this.bcconnected = false;
+    this.disableBc = disableBc;
+    this.wsUnsuccessfulReconnects = 0;
+    this.messageHandlers = messageHandlers.slice();
+    this._synced = false;
+    this.ws = null;
+    this.wsLastMessageReceived = 0;
+    this.shouldConnect = connect;
+    this._resyncInterval = 0;
+    if (resyncInterval > 0) {
+      this._resyncInterval = /** @type {any} */
+      setInterval(() => {
+        if (this.ws && this.ws.readyState === WebSocket.OPEN) {
+          const encoder = createEncoder();
+          writeVarUint(encoder, messageSync2);
+          writeSyncStep1(encoder, doc2);
+          this.ws.send(toUint8Array(encoder));
+        }
+      }, resyncInterval);
+    }
+    this._bcSubscriber = (data, origin) => {
+      if (origin !== this) {
+        const encoder = readMessage2(this, new Uint8Array(data), false);
+        if (length(encoder) > 1) {
+          publish(this.bcChannel, toUint8Array(encoder), this);
+        }
+      }
+    };
+    this._updateHandler = (update, origin) => {
+      if (origin !== this) {
+        const encoder = createEncoder();
+        writeVarUint(encoder, messageSync2);
+        writeUpdate(encoder, update);
+        broadcastMessage(this, toUint8Array(encoder));
+      }
+    };
+    this.doc.on("update", this._updateHandler);
+    this._awarenessUpdateHandler = ({ added, updated, removed }, _origin) => {
+      const changedClients = added.concat(updated).concat(removed);
+      const encoder = createEncoder();
+      writeVarUint(encoder, messageAwareness2);
+      writeVarUint8Array(
+        encoder,
+        encodeAwarenessUpdate(awareness, changedClients)
+      );
+      broadcastMessage(this, toUint8Array(encoder));
+    };
+    this._exitHandler = () => {
+      removeAwarenessStates(
+        this.awareness,
+        [doc2.clientID],
+        "app closed"
+      );
+    };
+    if (isNode && typeof process !== "undefined") {
+      process.on("exit", this._exitHandler);
+    }
+    awareness.on("update", this._awarenessUpdateHandler);
+    this._checkInterval = /** @type {any} */
+    setInterval(() => {
+      if (this.wsconnected && messageReconnectTimeout2 < getUnixTime() - this.wsLastMessageReceived) {
+        this.ws.close();
+      }
+    }, messageReconnectTimeout2 / 10);
+    if (connect) {
+      this.connect();
+    }
   }
-  toDOM() {
-    return (
-      /** @type {HTMLElement} */
-      element("span", [create4("class", "cm-ySelectionCaret"), create4("style", `background-color: ${this.color}; border-color: ${this.color}`)], [
-        text("\u2060"),
-        element("div", [
-          create4("class", "cm-ySelectionCaretDot")
-        ]),
-        text("\u2060"),
-        element("div", [
-          create4("class", "cm-ySelectionInfo")
-        ], [
-          text(this.name)
-        ]),
-        text("\u2060")
+  /**
+   * @type {boolean}
+   */
+  get synced() {
+    return this._synced;
+  }
+  set synced(state) {
+    if (this._synced !== state) {
+      this._synced = state;
+      this.emit("synced", [state]);
+      this.emit("sync", [state]);
+    }
+  }
+  destroy() {
+    if (this._resyncInterval !== 0) {
+      clearInterval(this._resyncInterval);
+    }
+    clearInterval(this._checkInterval);
+    this.disconnect();
+    if (isNode && typeof process !== "undefined") {
+      process.off("exit", this._exitHandler);
+    }
+    this.awareness.off("update", this._awarenessUpdateHandler);
+    this.doc.off("update", this._updateHandler);
+    super.destroy();
+  }
+  connectBc() {
+    if (this.disableBc) {
+      return;
+    }
+    if (!this.bcconnected) {
+      subscribe(this.bcChannel, this._bcSubscriber);
+      this.bcconnected = true;
+    }
+    const encoderSync = createEncoder();
+    writeVarUint(encoderSync, messageSync2);
+    writeSyncStep1(encoderSync, this.doc);
+    publish(this.bcChannel, toUint8Array(encoderSync), this);
+    const encoderState = createEncoder();
+    writeVarUint(encoderState, messageSync2);
+    writeSyncStep2(encoderState, this.doc);
+    publish(this.bcChannel, toUint8Array(encoderState), this);
+    const encoderAwarenessQuery = createEncoder();
+    writeVarUint(encoderAwarenessQuery, messageQueryAwareness2);
+    publish(
+      this.bcChannel,
+      toUint8Array(encoderAwarenessQuery),
+      this
+    );
+    const encoderAwarenessState = createEncoder();
+    writeVarUint(encoderAwarenessState, messageAwareness2);
+    writeVarUint8Array(
+      encoderAwarenessState,
+      encodeAwarenessUpdate(this.awareness, [
+        this.doc.clientID
       ])
     );
+    publish(
+      this.bcChannel,
+      toUint8Array(encoderAwarenessState),
+      this
+    );
   }
-  eq(widget) {
-    return widget.color === this.color;
+  disconnectBc() {
+    const encoder = createEncoder();
+    writeVarUint(encoder, messageAwareness2);
+    writeVarUint8Array(
+      encoder,
+      encodeAwarenessUpdate(this.awareness, [
+        this.doc.clientID
+      ], /* @__PURE__ */ new Map())
+    );
+    broadcastMessage(this, toUint8Array(encoder));
+    if (this.bcconnected) {
+      unsubscribe(this.bcChannel, this._bcSubscriber);
+      this.bcconnected = false;
+    }
   }
-  compare(widget) {
-    return widget.color === this.color;
+  disconnect() {
+    this.shouldConnect = false;
+    this.disconnectBc();
+    if (this.ws !== null) {
+      this.ws.close();
+    }
   }
-  updateDOM() {
-    return false;
-  }
-  get estimatedHeight() {
-    return -1;
-  }
-  ignoreEvent() {
-    return true;
+  connect() {
+    this.shouldConnect = true;
+    if (!this.wsconnected && this.ws === null) {
+      setupWS2(this);
+      this.connectBc();
+    }
   }
 };
-var YRemoteSelectionsPluginValue = class {
-  /**
-   * @param {cmView.EditorView} view
-   */
-  constructor(view) {
-    this.conf = view.state.facet(ySyncFacet);
-    this._listener = ({ added, updated, removed }, s, t) => {
-      const clients = added.concat(updated).concat(removed);
-      if (clients.findIndex((id2) => id2 !== this.conf.awareness.doc.clientID) >= 0) {
-        view.dispatch({ annotations: [yRemoteSelectionsAnnotation.of([])] });
-      }
-    };
-    this._awareness = this.conf.awareness;
-    this._awareness.on("change", this._listener);
-    this.decorations = cmState2.RangeSet.of([]);
+
+// src/sharedEntities/sharedEntity.ts
+var SharedEntity = class {
+  constructor(plugin) {
+    this.plugin = plugin;
   }
-  destroy() {
-    this._awareness.off("change", this._listener);
+  static async fromShareURL(url, plugin) {
+    const splittedUrl = url.split("/");
+    if (!(splittedUrl == null ? void 0 : splittedUrl.contains("cm")))
+      return;
+    return SharedDocument.fromShareURL(url, plugin);
   }
-  /**
-   * @param {cmView.ViewUpdate} update
-   */
-  update(update) {
-    const ytext = this.conf.ytext;
-    const ydoc = (
-      /** @type {Y.Doc} */
-      ytext.doc
-    );
-    const awareness = this.conf.awareness;
-    const decorations = [];
-    const localAwarenessState = this.conf.awareness.getLocalState();
-    if (localAwarenessState != null) {
-      const hasFocus = update.view.hasFocus && update.view.dom.ownerDocument.hasFocus();
-      const sel = hasFocus ? update.state.selection.main : null;
-      const currentAnchor = localAwarenessState.cursor == null ? null : createRelativePositionFromJSON(localAwarenessState.cursor.anchor);
-      const currentHead = localAwarenessState.cursor == null ? null : createRelativePositionFromJSON(localAwarenessState.cursor.head);
-      if (sel != null) {
-        const anchor = createRelativePositionFromTypeIndex(ytext, sel.anchor);
-        const head = createRelativePositionFromTypeIndex(ytext, sel.head);
-        if (localAwarenessState.cursor == null || !compareRelativePositions(currentAnchor, anchor) || !compareRelativePositions(currentHead, head)) {
-          awareness.setLocalStateField("cursor", {
-            anchor,
-            head
-          });
-        }
-      } else if (localAwarenessState.cursor != null && hasFocus) {
-        awareness.setLocalStateField("cursor", null);
-      }
+  get shareId() {
+    return this._shareId;
+  }
+  get path() {
+    return this._path;
+  }
+  startWebRTCSync(init) {
+    if (this._webRTCProvider)
+      return this._webRTCProvider;
+    const webRTCProcider = new WebrtcProvider(this._shareId, this.yDoc, { signaling: [this.plugin.settings.signaling], peerOpts: { iceServers: [{ urls: "stun:freeturn.net:5349" }, { urls: "turns:freeturn.tel:5349", username: "free", credential: "free" }, { urls: "stun:stun.l.google.com:19302" }, { urls: "stun:global.stun.twilio.com:3478?transport=udp" }] } });
+    this._webRTCProvider = webRTCProcider;
+    if (init) {
+      init(webRTCProcider);
     }
-    awareness.getStates().forEach((state, clientid) => {
-      if (clientid === awareness.doc.clientID) {
-        return;
-      }
-      const cursor = state.cursor;
-      if (cursor == null || cursor.anchor == null || cursor.head == null) {
-        return;
-      }
-      const anchor = createAbsolutePositionFromRelativePosition(cursor.anchor, ydoc);
-      const head = createAbsolutePositionFromRelativePosition(cursor.head, ydoc);
-      if (anchor == null || head == null || anchor.type !== ytext || head.type !== ytext) {
-        return;
-      }
-      const { color = "#30bced", name = "Anonymous" } = state.user || {};
-      const colorLight = state.user && state.user.colorLight || color + "33";
-      const start = min(anchor.index, head.index);
-      const end = max(anchor.index, head.index);
-      const startLine = update.view.state.doc.lineAt(start);
-      const endLine = update.view.state.doc.lineAt(end);
-      if (startLine.number === endLine.number) {
-        decorations.push({
-          from: start,
-          to: end,
-          value: cmView2.Decoration.mark({
-            attributes: { style: `background-color: ${colorLight}` },
-            class: "cm-ySelection"
-          })
-        });
+    return webRTCProcider;
+  }
+  stopWebRTCSync() {
+    var _a, _b, _c;
+    if (!this._webRTCProvider)
+      return;
+    (_a = this._webRTCProvider) == null ? void 0 : _a.awareness.destroy();
+    (_b = this._webRTCProvider) == null ? void 0 : _b.disconnect();
+    (_c = this._webRTCProvider) == null ? void 0 : _c.destroy();
+    this._webRTCProvider = void 0;
+  }
+  async startWebSocketSync() {
+    if (!this.shareId)
+      return;
+    if (this._webSocketProvider)
+      return this._webSocketProvider;
+    const webSocketProvider = new WebsocketProvider(this.plugin.settings.sync, this.shareId, this.yDoc);
+    this._webSocketProvider = webSocketProvider;
+    webSocketProvider.on("status", (event) => {
+      console.log(event.status);
+    });
+    return webSocketProvider;
+  }
+  async stopWebSocketSync() {
+    if (!this._webSocketProvider)
+      return;
+    this._webSocketProvider.disconnect();
+    this._webSocketProvider.destroy();
+    this._webSocketProvider = void 0;
+  }
+};
+
+// src/sharedEntities/sharedDocument.ts
+var path = __toESM(require("path"));
+var _SharedDocument = class extends SharedEntity {
+  constructor(opts, plugin) {
+    super(plugin);
+    if (opts.path) {
+      this._path = opts.path;
+      const file = this.plugin.app.vault.getAbstractFileByPath(this.path);
+      if (file instanceof import_obsidian5.TFile) {
+        this._file = file;
       } else {
-        decorations.push({
-          from: start,
-          to: startLine.from + startLine.length,
-          value: cmView2.Decoration.mark({
-            attributes: { style: `background-color: ${colorLight}` },
-            class: "cm-ySelection"
-          })
-        });
-        decorations.push({
-          from: endLine.from,
-          to: end,
-          value: cmView2.Decoration.mark({
-            attributes: { style: `background-color: ${colorLight}` },
-            class: "cm-ySelection"
-          })
-        });
-        for (let i = startLine.number + 1; i < endLine.number; i++) {
-          const linePos = update.view.state.doc.line(i).from;
-          decorations.push({
-            from: linePos,
-            to: linePos,
-            value: cmView2.Decoration.line({
-              attributes: { style: `background-color: ${colorLight}`, class: "cm-yLineSelection" }
-            })
-          });
-        }
+        console.log("FILE NOT FOUND");
       }
-      decorations.push({
-        from: head.index,
-        to: head.index,
-        value: cmView2.Decoration.widget({
-          side: head.index - anchor.index > 0 ? -1 : 1,
-          // the local cursor should be rendered outside the remote selection
-          block: false,
-          widget: new YRemoteCaretWidget(color, name)
-        })
+    }
+    if (opts.id) {
+      this._shareId = opts.id;
+    }
+    this.yDoc = new Doc();
+    _SharedDocument._sharedDocuments.push(this);
+    this._extensions = new PeerdraftRecord();
+    this._extensions.on("delete", () => {
+      if (this._extensions.size === 0 && this._webRTCProvider) {
+        this._webRTCProvider.awareness.setLocalState({});
+      }
+    });
+    this.getContentFragment().observe(() => {
+      if (this._file && this._extensions.size === 0) {
+        this.plugin.app.vault.modify(this._file, this.getContentFragment().toString());
+      }
+    });
+  }
+  static async fromView(view, plugin, opts = { isPermanent: false }) {
+    if (!view.file)
+      return;
+    if (this.findByPath(view.file.path))
+      return;
+    const doc2 = new _SharedDocument({
+      path: view.file.path
+    }, plugin);
+    doc2.yDoc.getText("content").insert(0, view.editor.getValue());
+    if (opts.isPermanent) {
+      await doc2.setPermanent();
+      doc2.startWebSocketSync();
+    } else {
+      doc2._shareId = createRandomId();
+      doc2.addStatusBarEntry();
+      pinLeaf(view.leaf);
+    }
+    doc2.startWebRTCSync();
+    if (!opts.isPermanent && doc2._webRTCProvider) {
+      doc2.getOwnerFragment().insert(0, doc2._webRTCProvider.awareness.clientID.toFixed(0));
+    }
+    doc2.addExtensionToLeaf(view.leaf.id);
+    navigator.clipboard.writeText(plugin.settings.basePath + doc2.shareId);
+    showNotice("Collaboration started for " + doc2.path + ". Link copied to Clipboard.");
+    return doc2;
+  }
+  static fromPermanentShareDocument(pd, plugin) {
+    if (this.findByPath(pd.path))
+      return;
+    const doc2 = new _SharedDocument({
+      path: pd.path
+    }, plugin);
+    doc2._isPermanent = true;
+    doc2._shareId = pd.shareId;
+    console.log("permenent share added " + pd.path);
+    return doc2;
+  }
+  static async fromShareURL(url, plugin) {
+    const id2 = url.split("/").pop();
+    if (!id2 || !id2.match("^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$")) {
+      showNotice("No valid peerdraft link");
+      return;
+    }
+    if (_SharedDocument.findById(id2)) {
+      showNotice("This share is already active.");
+      return;
+    }
+    const isPermanent = false;
+    if (!isPermanent) {
+      const initialFileName = `_peerdraft_session_${id2}_${generateRandomString()}.md`;
+      const parent = plugin.app.fileManager.getNewFileParent("", initialFileName);
+      const filePath = path.join(parent.path, initialFileName);
+      const file = await plugin.app.vault.create(filePath, "");
+      const doc2 = new _SharedDocument({
+        path: file.path,
+        id: id2
+      }, plugin);
+      doc2.startWebRTCSync();
+      const leaf = await openFileInNewTab(file, plugin.app.workspace);
+      doc2.addStatusBarEntry();
+      doc2.addExtensionToLeaf(leaf.id);
+      pinLeaf(leaf);
+      showNotice("Joined Session in " + doc2.path + ".");
+      return doc2;
+    }
+  }
+  startWebRTCSync() {
+    return super.startWebRTCSync((provider) => {
+      console.log("register");
+      provider.awareness.on("update", (msg) => {
+        var _a, _b;
+        const removed = (_a = msg.removed) != null ? _a : [];
+        if (removed && removed.length > 0) {
+          const removedStrings = removed.map((id2) => {
+            return id2.toFixed(0);
+          });
+          const owner = this.getOwnerFragment().toString();
+          if (owner != provider.awareness.clientID.toString()) {
+            if (removedStrings.includes(owner)) {
+              showNotice("Shared session for " + this.path + " stopped by owner");
+              this.destroy();
+            }
+          }
+        }
+        const added = (_b = msg.added) != null ? _b : [];
+        if (added && added.length > 0) {
+          const states = provider.awareness.getStates();
+          for (const key of added) {
+            const peer = states.get(key);
+            if (peer) {
+              showNotice(`${peer.user.name} joined`);
+            }
+          }
+        }
       });
     });
-    this.decorations = cmView2.Decoration.set(decorations, true);
   }
-};
-var yRemoteSelections = cmView2.ViewPlugin.fromClass(YRemoteSelectionsPluginValue, {
-  decorations: (v) => v.decorations
-});
-
-// node_modules/y-codemirror.next/src/y-undomanager.js
-var cmState3 = __toESM(require("@codemirror/state"), 1);
-var cmView3 = __toESM(require("@codemirror/view"), 1);
-var YUndoManagerConfig = class {
-  /**
-   * @param {Y.UndoManager} undoManager
-   */
-  constructor(undoManager) {
-    this.undoManager = undoManager;
-  }
-  /**
-   * @param {any} origin
-   */
-  addTrackedOrigin(origin) {
-    this.undoManager.addTrackedOrigin(origin);
-  }
-  /**
-   * @param {any} origin
-   */
-  removeTrackedOrigin(origin) {
-    this.undoManager.removeTrackedOrigin(origin);
-  }
-  /**
-   * @return {boolean} Whether a change was undone.
-   */
-  undo() {
-    return this.undoManager.undo() != null;
-  }
-  /**
-   * @return {boolean} Whether a change was redone.
-   */
-  redo() {
-    return this.undoManager.redo() != null;
-  }
-};
-var yUndoManagerFacet = cmState3.Facet.define({
-  combine(inputs) {
-    return inputs[inputs.length - 1];
-  }
-});
-var yUndoManagerAnnotation = cmState3.Annotation.define();
-var YUndoManagerPluginValue = class {
-  /**
-   * @param {cmView.EditorView} view
-   */
-  constructor(view) {
-    this.view = view;
-    this.conf = view.state.facet(yUndoManagerFacet);
-    this._undoManager = this.conf.undoManager;
-    this.syncConf = view.state.facet(ySyncFacet);
-    this._beforeChangeSelection = null;
-    this._mux = createMutex();
-    this._onStackItemAdded = ({ stackItem, changedParentTypes }) => {
-      if (changedParentTypes.has(this.syncConf.ytext) && this._beforeChangeSelection && !stackItem.meta.has(this)) {
-        stackItem.meta.set(this, this._beforeChangeSelection);
+  static async fromTFile(file, plugin) {
+    const doc2 = new _SharedDocument({ path: file.path }, plugin);
+    doc2._shareId = createRandomId();
+    const leafIds = getLeafIdsByPath(file.path, plugin.pws);
+    if (leafIds.length > 0) {
+      const content = plugin.app.workspace.getLeafById(leafIds[0]).view.editor.getValue();
+      doc2.getContentFragment().insert(0, content);
+      for (const id2 of leafIds) {
+        doc2.addExtensionToLeaf(id2);
       }
-    };
-    this._onStackItemPopped = ({ stackItem }) => {
-      const sel = stackItem.meta.get(this);
-      if (sel) {
-        const selection = this.syncConf.fromYRange(sel);
-        view.dispatch(view.state.update({ selection }));
-        this._storeSelection();
-      }
-    };
-    this._storeSelection = () => {
-      this._beforeChangeSelection = this.syncConf.toYRange(this.view.state.selection.main);
-    };
-    this._undoManager.on("stack-item-added", this._onStackItemAdded);
-    this._undoManager.on("stack-item-popped", this._onStackItemPopped);
-    this._undoManager.addTrackedOrigin(this.syncConf);
-  }
-  /**
-   * @param {cmView.ViewUpdate} update
-   */
-  update(update) {
-    if (update.selectionSet && (update.transactions.length === 0 || update.transactions[0].annotation(ySyncAnnotation) !== this.syncConf)) {
-      this._storeSelection();
+    } else {
+      const content = await plugin.app.vault.read(file);
+      doc2.getContentFragment().insert(0, content);
     }
+    return doc2;
+  }
+  static findByPath(path2) {
+    const docs = this._sharedDocuments.filter((doc2) => {
+      return doc2.path === path2;
+    });
+    if (docs.length >= 1) {
+      return docs[0];
+    } else {
+      return;
+    }
+  }
+  static findById(id2) {
+    const docs = this._sharedDocuments.filter((doc2) => {
+      return doc2.shareId === id2;
+    });
+    if (docs.length >= 1) {
+      return docs[0];
+    } else {
+      return;
+    }
+  }
+  static getAll() {
+    return Object.assign([], this._sharedDocuments);
+  }
+  setNewFileLocation(file) {
+    this._file = file;
+    this._path = file.path;
+    if (this.statusBarEntry) {
+      this.removeStatusStatusBarEntry();
+      this.addStatusBarEntry();
+    }
+  }
+  async setPermanent() {
+    if (!this._isPermanent) {
+      const data = await this.plugin.serverAPI.createPermanentSession();
+      if (!data)
+        return;
+      this._isPermanent = true;
+      this._shareId = data.id;
+      await this.plugin.permanentShareStore.add(this);
+    }
+  }
+  get isPermanent() {
+    return this._isPermanent;
+  }
+  getValue() {
+    return this.getContentFragment().toString();
+  }
+  getContentFragment() {
+    return this.yDoc.getText("content");
+  }
+  getOwnerFragment() {
+    return this.yDoc.getText("owner");
+  }
+  startLocalSync() {
+  }
+  stopLocalSync() {
+  }
+  async addExtensionToLeaf(leafId) {
+    const webRTCProcider = await this.startWebRTCSync();
+    if (this._extensions.get(leafId))
+      return;
+    const pLeaf = this.plugin.pws.get(leafId);
+    if (!pLeaf)
+      return;
+    if (pLeaf.path != this._path)
+      return;
+    if (pLeaf.isPreview) {
+      pLeaf.once("changeIsPreview", () => {
+        this.addExtensionToLeaf(leafId);
+      });
+      return;
+    }
+    const leaf = this.plugin.app.workspace.getLeafById(leafId);
+    if (!leaf)
+      return;
+    const view = leaf.view;
+    const editor = view.editor;
+    editor.setValue(this.getValue());
+    const undoManager = new UndoManager(this.getContentFragment());
+    webRTCProcider.awareness.setLocalStateField("user", {
+      name: this.plugin.settings.name,
+      color: _SharedDocument._userColor.dark,
+      colorLight: _SharedDocument._userColor.light
+    });
+    const extension = yCollab(this.getContentFragment(), webRTCProcider.awareness, { undoManager });
+    const compartment = new import_state.Compartment();
+    const editorView = editor.cm;
+    editorView.dispatch({
+      effects: import_state2.StateEffect.appendConfig.of(compartment.of(extension))
+    });
+    this._extensions.set(leafId, compartment);
+    pLeaf.once("changeIsPreview", () => {
+      this.removeExtensionFromLeaf(leafId);
+      pLeaf.once("changeIsPreview", () => {
+        this.addExtensionToLeaf(leafId);
+      });
+    });
+    return import_state.Compartment;
+  }
+  removeExtensionFromLeaf(leafId) {
+    const leaf = this.plugin.app.workspace.getLeafById(leafId);
+    if (leaf) {
+      const editor = leaf.view.editor;
+      const editorView = editor.cm;
+      const compartment = this._extensions.get(leafId);
+      if (compartment) {
+        editorView.dispatch({
+          effects: compartment.reconfigure([])
+        });
+      }
+    }
+    this._extensions.delete(leafId);
+  }
+  startUpdateInBackground() {
+  }
+  stopUpdateInBackground() {
+  }
+  addStatusBarEntry() {
+    if (this.statusBarEntry)
+      return;
+    const menu = new import_obsidian5.Menu();
+    menu.addItem((item) => {
+      item.setTitle("Copy link");
+      item.onClick(() => {
+        navigator.clipboard.writeText(this.plugin.settings.basePath + this.shareId);
+        showNotice("Link copied to clipboard.");
+      });
+    });
+    menu.addItem((item) => {
+      item.setTitle("Stop shared session");
+      item.onClick(() => {
+        this.destroy();
+      });
+    });
+    const status = this.plugin.addStatusBarItem();
+    status.addClass("mod-clickable");
+    status.createEl("span", { text: "Sharing '" + this.path + "'" });
+    status.onClickEvent((event) => {
+      menu.showAtMouseEvent(event);
+    });
+    this.statusBarEntry = status;
+  }
+  removeStatusStatusBarEntry() {
+    if (!this.statusBarEntry)
+      return;
+    this.statusBarEntry.remove();
+    this.statusBarEntry = void 0;
   }
   destroy() {
-    this._undoManager.off("stack-item-added", this._onStackItemAdded);
-    this._undoManager.off("stack-item-popped", this._onStackItemPopped);
-    this._undoManager.removeTrackedOrigin(this.syncConf);
-  }
-};
-var yUndoManager = cmView3.ViewPlugin.fromClass(YUndoManagerPluginValue);
-var undo = ({ state, dispatch }) => state.facet(yUndoManagerFacet).undo() || true;
-var redo = ({ state, dispatch }) => state.facet(yUndoManagerFacet).redo() || true;
-
-// node_modules/y-codemirror.next/src/index.js
-var yCollab = (ytext, awareness, { undoManager = new UndoManager(ytext) } = {}) => {
-  const ySyncConfig = new YSyncConfig(ytext, awareness);
-  const plugins = [
-    ySyncFacet.of(ySyncConfig),
-    ySync
-  ];
-  if (awareness) {
-    plugins.push(
-      yRemoteSelectionsTheme,
-      yRemoteSelections
-    );
-  }
-  if (undoManager !== false) {
-    plugins.push(
-      yUndoManagerFacet.of(new YUndoManagerConfig(undoManager)),
-      yUndoManager,
-      cmView4.EditorView.domEventHandlers({
-        beforeinput(e, view) {
-          if (e.inputType === "historyUndo")
-            return undo(view);
-          if (e.inputType === "historyRedo")
-            return redo(view);
-          return false;
-        }
-      })
-    );
-  }
-  return plugins;
-};
-
-// src/editor.ts
-var import_state = require("@codemirror/state");
-
-// src/yjs.ts
-var yjs_default = yjs_exports;
-
-// src/editor.ts
-var import_state2 = require("@codemirror/state");
-var usercolors = [
-  { dark: "#30bced", light: "#30bced33" },
-  { dark: "#6eeb83", light: "#6eeb8333" },
-  { dark: "#ffbc42", light: "#ffbc4233" },
-  { dark: "#ecd444", light: "#ecd44433" },
-  { dark: "#ee6352", light: "#ee635233" },
-  { dark: "#9ac2c9", light: "#9ac2c933" },
-  { dark: "#8acb88", light: "#8acb8833" },
-  { dark: "#1be7ff", light: "#1be7ff33" }
-];
-var userColor = usercolors[randomUint32() % usercolors.length];
-var addExtensionToEditor = (id2, settings, editor) => {
-  const extension = createExtensionForSession(id2, settings);
-  const compartment = new import_state.Compartment();
-  const editorView = editor.cm;
-  if (!activeEditors[id2]) {
-    activeEditors[id2] = [];
-  }
-  activeEditors[id2].push({
-    compartment,
-    editor: editorView
-  });
-  editorView.dispatch({
-    effects: import_state2.StateEffect.appendConfig.of(compartment.of(extension))
-  });
-};
-var removeExtensionsForSession = (id2) => {
-  const actives = activeEditors[id2];
-  if (!actives)
-    return;
-  for (const active of actives) {
-    active.editor.dispatch({
-      effects: active.compartment.reconfigure([])
-    });
-  }
-};
-var createExtensionForSession = (id2, settings) => {
-  const syncData = getOrCreateSyncData(id2, settings);
-  const undoManager = new yjs_default.UndoManager(syncData.content);
-  syncData.provider.awareness.setLocalStateField("user", {
-    name: settings.name,
-    color: userColor.dark,
-    colorLight: userColor.light
-  });
-  return yCollab(syncData.content, syncData.provider.awareness, { undoManager });
-};
-
-// src/statusbar.ts
-var import_obsidian5 = require("obsidian");
-var addStatus = (file, plugin, settings) => {
-  const id2 = syncedDocs[file.path];
-  if (!id2)
-    return;
-  const menu = new import_obsidian5.Menu();
-  menu.addItem((item) => {
-    item.setTitle("Copy link");
-    item.onClick(() => {
-      navigator.clipboard.writeText(settings.basePath + id2);
-      showNotice("Link copied to clipboard.");
-    });
-  });
-  menu.addItem((item) => {
-    item.setTitle("Stop shared session");
-    item.onClick(() => {
-      stopSession(file);
-    });
-  });
-  const status = plugin.addStatusBarItem();
-  status.addClass("mod-clickable");
-  status.createEl("span", { text: "Sharing '" + file.name + "'" });
-  status.onClickEvent((event) => {
-    menu.showAtMouseEvent(event);
-  });
-  statusBars[id2] = status;
-};
-var removeStatus = (id2) => {
-  const status = statusBars[id2];
-  if (!status)
-    return;
-  delete statusBars[id2];
-  status.remove();
-};
-
-// src/session.ts
-var startSession = async (view, file, plugin) => {
-  const settings = await getSettings(plugin);
-  const editor = view.editor;
-  const id2 = initDocument(editor.getValue(), settings);
-  syncedDocs[file.path] = id2;
-  notifyOnCollaboratorsChanged(id2);
-  addExtensionToEditor(id2, settings, editor);
-  navigator.clipboard.writeText(settings.basePath + id2);
-  showNotice("Session started for " + file.name + ". Link copied to Clipboard.");
-  pinLeaf(view.leaf);
-  addStatus(file, plugin, settings);
-};
-var joinSession = async (url, plugin) => {
-  const id2 = url.split("/").pop();
-  if (!id2 || !id2.match("^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$")) {
-    showNotice("No valid peerdraft link");
-    return;
-  }
-  if (syncObjects[id2]) {
-    showNotice("Sync already active");
-    return;
-  }
-  const fileData = await createDocumentWithSyncId(id2, plugin.app);
-  if (!fileData) {
-    showNotice("Error: Could not create file for session.");
-    return;
-  }
-  syncedDocs[fileData.file.path] = fileData.id;
-  const settings = await getSettings(plugin);
-  const syncObj = initDocumentToJoin(fileData.id, settings);
-  syncObj.doc.once("update", async () => {
-    const leaf = await openFileInNewTab(fileData.file, plugin.app.workspace);
-    let editor;
-    try {
-      editor = leaf.view.editor;
-    } catch (e) {
+    if (!this.isPermanent) {
+      showNotice("Stopping collaboration on " + this.path + ".");
     }
-    if (!editor)
-      return;
-    editor.setValue(syncObj.content.toString());
-    notifyOnCollaboratorsChanged(fileData.id);
-    addExtensionToEditor(fileData.id, settings, editor);
-    addStatus(fileData.file, plugin, settings);
-    showNotice("Joined Session in " + fileData.file.name + ".");
-    pinLeaf(leaf);
-    const owner = syncObj.doc.getText("owner");
-    syncObj.provider.awareness.on("update", (msg) => {
-      var _a;
-      const removed = (_a = msg.removed) != null ? _a : [];
-      if (!removed || removed.length < 1)
-        return;
-      const removedStrings = removed.map((id3) => {
-        return id3.toFixed(0);
+    for (const key of this._extensions.keys) {
+      this.removeExtensionFromLeaf(key);
+    }
+    this._extensions.destroy();
+    this.stopWebRTCSync();
+    this.stopWebSocketSync();
+    this.stopLocalSync();
+    this.removeStatusStatusBarEntry();
+    _SharedDocument._sharedDocuments.splice(_SharedDocument._sharedDocuments.indexOf(this), 1);
+  }
+};
+var SharedDocument = _SharedDocument;
+SharedDocument._sharedDocuments = [];
+SharedDocument._userColor = usercolors[randomUint32() % usercolors.length];
+
+// src/ui/enterText.ts
+var import_obsidian6 = require("obsidian");
+var EnterTextModal = class extends import_obsidian6.Modal {
+  constructor(app, opts, cb) {
+    super(app);
+    this.cb = cb;
+    this.result = opts.initial;
+    this.opts = opts;
+  }
+  async onOpen() {
+    new import_obsidian6.Setting(this.contentEl).setName(this.opts.header).setHeading();
+    new import_obsidian6.Setting(this.contentEl).addText((text2) => {
+      text2.setValue(this.result.text), text2.onChange((value) => {
+        this.result.text = value;
       });
-      if (removedStrings.includes(owner.toString())) {
-        showNotice("Shared session stopped by owner");
-        stopSession(fileData.file);
-      }
+      text2.inputEl.onkeydown = (ev) => {
+        if (ev.key === "Enter") {
+          ev.preventDefault();
+          this.close();
+          this.cb(this.result);
+        }
+      };
+    }).setDesc(this.opts.description);
+    const buttons = new import_obsidian6.Setting(this.contentEl);
+    buttons.addButton((button) => {
+      button.setButtonText("Cancel");
+      button.onClick(() => {
+        this.close();
+      });
     });
+    buttons.addButton((button) => {
+      button.setButtonText("OK");
+      button.setCta();
+      button.onClick(() => {
+        this.close();
+        this.cb(this.result);
+      });
+    });
+  }
+};
+var promptForText = (app, opts) => {
+  return new Promise((resolve2) => {
+    new EnterTextModal(app, opts, (cb) => {
+      resolve2(cb);
+    }).open();
   });
 };
-var stopSession = (file) => {
-  const id2 = syncedDocs[file.path];
-  if (!id2)
-    return;
-  delete syncedDocs[file.path];
-  stopSync(id2);
-  removeStatus(id2);
-  removeExtensionsForSession(id2);
-  showNotice("Session stopped for " + file.name);
+var promptForURL = (app) => {
+  return promptForText(app, {
+    description: "Enter the URL you received to start collaborating.",
+    header: "Enter your Peerdraft URL",
+    initial: {
+      text: ""
+    }
+  });
 };
-var notifyOnCollaboratorsChanged = (id2) => {
-  const { provider } = syncObjects[id2];
-  if (!provider)
-    return;
-  provider.awareness.on("update", (msg) => {
-    var _a;
-    const added = (_a = msg.added) != null ? _a : [];
-    if (!added || added.length == 0)
-      return;
-    const states = provider.awareness.getStates();
-    for (const key of added) {
-      const peer = states.get(key);
-      if (peer) {
-        showNotice(`${peer.user.name} joined`);
-      }
+var promptForName = (app) => {
+  return promptForText(app, {
+    description: "This name will be shown to your collaborators",
+    header: "What's your name?",
+    initial: {
+      text: ""
     }
   });
 };
 
-// src/main.ts
-var PeerDraftPlugin = class extends import_obsidian6.Plugin {
+// src/cookie.ts
+var import_obsidian7 = require("obsidian");
+var import_remote = require("@electron/remote");
+var prepareCommunication = async (plugin) => {
+  const settings = await getSettings(plugin);
+  if (import_obsidian7.Platform.isDesktopApp) {
+    await import_remote.session.defaultSession.cookies.set({ url: "https://www.peerdraft.app", "name": "oid", "value": settings.oid, "domain": "www.peerdraft.app", "path": "/", "secure": true, "httpOnly": true, "sameSite": "no_restriction" });
+  } else if (import_obsidian7.Platform.isMobileApp) {
+    const signalingURL = new URL(settings.signaling);
+    signalingURL.searchParams.append("oid", settings.oid);
+    settings.signaling = signalingURL.toString();
+    await saveSettings(settings, plugin);
+  }
+};
+
+// src/peerdraftPlugin.ts
+var PeerdraftPlugin = class extends import_obsidian8.Plugin {
   async onload() {
     const plugin = this;
     await migrateSettings(plugin);
     await prepareCommunication(plugin);
-    await refreshSubscriptionData(plugin);
+    plugin.settings = await getSettings(plugin);
+    plugin.pws = new PeerdraftRecord();
+    plugin.serverAPI = new ServerAPI({
+      oid: plugin.settings.oid,
+      permanentSessionUrl: plugin.settings.sessionAPI
+    });
+    plugin.pws.on("add", (key, leaf) => {
+      leaf.on("changePath", (oldPath) => {
+        var _a;
+        const doc2 = SharedDocument.findByPath(oldPath);
+        if (doc2) {
+          doc2.removeExtensionFromLeaf(key);
+          const leafs = getLeafsByPath(oldPath, plugin.pws);
+          if (leafs.length === 0 && !doc2.isPermanent) {
+            doc2.destroy();
+          }
+        }
+        (_a = SharedDocument.findByPath(leaf.path)) == null ? void 0 : _a.addExtensionToLeaf(key);
+      });
+    });
+    plugin.pws.on("delete", (key, leaf) => {
+      var _a;
+      const doc2 = (_a = SharedDocument.findByPath(leaf.path)) == null ? void 0 : _a.removeExtensionFromLeaf(key);
+      const leafs = getLeafsByPath(leaf.path, plugin.pws);
+      if (leafs.length === 0) {
+        const doc3 = SharedDocument.findByPath(leaf.path);
+        if (doc3 && !doc3.isPermanent) {
+          doc3.destroy();
+        }
+      }
+      leaf.destroy();
+    });
+    plugin.permanentShareStore = new PermanentShareStore(plugin.settings.oid);
+    plugin.app.workspace.onLayoutReady(
+      async () => {
+        var _a;
+        const permanentlySharedDocs = await plugin.permanentShareStore.getAllDocs();
+        for (const doc2 of permanentlySharedDocs) {
+          (_a = SharedDocument.fromPermanentShareDocument(doc2, plugin)) == null ? void 0 : _a.startWebSocketSync();
+        }
+        updatePeerdraftWorkspace(plugin.app.workspace, plugin.pws);
+        plugin.registerEvent(plugin.app.workspace.on("layout-change", () => {
+          updatePeerdraftWorkspace(plugin.app.workspace, plugin.pws);
+        }));
+      }
+    );
     plugin.addCommand({
-      id: "start-session-with-active-document",
-      name: "Start shared session",
+      id: "share",
+      name: "Start working together on this document",
       checkCallback(checking) {
-        const view = plugin.app.workspace.getActiveViewOfType(import_obsidian6.MarkdownView);
+        const view = plugin.app.workspace.getActiveViewOfType(import_obsidian8.MarkdownView);
         if (!view)
           return false;
         const file = view.file;
         if (!file)
           return false;
-        const sharedAlready = syncedDocs[file.path];
-        if (sharedAlready)
+        const doc2 = SharedDocument.findByPath(file.path);
+        if (doc2)
           return false;
         if (checking)
           return true;
-        startSession(view, file, plugin);
+        SharedDocument.fromView(view, plugin, { isPermanent: false }).then((doc3) => {
+          if (!doc3) {
+            return console.log("ERROR creating sharedDoc");
+          }
+        });
       }
     });
     plugin.addCommand({
       id: "stop-session-with-active-document",
-      name: "Stop shared session",
+      name: "Stop working together on this document",
       editorCheckCallback: (checking, editor, ctx) => {
         const file = ctx.file;
         if (!file)
           return false;
-        const id2 = syncedDocs[file.path];
-        if (!id2)
+        const doc2 = SharedDocument.findByPath(file.path);
+        console.log(doc2);
+        if (!doc2 || doc2.isPermanent)
           return false;
         if (checking)
           return true;
-        stopSession(file);
+        doc2.destroy();
       }
     });
     plugin.addCommand({
-      id: "join-session",
-      name: "Join shared session",
+      id: "join",
+      name: "Join session and add document from someone else",
       callback: async () => {
-        var _a;
-        const input = await promptForMultipleTextInputs(this.app, [{
-          description: "Enter your share URL",
-          name: "URL"
-        }]);
-        if (!input || input.length < 1)
-          return;
-        const url = (_a = input.pop()) == null ? void 0 : _a.value;
-        if (!url)
-          return;
-        joinSession(url, this);
+        const url = await promptForURL(plugin.app);
+        if (url && url.text) {
+          await SharedEntity.fromShareURL(url.text, plugin);
+        }
       }
     });
-    plugin.register(around(import_obsidian6.MarkdownView.prototype, {
-      onUnloadFile(next) {
-        return async function(file) {
-          stopSession(file);
-          return next.call(this, file);
-        };
+    this.registerEvent(this.app.vault.on("rename", (file, oldPath) => {
+      if (file instanceof import_obsidian8.TFile) {
+        const doc2 = SharedDocument.findByPath(oldPath);
+        if (doc2) {
+          doc2.setNewFileLocation(file);
+        }
       }
     }));
-    this.app.vault.on("rename", (file, oldPath) => {
-      if (!syncedDocs[oldPath])
-        return;
-      syncedDocs[file.path] = syncedDocs[oldPath];
-    });
     const settingsTab = createSettingsTab(plugin);
     const settings = await getSettings(plugin);
     if (!settings.name) {
-      createSettingsModal(plugin).open();
+      const name = await promptForName(plugin.app);
+      if (name && name.text) {
+        this.settings.name = name.text;
+        saveSettings(this.settings, plugin);
+      }
     }
     plugin.addSettingTab(settingsTab);
   }
   onunload() {
-    Object.keys(syncedDocs).forEach((path2) => {
-      const file = this.app.vault.getAbstractFileByPath(path2);
-      if (!file || !(file instanceof import_obsidian6.TFile))
-        return;
-      stopSession(file);
+    SharedDocument.getAll().map((doc2) => {
+      doc2.destroy();
     });
   }
 };
+
+// src/main.ts
+var main_default = PeerdraftPlugin;
 /*! Bundled license information:
 
 simple-peer/simplepeer.min.js:
