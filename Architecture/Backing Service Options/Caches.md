@@ -93,3 +93,4 @@ Implementing an expiration policy is crucial. It ensures timely removal of expir
 Eviction Policy:Once the cache is full, any requests to add items to the cache might cause existing items to be removed. This is called cache eviction. Least-recently-used(LRU) is the most popular cache eviction policy. Other eviction policies, such as the Least Frequently Used (LFU) or First in First Out (FIFO), can be adopted to satisfy different use cases. 
 
 
+![[Cache going wrong.gif]]
