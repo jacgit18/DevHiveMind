@@ -56,8 +56,8 @@ dYATnB4R: [[Algorithms & Data Structures/LeetCode Snippets/Untitled.md#Code Sect
 	"elements": [
 		{
 			"type": "embeddable",
-			"version": 310,
-			"versionNonce": 1947432752,
+			"version": 311,
+			"versionNonce": 1947432753,
 			"isDeleted": false,
 			"id": "dYATnB4R",
 			"fillStyle": "hachure",
@@ -100,7 +100,7 @@ dYATnB4R: [[Algorithms & Data Structures/LeetCode Snippets/Untitled.md#Code Sect
 		}
 	],
 	"appState": {
-		"theme": "light",
+		"theme": "dark",
 		"viewBackgroundColor": "#ffffff",
 		"currentItemStrokeColor": "#1e1e1e",
 		"currentItemBackgroundColor": "transparent",
@@ -114,10 +114,10 @@ dYATnB4R: [[Algorithms & Data Structures/LeetCode Snippets/Untitled.md#Code Sect
 		"currentItemTextAlign": "left",
 		"currentItemStartArrowhead": null,
 		"currentItemEndArrowhead": "arrow",
-		"scrollX": 855.1095952220855,
-		"scrollY": 776.0644703470165,
+		"scrollX": 662.4487697262296,
+		"scrollY": 756.5894277614871,
 		"zoom": {
-			"value": 1.1527855358722412
+			"value": 1.4500000000000002
 		},
 		"currentItemRoundness": "round",
 		"gridSize": null,
