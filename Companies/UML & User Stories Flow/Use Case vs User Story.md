@@ -26,6 +26,10 @@ User stories are typically short, informal descriptions of a feature or function
 Use cases are more detailed and structured descriptions of how a system interacts with an external entity, usually a user, to achieve a specific goal. They include a main success scenario and alternative scenarios to cover different paths the system may take and are often presented in a formalized format with step-by-step actions and potential variations. Use cases are also part of various software development methodologies, including both Agile and traditional approaches.
 
 ![[Class Cases Robust P1.svg]]
+
+![[Class Cases Robust P2.svg]]
+
+![[Class Cases Robust P3.svg]]
 ### Use Case Structure:  
 1. **Title:** Describes the goal of the use case.  
 2. **Actors:** Identifies the individuals or systems interacting with the system.  
