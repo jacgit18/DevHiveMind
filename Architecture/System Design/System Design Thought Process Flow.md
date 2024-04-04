@@ -13,19 +13,16 @@ tags:
 author:
   - jacgit18
   - chatgpt
-Comments: >-
-  Still deciding what else makes sense to mention I might convert to a mind map
-  or something visual like some type of decision tree.
-Purpose: >-
-  This documentation discusses order to talk about system in system design
-  interview.
+Comments: Still deciding what else makes sense to mention I might convert to a mind map or something visual like some type of decision tree.
+Purpose: This documentation discusses order to talk about system in system design interview.
 Status: Refinement
 Started: 2024-01-04T00:00:00.000Z
 EditDate: 2024-03-16T00:00:00.000Z
 Version: 3.0.0
-Relates: '[[System Design interview Scope]]'
+Relates: "[[System Design interview Scope]]"
 Peer Reviewed: 0
-dg-publish: null
+dg-publish: 
+excalidraw-autoexport: svg
 ---
 
 ![[System design core concepts.gif]]
