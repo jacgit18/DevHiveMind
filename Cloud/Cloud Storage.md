@@ -18,6 +18,8 @@ a core service that serves as a robust storage solution for storing files as obj
 
 When you create a bucket in S3, you establish a unit of storage with configurable settings. Any file dropped into the bucket can inherit these settings, ensuring consistency and ease of management. Moreover, S3 allows for distributing data across different availability zones, enhancing redundancy and resilience. This also enables URL access for the stored files, facilitating easy retrieval.
 
+![[obj store.png]]
+
 One of the key features of Amazon S3 is its support for configurable rules for Data lifecycle management, aiding in governance and optimizing storage costs.
 
 S3 offers various storage classes to cater to different use cases. These include:
