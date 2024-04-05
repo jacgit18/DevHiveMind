@@ -4,7 +4,7 @@
   "connectAPI": "https://www.peerdraft.app/subscription/connect",
   "sessionAPI": "https://www.peerdraft.app/session",
   "sync": "wss://www.peerdraft.app/sync",
-  "signaling": "wss://www.peerdraft.app/signal?oid=429dcb9d-b655-45be-a850-270d07f800bb",
+  "signaling": "wss://www.peerdraft.app/signal",
   "name": "Joshua",
   "oid": "429dcb9d-b655-45be-a850-270d07f800bb",
   "plan": {

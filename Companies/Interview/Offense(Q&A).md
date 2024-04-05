@@ -22,7 +22,11 @@ dg-publish:
 **Embracing the power of a reverse interview ask about things like:**
 *Manager Dynamics:*
 - What aspects do they appreciate or find challenging about their current manager?
+- What do you like about working here?
+- What would I expect in my first 30, 60, and 90 days?
+- What would it be if you could change one thing about your company’s culture?
 - Could you shed light on the strengths and weaknesses of my potential future manager?
+- What teams would I interface with within this role?
 
 *Team Dynamics:*
 - Who was the most recent team member to receive a promotion, and what qualities contributed to their advancement?
