@@ -21,7 +21,7 @@ EditDate: 2024-03-16T00:00:00.000Z
 Version: 4.0.0
 Relates: "[[System Design interview Scope]]"
 Peer Reviewed: 0
-dg-publish: 
+dg-publish: true
 excalidraw-autoexport: svg
 ---
 
@@ -43,7 +43,6 @@ For more info read
 
 Throughout the designing of the system you can discuss [[Fault Tolerance]] which refers to the system's resilience against failures, errors, or faults, ensuring uninterrupted operation and maintaining user experience by reducing system downtime. It encompasses proactive measures to handle failures gracefully and sustain availability. This principle applies universally across hardware, software, networks, and systems architecture. At its essence, fault tolerance anticipates failures as inevitable and seeks to minimize their impact through proactive strategies it also applies at and between each system component. 
 
-![[System Design Thought Process Flow]]
 ### Step 1: Requirements Gathering 
 > **Establish a Understanding and Design Scope of problem (3 - 10 minutes)
 
