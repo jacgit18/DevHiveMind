@@ -36,9 +36,11 @@ The identification and prioritization of themes are crucial in guiding the devel
    - Alternative actions, potential risks, and hurdles.
    - Requirements must encompass specific conditions, focus on a defined subject, articulate vital actions, adhere to established business rules, and culminate in an outcome that aligns seamlessly with business objectives.
 
-### **Functional and Non-Functional Requirements:**
-   - Functional requirements describe how the system must work.
-   - Non-functional requirements specify how the system should perform.
+### Requirement Types
+  
+- **Functional requirements** outline what the system must do or the specific functions it must perform to satisfy the user's needs or business requirements. These requirements describe the system's behavior and functionality, such as the actions it should take in response to user inputs.
+
+- **Non-functional requirements** specify the qualities or attributes that the system should possess, such as performance, security, reliability, usability, and scalability. They focus on how the system should perform rather than what it should do, providing criteria for evaluating the system's overall quality and effectiveness.
 
 
 ### **Understanding Stakeholder Needs:**
