@@ -53,54 +53,15 @@ During this phase, it's pivotal to establish the system's scope while gathering 
 For instance, when tasked with designing an Instagram Reels feature, it's essential to deconstruct the problem into distinct use cases, delineating interactions among system components. Key requirements such as anticipated traffic, data volume, latency, and scalability should be identified. Inquire about the [[Userbase]] type, as this insight aids in resource estimation and governance considerations, especially regarding scalability implications, such as underage user base scenarios. Understanding potential constraints and bottlenecks that may emerge with an expanding user base is imperative. This insight informs decisions regarding database considerations, determining whether a NoSQL or SQL database aligns with specific needs and data characteristics.
 
 In designing this system, it's essential to consider its limitations, scale, and constraints in general but also in the interview context were they may want you to consider and work around these things. We should discuss factors such as the maximum number of reads and writes the system can handle efficiently, network request throughput, service usage (e.g., accounts created per unit time), and other relevant metrics to ensure scalability and performance. You should always ask for clarification and ask if what you have listed out is good enough [[Specifying Scope indepth |scope]] of functionality to focus on. 
-#### [[Use Case vs User Story |User Story]] Example:
->[!important]
->Creating stories helps with building data model, also if dealing with complex feature might want to consider using Use Cases over Stories.
-1. As a user I want to upload picture and videos to share.
-2. As a user I want to view uploaded photos and videos.
-3. As a user I want to follow, like, and comment on posts.
-4. As a user I want to see a feed containing posts from friends.
-5. As a user I want to block or unfollow other users.
 
 ### Step 2: High Level Design(15 - 25 minutes)
 >[!important]
 When crafting your design, prioritize a forward-thinking approach that anticipates future functionality. Ensure flexibility to seamlessly accommodate expansions and enhancements. Focus on constructing a foundation that facilitates scalability, simplifying the integration of additional features down the line. Adopt a holistic mindset, anticipating potential modifications and advancements, and ensure the architecture remains adaptable to evolving requirements. This proactive approach fosters a more sustainable and extensible system over time.
 
-Database > Backend/Services > API Gateway(Custom built not 3rd party)/endpoints > Client
+**Database > Backend > [[System Design Thought Process Flow#API Gateway |API Gateway]] > Client
 
 Create an Entity Relationship Diagram (ERD) to define clear relationships and [[Schema Design]] 
-you can also discuss table [[Normalization & Denormalization]] when discussing optimization later. But once that is done you can come up with general feature endpoints.
-
-#### Data Design & Database Architecture
-When [[Choosing Database]] type, consider whether you're dealing with [[Industry Structured & Unstructured Data |Structured or Unstructured Data]] then come up with a short list of databases to pick from. For instance, if the domain focuses on medical data, it's likely structured, favoring SQL databases. Conversely, media-related data tends to be unstructured, making NoSQL databases more suitable. all these factors also include database architecture can influence throughput in terms of number request, database transactions(`collection of queries`), and queries made.  
-
-
-You can talk governance like [[Data Retention Target]] and [[Database data governance]] compliance, Infrastructure may include tools and processes to enforce compliance with regulatory requirements and organizational policies, ensuring data security and legal compliance. 
-
-#### API 
-API Gateway is a intermediary between backend and client 3rd party API would wouldn't be involved here or more so it would be leveraged within backend or client side depending on requirements  
-
-[[API Gateway & Middleware Implementation]]
-
-When choosing an API, or other things like libraries, and frameworks you should prioritize alignment with your business requirements, including cost, long-term support, and desired functionality. Consider the [[API Provided Services |API specific services]] you need like maybe you need something like data retrieval, authentication, and file management. Evaluate [[API Architecture Styles]] like GraphQL, [[gRPC]], or REST to ensure compatibility with your system's needs. REST is the typical style used so you can default to that only focus on API,s needed also define API input params request and response.
-
-User hits load balancer routes traffic to api gateway endpoint hits the backend server then some database query is triggered doing some read or write that is direct towards some main db or replicated db it depends on db architecture. 
-
-**Request:** 
-
-| Field     | Description                                        | Type   |
-| --------- | -------------------------------------------------- | ------ |
-| Latitude  | Lat of given location                              | double |
-| Longitude | Long of given location                             | double |
-| Radius    | **Optional**: Default is 500 meters(about 3 miles) | int    |
-**Response:** 
-```json
-{
-"total":10,
-"buisnesses": [{buisness object}]
-}
-```
-
+you can also discuss table [[Normalization & Denormalization]] when discussing optimization later. But once that is done you can come up with a list of general feature endpoints then come up with estimations.
 
 ##### Storage Estimation Examples
 > Keep estimation simple focus on storage needed and not to much on queries especially if there are other critical things to discuss. 
@@ -134,36 +95,57 @@ User hits load balancer routes traffic to api gateway endpoint hits the backend 
 You can leverage ChatGPT to perform a CAP theorem analysis and a Kepner-Tregoe decision analysis, using weighted decisions to identify a concise list of choices for databases or other relevant technologies. This approach allows for a systematic evaluation of options based on their consistency, availability, and partition tolerance, as well as other criteria important to your decision-making process. By combining these analytical methods, you can efficiently narrow down your options and make informed decisions that align with your specific needs and preferences.
 
 ### Step 3: Design Deep Dive (15 - 25 minutes)
-###### Potential Start for overall Architecture 
-If you're aiming to quickly establish your infrastructure, consider sticking to a cloud-heavy Software as a Service (SaaS) approach initially. This approach offers several benefits, including the ability to leverage built-in monitoring, logging, and performance statistics to understand real-world system performance. By starting with cloud-heavy SaaS solutions, you can swiftly deploy your infrastructure and gain valuable insights into its performance and usage patterns. With this information in hand, you can then transition to other potential, potentially more cost-effective options based on your specific needs and requirements. This approach allows for agility and flexibility, enabling you to optimize your infrastructure over time while ensuring a smooth and efficient initial setup.
 
 #### Overall Architecture
-In a system design choosing the right [[Impact of Architectural Styles |Architectural Styles]] is important think about what is needed and purpose of the style. In addition to that you can leverage [[When to use Domain-Driven Design |Domain Driven Design]] with some of the different styles depending on domain complexity determines weather it is necessary to use meaning the more simpler the domain is the less need for domain driven design in my opinion. Also what [[IV Backing services]] would you leverage and why also consider [[Test Driven Development]] depends on your priorities. Side note things like Test Driven and Domain design are meant to be used alongside architectural styles.
+When determining overall Architecture if you're aiming to quickly establish your infrastructure, consider sticking to a cloud-heavy SAAS approach initially. 
+
+This approach offers several benefits, including the ability to leverage built-in monitoring, logging, and performance statistics to understand real-world system performance. By starting with cloud-heavy SAAS solutions, you can swiftly deploy your infrastructure and gain valuable insights into its performance and usage patterns. 
+
+With this information in hand, you can then transition to other potential, potentially more cost-effective options based on your specific needs and requirements. This approach allows for agility and flexibility, enabling you to optimize your infrastructure over time while ensuring a smooth and efficient initial setup.
+
+When considering open source technologies like for example Redis, it's essential to evaluate the longevity of their open source status. Some technologies, like Redis, have undergone changes in licensing or governance, potentially affecting their open source nature. It's prudent to assess how such changes may impact your long-term use and support of the technology within your infrastructure and whether it aligns with your organization's values and goals. Additionally, monitoring community activity, development trends, and vendor support can help gauge the ongoing viability of open source projects.
 
 
-In the realm of architectural styles, popular ones include [[Microservices VS Monolithic Architecture |Microservices]] which can also help with overall system maintainability and scalability improving response times, often paired with [[Eureka Service]] in Java-based applications, and monolithic architecture, representing a centralized system. Monolithic architecture involves building the entire application as a single, indivisible unit, typically deployed on a single server or a closely connected set of servers. 
+##### [[IV Backing services]]
 
-Microservices, are very good for segregating services and responsibilities allowing for both stateless and stateful services to work together. This concept is intertwined with [[Stateless & Statefull Processes]], which aligns with the [[VIII Concurrency |Concurrency factor of the 12-factor app]]. Furthermore, this concurrency factor intersects with [[Distributed Locking]], which can be implemented using various technologies such as [[ZooKeeper]] and Redis. Also stateless architecture may be more database query heavy relative to stateful architecture. microservices also tend to each have there own databases along with things like there own [[Microservice & API gateway |individual API Gateway]] .
+###### [[Choosing Database]] 
+When deciding on database you should consider whether you're dealing with [[Industry Structured & Unstructured Data |Structured or Unstructured Data]] then come up with a short list of databases to pick from. For instance, if the domain focuses on medical data, it's likely structured, favoring SQL databases. Conversely, media-related data tends to be unstructured, making NoSQL databases more suitable. all these factors also include database architecture can influence throughput in terms of number request, database transactions(`collection of queries`), and queries made.  
+
+Then you can discuss governance like [[Data Retention Target]] and [[Database data governance]] compliance, Infrastructure may include tools and processes to enforce compliance with regulatory requirements and organizational policies, ensuring data security and legal compliance. 
+
+###### API Gateway
+An API Gateway serves as a custom intermediary or [[API Gateway & Middleware Implementation|middleware]] between the backend and client applications, facilitating the exposure of specific routes or functionalities from the backend. Alternatively, you can utilize a third-party API to expose backend server routes. In this setup, when a user sends a request, it first reaches the load balancer, which then directs the traffic to the API Gateway endpoint. The API Gateway then communicates with the backend server, which may trigger database queries involving read or write operations. These database queries are directed towards either a main database or a replicated database, depending on the architecture of the database system in use.
+
+###### Third Party API
+When choosing an API, or other things like libraries, and frameworks you should prioritize alignment with your business requirements, including cost, long-term support, and desired functionality. Consider the [[API Provided Services |API specific services]] you need like maybe you need something like data retrieval, authentication, and file management. Evaluate [[API Architecture Styles]] like GraphQL, [[gRPC]], or REST to ensure compatibility with your system's needs. REST is the typical style used so you can default to that only focus on API,s needed also define API input params request and response.
 
 
-When it comes to fault tolerance there are many ways to improve including [[Circuit breaker pattern relationship with fault tolerance |Circuit Breaker Design Pattern]]  which considered a stability pattern by monitoring interactions between services and, when a certain threshold of failures is reached, temporarily "opens" the circuit to prevent further requests from being sent. 
+###### Cloud
 
 Depending on the Architectural Styles you then should talk and identify major components of your system like [[Physical Servers vs Virtual Servers |physical or virtual servers]] which tend to be on premises or on cloud you can talk about the [[Benefits of cloud]] talking about cloud  in terms of outsourcing functionality or infrastructure using different service architecture ranging from IAAS to SAAS and benefiting from things like availability zones and other cloud services that add fault tolerance to the overall system also do a cost benefit analyst. 
 
+If you expect system to process high traffic consider this [[High Traffic Architecture]].
+
 When it comes to cloud services like AWS there are a broad range of services like [[Messaging systems]]like Messing queue to handle a line actions like video uploads from multiples users or process user interactions (e.g., likes, dislikes, views), and [[Caches]] which if you implement locally you can improve response time and also synchronize data with a CDN to improve content delivery performance. Data is usually sent to the user from the CDN's cache if it exists there else requested content is not available in the CDN's cache, then the CDN retrieves it from the original cache or origin server and caches it locally for future requests but you should keep caching policies in my mind.
 
-You can also discuss the usage of [[Monitoring & Observability |monitoring/logging for metrics]] talking around up-time and down-time and using [[Chaos Engineering]] in order to identify weakness in the overall system by injecting controlled failures and disruption into a system or access system capacity to reevaluate things bandwidth and other resources needs. You have things like `Amazon MQ`, `Amazon ElastiCache`, and `Amazon CloudWatch` which could be very beneficial because of community support and documentation available. Alternatively if you don't want cloud solutions because of cost you can use things like [[Apache Kafka]], `Redis` for caching, or something like `Prometheus`. You also have services for things like static [[File System Storage]] services like [[Cloud Storage#Amazon S3 |Amazon S3]] which can handle thing like data replication also can be used with [[Content Delivery Network |CDN]] services like `Amazon Cloudfront` which also supports Dynamic content or alternatives like `Cloudflare`, or `Fastly` improving traffic and fault tolerance. 
-
-> When it comes to technologies like if you want to use a lot of open source technologies you should consider longevity of open source technology staying open source like Redis which has changed. 
-
-If you expect system to process high traffic consider this [[High Traffic Architecture]].
+You can also discuss the usage of[[Monitoring & Observability |monitoring/logging for metrics]] talking around up-time and down-time and using [[Chaos Engineering]] in order to identify weakness in the overall system by injecting controlled failures and disruption into a system or access system capacity to reevaluate things bandwidth and other resources needs. You have things like `Amazon MQ`, `Amazon ElastiCache`, and `Amazon CloudWatch` which could be very beneficial because of community support and documentation available. Alternatively if you don't want cloud solutions because of cost you can use things like [[Apache Kafka]], `Redis` for caching, or something like `Prometheus`. You also have services for things like static [[File System Storage]] services like [[Cloud Storage#Amazon S3 |Amazon S3]] which can handle thing like data replication also can be used with [[Content Delivery Network |CDN]] services like `Amazon Cloudfront` which also supports Dynamic content or alternatives like `Cloudflare`, or `Fastly` improving traffic and fault tolerance. 
 
 When it comes to all these components you also want keep [[Data Flow]] in mind as well like all the different sources of data, the processing and transformation, storage, transportation and communication. Along with things like versioning, change management, and monitoring.  
 
+Besides that you should consider what technologies your  picking based on the ability to potentially implement a future [[Migration Plan]] like sometimes the technologies you start out with doesn't make sense or you want to manage cost of your system.
+
+
+##### [[Impact of Architectural Styles |Architectural Styles]] 
+In a system design choosing the right architectural styles, is important think about what is needed and purpose of the style. In addition to that you can leverage [[When to use Domain-Driven Design |Domain Driven Design]] with some of the different architectural styles depending on domain complexity determines weather it is necessary to use it meaning the more simpler the domain is the less need for domain driven design in my opinion. You can also use [[Test Driven Development]] it just depends on your priorities. Side note things like Test Driven and Domain design are meant to be used alongside architectural styles.
+
+In the realm of architectural styles, popular ones include [[Microservices VS Monolithic Architecture |Microservices]] which can also help with overall system maintainability and scalability improving response times, often paired with [[Eureka Service]] in Java-based applications, and monolithic architecture, representing a centralized system. Monolithic architecture involves building the entire application as a single, indivisible unit, typically deployed on a single server or a closely connected set of servers. 
+
+Microservices, are very good for segregating services and responsibilities allowing for both stateless and stateful services to work together. This concept is intertwined with [[Stateless & Statefull Processes]], which aligns with the [[VIII Concurrency |Concurrency factor of the 12-factor app]]. Furthermore, this concurrency factor intersects with [[Distributed Locking]], which can be implemented using various technologies such as [[ZooKeeper]] and Redis. Also stateless architecture may be more database query heavy relative to stateful architecture. Microservices tend to have each of there own databases along with things like there own [[Microservice & API gateway |individual API Gateway]] but that may vary.
+
+
+##### Libraries
 You talk about choosing tech stack like deciding between leveraging [[Libraries vs Building From Scratch]] and the pros and cons around that in terms of potential dependencies issues. Like if the functionality is core critical, it's advisable to carefully assess whether using a library is necessary. In such cases, it may be prudent to avoid relying on libraries unless absolutely essential. Alternatively, if library integration is unavoidable, opting for widely adopted and established libraries minimizes the risk of significant changes disrupting the project's stability.
  
-
-Besides that picking technologies based on the ability to potentially doing a future [[Migration Plan]] like sometimes the technologies you start out with doesn't make sense or you want to manage cost of your system.
 
 ##### Protocols
 Depending on the feature you can leverage [[🌐 Internet Communication Process |web protocols]] like [[WebSockets]] directly or some library/framework that utilize it or both for things like chat apps or apps with real time data transmissions usually over TCP connection. Websockets are stateful and can be difficult to deal with when scaling so keep that in mind. 
@@ -196,6 +178,8 @@ You should also consider enhancing frontend performance by optimizing page load 
 
 ### Scalability and Performance
 In the context of database servers and instances of your application, as well as any microservices within your codebase architecture, the concept of scaling can be categorized into [[Vertical vs Horizontal Scaling]]. Horizontal scaling is often preferred due to the limitations of vertical scaling. For instance, it's impossible to infinitely increase CPU and memory resources on a single server. Additionally, vertical scaling lacks failover and redundancy mechanisms. If one server experiences downtime, the entire website or application goes down with it completely. System tend to follow these common [[System Scalability Strategies]].
+
+When it comes to overall fault tolerance there are many ways to improve it including [[Circuit breaker pattern relationship with fault tolerance |Circuit Breaker Design Pattern]]  which considered a stability pattern by monitoring interactions between services and, when a certain threshold of failures is reached, temporarily "opens" the circuit to prevent further requests from being sent. 
 
 To improve system scaling and performance you can use several technologies commonly used to distribute traffic across [[server pools]] like [[Load Balancer |load balancers]] technologies or strategies this also implement [[Load Shedding]] which improves fault tolerance you can even discuss [[Consistent Hashing]] which is one of several methods used to implement a load balancer. Also [[Rate Limiting]] can be implemented delaying or buffering excessive requests, ensuring that they are processed at a controlled pace you can discuss [[System Design Interview An Insider’s Guide Volume 1.pdf#page=53&selection=4,0,4,30|Where to put the rate limiter?]] which typically server side but can be implemented in [[API Gateway]] there are also [[System Design Interview An Insider’s Guide Volume 1.pdf#page=54&selection=24,0,29,44|Algorithms for rate limiting]].
 

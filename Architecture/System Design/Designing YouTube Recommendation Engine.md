@@ -16,10 +16,10 @@ Peer Reviewed: 0
 dg-publish:
 ---
 Can expand on this system week by week growing it or mock by mock interview in a week.
+
+# Question
+Design a recommendation engine for YouTube that provides personalized video recommendations to users. 
 ## Requirements
-
-
-
 
 ## Userbase
 
@@ -30,15 +30,16 @@ small storage foreach user easier to calulate
 1 gb per user
 
 ## Data points
-views, likes, dislikes(not available), comments
+comments, views, likes, 
 
-data stats user daily to monthly
+dislikes(not on youtube any more specifically the count at least on the client side)
 
 
-user stories 
+### Stats 
+user daily and monthly activity 
+
 
 ### Database Schema 
-**Endpoint**
 READ
 - GET
 
@@ -47,9 +48,10 @@ WRITE
 - PATCH/PUT
 - DELETE
 
-**Request:** 
 
-| DB    | Request | Description                                | Path                    |
+#### DB Query to Request Table
+
+| DB    | Request | Description                                | Endpoints               |
 | ----- | ------- | ------------------------------------------ | ----------------------- |
 | READ  | GET     | *Returns nearby business at user location* | **/v1/search/nearby**   |
 | READ  | GET     |                                            | **/v1/search/specific** |
@@ -58,7 +60,8 @@ WRITE
 | WRITE | DELETE  |                                            | ..                      |
 | WRITE | PATCH   |                                            | ..                      |
 |       |         |                                            |                         |
-Other endpoints which flow from some microservices..
+
+#### DB Table
 
 | Field     | Description                                | Type    |
 | --------- | ------------------------------------------ | ------- |
@@ -69,7 +72,7 @@ Other endpoints which flow from some microservices..
 | ..        | ..                                         | Char    |
 | ..        | ..                                         | Boolean |
 
-**Response:** 
+#### Response 
 ```json
 {
 "total":10,
@@ -114,7 +117,8 @@ Typically Microservices
 
 # Text Elements
 # Element Links
-qT0FzZ8g: [[Architecture/System Design/Designing YouTube Recommendation Engine.md#Data points]]
+d9HppMUX: [[Architecture/System Design/Designing YouTube Recommendation Engine.md#DB Query to Request Table]]
+cLKZo11N: [[Architecture/System Design/Designing YouTube Recommendation Engine.md#DB Table]]
 
 %%
 # Drawing
@@ -126,29 +130,73 @@ qT0FzZ8g: [[Architecture/System Design/Designing YouTube Recommendation Engine.m
 	"elements": [
 		{
 			"type": "embeddable",
-			"version": 81,
-			"versionNonce": 572417424,
+			"version": 122,
+			"versionNonce": 2140519207,
 			"isDeleted": false,
-			"id": "qT0FzZ8g",
+			"id": "d9HppMUX",
 			"fillStyle": "hachure",
 			"strokeWidth": 1,
 			"strokeStyle": "solid",
 			"roughness": 1,
 			"opacity": 100,
 			"angle": 0,
-			"x": -356.625,
-			"y": -457.3515625,
+			"x": -329.7674865722656,
+			"y": -399.9989471435547,
 			"strokeColor": "#000000",
 			"backgroundColor": "transparent",
-			"width": 697,
-			"height": 637,
-			"seed": 50110,
+			"width": 741.7788696289064,
+			"height": 336.7786865234375,
+			"seed": 63178,
 			"groupIds": [],
 			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1712441014338,
-			"link": "[[Architecture/System Design/Designing YouTube Recommendation Engine.md#Data points]]",
+			"updated": 1712465694514,
+			"link": "[[Architecture/System Design/Designing YouTube Recommendation Engine.md#DB Query to Request Table]]",
+			"locked": false,
+			"customData": {
+				"mdProps": {
+					"useObsidianDefaults": false,
+					"backgroundMatchCanvas": false,
+					"backgroundMatchElement": true,
+					"backgroundColor": "#fff",
+					"backgroundOpacity": 60,
+					"borderMatchElement": true,
+					"borderColor": "#fff",
+					"borderOpacity": 0,
+					"filenameVisible": false
+				}
+			},
+			"scale": [
+				1,
+				1
+			]
+		},
+		{
+			"type": "embeddable",
+			"version": 136,
+			"versionNonce": 1769616935,
+			"isDeleted": false,
+			"id": "cLKZo11N",
+			"fillStyle": "hachure",
+			"strokeWidth": 1,
+			"strokeStyle": "solid",
+			"roughness": 1,
+			"opacity": 100,
+			"angle": 0,
+			"x": -266.40804873907604,
+			"y": 1.4009252779292183,
+			"strokeColor": "#000000",
+			"backgroundColor": "transparent",
+			"width": 659.6204833984374,
+			"height": 309.392578125,
+			"seed": 94875,
+			"groupIds": [],
+			"frameId": null,
+			"roundness": null,
+			"boundElements": [],
+			"updated": 1712465696330,
+			"link": "[[Architecture/System Design/Designing YouTube Recommendation Engine.md#DB Table]]",
 			"locked": false,
 			"customData": {
 				"mdProps": {
@@ -184,8 +232,8 @@ qT0FzZ8g: [[Architecture/System Design/Designing YouTube Recommendation Engine.m
 		"currentItemTextAlign": "left",
 		"currentItemStartArrowhead": null,
 		"currentItemEndArrowhead": "arrow",
-		"scrollX": 352.125,
-		"scrollY": 740.6484375,
+		"scrollX": 309.3915082117323,
+		"scrollY": 588.5570550418864,
 		"zoom": {
 			"value": 1
 		},
