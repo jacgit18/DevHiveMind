@@ -156,7 +156,7 @@ When it comes to all these components you also want keep [[Data Flow]] in mind a
 
 Besides that you should consider what technologies your  picking based on the ability to potentially implement a future [[Migration Plan]] like sometimes the technologies you start out with doesn't make sense or you want to manage cost of your system.
 
-
+It's worth noting that scaling considerations can fall under administrative functionalities, whether that involves resource scaling in a cloud environment or implementing custom solutions such as creating an admin dashboard for internal use by developers. This dashboard could encompass various [[XII Admin processes]], offering insights and control over the scaling operations and other administrative tasks.
 ##### [[Impact of Architectural Styles |Architectural Styles]] 
 In a system design choosing the right architectural styles, is important think about what is needed and purpose of the style. In addition to that you can leverage [[When to use Domain-Driven Design |Domain Driven Design]] with some of the different architectural styles depending on domain complexity determines weather it is necessary to use it meaning the more simpler the domain is the less need for domain driven design in my opinion. You can also use [[Test Driven Development]] it just depends on your priorities. Side note things like Test Driven and Domain design are meant to be used alongside architectural styles.
 
@@ -168,14 +168,6 @@ When making remote calls to other services, a microservice can use a circuit bre
 Microservices, are very good for segregating services and responsibilities allowing for both stateless and stateful services to work together. This concept is intertwined with [[Stateless & Statefull Processes]], which aligns with the [[VIII Concurrency |Concurrency factor of the 12-factor app]]. Furthermore, this concurrency factor intersects with [[Distributed Locking]], which can be implemented using various technologies such as [[ZooKeeper]] and Redis. Also stateless architecture may be more database query heavy relative to stateful architecture. Microservices tend to have each of there own databases along with things like there own [[Microservice & API gateway |individual API Gateway]] but that may vary.
 
 Alternately you utilize centralized system architectures like Monolithic architecture which involves building the entire application as a single, indivisible unit, typically deployed on a single server or a closely connected set of servers. 
-
-##### Scalability and Performance
-> **Discuss throughout Interview this centers around backing services and traffic management but can be influenced by things like architecture**.
-
-
-
-
-It's worth noting that scaling considerations can fall under administrative functionalities, whether that involves resource scaling in a cloud environment or implementing custom solutions such as creating an admin dashboard for internal use by developers. This dashboard could encompass various [[XII Admin processes]], offering insights and control over the scaling operations and other administrative tasks.
 
 ##### Libraries
 You talk about choosing tech stack like deciding between leveraging [[Libraries vs Building From Scratch]] and the pros and cons around that in terms of potential dependencies issues. Like if the functionality is core critical, it's advisable to carefully assess whether using a library is necessary. In such cases, it may be prudent to avoid relying on libraries unless absolutely essential. Alternatively, if library integration is unavoidable, opting for widely adopted and established libraries minimizes the risk of significant changes disrupting the project's stability.
@@ -209,8 +201,6 @@ There also things like Internationalization which is the practice of making your
 Also implementing responsive design principles ensures your website adapts seamlessly to various devices, meeting Google's mobile-first indexing criteria and enhancing SEO performance. 
 
 You should also consider enhancing frontend performance by optimizing page load speed through strategies like minimizing HTTP requests, compressing images, leveraging browser caching, and using CDNs, thereby improving user experience and search engine rankings. 
-
-
 
 ### Step 4: Wrap Up(3 - 5 minutes)
 Summarize key design decisions, highlighting any alternative considerations. Invite questions and address outstanding concerns.
