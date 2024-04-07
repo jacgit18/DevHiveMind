@@ -45,7 +45,7 @@ The CAP Theorem, representing Consistency, Availability, and Partition Tolerance
 
 The CAP Theorem aids in making informed decisions when selecting a database system, necessitating a careful consideration of trade-offs among these three factors. Relational databases, while providing consistency, often lack partition tolerance and high availability, leading to potential downtime during updates.
 
-Side note this relates to [[System Design Interview An Insider’s Guide.pdf#page=97&selection=0,36,27,10|Inconsistency resolution: versioning]]
+Side note this relates to [[System Design Interview An Insider’s Guide Volume 1.pdf#page=97&selection=0,36,27,10|Inconsistency resolution: versioning]]
 
 #### When Choosing between CAP this what you should consider:
 

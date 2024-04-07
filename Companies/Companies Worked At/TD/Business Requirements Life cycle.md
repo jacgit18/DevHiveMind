@@ -40,7 +40,7 @@ The identification and prioritization of themes are crucial in guiding the devel
   
 - **Functional requirements** outline what the system must do or the specific functions it must perform to satisfy the user's needs or business requirements. These requirements describe the system's behavior and functionality, such as the actions it should take in response to user inputs.
 
-- **Non-functional requirements** specify the qualities or attributes that the system should possess, such as performance, security, reliability, usability, and scalability. They focus on how the system should perform rather than what it should do, providing criteria for evaluating the system's overall quality and effectiveness.
+- **Non-functional requirements** specify the qualities or attributes that the system should possess, such as `performance`, security, reliability, usability, and `scalability`. They focus on how the system should perform rather than what it should do, providing criteria for evaluating the system's overall quality and effectiveness.
 
 
 ### **Understanding Stakeholder Needs:**

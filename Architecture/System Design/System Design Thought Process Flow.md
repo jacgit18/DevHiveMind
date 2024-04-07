@@ -28,7 +28,7 @@ excalidraw-autoexport: svg
 ![[System design core concepts.gif]]
 For more info read 
 #todo/Personal/High/Dev  
-- [ ] [[System Design Interview An Insider’s Guide.pdf]]
+- [ ] [[System Design Interview An Insider’s Guide Volume 1.pdf]]
 - [ ] [[Designing Data-Intensive Applications The Big Ideas Behind Reliable, Scalable, and Maintainable Systems by Martin Kleppmann (z-lib.org).pdf |Designing Data-Intensive Applications]]
 - [ ] [[Software Architecture The Hard Parts Modern Trade-Off Analyses for Distributed Architectures (Neal Ford, Mark Richards, Pramod Sadalage etc.) (z-lib.org).pdf |Software Architecture The Hard Parts]]
 - [ ] [[Alex Petrov - Database Internals_ A Deep Dive into How Distributed Data Systems Work-O'Reilly Media (2019).pdf |Database Internals_ A Deep Dive into How Distributed Data Systems Work]]
@@ -39,17 +39,21 @@ For more info read
 - [x] https://www.workfall.com/learning/blog/how-to-set-up-an-aws-cloudfront-distribution-to-speed-up-content-delivery/ ✅ 2024-04-06
 - [ ] https://kasunprageethdissanayake.medium.com/tinder-fully-explained-system-design-and-architecture-1225ecdfe64e
 - [ ] https://www.outsystems.com/tech-hub/app-dev/technical-debt/#what-is-technical-debt
+- [ ] Payment system [[System Design Interview An Insider’s Guide Volume 2.pdf#page=316|System Design Interview An Insider’s Guide Volume 2, page 316]]
 - [ ] Refine and trim cloud notes not trying to document to many stuff just key details and relationships and stuff that may actually come up.
 - [ ] Use Chatgpt to recommend libraries and AWS services for project but define what the project is and come up with data model.
+- [ ] Compress API Gateway notes
 
 Throughout the designing of the system you can discuss [[Fault Tolerance]] which refers to the system's resilience against failures, errors, or faults, ensuring uninterrupted operation and maintaining user experience by reducing system downtime. It encompasses proactive measures to handle failures gracefully and sustain availability. This principle applies universally across hardware, software, networks, and systems architecture. At its essence, fault tolerance anticipates failures as inevitable and seeks to minimize their impact through proactive strategies it also applies at and between each system component. 
 
 ### Step 1: Requirements Gathering 
 > **Establish a Understanding and Design Scope of problem (3 - 10 minutes)
 
-During this phase, it's pivotal to establish the system's scope and priorities while gathering both [[Business Requirements Life cycle#Requirement Types |functional Requirement]]. For instance, when tasked with designing an Instagram Reels feature, it's essential to deconstruct the problem into distinct use cases, delineating interactions among system components. Key requirements such as anticipated traffic, data volume, latency, and scalability should be identified. Inquire about the [[Userbase]] type, as this insight aids in resource estimation and governance considerations, especially regarding scalability implications, such as underage user base scenarios. Understanding potential constraints and bottlenecks that may emerge with an expanding user base is imperative. This insight informs decisions regarding database considerations, determining whether a NoSQL or SQL database aligns with specific needs and data characteristics.
+During this phase, it's pivotal to establish the system's scope while gathering both [[Business Requirements Life cycle#Requirement Types |functional and non-functional business requirements]] prioritizing functional also for more senior roles your interviewing for you will need to get better at non-functional requirements for system design interviews.
 
-In designing this system, it's essential to consider its limitations, scale, and constraints in general but also in the interview context were they may want you to consider and work around these things. We should discuss factors such as the maximum number of reads and writes the system can handle efficiently, network request throughput, service usage (e.g., accounts created per unit time), and other relevant metrics to ensure scalability and performance. You should always ask for clarification.
+For instance, when tasked with designing an Instagram Reels feature, it's essential to deconstruct the problem into distinct use cases, delineating interactions among system components. Key requirements such as anticipated traffic, data volume, latency, and scalability should be identified. Inquire about the [[Userbase]] type, as this insight aids in resource estimation and governance considerations, especially regarding scalability implications, such as underage user base scenarios. Understanding potential constraints and bottlenecks that may emerge with an expanding user base is imperative. This insight informs decisions regarding database considerations, determining whether a NoSQL or SQL database aligns with specific needs and data characteristics.
+
+In designing this system, it's essential to consider its limitations, scale, and constraints in general but also in the interview context were they may want you to consider and work around these things. We should discuss factors such as the maximum number of reads and writes the system can handle efficiently, network request throughput, service usage (e.g., accounts created per unit time), and other relevant metrics to ensure scalability and performance. You should always ask for clarification and ask if what you have listed out is good enough [[Specifying Scope indepth |scope]] of functionality to focus on. 
 #### [[Use Case vs User Story |User Story]] Example:
 >[!important]
 >Creating stories helps with building data model, also if dealing with complex feature might want to consider using Use Cases over Stories.
@@ -59,30 +63,57 @@ In designing this system, it's essential to consider its limitations, scale, and
 4. As a user I want to see a feed containing posts from friends.
 5. As a user I want to block or unfollow other users.
 
-### Step 2: Design Deep Dive (15 - 25 minutes)
+### Step 2: High Level Design(15 - 25 minutes)
 >[!important]
 When crafting your design, prioritize a forward-thinking approach that anticipates future functionality. Ensure flexibility to seamlessly accommodate expansions and enhancements. Focus on constructing a foundation that facilitates scalability, simplifying the integration of additional features down the line. Adopt a holistic mindset, anticipating potential modifications and advancements, and ensure the architecture remains adaptable to evolving requirements. This proactive approach fosters a more sustainable and extensible system over time.
 
-*Delve into the design by following the flow from Database ▶ Server/Services (Architecture) ▶ Client Side design.
+Database > Backend/Services > API Gateway(Custom built not 3rd party)/endpoints > Client
 
-Create an Entity Relationship Diagram (ERD) to define clear relationships in data model and come up with general feature endpoints.
+Create an Entity Relationship Diagram (ERD) to define clear relationships and [[Schema Design]] 
+you can also discuss table [[Normalization & Denormalization]] when discussing optimization later. But once that is done you can come up with general feature endpoints.
 
-
-### Data Design & Database Architecture 
-When [[Choosing Database]] type, consider whether you're dealing with [[Industry Structured & Unstructured Data |Structured or Unstructured Data]] then come up with a short list of databases to pick from. For instance, if the domain focuses on medical data, it's likely structured, favoring SQL databases. Conversely, media-related data tends to be unstructured, making NoSQL databases more suitable. Then consider and talking about [[Schema Design]] that makes sense along with table [[Normalization & Denormalization]]. all these factors also include database architecture can influence throughput in terms of number request, database transactions(`collection of queries`), and queries made.  
+#### Data Design & Database Architecture
+When [[Choosing Database]] type, consider whether you're dealing with [[Industry Structured & Unstructured Data |Structured or Unstructured Data]] then come up with a short list of databases to pick from. For instance, if the domain focuses on medical data, it's likely structured, favoring SQL databases. Conversely, media-related data tends to be unstructured, making NoSQL databases more suitable. all these factors also include database architecture can influence throughput in terms of number request, database transactions(`collection of queries`), and queries made.  
 
 
 You can talk governance like [[Data Retention Target]] and [[Database data governance]] compliance, Infrastructure may include tools and processes to enforce compliance with regulatory requirements and organizational policies, ensuring data security and legal compliance. 
 
+#### API 
+API Gateway is a intermediary between backend and client 3rd party API would wouldn't be involved here or more so it would be leveraged within backend or client side depending on requirements  
 
-#### Storage Estimation Examples
+[[API Gateway & Middleware Implementation]]
+
+When choosing an API, or other things like libraries, and frameworks you should prioritize alignment with your business requirements, including cost, long-term support, and desired functionality. Consider the [[API Provided Services |API specific services]] you need like maybe you need something like data retrieval, authentication, and file management. Evaluate [[API Architecture Styles]] like GraphQL, [[gRPC]], or REST to ensure compatibility with your system's needs. REST is the typical style used so you can default to that only focus on API,s needed also define API input params request and response.
+
+User hits load balancer routes traffic to api gateway endpoint hits the backend server then some database query is triggered doing some read or write that is direct towards some main db or replicated db it depends on db architecture. 
+
+**Request:** 
+*Returns all business on a user location*
+GET /v1/search/nearby
+Other Endpoints which can flow from some service..
+
+| Field     | Description                                        | Type   |
+| --------- | -------------------------------------------------- | ------ |
+| Latitude  | Lat of given location                              | double |
+| Longitude | Long of given location                             | double |
+| Radius    | **Optional**: Default is 500 meters(about 3 miles) | int    |
+**Response:** 
+```json
+{
+"total":10,
+"buisnesses": [{buisness object}]
+}
+```
+
+
+##### Storage Estimation Examples
 > Keep estimation simple focus on storage needed and not to much on queries especially if there are other critical things to discuss. 
 - Storage: Writes per day \* size of write \* time to store data
 - (10,000 thousand KB/day * 1.5 MB) = 14.65 MB \* 2 days = roughly 30 MB at minimum for storage since data is held for 2 days probably want a little more.
 - Daily storage for writes: 10 million writes \* 1.5 MB = 15 TB guesstimate
 - Yearly storage:(15 TB \* 365 days \* 10 years) = 55 PB guesstimate
 
-#### Network Traffic Estimate Examples
+##### Network Traffic Estimate Examples
 - Traffic: Daily active users * average reads and writes per user
 - Active users: 10 million 
 - User Post viewed: 30 views per user or 30 `GET Request`
@@ -92,13 +123,13 @@ You can talk governance like [[Data Retention Target]] and [[Database data gover
 - Active user post = (10 million \* 10) = 100 million `POST Request`
 - Active user post per second =  (10 million / 86,400 seconds) = 115 `POST Request`
 
-#### Memory Storage Estimate Examples
+##### Memory Storage Estimate Examples
 - Memory: Read requests per day \* average request size \* 20%
 - Cache for Instagram highlights:  (300 million requests \* 500 bytes) = 150 GB
 - Adjusted cache: (20% of 150 GB) = 30 GB
 - Total memory: (30 GB \* 3 for replication) = 90 GB 
 
-#### [[Bandwidth Estimation]] Examples
+##### [[Bandwidth Estimation]] Examples
 > Once you determine other estimation you can address this last or ask about potential historical traffic using that as a baseline.
 - Bandwidth: Requests per day * average request size
 - Bandwidth required: 450,000 GB (300 million(Active users) \* 1.5 MB)
@@ -106,11 +137,11 @@ You can talk governance like [[Data Retention Target]] and [[Database data gover
 
 You can leverage ChatGPT to perform a CAP theorem analysis and a Kepner-Tregoe decision analysis, using weighted decisions to identify a concise list of choices for databases or other relevant technologies. This approach allows for a systematic evaluation of options based on their consistency, availability, and partition tolerance, as well as other criteria important to your decision-making process. By combining these analytical methods, you can efficiently narrow down your options and make informed decisions that align with your specific needs and preferences.
 
-
+### Step 3: Design Deep Dive (15 - 25 minutes)
 ###### Potential Start for overall Architecture 
 If you're aiming to quickly establish your infrastructure, consider sticking to a cloud-heavy Software as a Service (SaaS) approach initially. This approach offers several benefits, including the ability to leverage built-in monitoring, logging, and performance statistics to understand real-world system performance. By starting with cloud-heavy SaaS solutions, you can swiftly deploy your infrastructure and gain valuable insights into its performance and usage patterns. With this information in hand, you can then transition to other potential, potentially more cost-effective options based on your specific needs and requirements. This approach allows for agility and flexibility, enabling you to optimize your infrastructure over time while ensuring a smooth and efficient initial setup.
 
-### Overall Architecture
+#### Overall Architecture
 In a system design choosing the right [[Impact of Architectural Styles |Architectural Styles]] is important think about what is needed and purpose of the style. In addition to that you can leverage [[When to use Domain-Driven Design |Domain Driven Design]] with some of the different styles depending on domain complexity determines weather it is necessary to use meaning the more simpler the domain is the less need for domain driven design in my opinion. Also what [[IV Backing services]] would you leverage and why also consider [[Test Driven Development]] depends on your priorities. Side note things like Test Driven and Domain design are meant to be used alongside architectural styles.
 
 
@@ -138,12 +169,10 @@ You talk about choosing tech stack like deciding between leveraging [[Libraries 
 
 Besides that picking technologies based on the ability to potentially doing a future [[Migration Plan]] like sometimes the technologies you start out with doesn't make sense or you want to manage cost of your system.
 
-##### API 
-When choosing an API, or other things like libraries, and frameworks you should prioritize alignment with your business requirements, including cost, long-term support, and desired functionality. Consider the [[API Provided Services |API specific services]] you need like maybe you need something like data retrieval, authentication, and file management. Evaluate [[API Architecture Styles]] like GraphQL, [[gRPC]], or REST to ensure compatibility with your system's needs.
-
-
 ##### Protocols
-Depending on the feature you can leverage [[🌐 Internet Communication Process |web protocols]] like [[WebSockets]] directly or some library/framework that utilize it or both for things like chat apps or apps with real time data transmissions usually over TCP connection. But when it comes to other web protocols if your creating an feature with UDP protocol and this may be the same for other protocols your typically using the protocols indirectly meaning your leveraging a library or framework that is using protocols.
+Depending on the feature you can leverage [[🌐 Internet Communication Process |web protocols]] like [[WebSockets]] directly or some library/framework that utilize it or both for things like chat apps or apps with real time data transmissions usually over TCP connection. Websockets are stateful and can be difficult to deal with when scaling so keep that in mind. 
+
+But when it comes to other web protocols if your creating an feature with UDP protocol and this may be the same for other protocols your typically using the protocols indirectly meaning your leveraging a library or framework that is using protocols.
 
 ##### Deployment
 When building application you want to consider all your viable options this is were [[Deployment Strategies]] come in to play there are several ways you can go about then you can leverage technologies like [[Docker Construct Relationships |Docker]] and containerization which encapsulate the application along with all of its dependencies, ensuring consistency between development, testing, and production environments streamlining the development lifecycle even at the local environment level also scaling well and integrates well with CI/CD pipelines. This process relates to [[V Build, release, run |12 factor app factor 5 Build, Release, & Run]] also [[X-10 Dev prod parity]] which aims to maintain consistency across environments in terms of limiting the difference. there is also [[Cloud Version Control |Version Control]] to consider.
@@ -172,7 +201,7 @@ You should also consider enhancing frontend performance by optimizing page load 
 ### Scalability and Performance
 In the context of database servers and instances of your application, as well as any microservices within your codebase architecture, the concept of scaling can be categorized into [[Vertical vs Horizontal Scaling]]. Horizontal scaling is often preferred due to the limitations of vertical scaling. For instance, it's impossible to infinitely increase CPU and memory resources on a single server. Additionally, vertical scaling lacks failover and redundancy mechanisms. If one server experiences downtime, the entire website or application goes down with it completely. System tend to follow these common [[System Scalability Strategies]].
 
-To improve system scaling and performance you can use several technologies commonly used to distribute traffic across [[server pools]] like [[Load Balancer |load balancers]] technologies or strategies this also implement [[Load Shedding]] which improves fault tolerance you can even discuss [[Consistent Hashing]] which is one of several methods used to implement a load balancer. Also [[Rate Limiting]] can be implemented delaying or buffering excessive requests, ensuring that they are processed at a controlled pace you can discuss [[System Design Interview An Insider’s Guide.pdf#page=53&selection=4,0,4,30|Where to put the rate limiter?]] which typically server side but can be implemented in [[API Gateway]] there are also [[System Design Interview An Insider’s Guide.pdf#page=54&selection=24,0,29,44|Algorithms for rate limiting]].
+To improve system scaling and performance you can use several technologies commonly used to distribute traffic across [[server pools]] like [[Load Balancer |load balancers]] technologies or strategies this also implement [[Load Shedding]] which improves fault tolerance you can even discuss [[Consistent Hashing]] which is one of several methods used to implement a load balancer. Also [[Rate Limiting]] can be implemented delaying or buffering excessive requests, ensuring that they are processed at a controlled pace you can discuss [[System Design Interview An Insider’s Guide Volume 1.pdf#page=53&selection=4,0,4,30|Where to put the rate limiter?]] which typically server side but can be implemented in [[API Gateway]] there are also [[System Design Interview An Insider’s Guide Volume 1.pdf#page=54&selection=24,0,29,44|Algorithms for rate limiting]].
 
 There are Networking components that can improve performance such as routers like [[Reverse proxy vs API gateway vs load balancer]].
 
@@ -186,7 +215,7 @@ Picking between the two database architecture comes down to complexity, data con
 It's worth noting that scaling considerations can fall under administrative functionalities, whether that involves resource scaling in a cloud environment or implementing custom solutions such as creating an admin dashboard for internal use by developers. This dashboard could encompass various [[XII Admin processes]], offering insights and control over the scaling operations and other administrative tasks.
 
 
-### Step 3: Wrap Up(3 - 5 minutes)
+### Step 4: Wrap Up(3 - 5 minutes)
 Summarize key design decisions, highlighting any alternative considerations. Invite questions and address outstanding concerns.
 
 # Stats 
@@ -534,8 +563,6 @@ Data Streams ^XPN5xm4A
 
 SageMaker ^Y4PgIKo9
 
-Machine learning ^AW5wFKVW
-
 TensorFlow ^sE7Lr5we
 
 self hosted 
@@ -560,6 +587,8 @@ add thing like Destination
 Side effects associate with workflow like how functions can have side effects ^4m2QAi4p
 
 Cloudflare ^AQAtVDoG
+
+Fastly ^DjIi3EEl
 
 # Embedded files
 69edc9e02839ed3bb44893b35184a59630bebc22: [[Aws Trust Advisor.png]]
@@ -17227,42 +17256,6 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 		},
 		{
 			"type": "text",
-			"version": 17,
-			"versionNonce": 1717868909,
-			"isDeleted": false,
-			"id": "AW5wFKVW",
-			"fillStyle": "solid",
-			"strokeWidth": 2,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
-			"angle": 0,
-			"x": -507.11915533032675,
-			"y": -682.2409820483072,
-			"strokeColor": "#1e1e1e",
-			"backgroundColor": "transparent",
-			"width": 154.4598388671875,
-			"height": 25,
-			"seed": 2137990723,
-			"groupIds": [],
-			"frameId": "QAKgykm435JjdqYQ8ZSVo",
-			"roundness": null,
-			"boundElements": [],
-			"updated": 1712293522058,
-			"link": null,
-			"locked": false,
-			"fontSize": 20,
-			"fontFamily": 1,
-			"text": "Machine learning",
-			"rawText": "Machine learning",
-			"textAlign": "left",
-			"verticalAlign": "top",
-			"containerId": null,
-			"originalText": "Machine learning",
-			"lineHeight": 1.25
-		},
-		{
-			"type": "text",
 			"version": 34,
 			"versionNonce": 912273635,
 			"isDeleted": false,
@@ -25774,8 +25767,8 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 		},
 		{
 			"type": "image",
-			"version": 199,
-			"versionNonce": 2037628973,
+			"version": 252,
+			"versionNonce": 639249296,
 			"isDeleted": false,
 			"id": "DgUQ_4Zg27j5sckXS_8-V",
 			"fillStyle": "solid",
@@ -25784,8 +25777,8 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"roughness": 1,
 			"opacity": 100,
 			"angle": 0,
-			"x": -985.7873286512518,
-			"y": -549.3071495644426,
+			"x": -1262.7873286512518,
+			"y": -518.3071495644426,
 			"strokeColor": "transparent",
 			"backgroundColor": "#ffc9c9",
 			"width": 80,
@@ -25797,7 +25790,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"frameId": "sLvQttXToSMtG_17M-tom",
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1712392845297,
+			"updated": 1712432090810,
 			"link": null,
 			"locked": false,
 			"status": "pending",
@@ -25809,8 +25802,8 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 		},
 		{
 			"type": "text",
-			"version": 191,
-			"versionNonce": 2126852749,
+			"version": 244,
+			"versionNonce": 1995323792,
 			"isDeleted": false,
 			"id": "DCfIisMo",
 			"fillStyle": "solid",
@@ -25819,8 +25812,8 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"roughness": 1,
 			"opacity": 100,
 			"angle": 0,
-			"x": -986.9637992394869,
-			"y": -465.77773779973654,
+			"x": -1263.963799239487,
+			"y": -434.77773779973654,
 			"strokeColor": "#1e1e1e",
 			"backgroundColor": "#ffc9c9",
 			"width": 78.77992248535156,
@@ -25832,7 +25825,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"frameId": "sLvQttXToSMtG_17M-tom",
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1712392845297,
+			"updated": 1712432090810,
 			"link": null,
 			"locked": false,
 			"fontSize": 20,
@@ -25847,8 +25840,8 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 		},
 		{
 			"type": "image",
-			"version": 87,
-			"versionNonce": 162914637,
+			"version": 137,
+			"versionNonce": 286142864,
 			"isDeleted": false,
 			"id": "5ToCDkmgCpNZLlNJGVkGX",
 			"fillStyle": "solid",
@@ -25857,8 +25850,8 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"roughness": 1,
 			"opacity": 100,
 			"angle": 0,
-			"x": -880.1010541414479,
-			"y": -546.4640123095405,
+			"x": -1127.101054141448,
+			"y": -526.4640123095405,
 			"strokeColor": "transparent",
 			"backgroundColor": "#ffc9c9",
 			"width": 80,
@@ -25870,7 +25863,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"frameId": "sLvQttXToSMtG_17M-tom",
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1712392844008,
+			"updated": 1712432092850,
 			"link": null,
 			"locked": false,
 			"status": "pending",
@@ -25882,8 +25875,8 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 		},
 		{
 			"type": "text",
-			"version": 109,
-			"versionNonce": 1080438701,
+			"version": 159,
+			"versionNonce": 829521808,
 			"isDeleted": false,
 			"id": "1aGsZs2b",
 			"fillStyle": "solid",
@@ -25892,8 +25885,8 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"roughness": 1,
 			"opacity": 100,
 			"angle": 0,
-			"x": -891.8657600238006,
-			"y": -460.58165936836394,
+			"x": -1138.8657600238007,
+			"y": -440.58165936836394,
 			"strokeColor": "#1e1e1e",
 			"backgroundColor": "#ffc9c9",
 			"width": 99.23989868164062,
@@ -25905,7 +25898,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"frameId": "sLvQttXToSMtG_17M-tom",
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1712392844008,
+			"updated": 1712432092850,
 			"link": null,
 			"locked": false,
 			"fontSize": 20,
@@ -30204,11 +30197,47 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"lineHeight": 1.1922677852468673
 		},
 		{
-			"id": "AQAtVDoG",
 			"type": "text",
-			"x": -1053.1503012627284,
-			"y": -622.5843626859254,
+			"version": 51,
+			"versionNonce": 2123981168,
+			"isDeleted": false,
+			"id": "AQAtVDoG",
+			"fillStyle": "solid",
+			"strokeWidth": 2,
+			"strokeStyle": "solid",
+			"roughness": 1,
+			"opacity": 100,
+			"angle": 0,
+			"x": -907.1503012627284,
+			"y": -504.5843626859254,
+			"strokeColor": "#1e1e1e",
+			"backgroundColor": "transparent",
 			"width": 99.81988525390625,
+			"height": 25,
+			"seed": 1899054381,
+			"groupIds": [],
+			"frameId": "sLvQttXToSMtG_17M-tom",
+			"roundness": null,
+			"boundElements": [],
+			"updated": 1712432106884,
+			"link": null,
+			"locked": false,
+			"fontSize": 20,
+			"fontFamily": 1,
+			"text": "Cloudflare",
+			"rawText": "Cloudflare",
+			"textAlign": "left",
+			"verticalAlign": "top",
+			"containerId": null,
+			"originalText": "Cloudflare",
+			"lineHeight": 1.25
+		},
+		{
+			"id": "DjIi3EEl",
+			"type": "text",
+			"x": -897.393183131473,
+			"y": -552.0546874999995,
+			"width": 61.61993408203125,
 			"height": 25,
 			"angle": 0,
 			"strokeColor": "#1e1e1e",
@@ -30221,22 +30250,22 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"groupIds": [],
 			"frameId": "sLvQttXToSMtG_17M-tom",
 			"roundness": null,
-			"seed": 1899054381,
-			"version": 13,
-			"versionNonce": 512291747,
+			"seed": 1916167536,
+			"version": 7,
+			"versionNonce": 1160281488,
 			"isDeleted": false,
 			"boundElements": null,
-			"updated": 1712393950598,
+			"updated": 1712432098240,
 			"link": null,
 			"locked": false,
-			"text": "Cloudflare",
-			"rawText": "Cloudflare",
+			"text": "Fastly",
+			"rawText": "Fastly",
 			"fontSize": 20,
 			"fontFamily": 1,
 			"textAlign": "left",
 			"verticalAlign": "top",
 			"containerId": null,
-			"originalText": "Cloudflare",
+			"originalText": "Fastly",
 			"lineHeight": 1.25
 		},
 		{
@@ -32348,8 +32377,8 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 		},
 		{
 			"type": "rectangle",
-			"version": 1315,
-			"versionNonce": 2101881677,
+			"version": 1316,
+			"versionNonce": 61025168,
 			"isDeleted": false,
 			"id": "PFSyRhMeeQQjJhSU-aAet",
 			"fillStyle": "solid",
@@ -32358,8 +32387,8 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"roughness": 0,
 			"opacity": 100,
 			"angle": 0,
-			"x": 410.0198717974763,
-			"y": 1689.0448340793866,
+			"x": 410.01987179747624,
+			"y": 1689.0448340793869,
 			"strokeColor": "#c3b6ee",
 			"backgroundColor": "transparent",
 			"width": 270.81360008160584,
@@ -32378,14 +32407,14 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 					"type": "arrow"
 				}
 			],
-			"updated": 1712392805058,
+			"updated": 1712432076149,
 			"link": null,
 			"locked": false
 		},
 		{
 			"type": "text",
-			"version": 417,
-			"versionNonce": 1595881901,
+			"version": 418,
+			"versionNonce": 995572112,
 			"isDeleted": false,
 			"id": "CBh5xDMB",
 			"fillStyle": "solid",
@@ -32394,8 +32423,8 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"roughness": 1,
 			"opacity": 100,
 			"angle": 0,
-			"x": 415.0198717974763,
-			"y": 1694.0448340793866,
+			"x": 415.01987179747624,
+			"y": 1694.0448340793869,
 			"strokeColor": "#1e1e1e",
 			"backgroundColor": "transparent",
 			"width": 80.06402587890625,
@@ -32405,7 +32434,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"frameId": "cDlFNT0KJqjWdy4tfiyeE",
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1712392805059,
+			"updated": 1712432076149,
 			"link": null,
 			"locked": false,
 			"fontSize": 36,
@@ -32420,8 +32449,8 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 		},
 		{
 			"type": "rectangle",
-			"version": 1336,
-			"versionNonce": 1673886733,
+			"version": 1337,
+			"versionNonce": 1029277584,
 			"isDeleted": false,
 			"id": "oKt_wAJkAksutql0WooCQ",
 			"fillStyle": "solid",
@@ -32431,7 +32460,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"opacity": 100,
 			"angle": 0,
 			"x": 793.9592657368703,
-			"y": 1677.1054401399936,
+			"y": 1677.1054401399938,
 			"strokeColor": "#c3b6ee",
 			"backgroundColor": "transparent",
 			"width": 266.81360008160584,
@@ -32446,14 +32475,14 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 					"id": "NP5hZoJW"
 				}
 			],
-			"updated": 1712392805059,
+			"updated": 1712432076150,
 			"link": null,
 			"locked": false
 		},
 		{
 			"type": "text",
-			"version": 441,
-			"versionNonce": 1395946093,
+			"version": 442,
+			"versionNonce": 635573648,
 			"isDeleted": false,
 			"id": "NP5hZoJW",
 			"fillStyle": "solid",
@@ -32463,7 +32492,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"opacity": 100,
 			"angle": 0,
 			"x": 798.9592657368703,
-			"y": 1682.1054401399936,
+			"y": 1682.1054401399938,
 			"strokeColor": "#1e1e1e",
 			"backgroundColor": "transparent",
 			"width": 95.94003295898438,
@@ -32473,7 +32502,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"frameId": "cDlFNT0KJqjWdy4tfiyeE",
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1712392805059,
+			"updated": 1712432076150,
 			"link": null,
 			"locked": false,
 			"fontSize": 36,
@@ -41268,8 +41297,8 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 		},
 		{
 			"type": "text",
-			"version": 275,
-			"versionNonce": 976592077,
+			"version": 276,
+			"versionNonce": 1244193680,
 			"isDeleted": false,
 			"id": "87t7ljSB",
 			"fillStyle": "solid",
@@ -41291,12 +41320,12 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"frameId": "0LAZAzosw8QneazOU9KFZ",
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1712392805060,
+			"updated": 1712432076150,
 			"link": null,
 			"locked": false,
 			"fontSize": 20,
 			"fontFamily": 1,
-			"text": "Frontend ",
+			"text": "Frontend",
 			"rawText": "Frontend ",
 			"textAlign": "center",
 			"verticalAlign": "middle",
@@ -60861,30 +60890,32 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"lineHeight": 1.25
 		},
 		{
-			"id": "DQFl6RFG",
 			"type": "image",
-			"x": -2674.1369951244224,
-			"y": -157.31919642857144,
-			"width": 1037.1428571428573,
-			"height": 583.3928571428572,
-			"angle": 0,
-			"strokeColor": "transparent",
-			"backgroundColor": "transparent",
+			"version": 37,
+			"versionNonce": 998845923,
+			"isDeleted": false,
+			"id": "DQFl6RFG",
 			"fillStyle": "hachure",
 			"strokeWidth": 1,
 			"strokeStyle": "solid",
 			"roughness": 1,
 			"opacity": 100,
-			"roundness": null,
+			"angle": 0,
+			"x": -2674.1369951244224,
+			"y": -157.31919642857144,
+			"strokeColor": "transparent",
+			"backgroundColor": "transparent",
+			"width": 1037.1428571428573,
+			"height": 583.3928571428572,
 			"seed": 56769,
-			"version": 37,
-			"versionNonce": 998845923,
-			"updated": 1712392972345,
-			"isDeleted": false,
 			"groupIds": [],
+			"frameId": null,
+			"roundness": null,
 			"boundElements": [],
+			"updated": 1712392972345,
 			"link": null,
 			"locked": false,
+			"status": "pending",
 			"fileId": "b9a9463ea925bf6a1f2932e17326dbf4837cc7a0",
 			"scale": [
 				1,
@@ -60892,30 +60923,32 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			]
 		},
 		{
-			"id": "Ao6nfdK5",
 			"type": "image",
-			"x": -1023.1369951244224,
-			"y": 900.6450892857144,
-			"width": 500,
-			"height": 281.25,
-			"angle": 0,
-			"strokeColor": "transparent",
-			"backgroundColor": "transparent",
+			"version": 83,
+			"versionNonce": 1589560899,
+			"isDeleted": false,
+			"id": "Ao6nfdK5",
 			"fillStyle": "hachure",
 			"strokeWidth": 1,
 			"strokeStyle": "solid",
 			"roughness": 1,
 			"opacity": 100,
-			"roundness": null,
+			"angle": 0,
+			"x": -1023.1369951244224,
+			"y": 900.6450892857144,
+			"strokeColor": "transparent",
+			"backgroundColor": "transparent",
+			"width": 500,
+			"height": 281.25,
 			"seed": 76872,
-			"version": 83,
-			"versionNonce": 1589560899,
-			"updated": 1712393172381,
-			"isDeleted": false,
 			"groupIds": [],
+			"frameId": null,
+			"roundness": null,
 			"boundElements": [],
+			"updated": 1712393172381,
 			"link": null,
 			"locked": false,
+			"status": "pending",
 			"fileId": "57731221f1cdfa153d9eef047ae735b35f93fad9",
 			"scale": [
 				1,
@@ -60923,30 +60956,32 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			]
 		},
 		{
-			"id": "Nm1ePqdl",
 			"type": "image",
-			"x": -3755.2780485154763,
-			"y": -125.57532918470417,
-			"width": 997.7777777777777,
-			"height": 561.25,
-			"angle": 0,
-			"strokeColor": "transparent",
-			"backgroundColor": "transparent",
+			"version": 87,
+			"versionNonce": 587312451,
+			"isDeleted": false,
+			"id": "Nm1ePqdl",
 			"fillStyle": "hachure",
 			"strokeWidth": 1,
 			"strokeStyle": "solid",
 			"roughness": 1,
 			"opacity": 100,
-			"roundness": null,
+			"angle": 0,
+			"x": -3755.2780485154763,
+			"y": -125.57532918470417,
+			"strokeColor": "transparent",
+			"backgroundColor": "transparent",
+			"width": 997.7777777777777,
+			"height": 561.25,
 			"seed": 18241,
-			"version": 87,
-			"versionNonce": 587312451,
-			"updated": 1712393173726,
-			"isDeleted": false,
 			"groupIds": [],
+			"frameId": null,
+			"roundness": null,
 			"boundElements": [],
+			"updated": 1712393173726,
 			"link": null,
 			"locked": false,
+			"status": "pending",
 			"fileId": "99071e85bb3dbf68d80374c17ff8aae5f50676fd",
 			"scale": [
 				1,
@@ -60954,35 +60989,143 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			]
 		},
 		{
-			"id": "35j8r6hA",
 			"type": "image",
-			"x": -3622.194715182142,
-			"y": 558.5913374819622,
-			"width": 1168.4444444444443,
-			"height": 657.25,
-			"angle": 0,
-			"strokeColor": "transparent",
-			"backgroundColor": "transparent",
+			"version": 73,
+			"versionNonce": 1987553955,
+			"isDeleted": false,
+			"id": "35j8r6hA",
 			"fillStyle": "hachure",
 			"strokeWidth": 1,
 			"strokeStyle": "solid",
 			"roughness": 1,
 			"opacity": 100,
-			"roundness": null,
+			"angle": 0,
+			"x": -3622.194715182142,
+			"y": 558.5913374819622,
+			"strokeColor": "transparent",
+			"backgroundColor": "transparent",
+			"width": 1168.4444444444443,
+			"height": 657.25,
 			"seed": 19158,
-			"version": 73,
-			"versionNonce": 1987553955,
-			"updated": 1712393167665,
-			"isDeleted": false,
 			"groupIds": [],
+			"frameId": null,
+			"roundness": null,
 			"boundElements": [],
+			"updated": 1712393167665,
 			"link": null,
 			"locked": false,
+			"status": "pending",
 			"fileId": "e3ca355214ce9addc2600cc937ec6fc0d47b66af",
 			"scale": [
 				1,
 				1
 			]
+		},
+		{
+			"id": "hhB8Zfb560OWldT7Q4dnd",
+			"type": "frame",
+			"x": -953.393183131473,
+			"y": -707.0546874999995,
+			"width": 170,
+			"height": 250,
+			"angle": 0,
+			"strokeColor": "#bbb",
+			"backgroundColor": "transparent",
+			"fillStyle": "solid",
+			"strokeWidth": 2,
+			"strokeStyle": "solid",
+			"roughness": 0,
+			"opacity": 100,
+			"groupIds": [],
+			"frameId": null,
+			"roundness": null,
+			"seed": 1591985520,
+			"version": 60,
+			"versionNonce": 1819365232,
+			"isDeleted": false,
+			"boundElements": null,
+			"updated": 1712432120315,
+			"link": null,
+			"locked": false,
+			"customData": {
+				"frameColor": {
+					"stroke": "#D4D4D4",
+					"fill": "#ADADAD",
+					"nameColor": "#7A7A7A"
+				}
+			},
+			"name": "CDN"
+		},
+		{
+			"id": "ognazRLcgiRvADTORiUpb",
+			"type": "frame",
+			"x": -568.393183131473,
+			"y": -672.0546874999995,
+			"width": 277,
+			"height": 154,
+			"angle": 0,
+			"strokeColor": "#bbb",
+			"backgroundColor": "transparent",
+			"fillStyle": "solid",
+			"strokeWidth": 2,
+			"strokeStyle": "solid",
+			"roughness": 0,
+			"opacity": 100,
+			"groupIds": [],
+			"frameId": null,
+			"roundness": null,
+			"seed": 808218480,
+			"version": 69,
+			"versionNonce": 1325207920,
+			"isDeleted": false,
+			"boundElements": null,
+			"updated": 1712432143007,
+			"link": null,
+			"locked": false,
+			"customData": {
+				"frameColor": {
+					"stroke": "#D4D4D4",
+					"fill": "#ADADAD",
+					"nameColor": "#7A7A7A"
+				}
+			},
+			"name": "Machine learning"
+		},
+		{
+			"type": "text",
+			"version": 20,
+			"versionNonce": 1365816208,
+			"isDeleted": true,
+			"id": "AW5wFKVW",
+			"fillStyle": "solid",
+			"strokeWidth": 2,
+			"strokeStyle": "solid",
+			"roughness": 1,
+			"opacity": 100,
+			"angle": 0,
+			"x": -506.11915533032675,
+			"y": -682.2409820483072,
+			"strokeColor": "#1e1e1e",
+			"backgroundColor": "transparent",
+			"width": 9.999984741210938,
+			"height": 25,
+			"seed": 2137990723,
+			"groupIds": [],
+			"frameId": "QAKgykm435JjdqYQ8ZSVo",
+			"roundness": null,
+			"boundElements": [],
+			"updated": 1712432132474,
+			"link": null,
+			"locked": false,
+			"fontSize": 20,
+			"fontFamily": 1,
+			"text": "",
+			"rawText": "",
+			"textAlign": "left",
+			"verticalAlign": "top",
+			"containerId": null,
+			"originalText": "",
+			"lineHeight": 1.25
 		}
 	],
 	"appState": {
@@ -61000,10 +61143,10 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 		"currentItemTextAlign": "left",
 		"currentItemStartArrowhead": null,
 		"currentItemEndArrowhead": "arrow",
-		"scrollX": 2359.150301262728,
-		"scrollY": 804.376029352592,
+		"scrollX": 1489.893183131473,
+		"scrollY": 1321.3515624999995,
 		"zoom": {
-			"value": 0.7500000000000001
+			"value": 1
 		},
 		"currentItemRoundness": "round",
 		"gridSize": null,

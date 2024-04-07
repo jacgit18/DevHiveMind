@@ -17,7 +17,7 @@ Started:
 DateFinished: 
 Relates: "[[System Design Thought Process Flow]]"
 rating: ⭐⭐⭐⭐
-pdf: "[[System Design Interview An Insider’s Guide.pdf]]"
+pdf: "[[System Design Interview An Insider’s Guide Volume 1.pdf]]"
 Priority: High
 Status: Unread
 ---

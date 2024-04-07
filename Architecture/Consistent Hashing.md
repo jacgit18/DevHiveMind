@@ -31,7 +31,7 @@ Here's how consistent hashing works:
 By using consistent hashing, distributed systems can achieve efficient data distribution and scalable performance, even in dynamic environments where nodes may join or leave the system frequently. This makes consistent hashing a fundamental technique in building robust and scalable distributed systems.
 
 
-This relates to [[System Design Interview An Insider’s Guide.pdf#page=71&selection=0,36,4,51|System Design Interview An Insider’s Guide Chapter 5]] 
+This relates to [[System Design Interview An Insider’s Guide Volume 1.pdf#page=71&selection=0,36,4,51|System Design Interview An Insider’s Guide Chapter 5]] 
 
 > Consistent hashing is widely used in real-world systems, including some notable ones:
 > • Partitioning component of Amazon’s Dynamo database [3] 
@@ -40,4 +40,4 @@ This relates to [[System Design Interview An Insider’s Guide.pdf#page=71&selec
 > • Akamai content delivery network [6] 
 > • Maglev network load balancer [7]
 
-[[System Design Interview An Insider’s Guide.pdf#page=85&selection=10,0,15,34|System Design Interview An Insider’s Guide, page 85]]
+[[System Design Interview An Insider’s Guide Volume 1.pdf#page=85&selection=10,0,15,34|System Design Interview An Insider’s Guide, page 85]]
