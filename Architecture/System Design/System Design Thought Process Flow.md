@@ -160,14 +160,16 @@ Besides that you should consider what technologies your  picking based on the ab
 ##### [[Impact of Architectural Styles |Architectural Styles]] 
 In a system design choosing the right architectural styles, is important think about what is needed and purpose of the style. In addition to that you can leverage [[When to use Domain-Driven Design |Domain Driven Design]] with some of the different architectural styles depending on domain complexity determines weather it is necessary to use it meaning the more simpler the domain is the less need for domain driven design in my opinion. You can also use [[Test Driven Development]] it just depends on your priorities. Side note things like Test Driven and Domain design are meant to be used alongside architectural styles.
 
-In the realm of architectural styles, popular ones include [[Microservices VS Monolithic Architecture |Microservices]] which can also help with overall system maintainability and scalability improving response times, often paired with [[Eureka Service]] in Java-based applications, and monolithic architecture, representing a centralized system. Monolithic architecture involves building the entire application as a single, indivisible unit, typically deployed on a single server or a closely connected set of servers. 
+In the realm of architectural styles, popular ones include [[Microservices VS Monolithic Architecture |Microservices]] which can also help with overall system maintainability and scalability improving response times, often paired with [[Eureka Service]] in Java-based applications and used in conjunction with the [[Circuit breaker pattern relationship with fault tolerance |Circuit Breaker Design Pattern]] which is considered a stability pattern by monitoring interactions between services and is typically implemented within the communication layer of a distributed system, specifically in the components responsible for making remote calls to other services or resources. This pattern is typically implemented within client side communication libraries or frameworks, API Gateways, Proxies, `Service Meshes`, Middleware, also load balancers.
+
 
 Microservices, are very good for segregating services and responsibilities allowing for both stateless and stateful services to work together. This concept is intertwined with [[Stateless & Statefull Processes]], which aligns with the [[VIII Concurrency |Concurrency factor of the 12-factor app]]. Furthermore, this concurrency factor intersects with [[Distributed Locking]], which can be implemented using various technologies such as [[ZooKeeper]] and Redis. Also stateless architecture may be more database query heavy relative to stateful architecture. Microservices tend to have each of there own databases along with things like there own [[Microservice & API gateway |individual API Gateway]] but that may vary.
+
+Alternately you utilize centralized system architectures like Monolithic architecture which involves building the entire application as a single, indivisible unit, typically deployed on a single server or a closely connected set of servers. 
 
 ##### Scalability and Performance
 > **Discuss throughout Interview this centers around backing services and traffic management but can be influenced by things like architecture**.
 
-When it comes to overall fault tolerance there are many ways to improve it including [[Circuit breaker pattern relationship with fault tolerance |Circuit Breaker Design Pattern]] which considered a stability pattern by monitoring interactions between services and, when a certain threshold of failures is reached, temporarily "opens" the circuit to prevent further requests from being sent. 
 
 
 
