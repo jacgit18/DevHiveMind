@@ -46,7 +46,7 @@ For more info read
 Throughout the designing of the system you can discuss [[Fault Tolerance]] which refers to the system's resilience against failures, errors, or faults, ensuring uninterrupted operation and maintaining user experience by reducing system downtime. It encompasses proactive measures to handle failures gracefully and sustain availability. This principle applies universally across hardware, software, networks, and systems architecture. At its essence, fault tolerance anticipates failures as inevitable and seeks to minimize their impact through proactive strategies it also applies at and between each system component. 
 
 ### Step 1: Requirements Gathering 
-> **Establish a Understanding and Design Scope of problem (3 - 10 minutes)
+> Establish a Understanding and Design Scope of problem (3 - 10 minutes)
 
 During this phase, it's pivotal to establish the system's scope while gathering both [[Business Requirements Life cycle#Requirement Types |functional and non-functional business requirements]] prioritizing functional also for more senior roles your interviewing for you will need to get better at non-functional requirements for system design interviews.
 
