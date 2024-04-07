@@ -135,7 +135,9 @@ When choosing an API you should prioritize alignment with your business requirem
 
 Depending on the Architectural Styles you then should talk and identify major components of your system like [[Physical Servers vs Virtual Servers |physical or virtual servers]] which tend to be on premises or on cloud you can talk about the [[Benefits of cloud]] and it helps in terms of outsourcing functionality or infrastructure using different service architecture making easier to implement [[Vertical vs Horizontal Scaling |Vertical and Horizontal Scaling]] managing things like database servers and instances of your application, as well as any microservices within your codebase architecture. 
 
-Another benefit of Cloud is a lot of there services includes some form of [[Rate limiting]], a crucial mechanism in system design, that can be implemented through various methods such as delaying or buffering excessive requests, ensuring controlled processing over time. When deciding [[System Design Interview An Insider’s Guide Volume 1.pdf#page=53&selection=4,0,4,30|Where to put the rate limiter?]], it's typically implemented on the server side, ensuring centralized control over incoming traffic. However, it can also be integrated into the API Gateway, offering a centralized point for managing request limits. Additionally, various algorithms exist for rate limiting, each tailored to specific use cases and requirements, ensuring efficient and effective management of incoming requests.
+Another benefit of Cloud is a lot of there services includes some form of [[Rate limiting]], a crucial mechanism in system design, that can be implemented through various methods such as delaying or buffering excessive requests, ensuring controlled processing over time. When deciding [[System Design Interview An Insider’s Guide Volume 1.pdf#page=53&selection=4,0,4,30|Where to put the rate limiter?]], it's typically implemented on the server side, ensuring centralized control over incoming traffic. However, it can also be integrated into the API Gateway, offering a centralized point for managing request limits. 
+
+Additionally, various [[System Design Interview An Insider’s Guide Volume 1.pdf#page=54&selection=24,0,29,44|Algorithm]] exist for rate limiting, each tailored to specific use cases and requirements, ensuring efficient and effective management of incoming requests.
 
 Horizontal scaling is often preferred due to the limitations of vertical scaling. For instance, it's impossible to infinitely increase CPU and memory resources on a single server. Additionally, vertical scaling lacks failover and redundancy mechanisms. If one server experiences downtime, the entire website or application goes down with it completely. System tend to follow these common [[System Scalability Strategies]].
 
@@ -166,8 +168,6 @@ Microservices, are very good for segregating services and responsibilities allow
 > **Discuss throughout Interview this centers around backing services and traffic management but can be influenced by things like architecture**.
 
 When it comes to overall fault tolerance there are many ways to improve it including [[Circuit breaker pattern relationship with fault tolerance |Circuit Breaker Design Pattern]] which considered a stability pattern by monitoring interactions between services and, when a certain threshold of failures is reached, temporarily "opens" the circuit to prevent further requests from being sent. 
-
- [[Rate Limiting]] which can be implemented delaying or buffering excessive requests, ensuring that they are processed at a controlled pace you can discuss [[System Design Interview An Insider’s Guide Volume 1.pdf#page=53&selection=4,0,4,30|Where to put the rate limiter?]] which typically server side but can be implemented in [[API Gateway]] there are also [[System Design Interview An Insider’s Guide Volume 1.pdf#page=54&selection=24,0,29,44|Algorithms for rate limiting]].
 
 
 
