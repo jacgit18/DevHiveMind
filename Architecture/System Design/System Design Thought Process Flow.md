@@ -60,8 +60,7 @@ When crafting your design, prioritize a forward-thinking approach that anticipat
 
 **Database > Backend > [[System Design Thought Process Flow#API Gateway |API Gateway]] > Client
 
-Create an Entity Relationship Diagram (ERD) to define clear relationships and [[Schema Design]] 
-you can also discuss table [[Normalization & Denormalization]] to optimize schema and overall database performance. But once that is done you can come up with a list of general feature endpoints then come up with estimations.
+Create an Entity Relationship Diagram (ERD) to define clear relationships and [[Schema Design]] then discuss table [[Normalization & Denormalization]] to optimize schema and overall database performance. But once that is done you can come up with a list of general feature endpoints then come up with estimations.
 
 ##### Storage Estimation Examples
 > Keep estimation simple focus on storage needed and not to much on queries especially if there are other critical things to discuss. 
@@ -126,7 +125,6 @@ An API Gateway serves as a custom intermediary or [[API Gateway & Middleware Imp
 API Gateways can be improve performance in many ways like caching responses from backend services, reducing the need for repeated processing of the same requests it has many befits
 
 
-[[API gateways can improve system performance in several ways]]
 
 
 ###### Third Party API
