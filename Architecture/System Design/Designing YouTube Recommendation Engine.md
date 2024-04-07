@@ -1,17 +1,21 @@
 ---
 excalidraw-plugin: parsed
-tags: null
+tags:
+  - distributedSystem
+  - interview
+  - systemDesign
 author:
   - jacgit18
 Comments: Placeholder comment any thing else you want to mention about the document.
 Purpose: This documentation discusses
-Status: Perpetual
+Status: Tackling
 Started: 2024-04-05T00:00:00.000Z
-EditDate: null
-Relates: null
+EditDate: 2024-04-06
+Relates: 
 Peer Reviewed: 0
-dg-publish: null
+dg-publish:
 ---
+Can expand on this system week by week growing it or mock by mock interview in a week.
 ## Requirements
 
 
@@ -19,22 +23,52 @@ dg-publish: null
 
 ## Userbase
 
+10,000 user
 
-## Estimations
+small storage foreach user easier to calulate
 
+1 gb per user
 
 ## Data points
+views, likes, dislikes(not available), comments
 
-*Returns all business on a user location*
+data stats user daily to monthly
+
+
+user stories 
+
+### Database Schema 
+**Endpoint**
+READ
+- GET
+
+WRITE
+- POST 
+- PATCH/PUT
+- DELETE
+
 **Request:** 
-GET /v1/search/nearby
-Other Endpoints which can flow from some service..
 
-| Field     | Description                                        | Type   |
-| --------- | -------------------------------------------------- | ------ |
-| Latitude  | Lat of given location                              | double |
-| Longitude | Long of given location                             | double |
-| Radius    | **Optional**: Default is 500 meters(about 3 miles) | int    |
+| DB    | Request | Description                                | Path                    |
+| ----- | ------- | ------------------------------------------ | ----------------------- |
+| READ  | GET     | *Returns nearby business at user location* | **/v1/search/nearby**   |
+| READ  | GET     |                                            | **/v1/search/specific** |
+| READ  | GET     |                                            | **/v2/search/specific** |
+| WRITE | POST    |                                            | ..                      |
+| WRITE | DELETE  |                                            | ..                      |
+| WRITE | PATCH   |                                            | ..                      |
+|       |         |                                            |                         |
+Other endpoints which flow from some microservices..
+
+| Field     | Description                                | Type    |
+| --------- | ------------------------------------------ | ------- |
+| Latitude  | **\*** Lat of given location               | Double  |
+| Longitude | **\*** Long of given location              | Double  |
+| Radius    | **O** Default is 500 meters(about 3 miles) | Int     |
+| ..        | ..                                         | VarChar |
+| ..        | ..                                         | Char    |
+| ..        | ..                                         | Boolean |
+
 **Response:** 
 ```json
 {
@@ -43,10 +77,30 @@ Other Endpoints which can flow from some service..
 }
 ```
 
+## Estimations
+
+Database
+
+Network Traffic
+
+Memory
+
+Bandwidth
+
+#todo/Personal/Low 
+- [ ] Senior level estimation to research storage around machine learning models. **Total Storage:** Considering additional storage for video metadata, user profiles, and machine learning model checkpoints, let's estimate a total storage requirement of 500 GB per month. 
+
 
 ## Architecture
+Typically Microservices
 
 ### Backing Services
+
+#### Cloud Infrastructure
+
+
+#### Non-Cloud Infrastructure
+##### Caches
 
 
 ## Optimizations

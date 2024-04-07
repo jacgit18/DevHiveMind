@@ -42,7 +42,6 @@ For more info read
 - [ ] Payment system [[System Design Interview An Insider’s Guide Volume 2.pdf#page=316|System Design Interview An Insider’s Guide Volume 2, page 316]]
 - [ ] Refine and trim cloud notes not trying to document to many stuff just key details and relationships and stuff that may actually come up.
 - [ ] Use Chatgpt to recommend libraries and AWS services for project but define what the project is and come up with data model.
-- [ ] Compress API Gateway notes
 
 Throughout the designing of the system you can discuss [[Fault Tolerance]] which refers to the system's resilience against failures, errors, or faults, ensuring uninterrupted operation and maintaining user experience by reducing system downtime. It encompasses proactive measures to handle failures gracefully and sustain availability. This principle applies universally across hardware, software, networks, and systems architecture. At its essence, fault tolerance anticipates failures as inevitable and seeks to minimize their impact through proactive strategies it also applies at and between each system component. 
 
@@ -88,9 +87,6 @@ When choosing an API, or other things like libraries, and frameworks you should 
 User hits load balancer routes traffic to api gateway endpoint hits the backend server then some database query is triggered doing some read or write that is direct towards some main db or replicated db it depends on db architecture. 
 
 **Request:** 
-*Returns all business on a user location*
-GET /v1/search/nearby
-Other Endpoints which can flow from some service..
 
 | Field     | Description                                        | Type   |
 | --------- | -------------------------------------------------- | ------ |
@@ -147,7 +143,7 @@ In a system design choosing the right [[Impact of Architectural Styles |Architec
 
 In the realm of architectural styles, popular ones include [[Microservices VS Monolithic Architecture |Microservices]] which can also help with overall system maintainability and scalability improving response times, often paired with [[Eureka Service]] in Java-based applications, and monolithic architecture, representing a centralized system. Monolithic architecture involves building the entire application as a single, indivisible unit, typically deployed on a single server or a closely connected set of servers. 
 
-Microservices, are very good for segregating services and responsibilities allowing for both stateless and stateful services to work together. This concept is intertwined with [[Stateless & Statefull Processes]], which aligns with the [[VIII Concurrency |Concurrency factor of the 12-factor app]]. Furthermore, this concurrency factor intersects with [[Distributed Locking]], which can be implemented using various technologies such as [[ZooKeeper]] and Redis. Also stateless architecture may be more database query heavy relative to stateful architecture.
+Microservices, are very good for segregating services and responsibilities allowing for both stateless and stateful services to work together. This concept is intertwined with [[Stateless & Statefull Processes]], which aligns with the [[VIII Concurrency |Concurrency factor of the 12-factor app]]. Furthermore, this concurrency factor intersects with [[Distributed Locking]], which can be implemented using various technologies such as [[ZooKeeper]] and Redis. Also stateless architecture may be more database query heavy relative to stateful architecture. microservices also tend to each have there own databases along with things like there own [[Microservice & API gateway |individual API Gateway]] .
 
 
 When it comes to fault tolerance there are many ways to improve including [[Circuit breaker pattern relationship with fault tolerance |Circuit Breaker Design Pattern]]  which considered a stability pattern by monitoring interactions between services and, when a certain threshold of failures is reached, temporarily "opens" the circuit to prevent further requests from being sent. 

@@ -22,7 +22,7 @@ As modern websites and applications are like busy beehives, we use a variety of 
 - Delivers requests to the right services.  
 - Ideal for bustling applications with numerous intercommunicating services.  
 
-## [[Load Balancer]]: traffic cop  
+## [[Load Balancer]]: traffic cop
 - Directs traffic evenly across servers, preventing bottlenecks  
 - Essential for popular websites with heavy traffic and high demand.  
 ## [[Proxy |Reverse Proxy]]: change identity  

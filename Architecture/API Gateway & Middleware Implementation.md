@@ -7,7 +7,7 @@ Purpose: This documentation discusses
 Status: Refinement
 Started: 
 EditDate: 
-Relates: 
+Relates: "[[API Gateway]]"
 Peer Reviewed: 0
 dg-publish:
 ---
