@@ -122,7 +122,7 @@ Then you can discuss governance like [[Data Retention Target]] and [[Database da
 ###### API Gateway
 An API Gateway serves as a custom intermediary or [[API Gateway & Middleware Implementation|middleware]] between the backend and client applications, facilitating the exposure of specific routes or functionalities from the backend. Alternatively, you can utilize a third-party API to expose backend server routes. In this setup, when a user sends a request, it first reaches the load balancer, which then directs the traffic to the API Gateway endpoint. The API Gateway then communicates with the backend server, which may trigger database queries involving read or write operations. These database queries are directed towards either a main database or a replicated database, depending on the architecture of the database system in use.
 
-API Gateways can be improve performance in many ways like caching responses from backend services, reducing the need for repeated processing of the same requests it has many befits
+API gateways can improve system performance in several ways like caching responses from backend services, reducing the need for repeated processing of the same requests and many other performance [[API gateways can improve system performance in several ways |benefits]]. 
 
 
 
@@ -136,6 +136,8 @@ When choosing an API you should prioritize alignment with your business requirem
 Depending on the Architectural Styles you then should talk and identify major components of your system like [[Physical Servers vs Virtual Servers |physical or virtual servers]] which tend to be on premises or on cloud you can talk about the [[Benefits of cloud]] and it helps in terms of outsourcing functionality or infrastructure using different service architecture making easier to implement [[Vertical vs Horizontal Scaling |Vertical and Horizontal Scaling]] managing things like database servers and instances of your application, as well as any microservices within your codebase architecture. 
 
 Horizontal scaling is often preferred due to the limitations of vertical scaling. For instance, it's impossible to infinitely increase CPU and memory resources on a single server. Additionally, vertical scaling lacks failover and redundancy mechanisms. If one server experiences downtime, the entire website or application goes down with it completely. System tend to follow these common [[System Scalability Strategies]].
+
+To enhance system scaling and performance, various technologies are commonly employed to distribute traffic across [[server pools]]. Among these, [[Load Balancer |load balancers]] technologies or strategies play a crucial role, facilitating load distribution and improving fault tolerance through techniques such as [[Load Shedding]]. Additionally, [[Consistent Hashing]] stands out as one of several methods utilized to implement a load balancer, providing efficient routing of requests while maintaining consistency in data distribution across servers.
 
 Cloud services range from IAAS to SAAS and provide many benefits like availability zones and other cloud services that add fault tolerance to the overall system. 
 
@@ -162,7 +164,7 @@ Microservices, are very good for segregating services and responsibilities allow
 
 When it comes to overall fault tolerance there are many ways to improve it including [[Circuit breaker pattern relationship with fault tolerance |Circuit Breaker Design Pattern]] which considered a stability pattern by monitoring interactions between services and, when a certain threshold of failures is reached, temporarily "opens" the circuit to prevent further requests from being sent. 
 
-To improve system scaling and performance you can use several technologies commonly used to distribute traffic across [[server pools]] like [[Load Balancer |load balancers]] technologies or strategies this also implement [[Load Shedding]] which improves fault tolerance you can even discuss [[Consistent Hashing]] which is one of several methods used to implement a load balancer. Also [[Rate Limiting]] can be implemented delaying or buffering excessive requests, ensuring that they are processed at a controlled pace you can discuss [[System Design Interview An Insider’s Guide Volume 1.pdf#page=53&selection=4,0,4,30|Where to put the rate limiter?]] which typically server side but can be implemented in [[API Gateway]] there are also [[System Design Interview An Insider’s Guide Volume 1.pdf#page=54&selection=24,0,29,44|Algorithms for rate limiting]].
+Also [[Rate Limiting]] can be implemented delaying or buffering excessive requests, ensuring that they are processed at a controlled pace you can discuss [[System Design Interview An Insider’s Guide Volume 1.pdf#page=53&selection=4,0,4,30|Where to put the rate limiter?]] which typically server side but can be implemented in [[API Gateway]] there are also [[System Design Interview An Insider’s Guide Volume 1.pdf#page=54&selection=24,0,29,44|Algorithms for rate limiting]].
 
 There are Networking components that can improve performance such as routers like [[Reverse proxy vs API gateway vs load balancer]].
 

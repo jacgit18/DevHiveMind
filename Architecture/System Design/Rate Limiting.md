@@ -9,13 +9,14 @@ author:
   - chatgpt
 Comments: This can be a system design question your asked.
 Purpose: This documentation discusses rate limits.
-Status: Done
+Status: Refinement
 Started: 
 EditDate: 2024-03-03
 Relates: "[[Client Vs Server side Rate Limiting]]"
 Peer Reviewed: 0
 dg-publish:
 ---
+Rate limiting can be part of many system components and also within buisness logic in your codebase
 ### **Understanding Business-Level Rate Limits (Quotas)**
 
 Rate limiting, a crucial traffic management tool for API owners, safeguards systems from overload and aligns API usage with business goals. A closer look at rate limits, particularly the subcategories, offers a comprehensive view of traffic management strategies.
