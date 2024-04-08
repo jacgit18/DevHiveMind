@@ -35,7 +35,7 @@ dg-publish:
    - Assuming each view's metadata is 100 bytes: 1,000,000 views * 100 bytes = 100,000,000 bytes
 
 5. **Network Traffic and Bandwidth:**
-   - Assuming each comment is transmitted as HTTP requests with an average size of 1 KB: 20,100 comments * 1 KB = 20,100,000 KB
+   - Assuming each comment is transmitted as HTTP requests with an average size of 1 KB: 20,000 comments * 1 KB(1024 Bytes) = 20,480,000 KB
    - Assuming each view is streamed at an average bitrate of 5 Mbps: 30,000,000 views * 5 Mbps = 150,000,000 Mbps
    - Assuming each like is transmitted as a small packet of 100 bytes: 9,000,000 likes * 100 bytes = 900,000,000 bytes
 
