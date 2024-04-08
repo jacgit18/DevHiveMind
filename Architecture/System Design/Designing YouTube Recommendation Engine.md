@@ -23,11 +23,30 @@ Design a recommendation engine for YouTube that provides personalized video reco
 
 ## Userbase
 
-10,000 user
+10,000 active user
 
-small storage foreach user easier to calulate
+2 comments on average a month
+100 views a month shorts and regular videos
+30 likes in a month between shorts and regular videos
 
-1 gb per user
+
+from months you can break down to weeks to days to seconds 
+
+3,600 seconds in hour
+
+24 hours in a day
+
+86,400 seconds per day
+
+730 hours in a month
+
+use chatGpt to come up with cheetsheet
+
+
+
+small storage for each user easier to calculate
+
+1 mb per user
 
 ## Data points
 comments, views, likes, 

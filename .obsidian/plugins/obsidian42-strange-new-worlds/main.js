@@ -23,7 +23,7 @@ __export(main_exports, {
   default: () => SNWPlugin
 });
 module.exports = __toCommonJS(main_exports);
-var import_obsidian14 = require("obsidian");
+var import_obsidian13 = require("obsidian");
 
 // src/indexer.ts
 var import_obsidian = require("obsidian");
@@ -82,21 +82,21 @@ function buildLinksAndReferences() {
     }
   });
   const snwIndexExceptionsList = Object.entries(app.metadataCache.metadataCache).filter(
-    (e) => {
+    (e2) => {
       var _a2, _b2;
-      return (_b2 = (_a2 = e[1]) == null ? void 0 : _a2.frontmatter) == null ? void 0 : _b2["snw-index-exclude"];
+      return (_b2 = (_a2 = e2[1]) == null ? void 0 : _a2.frontmatter) == null ? void 0 : _b2["snw-index-exclude"];
     }
   );
-  const snwIndexExceptions = Object.entries(app.metadataCache.fileCache).filter((e) => {
-    return snwIndexExceptionsList.find((f) => f[0] === e[1].hash);
+  const snwIndexExceptions = Object.entries(app.metadataCache.fileCache).filter((e2) => {
+    return snwIndexExceptionsList.find((f3) => f3[0] === e2[1].hash);
   });
-  for (let i = 0; i < allLinkResolutions.length; i++) {
-    allLinkResolutions[i].excludedFile = false;
-    if ((_b = (_a = allLinkResolutions[i]) == null ? void 0 : _a.resolvedFile) == null ? void 0 : _b.path) {
-      const fileName = (_d = (_c = allLinkResolutions[i].resolvedFile) == null ? void 0 : _c.path) != null ? _d : "";
-      for (let e = 0; e < snwIndexExceptions.length; e++) {
-        if (fileName == snwIndexExceptions[e][0]) {
-          allLinkResolutions[i].excludedFile = true;
+  for (let i3 = 0; i3 < allLinkResolutions.length; i3++) {
+    allLinkResolutions[i3].excludedFile = false;
+    if ((_b = (_a = allLinkResolutions[i3]) == null ? void 0 : _a.resolvedFile) == null ? void 0 : _b.path) {
+      const fileName = (_d = (_c = allLinkResolutions[i3].resolvedFile) == null ? void 0 : _c.path) != null ? _d : "";
+      for (let e2 = 0; e2 < snwIndexExceptions.length; e2++) {
+        if (fileName == snwIndexExceptions[e2][0]) {
+          allLinkResolutions[i3].excludedFile = true;
           break;
         }
       }
@@ -255,7 +255,7 @@ function parseLinkTextToFullPath(link) {
 
 // src/view-extensions/references-cm6.ts
 var import_view = require("@codemirror/view");
-var import_obsidian7 = require("obsidian");
+var import_obsidian6 = require("obsidian");
 
 // node_modules/@popperjs/core/lib/enums.js
 var top = "top";
@@ -432,19 +432,19 @@ function getBoundingClientRect(element, includeScale, isFixedStrategy) {
   }
   var _ref = isElement(element) ? getWindow(element) : window, visualViewport = _ref.visualViewport;
   var addVisualOffsets = !isLayoutViewport() && isFixedStrategy;
-  var x = (clientRect.left + (addVisualOffsets && visualViewport ? visualViewport.offsetLeft : 0)) / scaleX;
-  var y = (clientRect.top + (addVisualOffsets && visualViewport ? visualViewport.offsetTop : 0)) / scaleY;
+  var x2 = (clientRect.left + (addVisualOffsets && visualViewport ? visualViewport.offsetLeft : 0)) / scaleX;
+  var y2 = (clientRect.top + (addVisualOffsets && visualViewport ? visualViewport.offsetTop : 0)) / scaleY;
   var width = clientRect.width / scaleX;
   var height = clientRect.height / scaleY;
   return {
     width,
     height,
-    top: y,
-    right: x + width,
-    bottom: y + height,
-    left: x,
-    x,
-    y
+    top: y2,
+    right: x2 + width,
+    bottom: y2 + height,
+    left: x2,
+    x: x2,
+    y: y2
   };
 }
 
@@ -572,8 +572,8 @@ function within(min2, value, max2) {
   return max(min2, min(value, max2));
 }
 function withinMaxClamp(min2, value, max2) {
-  var v = within(min2, value, max2);
-  return v > max2 ? max2 : v;
+  var v2 = within(min2, value, max2);
+  return v2 > max2 ? max2 : v2;
 }
 
 // node_modules/@popperjs/core/lib/utils/getFreshSideObject.js
@@ -674,26 +674,26 @@ var unsetSides = {
   left: "auto"
 };
 function roundOffsetsByDPR(_ref, win) {
-  var x = _ref.x, y = _ref.y;
+  var x2 = _ref.x, y2 = _ref.y;
   var dpr = win.devicePixelRatio || 1;
   return {
-    x: round(x * dpr) / dpr || 0,
-    y: round(y * dpr) / dpr || 0
+    x: round(x2 * dpr) / dpr || 0,
+    y: round(y2 * dpr) / dpr || 0
   };
 }
 function mapToStyles(_ref2) {
   var _Object$assign2;
   var popper2 = _ref2.popper, popperRect = _ref2.popperRect, placement = _ref2.placement, variation = _ref2.variation, offsets = _ref2.offsets, position = _ref2.position, gpuAcceleration = _ref2.gpuAcceleration, adaptive = _ref2.adaptive, roundOffsets = _ref2.roundOffsets, isFixed = _ref2.isFixed;
-  var _offsets$x = offsets.x, x = _offsets$x === void 0 ? 0 : _offsets$x, _offsets$y = offsets.y, y = _offsets$y === void 0 ? 0 : _offsets$y;
+  var _offsets$x = offsets.x, x2 = _offsets$x === void 0 ? 0 : _offsets$x, _offsets$y = offsets.y, y2 = _offsets$y === void 0 ? 0 : _offsets$y;
   var _ref3 = typeof roundOffsets === "function" ? roundOffsets({
-    x,
-    y
+    x: x2,
+    y: y2
   }) : {
-    x,
-    y
+    x: x2,
+    y: y2
   };
-  x = _ref3.x;
-  y = _ref3.y;
+  x2 = _ref3.x;
+  y2 = _ref3.y;
   var hasX = offsets.hasOwnProperty("x");
   var hasY = offsets.hasOwnProperty("y");
   var sideX = left;
@@ -717,8 +717,8 @@ function mapToStyles(_ref2) {
         // $FlowFixMe[prop-missing]
         offsetParent[heightProp]
       );
-      y -= offsetY - popperRect.height;
-      y *= gpuAcceleration ? 1 : -1;
+      y2 -= offsetY - popperRect.height;
+      y2 *= gpuAcceleration ? 1 : -1;
     }
     if (placement === left || (placement === top || placement === bottom) && variation === end) {
       sideX = right;
@@ -726,27 +726,27 @@ function mapToStyles(_ref2) {
         // $FlowFixMe[prop-missing]
         offsetParent[widthProp]
       );
-      x -= offsetX - popperRect.width;
-      x *= gpuAcceleration ? 1 : -1;
+      x2 -= offsetX - popperRect.width;
+      x2 *= gpuAcceleration ? 1 : -1;
     }
   }
   var commonStyles = Object.assign({
     position
   }, adaptive && unsetSides);
   var _ref4 = roundOffsets === true ? roundOffsetsByDPR({
-    x,
-    y
+    x: x2,
+    y: y2
   }, getWindow(popper2)) : {
-    x,
-    y
+    x: x2,
+    y: y2
   };
-  x = _ref4.x;
-  y = _ref4.y;
+  x2 = _ref4.x;
+  y2 = _ref4.y;
   if (gpuAcceleration) {
     var _Object$assign;
-    return Object.assign({}, commonStyles, (_Object$assign = {}, _Object$assign[sideY] = hasY ? "0" : "", _Object$assign[sideX] = hasX ? "0" : "", _Object$assign.transform = (win.devicePixelRatio || 1) <= 1 ? "translate(" + x + "px, " + y + "px)" : "translate3d(" + x + "px, " + y + "px, 0)", _Object$assign));
+    return Object.assign({}, commonStyles, (_Object$assign = {}, _Object$assign[sideY] = hasY ? "0" : "", _Object$assign[sideX] = hasX ? "0" : "", _Object$assign.transform = (win.devicePixelRatio || 1) <= 1 ? "translate(" + x2 + "px, " + y2 + "px)" : "translate3d(" + x2 + "px, " + y2 + "px, 0)", _Object$assign));
   }
-  return Object.assign({}, commonStyles, (_Object$assign2 = {}, _Object$assign2[sideY] = hasY ? y + "px" : "", _Object$assign2[sideX] = hasX ? x + "px" : "", _Object$assign2.transform = "", _Object$assign2));
+  return Object.assign({}, commonStyles, (_Object$assign2 = {}, _Object$assign2[sideY] = hasY ? y2 + "px" : "", _Object$assign2[sideX] = hasX ? x2 + "px" : "", _Object$assign2.transform = "", _Object$assign2));
 }
 function computeStyles(_ref5) {
   var state = _ref5.state, options = _ref5.options;
@@ -872,22 +872,22 @@ function getViewportRect(element, strategy) {
   var visualViewport = win.visualViewport;
   var width = html.clientWidth;
   var height = html.clientHeight;
-  var x = 0;
-  var y = 0;
+  var x2 = 0;
+  var y2 = 0;
   if (visualViewport) {
     width = visualViewport.width;
     height = visualViewport.height;
     var layoutViewport = isLayoutViewport();
     if (layoutViewport || !layoutViewport && strategy === "fixed") {
-      x = visualViewport.offsetLeft;
-      y = visualViewport.offsetTop;
+      x2 = visualViewport.offsetLeft;
+      y2 = visualViewport.offsetTop;
     }
   }
   return {
     width,
     height,
-    x: x + getWindowScrollBarX(element),
-    y
+    x: x2 + getWindowScrollBarX(element),
+    y: y2
   };
 }
 
@@ -899,16 +899,16 @@ function getDocumentRect(element) {
   var body = (_element$ownerDocumen = element.ownerDocument) == null ? void 0 : _element$ownerDocumen.body;
   var width = max(html.scrollWidth, html.clientWidth, body ? body.scrollWidth : 0, body ? body.clientWidth : 0);
   var height = max(html.scrollHeight, html.clientHeight, body ? body.scrollHeight : 0, body ? body.clientHeight : 0);
-  var x = -winScroll.scrollLeft + getWindowScrollBarX(element);
-  var y = -winScroll.scrollTop;
+  var x2 = -winScroll.scrollLeft + getWindowScrollBarX(element);
+  var y2 = -winScroll.scrollTop;
   if (getComputedStyle2(body || html).direction === "rtl") {
-    x += max(html.clientWidth, body ? body.clientWidth : 0) - width;
+    x2 += max(html.clientWidth, body ? body.clientWidth : 0) - width;
   }
   return {
     width,
     height,
-    x,
-    y
+    x: x2,
+    y: y2
   };
 }
 
@@ -1120,8 +1120,8 @@ function computeAutoPlacement(state, options) {
     })[getBasePlacement(placement2)];
     return acc;
   }, {});
-  return Object.keys(overflows).sort(function(a, b) {
-    return overflows[a] - overflows[b];
+  return Object.keys(overflows).sort(function(a2, b2) {
+    return overflows[a2] - overflows[b2];
   });
 }
 
@@ -1158,8 +1158,8 @@ function flip(_ref) {
   var checksMap = /* @__PURE__ */ new Map();
   var makeFallbackChecks = true;
   var firstFittingPlacement = placements2[0];
-  for (var i = 0; i < placements2.length; i++) {
-    var placement = placements2[i];
+  for (var i3 = 0; i3 < placements2.length; i3++) {
+    var placement = placements2[i3];
     var _basePlacement = getBasePlacement(placement);
     var isStartVariation = getVariation(placement) === start;
     var isVertical = [top, bottom].indexOf(_basePlacement) >= 0;
@@ -1309,10 +1309,10 @@ function offset(_ref2) {
     acc[placement] = distanceAndSkiddingToXY(placement, state.rects, offset2);
     return acc;
   }, {});
-  var _data$state$placement = data[state.placement], x = _data$state$placement.x, y = _data$state$placement.y;
+  var _data$state$placement = data[state.placement], x2 = _data$state$placement.x, y2 = _data$state$placement.y;
   if (state.modifiersData.popperOffsets != null) {
-    state.modifiersData.popperOffsets.x += x;
-    state.modifiersData.popperOffsets.y += y;
+    state.modifiersData.popperOffsets.x += x2;
+    state.modifiersData.popperOffsets.y += y2;
   }
   state.modifiersData[name] = data;
 }
@@ -1617,8 +1617,8 @@ function popperGenerator(generatorOptions) {
           popper: listScrollParents(popper2)
         };
         var orderedModifiers = orderModifiers(mergeByName([].concat(defaultModifiers2, state.options.modifiers)));
-        state.orderedModifiers = orderedModifiers.filter(function(m) {
-          return m.enabled;
+        state.orderedModifiers = orderedModifiers.filter(function(m2) {
+          return m2.enabled;
         });
         runModifierEffects();
         return instance.update();
@@ -1733,8 +1733,8 @@ function hasOwnProperty(obj, key) {
 }
 function getValueAtIndexOrReturn(value, index, defaultValue) {
   if (Array.isArray(value)) {
-    var v = value[index];
-    return v == null ? Array.isArray(defaultValue) ? defaultValue[index] : defaultValue : v;
+    var v2 = value[index];
+    return v2 == null ? Array.isArray(defaultValue) ? defaultValue[index] : defaultValue : v2;
   }
   return value;
 }
@@ -2071,7 +2071,7 @@ function getDataAttributeProps(reference2, plugins) {
     } else {
       try {
         acc[key] = JSON.parse(valueAsString);
-      } catch (e) {
+      } catch (e2) {
         acc[key] = valueAsString;
       }
     }
@@ -2917,8 +2917,8 @@ function createTippy(reference2, passedProps) {
     if (popper2.parentNode) {
       popper2.parentNode.removeChild(popper2);
     }
-    mountedInstances = mountedInstances.filter(function(i) {
-      return i !== instance;
+    mountedInstances = mountedInstances.filter(function(i3) {
+      return i3 !== instance;
     });
     instance.state.isMounted = false;
     invokeHook("onHidden", [instance]);
@@ -3018,7 +3018,7 @@ tippy.setDefaultProps({
 var tippy_esm_default = tippy;
 
 // src/ui/components/uic-ref--parent.ts
-var import_obsidian5 = require("obsidian");
+var import_obsidian4 = require("obsidian");
 
 // src/utils.ts
 var getScrollParent2 = (element, includeHidden) => {
@@ -3052,9 +3052,9 @@ var scrollResultsIntoView = (resultContainerEl) => {
 };
 
 // src/ui/components/uic-ref-area.ts
-var import_obsidian4 = require("obsidian");
+var import_obsidian3 = require("obsidian");
 
-// src/ui/components/uic-ref-item.ts
+// src/ui/components/uic-ref-item.tsx
 var import_obsidian2 = require("obsidian");
 
 // src/ui/components/context/position-utils.ts
@@ -3085,8 +3085,8 @@ var ContextBuilder = class {
     this.getListItemWithDescendants = (listItemIndex) => {
       const rootListItem = this.listItems[listItemIndex];
       const listItemWithDescendants = [rootListItem];
-      for (let i = listItemIndex + 1; i < this.listItems.length; i++) {
-        const nextItem = this.listItems[i];
+      for (let i3 = listItemIndex + 1; i3 < this.listItems.length; i3++) {
+        const nextItem = this.listItems[i3];
         if (nextItem.parent < rootListItem.position.start.line) {
           return listItemWithDescendants;
         }
@@ -3113,8 +3113,8 @@ var ContextBuilder = class {
     if (this.isTopLevelListItem(thisItem)) {
       return listBreadcrumbs;
     }
-    for (let i = thisItemIndex - 1; i >= 0; i--) {
-      const currentItem = this.listItems[i];
+    for (let i3 = thisItemIndex - 1; i3 >= 0; i3--) {
+      const currentItem = this.listItems[i3];
       const currentItemIsHigherUp = currentItem.parent < currentParent;
       if (currentItemIsHigherUp) {
         listBreadcrumbs.unshift(currentItem);
@@ -3143,8 +3143,8 @@ var ContextBuilder = class {
     const collectAncestorHeadingsForHeadingAtIndex = (startIndex) => {
       let currentLevel = this.headings[startIndex].level;
       const previousHeadingIndex = startIndex - 1;
-      for (let i = previousHeadingIndex; i >= 0; i--) {
-        const lookingAtHeading = this.headings[i];
+      for (let i3 = previousHeadingIndex; i3 >= 0; i3--) {
+        const lookingAtHeading = this.headings[i3];
         if (lookingAtHeading.level < currentLevel) {
           currentLevel = lookingAtHeading.level;
           headingBreadcrumbs.unshift(lookingAtHeading);
@@ -3203,23 +3203,339 @@ var formatListWithDescendants = (textInput, listItems) => {
 };
 var formatHeadingBreadCrumbs = (breadcrumbs) => chainBreadcrumbs(breadcrumbs.map((headingCache) => headingCache.heading));
 
-// src/ui/components/uic-ref-item.ts
+// node_modules/preact/dist/preact.module.js
+var n;
+var l;
+var u;
+var t;
+var i;
+var o;
+var r;
+var f;
+var e;
+var c = {};
+var s = [];
+var a = /acit|ex(?:s|g|n|p|$)|rph|grid|ows|mnc|ntw|ine[ch]|zoo|^ord|itera/i;
+var h = Array.isArray;
+function v(n2, l2) {
+  for (var u3 in l2)
+    n2[u3] = l2[u3];
+  return n2;
+}
+function p(n2) {
+  var l2 = n2.parentNode;
+  l2 && l2.removeChild(n2);
+}
+function y(l2, u3, t2) {
+  var i3, o2, r2, f3 = {};
+  for (r2 in u3)
+    "key" == r2 ? i3 = u3[r2] : "ref" == r2 ? o2 = u3[r2] : f3[r2] = u3[r2];
+  if (arguments.length > 2 && (f3.children = arguments.length > 3 ? n.call(arguments, 2) : t2), "function" == typeof l2 && null != l2.defaultProps)
+    for (r2 in l2.defaultProps)
+      void 0 === f3[r2] && (f3[r2] = l2.defaultProps[r2]);
+  return d(l2, f3, i3, o2, null);
+}
+function d(n2, t2, i3, o2, r2) {
+  var f3 = { type: n2, props: t2, key: i3, ref: o2, __k: null, __: null, __b: 0, __e: null, __d: void 0, __c: null, constructor: void 0, __v: null == r2 ? ++u : r2, __i: -1, __u: 0 };
+  return null == r2 && null != l.vnode && l.vnode(f3), f3;
+}
+function g(n2) {
+  return n2.children;
+}
+function b(n2, l2) {
+  this.props = n2, this.context = l2;
+}
+function m(n2, l2) {
+  if (null == l2)
+    return n2.__ ? m(n2.__, n2.__i + 1) : null;
+  for (var u3; l2 < n2.__k.length; l2++)
+    if (null != (u3 = n2.__k[l2]) && null != u3.__e)
+      return u3.__e;
+  return "function" == typeof n2.type ? m(n2) : null;
+}
+function w(n2) {
+  var l2, u3;
+  if (null != (n2 = n2.__) && null != n2.__c) {
+    for (n2.__e = n2.__c.base = null, l2 = 0; l2 < n2.__k.length; l2++)
+      if (null != (u3 = n2.__k[l2]) && null != u3.__e) {
+        n2.__e = n2.__c.base = u3.__e;
+        break;
+      }
+    return w(n2);
+  }
+}
+function k(n2) {
+  (!n2.__d && (n2.__d = true) && i.push(n2) && !x.__r++ || o !== l.debounceRendering) && ((o = l.debounceRendering) || r)(x);
+}
+function x() {
+  var n2, u3, t2, o2, r2, e2, c2, s2, a2;
+  for (i.sort(f); n2 = i.shift(); )
+    n2.__d && (u3 = i.length, o2 = void 0, e2 = (r2 = (t2 = n2).__v).__e, s2 = [], a2 = [], (c2 = t2.__P) && ((o2 = v({}, r2)).__v = r2.__v + 1, l.vnode && l.vnode(o2), F(c2, o2, r2, t2.__n, void 0 !== c2.ownerSVGElement, 32 & r2.__u ? [e2] : null, s2, null == e2 ? m(r2) : e2, !!(32 & r2.__u), a2), o2.__v = r2.__v, o2.__.__k[o2.__i] = o2, L(s2, o2, a2), o2.__e != e2 && w(o2)), i.length > u3 && i.sort(f));
+  x.__r = 0;
+}
+function C(n2, l2, u3, t2, i3, o2, r2, f3, e2, a2, h2) {
+  var v2, p2, y2, d2, _, g2 = t2 && t2.__k || s, b2 = l2.length;
+  for (u3.__d = e2, P(u3, l2, g2), e2 = u3.__d, v2 = 0; v2 < b2; v2++)
+    null != (y2 = u3.__k[v2]) && "boolean" != typeof y2 && "function" != typeof y2 && (p2 = -1 === y2.__i ? c : g2[y2.__i] || c, y2.__i = v2, F(n2, y2, p2, i3, o2, r2, f3, e2, a2, h2), d2 = y2.__e, y2.ref && p2.ref != y2.ref && (p2.ref && O(p2.ref, null, y2), h2.push(y2.ref, y2.__c || d2, y2)), null == _ && null != d2 && (_ = d2), 65536 & y2.__u || p2.__k === y2.__k ? (d2 || p2.__e != e2 || (e2 = m(p2)), e2 = S(y2, e2, n2)) : "function" == typeof y2.type && void 0 !== y2.__d ? e2 = y2.__d : d2 && (e2 = d2.nextSibling), y2.__d = void 0, y2.__u &= -196609);
+  u3.__d = e2, u3.__e = _;
+}
+function P(n2, l2, u3) {
+  var t2, i3, o2, r2, f3, e2 = l2.length, c2 = u3.length, s2 = c2, a2 = 0;
+  for (n2.__k = [], t2 = 0; t2 < e2; t2++)
+    r2 = t2 + a2, null != (i3 = n2.__k[t2] = null == (i3 = l2[t2]) || "boolean" == typeof i3 || "function" == typeof i3 ? null : "string" == typeof i3 || "number" == typeof i3 || "bigint" == typeof i3 || i3.constructor == String ? d(null, i3, null, null, null) : h(i3) ? d(g, { children: i3 }, null, null, null) : void 0 === i3.constructor && i3.__b > 0 ? d(i3.type, i3.props, i3.key, i3.ref ? i3.ref : null, i3.__v) : i3) ? (i3.__ = n2, i3.__b = n2.__b + 1, f3 = I(i3, u3, r2, s2), i3.__i = f3, o2 = null, -1 !== f3 && (s2--, (o2 = u3[f3]) && (o2.__u |= 131072)), null == o2 || null === o2.__v ? (-1 == f3 && a2--, "function" != typeof i3.type && (i3.__u |= 65536)) : f3 !== r2 && (f3 === r2 + 1 ? a2++ : f3 > r2 ? s2 > e2 - r2 ? a2 += f3 - r2 : a2-- : f3 < r2 ? f3 == r2 - 1 && (a2 = f3 - r2) : a2 = 0, f3 !== t2 + a2 && (i3.__u |= 65536))) : (o2 = u3[r2]) && null == o2.key && o2.__e && 0 == (131072 & o2.__u) && (o2.__e == n2.__d && (n2.__d = m(o2)), j(o2, o2, false), u3[r2] = null, s2--);
+  if (s2)
+    for (t2 = 0; t2 < c2; t2++)
+      null != (o2 = u3[t2]) && 0 == (131072 & o2.__u) && (o2.__e == n2.__d && (n2.__d = m(o2)), j(o2, o2));
+}
+function S(n2, l2, u3) {
+  var t2, i3;
+  if ("function" == typeof n2.type) {
+    for (t2 = n2.__k, i3 = 0; t2 && i3 < t2.length; i3++)
+      t2[i3] && (t2[i3].__ = n2, l2 = S(t2[i3], l2, u3));
+    return l2;
+  }
+  n2.__e != l2 && (u3.insertBefore(n2.__e, l2 || null), l2 = n2.__e);
+  do {
+    l2 = l2 && l2.nextSibling;
+  } while (null != l2 && 8 === l2.nodeType);
+  return l2;
+}
+function I(n2, l2, u3, t2) {
+  var i3 = n2.key, o2 = n2.type, r2 = u3 - 1, f3 = u3 + 1, e2 = l2[u3];
+  if (null === e2 || e2 && i3 == e2.key && o2 === e2.type && 0 == (131072 & e2.__u))
+    return u3;
+  if (t2 > (null != e2 && 0 == (131072 & e2.__u) ? 1 : 0))
+    for (; r2 >= 0 || f3 < l2.length; ) {
+      if (r2 >= 0) {
+        if ((e2 = l2[r2]) && 0 == (131072 & e2.__u) && i3 == e2.key && o2 === e2.type)
+          return r2;
+        r2--;
+      }
+      if (f3 < l2.length) {
+        if ((e2 = l2[f3]) && 0 == (131072 & e2.__u) && i3 == e2.key && o2 === e2.type)
+          return f3;
+        f3++;
+      }
+    }
+  return -1;
+}
+function H(n2, l2, u3) {
+  "-" === l2[0] ? n2.setProperty(l2, null == u3 ? "" : u3) : n2[l2] = null == u3 ? "" : "number" != typeof u3 || a.test(l2) ? u3 : u3 + "px";
+}
+function T(n2, l2, u3, t2, i3) {
+  var o2;
+  n:
+    if ("style" === l2)
+      if ("string" == typeof u3)
+        n2.style.cssText = u3;
+      else {
+        if ("string" == typeof t2 && (n2.style.cssText = t2 = ""), t2)
+          for (l2 in t2)
+            u3 && l2 in u3 || H(n2.style, l2, "");
+        if (u3)
+          for (l2 in u3)
+            t2 && u3[l2] === t2[l2] || H(n2.style, l2, u3[l2]);
+      }
+    else if ("o" === l2[0] && "n" === l2[1])
+      o2 = l2 !== (l2 = l2.replace(/(PointerCapture)$|Capture$/i, "$1")), l2 = l2.toLowerCase() in n2 || "onFocusOut" === l2 || "onFocusIn" === l2 ? l2.toLowerCase().slice(2) : l2.slice(2), n2.l || (n2.l = {}), n2.l[l2 + o2] = u3, u3 ? t2 ? u3.u = t2.u : (u3.u = Date.now(), n2.addEventListener(l2, o2 ? D : A, o2)) : n2.removeEventListener(l2, o2 ? D : A, o2);
+    else {
+      if (i3)
+        l2 = l2.replace(/xlink(H|:h)/, "h").replace(/sName$/, "s");
+      else if ("width" !== l2 && "height" !== l2 && "href" !== l2 && "list" !== l2 && "form" !== l2 && "tabIndex" !== l2 && "download" !== l2 && "rowSpan" !== l2 && "colSpan" !== l2 && "role" !== l2 && l2 in n2)
+        try {
+          n2[l2] = null == u3 ? "" : u3;
+          break n;
+        } catch (n3) {
+        }
+      "function" == typeof u3 || (null == u3 || false === u3 && "-" !== l2[4] ? n2.removeAttribute(l2) : n2.setAttribute(l2, u3));
+    }
+}
+function A(n2) {
+  if (this.l) {
+    var u3 = this.l[n2.type + false];
+    if (n2.t) {
+      if (n2.t <= u3.u)
+        return;
+    } else
+      n2.t = Date.now();
+    return u3(l.event ? l.event(n2) : n2);
+  }
+}
+function D(n2) {
+  if (this.l)
+    return this.l[n2.type + true](l.event ? l.event(n2) : n2);
+}
+function F(n2, u3, t2, i3, o2, r2, f3, e2, c2, s2) {
+  var a2, p2, y2, d2, _, m2, w2, k2, x2, P2, S2, $, I2, H2, T2, A2 = u3.type;
+  if (void 0 !== u3.constructor)
+    return null;
+  128 & t2.__u && (c2 = !!(32 & t2.__u), r2 = [e2 = u3.__e = t2.__e]), (a2 = l.__b) && a2(u3);
+  n:
+    if ("function" == typeof A2)
+      try {
+        if (k2 = u3.props, x2 = (a2 = A2.contextType) && i3[a2.__c], P2 = a2 ? x2 ? x2.props.value : a2.__ : i3, t2.__c ? w2 = (p2 = u3.__c = t2.__c).__ = p2.__E : ("prototype" in A2 && A2.prototype.render ? u3.__c = p2 = new A2(k2, P2) : (u3.__c = p2 = new b(k2, P2), p2.constructor = A2, p2.render = z), x2 && x2.sub(p2), p2.props = k2, p2.state || (p2.state = {}), p2.context = P2, p2.__n = i3, y2 = p2.__d = true, p2.__h = [], p2._sb = []), null == p2.__s && (p2.__s = p2.state), null != A2.getDerivedStateFromProps && (p2.__s == p2.state && (p2.__s = v({}, p2.__s)), v(p2.__s, A2.getDerivedStateFromProps(k2, p2.__s))), d2 = p2.props, _ = p2.state, p2.__v = u3, y2)
+          null == A2.getDerivedStateFromProps && null != p2.componentWillMount && p2.componentWillMount(), null != p2.componentDidMount && p2.__h.push(p2.componentDidMount);
+        else {
+          if (null == A2.getDerivedStateFromProps && k2 !== d2 && null != p2.componentWillReceiveProps && p2.componentWillReceiveProps(k2, P2), !p2.__e && (null != p2.shouldComponentUpdate && false === p2.shouldComponentUpdate(k2, p2.__s, P2) || u3.__v === t2.__v)) {
+            for (u3.__v !== t2.__v && (p2.props = k2, p2.state = p2.__s, p2.__d = false), u3.__e = t2.__e, u3.__k = t2.__k, u3.__k.forEach(function(n3) {
+              n3 && (n3.__ = u3);
+            }), S2 = 0; S2 < p2._sb.length; S2++)
+              p2.__h.push(p2._sb[S2]);
+            p2._sb = [], p2.__h.length && f3.push(p2);
+            break n;
+          }
+          null != p2.componentWillUpdate && p2.componentWillUpdate(k2, p2.__s, P2), null != p2.componentDidUpdate && p2.__h.push(function() {
+            p2.componentDidUpdate(d2, _, m2);
+          });
+        }
+        if (p2.context = P2, p2.props = k2, p2.__P = n2, p2.__e = false, $ = l.__r, I2 = 0, "prototype" in A2 && A2.prototype.render) {
+          for (p2.state = p2.__s, p2.__d = false, $ && $(u3), a2 = p2.render(p2.props, p2.state, p2.context), H2 = 0; H2 < p2._sb.length; H2++)
+            p2.__h.push(p2._sb[H2]);
+          p2._sb = [];
+        } else
+          do {
+            p2.__d = false, $ && $(u3), a2 = p2.render(p2.props, p2.state, p2.context), p2.state = p2.__s;
+          } while (p2.__d && ++I2 < 25);
+        p2.state = p2.__s, null != p2.getChildContext && (i3 = v(v({}, i3), p2.getChildContext())), y2 || null == p2.getSnapshotBeforeUpdate || (m2 = p2.getSnapshotBeforeUpdate(d2, _)), C(n2, h(T2 = null != a2 && a2.type === g && null == a2.key ? a2.props.children : a2) ? T2 : [T2], u3, t2, i3, o2, r2, f3, e2, c2, s2), p2.base = u3.__e, u3.__u &= -161, p2.__h.length && f3.push(p2), w2 && (p2.__E = p2.__ = null);
+      } catch (n3) {
+        u3.__v = null, c2 || null != r2 ? (u3.__e = e2, u3.__u |= c2 ? 160 : 32, r2[r2.indexOf(e2)] = null) : (u3.__e = t2.__e, u3.__k = t2.__k), l.__e(n3, u3, t2);
+      }
+    else
+      null == r2 && u3.__v === t2.__v ? (u3.__k = t2.__k, u3.__e = t2.__e) : u3.__e = M(t2.__e, u3, t2, i3, o2, r2, f3, c2, s2);
+  (a2 = l.diffed) && a2(u3);
+}
+function L(n2, u3, t2) {
+  u3.__d = void 0;
+  for (var i3 = 0; i3 < t2.length; i3++)
+    O(t2[i3], t2[++i3], t2[++i3]);
+  l.__c && l.__c(u3, n2), n2.some(function(u4) {
+    try {
+      n2 = u4.__h, u4.__h = [], n2.some(function(n3) {
+        n3.call(u4);
+      });
+    } catch (n3) {
+      l.__e(n3, u4.__v);
+    }
+  });
+}
+function M(l2, u3, t2, i3, o2, r2, f3, e2, s2) {
+  var a2, v2, y2, d2, _, g2, b2, w2 = t2.props, k2 = u3.props, x2 = u3.type;
+  if ("svg" === x2 && (o2 = true), null != r2) {
+    for (a2 = 0; a2 < r2.length; a2++)
+      if ((_ = r2[a2]) && "setAttribute" in _ == !!x2 && (x2 ? _.localName === x2 : 3 === _.nodeType)) {
+        l2 = _, r2[a2] = null;
+        break;
+      }
+  }
+  if (null == l2) {
+    if (null === x2)
+      return document.createTextNode(k2);
+    l2 = o2 ? document.createElementNS("http://www.w3.org/2000/svg", x2) : document.createElement(x2, k2.is && k2), r2 = null, e2 = false;
+  }
+  if (null === x2)
+    w2 === k2 || e2 && l2.data === k2 || (l2.data = k2);
+  else {
+    if (r2 = r2 && n.call(l2.childNodes), w2 = t2.props || c, !e2 && null != r2)
+      for (w2 = {}, a2 = 0; a2 < l2.attributes.length; a2++)
+        w2[(_ = l2.attributes[a2]).name] = _.value;
+    for (a2 in w2)
+      _ = w2[a2], "children" == a2 || ("dangerouslySetInnerHTML" == a2 ? y2 = _ : "key" === a2 || a2 in k2 || T(l2, a2, null, _, o2));
+    for (a2 in k2)
+      _ = k2[a2], "children" == a2 ? d2 = _ : "dangerouslySetInnerHTML" == a2 ? v2 = _ : "value" == a2 ? g2 = _ : "checked" == a2 ? b2 = _ : "key" === a2 || e2 && "function" != typeof _ || w2[a2] === _ || T(l2, a2, _, w2[a2], o2);
+    if (v2)
+      e2 || y2 && (v2.__html === y2.__html || v2.__html === l2.innerHTML) || (l2.innerHTML = v2.__html), u3.__k = [];
+    else if (y2 && (l2.innerHTML = ""), C(l2, h(d2) ? d2 : [d2], u3, t2, i3, o2 && "foreignObject" !== x2, r2, f3, r2 ? r2[0] : t2.__k && m(t2, 0), e2, s2), null != r2)
+      for (a2 = r2.length; a2--; )
+        null != r2[a2] && p(r2[a2]);
+    e2 || (a2 = "value", void 0 !== g2 && (g2 !== l2[a2] || "progress" === x2 && !g2 || "option" === x2 && g2 !== w2[a2]) && T(l2, a2, g2, w2[a2], false), a2 = "checked", void 0 !== b2 && b2 !== l2[a2] && T(l2, a2, b2, w2[a2], false));
+  }
+  return l2;
+}
+function O(n2, u3, t2) {
+  try {
+    "function" == typeof n2 ? n2(u3) : n2.current = u3;
+  } catch (n3) {
+    l.__e(n3, t2);
+  }
+}
+function j(n2, u3, t2) {
+  var i3, o2;
+  if (l.unmount && l.unmount(n2), (i3 = n2.ref) && (i3.current && i3.current !== n2.__e || O(i3, null, u3)), null != (i3 = n2.__c)) {
+    if (i3.componentWillUnmount)
+      try {
+        i3.componentWillUnmount();
+      } catch (n3) {
+        l.__e(n3, u3);
+      }
+    i3.base = i3.__P = null, n2.__c = void 0;
+  }
+  if (i3 = n2.__k)
+    for (o2 = 0; o2 < i3.length; o2++)
+      i3[o2] && j(i3[o2], u3, t2 || "function" != typeof n2.type);
+  t2 || null == n2.__e || p(n2.__e), n2.__ = n2.__e = n2.__d = void 0;
+}
+function z(n2, l2, u3) {
+  return this.constructor(n2, u3);
+}
+function N(u3, t2, i3) {
+  var o2, r2, f3, e2;
+  l.__ && l.__(u3, t2), r2 = (o2 = "function" == typeof i3) ? null : i3 && i3.__k || t2.__k, f3 = [], e2 = [], F(t2, u3 = (!o2 && i3 || t2).__k = y(g, null, [u3]), r2 || c, c, void 0 !== t2.ownerSVGElement, !o2 && i3 ? [i3] : r2 ? null : t2.firstChild ? n.call(t2.childNodes) : null, f3, !o2 && i3 ? i3 : r2 ? r2.__e : t2.firstChild, o2, e2), L(f3, u3, e2);
+}
+n = s.slice, l = { __e: function(n2, l2, u3, t2) {
+  for (var i3, o2, r2; l2 = l2.__; )
+    if ((i3 = l2.__c) && !i3.__)
+      try {
+        if ((o2 = i3.constructor) && null != o2.getDerivedStateFromError && (i3.setState(o2.getDerivedStateFromError(n2)), r2 = i3.__d), null != i3.componentDidCatch && (i3.componentDidCatch(n2, t2 || {}), r2 = i3.__d), r2)
+          return i3.__E = i3;
+      } catch (l3) {
+        n2 = l3;
+      }
+  throw n2;
+} }, u = 0, t = function(n2) {
+  return null != n2 && null == n2.constructor;
+}, b.prototype.setState = function(n2, l2) {
+  var u3;
+  u3 = null != this.__s && this.__s !== this.state ? this.__s : this.__s = v({}, this.state), "function" == typeof n2 && (n2 = n2(v({}, u3), this.props)), n2 && v(u3, n2), null != n2 && this.__v && (l2 && this._sb.push(l2), k(this));
+}, b.prototype.forceUpdate = function(n2) {
+  this.__v && (this.__e = true, n2 && this.__h.push(n2), k(this));
+}, b.prototype.render = g, i = [], r = "function" == typeof Promise ? Promise.prototype.then.bind(Promise.resolve()) : setTimeout, f = function(n2, l2) {
+  return n2.__v.__b - l2.__v.__b;
+}, x.__r = 0, e = 0;
+
+// node_modules/preact/jsx-runtime/dist/jsxRuntime.module.js
+var f2 = 0;
+var i2 = Array.isArray;
+function u2(e2, t2, n2, o2, i3, u3) {
+  var a2, c2, p2 = {};
+  for (c2 in t2)
+    "ref" == c2 ? a2 = t2[c2] : p2[c2] = t2[c2];
+  var l2 = { type: e2, props: p2, key: n2, ref: a2, __k: null, __: null, __b: 0, __e: null, __d: void 0, __c: null, constructor: void 0, __v: --f2, __i: -1, __u: 0, __source: i3, __self: u3 };
+  if ("function" == typeof e2 && (a2 = e2.defaultProps))
+    for (c2 in a2)
+      void 0 === p2[c2] && (p2[c2] = a2[c2]);
+  return l.vnode && l.vnode(l2), l2;
+}
+
+// src/ui/components/uic-ref-item.tsx
 var thePlugin2;
 function setPluginVariableUIC_RefItem(plugin) {
   thePlugin2 = plugin;
 }
 var getUIC_Ref_Item = async (ref) => {
+  var _a, _b;
+  const startLine = ref.reference.position !== void 0 ? ref.reference.position.start.line.toString() : "0";
+  const itemElJsx = /* @__PURE__ */ u2(
+    "div",
+    {
+      className: "snw-ref-item-info search-result-file-match",
+      "snw-data-line-number": startLine,
+      "snw-data-file-name": (_a = ref == null ? void 0 : ref.sourceFile) == null ? void 0 : _a.path.replace(".md", ""),
+      "data-href": (_b = ref == null ? void 0 : ref.sourceFile) == null ? void 0 : _b.path.replace(".md", ""),
+      dangerouslySetInnerHTML: { __html: (await grabChunkOfFile(ref)).innerHTML }
+    }
+  );
   const itemEl = createDiv();
-  itemEl.addClass("snw-ref-item-info");
-  itemEl.addClass("search-result-file-match");
-  let startLine = "0";
-  if (ref.reference.position !== void 0)
-    startLine = ref.reference.position.start.line.toString();
-  itemEl.setAttribute("snw-data-line-number", startLine);
-  itemEl.setAttribute("snw-data-file-name", ref.sourceFile.path.replace(".md", ""));
-  itemEl.setAttribute("data-href", ref.sourceFile.path.replace(".md", ""));
-  const fileChuncksEl = await grabChunkOfFile(ref);
-  itemEl.appendChild(fileChuncksEl);
+  N(itemElJsx, itemEl);
   return itemEl;
 };
 var grabChunkOfFile = async (ref) => {
@@ -3249,7 +3565,8 @@ var grabChunkOfFile = async (ref) => {
       const contextEl2 = container.createDiv();
       contextEl2.addClass("snw-breadcrumbs");
       contextEl2.createEl("span", { text: "L" });
-      await import_obsidian2.MarkdownRenderer.renderMarkdown(
+      await import_obsidian2.MarkdownRenderer.render(
+        thePlugin2.app,
         formatListBreadcrumbs(fileContents, listBreadcrumbs),
         contextEl2,
         ref.sourceFile.path,
@@ -3260,7 +3577,8 @@ var grabChunkOfFile = async (ref) => {
       indexOfListItemContainingLink
     );
     const contextEl = container.createDiv();
-    await import_obsidian2.MarkdownRenderer.renderMarkdown(
+    await import_obsidian2.MarkdownRenderer.render(
+      thePlugin2.app,
       formatListWithDescendants(fileContents, listItemWithDescendants),
       contextEl,
       ref.sourceFile.path,
@@ -3271,7 +3589,8 @@ var grabChunkOfFile = async (ref) => {
     let blockContents = "";
     if ((sectionContainingLink == null ? void 0 : sectionContainingLink.position) !== void 0)
       blockContents = getTextAtPosition(fileContents, sectionContainingLink.position);
-    await import_obsidian2.MarkdownRenderer.renderMarkdown(
+    await import_obsidian2.MarkdownRenderer.render(
+      thePlugin2.app,
       blockContents,
       container,
       ref.sourceFile.path,
@@ -3285,7 +3604,8 @@ var grabChunkOfFile = async (ref) => {
     );
     if (firstSectionPosition) {
       const contextEl = container.createDiv();
-      await import_obsidian2.MarkdownRenderer.renderMarkdown(
+      await import_obsidian2.MarkdownRenderer.render(
+        thePlugin2.app,
         getTextAtPosition(fileContents, firstSectionPosition.position),
         contextEl,
         ref.sourceFile.path,
@@ -3294,7 +3614,7 @@ var grabChunkOfFile = async (ref) => {
     }
   }
   const elems = container.querySelectorAll("*");
-  const res = Array.from(elems).find((v) => v.textContent == ref.reference.displayText);
+  const res = Array.from(elems).find((v2) => v2.textContent == ref.reference.displayText);
   try {
     res.addClass("search-result-file-matched-text");
   } catch (error) {
@@ -3302,50 +3622,71 @@ var grabChunkOfFile = async (ref) => {
   return container;
 };
 
-// src/ui/components/uic-ref-title.ts
-var import_obsidian3 = require("obsidian");
-var getUIC_Ref_Title_Div = async (refType, realLink, key, filePath, refCount, lineNu, isPopover, thePlugin10) => {
+// src/ui/icons.tsx
+var IconMoreDetails = () => {
+  return /* @__PURE__ */ u2(
+    "svg",
+    {
+      xmlns: "http://www.w3.org/2000/svg",
+      width: "24",
+      height: "24",
+      viewBox: "0 0 24 24",
+      fill: "none",
+      stroke: "currentColor",
+      strokeWidth: "2",
+      strokeLinecap: "round",
+      strokeLinejoin: "round",
+      className: "lucide lucide-more-horizontal",
+      children: [
+        /* @__PURE__ */ u2("circle", { cx: "12", cy: "12", r: "1" }),
+        /* @__PURE__ */ u2("circle", { cx: "19", cy: "12", r: "1" }),
+        /* @__PURE__ */ u2("circle", { cx: "5", cy: "12", r: "1" })
+      ]
+    }
+  );
+};
+
+// src/ui/components/uic-ref-title.tsx
+var getUIC_Ref_Title_Div = (refType, realLink, key, filePath, refCount, lineNu, isPopover, thePlugin10) => {
+  const titleElJsx = /* @__PURE__ */ u2(
+    "div",
+    {
+      className: `${isPopover ? "snw-ref-title-popover" : "snw-ref-title-side-pane"} tree-item-self is-clickable`,
+      "snw-ref-title-type": refType,
+      "snw-ref-title-reallink": realLink,
+      "snw-ref-title-key": key,
+      "snw-data-file-name": filePath,
+      "snw-data-line-number": lineNu.toString(),
+      children: [
+        /* @__PURE__ */ u2("div", { className: "snw-ref-title-popover-label", children: realLink }),
+        /* @__PURE__ */ u2(
+          "span",
+          {
+            className: "snw-ref-title-popover-open-sidepane-icon",
+            "snw-ref-title-type": refType,
+            "snw-ref-title-reallink": realLink,
+            "snw-ref-title-key": key,
+            "snw-data-file-name": filePath,
+            "snw-data-line-number": lineNu.toString(),
+            children: isPopover && /* @__PURE__ */ u2(
+              "span",
+              {
+                className: "snw-ref-title-popover-icon",
+                onClick: (e2) => {
+                  e2.stopPropagation();
+                  hideAll({ duration: 0 });
+                  thePlugin10.activateView(refType, realLink, key, filePath, Number(lineNu));
+                },
+                children: /* @__PURE__ */ u2(IconMoreDetails, {})
+              }
+            )
+          }
+        )
+      ]
+    }
+  );
   const titleEl = createDiv();
-  titleEl.addClass(isPopover ? "snw-ref-title-popover" : "snw-ref-title-side-pane");
-  titleEl.addClass("tree-item-self");
-  titleEl.addClass("is-clickable");
-  titleEl.setAttribute("snw-ref-title-type", refType);
-  titleEl.setAttribute("snw-ref-title-reallink", realLink);
-  titleEl.setAttribute("snw-ref-title-key", key);
-  titleEl.setAttribute("snw-data-file-name", filePath);
-  titleEl.setAttribute("snw-data-line-number", lineNu.toString());
-  const titleLabelEl = createDiv({ cls: "snw-ref-title-popover-label" });
-  titleLabelEl.innerText = realLink;
-  titleEl.append(titleLabelEl);
-  if (isPopover) {
-    const openSidepaneIconEl = createSpan();
-    openSidepaneIconEl.addClass("snw-ref-title-popover-icon");
-    (0, import_obsidian3.setIcon)(openSidepaneIconEl, "more-horizontal");
-    const imgWrappper = createSpan();
-    imgWrappper.appendChild(openSidepaneIconEl);
-    imgWrappper.addClass("snw-ref-title-popover-open-sidepane-icon");
-    imgWrappper.setAttribute("snw-ref-title-type", refType);
-    imgWrappper.setAttribute("snw-ref-title-reallink", realLink);
-    imgWrappper.setAttribute("snw-ref-title-key", key);
-    imgWrappper.setAttribute("snw-data-file-name", filePath);
-    imgWrappper.setAttribute("snw-data-line-number", lineNu.toString());
-    titleEl.appendChild(imgWrappper);
-    setTimeout(async () => {
-      if (imgWrappper) {
-        imgWrappper.onclick = async (e) => {
-          e.stopPropagation();
-          hideAll({ duration: 0 });
-          const parentEl = e.target.closest(".snw-ref-title-popover-open-sidepane-icon");
-          const refType2 = parentEl.getAttribute("snw-ref-title-type");
-          const realLink2 = parentEl.getAttribute("snw-ref-title-reallink");
-          const key2 = parentEl.getAttribute("snw-ref-title-key");
-          const path = parentEl.getAttribute("snw-data-file-name");
-          const lineNu2 = parentEl.getAttribute("snw-data-line-number");
-          thePlugin10.activateView(refType2, realLink2, key2, path, Number(lineNu2));
-        };
-      }
-    }, 300);
-  }
+  N(titleElJsx, titleEl);
   return titleEl;
 };
 
@@ -3358,7 +3699,7 @@ var getUIC_Ref_Area = async (refType, realLink, key, filePath, lineNu, isHoverVi
   const refAreaItems = await getRefAreaItems(refType, key, filePath);
   const refAreaContainerEl = createDiv();
   refAreaContainerEl.append(
-    await getUIC_Ref_Title_Div(
+    getUIC_Ref_Title_Div(
       refType,
       realLink,
       key,
@@ -3379,11 +3720,11 @@ var getRefAreaItems = async (refType, key, filePath) => {
   let linksToLoop = null;
   if (refType === "File") {
     const allLinks = getSnwAllLinksResolutions();
-    const incomingLinks = allLinks.filter((f) => {
+    const incomingLinks = allLinks.filter((f3) => {
       var _a;
-      if (!(f == null ? void 0 : f.resolvedFile))
+      if (!(f3 == null ? void 0 : f3.resolvedFile))
         return false;
-      return ((_a = f == null ? void 0 : f.resolvedFile) == null ? void 0 : _a.path) === filePath;
+      return ((_a = f3 == null ? void 0 : f3.resolvedFile) == null ? void 0 : _a.path) === filePath;
     });
     countOfRefs = incomingLinks.length;
     linksToLoop = incomingLinks;
@@ -3396,9 +3737,9 @@ var getRefAreaItems = async (refType, key, filePath) => {
     linksToLoop = sortedCache;
   }
   const uniqueFileKeys = Array.from(
-    new Set(linksToLoop.map((a) => a.sourceFile.path))
+    new Set(linksToLoop.map((a2) => a2.sourceFile.path))
   ).map((file_path) => {
-    return linksToLoop.find((a) => a.sourceFile.path === file_path);
+    return linksToLoop.find((a2) => a2.sourceFile.path === file_path);
   });
   const wrapperEl = createDiv();
   let maxItemsToShow = uniqueFileKeys.length;
@@ -3426,7 +3767,7 @@ var getRefAreaItems = async (refType, key, filePath) => {
     refItemFileIconEl.addClass("snw-ref-item-file-icon");
     refItemFileIconEl.addClass("tree-item-icon");
     refItemFileIconEl.addClass("collapse-icon");
-    (0, import_obsidian4.setIcon)(refItemFileIconEl, "file-box");
+    (0, import_obsidian3.setIcon)(refItemFileIconEl, "file-box");
     const refItemFileLabelEl = createDiv();
     refItemFileLabelEl.addClass("snw-ref-item-file-label");
     refItemFileLabelEl.addClass("tree-item-inner");
@@ -3447,14 +3788,14 @@ var getRefAreaItems = async (refType, key, filePath) => {
   return { response: wrapperEl, refCount: countOfRefs };
 };
 var sortRefCache = async (refCache) => {
-  return refCache.sort((a, b) => {
+  return refCache.sort((a2, b2) => {
     let positionA = 0;
-    if (a.reference.position !== void 0)
-      positionA = Number(a.reference.position.start.line);
+    if (a2.reference.position !== void 0)
+      positionA = Number(a2.reference.position.start.line);
     let positionB = 0;
-    if (b.reference.position !== void 0)
-      positionB = Number(b.reference.position.start.line);
-    return a.sourceFile.basename.localeCompare(b.sourceFile.basename) || Number(positionA) - Number(positionB);
+    if (b2.reference.position !== void 0)
+      positionB = Number(b2.reference.position.start.line);
+    return a2.sourceFile.basename.localeCompare(b2.sourceFile.basename) || Number(positionA) - Number(positionB);
   });
 };
 
@@ -3497,16 +3838,16 @@ var setFileLinkHandlers = async (isHoverView, rootElementForViewEl) => {
   linksToFiles.forEach((node) => {
     if (!node.getAttribute("snw-has-handler")) {
       node.setAttribute("snw-has-handler", "true");
-      node.addEventListener("click", async (e) => {
+      node.addEventListener("click", async (e2) => {
         var _a, _b;
-        e.preventDefault();
-        const handlerElement = e.target.closest(
+        e2.preventDefault();
+        const handlerElement = e2.target.closest(
           ".snw-ref-item-file, .snw-ref-item-info, .snw-ref-title-side-pane, .snw-ref-title-popover"
         );
         let lineNu = Number(handlerElement.getAttribute("snw-data-line-number"));
         const filePath = handlerElement.getAttribute("snw-data-file-name");
         const fileT = app.metadataCache.getFirstLinkpathDest(filePath, filePath);
-        thePlugin4.app.workspace.getLeaf(import_obsidian5.Keymap.isModEvent(e)).openFile(fileT);
+        thePlugin4.app.workspace.getLeaf(import_obsidian4.Keymap.isModEvent(e2)).openFile(fileT);
         const titleKey = handlerElement.getAttribute("snw-ref-title-key");
         if (titleKey) {
           if (titleKey.contains("#^")) {
@@ -3515,33 +3856,33 @@ var setFileLinkHandlers = async (isHoverView, rootElementForViewEl) => {
             );
             if (destinationBlocks) {
               const blockID = titleKey.match(/#\^(.+)$/g)[0].replace("#^", "").toLowerCase();
-              const l = destinationBlocks.find((b) => b[0] === blockID);
-              lineNu = l[1].position.start.line;
+              const l2 = destinationBlocks.find((b2) => b2[0] === blockID);
+              lineNu = l2[1].position.start.line;
             }
           } else if (titleKey.contains("#")) {
             const destinationHeadings = (_b = thePlugin4.app.metadataCache.getFileCache(fileT)) == null ? void 0 : _b.headings;
             if (destinationHeadings) {
               const headingKey = titleKey.match(/#(.+)/g)[0].replace("#", "");
-              const l = destinationHeadings.find((h) => h.heading === headingKey);
-              lineNu = l.position.start.line;
+              const l2 = destinationHeadings.find((h2) => h2.heading === headingKey);
+              lineNu = l2.position.start.line;
             }
           }
         }
         if (lineNu > 0) {
           setTimeout(() => {
             try {
-              thePlugin4.app.workspace.getActiveViewOfType(import_obsidian5.MarkdownView).setEphemeralState({ line: lineNu });
+              thePlugin4.app.workspace.getActiveViewOfType(import_obsidian4.MarkdownView).setEphemeralState({ line: lineNu });
             } catch (error) {
             }
           }, 400);
         }
       });
       if (thePlugin4.app.internalPlugins.plugins["page-preview"].enabled === true) {
-        node.addEventListener("mouseover", (e) => {
-          e.preventDefault();
+        node.addEventListener("mouseover", (e2) => {
+          e2.preventDefault();
           const hoverMetaKeyRequired = app.internalPlugins.plugins["page-preview"].instance.overrides["obsidian42-strange-new-worlds"] == false ? false : true;
-          if (hoverMetaKeyRequired === false || hoverMetaKeyRequired === true && import_obsidian5.Keymap.isModifier(e, "Mod")) {
-            const target = e.target;
+          if (hoverMetaKeyRequired === false || hoverMetaKeyRequired === true && import_obsidian4.Keymap.isModifier(e2, "Mod")) {
+            const target = e2.target;
             const previewLocation = {
               scroll: Number(target.getAttribute("snw-data-line-number"))
             };
@@ -3579,7 +3920,7 @@ var getDataElements = async (instance) => {
 };
 
 // src/view-extensions/htmlDecorations.ts
-var import_obsidian6 = require("obsidian");
+var import_obsidian5 = require("obsidian");
 var thePlugin5;
 function setPluginVariableForHtmlDecorations(plugin) {
   thePlugin5 = plugin;
@@ -3605,8 +3946,8 @@ function htmlDecorationForReferencesElement(count, referenceType, realLink, key,
   element.setAttribute("snw-data-line-number", lineNu.toString());
   if (attachCSSClass)
     element.addClass(attachCSSClass);
-  if (import_obsidian6.Platform.isDesktop || import_obsidian6.Platform.isDesktopApp)
-    element.onclick = async (e) => processHtmlDecorationReferenceEvent(e.target);
+  if (import_obsidian5.Platform.isDesktop || import_obsidian5.Platform.isDesktopApp)
+    element.onclick = async (e2) => processHtmlDecorationReferenceEvent(e2.target);
   if ((_b = thePlugin5 == null ? void 0 : thePlugin5.snwAPI.enableDebugging) == null ? void 0 : _b.HtmlDecorationElements)
     thePlugin5.snwAPI.console("returned element", element);
   const requireModifierKey = thePlugin5.settings.requireModifierKeyToActivateSNWView;
@@ -3683,7 +4024,7 @@ var InlineReferenceExtension = import_view.ViewPlugin.fromClass(
         regexp: new RegExp(this.regxPattern, "g"),
         decorate: (add, from, to, match, view2) => {
           var _a, _b, _c, _d, _e, _f, _g, _h, _i, _j, _k, _l, _m, _n, _o, _p, _q, _r, _s;
-          const mdView = view2.state.field(import_obsidian7.editorInfoField);
+          const mdView = view2.state.field(import_obsidian6.editorInfoField);
           const mdViewFile = mdView.file;
           const firstCharacterMatch = match[0].charAt(0);
           const transformedCache = getSNWCacheByFile(mdViewFile);
@@ -3702,7 +4043,7 @@ var InlineReferenceExtension = import_view.ViewPlugin.fromClass(
             } else if (firstCharacterMatch === "!" && ((_i = (_h = transformedCache == null ? void 0 : transformedCache.embeds) == null ? void 0 : _h.length) != null ? _i : 0) > 0) {
               let newEmbed = match[0].replace("![[", "").replace("]]", "");
               if (newEmbed.startsWith("#"))
-                newEmbed = mdViewFile.path.replace(".md", "") + (0, import_obsidian7.stripHeading)(newEmbed);
+                newEmbed = mdViewFile.path.replace(".md", "") + (0, import_obsidian6.stripHeading)(newEmbed);
               widgetsToAdd.push({
                 key: newEmbed,
                 transformedCachedItem: (_j = transformedCache.embeds) != null ? _j : null,
@@ -3724,7 +4065,7 @@ var InlineReferenceExtension = import_view.ViewPlugin.fromClass(
             } else if (firstCharacterMatch === "#" && ((_o = (_n = transformedCache == null ? void 0 : transformedCache.headings) == null ? void 0 : _n.length) != null ? _o : 0) > 0) {
               widgetsToAdd.push({
                 // @ts-ignore
-                key: (0, import_obsidian7.stripHeading)(match[0].replace(/^#+/, "").substring(1)),
+                key: (0, import_obsidian6.stripHeading)(match[0].replace(/^#+/, "").substring(1)),
                 transformedCachedItem: (_p = transformedCache.headings) != null ? _p : null,
                 refType: "heading",
                 from: to,
@@ -3733,19 +4074,19 @@ var InlineReferenceExtension = import_view.ViewPlugin.fromClass(
               if (thePlugin6.settings.enableRenderingLinksInLivePreview) {
                 const linksinHeader = match[0].match(/\[\[(.*?)\]\]|!\[\[(.*?)\]\]/g);
                 if (linksinHeader)
-                  for (const l of linksinHeader) {
+                  for (const l2 of linksinHeader) {
                     widgetsToAdd.push({
-                      key: l.replace("![[", "").replace("[[", "").replace("]]", ""),
+                      key: l2.replace("![[", "").replace("[[", "").replace("]]", ""),
                       //change this to match the references cache
-                      transformedCachedItem: l.startsWith("!") ? (_q = transformedCache.embeds) != null ? _q : null : (_r = transformedCache.links) != null ? _r : null,
+                      transformedCachedItem: l2.startsWith("!") ? (_q = transformedCache.embeds) != null ? _q : null : (_r = transformedCache.links) != null ? _r : null,
                       refType: "link",
-                      from: to - match[0].length + (match[0].indexOf(l) + l.length),
-                      to: to - match[0].length + (match[0].indexOf(l) + l.length)
+                      from: to - match[0].length + (match[0].indexOf(l2) + l2.length),
+                      to: to - match[0].length + (match[0].indexOf(l2) + l2.length)
                     });
                   }
               }
             }
-            for (const ref of widgetsToAdd.sort((a, b) => a.to - b.to)) {
+            for (const ref of widgetsToAdd.sort((a2, b2) => a2.to - b2.to)) {
               if (ref.key != "") {
                 const wdgt = constructWidgetForInlineReference(
                   ref.refType,
@@ -3771,16 +4112,16 @@ var InlineReferenceExtension = import_view.ViewPlugin.fromClass(
     }
   },
   {
-    decorations: (v) => v.decorations
+    decorations: (v2) => v2.decorations
   }
 );
 var constructWidgetForInlineReference = (refType, key, references2, filePath) => {
   var _a, _b, _c;
-  for (let i = 0; i < references2.length; i++) {
-    const ref = references2[i];
+  for (let i3 = 0; i3 < references2.length; i3++) {
+    const ref = references2[i3];
     let matchKey = ref.key;
     if (refType === "heading") {
-      matchKey = (0, import_obsidian7.stripHeading)((_a = ref.headerMatch) != null ? _a : "");
+      matchKey = (0, import_obsidian6.stripHeading)((_a = ref.headerMatch) != null ? _a : "");
       key = key.replace(/^\s+|\s+$/g, "");
     }
     if (refType === "embed" || refType === "link") {
@@ -3789,7 +4130,7 @@ var constructWidgetForInlineReference = (refType, key, references2, filePath) =>
       const parsedKey = parseLinkTextToFullPath(key);
       key = parsedKey === "" ? key : parsedKey;
       if (matchKey.startsWith("#")) {
-        matchKey = filePath.replace(".md", "") + (0, import_obsidian7.stripHeading)(matchKey);
+        matchKey = filePath.replace(".md", "") + (0, import_obsidian6.stripHeading)(matchKey);
       }
     }
     if (matchKey === key) {
@@ -3844,7 +4185,7 @@ var InlineReferenceWidget = class extends import_view.WidgetType {
 };
 
 // src/view-extensions/references-preview.ts
-var import_obsidian8 = require("obsidian");
+var import_obsidian7 = require("obsidian");
 var thePlugin7;
 function setPluginVariableForMarkdownPreviewProcessor(plugin) {
   thePlugin7 = plugin;
@@ -3877,7 +4218,7 @@ function markdownPreviewProcessor(el, ctx2) {
   } catch (error) {
   }
 }
-var snwChildComponent = class extends import_obsidian8.MarkdownRenderChild {
+var snwChildComponent = class extends import_obsidian7.MarkdownRenderChild {
   constructor(containerEl, sectionInfo, currentFile) {
     super(containerEl);
     this.containerEl = containerEl;
@@ -3952,7 +4293,7 @@ var snwChildComponent = class extends import_obsidian8.MarkdownRenderChild {
           var _a2, _b2, _c2;
           let embedKey = parseLinkTextToFullPath(element.getAttribute("src"));
           if (embedKey === "") {
-            embedKey = this.currentFile.path.replace(".md", "") + (0, import_obsidian8.stripHeading)(element.getAttribute("src"));
+            embedKey = this.currentFile.path.replace(".md", "") + (0, import_obsidian7.stripHeading)(element.getAttribute("src"));
           }
           for (const value of transformedCache.embeds) {
             if (((_a2 = value.references[0]) == null ? void 0 : _a2.excludedFile) != true && value.references.length >= minRefCountThreshold && embedKey.endsWith(value.key)) {
@@ -4022,7 +4363,7 @@ var snwChildComponent = class extends import_obsidian8.MarkdownRenderChild {
 
 // src/view-extensions/gutters-cm6.ts
 var import_view2 = require("@codemirror/view");
-var import_obsidian9 = require("obsidian");
+var import_obsidian8 = require("obsidian");
 var thePlugin8;
 function setPluginVariableForCM6Gutter(plugin) {
   thePlugin8 = plugin;
@@ -4065,7 +4406,7 @@ var ReferenceGutterExtension = (0, import_view2.gutter)({
         editorView,
         line
       );
-    const mdView = editorView.state.field(import_obsidian9.editorInfoField);
+    const mdView = editorView.state.field(import_obsidian8.editorInfoField);
     if (!mdView.file)
       return null;
     const transformedCache = getSNWCacheByFile(mdView.file);
@@ -4087,7 +4428,7 @@ var ReferenceGutterExtension = (0, import_view2.gutter)({
                 const strippedLineToAnalyze = lineToAnalyze.replace("![[", "").replace("]]", "");
                 let lineFromFile = "";
                 if (strippedLineToAnalyze.startsWith("#")) {
-                  lineFromFile = mdView.file.path.replace(".md", "") + (0, import_obsidian9.stripHeading)(strippedLineToAnalyze);
+                  lineFromFile = mdView.file.path.replace(".md", "") + (0, import_obsidian8.stripHeading)(strippedLineToAnalyze);
                 } else {
                   lineFromFile = parseLinkTextToFullPath(strippedLineToAnalyze);
                 }
@@ -4123,7 +4464,7 @@ var ReferenceGutterExtension = (0, import_view2.gutter)({
 var gutters_cm6_default = ReferenceGutterExtension;
 
 // src/ui/headerRefCount.ts
-var import_obsidian10 = require("obsidian");
+var import_obsidian9 = require("obsidian");
 var thePlugin9;
 function setPluginVariableForHeaderRefCount(plugin) {
   thePlugin9 = plugin;
@@ -4152,11 +4493,11 @@ function processHeader(mdView) {
   const allLinks = getSnwAllLinksResolutions();
   if (allLinks == void 0)
     return;
-  const incomingLinks = allLinks.filter((f) => {
+  const incomingLinks = allLinks.filter((f3) => {
     var _a2;
-    if (!(f == null ? void 0 : f.resolvedFile))
+    if (!(f3 == null ? void 0 : f3.resolvedFile))
       return false;
-    return ((_a2 = f == null ? void 0 : f.resolvedFile) == null ? void 0 : _a2.path) === mdViewFile.path;
+    return ((_a2 = f3 == null ? void 0 : f3.resolvedFile) == null ? void 0 : _a2.path) === mdViewFile.path;
   });
   let incomingLinksCount = incomingLinks.length;
   const transformedCache = getSNWCacheByFile(mdViewFile);
@@ -4190,9 +4531,9 @@ function processHeader(mdView) {
   }
   if (snwTitleRefCountDisplayCountEl)
     snwTitleRefCountDisplayCountEl.innerText = " " + incomingLinks.length.toString() + " ";
-  if ((import_obsidian10.Platform.isDesktop || import_obsidian10.Platform.isDesktopApp) && snwTitleRefCountDisplayCountEl) {
-    snwTitleRefCountDisplayCountEl.onclick = (e) => {
-      e.stopPropagation();
+  if ((import_obsidian9.Platform.isDesktop || import_obsidian9.Platform.isDesktopApp) && snwTitleRefCountDisplayCountEl) {
+    snwTitleRefCountDisplayCountEl.onclick = (e2) => {
+      e2.stopPropagation();
       if (wrapper)
         processHtmlDecorationReferenceEvent(wrapper);
     };
@@ -4201,9 +4542,9 @@ function processHeader(mdView) {
   wrapper.setAttribute("data-snw-key", mdViewFile.basename);
   wrapper.setAttribute("data-snw-type", "File");
   wrapper.setAttribute("data-snw-filepath", mdViewFile.path);
-  wrapper.onclick = (e) => {
-    e.stopPropagation();
-    processHtmlDecorationReferenceEvent(e.target);
+  wrapper.onclick = (e2) => {
+    e2.stopPropagation();
+    processHtmlDecorationReferenceEvent(e2.target);
   };
   const requireModifierKey = thePlugin9.settings.requireModifierKeyToActivateSNWView;
   let showTippy = true;
@@ -4239,10 +4580,10 @@ function processHeader(mdView) {
     );
 }
 
-// src/ui/sidebar-pane.ts
-var import_obsidian11 = require("obsidian");
+// src/ui/sidebar-pane.tsx
+var import_obsidian10 = require("obsidian");
 var VIEW_TYPE_SNW = "Strange New Worlds";
-var SideBarPaneView = class extends import_obsidian11.ItemView {
+var SideBarPaneView = class extends import_obsidian10.ItemView {
   constructor(leaf, thePlugin10) {
     super(leaf);
     this.thePlugin = thePlugin10;
@@ -4257,16 +4598,13 @@ var SideBarPaneView = class extends import_obsidian11.ItemView {
     return "file-digit";
   }
   async onOpen() {
-    const container = this.containerEl;
-    const loadingEL = container.createSpan({ cls: "snw-sidepane-loading" });
-    const bannerEl = createDiv({ cls: "snw-sidepane-loading-banner" });
-    bannerEl.innerText = `Discovering Strange New Worlds...`;
-    loadingEL.appendChild(bannerEl);
-    const pendingTextEl = createDiv({ cls: "snw-sidepane-loading-subtext" });
-    pendingTextEl.innerText = `Click a reference counter in the main document for information to appear here.`;
-    loadingEL.appendChild(pendingTextEl);
-    container.empty();
-    container.appendChild(loadingEL);
+    N(
+      /* @__PURE__ */ u2("div", { class: "snw-sidepane-loading", children: [
+        /* @__PURE__ */ u2("div", { class: "snw-sidepane-loading-banner", children: "Discovering Strange New Worlds..." }),
+        /* @__PURE__ */ u2("div", { class: "snw-sidepane-loading-subtext", children: "Click a reference counter in the main document for information to appear here." })
+      ] }),
+      this.containerEl
+    );
   }
   async updateView() {
     const refType = this.thePlugin.lastSelectedReferenceType;
@@ -4297,7 +4635,7 @@ var SideBarPaneView = class extends import_obsidian11.ItemView {
 };
 
 // src/ui/settingsTab.ts
-var import_obsidian12 = require("obsidian");
+var import_obsidian11 = require("obsidian");
 var DEFAULT_SETTINGS = {
   enableOnStartupDesktop: true,
   enableOnStartupMobile: true,
@@ -4321,7 +4659,7 @@ var DEFAULT_SETTINGS = {
   enableIgnoreObsExcludeFoldersLinksTo: false,
   requireModifierKeyToActivateSNWView: false
 };
-var SettingsTab = class extends import_obsidian12.PluginSettingTab {
+var SettingsTab = class extends import_obsidian11.PluginSettingTab {
   constructor(app2, plugin) {
     super(app2, plugin);
     this.thePlugin = plugin;
@@ -4331,7 +4669,7 @@ var SettingsTab = class extends import_obsidian12.PluginSettingTab {
     containerEl.empty();
     containerEl.createEl("h2", { text: this.thePlugin.appName });
     containerEl.createEl("h2", { text: "SNW Activation" });
-    new import_obsidian12.Setting(containerEl).setName("Require modifier key to activate SNW").setDesc(
+    new import_obsidian11.Setting(containerEl).setName("Require modifier key to activate SNW").setDesc(
       `If enabled, SNW will only activate when the modifier key is pressed when hovering the mouse over an SNW counter.  
 						Otherwise, SNW will activate on a mouse hover. May require reopening open files to take effect.`
     ).addToggle((cb) => {
@@ -4342,7 +4680,7 @@ var SettingsTab = class extends import_obsidian12.PluginSettingTab {
       });
     });
     containerEl.createEl("h2", { text: "Thresholds" });
-    new import_obsidian12.Setting(containerEl).setName("Minimal required count to show counter").setDesc(
+    new import_obsidian11.Setting(containerEl).setName("Minimal required count to show counter").setDesc(
       `This setting defines how many references there needs to be for the reference count box to appear. May require reloading open files.
 				 Currently set to: ${this.thePlugin.settings.minimumRefCountThreshold} references.`
     ).addSlider(
@@ -4351,7 +4689,7 @@ var SettingsTab = class extends import_obsidian12.PluginSettingTab {
         await this.thePlugin.saveSettings();
       }).setDynamicTooltip()
     );
-    new import_obsidian12.Setting(containerEl).setName("Maximum file references to show").setDesc(
+    new import_obsidian11.Setting(containerEl).setName("Maximum file references to show").setDesc(
       `This setting defines the max amount of files with their references are displayed in the popup or sidebar.  Set to 1000 for no maximum.
 				 Currently set to: ${this.thePlugin.settings.maxFileCountToDisplay} references.`
     ).addSlider(
@@ -4363,7 +4701,7 @@ var SettingsTab = class extends import_obsidian12.PluginSettingTab {
     containerEl.createEl("h2", {
       text: "Use Obsidian's Excluded Files list (Settings > Files & Links)"
     });
-    new import_obsidian12.Setting(containerEl).setName("Outgoing links").setDesc(
+    new import_obsidian11.Setting(containerEl).setName("Outgoing links").setDesc(
       "If enabled, links FROM files in the excluded folder will not be included in SNW's reference counters. May require restarting Obsidian."
     ).addToggle((cb) => {
       cb.setValue(this.thePlugin.settings.enableIgnoreObsExcludeFoldersLinksFrom);
@@ -4372,7 +4710,7 @@ var SettingsTab = class extends import_obsidian12.PluginSettingTab {
         await this.thePlugin.saveSettings();
       });
     });
-    new import_obsidian12.Setting(containerEl).setName("Incoming links").setDesc(
+    new import_obsidian11.Setting(containerEl).setName("Incoming links").setDesc(
       "If enabled, links TO files in the excluded folder will not be included in SNW's reference counters.  May require restarting Obsidian."
     ).addToggle((cb) => {
       cb.setValue(this.thePlugin.settings.enableIgnoreObsExcludeFoldersLinksTo);
@@ -4382,7 +4720,7 @@ var SettingsTab = class extends import_obsidian12.PluginSettingTab {
       });
     });
     containerEl.createEl("h2", { text: "Enable on startup" });
-    new import_obsidian12.Setting(containerEl).setName("Enable upon startup (Desktop)").setDesc(
+    new import_obsidian11.Setting(containerEl).setName("Enable upon startup (Desktop)").setDesc(
       "If disabled, SNW will not show block counters from startup until enabled from the command palette."
     ).addToggle((cb) => {
       cb.setValue(this.thePlugin.settings.enableOnStartupDesktop);
@@ -4391,7 +4729,7 @@ var SettingsTab = class extends import_obsidian12.PluginSettingTab {
         await this.thePlugin.saveSettings();
       });
     });
-    new import_obsidian12.Setting(containerEl).setName("Enable startup (Mobile)").setDesc(
+    new import_obsidian11.Setting(containerEl).setName("Enable startup (Mobile)").setDesc(
       "If disabled, SNW will not show block counters from startup until enabled from the command palette."
     ).addToggle((cb) => {
       cb.setValue(this.thePlugin.settings.enableOnStartupMobile);
@@ -4401,7 +4739,7 @@ var SettingsTab = class extends import_obsidian12.PluginSettingTab {
       });
     });
     containerEl.createEl("h2", { text: "View Modes" });
-    new import_obsidian12.Setting(containerEl).setName("Incoming Links Header Count").setDesc("In header of a document, show number of incoming link to that file.").addToggle((cb) => {
+    new import_obsidian11.Setting(containerEl).setName("Incoming Links Header Count").setDesc("In header of a document, show number of incoming link to that file.").addToggle((cb) => {
       cb.setValue(this.thePlugin.settings.displayIncomingFilesheader);
       cb.onChange(async (value) => {
         this.thePlugin.settings.displayIncomingFilesheader = value;
@@ -4409,7 +4747,7 @@ var SettingsTab = class extends import_obsidian12.PluginSettingTab {
         await this.thePlugin.saveSettings();
       });
     });
-    new import_obsidian12.Setting(containerEl).setName("Show SNW indicators in Live Preview Editor").setDesc(
+    new import_obsidian11.Setting(containerEl).setName("Show SNW indicators in Live Preview Editor").setDesc(
       "While using Live Preview, Display inline of the text of documents all reference counts for links, blocks and embeds."
     ).addToggle((cb) => {
       cb.setValue(this.thePlugin.settings.displayInlineReferencesLivePreview);
@@ -4419,7 +4757,7 @@ var SettingsTab = class extends import_obsidian12.PluginSettingTab {
         await this.thePlugin.saveSettings();
       });
     });
-    new import_obsidian12.Setting(containerEl).setName("Show SNW indicators in Reading view ").setDesc(
+    new import_obsidian11.Setting(containerEl).setName("Show SNW indicators in Reading view ").setDesc(
       "While in Reading View of a document, display inline of the text of documents all reference counts for links, blocks and embeds."
     ).addToggle((cb) => {
       cb.setValue(this.thePlugin.settings.displayInlineReferencesMarkdown);
@@ -4429,7 +4767,7 @@ var SettingsTab = class extends import_obsidian12.PluginSettingTab {
         await this.thePlugin.saveSettings();
       });
     });
-    new import_obsidian12.Setting(containerEl).setName("Embed references in Gutter in Live Preview Mode (Desktop)").setDesc(
+    new import_obsidian11.Setting(containerEl).setName("Embed references in Gutter in Live Preview Mode (Desktop)").setDesc(
       `Displays a count of references in the gutter while in live preview. This is done only in a
 					  special scenario. It has to do with the way Obsidian renders embeds, example: ![[link]] when  
 					  they are on its own line. Strange New Worlds cannot embed the count in this scenario, so a hint is 
@@ -4442,7 +4780,7 @@ var SettingsTab = class extends import_obsidian12.PluginSettingTab {
         await this.thePlugin.saveSettings();
       });
     });
-    new import_obsidian12.Setting(containerEl).setName("Embed references in Gutter in Live Preview Mode (Mobile)").setDesc(
+    new import_obsidian11.Setting(containerEl).setName("Embed references in Gutter in Live Preview Mode (Mobile)").setDesc(
       `This is off by default on mobile since the gutter takes up some space in the left margin.`
     ).addToggle((cb) => {
       cb.setValue(this.thePlugin.settings.displayEmbedReferencesInGutterMobile);
@@ -4456,7 +4794,7 @@ var SettingsTab = class extends import_obsidian12.PluginSettingTab {
     containerEl.createEl("sup", {
       text: "(requires reopening documents to take effect)"
     });
-    new import_obsidian12.Setting(containerEl).setName("Block ID").setDesc(
+    new import_obsidian11.Setting(containerEl).setName("Block ID").setDesc(
       "Identifies block ID's, for example text blocks that end with a ^ and unique ID for that text block."
     ).addToggle((cb) => {
       cb.setValue(this.thePlugin.settings.enableRenderingBlockIdInMarkdown);
@@ -4465,7 +4803,7 @@ var SettingsTab = class extends import_obsidian12.PluginSettingTab {
         await this.thePlugin.saveSettings();
       });
     });
-    new import_obsidian12.Setting(containerEl).setName("Embeds").setDesc(
+    new import_obsidian11.Setting(containerEl).setName("Embeds").setDesc(
       "Identifies embedded links, that is links that start with an explanation mark. For example: ![[PageName]]."
     ).addToggle((cb) => {
       cb.setValue(this.thePlugin.settings.enableRenderingEmbedsInMarkdown);
@@ -4474,14 +4812,14 @@ var SettingsTab = class extends import_obsidian12.PluginSettingTab {
         await this.thePlugin.saveSettings();
       });
     });
-    new import_obsidian12.Setting(containerEl).setName("Links").setDesc("Identifies links in a document. For example: [[PageName]].").addToggle((cb) => {
+    new import_obsidian11.Setting(containerEl).setName("Links").setDesc("Identifies links in a document. For example: [[PageName]].").addToggle((cb) => {
       cb.setValue(this.thePlugin.settings.enableRenderingLinksInMarkdown);
       cb.onChange(async (value) => {
         this.thePlugin.settings.enableRenderingLinksInMarkdown = value;
         await this.thePlugin.saveSettings();
       });
     });
-    new import_obsidian12.Setting(containerEl).setName("Headers").setDesc(
+    new import_obsidian11.Setting(containerEl).setName("Headers").setDesc(
       "Identifies headers, that is lines of text that start with a hash mark or multiple hash marks. For example: # Heading 1."
     ).addToggle((cb) => {
       cb.setValue(this.thePlugin.settings.enableRenderingHeadersInMarkdown);
@@ -4494,7 +4832,7 @@ var SettingsTab = class extends import_obsidian12.PluginSettingTab {
     containerEl.createEl("sup", {
       text: "(requires reopening documents to take effect)"
     });
-    new import_obsidian12.Setting(containerEl).setName("Block ID").setDesc(
+    new import_obsidian11.Setting(containerEl).setName("Block ID").setDesc(
       "Identifies block ID's, for example text blocks that end with a ^ and unique ID for that text block."
     ).addToggle((cb) => {
       cb.setValue(this.thePlugin.settings.enableRenderingBlockIdInLivePreview);
@@ -4503,7 +4841,7 @@ var SettingsTab = class extends import_obsidian12.PluginSettingTab {
         await this.thePlugin.saveSettings();
       });
     });
-    new import_obsidian12.Setting(containerEl).setName("Embeds").setDesc(
+    new import_obsidian11.Setting(containerEl).setName("Embeds").setDesc(
       "Identifies embedded links, that is links that start with an explanation mark. For example: ![[PageName]]."
     ).addToggle((cb) => {
       cb.setValue(this.thePlugin.settings.enableRenderingEmbedsInLivePreview);
@@ -4512,14 +4850,14 @@ var SettingsTab = class extends import_obsidian12.PluginSettingTab {
         await this.thePlugin.saveSettings();
       });
     });
-    new import_obsidian12.Setting(containerEl).setName("Links").setDesc("Identifies links in a document. For example: [[PageName]].").addToggle((cb) => {
+    new import_obsidian11.Setting(containerEl).setName("Links").setDesc("Identifies links in a document. For example: [[PageName]].").addToggle((cb) => {
       cb.setValue(this.thePlugin.settings.enableRenderingLinksInLivePreview);
       cb.onChange(async (value) => {
         this.thePlugin.settings.enableRenderingLinksInLivePreview = value;
         await this.thePlugin.saveSettings();
       });
     });
-    new import_obsidian12.Setting(containerEl).setName("Headers").setDesc(
+    new import_obsidian11.Setting(containerEl).setName("Headers").setDesc(
       "Identifies headers, that is lines of text that start with a hash mark or multiple hash marks. For example: # Heading 1."
     ).addToggle((cb) => {
       cb.setValue(this.thePlugin.settings.enableRenderingHeadersInLivePreview);
@@ -4529,7 +4867,7 @@ var SettingsTab = class extends import_obsidian12.PluginSettingTab {
       });
     });
     containerEl.createEl("h2", { text: "Cache Tuning" });
-    new import_obsidian12.Setting(containerEl).setName(`How often should the SNW Cache update`).setDesc(
+    new import_obsidian11.Setting(containerEl).setName(`How often should the SNW Cache update`).setDesc(
       `By default SNW will updates its internal cache every half a second (500 milliseconds) when there is some change in the vault.
 					  Increase the time to slighlty improve performance on less performant devices or decrease it to improve refresh of vault information.
 					  Currently set to: ${this.thePlugin.settings.cacheUpdateInMilliseconds} milliseconds. (Requires Obsidian Restart)`
@@ -4586,7 +4924,7 @@ var SnwAPI = class {
 };
 
 // src/pluginCommands.ts
-var import_obsidian13 = require("obsidian");
+var import_obsidian12 = require("obsidian");
 var PluginCommands = class {
   constructor(plugin) {
     this.snwCommands = [
@@ -4599,7 +4937,7 @@ var PluginCommands = class {
           this.thePlugin.showCountsActive = !this.thePlugin.showCountsActive;
           let msg = "SNW toggled " + (this.thePlugin.showCountsActive ? "ON\n\n" : "OFF\n\n");
           msg += "Tabs may require reloading for this change to take effect.";
-          new import_obsidian13.Notice(msg);
+          new import_obsidian12.Notice(msg);
           this.thePlugin.toggleStateHeaderCount();
           this.thePlugin.toggleStateSNWMarkdownPreview();
           this.thePlugin.toggleStateSNWLivePreview();
@@ -4622,13 +4960,23 @@ var PluginCommands = class {
 };
 
 // src/main.ts
-var SNWPlugin = class extends import_obsidian14.Plugin {
+var SNWPlugin = class extends import_obsidian13.Plugin {
   constructor() {
     super(...arguments);
     this.appName = this.manifest.name;
     this.appID = this.manifest.id;
+    this.settings = DEFAULT_SETTINGS;
+    //controls global state if the plugin is showing counters
+    this.showCountsActive = DEFAULT_SETTINGS.enableOnStartupDesktop;
+    this.lastSelectedReferenceType = "";
+    this.lastSelectedReferenceRealLink = "";
+    this.lastSelectedReferenceKey = "";
+    this.lastSelectedReferenceFilePath = "";
+    this.lastSelectedLineNumber = 0;
+    this.snwAPI = new SnwAPI(this);
     this.markdownPostProcessor = null;
     this.editorExtensions = [];
+    this.commands = new PluginCommands(this);
   }
   async onload() {
     console.log("loading " + this.appName);
@@ -4640,17 +4988,15 @@ var SNWPlugin = class extends import_obsidian14.Plugin {
     setPluginVariableForMarkdownPreviewProcessor(this);
     setPluginVariableForCM6InlineReferences(this);
     setPluginVariableForUIC(this);
-    this.snwAPI = new SnwAPI(this);
-    globalThis.snwAPI = this.snwAPI;
+    window.snwAPI = this.snwAPI;
     await this.loadSettings();
     this.addSettingTab(new SettingsTab(this.app, this));
-    if (import_obsidian14.Platform.isMobile || import_obsidian14.Platform.isMobileApp)
+    if (import_obsidian13.Platform.isMobile || import_obsidian13.Platform.isMobileApp)
       this.showCountsActive = this.settings.enableOnStartupMobile;
     else
       this.showCountsActive = this.settings.enableOnStartupDesktop;
-    this.commands = new PluginCommands(this);
     this.registerView(VIEW_TYPE_SNW, (leaf) => new SideBarPaneView(leaf, this));
-    const indexDebounce = (0, import_obsidian14.debounce)(
+    const indexDebounce = (0, import_obsidian13.debounce)(
       () => {
         buildLinksAndReferences();
       },
@@ -4726,7 +5072,7 @@ var SNWPlugin = class extends import_obsidian14.Plugin {
       if (!this.markdownPostProcessor) {
         console.log("Markdown post processor is not registered");
       } else {
-        import_obsidian14.MarkdownPreviewRenderer.unregisterPostProcessor(this.markdownPostProcessor);
+        import_obsidian13.MarkdownPreviewRenderer.unregisterPostProcessor(this.markdownPostProcessor);
       }
       this.markdownPostProcessor = null;
     }
@@ -4748,7 +5094,7 @@ var SNWPlugin = class extends import_obsidian14.Plugin {
    * @memberof ThePlugin
    */
   toggleStateSNWGutters() {
-    let state = import_obsidian14.Platform.isMobile || import_obsidian14.Platform.isMobileApp ? this.settings.displayEmbedReferencesInGutterMobile : this.settings.displayEmbedReferencesInGutter;
+    let state = import_obsidian13.Platform.isMobile || import_obsidian13.Platform.isMobileApp ? this.settings.displayEmbedReferencesInGutterMobile : this.settings.displayEmbedReferencesInGutter;
     if (state === true)
       state = this.showCountsActive;
     this.updateCMExtensionState("gutter", state, gutters_cm6_default);
@@ -4766,10 +5112,10 @@ var SNWPlugin = class extends import_obsidian14.Plugin {
       this.editorExtensions.push(extension);
       this.editorExtensions[this.editorExtensions.length - 1].snwID = extensionIdentifier;
     } else {
-      for (let i = 0; i < this.editorExtensions.length; i++) {
-        const ext = this.editorExtensions[i];
+      for (let i3 = 0; i3 < this.editorExtensions.length; i3++) {
+        const ext = this.editorExtensions[i3];
         if (ext.snwID === extensionIdentifier) {
-          this.editorExtensions.splice(i, 1);
+          this.editorExtensions.splice(i3, 1);
           break;
         }
       }
@@ -4788,7 +5134,7 @@ var SNWPlugin = class extends import_obsidian14.Plugin {
       if (!this.markdownPostProcessor) {
         console.log("Markdown post processor is not registered");
       } else {
-        import_obsidian14.MarkdownPreviewRenderer.unregisterPostProcessor(this.markdownPostProcessor);
+        import_obsidian13.MarkdownPreviewRenderer.unregisterPostProcessor(this.markdownPostProcessor);
       }
       this.app.workspace.unregisterHoverLinkSource(this.appID);
     } catch (error) {

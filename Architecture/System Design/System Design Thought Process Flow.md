@@ -215,11 +215,11 @@ Summarize key design decisions, highlighting any alternative considerations. Inv
 | 1 Petabyte    | 1,024 Terabytes = 1,125,899,906,842,624 Bytes|
 
 ### Time:
-| Calculation                            | Result                       |
-|----------------------------------------|------------------------------|
-| 60 seconds * 60 minutes                | 3,600 seconds per hour       |
-| 3,600 seconds * 24 hours               | 86,400 seconds per day       |
-| 86,400 seconds * 30 days               | 2,592,000 seconds per month  |
+| Calculation              | Result                      |
+| ------------------------ | --------------------------- |
+| 60 seconds * 60 minutes  | 3,600 seconds per hour      |
+| 3,600 seconds * 24 hours | 86,400 seconds per day      |
+| 86,400 seconds * 30 days | 2,592,000 seconds per month |
 
 ### Number Places:
 - 300 hundred
