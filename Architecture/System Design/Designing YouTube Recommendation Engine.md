@@ -23,11 +23,13 @@ Design a recommendation engine for YouTube that provides personalized video reco
 
 ## Userbase
 
+#### Assumption
 10,000 active user
-
 2 comments on average a month
 100 views a month shorts and regular videos
 30 likes in a month between shorts and regular videos
+
+
 
 
 from months you can break down to weeks to days to seconds 
