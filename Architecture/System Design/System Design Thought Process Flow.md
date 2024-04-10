@@ -54,6 +54,19 @@ For instance, when tasked with designing an Instagram Reels feature, it's essent
 
 In designing this system, it's essential to consider its limitations, scale, and constraints in general but also in the interview context were they may want you to consider and work around these things. We should discuss factors such as the maximum number of reads and writes the system can handle efficiently, network request throughput, service usage (e.g., accounts created per unit time), and other relevant metrics to ensure scalability and performance. You should always ask for clarification and ask if what you have listed out is good enough [[Specifying Scope indepth |scope]] of functionality to focus on. 
 
+---
+##### Agile not in scope of system design interview
+but can and is leverage in software development process
+###### [[Use Case vs User Story |User Story]] Example:
+>[!important]
+>Creating stories helps with building data model, also if dealing with complex feature might want to consider using Use Cases over Stories.
+
+1. As a user I want to upload picture and videos to share.
+2. As a user I want to view uploaded photos and videos.
+3. As a user I want to follow, like, and comment on posts.
+4. As a user I want to see a feed containing posts from friends.
+5. As a user I want to block or unfollow other users.
+---
 ### Step 2: High Level Design(15 - 25 minutes)
 >[!important]
 When crafting your design, prioritize a forward-thinking approach that anticipates future functionality. Ensure flexibility to seamlessly accommodate expansions and enhancements. Focus on constructing a foundation that facilitates scalability, simplifying the integration of additional features down the line. Adopt a holistic mindset, anticipating potential modifications and advancements, and ensure the architecture remains adaptable to evolving requirements. This proactive approach fosters a more sustainable and extensible system over time.

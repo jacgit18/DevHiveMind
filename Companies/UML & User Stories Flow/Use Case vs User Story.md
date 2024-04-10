@@ -12,10 +12,6 @@ Relates: "[[User Stories#User Stories Intricacies]]"
 dg-publish:
 ---
 Use cases and User stories are both techniques used in software development to capture and describe requirements, but they have some differences.
-
->[!important]
->Creating stories helps with building data model, also if dealing with complex feature might want to consider using Use Cases over Stories.
-
 ## User stories
 User stories are typically short, informal descriptions of a feature or functionality from an end user's perspective and are part of Agile methodologies, emphasizing collaboration and adaptability.
 
