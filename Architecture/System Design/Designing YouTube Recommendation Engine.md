@@ -29,6 +29,8 @@ Design a recommendation engine for YouTube that provides personalized video reco
 100 views a month shorts and regular videos
 30 likes in a month between shorts and regular videos
 
+Total daily views (shorts and regular videos): 100 views * 10,000 users = 1,000,000 views
+
 
 
 
@@ -72,15 +74,15 @@ WRITE
 
 #### DB Query to Request Table
 
-| DB    | Request | Description                                | Endpoints               |
-| ----- | ------- | ------------------------------------------ | ----------------------- |
-| READ  | GET     | *Returns nearby business at user location* | **/v1/search/nearby**   |
-| READ  | GET     |                                            | **/v1/search/specific** |
-| READ  | GET     |                                            | **/v2/search/specific** |
-| WRITE | POST    |                                            | ..                      |
-| WRITE | DELETE  |                                            | ..                      |
-| WRITE | PATCH   |                                            | ..                      |
-|       |         |                                            |                         |
+| Request | DB    | Description                                | Endpoints               |
+| ------- | ----- | ------------------------------------------ | ----------------------- |
+| GET     | READ  | *Returns nearby business at user location* | **/v1/search/nearby**   |
+| GET     | READ  |                                            | **/v1/search/specific** |
+| GET     | READ  |                                            | **/v2/search/specific** |
+| POST    | WRITE |                                            | ..                      |
+| DELETE  | WRITE |                                            | ..                      |
+| PATCH   | WRITE |                                            | ..                      |
+|         |       |                                            |                         |
 
 #### DB Table
 
