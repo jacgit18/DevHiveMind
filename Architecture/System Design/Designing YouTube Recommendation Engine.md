@@ -25,9 +25,15 @@ Design a recommendation engine for YouTube that provides personalized video reco
 
 #### Assumption
 10,000 active user
+
+##### Comments
 2 comments on average a month
-100 views a month shorts and regular videos
+
+##### Likes
 30 likes in a month between shorts and regular videos
+
+##### Views
+100 views a month shorts and regular videos
 
 Total daily views (shorts and regular videos): 100 views * 10,000 users = 1,000,000 views
 
