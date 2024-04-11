@@ -45,9 +45,9 @@ Total monthly comments: 2 comments per user * 10,000 users = 20,000 comments
 
 Overall comments per day: Total monthly comments / 30 days  = 667 comments after rounding up 
 
-Comments per second in day = Overall comments per day / Total seconds in a day
+Comments per second in a day = Overall comments per day / Total seconds in a day
 
-Comments per second = 667 / 86,400  ≈ comments per second
+Comments per second in a day = 667 / 86,400  ≈ 0.008
 
 ##### Likes
 30 likes per user in a month between shorts and regular videos
@@ -56,6 +56,11 @@ Total monthly likes: 30 likes per user * 30 days * 10,000 users = 9,000,000 like
 
 Overall likes per day: Total monthly likes / 30 days  = 300,000 likes
 
+
+Likes per second in a day = Total likes in a day / Total seconds in a day
+
+Likes per second in a day = 300,000 likes / 86,400 seconds = 3.4722 likes
+
 ##### Views
 100 views per user a month shorts and regular videos
 
@@ -63,20 +68,10 @@ Total monthly views = 100 * active users * 30 days = 30,000,000
 
 Overall daily views per day(shorts and regular videos): Monthly views/ 30 days = 1,000,000 views
 
+Views per second in a day = Total views in a day / Total seconds in a day
 
+Views per second in a day = 1,000,000 views / 86,400 seconds ≈ 11.5741 views per second
 
-
-use chatGpt to come up with cheetsheet
-
-
-
-
-
-1 mb per user
-
-
-### Stats 
-user daily and monthly activity 
 
 
 ### Database Schema 
