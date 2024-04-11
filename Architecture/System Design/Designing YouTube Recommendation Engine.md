@@ -23,21 +23,32 @@ Design a recommendation engine for YouTube that provides personalized video reco
 
 ## Userbase
 
-#### Assumption
+#### Assumption to trace out math calculation
+update values after to be closer to more realistic estimations
+
 10,000 active user
 
 ##### Comments
-2 comments on average a month
+2 comments per user on average a month
+
+Total monthly comments: 2 comments per user * 10,000 users = 20,000 comments
+
+Overall comments per day: Total monthly comments / 30 days  = 667 comments after rounding up 
+
 
 ##### Likes
-30 likes in a month between shorts and regular videos
+30 likes per user in a month between shorts and regular videos
+
+Total monthly likes: 30 likes per user * 30 days * 10,000 users = 9,000,000 likes
+
+Overall likes per day: Total monthly likes / 30 days  = 300,000 likes
 
 ##### Views
-100 views a month shorts and regular videos
+100 views per user a month shorts and regular videos
 
-Total daily views (shorts and regular videos): 100 views * 10,000 users = 1,000,000 views
+Total monthly views = 100 * active users * 30 days = 30,000,000
 
-Monthly views = Daily views * Number of days in a month = 30,000,000
+Overall daily views per day(shorts and regular videos): Monthly views/ 30 days = 1,000,000 views
 
 
 

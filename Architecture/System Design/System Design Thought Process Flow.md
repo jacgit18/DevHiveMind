@@ -143,6 +143,8 @@ API gateways can improve system performance in several ways like caching respons
 When choosing an API you should prioritize alignment with your business requirements, including cost, long-term support, and desired functionality. Consider the [[API Provided Services |API specific services]] you need like maybe you need something like data retrieval, authentication, and file management. Evaluate [[API Architecture Styles]] like GraphQL, [[gRPC]], or REST to ensure compatibility with your system's needs. REST is the typical style used so you can default to that only focus on API,s needed also define API input params request and response.
 
 
+
+Talk [[Race Condition]]
 ###### Cloud
 
 Depending on the Architectural Styles you then should talk and identify major components of your system like [[Physical Servers vs Virtual Servers |physical or virtual servers]] which tend to be on premises or on cloud you can talk about the [[Benefits of cloud]] and it helps in terms of outsourcing functionality or infrastructure using different service architecture making easier to implement [[Vertical vs Horizontal Scaling |Vertical and Horizontal Scaling]] managing things like database servers and instances of your application, as well as any microservices within your codebase architecture. 
