@@ -31,6 +31,8 @@ Design a recommendation engine for YouTube that provides personalized video reco
 
 Total daily views (shorts and regular videos): 100 views * 10,000 users = 1,000,000 views
 
+Monthly views = Daily views * Number of days in a month = 30,000,000
+
 
 
 
