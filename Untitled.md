@@ -13,18 +13,6 @@ dg-publish:
 ---
 #### Math Problem: Estimation for YouTube Recommendation Engine
 
-1. **Daily Usage Estimation:**
-   - Total daily active users: 10,000 users
-   - Average comments per user per day: 2 comments/month / 30 days ≈ 0.067 comments/day
-   - Total daily comments: 10,000 users * 0.067 comments/day = 670 comments
-   - Total daily views (shorts and regular videos): 100 views/user * 10,000 users = 1,000,000 views
-   - Total daily likes (shorts and regular videos): 30 likes/user * 10,000 users = 300,000 likes
-
-2. **Monthly Usage Estimation:**
-   - Total monthly comments: 670 comments/day * 30 days = 20,100 comments
-   - Total monthly views: 1,000,000 views/day * 30 days = 30,000,000 views
-   - Total monthly likes: 300,000 likes/day * 30 days = 9,000,000 likes
-
 3. **Storage Estimation:**
    - Assuming an average comment length of 100 characters: 20,100 comments * 100 characters = 2,010,000 characters
    - Assuming each view generates 1 MB of data: 30,000,000 views * 1 MB = 30,000,000 MB

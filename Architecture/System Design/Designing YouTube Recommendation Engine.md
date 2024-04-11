@@ -22,11 +22,18 @@ Design a recommendation engine for YouTube that provides personalized video reco
 ## Requirements
 
 ## Userbase
+age geo location governance etc ...
+#### Data points of focus identified
+comments, views, likes, 
 
-#### Assumption to trace out math calculation
+dislikes(not on youtube any more specifically the count at least on the client side)
+
+
+#### Usage Assumption to trace out math calculation
 update values after to be closer to more realistic estimations
 
 10,000 active user
+
 
 ##### Comments
 2 comments per user on average a month
@@ -53,28 +60,13 @@ Overall daily views per day(shorts and regular videos): Monthly views/ 30 days =
 
 
 
-from months you can break down to weeks to days to seconds 
-
-3,600 seconds in hour
-
-24 hours in a day
-
-86,400 seconds per day
-
-730 hours in a month
-
 use chatGpt to come up with cheetsheet
 
 
 
-small storage for each user easier to calculate
+
 
 1 mb per user
-
-## Data points
-comments, views, likes, 
-
-dislikes(not on youtube any more specifically the count at least on the client side)
 
 
 ### Stats 
