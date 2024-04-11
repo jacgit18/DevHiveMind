@@ -52,6 +52,8 @@ During this phase, it's pivotal to establish the system's scope while gathering 
 
 For instance, when tasked with designing an Instagram Reels feature, it's essential to deconstruct the problem into distinct use cases, delineating interactions among system components. Key requirements such as anticipated traffic, data volume, latency, and scalability should be identified. Inquire about the [[Userbase]] type, as this insight aids in resource estimation and governance considerations, especially regarding scalability implications, such as underage user base scenarios. Understanding potential constraints and bottlenecks that may emerge with an expanding user base is imperative. This insight informs decisions regarding database considerations, determining whether a NoSQL or SQL database aligns with specific needs and data characteristics.
 
+> Ask real world comparative questions around different systems like if asked about implementing it chat app or feature ask if it's a system similar to existing systems like slack or discord to get more clarity.
+
 In designing this system, it's essential to consider its limitations, scale, and constraints in general but also in the interview context were they may want you to consider and work around these things. We should discuss factors such as the maximum number of reads and writes the system can handle efficiently, network request throughput, service usage (e.g., accounts created per unit time), and other relevant metrics to ensure scalability and performance. You should always ask for clarification and ask if what you have listed out is good enough [[Specifying Scope indepth |scope]] of functionality to focus on. 
 
 ---
