@@ -35,6 +35,9 @@ update values after to be closer to more realistic estimations
 10,000 active user
 
 
+Total seconds in a day =  24 * 60 * 60 =  86,400 seconds
+
+
 ##### Comments
 2 comments per user on average a month
 
@@ -42,6 +45,9 @@ Total monthly comments: 2 comments per user * 10,000 users = 20,000 comments
 
 Overall comments per day: Total monthly comments / 30 days  = 667 comments after rounding up 
 
+Comments per second in day = Overall comments per day / Total seconds in a day
+
+Comments per second = 667 / 86,400  ≈ comments per second
 
 ##### Likes
 30 likes per user in a month between shorts and regular videos
