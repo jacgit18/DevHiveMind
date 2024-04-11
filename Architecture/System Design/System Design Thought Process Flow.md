@@ -56,7 +56,7 @@ In designing this system, it's essential to consider its limitations, scale, and
 
 ---
 ##### Agile not in scope of system design interview
-but can and is leverage in software development process
+but can be and is leverage in software development process
 ###### [[Use Case vs User Story |User Story]] Example:
 >[!important]
 >Creating stories helps with building data model, also if dealing with complex feature might want to consider using Use Cases over Stories.
@@ -168,7 +168,7 @@ Besides that you should consider what technologies your  picking based on the ab
 
 It's worth noting that scaling considerations can fall under administrative functionalities, whether that involves resource scaling in a cloud environment or implementing custom solutions such as creating an admin dashboard for internal use by developers. This dashboard could encompass various [[XII Admin processes]], offering insights and control over the scaling operations and other administrative tasks.
 ##### [[Impact of Architectural Styles |Architectural Styles]] 
-In a system design choosing the right architectural styles, is important think about what is needed and purpose of the style. In addition to that you can leverage [[When to use Domain-Driven Design |Domain Driven Design]] with some of the different architectural styles depending on domain complexity determines weather it is necessary to use it meaning the more simpler the domain is the less need for domain driven design in my opinion. You can also use [[Test Driven Development]] it just depends on your priorities. Side note things like Test Driven and Domain design are meant to be used alongside architectural styles.
+In a system design choosing the right architectural styles, is important think about what is needed and purpose of the style. In addition to that you can leverage [[When to use Domain-Driven Design |Domain Driven Design]] with some of the different architectural styles depending on domain complexity determines weather it is necessary to use it meaning the more simpler the domain is the less need for domain driven design in my opinion. You can also use [[Test Driven Development]] or [[Behavior Driven Development]] it just depends on your priorities. Side note things like Test Driven and Domain design are meant to be used alongside architectural styles.
 
 In the realm of architectural styles, popular ones include [[Microservices VS Monolithic Architecture |Microservices]] which can also help with overall system maintainability and scalability improving response times, often paired with [[Eureka Service]] in Java-based applications and used in conjunction with the [[Circuit breaker pattern relationship with fault tolerance |Circuit Breaker Design Pattern]] to create a resilient communication layer between microservices, specifically in the components responsible for making remote calls to other services or resources. This pattern is typically implemented within client side communication libraries or frameworks, API Gateways, Proxies, `Service Meshes`, Middleware, also load balancers.
 
