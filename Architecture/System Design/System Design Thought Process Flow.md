@@ -232,16 +232,18 @@ You should also consider enhancing frontend performance by optimizing page load 
 Summarize key design decisions, highlighting any alternative considerations. Invite questions and address outstanding concerns.
 
 # Stats 
-> Hun(3) Thou(6) Mill(9) Bill(12) Trill(15)
 ### Data Size:
 
-| Unit          | Equivalent in Bytes                    |
-|---------------|----------------------------------------|
-| 1 Kilobyte    | 1,024 Bytes                             |
-| 1 Megabyte    | 1,024 Kilobytes = 1,048,576 Bytes       |
-| 1 Gigabyte    | 1,024 Megabytes = 1,073,741,824 Bytes    |
-| 1 Terabyte    | 1,024 Gigabytes = 1,099,511,627,776 Bytes|
-| 1 Petabyte    | 1,024 Terabytes = 1,125,899,906,842,624 Bytes|
+| Unit       | Equivalent in Bytes                           | Place       |       |
+| ---------- | --------------------------------------------- | ----------- | ----- |
+| 1 Byte     | 1                                             | Hundred     | 10    |
+| 1 Kilobyte | 1,024 Bytes                                   | Thousand    | 10^3  |
+| 1 Megabyte | 1,024 Kilobytes = 1,048,576 Bytes             | Million     | 10^6  |
+| 1 Gigabyte | 1,024 Megabytes = 1,073,741,824 Bytes         | Billion     | 10^9  |
+| 1 Terabyte | 1,024 Gigabytes = 1,099,511,627,776 Bytes     | Trillion    | 10^12 |
+| 1 Petabyte | 1,024 Terabytes = 1,125,899,906,842,624 Bytes | Quadrillion | 10^15 |
+
+
 
 ### Time:
 | Calculation              | Result                      |
