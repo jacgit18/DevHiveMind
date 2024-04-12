@@ -10,12 +10,23 @@ Comments: Placeholder comment any thing else you want to mention about the docum
 Purpose: This documentation discusses
 Status: Tackling
 Started: 2024-04-05T00:00:00.000Z
-EditDate: 2024-04-06
+EditDate: 2024-04-11
 Relates: 
 Peer Reviewed: 0
 dg-publish:
 ---
 Can expand on this system week by week growing it or mock by mock interview in a week.
+
+
+| Unit       | Equivalent in Bytes                           |
+| ---------- | --------------------------------------------- |
+| 1 Kilobyte | 1,024 Bytes                                   |
+| 1 Megabyte | 1,024 Kilobytes = 1,048,576 Bytes             |
+| 1 Gigabyte | 1,024 Megabytes = 1,073,741,824 Bytes         |
+| 1 Terabyte | 1,024 Gigabytes = 1,099,511,627,776 Bytes     |
+| 1 Petabyte | 1,024 Terabytes = 1,125,899,906,842,624 Bytes |
+|            |                                               |
+
 
 # Question
 Design a recommendation engine for YouTube that provides personalized video recommendations to users. 
@@ -97,9 +108,9 @@ Total network traffic for comments: 20,000 comments * 1 KB Average comment size(
 20,000 KB / 1024 KB/MB ≈ 19.53 MB
 
 
-###### Network Estimation Monthly
+###### Bandwidth Estimation Monthly
 
-Bandwidth = 19.53 MB / 2,592,000 seconds ≈ 0.0075 MB/s ≈ 7.5 KB/s
+Bandwidth = 19.53 MB / 2,592,000 seconds in a month ≈ 0.0075 MB/s ≈ 7.5 KB/s
 
 ##### Likes
 30 likes per user in a month between shorts and regular videos
