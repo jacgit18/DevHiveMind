@@ -77,6 +77,10 @@ When crafting your design, prioritize a forward-thinking approach that anticipat
 
 Create an Entity Relationship Diagram (ERD) to define clear relationships and [[Schema Design]] then discuss table [[Normalization & Denormalization]] to optimize schema and overall database performance. But once that is done you can come up with a list of general feature endpoints then come up with estimations.
 
+#### Capacity Estimation (5 min)
+https://www.youtube.com/watch?v=-frNQkRz_IU
+
+Traffic & Storage should be more then enough
 ##### Storage Estimation Examples
 > Keep estimation simple focus on storage needed and not to much on queries especially if there are other critical things to discuss. 
 - Storage: Writes per day \* size of write \* time to store data
@@ -85,6 +89,14 @@ Create an Entity Relationship Diagram (ERD) to define clear relationships and [[
 - Yearly storage:(15 TB \* 365 days \* 10 years) = 55 PB guesstimate
 
 ##### Network Traffic Estimate Examples
+Ask Interviewer about expected Daily active user
+Convert users to request define services how many reads and writes it does and it is read or write heavy 
+
+user tend to do more reads then writes especially in the context of a platform like youtube more videos are watched then uploaded
+
+you can come up with a ratio so 10:1 or 100:1 etc ..
+so you can say if read heavy you can say you have 10 reads for every 1 write or for every 1 video uploaded there are 10 views 
+
 - Traffic: Daily active users * average reads and writes per user
 - Active users: 10 million 
 - User Post viewed: 30 views per user or 30 `GET Request`

@@ -17,16 +17,14 @@ dg-publish:
 ---
 Can expand on this system week by week growing it or mock by mock interview in a week.
 
-> Hun(3) Thou(6) Mill(9) Bill(12) Trill(15)
-
-| Unit       | Equivalent in Bytes                           |
-| ---------- | --------------------------------------------- |
-| 1 Kilobyte | 1,024 Bytes                                   |
-| 1 Megabyte | 1,024 Kilobytes = 1,048,576 Bytes             |
-| 1 Gigabyte | 1,024 Megabytes = 1,073,741,824 Bytes         |
-| 1 Terabyte | 1,024 Gigabytes = 1,099,511,627,776 Bytes     |
-| 1 Petabyte | 1,024 Terabytes = 1,125,899,906,842,624 Bytes |
-
+| Unit       | Equivalent in Bytes                           | Place       |       |
+| ---------- | --------------------------------------------- | ----------- | ----- |
+| 1 Byte     | 1                                             | Hundred     | 10    |
+| 1 Kilobyte | 1,024 Bytes                                   | Thousand    | 10^3  |
+| 1 Megabyte | 1,024 Kilobytes = 1,048,576 Bytes             | Million     | 10^6  |
+| 1 Gigabyte | 1,024 Megabytes = 1,073,741,824 Bytes         | Billion     | 10^9  |
+| 1 Terabyte | 1,024 Gigabytes = 1,099,511,627,776 Bytes     | Trillion    | 10^12 |
+| 1 Petabyte | 1,024 Terabytes = 1,125,899,906,842,624 Bytes | Quadrillion | 10^15 |
 
 # Question
 Design a recommendation engine for YouTube that provides personalized video recommendations to users. 
@@ -65,9 +63,11 @@ Comments per second in a day = 667 / 86,400  ≈ 0.008
 
 Total storage needed = Average comment size(assumption) * Total monthly comments 
 
-Total storage needed = 1KB * 20,000 comments = 20,000 KB
+Total storage needed = 1,024 bytes * 20,000 comments = 20,480,000 bytes
 
-20,000 KB / 1024 bytes = 19.53 MB (approximately)
+20,480,000 bytes / 1024 bytes = 20,000  KB 
+
+20,000 KB / 1024 KB/MB = 19.53 MB (approximately)
 
 
 ###### Memory Estimation Monthly
@@ -105,6 +105,7 @@ In some cases, such as when optimizing for read performance or when storage is r
 ###### Network Estimation Monthly
 Total network traffic for comments: 20,000 comments * 1 KB Average comment size(assumption) = 20,000 KB = 19.53 MB
 
+
 20,000 KB / 1024 KB/MB ≈ 19.53 MB
 
 
@@ -113,16 +114,34 @@ Total network traffic for comments: 20,000 comments * 1 KB Average comment size(
 Bandwidth = 19.53 MB / 2,592,000 seconds in a month ≈ 0.0075 MB/s ≈ 7.5 KB/s
 
 ##### Likes
-30 likes per user in a month between shorts and regular videos
+120 likes per user in a month between shorts and regular videos
 
-Total monthly likes: 30 likes per user * 30 days * 10,000 users = 9,000,000 likes
+Total monthly likes: 120 likes per user * 30 days * 10,000 users = 36,000,000 likes
 
-Overall likes per day: Total monthly likes / 30 days  = 300,000 likes
+Overall likes per day: Total monthly likes / 30 days  = 1,200,000 likes
 
 
 Likes per second in a day = Total likes in a day / Total seconds in a day
 
-Likes per second in a day = 300,000 likes / 86,400 seconds = 3.4722 likes
+Likes per second in a day = 1,200,000 likes / 86,400 seconds = 13.88 likes
+
+###### Storage Estimation Monthly
+Total storage needed = Average likes size(assumption) * Total monthly likes 
+
+Video ID (11 bytes) + User ID (16 bytes) + JSON overhead (10 bytes) = 37 bytes
+
+Total storage needed = 37 bytes * 36,000,000 likes = 1,332,000,000 bytes
+
+
+1,332,000,000 bytes / 1024 bytes/KB * 1024 KB/MB = 1,332,000,000 / 1,048,576 = 1,270.56 MB
+
+1,270.56 MB / 1024 MB/GB = 1.24 GB (approximately)
+
+###### Memory Estimation Monthly
+
+###### Network Estimation Monthly
+
+###### Bandwidth Estimation Monthly
 
 ##### Views
 100 views per user a month shorts and regular videos
@@ -135,6 +154,46 @@ Views per second in a day = Total views in a day / Total seconds in a day
 
 Views per second in a day = 1,000,000 views / 86,400 seconds ≈ 11.5741 views per second
 
+###### Storage Estimation Monthly
+
+Total storage needed = Average view counts size(assumption) * Total monthly view counts  
+
+Total storage needed = 4 bytes * 30,000,000 view counts  = 120,000,000 bytes
+
+120,000,000 bytes / 1024 bytes = 117,187.5 KB 
+
+117,187.5 KB / 1024 KB/MB = 114.44 MB (approximately)
+
+###### Memory Estimation Monthly
+
+###### Network Estimation Monthly
+
+###### Bandwidth Estimation Monthly
+
+### Total Estimation
+
+#### Storage
+
+Comments + Likes + View Counts
+19.53 MB +  1.24 GB + 114.44 MB 
+
+
+1.24 GB * 1024 MB/GB = 1,270.56 MB
+
+Now, add the sizes together:
+
+Total Storage Needed = 19.53 MB + 1,270.56 MB + 114.44 MB
+
+Total Storage Needed = 1,404.53 MB
+
+1,404.53 MB / 1024 MB/GB ≈ 1.37 GB
+
+less then a 32GB flash drive not accurate real world estimation but just need to adjust initial value
+#### Memory
+
+Network 
+
+Bandwidth
 
 
 ### Database Schema 
@@ -178,15 +237,7 @@ WRITE
 }
 ```
 
-## Estimations
 
-Database
-
-Network Traffic
-
-Memory
-
-Bandwidth
 
 #todo/Personal/Low 
 - [ ] Senior level estimation to research storage around machine learning models. **Total Storage:** Considering additional storage for video metadata, user profiles, and machine learning model checkpoints, let's estimate a total storage requirement of 500 GB per month. 
