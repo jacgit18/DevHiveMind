@@ -28,7 +28,7 @@ excalidraw-autoexport: svg
 ![[System design core concepts.gif]]
 For more info read 
 #todo/Personal/High/Dev  
-- [ ] [[System Design Interview An Insider’s Guide Volume 1.pdf]]
+- [ ] [[System Design Interview An Insider’s Guide Volume 1.pdf |System Design Interview An Insider’s Guide Volume 1]]
 - [ ] [[Designing Data-Intensive Applications The Big Ideas Behind Reliable, Scalable, and Maintainable Systems by Martin Kleppmann (z-lib.org).pdf |Designing Data-Intensive Applications]]
 - [ ] [[Software Architecture The Hard Parts Modern Trade-Off Analyses for Distributed Architectures (Neal Ford, Mark Richards, Pramod Sadalage etc.) (z-lib.org).pdf |Software Architecture The Hard Parts]]
 - [ ] [[Alex Petrov - Database Internals_ A Deep Dive into How Distributed Data Systems Work-O'Reilly Media (2019).pdf |Database Internals_ A Deep Dive into How Distributed Data Systems Work]]
