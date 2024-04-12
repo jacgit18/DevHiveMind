@@ -61,7 +61,7 @@ Total storage needed = 1KB * 20,000 comments = 20,000 KB
 
 ###### Memory Estimation
 
-
+Total memory for storing comments = Total storage needed = 20,000 KB * 
 
 ##### Likes
 30 likes per user in a month between shorts and regular videos
