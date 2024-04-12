@@ -62,6 +62,11 @@ Total storage needed = 1KB * 20,000 comments = 20,000 KB
 ###### Memory Estimation
 > metadata associated with each comment, such as timestamp, user ID, Comment ID, Reply-to ID, likes/dislikes count, or Flags. You need to allocate additional memory.
 
+Total metadata overhead = 500 bytes * 20,000 comments = 10,000,000 bytes boils down to roughly 9.54 MB
+
+Allocate an additional 20-30% of the total memory for overhead
+
+Memory overhead = 30% * (Total memory for storing comments + Total metadata overhead) Memory overhead ≈ 30% * (20,000 KB + 9.54 MB) ≈ 30% * (20,000 KB + 9.54 MB) ≈ 3.76 MB
 
 Total memory estimation ≈ Total memory for storing comments + Total metadata overhead + Memory overhead 
 
