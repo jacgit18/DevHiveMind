@@ -11,7 +11,7 @@ Relates:
 Peer Reviewed: 0
 dg-publish:
 ---
-- **Amazon Athena:** Allows users to analyze data stored in Amazon S3 using standard SQL queries, without the need for complex ETL processes.
+- **Amazon Athena:** Allows users to analyze data stored in Amazon S3 using standard SQL queries, without the need for complex ETL(Extract, Transform, and Load) processes.
 - **Amazon QuickSight:** Provides business intelligence and data visualization capabilities, enabling users to create interactive dashboards and reports.
 - **Amazon CloudSearch:** Offers a fully managed search service for building search functionality into applications.
 
