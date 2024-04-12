@@ -50,7 +50,7 @@ Comments per second in a day = Overall comments per day / Total seconds in a day
 
 Comments per second in a day = 667 / 86,400  ≈ 0.008
 
-###### Storage Estimation
+###### Storage Estimation Monthly
 
 Total storage needed = Average comment size(assumption) * Total monthly comments 
 
@@ -59,7 +59,7 @@ Total storage needed = 1KB * 20,000 comments = 20,000 KB
 20,000 KB / 1024 bytes = 19.53 MB (approximately)
 
 
-###### Memory Estimation
+###### Memory Estimation Monthly
 > metadata associated with each comment, such as timestamp, user ID, Comment ID, Reply-to ID, likes/dislikes count, or Flags. You need to allocate additional memory.
 
 Total metadata overhead = 500 bytes * 20,000 comments = 10,000,000 bytes boils down to roughly 9.54 MB
@@ -91,9 +91,15 @@ A 47% difference between storage and memory estimations is somewhat on the highe
 
 In some cases, such as when optimizing for read performance or when storage is relatively inexpensive compared to memory, this higher ratio might be acceptable. However, it's essential to ensure that you're not overallocating resources unnecessarily, as excessive memory usage can lead to performance degradation due to increased paging/swapping or even out-of-memory errors.
 
-###### Network Estimation
-Total network traffic for comments: 20,000 comments * 1 KB Average comment size(assumption) = 20,000,000 KB
+###### Network Estimation Monthly
+Total network traffic for comments: 20,000 comments * 1 KB Average comment size(assumption) = 20,000 KB = 19.53 MB
 
+20,000 KB / 1024 KB/MB ≈ 19.53 MB
+
+
+###### Network Estimation Monthly
+
+Bandwidth = 19.53 MB / 2,592,000 seconds ≈ 0.0075 MB/s ≈ 7.5 KB/s
 
 ##### Likes
 30 likes per user in a month between shorts and regular videos
