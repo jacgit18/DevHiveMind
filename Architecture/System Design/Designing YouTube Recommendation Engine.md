@@ -17,6 +17,7 @@ dg-publish:
 ---
 Can expand on this system week by week growing it or mock by mock interview in a week.
 
+> Hun(3) Thou(6) Mill(9) Bill(12) Trill(15)
 
 | Unit       | Equivalent in Bytes                           |
 | ---------- | --------------------------------------------- |
@@ -25,7 +26,6 @@ Can expand on this system week by week growing it or mock by mock interview in a
 | 1 Gigabyte | 1,024 Megabytes = 1,073,741,824 Bytes         |
 | 1 Terabyte | 1,024 Gigabytes = 1,099,511,627,776 Bytes     |
 | 1 Petabyte | 1,024 Terabytes = 1,125,899,906,842,624 Bytes |
-|            |                                               |
 
 
 # Question

@@ -220,7 +220,7 @@ You should also consider enhancing frontend performance by optimizing page load 
 Summarize key design decisions, highlighting any alternative considerations. Invite questions and address outstanding concerns.
 
 # Stats 
-
+> Hun(3) Thou(6) Mill(9) Bill(12) Trill(15)
 ### Data Size:
 
 | Unit          | Equivalent in Bytes                    |
@@ -237,13 +237,6 @@ Summarize key design decisions, highlighting any alternative considerations. Inv
 | 60 seconds * 60 minutes  | 3,600 seconds per hour      |
 | 3,600 seconds * 24 hours | 86,400 seconds per day      |
 | 86,400 seconds * 30 days | 2,592,000 seconds per month |
-
-### Number Places:
-- 300 hundred
-- 600,000 thousand
-- 900,000,000 million
-- 120,000,000,000 billion
-- 150,000,000,000,000 trillion
 
 
 # Alt Design
