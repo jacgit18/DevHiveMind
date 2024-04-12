@@ -60,8 +60,26 @@ Total storage needed = 1KB * 20,000 comments = 20,000 KB
 
 
 ###### Memory Estimation
+> metadata associated with each comment, such as timestamp, user ID, Comment ID, Reply-to ID, likes/dislikes count, or Flags. You need to allocate additional memory.
 
-Total memory for storing comments = Total storage needed = 20,000 KB * 
+
+Total memory estimation ≈ Total memory for storing comments + Total metadata overhead + Memory overhead 
+
+Total memory estimation ≈ 20,000 KB + 9.54 MB + 3.76 MB ≈ 20,000 KB + 13.3 MB ≈ 13.32 MB
+
+
+
+###### Ratio
+Storage to memory ratio = Storage estimation / Memory estimation
+
+Storage to memory ratio = 19.53 MB / 13.32 MB ≈ 1.47  
+
+A ratio of approximately 1.47 indicates that the storage estimation is higher than the memory estimation by about 47%.
+
+
+A 47% difference between storage and memory estimations is somewhat on the higher side. It suggests that the storage requirements are significantly higher than the memory requirements for caching and managing the same data set.
+
+In some cases, such as when optimizing for read performance or when storage is relatively inexpensive compared to memory, this higher ratio might be acceptable. However, it's essential to ensure that you're not overallocating resources unnecessarily, as excessive memory usage can lead to performance degradation due to increased paging/swapping or even out-of-memory errors.
 
 ##### Likes
 30 likes per user in a month between shorts and regular videos
