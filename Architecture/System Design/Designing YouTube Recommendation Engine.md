@@ -34,10 +34,11 @@ update values after to be closer to more realistic estimations
 
 10,000 active user
 
+Total seconds in a month =  30 * 24 * 60 * 60 =  2,592,000 seconds
 
 Total seconds in a day =  24 * 60 * 60 =  86,400 seconds
 
-
+> in general monthly estimations should be sufficient especially since there is so much other things to consider.
 ##### Comments
 2 comments per user on average a month
 
@@ -48,6 +49,16 @@ Overall comments per day: Total monthly comments / 30 days  = 667 comments after
 Comments per second in a day = Overall comments per day / Total seconds in a day
 
 Comments per second in a day = 667 / 86,400  ≈ 0.008
+
+###### Storage Estimation
+
+Total storage needed = Average comment size(assumption) * Total monthly comments 
+
+Total storage needed = 1KB * 20,000 comments = 20,000 KB
+
+20,000 KB / 1024 = 19.53 MB (approximately)
+
+
 
 ##### Likes
 30 likes per user in a month between shorts and regular videos
