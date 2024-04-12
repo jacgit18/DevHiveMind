@@ -64,6 +64,11 @@ Total storage needed = 1KB * 20,000 comments = 20,000 KB
 
 Total metadata overhead = 500 bytes * 20,000 comments = 10,000,000 bytes boils down to roughly 9.54 MB
 
+To convert bytes to megabytes (MB), we divide by 1,048,576 (1024 * 1024), because 1 MB equals 1,048,576 bytes
+
+10,000,000 bytes / 1,048,576 bytes/MB ≈ 9.54 MB
+
+
 Allocate an additional 20-30% of the total memory for overhead
 
 Memory overhead = 30% * (Total memory for storing comments + Total metadata overhead) Memory overhead ≈ 30% * (20,000 KB + 9.54 MB) ≈ 30% * (20,000 KB + 9.54 MB) ≈ 3.76 MB
@@ -74,7 +79,7 @@ Total memory estimation ≈ 20,000 KB + 9.54 MB + 3.76 MB ≈ 20,000 KB + 13.3 M
 
 
 
-###### Ratio
+###### Ratio(Side Note)
 Storage to memory ratio = Storage estimation / Memory estimation
 
 Storage to memory ratio = 19.53 MB / 13.32 MB ≈ 1.47  
@@ -85,6 +90,10 @@ A ratio of approximately 1.47 indicates that the storage estimation is higher th
 A 47% difference between storage and memory estimations is somewhat on the higher side. It suggests that the storage requirements are significantly higher than the memory requirements for caching and managing the same data set.
 
 In some cases, such as when optimizing for read performance or when storage is relatively inexpensive compared to memory, this higher ratio might be acceptable. However, it's essential to ensure that you're not overallocating resources unnecessarily, as excessive memory usage can lead to performance degradation due to increased paging/swapping or even out-of-memory errors.
+
+###### Network Estimation
+Total network traffic for comments: 20,000 comments * 1 KB Average comment size(assumption) = 20,000,000 KB
+
 
 ##### Likes
 30 likes per user in a month between shorts and regular videos
