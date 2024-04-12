@@ -56,7 +56,10 @@ Total storage needed = Average comment size(assumption) * Total monthly comments
 
 Total storage needed = 1KB * 20,000 comments = 20,000 KB
 
-20,000 KB / 1024 = 19.53 MB (approximately)
+20,000 KB / 1024 bytes = 19.53 MB (approximately)
+
+
+###### Memory Estimation
 
 
 
