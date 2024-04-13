@@ -79,10 +79,10 @@ Total storage needed = 1,024 bytes * 13,000,000 comments = 13,312,000,000 bytes
 13,000,000 KB / 1024 KB/MB = 12,695.3125 MB(approximately)
 
 ###### Network Estimation Monthly
-Total network traffic for comments: 400,000,000 comments * 1 KB Average comment size(assumption) = 400,000,000 KB = 
+Total network traffic for comments:
+400,000,000 comments * 1 KB Average comment size(assumption) = 400,000,000 KB 
 
-
-20,000 KB / 1024 KB/MB ≈ 19.53 MB
+400,000,000 KB / 1024 KB/MB ≈ 390,625 MB
 
 
 ###### Memory Estimation Monthly
