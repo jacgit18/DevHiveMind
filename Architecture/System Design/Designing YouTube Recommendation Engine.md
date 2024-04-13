@@ -86,7 +86,7 @@ Total network traffic for comments:
 
 
 ###### Memory Estimation Monthly
-can be used to estimate caching networking traffic or database storage.
+can be used to estimate caching networking traffic request or database storage request.
 > metadata associated with each comment, such as timestamp, user ID, Comment ID, Reply-to ID, likes/dislikes count, or Flags. You need to allocate additional memory.
 
 Total metadata overhead = Size of metadata per comment * Number of comments
@@ -149,6 +149,8 @@ Total storage needed = 37 bytes * 24,000,000,000 likes = 888,000,000,000 bytes
 
 846,862.79 MB / 1024 MB/GB = 830 GB (approximately)
 
+###### Network Estimation Monthly
+
 ###### Memory Estimation Monthly
 something seems excessive
 
@@ -172,7 +174,6 @@ Total memory estimation ≈ Total memory for storing comments + Total metadata o
 Total memory estimation ≈ 720,000,000,000 KB + 29,520,000,000,000 bytes + 9,122,400,000,000 bytes ≈ 707.10 TB
 
 
-###### Network Estimation Monthly
 
 ###### Bandwidth Estimation Monthly
 
@@ -197,8 +198,9 @@ Total storage needed = 4 bytes * 30,000,000 view counts  = 120,000,000 bytes
 
 117,187.5 KB / 1024 KB/MB = 114.44 MB (approximately)
 
-###### Memory Estimation Monthly
 ###### Network Estimation Monthly
+
+###### Memory Estimation Monthly
 
 ###### Bandwidth Estimation Monthly
 
@@ -224,14 +226,15 @@ Original calculation was less then a 32GB flash drive not accurate real world es
 862,729.7525 MB/ 1024 MB/GB ≈ 842.89 GB
 
 This new estimation is close to a hard drive but also this a small section of a system and also this obliviously a rough estimation as well so the storage or other estimation categories will look relatively low but also you have consider common sense also like when you think about youtube when it comes to Like to Comment ratio you will probably have more likes made vs comments made on the system.
+
+#### Network 
+
 #### Memory
 
 Comments + Likes + View Counts
 642.56 MB +707.10 TB = 800 TB 
 
 rough and seems excessive  
-
-#### Network 
 
 #### Bandwidth
 
