@@ -84,6 +84,8 @@ Total network traffic for comments:
 
 400,000,000 KB / 1024 KB/MB ≈ 390,625 MB
 
+Daily network traffic for comments = 390,625 MB / 30 ≈ 13,020.83 MB per day
+
 
 ###### Memory Estimation Monthly
 can be used to estimate caching networking traffic request or database storage request.
@@ -119,6 +121,11 @@ Ratio = 3.63 GB / 12.40625 GB ≈ 0.2925
 Percentage Ratio = 0.2925 * 100% ≈ 29.25%
 
 ###### Bandwidth Estimation Monthly
+ 13,020.83 MB
+
+Bandwidth: Requests per day * average request size
+- Bandwidth required: 450,000 GB (300 million(Active users) \* 1.5 MB)
+- Bandwidth per second: 5.2 GB (450,000 GB / 86,400 seconds in a day)
 
 Bandwidth = 19.53 MB / 2,592,000 seconds in a month ≈ 0.0075 MB/s ≈ 7.5 KB/s
 
