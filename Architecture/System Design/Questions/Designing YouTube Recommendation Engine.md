@@ -89,37 +89,19 @@ Total network traffic for comments:
 can be used to estimate caching networking traffic request or database storage request.
 > metadata associated with each comment, such as timestamp, user ID, Comment ID, Reply-to ID, likes/dislikes count, or Flags. You need to allocate additional memory.
 
-Read requests per day = Total network traffic for comments / days in a month
+Read requests per day = Total network traffic for comments in month / days in a month
 
-Read requests per day = 400,000,000 comments / 30 = 13,000,000 rounded down
+Read requests per day = 400,000,000 comments / 30 = 13,000,000 comments rounded down
 
-Memory: Read requests per day \* average request size \* 20%
+Memory Total metadata overhead : Read requests per day \* average request size \* 20%
 
-Cache for Instagram highlights:  (300 million requests \* 500 bytes) = 150 GB
+Memory Total metadata overhead  = 13,000,000 * 500 bytes(assumption) * 20% = 1,300,000,000 bytes
 
-Adjusted cache: (20% of 150 GB) = 30 GB
+Cache for Youtube comments:  (13 million requests \* 500 bytes) = 6.05 GB
 
-Total memory: (30 GB \* 3 for replication) = 90 GB 
+Adjusted cache: (20% of 6.05 GB) = 1.21 GB
 
-
-Total metadata overhead = Size of metadata per comment * Number of comments
-
-Total metadata overhead = 500 bytes(assumption) * 400,000,000 comments = 200,000,000,000 bytes 
-
-
-Allocate an additional 20-30% of the total memory for overhead
-
-Memory overhead = 30% * (Total memory for storing comments + Total metadata overhead) 
-
-Memory overhead ≈ 30% * (13,312,000,000 bytes + 200,000,000,000 bytes) ≈ 63,993,600,000 bytes
-
-
-Total memory for storing comments = 1 KB * 400,000,000 comments = 400,000,000 KB
-
-Total memory estimation ≈ Total memory for storing comments + Total metadata overhead + Memory overhead 
-
-Total memory estimation ≈ 400,000,000 KB + 200,000,000,000 bytes + 63,993,600,000 bytes ≈ 673,593,600,000 bytes = 642.56 MB
-
+Total memory: (1.21 GB * 3 for replication) = 3.63 GB
 
 
 ###### Ratio(Side Note)
