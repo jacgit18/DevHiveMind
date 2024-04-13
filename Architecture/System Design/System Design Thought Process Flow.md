@@ -148,9 +148,6 @@ API gateways can improve system performance in several ways like caching respons
 ###### Third Party API
 When choosing an API you should prioritize alignment with your business requirements, including cost, long-term support, and desired functionality. Consider the [[API Provided Services |API specific services]] you need like maybe you need something like data retrieval, authentication, and file management. Evaluate [[API Architecture Styles]] like GraphQL, [[gRPC]], or REST to ensure compatibility with your system's needs. REST is the typical style used so you can default to that only focus on API,s needed also define API input params request and response.
 
-
-
-Talk [[Race Condition]]
 ###### Cloud
 
 Depending on the Architectural Styles you then should talk and identify major components of your system like [[Physical Servers vs Virtual Servers |physical or virtual servers]] which tend to be on premises or on cloud you can talk about the [[Benefits of cloud]] and it helps in terms of outsourcing functionality or infrastructure using different service architecture making easier to implement [[Vertical vs Horizontal Scaling |Vertical and Horizontal Scaling]] managing things like database servers and instances of your application, as well as any microservices within your codebase architecture. 
@@ -162,6 +159,10 @@ Additionally, various [[System Design Interview An Insider’s Guide Volume 1.pd
 Horizontal scaling is often preferred due to the limitations of vertical scaling. For instance, it's impossible to infinitely increase CPU and memory resources on a single server. Additionally, vertical scaling lacks failover and redundancy mechanisms. If one server experiences downtime, the entire website or application goes down with it completely. System tend to follow these common [[System Scalability Strategies]].
 
 To enhance system scaling and performance, various technologies are commonly employed to distribute traffic across [[server pools]]. Among these, technologies you have networking components like [[Reverse proxy vs API gateway vs load balancer |Reverse proxy, API gateway, and load balancer ]] that act as routers facilitating load distribution and improving fault tolerance through techniques such as [[Load Shedding]]. Additionally, [[Consistent Hashing]] stands out as one of several methods utilized to implement a load balancer, providing efficient routing of requests while maintaining consistency in data distribution across servers.
+
+There is also [[Race Condition]] that can be discussed in terms of distributed systems or when multiple users or services concurrently interact with shared resources such as databases, storage, or compute instances. Like consider this example with Autoscaling Group and Elastic Load Balancer.
+
+
 
 
 Cloud services range from IAAS to SAAS and provide many benefits like availability zones and other cloud services that add fault tolerance to the overall system. 

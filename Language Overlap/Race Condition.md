@@ -80,3 +80,7 @@ Race conditions are more likely to occur in situations involving concurrent acce
    - In systems programming, dealing with hardware interrupts or signals can introduce race conditions if not carefully managed. Multiple interrupts trying to modify shared state simultaneously can lead to unpredictable behavior.
 
 To prevent race conditions in these scenarios, developers often use synchronization mechanisms like locks, semaphores, or atomic operations to ensure orderly access to shared resources. Proper design, use of thread-safe libraries, and careful consideration of concurrency issues are crucial in minimizing the occurrence of race conditions.
+
+###### Race Condition within Cloud Infrastructure 
+
+Suppose you have an autoscaling group configured to automatically scale the number of EC2 instances based on traffic load, and an Elastic Load Balancer (ELB) distributing incoming traffic across these instances. Due to a sudden spike in traffic, the autoscaling group triggers the launch of additional EC2 instances to handle the increased load. Meanwhile, the ELB is performing health checks on existing EC2 instances to ensure they are available to serve incoming requests.
