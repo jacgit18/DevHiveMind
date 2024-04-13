@@ -41,7 +41,7 @@ Design a recommendation engine for YouTube that provides personalized video reco
 ## Requirements
 
 ### Userbase
-age, geography, location governance etc ...
+age, geography, governance, etc ...
 #### Data points of focus identified
 comments, views, likes, 
 
@@ -82,20 +82,24 @@ Total storage needed = 1,024 bytes * 13,000,000 comments = 13,312,000,000 bytes
 ###### Memory Estimation Monthly
 > metadata associated with each comment, such as timestamp, user ID, Comment ID, Reply-to ID, likes/dislikes count, or Flags. You need to allocate additional memory.
 
-Total metadata overhead = 500 bytes * 20,000 comments = 10,000,000 bytes boils down to roughly 9.54 MB
+Total metadata overhead = 500 bytes * 13,000,000 comments = 6,500,000,000 bytes 
 
 To convert bytes to megabytes (MB), we divide by 1,048,576 (1024 * 1024), because 1 MB equals 1,048,576 bytes
 
-10,000,000 bytes / 1,048,576 bytes/MB ≈ 9.54 MB
+6,500,000,000 bytes / 1,048,576 bytes/MB ≈ 6,191.29 MB round to = 6,000 MB
 
 
 Allocate an additional 20-30% of the total memory for overhead
 
-Memory overhead = 30% * (Total memory for storing comments + Total metadata overhead) Memory overhead ≈ 30% * (20,000 KB + 9.54 MB) ≈ 30% * (20,000 KB + 9.54 MB) ≈ 3.76 MB
+Memory overhead = 30% * (Total memory for storing comments + Total metadata overhead) 
+
+converted 13,000,000 bytes to 12,695.31 KB 
+
+Memory overhead ≈ 30% * (12,695.31 KB + 6,000 MB) ≈ 1,803.72 MB
 
 Total memory estimation ≈ Total memory for storing comments + Total metadata overhead + Memory overhead 
 
-Total memory estimation ≈ 20,000 KB + 9.54 MB + 3.76 MB ≈ 20,000 KB + 13.3 MB ≈ 13.32 MB
+Total memory estimation ≈ 20,000 KB + 1,803.72 MB + 3.76 MB ≈ 20,000 KB + 13.3 MB ≈ 13.32 MB
 
 
 
@@ -202,6 +206,8 @@ Original calculation was less then a 32GB flash drive not accurate real world es
 
 This new estimation is close to a hard drive but also this a small section of a system and also this obliviously a rough estimation as well so the storage or other estimation categories will look relatively low but also you have consider common sense also like when you think about youtube when it comes to Like to Comment ratio you will probably have more likes made vs comments made on the system.
 #### Memory
+
+
 
 #### Network 
 
