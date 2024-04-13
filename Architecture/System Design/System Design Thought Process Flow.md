@@ -78,7 +78,7 @@ When crafting your design, prioritize a forward-thinking approach that anticipat
 Create an Entity Relationship Diagram (ERD) to define clear relationships and [[Schema Design]] then discuss table [[Normalization & Denormalization]] to optimize schema and overall database performance. But once that is done you can come up with a list of general feature endpoints then come up with estimations.
 
 #### Capacity Estimation (5 min)
-https://www.youtube.com/watch?v=-frNQkRz_IU
+[Indepth Video Examination of Capacity Estimation ](https://www.youtube.com/watch?v=-frNQkRz_IU)
 
 Traffic & Storage should estimation be more then enough but also keep estimations clean meaning round up or down and stuff numbers do need be exact you can do guesstimates.
 ##### Storage Estimation Examples
@@ -160,9 +160,7 @@ Horizontal scaling is often preferred due to the limitations of vertical scaling
 
 To enhance system scaling and performance, various technologies are commonly employed to distribute traffic across [[server pools]]. Among these, technologies you have networking components like [[Reverse proxy vs API gateway vs load balancer |Reverse proxy, API gateway, and load balancer ]] that act as routers facilitating load distribution and improving fault tolerance through techniques such as [[Load Shedding]]. Additionally, [[Consistent Hashing]] stands out as one of several methods utilized to implement a load balancer, providing efficient routing of requests while maintaining consistency in data distribution across servers.
 
-There is also [[Race Condition]] that can be discussed in terms of distributed systems or when multiple users or services concurrently interact with shared resources such as databases, storage, or compute instances. Like consider this example with Autoscaling Group and Elastic Load Balancer.
-
-
+There is also Race Condition that can be discussed in terms of distributed systems or when multiple users or services concurrently interact with shared resources such as databases, storage, or compute instances. Like consider this [[Race Condition#Race Condition within Cloud Infrastructure |Race Condition example]] with Autoscaling Group and Elastic Load Balancer. Race condition can occur within multiple parts of the system like databases or in this [[Microservices & Race Conditions |microservices example]]  that may access some of these cloud resources.
 
 
 Cloud services range from IAAS to SAAS and provide many benefits like availability zones and other cloud services that add fault tolerance to the overall system. 
@@ -275,7 +273,8 @@ Summarize key design decisions, highlighting any alternative considerations. Inv
 
 
 
-### Time:
+### Time
+
 | Calculation              | Result                      |
 | ------------------------ | --------------------------- |
 | 60 seconds * 60 minutes  | 3,600 seconds per hour      |

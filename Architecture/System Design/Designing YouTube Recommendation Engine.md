@@ -26,12 +26,22 @@ Can expand on this system week by week growing it or mock by mock interview in a
 | 1 Terabyte | 1,024 Gigabytes = 1,099,511,627,776 Bytes     | Trillion    | 10^12 |
 | 1 Petabyte | 1,024 Terabytes = 1,125,899,906,842,624 Bytes | Quadrillion | 10^15 |
 
+### Time
+
+| Calculation              | Result                      |
+| ------------------------ | --------------------------- |
+| 60 seconds * 60 minutes  | 3,600 seconds per hour      |
+| 3,600 seconds * 24 hours | 86,400 seconds per day      |
+| 86,400 seconds * 30 days | 2,592,000 seconds per month |
+
+
+
 # Question
 Design a recommendation engine for YouTube that provides personalized video recommendations to users. 
 ## Requirements
 
-## Userbase
-age geo location governance etc ...
+### Userbase
+age, geography, location governance etc ...
 #### Data points of focus identified
 comments, views, likes, 
 
@@ -45,9 +55,6 @@ update values after to be closer to more realistic estimations
 
 200,000,000 active user
 
-Total seconds in a month =  30 * 24 * 60 * 60 =  2,592,000 seconds
-
-Total seconds in a day =  24 * 60 * 60 =  86,400 seconds
 
 > in general monthly estimations should be sufficient especially since there is so much other things to consider.
 ##### Comments
