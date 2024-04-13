@@ -82,11 +82,13 @@ Total storage needed = 1,024 bytes * 13,000,000 comments = 13,312,000,000 bytes
 ###### Memory Estimation Monthly
 > metadata associated with each comment, such as timestamp, user ID, Comment ID, Reply-to ID, likes/dislikes count, or Flags. You need to allocate additional memory.
 
-Total metadata overhead = 500 bytes * 13,000,000 comments = 6,500,000,000 bytes 
+Total metadata overhead = Size of metadata per comment * Number of comments
+
+Total metadata overhead = 500 bytes(assumption) * 400,000,000 comments = 200,000,000,000 bytes 
 
 To convert bytes to megabytes (MB), we divide by 1,048,576 (1024 * 1024), because 1 MB equals 1,048,576 bytes
 
-6,500,000,000 bytes / 1,048,576 bytes/MB ≈ 6,191.29 MB round to = 6,000 MB
+200,000,000,000 bytes / 1,048,576 bytes/MB ≈ 190,734.86 MB round to = 200,000 MB
 
 
 Allocate an additional 20-30% of the total memory for overhead

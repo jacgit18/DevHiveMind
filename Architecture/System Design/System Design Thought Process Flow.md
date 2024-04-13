@@ -225,9 +225,6 @@ You should also consider enhancing frontend performance by optimizing page load 
 Summarize key design decisions, highlighting any alternative considerations. Invite questions and address outstanding concerns.
 
 
-4. **Memory Estimation:**
-   - Assuming each user's viewing history is stored in memory for recommendation: 10,000 users * 100 views = 1,000,000 views
-   - Assuming each view's metadata is 100 bytes: 1,000,000 views * 100 bytes = 100,000,000 bytes
 
 5. **Network Traffic and Bandwidth:**
    - Assuming each comment is transmitted as HTTP requests with an average size of 1 KB: 20,000 comments * 1 KB(1024 Bytes) = 20,480,000 KB
