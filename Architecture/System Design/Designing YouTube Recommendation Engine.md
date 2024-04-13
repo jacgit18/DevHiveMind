@@ -198,28 +198,6 @@ Total storage needed = 4 bytes * 30,000,000 view counts  = 120,000,000 bytes
 117,187.5 KB / 1024 KB/MB = 114.44 MB (approximately)
 
 ###### Memory Estimation Monthly
-
-Total metadata overhead = Size of metadata per comment * Number of comments
-
-User ID (10 bytes) + Video ID (11 bytes) + Timestamp (8 bytes) + Like ID (12 bytes)  + Etc.. = 100 bytes
-
-Total metadata overhead = 100 bytes(assumption) * 30,000,000 view count = 3,000,000,000 bytes 
-
-
-Allocate an additional 20-30% of the total memory for overhead
-
-Memory overhead = 30% * (Total memory for storing comments + Total metadata overhead) 
-
-Memory overhead ≈ 30% * (13,312,000,000 bytes + 200,000,000,000 bytes) ≈ 63,993,600,000 bytes
-
-
-Total memory for storing comments = 1 KB * 400,000,000 = 400,000,000 KB
-
-Total memory estimation ≈ Total memory for storing comments + Total metadata overhead + Memory overhead 
-
-Total memory estimation ≈ 400,000,000 KB + 200,000,000,000 bytes + 63,993,600,000 bytes ≈ 673,593,600,000 bytes = 642.56 MB
-
-
 ###### Network Estimation Monthly
 
 ###### Bandwidth Estimation Monthly
@@ -249,7 +227,9 @@ This new estimation is close to a hard drive but also this a small section of a 
 #### Memory
 
 Comments + Likes + View Counts
-642.56 MB + +
+642.56 MB +707.10 TB = 800 TB 
+
+rough and seems excessive  
 
 #### Network 
 
