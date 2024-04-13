@@ -86,6 +86,7 @@ Total network traffic for comments:
 
 
 ###### Memory Estimation Monthly
+can be used to estimate caching networking traffic or database storage.
 > metadata associated with each comment, such as timestamp, user ID, Comment ID, Reply-to ID, likes/dislikes count, or Flags. You need to allocate additional memory.
 
 Total metadata overhead = Size of metadata per comment * Number of comments
