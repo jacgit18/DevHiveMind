@@ -202,17 +202,17 @@ Total network traffic for view counts:
 
 Read requests per day = Total network traffic for view counts in month / days in a month
 
-Read requests per day = 720,000,000,000 likes / 30 days = 24,000,000,000 view counts per day
+Read requests per day = 30,000,000 view counts / 30 days = 1,000,000 view counts per day
 
 Memory Total metadata overhead: Read requests per day * average request size * 20%
 
-Memory Total metadata overhead = 24,000,000,000 view counts per day * 500 bytes (assumption) * 20% = 2,400,000,000,000 bytes
+Memory Total metadata overhead = 1,000,000 view counts per day * 500 bytes (assumption) * 20% = 100,000,000 bytes per day
 
-Cache for Youtube view counts: (2,400,000,000,000 bytes / 1024^4 bytes) = 2.2332 TB
+Cache for Youtube view counts: (100,000,000 bytes / 1024^3 bytes) ≈ 0.0931 GB
 
-Adjusted cache: (20% of 2.2332 TB) = 446.64 GB
+Adjusted cache: (20% of 0.0931 GB) ≈ 0.0186 GB
 
-Total memory: (446.64 GB * 3 for replication) = 1.339 GB replicating database cache
+Total memory: (0.0186 GB * 3 for replication) ≈ 0.0558 GB replicating database cache
 
 ###### Bandwidth Estimation Monthly
 
@@ -240,15 +240,13 @@ Original calculation was less then a 32GB flash drive not accurate real world es
 This new estimation is close to a hard drive but also this a small section of a system and also this obliviously a rough estimation as well so the storage or other estimation categories will look relatively low but also you have consider common sense also like when you think about youtube when it comes to Like to Comment ratio you will probably have more likes made vs comments made on the system.
 
 #### Network 
-
 Comments + Likes + View Counts
 
 390,625 MB + 703,125,000 MB + 30,000 MB = 703,546,625 MB = 670 TB
 
 #### Memory
-
 Comments + Likes + View Counts
-3.63 GB + 1.339 GB +
+3.63 GB + 1.339 GB + 0.0558 GB = 5.0248 GB
 
 
 
