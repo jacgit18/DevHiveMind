@@ -95,26 +95,28 @@ Read requests per day = 400,000,000 comments / 30 = 13,000,000 comments rounded 
 
 Memory Total metadata overhead : Read requests per day \* average request size \* 20%
 
+**The 500 bytes is a rough estimate of the total of timestamp, user ID, Comment ID, Reply-to ID, likes/dislikes count, and Flag metadata.**
+
 Memory Total metadata overhead  = 13,000,000 * 500 bytes(assumption) * 20% = 1,300,000,000 bytes
 
 Cache for Youtube comments:  (13 million requests \* 500 bytes) = 6.05 GB
 
 Adjusted cache: (20% of 6.05 GB) = 1.21 GB
 
-Total memory: (1.21 GB * 3 for replication) = 3.63 GB
+Total memory: (1.21 GB * 3 for replication) = 3.63 GB replicating database cache
 
 
 ###### Ratio(Side Note)
 Storage to memory ratio = Storage estimation / Memory estimation
 
-Storage to memory ratio = 12,695.3125 MB / 642.56 MB ≈ 19.73 
+12,695.3125 MB = 12.40625 GB
 
-A ratio of approximately 19.73 indicates that the storage estimation is higher than the memory estimation.
+Storage to memory ratio = 12.40625 GB / 3.63 GB ≈ 3.42 GB
 
+A ratio of approximately 3.42 indicates that the storage estimation is higher than the memory estimation.
 
-A 47% difference between storage and memory estimations is somewhat on the higher side. It suggests that the storage requirements are significantly higher than the memory requirements for caching and managing the same data set.
-
-In some cases, such as when optimizing for read performance or when storage is relatively inexpensive compared to memory, this higher ratio might be acceptable. However, it's essential to ensure that you're not overallocating resources unnecessarily, as excessive memory usage can lead to performance degradation due to increased paging/swapping or even out-of-memory errors.
+Ratio = 3.63 GB / 12.40625 GB ≈ 0.2925
+Percentage Ratio = 0.2925 * 100% ≈ 29.25%
 
 ###### Bandwidth Estimation Monthly
 
@@ -151,28 +153,20 @@ Total network traffic for Likes:
 720,000,000,000 KB / 1024 KB/MB ≈ 703,125,000 MB
 
 ###### Memory Estimation Monthly
-something seems excessive
+Read requests per day = Total network traffic for comments in month / days in a month
 
-Total metadata overhead = Size of metadata per comment * Number of comments
+Read requests per day = 400,000,000 comments / 30 = 13,000,000 comments rounded down
 
-User ID (10 bytes) + Video ID (11 bytes) + Timestamp (8 bytes) + Like ID (12 bytes) = 41 bytes
-
-Total metadata overhead = 41 bytes(assumption) * 720,000,000,000 likes = 29,520,000,000,000 bytes
-
-Allocate an additional 20-30% of the total memory for overhead
-
-Memory overhead = 30% * (Total memory for storing likes + Total metadata overhead) 
-
-Memory overhead ≈ 30% * (888,000,000,000 bytes + 29,520,000,000,000 bytes) ≈ 9,122,400,000,000 bytes
+Memory Total metadata overhead : Read requests per day \* average request size \* 20%
 
 
-Total memory for storing comments = 1 KB * 720,000,000,000 likes = 720,000,000,000 KB
+Memory Total metadata overhead  = 13,000,000 * 500 bytes(assumption) * 20% = 1,300,000,000 bytes
 
-Total memory estimation ≈ Total memory for storing comments + Total metadata overhead + Memory overhead 
+Cache for Youtube comments:  (13 million requests \* 500 bytes) = 6.05 GB
 
-Total memory estimation ≈ 720,000,000,000 KB + 29,520,000,000,000 bytes + 9,122,400,000,000 bytes ≈ 707.10 TB
+Adjusted cache: (20% of 6.05 GB) = 1.21 GB
 
-
+Total memory: (1.21 GB * 3 for replication) = 3.63 GB replicating database cache
 
 ###### Bandwidth Estimation Monthly
 
@@ -205,6 +199,20 @@ Total network traffic for view counts:
 30,000,000 KB / 1024 KB/MB ≈ 30,000 MB
 
 ###### Memory Estimation Monthly
+
+Read requests per day = Total network traffic for comments in month / days in a month
+
+Read requests per day = 400,000,000 comments / 30 = 13,000,000 comments rounded down
+
+Memory Total metadata overhead : Read requests per day \* average request size \* 20%
+
+Memory Total metadata overhead  = 13,000,000 * 500 bytes(assumption) * 20% = 1,300,000,000 bytes
+
+Cache for Youtube comments:  (13 million requests \* 500 bytes) = 6.05 GB
+
+Adjusted cache: (20% of 6.05 GB) = 1.21 GB
+
+Total memory: (1.21 GB * 3 for replication) = 3.63 GB replicating database cache
 
 ###### Bandwidth Estimation Monthly
 
@@ -240,9 +248,9 @@ Comments + Likes + View Counts
 #### Memory
 
 Comments + Likes + View Counts
-642.56 MB +707.10 TB = 800 TB 
+3.63 GB + +
 
-rough and seems excessive  
+
 
 #### Bandwidth
 
