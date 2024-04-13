@@ -142,18 +142,18 @@ Total storage needed = Average likes size(assumption) * Total monthly likes
 
 Video ID (11 bytes) + User ID (16 bytes) + JSON overhead (10 bytes) = 37 bytes
 
-Total storage needed = 37 bytes * 24,000,000,000 likes = 888,000,000,000 bytes
+Total storage needed = 37 bytes * 720,000,000,000  likes = 26,640,000,000,000 bytes
 
 
-888,000,000,000 bytes / 1024 bytes/KB * 1024 KB/MB = 888,000,000,000 / 1,048,576 = 846,862.79 MB
+26,640,000,000,000 bytes / 1024 bytes/KB * 1024 KB/MB = 26,640,000,000,000 bytes / 1,048,576 = 25,402,832.03125 MB
 
-846,862.79 MB / 1024 MB/GB = 830 GB (approximately)
+25,402,832.03125 MB / 1024 MB/GB = 25,000 GB (approximately)
 
 ###### Network Estimation Monthly
 Total network traffic for Likes:
-24,000,000,000 likes * 1 KB Average likes size(assumption) = 24,000,000,000 KB 
+720,000,000,000 likes * 1 KB Average likes size(assumption) = 720,000,000,000 KB 
 
-24,000,000,000 KB / 1024 KB/MB ≈ 23,437,500 MB
+720,000,000,000 KB / 1024 KB/MB ≈ 703,125,000 MB
 
 ###### Memory Estimation Monthly
 something seems excessive
@@ -204,6 +204,11 @@ Total storage needed = 4 bytes * 30,000,000 view counts  = 120,000,000 bytes
 
 ###### Network Estimation Monthly
 
+Total network traffic for view counts:
+30,000,000 view counts * 1 KB Average view counts size(assumption) = 30,000,000 KB 
+
+720,000,000,000 KB / 1024 KB/MB ≈ 703,125,000 MB
+
 ###### Memory Estimation Monthly
 
 ###### Bandwidth Estimation Monthly
@@ -213,21 +218,21 @@ Total storage needed = 4 bytes * 30,000,000 view counts  = 120,000,000 bytes
 #### Storage
 
 Comments + Likes + View Counts
-19.53 MB +  1.24 GB + 114.44 MB OG calculation
-12,695.3125 MB +  830 GB + 114.44 MB more realistic
+19.53 MB +   + 114.44 MB OG calculation
 
-830 GB * 1024 MB/GB = 849,920 MB
+12,695.3125 MB +  25,000 GB + 114.44 MB more realistic
+
+25,000 GB * 1024 MB/GB = 25,600,000 MB
 
 Now, add the sizes together:
 
-Total Storage Needed = 12,695.3125 MB + 849,920 MB + 114.44 MB
+Total Storage Needed = 12,695.3125 MB + 25,600,000 MB + 114.44 MB
 
-Total Storage Needed = 862,729.7525 MB
-
+Total Storage Needed = 25,612,809.7525 MB
 
 Original calculation was less then a 32GB flash drive not accurate real world estimation but just need to adjust initial value
 
-862,729.7525 MB/ 1024 MB/GB ≈ 842.89 GB
+25,612,809.7525 MB/ 1024 MB/GB ≈ 25,000 GB = 25 TB
 
 This new estimation is close to a hard drive but also this a small section of a system and also this obliviously a rough estimation as well so the storage or other estimation categories will look relatively low but also you have consider common sense also like when you think about youtube when it comes to Like to Comment ratio you will probably have more likes made vs comments made on the system.
 
