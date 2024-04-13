@@ -150,6 +150,10 @@ Total storage needed = 37 bytes * 24,000,000,000 likes = 888,000,000,000 bytes
 846,862.79 MB / 1024 MB/GB = 830 GB (approximately)
 
 ###### Network Estimation Monthly
+Total network traffic for Likes:
+24,000,000,000 likes * 1 KB Average likes size(assumption) = 24,000,000,000 KB 
+
+24,000,000,000 KB / 1024 KB/MB ≈ 23,437,500 MB
 
 ###### Memory Estimation Monthly
 something seems excessive
