@@ -207,7 +207,7 @@ Total storage needed = 4 bytes * 30,000,000 view counts  = 120,000,000 bytes
 Total network traffic for view counts:
 30,000,000 view counts * 1 KB Average view counts size(assumption) = 30,000,000 KB 
 
-720,000,000,000 KB / 1024 KB/MB ≈ 703,125,000 MB
+30,000,000 KB / 1024 KB/MB ≈ 30,000 MB
 
 ###### Memory Estimation Monthly
 
@@ -237,6 +237,10 @@ Original calculation was less then a 32GB flash drive not accurate real world es
 This new estimation is close to a hard drive but also this a small section of a system and also this obliviously a rough estimation as well so the storage or other estimation categories will look relatively low but also you have consider common sense also like when you think about youtube when it comes to Like to Comment ratio you will probably have more likes made vs comments made on the system.
 
 #### Network 
+
+Comments + Likes + View Counts
+
+390,625 MB + 703,125,000 MB + 30,000 MB = 703,546,625 MB = 670 TB
 
 #### Memory
 
