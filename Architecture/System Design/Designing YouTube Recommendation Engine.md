@@ -94,7 +94,7 @@ Memory overhead = 30% * (Total memory for storing comments + Total metadata over
 Memory overhead ≈ 30% * (13,312,000,000 bytes + 200,000,000,000 bytes) ≈ 63,993,600,000 bytes
 
 
-Total memory for storing comments = 1 KB * 400,000,000 = 400,000,000 KB
+Total memory for storing comments = 1 KB * 400,000,000 comments = 400,000,000 KB
 
 Total memory estimation ≈ Total memory for storing comments + Total metadata overhead + Memory overhead 
 
@@ -151,6 +151,26 @@ Total storage needed = 37 bytes * 24,000,000,000 likes = 888,000,000,000 bytes
 
 ###### Memory Estimation Monthly
 
+Total metadata overhead = Size of metadata per comment * Number of comments
+
+User ID (10 bytes) + Video ID (11 bytes) + Timestamp (8 bytes) + Like ID (12 bytes) = 41 bytes
+
+Total metadata overhead = 41 bytes(assumption) * 720,000,000,000 likes = 360,000,000,000,000 bytes
+
+Allocate an additional 20-30% of the total memory for overhead
+
+Memory overhead = 30% * (Total memory for storing likes + Total metadata overhead) 
+
+Memory overhead ≈ 30% * (888,000,000,000 bytes + 360,000,000,000,000 bytes) ≈ 108,266,400,000,000 bytes
+
+
+Total memory for storing comments = 1 KB * 720,000,000,000 likes = 720,000,000,000 KB
+
+Total memory estimation ≈ Total memory for storing comments + Total metadata overhead + Memory overhead 
+
+Total memory estimation ≈ 720,000,000,000 KB + 360,000,000,000,000 bytes + 108,266,400,000,000 bytes ≈ 435.46 TB
+
+
 ###### Network Estimation Monthly
 
 ###### Bandwidth Estimation Monthly
@@ -177,6 +197,25 @@ Total storage needed = 4 bytes * 30,000,000 view counts  = 120,000,000 bytes
 117,187.5 KB / 1024 KB/MB = 114.44 MB (approximately)
 
 ###### Memory Estimation Monthly
+
+Total metadata overhead = Size of metadata per comment * Number of comments
+
+Total metadata overhead = 500 bytes(assumption) * 400,000,000 comments = 200,000,000,000 bytes 
+
+
+Allocate an additional 20-30% of the total memory for overhead
+
+Memory overhead = 30% * (Total memory for storing comments + Total metadata overhead) 
+
+Memory overhead ≈ 30% * (13,312,000,000 bytes + 200,000,000,000 bytes) ≈ 63,993,600,000 bytes
+
+
+Total memory for storing comments = 1 KB * 400,000,000 = 400,000,000 KB
+
+Total memory estimation ≈ Total memory for storing comments + Total metadata overhead + Memory overhead 
+
+Total memory estimation ≈ 400,000,000 KB + 200,000,000,000 bytes + 63,993,600,000 bytes ≈ 673,593,600,000 bytes = 642.56 MB
+
 
 ###### Network Estimation Monthly
 
