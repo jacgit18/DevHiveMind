@@ -29,6 +29,7 @@ excalidraw-autoexport: svg
 For more info read 
 #todo/Personal/High/Dev  
 - [ ] [[System Design Interview An Insider’s Guide Volume 1.pdf |System Design Interview An Insider’s Guide Volume 1]]
+- [ ] Payment system [[System Design Interview An Insider’s Guide Volume 2.pdf#page=316|System Design Interview An Insider’s Guide Volume 2, page 316]]
 - [ ] [[Designing Data-Intensive Applications The Big Ideas Behind Reliable, Scalable, and Maintainable Systems by Martin Kleppmann (z-lib.org).pdf |Designing Data-Intensive Applications]]
 - [ ] [[Software Architecture The Hard Parts Modern Trade-Off Analyses for Distributed Architectures (Neal Ford, Mark Richards, Pramod Sadalage etc.) (z-lib.org).pdf |Software Architecture The Hard Parts]]
 - [ ] [[Alex Petrov - Database Internals_ A Deep Dive into How Distributed Data Systems Work-O'Reilly Media (2019).pdf |Database Internals_ A Deep Dive into How Distributed Data Systems Work]]
@@ -39,7 +40,6 @@ For more info read
 - [x] https://www.workfall.com/learning/blog/how-to-set-up-an-aws-cloudfront-distribution-to-speed-up-content-delivery/ ✅ 2024-04-06
 - [ ] https://kasunprageethdissanayake.medium.com/tinder-fully-explained-system-design-and-architecture-1225ecdfe64e
 - [ ] https://www.outsystems.com/tech-hub/app-dev/technical-debt/#what-is-technical-debt
-- [ ] Payment system [[System Design Interview An Insider’s Guide Volume 2.pdf#page=316|System Design Interview An Insider’s Guide Volume 2, page 316]]
 - [ ] Refine and trim cloud notes not trying to document to many stuff just key details and relationships and stuff that may actually come up.
 - [ ] Use Chatgpt to recommend libraries and AWS services for project but define what the project is and come up with data model.
 
