@@ -86,22 +86,19 @@ Total metadata overhead = Size of metadata per comment * Number of comments
 
 Total metadata overhead = 500 bytes(assumption) * 400,000,000 comments = 200,000,000,000 bytes 
 
-To convert bytes to megabytes (MB), we divide by 1,048,576 (1024 * 1024), because 1 MB equals 1,048,576 bytes
-
-200,000,000,000 bytes / 1,048,576 bytes/MB ≈ 190,734.86 MB round to = 200,000 MB
-
 
 Allocate an additional 20-30% of the total memory for overhead
 
 Memory overhead = 30% * (Total memory for storing comments + Total metadata overhead) 
 
-converted 13,000,000 bytes to 12,695.31 KB 
+Memory overhead ≈ 30% * (13,312,000,000 bytes + 200,000,000,000 bytes) ≈ 63,993,600,000 bytes
 
-Memory overhead ≈ 30% * (12,695.31 KB + 6,000 MB) ≈ 1,803.72 MB
+
+Total memory for storing comments = 1 KB * 400,000,000 = 400,000,000 KB
 
 Total memory estimation ≈ Total memory for storing comments + Total metadata overhead + Memory overhead 
 
-Total memory estimation ≈ 20,000 KB + 1,803.72 MB + 3.76 MB ≈ 20,000 KB + 13.3 MB ≈ 13.32 MB
+Total memory estimation ≈ 400,000,000 KB + 200,000,000,000 bytes + 63,993,600,000 bytes ≈ 673,593,600,000 bytes = 642.56 MB
 
 
 
@@ -209,7 +206,8 @@ Original calculation was less then a 32GB flash drive not accurate real world es
 This new estimation is close to a hard drive but also this a small section of a system and also this obliviously a rough estimation as well so the storage or other estimation categories will look relatively low but also you have consider common sense also like when you think about youtube when it comes to Like to Comment ratio you will probably have more likes made vs comments made on the system.
 #### Memory
 
-
+Comments + Likes + View Counts
+642.56 MB + +
 
 #### Network 
 
