@@ -78,6 +78,12 @@ Total storage needed = 1,024 bytes * 13,000,000 comments = 13,312,000,000 bytes
 
 13,000,000 KB / 1024 KB/MB = 12,695.3125 MB(approximately)
 
+###### Network Estimation Monthly
+Total network traffic for comments: 400,000,000 comments * 1 KB Average comment size(assumption) = 400,000,000 KB = 
+
+
+20,000 KB / 1024 KB/MB ≈ 19.53 MB
+
 
 ###### Memory Estimation Monthly
 > metadata associated with each comment, such as timestamp, user ID, Comment ID, Reply-to ID, likes/dislikes count, or Flags. You need to allocate additional memory.
@@ -105,21 +111,14 @@ Total memory estimation ≈ 400,000,000 KB + 200,000,000,000 bytes + 63,993,600,
 ###### Ratio(Side Note)
 Storage to memory ratio = Storage estimation / Memory estimation
 
-Storage to memory ratio = 19.53 MB / 13.32 MB ≈ 1.47  
+Storage to memory ratio = 12,695.3125 MB / 642.56 MB ≈ 19.73 
 
-A ratio of approximately 1.47 indicates that the storage estimation is higher than the memory estimation by about 47%.
+A ratio of approximately 19.73 indicates that the storage estimation is higher than the memory estimation.
 
 
 A 47% difference between storage and memory estimations is somewhat on the higher side. It suggests that the storage requirements are significantly higher than the memory requirements for caching and managing the same data set.
 
 In some cases, such as when optimizing for read performance or when storage is relatively inexpensive compared to memory, this higher ratio might be acceptable. However, it's essential to ensure that you're not overallocating resources unnecessarily, as excessive memory usage can lead to performance degradation due to increased paging/swapping or even out-of-memory errors.
-
-###### Network Estimation Monthly
-Total network traffic for comments: 20,000 comments * 1 KB Average comment size(assumption) = 20,000 KB = 19.53 MB
-
-
-20,000 KB / 1024 KB/MB ≈ 19.53 MB
-
 
 ###### Bandwidth Estimation Monthly
 
