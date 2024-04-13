@@ -153,20 +153,20 @@ Total network traffic for Likes:
 720,000,000,000 KB / 1024 KB/MB ≈ 703,125,000 MB
 
 ###### Memory Estimation Monthly
-Read requests per day = Total network traffic for comments in month / days in a month
 
-Read requests per day = 400,000,000 comments / 30 = 13,000,000 comments rounded down
+Read requests per day = Total network traffic for likes in month / days in a month
 
-Memory Total metadata overhead : Read requests per day \* average request size \* 20%
+Read requests per day = 720,000,000,000 likes / 30 days = 24,000,000,000 likes per day
 
+Memory Total metadata overhead: Read requests per day * average request size * 20%
 
-Memory Total metadata overhead  = 13,000,000 * 500 bytes(assumption) * 20% = 1,300,000,000 bytes
+Memory Total metadata overhead = 24,000,000,000 likes per day * 500 bytes (assumption) * 20% = 2,400,000,000,000 bytes
 
-Cache for Youtube comments:  (13 million requests \* 500 bytes) = 6.05 GB
+Cache for Youtube comments: (2,400,000,000,000 bytes / 1024^4 bytes) = 2.2332 TB
 
-Adjusted cache: (20% of 6.05 GB) = 1.21 GB
+Adjusted cache: (20% of 2.2332 TB) = 446.64 GB
 
-Total memory: (1.21 GB * 3 for replication) = 3.63 GB replicating database cache
+Total memory: (446.64 GB * 3 for replication) = 1.339 GB replicating database cache
 
 ###### Bandwidth Estimation Monthly
 
@@ -200,19 +200,19 @@ Total network traffic for view counts:
 
 ###### Memory Estimation Monthly
 
-Read requests per day = Total network traffic for comments in month / days in a month
+Read requests per day = Total network traffic for view counts in month / days in a month
 
-Read requests per day = 400,000,000 comments / 30 = 13,000,000 comments rounded down
+Read requests per day = 720,000,000,000 likes / 30 days = 24,000,000,000 view counts per day
 
-Memory Total metadata overhead : Read requests per day \* average request size \* 20%
+Memory Total metadata overhead: Read requests per day * average request size * 20%
 
-Memory Total metadata overhead  = 13,000,000 * 500 bytes(assumption) * 20% = 1,300,000,000 bytes
+Memory Total metadata overhead = 24,000,000,000 view counts per day * 500 bytes (assumption) * 20% = 2,400,000,000,000 bytes
 
-Cache for Youtube comments:  (13 million requests \* 500 bytes) = 6.05 GB
+Cache for Youtube view counts: (2,400,000,000,000 bytes / 1024^4 bytes) = 2.2332 TB
 
-Adjusted cache: (20% of 6.05 GB) = 1.21 GB
+Adjusted cache: (20% of 2.2332 TB) = 446.64 GB
 
-Total memory: (1.21 GB * 3 for replication) = 3.63 GB replicating database cache
+Total memory: (446.64 GB * 3 for replication) = 1.339 GB replicating database cache
 
 ###### Bandwidth Estimation Monthly
 
@@ -248,7 +248,7 @@ Comments + Likes + View Counts
 #### Memory
 
 Comments + Likes + View Counts
-3.63 GB + +
+3.63 GB + 1.339 GB +
 
 
 
