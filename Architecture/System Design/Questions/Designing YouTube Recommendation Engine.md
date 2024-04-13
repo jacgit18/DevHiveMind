@@ -89,6 +89,19 @@ Total network traffic for comments:
 can be used to estimate caching networking traffic request or database storage request.
 > metadata associated with each comment, such as timestamp, user ID, Comment ID, Reply-to ID, likes/dislikes count, or Flags. You need to allocate additional memory.
 
+Read requests per day = Total network traffic for comments / days in a month
+
+Read requests per day = 400,000,000 comments / 30 = 13,000,000 rounded down
+
+Memory: Read requests per day \* average request size \* 20%
+
+Cache for Instagram highlights:  (300 million requests \* 500 bytes) = 150 GB
+
+Adjusted cache: (20% of 150 GB) = 30 GB
+
+Total memory: (30 GB \* 3 for replication) = 90 GB 
+
+
 Total metadata overhead = Size of metadata per comment * Number of comments
 
 Total metadata overhead = 500 bytes(assumption) * 400,000,000 comments = 200,000,000,000 bytes 
@@ -348,8 +361,8 @@ In summary, videos recommended on YouTube are typically not stored separately in
 
 # Text Elements
 # Element Links
-d9HppMUX: [[Architecture/System Design/Designing YouTube Recommendation Engine.md#DB Query to Request Table]]
-cLKZo11N: [[Architecture/System Design/Designing YouTube Recommendation Engine.md#DB Table]]
+d9HppMUX: [[Designing YouTube Recommendation Engine#DB Query to Request Table]]
+cLKZo11N: [[Designing YouTube Recommendation Engine#DB Table]]
 
 %%
 # Drawing
