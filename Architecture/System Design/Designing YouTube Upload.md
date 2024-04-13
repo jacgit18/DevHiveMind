@@ -31,3 +31,18 @@ Consider metadata
 
 #### Bandwidth
 ##### Data Point 1 
+
+## Architecture
+Typically Microservices 
+
+Talk optimizations throughout and traffic managenment.
+
+### Backing Services
+
+#### Cloud Infrastructure
+##### Cloud Database or Non-AWS Alt
+
+##### Cache
+
+
+## Wrap Up
