@@ -80,7 +80,7 @@ Create an Entity Relationship Diagram (ERD) to define clear relationships and [[
 #### Capacity Estimation (5 min)
 https://www.youtube.com/watch?v=-frNQkRz_IU
 
-Traffic & Storage should be more then enough
+Traffic & Storage should estimation be more then enough but also keep estimations clean meaning round up or down and stuff numbers do need be exact you can do guesstimates.
 ##### Storage Estimation Examples
 > Keep estimation simple focus on storage needed and not to much on queries especially if there are other critical things to discuss. 
 - Storage: Writes per day \* size of write \* time to store data
@@ -89,13 +89,7 @@ Traffic & Storage should be more then enough
 - Yearly storage:(15 TB \* 365 days \* 10 years) = 55 PB guesstimate
 
 ##### Network Traffic Estimate Examples
-Ask Interviewer about expected Daily active user
-Convert users to request define services how many reads and writes it does and it is read or write heavy 
-
-user tend to do more reads then writes especially in the context of a platform like youtube more videos are watched then uploaded
-
-you can come up with a ratio so 10:1 or 100:1 etc ..
-so you can say if read heavy you can say you have 10 reads for every 1 write or for every 1 video uploaded there are 10 views 
+During the interview, ask about the projected daily active user base. Additionally, delve into the user behavior to understand the breakdown between service requests, distinguishing between reads and writes. This will provide insight into the system's workload distribution, indicating whether it leans towards a write-heavy scenario, where the ratio of writes to reads is significant, such as 100 writes for every 20 reads, or vice versa.
 
 - Traffic: Daily active users * average reads and writes per user
 - Active users: 10 million 
@@ -236,7 +230,7 @@ Summarize key design decisions, highlighting any alternative considerations. Inv
 
 | Unit       | Equivalent in Bytes                           | Place       |       |
 | ---------- | --------------------------------------------- | ----------- | ----- |
-| 1 Byte     | 1                                             | Hundred     | 10    |
+| 1 Byte     | 1                                             | Hundred     | 10^2  |
 | 1 Kilobyte | 1,024 Bytes                                   | Thousand    | 10^3  |
 | 1 Megabyte | 1,024 Kilobytes = 1,048,576 Bytes             | Million     | 10^6  |
 | 1 Gigabyte | 1,024 Megabytes = 1,073,741,824 Bytes         | Billion     | 10^9  |

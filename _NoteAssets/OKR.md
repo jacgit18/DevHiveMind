@@ -35,6 +35,10 @@ dg-publish:
 	- [ ] look into How to set up PWAs for your website
 
 
+Consider Creating app using microservices with different types of front ends for the different model services so you can do fitness tracker something not too robust but a little bit and then maybe something else exploring different things  
+  
+Or just one monolithic app of links to the different projects like the fitness tracker
+
 
 ## Coding Challenge Key Results 
 - Number of challenges a day.

@@ -12,5 +12,9 @@ Peer Reviewed: 0
 dg-publish:
 ---
 
+### Systems Reads & Writes
+In the context of a platform like YouTube, users on platforms like YouTube typically engage in more content consumption through watching videos (reads) than content creation through uploading videos (writes). This results in a high ratio of reads to writes, such as 10:1 or 100:1, where for every video uploaded, there are 10 or 100 videos watched.
+
+
 
 [[Designing YouTube Recommendation Engine]]

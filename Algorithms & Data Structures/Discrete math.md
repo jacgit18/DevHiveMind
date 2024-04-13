@@ -1,6 +1,7 @@
 ---
 tags:
   - programming
+  - discreteMath
 author:
   - jacgit18
   - chatgpt

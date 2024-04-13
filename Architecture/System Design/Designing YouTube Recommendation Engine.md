@@ -19,7 +19,7 @@ Can expand on this system week by week growing it or mock by mock interview in a
 
 | Unit       | Equivalent in Bytes                           | Place       |       |
 | ---------- | --------------------------------------------- | ----------- | ----- |
-| 1 Byte     | 1                                             | Hundred     | 10    |
+| 1 Byte     | 1                                             | Hundred     | 10^2  |
 | 1 Kilobyte | 1,024 Bytes                                   | Thousand    | 10^3  |
 | 1 Megabyte | 1,024 Kilobytes = 1,048,576 Bytes             | Million     | 10^6  |
 | 1 Gigabyte | 1,024 Megabytes = 1,073,741,824 Bytes         | Billion     | 10^9  |
@@ -43,6 +43,8 @@ update values after to be closer to more realistic estimations
 
 10,000 active user
 
+200,000,000 active user
+
 Total seconds in a month =  30 * 24 * 60 * 60 =  2,592,000 seconds
 
 Total seconds in a day =  24 * 60 * 60 =  86,400 seconds
@@ -51,23 +53,23 @@ Total seconds in a day =  24 * 60 * 60 =  86,400 seconds
 ##### Comments
 2 comments per user on average a month
 
-Total monthly comments: 2 comments per user * 10,000 users = 20,000 comments
+Total monthly comments: 2 comments per user * 200,000,000 users = 400,000,000 comments
 
-Overall comments per day: Total monthly comments / 30 days  = 667 comments after rounding up 
+Overall comments per day: Total monthly comments / 30 days  = 13,000,000 round down for cleaner math 
 
 Comments per second in a day = Overall comments per day / Total seconds in a day
 
-Comments per second in a day = 667 / 86,400  ≈ 0.008
+Comments per second in a day = 13,000,000 / 86,400  ≈ 150 round down
 
 ###### Storage Estimation Monthly
 
 Total storage needed = Average comment size(assumption) * Total monthly comments 
 
-Total storage needed = 1,024 bytes * 20,000 comments = 20,480,000 bytes
+Total storage needed = 1,024 bytes * 13,000,000 comments = 13,312,000,000 bytes
 
-20,480,000 bytes / 1024 bytes = 20,000  KB 
+13,312,000,000 bytes / 1024 bytes = 13,000,000  KB 
 
-20,000 KB / 1024 KB/MB = 19.53 MB (approximately)
+13,000,000 KB / 1024 KB/MB = 12,695.3125 MB(approximately)
 
 
 ###### Memory Estimation Monthly
@@ -116,26 +118,26 @@ Bandwidth = 19.53 MB / 2,592,000 seconds in a month ≈ 0.0075 MB/s ≈ 7.5 KB/s
 ##### Likes
 120 likes per user in a month between shorts and regular videos
 
-Total monthly likes: 120 likes per user * 30 days * 10,000 users = 36,000,000 likes
+Total monthly likes: 120 likes per user * 30 days * 200,000,000 users = 720,000,000,000 likes
 
-Overall likes per day: Total monthly likes / 30 days  = 1,200,000 likes
+Overall likes per day: Total monthly likes / 30 days  = 24,000,000,000 likes
 
 
 Likes per second in a day = Total likes in a day / Total seconds in a day
 
-Likes per second in a day = 1,200,000 likes / 86,400 seconds = 13.88 likes
+Likes per second in a day = 24,000,000,000 likes / 86,400 seconds = 277,777.77 likes
 
 ###### Storage Estimation Monthly
 Total storage needed = Average likes size(assumption) * Total monthly likes 
 
 Video ID (11 bytes) + User ID (16 bytes) + JSON overhead (10 bytes) = 37 bytes
 
-Total storage needed = 37 bytes * 36,000,000 likes = 1,332,000,000 bytes
+Total storage needed = 37 bytes * 24,000,000,000 likes = 888,000,000,000 bytes
 
 
-1,332,000,000 bytes / 1024 bytes/KB * 1024 KB/MB = 1,332,000,000 / 1,048,576 = 1,270.56 MB
+888,000,000,000 bytes / 1024 bytes/KB * 1024 KB/MB = 888,000,000,000 / 1,048,576 = 846,862.79 MB
 
-1,270.56 MB / 1024 MB/GB = 1.24 GB (approximately)
+846,862.79 MB / 1024 MB/GB = 830 GB (approximately)
 
 ###### Memory Estimation Monthly
 
@@ -175,25 +177,28 @@ Total storage needed = 4 bytes * 30,000,000 view counts  = 120,000,000 bytes
 #### Storage
 
 Comments + Likes + View Counts
-19.53 MB +  1.24 GB + 114.44 MB 
+19.53 MB +  1.24 GB + 114.44 MB OG calculation
+12,695.3125 MB +  830 GB + 114.44 MB more realistic
 
-
-1.24 GB * 1024 MB/GB = 1,270.56 MB
+830 GB * 1024 MB/GB = 849,920 MB
 
 Now, add the sizes together:
 
-Total Storage Needed = 19.53 MB + 1,270.56 MB + 114.44 MB
+Total Storage Needed = 12,695.3125 MB + 849,920 MB + 114.44 MB
 
-Total Storage Needed = 1,404.53 MB
+Total Storage Needed = 862,729.7525 MB
 
-1,404.53 MB / 1024 MB/GB ≈ 1.37 GB
 
-less then a 32GB flash drive not accurate real world estimation but just need to adjust initial value
+Original calculation was less then a 32GB flash drive not accurate real world estimation but just need to adjust initial value
+
+862,729.7525 MB/ 1024 MB/GB ≈ 842.89 GB
+
+This new estimation is close to a hard drive but also this a small section of a system and also this obliviously a rough estimation as well so the storage or other estimation categories will look relatively low but also you have consider common sense also like when you think about youtube when it comes to Like to Comment ratio you will probably have more likes made vs comments made on the system.
 #### Memory
 
-Network 
+#### Network 
 
-Bandwidth
+#### Bandwidth
 
 
 ### Database Schema 
@@ -248,12 +253,38 @@ Typically Microservices
 
 ### Backing Services
 
+#### Database
+1. **Relational Database (SQL)**:  
+	- **User Data Management**: A relational database can be used to store user data such as account information, viewing history, liked videos, and subscription details. This data can be structured into tables with clearly defined relationships.  
+	- **Metadata Storage**: Metadata about videos, such as titles, descriptions, tags, and categories, can be stored in a relational database to facilitate efficient querying and retrieval.  
+	- **Relationships and Associations**: Relational databases excel at representing complex relationships and associations between different entities, which is crucial for building personalized recommendation algorithms based on user behavior and preferences.  
+	  
+2. **NoSQL Database**:  
+	- **Scalability and Performance**: NoSQL databases are well-suited for handling large volumes of unstructured or semi-structured data, such as user interactions, clickstream data, and social network graphs, which are essential for building robust recommendation systems.  
+	- **Real-time Data Processing**: NoSQL databases can support real-time data processing and analytics, allowing for quick updates to user profiles and recommendations based on dynamic user behavior.  
+	- **Flexible Schema Design**: NoSQL databases offer flexibility in schema design, enabling developers to adapt the database schema to evolving data requirements and experimentation with different recommendation algorithms.  
+
+3. **Graph Database (Optional)**:  
+	- **Relationship Representation**: Graph databases excel at representing and querying complex relationships and networks, making them ideal for modeling user interactions, social connections, and content relationships in a recommendation system.  
+	- **Recommendation Algorithm Support**: Graph databases can be used to implement graph-based recommendation algorithms, such as collaborative filtering and graph-based neural networks, which leverage the inherent structure of user-item interactions to generate personalized recommendations.  
+  
+
 #### Cloud Infrastructure
 
 
 #### Non-Cloud Infrastructure
 ##### Caches
-
+For videos that already exist on YouTube and are being recommended to users, they are typically not stored separately in a cache or database solely for the purpose of recommendations. Instead, YouTube leverages its existing infrastructure and data storage mechanisms to facilitate recommendation functionality. Here's how it generally works:  
+  
+1. **Metadata and Indexing**: YouTube stores metadata about each video, including titles, descriptions, tags, categories, upload dates, view counts, likes, and dislikes, in its databases. This metadata is indexed and optimized for efficient querying and retrieval.  
+  
+2. **User Interactions**: YouTube tracks user interactions such as views, likes, dislikes, comments, shares, and subscriptions using its backend systems. This user engagement data is also stored in databases and used to generate personalized recommendations.  
+  
+3. **Recommendation Algorithms**: YouTube employs sophisticated recommendation algorithms that analyze user behavior, preferences, and content similarities to generate personalized recommendations. These algorithms run on YouTube's backend infrastructure and leverage large-scale data processing techniques to compute recommendations in real-time.  
+  
+4. **Caching and Optimization**: While the recommended videos themselves may not be stored separately in a cache or database, YouTube likely uses caching mechanisms at various levels of its infrastructure to optimize recommendation delivery and reduce latency. This may include caching frequently accessed metadata, pre-computed recommendations, and other relevant data to improve system performance.  
+  
+In summary, videos recommended on YouTube are typically not stored separately in a cache or database solely for recommendation purposes. Instead, YouTube leverages its existing infrastructure and data storage mechanisms, including metadata storage, user interaction tracking, recommendation algorithms, and caching mechanisms, to deliver personalized recommendations to users based on their preferences and behavior.
 
 ## Optimizations
 
