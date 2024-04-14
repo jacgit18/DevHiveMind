@@ -149,7 +149,7 @@ Size of image = height x width x bit depth
 1k * 1K * 3 = 3,000,000 = 3MB
 
 Profile image 300 kilobytes  
-
++
 Videos which depends on frame size frame rate compression ratio and duration  
 A minute HD video would be about 50 MB  
   
