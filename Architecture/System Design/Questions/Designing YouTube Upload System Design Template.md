@@ -45,7 +45,9 @@ dg-publish: null
 
 
 #### Data points of focus identified
-Ask about or come up with DAU(Daily Active User) use a easy consistent value that's easy to calculate
+Ask about or come up with DAU(Daily Active User) use a easy consistent value that's easy to calculate.
+
+
 
 ### Capacity Estimation
 Consider Ratios
