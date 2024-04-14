@@ -122,19 +122,39 @@ OutGoing Data per sec(Read) = 500(read per sec) * 10KB(arbitrary storage action 
 ### App Server Estimations
 Might be asked how many app service do you need
 
- number of request per second is single server can handle 
+500(read per sec)/ number of request per second a single server can handle
 
-500(read per sec)/ number of request per second is single server can handle
+You should consider if the request is CPU bound, memory bound or I/O bound
 
+
+if CPU bound number of request per second a single server can handle would = number of physical cores / time to process request
+
+8 cores / 0.5 or half a sec = 16 request per sec for single server
+
+500(read per sec) / 16 request per sec for single server = 30 to 50 servers 
 
 
 This this is dependent on service hardware also the number of time it takes to process a single request.
 
-But also you have to consider if the request is CPU bound, memory bound or I/O bound
 
-CPU bound it would be the number of physical cores divided by the time to process request  
+**Language approximations**
+You have 500K words in English language  
+A line of text contains 10 words  
+A word contains 5 characters which is 5 bytes  
   
-Which would give you the request per second
+**Media approximation**
+HD image 3MB  intstagram or facebook post
+Size of image = height x width x bit depth
+12
+
+Profile image 300 kilobytes  
+Videos which depends on frame size frame rate compression ratio and duration  
+A minute HD video would be about 50 MB  
+  
+  
+For something like YouTube you would probably use other resolutions
+
+  
 
 ## Architecture
 Typically Microservices 
