@@ -145,9 +145,11 @@ A word contains 5 characters which is 5 bytes
 **Media approximation**
 HD image 3MB  intstagram or facebook post
 Size of image = height x width x bit depth
-12
+1280 x 720 x 24bits or 3 Bytes
+1k * 1K * 3 = 3,000,000 = 3MB
 
 Profile image 300 kilobytes  
+
 Videos which depends on frame size frame rate compression ratio and duration  
 A minute HD video would be about 50 MB  
   
