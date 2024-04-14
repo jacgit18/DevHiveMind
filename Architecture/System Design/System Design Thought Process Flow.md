@@ -90,7 +90,9 @@ Traffic & Storage should estimation be more then enough but also keep estimation
 - Yearly storage:(15 TB \* 365 days \* 10 years) = 55 PB guesstimate
 
 ##### Network Traffic Estimate Examples
-During the interview, ask about the projected daily active user base. Additionally, delve into the user behavior to understand the breakdown between service requests, distinguishing between reads and writes. This will provide insight into the system's workload distribution, indicating whether it leans towards a write-heavy scenario, where the ratio of writes to reads is significant, such as 100 writes for every 20 reads, or vice versa.
+During the interview, ask about the projected daily active user base. Additionally, delve into the user behavior to understand the breakdown between service requests, distinguishing between reads and writes. This will provide insight into the system's workload distribution, indicating whether it leans towards a write-heavy scenario, where the ratio of writes to reads is significant, such as 100 writes for every 20 reads, or vice versa. 
+
+>side note users tend to read(get)/consume then write(post)/produce data in general.
 
 - Traffic: Daily active users * average reads and writes per user
 - Active users: 10 million 
