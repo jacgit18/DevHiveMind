@@ -1636,7 +1636,7 @@
       "active": "36b287cc8c2b03e9",
       "mtime": "2024-03-30T18:26:20-04:00"
     },
-    "sfaf": {
+    "sys": {
       "main": {
         "id": "0cbb3f0709975816",
         "type": "split",
@@ -1646,42 +1646,12 @@
             "type": "tabs",
             "children": [
               {
-                "id": "10dde38f833f2248",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "Architecture/System Design/Designing YouTube Recommendation Engine.md",
-                    "mode": "source",
-                    "source": false
-                  }
-                }
-              }
-            ]
-          },
-          {
-            "id": "2bd0b1b899efb01b",
-            "type": "tabs",
-            "children": [
-              {
                 "id": "0583d656be7a3515",
                 "type": "leaf",
                 "state": {
                   "type": "markdown",
                   "state": {
                     "file": "Architecture/System Design/System Design Thought Process Flow.md",
-                    "mode": "source",
-                    "source": false
-                  }
-                }
-              },
-              {
-                "id": "8e30740c508eae2d",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "Architecture/System Design/Bandwidth Estimation.md",
                     "mode": "source",
                     "source": false
                   }
@@ -1700,7 +1670,37 @@
                 }
               }
             ],
-            "currentTab": 2
+            "currentTab": 1
+          },
+          {
+            "id": "2bd0b1b899efb01b",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "8e30740c508eae2d",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Architecture/System Design/Questions/Designing YouTube Recommendation Engine.md",
+                    "mode": "source",
+                    "source": false
+                  }
+                }
+              },
+              {
+                "id": "feb88d097a8920bb",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Architecture/System Design/Questions/Designing YouTube Upload System Design Template.md",
+                    "mode": "source",
+                    "source": false
+                  }
+                }
+              }
+            ]
           }
         ],
         "direction": "vertical"
@@ -1762,8 +1762,7 @@
                   "state": {}
                 }
               }
-            ],
-            "currentTab": 1
+            ]
           }
         ],
         "direction": "horizontal",
@@ -1783,7 +1782,7 @@
                 "state": {
                   "type": "backlink",
                   "state": {
-                    "file": "Web/Structuring URL.md",
+                    "file": "Architecture/System Design/Questions/Designing YouTube Recommendation Engine.md",
                     "collapseAll": false,
                     "extraContext": false,
                     "sortOrder": "alphabetical",
@@ -1800,7 +1799,7 @@
                 "state": {
                   "type": "outgoing-link",
                   "state": {
-                    "file": "Web/Structuring URL.md",
+                    "file": "Architecture/System Design/Questions/Designing YouTube Recommendation Engine.md",
                     "linksCollapsed": false,
                     "unlinkedCollapsed": true
                   }
@@ -1823,7 +1822,7 @@
                 "state": {
                   "type": "outline",
                   "state": {
-                    "file": "Web/Structuring URL.md"
+                    "file": "Architecture/System Design/Questions/Designing YouTube Recommendation Engine.md"
                   }
                 }
               },
@@ -1933,9 +1932,9 @@
           "periodic-notes:Open today": false
         }
       },
-      "active": "38d2b1364128fff0",
-      "mtime": "2024-04-13T13:40:12-04:00"
+      "active": "8e30740c508eae2d",
+      "mtime": "2024-04-13T21:31:06-04:00"
     }
   },
-  "active": "sfaf"
+  "active": "sys"
 }

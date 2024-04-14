@@ -85,9 +85,9 @@ Talk optimizations throughout and traffic management.
 
 # Text Elements
 # Element Links
-yApo8vnP: [[Architecture/System Design/Questions/System Design Template#Userbase]]
-cqasGqqJ: [[Architecture/System Design/Questions/System Design Template#Table 1]]
-S5QN8lcM: [[Architecture/System Design/Questions/System Design Template#Table 2]]
+yApo8vnP: [[Designing YouTube Upload System Design Template#Userbase]]
+cqasGqqJ: [[Designing YouTube Upload System Design Template#Table 1]]
+S5QN8lcM: [[Designing YouTube Upload System Design Template#Table 2]]
 
 %%
 # Drawing
