@@ -120,16 +120,6 @@ A ratio of approximately 3.42 indicates that the storage estimation is higher th
 Ratio = 3.63 GB / 12.40625 GB ≈ 0.2925
 Percentage Ratio = 0.2925 * 100% ≈ 29.25%
 
-###### Bandwidth Estimation Monthly
- 13,020.83 MB
-
-Bandwidth: Requests per day * average request size
-
-Bandwidth required: 450,000 GB (300 million(Active users) \* 1.5 MB)
-
-Bandwidth per second: 5.2 GB (450,000 GB / 86,400 seconds in a day)
-
-Bandwidth = 19.53 MB / 2,592,000 seconds in a month ≈ 0.0075 MB/s ≈ 7.5 KB/s
 
 ##### Likes
 120 likes per user in a month between shorts and regular videos
@@ -177,7 +167,7 @@ Adjusted cache: (20% of 2.2332 TB) = 446.64 GB
 
 Total memory: (446.64 GB * 3 for replication) = 1.339 GB replicating database cache
 
-###### Bandwidth Estimation Monthly
+
 
 ##### Views
 100 views per user a month shorts and regular videos
@@ -223,8 +213,6 @@ Adjusted cache: (20% of 0.0931 GB) ≈ 0.0186 GB
 
 Total memory: (0.0186 GB * 3 for replication) ≈ 0.0558 GB replicating database cache
 
-###### Bandwidth Estimation Monthly
-
 ### Total Estimation
 
 #### Storage
@@ -257,10 +245,13 @@ Comments + Likes + View Counts
 Comments + Likes + View Counts
 3.63 GB + 1.339 GB + 0.0558 GB = 5.0248 GB
 
-
-
 #### Bandwidth
 
+Bandwidth: Requests per day * average request size
+
+Bandwidth required: (200,000,000 million(Active users) \* 1.5 MB) = 286.13 TB
+
+Bandwidth per second: (286.13 TB / 86,400 seconds in a day) = 3.308 GB
 
 ### Database Schema 
 READ

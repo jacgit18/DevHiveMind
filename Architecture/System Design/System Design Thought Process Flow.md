@@ -110,7 +110,7 @@ During the interview, ask about the projected daily active user base. Additional
 ##### [[Bandwidth Estimation]] Examples
 > Once you determine other estimation you can address this last or ask about potential historical traffic using that as a baseline.
 - Bandwidth: Requests per day * average request size
-- Bandwidth required: 450,000 GB (300 million(Active users) \* 1.5 MB)
+- Bandwidth required: (300 million(Active users) \* 1.5 MB) = 450,000 GB
 - Bandwidth per second: 5.2 GB (450,000 GB / 86,400 seconds in a day)
 
 You can leverage ChatGPT to perform a CAP theorem analysis and a Kepner-Tregoe decision analysis, using weighted decisions to identify a concise list of choices for databases or other relevant technologies. This approach allows for a systematic evaluation of options based on their consistency, availability, and partition tolerance, as well as other criteria important to your decision-making process. By combining these analytical methods, you can efficiently narrow down your options and make informed decisions that align with your specific needs and preferences.
@@ -224,37 +224,6 @@ You should also consider enhancing frontend performance by optimizing page load 
 
 ### Step 4: Wrap Up(3 - 5 minutes)
 Summarize key design decisions, highlighting any alternative considerations. Invite questions and address outstanding concerns.
-
-
-
-5. **Network Traffic and Bandwidth:**
-   - Assuming each comment is transmitted as HTTP requests with an average size of 1 KB: 20,000 comments * 1 KB(1024 Bytes) = 20,480,000 KB
-   - Assuming each view is streamed at an average bitrate of 5 Mbps: 30,000,000 views * 5 Mbps = 150,000,000 Mbps
-   - Assuming each like is transmitted as a small packet of 100 bytes: 9,000,000 likes * 100 bytes = 900,000,000 bytes
-
-
-
-
-1. **Network Traffic for Comments:**
-   - Total number of comments: 20,100 comments
-   - Average size of each comment (assuming HTTP requests): 1 KB
-   - Total network traffic for comments: 20,100 comments * 1 KB = 20,100,000 KB
-
-2. **Network Traffic for Views:**
-   - Total number of views: 30,000,000 views
-   - Average bitrate for streaming: 5 Mbps
-   - Total network traffic for views: 30,000,000 views * 5 Mbps = 150,000,000 Mbps
-
-3. **Network Traffic for Likes:**
-   - Total number of likes: 9,000,000 likes
-   - Size of each like (assuming small packet): 100 bytes
-   - Total network traffic for likes: 9,000,000 likes * 100 bytes = 900,000,000 bytes
-
-4. **Bandwidth Estimation:**
-   - Bandwidth refers to the maximum rate of data transfer across a network.
-   - Considering the highest peak traffic among comments, views, and likes:
-     - Peak bandwidth = Maximum of (20,100,000 KB, 150,000,000 Mbps, 900,000,000 bytes)
-
 
 
 # Stats 
