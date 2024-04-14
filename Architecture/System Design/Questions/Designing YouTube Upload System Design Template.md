@@ -122,6 +122,20 @@ OutGoing Data per sec(Read) = 500(read per sec) * 10KB(arbitrary storage action 
 ### App Server Estimations
 Might be asked how many app service do you need
 
+ number of request per second is single server can handle 
+
+500(read per sec)/ number of request per second is single server can handle
+
+
+
+This this is dependent on service hardware also the number of time it takes to process a single request.
+
+But also you have to consider if the request is CPU bound, memory bound or I/O bound
+
+CPU bound it would be the number of physical cores divided by the time to process request  
+  
+Which would give you the request per second
+
 ## Architecture
 Typically Microservices 
 
