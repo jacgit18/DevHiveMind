@@ -107,7 +107,7 @@ caching is a way to serve read request faster use 80-20 rule for caching
 ##### Data Point 1 service
 Caching Memory = read per day * arbitrary storage action size * 20%
 
-Caching Memory = 50M  * 10KB  * 0.2 = 
+Caching Memory = 50M  * 10KB  * 0.2 = 50M(^6) * 2KB(^3) = 100GB might be less since you have duplicate request being made to do the same thing 
 
 ##### Data Point 2 service
 
@@ -117,6 +117,10 @@ InComing Data per sec(Write) = 10(write per sec) * 10KB(arbitrary storage action
 OutGoing Data per sec(Read) = 500(read per sec) * 10KB(arbitrary storage action size) = 5MB per sec
 
 500 * 10^3 = 500 * 1000 = 500,000 = 5MB
+
+
+### App Server Estimations
+Might be asked how many app service do you need
 
 ## Architecture
 Typically Microservices 
