@@ -109,9 +109,8 @@ During the interview, ask about the projected daily active user base. Additional
 
 ##### [[Bandwidth Estimation]] Examples
 > Once you determine other estimation you can address this last or ask about potential historical traffic using that as a baseline.
-- Bandwidth: Requests per day * average request size
-- Bandwidth required: (300 million(Active users) \* 1.5 MB) = 450,000 GB
-- Bandwidth per second: 5.2 GB (450,000 GB / 86,400 seconds in a day)
+- Bandwidth required: 300 million(Active users) * 1.5 MB = 450,000 GB
+- Bandwidth per second: 450,000 GB / 86,400 seconds in a day = 5.2 GB 
 
 You can leverage ChatGPT to perform a CAP theorem analysis and a Kepner-Tregoe decision analysis, using weighted decisions to identify a concise list of choices for databases or other relevant technologies. This approach allows for a systematic evaluation of options based on their consistency, availability, and partition tolerance, as well as other criteria important to your decision-making process. By combining these analytical methods, you can efficiently narrow down your options and make informed decisions that align with your specific needs and preferences.
 

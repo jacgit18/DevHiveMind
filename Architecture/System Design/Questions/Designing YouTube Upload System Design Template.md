@@ -15,6 +15,7 @@ dg-publish: null
 
 # Question
 ## Requirements Gathering
+
 ### Userbase
 
 #### Schema
@@ -44,7 +45,7 @@ dg-publish: null
 
 
 #### Data points of focus identified
-adad
+Ask about or come up with DAU(Daily Active User) use a easy consistent value that's easy to calculate
 
 ### Capacity Estimation
 Consider Ratios
@@ -67,9 +68,9 @@ Consider metadata
 #### Bandwidth
 Bandwidth: Requests per day * average request size
 
-Bandwidth required: (200,000,000 Active users \* 1.5 MB) = 286.13 TB
+Bandwidth required: (Active users \* 1.5 MB) = 
 
-Bandwidth per second: (286.13 TB / 86,400 seconds in a day) = 3.308 GB
+Bandwidth per second: (Bandwidth required / 86,400 seconds in a day) = 
 
 ## Architecture
 Typically Microservices 

@@ -272,11 +272,9 @@ Comments + Likes + View Counts
 
 #### Bandwidth
 
-Bandwidth: Requests per day * average request size
+Bandwidth required = (200,000,000  * 1.5 MB) = 300,000,000 MB
 
-Bandwidth required: (200,000,000 million(Active users) \* 1.5 MB) = 286.13 TB
-
-Bandwidth per second: (286.13 TB / 86,400 seconds in a day) = 3.308 GB
+Bandwidth per second = Bandwidth required / 86,400 seconds in a day = 3,472.22 MB/s = 3.39 GB
 
 ### Database Schema 
 READ
