@@ -262,6 +262,17 @@ WRITE
 - PATCH/PUT
 - DELETE
 
+#### DB Table
+
+| Field     | Description                                | Type    |
+| --------- | ------------------------------------------ | ------- |
+| Latitude  | **\*** Lat of given location               | Double  |
+| Longitude | **\*** Long of given location              | Double  |
+| Radius    | **O** Default is 500 meters(about 3 miles) | Int     |
+| ..        | ..                                         | VarChar |
+| ..        | ..                                         | Char    |
+| ..        | ..                                         | Boolean |
+
 
 #### DB Query to Request Table
 
@@ -275,16 +286,6 @@ WRITE
 | PATCH   | WRITE |                                            | ..                      |
 |         |       |                                            |                         |
 
-#### DB Table
-
-| Field     | Description                                | Type    |
-| --------- | ------------------------------------------ | ------- |
-| Latitude  | **\*** Lat of given location               | Double  |
-| Longitude | **\*** Long of given location              | Double  |
-| Radius    | **O** Default is 500 meters(about 3 miles) | Int     |
-| ..        | ..                                         | VarChar |
-| ..        | ..                                         | Char    |
-| ..        | ..                                         | Boolean |
 
 #### Response 
 ```json
