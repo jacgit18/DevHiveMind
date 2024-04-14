@@ -60,19 +60,25 @@ Consider Ratios
 
 #### Network Traffic
 ##### Data Point 1 service
+
+###### write per day
+POST, PUT, DELETE
+PlaceHolder = Upload Video
+month, day, seconds
+
 ###### read per day
 GET
 PlaceHolder = Watch Video
 month, day, seconds
 
 quick math
+write per day = 1M
+write per sec = 1M/ 4000 * 20 = 1M/ 80K = 1M /100k = 10
 
-1M/ 4000 * 20 = 1M/ 80K = 1M /100k
 
-###### write per day
-POST, PUT, DELETE
-PlaceHolder = Upload Video
-month, day, seconds
+Read:write heavy 50:1 ratio
+read per day = 50M
+read per sec = 50M *
 ##### Data Point 2 service
 
 #### Memory Cache
