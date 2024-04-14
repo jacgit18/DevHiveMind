@@ -102,6 +102,8 @@ Data replication = 20TB * 3 = 60TB
 
 #### Memory Cache
 Consider metadata
+
+caching is a way to serve read request faster use 80-20 rule for caching
 ##### Data Point 1 service
 
 ##### Data Point 2 service
@@ -111,7 +113,7 @@ InComing Data per sec(Write) = 10(write per sec) * 10KB(arbitrary storage action
 
 OutGoing Data per sec(Read) = 500(read per sec) * 10KB(arbitrary storage action size) = 5MB per sec
 
-500 * 10^3
+500 * 10^3 = 500 * 1000 = 500,000 = 5MB
 
 ## Architecture
 Typically Microservices 
