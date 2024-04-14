@@ -105,6 +105,9 @@ Consider metadata
 
 caching is a way to serve read request faster use 80-20 rule for caching
 ##### Data Point 1 service
+Caching Memory = read per day * arbitrary storage action size * 20%
+
+Caching Memory = 50M  * 10KB  * 0.2 = 
 
 ##### Data Point 2 service
 
