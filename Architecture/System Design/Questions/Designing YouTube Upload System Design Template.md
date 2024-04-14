@@ -126,6 +126,7 @@ Might be asked how many app service do you need
 
 You should consider if the request is CPU bound, memory bound or I/O bound
 
+this relates to [[Request Resource Bound]]
 
 if CPU bound number of request per second a single server can handle would = number of physical cores / time to process request
 
@@ -154,7 +155,11 @@ Profile image(300x300) 300KB
 Video size is calculated by
 FrameSize x FrameRate(FPS) x Compression Ratio x Video Duration(# Sec)
 
-3MB * 30FPS * 1/100 * 60(sec) = 90MB * 1/100 * 60 = 90MB *  60 /100
+3MB * 30FPS * 1/100 * 60(sec) = 90MB * 1/100 * 60 = 90MB *  60 /100 = 5,400MB/ 100 = 54MB = 50MB
+
+Other resolution to consider 
+480p, 360P, 240P, 144P
+
   
   
 For something like YouTube you would probably use other resolutions
