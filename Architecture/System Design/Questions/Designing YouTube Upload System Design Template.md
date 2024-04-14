@@ -16,6 +16,8 @@ dg-publish: null
 # Question
 ## Requirements Gathering
 
+
+
 ### Userbase
 
 #### Schema
@@ -47,7 +49,7 @@ dg-publish: null
 #### Data points of focus identified
 Ask about or come up with DAU(Daily Active User) use a easy consistent value that's easy to calculate.
 
-
+Define services/ endpoints think about storage then estimate request 
 
 ### Capacity Estimation
 Consider Ratios
@@ -57,13 +59,19 @@ Consider Ratios
 ##### Data Point 2 service
 
 #### Network Traffic
-##### Data Point 1 
+##### Data Point 1 service
+read per day
+GET
+Service name
 
+write per day
+PUT, UPDATE, DELETE
+Service name
 ##### Data Point 2 service
 
 #### Memory Cache
 Consider metadata
-##### Data Point 1 
+##### Data Point 1 service
 
 ##### Data Point 2 service
 
