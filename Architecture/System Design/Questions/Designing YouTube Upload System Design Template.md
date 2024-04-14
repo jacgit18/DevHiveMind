@@ -71,7 +71,7 @@ Read:write heavy *50*:1 ratio
 
 3,600 in a day using 4,000 easier math then round up to 100K easier math
 
-write per day = 1M
+write per day = **1M**
 write per sec = 1M/ 4000 * 20 = 1M/ 80K = 1M /100k = 10 writes a sec
 
 
@@ -81,6 +81,21 @@ read per sec = *50* * 10 write per sec = 500
 
 #### Storage
 ##### Data Point 1 service
+arbitrary storage action size = 10KB  
+
+new data per day = arbitrary storage action size * write per day 
+10KB * 1M = 10(10^3) * 1(10^6) = 10^9 = 10 GB
+
+
+Retention Period = 5 years  
+  
+5 Year Storage =  
+
+So 5 * 400 = 2 thousand(10^3) * 10 GB(10^9) which is new data generated = 20(10^12) = 20 terabytes  
+  
+Data replication which is typically done 3 to 5 times  
+  
+So you can do three times 20 terabytes which is 60 TB
 
 ##### Data Point 2 service
 
