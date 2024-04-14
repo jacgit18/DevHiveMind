@@ -49,17 +49,27 @@ adad
 ### Capacity Estimation
 Consider Ratios
 #### Storage
-##### Data Point 1 
+##### Data Point 1 service
+
+##### Data Point 2 service
 
 #### Network Traffic
 ##### Data Point 1 
+
+##### Data Point 2 service
 
 #### Memory Cache
 Consider metadata
 ##### Data Point 1 
 
+##### Data Point 2 service
+
 #### Bandwidth
-##### Data Point 1 
+Bandwidth: Requests per day * average request size
+
+Bandwidth required: (200,000,000 Active users \* 1.5 MB) = 286.13 TB
+
+Bandwidth per second: (286.13 TB / 86,400 seconds in a day) = 3.308 GB
 
 ## Architecture
 Typically Microservices 
