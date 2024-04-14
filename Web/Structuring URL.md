@@ -12,7 +12,7 @@ Purpose: This documentation discusses explains URI structure and best practices.
 Status: Refinement
 Started: 
 EditDate: 2024-01-30
-Relates: 
+Relates: "[[Naming Conventions]]"
 Peer Reviewed: 0
 dg-publish: false
 ---

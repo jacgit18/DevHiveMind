@@ -124,8 +124,10 @@ Percentage Ratio = 0.2925 * 100% ≈ 29.25%
  13,020.83 MB
 
 Bandwidth: Requests per day * average request size
-- Bandwidth required: 450,000 GB (300 million(Active users) \* 1.5 MB)
-- Bandwidth per second: 5.2 GB (450,000 GB / 86,400 seconds in a day)
+
+Bandwidth required: 450,000 GB (300 million(Active users) \* 1.5 MB)
+
+Bandwidth per second: 5.2 GB (450,000 GB / 86,400 seconds in a day)
 
 Bandwidth = 19.53 MB / 2,592,000 seconds in a month ≈ 0.0075 MB/s ≈ 7.5 KB/s
 
