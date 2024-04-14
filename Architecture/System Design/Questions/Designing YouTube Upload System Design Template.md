@@ -148,10 +148,13 @@ Size of image = height x width x bit depth
 1280 x 720 x 24bits or 3 Bytes
 1k * 1K * 3 = 3,000,000 = 3MB
 
-Profile image 300 kilobytes  
-+
-Videos which depends on frame size frame rate compression ratio and duration  
-A minute HD video would be about 50 MB  
+Profile image(300x300) 300KB  
+1 Min HD Video = 50MB
+
+Video size is calculated by
+FrameSize x FrameRate(FPS) x Compression Ratio x Video Duration(# Sec)
+
+3MB * 30FPS * 1/100 * 60(sec) = 90MB * 1/100 * 60 = 90MB *  60 /100
   
   
 For something like YouTube you would probably use other resolutions

@@ -25,6 +25,7 @@ Can expand on this system week by week growing it or mock by mock interview in a
 | 1 Gigabyte | 1,024 Megabytes = 1,073,741,824 Bytes         | Billion     | 10^9  |
 | 1 Terabyte | 1,024 Gigabytes = 1,099,511,627,776 Bytes     | Trillion    | 10^12 |
 | 1 Petabyte | 1,024 Terabytes = 1,125,899,906,842,624 Bytes | Quadrillion | 10^15 |
+|            |                                               |             |       |
 
 ### Time
 
