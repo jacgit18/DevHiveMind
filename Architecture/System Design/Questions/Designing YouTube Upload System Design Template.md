@@ -89,13 +89,13 @@ new data per day = arbitrary storage action size * write per day
 
 Retention Period = 5 years  
   
-5 Year Storage =  
-
-So 5 * 400 = 2 thousand(10^3) * 10 GB(10^9) which is new data generated = 20(10^12) = 20 terabytes  
+5 Year Storage =  5 * 400(Rounded year day) * 10 GB(new data per day) = 2K(10^3) * 10 GB(10^9) = 20(10^12) = 20TB  
   
 Data replication which is typically done 3 to 5 times  
+
+Data replication = 20TB * 3 = 60TB
   
-So you can do three times 20 terabytes which is 60 TB
+
 
 ##### Data Point 2 service
 
@@ -107,11 +107,11 @@ Consider metadata
 ##### Data Point 2 service
 
 #### Bandwidth
-Bandwidth: Requests per day * average request size
+InComing Data per sec(Write) = 10(write per sec) * 10KB(arbitrary storage action size) = 100KB per sec
 
-Bandwidth required: (Active users \* 1.5 MB) = 
+OutGoing Data per sec(Read) = 500(read per sec) * 10KB(arbitrary storage action size) = 5MB per sec
 
-Bandwidth per second: (Bandwidth required / 86,400 seconds in a day) = 
+500 * 10^3
 
 ## Architecture
 Typically Microservices 
