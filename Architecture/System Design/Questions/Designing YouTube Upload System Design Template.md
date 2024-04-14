@@ -72,13 +72,16 @@ PlaceHolder = Watch Video
 month, day, seconds
 
 quick math
+Read:write heavy 50:1 ratio
+
+3,600 in a day using 4,000 easier math then round up to 100K easier math
+
 write per day = 1M
 write per sec = 1M/ 4000 * 20 = 1M/ 80K = 1M /100k = 10
 
 
-Read:write heavy 50:1 ratio
-read per day = 50M
-read per sec = 50M *
+read per day = 50 * 1M = 50M
+read per sec = 50 * 10 = 500
 ##### Data Point 2 service
 
 #### Memory Cache
