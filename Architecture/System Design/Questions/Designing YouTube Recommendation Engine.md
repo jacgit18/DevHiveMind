@@ -42,6 +42,31 @@ Design a recommendation engine for YouTube that provides personalized video reco
 
 ### Userbase
 age, geography, governance, etc ...
+
+#### Schema
+##### Table 1 
+
+| Field     | Description                                | Type    |
+| --------- | ------------------------------------------ | ------- |
+| Latitude  | **\*** Lat of given location               | Double  |
+| Longitude | **\*** Long of given location              | Double  |
+| Radius    | **O** Default is 500 meters(about 3 miles) | Int     |
+| ..        | ..                                         | VarChar |
+| ..        | ..                                         | Char    |
+| ..        | ..                                         | Boolean |
+
+##### Table 2
+
+| Field     | Description                                | Type    |
+| --------- | ------------------------------------------ | ------- |
+| Latitude  | **\*** Lat of given location               | Double  |
+| Longitude | **\*** Long of given location              | Double  |
+| Radius    | **O** Default is 500 meters(about 3 miles) | Int     |
+| ..        | ..                                         | VarChar |
+| ..        | ..                                         | Char    |
+| ..        | ..                                         | Boolean |
+
+
 #### Data points of focus identified
 comments, views, likes, 
 

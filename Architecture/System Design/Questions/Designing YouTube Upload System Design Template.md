@@ -16,12 +16,8 @@ dg-publish: null
 # Question
 ## Requirements Gathering
 ### Userbase
-#### Data points of focus identified
-adad
-
 
 #### Schema
-
 
 ##### Table 1
 
@@ -35,9 +31,7 @@ adad
 | ..        | ..                                         | Boolean |
 
 
-
 ##### Table 2
-
 
 |     |     |
 | --- | --- |
@@ -48,6 +42,9 @@ adad
 |     |     |
 |     |     |
 
+
+#### Data points of focus identified
+adad
 
 ### Capacity Estimation
 Consider Ratios
