@@ -187,9 +187,9 @@ Talk optimizations throughout and traffic management.
 
 # Text Elements
 # Element Links
-yApo8vnP: [[Designing YouTube Upload System Design Template#Userbase]]
-cqasGqqJ: [[Designing YouTube Upload System Design Template#Table 1]]
-S5QN8lcM: [[Designing YouTube Upload System Design Template#Table 2]]
+yApo8vnP: [[Capacity Est#Userbase]]
+cqasGqqJ: [[Capacity Est#Table 1]]
+S5QN8lcM: [[Capacity Est#Table 2]]
 
 %%
 # Drawing

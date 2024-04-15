@@ -278,13 +278,6 @@ Bandwidth required = (200,000,000  * 1.5 MB) = 300,000,000 MB
 Bandwidth per second = Bandwidth required / 86,400 seconds in a day = 3,472.22 MB/s = 3.39 GB
 
 ### Database Schema 
-READ
-- GET
-
-WRITE
-- POST 
-- PATCH/PUT
-- DELETE
 
 #### DB Table
 

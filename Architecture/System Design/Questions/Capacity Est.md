@@ -16,7 +16,7 @@ dg-publish: null
 # Question
 ## Requirements Gathering
 
-
+Copy estimation part into its own file 
 
 ### Userbase
 
@@ -29,7 +29,7 @@ dg-publish: null
 | Latitude  | **\*** Lat of given location               | Double  |
 | Longitude | **\*** Long of given location              | Double  |
 | Radius    | **O** Default is 500 meters(about 3 miles) | Int     |
-| ..        | ..                                         | VarChar |
+| tes       | ..                                         | VarChar |
 | ..        | ..                                         | Char    |
 | ..        | ..                                         | Boolean |
 
@@ -53,37 +53,30 @@ Define services/ endpoints think about storage then estimate request
 
 ### Capacity Estimation
 Consider Ratios
-#### Network Traffic
-##### Data Point 1 service
 
-###### write per day
-POST, PUT, DELETE
-PlaceHolder = Upload Video
-month, day, seconds
-
-###### read per day
-GET
-PlaceHolder = Watch Video
-month, day, seconds
-
-quick math
-Read:write heavy *50*:1 ratio
-
-3,600 in a day using 4,000 easier math then round up to 100K easier math
-
-write per day = **1M**
-write per sec = 1M/ 4000 * 20 = 1M/ 80K = 1M /100k = 10 writes a sec
-
-
-read per day = *50* * 1M write per day = 50M
-read per sec = *50* * 10 write per sec = 500
-##### Data Point 2 service
+Active Userbase of 200,000,000
 
 #### Storage
-##### Data Point 1 service
-arbitrary storage action size = 10KB  
+mostly concerned with writes you do reads but were focused on writes because we need to know how much we nee to store
 
-new data per day = arbitrary storage action size * write per day 
+
+##### Writes per Day
+> POST, PUT, DELETE
+- Post Comment
+- Post Like
+- Not in scope for storage estimation
+	- Post unlike
+	- Update Comment 
+	- Delete Comment
+
+Monthly total storage size needed  = average size of comments + average size of likes = 10KB  
+
+Write per day = **1M**
+
+write per sec = 1M/ 4000 * 20(secs in day est) = 1M/ 80K = 1M /100k = 10 writes a sec
+
+
+Daily storage for writes = Monthly total storage size needed * Write per day 
 10KB * 1M = 10(10^3) * 1(10^6) = 10^9 = 10 GB
 
 
@@ -94,10 +87,31 @@ Retention Period = 5 years
 Data replication which is typically done 3 to 5 times  
 
 Data replication = 20TB * 3 = 60TB
-  
 
 
-##### Data Point 2 service
+Storage: Writes per day \* size of write \* time to store data(Optional)
+
+(10,000 thousand KB/day * 1.5 MB) = 14.65 MB \* 2 days = roughly 30 MB at minimum for storage since data is held for 2 days probably want a little more.
+
+Yearly storage:(15 MB * 400 days * 10 years) = 60 PB 
+
+#### Network Traffic
+Read:write heavy *50*:1 ratio
+
+##### Reads per day
+> GET
+
+Get Video views
+
+quick math
+3,600 in a day using 4,000 easier math then round up to 100K easier math
+
+
+read per day = *50* * 1M write per day = 50M
+read per sec = *50* * 10 write per sec = 500
+
+
+
 
 
 #### Memory Cache
@@ -138,34 +152,6 @@ if CPU bound number of request per second a single server can handle would = num
 This this is dependent on service hardware also the number of time it takes to process a single request.
 
 
-**Language approximations**
-You have 500K words in English language  
-A line of text contains 10 words  
-A word contains 5 characters which is 5 bytes  
-  
-**Media approximation**
-HD image 3MB  intstagram or facebook post
-Size of image = height x width x bit depth
-1280 x 720 x 24bits or 3 Bytes
-1k * 1K * 3 = 3,000,000 = 3MB
-
-Profile image(300x300) 300KB  
-1 Min HD Video = 50MB
-
-Video size is calculated by
-FrameSize x FrameRate(FPS) x Compression Ratio x Video Duration(# Sec)
-
-3MB * 30FPS * 1/100 * 60(sec) = 90MB * 1/100 * 60 = 90MB *  60 /100 = 5,400MB/ 100 = 54MB = 50MB
-
-Other resolution to consider 
-480p, 360P, 240P, 144P
-
-  
-  
-For something like YouTube you would probably use other resolutions
-
-  
-
 ## Architecture
 Typically Microservices 
 
@@ -187,9 +173,8 @@ Talk optimizations throughout and traffic management.
 
 # Text Elements
 # Element Links
-yApo8vnP: [[Designing YouTube Upload System Design Template#Userbase]]
-cqasGqqJ: [[Designing YouTube Upload System Design Template#Table 1]]
-S5QN8lcM: [[Designing YouTube Upload System Design Template#Table 2]]
+cqasGqqJ: [[Capacity Est#Table 1]]
+S5QN8lcM: [[Capacity Est#Table 2]]
 
 %%
 # Drawing
@@ -201,52 +186,8 @@ S5QN8lcM: [[Designing YouTube Upload System Design Template#Table 2]]
 	"elements": [
 		{
 			"type": "embeddable",
-			"version": 250,
-			"versionNonce": 73984650,
-			"isDeleted": false,
-			"id": "yApo8vnP",
-			"fillStyle": "hachure",
-			"strokeWidth": 1,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
-			"angle": 0,
-			"x": -360.875,
-			"y": -555.328125,
-			"strokeColor": "#000000",
-			"backgroundColor": "transparent",
-			"width": 370.00000000000006,
-			"height": 146.03915156373264,
-			"seed": 38646,
-			"groupIds": [],
-			"frameId": null,
-			"roundness": null,
-			"boundElements": [],
-			"updated": 1713057385366,
-			"link": "[[Architecture/System Design/Questions/System Design Template#Userbase]]",
-			"locked": false,
-			"customData": {
-				"mdProps": {
-					"useObsidianDefaults": false,
-					"backgroundMatchCanvas": false,
-					"backgroundMatchElement": true,
-					"backgroundColor": "#fff",
-					"backgroundOpacity": 60,
-					"borderMatchElement": true,
-					"borderColor": "#fff",
-					"borderOpacity": 0,
-					"filenameVisible": false
-				}
-			},
-			"scale": [
-				1,
-				1
-			]
-		},
-		{
-			"type": "embeddable",
-			"version": 489,
-			"versionNonce": 1298206166,
+			"version": 744,
+			"versionNonce": 1509628712,
 			"isDeleted": false,
 			"id": "cqasGqqJ",
 			"fillStyle": "hachure",
@@ -255,19 +196,19 @@ S5QN8lcM: [[Designing YouTube Upload System Design Template#Table 2]]
 			"roughness": 1,
 			"opacity": 100,
 			"angle": 0,
-			"x": -39.89289798502517,
-			"y": -361.3805362348282,
+			"x": -367.1573022819002,
+			"y": -862.5466510419571,
 			"strokeColor": "#000000",
 			"backgroundColor": "transparent",
-			"width": 540.9040281581279,
-			"height": 393.52594859215577,
+			"width": 820.2427122401591,
+			"height": 330.5377817830738,
 			"seed": 94149,
 			"groupIds": [],
 			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1713057427309,
-			"link": "[[Architecture/System Design/Questions/System Design Template#Table 1]]",
+			"updated": 1713150648726,
+			"link": "[[Designing YouTube Upload System Design Template#Table 1]]",
 			"locked": false,
 			"customData": {
 				"mdProps": {
@@ -289,8 +230,8 @@ S5QN8lcM: [[Designing YouTube Upload System Design Template#Table 2]]
 		},
 		{
 			"type": "embeddable",
-			"version": 304,
-			"versionNonce": 417429066,
+			"version": 423,
+			"versionNonce": 2134863144,
 			"isDeleted": false,
 			"id": "S5QN8lcM",
 			"fillStyle": "hachure",
@@ -299,19 +240,19 @@ S5QN8lcM: [[Designing YouTube Upload System Design Template#Table 2]]
 			"roughness": 1,
 			"opacity": 100,
 			"angle": 0,
-			"x": -394.1686282912867,
-			"y": -283.7267955767591,
+			"x": -350.3508792678492,
+			"y": -456.25937309140755,
 			"strokeColor": "#000000",
 			"backgroundColor": "transparent",
-			"width": 220.20017659919824,
-			"height": 135.01712495286347,
+			"width": 244.8476985718545,
+			"height": 174.72697907884003,
 			"seed": 40223,
 			"groupIds": [],
 			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1713057424873,
-			"link": "[[Architecture/System Design/Questions/System Design Template#Table 2]]",
+			"updated": 1713150656095,
+			"link": "[[Designing YouTube Upload System Design Template#Table 2]]",
 			"locked": false,
 			"customData": {
 				"mdProps": {
@@ -332,60 +273,56 @@ S5QN8lcM: [[Designing YouTube Upload System Design Template#Table 2]]
 			]
 		},
 		{
-			"id": "Tji8AxHImGs8RXEvcQtG7",
-			"type": "arrow",
-			"x": -256.5396712885005,
-			"y": -245.8247013833764,
-			"width": 212.14285714285717,
-			"height": 30.000000000000057,
-			"angle": 0,
-			"strokeColor": "#1e1e1e",
-			"backgroundColor": "transparent",
-			"fillStyle": "solid",
-			"strokeWidth": 2,
+			"type": "embeddable",
+			"version": 420,
+			"versionNonce": 1696134232,
+			"isDeleted": true,
+			"id": "yApo8vnP",
+			"fillStyle": "hachure",
+			"strokeWidth": 1,
 			"strokeStyle": "solid",
 			"roughness": 1,
 			"opacity": 100,
+			"angle": 0,
+			"x": -401.9541015625,
+			"y": -886.700309753418,
+			"strokeColor": "#000000",
+			"backgroundColor": "transparent",
+			"width": 805.439453125,
+			"height": 393.8836568737912,
+			"seed": 38646,
 			"groupIds": [],
 			"frameId": null,
-			"roundness": {
-				"type": 2
-			},
-			"seed": 1360903114,
-			"version": 312,
-			"versionNonce": 159116234,
-			"isDeleted": true,
-			"boundElements": null,
-			"updated": 1713057427309,
-			"link": null,
+			"roundness": null,
+			"boundElements": [],
+			"updated": 1713150638804,
+			"link": "[[Designing YouTube Upload System Design Template#Userbase]]",
 			"locked": false,
-			"points": [
-				[
-					0,
-					0
-				],
-				[
-					212.14285714285717,
-					30.000000000000057
-				]
-			],
-			"lastCommittedPoint": null,
-			"startBinding": null,
-			"endBinding": {
-				"elementId": "cqasGqqJ",
-				"focus": 0.05244266244886404,
-				"gap": 4.503916160618132
+			"customData": {
+				"mdProps": {
+					"useObsidianDefaults": false,
+					"backgroundMatchCanvas": false,
+					"backgroundMatchElement": true,
+					"backgroundColor": "#fff",
+					"backgroundOpacity": 60,
+					"borderMatchElement": true,
+					"borderColor": "#fff",
+					"borderOpacity": 0,
+					"filenameVisible": false
+				}
 			},
-			"startArrowhead": null,
-			"endArrowhead": "arrow"
+			"scale": [
+				1,
+				1
+			]
 		},
 		{
-			"id": "pbzOZE1cMFtwNIU1FHYcS",
-			"type": "arrow",
-			"x": -4.396814145643361,
-			"y": -75.11041566909068,
-			"width": 167.1428571428571,
-			"height": 137.14285714285717,
+			"id": "9MoWNcW1",
+			"type": "text",
+			"x": -239.14912088756978,
+			"y": -80.74666790580886,
+			"width": 9.999984741210938,
+			"height": 25,
 			"angle": 0,
 			"strokeColor": "#1e1e1e",
 			"backgroundColor": "transparent",
@@ -396,36 +333,24 @@ S5QN8lcM: [[Designing YouTube Upload System Design Template#Table 2]]
 			"opacity": 100,
 			"groupIds": [],
 			"frameId": null,
-			"roundness": {
-				"type": 2
-			},
-			"seed": 338485450,
-			"version": 255,
-			"versionNonce": 251633174,
+			"roundness": null,
+			"seed": 1898583384,
+			"version": 2,
+			"versionNonce": 601540392,
 			"isDeleted": true,
 			"boundElements": null,
-			"updated": 1713057424872,
+			"updated": 1713150634272,
 			"link": null,
 			"locked": false,
-			"points": [
-				[
-					0,
-					0
-				],
-				[
-					-167.1428571428571,
-					-137.14285714285717
-				]
-			],
-			"lastCommittedPoint": null,
-			"startBinding": null,
-			"endBinding": {
-				"elementId": "S5QN8lcM",
-				"focus": -0.5598228991149633,
-				"gap": 2.428780403588007
-			},
-			"startArrowhead": null,
-			"endArrowhead": "arrow"
+			"text": "",
+			"rawText": "",
+			"fontSize": 20,
+			"fontFamily": 1,
+			"textAlign": "left",
+			"verticalAlign": "top",
+			"containerId": null,
+			"originalText": "",
+			"lineHeight": 1.25
 		}
 	],
 	"appState": {
@@ -443,10 +368,10 @@ S5QN8lcM: [[Designing YouTube Upload System Design Template#Table 2]]
 		"currentItemTextAlign": "left",
 		"currentItemStartArrowhead": null,
 		"currentItemEndArrowhead": "arrow",
-		"scrollX": 436.18252843135764,
-		"scrollY": 576.7845228119478,
+		"scrollX": 447.9041562879604,
+		"scrollY": 1055.8853893718733,
 		"zoom": {
-			"value": 1.4000000000000001
+			"value": 0.8
 		},
 		"currentItemRoundness": "round",
 		"gridSize": null,

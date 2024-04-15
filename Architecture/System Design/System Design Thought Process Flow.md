@@ -78,16 +78,10 @@ When crafting your design, prioritize a forward-thinking approach that anticipat
 #### Schema Design (10 to 20)
 Create an Entity Relationship Diagram (ERD) to define clear relationships and [[Schema Design]] then discuss table [[Normalization & Denormalization]] to optimize schema and overall database performance. But once that is done you can come up with a list of general feature using collected data points of focus like for example likes for a Youtube system design you can come up with different endpoints following [[Structuring URL#URI Path Design Guidelines for REST APIs |endpoints naming convention]] then come up with estimations, also for endpoints you can keep it simple.
 
-#### Capacity Estimation (5 min)
+#### [[Capacity Estimation]] (5 min)
 [Indepth Video Examination of Capacity Estimation ](https://www.youtube.com/watch?v=-frNQkRz_IU)
-
 Traffic & Storage should estimation be more then enough but also keep estimations clean meaning round up or down and stuff numbers do need be exact you can do guesstimates.
-##### Storage Estimation Examples
-> Keep estimation simple focus on storage needed and not to much on queries especially if there are other critical things to discuss. 
-- Storage: Writes per day \* size of write \* time to store data
-- (10,000 thousand KB/day * 1.5 MB) = 14.65 MB \* 2 days = roughly 30 MB at minimum for storage since data is held for 2 days probably want a little more.
-- Daily storage for writes: 10 million writes \* 1.5 MB = 15 TB guesstimate
-- Yearly storage:(15 TB \* 365 days \* 10 years) = 55 PB guesstimate
+
 
 ##### Network Traffic Estimate Examples
 During the interview, ask about the projected daily active user base. Additionally, delve into the user behavior to understand the breakdown between service requests, distinguishing between reads and writes. This will provide insight into the system's workload distribution, indicating whether it leans towards a write-heavy scenario, where the ratio of writes to reads is significant, such as 100 writes for every 20 reads, or vice versa. 
@@ -225,65 +219,6 @@ You should also consider enhancing frontend performance by optimizing page load 
 
 ### Step 4: Wrap Up(3 - 5 minutes)
 Summarize key design decisions, highlighting any alternative considerations. Invite questions and address outstanding concerns.
-
-
-# Stats 
-### Data Size:
-
-| Unit       | Equivalent in Bytes                           | Place       |       |
-| ---------- | --------------------------------------------- | ----------- | ----- |
-| 1 Byte     | 1                                             | Hundred     | 10^2  |
-| 1 Kilobyte | 1,024 Bytes                                   | Thousand    | 10^3  |
-| 1 Megabyte | 1,024 Kilobytes = 1,048,576 Bytes             | Million     | 10^6  |
-| 1 Gigabyte | 1,024 Megabytes = 1,073,741,824 Bytes         | Billion     | 10^9  |
-| 1 Terabyte | 1,024 Gigabytes = 1,099,511,627,776 Bytes     | Trillion    | 10^12 |
-| 1 Petabyte | 1,024 Terabytes = 1,125,899,906,842,624 Bytes | Quadrillion | 10^15 |
-
-
-
-### Time
-
-| Calculation              | Result                      |
-| ------------------------ | --------------------------- |
-| 60 seconds * 60 minutes  | 3,600 seconds per hour      |
-| 3,600 seconds * 24 hours | 86,400 seconds per day      |
-| 86,400 seconds * 30 days | 2,592,000 seconds per month |
-
-
-# Alt Design
-### Music Streaming Service Estimation:
-
-**Assumptions:**
-- Average song duration: 3 minutes
-- Average songs played per hour per user: 20 songs
-- Average daily active users: 10 million
-- Average hours of music played per user per day: 3 hours
-- Number of days in a month: 30
-
-#### Math Problem:
-
-1. **Daily Usage Estimation:**
-   - Songs played per user per day: 20 songs/hour * 3 hours = 60 songs
-   - Total daily songs played: 60 songs/user * 10 million users = 600 million songs
-   - Total daily music duration: 600 million songs * 3 minutes/song = 1,800 million minutes
-
-2. **Monthly Usage Estimation:**
-   - Total monthly music duration: 1,800 million minutes * 30 days = 54,000 million minutes
-
-3. **Conversion to Seconds:**
-   - Total monthly music duration in seconds: 54,000 million minutes * 60 seconds/minute = 3,240,000 million seconds
-
-### Why This Information Matters:
-
-**Throughput Considerations:**
-- The system needs to handle a massive volume of song requests and streaming data.
-- Infrastructure must support concurrent users and maintain low latency during high usage periods.
-- Designing the database, server architecture, and network bandwidth should accommodate this estimated daily and monthly load.
-- Ensuring scalability is crucial to handle potential growth in user base and usage patterns.
-
-This estimation allows us to properly design and dimension the infrastructure to meet the demands of the music streaming service, ensuring a smooth and responsive user experience.
-
-
 
 ![[System Design Cheatsheet.gif]]
 
