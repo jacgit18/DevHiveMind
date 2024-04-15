@@ -19,14 +19,14 @@ Active Userbase of 200,000,000
 #### Storage
 You should be concerned with writes here only because we need to know how much data we need to store.
 
-| Unit       | Equivalent in Bytes                           | Place                       |       |
-| ---------- | --------------------------------------------- | --------------------------- | ----- |
-| 1 Byte     | 1                                             | Hund over 2 digits          | 10^2  |
-| 1 Kilobyte | 1,024 Bytes                                   | Thous over 3 digits         | 10^3  |
-| 1 Megabyte | 1,024 Kilobytes = 1,048,576 Bytes             | Mill over 6 digits          | 10^6  |
-| 1 Gigabyte | 1,024 Megabytes = 1,073,741,824 Bytes         | Bill over 9 digits          | 10^9  |
-| 1 Terabyte | 1,024 Gigabytes = 1,099,511,627,776 Bytes     | Trillion  above 12 digits   | 10^12 |
-| 1 Petabyte | 1,024 Terabytes = 1,125,899,906,842,624 Bytes | Quadrillion above 15 digits | 10^15 |
+| Unit       | Equivalent in Bytes                           | Place                  |       |
+| ---------- | --------------------------------------------- | ---------------------- | ----- |
+| 1 Byte     | 1                                             | Hund over 2 digits     | 10^2  |
+| 1 Kilobyte | 1,024 Bytes                                   | Thous over 3 digits    | 10^3  |
+| 1 Megabyte | 1,024 Kilobytes = 1,048,576 Bytes             | Milli over 6 digits    | 10^6  |
+| 1 Gigabyte | 1,024 Megabytes = 1,073,741,824 Bytes         | Billi over 9 digits    | 10^9  |
+| 1 Terabyte | 1,024 Gigabytes = 1,099,511,627,776 Bytes     | Trilli over 12 digits  | 10^12 |
+| 1 Petabyte | 1,024 Terabytes = 1,125,899,906,842,624 Bytes | Quadril over 15 digits | 10^15 |
 
 | Calculation              | Result                                    |         |
 | ------------------------ | ----------------------------------------- | ------- |
