@@ -157,8 +157,8 @@ Talk optimizations throughout and traffic management.
 
 # Text Elements
 # Element Links
-cqasGqqJ: [[Capacity Est temp#Table 1]]
-S5QN8lcM: [[Capacity Est temp#Table 2]]
+cqasGqqJ: [[Designing YouTube Upload System Design Template#Table 1]]
+S5QN8lcM: [[Designing YouTube Upload System Design Template#Table 2]]
 
 %%
 # Drawing

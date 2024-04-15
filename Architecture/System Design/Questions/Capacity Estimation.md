@@ -125,6 +125,7 @@ if CPU bound number of request per second a single server can handle would = num
 
 
 This this is dependent on service hardware also the number of time it takes to process a single request.
+
 ### Side Note
 **Language approximations**
 You have 500K words in English language  
@@ -147,14 +148,4 @@ FrameSize x FrameRate(FPS) x Compression Ratio x Video Duration(# Sec)
 
   
 For something like YouTube you would probably use other resolutions like: 480p, 360P, 240P, 144P
-#### Network Traffic
 
-
-
-#### Memory Caching
-
-
-#### Bandwidth
-
-
-### App Server Estimations
