@@ -1,15 +1,17 @@
 ---
-tags: 
+tags:
+  - web
+  - distributedSystem
 author:
   - gitUserNamePlaceHolder
 Comments: Placeholder comment any thing else you want to mention about the document.
 Purpose: This documentation discusses
-Status: 
-Started: 
+Status: Refinement
+Started: 2024-04-15
 EditDate: 
 Relates: 
 Peer Reviewed: 0
-dg-publish:
+dg-publish: true
 ---
 SSL termination refers to the process of decrypting encrypted SSL/TLS traffic (Secure Sockets Layer/Transport Layer Security) at a load balancer, reverse proxy, or other network device before forwarding it to the backend servers or applications.  
   
