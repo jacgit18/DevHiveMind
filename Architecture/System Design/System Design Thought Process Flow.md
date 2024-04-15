@@ -80,7 +80,9 @@ Create an Entity Relationship Diagram (ERD) to define clear relationships and [[
 
 #### [[Capacity Estimation]] (5 min)
 [Indepth Video Examination of Capacity Estimation ](https://www.youtube.com/watch?v=-frNQkRz_IU)
-Traffic & Storage should estimation be more then enough but also keep estimations clean meaning round up or down and stuff numbers do need be exact you can do guesstimates.
+Focusing on network traffic and storage estimation this should be more then enough. Also round aggressively and making rough guesstimates within ranges along approximate estimates which can help streamline estimations.
+
+
 
 
 ##### Network Traffic Estimate Examples
@@ -93,13 +95,7 @@ Traffic & Storage should estimation be more then enough but also keep estimation
 - Active user post = (10 million \* 10) = 100 million `POST Request`
 - Active user post per second =  (10 million / 86,400 seconds) = 115 `POST Request`
 
-##### Memory Storage Estimate Examples
-- Memory: Read requests per day \* average request size \* 20%
-- Cache for Instagram highlights:  (300 million requests \* 500 bytes) = 150 GB
-- Adjusted cache: (20% of 150 GB) = 30 GB
-- Total memory: (30 GB \* 3 for replication) = 90 GB 
-
-You can leverage ChatGPT to perform a CAP theorem analysis and a Kepner-Tregoe decision analysis, using weighted decisions to identify a concise list of choices for databases or other relevant technologies. This approach allows for a systematic evaluation of options based on their consistency, availability, and partition tolerance, as well as other criteria important to your decision-making process. By combining these analytical methods, you can efficiently narrow down your options and make informed decisions that align with your specific needs and preferences.
+You can maybe mention leveraging ChatGPT to perform a CAP theorem analysis and a Kepner-Tregoe decision analysis, using weighted decisions to identify a concise list of choices for databases or other relevant technologies. This approach allows for a systematic evaluation of options based on their consistency, availability, and partition tolerance, as well as other criteria important to your decision-making process. By combining these analytical methods, you can efficiently narrow down your options and make informed decisions that align with your specific needs and preferences.
 
 ### Step 3: Design Deep Dive (15 - 25 minutes)
 

@@ -35,6 +35,8 @@ You should be concerned with writes here only because we need to know how much d
 | 86,400 seconds * 30 days | 2,592,000 seconds per month use 2,400,000 | Seconds |
 ##### Writes per Day
 > POST, PUT, DELETE
+
+As a users we want to:
 - Post Comment
 - Post Like
 - Not in scope for storage estimation
@@ -67,11 +69,12 @@ Data replication = 4PB * 3 = 12TB
 Yearly storage:(12TB* 400 days) = 4800 TB = 4.8 PB 
 
 #### Network Traffic
-Read:write heavy *50*:1 ratio
+Read:Write *50*:1 read heavy ratio
 
 ##### Reads per day
 > GET
 
+As a users we want to:
 - Get Video views
 - Get Video likes
 - Get Comment likes
@@ -86,6 +89,8 @@ caching is a way to serve read request faster use 80-20 rule for caching
 Caching Memory = read per day * arbitrary storage action size * 20%
 
 Caching Memory = 10,000,000,000B * 10KB  * 0.2 = 10,000,000,000B(^9) * 2KB(^3) =  18.651 TB might be less since you have duplicate request being made to do the same thing 
+
+Total memory: (Caching Memory * 3 for replication) = 
 
 seems excessive might be issues
 
