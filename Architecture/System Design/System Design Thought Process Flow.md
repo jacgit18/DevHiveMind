@@ -76,13 +76,11 @@ When crafting your design, prioritize a forward-thinking approach that anticipat
 **Database > Backend > [[System Design Thought Process Flow#API Gateway |API Gateway]] > Client
 
 #### Schema Design (10 to 20)
-Create an Entity Relationship Diagram (ERD) to define clear relationships and [[Schema Design]] then discuss table [[Normalization & Denormalization]] to optimize schema and overall database performance. But once that is done you can come up with a list of general feature using collected data points of focus like for example likes for a Youtube system design you can come up with different endpoints following [[Structuring URL#URI Path Design Guidelines for REST APIs |endpoints naming convention]] then come up with estimations, also for endpoints you can keep it simple.
+Create an Entity Relationship Diagram (ERD) to define clear relationships and [[Schema Design]] then discuss table [[Normalization & Denormalization]] to optimize schema and overall database performance. 
 
 #### [[Capacity Estimation]] (5 min)
 [Indepth Video Examination of Capacity Estimation ](https://www.youtube.com/watch?v=-frNQkRz_IU)
-Focusing on network traffic and storage estimation this should be more then enough. Also round aggressively and making rough guesstimates within ranges along approximate estimates which can help streamline estimations.
-
-
+Focusing on network traffic and storage estimation this should be more then enough. Also make aggressive approximations numbers don't need to be exact just in a general range. doing this helps with streamlining estimations.
 
 
 ##### Network Traffic Estimate Examples

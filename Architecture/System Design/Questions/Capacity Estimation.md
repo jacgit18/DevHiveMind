@@ -33,6 +33,7 @@ You should be concerned with writes here only because we need to know how much d
 | 60 seconds * 60 minutes  | 3,600 seconds per hour use 4,000          | Monthly |
 | 3,600 seconds * 24 hours | 86,400 seconds per day use 80,000         | Daily   |
 | 86,400 seconds * 30 days | 2,592,000 seconds per month use 2,400,000 | Seconds |
+After developing schema you can define general feature like below following a rough [[Structuring URL#URI Path Design Guidelines for REST APIs |endpoints naming convention]].
 ##### Writes per Day
 > POST, PUT, DELETE
 
