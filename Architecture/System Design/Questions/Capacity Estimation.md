@@ -41,7 +41,7 @@ As a users we want to:
 - Post Comment
 - Post Like
 - Not in scope for storage estimation
-	- Post unlike
+	- Post unlike(if you reClick like button) would still be a post
 	- Update Comment 
 	- Delete Comment
 
@@ -83,6 +83,14 @@ As a users we want to:
 read per day = *50* * 200,000,000M  write per day = 10,000,000,000B
 
 read per sec = *50* * 2,000  write per sec = 100k
+
+Overall Traffic: (Daily active users * read per sec) * (Daily active users * writes per sec)
+
+Traffic = (200,000,000 * 100,000) + (200,000,000 * 2,000)
+
+Now calculate:
+
+Traffic = (20,000,000,000,000) + (400,000,000,000)
 
 #### Memory Cache
 caching is a way to serve read request faster use 80-20 rule for caching

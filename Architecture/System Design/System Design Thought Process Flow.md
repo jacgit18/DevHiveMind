@@ -84,7 +84,7 @@ Focusing on network traffic and storage estimation this should be more then enou
 
 
 ##### Network Traffic Estimate Examples
-- Traffic: Daily active users * average reads and writes per user
+
 - Active users: 10 million 
 - User Post viewed: 30 views per user or 30 `GET Request`
 - User Posting: 10 post `POST Request`
