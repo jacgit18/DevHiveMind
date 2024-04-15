@@ -82,17 +82,6 @@ Create an Entity Relationship Diagram (ERD) to define clear relationships and [[
 [Indepth Video Examination of Capacity Estimation ](https://www.youtube.com/watch?v=-frNQkRz_IU)
 Focusing on network traffic and storage estimation this should be more then enough. Also make aggressive approximations numbers don't need to be exact just in a general range. doing this helps with streamlining estimations.
 
-
-##### Network Traffic Estimate Examples
-
-- Active users: 10 million 
-- User Post viewed: 30 views per user or 30 `GET Request`
-- User Posting: 10 post `POST Request`
-- Active user views = (10 million \* 30) = 300 million `GET Requests`
-- Active user views total traffic per second = (300 million / 86,400 seconds) = 3,000 `GET Requests`
-- Active user post = (10 million \* 10) = 100 million `POST Request`
-- Active user post per second =  (10 million / 86,400 seconds) = 115 `POST Request`
-
 You can maybe mention leveraging ChatGPT to perform a CAP theorem analysis and a Kepner-Tregoe decision analysis, using weighted decisions to identify a concise list of choices for databases or other relevant technologies. This approach allows for a systematic evaluation of options based on their consistency, availability, and partition tolerance, as well as other criteria important to your decision-making process. By combining these analytical methods, you can efficiently narrow down your options and make informed decisions that align with your specific needs and preferences.
 
 ### Step 3: Design Deep Dive (15 - 25 minutes)
