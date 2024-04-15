@@ -130,6 +130,8 @@ Horizontal scaling is often preferred due to the limitations of vertical scaling
 
 To enhance system scaling and performance, various technologies are commonly employed to distribute traffic across [[server pools]]. Among these, technologies you have networking components like [[Reverse proxy vs API gateway vs load balancer |Reverse proxy, API gateway, and load balancer ]] that act as routers facilitating load distribution and improving fault tolerance through techniques such as [[Load Shedding]] and can be used with [[Floating IP]] to eliminate single points of failure for traffic management. Additionally, [[Consistent Hashing]] stands out as one of several methods utilized to implement a load balancer, providing efficient routing of requests while maintaining consistency in data distribution across servers.
 
+Another thing to consider is using HTTPS
+
 There is also Race Condition that can be discussed in terms of distributed systems or when multiple users or services concurrently interact with shared resources such as databases, storage, or compute instances. Like consider this [[Race Condition#Race Condition within Cloud Infrastructure |Race Condition example]] with Auto-scaling Group and Elastic Load Balancer. Race condition can occur within multiple parts of the system like databases or in this [[Microservices & Race Conditions |microservices example]]  that may access some of these cloud resources.
 
 
