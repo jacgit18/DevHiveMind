@@ -1,10 +1,11 @@
 ---
 tags: 
 author:
-  - gitUserNamePlaceHolder
+  - jacgit18
+  - chatgpt
 Comments: Placeholder comment any thing else you want to mention about the document.
 Purpose: This documentation discusses
-Status: 
+Status: Refinement
 Started: 2024-04-14
 EditDate: 
 Relates: 
@@ -18,14 +19,14 @@ Active Userbase of 200,000,000
 #### Storage
 You should be concerned with writes here only because we need to know how much data we need to store.
 
-| Unit       | Equivalent in Bytes                           | Place       |       |
-| ---------- | --------------------------------------------- | ----------- | ----- |
-| 1 Byte     | 1                                             | Hundred     | 10^2  |
-| 1 Kilobyte | 1,024 Bytes                                   | Thousand    | 10^3  |
-| 1 Megabyte | 1,024 Kilobytes = 1,048,576 Bytes             | Million     | 10^6  |
-| 1 Gigabyte | 1,024 Megabytes = 1,073,741,824 Bytes         | Billion     | 10^9  |
-| 1 Terabyte | 1,024 Gigabytes = 1,099,511,627,776 Bytes     | Trillion    | 10^12 |
-| 1 Petabyte | 1,024 Terabytes = 1,125,899,906,842,624 Bytes | Quadrillion | 10^15 |
+| Unit       | Equivalent in Bytes                           | Place                       |       |
+| ---------- | --------------------------------------------- | --------------------------- | ----- |
+| 1 Byte     | 1                                             | Hund over 2 digits          | 10^2  |
+| 1 Kilobyte | 1,024 Bytes                                   | Thous over 3 digits         | 10^3  |
+| 1 Megabyte | 1,024 Kilobytes = 1,048,576 Bytes             | Mill over 6 digits          | 10^6  |
+| 1 Gigabyte | 1,024 Megabytes = 1,073,741,824 Bytes         | Bill over 9 digits          | 10^9  |
+| 1 Terabyte | 1,024 Gigabytes = 1,099,511,627,776 Bytes     | Trillion  above 12 digits   | 10^12 |
+| 1 Petabyte | 1,024 Terabytes = 1,125,899,906,842,624 Bytes | Quadrillion above 15 digits | 10^15 |
 
 | Calculation              | Result                                    |         |
 | ------------------------ | ----------------------------------------- | ------- |
