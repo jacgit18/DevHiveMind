@@ -46,19 +46,13 @@ Copy estimation part into its own file
 |     |     |
 
 
-#### Data points of focus identified
-Ask about or come up with DAU(Daily Active User) use a easy consistent value that's easy to calculate.
-
-Define services/ endpoints think about storage then estimate request 
-
 ### Capacity Estimation
-Consider Ratios
+Ask about or come up with DAU(Daily Active User) use a easy consistent value that's easy to calculate also consider ratios.
 
 Active Userbase of 200,000,000
 
 #### Storage
-mostly concerned with writes you do reads but were focused on writes because we need to know how much we nee to store
-
+You should be concerned with writes here only because we need to know how much data we need to store.
 
 ##### Writes per Day
 > POST, PUT, DELETE
@@ -71,29 +65,27 @@ mostly concerned with writes you do reads but were focused on writes because we 
 
 Monthly total storage size needed  = average size of comments + average size of likes = 10KB  
 
-Write per day = **1M**
+Average user Post about 20 comments and 10 likes = 30 Post 
 
-write per sec = 1M/ 4000 * 20(secs in day est) = 1M/ 80K = 1M /100k = 10 writes a sec
+Write per Month = Active Userbase of 200,000,000M * 30 avg user post = 6,000,000,000B 
+
+Write per day = Write per Month/ 30 = 200,000,000M 
+
+write per sec = 200M/ 4000 * 20(secs in day est) = 200M/ 80K = 200M /100k = 2,000 writes a sec
 
 
 Daily storage for writes = Monthly total storage size needed * Write per day 
-10KB * 1M = 10(10^3) * 1(10^6) = 10^9 = 10 GB
-
+10KB * 200M = 10(10^3) * 200(10^6) = 200,000,000M = 2TB
 
 Retention Period = 5 years  
   
-5 Year Storage =  5 * 400(Rounded year day) * 10 GB(new data per day) = 2K(10^3) * 10 GB(10^9) = 20(10^12) = 20TB  
+5 Year Storage =  5 * 400(Rounded year day) * 2TB(new data per day) = 2K(10^3) * 2,000,000,000 GB(10^9) = 20(10^12) = 4PB
   
 Data replication which is typically done 3 to 5 times  
 
-Data replication = 20TB * 3 = 60TB
+Data replication = 4PB * 3 = 12TB
 
-
-Storage: Writes per day \* size of write \* time to store data(Optional)
-
-(10,000 thousand KB/day * 1.5 MB) = 14.65 MB \* 2 days = roughly 30 MB at minimum for storage since data is held for 2 days probably want a little more.
-
-Yearly storage:(15 MB * 400 days * 10 years) = 60 PB 
+Yearly storage:(12TB* 400 days) = 4800 TB = 4.8 PB 
 
 #### Network Traffic
 Read:write heavy *50*:1 ratio
@@ -173,8 +165,8 @@ Talk optimizations throughout and traffic management.
 
 # Text Elements
 # Element Links
-cqasGqqJ: [[Capacity Est#Table 1]]
-S5QN8lcM: [[Capacity Est#Table 2]]
+cqasGqqJ: [[Capacity Est temp#Table 1]]
+S5QN8lcM: [[Capacity Est temp#Table 2]]
 
 %%
 # Drawing

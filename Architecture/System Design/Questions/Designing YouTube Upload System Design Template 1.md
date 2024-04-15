@@ -187,9 +187,9 @@ Talk optimizations throughout and traffic management.
 
 # Text Elements
 # Element Links
-yApo8vnP: [[Capacity Est#Userbase]]
-cqasGqqJ: [[Capacity Est#Table 1]]
-S5QN8lcM: [[Capacity Est#Table 2]]
+yApo8vnP: [[Capacity Est temp#Userbase]]
+cqasGqqJ: [[Capacity Est temp#Table 1]]
+S5QN8lcM: [[Capacity Est temp#Table 2]]
 
 %%
 # Drawing
