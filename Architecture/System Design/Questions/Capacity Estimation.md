@@ -11,7 +11,7 @@ Relates:
 Peer Reviewed: 0
 dg-publish:
 ---
-Ask about or come up with DAU(Daily Active User) use a easy consistent value that's easy to calculate also consider ratios.
+Ask about or come up with DAU(Daily Active User) use a easy consistent value that's easy to calculate also consider ratios and metadata.
 
 Active Userbase of 200,000,000
 
@@ -65,7 +65,52 @@ Data replication = 4PB * 3 = 12TB
 
 Yearly storage:(12TB* 400 days) = 4800 TB = 4.8 PB 
 
-Side Note
+#### Network Traffic
+Read:write heavy *50*:1 ratio
+
+##### Reads per day
+> GET
+
+- Get Video views
+- Get Video likes
+- Get Comment likes
+
+read per day = *50* * 200,000,000M  write per day = 10,000,000,000B
+
+read per sec = *50* * 2,000  write per sec = 100k
+
+#### Memory Cache
+caching is a way to serve read request faster use 80-20 rule for caching
+##### cache per day
+Caching Memory = read per day * arbitrary storage action size * 20%
+
+Caching Memory = 10,000,000,000B * 10KB  * 0.2 = 10,000,000,000B(^9) * 2KB(^3) =  18.651 TB might be less since you have duplicate request being made to do the same thing 
+
+seems excessive might be issues
+
+#### [[Bandwidth Estimation |Bandwidth]] 
+InComing Data per sec(Write) = 2,000(write per sec) * 10KB(arbitrary storage action size) = 20MB per sec
+
+OutGoing Data per sec(Read) = 100k(read per sec) * 10KB(arbitrary storage action size) = 10MB per sec
+
+### App Server Estimations
+Might be asked how many app service do you need
+
+500(read per sec)/ number of request per second a single server can handle
+
+You should consider if the request is CPU bound, memory bound or I/O bound
+
+this relates to [[Request Resource Bound]]
+
+if CPU bound number of request per second a single server can handle would = number of physical cores / time to process request
+
+8 cores / 0.5 or half a sec = 16 request per sec for single server
+
+500(read per sec) / 16 request per sec for single server = 30 to 50 servers 
+
+
+This this is dependent on service hardware also the number of time it takes to process a single request.
+### Side Note
 **Language approximations**
 You have 500K words in English language  
 A line of text contains 10 words  

@@ -47,7 +47,7 @@ Copy estimation part into its own file
 
 
 ### Capacity Estimation
-Ask about or come up with DAU(Daily Active User) use a easy consistent value that's easy to calculate also consider ratios.
+Ask about or come up with DAU(Daily Active User) use a easy consistent value that's easy to calculate also consider ratios and metadata.
 
 Active Userbase of 200,000,000
 
@@ -71,6 +71,7 @@ Write per Month = Active Userbase of 200,000,000M * 30 avg user post = 6,000,000
 
 Write per day = Write per Month/ 30 = 200,000,000M 
 
+
 write per sec = 200M/ 4000 * 20(secs in day est) = 200M/ 80K = 200M /100k = 2,000 writes a sec
 
 
@@ -93,36 +94,29 @@ Read:write heavy *50*:1 ratio
 ##### Reads per day
 > GET
 
-Get Video views
+- Get Video views
+- Get Video likes
+- Get Comment likes
 
-quick math
-3,600 in a day using 4,000 easier math then round up to 100K easier math
+read per day = *50* * 200,000,000M  write per day = 10,000,000,000B
 
-
-read per day = *50* * 1M write per day = 50M
-read per sec = *50* * 10 write per sec = 500
-
-
-
+read per sec = *50* * 2,000  write per sec = 100k
 
 
 #### Memory Cache
-Consider metadata
-
 caching is a way to serve read request faster use 80-20 rule for caching
-##### Data Point 1 service
+##### cache per day
 Caching Memory = read per day * arbitrary storage action size * 20%
 
-Caching Memory = 50M  * 10KB  * 0.2 = 50M(^6) * 2KB(^3) = 100GB might be less since you have duplicate request being made to do the same thing 
+Caching Memory = 10,000,000,000B * 10KB  * 0.2 = 10,000,000,000B(^9) * 2KB(^3) =  18.651 TB might be less since you have duplicate request being made to do the same thing 
 
-##### Data Point 2 service
+seems excessive might be issues
 
 #### Bandwidth
-InComing Data per sec(Write) = 10(write per sec) * 10KB(arbitrary storage action size) = 100KB per sec
+InComing Data per sec(Write) = 2,000(write per sec) * 10KB(arbitrary storage action size) = 20MB per sec
 
-OutGoing Data per sec(Read) = 500(read per sec) * 10KB(arbitrary storage action size) = 5MB per sec
+OutGoing Data per sec(Read) = 100k(read per sec) * 10KB(arbitrary storage action size) = 10MB per sec
 
-500 * 10^3 = 500 * 1000 = 500,000 = 5MB
 
 
 ### App Server Estimations
@@ -131,8 +125,6 @@ Might be asked how many app service do you need
 500(read per sec)/ number of request per second a single server can handle
 
 You should consider if the request is CPU bound, memory bound or I/O bound
-
-this relates to [[Request Resource Bound]]
 
 if CPU bound number of request per second a single server can handle would = number of physical cores / time to process request
 

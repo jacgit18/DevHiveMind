@@ -84,10 +84,6 @@ Traffic & Storage should estimation be more then enough but also keep estimation
 
 
 ##### Network Traffic Estimate Examples
-During the interview, ask about the projected daily active user base. Additionally, delve into the user behavior to understand the breakdown between service requests, distinguishing between reads and writes. This will provide insight into the system's workload distribution, indicating whether it leans towards a write-heavy scenario, where the ratio of writes to reads is significant, such as 100 writes for every 20 reads, or vice versa. 
-
->side note users tend to read(get)/consume then write(post)/produce data in general.
-
 - Traffic: Daily active users * average reads and writes per user
 - Active users: 10 million 
 - User Post viewed: 30 views per user or 30 `GET Request`
@@ -102,11 +98,6 @@ During the interview, ask about the projected daily active user base. Additional
 - Cache for Instagram highlights:  (300 million requests \* 500 bytes) = 150 GB
 - Adjusted cache: (20% of 150 GB) = 30 GB
 - Total memory: (30 GB \* 3 for replication) = 90 GB 
-
-##### [[Bandwidth Estimation]] Examples
-> Once you determine other estimation you can address this last or ask about potential historical traffic using that as a baseline.
-- Bandwidth required: 300 million(Active users) * 1.5 MB = 450,000 GB
-- Bandwidth per second: 450,000 GB / 86,400 seconds in a day = 5.2 GB 
 
 You can leverage ChatGPT to perform a CAP theorem analysis and a Kepner-Tregoe decision analysis, using weighted decisions to identify a concise list of choices for databases or other relevant technologies. This approach allows for a systematic evaluation of options based on their consistency, availability, and partition tolerance, as well as other criteria important to your decision-making process. By combining these analytical methods, you can efficiently narrow down your options and make informed decisions that align with your specific needs and preferences.
 
