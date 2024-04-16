@@ -113,6 +113,8 @@ Caching Memory = read per day * AVG post total size * 20%
 
 Caching Memory = 172.5TB * 300 bytes  * 0.2 = 172.5TB * 300 bytes = 2,070TB  might be less since you have duplicate request being made to do the same thing 
 
+Something wrong cache to high
+
 Total memory: (Caching Memory * 3 for replication) = 6,210 TB
 
 
@@ -124,17 +126,16 @@ OutGoing Data per sec(Read) = 0.25(read per sec) * 300 bytes(arbitrary storage a
 ### App Server Estimations
 Might be asked how many app service do you need
 
-500(read per sec)/ number of request per second a single server can handle
+You should consider if the request is CPU bound, memory bound or I/O bound this relates to [[Request Resource Bound]]. 
 
-You should consider if the request is CPU bound, memory bound or I/O bound
+If CPU bound number of request per second for a single server which is dependent on service hardware also the number of time it takes to process a single request.
 
-this relates to [[Request Resource Bound]]
-
-if CPU bound number of request per second a single server can handle would = number of physical cores / time to process request
-
-8 cores / 0.5 or half a sec = 16 request per sec for single server
-
-500(read per sec) / 16 request per sec for single server = 30 to 50 servers 
+request per sec for single server = 8 physical cores / 0.5 or half a sec = 16 
 
 
-This this is dependent on service hardware also the number of time it takes to process a single request.
+Number of Servers = 500(read per sec)/ number of request per second a single server can handle
+
+Number of Servers = 500(read per sec) / 16 request per sec for single server = 30 to 50 servers 
+
+
+
