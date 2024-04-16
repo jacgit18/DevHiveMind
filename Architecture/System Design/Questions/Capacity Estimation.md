@@ -51,6 +51,16 @@ Lets Assume were dealing with English comments there are about 500K words in the
 
 A comment might contain 20 to 40 words and each word might have a length of 5 characters thus each comment will range about 100 to 200 characters. Assuming each character is approximately 1 byte, the average size of a YouTube comment in English would be around 100 to 200 bytes.
 
+
+Number of comments per month from active users = (30 posts * 200,000,000 users) Number of likes per month from active users = (30 posts * 200,000,000 users)
+
+Now, we calculate the total storage size needed:
+
+Total storage size for comments = (200 bytes * number of comments per month from active users) Total storage size for likes = (100 bytes * number of likes per month from active users)
+
+Total storage size needed = Total storage size for comments + Total storage size for likes
+
+
 Active User Number of comments per month = 30 
 
 posts Number of likes per month = 30 posts
@@ -63,9 +73,16 @@ Monthly total storage size needed = (200 bytes * number of comments per month) +
 
 We're given that there are 30 posts per month per user, consisting of comments and likes. Assuming each post includes a comment and a like:
 
-Number of comments per month = 30 posts Number of likes per month = 30 posts
+2:1
+
+Number of comments per month = 50 posts 
+
+Number of likes per month = 100 posts
 
 Substituting these values into the equation:
+
+
+
 
 Monthly total storage size needed = (200 bytes * 30) + (100 bytes * 30)
 
@@ -73,8 +90,6 @@ Monthly total storage size needed = (200 bytes * 30) + (100 bytes * 30)
 
 
 
-
-Average user Post about 20 comments and 10 likes = 30 Post 
 
 Write per Month = Active Userbase of 200M * 30 avg user post = 6,000,000,000B 
 
