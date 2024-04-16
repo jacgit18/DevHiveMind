@@ -10,11 +10,7 @@ AVG comments size =
 40(words) * 5(char) * 1byte = 
 200 byte(adjusted for meta data)
 
-Total size = round to 300 bytes 
+Total post size per user = round to 300 bytes 
 
-Total monthly post = 
-AU size 200M * like size 90 byte
-+
-AU size 200M + comment size 200 byte
 
-18,000,000,000 + 
+Overall post size p = AU size 200M * Total post size 300 bytes = 60,000,000,000 bytes = 56 GB
