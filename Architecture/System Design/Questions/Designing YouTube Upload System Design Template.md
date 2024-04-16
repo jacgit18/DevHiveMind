@@ -49,19 +49,22 @@ Copy estimation part into its own file
 ### Capacity Estimation
 Ask about or come up with DAU(Daily Active User) use a easy consistent value that's easy to calculate also consider ratios and metadata.
 
-Active Userbase of 200,000,000
+Assume we have a Active Userbase of 200,000,000
 
 #### Storage
 You should be concerned with writes here only because we need to know how much data we need to store.
 
 ##### Writes per Day
 > POST, PUT, DELETE
+
+As a users we want to:
 - Post Comment
 - Post Like
 - Not in scope for storage estimation
-	- Post unlike
+	- Post unlike(if you reClick like button) would still be a post
 	- Update Comment 
 	- Delete Comment
+
 
 Monthly total storage size needed  = average size of comments + average size of likes = 10KB  
 
