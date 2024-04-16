@@ -17,23 +17,21 @@ dg-publish:
 ---
 Can expand on this system week by week growing it or mock by mock interview in a week.
 
-| Unit       | Equivalent in Bytes                           | Place       |       |
-| ---------- | --------------------------------------------- | ----------- | ----- |
-| 1 Byte     | 1                                             | Hundred     | 10^2  |
-| 1 Kilobyte | 1,024 Bytes                                   | Thousand    | 10^3  |
-| 1 Megabyte | 1,024 Kilobytes = 1,048,576 Bytes             | Million     | 10^6  |
-| 1 Gigabyte | 1,024 Megabytes = 1,073,741,824 Bytes         | Billion     | 10^9  |
-| 1 Terabyte | 1,024 Gigabytes = 1,099,511,627,776 Bytes     | Trillion    | 10^12 |
-| 1 Petabyte | 1,024 Terabytes = 1,125,899,906,842,624 Bytes | Quadrillion | 10^15 |
-|            |                                               |             |       |
+| Unit       | Equivalent in Bytes                           | Place                  |       |
+| ---------- | --------------------------------------------- | ---------------------- | ----- |
+| 1 Byte     | 1                                             | Hund over 2 digits     | 10^2  |
+| 1 Kilobyte | 1,024 Bytes                                   | Thous over 3 digits    | 10^3  |
+| 1 Megabyte | 1,024 Kilobytes = 1,048,576 Bytes             | Milli over 6 digits    | 10^6  |
+| 1 Gigabyte | 1,024 Megabytes = 1,073,741,824 Bytes         | Billi over 9 digits    | 10^9  |
+| 1 Terabyte | 1,024 Gigabytes = 1,099,511,627,776 Bytes     | Trilli over 12 digits  | 10^12 |
+| 1 Petabyte | 1,024 Terabytes = 1,125,899,906,842,624 Bytes | Quadril over 15 digits | 10^15 |
 
-### Time
 
-| Calculation              | Result                      |
-| ------------------------ | --------------------------- |
-| 60 seconds * 60 minutes  | 3,600 seconds per hour      |
-| 3,600 seconds * 24 hours | 86,400 seconds per day      |
-| 86,400 seconds * 30 days | 2,592,000 seconds per month |
+| Calculation              | Result                                    |         |
+| ------------------------ | ----------------------------------------- | ------- |
+| 60 seconds * 60 minutes  | 3,600 seconds per hour use 4,000          | Monthly |
+| 3,600 seconds * 24 hours | 86,400 seconds per day use 80,000         | Daily   |
+| 86,400 seconds * 30 days | 2,592,000 seconds per month use 2,400,000 | Seconds |
 
 
 

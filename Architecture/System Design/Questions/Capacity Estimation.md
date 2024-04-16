@@ -14,7 +14,7 @@ dg-publish: true
 ---
 Ask about or come up with DAU(Daily Active User) use a easy consistent value that's easy to calculate also consider ratios and metadata.
 
-Active Userbase of 200,000,000
+Assume we have a Active Userbase of 200,000,000
 
 #### Storage
 You should be concerned with writes here only because we need to know how much data we need to store.
@@ -28,11 +28,13 @@ You should be concerned with writes here only because we need to know how much d
 | 1 Terabyte | 1,024 Gigabytes = 1,099,511,627,776 Bytes     | Trilli over 12 digits  | 10^12 |
 | 1 Petabyte | 1,024 Terabytes = 1,125,899,906,842,624 Bytes | Quadril over 15 digits | 10^15 |
 
+
 | Calculation              | Result                                    |         |
 | ------------------------ | ----------------------------------------- | ------- |
 | 60 seconds * 60 minutes  | 3,600 seconds per hour use 4,000          | Monthly |
 | 3,600 seconds * 24 hours | 86,400 seconds per day use 80,000         | Daily   |
 | 86,400 seconds * 30 days | 2,592,000 seconds per month use 2,400,000 | Seconds |
+
 After developing schema you can define general feature like below following a rough [[Structuring URL#URI Path Design Guidelines for REST APIs |endpoints naming convention]].
 ##### Writes per Day
 > POST, PUT, DELETE
