@@ -45,3 +45,12 @@ Overall Traffic = (200,000,000 * 0.25) + (200,000,000 * 0.005)
 
 Overall Traffic = (50,000,000) + (100,000) = 50,100,000 bytes = 47.79MB = 50MBps
 
+#### Memory Cache
+
+caching is a way to serve read request faster use 80-20 rule for caching
+
+Caching Memory = read per day * AVG post total size * 20%
+
+Caching Memory = 172.5TB * 300 bytes  * 0.2 = 172.5TB * 300 bytes = 2,070TB  might be less since you have duplicate request being made to do the same thing 
+
+Total memory: (Caching Memory * 3 for replication) = 6,210 TB

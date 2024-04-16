@@ -108,12 +108,12 @@ Overall Traffic = (50,000,000) + (100,000) = 50,100,000 bytes = 47.79MB = 50MBps
 #### Memory Cache
 
 caching is a way to serve read request faster use 80-20 rule for caching
-##### Cache 
+
 Caching Memory = read per day * AVG post total size * 20%
 
 Caching Memory = 172.5TB * 300 bytes  * 0.2 = 172.5TB * 300 bytes = 2,070TB  might be less since you have duplicate request being made to do the same thing 
 
-Total memory: (Caching Memory * 3 for replication) = 
+Total memory: (Caching Memory * 3 for replication) = 6,210 TB
 
 
 #### [[Bandwidth Estimation |Bandwidth]] 
@@ -138,23 +138,3 @@ if CPU bound number of request per second a single server can handle would = num
 
 
 This this is dependent on service hardware also the number of time it takes to process a single request.
-
-### Side Note
-
-**Media approximation**
-HD image 3MB  intstagram or facebook post
-Size of image = height x width x bit depth
-1280 x 720 x 24bits or 3 Bytes
-1k * 1K * 3 = 3,000,000 = 3MB
-
-Profile image(300x300) 300KB  
-1 Min HD Video = 50MB
-
-Video size is calculated by
-FrameSize x FrameRate(FPS) x Compression Ratio x Video Duration(# Sec)
-
-3MB * 30FPS * 1/100 * 60(sec) = 90MB * 1/100 * 60 = 90MB *  60 /100 = 5,400MB/ 100 = 54MB = 50MB
-
-  
-For something like YouTube you would probably use other resolutions like: 480p, 360P, 240P, 144P
-

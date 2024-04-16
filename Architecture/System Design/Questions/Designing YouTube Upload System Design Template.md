@@ -50,6 +50,24 @@ Ask about or come up with DAU(Daily Active User) use a easy consistent value tha
 
 Assume we have a Active Userbase of 200,000,000
 
+**Media approximation**
+HD image 3MB  intstagram or facebook post
+Size of image = height x width x bit depth
+1280 x 720 x 24bits or 3 Bytes
+1k * 1K * 3 = 3,000,000 = 3MB
+
+Profile image(300x300) 300KB  
+1 Min HD Video = 50MB
+
+Video size is calculated by
+FrameSize x FrameRate(FPS) x Compression Ratio x Video Duration(# Sec)
+
+3MB * 30FPS * 1/100 * 60(sec) = 90MB * 1/100 * 60 = 90MB *  60 /100 = 5,400MB/ 100 = 54MB = 50MB
+
+  
+For something like YouTube you would probably use other resolutions like: 480p, 360P, 240P, 144P
+
+
 #### Storage
 You should be concerned with writes here only because we need to know how much data we need to store.
 
@@ -84,10 +102,10 @@ Monthly Total storage size needed = AU Number of likes per month + AU Number of 
 
 Total Monthly Post = 100 monthly likes + 50 monthly comments = 150
 
-Total writes per day = 150 Total Monthly Post / 30 = 5 writes
+Total writes per day = 200,000,000 AU * 150 Total Monthly Post / 30 = 1,000,000,000 bytes
 
-Total writes per day in  bytes
-3,800,000,000,000 bytes > 3,000,000,000,000 bytes / 30 = 100,000,000 bytes rough approximation or 95.37 MB or 90 MB
+Total writes per day in bytes
+3,800,000,000,000 bytes > 3,000,000,000,000 bytes / 30 = 100,000,000 bytes rough approximation or 95.37 MB or 90MB
 
 write per sec = 5/ 4000 * 20(secs in day est) = 5/ 80K = 5 /100k = 0.005 writes a sec
 
@@ -99,6 +117,7 @@ Data replication =  3.8 TB * 3 = 11.4TB
 Year Storage =  1 * 400(Rounded year day) * 3.8 TB = 400 * 3.8 TB = 1520 TB
 
 5 Year Storage = Year Storage * 5 = 7600TB
+
 
 #### Network Traffic
 Read:Write *50*:1 read heavy ratio
@@ -123,17 +142,18 @@ Overall Traffic = (50,000,000) + (100,000) = 50,100,000 bytes = 47.79MB = 50MBps
 
 #### Memory Cache
 caching is a way to serve read request faster use 80-20 rule for caching
-##### Cache
-Caching Memory = read per day * arbitrary storage action size * 20%
 
-Caching Memory = 10,000,000,000B * 10KB  * 0.2 = 10,000,000,000B(^9) * 2KB(^3) =  18.651 TB might be less since you have duplicate request being made to do the same thing 
+Caching Memory = read per day * AVG post total size * 20%
 
-seems excessive might be issues
+Caching Memory = 172.5TB * 300 bytes  * 0.2 = 172.5TB * 300 bytes = 2,070TB  might be less since you have duplicate request being made to do the same thing 
+
+Total memory: (Caching Memory * 3 for replication) = 6,210 TB
+
 
 #### Bandwidth
-InComing Data per sec(Write) = 2,000(write per sec) * 10KB(arbitrary storage action size) = 20MB per sec
+InComing Data per sec(Write) = 0.005(write per sec) * 300 bytes(arbitrary storage action size) = 1.5 bytes per sec
 
-OutGoing Data per sec(Read) = 100k(read per sec) * 10KB(arbitrary storage action size) = 10MB per sec
+OutGoing Data per sec(Read) = 0.25(read per sec) * 300 bytes(arbitrary storage action size) = 75 bytes per sec
 
 
 
@@ -153,6 +173,22 @@ if CPU bound number of request per second a single server can handle would = num
 
 This this is dependent on service hardware also the number of time it takes to process a single request.
 
+
+| Unit       | Equivalent in Bytes                           | Place                  |       |
+| ---------- | --------------------------------------------- | ---------------------- | ----- |
+| 1 Byte     | 1                                             | Hund over 2 digits     | 10^2  |
+| 1 Kilobyte | 1,024 Bytes                                   | Thous over 3 digits    | 10^3  |
+| 1 Megabyte | 1,024 Kilobytes = 1,048,576 Bytes             | Milli over 6 digits    | 10^6  |
+| 1 Gigabyte | 1,024 Megabytes = 1,073,741,824 Bytes         | Billi over 9 digits    | 10^9  |
+| 1 Terabyte | 1,024 Gigabytes = 1,099,511,627,776 Bytes     | Trilli over 12 digits  | 10^12 |
+| 1 Petabyte | 1,024 Terabytes = 1,125,899,906,842,624 Bytes | Quadril over 15 digits | 10^15 |
+
+
+| Calculation              | Result                                    |         |
+| ------------------------ | ----------------------------------------- | ------- |
+| 60 seconds * 60 minutes  | 3,600 seconds per hour use 4,000          | Monthly |
+| 3,600 seconds * 24 hours | 86,400 seconds per day use 80,000         | Daily   |
+| 86,400 seconds * 30 days | 2,592,000 seconds per month use 2,400,000 | Seconds |
 
 ## Architecture
 Typically Microservices 
