@@ -116,9 +116,8 @@ Caching Memory = 172.5TB * 300 bytes  * 0.2 = 172.5TB * 300 bytes = 2,070TB  mig
 Total memory: (Caching Memory * 3 for replication) = 
 
 
-
 #### [[Bandwidth Estimation |Bandwidth]] 
-InComing Data per sec(Write) = 2,000(write per sec) * 10KB(arbitrary storage action size) = 20MB per sec
+InComing Data per sec(Write) = 2,000(write per sec) * 300 bytes(arbitrary storage action size) = 20MB per sec
 
 OutGoing Data per sec(Read) = 100k(read per sec) * 10KB(arbitrary storage action size) = 10MB per sec
 
