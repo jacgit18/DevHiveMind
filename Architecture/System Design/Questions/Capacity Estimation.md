@@ -51,7 +51,7 @@ Monthly total storage size needed  = average size of comments + average size of 
 
 Average user Post about 20 comments and 10 likes = 30 Post 
 
-Write per Month = Active Userbase of 200,000,000M * 30 avg user post = 6,000,000,000B 
+Write per Month = Active Userbase of 200M * 30 avg user post = 6,000,000,000B 
 
 Write per day = Write per Month/ 30 = 200,000,000M 
 

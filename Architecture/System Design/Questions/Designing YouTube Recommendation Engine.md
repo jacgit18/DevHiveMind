@@ -252,7 +252,7 @@ Now, add the sizes together:
 
 Total Storage Needed = 12,695.3125 MB + 25,600,000 MB + 114.44 MB
 
-Total Storage Needed = 25,612,809.7525 MB
+Total Storage Needed = 25,612,809.7525 MB  - 114.44 MB
 
 Original calculation was less then a 32GB flash drive not accurate real world estimation but just need to adjust initial value
 
