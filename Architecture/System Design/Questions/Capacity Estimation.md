@@ -47,7 +47,11 @@ As a users we want to:
 	- Update Comment 
 	- Delete Comment
 
-Monthly total storage size needed  = average size of comments + average size of likes = 10KB  
+Lets Assume were dealing with English comments there are about 500K words in the English language.
+
+A comment might contain 20 to 40 words and each word might have a length of 5 characters thus each comment will range about 100 to 200 characters. Assuming each character is approximately 1 byte, the average size of a YouTube comment in English would be around 100 to 200 bytes.
+
+Monthly total storage size needed  = 200 Bytes average size of comments + average size of likes = 10KB  
 
 Average user Post about 20 comments and 10 likes = 30 Post 
 
@@ -129,11 +133,7 @@ if CPU bound number of request per second a single server can handle would = num
 This this is dependent on service hardware also the number of time it takes to process a single request.
 
 ### Side Note
-**Language approximations**
-You have 500K words in English language  
-A line of text contains 10 words  
-A word contains 5 characters which is 5 bytes  
-  
+
 **Media approximation**
 HD image 3MB  intstagram or facebook post
 Size of image = height x width x bit depth

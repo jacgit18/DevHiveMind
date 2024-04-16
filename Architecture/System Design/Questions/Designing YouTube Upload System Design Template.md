@@ -44,7 +44,11 @@ Copy estimation part into its own file
 |     |     |
 |     |     |
 |     |     |
-
+**Language approximations**
+You have 500K words in English language  
+A line of text contains 10 words  
+A word contains 5 characters which is 5 bytes  
+  
 
 ### Capacity Estimation
 Ask about or come up with DAU(Daily Active User) use a easy consistent value that's easy to calculate also consider ratios and metadata.
