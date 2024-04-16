@@ -59,6 +59,8 @@ AVG likes size = 90 byte(adjusted for meta data)
 AVG comments size = 40(words) * 5(char) * 1byte = 200 byte(adjusted for meta data)
 AVG post total size = round to 300 bytes 
 
+
+
 AU Number of likes per month = AVG likes * AVG likes size * 200M Active User = 1,800,000,000,000 bytes = 1.8TB
 
 AU Number of comments per month = AVG comments * AVG comments size * 200M Active User = 2,000,000,000,000 bytes = 2TB
