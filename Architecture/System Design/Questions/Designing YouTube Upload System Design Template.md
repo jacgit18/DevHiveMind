@@ -160,18 +160,14 @@ OutGoing Data per sec(Read) = 0.25(read per sec) * 300 bytes(arbitrary storage a
 ### App Server Estimations
 Might be asked how many app service do you need
 
-500(read per sec)/ number of request per second a single server can handle
+request per sec for single server = # cpu physical cores / 0.5 or half a sec = 16 
 
-You should consider if the request is CPU bound, memory bound or I/O bound
+request per sec for single server = 8 physical cores / 0.5 or half a sec = 16 
 
-if CPU bound number of request per second a single server can handle would = number of physical cores / time to process request
+Number of Servers = 500(read per sec)/ number of request per second a single server can handle
 
-8 cores / 0.5 or half a sec = 16 request per sec for single server
+Number of Servers = 500(read per sec) / 16 request per sec for single server = 30 to 50 servers 
 
-500(read per sec) / 16 request per sec for single server = 30 to 50 servers 
-
-
-This this is dependent on service hardware also the number of time it takes to process a single request.
 
 
 | Unit       | Equivalent in Bytes                           | Place                  |       |

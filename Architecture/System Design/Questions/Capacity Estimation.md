@@ -117,7 +117,6 @@ Something wrong cache to high
 
 Total memory: (Caching Memory * 3 for replication) = 6,210 TB
 
-
 #### [[Bandwidth Estimation |Bandwidth]] 
 InComing Data per sec(Write) = 0.005(write per sec) * 300 bytes(arbitrary storage action size) = 1.5 bytes per sec
 
@@ -128,10 +127,11 @@ Might be asked how many app service do you need
 
 You should consider if the request is CPU bound, memory bound or I/O bound this relates to [[Request Resource Bound]]. 
 
-If CPU bound number of request per second for a single server which is dependent on service hardware also the number of time it takes to process a single request.
+If CPU bound the number of request per second for a single server would both depend on the server's hardware capabilities and the time it takes to process each single request.
+
+request per sec for single server = # cpu physical cores / 0.5 or half a sec = 16 
 
 request per sec for single server = 8 physical cores / 0.5 or half a sec = 16 
-
 
 Number of Servers = 500(read per sec)/ number of request per second a single server can handle
 
