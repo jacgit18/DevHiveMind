@@ -36,7 +36,7 @@ You should be concerned with writes here only because we need to know how much d
 | 86,400 seconds * 30 days | 2,592,000 seconds per month use 2,400,000 | Seconds |
 
 After developing schema you can define general feature like below following a rough [[Structuring URL#URI Path Design Guidelines for REST APIs |endpoints naming convention]].
-##### Writes per Day
+##### Writes
 > POST, PUT, DELETE
 
 As a users we want to:
@@ -51,70 +51,43 @@ Lets Assume were dealing with English comments there are about 500K words in the
 
 A comment might contain 20 to 40 words and each word might have a length of 5 characters thus each comment will range about 100 to 200 characters. Assuming each character is approximately 1 byte, the average size of a YouTube comment in English would be around 100 to 200 bytes.
 
+**Lets say we have 2:1 ratio of Likes to Comments**
+AVG likes per user in month = 100 posts 
+AVG comments per user in month = 50 posts 
 
-Number of comments per month from active users = (30 posts * 200,000,000 users) Number of likes per month from active users = (30 posts * 200,000,000 users)
+AVG likes size = 90 byte(adjusted for meta data)
+AVG comments size = 40 * 5 * 1 = 200 byte(adjusted for meta data)
+AVG post total size = round to 300 bytes 
 
-Now, we calculate the total storage size needed:
+AU Number of likes per month = AVG likes * AVG likes  size * Active User = 1,800,000,000,000 bytes = 1.8TB
 
-Total storage size for comments = (200 bytes * number of comments per month from active users) Total storage size for likes = (100 bytes * number of likes per month from active users)
+AU Number of comments per month = AVG comments * AVG comments size * Active User = 2,000,000,000,000 bytes = 2TB
 
-Total storage size needed = Total storage size for comments + Total storage size for likes
+Monthly Total storage size needed = AU Number of likes per month + AU Number of comments per month = 3,800,000,000,000 bytes = 3.8TB
 
+Total Monthly Post = 100 monthly likes + 50 monthly comments = 150
 
-Active User Number of comments per month = 30 
+Total writes per day = 200,000,000 AU * 150 Total Monthly Post / 30 = 1,000,000,000 bytes
 
-posts Number of likes per month = 30 posts
+Total writes per day in bytes
+3,800,000,000,000 bytes > 3,000,000,000,000 bytes / 30 = 100,000,000 bytes rough approximation or 95.37 MB or 90MB
 
+write per sec = 5/ 4000 * 20(secs in day est) = 5/ 80K = 5 /100k = 0.005 writes a sec
 
-Monthly total storage size needed  = 200 Bytes average size of comments(including metadata) + 100 Bytes average size of likes(including metadata) * 30 =  
-
-
-Monthly total storage size needed = (200 bytes * number of comments per month) + (100 bytes * number of likes per month)
-
-We're given that there are 30 posts per month per user, consisting of comments and likes. Assuming each post includes a comment and a like:
-
-2:1
-
-Number of comments per month = 50 posts 
-
-Number of likes per month = 100 posts
-
-Substituting these values into the equation:
-
-
-
-
-Monthly total storage size needed = (200 bytes * 30) + (100 bytes * 30)
-
-= (6000 bytes) + (3000 bytes) = 9000 bytes
-
-
-
-
-Write per Month = Active Userbase of 200M * 30 avg user post = 6,000,000,000B 
-
-Write per day = Write per Month/ 30 = 200,000,000M 
-
-write per sec = 200M/ 4000 * 20(secs in day est) = 200M/ 80K = 200M /100k = 2,000 writes a sec
-
-
-Daily storage for writes = Monthly total storage size needed * Write per day 
-10KB * 200M = 10(10^3) * 200(10^6) = 200,000,000M = 2TB
-
-Retention Period = 5 years  
-  
-5 Year Storage =  5 * 400(Rounded year day) * 2TB(new data per day) = 2K(10^3) * 2,000,000,000 GB(10^9) = 20(10^12) = 4PB
-  
 Data replication which is typically done 3 to 5 times  
 
-Data replication = 4PB * 3 = 12TB
+Data replication =  3.8 TB * 3 = 11.4TB
 
-Yearly storage:(12TB* 400 days) = 4800 TB = 4.8 PB 
 
+Year Storage =  1 * 400(Rounded year day) * 3.8 TB = 400 * 3.8 TB = 1520 TB
+
+5 Year Storage = Year Storage * 5 = 7600TB
+
+>When calculating storage for multiple years, it's essential to consider potential growth in data volume over time. A linear projection may not accurately reflect real-world growth patterns.
 #### Network Traffic
 Read:Write *50*:1 read heavy ratio
 
-##### Reads per day
+##### Reads
 > GET
 
 As a users we want to:
@@ -122,28 +95,27 @@ As a users we want to:
 - Get Video likes
 - Get Comment likes
 
-read per day = *50* * 200,000,000M  write per day = 10,000,000,000B
+read per day = *50* * 3,800,000,000,000 bytes write per day = 190,000,000,000 bytes = 172.5TB
 
-read per sec = *50* * 2,000  write per sec = 100k
+read per sec = *50* * 0.005 write per sec = 0.25
 
 Overall Traffic: (Daily active users * read per sec) * (Daily active users * writes per sec)
 
-Traffic = (200,000,000 * 100,000) + (200,000,000 * 2,000)
+Overall Traffic = (200,000,000 * 0.25) + (200,000,000 * 0.005)
 
-Now calculate:
-
-Traffic = (20,000,000,000,000) + (400,000,000,000)
+Overall Traffic = (50,000,000) + (100,000) = 50,100,000 bytes = 47.79MB = 50MBps
 
 #### Memory Cache
-caching is a way to serve read request faster use 80-20 rule for caching
-##### cache per day
-Caching Memory = read per day * arbitrary storage action size * 20%
 
-Caching Memory = 10,000,000,000B * 10KB  * 0.2 = 10,000,000,000B(^9) * 2KB(^3) =  18.651 TB might be less since you have duplicate request being made to do the same thing 
+caching is a way to serve read request faster use 80-20 rule for caching
+##### Cache 
+Caching Memory = read per day * AVG post total size * 20%
+
+Caching Memory = 172.5TB * 300 bytes  * 0.2 = 172.5TB * 300 bytes = 2,070TB  might be less since you have duplicate request being made to do the same thing 
 
 Total memory: (Caching Memory * 3 for replication) = 
 
-seems excessive might be issues
+
 
 #### [[Bandwidth Estimation |Bandwidth]] 
 InComing Data per sec(Write) = 2,000(write per sec) * 10KB(arbitrary storage action size) = 20MB per sec

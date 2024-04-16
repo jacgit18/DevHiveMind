@@ -16,8 +16,6 @@ dg-publish: null
 # Question
 ## Requirements Gathering
 
-Copy estimation part into its own file 
-
 ### Userbase
 
 #### Schema
@@ -55,7 +53,7 @@ Assume we have a Active Userbase of 200,000,000
 #### Storage
 You should be concerned with writes here only because we need to know how much data we need to store.
 
-##### Writes per Day
+##### Writes
 > POST, PUT, DELETE
 
 As a users we want to:
@@ -66,50 +64,66 @@ As a users we want to:
 	- Update Comment 
 	- Delete Comment
 
+Lets Assume were dealing with English comments there are about 500K words in the English language.
 
-Monthly total storage size needed  = average size of comments + average size of likes = 10KB  
+A comment might contain 20 to 40 words and each word might have a length of 5 characters thus each comment will range about 100 to 200 characters. Assuming each character is approximately 1 byte, the average size of a YouTube comment in English would be around 100 to 200 bytes.
 
-Average user Post about 20 comments and 10 likes = 30 Post 
+**Lets say we have 2:1 ratio of Likes to Comments**
+AVG likes per user in month = 100 posts 
+AVG comments per user in month = 50 posts 
 
-Write per Month = Active Userbase of 200,000,000M * 30 avg user post = 6,000,000,000B 
+AVG likes size = 90 byte(adjusted for meta data)
+AVG comments size = 40 * 5 * 1 = 200 byte(adjusted for meta data)
+AVG post total size = round to 300 bytes 
 
-Write per day = Write per Month/ 30 = 200,000,000M 
+AU Number of likes per month = AVG likes * AVG likes  size * Active User = 1,800,000,000,000 bytes = 1.8TB
 
+AU Number of comments per month = AVG comments * AVG comments size * Active User = 2,000,000,000,000 bytes = 2TB
 
-write per sec = 200M/ 4000 * 20(secs in day est) = 200M/ 80K = 200M /100k = 2,000 writes a sec
+Monthly Total storage size needed = AU Number of likes per month + AU Number of comments per month = 3,800,000,000,000 bytes = 3.8TB
 
+Total Monthly Post = 100 monthly likes + 50 monthly comments = 150
 
-Daily storage for writes = Monthly total storage size needed * Write per day 
-10KB * 200M = 10(10^3) * 200(10^6) = 200,000,000M = 2TB
+Total writes per day = 150 Total Monthly Post / 30 = 5 writes
 
-Retention Period = 5 years  
-  
-5 Year Storage =  5 * 400(Rounded year day) * 2TB(new data per day) = 2K(10^3) * 2,000,000,000 GB(10^9) = 20(10^12) = 4PB
-  
+Total writes per day in  bytes
+3,800,000,000,000 bytes > 3,000,000,000,000 bytes / 30 = 100,000,000 bytes rough approximation or 95.37 MB or 90 MB
+
+write per sec = 5/ 4000 * 20(secs in day est) = 5/ 80K = 5 /100k = 0.005 writes a sec
+
 Data replication which is typically done 3 to 5 times  
 
-Data replication = 4PB * 3 = 12TB
+Data replication =  3.8 TB * 3 = 11.4TB
 
-Yearly storage:(12TB* 400 days) = 4800 TB = 4.8 PB 
+
+Year Storage =  1 * 400(Rounded year day) * 3.8 TB = 400 * 3.8 TB = 1520 TB
+
+5 Year Storage = Year Storage * 5 = 7600TB
 
 #### Network Traffic
-Read:write heavy *50*:1 ratio
+Read:Write *50*:1 read heavy ratio
 
-##### Reads per day
+##### Reads
 > GET
 
+As a users we want to:
 - Get Video views
 - Get Video likes
 - Get Comment likes
 
-read per day = *50* * 200,000,000M  write per day = 10,000,000,000B
+read per day = *50* * 3,800,000,000,000 bytes write per day = 190,000,000,000 bytes = 172.5TB
 
-read per sec = *50* * 2,000  write per sec = 100k
+read per sec = *50* * 0.005 write per sec = 0.25
 
+Overall Traffic: (Daily active users * read per sec) * (Daily active users * writes per sec)
+
+Overall Traffic = (200,000,000 * 0.25) + (200,000,000 * 0.005)
+
+Overall Traffic = (50,000,000) + (100,000) = 50,100,000 bytes = 47.79MB = 50MBps
 
 #### Memory Cache
 caching is a way to serve read request faster use 80-20 rule for caching
-##### cache per day
+##### Cache
 Caching Memory = read per day * arbitrary storage action size * 20%
 
 Caching Memory = 10,000,000,000B * 10KB  * 0.2 = 10,000,000,000B(^9) * 2KB(^3) =  18.651 TB might be less since you have duplicate request being made to do the same thing 
