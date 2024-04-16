@@ -12,5 +12,6 @@
     "type": "hobby"
   },
   "duration": 0,
-  "version": "2.0.1"
+  "debug": false,
+  "version": "2.1.1"
 }

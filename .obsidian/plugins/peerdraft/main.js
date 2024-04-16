@@ -4272,8 +4272,8 @@ var iterateDeletedStructs = (transaction, ds, f) => ds.clients.forEach((deletes,
     transaction.doc.store.clients.get(clientid)
   );
   for (let i = 0; i < deletes.length; i++) {
-    const del = deletes[i];
-    iterateStructs(transaction, structs, del.clock, del.len, f);
+    const del2 = deletes[i];
+    iterateStructs(transaction, structs, del2.clock, del2.len, f);
   }
 });
 var findIndexDS = (dis, clock) => {
@@ -7889,8 +7889,8 @@ var ItemTextListPosition = class {
     this.right = this.right.right;
   }
 };
-var findNextPosition = (transaction, pos, count) => {
-  while (pos.right !== null && count > 0) {
+var findNextPosition = (transaction, pos, count2) => {
+  while (pos.right !== null && count2 > 0) {
     switch (pos.right.content.constructor) {
       case ContentFormat:
         if (!pos.right.deleted) {
@@ -7903,11 +7903,11 @@ var findNextPosition = (transaction, pos, count) => {
         break;
       default:
         if (!pos.right.deleted) {
-          if (count < pos.right.length) {
-            getItemCleanStart(transaction, createID(pos.right.id.client, pos.right.id.clock + count));
+          if (count2 < pos.right.length) {
+            getItemCleanStart(transaction, createID(pos.right.id.client, pos.right.id.clock + count2));
           }
           pos.index += pos.right.length;
-          count -= pos.right.length;
+          count2 -= pos.right.length;
         }
         break;
     }
@@ -12821,23 +12821,12 @@ var WebrtcProvider = class extends Observable {
   }
 };
 
-// node_modules/y-protocols/auth.js
-var messagePermissionDenied = 0;
-var readAuthMessage = (decoder, y, permissionDeniedHandler2) => {
-  switch (readVarUint(decoder)) {
-    case messagePermissionDenied:
-      permissionDeniedHandler2(y, readVarString(decoder));
-  }
-};
-
 // node_modules/lib0/url.js
 var encodeQueryParams = (params2) => map2(params2, (val, key) => `${encodeURIComponent(key)}=${encodeURIComponent(val)}`).join("&");
 
-// node_modules/y-websocket/src/y-websocket.js
+// src/webSocketProvider.ts
 var messageSync2 = 0;
 var messageQueryAwareness2 = 3;
-var messageAwareness2 = 1;
-var messageAuth = 2;
 var messageHandlers = [];
 messageHandlers[messageSync2] = (encoder, decoder, provider, emitSynced, _messageType) => {
   writeVarUint(encoder, messageSync2);
@@ -12851,45 +12840,15 @@ messageHandlers[messageSync2] = (encoder, decoder, provider, emitSynced, _messag
     provider.synced = true;
   }
 };
-messageHandlers[messageQueryAwareness2] = (encoder, _decoder, provider, _emitSynced, _messageType) => {
-  writeVarUint(encoder, messageAwareness2);
-  writeVarUint8Array(
-    encoder,
-    encodeAwarenessUpdate(
-      provider.awareness,
-      Array.from(provider.awareness.getStates().keys())
-    )
-  );
-};
-messageHandlers[messageAwareness2] = (_encoder, decoder, provider, _emitSynced, _messageType) => {
-  applyAwarenessUpdate(
-    provider.awareness,
-    readVarUint8Array(decoder),
-    provider
-  );
-};
-messageHandlers[messageAuth] = (_encoder, decoder, provider, _emitSynced, _messageType) => {
-  readAuthMessage(
-    decoder,
-    provider.doc,
-    (_ydoc, reason) => permissionDeniedHandler(provider, reason)
-  );
-};
 var messageReconnectTimeout2 = 3e4;
-var permissionDeniedHandler = (provider, reason) => console.warn(`Permission denied to access ${provider.url}.
-${reason}`);
 var readMessage2 = (provider, buf, emitSynced) => {
   const decoder = createDecoder(buf);
   const encoder = createEncoder();
   const messageType = readVarUint(decoder);
   const messageHandler = provider.messageHandlers[messageType];
-  if (
-    /** @type {any} */
-    messageHandler
-  ) {
+  if (messageHandler) {
     messageHandler(encoder, decoder, provider, emitSynced, messageType);
   } else {
-    console.error("Unable to compute message");
   }
   return encoder;
 };
@@ -12918,13 +12877,6 @@ var setupWS2 = (provider) => {
       if (provider.wsconnected) {
         provider.wsconnected = false;
         provider.synced = false;
-        removeAwarenessStates(
-          provider.awareness,
-          Array.from(provider.awareness.getStates().keys()).filter(
-            (client) => client !== provider.doc.clientID
-          ),
-          provider
-        );
         provider.emit("status", [{
           status: "disconnected"
         }]);
@@ -12952,17 +12904,6 @@ var setupWS2 = (provider) => {
       writeVarUint(encoder, messageSync2);
       writeSyncStep1(encoder, provider.doc);
       websocket.send(toUint8Array(encoder));
-      if (provider.awareness.getLocalState() !== null) {
-        const encoderAwarenessState = createEncoder();
-        writeVarUint(encoderAwarenessState, messageAwareness2);
-        writeVarUint8Array(
-          encoderAwarenessState,
-          encodeAwarenessUpdate(provider.awareness, [
-            provider.doc.clientID
-          ])
-        );
-        websocket.send(toUint8Array(encoderAwarenessState));
-      }
     };
     provider.emit("status", [{
       status: "connecting"
@@ -12978,23 +12919,9 @@ var broadcastMessage = (provider, buf) => {
     publish(provider.bcChannel, buf, provider);
   }
 };
-var WebsocketProvider = class extends Observable {
-  /**
-   * @param {string} serverUrl
-   * @param {string} roomname
-   * @param {Y.Doc} doc
-   * @param {object} opts
-   * @param {boolean} [opts.connect]
-   * @param {awarenessProtocol.Awareness} [opts.awareness]
-   * @param {Object<string,string>} [opts.params]
-   * @param {typeof WebSocket} [opts.WebSocketPolyfill] Optionall provide a WebSocket polyfill
-   * @param {number} [opts.resyncInterval] Request server state every `resyncInterval` milliseconds
-   * @param {number} [opts.maxBackoffTime] Maximum amount of time to wait before trying to reconnect (we try to reconnect using exponential backoff)
-   * @param {boolean} [opts.disableBc] Disable cross-tab BroadcastChannel communication
-   */
+var WebsocketProvider = class extends ObservableV2 {
   constructor(serverUrl, roomname, doc2, {
     connect = true,
-    awareness = new Awareness(doc2),
     params: params2 = {},
     WebSocketPolyfill = WebSocket,
     resyncInterval = -1,
@@ -13012,7 +12939,6 @@ var WebsocketProvider = class extends Observable {
     this.roomname = roomname;
     this.doc = doc2;
     this._WS = WebSocketPolyfill;
-    this.awareness = awareness;
     this.wsconnected = false;
     this.wsconnecting = false;
     this.bcconnected = false;
@@ -13025,8 +12951,7 @@ var WebsocketProvider = class extends Observable {
     this.shouldConnect = connect;
     this._resyncInterval = 0;
     if (resyncInterval > 0) {
-      this._resyncInterval = /** @type {any} */
-      setInterval(() => {
+      this._resyncInterval = window.setInterval(() => {
         if (this.ws && this.ws.readyState === WebSocket.OPEN) {
           const encoder = createEncoder();
           writeVarUint(encoder, messageSync2);
@@ -13052,29 +12977,7 @@ var WebsocketProvider = class extends Observable {
       }
     };
     this.doc.on("update", this._updateHandler);
-    this._awarenessUpdateHandler = ({ added, updated, removed }, _origin) => {
-      const changedClients = added.concat(updated).concat(removed);
-      const encoder = createEncoder();
-      writeVarUint(encoder, messageAwareness2);
-      writeVarUint8Array(
-        encoder,
-        encodeAwarenessUpdate(awareness, changedClients)
-      );
-      broadcastMessage(this, toUint8Array(encoder));
-    };
-    this._exitHandler = () => {
-      removeAwarenessStates(
-        this.awareness,
-        [doc2.clientID],
-        "app closed"
-      );
-    };
-    if (isNode && typeof process !== "undefined") {
-      process.on("exit", this._exitHandler);
-    }
-    awareness.on("update", this._awarenessUpdateHandler);
-    this._checkInterval = /** @type {any} */
-    setInterval(() => {
+    this._checkInterval = window.setInterval(() => {
       if (this.wsconnected && messageReconnectTimeout2 < getUnixTime() - this.wsLastMessageReceived) {
         this.ws.close();
       }
@@ -13102,10 +13005,6 @@ var WebsocketProvider = class extends Observable {
     }
     clearInterval(this._checkInterval);
     this.disconnect();
-    if (isNode && typeof process !== "undefined") {
-      process.off("exit", this._exitHandler);
-    }
-    this.awareness.off("update", this._awarenessUpdateHandler);
     this.doc.off("update", this._updateHandler);
     super.destroy();
   }
@@ -13132,38 +13031,9 @@ var WebsocketProvider = class extends Observable {
       toUint8Array(encoderAwarenessQuery),
       this
     );
-    const encoderAwarenessState = createEncoder();
-    writeVarUint(encoderAwarenessState, messageAwareness2);
-    writeVarUint8Array(
-      encoderAwarenessState,
-      encodeAwarenessUpdate(this.awareness, [
-        this.doc.clientID
-      ])
-    );
-    publish(
-      this.bcChannel,
-      toUint8Array(encoderAwarenessState),
-      this
-    );
-  }
-  disconnectBc() {
-    const encoder = createEncoder();
-    writeVarUint(encoder, messageAwareness2);
-    writeVarUint8Array(
-      encoder,
-      encodeAwarenessUpdate(this.awareness, [
-        this.doc.clientID
-      ], /* @__PURE__ */ new Map())
-    );
-    broadcastMessage(this, toUint8Array(encoder));
-    if (this.bcconnected) {
-      unsubscribe(this.bcChannel, this._bcSubscriber);
-      this.bcconnected = false;
-    }
   }
   disconnect() {
     this.shouldConnect = false;
-    this.disconnectBc();
     if (this.ws !== null) {
       this.ws.close();
     }
@@ -13214,6 +13084,7 @@ var SharedEntity = class {
     return Object.assign([], this._sharedEntites);
   }
   startWebRTCSync(init) {
+    this.plugin.log(`WebRTC for ${this.path}: start`);
     if (!this.shareId)
       return;
     if (this._webRTCProvider) {
@@ -13222,8 +13093,7 @@ var SharedEntity = class {
       }
       return this._webRTCProvider;
     }
-    console.log(`WebRTC for ${this.path}: start`);
-    const webRTCProcider = new WebrtcProvider(this._shareId, this.yDoc, { signaling: [this.plugin.settings.signaling], peerOpts: { iceServers: [{ urls: "stun:freeturn.net:5349" }, { urls: "turns:freeturn.tel:5349", username: "free", credential: "free" }, { urls: "stun:stun.l.google.com:19302" }, { urls: "stun:global.stun.twilio.com:3478?transport=udp" }] } });
+    const webRTCProcider = new WebrtcProvider(this._shareId, this.yDoc, { signaling: [this.plugin.settings.signaling], peerOpts: { iceServers: [{ urls: "stun:freeturn.net:5349" }, { urls: "turns:freeturn.net:5349", username: "free", credential: "free" }, { urls: "stun:stun.l.google.com:19302" }, { urls: "stun:global.stun.twilio.com:3478?transport=udp" }] } });
     this._webRTCProvider = webRTCProcider;
     if (init) {
       init(webRTCProcider);
@@ -13234,7 +13104,7 @@ var SharedEntity = class {
     var _a, _b, _c;
     if (!this._webRTCProvider)
       return;
-    console.log(`WebRTC for ${this.path}: stop`);
+    this.plugin.log(`WebRTC for ${this.path}: stop`);
     (_a = this._webRTCProvider) == null ? void 0 : _a.awareness.destroy();
     (_b = this._webRTCProvider) == null ? void 0 : _b.disconnect();
     (_c = this._webRTCProvider) == null ? void 0 : _c.destroy();
@@ -13250,17 +13120,20 @@ var SharedEntity = class {
       return this._webSocketProvider;
     }
     const webSocketProvider = new WebsocketProvider(this.plugin.settings.sync, this.shareId, this.yDoc, {
-      connect: false
+      connect: false,
+      maxBackoffTime: 3e5,
+      resyncInterval: -1
     });
     this._webSocketProvider = webSocketProvider;
     webSocketProvider.on("status", (event) => {
-      console.log(`WebSocket for ${this.path}: ${event.status}`);
+      this.plugin.log(`WebSocket for ${this.path}: ${event.status}`);
+    });
+    webSocketProvider.once("sync", (state) => {
+      if (state) {
+        webSocketProvider.disconnect();
+      }
     });
     webSocketProvider.doc.on("update", async (update, origin, doc2, tr) => {
-      if (origin === webSocketProvider) {
-        webSocketProvider.disconnect();
-        return;
-      }
       if (tr.local) {
         if (!webSocketProvider.wsconnected) {
           webSocketProvider.connect();
@@ -13280,20 +13153,230 @@ var SharedEntity = class {
   async stopWebSocketSync() {
     if (!this._webSocketProvider)
       return;
-    console.log(`WebSocket Sync for ${this.path}: stop`);
+    this.plugin.log(`WebSocket Sync for ${this.path}: stop`);
     this._webSocketProvider.disconnect();
     this._webSocketProvider.destroy();
+    this.plugin.activeStreamClient.remove([this.shareId]);
     this._webSocketProvider = void 0;
+  }
+  async stopIndexedDBSync() {
+    if (!this._indexedDBProvider)
+      return;
+    await this._indexedDBProvider.destroy();
   }
   destroy() {
     this.stopWebRTCSync();
     this.stopWebSocketSync();
   }
 };
-SharedEntity._sharedEntites = new Array();
+SharedEntity.DB_PERSISTENCE_PREFIX = "peerdraft_persistence_";
 
 // src/sharedEntities/sharedDocument.ts
 var path = __toESM(require("path"));
+
+// node_modules/lib0/indexeddb.js
+var rtop = (request) => create4((resolve2, reject2) => {
+  request.onerror = (event) => reject2(new Error(event.target.error));
+  request.onsuccess = (event) => resolve2(event.target.result);
+});
+var openDB = (name, initDB) => create4((resolve2, reject2) => {
+  const request = indexedDB.open(name);
+  request.onupgradeneeded = (event) => initDB(event.target.result);
+  request.onerror = (event) => reject2(create3(event.target.error));
+  request.onsuccess = (event) => {
+    const db = event.target.result;
+    db.onversionchange = () => {
+      db.close();
+    };
+    resolve2(db);
+  };
+});
+var deleteDB = (name) => rtop(indexedDB.deleteDatabase(name));
+var createStores = (db, definitions) => definitions.forEach(
+  (d) => (
+    // @ts-ignore
+    db.createObjectStore.apply(db, d)
+  )
+);
+var transact2 = (db, stores, access = "readwrite") => {
+  const transaction = db.transaction(stores, access);
+  return stores.map((store) => getStore(transaction, store));
+};
+var count = (store, range) => rtop(store.count(range));
+var get = (store, key) => rtop(store.get(key));
+var del = (store, key) => rtop(store.delete(key));
+var put = (store, item, key) => rtop(store.put(item, key));
+var addAutoKey = (store, item) => rtop(store.add(item));
+var getAll = (store, range, limit) => rtop(store.getAll(range, limit));
+var queryFirst = (store, query, direction) => {
+  let first = null;
+  return iterateKeys(store, query, (key) => {
+    first = key;
+    return false;
+  }, direction).then(() => first);
+};
+var getLastKey = (store, range = null) => queryFirst(store, range, "prev");
+var iterateOnRequest = (request, f) => create4((resolve2, reject2) => {
+  request.onerror = reject2;
+  request.onsuccess = async (event) => {
+    const cursor = event.target.result;
+    if (cursor === null || await f(cursor) === false) {
+      return resolve2();
+    }
+    cursor.continue();
+  };
+});
+var iterateKeys = (store, keyrange, f, direction = "next") => iterateOnRequest(store.openKeyCursor(keyrange, direction), (cursor) => f(cursor.key));
+var getStore = (t, store) => t.objectStore(store);
+var createIDBKeyRangeUpperBound = (upper, upperOpen) => IDBKeyRange.upperBound(upper, upperOpen);
+var createIDBKeyRangeLowerBound = (lower, lowerOpen) => IDBKeyRange.lowerBound(lower, lowerOpen);
+
+// node_modules/y-indexeddb/src/y-indexeddb.js
+var customStoreName = "custom";
+var updatesStoreName = "updates";
+var PREFERRED_TRIM_SIZE = 500;
+var fetchUpdates = (idbPersistence, beforeApplyUpdatesCallback = () => {
+}, afterApplyUpdatesCallback = () => {
+}) => {
+  const [updatesStore] = transact2(
+    /** @type {IDBDatabase} */
+    idbPersistence.db,
+    [updatesStoreName]
+  );
+  return getAll(updatesStore, createIDBKeyRangeLowerBound(idbPersistence._dbref, false)).then((updates) => {
+    if (!idbPersistence._destroyed) {
+      beforeApplyUpdatesCallback(updatesStore);
+      transact(idbPersistence.doc, () => {
+        updates.forEach((val) => applyUpdate(idbPersistence.doc, val));
+      }, idbPersistence, false);
+      afterApplyUpdatesCallback(updatesStore);
+    }
+  }).then(() => getLastKey(updatesStore).then((lastKey) => {
+    idbPersistence._dbref = lastKey + 1;
+  })).then(() => count(updatesStore).then((cnt) => {
+    idbPersistence._dbsize = cnt;
+  })).then(() => updatesStore);
+};
+var storeState = (idbPersistence, forceStore = true) => fetchUpdates(idbPersistence).then((updatesStore) => {
+  if (forceStore || idbPersistence._dbsize >= PREFERRED_TRIM_SIZE) {
+    addAutoKey(updatesStore, encodeStateAsUpdate(idbPersistence.doc)).then(() => del(updatesStore, createIDBKeyRangeUpperBound(idbPersistence._dbref, true))).then(() => count(updatesStore).then((cnt) => {
+      idbPersistence._dbsize = cnt;
+    }));
+  }
+});
+var IndexeddbPersistence = class extends Observable {
+  /**
+   * @param {string} name
+   * @param {Y.Doc} doc
+   */
+  constructor(name, doc2) {
+    super();
+    this.doc = doc2;
+    this.name = name;
+    this._dbref = 0;
+    this._dbsize = 0;
+    this._destroyed = false;
+    this.db = null;
+    this.synced = false;
+    this._db = openDB(
+      name,
+      (db) => createStores(db, [
+        ["updates", { autoIncrement: true }],
+        ["custom"]
+      ])
+    );
+    this.whenSynced = create4((resolve2) => this.on("synced", () => resolve2(this)));
+    this._db.then((db) => {
+      this.db = db;
+      const beforeApplyUpdatesCallback = (updatesStore) => addAutoKey(updatesStore, encodeStateAsUpdate(doc2));
+      const afterApplyUpdatesCallback = () => {
+        if (this._destroyed)
+          return this;
+        this.synced = true;
+        this.emit("synced", [this]);
+      };
+      fetchUpdates(this, beforeApplyUpdatesCallback, afterApplyUpdatesCallback);
+    });
+    this._storeTimeout = 1e3;
+    this._storeTimeoutId = null;
+    this._storeUpdate = (update, origin) => {
+      if (this.db && origin !== this) {
+        const [updatesStore] = transact2(
+          /** @type {IDBDatabase} */
+          this.db,
+          [updatesStoreName]
+        );
+        addAutoKey(updatesStore, update);
+        if (++this._dbsize >= PREFERRED_TRIM_SIZE) {
+          if (this._storeTimeoutId !== null) {
+            clearTimeout(this._storeTimeoutId);
+          }
+          this._storeTimeoutId = setTimeout(() => {
+            storeState(this, false);
+            this._storeTimeoutId = null;
+          }, this._storeTimeout);
+        }
+      }
+    };
+    doc2.on("update", this._storeUpdate);
+    this.destroy = this.destroy.bind(this);
+    doc2.on("destroy", this.destroy);
+  }
+  destroy() {
+    if (this._storeTimeoutId) {
+      clearTimeout(this._storeTimeoutId);
+    }
+    this.doc.off("update", this._storeUpdate);
+    this.doc.off("destroy", this.destroy);
+    this._destroyed = true;
+    return this._db.then((db) => {
+      db.close();
+    });
+  }
+  /**
+   * Destroys this instance and removes all data from indexeddb.
+   *
+   * @return {Promise<void>}
+   */
+  clearData() {
+    return this.destroy().then(() => {
+      deleteDB(this.name);
+    });
+  }
+  /**
+   * @param {String | number | ArrayBuffer | Date} key
+   * @return {Promise<String | number | ArrayBuffer | Date | any>}
+   */
+  get(key) {
+    return this._db.then((db) => {
+      const [custom] = transact2(db, [customStoreName], "readonly");
+      return get(custom, key);
+    });
+  }
+  /**
+   * @param {String | number | ArrayBuffer | Date} key
+   * @param {String | number | ArrayBuffer | Date} value
+   * @return {Promise<String | number | ArrayBuffer | Date>}
+   */
+  set(key, value) {
+    return this._db.then((db) => {
+      const [custom] = transact2(db, [customStoreName]);
+      return put(custom, value, key);
+    });
+  }
+  /**
+   * @param {String | number | ArrayBuffer | Date} key
+   * @return {Promise<undefined>}
+   */
+  del(key) {
+    return this._db.then((db) => {
+      const [custom] = transact2(db, [customStoreName]);
+      return del(custom, key);
+    });
+  }
+};
+
+// src/sharedEntities/sharedDocument.ts
 var _SharedDocument = class extends SharedEntity {
   constructor(opts, plugin) {
     super(plugin);
@@ -13331,10 +13414,10 @@ var _SharedDocument = class extends SharedEntity {
     const doc2 = new _SharedDocument({
       path: view.file.path
     }, plugin);
-    doc2.yDoc.getText("content").insert(0, view.editor.getValue());
     if (opts.isPermanent) {
       await doc2.setPermanent();
-      doc2.startWebSocketSync();
+      await doc2.startWebSocketSync();
+      await doc2.startIndexedDBSync();
     } else {
       doc2._shareId = createRandomId();
       doc2.addStatusBarEntry();
@@ -13344,12 +13427,13 @@ var _SharedDocument = class extends SharedEntity {
     if (!opts.isPermanent && doc2._webRTCProvider) {
       doc2.getOwnerFragment().insert(0, doc2._webRTCProvider.awareness.clientID.toFixed(0));
     }
+    doc2.yDoc.getText("content").insert(0, view.editor.getValue());
     doc2.addExtensionToLeaf(view.leaf.id);
     navigator.clipboard.writeText(plugin.settings.basePath + "/cm/" + doc2.shareId);
     showNotice("Collaboration started for " + doc2.path + ". Link copied to Clipboard.");
     return doc2;
   }
-  static fromPermanentShareDocument(pd, plugin) {
+  static async fromPermanentShareDocument(pd, plugin) {
     if (this.findByPath(pd.path))
       return;
     const doc2 = new _SharedDocument({
@@ -13357,7 +13441,12 @@ var _SharedDocument = class extends SharedEntity {
     }, plugin);
     doc2._isPermanent = true;
     doc2._shareId = pd.shareId;
-    doc2.startWebSocketSync();
+    const local = await doc2.startIndexedDBSync();
+    if (local) {
+      if (local.synced || await local.whenSynced) {
+        doc2.startWebSocketSync();
+      }
+    }
     return doc2;
   }
   static async fromShareURL(url, plugin) {
@@ -13384,6 +13473,7 @@ var _SharedDocument = class extends SharedEntity {
       doc2._isPermanent = true;
       await plugin.permanentShareStore.add(doc2);
       doc2.startWebSocketSync();
+      doc2.startIndexedDBSync();
     }
     const leaf = await openFileInNewTab(file, plugin.app.workspace);
     doc2.addStatusBarEntry();
@@ -13393,6 +13483,9 @@ var _SharedDocument = class extends SharedEntity {
     return doc2;
   }
   static async fromTFile(file, opts, plugin) {
+    const existing = _SharedDocument.findByPath(file.path);
+    if (existing)
+      return existing;
     const doc2 = new _SharedDocument({ path: file.path }, plugin);
     if (opts.id) {
       doc2._shareId = opts.id;
@@ -13400,6 +13493,7 @@ var _SharedDocument = class extends SharedEntity {
     if (opts.permanent) {
       await doc2.setPermanent();
       doc2.startWebSocketSync();
+      doc2.startIndexedDBSync();
     }
     const leafIds = getLeafIdsByPath(file.path, plugin.pws);
     if (leafIds.length > 0) {
@@ -13423,9 +13517,12 @@ var _SharedDocument = class extends SharedEntity {
   static getAll() {
     return super.getAll();
   }
+  get file() {
+    return this._file;
+  }
   startWebRTCSync() {
     return super.startWebRTCSync((provider) => {
-      provider.awareness.on("update", (msg) => {
+      provider.awareness.on("update", async (msg) => {
         var _a, _b;
         const removed = (_a = msg.removed) != null ? _a : [];
         if (removed && removed.length > 0) {
@@ -13436,7 +13533,7 @@ var _SharedDocument = class extends SharedEntity {
           if (owner != provider.awareness.clientID.toString()) {
             if (removedStrings.includes(owner) && !this.isPermanent) {
               showNotice("Shared session for " + this.path + " stopped by owner");
-              this.destroy();
+              await this.unshare();
             }
           }
         }
@@ -13504,6 +13601,16 @@ var _SharedDocument = class extends SharedEntity {
   }
   getOwnerFragment() {
     return this.yDoc.getText("owner");
+  }
+  async startIndexedDBSync() {
+    var _a;
+    if (this._indexedDBProvider)
+      return this._indexedDBProvider;
+    const id2 = (_a = await this.plugin.permanentShareStore.getDocByPath(this.path)) == null ? void 0 : _a.persistenceId;
+    if (!id2)
+      return;
+    this._indexedDBProvider = new IndexeddbPersistence(SharedEntity.DB_PERSISTENCE_PREFIX + id2, this.yDoc);
+    return this._indexedDBProvider;
   }
   addExtensionToLeaf(leafId) {
     const webRTCProvider = this.startWebRTCSync();
@@ -13576,8 +13683,8 @@ var _SharedDocument = class extends SharedEntity {
     });
     menu.addItem((item) => {
       item.setTitle("Stop shared session");
-      item.onClick(() => {
-        this.destroy();
+      item.onClick(async () => {
+        await this.unshare();
       });
     });
     const status = this.plugin.addStatusBarItem();
@@ -13594,6 +13701,17 @@ var _SharedDocument = class extends SharedEntity {
     this.statusBarEntry.remove();
     this.statusBarEntry = void 0;
   }
+  async unshare() {
+    const dbEntry = await this.plugin.permanentShareStore.getDocByPath(this.path);
+    if (dbEntry) {
+      this.plugin.permanentShareStore.removeDoc(this.path);
+    }
+    if (this._indexedDBProvider) {
+      await this._indexedDBProvider.clearData();
+      await this._indexedDBProvider.destroy();
+    }
+    this.destroy();
+  }
   destroy() {
     if (!this.isPermanent) {
       showNotice("Stopping collaboration on " + this.path + ".");
@@ -13609,13 +13727,281 @@ var _SharedDocument = class extends SharedEntity {
 };
 var SharedDocument = _SharedDocument;
 SharedDocument._userColor = usercolors[randomUint32() % usercolors.length];
+SharedDocument._sharedEntites = new Array();
+
+// src/sharedEntities/sharedFolder.ts
+var import_obsidian3 = require("obsidian");
+var path2 = __toESM(require("path"));
+var handleUpdate = (ev, tx, folder, plugin) => {
+  if (tx.local)
+    return;
+  const changedKeys = ev.changes.keys;
+  changedKeys.forEach(async (data, key) => {
+    if (data.action === "add") {
+      const value = tx.doc.getMap("documents").get(key);
+      const file = await folder.getOrCreateFile(value);
+      plugin.log("Creating Remote File " + (file == null ? void 0 : file.path) + "   " + key);
+      if (file) {
+        await SharedDocument.fromTFile(file, { id: key, permanent: true }, plugin);
+      }
+    } else if (data.action === "update") {
+      const newPath = tx.doc.getMap("documents").get(key);
+      const document2 = SharedDocument.findById(key);
+      if (!document2)
+        return;
+      plugin.log("Update " + document2.path + "   " + key);
+      const folder2 = SharedFolder.getSharedFolderForSubPath(document2.path);
+      if (!folder2)
+        return;
+      const newAbsolutePath = path2.join(folder2.root.path, newPath);
+      await SharedFolder.getOrCreatePath(path2.parse(newAbsolutePath).dir, plugin);
+      plugin.app.vault.rename(document2.file, newAbsolutePath);
+    } else if (data.action === "delete") {
+      const document2 = SharedDocument.findById(key);
+      if (!document2)
+        return;
+      plugin.log("Delete " + document2.path + "   " + key);
+      const file = plugin.app.vault.getAbstractFileByPath(document2.path);
+      if (!file)
+        return;
+      plugin.app.vault.delete(file);
+    }
+  });
+};
+var _SharedFolder = class extends SharedEntity {
+  constructor(root, opts, plugin) {
+    super(plugin);
+    this.root = root;
+    this._path = root.path;
+    this.yDoc = new Doc();
+    this._shareId = opts.id;
+    this.getDocsFragment().observe((ev, tx) => {
+      handleUpdate(ev, tx, this, plugin);
+    });
+    _SharedFolder._sharedEntites.push(this);
+  }
+  static async fromTFolder(root, plugin) {
+    showNotice(`Inititializing share for ${root.path}.`);
+    const files = this.getAllFilesInFolder(root);
+    for (const file of files) {
+      if (SharedDocument.findByPath(file.path)) {
+        showNotice("You can not share a directory that already has shared files in it (right now).");
+        return;
+      }
+    }
+    const data = await plugin.serverAPI.createPermanentSession();
+    if (!data || !data.id) {
+      showNotice("Error creating share");
+      return;
+    }
+    const docs = await Promise.all(files.map((file) => {
+      showNotice(`Inititializing share for ${file.path}`);
+      return SharedDocument.fromTFile(file, {
+        permanent: true
+      }, plugin);
+    }));
+    const folder = new _SharedFolder(root, { id: data.id }, plugin);
+    await plugin.permanentShareStore.add(folder);
+    await folder.startWebSocketSync();
+    await folder.startIndexedDBSync();
+    for (const doc2 of docs) {
+      folder.addDocument(doc2);
+    }
+    navigator.clipboard.writeText(plugin.settings.basePath + "/team/" + folder.shareId);
+    showNotice(`Folder ${folder.path} with ${docs.length} documents shared. URL copied to your clipboard.`);
+    return folder;
+  }
+  static async fromShareURL(url, plugin) {
+    const id2 = url.split("/").pop();
+    if (!id2 || !id2.match("^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$")) {
+      showNotice("No valid peerdraft link");
+      return;
+    }
+    const initialRootName = `_peerdraft_team_folder_${generateRandomString()}`;
+    const parent = plugin.app.fileManager.getNewFileParent("", initialRootName);
+    const folderPath = path2.join(parent.path, initialRootName);
+    const folder = await plugin.app.vault.createFolder(folderPath);
+    const sFolder = new _SharedFolder(folder, { id: id2 }, plugin);
+    sFolder.startWebSocketSync();
+    sFolder.startWebRTCSync();
+    sFolder.startIndexedDBSync();
+    await plugin.permanentShareStore.add(sFolder);
+    return sFolder;
+  }
+  static async fromPermanentShareFolder(psf, plugin) {
+    if (this.findByPath(psf.path))
+      return;
+    const tFolder = plugin.app.vault.getAbstractFileByPath(psf.path);
+    if (!(tFolder instanceof import_obsidian3.TFolder))
+      return;
+    const folder = new _SharedFolder(tFolder, { id: psf.shareId }, plugin);
+    const local = await folder.startIndexedDBSync();
+    if (local) {
+      if (local.synced || await local.whenSynced) {
+        await folder.startWebSocketSync();
+        folder.startWebRTCSync();
+      }
+    }
+    return folder;
+  }
+  static findByPath(path3) {
+    return super.findByPath(path3);
+  }
+  static findById(id2) {
+    return super.findById(id2);
+  }
+  static getAll() {
+    return super.getAll();
+  }
+  static getSharedFolderForSubPath(dir) {
+    const folders = this.getAll();
+    for (const folder of folders) {
+      if (folder.root.path === dir)
+        return;
+      if (folder.isPathSubPath(dir))
+        return folder;
+    }
+  }
+  getDocsFragment() {
+    return this.yDoc.getMap("documents");
+  }
+  getDocByRelativePath(dir) {
+    for (const entry of this.getDocsFragment().entries()) {
+      if (entry[1] === dir)
+        return entry[0];
+    }
+  }
+  updatePath(oldPath, newPath) {
+    const oldPathRelative = path2.relative(this.root.path, oldPath);
+    const newPathRelative = path2.relative(this.root.path, newPath);
+    const id2 = this.getDocByRelativePath(oldPathRelative);
+    if (id2) {
+      this.getDocsFragment().set(id2, newPathRelative);
+    }
+    return id2;
+  }
+  addDocument(doc2) {
+    if (this.getDocsFragment().get(doc2.shareId))
+      return;
+    const relativePath = path2.relative(this.root.path, doc2.path);
+    if (relativePath.startsWith(".."))
+      return;
+    this.getDocsFragment().set(doc2.shareId, relativePath);
+  }
+  removeDocument(doc2) {
+    this.getDocsFragment().delete(doc2.shareId);
+  }
+  isPathSubPath(folder) {
+    const relativePath = path2.relative(this.root.path, folder);
+    return !relativePath.startsWith("..");
+  }
+  static getAllFilesInFolder(folder) {
+    const files = folder.children.flatMap((child) => {
+      if (child instanceof import_obsidian3.TFile) {
+        if (child.extension === "md") {
+          return child;
+        }
+      }
+      if (child instanceof import_obsidian3.TFolder) {
+        return this.getAllFilesInFolder(child);
+      }
+      return [];
+    });
+    return files;
+  }
+  async setNewFolderLocation(folder) {
+    const oldPath = this._path;
+    this.root = folder;
+    this._path = folder.path;
+    const dbEntry = await this.plugin.permanentShareStore.getFolderByPath(oldPath);
+    if (dbEntry) {
+      this.plugin.permanentShareStore.removeFolder(oldPath);
+      this.plugin.permanentShareStore.add(this);
+    }
+  }
+  async getOrCreateFile(relativePath) {
+    const absolutePath = path2.join(this.root.path, relativePath);
+    let file = this.plugin.app.vault.getAbstractFileByPath(absolutePath);
+    if (file && file instanceof import_obsidian3.TFile)
+      return file;
+    const folder = await _SharedFolder.getOrCreatePath(path2.parse(absolutePath).dir, this.plugin);
+    if (!folder) {
+      showNotice("Error creating shares");
+      return;
+    }
+    return await this.plugin.app.vault.create(absolutePath, "");
+  }
+  static async getOrCreatePath(absolutePath, plugin) {
+    let folder = plugin.app.vault.getAbstractFileByPath(absolutePath);
+    if (folder && folder instanceof import_obsidian3.TFolder)
+      return folder;
+    const segments = absolutePath.split(path2.sep);
+    for (let index = 0; index < segments.length; index++) {
+      const subPath = segments.slice(0, index + 1).join(path2.sep);
+      folder = plugin.app.vault.getAbstractFileByPath(subPath);
+      if (!folder) {
+        folder = await plugin.app.vault.createFolder(subPath);
+      }
+    }
+    return folder;
+  }
+  isFileInSyncObject(file) {
+    for (const value of this.getDocsFragment().values()) {
+      if (file.path === path2.join(this.root.path, value))
+        return true;
+    }
+    return false;
+  }
+  startWebRTCSync() {
+    return super.startWebRTCSync((provider) => {
+      const handleTimeout = () => {
+        this.stopWebRTCSync();
+      };
+      this._webRTCTimeout = window.setTimeout(handleTimeout, 6e4);
+      provider.doc.on("update", async (update, origin, doc2, tr) => {
+        if (this._webRTCTimeout != null) {
+          window.clearTimeout(this._webRTCTimeout);
+        }
+        this._webRTCTimeout = window.setTimeout(handleTimeout, 6e4);
+      });
+    });
+  }
+  async startIndexedDBSync() {
+    var _a;
+    if (this._indexedDBProvider)
+      return this._indexedDBProvider;
+    const id2 = (_a = await this.plugin.permanentShareStore.getFolderByPath(this.path)) == null ? void 0 : _a.persistenceId;
+    if (!id2)
+      return;
+    this._indexedDBProvider = new IndexeddbPersistence(SharedEntity.DB_PERSISTENCE_PREFIX + id2, this.yDoc);
+    return this._indexedDBProvider;
+  }
+  async unshare() {
+    const dbEntry = await this.plugin.permanentShareStore.getFolderByPath(this.path);
+    if (dbEntry) {
+      this.plugin.permanentShareStore.removeFolder(this.path);
+    }
+    if (this._indexedDBProvider) {
+      await this._indexedDBProvider.clearData();
+      await this._indexedDBProvider.destroy();
+    }
+    this.destroy();
+  }
+  destroy() {
+    super.destroy();
+    _SharedFolder._sharedEntites.splice(_SharedFolder._sharedEntites.indexOf(this), 1);
+  }
+};
+var SharedFolder = _SharedFolder;
+SharedFolder._sharedEntites = new Array();
 
 // src/activeStreamClient.ts
 var handleMessage = (data) => {
-  var _a;
+  var _a, _b;
   const message = JSON.parse(data);
   for (const id2 of message.docs) {
     (_a = SharedDocument.findById(id2)) == null ? void 0 : _a.startWebRTCSync();
+    (_b = SharedFolder.findById(id2)) == null ? void 0 : _b.startWebRTCSync();
   }
 };
 var setupWS3 = (client) => {
@@ -13752,18 +14138,18 @@ var ActiveStreamClient = class extends ObservableV2 {
 };
 
 // src/cookie.ts
-var import_obsidian5 = require("obsidian");
+var import_obsidian6 = require("obsidian");
 
 // src/settings.ts
-var import_obsidian4 = require("obsidian");
+var import_obsidian5 = require("obsidian");
 
 // src/subscription.ts
-var import_obsidian3 = require("obsidian");
+var import_obsidian4 = require("obsidian");
 var refreshSubscriptionData = async (plugin) => {
   const settings = await getSettings(plugin);
   const url = new URL(settings.subscriptionAPI);
   url.searchParams.set("oid", settings.oid);
-  const data = await (0, import_obsidian3.requestUrl)(url.toString()).json;
+  const data = await (0, import_obsidian4.requestUrl)(url.toString()).json;
   if (data) {
     if (data.plan) {
       settings.plan = data.plan;
@@ -13791,6 +14177,7 @@ var DEFAULT_SETTINGS = {
     email: ""
   },
   duration: 0,
+  debug: false,
   version: ""
 };
 var FORCE_SETTINGS = {
@@ -13833,7 +14220,7 @@ var renderSettings = async (el, plugin) => {
   el.empty();
   const settings = await getSettings(plugin);
   el.createEl("h1", { text: "What's your name?" });
-  const setting = new import_obsidian4.Setting(el);
+  const setting = new import_obsidian5.Setting(el);
   setting.setName("Name");
   setting.setDesc("This name will be shown to your collaborators");
   setting.addText((text2) => {
@@ -13849,7 +14236,7 @@ var renderSettings = async (el, plugin) => {
     el.createEl("p");
     el.createEl("div", { text: `You have used Peerdraft for ${settings.duration} minutes so far.` });
     el.createEl("p");
-    new import_obsidian4.Setting(el).setName("Subscribe").addButton((button) => {
+    new import_obsidian5.Setting(el).setName("Subscribe").addButton((button) => {
       button.setButtonText("Buy professional plan");
       button.setCta();
       button.onClick((e) => {
@@ -13857,7 +14244,7 @@ var renderSettings = async (el, plugin) => {
       });
     });
     let connectEmail = "";
-    new import_obsidian4.Setting(el).setName("Use existing subscription").setDesc("If you already bought a subscription, enter the e-mail address associated with it and click on `Connect`.").addText((text2) => {
+    new import_obsidian5.Setting(el).setName("Use existing subscription").setDesc("If you already bought a subscription, enter the e-mail address associated with it and click on `Connect`.").addText((text2) => {
       text2.setPlaceholder("me@test.com");
       text2.onChange((value) => {
         connectEmail = value;
@@ -13865,7 +14252,7 @@ var renderSettings = async (el, plugin) => {
     }).addButton((button) => {
       button.setButtonText("Connect");
       button.onClick(async (e) => {
-        const data = await (0, import_obsidian4.requestUrl)({
+        const data = await (0, import_obsidian5.requestUrl)({
           url: settings.connectAPI,
           method: "POST",
           contentType: "application/json",
@@ -13886,7 +14273,7 @@ var renderSettings = async (el, plugin) => {
     el.createEl("div", { text: `You have used Peerdraft for ${settings.duration} minutes so far.` });
     el.createEl("p");
   }
-  new import_obsidian4.Setting(el).setName("Refresh subscription data").setDesc("If you just subscribed or connected your license, click here to refresh your subscription information.").addButton((button) => {
+  new import_obsidian5.Setting(el).setName("Refresh subscription data").setDesc("If you just subscribed or connected your license, click here to refresh your subscription information.").addButton((button) => {
     button.setButtonText("Refresh");
     button.onClick(async (e) => {
       refreshSubscriptionData(plugin);
@@ -13905,7 +14292,7 @@ var renderSettings = async (el, plugin) => {
   div.createSpan({ text: "." });
 };
 var createSettingsTab = (plugin) => {
-  return new class extends import_obsidian4.PluginSettingTab {
+  return new class extends import_obsidian5.PluginSettingTab {
     async display() {
       await renderSettings(this.containerEl, plugin);
     }
@@ -13916,9 +14303,9 @@ var createSettingsTab = (plugin) => {
 var import_remote = require("@electron/remote");
 var prepareCommunication = async (plugin) => {
   const settings = await getSettings(plugin);
-  if (import_obsidian5.Platform.isDesktopApp) {
+  if (import_obsidian6.Platform.isDesktopApp) {
     await import_remote.session.defaultSession.cookies.set({ url: "https://www.peerdraft.app", "name": "oid", "value": settings.oid, "domain": "www.peerdraft.app", "path": "/", "secure": true, "httpOnly": true, "sameSite": "no_restriction" });
-  } else if (import_obsidian5.Platform.isMobileApp) {
+  } else if (import_obsidian6.Platform.isMobileApp) {
     const signalingURL = new URL(settings.signaling);
     signalingURL.searchParams.append("oid", settings.oid);
     settings.signaling = signalingURL.toString();
@@ -15655,13 +16042,13 @@ var Collection = class {
             index: getIndexOrStore(ctx, coreTable.schema),
             range: ctx.range
           }
-        }).then((count2) => Math.min(count2, ctx.limit));
+        }).then((count3) => Math.min(count3, ctx.limit));
       } else {
-        var count = 0;
+        var count2 = 0;
         return iter(ctx, () => {
-          ++count;
+          ++count2;
           return false;
-        }, trans, coreTable).then(() => count);
+        }, trans, coreTable).then(() => count2);
       }
     }).then(cb);
   }
@@ -15898,17 +16285,17 @@ var Collection = class {
       };
       return this.clone().primaryKeys().then((keys3) => {
         const nextChunk = (offset) => {
-          const count = Math.min(limit, keys3.length - offset);
+          const count2 = Math.min(limit, keys3.length - offset);
           return coreTable.getMany({
             trans,
-            keys: keys3.slice(offset, offset + count),
+            keys: keys3.slice(offset, offset + count2),
             cache: "immutable"
           }).then((values) => {
             const addValues = [];
             const putValues = [];
             const putKeys = outbound ? [] : null;
             const deleteKeys = [];
-            for (let i = 0; i < count; ++i) {
+            for (let i = 0; i < count2; ++i) {
               const origValue = values[i];
               const ctx2 = {
                 value: deepClone(origValue),
@@ -15949,7 +16336,7 @@ var Collection = class {
               keys: deleteKeys,
               criteria
             }).then((res) => applyMutateResult(deleteKeys.length, res))).then(() => {
-              return keys3.length > offset + count && nextChunk(offset + limit);
+              return keys3.length > offset + count2 && nextChunk(offset + limit);
             });
           });
         };
@@ -15967,11 +16354,11 @@ var Collection = class {
       return this._write((trans) => {
         const { primaryKey } = ctx.table.core.schema;
         const coreRange = range;
-        return ctx.table.core.count({ trans, query: { index: primaryKey, range: coreRange } }).then((count) => {
+        return ctx.table.core.count({ trans, query: { index: primaryKey, range: coreRange } }).then((count2) => {
           return ctx.table.core.mutate({ trans, type: "deleteRange", range: coreRange }).then(({ failures, lastResult, results, numFailures }) => {
             if (numFailures)
-              throw new ModifyError("Could not delete some values", Object.keys(failures).map((pos) => failures[pos]), count - numFailures);
-            return count - numFailures;
+              throw new ModifyError("Could not delete some values", Object.keys(failures).map((pos) => failures[pos]), count2 - numFailures);
+            return count2 - numFailures;
           });
         });
       });
@@ -16823,7 +17210,7 @@ function createDBCore(db, IdbKeyRange, tmpTrans) {
             req.onsuccess = (event) => resolve2({ result: event.target.result });
             req.onerror = eventRejectHandler(reject2);
           } else {
-            let count = 0;
+            let count2 = 0;
             const req = values || !("openKeyCursor" in source) ? source.openCursor(idbKeyRange) : source.openKeyCursor(idbKeyRange);
             const result = [];
             req.onsuccess = (event) => {
@@ -16831,7 +17218,7 @@ function createDBCore(db, IdbKeyRange, tmpTrans) {
               if (!cursor)
                 return resolve2({ result });
               result.push(values ? cursor.value : cursor.primaryKey);
-              if (++count === limit)
+              if (++count2 === limit)
                 return resolve2({ result });
               cursor.continue();
             };
@@ -16920,8 +17307,8 @@ function createDBCore(db, IdbKeyRange, tmpTrans) {
 function createMiddlewareStack(stackImpl, middlewares) {
   return middlewares.reduce((down, { create: create7 }) => ({ ...down, ...create7(down) }), stackImpl);
 }
-function createMiddlewareStacks(middlewares, idbdb, { IDBKeyRange, indexedDB: indexedDB2 }, tmpTrans) {
-  const dbcore = createMiddlewareStack(createDBCore(idbdb, IDBKeyRange, tmpTrans), middlewares.dbcore);
+function createMiddlewareStacks(middlewares, idbdb, { IDBKeyRange: IDBKeyRange2, indexedDB: indexedDB2 }, tmpTrans) {
+  const dbcore = createMiddlewareStack(createDBCore(idbdb, IDBKeyRange2, tmpTrans), middlewares.dbcore);
   return {
     dbcore
   };
@@ -17250,13 +17637,13 @@ function createVersionConstructor(db) {
     };
   });
 }
-function getDbNamesTable(indexedDB2, IDBKeyRange) {
+function getDbNamesTable(indexedDB2, IDBKeyRange2) {
   let dbNamesDB = indexedDB2["_dbNamesDB"];
   if (!dbNamesDB) {
     dbNamesDB = indexedDB2["_dbNamesDB"] = new Dexie$1(DBNAMES_DB, {
       addons: [],
       indexedDB: indexedDB2,
-      IDBKeyRange
+      IDBKeyRange: IDBKeyRange2
     });
     dbNamesDB.version(1).stores({ dbnames: "name" });
   }
@@ -17265,14 +17652,14 @@ function getDbNamesTable(indexedDB2, IDBKeyRange) {
 function hasDatabasesNative(indexedDB2) {
   return indexedDB2 && typeof indexedDB2.databases === "function";
 }
-function getDatabaseNames({ indexedDB: indexedDB2, IDBKeyRange }) {
-  return hasDatabasesNative(indexedDB2) ? Promise.resolve(indexedDB2.databases()).then((infos) => infos.map((info) => info.name).filter((name) => name !== DBNAMES_DB)) : getDbNamesTable(indexedDB2, IDBKeyRange).toCollection().primaryKeys();
+function getDatabaseNames({ indexedDB: indexedDB2, IDBKeyRange: IDBKeyRange2 }) {
+  return hasDatabasesNative(indexedDB2) ? Promise.resolve(indexedDB2.databases()).then((infos) => infos.map((info) => info.name).filter((name) => name !== DBNAMES_DB)) : getDbNamesTable(indexedDB2, IDBKeyRange2).toCollection().primaryKeys();
 }
-function _onDatabaseCreated({ indexedDB: indexedDB2, IDBKeyRange }, name) {
-  !hasDatabasesNative(indexedDB2) && name !== DBNAMES_DB && getDbNamesTable(indexedDB2, IDBKeyRange).put({ name }).catch(nop2);
+function _onDatabaseCreated({ indexedDB: indexedDB2, IDBKeyRange: IDBKeyRange2 }, name) {
+  !hasDatabasesNative(indexedDB2) && name !== DBNAMES_DB && getDbNamesTable(indexedDB2, IDBKeyRange2).put({ name }).catch(nop2);
 }
-function _onDatabaseDeleted({ indexedDB: indexedDB2, IDBKeyRange }, name) {
-  !hasDatabasesNative(indexedDB2) && name !== DBNAMES_DB && getDbNamesTable(indexedDB2, IDBKeyRange).delete(name).catch(nop2);
+function _onDatabaseDeleted({ indexedDB: indexedDB2, IDBKeyRange: IDBKeyRange2 }, name) {
+  !hasDatabasesNative(indexedDB2) && name !== DBNAMES_DB && getDbNamesTable(indexedDB2, IDBKeyRange2).delete(name).catch(nop2);
 }
 function vip(fn) {
   return newScope(function() {
@@ -17480,9 +17867,9 @@ function enterTransactionScope(db, mode, storeNames, parentTransaction, scopeFun
     });
   });
 }
-function pad(a, value, count) {
+function pad(a, value, count2) {
   const result = isArray2(a) ? a.slice() : [a];
-  for (let i = 0; i < count; ++i)
+  for (let i = 0; i < count2; ++i)
     result.push(value);
   return result;
 }
@@ -18682,175 +19069,29 @@ function propagateMessageLocally({ data }) {
 DexiePromise.rejectionMapper = mapError;
 setDebug(debug, dexieStackFrameFilter);
 
-// src/sharedEntities/sharedFolder.ts
-var import_obsidian6 = require("obsidian");
-var path2 = __toESM(require("path"));
-var handleUpdate = (ev, tx, folder, plugin) => {
-  const changedKeys = ev.changes.keys;
-  changedKeys.forEach(async (data, key) => {
-    if (data.action === "add") {
-      const value = tx.doc.getMap("documents").get(key);
-      const file = await folder.getOrCreateFile(value);
-      if (file) {
-        await SharedDocument.fromTFile(file, { id: key, permanent: true }, plugin);
-      }
-    }
-  });
-};
-var _SharedFolder = class extends SharedEntity {
-  constructor(root, opts, plugin) {
-    super(plugin);
-    this.root = root;
-    this._path = root.path;
-    this.yDoc = new Doc();
-    this._shareId = opts.id;
-    this.getDocsFragment().observe((ev, tx) => {
-      handleUpdate(ev, tx, this, plugin);
-    });
-    _SharedFolder._sharedEntites.push(this);
-  }
-  static async fromTFolder(root, plugin) {
-    showNotice(`Inititializing share for ${root.path}.`);
-    const files = this.getAllFilesInFolder(root);
-    for (const file of files) {
-      if (SharedDocument.findByPath(file.path)) {
-        showNotice("You can not share a directory that already has shared files in it (right now).");
-        return;
-      }
-    }
-    const data = await plugin.serverAPI.createPermanentSession();
-    if (!data || !data.id) {
-      showNotice("Error creating share");
-      return;
-    }
-    const docs = await Promise.all(files.map((file) => {
-      showNotice(`Inititializing share for ${file.path}`);
-      return SharedDocument.fromTFile(file, {
-        permanent: true
-      }, plugin);
-    }));
-    const folder = new _SharedFolder(root, { id: data.id }, plugin);
-    for (const doc2 of docs) {
-      folder.addDocument(doc2);
-    }
-    navigator.clipboard.writeText(plugin.settings.basePath + "/team/" + folder.shareId);
-    showNotice(`Folder ${folder.path} with ${docs.length} documents shared. URL copied to your clipboard.`);
-    folder.startWebSocketSync();
-    await plugin.permanentShareStore.add(folder);
-    return folder;
-  }
-  static async fromShareURL(url, plugin) {
-    const id2 = url.split("/").pop();
-    if (!id2 || !id2.match("^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$")) {
-      showNotice("No valid peerdraft link");
-      return;
-    }
-    const initialRootName = `_peerdraft_team_folder_${generateRandomString()}`;
-    const parent = plugin.app.fileManager.getNewFileParent("", initialRootName);
-    const folderPath = path2.join(parent.path, initialRootName);
-    const folder = await plugin.app.vault.createFolder(folderPath);
-    const sFolder = new _SharedFolder(folder, { id: id2 }, plugin);
-    sFolder.startWebSocketSync();
-    await plugin.permanentShareStore.add(sFolder);
-    return sFolder;
-  }
-  static findByPath(path3) {
-    return super.findByPath(path3);
-  }
-  static findById(id2) {
-    return super.findById(id2);
-  }
-  static getAll() {
-    return super.getAll();
-  }
-  getDocsFragment() {
-    return this.yDoc.getMap("documents");
-  }
-  addDocument(doc2) {
-    if (this.getDocsFragment().get(doc2.shareId))
-      return;
-    const relativePath = path2.relative(this.root.path, doc2.path);
-    if (relativePath.startsWith(".."))
-      return;
-    this.getDocsFragment().set(doc2.shareId, relativePath);
-  }
-  static getAllFilesInFolder(folder) {
-    const files = folder.children.flatMap((child) => {
-      if (child instanceof import_obsidian6.TFile) {
-        if (child.extension === "md") {
-          return child;
-        }
-      }
-      if (child instanceof import_obsidian6.TFolder) {
-        return this.getAllFilesInFolder(child);
-      }
-      return [];
-    });
-    return files;
-  }
-  async setNewFolderLocation(folder) {
-    const oldPath = this._path;
-    this.root = folder;
-    this._path = folder.path;
-    const dbEntry = await this.plugin.permanentShareStore.getFolderByPath(oldPath);
-    if (dbEntry) {
-      this.plugin.permanentShareStore.removeFolder(oldPath);
-      this.plugin.permanentShareStore.add(this);
-    }
-  }
-  async getOrCreateFile(relativePath) {
-    const absolutePath = path2.join(this.root.path, relativePath);
-    let file = this.plugin.app.vault.getAbstractFileByPath(absolutePath);
-    if (file && file instanceof import_obsidian6.TFile)
-      return file;
-    const folder = await this.getOrCreatePath(path2.parse(absolutePath).dir);
-    if (!folder) {
-      showNotice("Error creating shares");
-      return;
-    }
-    return await this.plugin.app.vault.create(absolutePath, "");
-  }
-  async getOrCreatePath(absolutePath) {
-    let folder = this.plugin.app.vault.getAbstractFileByPath(absolutePath);
-    if (folder && folder instanceof import_obsidian6.TFolder)
-      return folder;
-    const segments = absolutePath.split(path2.sep);
-    for (let index = 0; index < segments.length; index++) {
-      const subPath = segments.slice(0, index + 1).join(path2.sep);
-      folder = this.plugin.app.vault.getAbstractFileByPath(subPath);
-      if (!folder) {
-        folder = await this.plugin.app.vault.createFolder(subPath);
-      }
-    }
-    return folder;
-  }
-  destroy() {
-    super.destroy();
-    _SharedFolder._sharedEntites.splice(_SharedFolder._sharedEntites.indexOf(this), 1);
-  }
-};
-var SharedFolder = _SharedFolder;
-SharedFolder._sharedDocuments = [];
-
 // src/permanentShareStore.ts
 var PermanentShareStore = class {
   constructor(oid) {
+    this.keepOpen = true;
     this.oid = oid;
     this.db = new Dexie$1("peerdraft_" + this.oid);
     this.db.version(2).stores({
       sharedDocs: "path,persistenceId,shareId",
       sharedFolders: "path,persistenceId,shareId"
     });
+    this.db.on("close", () => {
+      if (this.keepOpen) {
+        this.db.open();
+      }
+    });
     this.documentTable = this.db._allTables["sharedDocs"];
     this.folderTable = this.db._allTables["sharedFolders"];
   }
   close() {
+    this.keepOpen = false;
     this.db.close();
   }
   add(doc2) {
-    console.log("add");
-    console.log(doc2);
-    console.log(doc2 instanceof SharedDocument);
     if (doc2 instanceof SharedDocument) {
       return this.documentTable.add({
         path: doc2.path,
@@ -19049,7 +19290,11 @@ var PeerdraftPlugin = class extends import_obsidian10.Plugin {
       oid: plugin.settings.oid,
       permanentSessionUrl: plugin.settings.sessionAPI
     });
-    plugin.activeStreamClient = new ActiveStreamClient(plugin.settings.actives);
+    plugin.activeStreamClient = new ActiveStreamClient(plugin.settings.actives, {
+      maxBackoffTime: 3e5,
+      connect: true,
+      resyncInterval: -1
+    });
     plugin.pws.on("add", (key, leaf) => {
       var _a;
       (_a = SharedDocument.findByPath(leaf.path)) == null ? void 0 : _a.addExtensionToLeaf(key);
@@ -19066,14 +19311,15 @@ var PeerdraftPlugin = class extends import_obsidian10.Plugin {
         (_a2 = SharedDocument.findByPath(leaf.path)) == null ? void 0 : _a2.addExtensionToLeaf(key);
       });
     });
-    plugin.pws.on("delete", (key, leaf) => {
-      var _a;
-      const doc2 = (_a = SharedDocument.findByPath(leaf.path)) == null ? void 0 : _a.removeExtensionFromLeaf(key);
+    plugin.pws.on("delete", async (key, leaf) => {
+      const doc2 = SharedDocument.findByPath(leaf.path);
+      if (!doc2)
+        return;
+      doc2.removeExtensionFromLeaf(key);
       const leafs = getLeafsByPath(leaf.path, plugin.pws);
       if (leafs.length === 0) {
-        const doc3 = SharedDocument.findByPath(leaf.path);
-        if (doc3 && !doc3.isPermanent) {
-          doc3.destroy();
+        if (doc2 && !doc2.isPermanent) {
+          await doc2.unshare();
         }
       }
       leaf.destroy();
@@ -19081,10 +19327,13 @@ var PeerdraftPlugin = class extends import_obsidian10.Plugin {
     plugin.permanentShareStore = new PermanentShareStore(plugin.settings.oid);
     plugin.app.workspace.onLayoutReady(
       async () => {
-        var _a;
         const permanentlySharedDocs = await plugin.permanentShareStore.getAllDocs();
         for (const doc2 of permanentlySharedDocs) {
-          (_a = SharedDocument.fromPermanentShareDocument(doc2, plugin)) == null ? void 0 : _a.startWebSocketSync();
+          SharedDocument.fromPermanentShareDocument(doc2, plugin);
+        }
+        const permanentlySharedFolders = await plugin.permanentShareStore.getAllFolders();
+        for (const folder of permanentlySharedFolders) {
+          SharedFolder.fromPermanentShareFolder(folder, plugin);
         }
         updatePeerdraftWorkspace(plugin.app.workspace, plugin.pws);
         plugin.registerEvent(plugin.app.workspace.on("layout-change", () => {
@@ -19151,7 +19400,8 @@ var PeerdraftPlugin = class extends import_obsidian10.Plugin {
           return false;
         if (checking)
           return true;
-        doc2.destroy();
+        doc2.unshare().then(() => {
+        });
       }
     });
     plugin.addCommand({
@@ -19164,11 +19414,48 @@ var PeerdraftPlugin = class extends import_obsidian10.Plugin {
         }
       }
     });
-    this.registerEvent(this.app.vault.on("rename", async (file, oldPath) => {
+    if (plugin.settings.debug) {
+      plugin.addCommand({
+        id: "clearDatabase",
+        name: "DEBUG: clear database (Nothing will be shared after this!)",
+        callback: async () => {
+          var _a;
+          const dbs = await window.indexedDB.databases();
+          for (const db of dbs) {
+            for (const doc2 of SharedDocument.getAll()) {
+              doc2.unshare();
+            }
+            for (const folder of SharedFolder.getAll()) {
+              folder.unshare();
+            }
+            if ((_a = db.name) == null ? void 0 : _a.startsWith("peerdraft_")) {
+              window.indexedDB.deleteDatabase(db.name);
+            }
+          }
+        }
+      });
+    }
+    plugin.registerEvent(plugin.app.vault.on("rename", async (file, oldPath) => {
       if (file instanceof import_obsidian10.TFile) {
         const doc2 = SharedDocument.findByPath(oldPath);
         if (doc2) {
           await doc2.setNewFileLocation(file);
+        }
+        const oldPathInFolder = SharedFolder.getSharedFolderForSubPath(oldPath);
+        const newPathInFolder = SharedFolder.getSharedFolderForSubPath(file.path);
+        if (oldPathInFolder && newPathInFolder) {
+          if (oldPathInFolder === newPathInFolder) {
+            oldPathInFolder.updatePath(oldPath, file.path);
+          } else {
+            const doc3 = await SharedDocument.fromTFile(file, { permanent: true }, plugin);
+            newPathInFolder.addDocument(doc3);
+          }
+        } else if (oldPathInFolder && !newPathInFolder) {
+          if (doc2) {
+          }
+        } else if (!oldPathInFolder && newPathInFolder) {
+          const doc3 = await SharedDocument.fromTFile(file, { permanent: true }, plugin);
+          newPathInFolder.addDocument(doc3);
         }
       } else if (file instanceof import_obsidian10.TFolder) {
         const folder = SharedFolder.findByPath(oldPath);
@@ -19177,6 +19464,37 @@ var PeerdraftPlugin = class extends import_obsidian10.Plugin {
         }
       }
     }));
+    plugin.registerEvent(plugin.app.vault.on("delete", async (file) => {
+      plugin.log("register delete for " + file.path);
+      const folder = SharedFolder.getSharedFolderForSubPath(file.path);
+      if (!folder) {
+        if (file instanceof import_obsidian10.TFile) {
+          const doc2 = SharedDocument.findByPath(file.path);
+          if (doc2) {
+            await doc2.unshare();
+          }
+        }
+      }
+    }));
+    plugin.app.workspace.onLayoutReady(
+      () => {
+        plugin.registerEvent(plugin.app.vault.on("create", async (file) => {
+          if (!(file instanceof import_obsidian10.TFile))
+            return;
+          const folder = SharedFolder.getSharedFolderForSubPath(file.path);
+          if (!folder)
+            return;
+          if (folder.isFileInSyncObject(file))
+            return;
+          if (SharedDocument.findByPath(file.path))
+            return;
+          const doc2 = await SharedDocument.fromTFile(file, {
+            permanent: true
+          }, plugin);
+          folder.addDocument(doc2);
+        }));
+      }
+    );
     const settingsTab = createSettingsTab(plugin);
     const settings = await getSettings(plugin);
     if (!settings.name) {
@@ -19197,6 +19515,11 @@ var PeerdraftPlugin = class extends import_obsidian10.Plugin {
     });
     this.activeStreamClient.destroy();
     this.permanentShareStore.close();
+  }
+  log(message) {
+    if (this.settings.debug) {
+      console.log(message);
+    }
   }
 };
 

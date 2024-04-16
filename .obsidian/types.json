@@ -32,6 +32,7 @@
     "Peer Reviewed": "number",
     "dg-home": "checkbox",
     "dg-publish": "checkbox",
-    "excalidraw-open-md": "checkbox"
+    "excalidraw-open-md": "checkbox",
+    "excalidraw-export-embed-scene": "checkbox"
   }
 }

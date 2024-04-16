@@ -20,102 +20,97 @@ var __toCommonJS = (mod) => __copyProps(__defProp({}, "__esModule", { value: tru
 // src/main.ts
 var main_exports = {};
 __export(main_exports, {
-  default: () => SNWPlugin
+  UPDATE_DEBOUNCE: () => UPDATE_DEBOUNCE,
+  default: () => SNWPlugin4
 });
 module.exports = __toCommonJS(main_exports);
-var import_obsidian13 = require("obsidian");
+var import_obsidian14 = require("obsidian");
 
 // src/indexer.ts
 var import_obsidian = require("obsidian");
-var references;
-var allLinkResolutions;
+var indexedReferences = /* @__PURE__ */ new Map();
 var lastUpdateToReferences = 0;
-var thePlugin;
-function setPluginVariableForIndexer(plugin) {
-  thePlugin = plugin;
+var plugin;
+function setPluginVariableForIndexer(snwPlugin) {
+  plugin = snwPlugin;
 }
-function getReferencesCache() {
-  return references;
+function getIndexedReferences() {
+  return indexedReferences;
 }
-function getSnwAllLinksResolutions() {
-  return allLinkResolutions;
-}
-function buildLinksAndReferences() {
-  var _a, _b, _c, _d;
-  if (thePlugin.showCountsActive != true)
+var getLinkReferencesForFile = (file, cache) => {
+  if (plugin.settings.enableIgnoreObsExcludeFoldersLinksFrom && (file == null ? void 0 : file.path) && plugin.app.metadataCache.isUserIgnored(file == null ? void 0 : file.path)) {
     return;
-  allLinkResolutions = [];
-  thePlugin.app.metadataCache.iterateReferences((src, refs2) => {
-    var _a2, _b2;
-    const resolvedFilePath = (0, import_obsidian.parseLinktext)(refs2.link);
-    if (resolvedFilePath.path === "")
-      resolvedFilePath.path = src.replace(".md", "");
-    if (resolvedFilePath == null ? void 0 : resolvedFilePath.path) {
-      const resolvedTFile = thePlugin.app.metadataCache.getFirstLinkpathDest(
-        resolvedFilePath.path,
-        "/"
-      );
-      const fileLink = resolvedTFile === null ? "" : resolvedTFile.path.replace(".md", "") + (0, import_obsidian.stripHeading)(resolvedFilePath.subpath);
-      const ghlink = resolvedTFile === null ? resolvedFilePath.path : "";
-      const sourceFile = thePlugin.app.metadataCache.getFirstLinkpathDest(src, "/");
-      if (thePlugin.settings.enableIgnoreObsExcludeFoldersLinksFrom) {
-        if (thePlugin.app.metadataCache.isUserIgnored((_a2 = sourceFile == null ? void 0 : sourceFile.path) != null ? _a2 : ""))
+  }
+  for (const item of [cache == null ? void 0 : cache.links, cache == null ? void 0 : cache.embeds, cache == null ? void 0 : cache.frontmatterLinks]) {
+    if (!item)
+      continue;
+    for (const ref of item) {
+      const { path, subpath } = (0, import_obsidian.parseLinktext)(ref.link);
+      const tfileDestination = app.metadataCache.getFirstLinkpathDest(path, "/");
+      if (tfileDestination) {
+        if (plugin.settings.enableIgnoreObsExcludeFoldersLinksTo && (tfileDestination == null ? void 0 : tfileDestination.path) && plugin.app.metadataCache.isUserIgnored(tfileDestination.path)) {
           return;
-      }
-      if (thePlugin.settings.enableIgnoreObsExcludeFoldersLinksTo) {
-        if (thePlugin.app.metadataCache.isUserIgnored(fileLink))
-          return;
-      }
-      allLinkResolutions.push({
-        reference: {
-          displayText: (_b2 = refs2.displayText) != null ? _b2 : "",
-          // link: refs.link, // old approach
-          link: fileLink != "" ? fileLink : ghlink,
-          position: refs2.position
-        },
-        resolvedFile: resolvedTFile,
-        ghostLink: ghlink,
-        realLink: refs2.link,
-        sourceFile,
-        excludedFile: false
-      });
-    }
-  });
-  const snwIndexExceptionsList = Object.entries(app.metadataCache.metadataCache).filter(
-    (e2) => {
-      var _a2, _b2;
-      return (_b2 = (_a2 = e2[1]) == null ? void 0 : _a2.frontmatter) == null ? void 0 : _b2["snw-index-exclude"];
-    }
-  );
-  const snwIndexExceptions = Object.entries(app.metadataCache.fileCache).filter((e2) => {
-    return snwIndexExceptionsList.find((f3) => f3[0] === e2[1].hash);
-  });
-  for (let i3 = 0; i3 < allLinkResolutions.length; i3++) {
-    allLinkResolutions[i3].excludedFile = false;
-    if ((_b = (_a = allLinkResolutions[i3]) == null ? void 0 : _a.resolvedFile) == null ? void 0 : _b.path) {
-      const fileName = (_d = (_c = allLinkResolutions[i3].resolvedFile) == null ? void 0 : _c.path) != null ? _d : "";
-      for (let e2 = 0; e2 < snwIndexExceptions.length; e2++) {
-        if (fileName == snwIndexExceptions[e2][0]) {
-          allLinkResolutions[i3].excludedFile = true;
-          break;
         }
+        const cacheDestination = tfileDestination ? app.metadataCache.getFileCache(tfileDestination) : null;
+        if (cacheDestination && (cacheDestination == null ? void 0 : cacheDestination.frontmatter) && (cacheDestination == null ? void 0 : cacheDestination.frontmatter["snw-index-exclude"]) === true)
+          continue;
+        const linkWithFullPath = tfileDestination ? tfileDestination.path.replace("." + tfileDestination.extension, "") + subpath : path;
+        if (!indexedReferences.has(linkWithFullPath))
+          indexedReferences.set(linkWithFullPath, []);
+        indexedReferences.get(linkWithFullPath).push({
+          realLink: ref.link,
+          reference: ref,
+          resolvedFile: tfileDestination,
+          sourceFile: file
+        });
+      } else {
+        if (!indexedReferences.has(ref.link))
+          indexedReferences.set(ref.link, []);
+        const ghostFile = {
+          vault: plugin.app.vault,
+          path: path + ".md",
+          name: path + ".md",
+          parent: null,
+          stat: {
+            ctime: 0,
+            mtime: 0,
+            size: 0
+          },
+          basename: path,
+          extension: "md"
+        };
+        indexedReferences.get(ref.link).push({
+          realLink: ref.link,
+          reference: ref,
+          resolvedFile: ghostFile,
+          sourceFile: file
+        });
       }
     }
   }
-  const refs = allLinkResolutions.reduce(
-    (acc, link) => {
-      let keyBasedOnLink = "";
-      keyBasedOnLink = link.reference.link;
-      if (!acc[keyBasedOnLink]) {
-        acc[keyBasedOnLink] = [];
+};
+var removeLinkReferencesForFile = async (file) => {
+  var _a;
+  for (const [key, items] of indexedReferences.entries()) {
+    for (let i3 = items.length - 1; i3 >= 0; i3--) {
+      const item = items[i3];
+      if ((item == null ? void 0 : item.sourceFile) && ((_a = item == null ? void 0 : item.sourceFile) == null ? void 0 : _a.path) === file.path) {
+        items.splice(i3, 1);
       }
-      acc[keyBasedOnLink].push(link);
-      return acc;
-    },
-    {}
-  );
-  references = refs;
-  window.snwAPI.references = references;
+    }
+    indexedReferences.set(key, items);
+  }
+};
+function buildLinksAndReferences() {
+  if (plugin.showCountsActive != true)
+    return;
+  indexedReferences = /* @__PURE__ */ new Map();
+  for (const file of plugin.app.vault.getMarkdownFiles()) {
+    const fileCache = plugin.app.metadataCache.getFileCache(file);
+    if (fileCache)
+      getLinkReferencesForFile(file, fileCache);
+  }
+  window.snwAPI.references = indexedReferences;
   lastUpdateToReferences = Date.now();
 }
 var cacheCurrentPages = /* @__PURE__ */ new Map();
@@ -125,24 +120,22 @@ function getSNWCacheByFile(file) {
     const cachedPage = cacheCurrentPages.get(file.path);
     if (cachedPage) {
       const cachedPageCreateDate = (_a = cachedPage.createDate) != null ? _a : 0;
-      if (lastUpdateToReferences < cachedPageCreateDate && cachedPageCreateDate + thePlugin.settings.cacheUpdateInMilliseconds > Date.now()) {
+      if (lastUpdateToReferences < cachedPageCreateDate && cachedPageCreateDate + 500 > Date.now()) {
         return cachedPage;
       }
     }
   }
-  if (thePlugin.showCountsActive != true)
+  if (plugin.showCountsActive != true)
     return {};
   const transformedCache = {};
-  const cachedMetaData = thePlugin.app.metadataCache.getFileCache(file);
+  const cachedMetaData = plugin.app.metadataCache.getFileCache(file);
   if (!cachedMetaData) {
     return transformedCache;
   }
-  if (!references) {
+  if (!indexedReferences) {
     buildLinksAndReferences();
   }
-  const headings = Object.values(
-    thePlugin.app.metadataCache.metadataCache
-  ).reduce((acc, file2) => {
+  const headings = Object.values(plugin.app.metadataCache.metadataCache).reduce((acc, file2) => {
     const headings2 = file2.headings;
     if (headings2) {
       headings2.forEach((heading) => {
@@ -152,28 +145,32 @@ function getSNWCacheByFile(file) {
     return acc;
   }, []);
   if (cachedMetaData == null ? void 0 : cachedMetaData.blocks) {
-    const filePath = file.path.replace(".md", "");
-    transformedCache.blocks = Object.values(cachedMetaData.blocks).map((block) => ({
-      key: filePath + block.id,
-      pos: block.position,
-      page: file.basename,
-      type: "block",
-      references: references[filePath + block.id] || []
-    }));
+    const filePath = file.path.replace("." + file.extension, "");
+    transformedCache.blocks = Object.values(cachedMetaData.blocks).map((block) => {
+      const key = filePath + "#^" + block.id;
+      return {
+        key,
+        pos: block.position,
+        page: file.basename,
+        type: "block",
+        references: indexedReferences.get(key) || []
+      };
+    });
   }
   if (cachedMetaData == null ? void 0 : cachedMetaData.headings) {
-    transformedCache.headings = cachedMetaData.headings.map(
-      (header) => ({
-        original: "#".repeat(header.level) + " " + header.heading,
-        key: `${file.path.replace(".md", "")}${(0, import_obsidian.stripHeading)(header.heading)}`,
-        headerMatch: header.heading,
-        headerMatch2: file.basename + "#" + header.heading,
+    transformedCache.headings = cachedMetaData.headings.map((header) => {
+      const headingString = "#".repeat(header.level) + header.heading;
+      const key = `${file.path.replace("." + file.extension, "")}#${header.heading.replace(/\[|\]/g, "")}`;
+      return {
+        original: headingString,
+        key,
+        headerMatch: header.heading.replaceAll("[", "").replaceAll("]", ""),
         pos: header.position,
         page: file.basename,
         type: "heading",
-        references: references[`${file.path.replace(".md", "")}${(0, import_obsidian.stripHeading)(header.heading)}`] || []
-      })
-    );
+        references: indexedReferences.get(key) || []
+      };
+    });
   }
   if (cachedMetaData == null ? void 0 : cachedMetaData.links) {
     transformedCache.links = cachedMetaData.links.map((link) => {
@@ -182,7 +179,7 @@ function getSNWCacheByFile(file) {
         newLinkPath = link.link;
       }
       if (newLinkPath.startsWith("#^") || newLinkPath.startsWith("#")) {
-        newLinkPath = file.path.replace(".md", "") + (0, import_obsidian.stripHeading)(newLinkPath);
+        newLinkPath = file.path.replace("." + file.extension, "") + newLinkPath;
       }
       return {
         key: newLinkPath,
@@ -190,15 +187,13 @@ function getSNWCacheByFile(file) {
         type: "link",
         pos: link.position,
         page: file.basename,
-        references: references[newLinkPath] || []
+        references: indexedReferences.get(newLinkPath) || []
       };
     });
     if (transformedCache.links) {
       transformedCache.links = transformedCache.links.map((link) => {
         if (link.key.includes("#") && !link.key.includes("#^")) {
-          const heading = headings.filter(
-            (heading2) => (0, import_obsidian.stripHeading)(heading2) === link.key.split("#")[1]
-          )[0];
+          const heading = headings.filter((heading2) => heading2 === link.key.split("#")[1])[0];
           link.original = heading ? heading : void 0;
         }
         return link;
@@ -208,33 +203,49 @@ function getSNWCacheByFile(file) {
   if (cachedMetaData == null ? void 0 : cachedMetaData.embeds) {
     transformedCache.embeds = cachedMetaData.embeds.map((embed) => {
       let newEmbedPath = parseLinkTextToFullPath(embed.link);
+      newEmbedPath = newEmbedPath === "" ? embed.link : newEmbedPath;
       if (newEmbedPath === "" && (embed.link.startsWith("#^") || embed.link.startsWith("#"))) {
-        newEmbedPath = file.path.replace(".md", "") + (0, import_obsidian.stripHeading)(embed.link);
+        newEmbedPath = file.path.replace("." + file.extension, "") + embed.link;
       }
       const output = {
         key: newEmbedPath,
         page: file.basename,
         type: "embed",
         pos: embed.position,
-        references: references[newEmbedPath] || []
+        references: indexedReferences.get(newEmbedPath) || []
       };
       return output;
     });
     if (transformedCache.embeds) {
       transformedCache.embeds = transformedCache.embeds.map((embed) => {
         if (embed.key.includes("#") && !embed.key.includes("#^") && transformedCache.headings) {
-          const heading = headings.filter(
-            (heading2) => heading2.includes(embed.key.split("#")[1])
-          )[0];
+          const heading = headings.filter((heading2) => heading2.includes(embed.key.split("#")[1]))[0];
           embed.original = heading ? heading : void 0;
         }
         if (embed.key.startsWith("#^") || embed.key.startsWith("#")) {
           embed.key = `${file.basename}${embed.key}`;
-          embed.references = references[embed.key] || [];
+          embed.references = indexedReferences.get(embed.key) || [];
         }
         return embed;
       });
     }
+  }
+  if (cachedMetaData == null ? void 0 : cachedMetaData.frontmatterLinks) {
+    transformedCache.frontmatterLinks = cachedMetaData.frontmatterLinks.map((link) => {
+      let newLinkPath = parseLinkTextToFullPath(link.link);
+      if (newLinkPath === "") {
+        newLinkPath = link.link;
+      }
+      return {
+        key: newLinkPath,
+        original: link.original,
+        type: "frontmatterLink",
+        pos: { start: { line: -1, col: -1, offset: -1 }, end: { line: -1, col: -1, offset: -1 } },
+        displayText: link.displayText,
+        page: file.basename,
+        references: indexedReferences.get(newLinkPath) || []
+      };
+    });
   }
   transformedCache.cacheMetaData = cachedMetaData;
   transformedCache.createDate = Date.now();
@@ -243,14 +254,11 @@ function getSNWCacheByFile(file) {
 }
 function parseLinkTextToFullPath(link) {
   const resolvedFilePath = (0, import_obsidian.parseLinktext)(link);
-  const resolvedTFile = thePlugin.app.metadataCache.getFirstLinkpathDest(
-    resolvedFilePath.path,
-    "/"
-  );
+  const resolvedTFile = plugin.app.metadataCache.getFirstLinkpathDest(resolvedFilePath.path, "/");
   if (resolvedTFile === null)
     return "";
   else
-    return resolvedTFile.path.replace(".md", "") + (0, import_obsidian.stripHeading)(resolvedFilePath.subpath);
+    return resolvedTFile.path.replace("." + resolvedTFile.extension, "") + resolvedFilePath.subpath;
 }
 
 // src/view-extensions/references-cm6.ts
@@ -1617,8 +1625,8 @@ function popperGenerator(generatorOptions) {
           popper: listScrollParents(popper2)
         };
         var orderedModifiers = orderModifiers(mergeByName([].concat(defaultModifiers2, state.options.modifiers)));
-        state.orderedModifiers = orderedModifiers.filter(function(m2) {
-          return m2.enabled;
+        state.orderedModifiers = orderedModifiers.filter(function(m) {
+          return m.enabled;
         });
         runModifierEffects();
         return instance.update();
@@ -2047,8 +2055,8 @@ var setDefaultProps = function setDefaultProps2(partialProps) {
 };
 function getExtendedPassedProps(passedProps) {
   var plugins = passedProps.plugins || [];
-  var pluginProps2 = plugins.reduce(function(acc, plugin) {
-    var name = plugin.name, defaultValue = plugin.defaultValue;
+  var pluginProps2 = plugins.reduce(function(acc, plugin11) {
+    var name = plugin11.name, defaultValue = plugin11.defaultValue;
     if (name) {
       var _name;
       acc[name] = passedProps[name] !== void 0 ? passedProps[name] : (_name = defaultProps[name]) != null ? _name : defaultValue;
@@ -2102,8 +2110,8 @@ function validateProps(partialProps, plugins) {
     var nonPluginProps = removeProperties(defaultProps, Object.keys(pluginProps));
     var didPassUnknownProp = !hasOwnProperty(nonPluginProps, prop);
     if (didPassUnknownProp) {
-      didPassUnknownProp = plugins.filter(function(plugin) {
-        return plugin.name === prop;
+      didPassUnknownProp = plugins.filter(function(plugin11) {
+        return plugin11.name === prop;
       }).length === 0;
     }
     warnWhen(didPassUnknownProp, ["`" + prop + "`", "is not a valid prop. You may have spelled it incorrectly, or if it's", "a plugin, forgot to pass it in an array as props.plugins.", "\n\n", "All props: https://atomiks.github.io/tippyjs/v6/all-props/\n", "Plugins: https://atomiks.github.io/tippyjs/v6/plugins/"].join(" "));
@@ -2279,8 +2287,8 @@ function createTippy(reference2, passedProps) {
   instance.popper = popper2;
   reference2._tippy = instance;
   popper2._tippy = instance;
-  var pluginsHooks = plugins.map(function(plugin) {
-    return plugin.fn(instance);
+  var pluginsHooks = plugins.map(function(plugin11) {
+    return plugin11.fn(instance);
   });
   var hasAriaExpanded = reference2.hasAttribute("aria-expanded");
   addListeners();
@@ -3038,9 +3046,7 @@ var getScrollParent2 = (element, includeHidden) => {
   return document.body;
 };
 var scrollResultsIntoView = (resultContainerEl) => {
-  const searchResults = resultContainerEl.querySelectorAll(
-    ".search-result-file-matched-text"
-  );
+  const searchResults = resultContainerEl.querySelectorAll(".search-result-file-matched-text");
   for (const searchResult of Array.from(searchResults)) {
     if (searchResult instanceof HTMLElement) {
       const scrollParent = getScrollParent2(searchResult, true);
@@ -3068,19 +3074,15 @@ var doesPositionIncludeAnother = (container, child) => {
   }
 };
 
-// src/ui/components/context/context-builder.ts
+// src/ui/components/context/ContextBuilder.ts
 var ContextBuilder = class {
   constructor(fileContents, { listItems = [], headings = [], sections = [] }) {
     this.fileContents = fileContents;
     this.getListItemIndexContaining = (searchedForPosition) => {
-      return this.listItems.findIndex(
-        ({ position }) => doesPositionIncludeAnother(position, searchedForPosition)
-      );
+      return this.listItems.findIndex(({ position }) => doesPositionIncludeAnother(position, searchedForPosition));
     };
     this.getSectionContaining = (searchedForPosition) => {
-      return this.sections.find(
-        ({ position }) => doesPositionIncludeAnother(position, searchedForPosition)
-      );
+      return this.sections.find(({ position }) => doesPositionIncludeAnother(position, searchedForPosition));
     };
     this.getListItemWithDescendants = (listItemIndex) => {
       const rootListItem = this.listItems[listItemIndex];
@@ -3127,9 +3129,7 @@ var ContextBuilder = class {
     return listBreadcrumbs;
   }
   getFirstSectionUnder(position) {
-    return this.sections.find(
-      (section) => section.position.start.line > position.start.line
-    );
+    return this.sections.find((section) => section.position.start.line > position.start.line);
   }
   getHeadingContaining(position) {
     const index = this.getHeadingIndexContaining(position);
@@ -3181,9 +3181,7 @@ var ContextBuilder = class {
   getHeadingIndexContaining(position) {
     if (position === void 0)
       return -1;
-    return this.headings.findIndex(
-      (heading) => heading.position.start.line === position.start.line
-    );
+    return this.headings.findIndex((heading) => heading.position.start.line === position.start.line);
   }
 };
 
@@ -3195,11 +3193,7 @@ var formatListBreadcrumbs = (fileContents, breadcrumbs) => chainBreadcrumbs(
 var formatListWithDescendants = (textInput, listItems) => {
   const root = listItems[0];
   const leadingSpacesCount = root.position.start.col;
-  return listItems.map(
-    (itemCache) => getTextFromLineStartToPositionEnd(textInput, itemCache.position).slice(
-      leadingSpacesCount
-    )
-  ).join("\n");
+  return listItems.map((itemCache) => getTextFromLineStartToPositionEnd(textInput, itemCache.position).slice(leadingSpacesCount)).join("\n");
 };
 var formatHeadingBreadCrumbs = (breadcrumbs) => chainBreadcrumbs(breadcrumbs.map((headingCache) => headingCache.heading));
 
@@ -3213,47 +3207,50 @@ var o;
 var r;
 var f;
 var e;
-var c = {};
-var s = [];
-var a = /acit|ex(?:s|g|n|p|$)|rph|grid|ows|mnc|ntw|ine[ch]|zoo|^ord|itera/i;
-var h = Array.isArray;
-function v(n2, l2) {
+var c;
+var s;
+var a;
+var h = {};
+var v = [];
+var p = /acit|ex(?:s|g|n|p|$)|rph|grid|ows|mnc|ntw|ine[ch]|zoo|^ord|itera/i;
+var y = Array.isArray;
+function d(n2, l2) {
   for (var u3 in l2)
     n2[u3] = l2[u3];
   return n2;
 }
-function p(n2) {
+function _(n2) {
   var l2 = n2.parentNode;
   l2 && l2.removeChild(n2);
 }
-function y(l2, u3, t2) {
+function g(l2, u3, t2) {
   var i3, o2, r2, f3 = {};
   for (r2 in u3)
     "key" == r2 ? i3 = u3[r2] : "ref" == r2 ? o2 = u3[r2] : f3[r2] = u3[r2];
   if (arguments.length > 2 && (f3.children = arguments.length > 3 ? n.call(arguments, 2) : t2), "function" == typeof l2 && null != l2.defaultProps)
     for (r2 in l2.defaultProps)
       void 0 === f3[r2] && (f3[r2] = l2.defaultProps[r2]);
-  return d(l2, f3, i3, o2, null);
+  return b(l2, f3, i3, o2, null);
 }
-function d(n2, t2, i3, o2, r2) {
+function b(n2, t2, i3, o2, r2) {
   var f3 = { type: n2, props: t2, key: i3, ref: o2, __k: null, __: null, __b: 0, __e: null, __d: void 0, __c: null, constructor: void 0, __v: null == r2 ? ++u : r2, __i: -1, __u: 0 };
   return null == r2 && null != l.vnode && l.vnode(f3), f3;
 }
-function g(n2) {
+function w(n2) {
   return n2.children;
 }
-function b(n2, l2) {
+function k(n2, l2) {
   this.props = n2, this.context = l2;
 }
-function m(n2, l2) {
+function x(n2, l2) {
   if (null == l2)
-    return n2.__ ? m(n2.__, n2.__i + 1) : null;
+    return n2.__ ? x(n2.__, n2.__i + 1) : null;
   for (var u3; l2 < n2.__k.length; l2++)
     if (null != (u3 = n2.__k[l2]) && null != u3.__e)
       return u3.__e;
-  return "function" == typeof n2.type ? m(n2) : null;
+  return "function" == typeof n2.type ? x(n2) : null;
 }
-function w(n2) {
+function C(n2) {
   var l2, u3;
   if (null != (n2 = n2.__) && null != n2.__c) {
     for (n2.__e = n2.__c.base = null, l2 = 0; l2 < n2.__k.length; l2++)
@@ -3261,37 +3258,37 @@ function w(n2) {
         n2.__e = n2.__c.base = u3.__e;
         break;
       }
-    return w(n2);
+    return C(n2);
   }
 }
-function k(n2) {
-  (!n2.__d && (n2.__d = true) && i.push(n2) && !x.__r++ || o !== l.debounceRendering) && ((o = l.debounceRendering) || r)(x);
+function P(n2) {
+  (!n2.__d && (n2.__d = true) && i.push(n2) && !S.__r++ || o !== l.debounceRendering) && ((o = l.debounceRendering) || r)(S);
 }
-function x() {
-  var n2, u3, t2, o2, r2, e2, c2, s2, a2;
+function S() {
+  var n2, u3, t2, o2, r2, e2, c2, s2;
   for (i.sort(f); n2 = i.shift(); )
-    n2.__d && (u3 = i.length, o2 = void 0, e2 = (r2 = (t2 = n2).__v).__e, s2 = [], a2 = [], (c2 = t2.__P) && ((o2 = v({}, r2)).__v = r2.__v + 1, l.vnode && l.vnode(o2), F(c2, o2, r2, t2.__n, void 0 !== c2.ownerSVGElement, 32 & r2.__u ? [e2] : null, s2, null == e2 ? m(r2) : e2, !!(32 & r2.__u), a2), o2.__v = r2.__v, o2.__.__k[o2.__i] = o2, L(s2, o2, a2), o2.__e != e2 && w(o2)), i.length > u3 && i.sort(f));
-  x.__r = 0;
+    n2.__d && (u3 = i.length, o2 = void 0, e2 = (r2 = (t2 = n2).__v).__e, c2 = [], s2 = [], t2.__P && ((o2 = d({}, r2)).__v = r2.__v + 1, l.vnode && l.vnode(o2), O(t2.__P, o2, r2, t2.__n, void 0 !== t2.__P.ownerSVGElement, 32 & r2.__u ? [e2] : null, c2, null == e2 ? x(r2) : e2, !!(32 & r2.__u), s2), o2.__v = r2.__v, o2.__.__k[o2.__i] = o2, j(c2, o2, s2), o2.__e != e2 && C(o2)), i.length > u3 && i.sort(f));
+  S.__r = 0;
 }
-function C(n2, l2, u3, t2, i3, o2, r2, f3, e2, a2, h2) {
-  var v2, p2, y2, d2, _, g2 = t2 && t2.__k || s, b2 = l2.length;
-  for (u3.__d = e2, P(u3, l2, g2), e2 = u3.__d, v2 = 0; v2 < b2; v2++)
-    null != (y2 = u3.__k[v2]) && "boolean" != typeof y2 && "function" != typeof y2 && (p2 = -1 === y2.__i ? c : g2[y2.__i] || c, y2.__i = v2, F(n2, y2, p2, i3, o2, r2, f3, e2, a2, h2), d2 = y2.__e, y2.ref && p2.ref != y2.ref && (p2.ref && O(p2.ref, null, y2), h2.push(y2.ref, y2.__c || d2, y2)), null == _ && null != d2 && (_ = d2), 65536 & y2.__u || p2.__k === y2.__k ? (d2 || p2.__e != e2 || (e2 = m(p2)), e2 = S(y2, e2, n2)) : "function" == typeof y2.type && void 0 !== y2.__d ? e2 = y2.__d : d2 && (e2 = d2.nextSibling), y2.__d = void 0, y2.__u &= -196609);
-  u3.__d = e2, u3.__e = _;
+function $(n2, l2, u3, t2, i3, o2, r2, f3, e2, c2, s2) {
+  var a2, p2, y2, d2, _2, g2 = t2 && t2.__k || v, b2 = l2.length;
+  for (u3.__d = e2, I(u3, l2, g2), e2 = u3.__d, a2 = 0; a2 < b2; a2++)
+    null != (y2 = u3.__k[a2]) && "boolean" != typeof y2 && "function" != typeof y2 && (p2 = -1 === y2.__i ? h : g2[y2.__i] || h, y2.__i = a2, O(n2, y2, p2, i3, o2, r2, f3, e2, c2, s2), d2 = y2.__e, y2.ref && p2.ref != y2.ref && (p2.ref && N(p2.ref, null, y2), s2.push(y2.ref, y2.__c || d2, y2)), null == _2 && null != d2 && (_2 = d2), 65536 & y2.__u || p2.__k === y2.__k ? (e2 && !e2.isConnected && (e2 = x(p2)), e2 = H(y2, e2, n2)) : "function" == typeof y2.type && void 0 !== y2.__d ? e2 = y2.__d : d2 && (e2 = d2.nextSibling), y2.__d = void 0, y2.__u &= -196609);
+  u3.__d = e2, u3.__e = _2;
 }
-function P(n2, l2, u3) {
+function I(n2, l2, u3) {
   var t2, i3, o2, r2, f3, e2 = l2.length, c2 = u3.length, s2 = c2, a2 = 0;
   for (n2.__k = [], t2 = 0; t2 < e2; t2++)
-    r2 = t2 + a2, null != (i3 = n2.__k[t2] = null == (i3 = l2[t2]) || "boolean" == typeof i3 || "function" == typeof i3 ? null : "string" == typeof i3 || "number" == typeof i3 || "bigint" == typeof i3 || i3.constructor == String ? d(null, i3, null, null, null) : h(i3) ? d(g, { children: i3 }, null, null, null) : void 0 === i3.constructor && i3.__b > 0 ? d(i3.type, i3.props, i3.key, i3.ref ? i3.ref : null, i3.__v) : i3) ? (i3.__ = n2, i3.__b = n2.__b + 1, f3 = I(i3, u3, r2, s2), i3.__i = f3, o2 = null, -1 !== f3 && (s2--, (o2 = u3[f3]) && (o2.__u |= 131072)), null == o2 || null === o2.__v ? (-1 == f3 && a2--, "function" != typeof i3.type && (i3.__u |= 65536)) : f3 !== r2 && (f3 === r2 + 1 ? a2++ : f3 > r2 ? s2 > e2 - r2 ? a2 += f3 - r2 : a2-- : f3 < r2 ? f3 == r2 - 1 && (a2 = f3 - r2) : a2 = 0, f3 !== t2 + a2 && (i3.__u |= 65536))) : (o2 = u3[r2]) && null == o2.key && o2.__e && 0 == (131072 & o2.__u) && (o2.__e == n2.__d && (n2.__d = m(o2)), j(o2, o2, false), u3[r2] = null, s2--);
+    r2 = t2 + a2, null != (i3 = n2.__k[t2] = null == (i3 = l2[t2]) || "boolean" == typeof i3 || "function" == typeof i3 ? null : "string" == typeof i3 || "number" == typeof i3 || "bigint" == typeof i3 || i3.constructor == String ? b(null, i3, null, null, null) : y(i3) ? b(w, { children: i3 }, null, null, null) : void 0 === i3.constructor && i3.__b > 0 ? b(i3.type, i3.props, i3.key, i3.ref ? i3.ref : null, i3.__v) : i3) ? (i3.__ = n2, i3.__b = n2.__b + 1, f3 = A(i3, u3, r2, s2), i3.__i = f3, o2 = null, -1 !== f3 && (s2--, (o2 = u3[f3]) && (o2.__u |= 131072)), null == o2 || null === o2.__v ? (-1 == f3 && a2--, "function" != typeof i3.type && (i3.__u |= 65536)) : f3 !== r2 && (f3 === r2 + 1 ? a2++ : f3 > r2 ? s2 > e2 - r2 ? a2 += f3 - r2 : a2-- : f3 < r2 ? f3 == r2 - 1 && (a2 = f3 - r2) : a2 = 0, f3 !== t2 + a2 && (i3.__u |= 65536))) : (o2 = u3[r2]) && null == o2.key && o2.__e && 0 == (131072 & o2.__u) && (o2.__e == n2.__d && (n2.__d = x(o2)), q(o2, o2, false), u3[r2] = null, s2--);
   if (s2)
     for (t2 = 0; t2 < c2; t2++)
-      null != (o2 = u3[t2]) && 0 == (131072 & o2.__u) && (o2.__e == n2.__d && (n2.__d = m(o2)), j(o2, o2));
+      null != (o2 = u3[t2]) && 0 == (131072 & o2.__u) && (o2.__e == n2.__d && (n2.__d = x(o2)), q(o2, o2));
 }
-function S(n2, l2, u3) {
+function H(n2, l2, u3) {
   var t2, i3;
   if ("function" == typeof n2.type) {
     for (t2 = n2.__k, i3 = 0; t2 && i3 < t2.length; i3++)
-      t2[i3] && (t2[i3].__ = n2, l2 = S(t2[i3], l2, u3));
+      t2[i3] && (t2[i3].__ = n2, l2 = H(t2[i3], l2, u3));
     return l2;
   }
   n2.__e != l2 && (u3.insertBefore(n2.__e, l2 || null), l2 = n2.__e);
@@ -3300,7 +3297,7 @@ function S(n2, l2, u3) {
   } while (null != l2 && 8 === l2.nodeType);
   return l2;
 }
-function I(n2, l2, u3, t2) {
+function A(n2, l2, u3, t2) {
   var i3 = n2.key, o2 = n2.type, r2 = u3 - 1, f3 = u3 + 1, e2 = l2[u3];
   if (null === e2 || e2 && i3 == e2.key && o2 === e2.type && 0 == (131072 & e2.__u))
     return u3;
@@ -3319,10 +3316,10 @@ function I(n2, l2, u3, t2) {
     }
   return -1;
 }
-function H(n2, l2, u3) {
-  "-" === l2[0] ? n2.setProperty(l2, null == u3 ? "" : u3) : n2[l2] = null == u3 ? "" : "number" != typeof u3 || a.test(l2) ? u3 : u3 + "px";
+function F(n2, l2, u3) {
+  "-" === l2[0] ? n2.setProperty(l2, null == u3 ? "" : u3) : n2[l2] = null == u3 ? "" : "number" != typeof u3 || p.test(l2) ? u3 : u3 + "px";
 }
-function T(n2, l2, u3, t2, i3) {
+function L(n2, l2, u3, t2, i3) {
   var o2;
   n:
     if ("style" === l2)
@@ -3331,17 +3328,17 @@ function T(n2, l2, u3, t2, i3) {
       else {
         if ("string" == typeof t2 && (n2.style.cssText = t2 = ""), t2)
           for (l2 in t2)
-            u3 && l2 in u3 || H(n2.style, l2, "");
+            u3 && l2 in u3 || F(n2.style, l2, "");
         if (u3)
           for (l2 in u3)
-            t2 && u3[l2] === t2[l2] || H(n2.style, l2, u3[l2]);
+            t2 && u3[l2] === t2[l2] || F(n2.style, l2, u3[l2]);
       }
     else if ("o" === l2[0] && "n" === l2[1])
-      o2 = l2 !== (l2 = l2.replace(/(PointerCapture)$|Capture$/i, "$1")), l2 = l2.toLowerCase() in n2 || "onFocusOut" === l2 || "onFocusIn" === l2 ? l2.toLowerCase().slice(2) : l2.slice(2), n2.l || (n2.l = {}), n2.l[l2 + o2] = u3, u3 ? t2 ? u3.u = t2.u : (u3.u = Date.now(), n2.addEventListener(l2, o2 ? D : A, o2)) : n2.removeEventListener(l2, o2 ? D : A, o2);
+      o2 = l2 !== (l2 = l2.replace(/(PointerCapture)$|Capture$/i, "$1")), l2 = l2.toLowerCase() in n2 || "onFocusOut" === l2 || "onFocusIn" === l2 ? l2.toLowerCase().slice(2) : l2.slice(2), n2.l || (n2.l = {}), n2.l[l2 + o2] = u3, u3 ? t2 ? u3.u = t2.u : (u3.u = e, n2.addEventListener(l2, o2 ? s : c, o2)) : n2.removeEventListener(l2, o2 ? s : c, o2);
     else {
       if (i3)
         l2 = l2.replace(/xlink(H|:h)/, "h").replace(/sName$/, "s");
-      else if ("width" !== l2 && "height" !== l2 && "href" !== l2 && "list" !== l2 && "form" !== l2 && "tabIndex" !== l2 && "download" !== l2 && "rowSpan" !== l2 && "colSpan" !== l2 && "role" !== l2 && l2 in n2)
+      else if ("width" != l2 && "height" != l2 && "href" != l2 && "list" != l2 && "form" != l2 && "tabIndex" != l2 && "download" != l2 && "rowSpan" != l2 && "colSpan" != l2 && "role" != l2 && l2 in n2)
         try {
           n2[l2] = null == u3 ? "" : u3;
           break n;
@@ -3350,64 +3347,61 @@ function T(n2, l2, u3, t2, i3) {
       "function" == typeof u3 || (null == u3 || false === u3 && "-" !== l2[4] ? n2.removeAttribute(l2) : n2.setAttribute(l2, u3));
     }
 }
-function A(n2) {
-  if (this.l) {
-    var u3 = this.l[n2.type + false];
-    if (n2.t) {
-      if (n2.t <= u3.u)
+function M(n2) {
+  return function(u3) {
+    if (this.l) {
+      var t2 = this.l[u3.type + n2];
+      if (null == u3.t)
+        u3.t = e++;
+      else if (u3.t < t2.u)
         return;
-    } else
-      n2.t = Date.now();
-    return u3(l.event ? l.event(n2) : n2);
-  }
+      return t2(l.event ? l.event(u3) : u3);
+    }
+  };
 }
-function D(n2) {
-  if (this.l)
-    return this.l[n2.type + true](l.event ? l.event(n2) : n2);
-}
-function F(n2, u3, t2, i3, o2, r2, f3, e2, c2, s2) {
-  var a2, p2, y2, d2, _, m2, w2, k2, x2, P2, S2, $, I2, H2, T2, A2 = u3.type;
+function O(n2, u3, t2, i3, o2, r2, f3, e2, c2, s2) {
+  var a2, h2, v2, p2, _2, g2, b2, m, x2, C2, P2, S2, I2, H2, T, A2 = u3.type;
   if (void 0 !== u3.constructor)
     return null;
   128 & t2.__u && (c2 = !!(32 & t2.__u), r2 = [e2 = u3.__e = t2.__e]), (a2 = l.__b) && a2(u3);
   n:
     if ("function" == typeof A2)
       try {
-        if (k2 = u3.props, x2 = (a2 = A2.contextType) && i3[a2.__c], P2 = a2 ? x2 ? x2.props.value : a2.__ : i3, t2.__c ? w2 = (p2 = u3.__c = t2.__c).__ = p2.__E : ("prototype" in A2 && A2.prototype.render ? u3.__c = p2 = new A2(k2, P2) : (u3.__c = p2 = new b(k2, P2), p2.constructor = A2, p2.render = z), x2 && x2.sub(p2), p2.props = k2, p2.state || (p2.state = {}), p2.context = P2, p2.__n = i3, y2 = p2.__d = true, p2.__h = [], p2._sb = []), null == p2.__s && (p2.__s = p2.state), null != A2.getDerivedStateFromProps && (p2.__s == p2.state && (p2.__s = v({}, p2.__s)), v(p2.__s, A2.getDerivedStateFromProps(k2, p2.__s))), d2 = p2.props, _ = p2.state, p2.__v = u3, y2)
-          null == A2.getDerivedStateFromProps && null != p2.componentWillMount && p2.componentWillMount(), null != p2.componentDidMount && p2.__h.push(p2.componentDidMount);
+        if (m = u3.props, x2 = (a2 = A2.contextType) && i3[a2.__c], C2 = a2 ? x2 ? x2.props.value : a2.__ : i3, t2.__c ? b2 = (h2 = u3.__c = t2.__c).__ = h2.__E : ("prototype" in A2 && A2.prototype.render ? u3.__c = h2 = new A2(m, C2) : (u3.__c = h2 = new k(m, C2), h2.constructor = A2, h2.render = B), x2 && x2.sub(h2), h2.props = m, h2.state || (h2.state = {}), h2.context = C2, h2.__n = i3, v2 = h2.__d = true, h2.__h = [], h2._sb = []), null == h2.__s && (h2.__s = h2.state), null != A2.getDerivedStateFromProps && (h2.__s == h2.state && (h2.__s = d({}, h2.__s)), d(h2.__s, A2.getDerivedStateFromProps(m, h2.__s))), p2 = h2.props, _2 = h2.state, h2.__v = u3, v2)
+          null == A2.getDerivedStateFromProps && null != h2.componentWillMount && h2.componentWillMount(), null != h2.componentDidMount && h2.__h.push(h2.componentDidMount);
         else {
-          if (null == A2.getDerivedStateFromProps && k2 !== d2 && null != p2.componentWillReceiveProps && p2.componentWillReceiveProps(k2, P2), !p2.__e && (null != p2.shouldComponentUpdate && false === p2.shouldComponentUpdate(k2, p2.__s, P2) || u3.__v === t2.__v)) {
-            for (u3.__v !== t2.__v && (p2.props = k2, p2.state = p2.__s, p2.__d = false), u3.__e = t2.__e, u3.__k = t2.__k, u3.__k.forEach(function(n3) {
+          if (null == A2.getDerivedStateFromProps && m !== p2 && null != h2.componentWillReceiveProps && h2.componentWillReceiveProps(m, C2), !h2.__e && (null != h2.shouldComponentUpdate && false === h2.shouldComponentUpdate(m, h2.__s, C2) || u3.__v === t2.__v)) {
+            for (u3.__v !== t2.__v && (h2.props = m, h2.state = h2.__s, h2.__d = false), u3.__e = t2.__e, u3.__k = t2.__k, u3.__k.forEach(function(n3) {
               n3 && (n3.__ = u3);
-            }), S2 = 0; S2 < p2._sb.length; S2++)
-              p2.__h.push(p2._sb[S2]);
-            p2._sb = [], p2.__h.length && f3.push(p2);
+            }), P2 = 0; P2 < h2._sb.length; P2++)
+              h2.__h.push(h2._sb[P2]);
+            h2._sb = [], h2.__h.length && f3.push(h2);
             break n;
           }
-          null != p2.componentWillUpdate && p2.componentWillUpdate(k2, p2.__s, P2), null != p2.componentDidUpdate && p2.__h.push(function() {
-            p2.componentDidUpdate(d2, _, m2);
+          null != h2.componentWillUpdate && h2.componentWillUpdate(m, h2.__s, C2), null != h2.componentDidUpdate && h2.__h.push(function() {
+            h2.componentDidUpdate(p2, _2, g2);
           });
         }
-        if (p2.context = P2, p2.props = k2, p2.__P = n2, p2.__e = false, $ = l.__r, I2 = 0, "prototype" in A2 && A2.prototype.render) {
-          for (p2.state = p2.__s, p2.__d = false, $ && $(u3), a2 = p2.render(p2.props, p2.state, p2.context), H2 = 0; H2 < p2._sb.length; H2++)
-            p2.__h.push(p2._sb[H2]);
-          p2._sb = [];
+        if (h2.context = C2, h2.props = m, h2.__P = n2, h2.__e = false, S2 = l.__r, I2 = 0, "prototype" in A2 && A2.prototype.render) {
+          for (h2.state = h2.__s, h2.__d = false, S2 && S2(u3), a2 = h2.render(h2.props, h2.state, h2.context), H2 = 0; H2 < h2._sb.length; H2++)
+            h2.__h.push(h2._sb[H2]);
+          h2._sb = [];
         } else
           do {
-            p2.__d = false, $ && $(u3), a2 = p2.render(p2.props, p2.state, p2.context), p2.state = p2.__s;
-          } while (p2.__d && ++I2 < 25);
-        p2.state = p2.__s, null != p2.getChildContext && (i3 = v(v({}, i3), p2.getChildContext())), y2 || null == p2.getSnapshotBeforeUpdate || (m2 = p2.getSnapshotBeforeUpdate(d2, _)), C(n2, h(T2 = null != a2 && a2.type === g && null == a2.key ? a2.props.children : a2) ? T2 : [T2], u3, t2, i3, o2, r2, f3, e2, c2, s2), p2.base = u3.__e, u3.__u &= -161, p2.__h.length && f3.push(p2), w2 && (p2.__E = p2.__ = null);
+            h2.__d = false, S2 && S2(u3), a2 = h2.render(h2.props, h2.state, h2.context), h2.state = h2.__s;
+          } while (h2.__d && ++I2 < 25);
+        h2.state = h2.__s, null != h2.getChildContext && (i3 = d(d({}, i3), h2.getChildContext())), v2 || null == h2.getSnapshotBeforeUpdate || (g2 = h2.getSnapshotBeforeUpdate(p2, _2)), $(n2, y(T = null != a2 && a2.type === w && null == a2.key ? a2.props.children : a2) ? T : [T], u3, t2, i3, o2, r2, f3, e2, c2, s2), h2.base = u3.__e, u3.__u &= -161, h2.__h.length && f3.push(h2), b2 && (h2.__E = h2.__ = null);
       } catch (n3) {
         u3.__v = null, c2 || null != r2 ? (u3.__e = e2, u3.__u |= c2 ? 160 : 32, r2[r2.indexOf(e2)] = null) : (u3.__e = t2.__e, u3.__k = t2.__k), l.__e(n3, u3, t2);
       }
     else
-      null == r2 && u3.__v === t2.__v ? (u3.__k = t2.__k, u3.__e = t2.__e) : u3.__e = M(t2.__e, u3, t2, i3, o2, r2, f3, c2, s2);
+      null == r2 && u3.__v === t2.__v ? (u3.__k = t2.__k, u3.__e = t2.__e) : u3.__e = z(t2.__e, u3, t2, i3, o2, r2, f3, c2, s2);
   (a2 = l.diffed) && a2(u3);
 }
-function L(n2, u3, t2) {
+function j(n2, u3, t2) {
   u3.__d = void 0;
   for (var i3 = 0; i3 < t2.length; i3++)
-    O(t2[i3], t2[++i3], t2[++i3]);
+    N(t2[i3], t2[++i3], t2[++i3]);
   l.__c && l.__c(u3, n2), n2.some(function(u4) {
     try {
       n2 = u4.__h, u4.__h = [], n2.some(function(n3) {
@@ -3418,70 +3412,70 @@ function L(n2, u3, t2) {
     }
   });
 }
-function M(l2, u3, t2, i3, o2, r2, f3, e2, s2) {
-  var a2, v2, y2, d2, _, g2, b2, w2 = t2.props, k2 = u3.props, x2 = u3.type;
-  if ("svg" === x2 && (o2 = true), null != r2) {
-    for (a2 = 0; a2 < r2.length; a2++)
-      if ((_ = r2[a2]) && "setAttribute" in _ == !!x2 && (x2 ? _.localName === x2 : 3 === _.nodeType)) {
-        l2 = _, r2[a2] = null;
+function z(l2, u3, t2, i3, o2, r2, f3, e2, c2) {
+  var s2, a2, v2, p2, d2, g2, b2, m = t2.props, w2 = u3.props, k2 = u3.type;
+  if ("svg" === k2 && (o2 = true), null != r2) {
+    for (s2 = 0; s2 < r2.length; s2++)
+      if ((d2 = r2[s2]) && "setAttribute" in d2 == !!k2 && (k2 ? d2.localName === k2 : 3 === d2.nodeType)) {
+        l2 = d2, r2[s2] = null;
         break;
       }
   }
   if (null == l2) {
-    if (null === x2)
-      return document.createTextNode(k2);
-    l2 = o2 ? document.createElementNS("http://www.w3.org/2000/svg", x2) : document.createElement(x2, k2.is && k2), r2 = null, e2 = false;
+    if (null === k2)
+      return document.createTextNode(w2);
+    l2 = o2 ? document.createElementNS("http://www.w3.org/2000/svg", k2) : document.createElement(k2, w2.is && w2), r2 = null, e2 = false;
   }
-  if (null === x2)
-    w2 === k2 || e2 && l2.data === k2 || (l2.data = k2);
+  if (null === k2)
+    m === w2 || e2 && l2.data === w2 || (l2.data = w2);
   else {
-    if (r2 = r2 && n.call(l2.childNodes), w2 = t2.props || c, !e2 && null != r2)
-      for (w2 = {}, a2 = 0; a2 < l2.attributes.length; a2++)
-        w2[(_ = l2.attributes[a2]).name] = _.value;
-    for (a2 in w2)
-      _ = w2[a2], "children" == a2 || ("dangerouslySetInnerHTML" == a2 ? y2 = _ : "key" === a2 || a2 in k2 || T(l2, a2, null, _, o2));
-    for (a2 in k2)
-      _ = k2[a2], "children" == a2 ? d2 = _ : "dangerouslySetInnerHTML" == a2 ? v2 = _ : "value" == a2 ? g2 = _ : "checked" == a2 ? b2 = _ : "key" === a2 || e2 && "function" != typeof _ || w2[a2] === _ || T(l2, a2, _, w2[a2], o2);
-    if (v2)
-      e2 || y2 && (v2.__html === y2.__html || v2.__html === l2.innerHTML) || (l2.innerHTML = v2.__html), u3.__k = [];
-    else if (y2 && (l2.innerHTML = ""), C(l2, h(d2) ? d2 : [d2], u3, t2, i3, o2 && "foreignObject" !== x2, r2, f3, r2 ? r2[0] : t2.__k && m(t2, 0), e2, s2), null != r2)
-      for (a2 = r2.length; a2--; )
-        null != r2[a2] && p(r2[a2]);
-    e2 || (a2 = "value", void 0 !== g2 && (g2 !== l2[a2] || "progress" === x2 && !g2 || "option" === x2 && g2 !== w2[a2]) && T(l2, a2, g2, w2[a2], false), a2 = "checked", void 0 !== b2 && b2 !== l2[a2] && T(l2, a2, b2, w2[a2], false));
+    if (r2 = r2 && n.call(l2.childNodes), m = t2.props || h, !e2 && null != r2)
+      for (m = {}, s2 = 0; s2 < l2.attributes.length; s2++)
+        m[(d2 = l2.attributes[s2]).name] = d2.value;
+    for (s2 in m)
+      d2 = m[s2], "children" == s2 || ("dangerouslySetInnerHTML" == s2 ? v2 = d2 : "key" === s2 || s2 in w2 || L(l2, s2, null, d2, o2));
+    for (s2 in w2)
+      d2 = w2[s2], "children" == s2 ? p2 = d2 : "dangerouslySetInnerHTML" == s2 ? a2 = d2 : "value" == s2 ? g2 = d2 : "checked" == s2 ? b2 = d2 : "key" === s2 || e2 && "function" != typeof d2 || m[s2] === d2 || L(l2, s2, d2, m[s2], o2);
+    if (a2)
+      e2 || v2 && (a2.__html === v2.__html || a2.__html === l2.innerHTML) || (l2.innerHTML = a2.__html), u3.__k = [];
+    else if (v2 && (l2.innerHTML = ""), $(l2, y(p2) ? p2 : [p2], u3, t2, i3, o2 && "foreignObject" !== k2, r2, f3, r2 ? r2[0] : t2.__k && x(t2, 0), e2, c2), null != r2)
+      for (s2 = r2.length; s2--; )
+        null != r2[s2] && _(r2[s2]);
+    e2 || (s2 = "value", void 0 !== g2 && (g2 !== l2[s2] || "progress" === k2 && !g2 || "option" === k2 && g2 !== m[s2]) && L(l2, s2, g2, m[s2], false), s2 = "checked", void 0 !== b2 && b2 !== l2[s2] && L(l2, s2, b2, m[s2], false));
   }
   return l2;
 }
-function O(n2, u3, t2) {
+function N(n2, u3, t2) {
   try {
     "function" == typeof n2 ? n2(u3) : n2.current = u3;
   } catch (n3) {
     l.__e(n3, t2);
   }
 }
-function j(n2, u3, t2) {
+function q(n2, u3, t2) {
   var i3, o2;
-  if (l.unmount && l.unmount(n2), (i3 = n2.ref) && (i3.current && i3.current !== n2.__e || O(i3, null, u3)), null != (i3 = n2.__c)) {
+  if (l.unmount && l.unmount(n2), (i3 = n2.ref) && (i3.current && i3.current !== n2.__e || N(i3, null, u3)), null != (i3 = n2.__c)) {
     if (i3.componentWillUnmount)
       try {
         i3.componentWillUnmount();
       } catch (n3) {
         l.__e(n3, u3);
       }
-    i3.base = i3.__P = null, n2.__c = void 0;
+    i3.base = i3.__P = null;
   }
   if (i3 = n2.__k)
     for (o2 = 0; o2 < i3.length; o2++)
-      i3[o2] && j(i3[o2], u3, t2 || "function" != typeof n2.type);
-  t2 || null == n2.__e || p(n2.__e), n2.__ = n2.__e = n2.__d = void 0;
+      i3[o2] && q(i3[o2], u3, t2 || "function" != typeof n2.type);
+  t2 || null == n2.__e || _(n2.__e), n2.__c = n2.__ = n2.__e = n2.__d = void 0;
 }
-function z(n2, l2, u3) {
+function B(n2, l2, u3) {
   return this.constructor(n2, u3);
 }
-function N(u3, t2, i3) {
+function D(u3, t2, i3) {
   var o2, r2, f3, e2;
-  l.__ && l.__(u3, t2), r2 = (o2 = "function" == typeof i3) ? null : i3 && i3.__k || t2.__k, f3 = [], e2 = [], F(t2, u3 = (!o2 && i3 || t2).__k = y(g, null, [u3]), r2 || c, c, void 0 !== t2.ownerSVGElement, !o2 && i3 ? [i3] : r2 ? null : t2.firstChild ? n.call(t2.childNodes) : null, f3, !o2 && i3 ? i3 : r2 ? r2.__e : t2.firstChild, o2, e2), L(f3, u3, e2);
+  l.__ && l.__(u3, t2), r2 = (o2 = "function" == typeof i3) ? null : i3 && i3.__k || t2.__k, f3 = [], e2 = [], O(t2, u3 = (!o2 && i3 || t2).__k = g(w, null, [u3]), r2 || h, h, void 0 !== t2.ownerSVGElement, !o2 && i3 ? [i3] : r2 ? null : t2.firstChild ? n.call(t2.childNodes) : null, f3, !o2 && i3 ? i3 : r2 ? r2.__e : t2.firstChild, o2, e2), j(f3, u3, e2);
 }
-n = s.slice, l = { __e: function(n2, l2, u3, t2) {
+n = v.slice, l = { __e: function(n2, l2, u3, t2) {
   for (var i3, o2, r2; l2 = l2.__; )
     if ((i3 = l2.__c) && !i3.__)
       try {
@@ -3493,14 +3487,14 @@ n = s.slice, l = { __e: function(n2, l2, u3, t2) {
   throw n2;
 } }, u = 0, t = function(n2) {
   return null != n2 && null == n2.constructor;
-}, b.prototype.setState = function(n2, l2) {
+}, k.prototype.setState = function(n2, l2) {
   var u3;
-  u3 = null != this.__s && this.__s !== this.state ? this.__s : this.__s = v({}, this.state), "function" == typeof n2 && (n2 = n2(v({}, u3), this.props)), n2 && v(u3, n2), null != n2 && this.__v && (l2 && this._sb.push(l2), k(this));
-}, b.prototype.forceUpdate = function(n2) {
-  this.__v && (this.__e = true, n2 && this.__h.push(n2), k(this));
-}, b.prototype.render = g, i = [], r = "function" == typeof Promise ? Promise.prototype.then.bind(Promise.resolve()) : setTimeout, f = function(n2, l2) {
+  u3 = null != this.__s && this.__s !== this.state ? this.__s : this.__s = d({}, this.state), "function" == typeof n2 && (n2 = n2(d({}, u3), this.props)), n2 && d(u3, n2), null != n2 && this.__v && (l2 && this._sb.push(l2), P(this));
+}, k.prototype.forceUpdate = function(n2) {
+  this.__v && (this.__e = true, n2 && this.__h.push(n2), P(this));
+}, k.prototype.render = w, i = [], r = "function" == typeof Promise ? Promise.prototype.then.bind(Promise.resolve()) : setTimeout, f = function(n2, l2) {
   return n2.__v.__b - l2.__v.__b;
-}, x.__r = 0, e = 0;
+}, S.__r = 0, e = 0, c = M(false), s = M(true), a = 0;
 
 // node_modules/preact/jsx-runtime/dist/jsxRuntime.module.js
 var f2 = 0;
@@ -3517,109 +3511,109 @@ function u2(e2, t2, n2, o2, i3, u3) {
 }
 
 // src/ui/components/uic-ref-item.tsx
-var thePlugin2;
-function setPluginVariableUIC_RefItem(plugin) {
-  thePlugin2 = plugin;
+var plugin2;
+function setPluginVariableUIC_RefItem(snwPlugin) {
+  plugin2 = snwPlugin;
 }
 var getUIC_Ref_Item = async (ref) => {
-  var _a, _b;
+  var _a, _b, _c, _d;
   const startLine = ref.reference.position !== void 0 ? ref.reference.position.start.line.toString() : "0";
   const itemElJsx = /* @__PURE__ */ u2(
     "div",
     {
       className: "snw-ref-item-info search-result-file-match",
       "snw-data-line-number": startLine,
-      "snw-data-file-name": (_a = ref == null ? void 0 : ref.sourceFile) == null ? void 0 : _a.path.replace(".md", ""),
-      "data-href": (_b = ref == null ? void 0 : ref.sourceFile) == null ? void 0 : _b.path.replace(".md", ""),
+      "snw-data-file-name": (_b = ref == null ? void 0 : ref.sourceFile) == null ? void 0 : _b.path.replace("." + ((_a = ref == null ? void 0 : ref.sourceFile) == null ? void 0 : _a.extension), ""),
+      "data-href": (_d = ref == null ? void 0 : ref.sourceFile) == null ? void 0 : _d.path.replace("." + ((_c = ref == null ? void 0 : ref.sourceFile) == null ? void 0 : _c.extension), ""),
       dangerouslySetInnerHTML: { __html: (await grabChunkOfFile(ref)).innerHTML }
     }
   );
   const itemEl = createDiv();
-  N(itemElJsx, itemEl);
+  D(itemElJsx, itemEl);
   return itemEl;
 };
 var grabChunkOfFile = async (ref) => {
-  const fileContents = await thePlugin2.app.vault.cachedRead(ref.sourceFile);
-  const fileCache = thePlugin2.app.metadataCache.getFileCache(ref.sourceFile);
+  var _a;
+  const fileContents = await plugin2.app.vault.cachedRead(ref.sourceFile);
+  const fileCache = plugin2.app.metadataCache.getFileCache(ref.sourceFile);
   const linkPosition = ref.reference.position;
   const container = createDiv();
   container.setAttribute("uic", "uic");
-  const contextBuilder = new ContextBuilder(fileContents, fileCache);
-  const headingBreadcrumbs = contextBuilder.getHeadingBreadcrumbs(linkPosition);
-  if (headingBreadcrumbs.length > 0) {
-    const headingBreadcrumbsEl = container.createDiv();
-    headingBreadcrumbsEl.addClass("snw-breadcrumbs");
-    headingBreadcrumbsEl.createEl("span", { text: "H" });
-    await import_obsidian2.MarkdownRenderer.renderMarkdown(
-      formatHeadingBreadCrumbs(headingBreadcrumbs),
-      headingBreadcrumbsEl,
-      ref.sourceFile.path,
-      thePlugin2
-    );
-  }
-  const indexOfListItemContainingLink = contextBuilder.getListItemIndexContaining(linkPosition);
-  const isLinkInListItem = indexOfListItemContainingLink >= 0;
-  if (isLinkInListItem) {
-    const listBreadcrumbs = contextBuilder.getListBreadcrumbs(linkPosition);
-    if (listBreadcrumbs.length > 0) {
-      const contextEl2 = container.createDiv();
-      contextEl2.addClass("snw-breadcrumbs");
-      contextEl2.createEl("span", { text: "L" });
+  if ((_a = ref.reference) == null ? void 0 : _a.key) {
+    container.innerText = "Used in property: " + ref.reference.key;
+    return container;
+  } else {
+    const contextBuilder = new ContextBuilder(fileContents, fileCache);
+    const headingBreadcrumbs = contextBuilder.getHeadingBreadcrumbs(linkPosition);
+    if (headingBreadcrumbs.length > 0) {
+      const headingBreadcrumbsEl = container.createDiv();
+      headingBreadcrumbsEl.addClass("snw-breadcrumbs");
+      headingBreadcrumbsEl.createEl("span", { text: "H" });
       await import_obsidian2.MarkdownRenderer.render(
-        thePlugin2.app,
-        formatListBreadcrumbs(fileContents, listBreadcrumbs),
-        contextEl2,
+        plugin2.app,
+        formatHeadingBreadCrumbs(headingBreadcrumbs),
+        headingBreadcrumbsEl,
         ref.sourceFile.path,
-        thePlugin2
+        plugin2
       );
     }
-    const listItemWithDescendants = contextBuilder.getListItemWithDescendants(
-      indexOfListItemContainingLink
-    );
-    const contextEl = container.createDiv();
-    await import_obsidian2.MarkdownRenderer.render(
-      thePlugin2.app,
-      formatListWithDescendants(fileContents, listItemWithDescendants),
-      contextEl,
-      ref.sourceFile.path,
-      thePlugin2
-    );
-  } else {
-    const sectionContainingLink = contextBuilder.getSectionContaining(linkPosition);
-    let blockContents = "";
-    if ((sectionContainingLink == null ? void 0 : sectionContainingLink.position) !== void 0)
-      blockContents = getTextAtPosition(fileContents, sectionContainingLink.position);
-    await import_obsidian2.MarkdownRenderer.render(
-      thePlugin2.app,
-      blockContents,
-      container,
-      ref.sourceFile.path,
-      thePlugin2
-    );
-  }
-  const headingThatContainsLink = contextBuilder.getHeadingContaining(linkPosition);
-  if (headingThatContainsLink) {
-    const firstSectionPosition = contextBuilder.getFirstSectionUnder(
-      headingThatContainsLink.position
-    );
-    if (firstSectionPosition) {
+    const indexOfListItemContainingLink = contextBuilder.getListItemIndexContaining(linkPosition);
+    const isLinkInListItem = indexOfListItemContainingLink >= 0;
+    if (isLinkInListItem) {
+      const listBreadcrumbs = contextBuilder.getListBreadcrumbs(linkPosition);
+      if (listBreadcrumbs.length > 0) {
+        const contextEl2 = container.createDiv();
+        contextEl2.addClass("snw-breadcrumbs");
+        contextEl2.createEl("span", { text: "L" });
+        await import_obsidian2.MarkdownRenderer.render(
+          plugin2.app,
+          formatListBreadcrumbs(fileContents, listBreadcrumbs),
+          contextEl2,
+          ref.sourceFile.path,
+          plugin2
+        );
+      }
+      const listItemWithDescendants = contextBuilder.getListItemWithDescendants(indexOfListItemContainingLink);
       const contextEl = container.createDiv();
       await import_obsidian2.MarkdownRenderer.render(
-        thePlugin2.app,
-        getTextAtPosition(fileContents, firstSectionPosition.position),
+        plugin2.app,
+        formatListWithDescendants(fileContents, listItemWithDescendants),
         contextEl,
         ref.sourceFile.path,
-        thePlugin2
+        plugin2
       );
+    } else {
+      const sectionContainingLink = contextBuilder.getSectionContaining(linkPosition);
+      let blockContents = "";
+      if ((sectionContainingLink == null ? void 0 : sectionContainingLink.position) !== void 0)
+        blockContents = getTextAtPosition(fileContents, sectionContainingLink.position);
+      const regex = /^\[\^([\w]+)\]:(.*)$/;
+      if (regex.test(blockContents))
+        blockContents = blockContents.replace("[", "").replace("]:", "");
+      await import_obsidian2.MarkdownRenderer.render(plugin2.app, blockContents, container, ref.sourceFile.path, plugin2);
     }
+    const headingThatContainsLink = contextBuilder.getHeadingContaining(linkPosition);
+    if (headingThatContainsLink) {
+      const firstSectionPosition = contextBuilder.getFirstSectionUnder(headingThatContainsLink.position);
+      if (firstSectionPosition) {
+        const contextEl = container.createDiv();
+        await import_obsidian2.MarkdownRenderer.render(
+          plugin2.app,
+          getTextAtPosition(fileContents, firstSectionPosition.position),
+          contextEl,
+          ref.sourceFile.path,
+          plugin2
+        );
+      }
+    }
+    const elems = container.querySelectorAll("*");
+    const res = Array.from(elems).find((v2) => v2.textContent == ref.reference.displayText);
+    try {
+      res.addClass("search-result-file-matched-text");
+    } catch (error) {
+    }
+    return container;
   }
-  const elems = container.querySelectorAll("*");
-  const res = Array.from(elems).find((v2) => v2.textContent == ref.reference.displayText);
-  try {
-    res.addClass("search-result-file-matched-text");
-  } catch (error) {
-  }
-  return container;
 };
 
 // src/ui/icons.tsx
@@ -3647,7 +3641,7 @@ var IconMoreDetails = () => {
 };
 
 // src/ui/components/uic-ref-title.tsx
-var getUIC_Ref_Title_Div = (refType, realLink, key, filePath, refCount, lineNu, isPopover, thePlugin10) => {
+var getUIC_Ref_Title_Div = (refType, realLink, key, filePath, refCount, lineNu, isPopover, plugin11) => {
   const titleElJsx = /* @__PURE__ */ u2(
     "div",
     {
@@ -3675,7 +3669,7 @@ var getUIC_Ref_Title_Div = (refType, realLink, key, filePath, refCount, lineNu, 
                 onClick: (e2) => {
                   e2.stopPropagation();
                   hideAll({ duration: 0 });
-                  thePlugin10.activateView(refType, realLink, key, filePath, Number(lineNu));
+                  plugin11.activateView(refType, realLink, key, filePath, Number(lineNu));
                 },
                 children: /* @__PURE__ */ u2(IconMoreDetails, {})
               }
@@ -3686,66 +3680,59 @@ var getUIC_Ref_Title_Div = (refType, realLink, key, filePath, refCount, lineNu, 
     }
   );
   const titleEl = createDiv();
-  N(titleElJsx, titleEl);
+  D(titleElJsx, titleEl);
   return titleEl;
 };
 
 // src/ui/components/uic-ref-area.ts
-var thePlugin3;
-function setPluginVariableUIC_RefArea(plugin) {
-  thePlugin3 = plugin;
+var plugin3;
+function setPluginVariableUIC_RefArea(snwPlugin) {
+  plugin3 = snwPlugin;
 }
 var getUIC_Ref_Area = async (refType, realLink, key, filePath, lineNu, isHoverView) => {
   const refAreaItems = await getRefAreaItems(refType, key, filePath);
   const refAreaContainerEl = createDiv();
-  refAreaContainerEl.append(
-    getUIC_Ref_Title_Div(
-      refType,
-      realLink,
-      key,
-      filePath,
-      refAreaItems.refCount,
-      lineNu,
-      isHoverView,
-      thePlugin3
-    )
-  );
+  refAreaContainerEl.append(getUIC_Ref_Title_Div(refType, realLink, key, filePath, refAreaItems.refCount, lineNu, isHoverView, plugin3));
   const refAreaEl = createDiv({ cls: "snw-ref-area" });
   refAreaEl.append(refAreaItems.response);
   refAreaContainerEl.append(refAreaEl);
   return refAreaContainerEl;
 };
 var getRefAreaItems = async (refType, key, filePath) => {
+  var _a, _b;
   let countOfRefs = 0;
   let linksToLoop = null;
   if (refType === "File") {
-    const allLinks = getSnwAllLinksResolutions();
-    const incomingLinks = allLinks.filter((f3) => {
-      var _a;
-      if (!(f3 == null ? void 0 : f3.resolvedFile))
-        return false;
-      return ((_a = f3 == null ? void 0 : f3.resolvedFile) == null ? void 0 : _a.path) === filePath;
-    });
+    const allLinks = getIndexedReferences();
+    const incomingLinks = [];
+    for (const items of allLinks.values()) {
+      for (const item of items) {
+        if ((item == null ? void 0 : item.resolvedFile) && ((_a = item == null ? void 0 : item.resolvedFile) == null ? void 0 : _a.path) === filePath)
+          incomingLinks.push(item);
+      }
+    }
     countOfRefs = incomingLinks.length;
     linksToLoop = incomingLinks;
   } else {
-    let refCache = getReferencesCache()[key];
+    let refCache = getIndexedReferences().get(key);
     if (refCache === void 0)
-      refCache = getReferencesCache()[filePath + "#^" + key];
+      refCache = getIndexedReferences().get(key);
     const sortedCache = await sortRefCache(refCache);
     countOfRefs = sortedCache.length;
     linksToLoop = sortedCache;
   }
-  const uniqueFileKeys = Array.from(
-    new Set(linksToLoop.map((a2) => a2.sourceFile.path))
-  ).map((file_path) => {
+  const uniqueFileKeys = Array.from(new Set(linksToLoop.map((a2) => a2.sourceFile.path))).map((file_path) => {
     return linksToLoop.find((a2) => a2.sourceFile.path === file_path);
   });
   const wrapperEl = createDiv();
-  let maxItemsToShow = uniqueFileKeys.length;
-  if (thePlugin3.settings.maxFileCountToDisplay != 1e3 && maxItemsToShow >= thePlugin3.settings.maxFileCountToDisplay)
-    maxItemsToShow = thePlugin3.settings.maxFileCountToDisplay;
-  for (let index = 0; index < maxItemsToShow; index++) {
+  let maxItemsToShow = plugin3.settings.maxFileCountToDisplay;
+  if (countOfRefs < maxItemsToShow) {
+    maxItemsToShow = countOfRefs;
+  }
+  let itemsDisplayedCounter = 0;
+  for (let index = 0; index < uniqueFileKeys.length; index++) {
+    if (itemsDisplayedCounter > maxItemsToShow)
+      continue;
     const file_path = uniqueFileKeys[index];
     const responseItemContainerEl = createDiv();
     responseItemContainerEl.addClass("snw-ref-item-container");
@@ -3757,10 +3744,7 @@ var getRefAreaItems = async (refType, key, filePath) => {
     refItemFileEl.addClass("search-result-file-title");
     refItemFileEl.addClass("is-clickable");
     refItemFileEl.setAttribute("snw-data-line-number", "-1");
-    refItemFileEl.setAttribute(
-      "snw-data-file-name",
-      file_path.sourceFile.path.replace(".md", "")
-    );
+    refItemFileEl.setAttribute("snw-data-file-name", file_path.sourceFile.path.replace("." + ((_b = file_path.sourceFile) == null ? void 0 : _b.extension), ""));
     refItemFileEl.setAttribute("data-href", file_path.sourceFile.path);
     refItemFileEl.setAttribute("href", file_path.sourceFile.path);
     const refItemFileIconEl = createDiv();
@@ -3780,7 +3764,8 @@ var getRefAreaItems = async (refType, key, filePath) => {
     refItemsCollectionE.addClass("search-result-file-matches");
     responseItemContainerEl.appendChild(refItemsCollectionE);
     for (const ref of linksToLoop) {
-      if (file_path.sourceFile.path === ref.sourceFile.path) {
+      if (file_path.sourceFile.path === ref.sourceFile.path && itemsDisplayedCounter < maxItemsToShow) {
+        itemsDisplayedCounter += 1;
         refItemsCollectionE.appendChild(await getUIC_Ref_Item(ref));
       }
     }
@@ -3800,19 +3785,17 @@ var sortRefCache = async (refCache) => {
 };
 
 // src/ui/components/uic-ref--parent.ts
-var thePlugin4;
-function setPluginVariableForUIC(plugin) {
-  thePlugin4 = plugin;
-  setPluginVariableUIC_RefItem(plugin);
+var plugin4;
+function setPluginVariableForUIC(snwPlugin) {
+  plugin4 = snwPlugin;
+  setPluginVariableUIC_RefItem(plugin4);
 }
 var getUIC_Hoverview = async (instance) => {
   const { refType, realLink, key, filePath, lineNu } = await getDataElements(instance);
   const popoverEl = createDiv();
   popoverEl.addClass("snw-popover-container");
   popoverEl.addClass("search-result-container");
-  popoverEl.appendChild(
-    await getUIC_Ref_Area(refType, realLink, key, filePath, lineNu, true)
-  );
+  popoverEl.appendChild(await getUIC_Ref_Area(refType, realLink, key, filePath, lineNu, true));
   instance.setContent(popoverEl);
   setTimeout(async () => {
     await setFileLinkHandlers(false, popoverEl);
@@ -3823,9 +3806,7 @@ var getUIC_SidePane = async (refType, realLink, key, filePath, lineNu) => {
   const sidepaneEL = createDiv();
   sidepaneEL.addClass("snw-sidepane-container");
   sidepaneEL.addClass("search-result-container");
-  sidepaneEL.append(
-    await getUIC_Ref_Area(refType, realLink, key, filePath, lineNu, false)
-  );
+  sidepaneEL.append(await getUIC_Ref_Area(refType, realLink, key, filePath, lineNu, false));
   setTimeout(async () => {
     await setFileLinkHandlers(false, sidepaneEL);
   }, 500);
@@ -3847,20 +3828,22 @@ var setFileLinkHandlers = async (isHoverView, rootElementForViewEl) => {
         let lineNu = Number(handlerElement.getAttribute("snw-data-line-number"));
         const filePath = handlerElement.getAttribute("snw-data-file-name");
         const fileT = app.metadataCache.getFirstLinkpathDest(filePath, filePath);
-        thePlugin4.app.workspace.getLeaf(import_obsidian4.Keymap.isModEvent(e2)).openFile(fileT);
+        if (!fileT) {
+          new import_obsidian4.Notice(`File not found: ${filePath}. It may be a broken link.`);
+          return;
+        }
+        plugin4.app.workspace.getLeaf(import_obsidian4.Keymap.isModEvent(e2)).openFile(fileT);
         const titleKey = handlerElement.getAttribute("snw-ref-title-key");
         if (titleKey) {
           if (titleKey.contains("#^")) {
-            const destinationBlocks = Object.entries(
-              (_a = thePlugin4.app.metadataCache.getFileCache(fileT)) == null ? void 0 : _a.blocks
-            );
+            const destinationBlocks = Object.entries((_a = plugin4.app.metadataCache.getFileCache(fileT)) == null ? void 0 : _a.blocks);
             if (destinationBlocks) {
               const blockID = titleKey.match(/#\^(.+)$/g)[0].replace("#^", "").toLowerCase();
               const l2 = destinationBlocks.find((b2) => b2[0] === blockID);
               lineNu = l2[1].position.start.line;
             }
           } else if (titleKey.contains("#")) {
-            const destinationHeadings = (_b = thePlugin4.app.metadataCache.getFileCache(fileT)) == null ? void 0 : _b.headings;
+            const destinationHeadings = (_b = plugin4.app.metadataCache.getFileCache(fileT)) == null ? void 0 : _b.headings;
             if (destinationHeadings) {
               const headingKey = titleKey.match(/#(.+)/g)[0].replace("#", "");
               const l2 = destinationHeadings.find((h2) => h2.heading === headingKey);
@@ -3871,13 +3854,13 @@ var setFileLinkHandlers = async (isHoverView, rootElementForViewEl) => {
         if (lineNu > 0) {
           setTimeout(() => {
             try {
-              thePlugin4.app.workspace.getActiveViewOfType(import_obsidian4.MarkdownView).setEphemeralState({ line: lineNu });
+              plugin4.app.workspace.getActiveViewOfType(import_obsidian4.MarkdownView).setEphemeralState({ line: lineNu });
             } catch (error) {
             }
           }, 400);
         }
       });
-      if (thePlugin4.app.internalPlugins.plugins["page-preview"].enabled === true) {
+      if (plugin4.app.internalPlugins.plugins["page-preview"].enabled === true) {
         node.addEventListener("mouseover", (e2) => {
           e2.preventDefault();
           const hoverMetaKeyRequired = app.internalPlugins.plugins["page-preview"].instance.overrides["obsidian42-strange-new-worlds"] == false ? false : true;
@@ -3888,14 +3871,7 @@ var setFileLinkHandlers = async (isHoverView, rootElementForViewEl) => {
             };
             const filePath = target.getAttribute("snw-data-file-name");
             if (filePath) {
-              app.workspace.trigger(
-                "link-hover",
-                {},
-                target,
-                filePath,
-                "",
-                previewLocation
-              );
+              app.workspace.trigger("link-hover", {}, target, filePath, "", previewLocation);
             }
           }
         });
@@ -3919,40 +3895,33 @@ var getDataElements = async (instance) => {
   };
 };
 
-// src/view-extensions/htmlDecorations.ts
+// src/view-extensions/htmlDecorations.tsx
 var import_obsidian5 = require("obsidian");
-var thePlugin5;
-function setPluginVariableForHtmlDecorations(plugin) {
-  thePlugin5 = plugin;
+var plugin5;
+function setPluginVariableForHtmlDecorations(snwPlugin) {
+  plugin5 = snwPlugin;
 }
 function htmlDecorationForReferencesElement(count, referenceType, realLink, key, filePath, attachCSSClass, lineNu) {
-  var _a, _b;
-  if ((_a = thePlugin5 == null ? void 0 : thePlugin5.snwAPI.enableDebugging) == null ? void 0 : _a.HtmlDecorationElements)
-    thePlugin5.snwAPI.console(
-      "htmlDecorations.htmlDecorationForReferencesElement(count, referenceType, realLink, key, filePath)",
-      thePlugin5,
-      count,
-      referenceType,
-      realLink,
-      key,
-      filePath
-    );
-  const element = createDiv({ cls: "snw-reference snw-" + referenceType });
-  element.innerText = count.toString();
-  element.setAttribute("data-snw-type", referenceType);
-  element.setAttribute("data-snw-reallink", realLink);
-  element.setAttribute("data-snw-key", key);
-  element.setAttribute("data-snw-filepath", filePath);
-  element.setAttribute("snw-data-line-number", lineNu.toString());
-  if (attachCSSClass)
-    element.addClass(attachCSSClass);
+  const referenceElementJsx = /* @__PURE__ */ u2(
+    "div",
+    {
+      className: "snw-reference snw-" + referenceType + " " + attachCSSClass,
+      "data-snw-type": referenceType,
+      "data-snw-reallink": realLink,
+      "data-snw-key": key,
+      "data-snw-filepath": filePath,
+      "snw-data-line-number": lineNu.toString(),
+      children: count.toString()
+    }
+  );
+  const refenceElement = createDiv();
+  D(referenceElementJsx, refenceElement);
+  const refCountBox = refenceElement.firstElementChild;
   if (import_obsidian5.Platform.isDesktop || import_obsidian5.Platform.isDesktopApp)
-    element.onclick = async (e2) => processHtmlDecorationReferenceEvent(e2.target);
-  if ((_b = thePlugin5 == null ? void 0 : thePlugin5.snwAPI.enableDebugging) == null ? void 0 : _b.HtmlDecorationElements)
-    thePlugin5.snwAPI.console("returned element", element);
-  const requireModifierKey = thePlugin5.settings.requireModifierKeyToActivateSNWView;
+    refCountBox.onclick = async (e2) => processHtmlDecorationReferenceEvent(e2.target);
+  const requireModifierKey = plugin5.settings.requireModifierKeyToActivateSNWView;
   let showTippy = true;
-  const tippyObject = tippy_esm_default(element, {
+  const tippyObject = tippy_esm_default(refCountBox, {
     interactive: true,
     appendTo: () => document.body,
     allowHTML: true,
@@ -3978,31 +3947,42 @@ function htmlDecorationForReferencesElement(count, referenceType, realLink, key,
     }
   });
   tippyObject.popper.classList.add("snw-tippy");
-  return element;
+  return refenceElement;
 }
 var processHtmlDecorationReferenceEvent = async (target) => {
-  var _a, _b, _c, _d, _e, _f;
+  var _a, _b, _c, _d, _e;
   const refType = (_a = target.getAttribute("data-snw-type")) != null ? _a : "";
   const realLink = (_b = target.getAttribute("data-snw-realLink")) != null ? _b : "";
   const key = (_c = target.getAttribute("data-snw-key")) != null ? _c : "";
   const filePath = (_d = target.getAttribute("data-snw-filepath")) != null ? _d : "";
   const lineNu = (_e = target.getAttribute("snw-data-line-number")) != null ? _e : "";
-  if ((_f = thePlugin5.snwAPI.enableDebugging) == null ? void 0 : _f.HtmlDecorationElements)
-    thePlugin5.snwAPI.console(
-      "htmlDecorations.processHtmlDecorationReferenceEvent: target, realLink, key, refType, filePath",
-      target,
-      realLink,
-      key,
-      refType,
-      filePath
-    );
-  thePlugin5.activateView(refType, realLink, key, filePath, Number(lineNu));
+  plugin5.activateView(refType, realLink, key, filePath, Number(lineNu));
 };
+var updateAllSnwLiveUpdateReferencesDebounce = (0, import_obsidian5.debounce)(
+  () => {
+    document.querySelectorAll(".snw-liveupdate").forEach((element) => {
+      const currentCount = Number(element.innerText);
+      const key = element.getAttribute("data-snw-key");
+      if (plugin5.snwAPI.references.has(key)) {
+        const newCount = plugin5.snwAPI.references.get(key).length;
+        if (newCount === 0 || newCount < plugin5.settings.minimumRefCountThreshold) {
+          element.remove();
+        } else if (newCount !== currentCount) {
+          element.innerText = newCount.toString();
+        }
+      } else {
+        element.remove();
+      }
+    });
+  },
+  UPDATE_DEBOUNCE,
+  true
+);
 
 // src/view-extensions/references-cm6.ts
-var thePlugin6;
-function setPluginVariableForCM6InlineReferences(plugin) {
-  thePlugin6 = plugin;
+var plugin6;
+function setPluginVariableForCM6InlineReferences(snwPlugin) {
+  plugin6 = snwPlugin;
 }
 var InlineReferenceExtension = import_view.ViewPlugin.fromClass(
   class {
@@ -4010,75 +3990,77 @@ var InlineReferenceExtension = import_view.ViewPlugin.fromClass(
       this.view = view;
       this.decorations = import_view.Decoration.none;
       this.regxPattern = "";
-      if (thePlugin6.settings.enableRenderingBlockIdInLivePreview)
+      if (plugin6.settings.enableRenderingBlockIdInLivePreview)
         this.regxPattern = "(\\s\\^)(\\S+)$";
-      if (thePlugin6.settings.enableRenderingEmbedsInLivePreview)
+      if (plugin6.settings.enableRenderingEmbedsInLivePreview)
         this.regxPattern += (this.regxPattern != "" ? "|" : "") + "!\\[\\[(.*?)\\]\\]";
-      if (thePlugin6.settings.enableRenderingLinksInLivePreview)
+      if (plugin6.settings.enableRenderingLinksInLivePreview)
         this.regxPattern += (this.regxPattern != "" ? "|" : "") + "\\[\\[(.*?)\\]\\]";
-      if (thePlugin6.settings.enableRenderingHeadersInLivePreview)
+      if (plugin6.settings.enableRenderingHeadersInLivePreview)
         this.regxPattern += (this.regxPattern != "" ? "|" : "") + "^#+\\s.+";
       if (this.regxPattern === "")
         return;
       this.decorator = new import_view.MatchDecorator({
         regexp: new RegExp(this.regxPattern, "g"),
         decorate: (add, from, to, match, view2) => {
-          var _a, _b, _c, _d, _e, _f, _g, _h, _i, _j, _k, _l, _m, _n, _o, _p, _q, _r, _s;
+          var _a, _b, _c, _d, _e, _f, _g, _h, _i, _j, _k, _l, _m, _n, _o, _p, _q, _r, _s, _t, _u, _v;
           const mdView = view2.state.field(import_obsidian6.editorInfoField);
+          if (!mdView.file)
+            return;
           const mdViewFile = mdView.file;
-          const firstCharacterMatch = match[0].charAt(0);
           const transformedCache = getSNWCacheByFile(mdViewFile);
           if (((_b = (_a = transformedCache == null ? void 0 : transformedCache.cacheMetaData) == null ? void 0 : _a.frontmatter) == null ? void 0 : _b["snw-file-exclude"]) != true && ((_d = (_c = transformedCache == null ? void 0 : transformedCache.cacheMetaData) == null ? void 0 : _c.frontmatter) == null ? void 0 : _d["snw-canvas-exclude-edit"]) != true) {
+            const firstCharacterMatch = match[0].charAt(0);
             const widgetsToAdd = [];
             if (firstCharacterMatch === " " && ((_f = (_e = transformedCache == null ? void 0 : transformedCache.blocks) == null ? void 0 : _e.length) != null ? _f : 0) > 0) {
               widgetsToAdd.push({
                 //blocks
-                key: mdViewFile.path.replace(".md", "") + match[0].replace(" ^", ""),
+                key: mdViewFile.path.replace("." + ((_g = mdView.file) == null ? void 0 : _g.extension), "") + match[0].replace(" ^", "#^"),
                 //change this to match the references cache
-                transformedCachedItem: (_g = transformedCache.blocks) != null ? _g : null,
+                transformedCachedItem: (_h = transformedCache.blocks) != null ? _h : null,
                 refType: "block",
                 from: to,
                 to
               });
-            } else if (firstCharacterMatch === "!" && ((_i = (_h = transformedCache == null ? void 0 : transformedCache.embeds) == null ? void 0 : _h.length) != null ? _i : 0) > 0) {
+            } else if (firstCharacterMatch === "!" && ((_j = (_i = transformedCache == null ? void 0 : transformedCache.embeds) == null ? void 0 : _i.length) != null ? _j : 0) > 0) {
               let newEmbed = match[0].replace("![[", "").replace("]]", "");
               if (newEmbed.startsWith("#"))
-                newEmbed = mdViewFile.path.replace(".md", "") + (0, import_obsidian6.stripHeading)(newEmbed);
+                newEmbed = mdViewFile.path.replace("." + ((_k = mdView.file) == null ? void 0 : _k.extension), "") + (0, import_obsidian6.stripHeading)(newEmbed);
               widgetsToAdd.push({
                 key: newEmbed,
-                transformedCachedItem: (_j = transformedCache.embeds) != null ? _j : null,
+                transformedCachedItem: (_l = transformedCache.embeds) != null ? _l : null,
                 refType: "embed",
                 from: to,
                 to
               });
-            } else if (firstCharacterMatch === "[" && ((_l = (_k = transformedCache == null ? void 0 : transformedCache.links) == null ? void 0 : _k.length) != null ? _l : 0) > 0) {
+            } else if (firstCharacterMatch === "[" && ((_n = (_m = transformedCache == null ? void 0 : transformedCache.links) == null ? void 0 : _m.length) != null ? _n : 0) > 0) {
               let newLink = match[0].replace("[[", "").replace("]]", "");
               if (newLink.startsWith("#"))
-                newLink = mdViewFile.path.replace(".md", "") + newLink;
+                newLink = mdViewFile.path.replace("." + ((_o = mdView.file) == null ? void 0 : _o.extension), "") + newLink;
               widgetsToAdd.push({
                 key: newLink,
-                transformedCachedItem: (_m = transformedCache.links) != null ? _m : null,
+                transformedCachedItem: (_p = transformedCache.links) != null ? _p : null,
                 refType: "link",
                 from: to,
                 to
               });
-            } else if (firstCharacterMatch === "#" && ((_o = (_n = transformedCache == null ? void 0 : transformedCache.headings) == null ? void 0 : _n.length) != null ? _o : 0) > 0) {
+            } else if (firstCharacterMatch === "#" && ((_r = (_q = transformedCache == null ? void 0 : transformedCache.headings) == null ? void 0 : _q.length) != null ? _r : 0) > 0) {
               widgetsToAdd.push({
                 // @ts-ignore
                 key: (0, import_obsidian6.stripHeading)(match[0].replace(/^#+/, "").substring(1)),
-                transformedCachedItem: (_p = transformedCache.headings) != null ? _p : null,
+                transformedCachedItem: (_s = transformedCache.headings) != null ? _s : null,
                 refType: "heading",
                 from: to,
                 to
               });
-              if (thePlugin6.settings.enableRenderingLinksInLivePreview) {
+              if (plugin6.settings.enableRenderingLinksInLivePreview) {
                 const linksinHeader = match[0].match(/\[\[(.*?)\]\]|!\[\[(.*?)\]\]/g);
                 if (linksinHeader)
                   for (const l2 of linksinHeader) {
                     widgetsToAdd.push({
                       key: l2.replace("![[", "").replace("[[", "").replace("]]", ""),
                       //change this to match the references cache
-                      transformedCachedItem: l2.startsWith("!") ? (_q = transformedCache.embeds) != null ? _q : null : (_r = transformedCache.links) != null ? _r : null,
+                      transformedCachedItem: l2.startsWith("!") ? (_t = transformedCache.embeds) != null ? _t : null : (_u = transformedCache.links) != null ? _u : null,
                       refType: "link",
                       from: to - match[0].length + (match[0].indexOf(l2) + l2.length),
                       to: to - match[0].length + (match[0].indexOf(l2) + l2.length)
@@ -4091,8 +4073,9 @@ var InlineReferenceExtension = import_view.ViewPlugin.fromClass(
                 const wdgt = constructWidgetForInlineReference(
                   ref.refType,
                   ref.key,
-                  (_s = ref.transformedCachedItem) != null ? _s : [],
-                  mdViewFile.path
+                  (_v = ref.transformedCachedItem) != null ? _v : [],
+                  mdViewFile.path,
+                  mdViewFile.extension
                 );
                 if (wdgt != null) {
                   add(ref.from, ref.to, import_view.Decoration.widget({ widget: wdgt, side: 1 }));
@@ -4102,8 +4085,7 @@ var InlineReferenceExtension = import_view.ViewPlugin.fromClass(
           }
         }
       });
-      if (this.regxPattern != "")
-        this.decorations = this.decorator.createDeco(view);
+      this.decorations = this.decorator.createDeco(view);
     }
     update(update) {
       if (this.regxPattern != "" && (update.docChanged || update.viewportChanged)) {
@@ -4115,10 +4097,10 @@ var InlineReferenceExtension = import_view.ViewPlugin.fromClass(
     decorations: (v2) => v2.decorations
   }
 );
-var constructWidgetForInlineReference = (refType, key, references2, filePath) => {
-  var _a, _b, _c;
-  for (let i3 = 0; i3 < references2.length; i3++) {
-    const ref = references2[i3];
+var constructWidgetForInlineReference = (refType, key, references, filePath, fileExtension) => {
+  var _a, _b;
+  for (let i3 = 0; i3 < references.length; i3++) {
+    const ref = references[i3];
     let matchKey = ref.key;
     if (refType === "heading") {
       matchKey = (0, import_obsidian6.stripHeading)((_a = ref.headerMatch) != null ? _a : "");
@@ -4130,19 +4112,19 @@ var constructWidgetForInlineReference = (refType, key, references2, filePath) =>
       const parsedKey = parseLinkTextToFullPath(key);
       key = parsedKey === "" ? key : parsedKey;
       if (matchKey.startsWith("#")) {
-        matchKey = filePath.replace(".md", "") + (0, import_obsidian6.stripHeading)(matchKey);
+        matchKey = filePath.replace("." + fileExtension, "") + (0, import_obsidian6.stripHeading)(matchKey);
       }
     }
     if (matchKey === key) {
-      const filePath2 = ((_b = ref == null ? void 0 : ref.references[0]) == null ? void 0 : _b.resolvedFile) ? ref.references[0].resolvedFile.path.replace(".md", "") : key;
-      if (((_c = ref == null ? void 0 : ref.references[0]) == null ? void 0 : _c.excludedFile) != true && (ref == null ? void 0 : ref.references.length) >= thePlugin6.settings.minimumRefCountThreshold)
+      const filePath2 = ((_b = ref == null ? void 0 : ref.references[0]) == null ? void 0 : _b.resolvedFile) ? ref.references[0].resolvedFile.path.replace("." + ref.references[0].resolvedFile, "") : key;
+      if ((ref == null ? void 0 : ref.references.length) >= plugin6.settings.minimumRefCountThreshold)
         return new InlineReferenceWidget(
           ref.references.length,
           ref.type,
           ref.references[0].realLink,
           ref.key,
           filePath2,
-          "",
+          "snw-liveupdate",
           ref.pos.start.line
         );
       else
@@ -4186,35 +4168,26 @@ var InlineReferenceWidget = class extends import_view.WidgetType {
 
 // src/view-extensions/references-preview.ts
 var import_obsidian7 = require("obsidian");
-var thePlugin7;
-function setPluginVariableForMarkdownPreviewProcessor(plugin) {
-  thePlugin7 = plugin;
+var plugin7;
+function setPluginVariableForMarkdownPreviewProcessor(snwPlugin) {
+  plugin7 = snwPlugin;
 }
-function markdownPreviewProcessor(el, ctx2) {
-  var _a, _b, _c, _d;
-  if (thePlugin7.snwAPI.enableDebugging.PreviewRendering)
-    thePlugin7.snwAPI.console(
-      "markdownPreviewProcessor(HTMLElement, MarkdownPostProcessorContext,ctx.getSectionInfo",
-      el,
-      ctx2,
-      ctx2.getSectionInfo(el)
-    );
-  if (ctx2.remainingNestLevel === 4)
-    return;
-  if (((_a = ctx2 == null ? void 0 : ctx2.frontmatter) == null ? void 0 : _a["snw-file-exclude"]) === true)
-    return;
-  if (((_b = ctx2 == null ? void 0 : ctx2.frontmatter) == null ? void 0 : _b["snw-canvas-exclude-preview"]) === true)
+function markdownPreviewProcessor(el, ctx) {
+  var _a, _b;
+  if (ctx.remainingNestLevel === 4)
     return;
   if (el.hasAttribute("uic"))
     return;
-  const currentFile = thePlugin7.app.vault.fileMap[ctx2.sourcePath];
+  if (el.querySelectorAll(".contains-task-list").length > 0)
+    return;
+  const currentFile = plugin7.app.vault.fileMap[ctx.sourcePath];
   if (currentFile === void 0)
     return;
-  const fileCache = thePlugin7.app.metadataCache.getFileCache(currentFile);
-  if (((_c = fileCache == null ? void 0 : fileCache.frontmatter) == null ? void 0 : _c["kanban-plugin"]) || ((_d = ctx2.el.parentElement) == null ? void 0 : _d.classList.contains("kanban-plugin__markdown-preview-view")))
+  const fileCache = plugin7.app.metadataCache.getFileCache(currentFile);
+  if (((_a = fileCache == null ? void 0 : fileCache.frontmatter) == null ? void 0 : _a["kanban-plugin"]) || ((_b = ctx.el.parentElement) == null ? void 0 : _b.classList.contains("kanban-plugin__markdown-preview-view")))
     return;
   try {
-    ctx2.addChild(new snwChildComponent(el, ctx2.getSectionInfo(el), currentFile));
+    ctx.addChild(new snwChildComponent(el, ctx.getSectionInfo(el), currentFile));
   } catch (error) {
   }
 }
@@ -4224,56 +4197,43 @@ var snwChildComponent = class extends import_obsidian7.MarkdownRenderChild {
     this.containerEl = containerEl;
     this.sectionInfo = sectionInfo;
     this.currentFile = currentFile;
-    if (thePlugin7.snwAPI.enableDebugging.PreviewRendering)
-      thePlugin7.snwAPI.console(
-        "snwChildComponent(HTMLElement, MarkdownPostProcessorContext,currentfile",
-        containerEl,
-        sectionInfo,
-        currentFile
-      );
   }
   onload() {
     this.processMarkdown();
   }
   processMarkdown() {
-    var _a, _b, _c, _d, _e, _f, _g, _h, _i, _j;
-    const minRefCountThreshold = thePlugin7.settings.minimumRefCountThreshold;
+    var _a, _b, _c, _d, _e, _f, _g, _h, _i, _j, _k, _l, _m, _n;
+    const minRefCountThreshold = plugin7.settings.minimumRefCountThreshold;
     const transformedCache = getSNWCacheByFile(this.currentFile);
     if (((_b = (_a = transformedCache == null ? void 0 : transformedCache.cacheMetaData) == null ? void 0 : _a.frontmatter) == null ? void 0 : _b["snw-file-exclude"]) === true)
       return;
+    if (((_d = (_c = transformedCache == null ? void 0 : transformedCache.cacheMetaData) == null ? void 0 : _c.frontmatter) == null ? void 0 : _d["snw-canvas-exclude-preview"]) === true)
+      return;
     if ((transformedCache == null ? void 0 : transformedCache.blocks) || transformedCache.embeds || transformedCache.headings || transformedCache.links) {
-      if (thePlugin7.settings.enableRenderingBlockIdInMarkdown && (transformedCache == null ? void 0 : transformedCache.blocks)) {
+      if (plugin7.settings.enableRenderingBlockIdInMarkdown && (transformedCache == null ? void 0 : transformedCache.blocks)) {
         let isThisAnEmbed = false;
-        try {
-          isThisAnEmbed = ctx.containerEl.closest(".snw-embed-preview").nextSibling.classList.contains("snw-reference");
-        } catch (error) {
-        }
         for (const value of transformedCache.blocks) {
-          if (((_c = value.references[0]) == null ? void 0 : _c.excludedFile) != true && value.references.length >= minRefCountThreshold && value.pos.start.line >= ((_d = this.sectionInfo) == null ? void 0 : _d.lineStart) && value.pos.end.line <= ((_e = this.sectionInfo) == null ? void 0 : _e.lineEnd) && !isThisAnEmbed) {
+          if (value.references.length >= minRefCountThreshold && value.pos.start.line >= ((_e = this.sectionInfo) == null ? void 0 : _e.lineStart) && value.pos.end.line <= ((_f = this.sectionInfo) == null ? void 0 : _f.lineEnd) && !isThisAnEmbed) {
             const referenceElement = htmlDecorationForReferencesElement(
               value.references.length,
               "block",
               value.references[0].realLink,
               value.key,
-              (_g = (_f = value.references[0]) == null ? void 0 : _f.resolvedFile) == null ? void 0 : _g.path.replace(".md", ""),
-              "",
+              (_j = (_g = value.references[0]) == null ? void 0 : _g.resolvedFile) == null ? void 0 : _j.path.replace("." + ((_i = (_h = value.references[0]) == null ? void 0 : _h.resolvedFile) == null ? void 0 : _i.path), ""),
+              "snw-liveupdate",
               value.pos.start.line
             );
             let blockElement = this.containerEl.querySelector("p");
             const valueLineInSection = value.pos.start.line - this.sectionInfo.lineStart;
             if (!blockElement) {
-              blockElement = this.containerEl.querySelector(
-                `li[data-line="${valueLineInSection}"]`
-              );
+              blockElement = this.containerEl.querySelector(`li[data-line="${valueLineInSection}"]`);
               if (blockElement.querySelector("ul"))
                 blockElement.querySelector("ul").before(referenceElement);
               else
                 blockElement.append(referenceElement);
             } else {
               if (!blockElement) {
-                blockElement = this.containerEl.querySelector(
-                  `ol[data-line="${valueLineInSection}"]`
-                );
+                blockElement = this.containerEl.querySelector(`ol[data-line="${valueLineInSection}"]`);
                 blockElement.append(referenceElement);
               } else {
                 blockElement.append(referenceElement);
@@ -4288,22 +4248,20 @@ var snwChildComponent = class extends import_obsidian7.MarkdownRenderChild {
           }
         }
       }
-      if (thePlugin7.settings.enableRenderingEmbedsInMarkdown && (transformedCache == null ? void 0 : transformedCache.embeds)) {
+      if (plugin7.settings.enableRenderingEmbedsInMarkdown && (transformedCache == null ? void 0 : transformedCache.embeds)) {
         this.containerEl.querySelectorAll(".internal-embed:not(.snw-embed-preview)").forEach((element) => {
-          var _a2, _b2, _c2;
-          let embedKey = parseLinkTextToFullPath(element.getAttribute("src"));
-          if (embedKey === "") {
-            embedKey = this.currentFile.path.replace(".md", "") + (0, import_obsidian7.stripHeading)(element.getAttribute("src"));
-          }
+          var _a2, _b2, _c2, _d2;
+          let embedKey = parseLinkTextToFullPath(element.getAttribute("src") + "");
+          embedKey = embedKey === "" ? element.getAttribute("src") + "" : embedKey;
           for (const value of transformedCache.embeds) {
-            if (((_a2 = value.references[0]) == null ? void 0 : _a2.excludedFile) != true && value.references.length >= minRefCountThreshold && embedKey.endsWith(value.key)) {
+            if (value.references.length >= minRefCountThreshold && embedKey === value.key) {
               const referenceElement = htmlDecorationForReferencesElement(
                 value.references.length,
                 "embed",
                 value.references[0].realLink,
                 value.key,
-                (_c2 = (_b2 = value.references[0]) == null ? void 0 : _b2.resolvedFile) == null ? void 0 : _c2.path.replace(".md", ""),
-                "",
+                (_d2 = (_a2 = value.references[0]) == null ? void 0 : _a2.resolvedFile) == null ? void 0 : _d2.path.replace("." + ((_c2 = (_b2 = value.references[0]) == null ? void 0 : _b2.resolvedFile) == null ? void 0 : _c2.extension), ""),
+                "snw-liveupdate",
                 value.pos.start.line
               );
               referenceElement.addClass("snw-embed-preview");
@@ -4313,18 +4271,18 @@ var snwChildComponent = class extends import_obsidian7.MarkdownRenderChild {
           }
         });
       }
-      if (thePlugin7.settings.enableRenderingHeadersInMarkdown) {
+      if (plugin7.settings.enableRenderingHeadersInMarkdown) {
         const headerKey = this.containerEl.querySelector("[data-heading]");
         if ((transformedCache == null ? void 0 : transformedCache.headings) && headerKey) {
           const textContext = headerKey.getAttribute("data-heading");
           for (const value of transformedCache.headings) {
-            if (((_h = value.references[0]) == null ? void 0 : _h.excludedFile) != true && value.references.length >= minRefCountThreshold && value.headerMatch === textContext) {
+            if (value.references.length >= minRefCountThreshold && value.headerMatch === textContext.replace(/\[|\]/g, "")) {
               const referenceElement = htmlDecorationForReferencesElement(
                 value.references.length,
                 "heading",
                 value.references[0].realLink,
                 value.key,
-                (_j = (_i = value.references[0]) == null ? void 0 : _i.resolvedFile) == null ? void 0 : _j.path.replace(".md", ""),
+                (_n = (_k = value.references[0]) == null ? void 0 : _k.resolvedFile) == null ? void 0 : _n.path.replace("." + ((_m = (_l = value.references[0]) == null ? void 0 : _l.resolvedFile) == null ? void 0 : _m.extension), ""),
                 "",
                 value.pos.start.line
               );
@@ -4335,19 +4293,20 @@ var snwChildComponent = class extends import_obsidian7.MarkdownRenderChild {
           }
         }
       }
-      if (thePlugin7.settings.enableRenderingLinksInMarkdown && (transformedCache == null ? void 0 : transformedCache.links)) {
-        this.containerEl.querySelectorAll("a.internal-link:not(.snw-link-preview)").forEach((element) => {
-          var _a2, _b2, _c2;
-          const link = parseLinkTextToFullPath(element.getAttribute("data-href"));
+      if (plugin7.settings.enableRenderingLinksInMarkdown && (transformedCache == null ? void 0 : transformedCache.links)) {
+        this.containerEl.querySelectorAll("a.internal-link").forEach((element) => {
+          var _a2, _b2, _c2, _d2;
+          let link = parseLinkTextToFullPath(element.getAttribute("data-href") + "");
+          link = link === "" ? element.getAttribute("data-href") + "" : link;
           for (const value of transformedCache.links) {
-            if (((_a2 = value.references[0]) == null ? void 0 : _a2.excludedFile) != true && value.references.length >= minRefCountThreshold && (value.key === link || (value == null ? void 0 : value.original) != void 0 && (value == null ? void 0 : value.original.contains(link)))) {
+            if (value.references.length >= minRefCountThreshold && (value.key === link || (value == null ? void 0 : value.original) != void 0 && (value == null ? void 0 : value.original.contains(link)))) {
               const referenceElement = htmlDecorationForReferencesElement(
                 value.references.length,
                 "link",
                 value.references[0].realLink,
                 value.key,
-                (_c2 = (_b2 = value.references[0]) == null ? void 0 : _b2.resolvedFile) == null ? void 0 : _c2.path.replace(".md", ""),
-                "",
+                (_d2 = (_a2 = value.references[0]) == null ? void 0 : _a2.resolvedFile) == null ? void 0 : _d2.path.replace("." + ((_c2 = (_b2 = value.references[0]) == null ? void 0 : _b2.resolvedFile) == null ? void 0 : _c2.extension), ""),
+                "snw-liveupdate",
                 value.pos.start.line
               );
               referenceElement.addClass("snw-link-preview");
@@ -4364,9 +4323,9 @@ var snwChildComponent = class extends import_obsidian7.MarkdownRenderChild {
 // src/view-extensions/gutters-cm6.ts
 var import_view2 = require("@codemirror/view");
 var import_obsidian8 = require("obsidian");
-var thePlugin8;
-function setPluginVariableForCM6Gutter(plugin) {
-  thePlugin8 = plugin;
+var plugin8;
+function setPluginVariableForCM6Gutter(snwPlugin) {
+  plugin8 = snwPlugin;
 }
 var referenceGutterMarker = class extends import_view2.GutterMarker {
   //if a reference need special treatment, this class can be assigned
@@ -4399,13 +4358,7 @@ var emptyMarker = new class extends import_view2.GutterMarker {
 var ReferenceGutterExtension = (0, import_view2.gutter)({
   class: "snw-gutter-ref",
   lineMarker(editorView, line) {
-    var _a, _b, _c, _d, _e, _f, _g, _h, _i, _j;
-    if (thePlugin8.snwAPI.enableDebugging.GutterEmbedCounter)
-      thePlugin8.snwAPI.console(
-        "ReferenceGutterExtension(EditorView, BlockInfo)",
-        editorView,
-        line
-      );
+    var _a, _b, _c, _d, _e, _f, _g, _h, _i;
     const mdView = editorView.state.field(import_obsidian8.editorInfoField);
     if (!mdView.file)
       return null;
@@ -4417,38 +4370,32 @@ var ReferenceGutterExtension = (0, import_view2.gutter)({
     const embedsFromMetaDataCache = (_e = mdView.app.metadataCache.getFileCache(mdView.file)) == null ? void 0 : _e.embeds;
     if (!embedsFromMetaDataCache)
       return null;
-    if ((_f = embedsFromMetaDataCache == null ? void 0 : embedsFromMetaDataCache.length) != null ? _f : 0 >= thePlugin8.settings.minimumRefCountThreshold) {
+    if ((embedsFromMetaDataCache == null ? void 0 : embedsFromMetaDataCache.length) >= 0) {
       const lineNumberInFile = editorView.state.doc.lineAt(line.from).number;
       for (const embed of embedsFromMetaDataCache) {
         if (embed.position.start.line + 1 === lineNumberInFile) {
-          for (const ref of (_g = transformedCache == null ? void 0 : transformedCache.embeds) != null ? _g : []) {
-            if (((_h = ref == null ? void 0 : ref.references[0]) == null ? void 0 : _h.excludedFile) != true && (ref == null ? void 0 : ref.references.length) > 0 && (ref == null ? void 0 : ref.pos.start.line) + 1 === lineNumberInFile) {
+          for (const ref of (_f = transformedCache == null ? void 0 : transformedCache.embeds) != null ? _f : []) {
+            if ((ref == null ? void 0 : ref.references.length) >= plugin8.settings.minimumRefCountThreshold && (ref == null ? void 0 : ref.pos.start.line) + 1 === lineNumberInFile) {
               const lineToAnalyze = editorView.state.doc.lineAt(line.from).text.trim();
               if (lineToAnalyze.startsWith("!")) {
                 const strippedLineToAnalyze = lineToAnalyze.replace("![[", "").replace("]]", "");
                 let lineFromFile = "";
                 if (strippedLineToAnalyze.startsWith("#")) {
-                  lineFromFile = mdView.file.path.replace(".md", "") + (0, import_obsidian8.stripHeading)(strippedLineToAnalyze);
+                  lineFromFile = mdView.file.path.replace("." + mdView.file.path, "") + (0, import_obsidian8.stripHeading)(strippedLineToAnalyze);
                 } else {
                   lineFromFile = parseLinkTextToFullPath(strippedLineToAnalyze);
+                  if (lineFromFile === "") {
+                    lineFromFile = strippedLineToAnalyze;
+                  }
                 }
                 if (lineFromFile === ref.key) {
-                  if (thePlugin8.snwAPI.enableDebugging.GutterEmbedCounter)
-                    thePlugin8.snwAPI.console(
-                      "ReferenceGutterExtension New gutter",
-                      ref.references.length,
-                      "embed",
-                      ref.key,
-                      ref.key,
-                      "snw-embed-special"
-                    );
                   return new referenceGutterMarker(
                     ref.references.length,
                     "embed",
                     ref.references[0].realLink,
                     ref.key,
-                    ((_j = (_i = ref.references[0].resolvedFile) == null ? void 0 : _i.path) != null ? _j : "").replace(".md", ""),
-                    "snw-embed-special"
+                    ((_h = (_g = ref.references[0].resolvedFile) == null ? void 0 : _g.path) != null ? _h : "").replace("." + ((_i = ref.references[0].resolvedFile) == null ? void 0 : _i.extension), ""),
+                    "snw-embed-special snw-liveupdate"
                   );
                 }
               }
@@ -4465,49 +4412,43 @@ var gutters_cm6_default = ReferenceGutterExtension;
 
 // src/ui/headerRefCount.ts
 var import_obsidian9 = require("obsidian");
-var thePlugin9;
-function setPluginVariableForHeaderRefCount(plugin) {
-  thePlugin9 = plugin;
+var plugin9;
+function setPluginVariableForHeaderRefCount(snwPlugin) {
+  plugin9 = snwPlugin;
 }
 function setHeaderWithReferenceCounts() {
-  var _a;
-  if ((_a = thePlugin9.snwAPI.enableDebugging) == null ? void 0 : _a.LinkCountInHeader)
-    thePlugin9.snwAPI.console(
-      "headerImageCount.setHeaderWithReferenceCounts(thePlugin)",
-      SNWPlugin
-    );
-  thePlugin9.app.workspace.iterateAllLeaves((leaf) => {
+  plugin9.app.workspace.iterateAllLeaves((leaf) => {
     if (leaf.view.getViewType() === "markdown")
       processHeader(leaf.view);
   });
 }
+var updateHeadersDebounce = (0, import_obsidian9.debounce)(
+  () => {
+    setHeaderWithReferenceCounts();
+  },
+  UPDATE_DEBOUNCE,
+  true
+);
 function processHeader(mdView) {
-  var _a, _b, _c, _d, _e, _f, _g;
-  if ((_a = thePlugin9.snwAPI.enableDebugging) == null ? void 0 : _a.LinkCountInHeader)
-    thePlugin9.snwAPI.console(
-      "headerImageCount.processHeader(ThePlugin, MarkdownView)",
-      thePlugin9,
-      mdView
-    );
+  var _a, _b, _c, _d, _e;
   const mdViewFile = mdView.file;
-  const allLinks = getSnwAllLinksResolutions();
-  if (allLinks == void 0)
+  if (!mdViewFile)
     return;
-  const incomingLinks = allLinks.filter((f3) => {
-    var _a2;
-    if (!(f3 == null ? void 0 : f3.resolvedFile))
-      return false;
-    return ((_a2 = f3 == null ? void 0 : f3.resolvedFile) == null ? void 0 : _a2.path) === mdViewFile.path;
-  });
+  const allLinks = getIndexedReferences();
+  const incomingLinks = [];
+  for (const items of allLinks.values()) {
+    for (const item of items) {
+      if ((item == null ? void 0 : item.resolvedFile) && ((_a = item == null ? void 0 : item.resolvedFile) == null ? void 0 : _a.path) === mdViewFile.path)
+        incomingLinks.push(item);
+    }
+  }
   let incomingLinksCount = incomingLinks.length;
   const transformedCache = getSNWCacheByFile(mdViewFile);
   if (((_c = (_b = transformedCache == null ? void 0 : transformedCache.cacheMetaData) == null ? void 0 : _b.frontmatter) == null ? void 0 : _c["snw-file-exclude"]) === true)
     incomingLinksCount = 0;
-  if (((_d = incomingLinks[0]) == null ? void 0 : _d.excludedFile) === true)
-    incomingLinksCount = 0;
-  if (incomingLinksCount < thePlugin9.settings.minimumRefCountThreshold) {
+  if (incomingLinksCount < 1) {
     if (mdView.contentEl.querySelector(".snw-header-count-wrapper"))
-      (_e = mdView.contentEl.querySelector(".snw-header-count-wrapper")) == null ? void 0 : _e.remove();
+      (_d = mdView.contentEl.querySelector(".snw-header-count-wrapper")) == null ? void 0 : _d.remove();
     return;
   }
   let snwTitleRefCountDisplayCountEl = mdView.contentEl.querySelector(".snw-header-count");
@@ -4517,12 +4458,10 @@ function processHeader(mdView) {
   }
   const containerViewContent = mdView.contentEl;
   if (mdView.contentEl.querySelector(".snw-header-count-wrapper"))
-    (_f = mdView.contentEl.querySelector(".snw-header-count-wrapper")) == null ? void 0 : _f.remove();
-  let wrapper = containerViewContent.querySelector(
-    ".snw-header-count-wrapper"
-  );
+    (_e = mdView.contentEl.querySelector(".snw-header-count-wrapper")) == null ? void 0 : _e.remove();
+  let wrapper = containerViewContent.querySelector(".snw-header-count-wrapper");
   if (!wrapper) {
-    wrapper = createDiv({ cls: "snw-header-count-wrapper" });
+    wrapper = createDiv({ cls: "snw-reference snw-header-count-wrapper" });
     snwTitleRefCountDisplayCountEl = createDiv({ cls: "snw-header-count" });
     wrapper.appendChild(snwTitleRefCountDisplayCountEl);
     containerViewContent.prepend(wrapper);
@@ -4546,7 +4485,7 @@ function processHeader(mdView) {
     e2.stopPropagation();
     processHtmlDecorationReferenceEvent(e2.target);
   };
-  const requireModifierKey = thePlugin9.settings.requireModifierKeyToActivateSNWView;
+  const requireModifierKey = plugin9.settings.requireModifierKeyToActivateSNWView;
   let showTippy = true;
   const tippyObject = tippy_esm_default(wrapper, {
     interactive: true,
@@ -4573,20 +4512,15 @@ function processHeader(mdView) {
     }
   });
   tippyObject.popper.classList.add("snw-tippy");
-  if ((_g = thePlugin9.snwAPI.enableDebugging) == null ? void 0 : _g.LinkCountInHeader)
-    thePlugin9.snwAPI.console(
-      "snwTitleRefCountDisplayCountEl",
-      snwTitleRefCountDisplayCountEl
-    );
 }
 
 // src/ui/sidebar-pane.tsx
 var import_obsidian10 = require("obsidian");
 var VIEW_TYPE_SNW = "Strange New Worlds";
 var SideBarPaneView = class extends import_obsidian10.ItemView {
-  constructor(leaf, thePlugin10) {
+  constructor(leaf, snnwPlugin) {
     super(leaf);
-    this.thePlugin = thePlugin10;
+    this.plugin = snnwPlugin;
   }
   getViewType() {
     return VIEW_TYPE_SNW;
@@ -4598,7 +4532,7 @@ var SideBarPaneView = class extends import_obsidian10.ItemView {
     return "file-digit";
   }
   async onOpen() {
-    N(
+    D(
       /* @__PURE__ */ u2("div", { class: "snw-sidepane-loading", children: [
         /* @__PURE__ */ u2("div", { class: "snw-sidepane-loading-banner", children: "Discovering Strange New Worlds..." }),
         /* @__PURE__ */ u2("div", { class: "snw-sidepane-loading-subtext", children: "Click a reference counter in the main document for information to appear here." })
@@ -4607,46 +4541,237 @@ var SideBarPaneView = class extends import_obsidian10.ItemView {
     );
   }
   async updateView() {
-    const refType = this.thePlugin.lastSelectedReferenceType;
-    const realLink = this.thePlugin.lastSelectedReferenceRealLink;
-    const key = this.thePlugin.lastSelectedReferenceKey;
-    const filePath = this.thePlugin.lastSelectedReferenceFilePath;
-    const lineNu = this.thePlugin.lastSelectedLineNumber;
-    if (this.thePlugin.snwAPI.enableDebugging.SidePane) {
-      this.thePlugin.snwAPI.console(
-        "sidepane.open() refType, realLink, key, filePath",
-        refType,
-        realLink,
-        key,
-        filePath
-      );
-      this.thePlugin.snwAPI.console(
-        "sidepane.open() getReferencesCache()",
-        getReferencesCache()
-      );
-    }
-    this.containerEl.replaceChildren(
-      await getUIC_SidePane(refType, realLink, key, filePath, lineNu)
-    );
+    const refType = this.plugin.lastSelectedReferenceType;
+    const realLink = this.plugin.lastSelectedReferenceRealLink;
+    const key = this.plugin.lastSelectedReferenceKey;
+    const filePath = this.plugin.lastSelectedReferenceFilePath;
+    const lineNu = this.plugin.lastSelectedLineNumber;
+    this.containerEl.replaceChildren(await getUIC_SidePane(refType, realLink, key, filePath, lineNu));
     scrollResultsIntoView(this.containerEl);
   }
   async onClose() {
   }
 };
 
-// src/ui/settingsTab.ts
+// src/ui/SettingsTab.ts
 var import_obsidian11 = require("obsidian");
+var SettingsTab = class extends import_obsidian11.PluginSettingTab {
+  constructor(app2, plugin11) {
+    super(app2, plugin11);
+    this.plugin = plugin11;
+  }
+  display() {
+    const { containerEl } = this;
+    containerEl.empty();
+    new import_obsidian11.Setting(containerEl).setHeading().setName("Enable on startup");
+    new import_obsidian11.Setting(containerEl).setName("On the desktop enable SNW at startup").addToggle((cb) => {
+      cb.setValue(this.plugin.settings.enableOnStartupDesktop);
+      cb.onChange(async (value) => {
+        this.plugin.settings.enableOnStartupDesktop = value;
+        await this.plugin.saveSettings();
+      });
+    });
+    new import_obsidian11.Setting(containerEl).setName("On mobile devices enable SNW at startup").addToggle((cb) => {
+      cb.setValue(this.plugin.settings.enableOnStartupMobile);
+      cb.onChange(async (value) => {
+        this.plugin.settings.enableOnStartupMobile = value;
+        await this.plugin.saveSettings();
+      });
+    });
+    new import_obsidian11.Setting(containerEl).setHeading().setName("SNW Activation");
+    new import_obsidian11.Setting(containerEl).setName("Require modifier key to activate SNW").setDesc(
+      `If enabled, SNW will only activate when the modifier key is pressed when hovering the mouse over an SNW counter.  
+						Otherwise, SNW will activate on a mouse hover. May require reopening open files to take effect.`
+    ).addToggle((cb) => {
+      cb.setValue(this.plugin.settings.requireModifierKeyToActivateSNWView);
+      cb.onChange(async (value) => {
+        this.plugin.settings.requireModifierKeyToActivateSNWView = value;
+        await this.plugin.saveSettings();
+      });
+    });
+    new import_obsidian11.Setting(containerEl).setHeading().setName("Thresholds");
+    new import_obsidian11.Setting(containerEl).setName("Minimal required count to show counter").setDesc(
+      `This setting defines how many references there needs to be for the reference count box to appear. May require reloading open files.
+				 Currently set to: ${this.plugin.settings.minimumRefCountThreshold} references.`
+    ).addSlider(
+      (slider) => slider.setLimits(1, 1e3, 1).setValue(this.plugin.settings.minimumRefCountThreshold).onChange(async (value) => {
+        this.plugin.settings.minimumRefCountThreshold = value;
+        await this.plugin.saveSettings();
+      }).setDynamicTooltip()
+    );
+    new import_obsidian11.Setting(containerEl).setName("Maximum file references to show").setDesc(
+      `This setting defines the max amount of files with their references are displayed in the popup or sidebar.  Set to 1000 for no maximum.
+				 Currently set to: ${this.plugin.settings.maxFileCountToDisplay} references. Keep in mind higher numbers can affect performance on larger vaults.`
+    ).addSlider(
+      (slider) => slider.setLimits(1, 1e3, 1).setValue(this.plugin.settings.maxFileCountToDisplay).onChange(async (value) => {
+        this.plugin.settings.maxFileCountToDisplay = value;
+        await this.plugin.saveSettings();
+      }).setDynamicTooltip()
+    );
+    new import_obsidian11.Setting(containerEl).setHeading().setName(`Use Obsidian's Excluded Files list (Settings > Files & Links)`);
+    new import_obsidian11.Setting(containerEl).setName("Outgoing links").setDesc(
+      "If enabled, links FROM files in the excluded folder will not be included in SNW's reference counters. May require restarting Obsidian."
+    ).addToggle((cb) => {
+      cb.setValue(this.plugin.settings.enableIgnoreObsExcludeFoldersLinksFrom);
+      cb.onChange(async (value) => {
+        this.plugin.settings.enableIgnoreObsExcludeFoldersLinksFrom = value;
+        await this.plugin.saveSettings();
+      });
+    });
+    new import_obsidian11.Setting(containerEl).setName("Incoming links").setDesc(
+      "If enabled, links TO files in the excluded folder will not be included in SNW's reference counters.  May require restarting Obsidian."
+    ).addToggle((cb) => {
+      cb.setValue(this.plugin.settings.enableIgnoreObsExcludeFoldersLinksTo);
+      cb.onChange(async (value) => {
+        this.plugin.settings.enableIgnoreObsExcludeFoldersLinksTo = value;
+        await this.plugin.saveSettings();
+      });
+    });
+    new import_obsidian11.Setting(containerEl).setHeading().setName("Properties");
+    new import_obsidian11.Setting(containerEl).setName("Show references in properties on Desktop").addToggle((cb) => {
+      cb.setValue(this.plugin.settings.displayPropertyReferences);
+      cb.onChange(async (value) => {
+        this.plugin.settings.displayPropertyReferences = value;
+        await this.plugin.saveSettings();
+      });
+    });
+    new import_obsidian11.Setting(containerEl).setName("Show references in properties on mobile").addToggle((cb) => {
+      cb.setValue(this.plugin.settings.displayPropertyReferencesMobile);
+      cb.onChange(async (value) => {
+        this.plugin.settings.displayPropertyReferencesMobile = value;
+        await this.plugin.saveSettings();
+      });
+    });
+    new import_obsidian11.Setting(containerEl).setHeading().setName("View Modes");
+    new import_obsidian11.Setting(containerEl).setName("Incoming Links Header Count").setDesc("In header of a document, show number of incoming link to that file.").addToggle((cb) => {
+      cb.setValue(this.plugin.settings.displayIncomingFilesheader);
+      cb.onChange(async (value) => {
+        this.plugin.settings.displayIncomingFilesheader = value;
+        this.plugin.toggleStateHeaderCount();
+        await this.plugin.saveSettings();
+      });
+    });
+    new import_obsidian11.Setting(containerEl).setName("Show SNW indicators in Live Preview Editor").setDesc(
+      "While using Live Preview, Display inline of the text of documents all reference counts for links, blocks and embeds.Note: files may need to be closed and reopened for this setting to take effect."
+    ).addToggle((cb) => {
+      cb.setValue(this.plugin.settings.displayInlineReferencesLivePreview);
+      cb.onChange(async (value) => {
+        this.plugin.settings.displayInlineReferencesLivePreview = value;
+        this.plugin.toggleStateSNWLivePreview();
+        await this.plugin.saveSettings();
+      });
+    });
+    new import_obsidian11.Setting(containerEl).setName("Show SNW indicators in Reading view ").setDesc(
+      "While in Reading View of a document, display inline of the text of documents all reference counts for links, blocks and embeds.Note: files may need to be closed and reopened for this setting to take effect."
+    ).addToggle((cb) => {
+      cb.setValue(this.plugin.settings.displayInlineReferencesMarkdown);
+      cb.onChange(async (value) => {
+        this.plugin.settings.displayInlineReferencesMarkdown = value;
+        this.plugin.toggleStateSNWMarkdownPreview();
+        await this.plugin.saveSettings();
+      });
+    });
+    new import_obsidian11.Setting(containerEl).setName("Embed references in Gutter in Live Preview Mode (Desktop)").setDesc(
+      `Displays a count of references in the gutter while in live preview. This is done only in a
+					  special scenario. It has to do with the way Obsidian renders embeds, example: ![[link]] when  
+					  they are on its own line. Strange New Worlds cannot embed the count in this scenario, so a hint is 
+					  displayed in the gutter. It is a hack, but at least we get some information.`
+    ).addToggle((cb) => {
+      cb.setValue(this.plugin.settings.displayEmbedReferencesInGutter);
+      cb.onChange(async (value) => {
+        this.plugin.settings.displayEmbedReferencesInGutter = value;
+        this.plugin.toggleStateSNWGutters();
+        await this.plugin.saveSettings();
+      });
+    });
+    new import_obsidian11.Setting(containerEl).setName("Embed references in Gutter in Live Preview Mode (Mobile)").setDesc(`This is off by default on mobile since the gutter takes up some space in the left margin.`).addToggle((cb) => {
+      cb.setValue(this.plugin.settings.displayEmbedReferencesInGutterMobile);
+      cb.onChange(async (value) => {
+        this.plugin.settings.displayEmbedReferencesInGutterMobile = value;
+        this.plugin.toggleStateSNWGutters();
+        await this.plugin.saveSettings();
+      });
+    });
+    new import_obsidian11.Setting(containerEl).setHeading().setName("Enable reference types in Reading Mode");
+    containerEl.createEl("sup", {
+      text: "(requires reopening documents to take effect)"
+    });
+    new import_obsidian11.Setting(containerEl).setName("Block ID").setDesc("Identifies block ID's, for example text blocks that end with a ^ and unique ID for that text block.").addToggle((cb) => {
+      cb.setValue(this.plugin.settings.enableRenderingBlockIdInMarkdown);
+      cb.onChange(async (value) => {
+        this.plugin.settings.enableRenderingBlockIdInMarkdown = value;
+        await this.plugin.saveSettings();
+      });
+    });
+    new import_obsidian11.Setting(containerEl).setName("Embeds").setDesc("Identifies embedded links, that is links that start with an explanation mark. For example: ![[PageName]].").addToggle((cb) => {
+      cb.setValue(this.plugin.settings.enableRenderingEmbedsInMarkdown);
+      cb.onChange(async (value) => {
+        this.plugin.settings.enableRenderingEmbedsInMarkdown = value;
+        await this.plugin.saveSettings();
+      });
+    });
+    new import_obsidian11.Setting(containerEl).setName("Links").setDesc("Identifies links in a document. For example: [[PageName]].").addToggle((cb) => {
+      cb.setValue(this.plugin.settings.enableRenderingLinksInMarkdown);
+      cb.onChange(async (value) => {
+        this.plugin.settings.enableRenderingLinksInMarkdown = value;
+        await this.plugin.saveSettings();
+      });
+    });
+    new import_obsidian11.Setting(containerEl).setName("Headers").setDesc("Identifies headers, that is lines of text that start with a hash mark or multiple hash marks. For example: # Heading 1.").addToggle((cb) => {
+      cb.setValue(this.plugin.settings.enableRenderingHeadersInMarkdown);
+      cb.onChange(async (value) => {
+        this.plugin.settings.enableRenderingHeadersInMarkdown = value;
+        await this.plugin.saveSettings();
+      });
+    });
+    new import_obsidian11.Setting(containerEl).setHeading().setName("Enable reference types in Live Preview Mode");
+    containerEl.createEl("sup", {
+      text: "(requires reopening documents to take effect)"
+    });
+    new import_obsidian11.Setting(containerEl).setName("Block ID").setDesc("Identifies block ID's, for example text blocks that end with a ^ and unique ID for that text block.").addToggle((cb) => {
+      cb.setValue(this.plugin.settings.enableRenderingBlockIdInLivePreview);
+      cb.onChange(async (value) => {
+        this.plugin.settings.enableRenderingBlockIdInLivePreview = value;
+        await this.plugin.saveSettings();
+      });
+    });
+    new import_obsidian11.Setting(containerEl).setName("Embeds").setDesc("Identifies embedded links, that is links that start with an explanation mark. For example: ![[PageName]].").addToggle((cb) => {
+      cb.setValue(this.plugin.settings.enableRenderingEmbedsInLivePreview);
+      cb.onChange(async (value) => {
+        this.plugin.settings.enableRenderingEmbedsInLivePreview = value;
+        await this.plugin.saveSettings();
+      });
+    });
+    new import_obsidian11.Setting(containerEl).setName("Links").setDesc("Identifies links in a document. For example: [[PageName]].").addToggle((cb) => {
+      cb.setValue(this.plugin.settings.enableRenderingLinksInLivePreview);
+      cb.onChange(async (value) => {
+        this.plugin.settings.enableRenderingLinksInLivePreview = value;
+        await this.plugin.saveSettings();
+      });
+    });
+    new import_obsidian11.Setting(containerEl).setName("Headers").setDesc("Identifies headers, that is lines of text that start with a hash mark or multiple hash marks. For example: # Heading 1.").addToggle((cb) => {
+      cb.setValue(this.plugin.settings.enableRenderingHeadersInLivePreview);
+      cb.onChange(async (value) => {
+        this.plugin.settings.enableRenderingHeadersInLivePreview = value;
+        await this.plugin.saveSettings();
+      });
+    });
+  }
+};
+
+// src/ui/settings.ts
 var DEFAULT_SETTINGS = {
   enableOnStartupDesktop: true,
   enableOnStartupMobile: true,
-  minimumRefCountThreshold: 1,
+  minimumRefCountThreshold: 2,
   maxFileCountToDisplay: 100,
   displayIncomingFilesheader: true,
   displayInlineReferencesLivePreview: true,
   displayInlineReferencesMarkdown: true,
-  displayEmbedReferencesInGutter: true,
+  displayEmbedReferencesInGutter: false,
   displayEmbedReferencesInGutterMobile: false,
-  cacheUpdateInMilliseconds: 500,
+  displayPropertyReferences: true,
+  displayPropertyReferencesMobile: false,
   enableRenderingBlockIdInMarkdown: true,
   enableRenderingLinksInMarkdown: true,
   enableRenderingHeadersInMarkdown: true,
@@ -4659,258 +4784,35 @@ var DEFAULT_SETTINGS = {
   enableIgnoreObsExcludeFoldersLinksTo: false,
   requireModifierKeyToActivateSNWView: false
 };
-var SettingsTab = class extends import_obsidian11.PluginSettingTab {
-  constructor(app2, plugin) {
-    super(app2, plugin);
-    this.thePlugin = plugin;
-  }
-  display() {
-    const { containerEl } = this;
-    containerEl.empty();
-    containerEl.createEl("h2", { text: this.thePlugin.appName });
-    containerEl.createEl("h2", { text: "SNW Activation" });
-    new import_obsidian11.Setting(containerEl).setName("Require modifier key to activate SNW").setDesc(
-      `If enabled, SNW will only activate when the modifier key is pressed when hovering the mouse over an SNW counter.  
-						Otherwise, SNW will activate on a mouse hover. May require reopening open files to take effect.`
-    ).addToggle((cb) => {
-      cb.setValue(this.thePlugin.settings.requireModifierKeyToActivateSNWView);
-      cb.onChange(async (value) => {
-        this.thePlugin.settings.requireModifierKeyToActivateSNWView = value;
-        await this.thePlugin.saveSettings();
-      });
-    });
-    containerEl.createEl("h2", { text: "Thresholds" });
-    new import_obsidian11.Setting(containerEl).setName("Minimal required count to show counter").setDesc(
-      `This setting defines how many references there needs to be for the reference count box to appear. May require reloading open files.
-				 Currently set to: ${this.thePlugin.settings.minimumRefCountThreshold} references.`
-    ).addSlider(
-      (slider) => slider.setLimits(1, 1e3, 1).setValue(this.thePlugin.settings.minimumRefCountThreshold).onChange(async (value) => {
-        this.thePlugin.settings.minimumRefCountThreshold = value;
-        await this.thePlugin.saveSettings();
-      }).setDynamicTooltip()
-    );
-    new import_obsidian11.Setting(containerEl).setName("Maximum file references to show").setDesc(
-      `This setting defines the max amount of files with their references are displayed in the popup or sidebar.  Set to 1000 for no maximum.
-				 Currently set to: ${this.thePlugin.settings.maxFileCountToDisplay} references.`
-    ).addSlider(
-      (slider) => slider.setLimits(1, 1e3, 1).setValue(this.thePlugin.settings.maxFileCountToDisplay).onChange(async (value) => {
-        this.thePlugin.settings.maxFileCountToDisplay = value;
-        await this.thePlugin.saveSettings();
-      }).setDynamicTooltip()
-    );
-    containerEl.createEl("h2", {
-      text: "Use Obsidian's Excluded Files list (Settings > Files & Links)"
-    });
-    new import_obsidian11.Setting(containerEl).setName("Outgoing links").setDesc(
-      "If enabled, links FROM files in the excluded folder will not be included in SNW's reference counters. May require restarting Obsidian."
-    ).addToggle((cb) => {
-      cb.setValue(this.thePlugin.settings.enableIgnoreObsExcludeFoldersLinksFrom);
-      cb.onChange(async (value) => {
-        this.thePlugin.settings.enableIgnoreObsExcludeFoldersLinksFrom = value;
-        await this.thePlugin.saveSettings();
-      });
-    });
-    new import_obsidian11.Setting(containerEl).setName("Incoming links").setDesc(
-      "If enabled, links TO files in the excluded folder will not be included in SNW's reference counters.  May require restarting Obsidian."
-    ).addToggle((cb) => {
-      cb.setValue(this.thePlugin.settings.enableIgnoreObsExcludeFoldersLinksTo);
-      cb.onChange(async (value) => {
-        this.thePlugin.settings.enableIgnoreObsExcludeFoldersLinksTo = value;
-        await this.thePlugin.saveSettings();
-      });
-    });
-    containerEl.createEl("h2", { text: "Enable on startup" });
-    new import_obsidian11.Setting(containerEl).setName("Enable upon startup (Desktop)").setDesc(
-      "If disabled, SNW will not show block counters from startup until enabled from the command palette."
-    ).addToggle((cb) => {
-      cb.setValue(this.thePlugin.settings.enableOnStartupDesktop);
-      cb.onChange(async (value) => {
-        this.thePlugin.settings.enableOnStartupDesktop = value;
-        await this.thePlugin.saveSettings();
-      });
-    });
-    new import_obsidian11.Setting(containerEl).setName("Enable startup (Mobile)").setDesc(
-      "If disabled, SNW will not show block counters from startup until enabled from the command palette."
-    ).addToggle((cb) => {
-      cb.setValue(this.thePlugin.settings.enableOnStartupMobile);
-      cb.onChange(async (value) => {
-        this.thePlugin.settings.enableOnStartupMobile = value;
-        await this.thePlugin.saveSettings();
-      });
-    });
-    containerEl.createEl("h2", { text: "View Modes" });
-    new import_obsidian11.Setting(containerEl).setName("Incoming Links Header Count").setDesc("In header of a document, show number of incoming link to that file.").addToggle((cb) => {
-      cb.setValue(this.thePlugin.settings.displayIncomingFilesheader);
-      cb.onChange(async (value) => {
-        this.thePlugin.settings.displayIncomingFilesheader = value;
-        this.thePlugin.toggleStateHeaderCount();
-        await this.thePlugin.saveSettings();
-      });
-    });
-    new import_obsidian11.Setting(containerEl).setName("Show SNW indicators in Live Preview Editor").setDesc(
-      "While using Live Preview, Display inline of the text of documents all reference counts for links, blocks and embeds."
-    ).addToggle((cb) => {
-      cb.setValue(this.thePlugin.settings.displayInlineReferencesLivePreview);
-      cb.onChange(async (value) => {
-        this.thePlugin.settings.displayInlineReferencesLivePreview = value;
-        this.thePlugin.toggleStateSNWLivePreview();
-        await this.thePlugin.saveSettings();
-      });
-    });
-    new import_obsidian11.Setting(containerEl).setName("Show SNW indicators in Reading view ").setDesc(
-      "While in Reading View of a document, display inline of the text of documents all reference counts for links, blocks and embeds."
-    ).addToggle((cb) => {
-      cb.setValue(this.thePlugin.settings.displayInlineReferencesMarkdown);
-      cb.onChange(async (value) => {
-        this.thePlugin.settings.displayInlineReferencesMarkdown = value;
-        this.thePlugin.toggleStateSNWMarkdownPreview();
-        await this.thePlugin.saveSettings();
-      });
-    });
-    new import_obsidian11.Setting(containerEl).setName("Embed references in Gutter in Live Preview Mode (Desktop)").setDesc(
-      `Displays a count of references in the gutter while in live preview. This is done only in a
-					  special scenario. It has to do with the way Obsidian renders embeds, example: ![[link]] when  
-					  they are on its own line. Strange New Worlds cannot embed the count in this scenario, so a hint is 
-					  displayed in the gutter. It is a hack, but at least we get some information.`
-    ).addToggle((cb) => {
-      cb.setValue(this.thePlugin.settings.displayEmbedReferencesInGutter);
-      cb.onChange(async (value) => {
-        this.thePlugin.settings.displayEmbedReferencesInGutter = value;
-        this.thePlugin.toggleStateSNWGutters();
-        await this.thePlugin.saveSettings();
-      });
-    });
-    new import_obsidian11.Setting(containerEl).setName("Embed references in Gutter in Live Preview Mode (Mobile)").setDesc(
-      `This is off by default on mobile since the gutter takes up some space in the left margin.`
-    ).addToggle((cb) => {
-      cb.setValue(this.thePlugin.settings.displayEmbedReferencesInGutterMobile);
-      cb.onChange(async (value) => {
-        this.thePlugin.settings.displayEmbedReferencesInGutterMobile = value;
-        this.thePlugin.toggleStateSNWGutters();
-        await this.thePlugin.saveSettings();
-      });
-    });
-    containerEl.createEl("h2", { text: "Enable Reference Types in Reading mode" });
-    containerEl.createEl("sup", {
-      text: "(requires reopening documents to take effect)"
-    });
-    new import_obsidian11.Setting(containerEl).setName("Block ID").setDesc(
-      "Identifies block ID's, for example text blocks that end with a ^ and unique ID for that text block."
-    ).addToggle((cb) => {
-      cb.setValue(this.thePlugin.settings.enableRenderingBlockIdInMarkdown);
-      cb.onChange(async (value) => {
-        this.thePlugin.settings.enableRenderingBlockIdInMarkdown = value;
-        await this.thePlugin.saveSettings();
-      });
-    });
-    new import_obsidian11.Setting(containerEl).setName("Embeds").setDesc(
-      "Identifies embedded links, that is links that start with an explanation mark. For example: ![[PageName]]."
-    ).addToggle((cb) => {
-      cb.setValue(this.thePlugin.settings.enableRenderingEmbedsInMarkdown);
-      cb.onChange(async (value) => {
-        this.thePlugin.settings.enableRenderingEmbedsInMarkdown = value;
-        await this.thePlugin.saveSettings();
-      });
-    });
-    new import_obsidian11.Setting(containerEl).setName("Links").setDesc("Identifies links in a document. For example: [[PageName]].").addToggle((cb) => {
-      cb.setValue(this.thePlugin.settings.enableRenderingLinksInMarkdown);
-      cb.onChange(async (value) => {
-        this.thePlugin.settings.enableRenderingLinksInMarkdown = value;
-        await this.thePlugin.saveSettings();
-      });
-    });
-    new import_obsidian11.Setting(containerEl).setName("Headers").setDesc(
-      "Identifies headers, that is lines of text that start with a hash mark or multiple hash marks. For example: # Heading 1."
-    ).addToggle((cb) => {
-      cb.setValue(this.thePlugin.settings.enableRenderingHeadersInMarkdown);
-      cb.onChange(async (value) => {
-        this.thePlugin.settings.enableRenderingHeadersInMarkdown = value;
-        await this.thePlugin.saveSettings();
-      });
-    });
-    containerEl.createEl("h2", { text: "Enable Reference Types in Live Preview Mode" });
-    containerEl.createEl("sup", {
-      text: "(requires reopening documents to take effect)"
-    });
-    new import_obsidian11.Setting(containerEl).setName("Block ID").setDesc(
-      "Identifies block ID's, for example text blocks that end with a ^ and unique ID for that text block."
-    ).addToggle((cb) => {
-      cb.setValue(this.thePlugin.settings.enableRenderingBlockIdInLivePreview);
-      cb.onChange(async (value) => {
-        this.thePlugin.settings.enableRenderingBlockIdInLivePreview = value;
-        await this.thePlugin.saveSettings();
-      });
-    });
-    new import_obsidian11.Setting(containerEl).setName("Embeds").setDesc(
-      "Identifies embedded links, that is links that start with an explanation mark. For example: ![[PageName]]."
-    ).addToggle((cb) => {
-      cb.setValue(this.thePlugin.settings.enableRenderingEmbedsInLivePreview);
-      cb.onChange(async (value) => {
-        this.thePlugin.settings.enableRenderingEmbedsInLivePreview = value;
-        await this.thePlugin.saveSettings();
-      });
-    });
-    new import_obsidian11.Setting(containerEl).setName("Links").setDesc("Identifies links in a document. For example: [[PageName]].").addToggle((cb) => {
-      cb.setValue(this.thePlugin.settings.enableRenderingLinksInLivePreview);
-      cb.onChange(async (value) => {
-        this.thePlugin.settings.enableRenderingLinksInLivePreview = value;
-        await this.thePlugin.saveSettings();
-      });
-    });
-    new import_obsidian11.Setting(containerEl).setName("Headers").setDesc(
-      "Identifies headers, that is lines of text that start with a hash mark or multiple hash marks. For example: # Heading 1."
-    ).addToggle((cb) => {
-      cb.setValue(this.thePlugin.settings.enableRenderingHeadersInLivePreview);
-      cb.onChange(async (value) => {
-        this.thePlugin.settings.enableRenderingHeadersInLivePreview = value;
-        await this.thePlugin.saveSettings();
-      });
-    });
-    containerEl.createEl("h2", { text: "Cache Tuning" });
-    new import_obsidian11.Setting(containerEl).setName(`How often should the SNW Cache update`).setDesc(
-      `By default SNW will updates its internal cache every half a second (500 milliseconds) when there is some change in the vault.
-					  Increase the time to slighlty improve performance on less performant devices or decrease it to improve refresh of vault information.
-					  Currently set to: ${this.thePlugin.settings.cacheUpdateInMilliseconds} milliseconds. (Requires Obsidian Restart)`
-    ).addSlider(
-      (slider) => slider.setLimits(500, 3e4, 100).setValue(this.thePlugin.settings.cacheUpdateInMilliseconds).onChange(async (value) => {
-        this.thePlugin.settings.cacheUpdateInMilliseconds = value;
-        await this.thePlugin.saveSettings();
-      }).setDynamicTooltip()
-    );
-  }
-};
 
 // src/snwApi.ts
 var SnwAPI = class {
-  constructor(plugin) {
-    this.enableDebugging = {
-      CM6Extension: false,
-      PreviewRendering: false,
-      LinkCountInHeader: false,
-      GutterEmbedCounter: false,
-      HtmlDecorationElements: false,
-      SidePane: false
-    };
+  constructor(snwPlugin) {
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     this.console = (logDescription, ...outputs) => {
       console.log("SNW: " + logDescription, outputs);
     };
-    /**
-     * For active file return the meta information used by various components of SNW
-     *
-     * @return {*}  {Promise<any>} // Needs to be any since we might return just about anything
-     */
+    // For active file return the meta information used by various components of SNW
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     this.getMetaInfoByCurrentFile = async () => {
       var _a;
       return this.getMetaInfoByFileName(((_a = app.workspace.getActiveFile()) == null ? void 0 : _a.path) || "");
     };
-    /**
-     * For given file name passed into the function, get the meta info for that file
-     *
-     * @param {string} fileName (or file name path)
-     * @memberof SnwAPI
-     */
+    this.searchReferencesStartingWith = async (searchString) => {
+      for (const [key, value] of getIndexedReferences()) {
+        if (key.startsWith(searchString)) {
+          console.log(key, value);
+        }
+      }
+    };
+    this.searchReferencesContains = async (searchString) => {
+      for (const [key, value] of getIndexedReferences()) {
+        if (key.contains(searchString)) {
+          console.log(key, value);
+        }
+      }
+    };
+    // For given file name passed into the function, get the meta info for that file
     this.getMetaInfoByFileName = async (fileName) => {
       const currentFile = app.metadataCache.getFirstLinkpathDest(fileName, "/");
       return {
@@ -4919,14 +4821,14 @@ var SnwAPI = class {
         SnwTransformedCache: currentFile ? getSNWCacheByFile(currentFile) : null
       };
     };
-    this.plugin = plugin;
+    this.plugin = snwPlugin;
   }
 };
 
-// src/pluginCommands.ts
+// src/PluginCommands.ts
 var import_obsidian12 = require("obsidian");
 var PluginCommands = class {
-  constructor(plugin) {
+  constructor(plugin11) {
     this.snwCommands = [
       {
         id: "SNW-ToggleActiveState",
@@ -4934,20 +4836,20 @@ var PluginCommands = class {
         name: "Toggle active state of SNW plugin on/off",
         showInRibbon: true,
         callback: async () => {
-          this.thePlugin.showCountsActive = !this.thePlugin.showCountsActive;
-          let msg = "SNW toggled " + (this.thePlugin.showCountsActive ? "ON\n\n" : "OFF\n\n");
+          this.plugin.showCountsActive = !this.plugin.showCountsActive;
+          let msg = "SNW toggled " + (this.plugin.showCountsActive ? "ON\n\n" : "OFF\n\n");
           msg += "Tabs may require reloading for this change to take effect.";
           new import_obsidian12.Notice(msg);
-          this.thePlugin.toggleStateHeaderCount();
-          this.thePlugin.toggleStateSNWMarkdownPreview();
-          this.thePlugin.toggleStateSNWLivePreview();
-          this.thePlugin.toggleStateSNWGutters();
+          this.plugin.toggleStateHeaderCount();
+          this.plugin.toggleStateSNWMarkdownPreview();
+          this.plugin.toggleStateSNWLivePreview();
+          this.plugin.toggleStateSNWGutters();
         }
       }
     ];
-    this.thePlugin = plugin;
+    this.plugin = plugin11;
     this.snwCommands.forEach(async (item) => {
-      this.thePlugin.addCommand({
+      this.plugin.addCommand({
         id: item.id,
         name: item.name,
         icon: item.icon,
@@ -4959,12 +4861,95 @@ var PluginCommands = class {
   }
 };
 
+// src/ui/frontmatterRefCount.ts
+var import_obsidian13 = require("obsidian");
+var plugin10;
+function setPluginVariableForFrontmatterLinksRefCount(snwPlugin) {
+  plugin10 = snwPlugin;
+}
+function setFrontmatterLinksReferenceCounts() {
+  plugin10.app.workspace.iterateAllLeaves((leaf) => {
+    if (leaf.view.getViewType() === "markdown")
+      processFrontmatterLinks(leaf.view);
+  });
+}
+var updatePropertiesDebounce = (0, import_obsidian13.debounce)(
+  () => {
+    setFrontmatterLinksReferenceCounts();
+  },
+  UPDATE_DEBOUNCE,
+  true
+);
+function processFrontmatterLinks(mdView) {
+  var _a;
+  if (plugin10.showCountsActive === false)
+    return;
+  const state = import_obsidian13.Platform.isMobile || import_obsidian13.Platform.isMobileApp ? plugin10.settings.displayPropertyReferencesMobile : plugin10.settings.displayPropertyReferences;
+  if (state === false)
+    return;
+  if ((mdView == null ? void 0 : mdView.rawFrontmatter) === "")
+    return;
+  const transformedCache = getSNWCacheByFile(mdView.file);
+  if (((_a = transformedCache.frontmatterLinks) == null ? void 0 : _a.length) === 0)
+    return;
+  mdView.metadataEditor.rendered.forEach((item) => {
+    var _a2;
+    const innerLink = item.valueEl.querySelector(".metadata-link-inner.internal-link");
+    if (innerLink) {
+      const fmMatch = (_a2 = transformedCache.frontmatterLinks) == null ? void 0 : _a2.find((item2) => item2.displayText === innerLink.innerText);
+      if (fmMatch)
+        appendRefCounter(innerLink, fmMatch);
+    } else {
+      const pillLinks = item.valueEl.querySelectorAll(".multi-select-pill.internal-link .multi-select-pill-content span");
+      if (pillLinks.length > 0) {
+        pillLinks.forEach((pill) => {
+          var _a3;
+          if (pill) {
+            const fmMatch = (_a3 = transformedCache.frontmatterLinks) == null ? void 0 : _a3.find((item2) => item2.displayText === pill.innerText);
+            if (fmMatch)
+              appendRefCounter(pill.parentElement, fmMatch);
+          }
+        });
+      }
+    }
+  });
+}
+function appendRefCounter(parentLink, cacheItem) {
+  var _a, _b, _c, _d, _e;
+  let wrapperEl = (_a = parentLink.parentElement) == null ? void 0 : _a.querySelector(".snw-frontmatter-wrapper");
+  const refCount = cacheItem.references.length;
+  if (!wrapperEl && refCount >= plugin10.settings.minimumRefCountThreshold) {
+    wrapperEl = createSpan({ cls: "snw-frontmatter-wrapper" });
+    const htmlCounter = htmlDecorationForReferencesElement(
+      refCount,
+      "link",
+      cacheItem.references[0].realLink,
+      cacheItem.key,
+      (_e = (_b = cacheItem.references[0]) == null ? void 0 : _b.resolvedFile) == null ? void 0 : _e.path.replace("." + ((_d = (_c = cacheItem.references[0]) == null ? void 0 : _c.resolvedFile) == null ? void 0 : _d.extension), ""),
+      "snw-frontmatter-count",
+      cacheItem.pos.start.line
+    );
+    wrapperEl.appendChild(htmlCounter);
+    parentLink.insertAdjacentElement("afterend", wrapperEl);
+  } else {
+    try {
+      if (refCount >= plugin10.settings.minimumRefCountThreshold)
+        wrapperEl.querySelector(".snw-frontmatter-count").innerText = " " + refCount + " ";
+      else
+        wrapperEl == null ? void 0 : wrapperEl.remove();
+    } catch (error) {
+    }
+  }
+}
+
 // src/main.ts
-var SNWPlugin = class extends import_obsidian13.Plugin {
+var UPDATE_DEBOUNCE = 200;
+var SNWPlugin4 = class extends import_obsidian14.Plugin {
   constructor() {
     super(...arguments);
     this.appName = this.manifest.name;
     this.appID = this.manifest.id;
+    this.APP_ABBREVIARTION = "SNW";
     this.settings = DEFAULT_SETTINGS;
     //controls global state if the plugin is showing counters
     this.showCountsActive = DEFAULT_SETTINGS.enableOnStartupDesktop;
@@ -4985,26 +4970,42 @@ var SNWPlugin = class extends import_obsidian13.Plugin {
     setPluginVariableForHtmlDecorations(this);
     setPluginVariableForCM6Gutter(this);
     setPluginVariableForHeaderRefCount(this);
+    setPluginVariableForFrontmatterLinksRefCount(this);
     setPluginVariableForMarkdownPreviewProcessor(this);
     setPluginVariableForCM6InlineReferences(this);
     setPluginVariableForUIC(this);
     window.snwAPI = this.snwAPI;
     await this.loadSettings();
     this.addSettingTab(new SettingsTab(this.app, this));
-    if (import_obsidian13.Platform.isMobile || import_obsidian13.Platform.isMobileApp)
+    if (import_obsidian14.Platform.isMobile || import_obsidian14.Platform.isMobileApp)
       this.showCountsActive = this.settings.enableOnStartupMobile;
     else
       this.showCountsActive = this.settings.enableOnStartupDesktop;
     this.registerView(VIEW_TYPE_SNW, (leaf) => new SideBarPaneView(leaf, this));
-    const indexDebounce = (0, import_obsidian13.debounce)(
+    const indexFullUpdateDebounce = (0, import_obsidian14.debounce)(
       () => {
         buildLinksAndReferences();
+        updateHeadersDebounce();
+        updatePropertiesDebounce();
+        updateAllSnwLiveUpdateReferencesDebounce();
       },
-      1e3,
+      3e3,
       true
     );
-    this.registerEvent(this.app.metadataCache.on("resolve", indexDebounce));
-    this.registerEvent(this.app.workspace.on("editor-change", indexDebounce));
+    const indexFileUpdateDebounce = (0, import_obsidian14.debounce)(
+      async (file, data, cache) => {
+        await removeLinkReferencesForFile(file);
+        getLinkReferencesForFile(file, cache);
+        updateHeadersDebounce();
+        updatePropertiesDebounce();
+        updateAllSnwLiveUpdateReferencesDebounce();
+      },
+      500,
+      true
+    );
+    this.registerEvent(this.app.vault.on("rename", indexFullUpdateDebounce));
+    this.registerEvent(this.app.vault.on("delete", indexFullUpdateDebounce));
+    this.registerEvent(this.app.metadataCache.on("changed", indexFileUpdateDebounce));
     this.app.workspace.registerHoverLinkSource(this.appID, {
       display: this.appName,
       defaultMod: true
@@ -5020,24 +5021,14 @@ var SNWPlugin = class extends import_obsidian13.Plugin {
       if (!((_a = this.app.workspace.getLeavesOfType(VIEW_TYPE_SNW)) == null ? void 0 : _a.length)) {
         await this.app.workspace.getRightLeaf(false).setViewState({ type: VIEW_TYPE_SNW, active: false });
       }
-      const resolved = this.app.metadataCache.on("resolved", async () => {
-        buildLinksAndReferences();
-        this.app.metadataCache.offref(resolved);
-      });
+      buildLinksAndReferences();
     });
   }
   async layoutChangeEvent() {
-    setHeaderWithReferenceCounts();
+    updateHeadersDebounce();
+    updatePropertiesDebounce();
   }
-  /**
-   * Displays the sidebar SNW pane
-   *
-   * @param {string} refType
-   * @param {string} key
-   * @param {string} filePath
-   * @param {number} lineNu
-   * @memberof ThePlugin
-   */
+  // Displays the sidebar SNW pane
   async activateView(refType, realLink, key, filePath, lineNu) {
     this.lastSelectedReferenceType = refType;
     this.lastSelectedReferenceRealLink = realLink;
@@ -5047,66 +5038,41 @@ var SNWPlugin = class extends import_obsidian13.Plugin {
     await this.app.workspace.getLeavesOfType(VIEW_TYPE_SNW)[0].view.updateView();
     this.app.workspace.revealLeaf(this.app.workspace.getLeavesOfType(VIEW_TYPE_SNW)[0]);
   }
-  /**
-   * Turns on and off the reference count displayed at the top of the document in the header area
-   *
-   * @memberof ThePlugin
-   */
+  // Turns on and off the reference count displayed at the top of the document in the header area
   toggleStateHeaderCount() {
     if (this.settings.displayIncomingFilesheader && this.showCountsActive)
       this.app.workspace.on("layout-change", this.layoutChangeEvent);
     else
       this.app.workspace.off("layout-change", this.layoutChangeEvent);
   }
-  /**
-   * Turns on and off the SNW reference counters in Reading mode
-   *
-   * @memberof ThePlugin
-   */
+  // Turns on and off the SNW reference counters in Reading mode
   toggleStateSNWMarkdownPreview() {
     if (this.settings.displayInlineReferencesMarkdown && this.showCountsActive && this.markdownPostProcessor === null) {
-      this.markdownPostProcessor = this.registerMarkdownPostProcessor(
-        (el, ctx2) => markdownPreviewProcessor(el, ctx2)
-      );
+      this.markdownPostProcessor = this.registerMarkdownPostProcessor((el, ctx) => markdownPreviewProcessor(el, ctx), 100);
     } else {
       if (!this.markdownPostProcessor) {
         console.log("Markdown post processor is not registered");
       } else {
-        import_obsidian13.MarkdownPreviewRenderer.unregisterPostProcessor(this.markdownPostProcessor);
+        import_obsidian14.MarkdownPreviewRenderer.unregisterPostProcessor(this.markdownPostProcessor);
       }
       this.markdownPostProcessor = null;
     }
   }
-  /**
-   * Turns on and off the SNW reference counters in CM editor
-   *
-   * @memberof ThePlugin
-   */
+  // Turns on and off the SNW reference counters in CM editor
   toggleStateSNWLivePreview() {
     let state = this.settings.displayInlineReferencesLivePreview;
     if (state === true)
       state = this.showCountsActive;
     this.updateCMExtensionState("inline-ref", state, InlineReferenceExtension);
   }
-  /**
-   * Turns on and off the SNW reference counters in CM editor gutter
-   *
-   * @memberof ThePlugin
-   */
+  // Turns on and off the SNW reference counters in CM editor gutter
   toggleStateSNWGutters() {
-    let state = import_obsidian13.Platform.isMobile || import_obsidian13.Platform.isMobileApp ? this.settings.displayEmbedReferencesInGutterMobile : this.settings.displayEmbedReferencesInGutter;
+    let state = import_obsidian14.Platform.isMobile || import_obsidian14.Platform.isMobileApp ? this.settings.displayEmbedReferencesInGutterMobile : this.settings.displayEmbedReferencesInGutter;
     if (state === true)
       state = this.showCountsActive;
     this.updateCMExtensionState("gutter", state, gutters_cm6_default);
   }
-  /**
-   * Manages which CM extensions are loaded into Obsidian
-   *
-   * @param {string} extensionIdentifier
-   * @param {boolean} extensionState
-   * @param {Extension} extension
-   * @memberof ThePlugin
-   */
+  // Manages which CM extensions are loaded into Obsidian
   updateCMExtensionState(extensionIdentifier, extensionState, extension) {
     if (extensionState == true) {
       this.editorExtensions.push(extension);
@@ -5134,7 +5100,7 @@ var SNWPlugin = class extends import_obsidian13.Plugin {
       if (!this.markdownPostProcessor) {
         console.log("Markdown post processor is not registered");
       } else {
-        import_obsidian13.MarkdownPreviewRenderer.unregisterPostProcessor(this.markdownPostProcessor);
+        import_obsidian14.MarkdownPreviewRenderer.unregisterPostProcessor(this.markdownPostProcessor);
       }
       this.app.workspace.unregisterHoverLinkSource(this.appID);
     } catch (error) {
