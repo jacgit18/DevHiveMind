@@ -61,8 +61,15 @@ AVG post total size = round to 300 bytes
 
 
 
+AU Number of likes per month = AVG likes * AVG likes size * 200M Active User = 1,800,000,000,000 bytes = 1.8TB
 
+AU Number of comments per month = AVG comments * AVG comments size * 200M Active User = 2,000,000,000,000 bytes = 2TB
 
+Monthly Total storage size needed = AU Number of likes per month + AU Number of comments per month = 3,800,000,000,000 bytes = 3.8TB
+
+Total Monthly Post = 100 monthly likes + 50 monthly comments = 150 
+
+Total Monthly Post size = 150 * 300 bytes = 45,000 bytes
 
 Total writes per day = 200,000,000 AU * 150 Total Monthly Post / 30 = 1,000,000,000 bytes
 
