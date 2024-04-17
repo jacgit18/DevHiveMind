@@ -27,6 +27,7 @@ dg-publish:
 - Ideal for Data Warehouses: Well-suited for data warehousing environments where efficiency and maintenance are critical.
 
 #### Snowflake Schema:
+consider things like [[Database Table Relationship Types]] and [[DBMS Keys]]
 
 **Overview:**
 - Purpose: Normalize denormalized data in a star schema, addressing write command slowdowns.
