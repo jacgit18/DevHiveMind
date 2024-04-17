@@ -76,7 +76,7 @@ When crafting your design, prioritize a forward-thinking approach that anticipat
 **Database > Backend > [[System Design Thought Process Flow#API Gateway |API Gateway]] > Client
 
 #### Schema Design (10 to 20)
-Create an Entity Relationship Diagram (ERD) to define clear relationships and [[Schema Design]] then discuss table [[Normalization & Denormalization]] to optimize schema and overall database performance. 
+Create an Entity Relationship Diagram (ERD) to define clear relationships and [[Schema Design]] then discuss table [[Normalization & Denormalization]] along with things like table indexing to improve query and schema performance. 
 
 #### [[Capacity Estimation]] (5 min)
 [Indepth Video Examination of Capacity Estimation ](https://www.youtube.com/watch?v=-frNQkRz_IU)
@@ -94,7 +94,6 @@ This approach offers several benefits, including the ability to leverage built-i
 With this information in hand, you can then transition to other potential, potentially more cost-effective options based on your specific needs and requirements. This approach allows for agility and flexibility, enabling you to optimize your infrastructure over time while ensuring a smooth and efficient initial setup.
 
 When considering open source technologies like for example Redis, it's essential to evaluate the longevity of their open source status. Some technologies, like Redis, have undergone changes in licensing or governance, potentially affecting their open source nature. It's prudent to assess how such changes may impact your long-term use and support of the technology within your infrastructure and whether it aligns with your organization's values and goals. Additionally, monitoring community activity, development trends, and vendor support can help gauge the ongoing viability of open source projects.
-
 
 ##### [[IV Backing services]]
 Backing services is a concept in 12 factor app methodology it refers to external services that your system utilizes.
@@ -145,7 +144,7 @@ You can discuss the usage of [[Monitoring & Observability |monitoring/logging]] 
 
 When it comes to all these components you also want keep [[Data Flow]] in mind as well like all the different sources of data, the processing and transformation, storage, transportation and communication. Along with things like versioning, change management, and monitoring.  
 
-Besides that you should consider what technologies your  picking based on the ability to potentially implement a future [[Migration Plan]] like sometimes the technologies you start out with doesn't make sense or you want to manage cost of your system.
+Besides that you should consider what technologies your picking based on the ability to potentially implement a future [[Migration Plan]] like sometimes the technologies you start out with doesn't make sense or you want to manage cost of your system.
 
 It's worth noting that scaling considerations can fall under administrative functionalities, whether that involves resource scaling in a cloud environment or implementing custom solutions such as creating an admin dashboard for internal use by developers. This dashboard could encompass various [[XII Admin processes]], offering insights and control over the scaling operations and other administrative tasks.
 ##### [[Impact of Architectural Styles |Architectural Styles]] 

@@ -14,8 +14,12 @@ dg-publish:
 
 # Question
 ## Requirements Gathering
+Functional Requirements core functionality.
+
+Non Requirements Functional how the system should perform or behave under various conditions things like performance, scalability, security, reliability, and usability should be discussed.
 
 ### Userbase
+
 
 #### Schema
 
@@ -52,9 +56,7 @@ Assume we have a Active Userbase of 200,000,000
 #### Storage
 You should be concerned with writes here only because we need to know how much data we need to store.
 
-##### Writes
-> POST, PUT, DELETE
-
+##### Writes(POST)
 As a users we want to:
 - Post Comment
 - Post Like
@@ -106,9 +108,7 @@ Year Storage =  1 * 400(Rounded year day) * 24TB = 400 * 24TB = 9600TB
 #### Network Traffic
 Read:Write *50*:1 read heavy ratio
 
-##### Reads
-> GET
-
+##### Reads(GET)
 As a users we want to:
 - Get Video views(not included in calculation)
 - Get Video likes
@@ -178,12 +178,31 @@ Typically Microservices
 
 Talk optimizations throughout and traffic management.
 
-### Backing Services
+## Backing Services
+Scalability strategies 
+### Cloud Infrastructure
+Don't need to use strictly cloud services
+##### Cloud Database
 
-#### Cloud Infrastructure
-##### Cloud Database or Non-AWS Alt
+##### Cloud Storage 
+file systems static files etc..
 
-##### Cache
+##### Caching
+
+##### Networking
+
+#### Processes
+
+##### Compute
+
+##### Data processing & analytics
+
+##### Logging 
+
+##### Monitoring
+
+#### DevOPS
+doesn't need to be cloud solution like AWS 
 
 
 ## Wrap Up
