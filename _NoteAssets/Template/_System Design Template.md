@@ -194,8 +194,8 @@ Talk optimizations throughout and traffic management.
 
 # Text Elements
 # Element Links
-cqasGqqJ: [[_NoteAssets/Template/System Design Template#Table 1]]
-S5QN8lcM: [[_NoteAssets/Template/System Design Template#Table 2]]
+cqasGqqJ: [[_System Design Template#Table 1]]
+S5QN8lcM: [[_System Design Template#Table 2]]
 
 %%
 # Drawing
