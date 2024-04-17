@@ -13,7 +13,7 @@ dg-publish:
 ---
 In data engineering and analytics, "Data Mart" and "Data Warehouse" are often used interchangeably. However, they serve distinct purposes and have unique characteristics. Understanding these differences is very important as businesses rely heavily on data-driven insights. This article explores the complexities of Data Marts, Data Warehouses, and the emerging concept of data lakes, showing their functionalities, benefits, and how they fit into the broader data ecosystem.
 
-****[Key Takeaways]** Here are the key things you need to know about "Data Marts" and "Data Warehouses":**
+**Key Takeaways** Here are the key things you need to know about "Data Marts" and "Data Warehouses":
 
 Data Marts are tailored storage solutions for specific business units or lines of business, while Data Warehouses serve as a central repository for the entire organization.  
 Data Marts enhance query performance by focusing on specialized datasets and specific use cases.  
@@ -32,7 +32,7 @@ A Data Mart is akin to a specialty store in a large shopping complex. It's a foc
 
 ### Data Warehouse Unveiled
 
-In contrast, a data warehouse is the grand central station of an organization's data universe. It's a comprehensive repository that integrates data from many sources, including Amazon AWS, ensuring a holistic view of operations. Designed for robust querying and analytics, Data Warehouses provide the foundation for strategic decision-making, offering insights drawn from historical and current data.
+In contrast, a data warehouse is the grand central station of an organization's data universe. It's a comprehensive repository that integrates data from many sources, including `Amazon Redshift`, ensuring a holistic view of operations. Designed for robust querying and analytics, Data Warehouses provide the foundation for strategic decision-making, offering insights drawn from historical and current data.
 
 ### Key Differences: Data Mart vs. Data Warehouse
 

@@ -16,7 +16,7 @@ dg-publish:
 ![[Processing Types.png]]
 
 ### Batch Processing
-- **Definition:** Batch processing involves the execution of a set of tasks or jobs at once, processing a fixed amount of data.
+- **Definition:** Batch processing involves the execution of a set of tasks or jobs at once, processing a fixed amount of data that accumulates data over a period or until a certain threshold is met before processing it as a single group.
 - **Data Handling:** Works with static, predefined datasets.
 - **Processing Approach:** Processes data in chunks or batches, typically scheduled at specific intervals.
 - **Latency:** Generally has higher latency as it waits for a set amount of data to accumulate before processing.

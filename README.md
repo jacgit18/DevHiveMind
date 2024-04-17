@@ -11,6 +11,9 @@ This Software Development Knowledge Repository is a centralized and organized co
 
 Please Read [[CODE_OF_CONDUCT]]
 
+##### I merge my changes to peer review on Fridays
+
+##### Then merge all changes in peer review at the end of the month
 
 ## Key Features
 

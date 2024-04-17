@@ -51,6 +51,22 @@ Investigating the core of companies such as Delta Airlines involves delving into
 - Mid-December to early January sees market price dips.
 - Be cautious about selling at the end of a quarter due to portfolio rebalancing.
 
+### Policy Influence
+Fiscal Policy and Monetary Policy are the two primary tools used by governments and central banks to influence the economy by stabilizing economic fluctuations, control inflation, and promote sustainable economic growth, but they operate through different channels and mechanisms.
+
+#### Fiscal Policy:
+- Primarily governed by Congress, focusing on government budgeting and spending.
+- Involves decisions related to taxation, government expenditures, and budget allocation.
+- Impacts economic activity by influencing aggregate demand and overall economic growth.
+- Examples include tax cuts, increased government spending on infrastructure, and changes in welfare programs.
+
+#### Monetary Policy:
+- Controlled by central banks, such as the Federal Reserve in the U.S.
+- Centers on managing interest rates, money supply, and credit availability.
+- Aims to regulate inflation, stabilize currency value, and promote economic stability.
+- Tools include adjusting interest rates, open market operations, and reserve requirements.
+- Influences borrowing and spending behavior of individuals and businesses, thus impacting economic conditions.
+
 ### ETF & Sector Trends
 - Semiconductor shortages may impact car companies transitioning to electric and smart cars.
 - Evaluate companies within an ETF based on their percentage holdings.

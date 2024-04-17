@@ -17,6 +17,7 @@ Distributed locking is a mechanism used in distributed systems to coordinate acc
 
 In a distributed environment, where multiple nodes or processes may be running concurrently across different machines or locations, traditional locking mechanisms like mutexes or semaphores are not sufficient because they are limited to a single node or process. Distributed locking addresses this challenge by providing a way to coordinate locks across distributed systems.
 
+
 There are several approaches to implementing distributed locking:
 
 1. **Centralized Locking**: In centralized locking, a single centralized service or server acts as the lock manager. Nodes or processes communicate with the lock manager to acquire and release locks. While this approach is simple to implement, it introduces a single point of failure and can become a bottleneck in highly distributed systems.

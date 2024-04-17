@@ -18,7 +18,7 @@ dg-publish:
 ---
 The difference between client-side and server-side rate limiting lies in where the rate limiting enforcement occurs and which entity (client or server) is responsible for managing the rate limits.  
 
-[[System Design Interview An Insider’s Guide.pdf#page=52&selection=6,0,57,6|System Design Interview An Insider’s Guide, page 52]]
+[[System Design Interview An Insider’s Guide Volume 1.pdf#page=52&selection=6,0,57,6|System Design Interview An Insider’s Guide, page 52]]
   
 1. **Client-Side Rate Limiter**:  
 - **Enforcement**: Rate limiting is enforced on the client side, typically within the client application or client library.  

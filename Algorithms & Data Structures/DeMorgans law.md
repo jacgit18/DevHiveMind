@@ -2,6 +2,7 @@
 tags:
   - booleenLogic
   - testCases
+  - discreteMath
 author:
   - jacgit18
   - chatgpt

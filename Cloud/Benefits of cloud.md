@@ -128,7 +128,9 @@ SaaS, or Software as a Service, stands out as the most popular cloud computing m
 - _Global Reach:_ Reaches users worldwide.
 - _Pay-as-you-go Pricing:_ Offers economic scale and cost efficiency.
 
+
 ## **Cost Optimization Strategies:**
+![[Cloud Cost reduce.gif]]
 - _Right Sizing:_ Operate with the right amount of resources needed.
 - _Automation:_ Automate behaviors to reduce costs.
 - _Compliance Scope:_ Address actions dealing with data and legal requirements.

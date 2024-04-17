@@ -19,6 +19,9 @@ A pull request, although not exclusive to Git, is a GitHub feature primarily use
 
 Practice squash merging by condensing all commits into one in the Git history of the main branch. Commit frequently with intent and test regularly to ensure code stability.
 
+#todo/Personal/Med 
+- [ ] https://dev.to/samuelfaure/how-atomic-git-commits-dramatically-increased-my-productivity-and-will-increase-yours-too-4a84
+
 For instance:
 
 ```bash

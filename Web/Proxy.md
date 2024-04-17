@@ -49,9 +49,8 @@ server.listen(PORT, () => {
 ```
 
 This example uses the `http-proxy` library to create a simple HTTP proxy server. Requests to the proxy server are forwarded to `http://example.com`. You can modify the target URL or add more advanced features based on your specific use case.
+![[Proxy.jpeg]]
 
-
-![[Proxy.gif]]
 ## 1.1 Forward Proxy
 
 Client champion: Acts as your personal gatekeeper, filtering your internet access and protecting your identity. Think of it like a VPN for your everyday browsing.  

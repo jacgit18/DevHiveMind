@@ -14,7 +14,6 @@ Relates:
 Peer Reviewed: 0
 dg-publish:
 ---
-
 1. **Microservices**: Microservices architecture involves breaking down a larger application into smaller, independently deployable services, each responsible for a specific business function. These services typically run on their own servers or containers and communicate with each other via APIs. Microservices offer benefits such as scalability, flexibility, and maintainability.
 
 2. **Serverless Functions**: Serverless functions, also known as Function-as-a-Service (FaaS), allow developers to write and deploy code without worrying about the underlying infrastructure. These functions are event-driven and executed in response to triggers such as HTTP requests, database changes, or file uploads. Serverless architectures abstract away the server management aspect, enabling developers to focus solely on writing code.

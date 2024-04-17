@@ -17,7 +17,9 @@ When designing microservices, it's generally considered a best practice to minim
 
 
 ![[Microservices.jpeg]]
-  
+
+![[microservicesBestPrac.gif]]
+
 ### Minimizing Dependencies:  
   
 1. **Autonomy:** Microservices are meant to be autonomous, independently deployable units. Minimizing dependencies allows each service to evolve independently without impacting others.  

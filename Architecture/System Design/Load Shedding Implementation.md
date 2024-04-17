@@ -12,11 +12,11 @@ dg-publish:
 ---
 Several technologies and techniques are commonly used for implementing load shedding in distributed systems, cloud computing environments, and network infrastructure. Here are some of them:
 
-1. **Traffic Management Systems**: Traffic management systems such as load balancers and reverse proxies play a crucial role in load shedding by distributing incoming requests across multiple servers or services based on predefined rules. These systems can implement various load shedding strategies, such as request throttling, rate limiting, and prioritization, to manage system load effectively.
+1. **Traffic Management Systems**: Traffic management systems such as [[Load Balancer]] and [[Proxy |reverse proxies]] play a crucial role in load shedding by distributing incoming requests across multiple servers or services based on predefined rules. These systems can implement various load shedding strategies, such as request throttling, [[rate limiting]], and prioritization, to manage system load effectively.
 
-2. **API Gateways**: API gateways provide a centralized entry point for accessing backend services and APIs. They often include features for request routing, load balancing, and traffic shaping, allowing administrators to implement load shedding policies based on factors like request volume, latency, or resource utilization.
+2. **[[API Gateway]]**: API gateways provide a centralized entry point for accessing backend services and APIs. They often include features for request routing, load balancing, and traffic shaping, allowing administrators to implement load shedding policies based on factors like request volume, latency, or resource utilization.
 
-3. **Content Delivery Networks (CDNs)**: CDNs cache and serve content from distributed edge servers located closer to end-users, reducing latency and offloading traffic from origin servers. CDNs typically include load shedding capabilities to manage traffic spikes and prioritize critical content delivery based on predefined rules and policies.
+3. **[[Content Delivery Network]]**: CDNs cache and serve content from distributed edge servers located closer to end-users, reducing latency and offloading traffic from origin servers. CDNs typically include load shedding capabilities to manage traffic spikes and prioritize critical content delivery based on predefined rules and policies.
 
 4. **Application Servers and Middleware**: Application servers and middleware platforms often include built-in mechanisms for load shedding and traffic management. These platforms may offer features such as thread pooling, connection throttling, and request prioritization to control resource consumption and prevent overload situations.
 

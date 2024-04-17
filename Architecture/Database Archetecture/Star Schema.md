@@ -15,6 +15,8 @@ dg-publish:
 ---
 A star schema in data warehousing serves as an efficient organizational structure, primarily composed of  [[Fact table|Fact tables]] and [[Dimension Table]]. Here's an in-depth exploration of its components, types of tables, and associated challenges:
 
+consider things like [[Database Table Relationship Types]] and [[DBMS Keys]]
+
 ##### Core Components of a Star Schema
 
 1. **Fact Tables and Dimension Tables:**

@@ -20,7 +20,7 @@ Load shedding mechanisms can vary depending on the specific system architecture 
 
 2. **Dynamic Thresholds**: Load shedding systems monitor system metrics such as CPU utilization, memory usage, or network traffic in real-time to determine when to activate load shedding mechanisms. Dynamic thresholds adjust based on current system conditions, allowing for adaptive and responsive load shedding strategies.
 
-3. **Rate Limiting**: Limiting the rate at which requests or tasks are accepted or processed helps prevent overload situations and ensures that system resources are allocated efficiently. Rate limiting can be applied at various levels of the system stack, such as API endpoints, network interfaces, or database connections.
+3. **[[Rate Limiting]]**: Limiting the rate at which requests or tasks are accepted or processed helps prevent overload situations and ensures that system resources are allocated efficiently. Rate limiting can be applied at various levels of the system stack, such as API endpoints, network interfaces, or database connections.
 
 4. **Graceful Degradation**: Load shedding mechanisms are designed to degrade system performance gradually and predictably, rather than abruptly dropping tasks or services. This approach minimizes the impact on users and allows the system to maintain partial functionality under high load conditions.
 

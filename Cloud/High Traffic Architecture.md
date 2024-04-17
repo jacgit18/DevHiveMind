@@ -1,6 +1,7 @@
 ---
 tags:
   - cloud
+  - compute
 author:
   - jacgit18
   - chatgpt

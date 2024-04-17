@@ -108,7 +108,7 @@ When modifying endpoints, it’s important to maintain backward compatibility. T
 
 In the case of GraphQL, adding new fields (v2 fields) without removing old ones helps in evolving the API without breaking existing clients.
 
-## Rate Limitats and CORS
+## Rate Limitations and CORS
 
 Another best practice is to set rate limitations. This is used to control the number of requests a user can make in a certain timeframe. This is crucial for maintaining the reliability and availability of your API. It also prevents the API from DDoS attacks.
 
