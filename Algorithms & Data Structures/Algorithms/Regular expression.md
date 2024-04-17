@@ -21,6 +21,49 @@ In general, simple and well-optimized regex patterns tend to have faster runtime
   
 It's important to consider the specific implementation details of the regex engine being used, as different programming languages and libraries may employ different strategies for regex matching. If performance is a critical concern, profiling and testing with representative data sets can help identify potential bottlenecks and optimize the regex usage.
 
+1. **Anchors:**  
+	- `^`: Matches the start of a string.  
+	- `$`: Matches the end of a string.  
+	  
+1. **Character Classes:**  
+	- `.`: Matches any single character except newline.  
+	- `\w`: Matches any word character (alphanumeric & underscore).  
+	- `\d`: Matches any digit.  
+	- `\s`: Matches any whitespace character.  
+	- `[ ]`: Matches any character inside the brackets.  
+  
+3. **Quantifiers:**  
+	- `*`: Matches zero or more occurrences.  
+	- `+`: Matches one or more occurrences.  
+	- `?`: Matches zero or one occurrence.  
+	- `{n}`: Matches exactly n occurrences.  
+	- `{n,}`: Matches n or more occurrences.  
+	- `{n,m}`: Matches between n and m occurrences.  
+  
+4. **Assertions:**  
+	- `\b`: Matches a word boundary.  
+	- `\B`: Matches a non-word boundary.  
+	- `(?=...)`: Positive lookahead assertion.  
+	- `(?!...)`: Negative lookahead assertion.  
+	  
+1. **Groups and Capture:**  
+	- `(...)`: Capturing group.  
+	- `(?:...)`: Non-capturing group.  
+	- `\1`, `\2`, ...: Backreference to captured groups.  
+  
+6. **Modifiers:**  
+	- `i`: Case-insensitive matching.  
+	- `g`: Global matching (find all matches, not just the first).  
+	- `m`: Multiline matching (treats beginning and end characters (^ and $) as working for each line).  
+  
+7. **Escaped Characters:**  
+	- `\`: Escapes a special character.  
+  
+8. **Special Characters:**  
+	- `^`: Matches the start of a string (when not used in square brackets).  
+	- `$`: Matches the end of a string (when not used in square brackets).  
+	- `\`: Escapes special characters.
+
 ### Regular Expression 
 - `^` asserts the start of the string. It specifies that the pattern that follows should match at the beginning of the string. For example, in `/^[a-zA-Z]+$/`, `^` ensures that the pattern `[a-zA-Z]+` must start matching from the beginning of the string.
 

@@ -5,6 +5,7 @@ title: "\"System Design Interview - An Insider's Guide, Second Edition\""
 author:
   - "[Alex Xu]"
 Purpose: This documentation discusses
+Comments: Most notes for this book fall under the related note below
 category: Interview
 publisher: 
 publishdate: 2020-12-06
@@ -14,9 +15,9 @@ cover: http://books.google.com/books/content?id=TZWmzQEACAAJ&printsec=frontcover
 Read: 
 Started: 
 DateFinished: 
-Relates: 
+Relates: "[[System Design Thought Process Flow]]"
 rating: ⭐⭐⭐⭐
-pdf: "[[System Design Interview An Insider’s Guide.pdf]]"
+pdf: "[[System Design Interview An Insider’s Guide Volume 1.pdf]]"
 Priority: High
 Status: Unread
 ---

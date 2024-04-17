@@ -12,8 +12,6 @@ Relates:
 Peer Reviewed: 0
 dg-publish:
 ---
-Refined:
-
 ## Web Page Content
 Considering an average web page size of 2MB, encompassing HTML, CSS, and JavaScript files, and receiving 10,000 daily visitors, the inbound data for web page content would total approximately 20 GB per day.
 

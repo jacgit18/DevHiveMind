@@ -14,6 +14,7 @@ Relates:
 Peer Reviewed: 0
 dg-publish:
 ---
+![[Data Pipline.gif]]
 In system design, data flow refers to the movement of data through various components or modules within a system. It encompasses the paths that data take from its source to its destination, including any transformations, processing, or storage along the way. Understanding and optimizing data flow is crucial for designing efficient, scalable, and reliable systems.
 
 Here are some key aspects of data flow in system design:

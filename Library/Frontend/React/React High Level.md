@@ -29,3 +29,6 @@ Explore [React Docs](https://reactjs.org/docs/getting-started.html) and [create-
 React is [[Common Declarative Algorithms |declarative]], meaning you describe what you want the UI to look like, and React takes care of updating the DOM to match that description. This helps in writing more readable and maintainable code since you focus on the "what" rather than the "how."
 
 Additionally, React promotes the idea of having **no side effects** in components. This means that the components don't directly modify the state or interact with the DOM outside of their render function. This leads to a more predictable and easier-to-understand codebase, as changes in one part of the application are less likely to unintentionally affect other parts.
+
+#todo/Personal/Low 
+- [ ] https://www.freecodecamp.org/news/new-react-19-features/

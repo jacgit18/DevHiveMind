@@ -16,6 +16,8 @@ dg-publish:
 ---
 ![[Deployment Patterns.jpeg]]
 
+![[Deployment strats.gif]]
+
 When deploying a codebase, selecting the appropriate deployment strategy hinges on factors such as the application's architecture, development practices, team requirements, and infrastructure capabilities. Deployment patterns automate the introduction of new features to users, influencing downtime and the ability to roll out additional functionality. Some patterns enable feature testing with a select user group before a broader release. Options for deployment patterns include:
 
 **CI/CD** which is the combination of continuous integration and deployment, where code changes are continuously integrated, tested, and deployed to production. It involves using automated build, test, and deployment pipelines to ensure that every code change is thoroughly validated before being deployed.

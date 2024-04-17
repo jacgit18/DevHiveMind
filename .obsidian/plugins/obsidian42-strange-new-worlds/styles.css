@@ -3,6 +3,12 @@ body {
   --snw-icon-opacity: 0.4;
 }
 
+
+div:has(> .snw-reference),
+.snw-link-preview {
+  display: inline;
+}
+
 .snw-reference {
   display: inline;
   font-size: var(--font-ui-smaller);
@@ -19,6 +25,20 @@ body {
 
 .is-mobile .snw-reference {
   font-size: var(--font-ui-smaller);
+}
+
+/* Properties */
+/* Have to remove the underline since text-decoration-line isn't inheritted, but then re-add ito the link */
+.metadata-container .internal-link:has(.snw-frontmatter-wrapper) {
+  text-decoration-line: none !important;
+  color: unset;
+  cursor: unset;
+
+  .multi-select-pill-content {
+    text-decoration-line: underline !important;
+    color: var(--link-color);
+    cursor: var(--cursor-link);
+  }
 }
 
 /* CM Live Preview */
@@ -75,7 +95,7 @@ body {
   color: var(--text-normal);
 }
 
-.snw-sidepane-container > div > .snw-ref-area {
+.snw-sidepane-container>div>.snw-ref-area {
   max-height: 100% !important;
   margin-bottom: 10px;
 }
@@ -132,7 +152,7 @@ body {
   margin-bottom: 1px !important;
 }
 
-[uic='uic'] > * {
+[uic='uic']>* {
   margin-top: 0px !important;
   margin-bottom: 0px !important;
   max-height: 230px !important;
@@ -223,7 +243,7 @@ body {
   border-bottom: 1px solid var(--background-modifier-border);
 }
 
-.snw-breadcrumbs > span {
+.snw-breadcrumbs>span {
   margin-right: 1ch;
   border: 1px solid var(--background-modifier-border);
   border-radius: var(--radius-s);
@@ -245,4 +265,12 @@ body {
   width: 0px;
   height: 0px;
   color: transparent;
+}
+
+
+/* prevent printing of reference numbers */
+@media print {
+  .snw-reference {
+    display: none;
+  }
 }

@@ -16,6 +16,7 @@ Relates: "[[Client Vs Server side Rate Limiting]]"
 Peer Reviewed: 0
 dg-publish:
 ---
+Rate limiting, a critical aspect of system design, manifests across various system components, much like the versatility seen in load balancers. Rate limiters are not confined to a single technology or component within a system; instead, they can take various forms, including embedded business logic within your codebase. This diversity ensures that rate limiting strategies can be tailored to specific requirements and integrated seamlessly into different layers of the system architecture.
 ### **Understanding Business-Level Rate Limits (Quotas)**
 
 Rate limiting, a crucial traffic management tool for API owners, safeguards systems from overload and aligns API usage with business goals. A closer look at rate limits, particularly the subcategories, offers a comprehensive view of traffic management strategies.

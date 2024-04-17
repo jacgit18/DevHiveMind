@@ -3,6 +3,7 @@ tags:
   - API
   - servers
   - systemComponent
+  - routes
 author:
   - jacgit18
   - chatgpt
@@ -15,7 +16,7 @@ Peer Reviewed: 0
 dg-publish: false
 ---
 ![[Api Gateway.gif]]
-An API Gateway is a server that acts as an API front-end, receiving API requests, enforcing throttling and security policies, passing requests to the back-end service, and then passing the response back to the requester. It often acts as an entry point for microservices or other backend services. It also can is used to implement a [[System Design Interview An Insider’s Guide.pdf#page=54&selection=0,79,4,23|Rate Limiter]]
+An API Gateway is a server that acts as an API front-end, receiving API requests, enforcing throttling and security policies, passing requests to the back-end service, and then passing the response back to the requester. It often acts as an entry point for microservices or other backend services. It also can be used to implement a [[System Design Interview An Insider’s Guide Volume 1.pdf#page=54&selection=0,79,4,23|Rate Limiter]]
   
 Here are some key functionalities and reasons for using an API Gateway:  
   

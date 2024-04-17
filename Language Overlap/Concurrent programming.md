@@ -1,11 +1,11 @@
 ---
 tags:
-  - scaling
   - systemDesign
   - concurrency
   - multiThreading
   - synchronous
   - parallelProcesses
+  - scalability
 author:
   - jacgit18
   - chatgpt

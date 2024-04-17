@@ -15,6 +15,8 @@ dg-publish:
 
 A data warehouse is a centralized repository that integrates data from multiple sources within an organization. It is designed to support business intelligence (BI) and analytics applications by providing a comprehensive and unified view of an organization's data.
 
+![[Data Concepts.gif]]
+
 Data warehouses are important for several reasons:
 
 1. **Centralized Data Storage:** Data warehouses consolidate data from disparate sources, such as transactional systems, CRM systems, ERP systems, and external sources, into a single repository. This centralization makes it easier for organizations to manage and access their data efficiently.

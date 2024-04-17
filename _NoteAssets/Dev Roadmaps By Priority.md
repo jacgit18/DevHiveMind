@@ -19,7 +19,7 @@ dg-publish:
 #### Main Long Quest By Order of Priority
 ***Refine notes based subject matter you are actively practicing like domain driven design not currently using it so low priority so when you actually using it refine documentation on it and Learn more.***
 ![[Things Todo.gif]]
-#todo/Personal/High/Dev 
+#todo/Personal/Med/Dev 
 >[!note] 
 >Get to the level were you are doing 1 coding question a month while working full time
 - [ ] Finish [[Clean Code]] documentation and review
