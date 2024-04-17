@@ -73,7 +73,7 @@ Monthly Post Storage Requirement = AU size 200M * Total post size 300 bytes * 15
 Total writes per day = 200,000,000 AU * 45,000 bytes Total Monthly Post size / 30 = 300,000,000,000 bytes = 286.1MB = 300MB
 
 
-Total write per sec = 300,000,000,000 bytes/ 4000 * 20(secs in day est) = 300,000,000,000 bytes/ 80K = 300,000,000,000 bytes /100k = 300GBps
+Total write per sec = 300,000,000,000 bytes/ 4000 * 20(secs in day est) = 300,000,000,000 bytes/ 80K = 300,000,000,000 bytes /100k = 3,000,000,000,000 bytes = 3TBps
 
 ###### Long term estimates
 
@@ -94,17 +94,17 @@ Reads will typically be higher since lot of systems are read heavy.
 > GET
 
 As a users we want to:
-- Get Video views
+- Get Video views(not included in calculation)
 - Get Video likes
 - Get Comment likes
 
 read per day = *50* * 300,000,000,000 bytes write per day = 15,000,000,000,000 bytes = 15,000TB = 15PB
 
-read per sec = *50* * 300,000,000,000 bytes write per sec = 0.25
+read per sec = *50* * 3,000,000,000,000 bytes write per sec = 150,000,000,000,000 bytes = 150TB
 
 Overall Traffic: (Daily active users * read per sec) * (Daily active users * writes per sec)
 
-Overall Traffic = (200,000,000 * 0.25) + (200,000,000 * 0.005)
+Overall Traffic = (200,000,000 *  15,000,000,000,000 bytes) + (200,000,000 * 150,000,000,000,000 bytes)
 
 Overall Traffic = (50,000,000) + (100,000) = 50,100,000 bytes = 47.79MB = 50MBps
 
