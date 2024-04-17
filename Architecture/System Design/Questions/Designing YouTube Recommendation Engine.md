@@ -339,7 +339,10 @@ Typically Microservices
 
 ### Cloud Infrastructure
 Don't need to use strictly cloud services
-##### Cloud Database 
+
+#### Data Storage
+can talk governance and retention within cache, database, and application state also optimizations.
+##### Database 
 1. **Relational Database (SQL)**:  
 	- **User Data Management**: A relational database can be used to store user data such as account information, viewing history, liked videos, and subscription details. This data can be structured into tables with clearly defined relationships.  
 	- **Metadata Storage**: Metadata about videos, such as titles, descriptions, tags, and categories, can be stored in a relational database to facilitate efficient querying and retrieval.  
@@ -354,7 +357,7 @@ Don't need to use strictly cloud services
 	- **Relationship Representation**: Graph databases excel at representing and querying complex relationships and networks, making them ideal for modeling user interactions, social connections, and content relationships in a recommendation system.  
 	- **Recommendation Algorithm Support**: Graph databases can be used to implement graph-based recommendation algorithms, such as collaborative filtering and graph-based neural networks, which leverage the inherent structure of user-item interactions to generate personalized recommendations.  
   
-##### Cloud Storage 
+##### Storage 
 file systems static files etc..
 
 ##### Caching
@@ -371,6 +374,8 @@ For videos that already exist on YouTube and are being recommended to users, the
 In summary, videos recommended on YouTube are typically not stored separately in a cache or database solely for recommendation purposes. Instead, YouTube leverages its existing infrastructure and data storage mechanisms, including metadata storage, user interaction tracking, recommendation algorithms, and caching mechanisms, to deliver personalized recommendations to users based on their preferences and behavior.
 
 ##### Networking
+
+##### Traffic Management
 
 #### Processes
 

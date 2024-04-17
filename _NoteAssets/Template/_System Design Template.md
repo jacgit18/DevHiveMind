@@ -182,14 +182,19 @@ Talk optimizations throughout and traffic management.
 Scalability strategies 
 ### Cloud Infrastructure
 Don't need to use strictly cloud services
-##### Cloud Database
 
-##### Cloud Storage 
+#### Data Storage
+can talk governance and retention within cache, database, and application state also optimizations.
+##### Database
+
+##### Storage 
 file systems static files etc..
 
 ##### Caching
 
 ##### Networking
+
+##### Traffic Management
 
 #### Processes
 
