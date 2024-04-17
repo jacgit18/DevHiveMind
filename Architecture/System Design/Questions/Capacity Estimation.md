@@ -69,6 +69,7 @@ Total Monthly Post size = 150 Post per user in month * 300 bytes Total post size
 Monthly Post Storage Requirement = AU size 200M * Total post size 300 bytes * 150 monthly post = 9,000,000,000,000 bytes = 8.18TB = 8TB
 
 ###### Daily estimates
+- [ ] Double check calculations
 
 Total writes per day = 200,000,000 AU * 45,000 bytes Total Monthly Post size / 30 = 300,000,000,000 bytes = 286.1MB = 300MB
 
@@ -86,6 +87,8 @@ Year Storage =  1 * 400(Rounded year day) * 24TB = 400 * 24TB = 9600TB
 5 Year Storage = Year Storage * 5 = 48,000TB = 48PB
 
 >When calculating storage for multiple years, it's essential to consider potential growth in data volume over time. A linear projection may not accurately reflect real-world growth patterns.
+
+
 #### Network Traffic
 Read:Write *50*:1 read heavy ratio
 
@@ -98,25 +101,26 @@ As a users we want to:
 - Get Video likes
 - Get Comment likes
 
+something off with math
+
 read per day = *50* * 300,000,000,000 bytes write per day = 15,000,000,000,000 bytes = 15,000TB = 15PB
 
 read per sec = *50* * 3,000,000,000,000 bytes write per sec = 150,000,000,000,000 bytes = 150TB
 
 Overall Traffic: (Daily active users * read per sec) * (Daily active users * writes per sec)
 
-Overall Traffic = (200,000,000 *  15,000,000,000,000 bytes) + (200,000,000 * 150,000,000,000,000 bytes)
+Overall Traffic = 200,000,000 AU * (15,000,000,000,000 bytes + 150,000,000,000,000 bytes)
 
-Overall Traffic = (50,000,000) + (100,000) = 50,100,000 bytes = 47.79MB = 50MBps
+Overall Traffic = 200,000,000 AU * 165,000,000,000,000 bytes = 33,000,000,000,000,000,000,000,000 bytes
 
 #### Memory Cache
+- [ ] Double check calculations
 
 caching is a way to serve read request faster use 80-20 rule for caching
 
 Caching Memory = read per day * AVG post total size * 20%
 
 Caching Memory = 172.5TB * 300 bytes  * 0.2 = 172.5TB * 300 bytes = 2,070TB  might be less since you have duplicate request being made to do the same thing 
-
-Something wrong cache to high
 
 Total memory: (Caching Memory * 3 for replication) = 6,210 TB
 

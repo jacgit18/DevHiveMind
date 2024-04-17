@@ -86,37 +86,40 @@ Lets Assume were dealing with English comments there are about 500K words in the
 
 A comment might contain 20 to 40 words and each word might have a length of 5 characters thus each comment will range about 100 to 200 characters. Assuming each character is approximately 1 byte, the average size of a YouTube comment in English would be around 100 to 200 bytes.
 
+
 **Lets say we have 2:1 ratio of Likes to Comments**
-AVG likes per user in month = 100 posts 
+Active Userbase size = 200,000,000
+AVG likes per user in month = 100 posts  
 AVG comments per user in month = 50 posts 
+Post per user in month = 150
 
+###### Data Size 
 AVG likes size = 90 byte(adjusted for meta data)
-AVG comments size = 40 * 5 * 1 = 200 byte(adjusted for meta data)
-AVG post total size = round to 300 bytes 
 
-AU Number of likes per month = AVG likes * AVG likes  size * Active User = 1,800,000,000,000 bytes = 1.8TB
+AVG comments size = 
+40(words) * 5(char) * 1byte = 
+200 byte(adjusted for meta data)
 
-AU Number of comments per month = AVG comments * AVG comments size * Active User = 2,000,000,000,000 bytes = 2TB
+Total post size per user = round to 300 bytes 
 
-Monthly Total storage size needed = AU Number of likes per month + AU Number of comments per month = 3,800,000,000,000 bytes = 3.8TB
+Total Monthly Post size = 150 Post per user in month * 300 bytes Total post size per user = 45,000 bytes = 43.95KB = 44KB
 
-Total Monthly Post = 100 monthly likes + 50 monthly comments = 150
+Monthly Post Storage Requirement = AU size 200M * Total post size 300 bytes * 150 monthly post = 9,000,000,000,000 bytes = 8.18TB = 8TB
 
-Total writes per day = 200,000,000 AU * 150 Total Monthly Post / 30 = 1,000,000,000 bytes
+###### Daily estimates
 
-Total writes per day in bytes
-3,800,000,000,000 bytes > 3,000,000,000,000 bytes / 30 = 100,000,000 bytes rough approximation or 95.37 MB or 90MB
-
-write per sec = 5/ 4000 * 20(secs in day est) = 5/ 80K = 5 /100k = 0.005 writes a sec
-
-Data replication which is typically done 3 to 5 times  
-
-Data replication =  3.8 TB * 3 = 11.4TB
+Total writes per day = 200,000,000 AU * 45,000 bytes Total Monthly Post size / 30 = 300,000,000,000 bytes = 286.1MB = 300MB
 
 
-Year Storage =  1 * 400(Rounded year day) * 3.8 TB = 400 * 3.8 TB = 1520 TB
+Total write per sec = 300,000,000,000 bytes/ 4000 * 20(secs in day est) = 300,000,000,000 bytes/ 80K = 300,000,000,000 bytes /100k = 3,000,000,000,000 bytes = 3TBps
 
-5 Year Storage = Year Storage * 5 = 7600TB
+###### Long term estimates
+
+Data replication = 8TB Monthly Post Storage Requirement * 3 = 24TB
+
+Year Storage =  1 * 400(Rounded year day) * 24TB = 400 * 24TB = 9600TB
+
+5 Year Storage = Year Storage * 5 = 48,000TB = 48PB
 
 
 #### Network Traffic
@@ -126,19 +129,22 @@ Read:Write *50*:1 read heavy ratio
 > GET
 
 As a users we want to:
-- Get Video views
+- Get Video views(not included in calculation)
 - Get Video likes
 - Get Comment likes
 
-read per day = *50* * 3,800,000,000,000 bytes write per day = 190,000,000,000 bytes = 172.5TB
+something off with math
 
-read per sec = *50* * 0.005 write per sec = 0.25
+read per day = *50* * 300,000,000,000 bytes write per day = 15,000,000,000,000 bytes = 15,000TB = 15PB
+
+read per sec = *50* * 3,000,000,000,000 bytes write per sec = 150,000,000,000,000 bytes = 150TB
 
 Overall Traffic: (Daily active users * read per sec) * (Daily active users * writes per sec)
 
-Overall Traffic = (200,000,000 * 0.25) + (200,000,000 * 0.005)
+Overall Traffic = 200,000,000 AU * (15,000,000,000,000 bytes + 150,000,000,000,000 bytes)
 
-Overall Traffic = (50,000,000) + (100,000) = 50,100,000 bytes = 47.79MB = 50MBps
+Overall Traffic = 200,000,000 AU * 165,000,000,000,000 bytes = 33,000,000,000,000,000,000,000,000 bytes
+
 
 #### Memory Cache
 caching is a way to serve read request faster use 80-20 rule for caching
