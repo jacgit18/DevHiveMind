@@ -14,8 +14,6 @@ dg-publish: true
 ---
 Ask about or come up with DAU(Daily Active User) use a easy consistent value that's easy to calculate also consider ratios and metadata.
 
-Assume we have a Active Userbase of 200,000,000
-
 #### Storage
 You should be concerned with writes here only because we need to know how much data we need to store.
 
@@ -52,45 +50,46 @@ Lets Assume were dealing with English comments there are about 500K words in the
 A comment might contain 20 to 40 words and each word might have a length of 5 characters thus each comment will range about 100 to 200 characters. Assuming each character is approximately 1 byte, the average size of a YouTube comment in English would be around 100 to 200 bytes.
 
 **Lets say we have 2:1 ratio of Likes to Comments**
-AVG likes per user in month = 100 posts 
+Active Userbase size = 200,000,000
+AVG likes per user in month = 100 posts  
 AVG comments per user in month = 50 posts 
+Post per user in month = 150
 
+###### Data Size 
 AVG likes size = 90 byte(adjusted for meta data)
-AVG comments size = 40(words) * 5(char) * 1byte = 200 byte(adjusted for meta data)
-AVG post total size = round to 300 bytes 
+
+AVG comments size = 
+40(words) * 5(char) * 1byte = 
+200 byte(adjusted for meta data)
+
+Total post size per user = round to 300 bytes 
+
+Total Monthly Post size = 150 Post per user in month * 300 bytes Total post size per user = 45,000 bytes = 43.95KB = 44KB
+
+Monthly Post Storage Requirement = AU size 200M * Total post size 300 bytes * 150 monthly post = 9,000,000,000,000 bytes = 8.18TB = 8TB
+
+###### Daily estimates
+
+Total writes per day = 200,000,000 AU * 45,000 bytes Total Monthly Post size / 30 = 300,000,000,000 bytes = 286.1MB = 300MB
 
 
+Total write per sec = 300,000,000,000 bytes/ 4000 * 20(secs in day est) = 300,000,000,000 bytes/ 80K = 300,000,000,000 bytes /100k = 300GBps
 
-AU Number of likes per month = AVG likes * AVG likes size * 200M Active User = 1,800,000,000,000 bytes = 1.8TB
+###### Long term estimates
 
-AU Number of comments per month = AVG comments * AVG comments size * 200M Active User = 2,000,000,000,000 bytes = 2TB
+> Data replication which is typically done 3 to 5 times  
 
-Monthly Total storage size needed = AU Number of likes per month + AU Number of comments per month = 3,800,000,000,000 bytes = 3.8TB
+Data replication = 8TB Monthly Post Storage Requirement * 3 = 24TB
 
-Total Monthly Post = 100 monthly likes + 50 monthly comments = 150 
+Year Storage =  1 * 400(Rounded year day) * 24TB = 400 * 24TB = 9600TB
 
-Total Monthly Post size = 150 * 300 bytes = 45,000 bytes
-
-Total writes per day = 200,000,000 AU * 150 Total Monthly Post / 30 = 1,000,000,000 bytes
-
-Total writes per day in bytes
-3,800,000,000,000 bytes > 3,000,000,000,000 bytes / 30 = 100,000,000 bytes rough approximation or 95.37 MB or 90MB
-
-write per sec = 5/ 4000 * 20(secs in day est) = 5/ 80K = 5 /100k = 0.005 writes a sec
-
-Data replication which is typically done 3 to 5 times  
-
-Data replication =  3.8 TB * 3 = 11.4TB
-
-
-Year Storage =  1 * 400(Rounded year day) * 3.8 TB = 400 * 3.8 TB = 1520 TB
-
-5 Year Storage = Year Storage * 5 = 7600TB
+5 Year Storage = Year Storage * 5 = 48,000TB = 48PB
 
 >When calculating storage for multiple years, it's essential to consider potential growth in data volume over time. A linear projection may not accurately reflect real-world growth patterns.
 #### Network Traffic
 Read:Write *50*:1 read heavy ratio
 
+Reads will typically be higher since lot of systems are read heavy. 
 ##### Reads
 > GET
 
@@ -99,9 +98,9 @@ As a users we want to:
 - Get Video likes
 - Get Comment likes
 
-read per day = *50* * 3,800,000,000,000 bytes write per day = 190,000,000,000 bytes = 172.5TB
+read per day = *50* * 300,000,000,000 bytes write per day = 15,000,000,000,000 bytes = 15,000TB = 15PB
 
-read per sec = *50* * 0.005 write per sec = 0.25
+read per sec = *50* * 300,000,000,000 bytes write per sec = 0.25
 
 Overall Traffic: (Daily active users * read per sec) * (Daily active users * writes per sec)
 
