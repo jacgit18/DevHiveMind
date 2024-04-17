@@ -1,16 +1,15 @@
 ---
 excalidraw-plugin: parsed
-tags: null
-author:
-  - gitUserNamePlaceHolder
+tags: 
+author: []
 Comments: Placeholder comment any thing else you want to mention about the document.
 Purpose: This documentation discusses
-Status: null
+Status: 
 Started: 2024-04-13T00:00:00.000Z
-EditDate: null
-Relates: null
+EditDate: 
+Relates: 
 Peer Reviewed: 0
-dg-publish: null
+dg-publish:
 ---
 
 # Question
@@ -49,24 +48,6 @@ dg-publish: null
 Ask about or come up with DAU(Daily Active User) use a easy consistent value that's easy to calculate also consider ratios and metadata.
 
 Assume we have a Active Userbase of 200,000,000
-
-**Media approximation**
-HD image 3MB  intstagram or facebook post
-Size of image = height x width x bit depth
-1280 x 720 x 24bits or 3 Bytes
-1k * 1K * 3 = 3,000,000 = 3MB
-
-Profile image(300x300) 300KB  
-1 Min HD Video = 50MB
-
-Video size is calculated by
-FrameSize x FrameRate(FPS) x Compression Ratio x Video Duration(# Sec)
-
-3MB * 30FPS * 1/100 * 60(sec) = 90MB * 1/100 * 60 = 90MB *  60 /100 = 5,400MB/ 100 = 54MB = 50MB
-
-  
-For something like YouTube you would probably use other resolutions like: 480p, 360P, 240P, 144P
-
 
 #### Storage
 You should be concerned with writes here only because we need to know how much data we need to store.
@@ -213,8 +194,8 @@ Talk optimizations throughout and traffic management.
 
 # Text Elements
 # Element Links
-cqasGqqJ: [[Designing YouTube Upload System Design Template#Table 1]]
-S5QN8lcM: [[Designing YouTube Upload System Design Template#Table 2]]
+cqasGqqJ: [[_NoteAssets/Template/System Design Template#Table 1]]
+S5QN8lcM: [[_NoteAssets/Template/System Design Template#Table 2]]
 
 %%
 # Drawing
