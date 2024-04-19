@@ -40,27 +40,27 @@ Geography USA no inappropriate content , China Region lock only certain content
 
 ##### Table User
 
-| Field               | Type      |
-| ------------------- | --------- |
-| UserID              | PK        |
-| email               | VarChar   |
-| password            | VarChar   |
-| date started        | TimeStamp |
-| channel name        | VarChar   |
-| monetization status | Boolean   |
+|     | User                | Type      |
+| --- | ------------------- | --------- |
+| PK  | UserID              |           |
+|     | email               | VarChar   |
+|     | password            | VarChar   |
+|     | date started        | TimeStamp |
+|     | channel name        | VarChar   |
+|     | monetization status | Boolean   |
 
 
 ##### Table Region
 
-| Field    | Type |
-| -------- | ---- |
-| RegionID | PK   |
-| UserID   | SK   |
-|          |      |
-|          |      |
-|          |      |
-|          |      |
-|          |      |
+|     | Region   |
+| --- | -------- |
+| PK  | RegionID |
+| FK  | UserID   |
+| FK  | ...      |
+|     | ...      |
+|     | ...      |
+|     | ...      |
+|     | ...      |
 
   
 

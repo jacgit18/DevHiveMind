@@ -16,6 +16,8 @@ Ask about or come up with DAU(Daily Active User) use a easy consistent value tha
 
 #todo/Personal/Med/Dev 
 - [ ] Simplify and improve on math and approximation process and converting to different units.
+
+Depending on interviewer you might be able to use a calculator.
 #### Storage
 You should be concerned with writes here only because we need to know how much data we need to store.
 
