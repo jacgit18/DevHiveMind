@@ -373,9 +373,16 @@ For videos that already exist on YouTube and are being recommended to users, the
   
 In summary, videos recommended on YouTube are typically not stored separately in a cache or database solely for recommendation purposes. Instead, YouTube leverages its existing infrastructure and data storage mechanisms, including metadata storage, user interaction tracking, recommendation algorithms, and caching mechanisms, to deliver personalized recommendations to users based on their preferences and behavior.
 
+
 ##### Networking
 
-##### Traffic Management
+###### CDN
+###### Traffic Management
+
+###### Protocols
+
+###### Security 
+
 
 #### Processes
 

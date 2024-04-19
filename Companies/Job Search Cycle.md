@@ -17,7 +17,8 @@ dg-publish:
 ![[Tech Layoffs.png]]
 
 ![[Job Cycle.png]]
-## **Job Search and Interview Strategies:**
+> In April, when bonuses are typically distributed, individuals often reassess their positions or consider new opportunities, leading to potential changes in roles or responsibilities within the organization.
+### Job Search & Interview Strategies
 1. **Understanding Job Role:**
    - When applying, inquire if the role is direct hire or contract, ensuring clarity about the nature of the position.
    - Note that contractors might not undergo performance reviews, so define expectations for feedback and growth.
