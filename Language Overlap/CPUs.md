@@ -47,6 +47,8 @@ Multiprocessing is good for scaling up to be used on multiple machines and can
 
 [[Concurrent programming]]
 
+![[concuurentPAra.gif]]
+
 
 #todo/Personal/Med/Dev 
 - [ ] shorten answers
