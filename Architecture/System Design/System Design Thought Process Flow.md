@@ -76,7 +76,9 @@ When crafting your design, prioritize a forward-thinking approach that anticipat
 **Database > Backend > [[System Design Thought Process Flow#API Gateway |API Gateway]] > Client
 
 #### Schema Design (10 to 20)
-Create an Entity Relationship Diagram (ERD) to define clear relationships and [[Schema Design]] defining things like fact and dimension tables along with other tables like then discuss table [[Normalization & Denormalization]] along with things like [[Database Indexing]] to improve query and schema performance discuss which columns make sense to indexing and storage space being taken up by indexing.
+> Tips for [[Building schema fast]]
+
+Create an Entity Relationship Diagram (ERD) to define clear relationships and [[Schema Design]] defining things like fact and dimension tables along with other tables like for auditing then discuss table [[Normalization & Denormalization]] along with things like [[Database Indexing]] to improve query and schema performance discuss which columns make sense to indexing and storage space being taken up by indexing.
 
 #### [[Capacity Estimation]] (5 min)
 [Indepth Video Examination of Capacity Estimation ](https://www.youtube.com/watch?v=-frNQkRz_IU)
