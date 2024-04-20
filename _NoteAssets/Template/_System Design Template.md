@@ -37,14 +37,15 @@ Non Requirements Functional how the system should perform or behave under variou
 
 ##### Table 2
 
-|     |     |
-| --- | --- |
-|     |     |
-|     |     |
-|     |     |
-|     |     |
-|     |     |
-|     |     |
+|     | Region       |
+| --- | ------------ |
+| PK  | RegionID     |
+| FK  | UserID       |
+| FK  | RandomID     |
+|     | Name         |
+|     | Phone number |
+|     | ...          |
+|     | ...          |
 
   
 

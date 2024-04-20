@@ -49,6 +49,7 @@ While technically a candidate key as the composite key verifies uniqueness, comp
 - Involves the amalgamation of two or more attributes to form a singular, unique identifier.
 
 - { Name, Phone }
+- In general you may want to avoid using.
 
 
 #### Compound Key:
