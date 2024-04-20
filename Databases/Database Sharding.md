@@ -56,7 +56,7 @@ In summary, database sharding is a technique that distributes a large database a
 
 Data sharding differs from traditional partitioning in that it involves splitting data based on rows rather than columns. Each shard operates independently, handling its subset of data and processing queries in parallel with other shards.
 
-partitioning strategies
+### Horizontal Partitioning Strategies
 
 There are different types of partitioning methods, including:  
   
