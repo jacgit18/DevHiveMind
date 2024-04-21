@@ -1,7 +1,7 @@
 ---
 excalidraw-plugin: parsed
 tags: 
-author: []
+author: 
 Comments: Placeholder comment any thing else you want to mention about the document.
 Purpose: This documentation discusses
 Status: 
@@ -9,9 +9,9 @@ Started: 2024-04-13T00:00:00.000Z
 EditDate: 
 Relates: 
 Peer Reviewed: 0
+excalidraw-open-md: true
 dg-publish:
 ---
-
 # Question
 ## Requirements Gathering
 Functional Requirements core functionality.
@@ -217,8 +217,6 @@ doesn't need to be cloud solution like AWS
 
 ## Wrap Up
 
-
-==⚠  Switch to EXCALIDRAW VIEW in the MORE OPTIONS menu of this document. ⚠==
 
 
 # Text Elements
