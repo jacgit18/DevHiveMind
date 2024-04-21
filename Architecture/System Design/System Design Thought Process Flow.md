@@ -581,6 +581,8 @@ b9a9463ea925bf6a1f2932e17326dbf4837cc7a0: [[cloudfront.png]]
 e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 63134acd424e463450af857f65b5ea09b47abed6: [[Service Types.jpg]]
 92135ee6320c5b0a0290fc580327ab2a0b627cb8: [[pririotyAWS.jpeg]]
+226f389b1a80c6bed444f39187a18cc93371fe57: [[data pipeline.gif]]
+2cbb24ee27055f196300fb99e1fd5ac2798c4756: [[Data Pipline.gif]]
 
 %%
 # Drawing
@@ -588,7 +590,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 {
 	"type": "excalidraw",
 	"version": 2,
-	"source": "https://github.com/zsviczian/obsidian-excalidraw-plugin/releases/tag/2.1.3",
+	"source": "https://github.com/zsviczian/obsidian-excalidraw-plugin/releases/tag/2.1.4",
 	"elements": [
 		{
 			"type": "line",
@@ -32562,8 +32564,8 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 		},
 		{
 			"type": "rectangle",
-			"version": 1354,
-			"versionNonce": 1815718848,
+			"version": 1356,
+			"versionNonce": 2019823700,
 			"isDeleted": false,
 			"id": "PFSyRhMeeQQjJhSU-aAet",
 			"fillStyle": "solid",
@@ -32592,14 +32594,14 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 					"type": "arrow"
 				}
 			],
-			"updated": 1712869093228,
+			"updated": 1713707643385,
 			"link": null,
 			"locked": false
 		},
 		{
 			"type": "text",
-			"version": 456,
-			"versionNonce": 1468937152,
+			"version": 458,
+			"versionNonce": 61269460,
 			"isDeleted": false,
 			"id": "CBh5xDMB",
 			"fillStyle": "solid",
@@ -32619,7 +32621,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"frameId": "cDlFNT0KJqjWdy4tfiyeE",
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1712869093229,
+			"updated": 1713707643385,
 			"link": null,
 			"locked": false,
 			"fontSize": 36,
@@ -32634,8 +32636,8 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 		},
 		{
 			"type": "rectangle",
-			"version": 1390,
-			"versionNonce": 1997650880,
+			"version": 1392,
+			"versionNonce": 452135764,
 			"isDeleted": false,
 			"id": "oKt_wAJkAksutql0WooCQ",
 			"fillStyle": "solid",
@@ -32660,14 +32662,14 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 					"id": "NP5hZoJW"
 				}
 			],
-			"updated": 1712869093229,
+			"updated": 1713707643386,
 			"link": null,
 			"locked": false
 		},
 		{
 			"type": "text",
-			"version": 495,
-			"versionNonce": 1826898880,
+			"version": 497,
+			"versionNonce": 278823124,
 			"isDeleted": false,
 			"id": "NP5hZoJW",
 			"fillStyle": "solid",
@@ -32687,7 +32689,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"frameId": "cDlFNT0KJqjWdy4tfiyeE",
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1712869093229,
+			"updated": 1713707643386,
 			"link": null,
 			"locked": false,
 			"fontSize": 36,
@@ -43429,8 +43431,8 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 		},
 		{
 			"type": "text",
-			"version": 295,
-			"versionNonce": 388352960,
+			"version": 297,
+			"versionNonce": 2084521556,
 			"isDeleted": false,
 			"id": "87t7ljSB",
 			"fillStyle": "solid",
@@ -43452,12 +43454,12 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"frameId": "0LAZAzosw8QneazOU9KFZ",
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1712869093230,
+			"updated": 1713707643386,
 			"link": null,
 			"locked": false,
 			"fontSize": 20,
 			"fontFamily": 1,
-			"text": "Frontend",
+			"text": "Frontend ",
 			"rawText": "Frontend ",
 			"textAlign": "center",
 			"verticalAlign": "middle",
@@ -68454,12 +68456,45 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			]
 		},
 		{
-			"id": "CnXyEDhs",
 			"type": "image",
-			"x": 682.2388366348312,
-			"y": -1127.772838542557,
+			"version": 248,
+			"versionNonce": 331154260,
+			"isDeleted": false,
+			"id": "CnXyEDhs",
+			"fillStyle": "hachure",
+			"strokeWidth": 1,
+			"strokeStyle": "solid",
+			"roughness": 1,
+			"opacity": 100,
+			"angle": 0,
+			"x": 698.9055033014977,
+			"y": -997.7728385425571,
+			"strokeColor": "transparent",
+			"backgroundColor": "transparent",
 			"width": 1037.7800066867271,
 			"height": 1293.3333333333337,
+			"seed": 22780,
+			"groupIds": [],
+			"frameId": null,
+			"roundness": null,
+			"boundElements": [],
+			"updated": 1713707755773,
+			"link": null,
+			"locked": false,
+			"status": "pending",
+			"fileId": "92135ee6320c5b0a0290fc580327ab2a0b627cb8",
+			"scale": [
+				1,
+				1
+			]
+		},
+		{
+			"id": "idY24BNO",
+			"type": "image",
+			"x": 594.1036755048264,
+			"y": -2587.6752558236267,
+			"width": 866.4507936507937,
+			"height": 740.8577633007601,
 			"angle": 0,
 			"strokeColor": "transparent",
 			"backgroundColor": "transparent",
@@ -68469,16 +68504,47 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"roughness": 1,
 			"opacity": 100,
 			"roundness": null,
-			"seed": 22780,
-			"version": 214,
-			"versionNonce": 1420570688,
-			"updated": 1712871261652,
+			"seed": 38900,
+			"version": 170,
+			"versionNonce": 2143911892,
+			"updated": 1713707746730,
 			"isDeleted": false,
 			"groupIds": [],
 			"boundElements": [],
 			"link": null,
 			"locked": false,
-			"fileId": "92135ee6320c5b0a0290fc580327ab2a0b627cb8",
+			"fileId": "226f389b1a80c6bed444f39187a18cc93371fe57",
+			"scale": [
+				1,
+				1
+			]
+		},
+		{
+			"id": "biHvANc2",
+			"type": "image",
+			"x": 860.6927776577331,
+			"y": -1819.156567098135,
+			"width": 602.75288526816,
+			"height": 783.977924944812,
+			"angle": 0,
+			"strokeColor": "transparent",
+			"backgroundColor": "transparent",
+			"fillStyle": "hachure",
+			"strokeWidth": 1,
+			"strokeStyle": "solid",
+			"roughness": 1,
+			"opacity": 100,
+			"roundness": null,
+			"seed": 50205,
+			"version": 293,
+			"versionNonce": 942825324,
+			"updated": 1713707750680,
+			"isDeleted": false,
+			"groupIds": [],
+			"boundElements": [],
+			"link": null,
+			"locked": false,
+			"fileId": "2cbb24ee27055f196300fb99e1fd5ac2798c4756",
 			"scale": [
 				1,
 				1
@@ -68500,10 +68566,10 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 		"currentItemTextAlign": "left",
 		"currentItemStartArrowhead": null,
 		"currentItemEndArrowhead": "arrow",
-		"scrollX": 1891.0256606679964,
-		"scrollY": 4425.859148066367,
+		"scrollX": -203.68976841386984,
+		"scrollY": 2125.147901794892,
 		"zoom": {
-			"value": 0.15000000000000002
+			"value": 0.6
 		},
 		"currentItemRoundness": "round",
 		"gridSize": null,
