@@ -13,7 +13,7 @@ dg-publish:
 ---
 1. **Table Naming and Structure:**  
 - Begin by naming the main table.  
-- Optionally, start with one large table and then decompose it into smaller tables for better organization.  
+- Optionally, start with one large table while also identifying what columns make sense to index and then decompose it into smaller tables for better organization.  
   
 2. **High-Level Relationships:**  
 - Define key relationships, such as suppliers selling to or buying from customers, and customers using products. Identify one-to-one relationships.  
