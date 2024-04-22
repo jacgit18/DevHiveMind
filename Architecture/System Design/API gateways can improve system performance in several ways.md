@@ -11,7 +11,6 @@ Relates:
 Peer Reviewed: 0
 dg-publish:
 ---
-API gateways can improve system performance in several ways:  
   
 1. **Caching**: API gateways can cache responses from backend services, reducing the need for repeated processing of the same requests. By caching frequently accessed data or responses, API gateways can improve response times and reduce the load on backend systems.  
   

@@ -42,7 +42,7 @@ Geography USA no inappropriate content , China Region lock only certain content
 
 |     | User                | Type      |
 | --- | ------------------- | --------- |
-| PK  | UserID              |           |
+| PK  | UserID              | Integer   |
 |     | email               | VarChar   |
 |     | password            | VarChar   |
 |     | date started        | TimeStamp |
