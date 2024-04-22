@@ -48,8 +48,8 @@ age, geography, governance, etc ...
 | --- | --------------------- | ------------ |
 | PK  | VideoID               | VARCHAR(50)  |
 | FK  | UserID                | INT          |
+| FK  | ChannelID             | VARCHAR(100) |
 |     | title                 | VARCHAR(255) |
-|     | channel               | VARCHAR(100) |
 |     | category              | VARCHAR(50)  |
 |     | duration              | INT          |
 |     | views                 | INT          |
@@ -57,7 +57,6 @@ age, geography, governance, etc ...
 |     | dislikes              | INT          |
 |     | upload_date           | DATE         |
 |     | recommended_score     | FLOAT        |
-|     |                       |              |
 
 ##### Table 2
 |     | User         |
@@ -66,6 +65,16 @@ age, geography, governance, etc ...
 |     | User channel |
 |     | User history |
 |     | User Likes   |
+
+
+##### Table 3
+
+|     | Channel             |
+| --- | ------------------- |
+| PK  | ChannelID           |
+| FK  | UserID              |
+|     | channel subscribers |
+|     | channel video count |
 
 
 #### Data points of focus identified
@@ -409,6 +418,7 @@ doesn't need to be cloud solution like AWS
 # Element Links
 cfVAGpj7: [[Architecture/System Design/Questions/Designing YouTube Recommendation Engine.md#Table 1]]
 TsXzxI5r: [[Architecture/System Design/Questions/Designing YouTube Recommendation Engine.md#Table 2]]
+zrOOXy2q: [[Architecture/System Design/Questions/Designing YouTube Recommendation Engine.md#Table 3]]
 
 %%
 # Drawing
@@ -420,8 +430,8 @@ TsXzxI5r: [[Architecture/System Design/Questions/Designing YouTube Recommendatio
 	"elements": [
 		{
 			"type": "embeddable",
-			"version": 141,
-			"versionNonce": 418215855,
+			"version": 265,
+			"versionNonce": 1977849892,
 			"isDeleted": false,
 			"id": "cfVAGpj7",
 			"fillStyle": "hachure",
@@ -430,8 +440,8 @@ TsXzxI5r: [[Architecture/System Design/Questions/Designing YouTube Recommendatio
 			"roughness": 1,
 			"opacity": 100,
 			"angle": 0,
-			"x": -563.8780517578128,
-			"y": -613.7381385369795,
+			"x": -245.54471842447947,
+			"y": -350.40480520364633,
 			"strokeColor": "#000000",
 			"backgroundColor": "transparent",
 			"width": 369.33333333333337,
@@ -441,7 +451,7 @@ TsXzxI5r: [[Architecture/System Design/Questions/Designing YouTube Recommendatio
 			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1713790282316,
+			"updated": 1713794086866,
 			"link": "[[Architecture/System Design/Questions/Designing YouTube Recommendation Engine.md#Table 1]]",
 			"locked": false,
 			"customData": {
@@ -464,8 +474,8 @@ TsXzxI5r: [[Architecture/System Design/Questions/Designing YouTube Recommendatio
 		},
 		{
 			"type": "embeddable",
-			"version": 194,
-			"versionNonce": 439817345,
+			"version": 379,
+			"versionNonce": 1518931876,
 			"isDeleted": false,
 			"id": "TsXzxI5r",
 			"fillStyle": "hachure",
@@ -474,19 +484,63 @@ TsXzxI5r: [[Architecture/System Design/Questions/Designing YouTube Recommendatio
 			"roughness": 1,
 			"opacity": 100,
 			"angle": 0,
-			"x": 221.45528157552098,
-			"y": -543.0714718703128,
+			"x": -448.54471842447884,
+			"y": -869.7381385369794,
 			"strokeColor": "#000000",
 			"backgroundColor": "transparent",
 			"width": 309.3333333333335,
-			"height": 158.66666666666637,
+			"height": 213.66666666666643,
 			"seed": 14525,
 			"groupIds": [],
 			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1713790270332,
+			"updated": 1713794082350,
 			"link": "[[Architecture/System Design/Questions/Designing YouTube Recommendation Engine.md#Table 2]]",
+			"locked": false,
+			"customData": {
+				"mdProps": {
+					"useObsidianDefaults": false,
+					"backgroundMatchCanvas": false,
+					"backgroundMatchElement": true,
+					"backgroundColor": "#fff",
+					"backgroundOpacity": 60,
+					"borderMatchElement": true,
+					"borderColor": "#fff",
+					"borderOpacity": 0,
+					"filenameVisible": false
+				}
+			},
+			"scale": [
+				1,
+				1
+			]
+		},
+		{
+			"type": "embeddable",
+			"version": 414,
+			"versionNonce": 605970593,
+			"isDeleted": false,
+			"id": "zrOOXy2q",
+			"fillStyle": "hachure",
+			"strokeWidth": 1,
+			"strokeStyle": "solid",
+			"roughness": 1,
+			"opacity": 100,
+			"angle": 0,
+			"x": -50.91971842447913,
+			"y": -869.3240760369795,
+			"strokeColor": "#000000",
+			"backgroundColor": "transparent",
+			"width": 429.16666666666663,
+			"height": 192.9166666666667,
+			"seed": 3319,
+			"groupIds": [],
+			"frameId": null,
+			"roundness": null,
+			"boundElements": [],
+			"updated": 1713794251803,
+			"link": "[[Architecture/System Design/Questions/Designing YouTube Recommendation Engine.md#Table 3]]",
 			"locked": false,
 			"customData": {
 				"mdProps": {
@@ -522,10 +576,10 @@ TsXzxI5r: [[Architecture/System Design/Questions/Designing YouTube Recommendatio
 		"currentItemTextAlign": "left",
 		"currentItemStartArrowhead": null,
 		"currentItemEndArrowhead": "arrow",
-		"scrollX": 899.2113850911464,
-		"scrollY": 1032.1339718703132,
+		"scrollX": 475.93013509114564,
+		"scrollY": 985.8820187453128,
 		"zoom": {
-			"value": 0.7499999999999996
+			"value": 0.8
 		},
 		"currentItemRoundness": "round",
 		"gridSize": null,
