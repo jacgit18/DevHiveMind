@@ -430,8 +430,8 @@ zrOOXy2q: [[Architecture/System Design/Questions/Designing YouTube Recommendatio
 	"elements": [
 		{
 			"type": "embeddable",
-			"version": 265,
-			"versionNonce": 1977849892,
+			"version": 532,
+			"versionNonce": 974978561,
 			"isDeleted": false,
 			"id": "cfVAGpj7",
 			"fillStyle": "hachure",
@@ -440,8 +440,8 @@ zrOOXy2q: [[Architecture/System Design/Questions/Designing YouTube Recommendatio
 			"roughness": 1,
 			"opacity": 100,
 			"angle": 0,
-			"x": -245.54471842447947,
-			"y": -350.40480520364633,
+			"x": -113.04471842447947,
+			"y": -504.15480520364633,
 			"strokeColor": "#000000",
 			"backgroundColor": "transparent",
 			"width": 369.33333333333337,
@@ -451,7 +451,7 @@ zrOOXy2q: [[Architecture/System Design/Questions/Designing YouTube Recommendatio
 			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1713794086866,
+			"updated": 1713794662591,
 			"link": "[[Architecture/System Design/Questions/Designing YouTube Recommendation Engine.md#Table 1]]",
 			"locked": false,
 			"customData": {
@@ -474,8 +474,8 @@ zrOOXy2q: [[Architecture/System Design/Questions/Designing YouTube Recommendatio
 		},
 		{
 			"type": "embeddable",
-			"version": 379,
-			"versionNonce": 1518931876,
+			"version": 433,
+			"versionNonce": 283071087,
 			"isDeleted": false,
 			"id": "TsXzxI5r",
 			"fillStyle": "hachure",
@@ -484,8 +484,8 @@ zrOOXy2q: [[Architecture/System Design/Questions/Designing YouTube Recommendatio
 			"roughness": 1,
 			"opacity": 100,
 			"angle": 0,
-			"x": -448.54471842447884,
-			"y": -869.7381385369794,
+			"x": -498.54471842447884,
+			"y": -728.4881385369794,
 			"strokeColor": "#000000",
 			"backgroundColor": "transparent",
 			"width": 309.3333333333335,
@@ -495,7 +495,7 @@ zrOOXy2q: [[Architecture/System Design/Questions/Designing YouTube Recommendatio
 			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1713794082350,
+			"updated": 1713794686169,
 			"link": "[[Architecture/System Design/Questions/Designing YouTube Recommendation Engine.md#Table 2]]",
 			"locked": false,
 			"customData": {
@@ -518,8 +518,8 @@ zrOOXy2q: [[Architecture/System Design/Questions/Designing YouTube Recommendatio
 		},
 		{
 			"type": "embeddable",
-			"version": 414,
-			"versionNonce": 605970593,
+			"version": 449,
+			"versionNonce": 171938735,
 			"isDeleted": false,
 			"id": "zrOOXy2q",
 			"fillStyle": "hachure",
@@ -539,7 +539,7 @@ zrOOXy2q: [[Architecture/System Design/Questions/Designing YouTube Recommendatio
 			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1713794251803,
+			"updated": 1713794601074,
 			"link": "[[Architecture/System Design/Questions/Designing YouTube Recommendation Engine.md#Table 3]]",
 			"locked": false,
 			"customData": {
@@ -559,6 +559,245 @@ zrOOXy2q: [[Architecture/System Design/Questions/Designing YouTube Recommendatio
 				1,
 				1
 			]
+		},
+		{
+			"id": "-PO2Zd6NDX76DEi7npcXu",
+			"type": "line",
+			"x": -223.43013509114564,
+			"y": -658.010924995313,
+			"width": 222.5,
+			"height": 116.25,
+			"angle": 0,
+			"strokeColor": "#1e1e1e",
+			"backgroundColor": "transparent",
+			"fillStyle": "solid",
+			"strokeWidth": 2,
+			"strokeStyle": "solid",
+			"roughness": 1,
+			"opacity": 100,
+			"groupIds": [],
+			"frameId": null,
+			"roundness": {
+				"type": 2
+			},
+			"seed": 1482929135,
+			"version": 282,
+			"versionNonce": 1423343,
+			"isDeleted": false,
+			"boundElements": null,
+			"updated": 1713794715120,
+			"link": null,
+			"locked": false,
+			"points": [
+				[
+					0,
+					0
+				],
+				[
+					122.5,
+					-30
+				],
+				[
+					222.5,
+					-116.25
+				]
+			],
+			"lastCommittedPoint": null,
+			"startBinding": null,
+			"endBinding": null,
+			"startArrowhead": null,
+			"endArrowhead": null
+		},
+		{
+			"id": "_q6MHlXRfqRwgPr01jKBY",
+			"type": "line",
+			"x": -212.18013509114564,
+			"y": -656.760924995313,
+			"width": 122.5,
+			"height": 283.75,
+			"angle": 0,
+			"strokeColor": "#1e1e1e",
+			"backgroundColor": "transparent",
+			"fillStyle": "solid",
+			"strokeWidth": 2,
+			"strokeStyle": "solid",
+			"roughness": 1,
+			"opacity": 100,
+			"groupIds": [],
+			"frameId": null,
+			"roundness": {
+				"type": 2
+			},
+			"seed": 1554389615,
+			"version": 516,
+			"versionNonce": 1239134927,
+			"isDeleted": false,
+			"boundElements": null,
+			"updated": 1713794701494,
+			"link": null,
+			"locked": false,
+			"points": [
+				[
+					0,
+					0
+				],
+				[
+					47.5,
+					62.5
+				],
+				[
+					122.5,
+					283.75
+				]
+			],
+			"lastCommittedPoint": null,
+			"startBinding": null,
+			"endBinding": null,
+			"startArrowhead": null,
+			"endArrowhead": null
+		},
+		{
+			"id": "h8ha33Z82w9n3JUxrMlLY",
+			"type": "arrow",
+			"x": -273.11763509114564,
+			"y": -490.51092499531285,
+			"width": 255,
+			"height": 775,
+			"angle": 0,
+			"strokeColor": "#1e1e1e",
+			"backgroundColor": "transparent",
+			"fillStyle": "solid",
+			"strokeWidth": 2,
+			"strokeStyle": "solid",
+			"roughness": 1,
+			"opacity": 100,
+			"groupIds": [],
+			"frameId": null,
+			"roundness": {
+				"type": 2
+			},
+			"seed": 950365281,
+			"version": 137,
+			"versionNonce": 1777861313,
+			"isDeleted": true,
+			"boundElements": null,
+			"updated": 1713794601074,
+			"link": null,
+			"locked": false,
+			"points": [
+				[
+					0,
+					0
+				],
+				[
+					58.75,
+					41.25
+				],
+				[
+					128.75,
+					-65
+				],
+				[
+					255,
+					710
+				]
+			],
+			"lastCommittedPoint": [
+				128.75,
+				-65
+			],
+			"startBinding": null,
+			"endBinding": null,
+			"startArrowhead": null,
+			"endArrowhead": "arrow"
+		},
+		{
+			"id": "PdRDtYUBqTyQOC7uB8Dcd",
+			"type": "arrow",
+			"x": -185.93013509114564,
+			"y": -804.260924995313,
+			"width": 175,
+			"height": 26.25,
+			"angle": 0,
+			"strokeColor": "#1e1e1e",
+			"backgroundColor": "transparent",
+			"fillStyle": "solid",
+			"strokeWidth": 2,
+			"strokeStyle": "solid",
+			"roughness": 1,
+			"opacity": 100,
+			"groupIds": [],
+			"frameId": null,
+			"roundness": {
+				"type": 2
+			},
+			"seed": 316036719,
+			"version": 91,
+			"versionNonce": 1401898447,
+			"isDeleted": true,
+			"boundElements": null,
+			"updated": 1713794601074,
+			"link": null,
+			"locked": false,
+			"points": [
+				[
+					0,
+					0
+				],
+				[
+					175,
+					26.25
+				]
+			],
+			"lastCommittedPoint": null,
+			"startBinding": null,
+			"endBinding": null,
+			"startArrowhead": null,
+			"endArrowhead": "arrow"
+		},
+		{
+			"id": "L0oc5YQTN4fBPmH6roajX",
+			"type": "line",
+			"x": -174.68013509114564,
+			"y": -785.510924995313,
+			"width": 163.75,
+			"height": 387.5,
+			"angle": 0,
+			"strokeColor": "#1e1e1e",
+			"backgroundColor": "transparent",
+			"fillStyle": "solid",
+			"strokeWidth": 2,
+			"strokeStyle": "solid",
+			"roughness": 1,
+			"opacity": 100,
+			"groupIds": [],
+			"frameId": null,
+			"roundness": {
+				"type": 2
+			},
+			"seed": 505104641,
+			"version": 122,
+			"versionNonce": 63992495,
+			"isDeleted": true,
+			"boundElements": null,
+			"updated": 1713794599636,
+			"link": null,
+			"locked": false,
+			"points": [
+				[
+					0,
+					0
+				],
+				[
+					163.75,
+					387.5
+				]
+			],
+			"lastCommittedPoint": null,
+			"startBinding": null,
+			"endBinding": null,
+			"startArrowhead": null,
+			"endArrowhead": null
 		}
 	],
 	"appState": {
@@ -575,9 +814,9 @@ zrOOXy2q: [[Architecture/System Design/Questions/Designing YouTube Recommendatio
 		"currentItemFontSize": 20,
 		"currentItemTextAlign": "left",
 		"currentItemStartArrowhead": null,
-		"currentItemEndArrowhead": "arrow",
-		"scrollX": 475.93013509114564,
-		"scrollY": 985.8820187453128,
+		"currentItemEndArrowhead": null,
+		"scrollX": 475.30513509114564,
+		"scrollY": 1135.882018745313,
 		"zoom": {
 			"value": 0.8
 		},
