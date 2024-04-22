@@ -44,15 +44,19 @@ age, geography, governance, etc ...
 
 #### Schema
 ##### Table 1 
-
-| Field     | Description                                | Type    |
-| --------- | ------------------------------------------ | ------- |
-| Latitude  | **\*** Lat of given location               | Double  |
-| Longitude | **\*** Long of given location              | Double  |
-| Radius    | **O** Default is 500 meters(about 3 miles) | Int     |
-| ..        | ..                                         | VarChar |
-| ..        | ..                                         | Char    |
-| ..        | ..                                         | Boolean |
+|     | Column Name       | Data Type    |
+| --- | ----------------- | ------------ |
+| PK  | video_id          | VARCHAR(50)  |
+| FK  | UserID            |              |
+|     | title             | VARCHAR(255) |
+|     | channel           | VARCHAR(100) |
+|     | category          | VARCHAR(50)  |
+|     | duration          | INT          |
+|     | views             | INT          |
+|     | likes             | INT          |
+|     | dislikes          | INT          |
+|     | upload_date       | DATE         |
+|     | recommended_score | FLOAT        |
 
 ##### Table 2
 

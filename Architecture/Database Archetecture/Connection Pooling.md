@@ -1,12 +1,13 @@
 ---
 tags:
   - databases
+  - bestPractices
 author:
   - gitUserNamePlaceHolder
 Comments: Placeholder comment any thing else you want to mention about the document.
 Purpose: This documentation discusses
-Status: 
-Started: 
+Status: Refinement
+Started: 2024-04-22
 EditDate: 
 Relates: 
 Peer Reviewed: 0
