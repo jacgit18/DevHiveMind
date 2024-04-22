@@ -44,30 +44,28 @@ age, geography, governance, etc ...
 
 #### Schema
 ##### Table 1 
-|     | Column Name       | Data Type    |
-| --- | ----------------- | ------------ |
-| PK  | video_id          | VARCHAR(50)  |
-| FK  | UserID            |              |
-|     | title             | VARCHAR(255) |
-|     | channel           | VARCHAR(100) |
-|     | category          | VARCHAR(50)  |
-|     | duration          | INT          |
-|     | views             | INT          |
-|     | likes             | INT          |
-|     | dislikes          | INT          |
-|     | upload_date       | DATE         |
-|     | recommended_score | FLOAT        |
+|     | Video Recommendations |              |
+| --- | --------------------- | ------------ |
+| PK  | VideoID               | VARCHAR(50)  |
+| FK  | UserID                | INT          |
+|     | title                 | VARCHAR(255) |
+|     | channel               | VARCHAR(100) |
+|     | category              | VARCHAR(50)  |
+|     | duration              | INT          |
+|     | views                 | INT          |
+|     | likes                 | INT          |
+|     | dislikes              | INT          |
+|     | upload_date           | DATE         |
+|     | recommended_score     | FLOAT        |
+|     |                       |              |
 
 ##### Table 2
-
-| Field     | Description                                | Type    |
-| --------- | ------------------------------------------ | ------- |
-| Latitude  | **\*** Lat of given location               | Double  |
-| Longitude | **\*** Long of given location              | Double  |
-| Radius    | **O** Default is 500 meters(about 3 miles) | Int     |
-| ..        | ..                                         | VarChar |
-| ..        | ..                                         | Char    |
-| ..        | ..                                         | Boolean |
+|     | User         |
+| --- | ------------ |
+| PK  | UserID       |
+|     | User channel |
+|     | User history |
+|     | User Likes   |
 
 
 #### Data points of focus identified
@@ -409,8 +407,8 @@ doesn't need to be cloud solution like AWS
 
 # Text Elements
 # Element Links
-d9HppMUX: [[Designing YouTube Recommendation Engine#DB Query to Request Table]]
-cLKZo11N: [[Designing YouTube Recommendation Engine#DB Table]]
+cfVAGpj7: [[Architecture/System Design/Questions/Designing YouTube Recommendation Engine.md#Table 1]]
+TsXzxI5r: [[Architecture/System Design/Questions/Designing YouTube Recommendation Engine.md#Table 2]]
 
 %%
 # Drawing
@@ -418,33 +416,33 @@ cLKZo11N: [[Designing YouTube Recommendation Engine#DB Table]]
 {
 	"type": "excalidraw",
 	"version": 2,
-	"source": "https://github.com/zsviczian/obsidian-excalidraw-plugin/releases/tag/2.1.1",
+	"source": "https://github.com/zsviczian/obsidian-excalidraw-plugin/releases/tag/2.1.4",
 	"elements": [
 		{
 			"type": "embeddable",
-			"version": 122,
-			"versionNonce": 2140519207,
+			"version": 141,
+			"versionNonce": 418215855,
 			"isDeleted": false,
-			"id": "d9HppMUX",
+			"id": "cfVAGpj7",
 			"fillStyle": "hachure",
 			"strokeWidth": 1,
 			"strokeStyle": "solid",
 			"roughness": 1,
 			"opacity": 100,
 			"angle": 0,
-			"x": -329.7674865722656,
-			"y": -399.9989471435547,
+			"x": -563.8780517578128,
+			"y": -613.7381385369795,
 			"strokeColor": "#000000",
 			"backgroundColor": "transparent",
-			"width": 741.7788696289064,
-			"height": 336.7786865234375,
-			"seed": 63178,
+			"width": 369.33333333333337,
+			"height": 500,
+			"seed": 16317,
 			"groupIds": [],
 			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1712465694514,
-			"link": "[[Architecture/System Design/Designing YouTube Recommendation Engine.md#DB Query to Request Table]]",
+			"updated": 1713790282316,
+			"link": "[[Architecture/System Design/Questions/Designing YouTube Recommendation Engine.md#Table 1]]",
 			"locked": false,
 			"customData": {
 				"mdProps": {
@@ -466,29 +464,29 @@ cLKZo11N: [[Designing YouTube Recommendation Engine#DB Table]]
 		},
 		{
 			"type": "embeddable",
-			"version": 136,
-			"versionNonce": 1769616935,
+			"version": 194,
+			"versionNonce": 439817345,
 			"isDeleted": false,
-			"id": "cLKZo11N",
+			"id": "TsXzxI5r",
 			"fillStyle": "hachure",
 			"strokeWidth": 1,
 			"strokeStyle": "solid",
 			"roughness": 1,
 			"opacity": 100,
 			"angle": 0,
-			"x": -266.40804873907604,
-			"y": 1.4009252779292183,
+			"x": 221.45528157552098,
+			"y": -543.0714718703128,
 			"strokeColor": "#000000",
 			"backgroundColor": "transparent",
-			"width": 659.6204833984374,
-			"height": 309.392578125,
-			"seed": 94875,
+			"width": 309.3333333333335,
+			"height": 158.66666666666637,
+			"seed": 14525,
 			"groupIds": [],
 			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1712465696330,
-			"link": "[[Architecture/System Design/Designing YouTube Recommendation Engine.md#DB Table]]",
+			"updated": 1713790270332,
+			"link": "[[Architecture/System Design/Questions/Designing YouTube Recommendation Engine.md#Table 2]]",
 			"locked": false,
 			"customData": {
 				"mdProps": {
@@ -524,10 +522,10 @@ cLKZo11N: [[Designing YouTube Recommendation Engine#DB Table]]
 		"currentItemTextAlign": "left",
 		"currentItemStartArrowhead": null,
 		"currentItemEndArrowhead": "arrow",
-		"scrollX": 309.3915082117323,
-		"scrollY": 588.5570550418864,
+		"scrollX": 899.2113850911464,
+		"scrollY": 1032.1339718703132,
 		"zoom": {
-			"value": 1
+			"value": 0.7499999999999996
 		},
 		"currentItemRoundness": "round",
 		"gridSize": null,
