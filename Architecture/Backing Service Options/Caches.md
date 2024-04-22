@@ -98,3 +98,5 @@ Eviction Policy:Once the cache is full, any requests to add items to the cache
 ![[Cache going wrong.gif]]
 
 ![[Cache 1.jpeg]]
+
+
