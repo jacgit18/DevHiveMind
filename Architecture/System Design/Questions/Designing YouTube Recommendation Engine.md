@@ -477,8 +477,6 @@ EC2 ^tAFqYIX5
 
 Rekognition ^bIvBglDe
 
-[[Integration of AI and Machine Learning Services]] ^6hCTypRR
-
 # Element Links
 cfVAGpj7: [[Architecture/System Design/Questions/Designing YouTube Recommendation Engine.md#Table 1]]
 TsXzxI5r: [[Architecture/System Design/Questions/Designing YouTube Recommendation Engine.md#Table 2]]
@@ -7720,41 +7718,6 @@ D6RNpTN3: [[Integration of AI and Machine Learning Services#Amazon Rekognition]]
 			]
 		},
 		{
-			"text": "📍[[Integration of AI and Machine Learning Services]]",
-			"fontSize": 20,
-			"fontFamily": 1,
-			"textAlign": "left",
-			"verticalAlign": "top",
-			"id": "6hCTypRR",
-			"type": "text",
-			"x": 1956.571800229927,
-			"y": -682.2644811333458,
-			"width": 543.5726318359375,
-			"height": 25,
-			"angle": 0,
-			"strokeColor": "#1e1e1e",
-			"backgroundColor": "transparent",
-			"fillStyle": "hachure",
-			"strokeWidth": 1,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
-			"roundness": null,
-			"seed": 62054,
-			"version": 2,
-			"versionNonce": 2128467648,
-			"updated": 1713878904807,
-			"isDeleted": false,
-			"groupIds": [],
-			"boundElements": [],
-			"link": "[[Integration of AI and Machine Learning Services]]",
-			"locked": false,
-			"containerId": null,
-			"originalText": "📍[[Integration of AI and Machine Learning Services]]",
-			"rawText": "[[Integration of AI and Machine Learning Services]]",
-			"lineHeight": 1.25
-		},
-		{
 			"id": "D6RNpTN3",
 			"type": "embeddable",
 			"x": 1934.4826711536373,
@@ -7797,6 +7760,42 @@ D6RNpTN3: [[Integration of AI and Machine Learning Services#Amazon Rekognition]]
 				}
 			},
 			"frameId": "vjQ13QAGqqwZLC97MoanI"
+		},
+		{
+			"text": "📍[[Integration of AI and Machine Learning Services]]",
+			"fontSize": 20,
+			"fontFamily": 1,
+			"textAlign": "left",
+			"verticalAlign": "top",
+			"id": "6hCTypRR",
+			"type": "text",
+			"x": 2074.115038007673,
+			"y": -516.8838791437269,
+			"width": 543.5726318359375,
+			"height": 25,
+			"angle": 0,
+			"strokeColor": "#1e1e1e",
+			"backgroundColor": "transparent",
+			"fillStyle": "hachure",
+			"strokeWidth": 1,
+			"strokeStyle": "solid",
+			"roughness": 1,
+			"opacity": 100,
+			"roundness": null,
+			"seed": 62054,
+			"version": 111,
+			"versionNonce": 134948544,
+			"updated": 1713881195604,
+			"isDeleted": true,
+			"groupIds": [],
+			"boundElements": [],
+			"link": "[[Integration of AI and Machine Learning Services]]",
+			"locked": false,
+			"containerId": null,
+			"originalText": "📍[[Integration of AI and Machine Learning Services]]",
+			"rawText": "[[Integration of AI and Machine Learning Services]]",
+			"lineHeight": 1.25,
+			"frameId": "vjQ13QAGqqwZLC97MoanI"
 		}
 	],
 	"appState": {
@@ -7815,7 +7814,7 @@ D6RNpTN3: [[Integration of AI and Machine Learning Services#Amazon Rekognition]]
 		"currentItemStartArrowhead": null,
 		"currentItemEndArrowhead": "arrow",
 		"scrollX": -970.4387065480249,
-		"scrollY": 576.0612613897538,
+		"scrollY": 1068.1027218547363,
 		"zoom": {
 			"value": 0.7316456618509296
 		},
