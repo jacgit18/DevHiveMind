@@ -71312,8 +71312,8 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 		},
 		{
 			"type": "text",
-			"version": 3154,
-			"versionNonce": 1233160608,
+			"version": 3155,
+			"versionNonce": 825035872,
 			"isDeleted": false,
 			"id": "R8AmlPGk",
 			"fillStyle": "hachure",
@@ -71326,7 +71326,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"y": -428.82160160882387,
 			"strokeColor": "#000000",
 			"backgroundColor": "transparent",
-			"width": 99.26434945539602,
+			"width": 99.24412536621094,
 			"height": 22.663705160802838,
 			"seed": 755599776,
 			"groupIds": [
@@ -71336,7 +71336,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"frameId": "QAKgykm435JjdqYQ8ZSVo",
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1713953438488,
+			"updated": 1713961276770,
 			"link": null,
 			"locked": false,
 			"fontSize": 18.8864209673357,
@@ -72608,8 +72608,8 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 		},
 		{
 			"type": "text",
-			"version": 3054,
-			"versionNonce": 622601312,
+			"version": 3055,
+			"versionNonce": 222325152,
 			"isDeleted": false,
 			"id": "SrQydHmD",
 			"fillStyle": "hachure",
@@ -72622,7 +72622,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"y": -425.05267861315184,
 			"strokeColor": "#000000",
 			"backgroundColor": "transparent",
-			"width": 95.66989542227662,
+			"width": 95.67312622070312,
 			"height": 22.006097114207154,
 			"seed": 920967584,
 			"groupIds": [
@@ -72632,7 +72632,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"frameId": "QAKgykm435JjdqYQ8ZSVo",
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1713953433606,
+			"updated": 1713961276771,
 			"link": null,
 			"locked": false,
 			"fontSize": 18.338414261839297,
@@ -72647,8 +72647,8 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 		},
 		{
 			"type": "text",
-			"version": 3512,
-			"versionNonce": 207319456,
+			"version": 3513,
+			"versionNonce": 881623136,
 			"isDeleted": false,
 			"id": "clBhFidb",
 			"fillStyle": "hachure",
@@ -72657,11 +72657,11 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"roughness": 1,
 			"opacity": 100,
 			"angle": 0,
-			"x": -598.0623999409526,
+			"x": -598.0545907841366,
 			"y": -427.15332579283967,
 			"strokeColor": "#000000",
 			"backgroundColor": "transparent",
-			"width": 99.07358645328031,
+			"width": 99.05796813964844,
 			"height": 21.744737458101067,
 			"seed": 1683531168,
 			"groupIds": [
@@ -72676,7 +72676,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 					"type": "arrow"
 				}
 			],
-			"updated": 1713953441663,
+			"updated": 1713961276771,
 			"link": null,
 			"locked": false,
 			"fontSize": 18.120614548417556,
@@ -73227,8 +73227,8 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 		"currentItemTextAlign": "left",
 		"currentItemStartArrowhead": null,
 		"currentItemEndArrowhead": "arrow",
-		"scrollX": 1322.0129027915596,
-		"scrollY": 1579.6426782092474,
+		"scrollX": 1543.5513643300212,
+		"scrollY": 1130.4119089784786,
 		"zoom": {
 			"value": 0.65
 		},
