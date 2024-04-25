@@ -4,16 +4,18 @@
     "type": "split",
     "children": [
       {
-        "id": "abd1f2648659d6ad",
+        "id": "b444ece65212794c",
         "type": "tabs",
         "children": [
           {
-            "id": "187f40793dfbf1d6",
+            "id": "281bd3aef135d628",
             "type": "leaf",
             "state": {
-              "type": "excalidraw",
+              "type": "markdown",
               "state": {
-                "file": "Architecture/System Design/System Design Thought Process Flow.md"
+                "file": "Architecture/System Design/System Design Thought Process Flow.md",
+                "mode": "source",
+                "source": false
               }
             }
           }
@@ -210,12 +212,15 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "187f40793dfbf1d6",
+  "active": "281bd3aef135d628",
   "lastOpenFiles": [
     "Home.md",
-    "Mind Maps/System Design Template.md",
     "_Pdf/Books/Interview/System Design Interview An Insider’s Guide.pdf",
     "Architecture/System Design/System Design Thought Process Flow.md",
-    "_Pdf/Books/Architecture/System Analysis and Design Methods 7th.pdf"
+    "Architecture/System Design/Rate Limits.md",
+    "Architecture/Fault Tolerance.md",
+    "Companies/Companies Worked At/TD/Business Requirements Life cycle.md",
+    "Databases/Database data governance.md",
+    "Architecture/System Design/Userbase.md"
   ]
 }
