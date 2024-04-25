@@ -264,8 +264,6 @@ CodeDeploy ^hM4V6R20
 
 CodeBuild ^EaOlIVDZ
 
-Github Actions ^Hlm63UxH
-
 Application
 server ^uxYpAuC9
 
@@ -575,12 +573,14 @@ SageMaker ^SrQydHmD
 
 Personalize ^clBhFidb
 
+Github Actions ^eZytiCO6
+
 # Embedded files
 69edc9e02839ed3bb44893b35184a59630bebc22: [[Aws Trust Advisor.png]]
-46423fdbed5a290e46978078fca3490e32f0a5b9: [[Pasted Image 20240401082528_264.png]]
-962dde3d92f0bb8f09113a306e64a935eeb38172: [[Pasted Image 20240401082628_277.svg]]
-6cc13ef5f47d18738d373860705182af63941283: [[Pasted Image 20240401091055_513.svg]]
-beb88a937223c5cb69030dd35c828863fccfaf0d: [[Pasted Image 20240401091110_541.svg]]
+46423fdbed5a290e46978078fca3490e32f0a5b9: [[EBS.png]]
+962dde3d92f0bb8f09113a306e64a935eeb38172: [[Glaciar.svg]]
+6cc13ef5f47d18738d373860705182af63941283: [[Snowball.svg]]
+beb88a937223c5cb69030dd35c828863fccfaf0d: [[SnowMobile.svg]]
 7ccfb268a5c308cde972814110183ccd1b9b2a12: [[aws Arch.gif]]
 c89dd983ae880b0aa70621d39a337c3153956cd4: [[Cloud Monitoring Services.jpeg]]
 3fef8d205aa5f7d4ef48324d3400f00b74231872: [[AWS Service Arch Example.png]]
@@ -597,6 +597,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 92135ee6320c5b0a0290fc580327ab2a0b627cb8: [[pririotyAWS.jpeg]]
 226f389b1a80c6bed444f39187a18cc93371fe57: [[data pipeline.gif]]
 2cbb24ee27055f196300fb99e1fd5ac2798c4756: [[Data Pipline.gif]]
+0e77320ba2cdfffa54ed944064dc676677a1c426: [[Github Actions.png]]
 
 %%
 # Drawing
@@ -13614,42 +13615,6 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"containerId": null,
 			"originalText": "CodeBuild",
 			"lineHeight": 1.2
-		},
-		{
-			"type": "text",
-			"version": 308,
-			"versionNonce": 753616595,
-			"isDeleted": false,
-			"id": "Hlm63UxH",
-			"fillStyle": "solid",
-			"strokeWidth": 2,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
-			"angle": 0,
-			"x": -1214.2356750729768,
-			"y": 85.18272061050106,
-			"strokeColor": "#1e1e1e",
-			"backgroundColor": "transparent",
-			"width": 153.70433044433594,
-			"height": 26.879227643006892,
-			"seed": 925856208,
-			"groupIds": [],
-			"frameId": "QAKgykm435JjdqYQ8ZSVo",
-			"roundness": null,
-			"boundElements": [],
-			"updated": 1712540933992,
-			"link": null,
-			"locked": false,
-			"fontSize": 21.503382114405515,
-			"fontFamily": 1,
-			"text": "Github Actions",
-			"rawText": "Github Actions",
-			"textAlign": "left",
-			"verticalAlign": "top",
-			"containerId": null,
-			"originalText": "Github Actions",
-			"lineHeight": 1.25
 		},
 		{
 			"type": "rectangle",
@@ -32431,8 +32396,8 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 		},
 		{
 			"type": "rectangle",
-			"version": 1363,
-			"versionNonce": 915774880,
+			"version": 1365,
+			"versionNonce": 1218463786,
 			"isDeleted": false,
 			"id": "PFSyRhMeeQQjJhSU-aAet",
 			"fillStyle": "solid",
@@ -32461,14 +32426,14 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 					"type": "arrow"
 				}
 			],
-			"updated": 1713953428651,
+			"updated": 1714025401881,
 			"link": null,
 			"locked": false
 		},
 		{
 			"type": "text",
-			"version": 465,
-			"versionNonce": 961604000,
+			"version": 467,
+			"versionNonce": 645509866,
 			"isDeleted": false,
 			"id": "CBh5xDMB",
 			"fillStyle": "solid",
@@ -32488,7 +32453,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"frameId": "cDlFNT0KJqjWdy4tfiyeE",
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1713953428651,
+			"updated": 1714025401882,
 			"link": null,
 			"locked": false,
 			"fontSize": 36,
@@ -32503,8 +32468,8 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 		},
 		{
 			"type": "rectangle",
-			"version": 1399,
-			"versionNonce": 1589818784,
+			"version": 1401,
+			"versionNonce": 1129825706,
 			"isDeleted": false,
 			"id": "oKt_wAJkAksutql0WooCQ",
 			"fillStyle": "solid",
@@ -32529,14 +32494,14 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 					"id": "NP5hZoJW"
 				}
 			],
-			"updated": 1713953428651,
+			"updated": 1714025401882,
 			"link": null,
 			"locked": false
 		},
 		{
 			"type": "text",
-			"version": 504,
-			"versionNonce": 203096480,
+			"version": 506,
+			"versionNonce": 677740650,
 			"isDeleted": false,
 			"id": "NP5hZoJW",
 			"fillStyle": "solid",
@@ -32556,7 +32521,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"frameId": "cDlFNT0KJqjWdy4tfiyeE",
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1713953428651,
+			"updated": 1714025401882,
 			"link": null,
 			"locked": false,
 			"fontSize": 36,
@@ -43298,8 +43263,8 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 		},
 		{
 			"type": "text",
-			"version": 299,
-			"versionNonce": 1241628064,
+			"version": 300,
+			"versionNonce": 149019370,
 			"isDeleted": false,
 			"id": "87t7ljSB",
 			"fillStyle": "solid",
@@ -43321,7 +43286,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"frameId": "0LAZAzosw8QneazOU9KFZ",
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1713951752740,
+			"updated": 1713961327434,
 			"link": null,
 			"locked": false,
 			"fontSize": 20,
@@ -71377,12 +71342,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			],
 			"frameId": "QAKgykm435JjdqYQ8ZSVo",
 			"roundness": null,
-			"boundElements": [
-				{
-					"id": "3XsRhX8yVfH4SuIKiyeKx",
-					"type": "arrow"
-				}
-			],
+			"boundElements": [],
 			"updated": 1713953438488,
 			"link": null,
 			"locked": false
@@ -73162,54 +73122,77 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"locked": false
 		},
 		{
-			"type": "arrow",
-			"version": 190,
-			"versionNonce": 2058665376,
-			"isDeleted": true,
-			"id": "3XsRhX8yVfH4SuIKiyeKx",
+			"type": "image",
+			"version": 140,
+			"versionNonce": 168562346,
+			"isDeleted": false,
+			"id": "nYVloJgOtAHd-RPTBzJUY",
 			"fillStyle": "solid",
 			"strokeWidth": 2,
 			"strokeStyle": "solid",
 			"roughness": 1,
 			"opacity": 100,
 			"angle": 0,
-			"x": -313.07471586746556,
-			"y": -452.1656380541969,
-			"strokeColor": "#1e1e1e",
+			"x": -1177.2086569618782,
+			"y": 2.2799379950820935,
+			"strokeColor": "transparent",
 			"backgroundColor": "transparent",
-			"width": 85.74274967945003,
-			"height": 9.799171391937167,
-			"seed": 1558330784,
-			"groupIds": [],
+			"width": 74.65247022024417,
+			"height": 74.65247022024417,
+			"seed": 931506486,
+			"groupIds": [
+				"bMMREDzVcJlsd4EcXvTBk"
+			],
 			"frameId": "QAKgykm435JjdqYQ8ZSVo",
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1713953436752,
+			"updated": 1714025411915,
 			"link": null,
 			"locked": false,
-			"startBinding": {
-				"elementId": "MSRU9t1-ZqPI-iHk8nZn2",
-				"focus": -0.6601362765104308,
-				"gap": 14.118333661812564
-			},
-			"endBinding": {
-				"elementId": "-E9uapElVYHLgTH0XIVDI",
-				"focus": -3.6799428361133795,
-				"gap": 14.07027325318904
-			},
-			"lastCommittedPoint": null,
-			"startArrowhead": null,
-			"endArrowhead": "arrow",
-			"points": [
-				[
-					0,
-					0
-				],
-				[
-					-85.74274967945003,
-					-9.799171391937167
-				]
+			"status": "pending",
+			"fileId": "0e77320ba2cdfffa54ed944064dc676677a1c426",
+			"scale": [
+				1,
+				1
 			]
+		},
+		{
+			"type": "text",
+			"version": 449,
+			"versionNonce": 2004945142,
+			"isDeleted": false,
+			"id": "eZytiCO6",
+			"fillStyle": "solid",
+			"strokeWidth": 2,
+			"strokeStyle": "solid",
+			"roughness": 1,
+			"opacity": 100,
+			"angle": 0,
+			"x": -1209.6336872645902,
+			"y": 82.24025935053436,
+			"strokeColor": "#1e1e1e",
+			"backgroundColor": "transparent",
+			"width": 134.65085928780672,
+			"height": 23.551259021608512,
+			"seed": 916918902,
+			"groupIds": [
+				"bMMREDzVcJlsd4EcXvTBk"
+			],
+			"frameId": "QAKgykm435JjdqYQ8ZSVo",
+			"roundness": null,
+			"boundElements": [],
+			"updated": 1714025411915,
+			"link": null,
+			"locked": false,
+			"fontSize": 18.84100721728681,
+			"fontFamily": 1,
+			"text": "Github Actions",
+			"rawText": "Github Actions",
+			"textAlign": "left",
+			"verticalAlign": "top",
+			"containerId": null,
+			"originalText": "Github Actions",
+			"lineHeight": 1.25
 		}
 	],
 	"appState": {
@@ -73227,10 +73210,10 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 		"currentItemTextAlign": "left",
 		"currentItemStartArrowhead": null,
 		"currentItemEndArrowhead": "arrow",
-		"scrollX": 1543.5513643300212,
-		"scrollY": 1130.4119089784786,
+		"scrollX": 1615.1489889276459,
+		"scrollY": 715.8529336655945,
 		"zoom": {
-			"value": 0.65
+			"value": 0.7000000000000001
 		},
 		"currentItemRoundness": "round",
 		"gridSize": null,
