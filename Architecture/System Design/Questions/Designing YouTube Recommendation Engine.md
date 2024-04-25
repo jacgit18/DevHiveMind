@@ -303,41 +303,6 @@ Bandwidth required = (200,000,000  * 1.5 MB) = 300,000,000 MB
 
 Bandwidth per second = Bandwidth required / 86,400 seconds in a day = 3,472.22 MB/s = 3.39 GB
 
-### Database Schema 
-
-#### DB Table
-
-| Field     | Description                                | Type    |
-| --------- | ------------------------------------------ | ------- |
-| Latitude  | **\*** Lat of given location               | Double  |
-| Longitude | **\*** Long of given location              | Double  |
-| Radius    | **O** Default is 500 meters(about 3 miles) | Int     |
-| ..        | ..                                         | VarChar |
-| ..        | ..                                         | Char    |
-| ..        | ..                                         | Boolean |
-
-
-#### DB Query to Request Table
-
-| Request | DB    | Description                                | Endpoints               |
-| ------- | ----- | ------------------------------------------ | ----------------------- |
-| GET     | READ  | *Returns nearby business at user location* | **/v1/search/nearby**   |
-| GET     | READ  |                                            | **/v1/search/specific** |
-| GET     | READ  |                                            | **/v2/search/specific** |
-| POST    | WRITE |                                            | ..                      |
-| DELETE  | WRITE |                                            | ..                      |
-| PATCH   | WRITE |                                            | ..                      |
-|         |       |                                            |                         |
-
-
-#### Response 
-```json
-{
-"total":10,
-"buisnesses": [{buisness object}]
-}
-```
-
 
 
 #todo/Personal/Low 
