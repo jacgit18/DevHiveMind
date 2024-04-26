@@ -374,11 +374,11 @@ S5QN8lcM: [[_System Design Template#Table 2]]
 			"frameId": null,
 			"roundness": null,
 			"seed": 1436124256,
-			"version": 154,
-			"versionNonce": 1455429024,
+			"version": 186,
+			"versionNonce": 830923872,
 			"isDeleted": false,
 			"boundElements": null,
-			"updated": 1714138196391,
+			"updated": 1714138223781,
 			"link": null,
 			"locked": false,
 			"customData": {
@@ -388,7 +388,7 @@ S5QN8lcM: [[_System Design Template#Table 2]]
 					"nameColor": "#7A7A7A"
 				}
 			},
-			"name": "2 a"
+			"name": "2 Codebase Arch"
 		},
 		{
 			"id": "qGrI9dqflYdohIJYjf8st",
@@ -409,11 +409,11 @@ S5QN8lcM: [[_System Design Template#Table 2]]
 			"frameId": null,
 			"roundness": null,
 			"seed": 876494944,
-			"version": 139,
-			"versionNonce": 410993760,
+			"version": 156,
+			"versionNonce": 1255729568,
 			"isDeleted": false,
 			"boundElements": null,
-			"updated": 1714137934186,
+			"updated": 1714138289510,
 			"link": null,
 			"locked": false,
 			"customData": {
@@ -423,7 +423,7 @@ S5QN8lcM: [[_System Design Template#Table 2]]
 					"nameColor": "#7A7A7A"
 				}
 			},
-			"name": "3"
+			"name": "3 Database Stuff"
 		},
 		{
 			"id": "hy-ix3SUl-OOGEZt8P5ep",
@@ -567,6 +567,42 @@ S5QN8lcM: [[_System Design Template#Table 2]]
 			"containerId": null,
 			"originalText": "",
 			"lineHeight": 1.25
+		},
+		{
+			"id": "hKX844kd",
+			"type": "text",
+			"x": -75.41465022439888,
+			"y": -1162.4356803570493,
+			"width": 9.999984741210938,
+			"height": 25,
+			"angle": 0,
+			"strokeColor": "#1e1e1e",
+			"backgroundColor": "transparent",
+			"fillStyle": "solid",
+			"strokeWidth": 2,
+			"strokeStyle": "solid",
+			"roughness": 1,
+			"opacity": 100,
+			"groupIds": [],
+			"frameId": null,
+			"roundness": null,
+			"seed": 420533664,
+			"version": 2,
+			"versionNonce": 2045724768,
+			"isDeleted": true,
+			"boundElements": null,
+			"updated": 1714138210087,
+			"link": null,
+			"locked": false,
+			"text": "",
+			"rawText": "",
+			"fontSize": 20,
+			"fontFamily": 1,
+			"textAlign": "left",
+			"verticalAlign": "top",
+			"containerId": null,
+			"originalText": "",
+			"lineHeight": 1.25
 		}
 	],
 	"appState": {
@@ -585,7 +621,7 @@ S5QN8lcM: [[_System Design Template#Table 2]]
 		"currentItemStartArrowhead": null,
 		"currentItemEndArrowhead": "arrow",
 		"scrollX": 1677.9920859090557,
-		"scrollY": 1658.2476752639332,
+		"scrollY": 1433.9802790165177,
 		"zoom": {
 			"value": 0.5350755482424828
 		},
