@@ -8,7 +8,7 @@
         "type": "tabs",
         "children": [
           {
-            "id": "97584459fdde294b",
+            "id": "4aa3638076d3aa3b",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -20,19 +20,27 @@
             }
           },
           {
-            "id": "4aa3638076d3aa3b",
+            "id": "5e8efaecd438db55",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {}
+            }
+          },
+          {
+            "id": "ff71e49f70ec2137",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
                 "file": "Architecture/System Design/System Design Thought Process Flow.md",
-                "mode": "preview",
+                "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -97,8 +105,7 @@
           "state": {}
         }
       }
-    ],
-    "currentTab": 0
+    ]
   },
   "right": {
     "id": "c132e8bf1ab9e4bd",
@@ -225,11 +232,12 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "4aa3638076d3aa3b",
+  "active": "ff71e49f70ec2137",
   "lastOpenFiles": [
-    "Architecture/System Design/System Design Thought Process Flow.svg",
-    "Home.md",
+    "Architecture/Backing Service Options/Choosing Database.md",
     "Architecture/System Design/System Design Thought Process Flow.md",
+    "Home.md",
+    "Architecture/System Design/System Design Thought Process Flow.svg",
     "_Pdf/Books/Interview/System Design Interview An Insider’s Guide.pdf",
     "Architecture/System Design/Rate Limits.md",
     "Architecture/Fault Tolerance.md",
