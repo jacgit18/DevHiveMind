@@ -86,6 +86,11 @@ Focusing on network traffic and storage estimation this should be more then enou
 
 You can maybe mention leveraging ChatGPT to perform a CAP theorem analysis and a Kepner-Tregoe decision analysis, using weighted decisions to identify a concise list of choices for databases or other relevant technologies. This approach allows for a systematic evaluation of options based on their consistency, availability, and partition tolerance, as well as other criteria important to your decision-making process. By combining these analytical methods, you can efficiently narrow down your options and make informed decisions that align with your specific needs and preferences.
 
+
+#### Design API / Endpoint
+based on schema data also can reference capacity estimation documentation define request response pattern
+
+![[2024-04-26 13.29.08 www.youtube.com 44858d0d7095.png]]
 ### Step 3: Design Deep Dive (15 - 25 minutes)
 
 #### Overall Architecture
