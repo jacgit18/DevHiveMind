@@ -1,5 +1,7 @@
 ---
+excalidraw-plugin: parsed
 tags:
+  - excalidraw
   - architecturalPatterns
   - eventDriven
   - coupling
@@ -13,15 +15,15 @@ author:
   - chatgpt
 Purpose: This documentation discusses Event Driven Architecture.
 Status: Refinement
-Started: 
-EditDate: 2024-03-07
-Relates: 
+Started: null
+EditDate: 2024-03-07T00:00:00.000Z
+Relates: null
 Peer Reviewed: 0
-dg-publish:
+dg-publish: null
 ---
-![[Event Driven Arch.jpg]]
+![[Event Driven Architecture]]
 
-Event-Driven Architecture (EDA) is a software design pattern that focuses on the generation, detection, consumption,  and response to events and event-driven messages within a system. In EDA, the flow of data and the triggering of actions are driven by events, which are occurrences or changes in the system or external environment. This architectural approach is widely used in modern software systems to create scalable, decoupled, and responsive applications that has an effective communication and coordination among different components of a system. Here are some key concepts and components of Event-Driven Architecture:
+Event-Driven Architecture (EDA) is a software design pattern is an alternative to request response architecture found in REST or gRPC. It focuses on the generation, detection, consumption,  and response to events and event-driven messages within a system. In EDA, the flow of data and the triggering of actions are driven by events, which are occurrences or changes in the system or external environment. This architectural approach is widely used in modern software systems to create scalable, decoupled, and responsive applications that has an effective communication and coordination among different components of a system. Here are some key concepts and components of Event-Driven Architecture:
 
 1. **Event:**
    - An event is a significant occurrence or change in a system that can be captured and processed. Events can represent a wide range of activities, such as user interactions, system alerts, sensor data, or application state changes.
@@ -78,3 +80,90 @@ An event bus and broker are similar in the sense that they both facilitate the c
 
 
 It's important to note that Event-Driven Architecture is not tied to specific technologies such as microservices, serverless, or streaming. Instead, it represents a design paradigm that focuses on handling and responding to events and messages in a decoupled and asynchronous manner. The implementation of EDA can be achieved using a variety of tools, frameworks, and architectural patterns.
+
+==⚠  Switch to EXCALIDRAW VIEW in the MORE OPTIONS menu of this document. ⚠==
+
+
+# Text Elements
+# Embedded files
+9aaa930e9ae1677999d8b205df69c4231a269848: [[Event Driven Arch Solution.png]]
+
+%%
+# Drawing
+```json
+{
+	"type": "excalidraw",
+	"version": 2,
+	"source": "https://github.com/zsviczian/obsidian-excalidraw-plugin/releases/tag/2.1.4",
+	"elements": [
+		{
+			"id": "LodV5eld",
+			"type": "image",
+			"x": -270.33079625292737,
+			"y": -272.328125,
+			"width": 593.1615925058547,
+			"height": 432.95726495726495,
+			"angle": 0,
+			"strokeColor": "transparent",
+			"backgroundColor": "transparent",
+			"fillStyle": "hachure",
+			"strokeWidth": 1,
+			"strokeStyle": "solid",
+			"roughness": 1,
+			"opacity": 100,
+			"roundness": null,
+			"seed": 61981,
+			"version": 65,
+			"versionNonce": 412948170,
+			"updated": 1714236764690,
+			"isDeleted": false,
+			"groupIds": [],
+			"boundElements": [],
+			"link": null,
+			"locked": false,
+			"fileId": "9aaa930e9ae1677999d8b205df69c4231a269848",
+			"scale": [
+				1,
+				1
+			]
+		}
+	],
+	"appState": {
+		"theme": "light",
+		"viewBackgroundColor": "#ffffff",
+		"currentItemStrokeColor": "#1e1e1e",
+		"currentItemBackgroundColor": "transparent",
+		"currentItemFillStyle": "solid",
+		"currentItemStrokeWidth": 2,
+		"currentItemStrokeStyle": "solid",
+		"currentItemRoughness": 1,
+		"currentItemOpacity": 100,
+		"currentItemFontFamily": 1,
+		"currentItemFontSize": 20,
+		"currentItemTextAlign": "left",
+		"currentItemStartArrowhead": null,
+		"currentItemEndArrowhead": "arrow",
+		"scrollX": 560.25,
+		"scrollY": 484.671875,
+		"zoom": {
+			"value": 1
+		},
+		"currentItemRoundness": "round",
+		"gridSize": null,
+		"gridColor": {
+			"Bold": "#C9C9C9FF",
+			"Regular": "#EDEDEDFF"
+		},
+		"currentStrokeOptions": null,
+		"previousGridSize": null,
+		"frameRendering": {
+			"enabled": true,
+			"clip": true,
+			"name": true,
+			"outline": true
+		}
+	},
+	"files": {}
+}
+```
+%%

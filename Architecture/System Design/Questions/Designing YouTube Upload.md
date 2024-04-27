@@ -163,6 +163,10 @@ InComing Data per sec(Write) = 0.005(write per sec) * 300 bytes(arbitrary storag
 OutGoing Data per sec(Read) = 0.25(read per sec) * 300 bytes(arbitrary storage action size) = 75 bytes per sec
 
 
+Slow devices with low bandwidth maybe served lower resolution videos or content  
+  
+  
+Versus fast devices with more bandwidth would be served high quality content like 4K, 1080p, etc
 
 ### App Server Estimations
 Might be asked how many app service do you need
