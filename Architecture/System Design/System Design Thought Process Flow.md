@@ -119,7 +119,7 @@ Picking between the two database architecture comes down to complexity, data con
 Then you can discuss governance like [[Data Retention Target]] and [[Database data governance]] compliance, Infrastructure may include tools and processes to enforce compliance with regulatory requirements and organizational policies, ensuring data security and legal compliance. 
 
 ###### API Gateway
-An API Gateway serves as a custom intermediary or [[API Gateway & Middleware Implementation|middleware]] between the backend and client applications, facilitating the exposure of specific routes or functionalities from the backend. Alternatively, you can utilize a third-party API to expose backend server routes. In this setup, when a user sends a request, it first reaches the load balancer, which then directs the traffic to the API Gateway endpoint. The API Gateway then communicates with the backend server, which may trigger database queries involving read or write operations. These database queries are directed towards either a main database or a replicated database, depending on the architecture of the database system in use.
+An API Gateway serves as a custom intermediary or [[API Gateway & Middleware Implementation|middleware]] between the backend and client applications, facilitating the exposure of specific routes or functionalities from the backend. You can even choose what routes to expose based on device type like mobile. Alternatively, you can utilize a third-party API to expose backend server routes. In this setup, when a user sends a request, it first reaches the load balancer, which then directs the traffic to the API Gateway endpoint. The API Gateway then communicates with the backend server, which may trigger database queries involving read or write operations. These database queries are directed towards either a main database or a replicated database, depending on the architecture of the database system in use.
 
 API gateways can improve system performance in several ways like caching responses from backend services, reducing the need for repeated processing of the same requests and many other performance [[API gateways can improve system performance in several ways |benefits]]. 
 
@@ -136,11 +136,11 @@ Additionally, various [[System Design Interview An Insider’s Guide Volume 1.pd
 
 Horizontal scaling is often preferred due to the limitations of vertical scaling. For instance, it's impossible to infinitely increase CPU and memory resources on a single server. Additionally, vertical scaling lacks failover and redundancy mechanisms. If one server experiences downtime, the entire website or application goes down with it completely. System tend to follow these common [[System Scalability Strategies]].
 
-To enhance system scaling and performance, various technologies are commonly employed to distribute traffic across [[server pools]]. Among these, technologies you have networking components like [[Reverse proxy vs API gateway vs load balancer |Reverse proxy, API gateway, and load balancer ]] that act as routers facilitating load distribution and improving fault tolerance through techniques such as [[Load Shedding]] and can be used with [[Floating IP]] to eliminate single points of failure for traffic management. Additionally, [[Consistent Hashing]] stands out as one of several methods utilized to implement a load balancer, providing efficient routing of requests while maintaining consistency in data distribution across servers.
+To enhance system scaling and performance, various technologies are commonly employed to distribute traffic across [[server pools]]. Among these, technologies you have networking components like [[Reverse proxy vs API gateway vs load balancer |Reverse proxy, API gateway, and load balancer ]] that act as routers facilitating load distribution and improving fault tolerance through techniques such as [[Load Shedding]] and can be used with [[Floating IP]] to eliminate single points of failure for traffic management. Additionally, [[Consistent Hashing]] stands out as one of several methods utilized to implement a load balancer, providing efficient routing of requests while maintaining consistency in data distribution across servers. There also things like [[Service Meshes]] which provide a lot of functionality
 
 Another important consideration is the utilization of [[SSL Termination]], which is integral to HTTPS, for decrypting encrypted traffic at the load balancer or API gateway level the network packets are typically encrypted at the client side specifically the application layer like for example Google Chrome.
 
-There is also Race Condition that can be discussed in terms of distributed systems or when multiple users or services concurrently interact with shared resources such as databases, storage, or compute instances. Like consider this [[Race Condition#Race Condition within Cloud Infrastructure |Race Condition example]] with Auto-scaling Group and Elastic Load Balancer. Race condition can occur within multiple parts of the system like databases or in this [[Microservices & Race Conditions |microservices example]]  that may access some of these cloud resources.
+There is also Race Condition that can be discussed in terms of distributed systems or when multiple users or services concurrently interact with shared resources such as databases, storage, or compute instances. Like consider this [[Race Condition#Race Condition within Cloud Infrastructure |Race Condition example]] with Auto-scaling Group and Elastic Load Balancer. Race condition can occur within multiple parts of the system like databases or in this [[Microservices & Race Conditions |microservices example]] that may access some of these cloud resources.
 
 
 Cloud services range from IAAS to SAAS and provide many benefits like availability zones and other cloud services that add fault tolerance to the overall system. 
@@ -32403,8 +32403,8 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 		},
 		{
 			"type": "rectangle",
-			"version": 1367,
-			"versionNonce": 1738273383,
+			"version": 1369,
+			"versionNonce": 1786953597,
 			"isDeleted": false,
 			"id": "PFSyRhMeeQQjJhSU-aAet",
 			"fillStyle": "solid",
@@ -32433,14 +32433,14 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 					"type": "arrow"
 				}
 			],
-			"updated": 1714141614847,
+			"updated": 1714227960631,
 			"link": null,
 			"locked": false
 		},
 		{
 			"type": "text",
-			"version": 469,
-			"versionNonce": 341773703,
+			"version": 471,
+			"versionNonce": 2052573149,
 			"isDeleted": false,
 			"id": "CBh5xDMB",
 			"fillStyle": "solid",
@@ -32460,7 +32460,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"frameId": "cDlFNT0KJqjWdy4tfiyeE",
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1714141614848,
+			"updated": 1714227960631,
 			"link": null,
 			"locked": false,
 			"fontSize": 36,
@@ -32475,8 +32475,8 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 		},
 		{
 			"type": "rectangle",
-			"version": 1403,
-			"versionNonce": 1817298087,
+			"version": 1405,
+			"versionNonce": 1865204797,
 			"isDeleted": false,
 			"id": "oKt_wAJkAksutql0WooCQ",
 			"fillStyle": "solid",
@@ -32501,14 +32501,14 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 					"id": "NP5hZoJW"
 				}
 			],
-			"updated": 1714141614848,
+			"updated": 1714227960631,
 			"link": null,
 			"locked": false
 		},
 		{
 			"type": "text",
-			"version": 508,
-			"versionNonce": 522229703,
+			"version": 510,
+			"versionNonce": 216216733,
 			"isDeleted": false,
 			"id": "NP5hZoJW",
 			"fillStyle": "solid",
@@ -32528,7 +32528,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"frameId": "cDlFNT0KJqjWdy4tfiyeE",
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1714141614848,
+			"updated": 1714227960631,
 			"link": null,
 			"locked": false,
 			"fontSize": 36,
@@ -43270,8 +43270,8 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 		},
 		{
 			"type": "text",
-			"version": 303,
-			"versionNonce": 340338441,
+			"version": 305,
+			"versionNonce": 523016445,
 			"isDeleted": false,
 			"id": "87t7ljSB",
 			"fillStyle": "solid",
@@ -43293,12 +43293,12 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"frameId": "0LAZAzosw8QneazOU9KFZ",
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1714141638547,
+			"updated": 1714227960632,
 			"link": null,
 			"locked": false,
 			"fontSize": 20,
 			"fontFamily": 1,
-			"text": "Frontend",
+			"text": "Frontend ",
 			"rawText": "Frontend ",
 			"textAlign": "center",
 			"verticalAlign": "middle",
@@ -73217,8 +73217,8 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 		"currentItemTextAlign": "left",
 		"currentItemStartArrowhead": null,
 		"currentItemEndArrowhead": "arrow",
-		"scrollX": 1225.6336601647213,
-		"scrollY": 3956.213759379506,
+		"scrollX": 4562.791846070502,
+		"scrollY": 4910.638019705646,
 		"zoom": {
 			"value": 0.1
 		},
