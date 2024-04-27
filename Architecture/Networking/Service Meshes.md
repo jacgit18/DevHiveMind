@@ -13,7 +13,7 @@ dg-publish:
 ---
 A service mesh is a dedicated infrastructure layer that facilitates communication between microservices within a distributed system. It's designed to handle service-to-service communication, providing features such as service discovery, load balancing, traffic management, security, and observability. Here's a breakdown of key components and functionalities of a service mesh:  
   
-1. **Service Discovery**: Service meshes help microservices discover and locate other services within the system. This allows services to dynamically locate and communicate with each other without hardcoding network addresses. If you only this functionality you can use technologies like [[Eureka Service]].  
+1. **[[Service Discovery]]**: Service meshes help microservices discover and locate other services within the system. This allows services to dynamically locate and communicate with each other without hardcoding network addresses. If you only this functionality you can use technologies like [[Eureka Service]].  
   
 2. **Load Balancing**: Service meshes distribute incoming traffic across multiple instances of a service to ensure optimal resource utilization and availability. Load balancing algorithms can be applied to distribute traffic based on various criteria, such as round-robin, least connections, or weighted distribution.  
   
