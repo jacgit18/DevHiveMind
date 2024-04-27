@@ -8,39 +8,27 @@
         "type": "tabs",
         "children": [
           {
-            "id": "4aa3638076d3aa3b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Home.md",
-                "mode": "preview",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "5e8efaecd438db55",
-            "type": "leaf",
-            "state": {
-              "type": "graph",
-              "state": {}
-            }
-          },
-          {
             "id": "ff71e49f70ec2137",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Architecture/System Design/System Design Thought Process Flow.md",
+                "file": "Architecture/Backing Service Options/Choosing Database.md",
                 "mode": "source",
                 "source": false
               }
             }
+          },
+          {
+            "id": "a3883d203bd445cf",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {}
+            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -125,7 +113,6 @@
         "state": {
           "type": "backlink",
           "state": {
-            "file": "Architecture/System Design/System Design Thought Process Flow.md",
             "collapseAll": false,
             "extraContext": false,
             "sortOrder": "alphabetical",
@@ -142,7 +129,6 @@
         "state": {
           "type": "outgoing-link",
           "state": {
-            "file": "Architecture/System Design/System Design Thought Process Flow.md",
             "linksCollapsed": false,
             "unlinkedCollapsed": true
           }
@@ -153,9 +139,7 @@
         "type": "leaf",
         "state": {
           "type": "outline",
-          "state": {
-            "file": "Architecture/System Design/System Design Thought Process Flow.md"
-          }
+          "state": {}
         }
       },
       {
@@ -232,7 +216,7 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "ff71e49f70ec2137",
+  "active": "a3883d203bd445cf",
   "lastOpenFiles": [
     "Architecture/Backing Service Options/Choosing Database.md",
     "Architecture/System Design/System Design Thought Process Flow.md",
