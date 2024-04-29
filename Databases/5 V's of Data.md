@@ -75,7 +75,7 @@ Here are some examples of data used for descriptive analytics:
 - Demographic data about a business’ customer population, for instance, data that indicates that 30% of customers are self-employed
 
 ### Diagnostic analytics: Why is it happening?
-    
+
 After asking the question, “What is happening?”, the next step is to dive deeper and ask “why?”, such as,  “Why are trends and patterns happening?” This is where diagnostic analytics comes in.
 
 Diagnostic analytics takes the insights found from descriptive analytics and drills down to find the causes of specific problems.
@@ -91,7 +91,7 @@ Here are some examples of diagnostic analytics:
 - An IT company analyzes server ticket data to identify a small number of servers causing the bulk of an organization’s service outages.
 
 ### Predictive analytics: What is likely to happen in the future?
-    
+
 Predictive analytics is about forecasting. This type of analytics uses historical data to make predictions about the future. Whether it’s the likelihood of a future event, forecasting a quantifiable amount, or estimating a point in time at which something might happen – these are all done through predictive models.
 
 In a world of great uncertainty, being able to predict allows businesses to make better decisions.
@@ -107,7 +107,7 @@ Here are some examples of diagnostic analytics:
 - A weather forecaster analyzes current weather conditions in one part of the world to determine future weather conditions in other parts of the world.
 
 ### Prescriptive analytics: What should happen?
-    
+
 Prescriptive analytics combines the insight from all previous data analyses to determine a course of action to take to address a problem or make a decision.
 
 The purpose of prescriptive analytics is to prescribe what action to take to eliminate a future problem or take full advantage of a promising trend.
