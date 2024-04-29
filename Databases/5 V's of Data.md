@@ -123,3 +123,13 @@ Here are some examples of prescriptive analytics:
 - A traffic application that helps people choose the best route home and considers the distance of each route, the speed at which one can travel on each road and, crucially, the current traffic constraints
 - An exam timetable that checks if students have conflicting schedules
 - Artificial intelligence (AI) systems from data-driven companies like Facebook, TikTok, and Netflix
+
+# Types of visualizations
+
+
+Data analysts use specific charts to visualize quantitative and qualitative data. The following image contains common charts for visualizing these two types of data. Conceptual charts can show either quantitative or qualitative data. Take a moment to study them.
+
+![[2024-04-29 09.19.37 ole03.yourlearning.ibm.com 3498cf71ef62.png]]
+
+
+![[2024-04-29 09.20.51 ole03.yourlearning.ibm.com 7506435756b1.png]]
