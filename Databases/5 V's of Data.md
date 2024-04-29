@@ -36,3 +36,90 @@ Qualitative data:
 Is also called categorical data  
 Represents the characteristics, attributes, properties, and qualities of things  
 Describes data using language (rather than numbers), such as smell, location, color, texture, marital status, and so on
+
+
+# Data analytics answers questions
+
+
+In a constantly changing business environment, it can be hard to predict the next move. That’s where data analytics comes in. A successful data analytics initiative can provide a clear picture of where you are, where you have been, and where you should go.
+
+The information technology (IT) industry typically recognizes four types of data analytics:
+
+- Descriptive analytics
+- Diagnostic analytics
+- Predictive analytics
+- Prescriptive analytics 
+
+Each type of data analytics has a different goal and a different place in the data analysis process, and answers a specific question. Take a moment to view the following diagram, which clarifies the degree of complexity and added-value contribution for each of the four data analytics types.
+
+
+![[2024-04-29 08.48.38 ole03.yourlearning.ibm.com 56db9bc4e512.png]]
+### Descriptive analytics: What is happening?
+
+Descriptive analytics is the simplest and most common type of data analytics.
+
+Descriptive analytics answers the question, “What is happening?”. It provides a snapshot of business trends and patterns and uses historical and current data.
+
+Descriptive analytics manipulates raw data from multiple sources to give a data analyst valuable insights into the past and a view of key metrics within a business. 
+
+These findings might signal that something is right or wrong but not explain why. However, the findings can help to determine what the biggest issues are and where to start investigating!
+
+  
+
+Here are some examples of data used for descriptive analytics:
+
+- The number of subscribers for a service
+- Customer satisfaction survey data
+- Monthly revenue reports
+- Daily stock reports
+- Demographic data about a business’ customer population, for instance, data that indicates that 30% of customers are self-employed
+
+### Diagnostic analytics: Why is it happening?
+    
+After asking the question, “What is happening?”, the next step is to dive deeper and ask “why?”, such as,  “Why are trends and patterns happening?” This is where diagnostic analytics comes in.
+
+Diagnostic analytics takes the insights found from descriptive analytics and drills down to find the causes of specific problems.
+
+Businesses use of diagnostic analytics because it creates more connections between data and identifies patterns of behavior.
+
+  
+
+Here are some examples of diagnostic analytics:
+
+- A freight company investigates the cause of slow shipments in a certain region.
+- A healthcare company examines diagnoses and prescribed medications to identify the influence of medications.
+- An IT company analyzes server ticket data to identify a small number of servers causing the bulk of an organization’s service outages.
+
+### Predictive analytics: What is likely to happen in the future?
+    
+Predictive analytics is about forecasting. This type of analytics uses historical data to make predictions about the future. Whether it’s the likelihood of a future event, forecasting a quantifiable amount, or estimating a point in time at which something might happen – these are all done through predictive models.
+
+In a world of great uncertainty, being able to predict allows businesses to make better decisions.
+
+This type of analytics is more advanced and can often depend on machine learning and deep learning.
+
+  
+
+Here are some examples of diagnostic analytics:
+
+- A software company uses customer segmentation to determine sales leads.
+- An automotive manufacturer forecasts the failure rate of a specific vehicle part to determine recommended service actions.
+- A weather forecaster analyzes current weather conditions in one part of the world to determine future weather conditions in other parts of the world.
+
+### Prescriptive analytics: What should happen?
+    
+Prescriptive analytics combines the insight from all previous data analyses to determine a course of action to take to address a problem or make a decision.
+
+The purpose of prescriptive analytics is to prescribe what action to take to eliminate a future problem or take full advantage of a promising trend.
+
+Prescriptive analytics is typically used for a host of actions, versus an individual action. This requires a major commitment from businesses to put forth the strategy, effort, and resources. As technology continues to improve and more professionals are educated in data, more companies will enter this data-driven realm.
+
+Prescriptive analytics uses advanced tools and technologies, like machine learning, business rules, and algorithms. This makes prescriptive analytics sophisticated to implement and manage.
+
+  
+
+Here are some examples of prescriptive analytics:
+
+- A traffic application that helps people choose the best route home and considers the distance of each route, the speed at which one can travel on each road and, crucially, the current traffic constraints
+- An exam timetable that checks if students have conflicting schedules
+- Artificial intelligence (AI) systems from data-driven companies like Facebook, TikTok, and Netflix
