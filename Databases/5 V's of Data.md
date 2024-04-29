@@ -2,9 +2,9 @@
 tags: 
 author:
   - gitUserNamePlaceHolder
-Comments: Placeholder comment any thing else you want to mention about the document.
+Comments: Break this up.
 Purpose: This documentation discusses
-Status: 
+Status: Refinement
 Started: 2024-04-29
 EditDate: 
 Relates: 
@@ -133,3 +133,6 @@ Data analysts use specific charts to visualize quantitative and qualitative data
 
 
 ![[2024-04-29 09.20.51 ole03.yourlearning.ibm.com 7506435756b1.png]]
+
+
+![[2024-04-29 12.17.59 ole03.yourlearning.ibm.com bbc37cca3a46.png]]
