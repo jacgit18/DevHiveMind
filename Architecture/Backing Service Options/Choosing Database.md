@@ -22,7 +22,11 @@ Information can exist in both structured and unstructured forms. Refined informa
 
 Then you have Semi-structured data which is data that does not fit neatly into the traditional structured model (like relational databases with fixed schemas) but has some level of structure. It may contain elements of both structured and unstructured data.
 
+![[Pasted image 20240429084212.png]]
+
 Examples of semi-structured data include JSON (JavaScript Object Notation), XML (eXtensible Markup Language), and key-value pairs. These data formats allow for flexibility in representing information, and the structure can vary between different records. Databases that handle semi-structured data effectively are NoSQL databases. 
+
+[[5 V's of Data]]
 
 When selecting a database or determining the number of databases for your architecture, it's crucial to first identify the nature of your data—whether it's [[Industry Structured & Unstructured Data |structured or unstructured]]. Once this is clarified, you can narrow down your choices between SQL and NoSQL databases. For instance, if you anticipate dealing with a substantial amount of email data, opting for a NoSQL database becomes more likely.
 
