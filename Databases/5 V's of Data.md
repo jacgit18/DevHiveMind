@@ -136,3 +136,16 @@ Data analysts use specific charts to visualize quantitative and qualitative data
 
 
 ![[2024-04-29 12.17.59 ole03.yourlearning.ibm.com bbc37cca3a46.png]]
+
+
+Cross-Industry Standard Process for Data Mining
+
+![[2024-04-29 12.29.34 ole03.yourlearning.ibm.com d5aa41266def.png]]
+
+**Knowledge Discovery in Database**
+
+![[2024-04-29 12.32.39 ole03.yourlearning.ibm.com 70d109272946.png]]
+
+SEMMA 
+
+![[2024-04-29 12.35.41 ole03.yourlearning.ibm.com 978b0783f224.png]]
