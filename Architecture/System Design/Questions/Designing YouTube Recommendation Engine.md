@@ -528,6 +528,21 @@ ElastiCache ^BsSd6jtq
 
 Talk What service is stateful vs stateless ^e2sMgHlP
 
+Request Handled 
+
+personalized recommendations
+
+trending
+
+related content 
+ ^k9JopjXL
+
+Response 
+
+personalized recommendations with meta data
+
+ ^7wr2qVdE
+
 # Element Links
 cfVAGpj7: [[Architecture/System Design/Questions/Designing YouTube Recommendation Engine.md#Table 1]]
 TsXzxI5r: [[Architecture/System Design/Questions/Designing YouTube Recommendation Engine.md#Table 2]]
@@ -536,6 +551,7 @@ D6RNpTN3: [[Integration of AI and Machine Learning Services#Amazon Rekognition]]
 
 # Embedded files
 0e77320ba2cdfffa54ed944064dc676677a1c426: [[Github Actions.png]]
+d751345c2cc691e74f0ca6a58a00573821ffaf18: [[Pasted Image 20240504132918_569.jpg]]
 
 %%
 # Drawing
@@ -3815,8 +3831,8 @@ D6RNpTN3: [[Integration of AI and Machine Learning Services#Amazon Rekognition]]
 		},
 		{
 			"type": "ellipse",
-			"version": 1798,
-			"versionNonce": 459112430,
+			"version": 1799,
+			"versionNonce": 2133640853,
 			"isDeleted": false,
 			"id": "2IIbIsp3eopTrfWcuwVdP",
 			"fillStyle": "solid",
@@ -3846,9 +3862,13 @@ D6RNpTN3: [[Integration of AI and Machine Learning Services#Amazon Rekognition]]
 				{
 					"id": "ACDqpyxuesxKi_YA4tyJL",
 					"type": "arrow"
+				},
+				{
+					"id": "-WMaG9J0glrfmj1l6oTIk",
+					"type": "arrow"
 				}
 			],
-			"updated": 1714837937859,
+			"updated": 1714843667696,
 			"link": null,
 			"locked": false
 		},
@@ -3997,8 +4017,8 @@ D6RNpTN3: [[Integration of AI and Machine Learning Services#Amazon Rekognition]]
 		},
 		{
 			"type": "rectangle",
-			"version": 1798,
-			"versionNonce": 459794802,
+			"version": 1799,
+			"versionNonce": 1345285845,
 			"isDeleted": false,
 			"id": "qqM5WUbIRO5NAPFTe8Mho",
 			"fillStyle": "solid",
@@ -4021,8 +4041,13 @@ D6RNpTN3: [[Integration of AI and Machine Learning Services#Amazon Rekognition]]
 			],
 			"frameId": "vjQ13QAGqqwZLC97MoanI",
 			"roundness": null,
-			"boundElements": [],
-			"updated": 1714837937859,
+			"boundElements": [
+				{
+					"id": "vlXMA3a79fMl66YyLo9yj",
+					"type": "arrow"
+				}
+			],
+			"updated": 1714843494570,
 			"link": null,
 			"locked": false
 		},
@@ -7172,10 +7197,87 @@ D6RNpTN3: [[Integration of AI and Machine Learning Services#Amazon Rekognition]]
 			"lineHeight": 1.25
 		},
 		{
+			"id": "k9JopjXL",
+			"type": "text",
+			"x": 993.4356743524868,
+			"y": -1052.7199884061768,
+			"width": 285.35968017578125,
+			"height": 200,
+			"angle": 0,
+			"strokeColor": "#e03131",
+			"backgroundColor": "transparent",
+			"fillStyle": "solid",
+			"strokeWidth": 2,
+			"strokeStyle": "solid",
+			"roughness": 1,
+			"opacity": 100,
+			"groupIds": [],
+			"frameId": "vjQ13QAGqqwZLC97MoanI",
+			"roundness": null,
+			"seed": 2057456981,
+			"version": 173,
+			"versionNonce": 2114367509,
+			"isDeleted": false,
+			"boundElements": [
+				{
+					"id": "vlXMA3a79fMl66YyLo9yj",
+					"type": "arrow"
+				}
+			],
+			"updated": 1714843494569,
+			"link": null,
+			"locked": false,
+			"text": "Request Handled \n\npersonalized recommendations\n\ntrending\n\nrelated content \n",
+			"rawText": "Request Handled \n\npersonalized recommendations\n\ntrending\n\nrelated content \n",
+			"fontSize": 20,
+			"fontFamily": 1,
+			"textAlign": "left",
+			"verticalAlign": "top",
+			"containerId": null,
+			"originalText": "Request Handled \n\npersonalized recommendations\n\ntrending\n\nrelated content \n",
+			"lineHeight": 1.25
+		},
+		{
+			"id": "7wr2qVdE",
+			"type": "text",
+			"x": 1566.9650861171926,
+			"y": -1087.425870759118,
+			"width": 450.699462890625,
+			"height": 125,
+			"angle": 0,
+			"strokeColor": "#1971c2",
+			"backgroundColor": "transparent",
+			"fillStyle": "solid",
+			"strokeWidth": 2,
+			"strokeStyle": "solid",
+			"roughness": 1,
+			"opacity": 100,
+			"groupIds": [],
+			"frameId": "vjQ13QAGqqwZLC97MoanI",
+			"roundness": null,
+			"seed": 1959230869,
+			"version": 315,
+			"versionNonce": 1088954779,
+			"isDeleted": false,
+			"boundElements": null,
+			"updated": 1714843648837,
+			"link": null,
+			"locked": false,
+			"text": "Response \n\npersonalized recommendations with meta data\n\n",
+			"rawText": "Response \n\npersonalized recommendations with meta data\n\n",
+			"fontSize": 20,
+			"fontFamily": 1,
+			"textAlign": "left",
+			"verticalAlign": "top",
+			"containerId": null,
+			"originalText": "Response \n\npersonalized recommendations with meta data\n\n",
+			"lineHeight": 1.25
+		},
+		{
 			"id": "e2sMgHlP",
 			"type": "text",
-			"x": 2033.1435253250447,
-			"y": -1001.2147260010985,
+			"x": 978.4768586583789,
+			"y": -404.5480593344321,
 			"width": 436.3794250488281,
 			"height": 25,
 			"angle": 0,
@@ -7190,11 +7292,11 @@ D6RNpTN3: [[Integration of AI and Machine Learning Services#Amazon Rekognition]]
 			"frameId": "vjQ13QAGqqwZLC97MoanI",
 			"roundness": null,
 			"seed": 1174957653,
-			"version": 69,
-			"versionNonce": 1761386491,
+			"version": 311,
+			"versionNonce": 1560135739,
 			"isDeleted": false,
 			"boundElements": null,
-			"updated": 1714840535076,
+			"updated": 1714843771424,
 			"link": null,
 			"locked": false,
 			"text": "Talk What service is stateful vs stateless",
@@ -7206,6 +7308,102 @@ D6RNpTN3: [[Integration of AI and Machine Learning Services#Amazon Rekognition]]
 			"containerId": null,
 			"originalText": "Talk What service is stateful vs stateless",
 			"lineHeight": 1.25
+		},
+		{
+			"id": "vlXMA3a79fMl66YyLo9yj",
+			"type": "arrow",
+			"x": 1224.0239096466046,
+			"y": -840.9552825238238,
+			"width": 72.94117647058806,
+			"height": 42.352941176470495,
+			"angle": 0,
+			"strokeColor": "#e03131",
+			"backgroundColor": "transparent",
+			"fillStyle": "solid",
+			"strokeWidth": 2,
+			"strokeStyle": "solid",
+			"roughness": 1,
+			"opacity": 100,
+			"groupIds": [],
+			"frameId": "vjQ13QAGqqwZLC97MoanI",
+			"roundness": null,
+			"seed": 348209051,
+			"version": 46,
+			"versionNonce": 1312941429,
+			"isDeleted": false,
+			"boundElements": null,
+			"updated": 1714843494570,
+			"link": null,
+			"locked": false,
+			"points": [
+				[
+					0,
+					0
+				],
+				[
+					72.94117647058806,
+					42.352941176470495
+				]
+			],
+			"lastCommittedPoint": null,
+			"startBinding": {
+				"elementId": "k9JopjXL",
+				"focus": 0.33208821865862187,
+				"gap": 11.764705882352928
+			},
+			"endBinding": {
+				"elementId": "qqM5WUbIRO5NAPFTe8Mho",
+				"focus": 0.6658020699143613,
+				"gap": 13.713331330309302
+			},
+			"startArrowhead": null,
+			"endArrowhead": "arrow"
+		},
+		{
+			"id": "-WMaG9J0glrfmj1l6oTIk",
+			"type": "arrow",
+			"x": 1370.607242979938,
+			"y": -809.058223700294,
+			"width": 202.66666666666674,
+			"height": 169.33333333333337,
+			"angle": 0,
+			"strokeColor": "#1971c2",
+			"backgroundColor": "transparent",
+			"fillStyle": "solid",
+			"strokeWidth": 2,
+			"strokeStyle": "solid",
+			"roughness": 1,
+			"opacity": 100,
+			"groupIds": [],
+			"frameId": "vjQ13QAGqqwZLC97MoanI",
+			"roundness": null,
+			"seed": 594700251,
+			"version": 79,
+			"versionNonce": 2046768437,
+			"isDeleted": false,
+			"boundElements": null,
+			"updated": 1714843667696,
+			"link": null,
+			"locked": false,
+			"points": [
+				[
+					0,
+					0
+				],
+				[
+					202.66666666666674,
+					-169.33333333333337
+				]
+			],
+			"lastCommittedPoint": null,
+			"startBinding": {
+				"elementId": "2IIbIsp3eopTrfWcuwVdP",
+				"focus": -0.1693333882598148,
+				"gap": 13.165759809616453
+			},
+			"endBinding": null,
+			"startArrowhead": null,
+			"endArrowhead": "arrow"
 		},
 		{
 			"type": "frame",
@@ -18956,12 +19154,45 @@ D6RNpTN3: [[Integration of AI and Machine Learning Services#Amazon Rekognition]]
 			"containerId": null,
 			"originalText": "Overall architecture to breakdown maybe go by microservice then or start as a general whole \nand explore different components on each story board like once microservice \nis defined copy arch then focus on database stuff and replication strategies\nthen traffic management architecture   ",
 			"lineHeight": 1.25
+		},
+		{
+			"id": "BwnOKOTXYV8wzRHi98fJg",
+			"type": "image",
+			"x": 1901.463063085757,
+			"y": -943.3475124960538,
+			"width": 366.57407407407396,
+			"height": 455.45010066148956,
+			"angle": 0,
+			"strokeColor": "transparent",
+			"backgroundColor": "transparent",
+			"fillStyle": "solid",
+			"strokeWidth": 2,
+			"strokeStyle": "solid",
+			"roughness": 1,
+			"opacity": 100,
+			"groupIds": [],
+			"frameId": "vjQ13QAGqqwZLC97MoanI",
+			"roundness": null,
+			"seed": 1670347227,
+			"version": 261,
+			"versionNonce": 1036106619,
+			"isDeleted": false,
+			"boundElements": null,
+			"updated": 1714843768144,
+			"link": null,
+			"locked": false,
+			"status": "pending",
+			"fileId": "d751345c2cc691e74f0ca6a58a00573821ffaf18",
+			"scale": [
+				1,
+				1
+			]
 		}
 	],
 	"appState": {
 		"theme": "light",
 		"viewBackgroundColor": "#ffffff",
-		"currentItemStrokeColor": "#1e1e1e",
+		"currentItemStrokeColor": "#1971c2",
 		"currentItemBackgroundColor": "transparent",
 		"currentItemFillStyle": "solid",
 		"currentItemStrokeWidth": 2,
@@ -18973,10 +19204,10 @@ D6RNpTN3: [[Integration of AI and Machine Learning Services#Amazon Rekognition]]
 		"currentItemTextAlign": "left",
 		"currentItemStartArrowhead": null,
 		"currentItemEndArrowhead": "arrow",
-		"scrollX": 980.1898080082888,
-		"scrollY": 1757.4300037788762,
+		"scrollX": -909.1452050179003,
+		"scrollY": 1198.588198933394,
 		"zoom": {
-			"value": 0.45
+			"value": 1.0000000000000004
 		},
 		"currentItemRoundness": "sharp",
 		"gridSize": null,
