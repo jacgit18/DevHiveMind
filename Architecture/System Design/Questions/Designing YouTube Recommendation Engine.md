@@ -555,6 +555,8 @@ Kids ^qjYBMRTj
 
 Adults ^8PoHAsRh
 
+CQRs ^VAqdI717
+
 # Element Links
 cfVAGpj7: [[Architecture/System Design/Questions/Designing YouTube Recommendation Engine.md#Table 1]]
 TsXzxI5r: [[Architecture/System Design/Questions/Designing YouTube Recommendation Engine.md#Table 2]]
@@ -7487,6 +7489,42 @@ d751345c2cc691e74f0ca6a58a00573821ffaf18: [[Pasted Image 20240504132918_569.jpg]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Main service connects \nto most microservices\nso the rec service and \nother service outside of\nthis feature of focus ",
+			"lineHeight": 1.25
+		},
+		{
+			"id": "VAqdI717",
+			"type": "text",
+			"x": 1765.232743102074,
+			"y": -661.399103412901,
+			"width": 92.52001953125,
+			"height": 45,
+			"angle": 0,
+			"strokeColor": "#1971c2",
+			"backgroundColor": "transparent",
+			"fillStyle": "solid",
+			"strokeWidth": 2,
+			"strokeStyle": "solid",
+			"roughness": 1,
+			"opacity": 100,
+			"groupIds": [],
+			"frameId": "vjQ13QAGqqwZLC97MoanI",
+			"roundness": null,
+			"seed": 902081973,
+			"version": 11,
+			"versionNonce": 1660591707,
+			"isDeleted": false,
+			"boundElements": null,
+			"updated": 1714844893704,
+			"link": null,
+			"locked": false,
+			"text": "CQRs",
+			"rawText": "CQRs",
+			"fontSize": 36,
+			"fontFamily": 1,
+			"textAlign": "left",
+			"verticalAlign": "top",
+			"containerId": null,
+			"originalText": "CQRs",
 			"lineHeight": 1.25
 		},
 		{
@@ -20992,10 +21030,10 @@ d751345c2cc691e74f0ca6a58a00573821ffaf18: [[Pasted Image 20240504132918_569.jpg]
 		"currentItemTextAlign": "left",
 		"currentItemStartArrowhead": null,
 		"currentItemEndArrowhead": "arrow",
-		"scrollX": -1475.5112495936328,
-		"scrollY": 1201.7681370161854,
+		"scrollX": -731.8453474088278,
+		"scrollY": 1441.5386011484272,
 		"zoom": {
-			"value": 1.1211892990699386
+			"value": 0.8181830004156359
 		},
 		"currentItemRoundness": "sharp",
 		"gridSize": null,
