@@ -2101,8 +2101,8 @@ D6RNpTN3: [[Integration of AI and Machine Learning Services#Amazon Rekognition]]
 		},
 		{
 			"type": "ellipse",
-			"version": 827,
-			"versionNonce": 123322158,
+			"version": 828,
+			"versionNonce": 662333042,
 			"isDeleted": false,
 			"id": "z1UyFGgijam0uIYgmWi4N",
 			"fillStyle": "solid",
@@ -2119,7 +2119,8 @@ D6RNpTN3: [[Integration of AI and Machine Learning Services#Amazon Rekognition]]
 			"height": 107.83038982501878,
 			"seed": 85033210,
 			"groupIds": [
-				"WytssOIPzPgluhGpWK-jJ"
+				"WytssOIPzPgluhGpWK-jJ",
+				"kgTvb0fQ_JKJpYMav6Y-l"
 			],
 			"frameId": "vjQ13QAGqqwZLC97MoanI",
 			"roundness": null,
@@ -2129,14 +2130,14 @@ D6RNpTN3: [[Integration of AI and Machine Learning Services#Amazon Rekognition]]
 					"type": "arrow"
 				}
 			],
-			"updated": 1714834307096,
+			"updated": 1714837928758,
 			"link": null,
 			"locked": false
 		},
 		{
 			"type": "rectangle",
-			"version": 771,
-			"versionNonce": 141928814,
+			"version": 772,
+			"versionNonce": 1889202606,
 			"isDeleted": false,
 			"id": "v4kt-ARfpU8zcZlSeSWdc",
 			"fillStyle": "solid",
@@ -2154,7 +2155,8 @@ D6RNpTN3: [[Integration of AI and Machine Learning Services#Amazon Rekognition]]
 			"seed": 132862394,
 			"groupIds": [
 				"p4YneF8TK9VkjsgXibQEh",
-				"WytssOIPzPgluhGpWK-jJ"
+				"WytssOIPzPgluhGpWK-jJ",
+				"kgTvb0fQ_JKJpYMav6Y-l"
 			],
 			"frameId": "vjQ13QAGqqwZLC97MoanI",
 			"roundness": null,
@@ -2164,14 +2166,14 @@ D6RNpTN3: [[Integration of AI and Machine Learning Services#Amazon Rekognition]]
 					"type": "arrow"
 				}
 			],
-			"updated": 1714834307096,
+			"updated": 1714837928758,
 			"link": null,
 			"locked": false
 		},
 		{
 			"type": "rectangle",
-			"version": 744,
-			"versionNonce": 225486318,
+			"version": 745,
+			"versionNonce": 805881906,
 			"isDeleted": false,
 			"id": "DNLnuPc5vfs3UEnzU475h",
 			"fillStyle": "solid",
@@ -2189,19 +2191,20 @@ D6RNpTN3: [[Integration of AI and Machine Learning Services#Amazon Rekognition]]
 			"seed": 1489832570,
 			"groupIds": [
 				"p4YneF8TK9VkjsgXibQEh",
-				"WytssOIPzPgluhGpWK-jJ"
+				"WytssOIPzPgluhGpWK-jJ",
+				"kgTvb0fQ_JKJpYMav6Y-l"
 			],
 			"frameId": "vjQ13QAGqqwZLC97MoanI",
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1714834307096,
+			"updated": 1714837928758,
 			"link": null,
 			"locked": false
 		},
 		{
 			"type": "rectangle",
-			"version": 746,
-			"versionNonce": 1619114030,
+			"version": 747,
+			"versionNonce": 1206684654,
 			"isDeleted": false,
 			"id": "lHEiQXruuMpy6DbkJicwT",
 			"fillStyle": "solid",
@@ -2219,19 +2222,20 @@ D6RNpTN3: [[Integration of AI and Machine Learning Services#Amazon Rekognition]]
 			"seed": 1048161082,
 			"groupIds": [
 				"p4YneF8TK9VkjsgXibQEh",
-				"WytssOIPzPgluhGpWK-jJ"
+				"WytssOIPzPgluhGpWK-jJ",
+				"kgTvb0fQ_JKJpYMav6Y-l"
 			],
 			"frameId": "vjQ13QAGqqwZLC97MoanI",
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1714834307096,
+			"updated": 1714837928758,
 			"link": null,
 			"locked": false
 		},
 		{
 			"type": "rectangle",
-			"version": 755,
-			"versionNonce": 1278640750,
+			"version": 756,
+			"versionNonce": 1675948530,
 			"isDeleted": false,
 			"id": "Af6H46kDF1lTDMjpUz6Py",
 			"fillStyle": "solid",
@@ -2249,19 +2253,20 @@ D6RNpTN3: [[Integration of AI and Machine Learning Services#Amazon Rekognition]]
 			"seed": 794047482,
 			"groupIds": [
 				"p4YneF8TK9VkjsgXibQEh",
-				"WytssOIPzPgluhGpWK-jJ"
+				"WytssOIPzPgluhGpWK-jJ",
+				"kgTvb0fQ_JKJpYMav6Y-l"
 			],
 			"frameId": "vjQ13QAGqqwZLC97MoanI",
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1714834307096,
+			"updated": 1714837928758,
 			"link": null,
 			"locked": false
 		},
 		{
 			"type": "rectangle",
-			"version": 824,
-			"versionNonce": 1935148206,
+			"version": 825,
+			"versionNonce": 1854987822,
 			"isDeleted": false,
 			"id": "GpoeAwXE5dIBs0lEQQ9MZ",
 			"fillStyle": "solid",
@@ -2279,19 +2284,20 @@ D6RNpTN3: [[Integration of AI and Machine Learning Services#Amazon Rekognition]]
 			"seed": 1566549178,
 			"groupIds": [
 				"LxJ839wlTSjsWU1ZS7TV_",
-				"WytssOIPzPgluhGpWK-jJ"
+				"WytssOIPzPgluhGpWK-jJ",
+				"kgTvb0fQ_JKJpYMav6Y-l"
 			],
 			"frameId": "vjQ13QAGqqwZLC97MoanI",
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1714834307096,
+			"updated": 1714837928758,
 			"link": null,
 			"locked": false
 		},
 		{
 			"type": "rectangle",
-			"version": 798,
-			"versionNonce": 932134638,
+			"version": 799,
+			"versionNonce": 638968754,
 			"isDeleted": false,
 			"id": "LoXxNuAuIHesCBR90eobx",
 			"fillStyle": "solid",
@@ -2309,19 +2315,20 @@ D6RNpTN3: [[Integration of AI and Machine Learning Services#Amazon Rekognition]]
 			"seed": 1111424378,
 			"groupIds": [
 				"LxJ839wlTSjsWU1ZS7TV_",
-				"WytssOIPzPgluhGpWK-jJ"
+				"WytssOIPzPgluhGpWK-jJ",
+				"kgTvb0fQ_JKJpYMav6Y-l"
 			],
 			"frameId": "vjQ13QAGqqwZLC97MoanI",
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1714834307096,
+			"updated": 1714837928758,
 			"link": null,
 			"locked": false
 		},
 		{
 			"type": "rectangle",
-			"version": 800,
-			"versionNonce": 1566912814,
+			"version": 801,
+			"versionNonce": 1500571758,
 			"isDeleted": false,
 			"id": "ihF0DejI6D3YS3vFZxYxj",
 			"fillStyle": "solid",
@@ -2339,19 +2346,20 @@ D6RNpTN3: [[Integration of AI and Machine Learning Services#Amazon Rekognition]]
 			"seed": 724909626,
 			"groupIds": [
 				"LxJ839wlTSjsWU1ZS7TV_",
-				"WytssOIPzPgluhGpWK-jJ"
+				"WytssOIPzPgluhGpWK-jJ",
+				"kgTvb0fQ_JKJpYMav6Y-l"
 			],
 			"frameId": "vjQ13QAGqqwZLC97MoanI",
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1714834307096,
+			"updated": 1714837928758,
 			"link": null,
 			"locked": false
 		},
 		{
 			"type": "rectangle",
-			"version": 809,
-			"versionNonce": 809687918,
+			"version": 810,
+			"versionNonce": 1623367026,
 			"isDeleted": false,
 			"id": "RSl8HmQsQSbZTNHt-hF5v",
 			"fillStyle": "solid",
@@ -2369,19 +2377,20 @@ D6RNpTN3: [[Integration of AI and Machine Learning Services#Amazon Rekognition]]
 			"seed": 1160079098,
 			"groupIds": [
 				"LxJ839wlTSjsWU1ZS7TV_",
-				"WytssOIPzPgluhGpWK-jJ"
+				"WytssOIPzPgluhGpWK-jJ",
+				"kgTvb0fQ_JKJpYMav6Y-l"
 			],
 			"frameId": "vjQ13QAGqqwZLC97MoanI",
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1714834307096,
+			"updated": 1714837928758,
 			"link": null,
 			"locked": false
 		},
 		{
 			"type": "rectangle",
-			"version": 808,
-			"versionNonce": 644955566,
+			"version": 809,
+			"versionNonce": 2018880174,
 			"isDeleted": false,
 			"id": "XhkuetTLlCQdNfmWTLb5q",
 			"fillStyle": "solid",
@@ -2399,19 +2408,20 @@ D6RNpTN3: [[Integration of AI and Machine Learning Services#Amazon Rekognition]]
 			"seed": 680687546,
 			"groupIds": [
 				"zGQOOwYgSZxrUTURf6BMr",
-				"WytssOIPzPgluhGpWK-jJ"
+				"WytssOIPzPgluhGpWK-jJ",
+				"kgTvb0fQ_JKJpYMav6Y-l"
 			],
 			"frameId": "vjQ13QAGqqwZLC97MoanI",
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1714834307096,
+			"updated": 1714837928758,
 			"link": null,
 			"locked": false
 		},
 		{
 			"type": "rectangle",
-			"version": 782,
-			"versionNonce": 85546990,
+			"version": 783,
+			"versionNonce": 556932914,
 			"isDeleted": false,
 			"id": "nfpDZjuBSQiDUarex57Xz",
 			"fillStyle": "solid",
@@ -2429,19 +2439,20 @@ D6RNpTN3: [[Integration of AI and Machine Learning Services#Amazon Rekognition]]
 			"seed": 1704947834,
 			"groupIds": [
 				"zGQOOwYgSZxrUTURf6BMr",
-				"WytssOIPzPgluhGpWK-jJ"
+				"WytssOIPzPgluhGpWK-jJ",
+				"kgTvb0fQ_JKJpYMav6Y-l"
 			],
 			"frameId": "vjQ13QAGqqwZLC97MoanI",
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1714834307096,
+			"updated": 1714837928758,
 			"link": null,
 			"locked": false
 		},
 		{
 			"type": "rectangle",
-			"version": 784,
-			"versionNonce": 71576110,
+			"version": 785,
+			"versionNonce": 1508386030,
 			"isDeleted": false,
 			"id": "Rw-Xj8b22FJufKdd1r8he",
 			"fillStyle": "solid",
@@ -2459,19 +2470,20 @@ D6RNpTN3: [[Integration of AI and Machine Learning Services#Amazon Rekognition]]
 			"seed": 269439290,
 			"groupIds": [
 				"zGQOOwYgSZxrUTURf6BMr",
-				"WytssOIPzPgluhGpWK-jJ"
+				"WytssOIPzPgluhGpWK-jJ",
+				"kgTvb0fQ_JKJpYMav6Y-l"
 			],
 			"frameId": "vjQ13QAGqqwZLC97MoanI",
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1714834307096,
+			"updated": 1714837928758,
 			"link": null,
 			"locked": false
 		},
 		{
 			"type": "rectangle",
-			"version": 793,
-			"versionNonce": 1926935662,
+			"version": 794,
+			"versionNonce": 868968690,
 			"isDeleted": false,
 			"id": "XyufN6m3Rlo5jiHEdWfWX",
 			"fillStyle": "solid",
@@ -2489,19 +2501,20 @@ D6RNpTN3: [[Integration of AI and Machine Learning Services#Amazon Rekognition]]
 			"seed": 1262819834,
 			"groupIds": [
 				"zGQOOwYgSZxrUTURf6BMr",
-				"WytssOIPzPgluhGpWK-jJ"
+				"WytssOIPzPgluhGpWK-jJ",
+				"kgTvb0fQ_JKJpYMav6Y-l"
 			],
 			"frameId": "vjQ13QAGqqwZLC97MoanI",
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1714834307096,
+			"updated": 1714837928758,
 			"link": null,
 			"locked": false
 		},
 		{
 			"type": "rectangle",
-			"version": 825,
-			"versionNonce": 1520826030,
+			"version": 826,
+			"versionNonce": 1337022254,
 			"isDeleted": false,
 			"id": "OKFEXmSuyTR0BinTKjQVn",
 			"fillStyle": "solid",
@@ -2519,19 +2532,20 @@ D6RNpTN3: [[Integration of AI and Machine Learning Services#Amazon Rekognition]]
 			"seed": 1447283386,
 			"groupIds": [
 				"QVLpSpvUPLL22XEARWqLF",
-				"WytssOIPzPgluhGpWK-jJ"
+				"WytssOIPzPgluhGpWK-jJ",
+				"kgTvb0fQ_JKJpYMav6Y-l"
 			],
 			"frameId": "vjQ13QAGqqwZLC97MoanI",
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1714834307096,
+			"updated": 1714837928758,
 			"link": null,
 			"locked": false
 		},
 		{
 			"type": "rectangle",
-			"version": 799,
-			"versionNonce": 609153262,
+			"version": 800,
+			"versionNonce": 1075149490,
 			"isDeleted": false,
 			"id": "g__0_au0EK5jFSGPp3BP1",
 			"fillStyle": "solid",
@@ -2549,19 +2563,20 @@ D6RNpTN3: [[Integration of AI and Machine Learning Services#Amazon Rekognition]]
 			"seed": 397304698,
 			"groupIds": [
 				"QVLpSpvUPLL22XEARWqLF",
-				"WytssOIPzPgluhGpWK-jJ"
+				"WytssOIPzPgluhGpWK-jJ",
+				"kgTvb0fQ_JKJpYMav6Y-l"
 			],
 			"frameId": "vjQ13QAGqqwZLC97MoanI",
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1714834307096,
+			"updated": 1714837928758,
 			"link": null,
 			"locked": false
 		},
 		{
 			"type": "rectangle",
-			"version": 801,
-			"versionNonce": 996057902,
+			"version": 802,
+			"versionNonce": 303710574,
 			"isDeleted": false,
 			"id": "zcKyfZtuCg2YU4SM4xkMf",
 			"fillStyle": "solid",
@@ -2579,19 +2594,20 @@ D6RNpTN3: [[Integration of AI and Machine Learning Services#Amazon Rekognition]]
 			"seed": 700965946,
 			"groupIds": [
 				"QVLpSpvUPLL22XEARWqLF",
-				"WytssOIPzPgluhGpWK-jJ"
+				"WytssOIPzPgluhGpWK-jJ",
+				"kgTvb0fQ_JKJpYMav6Y-l"
 			],
 			"frameId": "vjQ13QAGqqwZLC97MoanI",
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1714834307096,
+			"updated": 1714837928758,
 			"link": null,
 			"locked": false
 		},
 		{
 			"type": "rectangle",
-			"version": 810,
-			"versionNonce": 842927470,
+			"version": 811,
+			"versionNonce": 1689736306,
 			"isDeleted": false,
 			"id": "x60jMgyreU2bGhTUnQy8r",
 			"fillStyle": "solid",
@@ -2609,19 +2625,20 @@ D6RNpTN3: [[Integration of AI and Machine Learning Services#Amazon Rekognition]]
 			"seed": 1718832378,
 			"groupIds": [
 				"QVLpSpvUPLL22XEARWqLF",
-				"WytssOIPzPgluhGpWK-jJ"
+				"WytssOIPzPgluhGpWK-jJ",
+				"kgTvb0fQ_JKJpYMav6Y-l"
 			],
 			"frameId": "vjQ13QAGqqwZLC97MoanI",
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1714834307096,
+			"updated": 1714837928758,
 			"link": null,
 			"locked": false
 		},
 		{
 			"type": "text",
-			"version": 731,
-			"versionNonce": 1714827182,
+			"version": 732,
+			"versionNonce": 1684792238,
 			"isDeleted": false,
 			"id": "nm1VEi3v",
 			"fillStyle": "solid",
@@ -2637,7 +2654,9 @@ D6RNpTN3: [[Integration of AI and Machine Learning Services#Amazon Rekognition]]
 			"width": 97.05978393554688,
 			"height": 71.88692655001252,
 			"seed": 1932762554,
-			"groupIds": [],
+			"groupIds": [
+				"kgTvb0fQ_JKJpYMav6Y-l"
+			],
 			"frameId": "vjQ13QAGqqwZLC97MoanI",
 			"roundness": null,
 			"boundElements": [
@@ -2646,7 +2665,7 @@ D6RNpTN3: [[Integration of AI and Machine Learning Services#Amazon Rekognition]]
 					"type": "arrow"
 				}
 			],
-			"updated": 1714834307096,
+			"updated": 1714837928758,
 			"link": null,
 			"locked": false,
 			"fontSize": 28.754770620005008,
@@ -3794,8 +3813,8 @@ D6RNpTN3: [[Integration of AI and Machine Learning Services#Amazon Rekognition]]
 		},
 		{
 			"type": "ellipse",
-			"version": 1797,
-			"versionNonce": 450365294,
+			"version": 1798,
+			"versionNonce": 459112430,
 			"isDeleted": false,
 			"id": "2IIbIsp3eopTrfWcuwVdP",
 			"fillStyle": "solid",
@@ -3812,7 +3831,8 @@ D6RNpTN3: [[Integration of AI and Machine Learning Services#Amazon Rekognition]]
 			"height": 94.18158567774937,
 			"seed": 118707520,
 			"groupIds": [
-				"67fpALgxVYduuCkmuC0iK"
+				"67fpALgxVYduuCkmuC0iK",
+				"-XkwePvVa1pUmeUTSLEfi"
 			],
 			"frameId": "vjQ13QAGqqwZLC97MoanI",
 			"roundness": null,
@@ -3826,14 +3846,14 @@ D6RNpTN3: [[Integration of AI and Machine Learning Services#Amazon Rekognition]]
 					"type": "arrow"
 				}
 			],
-			"updated": 1714834307096,
+			"updated": 1714837937859,
 			"link": null,
 			"locked": false
 		},
 		{
 			"type": "rectangle",
-			"version": 1747,
-			"versionNonce": 1683543598,
+			"version": 1748,
+			"versionNonce": 1932344818,
 			"isDeleted": false,
 			"id": "Vc-m_YZk8RA7Ni4Wg_l1Y",
 			"fillStyle": "solid",
@@ -3851,7 +3871,8 @@ D6RNpTN3: [[Integration of AI and Machine Learning Services#Amazon Rekognition]]
 			"seed": 209104192,
 			"groupIds": [
 				"oEmDoS4cmktU5FLrAstK0",
-				"67fpALgxVYduuCkmuC0iK"
+				"67fpALgxVYduuCkmuC0iK",
+				"-XkwePvVa1pUmeUTSLEfi"
 			],
 			"frameId": "vjQ13QAGqqwZLC97MoanI",
 			"roundness": null,
@@ -3865,14 +3886,14 @@ D6RNpTN3: [[Integration of AI and Machine Learning Services#Amazon Rekognition]]
 					"type": "arrow"
 				}
 			],
-			"updated": 1714834307096,
+			"updated": 1714837937859,
 			"link": null,
 			"locked": false
 		},
 		{
 			"type": "rectangle",
-			"version": 1720,
-			"versionNonce": 1132060782,
+			"version": 1721,
+			"versionNonce": 264458798,
 			"isDeleted": false,
 			"id": "LJHIdDOwCgWwF1o2BUI5K",
 			"fillStyle": "solid",
@@ -3890,7 +3911,8 @@ D6RNpTN3: [[Integration of AI and Machine Learning Services#Amazon Rekognition]]
 			"seed": 1001325888,
 			"groupIds": [
 				"oEmDoS4cmktU5FLrAstK0",
-				"67fpALgxVYduuCkmuC0iK"
+				"67fpALgxVYduuCkmuC0iK",
+				"-XkwePvVa1pUmeUTSLEfi"
 			],
 			"frameId": "vjQ13QAGqqwZLC97MoanI",
 			"roundness": null,
@@ -3900,14 +3922,14 @@ D6RNpTN3: [[Integration of AI and Machine Learning Services#Amazon Rekognition]]
 					"type": "arrow"
 				}
 			],
-			"updated": 1714834307097,
+			"updated": 1714837937859,
 			"link": null,
 			"locked": false
 		},
 		{
 			"type": "rectangle",
-			"version": 1719,
-			"versionNonce": 645898926,
+			"version": 1720,
+			"versionNonce": 1047834546,
 			"isDeleted": false,
 			"id": "0jGSBLOoR8dm_27jU4rwB",
 			"fillStyle": "solid",
@@ -3925,19 +3947,20 @@ D6RNpTN3: [[Integration of AI and Machine Learning Services#Amazon Rekognition]]
 			"seed": 303848768,
 			"groupIds": [
 				"oEmDoS4cmktU5FLrAstK0",
-				"67fpALgxVYduuCkmuC0iK"
+				"67fpALgxVYduuCkmuC0iK",
+				"-XkwePvVa1pUmeUTSLEfi"
 			],
 			"frameId": "vjQ13QAGqqwZLC97MoanI",
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1714834307097,
+			"updated": 1714837937859,
 			"link": null,
 			"locked": false
 		},
 		{
 			"type": "rectangle",
-			"version": 1729,
-			"versionNonce": 538123502,
+			"version": 1730,
+			"versionNonce": 339008622,
 			"isDeleted": false,
 			"id": "_6j06czfMwVBinmMec1N2",
 			"fillStyle": "solid",
@@ -3955,7 +3978,8 @@ D6RNpTN3: [[Integration of AI and Machine Learning Services#Amazon Rekognition]]
 			"seed": 1629402432,
 			"groupIds": [
 				"oEmDoS4cmktU5FLrAstK0",
-				"67fpALgxVYduuCkmuC0iK"
+				"67fpALgxVYduuCkmuC0iK",
+				"-XkwePvVa1pUmeUTSLEfi"
 			],
 			"frameId": "vjQ13QAGqqwZLC97MoanI",
 			"roundness": null,
@@ -3965,14 +3989,14 @@ D6RNpTN3: [[Integration of AI and Machine Learning Services#Amazon Rekognition]]
 					"type": "arrow"
 				}
 			],
-			"updated": 1714834307097,
+			"updated": 1714837937859,
 			"link": null,
 			"locked": false
 		},
 		{
 			"type": "rectangle",
-			"version": 1797,
-			"versionNonce": 96292654,
+			"version": 1798,
+			"versionNonce": 459794802,
 			"isDeleted": false,
 			"id": "qqM5WUbIRO5NAPFTe8Mho",
 			"fillStyle": "solid",
@@ -3990,19 +4014,20 @@ D6RNpTN3: [[Integration of AI and Machine Learning Services#Amazon Rekognition]]
 			"seed": 1310068032,
 			"groupIds": [
 				"wnGLlyd4XvVSv1b7L8mg2",
-				"67fpALgxVYduuCkmuC0iK"
+				"67fpALgxVYduuCkmuC0iK",
+				"-XkwePvVa1pUmeUTSLEfi"
 			],
 			"frameId": "vjQ13QAGqqwZLC97MoanI",
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1714834307097,
+			"updated": 1714837937859,
 			"link": null,
 			"locked": false
 		},
 		{
 			"type": "rectangle",
-			"version": 1771,
-			"versionNonce": 333920622,
+			"version": 1772,
+			"versionNonce": 511385262,
 			"isDeleted": false,
 			"id": "dc9LtKCoz7BbkWxr9_Cvy",
 			"fillStyle": "solid",
@@ -4020,19 +4045,20 @@ D6RNpTN3: [[Integration of AI and Machine Learning Services#Amazon Rekognition]]
 			"seed": 1382180160,
 			"groupIds": [
 				"wnGLlyd4XvVSv1b7L8mg2",
-				"67fpALgxVYduuCkmuC0iK"
+				"67fpALgxVYduuCkmuC0iK",
+				"-XkwePvVa1pUmeUTSLEfi"
 			],
 			"frameId": "vjQ13QAGqqwZLC97MoanI",
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1714834307097,
+			"updated": 1714837937859,
 			"link": null,
 			"locked": false
 		},
 		{
 			"type": "rectangle",
-			"version": 1774,
-			"versionNonce": 299490222,
+			"version": 1775,
+			"versionNonce": 1900931890,
 			"isDeleted": false,
 			"id": "TQWSiMBHBF8A6SW45dbYD",
 			"fillStyle": "solid",
@@ -4050,7 +4076,8 @@ D6RNpTN3: [[Integration of AI and Machine Learning Services#Amazon Rekognition]]
 			"seed": 996392256,
 			"groupIds": [
 				"wnGLlyd4XvVSv1b7L8mg2",
-				"67fpALgxVYduuCkmuC0iK"
+				"67fpALgxVYduuCkmuC0iK",
+				"-XkwePvVa1pUmeUTSLEfi"
 			],
 			"frameId": "vjQ13QAGqqwZLC97MoanI",
 			"roundness": null,
@@ -4060,14 +4087,14 @@ D6RNpTN3: [[Integration of AI and Machine Learning Services#Amazon Rekognition]]
 					"type": "arrow"
 				}
 			],
-			"updated": 1714834307097,
+			"updated": 1714837937859,
 			"link": null,
 			"locked": false
 		},
 		{
 			"type": "rectangle",
-			"version": 1782,
-			"versionNonce": 1975399918,
+			"version": 1783,
+			"versionNonce": 54466798,
 			"isDeleted": false,
 			"id": "p06VNb8utGT11NTWPpQs3",
 			"fillStyle": "solid",
@@ -4085,19 +4112,20 @@ D6RNpTN3: [[Integration of AI and Machine Learning Services#Amazon Rekognition]]
 			"seed": 712643904,
 			"groupIds": [
 				"wnGLlyd4XvVSv1b7L8mg2",
-				"67fpALgxVYduuCkmuC0iK"
+				"67fpALgxVYduuCkmuC0iK",
+				"-XkwePvVa1pUmeUTSLEfi"
 			],
 			"frameId": "vjQ13QAGqqwZLC97MoanI",
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1714834307097,
+			"updated": 1714837937859,
 			"link": null,
 			"locked": false
 		},
 		{
 			"type": "rectangle",
-			"version": 1782,
-			"versionNonce": 144525358,
+			"version": 1783,
+			"versionNonce": 646821106,
 			"isDeleted": false,
 			"id": "nt0tUhmDkHiC8N03EPhfs",
 			"fillStyle": "solid",
@@ -4115,7 +4143,8 @@ D6RNpTN3: [[Integration of AI and Machine Learning Services#Amazon Rekognition]]
 			"seed": 352677184,
 			"groupIds": [
 				"uVL_5NaUzQlES-55BEaWu",
-				"67fpALgxVYduuCkmuC0iK"
+				"67fpALgxVYduuCkmuC0iK",
+				"-XkwePvVa1pUmeUTSLEfi"
 			],
 			"frameId": "vjQ13QAGqqwZLC97MoanI",
 			"roundness": null,
@@ -4125,14 +4154,14 @@ D6RNpTN3: [[Integration of AI and Machine Learning Services#Amazon Rekognition]]
 					"type": "arrow"
 				}
 			],
-			"updated": 1714834307097,
+			"updated": 1714837937859,
 			"link": null,
 			"locked": false
 		},
 		{
 			"type": "rectangle",
-			"version": 1755,
-			"versionNonce": 1439667374,
+			"version": 1756,
+			"versionNonce": 436849454,
 			"isDeleted": false,
 			"id": "7uamUervLGxKbl9MhU8xw",
 			"fillStyle": "solid",
@@ -4150,19 +4179,20 @@ D6RNpTN3: [[Integration of AI and Machine Learning Services#Amazon Rekognition]]
 			"seed": 1147520320,
 			"groupIds": [
 				"uVL_5NaUzQlES-55BEaWu",
-				"67fpALgxVYduuCkmuC0iK"
+				"67fpALgxVYduuCkmuC0iK",
+				"-XkwePvVa1pUmeUTSLEfi"
 			],
 			"frameId": "vjQ13QAGqqwZLC97MoanI",
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1714834307097,
+			"updated": 1714837937859,
 			"link": null,
 			"locked": false
 		},
 		{
 			"type": "rectangle",
-			"version": 1757,
-			"versionNonce": 76861166,
+			"version": 1758,
+			"versionNonce": 1018054322,
 			"isDeleted": false,
 			"id": "i1kLhgOavjeI1ftLKE036",
 			"fillStyle": "solid",
@@ -4180,19 +4210,20 @@ D6RNpTN3: [[Integration of AI and Machine Learning Services#Amazon Rekognition]]
 			"seed": 1442520384,
 			"groupIds": [
 				"uVL_5NaUzQlES-55BEaWu",
-				"67fpALgxVYduuCkmuC0iK"
+				"67fpALgxVYduuCkmuC0iK",
+				"-XkwePvVa1pUmeUTSLEfi"
 			],
 			"frameId": "vjQ13QAGqqwZLC97MoanI",
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1714834307097,
+			"updated": 1714837937859,
 			"link": null,
 			"locked": false
 		},
 		{
 			"type": "rectangle",
-			"version": 1766,
-			"versionNonce": 322486574,
+			"version": 1767,
+			"versionNonce": 1631860078,
 			"isDeleted": false,
 			"id": "UgV9c0Agj4k2AmZtpeqQJ",
 			"fillStyle": "solid",
@@ -4210,19 +4241,20 @@ D6RNpTN3: [[Integration of AI and Machine Learning Services#Amazon Rekognition]]
 			"seed": 992310592,
 			"groupIds": [
 				"uVL_5NaUzQlES-55BEaWu",
-				"67fpALgxVYduuCkmuC0iK"
+				"67fpALgxVYduuCkmuC0iK",
+				"-XkwePvVa1pUmeUTSLEfi"
 			],
 			"frameId": "vjQ13QAGqqwZLC97MoanI",
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1714834307097,
+			"updated": 1714837937859,
 			"link": null,
 			"locked": false
 		},
 		{
 			"type": "rectangle",
-			"version": 1799,
-			"versionNonce": 86272878,
+			"version": 1800,
+			"versionNonce": 1817616498,
 			"isDeleted": false,
 			"id": "4hq7vnIrn23EvX-smh02y",
 			"fillStyle": "solid",
@@ -4240,19 +4272,20 @@ D6RNpTN3: [[Integration of AI and Machine Learning Services#Amazon Rekognition]]
 			"seed": 960810304,
 			"groupIds": [
 				"yUIipkBZN6ySxGgq_EMpi",
-				"67fpALgxVYduuCkmuC0iK"
+				"67fpALgxVYduuCkmuC0iK",
+				"-XkwePvVa1pUmeUTSLEfi"
 			],
 			"frameId": "vjQ13QAGqqwZLC97MoanI",
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1714834307097,
+			"updated": 1714837937859,
 			"link": null,
 			"locked": false
 		},
 		{
 			"type": "rectangle",
-			"version": 1774,
-			"versionNonce": 144756142,
+			"version": 1775,
+			"versionNonce": 574052270,
 			"isDeleted": false,
 			"id": "n-ckNLwdKFypMUmFPTZW7",
 			"fillStyle": "solid",
@@ -4270,19 +4303,20 @@ D6RNpTN3: [[Integration of AI and Machine Learning Services#Amazon Rekognition]]
 			"seed": 1773741376,
 			"groupIds": [
 				"yUIipkBZN6ySxGgq_EMpi",
-				"67fpALgxVYduuCkmuC0iK"
+				"67fpALgxVYduuCkmuC0iK",
+				"-XkwePvVa1pUmeUTSLEfi"
 			],
 			"frameId": "vjQ13QAGqqwZLC97MoanI",
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1714834307097,
+			"updated": 1714837937859,
 			"link": null,
 			"locked": false
 		},
 		{
 			"type": "rectangle",
-			"version": 1774,
-			"versionNonce": 450291694,
+			"version": 1775,
+			"versionNonce": 1095615026,
 			"isDeleted": false,
 			"id": "dQqPM_0mOBGzfeYU5S_sm",
 			"fillStyle": "solid",
@@ -4300,19 +4334,20 @@ D6RNpTN3: [[Integration of AI and Machine Learning Services#Amazon Rekognition]]
 			"seed": 971144512,
 			"groupIds": [
 				"yUIipkBZN6ySxGgq_EMpi",
-				"67fpALgxVYduuCkmuC0iK"
+				"67fpALgxVYduuCkmuC0iK",
+				"-XkwePvVa1pUmeUTSLEfi"
 			],
 			"frameId": "vjQ13QAGqqwZLC97MoanI",
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1714834307097,
+			"updated": 1714837937859,
 			"link": null,
 			"locked": false
 		},
 		{
 			"type": "rectangle",
-			"version": 1783,
-			"versionNonce": 735033902,
+			"version": 1784,
+			"versionNonce": 353120750,
 			"isDeleted": false,
 			"id": "7GGbwkpjDghuz3wcCHAtN",
 			"fillStyle": "solid",
@@ -4330,19 +4365,20 @@ D6RNpTN3: [[Integration of AI and Machine Learning Services#Amazon Rekognition]]
 			"seed": 1797313856,
 			"groupIds": [
 				"yUIipkBZN6ySxGgq_EMpi",
-				"67fpALgxVYduuCkmuC0iK"
+				"67fpALgxVYduuCkmuC0iK",
+				"-XkwePvVa1pUmeUTSLEfi"
 			],
 			"frameId": "vjQ13QAGqqwZLC97MoanI",
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1714834307097,
+			"updated": 1714837937859,
 			"link": null,
 			"locked": false
 		},
 		{
 			"type": "text",
-			"version": 1787,
-			"versionNonce": 1114915950,
+			"version": 1788,
+			"versionNonce": 914009074,
 			"isDeleted": false,
 			"id": "a5fEmhU7",
 			"fillStyle": "solid",
@@ -4358,7 +4394,9 @@ D6RNpTN3: [[Integration of AI and Machine Learning Services#Amazon Rekognition]]
 			"width": 203.43548583984375,
 			"height": 62.78772378516625,
 			"seed": 315895104,
-			"groupIds": [],
+			"groupIds": [
+				"-XkwePvVa1pUmeUTSLEfi"
+			],
 			"frameId": "vjQ13QAGqqwZLC97MoanI",
 			"roundness": null,
 			"boundElements": [
@@ -4367,7 +4405,7 @@ D6RNpTN3: [[Integration of AI and Machine Learning Services#Amazon Rekognition]]
 					"type": "arrow"
 				}
 			],
-			"updated": 1714834307097,
+			"updated": 1714837937860,
 			"link": null,
 			"locked": false,
 			"fontSize": 25.1150895140665,
@@ -26331,10 +26369,10 @@ D6RNpTN3: [[Integration of AI and Machine Learning Services#Amazon Rekognition]]
 		"currentItemTextAlign": "left",
 		"currentItemStartArrowhead": null,
 		"currentItemEndArrowhead": "arrow",
-		"scrollX": 1242.898301547898,
-		"scrollY": 1474.4951619522724,
+		"scrollX": 582.7395713891666,
+		"scrollY": 1653.1955587776697,
 		"zoom": {
-			"value": 0.35000000000000003
+			"value": 0.45
 		},
 		"currentItemRoundness": "sharp",
 		"gridSize": null,
