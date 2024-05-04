@@ -72,6 +72,7 @@ Assume we have a Active Userbase of 200,000,000
 #### Storage
 You should be concerned with writes here only because we need to know how much data we need to store.
 
+microservice
 ##### Writes
 > POST, PUT, DELETE
 
