@@ -112,7 +112,7 @@ Let's explore how these architectural styles affect key components:
 
 
 ## Specialized Operations
-11. **CQRS (Command Query Responsibility Segregation):**  
+11. **[[_Command and Query Responsibility Segregation.canvas|CQRS]] (Command Query Responsibility Segregation):**  
 	- **Components:**  
 		- Separates read and write operations, using different components for each.  
 	- **Impact:**  
