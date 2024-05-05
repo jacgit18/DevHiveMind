@@ -652,6 +652,10 @@ Data governance ^iOvAu0pI
 
 Data governance ^LHay83nD
 
+Data governance ^NOpoPKix
+
+Data governance ^AfCZPz6E
+
 # Element Links
 cfVAGpj7: [[Architecture/System Design/Questions/Designing YouTube Recommendation Engine.md#Table 1]]
 TsXzxI5r: [[Architecture/System Design/Questions/Designing YouTube Recommendation Engine.md#Table 2]]
@@ -15547,6 +15551,78 @@ d751345c2cc691e74f0ca6a58a00573821ffaf18: [[Pasted Image 20240504132918_569.jpg]
 			"isDeleted": false,
 			"boundElements": null,
 			"updated": 1714934206214,
+			"link": null,
+			"locked": false,
+			"text": "Data governance",
+			"rawText": "Data governance",
+			"fontSize": 52.00000000000001,
+			"fontFamily": 1,
+			"textAlign": "left",
+			"verticalAlign": "top",
+			"containerId": null,
+			"originalText": "Data governance",
+			"lineHeight": 1.25
+		},
+		{
+			"id": "AfCZPz6E",
+			"type": "text",
+			"x": -1046.4264886827737,
+			"y": -270.5160603718733,
+			"width": 435.9681396484372,
+			"height": 64.99999999999996,
+			"angle": 0,
+			"strokeColor": "#1971c2",
+			"backgroundColor": "transparent",
+			"fillStyle": "solid",
+			"strokeWidth": 2,
+			"strokeStyle": "solid",
+			"roughness": 1,
+			"opacity": 100,
+			"groupIds": [],
+			"frameId": "ESidNTlLbrCl4hZ0PJBBY",
+			"roundness": null,
+			"seed": 2072797979,
+			"version": 129,
+			"versionNonce": 2063937717,
+			"isDeleted": false,
+			"boundElements": null,
+			"updated": 1714939559756,
+			"link": null,
+			"locked": false,
+			"text": "Data governance",
+			"rawText": "Data governance",
+			"fontSize": 52.00000000000001,
+			"fontFamily": 1,
+			"textAlign": "left",
+			"verticalAlign": "top",
+			"containerId": null,
+			"originalText": "Data governance",
+			"lineHeight": 1.25
+		},
+		{
+			"id": "NOpoPKix",
+			"type": "text",
+			"x": 1861.0735113172293,
+			"y": -1228.0160603718741,
+			"width": 435.9681396484372,
+			"height": 64.99999999999996,
+			"angle": 0,
+			"strokeColor": "#1971c2",
+			"backgroundColor": "transparent",
+			"fillStyle": "solid",
+			"strokeWidth": 2,
+			"strokeStyle": "solid",
+			"roughness": 1,
+			"opacity": 100,
+			"groupIds": [],
+			"frameId": "vjQ13QAGqqwZLC97MoanI",
+			"roundness": null,
+			"seed": 1457867419,
+			"version": 131,
+			"versionNonce": 1916307445,
+			"isDeleted": false,
+			"boundElements": null,
+			"updated": 1714939532255,
 			"link": null,
 			"locked": false,
 			"text": "Data governance",
@@ -31650,7 +31726,7 @@ d751345c2cc691e74f0ca6a58a00573821ffaf18: [[Pasted Image 20240504132918_569.jpg]
 		"currentItemStartArrowhead": null,
 		"currentItemEndArrowhead": "arrow",
 		"scrollX": 1590.0369572270256,
-		"scrollY": 1722.030305025325,
+		"scrollY": 2022.0303050253253,
 		"zoom": {
 			"value": 0.39999999999999963
 		},
