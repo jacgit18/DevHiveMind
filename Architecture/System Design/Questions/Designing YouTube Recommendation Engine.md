@@ -555,7 +555,12 @@ Kids ^qjYBMRTj
 
 Adults ^8PoHAsRh
 
-CQRs ^VAqdI717
+CQRs read specific
+service 
+
+
+
+ ^VAqdI717
 
 # Element Links
 cfVAGpj7: [[Architecture/System Design/Questions/Designing YouTube Recommendation Engine.md#Table 1]]
@@ -7494,10 +7499,10 @@ d751345c2cc691e74f0ca6a58a00573821ffaf18: [[Pasted Image 20240504132918_569.jpg]
 		{
 			"id": "VAqdI717",
 			"type": "text",
-			"x": 1765.232743102074,
-			"y": -661.399103412901,
-			"width": 92.52001953125,
-			"height": 45,
+			"x": 1679.677311170049,
+			"y": -608.8436237975142,
+			"width": 310.76806640625,
+			"height": 250.93336088372,
 			"angle": 0,
 			"strokeColor": "#1971c2",
 			"backgroundColor": "transparent",
@@ -7510,21 +7515,21 @@ d751345c2cc691e74f0ca6a58a00573821ffaf18: [[Pasted Image 20240504132918_569.jpg]
 			"frameId": "vjQ13QAGqqwZLC97MoanI",
 			"roundness": null,
 			"seed": 902081973,
-			"version": 11,
-			"versionNonce": 1660591707,
+			"version": 335,
+			"versionNonce": 1694109723,
 			"isDeleted": false,
 			"boundElements": null,
-			"updated": 1714844893704,
+			"updated": 1714916342708,
 			"link": null,
 			"locked": false,
-			"text": "CQRs",
-			"rawText": "CQRs",
-			"fontSize": 36,
+			"text": "CQRs read specific\nservice \n\n\n\n",
+			"rawText": "CQRs read specific\nservice \n\n\n\n",
+			"fontSize": 33.45778145116267,
 			"fontFamily": 1,
 			"textAlign": "left",
 			"verticalAlign": "top",
 			"containerId": null,
-			"originalText": "CQRs",
+			"originalText": "CQRs read specific\nservice \n\n\n\n",
 			"lineHeight": 1.25
 		},
 		{
