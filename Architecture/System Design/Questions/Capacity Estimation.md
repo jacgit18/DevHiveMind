@@ -41,6 +41,10 @@ After developing schema you can define general feature like below following a ro
 ##### Writes
 > POST, PUT, DELETE
 
+microservice CQRS
+
+**Simple math:** 14% of 50 just through reverse so 50% of 14 which is 7 
+
 As a users we want to:
 - Post Comment
 - Post Like
