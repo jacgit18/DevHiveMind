@@ -244,26 +244,28 @@ doesn't need to be cloud solution like AWS
 ==⚠  Switch to EXCALIDRAW VIEW in the MORE OPTIONS menu of this document. ⚠==
 
 
-# Text Elements
+# Excalidraw Data
+## Text Elements
 User Table ^zmns1Vak
 
-# Element Links
+## Element Links
 cqasGqqJ: [[_System Design Template#Table 1]]
 Mf9OBUwN: [[Architecture/System Design/Questions/Designing YouTube Upload.md#Table User]]
 gPBXehTo: [[Architecture/System Design/Questions/Designing YouTube Upload.md#Table Region]]
 
 %%
-# Drawing
+## Drawing
 ```json
 {
 	"type": "excalidraw",
 	"version": 2,
-	"source": "https://github.com/zsviczian/obsidian-excalidraw-plugin/releases/tag/2.1.4",
+	"source": "https://github.com/zsviczian/obsidian-excalidraw-plugin/releases/tag/2.2.2",
 	"elements": [
 		{
 			"type": "embeddable",
-			"version": 775,
-			"versionNonce": 813015082,
+			"version": 777,
+			"versionNonce": 712004235,
+			"index": "a0",
 			"isDeleted": false,
 			"id": "cqasGqqJ",
 			"fillStyle": "hachure",
@@ -283,7 +285,7 @@ gPBXehTo: [[Architecture/System Design/Questions/Designing YouTube Upload.md#Tab
 			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1713328632529,
+			"updated": 1716303656161,
 			"link": "[[_System Design Template#Table 1]]",
 			"locked": false,
 			"customData": {
@@ -306,8 +308,9 @@ gPBXehTo: [[Architecture/System Design/Questions/Designing YouTube Upload.md#Tab
 		},
 		{
 			"type": "embeddable",
-			"version": 264,
-			"versionNonce": 1934791400,
+			"version": 266,
+			"versionNonce": 828125093,
+			"index": "a1",
 			"isDeleted": false,
 			"id": "Mf9OBUwN",
 			"fillStyle": "hachure",
@@ -329,7 +332,7 @@ gPBXehTo: [[Architecture/System Design/Questions/Designing YouTube Upload.md#Tab
 			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1713328632529,
+			"updated": 1716303656161,
 			"link": "[[Architecture/System Design/Questions/Designing YouTube Upload.md#Table User]]",
 			"locked": false,
 			"customData": {
@@ -352,8 +355,9 @@ gPBXehTo: [[Architecture/System Design/Questions/Designing YouTube Upload.md#Tab
 		},
 		{
 			"type": "text",
-			"version": 202,
-			"versionNonce": 251769609,
+			"version": 204,
+			"versionNonce": 497661381,
+			"index": "a2",
 			"isDeleted": false,
 			"id": "zmns1Vak",
 			"fillStyle": "solid",
@@ -375,7 +379,7 @@ gPBXehTo: [[Architecture/System Design/Questions/Designing YouTube Upload.md#Tab
 			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1713328632529,
+			"updated": 1716303656759,
 			"link": null,
 			"locked": false,
 			"fontSize": 58.345170802452,
@@ -386,12 +390,14 @@ gPBXehTo: [[Architecture/System Design/Questions/Designing YouTube Upload.md#Tab
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "User Table",
+			"autoResize": true,
 			"lineHeight": 1.25
 		},
 		{
 			"type": "embeddable",
-			"version": 105,
-			"versionNonce": 880750024,
+			"version": 107,
+			"versionNonce": 937489157,
+			"index": "a3",
 			"isDeleted": false,
 			"id": "gPBXehTo",
 			"fillStyle": "hachure",
@@ -411,7 +417,7 @@ gPBXehTo: [[Architecture/System Design/Questions/Designing YouTube Upload.md#Tab
 			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1713538421100,
+			"updated": 1716303656161,
 			"link": "[[Architecture/System Design/Questions/Designing YouTube Upload.md#Table Region]]",
 			"locked": false,
 			"customData": {
@@ -434,8 +440,9 @@ gPBXehTo: [[Architecture/System Design/Questions/Designing YouTube Upload.md#Tab
 		},
 		{
 			"type": "arrow",
-			"version": 76,
-			"versionNonce": 1782203687,
+			"version": 77,
+			"versionNonce": 1763666891,
+			"index": "a4",
 			"isDeleted": false,
 			"id": "ftC1hzyHhNxrfFq4MBV7J",
 			"fillStyle": "solid",
@@ -457,7 +464,7 @@ gPBXehTo: [[Architecture/System Design/Questions/Designing YouTube Upload.md#Tab
 				"type": 2
 			},
 			"boundElements": [],
-			"updated": 1713328632529,
+			"updated": 1716303656161,
 			"link": null,
 			"locked": false,
 			"startBinding": null,
@@ -475,42 +482,6 @@ gPBXehTo: [[Architecture/System Design/Questions/Designing YouTube Upload.md#Tab
 					214.22037760416652
 				]
 			]
-		},
-		{
-			"type": "text",
-			"version": 90,
-			"versionNonce": 1711678648,
-			"isDeleted": true,
-			"id": "kDAUSBOV",
-			"fillStyle": "solid",
-			"strokeWidth": 2,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
-			"angle": 0,
-			"x": 942.410690994646,
-			"y": -1067.3170247551639,
-			"strokeColor": "#1e1e1e",
-			"backgroundColor": "transparent",
-			"width": 333.0792236328125,
-			"height": 66.57336336827835,
-			"seed": 398053641,
-			"groupIds": [],
-			"frameId": null,
-			"roundness": null,
-			"boundElements": [],
-			"updated": 1713538426383,
-			"link": null,
-			"locked": false,
-			"fontSize": 53.25869069462268,
-			"fontFamily": 1,
-			"text": "Region Table",
-			"rawText": "Region Table",
-			"textAlign": "left",
-			"verticalAlign": "top",
-			"containerId": null,
-			"originalText": "Region Table",
-			"lineHeight": 1.25
 		}
 	],
 	"appState": {
@@ -528,10 +499,10 @@ gPBXehTo: [[Architecture/System Design/Questions/Designing YouTube Upload.md#Tab
 		"currentItemTextAlign": "left",
 		"currentItemStartArrowhead": null,
 		"currentItemEndArrowhead": "arrow",
-		"scrollX": 805.672307578372,
-		"scrollY": 1662.2417797771125,
+		"scrollX": 924.4223075783718,
+		"scrollY": 2585.4208663155737,
 		"zoom": {
-			"value": 0.65
+			"value": 0.30000000000000004
 		},
 		"currentItemRoundness": "round",
 		"gridSize": null,
@@ -546,7 +517,8 @@ gPBXehTo: [[Architecture/System Design/Questions/Designing YouTube Upload.md#Tab
 			"clip": true,
 			"name": true,
 			"outline": true
-		}
+		},
+		"objectsSnapModeEnabled": false
 	},
 	"files": {}
 }

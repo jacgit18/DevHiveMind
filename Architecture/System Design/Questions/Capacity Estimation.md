@@ -41,10 +41,16 @@ After developing schema you can define general feature like below following a ro
 ##### Writes
 > POST, PUT, DELETE
 
-microservice CQRS
+###### Non Functional
+**General Microservices**
+Logging 
+Security
+Metrics
+Monitoring
 
-**Simple math:** 14% of 50 just through reverse so 50% of 14 which is 7 
+> **Simple math:** 14% of 50 just through reverse so 50% of 14 which is 7 
 
+###### Functional
 As a users we want to:
 - Post Comment
 - Post Like
@@ -53,6 +59,9 @@ As a users we want to:
 	- Update Comment 
 	- Delete Comment
 
+**General Microservices**: anything relating to the feature can be broken into several different microservices depends on the feature of focus.
+
+*String Data*
 Lets Assume were dealing with English comments there are about 500K words in the English language.
 
 A comment might contain 20 to 40 words and each word might have a length of 5 characters thus each comment will range about 100 to 200 characters. Assuming each character is approximately 1 byte, the average size of a YouTube comment in English would be around 100 to 200 bytes.

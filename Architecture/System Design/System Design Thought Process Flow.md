@@ -213,7 +213,8 @@ Summarize key design decisions, highlighting any alternative considerations. Inv
 ==⚠  Switch to EXCALIDRAW VIEW in the MORE OPTIONS menu of this document. ⚠==
 
 
-# Text Elements
+# Excalidraw Data
+## Text Elements
 Database ^hXR5I6DE
 
 Database ^wfzmQamh
@@ -587,7 +588,7 @@ Docker ^XGITdU8X
 
 GitHub ^A6xYwXYY
 
-# Embedded files
+## Embedded Files
 69edc9e02839ed3bb44893b35184a59630bebc22: [[Aws Trust Advisor.png]]
 46423fdbed5a290e46978078fca3490e32f0a5b9: [[EBS.png]]
 962dde3d92f0bb8f09113a306e64a935eeb38172: [[Glaciar.svg]]
@@ -614,12 +615,12 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 8e2d16b7d248d487d38af31ca154b9718b16f855: [[Pasted Image 20240520155148_559.gif]]
 
 %%
-# Drawing
+## Drawing
 ```json
 {
 	"type": "excalidraw",
 	"version": 2,
-	"source": "https://github.com/zsviczian/obsidian-excalidraw-plugin/releases/tag/2.1.8",
+	"source": "https://github.com/zsviczian/obsidian-excalidraw-plugin/releases/tag/2.2.2",
 	"elements": [
 		{
 			"type": "line",
@@ -807,6 +808,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Database",
+			"autoResize": true,
 			"lineHeight": 1.25
 		},
 		{
@@ -995,6 +997,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Database",
+			"autoResize": true,
 			"lineHeight": 1.25
 		},
 		{
@@ -1419,6 +1422,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "API Gateway",
+			"autoResize": true,
 			"lineHeight": 1.2
 		},
 		{
@@ -2096,6 +2100,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "CloudFront",
+			"autoResize": true,
 			"lineHeight": 1.2
 		},
 		{
@@ -2451,6 +2456,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "ELB",
+			"autoResize": true,
 			"lineHeight": 1.2
 		},
 		{
@@ -2890,6 +2896,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "ALB",
+			"autoResize": true,
 			"lineHeight": 1.2
 		},
 		{
@@ -2929,6 +2936,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "NLB",
+			"autoResize": true,
 			"lineHeight": 1.2
 		},
 		{
@@ -3487,6 +3495,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Very fast Server",
+			"autoResize": true,
 			"lineHeight": 1.2499999999999993
 		},
 		{
@@ -3881,6 +3890,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Foward Proxy Server",
+			"autoResize": true,
 			"lineHeight": 1.25
 		},
 		{
@@ -4076,6 +4086,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Very fast Server",
+			"autoResize": true,
 			"lineHeight": 1.2499999999999993
 		},
 		{
@@ -4470,6 +4481,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Reverse Proxy Server",
+			"autoResize": true,
 			"lineHeight": 1.25
 		},
 		{
@@ -4507,6 +4519,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Load Balancer Options",
+			"autoResize": true,
 			"lineHeight": 1.25
 		},
 		{
@@ -4785,6 +4798,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "</>",
+			"autoResize": true,
 			"lineHeight": 1.1249130976280162
 		},
 		{
@@ -5307,6 +5321,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "CodeCommit",
+			"autoResize": true,
 			"lineHeight": 1.2
 		},
 		{
@@ -5802,6 +5817,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Relational DB",
+			"autoResize": true,
 			"lineHeight": 1.350000000000001
 		},
 		{
@@ -5985,6 +6001,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Database",
+			"autoResize": true,
 			"lineHeight": 1.25
 		},
 		{
@@ -6168,6 +6185,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Database",
+			"autoResize": true,
 			"lineHeight": 1.25
 		},
 		{
@@ -6207,6 +6225,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "RDS",
+			"autoResize": true,
 			"lineHeight": 1.2
 		},
 		{
@@ -7241,6 +7260,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Route 53",
+			"autoResize": true,
 			"lineHeight": 1.2
 		},
 		{
@@ -7315,6 +7335,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "53",
+			"autoResize": true,
 			"lineHeight": 1.1922008740688725
 		},
 		{
@@ -7856,6 +7877,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Sheild",
+			"autoResize": true,
 			"lineHeight": 1.2
 		},
 		{
@@ -8375,6 +8397,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "WAF",
+			"autoResize": true,
 			"lineHeight": 1.2
 		},
 		{
@@ -10491,6 +10514,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Global\nAccelerator",
+			"autoResize": true,
 			"lineHeight": 1.2
 		},
 		{
@@ -10566,6 +10590,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Trusted advisor",
+			"autoResize": true,
 			"lineHeight": 1.25
 		},
 		{
@@ -12562,6 +12587,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "</>",
+			"autoResize": true,
 			"lineHeight": 1.1944756566625332
 		},
 		{
@@ -13201,6 +13227,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "CodeDeploy",
+			"autoResize": true,
 			"lineHeight": 1.2
 		},
 		{
@@ -13275,6 +13302,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "</>",
+			"autoResize": true,
 			"lineHeight": 1.0771996604603333
 		},
 		{
@@ -13626,6 +13654,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "CodeBuild",
+			"autoResize": true,
 			"lineHeight": 1.2
 		},
 		{
@@ -13695,6 +13724,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Application\nserver",
+			"autoResize": true,
 			"lineHeight": 1.3499999999999994
 		},
 		{
@@ -17058,6 +17088,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Email",
+			"autoResize": true,
 			"lineHeight": 1.25
 		},
 		{
@@ -17218,6 +17249,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "self hosted \nserver is alt\nto EC2",
+			"autoResize": true,
 			"lineHeight": 1.25
 		},
 		{
@@ -17255,6 +17287,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "For workflow, source, and Delivery \nalot of services can fall under each \ncategory also there might be more \ncategories",
+			"autoResize": true,
 			"lineHeight": 1.25
 		},
 		{
@@ -17330,6 +17363,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Amazon MQ",
+			"autoResize": true,
 			"lineHeight": 1.2
 		},
 		{
@@ -18473,6 +18507,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "EC2",
+			"autoResize": true,
 			"lineHeight": 1.2
 		},
 		{
@@ -19132,6 +19167,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "SQS",
+			"autoResize": true,
 			"lineHeight": 1.2
 		},
 		{
@@ -19791,6 +19827,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "SQS",
+			"autoResize": true,
 			"lineHeight": 1.2
 		},
 		{
@@ -20463,6 +20500,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Step Functions",
+			"autoResize": true,
 			"lineHeight": 1.2
 		},
 		{
@@ -20502,6 +20540,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Batch",
+			"autoResize": true,
 			"lineHeight": 1.2
 		},
 		{
@@ -21667,6 +21706,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "EventBridge",
+			"autoResize": true,
 			"lineHeight": 1.2
 		},
 		{
@@ -21706,6 +21746,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Glue",
+			"autoResize": true,
 			"lineHeight": 1.2
 		},
 		{
@@ -22208,6 +22249,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Data Pipeline",
+			"autoResize": true,
 			"lineHeight": 1.2
 		},
 		{
@@ -23704,6 +23746,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Fargate",
+			"autoResize": true,
 			"lineHeight": 1.2
 		},
 		{
@@ -23909,6 +23952,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Lambda",
+			"autoResize": true,
 			"lineHeight": 1.2
 		},
 		{
@@ -24114,6 +24158,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Lambda",
+			"autoResize": true,
 			"lineHeight": 1.2
 		},
 		{
@@ -24151,6 +24196,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "ActiveMQ",
+			"autoResize": true,
 			"lineHeight": 1.25
 		},
 		{
@@ -24864,6 +24910,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "CloudFront",
+			"autoResize": true,
 			"lineHeight": 1.2
 		},
 		{
@@ -24903,6 +24950,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "ElastiCache",
+			"autoResize": true,
 			"lineHeight": 1.2
 		},
 		{
@@ -25969,6 +26017,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Redshift\n(Analytics)",
+			"autoResize": true,
 			"lineHeight": 1.2
 		},
 		{
@@ -26499,6 +26548,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "EBS",
+			"autoResize": true,
 			"lineHeight": 1.25
 		},
 		{
@@ -26538,6 +26588,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Glaciar\n(Archive)",
+			"autoResize": true,
 			"lineHeight": 1.25
 		},
 		{
@@ -26649,6 +26700,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Snowball",
+			"autoResize": true,
 			"lineHeight": 1.25
 		},
 		{
@@ -26724,6 +26776,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Snowmobile",
+			"autoResize": true,
 			"lineHeight": 1.25
 		},
 		{
@@ -26763,6 +26816,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Data Pipeline",
+			"autoResize": true,
 			"lineHeight": 1.2
 		},
 		{
@@ -27677,6 +27731,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "S3 Bucket",
+			"autoResize": true,
 			"lineHeight": 1.2
 		},
 		{
@@ -27716,6 +27771,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Storage \nGateway",
+			"autoResize": true,
 			"lineHeight": 1.2
 		},
 		{
@@ -28133,6 +28189,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "RDS",
+			"autoResize": true,
 			"lineHeight": 1.2
 		},
 		{
@@ -29095,6 +29152,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "EFS",
+			"autoResize": true,
 			"lineHeight": 1.2
 		},
 		{
@@ -30480,6 +30538,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Redis",
+			"autoResize": true,
 			"lineHeight": 1.25
 		},
 		{
@@ -30519,6 +30578,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "FSx",
+			"autoResize": true,
 			"lineHeight": 1.2
 		},
 		{
@@ -30592,6 +30652,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "FSx",
+			"autoResize": true,
 			"lineHeight": 1.1922677852468673
 		},
 		{
@@ -30629,6 +30690,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Cloudflare",
+			"autoResize": true,
 			"lineHeight": 1.25
 		},
 		{
@@ -30666,6 +30728,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Fastly",
+			"autoResize": true,
 			"lineHeight": 1.25
 		},
 		{
@@ -30741,6 +30804,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "VPC",
+			"autoResize": true,
 			"lineHeight": 1.2
 		},
 		{
@@ -31292,6 +31356,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "VPC Endpoint\n(Gateway)",
+			"autoResize": true,
 			"lineHeight": 1.2
 		},
 		{
@@ -31839,6 +31904,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "VPC Endpoint\n(Interface)",
+			"autoResize": true,
 			"lineHeight": 1.2
 		},
 		{
@@ -32570,6 +32636,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "EC2",
+			"autoResize": true,
 			"lineHeight": 1.2
 		},
 		{
@@ -32798,6 +32865,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "EC2",
+			"autoResize": true,
 			"lineHeight": 1.2
 		},
 		{
@@ -32835,8 +32903,8 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 		},
 		{
 			"type": "rectangle",
-			"version": 1378,
-			"versionNonce": 75674763,
+			"version": 1379,
+			"versionNonce": 682674309,
 			"index": "b9y",
 			"isDeleted": false,
 			"id": "PFSyRhMeeQQjJhSU-aAet",
@@ -32846,8 +32914,8 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"roughness": 0,
 			"opacity": 100,
 			"angle": 0,
-			"x": 410.0198717974763,
-			"y": 1689.2670563016093,
+			"x": 410.01987179747624,
+			"y": 1689.2670563016095,
 			"strokeColor": "#c3b6ee",
 			"backgroundColor": "transparent",
 			"width": 270.81360008160584,
@@ -32866,14 +32934,14 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 					"type": "arrow"
 				}
 			],
-			"updated": 1716234680481,
+			"updated": 1716303715938,
 			"link": null,
 			"locked": false
 		},
 		{
 			"type": "text",
-			"version": 480,
-			"versionNonce": 854715179,
+			"version": 481,
+			"versionNonce": 250572773,
 			"index": "b9z",
 			"isDeleted": false,
 			"id": "CBh5xDMB",
@@ -32883,8 +32951,8 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"roughness": 1,
 			"opacity": 100,
 			"angle": 0,
-			"x": 415.0198717974763,
-			"y": 1694.2670563016093,
+			"x": 415.01987179747624,
+			"y": 1694.2670563016095,
 			"strokeColor": "#1e1e1e",
 			"backgroundColor": "transparent",
 			"width": 80.06402587890625,
@@ -32894,7 +32962,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"frameId": "cDlFNT0KJqjWdy4tfiyeE",
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1716234680482,
+			"updated": 1716303715939,
 			"link": null,
 			"locked": false,
 			"fontSize": 36,
@@ -32905,12 +32973,13 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"verticalAlign": "top",
 			"containerId": "PFSyRhMeeQQjJhSU-aAet",
 			"originalText": "AZ 1",
+			"autoResize": true,
 			"lineHeight": 1.25
 		},
 		{
 			"type": "rectangle",
-			"version": 1414,
-			"versionNonce": 1199656395,
+			"version": 1415,
+			"versionNonce": 966929221,
 			"index": "bA0",
 			"isDeleted": false,
 			"id": "oKt_wAJkAksutql0WooCQ",
@@ -32921,7 +32990,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"opacity": 100,
 			"angle": 0,
 			"x": 793.9592657368703,
-			"y": 1677.3276623622162,
+			"y": 1677.3276623622164,
 			"strokeColor": "#c3b6ee",
 			"backgroundColor": "transparent",
 			"width": 266.81360008160584,
@@ -32936,14 +33005,14 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 					"id": "NP5hZoJW"
 				}
 			],
-			"updated": 1716234680482,
+			"updated": 1716303715939,
 			"link": null,
 			"locked": false
 		},
 		{
 			"type": "text",
-			"version": 519,
-			"versionNonce": 1699437675,
+			"version": 520,
+			"versionNonce": 690387621,
 			"index": "bA1",
 			"isDeleted": false,
 			"id": "NP5hZoJW",
@@ -32954,7 +33023,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"opacity": 100,
 			"angle": 0,
 			"x": 798.9592657368703,
-			"y": 1682.3276623622162,
+			"y": 1682.3276623622164,
 			"strokeColor": "#1e1e1e",
 			"backgroundColor": "transparent",
 			"width": 95.94003295898438,
@@ -32964,7 +33033,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"frameId": "cDlFNT0KJqjWdy4tfiyeE",
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1716234680482,
+			"updated": 1716303715939,
 			"link": null,
 			"locked": false,
 			"fontSize": 36,
@@ -32975,6 +33044,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"verticalAlign": "top",
 			"containerId": "oKt_wAJkAksutql0WooCQ",
 			"originalText": "AZ 2",
+			"autoResize": true,
 			"lineHeight": 1.25
 		},
 		{
@@ -33050,6 +33120,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Region",
+			"autoResize": true,
 			"lineHeight": 1.25
 		},
 		{
@@ -33315,6 +33386,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "IGW ",
+			"autoResize": true,
 			"lineHeight": 1.2
 		},
 		{
@@ -33732,6 +33804,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Client VPN \nEndpoint",
+			"autoResize": true,
 			"lineHeight": 1.2
 		},
 		{
@@ -34453,6 +34526,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "VGW",
+			"autoResize": true,
 			"lineHeight": 1.2
 		},
 		{
@@ -34831,6 +34905,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "ELB",
+			"autoResize": true,
 			"lineHeight": 1.2
 		},
 		{
@@ -34868,6 +34943,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Public Subnet",
+			"autoResize": true,
 			"lineHeight": 1.25
 		},
 		{
@@ -34905,6 +34981,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Private Subnet",
+			"autoResize": true,
 			"lineHeight": 1.25
 		},
 		{
@@ -34942,6 +35019,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Private Subnet",
+			"autoResize": true,
 			"lineHeight": 1.25
 		},
 		{
@@ -34979,6 +35057,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Private Subnet",
+			"autoResize": true,
 			"lineHeight": 1.25
 		},
 		{
@@ -35016,6 +35095,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Private Subnet",
+			"autoResize": true,
 			"lineHeight": 1.25
 		},
 		{
@@ -35053,6 +35133,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Public Subnet",
+			"autoResize": true,
 			"lineHeight": 1.25
 		},
 		{
@@ -35145,6 +35226,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Aurora",
+			"autoResize": true,
 			"lineHeight": 1.2
 		},
 		{
@@ -35762,6 +35844,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Aurora Replication",
+			"autoResize": true,
 			"lineHeight": 1.2
 		},
 		{
@@ -36543,6 +36626,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "NAT gateway",
+			"autoResize": true,
 			"lineHeight": 1.2
 		},
 		{
@@ -36951,6 +37035,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "NAT gateway",
+			"autoResize": true,
 			"lineHeight": 1.2
 		},
 		{
@@ -37876,6 +37961,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "VPC\nPeering",
+			"autoResize": true,
 			"lineHeight": 1.25
 		},
 		{
@@ -38771,6 +38857,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "1. User",
+			"autoResize": true,
 			"lineHeight": 1.25
 		},
 		{
@@ -39593,6 +39680,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "2. Remote Worker",
+			"autoResize": true,
 			"lineHeight": 1.25
 		},
 		{
@@ -39717,6 +39805,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "3.",
+			"autoResize": true,
 			"lineHeight": 1.25
 		},
 		{
@@ -39756,6 +39845,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "VPC",
+			"autoResize": true,
 			"lineHeight": 1.2
 		},
 		{
@@ -40298,6 +40388,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "4.",
+			"autoResize": true,
 			"lineHeight": 1.25
 		},
 		{
@@ -40521,6 +40612,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "EC2",
+			"autoResize": true,
 			"lineHeight": 1.2
 		},
 		{
@@ -40744,6 +40836,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "EC2",
+			"autoResize": true,
 			"lineHeight": 1.2
 		},
 		{
@@ -40967,6 +41060,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "EC2",
+			"autoResize": true,
 			"lineHeight": 1.2
 		},
 		{
@@ -41077,6 +41171,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "VPC",
+			"autoResize": true,
 			"lineHeight": 1.2
 		},
 		{
@@ -41619,6 +41714,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "8.",
+			"autoResize": true,
 			"lineHeight": 1.25
 		},
 		{
@@ -41842,6 +41938,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "EC2",
+			"autoResize": true,
 			"lineHeight": 1.2
 		},
 		{
@@ -42065,6 +42162,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "EC2",
+			"autoResize": true,
 			"lineHeight": 1.2
 		},
 		{
@@ -42228,6 +42326,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "7.",
+			"autoResize": true,
 			"lineHeight": 1.25
 		},
 		{
@@ -42303,6 +42402,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "6.",
+			"autoResize": true,
 			"lineHeight": 1.25
 		},
 		{
@@ -42378,6 +42478,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "VPC",
+			"autoResize": true,
 			"lineHeight": 1.2
 		},
 		{
@@ -42920,6 +43021,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "VPC",
+			"autoResize": true,
 			"lineHeight": 1.2
 		},
 		{
@@ -43467,6 +43569,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "5.",
+			"autoResize": true,
 			"lineHeight": 1.25
 		},
 		{
@@ -43509,6 +43612,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Corporate Data Center\n(On Premise)",
+			"autoResize": true,
 			"lineHeight": 1.25
 		},
 		{
@@ -43546,6 +43650,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Corporate Data Center\n(On Premise)",
+			"autoResize": true,
 			"lineHeight": 1.25
 		},
 		{
@@ -43886,6 +43991,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "S3 Bucket",
+			"autoResize": true,
 			"lineHeight": 1.2
 		},
 		{
@@ -43960,6 +44066,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"verticalAlign": "middle",
 			"containerId": "vyM_nQj2JKtzw5_OP7maX",
 			"originalText": "Frontend ",
+			"autoResize": true,
 			"lineHeight": 1.25
 		},
 		{
@@ -43999,6 +44106,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Web Application",
+			"autoResize": true,
 			"lineHeight": 1.3499999999999985
 		},
 		{
@@ -44196,6 +44304,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "G",
+			"autoResize": true,
 			"lineHeight": 1.2999999999999996
 		},
 		{
@@ -44238,6 +44347,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "o",
+			"autoResize": true,
 			"lineHeight": 1.3000000000000003
 		},
 		{
@@ -44280,6 +44390,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "o",
+			"autoResize": true,
 			"lineHeight": 1.3000000000000003
 		},
 		{
@@ -44322,6 +44433,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "g",
+			"autoResize": true,
 			"lineHeight": 1.3
 		},
 		{
@@ -44364,6 +44476,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "l",
+			"autoResize": true,
 			"lineHeight": 1.3
 		},
 		{
@@ -44406,6 +44519,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "e",
+			"autoResize": true,
 			"lineHeight": 1.3000000000000003
 		},
 		{
@@ -44561,6 +44675,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Mobile",
+			"autoResize": true,
 			"lineHeight": 1.276888277439391
 		},
 		{
@@ -44793,6 +44908,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Lorem ipsum dolor sit amet, \nconsectetur adipiscing elit,sed\n do eiusmod tempor incididunt\n ut labore et dolore magna\n aliqua. Ut enim ad miveniam,\n quis nostrud exercitaullamco \nlaboris nisi ut aliquip ex ea \nommodo consequat. Duis aute \nirure dolor in reprehenderit i",
+			"autoResize": true,
 			"lineHeight": 1.3706256908018875
 		},
 		{
@@ -44835,6 +44951,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Lorem ipsum dolor s, \nconsectetur adipng d\n do eiusmopor incididunt\nut labore et dolore magna\naliqua. Ut enim ad miveniam,\nquis nostrud exercitaullamco \nlaboris nisi ut aliquip ex ea \nommodo consequat. Duis aute \n",
+			"autoResize": true,
 			"lineHeight": 1.3706256908018875
 		},
 		{
@@ -44907,6 +45024,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "PC",
+			"autoResize": true,
 			"lineHeight": 1.25
 		},
 		{
@@ -45550,6 +45668,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "CloudWatch",
+			"autoResize": true,
 			"lineHeight": 1.2
 		},
 		{
@@ -45868,6 +45987,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "CloudWatch",
+			"autoResize": true,
 			"lineHeight": 1.2
 		},
 		{
@@ -45907,6 +46027,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "CloudTrail",
+			"autoResize": true,
 			"lineHeight": 1.2
 		},
 		{
@@ -46514,6 +46635,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "QuickSight",
+			"autoResize": true,
 			"lineHeight": 1.2
 		},
 		{
@@ -46959,6 +47081,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Grafana",
+			"autoResize": true,
 			"lineHeight": 1.25
 		},
 		{
@@ -47685,6 +47808,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "SNS",
+			"autoResize": true,
 			"lineHeight": 1.2
 		},
 		{
@@ -48380,6 +48504,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "SNS",
+			"autoResize": true,
 			"lineHeight": 1.2
 		},
 		{
@@ -48417,6 +48542,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "RabbitMQ",
+			"autoResize": true,
 			"lineHeight": 1.25
 		},
 		{
@@ -48492,6 +48618,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Config",
+			"autoResize": true,
 			"lineHeight": 1.2
 		},
 		{
@@ -49370,6 +49497,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "</>",
+			"autoResize": true,
 			"lineHeight": 1.1267157397678071
 		},
 		{
@@ -49621,6 +49749,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "CodePipeline",
+			"autoResize": true,
 			"lineHeight": 1.2
 		},
 		{
@@ -49660,6 +49789,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Elastic \nBeanstalk",
+			"autoResize": true,
 			"lineHeight": 1.2
 		},
 		{
@@ -50097,6 +50227,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "CloudFormation",
+			"autoResize": true,
 			"lineHeight": 1.2
 		},
 		{
@@ -57404,6 +57535,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Direct Connect",
+			"autoResize": true,
 			"lineHeight": 1.2
 		},
 		{
@@ -57992,6 +58124,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Direct Connect",
+			"autoResize": true,
 			"lineHeight": 1.2
 		},
 		{
@@ -59667,6 +59800,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Kinesis \nData Firehose\n(no Real time\nprocessing)",
+			"autoResize": true,
 			"lineHeight": 1.2
 		},
 		{
@@ -60517,6 +60651,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Kinesis \nData Streams \n(Real time \nprocesses)",
+			"autoResize": true,
 			"lineHeight": 1.2
 		},
 		{
@@ -61191,6 +61326,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Kinesis \nData Firehose",
+			"autoResize": true,
 			"lineHeight": 1.2
 		},
 		{
@@ -62041,6 +62177,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Kinesis \nData Streams",
+			"autoResize": true,
 			"lineHeight": 1.2
 		},
 		{
@@ -62715,6 +62852,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Kinesis \nData Firehose",
+			"autoResize": true,
 			"lineHeight": 1.2
 		},
 		{
@@ -63565,6 +63703,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Kinesis \nData Streams",
+			"autoResize": true,
 			"lineHeight": 1.2
 		},
 		{
@@ -64521,6 +64660,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "SageMaker",
+			"autoResize": true,
 			"lineHeight": 1.2
 		},
 		{
@@ -64560,6 +64700,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "TensorFlow",
+			"autoResize": true,
 			"lineHeight": 1.25
 		},
 		{
@@ -64789,6 +64930,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Server",
+			"autoResize": true,
 			"lineHeight": 1.25
 		},
 		{
@@ -65046,6 +65188,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Server",
+			"autoResize": true,
 			"lineHeight": 1.25
 		},
 		{
@@ -65303,6 +65446,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Server",
+			"autoResize": true,
 			"lineHeight": 1.25
 		},
 		{
@@ -65528,6 +65672,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Think about Side effects associate with workflow\nlike how functions can have side effects",
+			"autoResize": true,
 			"lineHeight": 1.25
 		},
 		{
@@ -66332,6 +66477,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Transit Gateway",
+			"autoResize": true,
 			"lineHeight": 1.2
 		},
 		{
@@ -66607,6 +66753,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "S3 Bucket",
+			"autoResize": true,
 			"lineHeight": 1.2
 		},
 		{
@@ -67571,6 +67718,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "DynamoDB",
+			"autoResize": true,
 			"lineHeight": 1.2
 		},
 		{
@@ -67610,6 +67758,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "PrivateLink",
+			"autoResize": true,
 			"lineHeight": 1.2
 		},
 		{
@@ -67990,6 +68139,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Router",
+			"autoResize": true,
 			"lineHeight": 1.25
 		},
 		{
@@ -68032,6 +68182,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "CGW",
+			"autoResize": true,
 			"lineHeight": 1.25
 		},
 		{
@@ -68251,6 +68402,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Database",
+			"autoResize": true,
 			"lineHeight": 1.25
 		},
 		{
@@ -68434,6 +68586,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Database",
+			"autoResize": true,
 			"lineHeight": 1.25
 		},
 		{
@@ -68473,6 +68626,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Client VPN",
+			"autoResize": true,
 			"lineHeight": 1.2
 		},
 		{
@@ -70007,6 +70161,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "DynamoDB",
+			"autoResize": true,
 			"lineHeight": 1.2
 		},
 		{
@@ -70046,6 +70201,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Neptune",
+			"autoResize": true,
 			"lineHeight": 1.2
 		},
 		{
@@ -70921,6 +71077,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Aurora",
+			"autoResize": true,
 			"lineHeight": 1.2
 		},
 		{
@@ -71538,6 +71695,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Redshift",
+			"autoResize": true,
 			"lineHeight": 1.2
 		},
 		{
@@ -72033,6 +72191,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Rekognition",
+			"autoResize": true,
 			"lineHeight": 1.2
 		},
 		{
@@ -73352,6 +73511,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "SageMaker",
+			"autoResize": true,
 			"lineHeight": 1.2
 		},
 		{
@@ -73397,6 +73557,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Personalize",
+			"autoResize": true,
 			"lineHeight": 1.2
 		},
 		{
@@ -73952,6 +74113,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Github Actions",
+			"autoResize": true,
 			"lineHeight": 1.25
 		},
 		{
@@ -74586,6 +74748,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": " Main \nService",
+			"autoResize": true,
 			"lineHeight": 1.25
 		},
 		{
@@ -75065,6 +75228,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Docker",
+			"autoResize": true,
 			"lineHeight": 1.25
 		},
 		{
@@ -75397,32 +75561,33 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "GitHub",
+			"autoResize": true,
 			"lineHeight": 1.25
 		},
 		{
-			"id": "CLNz-VtGc1pQp22WbuM1V",
 			"type": "image",
-			"x": -2610.5282881277944,
-			"y": -1373.812498872313,
-			"width": 1078.8062174479164,
-			"height": 1170.6714040128109,
-			"angle": 0,
-			"strokeColor": "transparent",
-			"backgroundColor": "transparent",
+			"version": 16,
+			"versionNonce": 1636341099,
+			"index": "bPN",
+			"isDeleted": false,
+			"id": "CLNz-VtGc1pQp22WbuM1V",
 			"fillStyle": "solid",
 			"strokeWidth": 2,
 			"strokeStyle": "dashed",
 			"roughness": 1,
 			"opacity": 100,
+			"angle": 0,
+			"x": -2610.5282881277944,
+			"y": -1373.812498872313,
+			"strokeColor": "transparent",
+			"backgroundColor": "transparent",
+			"width": 1078.8062174479164,
+			"height": 1170.6714040128109,
+			"seed": 266053131,
 			"groupIds": [],
 			"frameId": null,
-			"index": "bPN",
 			"roundness": null,
-			"seed": 266053131,
-			"version": 16,
-			"versionNonce": 1636341099,
-			"isDeleted": false,
-			"boundElements": null,
+			"boundElements": [],
 			"updated": 1716234697461,
 			"link": null,
 			"locked": false,
@@ -75449,10 +75614,10 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 		"currentItemTextAlign": "left",
 		"currentItemStartArrowhead": null,
 		"currentItemEndArrowhead": "arrow",
-		"scrollX": 4594.458512737168,
-		"scrollY": 2441.809894705646,
+		"scrollX": 3384.0418460705027,
+		"scrollY": 4910.638019705646,
 		"zoom": {
-			"value": 0.15000000000000002
+			"value": 0.1
 		},
 		"currentItemRoundness": "round",
 		"gridSize": null,
