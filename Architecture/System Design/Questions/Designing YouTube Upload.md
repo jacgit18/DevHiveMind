@@ -83,6 +83,7 @@ As a users we want to:
 	- Update Comment 
 	- Delete Comment
 
+*String Data*
 Lets Assume were dealing with English comments there are about 500K words in the English language.
 
 A comment might contain 20 to 40 words and each word might have a length of 5 characters thus each comment will range about 100 to 200 characters. Assuming each character is approximately 1 byte, the average size of a YouTube comment in English would be around 100 to 200 bytes.
