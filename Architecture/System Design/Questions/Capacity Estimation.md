@@ -38,6 +38,8 @@ You should be concerned with writes here only because we need to know how much d
 | 86,400 seconds * 30 days | 2,592,000 seconds per month use 2,400,000 | Seconds |
 
 After developing schema you can define general feature like below following a rough [[Structuring URL#URI Path Design Guidelines for REST APIs |endpoints naming convention]].
+
+maybe consider defining some microservices here and weather they are following CQRS pattern meaning if you have services that e
 ##### Writes
 > POST, PUT, DELETE
 
