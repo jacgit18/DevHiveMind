@@ -33,6 +33,7 @@
     "dg-home": "checkbox",
     "dg-publish": "checkbox",
     "excalidraw-export-embed-scene": "checkbox",
-    "excalidraw-open-md": "checkbox"
+    "excalidraw-open-md": "checkbox",
+    "excalidraw-embeddable-theme": "text"
   }
 }
