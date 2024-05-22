@@ -264,8 +264,8 @@ gPBXehTo: [[Architecture/System Design/Questions/Designing YouTube Upload.md#Tab
 	"elements": [
 		{
 			"type": "embeddable",
-			"version": 777,
-			"versionNonce": 712004235,
+			"version": 778,
+			"versionNonce": 712004236,
 			"index": "a0",
 			"isDeleted": false,
 			"id": "cqasGqqJ",
@@ -309,8 +309,8 @@ gPBXehTo: [[Architecture/System Design/Questions/Designing YouTube Upload.md#Tab
 		},
 		{
 			"type": "embeddable",
-			"version": 266,
-			"versionNonce": 828125093,
+			"version": 267,
+			"versionNonce": 828125094,
 			"index": "a1",
 			"isDeleted": false,
 			"id": "Mf9OBUwN",
@@ -396,8 +396,8 @@ gPBXehTo: [[Architecture/System Design/Questions/Designing YouTube Upload.md#Tab
 		},
 		{
 			"type": "embeddable",
-			"version": 107,
-			"versionNonce": 937489157,
+			"version": 108,
+			"versionNonce": 937489158,
 			"index": "a3",
 			"isDeleted": false,
 			"id": "gPBXehTo",
