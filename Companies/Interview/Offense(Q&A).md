@@ -20,6 +20,9 @@ dg-publish:
 - Don’t let “What are the next steps in the hiring process?” be your only question!  
 
 **Embracing the power of a reverse interview ask about things like:**
+
+[[Codebase Interview Question]]
+
 *Manager Dynamics:*
 - What aspects do they appreciate or find challenging about their current manager?
 - What do you like about working here?

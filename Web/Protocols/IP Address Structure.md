@@ -31,6 +31,8 @@ IPv6 is the latest version of the Internet Protocol, designed to address the lim
 
 ![[IPV6 vs IPV4.jpeg]]
 
+![[ipv4viPV6.gif]]
+
 ## Recommended DNS  to Use
 
 Phone DNS  
