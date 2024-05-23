@@ -38,6 +38,7 @@ Design...
 |     | ...          |
 |     | ...          |
 
+Try Data View calculation 
 
 ### Capacity Estimation
 **AVG** - Average
@@ -63,15 +64,16 @@ AFTRS = AFRS one ... + AFRS
 Monthly Estimation = 30 * AFTRS * AUS
 
 ###### Daily estimates
-Write per day =
+Write per day = AUS / Monthly Estimation
 
-Write per sec =
+Write per sec = Write per day / 80,000
 
 Write per user = AFTRS / AUS
 
 
 ###### Long term estimates
-replication
+
+Data replication = Monthly Estimation * 3 
 
 
 #### Network Traffic
