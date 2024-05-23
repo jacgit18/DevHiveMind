@@ -13,41 +13,57 @@ excalidraw-open-md: true
 dg-publish:
 ---
 Design a simple library app for storing and organizing books. The app should allow users to:
-
-*   Add books to their collection with details like title, author, and genre.
-*   Search for books in their collection by title or author.
-*   Organize books into categories like "Want to Read," "Currently Reading," and "Finished."
-*   Mark books as finished and rate them.
 ## Userbase
-All age groups in the use with potential global expansi
+All age groups in the use with potential global expansion
 
 18 and above
+
+adult level books
 
 
 ## Requirements Gathering
 
 #### Functional Requirements 
+*   Add books to their collection with details like title, author, and genre.
+*   Search for books in their collection by title or author.
+*   Organize books into categories like "Want to Read," "Currently Reading," and "Finished."
+*   Mark books as finished and rate them.
 
 #### Non Requirements Functional
 check age
 
+##### collectionService
+categories
+
+##### bookService
+bookStatus
+bookRaitingating
+
+##### bookSearch
 
 
 ### Schema
 
 ##### Table 1
 
-|     | Region       |
-| --- | ------------ |
-| PK  | RegionID     |
-| FK  | UserID       |
-| FK  | RandomID     |
-|     | Name         |
-|     | Phone number |
-|     | ...          |
-|     | ...          |
+|     | User           |
+| --- | -------------- |
+| PK  | userID         |
+| FK  | bookID         |
+|     | userCollection |
+|     |                |
+|     | ...            |
+##### Table 2
 
-Try Data View [[Calculation Template]]
+|     | Book           |
+| --- | -------------- |
+| PK  | bookID         |
+|     | bookCompletion |
+|     | bookStatus     |
+|     | bookTitle      |
+|     | bookGenre      |
+|     | bookAuthor     |
+
 
 ### Capacity Estimation
 **AVG** - Average
@@ -182,7 +198,8 @@ API ^EhJ0BLrM
 API ^qj7dnRO7
 
 ## Element Links
-5hCQUjFg: [[_NoteAssets/Template/_System Design Template.md#Table 1]]
+nHQ1vcRE: [[library app#Table 1]]
+7s5CxVST: [[library app#Table 2]]
 
 %%
 ## Drawing
@@ -192,6 +209,51 @@ API ^qj7dnRO7
 	"version": 2,
 	"source": "https://github.com/zsviczian/obsidian-excalidraw-plugin/releases/tag/2.2.2",
 	"elements": [
+		{
+			"id": "O5cZtrTZKiEwB_t1aFh44",
+			"type": "arrow",
+			"x": -1005.526163634024,
+			"y": -914.1727159174134,
+			"width": 239.9999999999999,
+			"height": 18.666666666666742,
+			"angle": 0,
+			"strokeColor": "#1e1e1e",
+			"backgroundColor": "transparent",
+			"fillStyle": "solid",
+			"strokeWidth": 2,
+			"strokeStyle": "solid",
+			"roughness": 1,
+			"opacity": 100,
+			"groupIds": [],
+			"frameId": "b_CFDPxeHaDK177m8nPQ0",
+			"index": "a1",
+			"roundness": {
+				"type": 2
+			},
+			"seed": 991988465,
+			"version": 51,
+			"versionNonce": 322649809,
+			"isDeleted": false,
+			"boundElements": null,
+			"updated": 1716499337779,
+			"link": null,
+			"locked": false,
+			"points": [
+				[
+					0,
+					0
+				],
+				[
+					239.9999999999999,
+					-18.666666666666742
+				]
+			],
+			"lastCommittedPoint": null,
+			"startBinding": null,
+			"endBinding": null,
+			"startArrowhead": null,
+			"endArrowhead": "arrow"
+		},
 		{
 			"type": "frame",
 			"version": 167,
@@ -3624,30 +3686,75 @@ API ^qj7dnRO7
 		},
 		{
 			"type": "embeddable",
-			"version": 55,
-			"versionNonce": 1553617459,
+			"version": 115,
+			"versionNonce": 1047351985,
 			"index": "c0E1",
 			"isDeleted": false,
-			"id": "5hCQUjFg",
+			"id": "nHQ1vcRE",
 			"fillStyle": "hachure",
 			"strokeWidth": 1,
 			"strokeStyle": "solid",
 			"roughness": 1,
 			"opacity": 100,
 			"angle": 0,
-			"x": -1256.2795483212335,
-			"y": -1043.8970805030726,
+			"x": -1315.852961019645,
+			"y": -1027.2446113422498,
 			"strokeColor": "#000000",
 			"backgroundColor": "transparent",
-			"width": 460.00000000000006,
-			"height": 305,
-			"seed": 86169,
+			"width": 365.33333333333337,
+			"height": 225.33333333333348,
+			"seed": 91427,
 			"groupIds": [],
 			"frameId": "b_CFDPxeHaDK177m8nPQ0",
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1716483236335,
-			"link": "[[_NoteAssets/Template/_System Design Template.md#Table 1]]",
+			"updated": 1716499307968,
+			"link": "[[Architecture/System Design/Questions/Untitled.md#Table 1]]",
+			"locked": false,
+			"customData": {
+				"mdProps": {
+					"useObsidianDefaults": false,
+					"backgroundMatchCanvas": false,
+					"backgroundMatchElement": true,
+					"backgroundColor": "#fff",
+					"backgroundOpacity": 60,
+					"borderMatchElement": true,
+					"borderColor": "#fff",
+					"borderOpacity": 0,
+					"filenameVisible": false
+				}
+			},
+			"scale": [
+				1,
+				1
+			]
+		},
+		{
+			"type": "embeddable",
+			"version": 122,
+			"versionNonce": 1150083889,
+			"index": "c0E2",
+			"isDeleted": false,
+			"id": "7s5CxVST",
+			"fillStyle": "hachure",
+			"strokeWidth": 1,
+			"strokeStyle": "solid",
+			"roughness": 1,
+			"opacity": 100,
+			"angle": 0,
+			"x": -816.1928303006907,
+			"y": -1008.1727159174136,
+			"strokeColor": "#000000",
+			"backgroundColor": "transparent",
+			"width": 360,
+			"height": 412,
+			"seed": 23157,
+			"groupIds": [],
+			"frameId": "b_CFDPxeHaDK177m8nPQ0",
+			"roundness": null,
+			"boundElements": [],
+			"updated": 1716499323085,
+			"link": "[[Architecture/System Design/Questions/Untitled.md#Table 2]]",
 			"locked": false,
 			"customData": {
 				"mdProps": {
@@ -3683,10 +3790,10 @@ API ^qj7dnRO7
 		"currentItemTextAlign": "left",
 		"currentItemStartArrowhead": null,
 		"currentItemEndArrowhead": "arrow",
-		"scrollX": 3755.6783578450427,
-		"scrollY": 2014.903589516853,
+		"scrollX": 1664.8594969673572,
+		"scrollY": 1277.2352159174134,
 		"zoom": {
-			"value": 0.2
+			"value": 0.7500000000000001
 		},
 		"currentItemRoundness": "round",
 		"gridSize": null,
