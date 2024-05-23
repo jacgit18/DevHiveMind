@@ -12,15 +12,24 @@ Peer Reviewed: 0
 excalidraw-open-md: true
 dg-publish:
 ---
-Design...
+Design a simple library app for storing and organizing books. The app should allow users to:
+
+*   Add books to their collection with details like title, author, and genre.
+*   Search for books in their collection by title or author.
+*   Organize books into categories like "Want to Read," "Currently Reading," and "Finished."
+*   Mark books as finished and rate them.
 ## Userbase
+All age groups in the use with potential global expansi
+
+18 and above
+
 
 ## Requirements Gathering
 
 #### Functional Requirements 
 
 #### Non Requirements Functional
-
+check age
 
 
 
