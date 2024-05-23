@@ -54,7 +54,7 @@ As a users we want to:
 
 
 
-**Lets say we have 2:1 ratio of**
+**Lets say we have 2:1 ratio of feature A Request to feature B Request**
 
 ###### Data Size 
 
@@ -62,7 +62,7 @@ As a users we want to:
 sec/daily/monthly
 
 ###### Long term estimates
-
+replication
 
 
 #### Network Traffic
@@ -72,9 +72,11 @@ Read:Write *50*:1 read heavy ratio
 As a users we want to:
 - Get
 
-Reads per day = *50*
+Reads per day = *50* \* write per day
 
-Reads per sec = *50*
+Reads per sec = *50* \* write per sec
+
+Overall Traffic: (DAU * read per sec) * (DAU * writes per sec)
 
 #### Memory Cache
 
