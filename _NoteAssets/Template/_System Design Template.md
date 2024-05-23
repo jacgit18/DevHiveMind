@@ -42,7 +42,7 @@ Design...
 
 
 ### Capacity Estimation
-
+**DAU** - Daily Active Users  
 
 #### Storage
 
@@ -51,12 +51,13 @@ Design...
 As a users we want to:
 - Post 
 
-
-
-
 **Lets say we have 2:1 ratio of feature A Request to feature B Request**
 
 ###### Data Size 
+Write per day =
+
+
+Write per sec =
 
 ###### Daily estimates
 sec/daily/monthly
@@ -72,9 +73,9 @@ Read:Write *50*:1 read heavy ratio
 As a users we want to:
 - Get
 
-Reads per day = *50* \* write per day
+Reads per day = *50* \* Write per day
 
-Reads per sec = *50* \* write per sec
+Reads per sec = *50* \* Write per sec
 
 Overall Traffic: (DAU * read per sec) * (DAU * writes per sec)
 
