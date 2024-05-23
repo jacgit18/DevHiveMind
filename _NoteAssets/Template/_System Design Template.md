@@ -42,31 +42,32 @@ Design...
 ### Capacity Estimation
 **AVG** - Average
 **AFRS** - Average Feature Request Size
-**ATRS** - Average Total Request Size Per User
+**AFTRS** - Average Feature Total Req Size Per User
 **AUS** - Active Userbase Size  
 **DAU** - Daily Active Users  
 
 > **Lets say we have 2:1 ratio of feature A Request to feature B Request**
 #### Storage
+##### Data Size 
 AUS = 
 
 ##### Writes
 As a users we want to:
 - Post 
 
-###### Data Size 
+###### Daily estimates
+AFRS One by Month = DAU * 
+
+AFRS Two by Month = 
+
+AFTRS = AFRS one ... + AFRS by Month
+
+Write per user = AFTRS / AUS
+
 Write per day =
 
 Write per sec =
 
-AFRS One = 
-
-AFRS Two = 
-
-ATRS = AFRS one ... + AFRS
-
-###### Daily estimates
-sec/daily/monthly
 
 ###### Long term estimates
 replication
