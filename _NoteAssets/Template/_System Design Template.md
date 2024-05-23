@@ -13,15 +13,19 @@ excalidraw-open-md: true
 dg-publish:
 ---
 # Question
+
+### Userbase
+
 ## Requirements Gathering
+
 #### Functional Requirements 
 
 #### Non Requirements Functional
 
-### Userbase
 
 
-#### Schema
+
+### Schema
 
 ##### Table 1
 
@@ -55,6 +59,7 @@ As a users we want to:
 ###### Data Size 
 
 ###### Daily estimates
+sec/daily/monthly
 
 ###### Long term estimates
 

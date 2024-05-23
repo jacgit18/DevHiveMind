@@ -256,272 +256,35 @@ gPBXehTo: [[Architecture/System Design/Questions/Designing YouTube Upload.md#Tab
 
 %%
 ## Drawing
-```json
-{
-	"type": "excalidraw",
-	"version": 2,
-	"source": "https://github.com/zsviczian/obsidian-excalidraw-plugin/releases/tag/2.2.2",
-	"elements": [
-		{
-			"type": "embeddable",
-			"version": 778,
-			"versionNonce": 712004236,
-			"index": "a0",
-			"isDeleted": false,
-			"id": "cqasGqqJ",
-			"fillStyle": "hachure",
-			"strokeWidth": 1,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
-			"angle": 0,
-			"x": -747.5021061454199,
-			"y": -910.619949133179,
-			"strokeColor": "#000000",
-			"backgroundColor": "transparent",
-			"width": 820.2427122401591,
-			"height": 330.5377817830738,
-			"seed": 94149,
-			"groupIds": [],
-			"frameId": null,
-			"roundness": null,
-			"boundElements": [],
-			"updated": 1716303656161,
-			"link": "[[_System Design Template#Table 1]]",
-			"locked": false,
-			"customData": {
-				"mdProps": {
-					"useObsidianDefaults": false,
-					"backgroundMatchCanvas": false,
-					"backgroundMatchElement": true,
-					"backgroundColor": "#fff",
-					"backgroundOpacity": 60,
-					"borderMatchElement": true,
-					"borderColor": "#fff",
-					"borderOpacity": 0,
-					"filenameVisible": false
-				}
-			},
-			"scale": [
-				1,
-				1
-			]
-		},
-		{
-			"type": "embeddable",
-			"version": 267,
-			"versionNonce": 828125094,
-			"index": "a1",
-			"isDeleted": false,
-			"id": "Mf9OBUwN",
-			"fillStyle": "hachure",
-			"strokeWidth": 1,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
-			"angle": 0,
-			"x": 155.71321911010398,
-			"y": -1141.4509123432636,
-			"strokeColor": "#000000",
-			"backgroundColor": "transparent",
-			"width": 598.6017113690564,
-			"height": 291.548805907991,
-			"seed": 41078,
-			"groupIds": [
-				"8iqW4reCuNgs5gs8CRDjC"
-			],
-			"frameId": null,
-			"roundness": null,
-			"boundElements": [],
-			"updated": 1716303656161,
-			"link": "[[Architecture/System Design/Questions/Designing YouTube Upload.md#Table User]]",
-			"locked": false,
-			"customData": {
-				"mdProps": {
-					"useObsidianDefaults": false,
-					"backgroundMatchCanvas": false,
-					"backgroundMatchElement": true,
-					"backgroundColor": "#fff",
-					"backgroundOpacity": 60,
-					"borderMatchElement": true,
-					"borderColor": "#fff",
-					"borderOpacity": 0,
-					"filenameVisible": false
-				}
-			},
-			"scale": [
-				1,
-				1
-			]
-		},
-		{
-			"type": "text",
-			"version": 204,
-			"versionNonce": 497661381,
-			"index": "a2",
-			"isDeleted": false,
-			"id": "zmns1Vak",
-			"fillStyle": "solid",
-			"strokeWidth": 2,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
-			"angle": 0,
-			"x": 294.4816351961232,
-			"y": -1253.1033152810428,
-			"strokeColor": "#1e1e1e",
-			"backgroundColor": "transparent",
-			"width": 322.1463623046875,
-			"height": 72.931463503065,
-			"seed": 1743798023,
-			"groupIds": [
-				"8iqW4reCuNgs5gs8CRDjC"
-			],
-			"frameId": null,
-			"roundness": null,
-			"boundElements": [],
-			"updated": 1716303656759,
-			"link": null,
-			"locked": false,
-			"fontSize": 58.345170802452,
-			"fontFamily": 1,
-			"text": "User Table",
-			"rawText": "User Table",
-			"textAlign": "left",
-			"verticalAlign": "top",
-			"containerId": null,
-			"originalText": "User Table",
-			"autoResize": true,
-			"lineHeight": 1.25
-		},
-		{
-			"type": "embeddable",
-			"version": 108,
-			"versionNonce": 937489158,
-			"index": "a3",
-			"isDeleted": false,
-			"id": "gPBXehTo",
-			"fillStyle": "hachure",
-			"strokeWidth": 1,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
-			"angle": 0,
-			"x": 914.6775919001338,
-			"y": -974.0370603192141,
-			"strokeColor": "#000000",
-			"backgroundColor": "transparent",
-			"width": 391.4798990885421,
-			"height": 290.7396569826509,
-			"seed": 51869,
-			"groupIds": [],
-			"frameId": null,
-			"roundness": null,
-			"boundElements": [],
-			"updated": 1716303656161,
-			"link": "[[Architecture/System Design/Questions/Designing YouTube Upload.md#Table Region]]",
-			"locked": false,
-			"customData": {
-				"mdProps": {
-					"useObsidianDefaults": false,
-					"backgroundMatchCanvas": false,
-					"backgroundMatchElement": true,
-					"backgroundColor": "#fff",
-					"backgroundOpacity": 60,
-					"borderMatchElement": true,
-					"borderColor": "#fff",
-					"borderOpacity": 0,
-					"filenameVisible": false
-				}
-			},
-			"scale": [
-				1,
-				1
-			]
-		},
-		{
-			"type": "arrow",
-			"version": 77,
-			"versionNonce": 1763666891,
-			"index": "a4",
-			"isDeleted": false,
-			"id": "ftC1hzyHhNxrfFq4MBV7J",
-			"fillStyle": "solid",
-			"strokeWidth": 2,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
-			"angle": 0,
-			"x": 646.2066639453367,
-			"y": -1074.957784936098,
-			"strokeColor": "#1e1e1e",
-			"backgroundColor": "transparent",
-			"width": 365.1483832465278,
-			"height": 214.22037760416652,
-			"seed": 1700446377,
-			"groupIds": [],
-			"frameId": null,
-			"roundness": {
-				"type": 2
-			},
-			"boundElements": [],
-			"updated": 1716303656161,
-			"link": null,
-			"locked": false,
-			"startBinding": null,
-			"endBinding": null,
-			"lastCommittedPoint": null,
-			"startArrowhead": null,
-			"endArrowhead": "arrow",
-			"points": [
-				[
-					0,
-					0
-				],
-				[
-					365.1483832465278,
-					214.22037760416652
-				]
-			]
-		}
-	],
-	"appState": {
-		"theme": "light",
-		"viewBackgroundColor": "transparent",
-		"currentItemStrokeColor": "#1e1e1e",
-		"currentItemBackgroundColor": "transparent",
-		"currentItemFillStyle": "solid",
-		"currentItemStrokeWidth": 2,
-		"currentItemStrokeStyle": "solid",
-		"currentItemRoughness": 1,
-		"currentItemOpacity": 100,
-		"currentItemFontFamily": 1,
-		"currentItemFontSize": 20,
-		"currentItemTextAlign": "left",
-		"currentItemStartArrowhead": null,
-		"currentItemEndArrowhead": "arrow",
-		"scrollX": 924.4223075783718,
-		"scrollY": 2585.4208663155737,
-		"zoom": {
-			"value": 0.30000000000000004
-		},
-		"currentItemRoundness": "round",
-		"gridSize": null,
-		"gridColor": {
-			"Bold": "#C9C9C9FF",
-			"Regular": "#EDEDEDFF"
-		},
-		"currentStrokeOptions": null,
-		"previousGridSize": null,
-		"frameRendering": {
-			"enabled": true,
-			"clip": true,
-			"name": true,
-			"outline": true
-		},
-		"objectsSnapModeEnabled": false
-	},
-	"files": {}
-}
+```compressed-json
+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
 ```
 %%
