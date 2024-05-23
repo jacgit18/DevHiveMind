@@ -34,6 +34,1256 @@ var __toESM = (mod, isNodeMode, target) => (target = mod != null ? __create(__ge
 ));
 var __toCommonJS = (mod) => __copyProps(__defProp({}, "__esModule", { value: true }), mod);
 
+// node_modules/cuint/lib/uint32.js
+var require_uint32 = __commonJS({
+  "node_modules/cuint/lib/uint32.js"(exports, module2) {
+    (function(root) {
+      var radixPowerCache = {
+        36: UINT32(Math.pow(36, 5)),
+        16: UINT32(Math.pow(16, 7)),
+        10: UINT32(Math.pow(10, 9)),
+        2: UINT32(Math.pow(2, 30))
+      };
+      var radixCache = {
+        36: UINT32(36),
+        16: UINT32(16),
+        10: UINT32(10),
+        2: UINT32(2)
+      };
+      function UINT32(l, h) {
+        if (!(this instanceof UINT32))
+          return new UINT32(l, h);
+        this._low = 0;
+        this._high = 0;
+        this.remainder = null;
+        if (typeof h == "undefined")
+          return fromNumber.call(this, l);
+        if (typeof l == "string")
+          return fromString.call(this, l, h);
+        fromBits.call(this, l, h);
+      }
+      function fromBits(l, h) {
+        this._low = l | 0;
+        this._high = h | 0;
+        return this;
+      }
+      UINT32.prototype.fromBits = fromBits;
+      function fromNumber(value) {
+        this._low = value & 65535;
+        this._high = value >>> 16;
+        return this;
+      }
+      UINT32.prototype.fromNumber = fromNumber;
+      function fromString(s, radix) {
+        var value = parseInt(s, radix || 10);
+        this._low = value & 65535;
+        this._high = value >>> 16;
+        return this;
+      }
+      UINT32.prototype.fromString = fromString;
+      UINT32.prototype.toNumber = function() {
+        return this._high * 65536 + this._low;
+      };
+      UINT32.prototype.toString = function(radix) {
+        return this.toNumber().toString(radix || 10);
+      };
+      UINT32.prototype.add = function(other) {
+        var a00 = this._low + other._low;
+        var a16 = a00 >>> 16;
+        a16 += this._high + other._high;
+        this._low = a00 & 65535;
+        this._high = a16 & 65535;
+        return this;
+      };
+      UINT32.prototype.subtract = function(other) {
+        return this.add(other.clone().negate());
+      };
+      UINT32.prototype.multiply = function(other) {
+        var a16 = this._high;
+        var a00 = this._low;
+        var b16 = other._high;
+        var b00 = other._low;
+        var c16, c00;
+        c00 = a00 * b00;
+        c16 = c00 >>> 16;
+        c16 += a16 * b00;
+        c16 &= 65535;
+        c16 += a00 * b16;
+        this._low = c00 & 65535;
+        this._high = c16 & 65535;
+        return this;
+      };
+      UINT32.prototype.div = function(other) {
+        if (other._low == 0 && other._high == 0)
+          throw Error("division by zero");
+        if (other._high == 0 && other._low == 1) {
+          this.remainder = new UINT32(0);
+          return this;
+        }
+        if (other.gt(this)) {
+          this.remainder = this.clone();
+          this._low = 0;
+          this._high = 0;
+          return this;
+        }
+        if (this.eq(other)) {
+          this.remainder = new UINT32(0);
+          this._low = 1;
+          this._high = 0;
+          return this;
+        }
+        var _other = other.clone();
+        var i = -1;
+        while (!this.lt(_other)) {
+          _other.shiftLeft(1, true);
+          i++;
+        }
+        this.remainder = this.clone();
+        this._low = 0;
+        this._high = 0;
+        for (; i >= 0; i--) {
+          _other.shiftRight(1);
+          if (!this.remainder.lt(_other)) {
+            this.remainder.subtract(_other);
+            if (i >= 16) {
+              this._high |= 1 << i - 16;
+            } else {
+              this._low |= 1 << i;
+            }
+          }
+        }
+        return this;
+      };
+      UINT32.prototype.negate = function() {
+        var v = (~this._low & 65535) + 1;
+        this._low = v & 65535;
+        this._high = ~this._high + (v >>> 16) & 65535;
+        return this;
+      };
+      UINT32.prototype.equals = UINT32.prototype.eq = function(other) {
+        return this._low == other._low && this._high == other._high;
+      };
+      UINT32.prototype.greaterThan = UINT32.prototype.gt = function(other) {
+        if (this._high > other._high)
+          return true;
+        if (this._high < other._high)
+          return false;
+        return this._low > other._low;
+      };
+      UINT32.prototype.lessThan = UINT32.prototype.lt = function(other) {
+        if (this._high < other._high)
+          return true;
+        if (this._high > other._high)
+          return false;
+        return this._low < other._low;
+      };
+      UINT32.prototype.or = function(other) {
+        this._low |= other._low;
+        this._high |= other._high;
+        return this;
+      };
+      UINT32.prototype.and = function(other) {
+        this._low &= other._low;
+        this._high &= other._high;
+        return this;
+      };
+      UINT32.prototype.not = function() {
+        this._low = ~this._low & 65535;
+        this._high = ~this._high & 65535;
+        return this;
+      };
+      UINT32.prototype.xor = function(other) {
+        this._low ^= other._low;
+        this._high ^= other._high;
+        return this;
+      };
+      UINT32.prototype.shiftRight = UINT32.prototype.shiftr = function(n) {
+        if (n > 16) {
+          this._low = this._high >> n - 16;
+          this._high = 0;
+        } else if (n == 16) {
+          this._low = this._high;
+          this._high = 0;
+        } else {
+          this._low = this._low >> n | this._high << 16 - n & 65535;
+          this._high >>= n;
+        }
+        return this;
+      };
+      UINT32.prototype.shiftLeft = UINT32.prototype.shiftl = function(n, allowOverflow) {
+        if (n > 16) {
+          this._high = this._low << n - 16;
+          this._low = 0;
+          if (!allowOverflow) {
+            this._high &= 65535;
+          }
+        } else if (n == 16) {
+          this._high = this._low;
+          this._low = 0;
+        } else {
+          this._high = this._high << n | this._low >> 16 - n;
+          this._low = this._low << n & 65535;
+          if (!allowOverflow) {
+            this._high &= 65535;
+          }
+        }
+        return this;
+      };
+      UINT32.prototype.rotateLeft = UINT32.prototype.rotl = function(n) {
+        var v = this._high << 16 | this._low;
+        v = v << n | v >>> 32 - n;
+        this._low = v & 65535;
+        this._high = v >>> 16;
+        return this;
+      };
+      UINT32.prototype.rotateRight = UINT32.prototype.rotr = function(n) {
+        var v = this._high << 16 | this._low;
+        v = v >>> n | v << 32 - n;
+        this._low = v & 65535;
+        this._high = v >>> 16;
+        return this;
+      };
+      UINT32.prototype.clone = function() {
+        return new UINT32(this._low, this._high);
+      };
+      if (typeof define != "undefined" && define.amd) {
+        define([], function() {
+          return UINT32;
+        });
+      } else if (typeof module2 != "undefined" && module2.exports) {
+        module2.exports = UINT32;
+      } else {
+        root["UINT32"] = UINT32;
+      }
+    })(exports);
+  }
+});
+
+// node_modules/cuint/lib/uint64.js
+var require_uint64 = __commonJS({
+  "node_modules/cuint/lib/uint64.js"(exports, module2) {
+    (function(root) {
+      var radixPowerCache = {
+        16: UINT64(Math.pow(16, 5)),
+        10: UINT64(Math.pow(10, 5)),
+        2: UINT64(Math.pow(2, 5))
+      };
+      var radixCache = {
+        16: UINT64(16),
+        10: UINT64(10),
+        2: UINT64(2)
+      };
+      function UINT64(a00, a16, a32, a48) {
+        if (!(this instanceof UINT64))
+          return new UINT64(a00, a16, a32, a48);
+        this.remainder = null;
+        if (typeof a00 == "string")
+          return fromString.call(this, a00, a16);
+        if (typeof a16 == "undefined")
+          return fromNumber.call(this, a00);
+        fromBits.apply(this, arguments);
+      }
+      function fromBits(a00, a16, a32, a48) {
+        if (typeof a32 == "undefined") {
+          this._a00 = a00 & 65535;
+          this._a16 = a00 >>> 16;
+          this._a32 = a16 & 65535;
+          this._a48 = a16 >>> 16;
+          return this;
+        }
+        this._a00 = a00 | 0;
+        this._a16 = a16 | 0;
+        this._a32 = a32 | 0;
+        this._a48 = a48 | 0;
+        return this;
+      }
+      UINT64.prototype.fromBits = fromBits;
+      function fromNumber(value) {
+        this._a00 = value & 65535;
+        this._a16 = value >>> 16;
+        this._a32 = 0;
+        this._a48 = 0;
+        return this;
+      }
+      UINT64.prototype.fromNumber = fromNumber;
+      function fromString(s, radix) {
+        radix = radix || 10;
+        this._a00 = 0;
+        this._a16 = 0;
+        this._a32 = 0;
+        this._a48 = 0;
+        var radixUint = radixPowerCache[radix] || new UINT64(Math.pow(radix, 5));
+        for (var i = 0, len = s.length; i < len; i += 5) {
+          var size = Math.min(5, len - i);
+          var value = parseInt(s.slice(i, i + size), radix);
+          this.multiply(
+            size < 5 ? new UINT64(Math.pow(radix, size)) : radixUint
+          ).add(new UINT64(value));
+        }
+        return this;
+      }
+      UINT64.prototype.fromString = fromString;
+      UINT64.prototype.toNumber = function() {
+        return this._a16 * 65536 + this._a00;
+      };
+      UINT64.prototype.toString = function(radix) {
+        radix = radix || 10;
+        var radixUint = radixCache[radix] || new UINT64(radix);
+        if (!this.gt(radixUint))
+          return this.toNumber().toString(radix);
+        var self2 = this.clone();
+        var res = new Array(64);
+        for (var i = 63; i >= 0; i--) {
+          self2.div(radixUint);
+          res[i] = self2.remainder.toNumber().toString(radix);
+          if (!self2.gt(radixUint))
+            break;
+        }
+        res[i - 1] = self2.toNumber().toString(radix);
+        return res.join("");
+      };
+      UINT64.prototype.add = function(other) {
+        var a00 = this._a00 + other._a00;
+        var a16 = a00 >>> 16;
+        a16 += this._a16 + other._a16;
+        var a32 = a16 >>> 16;
+        a32 += this._a32 + other._a32;
+        var a48 = a32 >>> 16;
+        a48 += this._a48 + other._a48;
+        this._a00 = a00 & 65535;
+        this._a16 = a16 & 65535;
+        this._a32 = a32 & 65535;
+        this._a48 = a48 & 65535;
+        return this;
+      };
+      UINT64.prototype.subtract = function(other) {
+        return this.add(other.clone().negate());
+      };
+      UINT64.prototype.multiply = function(other) {
+        var a00 = this._a00;
+        var a16 = this._a16;
+        var a32 = this._a32;
+        var a48 = this._a48;
+        var b00 = other._a00;
+        var b16 = other._a16;
+        var b32 = other._a32;
+        var b48 = other._a48;
+        var c00 = a00 * b00;
+        var c16 = c00 >>> 16;
+        c16 += a00 * b16;
+        var c32 = c16 >>> 16;
+        c16 &= 65535;
+        c16 += a16 * b00;
+        c32 += c16 >>> 16;
+        c32 += a00 * b32;
+        var c48 = c32 >>> 16;
+        c32 &= 65535;
+        c32 += a16 * b16;
+        c48 += c32 >>> 16;
+        c32 &= 65535;
+        c32 += a32 * b00;
+        c48 += c32 >>> 16;
+        c48 += a00 * b48;
+        c48 &= 65535;
+        c48 += a16 * b32;
+        c48 &= 65535;
+        c48 += a32 * b16;
+        c48 &= 65535;
+        c48 += a48 * b00;
+        this._a00 = c00 & 65535;
+        this._a16 = c16 & 65535;
+        this._a32 = c32 & 65535;
+        this._a48 = c48 & 65535;
+        return this;
+      };
+      UINT64.prototype.div = function(other) {
+        if (other._a16 == 0 && other._a32 == 0 && other._a48 == 0) {
+          if (other._a00 == 0)
+            throw Error("division by zero");
+          if (other._a00 == 1) {
+            this.remainder = new UINT64(0);
+            return this;
+          }
+        }
+        if (other.gt(this)) {
+          this.remainder = this.clone();
+          this._a00 = 0;
+          this._a16 = 0;
+          this._a32 = 0;
+          this._a48 = 0;
+          return this;
+        }
+        if (this.eq(other)) {
+          this.remainder = new UINT64(0);
+          this._a00 = 1;
+          this._a16 = 0;
+          this._a32 = 0;
+          this._a48 = 0;
+          return this;
+        }
+        var _other = other.clone();
+        var i = -1;
+        while (!this.lt(_other)) {
+          _other.shiftLeft(1, true);
+          i++;
+        }
+        this.remainder = this.clone();
+        this._a00 = 0;
+        this._a16 = 0;
+        this._a32 = 0;
+        this._a48 = 0;
+        for (; i >= 0; i--) {
+          _other.shiftRight(1);
+          if (!this.remainder.lt(_other)) {
+            this.remainder.subtract(_other);
+            if (i >= 48) {
+              this._a48 |= 1 << i - 48;
+            } else if (i >= 32) {
+              this._a32 |= 1 << i - 32;
+            } else if (i >= 16) {
+              this._a16 |= 1 << i - 16;
+            } else {
+              this._a00 |= 1 << i;
+            }
+          }
+        }
+        return this;
+      };
+      UINT64.prototype.negate = function() {
+        var v = (~this._a00 & 65535) + 1;
+        this._a00 = v & 65535;
+        v = (~this._a16 & 65535) + (v >>> 16);
+        this._a16 = v & 65535;
+        v = (~this._a32 & 65535) + (v >>> 16);
+        this._a32 = v & 65535;
+        this._a48 = ~this._a48 + (v >>> 16) & 65535;
+        return this;
+      };
+      UINT64.prototype.equals = UINT64.prototype.eq = function(other) {
+        return this._a48 == other._a48 && this._a00 == other._a00 && this._a32 == other._a32 && this._a16 == other._a16;
+      };
+      UINT64.prototype.greaterThan = UINT64.prototype.gt = function(other) {
+        if (this._a48 > other._a48)
+          return true;
+        if (this._a48 < other._a48)
+          return false;
+        if (this._a32 > other._a32)
+          return true;
+        if (this._a32 < other._a32)
+          return false;
+        if (this._a16 > other._a16)
+          return true;
+        if (this._a16 < other._a16)
+          return false;
+        return this._a00 > other._a00;
+      };
+      UINT64.prototype.lessThan = UINT64.prototype.lt = function(other) {
+        if (this._a48 < other._a48)
+          return true;
+        if (this._a48 > other._a48)
+          return false;
+        if (this._a32 < other._a32)
+          return true;
+        if (this._a32 > other._a32)
+          return false;
+        if (this._a16 < other._a16)
+          return true;
+        if (this._a16 > other._a16)
+          return false;
+        return this._a00 < other._a00;
+      };
+      UINT64.prototype.or = function(other) {
+        this._a00 |= other._a00;
+        this._a16 |= other._a16;
+        this._a32 |= other._a32;
+        this._a48 |= other._a48;
+        return this;
+      };
+      UINT64.prototype.and = function(other) {
+        this._a00 &= other._a00;
+        this._a16 &= other._a16;
+        this._a32 &= other._a32;
+        this._a48 &= other._a48;
+        return this;
+      };
+      UINT64.prototype.xor = function(other) {
+        this._a00 ^= other._a00;
+        this._a16 ^= other._a16;
+        this._a32 ^= other._a32;
+        this._a48 ^= other._a48;
+        return this;
+      };
+      UINT64.prototype.not = function() {
+        this._a00 = ~this._a00 & 65535;
+        this._a16 = ~this._a16 & 65535;
+        this._a32 = ~this._a32 & 65535;
+        this._a48 = ~this._a48 & 65535;
+        return this;
+      };
+      UINT64.prototype.shiftRight = UINT64.prototype.shiftr = function(n) {
+        n %= 64;
+        if (n >= 48) {
+          this._a00 = this._a48 >> n - 48;
+          this._a16 = 0;
+          this._a32 = 0;
+          this._a48 = 0;
+        } else if (n >= 32) {
+          n -= 32;
+          this._a00 = (this._a32 >> n | this._a48 << 16 - n) & 65535;
+          this._a16 = this._a48 >> n & 65535;
+          this._a32 = 0;
+          this._a48 = 0;
+        } else if (n >= 16) {
+          n -= 16;
+          this._a00 = (this._a16 >> n | this._a32 << 16 - n) & 65535;
+          this._a16 = (this._a32 >> n | this._a48 << 16 - n) & 65535;
+          this._a32 = this._a48 >> n & 65535;
+          this._a48 = 0;
+        } else {
+          this._a00 = (this._a00 >> n | this._a16 << 16 - n) & 65535;
+          this._a16 = (this._a16 >> n | this._a32 << 16 - n) & 65535;
+          this._a32 = (this._a32 >> n | this._a48 << 16 - n) & 65535;
+          this._a48 = this._a48 >> n & 65535;
+        }
+        return this;
+      };
+      UINT64.prototype.shiftLeft = UINT64.prototype.shiftl = function(n, allowOverflow) {
+        n %= 64;
+        if (n >= 48) {
+          this._a48 = this._a00 << n - 48;
+          this._a32 = 0;
+          this._a16 = 0;
+          this._a00 = 0;
+        } else if (n >= 32) {
+          n -= 32;
+          this._a48 = this._a16 << n | this._a00 >> 16 - n;
+          this._a32 = this._a00 << n & 65535;
+          this._a16 = 0;
+          this._a00 = 0;
+        } else if (n >= 16) {
+          n -= 16;
+          this._a48 = this._a32 << n | this._a16 >> 16 - n;
+          this._a32 = (this._a16 << n | this._a00 >> 16 - n) & 65535;
+          this._a16 = this._a00 << n & 65535;
+          this._a00 = 0;
+        } else {
+          this._a48 = this._a48 << n | this._a32 >> 16 - n;
+          this._a32 = (this._a32 << n | this._a16 >> 16 - n) & 65535;
+          this._a16 = (this._a16 << n | this._a00 >> 16 - n) & 65535;
+          this._a00 = this._a00 << n & 65535;
+        }
+        if (!allowOverflow) {
+          this._a48 &= 65535;
+        }
+        return this;
+      };
+      UINT64.prototype.rotateLeft = UINT64.prototype.rotl = function(n) {
+        n %= 64;
+        if (n == 0)
+          return this;
+        if (n >= 32) {
+          var v = this._a00;
+          this._a00 = this._a32;
+          this._a32 = v;
+          v = this._a48;
+          this._a48 = this._a16;
+          this._a16 = v;
+          if (n == 32)
+            return this;
+          n -= 32;
+        }
+        var high = this._a48 << 16 | this._a32;
+        var low = this._a16 << 16 | this._a00;
+        var _high = high << n | low >>> 32 - n;
+        var _low = low << n | high >>> 32 - n;
+        this._a00 = _low & 65535;
+        this._a16 = _low >>> 16;
+        this._a32 = _high & 65535;
+        this._a48 = _high >>> 16;
+        return this;
+      };
+      UINT64.prototype.rotateRight = UINT64.prototype.rotr = function(n) {
+        n %= 64;
+        if (n == 0)
+          return this;
+        if (n >= 32) {
+          var v = this._a00;
+          this._a00 = this._a32;
+          this._a32 = v;
+          v = this._a48;
+          this._a48 = this._a16;
+          this._a16 = v;
+          if (n == 32)
+            return this;
+          n -= 32;
+        }
+        var high = this._a48 << 16 | this._a32;
+        var low = this._a16 << 16 | this._a00;
+        var _high = high >>> n | low << 32 - n;
+        var _low = low >>> n | high << 32 - n;
+        this._a00 = _low & 65535;
+        this._a16 = _low >>> 16;
+        this._a32 = _high & 65535;
+        this._a48 = _high >>> 16;
+        return this;
+      };
+      UINT64.prototype.clone = function() {
+        return new UINT64(this._a00, this._a16, this._a32, this._a48);
+      };
+      if (typeof define != "undefined" && define.amd) {
+        define([], function() {
+          return UINT64;
+        });
+      } else if (typeof module2 != "undefined" && module2.exports) {
+        module2.exports = UINT64;
+      } else {
+        root["UINT64"] = UINT64;
+      }
+    })(exports);
+  }
+});
+
+// node_modules/cuint/index.js
+var require_cuint = __commonJS({
+  "node_modules/cuint/index.js"(exports) {
+    exports.UINT32 = require_uint32();
+    exports.UINT64 = require_uint64();
+  }
+});
+
+// node_modules/xxhashjs/lib/xxhash.js
+var require_xxhash = __commonJS({
+  "node_modules/xxhashjs/lib/xxhash.js"(exports, module2) {
+    var UINT32 = require_cuint().UINT32;
+    UINT32.prototype.xxh_update = function(low, high) {
+      var b00 = PRIME32_2._low;
+      var b16 = PRIME32_2._high;
+      var c16, c00;
+      c00 = low * b00;
+      c16 = c00 >>> 16;
+      c16 += high * b00;
+      c16 &= 65535;
+      c16 += low * b16;
+      var a00 = this._low + (c00 & 65535);
+      var a16 = a00 >>> 16;
+      a16 += this._high + (c16 & 65535);
+      var v = a16 << 16 | a00 & 65535;
+      v = v << 13 | v >>> 19;
+      a00 = v & 65535;
+      a16 = v >>> 16;
+      b00 = PRIME32_1._low;
+      b16 = PRIME32_1._high;
+      c00 = a00 * b00;
+      c16 = c00 >>> 16;
+      c16 += a16 * b00;
+      c16 &= 65535;
+      c16 += a00 * b16;
+      this._low = c00 & 65535;
+      this._high = c16 & 65535;
+    };
+    var PRIME32_1 = UINT32("2654435761");
+    var PRIME32_2 = UINT32("2246822519");
+    var PRIME32_3 = UINT32("3266489917");
+    var PRIME32_4 = UINT32("668265263");
+    var PRIME32_5 = UINT32("374761393");
+    function toUTF8Array(str) {
+      var utf8 = [];
+      for (var i = 0, n = str.length; i < n; i++) {
+        var charcode = str.charCodeAt(i);
+        if (charcode < 128)
+          utf8.push(charcode);
+        else if (charcode < 2048) {
+          utf8.push(
+            192 | charcode >> 6,
+            128 | charcode & 63
+          );
+        } else if (charcode < 55296 || charcode >= 57344) {
+          utf8.push(
+            224 | charcode >> 12,
+            128 | charcode >> 6 & 63,
+            128 | charcode & 63
+          );
+        } else {
+          i++;
+          charcode = 65536 + ((charcode & 1023) << 10 | str.charCodeAt(i) & 1023);
+          utf8.push(
+            240 | charcode >> 18,
+            128 | charcode >> 12 & 63,
+            128 | charcode >> 6 & 63,
+            128 | charcode & 63
+          );
+        }
+      }
+      return new Uint8Array(utf8);
+    }
+    function XXH2() {
+      if (arguments.length == 2)
+        return new XXH2(arguments[1]).update(arguments[0]).digest();
+      if (!(this instanceof XXH2))
+        return new XXH2(arguments[0]);
+      init.call(this, arguments[0]);
+    }
+    function init(seed) {
+      this.seed = seed instanceof UINT32 ? seed.clone() : UINT32(seed);
+      this.v1 = this.seed.clone().add(PRIME32_1).add(PRIME32_2);
+      this.v2 = this.seed.clone().add(PRIME32_2);
+      this.v3 = this.seed.clone();
+      this.v4 = this.seed.clone().subtract(PRIME32_1);
+      this.total_len = 0;
+      this.memsize = 0;
+      this.memory = null;
+      return this;
+    }
+    XXH2.prototype.init = init;
+    XXH2.prototype.update = function(input) {
+      var isString = typeof input == "string";
+      var isArrayBuffer;
+      if (isString) {
+        input = toUTF8Array(input);
+        isString = false;
+        isArrayBuffer = true;
+      }
+      if (typeof ArrayBuffer !== "undefined" && input instanceof ArrayBuffer) {
+        isArrayBuffer = true;
+        input = new Uint8Array(input);
+      }
+      var p = 0;
+      var len = input.length;
+      var bEnd = p + len;
+      if (len == 0)
+        return this;
+      this.total_len += len;
+      if (this.memsize == 0) {
+        if (isString) {
+          this.memory = "";
+        } else if (isArrayBuffer) {
+          this.memory = new Uint8Array(16);
+        } else {
+          this.memory = new Buffer(16);
+        }
+      }
+      if (this.memsize + len < 16) {
+        if (isString) {
+          this.memory += input;
+        } else if (isArrayBuffer) {
+          this.memory.set(input.subarray(0, len), this.memsize);
+        } else {
+          input.copy(this.memory, this.memsize, 0, len);
+        }
+        this.memsize += len;
+        return this;
+      }
+      if (this.memsize > 0) {
+        if (isString) {
+          this.memory += input.slice(0, 16 - this.memsize);
+        } else if (isArrayBuffer) {
+          this.memory.set(input.subarray(0, 16 - this.memsize), this.memsize);
+        } else {
+          input.copy(this.memory, this.memsize, 0, 16 - this.memsize);
+        }
+        var p32 = 0;
+        if (isString) {
+          this.v1.xxh_update(
+            this.memory.charCodeAt(p32 + 1) << 8 | this.memory.charCodeAt(p32),
+            this.memory.charCodeAt(p32 + 3) << 8 | this.memory.charCodeAt(p32 + 2)
+          );
+          p32 += 4;
+          this.v2.xxh_update(
+            this.memory.charCodeAt(p32 + 1) << 8 | this.memory.charCodeAt(p32),
+            this.memory.charCodeAt(p32 + 3) << 8 | this.memory.charCodeAt(p32 + 2)
+          );
+          p32 += 4;
+          this.v3.xxh_update(
+            this.memory.charCodeAt(p32 + 1) << 8 | this.memory.charCodeAt(p32),
+            this.memory.charCodeAt(p32 + 3) << 8 | this.memory.charCodeAt(p32 + 2)
+          );
+          p32 += 4;
+          this.v4.xxh_update(
+            this.memory.charCodeAt(p32 + 1) << 8 | this.memory.charCodeAt(p32),
+            this.memory.charCodeAt(p32 + 3) << 8 | this.memory.charCodeAt(p32 + 2)
+          );
+        } else {
+          this.v1.xxh_update(
+            this.memory[p32 + 1] << 8 | this.memory[p32],
+            this.memory[p32 + 3] << 8 | this.memory[p32 + 2]
+          );
+          p32 += 4;
+          this.v2.xxh_update(
+            this.memory[p32 + 1] << 8 | this.memory[p32],
+            this.memory[p32 + 3] << 8 | this.memory[p32 + 2]
+          );
+          p32 += 4;
+          this.v3.xxh_update(
+            this.memory[p32 + 1] << 8 | this.memory[p32],
+            this.memory[p32 + 3] << 8 | this.memory[p32 + 2]
+          );
+          p32 += 4;
+          this.v4.xxh_update(
+            this.memory[p32 + 1] << 8 | this.memory[p32],
+            this.memory[p32 + 3] << 8 | this.memory[p32 + 2]
+          );
+        }
+        p += 16 - this.memsize;
+        this.memsize = 0;
+        if (isString)
+          this.memory = "";
+      }
+      if (p <= bEnd - 16) {
+        var limit = bEnd - 16;
+        do {
+          if (isString) {
+            this.v1.xxh_update(
+              input.charCodeAt(p + 1) << 8 | input.charCodeAt(p),
+              input.charCodeAt(p + 3) << 8 | input.charCodeAt(p + 2)
+            );
+            p += 4;
+            this.v2.xxh_update(
+              input.charCodeAt(p + 1) << 8 | input.charCodeAt(p),
+              input.charCodeAt(p + 3) << 8 | input.charCodeAt(p + 2)
+            );
+            p += 4;
+            this.v3.xxh_update(
+              input.charCodeAt(p + 1) << 8 | input.charCodeAt(p),
+              input.charCodeAt(p + 3) << 8 | input.charCodeAt(p + 2)
+            );
+            p += 4;
+            this.v4.xxh_update(
+              input.charCodeAt(p + 1) << 8 | input.charCodeAt(p),
+              input.charCodeAt(p + 3) << 8 | input.charCodeAt(p + 2)
+            );
+          } else {
+            this.v1.xxh_update(
+              input[p + 1] << 8 | input[p],
+              input[p + 3] << 8 | input[p + 2]
+            );
+            p += 4;
+            this.v2.xxh_update(
+              input[p + 1] << 8 | input[p],
+              input[p + 3] << 8 | input[p + 2]
+            );
+            p += 4;
+            this.v3.xxh_update(
+              input[p + 1] << 8 | input[p],
+              input[p + 3] << 8 | input[p + 2]
+            );
+            p += 4;
+            this.v4.xxh_update(
+              input[p + 1] << 8 | input[p],
+              input[p + 3] << 8 | input[p + 2]
+            );
+          }
+          p += 4;
+        } while (p <= limit);
+      }
+      if (p < bEnd) {
+        if (isString) {
+          this.memory += input.slice(p);
+        } else if (isArrayBuffer) {
+          this.memory.set(input.subarray(p, bEnd), this.memsize);
+        } else {
+          input.copy(this.memory, this.memsize, p, bEnd);
+        }
+        this.memsize = bEnd - p;
+      }
+      return this;
+    };
+    XXH2.prototype.digest = function() {
+      var input = this.memory;
+      var isString = typeof input == "string";
+      var p = 0;
+      var bEnd = this.memsize;
+      var h322, h;
+      var u = new UINT32();
+      if (this.total_len >= 16) {
+        h322 = this.v1.rotl(1).add(this.v2.rotl(7).add(this.v3.rotl(12).add(this.v4.rotl(18))));
+      } else {
+        h322 = this.seed.clone().add(PRIME32_5);
+      }
+      h322.add(u.fromNumber(this.total_len));
+      while (p <= bEnd - 4) {
+        if (isString) {
+          u.fromBits(
+            input.charCodeAt(p + 1) << 8 | input.charCodeAt(p),
+            input.charCodeAt(p + 3) << 8 | input.charCodeAt(p + 2)
+          );
+        } else {
+          u.fromBits(
+            input[p + 1] << 8 | input[p],
+            input[p + 3] << 8 | input[p + 2]
+          );
+        }
+        h322.add(u.multiply(PRIME32_3)).rotl(17).multiply(PRIME32_4);
+        p += 4;
+      }
+      while (p < bEnd) {
+        u.fromBits(isString ? input.charCodeAt(p++) : input[p++], 0);
+        h322.add(u.multiply(PRIME32_5)).rotl(11).multiply(PRIME32_1);
+      }
+      h = h322.clone().shiftRight(15);
+      h322.xor(h).multiply(PRIME32_2);
+      h = h322.clone().shiftRight(13);
+      h322.xor(h).multiply(PRIME32_3);
+      h = h322.clone().shiftRight(16);
+      h322.xor(h);
+      this.init(this.seed);
+      return h322;
+    };
+    module2.exports = XXH2;
+  }
+});
+
+// node_modules/xxhashjs/lib/xxhash64.js
+var require_xxhash64 = __commonJS({
+  "node_modules/xxhashjs/lib/xxhash64.js"(exports, module2) {
+    var UINT64 = require_cuint().UINT64;
+    var PRIME64_1 = UINT64("11400714785074694791");
+    var PRIME64_2 = UINT64("14029467366897019727");
+    var PRIME64_3 = UINT64("1609587929392839161");
+    var PRIME64_4 = UINT64("9650029242287828579");
+    var PRIME64_5 = UINT64("2870177450012600261");
+    function toUTF8Array(str) {
+      var utf8 = [];
+      for (var i = 0, n = str.length; i < n; i++) {
+        var charcode = str.charCodeAt(i);
+        if (charcode < 128)
+          utf8.push(charcode);
+        else if (charcode < 2048) {
+          utf8.push(
+            192 | charcode >> 6,
+            128 | charcode & 63
+          );
+        } else if (charcode < 55296 || charcode >= 57344) {
+          utf8.push(
+            224 | charcode >> 12,
+            128 | charcode >> 6 & 63,
+            128 | charcode & 63
+          );
+        } else {
+          i++;
+          charcode = 65536 + ((charcode & 1023) << 10 | str.charCodeAt(i) & 1023);
+          utf8.push(
+            240 | charcode >> 18,
+            128 | charcode >> 12 & 63,
+            128 | charcode >> 6 & 63,
+            128 | charcode & 63
+          );
+        }
+      }
+      return new Uint8Array(utf8);
+    }
+    function XXH64() {
+      if (arguments.length == 2)
+        return new XXH64(arguments[1]).update(arguments[0]).digest();
+      if (!(this instanceof XXH64))
+        return new XXH64(arguments[0]);
+      init.call(this, arguments[0]);
+    }
+    function init(seed) {
+      this.seed = seed instanceof UINT64 ? seed.clone() : UINT64(seed);
+      this.v1 = this.seed.clone().add(PRIME64_1).add(PRIME64_2);
+      this.v2 = this.seed.clone().add(PRIME64_2);
+      this.v3 = this.seed.clone();
+      this.v4 = this.seed.clone().subtract(PRIME64_1);
+      this.total_len = 0;
+      this.memsize = 0;
+      this.memory = null;
+      return this;
+    }
+    XXH64.prototype.init = init;
+    XXH64.prototype.update = function(input) {
+      var isString = typeof input == "string";
+      var isArrayBuffer;
+      if (isString) {
+        input = toUTF8Array(input);
+        isString = false;
+        isArrayBuffer = true;
+      }
+      if (typeof ArrayBuffer !== "undefined" && input instanceof ArrayBuffer) {
+        isArrayBuffer = true;
+        input = new Uint8Array(input);
+      }
+      var p = 0;
+      var len = input.length;
+      var bEnd = p + len;
+      if (len == 0)
+        return this;
+      this.total_len += len;
+      if (this.memsize == 0) {
+        if (isString) {
+          this.memory = "";
+        } else if (isArrayBuffer) {
+          this.memory = new Uint8Array(32);
+        } else {
+          this.memory = new Buffer(32);
+        }
+      }
+      if (this.memsize + len < 32) {
+        if (isString) {
+          this.memory += input;
+        } else if (isArrayBuffer) {
+          this.memory.set(input.subarray(0, len), this.memsize);
+        } else {
+          input.copy(this.memory, this.memsize, 0, len);
+        }
+        this.memsize += len;
+        return this;
+      }
+      if (this.memsize > 0) {
+        if (isString) {
+          this.memory += input.slice(0, 32 - this.memsize);
+        } else if (isArrayBuffer) {
+          this.memory.set(input.subarray(0, 32 - this.memsize), this.memsize);
+        } else {
+          input.copy(this.memory, this.memsize, 0, 32 - this.memsize);
+        }
+        var p64 = 0;
+        if (isString) {
+          var other;
+          other = UINT64(
+            this.memory.charCodeAt(p64 + 1) << 8 | this.memory.charCodeAt(p64),
+            this.memory.charCodeAt(p64 + 3) << 8 | this.memory.charCodeAt(p64 + 2),
+            this.memory.charCodeAt(p64 + 5) << 8 | this.memory.charCodeAt(p64 + 4),
+            this.memory.charCodeAt(p64 + 7) << 8 | this.memory.charCodeAt(p64 + 6)
+          );
+          this.v1.add(other.multiply(PRIME64_2)).rotl(31).multiply(PRIME64_1);
+          p64 += 8;
+          other = UINT64(
+            this.memory.charCodeAt(p64 + 1) << 8 | this.memory.charCodeAt(p64),
+            this.memory.charCodeAt(p64 + 3) << 8 | this.memory.charCodeAt(p64 + 2),
+            this.memory.charCodeAt(p64 + 5) << 8 | this.memory.charCodeAt(p64 + 4),
+            this.memory.charCodeAt(p64 + 7) << 8 | this.memory.charCodeAt(p64 + 6)
+          );
+          this.v2.add(other.multiply(PRIME64_2)).rotl(31).multiply(PRIME64_1);
+          p64 += 8;
+          other = UINT64(
+            this.memory.charCodeAt(p64 + 1) << 8 | this.memory.charCodeAt(p64),
+            this.memory.charCodeAt(p64 + 3) << 8 | this.memory.charCodeAt(p64 + 2),
+            this.memory.charCodeAt(p64 + 5) << 8 | this.memory.charCodeAt(p64 + 4),
+            this.memory.charCodeAt(p64 + 7) << 8 | this.memory.charCodeAt(p64 + 6)
+          );
+          this.v3.add(other.multiply(PRIME64_2)).rotl(31).multiply(PRIME64_1);
+          p64 += 8;
+          other = UINT64(
+            this.memory.charCodeAt(p64 + 1) << 8 | this.memory.charCodeAt(p64),
+            this.memory.charCodeAt(p64 + 3) << 8 | this.memory.charCodeAt(p64 + 2),
+            this.memory.charCodeAt(p64 + 5) << 8 | this.memory.charCodeAt(p64 + 4),
+            this.memory.charCodeAt(p64 + 7) << 8 | this.memory.charCodeAt(p64 + 6)
+          );
+          this.v4.add(other.multiply(PRIME64_2)).rotl(31).multiply(PRIME64_1);
+        } else {
+          var other;
+          other = UINT64(
+            this.memory[p64 + 1] << 8 | this.memory[p64],
+            this.memory[p64 + 3] << 8 | this.memory[p64 + 2],
+            this.memory[p64 + 5] << 8 | this.memory[p64 + 4],
+            this.memory[p64 + 7] << 8 | this.memory[p64 + 6]
+          );
+          this.v1.add(other.multiply(PRIME64_2)).rotl(31).multiply(PRIME64_1);
+          p64 += 8;
+          other = UINT64(
+            this.memory[p64 + 1] << 8 | this.memory[p64],
+            this.memory[p64 + 3] << 8 | this.memory[p64 + 2],
+            this.memory[p64 + 5] << 8 | this.memory[p64 + 4],
+            this.memory[p64 + 7] << 8 | this.memory[p64 + 6]
+          );
+          this.v2.add(other.multiply(PRIME64_2)).rotl(31).multiply(PRIME64_1);
+          p64 += 8;
+          other = UINT64(
+            this.memory[p64 + 1] << 8 | this.memory[p64],
+            this.memory[p64 + 3] << 8 | this.memory[p64 + 2],
+            this.memory[p64 + 5] << 8 | this.memory[p64 + 4],
+            this.memory[p64 + 7] << 8 | this.memory[p64 + 6]
+          );
+          this.v3.add(other.multiply(PRIME64_2)).rotl(31).multiply(PRIME64_1);
+          p64 += 8;
+          other = UINT64(
+            this.memory[p64 + 1] << 8 | this.memory[p64],
+            this.memory[p64 + 3] << 8 | this.memory[p64 + 2],
+            this.memory[p64 + 5] << 8 | this.memory[p64 + 4],
+            this.memory[p64 + 7] << 8 | this.memory[p64 + 6]
+          );
+          this.v4.add(other.multiply(PRIME64_2)).rotl(31).multiply(PRIME64_1);
+        }
+        p += 32 - this.memsize;
+        this.memsize = 0;
+        if (isString)
+          this.memory = "";
+      }
+      if (p <= bEnd - 32) {
+        var limit = bEnd - 32;
+        do {
+          if (isString) {
+            var other;
+            other = UINT64(
+              input.charCodeAt(p + 1) << 8 | input.charCodeAt(p),
+              input.charCodeAt(p + 3) << 8 | input.charCodeAt(p + 2),
+              input.charCodeAt(p + 5) << 8 | input.charCodeAt(p + 4),
+              input.charCodeAt(p + 7) << 8 | input.charCodeAt(p + 6)
+            );
+            this.v1.add(other.multiply(PRIME64_2)).rotl(31).multiply(PRIME64_1);
+            p += 8;
+            other = UINT64(
+              input.charCodeAt(p + 1) << 8 | input.charCodeAt(p),
+              input.charCodeAt(p + 3) << 8 | input.charCodeAt(p + 2),
+              input.charCodeAt(p + 5) << 8 | input.charCodeAt(p + 4),
+              input.charCodeAt(p + 7) << 8 | input.charCodeAt(p + 6)
+            );
+            this.v2.add(other.multiply(PRIME64_2)).rotl(31).multiply(PRIME64_1);
+            p += 8;
+            other = UINT64(
+              input.charCodeAt(p + 1) << 8 | input.charCodeAt(p),
+              input.charCodeAt(p + 3) << 8 | input.charCodeAt(p + 2),
+              input.charCodeAt(p + 5) << 8 | input.charCodeAt(p + 4),
+              input.charCodeAt(p + 7) << 8 | input.charCodeAt(p + 6)
+            );
+            this.v3.add(other.multiply(PRIME64_2)).rotl(31).multiply(PRIME64_1);
+            p += 8;
+            other = UINT64(
+              input.charCodeAt(p + 1) << 8 | input.charCodeAt(p),
+              input.charCodeAt(p + 3) << 8 | input.charCodeAt(p + 2),
+              input.charCodeAt(p + 5) << 8 | input.charCodeAt(p + 4),
+              input.charCodeAt(p + 7) << 8 | input.charCodeAt(p + 6)
+            );
+            this.v4.add(other.multiply(PRIME64_2)).rotl(31).multiply(PRIME64_1);
+          } else {
+            var other;
+            other = UINT64(
+              input[p + 1] << 8 | input[p],
+              input[p + 3] << 8 | input[p + 2],
+              input[p + 5] << 8 | input[p + 4],
+              input[p + 7] << 8 | input[p + 6]
+            );
+            this.v1.add(other.multiply(PRIME64_2)).rotl(31).multiply(PRIME64_1);
+            p += 8;
+            other = UINT64(
+              input[p + 1] << 8 | input[p],
+              input[p + 3] << 8 | input[p + 2],
+              input[p + 5] << 8 | input[p + 4],
+              input[p + 7] << 8 | input[p + 6]
+            );
+            this.v2.add(other.multiply(PRIME64_2)).rotl(31).multiply(PRIME64_1);
+            p += 8;
+            other = UINT64(
+              input[p + 1] << 8 | input[p],
+              input[p + 3] << 8 | input[p + 2],
+              input[p + 5] << 8 | input[p + 4],
+              input[p + 7] << 8 | input[p + 6]
+            );
+            this.v3.add(other.multiply(PRIME64_2)).rotl(31).multiply(PRIME64_1);
+            p += 8;
+            other = UINT64(
+              input[p + 1] << 8 | input[p],
+              input[p + 3] << 8 | input[p + 2],
+              input[p + 5] << 8 | input[p + 4],
+              input[p + 7] << 8 | input[p + 6]
+            );
+            this.v4.add(other.multiply(PRIME64_2)).rotl(31).multiply(PRIME64_1);
+          }
+          p += 8;
+        } while (p <= limit);
+      }
+      if (p < bEnd) {
+        if (isString) {
+          this.memory += input.slice(p);
+        } else if (isArrayBuffer) {
+          this.memory.set(input.subarray(p, bEnd), this.memsize);
+        } else {
+          input.copy(this.memory, this.memsize, p, bEnd);
+        }
+        this.memsize = bEnd - p;
+      }
+      return this;
+    };
+    XXH64.prototype.digest = function() {
+      var input = this.memory;
+      var isString = typeof input == "string";
+      var p = 0;
+      var bEnd = this.memsize;
+      var h64, h;
+      var u = new UINT64();
+      if (this.total_len >= 32) {
+        h64 = this.v1.clone().rotl(1);
+        h64.add(this.v2.clone().rotl(7));
+        h64.add(this.v3.clone().rotl(12));
+        h64.add(this.v4.clone().rotl(18));
+        h64.xor(this.v1.multiply(PRIME64_2).rotl(31).multiply(PRIME64_1));
+        h64.multiply(PRIME64_1).add(PRIME64_4);
+        h64.xor(this.v2.multiply(PRIME64_2).rotl(31).multiply(PRIME64_1));
+        h64.multiply(PRIME64_1).add(PRIME64_4);
+        h64.xor(this.v3.multiply(PRIME64_2).rotl(31).multiply(PRIME64_1));
+        h64.multiply(PRIME64_1).add(PRIME64_4);
+        h64.xor(this.v4.multiply(PRIME64_2).rotl(31).multiply(PRIME64_1));
+        h64.multiply(PRIME64_1).add(PRIME64_4);
+      } else {
+        h64 = this.seed.clone().add(PRIME64_5);
+      }
+      h64.add(u.fromNumber(this.total_len));
+      while (p <= bEnd - 8) {
+        if (isString) {
+          u.fromBits(
+            input.charCodeAt(p + 1) << 8 | input.charCodeAt(p),
+            input.charCodeAt(p + 3) << 8 | input.charCodeAt(p + 2),
+            input.charCodeAt(p + 5) << 8 | input.charCodeAt(p + 4),
+            input.charCodeAt(p + 7) << 8 | input.charCodeAt(p + 6)
+          );
+        } else {
+          u.fromBits(
+            input[p + 1] << 8 | input[p],
+            input[p + 3] << 8 | input[p + 2],
+            input[p + 5] << 8 | input[p + 4],
+            input[p + 7] << 8 | input[p + 6]
+          );
+        }
+        u.multiply(PRIME64_2).rotl(31).multiply(PRIME64_1);
+        h64.xor(u).rotl(27).multiply(PRIME64_1).add(PRIME64_4);
+        p += 8;
+      }
+      if (p + 4 <= bEnd) {
+        if (isString) {
+          u.fromBits(
+            input.charCodeAt(p + 1) << 8 | input.charCodeAt(p),
+            input.charCodeAt(p + 3) << 8 | input.charCodeAt(p + 2),
+            0,
+            0
+          );
+        } else {
+          u.fromBits(
+            input[p + 1] << 8 | input[p],
+            input[p + 3] << 8 | input[p + 2],
+            0,
+            0
+          );
+        }
+        h64.xor(u.multiply(PRIME64_1)).rotl(23).multiply(PRIME64_2).add(PRIME64_3);
+        p += 4;
+      }
+      while (p < bEnd) {
+        u.fromBits(isString ? input.charCodeAt(p++) : input[p++], 0, 0, 0);
+        h64.xor(u.multiply(PRIME64_5)).rotl(11).multiply(PRIME64_1);
+      }
+      h = h64.clone().shiftRight(33);
+      h64.xor(h).multiply(PRIME64_2);
+      h = h64.clone().shiftRight(29);
+      h64.xor(h).multiply(PRIME64_3);
+      h = h64.clone().shiftRight(32);
+      h64.xor(h);
+      this.init(this.seed);
+      return h64;
+    };
+    module2.exports = XXH64;
+  }
+});
+
+// node_modules/xxhashjs/lib/index.js
+var require_lib = __commonJS({
+  "node_modules/xxhashjs/lib/index.js"(exports, module2) {
+    module2.exports = {
+      h32: require_xxhash(),
+      h64: require_xxhash64()
+    };
+  }
+});
+
 // node_modules/simple-peer/simplepeer.min.js
 var require_simplepeer_min = __commonJS({
   "node_modules/simple-peer/simplepeer.min.js"(exports, module2) {
@@ -2954,7 +4204,7 @@ __export(main_exports, {
 module.exports = __toCommonJS(main_exports);
 
 // src/peerdraftPlugin.ts
-var import_obsidian10 = require("obsidian");
+var import_obsidian11 = require("obsidian");
 
 // node_modules/lib0/math.js
 var floor = Math.floor;
@@ -2978,10 +4228,10 @@ var copy = (m) => {
   });
   return r;
 };
-var setIfUndefined = (map3, key, createT) => {
-  let set = map3.get(key);
+var setIfUndefined = (map2, key, createT) => {
+  let set = map2.get(key);
   if (set === void 0) {
-    map3.set(key, set = createT());
+    map2.set(key, set = createT());
   }
   return set;
 };
@@ -3145,7 +4395,7 @@ var Observable = class {
 };
 
 // src/sharedEntities/sharedDocument.ts
-var import_obsidian2 = require("obsidian");
+var import_obsidian6 = require("obsidian");
 
 // node_modules/lib0/binary.js
 var BIT1 = 1;
@@ -3849,13 +5099,6 @@ var forEach = (obj, f) => {
   for (const key in obj) {
     f(obj[key], key);
   }
-};
-var map2 = (obj, f) => {
-  const results = [];
-  for (const key in obj) {
-    results.push(f(obj[key], key));
-  }
-  return results;
 };
 var length2 = (obj) => keys(obj).length;
 var isEmpty = (obj) => {
@@ -6820,10 +8063,10 @@ var YEvent = class {
   }
 };
 var getPathTo = (parent, child) => {
-  const path3 = [];
+  const path4 = [];
   while (child._item !== null && child !== parent) {
     if (child._item.parentSub !== null) {
-      path3.unshift(child._item.parentSub);
+      path4.unshift(child._item.parentSub);
     } else {
       let i = 0;
       let c = (
@@ -6836,12 +8079,12 @@ var getPathTo = (parent, child) => {
         }
         c = c.right;
       }
-      path3.unshift(i);
+      path4.unshift(i);
     }
     child = /** @type {AbstractType<any>} */
     child._item.parent;
   }
-  return path3;
+  return path4;
 };
 var maxSearchMarker = 80;
 var globalSearchMarkerTimestamp = 0;
@@ -7387,8 +8630,8 @@ var typeMapHas = (parent, key) => {
   const val = parent._map.get(key);
   return val !== void 0 && !val.deleted;
 };
-var createMapIterator = (map3) => iteratorFilter(
-  map3.entries(),
+var createMapIterator = (map2) => iteratorFilter(
+  map2.entries(),
   /** @param {any} entry */
   (entry) => !entry[1].deleted
 );
@@ -7670,14 +8913,14 @@ var YMap = class extends AbstractType {
    * @return {YMap<MapType>}
    */
   clone() {
-    const map3 = new YMap();
+    const map2 = new YMap();
     this.forEach((value, key) => {
-      map3.set(key, value instanceof AbstractType ? (
+      map2.set(key, value instanceof AbstractType ? (
         /** @type {typeof value} */
         value.clone()
       ) : value);
     });
-    return map3;
+    return map2;
   }
   /**
    * Creates YMapEvent and calls observers.
@@ -7694,14 +8937,14 @@ var YMap = class extends AbstractType {
    * @return {Object<string,any>}
    */
   toJSON() {
-    const map3 = {};
+    const map2 = {};
     this._map.forEach((item, key) => {
       if (!item.deleted) {
         const v = item.content.getContent()[item.length - 1];
-        map3[key] = v instanceof AbstractType ? v.toJSON() : v;
+        map2[key] = v instanceof AbstractType ? v.toJSON() : v;
       }
     });
-    return map3;
+    return map2;
   }
   /**
    * Returns the size of the YMap (count of key/value pairs)
@@ -7832,8 +9075,8 @@ var YMap = class extends AbstractType {
   clear() {
     if (this.doc !== null) {
       transact(this.doc, (transaction) => {
-        this.forEach(function(_value, key, map3) {
-          typeMapDelete(transaction, map3, key);
+        this.forEach(function(_value, key, map2) {
+          typeMapDelete(transaction, map2, key);
         });
       });
     } else {
@@ -11139,6 +12382,7 @@ if (glo[importIdentifier] === true) {
 glo[importIdentifier] = true;
 
 // src/tools.ts
+var XXH = __toESM(require_lib());
 var createRandomId = () => {
   return window.crypto.randomUUID();
 };
@@ -11147,6 +12391,23 @@ var randomUint32 = () => {
 };
 var generateRandomString = function() {
   return Math.random().toString(20).substring(2, 8);
+};
+var calculateHash = (text2) => {
+  return XXH.h32(text2, 43981).toString(16);
+};
+var serialize = (obj) => {
+  if (Array.isArray(obj)) {
+    return `[${obj.map((el) => serialize(el)).join(",")}]`;
+  } else if (typeof obj === "object" && obj !== null) {
+    let acc = "";
+    const keys3 = Object.keys(obj).sort();
+    acc += `{${JSON.stringify(keys3)}`;
+    for (let i = 0; i < keys3.length; i++) {
+      acc += `${serialize(obj[keys3[i]])},`;
+    }
+    return `${acc}}`;
+  }
+  return `${JSON.stringify(obj)}`;
 };
 
 // src/sharedEntities/sharedDocument.ts
@@ -11171,8 +12432,8 @@ var ShowTextModal = class extends import_obsidian.Modal {
 var showTextModal = (app, title, text2) => {
   new ShowTextModal(app, title, text2).open();
 };
-var showNotice = (text2) => {
-  new import_obsidian.Notice(text2);
+var showNotice = (text2, duration) => {
+  new import_obsidian.Notice(text2, duration);
 };
 var openFileInNewTab = async (file, workspace) => {
   const leaf = workspace.getLeaf("tab");
@@ -11768,9 +13029,9 @@ var PeerdraftRecord = class extends ObservableV2 {
 
 // src/workspace/peerdraftLeaf.ts
 var PeerdraftLeaf = class extends ObservableV2 {
-  constructor(path3, isPreview) {
+  constructor(path4, isPreview) {
     super();
-    this._isPreview = isPreview, this._path = path3;
+    this._isPreview = isPreview, this._path = path4;
   }
   get isPreview() {
     return this._isPreview;
@@ -11805,13 +13066,13 @@ var updatePeerdraftWorkspace = (ws, pws) => {
   for (const leaf of leafs) {
     const leafId = leaf.id;
     const isPreview = leaf.view.containerEl.getAttribute("data-mode") === "preview";
-    const path3 = (_b = (_a = leaf.view.file) == null ? void 0 : _a.path) != null ? _b : "";
+    const path4 = (_b = (_a = leaf.view.file) == null ? void 0 : _a.path) != null ? _b : "";
     let pleaf = pws.get(leafId);
     if (pleaf) {
       pleaf.isPreview = isPreview;
-      pleaf.path = path3;
+      pleaf.path = path4;
     } else {
-      pleaf = new PeerdraftLeaf(path3, isPreview);
+      pleaf = new PeerdraftLeaf(path4, isPreview);
       pws.set(leafId, pleaf);
     }
   }
@@ -11821,16 +13082,16 @@ var updatePeerdraftWorkspace = (ws, pws) => {
     }
   }
 };
-var getLeafsByPath = (path3, pws) => {
+var getLeafsByPath = (path4, pws) => {
   return pws.keys.map((key) => {
     return pws.get(key);
   }).filter((leaf) => {
-    return leaf.path === path3;
+    return leaf.path === path4;
   });
 };
-var getLeafIdsByPath = (path3, pws) => {
+var getLeafIdsByPath = (path4, pws) => {
   return pws.keys.filter((key) => {
-    return pws.get(key).path === path3;
+    return pws.get(key).path === path4;
   });
 };
 
@@ -12377,12 +13638,12 @@ var readMessage = (room, buf, syncedCallback) => {
       applyAwarenessUpdate(awareness, readVarUint8Array(decoder), room);
       break;
     case messageBcPeerId: {
-      const add = readUint8(decoder) === 1;
+      const add2 = readUint8(decoder) === 1;
       const peerName = readVarString(decoder);
-      if (peerName !== room.peerId && (room.bcConns.has(peerName) && !add || !room.bcConns.has(peerName) && add)) {
+      if (peerName !== room.peerId && (room.bcConns.has(peerName) && !add2 || !room.bcConns.has(peerName) && add2)) {
         const removed = [];
         const added = [];
-        if (add) {
+        if (add2) {
           room.bcConns.add(peerName);
           added.push(peerName);
         } else {
@@ -12821,238 +14082,11 @@ var WebrtcProvider = class extends Observable {
   }
 };
 
-// node_modules/lib0/url.js
-var encodeQueryParams = (params2) => map2(params2, (val, key) => `${encodeURIComponent(key)}=${encodeURIComponent(val)}`).join("&");
-
-// src/webSocketProvider.ts
-var messageSync2 = 0;
-var messageQueryAwareness2 = 3;
-var messageHandlers = [];
-messageHandlers[messageSync2] = (encoder, decoder, provider, emitSynced, _messageType) => {
-  writeVarUint(encoder, messageSync2);
-  const syncMessageType = readSyncMessage(
-    decoder,
-    encoder,
-    provider.doc,
-    provider
-  );
-  if (emitSynced && syncMessageType === messageYjsSyncStep2 && !provider.synced) {
-    provider.synced = true;
-  }
-};
-var messageReconnectTimeout2 = 3e4;
-var readMessage2 = (provider, buf, emitSynced) => {
-  const decoder = createDecoder(buf);
-  const encoder = createEncoder();
-  const messageType = readVarUint(decoder);
-  const messageHandler = provider.messageHandlers[messageType];
-  if (messageHandler) {
-    messageHandler(encoder, decoder, provider, emitSynced, messageType);
-  } else {
-  }
-  return encoder;
-};
-var setupWS2 = (provider) => {
-  if (provider.shouldConnect && provider.ws === null) {
-    const websocket = new provider._WS(provider.url);
-    websocket.binaryType = "arraybuffer";
-    provider.ws = websocket;
-    provider.wsconnecting = true;
-    provider.wsconnected = false;
-    provider.synced = false;
-    websocket.onmessage = (event) => {
-      provider.wsLastMessageReceived = getUnixTime();
-      const encoder = readMessage2(provider, new Uint8Array(event.data), true);
-      if (length(encoder) > 1) {
-        websocket.send(toUint8Array(encoder));
-      }
-    };
-    websocket.onerror = (event) => {
-      provider.emit("connection-error", [event, provider]);
-    };
-    websocket.onclose = (event) => {
-      provider.emit("connection-close", [event, provider]);
-      provider.ws = null;
-      provider.wsconnecting = false;
-      if (provider.wsconnected) {
-        provider.wsconnected = false;
-        provider.synced = false;
-        provider.emit("status", [{
-          status: "disconnected"
-        }]);
-      } else {
-        provider.wsUnsuccessfulReconnects++;
-      }
-      setTimeout(
-        setupWS2,
-        min(
-          pow(2, provider.wsUnsuccessfulReconnects) * 100,
-          provider.maxBackoffTime
-        ),
-        provider
-      );
-    };
-    websocket.onopen = () => {
-      provider.wsLastMessageReceived = getUnixTime();
-      provider.wsconnecting = false;
-      provider.wsconnected = true;
-      provider.wsUnsuccessfulReconnects = 0;
-      provider.emit("status", [{
-        status: "connected"
-      }]);
-      const encoder = createEncoder();
-      writeVarUint(encoder, messageSync2);
-      writeSyncStep1(encoder, provider.doc);
-      websocket.send(toUint8Array(encoder));
-    };
-    provider.emit("status", [{
-      status: "connecting"
-    }]);
-  }
-};
-var broadcastMessage = (provider, buf) => {
-  const ws = provider.ws;
-  if (provider.wsconnected && ws && ws.readyState === ws.OPEN) {
-    ws.send(buf);
-  }
-  if (provider.bcconnected) {
-    publish(provider.bcChannel, buf, provider);
-  }
-};
-var WebsocketProvider = class extends ObservableV2 {
-  constructor(serverUrl, roomname, doc2, {
-    connect = true,
-    params: params2 = {},
-    WebSocketPolyfill = WebSocket,
-    resyncInterval = -1,
-    maxBackoffTime = 2500,
-    disableBc = false
-  } = {}) {
-    super();
-    while (serverUrl[serverUrl.length - 1] === "/") {
-      serverUrl = serverUrl.slice(0, serverUrl.length - 1);
-    }
-    const encodedParams = encodeQueryParams(params2);
-    this.maxBackoffTime = maxBackoffTime;
-    this.bcChannel = serverUrl + "/" + roomname;
-    this.url = serverUrl + "/" + roomname + (encodedParams.length === 0 ? "" : "?" + encodedParams);
-    this.roomname = roomname;
-    this.doc = doc2;
-    this._WS = WebSocketPolyfill;
-    this.wsconnected = false;
-    this.wsconnecting = false;
-    this.bcconnected = false;
-    this.disableBc = disableBc;
-    this.wsUnsuccessfulReconnects = 0;
-    this.messageHandlers = messageHandlers.slice();
-    this._synced = false;
-    this.ws = null;
-    this.wsLastMessageReceived = 0;
-    this.shouldConnect = connect;
-    this._resyncInterval = 0;
-    if (resyncInterval > 0) {
-      this._resyncInterval = window.setInterval(() => {
-        if (this.ws && this.ws.readyState === WebSocket.OPEN) {
-          const encoder = createEncoder();
-          writeVarUint(encoder, messageSync2);
-          writeSyncStep1(encoder, doc2);
-          this.ws.send(toUint8Array(encoder));
-        }
-      }, resyncInterval);
-    }
-    this._bcSubscriber = (data, origin) => {
-      if (origin !== this) {
-        const encoder = readMessage2(this, new Uint8Array(data), false);
-        if (length(encoder) > 1) {
-          publish(this.bcChannel, toUint8Array(encoder), this);
-        }
-      }
-    };
-    this._updateHandler = (update, origin) => {
-      if (origin !== this) {
-        const encoder = createEncoder();
-        writeVarUint(encoder, messageSync2);
-        writeUpdate(encoder, update);
-        broadcastMessage(this, toUint8Array(encoder));
-      }
-    };
-    this.doc.on("update", this._updateHandler);
-    this._checkInterval = window.setInterval(() => {
-      if (this.wsconnected && messageReconnectTimeout2 < getUnixTime() - this.wsLastMessageReceived) {
-        this.ws.close();
-      }
-    }, messageReconnectTimeout2 / 10);
-    if (connect) {
-      this.connect();
-    }
-  }
-  /**
-   * @type {boolean}
-   */
-  get synced() {
-    return this._synced;
-  }
-  set synced(state) {
-    if (this._synced !== state) {
-      this._synced = state;
-      this.emit("synced", [state]);
-      this.emit("sync", [state]);
-    }
-  }
-  destroy() {
-    if (this._resyncInterval !== 0) {
-      clearInterval(this._resyncInterval);
-    }
-    clearInterval(this._checkInterval);
-    this.disconnect();
-    this.doc.off("update", this._updateHandler);
-    super.destroy();
-  }
-  connectBc() {
-    if (this.disableBc) {
-      return;
-    }
-    if (!this.bcconnected) {
-      subscribe(this.bcChannel, this._bcSubscriber);
-      this.bcconnected = true;
-    }
-    const encoderSync = createEncoder();
-    writeVarUint(encoderSync, messageSync2);
-    writeSyncStep1(encoderSync, this.doc);
-    publish(this.bcChannel, toUint8Array(encoderSync), this);
-    const encoderState = createEncoder();
-    writeVarUint(encoderState, messageSync2);
-    writeSyncStep2(encoderState, this.doc);
-    publish(this.bcChannel, toUint8Array(encoderState), this);
-    const encoderAwarenessQuery = createEncoder();
-    writeVarUint(encoderAwarenessQuery, messageQueryAwareness2);
-    publish(
-      this.bcChannel,
-      toUint8Array(encoderAwarenessQuery),
-      this
-    );
-  }
-  disconnect() {
-    this.shouldConnect = false;
-    if (this.ws !== null) {
-      this.ws.close();
-    }
-  }
-  connect() {
-    this.shouldConnect = true;
-    if (!this.wsconnected && this.ws === null) {
-      setupWS2(this);
-      this.connectBc();
-    }
-  }
-};
-
 // src/sharedEntities/sharedEntity.ts
 var SharedEntity = class {
   constructor(plugin) {
     this.plugin = plugin;
     this._webRTCTimeout = null;
-    this._webSocketTimeout = null;
   }
   get shareId() {
     return this._shareId;
@@ -13060,9 +14094,15 @@ var SharedEntity = class {
   get path() {
     return this._path;
   }
-  static findByPath(path3) {
+  get indexedDBProvider() {
+    return this._indexedDBProvider;
+  }
+  get webRTCProvider() {
+    return this._webRTCProvider;
+  }
+  static findByPath(path4) {
     const docs = this._sharedEntites.filter((doc2) => {
-      return doc2.path === path3;
+      return doc2.path === path4;
     });
     if (docs.length >= 1) {
       return docs[0];
@@ -13083,22 +14123,46 @@ var SharedEntity = class {
   static getAll() {
     return Object.assign([], this._sharedEntites);
   }
+  initServerYDoc() {
+    return new Promise((resolve2) => {
+      const tempId = createRandomId();
+      const handler = (serverTempId, id2, checksum) => {
+        if (serverTempId === tempId) {
+          this.plugin.serverSync.off("new-doc-confirmed", handler);
+          this._shareId = id2;
+          resolve2(checksum);
+        }
+      };
+      this.plugin.serverSync.on("new-doc-confirmed", handler);
+      this.plugin.serverSync.sendNewDocument(this, tempId);
+    });
+  }
+  syncWithServer() {
+    return new Promise((resolve2) => {
+      const handler = async (id2, hash) => {
+        if (id2 === this.shareId) {
+          this.plugin.serverSync.off("synced", handler);
+          resolve2(hash);
+        }
+      };
+      this.plugin.serverSync.on("synced", handler);
+      this.plugin.serverSync.sendSyncStep1(this);
+    });
+  }
   startWebRTCSync(init) {
     this.plugin.log(`WebRTC for ${this.path}: start`);
     if (!this.shareId)
       return;
     if (this._webRTCProvider) {
-      if (!this._webRTCProvider.connected) {
-        this._webRTCProvider.connect();
-      }
+      this._webRTCProvider.connect();
       return this._webRTCProvider;
     }
-    const webRTCProcider = new WebrtcProvider(this._shareId, this.yDoc, { signaling: [this.plugin.settings.signaling], peerOpts: { iceServers: [{ urls: "stun:freeturn.net:5349" }, { urls: "turns:freeturn.net:5349", username: "free", credential: "free" }, { urls: "stun:stun.l.google.com:19302" }, { urls: "stun:global.stun.twilio.com:3478?transport=udp" }] } });
-    this._webRTCProvider = webRTCProcider;
+    const webRTCProvider = new WebrtcProvider(this._shareId, this.yDoc, { signaling: [this.plugin.settings.signaling], peerOpts: { iceServers: [{ urls: "stun:freeturn.net:5349" }, { urls: "turns:freeturn.net:5349", username: "free", credential: "free" }, { urls: "stun:stun.l.google.com:19302" }, { urls: "stun:global.stun.twilio.com:3478?transport=udp" }] } });
+    this._webRTCProvider = webRTCProvider;
     if (init) {
-      init(webRTCProcider);
+      init(webRTCProvider);
     }
-    return webRTCProcider;
+    return webRTCProvider;
   }
   stopWebRTCSync() {
     var _a, _b, _c;
@@ -13110,55 +14174,6 @@ var SharedEntity = class {
     (_c = this._webRTCProvider) == null ? void 0 : _c.destroy();
     this._webRTCProvider = void 0;
   }
-  async startWebSocketSync() {
-    if (!this.shareId)
-      return;
-    if (this._webSocketProvider) {
-      if (!this._webSocketProvider.wsconnected) {
-        this._webSocketProvider.connect();
-      }
-      return this._webSocketProvider;
-    }
-    const webSocketProvider = new WebsocketProvider(this.plugin.settings.sync, this.shareId, this.yDoc, {
-      connect: false,
-      maxBackoffTime: 3e5,
-      resyncInterval: -1
-    });
-    this._webSocketProvider = webSocketProvider;
-    webSocketProvider.on("status", (event) => {
-      this.plugin.log(`WebSocket for ${this.path}: ${event.status}`);
-    });
-    webSocketProvider.once("sync", (state) => {
-      if (state) {
-        webSocketProvider.disconnect();
-      }
-    });
-    webSocketProvider.doc.on("update", async (update, origin, doc2, tr) => {
-      if (tr.local) {
-        if (!webSocketProvider.wsconnected) {
-          webSocketProvider.connect();
-        }
-        if (this._webSocketTimeout != null) {
-          window.clearTimeout(this._webSocketTimeout);
-        }
-        this._webSocketTimeout = window.setTimeout(() => {
-          webSocketProvider.disconnect();
-        }, 3e4);
-      }
-    });
-    webSocketProvider.connect();
-    this.plugin.activeStreamClient.add([this.shareId]);
-    return webSocketProvider;
-  }
-  async stopWebSocketSync() {
-    if (!this._webSocketProvider)
-      return;
-    this.plugin.log(`WebSocket Sync for ${this.path}: stop`);
-    this._webSocketProvider.disconnect();
-    this._webSocketProvider.destroy();
-    this.plugin.activeStreamClient.remove([this.shareId]);
-    this._webSocketProvider = void 0;
-  }
   async stopIndexedDBSync() {
     if (!this._indexedDBProvider)
       return;
@@ -13166,13 +14181,12 @@ var SharedEntity = class {
   }
   destroy() {
     this.stopWebRTCSync();
-    this.stopWebSocketSync();
   }
 };
 SharedEntity.DB_PERSISTENCE_PREFIX = "peerdraft_persistence_";
 
 // src/sharedEntities/sharedDocument.ts
-var path = __toESM(require("path"));
+var path2 = __toESM(require("path"));
 
 // node_modules/lib0/indexeddb.js
 var rtop = (request) => create4((resolve2, reject2) => {
@@ -13376,780 +14390,42 @@ var IndexeddbPersistence = class extends Observable {
   }
 };
 
-// src/sharedEntities/sharedDocument.ts
-var _SharedDocument = class extends SharedEntity {
-  constructor(opts, plugin) {
-    super(plugin);
-    if (opts.path) {
-      this._path = opts.path;
-      const file = this.plugin.app.vault.getAbstractFileByPath(this.path);
-      if (file instanceof import_obsidian2.TFile) {
-        this._file = file;
-      } else {
-        showNotice("ERROR creating sharedDoc");
-      }
-    }
-    if (opts.id) {
-      this._shareId = opts.id;
-    }
-    this.yDoc = new Doc();
-    _SharedDocument._sharedEntites.push(this);
-    this._extensions = new PeerdraftRecord();
-    this._extensions.on("delete", () => {
-      if (this._extensions.size === 0 && this._webRTCProvider) {
-        this._webRTCProvider.awareness.setLocalState({});
-      }
-    });
-    this.getContentFragment().observe(() => {
-      if (this._file && this._extensions.size === 0) {
-        this.plugin.app.vault.modify(this._file, this.getContentFragment().toString());
-      }
-    });
-  }
-  static async fromView(view, plugin, opts = { isPermanent: false }) {
-    if (!view.file)
+// src/workspace/explorerView.ts
+var addIsSharedClass = (path4, plugin) => {
+  const fileExplorers = plugin.app.workspace.getLeavesOfType("file-explorer");
+  fileExplorers.forEach((fileExplorer) => {
+    const fileItem = fileExplorer.view.fileItems[path4];
+    if (!fileItem)
       return;
-    if (this.findByPath(view.file.path))
-      return;
-    const doc2 = new _SharedDocument({
-      path: view.file.path
-    }, plugin);
-    if (opts.isPermanent) {
-      await doc2.setPermanent();
-      await doc2.startWebSocketSync();
-      await doc2.startIndexedDBSync();
-    } else {
-      doc2._shareId = createRandomId();
-      doc2.addStatusBarEntry();
-      pinLeaf(view.leaf);
-    }
-    doc2.startWebRTCSync();
-    if (!opts.isPermanent && doc2._webRTCProvider) {
-      doc2.getOwnerFragment().insert(0, doc2._webRTCProvider.awareness.clientID.toFixed(0));
-    }
-    doc2.yDoc.getText("content").insert(0, view.editor.getValue());
-    doc2.addExtensionToLeaf(view.leaf.id);
-    navigator.clipboard.writeText(plugin.settings.basePath + "/cm/" + doc2.shareId);
-    showNotice("Collaboration started for " + doc2.path + ". Link copied to Clipboard.");
-    return doc2;
-  }
-  static async fromPermanentShareDocument(pd, plugin) {
-    if (this.findByPath(pd.path))
-      return;
-    const doc2 = new _SharedDocument({
-      path: pd.path
-    }, plugin);
-    doc2._isPermanent = true;
-    doc2._shareId = pd.shareId;
-    const local = await doc2.startIndexedDBSync();
-    if (local) {
-      if (local.synced || await local.whenSynced) {
-        doc2.startWebSocketSync();
-      }
-    }
-    return doc2;
-  }
-  static async fromShareURL(url, plugin) {
-    const id2 = url.split("/").pop();
-    if (!id2 || !id2.match("^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$")) {
-      showNotice("No valid peerdraft link");
-      return;
-    }
-    if (_SharedDocument.findById(id2)) {
-      showNotice("This share is already active.");
-      return;
-    }
-    const isPermanent = await plugin.serverAPI.isSessionPermanent(id2);
-    const initialFileName = `_peerdraft_session_${id2}_${generateRandomString()}.md`;
-    const parent = plugin.app.fileManager.getNewFileParent("", initialFileName);
-    const filePath = path.join(parent.path, initialFileName);
-    const file = await plugin.app.vault.create(filePath, "");
-    const doc2 = new _SharedDocument({
-      path: file.path,
-      id: id2
-    }, plugin);
-    doc2.startWebRTCSync();
-    if (isPermanent) {
-      doc2._isPermanent = true;
-      await plugin.permanentShareStore.add(doc2);
-      doc2.startWebSocketSync();
-      doc2.startIndexedDBSync();
-    }
-    const leaf = await openFileInNewTab(file, plugin.app.workspace);
-    doc2.addStatusBarEntry();
-    doc2.addExtensionToLeaf(leaf.id);
-    pinLeaf(leaf);
-    showNotice("Joined Session in " + doc2.path + ".");
-    return doc2;
-  }
-  static async fromTFile(file, opts, plugin) {
-    const existing = _SharedDocument.findByPath(file.path);
-    if (existing)
-      return existing;
-    const doc2 = new _SharedDocument({ path: file.path }, plugin);
-    if (opts.id) {
-      doc2._shareId = opts.id;
-    }
-    if (opts.permanent) {
-      await doc2.setPermanent();
-      doc2.startWebSocketSync();
-      doc2.startIndexedDBSync();
-    }
-    const leafIds = getLeafIdsByPath(file.path, plugin.pws);
-    if (leafIds.length > 0) {
-      const content = plugin.app.workspace.getLeafById(leafIds[0]).view.editor.getValue();
-      doc2.getContentFragment().insert(0, content);
-      for (const id2 of leafIds) {
-        doc2.addExtensionToLeaf(id2);
-      }
-    } else {
-      const content = await plugin.app.vault.read(file);
-      doc2.getContentFragment().insert(0, content);
-    }
-    return doc2;
-  }
-  static findByPath(path3) {
-    return super.findByPath(path3);
-  }
-  static findById(id2) {
-    return super.findById(id2);
-  }
-  static getAll() {
-    return super.getAll();
-  }
-  get file() {
-    return this._file;
-  }
-  startWebRTCSync() {
-    return super.startWebRTCSync((provider) => {
-      provider.awareness.on("update", async (msg) => {
-        var _a, _b;
-        const removed = (_a = msg.removed) != null ? _a : [];
-        if (removed && removed.length > 0) {
-          const removedStrings = removed.map((id2) => {
-            return id2.toFixed(0);
-          });
-          const owner = this.getOwnerFragment().toString();
-          if (owner != provider.awareness.clientID.toString()) {
-            if (removedStrings.includes(owner) && !this.isPermanent) {
-              showNotice("Shared session for " + this.path + " stopped by owner");
-              await this.unshare();
-            }
-          }
-        }
-        const added = (_b = msg.added) != null ? _b : [];
-        if (added && added.length > 0) {
-          const states = provider.awareness.getStates();
-          for (const key of added) {
-            const peer = states.get(key);
-            if (peer) {
-              showNotice(`${peer.user.name} works on ${this.path}`);
-            }
-          }
-        }
-      });
-      const handleTimeout = () => {
-        if (this._extensions.size > 0 || getLeafIdsByPath(this.path, this.plugin.pws).length > 0) {
-          this._webRTCTimeout = window.setTimeout(handleTimeout, 6e4);
-          return;
-        }
-        this.stopWebRTCSync();
-      };
-      this._webRTCTimeout = window.setTimeout(handleTimeout, 6e4);
-      provider.doc.on("update", async (update, origin, doc2, tr) => {
-        if (this._webRTCTimeout != null) {
-          window.clearTimeout(this._webRTCTimeout);
-        }
-        this._webRTCTimeout = window.setTimeout(handleTimeout, 6e4);
-      });
-    });
-  }
-  async setNewFileLocation(file) {
-    const oldPath = this._path;
-    this._file = file;
-    this._path = file.path;
-    if (this.statusBarEntry) {
-      this.removeStatusStatusBarEntry();
-      this.addStatusBarEntry();
-    }
-    const dbEntry = await this.plugin.permanentShareStore.getDocByPath(oldPath);
-    if (dbEntry) {
-      this.plugin.permanentShareStore.removeDoc(oldPath);
-      this.plugin.permanentShareStore.add(this);
-    }
-  }
-  async setPermanent() {
-    if (!this._isPermanent) {
-      if (!this.shareId) {
-        const data = await this.plugin.serverAPI.createPermanentSession();
-        if (!data)
-          return;
-        this._shareId = data.id;
-      }
-      this._isPermanent = true;
-      await this.plugin.permanentShareStore.add(this);
-    }
-  }
-  get isPermanent() {
-    return this._isPermanent;
-  }
-  getValue() {
-    return this.getContentFragment().toString();
-  }
-  getContentFragment() {
-    return this.yDoc.getText("content");
-  }
-  getOwnerFragment() {
-    return this.yDoc.getText("owner");
-  }
-  async startIndexedDBSync() {
-    var _a;
-    if (this._indexedDBProvider)
-      return this._indexedDBProvider;
-    const id2 = (_a = await this.plugin.permanentShareStore.getDocByPath(this.path)) == null ? void 0 : _a.persistenceId;
-    if (!id2)
-      return;
-    this._indexedDBProvider = new IndexeddbPersistence(SharedEntity.DB_PERSISTENCE_PREFIX + id2, this.yDoc);
-    return this._indexedDBProvider;
-  }
-  addExtensionToLeaf(leafId) {
-    const webRTCProvider = this.startWebRTCSync();
-    if (!webRTCProvider)
-      return;
-    if (this._extensions.get(leafId))
-      return;
-    const pLeaf = this.plugin.pws.get(leafId);
-    if (!pLeaf)
-      return;
-    if (pLeaf.path != this._path)
-      return;
-    if (pLeaf.isPreview) {
-      pLeaf.once("changeIsPreview", () => {
-        this.addExtensionToLeaf(leafId);
-      });
-      return;
-    }
-    const leaf = this.plugin.app.workspace.getLeafById(leafId);
-    if (!leaf)
-      return;
-    const view = leaf.view;
-    const editor = view.editor;
-    editor.setValue(this.getValue());
-    const undoManager = new UndoManager(this.getContentFragment());
-    webRTCProvider.awareness.setLocalStateField("user", {
-      name: this.plugin.settings.name,
-      color: _SharedDocument._userColor.dark,
-      colorLight: _SharedDocument._userColor.light
-    });
-    const extension = yCollab(this.getContentFragment(), webRTCProvider.awareness, { undoManager });
-    const compartment = new import_state.Compartment();
-    const editorView = editor.cm;
-    editorView.dispatch({
-      effects: import_state2.StateEffect.appendConfig.of(compartment.of(extension))
-    });
-    this._extensions.set(leafId, compartment);
-    pLeaf.once("changeIsPreview", () => {
-      this.removeExtensionFromLeaf(leafId);
-      pLeaf.once("changeIsPreview", () => {
-        this.addExtensionToLeaf(leafId);
-      });
-    });
-    return import_state.Compartment;
-  }
-  removeExtensionFromLeaf(leafId) {
-    const leaf = this.plugin.app.workspace.getLeafById(leafId);
-    if (leaf) {
-      const editor = leaf.view.editor;
-      const editorView = editor.cm;
-      const compartment = this._extensions.get(leafId);
-      if (compartment) {
-        editorView.dispatch({
-          effects: compartment.reconfigure([])
-        });
-      }
-    }
-    this._extensions.delete(leafId);
-  }
-  addStatusBarEntry() {
-    if (this.statusBarEntry)
-      return;
-    const menu = new import_obsidian2.Menu();
-    menu.addItem((item) => {
-      item.setTitle("Copy link");
-      item.onClick(() => {
-        navigator.clipboard.writeText(this.plugin.settings.basePath + "/cm/" + this.shareId);
-        showNotice("Link copied to clipboard.");
-      });
-    });
-    menu.addItem((item) => {
-      item.setTitle("Stop shared session");
-      item.onClick(async () => {
-        await this.unshare();
-      });
-    });
-    const status = this.plugin.addStatusBarItem();
-    status.addClass("mod-clickable");
-    status.createEl("span", { text: "Sharing '" + this.path + "'" });
-    status.onClickEvent((event) => {
-      menu.showAtMouseEvent(event);
-    });
-    this.statusBarEntry = status;
-  }
-  removeStatusStatusBarEntry() {
-    if (!this.statusBarEntry)
-      return;
-    this.statusBarEntry.remove();
-    this.statusBarEntry = void 0;
-  }
-  async unshare() {
-    const dbEntry = await this.plugin.permanentShareStore.getDocByPath(this.path);
-    if (dbEntry) {
-      this.plugin.permanentShareStore.removeDoc(this.path);
-    }
-    if (this._indexedDBProvider) {
-      await this._indexedDBProvider.clearData();
-      await this._indexedDBProvider.destroy();
-    }
-    this.destroy();
-  }
-  destroy() {
-    if (!this.isPermanent) {
-      showNotice("Stopping collaboration on " + this.path + ".");
-    }
-    for (const key of this._extensions.keys) {
-      this.removeExtensionFromLeaf(key);
-    }
-    this._extensions.destroy();
-    super.destroy();
-    this.removeStatusStatusBarEntry();
-    _SharedDocument._sharedEntites.splice(_SharedDocument._sharedEntites.indexOf(this), 1);
-  }
-};
-var SharedDocument = _SharedDocument;
-SharedDocument._userColor = usercolors[randomUint32() % usercolors.length];
-SharedDocument._sharedEntites = new Array();
-
-// src/sharedEntities/sharedFolder.ts
-var import_obsidian3 = require("obsidian");
-var path2 = __toESM(require("path"));
-var handleUpdate = (ev, tx, folder, plugin) => {
-  if (tx.local)
-    return;
-  const changedKeys = ev.changes.keys;
-  changedKeys.forEach(async (data, key) => {
-    if (data.action === "add") {
-      const value = tx.doc.getMap("documents").get(key);
-      const file = await folder.getOrCreateFile(value);
-      plugin.log("Creating Remote File " + (file == null ? void 0 : file.path) + "   " + key);
-      if (file) {
-        await SharedDocument.fromTFile(file, { id: key, permanent: true }, plugin);
-      }
-    } else if (data.action === "update") {
-      const newPath = tx.doc.getMap("documents").get(key);
-      const document2 = SharedDocument.findById(key);
-      if (!document2)
-        return;
-      plugin.log("Update " + document2.path + "   " + key);
-      const folder2 = SharedFolder.getSharedFolderForSubPath(document2.path);
-      if (!folder2)
-        return;
-      const newAbsolutePath = path2.join(folder2.root.path, newPath);
-      await SharedFolder.getOrCreatePath(path2.parse(newAbsolutePath).dir, plugin);
-      plugin.app.vault.rename(document2.file, newAbsolutePath);
-    } else if (data.action === "delete") {
-      const document2 = SharedDocument.findById(key);
-      if (!document2)
-        return;
-      plugin.log("Delete " + document2.path + "   " + key);
-      const file = plugin.app.vault.getAbstractFileByPath(document2.path);
-      if (!file)
-        return;
-      plugin.app.vault.delete(file);
-    }
+    const el = fileItem.innerEl;
+    el.addClass("pd-explorer-shared");
   });
 };
-var _SharedFolder = class extends SharedEntity {
-  constructor(root, opts, plugin) {
-    super(plugin);
-    this.root = root;
-    this._path = root.path;
-    this.yDoc = new Doc();
-    this._shareId = opts.id;
-    this.getDocsFragment().observe((ev, tx) => {
-      handleUpdate(ev, tx, this, plugin);
-    });
-    _SharedFolder._sharedEntites.push(this);
-  }
-  static async fromTFolder(root, plugin) {
-    showNotice(`Inititializing share for ${root.path}.`);
-    const files = this.getAllFilesInFolder(root);
-    for (const file of files) {
-      if (SharedDocument.findByPath(file.path)) {
-        showNotice("You can not share a directory that already has shared files in it (right now).");
-        return;
-      }
-    }
-    const data = await plugin.serverAPI.createPermanentSession();
-    if (!data || !data.id) {
-      showNotice("Error creating share");
+var removeIsSharedClass = (path4, plugin) => {
+  const fileExplorers = plugin.app.workspace.getLeavesOfType("file-explorer");
+  fileExplorers.forEach((fileExplorer) => {
+    const fileItem = fileExplorer.view.fileItems[path4];
+    if (!fileItem)
       return;
-    }
-    const docs = await Promise.all(files.map((file) => {
-      showNotice(`Inititializing share for ${file.path}`);
-      return SharedDocument.fromTFile(file, {
-        permanent: true
-      }, plugin);
-    }));
-    const folder = new _SharedFolder(root, { id: data.id }, plugin);
-    await plugin.permanentShareStore.add(folder);
-    await folder.startWebSocketSync();
-    await folder.startIndexedDBSync();
-    for (const doc2 of docs) {
-      folder.addDocument(doc2);
-    }
-    navigator.clipboard.writeText(plugin.settings.basePath + "/team/" + folder.shareId);
-    showNotice(`Folder ${folder.path} with ${docs.length} documents shared. URL copied to your clipboard.`);
-    return folder;
-  }
-  static async fromShareURL(url, plugin) {
-    const id2 = url.split("/").pop();
-    if (!id2 || !id2.match("^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$")) {
-      showNotice("No valid peerdraft link");
-      return;
-    }
-    const initialRootName = `_peerdraft_team_folder_${generateRandomString()}`;
-    const parent = plugin.app.fileManager.getNewFileParent("", initialRootName);
-    const folderPath = path2.join(parent.path, initialRootName);
-    const folder = await plugin.app.vault.createFolder(folderPath);
-    const sFolder = new _SharedFolder(folder, { id: id2 }, plugin);
-    sFolder.startWebSocketSync();
-    sFolder.startWebRTCSync();
-    sFolder.startIndexedDBSync();
-    await plugin.permanentShareStore.add(sFolder);
-    return sFolder;
-  }
-  static async fromPermanentShareFolder(psf, plugin) {
-    if (this.findByPath(psf.path))
-      return;
-    const tFolder = plugin.app.vault.getAbstractFileByPath(psf.path);
-    if (!(tFolder instanceof import_obsidian3.TFolder))
-      return;
-    const folder = new _SharedFolder(tFolder, { id: psf.shareId }, plugin);
-    const local = await folder.startIndexedDBSync();
-    if (local) {
-      if (local.synced || await local.whenSynced) {
-        await folder.startWebSocketSync();
-        folder.startWebRTCSync();
-      }
-    }
-    return folder;
-  }
-  static findByPath(path3) {
-    return super.findByPath(path3);
-  }
-  static findById(id2) {
-    return super.findById(id2);
-  }
-  static getAll() {
-    return super.getAll();
-  }
-  static getSharedFolderForSubPath(dir) {
-    const folders = this.getAll();
-    for (const folder of folders) {
-      if (folder.root.path === dir)
-        return;
-      if (folder.isPathSubPath(dir))
-        return folder;
-    }
-  }
-  getDocsFragment() {
-    return this.yDoc.getMap("documents");
-  }
-  getDocByRelativePath(dir) {
-    for (const entry of this.getDocsFragment().entries()) {
-      if (entry[1] === dir)
-        return entry[0];
-    }
-  }
-  updatePath(oldPath, newPath) {
-    const oldPathRelative = path2.relative(this.root.path, oldPath);
-    const newPathRelative = path2.relative(this.root.path, newPath);
-    const id2 = this.getDocByRelativePath(oldPathRelative);
-    if (id2) {
-      this.getDocsFragment().set(id2, newPathRelative);
-    }
-    return id2;
-  }
-  addDocument(doc2) {
-    if (this.getDocsFragment().get(doc2.shareId))
-      return;
-    const relativePath = path2.relative(this.root.path, doc2.path);
-    if (relativePath.startsWith(".."))
-      return;
-    this.getDocsFragment().set(doc2.shareId, relativePath);
-  }
-  removeDocument(doc2) {
-    this.getDocsFragment().delete(doc2.shareId);
-  }
-  isPathSubPath(folder) {
-    const relativePath = path2.relative(this.root.path, folder);
-    return !relativePath.startsWith("..");
-  }
-  static getAllFilesInFolder(folder) {
-    const files = folder.children.flatMap((child) => {
-      if (child instanceof import_obsidian3.TFile) {
-        if (child.extension === "md") {
-          return child;
-        }
-      }
-      if (child instanceof import_obsidian3.TFolder) {
-        return this.getAllFilesInFolder(child);
-      }
-      return [];
-    });
-    return files;
-  }
-  async setNewFolderLocation(folder) {
-    const oldPath = this._path;
-    this.root = folder;
-    this._path = folder.path;
-    const dbEntry = await this.plugin.permanentShareStore.getFolderByPath(oldPath);
-    if (dbEntry) {
-      this.plugin.permanentShareStore.removeFolder(oldPath);
-      this.plugin.permanentShareStore.add(this);
-    }
-  }
-  async getOrCreateFile(relativePath) {
-    const absolutePath = path2.join(this.root.path, relativePath);
-    let file = this.plugin.app.vault.getAbstractFileByPath(absolutePath);
-    if (file && file instanceof import_obsidian3.TFile)
-      return file;
-    const folder = await _SharedFolder.getOrCreatePath(path2.parse(absolutePath).dir, this.plugin);
-    if (!folder) {
-      showNotice("Error creating shares");
-      return;
-    }
-    return await this.plugin.app.vault.create(absolutePath, "");
-  }
-  static async getOrCreatePath(absolutePath, plugin) {
-    let folder = plugin.app.vault.getAbstractFileByPath(absolutePath);
-    if (folder && folder instanceof import_obsidian3.TFolder)
-      return folder;
-    const segments = absolutePath.split(path2.sep);
-    for (let index = 0; index < segments.length; index++) {
-      const subPath = segments.slice(0, index + 1).join(path2.sep);
-      folder = plugin.app.vault.getAbstractFileByPath(subPath);
-      if (!folder) {
-        folder = await plugin.app.vault.createFolder(subPath);
-      }
-    }
-    return folder;
-  }
-  isFileInSyncObject(file) {
-    for (const value of this.getDocsFragment().values()) {
-      if (file.path === path2.join(this.root.path, value))
-        return true;
-    }
-    return false;
-  }
-  startWebRTCSync() {
-    return super.startWebRTCSync((provider) => {
-      const handleTimeout = () => {
-        this.stopWebRTCSync();
-      };
-      this._webRTCTimeout = window.setTimeout(handleTimeout, 6e4);
-      provider.doc.on("update", async (update, origin, doc2, tr) => {
-        if (this._webRTCTimeout != null) {
-          window.clearTimeout(this._webRTCTimeout);
-        }
-        this._webRTCTimeout = window.setTimeout(handleTimeout, 6e4);
-      });
-    });
-  }
-  async startIndexedDBSync() {
-    var _a;
-    if (this._indexedDBProvider)
-      return this._indexedDBProvider;
-    const id2 = (_a = await this.plugin.permanentShareStore.getFolderByPath(this.path)) == null ? void 0 : _a.persistenceId;
-    if (!id2)
-      return;
-    this._indexedDBProvider = new IndexeddbPersistence(SharedEntity.DB_PERSISTENCE_PREFIX + id2, this.yDoc);
-    return this._indexedDBProvider;
-  }
-  async unshare() {
-    const dbEntry = await this.plugin.permanentShareStore.getFolderByPath(this.path);
-    if (dbEntry) {
-      this.plugin.permanentShareStore.removeFolder(this.path);
-    }
-    if (this._indexedDBProvider) {
-      await this._indexedDBProvider.clearData();
-      await this._indexedDBProvider.destroy();
-    }
-    this.destroy();
-  }
-  destroy() {
-    super.destroy();
-    _SharedFolder._sharedEntites.splice(_SharedFolder._sharedEntites.indexOf(this), 1);
-  }
-};
-var SharedFolder = _SharedFolder;
-SharedFolder._sharedEntites = new Array();
-
-// src/activeStreamClient.ts
-var handleMessage = (data) => {
-  var _a, _b;
-  const message = JSON.parse(data);
-  for (const id2 of message.docs) {
-    (_a = SharedDocument.findById(id2)) == null ? void 0 : _a.startWebRTCSync();
-    (_b = SharedFolder.findById(id2)) == null ? void 0 : _b.startWebRTCSync();
-  }
-};
-var setupWS3 = (client) => {
-  if (client.shouldConnect && client.ws === null) {
-    const websocket = new WebSocket(client.url);
-    client.ws = websocket;
-    client.wsconnecting = true;
-    client.wsconnected = false;
-    websocket.onmessage = (event) => {
-      client.wsLastMessageReceived = getUnixTime();
-      handleMessage(event.data);
-    };
-    websocket.onerror = (event) => {
-      client.emit("connection-error", [event, client]);
-    };
-    websocket.onclose = (event) => {
-      client.emit("connection-close", [event, client]);
-      client.ws = null;
-      client.wsconnecting = false;
-      if (client.wsconnected) {
-        client.wsconnected = false;
-        client.emit("status", [{
-          status: "disconnected"
-        }]);
-      } else {
-        client.wsUnsuccessfulReconnects++;
-      }
-      setTimeout(
-        setupWS3,
-        min(
-          pow(2, client.wsUnsuccessfulReconnects) * 100,
-          client.maxBackoffTime
-        ),
-        client
-      );
-    };
-    websocket.onopen = () => {
-      client.wsLastMessageReceived = getUnixTime();
-      client.wsconnecting = false;
-      client.wsconnected = true;
-      client.wsUnsuccessfulReconnects = 0;
-      client.emit("status", [{
-        status: "connected"
-      }]);
-      client.send(JSON.stringify({
-        type: "full",
-        docs: Array.from(client.docIds)
-      }));
-    };
-    client.emit("status", [{
-      status: "connecting"
-    }]);
-  }
-};
-var ActiveStreamClient = class extends ObservableV2 {
-  constructor(url, opts = {
-    connect: true,
-    resyncInterval: -1,
-    maxBackoffTime: 2500
-  }) {
-    super();
-    this.maxBackoffTime = opts.maxBackoffTime;
-    this.url = url;
-    this.wsconnected = false;
-    this.wsconnecting = false;
-    this.wsUnsuccessfulReconnects = 0;
-    this.ws = null;
-    this.wsLastMessageReceived = 0;
-    this.shouldConnect = opts.connect;
-    this._resyncInterval = 0;
-    this.docIds = /* @__PURE__ */ new Set();
-    if (opts.resyncInterval > 0) {
-      this._resyncInterval = window.setInterval(() => {
-        if (this.ws && this.ws.readyState === WebSocket.OPEN) {
-          this.send(JSON.stringify({
-            type: "full",
-            docs: Array.from(this.docIds)
-          }));
-        }
-      }, opts.resyncInterval);
-    }
-    if (opts.connect) {
-      this.connect();
-    }
-  }
-  send(data) {
-    var _a, _b;
-    if (this.ws && this.ws.readyState !== this.ws.CONNECTING && this.ws.readyState !== this.ws.OPEN) {
-      this.ws.close();
-    }
-    try {
-      (_a = this.ws) == null ? void 0 : _a.send(data);
-    } catch (e) {
-      (_b = this.ws) == null ? void 0 : _b.close();
-    }
-  }
-  destroy() {
-    if (this._resyncInterval !== 0) {
-      clearInterval(this._resyncInterval);
-    }
-    this.disconnect();
-    super.destroy();
-  }
-  disconnect() {
-    this.shouldConnect = false;
-    if (this.ws !== null) {
-      this.ws.close();
-    }
-  }
-  connect() {
-    this.shouldConnect = true;
-    if (!this.wsconnected && this.ws === null) {
-      setupWS3(this);
-    }
-  }
-  add(ids) {
-    for (const id2 of ids) {
-      this.docIds.add(id2);
-    }
-    this.send(JSON.stringify({
-      type: "add",
-      docs: ids
-    }));
-  }
-  remove(ids) {
-    for (const id2 of ids) {
-      this.docIds.delete(id2);
-    }
-    this.send(JSON.stringify({
-      type: "remove",
-      docs: ids
-    }));
-  }
+    const el = fileItem.innerEl;
+    el.removeClass("pd-explorer-shared");
+  });
 };
 
-// src/cookie.ts
-var import_obsidian6 = require("obsidian");
+// src/sharedEntities/sharedFolder.ts
+var import_obsidian5 = require("obsidian");
+var path = __toESM(require("path"));
 
 // src/settings.ts
-var import_obsidian5 = require("obsidian");
+var import_obsidian4 = require("obsidian");
 
 // src/subscription.ts
-var import_obsidian4 = require("obsidian");
+var import_obsidian2 = require("obsidian");
 var refreshSubscriptionData = async (plugin) => {
   const settings = await getSettings(plugin);
   const url = new URL(settings.subscriptionAPI);
   url.searchParams.set("oid", settings.oid);
-  const data = await (0, import_obsidian4.requestUrl)(url.toString()).json;
+  const data = await (0, import_obsidian2.requestUrl)(url.toString()).json;
   if (data) {
     if (data.plan) {
       settings.plan = data.plan;
@@ -14161,156 +14437,50 @@ var refreshSubscriptionData = async (plugin) => {
   }
 };
 
-// src/settings.ts
-var DEFAULT_SETTINGS = {
-  basePath: "https://www.peerdraft.app",
-  subscriptionAPI: "https://www.peerdraft.app/subscription",
-  connectAPI: "https://www.peerdraft.app/subscription/connect",
-  sessionAPI: "https://www.peerdraft.app/session",
-  sync: "wss://www.peerdraft.app/sync",
-  signaling: "wss://www.peerdraft.app/signal",
-  actives: "wss://www.peerdraft.app/actives",
-  name: "",
-  oid: createRandomId(),
-  plan: {
-    type: "hobby",
-    email: ""
-  },
-  duration: 0,
-  debug: false,
-  version: ""
-};
-var FORCE_SETTINGS = {
-  /*
-  basePath: "http://localhost:5173",
-  subscriptionAPI: "http://localhost:5173/subscription",
-  connectAPI: "http://localhost:5173/subscription/connect",
-  sessionAPI: "http://localhost:5173/session",
-  sync: "ws://localhost:5173/sync",
-  signaling: "ws://localhost:5173/signal",
-  actives: "ws://localhost:5173/actives"
-  */
-  basePath: "https://www.peerdraft.app",
-  subscriptionAPI: "https://www.peerdraft.app/subscription",
-  connectAPI: "https://www.peerdraft.app/subscription/connect",
-  sessionAPI: "https://www.peerdraft.app/session",
-  sync: "wss://www.peerdraft.app/sync",
-  signaling: "wss://www.peerdraft.app/signal",
-  actives: "wss://www.peerdraft.app/actives"
-};
-var migrateSettings = async (plugin) => {
-  const oldSettings = await getSettings(plugin);
-  const newSettings = Object.assign({}, DEFAULT_SETTINGS, oldSettings, FORCE_SETTINGS, {
-    version: plugin.manifest.version
-  });
-  await saveSettings(newSettings, plugin);
-  if (oldSettings && oldSettings.version != newSettings.version) {
-    showTextModal(plugin.app, "Peerdraft updated", "A new version of Peerdraft was installed. Please restart Obsidian before you use Peerdraft again.");
+// src/ui/selectFolder.ts
+var import_obsidian3 = require("obsidian");
+var SelectFolderModal = class extends import_obsidian3.SuggestModal {
+  constructor(app, cb) {
+    super(app);
+    this.cb = cb;
+    this.folders = [];
+    import_obsidian3.Vault.recurseChildren(app.vault.getRoot(), (file) => {
+      if (file instanceof import_obsidian3.TFolder)
+        this.folders.push(file);
+    });
+    this.folders.shift();
+    this.folders.sort((a, b) => {
+      return a.path.toLocaleLowerCase().localeCompare(b.path.toLocaleLowerCase());
+    });
+  }
+  onOpen() {
+    super.onOpen();
+    this.inputEl.placeholder = "Choose a location";
+  }
+  getSuggestions(query) {
+    return this.folders.filter((folder) => {
+      return folder.path.toLocaleLowerCase().includes(query.toLocaleLowerCase());
+    });
+  }
+  renderSuggestion(value, el) {
+    el.setText(value.path);
+  }
+  selectSuggestion(value, evt) {
+    this.selectedFolder = value;
+    super.selectSuggestion(value, evt);
+  }
+  onChooseSuggestion(item, evt) {
+  }
+  onClose() {
+    this.cb(this.selectedFolder);
   }
 };
-var getSettings = async (plugin) => {
-  const settings = await plugin.loadData();
-  return settings;
-};
-var saveSettings = async (settings, plugin) => {
-  await plugin.saveData(settings);
-  plugin.settings = settings;
-};
-var renderSettings = async (el, plugin) => {
-  el.empty();
-  const settings = await getSettings(plugin);
-  el.createEl("h1", { text: "What's your name?" });
-  const setting = new import_obsidian5.Setting(el);
-  setting.setName("Name");
-  setting.setDesc("This name will be shown to your collaborators");
-  setting.addText((text2) => {
-    text2.setValue(settings.name);
-    text2.onChange(async (value) => {
-      settings.name = value;
-      await saveSettings(settings, plugin);
-    });
+var promptForFolderSelection = async (app) => {
+  return new Promise((resolve2) => {
+    new SelectFolderModal(app, (folder) => {
+      resolve2(folder);
+    }).open();
   });
-  el.createEl("h1", { text: "Your subscription" });
-  if (settings.plan.type === "hobby") {
-    el.createEl("div", { text: "You are on the free Hobby plan. You can collaborate with your peers for up to 2.5 hours a month. For unlimited collaboration time, sign-up for the Professional plan at 30 USD/year." });
-    el.createEl("p");
-    el.createEl("div", { text: `You have used Peerdraft for ${settings.duration} minutes so far.` });
-    el.createEl("p");
-    new import_obsidian5.Setting(el).setName("Subscribe").addButton((button) => {
-      button.setButtonText("Buy professional plan");
-      button.setCta();
-      button.onClick((e) => {
-        window.open(`https://peerdraft.app/checkout?oid=${settings.oid}`);
-      });
-    });
-    let connectEmail = "";
-    new import_obsidian5.Setting(el).setName("Use existing subscription").setDesc("If you already bought a subscription, enter the e-mail address associated with it and click on `Connect`.").addText((text2) => {
-      text2.setPlaceholder("me@test.com");
-      text2.onChange((value) => {
-        connectEmail = value;
-      });
-    }).addButton((button) => {
-      button.setButtonText("Connect");
-      button.onClick(async (e) => {
-        const data = await (0, import_obsidian5.requestUrl)({
-          url: settings.connectAPI,
-          method: "POST",
-          contentType: "application/json",
-          body: JSON.stringify({
-            email: connectEmail,
-            oid: settings.oid
-          })
-        }).json;
-        if (data && data.plan) {
-          settings.plan = data.plan;
-          saveSettings(settings, plugin), await renderSettings(el, plugin);
-        }
-      });
-    });
-  } else if (settings.plan.type === "professional") {
-    el.createEl("div", { text: "You are on the professional plan for unlimited collaboration. Happy peerdrafting." });
-    el.createEl("p");
-    el.createEl("div", { text: `You have used Peerdraft for ${settings.duration} minutes so far.` });
-    el.createEl("p");
-  }
-  new import_obsidian5.Setting(el).setName("Refresh subscription data").setDesc("If you just subscribed or connected your license, click here to refresh your subscription information.").addButton((button) => {
-    button.setButtonText("Refresh");
-    button.onClick(async (e) => {
-      refreshSubscriptionData(plugin);
-      renderSettings(el, plugin);
-    });
-  });
-  el.createEl("h1", { text: "Help" });
-  const div = el.createDiv();
-  div.createSpan({ text: "If you need any help, " });
-  div.createEl("a", {
-    text: "get in touch",
-    attr: {
-      href: "mailto:dominik@peerdraft.app"
-    }
-  });
-  div.createSpan({ text: "." });
-};
-var createSettingsTab = (plugin) => {
-  return new class extends import_obsidian5.PluginSettingTab {
-    async display() {
-      await renderSettings(this.containerEl, plugin);
-    }
-  }(plugin.app, plugin);
-};
-
-// src/cookie.ts
-var import_remote = require("@electron/remote");
-var prepareCommunication = async (plugin) => {
-  const settings = await getSettings(plugin);
-  if (import_obsidian6.Platform.isDesktopApp) {
-    await import_remote.session.defaultSession.cookies.set({ url: "https://www.peerdraft.app", "name": "oid", "value": settings.oid, "domain": "www.peerdraft.app", "path": "/", "secure": true, "httpOnly": true, "sameSite": "no_restriction" });
-  } else if (import_obsidian6.Platform.isMobileApp) {
-    const signalingURL = new URL(settings.signaling);
-    signalingURL.searchParams.append("oid", settings.oid);
-    settings.signaling = signalingURL.toString();
-    await saveSettings(settings, plugin);
-  }
 };
 
 // node_modules/dexie/dist/modern/dexie.mjs
@@ -15776,12 +15946,12 @@ function Events(ctx) {
       return evs[eventName];
     }
   };
-  rv.addEventType = add;
+  rv.addEventType = add2;
   for (var i = 1, l = arguments.length; i < l; ++i) {
-    add(arguments[i]);
+    add2(arguments[i]);
   }
   return rv;
-  function add(eventName, chainFunction, defaultFunction) {
+  function add2(eventName, chainFunction, defaultFunction) {
     if (typeof eventName === "object")
       return addConfiguredEvents(eventName);
     if (!chainFunction)
@@ -15811,9 +15981,9 @@ function Events(ctx) {
     keys2(cfg).forEach(function(eventName) {
       var args2 = cfg[eventName];
       if (isArray2(args2)) {
-        add(eventName, cfg[eventName][0], cfg[eventName][1]);
+        add2(eventName, cfg[eventName][0], cfg[eventName][1]);
       } else if (args2 === "asap") {
-        var context = add(eventName, mirror, function fire() {
+        var context = add2(eventName, mirror, function fire() {
           var i2 = arguments.length, args3 = new Array(i2);
           while (i2--)
             args3[i2] = arguments[i2];
@@ -19070,7 +19240,7 @@ DexiePromise.rejectionMapper = mapError;
 setDebug(debug, dexieStackFrameFilter);
 
 // src/permanentShareStore.ts
-var PermanentShareStore = class {
+var PermanentShareStoreIndexedDB = class {
   constructor(oid) {
     this.keepOpen = true;
     this.oid = oid;
@@ -19107,34 +19277,2108 @@ var PermanentShareStore = class {
       });
     }
   }
-  removeDoc(path3) {
-    return this.documentTable.delete(path3);
+  removeDoc(path4) {
+    return this.documentTable.delete(path4);
   }
-  async getDocByPath(path3) {
-    return this.documentTable.get(path3);
+  async getDocByPath(path4) {
+    return this.documentTable.get(path4);
   }
   getAllDocs() {
     return this.documentTable.toArray();
   }
-  removeFolder(path3) {
-    return this.folderTable.delete(path3);
+  removeFolder(path4) {
+    return this.folderTable.delete(path4);
   }
   getAllFolders() {
     return this.folderTable.toArray();
   }
-  async getFolderByPath(path3) {
-    return this.folderTable.get(path3);
+  async getFolderByPath(path4) {
+    return this.folderTable.get(path4);
+  }
+  async deleteDB() {
+    window.indexedDB.deleteDatabase(this.folderTable.name);
+    window.indexedDB.deleteDatabase(this.documentTable.name);
+  }
+};
+
+// src/settings.ts
+var DEFAULT_SETTINGS = {
+  basePath: "https://www.peerdraft.app",
+  subscriptionAPI: "https://www.peerdraft.app/subscription",
+  connectAPI: "https://www.peerdraft.app/subscription/connect",
+  sessionAPI: "https://www.peerdraft.app/session",
+  sync: "wss://www.peerdraft.app/sync",
+  signaling: "wss://www.peerdraft.app/signal",
+  actives: "wss://www.peerdraft.app/actives",
+  name: "",
+  root: "",
+  plan: {
+    type: "hobby",
+    email: ""
+  },
+  duration: 0,
+  debug: false,
+  version: "",
+  serverShares: {
+    files: /* @__PURE__ */ new Map(),
+    folders: /* @__PURE__ */ new Map()
+  }
+};
+var FORCE_SETTINGS = {
+  /*
+  basePath: "http://localhost:5173",
+  subscriptionAPI: "http://localhost:5173/subscription",
+  connectAPI: "http://localhost:5173/subscription/connect",
+  sessionAPI: "http://localhost:5173/session",
+  sync: "ws://localhost:5173/sync",
+  signaling: "ws://localhost:5173/signal",
+  actives: "ws://localhost:5173/actives"
+  */
+  basePath: "https://www.peerdraft.app",
+  subscriptionAPI: "https://www.peerdraft.app/subscription",
+  connectAPI: "https://www.peerdraft.app/subscription/connect",
+  sessionAPI: "https://www.peerdraft.app/session",
+  sync: "wss://www.peerdraft.app/sync",
+  signaling: "wss://www.peerdraft.app/signal",
+  actives: "wss://www.peerdraft.app/actives"
+};
+var migrateSettings = async (plugin) => {
+  var _a;
+  const oldSettings = await getSettings(plugin);
+  const newSettings = Object.assign({}, DEFAULT_SETTINGS, oldSettings, FORCE_SETTINGS, {
+    version: plugin.manifest.version
+  });
+  newSettings.oid = (_a = oldSettings == null ? void 0 : oldSettings.oid) != null ? _a : plugin.app.appId;
+  if ((oldSettings == null ? void 0 : oldSettings.oid) && newSettings.serverShares.files.size === 0 && newSettings.serverShares.folders.size === 0) {
+    const db = new PermanentShareStoreIndexedDB(oldSettings.oid);
+    const docs = await db.getAllDocs();
+    docs.forEach((doc2) => {
+      newSettings.serverShares.files.set(doc2.path, { persistenceId: doc2.persistenceId, shareId: doc2.shareId });
+    });
+    const folders = await db.getAllFolders();
+    folders.forEach((doc2) => {
+      newSettings.serverShares.folders.set(doc2.path, { persistenceId: doc2.persistenceId, shareId: doc2.shareId });
+    });
+    saveSettings(newSettings, plugin);
+    await db.deleteDB();
+  }
+  saveSettings(newSettings, plugin);
+  if (oldSettings && oldSettings.version != newSettings.version) {
+    showTextModal(plugin.app, "Peerdraft updated", "A new version of Peerdraft was installed. Please restart Obsidian before you use Peerdraft again.");
+  }
+  return newSettings;
+};
+var getSettings = async (plugin) => {
+  var _a, _b;
+  const settings = await plugin.loadData();
+  if (settings) {
+    settings.serverShares = {
+      files: new Map((_a = settings.serverShares) == null ? void 0 : _a.files),
+      folders: new Map((_b = settings.serverShares) == null ? void 0 : _b.folders)
+    };
+  }
+  return settings;
+};
+var saveSettings = (0, import_obsidian4.debounce)(async (settings, plugin) => {
+  const serialized = JSON.parse(JSON.stringify(settings));
+  serialized.serverShares = {
+    files: Array.from(settings.serverShares.files.entries()),
+    folders: Array.from(settings.serverShares.folders.entries())
+  };
+  plugin.saveData(serialized);
+}, 1e3, true);
+var renderSettings = async (el, plugin) => {
+  el.empty();
+  const settings = await getSettings(plugin);
+  el.createEl("h1", { text: "General" });
+  new import_obsidian4.Setting(el).setName("Display Name").setDesc("This name will be shown to your collaborators").addText((text2) => {
+    text2.setValue(settings.name);
+    text2.onChange(async (value) => {
+      settings.name = value;
+      saveSettings(settings, plugin);
+    });
+  });
+  const pathSetting = new import_obsidian4.Setting(el);
+  pathSetting.setName("Root Folder");
+  pathSetting.setDesc("When you import a share from someone else it will be created in this folder.");
+  pathSetting.addText((text2) => {
+    text2.setValue(settings.root);
+    text2.onChange(async (value) => {
+      settings.root = value;
+      saveSettings(settings, plugin);
+    });
+    pathSetting.addExtraButton((button) => {
+      button.setIcon("search");
+      button.onClick(async () => {
+        const folder = await promptForFolderSelection(plugin.app);
+        if (folder) {
+          text2.setValue(folder.path);
+          settings.root = folder.path;
+          saveSettings(settings, plugin);
+        }
+      });
+    });
+  });
+  el.createEl("h1", { text: "Your subscription" });
+  if (settings.plan.type === "hobby") {
+    el.createEl("div", { text: "You are on the free Hobby plan. You can collaborate with your peers for up to 2.5 hours a month. For unlimited collaboration time, sign-up for the Professional plan at 30 USD/year." });
+    el.createEl("p");
+    el.createEl("div", { text: `You have used Peerdraft for ${settings.duration} minutes so far.` });
+    el.createEl("p");
+    new import_obsidian4.Setting(el).setName("Subscribe").addButton((button) => {
+      button.setButtonText("Buy professional plan");
+      button.setCta();
+      button.onClick((e) => {
+        window.open(`https://peerdraft.app/checkout?oid=${settings.oid}`);
+      });
+    });
+    let connectEmail = "";
+    new import_obsidian4.Setting(el).setName("Use existing subscription").setDesc("If you already bought a subscription, enter the e-mail address associated with it and click on `Connect`.").addText((text2) => {
+      text2.setPlaceholder("me@test.com");
+      text2.onChange((value) => {
+        connectEmail = value;
+      });
+    }).addButton((button) => {
+      button.setButtonText("Connect");
+      button.onClick(async (e) => {
+        const data = await (0, import_obsidian4.requestUrl)({
+          url: settings.connectAPI,
+          method: "POST",
+          contentType: "application/json",
+          body: JSON.stringify({
+            email: connectEmail,
+            oid: settings.oid
+          })
+        }).json;
+        if (data && data.plan) {
+          settings.plan = data.plan;
+          saveSettings(settings, plugin), await renderSettings(el, plugin);
+        }
+      });
+    });
+  } else if (settings.plan.type === "professional") {
+    el.createEl("div", { text: "You are on the professional plan for unlimited collaboration. Happy peerdrafting." });
+    el.createEl("p");
+    el.createEl("div", { text: `You have used Peerdraft for ${settings.duration} minutes so far.` });
+    el.createEl("p");
+  }
+  new import_obsidian4.Setting(el).setName("Refresh subscription data").setDesc("If you just subscribed or connected your license, click here to refresh your subscription information.").addButton((button) => {
+    button.setButtonText("Refresh");
+    button.onClick(async (e) => {
+      refreshSubscriptionData(plugin);
+      renderSettings(el, plugin);
+    });
+  });
+  el.createEl("h1", { text: "Help" });
+  const div = el.createDiv();
+  div.createSpan({ text: "If you need any help, " });
+  div.createEl("a", {
+    text: "get in touch",
+    attr: {
+      href: "mailto:dominik@peerdraft.app"
+    }
+  });
+  div.createSpan({ text: "." });
+};
+var createSettingsTab = (plugin) => {
+  return new class extends import_obsidian4.PluginSettingTab {
+    async display() {
+      await renderSettings(this.containerEl, plugin);
+    }
+  }(plugin.app, plugin);
+};
+
+// src/permanentShareStoreFS.ts
+var add = async (doc2, plugin) => {
+  if (doc2 instanceof SharedDocument) {
+    plugin.settings.serverShares.files.set(doc2.path, {
+      shareId: doc2.shareId,
+      persistenceId: createRandomId()
+    });
+  }
+  if (doc2 instanceof SharedFolder) {
+    plugin.settings.serverShares.folders.set(doc2.path, {
+      shareId: doc2.shareId,
+      persistenceId: createRandomId()
+    });
+  }
+  saveSettings(plugin.settings, plugin);
+};
+var removeDoc = async (path4, plugin) => {
+  plugin.settings.serverShares.files.delete(path4);
+  saveSettings(plugin.settings, plugin);
+};
+var getDocByPath = (path4, plugin) => {
+  return plugin.settings.serverShares.files.get(path4);
+};
+var moveDoc = async (oldPath, newPath, plugin) => {
+  const files = plugin.settings.serverShares.files;
+  const entry = files.get(oldPath);
+  if (entry) {
+    files.delete(oldPath);
+    files.set(newPath, entry);
+    saveSettings(plugin.settings, plugin);
+  }
+};
+var removeFolder = async (path4, plugin) => {
+  plugin.settings.serverShares.folders.delete(path4);
+  saveSettings(plugin.settings, plugin);
+};
+var getFolderByPath = (path4, plugin) => {
+  return plugin.settings.serverShares.folders.get(path4);
+};
+var moveFolder = async (oldPath, newPath, plugin) => {
+  const files = plugin.settings.serverShares.folders;
+  const entry = files.get(oldPath);
+  if (entry) {
+    files.delete(oldPath);
+    files.set(newPath, entry);
+    saveSettings(plugin.settings, plugin);
+  }
+};
+
+// src/sharedEntities/sharedFolder.ts
+var handleUpdate = (ev, tx, folder, plugin) => {
+  var _a;
+  if (![plugin.serverSync, (_a = folder.webRTCProvider) == null ? void 0 : _a.room].contains(tx.origin))
+    return;
+  const changedKeys = ev.changes.keys;
+  changedKeys.forEach(async (data, key) => {
+    plugin.log("Action: " + data.action + "for " + key + " --> " + tx.doc.getMap("documents").get(key));
+    if (data.action === "add") {
+      const relativePath = tx.doc.getMap("documents").get(key);
+      const absolutePath = path.join(folder.path, relativePath);
+      const file = plugin.app.vault.getAbstractFileByPath(absolutePath);
+      if (file) {
+        showNotice("File " + file.path + " already exists. Renaming.");
+        const alteredPath = path.join(path.dirname(relativePath), path.basename(relativePath, path.extname(relativePath)) + "_" + generateRandomString() + path.extname(relativePath));
+        const alteredAbsolutePath = path.join(folder.root.path, alteredPath);
+        folder.getDocsFragment().set(key, alteredPath);
+        SharedDocument.fromIdAndPath(key, alteredAbsolutePath, plugin);
+      } else {
+        showNotice("Creating new shared document: " + absolutePath);
+        await SharedFolder.getOrCreatePath(path.parse(absolutePath).dir, plugin);
+        await SharedDocument.fromIdAndPath(key, absolutePath, plugin);
+      }
+    } else if (data.action === "update") {
+      const newPath = tx.doc.getMap("documents").get(key);
+      const document2 = SharedDocument.findById(key);
+      if (!document2)
+        return;
+      plugin.log("Update " + document2.path + "   " + key);
+      const folder2 = SharedFolder.getSharedFolderForSubPath(document2.path);
+      if (!folder2)
+        return;
+      let newAbsolutePath = path.join(folder2.root.path, newPath);
+      await SharedFolder.getOrCreatePath(path.parse(newAbsolutePath).dir, plugin);
+      const alreadyExists = SharedDocument.findByPath(newAbsolutePath);
+      if (alreadyExists) {
+        showNotice("File " + newPath + " already exists. Renaming.");
+        const alteredPath = path.join(path.dirname(newPath), path.basename(newPath, path.extname(newPath)) + "_" + generateRandomString() + path.extname(newPath));
+        const alteredAbsolutePath = path.join(folder2.root.path, alteredPath);
+        folder2.getDocsFragment().set(key, alteredPath);
+        SharedDocument.fromIdAndPath(key, alteredAbsolutePath, plugin);
+      } else {
+        plugin.app.vault.rename(document2.file, newAbsolutePath);
+      }
+    } else if (data.action === "delete") {
+      const document2 = SharedDocument.findById(key);
+      if (!document2)
+        return;
+      plugin.log("Delete " + document2.path + "   " + key);
+      const file = plugin.app.vault.getAbstractFileByPath(document2.path);
+      if (!file)
+        return;
+      plugin.app.vault.delete(file);
+    }
+  });
+};
+var _SharedFolder = class extends SharedEntity {
+  constructor(root, plugin, ydoc) {
+    super(plugin);
+    this.root = root;
+    this._path = root.path;
+    this.yDoc = ydoc != null ? ydoc : new Doc();
+    this.getDocsFragment().observe((ev, tx) => {
+      handleUpdate(ev, tx, this, plugin);
+    });
+    this.yDoc.on("update", (update, origin, yDoc, tr) => {
+      if (tr.local && this.shareId) {
+        plugin.serverSync.sendUpdate(this, update);
+      }
+    });
+    _SharedFolder._sharedEntites.push(this);
+    addIsSharedClass(this.path, plugin);
+  }
+  static async fromTFolder(root, plugin) {
+    showNotice(`Inititializing share for ${root.path}.`);
+    const files = this.getAllFilesInFolder(root);
+    for (const file of files) {
+      if (SharedDocument.findByPath(file.path)) {
+        showNotice("You can not share a directory that already has shared files in it (right now).");
+        return;
+      }
+    }
+    const docs = await Promise.all(files.map((file) => {
+      return SharedDocument.fromTFile(file, {
+        permanent: true
+      }, plugin);
+    }));
+    const folder = new _SharedFolder(root, plugin);
+    for (const doc2 of docs) {
+      if (doc2) {
+        folder.addDocument(doc2);
+      }
+    }
+    folder.yDoc.getText("originalFoldername").insert(0, root.name);
+    await folder.initServerYDoc();
+    await add(folder, plugin);
+    await folder.startIndexedDBSync();
+    folder.startWebRTCSync();
+    navigator.clipboard.writeText(plugin.settings.basePath + "/team/" + folder.shareId);
+    showNotice(`Folder ${folder.path} with ${docs.length} documents shared. URL copied to your clipboard.`, 0);
+    return folder;
+  }
+  static async recreate(folder, plugin) {
+    const location2 = folder.root.path;
+    await folder.unshare();
+    await plugin.app.vault.delete(folder.root, true);
+    return await this.fromShareURL(plugin.settings.basePath + "/team/" + folder.shareId, plugin, location2);
+  }
+  static async fromShareURL(url, plugin, location2) {
+    const id2 = url.split("/").pop();
+    if (!id2 || !id2.match("^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$")) {
+      showNotice("No valid peerdraft link");
+      return;
+    }
+    let folderPath = location2;
+    const preFetchedDoc = await plugin.serverSync.requestDocument(id2);
+    if (!location2) {
+      let initialRootName = `_peerdraft_team_folder_${generateRandomString()}`;
+      const docFoldername = preFetchedDoc.getText("originalFoldername").toString();
+      if (docFoldername != "") {
+        const folderExists = plugin.app.vault.getAbstractFileByPath(path.join(plugin.settings.root, docFoldername));
+        if (!folderExists) {
+          initialRootName = docFoldername;
+        } else {
+          initialRootName = `_peerdraft_${generateRandomString()}_${docFoldername}`;
+        }
+      }
+      folderPath = path.join(plugin.settings.root, initialRootName);
+    }
+    const folder = await _SharedFolder.getOrCreatePath(folderPath, plugin);
+    if (!folder) {
+      return showNotice("Could not create folder " + folderPath);
+    }
+    ;
+    const paths = [];
+    const documentMap = preFetchedDoc.getMap("documents");
+    for (const entry of documentMap.entries()) {
+      let docPath = entry[1];
+      if (paths.contains(docPath)) {
+        docPath = path.join(path.dirname(docPath), path.basename(docPath, path.extname(docPath)) + "_" + generateRandomString() + path.extname(docPath));
+        documentMap.set(entry[0], docPath);
+      }
+      await SharedDocument.fromIdAndPath(entry[0], path.join(folderPath, docPath), plugin);
+      paths.push(docPath);
+    }
+    const sFolder = new _SharedFolder(folder, plugin, preFetchedDoc);
+    sFolder._shareId = id2;
+    await add(sFolder, plugin);
+    await sFolder.startIndexedDBSync();
+    if (sFolder.indexedDBProvider) {
+      if (!sFolder.indexedDBProvider.synced)
+        await sFolder.indexedDBProvider.whenSynced;
+      await sFolder.syncWithServer();
+      sFolder.startWebRTCSync();
+    }
+    return sFolder;
+  }
+  static async fromPermanentShareFolder(psf, plugin) {
+    if (this.findByPath(psf.path))
+      return;
+    let tFolder;
+    tFolder = plugin.app.vault.getAbstractFileByPath(psf.path);
+    if (tFolder instanceof import_obsidian5.TFile) {
+      showNotice("Expected " + psf.path + " to be a folder, a but is a file?");
+      return;
+    }
+    if (!(tFolder instanceof import_obsidian5.TFolder)) {
+      showNotice("Shared folder " + psf.path + " not found. Creating it now.");
+      tFolder = await this.getOrCreatePath(psf.path, plugin);
+    }
+    if (!(tFolder instanceof import_obsidian5.TFolder)) {
+      showNotice("Could not create folder " + psf.path + ".");
+      return;
+    }
+    const folder = new _SharedFolder(tFolder, plugin);
+    folder._shareId = psf.shareId;
+    const local = await folder.startIndexedDBSync();
+    if (local) {
+      if (local.synced || await local.whenSynced) {
+        await folder.syncWithServer();
+        folder.startWebRTCSync();
+      }
+    }
+    return folder;
+  }
+  static findByPath(path4) {
+    return super.findByPath(path4);
+  }
+  static findById(id2) {
+    return super.findById(id2);
+  }
+  static getAll() {
+    return super.getAll();
+  }
+  static getSharedFolderForSubPath(dir) {
+    const folders = this.getAll();
+    for (const folder of folders) {
+      if (folder.root.path === dir)
+        return;
+      if (folder.isPathSubPath(dir))
+        return folder;
+    }
+  }
+  getDocsFragment() {
+    return this.yDoc.getMap("documents");
+  }
+  getDocByRelativePath(dir) {
+    for (const entry of this.getDocsFragment().entries()) {
+      if (entry[1] === dir)
+        return entry[0];
+    }
+  }
+  updatePath(oldPath, newPath) {
+    const oldPathRelative = path.relative(this.root.path, oldPath);
+    const newPathRelative = path.relative(this.root.path, newPath);
+    const id2 = this.getDocByRelativePath(oldPathRelative);
+    if (id2) {
+      this.getDocsFragment().set(id2, newPathRelative);
+    }
+    return id2;
+  }
+  calculateHash() {
+    const serialized = serialize(Array.from(this.getDocsFragment()));
+    return calculateHash(serialized);
+  }
+  addDocument(doc2) {
+    if (this.getDocsFragment().get(doc2.shareId))
+      return;
+    const relativePath = path.relative(this.root.path, doc2.path);
+    if (relativePath.startsWith(".."))
+      return;
+    this.getDocsFragment().set(doc2.shareId, relativePath);
+  }
+  removeDocument(doc2) {
+    this.getDocsFragment().delete(doc2.shareId);
+  }
+  isPathSubPath(folder) {
+    const relativePath = path.relative(this.root.path, folder);
+    return !relativePath.startsWith("..");
+  }
+  static getAllFilesInFolder(folder) {
+    const files = folder.children.flatMap((child) => {
+      if (child instanceof import_obsidian5.TFile) {
+        if (child.extension === "md") {
+          return child;
+        }
+      }
+      if (child instanceof import_obsidian5.TFolder) {
+        return this.getAllFilesInFolder(child);
+      }
+      return [];
+    });
+    return files;
+  }
+  async setNewFolderLocation(folder) {
+    const oldPath = this._path;
+    this.root = folder;
+    this._path = folder.path;
+    moveFolder(oldPath, folder.path, this.plugin);
+  }
+  async getOrCreateFile(relativePath) {
+    const absolutePath = path.join(this.root.path, relativePath);
+    let file = this.plugin.app.vault.getAbstractFileByPath(absolutePath);
+    if (file && file instanceof import_obsidian5.TFile)
+      return file;
+    const folder = await _SharedFolder.getOrCreatePath(path.parse(absolutePath).dir, this.plugin);
+    if (!folder) {
+      showNotice("Error creating shares");
+      return;
+    }
+    return await this.plugin.app.vault.create(absolutePath, "");
+  }
+  static async getOrCreatePath(absolutePath, plugin) {
+    let folder = plugin.app.vault.getAbstractFileByPath(absolutePath);
+    if (folder && folder instanceof import_obsidian5.TFolder)
+      return folder;
+    const segments = absolutePath.split(path.sep);
+    for (let index = 0; index < segments.length; index++) {
+      const subPath = segments.slice(0, index + 1).join(path.sep);
+      folder = plugin.app.vault.getAbstractFileByPath(subPath);
+      if (!folder) {
+        folder = await plugin.app.vault.createFolder(subPath);
+      }
+    }
+    return folder;
+  }
+  isFileInSyncObject(file) {
+    for (const value of this.getDocsFragment().values()) {
+      if (file.path === path.join(this.root.path, value))
+        return true;
+    }
+    return false;
+  }
+  startWebRTCSync() {
+    return super.startWebRTCSync((provider) => {
+      const handleTimeout = () => {
+      };
+      this._webRTCTimeout = window.setTimeout(handleTimeout, 6e4);
+      provider.doc.on("update", async (update, origin, doc2, tr) => {
+        if (this._webRTCTimeout != null) {
+          window.clearTimeout(this._webRTCTimeout);
+        }
+        this._webRTCTimeout = window.setTimeout(handleTimeout, 6e4);
+      });
+    });
+  }
+  async startIndexedDBSync() {
+    var _a;
+    if (this._indexedDBProvider)
+      return this._indexedDBProvider;
+    const id2 = (_a = getFolderByPath(this.path, this.plugin)) == null ? void 0 : _a.persistenceId;
+    if (!id2)
+      return;
+    this._indexedDBProvider = new IndexeddbPersistence(SharedEntity.DB_PERSISTENCE_PREFIX + id2, this.yDoc);
+    return this._indexedDBProvider;
+  }
+  async unshare() {
+    const dbEntry = getFolderByPath(this.path, this.plugin);
+    if (dbEntry) {
+      removeFolder(this.path, this.plugin);
+    }
+    if (this._indexedDBProvider) {
+      await this._indexedDBProvider.clearData();
+      await this._indexedDBProvider.destroy();
+    }
+    this.getDocsFragment().forEach((path4, shareId) => {
+      var _a;
+      (_a = SharedDocument.findById(shareId)) == null ? void 0 : _a.unshare();
+    });
+    this.destroy();
+    removeIsSharedClass(this.path, this.plugin);
+  }
+  destroy() {
+    super.destroy();
+    _SharedFolder._sharedEntites.splice(_SharedFolder._sharedEntites.indexOf(this), 1);
+  }
+};
+var SharedFolder = _SharedFolder;
+SharedFolder._sharedEntites = new Array();
+
+// node_modules/async-mutex/index.mjs
+var E_TIMEOUT = new Error("timeout while waiting for mutex to become available");
+var E_ALREADY_LOCKED = new Error("mutex already locked");
+var E_CANCELED = new Error("request for lock canceled");
+var __awaiter$2 = function(thisArg, _arguments, P, generator) {
+  function adopt(value) {
+    return value instanceof P ? value : new P(function(resolve2) {
+      resolve2(value);
+    });
+  }
+  return new (P || (P = Promise))(function(resolve2, reject2) {
+    function fulfilled(value) {
+      try {
+        step(generator.next(value));
+      } catch (e) {
+        reject2(e);
+      }
+    }
+    function rejected(value) {
+      try {
+        step(generator["throw"](value));
+      } catch (e) {
+        reject2(e);
+      }
+    }
+    function step(result) {
+      result.done ? resolve2(result.value) : adopt(result.value).then(fulfilled, rejected);
+    }
+    step((generator = generator.apply(thisArg, _arguments || [])).next());
+  });
+};
+var Semaphore = class {
+  constructor(_value, _cancelError = E_CANCELED) {
+    this._value = _value;
+    this._cancelError = _cancelError;
+    this._queue = [];
+    this._weightedWaiters = [];
+  }
+  acquire(weight = 1, priority = 0) {
+    if (weight <= 0)
+      throw new Error(`invalid weight ${weight}: must be positive`);
+    return new Promise((resolve2, reject2) => {
+      const task2 = { resolve: resolve2, reject: reject2, weight, priority };
+      const i = findIndexFromEnd(this._queue, (other) => priority <= other.priority);
+      if (i === -1 && weight <= this._value) {
+        this._dispatchItem(task2);
+      } else {
+        this._queue.splice(i + 1, 0, task2);
+      }
+    });
+  }
+  runExclusive(callback_1) {
+    return __awaiter$2(this, arguments, void 0, function* (callback, weight = 1, priority = 0) {
+      const [value, release] = yield this.acquire(weight, priority);
+      try {
+        return yield callback(value);
+      } finally {
+        release();
+      }
+    });
+  }
+  waitForUnlock(weight = 1, priority = 0) {
+    if (weight <= 0)
+      throw new Error(`invalid weight ${weight}: must be positive`);
+    if (this._couldLockImmediately(weight, priority)) {
+      return Promise.resolve();
+    } else {
+      return new Promise((resolve2) => {
+        if (!this._weightedWaiters[weight - 1])
+          this._weightedWaiters[weight - 1] = [];
+        insertSorted(this._weightedWaiters[weight - 1], { resolve: resolve2, priority });
+      });
+    }
+  }
+  isLocked() {
+    return this._value <= 0;
+  }
+  getValue() {
+    return this._value;
+  }
+  setValue(value) {
+    this._value = value;
+    this._dispatchQueue();
+  }
+  release(weight = 1) {
+    if (weight <= 0)
+      throw new Error(`invalid weight ${weight}: must be positive`);
+    this._value += weight;
+    this._dispatchQueue();
+  }
+  cancel() {
+    this._queue.forEach((entry) => entry.reject(this._cancelError));
+    this._queue = [];
+  }
+  _dispatchQueue() {
+    this._drainUnlockWaiters();
+    while (this._queue.length > 0 && this._queue[0].weight <= this._value) {
+      this._dispatchItem(this._queue.shift());
+      this._drainUnlockWaiters();
+    }
+  }
+  _dispatchItem(item) {
+    const previousValue = this._value;
+    this._value -= item.weight;
+    item.resolve([previousValue, this._newReleaser(item.weight)]);
+  }
+  _newReleaser(weight) {
+    let called = false;
+    return () => {
+      if (called)
+        return;
+      called = true;
+      this.release(weight);
+    };
+  }
+  _drainUnlockWaiters() {
+    if (this._queue.length === 0) {
+      for (let weight = this._value; weight > 0; weight--) {
+        const waiters = this._weightedWaiters[weight - 1];
+        if (!waiters)
+          continue;
+        waiters.forEach((waiter) => waiter.resolve());
+        this._weightedWaiters[weight - 1] = [];
+      }
+    } else {
+      const queuedPriority = this._queue[0].priority;
+      for (let weight = this._value; weight > 0; weight--) {
+        const waiters = this._weightedWaiters[weight - 1];
+        if (!waiters)
+          continue;
+        const i = waiters.findIndex((waiter) => waiter.priority <= queuedPriority);
+        (i === -1 ? waiters : waiters.splice(0, i)).forEach((waiter) => waiter.resolve());
+      }
+    }
+  }
+  _couldLockImmediately(weight, priority) {
+    return (this._queue.length === 0 || this._queue[0].priority < priority) && weight <= this._value;
+  }
+};
+function insertSorted(a, v) {
+  const i = findIndexFromEnd(a, (other) => v.priority <= other.priority);
+  a.splice(i + 1, 0, v);
+}
+function findIndexFromEnd(a, predicate) {
+  for (let i = a.length - 1; i >= 0; i--) {
+    if (predicate(a[i])) {
+      return i;
+    }
+  }
+  return -1;
+}
+var __awaiter$1 = function(thisArg, _arguments, P, generator) {
+  function adopt(value) {
+    return value instanceof P ? value : new P(function(resolve2) {
+      resolve2(value);
+    });
+  }
+  return new (P || (P = Promise))(function(resolve2, reject2) {
+    function fulfilled(value) {
+      try {
+        step(generator.next(value));
+      } catch (e) {
+        reject2(e);
+      }
+    }
+    function rejected(value) {
+      try {
+        step(generator["throw"](value));
+      } catch (e) {
+        reject2(e);
+      }
+    }
+    function step(result) {
+      result.done ? resolve2(result.value) : adopt(result.value).then(fulfilled, rejected);
+    }
+    step((generator = generator.apply(thisArg, _arguments || [])).next());
+  });
+};
+var Mutex = class {
+  constructor(cancelError) {
+    this._semaphore = new Semaphore(1, cancelError);
+  }
+  acquire() {
+    return __awaiter$1(this, arguments, void 0, function* (priority = 0) {
+      const [, releaser] = yield this._semaphore.acquire(1, priority);
+      return releaser;
+    });
+  }
+  runExclusive(callback, priority = 0) {
+    return this._semaphore.runExclusive(() => callback(), 1, priority);
+  }
+  isLocked() {
+    return this._semaphore.isLocked();
+  }
+  waitForUnlock(priority = 0) {
+    return this._semaphore.waitForUnlock(1, priority);
+  }
+  release() {
+    if (this._semaphore.isLocked())
+      this._semaphore.release();
+  }
+  cancel() {
+    return this._semaphore.cancel();
+  }
+};
+
+// node_modules/diff-match-patch-es/dist/index.mjs
+var defaultOptions = /* @__PURE__ */ Object.freeze({
+  diffTimeout: 1,
+  diffEditCost: 4,
+  matchThreshold: 0.5,
+  matchDistance: 1e3,
+  patchDeleteThreshold: 0.5,
+  patchMargin: 4,
+  matchMaxBits: 32
+});
+function resolveOptions(options) {
+  if (options == null ? void 0 : options.__resolved)
+    return options;
+  const resolved = {
+    ...defaultOptions,
+    ...options
+  };
+  Object.defineProperty(resolved, "__resolved", { value: true, enumerable: false });
+  return resolved;
+}
+var DIFF_DELETE = -1;
+var DIFF_INSERT = 1;
+var DIFF_EQUAL = 0;
+function createDiff(op, text2) {
+  return [op, text2];
+}
+function diffMain(text1, text2, options, opt_checklines = true, opt_deadline) {
+  const resolved = resolveOptions(options);
+  if (typeof opt_deadline == "undefined") {
+    if (resolved.diffTimeout <= 0)
+      opt_deadline = Number.MAX_VALUE;
+    else
+      opt_deadline = (/* @__PURE__ */ new Date()).getTime() + resolved.diffTimeout * 1e3;
+  }
+  const deadline = opt_deadline;
+  if (text1 == null || text2 == null)
+    throw new Error("Null input. (diff_main)");
+  if (text1 === text2) {
+    if (text1)
+      return [createDiff(DIFF_EQUAL, text1)];
+    return [];
+  }
+  const checklines = opt_checklines;
+  let commonlength = diffCommonPrefix(text1, text2);
+  const commonprefix = text1.substring(0, commonlength);
+  text1 = text1.substring(commonlength);
+  text2 = text2.substring(commonlength);
+  commonlength = diffCommonSuffix(text1, text2);
+  const commonsuffix = text1.substring(text1.length - commonlength);
+  text1 = text1.substring(0, text1.length - commonlength);
+  text2 = text2.substring(0, text2.length - commonlength);
+  const diffs = diffCompute(text1, text2, resolved, checklines, deadline);
+  if (commonprefix)
+    diffs.unshift(createDiff(DIFF_EQUAL, commonprefix));
+  if (commonsuffix)
+    diffs.push(createDiff(DIFF_EQUAL, commonsuffix));
+  diffCleanupMerge(diffs);
+  return diffs;
+}
+function diffCompute(text1, text2, options, checklines, deadline) {
+  let diffs;
+  if (!text1) {
+    return [createDiff(DIFF_INSERT, text2)];
+  }
+  if (!text2) {
+    return [createDiff(DIFF_DELETE, text1)];
+  }
+  const longtext = text1.length > text2.length ? text1 : text2;
+  const shorttext = text1.length > text2.length ? text2 : text1;
+  const i = longtext.indexOf(shorttext);
+  if (i !== -1) {
+    diffs = [createDiff(DIFF_INSERT, longtext.substring(0, i)), createDiff(DIFF_EQUAL, shorttext), createDiff(DIFF_INSERT, longtext.substring(i + shorttext.length))];
+    if (text1.length > text2.length)
+      diffs[0][0] = diffs[2][0] = DIFF_DELETE;
+    return diffs;
+  }
+  if (shorttext.length === 1) {
+    return [createDiff(DIFF_DELETE, text1), createDiff(DIFF_INSERT, text2)];
+  }
+  const hm = diffHalfMatch(text1, text2, options);
+  if (hm) {
+    const text1_a = hm[0];
+    const text1_b = hm[1];
+    const text2_a = hm[2];
+    const text2_b = hm[3];
+    const mid_common = hm[4];
+    const diffs_a = diffMain(text1_a, text2_a, options, checklines, deadline);
+    const diffs_b = diffMain(text1_b, text2_b, options, checklines, deadline);
+    return diffs_a.concat([createDiff(DIFF_EQUAL, mid_common)], diffs_b);
+  }
+  if (checklines && text1.length > 100 && text2.length > 100)
+    return diffLineMode(text1, text2, options, deadline);
+  return diffBisect(text1, text2, options, deadline);
+}
+function diffLineMode(text1, text2, options, deadline) {
+  const a = diffLinesToChars(text1, text2);
+  text1 = a.chars1;
+  text2 = a.chars2;
+  const linearray = a.lineArray;
+  const diffs = diffMain(text1, text2, options, false, deadline);
+  diffCharsToLines(diffs, linearray);
+  diffCleanupSemantic(diffs);
+  diffs.push(createDiff(DIFF_EQUAL, ""));
+  let pointer = 0;
+  let count_delete = 0;
+  let count_insert = 0;
+  let text_delete = "";
+  let text_insert = "";
+  while (pointer < diffs.length) {
+    switch (diffs[pointer][0]) {
+      case DIFF_INSERT:
+        count_insert++;
+        text_insert += diffs[pointer][1];
+        break;
+      case DIFF_DELETE:
+        count_delete++;
+        text_delete += diffs[pointer][1];
+        break;
+      case DIFF_EQUAL:
+        if (count_delete >= 1 && count_insert >= 1) {
+          diffs.splice(pointer - count_delete - count_insert, count_delete + count_insert);
+          pointer = pointer - count_delete - count_insert;
+          const subDiff = diffMain(text_delete, text_insert, options, false, deadline);
+          for (let j = subDiff.length - 1; j >= 0; j--)
+            diffs.splice(pointer, 0, subDiff[j]);
+          pointer = pointer + subDiff.length;
+        }
+        count_insert = 0;
+        count_delete = 0;
+        text_delete = "";
+        text_insert = "";
+        break;
+    }
+    pointer++;
+  }
+  diffs.pop();
+  return diffs;
+}
+function diffBisect(text1, text2, options, deadline) {
+  const text1_length = text1.length;
+  const text2_length = text2.length;
+  const max_d = Math.ceil((text1_length + text2_length) / 2);
+  const v_offset = max_d;
+  const v_length = 2 * max_d;
+  const v1 = new Array(v_length);
+  const v2 = new Array(v_length);
+  for (let x = 0; x < v_length; x++) {
+    v1[x] = -1;
+    v2[x] = -1;
+  }
+  v1[v_offset + 1] = 0;
+  v2[v_offset + 1] = 0;
+  const delta = text1_length - text2_length;
+  const front = delta % 2 !== 0;
+  let k1start = 0;
+  let k1end = 0;
+  let k2start = 0;
+  let k2end = 0;
+  for (let d = 0; d < max_d; d++) {
+    if ((/* @__PURE__ */ new Date()).getTime() > deadline)
+      break;
+    for (let k1 = -d + k1start; k1 <= d - k1end; k1 += 2) {
+      const k1_offset = v_offset + k1;
+      let x1;
+      if (k1 === -d || k1 !== d && v1[k1_offset - 1] < v1[k1_offset + 1])
+        x1 = v1[k1_offset + 1];
+      else
+        x1 = v1[k1_offset - 1] + 1;
+      let y1 = x1 - k1;
+      while (x1 < text1_length && y1 < text2_length && text1.charAt(x1) === text2.charAt(y1)) {
+        x1++;
+        y1++;
+      }
+      v1[k1_offset] = x1;
+      if (x1 > text1_length) {
+        k1end += 2;
+      } else if (y1 > text2_length) {
+        k1start += 2;
+      } else if (front) {
+        const k2_offset = v_offset + delta - k1;
+        if (k2_offset >= 0 && k2_offset < v_length && v2[k2_offset] !== -1) {
+          const x2 = text1_length - v2[k2_offset];
+          if (x1 >= x2) {
+            return diffBisectSplit(text1, text2, options, x1, y1, deadline);
+          }
+        }
+      }
+    }
+    for (let k2 = -d + k2start; k2 <= d - k2end; k2 += 2) {
+      const k2_offset = v_offset + k2;
+      let x2;
+      if (k2 === -d || k2 !== d && v2[k2_offset - 1] < v2[k2_offset + 1])
+        x2 = v2[k2_offset + 1];
+      else
+        x2 = v2[k2_offset - 1] + 1;
+      let y2 = x2 - k2;
+      while (x2 < text1_length && y2 < text2_length && text1.charAt(text1_length - x2 - 1) === text2.charAt(text2_length - y2 - 1)) {
+        x2++;
+        y2++;
+      }
+      v2[k2_offset] = x2;
+      if (x2 > text1_length) {
+        k2end += 2;
+      } else if (y2 > text2_length) {
+        k2start += 2;
+      } else if (!front) {
+        const k1_offset = v_offset + delta - k2;
+        if (k1_offset >= 0 && k1_offset < v_length && v1[k1_offset] !== -1) {
+          const x1 = v1[k1_offset];
+          const y1 = v_offset + x1 - k1_offset;
+          x2 = text1_length - x2;
+          if (x1 >= x2) {
+            return diffBisectSplit(text1, text2, options, x1, y1, deadline);
+          }
+        }
+      }
+    }
+  }
+  return [createDiff(DIFF_DELETE, text1), createDiff(DIFF_INSERT, text2)];
+}
+function diffBisectSplit(text1, text2, options, x, y, deadline) {
+  const text1a = text1.substring(0, x);
+  const text2a = text2.substring(0, y);
+  const text1b = text1.substring(x);
+  const text2b = text2.substring(y);
+  const diffs = diffMain(text1a, text2a, options, false, deadline);
+  const diffsb = diffMain(text1b, text2b, options, false, deadline);
+  return diffs.concat(diffsb);
+}
+function diffLinesToChars(text1, text2) {
+  const lineArray = [];
+  const lineHash = {};
+  let maxLines = 4e4;
+  lineArray[0] = "";
+  function diffLinesToCharsMunge(text3) {
+    let chars = "";
+    let lineStart = 0;
+    let lineEnd = -1;
+    let lineArrayLength = lineArray.length;
+    while (lineEnd < text3.length - 1) {
+      lineEnd = text3.indexOf("\n", lineStart);
+      if (lineEnd === -1)
+        lineEnd = text3.length - 1;
+      let line = text3.substring(lineStart, lineEnd + 1);
+      if (lineHash.hasOwnProperty ? Object.prototype.hasOwnProperty.call(lineHash, line) : lineHash[line] !== void 0) {
+        chars += String.fromCharCode(lineHash[line]);
+      } else {
+        if (lineArrayLength === maxLines) {
+          line = text3.substring(lineStart);
+          lineEnd = text3.length;
+        }
+        chars += String.fromCharCode(lineArrayLength);
+        lineHash[line] = lineArrayLength;
+        lineArray[lineArrayLength++] = line;
+      }
+      lineStart = lineEnd + 1;
+    }
+    return chars;
+  }
+  const chars1 = diffLinesToCharsMunge(text1);
+  maxLines = 65535;
+  const chars2 = diffLinesToCharsMunge(text2);
+  return { chars1, chars2, lineArray };
+}
+function diffCharsToLines(diffs, lineArray) {
+  for (let i = 0; i < diffs.length; i++) {
+    const chars = diffs[i][1];
+    const text2 = [];
+    for (let j = 0; j < chars.length; j++)
+      text2[j] = lineArray[chars.charCodeAt(j)];
+    diffs[i][1] = text2.join("");
+  }
+}
+function diffCommonPrefix(text1, text2) {
+  if (!text1 || !text2 || text1.charAt(0) !== text2.charAt(0))
+    return 0;
+  let pointermin = 0;
+  let pointermax = Math.min(text1.length, text2.length);
+  let pointermid = pointermax;
+  let pointerstart = 0;
+  while (pointermin < pointermid) {
+    if (text1.substring(pointerstart, pointermid) === text2.substring(pointerstart, pointermid)) {
+      pointermin = pointermid;
+      pointerstart = pointermin;
+    } else {
+      pointermax = pointermid;
+    }
+    pointermid = Math.floor((pointermax - pointermin) / 2 + pointermin);
+  }
+  return pointermid;
+}
+function diffCommonSuffix(text1, text2) {
+  if (!text1 || !text2 || text1.charAt(text1.length - 1) !== text2.charAt(text2.length - 1))
+    return 0;
+  let pointermin = 0;
+  let pointermax = Math.min(text1.length, text2.length);
+  let pointermid = pointermax;
+  let pointerend = 0;
+  while (pointermin < pointermid) {
+    if (text1.substring(text1.length - pointermid, text1.length - pointerend) === text2.substring(text2.length - pointermid, text2.length - pointerend)) {
+      pointermin = pointermid;
+      pointerend = pointermin;
+    } else {
+      pointermax = pointermid;
+    }
+    pointermid = Math.floor((pointermax - pointermin) / 2 + pointermin);
+  }
+  return pointermid;
+}
+function diffCommonOverlap(text1, text2) {
+  const text1_length = text1.length;
+  const text2_length = text2.length;
+  if (text1_length === 0 || text2_length === 0)
+    return 0;
+  if (text1_length > text2_length)
+    text1 = text1.substring(text1_length - text2_length);
+  else if (text1_length < text2_length)
+    text2 = text2.substring(0, text1_length);
+  const text_length = Math.min(text1_length, text2_length);
+  if (text1 === text2)
+    return text_length;
+  let best = 0;
+  let length3 = 1;
+  while (true) {
+    const pattern = text1.substring(text_length - length3);
+    const found = text2.indexOf(pattern);
+    if (found === -1)
+      return best;
+    length3 += found;
+    if (found === 0 || text1.substring(text_length - length3) === text2.substring(0, length3)) {
+      best = length3;
+      length3++;
+    }
+  }
+}
+function diffHalfMatch(text1, text2, options) {
+  if (options.diffTimeout <= 0) {
+    return null;
+  }
+  const longtext = text1.length > text2.length ? text1 : text2;
+  const shorttext = text1.length > text2.length ? text2 : text1;
+  if (longtext.length < 4 || shorttext.length * 2 < longtext.length)
+    return null;
+  function diffHalfMatchI(longtext2, shorttext2, i) {
+    const seed = longtext2.substring(i, i + Math.floor(longtext2.length / 4));
+    let j = -1;
+    let best_common = "";
+    let best_longtext_a, best_longtext_b, best_shorttext_a, best_shorttext_b;
+    while ((j = shorttext2.indexOf(seed, j + 1)) !== -1) {
+      const prefixLength = diffCommonPrefix(longtext2.substring(i), shorttext2.substring(j));
+      const suffixLength = diffCommonSuffix(longtext2.substring(0, i), shorttext2.substring(0, j));
+      if (best_common.length < suffixLength + prefixLength) {
+        best_common = shorttext2.substring(j - suffixLength, j) + shorttext2.substring(j, j + prefixLength);
+        best_longtext_a = longtext2.substring(0, i - suffixLength);
+        best_longtext_b = longtext2.substring(i + prefixLength);
+        best_shorttext_a = shorttext2.substring(0, j - suffixLength);
+        best_shorttext_b = shorttext2.substring(j + prefixLength);
+      }
+    }
+    if (best_common.length * 2 >= longtext2.length)
+      return [best_longtext_a, best_longtext_b, best_shorttext_a, best_shorttext_b, best_common];
+    else
+      return null;
+  }
+  const hm1 = diffHalfMatchI(longtext, shorttext, Math.ceil(longtext.length / 4));
+  const hm2 = diffHalfMatchI(longtext, shorttext, Math.ceil(longtext.length / 2));
+  let hm;
+  if (!hm1 && !hm2) {
+    return null;
+  } else if (!hm2) {
+    hm = hm1;
+  } else if (!hm1) {
+    hm = hm2;
+  } else {
+    hm = hm1[4].length > hm2[4].length ? hm1 : hm2;
+  }
+  let text1_a, text1_b, text2_a, text2_b;
+  if (text1.length > text2.length) {
+    text1_a = hm[0];
+    text1_b = hm[1];
+    text2_a = hm[2];
+    text2_b = hm[3];
+  } else {
+    text2_a = hm[0];
+    text2_b = hm[1];
+    text1_a = hm[2];
+    text1_b = hm[3];
+  }
+  const mid_common = hm[4];
+  return [text1_a, text1_b, text2_a, text2_b, mid_common];
+}
+function diffCleanupSemantic(diffs) {
+  let changes = false;
+  const equalities = [];
+  let equalitiesLength = 0;
+  let lastEquality = null;
+  let pointer = 0;
+  let length_insertions1 = 0;
+  let length_deletions1 = 0;
+  let length_insertions2 = 0;
+  let length_deletions2 = 0;
+  while (pointer < diffs.length) {
+    if (diffs[pointer][0] === DIFF_EQUAL) {
+      equalities[equalitiesLength++] = pointer;
+      length_insertions1 = length_insertions2;
+      length_deletions1 = length_deletions2;
+      length_insertions2 = 0;
+      length_deletions2 = 0;
+      lastEquality = diffs[pointer][1];
+    } else {
+      if (diffs[pointer][0] === DIFF_INSERT)
+        length_insertions2 += diffs[pointer][1].length;
+      else
+        length_deletions2 += diffs[pointer][1].length;
+      if (lastEquality && lastEquality.length <= Math.max(length_insertions1, length_deletions1) && lastEquality.length <= Math.max(length_insertions2, length_deletions2)) {
+        diffs.splice(equalities[equalitiesLength - 1], 0, createDiff(DIFF_DELETE, lastEquality));
+        diffs[equalities[equalitiesLength - 1] + 1][0] = DIFF_INSERT;
+        equalitiesLength--;
+        equalitiesLength--;
+        pointer = equalitiesLength > 0 ? equalities[equalitiesLength - 1] : -1;
+        length_insertions1 = 0;
+        length_deletions1 = 0;
+        length_insertions2 = 0;
+        length_deletions2 = 0;
+        lastEquality = null;
+        changes = true;
+      }
+    }
+    pointer++;
+  }
+  if (changes)
+    diffCleanupMerge(diffs);
+  diffCleanupSemanticLossless(diffs);
+  pointer = 1;
+  while (pointer < diffs.length) {
+    if (diffs[pointer - 1][0] === DIFF_DELETE && diffs[pointer][0] === DIFF_INSERT) {
+      const deletion = diffs[pointer - 1][1];
+      const insertion = diffs[pointer][1];
+      const overlap_length1 = diffCommonOverlap(deletion, insertion);
+      const overlap_length2 = diffCommonOverlap(insertion, deletion);
+      if (overlap_length1 >= overlap_length2) {
+        if (overlap_length1 >= deletion.length / 2 || overlap_length1 >= insertion.length / 2) {
+          diffs.splice(pointer, 0, createDiff(DIFF_EQUAL, insertion.substring(0, overlap_length1)));
+          diffs[pointer - 1][1] = deletion.substring(0, deletion.length - overlap_length1);
+          diffs[pointer + 1][1] = insertion.substring(overlap_length1);
+          pointer++;
+        }
+      } else {
+        if (overlap_length2 >= deletion.length / 2 || overlap_length2 >= insertion.length / 2) {
+          diffs.splice(pointer, 0, createDiff(DIFF_EQUAL, deletion.substring(0, overlap_length2)));
+          diffs[pointer - 1][0] = DIFF_INSERT;
+          diffs[pointer - 1][1] = insertion.substring(0, insertion.length - overlap_length2);
+          diffs[pointer + 1][0] = DIFF_DELETE;
+          diffs[pointer + 1][1] = deletion.substring(overlap_length2);
+          pointer++;
+        }
+      }
+      pointer++;
+    }
+    pointer++;
+  }
+}
+var nonAlphaNumericRegex_ = /[^a-zA-Z0-9]/;
+var whitespaceRegex_ = /\s/;
+var linebreakRegex_ = /[\r\n]/;
+var blanklineEndRegex_ = /\n\r?\n$/;
+var blanklineStartRegex_ = /^\r?\n\r?\n/;
+function diffCleanupSemanticLossless(diffs) {
+  function diffCleanupSemanticScore(one, two) {
+    if (!one || !two) {
+      return 6;
+    }
+    const char1 = one.charAt(one.length - 1);
+    const char2 = two.charAt(0);
+    const nonAlphaNumeric1 = char1.match(nonAlphaNumericRegex_);
+    const nonAlphaNumeric2 = char2.match(nonAlphaNumericRegex_);
+    const whitespace1 = nonAlphaNumeric1 && char1.match(whitespaceRegex_);
+    const whitespace2 = nonAlphaNumeric2 && char2.match(whitespaceRegex_);
+    const lineBreak1 = whitespace1 && char1.match(linebreakRegex_);
+    const lineBreak2 = whitespace2 && char2.match(linebreakRegex_);
+    const blankLine1 = lineBreak1 && one.match(blanklineEndRegex_);
+    const blankLine2 = lineBreak2 && two.match(blanklineStartRegex_);
+    if (blankLine1 || blankLine2) {
+      return 5;
+    } else if (lineBreak1 || lineBreak2) {
+      return 4;
+    } else if (nonAlphaNumeric1 && !whitespace1 && whitespace2) {
+      return 3;
+    } else if (whitespace1 || whitespace2) {
+      return 2;
+    } else if (nonAlphaNumeric1 || nonAlphaNumeric2) {
+      return 1;
+    }
+    return 0;
+  }
+  let pointer = 1;
+  while (pointer < diffs.length - 1) {
+    if (diffs[pointer - 1][0] === DIFF_EQUAL && diffs[pointer + 1][0] === DIFF_EQUAL) {
+      let equality1 = diffs[pointer - 1][1];
+      let edit = diffs[pointer][1];
+      let equality2 = diffs[pointer + 1][1];
+      const commonOffset = diffCommonSuffix(equality1, edit);
+      if (commonOffset) {
+        const commonString = edit.substring(edit.length - commonOffset);
+        equality1 = equality1.substring(0, equality1.length - commonOffset);
+        edit = commonString + edit.substring(0, edit.length - commonOffset);
+        equality2 = commonString + equality2;
+      }
+      let bestEquality1 = equality1;
+      let bestEdit = edit;
+      let bestEquality2 = equality2;
+      let bestScore = diffCleanupSemanticScore(equality1, edit) + diffCleanupSemanticScore(edit, equality2);
+      while (edit.charAt(0) === equality2.charAt(0)) {
+        equality1 += edit.charAt(0);
+        edit = edit.substring(1) + equality2.charAt(0);
+        equality2 = equality2.substring(1);
+        const score = diffCleanupSemanticScore(equality1, edit) + diffCleanupSemanticScore(edit, equality2);
+        if (score >= bestScore) {
+          bestScore = score;
+          bestEquality1 = equality1;
+          bestEdit = edit;
+          bestEquality2 = equality2;
+        }
+      }
+      if (diffs[pointer - 1][1] !== bestEquality1) {
+        if (bestEquality1) {
+          diffs[pointer - 1][1] = bestEquality1;
+        } else {
+          diffs.splice(pointer - 1, 1);
+          pointer--;
+        }
+        diffs[pointer][1] = bestEdit;
+        if (bestEquality2) {
+          diffs[pointer + 1][1] = bestEquality2;
+        } else {
+          diffs.splice(pointer + 1, 1);
+          pointer--;
+        }
+      }
+    }
+    pointer++;
+  }
+}
+function diffCleanupEfficiency(diffs, options = {}) {
+  const {
+    diffEditCost = defaultOptions.diffEditCost
+  } = options;
+  let changes = false;
+  const equalities = [];
+  let equalitiesLength = 0;
+  let lastEquality = null;
+  let pointer = 0;
+  let pre_ins = false;
+  let pre_del = false;
+  let post_ins = false;
+  let post_del = false;
+  while (pointer < diffs.length) {
+    if (diffs[pointer][0] === DIFF_EQUAL) {
+      if (diffs[pointer][1].length < diffEditCost && (post_ins || post_del)) {
+        equalities[equalitiesLength++] = pointer;
+        pre_ins = post_ins;
+        pre_del = post_del;
+        lastEquality = diffs[pointer][1];
+      } else {
+        equalitiesLength = 0;
+        lastEquality = null;
+      }
+      post_ins = post_del = false;
+    } else {
+      let booleanCount = function(...args2) {
+        return args2.filter(Boolean).length;
+      };
+      if (diffs[pointer][0] === DIFF_DELETE)
+        post_del = true;
+      else
+        post_ins = true;
+      if (lastEquality && (pre_ins && pre_del && post_ins && post_del || lastEquality.length < diffEditCost / 2 && booleanCount(pre_ins, pre_del, post_ins, post_del) === 3)) {
+        diffs.splice(equalities[equalitiesLength - 1], 0, createDiff(DIFF_DELETE, lastEquality));
+        diffs[equalities[equalitiesLength - 1] + 1][0] = DIFF_INSERT;
+        equalitiesLength--;
+        lastEquality = null;
+        if (pre_ins && pre_del) {
+          post_ins = post_del = true;
+          equalitiesLength = 0;
+        } else {
+          equalitiesLength--;
+          pointer = equalitiesLength > 0 ? equalities[equalitiesLength - 1] : -1;
+          post_ins = post_del = false;
+        }
+        changes = true;
+      }
+    }
+    pointer++;
+  }
+  if (changes)
+    diffCleanupMerge(diffs);
+}
+function diffCleanupMerge(diffs) {
+  diffs.push(createDiff(DIFF_EQUAL, ""));
+  let pointer = 0;
+  let count_delete = 0;
+  let count_insert = 0;
+  let text_delete = "";
+  let text_insert = "";
+  let commonlength;
+  while (pointer < diffs.length) {
+    switch (diffs[pointer][0]) {
+      case DIFF_INSERT:
+        count_insert++;
+        text_insert += diffs[pointer][1];
+        pointer++;
+        break;
+      case DIFF_DELETE:
+        count_delete++;
+        text_delete += diffs[pointer][1];
+        pointer++;
+        break;
+      case DIFF_EQUAL:
+        if (count_delete + count_insert > 1) {
+          if (count_delete !== 0 && count_insert !== 0) {
+            commonlength = diffCommonPrefix(text_insert, text_delete);
+            if (commonlength !== 0) {
+              if (pointer - count_delete - count_insert > 0 && diffs[pointer - count_delete - count_insert - 1][0] === DIFF_EQUAL) {
+                diffs[pointer - count_delete - count_insert - 1][1] += text_insert.substring(0, commonlength);
+              } else {
+                diffs.splice(0, 0, createDiff(DIFF_EQUAL, text_insert.substring(0, commonlength)));
+                pointer++;
+              }
+              text_insert = text_insert.substring(commonlength);
+              text_delete = text_delete.substring(commonlength);
+            }
+            commonlength = diffCommonSuffix(text_insert, text_delete);
+            if (commonlength !== 0) {
+              diffs[pointer][1] = text_insert.substring(text_insert.length - commonlength) + diffs[pointer][1];
+              text_insert = text_insert.substring(0, text_insert.length - commonlength);
+              text_delete = text_delete.substring(0, text_delete.length - commonlength);
+            }
+          }
+          pointer -= count_delete + count_insert;
+          diffs.splice(pointer, count_delete + count_insert);
+          if (text_delete.length) {
+            diffs.splice(pointer, 0, createDiff(DIFF_DELETE, text_delete));
+            pointer++;
+          }
+          if (text_insert.length) {
+            diffs.splice(pointer, 0, createDiff(DIFF_INSERT, text_insert));
+            pointer++;
+          }
+          pointer++;
+        } else if (pointer !== 0 && diffs[pointer - 1][0] === DIFF_EQUAL) {
+          diffs[pointer - 1][1] += diffs[pointer][1];
+          diffs.splice(pointer, 1);
+        } else {
+          pointer++;
+        }
+        count_insert = 0;
+        count_delete = 0;
+        text_delete = "";
+        text_insert = "";
+        break;
+    }
+  }
+  if (diffs[diffs.length - 1][1] === "")
+    diffs.pop();
+  let changes = false;
+  pointer = 1;
+  while (pointer < diffs.length - 1) {
+    if (diffs[pointer - 1][0] === DIFF_EQUAL && diffs[pointer + 1][0] === DIFF_EQUAL) {
+      if (diffs[pointer][1].substring(diffs[pointer][1].length - diffs[pointer - 1][1].length) === diffs[pointer - 1][1]) {
+        diffs[pointer][1] = diffs[pointer - 1][1] + diffs[pointer][1].substring(0, diffs[pointer][1].length - diffs[pointer - 1][1].length);
+        diffs[pointer + 1][1] = diffs[pointer - 1][1] + diffs[pointer + 1][1];
+        diffs.splice(pointer - 1, 1);
+        changes = true;
+      } else if (diffs[pointer][1].substring(0, diffs[pointer + 1][1].length) === diffs[pointer + 1][1]) {
+        diffs[pointer - 1][1] += diffs[pointer + 1][1];
+        diffs[pointer][1] = diffs[pointer][1].substring(diffs[pointer + 1][1].length) + diffs[pointer + 1][1];
+        diffs.splice(pointer + 1, 1);
+        changes = true;
+      }
+    }
+    pointer++;
+  }
+  if (changes)
+    diffCleanupMerge(diffs);
+}
+
+// src/sharedEntities/sharedDocument.ts
+var _SharedDocument = class extends SharedEntity {
+  constructor(opts, plugin) {
+    var _a;
+    super(plugin);
+    this.mutex = new Mutex();
+    if (opts.path) {
+      this._path = opts.path;
+      const file = this.plugin.app.vault.getAbstractFileByPath(this.path);
+      if (file instanceof import_obsidian6.TFile) {
+        this._file = file;
+      } else {
+        showNotice("ERROR creating sharedDoc");
+      }
+    }
+    if (opts.id) {
+      this._shareId = opts.id;
+    }
+    this.yDoc = (_a = opts.yDoc) != null ? _a : new Doc();
+    this.yDoc.on("update", (update, origin, yDoc, tr) => {
+      if (tr.local && this.isPermanent) {
+        plugin.serverSync.sendUpdate(this, update);
+      }
+    });
+    _SharedDocument._sharedEntites.push(this);
+    this._extensions = new PeerdraftRecord();
+    this._extensions.on("delete", () => {
+      if (this._extensions.size === 0 && this._webRTCProvider) {
+        this._webRTCProvider.awareness.setLocalState({});
+      }
+    });
+    this.getContentFragment().observe(async () => {
+      if (this._file && this._extensions.size === 0) {
+        this.mutex.runExclusive(async () => {
+          const yDocContent = this.getValue();
+          const fileContent = await this.plugin.app.vault.read(this._file);
+          if (yDocContent != fileContent) {
+            await this.plugin.app.vault.modify(this._file, yDocContent);
+          }
+        });
+      }
+    });
+    this.plugin.registerEvent(this.plugin.app.vault.on("modify", async (file) => {
+      if (this.file === file && this._extensions.size === 0) {
+        this.mutex.runExclusive(async () => {
+          const yDocContent = this.getValue();
+          const fileContent = await this.plugin.app.vault.read(this._file);
+          if (yDocContent != fileContent) {
+            const diffs = diffMain(yDocContent, fileContent);
+            diffCleanupEfficiency(diffs);
+            const content = this.getContentFragment();
+            let pos = 0;
+            this.yDoc.transact(() => {
+              for (const diff of diffs) {
+                const text2 = diff[1];
+                const length3 = text2.length;
+                switch (diff[0]) {
+                  case 0:
+                    {
+                      pos += length3;
+                    }
+                    break;
+                  case -1:
+                    {
+                      content.delete(pos, length3);
+                    }
+                    break;
+                  case 1:
+                    {
+                      content.insert(pos, text2);
+                      pos += length3;
+                    }
+                    break;
+                }
+              }
+            });
+          }
+        });
+      }
+    }));
+    addIsSharedClass(this.path, this.plugin);
+  }
+  static async fromView(view, plugin, opts = { permanent: false }) {
+    if (!view.file)
+      return;
+    if (this.findByPath(view.file.path))
+      return;
+    const doc2 = await this.fromTFile(view.file, opts, plugin);
+    if (doc2) {
+      doc2.startWebRTCSync();
+      if (doc2.isPermanent && doc2._webRTCProvider) {
+        doc2.getOwnerFragment().insert(0, doc2._webRTCProvider.awareness.clientID.toFixed(0));
+      } else {
+        doc2.addStatusBarEntry();
+        pinLeaf(view.leaf);
+      }
+      navigator.clipboard.writeText(plugin.settings.basePath + "/cm/" + doc2.shareId);
+      showNotice("Collaboration started for " + doc2.path + ". Link copied to Clipboard.");
+    }
+    return doc2;
+  }
+  static async fromPermanentShareDocument(pd, plugin) {
+    if (this.findByPath(pd.path))
+      return;
+    let fileAlreadyThere = false;
+    const file = plugin.app.vault.getAbstractFileByPath(pd.path);
+    if (!file) {
+      showNotice("File " + pd.path + " not found. Creating it now.");
+      await SharedFolder.getOrCreatePath(path2.dirname(pd.path), plugin);
+      const file2 = await plugin.app.vault.create(pd.path, "");
+      if (!file2) {
+        showNotice("Error creating file " + pd.path + ".");
+        return;
+      }
+      fileAlreadyThere = true;
+    }
+    const doc2 = new _SharedDocument({
+      path: pd.path
+    }, plugin);
+    doc2._isPermanent = true;
+    doc2._shareId = pd.shareId;
+    await doc2.startIndexedDBSync();
+    if (fileAlreadyThere) {
+      doc2.syncWithServer();
+    }
+    plugin.activeStreamClient.add([doc2.shareId]);
+    return doc2;
+  }
+  static async fromShareURL(url, plugin) {
+    const id2 = url.split("/").pop();
+    if (!id2 || !id2.match("^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$")) {
+      showNotice("No valid peerdraft link");
+      return;
+    }
+    const existingDoc = _SharedDocument.findById(id2);
+    if (existingDoc) {
+      showNotice("This share is already active: " + existingDoc.path);
+      return;
+    }
+    const isPermanent = await plugin.serverAPI.isSessionPermanent(id2);
+    const yDoc = new Doc();
+    showNotice("Trying to initiate sync...");
+    const doc2 = new _SharedDocument({
+      id: id2,
+      yDoc
+    }, plugin);
+    doc2.startWebRTCSync();
+    if (isPermanent) {
+      doc2.syncWithServer();
+    }
+    await new Promise((resolve2) => {
+      yDoc.once("update", () => {
+        resolve2();
+      });
+    });
+    const docFilename = doc2.yDoc.getText("originalFilename").toString();
+    let initialFileName = `_peerdraft_session_${id2}_${generateRandomString()}.md`;
+    if (docFilename != "") {
+      const fileExists = plugin.app.vault.getAbstractFileByPath(docFilename);
+      if (!fileExists) {
+        initialFileName = docFilename;
+      } else {
+        initialFileName = `_peerdraft_${generateRandomString()}_${docFilename}`;
+      }
+    }
+    const parent = plugin.settings.root || plugin.app.fileManager.getNewFileParent("", initialFileName).path;
+    const filePath = path2.join(parent, initialFileName);
+    const folder = await SharedFolder.getOrCreatePath(path2.dirname(filePath), plugin);
+    const file = await plugin.app.vault.create(filePath, doc2.getValue());
+    addIsSharedClass(file.path, plugin);
+    doc2._file = file;
+    doc2._path = file.path;
+    if (isPermanent) {
+      doc2._isPermanent = true;
+      await add(doc2, plugin);
+      await doc2.startIndexedDBSync();
+      plugin.activeStreamClient.add([doc2.shareId]);
+    }
+    const leaf = await openFileInNewTab(file, plugin.app.workspace);
+    doc2.addStatusBarEntry();
+    doc2.addExtensionToLeaf(leaf.id);
+    pinLeaf(leaf);
+    showNotice("Joined Session in " + doc2.path + ".");
+    return doc2;
+  }
+  static async fromIdAndPath(id2, location2, plugin) {
+    const existingDoc = _SharedDocument.findById(id2);
+    if (existingDoc) {
+      showNotice("This share is already active: " + existingDoc.path);
+      return;
+    }
+    await SharedFolder.getOrCreatePath(path2.dirname(location2), plugin);
+    showNotice("Creating new synced file " + location2);
+    const ydoc = await plugin.serverSync.requestDocument(id2);
+    const doc2 = new _SharedDocument({
+      id: id2,
+      yDoc: ydoc
+    }, plugin);
+    doc2._path = location2;
+    const file = await plugin.app.vault.create(location2, ydoc.getText("content").toString());
+    doc2._file = file;
+    doc2.syncWithServer();
+    await doc2.setPermanent();
+    await doc2.startIndexedDBSync();
+    addIsSharedClass(doc2.path, plugin);
+  }
+  static async fromTFile(file, opts, plugin) {
+    if (!["md", "MD"].contains(file.extension))
+      return;
+    const existing = _SharedDocument.findByPath(file.path);
+    if (existing)
+      return existing;
+    const doc2 = new _SharedDocument({ path: file.path }, plugin);
+    const leafIds = getLeafIdsByPath(file.path, plugin.pws);
+    if (leafIds.length > 0) {
+      const content = plugin.app.workspace.getLeafById(leafIds[0]).view.editor.getValue();
+      doc2.getContentFragment().insert(0, content);
+    } else {
+      const content = await plugin.app.vault.read(file);
+      doc2.getContentFragment().insert(0, content);
+    }
+    doc2.yDoc.getText("originalFilename").insert(0, file.name);
+    if (opts.permanent) {
+      await doc2.initServerYDoc();
+      await doc2.setPermanent();
+      doc2.startIndexedDBSync();
+    } else {
+      doc2._shareId = createRandomId();
+    }
+    for (const id2 of leafIds) {
+      doc2.addExtensionToLeaf(id2);
+    }
+    showNotice(`Inititialized share for ${file.path}`);
+    return doc2;
+  }
+  static findByPath(path4) {
+    return super.findByPath(path4);
+  }
+  static findById(id2) {
+    return super.findById(id2);
+  }
+  static getAll() {
+    return super.getAll();
+  }
+  get file() {
+    return this._file;
+  }
+  calculateHash() {
+    const text2 = this.getContentFragment().toString();
+    return calculateHash(text2);
+  }
+  startWebRTCSync() {
+    return super.startWebRTCSync((provider) => {
+      provider.awareness.setLocalStateField("user", {
+        name: this.plugin.settings.name,
+        color: _SharedDocument._userColor.dark,
+        colorLight: _SharedDocument._userColor.light
+      });
+      provider.awareness.on("update", async (msg) => {
+        var _a, _b, _c, _d;
+        const removed = (_a = msg.removed) != null ? _a : [];
+        if (removed && removed.length > 0) {
+          const removedStrings = removed.map((id2) => {
+            return id2.toFixed(0);
+          });
+          const owner = this.getOwnerFragment().toString();
+          if (owner != provider.awareness.clientID.toString()) {
+            if (removedStrings.includes(owner) && !this.isPermanent) {
+              showNotice("Shared session for " + this.path + " stopped by owner");
+              await this.unshare();
+            }
+          }
+        }
+        const added = (_b = msg.added) != null ? _b : [];
+        if (added && added.length > 0) {
+          const states = provider.awareness.getStates();
+          for (const key of added) {
+            const peer = states.get(key);
+            if (peer && this.path && key != ((_c = this._webRTCProvider) == null ? void 0 : _c.awareness.clientID)) {
+              showNotice(`${(_d = peer.user) == null ? void 0 : _d.name} is working on ${this.path}`, 1e4);
+            }
+          }
+        }
+      });
+    });
+  }
+  async setNewFileLocation(file) {
+    const oldPath = this._path;
+    this._file = file;
+    this._path = file.path;
+    if (this.statusBarEntry) {
+      this.removeStatusStatusBarEntry();
+      this.addStatusBarEntry();
+    }
+    await moveDoc(oldPath, file.path, this.plugin);
+    removeIsSharedClass(oldPath, this.plugin);
+    addIsSharedClass(this.path, this.plugin);
+  }
+  async setPermanent() {
+    if (!this._isPermanent) {
+      this._isPermanent = true;
+      await add(this, this.plugin);
+      this.plugin.activeStreamClient.add([this.shareId]);
+    }
+  }
+  get isPermanent() {
+    return this._isPermanent;
+  }
+  getValue() {
+    return this.getContentFragment().toString();
+  }
+  getContentFragment() {
+    return this.yDoc.getText("content");
+  }
+  getOwnerFragment() {
+    return this.yDoc.getText("owner");
+  }
+  async startIndexedDBSync() {
+    var _a;
+    if (this._indexedDBProvider)
+      return this._indexedDBProvider;
+    const id2 = (_a = getDocByPath(this.path, this.plugin)) == null ? void 0 : _a.persistenceId;
+    if (!id2)
+      return;
+    const provider = new IndexeddbPersistence(SharedEntity.DB_PERSISTENCE_PREFIX + id2, this.yDoc);
+    this._indexedDBProvider = provider;
+    if (!provider.synced)
+      await provider.whenSynced;
+    return this._indexedDBProvider;
+  }
+  addExtensionToLeaf(leafId) {
+    const webRTCProvider = this.startWebRTCSync();
+    if (!webRTCProvider)
+      return;
+    if (this._extensions.get(leafId))
+      return;
+    const pLeaf = this.plugin.pws.get(leafId);
+    if (!pLeaf)
+      return;
+    if (pLeaf.path != this._path)
+      return;
+    if (pLeaf.isPreview) {
+      pLeaf.once("changeIsPreview", () => {
+        this.addExtensionToLeaf(leafId);
+      });
+      return;
+    }
+    const leaf = this.plugin.app.workspace.getLeafById(leafId);
+    if (!leaf)
+      return;
+    const view = leaf.view;
+    const editor = view.editor;
+    editor.setValue(this.getValue());
+    const undoManager = new UndoManager(this.getContentFragment());
+    const extension = yCollab(this.getContentFragment(), webRTCProvider.awareness, { undoManager });
+    const compartment = new import_state.Compartment();
+    const editorView = editor.cm;
+    editorView.dispatch({
+      effects: import_state2.StateEffect.appendConfig.of(compartment.of(extension))
+    });
+    this._extensions.set(leafId, compartment);
+    pLeaf.once("changeIsPreview", () => {
+      this.removeExtensionFromLeaf(leafId);
+      pLeaf.once("changeIsPreview", () => {
+        this.addExtensionToLeaf(leafId);
+      });
+    });
+    return import_state.Compartment;
+  }
+  removeExtensionFromLeaf(leafId) {
+    const leaf = this.plugin.app.workspace.getLeafById(leafId);
+    if (leaf) {
+      try {
+        const editor = leaf.view.editor;
+        const editorView = editor.cm;
+        const compartment = this._extensions.get(leafId);
+        if (compartment) {
+          editorView.dispatch({
+            effects: compartment.reconfigure([])
+          });
+        }
+      } catch (error) {
+        this.plugin.log("editor already gone");
+      }
+    }
+    this._extensions.delete(leafId);
+  }
+  addStatusBarEntry() {
+    if (this.statusBarEntry)
+      return;
+    const menu = new import_obsidian6.Menu();
+    menu.addItem((item) => {
+      item.setTitle("Copy link");
+      item.onClick(() => {
+        navigator.clipboard.writeText(this.plugin.settings.basePath + "/cm/" + this.shareId);
+        showNotice("Link copied to clipboard.");
+      });
+    });
+    menu.addItem((item) => {
+      item.setTitle("Stop shared session");
+      item.onClick(async () => {
+        await this.unshare();
+      });
+    });
+    const status = this.plugin.addStatusBarItem();
+    status.addClass("mod-clickable");
+    status.createEl("span", { text: "Sharing '" + this.path + "'" });
+    status.onClickEvent((event) => {
+      menu.showAtMouseEvent(event);
+    });
+    this.statusBarEntry = status;
+  }
+  removeStatusStatusBarEntry() {
+    if (!this.statusBarEntry)
+      return;
+    this.statusBarEntry.remove();
+    this.statusBarEntry = void 0;
+  }
+  async unshare() {
+    const dbEntry = getDocByPath(this.path, this.plugin);
+    if (dbEntry) {
+      removeDoc(this.path, this.plugin);
+    }
+    if (this._indexedDBProvider) {
+      await this._indexedDBProvider.clearData();
+    }
+    this.destroy();
+    removeIsSharedClass(this.path, this.plugin);
+  }
+  destroy() {
+    if (!this.isPermanent) {
+      showNotice("Stopping collaboration on " + this.path + ".");
+    }
+    for (const key of this._extensions.keys) {
+      this.removeExtensionFromLeaf(key);
+    }
+    this._extensions.destroy();
+    super.destroy();
+    this.removeStatusStatusBarEntry();
+    _SharedDocument._sharedEntites.splice(_SharedDocument._sharedEntites.indexOf(this), 1);
+  }
+};
+var SharedDocument = _SharedDocument;
+SharedDocument._userColor = usercolors[randomUint32() % usercolors.length];
+SharedDocument._sharedEntites = new Array();
+
+// src/activeStreamClient.ts
+var handleMessage = (data) => {
+  var _a, _b;
+  const message = JSON.parse(data);
+  for (const id2 of message.docs) {
+    (_a = SharedDocument.findById(id2)) == null ? void 0 : _a.startWebRTCSync();
+    (_b = SharedFolder.findById(id2)) == null ? void 0 : _b.startWebRTCSync();
+  }
+};
+var setupWS2 = (client) => {
+  if (client.shouldConnect && client.ws === null) {
+    const websocket = new WebSocket(client.url);
+    client.ws = websocket;
+    client.wsconnecting = true;
+    client.wsconnected = false;
+    websocket.onmessage = (event) => {
+      client.wsLastMessageReceived = getUnixTime();
+      handleMessage(event.data);
+    };
+    websocket.onerror = (event) => {
+      client.emit("connection-error", [event, client]);
+    };
+    websocket.onclose = (event) => {
+      client.emit("connection-close", [event, client]);
+      client.ws = null;
+      client.wsconnecting = false;
+      if (client.wsconnected) {
+        client.wsconnected = false;
+        client.emit("status", [{
+          status: "disconnected"
+        }]);
+      } else {
+        client.wsUnsuccessfulReconnects++;
+      }
+      setTimeout(
+        setupWS2,
+        min(
+          pow(2, client.wsUnsuccessfulReconnects) * 100,
+          client.maxBackoffTime
+        ),
+        client
+      );
+    };
+    websocket.onopen = () => {
+      client.wsLastMessageReceived = getUnixTime();
+      client.wsconnecting = false;
+      client.wsconnected = true;
+      client.wsUnsuccessfulReconnects = 0;
+      client.emit("status", [{
+        status: "connected"
+      }]);
+      client.send(JSON.stringify({
+        type: "full",
+        docs: Array.from(client.docIds)
+      }));
+    };
+    client.emit("status", [{
+      status: "connecting"
+    }]);
+  }
+};
+var ActiveStreamClient = class extends ObservableV2 {
+  constructor(url, opts = {
+    connect: true,
+    resyncInterval: -1,
+    maxBackoffTime: 2500
+  }) {
+    super();
+    this.maxBackoffTime = opts.maxBackoffTime;
+    this.url = url;
+    this.wsconnected = false;
+    this.wsconnecting = false;
+    this.wsUnsuccessfulReconnects = 0;
+    this.ws = null;
+    this.wsLastMessageReceived = 0;
+    this.shouldConnect = opts.connect;
+    this._resyncInterval = 0;
+    this.docIds = /* @__PURE__ */ new Set();
+    if (opts.resyncInterval > 0) {
+      this._resyncInterval = window.setInterval(() => {
+        if (this.ws && this.ws.readyState === WebSocket.OPEN) {
+          this.send(JSON.stringify({
+            type: "full",
+            docs: Array.from(this.docIds)
+          }));
+        }
+      }, opts.resyncInterval);
+    }
+    if (opts.connect) {
+      this.connect();
+    }
+  }
+  send(data) {
+    var _a, _b;
+    if (this.ws && this.ws.readyState !== this.ws.CONNECTING && this.ws.readyState !== this.ws.OPEN) {
+      this.ws.close();
+    }
+    try {
+      (_a = this.ws) == null ? void 0 : _a.send(data);
+    } catch (e) {
+      (_b = this.ws) == null ? void 0 : _b.close();
+    }
+  }
+  destroy() {
+    if (this._resyncInterval !== 0) {
+      clearInterval(this._resyncInterval);
+    }
+    this.disconnect();
+    super.destroy();
+  }
+  disconnect() {
+    this.shouldConnect = false;
+    if (this.ws !== null) {
+      this.ws.close();
+    }
+  }
+  connect() {
+    this.shouldConnect = true;
+    if (!this.wsconnected && this.ws === null) {
+      setupWS2(this);
+    }
+  }
+  add(ids) {
+    for (const id2 of ids) {
+      this.docIds.add(id2);
+    }
+    this.send(JSON.stringify({
+      type: "add",
+      docs: ids
+    }));
+  }
+  remove(ids) {
+    for (const id2 of ids) {
+      this.docIds.delete(id2);
+    }
+    this.send(JSON.stringify({
+      type: "remove",
+      docs: ids
+    }));
+  }
+};
+
+// src/cookie.ts
+var import_obsidian7 = require("obsidian");
+var import_remote = require("@electron/remote");
+var prepareCommunication = async (plugin) => {
+  if (import_obsidian7.Platform.isDesktopApp) {
+    await import_remote.session.defaultSession.cookies.set({ url: "https://www.peerdraft.app", "name": "oid", "value": plugin.settings.oid, "domain": "www.peerdraft.app", "path": "/", "secure": true, "httpOnly": true, "sameSite": "no_restriction" });
+    await import_remote.session.defaultSession.cookies.set({ url: "http://localhost:5173", "name": "oid", "value": plugin.settings.oid, "domain": "localhost", "path": "/", "secure": true, "httpOnly": true, "sameSite": "no_restriction" });
+  } else if (import_obsidian7.Platform.isMobileApp) {
+    const signalingURL = new URL(plugin.settings.signaling);
+    signalingURL.searchParams.append("oid", plugin.settings.oid);
+    plugin.settings.signaling = signalingURL.toString();
   }
 };
 
 // src/serverAPI.ts
-var import_obsidian7 = require("obsidian");
+var import_obsidian8 = require("obsidian");
 var ServerAPI = class {
   constructor(opts) {
     this.opts = opts;
   }
   async createPermanentSession() {
-    const data = await (0, import_obsidian7.requestUrl)({
+    const data = await (0, import_obsidian8.requestUrl)({
       url: this.opts.permanentSessionUrl,
       method: "POST",
       contentType: "application/json",
@@ -19149,7 +21393,7 @@ var ServerAPI = class {
     return data;
   }
   async isSessionPermanent(id2) {
-    const data = await (0, import_obsidian7.requestUrl)({
+    const data = await (0, import_obsidian8.requestUrl)({
       url: this.opts.permanentSessionUrl + "/" + id2,
       method: "GET",
       contentType: "application/json"
@@ -19174,15 +21418,15 @@ var fromShareURL = async (url, plugin) => {
 };
 
 // src/ui/chooseSessionType.ts
-var import_obsidian8 = require("obsidian");
-var ChooseSessionTypeModal = class extends import_obsidian8.Modal {
+var import_obsidian9 = require("obsidian");
+var ChooseSessionTypeModal = class extends import_obsidian9.Modal {
   constructor(app, cb) {
     super(app);
     this.cb = cb;
   }
   async onOpen() {
-    new import_obsidian8.Setting(this.contentEl).setName("Start working together").setHeading();
-    new import_obsidian8.Setting(this.contentEl).addButton((button) => {
+    new import_obsidian9.Setting(this.contentEl).setName("Start working together").setHeading();
+    new import_obsidian9.Setting(this.contentEl).addButton((button) => {
       button.setButtonText("Start fleeting session");
       button.setCta();
       button.onClick(() => {
@@ -19192,7 +21436,7 @@ var ChooseSessionTypeModal = class extends import_obsidian8.Modal {
         });
       });
     }).setDesc("A fleeting session automatically closes when you close the document or disconnect.");
-    new import_obsidian8.Setting(this.contentEl).addButton((button) => {
+    new import_obsidian9.Setting(this.contentEl).addButton((button) => {
       button.setButtonText("Share permanently");
       button.setCta();
       button.onClick(() => {
@@ -19213,8 +21457,8 @@ var promptForSessionType = (app) => {
 };
 
 // src/ui/enterText.ts
-var import_obsidian9 = require("obsidian");
-var EnterTextModal = class extends import_obsidian9.Modal {
+var import_obsidian10 = require("obsidian");
+var EnterTextModal = class extends import_obsidian10.Modal {
   constructor(app, opts, cb) {
     super(app);
     this.cb = cb;
@@ -19222,8 +21466,8 @@ var EnterTextModal = class extends import_obsidian9.Modal {
     this.opts = opts;
   }
   async onOpen() {
-    new import_obsidian9.Setting(this.contentEl).setName(this.opts.header).setHeading();
-    new import_obsidian9.Setting(this.contentEl).addText((text2) => {
+    new import_obsidian10.Setting(this.contentEl).setName(this.opts.header).setHeading();
+    new import_obsidian10.Setting(this.contentEl).addText((text2) => {
       text2.setValue(this.result.text), text2.onChange((value) => {
         this.result.text = value;
       });
@@ -19235,7 +21479,7 @@ var EnterTextModal = class extends import_obsidian9.Modal {
         }
       };
     }).setDesc(this.opts.description);
-    const buttons = new import_obsidian9.Setting(this.contentEl);
+    const buttons = new import_obsidian10.Setting(this.contentEl);
     buttons.addButton((button) => {
       button.setButtonText("Cancel");
       button.onClick(() => {
@@ -19278,13 +21522,265 @@ var promptForName = (app) => {
   });
 };
 
+// src/peerdraftWebSocketProvider.ts
+var MESSAGE_MULTIPLEX_SYNC = 4;
+var SYNC_STEP_1 = 0;
+var SYNC_STEP_2 = 1;
+var UPDATE = 3;
+var NEW_DOCUMENT = 4;
+var NEW_DOCUMENT_CONFIRMED = 5;
+var GET_DOCUMENT_AS_UPDATE = 6;
+var SEND_DOCUMENT_AS_UPDATE = 7;
+var messageReconnectTimeout2 = 3e4;
+var setupWS3 = (provider) => {
+  if (provider.shouldConnect && provider.ws === null) {
+    const websocket = new WebSocket(provider.url);
+    websocket.binaryType = "arraybuffer";
+    provider.ws = websocket;
+    provider.wsconnecting = true;
+    provider.wsconnected = false;
+    websocket.onmessage = (event) => {
+      var _a;
+      provider.wsLastMessageReceived = getUnixTime();
+      const data = new Uint8Array(event.data);
+      if (data.length == 0)
+        return;
+      const decoder = createDecoder(data);
+      const messageType = readVarUint(decoder);
+      if (messageType === MESSAGE_MULTIPLEX_SYNC) {
+        const syncMessageType = readVarUint(decoder);
+        switch (syncMessageType) {
+          case NEW_DOCUMENT_CONFIRMED:
+            {
+              const tempId = readVarString(decoder);
+              const id2 = readVarString(decoder);
+              const checksum = readVarString(decoder);
+              provider.emit("new-doc-confirmed", [tempId, id2, checksum]);
+            }
+            break;
+          case SYNC_STEP_1:
+            {
+              const id2 = readVarString(decoder);
+              const vector = readVarUint8Array(decoder);
+              const hash = readVarString(decoder);
+              const doc2 = SharedDocument.findById(id2);
+              if (doc2 && hash != doc2.calculateHash()) {
+                provider.sendSyncStep2(doc2, vector);
+              }
+            }
+            break;
+          case SYNC_STEP_2:
+            {
+              const id2 = readVarString(decoder);
+              const update = readVarUint8Array(decoder);
+              const hash = readVarString(decoder);
+              const doc2 = (_a = SharedDocument.findById(id2)) != null ? _a : SharedFolder.findById(id2);
+              if (doc2) {
+                applyUpdate(doc2.yDoc, update, provider);
+                provider.emit("synced", [id2, hash]);
+              }
+            }
+            break;
+          case SEND_DOCUMENT_AS_UPDATE:
+            {
+              const id2 = readVarString(decoder);
+              const update = readVarUint8Array(decoder);
+              const checksum = readVarString(decoder);
+              provider.emit("document-received", [id2, update, checksum]);
+            }
+            break;
+          default:
+            console.log("unreachable");
+            break;
+        }
+      }
+    };
+    websocket.onerror = (event) => {
+      provider.emit("connection-error", [event, provider]);
+    };
+    websocket.onclose = (event) => {
+      provider.emit("connection-close", [event, provider]);
+      provider.ws = null;
+      provider.wsconnecting = false;
+      if (provider.wsconnected) {
+        provider.wsconnected = false;
+        provider.emit("status", [{
+          status: "disconnected"
+        }]);
+      } else {
+        provider.wsUnsuccessfulReconnects++;
+      }
+      setTimeout(
+        setupWS3,
+        min(
+          pow(2, provider.wsUnsuccessfulReconnects) * 100,
+          provider.maxBackoffTime
+        ),
+        provider
+      );
+    };
+    websocket.onopen = async () => {
+      provider.wsLastMessageReceived = getUnixTime();
+      provider.wsconnecting = false;
+      provider.wsconnected = true;
+      provider.wsUnsuccessfulReconnects = 0;
+      provider.emit("status", [{
+        status: "connected"
+      }]);
+      for (const folder of SharedFolder.getAll()) {
+        if (folder.indexedDBProvider) {
+          if (!folder.indexedDBProvider.synced)
+            await folder.indexedDBProvider.whenSynced;
+          folder.syncWithServer();
+        }
+      }
+      for (const doc2 of SharedDocument.getAll()) {
+        if (doc2.isPermanent && doc2.indexedDBProvider) {
+          if (!doc2.indexedDBProvider.synced)
+            await doc2.indexedDBProvider.whenSynced;
+          doc2.syncWithServer();
+        }
+      }
+    };
+    provider.emit("status", [{
+      status: "connecting"
+    }]);
+  }
+};
+var PeerdraftWebsocketProvider = class extends ObservableV2 {
+  constructor(serverUrl, {
+    connect = true,
+    resyncInterval = -1,
+    maxBackoffTime = 2500
+  } = {}) {
+    super();
+    this.url = serverUrl;
+    this.maxBackoffTime = maxBackoffTime;
+    this.wsconnected = false;
+    this.wsconnecting = false;
+    this._resyncInterval = resyncInterval;
+    this.wsUnsuccessfulReconnects = 0;
+    this._synced = false;
+    this.ws = null;
+    this.wsLastMessageReceived = 0;
+    this.shouldConnect = connect;
+    this._resyncInterval = 0;
+    this._checkInterval = window.setInterval(() => {
+      if (this.wsconnected && messageReconnectTimeout2 < getUnixTime() - this.wsLastMessageReceived) {
+        this.ws.close();
+      }
+    }, messageReconnectTimeout2 / 10);
+    if (connect) {
+      this.connect();
+    }
+  }
+  sendSyncStep1(doc2) {
+    const encoder = createEncoder();
+    writeVarUint(encoder, MESSAGE_MULTIPLEX_SYNC);
+    writeVarUint(encoder, SYNC_STEP_1);
+    writeVarString(encoder, doc2.shareId);
+    writeVarUint8Array(encoder, encodeStateVector(doc2.yDoc));
+    writeVarString(encoder, doc2.calculateHash());
+    this.sendMessage(toUint8Array(encoder));
+  }
+  sendSyncStep2(doc2, vector) {
+    const encoder = createEncoder();
+    writeVarUint(encoder, MESSAGE_MULTIPLEX_SYNC);
+    writeVarUint(encoder, SYNC_STEP_2);
+    writeVarString(encoder, doc2.shareId);
+    writeVarUint8Array(encoder, encodeStateAsUpdate(doc2.yDoc, vector));
+    writeVarString(encoder, doc2.calculateHash());
+    this.sendMessage(toUint8Array(encoder));
+  }
+  sendUpdate(doc2, update) {
+    const encoder = createEncoder();
+    writeVarUint(encoder, MESSAGE_MULTIPLEX_SYNC);
+    writeVarUint(encoder, UPDATE);
+    writeVarString(encoder, doc2.shareId);
+    writeVarUint8Array(encoder, update);
+    writeVarString(encoder, doc2.calculateHash());
+    this.sendMessage(toUint8Array(encoder));
+  }
+  sendUpdateMessage(shareId, update, checksum) {
+    const encoder = createEncoder();
+    writeVarUint(encoder, MESSAGE_MULTIPLEX_SYNC);
+    writeVarUint(encoder, UPDATE);
+    writeVarString(encoder, shareId);
+    writeVarUint8Array(encoder, update);
+    writeVarString(encoder, checksum);
+    this.sendMessage(toUint8Array(encoder));
+  }
+  sendNewDocument(doc2, tempId) {
+    const encoder = createEncoder();
+    writeVarUint(encoder, MESSAGE_MULTIPLEX_SYNC);
+    writeVarUint(encoder, NEW_DOCUMENT);
+    writeVarString(encoder, tempId);
+    writeVarUint8Array(encoder, encodeStateAsUpdate(doc2.yDoc));
+    writeVarString(encoder, doc2.calculateHash());
+    this.sendMessage(toUint8Array(encoder));
+  }
+  sendGetDocumentAsUpdate(id2) {
+    const encoder = createEncoder();
+    writeVarUint(encoder, MESSAGE_MULTIPLEX_SYNC);
+    writeVarUint(encoder, GET_DOCUMENT_AS_UPDATE), writeVarString(encoder, id2);
+    this.sendMessage(toUint8Array(encoder));
+  }
+  sendMessage(buf) {
+    if (this.wsconnected && this.ws && this.ws.readyState === WebSocket.OPEN) {
+      this.ws.send(buf);
+    }
+  }
+  requestDocument(docId) {
+    return new Promise((resolve2) => {
+      const handler = (serverId, update, checksum) => {
+        if (docId == serverId) {
+          this.off("document-received", handler);
+          const doc2 = new Doc();
+          applyUpdate(doc2, update);
+          const docs = Array.from(doc2.getMap("documents"));
+          if (docs.length > 0) {
+            const serialized = serialize(Array.from(docs));
+            const calculatedHash = calculateHash(serialized);
+            if (calculatedHash != checksum) {
+              this.sendUpdateMessage(docId, encodeStateAsUpdate(doc2), calculatedHash);
+            }
+          }
+          resolve2(doc2);
+        }
+      };
+      this.on("document-received", handler);
+      this.sendGetDocumentAsUpdate(docId);
+    });
+  }
+  destroy() {
+    if (this._resyncInterval !== 0) {
+      clearInterval(this._resyncInterval);
+    }
+    clearInterval(this._checkInterval);
+    this.disconnect();
+    super.destroy();
+  }
+  disconnect() {
+    this.shouldConnect = false;
+    if (this.ws !== null) {
+      this.ws.close();
+    }
+  }
+  connect() {
+    this.shouldConnect = true;
+    if (!this.wsconnected && this.ws === null) {
+      setupWS3(this);
+    }
+  }
+};
+
 // src/peerdraftPlugin.ts
-var PeerdraftPlugin = class extends import_obsidian10.Plugin {
+var path3 = __toESM(require("path"));
+var PeerdraftPlugin = class extends import_obsidian11.Plugin {
   async onload() {
     const plugin = this;
-    await migrateSettings(plugin);
+    plugin.settings = await migrateSettings(plugin);
     await prepareCommunication(plugin);
-    plugin.settings = await getSettings(plugin);
     plugin.pws = new PeerdraftRecord();
     plugin.serverAPI = new ServerAPI({
       oid: plugin.settings.oid,
@@ -19305,7 +21801,7 @@ var PeerdraftPlugin = class extends import_obsidian10.Plugin {
           doc2.removeExtensionFromLeaf(key);
           const leafs = getLeafsByPath(oldPath, plugin.pws);
           if (leafs.length === 0 && !doc2.isPermanent) {
-            doc2.destroy();
+            doc2.unshare();
           }
         }
         (_a2 = SharedDocument.findByPath(leaf.path)) == null ? void 0 : _a2.addExtensionToLeaf(key);
@@ -19324,41 +21820,85 @@ var PeerdraftPlugin = class extends import_obsidian10.Plugin {
       }
       leaf.destroy();
     });
-    plugin.permanentShareStore = new PermanentShareStore(plugin.settings.oid);
     plugin.app.workspace.onLayoutReady(
       async () => {
-        const permanentlySharedDocs = await plugin.permanentShareStore.getAllDocs();
-        for (const doc2 of permanentlySharedDocs) {
-          SharedDocument.fromPermanentShareDocument(doc2, plugin);
+        for (const docs of plugin.settings.serverShares.files) {
+          SharedDocument.fromPermanentShareDocument({ path: docs[0], persistenceId: docs[1].persistenceId, shareId: docs[1].shareId }, plugin);
         }
-        const permanentlySharedFolders = await plugin.permanentShareStore.getAllFolders();
-        for (const folder of permanentlySharedFolders) {
-          SharedFolder.fromPermanentShareFolder(folder, plugin);
+        for (const folder of plugin.settings.serverShares.folders) {
+          SharedFolder.fromPermanentShareFolder({ path: folder[0], persistenceId: folder[1].persistenceId, shareId: folder[1].shareId }, plugin);
         }
         updatePeerdraftWorkspace(plugin.app.workspace, plugin.pws);
         plugin.registerEvent(plugin.app.workspace.on("layout-change", () => {
           updatePeerdraftWorkspace(plugin.app.workspace, plugin.pws);
         }));
+        this.serverSync = new PeerdraftWebsocketProvider(this.settings.sync);
       }
     );
-    if (plugin.settings.plan.type === "team") {
-      plugin.registerEvent(plugin.app.workspace.on("file-menu", (menu, file) => {
-        if (file instanceof import_obsidian10.TFolder) {
+    plugin.registerEvent(plugin.app.workspace.on("file-menu", (menu, file) => {
+      if (file instanceof import_obsidian11.TFolder) {
+        const sharedFolder = SharedFolder.findByPath(file.path);
+        if (!sharedFolder) {
+          if (!SharedFolder.getSharedFolderForSubPath(file.path) && plugin.settings.plan.type === "team") {
+            menu.addItem((item) => {
+              item.setTitle("Share Folder");
+              item.setIcon("users");
+              item.onClick(() => {
+                SharedFolder.fromTFolder(file, plugin);
+              });
+            });
+          }
+        } else {
           menu.addItem((item) => {
-            item.setTitle("Share Folder");
+            item.setTitle("Copy Peerdraft URL");
             item.setIcon("users");
             item.onClick(() => {
-              SharedFolder.fromTFolder(file, plugin);
+              navigator.clipboard.writeText(plugin.settings.basePath + "/team/" + sharedFolder.shareId);
+            });
+          });
+          menu.addItem((item) => {
+            item.setTitle("Stop syncing this folder");
+            item.setIcon("refresh-cw-off");
+            item.onClick(async () => {
+              await sharedFolder.unshare();
+            });
+          });
+          menu.addItem((item) => {
+            item.setTitle("Re-create sync from server");
+            item.setIcon("refresh-cw");
+            item.onClick(async () => {
+              await SharedFolder.recreate(sharedFolder, plugin);
             });
           });
         }
-      }));
-    }
+      } else {
+        const sharedDocument = SharedDocument.findByPath(file.path);
+        const sharedFolder = SharedFolder.getSharedFolderForSubPath(file.path);
+        if (sharedDocument) {
+          menu.addItem((item) => {
+            item.setTitle("Copy Peerdraft URL");
+            item.setIcon("users");
+            item.onClick(() => {
+              navigator.clipboard.writeText(plugin.settings.basePath + "/cm/" + sharedDocument.shareId);
+            });
+          });
+          if (!sharedFolder) {
+            menu.addItem((item) => {
+              item.setTitle("Stop syncing this document");
+              item.setIcon("refresh-cw-off");
+              item.onClick(async () => {
+                await sharedDocument.unshare();
+              });
+            });
+          }
+        }
+      }
+    }));
     plugin.addCommand({
       id: "share",
       name: "Start working together on this document",
       checkCallback(checking) {
-        const view = plugin.app.workspace.getActiveViewOfType(import_obsidian10.MarkdownView);
+        const view = plugin.app.workspace.getActiveViewOfType(import_obsidian11.MarkdownView);
         if (!view)
           return false;
         const file = view.file;
@@ -19373,14 +21913,14 @@ var PeerdraftPlugin = class extends import_obsidian10.Plugin {
           promptForSessionType(plugin.app).then((result) => {
             if (!result)
               return;
-            SharedDocument.fromView(view, plugin, { isPermanent: result.permanent }).then((doc3) => {
+            SharedDocument.fromView(view, plugin, { permanent: result.permanent }).then((doc3) => {
               if (!doc3) {
                 return showNotice("ERROR creating sharedDoc");
               }
             });
           });
         } else {
-          SharedDocument.fromView(view, plugin, { isPermanent: false }).then((doc3) => {
+          SharedDocument.fromView(view, plugin, { permanent: false }).then((doc3) => {
             if (!doc3) {
               return showNotice("ERROR creating sharedDoc");
             }
@@ -19436,7 +21976,7 @@ var PeerdraftPlugin = class extends import_obsidian10.Plugin {
       });
     }
     plugin.registerEvent(plugin.app.vault.on("rename", async (file, oldPath) => {
-      if (file instanceof import_obsidian10.TFile) {
+      if (file instanceof import_obsidian11.TFile) {
         const doc2 = SharedDocument.findByPath(oldPath);
         if (doc2) {
           await doc2.setNewFileLocation(file);
@@ -19447,17 +21987,32 @@ var PeerdraftPlugin = class extends import_obsidian10.Plugin {
           if (oldPathInFolder === newPathInFolder) {
             oldPathInFolder.updatePath(oldPath, file.path);
           } else {
-            const doc3 = await SharedDocument.fromTFile(file, { permanent: true }, plugin);
-            newPathInFolder.addDocument(doc3);
+            const newDoc = await SharedDocument.fromTFile(file, { permanent: true }, plugin);
+            if (newDoc) {
+              newPathInFolder.addDocument(newDoc);
+            }
+            if (doc2) {
+            }
           }
         } else if (oldPathInFolder && !newPathInFolder) {
           if (doc2) {
+            showNotice("It is not possible to remove a document from a shared folder right now. Created a copy.");
+            await SharedFolder.getOrCreatePath(path3.dirname(oldPath), plugin);
+            const file2 = await plugin.app.vault.create(oldPath, "");
+            if (!file2) {
+              showNotice("Error creating file " + oldPath + ".");
+              return;
+            }
+            doc2.setNewFileLocation(file2);
+            doc2.syncWithServer();
           }
         } else if (!oldPathInFolder && newPathInFolder) {
           const doc3 = await SharedDocument.fromTFile(file, { permanent: true }, plugin);
-          newPathInFolder.addDocument(doc3);
+          if (doc3) {
+            newPathInFolder.addDocument(doc3);
+          }
         }
-      } else if (file instanceof import_obsidian10.TFolder) {
+      } else if (file instanceof import_obsidian11.TFolder) {
         const folder = SharedFolder.findByPath(oldPath);
         if (folder) {
           await folder.setNewFolderLocation(file);
@@ -19466,9 +22021,13 @@ var PeerdraftPlugin = class extends import_obsidian10.Plugin {
     }));
     plugin.registerEvent(plugin.app.vault.on("delete", async (file) => {
       plugin.log("register delete for " + file.path);
-      const folder = SharedFolder.getSharedFolderForSubPath(file.path);
-      if (!folder) {
-        if (file instanceof import_obsidian10.TFile) {
+      if (file instanceof import_obsidian11.TFolder) {
+        const folder = SharedFolder.findByPath(file.path);
+        folder == null ? void 0 : folder.unshare();
+        return;
+      } else if (file instanceof import_obsidian11.TFile) {
+        const folder = SharedFolder.getSharedFolderForSubPath(file.path);
+        if (!folder) {
           const doc2 = SharedDocument.findByPath(file.path);
           if (doc2) {
             await doc2.unshare();
@@ -19479,7 +22038,7 @@ var PeerdraftPlugin = class extends import_obsidian10.Plugin {
     plugin.app.workspace.onLayoutReady(
       () => {
         plugin.registerEvent(plugin.app.vault.on("create", async (file) => {
-          if (!(file instanceof import_obsidian10.TFile))
+          if (!(file instanceof import_obsidian11.TFile))
             return;
           const folder = SharedFolder.getSharedFolderForSubPath(file.path);
           if (!folder)
@@ -19488,16 +22047,19 @@ var PeerdraftPlugin = class extends import_obsidian10.Plugin {
             return;
           if (SharedDocument.findByPath(file.path))
             return;
+          if (plugin.settings.serverShares.files.has(file.path))
+            return;
           const doc2 = await SharedDocument.fromTFile(file, {
             permanent: true
           }, plugin);
-          folder.addDocument(doc2);
+          if (doc2) {
+            folder.addDocument(doc2);
+          }
         }));
       }
     );
     const settingsTab = createSettingsTab(plugin);
-    const settings = await getSettings(plugin);
-    if (!settings.name) {
+    if (!plugin.settings.name) {
       const name = await promptForName(plugin.app);
       if (name && name.text) {
         this.settings.name = name.text;
@@ -19514,7 +22076,6 @@ var PeerdraftPlugin = class extends import_obsidian10.Plugin {
       folder.destroy();
     });
     this.activeStreamClient.destroy();
-    this.permanentShareStore.close();
   }
   log(message) {
     if (this.settings.debug) {

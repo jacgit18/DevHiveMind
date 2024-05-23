@@ -16,6 +16,8 @@ Ask about or come up with DAU(Daily Active User) use a easy consistent value tha
 
 #todo/Personal/Med/Dev 
 - [ ] Simplify and improve on math and approximation process and converting to different units.
+
+Depending on interviewer you might be able to use a calculator.
 #### Storage
 You should be concerned with writes here only because we need to know how much data we need to store.
 
@@ -36,9 +38,21 @@ You should be concerned with writes here only because we need to know how much d
 | 86,400 seconds * 30 days | 2,592,000 seconds per month use 2,400,000 | Seconds |
 
 After developing schema you can define general feature like below following a rough [[Structuring URL#URI Path Design Guidelines for REST APIs |endpoints naming convention]].
+
+maybe consider defining some microservices here and weather they are following CQRS pattern meaning if you have services that exclusively handling reads and others handling just writes.
 ##### Writes
 > POST, PUT, DELETE
 
+###### Non Functional
+**General Microservices**
+Logging 
+Security
+Metrics
+Monitoring
+
+> **Simple math:** 14% of 50 just through reverse so 50% of 14 which is 7 
+
+###### Functional
 As a users we want to:
 - Post Comment
 - Post Like
@@ -47,6 +61,9 @@ As a users we want to:
 	- Update Comment 
 	- Delete Comment
 
+**General Microservices**: anything relating to the feature can be broken into several different microservices depends on the feature of focus.
+
+*String Data*
 Lets Assume were dealing with English comments there are about 500K words in the English language.
 
 A comment might contain 20 to 40 words and each word might have a length of 5 characters thus each comment will range about 100 to 200 characters. Assuming each character is approximately 1 byte, the average size of a YouTube comment in English would be around 100 to 200 bytes.

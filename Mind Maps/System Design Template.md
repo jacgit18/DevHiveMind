@@ -364,10 +364,10 @@ Client VPN ^2LmZTsXP
 
 # Embedded files
 69edc9e02839ed3bb44893b35184a59630bebc22: [[Aws Trust Advisor.png]]
-46423fdbed5a290e46978078fca3490e32f0a5b9: [[Pasted Image 20240401082528_264.png]]
-962dde3d92f0bb8f09113a306e64a935eeb38172: [[Pasted Image 20240401082628_277.svg]]
-6cc13ef5f47d18738d373860705182af63941283: [[Pasted Image 20240401091055_513.svg]]
-beb88a937223c5cb69030dd35c828863fccfaf0d: [[Pasted Image 20240401091110_541.svg]]
+46423fdbed5a290e46978078fca3490e32f0a5b9: [[EBS.png]]
+962dde3d92f0bb8f09113a306e64a935eeb38172: [[Glaciar.svg]]
+6cc13ef5f47d18738d373860705182af63941283: [[Snowball.svg]]
+beb88a937223c5cb69030dd35c828863fccfaf0d: [[SnowMobile.svg]]
 771414176e1fd0a7d30561e012f4b84d283adcaa: [[GetImage (11).png]]
 d149fa07d18dfe5949cd6a5cd51cd17343f74e52: [[GetImage (12).png]]
 

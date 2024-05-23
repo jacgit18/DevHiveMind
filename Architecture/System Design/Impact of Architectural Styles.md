@@ -111,8 +111,8 @@ Let's explore how these architectural styles affect key components:
 	  - Provides redundancy and high availability, as in case of failure of the master server, one of the slave servers can be promoted to serve as the new master without data loss.
 
 
-## **Specialized Operations**
-11. **CQRS (Command Query Responsibility Segregation):**  
+## Specialized Operations
+11. **[[_Command and Query Responsibility Segregation.canvas|CQRS]] (Command Query Responsibility Segregation):**  
 	- **Components:**  
 		- Separates read and write operations, using different components for each.  
 	- **Impact:**  

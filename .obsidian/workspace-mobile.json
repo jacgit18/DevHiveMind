@@ -4,20 +4,31 @@
     "type": "split",
     "children": [
       {
-        "id": "abd1f2648659d6ad",
+        "id": "081a7d3811d6b97d",
         "type": "tabs",
         "children": [
           {
-            "id": "187f40793dfbf1d6",
+            "id": "ff71e49f70ec2137",
             "type": "leaf",
             "state": {
-              "type": "excalidraw",
+              "type": "markdown",
               "state": {
-                "file": "Architecture/System Design/System Design Thought Process Flow.md"
+                "file": "Architecture/Backing Service Options/Choosing Database.md",
+                "mode": "source",
+                "source": false
               }
             }
+          },
+          {
+            "id": "a3883d203bd445cf",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {}
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -82,8 +93,7 @@
           "state": {}
         }
       }
-    ],
-    "currentTab": 0
+    ]
   },
   "right": {
     "id": "c132e8bf1ab9e4bd",
@@ -103,7 +113,6 @@
         "state": {
           "type": "backlink",
           "state": {
-            "file": "Architecture/System Design/System Design Thought Process Flow.md",
             "collapseAll": false,
             "extraContext": false,
             "sortOrder": "alphabetical",
@@ -120,7 +129,6 @@
         "state": {
           "type": "outgoing-link",
           "state": {
-            "file": "Architecture/System Design/System Design Thought Process Flow.md",
             "linksCollapsed": false,
             "unlinkedCollapsed": true
           }
@@ -131,9 +139,7 @@
         "type": "leaf",
         "state": {
           "type": "outline",
-          "state": {
-            "file": "Architecture/System Design/System Design Thought Process Flow.md"
-          }
+          "state": {}
         }
       },
       {
@@ -210,12 +216,17 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "187f40793dfbf1d6",
+  "active": "a3883d203bd445cf",
   "lastOpenFiles": [
-    "Home.md",
-    "Mind Maps/System Design Template.md",
-    "_Pdf/Books/Interview/System Design Interview An Insider’s Guide.pdf",
+    "Architecture/Backing Service Options/Choosing Database.md",
     "Architecture/System Design/System Design Thought Process Flow.md",
-    "_Pdf/Books/Architecture/System Analysis and Design Methods 7th.pdf"
+    "Home.md",
+    "Architecture/System Design/System Design Thought Process Flow.svg",
+    "_Pdf/Books/Interview/System Design Interview An Insider’s Guide.pdf",
+    "Architecture/System Design/Rate Limits.md",
+    "Architecture/Fault Tolerance.md",
+    "Companies/Companies Worked At/TD/Business Requirements Life cycle.md",
+    "Databases/Database data governance.md",
+    "Architecture/System Design/Userbase.md"
   ]
 }
