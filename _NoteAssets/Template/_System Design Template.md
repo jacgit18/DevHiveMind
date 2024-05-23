@@ -73,7 +73,11 @@ Write per user = AFTRS / AUS
 
 ###### Long term estimates
 
-Data replication = Monthly Estimation * 3 
+Data replication = Monthly Estimation * 3 or 5 = 
+
+Year Storage = 1 * 400(Rounded year) * Replication
+
+5 Year Storage = Year Storage * 5
 
 
 #### Network Traffic
@@ -91,7 +95,9 @@ Overall Traffic: (DAU * read per sec) * (DAU * writes per sec)
 
 #### Memory Cache
 
+Cache Memory = Read per day * AFTRS * 20% =
 
+Total memory = Cache Memory * 3 or 5( replic) =
 
 #### Bandwidth
 

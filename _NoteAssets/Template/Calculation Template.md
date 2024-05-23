@@ -6,6 +6,10 @@ number_of_users: 20000
 
 ---
 
+```dataviewjs
+  dv.paragraph(dv.current().number_of_users);
+```
+
 
 ```dataviewjs
 let dailyBytes = dv.current().user_daily_bytes;
@@ -22,3 +26,5 @@ if (dailyBytes && days && users) {
     dv.paragraph("One or more variables are missing or not defined correctly.");
 }
 ```
+
+
