@@ -45,7 +45,8 @@ Try Data View [[Calculation Template]]
 **AFRS** - Average Feature Request Size by Bytes
 **AFTRS** - Average Feature Total Req Size Per User
 **AUS** - Active Userbase Size  
-**DAU** - Daily Active Users  
+**DAU** - Daily Active Users 
+**RPS** - Request Per Second
 
 > **Lets say we have 2:1 ratio of feature A Request to feature B Request**
 #### Storage
@@ -100,11 +101,19 @@ Cache Memory = Read per day * AFTRS * 20% =
 Total memory = Cache Memory * 3 or 5( replic) =
 
 #### Bandwidth
+> consider fast & slow lanes, also quality down-scaling and up-scaling
 
+InComing Data per sec(Write) = (write per sec) * AFTRS = ... bytes per sec
+
+OutGoing Data per sec(Read) = (read per sec) * AFTRS = ... bytes per sec
 
 
 ### App Server Estimations
+CPU physical cores = ..
 
+RPS for single server = # CPU physical cores / 0.5 or half a sec = ..
+
+Number of Servers = ...(read per sec)/ ...RPS a single server can handle = ... servers
 
 
 
