@@ -39,19 +39,16 @@ Design...
 |     | ...          |
 
 
-
-
 ### Capacity Estimation
-**DAU** - Daily Active Users  
+**AUS** - Active Userbase Size  
+**DAU** - Daily Active Users 
 
+> **Lets say we have 2:1 ratio of feature A Request to feature B Request**
 #### Storage
-
 
 ##### Writes
 As a users we want to:
 - Post 
-
-**Lets say we have 2:1 ratio of feature A Request to feature B Request**
 
 ###### Data Size 
 Write per day =
