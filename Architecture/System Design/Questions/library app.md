@@ -31,7 +31,13 @@ adult level books
 
 #### Non Requirements Functional
 check age
+service Oriented architecture 
 
+distributed transaction potential pitfalls
+
+
+##### mainService
+user Table 
 ##### collectionService
 categories
 
@@ -51,18 +57,30 @@ bookRaitingating
 | PK  | userID         |
 | FK  | bookID         |
 |     | userCollection |
-|     |                |
+|     | addBook        |
 |     | ...            |
 ##### Table 2
 
-|     | Book           |
+|     | Book         | Type    |
+| --- | ------------ | ------- |
+| PK  | bookID       |         |
+|     | bookTitle    |         |
+|     | bookGenre    |         |
+|     | bookAuthor   |         |
+|     | categories   | varChar |
+|     | sub category |         |
+|     | rating       |         |
+
+1, dTwilight, four, someOne, 
+
+|     | collection     |
 | --- | -------------- |
-| PK  | bookID         |
+| PK  | collectionID   |
+| FK  | userID         |
+| FK  | bookID         |
 |     | bookCompletion |
 |     | bookStatus     |
-|     | bookTitle      |
-|     | bookGenre      |
-|     | bookAuthor     |
+
 
 
 ### Capacity Estimation
