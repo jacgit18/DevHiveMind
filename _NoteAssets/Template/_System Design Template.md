@@ -39,19 +39,7 @@ Design...
 |     | ...          |
 
 
-##### Table 2
 
-|     | Region       |
-| --- | ------------ |
-| PK  | RegionID     |
-| FK  | UserID       |
-| FK  | RandomID     |
-|     | Name         |
-|     | Phone number |
-|     | ...          |
-|     | ...          |
-
-  
 
 ### Capacity Estimation
 
@@ -83,6 +71,10 @@ Read:Write *50*:1 read heavy ratio
 ##### Reads
 As a users we want to:
 - Get
+
+Reads per day = *50*
+
+Reads per sec = *50*
 
 #### Memory Cache
 
@@ -151,6 +143,9 @@ Service ^mbskYkv5
 API ^EhJ0BLrM
 
 API ^qj7dnRO7
+
+## Element Links
+5hCQUjFg: [[_NoteAssets/Template/_System Design Template.md#Table 1]]
 
 %%
 ## Drawing
@@ -234,8 +229,8 @@ API ^qj7dnRO7
 		},
 		{
 			"type": "frame",
-			"version": 1388,
-			"versionNonce": 1996354911,
+			"version": 1397,
+			"versionNonce": 2040289585,
 			"index": "bgJ",
 			"isDeleted": false,
 			"id": "sYqN-8rYkxZWInFVviZMe",
@@ -245,8 +240,8 @@ API ^qj7dnRO7
 			"roughness": 0,
 			"opacity": 100,
 			"angle": 0,
-			"x": 5.492340556873387,
-			"y": 840.3814271285296,
+			"x": -64.50765944312661,
+			"y": 845.3814271285296,
 			"strokeColor": "#bbb",
 			"backgroundColor": "transparent",
 			"width": 1233.2330293478853,
@@ -256,7 +251,7 @@ API ^qj7dnRO7
 			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1716482408504,
+			"updated": 1716482989564,
 			"link": null,
 			"locked": false,
 			"customData": {
@@ -3591,80 +3586,49 @@ API ^qj7dnRO7
 			"locked": false
 		},
 		{
-			"id": "kX0amr2D",
-			"type": "text",
-			"x": -799.3589134005982,
-			"y": 841.9997448937527,
-			"width": 54.547024197048614,
-			"height": 49.444444444444464,
-			"angle": 0,
-			"strokeColor": "#1e1e1e",
-			"backgroundColor": "transparent",
-			"fillStyle": "solid",
-			"strokeWidth": 2,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
-			"groupIds": [],
-			"frameId": "rSPLAZf91HoAXp5U5_E4A",
-			"index": "bv0",
-			"roundness": null,
-			"seed": 1516988113,
-			"version": 46,
-			"versionNonce": 1173750961,
-			"isDeleted": true,
-			"boundElements": null,
-			"updated": 1716482461320,
-			"link": null,
-			"locked": false,
-			"text": "api",
-			"rawText": "api",
-			"fontSize": 39.55555555555557,
-			"fontFamily": 1,
-			"textAlign": "left",
-			"verticalAlign": "top",
-			"containerId": null,
-			"originalText": "api",
-			"autoResize": true,
-			"lineHeight": 1.25
-		},
-		{
-			"id": "aZ58XgqH",
-			"type": "text",
-			"x": -858.8033578450427,
-			"y": 3328.6664115604194,
-			"width": 1546.8447400378009,
-			"height": 541.6666666666663,
-			"angle": 0,
-			"strokeColor": "#1e1e1e",
-			"backgroundColor": "transparent",
-			"fillStyle": "solid",
-			"strokeWidth": 2,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
-			"groupIds": [],
-			"frameId": null,
+			"type": "embeddable",
+			"version": 53,
+			"versionNonce": 1553617457,
 			"index": "c0E1",
+			"isDeleted": false,
+			"id": "5hCQUjFg",
+			"fillStyle": "hachure",
+			"strokeWidth": 1,
+			"strokeStyle": "solid",
+			"roughness": 1,
+			"opacity": 100,
+			"angle": 0,
+			"x": -1256.2795483212335,
+			"y": -1043.8970805030726,
+			"strokeColor": "#000000",
+			"backgroundColor": "transparent",
+			"width": 460.00000000000006,
+			"height": 305,
+			"seed": 86169,
+			"groupIds": [],
+			"frameId": "b_CFDPxeHaDK177m8nPQ0",
 			"roundness": null,
-			"seed": 1636831185,
-			"version": 111,
-			"versionNonce": 1346976063,
-			"isDeleted": true,
-			"boundElements": null,
-			"updated": 1716482456234,
-			"link": null,
+			"boundElements": [],
+			"updated": 1716483236335,
+			"link": "[[_NoteAssets/Template/_System Design Template.md#Table 1]]",
 			"locked": false,
-			"text": "Backing",
-			"rawText": "Backing",
-			"fontSize": 433.33333333333354,
-			"fontFamily": 1,
-			"textAlign": "left",
-			"verticalAlign": "top",
-			"containerId": null,
-			"originalText": "Backing",
-			"autoResize": true,
-			"lineHeight": 1.25
+			"customData": {
+				"mdProps": {
+					"useObsidianDefaults": false,
+					"backgroundMatchCanvas": false,
+					"backgroundMatchElement": true,
+					"backgroundColor": "#fff",
+					"backgroundOpacity": 60,
+					"borderMatchElement": true,
+					"borderColor": "#fff",
+					"borderOpacity": 0,
+					"filenameVisible": false
+				}
+			},
+			"scale": [
+				1,
+				1
+			]
 		}
 	],
 	"appState": {
@@ -3683,7 +3647,7 @@ API ^qj7dnRO7
 		"currentItemStartArrowhead": null,
 		"currentItemEndArrowhead": "arrow",
 		"scrollX": 2062.5295483212335,
-		"scrollY": 2445.3814555030726,
+		"scrollY": 1845.3814555030726,
 		"zoom": {
 			"value": 0.2
 		},
