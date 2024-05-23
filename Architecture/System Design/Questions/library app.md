@@ -31,11 +31,12 @@ adult level books
 
 #### Non Requirements Functional
 check age
+
 service Oriented architecture 
 
-distributed transaction potential pitfalls
+distributed transaction potential pitfalls with multiple microservices connected to one db
 
-talk tradeoffs
+talk tradeoffs of architecture
 ##### mainService
 user Table 
 ##### collectionService
@@ -70,6 +71,8 @@ bookRaitingating
 |     | OverallRating |         |
 
 1, dTwilight, four, someOne, 
+
+##### Table 3
 
 |     | collection     |
 | --- | -------------- |
