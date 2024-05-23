@@ -38,7 +38,7 @@ Design...
 |     | ...          |
 |     | ...          |
 
-Try Data View calculation 
+Try Data View [[Calculation Template]]
 
 ### Capacity Estimation
 **AVG** - Average
