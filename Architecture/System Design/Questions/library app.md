@@ -35,7 +35,7 @@ service Oriented architecture
 
 distributed transaction potential pitfalls
 
-
+talk tradeoffs
 ##### mainService
 user Table 
 ##### collectionService
@@ -52,24 +52,22 @@ bookRaitingating
 
 ##### Table 1
 
-|     | User           |
-| --- | -------------- |
-| PK  | userID         |
-| FK  | bookID         |
-|     | userCollection |
-|     | addBook        |
-|     | ...            |
+|     | User    |
+| --- | ------- |
+| PK  | userID  |
+|     | addBook |
+|     |         |
 ##### Table 2
 
-|     | Book         | Type    |
-| --- | ------------ | ------- |
-| PK  | bookID       |         |
-|     | bookTitle    |         |
-|     | bookGenre    |         |
-|     | bookAuthor   |         |
-|     | categories   | varChar |
-|     | sub category |         |
-|     | rating       |         |
+|     | Book          | Type    |
+| --- | ------------- | ------- |
+| PK  | bookID        |         |
+|     | bookTitle     |         |
+|     | bookGenre     |         |
+|     | bookAuthor    |         |
+|     | categories    | varChar |
+|     | sub category  |         |
+|     | OverallRating |         |
 
 1, dTwilight, four, someOne, 
 
@@ -80,9 +78,12 @@ bookRaitingating
 | FK  | bookID         |
 |     | bookCompletion |
 |     | bookStatus     |
+|     | rating         |
 
 
+alot of writes go away from SQL
 
+what part of the system front backend, analytics 
 ### Capacity Estimation
 **AVG** - Average
 **AFRS** - Average Feature Request Size by Bytes
@@ -228,49 +229,49 @@ nHQ1vcRE: [[library app#Table 1]]
 	"source": "https://github.com/zsviczian/obsidian-excalidraw-plugin/releases/tag/2.2.2",
 	"elements": [
 		{
-			"id": "O5cZtrTZKiEwB_t1aFh44",
 			"type": "arrow",
-			"x": -1005.526163634024,
-			"y": -914.1727159174134,
-			"width": 239.9999999999999,
-			"height": 18.666666666666742,
-			"angle": 0,
-			"strokeColor": "#1e1e1e",
-			"backgroundColor": "transparent",
+			"version": 76,
+			"versionNonce": 634704689,
+			"index": "a1",
+			"isDeleted": false,
+			"id": "O5cZtrTZKiEwB_t1aFh44",
 			"fillStyle": "solid",
 			"strokeWidth": 2,
 			"strokeStyle": "solid",
 			"roughness": 1,
 			"opacity": 100,
+			"angle": 0,
+			"x": -1025.526163634024,
+			"y": -956.8393825840801,
+			"strokeColor": "#1e1e1e",
+			"backgroundColor": "transparent",
+			"width": 259.9999999999999,
+			"height": 24,
+			"seed": 991988465,
 			"groupIds": [],
 			"frameId": "b_CFDPxeHaDK177m8nPQ0",
-			"index": "a1",
 			"roundness": {
 				"type": 2
 			},
-			"seed": 991988465,
-			"version": 51,
-			"versionNonce": 322649809,
-			"isDeleted": false,
-			"boundElements": null,
-			"updated": 1716499337779,
+			"boundElements": [],
+			"updated": 1716500790782,
 			"link": null,
 			"locked": false,
+			"startBinding": null,
+			"endBinding": null,
+			"lastCommittedPoint": null,
+			"startArrowhead": null,
+			"endArrowhead": "arrow",
 			"points": [
 				[
 					0,
 					0
 				],
 				[
-					239.9999999999999,
-					-18.666666666666742
+					259.9999999999999,
+					24
 				]
-			],
-			"lastCommittedPoint": null,
-			"startBinding": null,
-			"endBinding": null,
-			"startArrowhead": null,
-			"endArrowhead": "arrow"
+			]
 		},
 		{
 			"type": "frame",
@@ -3704,8 +3705,8 @@ nHQ1vcRE: [[library app#Table 1]]
 		},
 		{
 			"type": "embeddable",
-			"version": 115,
-			"versionNonce": 1047351985,
+			"version": 116,
+			"versionNonce": 1047351986,
 			"index": "c0E1",
 			"isDeleted": false,
 			"id": "nHQ1vcRE",
@@ -3727,7 +3728,7 @@ nHQ1vcRE: [[library app#Table 1]]
 			"roundness": null,
 			"boundElements": [],
 			"updated": 1716499307968,
-			"link": "[[Architecture/System Design/Questions/Untitled.md#Table 1]]",
+			"link": "[[library app#Table 1]]",
 			"locked": false,
 			"customData": {
 				"mdProps": {
@@ -3749,8 +3750,8 @@ nHQ1vcRE: [[library app#Table 1]]
 		},
 		{
 			"type": "embeddable",
-			"version": 122,
-			"versionNonce": 1150083889,
+			"version": 123,
+			"versionNonce": 1150083890,
 			"index": "c0E2",
 			"isDeleted": false,
 			"id": "7s5CxVST",
@@ -3772,7 +3773,7 @@ nHQ1vcRE: [[library app#Table 1]]
 			"roundness": null,
 			"boundElements": [],
 			"updated": 1716499323085,
-			"link": "[[Architecture/System Design/Questions/Untitled.md#Table 2]]",
+			"link": "[[library app#Table 2]]",
 			"locked": false,
 			"customData": {
 				"mdProps": {
