@@ -13,7 +13,7 @@ dg-publish:
 AFRS_one: 0
 AFRS_two: 0
 AUS: 0
-CPU Cores: 0
+CPU_Cores: 0
 DAU: 0
 Replication: 0
 WriteFeatOne: Feature Name Placeholder

@@ -4,7 +4,7 @@ AFRS_two: 500
 AFRS_three: 0
 AUS: 20000
 DAU: 1000
-CPU Cores: 8
+CPU_Cores: 8
 Replication: 3
 ReadFeatOne: stuff
 WriteFeatOne: Comment
@@ -23,6 +23,7 @@ const AFRS_three = dv.current().AFRS_three;
 const FeatThreeName = dv.current().ReadFeatOne;
 const ReadRatio = dv.current().Reads;  
 const WriteRatio = dv.current().Writes;  
+const requestPerServer = dv.current().CPU_Cores / 0.5 
 
 // Active Userbase Size
 let AUS = dv.current().AUS;
@@ -92,7 +93,7 @@ dv.paragraph(`Total storage for 5 Years **${fiveYearStorage.toLocaleString()}** 
 dv.paragraph("<br>");  
 
 dv.paragraph(`### Network Traffic`);
-dv.paragraph(`*Read*:Write ratio = *${ReadRatio}*:${WriteRatio} read-heavy ratio`);
+dv.paragraph(`*Read*:Write ratio = *${ReadRatio}*:${WriteRatio} read-heavy system`);
 dv.paragraph("<br>");  
 dv.paragraph(`##### Reads`);
 dv.paragraph(`Reads per month **${readsPerMonth.toLocaleString()}** bytes`);
@@ -112,9 +113,10 @@ dv.paragraph(`Outgoing Data per second (Read) = Reads per second * AFTRS = ${out
 dv.paragraph("<br>");  
 
 dv.paragraph(`### App Server Estimations`);
-dv.paragraph(`CPU physical cores = ...`);
-dv.paragraph(`Request Per Second for a single server is = # CPU physical cores / 0.5 or half a sec = ...`);
-dv.paragraph(`Number of Servers = (reads per second) / (RPS a single server can handle) = ... servers`);
+dv.paragraph(`**${dv.current().CPU_Cores}** physical CPU cores`);
+dv.paragraph(`**${requestPerServer}** Request Per Second for a single server `);
+const numServer = 
+dv.paragraph(`Number of Servers = ${readsPerSec}/${requestPerServer}`);
 ```
 
 
@@ -122,5 +124,5 @@ dv.paragraph(`Number of Servers = (reads per second) / (RPS a single server can 
 ```dataviewjs
 // readOnly need to store in vairiable
 dv.current().AUS = 10;
-dv.paragraph(`AUS is read only thats why no change **${dv.current().AUS}**`);
+dv.paragraph(`Yaml property is read only thats why no change **${dv.current().AUS}**`);
 ```
