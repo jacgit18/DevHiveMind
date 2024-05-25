@@ -106,8 +106,13 @@ When considering open source technologies like for example Redis, it's essential
 
 ##### [[IV Backing services]]
 Backing services is a concept in 12 factor app methodology it refers to external services that your system utilizes.
+
+Side note Encryption is lower level meaning that it happens within things like databases APIs and other things but it's not directly implemented within business logic that you have to write it's handled depending on what technology you're using.
+
 ###### [[Choosing Database]] 
 When deciding on database you should consider whether you're dealing with [[Industry Structured & Unstructured Data |Structured or Unstructured Data]] then come up with a short list of databases to pick from. For instance, if the domain focuses on medical data, it's likely structured, favoring SQL databases. Conversely, media-related data tends to be unstructured, making NoSQL databases more suitable. all these factors also include database architecture can influence throughput in terms of number request, database transactions(`collection of queries`), and queries made. You can discuss optimization techniques like [[Database Sharding]] also known as horizontal partitioning and a [[Master-Slave Database Architecture]] which is simple to implement and is better in terms of strong data consistency which has it own trade off like performance and availability when you compare it to other replication strategies. This tandem approach distributes workload both horizontally across shards and vertically within each shard. 
+
+> if the system performs a lot of writes might be an indicator for using other non SQL database like NOSQL
 
 This strategy enhances scalability and performance by parallelizing read and write operations across multiple database servers. Moreover, integrating master-slave setups within each shard ensures fault tolerance and high availability. In the event of a master server failure within a shard, a slave server can seamlessly assume the role of the new master, thereby guaranteeing uninterrupted operation and data accessibility for that shard. 
 

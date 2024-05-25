@@ -34,33 +34,38 @@ Design statement Placeholder
 
 ##### Entity Definition Table 1
 
-|     | Region       | Type         |
-| --- | ------------ | ------------ |
-| PK  | RegionID     | INT          |
-| FK  | UserID       | INT          |
-| FK  | RandomID     | INT          |
-|     | Name         | Varchar(255) |
-|     | Phone number | Varchar(255) |
-|     | ...          | [datatype]   |
-|     | ...          |              |
+|     | Region     | Type         |
+| --- | ---------- | ------------ |
+| PK  | RegionID   | INT          |
+| FK  | UserID     | INT          |
+| FK  | RandomID   | INT          |
+|     | RegionName | Varchar(255) |
+|     | ...        | [datatype]   |
+|     | ...        |              |
 ##### Entity Definition Table 2
 
+|     | USer     | Type         |
+| --- | -------- | ------------ |
+| PK  | UserID   | INT          |
+|     | UserName | Varchar(255) |
+|     | PhoneNum | Varchar(255) |
+|     | ...      | [datatype]   |
+|     | ...      |              |
 
 
 ##### Rough Schema Table  
-**Table for debugging overall schema using Queries **
+**Table for debugging overall schema using Queries**
+When designing a database schema, validate it through practical testing by creating sample tables and performing insertions and selects. The schema can use a loose structure, representing combined tables through relationships rather than a strict one-to-one mapping.
 
-| bookID | bookTitle | bookGenre | bookAuthor | categories | OverallRating |
-| ------ | --------- | --------- | ---------- | ---------- | ------------- |
-| 1      | tobe      | fafa      | tony       | horror     | 4             |
-|        |           |           |            |            |               |
-|        |           |           |            |            |               |
-|        |           |           |            |            |               |
-|        |           |           |            |            |               |
-|        |           |           |            |            |               |
-|        |           |           |            |            |               |
-
-
+| RegionID | RegionName | UserName | PhoneNum     |
+| -------- | ---------- | -------- | ------------ |
+| 1        | Mid        | tom      | 347-217-3245 |
+|          |            |          |              |
+|          |            |          |              |
+|          |            |          |              |
+|          |            |          |              |
+|          |            |          |              |
+|          |            |          |              |
 
 
 Try Data View [[Calculation Template]]
