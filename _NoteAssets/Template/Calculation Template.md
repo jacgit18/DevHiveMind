@@ -1,12 +1,16 @@
 ---
 AFRS_one: 300
 AFRS_two: 500
+AFRS_three: 0
 AUS: 20000
 DAU: 45
 CPU Cores: 8
 Replication: 3
 WriteFeatOne: Comment
 WriteFeatTwo: Like
+WriteFeatThree: stuff
+Reads: 
+Writes:
 ---
 
 ```dataviewjs
@@ -15,6 +19,8 @@ const AFRS_one = dv.current().AFRS_one;
 const FeatOneName = dv.current().WriteFeatOne
 const AFRS_two = dv.current().AFRS_two;
 const FeatTwoName = dv.current().WriteFeatTwo
+const AFRS_three = dv.current().AFRS_three;
+const FeatThreeName = dv.current().WriteFeatThree
 	  
 // Active Userbase Size
 let AUS = dv.current().AUS;
@@ -59,14 +65,16 @@ const outgoingDataPerSec = readsPerSec * AFTRS;
 dv.paragraph(`#### Storage`);
 dv.paragraph(`Lets say are total active user are **${AUS.toLocaleString()}**`);
 dv.paragraph("<br>");  
-dv.paragraph(`##### Writes`);
-dv.paragraph(`As a users we want a feature to:`);
+dv.paragraph(`***As a users we want a feature to:***`);
+
 dv.paragraph(`- Post **${FeatOneName}** feature with a average size of **${AFRS_one}** bytes`);
 dv.paragraph(`- Post **${FeatTwoName}** feature with a average size of **${AFRS_two}** bytes`);
+dv.paragraph(`- Get **${FeatThreeName}** feature with a average size of **${AFRS_three}** bytes`);
 
+
+dv.paragraph("<br>");  
+dv.paragraph(`##### Writes`);
 dv.paragraph(`The total write request size including and accounting for meta data is **${AFTRS}** bytes`);
-
-
 dv.paragraph("<br>");  
 
 dv.paragraph(`Writes per month **${monthlyEstimation.toLocaleString()}** bytes`);
@@ -81,7 +89,7 @@ dv.paragraph(`Total storage for 5 Years **${fiveYearStorage.toLocaleString()}** 
 dv.paragraph("<br>");  
 
 dv.paragraph(`### Network Traffic`);
-dv.paragraph(`Read:Write ratio = 50:1 read-heavy ratio`);
+dv.paragraph(`*Read*:Write ratio = *50*:1 read-heavy ratio`);
 dv.paragraph("<br>");  
 dv.paragraph(`#### Reads`);
 dv.paragraph(`Reads per day = ${readWriteRatio} * Writes per day = ${readsPerDay.toLocaleString()}`);
