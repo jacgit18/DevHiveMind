@@ -2,24 +2,22 @@
 AFRS_one: 300
 AFRS_two: 500
 AUS: 20000
-DAU: "45"
-replication: "3"
+DAU: 45
+replication: 3
+CPU Cores: 8
+WriteFeatOne: Comment
 ---
-
-
-```dataviewjs
-  dv.paragraph(dv.current().AUS);
-```
 
 ```dataviewjs
 // Average Feature Request Size by Bytes
 const AFRS_one = dv.current().AFRS_one;
 const AFRS_two = dv.current().AFRS_two;
 // Active Userbase Size
-const AUS = dv.current().AUS;
+let AUS = dv.current().AUS;
 // Daily Active Users 
 const DAU = dv.current().DAU;
 
+// AUS = 234 // able to reasign 
 
 const replication = dv.current().replication;
 
@@ -47,16 +45,22 @@ const overallTraffic = (DAU * readsPerSec) * (DAU * writesPerSec);
 
 // Memory Cache
 const cacheMemory = readsPerDay * AFTRS * 0.2;
-const totalMemory = cacheMemory * replication_factor;
+const totalMemory = cacheMemory * replication;
 
 // Bandwidth
 const incomingDataPerSec = writesPerSec * AFTRS;
 const outgoingDataPerSec = readsPerSec * AFTRS;
 
+
+// Creating the table as a Markdown string 
+let table = ` | Metric | Value | |------------------|--------------------------| | Reads per day | ${readsPerDay.toLocaleString()} | | Reads per second | ${readsPerSec.toFixed(6)} | | Overall Traffic | ${overallTraffic.toLocaleString()} | `;
+
 dv.paragraph(`### Storage`);
-dv.paragraph(`AUS = ${AUS}`);
+dv.paragraph(`AUS = **${AUS}**`);
 dv.paragraph(`#### Writes`);
 dv.paragraph(`Post ... = ...`);
+
+dv.paragraph("<br>");  // Adds another empty line
 
 dv.paragraph(`#### Data Size`);
 dv.paragraph(`AFRS One is about ${AFRS_one} bytes (adjusted for metadata)`);
@@ -85,7 +89,7 @@ dv.paragraph(`Overall Traffic = (DAU * Reads per second) * (DAU * Writes per sec
 
 dv.paragraph(`### Memory Cache`);
 dv.paragraph(`Cache Memory = Reads per day * AFTRS * 20% = ${cacheMemory.toLocaleString()} bytes`);
-dv.paragraph(`Total Memory = Cache Memory * ${replication_factor} = ${totalMemory.toLocaleString()} bytes`);
+dv.paragraph(`Total Memory = Cache Memory * ${replication} = ${totalMemory.toLocaleString()} bytes`);
 
 dv.paragraph(`### Bandwidth`);
 dv.paragraph(`Incoming Data per second (Write) = Writes per second * AFTRS = ${incomingDataPerSec.toLocaleString()} bytes/sec`);
