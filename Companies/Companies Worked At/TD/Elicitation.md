@@ -11,9 +11,11 @@ EditDate:
 Relates: 
 dg-publish:
 ---
-## **Conducting Effective Conversations for Requirements Gathering:**
+## Conducting Effective Conversations for Requirements Gathering
 
 As a Business Systems Analyst (BSA), engaging in purposeful conversations is critical. Ensure a structured approach by adhering to the following sequence:
+
+SMART - Specific
 
 1. **Ask Questions in this Order:**
 
