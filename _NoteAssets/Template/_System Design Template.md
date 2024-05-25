@@ -8,9 +8,16 @@ Status: Refinement
 Started: 2024-04-13T00:00:00.000Z
 EditDate: 
 Relates: 
-Peer Reviewed: 0
 excalidraw-open-md: true
-dg-publish:
+dg-publish: 
+AFRS_one: 0
+AFRS_two: 0
+AUS: 0
+CPU Cores: 0
+DAU: 0
+Replication: 0
+WriteFeatOne: 
+WriteFeatTwo:
 ---
 Design statement Placeholder
 

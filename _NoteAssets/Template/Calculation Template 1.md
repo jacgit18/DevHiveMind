@@ -91,27 +91,6 @@ dv.paragraph(`Reads per day = ${readWriteRatio} * Writes per day = ${readsPerDay
 dv.paragraph(`Reads per second = ${readWriteRatio} * Writes per second = ${readsPerSec.toFixed(6)}`);
 dv.paragraph(`Overall Traffic = (DAU * Reads per second) * (DAU * Writes per second) = ${overallTraffic.toLocaleString()}`);
 dv.paragraph("<br>");  
-
-dv.paragraph(`### Memory Cache`);
-dv.paragraph(`Cache Memory = Reads per day * AFTRS * 20% = ${cacheMemory.toLocaleString()} bytes`);
-dv.paragraph(`Total Memory = Cache Memory * ${Replication} = ${totalMemory.toLocaleString()} bytes`);
-dv.paragraph("<br>");  
-
-dv.paragraph(`### Bandwidth`);
-dv.paragraph(`Incoming Data per second (Write) = Writes per second * AFTRS = ${incomingDataPerSec.toLocaleString()} bytes/sec`);
-dv.paragraph(`Outgoing Data per second (Read) = Reads per second * AFTRS = ${outgoingDataPerSec.toLocaleString()} bytes/sec`);
-dv.paragraph("<br>");  
-
-dv.paragraph(`### App Server Estimations`);
-dv.paragraph(`CPU physical cores = ...`);
-dv.paragraph(`Request Per Second for a single server is = # CPU physical cores / 0.5 or half a sec = ...`);
-dv.paragraph(`Number of Servers = (reads per second) / (RPS a single server can handle) = ... servers`);
 ```
 
 
-
-```dataviewjs
-// readOnly need to store in vairiable
-dv.current().AUS = 10;
-dv.paragraph(`AUS is read only thats why no change **${dv.current().AUS}**`);
-```
