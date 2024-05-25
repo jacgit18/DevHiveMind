@@ -1,12 +1,13 @@
 ---
 AFRS_one: 300
 AFRS_two: 500
-AUS: 20000
+AUS: "&aus 20000"
 DAU: 45
 CPU Cores: 8
 Replication: 3
 WriteFeatOne: Comment
-WriteFeatTwo:
+WriteFeatTwo: 
+MonthlyEstimation: 30 * 'aus'
 ---
 
 ```dataviewjs
@@ -20,7 +21,7 @@ const DAU = dv.current().DAU;
 
 // AUS = 234 // able to reasign 
 
-const replication = dv.current().Replication;
+
 
 // Average Feature Total Request Size Per User
 const AFTRS = AFRS_one + AFRS_two;
@@ -33,10 +34,7 @@ const writesPerDay = AUS / monthlyEstimation;
 const writesPerSec = writesPerDay / 80000;
 const writesPerUser = AFTRS / AUS;
 
-// Long Term Estimates
-const dataReplication = monthlyEstimation * Replication;
-const yearStorage = 1 * 400 * dataReplication;
-const fiveYearStorage = yearStorage * 5;
+
 
 // Network Traffic
 const readWriteRatio = 50;
@@ -44,9 +42,6 @@ const readsPerDay = readWriteRatio * writesPerDay;
 const readsPerSec = readWriteRatio * writesPerSec;
 const overallTraffic = (DAU * readsPerSec) * (DAU * writesPerSec);
 
-// Memory Cache
-const cacheMemory = readsPerDay * AFTRS * 0.2;
-const totalMemory = cacheMemory * Replication;
 
 // Bandwidth
 const incomingDataPerSec = writesPerSec * AFTRS;
@@ -76,6 +71,14 @@ dv.paragraph(`Writes per day = AUS / Monthly Estimation = ${writesPerDay.toFixed
 dv.paragraph(`Writes per second = Writes per day / 80,000 = ${writesPerSec.toFixed(6)}`);
 dv.paragraph(`Writes per user = AFTRS / AUS = ${writesPerUser.toFixed(2)}`);
 dv.paragraph("<br>");  
+```
+
+```dataviewjs
+// Long Term Estimates
+const Replication = dv.current().Replication;
+const dataReplication = monthlyEstimation * Replication;
+const yearStorage = 1 * 400 * dataReplication;
+const fiveYearStorage = yearStorage * 5;
 
 dv.paragraph(`#### Long term estimates`);
 dv.paragraph(`Data replication = Monthly Estimation * ${Replication} = ${dataReplication.toLocaleString()} bytes`);
@@ -91,6 +94,13 @@ dv.paragraph(`Reads per day = ${readWriteRatio} * Writes per day = ${readsPerDay
 dv.paragraph(`Reads per second = ${readWriteRatio} * Writes per second = ${readsPerSec.toFixed(6)}`);
 dv.paragraph(`Overall Traffic = (DAU * Reads per second) * (DAU * Writes per second) = ${overallTraffic.toLocaleString()}`);
 dv.paragraph("<br>");  
+
+
+
+// Memory Cache
+const cacheMemory = readsPerDay * AFTRS * 0.2;
+const totalMemory = cacheMemory * Replication;
+
 ```
 
 

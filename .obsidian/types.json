@@ -37,6 +37,8 @@
     "excalidraw-embeddable-theme": "text",
     "CPU Cores": "number",
     "replication": "number",
-    "DAU": "number"
+    "DAU": "number",
+    "MonthlyEstimation": "text",
+    "AUS": "text"
   }
 }
