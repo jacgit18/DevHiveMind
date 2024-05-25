@@ -3,14 +3,14 @@ AFRS_one: 300
 AFRS_two: 500
 AFRS_three: 0
 AUS: 20000
-DAU: 45
+DAU: 1000
 CPU Cores: 8
 Replication: 3
+ReadFeatOne: stuff
 WriteFeatOne: Comment
 WriteFeatTwo: Like
-WriteFeatThree: stuff
-Reads: 
-Writes:
+Reads: 50
+Writes: 1
 ---
 
 ```dataviewjs
@@ -18,9 +18,9 @@ Writes:
 const AFRS_one = dv.current().AFRS_one;
 const FeatOneName = dv.current().WriteFeatOne
 const AFRS_two = dv.current().AFRS_two;
-const FeatTwoName = dv.current().WriteFeatTwo
+const FeatTwoName = dv.current().WriteFeatTwo;
 const AFRS_three = dv.current().AFRS_three;
-const FeatThreeName = dv.current().WriteFeatThree
+const FeatThreeName = dv.current().ReadFeatOne;
 	  
 // Active Userbase Size
 let AUS = dv.current().AUS;
@@ -91,8 +91,8 @@ dv.paragraph("<br>");
 dv.paragraph(`### Network Traffic`);
 dv.paragraph(`*Read*:Write ratio = *50*:1 read-heavy ratio`);
 dv.paragraph("<br>");  
-dv.paragraph(`#### Reads`);
-dv.paragraph(`Reads per day = ${readWriteRatio} * Writes per day = ${readsPerDay.toLocaleString()}`);
+dv.paragraph(`##### Reads`);
+dv.paragraph(`Reads per day ${readWriteRatio} * Writes per day = ${readsPerDay.toLocaleString()}`);
 dv.paragraph(`Reads per second = ${readWriteRatio} * Writes per second = ${readsPerSec.toFixed(6)}`);
 dv.paragraph(`Overall Traffic = (DAU * Reads per second) * (DAU * Writes per second) = ${overallTraffic.toLocaleString()}`);
 dv.paragraph("<br>");  
