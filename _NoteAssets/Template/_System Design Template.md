@@ -14,6 +14,7 @@ dg-publish:
 ---
 Design...
 ## Userbase
+- 
 
 ## Requirements Gathering
 
@@ -32,15 +33,15 @@ Design...
 
 ##### Table 1
 
-|     | Region       |
-| --- | ------------ |
-| PK  | RegionID     |
-| FK  | UserID       |
-| FK  | RandomID     |
-|     | Name         |
-|     | Phone number |
-|     | ...          |
-|     | ...          |
+|     | Region       | Type         |
+| --- | ------------ | ------------ |
+| PK  | RegionID     |              |
+| FK  | UserID       |              |
+| FK  | RandomID     |              |
+|     | Name         | Varchar(255) |
+|     | Phone number | Varchar(255) |
+|     | ...          |              |
+|     | ...          |              |
 
 Try Data View [[Calculation Template]]
 
@@ -97,6 +98,8 @@ Reads per day = *50* \* Write per day
 Reads per sec = *50* \* Write per sec
 
 Overall Traffic: (DAU * read per sec) * (DAU * writes per sec)
+
+**maybe consider other Request type**
 
 #### Memory Cache
 
