@@ -16,8 +16,8 @@ AUS: 0
 CPU Cores: 0
 DAU: 0
 Replication: 0
-WriteFeatOne: 
-WriteFeatTwo:
+WriteFeatOne: Feature Name Placeholder
+WriteFeatTwo: Feature Name Placeholder
 ---
 Design statement Placeholder
 
@@ -27,14 +27,15 @@ Design statement Placeholder
 ## Requirements Gathering
 
 #### Functional Requirements
+##### Required
 - 
 
-##### Nice to Haves
+##### Optional
 - 
 
 #### Non Requirements Functional
 - Arch, performance, traffic, logging, monitor, etc.. 
-- Brief identification and primer will go more in-depth. 
+- Brief identification and primer will go more in-depth later in interview. 
 
 
 ### Logical Data Model

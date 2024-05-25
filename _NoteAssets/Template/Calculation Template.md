@@ -56,19 +56,17 @@ const incomingDataPerSec = writesPerSec * AFTRS;
 const outgoingDataPerSec = readsPerSec * AFTRS;
 
 
-dv.paragraph(`### Capacity Estimation`);
-dv.paragraph(`> **Lets say we have 2:1 ratio of feature A Request to feature B Request**`);
 dv.paragraph(`#### Storage`);
 dv.paragraph(`Lets say are total active user are **${AUS}**`);
 dv.paragraph("<br>");  
-dv.paragraph(`#### Writes`);
+dv.paragraph(`##### Writes`);
 dv.paragraph(`As a users we want a feature to:`);
 dv.paragraph(`- Post **${FeatOneName}** feature with a average size of **${AFRS_one}** bytes`);
 dv.paragraph(`- Post **${FeatTwoName}** feature with a average size of **${AFRS_two}** bytes`);
 
 dv.paragraph("<br>");  
 
-dv.paragraph(`#### Data Size`);
+dv.paragraph(`##### Data Size`);
 dv.paragraph(`AFRS One is about ${AFRS_one} bytes (adjusted for metadata)`);
 dv.paragraph(`AFRS Two is about ${AFRS_two} bytes (adjusted for metadata)`);
 dv.paragraph(`AFTRS = AFRS One + AFRS Two = ${AFTRS} bytes`);
