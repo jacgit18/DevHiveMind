@@ -24,10 +24,12 @@ adult level books
 ## Requirements Gathering
 
 #### Functional Requirements 
-*   Add books to their collection with details like title, author, and genre.
-*   Search for books in their collection by title or author.
-*   Organize books into categories like "Want to Read," "Currently Reading," and "Finished."
-*   Mark books as finished and rate them.
+* Add books to their collection with details like title, author, and genre.
+* Search for books in their collection by title or author.
+* Organize books into categories like "Want to Read," "Currently Reading," and "Finished."
+* Mark books as finished and rate them.
+
+Nice to haves 
 
 #### Non Requirements Functional
 check age

@@ -17,10 +17,14 @@ Design...
 
 ## Requirements Gathering
 
-#### Functional Requirements 
+#### Functional Requirements
+- 
+
+##### Nice to Haves
+- 
 
 #### Non Requirements Functional
-
+- 
 
 
 
