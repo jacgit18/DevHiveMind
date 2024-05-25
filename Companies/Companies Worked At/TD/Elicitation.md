@@ -7,7 +7,7 @@ author:
 Purpose: This documentation discusses best practices to have a productive meeting along with what line of question to ask.
 Status: Done
 Started: 
-EditDate: 
+EditDate: 2024-05-25
 Relates: 
 dg-publish:
 ---
@@ -15,7 +15,7 @@ dg-publish:
 
 As a Business Systems Analyst (BSA), engaging in purposeful conversations is critical. Ensure a structured approach by adhering to the following sequence:
 
-SMART - Specific
+SMART - Specific, Measured, Action Oriented, Relevant Contextual, Time-bound
 
 1. **Ask Questions in this Order:**
 
