@@ -12,7 +12,8 @@ Peer Reviewed: 0
 excalidraw-open-md: true
 dg-publish:
 ---
-Design...
+Design statement Placeholder
+
 ## Userbase
 - 
 
@@ -29,9 +30,9 @@ Design...
 
 
 
-### Schema
+### Logical Data Model
 
-##### Table 1
+##### Table Definition 1
 
 |     | Region       | Type         |
 | --- | ------------ | ------------ |
@@ -42,6 +43,25 @@ Design...
 |     | Phone number | Varchar(255) |
 |     | ...          |              |
 |     | ...          |              |
+##### Table Definition 2
+
+
+
+##### Rough Schema Table  
+**Table Query for debugging schema overall structure**
+
+| bookID | bookTitle | bookGenre | bookAuthor | categories | OverallRating |
+| ------ | --------- | --------- | ---------- | ---------- | ------------- |
+| 1      | tobe      | fafa      | tony       | horror     | 4             |
+|        |           |           |            |            |               |
+|        |           |           |            |            |               |
+|        |           |           |            |            |               |
+|        |           |           |            |            |               |
+|        |           |           |            |            |               |
+|        |           |           |            |            |               |
+
+
+
 
 Try Data View [[Calculation Template]]
 

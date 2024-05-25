@@ -53,14 +53,14 @@ bookRaitingating
 
 ### Schema
 
-##### Table 1
+##### Table Definition 1
 
 |     | User    |
 | --- | ------- |
 | PK  | userID  |
 |     | addBook |
 |     |         |
-##### Table 2
+##### Table Definition 2
 
 |     | Book          | Type    |
 | --- | ------------- | ------- |
@@ -72,7 +72,20 @@ bookRaitingating
 |     | sub category  |         |
 |     | OverallRating |         |
 
-1, dTwilight, four, someOne, 
+###### Table Schema
+
+| bookID | bookTitle | bookGenre | bookAuthor | categories | OverallRating |
+| ------ | --------- | --------- | ---------- | ---------- | ------------- |
+| 1      | tobe      | fafa      | tony       | horror     | 4             |
+|        |           |           |            |            |               |
+|        |           |           |            |            |               |
+|        |           |           |            |            |               |
+|        |           |           |            |            |               |
+|        |           |           |            |            |               |
+|        |           |           |            |            |               |
+
+
+
 
 ##### Table 3
 
