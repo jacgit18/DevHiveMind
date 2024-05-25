@@ -21,7 +21,9 @@ const AFRS_two = dv.current().AFRS_two;
 const FeatTwoName = dv.current().WriteFeatTwo;
 const AFRS_three = dv.current().AFRS_three;
 const FeatThreeName = dv.current().ReadFeatOne;
-	  
+const ReadRatio = dv.current().Reads;  
+const WriteRatio = dv.current().Writes;  
+
 // Active Userbase Size
 let AUS = dv.current().AUS;
 // Daily Active Users 
@@ -48,9 +50,10 @@ const yearStorage = 1 * 400 * dataReplication;
 const fiveYearStorage = yearStorage * 5;
 
 // Network Traffic
-const readWriteRatio = 50;
-const readsPerDay = readWriteRatio * writesPerDay;
-const readsPerSec = readWriteRatio * writesPerSec;
+const readsPerMonth = ReadRatio * monthlyEstimation
+
+const readsPerDay = ReadRatio * writesPerDay;
+const readsPerSec = ReadRatio * writesPerSec;
 const overallTraffic = (DAU * readsPerSec) * (DAU * writesPerSec);
 
 // Memory Cache
@@ -89,11 +92,12 @@ dv.paragraph(`Total storage for 5 Years **${fiveYearStorage.toLocaleString()}** 
 dv.paragraph("<br>");  
 
 dv.paragraph(`### Network Traffic`);
-dv.paragraph(`*Read*:Write ratio = *50*:1 read-heavy ratio`);
+dv.paragraph(`*Read*:Write ratio = *${ReadRatio}*:${WriteRatio} read-heavy ratio`);
 dv.paragraph("<br>");  
 dv.paragraph(`##### Reads`);
-dv.paragraph(`Reads per day ${readWriteRatio} * Writes per day = ${readsPerDay.toLocaleString()}`);
-dv.paragraph(`Reads per second = ${readWriteRatio} * Writes per second = ${readsPerSec.toFixed(6)}`);
+dv.paragraph(`Reads per month **${readsPerMonth.toLocaleString()}** bytes`);
+dv.paragraph(`Reads per day **${readsPerDay.toLocaleString()}** bytes`);
+dv.paragraph(`Reads per second **${readsPerSec.toFixed(6)}**`);
 dv.paragraph(`Overall Traffic = (DAU * Reads per second) * (DAU * Writes per second) = ${overallTraffic.toLocaleString()}`);
 dv.paragraph("<br>");  
 
