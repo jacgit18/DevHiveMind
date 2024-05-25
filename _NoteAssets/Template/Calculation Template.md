@@ -66,17 +66,16 @@ dv.paragraph(`- Post **${FeatTwoName}** feature with a average size of **${AFRS_
 
 dv.paragraph(`The total write request size including and accounting for meta data is **${AFTRS}** bytes`);
 
+dv.paragraph("<br>");  
 dv.paragraph(`The Monthly Estimation is **${monthlyEstimation.toLocaleString()}** bytes`);
 dv.paragraph("<br>");  
 
-dv.paragraph(`#### Daily estimates`);
-dv.paragraph(`Writes per day = AUS / Monthly Estimation = ${writesPerDay.toFixed(2)}`);
-dv.paragraph(`Writes per second = Writes per day / 80,000 = ${writesPerSec.toFixed(6)}`);
-dv.paragraph(`Writes per user = AFTRS / AUS = ${writesPerUser.toFixed(2)}`);
+dv.paragraph(`Writes per day ${writesPerDay}`);
+dv.paragraph(`Writes per second ${writesPerSec}`);
+dv.paragraph(`Writes per user ${writesPerUser}`);
 dv.paragraph("<br>");  
 
-dv.paragraph(`#### Long term estimates`);
-dv.paragraph(`Data replication = Monthly Estimation * ${Replication} = ${dataReplication.toLocaleString()} bytes`);
+dv.paragraph(`Total storage needed after Data replication **${dataReplication.toLocaleString()}** bytes`);
 dv.paragraph(`Year Storage = 1 * 400 * Data Replication = ${yearStorage.toLocaleString()} bytes`);
 dv.paragraph(`5 Year Storage = Year Storage * 5 = ${fiveYearStorage.toLocaleString()} bytes`);
 dv.paragraph("<br>");  
