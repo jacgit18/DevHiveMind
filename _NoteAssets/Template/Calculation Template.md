@@ -33,7 +33,7 @@ const monthlyEstimation = 30 * AFTRS * AUS;
 
 // Daily Estimates
 const writesPerDay = AUS / monthlyEstimation;
-const writesPerSec = writesPerDay / 80000;
+const writesPerSec = writesPerDay / 86400;
 const writesPerUser = AFTRS / AUS;
 
 // Long Term Estimates
