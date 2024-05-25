@@ -22,7 +22,7 @@ adult level books
 
 
 ## Requirements Gathering
-
+what part of the system frontend, backend, analytics, data pipeline, etc... 
 #### Functional Requirements 
 * Add books to their collection with details like title, author, and genre.
 * Search for books in their collection by title or author.
@@ -86,9 +86,9 @@ bookRaitingating
 |     | rating         |
 
 
-alot of writes go away from SQL
 
-what part of the system front backend, analytics 
+
+
 ### Capacity Estimation
 **AVG** - Average
 **AFRS** - Average Feature Request Size by Bytes
