@@ -52,50 +52,65 @@ const incomingDataPerSec = writesPerSec * AFTRS;
 const outgoingDataPerSec = readsPerSec * AFTRS;
 
 
-// Creating the table as a Markdown string 
-let table = ` | Metric | Value | |------------------|--------------------------| | Reads per day | ${readsPerDay.toLocaleString()} | | Reads per second | ${readsPerSec.toFixed(6)} | | Overall Traffic | ${overallTraffic.toLocaleString()} | `;
 
 dv.paragraph(`### Storage`);
 dv.paragraph(`AUS = **${AUS}**`);
+dv.paragraph("<br>");  
 dv.paragraph(`#### Writes`);
 dv.paragraph(`Post ... = ...`);
 
-dv.paragraph("<br>");  // Adds another empty line
+dv.paragraph("<br>");  
 
 dv.paragraph(`#### Data Size`);
 dv.paragraph(`AFRS One is about ${AFRS_one} bytes (adjusted for metadata)`);
 dv.paragraph(`AFRS Two is about ${AFRS_two} bytes (adjusted for metadata)`);
 dv.paragraph(`AFTRS = AFRS One + AFRS Two = ${AFTRS} bytes`);
 
+dv.paragraph("<br>");  
 dv.paragraph(`Monthly Estimation = 30 * AFTRS * AUS = ${monthlyEstimation.toLocaleString()} bytes`);
+dv.paragraph("<br>");  
 
 dv.paragraph(`#### Daily estimates`);
 dv.paragraph(`Writes per day = AUS / Monthly Estimation = ${writesPerDay.toFixed(2)}`);
 dv.paragraph(`Writes per second = Writes per day / 80,000 = ${writesPerSec.toFixed(6)}`);
 dv.paragraph(`Writes per user = AFTRS / AUS = ${writesPerUser.toFixed(2)}`);
+dv.paragraph("<br>");  
 
 dv.paragraph(`#### Long term estimates`);
 dv.paragraph(`Data replication = Monthly Estimation * ${replication} = ${dataReplication.toLocaleString()} bytes`);
 dv.paragraph(`Year Storage = 1 * 400 * Data Replication = ${yearStorage.toLocaleString()} bytes`);
 dv.paragraph(`5 Year Storage = Year Storage * 5 = ${fiveYearStorage.toLocaleString()} bytes`);
+dv.paragraph("<br>");  
 
 dv.paragraph(`### Network Traffic`);
 dv.paragraph(`Read:Write ratio = 50:1 read-heavy ratio`);
-
+dv.paragraph("<br>");  
 dv.paragraph(`#### Reads`);
 dv.paragraph(`Reads per day = ${readWriteRatio} * Writes per day = ${readsPerDay.toLocaleString()}`);
 dv.paragraph(`Reads per second = ${readWriteRatio} * Writes per second = ${readsPerSec.toFixed(6)}`);
 dv.paragraph(`Overall Traffic = (DAU * Reads per second) * (DAU * Writes per second) = ${overallTraffic.toLocaleString()}`);
+dv.paragraph("<br>");  
 
 dv.paragraph(`### Memory Cache`);
 dv.paragraph(`Cache Memory = Reads per day * AFTRS * 20% = ${cacheMemory.toLocaleString()} bytes`);
 dv.paragraph(`Total Memory = Cache Memory * ${replication} = ${totalMemory.toLocaleString()} bytes`);
+dv.paragraph("<br>");  
 
 dv.paragraph(`### Bandwidth`);
 dv.paragraph(`Incoming Data per second (Write) = Writes per second * AFTRS = ${incomingDataPerSec.toLocaleString()} bytes/sec`);
 dv.paragraph(`Outgoing Data per second (Read) = Reads per second * AFTRS = ${outgoingDataPerSec.toLocaleString()} bytes/sec`);
+dv.paragraph("<br>");  
 
 dv.paragraph(`### App Server Estimations`);
 dv.paragraph(`CPU physical cores = ...`);
-dv.paragraph(`RPS for single server = # CPU physical cores / 0.5 or half a sec = ...`);
+dv.paragraph(`Request Per Second for a single server is = # CPU physical cores / 0.5 or half a sec = ...`);
 dv.paragraph(`Number of Servers = (reads per second) / (RPS a single server can handle) = ... servers`);
+```
+
+
+
+```dataviewjs
+// readOnly need to store in vairiable
+dv.current().AUS = 10;
+dv.paragraph(`AUS is read only thats why no change **${dv.current().AUS}**`);
+```
