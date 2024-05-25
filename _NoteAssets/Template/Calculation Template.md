@@ -32,9 +32,9 @@ const AFTRS = AFRS_one + AFRS_two;
 const monthlyEstimation = 30 * AFTRS * AUS;
 
 // Daily Estimates
-const writesPerDay = AUS / monthlyEstimation;
-const writesPerSec = writesPerDay / 86400;
-const writesPerUser = AFTRS / AUS;
+const writesPerDay =  monthlyEstimation / AUS ;
+const writesPerSec = 86400 / writesPerDay ;
+const writesPerUser =  AUS / AFTRS;
 
 // Long Term Estimates
 const dataReplication = monthlyEstimation * Replication;
@@ -66,18 +66,18 @@ dv.paragraph(`- Post **${FeatTwoName}** feature with a average size of **${AFRS_
 
 dv.paragraph(`The total write request size including and accounting for meta data is **${AFTRS}** bytes`);
 
-dv.paragraph("<br>");  
-dv.paragraph(`The Monthly Estimation is **${monthlyEstimation.toLocaleString()}** bytes`);
+
 dv.paragraph("<br>");  
 
-dv.paragraph(`Writes per day ${writesPerDay}`);
-dv.paragraph(`Writes per second ${writesPerSec}`);
-dv.paragraph(`Writes per user ${writesPerUser}`);
+dv.paragraph(`Writes per month **${monthlyEstimation.toLocaleString()}** bytes`);
+dv.paragraph(`Writes per day **${writesPerDay.toLocaleString()}** bytes`);
+dv.paragraph(`Writes per second **${writesPerSec}**`);
+dv.paragraph(`Writes per user **${writesPerUser}**`);
 dv.paragraph("<br>");  
 
 dv.paragraph(`Total storage needed after Data replication **${dataReplication.toLocaleString()}** bytes`);
-dv.paragraph(`Year Storage = 1 * 400 * Data Replication = ${yearStorage.toLocaleString()} bytes`);
-dv.paragraph(`5 Year Storage = Year Storage * 5 = ${fiveYearStorage.toLocaleString()} bytes`);
+dv.paragraph(`Total Storage for a year **${yearStorage.toLocaleString()}** bytes`);
+dv.paragraph(`Total storage for 5 Years **${fiveYearStorage.toLocaleString()}** bytes`);
 dv.paragraph("<br>");  
 
 dv.paragraph(`### Network Traffic`);
