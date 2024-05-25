@@ -17,7 +17,7 @@ const AFRS_two = dv.current().AFRS_two;
 const FeatTwoName = dv.current().WriteFeatTwo
 	  
 // Active Userbase Size
-let AUS = dv.current().AUS.toLocaleString();;
+let AUS = dv.current().AUS;
 // Daily Active Users 
 const DAU = dv.current().DAU;
 
@@ -57,22 +57,16 @@ const outgoingDataPerSec = readsPerSec * AFTRS;
 
 
 dv.paragraph(`#### Storage`);
-dv.paragraph(`Lets say are total active user are **${AUS}**`);
+dv.paragraph(`Lets say are total active user are **${AUS.toLocaleString()}**`);
 dv.paragraph("<br>");  
 dv.paragraph(`##### Writes`);
 dv.paragraph(`As a users we want a feature to:`);
 dv.paragraph(`- Post **${FeatOneName}** feature with a average size of **${AFRS_one}** bytes`);
 dv.paragraph(`- Post **${FeatTwoName}** feature with a average size of **${AFRS_two}** bytes`);
 
-dv.paragraph("<br>");  
+dv.paragraph(`The total write request size including and accounting for meta data is **${AFTRS}** bytes`);
 
-dv.paragraph(`##### Data Size`);
-dv.paragraph(`AFRS One is about ${AFRS_one} bytes (adjusted for metadata)`);
-dv.paragraph(`AFRS Two is about ${AFRS_two} bytes (adjusted for metadata)`);
-dv.paragraph(`AFTRS = AFRS One + AFRS Two = ${AFTRS} bytes`);
-
-dv.paragraph("<br>");  
-dv.paragraph(`Monthly Estimation = 30 * AFTRS * AUS = ${monthlyEstimation.toLocaleString()} bytes`);
+dv.paragraph(`The Monthly Estimation is **${monthlyEstimation.toLocaleString()}** bytes`);
 dv.paragraph("<br>");  
 
 dv.paragraph(`#### Daily estimates`);

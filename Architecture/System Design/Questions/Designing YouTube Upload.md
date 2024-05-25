@@ -264,8 +264,8 @@ gPBXehTo: [[Architecture/System Design/Questions/Designing YouTube Upload.md#Tab
 	"elements": [
 		{
 			"type": "embeddable",
-			"version": 779,
-			"versionNonce": 712004237,
+			"version": 780,
+			"versionNonce": 712004238,
 			"index": "a0",
 			"isDeleted": false,
 			"id": "cqasGqqJ",
@@ -309,8 +309,8 @@ gPBXehTo: [[Architecture/System Design/Questions/Designing YouTube Upload.md#Tab
 		},
 		{
 			"type": "embeddable",
-			"version": 268,
-			"versionNonce": 828125095,
+			"version": 269,
+			"versionNonce": 828125096,
 			"index": "a1",
 			"isDeleted": false,
 			"id": "Mf9OBUwN",
@@ -396,8 +396,8 @@ gPBXehTo: [[Architecture/System Design/Questions/Designing YouTube Upload.md#Tab
 		},
 		{
 			"type": "embeddable",
-			"version": 109,
-			"versionNonce": 937489159,
+			"version": 110,
+			"versionNonce": 937489160,
 			"index": "a3",
 			"isDeleted": false,
 			"id": "gPBXehTo",
@@ -500,10 +500,10 @@ gPBXehTo: [[Architecture/System Design/Questions/Designing YouTube Upload.md#Tab
 		"currentItemTextAlign": "left",
 		"currentItemStartArrowhead": null,
 		"currentItemEndArrowhead": "arrow",
-		"scrollX": 850.0840722842543,
-		"scrollY": 1269.533917786162,
+		"scrollX": 924.4223075783718,
+		"scrollY": 2532.1656579822406,
 		"zoom": {
-			"value": 0.8500000000000001
+			"value": 0.30000000000000004
 		},
 		"currentItemRoundness": "round",
 		"gridSize": null,
