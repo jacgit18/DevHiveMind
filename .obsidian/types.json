@@ -39,6 +39,6 @@
     "replication": "number",
     "DAU": "number",
     "MonthlyEstimation": "text",
-    "AUS": "text"
+    "AUS": "number"
   }
 }

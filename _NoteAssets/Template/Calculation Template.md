@@ -6,21 +6,24 @@ DAU: 45
 CPU Cores: 8
 Replication: 3
 WriteFeatOne: Comment
-WriteFeatTwo:
+WriteFeatTwo: Like
 ---
 
 ```dataviewjs
 // Average Feature Request Size by Bytes
 const AFRS_one = dv.current().AFRS_one;
+const FeatOneName = dv.current().WriteFeatOne
 const AFRS_two = dv.current().AFRS_two;
+const FeatTwoName = dv.current().WriteFeatTwo
+	  
 // Active Userbase Size
-let AUS = dv.current().AUS;
+let AUS = dv.current().AUS.toLocaleString();;
 // Daily Active Users 
 const DAU = dv.current().DAU;
 
 // AUS = 234 // able to reasign 
 
-const replication = dv.current().Replication;
+const Replication = dv.current().Replication;
 
 // Average Feature Total Request Size Per User
 const AFTRS = AFRS_one + AFRS_two;
@@ -55,10 +58,10 @@ const outgoingDataPerSec = readsPerSec * AFTRS;
 
 
 dv.paragraph(`### Storage`);
-dv.paragraph(`AUS = **${AUS}**`);
+dv.paragraph(`Total Active User are **${AUS}**`);
 dv.paragraph("<br>");  
 dv.paragraph(`#### Writes`);
-dv.paragraph(`Post ... = ...`);
+dv.paragraph(`Post **${FeatOneName}** feature with a size of average size of  **${AFRS_one}** bytes`);
 
 dv.paragraph("<br>");  
 
