@@ -67,15 +67,12 @@ When designing a database schema, validate it through practical testing by creat
 |          |            |          |              |
 |          |            |          |              |
 
-
-Try Data View [[Calculation Template]]
-
 ### Capacity Estimation
 **AVG** - Average
-**AFRS** - Average Feature Request Size by Bytes
-**AFTRS** - Average Feature Total Req Size Per User
-**AUS** - Active Userbase Size  
-**DAU** - Daily Active Users 
+**AFRS** - 
+
+**AUS** -   
+**DAU** - 
 **RPS** - Request Per Second
 
 > **Lets say we have 2:1 ratio of feature A Request to feature B Request**

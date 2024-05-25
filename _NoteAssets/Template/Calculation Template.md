@@ -1,30 +1,97 @@
 ---
-
-user_daily_bytes: 300
-number_of_days: 30
-number_of_users: 20000
-
+AFRS_one: 300
+AFRS_two: 500
+AUS: 20000
+DAU: "45"
+replication: "3"
 ---
 
-```dataviewjs
-  dv.paragraph(dv.current().number_of_users);
-```
-
 
 ```dataviewjs
-let dailyBytes = dv.current().user_daily_bytes;
-let days = dv.current().number_of_days;
-let users = dv.current().number_of_users;
-
-if (dailyBytes && days && users) {
-    let totalBytes = dailyBytes * days * users;
-    let totalMB = totalBytes / 1048576;
-
-    dv.paragraph(`**Total Data Usage: ${totalBytes.toLocaleString()} bytes**`);
-    dv.paragraph(`**Total Data Usage: ${totalMB.toFixed(2)} MB**`);
-} else {
-    dv.paragraph("One or more variables are missing or not defined correctly.");
-}
+  dv.paragraph(dv.current().AUS);
 ```
 
+```dataviewjs
+// Average Feature Request Size by Bytes
+const AFRS_one = dv.current().AFRS_one;
+const AFRS_two = dv.current().AFRS_two;
+// Active Userbase Size
+const AUS = dv.current().AUS;
+// Daily Active Users 
+const DAU = dv.current().DAU;
 
+
+const replication = dv.current().replication;
+
+// Average Feature Total Request Size Per User
+const AFTRS = AFRS_one + AFRS_two;
+
+// Monthly Estimation
+const monthlyEstimation = 30 * AFTRS * AUS;
+
+// Daily Estimates
+const writesPerDay = AUS / monthlyEstimation;
+const writesPerSec = writesPerDay / 80000;
+const writesPerUser = AFTRS / AUS;
+
+// Long Term Estimates
+const dataReplication = monthlyEstimation * replication;
+const yearStorage = 1 * 400 * dataReplication;
+const fiveYearStorage = yearStorage * 5;
+
+// Network Traffic
+const readWriteRatio = 50;
+const readsPerDay = readWriteRatio * writesPerDay;
+const readsPerSec = readWriteRatio * writesPerSec;
+const overallTraffic = (DAU * readsPerSec) * (DAU * writesPerSec);
+
+// Memory Cache
+const cacheMemory = readsPerDay * AFTRS * 0.2;
+const totalMemory = cacheMemory * replication_factor;
+
+// Bandwidth
+const incomingDataPerSec = writesPerSec * AFTRS;
+const outgoingDataPerSec = readsPerSec * AFTRS;
+
+dv.paragraph(`### Storage`);
+dv.paragraph(`AUS = ${AUS}`);
+dv.paragraph(`#### Writes`);
+dv.paragraph(`Post ... = ...`);
+
+dv.paragraph(`#### Data Size`);
+dv.paragraph(`AFRS One is about ${AFRS_one} bytes (adjusted for metadata)`);
+dv.paragraph(`AFRS Two is about ${AFRS_two} bytes (adjusted for metadata)`);
+dv.paragraph(`AFTRS = AFRS One + AFRS Two = ${AFTRS} bytes`);
+
+dv.paragraph(`Monthly Estimation = 30 * AFTRS * AUS = ${monthlyEstimation.toLocaleString()} bytes`);
+
+dv.paragraph(`#### Daily estimates`);
+dv.paragraph(`Writes per day = AUS / Monthly Estimation = ${writesPerDay.toFixed(2)}`);
+dv.paragraph(`Writes per second = Writes per day / 80,000 = ${writesPerSec.toFixed(6)}`);
+dv.paragraph(`Writes per user = AFTRS / AUS = ${writesPerUser.toFixed(2)}`);
+
+dv.paragraph(`#### Long term estimates`);
+dv.paragraph(`Data replication = Monthly Estimation * ${replication} = ${dataReplication.toLocaleString()} bytes`);
+dv.paragraph(`Year Storage = 1 * 400 * Data Replication = ${yearStorage.toLocaleString()} bytes`);
+dv.paragraph(`5 Year Storage = Year Storage * 5 = ${fiveYearStorage.toLocaleString()} bytes`);
+
+dv.paragraph(`### Network Traffic`);
+dv.paragraph(`Read:Write ratio = 50:1 read-heavy ratio`);
+
+dv.paragraph(`#### Reads`);
+dv.paragraph(`Reads per day = ${readWriteRatio} * Writes per day = ${readsPerDay.toLocaleString()}`);
+dv.paragraph(`Reads per second = ${readWriteRatio} * Writes per second = ${readsPerSec.toFixed(6)}`);
+dv.paragraph(`Overall Traffic = (DAU * Reads per second) * (DAU * Writes per second) = ${overallTraffic.toLocaleString()}`);
+
+dv.paragraph(`### Memory Cache`);
+dv.paragraph(`Cache Memory = Reads per day * AFTRS * 20% = ${cacheMemory.toLocaleString()} bytes`);
+dv.paragraph(`Total Memory = Cache Memory * ${replication_factor} = ${totalMemory.toLocaleString()} bytes`);
+
+dv.paragraph(`### Bandwidth`);
+dv.paragraph(`Incoming Data per second (Write) = Writes per second * AFTRS = ${incomingDataPerSec.toLocaleString()} bytes/sec`);
+dv.paragraph(`Outgoing Data per second (Read) = Reads per second * AFTRS = ${outgoingDataPerSec.toLocaleString()} bytes/sec`);
+
+dv.paragraph(`### App Server Estimations`);
+dv.paragraph(`CPU physical cores = ...`);
+dv.paragraph(`RPS for single server = # CPU physical cores / 0.5 or half a sec = ...`);
+dv.paragraph(`Number of Servers = (reads per second) / (RPS a single server can handle) = ... servers`);
