@@ -26,8 +26,8 @@ Design statement Placeholder
 - 
 
 #### Non Requirements Functional
-- 
-
+- Arch, performance, traffic, logging, monitor, etc.. 
+- Brief identification and primer will go more in-depth. 
 
 
 ### Logical Data Model

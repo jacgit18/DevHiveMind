@@ -84,8 +84,12 @@ In this approach, you would store categories as a comma-separated list in the `c
 For example, if a book has categories "Fiction", "Thriller", and "Mystery", you would insert it like this:  
   
 ```sql  
+-- Insert the book into the Book table
 INSERT INTO Book (bookTitle, bookGenre, bookAuthor, categories, subCategory, OverallRating)  
-VALUES ('The Da Vinci Code', 'Thriller', 'Dan Brown', 'Fiction, Thriller, Mystery', 'Suspense', 4.5);  
+VALUES ('The Da Vinci Code', 'Thriller', 'Dan Brown', 'Fiction, Thriller, Mystery', 'Suspense', 4.5);
+
+-- Select books where 'Thriller' is one of the categories
+SELECT * FROM Book WHERE FIND_IN_SET('Thriller', categories);
 ```
 
   
