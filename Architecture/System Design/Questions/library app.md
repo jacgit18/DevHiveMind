@@ -61,6 +61,11 @@ bookRaitingating
 |     | addBook |
 |     |         |
 ##### Table Definition 2
+If you have multiple categories for a book, you can handle it by either:
+
+  
+1. Storing categories as a comma-separated list in a single column.  
+2. Creating a separate table to store categories and then linking books to categories through a many-to-many relationship.
 
 |     | Book          | Type    |
 | --- | ------------- | ------- |
@@ -71,6 +76,65 @@ bookRaitingating
 |     | categories    | varChar |
 |     | sub category  |         |
 |     | OverallRating |         |
+
+**Approach 1: Storing categories as a comma-separated list**  
+  
+In this approach, you would store categories as a comma-separated list in the `categories` column of the Book table.  
+  
+For example, if a book has categories "Fiction", "Thriller", and "Mystery", you would insert it like this:  
+  
+```sql  
+INSERT INTO Book (bookTitle, bookGenre, bookAuthor, categories, subCategory, OverallRating)  
+VALUES ('The Da Vinci Code', 'Thriller', 'Dan Brown', 'Fiction, Thriller, Mystery', 'Suspense', 4.5);  
+```
+
+  
+**Approach 2: Creating a separate table for categories**  
+  
+In this approach, you would create a separate table to store categories and then link books to categories through a many-to-many relationship using a junction table.  
+  
+First, create a Categories table:  
+  
+```sql  
+CREATE TABLE Categories (  
+categoryID INT PRIMARY KEY AUTO_INCREMENT,  
+categoryName VARCHAR(255)  
+);  
+```  
+  
+Then, create a junction table to link books to categories:  
+  
+```sql  
+CREATE TABLE BookCategories (  
+bookID INT,  
+categoryID INT,  
+PRIMARY KEY (bookID, categoryID),  
+FOREIGN KEY (bookID) REFERENCES Book(bookID),  
+FOREIGN KEY (categoryID) REFERENCES Categories(categoryID)  
+);  
+```  
+  
+When inserting a book with multiple categories, you would first insert the categories into the Categories table if they don't already exist, and then insert the relationships into the BookCategories table.  
+  
+For example:  
+  
+1. Insert categories:  
+```sql  
+INSERT INTO Categories (categoryName) VALUES ('Fiction'), ('Thriller'), ('Mystery');  
+```  
+  
+2. Insert book and link it to categories:  
+```sql  
+INSERT INTO Book (bookTitle, bookGenre, bookAuthor, subCategory, OverallRating)  
+VALUES ('The Da Vinci Code', 'Thriller', 'Dan Brown', 'Suspense', 4.5);  
+  
+INSERT INTO BookCategories (bookID, categoryID) VALUES  
+(LAST_INSERT_ID(), 1), -- Fiction  
+(LAST_INSERT_ID(), 2), -- Thriller  
+(LAST_INSERT_ID(), 3); -- Mystery  
+```  
+  
+Approach 2 provides better normalization and allows for easier querying and management of categories. However, it requires more complex queries for insertion and retrieval.
 
 ###### Table Schema
 

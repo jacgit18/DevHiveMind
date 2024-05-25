@@ -32,23 +32,23 @@ Design statement Placeholder
 
 ### Logical Data Model
 
-##### Table Definition 1
+##### Entity Definition Table 1
 
 |     | Region       | Type         |
 | --- | ------------ | ------------ |
-| PK  | RegionID     |              |
-| FK  | UserID       |              |
-| FK  | RandomID     |              |
+| PK  | RegionID     | INT          |
+| FK  | UserID       | INT          |
+| FK  | RandomID     | INT          |
 |     | Name         | Varchar(255) |
 |     | Phone number | Varchar(255) |
+|     | ...          | [datatype]   |
 |     | ...          |              |
-|     | ...          |              |
-##### Table Definition 2
+##### Entity Definition Table 2
 
 
 
 ##### Rough Schema Table  
-**Table Query for debugging schema overall structure**
+**Table for debugging overall schema using Queries **
 
 | bookID | bookTitle | bookGenre | bookAuthor | categories | OverallRating |
 | ------ | --------- | --------- | ---------- | ---------- | ------------- |
