@@ -17,7 +17,6 @@ AFRS_two: 0
 AFRS_three: 0
 AUS: 0
 CPU_Cores: 0
-DAU: 0
 Reads: 50
 ReadFeatOne: Name Placeholder
 Replication: 0
@@ -177,9 +176,9 @@ dv.paragraph(`Overall traffic per month: **${overallMonthlyTrafficReadable}**`);
 dv.paragraph(`Overall traffic per day: **${overallTrafficReadable}**`);
 dv.paragraph("<br>");
 dv.paragraph(`### Memory Cache`);
-dv.paragraph(`Cache memory needed: **${cacheMemoryReadable}**`);
+dv.paragraph(`Cache memory needed per day: **${cacheMemoryReadable}**`);
 dv.paragraph("<br>");
-dv.paragraph(`Total memory including replication: **${totalMemoryReadable}**`);
+dv.paragraph(`Total memory per day including replication: **${totalMemoryReadable}**`);
 dv.paragraph("<br>");
 dv.paragraph(`### Bandwidth`);
 dv.paragraph(`Incoming data writes per second: **${incomingDataPerSecReadable}**`);

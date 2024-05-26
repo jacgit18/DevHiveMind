@@ -17,13 +17,12 @@ AFRS_two: 0
 AFRS_three: 0
 AUS: 0
 CPU_Cores: 0
-DAU: 0
 Reads: 50
-ReadFeatOne: stuff
+ReadFeatOne: Name Placeholder
 Replication: 0
 Writes: 1
-WriteFeatOne: Feature Name Placeholder
-WriteFeatTwo: Feature Name Placeholder
+WriteFeatOne: Name Placeholder
+WriteFeatTwo: Name Placeholder
 ---
 Design statement Placeholder
 
