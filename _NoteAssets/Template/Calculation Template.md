@@ -5,12 +5,12 @@ AFRS_three: 0
 AUS: 20000
 DAU: 1000
 CPU_Cores: 8
+Reads: 50
 Replication: 3
 ReadFeatOne: stuff
+Writes: 1
 WriteFeatOne: Comment
 WriteFeatTwo: Like
-Reads: 50
-Writes: 1
 ---
 
 ```dataviewjs
@@ -62,6 +62,10 @@ const overallTraffic = (DAU * readsPerSec) * (DAU * writesPerSec);
 const cacheMemory = readsPerDay * AFTRS * 0.2;
 const totalMemory = cacheMemory * Replication;
 
+// Convert bytes to GB for cacheMemory and totalMemory 
+const cacheMemoryGB = cacheMemory / (1024 ** 3); 
+const totalMemoryGB = totalMemory / (1024 ** 3);
+
 // Bandwidth
 const incomingDataPerSec = writesPerSec * AFTRS;
 const outgoingDataPerSec = readsPerSec * AFTRS;
@@ -105,15 +109,12 @@ dv.paragraph(`Overall Traffic is **${overallMonthlyTraffic.toLocaleString()}** b
 dv.paragraph(`Overall Traffic is **${overallTraffic.toLocaleString()}** bytes in a day`);
 dv.paragraph("<br>");  
 
-dv.paragraph(`### Memory Cache`);
-dv.paragraph(`Cache Memory needed **${cacheMemory.toLocaleString()}** bytes`);
-dv.paragraph("<br>");  
-dv.paragraph(`Total Memory including replication **${totalMemory.toLocaleString()}** bytes`);
-dv.paragraph("<br>");  
+dv.paragraph(`### Memory Cache`); dv.paragraph(`Cache memory needed **${cacheMemory.toLocaleString()}** bytes (**${cacheMemoryGB.toFixed(2)}** GB)`); dv.paragraph("<br>"); dv.paragraph(`Total memory including replication **${totalMemory.toLocaleString()}** bytes (**${totalMemoryGB.toFixed(2)}** GB)`); dv.paragraph("<br>");
 
 dv.paragraph(`### Bandwidth`);
-dv.paragraph(`Incoming Data per second (Write) = Writes per second * AFTRS = ${incomingDataPerSec.toLocaleString()} bytes/sec`);
-dv.paragraph(`Outgoing Data per second (Read) = Reads per second * AFTRS = ${outgoingDataPerSec.toLocaleString()} bytes/sec`);
+dv.paragraph(`Incoming Data writes per second **${incomingDataPerSec.toLocaleString()}** bytes`);
+dv.paragraph("<br>");  
+dv.paragraph(`Outgoing Data reads per second **${outgoingDataPerSec.toLocaleString()}** bytes`);
 dv.paragraph("<br>");  
 
 dv.paragraph(`### App Server Estimations`);
@@ -125,8 +126,3 @@ dv.paragraph(` **${numServer}** servers needed`);
 
 
 
-```dataviewjs
-// readOnly need to store in vairiable
-dv.current().AUS = 10;
-dv.paragraph(`Yaml property is read only thats why no change **${dv.current().AUS}**`);
-```

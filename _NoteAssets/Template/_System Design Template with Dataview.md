@@ -81,76 +81,119 @@ dv.current().AUS = 10;
 dv.paragraph(`Yaml property is read only thats why no change **${dv.current().AUS}**`);
 ```
 
-
 ### Capacity Estimation
 > **Lets say we have 2:1 ratio of feature A Request to feature B Request**
-#### Storage
-AUS = 
-##### Writes
-As a users we want a feature to:
-- Post ... = 
 
-##### Data Size 
-AFRS One is about ...byte(adjusted for meta data)
+```dataviewjs
+// Average Feature Request Size by Bytes
+const AFRS_one = dv.current().AFRS_one;
+const FeatOneName = dv.current().WriteFeatOne
+const AFRS_two = dv.current().AFRS_two;
+const FeatTwoName = dv.current().WriteFeatTwo;
+const AFRS_three = dv.current().AFRS_three;
+const FeatThreeName = dv.current().ReadFeatOne;
+const ReadRatio = dv.current().Reads;  
+const WriteRatio = dv.current().Writes;  
+const requestPerServer = dv.current().CPU_Cores / 0.5 
 
-AFRS Two is about ...byte(adjusted for meta data)
+// Active Userbase Size
+let AUS = dv.current().AUS;
+// Daily Active Users 
+const DAU = dv.current().DAU;
 
-AFTRS = AFRS one ... + AFRS 
+// AUS = 234 // able to reasign 
 
-Monthly Estimation = 30 * AFTRS * AUS
+const Replication = dv.current().Replication;
 
-###### Daily estimates
-Write per day = AUS / Monthly Estimation
+// Average Feature Total Request Size Per User
+const AFTRS = AFRS_one + AFRS_two;
 
-Write per sec = Write per day / 80,000
+// Monthly Estimation
+const monthlyEstimation = 30 * AFTRS * AUS;
 
-Write per user = AFTRS / AUS
+// Daily Estimates
+const writesPerDay =  monthlyEstimation / AUS ;
+const writesPerSec = 86400 / writesPerDay ;
+const writesPerUser =  AUS / AFTRS;
 
+// Long Term Estimates
+const dataReplication = monthlyEstimation * Replication;
+const yearStorage = 1 * 400 * dataReplication;
+const fiveYearStorage = yearStorage * 5;
 
-###### Long term estimates
+// Network Traffic
+const readsPerMonth = ReadRatio * monthlyEstimation
 
-Data replication = Monthly Estimation * 3 or 5 = 
+const readsPerDay = ReadRatio * writesPerDay;
+const readsPerSec = ReadRatio * writesPerSec;
+const overallMonthlyTraffic = (DAU * readsPerSec) * (DAU * writesPerSec) * 30;
+const overallTraffic = (DAU * readsPerSec) * (DAU * writesPerSec);
 
-Year Storage = 1 * 400(Rounded year) * Replication
+// Memory Cache
+const cacheMemory = readsPerDay * AFTRS * 0.2;
+const totalMemory = cacheMemory * Replication;
 
-5 Year Storage = Year Storage * 5
+// Convert bytes to GB for cacheMemory and totalMemory 
+const cacheMemoryGB = cacheMemory / (1024 ** 3); 
+const totalMemoryGB = totalMemory / (1024 ** 3);
 
-
-#### Network Traffic
-Read:Write *50*:1 read heavy ratio
-
-##### Reads
-As a users we want to:
-- Get
-
-Reads per day = *50* \* Write per day
-
-Reads per sec = *50* \* Write per sec
-
-Overall Traffic: (DAU * read per sec) * (DAU * writes per sec)
-
-**maybe consider other Request type**
-
-#### Memory Cache
-
-Cache Memory = Read per day * AFTRS * 20% =
-
-Total memory = Cache Memory * 3 or 5( replic) =
-
-#### Bandwidth
-> consider fast & slow lanes, also quality down-scaling and up-scaling
-
-InComing Data per sec(Write) = (write per sec) * AFTRS = ... bytes per sec
-
-OutGoing Data per sec(Read) = (read per sec) * AFTRS = ... bytes per sec
+// Bandwidth
+const incomingDataPerSec = writesPerSec * AFTRS;
+const outgoingDataPerSec = readsPerSec * AFTRS;
 
 
-### App Server Estimations
-CPU physical cores = ..
+dv.paragraph(`#### Storage`);
+dv.paragraph(`Lets say are total active user are **${AUS.toLocaleString()}**`);
+dv.paragraph("<br>");  
+dv.paragraph(`***As a users we want a feature to:***`);
 
-RPS for single server = # CPU physical cores / 0.5 or half a sec = ..
+dv.paragraph(`- Post **${FeatOneName}** feature with a average size of **${AFRS_one}** bytes`);
+dv.paragraph(`- Post **${FeatTwoName}** feature with a average size of **${AFRS_two}** bytes`);
+dv.paragraph(`- Get **${FeatThreeName}** feature with a average size of **${AFRS_three}** bytes`);
 
-Number of Servers = ...(read per sec)/ ...RPS a single server can handle = ... servers
+
+dv.paragraph("<br>");  
+dv.paragraph(`##### Writes`);
+dv.paragraph(`The total write request size including and accounting for meta data is **${AFTRS}** bytes`);
+dv.paragraph("<br>");  
+
+dv.paragraph(`Writes per month **${monthlyEstimation.toLocaleString()}** bytes`);
+dv.paragraph(`Writes per day **${writesPerDay.toLocaleString()}** bytes`);
+dv.paragraph(`Writes per second **${writesPerSec}**`);
+dv.paragraph(`Writes per user **${writesPerUser}**`);
+dv.paragraph("<br>");  
+
+dv.paragraph(`Total storage needed after Data replication **${dataReplication.toLocaleString()}** bytes`);
+dv.paragraph(`Total Storage for a year **${yearStorage.toLocaleString()}** bytes`);
+dv.paragraph(`Total storage for 5 Years **${fiveYearStorage.toLocaleString()}** bytes`);
+dv.paragraph("<br>");  
+
+dv.paragraph(`### Network Traffic`);
+dv.paragraph(`*Read*:Write ratio = *${ReadRatio}*:${WriteRatio} read-heavy system`);
+dv.paragraph("<br>");  
+dv.paragraph(`##### Reads`);
+dv.paragraph(`Reads per month **${readsPerMonth.toLocaleString()}** bytes`);
+dv.paragraph(`Reads per day **${readsPerDay.toLocaleString()}** bytes`);
+dv.paragraph(`Reads per second **${readsPerSec.toFixed(6)}**`);
+dv.paragraph("<br>");  
+dv.paragraph(`Overall Traffic is **${overallMonthlyTraffic.toLocaleString()}** bytes in a month`);
+dv.paragraph(`Overall Traffic is **${overallTraffic.toLocaleString()}** bytes in a day`);
+dv.paragraph("<br>");  
+
+dv.paragraph(`### Memory Cache`); dv.paragraph(`Cache memory needed **${cacheMemory.toLocaleString()}** bytes (**${cacheMemoryGB.toFixed(2)}** GB)`); dv.paragraph("<br>"); dv.paragraph(`Total memory including replication **${totalMemory.toLocaleString()}** bytes (**${totalMemoryGB.toFixed(2)}** GB)`); dv.paragraph("<br>");
+
+dv.paragraph(`### Bandwidth`);
+dv.paragraph(`Incoming Data writes per second **${incomingDataPerSec.toLocaleString()}** bytes`);
+dv.paragraph("<br>");  
+dv.paragraph(`Outgoing Data reads per second **${outgoingDataPerSec.toLocaleString()}** bytes`);
+dv.paragraph("<br>");  
+
+dv.paragraph(`### App Server Estimations`);
+dv.paragraph(`**${dv.current().CPU_Cores}** physical CPU cores`);
+dv.paragraph(`**${requestPerServer}** Request Per Second for a single server `);
+const numServer = readsPerSec / requestPerServer
+dv.paragraph(` **${numServer}** servers needed`);
+```
 
 
 
