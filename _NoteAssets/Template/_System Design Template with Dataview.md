@@ -85,25 +85,20 @@ dv.paragraph(`Yaml property is read only thats why no change **${dv.current().AU
 > **Lets say we have 2:1 ratio of feature A Request to feature B Request**
 
 ```dataviewjs
+// Helper function to convert bytes to a human-readable format
+function formatBytes(bytes) {
+    const units = ['Bytes', 'KB', 'MB', 'GB', 'TB', 'PB'];
+    let i = 0;
+    while (bytes >= 1024 && i < units.length - 1) {
+        bytes /= 1024;
+        i++;
+    }
+    return `${bytes.toFixed(2)} ${units[i]}`;
+}
+
 // Average Feature Request Size by Bytes
-const AFRS_one = dv.current().AFRS_one;
-const FeatOneName = dv.current().WriteFeatOne
-const AFRS_two = dv.current().AFRS_two;
-const FeatTwoName = dv.current().WriteFeatTwo;
-const AFRS_three = dv.current().AFRS_three;
-const FeatThreeName = dv.current().ReadFeatOne;
-const ReadRatio = dv.current().Reads;  
-const WriteRatio = dv.current().Writes;  
-const requestPerServer = dv.current().CPU_Cores / 0.5 
-
-// Active Userbase Size
-let AUS = dv.current().AUS;
-// Daily Active Users 
-const DAU = dv.current().DAU;
-
-// AUS = 234 // able to reasign 
-
-const Replication = dv.current().Replication;
+const { AFRS_one, WriteFeatOne: FeatOneName, AFRS_two, WriteFeatTwo: FeatTwoName, AFRS_three, ReadFeatOne: FeatThreeName, Reads: ReadRatio, Writes: WriteRatio, CPU_Cores, AUS, Replication } = dv.current();
+const requestPerServer = CPU_Cores / 0.5;
 
 // Average Feature Total Request Size Per User
 const AFTRS = AFRS_one + AFRS_two;
@@ -112,90 +107,93 @@ const AFTRS = AFRS_one + AFRS_two;
 const monthlyEstimation = 30 * AFTRS * AUS;
 
 // Daily Estimates
-const writesPerDay =  monthlyEstimation / AUS ;
-const writesPerSec = 86400 / writesPerDay ;
-const writesPerUser =  AUS / AFTRS;
+const writesPerDay = monthlyEstimation / 30;
+const writesPerSec = writesPerDay / 86400;
+const writesPerUser = AUS / AFTRS;
 
 // Long Term Estimates
 const dataReplication = monthlyEstimation * Replication;
-const yearStorage = 1 * 400 * dataReplication;
+const yearStorage = 12 * dataReplication;
 const fiveYearStorage = yearStorage * 5;
 
 // Network Traffic
-const readsPerMonth = ReadRatio * monthlyEstimation
-
+const readsPerMonth = ReadRatio * monthlyEstimation;
 const readsPerDay = ReadRatio * writesPerDay;
 const readsPerSec = ReadRatio * writesPerSec;
-const overallMonthlyTraffic = (DAU * readsPerSec) * (DAU * writesPerSec) * 30;
-const overallTraffic = (DAU * readsPerSec) * (DAU * writesPerSec);
+
+// Overall Traffic Calculations
+const secondsInMonth = 30 * 86400;
+const secondsInDay = 86400;
+
+const overallMonthlyTraffic = (readsPerSec + writesPerSec) * AUS * secondsInMonth;
+const overallTraffic = (readsPerSec + writesPerSec) * AUS * secondsInDay;
 
 // Memory Cache
 const cacheMemory = readsPerDay * AFTRS * 0.2;
 const totalMemory = cacheMemory * Replication;
 
-// Convert bytes to GB for cacheMemory and totalMemory 
-const cacheMemoryGB = cacheMemory / (1024 ** 3); 
-const totalMemoryGB = totalMemory / (1024 ** 3);
-
-// Bandwidth
-const incomingDataPerSec = writesPerSec * AFTRS;
-const outgoingDataPerSec = readsPerSec * AFTRS;
-
+// Convert bytes to higher units for readability
+const monthlyEstimationReadable = formatBytes(monthlyEstimation);
+const writesPerDayReadable = formatBytes(writesPerDay);
+const dataReplicationReadable = formatBytes(dataReplication);
+const yearStorageReadable = formatBytes(yearStorage);
+const fiveYearStorageReadable = formatBytes(fiveYearStorage);
+const readsPerMonthReadable = formatBytes(readsPerMonth);
+const readsPerDayReadable = formatBytes(readsPerDay);
+const overallMonthlyTrafficReadable = formatBytes(overallMonthlyTraffic);
+const overallTrafficReadable = formatBytes(overallTraffic);
+const cacheMemoryReadable = formatBytes(cacheMemory);
+const totalMemoryReadable = formatBytes(totalMemory);
+const incomingDataPerSecReadable = formatBytes(writesPerSec * AFTRS);
+const outgoingDataPerSecReadable = formatBytes(readsPerSec * AFTRS);
 
 dv.paragraph(`#### Storage`);
-dv.paragraph(`Lets say are total active user are **${AUS.toLocaleString()}**`);
-dv.paragraph("<br>");  
-dv.paragraph(`***As a users we want a feature to:***`);
-
-dv.paragraph(`- Post **${FeatOneName}** feature with a average size of **${AFRS_one}** bytes`);
-dv.paragraph(`- Post **${FeatTwoName}** feature with a average size of **${AFRS_two}** bytes`);
-dv.paragraph(`- Get **${FeatThreeName}** feature with a average size of **${AFRS_three}** bytes`);
-
-
-dv.paragraph("<br>");  
+dv.paragraph(`Let's say our total active users are **${AUS.toLocaleString()}**`);
+dv.paragraph("<br>");
+dv.paragraph(`***As a user, we want a feature to:***`);
+dv.paragraph(`- Post **${FeatOneName}** feature with an average size of **${formatBytes(AFRS_one)}**`);
+dv.paragraph(`- Post **${FeatTwoName}** feature with an average size of **${formatBytes(AFRS_two)}**`);
+dv.paragraph(`- Get **${FeatThreeName}** feature with an average size of **${formatBytes(AFRS_three)}**`);
+dv.paragraph("<br>");
 dv.paragraph(`##### Writes`);
-dv.paragraph(`The total write request size including and accounting for meta data is **${AFTRS}** bytes`);
-dv.paragraph("<br>");  
-
-dv.paragraph(`Writes per month **${monthlyEstimation.toLocaleString()}** bytes`);
-dv.paragraph(`Writes per day **${writesPerDay.toLocaleString()}** bytes`);
-dv.paragraph(`Writes per second **${writesPerSec}**`);
-dv.paragraph(`Writes per user **${writesPerUser}**`);
-dv.paragraph("<br>");  
-
-dv.paragraph(`Total storage needed after Data replication **${dataReplication.toLocaleString()}** bytes`);
-dv.paragraph(`Total Storage for a year **${yearStorage.toLocaleString()}** bytes`);
-dv.paragraph(`Total storage for 5 Years **${fiveYearStorage.toLocaleString()}** bytes`);
-dv.paragraph("<br>");  
-
+dv.paragraph(`The total write request size, including metadata, is **${formatBytes(AFTRS)}**`);
+dv.paragraph("<br>");
+dv.paragraph(`Writes per month: **${monthlyEstimationReadable}**`);
+dv.paragraph(`Writes per day: **${writesPerDayReadable}**`);
+dv.paragraph(`Writes per second: **${writesPerSec.toFixed(6)}**`);
+dv.paragraph(`Writes per user: **${writesPerUser.toFixed(6)}**`);
+dv.paragraph("<br>");
+dv.paragraph(`Total storage needed after data replication: **${dataReplicationReadable}**`);
+dv.paragraph(`Total storage for a year: **${yearStorageReadable}**`);
+dv.paragraph(`Total storage for 5 years: **${fiveYearStorageReadable}**`);
+dv.paragraph("<br>");
 dv.paragraph(`### Network Traffic`);
-dv.paragraph(`*Read*:Write ratio = *${ReadRatio}*:${WriteRatio} read-heavy system`);
-dv.paragraph("<br>");  
+dv.paragraph(`*Read*:Write ratio = *${ReadRatio}*:${WriteRatio} (read-heavy system)`);
+dv.paragraph("<br>");
 dv.paragraph(`##### Reads`);
-dv.paragraph(`Reads per month **${readsPerMonth.toLocaleString()}** bytes`);
-dv.paragraph(`Reads per day **${readsPerDay.toLocaleString()}** bytes`);
-dv.paragraph(`Reads per second **${readsPerSec.toFixed(6)}**`);
-dv.paragraph("<br>");  
-dv.paragraph(`Overall Traffic is **${overallMonthlyTraffic.toLocaleString()}** bytes in a month`);
-dv.paragraph(`Overall Traffic is **${overallTraffic.toLocaleString()}** bytes in a day`);
-dv.paragraph("<br>");  
-
-dv.paragraph(`### Memory Cache`); dv.paragraph(`Cache memory needed **${cacheMemory.toLocaleString()}** bytes (**${cacheMemoryGB.toFixed(2)}** GB)`); dv.paragraph("<br>"); dv.paragraph(`Total memory including replication **${totalMemory.toLocaleString()}** bytes (**${totalMemoryGB.toFixed(2)}** GB)`); dv.paragraph("<br>");
-
+dv.paragraph(`Reads per month: **${readsPerMonthReadable}**`);
+dv.paragraph(`Reads per day: **${readsPerDayReadable}**`);
+dv.paragraph(`Reads per second: **${readsPerSec.toFixed(6)}**`);
+dv.paragraph("<br>");
+dv.paragraph(`Overall traffic per month: **${overallMonthlyTrafficReadable}**`);
+dv.paragraph(`Overall traffic per day: **${overallTrafficReadable}**`);
+dv.paragraph("<br>");
+dv.paragraph(`### Memory Cache`);
+dv.paragraph(`Cache memory needed: **${cacheMemoryReadable}**`);
+dv.paragraph("<br>");
+dv.paragraph(`Total memory including replication: **${totalMemoryReadable}**`);
+dv.paragraph("<br>");
 dv.paragraph(`### Bandwidth`);
-dv.paragraph(`Incoming Data writes per second **${incomingDataPerSec.toLocaleString()}** bytes`);
-dv.paragraph("<br>");  
-dv.paragraph(`Outgoing Data reads per second **${outgoingDataPerSec.toLocaleString()}** bytes`);
-dv.paragraph("<br>");  
-
+dv.paragraph(`Incoming data writes per second: **${incomingDataPerSecReadable}**`);
+dv.paragraph("<br>");
+dv.paragraph(`Outgoing data reads per second: **${outgoingDataPerSecReadable}**`);
+dv.paragraph("<br>");
 dv.paragraph(`### App Server Estimations`);
-dv.paragraph(`**${dv.current().CPU_Cores}** physical CPU cores`);
-dv.paragraph(`**${requestPerServer}** Request Per Second for a single server `);
-const numServer = readsPerSec / requestPerServer
-dv.paragraph(` **${numServer}** servers needed`);
+dv.paragraph(`**${CPU_Cores}** physical CPU cores`);
+dv.paragraph(`**${requestPerServer.toFixed(2)}** requests per second for a single server`);
+const numServer = Math.ceil(readsPerSec / requestPerServer);
+dv.paragraph(`**${numServer}** servers needed`);
 ```
-
-
 
 
 
