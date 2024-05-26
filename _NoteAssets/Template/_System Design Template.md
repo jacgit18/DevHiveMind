@@ -1,7 +1,9 @@
 ---
 excalidraw-plugin: parsed
-tags: 
-author: 
+tags:
+  - distributedSystem
+author:
+  - jacgit18
 Comments: Placeholder comment any thing else you want to mention about the document.
 Purpose: This documentation discusses
 Status: Refinement
@@ -75,12 +77,6 @@ When designing a database schema, validate it through practical testing by creat
 |          |            |          |              |
 |          |            |          |              |
 |          |            |          |              |
-```dataviewjs
-// readOnly need to store in vairiable
-dv.current().AUS = 10;
-dv.paragraph(`Yaml property is read only thats why no change **${dv.current().AUS}**`);
-```
-
 
 ### Capacity Estimation
 > **Lets say we have 2:1 ratio of feature A Request to feature B Request**
