@@ -99,7 +99,8 @@ dv.paragraph(`##### Reads`);
 dv.paragraph(`Reads per month **${readsPerMonth.toLocaleString()}** bytes`);
 dv.paragraph(`Reads per day **${readsPerDay.toLocaleString()}** bytes`);
 dv.paragraph(`Reads per second **${readsPerSec.toFixed(6)}**`);
-dv.paragraph(`Overall Traffic = (DAU * Reads per second) * (DAU * Writes per second) = ${overallTraffic.toLocaleString()}`);
+dv.paragraph("<br>");  
+dv.paragraph(`Overall Traffic is **${overallTraffic.toLocaleString()}** bytes`);
 dv.paragraph("<br>");  
 
 dv.paragraph(`### Memory Cache`);
@@ -115,8 +116,8 @@ dv.paragraph("<br>");
 dv.paragraph(`### App Server Estimations`);
 dv.paragraph(`**${dv.current().CPU_Cores}** physical CPU cores`);
 dv.paragraph(`**${requestPerServer}** Request Per Second for a single server `);
-const numServer = 
-dv.paragraph(`Number of Servers = ${readsPerSec}/${requestPerServer}`);
+const numServer = readsPerSec / requestPerServer
+dv.paragraph(` **${numServer}** servers needed`);
 ```
 
 
