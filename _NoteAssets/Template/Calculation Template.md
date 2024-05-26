@@ -55,6 +55,7 @@ const readsPerMonth = ReadRatio * monthlyEstimation
 
 const readsPerDay = ReadRatio * writesPerDay;
 const readsPerSec = ReadRatio * writesPerSec;
+const overallMonthlyTraffic = (DAU * readsPerSec) * (DAU * writesPerSec) * 30;
 const overallTraffic = (DAU * readsPerSec) * (DAU * writesPerSec);
 
 // Memory Cache
@@ -100,12 +101,14 @@ dv.paragraph(`Reads per month **${readsPerMonth.toLocaleString()}** bytes`);
 dv.paragraph(`Reads per day **${readsPerDay.toLocaleString()}** bytes`);
 dv.paragraph(`Reads per second **${readsPerSec.toFixed(6)}**`);
 dv.paragraph("<br>");  
-dv.paragraph(`Overall Traffic is **${overallTraffic.toLocaleString()}** bytes`);
+dv.paragraph(`Overall Traffic is **${overallMonthlyTraffic.toLocaleString()}** bytes in a month`);
+dv.paragraph(`Overall Traffic is **${overallTraffic.toLocaleString()}** bytes in a day`);
 dv.paragraph("<br>");  
 
 dv.paragraph(`### Memory Cache`);
-dv.paragraph(`Cache Memory = Reads per day * AFTRS * 20% = ${cacheMemory.toLocaleString()} bytes`);
-dv.paragraph(`Total Memory = Cache Memory * ${Replication} = ${totalMemory.toLocaleString()} bytes`);
+dv.paragraph(`Cache Memory needed **${cacheMemory.toLocaleString()}** bytes`);
+dv.paragraph("<br>");  
+dv.paragraph(`Total Memory including replication **${totalMemory.toLocaleString()}** bytes`);
 dv.paragraph("<br>");  
 
 dv.paragraph(`### Bandwidth`);
