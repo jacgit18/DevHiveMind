@@ -67,7 +67,7 @@ Design statement Placeholder
 | [datatype]   |     | ...      |
 
 
-##### Rough Schema Table  
+##### Rough Schema Record Table  
 **Table for debugging overall schema using Queries**
 When designing a database schema, validate it through practical testing by creating sample tables and performing insertions and selects. The schema can use a loose structure, representing combined tables through relationships rather than a strict one-to-one mapping.
 
