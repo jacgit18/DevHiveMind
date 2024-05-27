@@ -27,10 +27,11 @@ Version: "2.0"
 ---
 Design statement Placeholder
 
-## Userbase
-- 
 
 ## Requirements Gathering
+
+## Userbase
+- 
 
 #### Functional Requirements
 ##### Required
