@@ -27,10 +27,9 @@ Version: "2.0"
 ---
 Design statement Placeholder
 
-
 ## Requirements Gathering
 
-## Userbase
+### Userbase
 - 
 
 #### Functional Requirements
@@ -49,23 +48,23 @@ Design statement Placeholder
 
 ##### Entity Definition Table 1
 
-|     | Region     | Type         |
-| --- | ---------- | ------------ |
-| PK  | RegionID   | INT          |
-| FK  | UserID     | INT          |
-| FK  | RandomID   | INT          |
-|     | RegionName | Varchar(255) |
-|     | ...        | [datatype]   |
-|     | ...        |              |
+| Type         |     | Region     |
+| ------------ | --- | ---------- |
+| INT          | PK  | RegionID   |
+| INT          | FK  | UserID     |
+| INT          | FK  | RandomID   |
+| Varchar(255) |     | RegionName |
+| [datatype]   |     | ...        |
+| [datatype]   |     | ...        |
 ##### Entity Definition Table 2
 
-|     | USer     | Type         |
-| --- | -------- | ------------ |
-| PK  | UserID   | INT          |
-|     | UserName | Varchar(255) |
-|     | PhoneNum | Varchar(255) |
-|     | ...      | [datatype]   |
-|     | ...      |              |
+| Type         |     | User     |
+| ------------ | --- | -------- |
+| INT          | PK  | UserID   |
+| Varchar(255) |     | UserName |
+| Varchar(255) |     | PhoneNum |
+| [datatype]   |     | ...      |
+| [datatype]   |     | ...      |
 
 
 ##### Rough Schema Table  
