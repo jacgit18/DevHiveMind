@@ -139,6 +139,23 @@ Here are some examples of prescriptive analytics:
 - An exam timetable that checks if students have conflicting schedules
 - Artificial intelligence (AI) systems from data-driven companies like Facebook, TikTok, and Netflix
 
+
+**Wide data(A lot of columns) is preferred when**
+  
+Creating tables and charts with a few variables about each subject  
+  
+Comparing straightforward line graphs  
+  
+  
+  
+**Long data is preferred when**
+  
+Storing a lot of variables about each subject. For example, 60 years worth of interest rates for each bank  
+  
+Performing advanced statistical analysis or graphing
+
+
+
 # Types of visualizations
 
 
