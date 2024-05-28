@@ -14,7 +14,7 @@ excalidraw-open-md: true
 dg-publish: 
 AFRS_one: 300
 AFRS_two: 200
-AFRS_three: 32
+AFRS_three: 100
 AUS: 200000
 CPU_Cores: 8
 Reads: 50
@@ -25,7 +25,6 @@ WriteFeatOne: comment
 WriteFeatTwo: like
 Version: "2.0"
 ---
-Sure, I've updated the script to include the size of the requests per second with appropriate units:
 
 ```dataviewjs
 // Helper function to convert bytes to a human-readable format
@@ -44,7 +43,7 @@ const { AFRS_one, WriteFeatOne: FeatOneName, AFRS_two, WriteFeatTwo: FeatTwoName
 const requestPerServer = CPU_Cores / 0.5;
 
 // Average Feature Total Request Size Per User
-const AFTRS = AFRS_one + AFRS_two;
+const AFTRS = AFRS_one + AFRS_two + AFRS_three;
 
 //  Estimation
 const writesPerMonth = 30 * AFTRS * AUS;
@@ -102,7 +101,7 @@ dv.paragraph(`The total write request size, including metadata, is **${formatByt
 dv.paragraph("<br>");
 dv.paragraph(`Writes per month: **${monthlyEstimationReadable}**`);
 dv.paragraph(`Writes per day: **${writesPerDayReadable}**`);
-dv.paragraph(`Writes per second:(**${formatBytes(writesPerSec * AFTRS)}** per sec)`);
+dv.paragraph(`Writes per second: **${formatBytes(writesPerSec * AFTRS)}**`);
 
 dv.paragraph("<br>");
 dv.paragraph(`Total storage needed after data replication: **${dataReplicationReadable}**`);
@@ -115,7 +114,7 @@ dv.paragraph("<br>");
 dv.paragraph(`##### Reads`);
 dv.paragraph(`Reads per month: **${readsPerMonthReadable}**`);
 dv.paragraph(`Reads per day: **${readsPerDayReadable}**`);
-dv.paragraph(`Reads per second: **${Math.round(readsPerSec)}** requests/sec (**${formatBytes(readsPerSec * AFTRS)}** per sec)`);
+dv.paragraph(`Reads per second: **${formatBytes(readsPerSec * AFTRS)}**`);
 dv.paragraph("<br>");
 dv.paragraph(`Overall traffic per month: **${overallMonthlyTrafficReadable}**`);
 dv.paragraph(`Overall traffic per day: **${overallDailyTrafficReadable}**`);
@@ -138,10 +137,6 @@ const numServer = Math.ceil(readsPerSec / requestPerServer);
 dv.paragraph(`**${numServer}** servers needed`);
 ```
 
-In this updated script:
-- The `writesPerSec` and `readsPerSec` values are rounded to the nearest whole number for clarity.
-- The size of the data processed per second is included with appropriate units (KB, MB, etc.) using the `formatBytes` function.
-- The formatted values for incoming and outgoing data per second are displayed alongside the request rates.
 
 
 # Excalidraw Data
