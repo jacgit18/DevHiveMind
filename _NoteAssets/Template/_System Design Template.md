@@ -12,12 +12,10 @@ EditDate:
 Relates: 
 excalidraw-open-md: true
 dg-publish: 
-AFRS_one: 0
-AFRS_two: 0
-AFRS_three: 0
+AFRS: 1, 2, 3
 AUS: 123,000
-CPU_Cores: 0
-Replication: 0
+CPU_Cores: 8
+Replication: 3
 Reads: 50
 ReadFeatOne: Name Placeholder
 Writes: 1
@@ -94,14 +92,17 @@ function formatBytes(bytes) {
 }
 
 // Average Feature Request Size by Bytes
-const { AFRS_one, WriteFeatOne: FeatOneName, AFRS_two, WriteFeatTwo: FeatTwoName, AFRS_three, ReadFeatOne: FeatThreeName, Reads: ReadRatio, Writes: WriteRatio, CPU_Cores, AUS: AUSStr, Replication } = dv.current();
+const { AFRS: AFRSStr, WriteFeatOne: FeatOneName, WriteFeatTwo: FeatTwoName, ReadFeatOne: FeatThreeName, Reads: ReadRatio, Writes: WriteRatio, CPU_Cores, AUS: AUSStr, Replication } = dv.current();
 const requestPerServer = CPU_Cores / 0.5;
 
 // Convert AUS string to number
 const AUS = parseInt(AUSStr.replace(/,/g, ''), 10);
 
+// Convert AFRS string to an array of numbers
+const AFRSArray = AFRSStr.split(',').map(Number);
+
 // Average Feature Total Request Size Per User
-const AFTRS = AFRS_one + AFRS_two + AFRS_three;
+const AFTRS = AFRSArray.reduce((sum, val) => sum + val, 0);
 
 // Estimation
 const writesPerMonth = 30 * AFTRS * AUS;
@@ -150,9 +151,9 @@ dv.paragraph(`#### Storage`);
 dv.paragraph(`Let's say our total active users are **${AUS.toLocaleString()}**`);
 dv.paragraph("<br>");
 dv.paragraph(`***As a user, we want a feature to:***`);
-dv.paragraph(`- Post **${FeatOneName}** feature with an average size of **${formatBytes(AFRS_one)}**`);
-dv.paragraph(`- Post **${FeatTwoName}** feature with an average size of **${formatBytes(AFRS_two)}**`);
-dv.paragraph(`- Get **${FeatThreeName}** feature with an average size of **${formatBytes(AFRS_three)}**`);
+dv.paragraph(`- Post **${FeatOneName}** feature with an average size of **${formatBytes(AFRSArray[0])}**`);
+dv.paragraph(`- Post **${FeatTwoName}** feature with an average size of **${formatBytes(AFRSArray[1])}**`);
+dv.paragraph(`- Get **${FeatThreeName}** feature with an average size of **${formatBytes(AFRSArray[2])}**`);
 dv.paragraph("<br>");
 dv.paragraph(`##### Writes`);
 dv.paragraph(`The total write request size, including metadata, is **${formatBytes(AFTRS)}**`);
@@ -194,7 +195,6 @@ dv.paragraph(`**${requestPerServer.toFixed(2)}** requests per second for a singl
 const numServer = Math.ceil(readsPerSec / requestPerServer);
 dv.paragraph(`**${numServer}** servers needed`);
 ```
-
 
 
 

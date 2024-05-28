@@ -17,15 +17,13 @@ AFRS_two: 200
 AFRS_three: 32
 AUS: 200,000
 CPU_Cores: 8
+AFRS: 300, 200, 32
+FeatName: Stuff, Like, Comment
+ReqType: Post, Post, Get
 Reads: 50
-ReadFeatOne: stuff
 Replication: 3
 Writes: 1
-WriteFeatOne: comment
-WriteFeatTwo: like
 Version: "2.0"
-TAUS: 200,000
-AFRS:
 ---
 
 
@@ -42,14 +40,23 @@ function formatBytes(bytes) {
 }
 
 // Average Feature Request Size by Bytes
-const { AFRS_one, WriteFeatOne: FeatOneName, AFRS_two, WriteFeatTwo: FeatTwoName, AFRS_three, ReadFeatOne: FeatThreeName, Reads: ReadRatio, Writes: WriteRatio, CPU_Cores, AUS: AUSStr, Replication } = dv.current();
+const { AFRS: AFRSStr, FeatName: FeatNameStr, Reads: ReadRatio, Writes: WriteRatio, CPU_Cores, AUS: AUSStr, Replication, ReqType: ReqTypeStr } = dv.current();
 const requestPerServer = CPU_Cores / 0.5;
 
 // Convert AUS string to number
 const AUS = parseInt(AUSStr.replace(/,/g, ''), 10);
 
+// Convert AFRS string to an array of numbers
+const AFRSArray = AFRSStr.split(',').map(Number);
+
+// Convert FeatName string to an array of names
+const FeatNameArray = FeatNameStr.split(',');
+
+// Convert FeatType string to an array of req
+const FeatNameArray = FeatNameStr.split(',');
+
 // Average Feature Total Request Size Per User
-const AFTRS = AFRS_one + AFRS_two + AFRS_three;
+const AFTRS = AFRSArray.reduce((sum, val) => sum + val, 0);
 
 // Estimation
 const writesPerMonth = 30 * AFTRS * AUS;
@@ -98,9 +105,9 @@ dv.paragraph(`#### Storage`);
 dv.paragraph(`Let's say our total active users are **${AUS.toLocaleString()}**`);
 dv.paragraph("<br>");
 dv.paragraph(`***As a user, we want a feature to:***`);
-dv.paragraph(`- Post **${FeatOneName}** feature with an average size of **${formatBytes(AFRS_one)}**`);
-dv.paragraph(`- Post **${FeatTwoName}** feature with an average size of **${formatBytes(AFRS_two)}**`);
-dv.paragraph(`- Get **${FeatThreeName}** feature with an average size of **${formatBytes(AFRS_three)}**`);
+dv.paragraph(`- Post **${FeatNameArray[0]}** feature with an average size of **${formatBytes(AFRSArray[0])}**`);
+dv.paragraph(`- Post **${FeatNameArray[1]}** feature with an average size of **${formatBytes(AFRSArray[1])}**`);
+dv.paragraph(`- Get **${FeatNameArray[2]}** feature with an average size of **${formatBytes(AFRSArray[2])}**`);
 dv.paragraph("<br>");
 dv.paragraph(`##### Writes`);
 dv.paragraph(`The total write request size, including metadata, is **${formatBytes(AFTRS)}**`);
