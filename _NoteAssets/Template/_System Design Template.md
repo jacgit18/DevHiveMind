@@ -46,19 +46,20 @@ Design statement Placeholder
 
 ##### Entity Definition Table 1
 
-|     | Region     | Type         |
-| --- | ---------- | ------------ |
-| PK  | RegionID   | INT          |
-| FK  | UserID     | INT          |
-| FK  | RandomID   | INT          |
-|     | RegionName | Varchar(255) |
-##### Entity Definition Table 2
-
 |     | User     | Type         |
 | --- | -------- | ------------ |
 | PK  | UserID   | INT          |
 |     | UserName | Varchar(255) |
 |     | PhoneNum | Varchar(255) |
+
+
+##### Entity Definition Table 2
+
+|     | Region     | Type         |
+| --- | ---------- | ------------ |
+| PK  | RegionID   | INT          |
+| FK  | UserID     | INT          |
+|     | RegionName | Varchar(255) |
 
 given this entity definition table how would you use dataview and yaml to recre
 
@@ -68,12 +69,41 @@ how would you recreate this and make more interactive using dataview js to creat
 **Table for debugging overall schema using Queries**
 When designing a database schema, validate it through practical testing by creating sample tables and performing insertions and selects. The schema can use a loose structure, representing combined tables through relationships rather than a strict one-to-one mapping.
 
-| RegionID | RegionName | UserName | PhoneNum     |
-| -------- | ---------- | -------- | ------------ |
-| 1        | Mid        | tom      | 347-217-3245 |
-|          |            |          |              |
-|          |            |          |              |
-|          |            |          |              |
+
+```sql
+BEGIN;
+
+-- Insert into the User table and get the generated UserID
+INSERT INTO User (UserName, PhoneNum)
+VALUES ('John Doe', '123-456-7890')
+RETURNING UserID INTO @UserID;
+
+-- Insert into the Region table using the generated UserID
+INSERT INTO Region (UserID, RandomID, RegionName)
+VALUES (@UserID, 100, 'North America');
+
+-- Retrieve the inserted data using a join
+SELECT Region.RegionID, Region.RegionName, User.UserName, User.PhoneNum
+FROM Region
+JOIN User ON Region.UserID = User.UserID;
+
+COMMIT;
+
+EXCEPTION 
+-- Rollback the transaction in case of an error 
+	WHEN OTHERS THEN 
+		ROLLBACK; 
+		RAISE; 
+END;
+```
+
+
+| RegionID | RegionName    | UserName | PhoneNum     |
+| -------- | ------------- | -------- | ------------ |
+| 1        | North America | John Doe | 123-456-7890 |
+|          |               |          |              |
+|          |               |          |              |
+|          |               |          |              |
 
 ### Capacity Estimation (5 - 10 min)
 > **Lets say we have 2:1 ratio of feature A Request to feature B Request**
