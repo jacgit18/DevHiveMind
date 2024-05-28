@@ -10,29 +10,7 @@ EditDate:
 Relates: 
 Peer Reviewed: 0
 dg-publish: 
-Key: 
-TableName: 
-Type: 
 userID: "1"
 userName: joe
 phoneNum: 347-219-6543
 ---
-
-
-
-
-
-```dataview
-table without id File as UserTable, UserID, UserName, PhoneNum
-from [[_Table Template]]
-sort UserID
-
-```
-
-
-
-```dataview
-table without id File as RegionTable, RegionID, UserID as ForeignUserID, RegionName
-from [[Region]]
-sort RegionID
-```
