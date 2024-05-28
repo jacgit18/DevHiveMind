@@ -14,4 +14,18 @@ Key:
 TableName: 
 Type:
 ---
- 
+It seems there's still an issue with the parsing of the DataView query. Let's simplify the structure and try again:
+
+```markdown
+```dataview
+table UserID, UserName, PhoneNum
+from [[User]]
+sort UserID
+
+---
+
+table RegionID, UserID as ForeignUserID, RegionName
+from [[Region]]
+sort RegionID
+```
+```
