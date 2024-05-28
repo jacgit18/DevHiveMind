@@ -24,7 +24,8 @@ Version: "2.0"
 ---
 Design statement Placeholder
 
-## Requirements Gathering
+## Requirements Gathering (5 - 10 min)
+
 
 ### Userbase
 - 
@@ -41,7 +42,7 @@ Design statement Placeholder
 - Brief identification and primer will go more in-depth later in interview. 
 
 
-### Logical Data Model
+### Logical Data Model (10 - 15 min)
 
 ##### Entity Definition Table 1
 
@@ -75,7 +76,7 @@ When designing a database schema, validate it through practical testing by creat
 |          |            |          |              |
 |          |            |          |              |
 
-### Capacity Estimation
+### Capacity Estimation (5 - 10 min)
 > **Lets say we have 2:1 ratio of feature A Request to feature B Request**
 
 ```dataviewjs
@@ -201,6 +202,10 @@ const numServer = Math.ceil(readsPerSec / requestPerServer);
 dv.paragraph(`**${numServer}** servers needed`);
 ```
 
+## Design Deep Dive (15 - 25 min)
+
+
+## Wrap Up(3 - 5 min)
 
 # Excalidraw Data
 ## Text Elements
