@@ -13,14 +13,13 @@ Relates:
 excalidraw-open-md: true
 dg-publish: 
 AFRS: 1, 2, 3
+FeatName: Stuff, Like, Comment
+ReqType: Post, Post, Get
 AUS: 123,000
 CPU_Cores: 8
 Replication: 3
 Reads: 50
-ReadFeatOne: Name Placeholder
 Writes: 1
-WriteFeatOne: Name Placeholder
-WriteFeatTwo: Name Placeholder
 Version: "2.0"
 ---
 Design statement Placeholder
@@ -92,7 +91,7 @@ function formatBytes(bytes) {
 }
 
 // Average Feature Request Size by Bytes
-const { AFRS: AFRSStr, WriteFeatOne: FeatOneName, WriteFeatTwo: FeatTwoName, ReadFeatOne: FeatThreeName, Reads: ReadRatio, Writes: WriteRatio, CPU_Cores, AUS: AUSStr, Replication } = dv.current();
+const { AFRS: AFRSStr, FeatName: FeatNameStr, Reads: ReadRatio, Writes: WriteRatio, CPU_Cores, AUS: AUSStr, Replication, ReqType: ReqTypeStr } = dv.current();
 const requestPerServer = CPU_Cores / 0.5;
 
 // Convert AUS string to number
@@ -100,6 +99,12 @@ const AUS = parseInt(AUSStr.replace(/,/g, ''), 10);
 
 // Convert AFRS string to an array of numbers
 const AFRSArray = AFRSStr.split(',').map(Number);
+
+// Convert FeatName string to an array of names
+const FeatNameArray = FeatNameStr.split(',');
+
+// Convert FeatType string to an array of req
+const ReqTypeArray = ReqTypeStr.split(',');
 
 // Average Feature Total Request Size Per User
 const AFTRS = AFRSArray.reduce((sum, val) => sum + val, 0);
@@ -151,9 +156,9 @@ dv.paragraph(`#### Storage`);
 dv.paragraph(`Let's say our total active users are **${AUS.toLocaleString()}**`);
 dv.paragraph("<br>");
 dv.paragraph(`***As a user, we want a feature to:***`);
-dv.paragraph(`- Post **${FeatOneName}** feature with an average size of **${formatBytes(AFRSArray[0])}**`);
-dv.paragraph(`- Post **${FeatTwoName}** feature with an average size of **${formatBytes(AFRSArray[1])}**`);
-dv.paragraph(`- Get **${FeatThreeName}** feature with an average size of **${formatBytes(AFRSArray[2])}**`);
+dv.paragraph(`- **${ReqTypeArray[0]}** *${FeatNameArray[0]}* feature with an average size of **${formatBytes(AFRSArray[0])}**`);
+dv.paragraph(`- **${ReqTypeArray[1]}** *${FeatNameArray[1]}* feature with an average size of **${formatBytes(AFRSArray[1])}**`);
+dv.paragraph(`- **${ReqTypeArray[2]}** *${FeatNameArray[2]}* feature with an average size of **${formatBytes(AFRSArray[2])}**`);
 dv.paragraph("<br>");
 dv.paragraph(`##### Writes`);
 dv.paragraph(`The total write request size, including metadata, is **${formatBytes(AFTRS)}**`);
@@ -195,7 +200,6 @@ dv.paragraph(`**${requestPerServer.toFixed(2)}** requests per second for a singl
 const numServer = Math.ceil(readsPerSec / requestPerServer);
 dv.paragraph(`**${numServer}** servers needed`);
 ```
-
 
 
 # Excalidraw Data
