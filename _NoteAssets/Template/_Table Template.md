@@ -12,10 +12,7 @@ Peer Reviewed: 0
 dg-publish: 
 Key: 
 TableName: 
-Type: 
-userID: "1"
-userName: joe
-phoneNum: 347-219-6543
+Type:
 ---
 
 
@@ -23,8 +20,8 @@ phoneNum: 347-219-6543
 
 
 ```dataview
-table without id File as UserTable, UserID, UserName, PhoneNum
-from [[_Table Template]]
+table UserID, UserName, PhoneNum
+from [[Data]]
 sort UserID
 
 ```

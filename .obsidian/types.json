@@ -42,6 +42,7 @@
     "AUS": "text",
     "Reads": "number",
     "Writes": "number",
-    "AFRS_three": "number"
+    "AFRS_three": "number",
+    "userID": "number"
   }
 }
