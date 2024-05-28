@@ -39,7 +39,7 @@
     "replication": "number",
     "DAU": "number",
     "MonthlyEstimation": "text",
-    "AUS": "number",
+    "AUS": "text",
     "Reads": "number",
     "Writes": "number",
     "AFRS_three": "number"

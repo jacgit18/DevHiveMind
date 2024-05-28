@@ -15,7 +15,7 @@ dg-publish:
 AFRS_one: 0
 AFRS_two: 0
 AFRS_three: 0
-AUS: 0
+AUS: 123,000
 CPU_Cores: 0
 Replication: 0
 Reads: 50
@@ -94,27 +94,27 @@ function formatBytes(bytes) {
 }
 
 // Average Feature Request Size by Bytes
-const { AFRS_one, WriteFeatOne: FeatOneName, AFRS_two, WriteFeatTwo: FeatTwoName, AFRS_three, ReadFeatOne: FeatThreeName, Reads: ReadRatio, Writes: WriteRatio, CPU_Cores, AUS, Replication } = dv.current();
+const { AFRS_one, WriteFeatOne: FeatOneName, AFRS_two, WriteFeatTwo: FeatTwoName, AFRS_three, ReadFeatOne: FeatThreeName, Reads: ReadRatio, Writes: WriteRatio, CPU_Cores, AUS: AUSStr, Replication } = dv.current();
 const requestPerServer = CPU_Cores / 0.5;
 
+// Convert AUS string to number
+const AUS = parseInt(AUSStr.replace(/,/g, ''), 10);
+
 // Average Feature Total Request Size Per User
-const AFTRS = AFRS_one + AFRS_two;
+const AFTRS = AFRS_one + AFRS_two + AFRS_three;
 
-// Monthly Estimation
-const monthlyEstimation = 30 * AFTRS * AUS;
-
-// Daily Estimates
-const writesPerDay = monthlyEstimation / 30;
+// Estimation
+const writesPerMonth = 30 * AFTRS * AUS;
+const writesPerDay = writesPerMonth / 30;
 const writesPerSec = writesPerDay / 86400;
-const writesPerUser = AUS / AFTRS;
 
 // Long Term Estimates
-const dataReplication = monthlyEstimation * Replication;
+const dataReplication = writesPerMonth * Replication;
 const yearStorage = 12 * dataReplication;
 const fiveYearStorage = yearStorage * 5;
 
 // Network Traffic
-const readsPerMonth = ReadRatio * monthlyEstimation;
+const readsPerMonth = ReadRatio * writesPerMonth;
 const readsPerDay = ReadRatio * writesPerDay;
 const readsPerSec = ReadRatio * writesPerSec;
 
@@ -123,14 +123,15 @@ const secondsInMonth = 30 * 86400;
 const secondsInDay = 86400;
 
 const overallMonthlyTraffic = (readsPerSec + writesPerSec) * AUS * secondsInMonth;
-const overallTraffic = (readsPerSec + writesPerSec) * AUS * secondsInDay;
+const overallDailyTraffic = (readsPerSec + writesPerSec) * AUS * secondsInDay;
+const overallTrafficPerSec = (readsPerSec + writesPerSec) * AUS;
 
 // Memory Cache
 const cacheMemory = readsPerDay * AFTRS * 0.2;
 const totalMemory = cacheMemory * Replication;
 
 // Convert bytes to higher units for readability
-const monthlyEstimationReadable = formatBytes(monthlyEstimation);
+const monthlyEstimationReadable = formatBytes(writesPerMonth);
 const writesPerDayReadable = formatBytes(writesPerDay);
 const dataReplicationReadable = formatBytes(dataReplication);
 const yearStorageReadable = formatBytes(yearStorage);
@@ -138,7 +139,8 @@ const fiveYearStorageReadable = formatBytes(fiveYearStorage);
 const readsPerMonthReadable = formatBytes(readsPerMonth);
 const readsPerDayReadable = formatBytes(readsPerDay);
 const overallMonthlyTrafficReadable = formatBytes(overallMonthlyTraffic);
-const overallTrafficReadable = formatBytes(overallTraffic);
+const overallDailyTrafficReadable = formatBytes(overallDailyTraffic);
+const overallTrafficPerSecReadable = formatBytes(overallTrafficPerSec);
 const cacheMemoryReadable = formatBytes(cacheMemory);
 const totalMemoryReadable = formatBytes(totalMemory);
 const incomingDataPerSecReadable = formatBytes(writesPerSec * AFTRS);
@@ -157,8 +159,8 @@ dv.paragraph(`The total write request size, including metadata, is **${formatByt
 dv.paragraph("<br>");
 dv.paragraph(`Writes per month: **${monthlyEstimationReadable}**`);
 dv.paragraph(`Writes per day: **${writesPerDayReadable}**`);
-dv.paragraph(`Writes per second: **${writesPerSec.toFixed(6)}**`);
-dv.paragraph(`Writes per user: **${writesPerUser.toFixed(6)}**`);
+dv.paragraph(`Writes per second: **${formatBytes(writesPerSec * AFTRS)}**`);
+
 dv.paragraph("<br>");
 dv.paragraph(`Total storage needed after data replication: **${dataReplicationReadable}**`);
 dv.paragraph(`Total storage for a year: **${yearStorageReadable}**`);
@@ -170,10 +172,11 @@ dv.paragraph("<br>");
 dv.paragraph(`##### Reads`);
 dv.paragraph(`Reads per month: **${readsPerMonthReadable}**`);
 dv.paragraph(`Reads per day: **${readsPerDayReadable}**`);
-dv.paragraph(`Reads per second: **${readsPerSec.toFixed(6)}**`);
+dv.paragraph(`Reads per second: **${formatBytes(readsPerSec * AFTRS)}**`);
 dv.paragraph("<br>");
 dv.paragraph(`Overall traffic per month: **${overallMonthlyTrafficReadable}**`);
-dv.paragraph(`Overall traffic per day: **${overallTrafficReadable}**`);
+dv.paragraph(`Overall traffic per day: **${overallDailyTrafficReadable}**`);
+dv.paragraph(`Overall traffic per second: **${overallTrafficPerSecReadable}**`);
 dv.paragraph("<br>");
 dv.paragraph(`### Memory Cache`);
 dv.paragraph(`Cache memory needed per day: **${cacheMemoryReadable}**`);
