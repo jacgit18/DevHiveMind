@@ -46,24 +46,23 @@ Design statement Placeholder
 
 ##### Entity Definition Table 1
 
-| Type         |     | Region     |
-| ------------ | --- | ---------- |
-| INT          | PK  | RegionID   |
-| INT          | FK  | UserID     |
-| INT          | FK  | RandomID   |
-| Varchar(255) |     | RegionName |
-| [datatype]   |     | ...        |
-| [datatype]   |     | ...        |
+|     | Region     | Type         |
+| --- | ---------- | ------------ |
+| PK  | RegionID   | INT          |
+| FK  | UserID     | INT          |
+| FK  | RandomID   | INT          |
+|     | RegionName | Varchar(255) |
 ##### Entity Definition Table 2
 
-| Type         |     | User     |
-| ------------ | --- | -------- |
-| INT          | PK  | UserID   |
-| Varchar(255) |     | UserName |
-| Varchar(255) |     | PhoneNum |
-| [datatype]   |     | ...      |
-| [datatype]   |     | ...      |
+|     | User     | Type         |
+| --- | -------- | ------------ |
+| PK  | UserID   | INT          |
+|     | UserName | Varchar(255) |
+|     | PhoneNum | Varchar(255) |
 
+given this entity definition table how would you use dataview and yaml to recre
+
+how would you recreate this and make more interactive using dataview js to create
 
 ##### Rough Schema Record Table  
 **Table for debugging overall schema using Queries**
