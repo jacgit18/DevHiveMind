@@ -13,6 +13,10 @@ Relates:
 Peer Reviewed: 0
 dg-publish:
 ---
+Null means the reference to an object is empty  
+  
+Undefined means no value exist
+
 | Value           | String conversion | Number conversion | Boolean conversion |
 | --------------- | ----------------- | ----------------- | ------------------ |
 | 20              | '20'              | 20                | true               |
