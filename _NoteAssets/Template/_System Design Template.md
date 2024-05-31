@@ -44,6 +44,7 @@ Design statement Placeholder
 
 ### Logical Data Model (10 - 15 min)
 
+Think fact and dimensional tables Star small schema snow large complex
 ##### Entity Definition Table 1
 
 |     | User     | Type         |
