@@ -11,6 +11,11 @@ Relates:
 Peer Reviewed: 0
 dg-publish:
 ---
+
+#todo/Personal/Low/Dev 
+- [ ] Data Analytics Projects ideas to look into
+
+
 #### 1. Title and Introduction
 - **Title of the Case Study:** 
 - **Introduction:**
@@ -176,3 +181,4 @@ dg-publish:
   - List of sources such as market reports and customer feedback data.
 - **Appendices:**
   - Supplementary materials like raw data and detailed charts.
+

@@ -4,6 +4,7 @@ tags:
   - UML
   - OOP
   - prompt
+  - typescript
 author:
   - jacgit18
   - chatgpt
@@ -120,3 +121,80 @@ What UML sign is for static member for attributes and methods;; underline or bol
 
 - **Volatile** - the value of an attribute is read from main memory and not cached thread-locally.
 
+
+## Modifiers in Typescript
+In TypeScript, you can use both the `private` keyword and the `#` prefix to define private members of a class. However, they have some differences in their implementation and usage.
+
+### `private` Keyword
+
+The `private` keyword is a TypeScript-specific feature that ensures that the member is only accessible within the class it is declared. It is compiled down to regular JavaScript where private members are not strictly enforced by the language itself but are rather a TypeScript compile-time check.
+
+Example:
+```typescript
+class Pet {
+    private name: string;
+
+    constructor(name: string) {
+        this.name = name;
+    }
+
+    getName(): string {
+        console.log("getName method called");
+        return this.name;
+    }
+
+    setName(newName: string): void {
+        if (typeof newName === "string") {
+            this.name = newName;
+        }
+    }
+}
+
+// Example usage:
+const myPet = new Pet("Buddy");
+console.log(myPet.getName());  // Logs: getName method called
+                               //       Buddy
+myPet.setName("Max");
+console.log(myPet.getName());  // Logs: getName method called
+                               //       Max
+```
+
+### `#` Prefix (Private Fields)
+
+The `#` prefix is a feature from ECMAScript (JavaScript) for truly private fields. It is enforced by the JavaScript engine itself and ensures that the field is private and not accessible from outside the class, even in plain JavaScript.
+
+Example:
+```typescript
+class Pet {
+    #name: string;
+
+    constructor(name: string) {
+        this.#name = name;
+    }
+
+    get name(): string {
+        console.log("get method called");
+        return this.#name;
+    }
+
+    set name(newName: string) {
+        if (typeof newName === "string") {
+            this.#name = newName;
+        }
+    }
+}
+
+// Example usage:
+const myPet = new Pet("Buddy");
+console.log(myPet.name);  // Logs: get method called
+                          //       Buddy
+myPet.name = "Max";
+console.log(myPet.name);  // Logs: get method called
+                          //       Max
+```
+
+### Differences and Considerations
+- **`private` keyword**: Only enforced by TypeScript at compile-time. Not truly private in the emitted JavaScript code.
+- **`#` prefix**: Truly private fields, enforced by the JavaScript engine at runtime. Requires a more recent version of JavaScript (ES2020 and above).
+
+Both approaches are useful, and the choice depends on whether you need true runtime privacy or just compile-time checks provided by TypeScript.
