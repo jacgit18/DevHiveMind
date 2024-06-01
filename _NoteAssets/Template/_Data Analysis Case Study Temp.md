@@ -13,8 +13,45 @@ dg-publish:
 ---
 
 #todo/Personal/Low/Dev 
-- [ ] Data Analytics Projects ideas to look into
+- [ ] [[Data Analytics Projects Ideas]] to look into
 
+
+
+### Data Analytics Case Study Template
+
+**Title**  
+Insert Case Study Title
+
+**Industry of Focus**  
+Specify the industry
+
+**Problem Statement**  
+Describe the specific problem you are addressing
+
+**Business Use Case**  
+Explain how the problem impacts the business and the context in which it occurs
+
+**Goals/Metrics**  
+Define the goals of the analysis and the metrics used to measure success
+
+**Deliverables**  
+List the expected outcomes and deliverables of the analysis.
+
+Might also discuss things like Milestones and Timelines in relation to case study or personal experience.
+
+**Reports** 
+may get a quick one to come up with or some type of take home depends on the company
+
+**Are Data Sets Available?**  
+Indicate whether the necessary data sets are available
+
+**Data Set List**  
+Provide a list of data sets being used
+
+**Websites Scraped**  
+List the websites from which data has been scraped, if applicable
+
+## Version 2
 
 #### 1. Title and Introduction
 - **Title of the Case Study:** 
