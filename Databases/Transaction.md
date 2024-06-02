@@ -23,6 +23,15 @@ dg-publish: true
 - **Commit:** Marks the successful end of a transaction, indicating that changes should become permanent.
 - **Rollback:** Marks the unsuccessful end, discarding any changes made since the beginning of the transaction.
 
+### Distributed Transactions
+
+
+### Transaction Locking
+Database transaction locking is a mechanism used to ensure data integrity and consistency when multiple transactions occur simultaneously in a database. Here’s an overview of how it works and how using a database like PostgreSQL can help manage it effectively:
+
+
+
+
 ### Indexing
 - An index is a data structure reducing the time for certain operations and ensuring no unwanted duplicate values.
 - RDM supports hash and b-tree indexing types.
