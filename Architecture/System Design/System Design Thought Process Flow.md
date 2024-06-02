@@ -80,6 +80,8 @@ When crafting your design, prioritize a forward-thinking approach that anticipat
 
 Create an Entity Relationship Diagram (ERD) to define clear relationships and [[Schema Design]] defining things like fact and dimension tables along with other tables like for auditing then discuss table [[Normalization & Denormalization]] along with things like [[Database Indexing]] to improve query and schema performance discuss which columns make sense to indexing and storage space being taken up by indexing. You can also talk [[Materialized Views]] to store Pre-compute complex query results and for faster access.
 
+You can also discuss [[Transaction |Transactions]] from topics like [[Distributed Transactions]] to [[Transaction Locking]]
+
 #### [[Capacity Estimation]] (5 min)
 [Indepth Video Examination of Capacity Estimation ](https://www.youtube.com/watch?v=-frNQkRz_IU)
 Focusing on network traffic and storage estimation this should be more then enough. Also make aggressive approximations numbers don't need to be exact just in a general range. doing this helps with streamlining estimations.
