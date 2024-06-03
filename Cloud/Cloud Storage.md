@@ -40,6 +40,11 @@ S3's versatility extends to hosting static websites, providing a reliable platfo
 
 For storing and archiving data, Amazon S3 offers another service called S3 Glacier. It offers three storage classes, each varying in price and retrieval time. Faster retrieval options are available at a higher cost, while slower options are more cost-effective, catering to diverse business requirements.
 
+
+![[1717343041720.jpeg]]
+
+
+
 Amazon Elastic File System (EFS) is a fully managed file storage service designed for use with Linux-based operating systems. It has gained significant attention in the realm of networking due to its robust networking capabilities and seamless integration with AWS services. Here's a refined explanation:
 
 ## Amazon Elastic File System (EFS)
