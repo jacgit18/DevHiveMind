@@ -224,3 +224,46 @@ app.listen(port, () => {
 - **Ensure consistency** in the naming and structure of your routes.
 
 By following these best practices, your non-API endpoints will be more intuitive and user-friendly.
+
+
+
+
+
+Yes, in Node.js, you can achieve similar functionality by using global variables or by extending prototypes. However, it's generally not recommended to modify global objects directly in Node.js because it can lead to unexpected behavior and make your code less modular and maintainable.
+
+Instead, you can use dependency injection or module-level variables to share functionality across your application. For example, you can create a module that exports an instance of Axios with predefined configurations and import it wherever needed in your application.
+
+Here's an example of how you could achieve similar functionality in Node.js without directly modifying global properties:
+
+```javascript
+// axiosInstance.js
+const axios = require('axios');
+
+const axiosInstance = axios.create({
+  // Your axios configurations here
+});
+
+module.exports = axiosInstance;
+```
+
+Then, in your main file:
+
+```javascript
+// main.js
+const axiosInstance = require('./axiosInstance');
+const { createApp } = require('vue');
+const App = require('./App.vue');
+const BaseButton = require('./shared/BaseButton.vue');
+const BaseCard = require('./shared/BaseCard.vue');
+
+const app = createApp(App);
+
+app.config.globalProperties.$axios = axiosInstance;
+
+app.component('base-card', BaseCard);
+app.component('base-button', BaseButton);
+
+app.mount('#app');
+```
+
+This way, you create a separate module for configuring and exporting your Axios instance, and then you import and use it in your main file. This approach keeps your code modular and makes it easier to maintain and test.
