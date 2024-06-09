@@ -1,3 +1,16 @@
+---
+tags: 
+author:
+  - gitUserNamePlaceHolder
+Comments: Placeholder comment any thing else you want to mention about the document.
+Purpose: This documentation discusses
+Status: 
+Started: 
+EditDate: 
+Relates: 
+Peer Reviewed: 0
+dg-publish:
+---
 Non-API endpoints are typically used for serving web pages, static files, or other non-JSON data in a web application. Here are a few examples of non-API endpoints:
 
 ### Example Non-API Endpoints
