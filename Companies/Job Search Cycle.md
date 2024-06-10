@@ -94,3 +94,11 @@ dg-publish:
    - Prioritize applying directly to the hiring company rather than through a third-party recruiter.
    - Consider going for direct hires to streamline communication and potentially negotiate terms more effectively.
 
+##### Questions to ask immediately after Layoff 
+- When do I receive my last paycheck?  
+- Will I receive severance pay?  
+- How long will I have to exercise my stock options?  
+- Does the company offer healthcare coverage after my last day, and if so for how long?  
+- Will you provide a reference for me?  
+- How can I get copies of my performance reviews, and by when?  
+- What will happen to my 401(k)?
