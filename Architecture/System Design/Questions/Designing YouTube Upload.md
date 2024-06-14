@@ -256,35 +256,272 @@ gPBXehTo: [[Architecture/System Design/Questions/Designing YouTube Upload.md#Tab
 
 %%
 ## Drawing
-```compressed-json
-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
+```json
+{
+	"type": "excalidraw",
+	"version": 2,
+	"source": "https://github.com/zsviczian/obsidian-excalidraw-plugin/releases/tag/2.2.4",
+	"elements": [
+		{
+			"type": "embeddable",
+			"version": 784,
+			"versionNonce": 712004242,
+			"index": "a0",
+			"isDeleted": false,
+			"id": "cqasGqqJ",
+			"fillStyle": "hachure",
+			"strokeWidth": 1,
+			"strokeStyle": "solid",
+			"roughness": 1,
+			"opacity": 100,
+			"angle": 0,
+			"x": -747.5021061454199,
+			"y": -910.619949133179,
+			"strokeColor": "#000000",
+			"backgroundColor": "transparent",
+			"width": 820.2427122401591,
+			"height": 330.5377817830738,
+			"seed": 94149,
+			"groupIds": [],
+			"frameId": null,
+			"roundness": null,
+			"boundElements": [],
+			"updated": 1716303656161,
+			"link": "[[_System Design Template#Table 1]]",
+			"locked": false,
+			"customData": {
+				"mdProps": {
+					"useObsidianDefaults": false,
+					"backgroundMatchCanvas": false,
+					"backgroundMatchElement": true,
+					"backgroundColor": "#fff",
+					"backgroundOpacity": 60,
+					"borderMatchElement": true,
+					"borderColor": "#fff",
+					"borderOpacity": 0,
+					"filenameVisible": false
+				}
+			},
+			"scale": [
+				1,
+				1
+			]
+		},
+		{
+			"type": "embeddable",
+			"version": 273,
+			"versionNonce": 828125100,
+			"index": "a1",
+			"isDeleted": false,
+			"id": "Mf9OBUwN",
+			"fillStyle": "hachure",
+			"strokeWidth": 1,
+			"strokeStyle": "solid",
+			"roughness": 1,
+			"opacity": 100,
+			"angle": 0,
+			"x": 155.71321911010398,
+			"y": -1141.4509123432636,
+			"strokeColor": "#000000",
+			"backgroundColor": "transparent",
+			"width": 598.6017113690564,
+			"height": 291.548805907991,
+			"seed": 41078,
+			"groupIds": [
+				"8iqW4reCuNgs5gs8CRDjC"
+			],
+			"frameId": null,
+			"roundness": null,
+			"boundElements": [],
+			"updated": 1716303656161,
+			"link": "[[Architecture/System Design/Questions/Designing YouTube Upload.md#Table User]]",
+			"locked": false,
+			"customData": {
+				"mdProps": {
+					"useObsidianDefaults": false,
+					"backgroundMatchCanvas": false,
+					"backgroundMatchElement": true,
+					"backgroundColor": "#fff",
+					"backgroundOpacity": 60,
+					"borderMatchElement": true,
+					"borderColor": "#fff",
+					"borderOpacity": 0,
+					"filenameVisible": false
+				}
+			},
+			"scale": [
+				1,
+				1
+			]
+		},
+		{
+			"type": "text",
+			"version": 208,
+			"versionNonce": 1209469940,
+			"index": "a2",
+			"isDeleted": false,
+			"id": "zmns1Vak",
+			"fillStyle": "solid",
+			"strokeWidth": 2,
+			"strokeStyle": "solid",
+			"roughness": 1,
+			"opacity": 100,
+			"angle": 0,
+			"x": 294.4816351961232,
+			"y": -1253.1033152810428,
+			"strokeColor": "#1e1e1e",
+			"backgroundColor": "transparent",
+			"width": 322.1463623046875,
+			"height": 72.931463503065,
+			"seed": 1743798023,
+			"groupIds": [
+				"8iqW4reCuNgs5gs8CRDjC"
+			],
+			"frameId": null,
+			"roundness": null,
+			"boundElements": [],
+			"updated": 1717778412833,
+			"link": null,
+			"locked": false,
+			"fontSize": 58.345170802452,
+			"fontFamily": 1,
+			"text": "User Table",
+			"rawText": "User Table",
+			"textAlign": "left",
+			"verticalAlign": "top",
+			"containerId": null,
+			"originalText": "User Table",
+			"autoResize": true,
+			"lineHeight": 1.25
+		},
+		{
+			"type": "embeddable",
+			"version": 114,
+			"versionNonce": 937489164,
+			"index": "a3",
+			"isDeleted": false,
+			"id": "gPBXehTo",
+			"fillStyle": "hachure",
+			"strokeWidth": 1,
+			"strokeStyle": "solid",
+			"roughness": 1,
+			"opacity": 100,
+			"angle": 0,
+			"x": 914.6775919001338,
+			"y": -974.0370603192141,
+			"strokeColor": "#000000",
+			"backgroundColor": "transparent",
+			"width": 391.4798990885421,
+			"height": 290.7396569826509,
+			"seed": 51869,
+			"groupIds": [],
+			"frameId": null,
+			"roundness": null,
+			"boundElements": [],
+			"updated": 1716303656161,
+			"link": "[[Architecture/System Design/Questions/Designing YouTube Upload.md#Table Region]]",
+			"locked": false,
+			"customData": {
+				"mdProps": {
+					"useObsidianDefaults": false,
+					"backgroundMatchCanvas": false,
+					"backgroundMatchElement": true,
+					"backgroundColor": "#fff",
+					"backgroundOpacity": 60,
+					"borderMatchElement": true,
+					"borderColor": "#fff",
+					"borderOpacity": 0,
+					"filenameVisible": false
+				}
+			},
+			"scale": [
+				1,
+				1
+			]
+		},
+		{
+			"type": "arrow",
+			"version": 77,
+			"versionNonce": 1763666891,
+			"index": "a4",
+			"isDeleted": false,
+			"id": "ftC1hzyHhNxrfFq4MBV7J",
+			"fillStyle": "solid",
+			"strokeWidth": 2,
+			"strokeStyle": "solid",
+			"roughness": 1,
+			"opacity": 100,
+			"angle": 0,
+			"x": 646.2066639453367,
+			"y": -1074.957784936098,
+			"strokeColor": "#1e1e1e",
+			"backgroundColor": "transparent",
+			"width": 365.1483832465278,
+			"height": 214.22037760416652,
+			"seed": 1700446377,
+			"groupIds": [],
+			"frameId": null,
+			"roundness": {
+				"type": 2
+			},
+			"boundElements": [],
+			"updated": 1716303656161,
+			"link": null,
+			"locked": false,
+			"startBinding": null,
+			"endBinding": null,
+			"lastCommittedPoint": null,
+			"startArrowhead": null,
+			"endArrowhead": "arrow",
+			"points": [
+				[
+					0,
+					0
+				],
+				[
+					365.1483832465278,
+					214.22037760416652
+				]
+			]
+		}
+	],
+	"appState": {
+		"theme": "light",
+		"viewBackgroundColor": "transparent",
+		"currentItemStrokeColor": "#1e1e1e",
+		"currentItemBackgroundColor": "transparent",
+		"currentItemFillStyle": "solid",
+		"currentItemStrokeWidth": 2,
+		"currentItemStrokeStyle": "solid",
+		"currentItemRoughness": 1,
+		"currentItemOpacity": 100,
+		"currentItemFontFamily": 1,
+		"currentItemFontSize": 20,
+		"currentItemTextAlign": "left",
+		"currentItemStartArrowhead": null,
+		"currentItemEndArrowhead": "arrow",
+		"scrollX": 883.3846227290417,
+		"scrollY": 2494.2048716169134,
+		"zoom": {
+			"value": 0.35000000000000003
+		},
+		"currentItemRoundness": "round",
+		"gridSize": null,
+		"gridColor": {
+			"Bold": "#C9C9C9FF",
+			"Regular": "#EDEDEDFF"
+		},
+		"currentStrokeOptions": null,
+		"previousGridSize": null,
+		"frameRendering": {
+			"enabled": true,
+			"clip": true,
+			"name": true,
+			"outline": true
+		},
+		"objectsSnapModeEnabled": false
+	},
+	"files": {}
+}
 ```
 %%
