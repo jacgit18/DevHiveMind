@@ -11,8 +11,10 @@ Relates:
 Peer Reviewed: 0
 dg-publish:
 ---
+Comparing Modern CSS Solutions (Tailwind vs MUI vs Bootstrap vs Chakra vs...)
+[https://www.youtube.com/watch?v=CQuTF-bkOgc](https://www.youtube.com/watch?v=CQuTF-bkOgc)
 
-  
+
 1. Introduction to Vue.js  
 2. Setting up a Vue.js project  
 3. Understanding Vue components  
