@@ -17,6 +17,9 @@ dg-publish:
 
 ![[Pasted image 20240620142912.png]]
 
+View > Component > Modules > Interfaces
+
+
 Creating a high-level relationship flow between objects and denoting relationships with verbs involves several steps. I'll guide you through the process of developing a high-level relationship flow, identifying key relationships and then drawing lines between objects to depict these relationships with appropriate verbs. We'll start with defining the overall structure, followed by a use case diagram, and then delve into the specific relationships.
 
 ### Step 1: Define the High-Level Structure

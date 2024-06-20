@@ -39,6 +39,13 @@ SELECT a.emp_id AS "Emp_ID",a.emp_name AS "Employee Name", b.emp_id AS "
 ```
 
 
+Inner joins returns records with a combination of values where there's overlap between two tables where you have a complete record as opposed to a inconsistent record with missing values on each row  
+  
+left join includes inconsistent records from the left excluding right  
+  
+right join is vise versa
+
+
 ![[Types of Joins.png]]
 
 ![[4 Type of Joins.gif]]
