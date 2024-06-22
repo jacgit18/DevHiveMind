@@ -158,6 +158,7 @@ Performing advanced statistical analysis or graphing
 
 # Types of visualizations
 
+![[unnamed.png]]
 
 Data analysts use specific charts to visualize quantitative and qualitative data. The following image contains common charts for visualizing these two types of data. Conceptual charts can show either quantitative or qualitative data. Take a moment to study them.
 
