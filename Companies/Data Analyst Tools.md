@@ -12,6 +12,9 @@ Peer Reviewed: 0
 dg-publish:
 ---
 When working as a data analyst, especially focusing on data visualization using tools like Tableau and Power BI, several decisions and processes come into play. Here’s a detailed look at how you might approach this, including the integration of programming languages like R and Python:  
+
+> Side Note
+> You can enhance visualizations by incorporating different patterns and textures instead of relying solely on solid colors. This approach is particularly beneficial when presenting to color-blind individuals, as varied patterns can improve clarity and accessibility.
   
 ### Decision-Making Process for Data Visualization  
   
