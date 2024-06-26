@@ -13,20 +13,21 @@ dg-publish:
 ---
 ### What is Transaction Locking?
 
-1. **Purpose**:
-    
-    - **Concurrency Control**: Prevents multiple transactions from interfering with each other, ensuring that each transaction sees a consistent view of the database.
-    - **Data Integrity**: Ensures that operations are atomic (all-or-nothing), consistent (valid state), isolated (transactions do not affect each other), and durable (changes persist).
-2. **Types of Locks**:
-    
-    - **Shared Locks (Read Locks)**: Allow multiple transactions to read a resource but prevent any from modifying it.
-    - **Exclusive Locks (Write Locks)**: Prevent any other transaction from reading or writing to the resource until the lock is released.
-    - **Row-Level Locks**: Lock individual rows to maximize concurrency.
-    - **Table-Level Locks**: Lock entire tables, often used for bulk operations.
-3. **Locking Strategies**:
-    
-    - **Optimistic Locking**: Assumes minimal conflict and only checks for conflicts at the end of a transaction.
-    - **Pessimistic Locking**: Locks resources early and holds them for the duration of the transaction to prevent conflicts.
+#### Purpose
+- **Concurrency Control**: Prevents multiple transactions from interfering with each other, ensuring that each transaction sees a consistent view of the database.
+- **Data Integrity**: Ensures that operations are atomic (all-or-nothing), consistent (valid state), isolated (transactions do not affect each other), and durable (changes persist).
+
+#### Types of Locks
+![[DBLocking.gif]]
+
+- **Shared Locks (Read Locks)**: Allow multiple transactions to read a resource but prevent any from modifying it.
+- **Exclusive Locks (Write Locks)**: Prevent any other transaction from reading or writing to the resource until the lock is released.
+- **Row-Level Locks**: Lock individual rows to maximize concurrency.
+- **Table-Level Locks**: Lock entire tables, often used for bulk operations.
+
+#### Locking Strategies
+- **Optimistic Locking**: Assumes minimal conflict and only checks for conflicts at the end of a transaction.
+- **Pessimistic Locking**: Locks resources early and holds them for the duration of the transaction to prevent conflicts.
 
 ### Using PostgreSQL for Transaction Locking
 
