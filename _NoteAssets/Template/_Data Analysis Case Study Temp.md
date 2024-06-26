@@ -17,7 +17,18 @@ dg-publish:
 
 
 
+
+
 ### Data Analytics Case Study Template
+
+
+| Date: June 26                | Course/topic: Gentrification |     |     |
+| ---------------------------- | ---------------------------- | --- | --- |
+| Prompt:                      | What                         |     |     |
+| Journal Entry:               | When i think about           |     |     |
+| Other thoughts or questions: |                              |     |     |
+
+
 
 **Title**  
 Insert Case Study Title
