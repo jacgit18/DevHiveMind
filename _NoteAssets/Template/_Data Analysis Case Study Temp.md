@@ -19,6 +19,8 @@ dg-publish:
 
 [[_AltCaseStudyTemp]]
 
+[[Case Study Template]]
+
 
 
 ### Data Analytics Case Study Template
