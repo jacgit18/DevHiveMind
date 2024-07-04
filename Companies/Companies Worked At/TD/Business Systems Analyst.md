@@ -40,11 +40,27 @@ In essence, a business systems analyst plays a crucial role in helping companies
 
 #### **BSA Attributes**
 *Percentages can vary based on the work or department*
-- 30% Data Analyst
 - 30% Business Analyst (BA)
 - 15% Software Engineer
 - 15% Scrum Master
 - 10% Quality Assurance (QA)
+- 30% Data Analyst
+	- For data analyst interview you would be given some type of case study to talk about and break down and elaborate on discussing your process while analyzing a sample data set. 
+#todo/Personal/High/Dev 
+- [ ] Have chatGPT come up with a case study and sample data set to examine and practice examining case study and data model.
+
+
+##### Excel Error Types
+
+| Error Type            | Example Formula                    | Description                             |
+| --------------------- | ---------------------------------- | --------------------------------------- |
+| DIV Error             | =A1/B1                             | Division by zero or empty cell          |
+| ERROR (Parsing Error) | =SUM(A1 A2)                        | Syntax issues, missing comma            |
+| N/A Error             | =VLOOKUP("Apple", A2:B5, 2, FALSE) | Data not found in lookup                |
+| NAME Error            | =SUMM(A1:A5)                       | Typo or incorrect function name         |
+| NUM Error             | =SQRT(-1)                          | Data doesn't make sense for calculation |
+| VALUE Error           | =SUM(A1:A3)                        | Incompatible data types                 |
+| REF Error             | =A1+B1                             | Referenced cells have been deleted      |
 
 #### **BA Attributes**
 - 50% Data Analyst

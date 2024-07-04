@@ -112,7 +112,8 @@ Worked on Data Visualization projects were I created logical data models along c
 
 By conducting needs assessments and collaborating with stakeholders, I aligned upskilling initiatives with organizational goals, optimizing resource allocation.
 
-Collaborating with a third-party upskilling firm conducting needs assessments with different population insuring that the upskilling aligned with TD Bank leadership. Besides we upskilled 200+ software engineers across 10 cohorts in Advanced Java, Spring Boot, Docker, Event-Driven Architecture, and Reactive Programming all within a 5 month spanned.
+
+Collaborating with a third-party technical training vendor conducting needs assessments with different population insuring that the upskilling aligned with TD Bank leadership. Besides we upskilled 200+ software engineers across 10 cohorts in Advanced Java, Spring Boot, Docker, Event-Driven Architecture, and Reactive Programming all within a 5 month spanned.
 
 ## TracFlo  
 

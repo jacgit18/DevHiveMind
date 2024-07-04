@@ -14,6 +14,8 @@ Relates:
 Peer Reviewed: 0
 dg-publish: true
 ---
+
+![[nextjs-visuals-2024.png]]
 Next.js is a React-based web framework that simplifies the development of web applications by providing a structured and opinionated approach. It solves several challenges faced in traditional React applications, such as server-side rendering, automatic code splitting, and easy client-side navigation.
 
 #todo/Personal/Low/Dev 
