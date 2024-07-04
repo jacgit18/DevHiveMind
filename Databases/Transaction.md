@@ -13,15 +13,48 @@ Relates:
 Peer Reviewed: 0
 dg-publish: true
 ---
-### Transactions
-- A database transaction is  a sequence of operations that is performed on a database that can also be performed as a single unit of work typically through [[Stored Procedure]] or alternative methods.
-- PostgreSQL ensures that all operations within a transaction either complete entirely or none of them do.
-- This property prevents incomplete changes in case of a failure during a transaction.
-- Transactions typically begin with a BEGIN command and end with a COMMIT or ROLLBACK.
+A database transaction is  a sequence of operations that is performed on a database that can also be performed as a single unit of work typically through [[Stored Procedure]] or alternative methods.
+
+PostgreSQL ensures that all operations within a transaction either complete entirely or none of them do.
+
+This property prevents incomplete changes in case of a failure during a transaction.
+
+Transactions typically begin with a BEGIN command and end with a COMMIT or ROLLBACK.
 
 #### Commit and Rollback
 - **Commit:** Marks the successful end of a transaction, indicating that changes should become permanent.
 - **Rollback:** Marks the unsuccessful end, discarding any changes made since the beginning of the transaction.
+
+### [[Distributed Transactions]]
+Distributed transactions are transactions that span multiple networked databases or resources. They ensure that a transaction affecting multiple systems can be completed as a single unit of work, maintaining data consistency and integrity across all involved systems.
+
+### [[Transaction Locking]]
+Database transaction locking is a mechanism used to ensure data integrity and consistency when multiple transactions occur simultaneously in a database. 
+
+
+### Atomic Writes
+
+**Atomicity** refers to the principle that a series of operations (typically a transaction) are indivisible and irreducible. This means that a write operation (or a series of write operations within a transaction) must either be fully completed or not executed at all. In other words:
+
+- **All-or-nothing:** If a write operation is atomic, either all of the data is written, or none of it is.
+- **No partial writes:** There are no intermediate states visible to other transactions or processes. Other transactions cannot see the data being partially written.
+- **Rollback capability:** If something goes wrong during the write operation, the system can roll back to the state before the write operation began.
+
+### Serializable Writes
+
+**Serializability** is a property of transaction schedules (sequences of operations) that ensures the final outcome of executing concurrent transactions is the same as if the transactions were executed serially, one after the other, without any overlap. Specifically:
+
+- **Consistency:** Even though transactions are executed concurrently, the end result should be as if they were executed in some sequential order.
+- **Isolation:** Transactions are isolated from each other in such a way that their interleaved execution does not produce results that could not be produced by some serial execution of those transactions.
+- **Conflict avoidance:** Operations that could potentially conflict are managed to ensure that their combined effect is consistent with a serial order of execution.
+
+### Key Differences
+
+- **Scope:** Atomicity is about individual operations or transactions, ensuring they are completed fully or not at all. Serializability is about the interleaving of multiple transactions, ensuring that their combined effect is consistent with some serial order.
+- **Focus:** Atomicity focuses on the integrity of a single transaction, whereas serializability focuses on the consistency and isolation of multiple transactions.
+
+In practice, both properties are crucial for maintaining data integrity and consistency in concurrent systems, but they address different aspects of transaction management. Atomicity ensures that individual transactions are executed completely, while serializability ensures that the interleaved execution of transactions does not compromise the consistency of the database.
+
 
 ### Indexing
 - An index is a data structure reducing the time for certain operations and ensuring no unwanted duplicate values.

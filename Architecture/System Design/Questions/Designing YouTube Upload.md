@@ -260,12 +260,12 @@ gPBXehTo: [[Architecture/System Design/Questions/Designing YouTube Upload.md#Tab
 {
 	"type": "excalidraw",
 	"version": 2,
-	"source": "https://github.com/zsviczian/obsidian-excalidraw-plugin/releases/tag/2.2.2",
+	"source": "https://github.com/zsviczian/obsidian-excalidraw-plugin/releases/tag/2.2.4",
 	"elements": [
 		{
 			"type": "embeddable",
-			"version": 779,
-			"versionNonce": 712004237,
+			"version": 784,
+			"versionNonce": 712004242,
 			"index": "a0",
 			"isDeleted": false,
 			"id": "cqasGqqJ",
@@ -309,8 +309,8 @@ gPBXehTo: [[Architecture/System Design/Questions/Designing YouTube Upload.md#Tab
 		},
 		{
 			"type": "embeddable",
-			"version": 268,
-			"versionNonce": 828125095,
+			"version": 273,
+			"versionNonce": 828125100,
 			"index": "a1",
 			"isDeleted": false,
 			"id": "Mf9OBUwN",
@@ -356,8 +356,8 @@ gPBXehTo: [[Architecture/System Design/Questions/Designing YouTube Upload.md#Tab
 		},
 		{
 			"type": "text",
-			"version": 207,
-			"versionNonce": 1335820913,
+			"version": 208,
+			"versionNonce": 1209469940,
 			"index": "a2",
 			"isDeleted": false,
 			"id": "zmns1Vak",
@@ -380,7 +380,7 @@ gPBXehTo: [[Architecture/System Design/Questions/Designing YouTube Upload.md#Tab
 			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1716478608130,
+			"updated": 1717778412833,
 			"link": null,
 			"locked": false,
 			"fontSize": 58.345170802452,
@@ -396,8 +396,8 @@ gPBXehTo: [[Architecture/System Design/Questions/Designing YouTube Upload.md#Tab
 		},
 		{
 			"type": "embeddable",
-			"version": 109,
-			"versionNonce": 937489159,
+			"version": 114,
+			"versionNonce": 937489164,
 			"index": "a3",
 			"isDeleted": false,
 			"id": "gPBXehTo",
@@ -500,10 +500,10 @@ gPBXehTo: [[Architecture/System Design/Questions/Designing YouTube Upload.md#Tab
 		"currentItemTextAlign": "left",
 		"currentItemStartArrowhead": null,
 		"currentItemEndArrowhead": "arrow",
-		"scrollX": 850.0840722842543,
-		"scrollY": 1269.533917786162,
+		"scrollX": 883.3846227290417,
+		"scrollY": 2494.2048716169134,
 		"zoom": {
-			"value": 0.8500000000000001
+			"value": 0.35000000000000003
 		},
 		"currentItemRoundness": "round",
 		"gridSize": null,

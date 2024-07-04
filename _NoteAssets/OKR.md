@@ -21,12 +21,11 @@ dg-publish:
 	- [ ] Continue reading [[Grokking Algorithms - An illustrated guide for programmers and other curious people.pdf#page=160|Grokking page 160]]
 - [x] Brush up on AWS fundamentals and look into getting certs. ✅ 2024-04-02
 - [ ] Practice using cloudShell
-- [ ] Look into SDK & CLI
+- [ ] Look into AWS SDK & CLI
 - [ ] Finish [[System Design Thought Process Flow]] to start system Design interview Prep next month.
 	- [ ] Look into [[Popular Meta System & Product Design]] questions.
 - [ ] Portfolio Site
 	- [ ] Revisit backend project with Docker fix Postgresql config so knex.js schema migration works
-	- [ ] or Build frontend in docker as a tangible placeholder and address postgresql later.
 	- [ ] Find API to leverage
 	- [ ] Refine [[Project Schema]]
 	- [ ] Maybe make it carpenter themed frontend to go with brand

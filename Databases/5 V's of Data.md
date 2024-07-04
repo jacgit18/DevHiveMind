@@ -11,6 +11,21 @@ Relates:
 Peer Reviewed: 0
 dg-publish:
 ---
+### Stages of Data 
+
+Plan: Decide what kind of data is needed, how it will be managed, and who will be responsible for it.  
+  
+Capture: Collect or bring in data from a variety of different sources.  
+  
+Manage: Care for and maintain the data. This includes determining how and where it is stored and the tools used to do so.  
+  
+Analyze: Use the data to solve problems, make decisions, and support business goals.  
+  
+Archive: Keep relevant data stored for long-term and future reference.  
+  
+Destroy: Remove data from storage and delete any shared copies of the data.
+
+
 ![[5 V.png]]
 
 
@@ -124,8 +139,26 @@ Here are some examples of prescriptive analytics:
 - An exam timetable that checks if students have conflicting schedules
 - Artificial intelligence (AI) systems from data-driven companies like Facebook, TikTok, and Netflix
 
+
+**Wide data(A lot of columns) is preferred when**
+  
+Creating tables and charts with a few variables about each subject  
+  
+Comparing straightforward line graphs  
+  
+  
+  
+**Long data is preferred when**
+  
+Storing a lot of variables about each subject. For example, 60 years worth of interest rates for each bank  
+  
+Performing advanced statistical analysis or graphing
+
+
+
 # Types of visualizations
 
+![[unnamed.png]]
 
 Data analysts use specific charts to visualize quantitative and qualitative data. The following image contains common charts for visualizing these two types of data. Conceptual charts can show either quantitative or qualitative data. Take a moment to study them.
 

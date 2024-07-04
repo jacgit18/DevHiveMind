@@ -7,12 +7,25 @@ author:
 Purpose: This documentation discusses best practices when it comes to data and some of the types of roles.
 Status: Refinement
 Started: 
-EditDate: 2024-02-20
+EditDate: 2024-05-25
 Relates: 
 Peer Reviewed: 0
 dg-publish:
 ---
-![[DataBuisness.png]]
+![[Data Work.jpeg]]
+
+**Business analyst** — analyzes data to help businesses improve processes, products, or services  
+  
+**Data analytics consultant** — analyzes the systems and models for using data  
+  
+**Data engineer** —prepares and integrates data from different sources for analytical use  
+  
+**Data scientist** — uses expert skills in technology and social science to find trends through data analysis  
+  
+**Data specialist** — organizes or converts data for use in databases or software systems  
+  
+**Operations analyst** — analyzes data to assess the performance of business operations and workflows
+
 ## Describe Data Meaningfully 
 
 #todo/Personal/Low/Dev 
@@ -24,6 +37,8 @@ dg-publish:
 #todo/Personal/High/Dev 
 - [ ] https://learn.microsoft.com/en-us/credentials/certifications/power-bi-data-analyst-associate/
 - [ ] https://medium.datadriveninvestor.com/chatgpt-python-power-bi-9771774810e0
+
+![[DataBuisness.png]]
 
 The data should be described using business language, such as the attributes, related events, mappings of the values, example values, business rules, etc. An enterprise business glossary should be established to ensure each business term or acronym has a consistent definition for an organization. Appropriate categorizations and classification of data elements can further enhance the data descriptions. In other words, data should be described in a common language that anyone can understand and relate to what it represents. 
 

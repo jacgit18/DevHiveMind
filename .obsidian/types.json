@@ -34,6 +34,15 @@
     "dg-publish": "checkbox",
     "excalidraw-export-embed-scene": "checkbox",
     "excalidraw-open-md": "checkbox",
-    "excalidraw-embeddable-theme": "text"
+    "excalidraw-embeddable-theme": "text",
+    "CPU Cores": "number",
+    "replication": "number",
+    "DAU": "number",
+    "MonthlyEstimation": "text",
+    "AUS": "text",
+    "Reads": "number",
+    "Writes": "number",
+    "AFRS_three": "number",
+    "userID": "number"
   }
 }

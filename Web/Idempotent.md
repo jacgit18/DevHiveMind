@@ -14,6 +14,8 @@ Relates:
 Peer Reviewed: 0
 dg-publish: false
 ---
+![[1718898320706.gif]]
+
 **Idempotence** refers to the characteristic of certain operations that can be applied multiple times without altering the outcome.
 
 In handling request failures, ensure users have a secure means to retry requests.

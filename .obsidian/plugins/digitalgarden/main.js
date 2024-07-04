@@ -17087,6 +17087,35 @@ var CompiledPublishFile = class extends PublishFile {
   }
 };
 
+// src/compiler/replaceBlockIDs.ts
+function replaceBlockIDs(markdown) {
+  const block_pattern = / \^([\w\d-]+)/g;
+  const complex_block_pattern = /\n\^([\w\d-]+)\n/g;
+  const codeBlockPattern = /```[\s\S]*?```/g;
+  const codeBlocks = [];
+  markdown = markdown.replace(codeBlockPattern, (match2) => {
+    codeBlocks.push(match2);
+    return `{{CODE_BLOCK_${codeBlocks.length - 1}}}`;
+  });
+  markdown = markdown.replace(
+    complex_block_pattern,
+    (_match, $1) => {
+      return `{ #${$1}}
+
+`;
+    }
+  );
+  markdown = markdown.replace(block_pattern, (_match, $1) => {
+    return `
+{ #${$1}}
+`;
+  });
+  codeBlocks.forEach((block, index) => {
+    markdown = markdown.replace(`{{CODE_BLOCK_${index}}}`, block);
+  });
+  return markdown;
+}
+
 // src/compiler/GardenPageCompiler.ts
 var GardenPageCompiler = class {
   constructor(vault, settings, metadataCache, getFilesMarkedForPublishing) {
@@ -17118,22 +17147,7 @@ var GardenPageCompiler = class {
       return text2;
     };
     this.createBlockIDs = () => (text2) => {
-      const block_pattern = / \^([\w\d-]+)/g;
-      const complex_block_pattern = /\n\^([\w\d-]+)\n/g;
-      text2 = text2.replace(
-        complex_block_pattern,
-        (_match, $1) => {
-          return `{ #${$1}}
-
-`;
-        }
-      );
-      text2 = text2.replace(block_pattern, (match2, $1) => {
-        return `
-{ #${$1}}
-`;
-      });
-      return text2;
+      return replaceBlockIDs(text2);
     };
     this.removeObsidianComments = () => (text2) => {
       const obsidianCommentsRegex = new RegExp("%%.+?%%", "gms");
@@ -18475,6 +18489,8 @@ var Octokit = (_a = class {
 var import_js_logger3 = __toESM(require_logger());
 var logger = import_js_logger3.default.get("repository-connection");
 var oktokitLogger = import_js_logger3.default.get("octokit");
+var IMAGE_PATH_BASE = "src/site/";
+var NOTE_PATH_BASE = "src/site/notes/";
 var RepositoryConnection = class {
   constructor({
     gardenRepository,
@@ -18592,7 +18608,7 @@ var RepositoryConnection = class {
     return __async(this, null, function* () {
       try {
         const latestCommit = yield this.octokit.request(
-          "GET /repos/{owner}/{repo}/commits/HEAD",
+          `GET /repos/{owner}/{repo}/commits/HEAD?cacheBust=${Date.now()}`,
           this.getBasePayload()
         );
         if (!latestCommit || !latestCommit.data) {
@@ -18623,6 +18639,151 @@ var RepositoryConnection = class {
       }
     });
   }
+  // NB: Do not use this, it does not work for some reason.
+  //TODO: Fix this. For now use deleteNote and deleteImage instead
+  deleteFiles(filePaths) {
+    return __async(this, null, function* () {
+      const latestCommit = yield this.getLatestCommit();
+      if (!latestCommit) {
+        logger.error("Could not get latest commit");
+        return;
+      }
+      const normalizePath = (path) => path.startsWith("/") ? path.slice(1) : path;
+      const filesToDelete = filePaths.map((path) => {
+        if (path.endsWith(".md")) {
+          return `${NOTE_PATH_BASE}${normalizePath(path)}`;
+        }
+        return `${IMAGE_PATH_BASE}${normalizePath(path)}`;
+      });
+      const repoDataPromise = this.octokit.request(
+        "GET /repos/{owner}/{repo}",
+        __spreadValues({}, this.getBasePayload())
+      );
+      const latestCommitSha = latestCommit.sha;
+      const baseTreeSha = latestCommit.commit.tree.sha;
+      const baseTree = yield this.octokit.request(
+        "GET /repos/{owner}/{repo}/git/trees/{tree_sha}?recursive=1",
+        __spreadProps(__spreadValues({}, this.getBasePayload()), {
+          tree_sha: baseTreeSha
+        })
+      );
+      const newTreeEntries = baseTree.data.tree.filter(
+        (item) => !filesToDelete.includes(item.path)
+      ).map(
+        (item) => ({
+          path: item.path,
+          mode: item.mode,
+          type: item.type,
+          sha: item.sha
+        })
+      );
+      const newTree = yield this.octokit.request(
+        "POST /repos/{owner}/{repo}/git/trees",
+        __spreadProps(__spreadValues({}, this.getBasePayload()), {
+          tree: newTreeEntries
+        })
+      );
+      const commitMessage = "Deleted multiple files";
+      const newCommit = yield this.octokit.request(
+        "POST /repos/{owner}/{repo}/git/commits",
+        __spreadProps(__spreadValues({}, this.getBasePayload()), {
+          message: commitMessage,
+          tree: newTree.data.sha,
+          parents: [latestCommitSha]
+        })
+      );
+      const defaultBranch = (yield repoDataPromise).data.default_branch;
+      yield this.octokit.request(
+        "PATCH /repos/{owner}/{repo}/git/refs/{ref}",
+        __spreadProps(__spreadValues({}, this.getBasePayload()), {
+          ref: `heads/${defaultBranch}`,
+          sha: newCommit.data.sha
+        })
+      );
+    });
+  }
+  updateFiles(files) {
+    return __async(this, null, function* () {
+      const latestCommit = yield this.getLatestCommit();
+      if (!latestCommit) {
+        logger.error("Could not get latest commit");
+        return;
+      }
+      const repoDataPromise = this.octokit.request(
+        "GET /repos/{owner}/{repo}",
+        __spreadValues({}, this.getBasePayload())
+      );
+      const latestCommitSha = latestCommit.sha;
+      const baseTreeSha = latestCommit.commit.tree.sha;
+      const normalizePath = (path) => path.startsWith("/") ? path.slice(1) : path;
+      const treePromises = files.map((file) => __async(this, null, function* () {
+        const [text2, _] = file.compiledFile;
+        try {
+          const blob = yield this.octokit.request(
+            "POST /repos/{owner}/{repo}/git/blobs",
+            __spreadProps(__spreadValues({}, this.getBasePayload()), {
+              content: text2,
+              encoding: "utf-8"
+            })
+          );
+          return {
+            path: `${NOTE_PATH_BASE}${normalizePath(file.getPath())}`,
+            mode: "100644",
+            type: "blob",
+            sha: blob.data.sha
+          };
+        } catch (error) {
+          logger.error(error);
+        }
+      }));
+      const treeAssetPromises = files.flatMap((x) => x.compiledFile[1].images).map((asset) => __async(this, null, function* () {
+        try {
+          const blob = yield this.octokit.request(
+            "POST /repos/{owner}/{repo}/git/blobs",
+            __spreadProps(__spreadValues({}, this.getBasePayload()), {
+              content: asset.content,
+              encoding: "base64"
+            })
+          );
+          return {
+            path: `${IMAGE_PATH_BASE}${normalizePath(asset.path)}`,
+            mode: "100644",
+            type: "blob",
+            sha: blob.data.sha
+          };
+        } catch (error) {
+          logger.error(error);
+        }
+      }));
+      treePromises.push(...treeAssetPromises);
+      const treeList = yield Promise.all(treePromises);
+      const tree = treeList.filter((x) => x !== void 0);
+      const newTree = yield this.octokit.request(
+        "POST /repos/{owner}/{repo}/git/trees",
+        __spreadProps(__spreadValues({}, this.getBasePayload()), {
+          base_tree: baseTreeSha,
+          tree
+        })
+      );
+      const commitMessage = "Published multiple files";
+      const newCommit = yield this.octokit.request(
+        "POST /repos/{owner}/{repo}/git/commits",
+        __spreadProps(__spreadValues({}, this.getBasePayload()), {
+          message: commitMessage,
+          tree: newTree.data.sha,
+          parents: [latestCommitSha]
+        })
+      );
+      const defaultBranch = (yield repoDataPromise).data.default_branch;
+      yield this.octokit.request(
+        "PATCH /repos/{owner}/{repo}/git/refs/heads/{branch}",
+        __spreadProps(__spreadValues({}, this.getBasePayload()), {
+          branch: defaultBranch,
+          sha: newCommit.data.sha
+        })
+      );
+    });
+  }
   getRepositoryInfo() {
     return __async(this, null, function* () {
       const repoInfo = yield this.octokit.request("GET /repos/{owner}/{repo}", __spreadValues({}, this.getBasePayload())).catch((error) => {
@@ -18646,8 +18807,8 @@ var RepositoryConnection = class {
 };
 
 // src/publisher/Publisher.ts
-var IMAGE_PATH_BASE = "src/site/img/user/";
-var NOTE_PATH_BASE = "src/site/notes/";
+var IMAGE_PATH_BASE2 = "src/site/img/user/";
+var NOTE_PATH_BASE2 = "src/site/notes/";
 var Publisher = class {
   constructor(vault, metadataCache, settings) {
     this.vault = vault;
@@ -18697,13 +18858,13 @@ var Publisher = class {
   }
   deleteNote(vaultFilePath, sha) {
     return __async(this, null, function* () {
-      const path = `${NOTE_PATH_BASE}${vaultFilePath}`;
+      const path = `${NOTE_PATH_BASE2}${vaultFilePath}`;
       return yield this.delete(path, sha);
     });
   }
   deleteImage(vaultFilePath, sha) {
     return __async(this, null, function* () {
-      const path = `${IMAGE_PATH_BASE}${vaultFilePath}`;
+      const path = `${IMAGE_PATH_BASE2}${vaultFilePath}`;
       return yield this.delete(path, sha);
     });
   }
@@ -18731,6 +18892,47 @@ var Publisher = class {
         const [text2, assets] = file.compiledFile;
         yield this.uploadText(file.getPath(), text2, file == null ? void 0 : file.remoteHash);
         yield this.uploadAssets(assets);
+        return true;
+      } catch (error) {
+        console.error(error);
+        return false;
+      }
+    });
+  }
+  deleteBatch(filePaths) {
+    return __async(this, null, function* () {
+      if (filePaths.length === 0) {
+        return true;
+      }
+      try {
+        const userGardenConnection = new RepositoryConnection({
+          gardenRepository: this.settings.githubRepo,
+          githubUserName: this.settings.githubUserName,
+          githubToken: this.settings.githubToken
+        });
+        yield userGardenConnection.deleteFiles(filePaths);
+        return true;
+      } catch (error) {
+        console.error(error);
+        return false;
+      }
+    });
+  }
+  publishBatch(files) {
+    return __async(this, null, function* () {
+      const filesToPublish = files.filter(
+        (f) => isPublishFrontmatterValid(f.frontmatter)
+      );
+      if (filesToPublish.length === 0) {
+        return true;
+      }
+      try {
+        const userGardenConnection = new RepositoryConnection({
+          gardenRepository: this.settings.githubRepo,
+          githubUserName: this.settings.githubUserName,
+          githubToken: this.settings.githubToken
+        });
+        yield userGardenConnection.updateFiles(filesToPublish);
         return true;
       } catch (error) {
         console.error(error);
@@ -18767,7 +18969,7 @@ var Publisher = class {
   uploadText(filePath, content, sha) {
     return __async(this, null, function* () {
       content = gBase64.encode(content);
-      const path = `${NOTE_PATH_BASE}${filePath}`;
+      const path = `${NOTE_PATH_BASE2}${filePath}`;
       yield this.uploadToGithub(path, content, sha);
     });
   }
@@ -18817,6 +19019,10 @@ var PublishStatusBar = class {
     this.status = this.statusBarItem.createEl("span", {
       text: `${this.numberOfNotesToPublish} files marked for publishing`
     });
+  }
+  incrementMultiple(increments) {
+    this.counter += increments;
+    this.status.innerText = `\u231BPublishing files: ${this.counter}/${this.numberOfNotesToPublish}`;
   }
   increment() {
     this.status.innerText = `\u231BPublishing files: ${++this.counter}/${this.numberOfNotesToPublish}`;
@@ -20918,7 +21124,7 @@ function create_else_block2(ctx) {
   let dispose;
   let if_block = (
     /*failedPublish*/
-    ctx[7].length > 0 && create_if_block_9(ctx)
+    ctx[16].length > 0 && create_if_block_9(ctx)
   );
   let each_value_1 = ensure_array_like(
     /*unpublishedToPublish*/
@@ -20980,7 +21186,7 @@ function create_else_block2(ctx) {
         div2,
         "width",
         /*publishProgress*/
-        ctx[13] + "%"
+        ctx[12] + "%"
       );
       attr(div3, "class", "loading-container svelte-d3dhnt");
       attr(div4, "class", "callout");
@@ -21041,30 +21247,20 @@ function create_else_block2(ctx) {
         set_data(t2, t2_value);
       if (
         /*failedPublish*/
-        ctx[7].length > 0
-      ) {
-        if (if_block) {
-          if_block.p(ctx, dirty);
-        } else {
-          if_block = create_if_block_9(ctx);
-          if_block.c();
-          if_block.m(div4, t4);
-        }
-      } else if (if_block) {
-        if_block.d(1);
-        if_block = null;
-      }
+        ctx[16].length > 0
+      )
+        if_block.p(ctx, dirty);
       if (!current || dirty & /*publishProgress*/
-      8192) {
+      4096) {
         set_style(
           div2,
           "width",
           /*publishProgress*/
-          ctx[13] + "%"
+          ctx[12] + "%"
         );
       }
       if (dirty & /*publishedPaths, unpublishedToPublish, changedToPublish, rotatingCog, processingPaths, failedPublish*/
-      33496) {
+      82264) {
         each_value_1 = ensure_array_like(
           /*unpublishedToPublish*/
           ctx[3].concat(
@@ -21092,7 +21288,7 @@ function create_else_block2(ctx) {
         check_outros();
       }
       if (dirty & /*publishedPaths, pathsToDelete, rotatingCog, processingPaths*/
-      33376) {
+      16736) {
         each_value = ensure_array_like(
           /*pathsToDelete*/
           ctx[5]
@@ -21173,7 +21369,7 @@ function create_if_block_12(ctx) {
     props: {
       tree: (
         /*unpublishedNoteTree*/
-        (_a2 = ctx[12]) != null ? _a2 : (
+        (_a2 = ctx[11]) != null ? _a2 : (
           /*emptyNode*/
           ctx[18]
         )
@@ -21188,7 +21384,7 @@ function create_if_block_12(ctx) {
     props: {
       tree: (
         /*changedNotesTree*/
-        (_b = ctx[11]) != null ? _b : (
+        (_b = ctx[10]) != null ? _b : (
           /*emptyNode*/
           ctx[18]
         )
@@ -21204,7 +21400,7 @@ function create_if_block_12(ctx) {
     props: {
       tree: (
         /*deletedNoteTree*/
-        (_c = ctx[10]) != null ? _c : (
+        (_c = ctx[9]) != null ? _c : (
           /*emptyNode*/
           ctx[18]
         )
@@ -21220,7 +21416,7 @@ function create_if_block_12(ctx) {
       readOnly: true,
       tree: (
         /*publishedNotesTree*/
-        (_d = ctx[14]) != null ? _d : (
+        (_d = ctx[13]) != null ? _d : (
           /*emptyNode*/
           ctx[18]
         )
@@ -21278,9 +21474,9 @@ function create_if_block_12(ctx) {
       var _a3, _b2, _c2, _d2;
       const treeview0_changes = {};
       if (dirty & /*unpublishedNoteTree*/
-      4096)
+      2048)
         treeview0_changes.tree = /*unpublishedNoteTree*/
-        (_a3 = ctx2[12]) != null ? _a3 : (
+        (_a3 = ctx2[11]) != null ? _a3 : (
           /*emptyNode*/
           ctx2[18]
         );
@@ -21291,9 +21487,9 @@ function create_if_block_12(ctx) {
       treeview0.$set(treeview0_changes);
       const treeview1_changes = {};
       if (dirty & /*changedNotesTree*/
-      2048)
+      1024)
         treeview1_changes.tree = /*changedNotesTree*/
-        (_b2 = ctx2[11]) != null ? _b2 : (
+        (_b2 = ctx2[10]) != null ? _b2 : (
           /*emptyNode*/
           ctx2[18]
         );
@@ -21304,9 +21500,9 @@ function create_if_block_12(ctx) {
       treeview1.$set(treeview1_changes);
       const treeview2_changes = {};
       if (dirty & /*deletedNoteTree*/
-      1024)
+      512)
         treeview2_changes.tree = /*deletedNoteTree*/
-        (_c2 = ctx2[10]) != null ? _c2 : (
+        (_c2 = ctx2[9]) != null ? _c2 : (
           /*emptyNode*/
           ctx2[18]
         );
@@ -21317,9 +21513,9 @@ function create_if_block_12(ctx) {
       treeview2.$set(treeview2_changes);
       const treeview3_changes = {};
       if (dirty & /*publishedNotesTree*/
-      16384)
+      8192)
         treeview3_changes.tree = /*publishedNotesTree*/
-        (_d2 = ctx2[14]) != null ? _d2 : (
+        (_d2 = ctx2[13]) != null ? _d2 : (
           /*emptyNode*/
           ctx2[18]
         );
@@ -21370,7 +21566,7 @@ function create_if_block2(ctx) {
   let html_tag;
   let raw_value = (
     /*bigRotatingCog*/
-    ((_a2 = ctx[16]()) == null ? void 0 : _a2.outerHTML) + ""
+    ((_a2 = ctx[15]()) == null ? void 0 : _a2.outerHTML) + ""
   );
   let t0;
   let div0;
@@ -21402,24 +21598,16 @@ function create_if_block2(ctx) {
 }
 function create_if_block_9(ctx) {
   let div;
-  let t_value = `(${/*failedPublish*/
-  ctx[7].length} failed)`;
-  let t;
   return {
     c() {
       div = element("div");
-      t = text(t_value);
+      div.textContent = `${`(${/*failedPublish*/
+      ctx[16].length} failed)`}`;
     },
     m(target, anchor) {
       insert(target, div, anchor);
-      append(div, t);
     },
-    p(ctx2, dirty) {
-      if (dirty & /*failedPublish*/
-      128 && t_value !== (t_value = `(${/*failedPublish*/
-      ctx2[7].length} failed)`))
-        set_data(t, t_value);
-    },
+    p: noop,
     d(detaching) {
       if (detaching) {
         detach(div);
@@ -21516,7 +21704,7 @@ function create_if_block_62(ctx) {
   let html_tag;
   let raw_value = (
     /*rotatingCog*/
-    ((_a2 = ctx[15]()) == null ? void 0 : _a2.outerHTML) + ""
+    ((_a2 = ctx[14]()) == null ? void 0 : _a2.outerHTML) + ""
   );
   let html_anchor;
   return {
@@ -21584,17 +21772,17 @@ function create_each_block_1(ctx) {
   const if_blocks = [];
   function select_block_type_1(ctx2, dirty) {
     if (dirty & /*processingPaths, unpublishedToPublish, changedToPublish*/
-    536)
+    280)
       show_if_1 = null;
     if (dirty & /*publishedPaths, unpublishedToPublish, changedToPublish*/
     88)
       show_if_2 = null;
-    if (dirty & /*failedPublish, unpublishedToPublish, changedToPublish*/
-    152)
+    if (dirty & /*unpublishedToPublish, changedToPublish*/
+    24)
       show_if_3 = null;
     if (show_if_1 == null)
       show_if_1 = !!/*processingPaths*/
-      ctx2[9].includes(
+      ctx2[8].includes(
         /*note*/
         ctx2[26].getPath()
       );
@@ -21610,7 +21798,7 @@ function create_each_block_1(ctx) {
       return 1;
     if (show_if_3 == null)
       show_if_3 = !!/*failedPublish*/
-      ctx2[7].includes(
+      ctx2[16].includes(
         /*note*/
         ctx2[26].getPath()
       );
@@ -21767,7 +21955,7 @@ function create_if_block_32(ctx) {
   let html_tag;
   let raw_value = (
     /*rotatingCog*/
-    ((_a2 = ctx[15]()) == null ? void 0 : _a2.outerHTML) + ""
+    ((_a2 = ctx[14]()) == null ? void 0 : _a2.outerHTML) + ""
   );
   let html_anchor;
   return {
@@ -21834,14 +22022,14 @@ function create_each_block2(ctx) {
   const if_blocks = [];
   function select_block_type_2(ctx2, dirty) {
     if (dirty & /*processingPaths, pathsToDelete*/
-    544)
+    288)
       show_if_1 = null;
     if (dirty & /*publishedPaths, pathsToDelete*/
     96)
       show_if_2 = null;
     if (show_if_1 == null)
       show_if_1 = !!/*processingPaths*/
-      ctx2[9].includes(
+      ctx2[8].includes(
         /*path*/
         ctx2[23]
       );
@@ -21959,7 +22147,7 @@ function create_fragment4(ctx) {
     ctx2[2])
       return 0;
     if (!/*showPublishingView*/
-    ctx2[8])
+    ctx2[7])
       return 1;
     return 2;
   }
@@ -22107,7 +22295,7 @@ function instance4($$self, $$props, $$invalidate) {
   let publishedPaths = [];
   let failedPublish = [];
   const publishMarkedNotes = () => __awaiter(void 0, void 0, void 0, function* () {
-    var _a2, _b, _c;
+    var _a2, _b;
     if (!unpublishedNoteTree || !changedNotesTree)
       return;
     if (!publishStatus) {
@@ -22120,34 +22308,26 @@ function instance4($$self, $$props, $$invalidate) {
     const imagesToDelete = pathsToDelete.filter((path) => publishStatus.deletedImagePaths.some((p) => p.path === path));
     $$invalidate(3, unpublishedToPublish = (_a2 = publishStatus.unpublishedNotes.filter((note) => unpublishedPaths.includes(note.getPath()))) !== null && _a2 !== void 0 ? _a2 : []);
     $$invalidate(4, changedToPublish = (_b = publishStatus === null || publishStatus === void 0 ? void 0 : publishStatus.changedNotes.filter((note) => changedPaths.includes(note.getPath()))) !== null && _b !== void 0 ? _b : []);
-    $$invalidate(8, showPublishingView = true);
-    for (const note of changedToPublish.concat(unpublishedToPublish)) {
-      processingPaths.push(note.getPath());
-      let isPublished = yield publisher.publish(note);
-      $$invalidate(9, processingPaths = processingPaths.filter((path) => path !== note.getPath()));
-      if (isPublished) {
-        $$invalidate(6, publishedPaths = [...publishedPaths, note.getPath()]);
-      } else {
-        $$invalidate(7, failedPublish = [...failedPublish, note.getPath()]);
-      }
+    $$invalidate(7, showPublishingView = true);
+    const allNotesToPublish = unpublishedToPublish.concat(changedToPublish);
+    $$invalidate(8, processingPaths = [...allNotesToPublish.map((note) => note.getPath())]);
+    yield publisher.publishBatch(allNotesToPublish);
+    $$invalidate(6, publishedPaths = [...processingPaths]);
+    $$invalidate(8, processingPaths = []);
+    for (const path of notesToDelete) {
+      $$invalidate(8, processingPaths = [...processingPaths, path]);
+      yield publisher.deleteNote(path);
+      $$invalidate(8, processingPaths = processingPaths.filter((p) => p !== path));
+      $$invalidate(6, publishedPaths = [...publishedPaths, path]);
     }
-    for (const path of [...notesToDelete, ...imagesToDelete]) {
-      processingPaths.push(path);
-      const isNote = path.endsWith(".md");
-      let isDeleted;
-      if (isNote) {
-        const sha = (_c = publishStatus.deletedNotePaths.find((p) => p.path === path)) === null || _c === void 0 ? void 0 : _c.sha;
-        isDeleted = yield publisher.deleteNote(path, sha);
-      } else {
-        isDeleted = yield publisher.deleteImage(path);
-      }
-      $$invalidate(9, processingPaths = processingPaths.filter((p) => p !== path));
-      if (isDeleted) {
-        $$invalidate(6, publishedPaths = [...publishedPaths, path]);
-      } else {
-        $$invalidate(7, failedPublish = [...failedPublish, path]);
-      }
+    for (const path of imagesToDelete) {
+      $$invalidate(8, processingPaths = [...processingPaths, path]);
+      yield publisher.deleteImage(path);
+      $$invalidate(8, processingPaths = processingPaths.filter((p) => p !== path));
+      $$invalidate(6, publishedPaths = [...publishedPaths, path]);
     }
+    $$invalidate(6, publishedPaths = [...publishedPaths, ...processingPaths]);
+    $$invalidate(8, processingPaths = []);
   });
   const emptyNode = {
     name: "",
@@ -22170,27 +22350,27 @@ function instance4($$self, $$props, $$invalidate) {
     if ($$self.$$.dirty & /*publishStatus*/
     4) {
       $:
-        $$invalidate(14, publishedNotesTree = publishStatus && filePathsToTree(publishStatus.publishedNotes.map((note) => note.getPath()), "Published Notes"));
+        $$invalidate(13, publishedNotesTree = publishStatus && filePathsToTree(publishStatus.publishedNotes.map((note) => note.getPath()), "Published Notes"));
     }
     if ($$self.$$.dirty & /*publishStatus*/
     4) {
       $:
-        $$invalidate(11, changedNotesTree = publishStatus && filePathsToTree(publishStatus.changedNotes.map((note) => note.getPath()), "Changed Notes"));
+        $$invalidate(10, changedNotesTree = publishStatus && filePathsToTree(publishStatus.changedNotes.map((note) => note.getPath()), "Changed Notes"));
     }
     if ($$self.$$.dirty & /*publishStatus*/
     4) {
       $:
-        $$invalidate(10, deletedNoteTree = publishStatus && filePathsToTree([...publishStatus.deletedNotePaths, ...publishStatus.deletedImagePaths].map((path) => path.path), "Deleted Notes"));
+        $$invalidate(9, deletedNoteTree = publishStatus && filePathsToTree([...publishStatus.deletedNotePaths, ...publishStatus.deletedImagePaths].map((path) => path.path), "Deleted Notes"));
     }
     if ($$self.$$.dirty & /*publishStatus*/
     4) {
       $:
-        $$invalidate(12, unpublishedNoteTree = publishStatus && filePathsToTree(publishStatus.unpublishedNotes.map((note) => note.getPath()), "Unpublished Notes"));
+        $$invalidate(11, unpublishedNoteTree = publishStatus && filePathsToTree(publishStatus.unpublishedNotes.map((note) => note.getPath()), "Unpublished Notes"));
     }
-    if ($$self.$$.dirty & /*publishedPaths, failedPublish, unpublishedToPublish, changedToPublish, pathsToDelete*/
-    248) {
+    if ($$self.$$.dirty & /*publishedPaths, unpublishedToPublish, changedToPublish, pathsToDelete*/
+    120) {
       $:
-        $$invalidate(13, publishProgress = (publishedPaths.length + failedPublish.length) / (unpublishedToPublish.length + changedToPublish.length + pathsToDelete.length) * 100);
+        $$invalidate(12, publishProgress = (publishedPaths.length + failedPublish.length) / (unpublishedToPublish.length + changedToPublish.length + pathsToDelete.length) * 100);
     }
   };
   return [
@@ -22201,7 +22381,6 @@ function instance4($$self, $$props, $$invalidate) {
     changedToPublish,
     pathsToDelete,
     publishedPaths,
-    failedPublish,
     showPublishingView,
     processingPaths,
     deletedNoteTree,
@@ -22211,6 +22390,7 @@ function instance4($$self, $$props, $$invalidate) {
     publishedNotesTree,
     rotatingCog,
     bigRotatingCog,
+    failedPublish,
     publishMarkedNotes,
     emptyNode,
     publishStatusManager,
@@ -23399,7 +23579,7 @@ var DigitalGardenSiteManager = class {
         path = path.substring(1);
       }
       const response = yield this.userGardenConnection.getFile(
-        NOTE_PATH_BASE + path
+        NOTE_PATH_BASE2 + path
       );
       if (!response) {
         return "";
@@ -23412,11 +23592,11 @@ var DigitalGardenSiteManager = class {
     return __async(this, null, function* () {
       const files = contentTree.tree;
       const notes = files.filter(
-        (x) => typeof x.path === "string" && x.path.startsWith(NOTE_PATH_BASE) && x.type === "blob" && x.path !== `${NOTE_PATH_BASE}notes.json`
+        (x) => typeof x.path === "string" && x.path.startsWith(NOTE_PATH_BASE2) && x.type === "blob" && x.path !== `${NOTE_PATH_BASE2}notes.json`
       );
       const hashes = {};
       for (const note of notes) {
-        const vaultPath = note.path.replace(NOTE_PATH_BASE, "");
+        const vaultPath = note.path.replace(NOTE_PATH_BASE2, "");
         hashes[vaultPath] = note.sha;
       }
       return hashes;
@@ -23427,11 +23607,11 @@ var DigitalGardenSiteManager = class {
       var _a2;
       const files = (_a2 = contentTree.tree) != null ? _a2 : [];
       const images = files.filter(
-        (x) => typeof x.path === "string" && x.path.startsWith(IMAGE_PATH_BASE) && x.type === "blob"
+        (x) => typeof x.path === "string" && x.path.startsWith(IMAGE_PATH_BASE2) && x.type === "blob"
       );
       const hashes = {};
       for (const img of images) {
-        const vaultPath = decodeURI(img.path.replace(IMAGE_PATH_BASE, ""));
+        const vaultPath = decodeURI(img.path.replace(IMAGE_PATH_BASE2, ""));
         hashes[vaultPath] = img.sha;
       }
       return hashes;
@@ -29011,64 +29191,32 @@ var DigitalGarden = class extends import_obsidian17.Plugin {
               statusBarItem,
               filesToPublish.length + filesToDelete.length + imagesToDelete.length
             );
-            let errorFiles = 0;
-            let errorDeleteFiles = 0;
-            let errorDeleteImage = 0;
             new import_obsidian17.Notice(
               `Publishing ${filesToPublish.length} notes, deleting ${filesToDelete.length} notes and ${imagesToDelete.length} images. See the status bar in lower right corner for progress.`,
               8e3
             );
-            for (const file of filesToPublish) {
-              try {
-                statusBar.increment();
-                yield publisher.publish(file);
-              } catch (e) {
-                errorFiles++;
-                new import_obsidian17.Notice(
-                  `Unable to publish note ${file.file.name}, skipping it.`
-                );
-              }
+            yield publisher.publishBatch(filesToPublish);
+            statusBar.incrementMultiple(filesToPublish.length);
+            for (const file of filesToDelete) {
+              yield publisher.deleteNote(file.path);
+              statusBar.increment();
             }
-            for (const filePath of filesToDelete) {
-              try {
-                statusBar.increment();
-                yield publisher.deleteNote(
-                  filePath.path,
-                  filePath.sha
-                );
-              } catch (e) {
-                errorDeleteFiles++;
-                new import_obsidian17.Notice(
-                  `Unable to delete note ${filePath}, skipping it.`
-                );
-              }
-            }
-            for (const filePath of imagesToDelete) {
-              try {
-                statusBar.increment();
-                yield publisher.deleteImage(
-                  filePath.path,
-                  filePath.sha
-                );
-              } catch (e) {
-                errorDeleteImage++;
-                new import_obsidian17.Notice(
-                  `Unable to delete image ${filePath}, skipping it.`
-                );
-              }
+            for (const image of imagesToDelete) {
+              yield publisher.deleteImage(image.path);
+              statusBar.increment();
             }
             statusBar.finish(8e3);
             new import_obsidian17.Notice(
-              `Successfully published ${filesToPublish.length - errorFiles} notes to your garden.`
+              `Successfully published ${filesToPublish.length} notes to your garden.`
             );
             if (filesToDelete.length > 0) {
               new import_obsidian17.Notice(
-                `Successfully deleted ${filesToDelete.length - errorDeleteFiles} notes from your garden.`
+                `Successfully deleted ${filesToDelete.length} notes from your garden.`
               );
             }
             if (imagesToDelete.length > 0) {
               new import_obsidian17.Notice(
-                `Successfully deleted ${imagesToDelete.length - errorDeleteImage} images from your garden.`
+                `Successfully deleted ${imagesToDelete.length} images from your garden.`
               );
             }
           } catch (e) {
