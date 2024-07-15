@@ -20,6 +20,6 @@ dg-publish:
 	- [ ] Decide between hive or carpenter/construction/blueprint frontend design. 
 	- [ ] look into How to set up PWAs for your website
 - [ ] Side Project 
-	- [ ] Python Web Scrapper 
-		- Search for people LinkedIns from list of people attending events scope it to New York area.
-		- Alternatively Financial market focuesed. 
+	- [ ] Python Web or Javascript Scrapper 
+		- Search for people Linkedins from list of people attending events scope it to New York area.
+		- Alternatively Financial market focused. 
