@@ -18,8 +18,8 @@ dg-publish:
 	- [ ] Look into Frontend UI Lib Decide between Chakra or Material or Tailwind.
 	- [ ] Look into in-person developer groups that can help with Docker and Knex.js issue.
 	- [ ] Decide between hive or carpenter/construction/blueprint frontend design. 
-	- [ ] look into How to set up PWAs for your website
+	- [ ] look into How to set up PWAs for your website might be easier with Vue
 - [ ] Side Project 
 	- [ ] Python Web or Javascript Scrapper 
 		- Search for people Linkedins from list of people attending events scope it to New York area.
-		- Alternatively Financial market focused. 
+		- Alternatively Financial market focused think a little along the lines of data science word cloud but more then that 
