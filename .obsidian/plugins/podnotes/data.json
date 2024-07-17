@@ -78,5 +78,10 @@
         "episodeDate": "2023-11-22T17:16:15.840Z"
       }
     ]
+  },
+  "openAIApiKey": "",
+  "transcript": {
+    "path": "transcripts/{{podcast}}/{{title}}.md",
+    "template": "# {{title}}\n\nPodcast: {{podcast}}\nDate: {{date}}\n\n{{transcript}}"
   }
 }
