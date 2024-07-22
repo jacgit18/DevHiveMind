@@ -477,6 +477,7 @@ module.exports = __toCommonJS(main_exports);
 // node_modules/svelte/internal/index.mjs
 function noop() {
 }
+var identity = (x) => x;
 function assign(tar, src) {
   for (const k in src)
     tar[k] = src[k];
@@ -574,7 +575,32 @@ function null_to_empty(value) {
   return value == null ? "" : value;
 }
 var is_client = typeof window !== "undefined";
+var now = is_client ? () => window.performance.now() : () => Date.now();
 var raf = is_client ? (cb) => requestAnimationFrame(cb) : noop;
+var tasks = /* @__PURE__ */ new Set();
+function run_tasks(now2) {
+  tasks.forEach((task) => {
+    if (!task.c(now2)) {
+      tasks.delete(task);
+      task.f();
+    }
+  });
+  if (tasks.size !== 0)
+    raf(run_tasks);
+}
+function loop(callback) {
+  let task;
+  if (tasks.size === 0)
+    raf(run_tasks);
+  return {
+    promise: new Promise((fulfill) => {
+      tasks.add(task = { c: callback, f: fulfill });
+    }),
+    abort() {
+      tasks.delete(task);
+    }
+  };
+}
 var is_hydrating = false;
 function start_hydrating() {
   is_hydrating = true;
@@ -602,6 +628,11 @@ function get_root_for_style(node) {
     return root;
   }
   return node.ownerDocument;
+}
+function append_empty_stylesheet(node) {
+  const style_element = element("style");
+  append_stylesheet(get_root_for_style(node), style_element);
+  return style_element.sheet;
 }
 function append_stylesheet(node, style) {
   append(node.head || node, style);
@@ -665,6 +696,67 @@ function custom_event(type, detail, { bubbles = false, cancelable = false } = {}
   const e = document.createEvent("CustomEvent");
   e.initCustomEvent(type, bubbles, cancelable, detail);
   return e;
+}
+var managed_styles = /* @__PURE__ */ new Map();
+var active = 0;
+function hash(str2) {
+  let hash2 = 5381;
+  let i = str2.length;
+  while (i--)
+    hash2 = (hash2 << 5) - hash2 ^ str2.charCodeAt(i);
+  return hash2 >>> 0;
+}
+function create_style_information(doc, node) {
+  const info = { stylesheet: append_empty_stylesheet(node), rules: {} };
+  managed_styles.set(doc, info);
+  return info;
+}
+function create_rule(node, a, b, duration2, delay, ease, fn, uid = 0) {
+  const step = 16.666 / duration2;
+  let keyframes = "{\n";
+  for (let p = 0; p <= 1; p += step) {
+    const t = a + (b - a) * ease(p);
+    keyframes += p * 100 + `%{${fn(t, 1 - t)}}
+`;
+  }
+  const rule = keyframes + `100% {${fn(b, 1 - b)}}
+}`;
+  const name = `__svelte_${hash(rule)}_${uid}`;
+  const doc = get_root_for_style(node);
+  const { stylesheet, rules } = managed_styles.get(doc) || create_style_information(doc, node);
+  if (!rules[name]) {
+    rules[name] = true;
+    stylesheet.insertRule(`@keyframes ${name} ${rule}`, stylesheet.cssRules.length);
+  }
+  const animation = node.style.animation || "";
+  node.style.animation = `${animation ? `${animation}, ` : ""}${name} ${duration2}ms linear ${delay}ms 1 both`;
+  active += 1;
+  return name;
+}
+function delete_rule(node, name) {
+  const previous = (node.style.animation || "").split(", ");
+  const next = previous.filter(name ? (anim) => anim.indexOf(name) < 0 : (anim) => anim.indexOf("__svelte") === -1);
+  const deleted = previous.length - next.length;
+  if (deleted) {
+    node.style.animation = next.join(", ");
+    active -= deleted;
+    if (!active)
+      clear_rules();
+  }
+}
+function clear_rules() {
+  raf(() => {
+    if (active)
+      return;
+    managed_styles.forEach((info) => {
+      const { stylesheet } = info;
+      let i = stylesheet.cssRules.length;
+      while (i--)
+        stylesheet.deleteRule(i);
+      info.rules = {};
+    });
+    managed_styles.clear();
+  });
 }
 var current_component;
 function set_current_component(component) {
@@ -764,6 +856,19 @@ function update($$) {
     $$.after_update.forEach(add_render_callback);
   }
 }
+var promise;
+function wait() {
+  if (!promise) {
+    promise = Promise.resolve();
+    promise.then(() => {
+      promise = null;
+    });
+  }
+  return promise;
+}
+function dispatch(node, direction, kind2) {
+  node.dispatchEvent(custom_event(`${direction ? "intro" : "outro"}${kind2}`));
+}
 var outroing = /* @__PURE__ */ new Set();
 var outros;
 function group_outros() {
@@ -803,7 +908,102 @@ function transition_out(block, local, detach2, callback) {
     callback();
   }
 }
-function handle_promise(promise, info) {
+var null_transition = { duration: 0 };
+function create_bidirectional_transition(node, fn, params, intro) {
+  let config = fn(node, params);
+  let t = intro ? 0 : 1;
+  let running_program = null;
+  let pending_program = null;
+  let animation_name = null;
+  function clear_animation() {
+    if (animation_name)
+      delete_rule(node, animation_name);
+  }
+  function init2(program, duration2) {
+    const d = program.b - t;
+    duration2 *= Math.abs(d);
+    return {
+      a: t,
+      b: program.b,
+      d,
+      duration: duration2,
+      start: program.start,
+      end: program.start + duration2,
+      group: program.group
+    };
+  }
+  function go(b) {
+    const { delay = 0, duration: duration2 = 300, easing = identity, tick: tick2 = noop, css } = config || null_transition;
+    const program = {
+      start: now() + delay,
+      b
+    };
+    if (!b) {
+      program.group = outros;
+      outros.r += 1;
+    }
+    if (running_program || pending_program) {
+      pending_program = program;
+    } else {
+      if (css) {
+        clear_animation();
+        animation_name = create_rule(node, t, b, duration2, delay, easing, css);
+      }
+      if (b)
+        tick2(0, 1);
+      running_program = init2(program, duration2);
+      add_render_callback(() => dispatch(node, b, "start"));
+      loop((now2) => {
+        if (pending_program && now2 > pending_program.start) {
+          running_program = init2(pending_program, duration2);
+          pending_program = null;
+          dispatch(node, running_program.b, "start");
+          if (css) {
+            clear_animation();
+            animation_name = create_rule(node, t, running_program.b, running_program.duration, 0, easing, config.css);
+          }
+        }
+        if (running_program) {
+          if (now2 >= running_program.end) {
+            tick2(t = running_program.b, 1 - t);
+            dispatch(node, running_program.b, "end");
+            if (!pending_program) {
+              if (running_program.b) {
+                clear_animation();
+              } else {
+                if (!--running_program.group.r)
+                  run_all(running_program.group.c);
+              }
+            }
+            running_program = null;
+          } else if (now2 >= running_program.start) {
+            const p = now2 - running_program.start;
+            t = running_program.a + running_program.d * easing(p / running_program.duration);
+            tick2(t, 1 - t);
+          }
+        }
+        return !!(running_program || pending_program);
+      });
+    }
+  }
+  return {
+    run(b) {
+      if (is_function(config)) {
+        wait().then(() => {
+          config = config();
+          go(b);
+        });
+      } else {
+        go(b);
+      }
+    },
+    end() {
+      clear_animation();
+      running_program = pending_program = null;
+    }
+  };
+}
+function handle_promise(promise2, info) {
   const token = info.token = {};
   function update2(type, index, key, value) {
     if (info.token !== token)
@@ -844,9 +1044,9 @@ function handle_promise(promise, info) {
       flush();
     }
   }
-  if (is_promise(promise)) {
+  if (is_promise(promise2)) {
     const current_component2 = get_current_component();
-    promise.then((value) => {
+    promise2.then((value) => {
       set_current_component(current_component2);
       update2(info.then, 1, info.value, value);
       set_current_component(null);
@@ -864,10 +1064,10 @@ function handle_promise(promise, info) {
     }
   } else {
     if (info.current !== info.then) {
-      update2(info.then, 1, info.value, promise);
+      update2(info.then, 1, info.value, promise2);
       return true;
     }
-    info.resolved = promise;
+    info.resolved = promise2;
   }
 }
 function update_await_block_branch(info, ctx, dirty) {
@@ -882,6 +1082,78 @@ function update_await_block_branch(info, ctx, dirty) {
   info.block.p(child_ctx, dirty);
 }
 var globals = typeof window !== "undefined" ? window : typeof globalThis !== "undefined" ? globalThis : global;
+function outro_and_destroy_block(block, lookup) {
+  transition_out(block, 1, 1, () => {
+    lookup.delete(block.key);
+  });
+}
+function update_keyed_each(old_blocks, dirty, get_key, dynamic, ctx, list, lookup, node, destroy, create_each_block5, next, get_context) {
+  let o = old_blocks.length;
+  let n = list.length;
+  let i = o;
+  const old_indexes = {};
+  while (i--)
+    old_indexes[old_blocks[i].key] = i;
+  const new_blocks = [];
+  const new_lookup = /* @__PURE__ */ new Map();
+  const deltas = /* @__PURE__ */ new Map();
+  i = n;
+  while (i--) {
+    const child_ctx = get_context(ctx, list, i);
+    const key = get_key(child_ctx);
+    let block = lookup.get(key);
+    if (!block) {
+      block = create_each_block5(key, child_ctx);
+      block.c();
+    } else if (dynamic) {
+      block.p(child_ctx, dirty);
+    }
+    new_lookup.set(key, new_blocks[i] = block);
+    if (key in old_indexes)
+      deltas.set(key, Math.abs(i - old_indexes[key]));
+  }
+  const will_move = /* @__PURE__ */ new Set();
+  const did_move = /* @__PURE__ */ new Set();
+  function insert2(block) {
+    transition_in(block, 1);
+    block.m(node, next);
+    lookup.set(block.key, block);
+    next = block.first;
+    n--;
+  }
+  while (o && n) {
+    const new_block = new_blocks[n - 1];
+    const old_block = old_blocks[o - 1];
+    const new_key = new_block.key;
+    const old_key = old_block.key;
+    if (new_block === old_block) {
+      next = new_block.first;
+      o--;
+      n--;
+    } else if (!new_lookup.has(old_key)) {
+      destroy(old_block, lookup);
+      o--;
+    } else if (!lookup.has(new_key) || will_move.has(new_key)) {
+      insert2(new_block);
+    } else if (did_move.has(old_key)) {
+      o--;
+    } else if (deltas.get(new_key) > deltas.get(old_key)) {
+      did_move.add(new_key);
+      insert2(new_block);
+    } else {
+      will_move.add(old_key);
+      o--;
+    }
+  }
+  while (o--) {
+    const old_block = old_blocks[o];
+    if (!new_lookup.has(old_block.key))
+      destroy(old_block, lookup);
+  }
+  while (n)
+    insert2(new_blocks[n - 1]);
+  return new_blocks;
+}
 function bind(component, name, callback) {
   const index = component.$$.props[name];
   if (index !== void 0) {
@@ -1093,7 +1365,7 @@ var import_obsidian = require("obsidian");
 var plugin = writable();
 var currentTime = writable(0);
 var duration = writable(0);
-var currentEpisode = function() {
+var currentEpisode = (() => {
   const store = writable();
   const { subscribe: subscribe2, update: update2 } = store;
   return {
@@ -1114,9 +1386,9 @@ var currentEpisode = function() {
       });
     }
   };
-}();
+})();
 var isPaused = writable(true);
-var playedEpisodes = function() {
+var playedEpisodes = (() => {
   const store = writable({});
   const { subscribe: subscribe2, update: update2, set } = store;
   return {
@@ -1137,7 +1409,7 @@ var playedEpisodes = function() {
     },
     markAsPlayed: (episode) => {
       update2((playedEpisodes2) => {
-        const playedEpisode = playedEpisodes2[episode.title];
+        const playedEpisode = playedEpisodes2[episode.title] || episode;
         if (playedEpisode) {
           playedEpisode.time = playedEpisode.duration;
           playedEpisode.finished = true;
@@ -1148,7 +1420,7 @@ var playedEpisodes = function() {
     },
     markAsUnplayed: (episode) => {
       update2((playedEpisodes2) => {
-        const playedEpisode = playedEpisodes2[episode.title];
+        const playedEpisode = playedEpisodes2[episode.title] || episode;
         if (playedEpisode) {
           playedEpisode.time = 0;
           playedEpisode.finished = false;
@@ -1158,10 +1430,11 @@ var playedEpisodes = function() {
       });
     }
   };
-}();
+})();
+var podcastsUpdated = writable(0);
 var savedFeeds = writable({});
 var episodeCache = writable({});
-var downloadedEpisodes = function() {
+var downloadedEpisodes = (() => {
   const store = writable({});
   const { subscribe: subscribe2, update: update2, set } = store;
   function isEpisodeDownloaded(episode) {
@@ -1213,8 +1486,8 @@ var downloadedEpisodes = function() {
       return get_store_value(store)[episode.podcastName]?.find((e) => e.title === episode.title);
     }
   };
-}();
-var queue = function() {
+})();
+var queue = (() => {
   const store = writable({
     icon: "list-ordered",
     name: "Queue",
@@ -1249,7 +1522,7 @@ var queue = function() {
       });
     }
   };
-}();
+})();
 var favorites = writable({
   icon: "lucide-star",
   name: "Favorites",
@@ -1257,7 +1530,7 @@ var favorites = writable({
   shouldEpisodeRemoveAfterPlay: false,
   shouldRepeat: false
 });
-var localFiles = function() {
+var localFiles = (() => {
   const store = writable({
     icon: "folder",
     name: "Local Files",
@@ -1294,10 +1567,10 @@ var localFiles = function() {
       });
     }
   };
-}();
+})();
 var playlists = writable({});
 var podcastView = writable();
-var viewState = function() {
+var viewState = (() => {
   const store = writable(0 /* PodcastGrid */);
   const { subscribe: subscribe2, set } = store;
   return {
@@ -1307,7 +1580,7 @@ var viewState = function() {
       get_store_value(podcastView)?.scrollIntoView();
     }
   };
-}();
+})();
 function addEpisodeToQueue(episode) {
   queue.update((playlist) => {
     const newEpisodes = [episode, ...playlist.episodes];
@@ -1649,7 +1922,7 @@ function instance($$self, $$props, $$invalidate) {
   let { placeholder = "" } = $$props;
   let { type = "text" } = $$props;
   let textRef;
-  const dispatch = createEventDispatcher();
+  const dispatch2 = createEventDispatcher();
   let text2;
   let { style: styles = {} } = $$props;
   onMount(() => {
@@ -1673,7 +1946,7 @@ function instance($$self, $$props, $$invalidate) {
     }
     component.onChange((newValue) => {
       $$invalidate(1, value = newValue);
-      dispatch("change", { value: newValue });
+      dispatch2("change", { value: newValue });
     });
   }
   function span_binding($$value) {
@@ -1749,7 +2022,7 @@ function instance2($$self, $$props, $$invalidate) {
   let { class: className } = $$props;
   let { style: styles } = $$props;
   let button;
-  const dispatch = createEventDispatcher();
+  const dispatch2 = createEventDispatcher();
   onMount(() => createButton(buttonRef));
   afterUpdate(() => updateButtonAttributes(button));
   function createButton(container) {
@@ -1776,7 +2049,7 @@ function instance2($$self, $$props, $$invalidate) {
     else
       btn.removeCta();
     btn.onClick((event) => {
-      dispatch("click", { event });
+      dispatch2("click", { event });
     });
     if (styles) {
       btn.buttonEl.setAttr("style", extractStylesFromObj(styles));
@@ -1836,82 +2109,43 @@ var Button = class extends SvelteComponent {
 };
 var Button_default = Button;
 
+// node_modules/svelte/transition/index.mjs
+function fade(node, { delay = 0, duration: duration2 = 400, easing = identity } = {}) {
+  const o = +getComputedStyle(node).opacity;
+  return {
+    delay,
+    duration: duration2,
+    easing,
+    css: (t) => `opacity: ${t * o}`
+  };
+}
+
 // src/ui/settings/PodcastResultCard.svelte
 function add_css(target) {
-  append_styles(target, "svelte-19t0wm1", ".podcast-query-card.svelte-19t0wm1{display:flex;flex-direction:column;align-items:center;justify-content:center;width:100%;height:100%}.podcast-query-image-container.svelte-19t0wm1{width:100%;display:flex;align-items:center;justify-content:center}.podcast-query-heading.svelte-19t0wm1{text-align:center}.podcast-query-button-container.svelte-19t0wm1{margin-top:auto}");
+  append_styles(target, "svelte-1ww0fav", ".podcast-result-card.svelte-1ww0fav{display:flex;align-items:center;padding:16px;border:1px solid var(--background-modifier-border);border-radius:8px;background-color:var(--background-secondary);max-width:100%;transition:all 0.3s ease}.podcast-result-card.svelte-1ww0fav:hover{box-shadow:0 2px 8px rgba(0, 0, 0, 0.1);transform:translateY(-2px)}.podcast-artwork.svelte-1ww0fav{width:70px;height:70px;object-fit:cover;border-radius:4px;margin-right:20px;flex-shrink:0}.podcast-info.svelte-1ww0fav{flex-grow:1;min-width:0;padding-right:12px}.podcast-title.svelte-1ww0fav{margin:0 0 6px 12px;font-size:16px;font-weight:bold;line-height:1.3;word-break:break-word}.podcast-actions.svelte-1ww0fav{display:flex;align-items:center;flex-shrink:0}");
 }
-function create_fragment3(ctx) {
-  let div2;
-  let div0;
-  let img;
-  let img_src_value;
-  let img_alt_value;
-  let t0;
-  let h4;
-  let t1_value = ctx[0].title + "";
-  let t1;
-  let t2;
-  let div1;
+function create_else_block(ctx) {
   let button;
   let current;
   button = new Button_default({
     props: {
-      text: ctx[1] ? "Remove" : "Add",
-      warning: ctx[1],
-      style: { "cursor": "pointer" }
+      icon: "plus",
+      ariaLabel: `Add ${ctx[0].title} podcast`
     }
   });
-  button.$on("click", function() {
-    if (is_function(ctx[1] ? ctx[3] : ctx[2]))
-      (ctx[1] ? ctx[3] : ctx[2]).apply(this, arguments);
-  });
+  button.$on("click", ctx[2]);
   return {
     c() {
-      div2 = element("div");
-      div0 = element("div");
-      img = element("img");
-      t0 = space();
-      h4 = element("h4");
-      t1 = text(t1_value);
-      t2 = space();
-      div1 = element("div");
       create_component(button.$$.fragment);
-      set_style(img, "width", "100%");
-      if (!src_url_equal(img.src, img_src_value = ctx[0].artworkUrl))
-        attr(img, "src", img_src_value);
-      attr(img, "alt", img_alt_value = ctx[0].title);
-      attr(div0, "class", "podcast-query-image-container svelte-19t0wm1");
-      attr(h4, "class", "podcast-query-heading svelte-19t0wm1");
-      attr(div1, "class", "podcast-query-button-container svelte-19t0wm1");
-      attr(div2, "class", "podcast-query-card svelte-19t0wm1");
     },
     m(target, anchor) {
-      insert(target, div2, anchor);
-      append(div2, div0);
-      append(div0, img);
-      append(div2, t0);
-      append(div2, h4);
-      append(h4, t1);
-      append(div2, t2);
-      append(div2, div1);
-      mount_component(button, div1, null);
+      mount_component(button, target, anchor);
       current = true;
     },
-    p(new_ctx, [dirty]) {
-      ctx = new_ctx;
-      if (!current || dirty & 1 && !src_url_equal(img.src, img_src_value = ctx[0].artworkUrl)) {
-        attr(img, "src", img_src_value);
-      }
-      if (!current || dirty & 1 && img_alt_value !== (img_alt_value = ctx[0].title)) {
-        attr(img, "alt", img_alt_value);
-      }
-      if ((!current || dirty & 1) && t1_value !== (t1_value = ctx[0].title + ""))
-        set_data(t1, t1_value);
+    p(ctx2, dirty) {
       const button_changes = {};
-      if (dirty & 2)
-        button_changes.text = ctx[1] ? "Remove" : "Add";
-      if (dirty & 2)
-        button_changes.warning = ctx[1];
+      if (dirty & 1)
+        button_changes.ariaLabel = `Add ${ctx2[0].title} podcast`;
       button.$set(button_changes);
     },
     i(local) {
@@ -1925,21 +2159,172 @@ function create_fragment3(ctx) {
       current = false;
     },
     d(detaching) {
+      destroy_component(button, detaching);
+    }
+  };
+}
+function create_if_block(ctx) {
+  let button;
+  let current;
+  button = new Button_default({
+    props: {
+      icon: "trash",
+      ariaLabel: `Remove ${ctx[0].title} podcast`
+    }
+  });
+  button.$on("click", ctx[3]);
+  return {
+    c() {
+      create_component(button.$$.fragment);
+    },
+    m(target, anchor) {
+      mount_component(button, target, anchor);
+      current = true;
+    },
+    p(ctx2, dirty) {
+      const button_changes = {};
+      if (dirty & 1)
+        button_changes.ariaLabel = `Remove ${ctx2[0].title} podcast`;
+      button.$set(button_changes);
+    },
+    i(local) {
+      if (current)
+        return;
+      transition_in(button.$$.fragment, local);
+      current = true;
+    },
+    o(local) {
+      transition_out(button.$$.fragment, local);
+      current = false;
+    },
+    d(detaching) {
+      destroy_component(button, detaching);
+    }
+  };
+}
+function create_fragment3(ctx) {
+  let div2;
+  let img;
+  let img_src_value;
+  let img_alt_value;
+  let t0;
+  let div0;
+  let h3;
+  let t1_value = ctx[0].title + "";
+  let t1;
+  let t2;
+  let div1;
+  let current_block_type_index;
+  let if_block;
+  let div2_transition;
+  let current;
+  const if_block_creators = [create_if_block, create_else_block];
+  const if_blocks = [];
+  function select_block_type(ctx2, dirty) {
+    if (ctx2[1])
+      return 0;
+    return 1;
+  }
+  current_block_type_index = select_block_type(ctx, -1);
+  if_block = if_blocks[current_block_type_index] = if_block_creators[current_block_type_index](ctx);
+  return {
+    c() {
+      div2 = element("div");
+      img = element("img");
+      t0 = space();
+      div0 = element("div");
+      h3 = element("h3");
+      t1 = text(t1_value);
+      t2 = space();
+      div1 = element("div");
+      if_block.c();
+      if (!src_url_equal(img.src, img_src_value = ctx[0].artworkUrl))
+        attr(img, "src", img_src_value);
+      attr(img, "alt", img_alt_value = `Artwork for ${ctx[0].title}`);
+      attr(img, "class", "podcast-artwork svelte-1ww0fav");
+      attr(h3, "class", "podcast-title svelte-1ww0fav");
+      attr(div0, "class", "podcast-info svelte-1ww0fav");
+      attr(div1, "class", "podcast-actions svelte-1ww0fav");
+      attr(div2, "class", "podcast-result-card svelte-1ww0fav");
+    },
+    m(target, anchor) {
+      insert(target, div2, anchor);
+      append(div2, img);
+      append(div2, t0);
+      append(div2, div0);
+      append(div0, h3);
+      append(h3, t1);
+      append(div2, t2);
+      append(div2, div1);
+      if_blocks[current_block_type_index].m(div1, null);
+      current = true;
+    },
+    p(ctx2, [dirty]) {
+      if (!current || dirty & 1 && !src_url_equal(img.src, img_src_value = ctx2[0].artworkUrl)) {
+        attr(img, "src", img_src_value);
+      }
+      if (!current || dirty & 1 && img_alt_value !== (img_alt_value = `Artwork for ${ctx2[0].title}`)) {
+        attr(img, "alt", img_alt_value);
+      }
+      if ((!current || dirty & 1) && t1_value !== (t1_value = ctx2[0].title + ""))
+        set_data(t1, t1_value);
+      let previous_block_index = current_block_type_index;
+      current_block_type_index = select_block_type(ctx2, dirty);
+      if (current_block_type_index === previous_block_index) {
+        if_blocks[current_block_type_index].p(ctx2, dirty);
+      } else {
+        group_outros();
+        transition_out(if_blocks[previous_block_index], 1, 1, () => {
+          if_blocks[previous_block_index] = null;
+        });
+        check_outros();
+        if_block = if_blocks[current_block_type_index];
+        if (!if_block) {
+          if_block = if_blocks[current_block_type_index] = if_block_creators[current_block_type_index](ctx2);
+          if_block.c();
+        } else {
+          if_block.p(ctx2, dirty);
+        }
+        transition_in(if_block, 1);
+        if_block.m(div1, null);
+      }
+    },
+    i(local) {
+      if (current)
+        return;
+      transition_in(if_block);
+      add_render_callback(() => {
+        if (!div2_transition)
+          div2_transition = create_bidirectional_transition(div2, fade, { duration: 300 }, true);
+        div2_transition.run(1);
+      });
+      current = true;
+    },
+    o(local) {
+      transition_out(if_block);
+      if (!div2_transition)
+        div2_transition = create_bidirectional_transition(div2, fade, { duration: 300 }, false);
+      div2_transition.run(0);
+      current = false;
+    },
+    d(detaching) {
       if (detaching)
         detach(div2);
-      destroy_component(button);
+      if_blocks[current_block_type_index].d();
+      if (detaching && div2_transition)
+        div2_transition.end();
     }
   };
 }
 function instance3($$self, $$props, $$invalidate) {
   let { podcast } = $$props;
   let { isSaved = false } = $$props;
-  const dispatch = createEventDispatcher();
-  function onClickAddPodcast() {
-    dispatch("addPodcast", { podcast });
+  const dispatch2 = createEventDispatcher();
+  function onAddPodcast() {
+    dispatch2("addPodcast", { podcast });
   }
-  function onClickRemovePodcast() {
-    dispatch("removePodcast", { podcast });
+  function onRemovePodcast() {
+    dispatch2("removePodcast", { podcast });
   }
   $$self.$$set = ($$props2) => {
     if ("podcast" in $$props2)
@@ -1947,7 +2332,7 @@ function instance3($$self, $$props, $$invalidate) {
     if ("isSaved" in $$props2)
       $$invalidate(1, isSaved = $$props2.isSaved);
   };
-  return [podcast, isSaved, onClickAddPodcast, onClickRemovePodcast];
+  return [podcast, isSaved, onAddPodcast, onRemovePodcast];
 }
 var PodcastResultCard = class extends SvelteComponent {
   constructor(options) {
@@ -1959,38 +2344,49 @@ var PodcastResultCard_default = PodcastResultCard;
 
 // src/ui/settings/PodcastQueryGrid.svelte
 function add_css2(target) {
-  append_styles(target, "svelte-lyr6b4", ".podcast-query-container.svelte-lyr6b4{margin-bottom:2rem}.podcast-query-results.svelte-lyr6b4{width:100%;height:100%;display:grid;grid-gap:1rem}.grid-3.svelte-lyr6b4{grid-template-columns:repeat(3, 1fr)}.grid-2.svelte-lyr6b4{grid-template-columns:repeat(2, 1fr)}.grid-1.svelte-lyr6b4{grid-template-columns:repeat(1, 1fr)}");
+  append_styles(target, "svelte-nkazu8", ".podcast-query-container.svelte-nkazu8{margin-bottom:2rem}.podcast-query-results.svelte-nkazu8{display:grid;grid-gap:16px;grid-template-columns:repeat(auto-fill, minmax(280px, 1fr))}@media(max-width: 600px){.podcast-query-results.svelte-nkazu8{grid-template-columns:1fr}}");
 }
 function get_each_context(ctx, list, i) {
   const child_ctx = ctx.slice();
-  child_ctx[6] = list[i];
+  child_ctx[11] = list[i];
   return child_ctx;
 }
-function create_each_block(ctx) {
+function create_each_block(key_1, ctx) {
+  let div;
   let podcastresultcard;
+  let t;
   let current;
   podcastresultcard = new PodcastResultCard_default({
     props: {
-      podcast: ctx[6],
-      isSaved: typeof ctx[6].url === "string" && ctx[2][ctx[6].title]?.url === ctx[6].url
+      podcast: ctx[11],
+      isSaved: typeof ctx[11].url === "string" && ctx[1][ctx[11].title]?.url === ctx[11].url
     }
   });
   podcastresultcard.$on("addPodcast", ctx[4]);
   podcastresultcard.$on("removePodcast", ctx[5]);
   return {
+    key: key_1,
+    first: null,
     c() {
+      div = element("div");
       create_component(podcastresultcard.$$.fragment);
+      t = space();
+      attr(div, "role", "listitem");
+      this.first = div;
     },
     m(target, anchor) {
-      mount_component(podcastresultcard, target, anchor);
+      insert(target, div, anchor);
+      mount_component(podcastresultcard, div, null);
+      append(div, t);
       current = true;
     },
-    p(ctx2, dirty) {
+    p(new_ctx, dirty) {
+      ctx = new_ctx;
       const podcastresultcard_changes = {};
       if (dirty & 1)
-        podcastresultcard_changes.podcast = ctx2[6];
-      if (dirty & 5)
-        podcastresultcard_changes.isSaved = typeof ctx2[6].url === "string" && ctx2[2][ctx2[6].title]?.url === ctx2[6].url;
+        podcastresultcard_changes.podcast = ctx[11];
+      if (dirty & 3)
+        podcastresultcard_changes.isSaved = typeof ctx[11].url === "string" && ctx[1][ctx[11].title]?.url === ctx[11].url;
       podcastresultcard.$set(podcastresultcard_changes);
     },
     i(local) {
@@ -2004,32 +2400,42 @@ function create_each_block(ctx) {
       current = false;
     },
     d(detaching) {
-      destroy_component(podcastresultcard, detaching);
+      if (detaching)
+        detach(div);
+      destroy_component(podcastresultcard);
     }
   };
 }
 function create_fragment4(ctx) {
   let div1;
   let text_1;
+  let updating_el;
   let t;
   let div0;
-  let div0_class_value;
+  let each_blocks = [];
+  let each_1_lookup = /* @__PURE__ */ new Map();
+  let div1_transition;
   let current;
-  text_1 = new Text_default({
-    props: {
-      placeholder: "Search...",
-      style: { width: "100%", "margin-bottom": "1rem" }
-    }
-  });
+  function text_1_el_binding(value) {
+    ctx[8](value);
+  }
+  let text_1_props = {
+    placeholder: "Search or enter feed URL...",
+    style: { width: "100%", "margin-bottom": "1rem" }
+  };
+  if (ctx[2] !== void 0) {
+    text_1_props.el = ctx[2];
+  }
+  text_1 = new Text_default({ props: text_1_props });
+  binding_callbacks.push(() => bind(text_1, "el", text_1_el_binding));
   text_1.$on("change", ctx[3]);
   let each_value = ctx[0];
-  let each_blocks = [];
+  const get_key = (ctx2) => ctx2[11].url;
   for (let i = 0; i < each_value.length; i += 1) {
-    each_blocks[i] = create_each_block(get_each_context(ctx, each_value, i));
+    let child_ctx = get_each_context(ctx, each_value, i);
+    let key = get_key(child_ctx);
+    each_1_lookup.set(key, each_blocks[i] = create_each_block(key, child_ctx));
   }
-  const out = (i) => transition_out(each_blocks[i], 1, 1, () => {
-    each_blocks[i] = null;
-  });
   return {
     c() {
       div1 = element("div");
@@ -2039,11 +2445,10 @@ function create_fragment4(ctx) {
       for (let i = 0; i < each_blocks.length; i += 1) {
         each_blocks[i].c();
       }
-      attr(div0, "class", div0_class_value = null_to_empty(`
-            podcast-query-results
-            ${ctx[1]}
-        `) + " svelte-lyr6b4");
-      attr(div1, "class", "podcast-query-container svelte-lyr6b4");
+      attr(div0, "class", "podcast-query-results svelte-nkazu8");
+      attr(div0, "role", "list");
+      attr(div0, "aria-label", "Podcast search results");
+      attr(div1, "class", "podcast-query-container svelte-nkazu8");
     },
     m(target, anchor) {
       insert(target, div1, anchor);
@@ -2056,32 +2461,18 @@ function create_fragment4(ctx) {
       current = true;
     },
     p(ctx2, [dirty]) {
-      if (dirty & 53) {
-        each_value = ctx2[0];
-        let i;
-        for (i = 0; i < each_value.length; i += 1) {
-          const child_ctx = get_each_context(ctx2, each_value, i);
-          if (each_blocks[i]) {
-            each_blocks[i].p(child_ctx, dirty);
-            transition_in(each_blocks[i], 1);
-          } else {
-            each_blocks[i] = create_each_block(child_ctx);
-            each_blocks[i].c();
-            transition_in(each_blocks[i], 1);
-            each_blocks[i].m(div0, null);
-          }
-        }
-        group_outros();
-        for (i = each_value.length; i < each_blocks.length; i += 1) {
-          out(i);
-        }
-        check_outros();
+      const text_1_changes = {};
+      if (!updating_el && dirty & 4) {
+        updating_el = true;
+        text_1_changes.el = ctx2[2];
+        add_flush_callback(() => updating_el = false);
       }
-      if (!current || dirty & 2 && div0_class_value !== (div0_class_value = null_to_empty(`
-            podcast-query-results
-            ${ctx2[1]}
-        `) + " svelte-lyr6b4")) {
-        attr(div0, "class", div0_class_value);
+      text_1.$set(text_1_changes);
+      if (dirty & 51) {
+        each_value = ctx2[0];
+        group_outros();
+        each_blocks = update_keyed_each(each_blocks, dirty, get_key, 1, ctx2, each_value, each_1_lookup, div0, outro_and_destroy_block, create_each_block, null, get_each_context);
+        check_outros();
       }
     },
     i(local) {
@@ -2091,48 +2482,71 @@ function create_fragment4(ctx) {
       for (let i = 0; i < each_value.length; i += 1) {
         transition_in(each_blocks[i]);
       }
+      add_render_callback(() => {
+        if (!div1_transition)
+          div1_transition = create_bidirectional_transition(div1, fade, { duration: 300 }, true);
+        div1_transition.run(1);
+      });
       current = true;
     },
     o(local) {
       transition_out(text_1.$$.fragment, local);
-      each_blocks = each_blocks.filter(Boolean);
       for (let i = 0; i < each_blocks.length; i += 1) {
         transition_out(each_blocks[i]);
       }
+      if (!div1_transition)
+        div1_transition = create_bidirectional_transition(div1, fade, { duration: 300 }, false);
+      div1_transition.run(0);
       current = false;
     },
     d(detaching) {
       if (detaching)
         detach(div1);
       destroy_component(text_1);
-      destroy_each(each_blocks, detaching);
+      for (let i = 0; i < each_blocks.length; i += 1) {
+        each_blocks[i].d();
+      }
+      if (detaching && div1_transition)
+        div1_transition.end();
     }
   };
 }
 function instance4($$self, $$props, $$invalidate) {
   let $savedFeeds;
-  component_subscribe($$self, savedFeeds, ($$value) => $$invalidate(2, $savedFeeds = $$value));
+  let $podcastsUpdated;
+  component_subscribe($$self, savedFeeds, ($$value) => $$invalidate(1, $savedFeeds = $$value));
+  component_subscribe($$self, podcastsUpdated, ($$value) => $$invalidate(7, $podcastsUpdated = $$value));
   let searchResults = [];
   let gridSizeClass = "grid-3";
-  if (searchResults.length % 3 === 0 || searchResults.length > 3) {
-    gridSizeClass = "grid-3";
-  } else if (searchResults.length % 2 === 0) {
-    gridSizeClass = "grid-2";
-  } else if (searchResults.length % 1 === 0) {
-    gridSizeClass = "grid-1";
+  let searchQuery = "";
+  let searchInput;
+  onMount(() => {
+    updateSearchResults();
+    if (searchInput) {
+      searchInput.focus();
+    }
+  });
+  function updateSearchResults() {
+    if (searchQuery.trim() === "") {
+      $$invalidate(0, searchResults = Object.values($savedFeeds));
+    }
   }
   const debouncedUpdate = (0, import_obsidian6.debounce)(({ detail: { value } }) => __awaiter(void 0, void 0, void 0, function* () {
+    $$invalidate(6, searchQuery = value);
     const customFeedUrl = checkStringIsUrl(value);
     if (customFeedUrl) {
       const feed = yield new FeedParser().getFeed(customFeedUrl.href);
       $$invalidate(0, searchResults = [feed]);
-      return;
+    } else if (value.trim() === "") {
+      updateSearchResults();
+    } else {
+      $$invalidate(0, searchResults = yield queryiTunesPodcasts(value));
     }
-    $$invalidate(0, searchResults = yield queryiTunesPodcasts(value));
   }), 300, true);
   function addPodcast(event) {
     const { podcast } = event.detail;
     savedFeeds.update((feeds) => Object.assign(Object.assign({}, feeds), { [podcast.title]: podcast }));
+    updateSearchResults();
   }
   function removePodcast(event) {
     const { podcast } = event.detail;
@@ -2141,14 +2555,43 @@ function instance4($$self, $$props, $$invalidate) {
       delete newFeeds[podcast.title];
       return newFeeds;
     });
+    updateSearchResults();
   }
+  function text_1_el_binding(value) {
+    searchInput = value;
+    $$invalidate(2, searchInput);
+  }
+  $$self.$$.update = () => {
+    if ($$self.$$.dirty & 194) {
+      $: {
+        if (searchQuery.trim() === "") {
+          $$invalidate(0, searchResults = Object.values($savedFeeds));
+        }
+        $podcastsUpdated;
+      }
+    }
+    if ($$self.$$.dirty & 1) {
+      $: {
+        if (searchResults.length % 3 === 0 || searchResults.length > 3) {
+          gridSizeClass = "grid-3";
+        } else if (searchResults.length % 2 === 0) {
+          gridSizeClass = "grid-2";
+        } else if (searchResults.length % 1 === 0) {
+          gridSizeClass = "grid-1";
+        }
+      }
+    }
+  };
   return [
     searchResults,
-    gridSizeClass,
     $savedFeeds,
+    searchInput,
     debouncedUpdate,
     addPodcast,
-    removePodcast
+    removePodcast,
+    searchQuery,
+    $podcastsUpdated,
+    text_1_el_binding
   ];
 }
 var PodcastQueryGrid = class extends SvelteComponent {
@@ -2213,7 +2656,7 @@ function instance5($$self, $$props, $$invalidate) {
   let ref;
   let { style: styles = {} } = $$props;
   let stylesStr;
-  const dispatch = createEventDispatcher();
+  const dispatch2 = createEventDispatcher();
   onMount(() => {
     (0, import_obsidian7.setIcon)(ref, icon, size);
     $$invalidate(2, ref.style.cssText = stylesStr, ref);
@@ -2223,7 +2666,7 @@ function instance5($$self, $$props, $$invalidate) {
     $$invalidate(2, ref.style.cssText = stylesStr, ref);
   });
   function forwardClick(event) {
-    dispatch("click", { event });
+    dispatch2("click", { event });
   }
   function span_binding($$value) {
     binding_callbacks[$$value ? "unshift" : "push"](() => {
@@ -2269,7 +2712,7 @@ var Icon_default = Icon;
 function add_css4(target) {
   append_styles(target, "svelte-nlujum", ".playlist-item.svelte-nlujum{display:flex;align-items:center;justify-content:space-between;padding:0.5rem;border-bottom:1px solid var(--background-modifier-border);width:100%}.playlist-item-left.svelte-nlujum{display:flex;align-items:center}.playlist-item-controls.svelte-nlujum{display:flex;align-items:center;gap:0.25rem}");
 }
-function create_if_block(ctx) {
+function create_if_block2(ctx) {
   let icon;
   let current;
   icon = new Icon_default({
@@ -2335,7 +2778,7 @@ function create_fragment6(ctx) {
       size: 20
     }
   });
-  let if_block = ctx[1] && create_if_block(ctx);
+  let if_block = ctx[1] && create_if_block2(ctx);
   return {
     c() {
       div2 = element("div");
@@ -2389,7 +2832,7 @@ function create_fragment6(ctx) {
             transition_in(if_block, 1);
           }
         } else {
-          if_block = create_if_block(ctx2);
+          if_block = create_if_block2(ctx2);
           if_block.c();
           transition_in(if_block, 1);
           if_block.m(div1, null);
@@ -2427,10 +2870,10 @@ function instance6($$self, $$props, $$invalidate) {
   let { playlist } = $$props;
   let { showDeleteButton = true } = $$props;
   let clickedDelete = false;
-  const dispatch = createEventDispatcher();
+  const dispatch2 = createEventDispatcher();
   function onClickedDelete(event) {
     if (clickedDelete) {
-      dispatch("delete", { value: playlist });
+      dispatch2("delete", { value: playlist });
       return;
     }
     $$invalidate(2, clickedDelete = true);
@@ -2439,7 +2882,7 @@ function instance6($$self, $$props, $$invalidate) {
     }, 2e3);
   }
   function onClickedRepeat(event) {
-    dispatch("toggleRepeat", { value: playlist });
+    dispatch2("toggleRepeat", { value: playlist });
   }
   $$self.$$set = ($$props2) => {
     if ("playlist" in $$props2)
@@ -2486,7 +2929,7 @@ function instance7($$self, $$props, $$invalidate) {
   let dropdownRef;
   let dropdown;
   let { style: styles } = $$props;
-  const dispatch = createEventDispatcher();
+  const dispatch2 = createEventDispatcher();
   onMount(() => {
     dropdown = new import_obsidian8.DropdownComponent(dropdownRef);
     updateDropdownAttributes(dropdown);
@@ -2499,7 +2942,7 @@ function instance7($$self, $$props, $$invalidate) {
     if (disabled)
       dropdown2.setDisabled(disabled);
     dropdown2.onChange((value2) => {
-      dispatch("change", { value: value2 });
+      dispatch2("change", { value: value2 });
     });
     if (styles) {
       dropdown2.selectEl.setAttr("style", extractStylesFromObj(styles));
@@ -4265,60 +4708,135 @@ function replaceIllegalFileNameCharactersInString(string) {
 
 // src/opml.ts
 var import_obsidian10 = require("obsidian");
-async function importOPML(targetFile) {
-  const fileContent = await app.vault.cachedRead(targetFile);
-  const dp = new DOMParser();
-  const dom = dp.parseFromString(fileContent, "application/xml");
-  const podcastEntryNodes = dom.querySelectorAll("outline[text][xmlUrl]");
-  const incompletePodcastsToAdd = [];
-  for (let i = 0; i < podcastEntryNodes.length; i++) {
-    const node = podcastEntryNodes.item(i);
-    const text2 = node.getAttribute("text");
-    const xmlUrl = node.getAttribute("xmlUrl");
-    if (!text2 || !xmlUrl) {
-      continue;
-    }
-    incompletePodcastsToAdd.push({
-      title: text2,
-      url: xmlUrl
-    });
+function TimerNotice(heading, initialMessage) {
+  let currentMessage = initialMessage;
+  const startTime = Date.now();
+  let stopTime;
+  const notice = new import_obsidian10.Notice(initialMessage, 0);
+  function formatMsg(message) {
+    return `${heading} (${getTime()}):
+
+${message}`;
   }
-  const podcasts = await Promise.all(incompletePodcastsToAdd.map(async (feed) => {
-    return new FeedParser().getFeed(feed.url);
-  }));
-  savedFeeds.update((feeds) => {
-    for (const pod of podcasts) {
-      if (feeds[pod.title])
+  function update2(message) {
+    currentMessage = message;
+    notice.setMessage(formatMsg(currentMessage));
+  }
+  const interval = setInterval(() => {
+    notice.setMessage(formatMsg(currentMessage));
+  }, 1e3);
+  function getTime() {
+    return formatTime(stopTime ? stopTime - startTime : Date.now() - startTime);
+  }
+  return {
+    update: update2,
+    hide: () => notice.hide(),
+    stop: () => {
+      stopTime = Date.now();
+      clearInterval(interval);
+    }
+  };
+}
+function formatTime(ms) {
+  const seconds = Math.floor(ms / 1e3);
+  const minutes = Math.floor(seconds / 60);
+  const hours = Math.floor(minutes / 60);
+  return `${hours.toString().padStart(2, "0")}:${(minutes % 60).toString().padStart(2, "0")}:${(seconds % 60).toString().padStart(2, "0")}`;
+}
+async function importOPML(opml) {
+  try {
+    const dp = new DOMParser();
+    const dom = dp.parseFromString(opml, "application/xml");
+    if (dom.documentElement.nodeName === "parsererror") {
+      throw new Error("Invalid XML format");
+    }
+    const podcastEntryNodes = dom.querySelectorAll("outline[text][xmlUrl]");
+    const incompletePodcastsToAdd = [];
+    for (let i = 0; i < podcastEntryNodes.length; i++) {
+      const node = podcastEntryNodes.item(i);
+      const text2 = node.getAttribute("text");
+      const xmlUrl = node.getAttribute("xmlUrl");
+      if (!text2 || !xmlUrl) {
         continue;
-      feeds[pod.title] = structuredClone(pod);
+      }
+      incompletePodcastsToAdd.push({
+        title: text2,
+        url: xmlUrl
+      });
     }
-    return feeds;
-  });
-  new import_obsidian10.Notice(`${targetFile.name} ingested. Saved ${podcasts.length} / ${incompletePodcastsToAdd.length} podcasts.`);
-  if (podcasts.length !== incompletePodcastsToAdd.length) {
-    const missingPodcasts = incompletePodcastsToAdd.filter((pod) => !podcasts.find((v) => v.url === pod.url));
-    for (const missingPod of missingPodcasts) {
-      new import_obsidian10.Notice(`Failed to save ${missingPod.title}...`, 6e4);
+    if (incompletePodcastsToAdd.length === 0) {
+      throw new Error("No valid podcast entries found in OPML");
     }
+    const existingSavedFeeds = get_store_value(savedFeeds);
+    const newPodcastsToAdd = incompletePodcastsToAdd.filter((pod) => !Object.values(existingSavedFeeds).some((savedPod) => savedPod.url === pod.url));
+    const notice = TimerNotice("Importing podcasts", "Preparing to import...");
+    let completedImports = 0;
+    const updateProgress = () => {
+      const progress = (completedImports / newPodcastsToAdd.length * 100).toFixed(1);
+      notice.update(`Importing... ${completedImports}/${newPodcastsToAdd.length} podcasts completed (${progress}%)`);
+    };
+    updateProgress();
+    const podcasts = await Promise.all(newPodcastsToAdd.map(async (feed) => {
+      try {
+        const result = await new FeedParser().getFeed(feed.url);
+        completedImports++;
+        updateProgress();
+        return result;
+      } catch (error) {
+        console.error(`Failed to fetch feed for ${feed.title}: ${error}`);
+        completedImports++;
+        updateProgress();
+        return null;
+      }
+    }));
+    notice.stop();
+    const validPodcasts = podcasts.filter((pod) => pod !== null);
+    savedFeeds.update((feeds) => {
+      for (const pod of validPodcasts) {
+        if (feeds[pod.title])
+          continue;
+        feeds[pod.title] = structuredClone(pod);
+      }
+      return feeds;
+    });
+    const skippedCount = incompletePodcastsToAdd.length - newPodcastsToAdd.length;
+    notice.update(`OPML import complete. Saved ${validPodcasts.length} new podcasts. Skipped ${skippedCount} existing podcasts.`);
+    if (validPodcasts.length !== newPodcastsToAdd.length) {
+      const failedImports = newPodcastsToAdd.length - validPodcasts.length;
+      console.error(`Failed to import ${failedImports} podcasts.`);
+      new import_obsidian10.Notice(`Failed to import ${failedImports} podcasts. Check console for details.`, 1e4);
+    }
+    setTimeout(() => notice.hide(), 5e3);
+  } catch (error) {
+    console.error("Error importing OPML:", error);
+    new import_obsidian10.Notice(`Error importing OPML: ${error instanceof Error ? error.message : "Unknown error"}`, 1e4);
   }
 }
-async function exportOPML(feeds, filePath = "PodNotes_Export.opml") {
+async function exportOPML(app2, feeds, filePath = "PodNotes_Export.opml") {
   const header = `<?xml version="1.0" encoding="utf=8" standalone="no"?>`;
   const opml = (child) => `<opml version="1.0">${child}</opml>`;
   const head = (child) => `<head>${child}</head>`;
-  const title = `<title>PodNotes Feeds</title>`;
+  const title = "<title>PodNotes Feeds</title>";
   const body = (child) => `<body>${child}</body>`;
   const feedOutline = (feed) => `<outline text="${feed.title}" type="rss" xmlUrl="${feed.url}" />`;
   const feedsOutline = (_feeds) => `<outline text="feeds">${feeds.map(feedOutline).join("")}</outline>`;
   const doc = header + opml(`${head(title)}
 ${body(feedsOutline(feeds))}`);
   try {
-    await app.vault.create(filePath, doc);
+    await app2.vault.create(filePath, doc);
     new import_obsidian10.Notice(`Exported ${feeds.length} podcast feeds to file "${filePath}".`);
   } catch (error) {
-    new import_obsidian10.Notice(`Unable to create podcast export file:
+    if (error instanceof Error) {
+      if (error.message.includes("Folder does not exist")) {
+        new import_obsidian10.Notice("Unable to create export file: Folder does not exist.");
+      } else {
+        new import_obsidian10.Notice(`Unable to create podcast export file:
 
-${error}`);
+${error.message}`);
+      }
+    } else {
+      new import_obsidian10.Notice("An unexpected error occurred during export.");
+    }
     console.error(error);
   }
 }
@@ -4351,8 +4869,7 @@ var PodNotesSettingsTab = class extends import_obsidian11.PluginSettingTab {
     this.addSkipLengthSettings(settingsContainer);
     this.addNoteSettings(settingsContainer);
     this.addDownloadSettings(settingsContainer);
-    this.addImportSettings(settingsContainer);
-    this.addExportSettings(settingsContainer);
+    this.addImportExportSettings(settingsContainer);
     this.addTranscriptSettings(settingsContainer);
   }
   hide() {
@@ -4457,47 +4974,47 @@ var PodNotesSettingsTab = class extends import_obsidian11.PluginSettingTab {
     downloadPathSetting.settingEl.style.gap = "10px";
     const downloadFilePathDemoEl = container.createDiv();
   }
-  addImportSettings(settingsContainer) {
-    const setting = new import_obsidian11.Setting(settingsContainer);
-    const opmlFiles = app.vault.getAllLoadedFiles().filter((file) => file instanceof import_obsidian11.TFile && file.extension.toLowerCase().endsWith("opml"));
-    const detectedOpmlFile = opmlFiles[0];
-    let value = detectedOpmlFile ? detectedOpmlFile.path : "";
-    setting.setName("Import").setDesc("Import podcasts from other services with OPML files.");
-    setting.addText((text2) => {
-      text2.setPlaceholder(detectedOpmlFile ? detectedOpmlFile.path : "path to opml file");
-      text2.onChange((v) => {
-        value = v;
-      });
-      text2.setValue(value);
-    });
-    setting.addButton((importBtn) => importBtn.setButtonText("Import").onClick(() => {
-      const inputFile = app.vault.getAbstractFileByPath(value);
-      if (!inputFile || !(inputFile instanceof import_obsidian11.TFile)) {
-        new import_obsidian11.Notice(`Invalid file path, could not find opml file at location "${value}".`);
-        return;
-      }
-      new import_obsidian11.Notice("Starting import...");
-      importOPML(inputFile);
+  addImportExportSettings(containerEl) {
+    containerEl.createEl("h3", { text: "Import/Export" });
+    new import_obsidian11.Setting(containerEl).setName("Import OPML").setDesc("Import podcasts from an OPML file.").addButton((button) => button.setButtonText("Import").onClick(() => {
+      const fileInput = document.createElement("input");
+      fileInput.type = "file";
+      fileInput.accept = ".opml";
+      fileInput.style.display = "none";
+      document.body.appendChild(fileInput);
+      fileInput.click();
+      fileInput.onchange = async (e) => {
+        const target = e.target;
+        const file = target.files?.[0];
+        if (file) {
+          const reader = new FileReader();
+          reader.onload = async (event) => {
+            const contents = event.target?.result;
+            if (contents) {
+              try {
+                await importOPML(contents);
+              } catch (e2) {
+                console.error("Error importing OPML:", e2);
+                new import_obsidian11.Notice(`Error importing OPML: ${e2 instanceof Error ? e2.message : "Unknown error"}`, 1e4);
+              }
+            }
+          };
+          reader.readAsText(file);
+        } else {
+          new import_obsidian11.Notice("No file selected");
+        }
+      };
     }));
-  }
-  addExportSettings(settingsContainer) {
-    const setting = new import_obsidian11.Setting(settingsContainer);
-    setting.setName("Export").setDesc("Export saved podcast feeds to OPML file.");
-    let value = "PodNotes_Export.opml";
-    setting.addText((text2) => {
-      text2.setPlaceholder("Target path");
-      text2.onChange((v) => {
-        value = v;
-      });
-      text2.setValue(value);
-    });
-    setting.addButton((btn) => btn.setButtonText("Export").onClick(() => {
+    let exportFilePath = "PodNotes_Export.opml";
+    new import_obsidian11.Setting(containerEl).setName("Export OPML").setDesc("Export saved podcast feeds to an OPML file.").addText((text2) => text2.setPlaceholder("Export file name").setValue(exportFilePath).onChange((value) => {
+      exportFilePath = value;
+    })).addButton((button) => button.setButtonText("Export").onClick(() => {
       const feeds = Object.values(get_store_value(savedFeeds));
       if (feeds.length === 0) {
-        new import_obsidian11.Notice("Nothing to export.");
+        new import_obsidian11.Notice("No podcasts to export.");
         return;
       }
-      exportOPML(feeds, value.endsWith(".opml") ? value : `${value}.opml`);
+      exportOPML(this.app, feeds, exportFilePath.endsWith(".opml") ? exportFilePath : `${exportFilePath}.opml`);
     }));
   }
   addTranscriptSettings(container) {
@@ -4644,9 +5161,9 @@ function create_fragment9(ctx) {
 }
 function instance9($$self, $$props, $$invalidate) {
   let { playlist } = $$props;
-  const dispatch = createEventDispatcher();
+  const dispatch2 = createEventDispatcher();
   function onClickPlaylist(event) {
-    dispatch("clickPlaylist", { playlist, event });
+    dispatch2("clickPlaylist", { playlist, event });
   }
   $$self.$$set = ($$props2) => {
     if ("playlist" in $$props2)
@@ -4706,7 +5223,7 @@ function create_if_block_1(ctx) {
     }
   };
 }
-function create_if_block2(ctx) {
+function create_if_block3(ctx) {
   let div;
   let img;
   let img_src_value;
@@ -4770,7 +5287,7 @@ function create_fragment10(ctx) {
   let if_block;
   let if_block_anchor;
   let current;
-  const if_block_creators = [create_if_block2, create_if_block_1];
+  const if_block_creators = [create_if_block3, create_if_block_1];
   const if_blocks = [];
   function select_block_type(ctx2, dirty) {
     if (ctx2[6] || ctx2[5])
@@ -4964,9 +5481,9 @@ function create_fragment11(ctx) {
 }
 function instance11($$self, $$props, $$invalidate) {
   let { feed } = $$props;
-  const dispatch = createEventDispatcher();
+  const dispatch2 = createEventDispatcher();
   function onclickPodcast(feed2) {
-    dispatch("clickPodcast", { feed: feed2 });
+    dispatch2("clickPodcast", { feed: feed2 });
   }
   $$self.$$set = ($$props2) => {
     if ("feed" in $$props2)
@@ -5100,7 +5617,7 @@ function create_each_block_1(ctx) {
     }
   };
 }
-function create_else_block(ctx) {
+function create_else_block2(ctx) {
   let div;
   return {
     c() {
@@ -5119,7 +5636,7 @@ function create_else_block(ctx) {
     }
   };
 }
-function create_if_block3(ctx) {
+function create_if_block4(ctx) {
   let each_1_anchor;
   let current;
   let each_value = ctx[0];
@@ -5230,7 +5747,7 @@ function create_fragment12(ctx) {
   let if_block1;
   let current;
   let if_block0 = ctx[1].length > 0 && create_if_block_12(ctx);
-  const if_block_creators = [create_if_block3, create_else_block];
+  const if_block_creators = [create_if_block4, create_else_block2];
   const if_blocks = [];
   function select_block_type(ctx2, dirty) {
     if (ctx2[0].length > 0)
@@ -5321,9 +5838,9 @@ function create_fragment12(ctx) {
 function instance12($$self, $$props, $$invalidate) {
   let { feeds = [] } = $$props;
   let { playlists: playlists2 = [] } = $$props;
-  const dispatch = createEventDispatcher();
+  const dispatch2 = createEventDispatcher();
   function forwardClickPlaylist({ detail: { playlist, event } }) {
-    dispatch("clickPlaylist", { playlist, event });
+    dispatch2("clickPlaylist", { playlist, event });
   }
   function clickPodcast_handler(event) {
     bubble.call(this, $$self, event);
@@ -5370,7 +5887,7 @@ function instance13($$self, $$props, $$invalidate) {
   let { value } = $$props;
   let { limits } = $$props;
   let sliderRef;
-  const dispatch = createEventDispatcher();
+  const dispatch2 = createEventDispatcher();
   let slider;
   let { style: styles } = $$props;
   onMount(() => {
@@ -5389,7 +5906,7 @@ function instance13($$self, $$props, $$invalidate) {
       sldr.sliderEl.setAttr("style", extractStylesFromObj(styles));
     }
     sldr.onChange((value2) => {
-      dispatch("change", { value: value2 });
+      dispatch2("change", { value: value2 });
     });
   }
   function span_binding($$value) {
@@ -5583,7 +6100,7 @@ var IntersectionObserver_1 = class extends SvelteComponent {
 var IntersectionObserver_default = IntersectionObserver_1;
 
 // src/ui/common/ImageLoader.svelte
-function create_if_block4(ctx) {
+function create_if_block5(ctx) {
   let image;
   let current;
   image = new Image_default({
@@ -5633,7 +6150,7 @@ function create_if_block4(ctx) {
 function create_default_slot(ctx) {
   let if_block_anchor;
   let current;
-  let if_block = ctx[6] && create_if_block4(ctx);
+  let if_block = ctx[6] && create_if_block5(ctx);
   return {
     c() {
       if (if_block)
@@ -5654,7 +6171,7 @@ function create_default_slot(ctx) {
             transition_in(if_block, 1);
           }
         } else {
-          if_block = create_if_block4(ctx2);
+          if_block = create_if_block5(ctx2);
           if_block.c();
           transition_in(if_block, 1);
           if_block.m(if_block_anchor.parentNode, if_block_anchor);
@@ -5781,7 +6298,7 @@ function create_if_block_13(ctx) {
     }
   };
 }
-function create_if_block5(ctx) {
+function create_if_block6(ctx) {
   let div;
   let imageloader;
   let current;
@@ -5846,7 +6363,7 @@ function create_fragment17(ctx) {
   let current;
   let mounted;
   let dispose;
-  const if_block_creators = [create_if_block5, create_if_block_13];
+  const if_block_creators = [create_if_block6, create_if_block_13];
   const if_blocks = [];
   function select_block_type(ctx2, dirty) {
     if (ctx2[2] && ctx2[0]?.artworkUrl)
@@ -5959,12 +6476,12 @@ function instance16($$self, $$props, $$invalidate) {
   let { episode } = $$props;
   let { episodeFinished = false } = $$props;
   let { showEpisodeImage = false } = $$props;
-  const dispatch = createEventDispatcher();
+  const dispatch2 = createEventDispatcher();
   function onClickEpisode() {
-    dispatch("clickEpisode", { episode });
+    dispatch2("clickEpisode", { episode });
   }
   function onContextMenu(event) {
-    dispatch("contextMenu", { episode, event });
+    dispatch2("contextMenu", { episode, event });
   }
   let _date;
   let date;
@@ -6140,7 +6657,7 @@ function create_if_block_14(ctx) {
     }
   };
 }
-function create_if_block6(ctx) {
+function create_if_block7(ctx) {
   let episodelistitem;
   let current;
   episodelistitem = new EpisodeListItem_default({
@@ -6188,7 +6705,7 @@ function create_if_block6(ctx) {
 function create_each_block4(ctx) {
   let if_block_anchor;
   let current;
-  let if_block = (!ctx[3] || !ctx[16]) && create_if_block6(ctx);
+  let if_block = (!ctx[3] || !ctx[16]) && create_if_block7(ctx);
   return {
     c() {
       if (if_block)
@@ -6209,7 +6726,7 @@ function create_each_block4(ctx) {
             transition_in(if_block, 1);
           }
         } else {
-          if_block = create_if_block6(ctx2);
+          if_block = create_if_block7(ctx2);
           if_block.c();
           transition_in(if_block, 1);
           if_block.m(if_block_anchor.parentNode, if_block_anchor);
@@ -6396,25 +6913,25 @@ function instance17($$self, $$props, $$invalidate) {
   let { showListMenu = true } = $$props;
   let hidePlayedEpisodes = false;
   let searchInputQuery = "";
-  const dispatch = createEventDispatcher();
+  const dispatch2 = createEventDispatcher();
   function forwardClickEpisode(event) {
-    dispatch("clickEpisode", { episode: event.detail.episode });
+    dispatch2("clickEpisode", { episode: event.detail.episode });
   }
   function forwardContextMenuEpisode(event) {
-    dispatch("contextMenuEpisode", {
+    dispatch2("contextMenuEpisode", {
       episode: event.detail.episode,
       event: event.detail.event
     });
   }
   function forwardSearchInput(event) {
-    dispatch("search", { query: event.detail.value });
+    dispatch2("search", { query: event.detail.value });
   }
   function text_1_value_binding(value) {
     searchInputQuery = value;
     $$invalidate(4, searchInputQuery);
   }
   const click_handler = () => $$invalidate(3, hidePlayedEpisodes = !hidePlayedEpisodes);
-  const click_handler_1 = () => dispatch("clickRefresh");
+  const click_handler_1 = () => dispatch2("clickRefresh");
   $$self.$$set = ($$props2) => {
     if ("episodes" in $$props2)
       $$invalidate(0, episodes = $$props2.episodes);
@@ -6432,7 +6949,7 @@ function instance17($$self, $$props, $$invalidate) {
     hidePlayedEpisodes,
     searchInputQuery,
     $playedEpisodes,
-    dispatch,
+    dispatch2,
     forwardClickEpisode,
     forwardContextMenuEpisode,
     forwardSearchInput,
@@ -6506,9 +7023,9 @@ function instance18($$self, $$props, $$invalidate) {
   let isDragging = false;
   let { style: _styled = {} } = $$props;
   let styles;
-  const dispatch = createEventDispatcher();
+  const dispatch2 = createEventDispatcher();
   function forwardClick(e) {
-    dispatch("click", { event: e });
+    dispatch2("click", { event: e });
   }
   function onDragStart() {
     isDragging = true;
@@ -6995,7 +7512,7 @@ function create_fallback_slot(ctx) {
     }
   };
 }
-function create_else_block2(ctx) {
+function create_else_block3(ctx) {
   let div;
   let icon;
   let div_style_value;
@@ -7043,7 +7560,7 @@ function create_else_block2(ctx) {
     }
   };
 }
-function create_if_block7(ctx) {
+function create_if_block8(ctx) {
   let div;
   let loading;
   let current;
@@ -7181,7 +7698,7 @@ function create_fragment20(ctx) {
   let t2_value = ctx[5].title + "";
   let t2;
   let t3;
-  let promise;
+  let promise2;
   let t4;
   let div2;
   let span0;
@@ -7221,7 +7738,7 @@ function create_fragment20(ctx) {
       $$scope: { ctx }
     }
   });
-  const if_block_creators = [create_if_block7, create_else_block2];
+  const if_block_creators = [create_if_block8, create_else_block3];
   const if_blocks = [];
   function select_block_type(ctx2, dirty) {
     if (ctx2[3])
@@ -7240,7 +7757,7 @@ function create_fragment20(ctx) {
     catch: create_catch_block,
     value: 31
   };
-  handle_promise(promise = ctx[4], info);
+  handle_promise(promise2 = ctx[4], info);
   progressbar = new Progressbar_default({
     props: {
       value: ctx[7],
@@ -7417,7 +7934,7 @@ function create_fragment20(ctx) {
       if ((!current || dirty[0] & 32) && t2_value !== (t2_value = ctx[5].title + ""))
         set_data(t2, t2_value);
       info.ctx = ctx;
-      if (dirty[0] & 16 && promise !== (promise = ctx[4]) && handle_promise(promise, info)) {
+      if (dirty[0] & 16 && promise2 !== (promise2 = ctx[4]) && handle_promise(promise2, info)) {
       } else {
         update_await_block_branch(info, ctx, dirty);
       }
@@ -7820,7 +8337,7 @@ var TopBar_default = TopBar;
 function add_css16(target) {
   append_styles(target, "svelte-uuatlf", ".podcast-header.svelte-uuatlf{display:flex;flex-direction:column;justify-content:space-around;align-items:center;padding:0.5rem}.podcast-heading.svelte-uuatlf{text-align:center}");
 }
-function create_if_block8(ctx) {
+function create_if_block9(ctx) {
   let img;
   let img_src_value;
   return {
@@ -7853,7 +8370,7 @@ function create_fragment22(ctx) {
   let t0;
   let h2;
   let t1;
-  let if_block = ctx[1] && create_if_block8(ctx);
+  let if_block = ctx[1] && create_if_block9(ctx);
   return {
     c() {
       div = element("div");
@@ -7878,7 +8395,7 @@ function create_fragment22(ctx) {
         if (if_block) {
           if_block.p(ctx2, dirty);
         } else {
-          if_block = create_if_block8(ctx2);
+          if_block = create_if_block9(ctx2);
           if_block.c();
           if_block.m(div, t0);
         }
@@ -8034,7 +8551,7 @@ function create_if_block_15(ctx) {
     }
   };
 }
-function create_if_block9(ctx) {
+function create_if_block10(ctx) {
   let episodeplayer;
   let current;
   episodeplayer = new EpisodePlayer_default({});
@@ -8062,7 +8579,7 @@ function create_if_block9(ctx) {
     }
   };
 }
-function create_else_block3(ctx) {
+function create_else_block4(ctx) {
   let episodelistheader;
   let current;
   episodelistheader = new EpisodeListHeader_default({ props: { text: "Latest Episodes" } });
@@ -8270,7 +8787,7 @@ function create_header_slot2(ctx) {
   let if_block;
   let if_block_anchor;
   let current;
-  const if_block_creators = [create_if_block_22, create_if_block_3, create_else_block3];
+  const if_block_creators = [create_if_block_22, create_if_block_3, create_else_block4];
   const if_blocks = [];
   function select_block_type_1(ctx2, dirty) {
     if (ctx2[1])
@@ -8350,7 +8867,7 @@ function create_fragment23(ctx) {
   }
   topbar = new TopBar_default({ props: topbar_props });
   binding_callbacks.push(() => bind(topbar, "viewState", topbar_viewState_binding));
-  const if_block_creators = [create_if_block9, create_if_block_15, create_if_block_4];
+  const if_block_creators = [create_if_block10, create_if_block_15, create_if_block_4];
   const if_blocks = [];
   function select_block_type(ctx2, dirty) {
     if (ctx2[8] === 2 /* Player */)
@@ -12746,7 +13263,7 @@ var { OpenAIError: OpenAIError2, APIError: APIError2, APIConnectionError: APICon
 })(OpenAI || (OpenAI = {}));
 
 // src/services/TranscriptionService.ts
-function TimerNotice(heading, initialMessage) {
+function TimerNotice2(heading, initialMessage) {
   let currentMessage = initialMessage;
   const startTime = Date.now();
   let stopTime;
@@ -12764,7 +13281,7 @@ ${message}`;
     notice.setMessage(formatMsg(currentMessage));
   }, 1e3);
   function getTime() {
-    return formatTime(stopTime ? stopTime - startTime : Date.now() - startTime);
+    return formatTime2(stopTime ? stopTime - startTime : Date.now() - startTime);
   }
   return {
     update: update2,
@@ -12775,7 +13292,7 @@ ${message}`;
     }
   };
 }
-function formatTime(ms) {
+function formatTime2(ms) {
   const seconds = Math.floor(ms / 1e3);
   const minutes = Math.floor(seconds / 60);
   const hours = Math.floor(minutes / 60);
@@ -12808,7 +13325,7 @@ var TranscriptionService = class {
       return;
     }
     this.isTranscribing = true;
-    const notice = TimerNotice("Transcription", "Preparing to transcribe...");
+    const notice = TimerNotice2("Transcription", "Preparing to transcribe...");
     try {
       notice.update("Downloading episode...");
       const downloadPath = await downloadEpisode(currentEpisode2, this.plugin.settings.download.path);
@@ -12948,14 +13465,14 @@ var PodNotes = class extends import_obsidian23.Plugin {
       id: "podnotes-show-leaf",
       name: "Show PodNotes",
       icon: "podcast",
-      checkCallback(checking) {
+      checkCallback: function(checking) {
         if (checking) {
-          return !app.workspace.getLeavesOfType(VIEW_TYPE).length;
+          return !this.app.workspace.getLeavesOfType(VIEW_TYPE).length;
         }
-        app.workspace.getRightLeaf(false).setViewState({
+        this.app.workspace.getRightLeaf(false).setViewState({
           type: VIEW_TYPE
         });
-      }
+      }.bind(this)
     });
     this.addCommand({
       id: "start-playing",
@@ -13087,9 +13604,12 @@ var PodNotes = class extends import_obsidian23.Plugin {
     if (this.app.workspace.getLeavesOfType(VIEW_TYPE).length) {
       return;
     }
-    this.app.workspace.getRightLeaf(false).setViewState({
-      type: VIEW_TYPE
-    });
+    const leaf = this.app.workspace.getRightLeaf(false);
+    if (leaf) {
+      leaf.setViewState({
+        type: VIEW_TYPE
+      });
+    }
   }
   onunload() {
     this?.playedEpisodeController.off();
@@ -13108,3 +13628,17 @@ var PodNotes = class extends import_obsidian23.Plugin {
     await this.saveData(this.settings);
   }
 };
+/*! *****************************************************************************
+Copyright (c) Microsoft Corporation.
+
+Permission to use, copy, modify, and/or distribute this software for any
+purpose with or without fee is hereby granted.
+
+THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH
+REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY
+AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT,
+INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM
+LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR
+OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
+PERFORMANCE OF THIS SOFTWARE.
+***************************************************************************** */
