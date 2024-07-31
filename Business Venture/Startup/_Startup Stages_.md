@@ -49,7 +49,11 @@ These scenarios highlight the potential financial rewards of joining a startup a
 
 ## Questions to Ask
 
-Navigating equity compensation negotiations can seem daunting, but with a straightforward and informed approach, you can effectively determine a fair equity offer. Here’s a simplified strategy to guide you through this process:
+Navigating equity compensation negotiations can seem daunting, but with a straightforward and informed approach, you can effectively determine a fair equity offer. 
+
+You can also ask about [[Funding]] journey
+
+Here’s a simplified strategy to guide you through this process:
 
 1. **Inquire About the Stock Option Plan Size:**
    Start by directly asking the HR manager about the size of the stock option plan that has been allocated for employee equity. This conversation will help you understand whether the equity pool is more conservative (around 3%) or more generous (up to 10%).
