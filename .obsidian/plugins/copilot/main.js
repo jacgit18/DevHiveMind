@@ -43751,7 +43751,7 @@ var require_react_development = __commonJS({
           }
           return dispatcher.useContext(Context2);
         }
-        function useState10(initialState) {
+        function useState11(initialState) {
           var dispatcher = resolveDispatcher();
           return dispatcher.useState(initialState);
         }
@@ -44553,7 +44553,7 @@ var require_react_development = __commonJS({
         exports.useMemo = useMemo;
         exports.useReducer = useReducer;
         exports.useRef = useRef2;
-        exports.useState = useState10;
+        exports.useState = useState11;
         exports.useSyncExternalStore = useSyncExternalStore;
         exports.useTransition = useTransition;
         exports.version = ReactVersion;
@@ -46297,9 +46297,9 @@ var require_react_dom_development = __commonJS({
         if (typeof __REACT_DEVTOOLS_GLOBAL_HOOK__ !== "undefined" && typeof __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStart === "function") {
           __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStart(new Error());
         }
-        var React20 = require_react();
+        var React21 = require_react();
         var Scheduler = require_scheduler();
-        var ReactSharedInternals = React20.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED;
+        var ReactSharedInternals = React21.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED;
         var suppressWarning = false;
         function setSuppressWarning(newSuppressWarning) {
           {
@@ -47904,7 +47904,7 @@ var require_react_dom_development = __commonJS({
           {
             if (props.value == null) {
               if (typeof props.children === "object" && props.children !== null) {
-                React20.Children.forEach(props.children, function(child) {
+                React21.Children.forEach(props.children, function(child) {
                   if (child == null) {
                     return;
                   }
@@ -56351,7 +56351,7 @@ var require_react_dom_development = __commonJS({
           }
         }
         var fakeInternalInstance = {};
-        var emptyRefsObject = new React20.Component().refs;
+        var emptyRefsObject = new React21.Component().refs;
         var didWarnAboutStateAssignmentForComponent;
         var didWarnAboutUninitializedState;
         var didWarnAboutGetSnapshotBeforeUpdateWithoutDidUpdate;
@@ -80927,8 +80927,8 @@ var require_application = __commonJS({
        */
       listen(...args) {
         debug4("listen");
-        const server = http.createServer(this.callback());
-        return server.listen(...args);
+        const server2 = http.createServer(this.callback());
+        return server2.listen(...args);
       }
       /**
        * Return JSON representation.
@@ -81964,8 +81964,8 @@ var require_web_incoming = __commonJS({
        *
        * @api private
        */
-      stream: function stream(req, res, options, _, server, clb) {
-        server.emit("start", req, res, options.target || options.forward);
+      stream: function stream(req, res, options, _, server2, clb) {
+        server2.emit("start", req, res, options.target || options.forward);
         var agents = options.followRedirects ? followRedirects : nativeAgents;
         var http = agents.http;
         var https = agents.https;
@@ -81985,8 +81985,8 @@ var require_web_incoming = __commonJS({
           common.setupOutgoing(options.ssl || {}, options, req)
         );
         proxyReq.on("socket", function(socket) {
-          if (server && !proxyReq.getHeader("expect")) {
-            server.emit("proxyReq", proxyReq, req, res, options);
+          if (server2 && !proxyReq.getHeader("expect")) {
+            server2.emit("proxyReq", proxyReq, req, res, options);
           }
         });
         if (options.proxyTimeout) {
@@ -82003,20 +82003,20 @@ var require_web_incoming = __commonJS({
         function createErrorHandler(proxyReq2, url) {
           return function proxyError2(err) {
             if (req.socket.destroyed && err.code === "ECONNRESET") {
-              server.emit("econnreset", err, req, res, url);
+              server2.emit("econnreset", err, req, res, url);
               return proxyReq2.abort();
             }
             if (clb) {
               clb(err, req, res, url);
             } else {
-              server.emit("error", err, req, res, url);
+              server2.emit("error", err, req, res, url);
             }
           };
         }
         (options.buffer || req).pipe(proxyReq);
         proxyReq.on("response", function(proxyRes) {
-          if (server) {
-            server.emit("proxyRes", proxyRes, req, res);
+          if (server2) {
+            server2.emit("proxyRes", proxyRes, req, res);
           }
           if (!res.headersSent && !options.selfHandleResponse) {
             for (var i = 0; i < web_o.length; i++) {
@@ -82027,14 +82027,14 @@ var require_web_incoming = __commonJS({
           }
           if (!res.finished) {
             proxyRes.on("end", function() {
-              if (server)
-                server.emit("end", req, res, proxyRes);
+              if (server2)
+                server2.emit("end", req, res, proxyRes);
             });
             if (!options.selfHandleResponse)
               proxyRes.pipe(res);
           } else {
-            if (server)
-              server.emit("end", req, res, proxyRes);
+            if (server2)
+              server2.emit("end", req, res, proxyRes);
           }
         });
       }
@@ -82099,7 +82099,7 @@ var require_ws_incoming = __commonJS({
        *
        * @api private
        */
-      stream: function stream(req, socket, options, head, server, clb) {
+      stream: function stream(req, socket, options, head, server2, clb) {
         var createHttpHeader = function(line, headers) {
           return Object.keys(headers).reduce(function(head2, key) {
             var value = headers[key];
@@ -82119,8 +82119,8 @@ var require_ws_incoming = __commonJS({
         var proxyReq = (common.isSSL.test(options.target.protocol) ? https : http).request(
           common.setupOutgoing(options.ssl || {}, options, req)
         );
-        if (server) {
-          server.emit("proxyReqWs", proxyReq, req, socket, options, head);
+        if (server2) {
+          server2.emit("proxyReqWs", proxyReq, req, socket, options, head);
         }
         proxyReq.on("error", onOutgoingError);
         proxyReq.on("response", function(res) {
@@ -82132,7 +82132,7 @@ var require_ws_incoming = __commonJS({
         proxyReq.on("upgrade", function(proxyRes, proxySocket, proxyHead) {
           proxySocket.on("error", onOutgoingError);
           proxySocket.on("end", function() {
-            server.emit("close", proxyRes, proxySocket, proxyHead);
+            server2.emit("close", proxyRes, proxySocket, proxyHead);
           });
           socket.on("error", function() {
             proxySocket.end();
@@ -82142,15 +82142,15 @@ var require_ws_incoming = __commonJS({
             proxySocket.unshift(proxyHead);
           socket.write(createHttpHeader("HTTP/1.1 101 Switching Protocols", proxyRes.headers));
           proxySocket.pipe(socket).pipe(proxySocket);
-          server.emit("open", proxySocket);
-          server.emit("proxySocket", proxySocket);
+          server2.emit("open", proxySocket);
+          server2.emit("proxySocket", proxySocket);
         });
         return proxyReq.end();
         function onOutgoingError(err) {
           if (clb) {
             clb(err, req, socket);
           } else {
-            server.emit("error", err, req, socket);
+            server2.emit("error", err, req, socket);
           }
           socket.end();
         }
@@ -84318,8 +84318,6 @@ var USER_SENDER = "user";
 var AI_SENDER = "ai";
 var DEFAULT_SYSTEM_PROMPT = "You are Obsidian Copilot, a helpful assistant that integrates AI to Obsidian note-taking.";
 var ChatModelDisplayNames = /* @__PURE__ */ ((ChatModelDisplayNames2) => {
-  ChatModelDisplayNames2["GPT_35_TURBO"] = "GPT-3.5";
-  ChatModelDisplayNames2["GPT_35_TURBO_16K"] = "GPT-3.5 16K";
   ChatModelDisplayNames2["GPT_4"] = "GPT-4";
   ChatModelDisplayNames2["GPT_4o"] = "GPT-4o";
   ChatModelDisplayNames2["GPT_4o_mini"] = "GPT-4o mini";
@@ -84327,7 +84325,8 @@ var ChatModelDisplayNames = /* @__PURE__ */ ((ChatModelDisplayNames2) => {
   ChatModelDisplayNames2["GPT_4_32K"] = "GPT-4 32K";
   ChatModelDisplayNames2["AZURE_OPENAI"] = "AZURE OPENAI";
   ChatModelDisplayNames2["CLAUDE"] = "CLAUDE";
-  ChatModelDisplayNames2["GEMINI_PRO"] = "GEMINI PRO";
+  ChatModelDisplayNames2["GEMINI_PRO"] = "GEMINI 1.5 PRO";
+  ChatModelDisplayNames2["GEMINI_FLASH"] = "GEMINI 1.5 FLASH";
   ChatModelDisplayNames2["OPENROUTERAI"] = "OPENROUTER.AI";
   ChatModelDisplayNames2["GROQ"] = "GROQ";
   ChatModelDisplayNames2["OLLAMA"] = "OLLAMA (LOCAL)";
@@ -84335,8 +84334,6 @@ var ChatModelDisplayNames = /* @__PURE__ */ ((ChatModelDisplayNames2) => {
   return ChatModelDisplayNames2;
 })(ChatModelDisplayNames || {});
 var OPENAI_MODELS = /* @__PURE__ */ new Set([
-  "GPT-3.5" /* GPT_35_TURBO */,
-  "GPT-3.5 16K" /* GPT_35_TURBO_16K */,
   "GPT-4" /* GPT_4 */,
   "GPT-4o" /* GPT_4o */,
   "GPT-4o mini" /* GPT_4o_mini */,
@@ -84345,7 +84342,10 @@ var OPENAI_MODELS = /* @__PURE__ */ new Set([
   "LM STUDIO (LOCAL)" /* LM_STUDIO */
 ]);
 var AZURE_MODELS = /* @__PURE__ */ new Set(["AZURE OPENAI" /* AZURE_OPENAI */]);
-var GOOGLE_MODELS = /* @__PURE__ */ new Set(["GEMINI PRO" /* GEMINI_PRO */]);
+var GOOGLE_MODELS = /* @__PURE__ */ new Set([
+  "GEMINI 1.5 PRO" /* GEMINI_PRO */,
+  "GEMINI 1.5 FLASH" /* GEMINI_FLASH */
+]);
 var ANTHROPIC_MODELS = /* @__PURE__ */ new Set(["CLAUDE" /* CLAUDE */]);
 var OPENROUTERAI_MODELS = /* @__PURE__ */ new Set([
   "OPENROUTER.AI" /* OPENROUTERAI */
@@ -84353,15 +84353,14 @@ var OPENROUTERAI_MODELS = /* @__PURE__ */ new Set([
 var OLLAMA_MODELS = /* @__PURE__ */ new Set(["OLLAMA (LOCAL)" /* OLLAMA */]);
 var LM_STUDIO_MODELS = /* @__PURE__ */ new Set(["LM STUDIO (LOCAL)" /* LM_STUDIO */]);
 var DISPLAY_NAME_TO_MODEL = {
-  ["GPT-3.5" /* GPT_35_TURBO */]: "gpt-3.5-turbo" /* GPT_35_TURBO */,
-  ["GPT-3.5 16K" /* GPT_35_TURBO_16K */]: "gpt-3.5-turbo-16k" /* GPT_35_TURBO_16K */,
   ["GPT-4" /* GPT_4 */]: "gpt-4" /* GPT_4 */,
   ["GPT-4o" /* GPT_4o */]: "gpt-4o" /* GPT_4o */,
   ["GPT-4o mini" /* GPT_4o_mini */]: "gpt-4o-mini" /* GPT_4o_mini */,
   ["GPT-4 TURBO" /* GPT_4_TURBO */]: "gpt-4-turbo-preview" /* GPT_4_TURBO */,
   ["GPT-4 32K" /* GPT_4_32K */]: "gpt-4-32k" /* GPT_4_32K */,
   ["AZURE OPENAI" /* AZURE_OPENAI */]: "azure_openai",
-  ["GEMINI PRO" /* GEMINI_PRO */]: "gemini-pro" /* GEMINI_PRO */
+  ["GEMINI 1.5 PRO" /* GEMINI_PRO */]: "gemini-1.5-pro" /* GEMINI_PRO */,
+  ["GEMINI 1.5 FLASH" /* GEMINI_FLASH */]: "gemini-1.5-flash" /* GEMINI_FLASH */
 };
 var GROQ_MODELS = /* @__PURE__ */ new Set(["GROQ" /* GROQ */]);
 var EmbeddingModels = /* @__PURE__ */ ((EmbeddingModels2) => {
@@ -84388,9 +84387,29 @@ var VAULT_VECTOR_STORE_STRATEGIES = [
   "ON MODE SWITCH" /* ON_MODE_SWITCH */
 ];
 var PROXY_SERVER_PORT = 53001;
+var COMMAND_IDS = {
+  FIX_GRAMMAR: "fix-grammar-prompt",
+  SUMMARIZE: "summarize-prompt",
+  GENERATE_TOC: "generate-toc-prompt",
+  GENERATE_GLOSSARY: "generate-glossary-prompt",
+  SIMPLIFY: "simplify-prompt",
+  EMOJIFY: "emojify-prompt",
+  REMOVE_URLS: "remove-urls-prompt",
+  REWRITE_TWEET: "rewrite-tweet-prompt",
+  REWRITE_TWEET_THREAD: "rewrite-tweet-thread-prompt",
+  MAKE_SHORTER: "make-shorter-prompt",
+  MAKE_LONGER: "make-longer-prompt",
+  ELI5: "eli5-prompt",
+  PRESS_RELEASE: "press-release-prompt",
+  TRANSLATE: "translate-selection-prompt",
+  CHANGE_TONE: "change-tone-prompt",
+  COUNT_TOKENS: "count-tokens",
+  COUNT_TOTAL_VAULT_TOKENS: "count-total-vault-tokens"
+};
 var DEFAULT_SETTINGS = {
   openAIApiKey: "",
   openAIOrgId: "",
+  openAICustomModel: "",
   huggingfaceApiKey: "",
   cohereApiKey: "",
   anthropicApiKey: "",
@@ -84401,16 +84420,18 @@ var DEFAULT_SETTINGS = {
   azureOpenAIApiVersion: "",
   azureOpenAIApiEmbeddingDeploymentName: "",
   googleApiKey: "",
+  googleCustomModel: "",
   openRouterAiApiKey: "",
   openRouterModel: "cognitivecomputations/dolphin-mixtral-8x7b",
-  defaultModel: "gpt-4-turbo-preview" /* GPT_4_TURBO */,
-  defaultModelDisplayName: "GPT-4 TURBO" /* GPT_4_TURBO */,
+  defaultModel: "gpt-4o" /* GPT_4o */,
+  defaultModelDisplayName: "GPT-4o" /* GPT_4o */,
   embeddingModel: "text-embedding-3-small" /* OPENAI_EMBEDDING_SMALL */,
   temperature: 0.1,
   maxTokens: 1e3,
   contextTurns: 15,
   userSystemPrompt: "",
   openAIProxyBaseUrl: "",
+  useOpenAILocalProxy: false,
   openAIProxyModelName: "",
   openAIEmbeddingProxyBaseUrl: "",
   openAIEmbeddingProxyModelName: "",
@@ -84427,7 +84448,69 @@ var DEFAULT_SETTINGS = {
   enableEncryption: false,
   maxSourceChunks: 3,
   groqModel: "llama3-70b-8192",
-  groqApiKey: ""
+  groqApiKey: "",
+  enabledCommands: {
+    [COMMAND_IDS.FIX_GRAMMAR]: {
+      enabled: true,
+      name: "Fix grammar and spelling of selection"
+    },
+    [COMMAND_IDS.SUMMARIZE]: {
+      enabled: true,
+      name: "Summarize selection"
+    },
+    [COMMAND_IDS.GENERATE_TOC]: {
+      enabled: true,
+      name: "Generate table of contents for selection"
+    },
+    [COMMAND_IDS.GENERATE_GLOSSARY]: {
+      enabled: true,
+      name: "Generate glossary for selection"
+    },
+    [COMMAND_IDS.SIMPLIFY]: {
+      enabled: true,
+      name: "Simplify selection"
+    },
+    [COMMAND_IDS.EMOJIFY]: {
+      enabled: true,
+      name: "Emojify selection"
+    },
+    [COMMAND_IDS.REMOVE_URLS]: {
+      enabled: true,
+      name: "Remove URLs from selection"
+    },
+    [COMMAND_IDS.REWRITE_TWEET]: {
+      enabled: true,
+      name: "Rewrite selection to a tweet"
+    },
+    [COMMAND_IDS.REWRITE_TWEET_THREAD]: {
+      enabled: true,
+      name: "Rewrite selection to a tweet thread"
+    },
+    [COMMAND_IDS.MAKE_SHORTER]: {
+      enabled: true,
+      name: "Make selection shorter"
+    },
+    [COMMAND_IDS.MAKE_LONGER]: {
+      enabled: true,
+      name: "Make selection longer"
+    },
+    [COMMAND_IDS.ELI5]: {
+      enabled: true,
+      name: "Explain selection like I'm 5"
+    },
+    [COMMAND_IDS.PRESS_RELEASE]: {
+      enabled: true,
+      name: "Rewrite selection to a press release"
+    },
+    [COMMAND_IDS.TRANSLATE]: {
+      enabled: true,
+      name: "Translate selection"
+    },
+    [COMMAND_IDS.CHANGE_TONE]: {
+      enabled: true,
+      name: "Change tone of selection"
+    }
+  }
 };
 
 // src/utils.ts
@@ -100866,7 +100949,10 @@ var ChatModelManager = class {
   }
   static getInstance(langChainParams, encryptionService) {
     if (!ChatModelManager.instance) {
-      ChatModelManager.instance = new ChatModelManager(langChainParams, encryptionService);
+      ChatModelManager.instance = new ChatModelManager(
+        langChainParams,
+        encryptionService
+      );
     }
     return ChatModelManager.instance;
   }
@@ -100882,7 +100968,7 @@ var ChatModelManager = class {
     };
     const providerConfig = {
       ["openai" /* OPENAI */]: {
-        modelName: params.openAIProxyModelName || params.model,
+        modelName: params.openAIProxyModelName || params.openAICustomModel || params.model,
         openAIApiKey: decrypt(params.openAIApiKey),
         openAIOrgId: decrypt(params.openAIOrgId),
         maxTokens: params.maxTokens,
@@ -100901,7 +100987,8 @@ var ChatModelManager = class {
         azureOpenAIApiVersion: params.azureOpenAIApiVersion
       },
       ["google" /* GOOGLE */]: {
-        apiKey: decrypt(params.googleApiKey)
+        apiKey: decrypt(params.googleApiKey),
+        modelName: params.googleCustomModel || params.model
       },
       ["openrouterai" /* OPENROUTERAI */]: {
         modelName: params.openRouterModel,
@@ -100921,7 +101008,11 @@ var ChatModelManager = class {
         modelName: params.groqModel
       }
     };
-    return { ...baseConfig, ...providerConfig[chatModelProvider] || {} };
+    const selectedProviderConfig = providerConfig[chatModelProvider] || {};
+    if (chatModelProvider === "openai" /* OPENAI */ && params.useOpenAILocalProxy && params.openAIProxyBaseUrl) {
+      selectedProviderConfig.openAIProxyBaseUrl = `http://localhost:${PROXY_SERVER_PORT}`;
+    }
+    return { ...baseConfig, ...selectedProviderConfig };
   }
   buildModelMap() {
     ChatModelManager.modelMap = {};
@@ -100995,7 +101086,6 @@ var ChatModelManager = class {
     if (!ChatModelManager.modelMap.hasOwnProperty(modelDisplayName)) {
       throw new Error(`No model found for: ${modelDisplayName}`);
     }
-    this.langChainParams.model = getModelName(modelDisplayName);
     const selectedModel = ChatModelManager.modelMap[modelDisplayName];
     if (!selectedModel.hasApiKey) {
       const errorMessage = `API key is not provided for the model: ${modelDisplayName}. Model switch failed.`;
@@ -101003,7 +101093,8 @@ var ChatModelManager = class {
       throw new Error(errorMessage);
     }
     const modelConfig = this.getModelConfig(selectedModel.vendor);
-    new import_obsidian2.Notice(`Setting model: ${modelDisplayName}`);
+    this.langChainParams.model = modelConfig.modelName;
+    new import_obsidian2.Notice(`Setting model: ${modelConfig.modelName}`);
     try {
       const newModelInstance = new selectedModel.AIConstructor({
         ...modelConfig
@@ -101817,122 +101908,72 @@ var ToneModal = class extends import_obsidian5.FuzzySuggestModal {
 // src/commands.ts
 var import_obsidian6 = require("obsidian");
 function registerBuiltInCommands(plugin) {
-  plugin.addCommand({
-    id: "fix-grammar-prompt",
-    name: "Fix grammar and spelling of selection",
-    editorCallback: (editor) => {
-      plugin.processSelection(editor, "fixGrammarSpellingSelection");
+  const addCommandIfEnabled = (id, callback) => {
+    const commandSettings = plugin.settings.enabledCommands[id];
+    if (commandSettings && commandSettings.enabled) {
+      plugin.addCommand({
+        id,
+        name: commandSettings.name,
+        editorCallback: callback
+      });
     }
+  };
+  addCommandIfEnabled(COMMAND_IDS.FIX_GRAMMAR, (editor) => {
+    plugin.processSelection(editor, "fixGrammarSpellingSelection");
   });
-  plugin.addCommand({
-    id: "summarize-prompt",
-    name: "Summarize selection",
-    editorCallback: (editor) => {
-      plugin.processSelection(editor, "summarizeSelection");
-    }
+  addCommandIfEnabled(COMMAND_IDS.SUMMARIZE, (editor) => {
+    plugin.processSelection(editor, "summarizeSelection");
   });
-  plugin.addCommand({
-    id: "generate-toc-prompt",
-    name: "Generate table of contents for selection",
-    editorCallback: (editor) => {
-      plugin.processSelection(editor, "tocSelection");
-    }
+  addCommandIfEnabled(COMMAND_IDS.GENERATE_TOC, (editor) => {
+    plugin.processSelection(editor, "tocSelection");
   });
-  plugin.addCommand({
-    id: "generate-glossary-prompt",
-    name: "Generate glossary for selection",
-    editorCallback: (editor) => {
-      plugin.processSelection(editor, "glossarySelection");
-    }
+  addCommandIfEnabled(COMMAND_IDS.GENERATE_GLOSSARY, (editor) => {
+    plugin.processSelection(editor, "glossarySelection");
   });
-  plugin.addCommand({
-    id: "simplify-prompt",
-    name: "Simplify selection",
-    editorCallback: (editor) => {
-      plugin.processSelection(editor, "simplifySelection");
-    }
+  addCommandIfEnabled(COMMAND_IDS.SIMPLIFY, (editor) => {
+    plugin.processSelection(editor, "simplifySelection");
   });
-  plugin.addCommand({
-    id: "emojify-prompt",
-    name: "Emojify selection",
-    editorCallback: (editor) => {
-      plugin.processSelection(editor, "emojifySelection");
-    }
+  addCommandIfEnabled(COMMAND_IDS.EMOJIFY, (editor) => {
+    plugin.processSelection(editor, "emojifySelection");
   });
-  plugin.addCommand({
-    id: "remove-urls-prompt",
-    name: "Remove URLs from selection",
-    editorCallback: (editor) => {
-      plugin.processSelection(editor, "removeUrlsFromSelection");
-    }
+  addCommandIfEnabled(COMMAND_IDS.REMOVE_URLS, (editor) => {
+    plugin.processSelection(editor, "removeUrlsFromSelection");
   });
-  plugin.addCommand({
-    id: "rewrite-tweet-prompt",
-    name: "Rewrite selection to a tweet",
-    editorCallback: (editor) => {
-      plugin.processSelection(editor, "rewriteTweetSelection");
-    }
+  addCommandIfEnabled(COMMAND_IDS.REWRITE_TWEET, (editor) => {
+    plugin.processSelection(editor, "rewriteTweetSelection");
   });
-  plugin.addCommand({
-    id: "rewrite-tweet-thread-prompt",
-    name: "Rewrite selection to a tweet thread",
-    editorCallback: (editor) => {
-      plugin.processSelection(editor, "rewriteTweetThreadSelection");
-    }
+  addCommandIfEnabled(COMMAND_IDS.REWRITE_TWEET_THREAD, (editor) => {
+    plugin.processSelection(editor, "rewriteTweetThreadSelection");
   });
-  plugin.addCommand({
-    id: "make-shorter-prompt",
-    name: "Make selection shorter",
-    editorCallback: (editor) => {
-      plugin.processSelection(editor, "rewriteShorterSelection");
-    }
+  addCommandIfEnabled(COMMAND_IDS.MAKE_SHORTER, (editor) => {
+    plugin.processSelection(editor, "rewriteShorterSelection");
   });
-  plugin.addCommand({
-    id: "make-longer-prompt",
-    name: "Make selection longer",
-    editorCallback: (editor) => {
-      plugin.processSelection(editor, "rewriteLongerSelection");
-    }
+  addCommandIfEnabled(COMMAND_IDS.MAKE_LONGER, (editor) => {
+    plugin.processSelection(editor, "rewriteLongerSelection");
   });
-  plugin.addCommand({
-    id: "eli5-prompt",
-    name: "Explain selection like I'm 5",
-    editorCallback: (editor) => {
-      plugin.processSelection(editor, "eli5Selection");
-    }
+  addCommandIfEnabled(COMMAND_IDS.ELI5, (editor) => {
+    plugin.processSelection(editor, "eli5Selection");
   });
-  plugin.addCommand({
-    id: "press-release-prompt",
-    name: "Rewrite selection to a press release",
-    editorCallback: (editor) => {
-      plugin.processSelection(editor, "rewritePressReleaseSelection");
-    }
+  addCommandIfEnabled(COMMAND_IDS.PRESS_RELEASE, (editor) => {
+    plugin.processSelection(editor, "rewritePressReleaseSelection");
   });
-  plugin.addCommand({
-    id: "translate-selection-prompt",
-    name: "Translate selection",
-    editorCallback: (editor) => {
-      new LanguageModal(plugin.app, (language) => {
-        if (!language) {
-          new import_obsidian6.Notice("Please select a language.");
-          return;
-        }
-        plugin.processSelection(editor, "translateSelection", language);
-      }).open();
-    }
+  addCommandIfEnabled(COMMAND_IDS.TRANSLATE, (editor) => {
+    new LanguageModal(plugin.app, (language) => {
+      if (!language) {
+        new import_obsidian6.Notice("Please select a language.");
+        return;
+      }
+      plugin.processSelection(editor, "translateSelection", language);
+    }).open();
   });
-  plugin.addCommand({
-    id: "change-tone-prompt",
-    name: "Change tone of selection",
-    editorCallback: (editor) => {
-      new ToneModal(plugin.app, (tone) => {
-        if (!tone) {
-          new import_obsidian6.Notice("Please select a tone.");
-          return;
-        }
-        plugin.processSelection(editor, "changeToneSelection", tone);
-      }).open();
-    }
+  addCommandIfEnabled(COMMAND_IDS.CHANGE_TONE, (editor) => {
+    new ToneModal(plugin.app, (tone) => {
+      if (!tone) {
+        new import_obsidian6.Notice("Please select a tone.");
+        return;
+      }
+      plugin.processSelection(editor, "changeToneSelection", tone);
+    }).open();
   });
   plugin.addCommand({
     id: "count-tokens",
@@ -102360,7 +102401,6 @@ var UseActiveNoteAsContextIcon = ({ className }) => /* @__PURE__ */ import_react
 var SendActiveNoteToPromptIcon = ({ className }) => /* @__PURE__ */ import_react2.default.createElement("svg", { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round", className }, /* @__PURE__ */ import_react2.default.createElement("circle", { cx: 12, cy: 12, r: 10 }), /* @__PURE__ */ import_react2.default.createElement("path", { d: "m16 12-4-4-4 4M12 16V8" }));
 
 // src/components/ChatComponents/ChatIcons.tsx
-var import_react4 = __toESM(require_react());
 var ChatIcons = ({
   currentModel,
   setCurrentModel,
@@ -102382,23 +102422,25 @@ var ChatIcons = ({
   const handleModelChange = async (event) => {
     const selectedModel = event.target.value;
     setCurrentModel(event.target.value);
-    if (selectedModel === "CLAUDE" /* CLAUDE */) {
-      await proxyServer.startProxyServer("https://api.anthropic.com/");
+    const proxyServerURL = proxyServer.getProxyURL(selectedModel);
+    if (proxyServerURL) {
+      await proxyServer.startProxyServer(proxyServerURL, selectedModel !== "CLAUDE" /* CLAUDE */);
     } else {
       await proxyServer.stopProxyServer();
     }
   };
   (0, import_react3.useEffect)(() => {
-    const startProxyServerForClaude = async () => {
-      if (currentModel === "CLAUDE" /* CLAUDE */) {
-        await proxyServer.startProxyServer("https://api.anthropic.com/");
-      }
+    const startProxyServerForClaude = async (proxyServerURL2) => {
+      await proxyServer.startProxyServer(proxyServerURL2, currentModel !== "CLAUDE" /* CLAUDE */);
     };
-    startProxyServerForClaude();
+    const proxyServerURL = proxyServer.getProxyURL(currentModel);
+    if (proxyServerURL) {
+      startProxyServerForClaude(proxyServerURL);
+    }
     return () => {
       proxyServer.stopProxyServer().catch(console.error);
     };
-  }, [currentModel, proxyServer]);
+  }, []);
   const handleChainChange = async (event) => {
     setSelectedChain(stringToChainType(event.target.value));
   };
@@ -102457,7 +102499,7 @@ Please note that this is a retrieval-based QA. Specific questions are encouraged
     };
     handleChainSelection();
   }, [selectedChain]);
-  return /* @__PURE__ */ import_react4.default.createElement("div", { className: "chat-icons-container" }, /* @__PURE__ */ import_react4.default.createElement("div", { className: "chat-icon-selection-tooltip" }, /* @__PURE__ */ import_react4.default.createElement("div", { className: "select-wrapper" }, /* @__PURE__ */ import_react4.default.createElement(
+  return /* @__PURE__ */ import_react3.default.createElement("div", { className: "chat-icons-container" }, /* @__PURE__ */ import_react3.default.createElement("div", { className: "chat-icon-selection-tooltip" }, /* @__PURE__ */ import_react3.default.createElement("div", { className: "select-wrapper" }, /* @__PURE__ */ import_react3.default.createElement(
     "select",
     {
       id: "aiModelSelect",
@@ -102465,21 +102507,20 @@ Please note that this is a retrieval-based QA. Specific questions are encouraged
       value: currentModel,
       onChange: handleModelChange
     },
-    /* @__PURE__ */ import_react4.default.createElement("option", { value: "GPT-3.5" /* GPT_35_TURBO */ }, "GPT-3.5" /* GPT_35_TURBO */),
-    /* @__PURE__ */ import_react4.default.createElement("option", { value: "GPT-3.5 16K" /* GPT_35_TURBO_16K */ }, "GPT-3.5 16K" /* GPT_35_TURBO_16K */),
-    /* @__PURE__ */ import_react4.default.createElement("option", { value: "GPT-4" /* GPT_4 */ }, "GPT-4" /* GPT_4 */),
-    /* @__PURE__ */ import_react4.default.createElement("option", { value: "GPT-4o" /* GPT_4o */ }, "GPT-4o" /* GPT_4o */),
-    /* @__PURE__ */ import_react4.default.createElement("option", { value: "GPT-4o mini" /* GPT_4o_mini */ }, "GPT-4o mini" /* GPT_4o_mini */),
-    /* @__PURE__ */ import_react4.default.createElement("option", { value: "GPT-4 TURBO" /* GPT_4_TURBO */ }, "GPT-4 TURBO" /* GPT_4_TURBO */),
-    /* @__PURE__ */ import_react4.default.createElement("option", { value: "GPT-4 32K" /* GPT_4_32K */ }, "GPT-4 32K" /* GPT_4_32K */),
-    /* @__PURE__ */ import_react4.default.createElement("option", { value: "AZURE OPENAI" /* AZURE_OPENAI */ }, "AZURE OPENAI" /* AZURE_OPENAI */),
-    /* @__PURE__ */ import_react4.default.createElement("option", { value: "CLAUDE" /* CLAUDE */ }, "CLAUDE" /* CLAUDE */),
-    /* @__PURE__ */ import_react4.default.createElement("option", { value: "GEMINI PRO" /* GEMINI_PRO */ }, "GEMINI PRO" /* GEMINI_PRO */),
-    /* @__PURE__ */ import_react4.default.createElement("option", { value: "OPENROUTER.AI" /* OPENROUTERAI */ }, "OPENROUTER.AI" /* OPENROUTERAI */),
-    /* @__PURE__ */ import_react4.default.createElement("option", { value: "GROQ" /* GROQ */ }, "GROQ" /* GROQ */),
-    /* @__PURE__ */ import_react4.default.createElement("option", { value: "LM STUDIO (LOCAL)" /* LM_STUDIO */ }, "LM STUDIO (LOCAL)" /* LM_STUDIO */),
-    /* @__PURE__ */ import_react4.default.createElement("option", { value: "OLLAMA (LOCAL)" /* OLLAMA */ }, "OLLAMA (LOCAL)" /* OLLAMA */)
-  ), /* @__PURE__ */ import_react4.default.createElement("span", { className: "tooltip-text" }, "Model Selection"))), /* @__PURE__ */ import_react4.default.createElement("button", { className: "chat-icon-button", onClick: onStopGenerating }, /* @__PURE__ */ import_react4.default.createElement(StopIcon, { className: "icon-scaler" }), /* @__PURE__ */ import_react4.default.createElement("span", { className: "tooltip-text" }, "Stop Generating")), /* @__PURE__ */ import_react4.default.createElement("button", { className: "chat-icon-button", onClick: onNewChat }, /* @__PURE__ */ import_react4.default.createElement(RefreshIcon, { className: "icon-scaler" }), /* @__PURE__ */ import_react4.default.createElement("span", { className: "tooltip-text" }, "New Chat", /* @__PURE__ */ import_react4.default.createElement("br", null), "(unsaved history will be lost)")), /* @__PURE__ */ import_react4.default.createElement("button", { className: "chat-icon-button", onClick: onSaveAsNote }, /* @__PURE__ */ import_react4.default.createElement(SaveAsNoteIcon, { className: "icon-scaler" }), /* @__PURE__ */ import_react4.default.createElement("span", { className: "tooltip-text" }, "Save as Note")), /* @__PURE__ */ import_react4.default.createElement("div", { className: "chat-icon-selection-tooltip" }, /* @__PURE__ */ import_react4.default.createElement("div", { className: "select-wrapper" }, /* @__PURE__ */ import_react4.default.createElement(
+    /* @__PURE__ */ import_react3.default.createElement("option", { value: "GPT-4" /* GPT_4 */ }, "GPT-4" /* GPT_4 */),
+    /* @__PURE__ */ import_react3.default.createElement("option", { value: "GPT-4o" /* GPT_4o */ }, "GPT-4o" /* GPT_4o */),
+    /* @__PURE__ */ import_react3.default.createElement("option", { value: "GPT-4o mini" /* GPT_4o_mini */ }, "GPT-4o mini" /* GPT_4o_mini */),
+    /* @__PURE__ */ import_react3.default.createElement("option", { value: "GPT-4 TURBO" /* GPT_4_TURBO */ }, "GPT-4 TURBO" /* GPT_4_TURBO */),
+    /* @__PURE__ */ import_react3.default.createElement("option", { value: "GPT-4 32K" /* GPT_4_32K */ }, "GPT-4 32K" /* GPT_4_32K */),
+    /* @__PURE__ */ import_react3.default.createElement("option", { value: "AZURE OPENAI" /* AZURE_OPENAI */ }, "AZURE OPENAI" /* AZURE_OPENAI */),
+    /* @__PURE__ */ import_react3.default.createElement("option", { value: "CLAUDE" /* CLAUDE */ }, "CLAUDE" /* CLAUDE */),
+    /* @__PURE__ */ import_react3.default.createElement("option", { value: "GEMINI 1.5 PRO" /* GEMINI_PRO */ }, "GEMINI 1.5 PRO" /* GEMINI_PRO */),
+    /* @__PURE__ */ import_react3.default.createElement("option", { value: "GEMINI 1.5 FLASH" /* GEMINI_FLASH */ }, "GEMINI 1.5 FLASH" /* GEMINI_FLASH */),
+    /* @__PURE__ */ import_react3.default.createElement("option", { value: "OPENROUTER.AI" /* OPENROUTERAI */ }, "OPENROUTER.AI" /* OPENROUTERAI */),
+    /* @__PURE__ */ import_react3.default.createElement("option", { value: "GROQ" /* GROQ */ }, "GROQ" /* GROQ */),
+    /* @__PURE__ */ import_react3.default.createElement("option", { value: "LM STUDIO (LOCAL)" /* LM_STUDIO */ }, "LM STUDIO (LOCAL)" /* LM_STUDIO */),
+    /* @__PURE__ */ import_react3.default.createElement("option", { value: "OLLAMA (LOCAL)" /* OLLAMA */ }, "OLLAMA (LOCAL)" /* OLLAMA */)
+  ), /* @__PURE__ */ import_react3.default.createElement("span", { className: "tooltip-text" }, "Model Selection"))), /* @__PURE__ */ import_react3.default.createElement("button", { className: "chat-icon-button", onClick: onStopGenerating }, /* @__PURE__ */ import_react3.default.createElement(StopIcon, { className: "icon-scaler" }), /* @__PURE__ */ import_react3.default.createElement("span", { className: "tooltip-text" }, "Stop Generating")), /* @__PURE__ */ import_react3.default.createElement("button", { className: "chat-icon-button", onClick: onNewChat }, /* @__PURE__ */ import_react3.default.createElement(RefreshIcon, { className: "icon-scaler" }), /* @__PURE__ */ import_react3.default.createElement("span", { className: "tooltip-text" }, "New Chat", /* @__PURE__ */ import_react3.default.createElement("br", null), "(unsaved history will be lost)")), /* @__PURE__ */ import_react3.default.createElement("button", { className: "chat-icon-button", onClick: onSaveAsNote }, /* @__PURE__ */ import_react3.default.createElement(SaveAsNoteIcon, { className: "icon-scaler" }), /* @__PURE__ */ import_react3.default.createElement("span", { className: "tooltip-text" }, "Save as Note")), /* @__PURE__ */ import_react3.default.createElement("div", { className: "chat-icon-selection-tooltip" }, /* @__PURE__ */ import_react3.default.createElement("div", { className: "select-wrapper" }, /* @__PURE__ */ import_react3.default.createElement(
     "select",
     {
       id: "aiChainSelect",
@@ -102487,18 +102528,18 @@ Please note that this is a retrieval-based QA. Specific questions are encouraged
       value: currentChain,
       onChange: handleChainChange
     },
-    /* @__PURE__ */ import_react4.default.createElement("option", { value: "llm_chain" }, "Chat"),
-    /* @__PURE__ */ import_react4.default.createElement("option", { value: "long_note_qa" }, "Long Note QA"),
-    /* @__PURE__ */ import_react4.default.createElement("option", { value: "vault_qa" }, "Vault QA (BETA)")
-  ), /* @__PURE__ */ import_react4.default.createElement("span", { className: "tooltip-text" }, "Mode Selection"))), selectedChain === "llm_chain" && /* @__PURE__ */ import_react4.default.createElement("button", { className: "chat-icon-button", onClick: onSendActiveNoteToPrompt }, /* @__PURE__ */ import_react4.default.createElement(SendActiveNoteToPromptIcon, { className: "icon-scaler" }), /* @__PURE__ */ import_react4.default.createElement("span", { className: "tooltip-text" }, "Send Note(s) to Prompt", /* @__PURE__ */ import_react4.default.createElement("br", null), "(Set with Copilot command: ", /* @__PURE__ */ import_react4.default.createElement("br", null), "set note context ", /* @__PURE__ */ import_react4.default.createElement("br", null), "in Chat mode.", /* @__PURE__ */ import_react4.default.createElement("br", null), "Default is active note)")), selectedChain === "long_note_qa" && /* @__PURE__ */ import_react4.default.createElement(
+    /* @__PURE__ */ import_react3.default.createElement("option", { value: "llm_chain" }, "Chat"),
+    /* @__PURE__ */ import_react3.default.createElement("option", { value: "long_note_qa" }, "Long Note QA"),
+    /* @__PURE__ */ import_react3.default.createElement("option", { value: "vault_qa" }, "Vault QA (BETA)")
+  ), /* @__PURE__ */ import_react3.default.createElement("span", { className: "tooltip-text" }, "Mode Selection"))), selectedChain === "llm_chain" && /* @__PURE__ */ import_react3.default.createElement("button", { className: "chat-icon-button", onClick: onSendActiveNoteToPrompt }, /* @__PURE__ */ import_react3.default.createElement(SendActiveNoteToPromptIcon, { className: "icon-scaler" }), /* @__PURE__ */ import_react3.default.createElement("span", { className: "tooltip-text" }, "Send Note(s) to Prompt", /* @__PURE__ */ import_react3.default.createElement("br", null), "(Set with Copilot command: ", /* @__PURE__ */ import_react3.default.createElement("br", null), "set note context ", /* @__PURE__ */ import_react3.default.createElement("br", null), "in Chat mode.", /* @__PURE__ */ import_react3.default.createElement("br", null), "Default is active note)")), selectedChain === "long_note_qa" && /* @__PURE__ */ import_react3.default.createElement(
     "button",
     {
       className: "chat-icon-button",
       onClick: onForceRebuildActiveNoteContext
     },
-    /* @__PURE__ */ import_react4.default.createElement(UseActiveNoteAsContextIcon, { className: "icon-scaler" }),
-    /* @__PURE__ */ import_react4.default.createElement("span", { className: "tooltip-text" }, "Refresh Index", /* @__PURE__ */ import_react4.default.createElement("br", null), "for Active Note")
-  ), selectedChain === "vault_qa" && /* @__PURE__ */ import_react4.default.createElement("button", { className: "chat-icon-button", onClick: onRefreshVaultContext }, /* @__PURE__ */ import_react4.default.createElement(UseActiveNoteAsContextIcon, { className: "icon-scaler" }), /* @__PURE__ */ import_react4.default.createElement("span", { className: "tooltip-text" }, "Refresh Index", /* @__PURE__ */ import_react4.default.createElement("br", null), "for Vault")));
+    /* @__PURE__ */ import_react3.default.createElement(UseActiveNoteAsContextIcon, { className: "icon-scaler" }),
+    /* @__PURE__ */ import_react3.default.createElement("span", { className: "tooltip-text" }, "Refresh Index", /* @__PURE__ */ import_react3.default.createElement("br", null), "for Active Note")
+  ), selectedChain === "vault_qa" && /* @__PURE__ */ import_react3.default.createElement("button", { className: "chat-icon-button", onClick: onRefreshVaultContext }, /* @__PURE__ */ import_react3.default.createElement(UseActiveNoteAsContextIcon, { className: "icon-scaler" }), /* @__PURE__ */ import_react3.default.createElement("span", { className: "tooltip-text" }, "Refresh Index", /* @__PURE__ */ import_react3.default.createElement("br", null), "for Vault")));
 };
 var ChatIcons_default = ChatIcons;
 
@@ -102522,7 +102563,7 @@ var NoteTitleModal = class extends import_obsidian11.FuzzySuggestModal {
 };
 
 // src/components/ChatComponents/ChatInput.tsx
-var import_react5 = __toESM(require_react());
+var import_react4 = __toESM(require_react());
 var ChatInput = ({
   inputMessage,
   setInputMessage,
@@ -102530,9 +102571,9 @@ var ChatInput = ({
   handleSendMessage,
   getChatVisibility
 }) => {
-  const [rows, setRows] = (0, import_react5.useState)(1);
-  const [shouldFocus, setShouldFocus] = (0, import_react5.useState)(false);
-  const textAreaRef = (0, import_react5.useRef)(null);
+  const [rows, setRows] = (0, import_react4.useState)(1);
+  const [shouldFocus, setShouldFocus] = (0, import_react4.useState)(false);
+  const textAreaRef = (0, import_react4.useRef)(null);
   const handleInputChange = (event) => {
     const inputValue = event.target.value;
     setInputMessage(inputValue);
@@ -102564,19 +102605,19 @@ var ChatInput = ({
     );
     setRows(rowsNeeded);
   };
-  (0, import_react5.useEffect)(() => {
+  (0, import_react4.useEffect)(() => {
     const fetchChatVisibility = async () => {
       const visibility = await getChatVisibility();
       setShouldFocus(visibility);
     };
     fetchChatVisibility();
   }, [getChatVisibility]);
-  (0, import_react5.useEffect)(() => {
+  (0, import_react4.useEffect)(() => {
     if (textAreaRef.current && shouldFocus) {
       textAreaRef.current.focus();
     }
   }, [shouldFocus]);
-  return /* @__PURE__ */ import_react5.default.createElement("div", { className: "chat-input-container" }, /* @__PURE__ */ import_react5.default.createElement(
+  return /* @__PURE__ */ import_react4.default.createElement("div", { className: "chat-input-container" }, /* @__PURE__ */ import_react4.default.createElement(
     "textarea",
     {
       ref: textAreaRef,
@@ -102587,12 +102628,12 @@ var ChatInput = ({
       onKeyDown: handleKeyDown,
       rows
     }
-  ), /* @__PURE__ */ import_react5.default.createElement("button", { onClick: handleSendMessage }, "Send"));
+  ), /* @__PURE__ */ import_react4.default.createElement("button", { onClick: handleSendMessage }, "Send"));
 };
 var ChatInput_default = ChatInput;
 
 // src/components/Markdown/MemoizedReactMarkdown.tsx
-var import_react8 = __toESM(require_react());
+var import_react7 = __toESM(require_react());
 
 // node_modules/react-markdown/lib/uri-transformer.js
 var protocols = ["http", "https", "mailto", "tel"];
@@ -102625,7 +102666,7 @@ function uriTransformer(uri2) {
 }
 
 // node_modules/react-markdown/lib/react-markdown.js
-var import_react7 = __toESM(require_react(), 1);
+var import_react6 = __toESM(require_react(), 1);
 
 // node_modules/vfile/lib/index.js
 var import_is_buffer = __toESM(require_is_buffer(), 1);
@@ -110761,7 +110802,7 @@ function rehypeFilter(options) {
 }
 
 // node_modules/react-markdown/lib/ast-to-react.js
-var import_react6 = __toESM(require_react(), 1);
+var import_react5 = __toESM(require_react(), 1);
 var import_react_is = __toESM(require_react_is2(), 1);
 
 // node_modules/hast-util-whitespace/index.js
@@ -110847,7 +110888,7 @@ function toReact(context, node2, index2, parent) {
     end: { line: null, column: null, offset: null }
   };
   const component = options.components && own6.call(options.components, name) ? options.components[name] : name;
-  const basic = typeof component === "string" || component === import_react6.default.Fragment;
+  const basic = typeof component === "string" || component === import_react5.default.Fragment;
   if (!import_react_is.default.isValidElementType(component)) {
     throw new TypeError(
       `Component for name \`${name}\` not defined or is not renderable`
@@ -110918,7 +110959,7 @@ function toReact(context, node2, index2, parent) {
   if (!basic) {
     properties.node = node2;
   }
-  return children.length > 0 ? import_react6.default.createElement(component, properties, children) : import_react6.default.createElement(component, properties);
+  return children.length > 0 ? import_react5.default.createElement(component, properties, children) : import_react5.default.createElement(component, properties);
 }
 function getInputElement(node2) {
   let index2 = -1;
@@ -111039,13 +111080,13 @@ function ReactMarkdown(options) {
   if (hastNode.type !== "root") {
     throw new TypeError("Expected a `root` node");
   }
-  let result = import_react7.default.createElement(
-    import_react7.default.Fragment,
+  let result = import_react6.default.createElement(
+    import_react6.default.Fragment,
     {},
     childrenToReact({ options, schema: html3, listDepth: 0 }, hastNode)
   );
   if (options.className) {
-    result = import_react7.default.createElement("div", { className: options.className }, result);
+    result = import_react6.default.createElement("div", { className: options.className }, result);
   }
   return result;
 }
@@ -111110,13 +111151,13 @@ ReactMarkdown.propTypes = {
 };
 
 // src/components/Markdown/MemoizedReactMarkdown.tsx
-var MemoizedReactMarkdown = (0, import_react8.memo)(ReactMarkdown);
+var MemoizedReactMarkdown = (0, import_react7.memo)(ReactMarkdown);
 var MemoizedReactMarkdown_default = MemoizedReactMarkdown;
 
 // src/components/ChatComponents/ChatSingleMessage.tsx
-var import_react9 = __toESM(require_react());
+var import_react8 = __toESM(require_react());
 var ChatSingleMessage = ({ message }) => {
-  const [isCopied, setIsCopied] = (0, import_react9.useState)(false);
+  const [isCopied, setIsCopied] = (0, import_react8.useState)(false);
   const copyToClipboard = () => {
     if (!navigator.clipboard || !navigator.clipboard.writeText) {
       return;
@@ -111128,41 +111169,41 @@ var ChatSingleMessage = ({ message }) => {
       }, 2e3);
     });
   };
-  return /* @__PURE__ */ import_react9.default.createElement("div", { className: "message-container" }, /* @__PURE__ */ import_react9.default.createElement(
+  return /* @__PURE__ */ import_react8.default.createElement("div", { className: "message-container" }, /* @__PURE__ */ import_react8.default.createElement(
     "div",
     {
       className: `message ${message.sender === USER_SENDER ? "user-message" : "bot-message"}`
     },
-    /* @__PURE__ */ import_react9.default.createElement("div", { className: "message-icon" }, message.sender === USER_SENDER ? /* @__PURE__ */ import_react9.default.createElement(UserIcon, null) : /* @__PURE__ */ import_react9.default.createElement(BotIcon, null)),
-    /* @__PURE__ */ import_react9.default.createElement("div", { className: "message-content" }, message.sender === USER_SENDER ? /* @__PURE__ */ import_react9.default.createElement("span", null, message.message) : /* @__PURE__ */ import_react9.default.createElement(
+    /* @__PURE__ */ import_react8.default.createElement("div", { className: "message-icon" }, message.sender === USER_SENDER ? /* @__PURE__ */ import_react8.default.createElement(UserIcon, null) : /* @__PURE__ */ import_react8.default.createElement(BotIcon, null)),
+    /* @__PURE__ */ import_react8.default.createElement("div", { className: "message-content" }, message.sender === USER_SENDER ? /* @__PURE__ */ import_react8.default.createElement("span", null, message.message) : /* @__PURE__ */ import_react8.default.createElement(
       MemoizedReactMarkdown_default,
       {
         transformLinkUri: null
       },
       message.message
     ))
-  ), /* @__PURE__ */ import_react9.default.createElement("button", { onClick: copyToClipboard, className: "copy-message-button" }, isCopied ? /* @__PURE__ */ import_react9.default.createElement(CheckIcon, null) : /* @__PURE__ */ import_react9.default.createElement(CopyClipboardIcon, null)));
+  ), /* @__PURE__ */ import_react8.default.createElement("button", { onClick: copyToClipboard, className: "copy-message-button" }, isCopied ? /* @__PURE__ */ import_react8.default.createElement(CheckIcon, null) : /* @__PURE__ */ import_react8.default.createElement(CopyClipboardIcon, null)));
 };
 var ChatSingleMessage_default = ChatSingleMessage;
 
 // src/components/ChatComponents/ChatMessages.tsx
-var import_react10 = __toESM(require_react());
+var import_react9 = __toESM(require_react());
 var ChatMessages = ({
   chatHistory,
   currentAiMessage,
   loading
 }) => {
-  const [loadingDots, setLoadingDots] = (0, import_react10.useState)("");
+  const [loadingDots, setLoadingDots] = (0, import_react9.useState)("");
   const scrollToBottom = () => {
     const chatMessagesContainer = document.querySelector(".chat-messages");
     if (chatMessagesContainer) {
       chatMessagesContainer.scrollTop = chatMessagesContainer.scrollHeight;
     }
   };
-  (0, import_react10.useEffect)(() => {
+  (0, import_react9.useEffect)(() => {
     scrollToBottom();
   }, [chatHistory]);
-  (0, import_react10.useEffect)(() => {
+  (0, import_react9.useEffect)(() => {
     let intervalId;
     if (loading) {
       intervalId = setInterval(() => {
@@ -111173,7 +111214,7 @@ var ChatMessages = ({
     }
     return () => clearInterval(intervalId);
   }, [loading]);
-  return /* @__PURE__ */ import_react10.default.createElement("div", { className: "chat-messages" }, chatHistory.map((message, index2) => message.isVisible && /* @__PURE__ */ import_react10.default.createElement(ChatSingleMessage_default, { key: index2, message })), currentAiMessage ? /* @__PURE__ */ import_react10.default.createElement("div", { className: "message bot-message", key: `ai_message_${currentAiMessage}` }, /* @__PURE__ */ import_react10.default.createElement("div", { className: "message-icon" }, /* @__PURE__ */ import_react10.default.createElement(BotIcon, null)), /* @__PURE__ */ import_react10.default.createElement("div", { className: "message-content" }, /* @__PURE__ */ import_react10.default.createElement(MemoizedReactMarkdown_default, null, currentAiMessage))) : loading && /* @__PURE__ */ import_react10.default.createElement("div", { className: "message bot-message", key: `ai_message_${currentAiMessage}` }, /* @__PURE__ */ import_react10.default.createElement("div", { className: "message-icon" }, /* @__PURE__ */ import_react10.default.createElement(BotIcon, null)), /* @__PURE__ */ import_react10.default.createElement("div", { className: "message-content" }, /* @__PURE__ */ import_react10.default.createElement(MemoizedReactMarkdown_default, null, loadingDots))));
+  return /* @__PURE__ */ import_react9.default.createElement("div", { className: "chat-messages" }, chatHistory.map((message, index2) => message.isVisible && /* @__PURE__ */ import_react9.default.createElement(ChatSingleMessage_default, { key: index2, message })), currentAiMessage ? /* @__PURE__ */ import_react9.default.createElement("div", { className: "message bot-message", key: `ai_message_${currentAiMessage}` }, /* @__PURE__ */ import_react9.default.createElement("div", { className: "message-icon" }, /* @__PURE__ */ import_react9.default.createElement(BotIcon, null)), /* @__PURE__ */ import_react9.default.createElement("div", { className: "message-content" }, /* @__PURE__ */ import_react9.default.createElement(MemoizedReactMarkdown_default, null, currentAiMessage))) : loading && /* @__PURE__ */ import_react9.default.createElement("div", { className: "message bot-message", key: `ai_message_${currentAiMessage}` }, /* @__PURE__ */ import_react9.default.createElement("div", { className: "message-icon" }, /* @__PURE__ */ import_react9.default.createElement(BotIcon, null)), /* @__PURE__ */ import_react9.default.createElement("div", { className: "message-content" }, /* @__PURE__ */ import_react9.default.createElement(MemoizedReactMarkdown_default, null, loadingDots))));
 };
 var ChatMessages_default = ChatMessages;
 
@@ -111287,7 +111328,7 @@ var getAIResponse = async (userMessage, chainManager, addMessage, updateCurrentA
 };
 
 // src/sharedState.ts
-var import_react11 = __toESM(require_react());
+var import_react10 = __toESM(require_react());
 var SharedState = class {
   constructor() {
     this.chatHistory = [];
@@ -111303,10 +111344,10 @@ var SharedState = class {
   }
 };
 function useSharedState(sharedState) {
-  const [chatHistory, setChatHistory] = (0, import_react11.useState)(
+  const [chatHistory, setChatHistory] = (0, import_react10.useState)(
     sharedState.getMessages()
   );
-  (0, import_react11.useEffect)(() => {
+  (0, import_react10.useEffect)(() => {
     setChatHistory(sharedState.getMessages());
   }, []);
   const addMessage = (message) => {
@@ -111327,7 +111368,7 @@ var sharedState_default = SharedState;
 
 // src/components/Chat.tsx
 var import_obsidian14 = require("obsidian");
-var import_react12 = __toESM(require_react());
+var import_react11 = __toESM(require_react());
 var Chat4 = ({
   sharedState,
   settings,
@@ -111350,11 +111391,11 @@ var Chat4 = ({
     setChain,
     clearChatMemory
   ] = useAIState(chainManager);
-  const [currentAiMessage, setCurrentAiMessage] = (0, import_react12.useState)("");
-  const [inputMessage, setInputMessage] = (0, import_react12.useState)("");
-  const [abortController, setAbortController] = (0, import_react12.useState)(null);
-  const [loading, setLoading] = (0, import_react12.useState)(false);
-  const app2 = plugin.app || (0, import_react12.useContext)(AppContext);
+  const [currentAiMessage, setCurrentAiMessage] = (0, import_react11.useState)("");
+  const [inputMessage, setInputMessage] = (0, import_react11.useState)("");
+  const [abortController, setAbortController] = (0, import_react11.useState)(null);
+  const [loading, setLoading] = (0, import_react11.useState)(false);
+  const app2 = plugin.app || (0, import_react11.useContext)(AppContext);
   const handleSendMessage = async () => {
     if (!inputMessage)
       return;
@@ -111409,7 +111450,7 @@ ${noteContent}`;
       console.error("App instance is not available.");
       return;
     }
-    const chatContent = chatHistory.map((message) => `**${message.sender}**: ${message.message}`).join("\n\n");
+    const chatContent = chatHistory.filter((message) => message.isVisible).map((message) => `**${message.sender}**: ${message.message}`).join("\n\n");
     try {
       const folder = app2.vault.getAbstractFileByPath(defaultSaveFolder);
       if (!folder) {
@@ -111544,7 +111585,7 @@ ${noteContent}`;
       abortController.abort();
     }
   };
-  (0, import_react12.useEffect)(() => {
+  (0, import_react11.useEffect)(() => {
     async function handleSelection(selectedText) {
       const wordCount = selectedText.split(" ").length;
       const tokenCount = await chainManager.chatModelManager.countTokens(selectedText);
@@ -111602,14 +111643,14 @@ ${noteContent}`;
       };
     };
   };
-  (0, import_react12.useEffect)(createEffect("fixGrammarSpellingSelection", fixGrammarSpellingSelectionPrompt), []);
-  (0, import_react12.useEffect)(createEffect("summarizeSelection", summarizePrompt), []);
-  (0, import_react12.useEffect)(createEffect("tocSelection", tocPrompt), []);
-  (0, import_react12.useEffect)(createEffect("glossarySelection", glossaryPrompt), []);
-  (0, import_react12.useEffect)(createEffect("simplifySelection", simplifyPrompt), []);
-  (0, import_react12.useEffect)(createEffect("emojifySelection", emojifyPrompt), []);
-  (0, import_react12.useEffect)(createEffect("removeUrlsFromSelection", removeUrlsFromSelectionPrompt), []);
-  (0, import_react12.useEffect)(
+  (0, import_react11.useEffect)(createEffect("fixGrammarSpellingSelection", fixGrammarSpellingSelectionPrompt), []);
+  (0, import_react11.useEffect)(createEffect("summarizeSelection", summarizePrompt), []);
+  (0, import_react11.useEffect)(createEffect("tocSelection", tocPrompt), []);
+  (0, import_react11.useEffect)(createEffect("glossarySelection", glossaryPrompt), []);
+  (0, import_react11.useEffect)(createEffect("simplifySelection", simplifyPrompt), []);
+  (0, import_react11.useEffect)(createEffect("emojifySelection", emojifyPrompt), []);
+  (0, import_react11.useEffect)(createEffect("removeUrlsFromSelection", removeUrlsFromSelectionPrompt), []);
+  (0, import_react11.useEffect)(
     createEffect(
       "rewriteTweetSelection",
       rewriteTweetSelectionPrompt,
@@ -111617,7 +111658,7 @@ ${noteContent}`;
     ),
     []
   );
-  (0, import_react12.useEffect)(
+  (0, import_react11.useEffect)(
     createEffect(
       "rewriteTweetThreadSelection",
       rewriteTweetThreadSelectionPrompt,
@@ -111625,18 +111666,18 @@ ${noteContent}`;
     ),
     []
   );
-  (0, import_react12.useEffect)(createEffect("rewriteShorterSelection", rewriteShorterSelectionPrompt), []);
-  (0, import_react12.useEffect)(createEffect("rewriteLongerSelection", rewriteLongerSelectionPrompt), []);
-  (0, import_react12.useEffect)(createEffect("eli5Selection", eli5SelectionPrompt), []);
-  (0, import_react12.useEffect)(createEffect("rewritePressReleaseSelection", rewritePressReleaseSelectionPrompt), []);
-  (0, import_react12.useEffect)(
+  (0, import_react11.useEffect)(createEffect("rewriteShorterSelection", rewriteShorterSelectionPrompt), []);
+  (0, import_react11.useEffect)(createEffect("rewriteLongerSelection", rewriteLongerSelectionPrompt), []);
+  (0, import_react11.useEffect)(createEffect("eli5Selection", eli5SelectionPrompt), []);
+  (0, import_react11.useEffect)(createEffect("rewritePressReleaseSelection", rewritePressReleaseSelectionPrompt), []);
+  (0, import_react11.useEffect)(
     createEffect(
       "translateSelection",
       (selectedText, language) => createTranslateSelectionPrompt(language)(selectedText)
     ),
     []
   );
-  (0, import_react12.useEffect)(
+  (0, import_react11.useEffect)(
     createEffect(
       "changeToneSelection",
       (selectedText, tone) => createChangeToneSelectionPrompt(tone)(selectedText)
@@ -111644,7 +111685,7 @@ ${noteContent}`;
     []
   );
   const customPromptProcessor = CustomPromptProcessor.getInstance(app2.vault);
-  (0, import_react12.useEffect)(
+  (0, import_react11.useEffect)(
     createEffect(
       "applyCustomPrompt",
       async (selectedText, customPrompt) => {
@@ -111657,7 +111698,7 @@ ${noteContent}`;
     ),
     []
   );
-  (0, import_react12.useEffect)(
+  (0, import_react11.useEffect)(
     createEffect(
       "applyAdhocPrompt",
       async (selectedText, customPrompt) => {
@@ -111670,14 +111711,14 @@ ${noteContent}`;
     ),
     []
   );
-  return /* @__PURE__ */ import_react12.default.createElement("div", { className: "chat-container" }, /* @__PURE__ */ import_react12.default.createElement(
+  return /* @__PURE__ */ import_react11.default.createElement("div", { className: "chat-container" }, /* @__PURE__ */ import_react11.default.createElement(
     ChatMessages_default,
     {
       chatHistory,
       currentAiMessage,
       loading
     }
-  ), /* @__PURE__ */ import_react12.default.createElement("div", { className: "bottom-container" }, /* @__PURE__ */ import_react12.default.createElement(
+  ), /* @__PURE__ */ import_react11.default.createElement("div", { className: "bottom-container" }, /* @__PURE__ */ import_react11.default.createElement(
     ChatIcons_default,
     {
       currentModel,
@@ -111700,7 +111741,7 @@ ${noteContent}`;
       proxyServer: plugin.proxyServer,
       debug: debug4
     }
-  ), /* @__PURE__ */ import_react12.default.createElement(
+  ), /* @__PURE__ */ import_react11.default.createElement(
     ChatInput_default,
     {
       inputMessage,
@@ -111913,31 +111954,78 @@ var HttpError = import_application.default.HttpError;
 
 // src/proxyServer.ts
 var import_koa_proxies = __toESM(require_koa_proxies());
+var server;
 var ProxyServer = class {
-  constructor(port) {
+  constructor(settings, port) {
+    this.settings = settings;
     this.port = port;
+    this.debug = settings.debug;
   }
-  async startProxyServer(proxyBaseUrl) {
-    console.log("Attempting to start proxy server...");
+  getProxyURL(currentModel) {
+    if (currentModel === "CLAUDE" /* CLAUDE */) {
+      return "https://api.anthropic.com/";
+    } else if (this.settings.useOpenAILocalProxy && this.settings.openAIProxyBaseUrl) {
+      return this.settings.openAIProxyBaseUrl;
+    }
+    return "";
+  }
+  // Starts a proxy server on localhost that forwards requests to the provided base URL
+  // If rewritePaths is true, the proxy will rewrite all paths of the requests to match the base URL
+  async startProxyServer(proxyBaseUrl, rewritePaths = true) {
+    await this.stopProxyServer();
+    if (this.debug) {
+      console.log(`Attempting to start proxy server to ${proxyBaseUrl}...`);
+    }
     const app2 = new koa_default();
     app2.use((0, import_cors.default)());
-    app2.use((0, import_koa_proxies.default)("/", { target: proxyBaseUrl, changeOrigin: true }));
-    this.server = app2.listen(this.port);
-    this.server.on("error", (err) => {
+    app2.use(
+      (0, import_koa_proxies.default)("/", {
+        target: proxyBaseUrl,
+        changeOrigin: true,
+        logs: false,
+        rewrite: rewritePaths ? (path2) => path2 : void 0
+      })
+    );
+    if (server == null ? void 0 : server.listening) {
+      return;
+    }
+    server = app2.listen(this.port);
+    server.on("error", (err) => {
       if (err.code === "EADDRINUSE") {
         console.error(`Proxy server port ${this.port} is already in use.`);
       } else {
         console.error(`Failed to start proxy server: ${err.message}`);
       }
     });
-    this.server.on("listening", () => {
-      console.log(`Proxy server running on http://localhost:${this.port}`);
+    server.on("listening", () => {
+      this.runningUrl = proxyBaseUrl;
+      if (this.debug) {
+        console.log(
+          `Proxy server running on http://localhost:${this.port}. Proxy to ${proxyBaseUrl}`
+        );
+      }
     });
   }
   async stopProxyServer() {
-    if (this.server) {
-      this.server.close();
+    let waitForClose = false;
+    if (server) {
+      if (this.debug) {
+        console.log(
+          `Attempting to stop proxy server proxying to ${this.runningUrl}...`
+        );
+      }
+      waitForClose = new Promise((resolve) => {
+        server.on("close", () => {
+          this.runningUrl = "";
+          if (this.debug) {
+            console.log("Proxy server stopped.");
+          }
+          resolve(true);
+        });
+        server.close();
+      });
     }
+    return waitForClose;
   }
 };
 
@@ -111951,23 +112039,23 @@ var import_obsidian19 = require("obsidian");
 var import_react20 = __toESM(require_react());
 
 // src/settings/components/AdvancedSettings.tsx
-var import_react14 = __toESM(require_react());
+var import_react13 = __toESM(require_react());
 
 // src/settings/components/SettingBlocks.tsx
-var import_react13 = __toESM(require_react());
+var import_react12 = __toESM(require_react());
 var DropdownComponent = ({ name, description, options, value, onChange }) => {
-  return /* @__PURE__ */ import_react13.default.createElement("div", { className: "copilot-setting-item" }, /* @__PURE__ */ import_react13.default.createElement("div", { className: "copilot-setting-item-name" }, name), /* @__PURE__ */ import_react13.default.createElement("div", { className: "copilot-setting-item-description" }, description), /* @__PURE__ */ import_react13.default.createElement(
+  return /* @__PURE__ */ import_react12.default.createElement("div", { className: "copilot-setting-item" }, /* @__PURE__ */ import_react12.default.createElement("div", { className: "copilot-setting-item-name" }, name), /* @__PURE__ */ import_react12.default.createElement("div", { className: "copilot-setting-item-description" }, description), /* @__PURE__ */ import_react12.default.createElement(
     "select",
     {
       value,
       onChange: (e) => onChange(e.target.value),
       className: "copilot-setting-item-control"
     },
-    options.map((option, index2) => /* @__PURE__ */ import_react13.default.createElement("option", { key: index2, value: option }, option))
+    options.map((option, index2) => /* @__PURE__ */ import_react12.default.createElement("option", { key: index2, value: option }, option))
   ));
 };
 var TextComponent = ({ name, description, placeholder, value, type, onChange }) => {
-  return /* @__PURE__ */ import_react13.default.createElement("div", { className: "copilot-setting-item" }, /* @__PURE__ */ import_react13.default.createElement("div", { className: "copilot-setting-item-name" }, name), /* @__PURE__ */ import_react13.default.createElement("div", { className: "copilot-setting-item-description" }, description), /* @__PURE__ */ import_react13.default.createElement(
+  return /* @__PURE__ */ import_react12.default.createElement("div", { className: "copilot-setting-item" }, /* @__PURE__ */ import_react12.default.createElement("div", { className: "copilot-setting-item-name" }, name), /* @__PURE__ */ import_react12.default.createElement("div", { className: "copilot-setting-item-description" }, description), /* @__PURE__ */ import_react12.default.createElement(
     "input",
     {
       type: type || "text",
@@ -111979,7 +112067,7 @@ var TextComponent = ({ name, description, placeholder, value, type, onChange }) 
   ));
 };
 var TextAreaComponent = ({ name, description, placeholder, value, onChange }) => {
-  return /* @__PURE__ */ import_react13.default.createElement("div", { className: "copilot-setting-item" }, /* @__PURE__ */ import_react13.default.createElement("div", { className: "copilot-setting-item-name" }, name), /* @__PURE__ */ import_react13.default.createElement("div", { className: "copilot-setting-item-description" }, description), /* @__PURE__ */ import_react13.default.createElement(
+  return /* @__PURE__ */ import_react12.default.createElement("div", { className: "copilot-setting-item" }, /* @__PURE__ */ import_react12.default.createElement("div", { className: "copilot-setting-item-name" }, name), /* @__PURE__ */ import_react12.default.createElement("div", { className: "copilot-setting-item-description" }, description), /* @__PURE__ */ import_react12.default.createElement(
     "textarea",
     {
       className: "copilot-setting-item-control",
@@ -111990,7 +112078,7 @@ var TextAreaComponent = ({ name, description, placeholder, value, onChange }) =>
   ));
 };
 var SliderComponent = ({ name, description, min, max, step, value, onChange }) => {
-  return /* @__PURE__ */ import_react13.default.createElement("div", { className: "copilot-setting-item" }, /* @__PURE__ */ import_react13.default.createElement("div", { className: "copilot-setting-item-name" }, name), /* @__PURE__ */ import_react13.default.createElement("div", { className: "copilot-setting-item-description" }, description), /* @__PURE__ */ import_react13.default.createElement("div", { style: { display: "flex", alignItems: "center" } }, /* @__PURE__ */ import_react13.default.createElement(
+  return /* @__PURE__ */ import_react12.default.createElement("div", { className: "copilot-setting-item" }, /* @__PURE__ */ import_react12.default.createElement("div", { className: "copilot-setting-item-name" }, name), /* @__PURE__ */ import_react12.default.createElement("div", { className: "copilot-setting-item-description" }, description), /* @__PURE__ */ import_react12.default.createElement("div", { style: { display: "flex", alignItems: "center" } }, /* @__PURE__ */ import_react12.default.createElement(
     "input",
     {
       type: "range",
@@ -112001,13 +112089,25 @@ var SliderComponent = ({ name, description, min, max, step, value, onChange }) =
       value,
       onChange: (e) => onChange(parseFloat(e.target.value))
     }
-  ), /* @__PURE__ */ import_react13.default.createElement("span", { style: { marginLeft: "20px", fontWeight: "bold", color: "var(--inline-title-color)" } }, value)));
+  ), /* @__PURE__ */ import_react12.default.createElement("span", { style: { marginLeft: "20px", fontWeight: "bold", color: "var(--inline-title-color)" } }, value)));
+};
+var ToggleComponent = ({ name, description, value, onChange }) => {
+  return /* @__PURE__ */ import_react12.default.createElement("div", { className: "copilot-setting-item" }, /* @__PURE__ */ import_react12.default.createElement("div", { className: "copilot-setting-item-name" }, name), /* @__PURE__ */ import_react12.default.createElement("div", { className: "copilot-setting-item-description" }, description), /* @__PURE__ */ import_react12.default.createElement("label", { className: "switch" }, /* @__PURE__ */ import_react12.default.createElement(
+    "input",
+    {
+      type: "checkbox",
+      checked: value,
+      onChange: (e) => onChange(e.target.checked)
+    }
+  ), /* @__PURE__ */ import_react12.default.createElement("span", { className: "slider round" })));
 };
 
 // src/settings/components/AdvancedSettings.tsx
 var AdvancedSettings = ({
   openAIProxyBaseUrl,
   setOpenAIProxyBaseUrl,
+  useOpenAILocalProxy,
+  setUseOpenAILocalProxy,
   openAIProxyModelName,
   setOpenAIProxyModelName,
   openAIEmbeddingProxyBaseUrl,
@@ -112017,7 +112117,7 @@ var AdvancedSettings = ({
   userSystemPrompt,
   setUserSystemPrompt
 }) => {
-  return /* @__PURE__ */ import_react14.default.createElement("div", null, /* @__PURE__ */ import_react14.default.createElement("br", null), /* @__PURE__ */ import_react14.default.createElement("br", null), /* @__PURE__ */ import_react14.default.createElement("h1", null, "Advanced Settings"), /* @__PURE__ */ import_react14.default.createElement("div", { className: "warning-message" }, "OpenAI Proxy settings override the default OpenAI parameters, meaning now your OpenAI models are routed to this provider instead! Clear these fields to use OpenAI again."), /* @__PURE__ */ import_react14.default.createElement(
+  return /* @__PURE__ */ import_react13.default.createElement("div", null, /* @__PURE__ */ import_react13.default.createElement("br", null), /* @__PURE__ */ import_react13.default.createElement("br", null), /* @__PURE__ */ import_react13.default.createElement("h1", null, "Advanced Settings"), /* @__PURE__ */ import_react13.default.createElement("div", { className: "warning-message" }, "OpenAI Proxy settings override the default OpenAI parameters, meaning now your OpenAI models are routed to this provider instead! Clear these fields to use OpenAI again.", /* @__PURE__ */ import_react13.default.createElement("br", null), "This is in effect only when you pick any OpenAI model in the model dropdown.", /* @__PURE__ */ import_react13.default.createElement("br", null), "If your provider needs an API key, use the OpenAI API key field above."), /* @__PURE__ */ import_react13.default.createElement(
     TextComponent,
     {
       name: "OpenAI Proxy Base URL",
@@ -112026,16 +112126,24 @@ var AdvancedSettings = ({
       onChange: setOpenAIProxyBaseUrl,
       placeholder: "https://openai.example.com/v1"
     }
-  ), /* @__PURE__ */ import_react14.default.createElement(
+  ), /* @__PURE__ */ import_react13.default.createElement(
+    ToggleComponent,
+    {
+      name: "Use local proxy server for OpenAI",
+      description: "Enable if your proxy base URL results in CORS errors.",
+      value: useOpenAILocalProxy,
+      onChange: setUseOpenAILocalProxy
+    }
+  ), /* @__PURE__ */ import_react13.default.createElement(
     TextComponent,
     {
       name: "OpenAI Proxy Model Name",
       description: "The actual model name you want to use with your provider. Overrides the OpenAI model name you pick in the Copilot Chat model selection. Note: non-OpenAI models picked will not be overridden!",
       value: openAIProxyModelName,
       onChange: setOpenAIProxyModelName,
-      placeholder: "gpt-3.5-turbo"
+      placeholder: "gpt-4o-mini"
     }
-  ), /* @__PURE__ */ import_react14.default.createElement(
+  ), /* @__PURE__ */ import_react13.default.createElement(
     TextComponent,
     {
       name: "OpenAI Embedding Proxy Base URL",
@@ -112044,7 +112152,7 @@ var AdvancedSettings = ({
       onChange: setOpenAIEmbeddingProxyBaseUrl,
       placeholder: "https://openai.example.com/v1"
     }
-  ), /* @__PURE__ */ import_react14.default.createElement(
+  ), /* @__PURE__ */ import_react13.default.createElement(
     TextComponent,
     {
       name: "OpenAI Embedding Proxy Model Name",
@@ -112053,7 +112161,7 @@ var AdvancedSettings = ({
       onChange: setOpenAIEmbeddingProxyModelName,
       placeholder: "text-embedding-ada-002"
     }
-  ), /* @__PURE__ */ import_react14.default.createElement(
+  ), /* @__PURE__ */ import_react13.default.createElement(
     TextAreaComponent,
     {
       name: "User System Prompt",
@@ -112067,12 +112175,12 @@ var AdvancedSettings = ({
 var AdvancedSettings_default = AdvancedSettings;
 
 // src/settings/components/ApiSettings.tsx
-var import_react17 = __toESM(require_react());
+var import_react16 = __toESM(require_react());
 
 // src/settings/components/ApiSetting.tsx
-var import_react15 = __toESM(require_react());
+var import_react14 = __toESM(require_react());
 var ApiSetting = ({ title, description, value, setValue, placeholder, type }) => {
-  return /* @__PURE__ */ import_react15.default.createElement("div", null, /* @__PURE__ */ import_react15.default.createElement(
+  return /* @__PURE__ */ import_react14.default.createElement("div", null, /* @__PURE__ */ import_react14.default.createElement(
     TextComponent,
     {
       name: title,
@@ -112087,9 +112195,9 @@ var ApiSetting = ({ title, description, value, setValue, placeholder, type }) =>
 var ApiSetting_default = ApiSetting;
 
 // src/settings/components/Collapsible.tsx
-var import_react16 = __toESM(require_react());
+var import_react15 = __toESM(require_react());
 var Collapsible = ({ title, children }) => {
-  const [isOpen, setIsOpen] = (0, import_react16.useState)(false);
+  const [isOpen, setIsOpen] = (0, import_react15.useState)(false);
   const titleStyle = {
     fontWeight: "bold",
     cursor: "pointer",
@@ -112104,9 +112212,9 @@ var Collapsible = ({ title, children }) => {
     borderRadius: "8px",
     marginTop: "10px"
   };
-  const ChevronDown = () => /* @__PURE__ */ import_react16.default.createElement("svg", { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round" }, /* @__PURE__ */ import_react16.default.createElement("polyline", { points: "6 9 12 15 18 9" }));
-  const ChevronRight = () => /* @__PURE__ */ import_react16.default.createElement("svg", { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round" }, /* @__PURE__ */ import_react16.default.createElement("polyline", { points: "9 18 15 12 9 6" }));
-  return /* @__PURE__ */ import_react16.default.createElement("div", { style: { padding: "20px" } }, /* @__PURE__ */ import_react16.default.createElement("div", { style: titleStyle, onClick: () => setIsOpen(!isOpen) }, title, isOpen ? /* @__PURE__ */ import_react16.default.createElement(ChevronDown, null) : /* @__PURE__ */ import_react16.default.createElement(ChevronRight, null)), isOpen && /* @__PURE__ */ import_react16.default.createElement("div", { style: contentStyle }, children));
+  const ChevronDown = () => /* @__PURE__ */ import_react15.default.createElement("svg", { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round" }, /* @__PURE__ */ import_react15.default.createElement("polyline", { points: "6 9 12 15 18 9" }));
+  const ChevronRight = () => /* @__PURE__ */ import_react15.default.createElement("svg", { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round" }, /* @__PURE__ */ import_react15.default.createElement("polyline", { points: "9 18 15 12 9 6" }));
+  return /* @__PURE__ */ import_react15.default.createElement("div", { style: { padding: "20px" } }, /* @__PURE__ */ import_react15.default.createElement("div", { style: titleStyle, onClick: () => setIsOpen(!isOpen) }, title, isOpen ? /* @__PURE__ */ import_react15.default.createElement(ChevronDown, null) : /* @__PURE__ */ import_react15.default.createElement(ChevronRight, null)), isOpen && /* @__PURE__ */ import_react15.default.createElement("div", { style: contentStyle }, children));
 };
 var Collapsible_default = Collapsible;
 
@@ -112116,8 +112224,12 @@ var ApiSettings = ({
   setOpenAIApiKey,
   openAIOrgId,
   setOpenAIOrgId,
+  openAICustomModel,
+  setOpenAICustomModel,
   googleApiKey,
   setGoogleApiKey,
+  googleCustomModel,
+  setGoogleCustomModel,
   anthropicApiKey,
   setAnthropicApiKey,
   anthropicModel,
@@ -112141,7 +112253,7 @@ var ApiSettings = ({
   groqModel,
   setGroqModel
 }) => {
-  return /* @__PURE__ */ import_react17.default.createElement("div", null, /* @__PURE__ */ import_react17.default.createElement("br", null), /* @__PURE__ */ import_react17.default.createElement("br", null), /* @__PURE__ */ import_react17.default.createElement("h1", null, "API Settings"), /* @__PURE__ */ import_react17.default.createElement("p", null, "All your API keys are stored locally."), /* @__PURE__ */ import_react17.default.createElement("div", { className: "warning-message" }, "Make sure you have access to the model and the correct API key.", /* @__PURE__ */ import_react17.default.createElement("br", null), "If errors occur, please re-enter the API key, save and reload the plugin to see if it resolves the issue."), /* @__PURE__ */ import_react17.default.createElement("div", null, /* @__PURE__ */ import_react17.default.createElement("div", null, /* @__PURE__ */ import_react17.default.createElement(
+  return /* @__PURE__ */ import_react16.default.createElement("div", null, /* @__PURE__ */ import_react16.default.createElement("br", null), /* @__PURE__ */ import_react16.default.createElement("br", null), /* @__PURE__ */ import_react16.default.createElement("h1", null, "API Settings"), /* @__PURE__ */ import_react16.default.createElement("p", null, "All your API keys are stored locally."), /* @__PURE__ */ import_react16.default.createElement("div", { className: "warning-message" }, "Make sure you have access to the model and the correct API key.", /* @__PURE__ */ import_react16.default.createElement("br", null), "If errors occur, please re-enter the API key, save and reload the plugin to see if it resolves the issue."), /* @__PURE__ */ import_react16.default.createElement("div", null, /* @__PURE__ */ import_react16.default.createElement("div", null, /* @__PURE__ */ import_react16.default.createElement(
     ApiSetting_default,
     {
       title: "OpenAI API Key",
@@ -112149,15 +112261,25 @@ var ApiSettings = ({
       setValue: setOpenAIApiKey,
       placeholder: "Enter OpenAI API Key"
     }
-  ), /* @__PURE__ */ import_react17.default.createElement("p", null, "You can find your API key at", " ", /* @__PURE__ */ import_react17.default.createElement("a", { href: "https://platform.openai.com/api-keys", target: "_blank", rel: "noopener noreferrer" }, "https://platform.openai.com/api-keys")), /* @__PURE__ */ import_react17.default.createElement(
+  ), /* @__PURE__ */ import_react16.default.createElement("p", null, "You can find your API key at", " ", /* @__PURE__ */ import_react16.default.createElement("a", { href: "https://platform.openai.com/api-keys", target: "_blank", rel: "noopener noreferrer" }, "https://platform.openai.com/api-keys")), /* @__PURE__ */ import_react16.default.createElement(
     ApiSetting_default,
     {
-      title: "OpenAI Organization ID",
+      title: "OpenAI Custom Model Name (optional)",
+      description: "Warning: overrides any OpenAI model in the dropdown if set.",
+      value: openAICustomModel,
+      setValue: setOpenAICustomModel,
+      placeholder: "Enter custom model name",
+      type: "text"
+    }
+  ), /* @__PURE__ */ import_react16.default.createElement(
+    ApiSetting_default,
+    {
+      title: "OpenAI Organization ID (optional)",
       value: openAIOrgId,
       setValue: setOpenAIOrgId,
       placeholder: "Enter OpenAI Organization ID if applicable"
     }
-  )), /* @__PURE__ */ import_react17.default.createElement("div", { className: "warning-message" }, /* @__PURE__ */ import_react17.default.createElement("span", null, "If you are a new user, try "), /* @__PURE__ */ import_react17.default.createElement("a", { href: "https://platform.openai.com/playground?mode=chat", target: "_blank", rel: "noopener noreferrer" }, "OpenAI playground"), /* @__PURE__ */ import_react17.default.createElement("span", null, " to see if you have correct API access first."))), /* @__PURE__ */ import_react17.default.createElement("br", null), /* @__PURE__ */ import_react17.default.createElement(Collapsible_default, { title: "Google API Settings" }, /* @__PURE__ */ import_react17.default.createElement("div", null, /* @__PURE__ */ import_react17.default.createElement(
+  )), /* @__PURE__ */ import_react16.default.createElement("div", { className: "warning-message" }, /* @__PURE__ */ import_react16.default.createElement("span", null, "If you are a new user, try "), /* @__PURE__ */ import_react16.default.createElement("a", { href: "https://platform.openai.com/playground?mode=chat", target: "_blank", rel: "noopener noreferrer" }, "OpenAI playground"), /* @__PURE__ */ import_react16.default.createElement("span", null, " to see if you have correct API access first."))), /* @__PURE__ */ import_react16.default.createElement("br", null), /* @__PURE__ */ import_react16.default.createElement(Collapsible_default, { title: "Google API Settings" }, /* @__PURE__ */ import_react16.default.createElement("div", null, /* @__PURE__ */ import_react16.default.createElement(
     ApiSetting_default,
     {
       title: "Google API Key",
@@ -112165,7 +112287,17 @@ var ApiSettings = ({
       setValue: setGoogleApiKey,
       placeholder: "Enter Google API Key"
     }
-  ), /* @__PURE__ */ import_react17.default.createElement("p", null, "If you have Google Cloud, you can get Gemini API key ", " ", /* @__PURE__ */ import_react17.default.createElement("a", { href: "https://makersuite.google.com/app/apikey", target: "_blank", rel: "noopener noreferrer" }, "here"), ".", /* @__PURE__ */ import_react17.default.createElement("br", null), "Your API key is stored locally and is only used to make requests to Google's services."))), /* @__PURE__ */ import_react17.default.createElement(Collapsible_default, { title: "Anthropic API Settings" }, /* @__PURE__ */ import_react17.default.createElement("div", null, /* @__PURE__ */ import_react17.default.createElement(
+  ), /* @__PURE__ */ import_react16.default.createElement("p", null, "If you have Google Cloud, you can get Gemini API key ", " ", /* @__PURE__ */ import_react16.default.createElement("a", { href: "https://makersuite.google.com/app/apikey", target: "_blank", rel: "noopener noreferrer" }, "here"), ".", /* @__PURE__ */ import_react16.default.createElement("br", null), "Your API key is stored locally and is only used to make requests to Google's services."), /* @__PURE__ */ import_react16.default.createElement(
+    ApiSetting_default,
+    {
+      title: "Google Custom Model Name (optional)",
+      description: "Warning: overrides any Google model in the dropdown if set.",
+      value: googleCustomModel,
+      setValue: setGoogleCustomModel,
+      placeholder: "Enter custom model name",
+      type: "text"
+    }
+  ))), /* @__PURE__ */ import_react16.default.createElement(Collapsible_default, { title: "Anthropic API Settings" }, /* @__PURE__ */ import_react16.default.createElement("div", null, /* @__PURE__ */ import_react16.default.createElement(
     ApiSetting_default,
     {
       title: "Anthropic API Key",
@@ -112173,7 +112305,7 @@ var ApiSettings = ({
       setValue: setAnthropicApiKey,
       placeholder: "Enter Anthropic API Key"
     }
-  ), /* @__PURE__ */ import_react17.default.createElement(
+  ), /* @__PURE__ */ import_react16.default.createElement(
     ApiSetting_default,
     {
       title: "Anthropic Model",
@@ -112182,7 +112314,7 @@ var ApiSettings = ({
       placeholder: DEFAULT_SETTINGS.anthropicModel,
       type: "text"
     }
-  ), /* @__PURE__ */ import_react17.default.createElement("p", null, "If you have Anthropic API access, you can get the API key ", " ", /* @__PURE__ */ import_react17.default.createElement("a", { href: "https://console.anthropic.com/settings/keys", target: "_blank", rel: "noopener noreferrer" }, "here"), ".", /* @__PURE__ */ import_react17.default.createElement("br", null), "Your API key is stored locally and is only used to make requests to Anthropic's services."))), /* @__PURE__ */ import_react17.default.createElement(Collapsible_default, { title: "OpenRouter.ai API Settings" }, /* @__PURE__ */ import_react17.default.createElement("div", null, /* @__PURE__ */ import_react17.default.createElement(
+  ), /* @__PURE__ */ import_react16.default.createElement("p", null, "If you have Anthropic API access, you can get the API key ", " ", /* @__PURE__ */ import_react16.default.createElement("a", { href: "https://console.anthropic.com/settings/keys", target: "_blank", rel: "noopener noreferrer" }, "here"), ".", /* @__PURE__ */ import_react16.default.createElement("br", null), "Your API key is stored locally and is only used to make requests to Anthropic's services."))), /* @__PURE__ */ import_react16.default.createElement(Collapsible_default, { title: "OpenRouter.ai API Settings" }, /* @__PURE__ */ import_react16.default.createElement("div", null, /* @__PURE__ */ import_react16.default.createElement(
     ApiSetting_default,
     {
       title: "OpenRouter AI API Key",
@@ -112190,7 +112322,7 @@ var ApiSettings = ({
       setValue: setOpenRouterAiApiKey,
       placeholder: "Enter OpenRouter AI API Key"
     }
-  ), /* @__PURE__ */ import_react17.default.createElement(
+  ), /* @__PURE__ */ import_react16.default.createElement(
     ApiSetting_default,
     {
       title: "OpenRouter Model",
@@ -112199,7 +112331,7 @@ var ApiSettings = ({
       placeholder: DEFAULT_SETTINGS.openRouterModel,
       type: "text"
     }
-  ), /* @__PURE__ */ import_react17.default.createElement("p", null, "You can get your OpenRouterAI key ", " ", /* @__PURE__ */ import_react17.default.createElement("a", { href: "https://openrouter.ai/keys", target: "_blank", rel: "noopener noreferrer" }, "here"), ".", /* @__PURE__ */ import_react17.default.createElement("br", null), "Find models ", /* @__PURE__ */ import_react17.default.createElement("a", { href: "https://openrouter.ai/models", target: "_blank", rel: "noopener noreferrer" }, "here"), "."))), /* @__PURE__ */ import_react17.default.createElement(Collapsible_default, { title: "Azure OpenAI API Settings" }, /* @__PURE__ */ import_react17.default.createElement("div", null, /* @__PURE__ */ import_react17.default.createElement(
+  ), /* @__PURE__ */ import_react16.default.createElement("p", null, "You can get your OpenRouterAI key ", " ", /* @__PURE__ */ import_react16.default.createElement("a", { href: "https://openrouter.ai/keys", target: "_blank", rel: "noopener noreferrer" }, "here"), ".", /* @__PURE__ */ import_react16.default.createElement("br", null), "Find models ", /* @__PURE__ */ import_react16.default.createElement("a", { href: "https://openrouter.ai/models", target: "_blank", rel: "noopener noreferrer" }, "here"), "."))), /* @__PURE__ */ import_react16.default.createElement(Collapsible_default, { title: "Azure OpenAI API Settings" }, /* @__PURE__ */ import_react16.default.createElement("div", null, /* @__PURE__ */ import_react16.default.createElement(
     ApiSetting_default,
     {
       title: "Azure OpenAI API Key",
@@ -112207,7 +112339,7 @@ var ApiSettings = ({
       setValue: setAzureOpenAIApiKey,
       placeholder: "Enter Azure OpenAI API Key"
     }
-  ), /* @__PURE__ */ import_react17.default.createElement(
+  ), /* @__PURE__ */ import_react16.default.createElement(
     ApiSetting_default,
     {
       title: "Azure OpenAI API Instance Name",
@@ -112216,7 +112348,7 @@ var ApiSettings = ({
       placeholder: "Enter Azure OpenAI API Instance Name",
       type: "text"
     }
-  ), /* @__PURE__ */ import_react17.default.createElement(
+  ), /* @__PURE__ */ import_react16.default.createElement(
     ApiSetting_default,
     {
       title: "Azure OpenAI API Deployment Name",
@@ -112226,7 +112358,7 @@ var ApiSettings = ({
       placeholder: "Enter Azure OpenAI API Deployment Name",
       type: "text"
     }
-  ), /* @__PURE__ */ import_react17.default.createElement(
+  ), /* @__PURE__ */ import_react16.default.createElement(
     ApiSetting_default,
     {
       title: "Azure OpenAI API Version",
@@ -112235,7 +112367,7 @@ var ApiSettings = ({
       placeholder: "Enter Azure OpenAI API Version",
       type: "text"
     }
-  ), /* @__PURE__ */ import_react17.default.createElement(
+  ), /* @__PURE__ */ import_react16.default.createElement(
     ApiSetting_default,
     {
       title: "Azure OpenAI API Embedding Deployment Name",
@@ -112245,7 +112377,7 @@ var ApiSettings = ({
       placeholder: "Enter Azure OpenAI API Embedding Deployment Name",
       type: "text"
     }
-  ))), /* @__PURE__ */ import_react17.default.createElement(Collapsible_default, { title: "Groq API Settings" }, /* @__PURE__ */ import_react17.default.createElement("div", null, /* @__PURE__ */ import_react17.default.createElement(
+  ))), /* @__PURE__ */ import_react16.default.createElement(Collapsible_default, { title: "Groq API Settings" }, /* @__PURE__ */ import_react16.default.createElement("div", null, /* @__PURE__ */ import_react16.default.createElement(
     ApiSetting_default,
     {
       title: "Groq API Key",
@@ -112253,7 +112385,7 @@ var ApiSettings = ({
       setValue: setGroqApiKey,
       placeholder: "Enter Groq API Key"
     }
-  ), /* @__PURE__ */ import_react17.default.createElement(
+  ), /* @__PURE__ */ import_react16.default.createElement(
     ApiSetting_default,
     {
       title: "Groq Model",
@@ -112262,9 +112394,34 @@ var ApiSettings = ({
       placeholder: "Enter Groq Model",
       type: "text"
     }
-  ), /* @__PURE__ */ import_react17.default.createElement("p", null, "If you have Groq API access, you can get the API key ", " ", /* @__PURE__ */ import_react17.default.createElement("a", { href: "https://console.groq.com/keys", target: "_blank", rel: "noopener noreferrer" }, "here"), ".", /* @__PURE__ */ import_react17.default.createElement("br", null), "Your API key is stored locally and is only used to make requests to Groq's services."))));
+  ), /* @__PURE__ */ import_react16.default.createElement("p", null, "If you have Groq API access, you can get the API key ", " ", /* @__PURE__ */ import_react16.default.createElement("a", { href: "https://console.groq.com/keys", target: "_blank", rel: "noopener noreferrer" }, "here"), ".", /* @__PURE__ */ import_react16.default.createElement("br", null), "Your API key is stored locally and is only used to make requests to Groq's services."))));
 };
 var ApiSettings_default = ApiSettings;
+
+// src/settings/components/CommandToggleSettings.tsx
+var import_react17 = __toESM(require_react());
+var CommandToggleSettings = ({
+  enabledCommands,
+  setEnabledCommands
+}) => {
+  const [isExpanded, setIsExpanded] = (0, import_react17.useState)(false);
+  const toggleCommand = (commandId, enabled) => {
+    setEnabledCommands({
+      ...enabledCommands,
+      [commandId]: { ...enabledCommands[commandId], enabled }
+    });
+  };
+  return /* @__PURE__ */ import_react17.default.createElement("div", null, /* @__PURE__ */ import_react17.default.createElement("h2", { onClick: () => setIsExpanded(!isExpanded), style: { cursor: "pointer" } }, "Command Settings ", isExpanded ? "\u25BC" : "\u25B6"), isExpanded && /* @__PURE__ */ import_react17.default.createElement("div", null, Object.entries(enabledCommands).map(([commandId, { enabled, name }]) => /* @__PURE__ */ import_react17.default.createElement(
+    ToggleComponent,
+    {
+      key: commandId,
+      name: `${name}`,
+      value: enabled,
+      onChange: (value) => toggleCommand(commandId, value)
+    }
+  ))));
+};
+var CommandToggleSettings_default = CommandToggleSettings;
 
 // src/settings/components/LocalCopilotSettings.tsx
 var import_react18 = __toESM(require_react());
@@ -112381,7 +112538,9 @@ function SettingsMain({ plugin, reloadPlugin }) {
   const [contextTurns, setContextTurns] = (0, import_react20.useState)(plugin.settings.contextTurns);
   const [openAIApiKey, setOpenAIApiKey] = (0, import_react20.useState)(plugin.settings.openAIApiKey);
   const [openAIOrgId, setOpenAIOrgId] = (0, import_react20.useState)(plugin.settings.openAIOrgId);
+  const [openAICustomModel, setOpenAICustomModel] = (0, import_react20.useState)(plugin.settings.openAICustomModel);
   const [googleApiKey, setGoogleApiKey] = (0, import_react20.useState)(plugin.settings.googleApiKey);
+  const [googleCustomModel, setGoogleCustomModel] = (0, import_react20.useState)(plugin.settings.googleCustomModel);
   const [anthropicApiKey, setAnthropicApiKey] = (0, import_react20.useState)(plugin.settings.anthropicApiKey);
   const [anthropicModel, setAnthropicModel] = (0, import_react20.useState)(plugin.settings.anthropicModel);
   const [openRouterAiApiKey, setOpenRouterAiApiKey] = (0, import_react20.useState)(plugin.settings.openRouterAiApiKey);
@@ -112400,12 +112559,14 @@ function SettingsMain({ plugin, reloadPlugin }) {
   const [maxSourceChunks, setMaxSourceChunks] = (0, import_react20.useState)(plugin.settings.maxSourceChunks);
   const [userSystemPrompt, setUserSystemPrompt] = (0, import_react20.useState)(plugin.settings.userSystemPrompt);
   const [openAIProxyBaseUrl, setOpenAIProxyBaseUrl] = (0, import_react20.useState)(plugin.settings.openAIProxyBaseUrl);
+  const [useOpenAILocalProxy, setUseOpenAILocalProxy] = (0, import_react20.useState)(plugin.settings.useOpenAILocalProxy);
   const [openAIProxyModelName, setOpenAIProxyModelName] = (0, import_react20.useState)(plugin.settings.openAIProxyModelName);
   const [openAIEmbeddingProxyBaseUrl, setOpenAIEmbeddingProxyBaseUrl] = (0, import_react20.useState)(plugin.settings.openAIEmbeddingProxyBaseUrl);
   const [openAIEmbeddingProxyModelName, setOpenAIEmbeddingProxyModelName] = (0, import_react20.useState)(plugin.settings.openAIEmbeddingProxyModelName);
   const [lmStudioBaseUrl, setlmStudioBaseUrl] = (0, import_react20.useState)(plugin.settings.lmStudioBaseUrl);
   const [ollamaModel, setOllamaModel] = (0, import_react20.useState)(plugin.settings.ollamaModel);
   const [ollamaBaseUrl, setOllamaBaseUrl] = (0, import_react20.useState)(plugin.settings.ollamaBaseUrl);
+  const [enabledCommands, setEnabledCommands] = (0, import_react20.useState)(plugin.settings.enabledCommands);
   const saveAllSettings = async () => {
     plugin.settings.defaultModelDisplayName = defaultModelDisplayName;
     plugin.settings.defaultModel = DISPLAY_NAME_TO_MODEL[defaultModelDisplayName];
@@ -112415,7 +112576,9 @@ function SettingsMain({ plugin, reloadPlugin }) {
     plugin.settings.contextTurns = contextTurns;
     plugin.settings.openAIApiKey = openAIApiKey;
     plugin.settings.openAIOrgId = openAIOrgId;
+    plugin.settings.openAICustomModel = openAICustomModel;
     plugin.settings.googleApiKey = googleApiKey;
+    plugin.settings.googleCustomModel = googleCustomModel;
     plugin.settings.anthropicApiKey = anthropicApiKey;
     plugin.settings.anthropicModel = anthropicModel;
     plugin.settings.openRouterAiApiKey = openRouterAiApiKey;
@@ -112434,12 +112597,14 @@ function SettingsMain({ plugin, reloadPlugin }) {
     plugin.settings.maxSourceChunks = maxSourceChunks;
     plugin.settings.userSystemPrompt = userSystemPrompt;
     plugin.settings.openAIProxyBaseUrl = openAIProxyBaseUrl;
+    plugin.settings.useOpenAILocalProxy = useOpenAILocalProxy;
     plugin.settings.openAIProxyModelName = openAIProxyModelName;
     plugin.settings.openAIEmbeddingProxyBaseUrl = openAIEmbeddingProxyBaseUrl;
     plugin.settings.openAIEmbeddingProxyModelName = openAIEmbeddingProxyModelName;
     plugin.settings.lmStudioBaseUrl = lmStudioBaseUrl;
     plugin.settings.ollamaModel = ollamaModel;
     plugin.settings.ollamaBaseUrl = ollamaBaseUrl;
+    plugin.settings.enabledCommands = enabledCommands;
     await plugin.saveSettings();
     await reloadPlugin();
     new import_obsidian19.Notice("Settings have been saved and the plugin has been reloaded.");
@@ -112506,6 +112671,12 @@ function SettingsMain({ plugin, reloadPlugin }) {
         setContextTurns(value);
       }
     }
+  ), /* @__PURE__ */ import_react20.default.createElement(
+    CommandToggleSettings_default,
+    {
+      enabledCommands,
+      setEnabledCommands
+    }
   )), /* @__PURE__ */ import_react20.default.createElement(
     ApiSettings_default,
     {
@@ -112513,8 +112684,12 @@ function SettingsMain({ plugin, reloadPlugin }) {
       setOpenAIApiKey,
       openAIOrgId,
       setOpenAIOrgId,
+      openAICustomModel,
+      setOpenAICustomModel,
       googleApiKey,
       setGoogleApiKey,
+      googleCustomModel,
+      setGoogleCustomModel,
       anthropicApiKey,
       setAnthropicApiKey,
       anthropicModel,
@@ -112557,6 +112732,8 @@ function SettingsMain({ plugin, reloadPlugin }) {
     {
       openAIProxyBaseUrl,
       setOpenAIProxyBaseUrl,
+      useOpenAILocalProxy,
+      setUseOpenAILocalProxy,
       openAIProxyModelName,
       setOpenAIProxyModelName,
       openAIEmbeddingProxyBaseUrl,
@@ -121274,7 +121451,7 @@ var CopilotPlugin = class extends import_obsidian21.Plugin {
   }
   async onload() {
     await this.loadSettings();
-    this.proxyServer = new ProxyServer(PROXY_SERVER_PORT);
+    this.proxyServer = new ProxyServer(this.settings, PROXY_SERVER_PORT);
     this.addSettingTab(new CopilotSettingTab(this.app, this));
     this.sharedState = new sharedState_default();
     const langChainParams = this.getChainManagerParams();
@@ -121322,7 +121499,7 @@ var CopilotPlugin = class extends import_obsidian21.Plugin {
     this.addCommand({
       id: "add-custom-prompt",
       name: "Add custom prompt",
-      editorCallback: (editor) => {
+      callback: () => {
         new AddPromptModal(this.app, async (title, prompt) => {
           try {
             await this.dbPrompts.put({ _id: title, prompt });
@@ -121339,7 +121516,7 @@ var CopilotPlugin = class extends import_obsidian21.Plugin {
     this.addCommand({
       id: "apply-custom-prompt",
       name: "Apply custom prompt",
-      editorCallback: (editor) => {
+      callback: () => {
         this.fetchPromptTitles().then((promptTitles) => {
           new ListPromptModal(
             this.app,
@@ -121359,11 +121536,7 @@ var CopilotPlugin = class extends import_obsidian21.Plugin {
                   );
                   return;
                 }
-                this.processCustomPrompt(
-                  editor,
-                  "applyCustomPrompt",
-                  doc.prompt
-                );
+                this.processCustomPrompt("applyCustomPrompt", doc.prompt);
               } catch (err) {
                 if (err.name === "not_found") {
                   new import_obsidian21.Notice(
@@ -121382,12 +121555,12 @@ var CopilotPlugin = class extends import_obsidian21.Plugin {
     this.addCommand({
       id: "apply-adhoc-prompt",
       name: "Apply ad-hoc custom prompt",
-      editorCallback: async (editor) => {
+      callback: async () => {
         const modal = new AdhocPromptModal(
           this.app,
           async (adhocPrompt) => {
             try {
-              this.processCustomPrompt(editor, "applyAdhocPrompt", adhocPrompt);
+              this.processCustomPrompt("applyAdhocPrompt", adhocPrompt);
             } catch (err) {
               console.error(err);
               new import_obsidian21.Notice("An error occurred.");
@@ -121755,7 +121928,7 @@ ${indexedCount}/${totalFiles} files processed.`
     return files.length;
   }
   async processText(editor, eventType, eventSubtype, checkSelectedText = true) {
-    const selectedText = editor.getSelection();
+    const selectedText = await editor.getSelection();
     const isChatWindowActive = this.app.workspace.getLeavesOfType(CHAT_VIEWTYPE).length > 0;
     if (!isChatWindowActive) {
       await this.activateView();
@@ -121771,7 +121944,24 @@ ${indexedCount}/${totalFiles} files processed.`
   processSelection(editor, eventType, eventSubtype) {
     this.processText(editor, eventType, eventSubtype);
   }
-  processCustomPrompt(editor, eventType, customPrompt) {
+  getCurrentEditorOrDummy() {
+    var _a5;
+    const activeView = this.app.workspace.getActiveViewOfType(import_obsidian21.MarkdownView);
+    return {
+      getSelection: () => {
+        var _a6;
+        const selection = (_a6 = activeView == null ? void 0 : activeView.editor) == null ? void 0 : _a6.getSelection();
+        if (selection)
+          return selection;
+        const activeFile = this.app.workspace.getActiveFile();
+        return activeFile ? this.app.vault.cachedRead(activeFile) : "";
+      },
+      replaceSelection: ((_a5 = activeView == null ? void 0 : activeView.editor) == null ? void 0 : _a5.replaceSelection.bind(activeView.editor)) || (() => {
+      })
+    };
+  }
+  processCustomPrompt(eventType, customPrompt) {
+    const editor = this.getCurrentEditorOrDummy();
     this.processText(editor, eventType, customPrompt, false);
   }
   toggleView() {
@@ -121829,9 +122019,7 @@ ${indexedCount}/${totalFiles} files processed.`
   async countTotalTokens() {
     try {
       const allContent = await getAllNotesContent(this.app.vault);
-      const totalTokens = await this.chainManager.chatModelManager.countTokens(
-        allContent
-      );
+      const totalTokens = await this.chainManager.chatModelManager.countTokens(allContent);
       return totalTokens;
     } catch (error) {
       console.error("Error counting tokens: ", error);
@@ -121842,6 +122030,7 @@ ${indexedCount}/${totalFiles} files processed.`
     const {
       openAIApiKey,
       openAIOrgId,
+      openAICustomModel,
       huggingfaceApiKey,
       cohereApiKey,
       anthropicApiKey,
@@ -121852,6 +122041,7 @@ ${indexedCount}/${totalFiles} files processed.`
       azureOpenAIApiVersion,
       azureOpenAIApiEmbeddingDeploymentName,
       googleApiKey,
+      googleCustomModel,
       openRouterAiApiKey,
       openRouterModel,
       embeddingModel,
@@ -121867,6 +122057,7 @@ ${indexedCount}/${totalFiles} files processed.`
     return {
       openAIApiKey,
       openAIOrgId,
+      openAICustomModel,
       huggingfaceApiKey,
       cohereApiKey,
       anthropicApiKey,
@@ -121879,6 +122070,7 @@ ${indexedCount}/${totalFiles} files processed.`
       azureOpenAIApiVersion,
       azureOpenAIApiEmbeddingDeploymentName,
       googleApiKey,
+      googleCustomModel,
       openRouterAiApiKey,
       openRouterModel: openRouterModel || DEFAULT_SETTINGS.openRouterModel,
       ollamaModel: ollamaModel || DEFAULT_SETTINGS.ollamaModel,
@@ -121895,6 +122087,7 @@ ${indexedCount}/${totalFiles} files processed.`
       // Set LLM_CHAIN as default ChainType
       options: { forceNewCreation: true },
       openAIProxyBaseUrl: this.settings.openAIProxyBaseUrl,
+      useOpenAILocalProxy: this.settings.useOpenAILocalProxy,
       openAIProxyModelName: this.settings.openAIProxyModelName,
       openAIEmbeddingProxyBaseUrl: this.settings.openAIEmbeddingProxyBaseUrl,
       openAIEmbeddingProxyModelName: this.settings.openAIEmbeddingProxyModelName

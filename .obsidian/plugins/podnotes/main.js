@@ -1590,7 +1590,7 @@ function addEpisodeToQueue(episode) {
 }
 
 // src/main.ts
-var import_obsidian23 = require("obsidian");
+var import_obsidian24 = require("obsidian");
 
 // src/utility/formatSeconds.ts
 function formatSeconds(seconds, format2) {
@@ -2122,7 +2122,7 @@ function fade(node, { delay = 0, duration: duration2 = 400, easing = identity } 
 
 // src/ui/settings/PodcastResultCard.svelte
 function add_css(target) {
-  append_styles(target, "svelte-1ww0fav", ".podcast-result-card.svelte-1ww0fav{display:flex;align-items:center;padding:16px;border:1px solid var(--background-modifier-border);border-radius:8px;background-color:var(--background-secondary);max-width:100%;transition:all 0.3s ease}.podcast-result-card.svelte-1ww0fav:hover{box-shadow:0 2px 8px rgba(0, 0, 0, 0.1);transform:translateY(-2px)}.podcast-artwork.svelte-1ww0fav{width:70px;height:70px;object-fit:cover;border-radius:4px;margin-right:20px;flex-shrink:0}.podcast-info.svelte-1ww0fav{flex-grow:1;min-width:0;padding-right:12px}.podcast-title.svelte-1ww0fav{margin:0 0 6px 12px;font-size:16px;font-weight:bold;line-height:1.3;word-break:break-word}.podcast-actions.svelte-1ww0fav{display:flex;align-items:center;flex-shrink:0}");
+  append_styles(target, "svelte-1yveck6", ".podcast-result-card.svelte-1yveck6{display:flex;align-items:center;padding:16px;border:1px solid var(--background-modifier-border);border-radius:8px;background-color:var(--background-secondary);max-width:100%;transition:all 0.3s ease;position:relative}.podcast-artwork-container.svelte-1yveck6{width:70px;height:70px;flex-shrink:0;margin-right:20px;overflow:hidden;border-radius:4px;position:relative}.podcast-artwork.svelte-1yveck6{width:100%;height:100%;object-fit:cover;position:absolute;top:0;left:0}.podcast-result-card.svelte-1yveck6:hover{box-shadow:0 2px 8px rgba(0, 0, 0, 0.1);transform:translateY(-2px)}.podcast-info.svelte-1yveck6{flex-grow:1;min-width:0;padding-right:12px}.podcast-title.svelte-1yveck6{margin:0 0 6px 0;font-size:16px;font-weight:bold;line-height:1.3;word-break:break-word}.podcast-actions.svelte-1yveck6{display:flex;align-items:center;flex-shrink:0}.podcast-actions button{padding:4px;width:24px;height:24px}.podcast-actions button svg{width:16px;height:16px}");
 }
 function create_else_block(ctx) {
   let button;
@@ -2130,10 +2130,10 @@ function create_else_block(ctx) {
   button = new Button_default({
     props: {
       icon: "plus",
-      ariaLabel: `Add ${ctx[0].title} podcast`
+      "aria-label": `Add ${ctx[0].title} podcast`
     }
   });
-  button.$on("click", ctx[2]);
+  button.$on("click", ctx[4]);
   return {
     c() {
       create_component(button.$$.fragment);
@@ -2145,7 +2145,7 @@ function create_else_block(ctx) {
     p(ctx2, dirty) {
       const button_changes = {};
       if (dirty & 1)
-        button_changes.ariaLabel = `Add ${ctx2[0].title} podcast`;
+        button_changes["aria-label"] = `Add ${ctx2[0].title} podcast`;
       button.$set(button_changes);
     },
     i(local) {
@@ -2169,7 +2169,7 @@ function create_if_block(ctx) {
   button = new Button_default({
     props: {
       icon: "trash",
-      ariaLabel: `Remove ${ctx[0].title} podcast`
+      "aria-label": `Remove ${ctx[0].title} podcast`
     }
   });
   button.$on("click", ctx[3]);
@@ -2184,7 +2184,7 @@ function create_if_block(ctx) {
     p(ctx2, dirty) {
       const button_changes = {};
       if (dirty & 1)
-        button_changes.ariaLabel = `Remove ${ctx2[0].title} podcast`;
+        button_changes["aria-label"] = `Remove ${ctx2[0].title} podcast`;
       button.$set(button_changes);
     },
     i(local) {
@@ -2203,20 +2203,21 @@ function create_if_block(ctx) {
   };
 }
 function create_fragment3(ctx) {
-  let div2;
+  let div3;
+  let div0;
   let img;
   let img_src_value;
   let img_alt_value;
   let t0;
-  let div0;
+  let div1;
   let h3;
   let t1_value = ctx[0].title + "";
   let t1;
   let t2;
-  let div1;
+  let div2;
   let current_block_type_index;
   let if_block;
-  let div2_transition;
+  let div3_transition;
   let current;
   const if_block_creators = [create_if_block, create_else_block];
   const if_blocks = [];
@@ -2229,34 +2230,37 @@ function create_fragment3(ctx) {
   if_block = if_blocks[current_block_type_index] = if_block_creators[current_block_type_index](ctx);
   return {
     c() {
-      div2 = element("div");
+      div3 = element("div");
+      div0 = element("div");
       img = element("img");
       t0 = space();
-      div0 = element("div");
+      div1 = element("div");
       h3 = element("h3");
       t1 = text(t1_value);
       t2 = space();
-      div1 = element("div");
+      div2 = element("div");
       if_block.c();
       if (!src_url_equal(img.src, img_src_value = ctx[0].artworkUrl))
         attr(img, "src", img_src_value);
       attr(img, "alt", img_alt_value = `Artwork for ${ctx[0].title}`);
-      attr(img, "class", "podcast-artwork svelte-1ww0fav");
-      attr(h3, "class", "podcast-title svelte-1ww0fav");
-      attr(div0, "class", "podcast-info svelte-1ww0fav");
-      attr(div1, "class", "podcast-actions svelte-1ww0fav");
-      attr(div2, "class", "podcast-result-card svelte-1ww0fav");
+      attr(img, "class", "podcast-artwork svelte-1yveck6");
+      attr(div0, "class", "podcast-artwork-container svelte-1yveck6");
+      attr(h3, "class", "podcast-title svelte-1yveck6");
+      attr(div1, "class", "podcast-info svelte-1yveck6");
+      attr(div2, "class", "podcast-actions svelte-1yveck6");
+      attr(div3, "class", "podcast-result-card svelte-1yveck6");
     },
     m(target, anchor) {
-      insert(target, div2, anchor);
-      append(div2, img);
-      append(div2, t0);
-      append(div2, div0);
-      append(div0, h3);
+      insert(target, div3, anchor);
+      append(div3, div0);
+      append(div0, img);
+      append(div3, t0);
+      append(div3, div1);
+      append(div1, h3);
       append(h3, t1);
-      append(div2, t2);
-      append(div2, div1);
-      if_blocks[current_block_type_index].m(div1, null);
+      append(div3, t2);
+      append(div3, div2);
+      if_blocks[current_block_type_index].m(div2, null);
       current = true;
     },
     p(ctx2, [dirty]) {
@@ -2286,7 +2290,7 @@ function create_fragment3(ctx) {
           if_block.p(ctx2, dirty);
         }
         transition_in(if_block, 1);
-        if_block.m(div1, null);
+        if_block.m(div2, null);
       }
     },
     i(local) {
@@ -2294,25 +2298,25 @@ function create_fragment3(ctx) {
         return;
       transition_in(if_block);
       add_render_callback(() => {
-        if (!div2_transition)
-          div2_transition = create_bidirectional_transition(div2, fade, { duration: 300 }, true);
-        div2_transition.run(1);
+        if (!div3_transition)
+          div3_transition = create_bidirectional_transition(div3, fade, { duration: 300 }, true);
+        div3_transition.run(1);
       });
       current = true;
     },
     o(local) {
       transition_out(if_block);
-      if (!div2_transition)
-        div2_transition = create_bidirectional_transition(div2, fade, { duration: 300 }, false);
-      div2_transition.run(0);
+      if (!div3_transition)
+        div3_transition = create_bidirectional_transition(div3, fade, { duration: 300 }, false);
+      div3_transition.run(0);
       current = false;
     },
     d(detaching) {
       if (detaching)
-        detach(div2);
+        detach(div3);
       if_blocks[current_block_type_index].d();
-      if (detaching && div2_transition)
-        div2_transition.end();
+      if (detaching && div3_transition)
+        div3_transition.end();
     }
   };
 }
@@ -2320,19 +2324,15 @@ function instance3($$self, $$props, $$invalidate) {
   let { podcast } = $$props;
   let { isSaved = false } = $$props;
   const dispatch2 = createEventDispatcher();
-  function onAddPodcast() {
-    dispatch2("addPodcast", { podcast });
-  }
-  function onRemovePodcast() {
-    dispatch2("removePodcast", { podcast });
-  }
+  const click_handler = () => dispatch2("removePodcast", { podcast });
+  const click_handler_1 = () => dispatch2("addPodcast", { podcast });
   $$self.$$set = ($$props2) => {
     if ("podcast" in $$props2)
       $$invalidate(0, podcast = $$props2.podcast);
     if ("isSaved" in $$props2)
       $$invalidate(1, isSaved = $$props2.isSaved);
   };
-  return [podcast, isSaved, onAddPodcast, onRemovePodcast];
+  return [podcast, isSaved, dispatch2, click_handler, click_handler_1];
 }
 var PodcastResultCard = class extends SvelteComponent {
   constructor(options) {
@@ -4842,6 +4842,7 @@ ${error.message}`);
 }
 
 // src/ui/settings/PodNotesSettingsTab.ts
+var import_obsidian12 = require("obsidian");
 var PodNotesSettingsTab = class extends import_obsidian11.PluginSettingTab {
   constructor(app2, plugin2) {
     super(app2, plugin2);
@@ -4920,7 +4921,7 @@ var PodNotesSettingsTab = class extends import_obsidian11.PluginSettingTab {
         return;
       const demoVal = TimestampTemplateEngine(value);
       timestampFormatDemoEl.empty();
-      import_obsidian11.MarkdownRenderer.renderMarkdown(demoVal, timestampFormatDemoEl, "", null);
+      import_obsidian11.MarkdownRenderer.renderMarkdown(demoVal, timestampFormatDemoEl, "", new import_obsidian12.Component());
     };
     updateTimestampDemo(this.plugin.settings.timestamp.template);
     const randomEpisode = getRandomEpisode();
@@ -4932,7 +4933,7 @@ var PodNotesSettingsTab = class extends import_obsidian11.PluginSettingTab {
         this.plugin.saveSettings();
         const demoVal = FilePathTemplateEngine(value, randomEpisode);
         noteCreationFilePathDemoEl.empty();
-        import_obsidian11.MarkdownRenderer.renderMarkdown(demoVal, noteCreationFilePathDemoEl, "", null);
+        import_obsidian11.MarkdownRenderer.renderMarkdown(demoVal, noteCreationFilePathDemoEl, "", new import_obsidian12.Component());
       });
       textComponent.inputEl.style.width = "100%";
     });
@@ -4965,7 +4966,7 @@ var PodNotesSettingsTab = class extends import_obsidian11.PluginSettingTab {
         this.plugin.saveSettings();
         const demoVal = DownloadPathTemplateEngine(value, randomEpisode);
         downloadFilePathDemoEl.empty();
-        import_obsidian11.MarkdownRenderer.renderMarkdown(`${demoVal}.mp3`, downloadFilePathDemoEl, "", null);
+        import_obsidian11.MarkdownRenderer.renderMarkdown(`${demoVal}.mp3`, downloadFilePathDemoEl, "", new import_obsidian12.Component());
       });
       textComponent.inputEl.style.width = "100%";
     });
@@ -5077,7 +5078,7 @@ function getRandomEpisode() {
 }
 
 // src/ui/PodcastView/index.ts
-var import_obsidian18 = require("obsidian");
+var import_obsidian19 = require("obsidian");
 
 // src/ui/PodcastView/PlaylistCard.svelte
 function add_css6(target) {
@@ -5862,7 +5863,7 @@ var PodcastGrid = class extends SvelteComponent {
 var PodcastGrid_default = PodcastGrid;
 
 // src/ui/obsidian/Slider.svelte
-var import_obsidian12 = require("obsidian");
+var import_obsidian13 = require("obsidian");
 function create_fragment13(ctx) {
   let span;
   return {
@@ -5891,7 +5892,7 @@ function instance13($$self, $$props, $$invalidate) {
   let slider;
   let { style: styles } = $$props;
   onMount(() => {
-    slider = new import_obsidian12.SliderComponent(sliderRef);
+    slider = new import_obsidian13.SliderComponent(sliderRef);
     updateSliderAttributes(slider);
   });
   afterUpdate(() => {
@@ -7073,10 +7074,10 @@ var Progressbar = class extends SvelteComponent {
 var Progressbar_default = Progressbar;
 
 // src/ui/PodcastView/spawnEpisodeContextMenu.ts
-var import_obsidian15 = require("obsidian");
+var import_obsidian16 = require("obsidian");
 
 // src/createPodcastNote.ts
-var import_obsidian13 = require("obsidian");
+var import_obsidian14 = require("obsidian");
 
 // src/utility/addExtension.ts
 function addExtension(path, extension) {
@@ -7095,7 +7096,7 @@ async function createPodcastNote(episode) {
     app.workspace.getLeaf().openFile(file);
   } catch (error) {
     console.error(error);
-    new import_obsidian13.Notice(`Failed to create note: "${filePathDotMd}"`);
+    new import_obsidian14.Notice(`Failed to create note: "${filePathDotMd}"`);
   }
 }
 function getPodcastNote(episode) {
@@ -7103,7 +7104,7 @@ function getPodcastNote(episode) {
   const filePath = FilePathTemplateEngine(pluginInstance.settings.note.path, episode);
   const filePathDotMd = addExtension(filePath, "md");
   const file = app.vault.getAbstractFileByPath(filePathDotMd);
-  if (!file || !(file instanceof import_obsidian13.TFile)) {
+  if (!file || !(file instanceof import_obsidian14.TFile)) {
     return null;
   }
   return file;
@@ -7111,7 +7112,7 @@ function getPodcastNote(episode) {
 function openPodcastNote(epiosode) {
   const file = getPodcastNote(epiosode);
   if (!file) {
-    new import_obsidian13.Notice(`Note for "${epiosode.title}" does not exist`);
+    new import_obsidian14.Notice(`Note for "${epiosode.title}" does not exist`);
     return;
   }
   app.workspace.getLeaf().openFile(file);
@@ -7119,7 +7120,7 @@ function openPodcastNote(epiosode) {
 async function createFileIfNotExists(path, content, episode, createFolder = true) {
   const file = getPodcastNote(episode);
   if (file) {
-    new import_obsidian13.Notice(`Note for "${episode.title}" already exists`);
+    new import_obsidian14.Notice(`Note for "${episode.title}" already exists`);
     return file;
   }
   const foldersInPath = path.split("/").slice(0, -1);
@@ -7134,10 +7135,10 @@ async function createFileIfNotExists(path, content, episode, createFolder = true
 }
 
 // src/downloadEpisode.ts
-var import_obsidian14 = require("obsidian");
+var import_obsidian15 = require("obsidian");
 async function downloadFile(url, options) {
   try {
-    const response = await (0, import_obsidian14.requestUrl)({ url, method: "GET" });
+    const response = await (0, import_obsidian15.requestUrl)({ url, method: "GET" });
     if (response.status !== 200) {
       throw new Error("Could not download episode.");
     }
@@ -7162,7 +7163,7 @@ ${error.message}`);
 async function downloadEpisodeWithNotice(episode, downloadPathTemplate) {
   const { doc, update: update2 } = createNoticeDoc(`Download "${episode.title}"`);
   const SOME_LARGE_INT_SO_THE_BOX_DOESNT_AUTO_CLOSE = 999999999;
-  const notice = new import_obsidian14.Notice(doc, SOME_LARGE_INT_SO_THE_BOX_DOESNT_AUTO_CLOSE);
+  const notice = new import_obsidian15.Notice(doc, SOME_LARGE_INT_SO_THE_BOX_DOESNT_AUTO_CLOSE);
   update2((bodyEl) => bodyEl.createEl("p", { text: "Starting download..." }));
   update2((bodyEl) => {
     bodyEl.createEl("p", { text: "Downloading..." });
@@ -7260,7 +7261,7 @@ async function downloadEpisode(episode, downloadPathTemplate) {
   const fileExtension = await getFileExtension(episode.streamUrl);
   const filePath = `${basename}.${fileExtension}`;
   const existingFile = app.vault.getAbstractFileByPath(filePath);
-  if (existingFile instanceof import_obsidian14.TFile) {
+  if (existingFile instanceof import_obsidian15.TFile) {
     return filePath;
   }
   try {
@@ -7353,7 +7354,7 @@ async function detectAudioFileExtension(blob) {
 
 // src/ui/PodcastView/spawnEpisodeContextMenu.ts
 function spawnEpisodeContextMenu(episode, event, disabledMenuItems) {
-  const menu = new import_obsidian15.Menu();
+  const menu = new import_obsidian16.Menu();
   if (!disabledMenuItems?.play) {
     menu.addItem((item) => item.setIcon("play").setTitle("Play").onClick(() => {
       currentEpisode.set(episode);
@@ -7378,7 +7379,7 @@ function spawnEpisodeContextMenu(episode, event, disabledMenuItems) {
       } else {
         const downloadPath = get_store_value(plugin).settings.download.path;
         if (!downloadPath) {
-          new import_obsidian15.Notice(`Please set a download path in the settings.`);
+          new import_obsidian16.Notice(`Please set a download path in the settings.`);
           return;
         }
         downloadEpisodeWithNotice(episode, downloadPath);
@@ -7394,7 +7395,7 @@ function spawnEpisodeContextMenu(episode, event, disabledMenuItems) {
         const { path, template } = get_store_value(plugin).settings.note;
         const canCreateNote = Boolean(path && template);
         if (!canCreateNote) {
-          new import_obsidian15.Notice(`Please set a note path and template in the settings.`);
+          new import_obsidian16.Notice(`Please set a note path and template in the settings.`);
           return;
         }
         await createPodcastNote(episode);
@@ -7460,10 +7461,10 @@ function spawnEpisodeContextMenu(episode, event, disabledMenuItems) {
 }
 
 // src/utility/createMediaUrlObjectFromFilePath.ts
-var import_obsidian16 = require("obsidian");
+var import_obsidian17 = require("obsidian");
 async function createMediaUrlObjectFromFilePath(filePath) {
   const file = app.vault.getAbstractFileByPath(filePath);
-  if (!file || !(file instanceof import_obsidian16.TFile))
+  if (!file || !(file instanceof import_obsidian17.TFile))
     return "";
   const binary = await app.vault.readBinary(file);
   return URL.createObjectURL(new Blob([binary], { type: "audio/mpeg" }));
@@ -8436,7 +8437,7 @@ var EpisodeListHeader = class extends SvelteComponent {
 var EpisodeListHeader_default = EpisodeListHeader;
 
 // src/ui/PodcastView/PodcastView.svelte
-var import_obsidian17 = require("obsidian");
+var import_obsidian18 = require("obsidian");
 
 // src/utility/searchEpisodes.ts
 function searchEpisodes(query, episodes) {
@@ -9053,7 +9054,7 @@ function instance22($$self, $$props, $$invalidate) {
       $$invalidate(3, displayedEpisodes = yield fetchEpisodes(selectedFeed, false));
     });
   }
-  const handleSearch = (0, import_obsidian17.debounce)((event) => {
+  const handleSearch = (0, import_obsidian18.debounce)((event) => {
     const { query } = event.detail;
     if (selectedFeed) {
       const episodesInFeed = $episodeCache[selectedFeed.title];
@@ -9126,7 +9127,7 @@ var PodcastView = class extends SvelteComponent {
 var PodcastView_default = PodcastView;
 
 // src/ui/PodcastView/index.ts
-var MainView = class extends import_obsidian18.ItemView {
+var MainView = class extends import_obsidian19.ItemView {
   constructor(leaf, plugin2) {
     super(leaf);
     this.plugin = plugin2;
@@ -9294,10 +9295,10 @@ var LocalFilesController = class extends StoreController {
 };
 
 // src/URIHandler.ts
-var import_obsidian19 = require("obsidian");
+var import_obsidian20 = require("obsidian");
 async function podNotesURIHandler({ url, episodeName, time }, api) {
   if (!url || !episodeName || !time) {
-    new import_obsidian19.Notice("URL, episode name, and timestamp are required to play an episode");
+    new import_obsidian20.Notice("URL, episode name, and timestamp are required to play an episode");
     return;
   }
   const decodedName = episodeName.replace(/\+/g, " ");
@@ -9318,19 +9319,19 @@ async function podNotesURIHandler({ url, episodeName, time }, api) {
     episode = await feedparser.findItemByTitle(decodedName, url);
   }
   if (!episode) {
-    new import_obsidian19.Notice("Episode not found");
+    new import_obsidian20.Notice("Episode not found");
     return;
   }
   currentEpisode.set(episode);
   viewState.set(2 /* Player */);
-  new import_obsidian19.Notice("Episode found, playing now. Please click timestamp again to play at specific time.");
+  new import_obsidian20.Notice("Episode found, playing now. Please click timestamp again to play at specific time.");
 }
 
 // src/getContextMenuHandler.ts
-var import_obsidian20 = require("obsidian");
+var import_obsidian21 = require("obsidian");
 function getContextMenuHandler() {
   return this.app.workspace.on("file-menu", (menu, file) => {
-    if (!(file instanceof import_obsidian20.TFile))
+    if (!(file instanceof import_obsidian21.TFile))
       return;
     if (!file.extension.match(/mp3|mp4|wma|aac|wav|webm|aac|flac|m4a|/))
       return;
@@ -9358,7 +9359,7 @@ function getContextMenuHandler() {
 }
 
 // src/getUniversalPodcastLink.ts
-var import_obsidian21 = require("obsidian");
+var import_obsidian22 = require("obsidian");
 async function getUniversalPodcastLink(api) {
   const { title, itunesTitle, podcastName, feedUrl } = api.podcast;
   try {
@@ -9368,7 +9369,7 @@ async function getUniversalPodcastLink(api) {
       throw new Error("Failed to get podcast from iTunes.");
     }
     const podLinkUrl = `https://pod.link/${podcast.collectionId}.json?limit=1000`;
-    const res = await (0, import_obsidian21.requestUrl)({
+    const res = await (0, import_obsidian22.requestUrl)({
       url: podLinkUrl
     });
     if (res.status !== 200) {
@@ -9380,16 +9381,16 @@ async function getUniversalPodcastLink(api) {
       throw new Error(`Failed to find episode "${targetTitle}" on pod.link. URL: ${podLinkUrl}`);
     }
     window.navigator.clipboard.writeText(`https://pod.link/${podcast.collectionId}/episode/${ep.episodeId}`);
-    new import_obsidian21.Notice("Universal episode link copied to clipboard.");
+    new import_obsidian22.Notice("Universal episode link copied to clipboard.");
   } catch (error) {
-    new import_obsidian21.Notice("Could not get podcast link.");
+    new import_obsidian22.Notice("Could not get podcast link.");
     console.error(error);
     return;
   }
 }
 
 // src/services/TranscriptionService.ts
-var import_obsidian22 = require("obsidian");
+var import_obsidian23 = require("obsidian");
 
 // node_modules/openai/error.mjs
 var error_exports = {};
@@ -13267,7 +13268,7 @@ function TimerNotice2(heading, initialMessage) {
   let currentMessage = initialMessage;
   const startTime = Date.now();
   let stopTime;
-  const notice = new import_obsidian22.Notice(initialMessage, 0);
+  const notice = new import_obsidian23.Notice(initialMessage, 0);
   function formatMsg(message) {
     return `${heading} (${getTime()}):
 
@@ -13310,18 +13311,18 @@ var TranscriptionService = class {
   }
   async transcribeCurrentEpisode() {
     if (this.isTranscribing) {
-      new import_obsidian22.Notice("A transcription is already in progress.");
+      new import_obsidian23.Notice("A transcription is already in progress.");
       return;
     }
     const currentEpisode2 = this.plugin.api.podcast;
     if (!currentEpisode2) {
-      new import_obsidian22.Notice("No episode is currently playing.");
+      new import_obsidian23.Notice("No episode is currently playing.");
       return;
     }
     const transcriptPath = FilePathTemplateEngine(this.plugin.settings.transcript.path, currentEpisode2);
     const existingFile = this.plugin.app.vault.getAbstractFileByPath(transcriptPath);
-    if (existingFile instanceof import_obsidian22.TFile) {
-      new import_obsidian22.Notice(`You've already transcribed this episode - found ${transcriptPath}.`);
+    if (existingFile instanceof import_obsidian23.TFile) {
+      new import_obsidian23.Notice(`You've already transcribed this episode - found ${transcriptPath}.`);
       return;
     }
     this.isTranscribing = true;
@@ -13330,7 +13331,7 @@ var TranscriptionService = class {
       notice.update("Downloading episode...");
       const downloadPath = await downloadEpisode(currentEpisode2, this.plugin.settings.download.path);
       const podcastFile = this.plugin.app.vault.getAbstractFileByPath(downloadPath);
-      if (!podcastFile || !(podcastFile instanceof import_obsidian22.TFile)) {
+      if (!podcastFile || !(podcastFile instanceof import_obsidian23.TFile)) {
         throw new Error("Failed to download or locate the episode.");
       }
       notice.update("Preparing audio for transcription...");
@@ -13438,7 +13439,12 @@ var TranscriptionService = class {
 };
 
 // src/main.ts
-var PodNotes = class extends import_obsidian23.Plugin {
+var PodNotes = class extends import_obsidian24.Plugin {
+  constructor() {
+    super(...arguments);
+    this.maxLayoutReadyAttempts = 10;
+    this.layoutReadyAttempts = 0;
+  }
   async onload() {
     plugin.set(this);
     await this.loadSettings();
@@ -13601,6 +13607,15 @@ var PodNotes = class extends import_obsidian23.Plugin {
     this.registerEvent(getContextMenuHandler());
   }
   onLayoutReady() {
+    if (!this.app.workspace || !this.app.workspace.layoutReady) {
+      this.layoutReadyAttempts++;
+      if (this.layoutReadyAttempts < this.maxLayoutReadyAttempts) {
+        setTimeout(() => this.onLayoutReady(), 100);
+      } else {
+        console.error("Failed to initialize PodNotes layout after maximum attempts");
+      }
+      return;
+    }
     if (this.app.workspace.getLeavesOfType(VIEW_TYPE).length) {
       return;
     }
