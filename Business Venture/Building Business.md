@@ -29,6 +29,7 @@ dg-publish:
 #todo/Med/buisness  
 - [ ] Use Google trends to generate business ideas  and AI
 - [ ] Find mentor outside of your environment and one inside your environment
+	- [ ] Research your mentor 
 
 #todo/low/buisness 
  - Look into 
