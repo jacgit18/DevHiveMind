@@ -19,10 +19,23 @@ dg-publish:
 
 #todo/High/buisness 
 - [ ] Ask a business owner about their plans and whether they are open to selling; this can be a pathway to gaining business ownership.
+- [ ] Look into Haitian passport [https://embassies.info/PermanentMissionofHaititoUNinNewYork](https://embassies.info/PermanentMissionofHaititoUNinNewYork)
+- Look into 
+	- [ ] network for marketing experts
+	- [ ] How to optimize images for websites and add accessibility to websites as a side business using lighthouse to get information around things to optimize for different websites online. Check head tag to see what type of web builder they use
+	- [ ] Collect statistics like SEO improvement bounce rates to sell yourself more
+	- [ ] How would you approach a client once you go through that in order to generate some business with them
 
 #todo/Med/buisness  
 - [ ] Use Google trends to generate business ideas  and AI
 - [ ] Find mentor outside of your environment and one inside your environment
+
+#todo/low/buisness 
+ - Look into 
+	 - [ ] technical sales
+	 - [ ] copywriting
+	 - [ ] Maybe driving instructor which can be a potential good form of networking
+	 - [ ] Get a used car if you are doing delivery medical courier something cheap and that makes your requirements
 ## Simplifying Business Taxes
 
 Businesses navigate distinct tax rules, allowing deductions for certain expenses before calculating taxable income. Eligibility for specific tax credits further reduces tax liabilities. If you're self-employed or own a business, annual tax returns and quarterly estimated tax payments are mandatory, reporting business profits and losses on both personal income tax returns (Form 1040) and Schedule C.
