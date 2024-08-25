@@ -15,9 +15,6 @@ TableName:
 Type:
 ---
 
-ijump@cognixia.com
-
-
 
 ```dataview
 table UserID, UserName, PhoneNum
