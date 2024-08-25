@@ -12,5 +12,11 @@
   },
   "trashOption": "local",
   "useMarkdownLinks": false,
-  "showFrontmatter": true
+  "showFrontmatter": true,
+  "readableLineLength": false,
+  "propertiesInDocument": "hidden",
+  "livePreview": true,
+  "defaultViewMode": "preview",
+  "showInlineTitle": false,
+  "strictLineBreaks": true
 }
