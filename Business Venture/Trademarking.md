@@ -50,8 +50,10 @@ dg-publish:
   - Clarification: Each offers distinct protection for different aspects of intellectual property.
 
 
-
-
+#todo/High/buisness 
+- [ ] Trademark software carpenter
+- [ ] look more into
+	- [ ] 
 
 
 

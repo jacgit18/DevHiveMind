@@ -107,7 +107,7 @@ Talking point [[Libraries vs Building From Scratch]]
 
 
 ## Capital One
-[[Capital One Stats|Personally Developed Company Feature Statistics |Cap]]
+[[Capital One Stats]]
 
 ## TD Bank - Business Systems Analyst 
 
