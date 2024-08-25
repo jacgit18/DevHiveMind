@@ -1,9 +1,9 @@
 /* Updated 2022-02-28 */
 
 .dashboard {
-    padding-left: 25px;
-    padding-right: 25px;
-    padding-top: 20px;
+    padding-left: 25px !important;
+    padding-right: 25px !important;
+    padding-top: 20px !important;
 }
 
 .dashboard .markdown-preview-section {
@@ -14,17 +14,18 @@
 .dashboard .markdown-preview-section .title {
     top: 60px;
     position: absolute;
-    font-size: 26pt;
+    font-size: 26pt !important;
     font-weight: bolder;
     letter-spacing: 8px;
 }
 
 .dashboard h1 {
-    border-bottom-style: dotted;
-    border-width: 1px;
-    padding-bottom: 3px;
+    border-bottom-style: dotted !important;
+    border-width: 1px !important;
+    padding-bottom: 3px !important;
 }
 
+/*
 .dashboard div > ul {
     list-style: none;
     display: flex;
@@ -36,4 +37,4 @@
     min-width: 250px;
     width: 15%;
 }
-
+*/
