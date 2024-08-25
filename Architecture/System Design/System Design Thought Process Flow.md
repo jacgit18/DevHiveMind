@@ -41,6 +41,7 @@ For more info read
 - [ ] https://kasunprageethdissanayake.medium.com/tinder-fully-explained-system-design-and-architecture-1225ecdfe64e
 - [ ] https://www.outsystems.com/tech-hub/app-dev/technical-debt/#what-is-technical-debt
 - [ ] Refine and trim cloud notes not trying to document to many stuff just key details and relationships and stuff that may actually come up.
+- [ ] dont add any more articles until todo list with links go down
 - [ ] Use Chatgpt to recommend libraries and AWS services for project but define what the project is and come up with data model.
 
 Throughout the designing of the system you can discuss [[Fault Tolerance]] which refers to the system's resilience against failures, errors, or faults, ensuring uninterrupted operation and maintaining user experience by reducing system downtime. It encompasses proactive measures to handle failures gracefully and sustain availability. This principle applies universally across hardware, software, networks, and systems architecture. At its essence, fault tolerance anticipates failures as inevitable and seeks to minimize their impact through proactive strategies it also applies at and between each system component. 
@@ -32922,8 +32923,8 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 		},
 		{
 			"type": "rectangle",
-			"version": 1393,
-			"versionNonce": 1318554376,
+			"version": 1394,
+			"versionNonce": 1839738232,
 			"index": "b9y",
 			"isDeleted": false,
 			"id": "PFSyRhMeeQQjJhSU-aAet",
@@ -32933,8 +32934,8 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"roughness": 0,
 			"opacity": 100,
 			"angle": 0,
-			"x": 410.01987179747624,
-			"y": 1689.2670563016095,
+			"x": 410.0198717974763,
+			"y": 1689.2670563016093,
 			"strokeColor": "#c3b6ee",
 			"backgroundColor": "transparent",
 			"width": 270.81360008160584,
@@ -32953,14 +32954,14 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 					"type": "arrow"
 				}
 			],
-			"updated": 1724546620853,
+			"updated": 1724550210408,
 			"link": null,
 			"locked": false
 		},
 		{
 			"type": "text",
-			"version": 512,
-			"versionNonce": 545319432,
+			"version": 513,
+			"versionNonce": 1546894968,
 			"index": "b9z",
 			"isDeleted": false,
 			"id": "CBh5xDMB",
@@ -32970,8 +32971,8 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"roughness": 1,
 			"opacity": 100,
 			"angle": 0,
-			"x": 415.01987179747624,
-			"y": 1694.2670563016095,
+			"x": 415.0198717974763,
+			"y": 1694.2670563016093,
 			"strokeColor": "#1e1e1e",
 			"backgroundColor": "transparent",
 			"width": 80.06402587890625,
@@ -32981,7 +32982,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"frameId": "cDlFNT0KJqjWdy4tfiyeE",
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1724546620855,
+			"updated": 1724550210409,
 			"link": null,
 			"locked": false,
 			"fontSize": 36,
@@ -32997,8 +32998,8 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 		},
 		{
 			"type": "rectangle",
-			"version": 1429,
-			"versionNonce": 1273391368,
+			"version": 1430,
+			"versionNonce": 1965371256,
 			"index": "bA0",
 			"isDeleted": false,
 			"id": "oKt_wAJkAksutql0WooCQ",
@@ -33009,7 +33010,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"opacity": 100,
 			"angle": 0,
 			"x": 793.9592657368703,
-			"y": 1677.3276623622164,
+			"y": 1677.3276623622162,
 			"strokeColor": "#c3b6ee",
 			"backgroundColor": "transparent",
 			"width": 266.81360008160584,
@@ -33024,14 +33025,14 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 					"id": "NP5hZoJW"
 				}
 			],
-			"updated": 1724546620856,
+			"updated": 1724550210409,
 			"link": null,
 			"locked": false
 		},
 		{
 			"type": "text",
-			"version": 551,
-			"versionNonce": 205785096,
+			"version": 552,
+			"versionNonce": 817922168,
 			"index": "bA1",
 			"isDeleted": false,
 			"id": "NP5hZoJW",
@@ -33042,7 +33043,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"opacity": 100,
 			"angle": 0,
 			"x": 798.9592657368703,
-			"y": 1682.3276623622164,
+			"y": 1682.3276623622162,
 			"strokeColor": "#1e1e1e",
 			"backgroundColor": "transparent",
 			"width": 95.94003295898438,
@@ -33052,7 +33053,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"frameId": "cDlFNT0KJqjWdy4tfiyeE",
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1724546620856,
+			"updated": 1724550210409,
 			"link": null,
 			"locked": false,
 			"fontSize": 36,
