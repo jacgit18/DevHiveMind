@@ -16,8 +16,13 @@ Relates:
 dg-publish:
 ---
 ![[Buzniss.gif]]
-#todo/Personal/Med/Dev 
+
+#todo/High/buisness 
+- [ ] Ask a business owner about their plans and whether they are open to selling; this can be a pathway to gaining business ownership.
+
+#todo/Med/buisness  
 - [ ] Use Google trends to generate business ideas  and AI
+- [ ] Find mentor outside of your environment and one inside your environment
 ## Simplifying Business Taxes
 
 Businesses navigate distinct tax rules, allowing deductions for certain expenses before calculating taxable income. Eligibility for specific tax credits further reduces tax liabilities. If you're self-employed or own a business, annual tax returns and quarterly estimated tax payments are mandatory, reporting business profits and losses on both personal income tax returns (Form 1040) and Schedule C.

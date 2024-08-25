@@ -52,11 +52,16 @@ dg-publish:
 
 #todo/High/buisness 
 - [ ] Trademark software carpenter
-- [ ] look more into
-	- [ ] 
+- [ ] look more into trademark classes
+	- [ ] **Class 42**: Includes software development, computer programming, IT consulting, and technology-related services. This is likely the most relevant class for software and IT services.
+	- [ ] **Class 35**: Covers advertising, business management, and consulting services. This class may be relevant if you're offering consulting or business-related services in the software industry.
+	- [ ] **Class 9**: Includes software and computer programs. This class is appropriate if you are selling or distributing software products.
+- [ ] Provide description [[Trademarking Description]]
 
 
-
+### **Trademark Registration and Maintenance**  
+- **Registration Certificate:** Once the process is complete, you’ll receive a registration certificate from the USPTO.  
+- **Maintenance:** To keep your trademark active, you’ll need to file maintenance documents between the 5th and 6th year after registration and every 10 years thereafter.
 
 
 

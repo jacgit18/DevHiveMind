@@ -19,6 +19,8 @@ dg-publish: true
 ## Seed Scenario
 At the seed stage, a startup has typically completed its initial funding round, raising between €300k and €1.5M. This early financial boost supports the company as it begins selling its product or service and seeks additional talent to facilitate market entry and testing.
 
+> Instead of working directly, you can work for equity-like as an angel investor so your time for equity as opposed to money directly
+
 #todo/Personal/Med/Dev 
 - [ ] learn about Venture capital funds to better relate
 
