@@ -28,9 +28,9 @@ dg-publish:
 
 #todo/Med/buisness  
 - [ ] Use Google trends to generate business ideas  and AI
-- [ ] Find mentor outside of your environment and one inside your environment
-	- [ ] Research your mentor 
-
+- Build [[Mentor Relationship]]
+	- [ ] Find mentor outside of your environment and one inside your environment
+	
 #todo/low/buisness 
  - Look into 
 	 - [ ] technical sales
