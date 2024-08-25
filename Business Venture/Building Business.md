@@ -37,7 +37,7 @@ dg-publish:
 	 - [ ] Maybe driving instructor which can be a potential good form of networking
 	 - [ ] Get a used car if you are doing delivery medical courier something cheap and that makes your requirements
 
-### Alt Outside Jobs by easy entry
+### Alt Outside Jobs Order by easy entry
 Here's an estimated ranking of these jobs from cheapest to most expensive in terms of initial cost and investment of time for training:  
   
 1. **Construction Laborer**  
