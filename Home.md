@@ -32,13 +32,6 @@ dg-publish: true
 - 🗄️ Recent file updates
  `$=dv.list(dv.pages('').sort(f=>f.file.mtime.ts,"desc").limit(11).file.link)`
 
-Good morning Zephyr,  
-  
-I hope you're doing well. My name is Joshua, and I'm currently working as a frontend QA tester. Although we haven't officially met, we share a mutual connection with Johannes Naylor, who spoke very highly of you and suggested I reach out.  
-  
-I'd love to take the opportunity to have a virtual coffee chat and learn more about your software engineering journey. I'd also appreciate any advice you might have for someone in my position and how I can contribute more effectively during my time here. If you have some time available this week or next, I'd be grateful to connect.  
-  
-Looking forward to hearing from you.
 
 # The List
 - 💻 Dev Quest
