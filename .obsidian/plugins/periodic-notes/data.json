@@ -4,26 +4,27 @@
   "hasMigratedWeeklyNoteSettings": false,
   "daily": {
     "format": "MM-DD-YYYY",
-    "folder": "_Day Notes",
-    "template": "_Template/Daily Note.md",
+    "folder": "_Review/Daily",
+    "template": "_NoteAssets/Template/Daily Note Temp.md",
     "enabled": true
   },
   "weekly": {
     "format": "",
-    "template": "_Template/Weekly Note.md",
-    "folder": "_Weekly Notes",
+    "template": "_NoteAssets/Template/Weekly Note Temp.md",
+    "folder": "_Review/Weekly",
     "enabled": true
   },
   "monthly": {
     "format": "MM-YYYY",
-    "template": "_Template/Monthly Note.md",
+    "template": "",
     "folder": "_Monthly Notes",
-    "enabled": true
+    "enabled": false
   },
   "quarterly": {
     "format": "",
     "template": "",
-    "folder": ""
+    "folder": "",
+    "enabled": true
   },
   "yearly": {
     "format": "",
