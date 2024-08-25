@@ -27,7 +27,7 @@ dg-publish:
 	- [ ] How would you approach a client once you go through that in order to generate some business with them
 
 #todo/Med/buisness  
-- [ ] Use Google trends to generate business ideas  and AI
+- [ ] Use Google trends to generate business ideas and AI
 - Build [[Mentor Relationship]]
 	- [ ] Find mentor outside of your environment and one inside your environment
 	
