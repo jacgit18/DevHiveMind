@@ -4,6 +4,7 @@ tags:
 author:
   - jacgit18
   - chatgpt
+Comments: Need to clean up
 Purpose: This documentation is a personal dialog script of personal experience.
 Status: Perpetual
 Started: 
@@ -103,6 +104,10 @@ What is the difference TypeScript, JavaScript, and Java the way I like to descri
 
 
 Talking point [[Libraries vs Building From Scratch]]
+
+
+## Capital One
+[[Capital One Stats|Personally Developed Company Feature Statistics |Cap]]
 
 ## TD Bank - Business Systems Analyst 
 
