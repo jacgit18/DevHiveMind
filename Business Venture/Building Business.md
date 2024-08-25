@@ -36,6 +36,60 @@ dg-publish:
 	 - [ ] copywriting
 	 - [ ] Maybe driving instructor which can be a potential good form of networking
 	 - [ ] Get a used car if you are doing delivery medical courier something cheap and that makes your requirements
+
+### Alt Outside Jobs by easy entry
+Here's an estimated ranking of these jobs from cheapest to most expensive in terms of initial cost and investment of time for training:  
+  
+1. **Construction Laborer**  
+- **Cost**: Minimal, often free as training is on-the-job.  
+- **Time**: Immediate start, learning while working.  
+  
+2. **Painter**  
+- **Cost**: Minimal, often on-the-job training or short courses.  
+- **Time**: A few weeks to a few months.  
+  
+3. **Landscaper/Groundskeeper**  
+- **Cost**: Minimal, often on-the-job training.  
+- **Time**: Immediate start, learning while working.  
+  
+4. **Roofers**  
+- **Cost**: Low, on-the-job training.  
+- **Time**: A few months.  
+  
+5. **Glazier**  
+- **Cost**: Low to moderate, often on-the-job training or short apprenticeship.  
+- **Time**: A few months to a year.  
+  
+6. **Mason**  
+- **Cost**: Low to moderate, usually through apprenticeships.  
+- **Time**: 1 to 2 years.  
+  
+7. **Welder**  
+- **Cost**: Moderate, vocational school programs typically under a year.  
+- **Time**: 6 months to 1 year.  
+  
+8. **Auto Mechanic**  
+- **Cost**: Moderate, vocational school or community college programs.  
+- **Time**: 6 months to 2 years.  
+  
+9. **HVAC Technician**  
+- **Cost**: Moderate to high, technical school programs and apprenticeships.  
+- **Time**: 6 months to 2 years.  
+  
+10. **Carpenter**  
+- **Cost**: Moderate to high, through apprenticeships or vocational schools.  
+- **Time**: 1 to 3 years.  
+  
+11. **Plumber**  
+- **Cost**: Moderate to high, through apprenticeships.  
+- **Time**: 2 to 5 years.  
+  
+12. **Electrician**  
+- **Cost**: Moderate to high, through apprenticeships.  
+- **Time**: 4 to 5 years.  
+  
+
+
 ## Simplifying Business Taxes
 
 Businesses navigate distinct tax rules, allowing deductions for certain expenses before calculating taxable income. Eligibility for specific tax credits further reduces tax liabilities. If you're self-employed or own a business, annual tax returns and quarterly estimated tax payments are mandatory, reporting business profits and losses on both personal income tax returns (Form 1040) and Schedule C.
@@ -47,6 +101,11 @@ Consider innovative problem-solving approaches for business creation, whether th
 ## Funding Strategies
 
 Prioritize user acquisition before seeking funding for your app. Funding avenues include angel investor networks, venture capital firms, crowdfunding platforms, business incubators, accelerators, and more. Tailor your investor search based on your company's type, development stage, and fundraising goals.
+
+### Unemployment
+> Can call to check if program qualifies **518-402-0189
+
+file application to 599 program a month after applying to unemployment if expect a long layoff to extend unemployment but need to find qualifying program of taking 12 college credits to qualify.
 
 ## Starting a Business in New York: Key Steps
 
