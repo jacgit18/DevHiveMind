@@ -1,12 +1,12 @@
 ---
 area: 
-Progress: 6
+Progress: 1
 Target: 100
 Start: 2024-01-01
 Deadline: 2024-12-31
-banner: "https://ambcrypto.com/blog/wp-content/uploads/2023/05/Midjourney-blog-ft-compressed.jpg"
+banner: https://ambcrypto.com/blog/wp-content/uploads/2023/05/Midjourney-blog-ft-compressed.jpg
 banner_y: 0.68
-Completed date:
+Completed date: 
 ---
 ```meta-bind
 INPUT[progressBar(title(Progress), minValue(0), maxValue(100)):Progress]

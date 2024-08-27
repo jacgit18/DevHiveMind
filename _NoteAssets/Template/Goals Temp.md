@@ -1,10 +1,10 @@
 ---
 area: 
-Progress: 67
+Progress: 0
 Target: 100
 Start: 
 Deadline: 
-banner: "https://assets-global.website-files.com/63fe5b1c322d2f50310b436a/63fe5b1c322d2f11cb0b4860_midj02.png"
+banner: https://assets-global.website-files.com/63fe5b1c322d2f50310b436a/63fe5b1c322d2f11cb0b4860_midj02.png
 banner_y: 0.5
 Completed date: 
 ---
