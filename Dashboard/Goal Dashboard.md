@@ -9,7 +9,7 @@ cssclasses:
 - ### Annual Goals #mcl/list-card 
 	```dataviewjs
 	
-	let goals = dv.pages('"Review/Goals"'); 
+	let goals = dv.pages('"_Review/Goals"'); 
 	
 	dv.table(["Goal", "Target", "Progress", "Deadline"], 
 	
