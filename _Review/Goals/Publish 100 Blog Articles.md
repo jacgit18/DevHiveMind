@@ -4,8 +4,7 @@ Progress: 1
 Target: 100
 Start: 2024-01-01
 Deadline: 2024-12-31
-banner: https://ambcrypto.com/blog/wp-content/uploads/2023/05/Midjourney-blog-ft-compressed.jpg
-banner_y: 0.68
+banner: "https://ambcrypto.com/blog/wp-content/uploads/2023/10/real-estate-crypto-1000x600.png"
 Completed date: 
 ---
 ```meta-bind
