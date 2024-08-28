@@ -13,13 +13,18 @@ Relates:
 dg-publish:
 ---
 ## Experience
+Worked on Painkiller under mojitos on a vertical team which could be mentioned if you work with more teams
+
 Performed integration testing in a micro frontend architecture using the Vue.js testing library and internal tools, ensuring seamless front-end functionality and an optimal user experience for Capital One agents using the Empath application.  
   
 Executed thorough testing across high-priority credit card types (Primary Consumer, CreditWise, Small Business) to validate complex workflows involving account managers and authorized users, ensuring accuracy across all user interactions.  
   
+
+
+Conducted integration testing in a micro frontend architecture with Vue.js and internal tools for the Empath application, used by Capital One agents to resolve credit card customer cases. Performed comprehensive testing across high-priority credit card types (Primary Consumer, CreditWise, Small Business) to validate complex workflows involving account managers and authorized users, ensuring accurate and consistent user interactions and enhancing the overall user experience.
+
+
 Enhanced test coverage for the "Update Citizenship" workflow across various account types, achieving a 73.51% increase in function coverage and a 14.46% increase in statement and line coverage.
-
-
 ## Other Stuff
   
 80 to 85 test is testing standards  
