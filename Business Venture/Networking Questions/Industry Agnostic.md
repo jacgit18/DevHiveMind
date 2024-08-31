@@ -13,12 +13,17 @@ Peer Reviewed: 0
 dg-publish:
 ---
 #todo/Questions/TopFive 
-- [ ] What got you into this type of work or industry did you go to school for this was it your dream what made you go down this pathway and are you aiming for anything specific 
+- [ ] What made you get into this industry/job?
+	- [ ] Was it something you dreamed about for a long time.
+	- [ ] or was it something you discovered throughout you journey.
+	- [ ] Was it something you studied in school,
+	- [ ] or did something else inspire you to take this path? 
+	- [ ] Are you aiming for anything specific in the future? 
 - [ ] What's the most interesting thing or something that most people wouldn't know about your job or the industry?  
 - [ ] What's the most annoying thing about your job? (Use later in the conversation)  
 - [ ] What type of people are you trying to meet here? 
 - [ ] What skills or qualities do you think are essential for success in your industry/jobs that are transferable?  
-- [ ] Has your goals or dreams changed over time throughout your journey? Is this your initial goal or focus, or are you aiming for something else?  
+
 
 ## Other Questions  
 - [ ] How is your industry changing, and what excites or worries you the most about these changes?  
