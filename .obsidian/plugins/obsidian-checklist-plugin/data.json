@@ -80,7 +80,8 @@
     "#todo/personal/low/dev",
     "#todo/high/buisness",
     "#todo/med/buisness",
-    "#todo/low/buisness"
+    "#todo/low/buisness",
+    "#todo/okr"
   ],
   "_hiddenTags": []
 }

@@ -1,0 +1,19 @@
+{
+	"nodes":[
+		{"id":"b566244e13136769","type":"text","text":"## Questions","x":-600,"y":-200,"width":250,"height":60},
+		{"id":"82340c771c56a324","type":"text","text":"## Neutral ","x":-600,"y":400,"width":250,"height":60,"color":"6"},
+		{"id":"467bde0b1c7b5f43","type":"text","text":"## Negative","x":-220,"y":400,"width":250,"height":60,"color":"1"},
+		{"id":"6562d828d1cd5b30","type":"text","text":"## OutofNorm","x":120,"y":400,"width":250,"height":60,"color":"3"},
+		{"id":"8f5a37b43ec9d1de","type":"text","text":"## Positive","x":460,"y":400,"width":250,"height":60,"color":"5"},
+		{"id":"1686a8e8c9294fa9","x":-600,"y":-40,"width":250,"height":100,"type":"text","text":"# Response Type"},
+		{"id":"6d4d91327dec0d82","x":7,"y":-129,"width":250,"height":60,"type":"text","text":"Question Chain"}
+	],
+	"edges":[
+		{"id":"9f9ef53be82a4e75","fromNode":"467bde0b1c7b5f43","fromSide":"right","toNode":"6562d828d1cd5b30","toSide":"left","color":"1"},
+		{"id":"bbe958d9dc4b0718","fromNode":"8f5a37b43ec9d1de","fromSide":"left","toNode":"6562d828d1cd5b30","toSide":"right","color":"5"},
+		{"id":"ff5a14612109908d","fromNode":"1686a8e8c9294fa9","fromSide":"bottom","toNode":"82340c771c56a324","toSide":"top"},
+		{"id":"db9ef9c9b3e52b84","fromNode":"1686a8e8c9294fa9","fromSide":"right","toNode":"467bde0b1c7b5f43","toSide":"top"},
+		{"id":"fa73fdedad9ce051","fromNode":"1686a8e8c9294fa9","fromSide":"right","toNode":"6562d828d1cd5b30","toSide":"top"},
+		{"id":"3ffc9cef3ee29028","fromNode":"1686a8e8c9294fa9","fromSide":"right","toNode":"8f5a37b43ec9d1de","toSide":"top"}
+	]
+}
