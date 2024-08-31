@@ -15,7 +15,8 @@
 		{"id":"8f5a37b43ec9d1de","type":"text","text":"## Positive","x":478,"y":620,"width":250,"height":60,"color":"5"},
 		{"id":"1686a8e8c9294fa9","type":"text","text":"# Response Type","x":-582,"y":180,"width":250,"height":100},
 		{"id":"2cd711358110c867","type":"text","text":"## Subject Matter","x":-600,"y":-80,"width":218,"height":120},
-		{"id":"a6f64b2a8c663dc8","x":-355,"y":-33,"width":250,"height":60,"type":"text","text":"### Startup "}
+		{"id":"a6f64b2a8c663dc8","x":-355,"y":-33,"width":250,"height":60,"type":"text","text":"### Startup "},
+		{"id":"2229177d5cdcfe40","x":-314,"y":-220,"width":126,"height":50,"type":"text","text":"has"}
 	],
 	"edges":[
 		{"id":"9f9ef53be82a4e75","fromNode":"467bde0b1c7b5f43","fromSide":"right","toNode":"6562d828d1cd5b30","toSide":"left","color":"1"},
