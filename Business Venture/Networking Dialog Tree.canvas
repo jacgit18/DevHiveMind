@@ -5,8 +5,15 @@
 		{"id":"467bde0b1c7b5f43","type":"text","text":"## Negative","x":-220,"y":400,"width":250,"height":60,"color":"1"},
 		{"id":"6562d828d1cd5b30","type":"text","text":"## OutofNorm","x":120,"y":400,"width":250,"height":60,"color":"3"},
 		{"id":"8f5a37b43ec9d1de","type":"text","text":"## Positive","x":460,"y":400,"width":250,"height":60,"color":"5"},
-		{"id":"1686a8e8c9294fa9","x":-600,"y":-40,"width":250,"height":100,"type":"text","text":"# Response Type"},
-		{"id":"6d4d91327dec0d82","x":7,"y":-129,"width":250,"height":60,"type":"text","text":"Question Chain"}
+		{"id":"1686a8e8c9294fa9","type":"text","text":"# Response Type","x":-600,"y":-40,"width":250,"height":100},
+		{"id":"6d4d91327dec0d82","type":"text","text":"Question Chain","x":7,"y":-129,"width":250,"height":60},
+		{"id":"b4c9361d95e7f177","x":-538,"y":-597,"width":250,"height":60,"type":"text","text":"## Funnel"},
+		{"id":"e50581984adb3ddd","type":"text","text":"### Why ","x":-95,"y":-597,"width":125,"height":60},
+		{"id":"4820510c4c2f8a1d","x":-260,"y":-597,"width":141,"height":60,"type":"text","text":"### What "},
+		{"id":"68f797e66d023712","type":"text","text":"### Which ","x":61,"y":-597,"width":159,"height":60},
+		{"id":"2d775b59c3e81ca2","type":"text","text":"### Why ","x":422,"y":-597,"width":125,"height":60},
+		{"id":"4da34e126a374ec9","type":"text","text":"### Hat ","x":257,"y":-597,"width":141,"height":60},
+		{"id":"54fe5dab06bce950","type":"text","text":"### Which ","x":578,"y":-597,"width":159,"height":60}
 	],
 	"edges":[
 		{"id":"9f9ef53be82a4e75","fromNode":"467bde0b1c7b5f43","fromSide":"right","toNode":"6562d828d1cd5b30","toSide":"left","color":"1"},

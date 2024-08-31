@@ -14534,7 +14534,7 @@ var IndexeddbPersistence = class extends Observable {
 
 // src/workspace/explorerView.ts
 var addIsSharedClass = (path4, plugin) => {
-  const fileExplorers = plugin.app.workspace.getLeavesOfType("file-explorer");
+  const fileExplorers = getFileExplorers(plugin);
   fileExplorers.forEach((fileExplorer) => {
     const fileItem = fileExplorer.view.fileItems[path4];
     if (!fileItem)
@@ -14544,7 +14544,7 @@ var addIsSharedClass = (path4, plugin) => {
   });
 };
 var removeIsSharedClass = (path4, plugin) => {
-  const fileExplorers = plugin.app.workspace.getLeavesOfType("file-explorer");
+  const fileExplorers = getFileExplorers(plugin);
   fileExplorers.forEach((fileExplorer) => {
     const fileItem = fileExplorer.view.fileItems[path4];
     if (!fileItem)
@@ -14552,6 +14552,20 @@ var removeIsSharedClass = (path4, plugin) => {
     const el = fileItem.innerEl;
     el.removeClass("pd-explorer-shared");
   });
+};
+var getFileExplorers = (plugin) => {
+  const fileExplorers = [];
+  plugin.app.workspace.iterateAllLeaves((leaf) => {
+    const viewType = leaf.view.getViewType();
+    console.log(viewType);
+    console.log(leaf);
+    if (viewType === "file-explorer") {
+      if (!fileExplorers.includes(leaf)) {
+        fileExplorers.push(leaf);
+      }
+    }
+  });
+  return fileExplorers;
 };
 
 // src/sharedEntities/sharedFolder.ts
@@ -21489,6 +21503,7 @@ var _SharedDocument = class extends SharedEntity {
   }
   startWebRTCSync() {
     return super.startWebRTCSync((provider) => {
+      console.log(this.plugin.settings.name);
       provider.awareness.setLocalStateField("user", {
         name: this.plugin.settings.name,
         color: _SharedDocument._userColor.dark,
