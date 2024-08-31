@@ -29,7 +29,9 @@
 		{"id":"f81005f58f16050a","x":510,"y":-640,"width":250,"height":60,"type":"text","text":"Change"},
 		{"id":"ab105850932928d9","x":569,"y":-540,"width":250,"height":60,"type":"text","text":"Trends"},
 		{"id":"661ef75e4e94c7f3","x":478,"y":-870,"width":250,"height":60,"type":"text","text":"Innovations"},
-		{"id":"84251c119fed38f0","x":-38,"y":-670,"width":250,"height":60,"type":"text","text":"Skills"}
+		{"id":"84251c119fed38f0","x":-38,"y":-670,"width":250,"height":60,"type":"text","text":"Skills"},
+		{"id":"8f3e2082fce775c1","x":898,"y":-63,"width":250,"height":60,"type":"text","text":"Location"},
+		{"id":"10ec579d28dfb079","x":837,"y":42,"width":250,"height":60,"type":"text","text":"Duration"}
 	],
 	"edges":[
 		{"id":"9f9ef53be82a4e75","fromNode":"467bde0b1c7b5f43","fromSide":"right","toNode":"6562d828d1cd5b30","toSide":"left","color":"1"},
