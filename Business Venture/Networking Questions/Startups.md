@@ -45,7 +45,7 @@ dg-publish:
 - [ ] How did you find and connect with your first angel investors?
 - [ ] What advice would you give to someone new to seeking angel investment?
 - [ ] Can you explain the typical process of securing angel investment, as I’m still learning about it?
-- [ ] What are the biggest benefits and challenges of working with angel investors?
+- [ ] What are the biggest benefits and challenges of working with angel investor
 - [ ] How do you determine the amount of equity to offer to angel investors?
 - [ ] What kind of support, beyond financial, have your angel investors provided?
 - [ ] How do you handle investor relations and communication?
