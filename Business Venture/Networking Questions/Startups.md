@@ -15,19 +15,30 @@ dg-publish:
 >Asking about how a startup got its funding or how it's managing its funding can be a very relevant question at a networking event with many founders. It shows you're interested in the business side of startups and can lead to insightful discussions about different funding strategies, challenges, and successes.
 
 #todo/Questions/TopFive 
-- [ ] I've noticed that many successful startups have unique funding journeys. I'm curious, how did your company navigate its funding process?
-
-## Disruptors
-
-
-## Other Questions  
-- [ ] What did you do before you worked there or started your startup?
-- [ ] What’s the best advice you’ve ever received?
-- [ ] Who has the biggest influence on you in your life right now?
 - [ ] What inspired you to start your company?
 - [ ] What problem does your startup solve, and how did you identify it?
-- [ ] What has been the biggest challenge you've faced as a founder?
+- [ ] I've noticed that many successful startups have unique funding journeys. I'm curious, how did your company navigate its funding process?
+- [ ] What kind of support, beyond financial, have your angel investors provided and what do you look for in a Angel investor?
+- [ ] What did you do before you worked there or started your startup?
+- [ ] What has been the biggest challenges you've faced as a founder outside of funding?
 - [ ] How did you secure funding for your startup?
+
+
+## Disruptors
+### Data driven vc SignalFire
+- [ ] How does the Beacon platform influence your day-to-day decision-making?
+- [ ] Are there interesting trends or industries you have noticed coming up through your data?
+- [ ] What drew you to SignalFire compared to other VC firms?
+- [ ] What kind of support do you provide to founders beyond the initial investment?
+- [ ] How do you see the role of AI evolving in venture capital in the next few years?
+- [ ] What excites you most about working with early-stage companies?
+- [ ] What advice would you give to someone looking to break into venture capital today?
+- [ ] What are some of the key metrics you look for when evaluating a potential investment?
+- [ ] What’s a common characteristic you see in successful founders?
+
+## Other Questions  
+- [ ] What’s the best advice you’ve ever received?
+- [ ] Who has the biggest influence on you in your life right now?
 - [ ] What was your experience like when you first pitched to angel investors?
 - [ ] How did you decide that angel investment was the right funding route for your startup?
 - [ ] What qualities do you look for in an angel investor?
