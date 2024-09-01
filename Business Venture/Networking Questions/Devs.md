@@ -20,6 +20,8 @@ dg-publish:
 
 
 ## Other Questions  
+use [[Industry Agnostic]] 
+
 if could build your own application without any constraints and no worry at the snap of a finger what would it be  
   
 And in terms of features and also user interface what things would you want to have and from other applications  
@@ -30,3 +32,5 @@ Bring up Obsidian ask how they take notes?
 When was a moment were things really started to click for you
 
 If you could snap your fingers and instantly create an app—that could solve any problem, personal or business-related, what would it be?
+
+How do you apply for jobs if at all or have it created anything to increase their applications?
