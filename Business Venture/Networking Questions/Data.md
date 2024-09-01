@@ -19,6 +19,7 @@ dg-publish:
 - [ ] How do you handle data overload or ensure that you’re focusing on the most impactful data points?
 - [ ] What emerging data trends or technologies are currently influencing your field, and how are you adapting to them?
 
+
 ## Disruptors
 
 
