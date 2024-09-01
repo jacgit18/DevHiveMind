@@ -2,7 +2,6 @@
 	"nodes":[
 		{"id":"83405bfcfe093517","type":"text","text":"Misconception","x":408,"y":-1287,"width":250,"height":50},
 		{"id":"6d4d91327dec0d82","type":"text","text":"## Topic Web","x":-632,"y":-1347,"width":250,"height":60},
-		{"id":"a08b59eff4ba9f21","type":"text","text":"Experience","x":-606,"y":-795,"width":250,"height":50},
 		{"id":"917749fc99395fb5","type":"text","text":"Surprising","x":444,"y":-1170,"width":250,"height":50},
 		{"id":"3046bbb9086f5e5d","type":"text","text":"Unknowns","x":-126,"y":-1237,"width":292,"height":50},
 		{"id":"2eefb8cefd65f9a5","type":"text","text":"current events","x":-105,"y":-1120,"width":250,"height":50},
@@ -40,7 +39,8 @@
 		{"id":"46a6e94ad3169848","type":"text","text":"Projects","x":1189,"y":-1070,"width":250,"height":50},
 		{"id":"8f3e2082fce775c1","type":"text","text":"Location","x":-493,"y":-465,"width":250,"height":50},
 		{"id":"88f07372a5941700","type":"text","text":"Challenges","x":511,"y":-415,"width":250,"height":50,"color":"3"},
-		{"id":"a3ae0b87e4e8dd52","type":"text","text":"Impact","x":1150,"y":-927,"width":250,"height":50}
+		{"id":"a3ae0b87e4e8dd52","type":"text","text":"Impact","x":1150,"y":-927,"width":250,"height":50},
+		{"id":"a08b59eff4ba9f21","type":"text","text":"Experience","x":-645,"y":-984,"width":250,"height":50}
 	],
 	"edges":[
 		{"id":"9f9ef53be82a4e75","fromNode":"467bde0b1c7b5f43","fromSide":"right","toNode":"6562d828d1cd5b30","toSide":"left","color":"1"},
@@ -63,7 +63,7 @@
 		{"id":"ad48fc173736e08f","fromNode":"dd5838e0710d36a6","fromSide":"right","toNode":"661ef75e4e94c7f3","toSide":"left"},
 		{"id":"4d8fac8fdfe1e67e","fromNode":"a08b59eff4ba9f21","fromSide":"right","toNode":"2eefb8cefd65f9a5","toSide":"left"},
 		{"id":"a9ba3202c0a70b55","fromNode":"a08b59eff4ba9f21","fromSide":"right","toNode":"9bdc716c420dd4ea","toSide":"left"},
-		{"id":"6ec12085258ab2d5","fromNode":"a08b59eff4ba9f21","fromSide":"right","toNode":"88f07372a5941700","toSide":"left"},
+		{"id":"6ec12085258ab2d5","fromNode":"a08b59eff4ba9f21","fromSide":"right","toNode":"88f07372a5941700","toSide":"left","color":"3"},
 		{"id":"2d99382826e1c60c","fromNode":"dd5838e0710d36a6","fromSide":"right","toNode":"46a6e94ad3169848","toSide":"left"},
 		{"id":"ea108261dfff889e","fromNode":"db86832e0e702a7e","fromSide":"right","toNode":"fa2561f2d607aa14","toSide":"left"},
 		{"id":"85a300a544150469","fromNode":"db86832e0e702a7e","fromSide":"right","toNode":"44c9891c3a513310","toSide":"left"},
