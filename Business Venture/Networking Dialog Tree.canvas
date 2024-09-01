@@ -36,7 +36,8 @@
 		{"id":"fa2561f2d607aa14","x":1224,"y":-113,"width":250,"height":60,"type":"text","text":"Ethics"},
 		{"id":"db86832e0e702a7e","x":1515,"y":-3,"width":250,"height":60,"type":"text","text":"Data"},
 		{"id":"44c9891c3a513310","x":1094,"y":-6,"width":250,"height":60,"type":"text","text":"Oversight"},
-		{"id":"c4abb5f8aa18afdf","x":1257,"y":150,"width":250,"height":60,"type":"text","text":"Forecasting"}
+		{"id":"c4abb5f8aa18afdf","x":1257,"y":150,"width":250,"height":60,"type":"text","text":"Forecasting"},
+		{"id":"2eefb8cefd65f9a5","x":1004,"y":313,"width":250,"height":60,"type":"text","text":"current events"}
 	],
 	"edges":[
 		{"id":"9f9ef53be82a4e75","fromNode":"467bde0b1c7b5f43","fromSide":"right","toNode":"6562d828d1cd5b30","toSide":"left","color":"1"},

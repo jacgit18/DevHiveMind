@@ -18,15 +18,19 @@ dg-publish:
 	- [ ] or was it something you discovered throughout you journey.
 	- [ ] Was it something you studied in school,
 	- [ ] or did something else inspire you to take this path? 
-	- [ ] Are you aiming for anything specific in the future? 
+	- [ ] Are you aiming for anything specific in the future?
+	- [ ] What was that turning point in life or career for you?
 - [ ] What's the most interesting thing or something that most people wouldn't know about your job or the industry?  
 - [ ] What's the most annoying thing about your job? (Use later in the conversation)  
 - [ ] What type of people are you trying to meet here? 
 - [ ] What skills or qualities do you think are essential for success in your industry/jobs that are transferable?  
+- [ ] If you could snap your fingers and instantly create an app—that could solve any problem, personal or business-related, what would it be?
+- [ ] If you weren't working in this career path or job what do you think you'll be doing
 
 
 ## Other Questions  
 - [ ] How is your industry changing, and what excites or worries you the most about these changes?  
+- [ ] Any interesting projects or in your career what was the most intresting one you have worked on? 
 - [ ] What’s a common misconception people have about your job?  
 - [ ] How do you stay updated and informed about trends and developments in your field?  
 - [ ] How does your work impact your broader goals? Do you feel like it supports or aligns with your goals in some way?  
