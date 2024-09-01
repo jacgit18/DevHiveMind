@@ -41,9 +41,9 @@
 		{"id":"88f07372a5941700","type":"text","text":"Challenges","x":511,"y":-415,"width":250,"height":50,"color":"3"},
 		{"id":"a3ae0b87e4e8dd52","type":"text","text":"Impact","x":1150,"y":-927,"width":250,"height":50},
 		{"id":"a08b59eff4ba9f21","type":"text","text":"Experience","x":-645,"y":-984,"width":250,"height":50},
-		{"id":"9c1a3d493afdfe38","x":1244,"y":-532,"width":250,"height":60,"type":"text","text":"Best Advice"},
-		{"id":"0ed05044dd9eff10","x":1307,"y":-719,"width":250,"height":60,"type":"text","text":"Influence"},
-		{"id":"d953b6a238b7cf0f","x":1568,"y":-651,"width":250,"height":60,"type":"text","text":"Inspiration"}
+		{"id":"0ed05044dd9eff10","type":"text","text":"Influence","x":1314,"y":-280,"width":250,"height":60},
+		{"id":"d953b6a238b7cf0f","type":"text","text":"Inspiration","x":943,"y":-395,"width":250,"height":60},
+		{"id":"9c1a3d493afdfe38","type":"text","text":"Best Advice","x":1068,"y":-475,"width":250,"height":60}
 	],
 	"edges":[
 		{"id":"9f9ef53be82a4e75","fromNode":"467bde0b1c7b5f43","fromSide":"right","toNode":"6562d828d1cd5b30","toSide":"left","color":"1"},
@@ -76,6 +76,9 @@
 		{"id":"ba5072cc64ab7537","fromNode":"af7c8d14e55bb664","fromSide":"bottom","toNode":"88f07372a5941700","toSide":"bottom","color":"3"},
 		{"id":"c6d6eb4855db1b47","fromNode":"10ec579d28dfb079","fromSide":"right","toNode":"88f07372a5941700","toSide":"bottom","color":"3"},
 		{"id":"a87f725a97deedc3","fromNode":"dd5838e0710d36a6","fromSide":"bottom","toNode":"88f07372a5941700","toSide":"top","color":"3"},
-		{"id":"bd0775bca2c92179","fromNode":"dd5838e0710d36a6","fromSide":"right","toNode":"a3ae0b87e4e8dd52","toSide":"left"}
+		{"id":"bd0775bca2c92179","fromNode":"dd5838e0710d36a6","fromSide":"right","toNode":"a3ae0b87e4e8dd52","toSide":"left"},
+		{"id":"fd1a850b21e20bed","fromNode":"30008afadff5c2b3","fromSide":"right","toNode":"d953b6a238b7cf0f","toSide":"left"},
+		{"id":"b1ede0a06832cc9b","fromNode":"30008afadff5c2b3","fromSide":"right","toNode":"9c1a3d493afdfe38","toSide":"left"},
+		{"id":"98ca9a5c3eb3bd16","fromNode":"30008afadff5c2b3","fromSide":"right","toNode":"0ed05044dd9eff10","toSide":"left"}
 	]
 }
