@@ -29,16 +29,16 @@
 		{"id":"a08b59eff4ba9f21","type":"text","text":"Experience","x":-1160,"y":-893,"width":250,"height":50},
 		{"id":"30008afadff5c2b3","type":"text","text":"Goals/Dreams","x":-707,"y":-868,"width":250,"height":50},
 		{"id":"6d4d91327dec0d82","type":"text","text":"## Topic Web","x":-1285,"y":-1430,"width":250,"height":60},
-		{"id":"3046bbb9086f5e5d","type":"text","text":"Unknowns","x":-728,"y":-1140,"width":292,"height":50},
 		{"id":"83405bfcfe093517","type":"text","text":"Misconception","x":-282,"y":-1190,"width":250,"height":50},
 		{"id":"917749fc99395fb5","type":"text","text":"Surprising","x":-282,"y":-1098,"width":250,"height":50},
-		{"id":"661ef75e4e94c7f3","type":"text","text":"Innovations","x":444,"y":-1052,"width":250,"height":60},
-		{"id":"bb78eae5a6bf7eae","type":"text","text":"Annoying","x":444,"y":-956,"width":250,"height":60},
-		{"id":"f81005f58f16050a","type":"text","text":"Change","x":444,"y":-853,"width":250,"height":50},
-		{"id":"ab105850932928d9","type":"text","text":"Trends","x":444,"y":-753,"width":250,"height":60},
-		{"id":"2eefb8cefd65f9a5","type":"text","text":"current events","x":444,"y":-668,"width":250,"height":60},
-		{"id":"84251c119fed38f0","type":"text","text":"Skills","x":-157,"y":-956,"width":250,"height":50},
-		{"id":"dd5838e0710d36a6","x":-707,"y":-992,"width":250,"height":60,"type":"text","text":"Industry/Role"}
+		{"id":"dd5838e0710d36a6","x":-707,"y":-992,"width":250,"height":60,"type":"text","text":"Industry/Role"},
+		{"id":"ab105850932928d9","type":"text","text":"Trends","x":-105,"y":-668,"width":250,"height":50},
+		{"id":"f81005f58f16050a","type":"text","text":"Change","x":-105,"y":-757,"width":250,"height":50},
+		{"id":"bb78eae5a6bf7eae","type":"text","text":"Annoying","x":-105,"y":-833,"width":250,"height":50},
+		{"id":"84251c119fed38f0","type":"text","text":"Skills","x":60,"y":-982,"width":250,"height":50},
+		{"id":"661ef75e4e94c7f3","type":"text","text":"Innovations","x":-105,"y":-903,"width":250,"height":50},
+		{"id":"3046bbb9086f5e5d","type":"text","text":"Unknowns","x":-728,"y":-1165,"width":292,"height":50},
+		{"id":"2eefb8cefd65f9a5","type":"text","text":"current events","x":-707,"y":-1080,"width":250,"height":50}
 	],
 	"edges":[
 		{"id":"9f9ef53be82a4e75","fromNode":"467bde0b1c7b5f43","fromSide":"right","toNode":"6562d828d1cd5b30","toSide":"left","color":"1"},
@@ -54,6 +54,11 @@
 		{"id":"4b59b9962f982453","fromNode":"3046bbb9086f5e5d","fromSide":"right","toNode":"83405bfcfe093517","toSide":"left"},
 		{"id":"c9affc8349f0dd6c","fromNode":"3046bbb9086f5e5d","fromSide":"right","toNode":"917749fc99395fb5","toSide":"left"},
 		{"id":"ada273ce9c8477c6","fromNode":"a08b59eff4ba9f21","fromSide":"right","toNode":"dd5838e0710d36a6","toSide":"left"},
-		{"id":"e343967e214f313e","fromNode":"dd5838e0710d36a6","fromSide":"right","toNode":"84251c119fed38f0","toSide":"left"}
+		{"id":"e343967e214f313e","fromNode":"dd5838e0710d36a6","fromSide":"right","toNode":"84251c119fed38f0","toSide":"left"},
+		{"id":"483a052aebf03924","fromNode":"dd5838e0710d36a6","fromSide":"right","toNode":"ab105850932928d9","toSide":"left"},
+		{"id":"1aa458ea6d8e832e","fromNode":"dd5838e0710d36a6","fromSide":"right","toNode":"f81005f58f16050a","toSide":"left"},
+		{"id":"7d34c1f619ff8350","fromNode":"dd5838e0710d36a6","fromSide":"right","toNode":"bb78eae5a6bf7eae","toSide":"left"},
+		{"id":"ad48fc173736e08f","fromNode":"dd5838e0710d36a6","fromSide":"right","toNode":"661ef75e4e94c7f3","toSide":"left"},
+		{"id":"4d8fac8fdfe1e67e","fromNode":"a08b59eff4ba9f21","fromSide":"right","toNode":"2eefb8cefd65f9a5","toSide":"left"}
 	]
 }
