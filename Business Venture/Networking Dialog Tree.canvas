@@ -44,7 +44,7 @@
 		{"id":"0ed05044dd9eff10","type":"text","text":"Influence","x":1314,"y":-280,"width":250,"height":60},
 		{"id":"d953b6a238b7cf0f","type":"text","text":"Inspiration","x":943,"y":-395,"width":250,"height":60},
 		{"id":"9c1a3d493afdfe38","type":"text","text":"Best Advice","x":1068,"y":-475,"width":250,"height":60},
-		{"id":"a3da3931dc0edd70","x":891,"y":-1415,"width":250,"height":60,"type":"text","text":"general "}
+		{"id":"a3da3931dc0edd70","x":891,"y":-1415,"width":349,"height":60,"type":"text","text":"General Opinion"}
 	],
 	"edges":[
 		{"id":"9f9ef53be82a4e75","fromNode":"467bde0b1c7b5f43","fromSide":"right","toNode":"6562d828d1cd5b30","toSide":"left","color":"1"},
