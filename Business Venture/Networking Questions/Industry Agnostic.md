@@ -26,6 +26,7 @@ dg-publish:
 - [ ] What skills or qualities do you think are essential for success in your industry/jobs that are transferable?  
 - [ ] If you could snap your fingers and instantly create an app—that could solve any problem, personal or business-related, what would it be?
 - [ ] If you weren't working in this career path or job what do you think you'll be doing
+- [ ] What was the moment or achievement that made you realize a career in software engineering (or your field) was a realistic and attainable goal for you? What was your smallest yet significant accomplishment that gave you that confidence in your ability and kind of let you know oh I can do this this makes sense let's go it
 
 
 ## Other Questions  
