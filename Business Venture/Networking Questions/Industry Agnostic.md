@@ -39,3 +39,4 @@ dg-publish:
 - [ ] What trends or innovations are you keeping an eye on in your field?  
 - [ ] How long have you been in that field?  
 - [ ] What’s something unexpected that you’ve learned about human nature from observing people in your line of work?
+- [ ] What are some shady things you have seen
