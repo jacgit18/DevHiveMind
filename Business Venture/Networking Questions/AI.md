@@ -19,6 +19,9 @@ dg-publish:
 - [ ] How do you balance the potential benefits of AI with concerns about privacy and ethics?
 - [ ] Can you share an example of how AI has significantly improved a product or service in your company?
 
+## Disruptors
+
+
 ## Other Questions  
 - [ ] What role do you think AI will play in personalized user experiences moving forward?
 - [ ] How do you ensure that AI models remain unbiased and fair?

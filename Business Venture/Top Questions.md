@@ -11,6 +11,9 @@ Relates:
 Peer Reviewed: 0
 dg-publish:
 ---
+[[AI]]
+[[Data]]
+
 ![[Devs#Top 5]]
 
 
@@ -22,4 +25,4 @@ dg-publish:
 
 
 
-![[Industry Agnostic#Disruptor]]
+![[Industry Agnostic#Disruptors]]
