@@ -16,7 +16,7 @@ Relates:
 Peer Reviewed: 0
 dg-publish:
 ---
-The **Nock** library in JavaScript is a popular testing utility used to simulate HTTP server requests in Node.js applications. It's particularly useful for testing applications that make HTTP requests to external services (e.g., REST APIs), allowing developers to mock and intercept these requests in a controlled environment.  
+A **Nock file** in JavaScript refers to a configuration file or script used with the **Nock** library in JavaScript is a popular testing utility used to simulate HTTP server requests in Node.js applications. It's particularly useful for testing applications that make HTTP requests to external services (e.g., REST APIs), allowing developers to mock and intercept these requests in a controlled environment.  
   
 ### Key Features of Nock:  
 1. **Interception of HTTP Requests**: Nock allows you to intercept HTTP requests made by your Node.js application, and then you can define how these requests should be handled.  
@@ -46,7 +46,31 @@ name: 'John Doe'
 ```  
   
 In this example, if your application makes a request to `[https://api.example.com/users/1](https://api.example.com/users/1)`, Nock will intercept the request and return the mocked response (`{ id: 1, name: 'John Doe' }`) instead of actually hitting the external API.  
+
+```javascript  
+const nock = require('nock');  
+const axios = require('axios');  
   
+// Intercepting and mocking an HTTP GET request to "[https://api.example.com/users](https://api.example.com/users)"  
+nock('https://api.example.com')  
+.get('/users')  
+.reply(200, { id: 1, name: 'John Doe' });  
+  
+// Function to fetch users  
+async function fetchUsers() {  
+const response = await axios.get('https://api.example.com/users');  
+return response.data;  
+}  
+  
+// Test case using the mocked request  
+fetchUsers().then((data) => {  
+console.log(data); // Output: { id: 1, name: 'John Doe' }  
+});  
+```  
+  
+In this example, the `nock` configuration intercepts a GET request to `[https://api.example.com/users](https://api.example.com/users)` and responds with a predefined JSON object. This allows the test to run without actually making an external HTTP request.
+
+
 ### Use Cases:  
 - **Unit Testing**: Nock is often used in unit tests to mock API calls, ensuring that tests run quickly and consistently without relying on external services.  
 - **Integration Testing**: It can also be used in integration tests to simulate interactions with APIs, allowing for thorough testing of the application's behavior under various conditions.  
