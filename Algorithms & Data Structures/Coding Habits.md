@@ -1,5 +1,7 @@
 ---
-tags: 
+tags:
+  - interview
+  - "#todo/Med/Dev"
 author:
   - gitUserNamePlaceHolder
 Comments: Placeholder comment any thing else you want to mention about the document.
@@ -59,7 +61,6 @@ This approach encourages you to slow down, simplify when necessary, and stay fle
 This method helps you practice slowing down and carefully analyzing code to identify and resolve issues, making you more adept at debugging in real-world scenarios.
 
 ## Language to Use
-Here's a refined version of the language to use when approaching problem-solving in coding:
 
 ### **Core Operations**
 - **Initialize**: Set initial values or states for variables, arrays, or data structures.
