@@ -32,23 +32,6 @@ A **Nock file** in JavaScript refers to a configuration file or script used with
 ### Example Usage  
 ```javascript  
 const nock = require('nock');  
-  
-// Intercepting an HTTP GET request  
-nock('https://api.example.com')  
-.get('/users/1')  
-.reply(200, {  
-id: 1,  
-name: 'John Doe'  
-});  
-  
-// Now, when your application makes a GET request to [https://api.example.com/users/1](https://api.example.com/users/1),  
-// Nock will intercept it and return the mocked response with a status code of 200 and the specified JSON object.  
-```  
-  
-In this example, if your application makes a request to `[https://api.example.com/users/1](https://api.example.com/users/1)`, Nock will intercept the request and return the mocked response (`{ id: 1, name: 'John Doe' }`) instead of actually hitting the external API.  
-
-```javascript  
-const nock = require('nock');  
 const axios = require('axios');  
   
 // Intercepting and mocking an HTTP GET request to "[https://api.example.com/users](https://api.example.com/users)"  
