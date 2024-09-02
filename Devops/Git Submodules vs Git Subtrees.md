@@ -18,11 +18,12 @@ Both Git submodules and Git subtrees are methods to manage nested repositories, 
 **Monorepo**: A monorepo (short for "monolithic repository") is a single Git repository that contains multiple projects or services. This allows you to manage all related codebases in one place.
 
 ### Capital One Scenario 
-  - **Root on Master**: Your main repository is on the `master` branch, which contains the root folder for the project.  
+- **Root on Master**: Your main repository is on the `master` branch, which contains the root folder for the project.  
 - **Other Containers Linked to Repositories**: You have additional "containers" (likely submodules or folders with subtrees) that are linked to other GitHub repositories.  
 - **Access to Other Branches**: You can switch branches within these linked repositories while still having access to the root folder on the master branch of the main repository.
+
+
 ### Git Submodules  
-  
 **Overview:**  
 - A submodule is a repository inside another repository. The parent repository keeps a reference to a specific commit in the submodule.  
 - The submodule remains a separate repository with its own history.  
