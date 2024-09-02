@@ -57,3 +57,40 @@ This approach encourages you to slow down, simplify when necessary, and stay fle
    - Reflect on the process: Did you miss any clues? Was your approach efficient? This helps refine your debugging strategy over time.
 
 This method helps you practice slowing down and carefully analyzing code to identify and resolve issues, making you more adept at debugging in real-world scenarios.
+
+## Language to Use
+Here's a refined version of the language to use when approaching problem-solving in coding:
+
+### **Core Operations**
+- **Initialize**: Set initial values or states for variables, arrays, or data structures.
+- **Search**: Look for a specific value or condition within a data structure.
+- **Check if**: Evaluate a condition to determine the next step in the algorithm.
+- **Compare**: Evaluate the relationship between two values or variables (e.g., greater than, less than, equal to).
+- **Swap**: Exchange the positions of two elements, often within an array. Example: `[arrayA[idx], arrayB[idx]] = [arrayB[idx], arrayA[idx]]`
+- **Push/Shift**: Add (push) or remove (shift) elements from an array or data structure.
+
+### **Handling Relative Positions**
+- **Increment LeftIdx**: Move the left index or pointer to the right.
+- **Decrement RightIdx**: Move the right index or pointer to the left.
+- **Increment RightIdx**: Move the right index or pointer further to the right.
+
+### **Core Actions**
+- **Calculate**: Perform arithmetic or logical operations to determine a value.
+- **Store**: Save a calculated or retrieved value in a variable or data structure.
+- **Access**: Retrieve a value from a variable or data structure.
+- **Insertion**: Place a value or element into a data structure at a specified position.
+
+### **Conditions**
+- **Precondition**: The condition or state that must be true before an operation or function is executed.
+- **Search Condition**: The criteria used to find a specific element or satisfy a query.
+- **Postcondition**: The state or condition that must be true after an operation or function is completed.
+- **Termination Condition**: The criteria that signal the end of a loop, recursion, or process.
+
+### **Recursion & Edge Cases**
+- **Base Case**: The simplest case in recursion that doesn't require further recursive calls, often a stopping point.
+- **Edge Case**: An extreme or special condition that tests the boundaries of your algorithm or function.
+
+### **Debugging Strategy**
+- **List Variables**: When stuck, list out all the variables that need to be updated during each step of the process. Review to ensure that no critical updates or checks are missing.
+
+This refined language provides a clear, organized approach to problem-solving, helping you to systematically break down and debug complex coding tasks.
