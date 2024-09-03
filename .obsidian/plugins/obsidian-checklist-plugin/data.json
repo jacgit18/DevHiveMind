@@ -81,7 +81,9 @@
     "#todo/high/buisness",
     "#todo/med/buisness",
     "#todo/low/buisness",
-    "#todo/okr"
+    "#todo/okr",
+    "#todo/dev/bau",
+    "#todo/questions/topfive"
   ],
   "_hiddenTags": []
 }
