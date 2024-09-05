@@ -69,7 +69,6 @@
     "#todo/med/dev/personal",
     "#todo/high/dev/personal",
     "#todo/personal/prompts",
-    "#todo/personal/low/dev",
     "#todo/personal/high",
     "#todo/personal/high/dev",
     "#todo/personal/low",
@@ -77,7 +76,14 @@
     "#todo/high/dev",
     "#todo/med/dev",
     "#todo/personal/med/dev",
-    "#todo/personal/med"
+    "#todo/personal/med",
+    "#todo/personal/low/dev",
+    "#todo/high/buisness",
+    "#todo/med/buisness",
+    "#todo/low/buisness",
+    "#todo/okr",
+    "#todo/dev/bau",
+    "#todo/questions/topfive"
   ],
   "_hiddenTags": []
 }

@@ -1,5 +1,5 @@
 {
-  "accentColor": "",
+  "accentColor": "#ffaf1a",
   "cssTheme": "Royal Velvet",
   "baseFontSize": 21,
   "enabledCssSnippets": [
@@ -7,9 +7,15 @@
     "dashboard-ReadLineLength",
     "shorter-links",
     "customCallouts",
-    "Iterative Rainbow Folder Icons"
+    "Iterative Rainbow Folder Icons",
+    "MCL Multi Column",
+    "Heatmap Calendar",
+    "MCL Gallery Cards",
+    "MCL Wide Views",
+    "minimal-cards_anu"
   ],
   "textFontFamily": "FiraCode Nerd Font Mono",
   "theme": "obsidian",
+  "translucency": true,
   "interfaceFontFamily": "Source Code Pro"
 }

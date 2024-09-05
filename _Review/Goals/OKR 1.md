@@ -23,15 +23,10 @@ dg-publish:
 - [ ] Practice using cloudShell
 - [ ] Look into AWS SDK & CLI
 - [ ] Finish [[System Design Thought Process Flow]] to start system Design interview Prep next month.
-	- [ ] Look into [[Popular Meta System & Product Design]] questions.
-- [ ] Portfolio Site
-	- [ ] Revisit backend project with Docker fix Postgresql config so knex.js schema migration works
-	- [ ] Find API to leverage
-	- [ ] Refine [[Project Schema]]
-	- [ ] Maybe make it carpenter themed frontend to go with brand
-	- [ ] Look into potential libraries to use 
-	- [ ] Look into https://aws.amazon.com/rds/aurora/
-	- [ ] look into How to set up PWAs for your website
+- [x] Portfolio Site ✅ 2024-07-15
+	- [x] Revisit backend project with Docker fix Postgresql config so knex.js schema migration works ✅ 2024-07-15
+
+
 
 
 Consider Creating app using microservices with different types of front ends for the different model services so you can do fitness tracker something not too robust but a little bit and then maybe something else exploring different things  
@@ -102,7 +97,7 @@ Or just one monolithic app of links to the different projects like the fitness t
 ### Business Professional:  
 10. **AWS Certified Alexa Skill Builder – Specialty**: Designed for individuals who build, test, and publish Amazon Alexa skills. It covers Alexa architecture, skill development, and testing.  
   
-These certifications validate technical skills and expertise in various AWS technologies and services, ranging from foundational to advanced levels.
+
 
 
 
