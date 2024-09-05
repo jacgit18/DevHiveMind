@@ -10,7 +10,13 @@
     "margin": "0",
     "downscalePercent": 100
   },
-  "trashOption": "local",
+  "trashOption": "system",
   "useMarkdownLinks": false,
-  "showFrontmatter": true
+  "showFrontmatter": true,
+  "readableLineLength": false,
+  "propertiesInDocument": "hidden",
+  "livePreview": true,
+  "defaultViewMode": "preview",
+  "showInlineTitle": false,
+  "strictLineBreaks": true
 }

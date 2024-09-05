@@ -19,6 +19,8 @@ dg-publish: true
 ## Seed Scenario
 At the seed stage, a startup has typically completed its initial funding round, raising between €300k and €1.5M. This early financial boost supports the company as it begins selling its product or service and seeks additional talent to facilitate market entry and testing.
 
+> Instead of working directly, you can work for equity-like as an angel investor so your time for equity as opposed to money directly
+
 #todo/Personal/Med/Dev 
 - [ ] learn about Venture capital funds to better relate
 
@@ -49,7 +51,11 @@ These scenarios highlight the potential financial rewards of joining a startup a
 
 ## Questions to Ask
 
-Navigating equity compensation negotiations can seem daunting, but with a straightforward and informed approach, you can effectively determine a fair equity offer. Here’s a simplified strategy to guide you through this process:
+Navigating equity compensation negotiations can seem daunting, but with a straightforward and informed approach, you can effectively determine a fair equity offer. 
+
+You can also ask about [[Funding]] journey
+
+Here’s a simplified strategy to guide you through this process:
 
 1. **Inquire About the Stock Option Plan Size:**
    Start by directly asking the HR manager about the size of the stock option plan that has been allocated for employee equity. This conversation will help you understand whether the equity pool is more conservative (around 3%) or more generous (up to 10%).

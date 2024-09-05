@@ -13,8 +13,8 @@ EditDate: 2024-03-11
 Relates: 
 Peer Reviewed: 0
 ---
-#todo/Personal/Med/Dev  
-- [ ] Expand on this schema
+
+
 
 | *Users* |               |           | FK  | FK table name | Primary | Length | Allow Null | Default             |
 | ------- | ------------- | --------- | --- | ------------- | ------- | ------ | ---------- | ------------------- |

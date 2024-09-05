@@ -1,4 +1,6 @@
 .git
-.obsidian/workspace.json
 .smart-connections
 .trash
+/.obsidian/*
+!/.obsidian/workspaces.json
+!/.obsidian/appearance.json

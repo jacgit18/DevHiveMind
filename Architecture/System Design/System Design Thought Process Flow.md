@@ -41,6 +41,7 @@ For more info read
 - [ ] https://kasunprageethdissanayake.medium.com/tinder-fully-explained-system-design-and-architecture-1225ecdfe64e
 - [ ] https://www.outsystems.com/tech-hub/app-dev/technical-debt/#what-is-technical-debt
 - [ ] Refine and trim cloud notes not trying to document to many stuff just key details and relationships and stuff that may actually come up.
+- [ ] dont add any more articles until todo list with links go down
 - [ ] Use Chatgpt to recommend libraries and AWS services for project but define what the project is and come up with data model.
 
 Throughout the designing of the system you can discuss [[Fault Tolerance]] which refers to the system's resilience against failures, errors, or faults, ensuring uninterrupted operation and maintaining user experience by reducing system downtime. It encompasses proactive measures to handle failures gracefully and sustain availability. This principle applies universally across hardware, software, networks, and systems architecture. At its essence, fault tolerance anticipates failures as inevitable and seeks to minimize their impact through proactive strategies it also applies at and between each system component. 
@@ -629,7 +630,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 {
 	"type": "excalidraw",
 	"version": 2,
-	"source": "https://github.com/zsviczian/obsidian-excalidraw-plugin/releases/tag/2.2.4",
+	"source": "https://github.com/zsviczian/obsidian-excalidraw-plugin/releases/tag/2.3.0",
 	"elements": [
 		{
 			"type": "line",
@@ -792,11 +793,11 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"roughness": 1,
 			"opacity": 100,
 			"angle": 0,
-			"x": 1433.16886225488,
+			"x": 1432.8525780751925,
 			"y": 453.6121787851449,
 			"strokeColor": "#1e1e1e",
 			"backgroundColor": "#228be6",
-			"width": 75.62809753417969,
+			"width": 76.26066589355469,
 			"height": 19.144947209880478,
 			"seed": 1494923216,
 			"groupIds": [
@@ -981,11 +982,11 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"roughness": 1,
 			"opacity": 100,
 			"angle": 0,
-			"x": 1436.5021955882135,
+			"x": 1436.185911408526,
 			"y": 756.9455121184784,
 			"strokeColor": "#1e1e1e",
 			"backgroundColor": "#228be6",
-			"width": 75.62809753417969,
+			"width": 76.26066589355469,
 			"height": 19.144947209880478,
 			"seed": 748292560,
 			"groupIds": [
@@ -1407,11 +1408,11 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"roughness": 1,
 			"opacity": 100,
 			"angle": 0,
-			"x": -30.977215083533792,
+			"x": -31.787220271522074,
 			"y": -624.7456991307263,
 			"strokeColor": "#000000",
 			"backgroundColor": "transparent",
-			"width": 133.49986267089844,
+			"width": 135.119873046875,
 			"height": 24,
 			"seed": 271548368,
 			"groupIds": [
@@ -2445,7 +2446,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"y": -94.79867305046673,
 			"strokeColor": "#000000",
 			"backgroundColor": "transparent",
-			"width": 39.999969482421875,
+			"width": 40.45997619628906,
 			"height": 24,
 			"seed": 1754599376,
 			"groupIds": [
@@ -2881,11 +2882,11 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"roughness": 0,
 			"opacity": 100,
 			"angle": 0,
-			"x": -700.1478487107152,
+			"x": -700.3778520676487,
 			"y": -89.70500073228754,
 			"strokeColor": "#000000",
 			"backgroundColor": "transparent",
-			"width": 39.639984130859375,
+			"width": 40.09999084472656,
 			"height": 24,
 			"seed": 1765315024,
 			"groupIds": [
@@ -2921,11 +2922,11 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"roughness": 0,
 			"opacity": 100,
 			"angle": 0,
-			"x": -571.1276438795567,
+			"x": -571.3576472364903,
 			"y": -86.31234863508826,
 			"strokeColor": "#000000",
 			"backgroundColor": "transparent",
-			"width": 39.39997863769531,
+			"width": 39.8599853515625,
 			"height": 24,
 			"seed": 233166800,
 			"groupIds": [
@@ -3058,12 +3059,14 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"startBinding": {
 				"elementId": "susBNEN1OhhuPYGakZq-r",
 				"focus": -0.4868936551954063,
-				"gap": 2.5808926568473467
+				"gap": 2.5808926568473467,
+				"fixedPoint": null
 			},
 			"endBinding": {
 				"elementId": "uVrMkQP6BHWcNqG2zFjqW",
 				"focus": 3.0832384818360365,
-				"gap": 8.474631183064048
+				"gap": 8.474631183064048,
+				"fixedPoint": null
 			},
 			"lastCommittedPoint": null,
 			"startArrowhead": null,
@@ -3113,12 +3116,14 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"startBinding": {
 				"elementId": "susBNEN1OhhuPYGakZq-r",
 				"focus": 0.3405179981177257,
-				"gap": 3.102222108227785
+				"gap": 3.102222108227785,
+				"fixedPoint": null
 			},
 			"endBinding": {
 				"elementId": "uVrMkQP6BHWcNqG2zFjqW",
 				"focus": -3.2717099342675042,
-				"gap": 9.784671812351235
+				"gap": 9.784671812351235,
+				"fixedPoint": null
 			},
 			"lastCommittedPoint": null,
 			"startArrowhead": null,
@@ -3168,12 +3173,14 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"startBinding": {
 				"elementId": "susBNEN1OhhuPYGakZq-r",
 				"focus": 0.03121324551442744,
-				"gap": 2.2706431608594215
+				"gap": 2.2706431608594215,
+				"fixedPoint": null
 			},
 			"endBinding": {
 				"elementId": "uVrMkQP6BHWcNqG2zFjqW",
 				"focus": -0.06205103257849585,
-				"gap": 3.5180115819121056
+				"gap": 3.5180115819121056,
+				"fixedPoint": null
 			},
 			"lastCommittedPoint": null,
 			"startArrowhead": null,
@@ -3483,7 +3490,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"y": 70.60588096414017,
 			"strokeColor": "#000000",
 			"backgroundColor": "#868e96",
-			"width": 21.682296752929688,
+			"width": 22.560211181640625,
 			"height": 3.267895138303412,
 			"seed": 1918954448,
 			"groupIds": [
@@ -3873,11 +3880,11 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"roughness": 0,
 			"opacity": 100,
 			"angle": 0,
-			"x": -616.346373337944,
+			"x": -616.6588657085495,
 			"y": 97.47392062851918,
 			"strokeColor": "#000000",
 			"backgroundColor": "#12b886",
-			"width": 127.05049133300781,
+			"width": 127.67547607421875,
 			"height": 15.640096618357468,
 			"seed": 545792464,
 			"groupIds": [
@@ -4074,7 +4081,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"y": 70.61583149684975,
 			"strokeColor": "#000000",
 			"backgroundColor": "#868e96",
-			"width": 21.682296752929688,
+			"width": 22.560211181640625,
 			"height": 3.267895138303412,
 			"seed": 681084368,
 			"groupIds": [
@@ -4464,11 +4471,11 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"roughness": 0,
 			"opacity": 100,
 			"angle": 0,
-			"x": -873.8869574422811,
+			"x": -874.1994498128865,
 			"y": 97.48387116122854,
 			"strokeColor": "#000000",
 			"backgroundColor": "#12b886",
-			"width": 132.2004852294922,
+			"width": 132.82546997070312,
 			"height": 15.640096618357468,
 			"seed": 1128430544,
 			"groupIds": [
@@ -4510,7 +4517,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"y": -220.61559847819422,
 			"strokeColor": "#1e1e1e",
 			"backgroundColor": "transparent",
-			"width": 224.51976013183594,
+			"width": 224.65977478027344,
 			"height": 25,
 			"seed": 589464016,
 			"groupIds": [],
@@ -5802,11 +5809,11 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"roughness": 1,
 			"opacity": 100,
 			"angle": 0,
-			"x": -353.8372103872889,
+			"x": -353.98734161287484,
 			"y": -36.558412424032895,
 			"strokeColor": "#000000",
 			"backgroundColor": "transparent",
-			"width": 120.48155212402344,
+			"width": 120.78181457519531,
 			"height": 23.595161071904883,
 			"seed": 1426911184,
 			"groupIds": [
@@ -5985,11 +5992,11 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"roughness": 1,
 			"opacity": 100,
 			"angle": 0,
-			"x": -238.16447107845397,
+			"x": -238.48075525814147,
 			"y": 99.61217878514503,
 			"strokeColor": "#1e1e1e",
 			"backgroundColor": "#228be6",
-			"width": 75.62809753417969,
+			"width": 76.26066589355469,
 			"height": 19.144947209880478,
 			"seed": 569183696,
 			"groupIds": [
@@ -6169,11 +6176,11 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"roughness": 1,
 			"opacity": 100,
 			"angle": 0,
-			"x": -372.7427792848089,
+			"x": -373.0205960572698,
 			"y": 100.61769522455256,
 			"strokeColor": "#000000",
 			"backgroundColor": "#228be6",
-			"width": 76.323486328125,
+			"width": 76.87911987304688,
 			"height": 19.32441241999104,
 			"seed": 407117776,
 			"groupIds": [
@@ -7034,7 +7041,8 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"startBinding": {
 				"elementId": "HuAB3iPs9Ygdn1iGmZYX2",
 				"focus": 0.1705987615631722,
-				"gap": 5.982831142859621
+				"gap": 5.982831142859621,
+				"fixedPoint": null
 			},
 			"endBinding": null,
 			"lastCommittedPoint": null,
@@ -7115,7 +7123,8 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"startBinding": {
 				"elementId": "HuAB3iPs9Ygdn1iGmZYX2",
 				"focus": -0.31376123802393485,
-				"gap": 5.84478164913411
+				"gap": 5.84478164913411,
+				"fixedPoint": null
 			},
 			"endBinding": null,
 			"lastCommittedPoint": null,
@@ -7862,11 +7871,11 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"roughness": 1,
 			"opacity": 100,
 			"angle": 0,
-			"x": 387.2369778790712,
+			"x": 386.92697269108294,
 			"y": -780.4942516869414,
 			"strokeColor": "#000000",
 			"backgroundColor": "transparent",
-			"width": 53.99993896484375,
+			"width": 54.61994934082031,
 			"height": 24,
 			"seed": 1590380496,
 			"groupIds": [
@@ -8382,11 +8391,11 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"roughness": 1,
 			"opacity": 100,
 			"angle": 0,
-			"x": 281.49335676695455,
+			"x": 280.7333546307241,
 			"y": -770.8584578231453,
 			"strokeColor": "#000000",
 			"backgroundColor": "transparent",
-			"width": 39.51997375488281,
+			"width": 41.03997802734375,
 			"height": 24,
 			"seed": 2032845776,
 			"groupIds": [
@@ -10498,11 +10507,11 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"roughness": 0,
 			"opacity": 100,
 			"angle": 0,
-			"x": 292.87560809487695,
+			"x": 292.17560351724023,
 			"y": -1151.3376996232828,
 			"strokeColor": "#000000",
 			"backgroundColor": "transparent",
-			"width": 113.2598876953125,
+			"width": 114.65989685058594,
 			"height": 48,
 			"seed": 1204154832,
 			"groupIds": [
@@ -10579,7 +10588,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"y": -762.2023877123265,
 			"strokeColor": "#1e1e1e",
 			"backgroundColor": "#ffc9c9",
-			"width": 121.46913146972656,
+			"width": 122.96536254882812,
 			"height": 18.935337127124047,
 			"seed": 1538244048,
 			"groupIds": [
@@ -12574,7 +12583,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"y": 65.52926412579404,
 			"strokeColor": "#000000",
 			"backgroundColor": "#7950f288",
-			"width": 28.23486328125,
+			"width": 28.646484375,
 			"height": 19.2,
 			"seed": 1428715984,
 			"groupIds": [
@@ -13216,7 +13225,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"y": 95.73561932272537,
 			"strokeColor": "#000000",
 			"backgroundColor": "transparent",
-			"width": 108.39988708496094,
+			"width": 110.0198974609375,
 			"height": 24,
 			"seed": 1913746896,
 			"groupIds": [
@@ -13643,7 +13652,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"y": 95.09442228715398,
 			"strokeColor": "#000000",
 			"backgroundColor": "transparent",
-			"width": 93.19990539550781,
+			"width": 93.81991577148438,
 			"height": 24,
 			"seed": 304966608,
 			"groupIds": [
@@ -13709,11 +13718,11 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"roughness": 1,
 			"opacity": 100,
 			"angle": 0,
-			"x": -473.90216119946047,
+			"x": -473.93248041332765,
 			"y": -308.4449127020698,
 			"strokeColor": "#1e1e1e",
 			"backgroundColor": "#b2f2bb",
-			"width": 75.75340270996094,
+			"width": 75.81404113769531,
 			"height": 40.167465732141956,
 			"seed": 515456464,
 			"groupIds": [
@@ -17352,7 +17361,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"y": -857.3331281933229,
 			"strokeColor": "#000000",
 			"backgroundColor": "transparent",
-			"width": 110.39990234375,
+			"width": 111.29991149902344,
 			"height": 24,
 			"seed": 1699221968,
 			"groupIds": [
@@ -20489,7 +20498,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"y": -1209.3340206675666,
 			"strokeColor": "#000000",
 			"backgroundColor": "transparent",
-			"width": 143.43984985351562,
+			"width": 143.57986450195312,
 			"height": 24,
 			"seed": 258460112,
 			"groupIds": [
@@ -20525,11 +20534,11 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"roughness": 1,
 			"opacity": 100,
 			"angle": 0,
-			"x": -430.60412275399244,
+			"x": -431.1641279419807,
 			"y": -1066.3729893534066,
 			"strokeColor": "#000000",
 			"backgroundColor": "transparent",
-			"width": 59.099945068359375,
+			"width": 60.21995544433594,
 			"height": 24,
 			"seed": 426643408,
 			"groupIds": [
@@ -21695,7 +21704,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"y": -1130.9567483255023,
 			"strokeColor": "#000000",
 			"backgroundColor": "transparent",
-			"width": 115.3798828125,
+			"width": 116.43989562988281,
 			"height": 24,
 			"seed": 534101456,
 			"groupIds": [
@@ -21735,7 +21744,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"y": -1202.4296452815338,
 			"strokeColor": "#000000",
 			"backgroundColor": "transparent",
-			"width": 43.33995056152344,
+			"width": 45.39996337890625,
 			"height": 24,
 			"seed": 1342014416,
 			"groupIds": [
@@ -22238,7 +22247,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"y": -789.0733989269106,
 			"strokeColor": "#000000",
 			"backgroundColor": "transparent",
-			"width": 131.89984130859375,
+			"width": 132.95985412597656,
 			"height": 24,
 			"seed": 693208528,
 			"groupIds": [
@@ -23735,7 +23744,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"y": -905.2080208570587,
 			"strokeColor": "#000000",
 			"backgroundColor": "transparent",
-			"width": 79.01991271972656,
+			"width": 80.07992553710938,
 			"height": 24,
 			"seed": 1846375376,
 			"groupIds": [
@@ -23937,11 +23946,11 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"roughness": 1,
 			"opacity": 100,
 			"angle": 0,
-			"x": -228.76604865780155,
+			"x": -228.8153803228406,
 			"y": -1013.241879991966,
 			"strokeColor": "#000000",
 			"backgroundColor": "transparent",
-			"width": 59.54058837890625,
+			"width": 59.639251708984375,
 			"height": 19.621535835592105,
 			"seed": 772606928,
 			"groupIds": [
@@ -24143,11 +24152,11 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"roughness": 1,
 			"opacity": 100,
 			"angle": 0,
-			"x": 876.2339513421996,
+			"x": 876.1846196771605,
 			"y": 3044.258120008038,
 			"strokeColor": "#000000",
 			"backgroundColor": "transparent",
-			"width": 59.54058837890625,
+			"width": 59.639251708984375,
 			"height": 19.621535835592105,
 			"seed": 1979391453,
 			"groupIds": [
@@ -24187,7 +24196,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"y": -795.6752326644724,
 			"strokeColor": "#1e1e1e",
 			"backgroundColor": "transparent",
-			"width": 89.65992736816406,
+			"width": 90.5599365234375,
 			"height": 25,
 			"seed": 332470541,
 			"groupIds": [],
@@ -24935,11 +24944,11 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"roughness": 1,
 			"opacity": 100,
 			"angle": 0,
-			"x": -1331.9536503214356,
+			"x": -1332.483656730127,
 			"y": -594.7807541365161,
 			"strokeColor": "#000000",
 			"backgroundColor": "transparent",
-			"width": 115.69985961914062,
+			"width": 116.75987243652344,
 			"height": 24,
 			"seed": 1567450064,
 			"groupIds": [
@@ -26002,11 +26011,11 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"roughness": 1,
 			"opacity": 100,
 			"angle": 0,
-			"x": -1328.7785965500796,
+			"x": -1328.8985992966616,
 			"y": -1184.1480221448862,
 			"strokeColor": "#000000",
 			"backgroundColor": "transparent",
-			"width": 102.07989501953125,
+			"width": 102.31990051269531,
 			"height": 48,
 			"seed": 1531876816,
 			"groupIds": [
@@ -26577,7 +26586,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"y": -707.3885975282445,
 			"strokeColor": "#1e1e1e",
 			"backgroundColor": "#ffc9c9",
-			"width": 82.47991943359375,
+			"width": 82.71992492675781,
 			"height": 50,
 			"seed": 307897296,
 			"groupIds": [
@@ -26765,7 +26774,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"y": -413.35089013759466,
 			"strokeColor": "#1e1e1e",
 			"backgroundColor": "#ffc9c9",
-			"width": 99.23989868164062,
+			"width": 100.29991149902344,
 			"height": 25,
 			"seed": 1685701072,
 			"groupIds": [
@@ -26805,7 +26814,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"y": -1180.3764730166968,
 			"strokeColor": "#000000",
 			"backgroundColor": "transparent",
-			"width": 131.89984130859375,
+			"width": 132.95985412597656,
 			"height": 24,
 			"seed": 1687128528,
 			"groupIds": [
@@ -27756,11 +27765,11 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"roughness": 1,
 			"opacity": 100,
 			"angle": 0,
-			"x": -1042.8322526631166,
+			"x": -1043.5522615132143,
 			"y": -438.3205604032049,
 			"strokeColor": "#000000",
 			"backgroundColor": "transparent",
-			"width": 87.43989562988281,
+			"width": 88.87991333007812,
 			"height": 48,
 			"seed": 1390266320,
 			"groupIds": [
@@ -28998,7 +29007,8 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"startBinding": {
 				"elementId": "EZzKIOZLHovnngaeYzsR7",
 				"focus": 0.17059876156318912,
-				"gap": 5.982831142859718
+				"gap": 5.982831142859718,
+				"fixedPoint": null
 			},
 			"endBinding": null,
 			"lastCommittedPoint": null,
@@ -29079,7 +29089,8 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"startBinding": {
 				"elementId": "EZzKIOZLHovnngaeYzsR7",
 				"focus": -0.31376123802394934,
-				"gap": 5.844781649134204
+				"gap": 5.844781649134204,
+				"fixedPoint": null
 			},
 			"endBinding": null,
 			"lastCommittedPoint": null,
@@ -30527,7 +30538,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"y": -429.15157771458894,
 			"strokeColor": "#1e1e1e",
 			"backgroundColor": "#ffc9c9",
-			"width": 51.11993408203125,
+			"width": 51.25994873046875,
 			"height": 25,
 			"seed": 1669033424,
 			"groupIds": [
@@ -30563,11 +30574,11 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"roughness": 1,
 			"opacity": 100,
 			"angle": 0,
-			"x": -1060.4731794649897,
+			"x": -1061.3531843478022,
 			"y": -566.7318311846481,
 			"strokeColor": "#000000",
 			"backgroundColor": "transparent",
-			"width": 34.879974365234375,
+			"width": 36.639984130859375,
 			"height": 24,
 			"seed": 1936536528,
 			"groupIds": [
@@ -30636,11 +30647,11 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"roughness": 0,
 			"opacity": 100,
 			"angle": 0,
-			"x": -1068.3211809450922,
+			"x": -1069.6238619143305,
 			"y": -621.8744994822333,
 			"strokeColor": "#000000",
 			"backgroundColor": "#7950f288",
-			"width": 50.87586975097656,
+			"width": 53.481231689453125,
 			"height": 34.8,
 			"seed": 334397392,
 			"groupIds": [
@@ -30681,7 +30692,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"y": -880.8151319166946,
 			"strokeColor": "#1e1e1e",
 			"backgroundColor": "transparent",
-			"width": 99.81988525390625,
+			"width": 100.87989807128906,
 			"height": 25,
 			"seed": 1899054381,
 			"groupIds": [],
@@ -30719,7 +30730,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"y": -929.8239182692303,
 			"strokeColor": "#1e1e1e",
 			"backgroundColor": "transparent",
-			"width": 61.61993408203125,
+			"width": 63.23994445800781,
 			"height": 25,
 			"seed": 1916167536,
 			"groupIds": [],
@@ -32912,8 +32923,8 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 		},
 		{
 			"type": "rectangle",
-			"version": 1392,
-			"versionNonce": 318717417,
+			"version": 1394,
+			"versionNonce": 1839738232,
 			"index": "b9y",
 			"isDeleted": false,
 			"id": "PFSyRhMeeQQjJhSU-aAet",
@@ -32943,14 +32954,14 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 					"type": "arrow"
 				}
 			],
-			"updated": 1718406756322,
+			"updated": 1724550210408,
 			"link": null,
 			"locked": false
 		},
 		{
 			"type": "text",
-			"version": 511,
-			"versionNonce": 2016473255,
+			"version": 513,
+			"versionNonce": 1546894968,
 			"index": "b9z",
 			"isDeleted": false,
 			"id": "CBh5xDMB",
@@ -32971,7 +32982,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"frameId": "cDlFNT0KJqjWdy4tfiyeE",
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1718406774426,
+			"updated": 1724550210409,
 			"link": null,
 			"locked": false,
 			"fontSize": 36,
@@ -32987,8 +32998,8 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 		},
 		{
 			"type": "rectangle",
-			"version": 1428,
-			"versionNonce": 936744873,
+			"version": 1430,
+			"versionNonce": 1965371256,
 			"index": "bA0",
 			"isDeleted": false,
 			"id": "oKt_wAJkAksutql0WooCQ",
@@ -33014,14 +33025,14 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 					"id": "NP5hZoJW"
 				}
 			],
-			"updated": 1718406756323,
+			"updated": 1724550210409,
 			"link": null,
 			"locked": false
 		},
 		{
 			"type": "text",
-			"version": 550,
-			"versionNonce": 336662857,
+			"version": 552,
+			"versionNonce": 817922168,
 			"index": "bA1",
 			"isDeleted": false,
 			"id": "NP5hZoJW",
@@ -33042,7 +33053,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"frameId": "cDlFNT0KJqjWdy4tfiyeE",
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1718406774426,
+			"updated": 1724550210409,
 			"link": null,
 			"locked": false,
 			"fontSize": 36,
@@ -34511,11 +34522,11 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"roughness": 1,
 			"opacity": 100,
 			"angle": 0,
-			"x": 1202.9591364337396,
+			"x": 1202.8665308429192,
 			"y": 2067.752114214323,
 			"strokeColor": "#000000",
 			"backgroundColor": "transparent",
-			"width": 93.01333618164062,
+			"width": 93.19854736328125,
 			"height": 54.41968483023072,
 			"seed": 1127790032,
 			"groupIds": [
@@ -34885,7 +34896,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"y": 1825.9361833964451,
 			"strokeColor": "#000000",
 			"backgroundColor": "transparent",
-			"width": 39.999969482421875,
+			"width": 40.45997619628906,
 			"height": 24,
 			"seed": 422357968,
 			"groupIds": [
@@ -35177,12 +35188,14 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"startBinding": {
 				"elementId": "Y0j1XqO2",
 				"focus": 0.012256690043915646,
-				"gap": 4.717923700900087
+				"gap": 4.717923700900087,
+				"fixedPoint": null
 			},
 			"endBinding": {
 				"elementId": "L9KOALbPFydM4JPUYBtSP",
 				"focus": 0.026618836506613917,
-				"gap": 1
+				"gap": 1,
+				"fixedPoint": null
 			},
 			"lastCommittedPoint": null,
 			"startArrowhead": null,
@@ -35211,11 +35224,11 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"roughness": 1,
 			"opacity": 100,
 			"angle": 0,
-			"x": 489.0254644824454,
+			"x": 488.69545502199617,
 			"y": 2341.2758690235273,
 			"strokeColor": "#000000",
 			"backgroundColor": "transparent",
-			"width": 66.09992980957031,
+			"width": 66.75994873046875,
 			"height": 24,
 			"seed": 870833104,
 			"groupIds": [
@@ -36472,7 +36485,8 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"endBinding": {
 				"elementId": "UaF34mObED8-XhLB69L2x",
 				"focus": -0.05066965560249256,
-				"gap": 8.249285340744336
+				"gap": 8.249285340744336,
+				"fixedPoint": null
 			},
 			"lastCommittedPoint": null,
 			"startArrowhead": null,
@@ -36518,12 +36532,14 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"startBinding": {
 				"elementId": "t93q1ZfT",
 				"focus": -1.5073163088350858,
-				"gap": 10.146318435669173
+				"gap": 10.146318435669173,
+				"fixedPoint": null
 			},
 			"endBinding": {
 				"elementId": "am4BM0mZ26GdVjLlrNWZT",
 				"focus": -0.08275655041568951,
-				"gap": 11.264547401235802
+				"gap": 11.264547401235802,
+				"fixedPoint": null
 			},
 			"lastCommittedPoint": null,
 			"startArrowhead": null,
@@ -36573,12 +36589,14 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"startBinding": {
 				"elementId": "t93q1ZfT",
 				"focus": 1.4902950522442762,
-				"gap": 9.853712081908952
+				"gap": 9.853712081908952,
+				"fixedPoint": null
 			},
 			"endBinding": {
 				"elementId": "MZo28sdrCcXbfUGm_HIa9",
 				"focus": -0.06623387471603684,
-				"gap": 8.27430023380714
+				"gap": 8.27430023380714,
+				"fixedPoint": null
 			},
 			"lastCommittedPoint": null,
 			"startArrowhead": null,
@@ -36615,7 +36633,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"y": 1907.4245416529413,
 			"strokeColor": "#000000",
 			"backgroundColor": "transparent",
-			"width": 132.57986450195312,
+			"width": 134.1998748779297,
 			"height": 24,
 			"seed": 41644496,
 			"groupIds": [
@@ -37024,7 +37042,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"y": 1897.4245416529413,
 			"strokeColor": "#000000",
 			"backgroundColor": "transparent",
-			"width": 132.57986450195312,
+			"width": 134.1998748779297,
 			"height": 24,
 			"seed": 1838195152,
 			"groupIds": [
@@ -37449,7 +37467,8 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"endBinding": {
 				"elementId": "DwkTxKSQL7k3VvCfuLlCG",
 				"focus": -0.03583954203662279,
-				"gap": 2.1954539673311046
+				"gap": 2.1954539673311046,
+				"fixedPoint": null
 			},
 			"lastCommittedPoint": null,
 			"startArrowhead": "arrow",
@@ -37501,7 +37520,8 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"startBinding": {
 				"elementId": "7_J6St9BZb-73V3IRKVvg",
 				"gap": 10.919658963497,
-				"focus": 0.025495823831575462
+				"focus": 0.025495823831575462,
+				"fixedPoint": null
 			},
 			"endBinding": null,
 			"lastCommittedPoint": null,
@@ -37550,12 +37570,14 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"startBinding": {
 				"elementId": "7_J6St9BZb-73V3IRKVvg",
 				"gap": 10.097873143292087,
-				"focus": 0.3724324639019756
+				"focus": 0.3724324639019756,
+				"fixedPoint": null
 			},
 			"endBinding": {
 				"elementId": "PB9nf5qVGsHfOBrV01TYR",
 				"gap": 8.649559877799675,
-				"focus": -0.04565243999721932
+				"focus": -0.04565243999721932,
+				"fixedPoint": null
 			},
 			"lastCommittedPoint": null,
 			"startArrowhead": "arrow",
@@ -37603,12 +37625,14 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"startBinding": {
 				"elementId": "c--lNFrWUOeE8LvKHxVz-",
 				"focus": -0.28214009208819374,
-				"gap": 3.106478459906043
+				"gap": 3.106478459906043,
+				"fixedPoint": null
 			},
 			"endBinding": {
 				"elementId": "SdDH_6BqBGfxHTEVeJ--X",
 				"focus": 0.060368955307395604,
-				"gap": 7.883026066012349
+				"gap": 7.883026066012349,
+				"fixedPoint": null
 			},
 			"lastCommittedPoint": null,
 			"startArrowhead": "arrow",
@@ -37656,12 +37680,14 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"startBinding": {
 				"elementId": "JOSlxOP3",
 				"focus": -0.23562449482457293,
-				"gap": 2.2721571235645115
+				"gap": 2.2721571235645115,
+				"fixedPoint": null
 			},
 			"endBinding": {
 				"elementId": "RkYMrAzg4PmK0RRBU6Wjj",
 				"focus": 0.4355026168408251,
-				"gap": 1
+				"gap": 1,
+				"fixedPoint": null
 			},
 			"lastCommittedPoint": null,
 			"startArrowhead": "arrow",
@@ -37709,12 +37735,14 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"startBinding": {
 				"elementId": "JOSlxOP3",
 				"focus": 0.17578528252132894,
-				"gap": 17.827712679120168
+				"gap": 17.827712679120168,
+				"fixedPoint": null
 			},
 			"endBinding": {
 				"elementId": "uwHyN-1z-pRpLL0syxrko",
 				"focus": -0.34010359479806307,
-				"gap": 13.414877698638065
+				"gap": 13.414877698638065,
+				"fixedPoint": null
 			},
 			"lastCommittedPoint": null,
 			"startArrowhead": "arrow",
@@ -37807,12 +37835,14 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"startBinding": {
 				"elementId": "SDTb7AK5",
 				"focus": 0.02305858430452875,
-				"gap": 15.327712679119259
+				"gap": 15.327712679119259,
+				"fixedPoint": null
 			},
 			"endBinding": {
 				"elementId": "PLtIUIuJniotDE2V36I5t",
 				"focus": -0.40460192523054683,
-				"gap": 13.673746232593203
+				"gap": 13.673746232593203,
+				"fixedPoint": null
 			},
 			"lastCommittedPoint": null,
 			"startArrowhead": "arrow",
@@ -37905,12 +37935,14 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"startBinding": {
 				"elementId": "c--lNFrWUOeE8LvKHxVz-",
 				"focus": -0.246877734203898,
-				"gap": 3.250601045804501
+				"gap": 3.250601045804501,
+				"fixedPoint": null
 			},
 			"endBinding": {
 				"elementId": "CIMzKwJe",
 				"focus": 0.2728753065050607,
-				"gap": 1
+				"gap": 1,
+				"fixedPoint": null
 			},
 			"lastCommittedPoint": null,
 			"startArrowhead": "arrow",
@@ -38005,12 +38037,14 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"startBinding": {
 				"elementId": "WlLs4waP",
 				"focus": -0.0438982690624735,
-				"gap": 14.984316276779737
+				"gap": 14.984316276779737,
+				"fixedPoint": null
 			},
 			"endBinding": {
 				"elementId": "UJ23noNy1HIpIBISn9gJS",
 				"focus": 0.3304972415113644,
-				"gap": 2.2222222222239907
+				"gap": 2.2222222222239907,
+				"fixedPoint": null
 			},
 			"lastCommittedPoint": null,
 			"startArrowhead": null,
@@ -38059,7 +38093,8 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"endBinding": {
 				"elementId": "WlLs4waP",
 				"focus": 0.1735574193875154,
-				"gap": 10.303030303032301
+				"gap": 10.303030303032301,
+				"fixedPoint": null
 			},
 			"lastCommittedPoint": null,
 			"startArrowhead": "arrow",
@@ -38108,7 +38143,8 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"endBinding": {
 				"elementId": "zw9dc_ZcQgREPj3S0U_Sa",
 				"focus": -0.008507491077351721,
-				"gap": 2.0050340132279416
+				"gap": 2.0050340132279416,
+				"fixedPoint": null
 			},
 			"lastCommittedPoint": null,
 			"startArrowhead": "arrow",
@@ -38156,12 +38192,14 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"startBinding": {
 				"elementId": "zw9dc_ZcQgREPj3S0U_Sa",
 				"focus": 0.3858410537159245,
-				"gap": 2.0050340132279416
+				"gap": 2.0050340132279416,
+				"fixedPoint": null
 			},
 			"endBinding": {
 				"elementId": "RKPIXPia",
 				"focus": 0.6792344637386303,
-				"gap": 1.8181818181819835
+				"gap": 1.8181818181819835,
+				"fixedPoint": null
 			},
 			"lastCommittedPoint": null,
 			"startArrowhead": null,
@@ -38209,12 +38247,14 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"startBinding": {
 				"elementId": "DwkTxKSQL7k3VvCfuLlCG",
 				"focus": -0.22800289345006813,
-				"gap": 1
+				"gap": 1,
+				"fixedPoint": null
 			},
 			"endBinding": {
 				"elementId": "roip7SAT",
 				"focus": -0.49562514897753623,
-				"gap": 1.8181818181819835
+				"gap": 1.8181818181819835,
+				"fixedPoint": null
 			},
 			"lastCommittedPoint": null,
 			"startArrowhead": null,
@@ -38839,11 +38879,11 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"roughness": 1,
 			"opacity": 100,
 			"angle": 0,
-			"x": 678.7944778872916,
+			"x": 677.5344833804556,
 			"y": 1155.002077759051,
 			"strokeColor": "#1e1e1e",
 			"backgroundColor": "#ffc9c9",
-			"width": 118.04402160644531,
+			"width": 120.56401062011719,
 			"height": 45,
 			"seed": 619944400,
 			"groupIds": [],
@@ -38899,7 +38939,8 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"startBinding": {
 				"elementId": "JqmkZ0mx",
 				"focus": -0.2486819035686018,
-				"gap": 3
+				"gap": 3,
+				"fixedPoint": null
 			},
 			"endBinding": null,
 			"lastCommittedPoint": null,
@@ -39667,11 +39708,11 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"roughness": 1,
 			"opacity": 100,
 			"angle": 0,
-			"x": 1635.9423641635367,
+			"x": 1634.1823543979117,
 			"y": 1508.3894540674921,
 			"strokeColor": "#1e1e1e",
 			"backgroundColor": "#ffc9c9",
-			"width": 313.34405517578125,
+			"width": 316.86407470703125,
 			"height": 45,
 			"seed": 1767784400,
 			"groupIds": [],
@@ -39722,12 +39763,14 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"startBinding": {
 				"elementId": "9jnEhr7o7LFKhlA4dx1yC",
 				"focus": 0.046637932398261625,
-				"gap": 7.196060852429582
+				"gap": 7.196060852429582,
+				"fixedPoint": null
 			},
 			"endBinding": {
 				"elementId": "k3GfQ5s0rLmf-3GNaQRWY",
 				"focus": 0.4504382550829794,
-				"gap": 10.51062625834902
+				"gap": 10.51062625834902,
+				"fixedPoint": null
 			},
 			"lastCommittedPoint": null,
 			"startArrowhead": null,
@@ -41703,7 +41746,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"y": 1878.541549986678,
 			"strokeColor": "#000000",
 			"backgroundColor": "#868e96",
-			"width": 61.56086730957031,
+			"width": 64.32633972167969,
 			"height": 74.07020504204003,
 			"seed": 1177037277,
 			"groupIds": [
@@ -42241,12 +42284,14 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"startBinding": {
 				"elementId": "8oCqLmXGJC2lKi1bdcAal",
 				"focus": 0.25583292108872285,
-				"gap": 7.170786621891239
+				"gap": 7.170786621891239,
+				"fixedPoint": null
 			},
 			"endBinding": {
 				"elementId": "CIZ3KHZiCgVH_A30YNoaP",
 				"focus": 0.059196891191707304,
-				"gap": 1
+				"gap": 1,
+				"fixedPoint": null
 			},
 			"lastCommittedPoint": null,
 			"startArrowhead": null,
@@ -42391,7 +42436,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"y": 2818.485994431124,
 			"strokeColor": "#000000",
 			"backgroundColor": "#868e96",
-			"width": 54.15460205078125,
+			"width": 54.920074462890625,
 			"height": 74.07020504204003,
 			"seed": 1340199965,
 			"groupIds": [
@@ -43598,7 +43643,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"y": 2758.57439833451,
 			"strokeColor": "#1e1e1e",
 			"backgroundColor": "transparent",
-			"width": 308.40997314453125,
+			"width": 310.1359558105469,
 			"height": 65.55555555555588,
 			"seed": 1312709843,
 			"groupIds": [],
@@ -43641,7 +43686,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"y": 1678.5743983345092,
 			"strokeColor": "#1e1e1e",
 			"backgroundColor": "transparent",
-			"width": 308.40997314453125,
+			"width": 310.1359558105469,
 			"height": 65.55555555555588,
 			"seed": 248722205,
 			"groupIds": [],
@@ -44051,11 +44096,11 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"roughness": 1,
 			"opacity": 100,
 			"angle": 0,
-			"x": 64.84057426203401,
+			"x": 64.53056907404573,
 			"y": -2094.959335968531,
 			"strokeColor": "#1e1e1e",
 			"backgroundColor": "#a5d8ff",
-			"width": 83.45993041992188,
+			"width": 84.07994079589844,
 			"height": 25,
 			"seed": 1498720720,
 			"groupIds": [
@@ -44290,7 +44335,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"y": -1861.460592846406,
 			"strokeColor": "#228be6",
 			"backgroundColor": "#ffffff",
-			"width": 17.283935546875,
+			"width": 18,
 			"height": 28.48914565861645,
 			"seed": 1121768400,
 			"groupIds": [
@@ -44333,7 +44378,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"y": -1861.460592846406,
 			"strokeColor": "#d9480f",
 			"backgroundColor": "#ffffff",
-			"width": 12.136001586914062,
+			"width": 13,
 			"height": 28.48914565861645,
 			"seed": 1840372176,
 			"groupIds": [
@@ -44376,7 +44421,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"y": -1861.460592846406,
 			"strokeColor": "#fab005",
 			"backgroundColor": "#ffffff",
-			"width": 12.136001586914062,
+			"width": 13,
 			"height": 28.48914565861645,
 			"seed": 1140203472,
 			"groupIds": [
@@ -44419,7 +44464,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"y": -1861.460592846406,
 			"strokeColor": "#228be6",
 			"backgroundColor": "#ffffff",
-			"width": 10.9749755859375,
+			"width": 11,
 			"height": 28.489145658616444,
 			"seed": 365012432,
 			"groupIds": [
@@ -44462,7 +44507,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"y": -1861.460592846406,
 			"strokeColor": "#5c940d",
 			"backgroundColor": "#ffffff",
-			"width": 5.7613067626953125,
+			"width": 6,
 			"height": 28.489145658616444,
 			"seed": 1881959376,
 			"groupIds": [
@@ -44505,7 +44550,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"y": -1861.460592846406,
 			"strokeColor": "#d9480f",
 			"backgroundColor": "#ffffff",
-			"width": 11.982650756835938,
+			"width": 13,
 			"height": 28.48914565861645,
 			"seed": 2102292944,
 			"groupIds": [
@@ -44660,11 +44705,11 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"roughness": 1,
 			"opacity": 80,
 			"angle": 0,
-			"x": -215.83007573923214,
+			"x": -216.62077855905636,
 			"y": -1725.4337864523843,
 			"strokeColor": "#000000",
 			"backgroundColor": "#ced4da",
-			"width": 85.75489807128906,
+			"width": 87.3363037109375,
 			"height": 38.34606664685638,
 			"seed": 1843333584,
 			"groupIds": [
@@ -45657,7 +45702,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"y": -1156.4819171560414,
 			"strokeColor": "#000000",
 			"backgroundColor": "transparent",
-			"width": 111.43988037109375,
+			"width": 111.55989074707031,
 			"height": 24,
 			"seed": 1430690256,
 			"groupIds": [
@@ -45976,7 +46021,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"y": 3048.518082843963,
 			"strokeColor": "#000000",
 			"backgroundColor": "transparent",
-			"width": 111.43988037109375,
+			"width": 111.55989074707031,
 			"height": 24,
 			"seed": 466030109,
 			"groupIds": [
@@ -47072,7 +47117,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"y": -1084.2409820483072,
 			"strokeColor": "#1e1e1e",
 			"backgroundColor": "transparent",
-			"width": 83.45989990234375,
+			"width": 85.11991882324219,
 			"height": 25,
 			"seed": 647423651,
 			"groupIds": [],
@@ -48533,7 +48578,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"y": -1065.207354595276,
 			"strokeColor": "#1e1e1e",
 			"backgroundColor": "transparent",
-			"width": 92.31990051269531,
+			"width": 93.21990966796875,
 			"height": 25,
 			"seed": 1972691277,
 			"groupIds": [],
@@ -48871,7 +48916,8 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"startBinding": {
 				"elementId": "skpL5n4PZCRP6TGZBuB-B",
 				"focus": 2.376120507492377,
-				"gap": 13.507291055437776
+				"gap": 13.507291055437776,
+				"fixedPoint": null
 			},
 			"endBinding": null,
 			"lastCommittedPoint": null,
@@ -49484,7 +49530,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"y": -216.9678649780517,
 			"strokeColor": "#000000",
 			"backgroundColor": "#7950f288",
-			"width": 28.070068359375,
+			"width": 28.4267578125,
 			"height": 18,
 			"seed": 945731024,
 			"groupIds": [
@@ -49737,7 +49783,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"y": -182.3398046123466,
 			"strokeColor": "#000000",
 			"backgroundColor": "transparent",
-			"width": 114.59986877441406,
+			"width": 115.65988159179688,
 			"height": 24,
 			"seed": 1534073296,
 			"groupIds": [
@@ -49774,11 +49820,11 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"roughness": 1,
 			"opacity": 100,
 			"angle": 0,
-			"x": -1323.3549996985907,
+			"x": -1323.9850045814032,
 			"y": -184.5901142528851,
 			"strokeColor": "#000000",
 			"backgroundColor": "transparent",
-			"width": 98.65989685058594,
+			"width": 99.91990661621094,
 			"height": 48,
 			"seed": 1609326544,
 			"groupIds": [
@@ -58792,12 +58838,14 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"startBinding": {
 				"elementId": "wyLvbriDv-qpZQd0akrQh",
 				"focus": -3.6661018497644355,
-				"gap": 15.401633216402388
+				"gap": 15.401633216402388,
+				"fixedPoint": null
 			},
 			"endBinding": {
 				"elementId": "5nZKrmCd4Rd2wK7BRGBck",
 				"focus": -0.790716487390828,
-				"gap": 1
+				"gap": 1,
+				"fixedPoint": null
 			},
 			"lastCommittedPoint": null,
 			"startArrowhead": null,
@@ -58844,7 +58892,8 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"endBinding": {
 				"elementId": "yX06EfIodYhOdO2uR_VYr",
 				"focus": -9.182756252385667,
-				"gap": 12.12443028098479
+				"gap": 12.12443028098479,
+				"fixedPoint": null
 			},
 			"lastCommittedPoint": null,
 			"startArrowhead": null,
@@ -58890,12 +58939,14 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"startBinding": {
 				"elementId": "4T5Db-8dniaVuAHzmT-jI",
 				"focus": -10.047045438192455,
-				"gap": 13.937066313034999
+				"gap": 13.937066313034999,
+				"fixedPoint": null
 			},
 			"endBinding": {
 				"elementId": "Uca5F05cWKo-TfGubQ3R_",
 				"focus": -2.1152184609516507,
-				"gap": 14.607724665086474
+				"gap": 14.607724665086474,
+				"fixedPoint": null
 			},
 			"lastCommittedPoint": null,
 			"startArrowhead": null,
@@ -58942,7 +58993,8 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"endBinding": {
 				"elementId": "8I8wRoP9sIrM_wrcvcrNC",
 				"focus": 1.3002328031115624,
-				"gap": 11.622630458396259
+				"gap": 11.622630458396259,
+				"fixedPoint": null
 			},
 			"lastCommittedPoint": null,
 			"startArrowhead": null,
@@ -59785,11 +59837,11 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"roughness": 1,
 			"opacity": 100,
 			"angle": 0,
-			"x": -1137.611006188077,
+			"x": -1138.1410125967684,
 			"y": -1009.467976324705,
 			"strokeColor": "#000000",
 			"backgroundColor": "transparent",
-			"width": 141.73983764648438,
+			"width": 142.7998504638672,
 			"height": 96,
 			"seed": 460533187,
 			"groupIds": [
@@ -61311,11 +61363,11 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"roughness": 1,
 			"opacity": 100,
 			"angle": 0,
-			"x": -462.2649414876438,
+			"x": -462.7949478963352,
 			"y": -770.6787540773267,
 			"strokeColor": "#000000",
 			"backgroundColor": "transparent",
-			"width": 141.73983764648438,
+			"width": 142.7998504638672,
 			"height": 48,
 			"seed": 173598563,
 			"groupIds": [
@@ -62162,11 +62214,11 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"roughness": 1,
 			"opacity": 100,
 			"angle": 0,
-			"x": -467.13499409191513,
+			"x": -467.2050014161339,
 			"y": -908.8164556599509,
 			"strokeColor": "#000000",
 			"backgroundColor": "transparent",
-			"width": 143.43983459472656,
+			"width": 143.57984924316406,
 			"height": 48,
 			"seed": 1239385251,
 			"groupIds": [
@@ -62837,11 +62889,11 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"roughness": 1,
 			"opacity": 100,
 			"angle": 0,
-			"x": 134.49761402144497,
+			"x": 133.96760761275357,
 			"y": -654.4220402101394,
 			"strokeColor": "#000000",
 			"backgroundColor": "transparent",
-			"width": 141.73983764648438,
+			"width": 142.7998504638672,
 			"height": 48,
 			"seed": 1164702627,
 			"groupIds": [
@@ -63688,11 +63740,11 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"roughness": 1,
 			"opacity": 100,
 			"angle": 0,
-			"x": 294.2575314227539,
+			"x": 294.18752409853516,
 			"y": -655.9420485728974,
 			"strokeColor": "#000000",
 			"backgroundColor": "transparent",
-			"width": 143.43983459472656,
+			"width": 143.57984924316406,
 			"height": 48,
 			"seed": 1353449699,
 			"groupIds": [
@@ -64648,7 +64700,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"y": -566.4189203879878,
 			"strokeColor": "#000000",
 			"backgroundColor": "transparent",
-			"width": 104.39988708496094,
+			"width": 105.79989624023438,
 			"height": 24,
 			"seed": 1668323597,
 			"groupIds": [
@@ -64689,7 +64741,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"y": -574.4068543494516,
 			"strokeColor": "#1e1e1e",
 			"backgroundColor": "transparent",
-			"width": 103.55982971191406,
+			"width": 106.76040649414062,
 			"height": 24.231464479676248,
 			"seed": 14681859,
 			"groupIds": [
@@ -64919,7 +64971,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"y": -238.75647463496364,
 			"strokeColor": "#000000",
 			"backgroundColor": "transparent",
-			"width": 61.69993591308594,
+			"width": 63.099945068359375,
 			"height": 25,
 			"seed": 2063056621,
 			"groupIds": [
@@ -65177,7 +65229,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"y": 1860.6759338853365,
 			"strokeColor": "#000000",
 			"backgroundColor": "transparent",
-			"width": 61.69993591308594,
+			"width": 63.099945068359375,
 			"height": 25,
 			"seed": 1166431229,
 			"groupIds": [
@@ -65435,7 +65487,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"y": 1863.675933885337,
 			"strokeColor": "#000000",
 			"backgroundColor": "transparent",
-			"width": 61.69993591308594,
+			"width": 63.099945068359375,
 			"height": 25,
 			"seed": 544150675,
 			"groupIds": [
@@ -65663,7 +65715,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"y": -391.9242621527778,
 			"strokeColor": "#1e1e1e",
 			"backgroundColor": "transparent",
-			"width": 492.7593994140625,
+			"width": 496.57940673828125,
 			"height": 50,
 			"seed": 1963856259,
 			"groupIds": [],
@@ -66462,11 +66514,11 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"roughness": 1,
 			"opacity": 100,
 			"angle": 0,
-			"x": 1259.0750368914466,
+			"x": 1257.4744509539466,
 			"y": 2981.716072861551,
 			"strokeColor": "#000000",
 			"backgroundColor": "transparent",
-			"width": 250.3207550048828,
+			"width": 253.5219268798828,
 			"height": 35.31727115564311,
 			"seed": 69048989,
 			"groupIds": [
@@ -67707,7 +67759,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"y": 2978.656422523722,
 			"strokeColor": "#000000",
 			"backgroundColor": "transparent",
-			"width": 101.5399169921875,
+			"width": 101.99992370605469,
 			"height": 24,
 			"seed": 683830077,
 			"groupIds": [
@@ -67743,11 +67795,11 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"roughness": 1,
 			"opacity": 100,
 			"angle": 0,
-			"x": -289.9293498625782,
+			"x": -290.0593547453907,
 			"y": 1941.7322760208535,
 			"strokeColor": "#000000",
 			"backgroundColor": "transparent",
-			"width": 107.67988586425781,
+			"width": 107.93989562988281,
 			"height": 24,
 			"seed": 8320595,
 			"groupIds": [
@@ -68125,7 +68177,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"y": 1781.2929228655344,
 			"strokeColor": "#1e1e1e",
 			"backgroundColor": "transparent",
-			"width": 66.83992004394531,
+			"width": 68.23992919921875,
 			"height": 25,
 			"seed": 1875194621,
 			"groupIds": [],
@@ -68168,7 +68220,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"y": 1924.929286501898,
 			"strokeColor": "#1e1e1e",
 			"backgroundColor": "transparent",
-			"width": 43.5799560546875,
+			"width": 43.65997314453125,
 			"height": 25,
 			"seed": 1861665107,
 			"groupIds": [],
@@ -68386,11 +68438,11 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"roughness": 1,
 			"opacity": 100,
 			"angle": 0,
-			"x": 1783.8819384378273,
+			"x": 1783.334872702964,
 			"y": 1997.208969586811,
 			"strokeColor": "#000000",
 			"backgroundColor": "#228be6",
-			"width": 62.41792297363281,
+			"width": 63.512054443359375,
 			"height": 15.79929981138164,
 			"seed": 698992307,
 			"groupIds": [
@@ -68570,11 +68622,11 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"roughness": 1,
 			"opacity": 100,
 			"angle": 0,
-			"x": 1943.8819384378273,
+			"x": 1943.334872702964,
 			"y": 1997.208969586811,
 			"strokeColor": "#000000",
 			"backgroundColor": "#228be6",
-			"width": 62.41792297363281,
+			"width": 63.512054443359375,
 			"height": 15.79929981138164,
 			"seed": 1828213213,
 			"groupIds": [
@@ -68611,11 +68663,11 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"roughness": 1,
 			"opacity": 100,
 			"angle": 0,
-			"x": 1440.2524824440798,
+			"x": 1440.1924772560915,
 			"y": 2053.338584642788,
 			"strokeColor": "#000000",
 			"backgroundColor": "transparent",
-			"width": 100.53990173339844,
+			"width": 100.659912109375,
 			"height": 24,
 			"seed": 165166493,
 			"groupIds": [
@@ -70150,7 +70202,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"y": -62.2240745838468,
 			"strokeColor": "#000000",
 			"backgroundColor": "transparent",
-			"width": 101.5399169921875,
+			"width": 101.99992370605469,
 			"height": 24,
 			"seed": 222915804,
 			"groupIds": [
@@ -70190,7 +70242,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"y": 90.08361772384637,
 			"strokeColor": "#000000",
 			"backgroundColor": "transparent",
-			"width": 76.61991882324219,
+			"width": 77.679931640625,
 			"height": 24,
 			"seed": 1321929060,
 			"groupIds": [
@@ -71062,11 +71114,11 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"roughness": 1,
 			"opacity": 100,
 			"angle": 0,
-			"x": 36.80818659658621,
+			"x": 36.47817713613699,
 			"y": 94.06733480078537,
 			"strokeColor": "#000000",
 			"backgroundColor": "transparent",
-			"width": 66.09992980957031,
+			"width": 66.75994873046875,
 			"height": 24,
 			"seed": 1807172572,
 			"groupIds": [
@@ -72179,7 +72231,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"y": -423.10871098382387,
 			"strokeColor": "#000000",
 			"backgroundColor": "transparent",
-			"width": 99.24412536621094,
+			"width": 99.42955017089844,
 			"height": 22.663705160802838,
 			"seed": 755599776,
 			"groupIds": [
@@ -73499,7 +73551,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"y": -419.33978798815184,
 			"strokeColor": "#000000",
 			"backgroundColor": "transparent",
-			"width": 95.67312622070312,
+			"width": 96.79200744628906,
 			"height": 22.006097114207154,
 			"seed": 920967584,
 			"groupIds": [
@@ -73536,11 +73588,11 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"roughness": 1,
 			"opacity": 100,
 			"angle": 0,
-			"x": -580.4764657841366,
+			"x": -581.0235696659726,
 			"y": -421.44043516783967,
 			"strokeColor": "#000000",
 			"backgroundColor": "transparent",
-			"width": 99.05796813964844,
+			"width": 100.15217590332031,
 			"height": 21.744737458101067,
 			"seed": 1683531168,
 			"groupIds": [
@@ -73693,12 +73745,14 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"startBinding": {
 				"elementId": "qFRukqJVhjBKjqg2Sfnvw",
 				"focus": -4.263285992098528,
-				"gap": 14.095292363866427
+				"gap": 14.095292363866427,
+				"fixedPoint": null
 			},
 			"endBinding": {
 				"elementId": "hFlXMLC1hidCItImW1OQz",
 				"focus": 1.4950557318415414,
-				"gap": 8.300934587509474
+				"gap": 8.300934587509474,
+				"fixedPoint": null
 			},
 			"lastCommittedPoint": null,
 			"startArrowhead": null,
@@ -73762,12 +73816,14 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"startBinding": {
 				"elementId": "hFlXMLC1hidCItImW1OQz",
 				"focus": -1.5014921565015438,
-				"gap": 7.994717944854138
+				"gap": 7.994717944854138,
+				"fixedPoint": null
 			},
 			"endBinding": {
 				"elementId": "hFlXMLC1hidCItImW1OQz",
 				"gap": 14.534447891051393,
-				"focus": 1.478257871739441
+				"focus": 1.478257871739441,
+				"fixedPoint": null
 			},
 			"lastCommittedPoint": null,
 			"startArrowhead": null,
@@ -73831,12 +73887,14 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"startBinding": {
 				"elementId": "hFlXMLC1hidCItImW1OQz",
 				"focus": -1.5334048395146227,
-				"gap": 8.42304326165881
+				"gap": 8.42304326165881,
+				"fixedPoint": null
 			},
 			"endBinding": {
 				"elementId": "qFRukqJVhjBKjqg2Sfnvw",
 				"focus": 4.21648277872871,
-				"gap": 14.323627615782637
+				"gap": 14.323627615782637,
+				"fixedPoint": null
 			},
 			"lastCommittedPoint": null,
 			"startArrowhead": null,
@@ -73900,12 +73958,14 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"startBinding": {
 				"elementId": "hFlXMLC1hidCItImW1OQz",
 				"focus": -1.5202105672697381,
-				"gap": 8.197478625505337
+				"gap": 8.197478625505337,
+				"fixedPoint": null
 			},
 			"endBinding": {
 				"elementId": "hFlXMLC1hidCItImW1OQz",
 				"focus": 1.5364855559035704,
-				"gap": 8.964568915276539
+				"gap": 8.964568915276539,
+				"fixedPoint": null
 			},
 			"lastCommittedPoint": null,
 			"startArrowhead": null,
@@ -74102,7 +74162,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"y": 87.95314997553436,
 			"strokeColor": "#1e1e1e",
 			"backgroundColor": "transparent",
-			"width": 134.6024932861328,
+			"width": 136.37879943847656,
 			"height": 23.55125902160851,
 			"seed": 916918902,
 			"groupIds": [
@@ -74736,7 +74796,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"y": -367.6032698259456,
 			"strokeColor": "#000000",
 			"backgroundColor": "#ffcf66",
-			"width": 74.27227783203125,
+			"width": 75.23823547363281,
 			"height": 55.003809666895634,
 			"seed": 990210085,
 			"groupIds": [
@@ -75216,7 +75276,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"y": -437.4303388154487,
 			"strokeColor": "#000000",
 			"backgroundColor": "transparent",
-			"width": 27.01885986328125,
+			"width": 27.498214721679688,
 			"height": 10.246794778946626,
 			"seed": 1036908709,
 			"groupIds": [
@@ -75550,7 +75610,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"y": -107.4004596962643,
 			"strokeColor": "#000000",
 			"backgroundColor": "transparent",
-			"width": 92.0501708984375,
+			"width": 92.43721008300781,
 			"height": 35.96499897442564,
 			"seed": 1974698981,
 			"groupIds": [
@@ -75623,16 +75683,16 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 		"currentItemTextAlign": "left",
 		"currentItemStartArrowhead": null,
 		"currentItemEndArrowhead": "arrow",
-		"scrollX": 1694.5822846358437,
-		"scrollY": 1577.30612648459,
+		"scrollX": 4053.757422242377,
+		"scrollY": 3468.515216971271,
 		"zoom": {
-			"value": 0.5499999999999999
+			"value": 0.15000000000000002
 		},
 		"currentItemRoundness": "round",
 		"gridSize": null,
 		"gridColor": {
-			"Bold": "#C9C9C9FF",
-			"Regular": "#EDEDEDFF"
+			"Bold": "#C9C9C9",
+			"Regular": "#EDEDED"
 		},
 		"currentStrokeOptions": null,
 		"previousGridSize": null,
