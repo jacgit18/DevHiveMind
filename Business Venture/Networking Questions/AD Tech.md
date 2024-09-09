@@ -17,7 +17,7 @@ dg-publish:
 - [ ] If you could ban one type of online ad forever, what would it be?
 - [ ] What’s the weirdest data point you’ve seen used for targeting ads?  
 - [ ] Ever had an ad campaign go hilariously wrong? Like, completely missed the mark?
-- [ ] Is there any part of your job where you just think, ‘This is basically black magic’? Like, it works, but you don’t know why?
+- [ ] Is there any part of your job where you think, ‘This works, but I’m not entirely sure how’?
 
 ## Disruptors
 
