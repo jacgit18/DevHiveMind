@@ -24,10 +24,6 @@
 		{"id":"2cd711358110c867","type":"text","text":"## Subject Matter","x":-613,"y":90,"width":218,"height":120},
 		{"id":"1686a8e8c9294fa9","type":"text","text":"# Response Type","x":-595,"y":350,"width":250,"height":100},
 		{"id":"b566244e13136769","type":"text","text":"## Questions","x":-613,"y":-310,"width":250,"height":60},
-		{"id":"661ef75e4e94c7f3","type":"text","text":"Innovations","x":888,"y":-820,"width":250,"height":50},
-		{"id":"bb78eae5a6bf7eae","type":"text","text":"Annoying","x":888,"y":-750,"width":250,"height":50},
-		{"id":"f81005f58f16050a","type":"text","text":"Change","x":888,"y":-674,"width":250,"height":50},
-		{"id":"ab105850932928d9","type":"text","text":"Trends","x":888,"y":-585,"width":250,"height":50},
 		{"id":"af7c8d14e55bb664","type":"text","text":"Past","x":-118,"y":-595,"width":250,"height":60},
 		{"id":"9bdc716c420dd4ea","type":"text","text":"Future","x":-118,"y":-700,"width":250,"height":60},
 		{"id":"10ec579d28dfb079","type":"text","text":"Duration","x":-118,"y":-795,"width":250,"height":60},
@@ -44,7 +40,13 @@
 		{"id":"0ed05044dd9eff10","type":"text","text":"Influence","x":1314,"y":-280,"width":250,"height":60},
 		{"id":"d953b6a238b7cf0f","type":"text","text":"Inspiration","x":943,"y":-395,"width":250,"height":60},
 		{"id":"9c1a3d493afdfe38","type":"text","text":"Best Advice","x":1068,"y":-475,"width":250,"height":60},
-		{"id":"a3da3931dc0edd70","x":891,"y":-1415,"width":349,"height":60,"type":"text","text":"General Opinion"}
+		{"id":"a3da3931dc0edd70","type":"text","text":"General Opinion","x":891,"y":-1415,"width":349,"height":60,"color":"2"},
+		{"id":"ab105850932928d9","type":"text","text":"Trends","x":818,"y":-852,"width":250,"height":50},
+		{"id":"f81005f58f16050a","type":"text","text":"Change","x":943,"y":-595,"width":250,"height":50},
+		{"id":"bb78eae5a6bf7eae","type":"text","text":"Annoying","x":1240,"y":-690,"width":250,"height":50},
+		{"id":"661ef75e4e94c7f3","type":"text","text":"Innovations","x":1115,"y":-785,"width":250,"height":50},
+		{"id":"6b115445e8d0eb74","type":"text","text":"Quantitative","x":1460,"y":-1500,"width":250,"height":60},
+		{"id":"6f84247c922d948d","type":"text","text":"Qualitative","x":1755,"y":-1500,"width":250,"height":60}
 	],
 	"edges":[
 		{"id":"9f9ef53be82a4e75","fromNode":"467bde0b1c7b5f43","fromSide":"right","toNode":"6562d828d1cd5b30","toSide":"left","color":"1"},
@@ -80,6 +82,13 @@
 		{"id":"bd0775bca2c92179","fromNode":"dd5838e0710d36a6","fromSide":"right","toNode":"a3ae0b87e4e8dd52","toSide":"left"},
 		{"id":"fd1a850b21e20bed","fromNode":"30008afadff5c2b3","fromSide":"right","toNode":"d953b6a238b7cf0f","toSide":"left"},
 		{"id":"b1ede0a06832cc9b","fromNode":"30008afadff5c2b3","fromSide":"right","toNode":"9c1a3d493afdfe38","toSide":"left"},
-		{"id":"98ca9a5c3eb3bd16","fromNode":"30008afadff5c2b3","fromSide":"right","toNode":"0ed05044dd9eff10","toSide":"left"}
+		{"id":"98ca9a5c3eb3bd16","fromNode":"30008afadff5c2b3","fromSide":"right","toNode":"0ed05044dd9eff10","toSide":"left"},
+		{"id":"33e7163e9e4add2d","fromNode":"a08b59eff4ba9f21","fromSide":"right","toNode":"a3da3931dc0edd70","toSide":"left"},
+		{"id":"e8270b7842a0d58d","fromNode":"a3da3931dc0edd70","fromSide":"bottom","toNode":"84251c119fed38f0","toSide":"top","color":"2"},
+		{"id":"481788f5b4f6315a","fromNode":"a3da3931dc0edd70","fromSide":"bottom","toNode":"46a6e94ad3169848","toSide":"top","color":"2"},
+		{"id":"8ea3d80dbb12d03f","fromNode":"a3da3931dc0edd70","fromSide":"bottom","toNode":"ab105850932928d9","toSide":"top","color":"2"},
+		{"id":"28e573384beb3686","fromNode":"a3da3931dc0edd70","fromSide":"bottom","toNode":"f81005f58f16050a","toSide":"bottom","color":"2"},
+		{"id":"d9dee0127ecea8f1","fromNode":"db86832e0e702a7e","fromSide":"top","toNode":"6b115445e8d0eb74","toSide":"bottom"},
+		{"id":"e529d3ee3869ba87","fromNode":"db86832e0e702a7e","fromSide":"top","toNode":"6f84247c922d948d","toSide":"bottom"}
 	]
 }
