@@ -45,7 +45,7 @@
 		{"id":"f81005f58f16050a","type":"text","text":"Change","x":943,"y":-595,"width":250,"height":50},
 		{"id":"bb78eae5a6bf7eae","type":"text","text":"Annoying","x":1240,"y":-690,"width":250,"height":50},
 		{"id":"661ef75e4e94c7f3","type":"text","text":"Innovations","x":1115,"y":-785,"width":250,"height":50},
-		{"id":"6b115445e8d0eb74","type":"text","text":"Quantitative","x":1460,"y":-1500,"width":250,"height":60},
+		{"id":"6b115445e8d0eb74","type":"text","text":"[[5 V's of Data#Quantitative & Qualitative Data |Quantitative]]","x":1460,"y":-1500,"width":250,"height":60},
 		{"id":"6f84247c922d948d","type":"text","text":"Qualitative","x":1755,"y":-1500,"width":250,"height":60}
 	],
 	"edges":[
@@ -87,7 +87,7 @@
 		{"id":"e8270b7842a0d58d","fromNode":"a3da3931dc0edd70","fromSide":"bottom","toNode":"84251c119fed38f0","toSide":"top","color":"2"},
 		{"id":"481788f5b4f6315a","fromNode":"a3da3931dc0edd70","fromSide":"bottom","toNode":"46a6e94ad3169848","toSide":"top","color":"2"},
 		{"id":"8ea3d80dbb12d03f","fromNode":"a3da3931dc0edd70","fromSide":"bottom","toNode":"ab105850932928d9","toSide":"top","color":"2"},
-		{"id":"28e573384beb3686","fromNode":"a3da3931dc0edd70","fromSide":"bottom","toNode":"f81005f58f16050a","toSide":"bottom","color":"2"},
+		{"id":"28e573384beb3686","fromNode":"a3da3931dc0edd70","fromSide":"bottom","toNode":"f81005f58f16050a","toSide":"top","color":"2"},
 		{"id":"d9dee0127ecea8f1","fromNode":"db86832e0e702a7e","fromSide":"top","toNode":"6b115445e8d0eb74","toSide":"bottom"},
 		{"id":"e529d3ee3869ba87","fromNode":"db86832e0e702a7e","fromSide":"top","toNode":"6f84247c922d948d","toSide":"bottom"}
 	]
