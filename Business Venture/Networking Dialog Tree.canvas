@@ -9,8 +9,6 @@
 		{"id":"30008afadff5c2b3","type":"text","text":"Goals/Dreams","x":-94,"y":-877,"width":250,"height":50},
 		{"id":"4820510c4c2f8a1d","type":"text","text":"### What ","x":-335,"y":-150,"width":141,"height":60},
 		{"id":"e50581984adb3ddd","type":"text","text":"### Why ","x":-170,"y":-150,"width":125,"height":60},
-		{"id":"2229177d5cdcfe40","type":"text","text":"has","x":-327,"y":-50,"width":126,"height":50},
-		{"id":"a6f64b2a8c663dc8","type":"text","text":"### Startup ","x":-368,"y":137,"width":250,"height":60},
 		{"id":"eec1dd3784609963","type":"text","text":"### Who ","x":-14,"y":-150,"width":159,"height":60},
 		{"id":"2d775b59c3e81ca2","type":"text","text":"### When ","x":172,"y":-150,"width":156,"height":60},
 		{"id":"54fe5dab06bce950","type":"text","text":"### Where ","x":361,"y":-150,"width":159,"height":60},
@@ -46,7 +44,10 @@
 		{"id":"bb78eae5a6bf7eae","type":"text","text":"Annoying","x":1240,"y":-690,"width":250,"height":50},
 		{"id":"661ef75e4e94c7f3","type":"text","text":"Innovations","x":1115,"y":-785,"width":250,"height":50},
 		{"id":"6b115445e8d0eb74","type":"text","text":"[[5 V's of Data#Quantitative & Qualitative Data |Quantitative]]","x":1460,"y":-1500,"width":250,"height":60},
-		{"id":"6f84247c922d948d","type":"text","text":"Qualitative","x":1755,"y":-1500,"width":250,"height":60}
+		{"id":"6f84247c922d948d","type":"text","text":"Qualitative","x":1755,"y":-1500,"width":250,"height":60},
+		{"id":"bfdaacc1be667502","x":-335,"y":90,"width":476,"height":104,"type":"text","text":"ask 1 or 2 [[Industry Agnostic]] questions "},
+		{"id":"55dc7bd05c1895ea","x":-335,"y":-240,"width":204,"height":60,"type":"text","text":"# Broad"},
+		{"id":"b0d0855c54c4ff3e","type":"text","text":"# Specific","x":626,"y":-240,"width":271,"height":60}
 	],
 	"edges":[
 		{"id":"9f9ef53be82a4e75","fromNode":"467bde0b1c7b5f43","fromSide":"right","toNode":"6562d828d1cd5b30","toSide":"left","color":"1"},
@@ -89,6 +90,8 @@
 		{"id":"8ea3d80dbb12d03f","fromNode":"a3da3931dc0edd70","fromSide":"bottom","toNode":"ab105850932928d9","toSide":"top","color":"2"},
 		{"id":"28e573384beb3686","fromNode":"a3da3931dc0edd70","fromSide":"bottom","toNode":"f81005f58f16050a","toSide":"top","color":"2"},
 		{"id":"d9dee0127ecea8f1","fromNode":"db86832e0e702a7e","fromSide":"top","toNode":"6b115445e8d0eb74","toSide":"bottom"},
-		{"id":"e529d3ee3869ba87","fromNode":"db86832e0e702a7e","fromSide":"top","toNode":"6f84247c922d948d","toSide":"bottom"}
+		{"id":"e529d3ee3869ba87","fromNode":"db86832e0e702a7e","fromSide":"top","toNode":"6f84247c922d948d","toSide":"bottom"},
+		{"id":"91c2539ff4b7147b","fromNode":"4820510c4c2f8a1d","fromSide":"bottom","toNode":"bfdaacc1be667502","toSide":"top"},
+		{"id":"3e6f29d61138e6fc","fromNode":"55dc7bd05c1895ea","fromSide":"right","toNode":"b0d0855c54c4ff3e","toSide":"left"}
 	]
 }
