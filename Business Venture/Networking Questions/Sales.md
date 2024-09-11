@@ -19,8 +19,6 @@ dg-publish:
 - [ ] What role does data play in your sales strategies? How do you analyze sales performance?
 - [ ] How do you handle customer objections or concerns during the sales process?
 
-## Disruptors
-
 
 ## Other Questions  
 - [ ]  What’s the most unusual way you’ve closed a deal?

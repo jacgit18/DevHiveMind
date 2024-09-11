@@ -19,7 +19,6 @@ dg-publish:
 - [ ] What tools do you use for managing business development activities, and how do they impact your effectiveness?
 - [ ] How do you measure the success of a business development initiative, and what metrics are most important?
 
-## Disruptors
 
 
 ## Other Questions  

@@ -18,16 +18,6 @@ dg-publish:
 - [ ] How do you ensure that the messaging in your marketing aligns with the technical capabilities of the product?
 - [ ] How is AI currently being utilized in your marketing strategies, and what benefits have you seen?
 - [ ] How do you use data analytics to shape your marketing strategies?
-## Disruptors
-- [ ] What AI tools or technologies have you found most effective for personalizing customer experiences?
-- [ ] How do you ensure that AI-driven marketing campaigns are ethical and free from bias?
-- [ ] What challenges do you face when integrating AI with existing marketing systems?
-- [ ] How do you measure the ROI of AI-powered marketing initiatives compared to traditional methods?
-- [ ] Can you share an example of how AI has improved customer segmentation or targeting in your campaigns?
-- [ ] What role does AI play in analyzing customer feedback and adjusting marketing strategies?
-- [ ] How do you keep up with rapidly evolving AI technologies in marketing and incorporate them into your strategy?
-- [ ] What are the most exciting AI trends you see shaping the future of digital marketing?
-- [ ] How do you balance the use of AI with maintaining a human touch in your marketing efforts?
 
 ## Other Questions  
 - [ ] What role does automation play in your marketing campaigns? Do you collaborate with engineers to build these tools?

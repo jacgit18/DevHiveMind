@@ -20,8 +20,6 @@ dg-publish:
 - [ ] What emerging data trends or technologies are currently influencing your field, and how are you adapting to them?
 
 
-## Disruptors
-
 
 ## Other Questions  
 - [ ] How do you identify and prioritize the most valuable data sources for your work?

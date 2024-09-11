@@ -23,19 +23,6 @@ dg-publish:
 - [ ] What has been the biggest challenges you've faced as a founder outside of funding?
 - [ ] How did you secure funding for your startup?
 
-
-## Disruptors
-### Data driven vc SignalFire
-- [ ] How does the Beacon platform influence your day-to-day decision-making?
-- [ ] Are there interesting trends or industries you have noticed coming up through your data?
-- [ ] What drew you to SignalFire compared to other VC firms?
-- [ ] What kind of support do you provide to founders beyond the initial investment?
-- [ ] How do you see the role of AI evolving in venture capital in the next few years?
-- [ ] What excites you most about working with early-stage companies?
-- [ ] What advice would you give to someone looking to break into venture capital today?
-- [ ] What are some of the key metrics you look for when evaluating a potential investment?
-- [ ] What’s a common characteristic you see in successful founders?
-
 ## Other Questions  
 - [ ] What’s the best advice you’ve ever received?
 - [ ] Who has the biggest influence on you in your life right now?

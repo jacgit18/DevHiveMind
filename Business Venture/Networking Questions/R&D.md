@@ -19,8 +19,6 @@ dg-publish:
 - [ ] How do you track the progress of R&D projects, and what metrics do you use to measure success?
 - [ ] How do you ensure that R&D efforts align with the company’s overall strategic goals?
 
-## Disruptors
-
 
 ## Other Questions  
 - [ ] What’s the most fun or bizarre PR campaign you’ve worked on?

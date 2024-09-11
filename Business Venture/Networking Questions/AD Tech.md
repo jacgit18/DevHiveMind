@@ -19,7 +19,7 @@ dg-publish:
 - [ ] Ever had an ad campaign go hilariously wrong? Like, completely missed the mark?
 - [ ] Is there any part of your job where you think, ‘This works, but I’m not entirely sure how’?
 
-## Disruptors
+
 
 
 ## Other Questions  

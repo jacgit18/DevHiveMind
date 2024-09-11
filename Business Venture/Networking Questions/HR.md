@@ -19,7 +19,7 @@ dg-publish:
 - [ ] How do you balance the need for technical skills with cultural fit during the recruitment process?
 - [ ] How is AI currently being used in your HR processes, and what impact has it had?
 - [ ] What future AI trends do you see having the most significant impact on HR?
-## Disruptors
+
 
 
 ## Other Questions  

@@ -16,8 +16,6 @@ dg-publish:
 #todo/Questions/TopFive 
 
 
-## Disruptors
-
 
 ## Other Questions  
 use [[Industry Agnostic]] 
