@@ -49,7 +49,10 @@
 		{"id":"55dc7bd05c1895ea","x":-335,"y":-240,"width":204,"height":60,"type":"text","text":"# Broad"},
 		{"id":"b0d0855c54c4ff3e","type":"text","text":"# Specific","x":626,"y":-240,"width":271,"height":60},
 		{"id":"2475b0ef61d0d5cc","x":780,"y":1047,"width":250,"height":112,"type":"text","text":"Just go with the flow"},
-		{"id":"4abe40b507e95ce6","x":-595,"y":1037,"width":315,"height":343,"type":"text","text":"Use a [[Disruptor Questions]] if you get this response or ask there personal opinion on something ask something that will elicit a emotion"}
+		{"id":"4abe40b507e95ce6","x":-595,"y":1037,"width":315,"height":343,"type":"text","text":"Use a [[Disruptor Questions]] if you get this response or ask there personal opinion on something ask something that will elicit a emotion"},
+		{"id":"14a67ac021187bd3","x":259,"y":90,"width":363,"height":60,"type":"text","text":"Whats your story"},
+		{"id":"892841a44f94ae19","x":130,"y":310,"width":396,"height":90,"type":"text","text":"What type of people are you trying to meet here?"},
+		{"id":"1838b80876a85f62","type":"text","text":"Is there something specific your trying to learn about?","x":312,"y":194,"width":435,"height":86}
 	],
 	"edges":[
 		{"id":"9f9ef53be82a4e75","fromNode":"467bde0b1c7b5f43","fromSide":"right","toNode":"6562d828d1cd5b30","toSide":"left","color":"1"},
@@ -96,6 +99,9 @@
 		{"id":"91c2539ff4b7147b","fromNode":"4820510c4c2f8a1d","fromSide":"bottom","toNode":"bfdaacc1be667502","toSide":"top"},
 		{"id":"3e6f29d61138e6fc","fromNode":"55dc7bd05c1895ea","fromSide":"right","toNode":"b0d0855c54c4ff3e","toSide":"left"},
 		{"id":"9f1b6008a3b5bb51","fromNode":"82340c771c56a324","fromSide":"bottom","toNode":"4abe40b507e95ce6","toSide":"top"},
-		{"id":"70dbfaf0f70155b6","fromNode":"8f5a37b43ec9d1de","fromSide":"bottom","toNode":"2475b0ef61d0d5cc","toSide":"left"}
+		{"id":"70dbfaf0f70155b6","fromNode":"8f5a37b43ec9d1de","fromSide":"bottom","toNode":"2475b0ef61d0d5cc","toSide":"left"},
+		{"id":"31a04e9c4d85b4ba","fromNode":"bfdaacc1be667502","fromSide":"right","toNode":"14a67ac021187bd3","toSide":"left"},
+		{"id":"441709d74b8a8aca","fromNode":"bfdaacc1be667502","fromSide":"right","toNode":"892841a44f94ae19","toSide":"left"},
+		{"id":"98ed9d7db95257bf","fromNode":"bfdaacc1be667502","fromSide":"right","toNode":"1838b80876a85f62","toSide":"left"}
 	]
 }
