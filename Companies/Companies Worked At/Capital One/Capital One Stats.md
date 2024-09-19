@@ -25,6 +25,11 @@ Conducted integration testing in a micro frontend architecture with Vue.js and i
 
 
 Enhanced test coverage for the "Update Citizenship" workflow across various account types, achieving a 73.51% increase in function coverage and a 14.46% increase in statement and line coverage.
+
+
+Stabilizing build
+
+
 ## Other Stuff
   
 80 to 85 test is testing standards  
