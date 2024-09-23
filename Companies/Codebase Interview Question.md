@@ -116,3 +116,83 @@ When evaluating a code base to understand its current stage and progress, you ma
 8. **Seek Feedback**  
 - Regularly ask for feedback from your supervisor and colleagues to ensure you’re meeting expectations.  
 - Use the feedback to improve your performance and adapt to the company’s working style.
+
+## Dev Questions to ask
+As a software engineer, asking the right questions about business rules is essential to understanding the underlying logic that guides application behavior. Here are some key business rules-related questions to ask:  
+  
+1. Clarification of Requirements  
+  
+What are the key business rules that need to be enforced in the system?  
+  
+Are these rules based on regulatory, organizational, or customer requirements?  
+  
+How often do business rules change, and what triggers these changes?  
+  
+  
+2. Business Rule Scope and Impact  
+  
+What is the scope of each business rule (e.g., global or specific to a feature/module)?  
+  
+What are the consequences if a business rule is violated or not implemented correctly?  
+  
+Which users or roles are affected by these business rules?  
+  
+  
+3. Inputs and Outputs  
+  
+What are the inputs and outputs required for each business rule?  
+  
+How are business rules validated? What data is used to confirm compliance?  
+  
+  
+4. Dependencies and Interactions  
+  
+Are there any dependencies between business rules or other system components?  
+  
+Do any business rules have exceptions or override conditions?  
+  
+How do business rules interact with external systems or APIs?  
+  
+  
+5. Handling Edge Cases  
+  
+How are edge cases or special conditions handled by the business rules?  
+  
+Are there any fallback mechanisms if certain data or conditions aren't met?  
+  
+  
+6. Monitoring and Auditing  
+  
+How is compliance with business rules monitored or logged?  
+  
+Is there an audit trail for when business rules are enforced or modified?  
+  
+  
+7. Performance and Scalability  
+  
+How will the enforcement of business rules affect system performance?  
+  
+Are there specific rules that might cause bottlenecks or increase complexity?  
+  
+  
+8. Testing and Validation  
+  
+What tests are in place to ensure business rules are implemented correctly?  
+  
+How are business rules expected to behave under different scenarios (e.g., heavy loads or failure conditions)?  
+  
+  
+9. Future Changes and Maintenance  
+  
+- How flexible are the business rules to future changes? Are there any planned updates?  
+  
+- What is the process for modifying or deprecating business rules?  
+  
+  
+10. Ownership and Responsibility  
+  
+- Who owns the business rules and is responsible for maintaining them?  
+  
+- How should developers communicate with stakeholders if changes or clarifications to business rules are needed?  
+  
+  
