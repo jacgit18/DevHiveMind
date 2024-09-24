@@ -27,7 +27,12 @@ Conducted integration testing in a micro frontend architecture with Vue.js and i
 Enhanced test coverage for the "Update Citizenship" workflow across various account types, achieving a 73.51% increase in function coverage and a 14.46% increase in statement and line coverage.
 
 
-Stabilizing build
+## Stabilizing build
+
+
+In our integration testing, we encountered timeout issues when running tests in parallel, likely due to resource contention or network latency. To address this, we switched to running the tests sequentially, which allowed us to isolate potential bottlenecks and reduce the chance of timeouts caused by concurrent processes.
+
+We also experimented with implementing retry mechanisms, which helped mitigate intermittent failures, especially when external services were involved. Additionally, we played around with different timeout configurations, adjusting them based on the complexity and expected runtime of each test. By balancing the number of retries and fine-tuning timeout settings, we were able to stabilize the tests without excessively delaying the feedback loop.
 
 
 ## Other Stuff
