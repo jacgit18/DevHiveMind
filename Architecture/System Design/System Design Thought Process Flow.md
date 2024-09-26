@@ -64,11 +64,11 @@ but can be and is leverage in software development process
 >[!important]
 >Creating stories helps with building data model, also if dealing with complex feature might want to consider using Use Cases over Stories.
 
-1. As a user I want to upload picture and videos to share.
-2. As a user I want to view uploaded photos and videos.
-3. As a user I want to follow, like, and comment on posts.
-4. As a user I want to see a feed containing posts from friends.
-5. As a user I want to block or unfollow other users.
+1. As a user/stakeholder I want to upload picture and videos to share.
+2. As a user/stakeholder I want to view uploaded photos and videos.
+3. As a user/stakeholder I want to follow, like, and comment on posts.
+4. As a user/stakeholder I want to see a feed containing posts from friends.
+5. As a user/stakeholder I want to block or unfollow other users.
 ---
 ### Step 2: High Level Design(15 - 25 minutes)
 >[!important]
