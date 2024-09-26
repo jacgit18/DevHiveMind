@@ -35,7 +35,7 @@ dg-publish:
 - [ ] [[Chaos Engineering]]
 - [ ] [[Domain-driven design]] 
 	- [ ] Depends on domain which may vary identify the domain of interest and learn more about that domain and look for companies or company departments that align.   
-
+- [ ] [[Algorithmic Trading]]
 #### Review
 #todo/Personal/Med/Dev 
 - [ ] [[devops.pdf]]
