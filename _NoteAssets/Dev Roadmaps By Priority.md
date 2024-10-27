@@ -26,6 +26,8 @@ dg-publish:
 - [x] [[12 Factor App Docker.canvas|12 Factor App Docker]]
 - [ ] Create a unrestricted AI assistant like chatGpt without guardrails
 
+
+![[1729252749519.gif]]
 #### Develop OKR for Next Quarter
 #todo/Personal/High/Dev 
 - [ ] [[Microservices VS Monolithic Architecture |Microservices]] 
