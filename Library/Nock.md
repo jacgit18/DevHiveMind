@@ -51,7 +51,7 @@ console.log(data); // Output: { id: 1, name: 'John Doe' }
 });  
 ```  
   
-In this example, the `nock` configuration intercepts a GET request to `[https://api.example.com/users](https://api.example.com/users)` and responds with a predefined JSON object. This allows the test to run without actually making an external HTTP request.
+In this example, the `nock` configuration intercepts a GET request to `https://api.example.com/users` and responds with a predefined JSON object. This allows the test to run without actually making an external HTTP request.
 
 
 ### Use Cases:  
@@ -83,7 +83,17 @@ Unit testing and integration testing serve different purposes and approach test 
   
 - **Use of Nock**: When integration testing a front-end feature that relies on backend responses, nock can mock the HTTP requests that would otherwise go to the actual backend. However, the focus is on how multiple components interact, so the mocked responses may be richer or more varied to simulate different end-to-end flows.
 
-  **Example**: Testing a login process might involve nock to simulate the backend responses for both successful and unsuccessful login attempts. You might also validate if the front-end displays error messages correctly, updates state, or redirects appropriately.
+- **Example**: Testing a login process might involve nock to simulate the backend responses for both successful and unsuccessful login attempts. You might also validate if the front-end displays error messages correctly, updates state, or redirects appropriately
+
+
+Nock is often used in integration testing to simulate external HTTP requests and responses because integration tests involve testing how different parts of your code work together, including third-party services or APIs. Nock helps:  
+  
+Avoid actual network calls, speeding up tests and ensuring reliability.  
+  
+Control responses from external APIs to simulate different scenarios (e.g., successful responses, timeouts, or errors).  
+  
+Ensure that code interacting with APIs is tested thoroughly without relying on the availability or behavior of real external services.
+
 
 ## Key Takeaways
 
