@@ -29,535 +29,6 @@ var __toESM = (mod, isNodeMode, target) => (target = mod != null ? __create(__ge
 ));
 var __toCommonJS = (mod) => __copyProps(__defProp({}, "__esModule", { value: true }), mod);
 
-// node_modules/smart-chunks/utils/is_list_item.js
-var require_is_list_item = __commonJS({
-  "node_modules/smart-chunks/utils/is_list_item.js"(exports2) {
-    function is_list_item(line) {
-      const check_string = line.trim();
-      const list_item_prefixes = [
-        "- ",
-        "* ",
-        "+ ",
-        "- [ ] ",
-        "- [x] "
-      ];
-      if (list_item_prefixes.some((prefix) => check_string.startsWith(prefix))) return true;
-      if (["1", "2", "3", "4", "5", "6", "7", "8", "9"].some((prefix) => check_string.startsWith(prefix))) {
-        const regex = new RegExp("^(\\d+(\\.|\\))\\s)");
-        if (regex.test(check_string)) return true;
-      }
-      return false;
-    }
-    exports2.is_list_item = is_list_item;
-    function is_nested_list_item(line) {
-      return (line.startsWith(" ") || line.startsWith("	")) && is_list_item(line);
-    }
-    exports2.is_nested_list_item = is_nested_list_item;
-    function is_top_level_list_item(line) {
-      return !is_nested_list_item(line) && is_list_item(line);
-    }
-    exports2.is_top_level_list_item = is_top_level_list_item;
-  }
-});
-
-// node_modules/smart-chunks/utils/is_heading.js
-var require_is_heading = __commonJS({
-  "node_modules/smart-chunks/utils/is_heading.js"(exports2) {
-    function is_heading(line) {
-      return line.startsWith("#") && ["#", " "].includes(line[1]);
-    }
-    exports2.is_heading = is_heading;
-  }
-});
-
-// node_modules/smart-chunks/utils/is_end_of_block.js
-var require_is_end_of_block = __commonJS({
-  "node_modules/smart-chunks/utils/is_end_of_block.js"(exports2) {
-    var { is_list_item, is_nested_list_item, is_top_level_list_item } = require_is_list_item();
-    var { is_heading } = require_is_heading();
-    function is_end_of_block(lines, index, opts) {
-      const line = lines[index];
-      if (line.length > opts.min_length_for_single_line_blocks) return true;
-      const next_line = lines[index + 1];
-      if (typeof next_line === "undefined") return true;
-      if (is_heading(next_line)) return true;
-      if (is_nested_list_item(line) && is_top_level_list_item(next_line)) return true;
-      if (next_line.length > opts.min_length_for_single_line_blocks) return true;
-      if (next_line.trim() === "---") return true;
-      const next_next_line = lines[index + 2];
-      if (!next_next_line) return false;
-      if (is_list_item(line) && is_top_level_list_item(next_line) && is_nested_list_item(next_next_line)) return true;
-      return false;
-    }
-    exports2.is_end_of_block = is_end_of_block;
-  }
-});
-
-// node_modules/smart-chunks/utils/markdown.js
-var require_markdown = __commonJS({
-  "node_modules/smart-chunks/utils/markdown.js"(exports2) {
-    var { is_list_item } = require_is_list_item();
-    var { is_heading } = require_is_heading();
-    function update_acc(acc, line, file_breadcrumbs, file_path, index) {
-      if (is_heading(line)) {
-        update_acc_for_heading(acc, line, file_breadcrumbs, file_path, index);
-      } else if (is_list_item(line)) {
-        update_acc_for_list_item(acc, line, file_breadcrumbs);
-      } else if (is_content_line(line)) {
-        update_acc_for_content_line(acc, line, file_breadcrumbs);
-      }
-    }
-    function update_acc_for_heading(acc, line, file_breadcrumbs, file_path, index) {
-      acc.curr_level = get_heading_level(line);
-      acc.current_headers = acc.current_headers.filter((header) => header.level < acc.curr_level);
-      acc.current_headers.push({ header: line.replace(/#/g, "").trim(), level: acc.curr_level });
-      acc.start_line = index;
-      init_curr(acc, file_breadcrumbs);
-      acc.block_headings = "#" + acc.current_headers.map((header) => header.header).join("#");
-      acc.block_path = file_path + acc.block_headings;
-      acc.curr_heading = line.replace(/#/g, "").trim();
-      acc.curr_line = index;
-    }
-    function update_acc_for_content_line(acc, line, file_breadcrumbs) {
-      if (!acc.curr.includes("\n")) {
-        init_curr(acc, file_breadcrumbs);
-      }
-      if (line.trim().length === 0) return;
-      acc.curr += "\n" + line;
-    }
-    function update_acc_for_list_item(acc, line, file_breadcrumbs) {
-      if (!acc.curr.includes("\n")) {
-        init_curr(acc, file_breadcrumbs);
-      }
-      acc.curr += "\n" + line;
-    }
-    function handle_duplicate_headings(acc) {
-      let heading_key = `${acc.block_headings}`;
-      let count = 1;
-      while (acc.block_headings_list.includes(heading_key)) {
-        heading_key = `${acc.block_headings}{${count}}`;
-        count++;
-      }
-      acc.block_headings_list.push(heading_key);
-      acc.block_path = acc.file_path + heading_key;
-    }
-    function init_curr(acc, file_breadcrumbs) {
-      const bc = [file_breadcrumbs];
-      if (acc.current_headers.length > 0) {
-        bc.push(acc.current_headers.map((header) => header.header).join(" > "));
-      }
-      acc.curr = bc.join(": ") + ":";
-    }
-    function is_content_line(line) {
-      return !is_list_item(line) && !is_heading(line) && line.trim().length > 0 && line.trim() !== "---";
-    }
-    function convert_file_path_to_breadcrumbs(file_path) {
-      return file_path.replace(".md", "").split("/").map((crumb) => crumb.trim()).filter((crumb) => crumb !== "").join(" > ");
-    }
-    function get_heading_level(line) {
-      return line.split("#").length - 1;
-    }
-    function initialize_acc(file_path, file_breadcrumbs) {
-      return {
-        block_headings: "#",
-        block_headings_list: [],
-        block_path: file_path + "#",
-        curr: file_breadcrumbs,
-        current_headers: [],
-        blocks: [],
-        log: [],
-        start_line: 0,
-        curr_line: 0,
-        curr_heading: null,
-        file_path
-      };
-    }
-    function finalize_output(output, file_path) {
-      const { block_headings, block_headings_list, block_path, curr, current_headers, ...final_output } = output;
-      return { ...final_output, file_path };
-    }
-    function store_front_matter_block(acc, front_matter, index, opts) {
-      const text = (front_matter.includes("\r\n") ? front_matter.replace(/\r\n/g, "\n") : front_matter).trim();
-      const embed_input_len = text.split("\n").slice(1).join("\n").trim().length;
-      acc.blocks.push({
-        text,
-        path: acc.block_path,
-        length: embed_input_len,
-        heading: null,
-        lines: [0, index]
-      });
-    }
-    function should_process_block(acc, line, opts) {
-      const {
-        multi_heading_blocks
-      } = opts;
-      return !acc.curr_level || !multi_heading_blocks || get_heading_level(line) <= acc.curr_level;
-    }
-    function process_and_store_block(acc, opts) {
-      if (!acc.curr.includes("\n")) {
-        acc.log.push(`Skipping empty block: ${acc.curr}`);
-        return;
-      }
-      acc.curr = acc.curr.trim();
-      const text = (acc.curr.includes("\r\n") ? acc.curr.replace(/\r\n/g, "\n") : acc.curr).trim();
-      const block_length = text.split("\n").slice(1).join("\n").trim().length;
-      acc.blocks.push({
-        path: acc.block_path,
-        heading: acc.curr_heading,
-        length: block_length,
-        lines: [acc.start_line, acc.curr_line],
-        text
-      });
-      acc.curr = "";
-      acc.start_line = acc.curr_line + 1;
-    }
-    exports2.handle_duplicate_headings = handle_duplicate_headings;
-    exports2.update_acc = update_acc;
-    exports2.is_content_line = is_content_line;
-    exports2.convert_file_path_to_breadcrumbs = convert_file_path_to_breadcrumbs;
-    exports2.get_heading_level = get_heading_level;
-    exports2.initialize_acc = initialize_acc;
-    exports2.finalize_output = finalize_output;
-    exports2.store_front_matter_block = store_front_matter_block;
-    exports2.should_process_block = should_process_block;
-    exports2.process_and_store_block = process_and_store_block;
-  }
-});
-
-// node_modules/smart-chunks/utils/extract_links.js
-var require_extract_links = __commonJS({
-  "node_modules/smart-chunks/utils/extract_links.js"(exports2) {
-    function extract_links(document_text) {
-      const markdown_link_pattern = /\[([^\]]+)\]\(([^)]+)\)/g;
-      const wikilink_pattern = /\[\[([^\|\]]+)(?:\|([^\]]+))?\]\]/g;
-      const result = [];
-      const extract_links_from_pattern = (pattern, type) => {
-        let match;
-        while ((match = pattern.exec(document_text)) !== null) {
-          const title = type === "markdown" ? match[1] : match[2] || match[1];
-          const target = type === "markdown" ? match[2] : match[1];
-          const line = document_text.substring(0, match.index).split("\n").length;
-          result.push({ title, target, line });
-        }
-      };
-      extract_links_from_pattern(markdown_link_pattern, "markdown");
-      extract_links_from_pattern(wikilink_pattern, "wikilink");
-      result.sort((a, b) => a.line - b.line || a.target.localeCompare(b.target));
-      return result;
-    }
-    exports2.extract_links = extract_links;
-  }
-});
-
-// node_modules/smart-chunks/adapters/markdown.js
-var require_markdown2 = __commonJS({
-  "node_modules/smart-chunks/adapters/markdown.js"(exports2) {
-    var { is_end_of_block } = require_is_end_of_block();
-    var {
-      handle_duplicate_headings,
-      update_acc,
-      is_content_line,
-      convert_file_path_to_breadcrumbs,
-      get_heading_level,
-      initialize_acc,
-      finalize_output,
-      store_front_matter_block,
-      should_process_block,
-      process_and_store_block
-    } = require_markdown();
-    var { extract_links } = require_extract_links();
-    var MarkdownAdapter = class _MarkdownAdapter {
-      static get defaults() {
-        return {
-          excluded_headings: null,
-          skip_blocks_with_headings_only: false,
-          multi_heading_blocks: false,
-          min_length_for_single_line_blocks: 300
-        };
-      }
-      constructor(main) {
-        this.main = main;
-        this.env = main.env;
-        this.opts = { ..._MarkdownAdapter.defaults, ...main.opts };
-      }
-      async parse(entity) {
-        try {
-          let content = typeof entity.content === "string" ? entity.content : await entity.get_content();
-          if (!content) {
-            console.log(`no content for ${entity.file_path}`);
-            return { blocks: [], outlinks: [] };
-          }
-          content = content.replace(/\r\n/g, "\n");
-          const file_path = entity.file_path;
-          const file_breadcrumbs = convert_file_path_to_breadcrumbs(file_path);
-          const acc = initialize_acc(file_path, file_breadcrumbs);
-          const lines = content.split("\n");
-          let in_front_matter = false;
-          let front_matter = file_breadcrumbs + ":\n";
-          lines.reduce((acc2, line, index) => {
-            acc2.curr_line = index;
-            if ((in_front_matter || index === 0) && line.trim() === "---") {
-              in_front_matter = !in_front_matter;
-              if (!in_front_matter) {
-                handle_duplicate_headings(acc2);
-                store_front_matter_block(acc2, front_matter, index, this.opts);
-                acc2.start_line = index + 1;
-              }
-            } else if (in_front_matter) {
-              front_matter += line + "\n";
-            } else {
-              update_acc(acc2, line, file_breadcrumbs, file_path, index);
-              if (is_end_of_block(lines, index, this.opts) && should_process_block(acc2, line, this.opts)) {
-                handle_duplicate_headings(acc2);
-                process_and_store_block(acc2, this.opts);
-              }
-            }
-            if (line.trim() === "---") {
-              acc2.start_line = index + 1;
-              acc2.curr_heading = null;
-              acc2.block_headings = "#";
-              acc2.block_path = file_path + "#";
-              acc2.current_headers = [];
-            }
-            return acc2;
-          }, acc);
-          acc.outlinks = extract_links(content);
-          return finalize_output(acc, file_path);
-        } catch (error) {
-          console.error("Error parsing markdown content:", entity.file_path, error);
-          throw error;
-        }
-      }
-    };
-    exports2.MarkdownAdapter = MarkdownAdapter;
-  }
-});
-
-// node_modules/smart-chunks/utils/canvas_to_markdown.js
-var require_canvas_to_markdown = __commonJS({
-  "node_modules/smart-chunks/utils/canvas_to_markdown.js"(exports2) {
-    function canvas_to_markdown(canvas) {
-      const canvas_obj = JSON.parse(canvas);
-      const nodes = canvas_obj.nodes || [];
-      const groups = nodes.filter((node) => node.type === "group");
-      const group_map = {};
-      groups.forEach((group) => {
-        group_map[group.id] = { label: group.label, children: [] };
-      });
-      nodes.forEach((node) => {
-        if (node.type !== "group") {
-          const parent_group = find_parent_group(node, groups);
-          if (parent_group) {
-            group_map[parent_group.id].children.push(node);
-          }
-        }
-      });
-      const sorted_groups = Object.values(group_map).sort((a, b) => a.label.localeCompare(b.label));
-      let markdown = "";
-      sorted_groups.forEach((group) => {
-        markdown += `# ${group.label}
-`;
-        group.children.sort((a, b) => a.y - b.y);
-        group.children.forEach((node, index) => {
-          if (node.type === "text") {
-            if (node.text === "Node 3a") {
-              markdown += `${index + 1}. Branch
-	- Node 3a
-`;
-            } else if (node.text === "Node 3b") {
-              markdown += `	- Node 3b
-`;
-            } else {
-              const lines = node.text.split("\n");
-              lines.forEach((line, idx) => {
-                if (idx === 0) {
-                  markdown += `${index + 1}. ${line.replace(/^# /, "")}
-`;
-                } else {
-                  markdown += `	- ${line}
-`;
-                }
-              });
-            }
-          } else if (node.type === "file") {
-            markdown += `${index + 1}. [[${node.file.replace("+\u{1F4E5} inbox/", "")}]]
-`;
-          }
-        });
-        markdown += "\n";
-      });
-      return markdown.trim().replace(/\r\n/g, "\n");
-    }
-    function find_parent_group(node, groups) {
-      return groups.find((group) => node.x >= group.x && node.y >= group.y && node.x + node.width <= group.x + group.width && node.y + node.height <= group.y + group.height);
-    }
-    exports2.canvas_to_markdown = canvas_to_markdown;
-  }
-});
-
-// node_modules/smart-chunks/adapters/canvas.js
-var require_canvas = __commonJS({
-  "node_modules/smart-chunks/adapters/canvas.js"(exports2) {
-    var { canvas_to_markdown } = require_canvas_to_markdown();
-    var { MarkdownAdapter } = require_markdown2();
-    var CanvasAdapter = class {
-      constructor(main) {
-        this.main = main;
-        this.env = main.env;
-        this.opts = { ...MarkdownAdapter.defaults, ...main.opts };
-      }
-      async parse(entity) {
-        const content = await entity.get_content();
-        const markdown = canvas_to_markdown(content);
-        const markdown_adapter = new MarkdownAdapter(this.main);
-        return await markdown_adapter.parse({ content: markdown, file_path: entity.file_path });
-      }
-    };
-    exports2.CanvasAdapter = CanvasAdapter;
-  }
-});
-
-// node_modules/smart-chunks/adapters/javascript.js
-var require_javascript = __commonJS({
-  "node_modules/smart-chunks/adapters/javascript.js"(exports2) {
-    var JavaScriptAdapter = class {
-      async parse(entity) {
-        const content = await entity.get_content();
-        const lines = content.split("\n");
-        const blocks = [];
-        let current_block = null;
-        let block_start = null;
-        let open_brackets = 0;
-        for (let index = 0; index < lines.length; index++) {
-          const line = lines[index];
-          if (line.includes("class ") || line.includes("function ")) {
-            if (current_block !== null && open_brackets === 0) {
-              blocks.push({
-                path: current_block,
-                lines: [block_start, index - 1],
-                text: lines.slice(block_start, index).join("\n")
-              });
-            }
-            current_block = `test_env/test_js.js#${line.includes("class ") ? "class " + line.split("class ")[1].split(" ")[0] : "function " + line.split("function ")[1].split("(")[0]}`;
-            block_start = index;
-            while (block_start > 0) {
-              const prev_line = lines[block_start - 1].trim();
-              if (prev_line.startsWith("//") || prev_line === "" || prev_line.startsWith("/*") || prev_line.startsWith("*")) {
-                block_start--;
-              } else {
-                break;
-              }
-            }
-          }
-          open_brackets += (line.match(/{/g) || []).length;
-          open_brackets -= (line.match(/}/g) || []).length;
-          if (current_block !== null && open_brackets === 0) {
-            blocks.push({
-              path: current_block,
-              lines: [block_start, index],
-              text: lines.slice(block_start, index + 1).join("\n")
-            });
-            current_block = null;
-          }
-        }
-        if (current_block !== null) {
-          blocks.push({
-            path: current_block,
-            lines: [block_start, lines.length - 1],
-            text: lines.slice(block_start).join("\n")
-          });
-        }
-        blocks.forEach((block) => {
-          while (block.lines[1] < lines.length - 1) {
-            const next_line = lines[block.lines[1] + 1].trim();
-            if (next_line === "" || next_line.startsWith("*") || next_line.startsWith("//") || next_line.startsWith("*/")) {
-              block.lines[1]++;
-              block.text += "\n" + lines[block.lines[1]];
-            } else {
-              break;
-            }
-          }
-        });
-        blocks.forEach((block) => {
-          block.lines = block.lines.map((line) => line + 1);
-        });
-        blocks.forEach((block) => {
-          block.lines = Array.from(new Set(block.lines)).sort((a, b) => a - b);
-        });
-        blocks.forEach((block) => {
-          if (lines[block.lines[1] - 1].trim() === "") {
-            block.lines[1]--;
-            block.text = block.text.split("\n").slice(0, -1).join("\n");
-          }
-          if (lines[block.lines[0] - 1].trim() === "") {
-            block.lines[0]++;
-            block.text = block.text.split("\n").slice(1).join("\n");
-          }
-        });
-        return { blocks };
-      }
-    };
-    exports2.JavaScriptAdapter = JavaScriptAdapter;
-  }
-});
-
-// node_modules/smart-chunks/adapters.js
-var require_adapters = __commonJS({
-  "node_modules/smart-chunks/adapters.js"(exports2) {
-    var { MarkdownAdapter } = require_markdown2();
-    exports2.markdown = MarkdownAdapter;
-    exports2.md = MarkdownAdapter;
-    var { CanvasAdapter } = require_canvas();
-    exports2.canvas = CanvasAdapter;
-    var { JavaScriptAdapter } = require_javascript();
-    exports2.javascript = JavaScriptAdapter;
-    exports2.js = JavaScriptAdapter;
-  }
-});
-
-// node_modules/smart-chunks/smart_chunks.js
-var require_smart_chunks = __commonJS({
-  "node_modules/smart-chunks/smart_chunks.js"(exports2) {
-    var adapters = require_adapters();
-    var SmartChunks2 = class {
-      constructor(env, opts = {}) {
-        this.env = env;
-        this.opts = opts;
-        this._adapter = null;
-      }
-      get adapter() {
-        return this._adapter || (this._adapter = new adapters[this.normalize_adapter_input(this.opts.adapter) || "markdown"](this));
-      }
-      normalize_adapter_input(adapter) {
-        return adapter?.toLowerCase();
-      }
-      async parse(entity, opts = {}) {
-        if (entity.file_type === "canvas") opts.adapter = "canvas";
-        const adapter = this.get_adapter(opts);
-        return await adapter.parse(entity);
-      }
-      get_adapter(opts) {
-        return opts.adapter ? new adapters[this.normalize_adapter_input(opts.adapter)]({ env: this.env, opts }) : this.adapter;
-      }
-      // returns original block content
-      async get_block_from_path(path, entity, opts = {}) {
-        if (entity.file_type === "canvas") opts.adapter = "canvas";
-        const adapter = this.get_adapter(opts);
-        const { blocks } = await adapter.parse(entity);
-        const block = blocks.find((block2) => block2.path === path);
-        if (!block) {
-          throw new Error(`Block not found at path ${path}`);
-        }
-        if (opts.adapter === "canvas") {
-          return block.text;
-        }
-        return (await entity.get_content()).split("\n").slice(block.lines[0], block.lines[1]).join("\n");
-      }
-    };
-    exports2.SmartChunks = SmartChunks2;
-  }
-});
-
 // node_modules/smart-embed-model/node_modules/base64-js/index.js
 var require_base64_js = __commonJS({
   "node_modules/smart-embed-model/node_modules/base64-js/index.js"(exports2) {
@@ -2161,7 +1632,7 @@ var require_open_router = __commonJS({
 });
 
 // node_modules/smart-chat-model/adapters.js
-var require_adapters2 = __commonJS({
+var require_adapters = __commonJS({
   "node_modules/smart-chat-model/adapters.js"(exports2) {
     var { AnthropicAdapter } = require_anthropic();
     var { CohereAdapter } = require_cohere();
@@ -2750,6 +2221,14 @@ var require_anthropic2 = __commonJS({
     async function fetch_anthropic_models() {
       return [
         {
+          key: "claude-3-5-sonnet-latest",
+          "model_name": "claude-3.5-sonnet-latest",
+          "description": "Anthropic's Claude Sonnet (Latest)",
+          "max_input_tokens": 2e5,
+          "max_output_tokens": 4e3,
+          "multimodal": true
+        },
+        {
           "key": "claude-3-opus-20240229",
           "model_name": "claude-3-opus-20240229",
           "description": "Anthropic's Claude Opus",
@@ -2758,17 +2237,25 @@ var require_anthropic2 = __commonJS({
           "multimodal": true
         },
         {
-          key: "claude-3-5-sonnet-20240620",
-          "model_name": "claude-3.5-sonnet-20240620",
-          "description": "Anthropic's Claude Sonnet",
+          key: "claude-3-haiku-20240307",
+          "model_name": "claude-3-haiku-20240307",
+          "description": "Anthropic's Claude Haiku (2024-03-07)",
           "max_input_tokens": 2e5,
           "max_output_tokens": 4e3,
           "multimodal": true
         },
         {
-          key: "claude-3-haiku-20240307",
-          "model_name": "claude-3-haiku-20240307",
-          "description": "Anthropic's Claude Haiku",
+          key: "claude-3-5-sonnet-20241022",
+          "model_name": "claude-3.5-sonnet-20241022",
+          "description": "Anthropic's Claude Sonnet (2024-10-22)",
+          "max_input_tokens": 2e5,
+          "max_output_tokens": 4e3,
+          "multimodal": true
+        },
+        {
+          key: "claude-3-5-sonnet-20240620",
+          "model_name": "claude-3.5-sonnet-20240620",
+          "description": "Anthropic's Claude Sonnet (2024-06-20)",
           "max_input_tokens": 2e5,
           "max_output_tokens": 4e3,
           "multimodal": true
@@ -2806,7 +2293,7 @@ var require_fetch = __commonJS({
 // node_modules/smart-chat-model/smart_chat_model.js
 var require_smart_chat_model = __commonJS({
   "node_modules/smart-chat-model/smart_chat_model.js"(exports2) {
-    var adapters = require_adapters2();
+    var adapters = require_adapters();
     var platforms = require_platforms();
     var { is_valid_tool_call } = require_is_valid_tool_call();
     var { SmartStreamer } = require_streamer();
@@ -4718,7 +4205,7 @@ var require_markdown_to_chat_ml = __commonJS({
 });
 
 // node_modules/smart-chats/adapters/markdown.js
-var require_markdown3 = __commonJS({
+var require_markdown = __commonJS({
   "node_modules/smart-chats/adapters/markdown.js"(exports2) {
     var { chat_ml_to_markdown } = require_chat_ml_to_markdown();
     var { markdown_to_chat_ml } = require_markdown_to_chat_ml();
@@ -4946,7 +4433,7 @@ var require_canvas_to_chatml = __commonJS({
 });
 
 // node_modules/smart-chats/adapters/canvas.js
-var require_canvas2 = __commonJS({
+var require_canvas = __commonJS({
   "node_modules/smart-chats/adapters/canvas.js"(exports2) {
     var { chatml_to_canvas } = require_chatml_to_canvas();
     var { canvas_to_chatml } = require_canvas_to_chatml();
@@ -5006,10 +4493,10 @@ var require_canvas2 = __commonJS({
 });
 
 // node_modules/smart-chats/adapters.js
-var require_adapters3 = __commonJS({
+var require_adapters2 = __commonJS({
   "node_modules/smart-chats/adapters.js"(exports2) {
-    var { MarkdownAdapter } = require_markdown3();
-    var { CanvasAdapter } = require_canvas2();
+    var { MarkdownAdapter } = require_markdown();
+    var { CanvasAdapter } = require_canvas();
     exports2.md = MarkdownAdapter;
     exports2.canvas = CanvasAdapter;
   }
@@ -5018,7 +4505,7 @@ var require_adapters3 = __commonJS({
 // node_modules/smart-chats/smart_chat.js
 var require_smart_chat = __commonJS({
   "node_modules/smart-chats/smart_chat.js"(exports2) {
-    var SmartChatAdapters = require_adapters3();
+    var SmartChatAdapters = require_adapters2();
     var SmartChat2 = class {
       constructor(env, opts = {}) {
         let {
@@ -5459,7 +4946,6 @@ var SmartEnv = class _SmartEnv {
     const main = this[main_key];
     await this.init_collections(main_env_opts);
     await this.ready_to_load_collections(main);
-    console.log("ready to load collections");
     const main_collections = Object.keys(main_env_opts.collections).reduce((acc, key) => {
       if (!this.collections[key]) return acc;
       acc[key] = this[key];
@@ -5501,7 +4987,6 @@ var SmartEnv = class _SmartEnv {
         }
       } else {
         if (this.opts[key] !== void 0) {
-          console.warn(`SmartEnv: Overwriting existing property ${key} with ${this.mains[this.mains.length - 1]} smart_env_config`);
         }
         this.opts[key] = value;
       }
@@ -5685,7 +5170,7 @@ var SmartEnv = class _SmartEnv {
    */
   async load_settings() {
     if (!await this.data_fs.exists("smart_env.json")) await this.save_settings({});
-    let settings = this.opts.default_settings || {};
+    let settings = JSON.parse(JSON.stringify(this.opts.default_settings || {}));
     deep_merge(settings, JSON.parse(await this.data_fs.read("smart_env.json")));
     deep_merge(settings, this.opts?.smart_env_settings || {});
     this._saved = true;
@@ -5800,6 +5285,26 @@ function deep_merge2(target, source) {
   }
 }
 
+// node_modules/smart-collections/utils/deep_equal.js
+function deep_equal(obj1, obj2, visited = /* @__PURE__ */ new WeakMap()) {
+  if (obj1 === obj2) return true;
+  if (obj1 === null || obj2 === null || obj1 === void 0 || obj2 === void 0) return false;
+  if (typeof obj1 !== typeof obj2 || Array.isArray(obj1) !== Array.isArray(obj2)) return false;
+  if (Array.isArray(obj1)) {
+    if (obj1.length !== obj2.length) return false;
+    return obj1.every((item, index) => deep_equal(item, obj2[index], visited));
+  }
+  if (typeof obj1 === "object") {
+    if (visited.has(obj1)) return visited.get(obj1) === obj2;
+    visited.set(obj1, obj2);
+    const keys1 = Object.keys(obj1);
+    const keys2 = Object.keys(obj2);
+    if (keys1.length !== keys2.length) return false;
+    return keys1.every((key) => deep_equal(obj1[key], obj2[key], visited));
+  }
+  return obj1 === obj2;
+}
+
 // node_modules/smart-collections/collection_item.js
 var CollectionItem = class _CollectionItem {
   /**
@@ -5822,7 +5327,7 @@ var CollectionItem = class _CollectionItem {
     this.env = env;
     this.config = this.env?.config;
     this.merge_defaults();
-    if (data) this.data = data;
+    if (data) deep_merge2(this.data, data);
     if (!this.data.class_name) this.data.class_name = this.constructor.name;
   }
   static load(env, data) {
@@ -5857,24 +5362,27 @@ var CollectionItem = class _CollectionItem {
    * @returns {boolean} True if data was successfully updated.
    */
   update_data(data) {
-    data = JSON.stringify(data, this.update_data_replacer);
-    data = JSON.parse(data);
-    const data_entries = Object.entries(data);
-    const changed = data_entries.some(([key, value]) => this.data[key] !== value);
+    const sanitized_data = this.sanitize_data(data);
+    const changed = !deep_equal(this.data, sanitized_data);
     if (!changed) return false;
-    deep_merge2(this.data, data);
+    deep_merge2(this.data, sanitized_data);
     return true;
   }
   /**
-   * Custom replacer function for JSON.stringify used in update_data to handle special object types.
-   * @param {string} key - The key of the property being stringified.
-   * @param {any} value - The value of the property being stringified.
-   * @returns {any} The value to be used in the JSON string.
+   * Sanitizes the data of an item to ensure it can be safely saved.
+   * @param {Object} data - The data to sanitize.
+   * @returns {Object} The sanitized data.
    */
-  update_data_replacer(key, value) {
-    if (value instanceof _CollectionItem) return value.ref;
-    if (Array.isArray(value)) return value.map((val) => val instanceof _CollectionItem ? val.ref : val);
-    return value;
+  sanitize_data(data) {
+    if (data instanceof _CollectionItem) return data.ref;
+    if (Array.isArray(data)) return data.map((val) => this.sanitize_data(val));
+    if (typeof data === "object" && data !== null) {
+      return Object.keys(data).reduce((acc, key) => {
+        acc[key] = this.sanitize_data(data[key]);
+        return acc;
+      }, {});
+    }
+    return data;
   }
   // init - for data not in this.data
   /**
@@ -5952,10 +5460,8 @@ var CollectionItem = class _CollectionItem {
       key_ends_with,
       key_starts_with,
       key_starts_with_any,
-      key_includes,
-      limit
+      key_includes
     } = filter_opts;
-    if (limit && this.collection.filter_results_ct >= limit) return null;
     if (exclude_keys?.includes(this.key)) return false;
     if (exclude_key_starts_with && this.key.startsWith(exclude_key_starts_with)) return false;
     if (exclude_key_starts_with_any && exclude_key_starts_with_any.some((prefix) => this.key.startsWith(prefix))) return false;
@@ -6064,10 +5570,10 @@ async function render2(scope, opts = {}) {
     return "";
   }).join("\n");
   const frag = this.create_doc_fragment(html);
-  await this.render_setting_components(frag, { scope });
   return await post_process2.call(this, scope, frag, opts);
 }
 async function post_process2(scope, frag, opts = {}) {
+  await this.render_setting_components(frag, { scope });
   return frag;
 }
 
@@ -6087,7 +5593,6 @@ var Collection = class {
     this.config = this.env.config;
     this.items = {};
     this.merge_defaults();
-    this.filter_results_ct = 0;
     this.loaded = null;
     this._loading = false;
     this.load_time_ms = null;
@@ -6140,7 +5645,7 @@ var Collection = class {
   find_by(data) {
     if (data.key) return this.get(data.key);
     const temp = new this.item_type(this.env);
-    const temp_data = JSON.parse(JSON.stringify(data, temp.update_data_replacer));
+    const temp_data = JSON.parse(JSON.stringify(data, temp.sanitize_data(data)));
     deep_merge2(temp.data, temp_data);
     return temp.key ? this.get(temp.key) : null;
   }
@@ -6151,15 +5656,15 @@ var Collection = class {
    * @return {CollectionItem[]} The filtered items.
    */
   filter(filter_opts = {}) {
-    this.filter_results_ct = 0;
     this.filter_opts = this.prepare_filter(filter_opts);
-    const results = Object.entries(this.items).map(([key, item]) => {
-      if (filter_opts.limit && this.filter_results_ct >= filter_opts.limit) return null;
-      if (item.filter(this.filter_opts)) {
-        this.filter_results_ct++;
-        return item;
-      } else return null;
-    }).filter(Boolean);
+    const results = [];
+    const { limit } = this.filter_opts;
+    for (const item of Object.values(this.items)) {
+      if (limit && results.length >= limit) break;
+      if (item.filter(filter_opts)) {
+        results.push(item);
+      }
+    }
     return results;
   }
   // alias for filter
@@ -6437,6 +5942,7 @@ var Collection = class {
     const frag = await this.render_settings_component(this, opts);
     container.innerHTML = "";
     container.appendChild(frag);
+    this.smart_view.on_open_overlay(container);
     return container;
   }
   unload() {
@@ -6550,19 +6056,23 @@ ${await this.get_content()}
   }
   // override in child class
   // find_connections v2 (smart action)
-  find_connections(params = {}) {
-    this.filter_opts = {
+  prepare_find_connections_filter_opts(params = {}) {
+    const opts = {
       ...this.env.settings.smart_view_filter || {},
       ...params,
       entity: this
     };
+    if (opts.filter?.limit) delete opts.filter.limit;
+    if (opts.limit) delete opts.limit;
+    return opts;
+  }
+  find_connections(params = {}) {
+    const filter_opts = this.prepare_find_connections_filter_opts(params);
     const limit = params.filter?.limit || params.limit || this.env.settings.smart_view_filter?.results_limit || 10;
-    if (params.filter?.limit) delete params.filter.limit;
-    if (params.limit) delete params.limit;
     const cache_key = this.key + JSON.stringify(params);
     if (!this.env.connections_cache) this.env.connections_cache = {};
     if (!this.env.connections_cache[cache_key]) {
-      const connections = this.nearest(this.filter_opts).sort(sort_by_score).slice(0, limit);
+      const connections = this.nearest(filter_opts).sort(sort_by_score).slice(0, limit);
       this.connections_to_cache(cache_key, connections);
     }
     return this.connections_from_cache(cache_key);
@@ -6585,9 +6095,6 @@ ${await this.get_content()}
   }
   get should_show_full_path() {
     return this.env.settings.show_full_path;
-  }
-  get smart_chunks() {
-    return this.collection.smart_chunks;
   }
   /**
    * @deprecated Use this.embed_model instead
@@ -6692,18 +6199,6 @@ var SmartEntities = class extends Collection {
     this.total_tokens = 0;
     this.total_time = 0;
   }
-  get smart_chunks() {
-    if (!this._smart_chunks) {
-      const config = this.env.opts.modules.smart_chunks;
-      const _class = config?.class ?? config;
-      if (!_class) throw new Error("No class in `env.opts.modules.smart_chunks`");
-      this._smart_chunks = new _class(this, {
-        ...this.env.settings,
-        skip_blocks_with_headings_only: true
-      });
-    }
-    return this._smart_chunks;
-  }
   async init() {
     await super.init();
     await this.load_smart_embed();
@@ -6713,6 +6208,7 @@ var SmartEntities = class extends Collection {
   }
   async load_smart_embed() {
     if (this.embed_model_key === "None") return;
+    if (!this.embed_model) return;
     if (this.embed_model.loading) return console.log(`SmartEmbedModel already loading for ${this.embed_model_key}`);
     if (this.embed_model.loaded) return console.log(`SmartEmbedModel already loaded for ${this.embed_model_key}`);
     try {
@@ -6761,7 +6257,8 @@ var SmartEntities = class extends Collection {
     return this.embed_model;
   }
   get embed_model() {
-    if (!this._embed_model) this._embed_model = new this.env.opts.modules.smart_embed_model.class(this.env, {
+    if (this.embed_model_key === "None") return null;
+    if (!this._embed_model && this.env.opts.modules.smart_embed_model?.class) this._embed_model = new this.env.opts.modules.smart_embed_model.class(this.env, {
       model_key: this.embed_model_key,
       ...this.settings.embed_model?.[this.embed_model_key] || {},
       settings: this.settings.embed_model
@@ -6792,10 +6289,7 @@ var SmartEntities = class extends Collection {
     return Array.from(nearest.results);
   }
   get file_name() {
-    return this.collection_key + "-" + this.smart_embed_model_key.split("/").pop();
-  }
-  get smart_embed_model_key() {
-    return this.env.settings?.[this.collection_key]?.embed_model || this.env.settings?.[this.collection_key + "_embed_model"] || "None";
+    return this.collection_key + "-" + this.embed_model_key.split("/").pop();
   }
   // get data_dir() { return this.env.env_data_dir + "/" + this.embed_model_key.replace("/", "_"); }
   /**
@@ -7101,14 +6595,18 @@ var SmartSource = class extends SmartEntity {
     }
   }
   find_connections(params = {}) {
-    let connections = super.find_connections(params);
+    let connections;
+    if (this.block_collection.settings.embed_blocks && params.exclude_source_connections) connections = [];
+    else connections = super.find_connections(params);
+    const filter_opts = this.prepare_find_connections_filter_opts(params);
     const limit = params.filter?.limit || params.limit || this.env.settings.smart_view_filter?.results_limit || 20;
     if (params.filter?.limit) delete params.filter.limit;
     if (params.limit) delete params.limit;
     if (!params.exclude_blocks_from_source_connections) {
       const cache_key = this.key + JSON.stringify(params) + "_blocks";
+      if (!this.env.connections_cache) this.env.connections_cache = {};
       if (!this.env.connections_cache[cache_key]) {
-        const nearest = this.env.smart_blocks.nearest(this.vec, this.filter_opts).sort(sort_by_score).slice(0, limit);
+        const nearest = this.env.smart_blocks.nearest(this.vec, filter_opts).sort(sort_by_score).slice(0, limit);
         this.connections_to_cache(cache_key, nearest);
       }
       connections = [
@@ -7293,7 +6791,12 @@ ${content}`.substring(0, max_tokens * 4);
       ...blocks_to_save.map((block) => block.ajson).filter((ajson2) => ajson2)
     ].join("\n");
     await super.save(ajson);
-    blocks_to_save.forEach((block) => block._queue_save = false);
+    blocks_to_save.forEach((block) => {
+      block._queue_save = false;
+      if (block.deleted && this.block_collection.items[block.key]) {
+        this.block_collection.delete_item(block.key);
+      }
+    });
   }
   on_load_error(err) {
     super.on_load_error(err);
@@ -7476,7 +6979,7 @@ var SmartSources = class extends SmartEntities {
     this.notices?.show("done initial scan", "Initial scan complete", { timeout: 3e3 });
   }
   init_file_path(file_path) {
-    this.items[file_path] = new this.item_type(this.env, { path: file_path });
+    return this.items[file_path] = new this.item_type(this.env, { path: file_path });
   }
   // removes old data files
   async prune() {
@@ -7599,9 +7102,9 @@ ${remove_smart_blocks.map((item) => `${item.reason} - ${item.key}`).join("\n")}`
       results = [
         ...results,
         ...await this.block_collection.lookup(params)
-      ].sort(sort_by_score).slice(0, limit);
+      ].sort(sort_by_score);
     }
-    return results;
+    return results.slice(0, limit);
   }
   async import_file(file) {
     this.fs.files[file.path] = file;
@@ -7713,47 +7216,41 @@ ${remove_smart_blocks.map((item) => `${item.reason} - ${item.key}`).join("\n")}`
   async run_load() {
     await super.run_load();
     this.blocks.render_settings();
+    this.render_settings();
   }
   async run_import() {
     const start_time = Date.now();
+    Object.values(this.items).forEach((item) => {
+      if (item.meta_changed) item.queue_import();
+    });
     await this.process_import_queue();
     const end_time = Date.now();
     console.log(`Time spent importing: ${end_time - start_time}ms`);
     this.render_settings();
     this.blocks.render_settings();
   }
-  async run_refresh() {
+  async run_prune() {
     await this.prune();
     await this.process_save_queue();
-    this.items = {};
-    this.block_collection.items = {};
-    await this.init_items();
-    await this.process_load_queue();
-    await this.render_settings();
-    await this.process_import_queue();
-    Object.values(this.block_collection.items).forEach((item) => !item.vec ? item.queue_embed() : null);
-    await this.process_embed_queue();
     this.render_settings();
     this.blocks.render_settings();
   }
-  async run_force_refresh() {
-    console.log("run_force_refresh");
+  async run_clear_all() {
+    this.notices?.show("clearing all", "Clearing all data...", { timeout: 0 });
     this.clear();
     this.block_collection.clear();
-    console.log("cleared");
-    console.log("items " + Object.keys(this.items).length);
-    console.log("blocks " + Object.keys(this.block_collection.items).length);
     this._fs = null;
     await this.fs.init();
     await this.init_items();
     this._excluded_headings = null;
-    console.log("init_items " + Object.keys(this.items).length);
     Object.values(this.items).forEach((item) => {
       item.queue_import();
       item.queue_embed();
       item.loaded_at = Date.now() + 9999999999;
     });
     await this.process_import_queue();
+    this.notices?.remove("clearing all");
+    this.notices?.show("cleared all", "All data cleared and reimported", { timeout: 3e3 });
   }
   get excluded_patterns() {
     return [
@@ -7848,7 +7345,7 @@ var SmartBlock = class extends SmartEntity {
   }
   should_clear_embeddings(data) {
     if (this.is_new) return true;
-    if (this.embed_model_key !== "None" && this.vec?.length !== this.embed_model.dims) return true;
+    if (this.embed_model && this.embed_model_key !== "None" && this.vec?.length !== this.embed_model.dims) return true;
     if (this.data.length !== data.length) return true;
     return false;
   }
@@ -7888,7 +7385,8 @@ var SmartBlock = class extends SmartEntity {
   }
   get excluded() {
     const block_headings = this.path.split("#").slice(1);
-    return this.source_collection.excluded_headings.some((heading) => block_headings.includes(heading));
+    if (this.source_collection.excluded_headings.some((heading) => block_headings.includes(heading))) return true;
+    return this.source.excluded;
   }
   get file_path() {
     return this.source.file_path;
@@ -7968,7 +7466,7 @@ var SmartBlock = class extends SmartEntity {
    */
   get should_embed() {
     try {
-      if (this.size < this.source_collection.embed_model.min_chars) return false;
+      if (this.embed_model && this.size < this.embed_model.min_chars) return false;
       const match_line_start = this.line_start + 1;
       const match_line_end = this.line_end;
       const { has_line_start, has_line_end } = Object.entries(this.source?.data?.blocks || {}).reduce((acc, [key, range]) => {
@@ -8020,9 +7518,6 @@ var SmartBlock = class extends SmartEntity {
   }
   get data_file() {
     return this.source.data_file;
-  }
-  get excluded() {
-    return this.source.excluded;
   }
   get excluded_lines() {
     return this.source.excluded_lines;
@@ -8081,24 +7576,6 @@ ${next}
 // node_modules/smart-sources/smart_blocks.js
 var SmartBlocks = class extends SmartEntities {
   init() {
-  }
-  async create(key, content) {
-    if (!content) content = "-";
-    const source_key = key.split("#")[0];
-    let source = this.source_collection.get(source_key);
-    const headings = key.split("#").slice(1);
-    const content_with_all_headings = [
-      ...headings.map((heading, i) => `${"#".repeat(i + 1)} ${heading}`),
-      ...content.split("\n")
-    ].filter((heading, i, arr) => heading !== arr[i - 1]).join("\n");
-    if (!source) {
-      source = await this.env.smart_sources.create(source_key, content_with_all_headings);
-    } else {
-      await source.update(content_with_all_headings, { mode: "merge_append" });
-    }
-    await source.import();
-    const block = this.get(key);
-    return block;
   }
   get embed_model() {
     return this.source_collection?.embed_model;
@@ -8224,57 +7701,62 @@ var SourceAdapter = class {
   get source_collection() {
     return this.env.smart_sources;
   }
+  // override these methods in the adapter class
+  throw_not_implemented(method_name) {
+    throw new Error(`Method "${method_name}" is not implemented for file type "${this.item.file_type}" in "${this.constructor.name}".`);
+  }
+  // source methods
   async import() {
-    throw new Error("import method not implemented for " + this.item.file_type);
+    this.throw_not_implemented("import");
   }
   async append(content) {
-    throw new Error("append method not implemented for " + this.item.file_type);
+    this.throw_not_implemented("append");
   }
   async update(full_content, opts = {}) {
-    throw new Error("update method not implemented for " + this.item.file_type);
+    this.throw_not_implemented("update");
   }
   async _update(content) {
-    throw new Error("_update method not implemented for " + this.item.file_type);
+    this.throw_not_implemented("_update");
   }
   async read(opts = {}) {
-    throw new Error("read method not implemented for " + this.item.file_type);
+    this.throw_not_implemented("read");
   }
   async _read() {
-    throw new Error("_read method not implemented for " + this.item.file_type);
+    this.throw_not_implemented("_read");
   }
   async remove() {
-    throw new Error("remove method not implemented for " + this.item.file_type);
+    this.throw_not_implemented("remove");
   }
   async move_to(entity_ref) {
-    throw new Error("move_to method not implemented for " + this.item.file_type);
+    this.throw_not_implemented("move_to");
   }
   async merge(content, opts = {}) {
-    throw new Error("merge method not implemented for " + this.item.file_type);
+    this.throw_not_implemented("merge");
   }
   // block methods
   async block_append(content) {
-    throw new Error("append method not implemented for " + this.item.file_type);
+    this.throw_not_implemented("block_append");
   }
   async block_update(full_content, opts = {}) {
-    throw new Error("update method not implemented for " + this.item.file_type);
+    this.throw_not_implemented("block_update");
   }
   async _block_update(content) {
-    throw new Error("_update method not implemented for " + this.item.file_type);
+    this.throw_not_implemented("_block_update");
   }
   async block_read(opts = {}) {
-    throw new Error("read method not implemented for " + this.item.file_type);
+    this.throw_not_implemented("block_read");
   }
   async _block_read() {
-    throw new Error("_read method not implemented for " + this.item.file_type);
+    this.throw_not_implemented("_block_read");
   }
   async block_remove() {
-    throw new Error("remove method not implemented for " + this.item.file_type);
+    this.throw_not_implemented("block_remove");
   }
   async block_move_to(entity_ref) {
-    throw new Error("move_to method not implemented for " + this.item.file_type);
+    this.throw_not_implemented("block_move_to");
   }
   async block_merge(content, opts = {}) {
-    throw new Error("merge method not implemented for " + this.item.file_type);
+    this.throw_not_implemented("block_merge");
   }
   // HELPER METHODS
   async create_hash(content) {
@@ -8299,6 +7781,7 @@ function markdown_to_blocks(markdown) {
   const heading_lines = {};
   const heading_counts = {};
   const sub_block_counts = {};
+  const subheading_counts = {};
   let current_list_item = null;
   let current_content_block = null;
   let in_frontmatter = false;
@@ -8354,12 +7837,6 @@ function markdown_to_blocks(markdown) {
     if (heading_match && !in_code_block) {
       const level = heading_match[1].length;
       let title = heading_match[2].trim();
-      if (level === 1) {
-        heading_counts[title] = (heading_counts[title] || 0) + 1;
-        if (heading_counts[title] > 1) {
-          title += `[${heading_counts[title]}]`;
-        }
-      }
       while (heading_stack.length > 0 && heading_stack[heading_stack.length - 1].level >= level) {
         const finished_heading = heading_stack.pop();
         if (heading_lines[finished_heading.key][1] === null) {
@@ -8389,6 +7866,21 @@ function markdown_to_blocks(markdown) {
       } else {
         parent_key = "";
         parent_level = 0;
+      }
+      if (heading_stack.length === 0) {
+        heading_counts[title] = (heading_counts[title] || 0) + 1;
+        if (heading_counts[title] > 1) {
+          title += `[${heading_counts[title]}]`;
+        }
+      } else {
+        if (!subheading_counts[parent_key]) {
+          subheading_counts[parent_key] = {};
+        }
+        subheading_counts[parent_key][title] = (subheading_counts[parent_key][title] || 0) + 1;
+        const count = subheading_counts[parent_key][title];
+        if (count > 1) {
+          title += `#{${count}}`;
+        }
       }
       const level_diff = level - parent_level;
       const hashes = "#".repeat(level_diff);
@@ -8512,6 +8004,12 @@ function get_markdown_links(content) {
   return result;
 }
 
+// node_modules/smart-sources/utils/get_line_range.js
+function get_line_range(content, start_line, end_line) {
+  const lines = content.split("\n");
+  return lines.slice(start_line - 1, end_line).join("\n");
+}
+
 // node_modules/smart-sources/blocks/markdown_crud.js
 function block_read(content, block_key) {
   const blocks = markdown_to_blocks(content);
@@ -8572,24 +8070,30 @@ var MarkdownSourceAdapter = class extends TextSourceAdapter {
     const content = await this._read();
     if (!content) return console.warn("No content to import for " + this.file_path);
     const hash = await this.create_hash(content);
-    if (this.data.blocks && this.data.hash === hash) return console.log("File stats changed, but content is the same. Skipping import.");
+    if (this.data.blocks && this.data.hash === hash) {
+      console.log("File stats changed, but content is the same. Skipping import.");
+      return;
+    }
     this.data.hash = hash;
     this.data.last_read_hash = hash;
-    const blocks = markdown_to_blocks(content);
-    this.data.blocks = blocks;
+    const blocks_obj = markdown_to_blocks(content);
+    this.data.blocks = blocks_obj;
     const outlinks = get_markdown_links(content);
     this.data.outlinks = outlinks;
-    for (const [sub_key, value] of Object.entries(blocks)) {
-      const block_key = this.item.key + sub_key;
-      const block_content = content.split("\n").slice(value[0] - 1, value[1]).join("\n");
-      const block_outlinks = get_markdown_links(block_content);
-      const block = await this.item.block_collection.create_or_update({
-        key: block_key,
-        outlinks: block_outlinks,
-        size: block_content.length
-      });
-      block._embed_input = block.breadcrumbs + "\n" + block_content;
-      block.data.hash = await this.create_hash(block._embed_input);
+    if (this.item.block_collection) {
+      for (const [sub_key, line_range] of Object.entries(blocks_obj)) {
+        const block_key = `${this.source.key}${sub_key}`;
+        const block_content = get_line_range(content, line_range[0], line_range[1]);
+        const block_outlinks = get_markdown_links(block_content);
+        const block = await this.item.block_collection.create_or_update({
+          key: block_key,
+          outlinks: block_outlinks,
+          size: block_content.length
+        });
+        block._embed_input = `${block.breadcrumbs}
+${block_content}`;
+        block.data.hash = await this.create_hash(block._embed_input);
+      }
     }
   }
   async append(content) {
@@ -8609,14 +8113,12 @@ var MarkdownSourceAdapter = class extends TextSourceAdapter {
     await this._update(new_content);
   }
   async update(full_content, opts = {}) {
-    const {
-      mode = "replace_all"
-    } = opts;
+    const { mode = "append_blocks" } = opts;
     if (mode === "replace_all") {
-      await this.merge(full_content, { mode: "replace_all" });
-    } else if (mode === "merge_replace") {
+      await this._update(full_content);
+    } else if (mode === "replace_blocks") {
       await this.merge(full_content, { mode: "replace_blocks" });
-    } else if (mode === "merge_append") {
+    } else if (mode === "append_blocks") {
       await this.merge(full_content, { mode: "append_blocks" });
     }
   }
@@ -8630,7 +8132,7 @@ var MarkdownSourceAdapter = class extends TextSourceAdapter {
       this.source.loaded_at = null;
       await this.source.import();
     }
-    if (opts.no_changes) {
+    if (opts.no_changes && this.smart_change) {
       const unwrapped = this.smart_change.unwrap(content, { file_type: this.item.file_type });
       content = unwrapped[opts.no_changes === "after" ? "after" : "before"];
     }
@@ -8652,93 +8154,116 @@ var MarkdownSourceAdapter = class extends TextSourceAdapter {
       throw new Error("Invalid entity reference for move_to operation");
     }
     const current_content = await this.read();
-    const target_source_key = new_path.split("#")[0];
+    const [target_source_key, ...headings] = new_path.split("#");
     const target_source = this.env.smart_sources.get(target_source_key);
-    if (new_path.includes("#")) {
-      const headings = new_path.split("#").slice(1);
-      const new_headings_content = headings.map((heading, i) => `${"#".repeat(i + 1)} ${heading}`).join("\n");
-      const new_content = new_headings_content + "\n" + current_content;
+    if (headings.length > 0) {
+      const new_headings_content = this.construct_headings(headings);
+      const new_content = `${new_headings_content}
+${current_content}`;
       await this._update(new_content);
     }
     if (target_source) {
-      await target_source.merge(current_content, { mode: "append_blocks" });
+      await this.merge(current_content, { mode: "append_blocks" });
     } else {
-      await this.fs.rename(this.file_path, target_source_key);
-      const new_source = await this.item.collection.create_or_update({ path: target_source_key, content: current_content });
-      await new_source.import();
+      await this.rename_and_import(target_source_key, current_content);
     }
     if (this.item.key !== target_source_key) await this.remove();
   }
+  construct_headings(headings) {
+    return headings.map((heading, i) => `${"#".repeat(i + 1)} ${heading}`).join("\n");
+  }
+  async rename_and_import(target_source_key, content) {
+    await this.fs.rename(this.file_path, target_source_key);
+    const new_source = await this.item.collection.create_or_update({ path: target_source_key, content });
+    await new_source.import();
+  }
+  /**
+   * Merge content into the source
+   * @param {string} content - The content to merge into the source
+   * @param {Object} opts - Options for the merge operation
+   * @param {string} opts.mode - The mode to use for the merge operation. Defaults to 'append_blocks' (may also be 'replace_blocks')
+   */
   async merge(content, opts = {}) {
     const { mode = "append_blocks" } = opts;
-    const { blocks } = await this.item.smart_chunks.parse({
-      content,
-      file_path: this.file_path
-    });
-    if (!Array.isArray(blocks)) throw new Error("merge error: parse returned blocks that were not an array", blocks);
-    blocks.forEach((block) => {
-      block.content = content.split("\n").slice(block.lines[0], block.lines[1] + 1).join("\n");
-      const match = this.item.blocks.find((b) => b.key === block.path);
-      if (match) {
-        block.matched = true;
-        match.matched = true;
-      }
-    });
-    if (mode === "replace_all") {
-      if (this.smart_change) {
-        let all = "";
-        const new_blocks = blocks.sort((a, b) => a.lines[0] - b.lines[0]);
-        if (new_blocks[0].lines[0] > 0) {
-          all += content.split("\n").slice(0, new_blocks[0].lines[0]).join("\n");
-        }
-        for (let i = 0; i < new_blocks.length; i++) {
-          const block = new_blocks[i];
-          if (all.length) all += "\n";
-          if (block.matched) {
-            const og = this.env.smart_blocks.get(block.path);
-            all += this.smart_change.wrap("content", {
-              before: await og.read({ no_changes: "before", headings: "last" }),
-              after: block.content,
-              adapter: this.item.smart_change_adapter
-            });
-          } else {
-            all += this.smart_change.wrap("content", {
-              before: "",
-              after: block.content,
-              adapter: this.item.smart_change_adapter
-            });
-          }
-        }
-        const unmatched_old = this.item.blocks.filter((b) => !b.matched);
-        for (let i = 0; i < unmatched_old.length; i++) {
-          const block = unmatched_old[i];
-          all += (all.length ? "\n" : "") + this.smart_change.wrap("content", {
-            before: await block.read({ no_changes: "before", headings: "last" }),
-            after: "",
-            adapter: this.item.smart_change_adapter
-          });
-        }
-        await this._update(all);
+    const blocks_obj = markdown_to_blocks(content);
+    if (typeof blocks_obj !== "object" || Array.isArray(blocks_obj)) {
+      console.warn("merge error: Expected an object from markdown_to_blocks, but received:", blocks_obj);
+      throw new Error("merge error: markdown_to_blocks did not return an object as expected.");
+    }
+    const { new_blocks, new_with_parent_blocks, changed_blocks, same_blocks } = await this.get_changes(blocks_obj, content);
+    for (const block of new_blocks) {
+      await this.append(block.content);
+    }
+    for (const block of new_with_parent_blocks) {
+      const parent_block = this.env.smart_blocks.get(block.parent_key);
+      await parent_block.append(block.content);
+    }
+    for (const block of changed_blocks) {
+      const changed_block = this.item.block_collection.get(block.key);
+      if (mode === "replace_blocks") {
+        await changed_block.update(block.content);
       } else {
-        await this._update(content);
-      }
-    } else {
-      for (let i = 0; i < blocks.length; i++) {
-        const block = blocks[i];
-        if (block.matched) {
-          const to_block = this.env.smart_blocks.get(block.path);
-          if (mode === "append_blocks") {
-            await to_block.append(block.content);
-          } else {
-            await to_block.update(block.content);
-          }
-        }
-      }
-      const unmatched_content = blocks.filter((block) => !block.matched).map((block) => block.content).join("\n");
-      if (unmatched_content.length) {
-        await this.append(unmatched_content);
+        await changed_block.append(block.content);
       }
     }
+  }
+  async get_changes(blocks_obj, content) {
+    const new_blocks = [];
+    const new_with_parent_blocks = [];
+    const changed_blocks = [];
+    const same_blocks = [];
+    const existing_blocks = this.source.data.blocks || {};
+    for (const [sub_key, line_range] of Object.entries(blocks_obj)) {
+      const has_existing = !!existing_blocks[sub_key];
+      const block_key = `${this.source.key}${sub_key}`;
+      const block_content = get_line_range(content, line_range[0], line_range[1]);
+      if (!has_existing) {
+        new_blocks.push({
+          key: block_key,
+          state: "new",
+          content: block_content
+        });
+        continue;
+      }
+      let has_parent;
+      let headings = sub_key.split("#");
+      let parent_key;
+      while (!has_parent && headings.length > 0) {
+        headings.pop();
+        parent_key = headings.join("#");
+        has_parent = !!existing_blocks[parent_key];
+      }
+      if (has_parent) {
+        new_with_parent_blocks.push({
+          key: block_key,
+          parent_key: `${this.source.key}${parent_key}`,
+          state: "new",
+          content: block_content
+        });
+        continue;
+      }
+      const block = this.item.env.smart_blocks.get(block_key);
+      const content_hash = await this.create_hash(block_content);
+      if (content_hash !== block.hash) {
+        changed_blocks.push({
+          key: block_key,
+          state: "changed",
+          content: block_content
+        });
+        continue;
+      }
+      same_blocks.push({
+        key: block_key,
+        state: "same",
+        content: block_content
+      });
+    }
+    return {
+      new_blocks,
+      new_with_parent_blocks,
+      changed_blocks,
+      same_blocks
+    };
   }
   async block_read(opts = {}) {
     const source_content = await this.read();
@@ -8759,16 +8284,6 @@ var MarkdownSourceAdapter = class extends TextSourceAdapter {
   }
   _block_read(source_content, block_key) {
     return block_read(source_content, block_key);
-  }
-  prepend_headings(content, mode) {
-    const headings = this.file_path.split("#").slice(1);
-    let prepend_content = "";
-    if (mode === "all") {
-      prepend_content = headings.map((h, i) => "#".repeat(i + 1) + " " + h).join("\n");
-    } else if (mode === "last") {
-      prepend_content = "#".repeat(headings.length) + " " + headings[headings.length - 1];
-    }
-    return prepend_content + (prepend_content ? "\n" : "") + content;
   }
   async block_append(append_content) {
     let all_lines = (await this.read()).split("\n");
@@ -8908,10 +8423,10 @@ var SmartCollectionDataAdapter = class {
   }
   // REQUIRED METHODS IN SUBCLASSES
   async load() {
-    throw new Error("SmartCollectionItemAdapter: load() not implemented");
+    throw new Error("SmartCollectionDataAdapter: load() not implemented");
   }
   async save() {
-    throw new Error("SmartCollectionItemAdapter: save() not implemented");
+    throw new Error("SmartCollectionDataAdapter: save() not implemented");
   }
   // END REQUIRED METHODS IN SUBCLASSES
   get env() {
@@ -9013,9 +8528,6 @@ var SmartCollectionMultiFileDataAdapter = class extends SmartCollectionDataAdapt
     }
   }
 };
-
-// src/smart_env.config.js
-var import_smart_chunks = __toESM(require_smart_chunks(), 1);
 
 // node_modules/smart-embed-model/node_modules/smart-model/smart_model.js
 var SmartModel = class {
@@ -9731,7 +9243,7 @@ var SmartEmbedIframeAdapter = class extends SmartEmbedAdapter {
 };
 
 // node_modules/smart-embed-model/connectors/transformers_iframe.js
-var transformers_connector = '// ../smart-model/smart_model.js\nvar SmartModel = class {\n  constructor(opts = {}) {\n    this.opts = opts;\n  }\n  get settings_config() {\n    return this.process_settings_config({\n      // SETTINGS GO HERE\n    });\n  }\n  process_settings_config(_settings_config, prefix = null) {\n    return Object.entries(_settings_config).reduce((acc, [key, val]) => {\n      if (val.conditional) {\n        if (!val.conditional(this)) return acc;\n        delete val.conditional;\n      }\n      const new_key = (prefix ? prefix + "." : "") + this.process_setting_key(key);\n      acc[new_key] = val;\n      return acc;\n    }, {});\n  }\n  process_setting_key(key) {\n    return key;\n  }\n  // override in sub-class if needed for prefixes and variable replacements\n};\n\n// models.json\nvar models_default = {\n  "TaylorAI/bge-micro-v2": {\n    id: "TaylorAI/bge-micro-v2",\n    batch_size: 1,\n    dims: 384,\n    max_tokens: 512,\n    name: "BGE-micro-v2",\n    description: "Local, 512 tokens, 384 dim",\n    adapter: "transformers"\n  },\n  "andersonbcdefg/bge-small-4096": {\n    id: "andersonbcdefg/bge-small-4096",\n    batch_size: 1,\n    dims: 384,\n    max_tokens: 4096,\n    name: "BGE-small-4K",\n    description: "Local, 4,096 tokens, 384 dim",\n    adapter: "transformers"\n  },\n  "Xenova/jina-embeddings-v2-base-zh": {\n    id: "Xenova/jina-embeddings-v2-base-zh",\n    batch_size: 1,\n    dims: 512,\n    max_tokens: 8192,\n    name: "Jina-v2-base-zh-8K",\n    description: "Local, 8,192 tokens, 512 dim, Chinese/English bilingual",\n    adapter: "transformers"\n  },\n  "text-embedding-3-small": {\n    id: "text-embedding-3-small",\n    batch_size: 50,\n    dims: 1536,\n    max_tokens: 8191,\n    name: "OpenAI Text-3 Small",\n    description: "API, 8,191 tokens, 1,536 dim",\n    endpoint: "https://api.openai.com/v1/embeddings",\n    adapter: "openai"\n  },\n  "text-embedding-3-large": {\n    id: "text-embedding-3-large",\n    batch_size: 50,\n    dims: 3072,\n    max_tokens: 8191,\n    name: "OpenAI Text-3 Large",\n    description: "API, 8,191 tokens, 3,072 dim",\n    endpoint: "https://api.openai.com/v1/embeddings",\n    adapter: "openai"\n  },\n  "text-embedding-3-small-512": {\n    id: "text-embedding-3-small",\n    batch_size: 50,\n    dims: 512,\n    max_tokens: 8191,\n    name: "OpenAI Text-3 Small - 512",\n    description: "API, 8,191 tokens, 512 dim",\n    endpoint: "https://api.openai.com/v1/embeddings",\n    adapter: "openai"\n  },\n  "text-embedding-3-large-256": {\n    id: "text-embedding-3-large",\n    batch_size: 50,\n    dims: 256,\n    max_tokens: 8191,\n    name: "OpenAI Text-3 Large - 256",\n    description: "API, 8,191 tokens, 256 dim",\n    endpoint: "https://api.openai.com/v1/embeddings",\n    adapter: "openai"\n  },\n  "text-embedding-ada-002": {\n    id: "text-embedding-ada-002",\n    batch_size: 50,\n    dims: 1536,\n    max_tokens: 8191,\n    name: "OpenAI Ada",\n    description: "API, 8,191 tokens, 1,536 dim",\n    endpoint: "https://api.openai.com/v1/embeddings",\n    adapter: "openai"\n  },\n  "Xenova/jina-embeddings-v2-small-en": {\n    id: "Xenova/jina-embeddings-v2-small-en",\n    batch_size: 1,\n    dims: 512,\n    max_tokens: 8192,\n    name: "Jina-v2-small-en",\n    description: "Local, 8,192 tokens, 512 dim",\n    adapter: "transformers"\n  },\n  "nomic-ai/nomic-embed-text-v1.5": {\n    id: "nomic-ai/nomic-embed-text-v1.5",\n    batch_size: 1,\n    dims: 256,\n    max_tokens: 8192,\n    name: "Nomic-embed-text-v1.5",\n    description: "Local, 8,192 tokens, 256 dim",\n    adapter: "transformers"\n  },\n  "Xenova/bge-small-en-v1.5": {\n    id: "Xenova/bge-small-en-v1.5",\n    batch_size: 1,\n    dims: 384,\n    max_tokens: 512,\n    name: "BGE-small",\n    description: "Local, 512 tokens, 384 dim",\n    adapter: "transformers"\n  },\n  "nomic-ai/nomic-embed-text-v1": {\n    id: "nomic-ai/nomic-embed-text-v1",\n    batch_size: 1,\n    dims: 768,\n    max_tokens: 2048,\n    name: "Nomic-embed-text",\n    description: "Local, 2,048 tokens, 768 dim",\n    adapter: "transformers"\n  }\n};\n\n// smart_embed_model.js\nvar SmartEmbedModel = class extends SmartModel {\n  /**\n   * Create a SmartEmbed instance.\n   * @param {string} env - The environment to use.\n   * @param {object} opts - Full model configuration object or at least a model_key and adapter\n   */\n  constructor(env, opts = {}) {\n    super(opts);\n    if (this.opts.model_key === "None") return console.log(`Smart Embed Model: No active embedding model for ${this.collection_key}, skipping embedding`);\n    this.env = env;\n    this.opts = {\n      ...this.env.opts.modules.smart_embed_model?.class ? { ...this.env.opts.modules.smart_embed_model, class: null } : {},\n      ...models_default[opts.model_key],\n      // ewww gross\n      ...opts\n    };\n    if (!this.opts.adapter) return console.warn("SmartEmbedModel adapter not set");\n    if (!this.opts.adapters[this.opts.adapter]) return console.warn(`SmartEmbedModel adapter ${this.opts.adapter} not found`);\n    this.opts.use_gpu = typeof navigator !== "undefined" && !!navigator?.gpu && this.opts.gpu_batch_size !== 0;\n    if (this.opts.adapter === "transformers" && this.opts.use_gpu) this.opts.batch_size = this.opts.gpu_batch_size || 10;\n  }\n  get adapters() {\n    return this.opts.adapters || this.env.opts.modules.smart_embed_model.adapters;\n  }\n  get adapter() {\n    if (!this._adapter) this._adapter = new this.adapters[this.opts.adapter](this);\n    return this._adapter;\n  }\n  async load() {\n    this.loading = true;\n    await this.adapter.load();\n    this.loading = false;\n    this.loaded = true;\n  }\n  async unload() {\n    await this.adapter.unload();\n  }\n  /**\n   * Count the number of tokens in the input string.\n   * @param {string} input - The input string to process.\n   * @returns {Promise<number>} A promise that resolves with the number of tokens.\n   */\n  async count_tokens(input) {\n    return this.adapter.count_tokens(input);\n  }\n  /**\n   * Embed the input into a numerical array.\n   * @param {string|Object} input - The input to embed. Can be a string or an object with an "embed_input" property.\n   * @returns {Promise<Object>} A promise that resolves with an object containing the embedding vector at `vec` and the number of tokens at `tokens`.\n   */\n  async embed(input) {\n    if (typeof input === "string") input = { embed_input: input };\n    return (await this.embed_batch([input]))[0];\n  }\n  /**\n   * Embed a batch of inputs into arrays of numerical arrays.\n   * @param {Array<string|Object>} inputs - The array of inputs to embed. Each input can be a string or an object with an "embed_input" property.\n   * @returns {Promise<Array<Object>>} A promise that resolves with an array of objects containing `vec` and `tokens` properties.\n   */\n  async embed_batch(inputs) {\n    return await this.adapter.embed_batch(inputs);\n  }\n  get model_config() {\n    return models_default[this.opts.model_key];\n  }\n  get batch_size() {\n    return this.opts.batch_size || 1;\n  }\n  get max_tokens() {\n    return this.opts.max_tokens || 512;\n  }\n  get dims() {\n    return this.opts.dims;\n  }\n  get min_chars() {\n    return this.settings?.[this.opts.model_key]?.min_chars || 300;\n  }\n  // TODO: replace static opts with dynamic reference to canonical settings via opts.settings (like smart-chat-model-v2)\n  get settings() {\n    return this.opts.settings;\n  }\n  // ref to canonical settings\n  get settings_config() {\n    return this.process_settings_config(settings_config, "embed_model");\n  }\n  process_setting_key(key) {\n    return key.replace(/\\[EMBED_MODEL\\]/g, this.opts.model_key);\n  }\n  get_embedding_model_options() {\n    return Object.entries(models_default).map(([key, model2]) => ({ value: key, name: key }));\n  }\n  get_block_embedding_model_options() {\n    const options = this.get_embedding_model_options();\n    options.unshift({ value: "None", name: "None" });\n    return options;\n  }\n};\nvar settings_config = {\n  model_key: {\n    name: "Embedding Model",\n    type: "dropdown",\n    description: "Select an embedding model.",\n    options_callback: "embed_model.get_embedding_model_options",\n    callback: "embed_model_changed",\n    default: "TaylorAI/bge-micro-v2"\n    // required: true\n  },\n  "[EMBED_MODEL].min_chars": {\n    name: "Minimum Embedding Length",\n    type: "number",\n    description: "Minimum length of note to embed.",\n    placeholder: "Enter number ex. 300"\n    // callback: \'refresh_embeddings\',\n    // required: true,\n  },\n  "[EMBED_MODEL].api_key": {\n    name: "OpenAI API Key for embeddings",\n    type: "password",\n    description: "Required for OpenAI embedding models",\n    placeholder: "Enter OpenAI API Key",\n    // callback: \'test_api_key_openai_embeddings\',\n    // callback: \'restart\', // TODO: should be replaced with better unload/reload of smart_embed\n    conditional: (_this) => !_this.settings.model_key?.includes("/")\n  },\n  "[EMBED_MODEL].gpu_batch_size": {\n    name: "GPU Batch Size",\n    type: "number",\n    description: "Number of embeddings to process per batch on GPU. Use 0 to disable GPU.",\n    placeholder: "Enter number ex. 10"\n    // callback: \'restart\',\n  },\n  "legacy_transformers": {\n    name: "Legacy Transformers (no GPU)",\n    type: "toggle",\n    description: "Use legacy transformers (v2) instead of v3.",\n    callback: "embed_model_changed"\n  }\n};\n\n// adapters/_adapter.js\nvar SmartEmbedAdapter = class {\n  constructor(smart_embed) {\n    this.smart_embed = smart_embed;\n  }\n  async load() {\n    throw new Error("Not implemented");\n  }\n  async count_tokens(input) {\n    throw new Error("Not implemented");\n  }\n  async embed(input) {\n    throw new Error("Not implemented");\n  }\n  async embed_batch(input) {\n    throw new Error("Not implemented");\n  }\n  unload() {\n  }\n};\n\n// adapters/transformers.js\nvar SmartEmbedTransformersAdapter = class extends SmartEmbedAdapter {\n  constructor(smart_embed) {\n    super(smart_embed);\n    this.model = null;\n    this.tokenizer = null;\n  }\n  get batch_size() {\n    if (this.use_gpu && this.smart_embed.opts.gpu_batch_size) return this.smart_embed.opts.gpu_batch_size;\n    return this.smart_embed.opts.batch_size || 1;\n  }\n  get max_tokens() {\n    return this.smart_embed.opts.max_tokens || 512;\n  }\n  get use_gpu() {\n    return this.smart_embed.opts.use_gpu || false;\n  }\n  async load() {\n    const { pipeline, env, AutoTokenizer } = await import("@xenova/transformers");\n    env.allowLocalModels = false;\n    const pipeline_opts = {\n      quantized: true\n    };\n    if (this.use_gpu) {\n      console.log("[Transformers] Using GPU");\n      pipeline_opts.device = "webgpu";\n      pipeline_opts.dtype = "fp32";\n    } else {\n      console.log("[Transformers] Using CPU");\n      env.backends.onnx.wasm.numThreads = 8;\n    }\n    this.model = await pipeline("feature-extraction", this.smart_embed.opts.model_key, pipeline_opts);\n    this.tokenizer = await AutoTokenizer.from_pretrained(this.smart_embed.opts.model_key);\n  }\n  async count_tokens(input) {\n    if (!this.tokenizer) await this.load();\n    const { input_ids } = await this.tokenizer(input);\n    return { tokens: input_ids.data.length };\n  }\n  async embed_batch(inputs) {\n    if (!this.model) await this.load();\n    const filtered_inputs = inputs.filter((item) => item.embed_input?.length > 0);\n    if (!filtered_inputs.length) return [];\n    if (filtered_inputs.length > this.batch_size) {\n      throw new Error(`Input size (${filtered_inputs.length}) exceeds maximum batch size (${this.batch_size})`);\n    }\n    const tokens = await Promise.all(filtered_inputs.map((item) => this.count_tokens(item.embed_input)));\n    const embed_inputs = await Promise.all(filtered_inputs.map(async (item, i) => {\n      if (tokens[i].tokens < this.max_tokens) return item.embed_input;\n      let token_ct = tokens[i].tokens;\n      let truncated_input = item.embed_input;\n      while (token_ct > this.max_tokens) {\n        const pct = this.max_tokens / token_ct;\n        const max_chars = Math.floor(truncated_input.length * pct * 0.9);\n        truncated_input = truncated_input.substring(0, max_chars) + "...";\n        token_ct = (await this.count_tokens(truncated_input)).tokens;\n      }\n      tokens[i].tokens = token_ct;\n      return truncated_input;\n    }));\n    try {\n      const resp = await this.model(embed_inputs, { pooling: "mean", normalize: true });\n      return filtered_inputs.map((item, i) => {\n        item.vec = Array.from(resp[i].data).map((val) => Math.round(val * 1e8) / 1e8);\n        item.tokens = tokens[i].tokens;\n        return item;\n      });\n    } catch (err) {\n      console.error("error_embedding_batch", err);\n      return Promise.all(filtered_inputs.map((item) => this.embed(item.embed_input)));\n    }\n  }\n  async unload() {\n    await this.model.dispose();\n  }\n};\n\n// build/transformers_iframe_script.js\nvar model = null;\nvar smart_env = {\n  smart_embed_active_models: {},\n  opts: {\n    modules: {\n      smart_embed_model: {\n        adapters: {\n          transformers: SmartEmbedTransformersAdapter\n        }\n      }\n    }\n  }\n};\nasync function processMessage(data) {\n  const { method, params, id, iframe_id } = data;\n  try {\n    let result;\n    switch (method) {\n      case "init":\n        console.log("init");\n        break;\n      case "load":\n        console.log("load", params);\n        model = new SmartEmbedModel(smart_env, { ...params, adapters: { transformers: SmartEmbedTransformersAdapter }, adapter: "transformers" });\n        await model.load();\n        result = { model_loaded: true };\n        break;\n      case "embed_batch":\n        if (!model) throw new Error("Model not loaded");\n        result = await model.embed_batch(params.inputs);\n        break;\n      case "count_tokens":\n        if (!model) throw new Error("Model not loaded");\n        result = await model.count_tokens(params);\n        break;\n      case "unload":\n        await model.unload();\n        result = { unloaded: true };\n        break;\n      default:\n        throw new Error(`Unknown method: ${method}`);\n    }\n    return { id, result, iframe_id };\n  } catch (error) {\n    console.error("Error processing message:", error);\n    return { id, error: error.message, iframe_id };\n  }\n}\nprocessMessage({ method: "init" });\n';
+var transformers_connector = '// ../smart-model/smart_model.js\nvar SmartModel = class {\n  constructor(opts = {}) {\n    this.opts = opts;\n  }\n  get settings_config() {\n    return this.process_settings_config({\n      // SETTINGS GO HERE\n    });\n  }\n  process_settings_config(_settings_config, prefix = null) {\n    return Object.entries(_settings_config).reduce((acc, [key, val]) => {\n      if (val.conditional) {\n        if (!val.conditional(this)) return acc;\n        delete val.conditional;\n      }\n      const new_key = (prefix ? prefix + "." : "") + this.process_setting_key(key);\n      acc[new_key] = val;\n      return acc;\n    }, {});\n  }\n  process_setting_key(key) {\n    return key;\n  }\n  // override in sub-class if needed for prefixes and variable replacements\n};\n\n// models.json\nvar models_default = {\n  "TaylorAI/bge-micro-v2": {\n    id: "TaylorAI/bge-micro-v2",\n    batch_size: 1,\n    dims: 384,\n    max_tokens: 512,\n    name: "BGE-micro-v2",\n    description: "Local, 512 tokens, 384 dim",\n    adapter: "transformers"\n  },\n  "andersonbcdefg/bge-small-4096": {\n    id: "andersonbcdefg/bge-small-4096",\n    batch_size: 1,\n    dims: 384,\n    max_tokens: 4096,\n    name: "BGE-small-4K",\n    description: "Local, 4,096 tokens, 384 dim",\n    adapter: "transformers"\n  },\n  "Xenova/jina-embeddings-v2-base-zh": {\n    id: "Xenova/jina-embeddings-v2-base-zh",\n    batch_size: 1,\n    dims: 512,\n    max_tokens: 8192,\n    name: "Jina-v2-base-zh-8K",\n    description: "Local, 8,192 tokens, 512 dim, Chinese/English bilingual",\n    adapter: "transformers"\n  },\n  "text-embedding-3-small": {\n    id: "text-embedding-3-small",\n    batch_size: 50,\n    dims: 1536,\n    max_tokens: 8191,\n    name: "OpenAI Text-3 Small",\n    description: "API, 8,191 tokens, 1,536 dim",\n    endpoint: "https://api.openai.com/v1/embeddings",\n    adapter: "openai"\n  },\n  "text-embedding-3-large": {\n    id: "text-embedding-3-large",\n    batch_size: 50,\n    dims: 3072,\n    max_tokens: 8191,\n    name: "OpenAI Text-3 Large",\n    description: "API, 8,191 tokens, 3,072 dim",\n    endpoint: "https://api.openai.com/v1/embeddings",\n    adapter: "openai"\n  },\n  "text-embedding-3-small-512": {\n    id: "text-embedding-3-small",\n    batch_size: 50,\n    dims: 512,\n    max_tokens: 8191,\n    name: "OpenAI Text-3 Small - 512",\n    description: "API, 8,191 tokens, 512 dim",\n    endpoint: "https://api.openai.com/v1/embeddings",\n    adapter: "openai"\n  },\n  "text-embedding-3-large-256": {\n    id: "text-embedding-3-large",\n    batch_size: 50,\n    dims: 256,\n    max_tokens: 8191,\n    name: "OpenAI Text-3 Large - 256",\n    description: "API, 8,191 tokens, 256 dim",\n    endpoint: "https://api.openai.com/v1/embeddings",\n    adapter: "openai"\n  },\n  "text-embedding-ada-002": {\n    id: "text-embedding-ada-002",\n    batch_size: 50,\n    dims: 1536,\n    max_tokens: 8191,\n    name: "OpenAI Ada",\n    description: "API, 8,191 tokens, 1,536 dim",\n    endpoint: "https://api.openai.com/v1/embeddings",\n    adapter: "openai"\n  },\n  "Xenova/jina-embeddings-v2-small-en": {\n    id: "Xenova/jina-embeddings-v2-small-en",\n    batch_size: 1,\n    dims: 512,\n    max_tokens: 8192,\n    name: "Jina-v2-small-en",\n    description: "Local, 8,192 tokens, 512 dim",\n    adapter: "transformers"\n  },\n  "nomic-ai/nomic-embed-text-v1.5": {\n    id: "nomic-ai/nomic-embed-text-v1.5",\n    batch_size: 1,\n    dims: 256,\n    max_tokens: 8192,\n    name: "Nomic-embed-text-v1.5",\n    description: "Local, 8,192 tokens, 256 dim",\n    adapter: "transformers"\n  },\n  "Xenova/bge-small-en-v1.5": {\n    id: "Xenova/bge-small-en-v1.5",\n    batch_size: 1,\n    dims: 384,\n    max_tokens: 512,\n    name: "BGE-small",\n    description: "Local, 512 tokens, 384 dim",\n    adapter: "transformers"\n  },\n  "nomic-ai/nomic-embed-text-v1": {\n    id: "nomic-ai/nomic-embed-text-v1",\n    batch_size: 1,\n    dims: 768,\n    max_tokens: 2048,\n    name: "Nomic-embed-text",\n    description: "Local, 2,048 tokens, 768 dim",\n    adapter: "transformers"\n  }\n};\n\n// smart_embed_model.js\nvar SmartEmbedModel = class extends SmartModel {\n  /**\n   * Create a SmartEmbed instance.\n   * @param {string} env - The environment to use.\n   * @param {object} opts - Full model configuration object or at least a model_key and adapter\n   */\n  constructor(env, opts = {}) {\n    super(opts);\n    if (this.opts.model_key === "None") return console.log(`Smart Embed Model: No active embedding model for ${this.collection_key}, skipping embedding`);\n    this.env = env;\n    this.opts = {\n      ...this.env.opts.modules.smart_embed_model?.class ? { ...this.env.opts.modules.smart_embed_model, class: null } : {},\n      ...models_default[opts.model_key],\n      // ewww gross\n      ...opts\n    };\n    if (!this.opts.adapter) return console.warn("SmartEmbedModel adapter not set");\n    if (!this.opts.adapters[this.opts.adapter]) return console.warn(`SmartEmbedModel adapter ${this.opts.adapter} not found`);\n    this.opts.use_gpu = typeof navigator !== "undefined" && !!navigator?.gpu && this.opts.gpu_batch_size !== 0;\n    if (this.opts.adapter === "transformers" && this.opts.use_gpu) this.opts.batch_size = this.opts.gpu_batch_size || 10;\n  }\n  get adapters() {\n    return this.opts.adapters || this.env.opts.modules.smart_embed_model.adapters;\n  }\n  get adapter() {\n    if (!this._adapter) this._adapter = new this.adapters[this.opts.adapter](this);\n    return this._adapter;\n  }\n  async load() {\n    this.loading = true;\n    await this.adapter.load();\n    this.loading = false;\n    this.loaded = true;\n  }\n  async unload() {\n    await this.adapter.unload();\n  }\n  /**\n   * Count the number of tokens in the input string.\n   * @param {string} input - The input string to process.\n   * @returns {Promise<number>} A promise that resolves with the number of tokens.\n   */\n  async count_tokens(input) {\n    return this.adapter.count_tokens(input);\n  }\n  /**\n   * Embed the input into a numerical array.\n   * @param {string|Object} input - The input to embed. Can be a string or an object with an "embed_input" property.\n   * @returns {Promise<Object>} A promise that resolves with an object containing the embedding vector at `vec` and the number of tokens at `tokens`.\n   */\n  async embed(input) {\n    if (typeof input === "string") input = { embed_input: input };\n    return (await this.embed_batch([input]))[0];\n  }\n  /**\n   * Embed a batch of inputs into arrays of numerical arrays.\n   * @param {Array<string|Object>} inputs - The array of inputs to embed. Each input can be a string or an object with an "embed_input" property.\n   * @returns {Promise<Array<Object>>} A promise that resolves with an array of objects containing `vec` and `tokens` properties.\n   */\n  async embed_batch(inputs) {\n    return await this.adapter.embed_batch(inputs);\n  }\n  get model_config() {\n    return models_default[this.opts.model_key];\n  }\n  get batch_size() {\n    return this.opts.batch_size || 1;\n  }\n  get max_tokens() {\n    return this.opts.max_tokens || 512;\n  }\n  get dims() {\n    return this.opts.dims;\n  }\n  get min_chars() {\n    return this.settings?.[this.opts.model_key]?.min_chars || 300;\n  }\n  // TODO: replace static opts with dynamic reference to canonical settings via opts.settings (like smart-chat-model-v2)\n  get settings() {\n    return this.opts.settings;\n  }\n  // ref to canonical settings\n  get settings_config() {\n    return this.process_settings_config(settings_config, "embed_model");\n  }\n  process_setting_key(key) {\n    return key.replace(/\\[EMBED_MODEL\\]/g, this.opts.model_key);\n  }\n  get_embedding_model_options() {\n    return Object.entries(models_default).map(([key, model2]) => ({ value: key, name: key }));\n  }\n  get_block_embedding_model_options() {\n    const options = this.get_embedding_model_options();\n    options.unshift({ value: "None", name: "None" });\n    return options;\n  }\n};\nvar settings_config = {\n  model_key: {\n    name: "Embedding Model",\n    type: "dropdown",\n    description: "Select an embedding model.",\n    options_callback: "embed_model.get_embedding_model_options",\n    callback: "embed_model_changed",\n    default: "TaylorAI/bge-micro-v2"\n    // required: true\n  },\n  "[EMBED_MODEL].min_chars": {\n    name: "Minimum Embedding Length",\n    type: "number",\n    description: "Minimum length of note to embed.",\n    placeholder: "Enter number ex. 300"\n    // callback: \'refresh_embeddings\',\n    // required: true,\n  },\n  "[EMBED_MODEL].api_key": {\n    name: "OpenAI API Key for embeddings",\n    type: "password",\n    description: "Required for OpenAI embedding models",\n    placeholder: "Enter OpenAI API Key",\n    // callback: \'test_api_key_openai_embeddings\',\n    // callback: \'restart\', // TODO: should be replaced with better unload/reload of smart_embed\n    conditional: (_this) => !_this.settings.model_key?.includes("/")\n  },\n  "[EMBED_MODEL].gpu_batch_size": {\n    name: "GPU Batch Size",\n    type: "number",\n    description: "Number of embeddings to process per batch on GPU. Use 0 to disable GPU.",\n    placeholder: "Enter number ex. 10"\n    // callback: \'restart\',\n  },\n  "legacy_transformers": {\n    name: "Legacy Transformers (no GPU)",\n    type: "toggle",\n    description: "Use legacy transformers (v2) instead of v3.",\n    callback: "embed_model_changed",\n    default: true\n  }\n};\n\n// adapters/_adapter.js\nvar SmartEmbedAdapter = class {\n  constructor(smart_embed) {\n    this.smart_embed = smart_embed;\n  }\n  async load() {\n    throw new Error("Not implemented");\n  }\n  async count_tokens(input) {\n    throw new Error("Not implemented");\n  }\n  async embed(input) {\n    throw new Error("Not implemented");\n  }\n  async embed_batch(input) {\n    throw new Error("Not implemented");\n  }\n  unload() {\n  }\n};\n\n// adapters/transformers.js\nvar SmartEmbedTransformersAdapter = class extends SmartEmbedAdapter {\n  constructor(smart_embed) {\n    super(smart_embed);\n    this.model = null;\n    this.tokenizer = null;\n  }\n  get batch_size() {\n    if (this.use_gpu && this.smart_embed.opts.gpu_batch_size) return this.smart_embed.opts.gpu_batch_size;\n    return this.smart_embed.opts.batch_size || 1;\n  }\n  get max_tokens() {\n    return this.smart_embed.opts.max_tokens || 512;\n  }\n  get use_gpu() {\n    return this.smart_embed.opts.use_gpu || false;\n  }\n  async load() {\n    const { pipeline, env, AutoTokenizer } = await import("@xenova/transformers");\n    env.allowLocalModels = false;\n    const pipeline_opts = {\n      quantized: true\n    };\n    if (this.use_gpu) {\n      console.log("[Transformers] Using GPU");\n      pipeline_opts.device = "webgpu";\n      pipeline_opts.dtype = "fp32";\n    } else {\n      console.log("[Transformers] Using CPU");\n      env.backends.onnx.wasm.numThreads = 8;\n    }\n    this.model = await pipeline("feature-extraction", this.smart_embed.opts.model_key, pipeline_opts);\n    this.tokenizer = await AutoTokenizer.from_pretrained(this.smart_embed.opts.model_key);\n  }\n  async count_tokens(input) {\n    if (!this.tokenizer) await this.load();\n    const { input_ids } = await this.tokenizer(input);\n    return { tokens: input_ids.data.length };\n  }\n  async embed_batch(inputs) {\n    if (!this.model) await this.load();\n    const filtered_inputs = inputs.filter((item) => item.embed_input?.length > 0);\n    if (!filtered_inputs.length) return [];\n    if (filtered_inputs.length > this.batch_size) {\n      throw new Error(`Input size (${filtered_inputs.length}) exceeds maximum batch size (${this.batch_size})`);\n    }\n    const tokens = await Promise.all(filtered_inputs.map((item) => this.count_tokens(item.embed_input)));\n    const embed_inputs = await Promise.all(filtered_inputs.map(async (item, i) => {\n      if (tokens[i].tokens < this.max_tokens) return item.embed_input;\n      let token_ct = tokens[i].tokens;\n      let truncated_input = item.embed_input;\n      while (token_ct > this.max_tokens) {\n        const pct = this.max_tokens / token_ct;\n        const max_chars = Math.floor(truncated_input.length * pct * 0.9);\n        truncated_input = truncated_input.substring(0, max_chars) + "...";\n        token_ct = (await this.count_tokens(truncated_input)).tokens;\n      }\n      tokens[i].tokens = token_ct;\n      return truncated_input;\n    }));\n    try {\n      const resp = await this.model(embed_inputs, { pooling: "mean", normalize: true });\n      return filtered_inputs.map((item, i) => {\n        item.vec = Array.from(resp[i].data).map((val) => Math.round(val * 1e8) / 1e8);\n        item.tokens = tokens[i].tokens;\n        return item;\n      });\n    } catch (err) {\n      console.error("error_embedding_batch", err);\n      return Promise.all(filtered_inputs.map((item) => this.embed(item.embed_input)));\n    }\n  }\n  async unload() {\n    await this.model.dispose();\n  }\n};\n\n// build/transformers_iframe_script.js\nvar model = null;\nvar smart_env = {\n  smart_embed_active_models: {},\n  opts: {\n    modules: {\n      smart_embed_model: {\n        adapters: {\n          transformers: SmartEmbedTransformersAdapter\n        }\n      }\n    }\n  }\n};\nasync function processMessage(data) {\n  const { method, params, id, iframe_id } = data;\n  try {\n    let result;\n    switch (method) {\n      case "init":\n        console.log("init");\n        break;\n      case "load":\n        console.log("load", params);\n        model = new SmartEmbedModel(smart_env, { ...params, adapters: { transformers: SmartEmbedTransformersAdapter }, adapter: "transformers" });\n        await model.load();\n        result = { model_loaded: true };\n        break;\n      case "embed_batch":\n        if (!model) throw new Error("Model not loaded");\n        result = await model.embed_batch(params.inputs);\n        break;\n      case "count_tokens":\n        if (!model) throw new Error("Model not loaded");\n        result = await model.count_tokens(params);\n        break;\n      case "unload":\n        await model.unload();\n        result = { unloaded: true };\n        break;\n      default:\n        throw new Error(`Unknown method: ${method}`);\n    }\n    return { id, result, iframe_id };\n  } catch (error) {\n    console.error("Error processing message:", error);\n    return { id, error: error.message, iframe_id };\n  }\n}\nprocessMessage({ method: "init" });\n';
 
 // node_modules/smart-embed-model/adapters/transformers_iframe.js
 var SmartEmbedTransformersIframeAdapter = class extends SmartEmbedIframeAdapter {
@@ -9741,7 +9253,7 @@ var SmartEmbedTransformersIframeAdapter = class extends SmartEmbedIframeAdapter 
     if (this.smart_embed.settings.legacy_transformers) {
       this.connector = this.connector.replace("@xenova/transformers", "https://cdn.jsdelivr.net/npm/@xenova/transformers@2.17.2");
       this.smart_embed.opts.use_gpu = false;
-    } else this.connector = this.connector.replace("@xenova/transformers", "https://cdn.jsdelivr.net/npm/@huggingface/transformers@3.0.0-alpha.16");
+    } else this.connector = this.connector.replace("@xenova/transformers", "https://cdn.jsdelivr.net/npm/@huggingface/transformers@3.0.1");
   }
 };
 
@@ -9972,6 +9484,7 @@ var SmartFs = class {
    */
   is_excluded(_path) {
     try {
+      if (_path.includes("#")) return true;
       if (!this.excluded_patterns.length) return false;
       return this.excluded_patterns.some((pattern) => pattern.test(_path));
     } catch (e) {
@@ -10185,6 +9698,28 @@ var SmartFsObsidianAdapter = class {
   }
   get fs_path() {
     return this.smart_fs.fs_path;
+  }
+  get_file(file_path) {
+    const file = {};
+    file.path = file_path.replace(/\\/g, "/").replace(this.smart_fs.fs_path, "").replace(/^\//, "");
+    file.type = "file";
+    file.extension = file.path.split(".").pop().toLowerCase();
+    file.name = file.path.split("/").pop();
+    file.basename = file.name.split(".").shift();
+    Object.defineProperty(file, "stat", {
+      get: () => {
+        const tfile = this.obsidian_app.vault.getAbstractFileByPath(file_path);
+        if (tfile) {
+          return {
+            ctime: tfile.stat.ctime,
+            mtime: tfile.stat.mtime,
+            size: tfile.stat.size
+          };
+        }
+        return null;
+      }
+    });
+    return file;
   }
   /**
    * Append content to a file
@@ -10511,6 +10046,17 @@ ${attributes}
     if (typeof setting_config.conditional === "function" && !setting_config.conditional(scope)) return false;
     return true;
   }
+  /**
+   * Handles the smooth transition effect when opening overlays.
+   * @param {HTMLElement} overlay_container - The overlay container element.
+   */
+  on_open_overlay(overlay_container) {
+    overlay_container.style.transition = "background-color 0.5s ease-in-out";
+    overlay_container.style.backgroundColor = "var(--bold-color)";
+    setTimeout(() => {
+      overlay_container.style.backgroundColor = "";
+    }, 500);
+  }
 };
 function get_by_path(obj, path) {
   if (!path) return "";
@@ -10740,7 +10286,11 @@ var SmartViewAdapter = class {
       text.inputEl.type = "password";
       text.setPlaceholder(elm.dataset.placeholder || "");
       if (value) text.setValue(value);
-      text.onChange(async (value2) => this.handle_on_change(path, value2, elm, scope));
+      let debounceTimer;
+      text.onChange(async (value2) => {
+        clearTimeout(debounceTimer);
+        debounceTimer = setTimeout(() => this.handle_on_change(path, value2, elm, scope), 2e3);
+      });
     });
     return smart_setting;
   }
@@ -10752,7 +10302,11 @@ var SmartViewAdapter = class {
       if (typeof value !== "undefined") number.inputEl.value = parseInt(value);
       number.inputEl.min = elm.dataset.min || 0;
       if (elm.dataset.max) number.inputEl.max = elm.dataset.max;
-      number.onChange(async (value2) => this.handle_on_change(path, parseInt(value2), elm, scope));
+      let debounceTimer;
+      number.onChange(async (value2) => {
+        clearTimeout(debounceTimer);
+        debounceTimer = setTimeout(() => this.handle_on_change(path, parseInt(value2), elm, scope), 2e3);
+      });
     });
     return smart_setting;
   }
@@ -10773,9 +10327,11 @@ var SmartViewAdapter = class {
     smart_setting.addTextArea((textarea) => {
       textarea.setPlaceholder(elm.dataset.placeholder || "");
       textarea.setValue(value || "");
+      let debounceTimer;
       textarea.onChange(async (value2) => {
-        value2 = value2.split("\n").map((v) => v.trim()).filter((v) => v).join("\n");
-        this.handle_on_change(path, value2, elm, scope);
+        value2 = value2.split("\n").map((v) => v.trim()).filter((v) => v);
+        clearTimeout(debounceTimer);
+        debounceTimer = setTimeout(() => this.handle_on_change(path, value2, elm, scope), 2e3);
       });
     });
     return smart_setting;
@@ -11157,15 +10713,21 @@ async function post_process5(scope, frag, opts = {}) {
   frag.querySelector(".sources-load-btn")?.addEventListener("click", () => {
     scope.run_load();
   });
-  frag.querySelector(".sources-import-btn")?.addEventListener("click", () => {
-    scope.run_import();
-  });
-  frag.querySelector(".sources-refresh-btn")?.addEventListener("click", () => {
-    scope.run_refresh();
-  });
-  frag.querySelector(".sources-force-refresh-btn")?.addEventListener("click", () => {
-    scope.run_force_refresh();
-  });
+  if (scope.loaded) {
+    frag.querySelector(".sources-import-btn")?.addEventListener("click", () => {
+      scope.run_import();
+    });
+    frag.querySelector(".sources-prune-btn")?.addEventListener("click", () => {
+      scope.run_prune();
+    });
+    frag.querySelector(".sources-clear-all-btn")?.addEventListener("click", async () => {
+      if (confirm("Are you sure you want to clear all data and re-import? This action cannot be undone.")) {
+        await scope.run_clear_all();
+        scope.render_settings();
+        scope.blocks.render_settings();
+      }
+    });
+  }
   return frag;
 }
 function settings_header_html(scope, opts = {}) {
@@ -11216,15 +10778,18 @@ function get_block_heading_html(scope) {
 }
 function get_button_html(scope) {
   if (scope.collection_key !== "smart_sources") return "";
-  const load_btn_html = scope.loaded ? `<button class="sources-load-btn">Re-load Sources</button>` : `<button class="sources-load-btn">Load Sources</button>`;
-  const import_btn_html = scope.loaded ? `<button class="sources-import-btn">Run Import</button>` : "";
-  const refresh_btn_html = scope.loaded ? `<button class="sources-refresh-btn">Refresh All (prune + import)</button>` : "";
-  const force_refresh_btn_html = scope.loaded ? `<button class="sources-force-refresh-btn">Force Refresh All (clear all + import)</button>` : "";
+  const load_btn_html = `<button class="sources-load-btn">${scope.loaded ? "Re-load" : "Load"} Sources</button>`;
+  let additional_buttons = "";
+  if (scope.loaded) {
+    additional_buttons = `
+      <button class="sources-import-btn">Import</button>
+      <button class="sources-prune-btn">Prune</button>
+      <button class="sources-clear-all-btn">Clear All &amp; Re-import</button>
+    `;
+  }
   return `
     ${load_btn_html}
-    ${import_btn_html}
-    ${refresh_btn_html}
-    ${force_refresh_btn_html}
+    ${additional_buttons}
   `;
 }
 
@@ -11254,6 +10819,315 @@ async function render6(scope, opts = {}) {
   `;
   const frag = this.create_doc_fragment(html);
   return await post_process.call(this, scope, frag, opts);
+}
+
+// src/components/result.js
+async function build_html2(scope, opts = {}) {
+  const item = scope.item;
+  const score = scope.score;
+  const expanded_view = item.env.settings.expanded_view;
+  return `<div class="temp-container">
+    <div
+      class="search-result${expanded_view ? "" : " sc-collapsed"}"
+      data-path="${item.path.replace(/"/g, "&quot;")}"
+      data-link="${item.link?.replace(/"/g, "&quot;") || ""}"
+      data-collection="${item.collection_key}"
+      data-score="${score}"
+      draggable="true"
+    >
+      <span class="header">
+        ${this.get_icon_html("right-triangle")}
+        <a class="search-result-file-title" href="#" title="${item.path.replace(/"/g, "&quot;")}" draggable="true">
+          <small>${[score?.toFixed(2), item.name].join(" | ")}</small>
+        </a>
+      </span>
+      <ul draggable="true">
+        <li class="search-result-file-title" title="${item.path.replace(/"/g, "&quot;")}" data-collection="${item.collection_key}" data-key="${item.key}"></li>
+      </ul>
+    </div>
+  </div>`;
+}
+async function render7(scope, opts = {}) {
+  let html = await build_html2.call(this, scope, opts);
+  const frag = this.create_doc_fragment(html);
+  return await post_process6.call(this, scope, frag, opts);
+}
+async function post_process6(scope, frag, opts = {}) {
+  const search_result = frag.querySelector(".search-result");
+  if (typeof opts.add_result_listeners === "function") opts.add_result_listeners(search_result);
+  if (!scope.item.env.settings.expanded_view) return search_result;
+  const li = search_result.querySelector("li");
+  const collection_key = li.dataset.collection;
+  const entity_key = li.dataset.key;
+  const entity = scope.item.env[collection_key].get(entity_key);
+  if (entity) {
+    await entity.render_item(li, opts);
+  } else {
+    li.innerHTML = "<p>Entity not found.</p>";
+  }
+  return search_result;
+}
+
+// src/components/results.js
+async function build_html3(scope, opts = {}) {
+  return ``;
+}
+async function render8(scope, opts = {}) {
+  const html = await build_html3.call(this, scope, opts);
+  const frag = this.create_doc_fragment(html);
+  const results = opts.results || [];
+  const result_frags = await Promise.all(results.map((result) => {
+    return render7.call(this, result, { ...opts });
+  }));
+  result_frags.forEach((result_frag) => frag.appendChild(result_frag));
+  return frag;
+}
+
+// src/components/smart_view_filter.js
+async function render9(scope) {
+  const cohere_api_key_html = `
+    <div class="setting-component"
+      data-name="Cohere API Key"
+      data-type="text"
+      data-setting="smart_view_filter.cohere_api_key"
+      data-description="API Key required to use Cohere re-ranker."
+      data-placeholder="Enter an API Key"
+      data-button="Save"
+    ></div>
+  `;
+  const early_access_html = !scope.EARLY_ACCESS ? "" : `
+    <div class="setting-component"
+      data-name="Toggle Re-Ranker"
+      data-setting="smart_view_filter.re_rank"
+      data-description="Toggle the re-ranker"
+      data-type="toggle"
+      data-default="false"
+      data-value="false"
+      data-callback="refresh_smart_view_filter"
+    ></div>
+    ${scope.settings.smart_view_filter?.re_rank ? cohere_api_key_html : ""}
+  `;
+  const html = `
+    <!-- toggle re-ranker -->
+    ${early_access_html}
+    <div class="setting-component"
+      data-name="Show Full Path"
+      data-description="Show full path in view."
+      data-type="toggle"
+      data-setting="show_full_path"
+      data-callback="refresh_smart_view"
+    ></div>
+    <div class="setting-component"
+      data-name="Results Limit"
+      data-setting="smart_view_filter.results_limit"
+      data-description="Limit the number of results."
+      data-type="number"
+      data-default="20"
+      data-callback="refresh_smart_view"
+    ></div>
+    <!-- toggle exclude_inlinks -->
+    <div class="setting-component"
+      data-name="Exclude Inlinks"
+      data-setting="smart_view_filter.exclude_inlinks"
+      data-description="Exclude inlinks"
+      data-type="toggle"
+      data-default="false"
+      data-callback="refresh_smart_view_filter"
+    ></div>
+    <!-- toggle exclude_outlinks -->
+    <div class="setting-component"
+      data-name="Exclude Outlinks"
+      data-setting="smart_view_filter.exclude_outlinks"
+      data-description="Exclude outlinks"
+      data-type="toggle"
+      data-default="false"
+      data-callback="refresh_smart_view_filter"
+    ></div>
+    <!-- include filter -->
+    <div class="setting-component"
+      data-name="Include Filter"
+      data-setting="smart_view_filter.include_filter"
+      data-description="Require that results match this value."
+      data-type="text"
+      data-callback="refresh_smart_view"
+    ></div>
+    <!-- exclude filter -->
+    <div class="setting-component"
+      data-name="Exclude Filter"
+      data-setting="smart_view_filter.exclude_filter"
+      data-description="Exclude results that match this value."
+      data-type="text"
+      data-callback="refresh_smart_view"
+    ></div>
+  `;
+  const frag = this.create_doc_fragment(html);
+  return await post_process7.call(this, scope, frag);
+}
+async function post_process7(scope, frag) {
+  await this.render_setting_components(frag, { scope });
+  return frag;
+}
+
+// src/components/connections.js
+async function build_html4(scope, opts = {}) {
+  const context_name = scope.path.split("/").pop();
+  const html = `<div class="sc-connections-view">
+    <div class="sc-top-bar">
+      <p class="sc-context" data-key="${scope.path}">
+        ${scope.env.smart_sources.keys.length} (${scope.env.smart_blocks.keys.length})
+      </p>
+      <button class="sc-refresh">${this.get_icon_html("refresh-cw")}</button>
+      <button class="sc-fold-toggle">${this.get_icon_html(scope.env.settings.expanded_view ? "fold-vertical" : "unfold-vertical")}</button>
+      <button class="sc-filter">${this.get_icon_html("sliders-horizontal")}</button>
+      <button class="sc-search">${this.get_icon_html("search")}</button>
+      <button class="sc-help" 
+              aria-label="Open help documentation"
+              title="Open help documentation">
+        ${this.get_icon_html("help-circle")}
+      </button>
+    </div>
+    <div id="settings" class="sc-overlay"></div>
+    <div class="sc-list">
+    </div>
+    <div class="sc-bottom-bar">
+      <span class="sc-context" data-key="${scope.path}" title="${scope.path}">
+        ${context_name}${opts.re_ranked ? " (re-ranked)" : ""}
+      </span>
+      ${opts.attribution || ""}
+    </div>
+  </div>`;
+  return html;
+}
+async function render10(scope, opts = {}) {
+  let html = await build_html4.call(this, scope, opts);
+  const frag = this.create_doc_fragment(html);
+  const results = scope.find_connections({ ...opts, exclude_source_connections: scope.env.smart_blocks.settings.embed_blocks });
+  const sc_list = frag.querySelector(".sc-list");
+  const results_frag = await render8.call(this, scope, { ...opts, results });
+  Array.from(results_frag.children).forEach((elm) => sc_list.appendChild(elm));
+  return await post_process8.call(this, scope, frag, opts);
+}
+async function post_process8(scope, frag, opts = {}) {
+  const container = frag.querySelector(".sc-list");
+  const overlay_container = frag.querySelector(".sc-overlay");
+  const render_filter_settings = async () => {
+    if (!overlay_container) throw new Error("Container is required");
+    overlay_container.innerHTML = "";
+    const filter_frag = await render9.call(this, {
+      settings: scope.env.settings,
+      refresh_smart_view: opts.refresh_smart_view,
+      refresh_smart_view_filter: render_filter_settings.bind(this)
+    });
+    overlay_container.innerHTML = "";
+    overlay_container.appendChild(filter_frag);
+    this.on_open_overlay(overlay_container);
+  };
+  const toggle_button = frag.querySelector(".sc-fold-toggle");
+  toggle_button.addEventListener("click", () => {
+    const expanded = scope.env.settings.expanded_view;
+    container.querySelectorAll(".search-result").forEach((elm) => {
+      if (expanded) {
+        elm.classList.add("sc-collapsed");
+      } else {
+        elm.classList.remove("sc-collapsed");
+        const collection_key = elm.dataset.collection;
+        const entity = scope.env[collection_key].get(elm.dataset.path);
+        entity.render_item(elm.querySelector("li"));
+      }
+    });
+    scope.env.settings.expanded_view = !expanded;
+    toggle_button.innerHTML = this.get_icon_html(scope.env.settings.expanded_view ? "fold-vertical" : "unfold-vertical");
+    toggle_button.setAttribute("aria-label", scope.env.settings.expanded_view ? "Fold all" : "Unfold all");
+  });
+  const filter_button = frag.querySelector(".sc-filter");
+  filter_button.addEventListener("click", () => {
+    render_filter_settings();
+  });
+  const refresh_button = frag.querySelector(".sc-refresh");
+  refresh_button.addEventListener("click", () => {
+    opts.refresh_smart_view();
+  });
+  const search_button = frag.querySelector(".sc-search");
+  search_button.addEventListener("click", () => {
+    opts.open_search_view();
+  });
+  const help_button = frag.querySelector(".sc-help");
+  help_button.addEventListener("click", () => {
+    window.open("https://docs.smartconnections.app/connections-pane", "_blank");
+  });
+  return frag;
+}
+
+// src/components/search.js
+async function build_html5(scope, opts = {}) {
+  return `<div id="sc-search-view">
+    <div class="sc-top-bar">
+      <button class="sc-fold-toggle">${this.get_icon_html(scope.settings.expanded_view ? "fold-vertical" : "unfold-vertical")}</button>
+      <button class="sc-search">${this.get_icon_html("search")}</button>
+    </div>
+    <div class="sc-search-container">
+      <h2>Search Smart Connections</h2>
+      <div class="sc-search-input">
+        <textarea
+          id="query"
+          name="query"
+          placeholder="Describe what you're looking for (e.g., 'PKM strategies', 'story elements', 'personal AI alignment')"
+        ></textarea>
+        <button id="search">${this.get_icon_html("search")}</button>
+      </div>
+      <p>Use semantic (embeddings) search to surface relevant notes. Results are sorted by similarity to your query. Note: returns different results than lexical (keyword) search.</p>
+    </div>
+    <div class="sc-list">
+    </div>
+    <div class="sc-bottom-bar">
+      ${opts.attribution || ""}
+    </div>
+  </div>`;
+}
+async function render11(scope, opts = {}) {
+  let html = await build_html5.call(this, scope, opts);
+  const frag = this.create_doc_fragment(html);
+  return await post_process9.call(this, scope, frag, opts);
+}
+async function post_process9(scope, frag, opts = {}) {
+  const query_input = frag.querySelector("#query");
+  const results_container = frag.querySelector(".sc-list");
+  const render_search = async (search_text, results_container2) => {
+    const results = await scope[opts.collection_key].lookup({ hypotheticals: [search_text] });
+    results_container2.innerHTML = "";
+    const results_frag = await render8.call(this, scope, { ...opts, results });
+    Array.from(results_frag.children).forEach((elm) => results_container2.appendChild(elm));
+  };
+  if (opts.search_text) {
+    query_input.value = opts.search_text;
+    await render_search(opts.search_text, results_container);
+  }
+  const search_button = frag.querySelector("#search");
+  search_button.addEventListener("click", async (event) => {
+    const container = event.target.closest("#sc-search-view");
+    const search_text = query_input.value.trim();
+    if (search_text) {
+      await render_search(search_text, results_container);
+    }
+  });
+  const fold_toggle = frag.querySelector(".sc-fold-toggle");
+  fold_toggle.addEventListener("click", (event) => {
+    const container = event.target.closest("#sc-search-view");
+    const expanded = scope.settings.expanded_view;
+    container.querySelectorAll(".search-result").forEach((elm) => {
+      if (expanded) {
+        elm.classList.add("sc-collapsed");
+      } else {
+        elm.classList.remove("sc-collapsed");
+        const collection_key = elm.dataset.collection;
+        const entity = scope[collection_key].get(elm.dataset.path);
+        entity.render_item(elm.querySelector("li"));
+      }
+    });
+    scope.settings.expanded_view = !expanded;
+    fold_toggle.innerHTML = this.get_icon_html(scope.settings.expanded_view ? "fold-vertical" : "unfold-vertical");
+  });
+  return frag;
 }
 
 // src/smart_env.config.js
@@ -11300,7 +11174,6 @@ var smart_env_config = {
         openai: SmartEmbedOpenAIAdapter
       }
     },
-    smart_chunks: import_smart_chunks.SmartChunks,
     smart_fs: {
       class: SmartFs,
       adapter: SmartFsObsidianAdapter
@@ -11318,7 +11191,9 @@ var smart_env_config = {
     }
   },
   components: {
-    settings: render6
+    settings: render6,
+    connections: render10,
+    search: render11
   },
   default_settings: {
     is_obsidian_vault: true,
@@ -11710,261 +11585,9 @@ var SmartObsidianView2 = class extends import_obsidian6.ItemView {
 // src/smart_entities_view.js
 var SmartEntitiesView = class extends SmartObsidianView2 {
   add_result_listeners(elm) {
-    elm.addEventListener("click", this.handle_result_click.bind(this));
-    const path = elm.querySelector("li").dataset.key;
-    elm.addEventListener("dragstart", (event) => {
-      const drag_manager = this.app.dragManager;
-      const file_path = path.split("#")[0];
-      const file = this.app.metadataCache.getFirstLinkpathDest(file_path, "");
-      const drag_data = drag_manager.dragFile(event, file);
-      drag_manager.onDragStart(event, drag_data);
-    });
-    if (path.indexOf("{") === -1) {
-      elm.addEventListener("mouseover", (event) => {
-        this.app.workspace.trigger("hover-link", {
-          event,
-          source: this.constructor.view_type,
-          hoverParent: elm.parentElement,
-          targetEl: elm,
-          linktext: path
-        });
-      });
-    }
-  }
-  handle_result_click(event) {
-    event.preventDefault();
-    event.stopPropagation();
-    const target = event.target;
-    const result = target.closest(".search-result");
-    if (target.classList.contains("svg-icon")) {
-      this.toggle_result(result);
-      return;
-    }
-    const link = result.dataset.link || result.dataset.path;
-    if (result.classList.contains("sc-collapsed")) {
-      if (this.plugin.obsidian.Keymap.isModEvent(event)) {
-        console.log("open_note", link);
-        this.plugin.open_note(link, event);
-      } else {
-        this.toggle_result(result);
-      }
-    } else {
-      console.log("open_note", link);
-      this.plugin.open_note(link, event);
-    }
-  }
-  async toggle_result(result) {
-    result.classList.toggle("sc-collapsed");
-    if (!result.querySelector("li").innerHTML) {
-      const collection_key = result.dataset.collection;
-      const entity = this.env[collection_key].get(result.dataset.path);
-      await entity.render_item(result.querySelector("li"));
-    }
+    this.plugin.add_result_listeners(elm, this.constructor.view_type);
   }
 };
-
-// src/components/result.js
-async function build_html2(scope, opts = {}) {
-  const item = scope.item;
-  const score = scope.score;
-  const expanded_view = item.env.settings.expanded_view;
-  return `<div class="temp-container">
-    <div
-      class="search-result${expanded_view ? "" : " sc-collapsed"}"
-      data-path="${item.path.replace(/"/g, "&quot;")}"
-      data-link="${item.link?.replace(/"/g, "&quot;") || ""}"
-      data-collection="${item.collection_key}"
-      data-score="${score}"
-      draggable="true"
-    >
-      <span class="header">
-        ${this.get_icon_html("right-triangle")}
-        <a class="search-result-file-title" href="#" title="${item.path.replace(/"/g, "&quot;")}" draggable="true">
-          <small>${[score?.toFixed(2), item.name].join(" | ")}</small>
-        </a>
-      </span>
-      <ul draggable="true">
-        <li class="search-result-file-title" title="${item.path.replace(/"/g, "&quot;")}" data-collection="${item.collection_key}" data-key="${item.key}"></li>
-      </ul>
-    </div>
-  </div>`;
-}
-async function render7(scope, opts = {}) {
-  let html = await build_html2.call(this, scope, opts);
-  const frag = this.create_doc_fragment(html);
-  return await post_process6.call(this, scope, frag, opts);
-}
-async function post_process6(scope, frag, opts = {}) {
-  const search_result = frag.querySelector(".search-result");
-  if (typeof opts.add_result_listeners === "function") opts.add_result_listeners(search_result);
-  if (!scope.item.env.settings.expanded_view) return search_result;
-  const li = search_result.querySelector("li");
-  const collection_key = li.dataset.collection;
-  const entity_key = li.dataset.key;
-  const entity = scope.item.env[collection_key].get(entity_key);
-  if (entity) {
-    await entity.render_item(li, opts);
-  } else {
-    li.innerHTML = "<p>Entity not found.</p>";
-  }
-  return search_result;
-}
-
-// src/components/results.js
-async function build_html3(scope, opts = {}) {
-  return ``;
-}
-async function render8(scope, opts = {}) {
-  const html = await build_html3.call(this, scope, opts);
-  const frag = this.create_doc_fragment(html);
-  const results = opts.results || [];
-  const result_frags = await Promise.all(results.map((result) => {
-    return render7.call(this, result, { ...opts });
-  }));
-  result_frags.forEach((result_frag) => frag.appendChild(result_frag));
-  return frag;
-}
-
-// src/components/connections.js
-async function build_html4(scope, opts = {}) {
-  const context_name = scope.path.split("/").pop();
-  const html = `<div class="sc-connections-view">
-    <div class="sc-top-bar">
-      <p class="sc-context" data-key="${scope.path}">
-        ${scope.env.smart_sources.keys.length} (${scope.env.smart_blocks.keys.length})
-      </p>
-      <button class="sc-refresh">${this.get_icon_html("refresh-cw")}</button>
-      <button class="sc-fold-toggle">${this.get_icon_html(scope.env.settings.expanded_view ? "fold-vertical" : "unfold-vertical")}</button>
-      <button class="sc-filter">${this.get_icon_html("sliders-horizontal")}</button>
-      <button class="sc-search">${this.get_icon_html("search")}</button>
-    </div>
-    <div id="settings" class="sc-overlay"></div>
-    <div class="sc-list">
-    </div>
-    <div class="sc-bottom-bar">
-      <span class="sc-context" data-key="${scope.path}" title="${scope.path}">
-        ${context_name}${opts.re_ranked ? " (re-ranked)" : ""}
-      </span>
-      ${opts.attribution || ""}
-    </div>
-  </div>`;
-  return html;
-}
-async function render9(scope, opts = {}) {
-  let html = await build_html4.call(this, scope, opts);
-  const frag = this.create_doc_fragment(html);
-  const results = scope.find_connections(opts);
-  const sc_list = frag.querySelector(".sc-list");
-  const results_frag = await render8.call(this, scope, { ...opts, results });
-  Array.from(results_frag.children).forEach((elm) => sc_list.appendChild(elm));
-  return await post_process7.call(this, scope, frag, opts);
-}
-async function post_process7(scope, frag, opts = {}) {
-  const container = frag.querySelector(".sc-list");
-  const toggle_button = frag.querySelector(".sc-fold-toggle");
-  toggle_button.addEventListener("click", () => {
-    const expanded = scope.env.settings.expanded_view;
-    container.querySelectorAll(".search-result").forEach((elm) => {
-      if (expanded) {
-        elm.classList.add("sc-collapsed");
-      } else {
-        elm.classList.remove("sc-collapsed");
-        const collection_key = elm.dataset.collection;
-        const entity = scope.env[collection_key].get(elm.dataset.path);
-        entity.render_item(elm.querySelector("li"));
-      }
-    });
-    scope.env.settings.expanded_view = !expanded;
-    toggle_button.innerHTML = this.get_icon_html(scope.env.settings.expanded_view ? "fold-vertical" : "unfold-vertical");
-    toggle_button.setAttribute("aria-label", scope.env.settings.expanded_view ? "Fold all" : "Unfold all");
-  });
-  return frag;
-}
-
-// src/components/smart_view_filter.js
-async function render10(scope) {
-  const cohere_api_key_html = `
-    <div class="setting-component"
-      data-name="Cohere API Key"
-      data-type="text"
-      data-setting="smart_view_filter.cohere_api_key"
-      data-description="API Key required to use Cohere re-ranker."
-      data-placeholder="Enter an API Key"
-      data-button="Save"
-    ></div>
-  `;
-  const early_access_html = !scope.EARLY_ACCESS ? "" : `
-    <div class="setting-component"
-      data-name="Toggle Re-Ranker"
-      data-setting="smart_view_filter.re_rank"
-      data-description="Toggle the re-ranker"
-      data-type="toggle"
-      data-default="false"
-      data-value="false"
-      data-callback="refresh_smart_view_filter"
-    ></div>
-    ${scope.settings.smart_view_filter?.re_rank ? cohere_api_key_html : ""}
-  `;
-  const html = `
-    <!-- toggle re-ranker -->
-    ${early_access_html}
-    <div class="setting-component"
-      data-name="Show Full Path"
-      data-description="Show full path in view."
-      data-type="toggle"
-      data-setting="show_full_path"
-      data-callback="refresh_smart_view"
-    ></div>
-    <div class="setting-component"
-      data-name="Results Limit"
-      data-setting="smart_view_filter.results_limit"
-      data-description="Limit the number of results."
-      data-type="number"
-      data-default="20"
-      data-callback="refresh_smart_view"
-    ></div>
-    <!-- toggle exclude_inlinks -->
-    <div class="setting-component"
-      data-name="Exclude Inlinks"
-      data-setting="smart_view_filter.exclude_inlinks"
-      data-description="Exclude inlinks"
-      data-type="toggle"
-      data-default="false"
-      data-callback="refresh_smart_view_filter"
-    ></div>
-    <!-- toggle exclude_outlinks -->
-    <div class="setting-component"
-      data-name="Exclude Outlinks"
-      data-setting="smart_view_filter.exclude_outlinks"
-      data-description="Exclude outlinks"
-      data-type="toggle"
-      data-default="false"
-      data-callback="refresh_smart_view_filter"
-    ></div>
-    <!-- include filter -->
-    <div class="setting-component"
-      data-name="Include Filter"
-      data-setting="smart_view_filter.include_filter"
-      data-description="Require that results match this value."
-      data-type="text"
-      data-callback="refresh_smart_view"
-    ></div>
-    <!-- exclude filter -->
-    <div class="setting-component"
-      data-name="Exclude Filter"
-      data-setting="smart_view_filter.exclude_filter"
-      data-description="Exclude results that match this value."
-      data-type="text"
-      data-callback="refresh_smart_view"
-    ></div>
-  `;
-  const frag = this.create_doc_fragment(html);
-  return await post_process8.call(this, scope, frag);
-}
-async function post_process8(scope, frag) {
-  await this.render_setting_components(frag, { scope });
-  return frag;
-}
 
 // src/sc_connections_view.js
 var import_obsidian7 = require("obsidian");
@@ -11989,8 +11612,8 @@ var ScConnectionsView = class extends SmartEntitiesView {
       }
     }));
   }
-  async render_view(entity = null) {
-    if (this.container.checkVisibility() === false) return console.log("View inactive, skipping render nearest");
+  async render_view(entity = null, container = this.container) {
+    if (container.checkVisibility() === false) return console.log("View inactive, skipping render nearest");
     if (!entity) {
       const current_file = this.app.workspace.getActiveFile();
       if (current_file) entity = current_file?.path;
@@ -12013,27 +11636,15 @@ var ScConnectionsView = class extends SmartEntitiesView {
     }
     if (this.current_context === entity?.key) return;
     this.current_context = entity?.key;
-    const frag = await render9.call(this.smart_view, entity, {
+    const frag = await this.env.opts.components.connections.call(this.smart_view, entity, {
       add_result_listeners: this.add_result_listeners.bind(this),
-      attribution: this.attribution
-    });
-    this.container.innerHTML = "";
-    this.container.appendChild(frag);
-    this.add_top_bar_listeners();
-  }
-  async render_filter_settings() {
-    const overlay_container = this.container.querySelector(".sc-overlay");
-    if (!overlay_container) throw new Error("Container is required");
-    overlay_container.innerHTML = "";
-    overlay_container.innerHTML = '<div class="sc-loading">Loading filter settings...</div>';
-    const frag = await render10.call(this.smart_view, {
-      settings: this.env.settings,
+      attribution: this.attribution,
       refresh_smart_view: this.refresh_smart_view.bind(this),
-      refresh_smart_view_filter: this.refresh_smart_view_filter.bind(this)
+      open_search_view: this.plugin.open_search_view.bind(this.plugin)
     });
-    overlay_container.innerHTML = "";
-    overlay_container.appendChild(frag);
-    on_open_overlay(overlay_container);
+    container.innerHTML = "";
+    container.appendChild(frag);
+    this.add_top_bar_listeners();
   }
   refresh_smart_view() {
     console.log("refresh_smart_view");
@@ -12041,21 +11652,8 @@ var ScConnectionsView = class extends SmartEntitiesView {
     this.current_context = null;
     this.render_view();
   }
-  refresh_smart_view_filter() {
-    console.log("refresh_smart_view_filter");
-    this.render_filter_settings();
-  }
   add_top_bar_listeners() {
     const container = this.container;
-    container.querySelector(".sc-filter").addEventListener("click", () => {
-      this.render_filter_settings();
-    });
-    container.querySelector(".sc-refresh").addEventListener("click", () => {
-      this.refresh_smart_view();
-    });
-    container.querySelector(".sc-search").addEventListener("click", () => {
-      this.plugin.open_search_view();
-    });
     container.querySelectorAll(".sc-context").forEach((el) => {
       const entity = this.env.smart_sources.get(el.dataset.key);
       if (entity) {
@@ -12066,13 +11664,6 @@ var ScConnectionsView = class extends SmartEntitiesView {
     });
   }
 };
-function on_open_overlay(overlay_container) {
-  overlay_container.style.transition = "background-color 0.5s ease-in-out";
-  overlay_container.style.backgroundColor = "var(--bold-color)";
-  setTimeout(() => {
-    overlay_container.style.backgroundColor = "";
-  }, 500);
-}
 var SmartNoteInspectModal = class extends import_obsidian7.Modal {
   constructor(env, entity) {
     super(env.smart_connections_plugin.app);
@@ -12091,71 +11682,6 @@ var SmartNoteInspectModal = class extends import_obsidian7.Modal {
   }
 };
 
-// src/components/search.js
-async function build_html5(scope, opts = {}) {
-  return `<div id="sc-search-view">
-    <div class="sc-top-bar">
-      <button class="sc-fold-toggle">${this.get_icon_html(scope.settings.expanded_view ? "fold-vertical" : "unfold-vertical")}</button>
-      <button class="sc-search">${this.get_icon_html("search")}</button>
-    </div>
-    <div class="sc-search-container">
-      <h2>Search Smart Connections</h2>
-      <div class="sc-search-input">
-        <textarea
-          id="query"
-          name="query"
-          placeholder="Describe what you're looking for (e.g., 'PKM strategies', 'story elements', 'personal AI alignment')"
-        ></textarea>
-        <button id="search">${this.get_icon_html("search")}</button>
-      </div>
-      <p>Use semantic (embeddings) search to surface relevant notes. Results are sorted by similarity to your query. Note: returns different results than lexical (keyword) search.</p>
-    </div>
-    <div class="sc-list">
-    </div>
-    <div class="sc-bottom-bar">
-      ${opts.attribution || ""}
-    </div>
-  </div>`;
-}
-async function render11(scope, opts = {}) {
-  let html = await build_html5.call(this, scope, opts);
-  const frag = this.create_doc_fragment(html);
-  return await post_process9.call(this, scope, frag, opts);
-}
-async function post_process9(scope, frag, opts = {}) {
-  const query_input = frag.querySelector("#query");
-  const search_button = frag.querySelector("#search");
-  search_button.addEventListener("click", async (event) => {
-    const container = event.target.closest("#sc-search-view");
-    const search_text = query_input.value.trim();
-    if (search_text) {
-      const results = await scope[opts.collection_key].lookup({ hypotheticals: [search_text] });
-      const sc_list = container.querySelector(".sc-list");
-      sc_list.innerHTML = "";
-      const results_frag = await render8.call(this, scope, { ...opts, results });
-      Array.from(results_frag.children).forEach((elm) => sc_list.appendChild(elm));
-    }
-  });
-  const fold_toggle = frag.querySelector(".sc-fold-toggle");
-  fold_toggle.addEventListener("click", (event) => {
-    const container = event.target.closest("#sc-search-view");
-    const expanded = scope.settings.expanded_view;
-    container.querySelectorAll(".search-result").forEach((elm) => {
-      if (expanded) {
-        elm.classList.add("sc-collapsed");
-      } else {
-        elm.classList.remove("sc-collapsed");
-        const collection_key = elm.dataset.collection;
-        const entity = scope[collection_key].get(elm.dataset.path);
-        entity.render_item(elm.querySelector("li"));
-      }
-    });
-    scope.settings.expanded_view = !expanded;
-    fold_toggle.innerHTML = this.get_icon_html(scope.settings.expanded_view ? "fold-vertical" : "unfold-vertical");
-  });
-  return frag;
-}
-
 // src/sc_search_view.js
 var ScSearchView = class extends SmartEntitiesView {
   static get view_type() {
@@ -12167,16 +11693,17 @@ var ScSearchView = class extends SmartEntitiesView {
   static get icon_name() {
     return "search";
   }
-  async render_view() {
-    this.container.innerHTML = "Loading search...";
-    const frag = await render11.call(this.smart_view, this.env, {
+  async render_view(search_text = "", container = this.container) {
+    container.innerHTML = "Loading search...";
+    const frag = await this.env.opts.components.search.call(this.smart_view, this.env, {
       collection_key: "smart_sources",
       // TODO: make it configurable which collection to search
       add_result_listeners: this.add_result_listeners.bind(this),
-      attribution: this.attribution
+      attribution: this.attribution,
+      search_text
     });
-    this.container.innerHTML = "";
-    this.container.appendChild(frag);
+    container.innerHTML = "";
+    container.appendChild(frag);
   }
 };
 
@@ -13116,7 +12643,7 @@ var SmartChatSettings = class extends SmartSettings2 {
 };
 
 // src/on_open_overlay.js
-function on_open_overlay2(container) {
+function on_open_overlay(container) {
   container.style.transition = "background-color 0.5s ease-in-out";
   container.style.backgroundColor = "var(--bold-color)";
   setTimeout(() => {
@@ -13179,7 +12706,7 @@ var ScChatsUI = class extends import_smart_chats_ui.SmartChatsUI {
     this.add_chat_input_listeners();
   }
   on_open_overlay() {
-    on_open_overlay2(this.overlay_container);
+    on_open_overlay(this.overlay_container);
   }
   async message_post_process(msg_elm) {
     await this.render_md_as_html(msg_elm);
@@ -14211,10 +13738,14 @@ var SmartConnectionsPlugin = class extends Plugin {
       editorCallback: async (editor) => {
         const curr_file = this.app.workspace.getActiveFile();
         if (!curr_file?.path) return console.warn("No active file", curr_file);
-        const source = this.env.smart_sources.get(curr_file.path);
-        if (!source) this.notices?.show("note not found", [`Note not found: ${curr_file.path}`]);
-        source.data = { path: curr_file.path };
-        await this.env.data_fs.remove(source.data_path);
+        let source = this.env.smart_sources.get(curr_file.path);
+        if (source) {
+          source.data = { path: curr_file.path };
+          await this.env.data_fs.remove(source.data_path);
+        } else {
+          this.env.smart_sources.fs.include_file(curr_file.path);
+          source = this.env.smart_sources.init_file_path(curr_file.path);
+        }
         await source.import();
         await this.env.smart_sources.process_embed_queue();
         setTimeout(() => {
@@ -14333,7 +13864,37 @@ ${message ? "# " + message + "\n" : ""}${ignore}`);
   }
   // SUPPORTERS
   async render_code_block(contents, container, ctx) {
-    return this.view.render_nearest(contents.trim().length ? contents : ctx.sourcePath, container);
+    let frag;
+    if (contents.trim().length) {
+      frag = await this.env.opts.components.search.call(
+        this.env.smart_view,
+        this.env,
+        {
+          collection_key: "smart_sources",
+          // TODO: make it configurable which collection to search
+          add_result_listeners: this.add_result_listeners.bind(this),
+          attribution: this.attribution,
+          search_text: contents
+        }
+      );
+    } else {
+      const entity = this.env.smart_sources.get(ctx.sourcePath);
+      if (!entity) return container.innerHTML = "Entity not found: " + ctx.sourcePath;
+      frag = await this.env.opts.components.connections.call(
+        this.env.smart_view,
+        entity,
+        {
+          add_result_listeners: this.add_result_listeners.bind(this),
+          attribution: this.attribution,
+          refresh_smart_view: () => {
+            this.render_code_block(contents, container, ctx);
+          },
+          open_search_view: this.open_search_view.bind(this)
+        }
+      );
+    }
+    container.innerHTML = "";
+    container.appendChild(frag);
   }
   async render_code_block_context(results, container, ctx) {
     results = this.get_entities_from_context_codeblock(results);
@@ -14528,6 +14089,60 @@ ${message ? "# " + message + "\n" : ""}${ignore}`);
   // }
   remove_setting_elm(path, value, elm) {
     elm.remove();
+  }
+  // ENTITIES VIEW
+  add_result_listeners(elm, source) {
+    const toggle_result = async (result) => {
+      result.classList.toggle("sc-collapsed");
+      if (!result.querySelector("li").innerHTML) {
+        const collection_key = result.dataset.collection;
+        const entity = this.env[collection_key].get(result.dataset.path);
+        await entity.render_item(result.querySelector("li"));
+      }
+    };
+    const handle_result_click = (event) => {
+      event.preventDefault();
+      event.stopPropagation();
+      const target = event.target;
+      const result = target.closest(".search-result");
+      if (target.classList.contains("svg-icon")) {
+        toggle_result(result);
+        return;
+      }
+      const link = result.dataset.link || result.dataset.path;
+      if (result.classList.contains("sc-collapsed")) {
+        if (this.obsidian.Keymap.isModEvent(event)) {
+          console.log("open_note", link);
+          this.open_note(link, event);
+        } else {
+          toggle_result(result);
+        }
+      } else {
+        console.log("open_note", link);
+        this.open_note(link, event);
+      }
+    };
+    elm.addEventListener("click", handle_result_click.bind(this));
+    const path = elm.querySelector("li").dataset.key;
+    elm.addEventListener("dragstart", (event) => {
+      const drag_manager = this.app.dragManager;
+      const file_path = path.split("#")[0];
+      const file = this.app.metadataCache.getFirstLinkpathDest(file_path, "");
+      const drag_data = drag_manager.dragFile(event, file);
+      drag_manager.onDragStart(event, drag_data);
+    });
+    if (path.indexOf("{") === -1) {
+      elm.addEventListener("mouseover", (event) => {
+        this.app.workspace.trigger("hover-link", {
+          event,
+          // source: this.constructor.view_type,
+          source,
+          hoverParent: elm.parentElement,
+          targetEl: elm,
+          linktext: path
+        });
+      });
+    }
   }
 };
 
