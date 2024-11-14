@@ -2,6 +2,7 @@
 tags:
   - bsa
   - business
+  - CapitalOne
 author:
   - jacgit18
   - chatgpt
@@ -104,5 +105,59 @@ Determining who makes decisions and identifying the primary customer or focus of
 Additionally, recognizing that a conversation can serve as another form of traceability, fostering communication and understanding across stakeholders. This ensures a comprehensive approach to decision-making and project progression.
 
 
+## Requirements in Different Context
+In the context of business systems analysis and QA engineering, functional and non-functional requirements refer to similar concepts but are approached and interpreted somewhat differently based on the role's focus.
+
+## 1. Functional Requirements
+
+### Business System Analyst Context:
+Functional requirements describe what the system should do, essentially focusing on the features and capabilities the system needs to support the business processes. For example:
+- "The system must allow users to log in with a username and password."
+- "The system should generate a sales report."
+
+The analyst ensures these requirements align with business needs.
+
+### QA Engineering Context:
+For QA, functional requirements guide the development of test cases that verify the system’s behavior. The QA engineer translates these requirements into specific tests to confirm that each function works as intended, such as:
+- Testing login flows
+- Data validations
+- Report generation
+
+QA ensures each function works per the specifications.
+
+## 2. Non-Functional Requirements
+
+### Business System Analyst Context:
+Non-functional requirements (NFRs) refer to how the system should perform rather than what it should do. They include:
+- Performance
+- Security
+- Scalability
+- Usability
+- Reliability
+
+These requirements support the overall quality of the user experience and system stability.
+
+### QA Engineering Context:
+For QA, NFRs are crucial in designing tests for things like performance, load, and security. The QA engineer validates these attributes through specific testing types, such as:
+- Stress testing
+- Load testing
+- Security testing
+
+QA ensures that the system meets performance standards and handles expected (or unexpected) usage loads effectively.
+
+## Similarities and Differences
+
+### Similarities:
+- In both contexts, functional and non-functional requirements are documented, managed, and serve as the foundation for designing and validating the system.
+- Both roles ultimately aim to ensure that the system meets business expectations.
+
+### Differences:
+- Business analysts focus on capturing and defining requirements to support the business.
+- QA engineers focus on interpreting and validating those requirements. QA takes an implementation-focused approach, working with requirements to create test plans that confirm each aspect meets the intended specifications.
+
+## Summary:
+While functional and non-functional requirements have similar definitions across these contexts, the focus shifts:
+- Business analysts capture requirements to guide development.
+- QA engineers validate these requirements to ensure the system behaves and performs as expected.
 
 
