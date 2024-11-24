@@ -19,4 +19,10 @@ dg-publish:
 - [[De La Riva Guard]]
 - [[X Guard]]
 - [[Lasso Guard]]
-- [[Collar & Sleeve ]]
+- [[Collar & Sleeve Guard]]
+
+
+Opponent Size best practice
+big
+small
+
