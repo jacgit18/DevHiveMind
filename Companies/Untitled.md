@@ -11,7 +11,4 @@ Relates:
 Peer Reviewed: 0
 dg-publish:
 ---
-
-**Business and Investment Strategy**
-
-- Advocates buying existing businesses rather than building from scratch, as it's often more efficient and less risky
+dont need to start from the ground up
