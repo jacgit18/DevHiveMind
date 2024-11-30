@@ -12,3 +12,11 @@ Peer Reviewed: 0
 dg-publish:
 ---
 dont need to start from the ground up
+
+you can use own money to buy or start businesses 
+
+a better way is leverage using debt like using a loan from life insurance at a low rate 
+
+or 
+
+if the buisness has a cashflow it will m
