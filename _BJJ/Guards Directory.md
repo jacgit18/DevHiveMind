@@ -14,7 +14,7 @@ dg-publish:
 # Opponent Size Best Practices (Bottom Defensive Position)  
 
 ## Guard Flow 
-Dont necessarly need to start in ful
+Don't necessarily need to start in full guard
 ``` mermaid
 flowchart LR
     A[Full Guard] 
@@ -175,12 +175,9 @@ Techniques that allow applying pressure or using body weight:
    - Twister  
 
 ## Key Observations
-
 - **Larger Opponents:** Focus on guards and submissions that neutralize their strength, limit mobility, and capitalize on openings. Leverage-based techniques like leg locks and chokes are highly effective.  
 - **Smaller Opponents:** Use pressure-heavy guards and submissions that amplify your size advantage. Dominant positions like side control or mount are beneficial for transitioning to submissions.
-
 - **Guard Play:** Choose guards that give you options to attack, sweep, or transition based on the opponent’s reactions.  
-  
 - **Opponent's Base**: Guards often flow based on your opponent’s balance and posture. For example, if they stand, you might switch to De La Riva or X-Guard; if they kneel, Butterfly or Half Guard is useful.  
 - **Grip Fighting**: Guards that rely on grips (Spider, Lasso, Worm) flow into those with similar control mechanisms.  
 - **Inversion**: Guards like De La Riva and Reverse De La Riva naturally flow into inverted positions like Berimbolo.  
