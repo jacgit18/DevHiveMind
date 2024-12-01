@@ -31,6 +31,7 @@ flowchart LR
 	M[Berimbolo]
 	N[50/50]
 	O[Worm]
+	P[Tornado]
 	
     A <-.-> B
     A <-.-> C
@@ -47,8 +48,10 @@ flowchart LR
     C --> G
 	D --> F
 	F --> N
+	H --> P
 	L <-.-> C
 	L --> F
+	
 
 
 style A fill:green,stroke:black,stroke-width:4px,shadow:shadow
@@ -78,6 +81,8 @@ style M fill:blue,stroke:black,stroke-width:4px,shadow:shadow
 style N fill:blue,stroke:black,stroke-width:4px,shadow:shadow
 
 style O fill:blue,stroke:black,stroke-width:4px,shadow:shadow
+
+style P fill:blue,stroke:black,stroke-width:4px,shadow:shadow
 ```
 
 
