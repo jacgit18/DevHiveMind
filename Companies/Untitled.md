@@ -11,7 +11,7 @@ Relates:
 Peer Reviewed: 0
 dg-publish:
 ---
-dont need to start from the ground up
+dont need to start from the ground up for a buisness
 
 you can use own money to buy or start businesses 
 
