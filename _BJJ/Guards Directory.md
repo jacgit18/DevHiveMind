@@ -14,7 +14,28 @@ dg-publish:
 # Opponent Size Best Practices (Bottom Defensive Position)  
 
 ## Guard Flow 
-Don't necessarily need to start in full guard also any open guard can be used to get into mission control into Rubber guard
+Don't necessarily need to start in full guard also any open guard can be used to get into mission control which is when you have a leg over the back of the neck holding with the opposite side arm and into Rubber guard
+
+### **Submissions from Mission Control**
+
+1. **Triangle Choke**
+    
+    - When the opponent tries to posture up, you can transition to a triangle by controlling their arm and swinging your leg over their shoulder.
+2. **Omoplata**
+    
+    - By isolating the opponent’s arm and rotating your hips, you can set up this shoulder lock.
+3. **Gogoplata**
+    
+    - Use your shin across their throat while maintaining the rubber guard position to apply this choke.
+4. **Armbar**
+    
+    - When their posture breaks, isolate their arm and transition to an armbar.
+5. **Electric Chair Submission** (if transitioning from half guard setups)
+    
+    - Leverage the flexibility of Mission Control to sweep and submit simultaneously.
+
+
+
 ``` mermaid
 flowchart LR
     A[Full Guard] 
@@ -34,6 +55,7 @@ flowchart LR
 	O[Worm]
 	P[Tornado]
 	Q[Rubber]
+	R[Mission Control]
 
 	Z[ZGuard]
 
@@ -43,26 +65,31 @@ flowchart LR
     A <-.-> E
     A <-.-> H
     A <-.-> Q
+    A <-.-> R
     B <-.-> C
     B --> F
     B --> G
     B <-.-> L
     B --> M
     B --> O
+    B --> R
     C --> D
     C --> E
     C --> G
 	D --> F
 	D --> Q
+	D --> R
 	F --> N
 	H <-.-> I
 	H --> P
 	H <-.-> Q 
+	H --> R
 	H <-.-> Z
 	I <-.-> J
 	L <-.-> C
 	L --> F
 	I <-.-> K
+	R <-.-> Q 
 
 style A fill:green,stroke:black,stroke-width:4px,shadow:shadow
 
@@ -95,6 +122,8 @@ style O fill:blue,stroke:black,stroke-width:4px,shadow:shadow
 style P fill:blue,stroke:black,stroke-width:4px,shadow:shadow
 
 style Q fill:blue,stroke:black,stroke-width:4px,shadow:shadow
+
+style R fill:blue,stroke:black,stroke-width:4px,shadow:shadow
 
 style Z fill:blue,stroke:black,stroke-width:4px,shadow:shadow
 ```
