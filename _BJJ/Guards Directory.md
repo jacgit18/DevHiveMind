@@ -24,7 +24,7 @@ Guards that create distance, use leverage, or exploit the opponent's size and st
    - [[Spider]] - Attack-Oriented Guard
    - [[Lasso]] 
    - [[Butterfly]] 
-   - [[Collar & Sleeve]]  - Neutralizing guard
+   - [[Collar & Sleeve]]  - Defensive-Oriented guard
 
 2. **[[Half Guards]]**  
    - Deep Half Guard  
@@ -44,12 +44,12 @@ Techniques that leverage precision and joint manipulation rather than brute forc
 1. **Chokes**  
    - Triangle Choke  
    - Guillotine Choke  
-   - Arm Triangle Choke  
+   - Arm Triangle Choke (chain attack from side control or mount)
    - Rear Naked Choke  
 
 2. **Arm Locks**  
    - Armbar  
-   - Kimura (with proper leverage)  
+   - Kimura (with proper leverage from side control, guard, or standing positions)
    - Omoplata  
    - Americana  
 
@@ -57,19 +57,20 @@ Techniques that leverage precision and joint manipulation rather than brute forc
    - Straight Ankle Lock  
    - Heel Hook  
    - Toe Hold  
+   - Knee Bar (transition from leg entanglements)
 
 ## Effective Against Smaller Opponents
 
 ### Guards
 Guards that allow control and pressure, benefiting from weight and strength advantages:
 
-1. **[[Closed Guard]]**  - Neutralizing guard
+1. **[[Closed Guard]]**  - Defensive-Oriented guard
    - Standard Full Closed Guard  
    - High Guard  
 
 2. **Pressure Guards**  
-   - Half Guard with Underhook - Neutralizing guard 
-   - Lockdown Guard  
+   - Half Guard with Underhook - Defensive-Oriented guard
+   - Lockdown Guard  - lock legs in half guard
 
 3. **Top Guards (Dominant Guards)**  
    - Mount Guard (transition from bottom)  
@@ -80,11 +81,16 @@ Techniques that allow applying pressure or using body weight:
 
 1. **Pressure Submissions**  
    - Ezekiel Choke (from mount or side control)  
-   - Cross Collar Choke  
+   - Cross Collar Choke
+   - Bow and Arrow Choke (from back control)  
+   - Loop Choke (quick to execute during transitions)
+   - D’Arce Choke (strong from side control or sprawl positions)
+   - Peruvian Necktie (quick attack in scrambles)
 
 2. **Arm Locks**  
    - Americana (from mount or side control)  
-   - Armbar (with strength advantage)  
+   - Armbar (with strength advantage)
+   - Wrist Locks (subtle attacks from many positions)
 
 3. **Neck Cranks (if allowed)**  
    - Can Opener  
