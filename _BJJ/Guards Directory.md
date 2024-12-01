@@ -30,9 +30,7 @@ Don't necessarily need to start in full guard also any open guard can be used to
 4. **Armbar**
     
     - When their posture breaks, isolate their arm and transition to an armbar.
-5. **Electric Chair Submission** (if transitioning from half guard setups)
-    
-    - Leverage the flexibility of Mission Control to sweep and submit simultaneously.
+
 
 
 
@@ -233,7 +231,7 @@ Guards that create distance, use leverage, or exploit the opponent's size and st
 ### Submissions
 Techniques that leverage precision and joint manipulation rather than brute force:
 
-1. **Chokes**  
+1. **Chokes** - All chokes give you armbars
    - Triangle Choke  
    - Guillotine Choke  
    - Arm Triangle Choke (chain attack from side control or mount)
