@@ -14,7 +14,7 @@ dg-publish:
 # Opponent Size Best Practices (Bottom Defensive Position)  
 
 ## Guard Flow 
-Don't necessarily need to start in full guard
+Don't necessarily need to start in full guard also any open guard can be used to get into mission control into Rubber guard
 ``` mermaid
 flowchart LR
     A[Full Guard] 
@@ -33,12 +33,16 @@ flowchart LR
 	N[50/50]
 	O[Worm]
 	P[Tornado]
+	Q[Rubber]
+
+	Z[ZGuard]
 
     A <-.-> B
     A <-.-> C
     A <-.-> D
     A <-.-> E
     A <-.-> H
+    A <-.-> Q
     B <-.-> C
     B --> F
     B --> G
@@ -49,9 +53,12 @@ flowchart LR
     C --> E
     C --> G
 	D --> F
+	D --> Q
 	F --> N
 	H <-.-> I
 	H --> P
+	H <-.-> Q 
+	H <-.-> Z
 	I <-.-> J
 	L <-.-> C
 	L --> F
@@ -86,6 +93,10 @@ style N fill:blue,stroke:black,stroke-width:4px,shadow:shadow
 style O fill:blue,stroke:black,stroke-width:4px,shadow:shadow
 
 style P fill:blue,stroke:black,stroke-width:4px,shadow:shadow
+
+style Q fill:blue,stroke:black,stroke-width:4px,shadow:shadow
+
+style Z fill:blue,stroke:black,stroke-width:4px,shadow:shadow
 ```
 
 
@@ -180,7 +191,7 @@ Guards that create distance, use leverage, or exploit the opponent's size and st
 
 2. **[[Half Guards]]**  
    - Deep Half Guard  
-   - Z-Guard - Start with half guard knee shield at shoulder then switch to z guard at hip
+   - ZGuard - Start with half guard knee shield at shoulder then switch to z guard at hip
 
 3. **Leg Entanglements**  
    - Single-leg [[X Guard]] 
