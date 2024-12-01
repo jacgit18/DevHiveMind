@@ -14,7 +14,7 @@ dg-publish: null
 ---
 # Opponent Size Best Practices (Bottom Defensive Position)  
 
-## Open Guard Flow
+## Guard Flow
 ``` mermaid
 flowchart LR
     A[Full Guard] 
