@@ -13,20 +13,101 @@ Peer Reviewed: 0
 dg-publish: null
 ---
 
-- [[Butterfly Guard]]
-- [[Closed Guard]]
+
 - [[Open Guard]]
 - [[Half Guard]]
-- [[Spider Guard]]
-- [[De La Riva Guard]]
+
+
 - [[X Guard]]
-- [[Lasso Guard]]
+
 - [[Collar & Sleeve Guard]]
 
+# Opponent Size Best Practices
 
-Opponent Size best practice
-big
-small
+## Effective Against Larger Opponents
+
+### Guards
+Guards that create distance, use leverage, or exploit the opponent's size and strength against them:
+
+1. **Open Guards**  
+   - [[De La Riva]] 
+   - [[Spider]] 
+   - [[Lasso]] 
+   - [[Butterfly]] 
+
+2. **Half Guards**  
+   - Deep Half Guard  
+   - Z-Guard  
+
+3. **Leg Entanglements**  
+   - Single-leg X-Guard  
+   - 50/50 Guard  
+
+4. **Inverted Guards**  
+   - Tornado Guard  
+   - Reverse De La Riva  
+
+### Submissions
+Techniques that leverage precision and joint manipulation rather than brute force:
+
+1. **Chokes**  
+   - Triangle Choke  
+   - Guillotine Choke  
+   - Arm Triangle Choke  
+   - Rear Naked Choke  
+
+2. **Arm Locks**  
+   - Armbar  
+   - Kimura (with proper leverage)  
+   - Omoplata  
+   - Americana  
+
+3. **Leg Attacks**  
+   - Straight Ankle Lock  
+   - Heel Hook  
+   - Toe Hold  
+
+## Effective Against Smaller Opponents
+
+### Guards
+Guards that allow control and pressure, benefiting from weight and strength advantages:
+
+1. **[[Closed Guard]]**  
+   - Standard Closed Guard  
+   - High Guard  
+
+2. **Pressure Guards**  
+   - Half Guard with Underhook  
+   - Lockdown Guard  
+
+3. **Top Guards (Dominant Guards)**  
+   - Mount Guard (transition from bottom)  
+   - Top Turtle (attacking from dominant top position after breaking guard)  
+
+### Submissions
+Techniques that allow applying pressure or using body weight:
+
+1. **Pressure Submissions**  
+   - Ezekiel Choke (from mount or side control)  
+   - Cross Collar Choke  
+
+2. **Arm Locks**  
+   - Americana (from mount or side control)  
+   - Armbar (with strength advantage)  
+
+3. **Neck Cranks (if allowed)**  
+   - Can Opener  
+   - Twister  
+
+---
+
+## Key Observations
+
+- **Larger Opponents:** Focus on guards and submissions that neutralize their strength, limit mobility, and capitalize on openings. Leverage-based techniques like leg locks and chokes are highly effective.  
+- **Smaller Opponents:** Use pressure-heavy guards and submissions that amplify your size advantage. Dominant positions like side control or mount are beneficial for transitioning to submissions.
+
+
+
 
 # Brazilian Jiu-Jitsu (BJJ) Guard Transitions  
 
@@ -133,39 +214,300 @@ Small ^cS70bSKD
 
 %%
 ## Drawing
-```compressed-json
-N4KAkARALgngDgUwgLgAQQQDwMYEMA2AlgCYBOuA7hADTgQBuCpAzoQPYB2KqATLZMzYBXUtiRoIACyhQ4zZAHoFAc0JRJQgEYA6bGwC2CgF7N6hbEcK4OCtptbErHALRY8RMpWdx8Q1TdIEfARcZgRmBShcZQUebQA2bQB2GjoghH0EDihmbgBtcDBQMBKIEm4IZQBBXABpZXp4gCVUkshYRAqoLChW0sxuZx4ABgBGbR4AVn5SmEGeABYATm0A
-
-ZknRyfipmcgKEnVuVfHRpbP4+IXV4YuFm75CyEkEQmVpbh3HiGtlYO5h3YQZhQUhsADWCAAwmx8GxSBUAMSjBDI5F9SCaXDYMHKUFCDjEaGw+ESEHWZhwXCBbLoiAAM0I+HwAGVYH8JIIPLTgaCIQB1A6SD6AnnghCsmDs9Cc8qAvFvDjhXJoUaAtiU7BqOYq4YAr644RwACSxGVqDyAF1AXTyJkTdwOEImYDCASsBVcKNaXiCYrmGbHc6vmEEMR
-
-uJszgAOY5LSNLQGMFjsLhoeNfROsTgAOU4YnDkySCyup2OLuYABF0t0w2g6QQwoDNMICQBRYKZbJmgptIqPUrlCS1FsAGWc2FWw7pdIAmq8AApLABqACEABqaZTxQjo0odcToKmgqh9gC+u17PcgA/Qi6MMAAUpIAOIAVQozBgzJb2E0q8jw/iNhiFWHd2ngfdvlII8IFPc9ih7Moa3QJ9cH0TAhEIKpsCWFsAHlVniJ9hzYKwX0Xe9QOgcCPSgt
-
-hjx7E9HitL4hDgYhcGrcMklWa5hiWYYkjGQTASIDgwQdJ18BEthsVDbg63wBsvm6TBegkZdXm9SgABUegqDTlFpOlOCgZlCCMfcRmtEyADFUMZbVUGmZSeiqIhlBTdBgjpXoEyYKBzAINzXk86B1VpPRslwV0mHtNBAykr44VeV0CF01T9M0wFcCEKA2CacJzP3EEhAQESYoACReN41NQcYpkKM9Cngq8kIgbBmUEzRmVqctaT3Lo9MBAY0EjSNk
-
-mctoIEcoYFiSNYNi2T4pv2YhDjQBZEh4U4lkEwTjmW0pnled40EOyAfilPUptFCEiThRFURRJBGyxHEfUJGEHtJcgOApKksl8r4GSZCUpSBGFZWDEExQFNahTOkUYYhMGIJlMM5WEBUlXDNUNS1cNdUBA1WJNLtmKmm1UIQOLUASl03RGg8QMx/FiD9ANJJFBA5JVQsxkWeI0ymjNkw+VV0yYTMOBzDg8z5+4hdWJIJamwgKyrXnUAUpSpqbNm2w
-
-yQHOaDKbWPYzi+Z43V+MmZYia+UTxPirnHZkiEkJ1sqXIyiRmX0Ah8C0ih0tqiB/cDoyTLMiyPmu0pjOyOz9Ac7hJt3Vz3NC7ygZF/zAvwYKPK6cLAUiqIYtIWn6aS0gUo4NK9L9gOmVpHK8oK1hY7QErvam0SECqk7avqyZGpmFrEIqIdR3HScZ3nJc1w3Ld+uoiRDzo2kmecUYki29PIBmngT4WzZtkPiBVvWuqkkBY6avDeJVdKS793jgRkah
-
-L6SXQJFnrRK9bEJMCT3V/tAX6/1qS5wToyFkbI0aQwxtDXkCA4Y3weDdL+qMKjo29FjSQHNcZJXxrAQmH9Kh4mNKafIFME62hpkhGuatGYegWPgtmRC0AtTAp0M6jwmo3R5khU4Y0xjXFGKsPySZOBHEjNI6Wst5aoGuItfe20yyVmCJbbW9Y+6lH1q2dsxsJKm1KObDiWs97Wz4sMSYY1uLlTEqYxK/d3Zay9oCOAJFOz5D7N2HsH8SjDD7HQko
-
-AS2i7zvn2MAoxn6hKYiJUIUBoT6BTjIUMc4fG1WYaUYEVIoAaQJK6Qy3C+wYGMdkWmlQaj1EaC0c89IZJCDNM4YYCRNrDGWJGIWYxhiRkmEseIjTlC4DgMKcpDJMCZOyS4gRgIsjECKY4DgpS6auywQUqotEKDPFwEwjZpRFnbKPHstqm8qALPwE2CgHi9Hj2al8a8EBbwPmfG+D8X4fx/gAkBFmyl14Hh2dvQYcT5rnWmvMHg811jnwhdfBGdVJ
-
-H32qqdXgAlsqrKukjVBYDHoAJel8TEwCPp4p+uSSk0CjJwJwRyJB3Iv7oMRZgvJ2CEG4PpazbG/piFTXVFiAmOoKEk2oeTa0DDq6HKvKwjekwOG+hxmUhCA1+FtEEXk4R3Bdo9N2oWYWpRRayLQJMKRksZEy1zPuSMow7ELCmJGaJasNbaLuYpfRGJmzEENh2HILjAQWJ0dY3i/ELiTCso7V0zt1lmMgLCWSns9FeOyV2fxMSglgBCT2MJYAIklF
-
-GMimJIwkgJLaGEiA+BkmpPSdWLJroclSqBFEUghTXQrLWTwipRsqltWqHUBozQdxNOwC0wY7T7FLB4HGQZ8QxoztGAsF+pRRnjLOtoSMuphg8S2EsLdO6kiH0gFMmZda5lqoWQSZZJS/XQy2Tss516prHLvSEc5wKrk3NdWEB5JRJ7PJQmhDCWEcL4UIsRUi5E158KBdBYaoKhkTEvsfHgiRYVLUvgi7g+6UXD3DA6zFvx344rFGSv+T1AFEreiA
-
-z6xIuiQMpYDaloN2V0q5ER/kgoJlYNQbS6UnKvjykIYquqeMBVkKFcTKhZNaHiuppKmNZQZUHniPK9mQmO0qt4PM4MmqNoFmfuIhRYtjWmrzuapRVqVbbWuNGTRmsE1usbJ671JiXbyYDVY7iwaBJjCFk4qNuTY3uPs7rUo3i60pp7LmjN54M2hPPFF5wWGYmjAdSWkoZaK3AirWoGtszXOuNZQUy9qzuAdvSD66pva6kDsacZYdZp2nXDOKsaFF
-
-xFixgXSZqay7eWU0INM4gtaaT5a04+i9rar35aRre05L6H1HIJCcui96N5vq+EED9wWEDfovP2NqAArYcSwjSTHvDwf5U0NPQCGl8HeUw4gQuPvxM+aHAQYZ1I6o6qLaoQrfv8Nj38aMSH/k9WkxL3qepIxAilAMaTWhpcx3jrGUGww44jFHKNEcQ2R1NATXDhMkNE45G1wrJM0LQJaGTdoDnydbe6DewwVP44C0CHTqB91dLsVsLrkBDWeWhYZ7
-
-Mlrwwtf0zwHdtmXVIV7o5g2lTfVTZYmxSxIjPM203WcZDfn5uBfjfJRNPsw7B1DhUKO2QY6WQoYnKAydU7GsBCpKARds4IB8rSRMAV3DO5LuMsuJloqKirjTgrkBkr+Ebr7dAbdcr5UKt3XRDmI2KiHo/FUCGdu/raveNgABFfAow6QcC9A7wF12MqwbQELCagJj7XBexfN7aPUDyK+A/NFv2sWEYx4D76pGCVg8o6Sn+tGYdUvh0xyUiCcestQU
-
-yzjM+xQ8ex1DXHBD8eLogPyzUYm6oO262TsVwMJXB4ZsQenB4eBM6EyzkMIjdrxH6RO3zZrpZHEFxauW+4d3K1GCfBYl91YtEEAdEZciUnN5cTYQ8IB3NVcbFbYxg95tdFc3E9dawDdLsm4o85QdJMCIAzdTIio45rIk57J8BHJL5HdvcJAc53d84vcs4fcIp/dK45MoCw9Up8ATcJBo8O449ipSBSonFB5vtwx08ShGIwAKZvg4A4BWRLFStCho
-
-BnhMgKh3J3gZgGBCAEAKBlxB9Idh9gcpwjC6Q+h2oRBoEjRuh9BWRcUDC+9QcNDh0oJAZLCMhdCSV9Cgd0AyQ/p6M4dFCnCLCrCbIEdJ8OVp8zDnCqkrCbDUd4Z59IigiMhYjMcwiWMV9IBAiXCrCmg18hMX5EjsiMhcJSFic99MjzCij9AbJbJSDyDHDKjoiMgajzdCCzp45Cimj9BQ4qCvJXcYFOioBXDrCm0ndn19l5tBjhiWxFtxjX0YMAjG
-
-ihirClsQ5S8PpTDmBsBQQmRVw04lhR4NCtidj8Bpw05dQOlIwrgktSgjA2ADAFCRYCBSpwwdspicjPV8cIANiNDcQSALciDFC/jiBWQEAV0nJfi65iAABZICBAGY3ATQYILbSEkgEjSeZcGENqUgZQTEAACm2jvl4EQOJKJLHQAEpaQCplAnQqQKgcT8TzsAReBrhqAWTmSKSYJxCGiojTIv4SiApOBICNCqZMgCo3Q64SslUFtETkTuBQCppsAi
-
-BwSFTSgG4VCe4BD3VN9coB55StS3i7B9sEBsAchmQG44BYSz8ESkTP19FvhTTCBGBtJ7ig5pTeE0Z0hHTZEy4Wk8pujAUWc40PZ9dE9+5kksIApnTXTT0wAJDBF6RGRwhStGITwgA===
+```json
+{
+	"type": "excalidraw",
+	"version": 2,
+	"source": "https://github.com/zsviczian/obsidian-excalidraw-plugin/releases/tag/2.6.7",
+	"elements": [
+		{
+			"id": "gAaKgv6R",
+			"type": "text",
+			"x": -201.25,
+			"y": -249.3515625,
+			"width": 31.199966430664062,
+			"height": 25,
+			"angle": 0,
+			"strokeColor": "#1e1e1e",
+			"backgroundColor": "transparent",
+			"fillStyle": "solid",
+			"strokeWidth": 2,
+			"strokeStyle": "solid",
+			"roughness": 1,
+			"opacity": 100,
+			"groupIds": [],
+			"frameId": null,
+			"index": "a1",
+			"roundness": null,
+			"seed": 1599831989,
+			"version": 9,
+			"versionNonce": 1574431931,
+			"isDeleted": false,
+			"boundElements": [
+				{
+					"id": "KEL-c3LffYigP9VBXbg6i",
+					"type": "arrow"
+				},
+				{
+					"id": "VzyJhGUwsySEcbX8L6od3",
+					"type": "arrow"
+				},
+				{
+					"id": "GamxuiAc9EO36GLoiaUVJ",
+					"type": "arrow"
+				}
+			],
+			"updated": 1733009070170,
+			"link": null,
+			"locked": false,
+			"text": "Big",
+			"rawText": "Big",
+			"fontSize": 20,
+			"fontFamily": 5,
+			"textAlign": "left",
+			"verticalAlign": "top",
+			"containerId": null,
+			"originalText": "Big",
+			"autoResize": true,
+			"lineHeight": 1.25
+		},
+		{
+			"id": "cS70bSKD",
+			"type": "text",
+			"x": 88.75,
+			"y": -247.3515625,
+			"width": 46.219970703125,
+			"height": 25,
+			"angle": 0,
+			"strokeColor": "#1e1e1e",
+			"backgroundColor": "transparent",
+			"fillStyle": "solid",
+			"strokeWidth": 2,
+			"strokeStyle": "solid",
+			"roughness": 1,
+			"opacity": 100,
+			"groupIds": [],
+			"frameId": null,
+			"index": "a3",
+			"roundness": null,
+			"seed": 174012469,
+			"version": 21,
+			"versionNonce": 1706269371,
+			"isDeleted": false,
+			"boundElements": [],
+			"updated": 1733009054900,
+			"link": null,
+			"locked": false,
+			"text": "Small",
+			"rawText": "Small",
+			"fontSize": 20,
+			"fontFamily": 5,
+			"textAlign": "left",
+			"verticalAlign": "top",
+			"containerId": null,
+			"originalText": "Small",
+			"autoResize": true,
+			"lineHeight": 1.25
+		},
+		{
+			"id": "KEL-c3LffYigP9VBXbg6i",
+			"type": "arrow",
+			"x": -176.25,
+			"y": -222.3515625,
+			"width": 17,
+			"height": 161,
+			"angle": 0,
+			"strokeColor": "#1e1e1e",
+			"backgroundColor": "transparent",
+			"fillStyle": "solid",
+			"strokeWidth": 2,
+			"strokeStyle": "solid",
+			"roughness": 1,
+			"opacity": 100,
+			"groupIds": [],
+			"frameId": null,
+			"index": "a4",
+			"roundness": {
+				"type": 2
+			},
+			"seed": 1988013013,
+			"version": 38,
+			"versionNonce": 305157621,
+			"isDeleted": false,
+			"boundElements": [],
+			"updated": 1733009058873,
+			"link": null,
+			"locked": false,
+			"points": [
+				[
+					0,
+					0
+				],
+				[
+					-17,
+					161
+				]
+			],
+			"lastCommittedPoint": null,
+			"startBinding": {
+				"elementId": "gAaKgv6R",
+				"focus": -0.6460498690108596,
+				"gap": 2,
+				"fixedPoint": null
+			},
+			"endBinding": null,
+			"startArrowhead": null,
+			"endArrowhead": "arrow",
+			"elbowed": false
+		},
+		{
+			"id": "VzyJhGUwsySEcbX8L6od3",
+			"type": "arrow",
+			"x": -167.25,
+			"y": -227.3515625,
+			"width": 113,
+			"height": 207,
+			"angle": 0,
+			"strokeColor": "#1e1e1e",
+			"backgroundColor": "transparent",
+			"fillStyle": "solid",
+			"strokeWidth": 2,
+			"strokeStyle": "solid",
+			"roughness": 1,
+			"opacity": 100,
+			"groupIds": [],
+			"frameId": null,
+			"index": "a5",
+			"roundness": {
+				"type": 2
+			},
+			"seed": 978697749,
+			"version": 53,
+			"versionNonce": 810542587,
+			"isDeleted": false,
+			"boundElements": [],
+			"updated": 1733009066520,
+			"link": null,
+			"locked": false,
+			"points": [
+				[
+					0,
+					0
+				],
+				[
+					113,
+					207
+				]
+			],
+			"lastCommittedPoint": null,
+			"startBinding": {
+				"elementId": "gAaKgv6R",
+				"focus": -0.5892895968868141,
+				"gap": 2.8000335693359375,
+				"fixedPoint": null
+			},
+			"endBinding": null,
+			"startArrowhead": null,
+			"endArrowhead": "arrow",
+			"elbowed": false
+		},
+		{
+			"id": "GamxuiAc9EO36GLoiaUVJ",
+			"type": "arrow",
+			"x": -196.25,
+			"y": -226.3515625,
+			"width": 75,
+			"height": 187,
+			"angle": 0,
+			"strokeColor": "#1e1e1e",
+			"backgroundColor": "transparent",
+			"fillStyle": "solid",
+			"strokeWidth": 2,
+			"strokeStyle": "solid",
+			"roughness": 1,
+			"opacity": 100,
+			"groupIds": [],
+			"frameId": null,
+			"index": "a6",
+			"roundness": {
+				"type": 2
+			},
+			"seed": 45761013,
+			"version": 53,
+			"versionNonce": 871213083,
+			"isDeleted": false,
+			"boundElements": [],
+			"updated": 1733009070169,
+			"link": null,
+			"locked": false,
+			"points": [
+				[
+					0,
+					0
+				],
+				[
+					-75,
+					187
+				]
+			],
+			"lastCommittedPoint": null,
+			"startBinding": {
+				"elementId": "gAaKgv6R",
+				"focus": 0.3099327662498413,
+				"gap": 1,
+				"fixedPoint": null
+			},
+			"endBinding": null,
+			"startArrowhead": null,
+			"endArrowhead": "arrow",
+			"elbowed": false
+		}
+	],
+	"appState": {
+		"theme": "light",
+		"viewBackgroundColor": "#ffffff",
+		"currentItemStrokeColor": "#1e1e1e",
+		"currentItemBackgroundColor": "transparent",
+		"currentItemFillStyle": "solid",
+		"currentItemStrokeWidth": 2,
+		"currentItemStrokeStyle": "solid",
+		"currentItemRoughness": 1,
+		"currentItemOpacity": 100,
+		"currentItemFontFamily": 5,
+		"currentItemFontSize": 20,
+		"currentItemTextAlign": "left",
+		"currentItemStartArrowhead": null,
+		"currentItemEndArrowhead": "arrow",
+		"currentItemArrowType": "round",
+		"scrollX": 364.34063285272566,
+		"scrollY": 385.05249258894474,
+		"zoom": {
+			"value": 2
+		},
+		"currentItemRoundness": "round",
+		"gridSize": 20,
+		"gridStep": 5,
+		"gridModeEnabled": false,
+		"gridColor": {
+			"Bold": "rgba(217, 217, 217, 0.5)",
+			"Regular": "rgba(230, 230, 230, 0.5)"
+		},
+		"currentStrokeOptions": null,
+		"frameRendering": {
+			"enabled": true,
+			"clip": true,
+			"name": true,
+			"outline": true
+		},
+		"objectsSnapModeEnabled": false,
+		"activeTool": {
+			"type": "selection",
+			"customType": null,
+			"locked": false,
+			"lastActiveTool": null
+		}
+	},
+	"files": {}
+}
 ```
 %%
