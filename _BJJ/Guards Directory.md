@@ -13,7 +13,7 @@ dg-publish:
 ---
 # Opponent Size Best Practices (Bottom Defensive Position)  
 
-## Guard Flow
+## Guard Flow 
 ``` mermaid
 flowchart LR
     A[Full Guard] 
@@ -37,6 +37,7 @@ flowchart LR
     A <-.-> C
     A <-.-> D
     A <-.-> E
+    A <-.-> H
     B <-.-> C
     B --> F
     B --> G
@@ -48,10 +49,12 @@ flowchart LR
     C --> G
 	D --> F
 	F --> N
+	H <-.-> I
 	H --> P
+	I <-.-> J
 	L <-.-> C
 	L --> F
-	
+	I <-.-> K
 
 
 style A fill:green,stroke:black,stroke-width:4px,shadow:shadow
