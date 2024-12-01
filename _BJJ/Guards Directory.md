@@ -14,6 +14,20 @@ dg-publish: null
 ---
 # Opponent Size Best Practices (Bottom Defensive Position)  
 
+## Open Guard Flow
+``` mermaid
+flowchart LR
+    A[De La Riva] 
+    B[Spider]
+    C[Butterfly]
+    D[X]
+
+    A --> B
+    style A fill:red,stroke:black,stroke-width:4px,shadow:shadow
+    B --> C
+    C --> D
+```
+
 ## Effective Against Larger Opponents
 
 ### Guards 
@@ -101,7 +115,15 @@ Techniques that allow applying pressure or using body weight:
 - **Larger Opponents:** Focus on guards and submissions that neutralize their strength, limit mobility, and capitalize on openings. Leverage-based techniques like leg locks and chokes are highly effective.  
 - **Smaller Opponents:** Use pressure-heavy guards and submissions that amplify your size advantage. Dominant positions like side control or mount are beneficial for transitioning to submissions.
 
-
+Key Considerations  
+  
+1. Guard Play: Choose guards that give you options to attack, sweep, or transition based on the opponent’s reactions.  
+  
+  
+2. Submissions: Look for techniques you can chain together, increasing the chances of a finish. For example, an armbar attempt might flow into a triangle or omoplata.  
+  
+  
+3. Control: Positional dominance is critical. Focus on progressing through dominant positions (guard → side control → mount → back control).
 
 
 # Brazilian Jiu-Jitsu (BJJ) Guard Transitions  
