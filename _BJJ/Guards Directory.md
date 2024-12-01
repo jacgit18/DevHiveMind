@@ -29,6 +29,7 @@ flowchart LR
 	J[Mount] 
 	K[North/South] 
 	L[Reverse DeLaRiva] 
+	M[Berimbolo]
 	
     A <-.-> B
     A <-.-> C
@@ -37,11 +38,13 @@ flowchart LR
     B --> C
     B --> F
     B --> G
-    B --> L
+    B <-.-> L
+    B --> M
     C --> D
     C --> E
     C --> G
 	D --> F
+	L --> F
 
 style A fill:green,stroke:black,stroke-width:4px,shadow:shadow
 
@@ -64,6 +67,8 @@ style J fill:green,stroke:black,stroke-width:4px,shadow:shadow
 style K fill:green,stroke:black,stroke-width:4px,shadow:shadow
 
 style L fill:blue,stroke:black,stroke-width:4px,shadow:shadow
+
+style M fill:blue,stroke:black,stroke-width:4px,shadow:shadow
 ```
 
 
@@ -167,10 +172,6 @@ Key Considerations
 3. Control: Positional dominance is critical. Focus on progressing through dominant positions (guard → side control → mount → back control).
 
 
-# Brazilian Jiu-Jitsu (BJJ) Guard Transitions  
-
-In Brazilian Jiu-Jitsu (BJJ), guards often transition seamlessly into one another based on your positioning, your opponent’s movement, and your tactical intent. Starting with open guards, here's a progression and how they can flow into more advanced guards:
-
 
 ## 2. Spider Guard  
 
@@ -181,18 +182,6 @@ Spider guard uses sleeve grips and foot placement on the opponent’s biceps for
 - **De La Riva Guard**: If they step back, you can release the biceps grip and hook their leg.  
 - **Closed Guard**: If you feel your opponent pulling away, you can swing back into a closed guard.  
 - **Reverse De La Riva**: If you underhook their leg while transitioning.  
-
----
-
-## 3. De La Riva Guard  
-
-This guard involves hooking your outside leg around your opponent’s lead leg, often combined with sleeve or collar grips.  
-
-### Transitions:  
-- **Reverse De La Riva**: If they turn their knee inward, you can underhook their leg and invert slightly.  
-- **Single-Leg X-Guard**: If you off-balance them, you can transition into a single-leg X by moving under them and controlling their foot.  
-- **Berimbolo**: Rolling underneath your opponent to attack the back.  
-- **X-Guard**: Extend and elevate their leg to transition.  
 
 ---
 
