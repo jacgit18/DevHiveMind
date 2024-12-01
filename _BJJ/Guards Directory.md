@@ -32,7 +32,7 @@ Guards that create distance, use leverage, or exploit the opponent's size and st
 
 2. **[[Half Guards]]**  
    - Deep Half Guard  
-   - Z-Guard
+   - Z-Guard - Start with half guard knee shield at shoulder then switch to z guard at hip
 
 3. **Leg Entanglements**  
    - Single-leg [[X Guard]] 
