@@ -28,14 +28,16 @@ flowchart LR
 	I[Side Control] 
 	J[Mount] 
 	K[North/South] 
+	L[Reverse DeLaRiva] 
 	
-    A <--> B
-    A <--> C
-    A <--> D
-    A <--> E
+    A <-.-> B
+    A <-.-> C
+    A <-.-> D
+    A <-.-> E
     B --> C
     B --> F
     B --> G
+    B --> L
     C --> D
     C --> E
     C --> G
@@ -61,6 +63,7 @@ style J fill:green,stroke:black,stroke-width:4px,shadow:shadow
 
 style K fill:green,stroke:black,stroke-width:4px,shadow:shadow
 
+style L fill:blue,stroke:black,stroke-width:4px,shadow:shadow
 ```
 
 
