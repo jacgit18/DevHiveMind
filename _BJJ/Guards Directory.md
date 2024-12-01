@@ -12,11 +12,6 @@ Relates: null
 Peer Reviewed: 0
 dg-publish: null
 ---
-
-
-
-- [[Collar & Sleeve Guard]]
-
 # Opponent Size Best Practices (Bottom Defensive Position)  
 
 ## Effective Against Larger Opponents
@@ -29,6 +24,7 @@ Guards that create distance, use leverage, or exploit the opponent's size and st
    - [[Spider]] - Attack-Oriented Guard
    - [[Lasso]] 
    - [[Butterfly]] 
+   - [[Collar & Sleeve]]  - Neutralizing guard
 
 2. **[[Half Guards]]**  
    - Deep Half Guard  
@@ -67,12 +63,12 @@ Techniques that leverage precision and joint manipulation rather than brute forc
 ### Guards
 Guards that allow control and pressure, benefiting from weight and strength advantages:
 
-1. **[[Closed Guard]]**  
-   - Standard Closed Guard  
+1. **[[Closed Guard]]**  - Neutralizing guard
+   - Standard Full Closed Guard  
    - High Guard  
 
 2. **Pressure Guards**  
-   - Half Guard with Underhook  
+   - Half Guard with Underhook - Neutralizing guard 
    - Lockdown Guard  
 
 3. **Top Guards (Dominant Guards)**  
