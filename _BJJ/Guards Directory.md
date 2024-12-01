@@ -15,21 +15,16 @@ dg-publish: null
 
 
 
-
-
-
-- [[X Guard]]
-
 - [[Collar & Sleeve Guard]]
 
-# Opponent Size Best Practices
+# Opponent Size Best Practices (Bottom Defensive Position)  
 
 ## Effective Against Larger Opponents
 
-### Guards
+### Guards 
 Guards that create distance, use leverage, or exploit the opponent's size and strength against them:
 
-1. **Open Guards**  
+1. **Open Guards** 
    - [[De La Riva]] 
    - [[Spider]] 
    - [[Lasso]] 
@@ -37,10 +32,10 @@ Guards that create distance, use leverage, or exploit the opponent's size and st
 
 2. **[[Half Guards]]**  
    - Deep Half Guard  
-   - Z-Guard  
+   - Z-Guard
 
 3. **Leg Entanglements**  
-   - Single-leg X-Guard  
+   - Single-leg [[X Guard]] 
    - 50/50 Guard  
 
 4. **Inverted Guards**  
@@ -98,8 +93,6 @@ Techniques that allow applying pressure or using body weight:
 3. **Neck Cranks (if allowed)**  
    - Can Opener  
    - Twister  
-
----
 
 ## Key Observations
 
