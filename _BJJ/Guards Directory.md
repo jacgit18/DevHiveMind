@@ -25,9 +25,9 @@ flowchart LR
     F[X]
 	G[Collar/Sleeve]
 	H[Half Guard] 
-	H[Side Control] 
-	H[Mount] 
-	H[North/South] 
+	I[Side Control] 
+	J[Mount] 
+	K[North/South] 
 	
     A <--> B
     A <--> C
@@ -55,7 +55,16 @@ style G fill:blue,stroke:black,stroke-width:4px,shadow:shadow
 
 style H fill:green,stroke:black,stroke-width:4px,shadow:shadow
 
+style I fill:green,stroke:black,stroke-width:4px,shadow:shadow
+
+style J fill:green,stroke:black,stroke-width:4px,shadow:shadow
+
+style K fill:green,stroke:black,stroke-width:4px,shadow:shadow
+
 ```
+
+
+Sweeps
 
 ## Effective Against Larger Opponents
 
@@ -181,39 +190,6 @@ This guard involves hooking your outside leg around your opponent’s lead leg, 
 - **Single-Leg X-Guard**: If you off-balance them, you can transition into a single-leg X by moving under them and controlling their foot.  
 - **Berimbolo**: Rolling underneath your opponent to attack the back.  
 - **X-Guard**: Extend and elevate their leg to transition.  
-
----
-
-## 4. Butterfly Guard  
-
-Butterfly guard uses hooks with your feet under their thighs and is great for sweeps.  
-
-### Transitions:  
-- **X-Guard**: Elevate one of their legs and insert your foot to create control points.  
-- **Deep Half Guard**: If they pressure into you, you can scoot under them and secure their leg.  
-- **Closed Guard**: If they posture up, you can reclose your legs around them.  
-
----
-
-## 5. X-Guard  
-
-X-Guard focuses on elevating your opponent and controlling their legs with your feet in an "X" configuration.  
-
-### Transitions:  
-- **Single-Leg X-Guard**: If you lose one hook, you can transition to single-leg X for better stability.  
-- **Leg Locks (Advanced)**: Attack leg locks like straight ankle locks or heel hooks.  
-- **Sweep to Mount**: Many sweeps flow directly into a dominant position like mount or side control.  
-
----
-
-## 6. Lasso Guard  
-
-This guard involves wrapping your leg around your opponent’s arm, creating a strong entanglement.  
-
-### Transitions:  
-- **Spider Guard**: Release the lasso to reestablish spider guard grips.  
-- **Closed Guard**: If they retreat, you can pull them into a closed guard.  
-- **Deep Half Guard**: If they pressure down, you can invert and attack from underneath.  
 
 ---
 
