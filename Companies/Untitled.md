@@ -23,3 +23,7 @@ if the buisness has a cashflow it will make banks more likely to give you a loan
 
 
 the next way is if you dont want to run a buisness is to give money to a operator ruining a business if you work for a firm or startup you can try and ask the owner the future plans and if they are willing to sell but you should try and be well establish  
+
+list out things to look for in a person your looking to run your buisness
+
+
