@@ -25,11 +25,19 @@ flowchart LR
     F[Lasso Guard]
 
     A <--> B
-    style A fill:green,stroke:black,stroke-width:4px,shadow:shadow
+    A <--> C
+    A <--> D
+    A <--> F
     B --> C
+    B --> E
     C --> D
     C --> F
 	D --> E
+
+    style A fill:green,stroke:black,stroke-width:4px,shadow:shadow
+
+    style B fill:blue,stroke:black,stroke-width:4px,shadow:shadow
+    
 ```
 
 ## Effective Against Larger Opponents
