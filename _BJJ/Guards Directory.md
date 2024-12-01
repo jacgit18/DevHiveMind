@@ -25,8 +25,8 @@ dg-publish: null
 Guards that create distance, use leverage, or exploit the opponent's size and strength against them:
 
 1. **Open Guards** 
-   - [[De La Riva]] 
-   - [[Spider]] 
+   - [[De La Riva]] - Attack-Oriented Guard
+   - [[Spider]] - Attack-Oriented Guard
    - [[Lasso]] 
    - [[Butterfly]] 
 
@@ -40,7 +40,7 @@ Guards that create distance, use leverage, or exploit the opponent's size and st
 
 4. **Inverted Guards**  
    - Tornado Guard  
-   - Reverse De La Riva  
+   - Reverse De La Riva - Attack-Oriented Guard
 
 ### Submissions
 Techniques that leverage precision and joint manipulation rather than brute force:
