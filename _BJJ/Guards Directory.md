@@ -14,8 +14,8 @@ dg-publish: null
 ---
 
 
-- [[Open Guard]]
-- [[Half Guard]]
+
+
 
 
 - [[X Guard]]
@@ -35,7 +35,7 @@ Guards that create distance, use leverage, or exploit the opponent's size and st
    - [[Lasso]] 
    - [[Butterfly]] 
 
-2. **Half Guards**  
+2. **[[Half Guards]]**  
    - Deep Half Guard  
    - Z-Guard  
 
