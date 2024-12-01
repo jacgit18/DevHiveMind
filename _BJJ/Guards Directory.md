@@ -21,23 +21,40 @@ flowchart LR
     B[De La Riva] 
     C[Spider]
     D[Butterfly]
-    E[X]
-    F[Lasso Guard]
-
+    E[Lasso Guard]
+    F[X]
+	G[Collar/Sleeve]
+	H[Half Guard] 
+	H[Side Control] 
+	H[Mount] 
+	H[North/South] 
+	
     A <--> B
     A <--> C
     A <--> D
-    A <--> F
+    A <--> E
     B --> C
-    B --> E
+    B --> F
+    B --> G
     C --> D
-    C --> F
-	D --> E
+    C --> E
+    C --> G
+	D --> F
 
-    style A fill:green,stroke:black,stroke-width:4px,shadow:shadow
+style A fill:green,stroke:black,stroke-width:4px,shadow:shadow
 
-    style B fill:blue,stroke:black,stroke-width:4px,shadow:shadow
-    
+style B fill:blue,stroke:black,stroke-width:4px,shadow:shadow
+
+style C fill:blue,stroke:black,stroke-width:4px,shadow:shadow
+
+style D fill:blue,stroke:black,stroke-width:4px,shadow:shadow
+
+style E fill:blue,stroke:black,stroke-width:4px,shadow:shadow
+
+style G fill:blue,stroke:black,stroke-width:4px,shadow:shadow
+
+style H fill:green,stroke:black,stroke-width:4px,shadow:shadow
+
 ```
 
 ## Effective Against Larger Opponents
@@ -45,7 +62,7 @@ flowchart LR
 ### Guards 
 Guards that create distance, use leverage, or exploit the opponent's size and strength against them:
 
-1. **Open Guards** 
+1. **Open Guards**  Blue 
    - [[De La Riva]] - Attack-Oriented Guard
    - [[Spider]] - Attack-Oriented Guard
    - [[Lasso]] 
