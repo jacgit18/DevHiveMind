@@ -17,15 +17,19 @@ dg-publish: null
 ## Open Guard Flow
 ``` mermaid
 flowchart LR
-    A[De La Riva] 
-    B[Spider]
-    C[Butterfly]
-    D[X]
+    A[Full Guard] 
+    B[De La Riva] 
+    C[Spider]
+    D[Butterfly]
+    E[X]
+    F[Lasso Guard]
 
-    A --> B
-    style A fill:red,stroke:black,stroke-width:4px,shadow:shadow
+    A <--> B
+    style A fill:green,stroke:black,stroke-width:4px,shadow:shadow
     B --> C
     C --> D
+    C --> F
+	D --> E
 ```
 
 ## Effective Against Larger Opponents
@@ -130,19 +134,6 @@ Key Considerations
 
 In Brazilian Jiu-Jitsu (BJJ), guards often transition seamlessly into one another based on your positioning, your opponent’s movement, and your tactical intent. Starting with open guards, here's a progression and how they can flow into more advanced guards:
 
----
-
-## 1. Open Guard  
-
-Open guard is a baseline guard where your legs are not locked around your opponent. It allows for dynamic movement and control.  
-
-### Transitions:  
-- **De La Riva Guard**: If your opponent steps forward, you can hook their lead leg with your outside leg.  
-- **Spider Guard**: If they grab your gi sleeves, you can grip back and control their arms with your feet on their biceps.  
-- **Butterfly Guard**: If your opponent pressures forward, you can scoot in and insert hooks with your feet under their thighs.  
-- **X-Guard**: If you control one of their legs and elevate them.  
-
----
 
 ## 2. Spider Guard  
 
@@ -496,10 +487,10 @@ Small ^cS70bSKD
 		"currentItemStartArrowhead": null,
 		"currentItemEndArrowhead": "arrow",
 		"currentItemArrowType": "round",
-		"scrollX": 364.34063285272566,
-		"scrollY": 385.05249258894474,
+		"scrollX": 283.1215266688887,
+		"scrollY": 407.86307213373595,
 		"zoom": {
-			"value": 2
+			"value": 1.832972
 		},
 		"currentItemRoundness": "round",
 		"gridSize": 20,
