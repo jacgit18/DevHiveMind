@@ -17,8 +17,10 @@ My default state in Jujitsu is reactive focus on being more proactive also incor
 
 
 **Rubber Guard**, **Closed Guard**, and **Butterfly Guard** equals chokes
-chokes to limbs
-limbs to chokes
+chokes to limbs to choke
+limbs to chokes to limb
+
+x choke to triangle
 
 Fake a submission for another submission or use for a sweep 
 
