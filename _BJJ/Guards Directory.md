@@ -19,6 +19,7 @@ Reverse somebody's Kimora with an armbar
 
 Fake a submission for another submission or use for a sweep
 
+**Rubber Guard**, **Closed Guard**, and **Butterfly Guard** equals chokes  
 ## Guard Flow 
 Don't necessarily need to start in full guard also any open guard can be used to get into mission control which is when you have a leg over the back of the neck holding with the opposite side arm and into Rubber guard
 
@@ -212,6 +213,7 @@ style P fill:blue,stroke:black,stroke-width:4px,shadow:shadow
 
 Open Guard - Green
 Side Control, Mount, Half Guard - Blue
+Sprawl, Turtle - purple
 Back Control - Pink
 ```mermaid
 flowchart LR
@@ -271,10 +273,10 @@ style L fill:blue,stroke:black,stroke-width:4px,shadow:shadow
 style M fill:red,stroke:black,stroke-width:4px,shadow:shadow
 style N fill:pink,stroke:black,stroke-width:4px,shadow:shadow
 
-style O fill:red,stroke:black,stroke-width:4px,shadow:shadow
+style O fill:blue,stroke:black,stroke-width:4px,shadow:shadow
 style P fill:red,stroke:black,stroke-width:4px,shadow:shadow
 
-style Q fill:red,stroke:black,stroke-width:4px,shadow:shadow
+style Q fill:purple,stroke:black,stroke-width:4px,shadow:shadow
 style R fill:blue,stroke:black,stroke-width:4px,shadow:shadow
 style S fill:red,stroke:black,stroke-width:4px,shadow:shadow
 ```
