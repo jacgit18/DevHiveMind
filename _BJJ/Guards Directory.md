@@ -210,41 +210,59 @@ style O fill:blue,stroke:black,stroke-width:4px,shadow:shadow
 style P fill:blue,stroke:black,stroke-width:4px,shadow:shadow
 ```
 
-flowchart TD
-    A[Triangle Choke] -->|Escape Defense| B[Armbar]
-    A -->|Posture Defense| C[Omoplata]
-    A -->|Adjust Arm Position| D[Gogoplata]
-    B -->|Grip Break| E[Kimura]
-    C -->|Failed Position| B
-    D -->|Defense Creates Space| A
+```mermaid
+flowchart LR
+    A[Triangle Choke] <-.->  B[Armbar]
+    A <-.-> C[Omoplata]
+    A <-.->  D[Gogoplata]
+    B <-.-> E[Kimura]
+    C <-.->  B
 
-    F[Guillotine Choke] -->|Opponent Drives Forward| G[Ninja Choke]
-    F -->|Escape Roll| H[Peruvian Necktie]
-    F -->|Arm Trap| I[Arm-In Guillotine]
 
-    J[Arm Triangle Choke] -->|Frame Defense| K[Brabo Choke]
-    J -->|Tucked Head| L[D’Arce Choke]
-    J -->|Roll Defense| B
+    F[Guillotine Choke] --> G[Ninja Choke]
+    F --> H[Peruvian Necktie]
+    F --> I[Arm-In Guillotine]
 
-    M[Rear Naked Choke] -->|Hand Defense| B
-    M -->|Grip Break| N[Bow and Arrow Choke]
+    J[Arm Triangle Choke] --> K[Brabo Choke]
+    J --> L[D’Arce Choke]
+    J --> B
 
-    O[Baseball Bat Choke] -->|Pressure Adjustment| P[Ezekiel Choke]
-    O -->|Escape Opens Arm| B
+    M[Rear Naked Choke] --> B
+    M --> N[Bow and Arrow Choke]
 
-    Q[Anaconda Choke] -->|Escape Roll| L
-    Q -->|Failed Lock| H
+    O[Baseball Bat Choke] --> P[Ezekiel Choke]
+    O --> B
 
-    R[Brabo Choke] -->|Tight Arm Control| J
-    R -->|Failed Setup| L
+    Q[Anaconda Choke] --> L
+    Q --> H
 
-    S[Cross Collar Choke] -->|Grip Adjust| N
-    S -->|Escape Space| P
+    R[Brabo Choke] --> J
+    R --> L
 
-    T[Ezekiel Choke] -->|Post Defense| B
-    T -->|Failed Pressure| K
+    S[Cross Collar Choke] --> N
+    S --> P
+
+    T[Ezekiel Choke] --> B
+    T --> K
+    
+style A fill:red,stroke:black,stroke-width:4px,shadow:shadow
+
+style B fill:orange,stroke:black,stroke-width:4px,shadow:shadow
+
+style C fill:orange,stroke:black,stroke-width:4px,shadow:shadow
+
+style D fill:red,stroke:black,stroke-width:4px,shadow:shadow
+
+style E fill:orange,stroke:black,stroke-width:4px,shadow:shadow
+
+style F fill:red,stroke:black,stroke-width:4px,shadow:shadow
+
+style G fill:red,stroke:black,stroke-width:4px,shadow:shadow
+style H fill:red,stroke:black,stroke-width:4px,shadow:shadow
+style I fill:red,stroke:black,stroke-width:4px,shadow:shadow
+
 ```
-```
+
 ## Effective Against Larger Opponents
 
 ### Guards 
