@@ -13,6 +13,8 @@ dg-publish:
 ---
 # Opponent Size Best Practices (Bottom Defensive Position)  
 
+My default state in Jujitsu is reactive focus on being more proactive also incorporating more aggression.
+
 ## Guard Flow 
 Don't necessarily need to start in full guard also any open guard can be used to get into mission control which is when you have a leg over the back of the neck holding with the opposite side arm and into Rubber guard
 
