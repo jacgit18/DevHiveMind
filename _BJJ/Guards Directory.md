@@ -226,6 +226,7 @@ flowchart LR
     A[Triangle Choke] <-.->  B[Armbar]
     A <-.-> C[Omoplata]
     A <-.->  D[Gogoplata]
+    A <-.->  E
     B <-.-> E[Kimura]
     C <-.->  B
 
