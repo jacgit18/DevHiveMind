@@ -222,6 +222,8 @@ flowchart LR
     F[Guillotine Choke] --> G[Ninja Choke]
     F --> H[Peruvian Necktie]
     F --> I[Arm-In Guillotine]
+    F --> Q
+    F --> L
 
     J[Arm Triangle Choke] --> K[Brabo Choke]
     J --> L[D’Arce Choke]
@@ -242,8 +244,8 @@ flowchart LR
     S[Cross Collar Choke] --> N
     S --> P
 
-    T[Ezekiel Choke] --> B
-    T --> K
+    P --> B
+    P --> K
     
 style A fill:red,stroke:black,stroke-width:4px,shadow:shadow
 
@@ -260,7 +262,18 @@ style F fill:red,stroke:black,stroke-width:4px,shadow:shadow
 style G fill:red,stroke:black,stroke-width:4px,shadow:shadow
 style H fill:red,stroke:black,stroke-width:4px,shadow:shadow
 style I fill:red,stroke:black,stroke-width:4px,shadow:shadow
+style J fill:red,stroke:black,stroke-width:4px,shadow:shadow
 
+style L fill:red,stroke:black,stroke-width:4px,shadow:shadow
+style M fill:red,stroke:black,stroke-width:4px,shadow:shadow
+style N fill:red,stroke:black,stroke-width:4px,shadow:shadow
+
+style O fill:red,stroke:black,stroke-width:4px,shadow:shadow
+style P fill:red,stroke:black,stroke-width:4px,shadow:shadow
+
+style Q fill:red,stroke:black,stroke-width:4px,shadow:shadow
+style R fill:red,stroke:black,stroke-width:4px,shadow:shadow
+style S fill:red,stroke:black,stroke-width:4px,shadow:shadow
 ```
 
 ## Effective Against Larger Opponents
