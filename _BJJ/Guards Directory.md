@@ -210,6 +210,9 @@ style O fill:blue,stroke:black,stroke-width:4px,shadow:shadow
 style P fill:blue,stroke:black,stroke-width:4px,shadow:shadow
 ```
 
+Open Guard - Green
+Side Control, Mount, Half Guard - Blue
+Back Control - Pink
 ```mermaid
 flowchart LR
     A[Triangle Choke] <-.->  B[Armbar]
@@ -219,13 +222,13 @@ flowchart LR
     C <-.->  B
 
 
-    F[Guillotine Choke] --> G[Ninja Choke]
-    F --> H[Peruvian Necktie]
-    F --> I[Arm-In Guillotine]
-    F --> Q
-    F --> L
+    F[Guillotine Choke] .-> G[Ninja Choke]
+    F .-> H[Peruvian Necktie]
+    F .-> I[Arm-In Guillotine]
+    F .-> Q
+    F .-> L
 
-    J[Arm Triangle Choke] --> K[Brabo Choke]
+    J[Arm Triangle Choke] --> P
     J --> L[D’Arce Choke]
     J --> B
 
@@ -245,9 +248,9 @@ flowchart LR
     S --> P
 
     P --> B
-    P --> K
+    P --> R
     
-style A fill:red,stroke:black,stroke-width:4px,shadow:shadow
+style A fill:orange,stroke:black,stroke-width:4px,shadow:shadow
 
 style B fill:orange,stroke:black,stroke-width:4px,shadow:shadow
 
@@ -257,22 +260,22 @@ style D fill:red,stroke:black,stroke-width:4px,shadow:shadow
 
 style E fill:orange,stroke:black,stroke-width:4px,shadow:shadow
 
-style F fill:red,stroke:black,stroke-width:4px,shadow:shadow
+style F fill:green,stroke:black,stroke-width:4px,shadow:shadow
 
 style G fill:red,stroke:black,stroke-width:4px,shadow:shadow
 style H fill:red,stroke:black,stroke-width:4px,shadow:shadow
 style I fill:red,stroke:black,stroke-width:4px,shadow:shadow
 style J fill:red,stroke:black,stroke-width:4px,shadow:shadow
 
-style L fill:red,stroke:black,stroke-width:4px,shadow:shadow
+style L fill:blue,stroke:black,stroke-width:4px,shadow:shadow
 style M fill:red,stroke:black,stroke-width:4px,shadow:shadow
-style N fill:red,stroke:black,stroke-width:4px,shadow:shadow
+style N fill:pink,stroke:black,stroke-width:4px,shadow:shadow
 
 style O fill:red,stroke:black,stroke-width:4px,shadow:shadow
 style P fill:red,stroke:black,stroke-width:4px,shadow:shadow
 
 style Q fill:red,stroke:black,stroke-width:4px,shadow:shadow
-style R fill:red,stroke:black,stroke-width:4px,shadow:shadow
+style R fill:blue,stroke:black,stroke-width:4px,shadow:shadow
 style S fill:red,stroke:black,stroke-width:4px,shadow:shadow
 ```
 
