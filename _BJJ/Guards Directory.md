@@ -209,6 +209,42 @@ style O fill:blue,stroke:black,stroke-width:4px,shadow:shadow
 
 style P fill:blue,stroke:black,stroke-width:4px,shadow:shadow
 ```
+
+flowchart TD
+    A[Triangle Choke] -->|Escape Defense| B[Armbar]
+    A -->|Posture Defense| C[Omoplata]
+    A -->|Adjust Arm Position| D[Gogoplata]
+    B -->|Grip Break| E[Kimura]
+    C -->|Failed Position| B
+    D -->|Defense Creates Space| A
+
+    F[Guillotine Choke] -->|Opponent Drives Forward| G[Ninja Choke]
+    F -->|Escape Roll| H[Peruvian Necktie]
+    F -->|Arm Trap| I[Arm-In Guillotine]
+
+    J[Arm Triangle Choke] -->|Frame Defense| K[Brabo Choke]
+    J -->|Tucked Head| L[D’Arce Choke]
+    J -->|Roll Defense| B
+
+    M[Rear Naked Choke] -->|Hand Defense| B
+    M -->|Grip Break| N[Bow and Arrow Choke]
+
+    O[Baseball Bat Choke] -->|Pressure Adjustment| P[Ezekiel Choke]
+    O -->|Escape Opens Arm| B
+
+    Q[Anaconda Choke] -->|Escape Roll| L
+    Q -->|Failed Lock| H
+
+    R[Brabo Choke] -->|Tight Arm Control| J
+    R -->|Failed Setup| L
+
+    S[Cross Collar Choke] -->|Grip Adjust| N
+    S -->|Escape Space| P
+
+    T[Ezekiel Choke] -->|Post Defense| B
+    T -->|Failed Pressure| K
+```
+```
 ## Effective Against Larger Opponents
 
 ### Guards 
