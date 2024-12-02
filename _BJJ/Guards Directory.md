@@ -22,24 +22,6 @@ Fake a submission for another submission or use for a sweep
 ## Guard Flow 
 Don't necessarily need to start in full guard also any open guard can be used to get into mission control which is when you have a leg over the back of the neck holding with the opposite side arm and into Rubber guard
 
-### **Submissions from Mission Control**
-
-1. **Triangle Choke**
-    
-    - When the opponent tries to posture up, you can transition to a triangle by controlling their arm and swinging your leg over their shoulder.
-2. **Omoplata**
-    
-    - By isolating the opponent’s arm and rotating your hips, you can set up this shoulder lock.
-3. **Gogoplata**
-    
-    - Use your shin across their throat while maintaining the rubber guard position to apply this choke.
-4. **Armbar**
-    
-    - When their posture breaks, isolate their arm and transition to an armbar.
-
-
-
-
 ``` mermaid
 flowchart LR
     A[Full Guard] 
@@ -60,8 +42,12 @@ flowchart LR
 	P[Tornado]
 	Q[Rubber]
 	R[Mission Control]
-
 	Z[ZGuard]
+
+	1[Triangle]
+	2[Gogoplata]
+	3[Omoplata]
+	4[Armbar]
 
     A <-.-> B
     A <-.-> C
@@ -94,6 +80,10 @@ flowchart LR
 	L --> F
 	I <-.-> K
 	R <-.-> Q 
+	R --> 1
+	R --> 2
+	R --> 3 
+	R --> 4 
 
 style A fill:green,stroke:black,stroke-width:4px,shadow:shadow
 
@@ -130,6 +120,15 @@ style Q fill:blue,stroke:black,stroke-width:4px,shadow:shadow
 style R fill:blue,stroke:black,stroke-width:4px,shadow:shadow
 
 style Z fill:blue,stroke:black,stroke-width:4px,shadow:shadow
+
+
+style 1 fill:red,stroke:black,stroke-width:4px,shadow:shadow
+
+style 2 fill:red,stroke:black,stroke-width:4px,shadow:shadow
+
+style 3 fill:orange,stroke:black,stroke-width:4px,shadow:shadow
+
+style 4 fill:orange,stroke:black,stroke-width:4px,shadow:shadow
 ```
 
 
