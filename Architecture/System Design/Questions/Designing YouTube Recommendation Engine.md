@@ -64,7 +64,28 @@ age, geography, governance, etc ...
 |     | dislikes              | INT          |
 |     | upload_date           | DATE         |
 |     | recommended_score     | FLOAT        |
+|     |                       |              |
+|     |                       |              |
+``` mermaid
+classDiagram
+class VideoRecommendations {
+        +VideoID: VARCHAR(50)
+        -UserID: INT
+    }
 
+    class User {
+        UserID: INT
+        +bark(): void
+    }
+
+    class Cat {
+        +color: string
+        +meow(): void
+    }
+
+    User <|-- VideoRecommendations
+    Animal <|-- Cat
+```
 ##### Table 2
 |     | User          |
 | --- | ------------- |
