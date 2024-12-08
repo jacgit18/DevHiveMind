@@ -71,3 +71,6 @@ This framework balances:
 - The **creativity** needed to thrive in dynamic markets.
 
 By integrating imitation, iteration, and innovation, I aim to make smarter, future-proof investment decisions.
+
+
+<iframe title="How to do a Turkish get-up" src="https://www.youtube.com/embed/sgd8n917Zv0?feature=oembed" height="113" width="200" allowfullscreen="" allow="fullscreen" style="aspect-ratio: 1.76991 / 1; width: 100%; height: 100%;"></iframe>
