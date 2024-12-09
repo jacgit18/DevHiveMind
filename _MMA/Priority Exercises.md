@@ -45,13 +45,14 @@ Kettlebell Lunge
 
 ### Resistance 
 
-(Goblet Squat)[unnamed.gif]
+
 
 ## Lower Body
 
 ### Weights
+[Deadlift(Dumbbell)](dumbbell-deadlift.gif)
 Kettlebell Step-Up
-Goblet Squat 16kg(35lb)
+[Goblet Squat](unnamed.gif) 16kg(35lb)
 
 ### Calisthenics(No Weights)
 
@@ -67,6 +68,12 @@ https://www.youtube.com/watch?v=vgn7bSXkgkA
 
 ### Weights
 Halos 8kg(17lb) Kettlebell
+
+
+Shoulder press
+Chest press
+
+bent over row(low priority)
 
 ### Calisthenics(No Weights)
 
