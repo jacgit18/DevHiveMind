@@ -11,4 +11,19 @@ Relates:
 Peer Reviewed: 0
 dg-publish:
 ---
-create note from template like `Alt +n`
+## Plyometrics(Jumps)
+
+
+## Resistance 
+
+### Upper Body
+Seated Cable Rows 
+Over head Press
+Push Ups with Bands
+
+### Lower Body
+
+
+https://www.youtube.com/watch?v=vgn7bSXkgkA
+
+### Core
