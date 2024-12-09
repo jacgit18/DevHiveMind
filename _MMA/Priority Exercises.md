@@ -29,6 +29,9 @@ Russian Twists with Kettlebell
 ### Calisthenics(No Weights)
 
 ### Weights
+
+![Turkish get-up](https://www.youtube.com/embed/sgd8n917Zv0?feature=oembed)
+
 Clean & Press (Barbell/Dumbell)
 
 Farmer’s Walk (Kettlebell/Barbell)
@@ -42,6 +45,8 @@ barbell if you want todo a whole bunch of weight
 
 
 Kettlebell Lunge
+
+![Kettlebell Snatch](https://www.youtube.com/embed/Pm-b2XFeABA?feature=oembed)
 
 ### Resistance 
 
@@ -57,6 +62,9 @@ Kettlebell Lunge
 - Uneven squat
 
 ![Bulgarian Split Squat](https://www.youtube.com/watch?v=vgn7bSXkgkA)
+
+![Deadlift(Kettlebell)](https://www.youtube.com/embed/hinonqqzatk?feature=oembed)
+
 
 ### Calisthenics(No Weights)
 
