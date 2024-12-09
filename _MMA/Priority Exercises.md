@@ -11,19 +11,32 @@ Relates:
 Peer Reviewed: 0
 dg-publish:
 ---
-## Plyometrics(Jumps)
+## Core
+
+Russian Twists with Kettlebell
 
 
-## Resistance 
+## Full Body
+Kettle bell Swing
+Clean & Press (Barbell/Dumbell)
 
-### Upper Body
+
+
+Do Kettlebell Squats otherwise barbell
+barbell if you want todo a whole bunch of weight 
+
+
+## Lower Body
+
+https://www.youtube.com/watch?v=vgn7bSXkgkA
+
+
+
+## Upper Body
+
+### Plyometrics(Jumps)
+### Resistance 
 Seated Cable Rows 
 Over head Press
 Push Ups with Bands
 
-### Lower Body
-
-
-https://www.youtube.com/watch?v=vgn7bSXkgkA
-
-### Core
