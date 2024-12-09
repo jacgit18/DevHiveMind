@@ -11,30 +11,60 @@ Relates:
 Peer Reviewed: 0
 dg-publish:
 ---
+# Regimen
+Just get good at 11 core workouts or stretches
+
+
 ## Core
 
+### Calisthenics(No Weights)
+Russian Twists 
+
+### Weights
 Russian Twists with Kettlebell
 
 
 ## Full Body
+
+### Calisthenics(No Weights)
+
+### Weights
+Kettlebell Farmer’s Walk
+
+### Stuff
 Kettle bell Swing
 Clean & Press (Barbell/Dumbell)
-
-
 
 Do Kettlebell Squats otherwise barbell
 barbell if you want todo a whole bunch of weight 
 
+### Resistance 
+
+
 
 ## Lower Body
 
+### Calisthenics(No Weights)
+
+### Plyometrics(Jumps)
+
 https://www.youtube.com/watch?v=vgn7bSXkgkA
+
+### Resistance 
 
 
 
 ## Upper Body
 
-### Plyometrics(Jumps)
+### Calisthenics(No Weights)
+
+#### Pull up bar
+The heavier the weight for pull up bar the lighter so use the lighter weight  
+  
+Wide grip  
+Neutral grip  
+Chin up grip
+
 ### Resistance 
 Seated Cable Rows 
 Over head Press
