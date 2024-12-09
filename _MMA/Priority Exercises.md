@@ -50,9 +50,9 @@ Kettlebell Lunge
 ## Lower Body
 
 ### Weights
-[Deadlift(Dumbbell)](dumbbell-deadlift.gif)
-Kettlebell Step-Up
-[Goblet Squat](unnamed.gif) 16kg(35lb)
+- [Deadlift(Dumbbell)](dumbbell-deadlift.gif)
+- Kettlebell Step-Up
+- [Goblet Squat](unnamed.gif) 16kg(35lb)
 
 ### Calisthenics(No Weights)
 
