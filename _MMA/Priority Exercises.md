@@ -14,7 +14,7 @@ dg-publish:
 # Regimen
 Just get good at 11 core workouts or stretches
 
-
+Avoid upright row unnatural position
 ## Core
 
 ### Calisthenics(No Weights)
@@ -54,7 +54,7 @@ Kettlebell Lunge
 - Kettlebell Step-Up
 - [Goblet Squat](unnamed.gif) 16kg(35lb)
 - [Sumo Squat](Sumo.gif)
-
+- Uneven squat
 ### Calisthenics(No Weights)
 
 ### Plyometrics(Jumps)
@@ -71,7 +71,7 @@ https://www.youtube.com/watch?v=vgn7bSXkgkA
 Halos 8kg(17lb) Kettlebell
 
 
-Shoulder press
+Shoulder press -  Don't go behind the head do it in front
 Chest press
 
 bent over row(low priority)
@@ -87,6 +87,6 @@ Chin up grip
 
 ### Resistance 
 Seated Cable Rows 
-Over head Press
+Overhead Press(Dumbbell)
 Push Ups with Bands
 
