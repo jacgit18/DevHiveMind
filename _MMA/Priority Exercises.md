@@ -55,11 +55,13 @@ Kettlebell Lunge
 - [Goblet Squat](unnamed.gif) 16kg(35lb)
 - [Sumo Squat](Sumo.gif)
 - Uneven squat
+
+![Bulgarian Split Squat](https://www.youtube.com/watch?v=vgn7bSXkgkA)
+
 ### Calisthenics(No Weights)
 
 ### Plyometrics(Jumps)
 
-https://www.youtube.com/watch?v=vgn7bSXkgkA
 
 ### Resistance 
 
