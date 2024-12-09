@@ -29,20 +29,29 @@ Russian Twists with Kettlebell
 ### Calisthenics(No Weights)
 
 ### Weights
-Kettlebell Farmer’s Walk
-
-### Stuff
-Kettle bell Swing
 Clean & Press (Barbell/Dumbell)
+
+Farmer’s Walk (Kettlebell/Barbell)
+
+Kettlebell Swing
+
+
 
 Do Kettlebell Squats otherwise barbell
 barbell if you want todo a whole bunch of weight 
 
+
+Kettlebell Lunge
+
 ### Resistance 
 
-
+(Goblet Squat)[unnamed.gif]
 
 ## Lower Body
+
+### Weights
+Kettlebell Step-Up
+Goblet Squat 16kg(35lb)
 
 ### Calisthenics(No Weights)
 
@@ -55,6 +64,9 @@ https://www.youtube.com/watch?v=vgn7bSXkgkA
 
 
 ## Upper Body
+
+### Weights
+Halos 8kg(17lb) Kettlebell
 
 ### Calisthenics(No Weights)
 
