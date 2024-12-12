@@ -15,6 +15,8 @@ dg-publish:
 Just get good at 11 core workouts or stretches
 
 Avoid upright row unnatural position
+
+barbell alternative exercises it you want more weight 
 ## Core
 
 ### Calisthenics(No Weights)
@@ -32,17 +34,13 @@ Russian Twists with Kettlebell
 
 ![Turkish get-up](https://www.youtube.com/embed/sgd8n917Zv0?feature=oembed)
 
-Clean & Press (Barbell/Dumbell)
+Clean & Press (*Barbell*/***Dumbbell***)
 
-Farmer’s Walk (Kettlebell/Barbell)
+Farmer’s Walk (**Kettlebell**/*Barbell*)
 
-Kettlebell Swing
+**Kettlebell** Swing
 
-
-
-Do Kettlebell Squats otherwise barbell
-barbell if you want todo a whole bunch of weight 
-
+Squats(**Kettlebell**/*Barbell*)
 
 Kettlebell Lunge
 
@@ -55,8 +53,8 @@ Kettlebell Lunge
 ## Lower Body
 
 ### Weights
-- [Deadlift(Dumbbell)](dumbbell-deadlift.gif) - don't do barbell
-- Kettlebell Step-Up
+- [Deadlift](dumbbell-deadlift.gif)***(Dumbbell)*** - don't do barbell
+- **Kettlebell** Step-Up
 - [Goblet Squat](unnamed.gif) 16kg(35lb)
 - [Sumo Squat](Sumo.gif)
 - Uneven squat
@@ -78,8 +76,8 @@ Kettlebell Lunge
 ## Upper Body
 
 ### Weights
-Halos 8kg(17lb) Kettlebell
-
+Halos 8kg(17lb) **(Kettlebell)**
+Bench Press *(Barbell)*
 
 Shoulder press -  Don't go behind the head do it in front
 Chest press
@@ -97,6 +95,6 @@ Chin up grip
 
 ### Resistance 
 Seated Cable Rows 
-Overhead Press(Dumbbell)
+Overhead Press ***(Dumbbell)***
 Push Ups with Bands
 
