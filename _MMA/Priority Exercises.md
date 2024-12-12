@@ -17,6 +17,18 @@ Just get good at 11 core workouts or stretches
 Avoid upright row unnatural position
 
 barbell alternative exercises it you want more weight 
+dumbbell for more range of motion, muscle imbalance
+
+
+## Back
+
+### Calisthenics(No Weights)
+
+
+### Weights
+Bent-over Row
+
+
 ## Core
 
 ### Calisthenics(No Weights)
