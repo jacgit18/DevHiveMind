@@ -46,6 +46,8 @@ Russian Twists with Kettlebell
 
 ![Turkish get-up](https://www.youtube.com/embed/sgd8n917Zv0?feature=oembed)
 
+Arnold press(*Barbell*)
+
 Clean & Press (*Barbell*/***Dumbbell***)
 
 Farmer’s Walk (**Kettlebell**/*Barbell*)
@@ -54,7 +56,14 @@ Farmer’s Walk (**Kettlebell**/*Barbell*)
 
 Squats(**Kettlebell**/*Barbell*)
 
+Zercher Squat
+
 Kettlebell Lunge
+Renegade Row (**Kettlebell**/***Dumbbell***)
+
+
+
+landmine press  
 
 ![Kettlebell Snatch](https://www.youtube.com/embed/Pm-b2XFeABA?feature=oembed)
 
@@ -71,6 +80,7 @@ Kettlebell Lunge
 - [Sumo Squat](Sumo.gif)
 - Uneven squat
 - Hip Thrust *(Barbell)*
+- Romanian Deadlift  
 
 ![Bulgarian Split Squat](https://www.youtube.com/watch?v=vgn7bSXkgkA)
 
