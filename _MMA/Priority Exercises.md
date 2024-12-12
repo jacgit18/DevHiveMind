@@ -70,6 +70,7 @@ Kettlebell Lunge
 - [Goblet Squat](unnamed.gif) 16kg(35lb)
 - [Sumo Squat](Sumo.gif)
 - Uneven squat
+- Hip Thrust *(Barbell)*
 
 ![Bulgarian Split Squat](https://www.youtube.com/watch?v=vgn7bSXkgkA)
 
@@ -89,7 +90,7 @@ Kettlebell Lunge
 
 ### Weights
 Halos 8kg(17lb) **(Kettlebell)**
-Bench Press *(Barbell)*
+Bench Press *(Barbell)* close grip over wide grip hits more things also known as compound movement exercises
 
 Shoulder press -  Don't go behind the head do it in front
 Chest press
