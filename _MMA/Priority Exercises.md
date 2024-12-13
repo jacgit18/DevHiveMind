@@ -44,15 +44,6 @@ Workout more in the winter body retains weight more
 - Halos (**Kettlebell**) - 8kg / 17lb
 
 
----
-
-## Back
-
-### Calisthenics (No Weights)
-- _Work in progress._
-
-### Weights
-- **Bent-Over Row**
 
 ---
 
@@ -126,6 +117,8 @@ Get to 1 rep 15 sec each try to extend for 45 sec MAX
 - Bench Press (_Barbell_) - Prefer close grip for a more compound movement.
 - Shoulder Press - Avoid behind-the-head; stick to pressing in front.
 - Chest Press (Machine or Free Weights)
+- Cable Woodchopper
+- Lat Pulldown(Machine)
 - Single-Arm Press (**Kettlebell**)
 - Single-Arm Row (**Kettlebell**)
 - Reverse Grip Curl (_Curl Bar_)
