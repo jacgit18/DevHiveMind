@@ -54,8 +54,9 @@ Get to 1 rep 15 sec each try to extend for 45 sec MAX
 - Side plank
 - Hold pushup extended & unextended
 - Russian Twists
+- Tuck Jumps to Plank
 ### Weights
-- Russian Twists(**Kettlebell**)
+- Explosive Russian Twists (Medicine Ball/**Kettlebell**)
 - Cable Reverse Crunch 
 
 
@@ -84,6 +85,8 @@ Get to 1 rep 15 sec each try to extend for 45 sec MAX
 - Curtsy Lunge(_**Dumbbell**_)
 - Renegade Row (**Kettlebell**/_**Dumbbell**_)
 - Landmine Press
+- Medicine Ball Slam
+- Medicine Ball Rotational Slam
 - Kettlebell Snatch  
     ![Kettlebell Snatch](https://www.youtube.com/embed/Pm-b2XFeABA?feature=oembed)
     
@@ -119,6 +122,8 @@ Get to 1 rep 15 sec each try to extend for 45 sec MAX
 - Bench Press (_Barbell_) - Prefer close grip for a more compound movement.
 - Shoulder Press - Avoid behind-the-head; stick to pressing in front.
 - Chest Press (Machine or Free Weights)
+- Plyometric Chest Pass (Medicine Ball)
+- Explosive Overhead Throw 
 - Cable Bicep Curl
 - Cable Tricep Pushdown
 - Cable Woodchopper
@@ -130,6 +135,7 @@ Get to 1 rep 15 sec each try to extend for 45 sec MAX
 - Overhead Press (_**Dumbbell**_)
 - Bent-Over Row (Low Priority)
 ### Calisthenics (No Weights)
+- Plyometric Plank with Shoulder Tap
 **Pull-Up Bar Variations
 - Wide Grip
 - Neutral Grip

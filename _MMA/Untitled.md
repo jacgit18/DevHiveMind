@@ -5,34 +5,6 @@
 - Focus on explosive, dynamic movements to build power and speed.
 - Incorporate exercises that mimic the motions used in martial arts like BJJ, Muay Thai, kickboxing, and daily functional movements.
 
----
-
-## **Back**
-
-1. **Clap Pull-Ups**
-    - Builds explosive pulling strength for grappling and climbing.
-2. **Plyometric Lat Pull-Downs (with Bands)**
-    - Simulates explosive pulling for takedowns and throws.
-3. **Medicine Ball Slam (Overhead)**
-    - Develops explosive back and shoulder power for strikes.
-
----
-
-## **Core**
-
-1. **Medicine Ball Rotational Slam**
-    - Mimics rotational power in strikes and transitions.
-2. **Plyometric Plank with Shoulder Tap**
-    - Builds dynamic core stability for balance in grappling.
-3. **Explosive Russian Twists (with Medicine Ball)**
-    - Enhances rotational speed for kicks and striking.
-4. **Tuck Jumps to Plank**
-    - Strengthens the core and legs for transitions in groundwork.
-5. **Mountain Climbers with Jump Switch**
-    - Builds core explosiveness and agility for scrambles and escapes.
-
----
-
 ## **Upper Body**
 
 1. **Clap Push-Ups**

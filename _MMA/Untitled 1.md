@@ -13,8 +13,6 @@ dg-publish:
 ---
 Signs Your Body Is Deficient in Nutrients
 
-Kombucha &  yogurt for pro
-
 1. A white spot on the nail  
 • Get plenty of zinc  
 • Stop eating sugar  
@@ -92,3 +90,31 @@ Kombucha &  yogurt for pro
   
 23. Depression  
 • Get plenty of vitamin D
+
+
+
+![[unnamed (1) 1.png]]
+
+
+Kombucha &  yogurt for probiotics
+
+Higher number and lower on list better cost
+
+
+# Buy 
+
+Raw Honey  
+no white cow milk Carrageenan free almond milk  
+plant based soy yogurts and milks or nut milks  
+vegan cheese  
+Yogurt: Silk or Whole Soy brand vegan yogurts./non dairy yogurt  
+Tofu cheeses  
+
+extra virgin olive oil use for cold dishes or sautéing, frying, and baking under 400° Get dark bottle and store in dark place look at harvest date and use before 6 weeks  
+
+cook with macadamia oil  
+snacks with omega 3  
+[http://www.eatthis.com/carbs-that-uncover-your-abs](http://www.eatthis.com/carbs-that-uncover-your-abs)  
+[http://www.self.com/story/10-of-the-healthiest-cooking-oils-explained](http://www.self.com/story/10-of-the-healthiest-cooking-oils-explained)  
+[https://www.google.com/search?q=Meat+Substitutes](https://www.google.com/search?q=Meat%20Substitutes&authuser=0)  
+[https://www.dietitians.ca/Your-Health/Nutrition-A-Z/Vitamins/Food-Sources-of-Vitamin-B12.aspx](https://www.dietitians.ca/Your-Health/Nutrition-A-Z/Vitamins/Food-Sources-of-Vitamin-B12.aspx)
