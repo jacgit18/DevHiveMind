@@ -61,9 +61,9 @@ dg-publish:
     - **Pull-Up Variations** (Neutral Grip/Chin-Up Grip) (3 sets of 8-12 reps)
     - **Kettlebell Swing** (3 sets of 12-15 reps)
 
-## Top 11  Core Workouts(Machines)
-
+## Top 10  Core Workouts(Machines)
 - Cable Woodchopper
+- Cable Crossover
 - Chest Press
 - Overhead Shoulder Press
 - Lat Pulldown
@@ -71,7 +71,7 @@ dg-publish:
 - Cable Reverse Crunch
 - Leg Press
 - Chest Fly
-- 
+- Lying Leg Curl
 
 ---
 
