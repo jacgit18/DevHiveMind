@@ -106,7 +106,7 @@ Shoulder press -  Don't go behind the head do it in front
 Chest press
 
 bent over row(low priority)
-
+reverse grip curl *(Curl Bar)*
 ### Calisthenics(No Weights)
 
 #### Pull up bar
