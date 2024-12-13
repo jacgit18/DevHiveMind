@@ -12,121 +12,159 @@ Peer Reviewed: 0
 dg-publish:
 ---
 # Regimen
-Just get good at 11 core workouts or stretches
 
-Avoid upright row unnatural position
+## Core Principles
 
-barbell alternative exercises it you want more weight 
-dumbbell for more range of motion, muscle imbalance
+1. **Focus on 11 Core Workouts or Stretches:**  
+    Prioritize functional and foundational exercises to maximize efficiency.
+    
+2. **Avoid Risky Movements:**
+    
+    - Skip upright rows due to the unnatural shoulder position.
+3. **Equipment Tips:**
+    
+    - Use **barbells** for added weight when building strength.
+    - Use **dumbbells** for greater range of motion and correcting muscle imbalances.
 
- **Practices:**  
-- Dynamic warm-up to increase blood flow and flexibility.  
-- Static stretching for major muscle groups during the cool down.  
+Cardio  
+Get heart rate up and take a little walk to get it down then repeat  
+
+## Practices
+
+- **Dynamic Warm-Up:** Improve blood flow and flexibility before starting.
+- **Static Stretching:** Cool down with stretches targeting major muscle groups.
+
+
+## Top 11 Workouts
+- Bench Press (_Barbell_) - Prefer close grip for a more compound movement.
+
+_Work in progress._
+
+---
+
 ## Back
 
-### Calisthenics(No Weights)
+### Calisthenics (No Weights)
 
+_Work in progress._
 
 ### Weights
-Bent-over Row
 
+- **Bent-Over Row**
+
+---
 
 ## Core
 
-### Calisthenics(No Weights)
-Russian Twists 
+### Calisthenics (No Weights)
+
+- **Russian Twists**
 
 ### Weights
-Russian Twists with Kettlebell
 
+- **Russian Twists with Kettlebell**
+
+---
 
 ## Full Body
 
-### Calisthenics(No Weights)
+### Calisthenics (No Weights)
+
+_Work in progress._
 
 ### Weights
 
-![Turkish get-up](https://www.youtube.com/embed/sgd8n917Zv0?feature=oembed)
+- **Turkish Get-Up**  
+    ![Turkish Get-Up](https://www.youtube.com/embed/sgd8n917Zv0?feature=oembed)
+    
+- **Around the World**  
+    ![Around the World](https://www.youtube.com/watch?v=N4mMVG8S5Kg)
+    
+- **Arnold Press** (_Barbell_)
+    
+- **Clean & Press** (_Barbell_ / _**Dumbbell**_)
+    
+- **Farmer’s Walk** (**Kettlebell** / _Barbell_)
+    
+- **Kettlebell Swing**
+    
+- **Squats** (**Kettlebell** / _Barbell_)
+    
+- **Zercher Squat**
+    
+- **High Pull** (**Kettlebell**)
+    
+- **Lunge Twist** (**Kettlebell**)
+    
+- **Curtsy Lunge** (_**Dumbbell**_)
+    
+- **Renegade Row** (**Kettlebell** / _**Dumbbell**_)
+    
+- **Landmine Press**
+    
+- **Kettlebell Snatch**  
+    ![Kettlebell Snatch](https://www.youtube.com/embed/Pm-b2XFeABA?feature=oembed)
+    
 
-![Around the world](https://www.youtube.com/watch?v=N4mMVG8S5Kg)
-
-
-Arnold press(*Barbell*)
-
-Clean & Press (*Barbell*/***Dumbbell***)
-
-Farmer’s Walk (**Kettlebell**/*Barbell*)
-
-**Kettlebell** Swing
-
-Squats(**Kettlebell**/*Barbell*)
-
-Zercher Squat
-High Pull (**Kettlebell**)
-Lunge twist  (**Kettlebell**)
-Curtsy lunge(***Dumbbell***)  
-Renegade Row (**Kettlebell**/***Dumbbell***)
-
-
-
-landmine press  
-
-![Kettlebell Snatch](https://www.youtube.com/embed/Pm-b2XFeABA?feature=oembed)
-
-### Resistance 
-
-
+---
 
 ## Lower Body
 
 ### Weights
-- [Deadlift](dumbbell-deadlift.gif)***(Dumbbell)*** - don't do barbell
-- **Kettlebell** Step-Up
+
+- [Deadlift](dumbbell-deadlift.gif) (_**Dumbbell**_) - Avoid barbell variations.
 - [Goblet Squat](unnamed.gif) 16kg(35lb)
 - [Sumo Squat](Sumo.gif)
-- Uneven squat
-- Hip Thrust *(Barbell)*
-- Romanian Deadlift  
+- Uneven Squat
+- Hip Thrust (_Barbell_)
+- Romanian Deadlift
 - Kettlebell Rotational Clean
+- Kettlebell Step-Up
+	![](https://www.youtube.com/watch?v=lXvA8exxWmE)
+- Bulgarian Split Squat  
+    ![Bulgarian Split Squat](https://www.youtube.com/watch?v=vgn7bSXkgkA)
+- Kettlebell Deadlift
+    ![Deadlift (Kettlebell)](https://www.youtube.com/embed/hinonqqzatk?feature=oembed)
 
-![Bulgarian Split Squat](https://www.youtube.com/watch?v=vgn7bSXkgkA)
+### Calisthenics (No Weights)
 
-![Deadlift(Kettlebell)](https://www.youtube.com/embed/hinonqqzatk?feature=oembed)
+_Work in progress._
 
+### Plyometrics (Jumps)
 
-### Calisthenics(No Weights)
+_Work in progress._
 
-### Plyometrics(Jumps)
+### Resistance
 
+_Work in progress._
 
-### Resistance 
-
-
+---
 
 ## Upper Body
 
 ### Weights
-Halos 8kg(17lb) **(Kettlebell)**
-Bench Press *(Barbell)* close grip over wide grip hits more things also known as compound movement exercises
 
-Shoulder press -  Don't go behind the head do it in front
-Chest press machine or free-weights
-Single-Arm Press **(Kettlebell)**
-Single-Arm Row **(Kettlebell)**
+- **Halos** (8kg / 17lb **Kettlebell**)
+- **Bench Press** (_Barbell_) - Prefer close grip for a more compound movement.
+- **Shoulder Press** - Avoid behind-the-head; stick to pressing in front.
+- **Chest Press** (Machine or Free Weights)
+- **Single-Arm Press** (**Kettlebell**)
+- **Single-Arm Row** (**Kettlebell**)
+- **Bent-Over Row** (Low Priority)
+- **Reverse Grip Curl** (_Curl Bar_)
 
-bent over row(low priority)
-reverse grip curl *(Curl Bar)*
-### Calisthenics(No Weights)
+### Calisthenics (No Weights)
 
-#### Pull up bar
-The heavier the weight for pull up bar the lighter so use the lighter weight  
-  
-Wide grip  
-Neutral grip  
-Chin up grip
+#### Pull-Up Bar Variations
 
-### Resistance 
-Seated Cable Rows 
-Overhead Press ***(Dumbbell)***
-Push Ups with Bands
+- **Wide Grip**
+- **Neutral Grip**
+- **Chin-Up Grip**
 
+_Tip:_ Use added weight if possible; heavier weight makes pull-ups feel easier when unloaded.
+
+### Resistance
+
+- **Seated Cable Rows**
+- **Overhead Press** (_**Dumbbell**_)
+- **Push-Ups with Bands**
