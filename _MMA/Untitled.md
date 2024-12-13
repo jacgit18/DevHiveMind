@@ -1,45 +1,4 @@
-# **Plyometric Exercises for Functional Strength and Martial Arts**
 
-### **Key Principles**
-
-- Focus on explosive, dynamic movements to build power and speed.
-- Incorporate exercises that mimic the motions used in martial arts like BJJ, Muay Thai, kickboxing, and daily functional movements.
-
-## **Upper Body**
-
-1. **Clap Push-Ups**
-    - Improves explosive pushing power for strikes and framing in grappling.
-2. **Plyometric Chest Pass (Medicine Ball)**
-    - Simulates punching explosiveness for strikes.
-3. **Explosive Overhead Throw (Medicine Ball)**
-    - Builds shoulder and tricep power for punches.
-4. **Kneeling Power Push-Up**
-    - Develops explosive upper-body strength for takedown drives.
-5. **Plyometric Landmine Press**
-    - Mimics explosive pushing motions in grappling or striking.
-
----
-
-## **Lower Body**
-
-1. **Depth Jumps**
-    - Builds explosive leg power for takedowns and evasion.
-2. **Box Jumps**
-    - Improves vertical explosiveness for kicks and guard passing.
-3. **Broad Jumps**
-    - Develops horizontal power for tackling or shooting in.
-4. **Split Squat Jumps**
-    - Enhances single-leg power for kicks and takedowns.
-5. **Lateral Bounds**
-    - Builds lateral agility and power for evasion and sweeps.
-6. **Plyometric Step-Ups**
-    - Simulates explosive stepping movements for takedowns.
-7. **Skater Jumps**
-    - Strengthens lateral explosiveness for dynamic movement in striking.
-8. **Squat to Jump Kick**
-    - Combines explosive leg power with striking mechanics.
-
----
 
 ## **Full Body**
 
