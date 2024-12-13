@@ -35,11 +35,32 @@ dg-publish:
 16% body fat possibly lower
 
 
-## Top 11 Workouts
-- Bench Press (_Barbell_) - Prefer close grip for a more compound movement.
-- Neutral Grip Pull Up
-- Halos (**Kettlebell**) - 8kg / 17lb
+## Top 11  Core Workouts(non Machines)
+1. **Explosive Power (Plyometric & Olympic Movements)**
+- Start with these to engage fast-twitch muscle fibers and improve explosive strength:
+    - **Depth Jumps** (3 sets of 6 reps)
+    - **Kettlebell Snatch** (3 sets of 8-10 reps per arm)
+    - **Clean & Press (Dumbbell/Barbell)** (3 sets of 8-10 reps)
 
+2. **Strength Training (Compound Movements)**
+- Follow with heavy, compound lifts to build muscle and functional strength:
+    - **Turkish Get-Up** (3 sets per side, focusing on control)
+    - **Bulgarian Split Squat** (3 sets of 8-12 reps per leg)
+    - **Farmer’s Walk** (3 sets of 30-40 seconds)
+    - Bench Press (_Barbell_) - Prefer close grip for a more compound movement.
+
+3. **Rotational/Core Strength**
+- Focus on rotational movements for striking power and grappling control:
+    - **Cable Woodchopper** (3 sets of 10-12 reps per side)
+    - **Renegade Row (Kettlebell/Dumbbell)** (3 sets of 8-10 reps per arm)
+- ***Extra***
+    - Halos (**Kettlebell**) - 8kg / 17lb - Core/Rotational Stability
+	- **Medicine Ball Rotational Slam** (3 sets of 10 reps per side)
+
+4. **Pulling/Grip Strength**
+- Conclude with exercises to build pulling power and grip for grappling:
+    - **Pull-Up Variations** (Neutral Grip/Chin-Up Grip) (3 sets of 8-12 reps)
+    - **Kettlebell Swing** (3 sets of 12-15 reps)
 
 
 ---
