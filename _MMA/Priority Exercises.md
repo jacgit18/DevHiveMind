@@ -41,7 +41,7 @@ Workout more in the winter body retains weight more
 ## Top 11 Workouts
 - Bench Press (_Barbell_) - Prefer close grip for a more compound movement.
 - Neutral Grip Pull Up
-
+- Halos (**Kettlebell**) - 8kg / 17lb
 
 
 ---
@@ -49,19 +49,20 @@ Workout more in the winter body retains weight more
 ## Back
 
 ### Calisthenics (No Weights)
-
-_Work in progress._
+- _Work in progress._
 
 ### Weights
-
 - **Bent-Over Row**
 
 ---
 
 ## Core
-
-### Calisthenics (No Weights)
-- **Russian Twists**
+Get to 1 rep 15 sec each try to extend for 45 sec MAX
+### Isometric Calisthenics (No Weights)
+- Long lever plank
+- Side plank
+- Hold pushup extended & unextended
+- Russian Twists
 ### Weights
 - Russian Twists(**Kettlebell**)
 
