@@ -63,7 +63,8 @@ Squats(**Kettlebell**/*Barbell*)
 
 Zercher Squat
 High Pull (**Kettlebell**)
-Lunge(**Kettlebell**)
+Lunge twist  (**Kettlebell**)
+Curtsy lunge(***Dumbbell***)  
 Renegade Row (**Kettlebell**/***Dumbbell***)
 
 
