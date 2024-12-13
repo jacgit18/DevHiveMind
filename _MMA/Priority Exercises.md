@@ -50,7 +50,8 @@ Get to 1 rep 15 sec each try to extend for 45 sec MAX
 - Long lever plank
 - Side plank
 - Hold pushup extended & unextended
-- Russian Twists
+- Russian Twists(Levitate heels off floor elbows to back on twist)
+	![](https://www.youtube.com/watch?v=7XUglHKRyMo)
 - Tuck Jumps to Plank
 ### Weights
 - Explosive Russian Twists (Medicine Ball/**Kettlebell**)
