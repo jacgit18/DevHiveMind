@@ -106,15 +106,15 @@ Get to 1 rep 15 sec each try to extend for 45 sec MAX
 - Box Jumps
 - Broad Jumps
 - Depth Jump
-	- ![](https://www.youtube.com/watch?v=NvSkuYwNxco)
+	 ![](https://www.youtube.com/watch?v=NvSkuYwNxco)
 - Lateral Bound
-	- ![](https://www.youtube.com/watch?v=soqQy4dzEts)
+	 ![](https://www.youtube.com/watch?v=soqQy4dzEts)
 - Plyometric Step-Ups
-	- ![](https://www.youtube.com/watch?v=7yC-oCnWIRc)
+	 ![](https://www.youtube.com/watch?v=7yC-oCnWIRc)
 - Skater Jumps
 - Split Squat Jumps
 -  High Kick Crossover
-	- ![](https://www.youtube.com/watch?v=w6AlcHbLU7k&pp=ygUSU3F1YXQgdG8gSnVtcCBLaWNr)
+	 ![](https://www.youtube.com/watch?v=w6AlcHbLU7k&pp=ygUSU3F1YXQgdG8gSnVtcCBLaWNr)
 
 ---
 
