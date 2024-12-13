@@ -16,26 +16,23 @@ dg-publish:
 ## Best Practices
 
 1. **Focus on 11 Core Workouts or Stretches:**  
-    Prioritize functional and foundational exercises to maximize efficiency.
-    
+    - Prioritize functional and foundational exercises to maximize efficiency.
+    - Workout more in the winter body retains weight more
+
 2. **Avoid Risky Movements:**
-    
     - Skip upright rows due to the unnatural shoulder position.
+
 3. **Equipment Tips:**
-    
     - Use **barbells** for added weight when building strength.
     - Use **dumbbells** for greater range of motion and correcting muscle imbalances.
 
-Cardio  
-Get heart rate up and take a little walk to get it down then repeat  
+4. **Dynamic Warm-Up:** Improve blood flow and flexibility before starting.
 
-- **Dynamic Warm-Up:** Improve blood flow and flexibility before starting.
-- **Static Stretching:** Cool down with stretches targeting major muscle groups.
+5. **Static Stretching:** Cool down with stretches targeting major muscle groups.
 
-Workout more in the winter body retains weight more
+
 ## Stats
 16% body fat possibly lower
-
 
 
 ## Top 11 Workouts
@@ -64,8 +61,6 @@ Get to 1 rep 15 sec each try to extend for 45 sec MAX
 ---
 
 ## Full Body
-### Calisthenics (No Weights)
-- _Work in progress._
 
 ### Weights
 - Turkish Get-Up  
@@ -107,10 +102,7 @@ Get to 1 rep 15 sec each try to extend for 45 sec MAX
     ![Bulgarian Split Squat](https://www.youtube.com/watch?v=vgn7bSXkgkA)
 - Kettlebell Deadlift
     ![Deadlift (Kettlebell)](https://www.youtube.com/embed/hinonqqzatk?feature=oembed)
-
-### Calisthenics (No Weights)
-- _Work in progress._
-### Plyometrics (Jumps)
+### Plyometrics(Jumps) Calisthenics
 - Box Jumps
 - Broad Jumps
 - Depth Jump
