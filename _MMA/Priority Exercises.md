@@ -48,7 +48,7 @@ Russian Twists with Kettlebell
 
 ![Turkish get-up](https://www.youtube.com/embed/sgd8n917Zv0?feature=oembed)
 
-[Around the world](https://www.youtube.com/watch?v=N4mMVG8S5Kg)
+![Around the world](https://www.youtube.com/watch?v=N4mMVG8S5Kg)
 
 
 Arnold press(*Barbell*)
