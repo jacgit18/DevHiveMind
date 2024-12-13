@@ -19,7 +19,9 @@ Avoid upright row unnatural position
 barbell alternative exercises it you want more weight 
 dumbbell for more range of motion, muscle imbalance
 
-
+ **Practices:**  
+- Dynamic warm-up to increase blood flow and flexibility.  
+- Static stretching for major muscle groups during the cool down.  
 ## Back
 
 ### Calisthenics(No Weights)
@@ -46,6 +48,9 @@ Russian Twists with Kettlebell
 
 ![Turkish get-up](https://www.youtube.com/embed/sgd8n917Zv0?feature=oembed)
 
+[Around the world](https://www.youtube.com/watch?v=N4mMVG8S5Kg)
+
+
 Arnold press(*Barbell*)
 
 Clean & Press (*Barbell*/***Dumbbell***)
@@ -57,8 +62,8 @@ Farmer’s Walk (**Kettlebell**/*Barbell*)
 Squats(**Kettlebell**/*Barbell*)
 
 Zercher Squat
-
-Kettlebell Lunge
+High Pull (**Kettlebell**)
+Lunge(**Kettlebell**)
 Renegade Row (**Kettlebell**/***Dumbbell***)
 
 
@@ -81,6 +86,7 @@ landmine press
 - Uneven squat
 - Hip Thrust *(Barbell)*
 - Romanian Deadlift  
+- Kettlebell Rotational Clean
 
 ![Bulgarian Split Squat](https://www.youtube.com/watch?v=vgn7bSXkgkA)
 
@@ -103,7 +109,9 @@ Halos 8kg(17lb) **(Kettlebell)**
 Bench Press *(Barbell)* close grip over wide grip hits more things also known as compound movement exercises
 
 Shoulder press -  Don't go behind the head do it in front
-Chest press
+Chest press machine or free-weights
+Single-Arm Press **(Kettlebell)**
+Single-Arm Row **(Kettlebell)**
 
 bent over row(low priority)
 reverse grip curl *(Curl Bar)*
