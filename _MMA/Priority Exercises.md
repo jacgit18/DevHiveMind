@@ -130,6 +130,7 @@ Get to 1 rep 15 sec each try to extend for 45 sec MAX
 - Cable Bicep Curl
 - Cable Tricep Pushdown
 - Cable Woodchopper
+	![](https://www.youtube.com/watch?v=mvvu8imyMFs)
 - Lat Pulldown(Machine)
 - Single-Arm Press (**Kettlebell**)
 - Single-Arm Row (**Kettlebell**)
