@@ -51,10 +51,9 @@ dg-publish:
 
 3. **Rotational/Core Strength**
 - Focus on rotational movements for striking power and grappling control:
-    - **Cable Woodchopper** (3 sets of 10-12 reps per side)
+    - Halos (**Kettlebell**) - 8kg / 17lb - Core/Rotational Stability
     - **Renegade Row (Kettlebell/Dumbbell)** (3 sets of 8-10 reps per arm)
 - ***Extra***
-    - Halos (**Kettlebell**) - 8kg / 17lb - Core/Rotational Stability
 	- **Medicine Ball Rotational Slam** (3 sets of 10 reps per side)
 
 4. **Pulling/Grip Strength**
@@ -62,6 +61,17 @@ dg-publish:
     - **Pull-Up Variations** (Neutral Grip/Chin-Up Grip) (3 sets of 8-12 reps)
     - **Kettlebell Swing** (3 sets of 12-15 reps)
 
+## Top 11  Core Workouts(Machines)
+
+- Cable Woodchopper
+- Chest Press
+- Overhead Shoulder Press
+- Lat Pulldown
+- Seated Cable Row
+- Cable Reverse Crunch
+- Leg Press
+- Chest Fly
+- 
 
 ---
 
