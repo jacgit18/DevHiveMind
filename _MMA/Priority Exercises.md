@@ -73,6 +73,7 @@ Get to 1 rep 15 sec each try to extend for 45 sec MAX
 - Arnold Press(_Barbell_)
 - Clean & Press(_Barbell_ / _**Dumbbell**_)
 - Farmer’s Walk(**Kettlebell** / _Barbell_)
+	![](https://www.youtube.com/watch?v=8OtwXwrJizk)
 - Kettlebell Swing
 - Squats(**Kettlebell**/_Barbell_)
 - Zercher Squat
