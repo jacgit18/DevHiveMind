@@ -56,6 +56,9 @@ Get to 1 rep 15 sec each try to extend for 45 sec MAX
 - Russian Twists
 ### Weights
 - Russian Twists(**Kettlebell**)
+- Cable Reverse Crunch 
+
+
 
 ---
 
@@ -106,8 +109,7 @@ Get to 1 rep 15 sec each try to extend for 45 sec MAX
 - _Work in progress._
 ### Plyometrics (Jumps)
 - _Work in progress._
-### Resistance
-- _Work in progress._
+
 
 ---
 
@@ -117,11 +119,15 @@ Get to 1 rep 15 sec each try to extend for 45 sec MAX
 - Bench Press (_Barbell_) - Prefer close grip for a more compound movement.
 - Shoulder Press - Avoid behind-the-head; stick to pressing in front.
 - Chest Press (Machine or Free Weights)
+- Cable Bicep Curl
+- Cable Tricep Pushdown
 - Cable Woodchopper
 - Lat Pulldown(Machine)
 - Single-Arm Press (**Kettlebell**)
 - Single-Arm Row (**Kettlebell**)
 - Reverse Grip Curl (_Curl Bar_)
+- Seated Cable Rows
+- Overhead Press (_**Dumbbell**_)
 - Bent-Over Row (Low Priority)
 ### Calisthenics (No Weights)
 **Pull-Up Bar Variations
@@ -129,10 +135,9 @@ Get to 1 rep 15 sec each try to extend for 45 sec MAX
 - Neutral Grip
 - Chin-Up Grip
 _Tip:_ Use added weight if possible; heavier weight makes pull-ups feel easier when unloaded.
-### Resistance
-- Seated Cable Rows
-- Overhead Press (_**Dumbbell**_)
-- Push-Ups with Bands
+
+
+
 
 
 ![https://www.youtube.com/watch?v=QjARj4PzCd4](https://www.youtube.com/watch?v=QjARj4PzCd4)  
