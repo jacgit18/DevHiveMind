@@ -32,16 +32,24 @@ dg-publish:
 ## Stats
 16% body fat possibly lower
 
+Check New Weights
 
-| Machine               | Weight |
-| --------------------- | ------ |
-| Abductor Outer Thigh  | 100    |
-| Abduction Inner Thigh | 115    |
-| Isolated Wide Chest   | 90     |
-| Mid Row 165           |        |
-| Leg Press off Back    |        |
-| Bicep Curls           |        |
-|                       |        |
+| Machine                | Weight |     | Categ |
+| ---------------------- | ------ | --- | ----- |
+| Abductor Outer Thigh   | 100    |     |       |
+| Abduction Inner Thigh  | 115    |     |       |
+|                        |        |     |       |
+|                        |        |     |       |
+| Isolated Wide Chest    | 90     |     |       |
+| Lat Pulldown           | ??     |     |       |
+| Leg Press off Back     | 540    |     |       |
+| Seated Leg Press Far   | 150??  |     |       |
+| Seated Leg Press Close | 110    |     |       |
+| Bicep Curls            |        |     |       |
+| Mid Row                | 165??  |     |       |
+| Chest Press            |        |     |       |
+| Shoulder Press         |        |     |       |
+|                        |        |     |       |
 
 
 
