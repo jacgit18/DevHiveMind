@@ -30,7 +30,7 @@ dg-publish:
 5. **Static Stretching:** Cool down with stretches targeting major muscle groups.
 
 ## Stats
-16% body fat possibly lower
+16% body fat possibly lower need to check
 Eat a minimum of 1900 calories
 Check New Weights
 
@@ -53,16 +53,12 @@ Check New Weights
 
 Free Weights
 
-| Excercise | Weight |     | Category |     |
-| --------- | ------ | --- | -------- | --- |
-| Halo      | 100    |     | Upper    |     |
-|           | 115    |     | Lower    |     |
-|           | 42.5   |     | Upper    |     |
-|           | ??     |     |          |     |
-
-
-
-
+| Excercise | Weight |     | Category |     | Type       |
+| --------- | ------ | --- | -------- | --- | ---------- |
+| Halo      | 100    |     | Upper    |     | Kettlebell |
+|           | 115    |     | Lower    |     |            |
+|           | 42.5   |     | Upper    |     |            |
+|           | ??     |     |          |     |            |
 
 ## Top 11  Core Workouts(non Machines)
 1. **Explosive Power (Plyometric & Olympic Movements)**
@@ -117,6 +113,10 @@ Get to 1 rep 15 sec each try to extend for 45 sec MAX
 - Russian Twists (Medicine Ball/**Kettlebell**)
 	Levitate heels off floor elbows to back on twist
 	![](https://www.youtube.com/watch?v=7XUglHKRyMo)
+
+### Plyometrics(Jumps) Calisthenics
+- V-Up (Medicine Ball)
+	![](https://www.youtube.com/watch?v=xuTgCKRSy04)
 
 
 ---
@@ -224,9 +224,10 @@ _Tip:_ Use added weight if possible; heavier weight makes pull-ups feel easier w
 
 ### Plyometrics(Jumps) Calisthenics
 - Clap Push-Ups
-- Medicine Ball Slams
-- Medicine Ball Rotational Slam
+- Slams (Medicine Ball)
+- Rotational Slam (Medicine Ball)
 - Wall Chest Throws (Medicine Ball)
+- Rotational Throws(Medicine Ball)
 
 
 
