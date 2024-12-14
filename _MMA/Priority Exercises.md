@@ -126,6 +126,11 @@ Get to 1 rep 15 sec each try to extend for 45 sec MAX
 - Uneven Squat
 - Hip Thrust (_Barbell_)
 - Romanian Deadlift
+- Leg Press 
+	- On Toes at the edge hits calves
+	- Wide feet inner thigh
+	- Narrow feet Quads
+	- On heels at edge Gluts and hamstrings
 - Cossack Squat
 	![](https://www.youtube.com/watch?v=hDIiCBIM6tE)
 - Kettlebell Rotational Clean
