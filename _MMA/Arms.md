@@ -40,7 +40,6 @@ dg-publish:
 - Overhead Press (_**Dumbbell**_)
 - Bent-Over Row (Low Priority)
 
-![](https://www.youtube.com/watch?v=s1O5NV4PctE&t=108s)
 ### Calisthenics (No Weights)
 - Plyometric Plank with Shoulder Tap
 **Pull-Up Bar Variations
