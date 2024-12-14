@@ -22,7 +22,8 @@ dg-publish:
 - Clean & Press(_Barbell_ / _**Dumbbell**_)
 - Farmer’s Walk(**Kettlebell** / _Barbell_)
 	- ![](https://www.youtube.com/watch?v=8OtwXwrJizk)
-- Kettlebell Swing
+- Kettlebell Swing ^bb1837
+	- ![](https://www.youtube.com/watch?v=YSxHifyI6s8)
 - Squats(**Kettlebell**/_Barbell_)
 - Zercher Squat
 - High Pull(**Kettlebell**)
