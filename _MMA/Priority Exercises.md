@@ -31,25 +31,35 @@ dg-publish:
 
 ## Stats
 16% body fat possibly lower
-
+Eat a minimum of 1900 calories
 Check New Weights
 
-| Machine                | Weight |     | Categ |
-| ---------------------- | ------ | --- | ----- |
-| Abductor Outer Thigh   | 100    |     |       |
-| Abduction Inner Thigh  | 115    |     |       |
-|                        |        |     |       |
-|                        |        |     |       |
-| Isolated Wide Chest    | 90     |     |       |
-| Lat Pulldown           | ??     |     |       |
-| Leg Press off Back     | 540    |     |       |
-| Seated Leg Press Far   | 150??  |     |       |
-| Seated Leg Press Close | 110    |     |       |
-| Bicep Curls            |        |     |       |
-| Mid Row                | 165??  |     |       |
-| Chest Press            |        |     |       |
-| Shoulder Press         |        |     |       |
-|                        |        |     |       |
+| Machine                           | Weight |     | Category |
+| --------------------------------- | ------ | --- | -------- |
+| Abductor Outer Thigh              | 100    |     | Lower    |
+| Abduction Inner Thigh             | 115    |     | Lower    |
+| Blink Row with individual weights | 42.5   |     | Upper    |
+| Chest Fly                         | ??     |     |          |
+| Rear Delt Fly                     | ??     |     |          |
+| Isolated Wide Chest               | 90     |     |          |
+| Lat Pulldown                      | ??     |     |          |
+| Leg Press off Back                | 540    |     |          |
+| Seated Leg Press Far              | 150??  |     |          |
+| Seated Leg Press Close            | 110    |     |          |
+| Bicep Curls                       | ??     |     |          |
+| Mid Row                           | 165??  |     |          |
+| Chest Press                       | ??     |     |          |
+| Shoulder Press                    | ??     |     |          |
+
+Free Weights
+
+| Excercise | Weight |     | Category |     |
+| --------- | ------ | --- | -------- | --- |
+| Halo      | 100    |     | Upper    |     |
+|           | 115    |     | Lower    |     |
+|           | 42.5   |     | Upper    |     |
+|           | ??     |     |          |     |
+
 
 
 
@@ -130,8 +140,6 @@ Get to 1 rep 15 sec each try to extend for 45 sec MAX
 - Curtsy Lunge(_**Dumbbell**_)
 - Renegade Row (**Kettlebell**/_**Dumbbell**_)
 - Landmine Press
-- Medicine Ball Slam
-- Medicine Ball Rotational Slam
 - Kettlebell Snatch  
     ![Kettlebell Snatch](https://www.youtube.com/embed/Pm-b2XFeABA?feature=oembed)
     
@@ -214,7 +222,11 @@ Get to 1 rep 15 sec each try to extend for 45 sec MAX
 - Chin-Up Grip
 _Tip:_ Use added weight if possible; heavier weight makes pull-ups feel easier when unloaded.
 
-
+### Plyometrics(Jumps) Calisthenics
+- Clap Push-Ups
+- Medicine Ball Slams
+- Medicine Ball Rotational Slam
+- Wall Chest Throws (Medicine Ball)
 
 
 
