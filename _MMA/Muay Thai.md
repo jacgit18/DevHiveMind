@@ -14,7 +14,10 @@ dg-publish:
 # Boost Your ROUNDHOUSE KICKS
 
 
-![[Peek 2024-12-13 18-01.gif]]Here’s a list of **battle rope exercises** for a full-body workout, focusing on power, endurance, and coordination:
+![[Peek 2024-12-13 18-01.gif]]
+
+
+Here’s a list of **battle rope exercises** for a full-body workout, focusing on power, endurance, and coordination:
 
 ---
 

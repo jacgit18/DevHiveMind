@@ -14,7 +14,6 @@ dg-publish:
 # Regimen
 
 ## Best Practices
-
 1. **Focus on 11 Core Workouts or Stretches:**  
     - Prioritize functional and foundational exercises to maximize efficiency.
     - Workout more in the winter body retains weight more
@@ -30,9 +29,21 @@ dg-publish:
 
 5. **Static Stretching:** Cool down with stretches targeting major muscle groups.
 
-
 ## Stats
 16% body fat possibly lower
+
+
+| Machine               | Weight |
+| --------------------- | ------ |
+| Abductor Outer Thigh  | 100    |
+| Abduction Inner Thigh | 115    |
+| Isolated Wide Chest   | 90     |
+| Mid Row 165           |        |
+| Leg Press off Back    |        |
+| Bicep Curls           |        |
+|                       |        |
+
+
 
 
 ## Top 11  Core Workouts(non Machines)
@@ -70,14 +81,7 @@ dg-publish:
 - Seated Cable Row
 - Cable Reverse Crunch
 - Leg Press
-- Chest Fly bring range closer to front Rear Fly
-	For rear when pulling stop when both arms are straight dont go past shoulders 
-
-	![](https://www.youtube.com/watch?v=H4mVGHaK2f4)
-	Front Fly with Dumbbell
-	![](https://www.youtube.com/watch?v=Nhvz9EzdJ4U)
-	Rear/ reverse Fly with Dumbbell
-	![Dumbbell](https://www.youtube.com/watch?v=nlkF7_2O_Lw)
+- Chest/Rear Fly 
 - Lying Leg Curl
 
 ---
@@ -169,6 +173,14 @@ Get to 1 rep 15 sec each try to extend for 45 sec MAX
 ### Weights
 - Halos (**Kettlebell**) - 8kg / 17lb
 - Bench Press (_Barbell_) - Prefer close grip for a more compound movement.
+- Chest Fly bring range closer to front Rear Fly
+	For rear when pulling stop when both arms are straight dont go past shoulders 
+
+	![](https://www.youtube.com/watch?v=H4mVGHaK2f4)
+	Front Fly with Dumbbell
+	![](https://www.youtube.com/watch?v=Nhvz9EzdJ4U)
+	Rear/ reverse Fly with Dumbbell
+	![Dumbbell](https://www.youtube.com/watch?v=nlkF7_2O_Lw)
 - Shoulder Press - Avoid behind-the-head; stick to pressing in front.
 - Chest Press (Machine or Free Weights)
 - Plyometric Chest Pass (Medicine Ball)
