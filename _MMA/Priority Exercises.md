@@ -128,7 +128,10 @@ Get to 1 rep 15 sec each try to extend for 45 sec MAX
 - Uneven Squat
 - Hip Thrust (_Barbell_)
 - Romanian Deadlift
+- Cossack Squat
+	![](https://www.youtube.com/watch?v=hDIiCBIM6tE)
 - Kettlebell Rotational Clean
+	![](https://www.youtube.com/watch?v=Iofsc9ssQPE)
 - Kettlebell Step-Up
 	![](https://www.youtube.com/watch?v=lXvA8exxWmE)
 - Bulgarian Split Squat  
