@@ -95,7 +95,6 @@ Get to 1 rep 15 sec each try to extend for 45 sec MAX
 ## Full Body
 
 ### Weights
->[!important]
 - Turkish Get-Up 
     ![Turkish Get-Up](https://www.youtube.com/embed/sgd8n917Zv0?feature=oembed)
 - Around the World  
