@@ -87,13 +87,15 @@ Free Weights
     - Kettlebell Swing 
 
 ## Top 10  Core Workouts(Machines)
-- Cable Woodchopper
-- Cable Crossover
+- Pulley Machine
+	- Cable Woodchopper
+	- Cable Crossover
+	- Cable Reverse Crunch
 - Chest Press
 - Overhead Shoulder Press
 - Lat Pulldown
 - Seated Cable Row
-- Cable Reverse Crunch
+
 - Leg Press
 - Chest/Rear Fly 
 - Lying Leg Curl
