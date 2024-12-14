@@ -34,31 +34,31 @@ dg-publish:
 Eat a minimum of 1900 calories
 Check New Weights
 
-| Machine                           | Weight |     | Category |
-| --------------------------------- | ------ | --- | -------- |
-| Abductor Outer Thigh              | 100    |     | Lower    |
-| Abduction Inner Thigh             | 115    |     | Lower    |
-| Blink Row with individual weights | 42.5   |     | Upper    |
-| Chest Fly                         | ??     |     |          |
-| Rear Delt Fly                     | ??     |     |          |
-| Isolated Wide Chest               | 90     |     |          |
-| Lat Pulldown                      | ??     |     |          |
-| Leg Press off Back                | 540    |     |          |
-| Seated Leg Press Far              | 150??  |     |          |
-| Seated Leg Press Close            | 110    |     |          |
-| Bicep Curls                       | ??     |     |          |
-| Mid Row                           | 165??  |     |          |
-| Chest Press                       | ??     |     |          |
-| Shoulder Press                    | ??     |     |          |
+| Machine                           | Weight |     | Category | Sets | Reps |
+| --------------------------------- | ------ | --- | -------- | ---- | ---- |
+| Abductor Outer Thigh              | 100    |     | Lower    | 3    | 10   |
+| Abduction Inner Thigh             | 115    |     | Lower    | 3    | 10   |
+| Blink Row with individual weights | 42.5   |     | Upper    | 3    | 10   |
+| Chest Fly                         | ??     |     |          | 3    | 10   |
+| Rear Delt Fly                     | ??     |     |          | 3    | 10   |
+| Isolated Wide Chest               | 90     |     |          | 3    | 10   |
+| Lat Pulldown                      | ??     |     |          | 3    | 10   |
+| Leg Press off Back                | 540    |     |          | 3    | 10   |
+| Seated Leg Press Far              | 150??  |     |          | 3    | 10   |
+| Seated Leg Press Close            | 110    |     |          | 3    | 10   |
+| Bicep Curls                       | ??     |     |          | 3    | 10   |
+| Mid Row                           | 165??  |     |          | 3    | 10   |
+| Chest Press                       | ??     |     |          | 3    | 10   |
+| Shoulder Press                    | ??     |     |          | 3    | 10   |
 
 Free Weights
 
-| Excercise | Weight |     | Category |     | Type       |
-| --------- | ------ | --- | -------- | --- | ---------- |
-| Halo      | 100    |     | Upper    |     | Kettlebell |
-|           | 115    |     | Lower    |     |            |
-|           | 42.5   |     | Upper    |     |            |
-|           | ??     |     |          |     |            |
+| Excercise | Weight  |     | Category |     | Type       | Sets | Reps |
+| --------- | ------- | --- | -------- | --- | ---------- | ---- | ---- |
+| Halo      | 8kg/ 17 |     | Upper    |     | Kettlebell | 3    | 10   |
+|           | 115     |     | Lower    |     |            | 3    | 10   |
+|           | 42.5    |     | Upper    |     |            | 3    | 10   |
+|           | ??      |     |          |     |            | 3    | 10   |
 
 ## Top 11  Core Workouts(non Machines)
 1. **Explosive Power (Plyometric & Olympic Movements)**
@@ -98,65 +98,9 @@ Free Weights
 - Chest/Rear Fly 
 - Lying Leg Curl
 
----
+## [[Abdominals]]
 
-## Core
-Get to 1 rep 15 sec each try to extend for 45 sec MAX
-### Isometric Calisthenics (No Weights)
-- Long lever plank
-- Side plank
-- Hold pushup extended & unextended
-- Tuck Jumps to Plank
-- Rope Circles
-- Side Plank Waves
-- Russian Twist Rope Slams
-### Weights
-
-- Cable Reverse Crunch
-	- ![](https://www.youtube.com/watch?v=b8oUb_6POhQ)
-	
-- Russian Twists (Medicine Ball/**Kettlebell**)
-	- Levitate heels off floor elbows to back on twist
-	- ![](https://www.youtube.com/watch?v=7XUglHKRyMo)
-
-### Plyometrics(Jumps) Calisthenics
-- V-Up (Medicine Ball)
-	- ![](https://www.youtube.com/watch?v=xuTgCKRSy04)
-
-
-
----
-
-## Full Body
-
-### Weights
-- Turkish Get-Up 
-    - ![Turkish Get-Up](https://www.youtube.com/embed/sgd8n917Zv0?feature=oembed)
-- Around the World  
-    - ![Around the World](https://www.youtube.com/watch?v=N4mMVG8S5Kg)
-- Arnold Press(_Barbell_)
-- Clean & Press(_Barbell_ / _**Dumbbell**_)
-- Farmer’s Walk(**Kettlebell** / _Barbell_)
-	- ![](https://www.youtube.com/watch?v=8OtwXwrJizk)
-- Kettlebell Swing
-- Squats(**Kettlebell**/_Barbell_)
-- Zercher Squat
-- High Pull(**Kettlebell**)
-- Lunge Twist(**Kettlebell**)
-- Curtsy Lunge(_**Dumbbell**_)
-- Renegade Row (**Kettlebell**/_**Dumbbell**_)
-- Landmine Press
-- Kettlebell Snatch  
-    - ![Kettlebell Snatch](https://www.youtube.com/embed/Pm-b2XFeABA?feature=oembed)
-### Cardio Calisthenic
-- Rope Slams
-- Rope Burpees
-- Rope Snakes
-- Battle Rope Pulls
-- Lateral Shuffles with Waves
-- Battle Rope Jacks
-
----
+## [[Full Body]]
 
 ## Lower Body
 ### Weights
@@ -194,7 +138,7 @@ Get to 1 rep 15 sec each try to extend for 45 sec MAX
 - Skater Jumps
 - Split Squat Jumps
 -  High Kick Crossover
-	 ![](https://www.youtube.com/watch?v=w6AlcHbLU7k&pp=ygUSU3F1YXQgdG8gSnVtcCBLaWNr)
+	 - ![](https://www.youtube.com/watch?v=w6AlcHbLU7k&pp=ygUSU3F1YXQgdG8gSnVtcCBLaWNr)
 - Battle Rope Slams with Squat
 - Lunge with Rope Waves
 - Jump Squat Slams
@@ -207,21 +151,21 @@ Get to 1 rep 15 sec each try to extend for 45 sec MAX
 - Chest Fly bring range closer to front Rear Fly
 	For rear when pulling stop when both arms are straight dont go past shoulders 
 
-	![](https://www.youtube.com/watch?v=H4mVGHaK2f4)
+	- ![](https://www.youtube.com/watch?v=H4mVGHaK2f4)
 	Front Fly with Dumbbell
-	![](https://www.youtube.com/watch?v=Nhvz9EzdJ4U)
+	- ![](https://www.youtube.com/watch?v=Nhvz9EzdJ4U)
 	Rear/ reverse Fly with Dumbbell
-	![Dumbbell](https://www.youtube.com/watch?v=nlkF7_2O_Lw)
+	- ![Dumbbell](https://www.youtube.com/watch?v=nlkF7_2O_Lw)
 - Shoulder Press - Avoid behind-the-head; stick to pressing in front.
 - Chest Press (Machine or Free Weights)
 - Plyometric Chest Pass (Medicine Ball)
 - Explosive Overhead Throw 
 - Kettlebell Bottoms Up
-	![](https://www.youtube.com/watch?v=TJjRZBpY75I)
+	- ![](https://www.youtube.com/watch?v=TJjRZBpY75I)
 - Cable Bicep Curl
 - Cable Tricep Pushdown
 - Cable Woodchopper
-	![](https://www.youtube.com/watch?v=mvvu8imyMFs)
+	- ![](https://www.youtube.com/watch?v=mvvu8imyMFs)
 - Lat Pulldown(Machine)
 - Single-Arm Press (**Kettlebell**)
 - Single-Arm Row (**Kettlebell**)
@@ -229,6 +173,8 @@ Get to 1 rep 15 sec each try to extend for 45 sec MAX
 - Seated Cable Rows
 - Overhead Press (_**Dumbbell**_)
 - Bent-Over Row (Low Priority)
+
+![](https://www.youtube.com/watch?v=s1O5NV4PctE&t=108s)
 ### Calisthenics (No Weights)
 - Plyometric Plank with Shoulder Tap
 **Pull-Up Bar Variations
