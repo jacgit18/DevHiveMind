@@ -70,7 +70,8 @@ dg-publish:
 - Seated Cable Row
 - Cable Reverse Crunch
 - Leg Press
-- Chest Fly
+- Chest Fly bring range closer to front Rear Fly
+	![]()
 - Lying Leg Curl
 
 ---
@@ -124,9 +125,7 @@ Get to 1 rep 15 sec each try to extend for 45 sec MAX
 	![](https://www.youtube.com/watch?v=7j-2w4-P14I)
 - Deadlift(_**Dumbbell**_) 
 	![](https://www.youtube.com/watch?v=gLogcYIvgRA)
-- [Goblet Squat](unnamed.gif) 16kg(35lb)
 - [Sumo Squat](Sumo.gif)
-- Uneven Squat
 - Hip Thrust (_Barbell_)
 	![](https://www.youtube.com/watch?v=5S8SApGU_Lk)
 - Leg Press 
