@@ -11,7 +11,7 @@ Relates:
 Peer Reviewed: 0
 dg-publish:
 ---
-## Full Body
+
 
 ### Weights
 - Turkish Get-Up 
