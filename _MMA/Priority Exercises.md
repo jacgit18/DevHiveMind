@@ -107,16 +107,22 @@ Get to 1 rep 15 sec each try to extend for 45 sec MAX
 - Side plank
 - Hold pushup extended & unextended
 - Tuck Jumps to Plank
+- Rope Circles
+- Side Plank Waves
+- Russian Twist Rope Slams
 ### Weights
-- Cable Reverse Crunch 
-	![](https://www.youtube.com/watch?v=b8oUb_6POhQ)
+
+- Cable Reverse Crunch
+	- ![](https://www.youtube.com/watch?v=b8oUb_6POhQ)
+	
 - Russian Twists (Medicine Ball/**Kettlebell**)
-	Levitate heels off floor elbows to back on twist
-	![](https://www.youtube.com/watch?v=7XUglHKRyMo)
+	- Levitate heels off floor elbows to back on twist
+	- ![](https://www.youtube.com/watch?v=7XUglHKRyMo)
 
 ### Plyometrics(Jumps) Calisthenics
 - V-Up (Medicine Ball)
-	![](https://www.youtube.com/watch?v=xuTgCKRSy04)
+	- ![](https://www.youtube.com/watch?v=xuTgCKRSy04)
+
 
 
 ---
@@ -125,13 +131,13 @@ Get to 1 rep 15 sec each try to extend for 45 sec MAX
 
 ### Weights
 - Turkish Get-Up 
-    ![Turkish Get-Up](https://www.youtube.com/embed/sgd8n917Zv0?feature=oembed)
+    - ![Turkish Get-Up](https://www.youtube.com/embed/sgd8n917Zv0?feature=oembed)
 - Around the World  
-    ![Around the World](https://www.youtube.com/watch?v=N4mMVG8S5Kg)
+    - ![Around the World](https://www.youtube.com/watch?v=N4mMVG8S5Kg)
 - Arnold Press(_Barbell_)
 - Clean & Press(_Barbell_ / _**Dumbbell**_)
 - Farmer’s Walk(**Kettlebell** / _Barbell_)
-	![](https://www.youtube.com/watch?v=8OtwXwrJizk)
+	- ![](https://www.youtube.com/watch?v=8OtwXwrJizk)
 - Kettlebell Swing
 - Squats(**Kettlebell**/_Barbell_)
 - Zercher Squat
@@ -141,48 +147,57 @@ Get to 1 rep 15 sec each try to extend for 45 sec MAX
 - Renegade Row (**Kettlebell**/_**Dumbbell**_)
 - Landmine Press
 - Kettlebell Snatch  
-    ![Kettlebell Snatch](https://www.youtube.com/embed/Pm-b2XFeABA?feature=oembed)
-    
+    - ![Kettlebell Snatch](https://www.youtube.com/embed/Pm-b2XFeABA?feature=oembed)
+### Cardio Calisthenic
+- Rope Slams
+- Rope Burpees
+- Rope Snakes
+- Battle Rope Pulls
+- Lateral Shuffles with Waves
+- Battle Rope Jacks
+
 ---
 
 ## Lower Body
 ### Weights
 - Romanian Deadlift(_Barbell_) - focused on levitating 
-	![](https://www.youtube.com/watch?v=7j-2w4-P14I)
+	- ![](https://www.youtube.com/watch?v=7j-2w4-P14I)
 - Deadlift(_**Dumbbell**_) 
-	![](https://www.youtube.com/watch?v=gLogcYIvgRA)
+	- ![](https://www.youtube.com/watch?v=gLogcYIvgRA)
 - [Sumo Squat](Sumo.gif)
 - Hip Thrust (_Barbell_)
-	![](https://www.youtube.com/watch?v=5S8SApGU_Lk)
+	- ![](https://www.youtube.com/watch?v=5S8SApGU_Lk)
 - Leg Press 
 	- On Toes at the edge hits calves
 	- Wide feet inner thigh
 	- Narrow feet Quads
 	- On heels at edge Gluts and hamstrings
 - Cossack Squat
-	![](https://www.youtube.com/watch?v=hDIiCBIM6tE)
+	- ![](https://www.youtube.com/watch?v=hDIiCBIM6tE)
 - Kettlebell Rotational Clean
-	![](https://www.youtube.com/watch?v=Iofsc9ssQPE)
+	- ![](https://www.youtube.com/watch?v=Iofsc9ssQPE)
 - Kettlebell Step-Up
-	![](https://www.youtube.com/watch?v=lXvA8exxWmE)
+	- ![](https://www.youtube.com/watch?v=lXvA8exxWmE)
 - Bulgarian Split Squat  
-    ![Bulgarian Split Squat](https://www.youtube.com/watch?v=vgn7bSXkgkA)
+    - ![Bulgarian Split Squat](https://www.youtube.com/watch?v=vgn7bSXkgkA)
 - Kettlebell Deadlift
-    ![Deadlift (Kettlebell)](https://www.youtube.com/embed/hinonqqzatk?feature=oembed)
+    - ![Deadlift (Kettlebell)](https://www.youtube.com/embed/hinonqqzatk?feature=oembed)
 ### Plyometrics(Jumps) Calisthenics
 - Box Jumps
 - Broad Jumps
 - Depth Jump
-	 ![](https://www.youtube.com/watch?v=NvSkuYwNxco)
+	 - ![](https://www.youtube.com/watch?v=NvSkuYwNxco)
 - Lateral Bound
-	 ![](https://www.youtube.com/watch?v=soqQy4dzEts)
+	 - ![](https://www.youtube.com/watch?v=soqQy4dzEts)
 - Plyometric Step-Ups
-	 ![](https://www.youtube.com/watch?v=7yC-oCnWIRc)
+	 - ![](https://www.youtube.com/watch?v=7yC-oCnWIRc)
 - Skater Jumps
 - Split Squat Jumps
 -  High Kick Crossover
 	 ![](https://www.youtube.com/watch?v=w6AlcHbLU7k&pp=ygUSU3F1YXQgdG8gSnVtcCBLaWNr)
-
+- Battle Rope Slams with Squat
+- Lunge with Rope Waves
+- Jump Squat Slams
 ---
 
 ## Upper Body
@@ -228,6 +243,10 @@ _Tip:_ Use added weight if possible; heavier weight makes pull-ups feel easier w
 - Rotational Slam (Medicine Ball)
 - Wall Chest Throws (Medicine Ball)
 - Rotational Throws(Medicine Ball)
+- Double Arm Waves(Battle Ropes)
+- Alternating Waves(Battle Ropes)
+- Side-to-Side Waves(Battle Ropes)
+-  Seated Waves(Battle Ropes)
 
 
 
