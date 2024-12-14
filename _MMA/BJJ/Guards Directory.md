@@ -29,6 +29,8 @@ Reverse somebody's Kimura with an Armbar
 ## Guard Flow 
 Don't necessarily need to start in full guard also any open guard can be used to get into mission control which is when you have a leg over the back of the neck holding with the opposite side arm and into Rubber guard
 
+Create one with practical guards assuming someone is kicking and punching
+
 ``` mermaid
 flowchart LR
     A[Full Guard] 
@@ -217,10 +219,10 @@ style O fill:blue,stroke:black,stroke-width:4px,shadow:shadow
 style P fill:blue,stroke:black,stroke-width:4px,shadow:shadow
 ```
 
-Open Guard - Green
-Side Control, Mount, Half Guard - Blue
-Sprawl, Turtle - purple
-Back Control - Pink
+- Open Guard - Green
+- Side Control, Mount, Half Guard - Blue
+- Sprawl, Turtle - purple
+- Back Control - Pink
 ```mermaid
 flowchart LR
     A[Triangle Choke] <-.->  B[Armbar]

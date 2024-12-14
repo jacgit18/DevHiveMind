@@ -125,6 +125,7 @@ Get to 1 rep 15 sec each try to extend for 45 sec MAX
 - [Sumo Squat](Sumo.gif)
 - Uneven Squat
 - Hip Thrust (_Barbell_)
+	![](https://www.youtube.com/watch?v=5S8SApGU_Lk)
 - Romanian Deadlift
 - Leg Press 
 	- On Toes at the edge hits calves
