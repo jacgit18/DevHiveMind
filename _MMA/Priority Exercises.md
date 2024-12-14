@@ -88,8 +88,16 @@ Free Weights
 
 ## Top 10  Core Workouts(Machines)
 - Pulley Machine
+	- Abduction
+		- ![[ab.gif]]
 	- Cable Woodchopper
 	- Cable Crossover
+	- Komodo chest fly
+		- ![[km.gif]]
+	- Floor Fly
+		- ![[fl.gif]]
+	- Wolverine
+		- ![[unnamed.gif |Wolverine]]
 	- Cable Reverse Crunch
 - Chest Press
 - Overhead Shoulder Press
