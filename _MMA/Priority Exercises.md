@@ -71,7 +71,13 @@ dg-publish:
 - Cable Reverse Crunch
 - Leg Press
 - Chest Fly bring range closer to front Rear Fly
-	![]()
+	For rear when pulling stop when both arms are straight dont go past shoulders 
+
+	![](https://www.youtube.com/watch?v=H4mVGHaK2f4)
+	Front Fly with Dumbbell
+	![](https://www.youtube.com/watch?v=Nhvz9EzdJ4U)
+	Rear/ reverse Fly with Dumbbell
+	![Dumbbell](https://www.youtube.com/watch?v=nlkF7_2O_Lw)
 - Lying Leg Curl
 
 ---
