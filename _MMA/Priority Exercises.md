@@ -95,12 +95,11 @@ Get to 1 rep 15 sec each try to extend for 45 sec MAX
 ## Full Body
 
 ### Weights
-- Turkish Get-Up  
+>[!important]
+- Turkish Get-Up 
     ![Turkish Get-Up](https://www.youtube.com/embed/sgd8n917Zv0?feature=oembed)
-    
 - Around the World  
     ![Around the World](https://www.youtube.com/watch?v=N4mMVG8S5Kg)
-    
 - Arnold Press(_Barbell_)
 - Clean & Press(_Barbell_ / _**Dumbbell**_)
 - Farmer’s Walk(**Kettlebell** / _Barbell_)
