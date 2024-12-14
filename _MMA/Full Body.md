@@ -14,7 +14,7 @@ dg-publish:
 
 
 ### Weights
-- Turkish Get-Up 
+- Turkish Get-Up  ^7d58d7
     - ![Turkish Get-Up](https://www.youtube.com/embed/sgd8n917Zv0?feature=oembed)
 - Around the World  
     - ![Around the World](https://www.youtube.com/watch?v=N4mMVG8S5Kg)

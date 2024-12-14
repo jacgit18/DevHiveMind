@@ -63,16 +63,16 @@ Free Weights
 ## Top 11  Core Workouts(non Machines)
 1. **Explosive Power (Plyometric & Olympic Movements)**
 - Start with these to engage fast-twitch muscle fibers and improve explosive strength:
-    - **Depth Jumps** 
-    - **Kettlebell Snatch** 
-    - **Clean & Press (Dumbbell/Barbell)** 
+    - Depth Jumps 
+    - Kettlebell Snatch
+    - Clean & Press (Dumbbell/Barbell) 
 
 2. **Strength Training (Compound Movements)**
 - Follow with heavy, compound lifts to build muscle and functional strength:
-    - **Turkish Get-Up** (3 sets per side, focusing on control)
-    - **Bulgarian Split Squat** 
-    - **Farmer’s Walk** (3 sets of 30-40 seconds)
-    - Bench Press (_Barbell_) - Prefer close grip for a more compound movement.
+    - [[Full Body#^7d58d7 |Turkish Get-Up]] (3 sets per side, focusing on control)
+    - Bulgarian Split Squat 
+    - Farmer’s Walk (3 sets of 30-40 seconds)
+    - Bench Press (_Barbell_) - narrow grip for a more compound movement.
 
 3. **Rotational/Core Strength**
 - Focus on rotational movements for striking power and grappling control:
@@ -83,8 +83,8 @@ Free Weights
 
 4. **Pulling/Grip Strength**
 - Conclude with exercises to build pulling power and grip for grappling:
-    - **Pull-Up Variations** (Neutral Grip/Chin-Up Grip)
-    - **Kettlebell Swing** 
+    - Pull-Up Variations (Neutral Grip/Chin-Up Grip/Wide Grip)
+    - Kettlebell Swing 
 
 ## Top 10  Core Workouts(Machines)
 - Cable Woodchopper
