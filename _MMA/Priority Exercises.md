@@ -81,13 +81,13 @@ Get to 1 rep 15 sec each try to extend for 45 sec MAX
 - Long lever plank
 - Side plank
 - Hold pushup extended & unextended
-- Russian Twists(Levitate heels off floor elbows to back on twist)
-	![](https://www.youtube.com/watch?v=7XUglHKRyMo)
 - Tuck Jumps to Plank
 ### Weights
-- Explosive Russian Twists (Medicine Ball/**Kettlebell**)
 - Cable Reverse Crunch 
-
+	![](https://www.youtube.com/watch?v=b8oUb_6POhQ)
+- Russian Twists (Medicine Ball/**Kettlebell**)
+	Levitate heels off floor elbows to back on twist
+	![](https://www.youtube.com/watch?v=7XUglHKRyMo)
 
 
 ---
@@ -162,6 +162,8 @@ Get to 1 rep 15 sec each try to extend for 45 sec MAX
 - Chest Press (Machine or Free Weights)
 - Plyometric Chest Pass (Medicine Ball)
 - Explosive Overhead Throw 
+- Kettlebell Bottoms Up
+	![](https://www.youtube.com/watch?v=TJjRZBpY75I)
 - Cable Bicep Curl
 - Cable Tricep Pushdown
 - Cable Woodchopper
