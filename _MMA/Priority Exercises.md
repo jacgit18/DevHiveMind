@@ -83,10 +83,12 @@ Free Weights
 
 4. **Pulling/Grip Strength**
 - Conclude with exercises to build pulling power and grip for grappling:
+	- Kettlebell Swing 
     - Pull-Up Variations (Neutral Grip/Chin-Up Grip/Wide Grip)
 	    - ![](https://www.youtube.com/watch?v=mRy9m2Q9_1I)
 	    - ![](https://www.youtube.com/watch?v=dAScZVF5o9k)
-    - Kettlebell Swing 
+	    - ![](https://www.youtube.com/watch?v=djTQ1C_pvYw&list=TLPQMTQxMjIwMjQ2MGDLyOWw0w&index=2)
+
 
 ## Top 10  Core Workouts(Machines)
 - Pulley Machine
