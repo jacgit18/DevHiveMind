@@ -131,7 +131,7 @@ Warm up with dynamic stretch to Improve blood flow and flexibility before starti
 		- [[Upper#^9def13|Bottoms Up]]
 	- Machine
 		- [[Upper#^238b6e |Chest/Rear Fly ]] for rear stop when both arms are straight
-		- Seated Cable Row
+		- [[Full Body#^05e3ec |Seated Cable Row]]
 		- Pulley Machine
 			- Cable Abduction
 				- ![[ab.gif]]
@@ -146,8 +146,8 @@ Warm up with dynamic stretch to Improve blood flow and flexibility before starti
 			- [[Core#^b41212|Cable Reverse Crunch]]
 5. **Cardio**
 - Ropes
-	- Alternating Waves
-	- Side-to-Side Waves
+	- [[Full Body#^64091e | Alternating Waves]]
+	- [[Full Body#^164e0e | Side-to-Side Waves]]
 
 
 

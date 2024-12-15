@@ -38,10 +38,16 @@ dg-publish:
 - Landmine Press
 - Kettlebell Snatch   ^8b48af
     - ![Kettlebell Snatch](https://www.youtube.com/embed/Pm-b2XFeABA?feature=oembed)
+- Seated Cable Rowing  ^05e3ec
+	- ![](https://www.youtube.com/watch?v=fxfhQMbATCw&list=TLPQMTUxMjIwMjSCoRXDSuxPzQ&index=8)
+	- Weighted
+	- ![](https://www.youtube.com/watch?v=UCXxvVItLoM&list=TLPQMTUxMjIwMjSCoRXDSuxPzQ&index=9)
 ### Cardio Calisthenic
 - Rope Slams
-- Alternating Waves(Battle Ropes)
-- Side-to-Side Waves(Battle Ropes)
+- Alternating Waves(Battle Ropes) ^64091e
+	- ![](https://www.youtube.com/watch?v=ZujykKeVZpM&list=TLPQMTUxMjIwMjSCoRXDSuxPzQ&index=12)
+- Side-to-Side Waves(Battle Ropes) ^164e0e
+	- ![](https://www.youtube.com/watch?v=k4sUC6B2nJo&list=TLPQMTUxMjIwMjSCoRXDSuxPzQ&index=13)
 
 
 - Rope Burpees
