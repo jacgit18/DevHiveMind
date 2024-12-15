@@ -17,3 +17,13 @@ dg-publish:
 ![[Peek 2024-12-13 18-01.gif]]
 
 
+
+![[mn.gif]]
+
+Bjj Streches
+
+![[o.gif]]
+![[hip.gif]]![[p.gif]]
+![[lung.gif]]
+
+![[m.gif]]![[l.gif]]
