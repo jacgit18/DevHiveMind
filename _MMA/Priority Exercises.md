@@ -16,8 +16,8 @@ dg-publish:
 ## Best Practices
 1. **Focus on 30 Core Workouts:**  
     - Prioritize functional and foundational exercises to maximize efficiency.
-    - Workout more in the winter body retains weight more
-
+    - Workout more in the winter body retains weight more.
+    - Breath through exercises.
 2. **Avoid Risky Movements:**
     - Skip upright rows due to the unnatural shoulder position.
 
@@ -60,12 +60,18 @@ Check New Weight limits
 
 ### Warm-Up & Cool-Down 
 Warm up with dynamic stretch to Improve blood flow and flexibility before starting. Then cool down with a static stretch targeting major muscle groups. Basically any static stretch has a dynamic variation with movement. 
-- Bodyweight
-- Static to Dynamic
+- Bodyweight Static to Dynamic
 	- Butterfly Stretch → Dynamic Butterfly Hip Rocks
+	- Cat-Cow Stretch → Dynamic Cat-Cow Transitions
 	- Lizard Pose → Dynamic Hip Flexor Swings
 	- Spinal Twist → Supine Windshield Wipers
-
+		- ![](https://www.youtube.com/watch?v=mNdJti7ZwKI&pp=ygUMU3BpbmFsIFR3aXN0)
+		- ![](https://www.youtube.com/watch?v=XxLVEIpb9oY)
+	- Pigeon Pose → Dynamic Pigeon Transitions
+	- Hold push-up extended & unextended
+	- Plyometric Plank with Shoulder Tap
+	- Scapular Push-Ups 
+		- squeezing your shoulder blades together and then separating them without bending your elbows.
 #### Priority Workouts
 1. **Explosive Power (Plyometric & Olympic Movements)**
 - Start with these to engage fast-twitch muscle fibers and improve explosive strength:
