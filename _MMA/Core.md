@@ -11,8 +11,7 @@ Relates:
 Peer Reviewed: 0
 dg-publish:
 ---
-## Core
-### Isometric Calisthenics (No Weights)
+### Dynamic Isometric Calisthenics (No Weights)
 Get to your reps to 15 sec each try to extend for 45 sec MAX
 - Tuck Jumps to Plank
 - Rope Circles

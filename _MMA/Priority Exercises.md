@@ -111,23 +111,23 @@ Warm up with dynamic stretch to Improve blood flow and flexibility before starti
 	- Machine
 		- Chest/Rear Fly 
 		- Seated Cable Row
+		- Pulley Machine
+			- Cable Abduction
+				- ![[ab.gif]]
+			- Cable Woodchopper
+			- Cable Crossover
+			- Cable Komodo chest fly
+				- ![[km.gif]]
+			- Cable Floor Fly
+				- ![[fl.gif]]
+			- Cable Wolverine
+				- ![[unnamed.gif |Wolverine]]
+			- [[Core#^b41212|Cable Reverse Crunch]]
 5. **Cardio**
 - Ropes
 	- Alternating Waves
 	- Side-to-Side Waves
-#### Top 10  Core Workouts(Machines)
-- Pulley Machine
-	- Cable Abduction
-		- ![[ab.gif]]
-	- Cable Woodchopper
-	- Cable Crossover
-	- Cable Komodo chest fly
-		- ![[km.gif]]
-	- Cable Floor Fly
-		- ![[fl.gif]]
-	- Cable Wolverine
-		- ![[unnamed.gif |Wolverine]]
-	- [[Core#^b41212|Cable Reverse Crunch]]
+
 
 
 ## Schedule Guide
