@@ -36,7 +36,7 @@ dg-publish:
 - Curtsy Lunge(_**Dumbbell**_)
 
 - Landmine Press
-- Kettlebell Snatch  
+- Kettlebell Snatch   ^8b48af
     - ![Kettlebell Snatch](https://www.youtube.com/embed/Pm-b2XFeABA?feature=oembed)
 ### Cardio Calisthenic
 - Rope Slams

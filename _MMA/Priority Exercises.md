@@ -85,14 +85,14 @@ Warm up with dynamic stretch to Improve blood flow and flexibility before starti
 1. **Explosive Power (Plyometric & Olympic Movements)**
 - Start with these to engage fast-twitch muscle fibers and improve explosive strength:
 	- Bodyweight
-	    - [[Lower]]
+	    - [[Lower#^3b9f2c |Box Jumps]]
 	    - [[Lower#^afd7a0 |Lateral Skater Jumps]]
-	    - Split Squat Jumps
+	    - [[Lower#^aad169 |Split Squat Jumps]]
 	- *Barbell*/***Dumbbell***
 	    - [[Full Body#^0c16fd |Clean to Jerk & Press]]
 	- **Kettlebell**
-	    - Kettlebell Snatch
-	    - Kettlebell Step-Up
+	    - [[Full Body#^8b48af |Kettlebell Snatch]]
+	    - [[Lower#^c9d45f |Kettlebell Step-Up]]
 2. **Strength Training (Compound Movements)**
 - Follow with heavy, compound lifts to build muscle and functional strength:
 	- _Barbell_
@@ -115,7 +115,7 @@ Warm up with dynamic stretch to Improve blood flow and flexibility before starti
 		- [[Core#^6516d4|Russian Twists Kettlebell]]/[[Core#^fdacde |Russian Twists Rope]]
 	-  ***Medicine Ball***
 		- Rotational Slam
-1. **Pulling/Grip Strength**
+4. **Pulling/Grip Strength**
 - Then do exercises to build pulling power and grip for grappling:
 	- Bodyweight
 	    - Pull-Up Variations (Neutral Grip/Chin-Up Grip/Wide Grip)
@@ -140,7 +140,7 @@ Warm up with dynamic stretch to Improve blood flow and flexibility before starti
 			- Cable Wolverine
 				- ![[unnamed.gif |Wolverine]]
 			- [[Core#^b41212|Cable Reverse Crunch]]
-2. **Cardio**
+5. **Cardio**
 - Ropes
 	- Alternating Waves
 	- Side-to-Side Waves

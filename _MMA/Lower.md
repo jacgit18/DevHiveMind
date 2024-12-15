@@ -16,7 +16,7 @@ dg-publish:
 	- ![](https://www.youtube.com/watch?v=7j-2w4-P14I)
 - Cossack Squat ^3ae11e
 	- ![](https://www.youtube.com/watch?v=hDIiCBIM6tE)
-- Kettlebell Step-Up
+- Kettlebell Step-Up ^c9d45f
 	- ![](https://www.youtube.com/watch?v=lXvA8exxWmE)
 
 
@@ -37,11 +37,12 @@ dg-publish:
 - Kettlebell Deadlift
     - ![Deadlift (Kettlebell)](https://www.youtube.com/embed/hinonqqzatk?feature=oembed)
 ### Plyometrics(Jumps) Calisthenics
-- Box Jumps
+- Box Jumps ^3b9f2c
 	- ![](https://www.youtube.com/watch?v=NBY9-kTuHEk)
 - Lateral Skater Jumps ^afd7a0
 	- ![](https://www.youtube.com/watch?v=Xz27DudBfSs&list=TLPQMTUxMjIwMjS6La21EtiX1w&index=2)
-- Split Squat Jumps
+- Split Squat Jumps ^aad169
+	- ![](https://www.youtube.com/watch?v=4DMvFDaqIys&list=TLPQMTUxMjIwMjS6La21EtiX1w&index=6)
 
 - Jump Squat Slams
 - Broad Jumps
