@@ -28,14 +28,15 @@ dg-publish:
 - Explosive Overhead Throw (Medicine Ball)
 - Bottoms Up (**Kettlebell**) ^9def13
 	- ![](https://www.youtube.com/watch?v=TJjRZBpY75I)
-- Cable Bicep Curl
+- Cable Bicep Curl/ CurlBar Curl - keep elbows in front of hips 
+	- More engaging straight bar can be better in-terms of muscle engagement 
+	- ![](https://www.youtube.com/watch?v=2MUEL4nL6hA&list=TLPQMTUxMjIwMjTU6oT9G9b_2w&index=7)
 - Cable Tricep Pushdown
+	- ![](https://www.youtube.com/watch?v=6Fzep104f0s)
 - Cable Woodchopper ^a7be5a
 	- ![](https://www.youtube.com/watch?v=mvvu8imyMFs)
-- Lat Pulldown(Machine)
 - Single-Arm Row (**Kettlebell**)
 - Reverse Grip Curl (_Curl Bar_)
-- Seated Cable Rows
 - Overhead Press (_**Dumbbell**_)
 - Bent-Over Row (Low Priority)
 
