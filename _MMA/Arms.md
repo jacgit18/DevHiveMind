@@ -26,7 +26,7 @@ dg-publish:
 - Chest Press (Machine or Free Weights)
 - Plyometric Chest Pass (Medicine Ball)
 - Explosive Overhead Throw 
-- Kettlebell Bottoms Up
+- Bottoms Up (**Kettlebell**)
 	- ![](https://www.youtube.com/watch?v=TJjRZBpY75I)
 - Cable Bicep Curl
 - Cable Tricep Pushdown
