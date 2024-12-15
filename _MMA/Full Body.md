@@ -16,7 +16,8 @@ dg-publish:
 ### Weights
 - Turkish Get-Up  ^7d58d7
     - ![Turkish Get-Up](https://www.youtube.com/embed/sgd8n917Zv0?feature=oembed)
-- Clean & Press(_Barbell_ / _**Dumbbell**_)
+- Clean to Jerk & Press(_Barbell_ / _**Dumbbell**_) ^0c16fd
+	- ![](https://www.youtube.com/watch?v=8IYt7AtP8BI)
 - Farmer’s Walk(**Kettlebell** / _Barbell_)
 	- ![](https://www.youtube.com/watch?v=8OtwXwrJizk)
 - Renegade Row (**Kettlebell**/_**Dumbbell**_)

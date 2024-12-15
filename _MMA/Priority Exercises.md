@@ -74,8 +74,8 @@ Warm up with dynamic stretch to Improve blood flow and flexibility before starti
 	    - Box Jumps
 	    - Skater Jumps
 	    - Split Squat Jumps
-	- *Barbell*
-	    - Clean to Jerk   (Dumbbell/Barbell) 
+	- *Barbell*/Dumbbell
+	    - [[Full Body#^0c16fd |Clean to Jerk & Press]]
 	- **Kettlebell**
 	    - Kettlebell Snatch
 	    - Kettlebell Step-Up
@@ -128,7 +128,7 @@ Warm up with dynamic stretch to Improve blood flow and flexibility before starti
 		- ![[unnamed.gif |Wolverine]]
 	- [[Abdominals#^b41212 |Cable Reverse Crunch]]
 
-- 
+
 - Seated Cable Row
 - Chest/Rear Fly 
 
