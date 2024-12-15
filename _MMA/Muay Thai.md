@@ -18,6 +18,29 @@ dg-publish:
 
 
 
+High kick stretch 1
+
+![[po.gif]]
+can adjust and try higher or just trying just the leg turn part by itself  
+  
+3 to 4 times a week 3 min to 10 min
+
+High kick stretch 2
+![[jnkn.gif]]
+
+High kick stretch 3
+![[trststs.gif]]
+
+
+
+
+![](https://www.youtube.com/watch?v=PjHVshdrZM0)
+
+![](https://www.youtube.com/watch?v=dV0847Mh6Xs)
+
+
+Bird dog
+
 ![[mn.gif]]
 
 Bjj Streches
