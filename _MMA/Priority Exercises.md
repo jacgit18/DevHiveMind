@@ -85,8 +85,8 @@ Warm up with dynamic stretch to Improve blood flow and flexibility before starti
 1. **Explosive Power (Plyometric & Olympic Movements)**
 - Start with these to engage fast-twitch muscle fibers and improve explosive strength:
 	- Bodyweight
-	    - Box Jumps
-	    - Skater Jumps
+	    - [[Lower]]
+	    - [[Lower#^afd7a0 |Lateral Skater Jumps]]
 	    - Split Squat Jumps
 	- *Barbell*/***Dumbbell***
 	    - [[Full Body#^0c16fd |Clean to Jerk & Press]]
@@ -96,14 +96,14 @@ Warm up with dynamic stretch to Improve blood flow and flexibility before starti
 2. **Strength Training (Compound Movements)**
 - Follow with heavy, compound lifts to build muscle and functional strength:
 	- _Barbell_
-		- Bench Press - narrow grip for a more compound movement.
+		- [[Upper#^bcb0df |Bench Press]] - narrow grip for a more compound movement.
 		- Romanian Deadlift
 		- Zercher Squats
 	- ___Dumbbell___
 	    - [[Full Body#^775bc4 |Farmer’s Walk]] 
 	- __Kettlebell__
 	    - [[Full Body#^7d58d7 |Turkish Get-Up]] (3 sets per side, focusing on control)
-	    - Cossack Squat
+	    - [[Lower#^3ae11e |Cossack Squat]]
 	- Machine(Rehab) 
 		- Chest Press
 		- Leg Press back/seated

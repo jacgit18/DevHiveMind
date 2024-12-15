@@ -14,7 +14,7 @@ dg-publish:
 ### Weights
 - Romanian Deadlift(_Barbell_) - focused on levitating 
 	- ![](https://www.youtube.com/watch?v=7j-2w4-P14I)
-- Cossack Squat
+- Cossack Squat ^3ae11e
 	- ![](https://www.youtube.com/watch?v=hDIiCBIM6tE)
 - Kettlebell Step-Up
 	- ![](https://www.youtube.com/watch?v=lXvA8exxWmE)
@@ -38,15 +38,15 @@ dg-publish:
     - ![Deadlift (Kettlebell)](https://www.youtube.com/embed/hinonqqzatk?feature=oembed)
 ### Plyometrics(Jumps) Calisthenics
 - Box Jumps
-- Skater Jumps
+	- ![](https://www.youtube.com/watch?v=NBY9-kTuHEk)
+- Lateral Skater Jumps ^afd7a0
+	- ![](https://www.youtube.com/watch?v=Xz27DudBfSs&list=TLPQMTUxMjIwMjS6La21EtiX1w&index=2)
 - Split Squat Jumps
 
 - Jump Squat Slams
 - Broad Jumps
 - Depth Jump
 	 - ![](https://www.youtube.com/watch?v=NvSkuYwNxco)
-- Lateral Bound
-	 - ![](https://www.youtube.com/watch?v=soqQy4dzEts)
 - Plyometric Step-Ups
 	 - ![](https://www.youtube.com/watch?v=7yC-oCnWIRc)
 - High Kick Crossover

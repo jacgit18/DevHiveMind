@@ -13,7 +13,8 @@ dg-publish:
 ---
 ### Weights
 - Halos (**Kettlebell**)
-- Bench Press (_Barbell_) - Prefer close grip for a more compound movement.
+- Bench Press (_Barbell_) ^bcb0df
+	- ![](https://www.youtube.com/watch?v=SCVCLChPQFY&list=TLPQMTUxMjIwMjRImOBFVXK6uQ&index=2)
 - Single-Arm Press (**Kettlebell**)
 - Chest Fly bring range closer to front Rear Fly
 	For rear when pulling stop when both arms are straight dont go past shoulders 
