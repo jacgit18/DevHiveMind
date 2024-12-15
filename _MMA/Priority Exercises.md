@@ -107,7 +107,11 @@ Warm up with dynamic stretch to Improve blood flow and flexibility before starti
 	- Machine(Rehab) 
 		- Chest Press - lower seat handles chest height
 		- Leg Press back/seated
-3. **Rotational/Core Strength**
+			- On Toes at the edge hits calves
+			- Wide feet inner thigh
+			- Narrow feet Quads
+			- On heels at edge Gluts and hamstrings
+1. **Rotational/Core Strength**
 - Focus on rotational movements for striking power and grappling control:
 	- ***Dumbbell***/__Kettlebell__
 		- Halos
@@ -115,7 +119,7 @@ Warm up with dynamic stretch to Improve blood flow and flexibility before starti
 		- [[Core#^6516d4|Russian Twists Kettlebell]]/[[Core#^fdacde |Russian Twists Rope]]
 	-  ***Medicine Ball***
 		- Rotational Slam
-4. **Pulling/Grip Strength**
+2. **Pulling/Grip Strength**
 - Then do exercises to build pulling power and grip for grappling:
 	- Bodyweight
 	    - Pull-Up Variations (Neutral Grip/Chin-Up Grip/Wide Grip)
@@ -140,7 +144,7 @@ Warm up with dynamic stretch to Improve blood flow and flexibility before starti
 			- Cable Wolverine
 				- ![[unnamed.gif |Wolverine]]
 			- [[Core#^b41212|Cable Reverse Crunch]]
-5. **Cardio**
+3. **Cardio**
 - Ropes
 	- Alternating Waves
 	- Side-to-Side Waves
