@@ -1,5 +1,9 @@
 ---
-tags: 
+tags:
+  - gym
+  - bjj
+  - mauyThai
+  - favorite
 author:
   - gitUserNamePlaceHolder
 Comments: Placeholder comment any thing else you want to mention about the document.
