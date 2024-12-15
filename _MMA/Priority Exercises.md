@@ -25,14 +25,12 @@ dg-publish:
     - Use **barbells** for added weight when building strength.
     - Use **dumbbells** for greater range of motion and correcting muscle imbalances.
 
-4. **Dynamic Warm-Up:** Improve blood flow and flexibility before starting.
-
-5. **Static Stretching:** Cool down with stretches targeting major muscle groups.
 
 ## Stats
 16% body fat possibly lower need to check
-Eat a minimum of 1900 calories
-Check New Weights
+Eat a minimum of 1900 calories a day 
+80 oz water
+Check New Weight limits 
 
 | Machine                           | Weight |     | Category | Sets | Reps |
 | --------------------------------- | ------ | --- | -------- | ---- | ---- |
@@ -51,26 +49,34 @@ Check New Weights
 | Chest Press                       | ??     |     |          | 3    | 10   |
 | Shoulder Press                    | ??     |     |          | 3    | 10   |
 
-Free Weights
-
 | Type       | Excercise | Weight(lb/kg) |     | Category |     | Time      | Sets | Reps |
 | ---------- | --------- | ------------- | --- | -------- | --- | --------- | ---- | ---- |
-| Kettlebell | Halo      | 17/8          |     | Upper    |     |           | 3    | 10   |
-| Barbell    |           | ??            |     |          |     |           | 3    | 10   |
-| CurlBar    |           |               |     |          |     |           |      |      |
-| Dumbbell   |           |               |     | Upper    |     |           | 3    | 10   |
-| Medi Ball  |           |               |     |          |     |           |      |      |
+| Kettlebell | Halo      | 17/8          |     | Upper    |     | N/A       | 3    | 10   |
+| Barbell    |           | ??            |     | Full     |     | N/A       | 3    | 10   |
+| CurlBar    |           |               |     |          |     | N/A       | 3    | 10   |
+| Dumbbell   |           |               |     | Upper    |     | N/A       | 3    | 10   |
+| Medi Ball  |           |               |     | Core     |     | N/A       | 3    | 10   |
 | Rope       |           |               |     | Lower    |     | **20**sec | 3    | 10   |
-| Jumps      |           |               |     |          |     |           |      |      |
+| Jumps      |           |               |     |          |     | N/A       | 3    | 10   |
+| Bodyweight |           |               |     |          |     | **20**sec | 3    | 10   |
 
-## Top 11  Core Workouts(non Machines)
+
+### Warm-Up & Cool-Down 
+Warm up with dynamic stretch to Improve blood flow and flexibility before starting. Then cool down with a static stretch targeting major muscle groups. Basically any static stretch has a dynamic variation with movement. 
+
+- Long Lever Plank
+- Side Plank
+- Hold pushup extended & unextended
+- Clap Push-Ups
+#### Top 11  Core Workouts(non Machines)
 1. **Explosive Power (Plyometric & Olympic Movements)**
 - Start with these to engage fast-twitch muscle fibers and improve explosive strength:
     - Box Jumps
     - Skater Jumps
     - Split Squat Jumps
-    - Kettlebell Snatch
     - Clean & Press (Dumbbell/Barbell) 
+    
+    -  Kettlebell Snatch
 
 
 
@@ -98,7 +104,7 @@ Cossack Squat
 	    - ![](https://www.youtube.com/watch?v=djTQ1C_pvYw&list=TLPQMTQxMjIwMjQ2MGDLyOWw0w&index=2)
 
 
-## Top 10  Core Workouts(Machines)
+#### Top 10  Core Workouts(Machines)
 - Pulley Machine
 	- Abduction
 		- ![[ab.gif]]
@@ -120,6 +126,9 @@ Cossack Squat
 - Leg Press
 - Chest/Rear Fly 
 - Lying Leg Curl
+
+
+
 
 
 # Categories
