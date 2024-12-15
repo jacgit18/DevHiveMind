@@ -69,6 +69,8 @@ Warm up with dynamic stretch to Improve blood flow and flexibility before starti
 	- Butterfly Stretch → Dynamic Butterfly Hip Rocks
 	- Cat-Cow Stretch → Dynamic Cat-Cow Transitions
 	- Lizard Pose → Dynamic Hip Flexor Swings
+		- For dynamic part lift your back knee off the ground if it was resting begin rocking forward and backward, shifting your weight between your front foot and back toes.
+		- ![](https://www.youtube.com/watch?v=gyS68CiPNcY)
 	- Spinal Twist → Supine Windshield Wipers
 		- ![](https://www.youtube.com/watch?v=mNdJti7ZwKI&pp=ygUMU3BpbmFsIFR3aXN0)
 		- ![](https://www.youtube.com/watch?v=XxLVEIpb9oY)
