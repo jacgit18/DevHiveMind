@@ -28,6 +28,7 @@ dg-publish:
 3. **Equipment Tips:**
     - Use **barbells** for added weight when building strength.
     - Use **dumbbells** for greater range of motion and correcting muscle imbalances.
+    - Any **curlbar** excercise can be done with barbell
 ## Stats
 16% body fat possibly lower need to check
 Eat a minimum of 1900 calories a day 
