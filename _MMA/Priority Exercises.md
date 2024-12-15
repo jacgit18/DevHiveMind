@@ -21,11 +21,11 @@ dg-publish:
 1. **Focus on 30 Core Workouts:**  
     - Prioritize functional and foundational exercises to maximize efficiency.
     - Workout more in the winter body retains weight more.
-    - Breath through exercises.
+    - Breath through exercises. exhale on push breath inhale on return depending on excercise.
     - Increase sets for more gain vs more reps for more endurance. Like 3 sets of 10 reps is more slow vs 10 sets of 3 reps can be done more faster.
-1. **Avoid Risky Movements:**
+2. **Avoid Risky Movements:**
     - Skip upright rows due to the unnatural shoulder position.
-2. **Equipment Tips:**
+3. **Equipment Tips:**
     - Use **barbells** for added weight when building strength.
     - Use **dumbbells** for greater range of motion and correcting muscle imbalances.
 ## Stats
@@ -57,7 +57,7 @@ Check New Weight limits
 | Full  | Dumbbell   | Farmer Walk    | ??            | **20**sec | 3    | N/A  |
 |       | CurlBar    |                | ??            | N/A       | 3    | 10   |
 | Lower | Rope       |                | ??            | **20**sec | 3    | 10   |
-| Upper | Kettlebell | Halo           | 17/8          | N/A       | 3    | 10   |
+| Upper | Kettlebell | Halo           | 17/8          | **20**sec | 3    | N/A  |
 |       | Jumps      |                | ??            | N/A       | 3    | 10   |
 | Upper | Bodyweight | PullUp         | ??            | N/A       | 3    | 10   |
 | Upper | Bodyweight | PullUp Neutral | ??            | N/A       | 3    | 10   |
@@ -98,14 +98,14 @@ Warm up with dynamic stretch to Improve blood flow and flexibility before starti
 	- _Barbell_
 		- [[Upper#^bcb0df |Bench Press]] - narrow grip for a more compound movement.
 		- [[Lower#^308171 |Romanian Deadlift]]
-		- [[Full Body^]]
+		- [[Full Body#^765b0b |Zercher Squats]]
 	- ___Dumbbell___
 	    - [[Full Body#^775bc4 |Farmer’s Walk]] 
 	- __Kettlebell__
 	    - [[Full Body#^7d58d7 |Turkish Get-Up]] (3 sets per side, focusing on control)
 	    - [[Lower#^3ae11e |Cossack Squat]]
 	- Machine(Rehab) 
-		- Chest Press
+		- Chest Press - lower seat handles chest height
 		- Leg Press back/seated
 3. **Rotational/Core Strength**
 - Focus on rotational movements for striking power and grappling control:
