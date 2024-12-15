@@ -49,13 +49,12 @@ dg-publish:
 _Tip:_ Use added weight if possible; heavier weight makes pull-ups feel easier when unloaded.
 
 ### Plyometrics(Jumps) Calisthenics
+- Rotational Slam (Medicine Ball)
+
 - Clap Push-Ups
 - Slams (Medicine Ball)
-- Rotational Slam (Medicine Ball)
 - Wall Chest Throws (Medicine Ball)
 - Rotational Throws(Medicine Ball)
 - Double Arm Waves(Battle Ropes)
-- Alternating Waves(Battle Ropes)
-- Side-to-Side Waves(Battle Ropes)
--  Seated Waves(Battle Ropes)
+- Seated Waves(Battle Ropes)
 

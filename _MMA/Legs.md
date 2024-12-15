@@ -45,7 +45,7 @@ dg-publish:
 	 - ![](https://www.youtube.com/watch?v=7yC-oCnWIRc)
 - Skater Jumps
 - Split Squat Jumps
--  High Kick Crossover
+- High Kick Crossover
 	 - ![](https://www.youtube.com/watch?v=w6AlcHbLU7k&pp=ygUSU3F1YXQgdG8gSnVtcCBLaWNr)
 - Battle Rope Slams with Squat
 - Lunge with Rope Waves

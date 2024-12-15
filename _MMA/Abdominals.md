@@ -16,6 +16,7 @@ Get to 1 rep 15 sec each try to extend for 45 sec MAX
 ### Isometric Calisthenics (No Weights)
 - Long lever plank
 - Side plank
+
 - Hold pushup extended & unextended
 - Tuck Jumps to Plank
 - Rope Circles

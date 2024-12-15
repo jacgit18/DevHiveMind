@@ -37,6 +37,10 @@ dg-publish:
     - ![Kettlebell Snatch](https://www.youtube.com/embed/Pm-b2XFeABA?feature=oembed)
 ### Cardio Calisthenic
 - Rope Slams
+- Alternating Waves(Battle Ropes)
+- Side-to-Side Waves(Battle Ropes)
+
+
 - Rope Burpees
 - Rope Snakes
 - Battle Rope Pulls
