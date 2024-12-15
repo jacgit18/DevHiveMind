@@ -50,18 +50,19 @@ Check New Weight limits
 | Upper | Shoulder Press                    | ??     |     | 3    | 10   |
 | Upper | Blink Row with individual weights | 42.5   |     | 3    | 10   |
 
-| Body  | Exercise       | Type       | W(lb/kg) | AltType    | W(lb/kg) | Time      | Sets | Reps |
-| ----- | -------------- | ---------- | -------- | ---------- | -------- | --------- | ---- | ---- |
-| Core  | Russian Twists | Medi Ball  | ??       | Kettlebell | 17/8     | **20**sec | 3    | N/A  |
-| Full  | Farmer Walk    | Dumbbell   | ??       | Dumbbell   | ??       | **20**sec | 3    | N/A  |
-| Upper |                | CurlBar    | ??       | CurlBar    | ??       | N/A       | 3    | 10   |
-| Lower |                | Rope       | ??       | Rope       | ??       | **20**sec | 3    | 10   |
-| Lower | Zercher Squat  | Barbell    | ??       | N/A        | N/A      | N/A       | 3    | 10   |
-| Upper | Halo lunge     | Kettlebell | 17/8     | N/A        | N/A      | N/A       | 8    | 2    |
-|       |                | Jumps      | ??       | Jumps      | ??       | N/A       | 3    | 10   |
-| Upper | PullUp         | Bodyweight | ??       | Bodyweight | ??       | N/A       | 3    | 10   |
-| Upper | PullUp Neutral | Bodyweight | ??       | Bodyweight | ??       | N/A       | 3    | 10   |
-| Upper | ChinUp         | Bodyweight | ??       | Bodyweight | ??       | N/A       | 3    | 10   |
+| Body  | Exercise        | Type       | W(lb/kg) | AltType    | W(lb/kg) | Time      | Sets | Reps |
+| ----- | --------------- | ---------- | -------- | ---------- | -------- | --------- | ---- | ---- |
+| Core  | Russian Twists  | Medi Ball  | ??       | Kettlebell | 17/8     | **20**sec | 3    | N/A  |
+| Full  | Farmer Walk     | Dumbbell   | ??       | Dumbbell   | ??       | **20**sec | 3    | N/A  |
+| Upper |                 | CurlBar    | ??       | CurlBar    | ??       | N/A       | 3    | 10   |
+| Lower |                 | Rope       | ??       | Rope       | ??       | **20**sec | 3    | 10   |
+| Lower | Zercher Squat   | Barbell    | ??       | N/A        | N/A      | N/A       | 3    | 10   |
+| Upper | Halo lunge      | Kettlebell | 17/8     | N/A        | N/A      | N/A       | 8    | 2    |
+|       |                 | Jumps      | ??       | Jumps      | ??       | N/A       | 3    | 10   |
+| Upper | PullUp          | Bodyweight | ??       | Bodyweight | ??       | N/A       | 3    | 10   |
+| Upper | PullUp Neutral  | Bodyweight | ??       | Bodyweight | ??       | N/A       | 3    | 10   |
+| Upper | ChinUp          | Bodyweight | ??       | Bodyweight | ??       | N/A       | 3    | 10   |
+| Upper | SingleArm Press | Kettlebell | 17/8     |            |          |           |      |      |
 
 ### Warm-Up & Cool-Down 
 Warm up with dynamic stretch to Improve blood flow and flexibility before starting. Then cool down with a static stretch targeting major muscle groups. Basically any static stretch has a dynamic variation with movement. 
