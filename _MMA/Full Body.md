@@ -28,12 +28,10 @@ dg-publish:
 	- ![](https://www.youtube.com/watch?v=6Z15_WdXmVw&list=TLPQMTUxMjIwMjQFyJJPDyr2Nw&index=1)
 - Around the World  
     - ![Around the World](https://www.youtube.com/watch?v=N4mMVG8S5Kg)
-- Squats(**Kettlebell**/_Barbell_)
-	- 
 - Zercher Squat ^765b0b
 	- ![](https://www.youtube.com/watch?v=nwx6Ip7hd3I)
-- High Pull(**Kettlebell**)
-- Lunge Twist(**Kettlebell**)
+- Halo Lunge Twist(**Kettlebell**) ^7ecf05
+	- ![](https://www.youtube.com/watch?v=kt97CnwNZrE&list=TLPQMTUxMjIwMjSqjLz-Yp-KTQ&index=3)
 - Curtsy Lunge(_**Dumbbell**_)
 
 - Landmine Press

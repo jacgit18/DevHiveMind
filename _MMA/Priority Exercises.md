@@ -50,18 +50,18 @@ Check New Weight limits
 | Upper | Shoulder Press                    | ??     |     | 3    | 10   |
 | Upper | Blink Row with individual weights | 42.5   |     | 3    | 10   |
 
-| Body  | Type       | Excercise       | Weight(lb/kg) | Time      | Sets | Reps |
-| ----- | ---------- | --------------- | ------------- | --------- | ---- | ---- |
-| Core  | Medi Ball  | Russian Twists  | ??            | **20**sec | 3    | N/A  |
-| Full  | Barbell    |                 | ??            | N/A       | 3    | 10   |
-| Full  | Dumbbell   | Farmer Walk     | ??            | **20**sec | 3    | N/A  |
-|       | CurlBar    |                 | ??            | N/A       | 3    | 10   |
-| Lower | Rope       |                 | ??            | **20**sec | 3    | 10   |
-| Upper | Kettlebell | Halo            | 17/8          | **20**sec | 3    | N/A  |
-|       | Jumps      |                 | ??            | N/A       | 3    | 10   |
-| Upper | Bodyweight | PullUp          | ??            | N/A       | 3    | 10   |
-| Upper | Bodyweight | PullUp Neutral  | ??            | N/A       | 3    | 10   |
-| Upper | Bodyweight | ChinUp          | ??            | N/A       | 3    | 10   |
+| Body  | Type       | Excercise      | Weight(lb/kg) | Time      | Sets | Reps |
+| ----- | ---------- | -------------- | ------------- | --------- | ---- | ---- |
+| Core  | Medi Ball  | Russian Twists | ??            | **20**sec | 3    | N/A  |
+| Full  | Barbell    |                | ??            | N/A       | 3    | 10   |
+| Full  | Dumbbell   | Farmer Walk    | ??            | **20**sec | 3    | N/A  |
+|       | CurlBar    |                | ??            | N/A       | 3    | 10   |
+| Lower | Rope       |                | ??            | **20**sec | 3    | 10   |
+| Upper | Kettlebell | Halo lunge     | 17/8          | N/A       | 8    | 2    |
+|       | Jumps      |                | ??            | N/A       | 3    | 10   |
+| Upper | Bodyweight | PullUp         | ??            | N/A       | 3    | 10   |
+| Upper | Bodyweight | PullUp Neutral | ??            | N/A       | 3    | 10   |
+| Upper | Bodyweight | ChinUp         | ??            | N/A       | 3    | 10   |
 
 ### Warm-Up & Cool-Down 
 Warm up with dynamic stretch to Improve blood flow and flexibility before starting. Then cool down with a static stretch targeting major muscle groups. Basically any static stretch has a dynamic variation with movement. 
@@ -114,7 +114,7 @@ Warm up with dynamic stretch to Improve blood flow and flexibility before starti
 3. **Rotational/Core Strength**
 - Focus on rotational movements for striking power and grappling control:
 	- ***Dumbbell***/__Kettlebell__
-		- Halos
+		- [[Full Body#^7ecf05 |Halos]]
 	-  ***Medicine Ball***/__Kettlebell__/Rope
 		- [[Core#^6516d4|Russian Twists Kettlebell]]/[[Core#^fdacde |Russian Twists Rope]]
 	-  ***Medicine Ball***
