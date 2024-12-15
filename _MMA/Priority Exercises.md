@@ -30,35 +30,34 @@ Eat a minimum of 1900 calories a day
 80 oz water
 Check New Weight limits 
 
-| Machine                           | Weight |     | Category | Sets | Reps |
-| --------------------------------- | ------ | --- | -------- | ---- | ---- |
-| Abductor Outer Thigh              | 100    |     | Lower    | 3    | 10   |
-| Abduction Inner Thigh             | 115    |     | Lower    | 3    | 10   |
-| Blink Row with individual weights | 42.5   |     | Upper    | 3    | 10   |
-| Chest Fly                         | ??     |     |          | 3    | 10   |
-| Rear Delt Fly                     | ??     |     |          | 3    | 10   |
-| Isolated Wide Chest               | 90     |     |          | 3    | 10   |
-| Lat Pulldown                      | ??     |     |          | 3    | 10   |
-| Leg Press off Back                | 540    |     |          | 3    | 10   |
-| Seated Leg Press Far              | 150??  |     |          | 3    | 10   |
-| Seated Leg Press Close            | 110    |     |          | 3    | 10   |
-| Bicep Curls                       | ??     |     |          | 3    | 10   |
-| Mid Row                           | 165??  |     |          | 3    | 10   |
-| Chest Press                       | ??     |     |          | 3    | 10   |
-| Shoulder Press                    | ??     |     |          | 3    | 10   |
+| Body  | Machine                           | Weight |     | Sets | Reps |
+| ----- | --------------------------------- | ------ | --- | ---- | ---- |
+| Lower | Abductor Outer Thigh              | 100    |     | 3    | 10   |
+| Lower | Abduction Inner Thigh             | 115    |     | 3    | 10   |
+| Upper | Blink Row with individual weights | 42.5   |     | 3    | 10   |
+|       | Chest Fly                         | ??     |     | 3    | 10   |
+|       | Rear Delt Fly                     | ??     |     | 3    | 10   |
+|       | Isolated Wide Chest               | 90     |     | 3    | 10   |
+|       | Lat Pulldown                      | ??     |     | 3    | 10   |
+|       | Leg Press off Back                | 540    |     | 3    | 10   |
+|       | Seated Leg Press Far              | 150??  |     | 3    | 10   |
+|       | Seated Leg Press Close            | 110    |     | 3    | 10   |
+|       | Bicep Curls                       | ??     |     | 3    | 10   |
+|       | Mid Row                           | 165??  |     | 3    | 10   |
+|       | Chest Press                       | ??     |     | 3    | 10   |
+|       | Shoulder Press                    | ??     |     | 3    | 10   |
 
-| Type       | Excercise   | Weight(lb/kg) |     | Category | Time      | Sets | Reps |
-| ---------- | ----------- | ------------- | --- | -------- | --------- | ---- | ---- |
-| Kettlebell | Halo        | 17/8          |     | Upper    | N/A       | 3    | 10   |
-| Barbell    |             | ??            |     | Full     | N/A       | 3    | 10   |
-| CurlBar    |             | ??            |     |          | N/A       | 3    | 10   |
-| Dumbbell   | Farmer Walk | ??            |     | Full     | **20**sec | 3    | N/A  |
-| Medi Ball  |             |               |     | Core     | N/A       | 3    | 10   |
-| Rope       |             |               |     | Lower    | **20**sec | 3    | 10   |
-| Jumps      |             |               |     |          | N/A       | 3    | 10   |
-| Bodyweight |             |               |     |          | **20**sec | 3    | 10   |
+| Body  | Type       | Excercise      | Weight(lb/kg) | Time      | Sets | Reps |
+| ----- | ---------- | -------------- | ------------- | --------- | ---- | ---- |
+| Upper | Kettlebell | Halo           | 17/8          | N/A       | 3    | 10   |
+| Full  | Barbell    |                | ??            | N/A       | 3    | 10   |
+|       | CurlBar    |                | ??            | N/A       | 3    | 10   |
+| Full  | Dumbbell   | Farmer Walk    | ??            | **20**sec | 3    | N/A  |
+| Core  | Medi Ball  | Russian Twists | ??            | **20**sec | 3    | N/A  |
+| Lower | Rope       |                | ??            | **20**sec | 3    | 10   |
+|       | Jumps      |                | ??            | N/A       | 3    | 10   |
+|       | Bodyweight |                | ??            | **20**sec | 3    | 10   |
 
-Reduce to 15 
 ### Warm-Up & Cool-Down 
 Warm up with dynamic stretch to Improve blood flow and flexibility before starting. Then cool down with a static stretch targeting major muscle groups. Basically any static stretch has a dynamic variation with movement. 
 - Bodyweight
@@ -67,14 +66,14 @@ Warm up with dynamic stretch to Improve blood flow and flexibility before starti
 	- Hold push-up extended & unextended
 	- Plyometric Plank with Shoulder Tap
 	- Clap Push-Ups
-#### Top 15  Core Workouts
+#### Priority Workouts
 1. **Explosive Power (Plyometric & Olympic Movements)**
 - Start with these to engage fast-twitch muscle fibers and improve explosive strength:
 	- Bodyweight
 	    - Box Jumps
 	    - Skater Jumps
 	    - Split Squat Jumps
-	- *Barbell*/Dumbbell
+	- *Barbell*/***Dumbbell***
 	    - [[Full Body#^0c16fd |Clean to Jerk & Press]]
 	- **Kettlebell**
 	    - Kettlebell Snatch
@@ -112,7 +111,6 @@ Warm up with dynamic stretch to Improve blood flow and flexibility before starti
 	- Machine
 		- Chest/Rear Fly 
 		- Seated Cable Row
-
 5. **Cardio**
 - Ropes
 	- Alternating Waves
@@ -129,22 +127,7 @@ Warm up with dynamic stretch to Improve blood flow and flexibility before starti
 		- ![[fl.gif]]
 	- Cable Wolverine
 		- ![[unnamed.gif |Wolverine]]
-	- [[Abdominals#^b41212 |Cable Reverse Crunch]]
-
-
-
-
-
-
-
-
-
-
-# Categories
-- ## [[Arms]] 
-- ## [[Abdominals]]
-- ## [[Full Body]]
-- ## [[Legs]]
+	- [[Core#^b41212|Cable Reverse Crunch]]
 
 
 ## Schedule Guide

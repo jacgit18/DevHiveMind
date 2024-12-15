@@ -12,8 +12,8 @@ Peer Reviewed: 0
 dg-publish:
 ---
 ## Core
-Get to 1 rep 15 sec each try to extend for 45 sec MAX
 ### Isometric Calisthenics (No Weights)
+Get to your reps to 15 sec each try to extend for 45 sec MAX
 - Tuck Jumps to Plank
 - Rope Circles
 - Side Plank Waves
