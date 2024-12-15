@@ -25,7 +25,9 @@ dg-publish:
 - Kettlebell Swing ^bb1837
 	- ![](https://www.youtube.com/watch?v=YSxHifyI6s8)
 - Squats(**Kettlebell**/_Barbell_)
+	- 
 - Zercher Squat
+	- ![](https://www.youtube.com/watch?v=nwx6Ip7hd3I)
 - High Pull(**Kettlebell**)
 - Lunge Twist(**Kettlebell**)
 - Curtsy Lunge(_**Dumbbell**_)

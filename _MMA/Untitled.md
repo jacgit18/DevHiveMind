@@ -102,14 +102,6 @@
 
 
 
-
-- Squats(**Kettlebell**/_Barbell_)
-- Zercher Squat
-- Bulgarian Split Squat  
-- Sumo Squat
-- Split Squat Jumps
-- Cossack Squat
-
 Got it! Here are **top 3 exercises** for each category based on your goals of functional strength, martial arts support, and muscle growth:
 
 ---

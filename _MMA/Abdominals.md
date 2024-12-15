@@ -22,7 +22,7 @@ Get to 1 rep 15 sec each try to extend for 45 sec MAX
 - Side Plank Waves
 - Russian Twist Rope Slams
 ### Weights
-- Cable Reverse Crunch
+- Cable Reverse Crunch ^b41212
 	- ![](https://www.youtube.com/watch?v=b8oUb_6POhQ)
 	
 - Russian Twists (Medicine Ball/**Kettlebell**)

@@ -67,12 +67,15 @@ Free Weights
     - Kettlebell Snatch
     - Clean & Press (Dumbbell/Barbell) 
 
+
+
 2. **Strength Training (Compound Movements)**
 - Follow with heavy, compound lifts to build muscle and functional strength:
     - [[Full Body#^7d58d7 |Turkish Get-Up]] (3 sets per side, focusing on control)
-    - Bulgarian Split Squat 
+    - Zercher Squats
     - Farmer’s Walk (3 sets of 30-40 seconds)
     - Bench Press (_Barbell_) - narrow grip for a more compound movement.
+Cossack Squat
 
 3. **Rotational/Core Strength**
 - Focus on rotational movements for striking power and grappling control:
@@ -102,7 +105,8 @@ Free Weights
 		- ![[fl.gif]]
 	- Wolverine
 		- ![[unnamed.gif |Wolverine]]
-	- Cable Reverse Crunch
+	- [[Abdominals#^b41212 |Cable Reverse Crunch]]
+	
 - Chest Press
 - Overhead Shoulder Press
 - Lat Pulldown
