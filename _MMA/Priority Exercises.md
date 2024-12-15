@@ -22,10 +22,9 @@ dg-publish:
     - Prioritize functional and foundational exercises to maximize efficiency.
     - Workout more in the winter body retains weight more.
     - Breath through exercises.
-    - Increase sets for more gain vs more reps for more endurance.
+    - Increase sets for more gain vs more reps for more endurance. Like 3 sets of 10 reps is more slow vs 10 sets of 3 reps can be done more faster.
 1. **Avoid Risky Movements:**
     - Skip upright rows due to the unnatural shoulder position.
-
 2. **Equipment Tips:**
     - Use **barbells** for added weight when building strength.
     - Use **dumbbells** for greater range of motion and correcting muscle imbalances.
