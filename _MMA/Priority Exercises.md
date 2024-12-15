@@ -14,7 +14,7 @@ dg-publish:
 # Regimen
 
 ## Best Practices
-1. **Focus on 15 Core Workouts or Stretches:**  
+1. **Focus on 30 Core Workouts:**  
     - Prioritize functional and foundational exercises to maximize efficiency.
     - Workout more in the winter body retains weight more
 
@@ -61,11 +61,11 @@ Check New Weight limits
 ### Warm-Up & Cool-Down 
 Warm up with dynamic stretch to Improve blood flow and flexibility before starting. Then cool down with a static stretch targeting major muscle groups. Basically any static stretch has a dynamic variation with movement. 
 - Bodyweight
-	- Long Lever Plank
-	- Side Plank
-	- Hold push-up extended & unextended
-	- Plyometric Plank with Shoulder Tap
-	- Clap Push-Ups
+- Static to Dynamic
+	- Butterfly Stretch → Dynamic Butterfly Hip Rocks
+	- Lizard Pose → Dynamic Hip Flexor Swings
+	- Spinal Twist → Supine Windshield Wipers
+
 #### Priority Workouts
 1. **Explosive Power (Plyometric & Olympic Movements)**
 - Start with these to engage fast-twitch muscle fibers and improve explosive strength:
