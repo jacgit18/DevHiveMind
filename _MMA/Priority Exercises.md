@@ -136,9 +136,6 @@ Warm up with dynamic stretch to Improve blood flow and flexibility before starti
 			- Cable Balloon Abduction
 				- ![[ab.gif]]
 			- [[Upper#^a7be5a |Cable Woodchopper]]
-			- Cable Crossover
-			- Cable Komodo chest fly
-				- ![[km.gif]]
 			- Cable Floor Fly
 				- ![[fl.gif]]
 			- Cable Wolverine
@@ -149,3 +146,4 @@ Warm up with dynamic stretch to Improve blood flow and flexibility before starti
 	- [[Full Body#^64091e | Alternating Waves]]
 	- [[Full Body#^164e0e | Side-to-Side Waves]]
 
+	
