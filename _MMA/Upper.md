@@ -55,7 +55,11 @@ _Tip:_ Use added weight if possible; heavier weight makes pull-ups feel easier w
 - Slams (Medicine Ball)
 	- ![](https://www.youtube.com/watch?v=k9W6g9LvXDI&list=TLPQMTUxMjIwMjSCoRXDSuxPzQ&index=6)
 - Wall Chest Throws (Medicine Ball)
+	- ![](https://www.youtube.com/watch?v=VFyQExZjs70&list=TLPQMTUxMjIwMjTU6oT9G9b_2w&index=10)
 - Rotational Throws(Medicine Ball)
+	- ![](https://www.youtube.com/watch?v=o9BC7lgN1bo&list=TLPQMTUxMjIwMjTU6oT9G9b_2w&index=11)
 - Double Arm Waves(Battle Ropes)
+	- ![](https://www.youtube.com/watch?v=u5k-9NLlBZc&list=TLPQMTUxMjIwMjTU6oT9G9b_2w&index=12)
 - Seated Waves(Battle Ropes)
+	- ![](https://www.youtube.com/watch?v=BMS0bK7w4Io&list=TLPQMTUxMjIwMjTU6oT9G9b_2w&index=13)
 

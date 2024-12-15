@@ -112,7 +112,7 @@ Warm up with dynamic stretch to Improve blood flow and flexibility before starti
 			- On Toes at the edge hits calves
 			- Wide feet inner thigh
 			- Narrow feet Quads
-			- On heels at edge Gluts and hamstrings
+			- On heels at edge Glutes and hamstrings
 3. **Rotational/Core Strength**
 - Focus on rotational movements for striking power and grappling control:
 	- ***Dumbbell***/__Kettlebell__
