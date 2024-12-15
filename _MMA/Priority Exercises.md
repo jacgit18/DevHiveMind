@@ -67,6 +67,7 @@ Warm up with dynamic stretch to Improve blood flow and flexibility before starti
 - Long Lever Plank
 - Side Plank
 - Hold pushup extended & unextended
+- Plyometric Plank with Shoulder Tap
 - Clap Push-Ups
 #### Top 11  Core Workouts(non Machines)
 1. **Explosive Power (Plyometric & Olympic Movements)**

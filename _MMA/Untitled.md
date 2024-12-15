@@ -106,14 +106,6 @@ Got it! Here are **top 3 exercises** for each category based on your goals of fu
 
 ---
 
-### **Isometric Calisthenics (No Weights)**
-
-1. **Long Lever Plank** – Builds core endurance and shoulder stability essential for grappling and striking.
-2. **Side Plank** – Enhances lateral core stability, crucial for rotational movements in striking and escapes in BJJ.
-
-
----
-
 ### **Rope Training**
 
 1. **Battle Rope Slams** – Builds explosive power and conditions shoulders, core, and grip. Perfect for martial arts endurance.
@@ -171,3 +163,6 @@ Got it! Here are **top 3 exercises** for each category based on your goals of fu
 ---
 
 Would you like help organizing this into a training plan or modifying based on equipment access?
+
+
+
