@@ -53,17 +53,22 @@ Check New Weights
 
 Free Weights
 
-| Excercise | Weight  |     | Category |     | Type       | Sets | Reps |
-| --------- | ------- | --- | -------- | --- | ---------- | ---- | ---- |
-| Halo      | 17/8kg  |     | Upper    |     | Kettlebell | 3    | 10   |
-|           | 115     |     | Lower    |     |            | 3    | 10   |
-|           | 42.5    |     | Upper    |     |            | 3    | 10   |
-|           | ??      |     |          |     |            | 3    | 10   |
+| Type       | Excercise | Weight(lb/kg) |     | Category |     | Time      | Sets | Reps |
+| ---------- | --------- | ------------- | --- | -------- | --- | --------- | ---- | ---- |
+| Kettlebell | Halo      | 17/8          |     | Upper    |     |           | 3    | 10   |
+| Barbell    |           | ??            |     |          |     |           | 3    | 10   |
+| CurlBar    |           |               |     |          |     |           |      |      |
+| Dumbbell   |           |               |     | Upper    |     |           | 3    | 10   |
+| Medi Ball  |           |               |     |          |     |           |      |      |
+| Rope       |           |               |     | Lower    |     | **20**sec | 3    | 10   |
+| Jumps      |           |               |     |          |     |           |      |      |
 
 ## Top 11  Core Workouts(non Machines)
 1. **Explosive Power (Plyometric & Olympic Movements)**
 - Start with these to engage fast-twitch muscle fibers and improve explosive strength:
-    - Depth Jumps 
+    - Box Jumps
+    - Skater Jumps
+    - Split Squat Jumps
     - Kettlebell Snatch
     - Clean & Press (Dumbbell/Barbell) 
 

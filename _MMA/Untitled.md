@@ -110,7 +110,7 @@ Got it! Here are **top 3 exercises** for each category based on your goals of fu
 
 1. **Long Lever Plank** – Builds core endurance and shoulder stability essential for grappling and striking.
 2. **Side Plank** – Enhances lateral core stability, crucial for rotational movements in striking and escapes in BJJ.
-3. **Tuck Jumps to Plank** – Combines explosive power with core activation for improved transitions and agility.
+
 
 ---
 

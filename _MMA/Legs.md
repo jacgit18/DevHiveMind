@@ -14,6 +14,12 @@ dg-publish:
 ### Weights
 - Romanian Deadlift(_Barbell_) - focused on levitating 
 	- ![](https://www.youtube.com/watch?v=7j-2w4-P14I)
+- Cossack Squat
+	- ![](https://www.youtube.com/watch?v=hDIiCBIM6tE)
+- Kettlebell Step-Up
+	- ![](https://www.youtube.com/watch?v=lXvA8exxWmE)
+
+
 - Deadlift(_**Dumbbell**_) 
 	- ![](https://www.youtube.com/watch?v=gLogcYIvgRA)
 - [Sumo Squat](Sumo.gif)
@@ -24,18 +30,18 @@ dg-publish:
 	- Wide feet inner thigh
 	- Narrow feet Quads
 	- On heels at edge Gluts and hamstrings
-- Cossack Squat
-	- ![](https://www.youtube.com/watch?v=hDIiCBIM6tE)
 - Kettlebell Rotational Clean
 	- ![](https://www.youtube.com/watch?v=Iofsc9ssQPE)
-- Kettlebell Step-Up
-	- ![](https://www.youtube.com/watch?v=lXvA8exxWmE)
 - Bulgarian Split Squat  
     - ![Bulgarian Split Squat](https://www.youtube.com/watch?v=vgn7bSXkgkA)
 - Kettlebell Deadlift
     - ![Deadlift (Kettlebell)](https://www.youtube.com/embed/hinonqqzatk?feature=oembed)
 ### Plyometrics(Jumps) Calisthenics
 - Box Jumps
+- Skater Jumps
+- Split Squat Jumps
+
+- Jump Squat Slams
 - Broad Jumps
 - Depth Jump
 	 - ![](https://www.youtube.com/watch?v=NvSkuYwNxco)
@@ -43,10 +49,7 @@ dg-publish:
 	 - ![](https://www.youtube.com/watch?v=soqQy4dzEts)
 - Plyometric Step-Ups
 	 - ![](https://www.youtube.com/watch?v=7yC-oCnWIRc)
-- Skater Jumps
-- Split Squat Jumps
 - High Kick Crossover
 	 - ![](https://www.youtube.com/watch?v=w6AlcHbLU7k&pp=ygUSU3F1YXQgdG8gSnVtcCBLaWNr)
 - Battle Rope Slams with Squat
 - Lunge with Rope Waves
-- Jump Squat Slams
