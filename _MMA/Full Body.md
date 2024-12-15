@@ -33,7 +33,7 @@ dg-publish:
 - Halo Lunge Twist(**Kettlebell**) ^7ecf05
 	- ![](https://www.youtube.com/watch?v=kt97CnwNZrE&list=TLPQMTUxMjIwMjSqjLz-Yp-KTQ&index=3)
 - Curtsy Lunge(_**Dumbbell**_)
-
+	- ![](https://www.youtube.com/watch?v=RvDcKx9KsD8)
 - Landmine Press
 - Kettlebell Snatch   ^8b48af
     - ![Kettlebell Snatch](https://www.youtube.com/embed/Pm-b2XFeABA?feature=oembed)
