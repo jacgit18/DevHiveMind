@@ -70,25 +70,29 @@ Warm up with dynamic stretch to Improve blood flow and flexibility before starti
 #### Top 15  Core Workouts
 1. **Explosive Power (Plyometric & Olympic Movements)**
 - Start with these to engage fast-twitch muscle fibers and improve explosive strength:
-- Bodyweight
-    - Box Jumps
-    - Skater Jumps
-    - Split Squat Jumps
-    
-    - Clean & Press (Dumbbell/Barbell) 
-    - Kettlebell Snatch
-    - Kettlebell Step-Up
+	- Bodyweight
+	    - Box Jumps
+	    - Skater Jumps
+	    - Split Squat Jumps
+	- *Barbell*
+	    - Clean to Jerk   (Dumbbell/Barbell) 
+	- **Kettlebell**
+	    - Kettlebell Snatch
+	    - Kettlebell Step-Up
 2. **Strength Training (Compound Movements)**
 - Follow with heavy, compound lifts to build muscle and functional strength:
 	- _Barbell_
 		- Bench Press - narrow grip for a more compound movement.
 		- Romanian Deadlift
 		- Zercher Squats
+	- ___Dumbbell___
+	    - Farmer’s Walk 
 	- __Kettlebell__
 	    - [[Full Body#^7d58d7 |Turkish Get-Up]] (3 sets per side, focusing on control)
 	    - Cossack Squat
-	- ___Dumbbell___
-	    - Farmer’s Walk 
+	- Machine
+		- Chest Press
+		- Leg Press
 3. **Rotational/Core Strength**
 - Focus on rotational movements for striking power and grappling control:
 	- __Kettlebell__
@@ -99,16 +103,15 @@ Warm up with dynamic stretch to Improve blood flow and flexibility before starti
 		- Rotational Slam
 
 4. **Pulling/Grip Strength**
-- Conclude with exercises to build pulling power and grip for grappling:
-	- [[Full Body#^bb1837|Kettlebell Swing]]
-    - Pull-Up Variations (Neutral Grip/Chin-Up Grip/Wide Grip)
-	    - ![](https://www.youtube.com/watch?v=mRy9m2Q9_1I)
-	    - ![](https://www.youtube.com/watch?v=dAScZVF5o9k)
-	    - ![](https://www.youtube.com/watch?v=djTQ1C_pvYw&list=TLPQMTQxMjIwMjQ2MGDLyOWw0w&index=2)
-
+- Then do exercises to build pulling power and grip for grappling:
+	- Bodyweight
+		- [[Full Body#^bb1837|Kettlebell Swing]]
+	    - Pull-Up Variations (Neutral Grip/Chin-Up Grip/Wide Grip)
+		    - ![](https://www.youtube.com/watch?v=mRy9m2Q9_1I)
+		    - ![](https://www.youtube.com/watch?v=dAScZVF5o9k)
+		    - ![](https://www.youtube.com/watch?v=djTQ1C_pvYw&list=TLPQMTQxMjIwMjQ2MGDLyOWw0w&index=2)
 5. **Cardio**
 - Ropes
-	- Battle Rope Slams
 	- Alternating Waves
 	- Side-to-Side Waves
 #### Top 10  Core Workouts(Machines)
@@ -124,15 +127,11 @@ Warm up with dynamic stretch to Improve blood flow and flexibility before starti
 	- Wolverine
 		- ![[unnamed.gif |Wolverine]]
 	- [[Abdominals#^b41212 |Cable Reverse Crunch]]
-	
-- Chest Press
-- Overhead Shoulder Press
-- Lat Pulldown
-- Seated Cable Row
 
-- Leg Press
+- 
+- Seated Cable Row
 - Chest/Rear Fly 
-- Lying Leg Curl
+
 
 
 
