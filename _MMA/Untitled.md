@@ -1,252 +1,80 @@
-When evaluating a codebase to understand its current stage and progress, consider these questions:  
+# Stages of Application Development
 
-## 1. Project Overview  
-- What is the purpose of the project?  
-- What problem or need does it address?  
-- What are the key milestones and deadlines?  
-- What are the project goals and objectives?  
-
-## 2. Stage of Development  
-- What is the current stage of development?  
-- Has the project just started, or is it in progress?  
-- Are there specific milestones or phases that have been completed?  
-
-## 3. Architecture and Design  
-- Has the architecture been defined, or is it still evolving?  
-- Are there architectural diagrams or design documents available?  
-- How modular and scalable is the architecture?  
-
-## 4. Codebase Overview  
-- What technologies and programming languages are being used?  
-- How organized and maintainable is the codebase?  
-- Are there coding standards and conventions being followed?  
-
-## 5. Data Model and Database  
-- Has the data model been designed and implemented?  
-- What type of database is being used, and how is data stored?  
-- Are there database migrations or schema changes in progress?  
-
-## 6. Feature Development  
-- What features have been implemented so far?  
-- Are there user stories or requirements documented for each feature?  
-- What features are planned for future development?  
-
-## 7. Testing and Quality Assurance  
-- What testing approach is being used (e.g., unit tests, integration tests, end-to-end tests)?  
-- What is the code coverage for tests?  
-- Are there any known bugs or issues that need to be addressed?  
-
-## 8. Deployment and Infrastructure  
-- How is the application deployed (e.g., cloud platform, on-premises server)?  
-- What infrastructure and tools are being used for deployment and CI/CD?  
-
-## 9. Team Collaboration and Workflow  
-- How is collaboration managed within the team (e.g., version control, issue tracking)?  
-- What is the development workflow (e.g., agile, waterfall)?  
-- Are there regular code reviews and feedback sessions?  
-- What is the company culture like?  
-- Are there any unwritten rules or norms I should be aware of?  
-
-## 10. Future Plans and Roadmap  
-- What are the next steps for the project?  
-- Are there specific deadlines or targets to meet?  
-- What are the long-term goals and vision for the project?  
-
-## 11. Expectations (Corporate Simping)  
-- What are the expectations for contractors in terms of performance and integration with the team?  
-- Are there opportunities for extending the contract or transitioning to a permanent role?  
-
-## 12. Tools and Resources  
-- What tools and resources will I need to use?  
-- Are there any specific systems or software I should familiarize myself with beforehand?  
-
-## 13. Challenges  
-- What are some common challenges that contractors face in this company?  
-- How can I best prepare for or address these challenges?  
-
----
-# Conversation During Interview
-
-These terms provide a broad framework to discuss an application’s lifecycle without diving into excessive detail. They are useful for asking open-ended questions to gauge where the project stands in development and sounding more competent.
-
-## 1. **Foundation**
-
-**What it means:** Establishing the groundwork or core structure of the application.  
-**Examples of activities:**
-
-- Setting up architecture
-- Building routing
-- Designing APIs
-- Creating MVP functionality
-
-**Questions to ask:**
-
-- "Are you still building out the foundation, or is everything set up?"
-- "What’s the state of your core architecture?"
-## 2. **Feature Development**
-
-**What it means:** Actively creating new features or expanding the functionality of the application.  
-**Examples of activities:**
-
-- Adding business logic
-- Building user interfaces
-- Backend integrations
-
-**Questions to ask:**
-
-- "Are you focused on feature development right now?"
-- "How far along are you in rolling out core vs. secondary features?"
-
-## 3. **Stabilization**
-
-**What it means:** Refining the application to make it robust and reliable.  
-**Examples of activities:**
-
-- Testing core functionality
-- Debugging
-- Addressing edge cases
-- Performance optimization
-
-**Questions to ask:**
-
-- "Are you in the stabilization phase?"
-- "What kinds of bugs or reliability challenges are you solving?"
-## 4. **Iteration**
-
-**What it means:** Making incremental updates or enhancements after the core application is functional.  
-**Examples of activities:**
-
-- Improving UI/UX
-- Adding "nice-to-have" features
-- Refactoring code
-- Responding to user feedback
-
-**Questions to ask:**
-
-- "Are you in the iterative phase, improving what’s already built?"
-- "What are you optimizing or tweaking lately?"
-
-## 5. **Maintenance**
-
-**What it means:** Keeping the application running smoothly over time.  
-**Examples of activities:**
-
-- Fixing bugs
-- Updating dependencies
-- Handling technical debt
-- Adding security patches
-
-**Questions to ask:**
-
-- "Are you mostly in maintenance mode now?"
-- "What kind of upkeep is most pressing for the app?"
-
-## 6. **Scaling**
-
-**What it means:** Adapting the application to handle increased traffic, complexity, or new use cases.  
-**Examples of activities:**
-
-- Improving database performance
-- Redesigning architecture
-- Optimizing for distributed systems
-
-**Questions to ask:**
-
-- "Are you in a scaling phase, or is the system stable at its current load?"
-- "How are you preparing for future growth?"
-## 7. **Sunset**
-
-**What it means:** Wrapping up or decommissioning the application.  
-**Examples of activities:**
-
-- Migrating users
-- Archiving codebases
-- Building a replacement
-
-**Questions to ask:**
-
-- "Are you in a sunset phase, or is the app nearing end-of-life?"
-- "Are you doing any decommissioning or handling deprecated code?"
-- "What’s the plan for transitioning users or data?"
-
----
-# First Few Days on the Job  
-
-### 1. Research and Prepare  
-- Familiarize yourself with the company’s products, services, and recent news.  
-- Review any documentation or materials provided before your start date.  
-
-### 2. Connect with Colleagues  
-- Reach out to the people you know at the company to set up informal meetings or coffee chats.  
-- Use these interactions to build rapport and gather insights.  
-
-### 3. Clarify Responsibilities  
-- Ensure you have a clear understanding of your role and responsibilities.  
-- Confirm how your performance will be evaluated.  
-
-### 4. Set Up Your Workspace  
-- Make sure you have all the necessary equipment and access to company systems.  
-- Personalize your workspace to make it comfortable and conducive to productivity.  
-
-### 5. Develop a Learning Plan  
-- Identify key skills or knowledge areas you need to focus on.  
-- Plan how you will acquire these, whether through formal training, online courses, or on-the-job learning.  
-
-### 6. Network and Build Relationships  
-- Attend company events, meetings, and social gatherings to meet more people and expand your network.  
-- Be proactive in introducing yourself and showing interest in others’ work.  
-
-### 7. Stay Organized  
-- Keep track of tasks, deadlines, and meetings using a planner or digital tool.  
-- Regularly review and prioritize your workload to stay on top of responsibilities.  
-
-### 8. Seek Feedback  
-- Regularly ask for feedback from your supervisor and colleagues to ensure you’re meeting expectations.  
-- Use the feedback to improve your performance and adapt to the company’s working style.  
+The development of a codebase or application typically follows stages aligned with the **Software Development Life Cycle (SDLC)** or similar processes. Below is a breakdown of these stages and common terminologies:
 
 ---
 
-# Developer-Specific Questions to Ask  
+## 1. **Ideation and Planning**
 
-### 1. Clarification of Requirements  
-- What are the key business rules that need to be enforced in the system?  
-- Are these rules based on regulatory, organizational, or customer requirements?  
-- How often do business rules change, and what triggers these changes?  
+- **Discovery Phase:** Understanding the problem, gathering requirements, and brainstorming solutions.
+- **Requirement Analysis:** Documenting functional and non-functional requirements.
+- **Architecture Planning:** Deciding the application structure, technologies, and tools (e.g., monolith, microservices, serverless).
+- **Prototyping:** Creating basic visual or functional representations (wireframes, mockups, or basic code).
 
-### 2. Business Rule Scope and Impact  
-- What is the scope of each business rule (e.g., global or specific to a feature/module)?  
-- What are the consequences if a business rule is violated or not implemented correctly?  
-- Which users or roles are affected by these business rules?  
+---
 
-### 3. Inputs and Outputs  
-- What are the inputs and outputs required for each business rule?  
-- How are business rules validated? What data is used to confirm compliance?  
+## 2. **Development Stages**
 
-### 4. Dependencies and Interactions  
-- Are there any dependencies between business rules or other system components?  
-- Do any business rules have exceptions or override conditions?  
-- How do business rules interact with external systems or APIs?  
+- **Initial Setup:** Setting up the environment, repository, CI/CD pipelines, and project structure.
+- **Routing Setup:** Establishing application routes or endpoints (e.g., React Router, Express.js).
+- **Feature Development:**
+    - **Core Features:** The minimum features needed for an MVP (Minimum Viable Product).
+    - **Iterative Features:** Additions or improvements based on feedback or evolving requirements.
+- **Back-End Development:** Setting up databases, APIs, and server-side logic.
+- **Front-End Development:** Building user interfaces, components, and client-side logic.
+- **Integration:** Ensuring smooth communication between front-end and back-end systems.
 
-### 5. Handling Edge Cases  
-- How are edge cases or special conditions handled by the business rules?  
-- Are there any fallback mechanisms if certain data or conditions aren't met?  
+---
 
-### 6. Monitoring and Auditing  
-- How is compliance with business rules monitored or logged?  
-- Is there an audit trail for when business rules are enforced or modified?  
+## 3. **Testing Stages**
 
-### 7. Performance and Scalability  
-- How will the enforcement of business rules affect system performance?  
-- Are there specific rules that might cause bottlenecks or increase complexity?  
+- **Unit Testing:** Testing individual components or functions in isolation.
+- **Integration Testing:** Ensuring modules or services work together as expected.
+- **Functional Testing:** Verifying the application meets specified requirements.
+- **End-to-End (E2E) Testing:** Testing the entire application workflow from start to finish.
+- **Load and Performance Testing:** Evaluating performance under high traffic or stress.
+- **Regression Testing:** Ensuring new changes don’t break existing functionality.
 
-### 8. Testing and Validation  
-- What tests are in place to ensure business rules are implemented correctly?  
-- How are business rules expected to behave under different scenarios (e.g., heavy loads or failure conditions)?  
+---
 
-### 9. Future Changes and Maintenance  
-- How flexible are the business rules to future changes?  
-- What is the process for modifying or deprecating business rules?  
+## 4. **Deployment and Release**
 
-### 10. Ownership and Responsibility  
-- Who owns the business rules and is responsible for maintaining them?  
-- How should developers communicate with stakeholders if changes or clarifications to business rules are needed?  
+- **Development Build:** Used during active coding and testing (non-production).
+- **Staging Environment:** Near-production environment for final testing and validation.
+- **Production Deployment:** Live environment for end users.
+- **Release Management:**
+    - **Alpha Release:** Limited internal testing.
+    - **Beta Release:** Pre-release for external users to test and provide feedback.
+    - **General Availability (GA):** Final release to all users.
+
+---
+
+## 5. **Maintenance and Iteration**
+
+- **Bug Fixing:** Addressing issues discovered post-release.
+- **Optimization:** Improving performance, scalability, and security.
+- **Feature Updates:** Adding new features or enhancements.
+- **Versioning:** Tracking changes/releases using semantic versioning (e.g., `1.0.0`).
+- **Hotfixes:** Urgent updates to fix critical production issues.
+
+---
+
+## 6. **Decommissioning or Sunset**
+
+- **End-of-Life (EOL):** Officially discontinuing support and updates for the application.
+- **Migration:** Transitioning users to a new system or platform.
+- **Archiving:** Storing the codebase and data for future reference or compliance.
+
+---
+
+## Terminology for Agile or Iterative Processes
+
+- **Sprints:** Time-boxed development cycles in Agile.
+- **Backlog Refinement:** Organizing and prioritizing features or tasks.
+- **Continuous Integration (CI):** Automating testing and frequent merging of code.
+- **Continuous Deployment (CD):** Automatically deploying tested code to production.
+- **DevOps Pipeline:** Automating the process of building, testing, and deploying applications.
+
+---
+
+This structure reflects the key stages of building and maintaining an application, from its inception to eventual retirement. Depending on the methodology (e.g., Agile, Waterfall, DevOps), specific terms or emphasis may vary.
