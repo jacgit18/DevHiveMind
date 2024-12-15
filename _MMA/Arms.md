@@ -14,6 +14,7 @@ dg-publish:
 ### Weights
 - Halos (**Kettlebell**)
 - Bench Press (_Barbell_) - Prefer close grip for a more compound movement.
+- Single-Arm Press (**Kettlebell**)
 - Chest Fly bring range closer to front Rear Fly
 	For rear when pulling stop when both arms are straight dont go past shoulders 
 
@@ -25,7 +26,7 @@ dg-publish:
 - Shoulder Press - Avoid behind-the-head; stick to pressing in front.
 - Chest Press (Machine or Free Weights)
 - Plyometric Chest Pass (Medicine Ball)
-- Explosive Overhead Throw 
+- Explosive Overhead Throw (Medicine Ball)
 - Bottoms Up (**Kettlebell**)
 	- ![](https://www.youtube.com/watch?v=TJjRZBpY75I)
 - Cable Bicep Curl
@@ -33,7 +34,6 @@ dg-publish:
 - Cable Woodchopper
 	- ![](https://www.youtube.com/watch?v=mvvu8imyMFs)
 - Lat Pulldown(Machine)
-- Single-Arm Press (**Kettlebell**)
 - Single-Arm Row (**Kettlebell**)
 - Reverse Grip Curl (_Curl Bar_)
 - Seated Cable Rows

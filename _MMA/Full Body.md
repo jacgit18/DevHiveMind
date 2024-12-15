@@ -16,14 +16,15 @@ dg-publish:
 ### Weights
 - Turkish Get-Up  ^7d58d7
     - ![Turkish Get-Up](https://www.youtube.com/embed/sgd8n917Zv0?feature=oembed)
-- Around the World  
-    - ![Around the World](https://www.youtube.com/watch?v=N4mMVG8S5Kg)
-- Arnold Press(_Barbell_)
 - Clean & Press(_Barbell_ / _**Dumbbell**_)
 - Farmer’s Walk(**Kettlebell** / _Barbell_)
 	- ![](https://www.youtube.com/watch?v=8OtwXwrJizk)
+- Renegade Row (**Kettlebell**/_**Dumbbell**_)
 - Kettlebell Swing ^bb1837
 	- ![](https://www.youtube.com/watch?v=YSxHifyI6s8)
+- Arnold Press(_Barbell_)
+- Around the World  
+    - ![Around the World](https://www.youtube.com/watch?v=N4mMVG8S5Kg)
 - Squats(**Kettlebell**/_Barbell_)
 	- 
 - Zercher Squat
@@ -31,7 +32,7 @@ dg-publish:
 - High Pull(**Kettlebell**)
 - Lunge Twist(**Kettlebell**)
 - Curtsy Lunge(_**Dumbbell**_)
-- Renegade Row (**Kettlebell**/_**Dumbbell**_)
+
 - Landmine Press
 - Kettlebell Snatch  
     - ![Kettlebell Snatch](https://www.youtube.com/embed/Pm-b2XFeABA?feature=oembed)

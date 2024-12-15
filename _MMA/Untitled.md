@@ -142,7 +142,7 @@ Got it! Here are **top 3 exercises** for each category based on your goals of fu
 
 1. **Kettlebell Swing** – Develops explosive hip drive for takedowns, kicks, and overall posterior chain strength.
 2. **Renegade Row (Dumbbell or Kettlebell)** – Combines core stability with upper body pulling strength, great for grappling.
-3. **Bulgarian Split Squat** – Strengthens single-leg stability and balance, improving kicks and base control.
+3. Zercher Squat
 
 ---
 
