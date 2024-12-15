@@ -47,54 +47,56 @@ Check New Weight limits
 | Chest Press                       | ??     |     |          | 3    | 10   |
 | Shoulder Press                    | ??     |     |          | 3    | 10   |
 
-| Type       | Excercise | Weight(lb/kg) |     | Category |     | Time      | Sets | Reps |
-| ---------- | --------- | ------------- | --- | -------- | --- | --------- | ---- | ---- |
-| Kettlebell | Halo      | 17/8          |     | Upper    |     | N/A       | 3    | 10   |
-| Barbell    |           | ??            |     | Full     |     | N/A       | 3    | 10   |
-| CurlBar    |           |               |     |          |     | N/A       | 3    | 10   |
-| Dumbbell   |           |               |     | Upper    |     | N/A       | 3    | 10   |
-| Medi Ball  |           |               |     | Core     |     | N/A       | 3    | 10   |
-| Rope       |           |               |     | Lower    |     | **20**sec | 3    | 10   |
-| Jumps      |           |               |     |          |     | N/A       | 3    | 10   |
-| Bodyweight |           |               |     |          |     | **20**sec | 3    | 10   |
+| Type       | Excercise   | Weight(lb/kg) |     | Category | Time      | Sets | Reps |
+| ---------- | ----------- | ------------- | --- | -------- | --------- | ---- | ---- |
+| Kettlebell | Halo        | 17/8          |     | Upper    | N/A       | 3    | 10   |
+| Barbell    |             | ??            |     | Full     | N/A       | 3    | 10   |
+| CurlBar    |             | ??            |     |          | N/A       | 3    | 10   |
+| Dumbbell   | Farmer Walk | ??            |     | Full     | **20**sec | 3    | N/A  |
+| Medi Ball  |             |               |     | Core     | N/A       | 3    | 10   |
+| Rope       |             |               |     | Lower    | **20**sec | 3    | 10   |
+| Jumps      |             |               |     |          | N/A       | 3    | 10   |
+| Bodyweight |             |               |     |          | **20**sec | 3    | 10   |
 
 Reduce to 15 
 ### Warm-Up & Cool-Down 
 Warm up with dynamic stretch to Improve blood flow and flexibility before starting. Then cool down with a static stretch targeting major muscle groups. Basically any static stretch has a dynamic variation with movement. 
-
-- Long Lever Plank
-- Side Plank
-- Hold pushup extended & unextended
-- Plyometric Plank with Shoulder Tap
-- Clap Push-Ups
+- Bodyweight
+	- Long Lever Plank
+	- Side Plank
+	- Hold push-up extended & unextended
+	- Plyometric Plank with Shoulder Tap
+	- Clap Push-Ups
 #### Top 15  Core Workouts
 1. **Explosive Power (Plyometric & Olympic Movements)**
 - Start with these to engage fast-twitch muscle fibers and improve explosive strength:
+- Bodyweight
     - Box Jumps
     - Skater Jumps
     - Split Squat Jumps
-    - Clean & Press (Dumbbell/Barbell) 
     
+    - Clean & Press (Dumbbell/Barbell) 
     - Kettlebell Snatch
     - Kettlebell Step-Up
-
-
 2. **Strength Training (Compound Movements)**
 - Follow with heavy, compound lifts to build muscle and functional strength:
-    - [[Full Body#^7d58d7 |Turkish Get-Up]] (3 sets per side, focusing on control)
-    - Zercher Squats
-    - Farmer’s Walk (3 sets of 30-40 seconds)
-    - Bench Press (_Barbell_) - narrow grip for a more compound movement.
-    - Cossack Squat
-    - Romanian Deadlift (Barbell)
-
+	- _Barbell_
+		- Bench Press - narrow grip for a more compound movement.
+		- Romanian Deadlift
+		- Zercher Squats
+	- __Kettlebell__
+	    - [[Full Body#^7d58d7 |Turkish Get-Up]] (3 sets per side, focusing on control)
+	    - Cossack Squat
+	- ___Dumbbell___
+	    - Farmer’s Walk 
 3. **Rotational/Core Strength**
 - Focus on rotational movements for striking power and grappling control:
-    - Halos (**Kettlebell**) - Core/Rotational Stability
-    - Renegade Row (Kettlebell/Dumbbell)
-- ***Extra***
-	- Medicine Ball Rotational Slam
-	- Russian Twists
+	- __Kettlebell__
+		- Russian Twists
+		- Halos
+		- Renegade Row (Kettlebell/Dumbbell)
+	-  ***Medicine Ball***
+		- Rotational Slam
 
 4. **Pulling/Grip Strength**
 - Conclude with exercises to build pulling power and grip for grappling:
