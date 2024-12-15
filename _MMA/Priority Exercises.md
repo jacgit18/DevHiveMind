@@ -20,7 +20,7 @@ dg-publish:
 ## Best Practices
 1. **Focus on 30 Core Workouts:**  
     - Prioritize functional and foundational exercises to maximize efficiency.
-    - Workout more in the winter body retains weight more.
+    - Workout more in the winter body retains weight more Oct to Feb.
     - Breath through exercises. exhale on push breath inhale on return depending on excercise.
     - Increase sets for more gain vs more reps for more endurance. Like 3 sets of 10 reps is more slow vs 10 sets of 3 reps can be done more faster.
 2. **Avoid Risky Movements:**
@@ -148,11 +148,4 @@ Warm up with dynamic stretch to Improve blood flow and flexibility before starti
 - Ropes
 	- [[Full Body#^64091e | Alternating Waves]]
 	- [[Full Body#^164e0e | Side-to-Side Waves]]
-
-
-
-## Schedule Guide
-![https://www.youtube.com/watch?v=QjARj4PzCd4](https://www.youtube.com/watch?v=QjARj4PzCd4)  
-  
-![https://www.youtube.com/watch?v=l6lzmYQNPvI](https://www.youtube.com/watch?v=l6lzmYQNPvI)
 
