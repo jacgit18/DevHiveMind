@@ -105,21 +105,21 @@ Warm up with dynamic stretch to Improve blood flow and flexibility before starti
 	    - [[Full Body#^7d58d7 |Turkish Get-Up]] (3 sets per side, focusing on control)
 	    - [[Lower#^3ae11e |Cossack Squat]]
 	- Machine(Rehab) 
-		- Chest Press - lower seat handles chest height
+		- Chest Press(free weight) - lower seat handles chest height
 		- Leg Press back/seated
 			- On Toes at the edge hits calves
 			- Wide feet inner thigh
 			- Narrow feet Quads
 			- On heels at edge Gluts and hamstrings
-1. **Rotational/Core Strength**
+3. **Rotational/Core Strength**
 - Focus on rotational movements for striking power and grappling control:
 	- ***Dumbbell***/__Kettlebell__
 		- Halos
 	-  ***Medicine Ball***/__Kettlebell__/Rope
 		- [[Core#^6516d4|Russian Twists Kettlebell]]/[[Core#^fdacde |Russian Twists Rope]]
 	-  ***Medicine Ball***
-		- Rotational Slam
-2. **Pulling/Grip Strength**
+		- [[Upper#^d58de0 |Rotational Slam]]
+4. **Pulling/Grip Strength**
 - Then do exercises to build pulling power and grip for grappling:
 	- Bodyweight
 	    - Pull-Up Variations (Neutral Grip/Chin-Up Grip/Wide Grip)
@@ -130,7 +130,7 @@ Warm up with dynamic stretch to Improve blood flow and flexibility before starti
 		- [[Full Body#^bb1837|Kettlebell Swing]]
 		- [[Upper#^9def13|Bottoms Up]]
 	- Machine
-		- Chest/Rear Fly 
+		- [[Upper#^238b6e |Chest/Rear Fly ]] for rear stop when both arms are straight
 		- Seated Cable Row
 		- Pulley Machine
 			- Cable Abduction
@@ -144,7 +144,7 @@ Warm up with dynamic stretch to Improve blood flow and flexibility before starti
 			- Cable Wolverine
 				- ![[unnamed.gif |Wolverine]]
 			- [[Core#^b41212|Cable Reverse Crunch]]
-3. **Cardio**
+5. **Cardio**
 - Ropes
 	- Alternating Waves
 	- Side-to-Side Waves

@@ -17,7 +17,7 @@ dg-publish:
 	- ![](https://www.youtube.com/watch?v=SCVCLChPQFY&list=TLPQMTUxMjIwMjRImOBFVXK6uQ&index=2)
 - Single-Arm Press (**Kettlebell**)
 - Chest Fly bring range closer to front Rear Fly
-	For rear when pulling stop when both arms are straight dont go past shoulders 
+	For rear when pulling stop when both arms are straight dont go past shoulders  ^238b6e
 
 	- ![](https://www.youtube.com/watch?v=H4mVGHaK2f4)
 	Front Fly with Dumbbell
@@ -50,10 +50,11 @@ dg-publish:
 _Tip:_ Use added weight if possible; heavier weight makes pull-ups feel easier when unloaded.
 
 ### Plyometrics(Jumps) Calisthenics
-- Rotational Slam (Medicine Ball)
-
-- Clap Push-Ups
+- Clap push-ups
+- Rotational Slam (Medicine Ball) ^d58de0
+	- ![](https://www.youtube.com/watch?v=k67D95cDohc&list=TLPQMTUxMjIwMjSCoRXDSuxPzQ&index=7)
 - Slams (Medicine Ball)
+	- ![](https://www.youtube.com/watch?v=k9W6g9LvXDI&list=TLPQMTUxMjIwMjSCoRXDSuxPzQ&index=6)
 - Wall Chest Throws (Medicine Ball)
 - Rotational Throws(Medicine Ball)
 - Double Arm Waves(Battle Ropes)
