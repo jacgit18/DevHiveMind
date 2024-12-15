@@ -77,8 +77,9 @@ Warm up with dynamic stretch to Improve blood flow and flexibility before starti
 	- Pigeon Pose → Dynamic Pigeon Transitions
 	- Hold push-up extended & unextended
 	- Plyometric Plank with Shoulder Tap
+	- [[Core#^60b781 |Tuck Jumps to Plank]]
 	- Scapular Push-Ups 
-		- squeezing your shoulder blades together and then separating them without bending your elbows.
+		- Breathe deeply as you push your chest outward, squeezing your shoulder blades together. Then, reverse the motion by pulling your chest inward and separating your shoulder blades, keeping your elbows straight throughout the movement.
 #### Priority Workouts
 1. **Explosive Power (Plyometric & Olympic Movements)**
 - Start with these to engage fast-twitch muscle fibers and improve explosive strength:

@@ -13,10 +13,14 @@ dg-publish:
 ---
 ### Dynamic Isometric Calisthenics (No Weights)
 Get to your reps to 15 sec each try to extend for 45 sec MAX
-- Tuck Jumps to Plank
 - Rope Circles
+	- ![](https://www.youtube.com/watch?v=O2HVcPD3wKQ)
 - Side Plank Waves
+	- ![](https://www.youtube.com/watch?v=p5y6aMLNFb4)
 - Russian Twist Rope Slams
+	- ![](https://www.youtube.com/watch?v=JBz7PUxDyE4)
+- Tuck Jumps to Plank ^60b781
+	- ![](https://www.youtube.com/watch?v=LCF6rkH9R30)
 ### Weights
 - Cable Reverse Crunch ^b41212
 	- ![](https://www.youtube.com/watch?v=b8oUb_6POhQ)
@@ -28,6 +32,4 @@ Get to your reps to 15 sec each try to extend for 45 sec MAX
 ### Plyometrics(Jumps) Calisthenics
 - V-Up (Medicine Ball)
 	- ![](https://www.youtube.com/watch?v=xuTgCKRSy04)
-
-
 
