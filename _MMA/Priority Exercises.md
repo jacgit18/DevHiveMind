@@ -80,6 +80,7 @@ Warm up with dynamic stretch to Improve blood flow and flexibility before starti
 	- [[Core#^60b781 |Tuck Jumps to Plank]]
 	- Scapular Push-Ups 
 		- Breathe deeply as you push your chest outward, squeezing your shoulder blades together. Then, reverse the motion by pulling your chest inward and separating your shoulder blades, keeping your elbows straight throughout the movement.
+		- ![](https://www.youtube.com/watch?v=FTpVhBkyIzk&list=TLPQMTUxMjIwMjT8Ie0IftYKYw&index=3)
 #### Priority Workouts
 1. **Explosive Power (Plyometric & Olympic Movements)**
 - Start with these to engage fast-twitch muscle fibers and improve explosive strength:
@@ -99,7 +100,7 @@ Warm up with dynamic stretch to Improve blood flow and flexibility before starti
 		- Romanian Deadlift
 		- Zercher Squats
 	- ___Dumbbell___
-	    - Farmer’s Walk 
+	    - [[Full Body#^775bc4 |Farmer’s Walk]] 
 	- __Kettlebell__
 	    - [[Full Body#^7d58d7 |Turkish Get-Up]] (3 sets per side, focusing on control)
 	    - Cossack Squat
@@ -109,10 +110,10 @@ Warm up with dynamic stretch to Improve blood flow and flexibility before starti
 3. **Rotational/Core Strength**
 - Focus on rotational movements for striking power and grappling control:
 	- ***Dumbbell***/__Kettlebell__
-		- Renegade Row
-	-  ***Medicine Ball***/__Kettlebell__
-		- Russian Twists
 		- Halos
+	-  ***Medicine Ball***/__Kettlebell__/Rope
+		- [[Core#^6516d4|Russian Twists Kettlebell]]/[[Core#^fdacde |Russian Twists Rope]]
+	-  ***Medicine Ball***
 		- Rotational Slam
 1. **Pulling/Grip Strength**
 - Then do exercises to build pulling power and grip for grappling:

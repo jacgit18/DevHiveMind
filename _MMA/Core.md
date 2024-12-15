@@ -17,7 +17,7 @@ Get to your reps to 15 sec each try to extend for 45 sec MAX
 	- ![](https://www.youtube.com/watch?v=O2HVcPD3wKQ)
 - Side Plank Waves
 	- ![](https://www.youtube.com/watch?v=p5y6aMLNFb4)
-- Russian Twist Rope Slams
+- Russian Twist Rope Slams ^fdacde
 	- ![](https://www.youtube.com/watch?v=JBz7PUxDyE4)
 - Tuck Jumps to Plank ^60b781
 	- ![](https://www.youtube.com/watch?v=LCF6rkH9R30)
@@ -25,7 +25,7 @@ Get to your reps to 15 sec each try to extend for 45 sec MAX
 - Cable Reverse Crunch ^b41212
 	- ![](https://www.youtube.com/watch?v=b8oUb_6POhQ)
 	
-- Russian Twists (Medicine Ball/**Kettlebell**)
+- Russian Twists (Medicine Ball/**Kettlebell**) ^6516d4
 	- Levitate heels off floor elbows to back on twist
 	- ![](https://www.youtube.com/watch?v=7XUglHKRyMo)
 
