@@ -17,23 +17,6 @@ Peer Reviewed: 0
 dg-publish:
 ---
 
-
-## 7. Testing and Quality Assurance  
-- What testing approach is being used (e.g., unit tests, integration tests, end-to-end tests)?  
-- What is the code coverage for tests?  
-- Are there any known bugs or issues that need to be addressed?  
-
-## 8. Deployment and Infrastructure  
-- How is the application deployed (e.g., cloud platform, on-premises server)?  
-- What infrastructure and tools are being used for deployment and CI/CD?  
-
-## 9. Team Collaboration and Workflow  
-- How is collaboration managed within the team (e.g., version control, issue tracking)?  
-- What is the development workflow (e.g., agile, waterfall)?  
-- Are there regular code reviews and feedback sessions?  
-- What is the company culture like?  
-- Are there any unwritten rules or norms I should be aware of?  
-
 ## 10. Future Plans and Roadmap  
 - What are the next steps for the project?  
 - Are there specific deadlines or targets to meet?  
@@ -98,8 +81,8 @@ These terms provide a broad framework to discuss an application’s lifecycle wi
 - Performance optimization
 
 **Questions to ask:**
-- "Are you in the stabilization phase?"
-- "What kinds of bugs or reliability challenges are you solving?"
+- Are you in the stabilization phase?
+- What kinds of bugs or reliability challenges are you solving?
 ## 4. **Iteration**
 **What it means:** Making incremental updates or enhancements after the core application is functional.  
 **Examples of activities:**
@@ -109,8 +92,8 @@ These terms provide a broad framework to discuss an application’s lifecycle wi
 - Responding to user feedback
 
 **Questions to ask:**
-- "Are you in the iterative phase, improving what’s already built?"
-- "What are you optimizing or tweaking lately?"
+- Are you in the iterative phase, improving what’s already built?
+- What are you optimizing or tweaking lately?
 
 ## 5. **Maintenance**
 **What it means:** Keeping the application running smoothly over time.  
@@ -122,10 +105,13 @@ These terms provide a broad framework to discuss an application’s lifecycle wi
 - Test Coverage
 
 **Questions to ask:**
-- "Are you mostly in maintenance mode now?"
-- "What kind of upkeep is most pressing for the app?"
+- Are you mostly in maintenance mode now?
+- What kind of upkeep is most pressing for the app?
+- What testing approach is being used (e.g., unit tests, integration tests, end-to-end tests)?  
+- What is the code coverage for tests?  
+- Are there any known bugs or issues that need to be addressed?  
 
-## 6. **Scaling**
+## 6. **Scaling &  Deployment & Infrastructure**
 **What it means:** Adapting the application to handle increased traffic, complexity, or new use cases.  
 **Examples of activities:**
 - Improving database performance
@@ -133,9 +119,11 @@ These terms provide a broad framework to discuss an application’s lifecycle wi
 - Optimizing for distributed systems
 
 **Questions to ask:**
-- "Are you in a scaling phase, or is the system stable at its current load?"
-- "How are you preparing for future growth?"
-## 7. **Sunset**
+- Are you in a scaling phase, or is the system stable at its current load?
+- How are you preparing for future growth?
+- How is the application deployed (e.g., cloud platform, on-premises server)?  
+- What infrastructure and tools are being used for deployment and CI/CD?  
+## 7. **Future Plans and Roadmap**
 **What it means:** Wrapping up or decommissioning the application.  
 **Examples of activities:**
 - Migrating users
@@ -143,9 +131,9 @@ These terms provide a broad framework to discuss an application’s lifecycle wi
 - Building a replacement
 
 **Questions to ask:**
-- "Are you in a sunset phase, or is the app nearing end-of-life?"
-- "Are you doing any decommissioning or handling deprecated code?"
-- "What’s the plan for transitioning users or data?"
+- Are you in a sunset phase, or is the app nearing end-of-life?
+- Are you doing any decommissioning or handling deprecated code?
+- What’s the plan for transitioning users or data?
 
 ---
 # First Few Days on the Job  
