@@ -90,9 +90,9 @@ Warm up with dynamic stretch to Improve blood flow and flexibility before starti
 	- __Kettlebell__
 	    - [[Full Body#^7d58d7 |Turkish Get-Up]] (3 sets per side, focusing on control)
 	    - Cossack Squat
-	- Machine
+	- Machine(Rehab) 
 		- Chest Press
-		- Leg Press
+		- Leg Press back/seated
 3. **Rotational/Core Strength**
 - Focus on rotational movements for striking power and grappling control:
 	- __Kettlebell__
@@ -101,7 +101,6 @@ Warm up with dynamic stretch to Improve blood flow and flexibility before starti
 		- Renegade Row (Kettlebell/Dumbbell)
 	-  ***Medicine Ball***
 		- Rotational Slam
-
 4. **Pulling/Grip Strength**
 - Then do exercises to build pulling power and grip for grappling:
 	- Bodyweight
@@ -110,27 +109,31 @@ Warm up with dynamic stretch to Improve blood flow and flexibility before starti
 		    - ![](https://www.youtube.com/watch?v=mRy9m2Q9_1I)
 		    - ![](https://www.youtube.com/watch?v=dAScZVF5o9k)
 		    - ![](https://www.youtube.com/watch?v=djTQ1C_pvYw&list=TLPQMTQxMjIwMjQ2MGDLyOWw0w&index=2)
+	- Machine
+		- Chest/Rear Fly 
+		- Seated Cable Row
+
 5. **Cardio**
 - Ropes
 	- Alternating Waves
 	- Side-to-Side Waves
 #### Top 10  Core Workouts(Machines)
 - Pulley Machine
-	- Abduction
+	- Cable Abduction
 		- ![[ab.gif]]
 	- Cable Woodchopper
 	- Cable Crossover
-	- Komodo chest fly
+	- Cable Komodo chest fly
 		- ![[km.gif]]
-	- Floor Fly
+	- Cable Floor Fly
 		- ![[fl.gif]]
-	- Wolverine
+	- Cable Wolverine
 		- ![[unnamed.gif |Wolverine]]
 	- [[Abdominals#^b41212 |Cable Reverse Crunch]]
 
 
-- Seated Cable Row
-- Chest/Rear Fly 
+
+
 
 
 
