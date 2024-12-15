@@ -12,7 +12,7 @@ Peer Reviewed: 0
 dg-publish:
 ---
 ### Weights
-- Romanian Deadlift(_Barbell_) - focused on levitating 
+- Romanian Deadlift(_Barbell_) - focused on levitating  ^308171
 	- ![](https://www.youtube.com/watch?v=7j-2w4-P14I)
 - Cossack Squat ^3ae11e
 	- ![](https://www.youtube.com/watch?v=hDIiCBIM6tE)

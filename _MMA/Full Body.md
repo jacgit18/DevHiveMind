@@ -29,7 +29,7 @@ dg-publish:
     - ![Around the World](https://www.youtube.com/watch?v=N4mMVG8S5Kg)
 - Squats(**Kettlebell**/_Barbell_)
 	- 
-- Zercher Squat
+- Zercher Squat ^765b0b
 	- ![](https://www.youtube.com/watch?v=nwx6Ip7hd3I)
 - High Pull(**Kettlebell**)
 - Lunge Twist(**Kettlebell**)

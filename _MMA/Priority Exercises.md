@@ -97,8 +97,8 @@ Warm up with dynamic stretch to Improve blood flow and flexibility before starti
 - Follow with heavy, compound lifts to build muscle and functional strength:
 	- _Barbell_
 		- [[Upper#^bcb0df |Bench Press]] - narrow grip for a more compound movement.
-		- Romanian Deadlift
-		- Zercher Squats
+		- [[Lower#^308171 |Romanian Deadlift]]
+		- [[Full Body^]]
 	- ___Dumbbell___
 	    - [[Full Body#^775bc4 |Farmer’s Walk]] 
 	- __Kettlebell__
