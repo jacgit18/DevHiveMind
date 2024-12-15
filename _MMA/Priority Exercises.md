@@ -133,9 +133,9 @@ Warm up with dynamic stretch to Improve blood flow and flexibility before starti
 		- [[Upper#^238b6e |Chest/Rear Fly ]] for rear stop when both arms are straight
 		- [[Full Body#^05e3ec |Seated Cable Row]]
 		- Pulley Machine
-			- Cable Abduction
+			- Cable Balloon Abduction
 				- ![[ab.gif]]
-			- Cable Woodchopper
+			- [[Upper#^a7be5a |Cable Woodchopper]]
 			- Cable Crossover
 			- Cable Komodo chest fly
 				- ![[km.gif]]

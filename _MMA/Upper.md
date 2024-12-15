@@ -32,7 +32,7 @@ dg-publish:
 	- ![](https://www.youtube.com/watch?v=TJjRZBpY75I)
 - Cable Bicep Curl
 - Cable Tricep Pushdown
-- Cable Woodchopper
+- Cable Woodchopper ^a7be5a
 	- ![](https://www.youtube.com/watch?v=mvvu8imyMFs)
 - Lat Pulldown(Machine)
 - Single-Arm Row (**Kettlebell**)
