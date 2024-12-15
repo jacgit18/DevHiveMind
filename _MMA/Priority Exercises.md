@@ -110,6 +110,7 @@ Warm up with dynamic stretch to Improve blood flow and flexibility before starti
 - Then do exercises to build pulling power and grip for grappling:
 	- Bodyweight
 		- [[Full Body#^bb1837|Kettlebell Swing]]
+		- [[Upper#^9def13|Bottoms Up]]
 	    - Pull-Up Variations (Neutral Grip/Chin-Up Grip/Wide Grip)
 		    - ![](https://www.youtube.com/watch?v=mRy9m2Q9_1I)
 		    - ![](https://www.youtube.com/watch?v=dAScZVF5o9k)
