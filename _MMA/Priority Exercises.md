@@ -34,18 +34,17 @@ Check New Weight limits
 | ----- | --------------------------------- | ------ | --- | ---- | ---- |
 | Lower | Abductor Outer Thigh              | 100    |     | 3    | 10   |
 | Lower | Abduction Inner Thigh             | 115    |     | 3    | 10   |
-| Upper | Blink Row with individual weights | 42.5   |     | 3    | 10   |
-|       | Chest Fly                         | ??     |     | 3    | 10   |
-|       | Rear Delt Fly                     | ??     |     | 3    | 10   |
-|       | Isolated Wide Chest               | 90     |     | 3    | 10   |
-|       | Lat Pulldown                      | ??     |     | 3    | 10   |
-|       | Leg Press off Back                | 540    |     | 3    | 10   |
-|       | Seated Leg Press Far              | 150??  |     | 3    | 10   |
-|       | Seated Leg Press Close            | 110    |     | 3    | 10   |
+| Lower | Leg Press off Back                | 540    |     | 3    | 10   |
+| Lower | Leg Press Seated Close            | 110    |     | 3    | 10   |
+| Lower | Leg Press Seated Far              | 150??  |     | 3    | 10   |
 |       | Bicep Curls                       | ??     |     | 3    | 10   |
 |       | Mid Row                           | 165??  |     | 3    | 10   |
+|       | Isolated Wide Chest               | 90     |     | 3    | 10   |
+|       | Chest Fly                         | ??     |     | 3    | 10   |
+|       | Rear Delt Fly                     | ??     |     | 3    | 10   |
 |       | Chest Press                       | ??     |     | 3    | 10   |
 |       | Shoulder Press                    | ??     |     | 3    | 10   |
+| Upper | Blink Row with individual weights | 42.5   |     | 3    | 10   |
 
 | Body  | Type       | Excercise      | Weight(lb/kg) | Time      | Sets | Reps |
 | ----- | ---------- | -------------- | ------------- | --------- | ---- | ---- |
@@ -100,21 +99,22 @@ Warm up with dynamic stretch to Improve blood flow and flexibility before starti
 		- Leg Press back/seated
 3. **Rotational/Core Strength**
 - Focus on rotational movements for striking power and grappling control:
-	- __Kettlebell__
+	- ***Dumbbell***/__Kettlebell__
+		- Renegade Row
+	-  ***Medicine Ball***/__Kettlebell__
 		- Russian Twists
 		- Halos
-		- Renegade Row (Kettlebell/Dumbbell)
-	-  ***Medicine Ball***
 		- Rotational Slam
-4. **Pulling/Grip Strength**
+1. **Pulling/Grip Strength**
 - Then do exercises to build pulling power and grip for grappling:
 	- Bodyweight
-		- [[Full Body#^bb1837|Kettlebell Swing]]
-		- [[Upper#^9def13|Bottoms Up]]
 	    - Pull-Up Variations (Neutral Grip/Chin-Up Grip/Wide Grip)
 		    - ![](https://www.youtube.com/watch?v=mRy9m2Q9_1I)
 		    - ![](https://www.youtube.com/watch?v=dAScZVF5o9k)
 		    - ![](https://www.youtube.com/watch?v=djTQ1C_pvYw&list=TLPQMTQxMjIwMjQ2MGDLyOWw0w&index=2)
+	- __Kettlebell__
+		- [[Full Body#^bb1837|Kettlebell Swing]]
+		- [[Upper#^9def13|Bottoms Up]]
 	- Machine
 		- Chest/Rear Fly 
 		- Seated Cable Row
@@ -130,7 +130,7 @@ Warm up with dynamic stretch to Improve blood flow and flexibility before starti
 			- Cable Wolverine
 				- ![[unnamed.gif |Wolverine]]
 			- [[Core#^b41212|Cable Reverse Crunch]]
-5. **Cardio**
+2. **Cardio**
 - Ropes
 	- Alternating Waves
 	- Side-to-Side Waves
