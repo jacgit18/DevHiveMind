@@ -25,6 +25,7 @@ dg-publish:
 - Kettlebell Swing ^bb1837
 	- ![](https://www.youtube.com/watch?v=YSxHifyI6s8)
 - Arnold Press(_Barbell_)
+	- ![](https://www.youtube.com/watch?v=6Z15_WdXmVw&list=TLPQMTUxMjIwMjQFyJJPDyr2Nw&index=1)
 - Around the World  
     - ![Around the World](https://www.youtube.com/watch?v=N4mMVG8S5Kg)
 - Squats(**Kettlebell**/_Barbell_)
