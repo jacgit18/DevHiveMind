@@ -16,25 +16,6 @@ Relates:
 Peer Reviewed: 0
 dg-publish:
 ---
-
-## 10. Future Plans and Roadmap  
-- What are the next steps for the project?  
-- Are there specific deadlines or targets to meet?  
-- What are the long-term goals and vision for the project?  
-
-## 11. Expectations (Corporate Simping)  
-- What are the expectations for contractors in terms of performance and integration with the team?  
-- Are there opportunities for extending the contract or transitioning to a permanent role?  
-
-## 12. Tools and Resources  
-- What tools and resources will I need to use?  
-- Are there any specific systems or software I should familiarize myself with beforehand?  
-
-## 13. Challenges  
-- What are some common challenges that contractors face in this company?  
-- How can I best prepare for or address these challenges?  
-
----
 # Conversation During Interview
 
 These terms provide a broad framework to discuss an application’s lifecycle without diving into excessive detail. They are useful for asking open-ended questions to gauge where the project stands in development and sounding more competent.
@@ -131,6 +112,8 @@ These terms provide a broad framework to discuss an application’s lifecycle wi
 - Building a replacement
 
 **Questions to ask:**
+- What are the next steps for the project?  
+- What are the long-term goals and vision for the project?  
 - Are you in a sunset phase, or is the app nearing end-of-life?
 - Are you doing any decommissioning or handling deprecated code?
 - What’s the plan for transitioning users or data?

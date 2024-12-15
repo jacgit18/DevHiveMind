@@ -18,10 +18,11 @@ dg-publish:
     - Prioritize functional and foundational exercises to maximize efficiency.
     - Workout more in the winter body retains weight more.
     - Breath through exercises.
-2. **Avoid Risky Movements:**
+    - Increase sets for more gain vs more reps for more endurance.
+1. **Avoid Risky Movements:**
     - Skip upright rows due to the unnatural shoulder position.
 
-3. **Equipment Tips:**
+2. **Equipment Tips:**
     - Use **barbells** for added weight when building strength.
     - Use **dumbbells** for greater range of motion and correcting muscle imbalances.
 ## Stats
@@ -37,25 +38,27 @@ Check New Weight limits
 | Lower | Leg Press off Back                | 540    |     | 3    | 10   |
 | Lower | Leg Press Seated Close            | 110    |     | 3    | 10   |
 | Lower | Leg Press Seated Far              | 150??  |     | 3    | 10   |
-|       | Bicep Curls                       | ??     |     | 3    | 10   |
-|       | Mid Row                           | 165??  |     | 3    | 10   |
-|       | Isolated Wide Chest               | 90     |     | 3    | 10   |
-|       | Chest Fly                         | ??     |     | 3    | 10   |
-|       | Rear Delt Fly                     | ??     |     | 3    | 10   |
-|       | Chest Press                       | ??     |     | 3    | 10   |
-|       | Shoulder Press                    | ??     |     | 3    | 10   |
+| Upper | Bicep Curls                       | ??     |     | 3    | 10   |
+| Upper | Mid Row                           | 165??  |     | 3    | 10   |
+| Upper | Isolated Wide Chest               | 90     |     | 3    | 10   |
+| Upper | Chest Fly                         | ??     |     | 3    | 10   |
+| Upper | Rear Delt Fly                     | ??     |     | 3    | 10   |
+| Upper | Chest Press                       | ??     |     | 3    | 10   |
+| Upper | Shoulder Press                    | ??     |     | 3    | 10   |
 | Upper | Blink Row with individual weights | 42.5   |     | 3    | 10   |
 
 | Body  | Type       | Excercise      | Weight(lb/kg) | Time      | Sets | Reps |
 | ----- | ---------- | -------------- | ------------- | --------- | ---- | ---- |
-| Upper | Kettlebell | Halo           | 17/8          | N/A       | 3    | 10   |
-| Full  | Barbell    |                | ??            | N/A       | 3    | 10   |
-|       | CurlBar    |                | ??            | N/A       | 3    | 10   |
-| Full  | Dumbbell   | Farmer Walk    | ??            | **20**sec | 3    | N/A  |
 | Core  | Medi Ball  | Russian Twists | ??            | **20**sec | 3    | N/A  |
+| Full  | Barbell    |                | ??            | N/A       | 3    | 10   |
+| Full  | Dumbbell   | Farmer Walk    | ??            | **20**sec | 3    | N/A  |
+|       | CurlBar    |                | ??            | N/A       | 3    | 10   |
 | Lower | Rope       |                | ??            | **20**sec | 3    | 10   |
+| Upper | Kettlebell | Halo           | 17/8          | N/A       | 3    | 10   |
 |       | Jumps      |                | ??            | N/A       | 3    | 10   |
-|       | Bodyweight |                | ??            | **20**sec | 3    | 10   |
+| Upper | Bodyweight | PullUp         | ??            | N/A       | 3    | 10   |
+| Upper | Bodyweight | PullUp Neutral | ??            | N/A       | 3    | 10   |
+| Upper | Bodyweight | ChinUp         | ??            | N/A       | 3    | 10   |
 
 ### Warm-Up & Cool-Down 
 Warm up with dynamic stretch to Improve blood flow and flexibility before starting. Then cool down with a static stretch targeting major muscle groups. Basically any static stretch has a dynamic variation with movement. 
