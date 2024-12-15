@@ -14,7 +14,7 @@ dg-publish:
 # Regimen
 
 ## Best Practices
-1. **Focus on 11 Core Workouts or Stretches:**  
+1. **Focus on 15 Core Workouts or Stretches:**  
     - Prioritize functional and foundational exercises to maximize efficiency.
     - Workout more in the winter body retains weight more
 
@@ -24,8 +24,6 @@ dg-publish:
 3. **Equipment Tips:**
     - Use **barbells** for added weight when building strength.
     - Use **dumbbells** for greater range of motion and correcting muscle imbalances.
-
-
 ## Stats
 16% body fat possibly lower need to check
 Eat a minimum of 1900 calories a day 
@@ -60,7 +58,7 @@ Check New Weight limits
 | Jumps      |           |               |     |          |     | N/A       | 3    | 10   |
 | Bodyweight |           |               |     |          |     | **20**sec | 3    | 10   |
 
-
+Reduce to 15 
 ### Warm-Up & Cool-Down 
 Warm up with dynamic stretch to Improve blood flow and flexibility before starting. Then cool down with a static stretch targeting major muscle groups. Basically any static stretch has a dynamic variation with movement. 
 
@@ -69,7 +67,7 @@ Warm up with dynamic stretch to Improve blood flow and flexibility before starti
 - Hold pushup extended & unextended
 - Plyometric Plank with Shoulder Tap
 - Clap Push-Ups
-#### Top 11  Core Workouts(non Machines)
+#### Top 15  Core Workouts
 1. **Explosive Power (Plyometric & Olympic Movements)**
 - Start with these to engage fast-twitch muscle fibers and improve explosive strength:
     - Box Jumps
@@ -77,8 +75,8 @@ Warm up with dynamic stretch to Improve blood flow and flexibility before starti
     - Split Squat Jumps
     - Clean & Press (Dumbbell/Barbell) 
     
-    -  Kettlebell Snatch
-
+    - Kettlebell Snatch
+    - Kettlebell Step-Up
 
 
 2. **Strength Training (Compound Movements)**
@@ -87,7 +85,8 @@ Warm up with dynamic stretch to Improve blood flow and flexibility before starti
     - Zercher Squats
     - Farmer’s Walk (3 sets of 30-40 seconds)
     - Bench Press (_Barbell_) - narrow grip for a more compound movement.
-Cossack Squat
+    - Cossack Squat
+    - Romanian Deadlift (Barbell)
 
 3. **Rotational/Core Strength**
 - Focus on rotational movements for striking power and grappling control:
@@ -95,6 +94,7 @@ Cossack Squat
     - Renegade Row (Kettlebell/Dumbbell)
 - ***Extra***
 	- Medicine Ball Rotational Slam
+	- Russian Twists
 
 4. **Pulling/Grip Strength**
 - Conclude with exercises to build pulling power and grip for grappling:
@@ -104,7 +104,11 @@ Cossack Squat
 	    - ![](https://www.youtube.com/watch?v=dAScZVF5o9k)
 	    - ![](https://www.youtube.com/watch?v=djTQ1C_pvYw&list=TLPQMTQxMjIwMjQ2MGDLyOWw0w&index=2)
 
-
+5. **Cardio**
+- Ropes
+	- Battle Rope Slams
+	- Alternating Waves
+	- Side-to-Side Waves
 #### Top 10  Core Workouts(Machines)
 - Pulley Machine
 	- Abduction
