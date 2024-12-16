@@ -72,7 +72,20 @@ This framework balances:
 
 By integrating imitation, iteration, and innovation, I aim to make smarter, future-proof investment decisions.
 
+#todo/High/finishWatching
+- [ ] stopped at 33:39
 
-maybe Buy or invest basic business like a laundromat instead of a startup
+![](https://youtu.be/gc8VstbuOQA?si=W1MU8sb0FuqGiN-7&t=2019)
 
-there are three things you can have when going buy a business Capital,  expert
+#todo/High/refineThought/
+- [ ] maybe Buy or invest basic business like a laundromat instead of a startup
+- [ ] there are three things you can have when going buy a business Capital,  Expertise, or Time
+- [ ] leverage some who may have expertise if you dont have any 
+
+Think making money in big chunks instead of annual salary  
+  
+Can use seller financing to get around taxes when selling business also keep an LLC for tax benefits  
+  
+The buyer can use future profits to buy the business from you
+
+If a book sucks at the beginning stop reading it move on to another book and if you find a good book read it multiple times

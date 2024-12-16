@@ -11,19 +11,6 @@ Relates:
 Peer Reviewed: 0
 dg-publish:
 ---
-# Boost Your ROUNDHOUSE KICKS
-
-
-
-
-
-HighKickStretchOne
-
-
-can adjust and try higher or just trying just the leg turn part by itself  
-  
-3 to 4 times a week 3 min to 10 min
-
 
 
 

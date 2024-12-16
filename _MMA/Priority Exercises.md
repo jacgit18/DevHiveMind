@@ -72,8 +72,8 @@ Warm up with dynamic stretch to Improve blood flow and flexibility before starti
 		-![[Peek 2024-12-13 18-01.gif]]
 			try just the leg turn part
 		-![[HighKickStretchOne.gif]] 
-		- [[HighKickStretchTwo.gif]]
-		- [[HighKickStretchThree.gif]]
+		- ![[HighKickStretchTwo.gif]]
+		- ![[HighKickStretchThree.gif]]
 	- BJJ Stretches
 		- 
 	- Butterfly Stretch → Dynamic Butterfly Hip Rocks
