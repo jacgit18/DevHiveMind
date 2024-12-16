@@ -3,6 +3,7 @@ tags:
   - career
   - employment
   - companies
+  - BAU
 author:
   - jacgit18
   - chatgpt
@@ -94,11 +95,16 @@ dg-publish:
    - Prioritize applying directly to the hiring company rather than through a third-party recruiter.
    - Consider going for direct hires to streamline communication and potentially negotiate terms more effectively.
 
-##### Questions to ask immediately after Layoff 
-- When do I receive my last paycheck?  
-- Will I receive severance pay?  
-- How long will I have to exercise my stock options?  
-- Does the company offer healthcare coverage after my last day, and if so for how long?  
-- Will you provide a reference for me?  
-- How can I get copies of my performance reviews, and by when?  
-- What will happen to my 401(k)?
+##### Questions & things to do after or before Layoff 
+- Connect with colleagues by sharing contact info and/or requesting to add them on LinkedIn ask for endorsements.
+- If you are receiving severance, sign the necessary paperwork as soon as possible so that your first payment is not delayed.  
+- NB: after reading the paperwork to make sure none of the clauses are non-starters for you.  
+- While you still have access to Slack, ask your manager, previous managers, and/or colleagues you worked closely with if they would be willing to give a reference check for you for your next role.  
+- Questions to ask
+	- When do I receive my last paycheck?  
+	- Will I receive severance pay?  
+	- How long will I have to exercise my stock options?  
+	- Does the company offer healthcare coverage after my last day, and if so for how long?  
+	- Will you provide a reference for me?  
+	- How can I get copies of my performance reviews, and by when?  
+	- What will happen to my 401(k)?
