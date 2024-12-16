@@ -43,6 +43,7 @@ For more info read
 - [ ] Refine and trim cloud notes not trying to document to many stuff just key details and relationships and stuff that may actually come up.
 - [ ] dont add any more articles until todo list with links go down
 - [ ] Use Chatgpt to recommend libraries and AWS services for project but define what the project is and come up with data model.
+- [ ] Create a version of system design document but with business rules/requirements context like almost a buisness case study
 
 Throughout the designing of the system you can discuss [[Fault Tolerance]] which refers to the system's resilience against failures, errors, or faults, ensuring uninterrupted operation and maintaining user experience by reducing system downtime. It encompasses proactive measures to handle failures gracefully and sustain availability. This principle applies universally across hardware, software, networks, and systems architecture. At its essence, fault tolerance anticipates failures as inevitable and seeks to minimize their impact through proactive strategies it also applies at and between each system component. 
 
