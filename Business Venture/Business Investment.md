@@ -73,3 +73,4 @@ This framework balances:
 By integrating imitation, iteration, and innovation, I aim to make smarter, future-proof investment decisions.
 
 
+maybe Buy a laundromat

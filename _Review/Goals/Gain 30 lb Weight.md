@@ -1,6 +1,6 @@
 ---
 area: 
-Progress: 0
+Progress: 1
 Target: 20
 Start: 2024-01-01
 Deadline: 2024-12-31
