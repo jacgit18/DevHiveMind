@@ -70,12 +70,20 @@ Warm up with dynamic stretch to Improve blood flow and flexibility before starti
 - Bodyweight Static to Dynamic
 	- Striking Stretches
 		-![[Peek 2024-12-13 18-01.gif]]
-			try just the leg turn part
-		-![[HighKickStretchOne.gif]] 
-		- ![[HighKickStretchTwo.gif]]
-		- ![[HighKickStretchThree.gif]]
+		- try just the leg turn part
+			-![[HighKickStretchOne.gif]] 
+			- ![[HighKickStretchTwo.gif]]
+			- ![[HighKickStretchThree.gif]]
 	- BJJ Stretches
-		- 
+		- Bird dog
+			- ![[mn.gif]]
+		- ![](https://www.youtube.com/watch?v=PjHVshdrZM0)
+		- ![](https://www.youtube.com/watch?v=dV0847Mh6Xs)
+		- ![[o.gif]]
+		- ![[hip.gif]]![[p.gif]]
+		- ![[lung.gif]]
+		- ![[m.gif]]
+		- ![[l.gif]]
 	- Butterfly Stretch → Dynamic Butterfly Hip Rocks
 	- Cat-Cow Stretch → Dynamic Cat-Cow Transitions
 	- Lizard Pose → Dynamic Hip Flexor Swings

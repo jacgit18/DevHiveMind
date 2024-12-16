@@ -89,3 +89,60 @@ Can use seller financing to get around taxes when selling business also keep an 
 The buyer can use future profits to buy the business from you
 
 If a book sucks at the beginning stop reading it move on to another book and if you find a good book read it multiple times
+
+
+## Taxes and trust to refine 
+
+South Dakota trust  
+  
+  
+A firm manges the royal families trust  
+  
+  
+7 different household in a trust with a trustee with different access  
+  
+  
+You can set conditions in a trust where if the beneficiary of a trust isn't contributing to grow the trust then you can limit their access or what they can take out  
+  
+Like you can have a trust that buys a business and then hires the trustee and through that it would grow the business and contribute to their trust  
+  
+  
+How to avoid paying taxes on social security  
+  
+  
+Make a ira which has less limits and convert to roth ira  
+  
+Backdoor  
+  
+  
+If you already have a Roth IRA that you have contribute to for prior years but creating new Ira or 401k then use a back door for a new year where you haven't contributed to your current Roth IRA accounts from the previous year is this legal to do also is this a one-time conversion like let's say you are 30 years old and you've been contributing to a 401k or IRA for another 30 years like until you're 60 is that when you do the back door especially if you're trying to do a 100% with that conversion or is it something that you're doing frequently over time elaborate on the process  
+  
+  
+Explain taking a line of credit out on your back door Roth for intangible drilling cost elaborate more on this explain what intangible drilling costs are and how you can do this as a regular person who doesn't have nothing to do with oil  
+  
+Us energy is a company you can invest in as an example of a oil partnership other companies are inveto  
+  
+send them a check then in the second year they're convert you to a general partnership where you get dividends or also referred to as a royalty in this context 15% of this income is tax-free  
+  
+section 702 tax code  
+  
+Explain micro captive reinsurance company and fortuitous risk an example of this is warranty for something like a car or something were your dealing with micro captive  
+  
+Explain title 26  
+  
+Explain 831b plan  
+  
+  
+List tax codes relevant to know  
+  
+A buisness really need a tax strategist  
+  
+  
+Should you have separate portfolios for your assets like one specifically for bonds one specifically for stocks one specifically for ETFs Etc what are the pros and cons of doing this as opposed to just having one account where you buy all the different types of assets  
+  
+Provide example of permanent life insurance as opposed to term life insurance in the context of infinite banking with whole life insurance  
+  
+Explain the Augusta rule  
+  
+  
+Rather than spending hours combing through SEC filings and financial statements, you can describe the basics of a company and investment thesis to ChatGPT
