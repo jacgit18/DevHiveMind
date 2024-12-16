@@ -35,21 +35,21 @@ dg-publish:
 - 80 oz water
 - Check New Weight limits 
 
-| Body  | Machine                           | Weight |     | Sets | Reps |
-| ----- | --------------------------------- | ------ | --- | ---- | ---- |
-| Lower | Abductor Outer Thigh              | 100    |     | 3    | 10   |
-| Lower | Abduction Inner Thigh             | 115    |     | 3    | 10   |
-| Lower | Leg Press off Back                | 540    |     | 3    | 10   |
-| Lower | Leg Press Seated Close            | 110    |     | 3    | 10   |
-| Lower | Leg Press Seated Far              | 150??  |     | 3    | 10   |
-| Upper | Bicep Curls                       | ??     |     | 3    | 10   |
-| Upper | Mid Row                           | 165??  |     | 3    | 10   |
-| Upper | Isolated Wide Chest               | 90     |     | 3    | 10   |
-| Upper | Chest Fly                         | ??     |     | 3    | 10   |
-| Upper | Rear Delt Fly                     | ??     |     | 3    | 10   |
-| Upper | Chest Press                       | ??     |     | 3    | 10   |
-| Upper | Shoulder Press                    | ??     |     | 3    | 10   |
-| Upper | Blink Row with individual weights | 42.5   |     | 3    | 10   |
+| Body  | Machine                           | Weight | Plates#    | Sets | Reps |
+| ----- | --------------------------------- | ------ | ---------- | ---- | ---- |
+| Lower | Abductor Outer Thigh              | 100    |            | 3    | 10   |
+| Lower | Abduction Inner Thigh             | 115    |            | 3    | 10   |
+| Lower | Leg Press off Back                | 540    | 5 per side | 3    | 10   |
+| Lower | Leg Press Seated Close            | 110    |            | 3    | 10   |
+| Lower | Leg Press Seated Far              | 150??  |            | 3    | 10   |
+| Upper | Bicep Curls                       | ??     |            | 3    | 10   |
+| Upper | Mid Row                           | 165??  |            | 3    | 10   |
+| Upper | Isolated Wide Chest               | 90     |            | 3    | 10   |
+| Upper | Chest Fly                         | ??     |            | 3    | 10   |
+| Upper | Rear Delt Fly                     | ??     |            | 3    | 10   |
+| Upper | Chest Press                       | ??     |            | 3    | 10   |
+| Upper | Shoulder Press                    | ??     |            | 3    | 10   |
+| Upper | Blink Row with individual weights | 42.5   | 1 per side | 3    | 10   |
 
 | Body  | Exercise        | Type       | W(lb/kg) | AltType    | W(lb/kg) | Time      | Sets | Reps |
 | ----- | --------------- | ---------- | -------- | ---------- | -------- | --------- | ---- | ---- |
