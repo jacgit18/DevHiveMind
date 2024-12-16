@@ -68,6 +68,14 @@ dg-publish:
 ### Warm-Up & Cool-Down 
 Warm up with dynamic stretch to Improve blood flow and flexibility before starting. Then cool down with a static stretch targeting major muscle groups. Basically any static stretch has a dynamic variation with movement. 
 - Bodyweight Static to Dynamic
+	- Striking Stretches
+		-![[Peek 2024-12-13 18-01.gif]]
+			try just the leg turn part
+		-![[HighKickStretchOne.gif]] 
+		- [[HighKickStretchTwo.gif]]
+		- [[HighKickStretchThree.gif]]
+	- BJJ Stretches
+		- 
 	- Butterfly Stretch → Dynamic Butterfly Hip Rocks
 	- Cat-Cow Stretch → Dynamic Cat-Cow Transitions
 	- Lizard Pose → Dynamic Hip Flexor Swings

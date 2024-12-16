@@ -74,3 +74,5 @@ By integrating imitation, iteration, and innovation, I aim to make smarter, futu
 
 
 maybe Buy or invest basic business like a laundromat instead of a startup
+
+there are three things you can have when going buy a business Capital,  expert

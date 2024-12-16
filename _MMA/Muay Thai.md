@@ -13,22 +13,18 @@ dg-publish:
 ---
 # Boost Your ROUNDHOUSE KICKS
 
-![[Peek 2024-12-13 18-01.gif]]
 
 
 
-High kick stretch 1
 
-![[po.gif]]
+HighKickStretchOne
+
+
 can adjust and try higher or just trying just the leg turn part by itself  
   
 3 to 4 times a week 3 min to 10 min
 
-High kick stretch 2
-![[jnkn.gif]]
 
-High kick stretch 3
-![[trststs.gif]]
 
 
 
