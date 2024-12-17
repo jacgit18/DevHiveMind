@@ -76,7 +76,7 @@ The remaining **$2,000** is divided using a **70% Speculative / 30% Gold** ratio
 
 **Notes**: 
 - Speculative includes crypto investments and startup/business ventures. 
-- Stocks can encompass multiple assets like ETFs, bonds, etc.
+- Stocks can encompass multiple assets like ETFs, bonds, Option trading, etc.
 
 ---
 
