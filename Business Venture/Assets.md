@@ -39,6 +39,14 @@ Future breakdown to follow
 - 15% ETFs in terms of stock and 
 - 18% in terms of speculative this can be crypto also startup Investments then 
 - 2% gold
+
+Average median net worth for 30-year-old is $30,000  
+  
+75% tile is about above 90,000 to 120,000  
+  
+The 90% tile is 250,000
+
+after spending for necessary things like housing will be at average if you get apartment before end of 2025
 #### **Assumptions**:
 
 - **Total Budget**: $23,000
@@ -106,3 +114,4 @@ This allocation keeps **Stocks at $21,000 (91.3%)** with the remaining **$2,000*
 - **Functions and Operators**: Make use of LaTeX commands like `\frac`, `\times`, and `\approx` to properly format fractions, multiplication, and approximations.
 
 This method should ensure that your math displays properly and is easy to read in Obsidian! Let me know if you need further help with it.
+
