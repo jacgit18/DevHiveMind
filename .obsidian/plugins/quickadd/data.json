@@ -1,6 +1,62 @@
 {
-  "choices": [],
-  "macros": [],
+  "choices": [
+    {
+      "id": "e592a9ff-b5a7-4ab6-828d-31c922cf7a2e",
+      "name": "Add Exercise",
+      "type": "Macro",
+      "command": true,
+      "macroId": "370d7e1e-b31c-4f1a-b0fb-f64d9c30d534"
+    }
+  ],
+  "macros": [
+    {
+      "name": "Add Exercise",
+      "id": "370d7e1e-b31c-4f1a-b0fb-f64d9c30d534",
+      "commands": [
+        {
+          "name": "Add Exercise",
+          "type": "NestedChoice",
+          "id": "e6577ec8-43de-4ac4-ac81-a8a4ce14533a",
+          "choice": {
+            "id": "f170d935-6de6-43dd-a6b4-a7e428f58667",
+            "name": "Add Exercise",
+            "type": "Capture",
+            "command": false,
+            "appendLink": false,
+            "captureTo": "workouts/{{DATE}} {{VALUE}}",
+            "captureToActiveFile": false,
+            "createFileIfItDoesntExist": {
+              "enabled": true,
+              "createWithTemplate": true,
+              "template": "_NoteAssets/Template/exercise_log.md"
+            },
+            "format": {
+              "enabled": true,
+              "format": ""
+            },
+            "insertAfter": {
+              "enabled": false,
+              "after": "",
+              "insertAtEnd": false,
+              "considerSubsections": false,
+              "createIfNotFound": false,
+              "createIfNotFoundLocation": "top"
+            },
+            "prepend": false,
+            "task": false,
+            "openFileInNewTab": {
+              "enabled": false,
+              "direction": "vertical",
+              "focus": true
+            },
+            "openFile": false,
+            "openFileInMode": "default"
+          }
+        }
+      ],
+      "runOnStartup": false
+    }
+  ],
   "inputPrompt": "single-line",
   "devMode": false,
   "templateFolderPath": "_NoteAssets/Template",
