@@ -19,6 +19,8 @@ dg-publish:
 
 ![[Job Cycle.png]]
 > In April, when bonuses are typically distributed, individuals often reassess their positions or consider new opportunities, leading to potential changes in roles or responsibilities within the organization.
+
+Prioritize job hunting in Q1 and Q2
 ### Job Search & Interview Strategies
 1. **Understanding Job Role:**
    - When applying, inquire if the role is direct hire or contract, ensuring clarity about the nature of the position.
@@ -108,3 +110,68 @@ dg-publish:
 	- Will you provide a reference for me?  
 	- How can I get copies of my performance reviews, and by when?  
 	- What will happen to my 401(k)?
+
+## Selling Self
+Don't specify software engineer level on LinkedIn let them guess ask
+
+I focused on organizational governance, particularly in designing and implementing processes for technical bootcamps and upskilling software engineers.
+## Fake Email
+Include available times an email when emailing the job that you're trying to apply for  
+  
+  
+To make an email look like a reply, you can follow these steps:  
+  
+1. **Subject Line**: Prefix the subject with "Re:". For example, if the original email subject was "Meeting Agenda", you would use "Re: Meeting Agenda".  
+  
+2. **Greeting and Salutation**: Start your email with a greeting that acknowledges the previous conversation, such as "Hi `[Name]`,", "Hello `[Name]`,", or "Dear `[Name]`,".  
+  
+3. **Quoted Text**: Include the original message in the body of your email. This can be done by copying the original email's text and pasting it below your response. Indent this text or use a different color to make it clear it’s a quoted message.  
+  
+4. **Reply Content**: Write your reply above the quoted text. This is where you address the points or questions raised in the original email.  
+  
+5. **Formatting**: Many email clients use a vertical line to indicate quoted text. You can manually add this line by using the “>” character at the beginning of each line of the quoted text.  
+  
+6. **Signature**: End with your signature, which should be consistent with the signature you typically use in emails.  
+  
+Here’s an example structure:  
+  
+---  
+  
+**Subject:** Re: Meeting Agenda  
+  
+**Hi [Name],**  
+  
+Thank you for sending the agenda. Here are my thoughts:  
+  
+[Your response]  
+  
+---  
+  
+On [Date], at [Time], [Original Sender] wrote:  
+  
+> Hi [Your Name],  
+>  
+> Here is the agenda for the upcoming meeting:  
+>  
+> - Point 1  
+> - Point 2  
+> - Point 3  
+>  
+> Let me know if you have any questions.  
+>  
+> Best regards,  
+> [Original Sender]  
+  
+---  
+  
+By following these steps, your email will look like a reply to the original message.
+
+Example
+![[2024-12-16 23.37.27 mail.google.com e969d966655b.png]]
+
+#todo/BAU 
+- [ ] Schedule on your calendar when to call or reach out again to a recruiter who told you when can you expect to hear back about next steps in interview process as best practice for yourself.
+- [ ] Send follow up message
+	- [ ] It was great meeting you to. I really enjoyed our conversation. Let's stay in touch—I'm eager to see where our paths might cross again and what future opportunities may arise.
+	- [ ] Hello just wanted to say how It was great meeting you at the event. I really enjoyed our conversation. Let's stay in touch—I'm eager to see where our paths might cross again and what future opportunities may arise.
+	- [ ] Maybe coffee chat or ask for referral. 
