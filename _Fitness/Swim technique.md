@@ -19,5 +19,27 @@ mushroom float
 ![[bkj.gif]]
 
 Warrior lean
+![[vufu.gif]]
+
+
+practice this a little
+![[chcy.gif]]
+
+
+floor sit down
+
+![[hp9h98.gif]]
+
+back stand up
+
+![[uhu.gif]]
+
+Warrior
+![[kbubi; 1.gif]]
+
+
+sink down
+![[nbkv.gif]]
+
 
 
