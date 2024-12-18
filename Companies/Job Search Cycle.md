@@ -114,7 +114,42 @@ Prioritize job hunting in Q1 and Q2
 ## Selling Self
 Don't specify software engineer level on LinkedIn let them guess ask
 
+Make a work problem you know to talk to co worker
+
 I focused on organizational governance, particularly in designing and implementing processes for technical bootcamps and upskilling software engineers.
+
+If ask a specific technology or concept that you're not familiar with talk about other things answering the question to show off your transferable skills like oh this is a very interesting topic and Transition into talking about something similar around that topic or relating to show your transferable skills but don't say you don't know anything about or planning on it.
+
+
+Work on taking your time to think and trigger a line of thought.
+
+### Introvert skills
+1. **Highlight Your Listening Skills:**
+   “I have a strong ability to listen carefully to my colleagues and clients, which allows me to understand their needs deeply and respond thoughtfully. For instance, in my last role, I identified underlying team issues affecting a project just by paying close attention during meetings.”
+
+2. **Showcase Thoughtfulness and Preparation:**
+   “I always take the time to think before I speak, ensuring that my responses and actions are well-considered. This approach has led to successful outcomes, such as when I presented a thoroughly researched proposal that saved the company significant resources.”
+
+3. **Emphasise Your Ability to Work Independently:**
+   “I am very comfortable working independently and staying motivated without constant oversight. For example, I led a project where I managed all aspects from start to finish, resulting in a highly successful product launch.”
+
+4. **Detail Your Strength in Deep Focus:**
+   “My ability to focus deeply on tasks allows me to be highly productive and handle complex projects. In my previous job, I was able to complete a critical project ahead of schedule because I could work uninterrupted for extended periods.”
+
+5. **Mention Your Strong Writing Skills:**
+   “I excel in written communication, which is often clearer and more deliberate. At my last job, my detailed reports and documentation helped streamline processes and improve team communication significantly.”
+
+6. **Illustrate Your Collaborative Abilities:**
+   “I thrive in collaborative settings. I facilitate balanced discussions and respect diverse opinions, which helps in achieving collective goals.”
+
+7. **Present Yourself as a Problem Solver:**
+   “I am introspective and analytical, which makes me a strong problem solver. I once developed a creative solution to a recurring issue in our workflow, which improved efficiency and was adopted company-wide.”
+
+
+### Language to use
+- Domain
+- Engineering sounds harder
+
 ## Fake Email
 Include available times an email when emailing the job that you're trying to apply for  
   

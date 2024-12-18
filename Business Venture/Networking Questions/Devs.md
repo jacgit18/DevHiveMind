@@ -16,6 +16,10 @@ dg-publish:
 #todo/Questions/TopFive 
 
 
+#todo/BAU/Interview/Questions
+- [ ] Ask how do senior developers go about looking for open source projects
+
+
 
 ## Other Questions  
 use [[Industry Agnostic]] 
