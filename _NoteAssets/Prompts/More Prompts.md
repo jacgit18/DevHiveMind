@@ -12,7 +12,7 @@ Peer Reviewed: 0
 dg-publish:
 ---
 #todo/BAU/Prompts
-
+Act as expert who identify scams examine this email  
 
 1. Company Research  
   
@@ -66,4 +66,22 @@ Use chatgpt ask it to identify Design patterns and grokking patterns use cases i
 create list of industry agnostic questions that if you were at a networking event are you talking to people who can talk about what they do but since it's a bar don't really care and just give you a general idea of things have the questions be along that line where you're not to stickler professional but still loose also this is from the perspective of a software engineer
 
 
-Act as expert who identify scams examine this email  
+Certainly, here's a list of questions you could ask to assess whether the job offer is legitimate or a potential scam:  
+  
+1. Can you provide more information about the company's history, mission, and core values?  
+2. What is the company's organizational structure, and how does the remote team collaborate and communicate?  
+3. Could you share details about the team I'll be working with, including their roles and responsibilities?  
+4. Can you provide examples of recent projects or initiatives the team has worked on?  
+5. How is performance evaluated and feedback provided in a remote work environment?  
+6. What security measures are in place to protect sensitive information and ensure data privacy for remote employees?  
+7. Can you clarify the specific technologies and tools used for remote work, including communication platforms and project management systems?  
+8. What opportunities are available for professional development and advancement within the company?  
+9. Can you provide references or testimonials from current or former remote employees?  
+10. What is the onboarding process like for remote employees, and how is training conducted?  
+11. Are there any expenses or costs associated with the remote work setup or training that I should be aware of?  
+12. Can you provide a detailed breakdown of the benefits package, including health insurance coverage, retirement plans, and other perks?  
+13. What are the typical working hours and expectations for availability as a remote software engineer?  
+14. How does the company handle remote team bonding and social activities to foster a sense of community?  
+15. Can you walk me through the steps of the hiring process from this point forward, including any additional interviews or assessments?  
+  
+Asking these questions can help clarify important details about the job opportunity and provide insight into the legitimacy of the company and position.
