@@ -29,6 +29,7 @@ dg-publish:
     - Use **barbells** for added weight when building strength.
     - Use **dumbbells** for greater range of motion and correcting muscle imbalances.
     - Any **curlbar** excercise can be done with barbell
+![](https://www.youtube.com/watch?v=5Hpc8fHNG18)
 
 #todo/purchases 
 - [ ] [Neck Exercise Equipment](https://neckslevel.com/?srsltid=AfmBOop5fT_Vv8l5LRpyCbvCpA1c5eqQy_aHAuAeLX2zwNFjMtC1X-Y0)
