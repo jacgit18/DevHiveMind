@@ -15,6 +15,19 @@ Ymca
 
 phase one lesson with no gym membership discount about 250 to 300 range for 8 classes 
 
+Chelsea Parks and recreation with Pool & Gym
+
+Annual Membership Fee: $150 
+
+Six-month membership available for $75  
+  
+10% discount with IDNYC $67.50
+
+when kicking water on back you want to keep your feet under the water as opposed to when you're on your belly and kick in the water it's okay for you to have your feet coming out of the water as long as you have proper form and stuff
+
+Closed Fist Drill for Swimming
+
+
 When it comes to swimming, the type of kick you use often depends on the stroke, your goals, and the level of intensity you’re aiming for. Here's a breakdown of different swimming forms and the preferred kick patterns:  
   
 ### **Freestyle (Front Crawl)**  

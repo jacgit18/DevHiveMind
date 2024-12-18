@@ -25,6 +25,12 @@ dg-publish:
 3. **Cheap Capital and Low-Interest Rates:**
    - Loans, especially SBLOCs, provide access to cheap capital with low-interest rates.
 
+### Margin Loans
+When you need access to funds, **take out a loan** against your investments instead of selling them. Many brokerage accounts offer **margin loans** or the ability to take loans against your portfolio.
+
+- By borrowing against your investments, you avoid triggering taxable events.
+- The money you borrow is essentially using your investments as collateral, and as long as you repay the loan, you won’t incur interest charges beyond the loan terms.
+
 ### Types of Loans:
 
 1. **Personal Loans:**

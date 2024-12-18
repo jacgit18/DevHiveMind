@@ -83,7 +83,17 @@
     "#todo/dev/bau",
     "#todo/questions/topfive",
     "#todo/personal/high/dev",
-    "#todo/high/dev"
+    "#todo/high/dev",
+    "#todo/purchases",
+    "#todo/website",
+    "#todo/mma",
+    "#todo/stocks",
+    "#todo/purchases/assets",
+    "#todo/bau",
+    "#todo/high/refinethought",
+    "#todo/high/finishwatching",
+    "#todo/high/refinethought/",
+    "#todo/bau/interview/questions"
   ],
   "_hiddenTags": []
 }

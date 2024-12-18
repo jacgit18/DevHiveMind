@@ -20,12 +20,20 @@ My default state in Jujitsu is reactive focus on being more proactive also incor
 chokes to limbs to choke
 limbs to chokes to limb
 
+use and create angles
+
 x choke to triangle
 
 Fake a submission for another submission or use for a sweep 
 
 Reverse somebody's Kimura with an Armbar
 
+Avoid inverting in general bad for neck and risky in terms of punches and kicks
+
+Keep people hand low on collar  
+  
+  
+Control hands vs solving hand problems
 ## Guard Flow 
 Don't necessarily need to start in full guard also any open guard can be used to get into mission control which is when you have a leg over the back of the neck holding with the opposite side arm and into Rubber guard
 

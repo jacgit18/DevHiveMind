@@ -21,6 +21,7 @@ dg-publish:
 - Monitor risky investments after hours.
 - Bankruptcy doesn't necessarily mean loss; it can involve debt restructuring.
 - Be cautious with dividend stocks, as they can impact company profits.
+- Don't option trade on Fridays.
 
 ### Risk Tier Management:
 - Allocate 1% for risky, volatile trades.

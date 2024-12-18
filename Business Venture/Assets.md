@@ -31,6 +31,27 @@ Creating a hustle with funeral plots involves buying and selling plots for profi
 Remember, this business involves sensitive matters, so maintaining respect and professionalism is crucial.
 
 
+#todo/stocks
+- [ ] NIKE   
+- [ ] ELF
+- [ ] VOO
+- [ ] SPY
+- [ ] Capital One 
+- [ ] Sofi
+- [ ] MNDT
+- [ ] PANW
+- [ ] research current assets more
+
+#todo/purchases/assets
+- [ ] Guns appreciate in value
+- [ ] look into art
+- [ ] look into gold
+- [ ] Instead of selling your crypto for capital gains by gift cards to use on bitrefill
+- [ ] look into FHA loan
+
+#todo/purchases 
+- [ ] use vpn to get better deals on steam and airport
+ 
 ### **Updated Budget Allocation Analysis**
 2025 investment project analysis copy for the next year after in chatgpt
 Future breakdown to follow

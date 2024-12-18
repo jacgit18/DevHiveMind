@@ -29,6 +29,9 @@ dg-publish:
     - Use **barbells** for added weight when building strength.
     - Use **dumbbells** for greater range of motion and correcting muscle imbalances.
     - Any **curlbar** excercise can be done with barbell
+
+#todo/purchases 
+- [ ] [Neck Exercise Equipment](https://neckslevel.com/?srsltid=AfmBOop5fT_Vv8l5LRpyCbvCpA1c5eqQy_aHAuAeLX2zwNFjMtC1X-Y0)
 ## Stats
 - 16% body fat possibly lower need to check
 - Eat a minimum of 1900 calories a day 
@@ -177,7 +180,7 @@ Warm up with dynamic stretch to Improve blood flow and flexibility before starti
 			- Cable Floor Fly
 				- ![[fl.gif]]
 			- Cable Wolverine
-				- ![[unnamed.gif |Wolverine]]
+				- ![[_Fitness/Exercise Visuals/unnamed.gif|Wolverine]]
 			- [[Core#^b41212|Cable Reverse Crunch]]
 5. **Cardio**
 - Ropes

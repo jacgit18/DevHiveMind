@@ -116,6 +116,8 @@ Don't specify software engineer level on LinkedIn let them guess ask
 
 Make a work problem you know to talk to co worker
 
+Don't just connect leave a note when connecting on LinkedIn
+
 I focused on organizational governance, particularly in designing and implementing processes for technical bootcamps and upskilling software engineers.
 
 If ask a specific technology or concept that you're not familiar with talk about other things answering the question to show off your transferable skills like oh this is a very interesting topic and Transition into talking about something similar around that topic or relating to show your transferable skills but don't say you don't know anything about or planning on it.

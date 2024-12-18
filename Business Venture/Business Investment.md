@@ -1,5 +1,6 @@
 ---
-tags: 
+tags:
+  - podcast
 author:
   - gitUserNamePlaceHolder
 Comments: Placeholder comment any thing else you want to mention about the document.
@@ -73,9 +74,16 @@ This framework balances:
 By integrating imitation, iteration, and innovation, I aim to make smarter, future-proof investment decisions.
 
 #todo/High/finishWatching
-- [ ] stopped at 33:39
+- [ ] stopped at 33:39 for codie Sanchez podcast
+- [ ] stopped at 30:00
+- [ ] people your crazy when you start a buisness or try a specific buisness that hasnt been done before 
 
 ![](https://youtu.be/gc8VstbuOQA?si=W1MU8sb0FuqGiN-7&t=2019)
+
+
+![](https://www.youtube.com/watch?v=eTkFItOG3Kk)
+
+
 
 #todo/High/refineThought/
 - [ ] maybe Buy or invest basic business like a laundromat instead of a startup
