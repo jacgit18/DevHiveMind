@@ -30,6 +30,8 @@ dg-publish:
 - What would it be if you could change one thing about your company’s culture?
 - Could you shed light on the strengths and weaknesses of my potential future manager?
 - What teams would I interface with within this role?
+- Additionally, what are the potential implications if this role isn't filled?
+
 
 *Team Dynamics:*
 - Who was the most recent team member to receive a promotion, and what qualities contributed to their advancement?
@@ -77,6 +79,13 @@ In essence, the reverse interview not only illuminated the path towards a well-i
 - What is something you wish you knew before working here?  
 - How would you see yourself growing at this company in the next few years?  
 - What was your best moment so far at the company?  
+- What are the last three projects you've shipped? Then I asked more about one that sounded the most interesting, to get a sense of the work - this was especially helpful when talking with the engineer.
+- What are you most excited about for the next six months?
+- Assuming I joined, what advice would you give to be successful?
+- Has anyone left the team? If so, what was the reason?
+- What are things that you have seen new joiners struggle with?
+- Who did they last promote on the team, and why?
+
 
 **After the Interview:**
 - If you don't solve a problem during the interview, send a thank-you email with additional questions and a proposed solution.

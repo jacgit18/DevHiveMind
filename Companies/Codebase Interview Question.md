@@ -20,6 +20,9 @@ dg-publish:
 
 These terms provide a broad framework to discuss an application’s lifecycle without diving into excessive detail. They are useful for asking open-ended questions to gauge where the project stands in development and sounding more competent.
 
+## 0. Career Questions to ask
+- How can I be guaranteed to be involved in critical projects that are critical to the strategic future of this organization
+
 ## 1. **Foundation & Project Overview** 
 **What it means:** Establishing the groundwork or core structure of the application.  
 **Examples of activities:**
