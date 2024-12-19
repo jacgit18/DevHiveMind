@@ -16,6 +16,15 @@ dg-publish:
 #todo/Personal/Low/Dev 
 - [ ] organize these prompts
 
+
+Act as resume and ATS system expert using all this resume experience given create short summary under 7 lines of text that is SEO optimize for a software engineer jobs and the ATS system that it has to be processed through also include soft skills here is the first part of my experience wait until I say stop before generating any summary  
+  
+  
+now stop you create a summary
+
+
+
+
 Act as a senior developer create a partial skeleton of a Java assessment project to complete covering topics like Multi threading, concurrency, serialization, collections, Java system logs, annotations, and streams to complete
 
 
