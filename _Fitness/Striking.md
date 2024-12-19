@@ -40,7 +40,7 @@ Counter Striking
 - X
 	- 
 
-
+- [ ] punching between heart beats
 
 
 If you can't see the punch walk in the opposite direction
