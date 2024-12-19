@@ -21,14 +21,16 @@ dg-publish:
 1. **Focus on 30 Core Workouts:**  
     - Prioritize functional and foundational exercises to maximize efficiency.
     - Workout more in the winter body retains weight more Oct to Feb.
-    - Breath through exercises. exhale on push breath inhale on return depending on excercise.
-    - Increase sets for more gain vs more reps for more endurance. Like 3 sets of 10 reps is more slow vs 10 sets of 3 reps can be done more faster.
+    - Breath through exercises. exhale on push breath inhale on return depending on exercise.
+    - Increase sets for more gain vs more reps for more endurance. Like 3 sets of 10 reps is more slow vs 10 sets of 3 reps can be done more faster.\
+    - Vary exercise to trick body rotating exercises pick a number of exercise you want to do  and alternate the load.
 2. **Avoid Risky Movements:**
     - Skip upright rows due to the unnatural shoulder position.
 3. **Equipment Tips:**
     - Use **barbells** for added weight when building strength.
     - Use **dumbbells** for greater range of motion and correcting muscle imbalances.
-    - Any **curlbar** excercise can be done with barbell
+    - Any **curlbar** exercise can be done with barbell.
+
 ![](https://www.youtube.com/watch?v=5Hpc8fHNG18)
 
 #todo/purchases 

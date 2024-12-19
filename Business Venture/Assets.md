@@ -47,7 +47,8 @@ Remember, this business involves sensitive matters, so maintaining respect and p
 - [ ] look into art
 - [ ] look into gold
 - [ ] Instead of selling your crypto for capital gains by gift cards to use on bitrefill
-- [ ] look into FHA loan
+- [ ] Buy podcast
+
 
 #todo/purchases 
 - [ ] use vpn to get better deals on steam and airport

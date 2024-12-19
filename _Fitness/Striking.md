@@ -11,6 +11,36 @@ Relates:
 Peer Reviewed: 0
 dg-publish:
 ---
+
+Counter Striking
+
+- Opposite Side easier to step outside there lead foot
+	-  half timing disrupt flow
+	-  catch block counter
+	- roll counter dont do on same side
+		- also low hand counters can be available
+	- brushe swating the punch away
+	- slip openings for uppercuts
+	- pull
+	- step
+	-
+
+- Same Side harder to step outside lead foot
+	- Tech of resistance revist
+	- Catch jab 2
+	- Block & shoot
+	- Brush
+	- Southpaw pop down
+
+- Same Time Counters harder to throw and defend
+	- 
+	- 
+- X
+	- 
+
+
+
+
 If you can't see the punch walk in the opposite direction
 
 
