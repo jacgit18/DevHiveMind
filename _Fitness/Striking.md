@@ -13,19 +13,17 @@ dg-publish:
 ---
 Categories into sub Categories of 4
 
-
-Counter Striking
+## Counter Striking
 
 - Opposite Side easier to step outside there lead foot
 	-  half timing disrupt flow
 	-  catch block counter
 	- roll counter dont do on same side
 		- also low hand counters can be available
-	- brushe swating the punch away
+	- brush swatting the punch away
 	- slip openings for uppercuts
 	- pull
 	- step
-	-
 
 - Same Side harder to step outside lead foot
 	- Tech of resistance revist
@@ -37,8 +35,11 @@ Counter Striking
 - Same Time Counters harder to throw and defend
 	- 
 	- 
-- X
-	- 
+- Throwing Inside
+	- They get you go tight
+	- Throw with shoulder
+	- Timing
+	- Stay protected
 
 - [ ] punching between heart beats
 
