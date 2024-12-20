@@ -36,6 +36,23 @@ rice pudding c town
 Eat black beans  
 Blue bearies instead of strawberries  
 Dark chocolate
+Golden honey (Turmeric and honey) and can mix with milk
+
+Drink room temperature water and makes you less thirsty and doesn't make you likely for you to get a migraine or headache  
+  
+  
+Add cold water The microwave the rest of the water and a cup and pour the hot water into the bottle to make it more room temperature
+
+# Fish that I might be allergic to
+
+
+Anchovy
+Mackerel
+Sardine
+
+
+Fish Cooking Tip
+To get rid fishy taste or weird meat taste clean fish or meat in lime or lemon juice with milk to kill bacteria
 
 
 ## Budget 
