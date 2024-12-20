@@ -76,7 +76,6 @@
     "#todo/personal/med/dev",
     "#todo/personal/med",
     "#todo/personal/low/dev",
-    "#todo/high/buisness",
     "#todo/med/buisness",
     "#todo/low/buisness",
     "#todo/okr",
@@ -93,7 +92,9 @@
     "#todo/high/refinethought",
     "#todo/high/finishwatching",
     "#todo/high/refinethought/",
-    "#todo/bau/interview/questions"
+    "#todo/bau/interview/questions",
+    "#todo/cleanup",
+    "#todo/bau/interview"
   ],
   "_hiddenTags": []
 }
