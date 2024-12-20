@@ -32,15 +32,25 @@ Remember, this business involves sensitive matters, so maintaining respect and p
 
 
 #todo/stocks
-- [ ] NIKE   
+- [ ] NIKE 
+- [ ] WPC
+- [ ] PLD
+- [ ] METV
 - [ ] ELF
+- [ ] WELL
+- [ ] DLR
+- [ ] SCHB
+- [ ] CRIN
+- [ ] VEA
+- [ ] SCHH
 - [ ] VOO
 - [ ] SPY
 - [ ] VWO
-- [ ] Capital One 
+- [ ] VTI
+- [ ] COF
 - [ ] LQD
 - [ ] VNQ
-- [ ] Sofi
+- [ ] SOFI
 - [ ] MNDT
 - [ ] PANW
 - [ ] PCY
