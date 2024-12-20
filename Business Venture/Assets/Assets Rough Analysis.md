@@ -151,3 +151,6 @@ This allocation keeps **Stocks at $21,000 (91.3%)** with the remaining **$2,000*
 
 This method should ensure that your math displays properly and is easy to read in Obsidian! Let me know if you need further help with it.
 
+
+
+
