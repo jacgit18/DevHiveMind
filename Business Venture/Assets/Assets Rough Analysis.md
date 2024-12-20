@@ -36,10 +36,14 @@ Remember, this business involves sensitive matters, so maintaining respect and p
 - [ ] ELF
 - [ ] VOO
 - [ ] SPY
+- [ ] VWO
 - [ ] Capital One 
+- [ ] LQD
+- [ ] VNQ
 - [ ] Sofi
 - [ ] MNDT
 - [ ] PANW
+- [ ] PCY
 - [ ] research current assets more
 
 #todo/purchases/assets

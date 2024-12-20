@@ -86,7 +86,6 @@
     "#todo/purchases",
     "#todo/website",
     "#todo/mma",
-    "#todo/stocks",
     "#todo/purchases/assets",
     "#todo/bau",
     "#todo/high/refinethought",
@@ -95,7 +94,8 @@
     "#todo/bau/interview/questions",
     "#todo/cleanup",
     "#todo/bau/interview",
-    "#todo/high/buisness"
+    "#todo/high/buisness",
+    "#todo/med/medical"
   ],
   "_hiddenTags": []
 }
