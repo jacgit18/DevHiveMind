@@ -12,7 +12,7 @@ Peer Reviewed: 0
 dg-publish:
 ---
 Backstroke
-![[_Fitness/Untitled/unnamed.gif]]
+![[Backstroke.gif]]
 
 
 mushroom float
