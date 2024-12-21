@@ -12,6 +12,8 @@ Relates:
 Peer Reviewed: 0
 dg-publish:
 ---
+Optimize your financial strategy by purchasing appreciating assets, leveraging their growth to secure a loan without triggering taxes. Ensure the asset's appreciation exceeds the loan interest. Use the borrowed funds to invest or make purchases. Additionally, consider acquiring life insurance, using it as collateral to enhance your overall financial portfolio. This approach leverages the asset's growth, manages taxes, and strengthens your financial position.
+
 ## Funeral Plots
 Creating a hustle with funeral plots involves buying and selling plots for profit. Here are some steps to consider:  
   
@@ -56,6 +58,7 @@ Remember, this business involves sensitive matters, so maintaining respect and p
 - [ ] PANW
 - [ ] PCY
 - [ ] research current assets more
+- [ ] Watch out for stock ticker symbols ending in f to avoid commission on OTC STOCKS
 
 #todo/purchases/assets
 - [ ] Guns appreciate in value
@@ -69,8 +72,22 @@ Remember, this business involves sensitive matters, so maintaining respect and p
 - [ ] Buy podcast
 
 
+put somewhere 
+- [ ] Take caution with Private Equity Funds they are vampires  
+- [ ] When selling home get multiple quotes to avoid heavily advertising real estate companies. also Subprime is bad  
+Understand how the stock is performing relative to the market  
+
+
+Game plan when you want to sell set target range
+
+
+
+
 #todo/purchases 
 - [ ] use vpn to get better deals on steam and airport
+
+#todo/Personal/Low 
+- [ ] You can also look for the biggest parking lots in your area call the landlord and see if they need somebody to clean and maintain their property  
  
 ### **Updated Budget Allocation Analysis**
 2025 investment project analysis copy for the next year after in chatgpt
