@@ -24,8 +24,17 @@ Reads: 50
 Replication: 3
 Writes: 1
 Version: "2.0"
+Salary: 62,400
+Ideal Salary: 130,000
+CurrentTaxRate: 23.4%
+IdealSalaryTaxRate: "30.6"
+Days: "7"
+TotalWeeks: "52"
+WorkDays: "5"
 ---
-
+### **Rough Financial Breakdown**
+- **Margin Account:** Minimum deposit required: $2,000 if you want to short stocks (not part of the budget at the moment).
+- You can allocate a maximum of **$1,800** for meal prep, assuming bills are deferred until after June.
 
 ```dataviewjs
 // Helper function to convert bytes to a human-readable format
@@ -149,4 +158,6 @@ dv.paragraph(`**${requestPerServer.toFixed(2)}** requests per second for a singl
 const numServer = Math.ceil(readsPerSec / requestPerServer);
 dv.paragraph(`**${numServer}** servers needed`);
 ```
+
+
 
