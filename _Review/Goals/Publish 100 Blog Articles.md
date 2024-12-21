@@ -1,10 +1,10 @@
 ---
 area: 
-Progress: 1
+Progress: 100
 Target: 100
 Start: 2024-01-01
 Deadline: 2024-12-31
-banner: "https://ambcrypto.com/blog/wp-content/uploads/2023/10/real-estate-crypto-1000x600.png"
+banner: https://ambcrypto.com/blog/wp-content/uploads/2023/10/real-estate-crypto-1000x600.png
 Completed date: 
 ---
 ```meta-bind
