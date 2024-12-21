@@ -174,9 +174,14 @@ It was a cool experience because it gave me a break to really organize my though
 I also worked as a full-stack engineer at a startup that eventually got into the Google Startup Accelerator.
 
 
-
-
 Work on taking your time to think and trigger a line of thought.
+
+
+## Random put somewhere that make sense
+![https://www.youtube.com/watch?v=Mnceg6R1JMQ](https://www.youtube.com/watch?v=Mnceg6R1JMQ)
+
+
+
 
 ### Introvert skills
 1. **Highlight Your Listening Skills:**
