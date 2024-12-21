@@ -131,6 +131,12 @@ talk in project like develop testing architecture for high priority aacounts
 I focused on organizational governance, particularly in designing and implementing processes for technical bootcamps and upskilling software engineers.
 
 
+If if interviewing for another company and you tell them that you were laid off CC or previous manager who you have foster the relationship with to loop them in and they can provide positive feedback to the new hiring manager of the company you trying to interview with   
+
+You can also get copies of your performance reviews save them so you can use them as references for future hiring managers to look at
+
+
+
 Cold Call Strategy
 When initiating a cold call to inquire about a non-existent interview schedule, ensure your approach is tactful. Introduce yourself with your role and department, expressing your enthusiasm about the potential interview. Craft questions about the interview process, subtly gauging the intentions and advice offered by the person on the other end.
 
