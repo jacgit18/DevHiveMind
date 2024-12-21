@@ -85,3 +85,8 @@ Certainly, here's a list of questions you could ask to assess whether the job of
 15. Can you walk me through the steps of the hiring process from this point forward, including any additional interviews or assessments?  
   
 Asking these questions can help clarify important details about the job opportunity and provide insight into the legitimacy of the company and position.
+
+Act as a pension specialist...  
+  
+  
+Explain pension options when retiring in terms of getting money as a lump sum versus as a income
