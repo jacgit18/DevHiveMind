@@ -57,11 +57,13 @@
     "userID": "number",
     "HDHP": "number",
     "MontltyHSA": "number",
-    "AnnualHSA": "number",
+    "AnnualHSA": "text",
     "WorkDays": "number",
     "TotalWeeks": "number",
     "Days": "number",
     "IdealSalaryTaxRate": "number",
-    "CurrentTaxRate": "number"
+    "CurrentTaxRate": "number",
+    "IdealSalary": "text",
+    "Salary": "text"
   }
 }
