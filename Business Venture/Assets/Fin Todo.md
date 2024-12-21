@@ -15,7 +15,6 @@
 - [ ] Go to website like Fiverr what else Upwork fancy hands and news chat GPT to create content for customers to sell back
 - [ ] look into making money while getting audited  
 - [ ] Look for stock books  
-- [ ] Review bonds
 - [ ] Look into target day fund
 - [ ] Think about and look into businesses and industries that can't have employees exported imported or outsourced by china
 - [ ] look into leveraging a non-compete to get paid
@@ -29,7 +28,7 @@
 - [ ] tax attorney
 - [ ] attorney  
 - [ ] Search for other  type of Brokers and attorneys  
-- [ ] Why do a roth IRA conversion  
+- [x] Why do a roth IRA conversion ✅ 2024-12-21
 	[https://www.irs.gov/publications/p590b#en_US_2021_publink100089915](https://www.irs.gov/publications/p590b#en_US_2021_publink100089915)
 - [ ] Save up $5,000 to transfer to sofi savings to get their bonus to get 250  
 	[https://www.sofi.com](https://www.sofi.com/)  

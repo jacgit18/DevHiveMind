@@ -68,6 +68,8 @@ Remember, this business involves sensitive matters, so maintaining respect and p
 	- [ ] avoid shorting small companies
 - [ ] look into art
 - [ ] look into gold
+- [ ] Options
+- [ ] Bonds
 - [ ] Instead of selling your crypto for capital gains by gift cards to use on bitrefill
 - [ ] Buy podcast
 
