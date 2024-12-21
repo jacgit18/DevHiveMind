@@ -25,8 +25,10 @@ MontltyHSA: 165.38
 HDHP: 218.99
 monthlyPreTaxIncome: 4,800
 ---
-### **Rough Financial Breakdown**
-- **Margin Account:** Minimum deposit required: $2,000 if you want to short stocks (not part of the budget at the moment).
+### **Rough Financial Breakdown
+#todo/purchases/assets
+- [ ] Get a **Margin Account:** Minimum deposit required: $2,000 if you want to short stocks (not part of the budget at the moment).
+
 - You can allocate a maximum of **$1,800** for meal prep, assuming bills are deferred until after June.
 
 ```dataviewjs

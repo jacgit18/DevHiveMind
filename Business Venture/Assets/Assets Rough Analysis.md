@@ -62,10 +62,9 @@ Remember, this business involves sensitive matters, so maintaining respect and p
 
 #todo/purchases/assets
 - [ ] Guns appreciate in value
-- [ ] To short stock you need a margin account
-	- [ ] Don't do shorts with stocks that give dividends can lead to fees
-	- [ ] watch out when alot of people are shorting a stock the borrowing cost can be more then 10%
-	- [ ] avoid shorting small companies
+- [ ] Don't do shorts with stocks that give dividends can lead to fees
+- [ ] watch out when alot of people are shorting a stock the borrowing cost can be more then 10%
+- [ ] avoid shorting small companies
 - [ ] look into art
 - [ ] look into gold
 - [ ] Options
