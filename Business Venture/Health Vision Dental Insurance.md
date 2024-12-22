@@ -28,53 +28,10 @@ GU944643858
 230119-007940
 
 
+```dataviewjs 
+dv.pages("#distributedSystem") => all pages with tag 'distributedSystem'
 
+dv.pages('"AI"') => all pages from folder "AI"
 
-It seems like you're asking for different ways to represent dynamic values (DV) in a similar format to the `dv.paragraph` example you've provided. Here are a few examples that use other types of dynamic values:
-
-```dataviewjs
-    dv.list([ "Item 1", "Item 2", "Item 3" ]);
+dv.table(["ghghg", "hdhdh"])
 ```
-
-
-
-4. **Date Example:**
-    
-    ```javascript
-    dv.date(`Last updated: ${lastUpdatedDate}`);
-    ```
-    
-5. **Currency Example:**
-
-```dataviewjs
-const accountBalance = "4,800";
-const numericBalance = parseFloat(accountBalance.replace(/,/g, '')); 
-
-const formattedBalance = numericBalance.toLocaleString('en-US', { style: 'currency', currency: 'USD', minimumFractionDigits: 0, });
-
-    dv.paragraph(`Balance: $${accountBalance}`);
-```
-
-
-    
-6. **Image Example:**
-    
-    ```javascript
-    dv.image(`${imageURL}`);
-    ```
-    
-7. **Chart Example:**
-    
-    ```javascript
-    dv.chart(chartData);
-    ```
-    
-8. **Button Example:**
-    
-    ```javascript
-    dv.button('Click Me', () => { alert('Button clicked!'); });
-    ```
-    
-
-These are just examples of how you might dynamically display content in various formats using placeholders (e.g., `${variableName}`). You can adapt this structure for your specific needs based on the type of content or interaction you're looking to display or capture.
-

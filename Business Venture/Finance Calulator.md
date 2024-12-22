@@ -1,7 +1,6 @@
 ---
 excalidraw-plugin: parsed
-tags:
-  - distributedSystem
+tags: []
 author:
   - jacgit18
 Comments: Placeholder comment any thing else you want to mention about the document.
