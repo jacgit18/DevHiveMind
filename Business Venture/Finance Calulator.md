@@ -20,8 +20,8 @@ IdealSalaryTaxRate: 30.6
 Days: 7
 TotalWeeks: 52
 WorkDays: 5
-AnnualHSA: 4,300
-MontltyHSA: 165.38
+AnnualHSA: "4300"
+MonthlyHSA: 165.38
 HDHP: 218.99
 monthlyPreTaxIncome: 4,800
 ---
@@ -48,9 +48,9 @@ The 90% tile is 250,000
 
 after spending for necessary things like housing will be at average if you get apartment before end of 2025
 
-### **Payment Breakdown for Employment**
 
-- HSA and HDHP $394.60
+
+
 - **Monthly Income (Before Taxes):** $4,800
 
 - **Annual Pre-Tax Income:** $62,400 - 4,735.20 = $57,664.80
@@ -59,20 +59,25 @@ after spending for necessary things like housing will be at average if you get a
 - **Monthly Income After Insurance/Savings (Before Taxes):** $4,405.40
 - **After Taxes (Net):** $3,600.38 Update later
 
-#todo/High/Fin 
-- [ ] Finish Calculator with DataView
-
 
 ```dataviewjs
-const { monthlyPreTaxIncome: monthlyPreTaxIncome, MontltyHSA: MontltyHSA, HDHP: HDHP  } = dv.current();
+const { AnnualHSA, monthlyPreTaxIncome, MonthlyHSA, HDHP } = dv.current();
 
-    dv.list([ `**HSA:** $${MontltyHSA}`,` **HDHP(Health Insurance):** $${HDHP}` , "Item 3" ]);
+// Ensure all values are numbers to prevent type errors
+const annualHSA = Number(AnnualHSA) || 0;
+const monthlyHSA = Number(MonthlyHSA) || 0;
+const hdhp = Number(HDHP) || 0;
 
-
-dv.paragraph(` - **HDHP(Health Insurance):** $${HDHP}`);
-
+dv.header(3, "Payment Breakdown for Employment");
+dv.list([
+    `**Annual HSA Limi:** $${annualHSA}`,
+    `**HSA:** $${monthlyHSA}`,
+    `**HDHP (Health Insurance):** $${hdhp}`,
+    `**Pre-tax money total:** $${hdhp + monthlyHSA}`
+]);
 
 dv.paragraph("<br>");
+
 ```
 
 

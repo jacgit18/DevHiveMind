@@ -37,11 +37,6 @@ It seems like you're asking for different ways to represent dynamic values (DV) 
 ```
 
 
-```dataviewjs
-    dv.data([ "Item 1", "Item 2", "Item 3" ]);
-```
-
-
 
 4. **Date Example:**
     
@@ -50,10 +45,13 @@ It seems like you're asking for different ways to represent dynamic values (DV) 
     ```
     
 5. **Currency Example:**
-    
-    ```javascript
+
+```dataviewjs
+const accountBalance = 40;
     dv.currency(`Balance: $${accountBalance}`);
-    ```
+```
+
+
     
 6. **Image Example:**
     
