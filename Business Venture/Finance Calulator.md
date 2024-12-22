@@ -32,6 +32,8 @@ monthlyPreTaxIncome: 4800
 
 ```dataviewjs
 const { IdealSalary, Days, TotalWeeks, Salary, WorkDays } = dv.current();
+const { AnnualHSA, MonthlyHSA, HDHP, monthlyPreTaxIncome } = dv.current();
+const [monthlyHSA, hdhp] = [MonthlyHSA, HDHP].map(n => Number(n) || 0);
 
 // Format salary with commas for better readability
 const formatCurrency = amount => `$${parseFloat(amount).toLocaleString('en-US', { minimumFractionDigits: 0 })}`;
@@ -43,30 +45,6 @@ dv.list([
 ]);
 dv.paragraph("<br>");
 
-```
-Average median net worth for 30-year-old is $30,000  
-75% tile is about above 90,000 to 120,000  
-The 90% tile is 250,000
-
-after spending for necessary things like housing will be at average if you get apartment before end of 2025
-
-
-
-
-- **Monthly Income (Before Taxes):** $4,800
-
-- **Annual Pre-Tax Income:** $62,400 - 4,735.20 = $57,664.80
-- **Annual After-Tax Income:** 57,664.80 update later 
-
-- **Monthly Income After Insurance/Savings (Before Taxes):** $4,405.40
-- **After Taxes (Net):** $3,600.38 Update later
-
-
-```dataviewjs
-const { AnnualHSA, MonthlyHSA, HDHP, monthlyPreTaxIncome } = dv.current();
-
-const [monthlyHSA, hdhp, preTaxTotal] = [MonthlyHSA, HDHP].map(n => Number(n) || 0);
-const formatCurrency = n => n.toLocaleString('en-US', { style: 'currency', currency: 'USD', minimumFractionDigits: 2 });
 
 // Display the payment breakdown
 dv.header(3, "Payment Breakdown for Employment");
@@ -77,12 +55,23 @@ dv.list([
   `**HDHP (Health Insurance):** ${formatCurrency(hdhp)}`,
   `**Total Pre-tax Money:** ${formatCurrency(hdhp + monthlyHSA)}`
 ]);
-dv.paragraph("<br>");
-
 
 ```
+Average median net worth for 30-year-old is $30,000  
+75% tile is about above 90,000 to 120,000  
+The 90% tile is 250,000
+
+after spending for necessary things like housing will be at average if you get apartment before end of 2025
 
 
+
+
+
+- **Annual Pre-Tax Income:** $62,400 - 4,735.20 = $57,664.80
+- **Annual After-Tax Income:** 57,664.80 update later 
+
+- **Monthly Income After Insurance/Savings (Before Taxes):** $4,405.40
+- **After Taxes (Net):** $3,600.38 Update later
 
 
 ---
