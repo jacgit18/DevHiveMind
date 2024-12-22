@@ -1,6 +1,6 @@
 ---
 excalidraw-plugin: parsed
-tags: []
+tags: 
 author:
   - jacgit18
 Comments: Placeholder comment any thing else you want to mention about the document.
@@ -12,17 +12,17 @@ Relates:
 excalidraw-open-md: true
 dg-publish: 
 Version: "1.0"
-Salary: 62,400
-IdealSalary: 130,000
+Salary: 62400
+IdealSalary: 130000
 CurrentTaxRate: 23.4
 IdealSalaryTaxRate: 30.6
 Days: 7
 TotalWeeks: 52
 WorkDays: 5
-AnnualHSA: 4,300
+AnnualHSA: 4300
 MonthlyHSA: 165.38
 HDHP: 218.99
-monthlyPreTaxIncome: 4,800
+monthlyPreTaxIncome: 4800
 ---
 ### **Rough Financial Breakdown
 #todo/purchases/assets
@@ -34,7 +34,7 @@ monthlyPreTaxIncome: 4,800
 const { IdealSalary, Days, TotalWeeks, Salary, WorkDays } = dv.current();
 
 // Format salary with commas for better readability
-const formatCurrency = amount => `$${parseFloat(amount).toLocaleString('en-US', { minimumFractionDigits: 2 })}`;
+const formatCurrency = amount => `$${parseFloat(amount).toLocaleString('en-US', { minimumFractionDigits: 0 })}`;
 
 dv.paragraph(`Want to be at **${formatCurrency(IdealSalary)}** in a year, currently at **${formatCurrency(Salary)}**:`);
 dv.list([
@@ -63,17 +63,16 @@ after spending for necessary things like housing will be at average if you get a
 
 
 ```dataviewjs
-const { AnnualHSA, MonthlyHSA, HDHP } = dv.current();
+const { AnnualHSA, MonthlyHSA, HDHP, monthlyPreTaxIncome } = dv.current();
 
-// Parse and format numbers
-const numericAnnualHSA = parseFloat(AnnualHSA.replace(/,/g, '')) || 0;
 const [monthlyHSA, hdhp, preTaxTotal] = [MonthlyHSA, HDHP].map(n => Number(n) || 0);
 const formatCurrency = n => n.toLocaleString('en-US', { style: 'currency', currency: 'USD', minimumFractionDigits: 2 });
 
 // Display the payment breakdown
 dv.header(3, "Payment Breakdown for Employment");
 dv.list([
-  `**Annual HSA Limit:** ${formatCurrency(numericAnnualHSA)}`,
+  `**Monthly Pre tax income:** ${formatCurrency(monthlyPreTaxIncome)}`,
+  `**Annual HSA Limit:** ${formatCurrency(AnnualHSA)}`,
   `**Monthly HSA Contribution:** ${formatCurrency(monthlyHSA)}`,
   `**HDHP (Health Insurance):** ${formatCurrency(hdhp)}`,
   `**Total Pre-tax Money:** ${formatCurrency(hdhp + monthlyHSA)}`
