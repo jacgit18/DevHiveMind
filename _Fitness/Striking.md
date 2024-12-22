@@ -16,8 +16,9 @@ Categories into sub Categories of 4
 ## Counter Striking
 
 - Opposite Side easier to step outside there lead foot
-	-  half timing disrupt flow
-	-  catch block counter
+	- catch jab with back hand return jab 
+	- same jab but use half timing disrupt flow
+		- over or under jab
 	- roll counter dont do on same side
 		- also low hand counters can be available
 	- brush swatting the punch away
@@ -41,7 +42,9 @@ Categories into sub Categories of 4
 	- Timing
 	- Stay protected
 
-- [ ] punching between heart beats
+
+
+punching between heart beats
 
 
 If you can't see the punch walk in the opposite direction
