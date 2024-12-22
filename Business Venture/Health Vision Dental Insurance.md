@@ -1,8 +1,7 @@
 
 
 #todo/Med/Medical 
-- [ ] Get black or women doctor
-- [ ] Don't mention how much you make in therapy
+
 
 ## UnitedHealthcare UHC Balanced - $1,500 - COIE gold
 ### Medical Plan:
