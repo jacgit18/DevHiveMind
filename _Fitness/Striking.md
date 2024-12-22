@@ -15,22 +15,22 @@ Categories into sub Categories of 4
 
 ## Counter Striking
 
-- Opposite Side easier to step outside there lead foot
+- Opposite Side meaning both you people are using the opposite foot so you are left and they are right this tends  easier to step outside there lead foot
 	- catch jab with back hand return jab 
 	- same jab but use half timing disrupt flow
 		- over or under jab
 	- roll counter dont do on same side
 		- also low hand counters can be available
-	- brush swatting the punch away
+	- brush swatting the punch away with backhand or brush with lead hand then return jab, hook if tall person, uppercut if short adjust for stance accordingly
 	- slip openings for uppercuts
 	- pull
-	- step
+	- side step
 
-- Same Side harder to step outside lead foot
+- Same Side meaning your both leading with the same side foot which is  harder to step outside lead foot and also from the outside in can be perceived as the opposite stance
 	- Tech of resistance revist
 	- Catch jab 2
 	- Block & shoot
-	- Brush
+	- brush swatting the punch away with backhand or brush with lead hand then return jab, hook if tall person, uppercut if short adjust for stance accordingly
 	- Southpaw pop down
 
 - Same Time Counters harder to throw and defend
