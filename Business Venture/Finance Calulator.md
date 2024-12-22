@@ -24,7 +24,7 @@ WorkDays: 5
 AnnualHSA: 4300
 MonthlyHSA: 165.38
 HDHP: 218.99
-monthlyPreTaxIncome: 4800
+monthlyPreTaxIncome: 5200
 ---
 ### **Rough Financial Breakdown
 #todo/purchases/assets
@@ -57,13 +57,13 @@ dv.list([
 	`**HDHP (Health Insurance):** ${formatCurrency(hdhp)}`,
 	`**Total Pre-tax Money:** ${formatCurrency(hdhp + monthlyHSA)}`,
 	`**Current Monthly Pre Tax Income:** ${formatCurrency(monthlyPreTaxIncome)}`,
-	`**Monthly Income After Pre Tax Deduction:** ${formatCurrency(postDeductionIncome)}`,
+	
 
 	`**Annual Salary After Pre Tax Deduction:** ${formatCurrency(postDeductionIncome  * 12)}`,
-	
-	`**Monthly Income After Taxes:** ${formatCurrency()}`,
-	`**Annual Income After Taxes:** ${formatCurrency()}`,
+	`**Monthly Income After Pre Tax Deduction:** ${formatCurrency(postDeductionIncome)}`,
 
+	`**Annual Income After Taxes:** ${formatCurrency()}`,
+	`**Monthly Income After Taxes:** ${formatCurrency()}`,
 ]);
 
 ```
@@ -77,7 +77,7 @@ after spending for necessary things like housing will be at average if you get a
 
 
 
-- **Monthly Income After Insurance/Savings (Before Taxes):** $4,405.40
+
 - **After Taxes (Net):** $3,600.38 Update later
 
 
