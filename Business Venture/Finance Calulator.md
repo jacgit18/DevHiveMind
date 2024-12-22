@@ -81,6 +81,75 @@ after spending for necessary things like housing will be at average if you get a
 - **After Taxes (Net):** $3,600.38 Update later
 
 
+To calculate the difference in taxes between being taxed on $62,400 and $53,000, let's break it down step by step. We'll assume you're filing as a single taxpayer and use the 2024 U.S. federal tax brackets:  
+  
+2024 Federal Tax Brackets for Single Filers:  
+  
+10%: $0 – $11,000  
+  
+12%: $11,001 – $44,725  
+  
+22%: $44,726 – $95,375  
+  
+  
+  
+---  
+  
+Step 1: Taxes on $62,400  
+  
+1. First $11,000 → Taxed at 10% = $1,100  
+  
+  
+2. Next $33,725 ($44,725 - $11,000) → Taxed at 12% = $4,047  
+  
+  
+3. Remaining $17,675 ($62,400 - $44,725) → Taxed at 22% = $3,888.50  
+  
+  
+  
+Total taxes on $62,400 = $1,100 + $4,047 + $3,888.50 = $9,035.50  
+  
+  
+---  
+  
+Step 2: Taxes on $53,000  
+  
+1. First $11,000 → Taxed at 10% = $1,100  
+  
+  
+2. Next $33,725 ($44,725 - $11,000) → Taxed at 12% = $4,047  
+  
+  
+3. Remaining $8,275 ($53,000 - $44,725) → Taxed at 22% = $1,820.50  
+  
+  
+  
+Total taxes on $53,000 = $1,100 + $4,047 + $1,820.50 = $6,967.50  
+  
+  
+---  
+  
+Step 3: Difference in Taxes  
+  
+$9,035.50 (taxes on $62,400) - $6,967.50 (taxes on $53,000) = $2,068  
+  
+By reducing your taxable income from $62,400 to $53,000 (due to the $400 monthly pre-tax deduction), you save $2,068 in federal taxes annually.  
+  
+  
+---  
+  
+Effective Tax Rates  
+  
+On $62,400: $9,035.50 ÷ $62,400 = 14.5%  
+  
+On $53,000: $6,967.50 ÷ $53,000 = 13.1%  
+  
+  
+This means your effective tax rate drops by 1.4% with the pre-tax deduction.
+
+
+
+
 ---
 
 ### **Current Monthly Expenses**
