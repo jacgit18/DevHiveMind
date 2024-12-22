@@ -20,7 +20,7 @@ IdealSalaryTaxRate: 30.6
 Days: 7
 TotalWeeks: 52
 WorkDays: 5
-AnnualHSA: "4300"
+AnnualHSA: 4,300
 MonthlyHSA: 165.38
 HDHP: 218.99
 monthlyPreTaxIncome: 4,800
@@ -32,15 +32,18 @@ monthlyPreTaxIncome: 4,800
 - You can allocate a maximum of **$1,800** for meal prep, assuming bills are deferred until after June.
 
 ```dataviewjs
-const { IdealSalary: IdealSalary, Days: Days, TotalWeeks: TotalWeeks, Salary: Salary, WorkDays: WorkDays  } = dv.current();
+const { IdealSalary, Days, TotalWeeks, Salary, WorkDays } = dv.current();
 
+// Format salary with commas for better readability
+const formatCurrency = amount => `$${parseFloat(amount).toLocaleString('en-US', { minimumFractionDigits: 2 })}`;
 
-
-dv.paragraph(`Want to be at **$${IdealSalary}** in a year currently at **$${Salary}**:`);
-
-    dv.list([ `**$50** per hour, working **${Days}** days a week for **${TotalWeeks}** weeks. `, `**$62.50 to $64** per hour, working **${WorkDays}** days a week for **${TotalWeeks}** weeks.`  ]);
-
+dv.paragraph(`Want to be at **${formatCurrency(IdealSalary)}** in a year, currently at **${formatCurrency(Salary)}**:`);
+dv.list([
+  `**$50** per hour, working **${Days}** days a week for **${TotalWeeks}** weeks.`,
+  `**$62.50 to $64** per hour, working **${WorkDays}** days a week for **${TotalWeeks}** weeks.`
+]);
 dv.paragraph("<br>");
+
 ```
 Average median net worth for 30-year-old is $30,000  
 75% tile is about above 90,000 to 120,000  
@@ -61,22 +64,23 @@ after spending for necessary things like housing will be at average if you get a
 
 
 ```dataviewjs
-const { AnnualHSA, monthlyPreTaxIncome, MonthlyHSA, HDHP } = dv.current();
+const { AnnualHSA, MonthlyHSA, HDHP } = dv.current();
 
-// Ensure all values are numbers to prevent type errors
-const annualHSA = Number(AnnualHSA) || 0;
-const monthlyHSA = Number(MonthlyHSA) || 0;
-const hdhp = Number(HDHP) || 0;
+// Parse and format numbers
+const numericAnnualHSA = parseFloat(AnnualHSA.replace(/,/g, '')) || 0;
+const [monthlyHSA, hdhp, preTaxTotal] = [MonthlyHSA, HDHP].map(n => Number(n) || 0);
+const formatCurrency = n => n.toLocaleString('en-US', { style: 'currency', currency: 'USD', minimumFractionDigits: 2 });
 
+// Display the payment breakdown
 dv.header(3, "Payment Breakdown for Employment");
 dv.list([
-    `**Annual HSA Limi:** $${annualHSA}`,
-    `**HSA:** $${monthlyHSA}`,
-    `**HDHP (Health Insurance):** $${hdhp}`,
-    `**Pre-tax money total:** $${hdhp + monthlyHSA}`
+  `**Annual HSA Limit:** ${formatCurrency(numericAnnualHSA)}`,
+  `**Monthly HSA Contribution:** ${formatCurrency(monthlyHSA)}`,
+  `**HDHP (Health Insurance):** ${formatCurrency(hdhp)}`,
+  `**Total Pre-tax Money:** ${formatCurrency(hdhp + monthlyHSA)}`
 ]);
-
 dv.paragraph("<br>");
+
 
 ```
 

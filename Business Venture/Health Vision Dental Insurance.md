@@ -47,8 +47,12 @@ It seems like you're asking for different ways to represent dynamic values (DV) 
 5. **Currency Example:**
 
 ```dataviewjs
-const accountBalance = 40;
-    dv.currency(`Balance: $${accountBalance}`);
+const accountBalance = "4,800";
+const numericBalance = parseFloat(accountBalance.replace(/,/g, '')); 
+
+const formattedBalance = numericBalance.toLocaleString('en-US', { style: 'currency', currency: 'USD', minimumFractionDigits: 0, });
+
+    dv.paragraph(`Balance: $${accountBalance}`);
 ```
 
 
