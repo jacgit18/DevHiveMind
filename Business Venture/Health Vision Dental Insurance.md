@@ -28,7 +28,7 @@ GU944643858
 230119-007940
 
 
-
+## DataView Experiment
 ```dataviewjs 
 
 // Define a new book entry
@@ -59,5 +59,5 @@ let page = dv.current().file.path; let pages = new Set(); let stack = [page]; wh
 let data = dv.array(Array.from(pages)).map(p => dv.page(p));
 
 
-dv.table(["ghghg", "hdhdh"])
+// dv.table(["ghghg", "hdhdh"])
 ```
