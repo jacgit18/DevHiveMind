@@ -77,6 +77,14 @@ after spending for necessary things like housing will be at average if you get a
 
 
 
+Difference between incomes and future income for retirement after different ages  
+  
+50 40 60  
+  
+  
+Speculative on bonds and margins for now
+
+
 
 - **After Taxes (Net):** $3,600.38 Update later
 
