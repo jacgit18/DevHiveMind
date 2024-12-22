@@ -1,6 +1,8 @@
 ---
 excalidraw-plugin: parsed
-tags: 
+tags:
+  - favorite
+  - finance
 author:
   - jacgit18
 Comments: Placeholder comment any thing else you want to mention about the document.
@@ -55,7 +57,12 @@ dv.list([
 	`**HDHP (Health Insurance):** ${formatCurrency(hdhp)}`,
 	`**Total Pre-tax Money:** ${formatCurrency(hdhp + monthlyHSA)}`,
 	`**Current Monthly Pre Tax Income:** ${formatCurrency(monthlyPreTaxIncome)}`,
-	`**Current Monthly Pre Tax Income:** ${formatCurrency(postDeductionIncome)}`,
+	`**Monthly Income After Pre Tax Deduction:** ${formatCurrency(postDeductionIncome)}`,
+
+	`**Annual Salary After Pre Tax Deduction:** ${formatCurrency(postDeductionIncome  * 12)}`,
+	
+	`**Monthly Income After Taxes:** ${formatCurrency()}`,
+	`**Annual Income After Taxes:** ${formatCurrency()}`,
 
 ]);
 
@@ -69,10 +76,6 @@ after spending for necessary things like housing will be at average if you get a
 
 
 
-
-
-- **Annual Pre-Tax Income:** $62,400 - 4,735.20 = $57,664.80
-- **Annual After-Tax Income:** 57,664.80 update later 
 
 - **Monthly Income After Insurance/Savings (Before Taxes):** $4,405.40
 - **After Taxes (Net):** $3,600.38 Update later
