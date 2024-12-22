@@ -1,8 +1,3 @@
-
-
-#todo/Med/Medical 
-
-
 ## UnitedHealthcare UHC Balanced - $1,500 - COIE gold
 ### Medical Plan:
 UnitedHealthcare Choice Plus
@@ -36,4 +31,3 @@ GU944643858
 
 
 
-#favorite 
