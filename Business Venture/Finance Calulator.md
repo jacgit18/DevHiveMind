@@ -35,28 +35,32 @@ const { IdealSalary, Days, TotalWeeks, Salary, WorkDays } = dv.current();
 const { AnnualHSA, MonthlyHSA, HDHP, monthlyPreTaxIncome } = dv.current();
 const [monthlyHSA, hdhp] = [MonthlyHSA, HDHP].map(n => Number(n) || 0);
 
+const postDeductionIncome = monthlyPreTaxIncome - hdhp - monthlyHSA 
 // Format salary with commas for better readability
 const formatCurrency = amount => `$${parseFloat(amount).toLocaleString('en-US', { minimumFractionDigits: 0 })}`;
+
 
 dv.paragraph(`Want to be at **${formatCurrency(IdealSalary)}** in a year, currently at **${formatCurrency(Salary)}**:`);
 dv.list([
   `**$50** per hour, working **${Days}** days a week for **${TotalWeeks}** weeks.`,
   `**$62.50 to $64** per hour, working **${WorkDays}** days a week for **${TotalWeeks}** weeks.`
 ]);
-dv.paragraph("<br>");
 
 
 // Display the payment breakdown
 dv.header(3, "Payment Breakdown for Employment");
 dv.list([
-  `**Monthly Pre tax income:** ${formatCurrency(monthlyPreTaxIncome)}`,
-  `**Annual HSA Limit:** ${formatCurrency(AnnualHSA)}`,
-  `**Monthly HSA Contribution:** ${formatCurrency(monthlyHSA)}`,
-  `**HDHP (Health Insurance):** ${formatCurrency(hdhp)}`,
-  `**Total Pre-tax Money:** ${formatCurrency(hdhp + monthlyHSA)}`
+	`**Annual HSA Limit:** ${formatCurrency(AnnualHSA)}`,
+	`**Monthly HSA Contribution:** ${formatCurrency(monthlyHSA)}`,
+	`**HDHP (Health Insurance):** ${formatCurrency(hdhp)}`,
+	`**Total Pre-tax Money:** ${formatCurrency(hdhp + monthlyHSA)}`,
+	`**Current Monthly Pre Tax Income:** ${formatCurrency(monthlyPreTaxIncome)}`,
+	`**Current Monthly Pre Tax Income:** ${formatCurrency(postDeductionIncome)}`,
+
 ]);
 
 ```
+
 Average median net worth for 30-year-old is $30,000  
 75% tile is about above 90,000 to 120,000  
 The 90% tile is 250,000
