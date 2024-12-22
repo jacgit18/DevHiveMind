@@ -28,10 +28,16 @@ GU944643858
 230119-007940
 
 
-```dataviewjs 
-dv.pages("#distributedSystem") => all pages with tag 'distributedSystem'
 
-dv.pages('"AI"') => all pages from folder "AI"
+```dataviewjs 
+
+const table = dv.markdownTable(["File", "Genre", "Time Read", "Rating"], dv.pages("#book") .sort(b => b.rating) .map(b => [b.file.link, b.genre, b["time-read"], b.rating])) 
+
+dv.paragraph(table);
+
+
+// dv.execute("TABLE field1, field2 FROM #API");
+
 
 dv.table(["ghghg", "hdhdh"])
 ```
