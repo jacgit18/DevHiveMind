@@ -35,13 +35,14 @@ It seems like you're asking for different ways to represent dynamic values (DV) 
 ```dataviewjs
     dv.list([ "Item 1", "Item 2", "Item 3" ]);
 ```
-    
-3. **Number Example:**
-    
-    ```javascript
-    dv.number(`Total Amount: $${totalAmount}`);
-    ```
-    
+
+
+```dataviewjs
+    dv.data([ "Item 1", "Item 2", "Item 3" ]);
+```
+
+
+
 4. **Date Example:**
     
     ```javascript

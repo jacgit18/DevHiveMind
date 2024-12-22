@@ -38,9 +38,7 @@ const { IdealSalary: IdealSalary, Days: Days, TotalWeeks: TotalWeeks, Salary: Sa
 
 dv.paragraph(`Want to be at **$${IdealSalary}** in a year currently at **$${Salary}**:`);
 
-dv.paragraph(` - **$50** per hour, working **${Days}** days a week for **${TotalWeeks}** weeks. `);
-
-dv.paragraph(`- **$62.50 to $64** per hour, working **${WorkDays}** days a week for **${TotalWeeks}** weeks. `);
+    dv.list([ `**$50** per hour, working **${Days}** days a week for **${TotalWeeks}** weeks. `, `**$62.50 to $64** per hour, working **${WorkDays}** days a week for **${TotalWeeks}** weeks.`  ]);
 
 dv.paragraph("<br>");
 ```
@@ -68,8 +66,9 @@ after spending for necessary things like housing will be at average if you get a
 ```dataviewjs
 const { monthlyPreTaxIncome: monthlyPreTaxIncome, MontltyHSA: MontltyHSA, HDHP: HDHP  } = dv.current();
 
+    dv.list([ `**HSA:** $${MontltyHSA}`,` **HDHP(Health Insurance):** $${HDHP}` , "Item 3" ]);
 
-dv.paragraph(` - **HSA:** $${MontltyHSA}`);
+
 dv.paragraph(` - **HDHP(Health Insurance):** $${HDHP}`);
 
 
