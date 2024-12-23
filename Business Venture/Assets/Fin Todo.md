@@ -1,7 +1,7 @@
 # <mark style="background: #FF5582A6;">Current </mark>
 #todo/High/Fin 
 
-Categories into sub Categories of 4
+
 ## <mark style="background: #FF5582A6;">Future Fin High</mark>
 #todo/High/Fin 
 - [ ] Go to website like Fiverr what else Upwork fancy hands and news chat GPT to create content for customers to sell back

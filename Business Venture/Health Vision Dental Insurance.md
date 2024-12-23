@@ -1,3 +1,17 @@
+
+Next health insurance 
+
+Aetna 
+  
+UHC – Dental  
+UHC – Vision  
+  
+  
+Principal – 401(k)  
+  
+HealthEquity – HSA
+
+
 ## UnitedHealthcare UHC Balanced - $1,500 - COIE gold
 ### Medical Plan:
 UnitedHealthcare Choice Plus
