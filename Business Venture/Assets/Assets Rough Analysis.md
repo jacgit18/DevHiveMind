@@ -66,6 +66,7 @@ Remember, this business involves sensitive matters, so maintaining respect and p
 - [ ] watch out when alot of people are shorting a stock the borrowing cost can be more then 10%
 - [ ] avoid shorting small companies
 - [ ] look into art
+- [ ] Roll over a 401(k) into your personal Roth IRA but remember tax implication [[401K Rollover]] 
 - [ ] look into gold
 - [ ] Options
 - [ ] Bonds
