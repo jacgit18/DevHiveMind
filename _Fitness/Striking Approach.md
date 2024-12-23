@@ -32,6 +32,8 @@ Use the **UFC game** to simulate and experiment with techniques and strategies.
 - **Orthodox**: Lead with your left foot and hand. ^3c7c38
 - **Southpaw**: Lead with your right foot and hand. ^42f230
 
+**Breathing in Range**
+- Exhale sharply when engaging to stay relaxed and generate power.
 
 ### **2. Defense & Punch Timing**
 - **Defensive Hand Positioning**:
@@ -42,8 +44,10 @@ Use the **UFC game** to simulate and experiment with techniques and strategies.
 
 
 ### **3. Striking & Fainting**
-
-- Use the **teep kick** like a jab to control range or disrupt rhythm, especially against taller opponents.
+-  Taller opponents:
+	- Use the **teep kick** like a jab to control range or disrupt rhythm, especially against taller opponents.
+	- Keep your guard compact and punches sharp to close the distance effectively.
+	- Throw quick lead uppercuts.
 - **Sneaky Kicks**: Avoid telegraphing by minimizing shoulder movement.
 - **Faint Front Kick**: Lift your leg and show the sole of your foot to sell the feint, setting up other strikes.
 - **Faint Spin Kick**: faint the spin kick and doing a stance switch to a front or rear kick.
@@ -141,6 +145,7 @@ The combination of flowing and pausing keeps your opponent guessing. Use the mom
 - This occurs when you and your opponent have opposite lead feet (e.g., you're [[Striking Approach#^3c7c38 |Orthodox]], and they're [[Striking Approach#^42f230 |Southpaw]]). It's generally easier to step outside their lead foot.
 
 - Consider different Options listed here [[Orthodox vs Southpaw]]
+- Also Philly shell tends to be effective here.
 
 #### **Key Techniques**
 
@@ -160,7 +165,10 @@ The combination of flowing and pausing keeps your opponent guessing. Use the mom
         - Use an uppercut if they are shorter (adjust to stance accordingly).
 
 4. **Slip and Open**:
+    - Move your head off the centerline to avoid jabs.
     - Slip punches to create openings for uppercuts.
+    - Stay outside their lead foot to avoid their power side.
+    - Watch out for body counters or overhands.
 
 5. **Pull Counters**:
     - Lean back to pull their strike out of range and counter as they retract.
@@ -215,11 +223,60 @@ Focus on tight, compact strikes when they throw wide punches.
 
 ## Technique Mechanics
 
+**Rolling Against Hooks**
+    - Roll under hooks left or right to evade and create openings for counter-hooks.
+    - Stay mindful: you're still in range for uppercuts, so keep movements tight and controlled.
+
+**Dealing with Uppercuts**
+- **Lean In/Out**: Subtly lean forward or back to disrupt the uppercut's trajectory.
+- **Pull Back on Rear Foot**: Shift your weight onto your back foot to escape the range of uppercuts or other strikes.
+	- _Note_: Pulling back reduces your countering ability, so be ready to re-engage quickly.
+	
+ **Counter Movement**
+- Use slight leans to bait an attack but maintain readiness to move in any direction.
+- Lean opposite to the punch’s direction (e.g., dip left against a right-hand punch).
+
 - **Lead Hook Mechanics:** Rotate on your back foot when throwing a standalone lead hook. Only rotate on your front leg when throwing a combination that includes a lead hook for better weight transition.
     
 - **Pivoting Technique:** Begin with your back heel lifting and pivoting for balance, then transition by lifting your front heel to pivot for the lead hook. This ensures fluid motion and power transfer.
     
 - **Check Hook Variation:** For a check hook, pivot off your front foot without transitioning between feet. This method prioritizes speed and angle creation, allowing for a quick counter with a slight fade-away or lean to evade the opponent’s attack.
+
+### Evasive Movements Weakness
+
+#### **Pulls**
+- **Kicks**:
+    - Front kick to the body or head to maintain distance or capitalize on their backward movement.
+    - Roundhouse kick to the exposed leg or body when their weight shifts back.
+
+- **Knees**:
+    - Straight knee strike to the body or head, targeting the forward momentum as they return.
+    - Flying knee to the exposed torso, taking advantage of their open posture during the pull.
+
+- **Elbows**:
+    - Sharp elbow strike to the ribs or head when the sides are left open during the pull.
+
+#### **Rolls**
+- **Kicks**:
+    - Side kick to the body or head as the opponent rotates.
+    - Spinning hook kick to the body or head, exploiting their lateral movement.
+
+- **Knees**:
+    - Diagonal knee strike to the body or head, targeting their shift in balance during the roll.
+
+- **Elbows**:
+    - Elbow strike to the ribs or head if their rolling movement exposes their sides.
+
+#### **Slips**
+- **Kicks**:
+    - Low roundhouse kick to the supporting leg as they move laterally, disrupting their base.
+
+- **Knees**:
+    - Quick knee strike to the body or head, exploiting openings created by their slip.
+
+- **Elbows**:
+    - Elbow strike to the head or body if their slip leaves gaps in their guard or exposes their sides.
+
 
 
 ### Back Leg Thigh Block  

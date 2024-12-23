@@ -12,68 +12,6 @@ Peer Reviewed: 0
 dg-publish:
 ---
 ### Techniques to Refine Striking and Defense in Muay Thai
-
-#### Offense
-
-1. **Corkscrew Jab**
-    
-    - Rotate your fist slightly (thumb pointing down) at the moment of impact for added torque and penetration.
-2. **Breathing in Range**
-    
-    - Exhale sharply when engaging to stay relaxed and generate power.
-3. **Squared Stance**
-    
-    - Point your belly button toward the opponent to maintain balance and mobility, ideal for Muay Thai's forward pressure.
-
----
-
-#### Defense Techniques
-
-1. **Defending Jabs**
-    
-    - **Parry with Backhand**: Redirect the jab away from your centerline using your rear hand.
-    - **Catch with Jab Hand**: Use your lead hand to absorb and control the jab.
-2. **Slipping**
-    
-    - **Slipping Left or Right**: Move your head off the centerline to avoid jabs.
-    - **Slip Outside Lead Foot**: Stay outside their lead foot to avoid their power side.
-    - **Slip Inside**: Risky but opens opportunities for body counters or overhands.
-3. **Rolling Against Hooks**
-    
-    - Roll under hooks left or right to evade and create openings for counter-hooks.
-    - Stay mindful: you're still in range for uppercuts, so keep movements tight and controlled.
-4. **Dealing with Uppercuts**
-    
-    - **Lean In/Out**: Subtly lean forward or back to disrupt the uppercut's trajectory.
-    - **Pull Back on Rear Foot**: Shift your weight onto your back foot to escape the range of uppercuts or other strikes.
-        - _Note_: Pulling back reduces your countering ability, so be ready to re-engage quickly.
-5. **Counter Movement**
-    
-    - Use slight leans to bait an attack but maintain readiness to move in any direction.
-    - Lean opposite to the punch’s direction (e.g., dip left against a right-hand punch).
-
----
-
-#### Countering Taller Opponents
-
-1. **Stay Tight and Fast**
-    
-    - Keep your guard compact and punches sharp to close the distance effectively.
-2. **Leading with Uppercuts**
-    
-    - Against longer opponents, use your faster hand (usually the lead hand) to throw quick uppercuts.
-
----
-
-#### Blocking Techniques
-
-1. **Elbow Block**
-    
-    - Use your elbows to absorb and deflect punches, protecting your head and body.
-2. **Philly Shell**
-    
-    - When in an opposite stance (e.g., your right leg forward vs. their left leg forward), adopt a Philly Shell defense to minimize openings and counter effectively.
-
 ---
 
 ### Key Defensive Principles
@@ -96,15 +34,14 @@ Boxing Defensive Tactic Openings
 #### **Pulls**
 
 - **Kicks**:
-    
     - Front kick to the body or head to maintain distance or capitalize on their backward movement.
     - Roundhouse kick to the exposed leg or body when their weight shifts back.
+
 - **Knees**:
-    
     - Straight knee strike to the body or head, targeting the forward momentum as they return.
     - Flying knee to the exposed torso, taking advantage of their open posture during the pull.
+
 - **Elbows**:
-    
     - Sharp elbow strike to the ribs or head when the sides are left open during the pull.
 
 ---
@@ -112,14 +49,13 @@ Boxing Defensive Tactic Openings
 #### **Rolls**
 
 - **Kicks**:
-    
     - Side kick to the body or head as the opponent rotates.
     - Spinning hook kick to the body or head, exploiting their lateral movement.
+
 - **Knees**:
-    
     - Diagonal knee strike to the body or head, targeting their shift in balance during the roll.
+
 - **Elbows**:
-    
     - Elbow strike to the ribs or head if their rolling movement exposes their sides.
 
 ---
@@ -127,13 +63,12 @@ Boxing Defensive Tactic Openings
 #### **Slips**
 
 - **Kicks**:
-    
     - Low roundhouse kick to the supporting leg as they move laterally, disrupting their base.
+
 - **Knees**:
-    
     - Quick knee strike to the body or head, exploiting openings created by their slip.
+
 - **Elbows**:
-    
     - Elbow strike to the head or body if their slip leaves gaps in their guard or exposes their sides.
 
 ---
