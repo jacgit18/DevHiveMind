@@ -190,3 +190,53 @@ Choose based on your fighting style—aggressive and controlling fighters may fa
 
 
 
+
+
+When deciding between a narrow stance and a wide stance, range plays a crucial role in determining which is most effective. The context of your distance from your opponent greatly influences the benefits of each stance. Here's a breakdown of when to use each stance based on your range:  
+  
+Narrow Stance  
+  
+A narrow stance, where your feet are closer together, is most effective when you're fighting at long-range (outside range) or when you need to quickly move in and out of striking distance.  
+  
+When to Use a Narrow Stance:  
+  
+1. Outside Range (Long-Range Fighting): At this distance, you’re typically using straight punches, kicks, or trying to control the distance with footwork. A narrow stance is advantageous because it allows you to move quickly and adjust your positioning with minimal effort. This agility helps you stay out of your opponent's reach while maintaining the ability to close the distance or retreat as needed.  
+  
+  
+2. Entering and Exiting Range: If you're looking to dart in for quick attacks (like a jab or low kick) and then retreat back to safety, a narrow stance facilitates this type of movement. It makes it easier to advance or retreat without committing too much to one spot.  
+  
+  
+3. Setting Up Angles: When trying to create angles to outmaneuver your opponent, the narrow stance offers more freedom to pivot and shift your body to new positions. This can be useful for setting up counter-attacks or slipping your opponent’s strikes while staying light on your feet.  
+  
+  
+  
+Ideal Scenario: Use a narrow stance when you're outside your opponent's striking range or when you want to control the distance with quick and unpredictable movements.  
+  
+Wide Stance  
+  
+A wide stance is more effective when you’re fighting at close-range (inside range), where stability and power generation become more important.  
+  
+When to Use a Wide Stance:  
+  
+1. Inside Range (Close-Range Fighting): When you're up close, throwing hooks, uppercuts, elbows, or knees, a wide stance provides a solid base that helps you generate power and maintain balance. This stability is crucial when trading strikes or engaging in clinch situations.  
+  
+  
+2. Defensive Situations: If you're expecting your opponent to pressure you or if you're anticipating a takedown attempt, a wide stance helps you stay grounded. It lowers your center of gravity, making it more difficult for your opponent to off-balance or take you down.  
+  
+  
+3. Power Striking: The wide stance is ideal for maximizing the torque in your hips and legs when throwing heavy punches or kicks. It gives you the leverage needed to generate powerful strikes that can do serious damage.  
+  
+  
+  
+Ideal Scenario: Use a wide stance when you're in close-range combat, throwing powerful strikes, or defending against takedowns and aggressive pressure from your opponent.  
+  
+Summary of Range-Based Stance Usage:  
+  
+Narrow Stance: Best for outside range, mobility, quick strikes, and creating angles.  
+  
+Wide Stance: Best for inside range, stability, power generation, and close-range defense.  
+  
+  
+Transition Between Stances  
+  
+A skilled fighter will often switch between these stances dynamically based on the flow of the fight. For example, you might start with a narrow stance to engage from long-range, then transition to a wide stance as you close the distance to deliver more powerful strikes. The ability to adapt your stance based on your range and intentions is a key element of effective combat strategy.
