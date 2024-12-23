@@ -220,4 +220,4 @@ Focus on tight, compact strikes when they throw wide punches.
 
 
 ### Back Leg Thigh Block  
-![[_Fitness/unnamed.gif]]
+![[_Fitness/_Infographic/unnamed.gif]]
