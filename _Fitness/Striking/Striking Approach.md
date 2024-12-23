@@ -35,6 +35,7 @@ Use the **UFC game** to simulate and experiment with techniques and strategies.
 **Breathing in Range**
 - Exhale sharply when engaging to stay relaxed and generate power.
 
+
 ### **2. Defense & Punch Timing**
 - **Defensive Hand Positioning**:
     - Use your backhand to catch and block punches.
@@ -51,7 +52,9 @@ Use the **UFC game** to simulate and experiment with techniques and strategies.
 - **Sneaky Kicks**: Avoid telegraphing by minimizing shoulder movement.
 - **Faint Front Kick**: Lift your leg and show the sole of your foot to sell the feint, setting up other strikes.
 - **Faint Spin Kick**: faint the spin kick and doing a stance switch to a front or rear kick.
--  **Faint Body/Head**: punch or kick to the body or head then attack the other target.
+- **Faint Body/Head**: punch or kick to the body or head then attack the other target.
+
+Try and use the other [[List of Feints]]
 
 ### **4. Rhythm & Movement**
 - **Play with Rhythm**:
