@@ -86,9 +86,9 @@ OG table
 
 | Body  | Exercise       | Type      | W(lb/kg) | AltType    | Alt W(lb/kg) | Time      | Sets |
 | ----- | -------------- | --------- | -------- | ---------- | ------------ | --------- | ---- |
-| Core  | Russian Twists | Medi Ball | ??       | Kettlebell | 17/8         | **20**sec | 3    |
-| Full  | Farmer Walk    | Dumbbell  | ??       | Dumbbell   | ??           | **20**sec | 3    |
-| Lower |                | Rope      | ??       | Rope       | ??           | **20**sec | 3    |
+| Core  | Russian Twists | Medi Ball | 0        | Kettlebell | 17           | **20**sec | 3    |
+| Full  | Farmer Walk    | Dumbbell  | 0        | Dumbbell   | 0            | **20**sec | 3    |
+| Lower |                | Rope      | 0        | Rope       | 0            | **20**sec | 3    |
 ^duration
 
 ```dataviewjs
