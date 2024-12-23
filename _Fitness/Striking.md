@@ -15,6 +15,9 @@ Practice and simulate this in UFC Game
 
 ## Striking
 
+Orthodox Lead Left
+Southpaw Lead Right foot
+
 Defend punches with backhand when it comes to catching and blocking  Keeping that hand higher to the head  You can keep jab hand lower
 
 punching between heart beats
@@ -22,9 +25,9 @@ punching between heart beats
 
 ## Distance
 
+if person arm or more specifically wrist is bending during hand fight as you hand fight there to close 
 
-
-Long guard to cross guard to phily shell or modifed Philly shell using just shoulders  
+Long guard to cross guard to phily shell or modified Philly shell using just shoulders  
   
   
 Long guard at distance  
