@@ -27,11 +27,11 @@ Categories into sub Categories of 4
 	- side step
 
 - Same Side meaning your both leading with the same side foot which is  harder to step outside lead foot and also from the outside in can be perceived as the opposite stance if your not familiar with standing in front of someone like this
-	- Tech of resistance revist
-	- Catch jab 2
-	- Block & shoot
+	- Tech of resistance harder to block with lead hand leverage wise 
+	- Catch jab 2 slap down opponent jab
+	- Block & shoot to deal with leverage issue adjust and time the block bring out a little instead of a tight close arm block
 	- brush swatting the punch away with backhand or brush with lead hand then return jab, hook if tall person, uppercut if short adjust for stance accordingly
-	- Southpaw pop down
+	- Southpaw pop down hand fight controlling hands then knock them down and return or control hands and feint low or high then return shots
 
 - Same Time Counters harder to throw and defend
 	- 
