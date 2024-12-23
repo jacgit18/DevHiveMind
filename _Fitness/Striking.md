@@ -25,7 +25,9 @@ punching between heart beats
 
 ## Distance
 
-if person arm or more specifically wrist is bending during hand fight as you hand fight there to close 
+if person arm or more specifically wrist is bending during hand fight as you hand fight there to close
+
+push arm in opposite direction from the outside inward direction in hand fighting start at forearm then progress to behind elbow then shoulder even eventual pushing there chest if you arent throw yet dont push inside arm asking to get countered you can also fram arm off jab hand of opponent 
 
 Long guard to cross guard to phily shell or modified Philly shell using just shoulders  
   
