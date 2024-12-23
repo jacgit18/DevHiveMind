@@ -83,6 +83,13 @@ By continuously experimenting and refining your approach, you'll develop a dynam
 
 
 ## **Stance**
+Best stance transition order 
+Bladed > Narrow > Wide > Squared > Bladed
+Bladed <-> Narrow 
+Wide <-> Squared 
+Bladed <-> Wide
+
+use feint to make it less obvious when changing stance
 
 ### **1. Bladed vs. Squared Stance**
 - **Bladed Stance**:
@@ -92,11 +99,16 @@ By continuously experimenting and refining your approach, you'll develop a dynam
     - Best for offense, with your belly button facing the opponent.
     - Enables quicker and more powerful kicks.
     - Makes it easier to catch body kicks due to better alignment with the opponent’s strikes.
+    - Excellent for linear movements (advancing or retreating). 
+    - Provides stability, making it easier to absorb pressure or push forward aggressively.  
+    - Ideal for close-range exchanges where small steps matter.  
+    - The even stance allows for powerful, quick movements in any direction.  
 
 ### **2. Narrow vs. Wide Stance**
-- **Tight, Close-Foot Stance**:
+- **Tight Narrow, Close-Foot Stance**:
     - Harder for opponents to read your movements.
     - Enhances feints and disguises your strikes, keeping your attacks unpredictable.
+    - narrow stance is advantageous because it allows you to move quickly and adjust your positioning with minimal effort. This agility helps you stay out of your opponent's reach while maintaining the ability to close the distance or retreat as needed.  
 - **Wide Stance**:
     - Offers stability and balance for power strikes but may telegraph movements more easily.
 
