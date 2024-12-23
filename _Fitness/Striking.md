@@ -15,6 +15,8 @@ Practice and simulate this in UFC Game
 
 ## Striking
 
+there is only one person it's a mirror the person moves you move opposite direction also known as lateral inversion this also occurs when standing orthodox and Southpaw
+
 Orthodox Lead Left
 Southpaw Lead Right foot
 
@@ -27,7 +29,7 @@ punching between heart beats
 
 if person arm or more specifically wrist is bending during hand fight as you hand fight there to close
 
-push arm in opposite direction from the outside inward direction in hand fighting start at forearm then progress to behind elbow then shoulder even eventual pushing there chest if you arent throw yet dont push inside arm asking to get countered you can also fram arm off jab hand of opponent 
+push arm in opposite direction from the outside inward direction in hand fighting start at forearm then progress to behind elbow then shoulder even eventual pushing there chest if you arent throw yet dont push inside arm asking to get countered you can also frame arm off jab hand of opponent 
 
 Long guard to cross guard to phily shell or modified Philly shell using just shoulders  
   
