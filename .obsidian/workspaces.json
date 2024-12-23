@@ -7456,7 +7456,442 @@
       },
       "active": "a4aff1213ec32903",
       "mtime": "2024-12-22T09:39:01-05:00"
+    },
+    "ffsgs": {
+      "main": {
+        "id": "5324373015726ba8",
+        "type": "split",
+        "children": [
+          {
+            "id": "4b8d88700e97ac16",
+            "type": "split",
+            "children": [
+              {
+                "id": "2a290241385d0ba9",
+                "type": "tabs",
+                "children": [
+                  {
+                    "id": "4b195ff1969566c0",
+                    "type": "leaf",
+                    "state": {
+                      "type": "markdown",
+                      "state": {
+                        "file": "Business Venture/Assets/Fin Todo.md",
+                        "mode": "source",
+                        "source": false
+                      },
+                      "icon": "lucide-file",
+                      "title": "Fin Todo"
+                    }
+                  },
+                  {
+                    "id": "034a02c485a6d584",
+                    "type": "leaf",
+                    "state": {
+                      "type": "markdown",
+                      "state": {
+                        "file": "Business Venture/Assets/Assets Rough Analysis.md",
+                        "mode": "source",
+                        "source": false
+                      },
+                      "icon": "lucide-file",
+                      "title": "Assets Rough Analysis"
+                    }
+                  },
+                  {
+                    "id": "a4aff1213ec32903",
+                    "type": "leaf",
+                    "state": {
+                      "type": "markdown",
+                      "state": {
+                        "file": "Business Venture/Health Vision Dental Insurance.md",
+                        "mode": "source",
+                        "source": false
+                      },
+                      "icon": "lucide-file",
+                      "title": "Health Vision Dental Insurance"
+                    }
+                  },
+                  {
+                    "id": "a24f36ce268f81d4",
+                    "type": "leaf",
+                    "state": {
+                      "type": "markdown",
+                      "state": {
+                        "file": "_Fitness/Untitled.md",
+                        "mode": "source",
+                        "source": false
+                      },
+                      "icon": "lucide-file",
+                      "title": "Untitled"
+                    }
+                  },
+                  {
+                    "id": "24f6d3cbb9bf9d9b",
+                    "type": "leaf",
+                    "state": {
+                      "type": "markdown",
+                      "state": {
+                        "file": "_Fitness/Striking.md",
+                        "mode": "source",
+                        "source": false
+                      },
+                      "icon": "lucide-file",
+                      "title": "Striking"
+                    }
+                  },
+                  {
+                    "id": "73204eccbdc815f7",
+                    "type": "leaf",
+                    "state": {
+                      "type": "markdown",
+                      "state": {
+                        "file": "Business Venture/Finance Calulator.md",
+                        "mode": "source",
+                        "source": false
+                      },
+                      "icon": "lucide-file",
+                      "title": "Finance Calulator"
+                    }
+                  },
+                  {
+                    "id": "8bfd55f64afcf967",
+                    "type": "leaf",
+                    "state": {
+                      "type": "markdown",
+                      "state": {
+                        "file": "_Fitness/Striking.md",
+                        "mode": "preview",
+                        "source": false
+                      },
+                      "icon": "lucide-file",
+                      "title": "Striking"
+                    }
+                  }
+                ],
+                "currentTab": 6
+              },
+              {
+                "id": "e53d64e29d88ec75",
+                "type": "tabs",
+                "children": [
+                  {
+                    "id": "e7a7b303c61786dc",
+                    "type": "leaf",
+                    "state": {
+                      "type": "markdown",
+                      "state": {
+                        "file": "Business Venture/Finance Calulator.md",
+                        "mode": "source",
+                        "source": false
+                      },
+                      "icon": "lucide-file",
+                      "title": "Finance Calulator"
+                    }
+                  },
+                  {
+                    "id": "ba9119d0596f36f9",
+                    "type": "leaf",
+                    "state": {
+                      "type": "markdown",
+                      "state": {
+                        "file": "_Fitness/guards for striking.md",
+                        "mode": "preview",
+                        "source": false
+                      },
+                      "icon": "lucide-file",
+                      "title": "guards for striking"
+                    }
+                  },
+                  {
+                    "id": "be2578b7c6e6bfee",
+                    "type": "leaf",
+                    "state": {
+                      "type": "markdown",
+                      "state": {
+                        "file": "_Fitness/Untitled.md",
+                        "mode": "preview",
+                        "source": false
+                      },
+                      "icon": "lucide-file",
+                      "title": "Untitled"
+                    }
+                  },
+                  {
+                    "id": "ad0c96adac15e0c5",
+                    "type": "leaf",
+                    "state": {
+                      "type": "markdown",
+                      "state": {
+                        "file": "_Fitness/More striking to clean up.md",
+                        "mode": "preview",
+                        "source": false
+                      },
+                      "icon": "lucide-file",
+                      "title": "More striking to clean up"
+                    }
+                  },
+                  {
+                    "id": "d2cbd3259ddaff63",
+                    "type": "leaf",
+                    "state": {
+                      "type": "markdown",
+                      "state": {
+                        "file": "_Fitness/Elicitating Cross.md",
+                        "mode": "preview",
+                        "source": false
+                      },
+                      "icon": "lucide-file",
+                      "title": "Elicitating Cross"
+                    }
+                  }
+                ],
+                "currentTab": 3
+              }
+            ],
+            "direction": "horizontal"
+          }
+        ],
+        "direction": "vertical"
+      },
+      "left": {
+        "id": "25d07a4f8307e30a",
+        "type": "split",
+        "children": [
+          {
+            "id": "0ee18ba8f838b73c",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "62d2738c8ec9ae78",
+                "type": "leaf",
+                "state": {
+                  "type": "file-explorer",
+                  "state": {
+                    "sortOrder": "alphabetical"
+                  },
+                  "icon": "lucide-folder-closed",
+                  "title": "Files"
+                }
+              },
+              {
+                "id": "381a89071adb230b",
+                "type": "leaf",
+                "state": {
+                  "type": "search",
+                  "state": {
+                    "query": "tag:#📚Books",
+                    "matchingCase": false,
+                    "explainSearch": false,
+                    "collapseAll": false,
+                    "extraContext": false,
+                    "sortOrder": "alphabetical"
+                  },
+                  "icon": "lucide-search",
+                  "title": "Search"
+                }
+              },
+              {
+                "id": "e12d4e2fc2bb5ad2",
+                "type": "leaf",
+                "state": {
+                  "type": "bookmarks",
+                  "state": {},
+                  "icon": "lucide-bookmark",
+                  "title": "Bookmarks"
+                }
+              }
+            ]
+          }
+        ],
+        "direction": "horizontal",
+        "width": 366.5
+      },
+      "right": {
+        "id": "b5ea247522179402",
+        "type": "split",
+        "children": [
+          {
+            "id": "83e776fc6ed87418",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "71a2a86b225196f6",
+                "type": "leaf",
+                "state": {
+                  "type": "backlink",
+                  "state": {
+                    "file": "Home Dashboard.md",
+                    "collapseAll": false,
+                    "extraContext": false,
+                    "sortOrder": "alphabetical",
+                    "showSearch": false,
+                    "searchQuery": "",
+                    "backlinkCollapsed": false,
+                    "unlinkedCollapsed": true
+                  },
+                  "icon": "links-coming-in",
+                  "title": "Backlinks for Home Dashboard"
+                }
+              },
+              {
+                "id": "ac6ff17f4c3cbb25",
+                "type": "leaf",
+                "state": {
+                  "type": "outgoing-link",
+                  "state": {
+                    "file": "Home Dashboard.md",
+                    "linksCollapsed": false,
+                    "unlinkedCollapsed": true
+                  },
+                  "icon": "links-going-out",
+                  "title": "Outgoing links from Home Dashboard"
+                }
+              },
+              {
+                "id": "8c3a0e2d9aae24e2",
+                "type": "leaf",
+                "state": {
+                  "type": "tag",
+                  "state": {
+                    "sortOrder": "frequency",
+                    "useHierarchy": true
+                  },
+                  "icon": "lucide-tags",
+                  "title": "Tags"
+                }
+              },
+              {
+                "id": "442323dcd9dfef22",
+                "type": "leaf",
+                "state": {
+                  "type": "outline",
+                  "state": {
+                    "file": "Devops/Bash vs ZSH.md"
+                  },
+                  "icon": "lucide-list",
+                  "title": "Outline of Bash vs ZSH"
+                }
+              },
+              {
+                "id": "d64fc540a9faff39",
+                "type": "leaf",
+                "state": {
+                  "type": "Strange New Worlds",
+                  "state": {},
+                  "icon": "file-digit",
+                  "title": "Strange New Worlds"
+                }
+              },
+              {
+                "id": "7159a69de638fd57",
+                "type": "leaf",
+                "state": {
+                  "type": "podcast_player_view",
+                  "state": {},
+                  "icon": "play-circle",
+                  "title": "Podcast Player"
+                }
+              },
+              {
+                "id": "a45c6f8302090ec9",
+                "type": "leaf",
+                "state": {
+                  "type": "todo",
+                  "state": {},
+                  "icon": "checkmark",
+                  "title": "Todo List"
+                }
+              },
+              {
+                "id": "32979ed8fe27c039",
+                "type": "leaf",
+                "state": {
+                  "type": "calendar",
+                  "state": {},
+                  "icon": "calendar-with-checkmark",
+                  "title": "Calendar"
+                }
+              },
+              {
+                "id": "5493e04468ddac9b",
+                "type": "leaf",
+                "state": {
+                  "type": "all-properties",
+                  "state": {
+                    "sortOrder": "frequency",
+                    "showSearch": false,
+                    "searchQuery": ""
+                  },
+                  "icon": "lucide-archive",
+                  "title": "All properties"
+                }
+              },
+              {
+                "id": "e794f1fda7c1a1f5",
+                "type": "leaf",
+                "state": {
+                  "type": "file-properties",
+                  "state": {
+                    "file": "_Fitness/More striking to clean up.md"
+                  },
+                  "icon": "lucide-info",
+                  "title": "File properties for More striking to clean up"
+                }
+              },
+              {
+                "id": "dc7da57f42f09ec1",
+                "type": "leaf",
+                "state": {
+                  "type": "reminder-list",
+                  "state": {},
+                  "icon": "clock",
+                  "title": "Reminders"
+                }
+              }
+            ],
+            "currentTab": 9
+          }
+        ],
+        "direction": "horizontal",
+        "width": 354.5
+      },
+      "left-ribbon": {
+        "hiddenItems": {
+          "homepage:Open homepage": false,
+          "obsidian-git:Open Git source control": false,
+          "switcher:Open quick switcher": false,
+          "graph:Open graph view": false,
+          "canvas:Create new canvas": false,
+          "daily-notes:Open today's daily note": false,
+          "templates:Insert template": false,
+          "command-palette:Open command palette": false,
+          "markdown-importer:Open format converter": false,
+          "audio-recorder:Start/stop recording": false,
+          "workspaces:Manage workspace layouts": false,
+          "templater-obsidian:Templater": false,
+          "obsidian-spaced-repetition:Review flashcards": false,
+          "obsidian-rich-links:Rich Links": false,
+          "obsidian-read-it-later:ReadItLater: Save clipboard": false,
+          "darlal-switcher-plus:Open in Headings Mode": false,
+          "darlal-switcher-plus:Open Symbols for the active editor": false,
+          "obsidian-projects:Open projects": false,
+          "obsidian-kanban:Create new board": false,
+          "janitor:Janitor: scan vault": false,
+          "excel:Create Excel File": false,
+          "digitalgarden:Digital Garden Publication Center": false,
+          "obsidian-book-search-plugin:Create new book note": false,
+          "table-editor-obsidian:Advanced Tables Toolbar": false,
+          "obsidian-advanced-slides:Show Slide Preview": false,
+          "obsidian-excalidraw-plugin:Create new drawing": false,
+          "obsidian42-brat:BRAT": false,
+          "periodic-notes:Open today": false,
+          "card-board:CardBoard": false
+        }
+      },
+      "active": "ad0c96adac15e0c5",
+      "mtime": "2024-12-22T19:38:18-05:00"
     }
   },
-  "active": "ftftfuk"
+  "active": "ffsgs"
 }

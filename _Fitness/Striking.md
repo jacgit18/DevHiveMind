@@ -11,7 +11,38 @@ Relates:
 Peer Reviewed: 0
 dg-publish:
 ---
-Categories into sub Categories of 4
+
+
+## Striking
+
+Defend punches with backhand when it comes to catching and blocking  Keeping that hand higher to the head  You can keep jab hand lower
+
+punching between heart beats
+
+
+## Distance
+
+
+
+Long guard to cross guard to phily shell or modifed Philly shell using just shoulders  
+  
+  
+Long guard at distance  
+  
+Cross close range  
+  
+Philly close range
+
+
+
+Look at waist  
+  
+Established find rhythm then create angles and Fire  
+  
+Avoid or limit attacks when person is in strong stance
+
+
+If you can't see the punch walk in the opposite direction
 
 ## Counter Striking
 
@@ -34,8 +65,9 @@ Categories into sub Categories of 4
 	- Southpaw pop down hand fight controlling hands then knock them down and return or control hands and feint low or high then return shots
 
 - Same Time Counters harder to throw and defend
-	- 
-	- 
+	- block and jab same time they throw blocking and hitting them
+	- jab slip which can be susceptible to the cross
+	- show southpaw control lead hand step off to side or cross block 
 - Throwing Inside
 	- They get you go tight
 	- Throw with shoulder
@@ -44,10 +76,10 @@ Categories into sub Categories of 4
 
 
 
-punching between heart beats
 
 
-If you can't see the punch walk in the opposite direction
+
+
 
 
 Use teep kick on taller person in mauy thai
@@ -77,22 +109,12 @@ try throwing things with incomplete technique or delayed timing
   
 Tight close feet stance makes it harder for a person to read you because you can faint more and things are more hidden versus a wide stance  
   
-Throw with opponent  
+
   
 Throw outside leg when they jab  
   
 Try leaning against the wall to draw in the opponent and limit possible strikes
 
-
-
-
-
-Defend punches with backhand when it comes to catching and blocking  
-  
-Keeping that hand higher to the head  
-  
-  
-You can keep jab hand lower
 
 
 
@@ -104,132 +126,6 @@ reword this
 When landing a punch, kick, or combo, an opponent may begin to adapt by identifying and mentally analyzing what was effective and adjusting their defense accordingly. To counter this, you can stay unpredictable by observing their reactions and making subtle changes to your approach. Slightly vary the appearance of your strikes or combos, experimenting with different angles, setups, or rhythms. This keeps your attacks less predictable and forces your opponent to continuously reassess, opening new pathways to land effective strikes.
 
 
-
-
-
-Ah, got it—here’s how squared and bladed stances affect footwork in terms of blocking, head movement, and general mobility:  
-  
-  
----  
-  
-Squared Stance  
-  
-Footwork Characteristics:  
-  
-1. Forward and Backward Movement:  
-  
-Excellent for linear movements (advancing or retreating).  
-  
-Provides stability, making it easier to absorb pressure or push forward aggressively.  
-  
-  
-  
-2. Quick Direction Changes:  
-  
-With equal weight distribution, it’s easier to shift direction quickly.  
-  
-Ideal for close-range exchanges where small steps matter.  
-  
-  
-  
-3. Balanced Base for Explosiveness:  
-  
-The even stance allows for powerful, quick movements in any direction.  
-  
-  
-  
-  
-  
----  
-  
-Applications for Blocking:  
-  
-Easier to adjust your position to block or parry strikes from either side.  
-  
-Good for maintaining centerline control and cutting off angles in close quarters.  
-  
-  
-Applications for Head Movement:  
-  
-Symmetrical foot placement helps with consistent slipping and ducking.  
-  
-Keeps you balanced while incorporating feints or defensive rolls.  
-  
-  
-Applications for General Movement:  
-  
-Best for pressuring opponents or controlling space in close-range combat.  
-  
-Smooth transitions between striking, grappling, and defensive movement.  
-  
-  
-  
----  
-  
-Bladed Stance  
-  
-Footwork Characteristics:  
-  
-1. Lateral Movement:  
-  
-Optimized for side-to-side movement (circling or angling off).  
-  
-Great for evading attacks and creating openings for counters.  
-  
-  
-  
-2. In-and-Out Motion:  
-  
-Faster for darting into range and retreating.  
-  
-Works well in a hit-and-don’t-get-hit style.  
-  
-  
-  
-3. More Energy-Efficient:  
-  
-Narrower stance means less distance to travel during pivots or shifts.  
-  
-Allows for smoother, faster pivots and weight transfers.  
-  
-  
-  
-  
-  
----  
-  
-Applications for Blocking:  
-  
-Makes it easier to deflect strikes with subtle shifts of the lead foot or torso.  
-  
-Angling the stance reduces your target area, forcing your opponent to overcommit.  
-  
-  
-Applications for Head Movement:  
-  
-Encourages angling off while slipping, putting you in a position to counter.  
-  
-The narrow stance supports leaning backward to avoid attacks without losing balance.  
-  
-  
-Applications for General Movement:  
-  
-Ideal for maintaining range against aggressive opponents.  
-  
-Allows you to pivot off the lead foot and create advantageous angles.  
-  
-  
-  
----  
-  
-Summary  
-  
-Squared Stance: Prioritizes stability, pressure, and close-range control.  
-  
-Bladed Stance: Focuses on speed, range control, and angular movement.  
-  
-  
-Choose based on your fighting style—aggressive and controlling fighters may favor squared stances, while evasive or counter-strikers benefit more from bladed stances.
 
 
 
@@ -247,24 +143,6 @@ Or you can do a check hook were you rotate off of the front foot without doing t
 
 
 
-
-
-Long guard to cross guard to phily shell or modifed Philly shell using just shoulders  
-  
-  
-Long guard at distance  
-  
-Cross close range  
-  
-Philly close range
-
-
-
-Look at waist  
-  
-Established find rhythm then create angles and Fire  
-  
-Avoid or limit attacks when person is in strong stance
 
 
 
