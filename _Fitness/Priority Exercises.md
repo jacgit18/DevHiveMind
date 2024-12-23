@@ -217,7 +217,7 @@ Warm up with dynamic stretch to Improve blood flow and flexibility before starti
 	- Machine(Rehab) 
 		- [[Upper#^238b6e |Chest/Rear Fly ]] for rear stop when both arms are straight
 		- [[Full Body#^05e3ec |Seated Cable Row]]
-		- Pulley Machine
+		- Pulley Machine can use [[Tower 200.pdf |Tower 200]]
 			- Cable Balloon Abduction
 				- ![[ab.gif]]
 			- [[Upper#^a7be5a |Cable Woodchopper]]
