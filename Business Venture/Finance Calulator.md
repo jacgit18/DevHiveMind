@@ -97,7 +97,7 @@ Difference between incomes and future income for retirement after different ages
 50 40 60  
   
   
-Speculative on bonds and margins for now
+Speculative on bonds and margins for now 
 
 
 
