@@ -11,7 +11,7 @@ Relates:
 Peer Reviewed: 0
 dg-publish:
 ---
-
+Practice and simulate this in UFC Game 
 
 ## Striking
 
