@@ -56,21 +56,26 @@ dg-publish:
 | Upper | Chest Press                       | ??     |            | 3    | 10   |
 | Upper | Shoulder Press                    | ??     |            | 3    | 10   |
 | Upper | Blink Row with individual weights | 42.5   | 1 per side | 3    | 10   |
+^machine
 
-| Body  | Exercise        | Type       | W(lb/kg) | AltType    | W(lb/kg) | Time      | Sets | Reps |
-| ----- | --------------- | ---------- | -------- | ---------- | -------- | --------- | ---- | ---- |
-| Core  | Russian Twists  | Medi Ball  | ??       | Kettlebell | 17/8     | **20**sec | 3    | N/A  |
-| Full  | Farmer Walk     | Dumbbell   | ??       | Dumbbell   | ??       | **20**sec | 3    | N/A  |
-| Upper |                 | CurlBar    | ??       | CurlBar    | ??       | N/A       | 3    | 10   |
-| Lower |                 | Rope       | ??       | Rope       | ??       | **20**sec | 3    | 10   |
-| Lower | Zercher Squat   | Barbell    | ??       | N/A        | N/A      | N/A       | 3    | 10   |
-| Upper | Halo lunge      | Kettlebell | 17/8     | N/A        | N/A      | N/A       | 8    | 2    |
-|       |                 | Jumps      | ??       | Jumps      | ??       | N/A       | 3    | 10   |
-| Upper | PullUp          | Bodyweight | ??       | Bodyweight | ??       | N/A       | 3    | 10   |
-| Upper | PullUp Neutral  | Bodyweight | ??       | Bodyweight | ??       | N/A       | 3    | 10   |
-| Upper | ChinUp          | Bodyweight | ??       | Bodyweight | ??       | N/A       | 3    | 10   |
-| Upper | SingleArm Press | Kettlebell | 17/8     |            |          |           |      |      |
+| Body  | Exercise        | Type       | W(lb/kg) | AltType    | Alt W(lb/kg) | Sets | Reps |
+| ----- | --------------- | ---------- | -------- | ---------- | ------------ | ---- | ---- |
+| Upper |                 | CurlBar    | ??       | CurlBar    | ??           | 3    | 10   |
+| Lower | Zercher Squat   | Barbell    | ??       | N/A        | N/A          | 3    | 10   |
+| Upper | Halo lunge      | Kettlebell | 17/8     | N/A        | N/A          | 8    | 2    |
+|       |                 | Jumps      | ??       | Jumps      | ??           | 3    | 10   |
+| Upper | PullUp          | Bodyweight | ??       | Bodyweight | ??           | 3    | 10   |
+| Upper | PullUp Neutral  | Bodyweight | ??       | Bodyweight | ??           | 3    | 10   |
+| Upper | ChinUp          | Bodyweight | ??       | Bodyweight | ??           | 3    | 10   |
+| Upper | SingleArm Press | Kettlebell | 17/8     |            |              |      |      |
+^freeweight
 
+| Body  | Exercise       | Type      | W(lb/kg) | AltType    | Alt W(lb/kg) | Time      | Sets | Reps |
+| ----- | -------------- | --------- | -------- | ---------- | ------------ | --------- | ---- | ---- |
+| Core  | Russian Twists | Medi Ball | ??       | Kettlebell | 17/8         | **20**sec | 3    | N/A  |
+| Full  | Farmer Walk    | Dumbbell  | ??       | Dumbbell   | ??           | **20**sec | 3    | N/A  |
+| Lower |                | Rope      | ??       | Rope       | ??           | **20**sec | 3    | 10   |
+^duration
 
 ```dataviewjs
 let pages = dv.pages("#workouts").where(b => b.date_of_workout >= DateTime.now().minus({weeks:1})).groupBy(b => b.date_of_workout)
@@ -91,8 +96,10 @@ color purple
 ```
 ^button-l21b
 
+#todo/Personal/High
+- [ ] try creating chart from table 
 
-try creating chart from table 
+![](https://www.youtube.com/watch?v=djj7QXZAIjM)
 
 
 ```chart
