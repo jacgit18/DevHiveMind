@@ -85414,6 +85414,38 @@ var init_outputs2 = __esm({
   }
 });
 
+// node_modules/@langchain/core/dist/documents/document.js
+var Document2;
+var init_document = __esm({
+  "node_modules/@langchain/core/dist/documents/document.js"() {
+    Document2 = class {
+      constructor(fields) {
+        Object.defineProperty(this, "pageContent", {
+          enumerable: true,
+          configurable: true,
+          writable: true,
+          value: void 0
+        });
+        Object.defineProperty(this, "metadata", {
+          enumerable: true,
+          configurable: true,
+          writable: true,
+          value: void 0
+        });
+        Object.defineProperty(this, "id", {
+          enumerable: true,
+          configurable: true,
+          writable: true,
+          value: void 0
+        });
+        this.pageContent = fields.pageContent !== void 0 ? fields.pageContent.toString() : "";
+        this.metadata = fields.metadata ?? {};
+        this.id = fields.id;
+      }
+    };
+  }
+});
+
 // (disabled):crypto
 var require_crypto2 = __commonJS({
   "(disabled):crypto"() {
@@ -91968,38 +92000,6 @@ var require_crypto_js = __commonJS({
     })(exports, function(CryptoJS) {
       return CryptoJS;
     });
-  }
-});
-
-// node_modules/@langchain/core/dist/documents/document.js
-var Document2;
-var init_document = __esm({
-  "node_modules/@langchain/core/dist/documents/document.js"() {
-    Document2 = class {
-      constructor(fields) {
-        Object.defineProperty(this, "pageContent", {
-          enumerable: true,
-          configurable: true,
-          writable: true,
-          value: void 0
-        });
-        Object.defineProperty(this, "metadata", {
-          enumerable: true,
-          configurable: true,
-          writable: true,
-          value: void 0
-        });
-        Object.defineProperty(this, "id", {
-          enumerable: true,
-          configurable: true,
-          writable: true,
-          value: void 0
-        });
-        this.pageContent = fields.pageContent !== void 0 ? fields.pageContent.toString() : "";
-        this.metadata = fields.metadata ?? {};
-        this.id = fields.id;
-      }
-    };
   }
 });
 
@@ -115107,6 +115107,7 @@ var EmbeddingModelProviders = /* @__PURE__ */ ((EmbeddingModelProviders2) => {
   EmbeddingModelProviders2["GOOGLE"] = "google";
   EmbeddingModelProviders2["AZURE_OPENAI"] = "azure_openai";
   EmbeddingModelProviders2["OLLAMA"] = "ollama";
+  EmbeddingModelProviders2["LM_STUDIO"] = "lm-studio";
   EmbeddingModelProviders2["OPENAI_FORMAT"] = "3rd party (openai-format)";
   return EmbeddingModelProviders2;
 })(EmbeddingModelProviders || {});
@@ -115217,6 +115218,7 @@ var DEFAULT_SETTINGS = {
   embeddingRequestsPerSecond: 10,
   disableIndexOnMobile: true,
   showSuggestedPrompts: true,
+  numPartitions: 1,
   enabledCommands: {
     [COMMAND_IDS.FIX_GRAMMAR]: {
       enabled: true,
@@ -116455,12 +116457,14 @@ async function safeFetch(url, options) {
     delete newBody["frequency_penalty"];
     options.body = JSON.stringify(newBody);
   }
+  const method = options.method?.toLowerCase() || "post";
+  const methodsWithBody = ["post", "put", "patch"];
   const response = await (0, import_obsidian2.requestUrl)({
     url,
     contentType: "application/json",
     headers: options.headers,
-    method: options.method,
-    ...options.method === "POST" && { body: options.body?.toString() }
+    method,
+    ...methodsWithBody.includes(method) && { body: options.body?.toString() }
   });
   return {
     ok: response.status >= 200 && response.status < 300,
@@ -116665,7 +116669,7 @@ var ToolManager = class {
 };
 
 // src/LLMProviders/chainRunner.ts
-var import_obsidian7 = require("obsidian");
+var import_obsidian8 = require("obsidian");
 
 // src/error.ts
 var CustomError = class extends Error {
@@ -129883,12 +129887,14 @@ Object.defineProperty(DallEAPIWrapper, "toolName", {
 });
 
 // src/LLMProviders/embeddingManager.ts
+var import_obsidian5 = require("obsidian");
 var EMBEDDING_PROVIDER_CONSTRUCTORS = {
   ["openai" /* OPENAI */]: OpenAIEmbeddings,
   ["cohereai" /* COHEREAI */]: CohereEmbeddings,
   ["google" /* GOOGLE */]: GoogleGenerativeAIEmbeddings,
   ["azure_openai" /* AZURE_OPENAI */]: OpenAIEmbeddings,
   ["ollama" /* OLLAMA */]: OllamaEmbeddings,
+  ["lm-studio" /* LM_STUDIO */]: OpenAIEmbeddings,
   ["3rd party (openai-format)" /* OPENAI_FORMAT */]: OpenAIEmbeddings
 };
 var EmbeddingManager = class {
@@ -129899,6 +129905,7 @@ var EmbeddingManager = class {
       ["google" /* GOOGLE */]: () => getSettings().googleApiKey,
       ["azure_openai" /* AZURE_OPENAI */]: () => getSettings().azureOpenAIApiKey,
       ["ollama" /* OLLAMA */]: () => "default-key",
+      ["lm-studio" /* LM_STUDIO */]: () => "default-key",
       ["3rd party (openai-format)" /* OPENAI_FORMAT */]: () => ""
     };
     this.initialize();
@@ -130027,6 +130034,14 @@ var EmbeddingManager = class {
         model: modelName,
         truncate: true
       },
+      ["lm-studio" /* LM_STUDIO */]: {
+        modelName,
+        openAIApiKey: getDecryptedKey(customModel.apiKey || "default-key"),
+        configuration: {
+          baseURL: customModel.baseUrl || "http://localhost:1234/v1",
+          fetch: customModel.enableCors ? safeFetch : void 0
+        }
+      },
       ["3rd party (openai-format)" /* OPENAI_FORMAT */]: {
         modelName,
         openAIApiKey: getDecryptedKey(customModel.apiKey || ""),
@@ -130040,47 +130055,132 @@ var EmbeddingManager = class {
     const selectedProviderConfig = providerConfig[customModel.provider] || {};
     return { ...baseConfig, ...selectedProviderConfig };
   }
+  async ping(model) {
+    const tryPing = async (enableCors) => {
+      const modelToTest = { ...model, enableCors };
+      const config = this.getEmbeddingConfig(modelToTest);
+      const testModel = new (this.getProviderConstructor(modelToTest))(config);
+      await testModel.embedQuery("test");
+    };
+    try {
+      await tryPing(false);
+      return true;
+    } catch (error) {
+      console.log("First ping attempt failed, trying with CORS...");
+      try {
+        await tryPing(true);
+        new import_obsidian5.Notice(
+          "Connection successful, but requires CORS to be enabled. Please enable CORS for this model once you add it above."
+        );
+        return true;
+      } catch (error2) {
+        console.error("Embedding model ping failed:", error2);
+        throw error2;
+      }
+    }
+  }
 };
 
-// src/rateLimiter.ts
-var RateLimiter = class {
-  constructor(requestsPerSecond) {
-    this.queue = [];
-    this.lastRequestTime = 0;
-    this.processing = false;
-    this.requestsPerSecond = requestsPerSecond;
-  }
-  setRequestsPerSecond(requestsPerSecond) {
-    this.requestsPerSecond = requestsPerSecond;
-  }
-  getRequestsPerSecond() {
-    return this.requestsPerSecond;
-  }
-  async wait() {
-    return new Promise((resolve) => {
-      this.queue.push(resolve);
-      this.process();
+// node_modules/@langchain/core/dist/documents/index.js
+init_document();
+
+// node_modules/@langchain/core/dist/documents/transformers.js
+init_base4();
+var BaseDocumentTransformer = class extends Runnable {
+  constructor() {
+    super(...arguments);
+    Object.defineProperty(this, "lc_namespace", {
+      enumerable: true,
+      configurable: true,
+      writable: true,
+      value: ["langchain_core", "documents", "transformers"]
     });
   }
-  async process() {
-    if (this.processing)
-      return;
-    this.processing = true;
+  /**
+   * Method to invoke the document transformation. This method calls the
+   * transformDocuments method with the provided input.
+   * @param input The input documents to be transformed.
+   * @param _options Optional configuration object to customize the behavior of callbacks.
+   * @returns A Promise that resolves to the transformed documents.
+   */
+  invoke(input, _options) {
+    return this.transformDocuments(input);
+  }
+};
+
+// src/search/hybridRetriever.ts
+init_prompts3();
+
+// node_modules/@langchain/core/dist/retrievers/index.js
+init_manager();
+init_base4();
+init_config();
+var BaseRetriever = class extends Runnable {
+  constructor(fields) {
+    super(fields);
+    Object.defineProperty(this, "callbacks", {
+      enumerable: true,
+      configurable: true,
+      writable: true,
+      value: void 0
+    });
+    Object.defineProperty(this, "tags", {
+      enumerable: true,
+      configurable: true,
+      writable: true,
+      value: void 0
+    });
+    Object.defineProperty(this, "metadata", {
+      enumerable: true,
+      configurable: true,
+      writable: true,
+      value: void 0
+    });
+    Object.defineProperty(this, "verbose", {
+      enumerable: true,
+      configurable: true,
+      writable: true,
+      value: void 0
+    });
+    this.callbacks = fields?.callbacks;
+    this.tags = fields?.tags ?? [];
+    this.metadata = fields?.metadata ?? {};
+    this.verbose = fields?.verbose ?? false;
+  }
+  /**
+   * TODO: This should be an abstract method, but we'd like to avoid breaking
+   * changes to people currently using subclassed custom retrievers.
+   * Change it on next major release.
+   */
+  _getRelevantDocuments(_query, _callbacks) {
+    throw new Error("Not implemented!");
+  }
+  async invoke(input, options) {
+    return this.getRelevantDocuments(input, ensureConfig(options));
+  }
+  /**
+   * @deprecated Use .invoke() instead. Will be removed in 0.3.0.
+   *
+   * Main method used to retrieve relevant documents. It takes a query
+   * string and an optional configuration object, and returns a promise that
+   * resolves to an array of `Document` objects. This method handles the
+   * retrieval process, including starting and ending callbacks, and error
+   * handling.
+   * @param query The query string to retrieve relevant documents for.
+   * @param config Optional configuration object for the retrieval process.
+   * @returns A promise that resolves to an array of `Document` objects.
+   */
+  async getRelevantDocuments(query, config) {
+    const parsedConfig = ensureConfig(parseCallbackConfigArg(config));
+    const callbackManager_ = await CallbackManager.configure(parsedConfig.callbacks, this.callbacks, parsedConfig.tags, this.tags, parsedConfig.metadata, this.metadata, { verbose: this.verbose });
+    const runManager = await callbackManager_?.handleRetrieverStart(this.toJSON(), query, parsedConfig.runId, void 0, void 0, void 0, parsedConfig.runName);
     try {
-      while (this.queue.length > 0) {
-        const now3 = Date.now();
-        const timeToWait = Math.max(0, this.lastRequestTime + 1e3 / this.requestsPerSecond - now3);
-        if (timeToWait > 0) {
-          await new Promise((resolve2) => setTimeout(resolve2, timeToWait));
-        }
-        const resolve = this.queue.shift();
-        if (resolve) {
-          this.lastRequestTime = Date.now();
-          resolve();
-        }
-      }
-    } finally {
-      this.processing = false;
+      const results = await this._getRelevantDocuments(query, runManager);
+      await runManager?.handleRetrieverEnd(results);
+      return results;
+    } catch (error) {
+      await runManager?.handleRetrieverError(error);
+      throw error;
     }
   }
 };
@@ -134127,725 +134227,501 @@ function save5(orama) {
   };
 }
 
-// src/vectorDBManager.ts
+// src/search/dbOperations.ts
 var import_crypto_js = __toESM(require_crypto_js());
+var import_obsidian6 = require("obsidian");
 
-// node_modules/@langchain/core/dist/documents/index.js
-init_document();
-
-// node_modules/@langchain/core/dist/documents/transformers.js
-init_base4();
-var BaseDocumentTransformer = class extends Runnable {
-  constructor() {
-    super(...arguments);
-    Object.defineProperty(this, "lc_namespace", {
-      enumerable: true,
-      configurable: true,
-      writable: true,
-      value: ["langchain_core", "documents", "transformers"]
-    });
+// src/search/chunkedStorage.ts
+var CHUNK_PREFIX = "copilot-index-chunk-";
+var LEGACY_INDEX_SUFFIX = ".json";
+var ChunkedStorage = class {
+  constructor(app2, baseDir, identifier) {
+    this.app = app2;
+    this.baseDir = baseDir;
+    this.identifier = identifier;
   }
-  /**
-   * Method to invoke the document transformation. This method calls the
-   * transformDocuments method with the provided input.
-   * @param input The input documents to be transformed.
-   * @param _options Optional configuration object to customize the behavior of callbacks.
-   * @returns A Promise that resolves to the transformed documents.
-   */
-  invoke(input, _options) {
-    return this.transformDocuments(input);
+  getChunkPath(chunkIndex) {
+    return `${this.baseDir}/${CHUNK_PREFIX}${this.identifier}-${chunkIndex}.json`;
   }
-};
-
-// node_modules/@langchain/core/utils/tiktoken.js
-init_tiktoken();
-
-// node_modules/@langchain/textsplitters/dist/text_splitter.js
-var TextSplitter = class extends BaseDocumentTransformer {
-  constructor(fields) {
-    super(fields);
-    Object.defineProperty(this, "lc_namespace", {
-      enumerable: true,
-      configurable: true,
-      writable: true,
-      value: ["langchain", "document_transformers", "text_splitters"]
-    });
-    Object.defineProperty(this, "chunkSize", {
-      enumerable: true,
-      configurable: true,
-      writable: true,
-      value: 1e3
-    });
-    Object.defineProperty(this, "chunkOverlap", {
-      enumerable: true,
-      configurable: true,
-      writable: true,
-      value: 200
-    });
-    Object.defineProperty(this, "keepSeparator", {
-      enumerable: true,
-      configurable: true,
-      writable: true,
-      value: false
-    });
-    Object.defineProperty(this, "lengthFunction", {
-      enumerable: true,
-      configurable: true,
-      writable: true,
-      value: void 0
-    });
-    this.chunkSize = fields?.chunkSize ?? this.chunkSize;
-    this.chunkOverlap = fields?.chunkOverlap ?? this.chunkOverlap;
-    this.keepSeparator = fields?.keepSeparator ?? this.keepSeparator;
-    this.lengthFunction = fields?.lengthFunction ?? ((text) => text.length);
-    if (this.chunkOverlap >= this.chunkSize) {
-      throw new Error("Cannot have chunkOverlap >= chunkSize");
+  getMetadataPath() {
+    return `${this.baseDir}/${CHUNK_PREFIX}${this.identifier}-metadata.json`;
+  }
+  getLegacyPath() {
+    return `${this.baseDir}/copilot-index-${this.identifier}${LEGACY_INDEX_SUFFIX}`;
+  }
+  assignDocumentToPartition(docId, totalPartitions) {
+    const chars = Array.from(docId);
+    const hash = chars.reduce((acc, char) => {
+      return (acc << 5) - acc + char.charCodeAt(0);
+    }, 0);
+    return Math.abs(hash) % totalPartitions;
+  }
+  distributeDocumentsToPartitions(documents, numPartitions) {
+    const partitions = /* @__PURE__ */ new Map();
+    const documentPartitions = {};
+    for (let i3 = 0; i3 < numPartitions; i3++) {
+      partitions.set(i3, []);
     }
-  }
-  async transformDocuments(documents, chunkHeaderOptions = {}) {
-    return this.splitDocuments(documents, chunkHeaderOptions);
-  }
-  splitOnSeparator(text, separator) {
-    let splits;
-    if (separator) {
-      if (this.keepSeparator) {
-        const regexEscapedSeparator = separator.replace(/[/\-\\^$*+?.()|[\]{}]/g, "\\$&");
-        splits = text.split(new RegExp(`(?=${regexEscapedSeparator})`));
-      } else {
-        splits = text.split(separator);
+    if (getSettings().debug) {
+      console.log(`Total documents to distribute: ${documents.length}`);
+    }
+    for (const doc of documents) {
+      const partitionIndex = this.assignDocumentToPartition(doc.id, numPartitions);
+      const partition5 = partitions.get(partitionIndex);
+      if (!partition5) {
+        throw new Error(`Invalid partition index: ${partitionIndex}`);
       }
-    } else {
-      splits = text.split("");
+      partition5.push(doc);
+      documentPartitions[doc.id] = partitionIndex;
     }
-    return splits.filter((s4) => s4 !== "");
-  }
-  async createDocuments(texts, metadatas = [], chunkHeaderOptions = {}) {
-    const _metadatas = metadatas.length > 0 ? metadatas : [...Array(texts.length)].map(() => ({}));
-    const { chunkHeader = "", chunkOverlapHeader = "(cont'd) ", appendChunkOverlapHeader = false } = chunkHeaderOptions;
-    const documents = new Array();
-    for (let i3 = 0; i3 < texts.length; i3 += 1) {
-      const text = texts[i3];
-      let lineCounterIndex = 1;
-      let prevChunk = null;
-      let indexPrevChunk = -1;
-      for (const chunk of await this.splitText(text)) {
-        let pageContent = chunkHeader;
-        const indexChunk = text.indexOf(chunk, indexPrevChunk + 1);
-        if (prevChunk === null) {
-          const newLinesBeforeFirstChunk = this.numberOfNewLines(text, 0, indexChunk);
-          lineCounterIndex += newLinesBeforeFirstChunk;
-        } else {
-          const indexEndPrevChunk = indexPrevChunk + await this.lengthFunction(prevChunk);
-          if (indexEndPrevChunk < indexChunk) {
-            const numberOfIntermediateNewLines = this.numberOfNewLines(text, indexEndPrevChunk, indexChunk);
-            lineCounterIndex += numberOfIntermediateNewLines;
-          } else if (indexEndPrevChunk > indexChunk) {
-            const numberOfIntermediateNewLines = this.numberOfNewLines(text, indexChunk, indexEndPrevChunk);
-            lineCounterIndex -= numberOfIntermediateNewLines;
-          }
-          if (appendChunkOverlapHeader) {
-            pageContent += chunkOverlapHeader;
-          }
-        }
-        const newLinesCount = this.numberOfNewLines(chunk);
-        const loc = _metadatas[i3].loc && typeof _metadatas[i3].loc === "object" ? { ..._metadatas[i3].loc } : {};
-        loc.lines = {
-          from: lineCounterIndex,
-          to: lineCounterIndex + newLinesCount
-        };
-        const metadataWithLinesNumber = {
-          ..._metadatas[i3],
-          loc
-        };
-        pageContent += chunk;
-        documents.push(new Document2({
-          pageContent,
-          metadata: metadataWithLinesNumber
-        }));
-        lineCounterIndex += newLinesCount;
-        prevChunk = chunk;
-        indexPrevChunk = indexChunk;
+    let totalDistributed = 0;
+    partitions.forEach((docs, i3) => {
+      totalDistributed += docs.length;
+      if (getSettings().debug) {
+        console.log(`Partition ${i3 + 1}: ${docs.length} documents`);
+      }
+    });
+    if (getSettings().debug) {
+      console.log(`Total documents distributed: ${totalDistributed}`);
+      if (totalDistributed !== documents.length) {
+        console.error(
+          `Document count mismatch! Original: ${documents.length}, Distributed: ${totalDistributed}`
+        );
       }
     }
-    return documents;
+    return partitions;
   }
-  numberOfNewLines(text, start, end) {
-    const textSection = text.slice(start, end);
-    return (textSection.match(/\n/g) || []).length;
-  }
-  async splitDocuments(documents, chunkHeaderOptions = {}) {
-    const selectedDocuments = documents.filter((doc) => doc.pageContent !== void 0);
-    const texts = selectedDocuments.map((doc) => doc.pageContent);
-    const metadatas = selectedDocuments.map((doc) => doc.metadata);
-    return this.createDocuments(texts, metadatas, chunkHeaderOptions);
-  }
-  joinDocs(docs, separator) {
-    const text = docs.join(separator).trim();
-    return text === "" ? null : text;
-  }
-  async mergeSplits(splits, separator) {
-    const docs = [];
-    const currentDoc = [];
-    let total = 0;
-    for (const d3 of splits) {
-      const _len = await this.lengthFunction(d3);
-      if (total + _len + currentDoc.length * separator.length > this.chunkSize) {
-        if (total > this.chunkSize) {
-          console.warn(`Created a chunk of size ${total}, +
-which is longer than the specified ${this.chunkSize}`);
-        }
-        if (currentDoc.length > 0) {
-          const doc2 = this.joinDocs(currentDoc, separator);
-          if (doc2 !== null) {
-            docs.push(doc2);
-          }
-          while (total > this.chunkOverlap || total + _len + currentDoc.length * separator.length > this.chunkSize && total > 0) {
-            total -= await this.lengthFunction(currentDoc[0]);
-            currentDoc.shift();
-          }
-        }
-      }
-      currentDoc.push(d3);
-      total += _len;
-    }
-    const doc = this.joinDocs(currentDoc, separator);
-    if (doc !== null) {
-      docs.push(doc);
-    }
-    return docs;
-  }
-};
-var RecursiveCharacterTextSplitter = class extends TextSplitter {
-  static lc_name() {
-    return "RecursiveCharacterTextSplitter";
-  }
-  constructor(fields) {
-    super(fields);
-    Object.defineProperty(this, "separators", {
-      enumerable: true,
-      configurable: true,
-      writable: true,
-      value: ["\n\n", "\n", " ", ""]
-    });
-    this.separators = fields?.separators ?? this.separators;
-    this.keepSeparator = fields?.keepSeparator ?? true;
-  }
-  async _splitText(text, separators) {
-    const finalChunks = [];
-    let separator = separators[separators.length - 1];
-    let newSeparators;
-    for (let i3 = 0; i3 < separators.length; i3 += 1) {
-      const s4 = separators[i3];
-      if (s4 === "") {
-        separator = s4;
-        break;
-      }
-      if (text.includes(s4)) {
-        separator = s4;
-        newSeparators = separators.slice(i3 + 1);
-        break;
-      }
-    }
-    const splits = this.splitOnSeparator(text, separator);
-    let goodSplits = [];
-    const _separator = this.keepSeparator ? "" : separator;
-    for (const s4 of splits) {
-      if (await this.lengthFunction(s4) < this.chunkSize) {
-        goodSplits.push(s4);
-      } else {
-        if (goodSplits.length) {
-          const mergedText = await this.mergeSplits(goodSplits, _separator);
-          finalChunks.push(...mergedText);
-          goodSplits = [];
-        }
-        if (!newSeparators) {
-          finalChunks.push(s4);
-        } else {
-          const otherInfo = await this._splitText(s4, newSeparators);
-          finalChunks.push(...otherInfo);
-        }
-      }
-    }
-    if (goodSplits.length) {
-      const mergedText = await this.mergeSplits(goodSplits, _separator);
-      finalChunks.push(...mergedText);
-    }
-    return finalChunks;
-  }
-  async splitText(text) {
-    return this._splitText(text, this.separators);
-  }
-  static fromLanguage(language, options) {
-    return new RecursiveCharacterTextSplitter({
-      ...options,
-      separators: RecursiveCharacterTextSplitter.getSeparatorsForLanguage(language)
-    });
-  }
-  static getSeparatorsForLanguage(language) {
-    if (language === "cpp") {
-      return [
-        // Split along class definitions
-        "\nclass ",
-        // Split along function definitions
-        "\nvoid ",
-        "\nint ",
-        "\nfloat ",
-        "\ndouble ",
-        // Split along control flow statements
-        "\nif ",
-        "\nfor ",
-        "\nwhile ",
-        "\nswitch ",
-        "\ncase ",
-        // Split by the normal type of lines
-        "\n\n",
-        "\n",
-        " ",
-        ""
-      ];
-    } else if (language === "go") {
-      return [
-        // Split along function definitions
-        "\nfunc ",
-        "\nvar ",
-        "\nconst ",
-        "\ntype ",
-        // Split along control flow statements
-        "\nif ",
-        "\nfor ",
-        "\nswitch ",
-        "\ncase ",
-        // Split by the normal type of lines
-        "\n\n",
-        "\n",
-        " ",
-        ""
-      ];
-    } else if (language === "java") {
-      return [
-        // Split along class definitions
-        "\nclass ",
-        // Split along method definitions
-        "\npublic ",
-        "\nprotected ",
-        "\nprivate ",
-        "\nstatic ",
-        // Split along control flow statements
-        "\nif ",
-        "\nfor ",
-        "\nwhile ",
-        "\nswitch ",
-        "\ncase ",
-        // Split by the normal type of lines
-        "\n\n",
-        "\n",
-        " ",
-        ""
-      ];
-    } else if (language === "js") {
-      return [
-        // Split along function definitions
-        "\nfunction ",
-        "\nconst ",
-        "\nlet ",
-        "\nvar ",
-        "\nclass ",
-        // Split along control flow statements
-        "\nif ",
-        "\nfor ",
-        "\nwhile ",
-        "\nswitch ",
-        "\ncase ",
-        "\ndefault ",
-        // Split by the normal type of lines
-        "\n\n",
-        "\n",
-        " ",
-        ""
-      ];
-    } else if (language === "php") {
-      return [
-        // Split along function definitions
-        "\nfunction ",
-        // Split along class definitions
-        "\nclass ",
-        // Split along control flow statements
-        "\nif ",
-        "\nforeach ",
-        "\nwhile ",
-        "\ndo ",
-        "\nswitch ",
-        "\ncase ",
-        // Split by the normal type of lines
-        "\n\n",
-        "\n",
-        " ",
-        ""
-      ];
-    } else if (language === "proto") {
-      return [
-        // Split along message definitions
-        "\nmessage ",
-        // Split along service definitions
-        "\nservice ",
-        // Split along enum definitions
-        "\nenum ",
-        // Split along option definitions
-        "\noption ",
-        // Split along import statements
-        "\nimport ",
-        // Split along syntax declarations
-        "\nsyntax ",
-        // Split by the normal type of lines
-        "\n\n",
-        "\n",
-        " ",
-        ""
-      ];
-    } else if (language === "python") {
-      return [
-        // First, try to split along class definitions
-        "\nclass ",
-        "\ndef ",
-        "\n	def ",
-        // Now split by the normal type of lines
-        "\n\n",
-        "\n",
-        " ",
-        ""
-      ];
-    } else if (language === "rst") {
-      return [
-        // Split along section titles
-        "\n===\n",
-        "\n---\n",
-        "\n***\n",
-        // Split along directive markers
-        "\n.. ",
-        // Split by the normal type of lines
-        "\n\n",
-        "\n",
-        " ",
-        ""
-      ];
-    } else if (language === "ruby") {
-      return [
-        // Split along method definitions
-        "\ndef ",
-        "\nclass ",
-        // Split along control flow statements
-        "\nif ",
-        "\nunless ",
-        "\nwhile ",
-        "\nfor ",
-        "\ndo ",
-        "\nbegin ",
-        "\nrescue ",
-        // Split by the normal type of lines
-        "\n\n",
-        "\n",
-        " ",
-        ""
-      ];
-    } else if (language === "rust") {
-      return [
-        // Split along function definitions
-        "\nfn ",
-        "\nconst ",
-        "\nlet ",
-        // Split along control flow statements
-        "\nif ",
-        "\nwhile ",
-        "\nfor ",
-        "\nloop ",
-        "\nmatch ",
-        "\nconst ",
-        // Split by the normal type of lines
-        "\n\n",
-        "\n",
-        " ",
-        ""
-      ];
-    } else if (language === "scala") {
-      return [
-        // Split along class definitions
-        "\nclass ",
-        "\nobject ",
-        // Split along method definitions
-        "\ndef ",
-        "\nval ",
-        "\nvar ",
-        // Split along control flow statements
-        "\nif ",
-        "\nfor ",
-        "\nwhile ",
-        "\nmatch ",
-        "\ncase ",
-        // Split by the normal type of lines
-        "\n\n",
-        "\n",
-        " ",
-        ""
-      ];
-    } else if (language === "swift") {
-      return [
-        // Split along function definitions
-        "\nfunc ",
-        // Split along class definitions
-        "\nclass ",
-        "\nstruct ",
-        "\nenum ",
-        // Split along control flow statements
-        "\nif ",
-        "\nfor ",
-        "\nwhile ",
-        "\ndo ",
-        "\nswitch ",
-        "\ncase ",
-        // Split by the normal type of lines
-        "\n\n",
-        "\n",
-        " ",
-        ""
-      ];
-    } else if (language === "markdown") {
-      return [
-        // First, try to split along Markdown headings (starting with level 2)
-        "\n## ",
-        "\n### ",
-        "\n#### ",
-        "\n##### ",
-        "\n###### ",
-        // Note the alternative syntax for headings (below) is not handled here
-        // Heading level 2
-        // ---------------
-        // End of code block
-        "```\n\n",
-        // Horizontal lines
-        "\n\n***\n\n",
-        "\n\n---\n\n",
-        "\n\n___\n\n",
-        // Note that this splitter doesn't handle horizontal lines defined
-        // by *three or more* of ***, ---, or ___, but this is not handled
-        "\n\n",
-        "\n",
-        " ",
-        ""
-      ];
-    } else if (language === "latex") {
-      return [
-        // First, try to split along Latex sections
-        "\n\\chapter{",
-        "\n\\section{",
-        "\n\\subsection{",
-        "\n\\subsubsection{",
-        // Now split by environments
-        "\n\\begin{enumerate}",
-        "\n\\begin{itemize}",
-        "\n\\begin{description}",
-        "\n\\begin{list}",
-        "\n\\begin{quote}",
-        "\n\\begin{quotation}",
-        "\n\\begin{verse}",
-        "\n\\begin{verbatim}",
-        // Now split by math environments
-        "\n\\begin{align}",
-        "$$",
-        "$",
-        // Now split by the normal type of lines
-        "\n\n",
-        "\n",
-        " ",
-        ""
-      ];
-    } else if (language === "html") {
-      return [
-        // First, try to split along HTML tags
-        "<body>",
-        "<div>",
-        "<p>",
-        "<br>",
-        "<li>",
-        "<h1>",
-        "<h2>",
-        "<h3>",
-        "<h4>",
-        "<h5>",
-        "<h6>",
-        "<span>",
-        "<table>",
-        "<tr>",
-        "<td>",
-        "<th>",
-        "<ul>",
-        "<ol>",
-        "<header>",
-        "<footer>",
-        "<nav>",
-        // Head
-        "<head>",
-        "<style>",
-        "<script>",
-        "<meta>",
-        "<title>",
-        // Normal type of lines
-        " ",
-        ""
-      ];
-    } else if (language === "sol") {
-      return [
-        // Split along compiler informations definitions
-        "\npragma ",
-        "\nusing ",
-        // Split along contract definitions
-        "\ncontract ",
-        "\ninterface ",
-        "\nlibrary ",
-        // Split along method definitions
-        "\nconstructor ",
-        "\ntype ",
-        "\nfunction ",
-        "\nevent ",
-        "\nmodifier ",
-        "\nerror ",
-        "\nstruct ",
-        "\nenum ",
-        // Split along control flow statements
-        "\nif ",
-        "\nfor ",
-        "\nwhile ",
-        "\ndo while ",
-        "\nassembly ",
-        // Split by the normal type of lines
-        "\n\n",
-        "\n",
-        " ",
-        ""
-      ];
-    } else {
-      throw new Error(`Language ${language} is not supported.`);
+  async ensureDirectoryExists(filePath) {
+    const dir = filePath.substring(0, filePath.lastIndexOf("/"));
+    if (!await this.app.vault.adapter.exists(dir)) {
+      await this.app.vault.adapter.mkdir(dir);
     }
   }
-};
-
-// src/vectorDBManager.ts
-var import_obsidian5 = require("obsidian");
-var _VectorDBManager = class {
-  static getRateLimiter() {
-    const requestsPerSecond = getSettings().embeddingRequestsPerSecond;
-    if (!this.rateLimiter || this.rateLimiter.getRequestsPerSecond() !== requestsPerSecond) {
-      this.rateLimiter = new RateLimiter(requestsPerSecond);
-    }
-    return this.rateLimiter;
-  }
-  static getDocHash(sourceDocument) {
-    return (0, import_crypto_js.MD5)(sourceDocument).toString();
-  }
-  static async indexFile(db, embeddingsAPI, fileToSave) {
-    if (!db)
-      throw new Error("DB not initialized");
-    const embeddingModel = EmbeddingManager.getModelName(embeddingsAPI);
-    if (!embeddingModel)
-      console.error("EmbeddingManager could not determine model name!");
-    const textSplitter = RecursiveCharacterTextSplitter.fromLanguage("markdown", {
-      chunkSize: CHUNK_SIZE
-    });
-    const chunks = await textSplitter.createDocuments([fileToSave.content], [], {
-      chunkHeader: "\n\nNOTE TITLE: [[" + fileToSave.title + "]]\n\nNOTE BLOCK CONTENT:\n\n",
-      appendChunkOverlapHeader: true
-    });
-    const docVectors = [];
-    let hasEmbeddingError = false;
+  async saveDatabase(db) {
     try {
-      for (let i3 = 0; i3 < chunks.length; i3++) {
-        try {
-          await this.getRateLimiter().wait();
-          const embedding = await embeddingsAPI.embedDocuments([chunks[i3].pageContent]);
-          if (embedding.length > 0 && embedding[0].length > 0) {
-            docVectors.push(embedding[0]);
-          } else {
-            throw new Error("Received empty embedding vector");
-          }
-        } catch (error) {
-          hasEmbeddingError = true;
-          if (!this.errorMessageShown.has(error.message)) {
-            new import_obsidian5.Notice(
-              `Indexing failed for "${fileToSave.title}". Check the console for more details. If this persists, try reducing requests per second in settings.`,
-              1e4
-            );
-            this.errorMessageShown.add(error.message);
-          }
-          console.error("indexFile - Error during embeddings API call for chunk:", {
-            file: fileToSave.title,
-            index: i3,
-            length: chunks[i3].pageContent.length,
-            error
-          });
+      const rawData = await save5(db);
+      const documents = await DBOperations.getAllDocuments(db);
+      const numPartitions = getSettings().numPartitions;
+      if (numPartitions === 1) {
+        const legacyPath = this.getLegacyPath();
+        await this.ensureDirectoryExists(legacyPath);
+        await this.app.vault.adapter.write(
+          legacyPath,
+          JSON.stringify({
+            ...rawData,
+            documents,
+            schema: db.schema
+          })
+        );
+        return;
+      }
+      if (getSettings().debug) {
+        console.log(`Starting save with ${documents.length} total documents`);
+      }
+      if (!documents || documents.length === 0) {
+        const metadata2 = {
+          numPartitions,
+          vectorLength: db.schema.embedding.match(/\d+/)[0],
+          schema: db.schema,
+          lastModified: Date.now(),
+          documentPartitions: {}
+        };
+        const metadataPath2 = this.getMetadataPath();
+        await this.ensureDirectoryExists(metadataPath2);
+        await this.app.vault.adapter.write(metadataPath2, JSON.stringify(metadata2));
+        if (getSettings().debug) {
+          console.log("Saved empty database state");
+        }
+        return;
+      }
+      const partitions = this.distributeDocumentsToPartitions(documents, numPartitions);
+      const metadata = {
+        numPartitions,
+        vectorLength: db.schema.embedding.match(/\d+/)[0],
+        schema: db.schema,
+        lastModified: Date.now(),
+        documentPartitions: Object.fromEntries(
+          documents.map((doc) => [doc.id, this.assignDocumentToPartition(doc.id, numPartitions)])
+        )
+      };
+      const metadataPath = this.getMetadataPath();
+      await this.ensureDirectoryExists(metadataPath);
+      await this.app.vault.adapter.write(metadataPath, JSON.stringify(metadata));
+      for (const [partitionIndex, docs] of partitions.entries()) {
+        const partitionData = {
+          ...rawData,
+          documents: docs
+        };
+        const chunkPath = this.getChunkPath(partitionIndex);
+        await this.ensureDirectoryExists(chunkPath);
+        await this.app.vault.adapter.write(chunkPath, JSON.stringify(partitionData));
+        if (getSettings().debug) {
+          console.log(`Saved partition ${partitionIndex + 1}/${numPartitions}`);
         }
       }
-      if (docVectors.length > 0) {
-        const chunkWithVectors = chunks.slice(0, docVectors.length).map((chunk, i3) => ({
-          id: _VectorDBManager.getDocHash(chunk.pageContent),
-          content: chunk.pageContent,
-          embedding: docVectors[i3]
-        }));
-        for (const chunkWithVector of chunkWithVectors) {
-          try {
-            const docToSave = {
-              id: chunkWithVector.id,
-              title: fileToSave.title,
-              content: chunkWithVector.content,
-              embedding: chunkWithVector.embedding,
-              path: fileToSave.path,
-              embeddingModel,
-              created_at: Date.now(),
-              ctime: fileToSave.ctime,
-              mtime: fileToSave.mtime,
-              tags: Array.isArray(fileToSave.tags) ? fileToSave.tags : [],
-              extension: fileToSave.extension,
-              nchars: chunkWithVector.content.length,
-              metadata: fileToSave.metadata
-            };
-            docToSave.tags = docToSave.tags.map((tag) => String(tag));
-            await this.upsert(db, docToSave);
-          } catch (err) {
-            console.error("Error storing vectors in VectorDB:", err);
-          }
+      let savedTotal = 0;
+      for (let i3 = 0; i3 < numPartitions; i3++) {
+        const chunkPath = this.getChunkPath(i3);
+        const chunkData = JSON.parse(await this.app.vault.adapter.read(chunkPath));
+        savedTotal += chunkData.documents.length;
+      }
+      if (getSettings().debug) {
+        if (savedTotal !== documents.length) {
+          console.error(
+            `Document count mismatch during save! Original: ${documents.length}, Saved: ${savedTotal}`
+          );
         }
       }
-      return hasEmbeddingError ? void 0 : fileToSave;
     } catch (error) {
-      console.error("indexFile - Unexpected error during embedding process:", error);
-      new import_obsidian5.Notice(`indexFile - Unexpected error during embedding process: ${error}`);
+      console.error(`Error saving database:`, error);
+      throw new CustomError(`Failed to save database: ${error.message}`);
+    }
+  }
+  async loadDatabase() {
+    try {
+      const legacyPath = this.getLegacyPath();
+      if (await this.app.vault.adapter.exists(legacyPath)) {
+        const legacyData = JSON.parse(await this.app.vault.adapter.read(legacyPath));
+        if (!legacyData?.schema) {
+          throw new CustomError("Invalid legacy database format");
+        }
+        const newDb2 = await create8({
+          schema: legacyData.schema,
+          components: {
+            tokenizer: {
+              stemmer: void 0,
+              stopWords: void 0
+            }
+          }
+        });
+        await load5(newDb2, legacyData);
+        return newDb2;
+      }
+      const metadataPath = this.getMetadataPath();
+      if (!await this.app.vault.adapter.exists(metadataPath)) {
+        throw new CustomError("No existing database found");
+      }
+      const metadata = JSON.parse(await this.app.vault.adapter.read(metadataPath));
+      if (!metadata?.schema) {
+        throw new CustomError("Invalid metadata file: missing schema");
+      }
+      const newDb = await create8({
+        schema: metadata.schema,
+        components: {
+          tokenizer: {
+            stemmer: void 0,
+            stopWords: void 0
+          }
+        }
+      });
+      for (let i3 = 0; i3 < metadata.numPartitions; i3++) {
+        const chunkPath = this.getChunkPath(i3);
+        if (await this.app.vault.adapter.exists(chunkPath)) {
+          const chunkData = JSON.parse(await this.app.vault.adapter.read(chunkPath));
+          if (chunkData) {
+            await load5(newDb, chunkData);
+            if (getSettings().debug) {
+              console.log(`Loaded partition ${i3 + 1}/${metadata.numPartitions}`);
+            }
+          }
+        }
+      }
+      return newDb;
+    } catch (error) {
+      console.error(`Error loading database:`, error);
+      throw new CustomError(`Failed to load database: ${error.message}`);
+    }
+  }
+  async clearStorage() {
+    try {
+      const legacyPath = this.getLegacyPath();
+      if (await this.app.vault.adapter.exists(legacyPath)) {
+        await this.app.vault.adapter.remove(legacyPath);
+      }
+      const files = await this.app.vault.adapter.list(this.baseDir);
+      for (const file of files.files) {
+        if (file.startsWith(`${this.baseDir}/${CHUNK_PREFIX}${this.identifier}`)) {
+          await this.app.vault.adapter.remove(file);
+        }
+      }
+    } catch (error) {
+      console.error(`Error clearing storage:`, error);
+      throw new CustomError(`Failed to clear storage: ${error.message}`);
+    }
+  }
+  async exists() {
+    const legacyPath = this.getLegacyPath();
+    if (getSettings().numPartitions === 1) {
+      return await this.app.vault.adapter.exists(legacyPath);
+    }
+    const metadataPath = this.getMetadataPath();
+    return await this.app.vault.adapter.exists(metadataPath) || await this.app.vault.adapter.exists(legacyPath);
+  }
+};
+
+// src/search/searchUtils.ts
+async function getVectorLength(embeddingInstance) {
+  if (!embeddingInstance) {
+    throw new CustomError("Embedding instance not found.");
+  }
+  try {
+    const sampleText = "Sample text for embedding";
+    const sampleEmbedding = await embeddingInstance.embedQuery(sampleText);
+    if (!sampleEmbedding || sampleEmbedding.length === 0) {
+      throw new CustomError("Failed to get valid embedding vector length");
+    }
+    console.log(
+      `Detected vector length: ${sampleEmbedding.length} for model: ${EmbeddingManager.getModelName(embeddingInstance)}`
+    );
+    return sampleEmbedding.length;
+  } catch (error) {
+    console.error("Error getting vector length:", error);
+    throw new CustomError(
+      "Failed to determine embedding vector length. Please check your embedding model settings."
+    );
+  }
+}
+async function getAllQAMarkdownContent(app2) {
+  let allContent = "";
+  const includedFiles = await getFilePathsForQA("inclusions", app2);
+  const excludedFiles = await getFilePathsForQA("exclusions", app2);
+  const filteredFiles = app2.vault.getMarkdownFiles().filter((file) => {
+    if (includedFiles.size > 0) {
+      return includedFiles.has(file.path);
+    }
+    return !excludedFiles.has(file.path);
+  });
+  await Promise.all(filteredFiles.map((file) => app2.vault.cachedRead(file))).then(
+    (contents) => contents.map((c4) => allContent += c4 + " ")
+  );
+  return allContent;
+}
+async function getFilePathsForQA(filterType, app2) {
+  const targetFiles = /* @__PURE__ */ new Set();
+  if (filterType === "exclusions") {
+    const exclusions = [];
+    exclusions.push(...extractAppIgnoreSettings(app2));
+    if (getSettings().qaExclusions) {
+      exclusions.push(
+        ...getSettings().qaExclusions.split(",").map((item) => item.trim())
+      );
+    }
+    const excludedFilePaths = await getFilePathsFromPatterns(exclusions, app2.vault);
+    excludedFilePaths.forEach((filePath) => targetFiles.add(filePath));
+  } else if (filterType === "inclusions" && getSettings().qaInclusions) {
+    const inclusions = getSettings().qaInclusions.split(",").map((item) => item.trim());
+    const includedFilePaths = await getFilePathsFromPatterns(inclusions, app2.vault);
+    includedFilePaths.forEach((filePath) => targetFiles.add(filePath));
+  }
+  return targetFiles;
+}
+function extractAppIgnoreSettings(app2) {
+  const appIgnoreFolders = [];
+  try {
+    const userIgnoreFilters = app2.vault.getConfig("userIgnoreFilters");
+    if (!!userIgnoreFilters && Array.isArray(userIgnoreFilters)) {
+      userIgnoreFilters.forEach((it) => {
+        if (typeof it === "string") {
+          appIgnoreFolders.push(it.endsWith("/") ? it.slice(0, -1) : it);
+        }
+      });
+    }
+  } catch (e3) {
+    console.warn("Error getting userIgnoreFilters from Obsidian config", e3);
+  }
+  return appIgnoreFolders;
+}
+
+// src/search/dbOperations.ts
+var DBOperations = class {
+  constructor(app2) {
+    this.app = app2;
+    this.isInitialized = false;
+    this.isIndexLoaded = false;
+    this.hasUnsavedChanges = false;
+    subscribeToSettingsChange(async () => {
+      const settings = getSettings();
+      if (import_obsidian6.Platform.isMobile && settings.disableIndexOnMobile) {
+        this.isIndexLoaded = false;
+        this.oramaDb = void 0;
+      } else if (import_obsidian6.Platform.isMobile && !settings.disableIndexOnMobile && !this.oramaDb) {
+        await this.initializeDB(EmbeddingManager.getInstance().getEmbeddingsAPI());
+      }
+      const newPath = await this.getDbPath();
+      if (this.dbPath && newPath !== this.dbPath) {
+        console.log("Path change detected, reinitializing database...");
+        this.dbPath = newPath;
+        await this.initializeChunkedStorage();
+        await this.initializeDB(EmbeddingManager.getInstance().getEmbeddingsAPI());
+        console.log("Database reinitialized with new path:", newPath);
+      }
+    });
+  }
+  async initializeChunkedStorage() {
+    if (!this.app.vault.adapter) {
+      throw new CustomError("Vault adapter not available. Please try again later.");
+    }
+    const baseDir = await this.getDbPath();
+    this.chunkedStorage = new ChunkedStorage(this.app, baseDir, this.getVaultIdentifier());
+    this.isInitialized = true;
+  }
+  async initializeDB(embeddingInstance) {
+    try {
+      if (!this.isInitialized) {
+        this.dbPath = await this.getDbPath();
+        await this.initializeChunkedStorage();
+      }
+      if (import_obsidian6.Platform.isMobile && getSettings().disableIndexOnMobile) {
+        this.isIndexLoaded = false;
+        this.oramaDb = void 0;
+        return;
+      }
+      if (!this.chunkedStorage) {
+        throw new CustomError("Storage not initialized properly");
+      }
+      try {
+        if (await this.chunkedStorage.exists()) {
+          this.oramaDb = await this.chunkedStorage.loadDatabase();
+          console.log("Loaded existing chunked Orama database from disk.");
+          return this.oramaDb;
+        }
+      } catch (error) {
+        console.log("Failed to load existing database, creating new one:", error);
+      }
+      const newDb = await this.createNewDb(embeddingInstance);
+      this.oramaDb = newDb;
+      return newDb;
+    } catch (error) {
+      console.error(`Error initializing Orama database:`, error);
+      new import_obsidian6.Notice("Failed to initialize Copilot database. Some features may be limited.");
       return void 0;
     }
   }
-  static async upsert(db, docToSave) {
-    if (!db)
-      throw new Error("DB not initialized");
+  async saveDB() {
+    if (import_obsidian6.Platform.isMobile && getSettings().disableIndexOnMobile) {
+      return;
+    }
     try {
-      const existingDoc = await search2(db, {
-        term: docToSave.id,
-        properties: ["id"],
-        limit: 1
+      if (!this.oramaDb || !this.chunkedStorage) {
+        throw new CustomError("Orama database not found.");
+      }
+      await this.chunkedStorage.saveDatabase(this.oramaDb);
+      this.hasUnsavedChanges = false;
+      if (getSettings().debug) {
+        console.log("Orama database saved successfully at:", this.dbPath);
+      }
+    } catch (error) {
+      console.error(`Error saving Orama database:`, error);
+      throw error;
+    }
+  }
+  async clearIndex(embeddingInstance) {
+    try {
+      await this.chunkedStorage?.clearStorage();
+      await new Promise((resolve) => setTimeout(resolve, 100));
+      this.oramaDb = await this.createNewDb(embeddingInstance);
+      await this.saveDB();
+      new import_obsidian6.Notice("Local Copilot index cleared successfully.");
+      console.log("Local Copilot index cleared successfully, new instance created.");
+    } catch (err) {
+      console.error("Error clearing the local Copilot index:", err);
+      new import_obsidian6.Notice("An error occurred while clearing the local Copilot index.");
+      throw err;
+    }
+  }
+  async removeDocs(filePath) {
+    if (!this.oramaDb) {
+      throw new CustomError("Orama database not found.");
+    }
+    try {
+      const searchResult = await search2(this.oramaDb, {
+        term: filePath,
+        properties: ["path"]
       });
-      if (existingDoc.hits.length > 0) {
-        await remove5(db, existingDoc.hits[0].id);
-        await insert7(db, docToSave);
+      if (searchResult.hits.length > 0) {
+        await removeMultiple(
+          this.oramaDb,
+          searchResult.hits.map((hit) => hit.id),
+          500
+        );
         if (getSettings().debug) {
-          console.log(`Updated document ${docToSave.id} in VectorDB with path: ${docToSave.path}`);
-        }
-      } else {
-        await insert7(db, docToSave);
-        if (getSettings().debug) {
-          console.log(`Inserted document ${docToSave.id} in VectorDB with path: ${docToSave.path}`);
+          console.log(`Deleted document from local Copilot index: ${filePath}`);
         }
       }
+      this.markUnsavedChanges();
     } catch (err) {
-      console.error(`Error upserting document ${docToSave.id} in VectorDB:`, err);
-      return void 0;
+      console.error("Error deleting document from local Copilotindex:", err);
     }
-    return docToSave;
+  }
+  getDb() {
+    if (!this.oramaDb) {
+      console.warn("Database not initialized. Some features may be limited.");
+    }
+    return this.oramaDb;
+  }
+  async getIsIndexLoaded() {
+    return this.isIndexLoaded;
+  }
+  async waitForInitialization() {
+    await this.initializationPromise;
+  }
+  onunload() {
+    if (this.hasUnsavedChanges) {
+      this.saveDB();
+    }
+  }
+  getCurrentDbPath() {
+    return this.dbPath;
+  }
+  // This is the path according to the setting's enableIndexSync
+  async getDbPath() {
+    const vaultRoot = this.app.vault.getRoot().path;
+    let baseDir;
+    if (getSettings().enableIndexSync) {
+      baseDir = this.app.vault.configDir;
+    } else {
+      const effectiveRoot = vaultRoot === "/" ? "" : vaultRoot;
+      const prefix = effectiveRoot === "" || effectiveRoot.startsWith("/") ? "" : "/";
+      baseDir = `${prefix}${effectiveRoot}/.copilot-index`;
+      if (!await this.app.vault.adapter.exists(baseDir)) {
+        await this.app.vault.adapter.mkdir(baseDir);
+        console.log("Created directory:", baseDir);
+      }
+    }
+    return baseDir;
+  }
+  getVaultIdentifier() {
+    const vaultName = this.app.vault.getName();
+    return (0, import_crypto_js.MD5)(vaultName).toString();
+  }
+  markUnsavedChanges() {
+    this.hasUnsavedChanges = true;
+  }
+  async createNewDb(embeddingInstance) {
+    if (!embeddingInstance) {
+      throw new CustomError("Embedding instance not found.");
+    }
+    const vectorLength = await getVectorLength(embeddingInstance);
+    if (!vectorLength || vectorLength === 0) {
+      throw new CustomError(
+        "Invalid vector length detected. Please check if your embedding model is working."
+      );
+    }
+    const schema = this.createDynamicSchema(vectorLength);
+    const db = await create8({
+      schema,
+      components: {
+        tokenizer: {
+          stemmer: void 0,
+          stopWords: void 0
+        }
+      }
+    });
+    console.log(
+      `Created new Orama database for ${this.dbPath}. Embedding model: ${EmbeddingManager.getModelName(embeddingInstance)} with vector length ${vectorLength}.`
+    );
+    this.isIndexLoaded = true;
+    return db;
   }
   static async getDocsByPath(db, path) {
     if (!db)
@@ -134881,93 +134757,199 @@ var _VectorDBManager = class {
       return 0;
     }
   }
-};
-var VectorDBManager = _VectorDBManager;
-VectorDBManager.errorMessageShown = /* @__PURE__ */ new Set();
-var vectorDBManager_default = VectorDBManager;
-
-// src/search/hybridRetriever.ts
-init_prompts3();
-
-// node_modules/@langchain/core/dist/retrievers/index.js
-init_manager();
-init_base4();
-init_config();
-var BaseRetriever = class extends Runnable {
-  constructor(fields) {
-    super(fields);
-    Object.defineProperty(this, "callbacks", {
-      enumerable: true,
-      configurable: true,
-      writable: true,
-      value: void 0
-    });
-    Object.defineProperty(this, "tags", {
-      enumerable: true,
-      configurable: true,
-      writable: true,
-      value: void 0
-    });
-    Object.defineProperty(this, "metadata", {
-      enumerable: true,
-      configurable: true,
-      writable: true,
-      value: void 0
-    });
-    Object.defineProperty(this, "verbose", {
-      enumerable: true,
-      configurable: true,
-      writable: true,
-      value: void 0
-    });
-    this.callbacks = fields?.callbacks;
-    this.tags = fields?.tags ?? [];
-    this.metadata = fields?.metadata ?? {};
-    this.verbose = fields?.verbose ?? false;
+  createDynamicSchema(vectorLength) {
+    return {
+      id: "string",
+      title: "string",
+      // basename of the TFile
+      path: "string",
+      // path of the TFile
+      content: "string",
+      embedding: `vector[${vectorLength}]`,
+      embeddingModel: "string",
+      created_at: "number",
+      ctime: "number",
+      mtime: "number",
+      tags: "string[]",
+      extension: "string"
+    };
   }
-  /**
-   * TODO: This should be an abstract method, but we'd like to avoid breaking
-   * changes to people currently using subclassed custom retrievers.
-   * Change it on next major release.
-   */
-  _getRelevantDocuments(_query, _callbacks) {
-    throw new Error("Not implemented!");
-  }
-  async invoke(input, options) {
-    return this.getRelevantDocuments(input, ensureConfig(options));
-  }
-  /**
-   * @deprecated Use .invoke() instead. Will be removed in 0.3.0.
-   *
-   * Main method used to retrieve relevant documents. It takes a query
-   * string and an optional configuration object, and returns a promise that
-   * resolves to an array of `Document` objects. This method handles the
-   * retrieval process, including starting and ending callbacks, and error
-   * handling.
-   * @param query The query string to retrieve relevant documents for.
-   * @param config Optional configuration object for the retrieval process.
-   * @returns A promise that resolves to an array of `Document` objects.
-   */
-  async getRelevantDocuments(query, config) {
-    const parsedConfig = ensureConfig(parseCallbackConfigArg(config));
-    const callbackManager_ = await CallbackManager.configure(parsedConfig.callbacks, this.callbacks, parsedConfig.tags, this.tags, parsedConfig.metadata, this.metadata, { verbose: this.verbose });
-    const runManager = await callbackManager_?.handleRetrieverStart(this.toJSON(), query, parsedConfig.runId, void 0, void 0, void 0, parsedConfig.runName);
+  async upsert(docToSave) {
+    if (!this.oramaDb)
+      throw new Error("DB not initialized");
     try {
-      const results = await this._getRelevantDocuments(query, runManager);
-      await runManager?.handleRetrieverEnd(results);
-      return results;
-    } catch (error) {
-      await runManager?.handleRetrieverError(error);
-      throw error;
+      const partition5 = this.chunkedStorage?.assignDocumentToPartition(
+        docToSave.id,
+        getSettings().numPartitions
+      );
+      const existingDoc = await search2(this.oramaDb, {
+        term: docToSave.id,
+        properties: ["id"],
+        limit: 1
+      });
+      if (existingDoc.hits.length > 0) {
+        await remove5(this.oramaDb, existingDoc.hits[0].id);
+      }
+      try {
+        await insert7(this.oramaDb, docToSave);
+        if (getSettings().debug) {
+          console.log(
+            `${existingDoc.hits.length > 0 ? "Updated" : "Inserted"} document ${docToSave.id} in partition ${partition5}`
+          );
+        }
+        this.markUnsavedChanges();
+        return docToSave;
+      } catch (insertErr) {
+        console.error(
+          `Failed to ${existingDoc.hits.length > 0 ? "update" : "insert"} document ${docToSave.id}:`,
+          insertErr
+        );
+        if (existingDoc.hits.length > 0) {
+          try {
+            await insert7(this.oramaDb, existingDoc.hits[0].document);
+          } catch (restoreErr) {
+            console.error("Failed to restore previous document version:", restoreErr);
+          }
+        }
+        return void 0;
+      }
+    } catch (err) {
+      console.error(`Error upserting document ${docToSave.id}:`, err);
+      return void 0;
+    }
+  }
+  async getLatestFileMtime() {
+    if (!this.oramaDb)
+      throw new Error("DB not initialized");
+    try {
+      const result = await search2(this.oramaDb, {
+        term: "",
+        limit: 1,
+        sortBy: {
+          property: "mtime",
+          order: "DESC"
+        }
+      });
+      if (result.hits.length > 0) {
+        const latestDoc = result.hits[0].document;
+        return latestDoc.mtime;
+      }
+      return 0;
+    } catch (err) {
+      console.error("Error getting latest file mtime from VectorDB:", err);
+      return 0;
+    }
+  }
+  async checkAndHandleEmbeddingModelChange(embeddingInstance) {
+    if (!this.oramaDb) {
+      console.error(
+        "Orama database not found. Please make sure you have a working embedding model."
+      );
+      return false;
+    }
+    const singleDoc = await search2(this.oramaDb, {
+      term: "",
+      limit: 1
+    });
+    let prevEmbeddingModel;
+    if (singleDoc.hits.length > 0) {
+      const oramaDocSample = singleDoc.hits[0];
+      if (typeof oramaDocSample === "object" && oramaDocSample !== null && "document" in oramaDocSample) {
+        const document2 = oramaDocSample.document;
+        prevEmbeddingModel = document2.embeddingModel;
+      }
+    }
+    if (prevEmbeddingModel) {
+      const currEmbeddingModel = EmbeddingManager.getModelName(embeddingInstance);
+      if (!areEmbeddingModelsSame(prevEmbeddingModel, currEmbeddingModel)) {
+        new import_obsidian6.Notice("New embedding model detected. Rebuilding Copilot index from scratch.");
+        console.log("Detected change in embedding model. Rebuilding Copilot index from scratch.");
+        this.oramaDb = await this.createNewDb(embeddingInstance);
+        await this.saveDB();
+        return true;
+      }
+    } else {
+      console.log("No previous embedding model found in the database.");
+    }
+    return false;
+  }
+  static async getAllDocuments(db) {
+    const result = await search2(db, {
+      term: "",
+      limit: 1e5
+    });
+    return result.hits.map((hit) => hit.document);
+  }
+  async garbageCollect() {
+    if (!this.oramaDb) {
+      throw new CustomError("Orama database not found.");
+    }
+    try {
+      const files = this.app.vault.getMarkdownFiles();
+      const filePaths = new Set(files.map((file) => file.path));
+      const docs = await DBOperations.getAllDocuments(this.oramaDb);
+      const docsToRemove = docs.filter((doc) => !filePaths.has(doc.path));
+      if (docsToRemove.length === 0) {
+        return 0;
+      }
+      console.log(
+        "Copilot index: Docs to remove during garbage collection:",
+        Array.from(new Set(docsToRemove.map((doc) => doc.path))).join(", ")
+      );
+      if (docsToRemove.length === 1) {
+        await remove5(this.oramaDb, docsToRemove[0].id);
+      } else {
+        await removeMultiple(
+          this.oramaDb,
+          docsToRemove.map((hit) => hit.id),
+          500
+        );
+      }
+      await this.saveDB();
+      return docsToRemove.length;
+    } catch (err) {
+      console.error("Error garbage collecting the Copilot index:", err);
+      throw new CustomError("Failed to garbage collect the Copilot index.");
+    }
+  }
+  async getIndexedFiles() {
+    if (!this.oramaDb) {
+      throw new CustomError("Orama database not found.");
+    }
+    try {
+      const docs = await DBOperations.getAllDocuments(this.oramaDb);
+      const uniquePaths = /* @__PURE__ */ new Set();
+      docs.forEach((doc) => {
+        uniquePaths.add(doc.path);
+      });
+      return Array.from(uniquePaths).sort();
+    } catch (err) {
+      console.error("Error getting indexed files:", err);
+      throw new CustomError("Failed to retrieve indexed files.");
+    }
+  }
+  async isIndexEmpty() {
+    if (!this.oramaDb) {
+      return true;
+    }
+    try {
+      const result = await search2(this.oramaDb, {
+        term: "",
+        limit: 1
+      });
+      return result.hits.length === 0;
+    } catch (err) {
+      console.error("Error checking if database is empty:", err);
+      throw new CustomError("Failed to check if database is empty.");
     }
   }
 };
 
 // src/search/hybridRetriever.ts
 var HybridRetriever = class extends BaseRetriever {
-  constructor(db, vault, llm, embeddingsInstance, brevilabsClient, options, debug4) {
+  constructor(dbOps, vault, llm, embeddingsInstance, brevilabsClient, options, debug4) {
     super();
-    this.db = db;
+    this.dbOps = dbOps;
     this.vault = vault;
     this.options = options;
     this.debug = debug4;
@@ -135050,7 +135032,11 @@ var HybridRetriever = class extends BaseRetriever {
     const explicitChunks = [];
     for (const noteTitle of noteTitles) {
       const noteFile = await getNoteFileFromTitle(this.vault, noteTitle);
-      const hits = await vectorDBManager_default.getDocsByPath(this.db, noteFile?.path ?? "");
+      const db = this.dbOps.getDb();
+      if (!db) {
+        throw new Error("Database not initialized");
+      }
+      const hits = await DBOperations.getDocsByPath(db, noteFile?.path ?? "");
       if (hits) {
         const matchingChunks = hits.map(
           (hit) => new Document2({
@@ -135090,6 +135076,10 @@ var HybridRetriever = class extends BaseRetriever {
         query
       );
       throw error;
+    }
+    const db = this.dbOps.getDb();
+    if (!db) {
+      throw new Error("Database not initialized");
     }
     const searchParams = {
       similarity: this.options.minSimilarityScore,
@@ -135134,10 +135124,8 @@ var HybridRetriever = class extends BaseRetriever {
       };
     }
     if (this.options.timeRange) {
-      const { startDate, endDate } = this.options.timeRange;
-      const startTimestamp = new Date(startDate).getTime();
-      const endTimestamp = new Date(endDate).getTime();
-      const dateRange = this.generateDateRange(startDate, endDate);
+      const { startTime, endTime } = this.options.timeRange;
+      const dateRange = this.generateDateRange(startTime, endTime);
       if (this.debug) {
         console.log(
           "==== Daily note date range: ====",
@@ -135154,13 +135142,13 @@ var HybridRetriever = class extends BaseRetriever {
         }
       }));
       if (this.debug) {
-        console.log("==== Modified and created time range: ====", startTimestamp, endTimestamp);
+        console.log("==== Modified and created time range: ====", startTime, endTime);
       }
       searchParams.where = {
-        ctime: { between: [startTimestamp, endTimestamp] },
-        mtime: { between: [startTimestamp, endTimestamp] }
+        ctime: { between: [startTime, endTime] },
+        mtime: { between: [startTime, endTime] }
       };
-      const timeIntervalResults = await search2(this.db, searchParams);
+      const timeIntervalResults = await search2(db, searchParams);
       const timeIntervalDocuments = timeIntervalResults.hits.map(
         (hit) => new Document2({
           pageContent: hit.document.content,
@@ -135186,7 +135174,7 @@ var HybridRetriever = class extends BaseRetriever {
       );
       return uniqueResults.filter((doc) => doc !== void 0);
     }
-    const searchResults = await search2(this.db, searchParams);
+    const searchResults = await search2(db, searchParams);
     return searchResults.hits.map(
       (hit) => new Document2({
         pageContent: hit.document.content,
@@ -135210,13 +135198,14 @@ var HybridRetriever = class extends BaseRetriever {
   async convertQueryToVector(query) {
     return await this.embeddingsInstance.embedQuery(query);
   }
-  generateDateRange(startDate, endDate) {
+  generateDateRange(startTime, endTime) {
     const dateRange = [];
-    const currentDate = new Date(startDate);
-    const end = new Date(endDate);
-    while (currentDate <= end) {
-      dateRange.push(`${currentDate.toISOString().split("T")[0]}`);
-      currentDate.setDate(currentDate.getDate() + 1);
+    const start = new Date(startTime);
+    const end = new Date(endTime);
+    const current = new Date(start);
+    while (current <= end) {
+      dateRange.push(current.toLocaleDateString("en-CA"));
+      current.setDate(current.getDate() + 1);
     }
     return dateRange;
   }
@@ -135259,19 +135248,15 @@ var localSearchTool = tool(
     if (indexEmpty) {
       throw new CustomError(EMPTY_INDEX_ERROR_MESSAGE);
     }
-    const embeddingsManager = vectorStoreManager.getEmbeddingsManager();
-    const vault = vectorStoreManager.getVault();
+    const embeddingsManager = EmbeddingManager.getInstance();
+    const vault = app.vault;
     const embeddingInstance = embeddingsManager?.getEmbeddingsAPI();
     if (!embeddingInstance) {
       throw new CustomError("Embedding instance not found.");
     }
     const returnAll = timeRange !== void 0;
-    const db = vectorStoreManager.getDb();
-    if (!db) {
-      throw new CustomError("Orama database not found.");
-    }
     const hybridRetriever = new HybridRetriever(
-      db,
+      vectorStoreManager.dbOps,
       vault,
       chatModelManager.getChatModel(),
       embeddingInstance,
@@ -135281,8 +135266,8 @@ var localSearchTool = tool(
         maxK: returnAll ? 100 : 15,
         salientTerms,
         timeRange: timeRange ? {
-          startDate: timeRange.startTime.localDateString,
-          endDate: timeRange.endTime.localDateString
+          startTime: timeRange.startTime.epoch,
+          endTime: timeRange.endTime.epoch
         } : void 0,
         textWeight: TEXT_WEIGHT,
         returnAll,
@@ -144464,7 +144449,7 @@ function friendlyDateTime(dateTimeish) {
 }
 
 // src/tools/TimeTools.ts
-var import_obsidian6 = require("obsidian");
+var import_obsidian7 = require("obsidian");
 init_lib();
 async function getCurrentTime() {
   const now3 = new Date();
@@ -144490,102 +144475,164 @@ var getCurrentTimeTool = tool(async () => getCurrentTime(), {
   schema: z.object({})
   // No input required
 });
+var monthNames = {
+  jan: 1,
+  january: 1,
+  feb: 2,
+  february: 2,
+  mar: 3,
+  march: 3,
+  apr: 4,
+  april: 4,
+  may: 5,
+  jun: 6,
+  june: 6,
+  jul: 7,
+  july: 7,
+  aug: 8,
+  august: 8,
+  sep: 9,
+  september: 9,
+  oct: 10,
+  october: 10,
+  nov: 11,
+  november: 11,
+  dec: 12,
+  december: 12
+};
 function getTimeRangeMs(timeExpression) {
   const now3 = DateTime.now();
   let start;
   let end;
-  const monthNames = {
-    jan: 1,
-    january: 1,
-    feb: 2,
-    february: 2,
-    mar: 3,
-    march: 3,
-    apr: 4,
-    april: 4,
-    may: 5,
-    jun: 6,
-    june: 6,
-    jul: 7,
-    july: 7,
-    aug: 8,
-    august: 8,
-    sep: 9,
-    september: 9,
-    oct: 10,
-    october: 10,
-    nov: 11,
-    november: 11,
-    dec: 12,
-    december: 12
-  };
-  const normalizedInput = timeExpression.toLowerCase().trim();
-  if (monthNames[normalizedInput]) {
-    const monthNum = monthNames[normalizedInput];
+  const normalizedInput = timeExpression.toLowerCase().replace("@vault", "").trim();
+  switch (normalizedInput) {
+    case "yesterday":
+      start = now3.minus({ days: 1 }).startOf("day");
+      end = now3.minus({ days: 1 }).endOf("day");
+      return {
+        startTime: convertToTimeInfo(start),
+        endTime: convertToTimeInfo(end)
+      };
+    case "last week":
+      start = now3.minus({ weeks: 1 }).startOf("week");
+      end = now3.minus({ weeks: 1 }).endOf("week");
+      return {
+        startTime: convertToTimeInfo(start),
+        endTime: convertToTimeInfo(end)
+      };
+    case "this week":
+      start = now3.startOf("week");
+      end = now3.endOf("week");
+      return {
+        startTime: convertToTimeInfo(start),
+        endTime: convertToTimeInfo(end)
+      };
+    case "next week":
+      start = now3.plus({ weeks: 1 }).startOf("week");
+      end = now3.plus({ weeks: 1 }).endOf("week");
+      return {
+        startTime: convertToTimeInfo(start),
+        endTime: convertToTimeInfo(end)
+      };
+    case "last month":
+      start = now3.minus({ months: 1 }).startOf("month");
+      end = now3.minus({ months: 1 }).endOf("month");
+      return {
+        startTime: convertToTimeInfo(start),
+        endTime: convertToTimeInfo(end)
+      };
+    case "this month":
+      start = now3.startOf("month");
+      end = now3.endOf("month");
+      return {
+        startTime: convertToTimeInfo(start),
+        endTime: convertToTimeInfo(end)
+      };
+    case "next month":
+      start = now3.plus({ months: 1 }).startOf("month");
+      end = now3.plus({ months: 1 }).endOf("month");
+      return {
+        startTime: convertToTimeInfo(start),
+        endTime: convertToTimeInfo(end)
+      };
+    case "last year":
+      start = now3.minus({ years: 1 }).startOf("year");
+      end = now3.minus({ years: 1 }).endOf("year");
+      return {
+        startTime: convertToTimeInfo(start),
+        endTime: convertToTimeInfo(end)
+      };
+    case "this year":
+      start = now3.startOf("year");
+      end = now3.endOf("year");
+      return {
+        startTime: convertToTimeInfo(start),
+        endTime: convertToTimeInfo(end)
+      };
+    case "next year":
+      start = now3.plus({ years: 1 }).startOf("year");
+      end = now3.plus({ years: 1 }).endOf("year");
+      return {
+        startTime: convertToTimeInfo(start),
+        endTime: convertToTimeInfo(end)
+      };
+  }
+  const weekOfMatch = normalizedInput.match(/(?:the\s+)?week\s+of\s+(.+)/i);
+  if (weekOfMatch) {
+    const dateStr = weekOfMatch[1];
+    const parsedDates2 = parse3(dateStr, now3.toJSDate(), { forwardDate: false });
+    if (parsedDates2.length > 0) {
+      start = DateTime.fromJSDate(parsedDates2[0].start.date()).startOf("week");
+      end = start.endOf("week");
+      if (start > now3) {
+        start = start.minus({ years: 1 });
+        end = end.minus({ years: 1 });
+      }
+      return {
+        startTime: convertToTimeInfo(start),
+        endTime: convertToTimeInfo(end)
+      };
+    }
+  }
+  const monthMatch = normalizedInput.match(
+    /^(jan|january|feb|february|mar|march|apr|april|may|jun|june|jul|july|aug|august|sep|september|oct|october|nov|november|dec|december)$/i
+  );
+  if (monthMatch) {
+    const monthNum = monthNames[monthMatch[1]];
     let year = now3.year;
     if (monthNum > now3.month) {
       year--;
     }
-    start = DateTime.fromObject({ year, month: monthNum }).startOf("month");
+    start = DateTime.fromObject({
+      year,
+      month: monthNum,
+      day: 1
+    });
     end = start.endOf("month");
-  } else {
-    switch (normalizedInput) {
-      case "yesterday":
-        start = now3.minus({ days: 1 }).startOf("day");
-        end = now3.minus({ days: 1 }).endOf("day");
-        break;
-      case "last week":
-        start = now3.minus({ weeks: 1 }).startOf("week");
-        end = now3.minus({ weeks: 1 }).endOf("week");
-        break;
-      case "this week":
-        start = now3.startOf("week");
-        end = now3.endOf("week");
-        break;
-      case "next week":
-        start = now3.plus({ weeks: 1 }).startOf("week");
-        end = now3.plus({ weeks: 1 }).endOf("week");
-        break;
-      case "last month":
-        start = now3.minus({ months: 1 }).startOf("month");
-        end = now3.minus({ months: 1 }).endOf("month");
-        break;
-      case "this month":
-        start = now3.startOf("month");
-        end = now3.endOf("month");
-        break;
-      case "next month":
-        start = now3.plus({ months: 1 }).startOf("month");
-        end = now3.plus({ months: 1 }).endOf("month");
-        break;
-      case "last year":
-        start = now3.minus({ years: 1 }).startOf("year");
-        end = now3.minus({ years: 1 }).endOf("year");
-        break;
-      case "this year":
-        start = now3.startOf("year");
-        end = now3.endOf("year");
-        break;
-      case "next year":
-        start = now3.plus({ years: 1 }).startOf("year");
-        end = now3.plus({ years: 1 }).endOf("year");
-        break;
-      default: {
-        const parsedDates = parse3(timeExpression, now3.toJSDate(), { forwardDate: false });
-        if (parsedDates.length > 0) {
-          start = DateTime.fromJSDate(parsedDates[0].start.date());
-          end = parsedDates[0].end ? DateTime.fromJSDate(parsedDates[0].end.date()) : start.endOf("month");
-          if (start > now3) {
-            start = start.minus({ years: 1 });
-            end = end.minus({ years: 1 });
-          }
-        } else {
-          console.warn(`Unable to parse time expression: ${timeExpression}`);
-          return;
-        }
-        break;
-      }
+    if (start > now3) {
+      start = start.minus({ years: 1 });
+      end = end.minus({ years: 1 });
     }
+    if (start > end) {
+      [start, end] = [end, start];
+    }
+    return {
+      startTime: convertToTimeInfo(start),
+      endTime: convertToTimeInfo(end)
+    };
+  }
+  timeExpression = timeExpression.replace("@vault", "");
+  const parsedDates = parse3(timeExpression, now3.toJSDate(), { forwardDate: false });
+  if (parsedDates.length > 0) {
+    start = DateTime.fromJSDate(parsedDates[0].start.date()).startOf("day");
+    end = parsedDates[0].end ? DateTime.fromJSDate(parsedDates[0].end.date()).endOf("day") : start.endOf("day");
+    if (start > now3) {
+      start = start.minus({ years: 1 });
+      end = end.minus({ years: 1 });
+    }
+  } else {
+    console.warn(`Unable to parse time expression: ${timeExpression}`);
+    return;
   }
   return {
     startTime: convertToTimeInfo(start),
@@ -144667,7 +144714,7 @@ async function startPomodoro(interval = "25min") {
   const duration = parseTimeInterval(interval);
   return new Promise((resolve) => {
     setTimeout(() => {
-      new import_obsidian6.Notice(`Pomodoro timer (${interval}) completed! Take a break!`);
+      new import_obsidian7.Notice(`Pomodoro timer (${interval}) completed! Take a break!`);
       resolve();
     }, duration);
   });
@@ -144872,7 +144919,7 @@ var BaseChainRunner = class {
         timestamp: formatDateTime(new Date())
       });
     } else {
-      new import_obsidian7.Notice(errorMessage);
+      new import_obsidian8.Notice(errorMessage);
       console.error(errorData);
     }
   }
@@ -145247,7 +145294,7 @@ ${formattedDocs}`;
 
 // src/LLMProviders/chainManager.ts
 init_prompts3();
-var import_obsidian9 = require("obsidian");
+var import_obsidian10 = require("obsidian");
 
 // node_modules/@anthropic-ai/sdk/error.mjs
 var error_exports2 = {};
@@ -150897,7 +150944,7 @@ var ChatGroq = class extends BaseChatModel {
 };
 
 // src/LLMProviders/chatModelManager.ts
-var import_obsidian8 = require("obsidian");
+var import_obsidian9 = require("obsidian");
 var CHAT_PROVIDER_CONSTRUCTORS = {
   ["openai" /* OPENAI */]: ChatOpenAI,
   ["azure openai" /* AZURE_OPENAI */]: ChatOpenAI,
@@ -151105,7 +151152,7 @@ var ChatModelManager = class {
     const selectedModel = ChatModelManager.modelMap[modelKey];
     if (!selectedModel.hasApiKey) {
       const errorMessage = `API key is not provided for the model: ${modelKey}. Model switch failed.`;
-      new import_obsidian8.Notice(errorMessage);
+      new import_obsidian9.Notice(errorMessage);
       throw new Error(errorMessage);
     }
     const modelConfig = this.getModelConfig(model);
@@ -151117,7 +151164,7 @@ var ChatModelManager = class {
       ChatModelManager.chatModel = newModelInstance;
     } catch (error) {
       console.error(error);
-      new import_obsidian8.Notice(`Error creating model: ${modelKey}`);
+      new import_obsidian9.Notice(`Error creating model: ${modelKey}`);
     }
   }
   validateChatModel(chatModel) {
@@ -151139,6 +151186,34 @@ var ChatModelManager = class {
     if (!selectedModel?.hasApiKey) {
       ChatModelManager.chatModel = null;
       console.log("Failed to reinitialize model due to missing API key");
+    }
+  }
+  async ping(model) {
+    const tryPing = async (enableCors) => {
+      const modelToTest = { ...model, enableCors };
+      const modelConfig = this.getModelConfig(modelToTest);
+      const { streaming, temperature, ...pingConfig } = modelConfig;
+      pingConfig.maxTokens = 10;
+      const testModel = new (this.getProviderConstructor(modelToTest))(pingConfig);
+      await testModel.invoke([{ role: "user", content: "hello" }], {
+        timeout: 3e3
+      });
+    };
+    try {
+      await tryPing(false);
+      return true;
+    } catch (error) {
+      console.log("First ping attempt failed, trying with CORS...");
+      try {
+        await tryPing(true);
+        new import_obsidian9.Notice(
+          "Connection successful, but requires CORS to be enabled. Please enable CORS for this model once you add it above."
+        );
+        return true;
+      } catch (error2) {
+        console.error("Chat model ping failed:", error2);
+        throw error2;
+      }
     }
   }
 };
@@ -151501,7 +151576,7 @@ var _ChainManager = class {
     this.vectorStoreManager = vectorStoreManager;
     this.memoryManager = MemoryManager.getInstance();
     this.chatModelManager = ChatModelManager.getInstance();
-    this.embeddingsManager = this.vectorStoreManager.getEmbeddingsManager();
+    this.embeddingsManager = EmbeddingManager.getInstance();
     this.promptManager = PromptManager.getInstance();
     this.brevilabsClient = brevilabsClient;
     this.createChainWithNewModel();
@@ -151526,7 +151601,7 @@ var _ChainManager = class {
   validateChatModel() {
     if (!this.chatModelManager.validateChatModel(this.chatModelManager.getChatModel())) {
       const errorMsg = "Chat model is not initialized properly, check your API key in Copilot setting and make sure you have API access.";
-      new import_obsidian9.Notice(errorMsg);
+      new import_obsidian10.Notice(errorMsg);
       throw new Error(errorMsg);
     }
   }
@@ -151581,9 +151656,9 @@ var _ChainManager = class {
         break;
       }
       case "vault_qa" /* VAULT_QA_CHAIN */: {
-        const { embeddingsAPI, db } = await this.initializeQAChain(options);
+        const { embeddingsAPI } = await this.initializeQAChain(options);
         const retriever = new HybridRetriever(
-          db,
+          this.vectorStoreManager.dbOps,
           this.app.vault,
           chatModel,
           embeddingsAPI,
@@ -151645,14 +151720,7 @@ var _ChainManager = class {
     if (!embeddingsAPI) {
       throw new Error("Error getting embeddings API. Please check your settings.");
     }
-    let db = this.vectorStoreManager.getDb();
-    if (!db) {
-      console.warn("Copilot index is not loaded. Reinitializing...");
-      db = await this.vectorStoreManager.initializeDB();
-      if (!db) {
-        throw new Error("Database failed to initialize. Please check your settings.");
-      }
-    }
+    const db = await this.vectorStoreManager.getOrInitializeDb(embeddingsAPI);
     if (options.refreshIndex) {
       await this.vectorStoreManager.indexVaultToVectorStore();
     }
@@ -151704,710 +151772,6 @@ var _ChainManager = class {
 };
 var ChainManager = _ChainManager;
 ChainManager.retrievedDocuments = [];
-
-// src/VectorStoreManager.ts
-var import_crypto_js2 = __toESM(require_crypto_js());
-var import_obsidian10 = require("obsidian");
-var VectorStoreManager = class {
-  constructor(app2) {
-    this.isIndexingPaused = false;
-    this.isIndexingCancelled = false;
-    this.currentIndexingNotice = null;
-    this.indexNoticeMessage = null;
-    this.indexedCount = 0;
-    this.totalFilesToIndex = 0;
-    this.isIndexLoaded = false;
-    this.excludedFiles = /* @__PURE__ */ new Set();
-    this.debounceDelay = 1e4;
-    // 10 seconds
-    this.debounceTimer = null;
-    this.saveDBTimer = null;
-    this.saveDBDelay = 12e4;
-    // Save full DB every 120 seconds
-    this.hasUnsavedChanges = false;
-    this.debouncedReindexFile = (file) => {
-      if (this.debounceTimer !== null) {
-        window.clearTimeout(this.debounceTimer);
-      }
-      this.debounceTimer = window.setTimeout(() => {
-        if (getSettings().debug) {
-          console.log("Copilot Plus: Triggering reindex for file ", file.path);
-        }
-        this.reindexFile(file);
-        this.debounceTimer = null;
-      }, this.debounceDelay);
-    };
-    this.handleFileModify = async (file) => {
-      await this.updateExcludedFiles();
-      const currentChainType = getChainType();
-      if (file instanceof import_obsidian10.TFile && file.extension === "md" && currentChainType === "copilot_plus" /* COPILOT_PLUS_CHAIN */) {
-        const includedFiles = await this.getFilePathsForQA("inclusions");
-        const shouldProcess = includedFiles.size > 0 ? includedFiles.has(file.path) : !this.excludedFiles.has(file.path);
-        if (shouldProcess) {
-          this.debouncedReindexFile(file);
-        }
-      }
-    };
-    this.handleFileDelete = async (file) => {
-      if (file instanceof import_obsidian10.TFile) {
-        await this.removeDocs(file.path);
-      }
-    };
-    this.updateExcludedFiles = async () => {
-      this.excludedFiles = await this.getFilePathsForQA("exclusions");
-    };
-    this.app = app2;
-    this.embeddingsManager = EmbeddingManager.getInstance();
-    this.initializationPromise = this.initializeDB().then(() => {
-      this.performPostInitializationTasks();
-    }).catch((error) => {
-      console.error("Failed to initialize Copilot database:", error);
-    });
-    this.updateExcludedFiles();
-    this.initializePeriodicSave();
-    subscribeToSettingsChange(async () => {
-      const settings = getSettings();
-      const prevSettings = this.lastKnownSettings;
-      this.lastKnownSettings = { ...settings };
-      if (settings.enableIndexSync !== prevSettings?.enableIndexSync) {
-        const newDbPath = await this.getDbPath();
-        if (newDbPath !== this.dbPath) {
-          this.dbPath = newDbPath;
-          await this.initializeDB();
-        }
-      }
-      if (settings.qaExclusions !== prevSettings?.qaExclusions || settings.qaInclusions !== prevSettings?.qaInclusions) {
-        await this.updateExcludedFiles();
-      }
-    });
-  }
-  initializePeriodicSave() {
-    if (this.saveDBTimer !== null) {
-      window.clearInterval(this.saveDBTimer);
-    }
-    this.saveDBTimer = window.setInterval(() => {
-      if (this.hasUnsavedChanges) {
-        this.saveDB();
-        this.hasUnsavedChanges = false;
-      }
-    }, this.saveDBDelay);
-  }
-  async performPostInitializationTasks() {
-    if (getSettings().indexVaultToVectorStore === "ON STARTUP" /* ON_STARTUP */) {
-      try {
-        await this.indexVaultToVectorStore();
-      } catch (err) {
-        console.error("Error indexing vault to Copilot index on startup:", err);
-        new import_obsidian10.Notice("An error occurred while indexing vault to Copilot index.");
-      }
-    }
-  }
-  async getDbPath() {
-    if (getSettings().enableIndexSync) {
-      return `${this.app.vault.configDir}/copilot-index-${this.getVaultIdentifier()}.json`;
-    }
-    const vaultRoot = this.app.vault.getRoot().path;
-    const indexDir = `${vaultRoot}/.copilot-index`;
-    if (!await this.app.vault.adapter.exists(indexDir)) {
-      await this.app.vault.adapter.mkdir(indexDir);
-    }
-    return `${indexDir}/copilot-index-${this.getVaultIdentifier()}.json`;
-  }
-  createDynamicSchema(vectorLength) {
-    return {
-      id: "string",
-      title: "string",
-      // basename of the TFile
-      path: "string",
-      // path of the TFile
-      content: "string",
-      embedding: `vector[${vectorLength}]`,
-      embeddingModel: "string",
-      created_at: "number",
-      ctime: "number",
-      mtime: "number",
-      tags: "string[]",
-      extension: "string"
-    };
-  }
-  async initializeDB() {
-    if (import_obsidian10.Platform.isMobile && getSettings().disableIndexOnMobile) {
-      console.log("Index loading disabled on mobile device");
-      this.isIndexLoaded = false;
-      this.oramaDb = void 0;
-      return;
-    }
-    this.dbPath = await this.getDbPath();
-    const configDir = this.app.vault.configDir;
-    if (!await this.app.vault.adapter.exists(configDir)) {
-      console.log(`Config directory does not exist. Creating: ${configDir}`);
-      await this.app.vault.adapter.mkdir(configDir);
-    }
-    try {
-      if (await this.app.vault.adapter.exists(this.dbPath)) {
-        const savedDb = await this.app.vault.adapter.read(this.dbPath);
-        const parsedDb = JSON.parse(savedDb);
-        const schema = parsedDb.schema;
-        const newDb = await create8({ schema });
-        await load5(newDb, parsedDb);
-        console.log(`Loaded existing Orama database for ${this.dbPath} from disk.`);
-        this.isIndexLoaded = true;
-        this.oramaDb = newDb;
-        return newDb;
-      } else {
-        const newDb = await this.createNewDb();
-        this.oramaDb = newDb;
-        return newDb;
-      }
-    } catch (error) {
-      console.error(`Error initializing Orama database:`, error);
-      if (import_obsidian10.Platform.isMobile && getSettings().disableIndexOnMobile) {
-        return;
-      }
-      const newDb = await this.createNewDb();
-      this.oramaDb = newDb;
-      return newDb;
-    }
-  }
-  async getIsIndexLoaded() {
-    await this.initializationPromise;
-    return this.isIndexLoaded;
-  }
-  async createNewDb() {
-    const embeddingInstance = this.embeddingsManager.getEmbeddingsAPI();
-    if (!embeddingInstance) {
-      throw new CustomError("Embedding instance not found.");
-    }
-    const vectorLength = await this.getVectorLength(embeddingInstance);
-    if (!vectorLength || vectorLength === 0) {
-      throw new CustomError(
-        "Invalid vector length detected. Please check if your embedding model is working."
-      );
-    }
-    const schema = this.createDynamicSchema(vectorLength);
-    const db = await create8({
-      schema,
-      components: {
-        tokenizer: {
-          stemmer: void 0,
-          stopWords: void 0
-        }
-      }
-    });
-    console.log(
-      `Created new Orama database for ${this.dbPath}. Embedding model: ${EmbeddingManager.getModelName(embeddingInstance)} with vector length ${vectorLength}.`
-    );
-    this.isIndexLoaded = true;
-    return db;
-  }
-  getVault() {
-    return this.app.vault;
-  }
-  async getVectorLength(embeddingInstance) {
-    try {
-      const sampleText = "Sample text for embedding";
-      const sampleEmbedding = await embeddingInstance.embedQuery(sampleText);
-      if (!sampleEmbedding || sampleEmbedding.length === 0) {
-        throw new CustomError("Failed to get valid embedding vector length");
-      }
-      console.log(
-        `Detected vector length: ${sampleEmbedding.length} for model: ${EmbeddingManager.getModelName(embeddingInstance)}`
-      );
-      return sampleEmbedding.length;
-    } catch (error) {
-      console.error("Error getting vector length:", error);
-      throw new CustomError(
-        "Failed to determine embedding vector length. Please check your embedding model settings."
-      );
-    }
-  }
-  async ensureCorrectSchema(db, embeddingInstance) {
-    const currentVectorLength = await this.getVectorLength(embeddingInstance);
-    const dbSchema = db.schema;
-    if (dbSchema.embedding !== `vector[${currentVectorLength}]`) {
-      console.log(
-        `Schema mismatch detected. Rebuilding database with new vector length: ${currentVectorLength}`
-      );
-      await this.clearIndex();
-    }
-  }
-  async saveDB() {
-    if (import_obsidian10.Platform.isMobile && getSettings().disableIndexOnMobile) {
-      return;
-    }
-    try {
-      if (!this.oramaDb) {
-        throw new CustomError("Orama database not found.");
-      }
-      const rawData = await save5(this.oramaDb);
-      const dataToSave = {
-        schema: this.oramaDb.schema,
-        ...rawData
-      };
-      const dbDir = this.dbPath.substring(0, this.dbPath.lastIndexOf("/"));
-      if (!await this.app.vault.adapter.exists(dbDir)) {
-        await this.app.vault.adapter.mkdir(dbDir);
-      }
-      const saveOperation = async () => {
-        try {
-          await this.app.vault.adapter.write(this.dbPath, JSON.stringify(dataToSave));
-          if (getSettings().debug) {
-            console.log(`Saved Orama database to ${this.dbPath}.`);
-          }
-        } catch (error) {
-          console.error(`Error saving Orama database to ${this.dbPath}:`, error);
-        }
-      };
-      if (typeof window.requestIdleCallback !== "undefined") {
-        window.requestIdleCallback(() => saveOperation(), { timeout: 2e3 });
-      } else {
-        setTimeout(saveOperation, 0);
-      }
-    } catch (error) {
-      console.error(`Error preparing Orama database save:`, error);
-    }
-  }
-  getVaultIdentifier() {
-    const vaultName = this.app.vault.getName();
-    return (0, import_crypto_js2.MD5)(vaultName).toString();
-  }
-  getDb() {
-    return this.oramaDb;
-  }
-  getEmbeddingsManager() {
-    return this.embeddingsManager;
-  }
-  pauseIndexing() {
-    this.isIndexingPaused = true;
-    this.updateIndexingNoticeMessage();
-  }
-  resumeIndexing() {
-    this.isIndexingPaused = false;
-    this.updateIndexingNoticeMessage();
-  }
-  updateIndexingNoticeMessage() {
-    if (this.indexNoticeMessage) {
-      const status = this.isIndexingPaused ? " (Paused)" : "";
-      const folders = this.extractAppIgnoreSettings();
-      const filterType = getSettings().qaInclusions ? `Inclusions: ${getSettings().qaInclusions}` : `Exclusions: ${folders.join(", ") + (folders.length ? ", " : "") + getSettings().qaExclusions || "None"}`;
-      this.indexNoticeMessage.textContent = `Copilot is indexing your vault...
-${this.indexedCount}/${this.totalFilesToIndex} files processed.${status}
-` + filterType;
-    }
-  }
-  createIndexingNotice() {
-    const frag = document.createDocumentFragment();
-    const container = frag.createEl("div", { cls: "copilot-notice-container" });
-    this.indexNoticeMessage = container.createEl("div", { cls: "copilot-notice-message" });
-    this.updateIndexingNoticeMessage();
-    const pauseButton = frag.createEl("button");
-    pauseButton.textContent = "Pause";
-    pauseButton.addEventListener("click", (event) => {
-      event.stopPropagation();
-      event.preventDefault();
-      if (this.isIndexingPaused) {
-        this.resumeIndexing();
-        pauseButton.textContent = "Pause";
-      } else {
-        this.pauseIndexing();
-        pauseButton.textContent = "Resume";
-      }
-    });
-    frag.appendChild(this.indexNoticeMessage);
-    frag.appendChild(pauseButton);
-    return new import_obsidian10.Notice(frag, 0);
-  }
-  async getFilePathsForQA(filterType) {
-    const targetFiles = /* @__PURE__ */ new Set();
-    if (filterType === "exclusions") {
-      const exclusions = [];
-      exclusions.push(...this.extractAppIgnoreSettings());
-      if (getSettings().qaExclusions) {
-        exclusions.push(
-          ...getSettings().qaExclusions.split(",").map((item) => item.trim())
-        );
-      }
-      const excludedFilePaths = await getFilePathsFromPatterns(exclusions, this.app.vault);
-      excludedFilePaths.forEach((filePath) => targetFiles.add(filePath));
-    } else if (filterType === "inclusions" && getSettings().qaInclusions) {
-      const inclusions = getSettings().qaInclusions.split(",").map((item) => item.trim());
-      const includedFilePaths = await getFilePathsFromPatterns(inclusions, this.app.vault);
-      includedFilePaths.forEach((filePath) => targetFiles.add(filePath));
-    }
-    return targetFiles;
-  }
-  extractAppIgnoreSettings() {
-    const appIgnoreFolders = [];
-    try {
-      const userIgnoreFilters = app.vault.getConfig("userIgnoreFilters");
-      if (!!userIgnoreFilters && Array.isArray(userIgnoreFilters)) {
-        userIgnoreFilters.forEach((it) => {
-          if (typeof it === "string") {
-            appIgnoreFolders.push(it.endsWith("/") ? it.slice(0, -1) : it);
-          }
-        });
-      }
-    } catch (e3) {
-      console.warn("Error getting userIgnoreFilters from Obsidian config", e3);
-    }
-    return appIgnoreFolders;
-  }
-  async getAllQAMarkdownContent() {
-    let allContent = "";
-    const includedFiles = await this.getFilePathsForQA("inclusions");
-    const excludedFiles = await this.getFilePathsForQA("exclusions");
-    const filteredFiles = this.app.vault.getMarkdownFiles().filter((file) => {
-      if (includedFiles.size > 0) {
-        return includedFiles.has(file.path);
-      }
-      return !excludedFiles.has(file.path);
-    });
-    await Promise.all(filteredFiles.map((file) => this.app.vault.cachedRead(file))).then(
-      (contents) => contents.map((c4) => allContent += c4 + " ")
-    );
-    return allContent;
-  }
-  async checkAndHandleEmbeddingModelChange(db, embeddingInstance) {
-    const singleDoc = await search2(db, {
-      term: "",
-      limit: 1
-    });
-    let prevEmbeddingModel;
-    if (singleDoc.hits.length > 0) {
-      const oramaDocSample = singleDoc.hits[0];
-      if (typeof oramaDocSample === "object" && oramaDocSample !== null && "document" in oramaDocSample) {
-        const document2 = oramaDocSample.document;
-        prevEmbeddingModel = document2.embeddingModel;
-      }
-    }
-    if (prevEmbeddingModel) {
-      const currEmbeddingModel = EmbeddingManager.getModelName(embeddingInstance);
-      if (!areEmbeddingModelsSame(prevEmbeddingModel, currEmbeddingModel)) {
-        new import_obsidian10.Notice("New embedding model detected. Rebuilding Copilot index from scratch.");
-        console.log("Detected change in embedding model. Rebuilding Copilot index from scratch.");
-        this.oramaDb = await this.createNewDb();
-        await this.saveDB();
-        return true;
-      }
-    } else {
-      console.log("No previous embedding model found in the database.");
-    }
-    return false;
-  }
-  async indexVaultToVectorStore(overwrite) {
-    await this.waitForInitialization();
-    if (import_obsidian10.Platform.isMobile && getSettings().disableIndexOnMobile) {
-      new import_obsidian10.Notice("Indexing is disabled on mobile devices");
-      return 0;
-    }
-    if (!this.oramaDb) {
-      new import_obsidian10.Notice("Orama database not found. Please make sure you have a working embedding model.");
-      throw new CustomError("Orama database not found.");
-    }
-    let rateLimitNoticeShown = false;
-    try {
-      const embeddingInstance = this.embeddingsManager.getEmbeddingsAPI();
-      if (!embeddingInstance) {
-        throw new CustomError("Embedding instance not found.");
-      }
-      await this.ensureCorrectSchema(this.oramaDb, embeddingInstance);
-      const modelChanged = await this.checkAndHandleEmbeddingModelChange(
-        this.oramaDb,
-        embeddingInstance
-      );
-      if (modelChanged) {
-        overwrite = true;
-      }
-      const latestMtime = await vectorDBManager_default.getLatestFileMtime(this.oramaDb);
-      this.isIndexingPaused = false;
-      this.isIndexingCancelled = false;
-      const includedFiles = await this.getFilePathsForQA("inclusions");
-      const excludedFiles = await this.getFilePathsForQA("exclusions");
-      const files = this.app.vault.getMarkdownFiles().filter((file) => {
-        if (!latestMtime || overwrite)
-          return true;
-        return file.stat.mtime > latestMtime;
-      }).filter((file) => {
-        if (includedFiles.size > 0) {
-          return includedFiles.has(file.path);
-        }
-        return !excludedFiles.has(file.path);
-      });
-      const fileContents = await Promise.all(
-        files.map((file) => this.app.vault.cachedRead(file))
-      );
-      const fileMetadatas = files.map((file) => this.app.metadataCache.getFileCache(file));
-      const totalFiles = files.length;
-      if (totalFiles === 0) {
-        new import_obsidian10.Notice("Copilot vault index is up-to-date.");
-        return 0;
-      }
-      this.indexedCount = 0;
-      this.totalFilesToIndex = totalFiles;
-      this.currentIndexingNotice = this.createIndexingNotice();
-      const CHECKPOINT_INTERVAL = 50;
-      const errors2 = [];
-      for (let index2 = 0; index2 < files.length; index2++) {
-        if (this.isIndexingCancelled) {
-          break;
-        }
-        while (this.isIndexingPaused) {
-          await new Promise((resolve) => setTimeout(resolve, 100));
-        }
-        const file = files[index2];
-        try {
-          const fileToSave = {
-            title: file.basename,
-            path: file.path,
-            content: fileContents[index2],
-            embeddingModel: EmbeddingManager.getModelName(embeddingInstance),
-            ctime: file.stat.ctime,
-            mtime: file.stat.mtime,
-            tags: fileMetadatas[index2]?.tags?.map((tag) => tag.tag) ?? [],
-            extension: file.extension,
-            metadata: fileMetadatas[index2]?.frontmatter ?? {}
-          };
-          await vectorDBManager_default.indexFile(this.oramaDb, embeddingInstance, fileToSave);
-          this.indexedCount++;
-          this.updateIndexingNoticeMessage();
-          if (this.indexedCount % CHECKPOINT_INTERVAL === 0) {
-            if (getSettings().debug) {
-              console.log(`Checkpoint: Saving index after processing ${this.indexedCount} files`);
-            }
-            await this.saveDB();
-          }
-        } catch (err) {
-          console.error("Error indexing file:", err);
-          errors2.push(`Error indexing file: ${file.basename}`);
-          if (err instanceof Error && err.message.includes("Status code: 429") && !rateLimitNoticeShown) {
-            const match2 = err.message.match(/Body: ({.*})/);
-            let errorMessage = "Embedding API rate limit exceeded. Please try decreasing the requests per second in settings, or wait for the rate limit to reset with your provider.";
-            if (match2 && match2[1]) {
-              try {
-                const errorBody = JSON.parse(match2[1]);
-                if (errorBody.message) {
-                  errorMessage = errorBody.message;
-                }
-              } catch (parseError) {
-                console.error("Error parsing API error message:", parseError);
-              }
-            }
-            new import_obsidian10.Notice(errorMessage, 8e3);
-            rateLimitNoticeShown = true;
-            break;
-          }
-        }
-      }
-      this.isIndexLoaded = true;
-      setTimeout(() => {
-        this.currentIndexingNotice?.hide();
-        this.currentIndexingNotice = null;
-        this.indexNoticeMessage = null;
-        this.isIndexingPaused = false;
-        this.isIndexingCancelled = false;
-        this.saveDB();
-      }, 3e3);
-      if (errors2.length > 0) {
-        new import_obsidian10.Notice(`Indexing completed with errors. Check the console for details.`);
-        console.log("Indexing Errors:", errors2.join("\n"));
-      }
-      return files.length;
-    } catch (error) {
-      if (error instanceof CustomError) {
-        console.error("Error indexing vault to Copilot index:", error.message);
-        new import_obsidian10.Notice(
-          `Error indexing vault: ${error.message}. Please check your embedding model settings.`
-        );
-      } else {
-        console.error("Unexpected error indexing vault to Copilot index:", error);
-        new import_obsidian10.Notice(
-          "An unexpected error occurred while indexing the vault. Please check the console for details."
-        );
-      }
-      return 0;
-    }
-  }
-  async clearIndex() {
-    try {
-      this.oramaDb = await this.createNewDb();
-      if (await this.app.vault.adapter.exists(this.dbPath)) {
-        await this.app.vault.adapter.remove(this.dbPath);
-      }
-      await this.saveDB();
-      new import_obsidian10.Notice("Local Copilot index cleared successfully.");
-      console.log("Local Copilot index cleared successfully, new instance created.");
-    } catch (err) {
-      console.error("Error clearing the local Copilot index:", err);
-      new import_obsidian10.Notice("An error occurred while clearing the local Copilot index.");
-      throw err;
-    }
-  }
-  async garbageCollectVectorStore() {
-    if (!this.oramaDb) {
-      throw new CustomError("Orama database not found.");
-    }
-    try {
-      const files = this.app.vault.getMarkdownFiles();
-      const filePaths = new Set(files.map((file) => file.path));
-      const result = await search2(this.oramaDb, {
-        term: "",
-        limit: 1e4
-      });
-      const docsToRemove = result.hits.filter((hit) => !filePaths.has(hit.document.path));
-      if (docsToRemove.length === 0) {
-        new import_obsidian10.Notice("No documents to remove during garbage collection.");
-        return;
-      }
-      console.log(
-        "Copilot index: Docs to remove during garbage collection:",
-        Array.from(new Set(docsToRemove.map((hit) => hit.document.path))).join(", ")
-      );
-      if (docsToRemove.length === 1) {
-        await remove5(this.oramaDb, docsToRemove[0].id);
-      } else {
-        await removeMultiple(
-          this.oramaDb,
-          docsToRemove.map((hit) => hit.id),
-          500
-        );
-        new import_obsidian10.Notice(`Removed stale documents during garbage collection.`);
-      }
-      await this.saveDB();
-      new import_obsidian10.Notice("Local Copilot index garbage collected successfully.");
-      console.log("Local Copilot index garbage collected successfully.");
-    } catch (err) {
-      console.error("Error garbage collecting the Copilot index:", err);
-      new import_obsidian10.Notice("An error occurred while garbage collecting the Copilot index.");
-    }
-  }
-  async removeDocs(filePath) {
-    if (!this.oramaDb) {
-      throw new CustomError("Orama database not found.");
-    }
-    try {
-      const searchResult = await search2(this.oramaDb, {
-        term: filePath,
-        properties: ["path"]
-      });
-      if (searchResult.hits.length > 0) {
-        await removeMultiple(
-          this.oramaDb,
-          searchResult.hits.map((hit) => hit.id),
-          500
-        );
-        if (getSettings().debug) {
-          console.log(`Deleted document from local Copilot index: ${filePath}`);
-        }
-      }
-    } catch (err) {
-      console.error("Error deleting document from local Copilotindex:", err);
-    }
-  }
-  async waitForInitialization() {
-    await this.initializationPromise;
-  }
-  // Test query to retrieve record by id from the database
-  async getDocById(id) {
-    if (!this.oramaDb) {
-      throw new CustomError("Orama database not found.");
-    }
-    const result = await search2(this.oramaDb, {
-      term: id,
-      properties: ["id"],
-      limit: 1,
-      includeVectors: true
-    });
-    return result.hits[0]?.document;
-  }
-  initializeEventListeners() {
-    if (getSettings().debug) {
-      console.log("Copilot Plus: Initializing event listeners");
-    }
-    this.app.vault.on("modify", this.handleFileModify);
-    this.app.vault.on("delete", this.handleFileDelete);
-  }
-  async reindexFile(file) {
-    try {
-      const embeddingInstance = this.embeddingsManager.getEmbeddingsAPI();
-      if (!embeddingInstance || !this.oramaDb) {
-        return;
-      }
-      await this.removeDocs(file.path);
-      const modelChanged = await this.checkAndHandleEmbeddingModelChange(
-        this.oramaDb,
-        embeddingInstance
-      );
-      if (modelChanged) {
-        await this.indexVaultToVectorStore(true);
-        return;
-      }
-      const content = await this.app.vault.cachedRead(file);
-      const fileCache = this.app.metadataCache.getFileCache(file);
-      const fileToSave = {
-        title: file.basename,
-        path: file.path,
-        content,
-        embeddingModel: EmbeddingManager.getModelName(embeddingInstance),
-        ctime: file.stat.ctime,
-        mtime: file.stat.mtime,
-        tags: fileCache?.tags?.map((tag) => tag.tag) ?? [],
-        extension: file.extension,
-        metadata: fileCache?.frontmatter ?? {}
-      };
-      await vectorDBManager_default.indexFile(this.oramaDb, embeddingInstance, fileToSave);
-      this.hasUnsavedChanges = true;
-      if (getSettings().debug) {
-        console.log(`Reindexed file: ${file.path}`);
-      }
-    } catch (error) {
-      console.error(`Error reindexing file ${file.path}:`, error);
-    }
-  }
-  // Clean up on unload
-  onunload() {
-    if (this.saveDBTimer !== null) {
-      window.clearInterval(this.saveDBTimer);
-    }
-    if (this.hasUnsavedChanges) {
-      this.saveDB();
-    }
-  }
-  async getIndexedFiles() {
-    if (!this.oramaDb) {
-      throw new CustomError("Orama database not found.");
-    }
-    try {
-      const result = await search2(this.oramaDb, {
-        term: "",
-        limit: 1e5
-      });
-      const uniquePaths = /* @__PURE__ */ new Set();
-      result.hits.forEach((hit) => {
-        uniquePaths.add(hit.document.path);
-      });
-      return Array.from(uniquePaths).sort();
-    } catch (err) {
-      console.error("Error getting indexed files:", err);
-      throw new CustomError("Failed to retrieve indexed files.");
-    }
-  }
-  async isIndexEmpty() {
-    if (!this.oramaDb) {
-      return true;
-    }
-    try {
-      const result = await search2(this.oramaDb, {
-        term: "",
-        limit: 1
-      });
-      return result.hits.length === 0;
-    } catch (err) {
-      console.error("Error checking if database is empty:", err);
-      throw new CustomError("Failed to check if database is empty.");
-    }
-  }
-};
-var VectorStoreManager_default = VectorStoreManager;
 
 // src/chatUtils.ts
 function parseChatContent(content) {
@@ -161294,9 +160658,67 @@ var SearchResultsModal = class extends import_obsidian27.Modal {
   }
 };
 
-// src/components/modals/SimilarNotesModal.tsx
+// src/components/modals/RemoveFromIndexModal.tsx
 var import_obsidian28 = require("obsidian");
-var SimilarNotesModal = class extends import_obsidian28.Modal {
+var RemoveFromIndexModal = class extends import_obsidian28.Modal {
+  constructor(app2, onSubmit) {
+    super(app2);
+    this.filePaths = "";
+    this.onSubmit = onSubmit;
+  }
+  onOpen() {
+    const { contentEl } = this;
+    contentEl.createEl("h2", { text: "Remove Files from Copilot Index" });
+    const container = contentEl.createDiv({ cls: "remove-files-container" });
+    new import_obsidian28.Setting(container).setName("File paths").setDesc(
+      "Paste the markdown list of file paths to remove from the index. You can get the list by running the command `List all indexed files`."
+    ).setClass("remove-files-setting").addTextArea(
+      (text) => text.setPlaceholder("- [[path/to/file1.md]]\n- [[path/to/file2.md]]").setValue(this.filePaths).onChange((value) => {
+        this.filePaths = value;
+      })
+    );
+    new import_obsidian28.Setting(container).addButton(
+      (btn) => btn.setButtonText("Remove").setCta().onClick(() => {
+        const paths = this.filePaths.split("\n").map((line) => {
+          const match2 = line.match(/\[\[(.*?)\]\]/);
+          return match2 ? match2[1].trim() : "";
+        }).filter((p3) => p3.length > 0);
+        this.onSubmit(paths);
+        this.close();
+      })
+    );
+    contentEl.createEl("style", {
+      text: `
+        .remove-files-container {
+          width: 100%;
+          margin-top: 12px;
+        }
+        .remove-files-setting {
+          display: block;
+        }
+        .remove-files-setting .setting-item-control {
+          padding: 0;
+        }
+        .remove-files-setting textarea {
+          width: 100%;
+          height: 300px;
+          margin-top: 12px;
+        }
+        .remove-files-setting textarea::placeholder {
+          opacity: 0.5;
+        }
+      `
+    });
+  }
+  onClose() {
+    const { contentEl } = this;
+    contentEl.empty();
+  }
+};
+
+// src/components/modals/SimilarNotesModal.tsx
+var import_obsidian29 = require("obsidian");
+var SimilarNotesModal = class extends import_obsidian29.Modal {
   constructor(app2, similarChunks) {
     super(app2);
     this.similarChunks = similarChunks;
@@ -161328,7 +160750,7 @@ var SimilarNotesModal = class extends import_obsidian28.Modal {
   }
   navigateToNote(path) {
     const file = this.app.vault.getAbstractFileByPath(path);
-    if (file instanceof import_obsidian28.TFile) {
+    if (file instanceof import_obsidian29.TFile) {
       const leaf = this.app.workspace.getLeaf(false);
       if (leaf) {
         leaf.openFile(file).then(() => {
@@ -161342,8 +160764,1151 @@ var SimilarNotesModal = class extends import_obsidian28.Modal {
   }
 };
 
-// src/settings/SettingsPage.tsx
+// src/search/vectorStoreManager.ts
+var import_obsidian32 = require("obsidian");
+
+// src/search/indexEventHandler.ts
 var import_obsidian30 = require("obsidian");
+var IndexEventHandler = class {
+  constructor(app2, indexOps, dbOps) {
+    this.app = app2;
+    this.indexOps = indexOps;
+    this.dbOps = dbOps;
+    this.debounceTimer = null;
+    this.debounceDelay = 1e4;
+    // 10 seconds
+    this.excludedFiles = /* @__PURE__ */ new Set();
+    this.handleFileModify = async (file) => {
+      if (import_obsidian30.Platform.isMobile && getSettings().disableIndexOnMobile) {
+        return;
+      }
+      await this.updateExcludedFiles();
+      const currentChainType = getChainType();
+      if (file instanceof import_obsidian30.TFile && file.extension === "md" && currentChainType === "copilot_plus" /* COPILOT_PLUS_CHAIN */) {
+        const includedFiles = await getFilePathsForQA("inclusions", this.app);
+        const shouldProcess = includedFiles.size > 0 ? includedFiles.has(file.path) : !this.excludedFiles.has(file.path);
+        if (shouldProcess) {
+          this.debouncedReindexFile(file);
+        }
+      }
+    };
+    this.debouncedReindexFile = (file) => {
+      if (this.debounceTimer !== null) {
+        window.clearTimeout(this.debounceTimer);
+      }
+      this.debounceTimer = window.setTimeout(() => {
+        if (getSettings().debug) {
+          console.log("Copilot Plus: Triggering reindex for file ", file.path);
+        }
+        this.indexOps.reindexFile(file);
+        this.debounceTimer = null;
+      }, this.debounceDelay);
+    };
+    this.handleFileDelete = async (file) => {
+      if (file instanceof import_obsidian30.TFile) {
+        await this.dbOps.removeDocs(file.path);
+      }
+    };
+    this.updateExcludedFiles();
+  }
+  initializeEventListeners() {
+    if (getSettings().debug) {
+      console.log("Copilot Plus: Initializing event listeners");
+    }
+    this.app.vault.on("modify", this.handleFileModify);
+    this.app.vault.on("delete", this.handleFileDelete);
+  }
+  async updateExcludedFiles() {
+    this.excludedFiles = await getFilePathsForQA("exclusions", this.app);
+  }
+  cleanup() {
+    if (this.debounceTimer !== null) {
+      window.clearTimeout(this.debounceTimer);
+    }
+    this.app.vault.off("modify", this.handleFileModify);
+    this.app.vault.off("delete", this.handleFileDelete);
+  }
+};
+
+// src/rateLimiter.ts
+var RateLimiter = class {
+  constructor(requestsPerSecond) {
+    this.queue = [];
+    this.lastRequestTime = 0;
+    this.processing = false;
+    this.requestsPerSecond = requestsPerSecond;
+  }
+  setRequestsPerSecond(requestsPerSecond) {
+    this.requestsPerSecond = requestsPerSecond;
+  }
+  getRequestsPerSecond() {
+    return this.requestsPerSecond;
+  }
+  async wait() {
+    return new Promise((resolve) => {
+      this.queue.push(resolve);
+      this.process();
+    });
+  }
+  async process() {
+    if (this.processing)
+      return;
+    this.processing = true;
+    try {
+      while (this.queue.length > 0) {
+        const now3 = Date.now();
+        const timeToWait = Math.max(0, this.lastRequestTime + 1e3 / this.requestsPerSecond - now3);
+        if (timeToWait > 0) {
+          await new Promise((resolve2) => setTimeout(resolve2, timeToWait));
+        }
+        const resolve = this.queue.shift();
+        if (resolve) {
+          this.lastRequestTime = Date.now();
+          resolve();
+        }
+      }
+    } finally {
+      this.processing = false;
+    }
+  }
+};
+
+// src/search/indexOperations.ts
+var import_crypto_js2 = __toESM(require_crypto_js());
+
+// node_modules/@langchain/core/utils/tiktoken.js
+init_tiktoken();
+
+// node_modules/@langchain/textsplitters/dist/text_splitter.js
+var TextSplitter = class extends BaseDocumentTransformer {
+  constructor(fields) {
+    super(fields);
+    Object.defineProperty(this, "lc_namespace", {
+      enumerable: true,
+      configurable: true,
+      writable: true,
+      value: ["langchain", "document_transformers", "text_splitters"]
+    });
+    Object.defineProperty(this, "chunkSize", {
+      enumerable: true,
+      configurable: true,
+      writable: true,
+      value: 1e3
+    });
+    Object.defineProperty(this, "chunkOverlap", {
+      enumerable: true,
+      configurable: true,
+      writable: true,
+      value: 200
+    });
+    Object.defineProperty(this, "keepSeparator", {
+      enumerable: true,
+      configurable: true,
+      writable: true,
+      value: false
+    });
+    Object.defineProperty(this, "lengthFunction", {
+      enumerable: true,
+      configurable: true,
+      writable: true,
+      value: void 0
+    });
+    this.chunkSize = fields?.chunkSize ?? this.chunkSize;
+    this.chunkOverlap = fields?.chunkOverlap ?? this.chunkOverlap;
+    this.keepSeparator = fields?.keepSeparator ?? this.keepSeparator;
+    this.lengthFunction = fields?.lengthFunction ?? ((text) => text.length);
+    if (this.chunkOverlap >= this.chunkSize) {
+      throw new Error("Cannot have chunkOverlap >= chunkSize");
+    }
+  }
+  async transformDocuments(documents, chunkHeaderOptions = {}) {
+    return this.splitDocuments(documents, chunkHeaderOptions);
+  }
+  splitOnSeparator(text, separator) {
+    let splits;
+    if (separator) {
+      if (this.keepSeparator) {
+        const regexEscapedSeparator = separator.replace(/[/\-\\^$*+?.()|[\]{}]/g, "\\$&");
+        splits = text.split(new RegExp(`(?=${regexEscapedSeparator})`));
+      } else {
+        splits = text.split(separator);
+      }
+    } else {
+      splits = text.split("");
+    }
+    return splits.filter((s4) => s4 !== "");
+  }
+  async createDocuments(texts, metadatas = [], chunkHeaderOptions = {}) {
+    const _metadatas = metadatas.length > 0 ? metadatas : [...Array(texts.length)].map(() => ({}));
+    const { chunkHeader = "", chunkOverlapHeader = "(cont'd) ", appendChunkOverlapHeader = false } = chunkHeaderOptions;
+    const documents = new Array();
+    for (let i3 = 0; i3 < texts.length; i3 += 1) {
+      const text = texts[i3];
+      let lineCounterIndex = 1;
+      let prevChunk = null;
+      let indexPrevChunk = -1;
+      for (const chunk of await this.splitText(text)) {
+        let pageContent = chunkHeader;
+        const indexChunk = text.indexOf(chunk, indexPrevChunk + 1);
+        if (prevChunk === null) {
+          const newLinesBeforeFirstChunk = this.numberOfNewLines(text, 0, indexChunk);
+          lineCounterIndex += newLinesBeforeFirstChunk;
+        } else {
+          const indexEndPrevChunk = indexPrevChunk + await this.lengthFunction(prevChunk);
+          if (indexEndPrevChunk < indexChunk) {
+            const numberOfIntermediateNewLines = this.numberOfNewLines(text, indexEndPrevChunk, indexChunk);
+            lineCounterIndex += numberOfIntermediateNewLines;
+          } else if (indexEndPrevChunk > indexChunk) {
+            const numberOfIntermediateNewLines = this.numberOfNewLines(text, indexChunk, indexEndPrevChunk);
+            lineCounterIndex -= numberOfIntermediateNewLines;
+          }
+          if (appendChunkOverlapHeader) {
+            pageContent += chunkOverlapHeader;
+          }
+        }
+        const newLinesCount = this.numberOfNewLines(chunk);
+        const loc = _metadatas[i3].loc && typeof _metadatas[i3].loc === "object" ? { ..._metadatas[i3].loc } : {};
+        loc.lines = {
+          from: lineCounterIndex,
+          to: lineCounterIndex + newLinesCount
+        };
+        const metadataWithLinesNumber = {
+          ..._metadatas[i3],
+          loc
+        };
+        pageContent += chunk;
+        documents.push(new Document2({
+          pageContent,
+          metadata: metadataWithLinesNumber
+        }));
+        lineCounterIndex += newLinesCount;
+        prevChunk = chunk;
+        indexPrevChunk = indexChunk;
+      }
+    }
+    return documents;
+  }
+  numberOfNewLines(text, start, end) {
+    const textSection = text.slice(start, end);
+    return (textSection.match(/\n/g) || []).length;
+  }
+  async splitDocuments(documents, chunkHeaderOptions = {}) {
+    const selectedDocuments = documents.filter((doc) => doc.pageContent !== void 0);
+    const texts = selectedDocuments.map((doc) => doc.pageContent);
+    const metadatas = selectedDocuments.map((doc) => doc.metadata);
+    return this.createDocuments(texts, metadatas, chunkHeaderOptions);
+  }
+  joinDocs(docs, separator) {
+    const text = docs.join(separator).trim();
+    return text === "" ? null : text;
+  }
+  async mergeSplits(splits, separator) {
+    const docs = [];
+    const currentDoc = [];
+    let total = 0;
+    for (const d3 of splits) {
+      const _len = await this.lengthFunction(d3);
+      if (total + _len + currentDoc.length * separator.length > this.chunkSize) {
+        if (total > this.chunkSize) {
+          console.warn(`Created a chunk of size ${total}, +
+which is longer than the specified ${this.chunkSize}`);
+        }
+        if (currentDoc.length > 0) {
+          const doc2 = this.joinDocs(currentDoc, separator);
+          if (doc2 !== null) {
+            docs.push(doc2);
+          }
+          while (total > this.chunkOverlap || total + _len + currentDoc.length * separator.length > this.chunkSize && total > 0) {
+            total -= await this.lengthFunction(currentDoc[0]);
+            currentDoc.shift();
+          }
+        }
+      }
+      currentDoc.push(d3);
+      total += _len;
+    }
+    const doc = this.joinDocs(currentDoc, separator);
+    if (doc !== null) {
+      docs.push(doc);
+    }
+    return docs;
+  }
+};
+var RecursiveCharacterTextSplitter = class extends TextSplitter {
+  static lc_name() {
+    return "RecursiveCharacterTextSplitter";
+  }
+  constructor(fields) {
+    super(fields);
+    Object.defineProperty(this, "separators", {
+      enumerable: true,
+      configurable: true,
+      writable: true,
+      value: ["\n\n", "\n", " ", ""]
+    });
+    this.separators = fields?.separators ?? this.separators;
+    this.keepSeparator = fields?.keepSeparator ?? true;
+  }
+  async _splitText(text, separators) {
+    const finalChunks = [];
+    let separator = separators[separators.length - 1];
+    let newSeparators;
+    for (let i3 = 0; i3 < separators.length; i3 += 1) {
+      const s4 = separators[i3];
+      if (s4 === "") {
+        separator = s4;
+        break;
+      }
+      if (text.includes(s4)) {
+        separator = s4;
+        newSeparators = separators.slice(i3 + 1);
+        break;
+      }
+    }
+    const splits = this.splitOnSeparator(text, separator);
+    let goodSplits = [];
+    const _separator = this.keepSeparator ? "" : separator;
+    for (const s4 of splits) {
+      if (await this.lengthFunction(s4) < this.chunkSize) {
+        goodSplits.push(s4);
+      } else {
+        if (goodSplits.length) {
+          const mergedText = await this.mergeSplits(goodSplits, _separator);
+          finalChunks.push(...mergedText);
+          goodSplits = [];
+        }
+        if (!newSeparators) {
+          finalChunks.push(s4);
+        } else {
+          const otherInfo = await this._splitText(s4, newSeparators);
+          finalChunks.push(...otherInfo);
+        }
+      }
+    }
+    if (goodSplits.length) {
+      const mergedText = await this.mergeSplits(goodSplits, _separator);
+      finalChunks.push(...mergedText);
+    }
+    return finalChunks;
+  }
+  async splitText(text) {
+    return this._splitText(text, this.separators);
+  }
+  static fromLanguage(language, options) {
+    return new RecursiveCharacterTextSplitter({
+      ...options,
+      separators: RecursiveCharacterTextSplitter.getSeparatorsForLanguage(language)
+    });
+  }
+  static getSeparatorsForLanguage(language) {
+    if (language === "cpp") {
+      return [
+        // Split along class definitions
+        "\nclass ",
+        // Split along function definitions
+        "\nvoid ",
+        "\nint ",
+        "\nfloat ",
+        "\ndouble ",
+        // Split along control flow statements
+        "\nif ",
+        "\nfor ",
+        "\nwhile ",
+        "\nswitch ",
+        "\ncase ",
+        // Split by the normal type of lines
+        "\n\n",
+        "\n",
+        " ",
+        ""
+      ];
+    } else if (language === "go") {
+      return [
+        // Split along function definitions
+        "\nfunc ",
+        "\nvar ",
+        "\nconst ",
+        "\ntype ",
+        // Split along control flow statements
+        "\nif ",
+        "\nfor ",
+        "\nswitch ",
+        "\ncase ",
+        // Split by the normal type of lines
+        "\n\n",
+        "\n",
+        " ",
+        ""
+      ];
+    } else if (language === "java") {
+      return [
+        // Split along class definitions
+        "\nclass ",
+        // Split along method definitions
+        "\npublic ",
+        "\nprotected ",
+        "\nprivate ",
+        "\nstatic ",
+        // Split along control flow statements
+        "\nif ",
+        "\nfor ",
+        "\nwhile ",
+        "\nswitch ",
+        "\ncase ",
+        // Split by the normal type of lines
+        "\n\n",
+        "\n",
+        " ",
+        ""
+      ];
+    } else if (language === "js") {
+      return [
+        // Split along function definitions
+        "\nfunction ",
+        "\nconst ",
+        "\nlet ",
+        "\nvar ",
+        "\nclass ",
+        // Split along control flow statements
+        "\nif ",
+        "\nfor ",
+        "\nwhile ",
+        "\nswitch ",
+        "\ncase ",
+        "\ndefault ",
+        // Split by the normal type of lines
+        "\n\n",
+        "\n",
+        " ",
+        ""
+      ];
+    } else if (language === "php") {
+      return [
+        // Split along function definitions
+        "\nfunction ",
+        // Split along class definitions
+        "\nclass ",
+        // Split along control flow statements
+        "\nif ",
+        "\nforeach ",
+        "\nwhile ",
+        "\ndo ",
+        "\nswitch ",
+        "\ncase ",
+        // Split by the normal type of lines
+        "\n\n",
+        "\n",
+        " ",
+        ""
+      ];
+    } else if (language === "proto") {
+      return [
+        // Split along message definitions
+        "\nmessage ",
+        // Split along service definitions
+        "\nservice ",
+        // Split along enum definitions
+        "\nenum ",
+        // Split along option definitions
+        "\noption ",
+        // Split along import statements
+        "\nimport ",
+        // Split along syntax declarations
+        "\nsyntax ",
+        // Split by the normal type of lines
+        "\n\n",
+        "\n",
+        " ",
+        ""
+      ];
+    } else if (language === "python") {
+      return [
+        // First, try to split along class definitions
+        "\nclass ",
+        "\ndef ",
+        "\n	def ",
+        // Now split by the normal type of lines
+        "\n\n",
+        "\n",
+        " ",
+        ""
+      ];
+    } else if (language === "rst") {
+      return [
+        // Split along section titles
+        "\n===\n",
+        "\n---\n",
+        "\n***\n",
+        // Split along directive markers
+        "\n.. ",
+        // Split by the normal type of lines
+        "\n\n",
+        "\n",
+        " ",
+        ""
+      ];
+    } else if (language === "ruby") {
+      return [
+        // Split along method definitions
+        "\ndef ",
+        "\nclass ",
+        // Split along control flow statements
+        "\nif ",
+        "\nunless ",
+        "\nwhile ",
+        "\nfor ",
+        "\ndo ",
+        "\nbegin ",
+        "\nrescue ",
+        // Split by the normal type of lines
+        "\n\n",
+        "\n",
+        " ",
+        ""
+      ];
+    } else if (language === "rust") {
+      return [
+        // Split along function definitions
+        "\nfn ",
+        "\nconst ",
+        "\nlet ",
+        // Split along control flow statements
+        "\nif ",
+        "\nwhile ",
+        "\nfor ",
+        "\nloop ",
+        "\nmatch ",
+        "\nconst ",
+        // Split by the normal type of lines
+        "\n\n",
+        "\n",
+        " ",
+        ""
+      ];
+    } else if (language === "scala") {
+      return [
+        // Split along class definitions
+        "\nclass ",
+        "\nobject ",
+        // Split along method definitions
+        "\ndef ",
+        "\nval ",
+        "\nvar ",
+        // Split along control flow statements
+        "\nif ",
+        "\nfor ",
+        "\nwhile ",
+        "\nmatch ",
+        "\ncase ",
+        // Split by the normal type of lines
+        "\n\n",
+        "\n",
+        " ",
+        ""
+      ];
+    } else if (language === "swift") {
+      return [
+        // Split along function definitions
+        "\nfunc ",
+        // Split along class definitions
+        "\nclass ",
+        "\nstruct ",
+        "\nenum ",
+        // Split along control flow statements
+        "\nif ",
+        "\nfor ",
+        "\nwhile ",
+        "\ndo ",
+        "\nswitch ",
+        "\ncase ",
+        // Split by the normal type of lines
+        "\n\n",
+        "\n",
+        " ",
+        ""
+      ];
+    } else if (language === "markdown") {
+      return [
+        // First, try to split along Markdown headings (starting with level 2)
+        "\n## ",
+        "\n### ",
+        "\n#### ",
+        "\n##### ",
+        "\n###### ",
+        // Note the alternative syntax for headings (below) is not handled here
+        // Heading level 2
+        // ---------------
+        // End of code block
+        "```\n\n",
+        // Horizontal lines
+        "\n\n***\n\n",
+        "\n\n---\n\n",
+        "\n\n___\n\n",
+        // Note that this splitter doesn't handle horizontal lines defined
+        // by *three or more* of ***, ---, or ___, but this is not handled
+        "\n\n",
+        "\n",
+        " ",
+        ""
+      ];
+    } else if (language === "latex") {
+      return [
+        // First, try to split along Latex sections
+        "\n\\chapter{",
+        "\n\\section{",
+        "\n\\subsection{",
+        "\n\\subsubsection{",
+        // Now split by environments
+        "\n\\begin{enumerate}",
+        "\n\\begin{itemize}",
+        "\n\\begin{description}",
+        "\n\\begin{list}",
+        "\n\\begin{quote}",
+        "\n\\begin{quotation}",
+        "\n\\begin{verse}",
+        "\n\\begin{verbatim}",
+        // Now split by math environments
+        "\n\\begin{align}",
+        "$$",
+        "$",
+        // Now split by the normal type of lines
+        "\n\n",
+        "\n",
+        " ",
+        ""
+      ];
+    } else if (language === "html") {
+      return [
+        // First, try to split along HTML tags
+        "<body>",
+        "<div>",
+        "<p>",
+        "<br>",
+        "<li>",
+        "<h1>",
+        "<h2>",
+        "<h3>",
+        "<h4>",
+        "<h5>",
+        "<h6>",
+        "<span>",
+        "<table>",
+        "<tr>",
+        "<td>",
+        "<th>",
+        "<ul>",
+        "<ol>",
+        "<header>",
+        "<footer>",
+        "<nav>",
+        // Head
+        "<head>",
+        "<style>",
+        "<script>",
+        "<meta>",
+        "<title>",
+        // Normal type of lines
+        " ",
+        ""
+      ];
+    } else if (language === "sol") {
+      return [
+        // Split along compiler informations definitions
+        "\npragma ",
+        "\nusing ",
+        // Split along contract definitions
+        "\ncontract ",
+        "\ninterface ",
+        "\nlibrary ",
+        // Split along method definitions
+        "\nconstructor ",
+        "\ntype ",
+        "\nfunction ",
+        "\nevent ",
+        "\nmodifier ",
+        "\nerror ",
+        "\nstruct ",
+        "\nenum ",
+        // Split along control flow statements
+        "\nif ",
+        "\nfor ",
+        "\nwhile ",
+        "\ndo while ",
+        "\nassembly ",
+        // Split by the normal type of lines
+        "\n\n",
+        "\n",
+        " ",
+        ""
+      ];
+    } else {
+      throw new Error(`Language ${language} is not supported.`);
+    }
+  }
+};
+
+// src/search/indexOperations.ts
+var import_obsidian31 = require("obsidian");
+var IndexOperations = class {
+  constructor(app2, dbOps, embeddingsManager) {
+    this.app = app2;
+    this.dbOps = dbOps;
+    this.embeddingsManager = embeddingsManager;
+    this.state = {
+      isIndexingPaused: false,
+      isIndexingCancelled: false,
+      indexedCount: 0,
+      totalFilesToIndex: 0,
+      currentIndexingNotice: null,
+      indexNoticeMessage: null
+    };
+    this.rateLimiter = new RateLimiter(getSettings().embeddingRequestsPerSecond);
+    subscribeToSettingsChange(async () => {
+      const settings = getSettings();
+      this.rateLimiter = new RateLimiter(settings.embeddingRequestsPerSecond);
+    });
+  }
+  async indexFile(file) {
+    const embeddingInstance = this.embeddingsManager.getEmbeddingsAPI();
+    if (!embeddingInstance) {
+      throw new CustomError("Embedding instance not found.");
+    }
+    const content = await this.app.vault.cachedRead(file);
+    const fileCache = this.app.metadataCache.getFileCache(file);
+    const fileToSave = {
+      title: file.basename,
+      path: file.path,
+      content,
+      embeddingModel: EmbeddingManager.getModelName(embeddingInstance),
+      ctime: file.stat.ctime,
+      mtime: file.stat.mtime,
+      tags: fileCache?.tags?.map((tag) => tag.tag) ?? [],
+      extension: file.extension,
+      metadata: {
+        ...fileCache?.frontmatter ?? {},
+        created: formatDateTime(new Date(file.stat.ctime)).display,
+        modified: formatDateTime(new Date(file.stat.mtime)).display
+      }
+    };
+    await this.indexDocument(embeddingInstance, fileToSave);
+  }
+  async indexDocument(embeddingsAPI, fileToSave) {
+    const textSplitter = RecursiveCharacterTextSplitter.fromLanguage("markdown", {
+      chunkSize: CHUNK_SIZE
+    });
+    const chunks = await textSplitter.createDocuments([fileToSave.content], [], {
+      chunkHeader: `
+
+NOTE TITLE: [[${fileToSave.title}]]
+
+METADATA:${JSON.stringify(
+        fileToSave.metadata
+      )}
+
+NOTE BLOCK CONTENT:
+
+`,
+      appendChunkOverlapHeader: true
+    });
+    const docVectors = [];
+    let hasEmbeddingError = false;
+    for (let i3 = 0; i3 < chunks.length; i3++) {
+      try {
+        await this.rateLimiter.wait();
+        const embedding = await embeddingsAPI.embedDocuments([chunks[i3].pageContent]);
+        if (embedding.length > 0 && embedding[0].length > 0) {
+          docVectors.push(embedding[0]);
+        } else {
+          throw new Error("Received empty embedding vector");
+        }
+      } catch (error) {
+        hasEmbeddingError = true;
+        console.error("Error during embeddings API call for chunk:", error);
+        throw error;
+      }
+    }
+    if (docVectors.length > 0) {
+      const chunkWithVectors = chunks.slice(0, docVectors.length).map((chunk, i3) => ({
+        id: this.getDocHash(chunk.pageContent),
+        content: chunk.pageContent,
+        embedding: docVectors[i3]
+      }));
+      try {
+        for (const chunkWithVector of chunkWithVectors) {
+          await this.dbOps.upsert({
+            ...fileToSave,
+            id: chunkWithVector.id,
+            content: chunkWithVector.content,
+            embedding: chunkWithVector.embedding,
+            created_at: Date.now(),
+            nchars: chunkWithVector.content.length
+          });
+        }
+      } catch (error) {
+        hasEmbeddingError = true;
+        console.error("Error during database upsert:", error);
+        throw error;
+      }
+    }
+    return hasEmbeddingError ? void 0 : fileToSave;
+  }
+  async indexVaultToVectorStore(overwrite) {
+    let rateLimitNoticeShown = false;
+    try {
+      const embeddingInstance = this.embeddingsManager.getEmbeddingsAPI();
+      if (!embeddingInstance) {
+        throw new CustomError("Embedding instance not found.");
+      }
+      const modelChanged = await this.dbOps.checkAndHandleEmbeddingModelChange(embeddingInstance);
+      if (modelChanged) {
+        overwrite = true;
+      }
+      if (overwrite) {
+        await this.dbOps.clearIndex(embeddingInstance);
+      } else {
+        await this.dbOps.garbageCollect();
+      }
+      const files = await this.getFilesToIndex(overwrite);
+      if (files.length === 0) {
+        new import_obsidian31.Notice("Copilot vault index is up-to-date.");
+        return 0;
+      }
+      this.initializeIndexingState(files.length);
+      this.createIndexingNotice();
+      const CHECKPOINT_INTERVAL = 200;
+      const errors2 = [];
+      for (let index2 = 0; index2 < files.length; index2++) {
+        if (this.state.isIndexingCancelled) {
+          console.log(
+            `Indexing stopped at ${this.state.indexedCount}/${files.length} files due to cancellation`
+          );
+          break;
+        }
+        await this.handlePause();
+        try {
+          await this.indexFile(files[index2]);
+          this.state.indexedCount++;
+          this.updateIndexingNoticeMessage();
+          if (this.state.indexedCount % CHECKPOINT_INTERVAL === 0) {
+            await this.dbOps.saveDB();
+            console.log("Copilot index checkpoint save completed.");
+          }
+        } catch (err) {
+          this.handleIndexingError(err, files[index2], errors2, rateLimitNoticeShown);
+          if (this.isRateLimitError(err)) {
+            rateLimitNoticeShown = true;
+            break;
+          }
+        }
+      }
+      this.finalizeIndexing(errors2);
+      await this.dbOps.saveDB();
+      console.log("Copilot index final save completed.");
+      return this.state.indexedCount;
+    } catch (error) {
+      this.handleFatalError(error);
+      return 0;
+    }
+  }
+  getDocHash(sourceDocument) {
+    return (0, import_crypto_js2.MD5)(sourceDocument).toString();
+  }
+  async getFilesToIndex(overwrite) {
+    if (overwrite) {
+      const allMarkdownFiles2 = this.app.vault.getMarkdownFiles();
+      const includedFiles2 = await getFilePathsForQA("inclusions", this.app);
+      const excludedFiles2 = await getFilePathsForQA("exclusions", this.app);
+      return allMarkdownFiles2.filter((file) => {
+        if (excludedFiles2.has(file.path)) {
+          return false;
+        }
+        if (includedFiles2.size > 0) {
+          return includedFiles2.has(file.path);
+        }
+        return true;
+      });
+    }
+    const indexedFilePaths = new Set(await this.dbOps.getIndexedFiles());
+    const latestMtime = await this.dbOps.getLatestFileMtime();
+    const includedFiles = await getFilePathsForQA("inclusions", this.app);
+    const excludedFiles = await getFilePathsForQA("exclusions", this.app);
+    const allMarkdownFiles = this.app.vault.getMarkdownFiles();
+    const filesToIndex = /* @__PURE__ */ new Set();
+    for (const file of allMarkdownFiles) {
+      if (excludedFiles.has(file.path)) {
+        continue;
+      }
+      const shouldBeIndexed = includedFiles.size === 0 || includedFiles.has(file.path);
+      if (shouldBeIndexed) {
+        if (!indexedFilePaths.has(file.path) || file.stat.mtime > latestMtime) {
+          filesToIndex.add(file);
+        }
+      }
+    }
+    if (getSettings().debug) {
+      console.log(`Files to index: ${filesToIndex.size}`);
+      console.log(`Previously indexed: ${indexedFilePaths.size}`);
+    }
+    return Array.from(filesToIndex);
+  }
+  initializeIndexingState(totalFiles) {
+    this.state = {
+      isIndexingPaused: false,
+      isIndexingCancelled: false,
+      indexedCount: 0,
+      totalFilesToIndex: totalFiles,
+      currentIndexingNotice: null,
+      indexNoticeMessage: null
+    };
+  }
+  createIndexingNotice() {
+    const frag = document.createDocumentFragment();
+    const container = frag.createEl("div", { cls: "copilot-notice-container" });
+    this.state.indexNoticeMessage = container.createEl("div", { cls: "copilot-notice-message" });
+    this.updateIndexingNoticeMessage();
+    const buttonContainer = container.createEl("div", { cls: "copilot-notice-buttons" });
+    const pauseButton = buttonContainer.createEl("button");
+    pauseButton.textContent = "Pause";
+    pauseButton.addEventListener("click", (event) => {
+      event.stopPropagation();
+      event.preventDefault();
+      if (this.state.isIndexingPaused) {
+        this.resumeIndexing();
+        pauseButton.textContent = "Pause";
+      } else {
+        this.pauseIndexing();
+        pauseButton.textContent = "Resume";
+      }
+    });
+    const stopButton = buttonContainer.createEl("button");
+    stopButton.textContent = "Stop";
+    stopButton.style.marginLeft = "8px";
+    stopButton.addEventListener("click", (event) => {
+      event.stopPropagation();
+      event.preventDefault();
+      this.cancelIndexing();
+    });
+    frag.appendChild(this.state.indexNoticeMessage);
+    frag.appendChild(buttonContainer);
+    this.state.currentIndexingNotice = new import_obsidian31.Notice(frag, 0);
+    return this.state.currentIndexingNotice;
+  }
+  async handlePause() {
+    if (this.state.isIndexingPaused) {
+      while (this.state.isIndexingPaused && !this.state.isIndexingCancelled) {
+        await new Promise((resolve) => setTimeout(resolve, 100));
+      }
+      if (!this.state.isIndexingCancelled) {
+        const files = await this.getFilesToIndex();
+        if (files.length === 0) {
+          console.log("No files to index after filter change, stopping indexing");
+          this.cancelIndexing();
+          new import_obsidian31.Notice("No files to index with current filters");
+          return;
+        }
+        this.state.totalFilesToIndex = files.length;
+        console.log("Total files to index:", this.state.totalFilesToIndex);
+        console.log("Files to index:", files);
+        this.updateIndexingNoticeMessage();
+      }
+    }
+  }
+  pauseIndexing() {
+    this.state.isIndexingPaused = true;
+  }
+  resumeIndexing() {
+    this.state.isIndexingPaused = false;
+  }
+  updateIndexingNoticeMessage() {
+    if (this.state.indexNoticeMessage) {
+      const status = this.state.isIndexingPaused ? " (Paused)" : "";
+      const settings = getSettings();
+      const folders = extractAppIgnoreSettings(this.app);
+      const inclusions = settings.qaInclusions ? `Inclusions: ${settings.qaInclusions}` : "Inclusions: None";
+      const exclusions = folders.length > 0 || settings.qaExclusions ? `Exclusions: ${folders.join(", ")}${folders.length ? ", " : ""}${settings.qaExclusions || "None"}` : "Exclusions: None";
+      this.state.indexNoticeMessage.textContent = `Copilot is indexing your vault...
+${this.state.indexedCount}/${this.state.totalFilesToIndex} files processed${status}
+${exclusions}
+${inclusions}`;
+    }
+  }
+  handleIndexingError(err, file, errors2, rateLimitNoticeShown) {
+    console.error(`Error indexing file ${file.path}:`, err);
+    errors2.push(file.path);
+    if (!rateLimitNoticeShown) {
+      new import_obsidian31.Notice(`Error indexing file ${file.path}. Check console for details.`);
+    }
+  }
+  isRateLimitError(err) {
+    return err?.message?.includes?.("rate limit") || false;
+  }
+  finalizeIndexing(errors2) {
+    if (this.state.currentIndexingNotice) {
+      this.state.currentIndexingNotice.hide();
+    }
+    if (this.state.isIndexingCancelled) {
+      new import_obsidian31.Notice(`Indexing cancelled`);
+      return;
+    }
+    if (errors2.length > 0) {
+      new import_obsidian31.Notice(`Indexing completed with ${errors2.length} errors. Check console for details.`);
+    } else {
+      new import_obsidian31.Notice("Indexing completed successfully!");
+    }
+  }
+  handleFatalError(error) {
+    console.error("Fatal error during indexing:", error);
+    if (this.state.currentIndexingNotice) {
+      this.state.currentIndexingNotice.hide();
+    }
+    new import_obsidian31.Notice("Fatal error during indexing. Check console for details.");
+  }
+  async reindexFile(file) {
+    try {
+      const embeddingInstance = this.embeddingsManager.getEmbeddingsAPI();
+      if (!embeddingInstance) {
+        return;
+      }
+      await this.dbOps.removeDocs(file.path);
+      const modelChanged = await this.dbOps.checkAndHandleEmbeddingModelChange(embeddingInstance);
+      if (modelChanged) {
+        await this.indexVaultToVectorStore(true);
+        return;
+      }
+      const content = await this.app.vault.cachedRead(file);
+      const fileCache = this.app.metadataCache.getFileCache(file);
+      const fileToSave = {
+        title: file.basename,
+        path: file.path,
+        content,
+        embeddingModel: EmbeddingManager.getModelName(embeddingInstance),
+        ctime: file.stat.ctime,
+        mtime: file.stat.mtime,
+        tags: fileCache?.tags?.map((tag) => tag.tag) ?? [],
+        extension: file.extension,
+        metadata: {
+          ...fileCache?.frontmatter ?? {},
+          created: file.stat.ctime,
+          modified: file.stat.mtime
+        }
+      };
+      await this.indexDocument(embeddingInstance, fileToSave);
+      this.dbOps.markUnsavedChanges();
+      if (getSettings().debug) {
+        console.log(`Reindexed file: ${file.path}`);
+      }
+    } catch (error) {
+      console.error(`Error reindexing file ${file.path}:`, error);
+    }
+  }
+  cancelIndexing() {
+    console.log("Indexing cancelled by user");
+    this.state.isIndexingCancelled = true;
+    if (this.state.currentIndexingNotice) {
+      this.state.currentIndexingNotice.hide();
+    }
+  }
+};
+
+// src/search/vectorStoreManager.ts
+var VectorStoreManager = class {
+  constructor(app2) {
+    this.app = app2;
+    this.embeddingsManager = EmbeddingManager.getInstance();
+    this.dbOps = new DBOperations(app2);
+    this.indexOps = new IndexOperations(app2, this.dbOps, this.embeddingsManager);
+    this.eventHandler = new IndexEventHandler(app2, this.indexOps, this.dbOps);
+    this.initializationPromise = this.initialize();
+    this.setupSettingsSubscription();
+  }
+  setupSettingsSubscription() {
+    this.lastKnownSettings = { ...getSettings() };
+    subscribeToSettingsChange(async () => {
+      const settings = getSettings();
+      const prevSettings = this.lastKnownSettings;
+      this.lastKnownSettings = { ...settings };
+      if (settings.enableIndexSync !== prevSettings?.enableIndexSync) {
+        const newPath = await this.dbOps.getDbPath();
+        const oldPath = this.dbOps.getCurrentDbPath();
+        if (oldPath !== newPath) {
+          await this.dbOps.initializeDB(this.embeddingsManager.getEmbeddingsAPI());
+        }
+      }
+      if (settings.qaExclusions !== prevSettings?.qaExclusions || settings.qaInclusions !== prevSettings?.qaInclusions) {
+        await this.eventHandler.updateExcludedFiles();
+      }
+    });
+  }
+  async initialize() {
+    try {
+      let retries = 3;
+      while (retries > 0) {
+        try {
+          await this.dbOps.initializeDB(this.embeddingsManager.getEmbeddingsAPI());
+          break;
+        } catch (error) {
+          if (error instanceof CustomError && error.message.includes("Vault adapter not available")) {
+            retries--;
+            if (retries > 0) {
+              await new Promise((resolve) => setTimeout(resolve, 100));
+              continue;
+            }
+          }
+          console.error("Failed to initialize vector store:", error);
+          break;
+        }
+      }
+      this.eventHandler.initializeEventListeners();
+    } catch (error) {
+      console.error("Failed to initialize vector store:", error);
+    }
+  }
+  async indexVaultToVectorStore(overwrite) {
+    await this.waitForInitialization();
+    if (import_obsidian32.Platform.isMobile && getSettings().disableIndexOnMobile) {
+      new import_obsidian32.Notice("Indexing is disabled on mobile devices");
+      return 0;
+    }
+    return this.indexOps.indexVaultToVectorStore(overwrite);
+  }
+  async clearIndex() {
+    await this.waitForInitialization();
+    await this.dbOps.clearIndex(this.embeddingsManager.getEmbeddingsAPI());
+  }
+  async garbageCollectVectorStore() {
+    await this.waitForInitialization();
+    return this.dbOps.garbageCollect();
+  }
+  async getIndexedFiles() {
+    await this.waitForInitialization();
+    return this.dbOps.getIndexedFiles();
+  }
+  async isIndexEmpty() {
+    await this.waitForInitialization();
+    return this.dbOps.isIndexEmpty();
+  }
+  async waitForInitialization() {
+    await this.initializationPromise;
+  }
+  onunload() {
+    this.eventHandler.cleanup();
+    this.dbOps.onunload();
+  }
+  async getOrInitializeDb(embeddingsAPI) {
+    let db = this.dbOps.getDb();
+    if (!db) {
+      console.warn("Copilot index is not loaded. Reinitializing...");
+      db = await this.dbOps.initializeDB(embeddingsAPI);
+      if (!db) {
+        throw new Error("Database failed to initialize. Please check your settings.");
+      }
+    }
+    return db;
+  }
+};
+
+// src/settings/SettingsPage.tsx
+var import_obsidian34 = require("obsidian");
 var import_react28 = __toESM(require_react());
 var import_client5 = __toESM(require_client15());
 
@@ -161366,7 +161931,7 @@ var import_react27 = __toESM(require_react());
 var import_react19 = __toESM(require_react());
 
 // src/settings/components/SettingBlocks.tsx
-var import_obsidian29 = require("obsidian");
+var import_obsidian33 = require("obsidian");
 var import_react18 = __toESM(require_react());
 var DropdownComponent = ({
   name,
@@ -161527,6 +162092,7 @@ var ModelCard = ({ model, isDefault, onSetDefault, onToggleEnabled, onToggleCors
   )))));
 };
 var ModelSettingsComponent = ({
+  app: app2,
   activeModels,
   onUpdateModels,
   providers,
@@ -161547,6 +162113,7 @@ var ModelSettingsComponent = ({
   };
   const [newModel, setNewModel] = (0, import_react18.useState)(emptyModel);
   const [isAddModelOpen, setIsAddModelOpen] = (0, import_react18.useState)(false);
+  const [isVerifying, setIsVerifying] = (0, import_react18.useState)(false);
   const getModelKey3 = (model) => `${model.name}|${model.provider}`;
   const handleAddModel = () => {
     if (newModel.name && newModel.provider) {
@@ -161554,11 +162121,32 @@ var ModelSettingsComponent = ({
       onUpdateModels(updatedModels);
       setNewModel(emptyModel);
     } else {
-      new import_obsidian29.Notice("Please fill in necessary fields!");
+      new import_obsidian33.Notice("Please fill in necessary fields!");
     }
   };
   const handleSetDefaultModel = (model) => {
-    onSetDefaultModelKey(getModelKey3(model));
+    const modelKey = getModelKey3(model);
+    onSetDefaultModelKey(modelKey);
+  };
+  const handleVerifyModel = async () => {
+    if (!newModel.name || !newModel.provider) {
+      new import_obsidian33.Notice("Please fill in necessary fields!");
+      return;
+    }
+    setIsVerifying(true);
+    try {
+      if (isEmbeddingModel) {
+        await EmbeddingManager.getInstance().ping(newModel);
+      } else {
+        await ChatModelManager.getInstance().ping(newModel);
+      }
+      new import_obsidian33.Notice("Model connection verified successfully!");
+    } catch (error) {
+      console.error("Model verification failed:", error);
+      new import_obsidian33.Notice(`Model verification failed: ${error.message}`);
+    } finally {
+      setIsVerifying(false);
+    }
   };
   return /* @__PURE__ */ import_react18.default.createElement("div", null, /* @__PURE__ */ import_react18.default.createElement("div", { className: "model-settings-container" }, /* @__PURE__ */ import_react18.default.createElement("table", { className: "model-settings-table desktop-only" }, /* @__PURE__ */ import_react18.default.createElement("thead", null, /* @__PURE__ */ import_react18.default.createElement("tr", null, /* @__PURE__ */ import_react18.default.createElement("th", null, "Default"), /* @__PURE__ */ import_react18.default.createElement("th", null, "Model"), /* @__PURE__ */ import_react18.default.createElement("th", null, "Provider"), /* @__PURE__ */ import_react18.default.createElement("th", null, "Enabled"), /* @__PURE__ */ import_react18.default.createElement("th", null, "CORS"), /* @__PURE__ */ import_react18.default.createElement("th", null, "Delete"))), /* @__PURE__ */ import_react18.default.createElement("tbody", null, activeModels.map((model, index2) => /* @__PURE__ */ import_react18.default.createElement("tr", { key: getModelKey3(model) }, /* @__PURE__ */ import_react18.default.createElement("td", null, /* @__PURE__ */ import_react18.default.createElement(
     "input",
@@ -161655,7 +162243,48 @@ var ModelSettingsComponent = ({
       type: "password",
       onChange: (value) => setNewModel({ ...newModel, apiKey: value })
     }
-  ), /* @__PURE__ */ import_react18.default.createElement("button", { onClick: handleAddModel, className: "add-model-button" }, "Add Model"))));
+  ), /* @__PURE__ */ import_react18.default.createElement("div", { style: { marginTop: "20px" } }, /* @__PURE__ */ import_react18.default.createElement(
+    "div",
+    {
+      style: {
+        marginBottom: "10px",
+        color: "var(--text-muted)",
+        fontSize: "0.9em"
+      }
+    },
+    "Verify the connection before adding the model to ensure it's properly configured and accessible."
+  ), /* @__PURE__ */ import_react18.default.createElement("div", { style: { display: "flex", gap: "10px" } }, /* @__PURE__ */ import_react18.default.createElement(
+    "button",
+    {
+      onClick: handleVerifyModel,
+      style: {
+        backgroundColor: "var(--interactive-accent)",
+        color: "var(--text-on-accent)",
+        padding: "8px 16px",
+        borderRadius: "4px",
+        cursor: isVerifying ? "not-allowed" : "pointer",
+        border: "none",
+        opacity: isVerifying ? 0.6 : 1
+      },
+      disabled: isVerifying
+    },
+    isVerifying ? "Verifying..." : "Verify Connection"
+  ), /* @__PURE__ */ import_react18.default.createElement(
+    "button",
+    {
+      onClick: handleAddModel,
+      style: {
+        backgroundColor: "var(--interactive-accent)",
+        color: "var(--text-on-accent)",
+        padding: "8px 16px",
+        borderRadius: "4px",
+        cursor: isVerifying ? "not-allowed" : "pointer",
+        opacity: isVerifying ? 0.6 : 1
+      },
+      disabled: isVerifying
+    },
+    "Add Model"
+  ))))));
 };
 
 // src/settings/components/AdvancedSettings.tsx
@@ -161969,6 +162598,7 @@ var GeneralSettings = () => {
   return /* @__PURE__ */ import_react25.default.createElement("div", null, /* @__PURE__ */ import_react25.default.createElement("h2", null, "General Settings"), /* @__PURE__ */ import_react25.default.createElement(
     ModelSettingsComponent,
     {
+      app,
       activeModels: settings.activeModels,
       onUpdateModels: handleUpdateModels,
       providers: Object.values(ChatModelProviders),
@@ -162083,9 +162713,21 @@ var GeneralSettings = () => {
 };
 var GeneralSettings_default = GeneralSettings;
 
+// src/components/modals/RebuildIndexConfirmModal.tsx
+var RebuildIndexConfirmModal = class extends ConfirmModal {
+  constructor(app2, onConfirm) {
+    super(
+      app2,
+      onConfirm,
+      "Changing this setting means you have to rebuild the index for your entire vault, do you wish to proceed?",
+      "Rebuild Index"
+    );
+  }
+};
+
 // src/settings/components/QASettings.tsx
 var import_react26 = __toESM(require_react());
-var QASettings = () => {
+var QASettings = ({ vectorStoreManager }) => {
   const settings = useSettingsValue();
   const handleUpdateEmbeddingModels = (models) => {
     const updatedActiveEmbeddingModels = models.map((model) => ({
@@ -162095,9 +162737,26 @@ var QASettings = () => {
     }));
     updateSetting("activeEmbeddingModels", updatedActiveEmbeddingModels);
   };
+  const handleSetDefaultEmbeddingModel = async (modelKey) => {
+    if (modelKey !== settings.embeddingModelKey) {
+      new RebuildIndexConfirmModal(app, async () => {
+        updateSetting("embeddingModelKey", modelKey);
+      }).open();
+    }
+  };
+  const handlePartitionsChange = (value) => {
+    const numValue = parseInt(value);
+    if (numValue !== settings.numPartitions) {
+      new RebuildIndexConfirmModal(app, async () => {
+        updateSetting("numPartitions", numValue);
+        await vectorStoreManager.indexVaultToVectorStore(true);
+      }).open();
+    }
+  };
   return /* @__PURE__ */ import_react26.default.createElement("div", { className: "copilot-settings-tab" }, /* @__PURE__ */ import_react26.default.createElement("h1", null, "QA Settings"), /* @__PURE__ */ import_react26.default.createElement("p", null, "QA mode relies on a ", /* @__PURE__ */ import_react26.default.createElement("em", null, "local"), " vector index."), /* @__PURE__ */ import_react26.default.createElement("h2", null, "Local Embedding Model"), /* @__PURE__ */ import_react26.default.createElement("p", null, "Check the", " ", /* @__PURE__ */ import_react26.default.createElement("a", { href: "https://github.com/logancyang/obsidian-copilot/blob/master/local_copilot.md" }, "local copilot"), " ", "setup guide to setup Ollama's local embedding model (requires Ollama v0.1.26 or above)."), /* @__PURE__ */ import_react26.default.createElement("h2", null, "Embedding Models"), /* @__PURE__ */ import_react26.default.createElement(
     ModelSettingsComponent,
     {
+      app,
       activeModels: settings.activeEmbeddingModels,
       onUpdateModels: handleUpdateEmbeddingModels,
       providers: Object.values(EmbeddingModelProviders),
@@ -162108,7 +162767,7 @@ var QASettings = () => {
         updateSetting("activeEmbeddingModels", updatedActiveEmbeddingModels);
       },
       defaultModelKey: settings.embeddingModelKey,
-      onSetDefaultModelKey: (value) => updateSetting("embeddingModelKey", value),
+      onSetDefaultModelKey: handleSetDefaultEmbeddingModel,
       isEmbeddingModel: true
     }
   ), /* @__PURE__ */ import_react26.default.createElement("h1", null, "Auto-Index Strategy"), /* @__PURE__ */ import_react26.default.createElement("div", { className: "warning-message" }, "If you are using a paid embedding provider, beware of costs for large vaults!"), /* @__PURE__ */ import_react26.default.createElement("p", null, "When you switch to ", /* @__PURE__ */ import_react26.default.createElement("strong", null, "Vault QA"), " mode, your vault is indexed", " ", /* @__PURE__ */ import_react26.default.createElement("em", null, "based on the auto-index strategy you select below"), ".", /* @__PURE__ */ import_react26.default.createElement("br", null)), /* @__PURE__ */ import_react26.default.createElement(
@@ -162124,9 +162783,9 @@ var QASettings = () => {
     SliderComponent,
     {
       name: "Max Sources",
-      description: "Copilot goes through your vault to find relevant blocks and passes the top N blocks to the LLM. Default for N is 3. Increase if you want more sources included in the answer generation step.",
+      description: "Copilot goes through your vault to find relevant blocks and passes the top N blocks to the LLM. Default for N is 3. Increase if you want more sources included in the answer generation step. WARNING: more sources significantly degrades answer quality if the chat model is weak!",
       min: 1,
-      max: 10,
+      max: 30,
       step: 1,
       value: settings.maxSourceChunks,
       onChange: (value) => updateSetting("maxSourceChunks", value)
@@ -162143,6 +162802,15 @@ var QASettings = () => {
       onChange: (value) => updateSetting("embeddingRequestsPerSecond", value)
     }
   ), /* @__PURE__ */ import_react26.default.createElement(
+    DropdownComponent,
+    {
+      name: "Number of Partitions",
+      description: "Number of partitions for Copilot index. Default is 1. Increase if you have issues indexing large vaults. Warning: Changes require clearing and rebuilding the index!",
+      value: settings.numPartitions.toString(),
+      onChange: handlePartitionsChange,
+      options: ["1", "2", "3", "4", "5", "6", "7", "8"]
+    }
+  ), /* @__PURE__ */ import_react26.default.createElement(
     TextAreaComponent,
     {
       name: "Exclusions",
@@ -162155,7 +162823,7 @@ var QASettings = () => {
     TextAreaComponent,
     {
       name: "Inclusions",
-      description: "When specified, ONLY these paths, tags, or note titles will be indexed (comma separated). Takes precedence over exclusions. Files which were previously indexed will remain in the index unless you force re-index. Format: folder1, folder1/folder2, #tag1, #tag2, [[note1]], [[note2]]",
+      description: "When specified, ONLY these paths, tags, or note titles will be indexed (comma separated). Files which were previously indexed will remain in the index unless you force re-index. If overlapping with exclusions, exclusions take precedence. Format: folder1, folder1/folder2, #tag1, #tag2, [[note1]], [[note2]]",
       placeholder: "folder1, #tag1, [[note1]]",
       value: settings.qaInclusions,
       onChange: (value) => updateSetting("qaInclusions", value)
@@ -162182,12 +162850,12 @@ var QASettings_default = QASettings;
 
 // src/settings/components/SettingsMain.tsx
 var SettingsMain = ({ plugin }) => {
-  return /* @__PURE__ */ import_react27.default.createElement("div", { style: { display: "flex", flexDirection: "column", gap: "1rem" } }, /* @__PURE__ */ import_react27.default.createElement("h1", { style: { display: "flex", alignItems: "center", justifyContent: "space-between" } }, /* @__PURE__ */ import_react27.default.createElement("div", null, "Copilot Settings ", /* @__PURE__ */ import_react27.default.createElement("small", null, "v", plugin.manifest.version)), /* @__PURE__ */ import_react27.default.createElement("button", { onClick: () => new ResetSettingsConfirmModal(app, () => resetSettings()).open() }, "Reset to Default Settings")), /* @__PURE__ */ import_react27.default.createElement(CopilotPlusSettings_default, null), /* @__PURE__ */ import_react27.default.createElement(GeneralSettings_default, null), /* @__PURE__ */ import_react27.default.createElement(ApiSettings_default, null), /* @__PURE__ */ import_react27.default.createElement(QASettings_default, null), /* @__PURE__ */ import_react27.default.createElement(AdvancedSettings_default, null));
+  return /* @__PURE__ */ import_react27.default.createElement("div", { style: { display: "flex", flexDirection: "column", gap: "1rem" } }, /* @__PURE__ */ import_react27.default.createElement("h1", { style: { display: "flex", alignItems: "center", justifyContent: "space-between" } }, /* @__PURE__ */ import_react27.default.createElement("div", null, "Copilot Settings ", /* @__PURE__ */ import_react27.default.createElement("small", null, "v", plugin.manifest.version)), /* @__PURE__ */ import_react27.default.createElement("button", { onClick: () => new ResetSettingsConfirmModal(app, () => resetSettings()).open() }, "Reset to Default Settings")), /* @__PURE__ */ import_react27.default.createElement(CopilotPlusSettings_default, null), /* @__PURE__ */ import_react27.default.createElement(GeneralSettings_default, null), /* @__PURE__ */ import_react27.default.createElement(ApiSettings_default, null), /* @__PURE__ */ import_react27.default.createElement(QASettings_default, { vectorStoreManager: plugin.vectorStoreManager }), /* @__PURE__ */ import_react27.default.createElement(AdvancedSettings_default, null));
 };
 var SettingsMain_default = SettingsMain;
 
 // src/settings/SettingsPage.tsx
-var CopilotSettingTab = class extends import_obsidian30.PluginSettingTab {
+var CopilotSettingTab = class extends import_obsidian34.PluginSettingTab {
   constructor(app2, plugin) {
     super(app2, plugin);
     this.plugin = plugin;
@@ -162202,9 +162870,9 @@ var CopilotSettingTab = class extends import_obsidian30.PluginSettingTab {
       await app2.plugins.disablePlugin("copilot");
       await app2.plugins.enablePlugin("copilot");
       app2.setting.openTabById("copilot").display();
-      new import_obsidian30.Notice("Plugin reloaded successfully.");
+      new import_obsidian34.Notice("Plugin reloaded successfully.");
     } catch (error) {
-      new import_obsidian30.Notice("Failed to reload the plugin. Please reload manually.");
+      new import_obsidian34.Notice("Failed to reload the plugin. Please reload manually.");
       console.error("Error reloading plugin:", error);
     }
   }
@@ -162217,7 +162885,7 @@ var CopilotSettingTab = class extends import_obsidian30.PluginSettingTab {
     sections.render(/* @__PURE__ */ import_react28.default.createElement(SettingsMain_default, { plugin: this.plugin }));
     const devModeHeader = containerEl.createEl("h1", { text: "Additional Settings" });
     devModeHeader.style.marginTop = "40px";
-    new import_obsidian30.Setting(containerEl).setName("Enable Encryption").setDesc(
+    new import_obsidian34.Setting(containerEl).setName("Enable Encryption").setDesc(
       createFragment((frag) => {
         frag.appendText("Enable encryption for the API keys.");
       })
@@ -162226,7 +162894,7 @@ var CopilotSettingTab = class extends import_obsidian30.PluginSettingTab {
         updateSetting("enableEncryption", value);
       })
     );
-    new import_obsidian30.Setting(containerEl).setName("Debug mode").setDesc(
+    new import_obsidian34.Setting(containerEl).setName("Debug mode").setDesc(
       createFragment((frag) => {
         frag.appendText("Debug mode will log all API requests and prompts to the console.");
       })
@@ -162287,8 +162955,8 @@ var FileParserManager = class {
 };
 
 // src/main.ts
-var import_obsidian31 = require("obsidian");
-var CopilotPlugin = class extends import_obsidian31.Plugin {
+var import_obsidian35 = require("obsidian");
+var CopilotPlugin = class extends import_obsidian35.Plugin {
   constructor() {
     super(...arguments);
     this.userMessageHistory = [];
@@ -162317,8 +162985,8 @@ var CopilotPlugin = class extends import_obsidian31.Plugin {
     });
     this.addSettingTab(new CopilotSettingTab(this.app, this));
     this.sharedState = new sharedState_default();
-    this.vectorStoreManager = new VectorStoreManager_default(this.app);
-    this.vectorStoreManager.initializeEventListeners();
+    this.vectorStoreManager = new VectorStoreManager(this.app);
+    await this.vectorStoreManager.waitForInitialization();
     this.brevilabsClient = BrevilabsClient.getInstance();
     this.chainManager = new ChainManager(this.app, this.vectorStoreManager, this.brevilabsClient);
     this.fileParserManager = new FileParserManager(this.brevilabsClient);
@@ -162351,9 +163019,9 @@ var CopilotPlugin = class extends import_obsidian31.Plugin {
         new AddPromptModal(this.app, async (title, prompt) => {
           try {
             await promptProcessor.savePrompt(title, prompt);
-            new import_obsidian31.Notice("Custom prompt saved successfully.");
+            new import_obsidian35.Notice("Custom prompt saved successfully.");
           } catch (e3) {
-            new import_obsidian31.Notice("Error saving custom prompt. Please check if the title already exists.");
+            new import_obsidian35.Notice("Error saving custom prompt. Please check if the title already exists.");
             console.error(e3);
           }
         }).open();
@@ -162367,19 +163035,19 @@ var CopilotPlugin = class extends import_obsidian31.Plugin {
         const promptTitles = prompts.map((p3) => p3.title);
         new ListPromptModal(this.app, promptTitles, async (promptTitle) => {
           if (!promptTitle) {
-            new import_obsidian31.Notice("Please select a prompt title.");
+            new import_obsidian35.Notice("Please select a prompt title.");
             return;
           }
           try {
             const prompt = await promptProcessor.getPrompt(promptTitle);
             if (!prompt) {
-              new import_obsidian31.Notice(`No prompt found with the title "${promptTitle}".`);
+              new import_obsidian35.Notice(`No prompt found with the title "${promptTitle}".`);
               return;
             }
             this.processCustomPrompt("applyCustomPrompt", prompt.content);
           } catch (err) {
             console.error(err);
-            new import_obsidian31.Notice("An error occurred.");
+            new import_obsidian35.Notice("An error occurred.");
           }
         }).open();
       }
@@ -162393,7 +163061,7 @@ var CopilotPlugin = class extends import_obsidian31.Plugin {
             this.processCustomPrompt("applyAdhocPrompt", adhocPrompt);
           } catch (err) {
             console.error(err);
-            new import_obsidian31.Notice("An error occurred.");
+            new import_obsidian35.Notice("An error occurred.");
           }
         });
         modal.open();
@@ -162410,15 +163078,15 @@ var CopilotPlugin = class extends import_obsidian31.Plugin {
           const promptTitles = prompts.map((p3) => p3.title);
           new ListPromptModal(this.app, promptTitles, async (promptTitle) => {
             if (!promptTitle) {
-              new import_obsidian31.Notice("Please select a prompt title.");
+              new import_obsidian35.Notice("Please select a prompt title.");
               return;
             }
             try {
               await promptProcessor.deletePrompt(promptTitle);
-              new import_obsidian31.Notice(`Prompt "${promptTitle}" has been deleted.`);
+              new import_obsidian35.Notice(`Prompt "${promptTitle}" has been deleted.`);
             } catch (err) {
               console.error(err);
-              new import_obsidian31.Notice("An error occurred while deleting the prompt.");
+              new import_obsidian35.Notice("An error occurred while deleting the prompt.");
             }
           }).open();
         });
@@ -162436,7 +163104,7 @@ var CopilotPlugin = class extends import_obsidian31.Plugin {
           const promptTitles = prompts.map((p3) => p3.title);
           new ListPromptModal(this.app, promptTitles, async (promptTitle) => {
             if (!promptTitle) {
-              new import_obsidian31.Notice("Please select a prompt title.");
+              new import_obsidian35.Notice("Please select a prompt title.");
               return;
             }
             try {
@@ -162447,13 +163115,13 @@ var CopilotPlugin = class extends import_obsidian31.Plugin {
                   async (title, newPrompt) => {
                     try {
                       await promptProcessor.updatePrompt(promptTitle, title, newPrompt);
-                      new import_obsidian31.Notice(`Prompt "${title}" has been updated.`);
+                      new import_obsidian35.Notice(`Prompt "${title}" has been updated.`);
                     } catch (err) {
                       console.error(err);
                       if (err instanceof CustomError) {
-                        new import_obsidian31.Notice(err.message);
+                        new import_obsidian35.Notice(err.message);
                       } else {
-                        new import_obsidian31.Notice("An error occurred.");
+                        new import_obsidian35.Notice("An error occurred.");
                       }
                     }
                   },
@@ -162462,11 +163130,11 @@ var CopilotPlugin = class extends import_obsidian31.Plugin {
                   false
                 ).open();
               } else {
-                new import_obsidian31.Notice(`No prompt found with the title "${promptTitle}".`);
+                new import_obsidian35.Notice(`No prompt found with the title "${promptTitle}".`);
               }
             } catch (err) {
               console.error(err);
-              new import_obsidian31.Notice("An error occurred.");
+              new import_obsidian35.Notice("An error occurred.");
             }
           }).open();
         });
@@ -162484,7 +163152,13 @@ var CopilotPlugin = class extends import_obsidian31.Plugin {
       id: "garbage-collect-copilot-index",
       name: "Garbage collect Copilot index (remove files that no longer exist in vault)",
       callback: async () => {
-        await this.vectorStoreManager.garbageCollectVectorStore();
+        try {
+          const removedDocs = await this.vectorStoreManager.garbageCollectVectorStore();
+          new import_obsidian35.Notice(`${removedDocs} documents removed from Copilot index.`);
+        } catch (err) {
+          console.error("Error garbage collecting the Copilot index:", err);
+          new import_obsidian35.Notice("An error occurred while garbage collecting the Copilot index.");
+        }
       }
     });
     this.addCommand({
@@ -162493,11 +163167,11 @@ var CopilotPlugin = class extends import_obsidian31.Plugin {
       callback: async () => {
         try {
           const indexedFileCount = await this.vectorStoreManager.indexVaultToVectorStore();
-          new import_obsidian31.Notice(`${indexedFileCount} vault files indexed to Copilot index.`);
+          new import_obsidian35.Notice(`${indexedFileCount} vault files indexed to Copilot index.`);
           console.log(`${indexedFileCount} vault files indexed to Copilot index.`);
         } catch (err) {
           console.error("Error indexing vault to Copilot index:", err);
-          new import_obsidian31.Notice("An error occurred while indexing vault to Copilot index.");
+          new import_obsidian35.Notice("An error occurred while indexing vault to Copilot index.");
         }
       }
     });
@@ -162506,13 +163180,12 @@ var CopilotPlugin = class extends import_obsidian31.Plugin {
       name: "Force re-index vault for QA",
       callback: async () => {
         try {
-          await this.vectorStoreManager.clearIndex();
           const indexedFileCount = await this.vectorStoreManager.indexVaultToVectorStore(true);
-          new import_obsidian31.Notice(`${indexedFileCount} vault files re-indexed to Copilot index.`);
+          new import_obsidian35.Notice(`${indexedFileCount} vault files re-indexed to Copilot index.`);
           console.log(`${indexedFileCount} vault files re-indexed to Copilot index.`);
         } catch (err) {
           console.error("Error re-indexing vault to Copilot index:", err);
-          new import_obsidian31.Notice("An error occurred while re-indexing vault to Copilot index.");
+          new import_obsidian35.Notice("An error occurred while re-indexing vault to Copilot index.");
         }
       }
     });
@@ -162529,7 +163202,7 @@ var CopilotPlugin = class extends import_obsidian31.Plugin {
       callback: async () => {
         const activeFile = this.app.workspace.getActiveFile();
         if (!activeFile) {
-          new import_obsidian31.Notice("No active file");
+          new import_obsidian35.Notice("No active file");
           return;
         }
         const activeNoteContent = await this.app.vault.cachedRead(activeFile);
@@ -162551,7 +163224,7 @@ var CopilotPlugin = class extends import_obsidian31.Plugin {
         try {
           const indexedFiles = await this.vectorStoreManager.getIndexedFiles();
           if (indexedFiles.length === 0) {
-            new import_obsidian31.Notice("No indexed files found.");
+            new import_obsidian35.Notice("No indexed files found.");
             return;
           }
           const content = [
@@ -162559,22 +163232,43 @@ var CopilotPlugin = class extends import_obsidian31.Plugin {
             `Total files indexed: ${indexedFiles.length}`,
             "",
             "## Files",
-            ...indexedFiles.map((file) => `- [[${file}]]`)
+            ...indexedFiles.map((file2) => `- [[${file2}]]`)
           ].join("\n");
           const fileName = `Copilot-Indexed-Files-${new Date().toLocaleDateString().replace(/\//g, "-")}.md`;
           const filePath = `${fileName}`;
-          if (!this.app.vault.getAbstractFileByPath(filePath)) {
+          const existingFile = this.app.vault.getAbstractFileByPath(filePath);
+          if (existingFile instanceof import_obsidian35.TFile) {
+            await this.app.vault.modify(existingFile, content);
+          } else {
             await this.app.vault.create(filePath, content);
           }
-          const createdFile = this.app.vault.getAbstractFileByPath(filePath);
-          if (createdFile instanceof import_obsidian31.TFile) {
-            await this.app.workspace.getLeaf().openFile(createdFile);
-            new import_obsidian31.Notice(`Created list of ${indexedFiles.length} indexed files`);
+          const file = this.app.vault.getAbstractFileByPath(filePath);
+          if (file instanceof import_obsidian35.TFile) {
+            await this.app.workspace.getLeaf().openFile(file);
+            new import_obsidian35.Notice(`Listed ${indexedFiles.length} indexed files`);
           }
         } catch (error) {
           console.error("Error listing indexed files:", error);
-          new import_obsidian31.Notice("Failed to list indexed files.");
+          new import_obsidian35.Notice("Failed to list indexed files.");
         }
+      }
+    });
+    this.addCommand({
+      id: "remove-files-from-copilot-index",
+      name: "Remove files from Copilot index",
+      callback: async () => {
+        new RemoveFromIndexModal(this.app, async (filePaths) => {
+          try {
+            for (const path of filePaths) {
+              await this.vectorStoreManager.dbOps.removeDocs(path);
+            }
+            await this.vectorStoreManager.dbOps.saveDB();
+            new import_obsidian35.Notice(`Successfully removed ${filePaths.length} files from the index.`);
+          } catch (err) {
+            console.error("Error removing files from index:", err);
+            new import_obsidian35.Notice("An error occurred while removing files from the index.");
+          }
+        }).open();
       }
     });
     this.registerEvent(this.app.workspace.on("editor-menu", this.handleContextMenu));
@@ -162634,7 +163328,7 @@ var CopilotPlugin = class extends import_obsidian31.Plugin {
     );
   }
   getCurrentEditorOrDummy() {
-    const activeView = this.app.workspace.getActiveViewOfType(import_obsidian31.MarkdownView);
+    const activeView = this.app.workspace.getActiveViewOfType(import_obsidian35.MarkdownView);
     return {
       getSelection: () => {
         const selection = activeView?.editor?.getSelection();
@@ -162701,7 +163395,7 @@ var CopilotPlugin = class extends import_obsidian31.Plugin {
   }
   async countTotalTokens() {
     try {
-      const allContent = await this.vectorStoreManager.getAllQAMarkdownContent();
+      const allContent = await getAllQAMarkdownContent(this.app);
       const totalTokens = await this.chainManager.chatModelManager.countTokens(allContent);
       return totalTokens;
     } catch (error) {
@@ -162712,14 +163406,14 @@ var CopilotPlugin = class extends import_obsidian31.Plugin {
   async loadCopilotChatHistory() {
     const chatFiles = await this.getChatHistoryFiles();
     if (chatFiles.length === 0) {
-      new import_obsidian31.Notice("No chat history found.");
+      new import_obsidian35.Notice("No chat history found.");
       return;
     }
     new LoadChatHistoryModal(this.app, chatFiles, this.loadChatHistory.bind(this)).open();
   }
   async getChatHistoryFiles() {
     const folder = this.app.vault.getAbstractFileByPath(getSettings().defaultSaveFolder);
-    if (!(folder instanceof import_obsidian31.TFolder)) {
+    if (!(folder instanceof import_obsidian35.TFolder)) {
       return [];
     }
     const files = await this.app.vault.getMarkdownFiles();
@@ -162741,23 +163435,24 @@ var CopilotPlugin = class extends import_obsidian31.Plugin {
   }
   async findSimilarNotes(content, activeFilePath) {
     await this.vectorStoreManager.waitForInitialization();
-    const db = this.vectorStoreManager.getDb();
-    if (!db) {
-      throw new CustomError("Orama database not found.");
+    const embeddingsAPI = EmbeddingManager.getInstance().getEmbeddingsAPI();
+    if (!embeddingsAPI) {
+      throw new CustomError("Embeddings API not found.");
     }
+    const db = await this.vectorStoreManager.getOrInitializeDb(embeddingsAPI);
     const singleDoc = await search2(db, {
       term: "",
       limit: 1
     });
     if (singleDoc.hits.length === 0) {
-      new import_obsidian31.Notice("Index does not exist, indexing vault for similarity search...");
+      new import_obsidian35.Notice("Index does not exist, indexing vault for similarity search...");
       await this.vectorStoreManager.indexVaultToVectorStore();
     }
     const hybridRetriever = new HybridRetriever(
-      db,
+      this.vectorStoreManager.dbOps,
       this.app.vault,
       this.chainManager.chatModelManager.getChatModel(),
-      this.vectorStoreManager.getEmbeddingsManager().getEmbeddingsAPI(),
+      embeddingsAPI,
       this.chainManager.brevilabsClient,
       {
         minSimilarityScore: 0.3,
@@ -162777,15 +163472,15 @@ var CopilotPlugin = class extends import_obsidian31.Plugin {
   }
   async customSearchDB(query, salientTerms, textWeight) {
     await this.vectorStoreManager.waitForInitialization();
-    const db = this.vectorStoreManager.getDb();
-    if (!db) {
-      throw new CustomError("Orama database not found.");
+    const embeddingsAPI = EmbeddingManager.getInstance().getEmbeddingsAPI();
+    if (!embeddingsAPI) {
+      throw new CustomError("Embeddings API not found.");
     }
     const hybridRetriever = new HybridRetriever(
-      db,
+      this.vectorStoreManager.dbOps,
       this.app.vault,
       this.chainManager.chatModelManager.getChatModel(),
-      this.vectorStoreManager.getEmbeddingsManager().getEmbeddingsAPI(),
+      embeddingsAPI,
       this.chainManager.brevilabsClient,
       {
         minSimilarityScore: 0.3,
@@ -162803,13 +163498,13 @@ var CopilotPlugin = class extends import_obsidian31.Plugin {
   }
   async checkForUpdates() {
     try {
-      const response = await (0, import_obsidian31.requestUrl)({
+      const response = await (0, import_obsidian35.requestUrl)({
         url: "https://api.github.com/repos/logancyang/obsidian-copilot/releases/latest",
         method: "GET"
       });
       const latestVersion = response.json.tag_name.replace("v", "");
       if (this.isNewerVersion(latestVersion, this.manifest.version)) {
-        new import_obsidian31.Notice(
+        new import_obsidian35.Notice(
           `A newer version (${latestVersion}) of Obsidian Copilot is available. You are currently on version ${this.manifest.version}. Please update to the latest version.`,
           1e4
         );
