@@ -48,33 +48,47 @@ dg-publish:
 | Lower | Leg Press off Back                | 540    | 5 per side | 3    | 10   |
 | Lower | Leg Press Seated Close            | 110    |            | 3    | 10   |
 | Lower | Leg Press Seated Far              | 150??  |            | 3    | 10   |
-| Upper | Bicep Curls                       | ??     |            | 3    | 10   |
+| Upper | Bicep Curls                       | 0      |            | 3    | 10   |
 | Upper | Mid Row                           | 165??  |            | 3    | 10   |
 | Upper | Isolated Wide Chest               | 90     |            | 3    | 10   |
-| Upper | Chest Fly                         | ??     |            | 3    | 10   |
-| Upper | Rear Delt Fly                     | ??     |            | 3    | 10   |
-| Upper | Chest Press                       | ??     |            | 3    | 10   |
-| Upper | Shoulder Press                    | ??     |            | 3    | 10   |
+| Upper | Chest Fly                         | 0      |            | 3    | 10   |
+| Upper | Rear Delt Fly                     | 0      |            | 3    | 10   |
+| Upper | Chest Press                       | 0      |            | 3    | 10   |
+| Upper | Shoulder Press                    | 0      |            | 3    | 10   |
 | Upper | Blink Row with individual weights | 42.5   | 1 per side | 3    | 10   |
 ^machine
 
+OG table
+
 | Body  | Exercise        | Type       | W(lb/kg) | AltType    | Alt W(lb/kg) | Sets | Reps |
 | ----- | --------------- | ---------- | -------- | ---------- | ------------ | ---- | ---- |
-| Upper |                 | CurlBar    | ??       | CurlBar    | ??           | 3    | 10   |
-| Lower | Zercher Squat   | Barbell    | ??       | N/A        | N/A          | 3    | 10   |
-| Upper | Halo lunge      | Kettlebell | 17/8     | N/A        | N/A          | 8    | 2    |
-|       |                 | Jumps      | ??       | Jumps      | ??           | 3    | 10   |
-| Upper | PullUp          | Bodyweight | ??       | Bodyweight | ??           | 3    | 10   |
-| Upper | PullUp Neutral  | Bodyweight | ??       | Bodyweight | ??           | 3    | 10   |
-| Upper | ChinUp          | Bodyweight | ??       | Bodyweight | ??           | 3    | 10   |
-| Upper | SingleArm Press | Kettlebell | 17/8     |            |              |      |      |
+| Upper |                 | CurlBar    | 0        | CurlBar    | 0            | 3    | 10   |
+| Lower | Zercher Squat   | Barbell    | 0        | N/A        | 0            | 3    | 10   |
+| Upper | Halo lunge      | Kettlebell | 17       | N/A        | 0            | 8    | 2    |
+| Upper | PullUp          | Bodyweight | 90       | Bodyweight | 0            | 3    | 10   |
+| Upper | PullUp Neutral  | Bodyweight | 90       | Bodyweight | 0            | 3    | 10   |
+| Upper | ChinUp          | Bodyweight | 90       | Bodyweight | 0            | 3    | 10   |
+| Upper | SingleArm Press | Kettlebell | 17       | N/A        | 0            | 3    | 10   |
+|       |                 | Jumps      | 0        | Jumps      | 0            | 3    | 10   |
+
+
+| Exercise        | Type       | W(lb/kg) | Sets | Reps |
+| --------------- | ---------- | -------- | ---- | ---- |
+|                 | CurlBar    | 0        | 3    | 10   |
+| Zercher Squat   | Barbell    | 0        | 3    | 10   |
+| Halo lunge      | Kettlebell | 17       | 8    | 2    |
+| PullUp          | Bodyweight | 90       | 3    | 10   |
+| PullUp Neutral  | Bodyweight | 90       | 3    | 10   |
+| ChinUp          | Bodyweight | 90       | 3    | 10   |
+| SingleArm Press | Kettlebell | 17       | 3    | 10   |
+|                 | Jumps      | 0        | 3    | 10   |
 ^freeweight
 
-| Body  | Exercise       | Type      | W(lb/kg) | AltType    | Alt W(lb/kg) | Time      | Sets | Reps |
-| ----- | -------------- | --------- | -------- | ---------- | ------------ | --------- | ---- | ---- |
-| Core  | Russian Twists | Medi Ball | ??       | Kettlebell | 17/8         | **20**sec | 3    | N/A  |
-| Full  | Farmer Walk    | Dumbbell  | ??       | Dumbbell   | ??           | **20**sec | 3    | N/A  |
-| Lower |                | Rope      | ??       | Rope       | ??           | **20**sec | 3    | 10   |
+| Body  | Exercise       | Type      | W(lb/kg) | AltType    | Alt W(lb/kg) | Time      | Sets |
+| ----- | -------------- | --------- | -------- | ---------- | ------------ | --------- | ---- |
+| Core  | Russian Twists | Medi Ball | ??       | Kettlebell | 17/8         | **20**sec | 3    |
+| Full  | Farmer Walk    | Dumbbell  | ??       | Dumbbell   | ??           | **20**sec | 3    |
+| Lower |                | Rope      | ??       | Rope       | ??           | **20**sec | 3    |
 ^duration
 
 ```dataviewjs
@@ -104,6 +118,7 @@ color purple
 
 ```chart
 type: bar
+id: freeweight
 labels: [Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday]
 series:
   - title: Title 1
