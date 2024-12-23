@@ -277,7 +277,53 @@ Focus on tight, compact strikes when they throw wide punches.
 - **Elbows**:
     - Elbow strike to the head or body if their slip leaves gaps in their guard or exposes their sides.
 
+### Vulnerabilities in Defensive Movements
+#### **1. Pulls**
+- **Clinching**:
+    - Pulling back excessively creates an opportunity for opponents to close the distance and initiate a clinch. This allows them to control the upper body and limit the boxer’s ability to strike.
+
+- **Wrestling Takedowns**:
+    - If the pull is poorly balanced or mistimed, opponents can use the backward momentum to shoot for a single-leg or double-leg takedown, exploiting the boxer’s retreating position.
+
+- **Judo Trips**:
+    - Pulling back without maintaining a strong base can leave the boxer susceptible to trips and sweeps, especially against opponents skilled in Judo or other grappling arts.
+
+
+#### **2. Rolls**
+- **Clinching**:
+    - Rolling to evade punches may inadvertently bring the boxer closer to the opponent, increasing the likelihood of being pulled into a clinch and neutralized.
+
+- **Wrestling Takedowns**:
+    - Rolling off-balance or exposing the legs during lateral movement can give opponents an opportunity to attempt takedowns like the ankle pick or leg sweep.
+
+- **Judo Trips**:
+    - The rotational movement of a roll can be exploited by opponents using trips like the foot sweep or hip throw to disrupt balance and bring the boxer to the ground.
+
+
+
+#### **3. Slips**
+- **Clinching**:
+    
+    - Slipping into close range may inadvertently facilitate a clinch, allowing opponents to tie up the boxer’s arms and reduce striking opportunities.
+
+- **Wrestling Takedowns**:
+    - Slipping without proper technique or timing can leave the boxer vulnerable to level changes, such as single-leg takedowns or body lock attempts.
+
+- **Judo Trips**:
+    - Slipping laterally without maintaining balance can expose the boxer to trips like the inner reap or outer reap, which opponents can use to off-balance and take them down.
+
+
+### Rolling with a Punch
+- **Lean into the Punch’s Direction**:
+    - If a punch is coming and you can't fully evade, lean slightly in the direction of the punch. For example, if a right punch connects, lean a bit to the right to absorb and deflect some of the force.
+
+- **Watch for Low Hands**:
+    - Be cautious of opponents with low guard—they can often throw faster counters. If you choose to lower your hands as well, stay alert and ready to defend.
+
+- **Jaw Positioning**:
+    - Keep your jaw slightly tight to protect against impact but remain generally loose throughout your body to maintain mobility and prevent unnecessary tension.
 
 
 ### Back Leg Thigh Block  
 ![[_Fitness/_Infographic/unnamed.gif]]
+
