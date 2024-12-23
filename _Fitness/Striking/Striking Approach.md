@@ -144,16 +144,17 @@ flowchart LR
 ## **Distance Management**
 
 ### **Circling**
-When you circle, do so with intent, keeping your movement slow and controlled as you close the distance. This allows you to gauge your opponent's reaction and stay unpredictable. The key is to not rush; instead, use the circular movement to naturally draw your opponent into the range where your strikes are most effective.
+**Be the matador with an aggressive opponent waiting for the big punches.**
 
-Keep your head moving as you circle. This not only makes you harder to hit, but it also sets you up to throw quick, reactive strikes once you're in range. The head movement distracts and disrupts your opponent's timing, making it harder for them to predict your next move.
+When you circle, do so with purpose—keep your movement controlled and deliberate as you close the distance. This approach lets you gauge your opponent’s reaction and remain unpredictable. The key is not to rush; use your circling to draw the opponent into a range where your strikes are most effective.
 
-Rather than stopping your movement and then launching an attack, use the momentum of your circling to flow smoothly into your strikes. This creates a more natural, fluid offense and makes it harder for your opponent to predict when and where the attack is coming. Your opponent may be more likely to react late because you're maintaining motion and fluidity.
+Maintain consistent head movement while circling. Not only does this make you harder to hit, but it also primes you to throw quick, reactive strikes once you’re in range. The head movement disrupts your opponent's timing, making it more difficult for them to anticipate your next move.
 
-You can mix in brief pauses where you stop circling, then explode with a strike. This change in tempo disrupts their rhythm and throws off their timing, making it harder for them to react to your attacks. The sudden stop can trick them into thinking you're out of range, only to strike when they’re not expecting it.
+Rather than halting your movement before launching an attack, use the momentum of your circle to smoothly flow into your strikes. This creates a natural, fluid offense that’s harder for your opponent to predict. By staying in motion, your opponent will likely react late, giving you an edge.
 
-The combination of flowing and pausing keeps your opponent guessing. Use the momentum of circling for a consistent offensive threat but intersperse occasional stops and strikes to confuse them, causing hesitation and opening up counter opportunities for you.
+Incorporate brief pauses where you stop circling, then immediately explode with a strike. This sudden change in rhythm disrupts their flow and throws off their timing. They may mistakenly think you're out of range, only for you to strike when they least expect it.
 
+By mixing flowing movement with sudden stops and strikes, you keep your opponent guessing. The continuous threat from your circling movement, paired with occasional pauses, creates openings for counters and makes it difficult for them to predict your next move.
 ### **Hand Fighting**
 - **Too Close**: If their wrist is bending during hand fighting, they are too close.
 - **Control & Redirect**:
