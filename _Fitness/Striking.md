@@ -15,7 +15,7 @@ Categories into sub Categories of 4
 
 ## Counter Striking
 
-- Opposite Side meaning both you people are using the opposite foot so you are left and they are right this tends  easier to step outside there lead foot
+- Opposite Side meaning both you people are using the opposite foot so you are left and they are right this tends  easier to step outside there lead foot also can be perceived as the same side stance if your not familiar with standing in front of someone like this
 	- catch jab with back hand return jab 
 	- same jab but use half timing disrupt flow
 		- over or under jab
@@ -26,7 +26,7 @@ Categories into sub Categories of 4
 	- pull
 	- side step
 
-- Same Side meaning your both leading with the same side foot which is  harder to step outside lead foot and also from the outside in can be perceived as the opposite stance
+- Same Side meaning your both leading with the same side foot which is  harder to step outside lead foot and also from the outside in can be perceived as the opposite stance if your not familiar with standing in front of someone like this
 	- Tech of resistance revist
 	- Catch jab 2
 	- Block & shoot
