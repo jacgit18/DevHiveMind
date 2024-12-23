@@ -1,4 +1,9 @@
 
+Avoid taken creatine on empty stomach  
+  
+Eaa over bcaa
+
+
 
 #todo/Low/Medical
 
