@@ -84,10 +84,57 @@ By continuously experimenting and refining your approach, you'll develop a dynam
 
 ## **Stance**
 Best stance transition order 
-Bladed > Narrow > Wide > Squared > Bladed
-Bladed <-> Narrow 
-Wide <-> Squared 
-Bladed <-> Wide
+
+Squared <- Wide <-> Bladed <-> Narrow 
+				    V
+				Squared 
+
+```mermaid
+``` mermaid
+flowchart LR
+    A[Full Guard] 
+    B[De La Riva] 
+    C[Spider]
+    D[Butterfly]
+    E[Lasso Guard]
+    F[X]
+	G[Collar/Sleeve]
+	H[Half Guard] 
+	I[Side Control] 
+	J[Mount] 
+	K[North/South] 
+	L[Reverse DeLaRiva] 
+	M[Berimbolo]
+	N[50/50]
+	O[Worm]
+	P[Tornado]
+	Q[Rubber]
+	R[Mission Control]
+	Z[ZGuard]
+
+	1[Triangle]
+	2[Gogoplata]
+	3[Omoplata]
+	4[Armbar]
+
+    A <-.-> B
+    A <-.-> C
+    A <-.-> D
+    A <-.-> E
+    A <-.-> H
+    A <-.-> Q
+    A <-.-> R
+    B <-.-> C
+    B --> F
+    B --> G
+    B <-.-> L
+    B --> M
+    B --> O
+    B --> R
+
+
+```
+
 
 use feint to make it less obvious when changing stance
 
@@ -108,9 +155,10 @@ use feint to make it less obvious when changing stance
 - **Tight Narrow, Close-Foot Stance**:
     - Harder for opponents to read your movements.
     - Enhances feints and disguises your strikes, keeping your attacks unpredictable.
-    - narrow stance is advantageous because it allows you to move quickly and adjust your positioning with minimal effort. This agility helps you stay out of your opponent's reach while maintaining the ability to close the distance or retreat as needed.  
+    - narrow stance is advantageous because it allows you to enter and exit quickly and adjust your positioning with minimal effort. 
+    - narrow stance offers more freedom to pivot and shift your body to new positions letting you create angles to outmaneuver your opponent
 - **Wide Stance**:
-    - Offers stability and balance for power strikes but may telegraph movements more easily.
+    - Offers stability and balance for power strikes but may telegraph movements more easily. Use in close range also when being pressured anticipating a takedown attempt, a wide stance helps you stay grounded. It lowers your center of gravity, making it more difficult for your opponent to off-balance or take you down.  
 
 Switch between stances strategically to adapt to the situation and maintain an unpredictable approach.
 

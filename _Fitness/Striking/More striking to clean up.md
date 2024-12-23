@@ -67,26 +67,6 @@ Allows you to pivot off the lead foot and create advantageous angles.
   
 
 
-
-
-  
-Narrow Stance  
-  
-A narrow stance, where your feet are closer together, is most effective when you're fighting at long-range (outside range) or when you need to quickly move in and out of striking distance.  
-  
-When to Use a Narrow Stance:  
-  
-1. Outside Range (Long-Range Fighting): At this distance, you’re typically using straight punches, kicks, or trying to control the distance with footwork. A narrow stance is advantageous because it allows you to move quickly and adjust your positioning with minimal effort. This agility helps you stay out of your opponent's reach while maintaining the ability to close the distance or retreat as needed.  
-  
-  
-2. Entering and Exiting Range: If you're looking to dart in for quick attacks (like a jab or low kick) and then retreat back to safety, a narrow stance facilitates this type of movement. It makes it easier to advance or retreat without committing too much to one spot.  
-  
-  
-3. Setting Up Angles: When trying to create angles to outmaneuver your opponent, the narrow stance offers more freedom to pivot and shift your body to new positions. This can be useful for setting up counter-attacks or slipping your opponent’s strikes while staying light on your feet.  
-  
-  
-  
-Ideal Scenario: Use a narrow stance when you're outside your opponent's striking range or when you want to control the distance with quick and unpredictable movements.  
   
 Wide Stance  
   
