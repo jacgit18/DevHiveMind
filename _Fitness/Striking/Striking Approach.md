@@ -145,6 +145,7 @@ flowchart LR
 
 ### **Circling**
 **Be the matador with an aggressive opponent waiting for the big punches.**
+You can circle towards power side to get them throw big bunches and kick and time them.
 
 When you circle, do so with purpose—keep your movement controlled and deliberate as you close the distance. This approach lets you gauge your opponent’s reaction and remain unpredictable. The key is not to rush; use your circling to draw the opponent into a range where your strikes are most effective.
 
