@@ -12,7 +12,15 @@ Peer Reviewed: 0
 dg-publish:
 ---
 
-## **Stance**
+## **Fundamental Stances**:
+- **Orthodox**: Lead with your left foot and hand.  ^b31948
+- **Southpaw**: Lead with your right foot and hand.  ^1981b8
+
+Be Aware of the difference of [[Orthodox vs Southpaw]] and what options open up when in one versus the other.
+### **Strongest Position for Each Stance**
+**Use feints to make your stance changes less obvious and more deceptive.**
+Narrow and wide stances can be thought of as variations of the squared stance, primarily adjusting the distance between your feet.
+
 **Best Stance Transition Order**
 
 ```mermaid
@@ -31,17 +39,17 @@ flowchart LR
 
 ```
 
-### **Strongest Position for Each Stance**
-**Use feints to make your stance changes less obvious and more deceptive.**
+### **Avoiding Strong Stances**
+- Limit or avoid engaging when your opponent is in a strong stance to reduce the risk of counters.
+- If you can’t see their punch, move in the opposite direction of their striking hand to create space and avoid the attack.
+- Also be aware of [[Distance Management Tactics]] based on stance you ability to change distance is affected.
 
-Narrow and wide stances can be thought of as variations of the squared stance, primarily adjusting the distance between your feet.
-
-|Stance|Orthodox Strongest Use|Southpaw Strongest Use|
-|---|---|---|
-|**Bladed**|Long-range control, jab setups|Outside angle against orthodox opponents|
-|**Squared**|Mid-range versatility, power punches|Close-range power and clinch exchanges|
-|**Wide**|Base for powerful strikes, takedowns|Exploiting gaps with left power strikes|
-|**Narrow**|Mobility for closing or escaping range|Creating angles and feints|
+| Stance      | Orthodox Strongest Use                 | Southpaw Strongest Use                   |
+| ----------- | -------------------------------------- | ---------------------------------------- |
+| **Bladed**  | Long-range control, jab setups         | Outside angle against orthodox opponents |
+| **Squared** | Mid-range versatility, power punches   | Close-range power and clinch exchanges   |
+| **Wide**    | Base for powerful strikes, takedowns   | Exploiting gaps with left power strikes  |
+| **Narrow**  | Mobility for closing or escaping range | Creating angles and feints               |
 
 ### **1. Bladed vs. Squared Stance**
 - **Bladed Stance**:
