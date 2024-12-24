@@ -275,5 +275,7 @@ Key Takeaway:
   
 In BJJ, you can circle either inside or outside depending on your goal and the situation. The primary difference from striking is that inside control is often a desired position in BJJ, while in striking it can be riskier due to proximity to attacks. Your choice should be based on the control you want to establish and your ability to defend against counters.
 
+move people and lift a little towards the  wall to limit there movements while in there full guard
+
 
 ![](https://www.youtube.com/watch?v=Db1Do3LapcA)
