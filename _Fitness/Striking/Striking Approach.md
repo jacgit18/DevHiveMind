@@ -371,3 +371,13 @@ Focus on tight, compact strikes when they throw wide punches.
 ### Back Leg Thigh Block  
 ![[_Fitness/_Infographic/unnamed.gif]]
 
+
+Are Narrow and Wide Just Variations of Squared?  
+  
+Yes, in a way. Narrow and wide stances can be thought of as variations of the squared stance, primarily adjusting the distance between your feet and balance focus:  
+  
+Wide Stance: A wider base for power and stability.  
+  
+Squared Stance: A balanced stance, not too wide, not too narrow, offering versatility.  
+  
+Narrow Stance: A closer base for mobility, speed, and quick movement.
