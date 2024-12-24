@@ -20,6 +20,13 @@ dg-publish:
 
 Use the **UFC game** to simulate and experiment with techniques and strategies.
 
+#todo/BAU/Streches
+- [ ] Striking Stretches todo
+- Stretches for Kicks 
+	-  ![[Peek 2024-12-13 18-01.gif]]
+	- ![[HighKickStretchOne.gif]]
+	- ![[HighKickStretchTwo.gif]]
+	- ![[HighKickStretchThree.gif]]
 ## **Striking Principles**
 
 ### **1. Be Playful and Adaptive**
