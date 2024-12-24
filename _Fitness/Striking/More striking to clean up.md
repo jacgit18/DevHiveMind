@@ -34,6 +34,8 @@ flowchart LR
 ### **Strongest Position for Each Stance**
 **Use feints to make your stance changes less obvious and more deceptive.**
 
+Narrow and wide stances can be thought of as variations of the squared stance, primarily adjusting the distance between your feet.
+
 |Stance|Orthodox Strongest Use|Southpaw Strongest Use|
 |---|---|---|
 |**Bladed**|Long-range control, jab setups|Outside angle against orthodox opponents|
