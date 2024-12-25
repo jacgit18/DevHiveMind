@@ -19,6 +19,10 @@ dg-publish:
 - **Lean In/Out**: Subtly lean forward or back to disrupt the uppercut's trajectory.
 - **Pull Back on Rear Foot**: Shift your weight onto your back foot to escape the range of uppercuts or other strikes.
 	- _Note_: Pulling back reduces your countering ability, so be ready to re-engage quickly.
+#### Ways to Land Uppercuts
+![](https://www.youtube.com/watch?v=BjvhYzt8QMk)
+
+![](https://www.youtube.com/watch?v=dvQpYA3XHpA)
 #### Opening
 - **Kicks**:
     - Front kick to the body or head to maintain distance or capitalize on their backward movement.
