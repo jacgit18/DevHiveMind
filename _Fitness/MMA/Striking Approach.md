@@ -28,6 +28,7 @@ Use the **UFC game** to simulate and experiment with techniques and strategies.
 	- ![[HighKickStretchTwo.gif]]
 	- ![[HighKickStretchThree.gif]]
 ## **Striking Principles**
+![](https://www.youtube.com/watch?v=HUyraSmgO3I)
 
 ### **1. Be Playful and Adaptive**
 - Treat sparring as a game; keep it light and exploratory.
@@ -82,8 +83,6 @@ Try and use the other [[List of Feints]]
 - Keep your attacks unpredictable to force your opponent into constant reassessment.
 
 By continuously experimenting and refining your approach, you'll develop a dynamic striking style that keeps opponents guessing.
-
-
 
 ## **Counter Striking Guide**
 - Use slight leans to bait an attack but maintain readiness to move in any direction.

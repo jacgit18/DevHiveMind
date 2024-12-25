@@ -11,8 +11,11 @@ Relates:
 Peer Reviewed: 0
 dg-publish:
 ---
+Feint with arm your trying to land with or to get to a certain position to land something
+
+
 1. **Arm Pump Feint**: A quick upward motion with one or both arms, mimicking the preparation for a punch without committing. This can bait your opponent into reacting defensively.
-    
+
 2. **Elbow Lift Feint**: Slightly raise your elbow as though setting up a hook or uppercut, then pull back. This draws their attention to your head or guard, leaving other targets open.
     
 3. **Arm Extension Feint**: Extend an arm as if to throw a jab or long punch, then pause and retract before making contact. This can mislead your opponent into overcommitting to a defense.
