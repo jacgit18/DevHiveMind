@@ -31,7 +31,6 @@ dg-publish:
     - Use **dumbbells** for greater range of motion and correcting muscle imbalances.
     - Any **curlbar** exercise can be done with barbell.
 
-![](https://www.youtube.com/watch?v=5Hpc8fHNG18)
 
 #todo/purchases 
 - [ ] [Neck Exercise Equipment](https://neckslevel.com/?srsltid=AfmBOop5fT_Vv8l5LRpyCbvCpA1c5eqQy_aHAuAeLX2zwNFjMtC1X-Y0)
@@ -91,6 +90,7 @@ OG table
 | Lower |                | Rope      | 0        | Rope       | 0            | **20**sec | 3    |
 ^duration
 
+Experiment Button
 ```dataviewjs
 let pages = dv.pages("#workouts").where(b => b.date_of_workout >= DateTime.now().minus({weeks:1})).groupBy(b => b.date_of_workout)
 
@@ -135,16 +135,6 @@ series:
 ### Warm-Up & Cool-Down 
 Warm up with dynamic stretch to Improve blood flow and flexibility before starting. Then cool down with a static stretch targeting major muscle groups. Basically any static stretch has a dynamic variation with movement. 
 - Bodyweight Static to Dynamic
-	- BJJ Stretches
-		- Bird dog
-			- ![[mn.gif]]
-		- ![](https://www.youtube.com/watch?v=PjHVshdrZM0)
-		- ![](https://www.youtube.com/watch?v=dV0847Mh6Xs)
-		- ![[o.gif]]
-		- ![[hip.gif]]![[p.gif]]
-		- ![[lung.gif]]
-		- ![[m.gif]]
-		- ![[l.gif]]
 	- Butterfly Stretch → Dynamic Butterfly Hip Rocks
 	- Cat-Cow Stretch → Dynamic Cat-Cow Transitions
 	- Lizard Pose → Dynamic Hip Flexor Swings
@@ -160,6 +150,7 @@ Warm up with dynamic stretch to Improve blood flow and flexibility before starti
 	- Scapular Push-Ups 
 		- Breathe deeply as you push your chest outward, squeezing your shoulder blades together. Then, reverse the motion by pulling your chest inward and separating your shoulder blades, keeping your elbows straight throughout the movement.
 		- ![](https://www.youtube.com/watch?v=FTpVhBkyIzk&list=TLPQMTUxMjIwMjT8Ie0IftYKYw&index=3)
+Try [[Guards Directory#BJJ Stretches |BJJ Stretches]] & Kicking [[Striking Approach#^7a66bf]]
 #### Priority Workouts
 1. **Explosive Power (Plyometric & Olympic Movements)**
 - Start with these to engage fast-twitch muscle fibers and improve explosive strength:

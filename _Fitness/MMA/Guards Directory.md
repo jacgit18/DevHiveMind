@@ -13,6 +13,8 @@ dg-publish:
 ---
 # Opponent Size Best Practices (Bottom Defensive Position)  
 
+![](https://www.youtube.com/watch?v=5Hpc8fHNG18)
+
 My default state in Jujitsu is reactive focus on being more proactive also incorporating more aggression.
 
 
@@ -36,6 +38,23 @@ Keep people hand low on collar
 Control hands vs solving hand problems
 
 fight for inside try circling alternating inwards and outward flow while hand fighting be aware of grips on collar and neck
+
+## BJJ Stretches
+- Bird dog
+	- ![[mn.gif]]
+- Lock Clam
+	- ![](https://www.youtube.com/watch?v=PjHVshdrZM0)
+- Curl Up
+	- ![](https://www.youtube.com/watch?v=dV0847Mh6Xs)
+- Hip Openers
+	- ![[o.gif]]
+	- ![[hip.gif]]
+	- ![[p.gif]]
+- Bjj Movements
+	- ![[lung.gif]]
+	- ![[m.gif]]
+	- ![[l.gif]]
+
 ## Guard Flow 
 Don't necessarily need to start in full guard also any open guard can be used to get into mission control which is when you have a leg over the back of the neck holding with the opposite side arm and into Rubber guard
 
