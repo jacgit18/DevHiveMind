@@ -11,7 +11,7 @@ Relates:
 Peer Reviewed: 0
 dg-publish:
 ---
-Feint with arm your trying to land with or to get to a certain position to land something but do it with defense also use eyes for feinting as well.
+Feint with arm your trying to land with or to get to a certain position to land something but do it with defense also use eyes for feinting as well and try feinting off jab.
 
 ![](https://www.youtube.com/watch?v=LrWEUJO6_U0)
 
