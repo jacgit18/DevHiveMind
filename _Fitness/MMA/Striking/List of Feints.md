@@ -11,8 +11,9 @@ Relates:
 Peer Reviewed: 0
 dg-publish:
 ---
-Feint with arm your trying to land with or to get to a certain position to land something
+Feint with arm your trying to land with or to get to a certain position to land something but do it with defense also use eyes for feinting as well.
 
+![](https://www.youtube.com/watch?v=LrWEUJO6_U0)
 
 1. **Arm Pump Feint**: A quick upward motion with one or both arms, mimicking the preparation for a punch without committing. This can bait your opponent into reacting defensively.
 
