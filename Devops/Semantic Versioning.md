@@ -14,7 +14,16 @@ Peer Reviewed: 0
 dg-publish: true
 ---
 ![[Version.jpeg]]
-Semantic Versioning, often abbreviated as SemVer, is a versioning scheme designed to convey meaning about the underlying changes in software. It consists of three components: MAJOR.MINOR.PATCH.
+
+Semantic Versioning, often abbreviated as SemVer, is a versioning scheme designed to convey meaning about the underlying changes in software. 
+
+1. **Initial Development Phase**
+    - Begin with version **0.1.0**, signaling the early stages of development.
+
+2. **First Stable Release**
+    - Mark the transition to a stable, production-ready version with **1.0.0**.
+
+Te Semantic versioning consists of three components: MAJOR.MINOR.PATCH.
 
 1. **MAJOR version:** Increased for incompatible API changes. This signifies that existing code might break or not work with the new version.
 
@@ -26,7 +35,7 @@ In addition to these version numbers, SemVer allows for pre-release and build me
 
 - **Pre-release version:** Additional labels for pre-release versions, such as alpha, beta, rc (release candidate), followed by a number (e.g., 1.0.0-alpha.1).
 
-- **Build metadata:** Additional build metadata, usually denoted with a plus sign and a series of dot-separated identifiers (e.g., 1.0.0+build123).
+- **Build metadata:** Additional build metadata, usually denoted with a plus sign and a series of dot-separated identifiers (e.g., 1.0.0`+build123`).
 
 A version number follows this pattern: 
 - MAJOR.MINOR.PATCH`[-PreRelease][+BuildMetadata]`
