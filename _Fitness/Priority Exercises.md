@@ -150,7 +150,7 @@ Warm up with dynamic stretch to Improve blood flow and flexibility before starti
 	- Scapular Push-Ups 
 		- Breathe deeply as you push your chest outward, squeezing your shoulder blades together. Then, reverse the motion by pulling your chest inward and separating your shoulder blades, keeping your elbows straight throughout the movement.
 		- ![](https://www.youtube.com/watch?v=FTpVhBkyIzk&list=TLPQMTUxMjIwMjT8Ie0IftYKYw&index=3)
-Try [[Guards Directory#BJJ Stretches |BJJ Stretches]] & Kicking [[Striking Approach#^7a66bf]]
+Try [[Guards Directory#BJJ Stretches |BJJ Stretches]] & Kicking [[Striking Approach#^7a66bf |Striking Stretches]]
 #### Priority Workouts
 1. **Explosive Power (Plyometric & Olympic Movements)**
 - Start with these to engage fast-twitch muscle fibers and improve explosive strength:
