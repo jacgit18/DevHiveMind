@@ -12,7 +12,12 @@ Peer Reviewed: 0
 dg-publish:
 ---
 Backstroke
+    - **On Your Back:** Keep your feet fully submerged while kicking.
 ![[Backstroke.gif]]
+
+
+- **Closed Fist Drill:**
+    - Swim with fists closed to improve arm strength and feel for the water.
 
 
 mushroom float
@@ -65,6 +70,7 @@ Don't lock pointed toes be relaxed and straighten your arms with a slight bend w
 
 ![[jkbhby.gif]]
 
+- **On Your Belly:** It's fine if your feet break the surface, as long as your form is correct.
 
 When trying to float make sure you pushing your stomach out putting your hands over your head makes it easier to balance as well and keep air on your lungs and slowly let your hips rise and flutter your legs to make your legs go higher
 ![[mnkn.gif]]

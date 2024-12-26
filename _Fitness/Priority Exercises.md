@@ -204,12 +204,12 @@ Warm up with dynamic stretch to Improve blood flow and flexibility before starti
 		- [[Full Body#^05e3ec |Seated Cable Row]]
 		- Pulley Machine can use [[Tower 200.pdf |Tower 200]]
 			- Cable Balloon Abduction
-				- ![[ab.gif]]
+				- ![[CableBalloonAbduction.gif]]
 			- [[Upper#^a7be5a |Cable Woodchopper]]
 			- Cable Floor Fly
-				- ![[fl.gif]]
+				- ![[CableFloorFly.gif]]
 			- Cable Wolverine
-				- ![[_Fitness/Exercise Visuals/unnamed.gif|Wolverine]]
+				- ![[CableWolverine.gif|Wolverine]]
 			- [[Core#^b41212|Cable Reverse Crunch]]
 5. **Cardio**
 - Ropes

@@ -11,23 +11,6 @@ Relates:
 Peer Reviewed: 0
 dg-publish:
 ---
-Ymca
-
-phase one lesson with no gym membership discount about 250 to 300 range for 8 classes 
-
-Chelsea Parks and recreation with Pool & Gym
-
-Annual Membership Fee: $150 
-
-Six-month membership available for $75  
-  
-10% discount with IDNYC $67.50
-
-when kicking water on back you want to keep your feet under the water as opposed to when you're on your belly and kick in the water it's okay for you to have your feet coming out of the water as long as you have proper form and stuff
-
-Closed Fist Drill for Swimming
-
-
 When it comes to swimming, the type of kick you use often depends on the stroke, your goals, and the level of intensity you’re aiming for. Here's a breakdown of different swimming forms and the preferred kick patterns:  
   
 ### **Freestyle (Front Crawl)**  
@@ -60,3 +43,14 @@ When it comes to swimming, the type of kick you use often depends on the stroke,
 - **No Kick Pattern:** For strokes like breaststroke, butterfly, or doggy paddle that have specific kicking motions not related to the two or six-beat patterns.  
   
 The choice between a two-beat and six-beat kick largely depends on your goals (speed vs. endurance) and the specific stroke you’re swimming.
+
+
+### **Phase One: Swimming Lessons**
+- **Private Lessons:**
+    - YMCA Cost: **$250–$300** for 8 classes.
+    
+- **Chelsea Parks & Recreation Membership (Pool & Gym):**
+    - **Annual Fee:** $150
+    - **Six-Month Membership:** $75
+    - **With IDNYC Discount:** $67.50
+
