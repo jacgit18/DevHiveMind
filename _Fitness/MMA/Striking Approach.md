@@ -15,7 +15,7 @@ Peer Reviewed: 0
 dg-publish:
 ---
 # Striking Guide
-![[sced.jpg]]
+![[MMASchedule.jpg]]
 ### **Practice & Simulation**
 
 Use the **UFC game** to simulate and experiment with techniques and strategies.
@@ -23,7 +23,7 @@ Use the **UFC game** to simulate and experiment with techniques and strategies.
 #todo/BAU/Streches ^7a66bf
 - [ ] Striking Stretches todo 
 - Stretches for Kicks 
-	-  ![[Peek 2024-12-13 18-01.gif]]
+	-  ![[BJJStrechOne.gif]]
 	- ![[HighKickStretchOne.gif]]
 	- ![[HighKickStretchTwo.gif]]
 	- ![[HighKickStretchThree.gif]]

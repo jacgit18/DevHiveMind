@@ -41,7 +41,7 @@ fight for inside try circling alternating inwards and outward flow while hand fi
 
 ## BJJ Stretches
 - Bird dog
-	- ![[mn.gif]]
+	- ![[birdDog.gif]]
 - Lock Clam
 	- ![](https://www.youtube.com/watch?v=PjHVshdrZM0)
 - Curl Up
