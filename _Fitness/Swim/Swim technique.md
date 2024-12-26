@@ -21,83 +21,84 @@ Backstroke
 
 
 mushroom float
-![[bkj.gif]]
-
-Warrior lean
-![[vufu.gif]]
+![[mushroomFloat.gif]]
 
 
 practice this a little
-![[chcy.gif]]
+![[_Fitness/Exercise Visuals/BackFloat.gif]]
 
 
 floor sit down
 
-![[hp9h98.gif]]
+![[floorSitDown.gif]]
 
 back stand up
 
-![[uhu.gif]]
+![[backStandUp.gif]]
 
 Warrior
-![[kbubi; 1.gif]]
+![[Warrior.gif]]
+
+
+Warrior lean
+![[WarriorLean.gif]]
 
 
 sink down
-![[nbkv.gif]]
+![[sinkDown.gif]]
 
-chicken bird soldier
-![[joho.gif]]
+chicken Shoulder soldier
+![[chickenBirdShoulder.gif]]
 
-chick bird soldier turn
-![[noh;oi.gif]]
+chick bird Shoulder turn
+![[chickBirdShoulderTurn.gif]]
 
 
-
-![[yufuf.gif]]
+kicks
+![[kicks.gif]]
 
 Backstroke warrior lean
 
-![[d5dd65.gif]]
+![[backstrokeWarriorLean.gif]]
 
 
 Hover hop while moving your arms in front of you and out
 
-![[k.nbkj.gif]]
+![[hoverHop.gif]]
 
 
 Don't lock pointed toes be relaxed and straighten your arms with a slight bend when floating
 
-![[jkbhby.gif]]
+![[bellyFloat.gif]]
 
 - **On Your Belly:** It's fine if your feet break the surface, as long as your form is correct.
 
 When trying to float make sure you pushing your stomach out putting your hands over your head makes it easier to balance as well and keep air on your lungs and slowly let your hips rise and flutter your legs to make your legs go higher
-![[mnkn.gif]]
+![[backFloat2.gif]]
 
 
 jellyfish float
-![[ddr.gif]]
+![[jellyfishFloat.gif]]
 
 
 
-![[g87go8.gif]]
+![[frontBellyFloat.gif]]
 
-![[iobiuvuy.gif]]
+![[frontBellyFloat2.gif]]
 
 
 duck dive
-![[tffufu.gif]]
+![[duckDiveOne.gif]]
 
-![[fd66d.gif]]
+![[duckDiveTwo.gif]]
 
 super to backfloat
 
-![[abc.gif]]
+![[superToBackfloatOne.gif]]
 
-![[abcd.gif]]
+![[superToBackfloatTwo.gif]]
 
-![[Ackde.gif]]
+![[superToBackfloatThree.gif]]
 
 sculling 
 
