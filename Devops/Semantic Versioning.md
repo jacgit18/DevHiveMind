@@ -18,7 +18,7 @@ Semantic Versioning, often abbreviated as SemVer, is a versioning scheme designe
 
 1. **MAJOR version:** Increased for incompatible API changes. This signifies that existing code might break or not work with the new version.
 
-2. **MINOR version:** Incremented for backward-compatible additions or enhancements. New features are added in a backward-compatible manner.
+2. **MINOR version:** Incremented for backward-compatible additions or enhancements. New features are added in a backward-compatible manner.^[1]^[2]
 
 3. **PATCH version:** Incremented for backward-compatible bug fixes. This indicates that the software's functionality remains the same but has been fixed or improved.
 
@@ -28,6 +28,19 @@ In addition to these version numbers, SemVer allows for pre-release and build me
 
 - **Build metadata:** Additional build metadata, usually denoted with a plus sign and a series of dot-separated identifiers (e.g., 1.0.0+build123).
 
-A version number follows this pattern: MAJOR.MINOR.PATCH[-PreRelease][+BuildMetadata].
+A version number follows this pattern: MAJOR.MINOR.PATCH`[-PreRelease][+BuildMetadata]`.
 
 The idea is that developers and systems relying on the software can quickly understand the nature of changes and decide whether to update based on the version number. Semantic Versioning promotes clarity, predictability, and a standard way of versioning software across different projects and dependencies.
+
+
+
+[^1]: A **backward-compatible manner** means that new features or updates to a system, software, or API do not break or disrupt existing functionality. In other words, existing code, applications, or users that rely on the old version can continue to work without modification even after the update is applied.
+
+[^2]: **Backward-Compatible Additions:** Adding a new feature, method, or parameter in a way that doesn't affect the old functionality. For instance, adding an optional parameter to a function is backward-compatible because existing code doesn't need to change.
+
+
+[^3]:- **Backward-Compatible Enhancements:** Improving performance or usability without changing the interface or behavior that existing systems depend on.
+
+### Why It Matters
+
+Backward compatibility ensures that users and developers can adopt new features incrementally without fear of breaking their existing systems or workflows. It’s critical for maintaining trust and avoiding disruption when updates are released.
