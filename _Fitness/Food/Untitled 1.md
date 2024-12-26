@@ -93,7 +93,7 @@ Signs Your Body Is Deficient in Nutrients
 
 
 
-![[unnamed (1) 1.png]]
+![[foodPrice.png]]
 
 
 Kombucha &  yogurt for probiotics
