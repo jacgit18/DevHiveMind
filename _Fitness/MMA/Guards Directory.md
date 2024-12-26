@@ -47,13 +47,13 @@ fight for inside try circling alternating inwards and outward flow while hand fi
 - Curl Up
 	- ![](https://www.youtube.com/watch?v=dV0847Mh6Xs)
 - Hip Openers
-	- ![[o.gif]]
-	- ![[hip.gif]]
-	- ![[p.gif]]
+	- ![[HipOpenerOne.gif]]
+	- ![[HipOpenerTwo.gif]]
+	- ![[HipOpenerThree.gif]]
 - Bjj Movements
-	- ![[lung.gif]]
-	- ![[m.gif]]
-	- ![[l.gif]]
+	- ![[BJJDynamicOne.gif]]
+	- ![[BJJDynamicTwo.gif]]
+	- ![[BJJDynamicThree.gif]]
 
 ## Guard Flow 
 Don't necessarily need to start in full guard also any open guard can be used to get into mission control which is when you have a leg over the back of the neck holding with the opposite side arm and into Rubber guard
