@@ -135,22 +135,22 @@ series:
 ### Warm-Up & Cool-Down 
 Warm up with dynamic stretch to Improve blood flow and flexibility before starting. Then cool down with a static stretch targeting major muscle groups. Basically any static stretch has a dynamic variation with movement. 
 - Bodyweight Static to Dynamic
+	- Hold push-up extended & unextended
+	- Try [[Guards Directory#BJJ Stretches |BJJ Stretches]] & Kicking [[Striking Approach#^7a66bf |Striking Stretches]]
+	- [[Core#^60b781 |Tuck Jumps to Plank]]
 	- Butterfly Stretch → Dynamic Butterfly Hip Rocks
 	- Cat-Cow Stretch → Dynamic Cat-Cow Transitions
-	- Lizard Pose → Dynamic Hip Flexor Swings
-		- For dynamic part lift your back knee off the ground if it was resting begin rocking forward and backward, shifting your weight between your front foot and back toes.
-		- ![](https://www.youtube.com/watch?v=gyS68CiPNcY)
-	- Spinal Twist → Supine Windshield Wipers
+	- Pigeon Pose → Dynamic Pigeon Transitions
+		- Spinal Twist → Supine Windshield Wipers
 		- ![](https://www.youtube.com/watch?v=mNdJti7ZwKI&pp=ygUMU3BpbmFsIFR3aXN0)
 		- ![](https://www.youtube.com/watch?v=XxLVEIpb9oY)
-	- Pigeon Pose → Dynamic Pigeon Transitions
-	- Hold push-up extended & unextended
 	- Plyometric Plank with Shoulder Tap
-	- [[Core#^60b781 |Tuck Jumps to Plank]]
+		- Lizard Pose → Dynamic Hip Flexor Swings
+		- For dynamic part lift your back knee off the ground if it was resting begin rocking forward and backward, shifting your weight between your front foot and back toes.
+		- ![](https://www.youtube.com/watch?v=gyS68CiPNcY)
 	- Scapular Push-Ups 
 		- Breathe deeply as you push your chest outward, squeezing your shoulder blades together. Then, reverse the motion by pulling your chest inward and separating your shoulder blades, keeping your elbows straight throughout the movement.
 		- ![](https://www.youtube.com/watch?v=FTpVhBkyIzk&list=TLPQMTUxMjIwMjT8Ie0IftYKYw&index=3)
-Try [[Guards Directory#BJJ Stretches |BJJ Stretches]] & Kicking [[Striking Approach#^7a66bf |Striking Stretches]]
 #### Priority Workouts
 1. **Explosive Power (Plyometric & Olympic Movements)**
 - Start with these to engage fast-twitch muscle fibers and improve explosive strength:

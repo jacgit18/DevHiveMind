@@ -106,4 +106,4 @@ dg-publish:
 
 ## Block
 ### Cross Check
-![[_Fitness/_Infographic/unnamed.gif]]
+![[backKickBlock.gif]]
