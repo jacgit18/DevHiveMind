@@ -43,7 +43,7 @@ dg-publish:
 | Body  | Machine                           | Weight | Plates#    | Sets | Reps |
 | ----- | --------------------------------- | ------ | ---------- | ---- | ---- |
 | Lower | Abductor Outer Thigh              | 100    |            | 3    | 10   |
-| Lower | Abduction Inner Thigh             | 115    |            | 3    | 10   |
+| Lower | Abduction Inner Thigh             | 130    |            | 3    | 10   |
 | Lower | Leg Press off Back                | 540    | 5 per side | 3    | 10   |
 | Lower | Leg Press Seated Close            | 110    |            | 3    | 10   |
 | Lower | Leg Press Seated Far              | 150??  |            | 3    | 10   |
@@ -54,8 +54,45 @@ dg-publish:
 | Upper | Rear Delt Fly                     | 0      |            | 3    | 10   |
 | Upper | Chest Press                       | 0      |            | 3    | 10   |
 | Upper | Shoulder Press                    | 0      |            | 3    | 10   |
-| Upper | Blink Row with individual weights | 42.5   | 1 per side | 3    | 10   |
+| Upper | Blink Row with individual weights | 42.5   | 1 per side | 4    | 5    |
 ^machine
+
+Inner thigh alt when week 85lb
+
+
+Abbduct hip range 7
+Abductio outward Push 160
+
+3 Sets 10 reps
+
+Linear Leg press 
+Leg press off Back Abductors
+540
+Wide
+
+Leg press off Back calfs
+Toes
+270 to be safe
+
+
+Leg press off Back Quads
+Close feet 
+540
+
+Leg press off Back glute hamstring
+Heals close
+
+Lower feet then vid
+270
+
+
+Isolated lateral Wide Chest 
+
+90
+
+3 Sets
+5 reps
+
 
 OG table
 
@@ -64,18 +101,30 @@ OG table
 | Upper |                 | CurlBar    | 0        | CurlBar    | 0            | 3    | 10   |
 | Lower | Zercher Squat   | Barbell    | 0        | N/A        | 0            | 3    | 10   |
 | Upper | Halo lunge      | Kettlebell | 17       | N/A        | 0            | 8    | 2    |
-| Upper | PullUp          | Bodyweight | 90       | Bodyweight | 0            | 3    | 10   |
-| Upper | PullUp Neutral  | Bodyweight | 90       | Bodyweight | 0            | 3    | 10   |
-| Upper | ChinUp          | Bodyweight | 90       | Bodyweight | 0            | 3    | 10   |
+| Upper | PullUp          | Bodyweight | 25       | Bodyweight | 0            | 3    | 10   |
+| Upper | PullUp Neutral  | Bodyweight | 25       | Bodyweight | 0            | 3    | 10   |
+| Upper | ChinUp          | Bodyweight | 25       | Bodyweight | 0            | 3    | 10   |
 | Upper | SingleArm Press | Kettlebell | 17       | N/A        | 0            | 3    | 10   |
 |       |                 | Jumps      | 0        | Jumps      | 0            | 3    | 10   |
+
+Lower weight 
+
+Limit Reps to 3 Sets 5 for pull ups
+
+Stay away from cosac for now
+
+Get more stronger before doing bottom up Kettlebell 
+
+For each routhly 
+
+
 
 
 | Exercise        | Type       | W(lb/kg) | Sets | Reps |
 | --------------- | ---------- | -------- | ---- | ---- |
 |                 | CurlBar    | 0        | 3    | 10   |
 | Zercher Squat   | Barbell    | 0        | 3    | 10   |
-| Halo lunge      | Kettlebell | 17       | 8    | 2    |
+| Halo lunge      | Kettlebell | 17.6     | 8    | 2    |
 | PullUp          | Bodyweight | 90       | 3    | 10   |
 | PullUp Neutral  | Bodyweight | 90       | 3    | 10   |
 | ChinUp          | Bodyweight | 90       | 3    | 10   |
@@ -83,11 +132,11 @@ OG table
 |                 | Jumps      | 0        | 3    | 10   |
 ^freeweight
 
-| Body  | Exercise       | Type      | W(lb/kg) | AltType    | Alt W(lb/kg) | Time      | Sets |
-| ----- | -------------- | --------- | -------- | ---------- | ------------ | --------- | ---- |
-| Core  | Russian Twists | Medi Ball | 0        | Kettlebell | 17           | **20**sec | 3    |
-| Full  | Farmer Walk    | Dumbbell  | 0        | Dumbbell   | 0            | **20**sec | 3    |
-| Lower |                | Rope      | 0        | Rope       | 0            | **20**sec | 3    |
+| Body  | Exercise       | Type                  | W(lb/kg) | AltType    | Alt W(lb/kg) | Time      | Sets |
+| ----- | -------------- | --------------------- | -------- | ---------- | ------------ | --------- | ---- |
+| Core  | Russian Twists | Medi Ball/ Kettlebell | 17.6     | Kettlebell | 17           | **20**sec | 3    |
+| Full  | Farmer Walk    | Dumbbell              | 0        | Dumbbell   | 0            | **20**sec | 3    |
+| Lower |                | Rope                  | 0        | Rope       | 0            | **20**sec | 3    |
 ^duration
 
 Experiment Button
