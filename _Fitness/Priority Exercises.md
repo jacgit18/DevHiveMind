@@ -40,27 +40,29 @@ dg-publish:
 - 80 oz water
 - Check New Weight limits 
 
-| Body  | Machine                                     | Position | Weight | Sets | Reps | Per Side | Range |
-| ----- | ------------------------------------------- | -------- | ------ | ---- | ---- | -------- | ----- |
-| Lower | Abductor Outer Thigh                        | Squeeze  | 160    | 3    | 10   | 160      | 7     |
-| Lower | Abduction Inner Thigh                       | Spread   | 110    | 3    | 10   | 110      | 0     |
-| Lower | Leg Press off Back Abductor                 | Wide     | 540    | 3    | 10   | 270      | 0     |
-| Lower | Leg Press off Back Calf                     | Toes     | 270    | 3    | 10   | 135      | 0     |
-| Lower | Leg Press off Back Quads                    | Close    | 540    | 3    | 10   | 270      | 0     |
-| Lower | Leg Press off Back G&H                      | Heals    | 270    | 3    | 10   | 135      | 0     |
-| Lower | Leg Press Seated                            | UpClose  | 110    | 3    | 5    | 110      | 0     |
-| Upper | Isolated Lateral Wide Chest                 | N/A      | 90     | 3    | 5    | 45       | 0     |
-| Upper | Weighted Setead Row                         | N/A      | 85     | 3    | 5    | 42.5     | 0     |
-| Upper | [[Upper#^238b6e \|Chest Fly]]               | N/A      | 70     | 3    | 10   | 70       | 4     |
-| Upper | Rear Delt Fly                               | N/A      | 40     | 3    | 10   | 40       | 0     |
-| Upper | Chest Press                                 | N/A      | 0      | 3    | 10   | 0        | 0     |
-| Upper | Shoulder Press                              | N/A      | 0      | 3    | 10   | 0        | 0     |
-| Upper | Mid Row                                     | N/A      | 0      | 3    | 10   | 0        | 0     |
-| Upper | [[Upper#^a7be5a \|Cable Woodchopper]]       | N/A      | 0      | 3    | 10   | 0        | 0     |
-| Core  | [[Core#^b41212\| Leg Cable Reverse Crunch]] | N/A      | 0      | 3    | 10   | 0        | 0     |
-|       | Cable Balloon Abduction                     |          |        |      |      |          |       |
-|       | Cable Floor Fly                             |          |        |      |      |          |       |
-|       | Cable Wolverine                             |          |        |      |      |          |       |
+#### Priority Workouts
+
+| Body  | Machine                                                 | Position | Weight | Sets | Reps | Per Side | Range |
+| ----- | ------------------------------------------------------- | -------- | ------ | ---- | ---- | -------- | ----- |
+| Core  | [[Core#^b41212\| Leg Cable Reverse Crunch]]             | N/A      | 0      | 3    | 10   | 0        | 0     |
+| Lower | Abductor Outer Thigh                                    | Squeeze  | 160    | 3    | 10   | 160      | 7     |
+| Lower | Abduction Inner Thigh                                   | Spread   | 110    | 3    | 10   | 110      | 0     |
+| Lower | Leg Press off Back Abductor                             | Wide     | 540    | 3    | 10   | 270      | 0     |
+| Lower | Leg Press off Back Calf                                 | Toes     | 270    | 3    | 10   | 135      | 0     |
+| Lower | Leg Press off Back Quads                                | Close    | 540    | 3    | 10   | 270      | 0     |
+| Lower | Leg Press off Back G&H                                  | Heals    | 270    | 3    | 10   | 135      | 0     |
+| Lower | Leg Press Seated                                        | UpClose  | 110    | 3    | 5    | 110      | 0     |
+| Upper | Isolated Lateral Wide Chest                             | N/A      | 90     | 3    | 5    | 45       | 0     |
+| Upper | Weighted Setead Row                                     | N/A      | 85     | 3    | 5    | 42.5     | 0     |
+| Upper | [[Upper#^238b6e \|Chest Fly]]                           | N/A      | 70     | 3    | 10   | 70       | 4     |
+| Upper | Rear Delt Fly                                           | N/A      | 40     | 3    | 10   | 40       | 0     |
+| Upper | Chest Press                                             | N/A      | 0      | 3    | 10   | 0        | 0     |
+| Upper | Shoulder Press                                          | N/A      | 0      | 3    | 10   | 0        | 0     |
+| Upper | Mid Row                                                 | N/A      | 0      | 3    | 10   | 0        | 0     |
+| Upper | [[Upper#^a7be5a \|Cable Woodchopper]]                   | N/A      | 0      | 3    | 10   | 0        | 0     |
+| Upper | [[CableBalloonAbduction.gif \|Cable Balloon Abduction]] | N/A      | 0      | 3    | 10   | 0        | 0     |
+| Upper | [[CableFloorFly.gif \|Cable Floor Fly]]                 | N/A      | 0      | 3    | 10   | 0        | 0     |
+| Upper | [[CableWolverine.gif\|Cable Wolverine]]                 | N/A      | 0      | 3    | 10   | 0        | 0     |
 ^machine
 
 
@@ -181,7 +183,7 @@ Warm up with dynamic stretch to Improve blood flow and flexibility before starti
 	- Scapular Push-Ups 
 		- Breathe deeply as you push your chest outward, squeezing your shoulder blades together. Then, reverse the motion by pulling your chest inward and separating your shoulder blades, keeping your elbows straight throughout the movement.
 		- ![](https://www.youtube.com/watch?v=FTpVhBkyIzk&list=TLPQMTUxMjIwMjT8Ie0IftYKYw&index=3)
-#### Priority Workouts
+
 1. **Explosive Power (Plyometric & Olympic Movements)**
 - Start with these to engage fast-twitch muscle fibers and improve explosive strength:
 	- Bodyweight
@@ -193,24 +195,4 @@ Warm up with dynamic stretch to Improve blood flow and flexibility before starti
 	- **Kettlebell**
 	    - [[Full Body#^8b48af |Kettlebell Snatch]]
 	    - [[Lower#^c9d45f |Kettlebell Step-Up]]
-
-
-
-4. **Pulling/Grip Strength**
-- Then do exercises to build pulling power and grip for grappling:
-	- Bodyweight
-	    - Pull-Up Variations (Neutral Grip/Chin-Up Grip/Wide Grip)
-		    - ![](https://www.youtube.com/watch?v=mRy9m2Q9_1I)
-		    - ![](https://www.youtube.com/watch?v=dAScZVF5o9k)
-		    - ![](https://www.youtube.com/watch?v=djTQ1C_pvYw&list=TLPQMTQxMjIwMjQ2MGDLyOWw0w&index=2)
-	
-		- Pulley Machine can us
-			- Cable Balloon Abduction
-				- ![[CableBalloonAbduction.gif]]
-			- 
-			- Cable Floor Fly
-				- ![[CableFloorFly.gif]]
-			- Cable Wolverine
-				- ![[CableWolverine.gif|Wolverine]]
-			- 
 

@@ -44,8 +44,11 @@ dg-publish:
 - Plyometric Plank with Shoulder Tap
 **Pull-Up Bar Variations
 - Wide Grip
+	- ![](https://www.youtube.com/watch?v=dAScZVF5o9k)
 - Neutral Grip
+	-  ![](https://www.youtube.com/watch?v=djTQ1C_pvYw&list=TLPQMTQxMjIwMjQ2MGDLyOWw0w&index=2)
 - Chin-Up Grip
+	-  ![](https://www.youtube.com/watch?v=mRy9m2Q9_1I)
 _Tip:_ Use added weight if possible; heavier weight makes pull-ups feel easier when unloaded.
 
 ### Plyometrics(Jumps) Calisthenics
