@@ -51,8 +51,8 @@ dg-publish:
 | Lower | Leg Press Seated            | UpClose  | 110    | 3    | 5    | 110      | 0     |
 | Upper | Isolated Lateral Wide Chest | N/A      | 90     | 3    | 5    | 45       | 0     |
 | Upper | Weighted Setead Row         | N/A      | 85     | 3    | 5    | 42.5     | 0     |
-| Upper | Chest Fly                   | N/A      | 0      | 3    | 10   |          | 0     |
-| Upper | Rear Delt Fly               | N/A      | 0      | 3    | 10   |          | 0     |
+| Upper | Chest Fly                   | N/A      | 70     | 3    | 10   | 70       | 4     |
+| Upper | Rear Delt Fly               | N/A      | 40     | 3    | 10   | 40       | 0     |
 | Upper | Chest Press                 | N/A      | 0      | 3    | 10   |          | 0     |
 | Upper | Shoulder Press              | N/A      | 0      | 3    | 10   | 0        | 0     |
 | Upper | Mid Row                     | N/A      | 165??  | 3    | 10   |          | 0     |
@@ -81,7 +81,7 @@ OG table
 | Body  | Exercise                               | Type       | W(lb/kg) | Sets | Reps |
 | ----- | -------------------------------------- | ---------- | -------- | ---- | ---- |
 | Lower | [[Full Body#^765b0b \|Zercher Squats]] | Barbell    | 0        | 3    | 10   |
-| Lower | Cossack Squat                          | Kettlebell | 17.6     | 3    | 10   |
+| Lower | [[Lower#^3ae11e \|Cossack Squat]]      | Kettlebell | 17.6     | 3    | 10   |
 | Full  | Kettlebell Swing                       | Kettlebell | 17.6     | 3    | 10   |
 | Full  | Turkish Get-Up                         | Kettlebell | 17.6     | 3    | 10   |
 | Upper | Bottoms Up                             | Kettlebell | 17.6     | 3    | 10   |
@@ -183,7 +183,7 @@ Warm up with dynamic stretch to Improve blood flow and flexibility before starti
 	    - [[Full Body#^775bc4 |Farmer’s Walk]] 
 	- __Kettlebell__
 	    - [[Full Body#^7d58d7 |Turkish Get-Up]] (3 sets per side, focusing on control)
-	    - [[Lower#^3ae11e |Cossack Squat]]
+	    - 
 	- Machine(Rehab) 
 		- Chest Press(free weight) - lower seat handles chest height
 		- Leg Press back/seated
