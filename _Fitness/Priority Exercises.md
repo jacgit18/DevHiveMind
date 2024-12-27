@@ -120,9 +120,9 @@ OG table
 | Upper | [[Full Body#^05e3ec \|Seated Cable Row]]    | PG     | Machine    | 0        | Machine  | 0            | **20**sec | 3    |
 | Full  | [[Full Body#^64091e \| Alternating Waves]]  | Cardio | Rope       | 0        | Rope     | 0            | **20**sec | 3    |
 | Full  | [[Full Body#^164e0e \| Side-to-Side Waves]] | Cardio | Rope       | 0        | Rope     | 0            | **20**sec | 3    |
-| Lower |                                             |        | Jump       | 0        |          | 0            | **20**sec | 3    |
-| Lower |                                             |        | Jump       | 0        |          | 0            | **20**sec | 3    |
-| Lower |                                             |        | Jump       | 0        |          | 0            | **20**sec | 3    |
+| Lower | [[Lower#^3b9f2c \|Box Jumps]]               |        | Jump       | 0        |          | 0            | **20**sec | 3    |
+| Lower | [[Lower#^afd7a0 \|Lateral Skater Jumps]]    |        | Jump       | 0        |          | 0            | **20**sec | 3    |
+| Lower | [[Lower#^aad169 \|Split Squat Jumps]]       |        | Jump       | 0        |          | 0            | **20**sec | 3    |
 ^duration
 
 Experiment Button
@@ -190,9 +190,9 @@ Warm up with dynamic stretch to Improve blood flow and flexibility before starti
 1. **Explosive Power (Plyometric & Olympic Movements)**
 - Start with these to engage fast-twitch muscle fibers and improve explosive strength:
 	- Bodyweight
-	    - [[Lower#^3b9f2c |Box Jumps]]
-	    - [[Lower#^afd7a0 |Lateral Skater Jumps]]
-	    - [[Lower#^aad169 |Split Squat Jumps]]
+	    - 
+	    - 
+	    - 
 	- *Barbell*/***Dumbbell***
 	    - [[Full Body#^0c16fd |Clean to Jerk & Press]]
 	- **Kettlebell**
