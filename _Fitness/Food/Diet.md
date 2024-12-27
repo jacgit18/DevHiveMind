@@ -12,7 +12,7 @@ Peer Reviewed: 0
 dg-publish:
 ---
 - Cherry juice for sleep and pomegranate for sore body
-- One chicken breast  
+- Cook One chicken breast at a time to try different recipes  
 - Limit red meals like steak or burgers to 1 to 4 meals in a week filled with roughly 21 meals  
 - Pasta from health food spot  
 - Eat black beans  
@@ -20,11 +20,6 @@ dg-publish:
 - Dark chocolate
 - Golden honey (Turmeric and honey) and can mix with milk
 
-
-# Fish that I might be allergic to
-Anchovy
-Mackerel
-Sardine
 
 Fish Cooking Tip
 To get rid fishy taste or weird meat taste clean fish or meat in lime or lemon juice with milk to kill bacteria
