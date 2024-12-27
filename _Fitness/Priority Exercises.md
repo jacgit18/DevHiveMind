@@ -23,7 +23,7 @@ Start with a dynamic stretch to Improve blood flow and flexibility. End with a s
     - Workout more in the winter body retains weight more Oct to Feb.
     - Breath through exercises. exhale on push breath inhale on return depending on exercise.
     - Increase sets for more gain vs more reps for more endurance. Like 3 sets of 10 reps is more slow vs 10 sets of 3 reps can be done more faster.
-    - Vary exercise to trick body rotating exercises pick a number of exercise you want to do  and alternate the load.
+    - Vary exercise to trick body rotating exercises pick a number of exercise you want to do and alternate the load.
 2. **Avoid Risky Movements:**
     - Skip upright rows due to the unnatural shoulder position.
 3. **Equipment Tips:**
@@ -31,23 +31,19 @@ Start with a dynamic stretch to Improve blood flow and flexibility. End with a s
     - Use **dumbbells** for greater range of motion and correcting muscle imbalances.
     - Any **curlbar** exercise can be done with barbell.
 
-### Bodyweight Static to Dynamic
+### Start  Dynamic End Static
 - Hold push-up extended & unextended
 - Try [[Guards Directory#BJJ Stretches |BJJ Stretches]] & Kicking [[Striking Approach#^7a66bf |Striking Stretches]]
 - [[Core#^60b781 |Tuck Jumps to Plank]]
-- Butterfly Stretch → Dynamic Butterfly Hip Rocks
-- Cat-Cow Stretch → Dynamic Cat-Cow Transitions
-- Pigeon Pose → Dynamic Pigeon Transitions
-	- Spinal Twist → Supine Windshield Wipers
-	- ![](https://www.youtube.com/watch?v=mNdJti7ZwKI&pp=ygUMU3BpbmFsIFR3aXN0)
-	- ![](https://www.youtube.com/watch?v=XxLVEIpb9oY)
+- Dynamic Butterfly Hip Rocks → Butterfly Stretch
+- Dynamic Cat-Cow Transitions -> Cat-Cow Stretch
+- Dynamic Pigeon Transitions -> Pigeon Pose
+- Dynamic [[Core#^beda1a |Supine Windshield Wipers]] -> [[Core#^66bd94 |Spinal Twist ]]
 - Plyometric Plank with Shoulder Tap
-	- Lizard Pose → Dynamic Hip Flexor Swings
+- Dynamic Hip Flexor Swings -> [[Lower#^357346 |Lizard Pose ]]
 	- For dynamic part lift your back knee off the ground if it was resting begin rocking forward and backward, shifting your weight between your front foot and back toes.
-	- ![](https://www.youtube.com/watch?v=gyS68CiPNcY)
-- Scapular Push-Ups 
+- [[Upper#^5ff8c1 |Scapular Push-Ups ]]
 	- Breathe deeply as you push your chest outward, squeezing your shoulder blades together. Then, reverse the motion by pulling your chest inward and separating your shoulder blades, keeping your elbows straight throughout the movement.
-	- ![](https://www.youtube.com/watch?v=FTpVhBkyIzk&list=TLPQMTUxMjIwMjT8Ie0IftYKYw&index=3)
 
 ## Priority Workouts
 ```chart
@@ -61,8 +57,9 @@ series:
     data: [5, 4, 3, 2, 1, 0, -1, -2, -3]
 ```
 
+
 ### Stats
-- 16% body fat possibly lower need to check
+- 15% body fat 
 - Eat a minimum of 1900 calories a day 
 - 80 oz water
 
@@ -84,6 +81,7 @@ series:
 
 #todo/Personal/High
 - [ ] try creating chart from table 
+- [ ] Eaa over bcaa try looking into Eaa
 - [ ] Check New Weight limits 
 
 ![](https://www.youtube.com/watch?v=djj7QXZAIjM)

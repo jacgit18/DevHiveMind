@@ -1,7 +1,7 @@
 
 Avoid taken creatine on empty stomach  
   
-Eaa over bcaa
+
 
 
 
@@ -42,10 +42,7 @@ Eaa over bcaa
 - [ ] Amines Intolerance  
 - [ ] Algae DHA  
 
-- [ ] supplements that cause aromatization  
 
-- [ ] vitamins that aid in hair growth  
-- [ ] supplements that cause aromatization  
 - [ ] potassium supplement  
 - [ ] nsf supplements  
 

@@ -21,7 +21,7 @@ One steak or 2 burgers
 Limit red meat to 1 to 3 meals in a week filled with roughly 21 meals  
   
   
-3300 calories a day is goal  
+
   
   
 Precooked pork etc  
@@ -34,7 +34,7 @@ rice pudding c town
 
 
 Eat black beans  
-Blue bearies instead of strawberries  
+Blue berries instead of strawberries  
 Dark chocolate
 Golden honey (Turmeric and honey) and can mix with milk
 

@@ -21,6 +21,10 @@ Get to your reps to 15 sec each try to extend for 45 sec MAX
 	- ![](https://www.youtube.com/watch?v=JBz7PUxDyE4)
 - Tuck Jumps to Plank ^60b781
 	- ![](https://www.youtube.com/watch?v=LCF6rkH9R30)
+- Supine Spinal Twist ^66bd94
+	- ![](https://www.youtube.com/watch?v=mNdJti7ZwKI&pp=ygUMU3BpbmFsIFR3aXN0)
+- Supine Windshield Wipers ^beda1a
+	- ![](https://www.youtube.com/watch?v=XxLVEIpb9oY)
 ### Weights
 - Cable Reverse Crunch ^b41212
 	- ![](https://www.youtube.com/watch?v=b8oUb_6POhQ)

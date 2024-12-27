@@ -11,6 +11,12 @@ Relates:
 Peer Reviewed: 0
 dg-publish:
 ---
+### Dynamic Isometric Calisthenics (No Weights)
+Get to your reps to 15 sec each try to extend for 45 sec MAX
+- Lizard Pose ^357346
+	- ![](https://www.youtube.com/watch?v=gyS68CiPNcY)
+
+
 ### Weights
 - Romanian Deadlift(_Barbell_) - focused on levitating  ^308171
 	- ![](https://www.youtube.com/watch?v=7j-2w4-P14I)
