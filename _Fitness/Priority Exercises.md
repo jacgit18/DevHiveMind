@@ -16,13 +16,13 @@ Peer Reviewed: 0
 dg-publish:
 ---
 # Warm-Up & Cool-Down 
-Warm up with dynamic stretch to Improve blood flow and flexibility before starting. Then cool down with a static stretch targeting major muscle groups. Basically any static stretch has a dynamic variation with movement. 
+Start with a dynamic stretch to Improve blood flow and flexibility. End with a static stretch targeting major muscle groups. Basically any static stretch has a dynamic variation with movement. 
 ## Best Practices
 1. **Focus on 30 Core Workouts:**  
     - Prioritize functional and foundational exercises to maximize efficiency.
     - Workout more in the winter body retains weight more Oct to Feb.
     - Breath through exercises. exhale on push breath inhale on return depending on exercise.
-    - Increase sets for more gain vs more reps for more endurance. Like 3 sets of 10 reps is more slow vs 10 sets of 3 reps can be done more faster.\
+    - Increase sets for more gain vs more reps for more endurance. Like 3 sets of 10 reps is more slow vs 10 sets of 3 reps can be done more faster.
     - Vary exercise to trick body rotating exercises pick a number of exercise you want to do  and alternate the load.
 2. **Avoid Risky Movements:**
     - Skip upright rows due to the unnatural shoulder position.
