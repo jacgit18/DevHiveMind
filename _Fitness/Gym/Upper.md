@@ -43,13 +43,13 @@ dg-publish:
 ### Calisthenics (No Weights)
 - Plyometric Plank with Shoulder Tap
 **Pull-Up Bar Variations
-- Wide Grip
+- Wide Grip  ^bf9596
 	- ![](https://www.youtube.com/watch?v=dAScZVF5o9k)
-- Neutral Grip
+- Neutral Grip ^e81d31
 	-  ![](https://www.youtube.com/watch?v=djTQ1C_pvYw&list=TLPQMTQxMjIwMjQ2MGDLyOWw0w&index=2)
 - Chin-Up Grip
 	-  ![](https://www.youtube.com/watch?v=mRy9m2Q9_1I)
-_Tip:_ Use added weight if possible; heavier weight makes pull-ups feel easier when unloaded.
+_Tip:_ Use added weight if possible; heavier weight makes pull-ups feel easier when unloaded. ^a2d3cc
 
 ### Plyometrics(Jumps) Calisthenics
 - Clap push-ups

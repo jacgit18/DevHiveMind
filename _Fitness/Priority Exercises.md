@@ -105,21 +105,24 @@ OG table
 | [[Upper#^9def13\|Bottoms Up]]            | Upper | PG    | Kettlebell | 17.6     | 3    | 10   |
 | [[Full Body#^7ecf05 \|Lunge Twist Halo]] | Upper | RC    | Kettlebell | 17.6     | 8    | 2    |
 | SingleArm Clean Press                    | Upper |       | Kettlebell | 17.6     | 3    | 10   |
-| ChinUp                                   | Upper |       | Bodyweight | 25       | 3    | 5    |
-| PullUp                                   | Upper |       | Bodyweight | 25       | 3    | 5    |
-| PullUp Neutral                           | Upper |       | Bodyweight | 25       | 3    | 5    |
+| [[Upper#^a2d3cc \|ChinUp]]               | Upper |       | Bodyweight | 25       | 3    | 5    |
+| [[Upper#^bf9596 \|PullUp Wide]]          | Upper |       | Bodyweight | 25       | 3    | 5    |
+| [[Upper#^e81d31 \|PullUp Neutral]]       | Upper |       | Bodyweight | 25       | 3    | 5    |
 | [[Upper#^bcb0df \|Bench Press]]          | Upper | CM    | Barbell    | 0        | 3    | 5    |
 ^freeweight
 
-| Body  | Exercise                                    | Focus | Type       | W(lb/kg) | AltType  | Alt W(lb/kg) | Time      | Sets |
-| ----- | ------------------------------------------- | ----- | ---------- | -------- | -------- | ------------ | --------- | ---- |
-| Core  | [[Core#^6516d4\|Russian Twists]]            | RC    | Kettlebell | 17.6     | MediBall | 0            | **20**sec | 3    |
-| Full  | [[Full Body#^775bc4 \|Farmer’s Walk]]       | CM    | Kettlebell | 0        | Dumbbell | 0            | **20**sec | 3    |
-| Core  | [[Core#^fdacde \|Russian Twists]]           | RC    | Rope       | 0        | Rope     | 0            | **20**sec | 3    |
-| Full  | [[Upper#^d58de0 \|Rotational Slam]]         | RC    | MediBall   | 0        | MediBall | 0            | **20**sec | 3    |
-| Upper | [[Full Body#^05e3ec \|Seated Cable Row]]    | PG    | Machine    | 0        | Machine  | 0            | **20**sec | 3    |
-| Full  | [[Full Body#^64091e \| Alternating Waves]]  |       | Rope       | 0        | Rope     | 0            | **20**sec | 3    |
-| Full  | [[Full Body#^164e0e \| Side-to-Side Waves]] |       | Rope       | 0        | Rope     | 0            | **20**sec | 3    |
+| Body  | Exercise                                    | Focus  | Type       | W(lb/kg) | AltType  | Alt W(lb/kg) | Time      | Sets |
+| ----- | ------------------------------------------- | ------ | ---------- | -------- | -------- | ------------ | --------- | ---- |
+| Core  | [[Core#^6516d4\|Russian Twists]]            | RC     | Kettlebell | 17.6     | MediBall | 0            | **20**sec | 3    |
+| Full  | [[Full Body#^775bc4 \|Farmer’s Walk]]       | CM     | Kettlebell | 0        | Dumbbell | 0            | **20**sec | 3    |
+| Core  | [[Core#^fdacde \|Russian Twists]]           | RC     | Rope       | 0        | Rope     | 0            | **20**sec | 3    |
+| Full  | [[Upper#^d58de0 \|Rotational Slam]]         | RC     | MediBall   | 0        | MediBall | 0            | **20**sec | 3    |
+| Upper | [[Full Body#^05e3ec \|Seated Cable Row]]    | PG     | Machine    | 0        | Machine  | 0            | **20**sec | 3    |
+| Full  | [[Full Body#^64091e \| Alternating Waves]]  | Cardio | Rope       | 0        | Rope     | 0            | **20**sec | 3    |
+| Full  | [[Full Body#^164e0e \| Side-to-Side Waves]] | Cardio | Rope       | 0        | Rope     | 0            | **20**sec | 3    |
+| Lower |                                             |        | Jump       | 0        |          | 0            | **20**sec | 3    |
+| Lower |                                             |        | Jump       | 0        |          | 0            | **20**sec | 3    |
+| Lower |                                             |        | Jump       | 0        |          | 0            | **20**sec | 3    |
 ^duration
 
 Experiment Button
