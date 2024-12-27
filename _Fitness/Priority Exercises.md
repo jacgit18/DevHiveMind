@@ -53,11 +53,14 @@ dg-publish:
 | Upper | Weighted Setead Row                         | N/A      | 85     | 3    | 5    | 42.5     | 0     |
 | Upper | [[Upper#^238b6e \|Chest Fly]]               | N/A      | 70     | 3    | 10   | 70       | 4     |
 | Upper | Rear Delt Fly                               | N/A      | 40     | 3    | 10   | 40       | 0     |
-| Upper | Chest Press                                 | N/A      | 0      | 3    | 10   |          | 0     |
+| Upper | Chest Press                                 | N/A      | 0      | 3    | 10   | 0        | 0     |
 | Upper | Shoulder Press                              | N/A      | 0      | 3    | 10   | 0        | 0     |
-| Upper | Mid Row                                     | N/A      | 165??  | 3    | 10   |          | 0     |
-| Upper | [[Upper#^a7be5a \|Cable Woodchopper]]       | N/A      |        |      |      |          |       |
-| Core  | [[Core#^b41212\| Leg Cable Reverse Crunch]] | N/A      |        |      |      |          |       |
+| Upper | Mid Row                                     | N/A      | 0      | 3    | 10   | 0        | 0     |
+| Upper | [[Upper#^a7be5a \|Cable Woodchopper]]       | N/A      | 0      | 3    | 10   | 0        | 0     |
+| Core  | [[Core#^b41212\| Leg Cable Reverse Crunch]] | N/A      | 0      | 3    | 10   | 0        | 0     |
+|       | Cable Balloon Abduction                     |          |        |      |      |          |       |
+|       | Cable Floor Fly                             |          |        |      |      |          |       |
+|       | Cable Wolverine                             |          |        |      |      |          |       |
 ^machine
 
 
@@ -90,29 +93,29 @@ OG table
 	- Then do exercises to build pulling power and grip for grappling.
 	- Pulley Machine can use [[Tower 200.pdf |Tower 200]]
 
-| Body  | Exercise                                 | Focus | Type       | W(lb/kg) | Sets | Reps |
-| ----- | ---------------------------------------- | ----- | ---------- | -------- | ---- | ---- |
-| Lower | [[Lower#^3ae11e \|Cossack Squat]]        | CM    | Kettlebell | 17.6     | 3    | 10   |
-| Lower | [[Full Body#^765b0b \|Zercher Squats]]   | CM    | Barbell    | 0        | 3    | 10   |
-| Lower | [[Lower#^308171 \|Romanian Deadlift]]    | CM    | Barbell    | 0        | 3    | 5    |
-| Full  | [[Full Body#^bb1837\|Kettlebell Swing]]  | PG    | Kettlebell | 17.6     | 3    | 10   |
-| Full  | [[Full Body#^7d58d7 \|Turkish Get-Up]]   | RC    | Kettlebell | 17.6     | 3    | 10   |
-| Upper | [[Upper#^9def13\|Bottoms Up]]            | PG    | Kettlebell | 17.6     | 3    | 10   |
-| Upper | [[Full Body#^7ecf05 \|Lunge Twist Halo]] | RC    | Kettlebell | 17.6     | 8    | 2    |
-| Upper | SingleArm Clean Press                    |       | Kettlebell | 17.6     | 3    | 10   |
-| Upper | ChinUp                                   |       | Bodyweight | 25       | 3    | 5    |
-| Upper | PullUp                                   |       | Bodyweight | 25       | 3    | 5    |
-| Upper | PullUp Neutral                           |       | Bodyweight | 25       | 3    | 5    |
-| Upper | [[Upper#^bcb0df \|Bench Press]]          | CM    | Barbell    | 0        | 3    | 5    |
+| Exercise                                 | Body  | Focus | Type       | W(lb/kg) | Sets | Reps |
+| ---------------------------------------- | ----- | ----- | ---------- | -------- | ---- | ---- |
+| [[Lower#^3ae11e \|Cossack Squat]]        | Lower | CM    | Kettlebell | 17.6     | 3    | 10   |
+| [[Full Body#^765b0b \|Zercher Squats]]   | Lower | CM    | Barbell    | 0        | 3    | 10   |
+| [[Lower#^308171 \|Romanian Deadlift]]    | Lower | CM    | Barbell    | 0        | 3    | 5    |
+| [[Full Body#^bb1837\|Kettlebell Swing]]  | Full  | PG    | Kettlebell | 17.6     | 3    | 10   |
+| [[Full Body#^7d58d7 \|Turkish Get-Up]]   | Full  | RC    | Kettlebell | 17.6     | 3    | 10   |
+| [[Upper#^9def13\|Bottoms Up]]            | Upper | PG    | Kettlebell | 17.6     | 3    | 10   |
+| [[Full Body#^7ecf05 \|Lunge Twist Halo]] | Upper | RC    | Kettlebell | 17.6     | 8    | 2    |
+| SingleArm Clean Press                    | Upper |       | Kettlebell | 17.6     | 3    | 10   |
+| ChinUp                                   | Upper |       | Bodyweight | 25       | 3    | 5    |
+| PullUp                                   | Upper |       | Bodyweight | 25       | 3    | 5    |
+| PullUp Neutral                           | Upper |       | Bodyweight | 25       | 3    | 5    |
+| [[Upper#^bcb0df \|Bench Press]]          | Upper | CM    | Barbell    | 0        | 3    | 5    |
 ^freeweight
 
 | Body  | Exercise                                    | Focus | Type       | W(lb/kg) | AltType  | Alt W(lb/kg) | Time      | Sets |
 | ----- | ------------------------------------------- | ----- | ---------- | -------- | -------- | ------------ | --------- | ---- |
 | Core  | [[Core#^6516d4\|Russian Twists]]            | RC    | Kettlebell | 17.6     | MediBall | 0            | **20**sec | 3    |
 | Full  | [[Full Body#^775bc4 \|Farmer’s Walk]]       | CM    | Kettlebell | 0        | Dumbbell | 0            | **20**sec | 3    |
-| Core  | [[Core#^fdacde \|Russian Twists]] RC        |       | Rope       | 0        | Rope     | 0            | **20**sec | 3    |
-| Full  | [[Upper#^d58de0 \|Rotational Slam]] RC      |       | MediBall   | 0        | MediBall | 0            | **20**sec | 3    |
-| Upper | [[Full Body#^05e3ec \|Seated Cable Row]] PG |       | Machine    | 0        | Machine  | 0            | **20**sec | 3    |
+| Core  | [[Core#^fdacde \|Russian Twists]]           | RC    | Rope       | 0        | Rope     | 0            | **20**sec | 3    |
+| Full  | [[Upper#^d58de0 \|Rotational Slam]]         | RC    | MediBall   | 0        | MediBall | 0            | **20**sec | 3    |
+| Upper | [[Full Body#^05e3ec \|Seated Cable Row]]    | PG    | Machine    | 0        | Machine  | 0            | **20**sec | 3    |
 | Full  | [[Full Body#^64091e \| Alternating Waves]]  |       | Rope       | 0        | Rope     | 0            | **20**sec | 3    |
 | Full  | [[Full Body#^164e0e \| Side-to-Side Waves]] |       | Rope       | 0        | Rope     | 0            | **20**sec | 3    |
 ^duration
