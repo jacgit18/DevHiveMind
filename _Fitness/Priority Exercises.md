@@ -63,39 +63,33 @@ OG table
 
 | Body  | Exercise              | Type       | W(lb/kg) | AltType    | Alt W(lb/kg) | Sets | Reps |
 | ----- | --------------------- | ---------- | -------- | ---------- | ------------ | ---- | ---- |
+| Lower | Zercher Squat         | Barbell    | 0        | N/A        | 0            | 3    | 10   |
+| Lower | Cossack Squat         | Kettlebell | 17.6     | N/A        | 0            | 3    | 10   |
+| Full  | Kettlebell Swing      | Kettlebell | 17.6     | N/A        | 0            | 3    | 10   |
+| Full  | Turkish Get-Up        | Kettlebell | 17.6     | N/A        | 0            | 3    | 10   |
+| Upper | Bottoms Up            | Kettlebell | 17.6     | N/A        | 0            | 3    | 10   |
 | Upper | Halo lunge            | Kettlebell | 17.6     | N/A        | 0            | 8    | 2    |
-| Upper |                       | CurlBar    | 0        | CurlBar    | 0            | 3    | 10   |
+| Upper | SingleArm Clean Press | Kettlebell | 17.6     | N/A        | 0            | 3    | 10   |
 | Upper | PullUp                | Bodyweight | 25       | Bodyweight | 0            | 3    | 5    |
 | Upper | PullUp Neutral        | Bodyweight | 25       | Bodyweight | 0            | 3    | 5    |
 | Upper | ChinUp                | Bodyweight | 25       | Bodyweight | 0            | 3    | 5    |
-| Upper | SingleArm Clean Press | Kettlebell | 17.6     | N/A        | 0            | 3    | 10   |
-| Lower | Zercher Squat         | Barbell    | 0        | N/A        | 0            | 3    | 10   |
+| Upper |                       | CurlBar    | 0        | CurlBar    | 0            | 3    | 10   |
 |       |                       | Jumps      | 0        | Jumps      | 0            | 3    | 10   |
-| Lower | Cossack Squat         | Kettlebell | 17.6     | N/A        | 0            | 3    | 10   |
-
-Lower weight 
-
-Limit Reps to 3 Sets 5 for pull ups
-
-Stay away from cosac for now
-
-Get more stronger before doing bottom up Kettlebell 
-
-For each routhly 
-
 
 
 
 | Exercise              | Type       | W(lb/kg) | Sets | Reps |
 | --------------------- | ---------- | -------- | ---- | ---- |
-|                       | CurlBar    | 0        | 3    | 10   |
 | Zercher Squat         | Barbell    | 0        | 3    | 10   |
+| Cossack Squat         | Kettlebell | 17.6     | 3    | 10   |
+| Kettlebell Swing      | Kettlebell | 17.6     | 3    | 10   |
+| Turkish Get-Up        | Kettlebell | 17.6     | 3    | 10   |
 | Halo lunge            | Kettlebell | 17.6     | 8    | 2    |
-| PullUp                | Bodyweight | 90       | 3    | 10   |
-| PullUp Neutral        | Bodyweight | 90       | 3    | 10   |
-| ChinUp                | Bodyweight | 90       | 3    | 10   |
 | SingleArm Clean Press | Kettlebell | 17.6     | 3    | 10   |
-|                       | Jumps      | 0        | 3    | 10   |
+| Bottoms Up            | Kettlebell | 17.6     | 3    | 10   |
+| ChinUp                | Bodyweight | 25       | 3    | 5    |
+| PullUp                | Bodyweight | 25       | 3    | 5    |
+| PullUp Neutral        | Bodyweight | 25       | 3    | 5    |
 ^freeweight
 
 | Body  | Exercise       | Type                  | W(lb/kg) | AltType    | Alt W(lb/kg) | Time      | Sets |
