@@ -79,21 +79,25 @@ OG table
 2. **Strength Training (Compound Movements)**
 - Follow with heavy, compound lifts to build muscle and functional strength use narrow grip or positioning for more of a compound movement.
 
-| Body  | Exercise                                  | Type       | W(lb/kg) | Sets | Reps |
-| ----- | ----------------------------------------- | ---------- | -------- | ---- | ---- |
-| Lower | [[Lower#^3ae11e \|Cossack Squat]] CM      | Kettlebell | 17.6     | 3    | 10   |
-| Lower | [[Full Body#^765b0b \|Zercher Squats]] CM | Barbell    | 0        | 3    | 10   |
-| Lower | [[Lower#^308171 \|Romanian Deadlift]] CM  | Barbell    | 0        | 3    | 5    |
-| Full  | [[Full Body#^775bc4 \|Farmer’s Walk]] CM  |            |          |      |      |
-| Full  | Kettlebell Swing                          | Kettlebell | 17.6     | 3    | 10   |
-| Full  | [[Full Body#^7d58d7 \|Turkish Get-Up]]    | Kettlebell | 17.6     | 3    | 10   |
-| Upper | Bottoms Up                                | Kettlebell | 17.6     | 3    | 10   |
-| Upper | Lunge Twist Halo                          | Kettlebell | 17.6     | 8    | 2    |
-| Upper | SingleArm Clean Press                     | Kettlebell | 17.6     | 3    | 10   |
-| Upper | ChinUp                                    | Bodyweight | 25       | 3    | 5    |
-| Upper | PullUp                                    | Bodyweight | 25       | 3    | 5    |
-| Upper | PullUp Neutral                            | Bodyweight | 25       | 3    | 5    |
-| Upper | [[Upper#^bcb0df \|Bench Press]] CM        | Barbell    | 0        | 3    | 5    |
+3. **Rotational/Core Strength**
+- Focus on rotational movements for striking power and grappling control.
+
+| Body  | Exercise                                    | Type       | W(lb/kg) | Sets | Reps |
+| ----- | ------------------------------------------- | ---------- | -------- | ---- | ---- |
+| Lower | [[Lower#^3ae11e \|Cossack Squat]] CM        | Kettlebell | 17.6     | 3    | 10   |
+| Lower | [[Full Body#^765b0b \|Zercher Squats]] CM   | Barbell    | 0        | 3    | 10   |
+| Lower | [[Lower#^308171 \|Romanian Deadlift]] CM    | Barbell    | 0        | 3    | 5    |
+| Full  | [[Full Body#^775bc4 \|Farmer’s Walk]] CM    |            |          |      |      |
+| Full  | Kettlebell Swing                            | Kettlebell | 17.6     | 3    | 10   |
+| Full  | [[Full Body#^7d58d7 \|Turkish Get-Up]]      | Kettlebell | 17.6     | 3    | 10   |
+| Upper | Bottoms Up                                  | Kettlebell | 17.6     | 3    | 10   |
+| Upper | [[Full Body#^7ecf05 \|Lunge Twist Halo]] RC | Kettlebell | 17.6     | 8    | 2    |
+| Upper | SingleArm Clean Press                       | Kettlebell | 17.6     | 3    | 10   |
+| Upper | ChinUp                                      | Bodyweight | 25       | 3    | 5    |
+| Upper | PullUp                                      | Bodyweight | 25       | 3    | 5    |
+| Upper | PullUp Neutral                              | Bodyweight | 25       | 3    | 5    |
+| Upper | [[Upper#^bcb0df \|Bench Press]] CM          | Barbell    | 0        | 3    | 5    |
+|       |                                             |            |          |      |      |
 ^freeweight
 
 | Body  | Exercise       | Type                  | W(lb/kg) | AltType    | Alt W(lb/kg) | Time      | Sets |
@@ -101,6 +105,7 @@ OG table
 | Core  | Russian Twists | Medi Ball/ Kettlebell | 17.6     | Kettlebell | 17           | **20**sec | 3    |
 | Full  | Farmer Walk    | Dumbbell              | 0        | Dumbbell   | 0            | **20**sec | 3    |
 | Lower |                | Rope                  | 0        | Rope       | 0            | **20**sec | 3    |
+|       |                |                       |          |            |              |           |      |
 ^duration
 
 Experiment Button
@@ -177,23 +182,15 @@ Warm up with dynamic stretch to Improve blood flow and flexibility before starti
 	    - [[Full Body#^8b48af |Kettlebell Snatch]]
 	    - [[Lower#^c9d45f |Kettlebell Step-Up]]
 2. **Strength Training (Compound Movements)**
-- Follow with heavy, compound lifts to build muscle and functional strength:
 
-	- Machine(Rehab) 
-		- Chest Press(free weight) - lower seat handles chest height
-		- Leg Press back/seated
-			- On Toes at the edge hits calves
-			- Wide feet inner thigh
-			- Narrow feet Quads
-			- On heels at edge Glutes and hamstrings
 3. **Rotational/Core Strength**
 - Focus on rotational movements for striking power and grappling control:
 	- ***Dumbbell***/__Kettlebell__
-		- [[Full Body#^7ecf05 |Halos]]
+		- 
 	-  ***Medicine Ball***/__Kettlebell__/Rope
 		- [[Core#^6516d4|Russian Twists Kettlebell]]/[[Core#^fdacde |Russian Twists Rope]]
 	-  ***Medicine Ball***
-		- [[Upper#^d58de0 |Rotational Slam]]
+		- 
 4. **Pulling/Grip Strength**
 - Then do exercises to build pulling power and grip for grappling:
 	- Bodyweight
