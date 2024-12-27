@@ -40,30 +40,23 @@ dg-publish:
 - 80 oz water
 - Check New Weight limits 
 
-| Body  | Machine                           | Weight | Plates#    | Sets | Reps |
-| ----- | --------------------------------- | ------ | ---------- | ---- | ---- |
-| Lower | Abductor Outer Thigh              | 100    |            | 3    | 10   |
-| Lower | Abduction Inner Thigh             | 130    |            | 3    | 10   |
-| Lower | Leg Press off Back                | 540    | 5 per side | 3    | 10   |
-| Lower | Leg Press Seated Close            | 110    |            | 3    | 10   |
-| Lower | Leg Press Seated Far              | 150??  |            | 3    | 10   |
-| Upper | Bicep Curls                       | 0      |            | 3    | 10   |
-| Upper | Mid Row                           | 165??  |            | 3    | 10   |
-| Upper | Isolated Wide Chest               | 90     |            | 3    | 10   |
-| Upper | Chest Fly                         | 0      |            | 3    | 10   |
-| Upper | Rear Delt Fly                     | 0      |            | 3    | 10   |
-| Upper | Chest Press                       | 0      |            | 3    | 10   |
-| Upper | Shoulder Press                    | 0      |            | 3    | 10   |
-| Upper | Blink Row with individual weights | 42.5   | 1 per side | 4    | 5    |
+| Body  | Machine                      | Weight | Sets | Reps | Plates#    | Range |
+| ----- | ---------------------------- | ------ | ---- | ---- | ---------- | ----- |
+| Lower | Abductor Outer Thigh Squueze | 160    | 3    | 10   |            | 7     |
+| Lower | Abduction Inner Thigh Spread | 110    | 3    | 10   |            |       |
+| Lower | Leg Press off Back           | 540    | 3    | 10   | 5 per side |       |
+| Lower | Leg Press Seated Close       | 110    | 3    | 10   |            |       |
+| Lower | Leg Press Seated Far         | 150??  | 3    | 10   |            |       |
+| Upper | Bicep Curls                  | 0      | 3    | 10   |            |       |
+| Upper | Chest Fly                    | 0      | 3    | 10   |            |       |
+| Upper | Rear Delt Fly                | 0      | 3    | 10   |            |       |
+| Upper | Shoulder Press               | 0      | 3    | 10   |            |       |
+| Upper | Chest Press                  | 0      | 3    | 10   |            |       |
+| Upper | Isolated Wide Chest          | 90     | 3    | 10   | 45         |       |
+| Upper | Weighted Row                 | 85     | 3    | 5    | 42.5       |       |
+| Upper | Mid Row                      | 165??  | 3    | 10   |            |       |
 ^machine
 
-Inner thigh alt when week 85lb
-
-
-Abbduct hip range 7
-Abductio outward Push 160
-
-3 Sets 10 reps
 
 Linear Leg press 
 Leg press off Back Abductors
