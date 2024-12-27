@@ -33,3 +33,32 @@ To get rid fishy taste or weird meat taste clean fish or meat in lime or lemon j
 
 
 
+- [ ] tn disease  
+- [ ] orthodontics tmj  
+- [ ] blood biomarkers  
+- [ ] transcranial magnetic stimulation  
+- [ ] reduce arsenic level  
+- [ ] blood test that test what food make you gain weight  
+- [ ] latex-fruit syndrome  
+- [ ] link between earwax and headaches  
+- [ ] lasik vision institute  
+- [ ] arsenic from rice or tattoo  
+- [ ] test for toxoplasmosis  
+- [ ] propranolol  
+- [ ] kemetic science  
+- [ ] artificial womb  
+- [ ] Kratom  
+- [ ] ednos  
+- [ ] ketones
+- [ ] Amines Intolerance  
+- [ ] Algae DHA  
+- [ ] potassium supplement  
+- [ ] nsf supplements  
+- [ ] soy protein  
+- [ ] liposomal glutathione  
+- [ ] visbiome vs vsl3  
+- [ ] uses for iodine  
+- [ ] Vegan DHA-EPA  
+- [ ] good and bad soy  
+- [ ] oraganic fermented soy  
+- [ ] seaweed omega 3  
