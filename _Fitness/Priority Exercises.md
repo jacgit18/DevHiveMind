@@ -40,57 +40,38 @@ dg-publish:
 - 80 oz water
 - Check New Weight limits 
 
-| Body  | Machine                      | Position | Weight | Sets | Reps | Per Side | Range |
-| ----- | ---------------------------- | -------- | ------ | ---- | ---- | -------- | ----- |
-| Lower | Abductor Outer Thigh Squeeze |          | 160    | 3    | 10   |          | 7     |
-| Lower | Abduction Inner Thigh Spread |          | 110    | 3    | 10   |          |       |
-| Lower | Leg Press off Back Abductor  | Wide     | 540    | 3    | 10   | 270      |       |
-| Lower | Leg Press off Back Calf      | Toes     | 270    | 3    | 10   | 135      |       |
-| Lower | Leg Press off Back Quads     | Close    | 540    | 3    | 10   | 270      |       |
-| Lower | Leg Press off Back G&H       | Heals    | 270    | 3    | 10   | 135      |       |
-| Lower | Leg Press Seated             | UpClose  | 110    | 3    | 10   | 110      |       |
-| Upper | Bicep Curls                  |          | 0      | 3    | 10   |          |       |
-| Upper | Shoulder Press               |          | 0      | 3    | 10   |          |       |
-| Upper | Chest Press                  |          | 0      | 3    | 10   |          |       |
-| Upper | Chest Fly                    |          | 0      | 3    | 10   |          |       |
-| Upper | Rear Delt Fly                |          | 0      | 3    | 10   |          |       |
-| Upper | Isolated Lateral Wide Chest  |          | 90     | 3    | 5    | 45       |       |
-| Upper | Weighted Row                 |          | 85     | 3    | 5    | 42.5     |       |
-| Upper | Mid Row                      |          | 165??  | 3    | 10   |          |       |
+| Body  | Machine                     | Position | Weight | Sets | Reps | Per Side | Range |
+| ----- | --------------------------- | -------- | ------ | ---- | ---- | -------- | ----- |
+| Lower | Abductor Outer Thigh        | Squeeze  | 160    | 3    | 10   | 160      | 7     |
+| Lower | Abduction Inner Thigh       | Spread   | 110    | 3    | 10   | 110      | 0     |
+| Lower | Leg Press off Back Abductor | Wide     | 540    | 3    | 10   | 270      | 0     |
+| Lower | Leg Press off Back Calf     | Toes     | 270    | 3    | 10   | 135      | 0     |
+| Lower | Leg Press off Back Quads    | Close    | 540    | 3    | 10   | 270      | 0     |
+| Lower | Leg Press off Back G&H      | Heals    | 270    | 3    | 10   | 135      | 0     |
+| Lower | Leg Press Seated            | UpClose  | 110    | 3    | 5    | 110      | 0     |
+| Upper | Isolated Lateral Wide Chest | N/A      | 90     | 3    | 5    | 45       | 0     |
+| Upper | Weighted Setead Row         | N/A      | 85     | 3    | 5    | 42.5     | 0     |
+| Upper | Chest Fly                   | N/A      | 0      | 3    | 10   |          | 0     |
+| Upper | Rear Delt Fly               | N/A      | 0      | 3    | 10   |          | 0     |
+| Upper | Chest Press                 | N/A      | 0      | 3    | 10   |          | 0     |
+| Upper | Shoulder Press              | N/A      | 0      | 3    | 10   | 0        | 0     |
+| Upper | Mid Row                     | N/A      | 165??  | 3    | 10   |          | 0     |
 ^machine
-
-
-Leg press off Back calfs
-Toes
-270 to be safe
-
-
-Leg press off Back Quads
-Close feet 
-540
-
-Leg press off Back glute hamstring
-Heals close
-
-Lower feet then vid
-270
-
-
-
 
 
 OG table
 
-| Body  | Exercise        | Type       | W(lb/kg) | AltType    | Alt W(lb/kg) | Sets | Reps |
-| ----- | --------------- | ---------- | -------- | ---------- | ------------ | ---- | ---- |
-| Upper |                 | CurlBar    | 0        | CurlBar    | 0            | 3    | 10   |
-| Lower | Zercher Squat   | Barbell    | 0        | N/A        | 0            | 3    | 10   |
-| Upper | Halo lunge      | Kettlebell | 17       | N/A        | 0            | 8    | 2    |
-| Upper | PullUp          | Bodyweight | 25       | Bodyweight | 0            | 3    | 10   |
-| Upper | PullUp Neutral  | Bodyweight | 25       | Bodyweight | 0            | 3    | 10   |
-| Upper | ChinUp          | Bodyweight | 25       | Bodyweight | 0            | 3    | 10   |
-| Upper | SingleArm Press | Kettlebell | 17       | N/A        | 0            | 3    | 10   |
-|       |                 | Jumps      | 0        | Jumps      | 0            | 3    | 10   |
+| Body  | Exercise              | Type       | W(lb/kg) | AltType    | Alt W(lb/kg) | Sets | Reps |
+| ----- | --------------------- | ---------- | -------- | ---------- | ------------ | ---- | ---- |
+| Upper | Halo lunge            | Kettlebell | 17.6     | N/A        | 0            | 8    | 2    |
+| Upper |                       | CurlBar    | 0        | CurlBar    | 0            | 3    | 10   |
+| Upper | PullUp                | Bodyweight | 25       | Bodyweight | 0            | 3    | 5    |
+| Upper | PullUp Neutral        | Bodyweight | 25       | Bodyweight | 0            | 3    | 5    |
+| Upper | ChinUp                | Bodyweight | 25       | Bodyweight | 0            | 3    | 5    |
+| Upper | SingleArm Clean Press | Kettlebell | 17.6     | N/A        | 0            | 3    | 10   |
+| Lower | Zercher Squat         | Barbell    | 0        | N/A        | 0            | 3    | 10   |
+|       |                       | Jumps      | 0        | Jumps      | 0            | 3    | 10   |
+| Lower | Cossack Squat         | Kettlebell | 17.6     | N/A        | 0            | 3    | 10   |
 
 Lower weight 
 
@@ -105,16 +86,16 @@ For each routhly
 
 
 
-| Exercise        | Type       | W(lb/kg) | Sets | Reps |
-| --------------- | ---------- | -------- | ---- | ---- |
-|                 | CurlBar    | 0        | 3    | 10   |
-| Zercher Squat   | Barbell    | 0        | 3    | 10   |
-| Halo lunge      | Kettlebell | 17.6     | 8    | 2    |
-| PullUp          | Bodyweight | 90       | 3    | 10   |
-| PullUp Neutral  | Bodyweight | 90       | 3    | 10   |
-| ChinUp          | Bodyweight | 90       | 3    | 10   |
-| SingleArm Press | Kettlebell | 17       | 3    | 10   |
-|                 | Jumps      | 0        | 3    | 10   |
+| Exercise              | Type       | W(lb/kg) | Sets | Reps |
+| --------------------- | ---------- | -------- | ---- | ---- |
+|                       | CurlBar    | 0        | 3    | 10   |
+| Zercher Squat         | Barbell    | 0        | 3    | 10   |
+| Halo lunge            | Kettlebell | 17.6     | 8    | 2    |
+| PullUp                | Bodyweight | 90       | 3    | 10   |
+| PullUp Neutral        | Bodyweight | 90       | 3    | 10   |
+| ChinUp                | Bodyweight | 90       | 3    | 10   |
+| SingleArm Clean Press | Kettlebell | 17.6     | 3    | 10   |
+|                       | Jumps      | 0        | 3    | 10   |
 ^freeweight
 
 | Body  | Exercise       | Type                  | W(lb/kg) | AltType    | Alt W(lb/kg) | Time      | Sets |
