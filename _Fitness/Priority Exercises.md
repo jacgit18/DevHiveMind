@@ -68,7 +68,7 @@ OG table
 | Full  | Kettlebell Swing      | Kettlebell | 17.6     | N/A        | 0            | 3    | 10   |
 | Full  | Turkish Get-Up        | Kettlebell | 17.6     | N/A        | 0            | 3    | 10   |
 | Upper | Bottoms Up            | Kettlebell | 17.6     | N/A        | 0            | 3    | 10   |
-| Upper | Halo lunge            | Kettlebell | 17.6     | N/A        | 0            | 8    | 2    |
+| Upper | Lunge Twist Halo      | Kettlebell | 17.6     | N/A        | 0            | 8    | 2    |
 | Upper | SingleArm Clean Press | Kettlebell | 17.6     | N/A        | 0            | 3    | 10   |
 | Upper | PullUp                | Bodyweight | 25       | Bodyweight | 0            | 3    | 5    |
 | Upper | PullUp Neutral        | Bodyweight | 25       | Bodyweight | 0            | 3    | 5    |
@@ -78,18 +78,19 @@ OG table
 
 
 
-| Exercise              | Type       | W(lb/kg) | Sets | Reps |
-| --------------------- | ---------- | -------- | ---- | ---- |
-| Zercher Squat         | Barbell    | 0        | 3    | 10   |
-| Cossack Squat         | Kettlebell | 17.6     | 3    | 10   |
-| Kettlebell Swing      | Kettlebell | 17.6     | 3    | 10   |
-| Turkish Get-Up        | Kettlebell | 17.6     | 3    | 10   |
-| Halo lunge            | Kettlebell | 17.6     | 8    | 2    |
-| SingleArm Clean Press | Kettlebell | 17.6     | 3    | 10   |
-| Bottoms Up            | Kettlebell | 17.6     | 3    | 10   |
-| ChinUp                | Bodyweight | 25       | 3    | 5    |
-| PullUp                | Bodyweight | 25       | 3    | 5    |
-| PullUp Neutral        | Bodyweight | 25       | 3    | 5    |
+| Body  | Exercise                               | Type       | W(lb/kg) | Sets | Reps |
+| ----- | -------------------------------------- | ---------- | -------- | ---- | ---- |
+| Lower | [[Full Body#^765b0b \|Zercher Squats]] | Barbell    | 0        | 3    | 10   |
+| Lower | Cossack Squat                          | Kettlebell | 17.6     | 3    | 10   |
+| Full  | Kettlebell Swing                       | Kettlebell | 17.6     | 3    | 10   |
+| Full  | Turkish Get-Up                         | Kettlebell | 17.6     | 3    | 10   |
+| Upper | Bottoms Up                             | Kettlebell | 17.6     | 3    | 10   |
+| Upper | Lunge Twist Halo                       | Kettlebell | 17.6     | 8    | 2    |
+| Upper | SingleArm Clean Press                  | Kettlebell | 17.6     | 3    | 10   |
+| Upper | ChinUp                                 | Bodyweight | 25       | 3    | 5    |
+| Upper | PullUp                                 | Bodyweight | 25       | 3    | 5    |
+| Upper | PullUp Neutral                         | Bodyweight | 25       | 3    | 5    |
+| Upper | [[Upper#^bcb0df \|Bench Press]]        | Barbell    | 0        | 3    | 5    |
 ^freeweight
 
 | Body  | Exercise       | Type                  | W(lb/kg) | AltType    | Alt W(lb/kg) | Time      | Sets |
@@ -175,9 +176,9 @@ Warm up with dynamic stretch to Improve blood flow and flexibility before starti
 2. **Strength Training (Compound Movements)**
 - Follow with heavy, compound lifts to build muscle and functional strength:
 	- _Barbell_
-		- [[Upper#^bcb0df |Bench Press]] - narrow grip for a more compound movement.
+		-  - narrow grip for a more compound movement.
 		- [[Lower#^308171 |Romanian Deadlift]]
-		- [[Full Body#^765b0b |Zercher Squats]]
+		- 
 	- ___Dumbbell___
 	    - [[Full Body#^775bc4 |Farmer’s Walk]] 
 	- __Kettlebell__
