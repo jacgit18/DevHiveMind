@@ -15,7 +15,7 @@ dg-publish:
 - Bench Press (_Barbell_) ^bcb0df
 	- ![](https://www.youtube.com/watch?v=SCVCLChPQFY&list=TLPQMTUxMjIwMjRImOBFVXK6uQ&index=2)
 - Chest Fly bring range closer to front Rear Fly
-	For rear when pulling stop when both arms are straight dont go past shoulders  ^238b6e
+	For rear when pulling stop when both arms are straight don't go past shoulders  ^238b6e
 
 	- ![](https://www.youtube.com/watch?v=H4mVGHaK2f4)
 	Front Fly with Dumbbell

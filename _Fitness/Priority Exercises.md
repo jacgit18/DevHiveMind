@@ -40,22 +40,24 @@ dg-publish:
 - 80 oz water
 - Check New Weight limits 
 
-| Body  | Machine                     | Position | Weight | Sets | Reps | Per Side | Range |
-| ----- | --------------------------- | -------- | ------ | ---- | ---- | -------- | ----- |
-| Lower | Abductor Outer Thigh        | Squeeze  | 160    | 3    | 10   | 160      | 7     |
-| Lower | Abduction Inner Thigh       | Spread   | 110    | 3    | 10   | 110      | 0     |
-| Lower | Leg Press off Back Abductor | Wide     | 540    | 3    | 10   | 270      | 0     |
-| Lower | Leg Press off Back Calf     | Toes     | 270    | 3    | 10   | 135      | 0     |
-| Lower | Leg Press off Back Quads    | Close    | 540    | 3    | 10   | 270      | 0     |
-| Lower | Leg Press off Back G&H      | Heals    | 270    | 3    | 10   | 135      | 0     |
-| Lower | Leg Press Seated            | UpClose  | 110    | 3    | 5    | 110      | 0     |
-| Upper | Isolated Lateral Wide Chest | N/A      | 90     | 3    | 5    | 45       | 0     |
-| Upper | Weighted Setead Row         | N/A      | 85     | 3    | 5    | 42.5     | 0     |
-| Upper | Chest Fly                   | N/A      | 70     | 3    | 10   | 70       | 4     |
-| Upper | Rear Delt Fly               | N/A      | 40     | 3    | 10   | 40       | 0     |
-| Upper | Chest Press                 | N/A      | 0      | 3    | 10   |          | 0     |
-| Upper | Shoulder Press              | N/A      | 0      | 3    | 10   | 0        | 0     |
-| Upper | Mid Row                     | N/A      | 165??  | 3    | 10   |          | 0     |
+| Body  | Machine                                     | Position | Weight | Sets | Reps | Per Side | Range |
+| ----- | ------------------------------------------- | -------- | ------ | ---- | ---- | -------- | ----- |
+| Lower | Abductor Outer Thigh                        | Squeeze  | 160    | 3    | 10   | 160      | 7     |
+| Lower | Abduction Inner Thigh                       | Spread   | 110    | 3    | 10   | 110      | 0     |
+| Lower | Leg Press off Back Abductor                 | Wide     | 540    | 3    | 10   | 270      | 0     |
+| Lower | Leg Press off Back Calf                     | Toes     | 270    | 3    | 10   | 135      | 0     |
+| Lower | Leg Press off Back Quads                    | Close    | 540    | 3    | 10   | 270      | 0     |
+| Lower | Leg Press off Back G&H                      | Heals    | 270    | 3    | 10   | 135      | 0     |
+| Lower | Leg Press Seated                            | UpClose  | 110    | 3    | 5    | 110      | 0     |
+| Upper | Isolated Lateral Wide Chest                 | N/A      | 90     | 3    | 5    | 45       | 0     |
+| Upper | Weighted Setead Row                         | N/A      | 85     | 3    | 5    | 42.5     | 0     |
+| Upper | [[Upper#^238b6e \|Chest Fly]]               | N/A      | 70     | 3    | 10   | 70       | 4     |
+| Upper | Rear Delt Fly                               | N/A      | 40     | 3    | 10   | 40       | 0     |
+| Upper | Chest Press                                 | N/A      | 0      | 3    | 10   |          | 0     |
+| Upper | Shoulder Press                              | N/A      | 0      | 3    | 10   | 0        | 0     |
+| Upper | Mid Row                                     | N/A      | 165??  | 3    | 10   |          | 0     |
+| Upper | [[Upper#^a7be5a \|Cable Woodchopper]]       | N/A      |        |      |      |          |       |
+| Core  | [[Core#^b41212\| Leg Cable Reverse Crunch]] | N/A      |        |      |      |          |       |
 ^machine
 
 
@@ -86,29 +88,33 @@ OG table
 
 4. **Pulling/Grip Strength - PG**
 	- Then do exercises to build pulling power and grip for grappling.
+	- Pulley Machine can use [[Tower 200.pdf |Tower 200]]
 
-| Body  | Exercise                                    | Type       | W(lb/kg) | Sets | Reps |
-| ----- | ------------------------------------------- | ---------- | -------- | ---- | ---- |
-| Lower | [[Lower#^3ae11e \|Cossack Squat]] CM        | Kettlebell | 17.6     | 3    | 10   |
-| Lower | [[Full Body#^765b0b \|Zercher Squats]] CM   | Barbell    | 0        | 3    | 10   |
-| Lower | [[Lower#^308171 \|Romanian Deadlift]] CM    | Barbell    | 0        | 3    | 5    |
-| Full  | [[Full Body#^bb1837\|Kettlebell Swing]] PG  | Kettlebell | 17.6     | 3    | 10   |
-| Full  | [[Full Body#^7d58d7 \|Turkish Get-Up]] RC   | Kettlebell | 17.6     | 3    | 10   |
-| Upper | [[Upper#^9def13\|Bottoms Up]] PG            | Kettlebell | 17.6     | 3    | 10   |
-| Upper | [[Full Body#^7ecf05 \|Lunge Twist Halo]] RC | Kettlebell | 17.6     | 8    | 2    |
-| Upper | SingleArm Clean Press                       | Kettlebell | 17.6     | 3    | 10   |
-| Upper | ChinUp                                      | Bodyweight | 25       | 3    | 5    |
-| Upper | PullUp                                      | Bodyweight | 25       | 3    | 5    |
-| Upper | PullUp Neutral                              | Bodyweight | 25       | 3    | 5    |
-| Upper | [[Upper#^bcb0df \|Bench Press]] CM          | Barbell    | 0        | 3    | 5    |
+| Body  | Exercise                                 | Focus | Type       | W(lb/kg) | Sets | Reps |
+| ----- | ---------------------------------------- | ----- | ---------- | -------- | ---- | ---- |
+| Lower | [[Lower#^3ae11e \|Cossack Squat]]        | CM    | Kettlebell | 17.6     | 3    | 10   |
+| Lower | [[Full Body#^765b0b \|Zercher Squats]]   | CM    | Barbell    | 0        | 3    | 10   |
+| Lower | [[Lower#^308171 \|Romanian Deadlift]]    | CM    | Barbell    | 0        | 3    | 5    |
+| Full  | [[Full Body#^bb1837\|Kettlebell Swing]]  | PG    | Kettlebell | 17.6     | 3    | 10   |
+| Full  | [[Full Body#^7d58d7 \|Turkish Get-Up]]   | RC    | Kettlebell | 17.6     | 3    | 10   |
+| Upper | [[Upper#^9def13\|Bottoms Up]]            | PG    | Kettlebell | 17.6     | 3    | 10   |
+| Upper | [[Full Body#^7ecf05 \|Lunge Twist Halo]] | RC    | Kettlebell | 17.6     | 8    | 2    |
+| Upper | SingleArm Clean Press                    |       | Kettlebell | 17.6     | 3    | 10   |
+| Upper | ChinUp                                   |       | Bodyweight | 25       | 3    | 5    |
+| Upper | PullUp                                   |       | Bodyweight | 25       | 3    | 5    |
+| Upper | PullUp Neutral                           |       | Bodyweight | 25       | 3    | 5    |
+| Upper | [[Upper#^bcb0df \|Bench Press]]          | CM    | Barbell    | 0        | 3    | 5    |
 ^freeweight
 
-| Body | Exercise                                 | Type       | W(lb/kg) | AltType  | Alt W(lb/kg) | Time      | Sets |
-| ---- | ---------------------------------------- | ---------- | -------- | -------- | ------------ | --------- | ---- |
-| Core | [[Core#^6516d4\|Russian Twists]] RC      | Kettlebell | 17.6     | MediBall | 0            | **20**sec | 3    |
-| Full | [[Full Body#^775bc4 \|Farmer’s Walk]] CM | Kettlebell | 0        | Dumbbell | 0            | **20**sec | 3    |
-| Core | [[Core#^fdacde \|Russian Twists]] RC     | Rope       | 0        | Rope     | 0            | **20**sec | 3    |
-| Full | [[Upper#^d58de0 \|Rotational Slam]] RC   | MediBall   | 0        | MediBall | 0            | **20**sec | 3    |
+| Body  | Exercise                                    | Focus | Type       | W(lb/kg) | AltType  | Alt W(lb/kg) | Time      | Sets |
+| ----- | ------------------------------------------- | ----- | ---------- | -------- | -------- | ------------ | --------- | ---- |
+| Core  | [[Core#^6516d4\|Russian Twists]]            | RC    | Kettlebell | 17.6     | MediBall | 0            | **20**sec | 3    |
+| Full  | [[Full Body#^775bc4 \|Farmer’s Walk]]       | CM    | Kettlebell | 0        | Dumbbell | 0            | **20**sec | 3    |
+| Core  | [[Core#^fdacde \|Russian Twists]] RC        |       | Rope       | 0        | Rope     | 0            | **20**sec | 3    |
+| Full  | [[Upper#^d58de0 \|Rotational Slam]] RC      |       | MediBall   | 0        | MediBall | 0            | **20**sec | 3    |
+| Upper | [[Full Body#^05e3ec \|Seated Cable Row]] PG |       | Machine    | 0        | Machine  | 0            | **20**sec | 3    |
+| Full  | [[Full Body#^64091e \| Alternating Waves]]  |       | Rope       | 0        | Rope     | 0            | **20**sec | 3    |
+| Full  | [[Full Body#^164e0e \| Side-to-Side Waves]] |       | Rope       | 0        | Rope     | 0            | **20**sec | 3    |
 ^duration
 
 Experiment Button
@@ -186,14 +192,7 @@ Warm up with dynamic stretch to Improve blood flow and flexibility before starti
 	    - [[Lower#^c9d45f |Kettlebell Step-Up]]
 
 
-3. **Rotational/Core Strength**
-- Focus on rotational movements for striking power and grappling control:
-	- ***Dumbbell***/__Kettlebell__
-		- 
-	-  ***Medicine Ball***/__Kettlebell__/Rope
 
-	-  ***Medicine Ball***
-		- 
 4. **Pulling/Grip Strength**
 - Then do exercises to build pulling power and grip for grappling:
 	- Bodyweight
@@ -201,24 +200,14 @@ Warm up with dynamic stretch to Improve blood flow and flexibility before starti
 		    - ![](https://www.youtube.com/watch?v=mRy9m2Q9_1I)
 		    - ![](https://www.youtube.com/watch?v=dAScZVF5o9k)
 		    - ![](https://www.youtube.com/watch?v=djTQ1C_pvYw&list=TLPQMTQxMjIwMjQ2MGDLyOWw0w&index=2)
-	- __Kettlebell__
-		- 
-		- 
-	- Machine(Rehab) 
-		- [[Upper#^238b6e |Chest/Rear Fly ]] for rear stop when both arms are straight
-		- [[Full Body#^05e3ec |Seated Cable Row]]
-		- Pulley Machine can use [[Tower 200.pdf |Tower 200]]
+	
+		- Pulley Machine can us
 			- Cable Balloon Abduction
 				- ![[CableBalloonAbduction.gif]]
-			- [[Upper#^a7be5a |Cable Woodchopper]]
+			- 
 			- Cable Floor Fly
 				- ![[CableFloorFly.gif]]
 			- Cable Wolverine
 				- ![[CableWolverine.gif|Wolverine]]
-			- [[Core#^b41212|Cable Reverse Crunch]]
-5. **Cardio**
-- Ropes
-	- [[Full Body#^64091e | Alternating Waves]]
-	- [[Full Body#^164e0e | Side-to-Side Waves]]
+			- 
 
-	
