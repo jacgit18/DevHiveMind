@@ -55,17 +55,7 @@ Fish Cooking Tip
 To get rid fishy taste or weird meat taste clean fish or meat in lime or lemon juice with milk to kill bacteria
 
 
-## Budget 
 
-
-
-# Adaptogen Herbs and Superfoods
-(Adaptogens or adaptogenic substances are used in herbal medicine for the claimed stabilization of physiological processes and promotion of homeostasis. )
-
-- Holy Basil  
-- rhodiola  
-- licorice root  
-- astragalus
 
 
 # Vitamin B9 Sources for Acid Reflux
@@ -79,7 +69,7 @@ peas
 
 chickpeas and kidney beans  
 
-liver (but avoid this during pregnancy)  
+liver
 
 breakfast cereals fortified with folic acid  
 
