@@ -60,9 +60,18 @@ series:
 
 ### Stats
 - 15% body fat 
-- Eat a minimum of 1900 calories a day 
-- 80 oz water
-
+- **Weight:** 120 lbs
+- **WaterToDrink:** 80 oz
+#### Calories
+- **Maintain Current Weight:** ~2,100 calories/day
+- **Calorie Goal for Gaining Weight (fast approach):** ~3,600 calories/day
+- **Calorie Goal for Gaining Weight (moderate approach):** ~3,300 calories/day (current target)
+- **Maintain New Weight (goal weight):** ~2,800 calories/day
+- **Slow Weight Gain:** ~1,700–1,800 calories/day over the course of a year (extremely slow, not typical for bulking).
+#### **Protein Requirements:**
+1. **Daily Protein for Maintenance/Gain:** ~158 grams/day
+2. **Protein for Cutting (higher intake for muscle preservation):** ~237 grams/day
+### Exercise Categories of Focus 
 1. **Explosive Power (Plyometric & Olympic Movements) - EP**
 	- Start with these to engage fast-twitch muscle fibers and improve explosive strength.
 

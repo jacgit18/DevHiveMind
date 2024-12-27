@@ -8,9 +8,9 @@ Avoid taken creatine on empty stomach
 #todo/Low/Medical
 
 - [ ] best 3rd-party supplement testing labs  
-- [ ] r8 roll recovery  
+- [x] r8 roll recovery ✅ 2024-12-27
 
-- [ ] allergy shots  
+- [x] allergy shots ✅ 2024-12-27
 - [ ] Dental pulp stem cells  
 - [ ] tn disease  
 - [ ] orthodontics tmj  
