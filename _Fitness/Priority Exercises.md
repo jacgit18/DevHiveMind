@@ -107,8 +107,9 @@ OG table
 | SingleArm Clean Press                    | Upper |       | Kettlebell | 17.6     | 3    | 10   |
 | [[Upper#^a2d3cc \|ChinUp]]               | Upper |       | Bodyweight | 25       | 3    | 5    |
 | [[Upper#^bf9596 \|PullUp Wide]]          | Upper |       | Bodyweight | 25       | 3    | 5    |
-| [[Upper#^e81d31 \|PullUp Neutral]]       | Upper |       | Bodyweight | 25       | 3    | 5    |
+| [[Upper#^e81d31 \|PullUp Neutral]]       | Upper | PG    | Bodyweight | 25       | 3    | 5    |
 | [[Upper#^bcb0df \|Bench Press]]          | Upper | CM    | Barbell    | 0        | 3    | 5    |
+|                                          |       |       |            |          |      |      |
 ^freeweight
 
 | Body  | Exercise                                    | Focus  | Type       | W(lb/kg) | AltType  | Alt W(lb/kg) | Time      | Sets |
