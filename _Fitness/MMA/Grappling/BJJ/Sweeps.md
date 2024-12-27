@@ -202,26 +202,26 @@ Tips for Learning Sweeps:
 Which category would you like to focus on first?
 
 
-![[biubi.gif]]
+![[FullGuardSweep.gif]]
 
 Mount escapes
 
-![[hvuyvu.gif]]
+![[MountEscapeOne.gif]]
 
 Mount escapes 2
-![[jlb.gif]]
+![[MountEscapeTwo.gif]]
 
-![[gcvvy.gif]]
+![[MountEscapeThree.gif]]
 
-![[jvuc.gif]]
-
-
-![[ses.gif]]
-
-![[bjbhb.gif]]
+![[MountEscapeFour.gif]]
 
 
-![[bjhbk.gif]]
+![[MountEscapeFive.gif]]
+
+![[MountEscapeSix.gif]]
+
+
+![[MountEscapeSeven.gif]]
 
 
 ### Framing and Establishing Points of Contact in BJJ

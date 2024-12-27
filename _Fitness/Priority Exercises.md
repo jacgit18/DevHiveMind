@@ -76,21 +76,24 @@ OG table
 | Upper |                       | CurlBar    | 0        | CurlBar    | 0            | 3    | 10   |
 |       |                       | Jumps      | 0        | Jumps      | 0            | 3    | 10   |
 
+2. **Strength Training (Compound Movements)**
+- Follow with heavy, compound lifts to build muscle and functional strength use narrow grip or positioning for more of a compound movement.
 
-
-| Body  | Exercise                               | Type       | W(lb/kg) | Sets | Reps |
-| ----- | -------------------------------------- | ---------- | -------- | ---- | ---- |
-| Lower | [[Full Body#^765b0b \|Zercher Squats]] | Barbell    | 0        | 3    | 10   |
-| Lower | [[Lower#^3ae11e \|Cossack Squat]]      | Kettlebell | 17.6     | 3    | 10   |
-| Full  | Kettlebell Swing                       | Kettlebell | 17.6     | 3    | 10   |
-| Full  | Turkish Get-Up                         | Kettlebell | 17.6     | 3    | 10   |
-| Upper | Bottoms Up                             | Kettlebell | 17.6     | 3    | 10   |
-| Upper | Lunge Twist Halo                       | Kettlebell | 17.6     | 8    | 2    |
-| Upper | SingleArm Clean Press                  | Kettlebell | 17.6     | 3    | 10   |
-| Upper | ChinUp                                 | Bodyweight | 25       | 3    | 5    |
-| Upper | PullUp                                 | Bodyweight | 25       | 3    | 5    |
-| Upper | PullUp Neutral                         | Bodyweight | 25       | 3    | 5    |
-| Upper | [[Upper#^bcb0df \|Bench Press]]        | Barbell    | 0        | 3    | 5    |
+| Body  | Exercise                                  | Type       | W(lb/kg) | Sets | Reps |
+| ----- | ----------------------------------------- | ---------- | -------- | ---- | ---- |
+| Lower | [[Lower#^3ae11e \|Cossack Squat]] CM      | Kettlebell | 17.6     | 3    | 10   |
+| Lower | [[Full Body#^765b0b \|Zercher Squats]] CM | Barbell    | 0        | 3    | 10   |
+| Lower | [[Lower#^308171 \|Romanian Deadlift]] CM  | Barbell    | 0        | 3    | 5    |
+| Full  | [[Full Body#^775bc4 \|Farmer’s Walk]] CM  |            |          |      |      |
+| Full  | Kettlebell Swing                          | Kettlebell | 17.6     | 3    | 10   |
+| Full  | [[Full Body#^7d58d7 \|Turkish Get-Up]]    | Kettlebell | 17.6     | 3    | 10   |
+| Upper | Bottoms Up                                | Kettlebell | 17.6     | 3    | 10   |
+| Upper | Lunge Twist Halo                          | Kettlebell | 17.6     | 8    | 2    |
+| Upper | SingleArm Clean Press                     | Kettlebell | 17.6     | 3    | 10   |
+| Upper | ChinUp                                    | Bodyweight | 25       | 3    | 5    |
+| Upper | PullUp                                    | Bodyweight | 25       | 3    | 5    |
+| Upper | PullUp Neutral                            | Bodyweight | 25       | 3    | 5    |
+| Upper | [[Upper#^bcb0df \|Bench Press]] CM        | Barbell    | 0        | 3    | 5    |
 ^freeweight
 
 | Body  | Exercise       | Type                  | W(lb/kg) | AltType    | Alt W(lb/kg) | Time      | Sets |
@@ -175,15 +178,7 @@ Warm up with dynamic stretch to Improve blood flow and flexibility before starti
 	    - [[Lower#^c9d45f |Kettlebell Step-Up]]
 2. **Strength Training (Compound Movements)**
 - Follow with heavy, compound lifts to build muscle and functional strength:
-	- _Barbell_
-		-  - narrow grip for a more compound movement.
-		- [[Lower#^308171 |Romanian Deadlift]]
-		- 
-	- ___Dumbbell___
-	    - [[Full Body#^775bc4 |Farmer’s Walk]] 
-	- __Kettlebell__
-	    - [[Full Body#^7d58d7 |Turkish Get-Up]] (3 sets per side, focusing on control)
-	    - 
+
 	- Machine(Rehab) 
 		- Chest Press(free weight) - lower seat handles chest height
 		- Leg Press back/seated
