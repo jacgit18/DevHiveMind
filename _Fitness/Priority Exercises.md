@@ -75,37 +75,40 @@ OG table
 | Upper | ChinUp                | Bodyweight | 25       | Bodyweight | 0            | 3    | 5    |
 | Upper |                       | CurlBar    | 0        | CurlBar    | 0            | 3    | 10   |
 |       |                       | Jumps      | 0        | Jumps      | 0            | 3    | 10   |
+1. **Explosive Power (Plyometric & Olympic Movements) - EP**
+	- Start with these to engage fast-twitch muscle fibers and improve explosive strength.
+	
+2. **Strength Training (Compound Movements) - CM**
+	- Follow with heavy, compound lifts to build muscle and functional strength use narrow grip or positioning for more of a compound movement.
 
-2. **Strength Training (Compound Movements)**
-- Follow with heavy, compound lifts to build muscle and functional strength use narrow grip or positioning for more of a compound movement.
+3. **Rotational/Core Strength - RC**
+	- Focus on rotational movements for striking power and grappling control.
 
-3. **Rotational/Core Strength**
-- Focus on rotational movements for striking power and grappling control.
+4. **Pulling/Grip Strength - PG**
+	- Then do exercises to build pulling power and grip for grappling.
 
 | Body  | Exercise                                    | Type       | W(lb/kg) | Sets | Reps |
 | ----- | ------------------------------------------- | ---------- | -------- | ---- | ---- |
 | Lower | [[Lower#^3ae11e \|Cossack Squat]] CM        | Kettlebell | 17.6     | 3    | 10   |
 | Lower | [[Full Body#^765b0b \|Zercher Squats]] CM   | Barbell    | 0        | 3    | 10   |
 | Lower | [[Lower#^308171 \|Romanian Deadlift]] CM    | Barbell    | 0        | 3    | 5    |
-| Full  | [[Full Body#^775bc4 \|Farmer’s Walk]] CM    |            |          |      |      |
-| Full  | Kettlebell Swing                            | Kettlebell | 17.6     | 3    | 10   |
-| Full  | [[Full Body#^7d58d7 \|Turkish Get-Up]]      | Kettlebell | 17.6     | 3    | 10   |
-| Upper | Bottoms Up                                  | Kettlebell | 17.6     | 3    | 10   |
+| Full  | [[Full Body#^bb1837\|Kettlebell Swing]] PG  | Kettlebell | 17.6     | 3    | 10   |
+| Full  | [[Full Body#^7d58d7 \|Turkish Get-Up]] RC   | Kettlebell | 17.6     | 3    | 10   |
+| Upper | [[Upper#^9def13\|Bottoms Up]] PG            | Kettlebell | 17.6     | 3    | 10   |
 | Upper | [[Full Body#^7ecf05 \|Lunge Twist Halo]] RC | Kettlebell | 17.6     | 8    | 2    |
 | Upper | SingleArm Clean Press                       | Kettlebell | 17.6     | 3    | 10   |
 | Upper | ChinUp                                      | Bodyweight | 25       | 3    | 5    |
 | Upper | PullUp                                      | Bodyweight | 25       | 3    | 5    |
 | Upper | PullUp Neutral                              | Bodyweight | 25       | 3    | 5    |
 | Upper | [[Upper#^bcb0df \|Bench Press]] CM          | Barbell    | 0        | 3    | 5    |
-|       |                                             |            |          |      |      |
 ^freeweight
 
-| Body  | Exercise       | Type                  | W(lb/kg) | AltType    | Alt W(lb/kg) | Time      | Sets |
-| ----- | -------------- | --------------------- | -------- | ---------- | ------------ | --------- | ---- |
-| Core  | Russian Twists | Medi Ball/ Kettlebell | 17.6     | Kettlebell | 17           | **20**sec | 3    |
-| Full  | Farmer Walk    | Dumbbell              | 0        | Dumbbell   | 0            | **20**sec | 3    |
-| Lower |                | Rope                  | 0        | Rope       | 0            | **20**sec | 3    |
-|       |                |                       |          |            |              |           |      |
+| Body | Exercise                                 | Type       | W(lb/kg) | AltType  | Alt W(lb/kg) | Time      | Sets |
+| ---- | ---------------------------------------- | ---------- | -------- | -------- | ------------ | --------- | ---- |
+| Core | [[Core#^6516d4\|Russian Twists]] RC      | Kettlebell | 17.6     | MediBall | 0            | **20**sec | 3    |
+| Full | [[Full Body#^775bc4 \|Farmer’s Walk]] CM | Kettlebell | 0        | Dumbbell | 0            | **20**sec | 3    |
+| Core | [[Core#^fdacde \|Russian Twists]] RC     | Rope       | 0        | Rope     | 0            | **20**sec | 3    |
+| Full | [[Upper#^d58de0 \|Rotational Slam]] RC   | MediBall   | 0        | MediBall | 0            | **20**sec | 3    |
 ^duration
 
 Experiment Button
@@ -181,14 +184,14 @@ Warm up with dynamic stretch to Improve blood flow and flexibility before starti
 	- **Kettlebell**
 	    - [[Full Body#^8b48af |Kettlebell Snatch]]
 	    - [[Lower#^c9d45f |Kettlebell Step-Up]]
-2. **Strength Training (Compound Movements)**
+
 
 3. **Rotational/Core Strength**
 - Focus on rotational movements for striking power and grappling control:
 	- ***Dumbbell***/__Kettlebell__
 		- 
 	-  ***Medicine Ball***/__Kettlebell__/Rope
-		- [[Core#^6516d4|Russian Twists Kettlebell]]/[[Core#^fdacde |Russian Twists Rope]]
+
 	-  ***Medicine Ball***
 		- 
 4. **Pulling/Grip Strength**
@@ -199,8 +202,8 @@ Warm up with dynamic stretch to Improve blood flow and flexibility before starti
 		    - ![](https://www.youtube.com/watch?v=dAScZVF5o9k)
 		    - ![](https://www.youtube.com/watch?v=djTQ1C_pvYw&list=TLPQMTQxMjIwMjQ2MGDLyOWw0w&index=2)
 	- __Kettlebell__
-		- [[Full Body#^bb1837|Kettlebell Swing]]
-		- [[Upper#^9def13|Bottoms Up]]
+		- 
+		- 
 	- Machine(Rehab) 
 		- [[Upper#^238b6e |Chest/Rear Fly ]] for rear stop when both arms are straight
 		- [[Full Body#^05e3ec |Seated Cable Row]]
