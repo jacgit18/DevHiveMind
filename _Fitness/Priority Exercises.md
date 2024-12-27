@@ -40,28 +40,25 @@ dg-publish:
 - 80 oz water
 - Check New Weight limits 
 
-| Body  | Machine                      | Weight | Sets | Reps | Plates#    | Range |
-| ----- | ---------------------------- | ------ | ---- | ---- | ---------- | ----- |
-| Lower | Abductor Outer Thigh Squueze | 160    | 3    | 10   |            | 7     |
-| Lower | Abduction Inner Thigh Spread | 110    | 3    | 10   |            |       |
-| Lower | Leg Press off Back           | 540    | 3    | 10   | 5 per side |       |
-| Lower | Leg Press Seated Close       | 110    | 3    | 10   |            |       |
-| Lower | Leg Press Seated Far         | 150??  | 3    | 10   |            |       |
-| Upper | Bicep Curls                  | 0      | 3    | 10   |            |       |
-| Upper | Chest Fly                    | 0      | 3    | 10   |            |       |
-| Upper | Rear Delt Fly                | 0      | 3    | 10   |            |       |
-| Upper | Shoulder Press               | 0      | 3    | 10   |            |       |
-| Upper | Chest Press                  | 0      | 3    | 10   |            |       |
-| Upper | Isolated Wide Chest          | 90     | 3    | 10   | 45         |       |
-| Upper | Weighted Row                 | 85     | 3    | 5    | 42.5       |       |
-| Upper | Mid Row                      | 165??  | 3    | 10   |            |       |
+| Body  | Machine                      | Position | Weight | Sets | Reps | Per Side | Range |
+| ----- | ---------------------------- | -------- | ------ | ---- | ---- | -------- | ----- |
+| Lower | Abductor Outer Thigh Squeeze |          | 160    | 3    | 10   |          | 7     |
+| Lower | Abduction Inner Thigh Spread |          | 110    | 3    | 10   |          |       |
+| Lower | Leg Press off Back Abductor  | Wide     | 540    | 3    | 10   | 270      |       |
+| Lower | Leg Press off Back Calf      | Toes     | 270    | 3    | 10   | 135      |       |
+| Lower | Leg Press off Back Quads     | Close    | 540    | 3    | 10   | 270      |       |
+| Lower | Leg Press off Back G&H       | Heals    | 270    | 3    | 10   | 135      |       |
+| Lower | Leg Press Seated             | UpClose  | 110    | 3    | 10   | 110      |       |
+| Upper | Bicep Curls                  |          | 0      | 3    | 10   |          |       |
+| Upper | Shoulder Press               |          | 0      | 3    | 10   |          |       |
+| Upper | Chest Press                  |          | 0      | 3    | 10   |          |       |
+| Upper | Chest Fly                    |          | 0      | 3    | 10   |          |       |
+| Upper | Rear Delt Fly                |          | 0      | 3    | 10   |          |       |
+| Upper | Isolated Lateral Wide Chest  |          | 90     | 3    | 5    | 45       |       |
+| Upper | Weighted Row                 |          | 85     | 3    | 5    | 42.5     |       |
+| Upper | Mid Row                      |          | 165??  | 3    | 10   |          |       |
 ^machine
 
-
-Linear Leg press 
-Leg press off Back Abductors
-540
-Wide
 
 Leg press off Back calfs
 Toes
@@ -79,12 +76,7 @@ Lower feet then vid
 270
 
 
-Isolated lateral Wide Chest 
 
-90
-
-3 Sets
-5 reps
 
 
 OG table
