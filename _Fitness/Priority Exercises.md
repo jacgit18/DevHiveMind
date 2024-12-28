@@ -115,7 +115,7 @@ series:
 | Upper | Chest Press                                             | N/A      | 0      | 3    | 10   | 0        | 0     |
 | Upper | Shoulder Press                                          | N/A      | 0      | 3    | 10   | 0        | 0     |
 | Upper | Mid Row                                                 | N/A      | 0      | 3    | 10   | 0        | 0     |
-| Core  | [[Core#^b41212\| Leg Cable Reverse Crunch]]             | N/A      | 0      | 3    | 10   | 0        | 0     |
+| Core  | [[Core#^b41212\| Leg Cable Reverse Crunch]]             | N/A      | 90     | 3    | 10   | 0        | 0     |
 ^machine
 
 
