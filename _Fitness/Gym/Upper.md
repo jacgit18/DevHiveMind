@@ -48,6 +48,7 @@ Get to your reps to 15 sec each try to extend for 45 sec MAX
 - Plyometric Plank with Shoulder Tap
 - Dead Hang ^b1e482
 	- ![](https://www.youtube.com/watch?v=Jzl77Ibdypw)
+	- ![](https://www.youtube.com/watch?v=ShkBXOGK7A8)
 - **Pull-Up Bar Variations
 	- Wide Grip  ^bf9596
 		- ![](https://www.youtube.com/watch?v=dAScZVF5o9k)

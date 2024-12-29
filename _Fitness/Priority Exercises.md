@@ -101,17 +101,17 @@ series:
 
 | Body  | Machine                                                 | Position | Focus | Weight | Sets | Reps | Range | Per Side |
 | ----- | ------------------------------------------------------- | -------- | ----- | ------ | ---- | ---- | ----- | -------- |
-| Lower | Abductor Outer Thigh                                    | Squeeze  | CM    | *160*  | 3    | 10   | 7     | 160      |
-| Lower | Abduction Inner Thigh                                   | Spread   | CM    | *110*  | 3    | 10   | 0     | 110      |
+| Lower | Abductor Outer Thigh                                    | Squeeze  | CM    | *160*  | 3    | 10   | 7     | **160**  |
+| Lower | Abduction Inner Thigh                                   | Spread   | CM    | *110*  | 3    | 10   | 0     | **110**  |
 | Lower | Leg Press off Back Abductor                             | Wide     | CM    | *540*  | 3    | 10   | 0     | 270      |
 | Lower | Leg Press off Back Calf                                 | Toes     | CM    | *270*  | 3    | 10   | 0     | 135      |
 | Lower | Leg Press off Back Quads                                | Close    | CM    | *540*  | 3    | 10   | 0     | 270      |
 | Lower | Leg Press off Back G&H                                  | Heals    | CM    | *270*  | 3    | 10   | 0     | 135      |
-| Lower | Leg Press Seated                                        | UpClose  | CM    | *110*  | 3    | 5    | 0     | 110      |
+| Lower | Leg Press Seated                                        | UpClose  | CM    | *110*  | 3    | 5    | 0     | **110**  |
 | Upper | Isolated Lateral Wide Chest                             | Wide     | CM    | *90*   | 3    | 5    | 0     | 45       |
 | Upper | Weighted Setead Row                                     | N/A      | PG    | *85*   | 3    | 5    | 0     | 42.5     |
-| Upper | Rear Delt Fly                                           | N/A      | CM    | *40*   | 3    | 10   | 0     | 40       |
-| Upper | [[Upper#^238b6e \|Chest Fly]]                           | N/A      | CM    | *70*   | 3    | 10   | 4     | 70       |
+| Upper | Rear Delt Fly                                           | N/A      | CM    | *40*   | 3    | 10   | 0     | **40**   |
+| Upper | [[Upper#^238b6e \|Chest Fly]]                           | N/A      | CM    | *70*   | 3    | 10   | 4     | **70**   |
 | Upper | [[Upper#^a7be5a \|Cable Woodchopper]]                   | N/A      | RC    | 160    | 3    | 10   | 0     | 80       |
 | Upper | [[CableBalloonAbduction.gif \|Cable Balloon Abduction]] | N/A      | PG    | 160    | 3    | 10   | 0     | 80       |
 | Upper | [[CableFloorFly.gif \|Cable Floor Fly]]                 | N/A      | PG    | 160    | 3    | 10   | 0     | 80       |
@@ -119,7 +119,7 @@ series:
 | Upper | Chest Press                                             | N/A      | CM    | 0      | 3    | 10   | 0     | 0        |
 | Upper | Shoulder Press                                          | N/A      | CM    | 0      | 3    | 10   | 0     | 0        |
 | Upper | Mid Row                                                 | N/A      | CM    | 0      | 3    | 10   | 0     | 0        |
-| Core  | [[Core#^b41212\| Leg Cable Reverse Crunch]]             | N/A      | RC    | 90     | 3    | 10   | 0     | 0        |
+| Core  | [[Core#^b41212\| Leg Cable Reverse Crunch]]             | N/A      | RC    | 90     | 3    | 10   | 0     | 45       |
 ^machine
 
 non bold weight not verified based off tower 200 weights verify at gym 
