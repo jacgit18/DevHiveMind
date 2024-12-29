@@ -95,6 +95,7 @@ series:
 - [ ] try creating chart from table 
 - [x] Eaa over bcaa try looking into Eaa ✅ 2024-12-29
 - [ ] Check New Weight limits 
+- [ ] focus on stability
 
 ![](https://www.youtube.com/watch?v=djj7QXZAIjM)
 
