@@ -26,7 +26,9 @@ Start with a dynamic stretch to Improve blood flow and flexibility. End with a s
     - Vary exercise to trick body rotating exercises pick a number of exercise you want to do and alternate the load.
 2. **Avoid Risky Movements:**
     - Skip upright rows due to the unnatural shoulder position.
-3. **Equipment Tips:**
+    - Skip Renegade rows
+    - Stop two reps before exercise failure alternate this depending how you feel.
+1. **Equipment Tips:**
     - Use **barbells** for added weight when building strength.
     - Use **dumbbells** for greater range of motion and correcting muscle imbalances.
     - Any **curlbar** exercise can be done with barbell.
@@ -71,6 +73,7 @@ series:
 #### **Protein Requirements:**
 1. **Daily Protein for Maintenance/Gain:** ~158 grams/day
 2. **Protein for Cutting (higher intake for muscle preservation):** ~237 grams/day
+
 ### Exercise Categories of Focus 
 1. **Explosive Power (Plyometric & Olympic Movements) - EP**
 	- Start with these to engage fast-twitch muscle fibers and improve explosive strength.
@@ -90,34 +93,35 @@ series:
 
 #todo/Personal/High
 - [ ] try creating chart from table 
-- [ ] Eaa over bcaa try looking into Eaa
+- [x] Eaa over bcaa try looking into Eaa ✅ 2024-12-29
 - [ ] Check New Weight limits 
 
 ![](https://www.youtube.com/watch?v=djj7QXZAIjM)
 
-| Body  | Machine                                                 | Position | Weight | Sets | Reps | Per Side | Range |
-| ----- | ------------------------------------------------------- | -------- | ------ | ---- | ---- | -------- | ----- |
-| Lower | Abductor Outer Thigh                                    | Squeeze  | *160*  | 3    | 10   | 160      | 7     |
-| Lower | Abduction Inner Thigh                                   | Spread   | *110*  | 3    | 10   | 110      | 0     |
-| Lower | Leg Press off Back Abductor                             | Wide     | *540*  | 3    | 10   | 270      | 0     |
-| Lower | Leg Press off Back Calf                                 | Toes     | *270*  | 3    | 10   | 135      | 0     |
-| Lower | Leg Press off Back Quads                                | Close    | *540*  | 3    | 10   | 270      | 0     |
-| Lower | Leg Press off Back G&H                                  | Heals    | *270*  | 3    | 10   | 135      | 0     |
-| Lower | Leg Press Seated                                        | UpClose  | *110*  | 3    | 5    | 110      | 0     |
-| Upper | Isolated Lateral Wide Chest                             | N/A      | *90*   | 3    | 5    | 45       | 0     |
-| Upper | Weighted Setead Row                                     | N/A      | *85*   | 3    | 5    | 42.5     | 0     |
-| Upper | Rear Delt Fly                                           | N/A      | *40*   | 3    | 10   | 40       | 0     |
-| Upper | [[Upper#^238b6e \|Chest Fly]]                           | N/A      | *70*   | 3    | 10   | 70       | 4     |
-| Upper | [[Upper#^a7be5a \|Cable Woodchopper]]                   | N/A      | 0      | 3    | 10   | 0        | 0     |
-| Upper | [[CableBalloonAbduction.gif \|Cable Balloon Abduction]] | N/A      | 0      | 3    | 10   | 0        | 0     |
-| Upper | [[CableFloorFly.gif \|Cable Floor Fly]]                 | N/A      | 0      | 3    | 10   | 0        | 0     |
-| Upper | [[CableWolverine.gif\|Cable Wolverine]]                 | N/A      | 0      | 3    | 10   | 0        | 0     |
-| Upper | Chest Press                                             | N/A      | 0      | 3    | 10   | 0        | 0     |
-| Upper | Shoulder Press                                          | N/A      | 0      | 3    | 10   | 0        | 0     |
-| Upper | Mid Row                                                 | N/A      | 0      | 3    | 10   | 0        | 0     |
-| Core  | [[Core#^b41212\| Leg Cable Reverse Crunch]]             | N/A      | 90     | 3    | 10   | 0        | 0     |
+| Body  | Machine                                                 | Position | Focus | Weight | Sets | Reps | Range | Per Side |
+| ----- | ------------------------------------------------------- | -------- | ----- | ------ | ---- | ---- | ----- | -------- |
+| Lower | Abductor Outer Thigh                                    | Squeeze  | CM    | *160*  | 3    | 10   | 7     | 160      |
+| Lower | Abduction Inner Thigh                                   | Spread   | CM    | *110*  | 3    | 10   | 0     | 110      |
+| Lower | Leg Press off Back Abductor                             | Wide     | CM    | *540*  | 3    | 10   | 0     | 270      |
+| Lower | Leg Press off Back Calf                                 | Toes     | CM    | *270*  | 3    | 10   | 0     | 135      |
+| Lower | Leg Press off Back Quads                                | Close    | CM    | *540*  | 3    | 10   | 0     | 270      |
+| Lower | Leg Press off Back G&H                                  | Heals    | CM    | *270*  | 3    | 10   | 0     | 135      |
+| Lower | Leg Press Seated                                        | UpClose  | CM    | *110*  | 3    | 5    | 0     | 110      |
+| Upper | Isolated Lateral Wide Chest                             | Wide     | CM    | *90*   | 3    | 5    | 0     | 45       |
+| Upper | Weighted Setead Row                                     | N/A      | PG    | *85*   | 3    | 5    | 0     | 42.5     |
+| Upper | Rear Delt Fly                                           | N/A      | CM    | *40*   | 3    | 10   | 0     | 40       |
+| Upper | [[Upper#^238b6e \|Chest Fly]]                           | N/A      | CM    | *70*   | 3    | 10   | 4     | 70       |
+| Upper | [[Upper#^a7be5a \|Cable Woodchopper]]                   | N/A      | RC    | 160    | 3    | 10   | 0     | 80       |
+| Upper | [[CableBalloonAbduction.gif \|Cable Balloon Abduction]] | N/A      | PG    | 160    | 3    | 10   | 0     | 80       |
+| Upper | [[CableFloorFly.gif \|Cable Floor Fly]]                 | N/A      | PG    | 160    | 3    | 10   | 0     | 80       |
+| Upper | [[CableWolverine.gif\|Cable Wolverine]]                 | N/A      | PG    | 160    | 3    | 10   | 0     | 80       |
+| Upper | Chest Press                                             | N/A      | CM    | 0      | 3    | 10   | 0     | 0        |
+| Upper | Shoulder Press                                          | N/A      | CM    | 0      | 3    | 10   | 0     | 0        |
+| Upper | Mid Row                                                 | N/A      | CM    | 0      | 3    | 10   | 0     | 0        |
+| Core  | [[Core#^b41212\| Leg Cable Reverse Crunch]]             | N/A      | RC    | 90     | 3    | 10   | 0     | 0        |
 ^machine
 
+non bold weight not verified based off tower 200 weights verify at gym 
 
 | Exercise                                      | Body  | Focus | Type       | W(lb/kg) | Sets | Reps |     |
 | --------------------------------------------- | ----- | ----- | ---------- | -------- | ---- | ---- | --- |
@@ -151,6 +155,12 @@ series:
 | Lower | [[Lower#^afd7a0 \|Lateral Skater Jumps]]    | EP     | Jump       | 0        | Jump     | 0            | **20**sec | 3    |
 | Lower | [[Lower#^aad169 \|Split Squat Jumps]]       | EP     | Jump       | 0        | Jump     | 0            | **20**sec | 3    |
 ^duration
+
+**Limit Combination Exercises (Weight and Endurance)**
+
+- **Purpose**: Prioritize strength and muscle growth.
+- **Strategy**: When focusing on gaining weight, it's important to prioritize weightlifting and muscle-building exercises over combining endurance movements with heavy lifting. Combining endurance exercises with weight training can decrease the overall intensity and focus needed for strength development.
+- **Recommendation**: Stick to pure weight training for muscle growth and use endurance exercises sparingly to avoid burning excessive calories or compromising muscle recovery.
 
 Experiment Button
 ```dataviewjs

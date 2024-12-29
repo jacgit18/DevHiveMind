@@ -20,7 +20,7 @@ dg-publish:
 	- ![](https://www.youtube.com/watch?v=8IYt7AtP8BI)
 - Farmer’s Walk(**Kettlebell** / _Barbell_) ^775bc4
 	- ![](https://www.youtube.com/watch?v=8OtwXwrJizk)
-- Renegade Row (**Kettlebell**/_**Dumbbell**_)
+- Renegade Row (**Kettlebell**/_**Dumbbell**_) - anti rotation if you don't wont a rotational exercise do
 	- ![](https://www.youtube.com/watch?v=bi1Nf5G86gU)
 - Kettlebell Swing ^bb1837
 	- ![](https://www.youtube.com/watch?v=YSxHifyI6s8)

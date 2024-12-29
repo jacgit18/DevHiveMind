@@ -98,7 +98,7 @@ Bond ETFs are seen as more volatile due to fluctuating market prices, making the
 - [ ] refine and  merge 
 - [ ] look into a little more 
 	- [ ] Annuities and bonds options  
-	- [ ] Index and mutual funds
+
 
 
 Based on expert insights, here are some recommendations and considerations for investment-grade corporate bonds as an exercise in financial strategy:  

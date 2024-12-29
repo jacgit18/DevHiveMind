@@ -58,7 +58,6 @@
     "#todo/med/gen",
     "#todo/low/dev/codingchallenge",
     "#todo/read/interview",
-    "#todo/perpetual",
     "#todo/low/research",
     "#todo/high/dev/codingchallenge",
     "#todo/med/dev/codingchallenge",
@@ -90,11 +89,16 @@
     "#todo/high/finishwatching",
     "#todo/high/refinethought/",
     "#todo/bau/interview/questions",
-    "#todo/cleanup",
     "#todo/bau/interview",
     "#todo/high/buisness",
     "#todo/med/medical",
-    "#todo/stocks"
+    "#todo/stocks",
+    "#todo/purchases/assets",
+    "#todo/email/options",
+    "#todo/life/research",
+    "#todo/notemerge",
+    "#todo/bau/streches",
+    "#todo/high/fin"
   ],
   "_hiddenTags": []
 }

@@ -11,6 +11,9 @@ Relates:
 Peer Reviewed: 0
 dg-publish:
 ---
+#todo/noteMerge 
+- [ ] combine with [[Breathing Guide]]
+
 ## Types of Exercise Movements  
   
 1. Descending (Eccentric Phase): Lowering the weight (e.g., lowering during a squat).  

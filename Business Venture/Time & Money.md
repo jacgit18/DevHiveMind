@@ -1,10 +1,11 @@
 
 
-Need to Update 
+#todo/cleanup 
+- [ ] clean or merge with other note
 
 ## Hours in a lifetime
 ***692,040
-#todo/Perpetual
+#todo/BAU 
 - [ ] Make morning appointments
 - Schedule Additional:
 	- [ ] 6 to 4 hours outside activities besides work

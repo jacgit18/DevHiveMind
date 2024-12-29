@@ -19,6 +19,7 @@
 - [ ] tax attorney
 - [ ] attorney  
 - [ ] Search for other  type of Brokers and attorneys  
+- [ ] You use Uber to get some people and be there personal drive on the side and bypass the app
 - [x] Why do a roth IRA conversion ✅ 2024-12-21
 - [ ] [https://www.capitalone.com/bank/cds/special-cd-rates/?06295_se002636=&gclid=CjwKCAiArY2fBhB9EiwAWqHK6vAZNWir7Io4ur8mrSwHlGhnpS6vopf2hVxxw1WiMtqZqHtaDPv5pRoCTGMQAvD_BwE&gclsrc=aw.ds](https://www.capitalone.com/bank/cds/special-cd-rates/?06295_se002636=&gclid=CjwKCAiArY2fBhB9EiwAWqHK6vAZNWir7Io4ur8mrSwHlGhnpS6vopf2hVxxw1WiMtqZqHtaDPv5pRoCTGMQAvD_BwE&gclsrc=aw.ds)
 
@@ -34,7 +35,9 @@
 - [ ] Look for seminars in new York  
 - [ ] Write off things as business expenses
 - [ ] liquidation store
-
+- [ ] Call credit card company to ask for limit increase talk to them about going on a trip also comparing your limit to other cards and wanting to get it closer to those limits and other potential purchases and stuff that gets them to want to increase your limit
+- [ ] Apply for cards that offer you stuff or offer you to apply them they tend to approve you as opposed to you reaching out but still can work
+Or create fear like saying your canceling
 
 
 

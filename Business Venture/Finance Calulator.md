@@ -32,6 +32,10 @@ monthlyPreTaxIncome: 5200
 
 - You can allocate a maximum of **$1,800** for meal prep, assuming bills are deferred until after June.
 
+Do the math 12 months times monthly cost  
+  
+Of employer insurance or personal insurance when determining extra money in negotiating
+
 ```dataviewjs
 const { IdealSalary, Days, TotalWeeks, Salary, WorkDays } = dv.current();
 const { AnnualHSA, MonthlyHSA, HDHP, monthlyPreTaxIncome } = dv.current();

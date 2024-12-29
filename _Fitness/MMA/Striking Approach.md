@@ -38,6 +38,8 @@ Use the **UFC game** to simulate and experiment with techniques and strategies.
 
 **Breathing in Range**
 - Exhale sharply when engaging to stay relaxed and generate power.
+- Exhale on impact when you get hit and as you tighten the part of your body being hit but not head if your rolling away from impact.
+- Inhale out of Range
 
 ### **2. Defense & Punch Timing**
 - **Defensive Hand Positioning**:

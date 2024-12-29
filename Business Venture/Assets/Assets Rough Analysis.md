@@ -97,7 +97,7 @@ Future breakdown to follow
 - 50% real estate 
 - 15% companies in terms of stocks 
 - 15% ETFs in terms of stock and 
-- 18% in terms of speculative this can be crypto also startup Investments then 
+- 18% in terms of speculative this can be crypto also startup Investments, Sports betting, then 
 - 2% gold
 
 Average median net worth for 30-year-old is $30,000  
