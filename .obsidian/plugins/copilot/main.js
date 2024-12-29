@@ -60011,62 +60011,6 @@ var require_browser3 = __commonJS({
   }
 });
 
-// node_modules/es-errors/index.js
-var require_es_errors = __commonJS({
-  "node_modules/es-errors/index.js"(exports, module2) {
-    "use strict";
-    module2.exports = Error;
-  }
-});
-
-// node_modules/es-errors/eval.js
-var require_eval = __commonJS({
-  "node_modules/es-errors/eval.js"(exports, module2) {
-    "use strict";
-    module2.exports = EvalError;
-  }
-});
-
-// node_modules/es-errors/range.js
-var require_range2 = __commonJS({
-  "node_modules/es-errors/range.js"(exports, module2) {
-    "use strict";
-    module2.exports = RangeError;
-  }
-});
-
-// node_modules/es-errors/ref.js
-var require_ref = __commonJS({
-  "node_modules/es-errors/ref.js"(exports, module2) {
-    "use strict";
-    module2.exports = ReferenceError;
-  }
-});
-
-// node_modules/es-errors/syntax.js
-var require_syntax = __commonJS({
-  "node_modules/es-errors/syntax.js"(exports, module2) {
-    "use strict";
-    module2.exports = SyntaxError;
-  }
-});
-
-// node_modules/es-errors/type.js
-var require_type = __commonJS({
-  "node_modules/es-errors/type.js"(exports, module2) {
-    "use strict";
-    module2.exports = TypeError;
-  }
-});
-
-// node_modules/es-errors/uri.js
-var require_uri2 = __commonJS({
-  "node_modules/es-errors/uri.js"(exports, module2) {
-    "use strict";
-    module2.exports = URIError;
-  }
-});
-
 // node_modules/has-symbols/shams.js
 var require_shams = __commonJS({
   "node_modules/has-symbols/shams.js"(exports, module2) {
@@ -60139,21 +60083,6 @@ var require_has_symbols = __commonJS({
         return false;
       }
       return hasSymbolSham();
-    };
-  }
-});
-
-// node_modules/has-proto/index.js
-var require_has_proto = __commonJS({
-  "node_modules/has-proto/index.js"(exports, module2) {
-    "use strict";
-    var test = {
-      __proto__: null,
-      foo: {}
-    };
-    var $Object = Object;
-    module2.exports = function hasProto() {
-      return { __proto__: test }.foo === test.foo && !(test instanceof $Object);
     };
   }
 });
@@ -60243,14 +60172,12 @@ var require_function_bind = __commonJS({
   }
 });
 
-// node_modules/hasown/index.js
-var require_hasown = __commonJS({
-  "node_modules/hasown/index.js"(exports, module2) {
+// node_modules/has/src/index.js
+var require_src = __commonJS({
+  "node_modules/has/src/index.js"(exports, module2) {
     "use strict";
-    var call = Function.prototype.call;
-    var $hasOwn = Object.prototype.hasOwnProperty;
     var bind2 = require_function_bind();
-    module2.exports = bind2.call(call, $hasOwn);
+    module2.exports = bind2.call(Function.call, Object.prototype.hasOwnProperty);
   }
 });
 
@@ -60259,14 +60186,9 @@ var require_get_intrinsic = __commonJS({
   "node_modules/get-intrinsic/index.js"(exports, module2) {
     "use strict";
     var undefined2;
-    var $Error = require_es_errors();
-    var $EvalError = require_eval();
-    var $RangeError = require_range2();
-    var $ReferenceError = require_ref();
-    var $SyntaxError = require_syntax();
-    var $TypeError = require_type();
-    var $URIError = require_uri2();
+    var $SyntaxError = SyntaxError;
     var $Function = Function;
+    var $TypeError = TypeError;
     var getEvalledConstructor = function(expressionSyntax) {
       try {
         return $Function('"use strict"; return (' + expressionSyntax + ").constructor;")();
@@ -60297,18 +60219,16 @@ var require_get_intrinsic = __commonJS({
       }
     }() : throwTypeError;
     var hasSymbols = require_has_symbols()();
-    var hasProto = require_has_proto()();
-    var getProto = Object.getPrototypeOf || (hasProto ? function(x2) {
+    var getProto = Object.getPrototypeOf || function(x2) {
       return x2.__proto__;
-    } : null);
+    };
     var needsEval = {};
-    var TypedArray = typeof Uint8Array === "undefined" || !getProto ? undefined2 : getProto(Uint8Array);
+    var TypedArray = typeof Uint8Array === "undefined" ? undefined2 : getProto(Uint8Array);
     var INTRINSICS = {
-      __proto__: null,
       "%AggregateError%": typeof AggregateError === "undefined" ? undefined2 : AggregateError,
       "%Array%": Array,
       "%ArrayBuffer%": typeof ArrayBuffer === "undefined" ? undefined2 : ArrayBuffer,
-      "%ArrayIteratorPrototype%": hasSymbols && getProto ? getProto([][Symbol.iterator]()) : undefined2,
+      "%ArrayIteratorPrototype%": hasSymbols ? getProto([][Symbol.iterator]()) : undefined2,
       "%AsyncFromSyncIteratorPrototype%": undefined2,
       "%AsyncFunction%": needsEval,
       "%AsyncGenerator%": needsEval,
@@ -60325,10 +60245,10 @@ var require_get_intrinsic = __commonJS({
       "%decodeURIComponent%": decodeURIComponent,
       "%encodeURI%": encodeURI,
       "%encodeURIComponent%": encodeURIComponent,
-      "%Error%": $Error,
+      "%Error%": Error,
       "%eval%": eval,
       // eslint-disable-line no-eval
-      "%EvalError%": $EvalError,
+      "%EvalError%": EvalError,
       "%Float32Array%": typeof Float32Array === "undefined" ? undefined2 : Float32Array,
       "%Float64Array%": typeof Float64Array === "undefined" ? undefined2 : Float64Array,
       "%FinalizationRegistry%": typeof FinalizationRegistry === "undefined" ? undefined2 : FinalizationRegistry,
@@ -60339,10 +60259,10 @@ var require_get_intrinsic = __commonJS({
       "%Int32Array%": typeof Int32Array === "undefined" ? undefined2 : Int32Array,
       "%isFinite%": isFinite,
       "%isNaN%": isNaN,
-      "%IteratorPrototype%": hasSymbols && getProto ? getProto(getProto([][Symbol.iterator]())) : undefined2,
+      "%IteratorPrototype%": hasSymbols ? getProto(getProto([][Symbol.iterator]())) : undefined2,
       "%JSON%": typeof JSON === "object" ? JSON : undefined2,
       "%Map%": typeof Map === "undefined" ? undefined2 : Map,
-      "%MapIteratorPrototype%": typeof Map === "undefined" || !hasSymbols || !getProto ? undefined2 : getProto((/* @__PURE__ */ new Map())[Symbol.iterator]()),
+      "%MapIteratorPrototype%": typeof Map === "undefined" || !hasSymbols ? undefined2 : getProto((/* @__PURE__ */ new Map())[Symbol.iterator]()),
       "%Math%": Math,
       "%Number%": Number,
       "%Object%": Object,
@@ -60350,15 +60270,15 @@ var require_get_intrinsic = __commonJS({
       "%parseInt%": parseInt,
       "%Promise%": typeof Promise === "undefined" ? undefined2 : Promise,
       "%Proxy%": typeof Proxy === "undefined" ? undefined2 : Proxy,
-      "%RangeError%": $RangeError,
-      "%ReferenceError%": $ReferenceError,
+      "%RangeError%": RangeError,
+      "%ReferenceError%": ReferenceError,
       "%Reflect%": typeof Reflect === "undefined" ? undefined2 : Reflect,
       "%RegExp%": RegExp,
       "%Set%": typeof Set === "undefined" ? undefined2 : Set,
-      "%SetIteratorPrototype%": typeof Set === "undefined" || !hasSymbols || !getProto ? undefined2 : getProto((/* @__PURE__ */ new Set())[Symbol.iterator]()),
+      "%SetIteratorPrototype%": typeof Set === "undefined" || !hasSymbols ? undefined2 : getProto((/* @__PURE__ */ new Set())[Symbol.iterator]()),
       "%SharedArrayBuffer%": typeof SharedArrayBuffer === "undefined" ? undefined2 : SharedArrayBuffer,
       "%String%": String,
-      "%StringIteratorPrototype%": hasSymbols && getProto ? getProto(""[Symbol.iterator]()) : undefined2,
+      "%StringIteratorPrototype%": hasSymbols ? getProto(""[Symbol.iterator]()) : undefined2,
       "%Symbol%": hasSymbols ? Symbol : undefined2,
       "%SyntaxError%": $SyntaxError,
       "%ThrowTypeError%": ThrowTypeError,
@@ -60368,18 +60288,16 @@ var require_get_intrinsic = __commonJS({
       "%Uint8ClampedArray%": typeof Uint8ClampedArray === "undefined" ? undefined2 : Uint8ClampedArray,
       "%Uint16Array%": typeof Uint16Array === "undefined" ? undefined2 : Uint16Array,
       "%Uint32Array%": typeof Uint32Array === "undefined" ? undefined2 : Uint32Array,
-      "%URIError%": $URIError,
+      "%URIError%": URIError,
       "%WeakMap%": typeof WeakMap === "undefined" ? undefined2 : WeakMap,
       "%WeakRef%": typeof WeakRef === "undefined" ? undefined2 : WeakRef,
       "%WeakSet%": typeof WeakSet === "undefined" ? undefined2 : WeakSet
     };
-    if (getProto) {
-      try {
-        null.error;
-      } catch (e3) {
-        errorProto = getProto(getProto(e3));
-        INTRINSICS["%Error.prototype%"] = errorProto;
-      }
+    try {
+      null.error;
+    } catch (e3) {
+      errorProto = getProto(getProto(e3));
+      INTRINSICS["%Error.prototype%"] = errorProto;
     }
     var errorProto;
     var doEval = function doEval2(name) {
@@ -60397,7 +60315,7 @@ var require_get_intrinsic = __commonJS({
         }
       } else if (name === "%AsyncIteratorPrototype%") {
         var gen = doEval2("%AsyncGenerator%");
-        if (gen && getProto) {
+        if (gen) {
           value = getProto(gen.prototype);
         }
       }
@@ -60405,7 +60323,6 @@ var require_get_intrinsic = __commonJS({
       return value;
     };
     var LEGACY_ALIASES = {
-      __proto__: null,
       "%ArrayBufferPrototype%": ["ArrayBuffer", "prototype"],
       "%ArrayPrototype%": ["Array", "prototype"],
       "%ArrayProto_entries%": ["Array", "prototype", "entries"],
@@ -60459,7 +60376,7 @@ var require_get_intrinsic = __commonJS({
       "%WeakSetPrototype%": ["WeakSet", "prototype"]
     };
     var bind2 = require_function_bind();
-    var hasOwn4 = require_hasown();
+    var hasOwn4 = require_src();
     var $concat = bind2.call(Function.call, Array.prototype.concat);
     var $spliceApply = bind2.call(Function.apply, Array.prototype.splice);
     var $replace = bind2.call(Function.call, String.prototype.replace);
@@ -60568,186 +60485,38 @@ var require_get_intrinsic = __commonJS({
   }
 });
 
-// node_modules/es-define-property/index.js
-var require_es_define_property = __commonJS({
-  "node_modules/es-define-property/index.js"(exports, module2) {
-    "use strict";
-    var GetIntrinsic = require_get_intrinsic();
-    var $defineProperty = GetIntrinsic("%Object.defineProperty%", true) || false;
-    if ($defineProperty) {
-      try {
-        $defineProperty({}, "a", { value: 1 });
-      } catch (e3) {
-        $defineProperty = false;
-      }
-    }
-    module2.exports = $defineProperty;
-  }
-});
-
-// node_modules/gopd/index.js
-var require_gopd = __commonJS({
-  "node_modules/gopd/index.js"(exports, module2) {
-    "use strict";
-    var GetIntrinsic = require_get_intrinsic();
-    var $gOPD = GetIntrinsic("%Object.getOwnPropertyDescriptor%", true);
-    if ($gOPD) {
-      try {
-        $gOPD([], "length");
-      } catch (e3) {
-        $gOPD = null;
-      }
-    }
-    module2.exports = $gOPD;
-  }
-});
-
-// node_modules/define-data-property/index.js
-var require_define_data_property = __commonJS({
-  "node_modules/define-data-property/index.js"(exports, module2) {
-    "use strict";
-    var $defineProperty = require_es_define_property();
-    var $SyntaxError = require_syntax();
-    var $TypeError = require_type();
-    var gopd = require_gopd();
-    module2.exports = function defineDataProperty(obj, property, value) {
-      if (!obj || typeof obj !== "object" && typeof obj !== "function") {
-        throw new $TypeError("`obj` must be an object or a function`");
-      }
-      if (typeof property !== "string" && typeof property !== "symbol") {
-        throw new $TypeError("`property` must be a string or a symbol`");
-      }
-      if (arguments.length > 3 && typeof arguments[3] !== "boolean" && arguments[3] !== null) {
-        throw new $TypeError("`nonEnumerable`, if provided, must be a boolean or null");
-      }
-      if (arguments.length > 4 && typeof arguments[4] !== "boolean" && arguments[4] !== null) {
-        throw new $TypeError("`nonWritable`, if provided, must be a boolean or null");
-      }
-      if (arguments.length > 5 && typeof arguments[5] !== "boolean" && arguments[5] !== null) {
-        throw new $TypeError("`nonConfigurable`, if provided, must be a boolean or null");
-      }
-      if (arguments.length > 6 && typeof arguments[6] !== "boolean") {
-        throw new $TypeError("`loose`, if provided, must be a boolean");
-      }
-      var nonEnumerable = arguments.length > 3 ? arguments[3] : null;
-      var nonWritable = arguments.length > 4 ? arguments[4] : null;
-      var nonConfigurable = arguments.length > 5 ? arguments[5] : null;
-      var loose = arguments.length > 6 ? arguments[6] : false;
-      var desc = !!gopd && gopd(obj, property);
-      if ($defineProperty) {
-        $defineProperty(obj, property, {
-          configurable: nonConfigurable === null && desc ? desc.configurable : !nonConfigurable,
-          enumerable: nonEnumerable === null && desc ? desc.enumerable : !nonEnumerable,
-          value,
-          writable: nonWritable === null && desc ? desc.writable : !nonWritable
-        });
-      } else if (loose || !nonEnumerable && !nonWritable && !nonConfigurable) {
-        obj[property] = value;
-      } else {
-        throw new $SyntaxError("This environment does not support defining a property as non-configurable, non-writable, or non-enumerable.");
-      }
-    };
-  }
-});
-
-// node_modules/has-property-descriptors/index.js
-var require_has_property_descriptors = __commonJS({
-  "node_modules/has-property-descriptors/index.js"(exports, module2) {
-    "use strict";
-    var $defineProperty = require_es_define_property();
-    var hasPropertyDescriptors = function hasPropertyDescriptors2() {
-      return !!$defineProperty;
-    };
-    hasPropertyDescriptors.hasArrayLengthDefineBug = function hasArrayLengthDefineBug() {
-      if (!$defineProperty) {
-        return null;
-      }
-      try {
-        return $defineProperty([], "length", { value: 1 }).length !== 1;
-      } catch (e3) {
-        return true;
-      }
-    };
-    module2.exports = hasPropertyDescriptors;
-  }
-});
-
-// node_modules/set-function-length/index.js
-var require_set_function_length = __commonJS({
-  "node_modules/set-function-length/index.js"(exports, module2) {
-    "use strict";
-    var GetIntrinsic = require_get_intrinsic();
-    var define2 = require_define_data_property();
-    var hasDescriptors = require_has_property_descriptors()();
-    var gOPD = require_gopd();
-    var $TypeError = require_type();
-    var $floor = GetIntrinsic("%Math.floor%");
-    module2.exports = function setFunctionLength(fn, length) {
-      if (typeof fn !== "function") {
-        throw new $TypeError("`fn` is not a function");
-      }
-      if (typeof length !== "number" || length < 0 || length > 4294967295 || $floor(length) !== length) {
-        throw new $TypeError("`length` must be a positive 32-bit integer");
-      }
-      var loose = arguments.length > 2 && !!arguments[2];
-      var functionLengthIsConfigurable = true;
-      var functionLengthIsWritable = true;
-      if ("length" in fn && gOPD) {
-        var desc = gOPD(fn, "length");
-        if (desc && !desc.configurable) {
-          functionLengthIsConfigurable = false;
-        }
-        if (desc && !desc.writable) {
-          functionLengthIsWritable = false;
-        }
-      }
-      if (functionLengthIsConfigurable || functionLengthIsWritable || !loose) {
-        if (hasDescriptors) {
-          define2(
-            /** @type {Parameters<define>[0]} */
-            fn,
-            "length",
-            length,
-            true,
-            true
-          );
-        } else {
-          define2(
-            /** @type {Parameters<define>[0]} */
-            fn,
-            "length",
-            length
-          );
-        }
-      }
-      return fn;
-    };
-  }
-});
-
 // node_modules/call-bind/index.js
 var require_call_bind = __commonJS({
   "node_modules/call-bind/index.js"(exports, module2) {
     "use strict";
     var bind2 = require_function_bind();
     var GetIntrinsic = require_get_intrinsic();
-    var setFunctionLength = require_set_function_length();
-    var $TypeError = require_type();
     var $apply = GetIntrinsic("%Function.prototype.apply%");
     var $call = GetIntrinsic("%Function.prototype.call%");
     var $reflectApply = GetIntrinsic("%Reflect.apply%", true) || bind2.call($call, $apply);
-    var $defineProperty = require_es_define_property();
+    var $gOPD = GetIntrinsic("%Object.getOwnPropertyDescriptor%", true);
+    var $defineProperty = GetIntrinsic("%Object.defineProperty%", true);
     var $max = GetIntrinsic("%Math.max%");
-    module2.exports = function callBind(originalFunction) {
-      if (typeof originalFunction !== "function") {
-        throw new $TypeError("a function is required");
+    if ($defineProperty) {
+      try {
+        $defineProperty({}, "a", { value: 1 });
+      } catch (e3) {
+        $defineProperty = null;
       }
+    }
+    module2.exports = function callBind(originalFunction) {
       var func = $reflectApply(bind2, $call, arguments);
-      return setFunctionLength(
-        func,
-        1 + $max(0, originalFunction.length - (arguments.length - 1)),
-        true
-      );
+      if ($gOPD && $defineProperty) {
+        var desc = $gOPD(func, "length");
+        if (desc.configurable) {
+          $defineProperty(
+            func,
+            "length",
+            { value: 1 + $max(0, originalFunction.length - (arguments.length - 1)) }
+          );
+        }
+      }
+      return func;
     };
     var applyBind = function applyBind2() {
       return $reflectApply(bind2, $apply, arguments);
@@ -60840,19 +60609,9 @@ var require_object_inspect = __commonJS({
     var utilInspect = require_util4();
     var inspectCustom = utilInspect.custom;
     var inspectSymbol = isSymbol(inspectCustom) ? inspectCustom : null;
-    var quotes = {
-      __proto__: null,
-      "double": '"',
-      single: "'"
-    };
-    var quoteREs = {
-      __proto__: null,
-      "double": /(["\\])/g,
-      single: /(['\\])/g
-    };
     module2.exports = function inspect_(obj, options, depth, seen) {
       var opts = options || {};
-      if (has2(opts, "quoteStyle") && !has2(quotes, opts.quoteStyle)) {
+      if (has2(opts, "quoteStyle") && (opts.quoteStyle !== "single" && opts.quoteStyle !== "double")) {
         throw new TypeError('option "quoteStyle" must be "single" or "double"');
       }
       if (has2(opts, "maxStringLength") && (typeof opts.maxStringLength === "number" ? opts.maxStringLength < 0 && opts.maxStringLength !== Infinity : opts.maxStringLength !== null)) {
@@ -61009,12 +60768,6 @@ var require_object_inspect = __commonJS({
       if (isString2(obj)) {
         return markBoxed(inspect(String(obj)));
       }
-      if (typeof window !== "undefined" && obj === window) {
-        return "{ [object Window] }";
-      }
-      if (typeof globalThis !== "undefined" && obj === globalThis || typeof window !== "undefined" && obj === window) {
-        return "{ [object globalThis] }";
-      }
       if (!isDate2(obj) && !isRegExp(obj)) {
         var ys = arrObjKeys(obj, inspect);
         var isPlainObject = gPO ? gPO(obj) === Object.prototype : obj instanceof Object || obj.constructor === Object;
@@ -61033,8 +60786,7 @@ var require_object_inspect = __commonJS({
       return String(obj);
     };
     function wrapQuotes(s4, defaultStyle, opts) {
-      var style = opts.quoteStyle || defaultStyle;
-      var quoteChar = quotes[style];
+      var quoteChar = (opts.quoteStyle || defaultStyle) === "double" ? '"' : "'";
       return quoteChar + s4 + quoteChar;
     }
     function quote(s4) {
@@ -61209,9 +60961,7 @@ var require_object_inspect = __commonJS({
         var trailer = "... " + remaining + " more character" + (remaining > 1 ? "s" : "");
         return inspectString($slice.call(str2, 0, opts.maxStringLength), opts) + trailer;
       }
-      var quoteRE = quoteREs[opts.quoteStyle || "single"];
-      quoteRE.lastIndex = 0;
-      var s4 = $replace.call($replace.call(str2, quoteRE, "\\$1"), /[\x00-\x1f]/g, lowbyte);
+      var s4 = $replace.call($replace.call(str2, /(['\\])/g, "\\$1"), /[\x00-\x1f]/g, lowbyte);
       return wrapQuotes(s4, "single", opts);
     }
     function lowbyte(c4) {
@@ -115013,7 +114763,9 @@ var DEFAULT_SYSTEM_PROMPT = `You are Obsidian Copilot, a helpful assistant that 
   3. If the user mentions "note", it most likely means an Obsidian note in the vault, not the generic meaning of a note.
   4. If the user mentions "@vault", it means the user wants you to search the Obsidian vault for information relevant to the query. The search results will be provided to you in the context. If there's no relevant information in the vault, just say so.
   5. If the user mentions any other tool with the @ symbol, check the context for their results. If nothing is found, just ignore the @ symbol in the query.
-  6. Always respond in the language of the user's query.`;
+  6. Always use $'s instead of \\[ etc. for LaTeX equations.
+  7. Always respond in the language of the user's query.
+  Do not mention the additional context provided if it's irrelevant to the user message.`;
 var EMPTY_INDEX_ERROR_MESSAGE = "Copilot index does not exist. Please index your vault first!\n\n1. Set a working embedding model in QA settings. If it's not a local model, don't forget to set the API key. \n\n2. Click 'Refresh Index for Vault' and wait for indexing to complete. If you encounter the rate limiting error, please turn your request per second down in QA setting.";
 var CHUNK_SIZE = 4e3;
 var CONTEXT_SCORE_THRESHOLD = 0.4;
@@ -115109,9 +114861,18 @@ var EmbeddingModelProviders = /* @__PURE__ */ ((EmbeddingModelProviders2) => {
   EmbeddingModelProviders2["OLLAMA"] = "ollama";
   EmbeddingModelProviders2["LM_STUDIO"] = "lm-studio";
   EmbeddingModelProviders2["OPENAI_FORMAT"] = "3rd party (openai-format)";
+  EmbeddingModelProviders2["COPILOT_PLUS"] = "copilot-plus";
   return EmbeddingModelProviders2;
 })(EmbeddingModelProviders || {});
 var BUILTIN_EMBEDDING_MODELS = [
+  {
+    name: "copilot-plus-small" /* COPILOT_PLUS_SMALL */,
+    provider: "copilot-plus" /* COPILOT_PLUS */,
+    enabled: true,
+    isBuiltIn: true,
+    isEmbeddingModel: true,
+    core: true
+  },
   {
     name: "text-embedding-3-small" /* OPENAI_EMBEDDING_SMALL */,
     provider: "openai" /* OPENAI */,
@@ -115190,7 +114951,7 @@ var DEFAULT_SETTINGS = {
   openRouterAiApiKey: "",
   defaultChainType: "llm_chain" /* LLM_CHAIN */,
   defaultModelKey: "gpt-4o" /* GPT_4o */ + "|" + "openai" /* OPENAI */,
-  embeddingModelKey: "text-embedding-3-small" /* OPENAI_EMBEDDING_SMALL */ + "|" + "openai" /* OPENAI */,
+  embeddingModelKey: "copilot-plus-small" /* COPILOT_PLUS_SMALL */ + "|" + "copilot-plus" /* COPILOT_PLUS */,
   temperature: 0.1,
   maxTokens: 1e3,
   contextTurns: 15,
@@ -129889,6 +129650,7 @@ Object.defineProperty(DallEAPIWrapper, "toolName", {
 // src/LLMProviders/embeddingManager.ts
 var import_obsidian5 = require("obsidian");
 var EMBEDDING_PROVIDER_CONSTRUCTORS = {
+  ["copilot-plus" /* COPILOT_PLUS */]: OpenAIEmbeddings,
   ["openai" /* OPENAI */]: OpenAIEmbeddings,
   ["cohereai" /* COHEREAI */]: CohereEmbeddings,
   ["google" /* GOOGLE */]: GoogleGenerativeAIEmbeddings,
@@ -129900,6 +129662,7 @@ var EMBEDDING_PROVIDER_CONSTRUCTORS = {
 var EmbeddingManager = class {
   constructor() {
     this.providerApiKeyMap = {
+      ["copilot-plus" /* COPILOT_PLUS */]: () => getSettings().plusLicenseKey,
       ["openai" /* OPENAI */]: () => getSettings().openAIApiKey,
       ["cohereai" /* COHEREAI */]: () => getSettings().cohereApiKey,
       ["google" /* GOOGLE */]: () => getSettings().googleApiKey,
@@ -130002,6 +129765,15 @@ var EmbeddingManager = class {
       maxConcurrency: 3
     };
     const providerConfig = {
+      ["copilot-plus" /* COPILOT_PLUS */]: {
+        modelName,
+        apiKey: getDecryptedKey(settings.plusLicenseKey),
+        timeout: 1e4,
+        configuration: {
+          baseURL: BREVILABS_API_BASE_URL,
+          fetch: customModel.enableCors ? safeFetch : void 0
+        }
+      },
       ["openai" /* OPENAI */]: {
         modelName,
         openAIApiKey: getDecryptedKey(customModel.apiKey || settings.openAIApiKey),
@@ -134300,7 +134072,6 @@ var ChunkedStorage = class {
   async saveDatabase(db) {
     try {
       const rawData = await save5(db);
-      const documents = await DBOperations.getAllDocuments(db);
       const numPartitions = getSettings().numPartitions;
       if (numPartitions === 1) {
         const legacyPath = this.getLegacyPath();
@@ -134309,16 +134080,17 @@ var ChunkedStorage = class {
           legacyPath,
           JSON.stringify({
             ...rawData,
-            documents,
             schema: db.schema
           })
         );
         return;
       }
+      const docsData = rawData.docs?.docs;
+      const rawDocs = Array.isArray(docsData) ? docsData : Object.values(docsData || {});
       if (getSettings().debug) {
-        console.log(`Starting save with ${documents.length} total documents`);
+        console.log(`Starting save with ${rawDocs.length ?? 0} total documents`);
       }
-      if (!documents || documents.length === 0) {
+      if (!rawDocs || rawDocs.length === 0) {
         const metadata2 = {
           numPartitions,
           vectorLength: db.schema.embedding.match(/\d+/)[0],
@@ -134326,51 +134098,69 @@ var ChunkedStorage = class {
           lastModified: Date.now(),
           documentPartitions: {}
         };
-        const metadataPath2 = this.getMetadataPath();
-        await this.ensureDirectoryExists(metadataPath2);
-        await this.app.vault.adapter.write(metadataPath2, JSON.stringify(metadata2));
+        const metadataPath = this.getMetadataPath();
+        await this.ensureDirectoryExists(metadataPath);
+        await this.app.vault.adapter.write(metadataPath, JSON.stringify(metadata2));
         if (getSettings().debug) {
           console.log("Saved empty database state");
         }
         return;
       }
-      const partitions = this.distributeDocumentsToPartitions(documents, numPartitions);
+      const partitions = this.distributeDocumentsToPartitions(rawDocs, numPartitions);
       const metadata = {
         numPartitions,
         vectorLength: db.schema.embedding.match(/\d+/)[0],
         schema: db.schema,
         lastModified: Date.now(),
         documentPartitions: Object.fromEntries(
-          documents.map((doc) => [doc.id, this.assignDocumentToPartition(doc.id, numPartitions)])
+          rawDocs.map((doc) => [doc.id, this.assignDocumentToPartition(doc.id, numPartitions)])
         )
       };
-      const metadataPath = this.getMetadataPath();
-      await this.ensureDirectoryExists(metadataPath);
-      await this.app.vault.adapter.write(metadataPath, JSON.stringify(metadata));
+      await this.saveMetadata(metadata);
+      const globalData = {
+        ...rawData,
+        docs: { docs: {}, count: 0 },
+        index: {
+          ...rawData.index,
+          vectorIndexes: void 0
+        }
+      };
       for (const [partitionIndex, docs] of partitions.entries()) {
         const partitionData = {
-          ...rawData,
-          documents: docs
+          index: {
+            vectorIndexes: {
+              embedding: {
+                size: rawData.index.vectorIndexes.embedding.size,
+                vectors: Object.fromEntries(
+                  Object.entries(rawData.index.vectorIndexes.embedding.vectors).filter(
+                    ([id]) => docs.some((doc) => doc.id === id)
+                  )
+                )
+              }
+            }
+          },
+          docs: {
+            docs: Object.fromEntries(docs.map((doc, index2) => [(index2 + 1).toString(), doc])),
+            count: docs.length
+          }
         };
+        const finalPartitionData = partitionIndex === 0 ? {
+          ...globalData,
+          docs: partitionData.docs,
+          index: {
+            ...globalData.index,
+            vectorIndexes: partitionData.index.vectorIndexes
+          }
+        } : partitionData;
         const chunkPath = this.getChunkPath(partitionIndex);
         await this.ensureDirectoryExists(chunkPath);
-        await this.app.vault.adapter.write(chunkPath, JSON.stringify(partitionData));
+        await this.app.vault.adapter.write(chunkPath, JSON.stringify(finalPartitionData));
         if (getSettings().debug) {
           console.log(`Saved partition ${partitionIndex + 1}/${numPartitions}`);
         }
       }
-      let savedTotal = 0;
-      for (let i3 = 0; i3 < numPartitions; i3++) {
-        const chunkPath = this.getChunkPath(i3);
-        const chunkData = JSON.parse(await this.app.vault.adapter.read(chunkPath));
-        savedTotal += chunkData.documents.length;
-      }
       if (getSettings().debug) {
-        if (savedTotal !== documents.length) {
-          console.error(
-            `Document count mismatch during save! Original: ${documents.length}, Saved: ${savedTotal}`
-          );
-        }
+        console.log("Saved all partitions");
       }
     } catch (error) {
       console.error(`Error saving database:`, error);
@@ -134397,14 +134187,7 @@ var ChunkedStorage = class {
         await load5(newDb2, legacyData);
         return newDb2;
       }
-      const metadataPath = this.getMetadataPath();
-      if (!await this.app.vault.adapter.exists(metadataPath)) {
-        throw new CustomError("No existing database found");
-      }
-      const metadata = JSON.parse(await this.app.vault.adapter.read(metadataPath));
-      if (!metadata?.schema) {
-        throw new CustomError("Invalid metadata file: missing schema");
-      }
+      const metadata = await this.loadMetadata();
       const newDb = await create8({
         schema: metadata.schema,
         components: {
@@ -134414,18 +134197,39 @@ var ChunkedStorage = class {
           }
         }
       });
+      let mergedData = null;
+      const allChunks = [];
       for (let i3 = 0; i3 < metadata.numPartitions; i3++) {
         const chunkPath = this.getChunkPath(i3);
         if (await this.app.vault.adapter.exists(chunkPath)) {
           const chunkData = JSON.parse(await this.app.vault.adapter.read(chunkPath));
-          if (chunkData) {
-            await load5(newDb, chunkData);
-            if (getSettings().debug) {
-              console.log(`Loaded partition ${i3 + 1}/${metadata.numPartitions}`);
-            }
+          allChunks.push(chunkData);
+          if (i3 === 0) {
+            mergedData = chunkData;
           }
         }
       }
+      if (!mergedData) {
+        throw new CustomError("No data found in chunks");
+      }
+      const orderedDocs = {};
+      let nextDocId = 1;
+      for (const internalId of mergedData.internalDocumentIDStore.internalIdToId) {
+        const doc = allChunks.flatMap((chunk) => Object.values(chunk.docs.docs)).find((doc2) => doc2.id === internalId);
+        if (doc) {
+          orderedDocs[nextDocId.toString()] = doc;
+          nextDocId++;
+        } else if (getSettings().debug) {
+          console.warn(`Document ${internalId} not found in any chunk`);
+        }
+      }
+      mergedData.docs.docs = orderedDocs;
+      mergedData.docs.count = Object.keys(orderedDocs).length;
+      mergedData.index.vectorIndexes.embedding.vectors = Object.assign(
+        {},
+        ...allChunks.map((chunk) => chunk.index?.vectorIndexes?.embedding?.vectors || {})
+      );
+      await load5(newDb, mergedData);
       return newDb;
     } catch (error) {
       console.error(`Error loading database:`, error);
@@ -134456,6 +134260,24 @@ var ChunkedStorage = class {
     }
     const metadataPath = this.getMetadataPath();
     return await this.app.vault.adapter.exists(metadataPath) || await this.app.vault.adapter.exists(legacyPath);
+  }
+  // Helper method to load metadata
+  async loadMetadata() {
+    const metadataPath = this.getMetadataPath();
+    if (!await this.app.vault.adapter.exists(metadataPath)) {
+      throw new CustomError("No existing database found");
+    }
+    const metadata = JSON.parse(await this.app.vault.adapter.read(metadataPath));
+    if (!metadata?.schema) {
+      throw new CustomError("Invalid metadata file: missing schema");
+    }
+    return metadata;
+  }
+  // Helper method to save metadata
+  async saveMetadata(metadata) {
+    const metadataPath = this.getMetadataPath();
+    await this.ensureDirectoryExists(metadataPath);
+    await this.app.vault.adapter.write(metadataPath, JSON.stringify(metadata));
   }
 };
 
@@ -134876,7 +134698,8 @@ var DBOperations = class {
   static async getAllDocuments(db) {
     const result = await search2(db, {
       term: "",
-      limit: 1e5
+      limit: 1e5,
+      includeVectors: true
     });
     return result.hits.map((hit) => hit.document);
   }
@@ -158695,7 +158518,7 @@ var Content23 = TooltipContent;
 
 // src/components/chat-components/TooltipActionButton.tsx
 function TooltipActionButton({ onClick, Icon: Icon2, children }) {
-  return /* @__PURE__ */ import_react7.default.createElement(Root33, null, /* @__PURE__ */ import_react7.default.createElement(Trigger2, { asChild: true }, /* @__PURE__ */ import_react7.default.createElement("button", { className: "chat-icon-button clickable-icon", onClick }, Icon2)), /* @__PURE__ */ import_react7.default.createElement(Portal3, null, /* @__PURE__ */ import_react7.default.createElement(Content23, { sideOffset: 5, className: "tooltip-text" }, children)));
+  return /* @__PURE__ */ import_react7.default.createElement(Root33, null, /* @__PURE__ */ import_react7.default.createElement(Trigger2, { asChild: true }, /* @__PURE__ */ import_react7.default.createElement("button", { className: "chat-icon-button clickable-icon", onClick }, Icon2)), /* @__PURE__ */ import_react7.default.createElement(Portal3, { container: activeDocument.body }, /* @__PURE__ */ import_react7.default.createElement(Content23, { sideOffset: 5, className: "tooltip-text" }, children)));
 }
 
 // src/components/modals/AddContextNoteModal.tsx
@@ -158914,7 +158737,7 @@ var ChatControls = ({
       Icon: /* @__PURE__ */ import_react10.default.createElement(Puzzle, { className: "icon-scaler" })
     },
     "Refresh Index for Vault"
-  ), /* @__PURE__ */ import_react10.default.createElement("div", { className: "chat-icon-selection-tooltip" }, /* @__PURE__ */ import_react10.default.createElement(Root22, null, /* @__PURE__ */ import_react10.default.createElement(Trigger, { className: "chain-select-button" }, selectedChain === "llm_chain" /* LLM_CHAIN */ && "chat", selectedChain === "vault_qa" /* VAULT_QA_CHAIN */ && "vault QA (basic)", selectedChain === "copilot_plus" /* COPILOT_PLUS_CHAIN */ && "copilot plus (alpha)", /* @__PURE__ */ import_react10.default.createElement(ChevronDown, { size: 10 })), /* @__PURE__ */ import_react10.default.createElement(Portal22, null, /* @__PURE__ */ import_react10.default.createElement(Content22, { className: "chain-select-content", align: "end", sideOffset: 5 }, /* @__PURE__ */ import_react10.default.createElement(
+  ), /* @__PURE__ */ import_react10.default.createElement("div", { className: "chat-icon-selection-tooltip" }, /* @__PURE__ */ import_react10.default.createElement(Root22, null, /* @__PURE__ */ import_react10.default.createElement(Trigger, { className: "chain-select-button" }, selectedChain === "llm_chain" /* LLM_CHAIN */ && "chat", selectedChain === "vault_qa" /* VAULT_QA_CHAIN */ && "vault QA (basic)", selectedChain === "copilot_plus" /* COPILOT_PLUS_CHAIN */ && "copilot plus (alpha)", /* @__PURE__ */ import_react10.default.createElement(ChevronDown, { size: 10 })), /* @__PURE__ */ import_react10.default.createElement(Portal22, { container: activeDocument.body }, /* @__PURE__ */ import_react10.default.createElement(Content22, { className: "chain-select-content", align: "end", sideOffset: 5 }, /* @__PURE__ */ import_react10.default.createElement(
     Item22,
     {
       onSelect: () => handleChainChange({ value: "llm_chain" /* LLM_CHAIN */ })
@@ -159240,7 +159063,7 @@ var ChatInput = (0, import_react11.forwardRef)(
         onChange: handleInputChange,
         onKeyDown: handleKeyDown
       }
-    ), /* @__PURE__ */ import_react11.default.createElement("div", { className: "chat-input-controls" }, /* @__PURE__ */ import_react11.default.createElement("div", { className: "chat-input-left" }, /* @__PURE__ */ import_react11.default.createElement(Root22, { open: isModelDropdownOpen, onOpenChange: setIsModelDropdownOpen }, /* @__PURE__ */ import_react11.default.createElement(Trigger, { className: "model-select-button" }, settings.activeModels.find((model) => getModelKey2(model) === currentModelKey)?.name || "Select Model", /* @__PURE__ */ import_react11.default.createElement(ChevronUp, { size: 10 })), /* @__PURE__ */ import_react11.default.createElement(Portal22, null, /* @__PURE__ */ import_react11.default.createElement(Content22, { className: "model-select-content", align: "start" }, settings.activeModels.filter((model) => model.enabled).map((model) => /* @__PURE__ */ import_react11.default.createElement(
+    ), /* @__PURE__ */ import_react11.default.createElement("div", { className: "chat-input-controls" }, /* @__PURE__ */ import_react11.default.createElement("div", { className: "chat-input-left" }, /* @__PURE__ */ import_react11.default.createElement(Root22, { open: isModelDropdownOpen, onOpenChange: setIsModelDropdownOpen }, /* @__PURE__ */ import_react11.default.createElement(Trigger, { className: "model-select-button" }, settings.activeModels.find((model) => getModelKey2(model) === currentModelKey)?.name || "Select Model", /* @__PURE__ */ import_react11.default.createElement(ChevronUp, { size: 10 })), /* @__PURE__ */ import_react11.default.createElement(Portal22, { container: activeDocument.body }, /* @__PURE__ */ import_react11.default.createElement(Content22, { className: "model-select-content", align: "start" }, settings.activeModels.filter((model) => model.enabled).map((model) => /* @__PURE__ */ import_react11.default.createElement(
       Item22,
       {
         key: getModelKey2(model),
@@ -161449,6 +161272,8 @@ var RecursiveCharacterTextSplitter = class extends TextSplitter {
 
 // src/search/indexOperations.ts
 var import_obsidian31 = require("obsidian");
+var EMBEDDING_BATCH_SIZE = 64;
+var CHECKPOINT_INTERVAL = 8 * EMBEDDING_BATCH_SIZE;
 var IndexOperations = class {
   constructor(app2, dbOps, embeddingsManager) {
     this.app = app2;
@@ -161459,6 +161284,7 @@ var IndexOperations = class {
       isIndexingCancelled: false,
       indexedCount: 0,
       totalFilesToIndex: 0,
+      processedFiles: /* @__PURE__ */ new Set(),
       currentIndexingNotice: null,
       indexNoticeMessage: null
     };
@@ -161468,96 +161294,13 @@ var IndexOperations = class {
       this.rateLimiter = new RateLimiter(settings.embeddingRequestsPerSecond);
     });
   }
-  async indexFile(file) {
-    const embeddingInstance = this.embeddingsManager.getEmbeddingsAPI();
-    if (!embeddingInstance) {
-      throw new CustomError("Embedding instance not found.");
-    }
-    const content = await this.app.vault.cachedRead(file);
-    const fileCache = this.app.metadataCache.getFileCache(file);
-    const fileToSave = {
-      title: file.basename,
-      path: file.path,
-      content,
-      embeddingModel: EmbeddingManager.getModelName(embeddingInstance),
-      ctime: file.stat.ctime,
-      mtime: file.stat.mtime,
-      tags: fileCache?.tags?.map((tag) => tag.tag) ?? [],
-      extension: file.extension,
-      metadata: {
-        ...fileCache?.frontmatter ?? {},
-        created: formatDateTime(new Date(file.stat.ctime)).display,
-        modified: formatDateTime(new Date(file.stat.mtime)).display
-      }
-    };
-    await this.indexDocument(embeddingInstance, fileToSave);
-  }
-  async indexDocument(embeddingsAPI, fileToSave) {
-    const textSplitter = RecursiveCharacterTextSplitter.fromLanguage("markdown", {
-      chunkSize: CHUNK_SIZE
-    });
-    const chunks = await textSplitter.createDocuments([fileToSave.content], [], {
-      chunkHeader: `
-
-NOTE TITLE: [[${fileToSave.title}]]
-
-METADATA:${JSON.stringify(
-        fileToSave.metadata
-      )}
-
-NOTE BLOCK CONTENT:
-
-`,
-      appendChunkOverlapHeader: true
-    });
-    const docVectors = [];
-    let hasEmbeddingError = false;
-    for (let i3 = 0; i3 < chunks.length; i3++) {
-      try {
-        await this.rateLimiter.wait();
-        const embedding = await embeddingsAPI.embedDocuments([chunks[i3].pageContent]);
-        if (embedding.length > 0 && embedding[0].length > 0) {
-          docVectors.push(embedding[0]);
-        } else {
-          throw new Error("Received empty embedding vector");
-        }
-      } catch (error) {
-        hasEmbeddingError = true;
-        console.error("Error during embeddings API call for chunk:", error);
-        throw error;
-      }
-    }
-    if (docVectors.length > 0) {
-      const chunkWithVectors = chunks.slice(0, docVectors.length).map((chunk, i3) => ({
-        id: this.getDocHash(chunk.pageContent),
-        content: chunk.pageContent,
-        embedding: docVectors[i3]
-      }));
-      try {
-        for (const chunkWithVector of chunkWithVectors) {
-          await this.dbOps.upsert({
-            ...fileToSave,
-            id: chunkWithVector.id,
-            content: chunkWithVector.content,
-            embedding: chunkWithVector.embedding,
-            created_at: Date.now(),
-            nchars: chunkWithVector.content.length
-          });
-        }
-      } catch (error) {
-        hasEmbeddingError = true;
-        console.error("Error during database upsert:", error);
-        throw error;
-      }
-    }
-    return hasEmbeddingError ? void 0 : fileToSave;
-  }
   async indexVaultToVectorStore(overwrite) {
     let rateLimitNoticeShown = false;
     try {
       const embeddingInstance = this.embeddingsManager.getEmbeddingsAPI();
       if (!embeddingInstance) {
-        throw new CustomError("Embedding instance not found.");
+        console.error("Embedding instance not found.");
+        return 0;
       }
       const modelChanged = await this.dbOps.checkAndHandleEmbeddingModelChange(embeddingInstance);
       if (modelChanged) {
@@ -161575,26 +161318,48 @@ NOTE BLOCK CONTENT:
       }
       this.initializeIndexingState(files.length);
       this.createIndexingNotice();
-      const CHECKPOINT_INTERVAL = 200;
+      const allChunks = await this.prepareAllChunks(files);
+      if (allChunks.length === 0) {
+        new import_obsidian31.Notice("No valid content to index.");
+        return 0;
+      }
       const errors2 = [];
-      for (let index2 = 0; index2 < files.length; index2++) {
-        if (this.state.isIndexingCancelled) {
-          console.log(
-            `Indexing stopped at ${this.state.indexedCount}/${files.length} files due to cancellation`
-          );
+      for (let i3 = 0; i3 < allChunks.length; i3 += EMBEDDING_BATCH_SIZE) {
+        if (this.state.isIndexingCancelled)
           break;
-        }
         await this.handlePause();
+        const batch = allChunks.slice(i3, i3 + EMBEDDING_BATCH_SIZE);
         try {
-          await this.indexFile(files[index2]);
-          this.state.indexedCount++;
+          await this.rateLimiter.wait();
+          const embeddings = await embeddingInstance.embedDocuments(
+            batch.map((chunk) => chunk.content)
+          );
+          for (let j3 = 0; j3 < batch.length; j3++) {
+            const chunk = batch[j3];
+            await this.dbOps.upsert({
+              ...chunk.fileInfo,
+              id: this.getDocHash(chunk.content),
+              content: chunk.content,
+              embedding: embeddings[j3],
+              created_at: Date.now(),
+              nchars: chunk.content.length
+            });
+          }
+          batch.forEach((chunk) => {
+            this.state.processedFiles.add(chunk.fileInfo.path);
+          });
+          this.state.indexedCount = this.state.processedFiles.size;
           this.updateIndexingNoticeMessage();
-          if (this.state.indexedCount % CHECKPOINT_INTERVAL === 0) {
+          const previousCheckpoint = Math.floor(
+            (this.state.indexedCount - batch.length) / CHECKPOINT_INTERVAL
+          );
+          const currentCheckpoint = Math.floor(this.state.indexedCount / CHECKPOINT_INTERVAL);
+          if (currentCheckpoint > previousCheckpoint) {
             await this.dbOps.saveDB();
             console.log("Copilot index checkpoint save completed.");
           }
         } catch (err) {
-          this.handleIndexingError(err, files[index2], errors2, rateLimitNoticeShown);
+          this.handleIndexingError(err, batch[0].fileInfo.path, errors2, rateLimitNoticeShown);
           if (this.isRateLimitError(err)) {
             rateLimitNoticeShown = true;
             break;
@@ -161609,6 +161374,61 @@ NOTE BLOCK CONTENT:
       this.handleFatalError(error);
       return 0;
     }
+  }
+  async prepareAllChunks(files) {
+    const embeddingInstance = this.embeddingsManager.getEmbeddingsAPI();
+    if (!embeddingInstance) {
+      console.error("Embedding instance not found.");
+      return [];
+    }
+    const embeddingModel = EmbeddingManager.getModelName(embeddingInstance);
+    const textSplitter = RecursiveCharacterTextSplitter.fromLanguage("markdown", {
+      chunkSize: CHUNK_SIZE
+    });
+    const allChunks = [];
+    for (const file of files) {
+      const content = await this.app.vault.cachedRead(file);
+      if (!content?.trim())
+        continue;
+      const fileCache = this.app.metadataCache.getFileCache(file);
+      const fileInfo = {
+        title: file.basename,
+        path: file.path,
+        embeddingModel,
+        ctime: file.stat.ctime,
+        mtime: file.stat.mtime,
+        tags: fileCache?.tags?.map((tag) => tag.tag) ?? [],
+        extension: file.extension,
+        metadata: {
+          ...fileCache?.frontmatter ?? {},
+          created: formatDateTime(new Date(file.stat.ctime)).display,
+          modified: formatDateTime(new Date(file.stat.mtime)).display
+        }
+      };
+      const chunks = await textSplitter.createDocuments([content], [], {
+        chunkHeader: `
+
+NOTE TITLE: [[${fileInfo.title}]]
+
+METADATA:${JSON.stringify(
+          fileInfo.metadata
+        )}
+
+NOTE BLOCK CONTENT:
+
+`,
+        appendChunkOverlapHeader: true
+      });
+      chunks.forEach((chunk) => {
+        if (chunk.pageContent.trim()) {
+          allChunks.push({
+            content: chunk.pageContent,
+            fileInfo
+          });
+        }
+      });
+    }
+    return allChunks;
   }
   getDocHash(sourceDocument) {
     return (0, import_crypto_js2.MD5)(sourceDocument).toString();
@@ -161634,20 +161454,26 @@ NOTE BLOCK CONTENT:
     const excludedFiles = await getFilePathsForQA("exclusions", this.app);
     const allMarkdownFiles = this.app.vault.getMarkdownFiles();
     const filesToIndex = /* @__PURE__ */ new Set();
+    const emptyFiles = /* @__PURE__ */ new Set();
     for (const file of allMarkdownFiles) {
       if (excludedFiles.has(file.path)) {
         continue;
       }
+      const content = await this.app.vault.cachedRead(file);
+      if (!content || content.trim().length === 0) {
+        emptyFiles.add(file.path);
+        continue;
+      }
       const shouldBeIndexed = includedFiles.size === 0 || includedFiles.has(file.path);
-      if (shouldBeIndexed) {
-        if (!indexedFilePaths.has(file.path) || file.stat.mtime > latestMtime) {
-          filesToIndex.add(file);
-        }
+      const isIndexed = indexedFilePaths.has(file.path);
+      if (shouldBeIndexed && (!isIndexed || file.stat.mtime > latestMtime)) {
+        filesToIndex.add(file);
       }
     }
     if (getSettings().debug) {
       console.log(`Files to index: ${filesToIndex.size}`);
       console.log(`Previously indexed: ${indexedFilePaths.size}`);
+      console.log(`Empty files skipped: ${emptyFiles.size}`);
     }
     return Array.from(filesToIndex);
   }
@@ -161657,6 +161483,7 @@ NOTE BLOCK CONTENT:
       isIndexingCancelled: false,
       indexedCount: 0,
       totalFilesToIndex: totalFiles,
+      processedFiles: /* @__PURE__ */ new Set(),
       currentIndexingNotice: null,
       indexNoticeMessage: null
     };
@@ -161775,24 +161602,23 @@ ${inclusions}`;
         await this.indexVaultToVectorStore(true);
         return;
       }
-      const content = await this.app.vault.cachedRead(file);
-      const fileCache = this.app.metadataCache.getFileCache(file);
-      const fileToSave = {
-        title: file.basename,
-        path: file.path,
-        content,
-        embeddingModel: EmbeddingManager.getModelName(embeddingInstance),
-        ctime: file.stat.ctime,
-        mtime: file.stat.mtime,
-        tags: fileCache?.tags?.map((tag) => tag.tag) ?? [],
-        extension: file.extension,
-        metadata: {
-          ...fileCache?.frontmatter ?? {},
-          created: file.stat.ctime,
-          modified: file.stat.mtime
-        }
-      };
-      await this.indexDocument(embeddingInstance, fileToSave);
+      const chunks = await this.prepareAllChunks([file]);
+      if (chunks.length === 0)
+        return;
+      const embeddings = await embeddingInstance.embedDocuments(
+        chunks.map((chunk) => chunk.content)
+      );
+      for (let i3 = 0; i3 < chunks.length; i3++) {
+        const chunk = chunks[i3];
+        await this.dbOps.upsert({
+          ...chunk.fileInfo,
+          id: this.getDocHash(chunk.content),
+          content: chunk.content,
+          embedding: embeddings[i3],
+          created_at: Date.now(),
+          nchars: chunk.content.length
+        });
+      }
       this.dbOps.markUnsavedChanges();
       if (getSettings().debug) {
         console.log(`Reindexed file: ${file.path}`);
@@ -161801,9 +161627,10 @@ ${inclusions}`;
       console.error(`Error reindexing file ${file.path}:`, error);
     }
   }
-  cancelIndexing() {
+  async cancelIndexing() {
     console.log("Indexing cancelled by user");
     this.state.isIndexingCancelled = true;
+    await new Promise((resolve) => setTimeout(resolve, 100));
     if (this.state.currentIndexingNotice) {
       this.state.currentIndexingNotice.hide();
     }
@@ -162808,7 +162635,24 @@ var QASettings = ({ vectorStoreManager }) => {
       description: "Number of partitions for Copilot index. Default is 1. Increase if you have issues indexing large vaults. Warning: Changes require clearing and rebuilding the index!",
       value: settings.numPartitions.toString(),
       onChange: handlePartitionsChange,
-      options: ["1", "2", "3", "4", "5", "6", "7", "8"]
+      options: [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "12",
+        "16",
+        "20",
+        "24",
+        "28",
+        "32",
+        "36",
+        "40"
+      ]
     }
   ), /* @__PURE__ */ import_react26.default.createElement(
     TextAreaComponent,
@@ -162972,7 +162816,6 @@ var CopilotPlugin = class extends import_obsidian35.Plugin {
     };
   }
   async onload() {
-    await this.checkForUpdates();
     await this.loadSettings();
     this.settingsUnsubscriber = subscribeToSettingsChange(() => {
       const settings = getSettings();
@@ -163004,7 +162847,6 @@ var CopilotPlugin = class extends import_obsidian35.Plugin {
       name: "Open Copilot Chat Window",
       callback: async () => {
         this.activateView();
-        await this.checkForUpdates();
       }
     });
     this.addRibbonIcon("message-square", "Open Copilot Chat", (evt) => {
@@ -163223,16 +163065,36 @@ var CopilotPlugin = class extends import_obsidian35.Plugin {
       callback: async () => {
         try {
           const indexedFiles = await this.vectorStoreManager.getIndexedFiles();
-          if (indexedFiles.length === 0) {
-            new import_obsidian35.Notice("No indexed files found.");
+          const indexedFilePaths = new Set(indexedFiles);
+          const allMarkdownFiles = this.app.vault.getMarkdownFiles();
+          const emptyFiles = /* @__PURE__ */ new Set();
+          const unindexedFiles = /* @__PURE__ */ new Set();
+          for (const file2 of allMarkdownFiles) {
+            const content2 = await this.app.vault.cachedRead(file2);
+            if (!content2 || content2.trim().length === 0) {
+              emptyFiles.add(file2.path);
+            } else if (!indexedFilePaths.has(file2.path)) {
+              unindexedFiles.add(file2.path);
+            }
+          }
+          if (indexedFiles.length === 0 && emptyFiles.size === 0 && unindexedFiles.size === 0) {
+            new import_obsidian35.Notice("No files found to list.");
             return;
           }
           const content = [
-            "# Copilot Indexed Files",
-            `Total files indexed: ${indexedFiles.length}`,
+            "# Copilot Files Status",
+            `- Indexed files: ${indexedFiles.length}`,
+            `- Unindexed files: ${unindexedFiles.size}`,
+            `- Empty files: ${emptyFiles.size}`,
             "",
-            "## Files",
-            ...indexedFiles.map((file2) => `- [[${file2}]]`)
+            "## Indexed Files",
+            ...indexedFiles.map((file2) => `- [[${file2}]]`),
+            "",
+            "## Unindexed Files",
+            ...unindexedFiles.size > 0 ? Array.from(unindexedFiles).sort().map((file2) => `- [[${file2}]]`) : ["No unindexed files found."],
+            "",
+            "## Empty Files",
+            ...emptyFiles.size > 0 ? Array.from(emptyFiles).sort().map((file2) => `- [[${file2}]]`) : ["No empty files found."]
           ].join("\n");
           const fileName = `Copilot-Indexed-Files-${new Date().toLocaleDateString().replace(/\//g, "-")}.md`;
           const filePath = `${fileName}`;
@@ -163496,6 +163358,7 @@ var CopilotPlugin = class extends import_obsidian35.Plugin {
       metadata: doc.metadata
     }));
   }
+  // TODO: Add a setting for this. Disable for now.
   async checkForUpdates() {
     try {
       const response = await (0, import_obsidian35.requestUrl)({

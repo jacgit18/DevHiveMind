@@ -33,7 +33,6 @@
   "heatmap-calendar",
   "obsidian-git",
   "obsidian-fullscreen-plugin",
-  "excel",
   "excalibrain",
   "dataview",
   "obsidian-emoji-toolbar",
@@ -59,5 +58,6 @@
   "obsidian42-brat",
   "buttons",
   "obsidian-charts",
-  "quick-latex"
+  "quick-latex",
+  "sheet-plus"
 ]

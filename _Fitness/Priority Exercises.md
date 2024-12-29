@@ -146,14 +146,14 @@ non bold weight not verified based off tower 200 weights verify at gym
 | ----- | ------------------------------------------- | ------ | ---------- | -------- | -------- | ------------ | --------- | ---- |
 | Core  | [[Core#^6516d4\|Russian Twists]]            | RC     | Kettlebell | *17.6*   | MediBall | 0            | **20**sec | 3    |
 | Full  | [[Full Body#^775bc4 \|Farmer’s Walk]]       | CM     | Kettlebell | *17.6*   | Dumbbell | 0            | **20**sec | 3    |
-| Core  | [[Core#^fdacde \|Russian Twists]]           | RC     | Rope       | 0        | Rope     | 0            | **20**sec | 3    |
 | Full  | [[Upper#^d58de0 \|Rotational Slam]]         | RC     | MediBall   | 0        | MediBall | 0            | **20**sec | 3    |
 | Upper | [[Full Body#^05e3ec \|Seated Cable Row]]    | PG     | Machine    | 0        | Machine  | 0            | **20**sec | 3    |
-| Full  | [[Full Body#^64091e \| Alternating Waves]]  | Cardio | Rope       | 0        | Rope     | 0            | **20**sec | 3    |
-| Full  | [[Full Body#^164e0e \| Side-to-Side Waves]] | Cardio | Rope       | 0        | Rope     | 0            | **20**sec | 3    |
 | Lower | [[Lower#^3b9f2c \|Box Jumps]]               | EP     | Jump       | 0        | Jump     | 0            | **20**sec | 3    |
 | Lower | [[Lower#^afd7a0 \|Lateral Skater Jumps]]    | EP     | Jump       | 0        | Jump     | 0            | **20**sec | 3    |
 | Lower | [[Lower#^aad169 \|Split Squat Jumps]]       | EP     | Jump       | 0        | Jump     | 0            | **20**sec | 3    |
+| Core  | [[Core#^fdacde \|Russian Twists]]           | RC     | Rope       | 0        | Rope     | 0            | **20**sec | 3    |
+| Full  | [[Full Body#^64091e \| Alternating Waves]]  | Cardio | Rope       | 0        | Rope     | 0            | **20**sec | 3    |
+| Full  | [[Full Body#^164e0e \| Side-to-Side Waves]] | Cardio | Rope       | 0        | Rope     | 0            | **20**sec | 3    |
 ^duration
 
 **Limit Combination Exercises (Weight and Endurance)**
