@@ -86,7 +86,7 @@ series:
 
 4. **Pulling/Grip Strength - PG**
 	- Then do exercises to build pulling power and grip for grappling.
-	- Pulley Machine can use [[Tower 200.pdf |Tower 200]]
+	- Pulley Machine can use [[Tower 200.pdf |Tower 200]] for practice weight ranges from 25 to 45
 
 #todo/purchases 
 - [ ] [Neck Exercise Equipment](https://neckslevel.com/?srsltid=AfmBOop5fT_Vv8l5LRpyCbvCpA1c5eqQy_aHAuAeLX2zwNFjMtC1X-Y0)
@@ -95,7 +95,7 @@ series:
 - [ ] try creating chart from table 
 - [x] Eaa over bcaa try looking into Eaa ✅ 2024-12-29
 - [ ] Check New Weight limits 
-- [ ] focus on stability
+- [ ] focus on stability then add resistance
 
 ![](https://www.youtube.com/watch?v=djj7QXZAIjM)
 
@@ -143,18 +143,19 @@ non bold weight not verified based off tower 200 weights verify at gym
 | [[Lower#^c9d45f \|Kettlebell Step-Up]]        | Lower | EP    | Kettlebell | *17.6*   | 3    | 10   |     |
 ^freeweight
 
-| Body  | Exercise                                    | Focus  | Type       | W(lb/kg) | AltType  | Alt W(lb/kg) | Time      | Sets |
-| ----- | ------------------------------------------- | ------ | ---------- | -------- | -------- | ------------ | --------- | ---- |
-| Core  | [[Core#^6516d4\|Russian Twists]]            | RC     | Kettlebell | *17.6*   | MediBall | 0            | **20**sec | 3    |
-| Full  | [[Full Body#^775bc4 \|Farmer’s Walk]]       | CM     | Kettlebell | *17.6*   | Dumbbell | 0            | **20**sec | 3    |
-| Full  | [[Upper#^d58de0 \|Rotational Slam]]         | RC     | MediBall   | 0        | MediBall | 0            | **20**sec | 3    |
-| Upper | [[Full Body#^05e3ec \|Seated Cable Row]]    | PG     | Machine    | 0        | Machine  | 0            | **20**sec | 3    |
-| Lower | [[Lower#^3b9f2c \|Box Jumps]]               | EP     | Jump       | 0        | Jump     | 0            | **20**sec | 3    |
-| Lower | [[Lower#^afd7a0 \|Lateral Skater Jumps]]    | EP     | Jump       | 0        | Jump     | 0            | **20**sec | 3    |
-| Lower | [[Lower#^aad169 \|Split Squat Jumps]]       | EP     | Jump       | 0        | Jump     | 0            | **20**sec | 3    |
-| Core  | [[Core#^fdacde \|Russian Twists]]           | RC     | Rope       | 0        | Rope     | 0            | **20**sec | 3    |
-| Full  | [[Full Body#^64091e \| Alternating Waves]]  | Cardio | Rope       | 0        | Rope     | 0            | **20**sec | 3    |
-| Full  | [[Full Body#^164e0e \| Side-to-Side Waves]] | Cardio | Rope       | 0        | Rope     | 0            | **20**sec | 3    |
+| Body  | Exercise                                    | Focus  | Type       | W(lb/kg) | AltType    | Alt W(lb/kg) | Time      | Sets |
+| ----- | ------------------------------------------- | ------ | ---------- | -------- | ---------- | ------------ | --------- | ---- |
+| Upper | [[Upper#^b1e482 \|Dead Hang]]               | PG     | Bodyweight | 0        | Bodyweight | 0            | **30**sec | 1    |
+| Core  | [[Core#^6516d4\|Russian Twists]]            | RC     | Kettlebell | *17.6*   | MediBall   | 0            | **20**sec | 3    |
+| Full  | [[Full Body#^775bc4 \|Farmer’s Walk]]       | CM     | Kettlebell | *17.6*   | Dumbbell   | 0            | **20**sec | 3    |
+| Full  | [[Upper#^d58de0 \|Rotational Slam]]         | RC     | MediBall   | 0        | MediBall   | 0            | **20**sec | 3    |
+| Upper | [[Full Body#^05e3ec \|Seated Cable Row]]    | PG     | Machine    | 0        | Machine    | 0            | **20**sec | 3    |
+| Lower | [[Lower#^3b9f2c \|Box Jumps]]               | EP     | Jump       | 0        | Jump       | 0            | **20**sec | 3    |
+| Lower | [[Lower#^afd7a0 \|Lateral Skater Jumps]]    | EP     | Jump       | 0        | Jump       | 0            | **20**sec | 3    |
+| Lower | [[Lower#^aad169 \|Split Squat Jumps]]       | EP     | Jump       | 0        | Jump       | 0            | **20**sec | 3    |
+| Core  | [[Core#^fdacde \|Russian Twists]]           | RC     | Rope       | 0        | Rope       | 0            | **20**sec | 3    |
+| Full  | [[Full Body#^64091e \| Alternating Waves]]  | Cardio | Rope       | 0        | Rope       | 0            | **20**sec | 3    |
+| Full  | [[Full Body#^164e0e \| Side-to-Side Waves]] | Cardio | Rope       | 0        | Rope       | 0            | **20**sec | 3    |
 ^duration
 
 **Limit Combination Exercises (Weight and Endurance)**
