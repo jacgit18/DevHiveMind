@@ -28,7 +28,7 @@ Start with a dynamic stretch to Improve blood flow and flexibility. End with a s
     - Skip upright rows due to the unnatural shoulder position.
     - Skip Renegade rows
     - Stop two reps before exercise failure alternate this depending how you feel.
-1. **Equipment Tips:**
+3. **Equipment Tips:**
     - Use **barbells** for added weight when building strength.
     - Use **dumbbells** for greater range of motion and correcting muscle imbalances.
     - Any **curlbar** exercise can be done with barbell.
@@ -96,6 +96,9 @@ series:
 - [x] Eaa over bcaa try looking into Eaa ✅ 2024-12-29
 - [ ] Check New Weight limits 
 - [ ] focus on stability then add resistance
+- [ ] 6 to 20 reps near failure at max
+- [ ] Focus on intensity then scale to volume
+- [ ] Slow intensity exercise should spend at least 5 min per exercise
 
 ![](https://www.youtube.com/watch?v=djj7QXZAIjM)
 
