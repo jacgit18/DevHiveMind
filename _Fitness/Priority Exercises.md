@@ -116,10 +116,9 @@ series:
 | Upper | Rear Delt Fly                                           | N/A      | CM    | High     | *40*   | 3    | 10   | 0     | **40**   |
 | Upper | [[Upper#^238b6e \|Chest Fly]]                           | N/A      | CM    | High     | *70*   | 3    | 10   | 4     | **70**   |
 | Upper | [[Upper#^a7be5a \|Cable Woodchopper]]                   | N/A      | RC    | Med      | 160    | 3    | 10   | 0     | 80       |
-| Upper | [[CableBalloonAbduction.gif \|Cable Balloon Abduction]] | N/A      | PG    |          | 160    | 3    | 10   | 0     | 80       |
-| Upper | [[CableFloorFly.gif \|Cable Floor Fly]]                 | N/A      | PG    |          | 160    | 3    | 10   | 0     | 80       |
-| Upper | [[CableWolverine.gif\|Cable Wolverine]]                 | N/A      | PG    |          | 160    | 3    | 10   | 0     | 80       |
-| Upper | Chest Press                                             | N/A      | CM    |          | 0      | 3    | 10   | 0     | 0        |
+| Upper | [[CableBalloonAbduction.gif \|Cable Balloon Abduction]] | N/A      | PG    | High     | 160    | 3    | 10   | 0     | 80       |
+| Upper | [[CableFloorFly.gif \|Cable Floor Fly]]                 | N/A      | PG    | Low      | 160    | 3    | 10   | 0     | 80       |
+| Upper | [[CableWolverine.gif\|Cable Wolverine]]                 | N/A      | PG    | High     | 160    | 3    | 10   | 0     | 80       |
 | Upper | Shoulder Press                                          | N/A      | CM    | Low      | 0      | 3    | 10   | 0     | 0        |
 | Upper | Mid Row                                                 | N/A      | CM    | Low      | 0      | 3    | 10   | 0     | 0        |
 | Core  | [[Core#^b41212\| Leg Cable Reverse Crunch]]             | N/A      | RC    | Low      | 90     | 3    | 10   | 0     | 45       |
@@ -160,6 +159,68 @@ non bold weight not verified based off tower 200 weights verify at gym
 | Full  | [[Full Body#^64091e \| Alternating Waves]]  | Cardio | Rope       | 0        | Low      | **20**sec | 3    | Rope       | 0            |
 | Full  | [[Full Body#^164e0e \| Side-to-Side Waves]] | Cardio | Rope       | 0        | Low      | **20**sec | 3    | Rope       | 0            |
 ^duration
+
+
+| Body  | Excercise                                   | Position | Focus | Priority | Weight | Sets | Reps |
+| ----- | ------------------------------------------- | -------- | ----- | -------- | ------ | ---- | ---- |
+| Lower | Abductor Outer Thigh                        | Squeeze  | CM    | High     | *160*  | 3    | 10   |
+| Lower | Abduction Inner Thigh                       | Spread   | CM    |          | *110*  | 3    | 10   |
+| Lower | Leg Press off Back Abductor                 | Wide     | CM    | High     | *540*  | 3    | 10   |
+| Lower | Leg Press off Back Calf                     | Toes     | CM    | High     | *270*  | 3    | 10   |
+| Lower | Leg Press off Back Quads                    | Close    | CM    | High     | *540*  | 3    | 10   |
+| Lower | Leg Press off Back G&H                      | Heals    | CM    | High     | *270*  | 3    | 10   |
+| Lower | Leg Press Seated                            | UpClose  | CM    | High     | *110*  | 3    | 5    |
+| Upper | Isolated Lateral Wide Chest                 | Wide     | CM    | Med      | *90*   | 3    | 5    |
+| Upper | Weighted Setead Row                         | N/A      | PG    | High     | *85*   | 3    | 5    |
+| Upper | Rear Delt Fly                               | N/A      | CM    | High     | *40*   | 3    | 10   |
+| Upper | Chest Fly                                   | N/A      | CM    | High     | *70*   | 3    | 10   |
+| Upper | Cable Woodchopper                           | N/A      | RC    | Med      | 160    | 3    | 10   |
+| Upper | Cable Balloon Abduction                     | N/A      | PG    | High     | 160    | 3    | 10   |
+| Upper | Cable Floor Fly                             | N/A      | PG    | Low      | 160    | 3    | 10   |
+| Upper | Cable Wolverine                             | N/A      | PG    | High     | 160    | 3    | 10   |
+| Upper | Shoulder Press                              | N/A      | CM    | Low      | 0      | 3    | 10   |
+| Upper | Mid Row                                     | N/A      | CM    | Low      | 0      | 3    | 10   |
+| Core  | Leg Cable Reverse Crunch                    | N/A      | RC    | Low      | 90     | 3    | 10   |
+|       | Bench Press                                 |          |       |          |        |      |      |
+|       | Clean to Jerk & Press                       |          |       |          |        |      |      |
+|       | Zercher Squats                              |          |       |          |        |      |      |
+|       | ChinUp                                      |          |       |          |        |      |      |
+|       | PullUp Wide                                 |          |       |          |        |      |      |
+|       | PullUp Neutral                              |          |       |          |        |      |      |
+|       | Turkish Get-Up                              |          |       |          |        |      |      |
+|       | Bottoms Up                                  |          |       |          |        |      |      |
+|       | Lunge Twist Halo                            |          |       |          |        |      |      |
+|       | SingleArm Clean Press                       |          |       |          |        |      |      |
+|       | Romanian Deadlift                           |          |       |          |        |      |      |
+|       | Kettlebell Swing                            |          |       |          |        |      |      |
+|       | Kettlebell Snatch                           |          |       |          |        |      |      |
+|       | Cossack Squat                               |          |       |          |        |      |      |
+|       | Kettlebell Step-Up                          |          |       |          |        |      |      |
+|       | Dead Hang                                   |          |       |          |        |      |      |
+|       | Russian Twists                              |          |       |          |        |      |      |
+|       | Farmer’s Walk                               |          |       |          |        |      |      |
+|       | Rotational Slam                             |          |       |          |        |      |      |
+|       | Seated Cable Row                            |          |       |          |        |      |      |
+|       | [[Lower#^3b9f2c \|Box Jumps]]               |          |       |          |        |      |      |
+|       | [[Lower#^afd7a0 \|Lateral Skater Jumps]]    |          |       |          |        |      |      |
+|       | [[Lower#^aad169 \|Split Squat Jumps]]       |          |       |          |        |      |      |
+|       | [[Core#^fdacde \|Russian Twists]]           |          |       |          |        |      |      |
+|       | [[Full Body#^64091e \| Alternating Waves]]  |          |       |          |        |      |      |
+|       | [[Full Body#^164e0e \| Side-to-Side Waves]] |          |       |          |        |      |      |
+|       | [[Upper#^b1e482 \|Dead Hang]]               |          |       |          |        |      |      |
+|       | [[Core#^6516d4\|Russian Twists]]            |          |       |          |        |      |      |
+|       | [[Full Body#^775bc4 \|Farmer’s Walk]]       |          |       |          |        |      |      |
+|       | [[Upper#^d58de0 \|Rotational Slam]]         |          |       |          |        |      |      |
+|       | [[Full Body#^05e3ec \|Seated Cable Row]]    |          |       |          |        |      |      |
+|       | [[Lower#^3b9f2c \|Box Jumps]]               |          |       |          |        |      |      |
+|       | Lateral Skater Jumps                        |          |       |          |        |      |      |
+|       | Split Squat Jumps                           |          |       |          |        |      |      |
+|       | Russian Twists                              |          |       |          |        |      |      |
+|       | Alternating Waves                           |          |       |          |        |      |      |
+|       | Side-to-Side Waves                          |          |       |          |        |      |      |
+
+
+
 
 **Limit Combination Exercises (Weight and Endurance)**
 
