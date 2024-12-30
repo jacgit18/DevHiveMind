@@ -102,27 +102,27 @@ series:
 
 ![](https://www.youtube.com/watch?v=djj7QXZAIjM)
 
-| Body  | Machine                                                 | Position | Focus | Weight | Sets | Reps | Range | Per Side |
-| ----- | ------------------------------------------------------- | -------- | ----- | ------ | ---- | ---- | ----- | -------- |
-| Lower | Abductor Outer Thigh                                    | Squeeze  | CM    | *160*  | 3    | 10   | 7     | **160**  |
-| Lower | Abduction Inner Thigh                                   | Spread   | CM    | *110*  | 3    | 10   | 0     | **110**  |
-| Lower | Leg Press off Back Abductor                             | Wide     | CM    | *540*  | 3    | 10   | 0     | 270      |
-| Lower | Leg Press off Back Calf                                 | Toes     | CM    | *270*  | 3    | 10   | 0     | 135      |
-| Lower | Leg Press off Back Quads                                | Close    | CM    | *540*  | 3    | 10   | 0     | 270      |
-| Lower | Leg Press off Back G&H                                  | Heals    | CM    | *270*  | 3    | 10   | 0     | 135      |
-| Lower | Leg Press Seated                                        | UpClose  | CM    | *110*  | 3    | 5    | 0     | **110**  |
-| Upper | Isolated Lateral Wide Chest                             | Wide     | CM    | *90*   | 3    | 5    | 0     | 45       |
-| Upper | Weighted Setead Row                                     | N/A      | PG    | *85*   | 3    | 5    | 0     | 42.5     |
-| Upper | Rear Delt Fly                                           | N/A      | CM    | *40*   | 3    | 10   | 0     | **40**   |
-| Upper | [[Upper#^238b6e \|Chest Fly]]                           | N/A      | CM    | *70*   | 3    | 10   | 4     | **70**   |
-| Upper | [[Upper#^a7be5a \|Cable Woodchopper]]                   | N/A      | RC    | 160    | 3    | 10   | 0     | 80       |
-| Upper | [[CableBalloonAbduction.gif \|Cable Balloon Abduction]] | N/A      | PG    | 160    | 3    | 10   | 0     | 80       |
-| Upper | [[CableFloorFly.gif \|Cable Floor Fly]]                 | N/A      | PG    | 160    | 3    | 10   | 0     | 80       |
-| Upper | [[CableWolverine.gif\|Cable Wolverine]]                 | N/A      | PG    | 160    | 3    | 10   | 0     | 80       |
-| Upper | Chest Press                                             | N/A      | CM    | 0      | 3    | 10   | 0     | 0        |
-| Upper | Shoulder Press                                          | N/A      | CM    | 0      | 3    | 10   | 0     | 0        |
-| Upper | Mid Row                                                 | N/A      | CM    | 0      | 3    | 10   | 0     | 0        |
-| Core  | [[Core#^b41212\| Leg Cable Reverse Crunch]]             | N/A      | RC    | 90     | 3    | 10   | 0     | 45       |
+| Body  | Machine                                                 | Position | Focus | Priority | Weight | Sets | Reps | Range | Per Side |
+| ----- | ------------------------------------------------------- | -------- | ----- | -------- | ------ | ---- | ---- | ----- | -------- |
+| Lower | Abductor Outer Thigh                                    | Squeeze  | CM    | High     | *160*  | 3    | 10   | 7     | **160**  |
+| Lower | Abduction Inner Thigh                                   | Spread   | CM    |          | *110*  | 3    | 10   | 0     | **110**  |
+| Lower | Leg Press off Back Abductor                             | Wide     | CM    | High     | *540*  | 3    | 10   | 0     | 270      |
+| Lower | Leg Press off Back Calf                                 | Toes     | CM    | High     | *270*  | 3    | 10   | 0     | 135      |
+| Lower | Leg Press off Back Quads                                | Close    | CM    | High     | *540*  | 3    | 10   | 0     | 270      |
+| Lower | Leg Press off Back G&H                                  | Heals    | CM    | High     | *270*  | 3    | 10   | 0     | 135      |
+| Lower | Leg Press Seated                                        | UpClose  | CM    | High     | *110*  | 3    | 5    | 0     | **110**  |
+| Upper | Isolated Lateral Wide Chest                             | Wide     | CM    | Med      | *90*   | 3    | 5    | 0     | 45       |
+| Upper | Weighted Setead Row                                     | N/A      | PG    | High     | *85*   | 3    | 5    | 0     | 42.5     |
+| Upper | Rear Delt Fly                                           | N/A      | CM    | High     | *40*   | 3    | 10   | 0     | **40**   |
+| Upper | [[Upper#^238b6e \|Chest Fly]]                           | N/A      | CM    | High     | *70*   | 3    | 10   | 4     | **70**   |
+| Upper | [[Upper#^a7be5a \|Cable Woodchopper]]                   | N/A      | RC    | Med      | 160    | 3    | 10   | 0     | 80       |
+| Upper | [[CableBalloonAbduction.gif \|Cable Balloon Abduction]] | N/A      | PG    |          | 160    | 3    | 10   | 0     | 80       |
+| Upper | [[CableFloorFly.gif \|Cable Floor Fly]]                 | N/A      | PG    |          | 160    | 3    | 10   | 0     | 80       |
+| Upper | [[CableWolverine.gif\|Cable Wolverine]]                 | N/A      | PG    |          | 160    | 3    | 10   | 0     | 80       |
+| Upper | Chest Press                                             | N/A      | CM    |          | 0      | 3    | 10   | 0     | 0        |
+| Upper | Shoulder Press                                          | N/A      | CM    | Low      | 0      | 3    | 10   | 0     | 0        |
+| Upper | Mid Row                                                 | N/A      | CM    | Low      | 0      | 3    | 10   | 0     | 0        |
+| Core  | [[Core#^b41212\| Leg Cable Reverse Crunch]]             | N/A      | RC    | Low      | 90     | 3    | 10   | 0     | 45       |
 ^machine
 
 non bold weight not verified based off tower 200 weights verify at gym 
@@ -136,14 +136,14 @@ non bold weight not verified based off tower 200 weights verify at gym
 | [[Upper#^bf9596 \|PullUp Wide]]               | Upper | PG    | Bodyweight | *25*     | High     | 3    | 5    |
 | [[Upper#^e81d31 \|PullUp Neutral]]            | Upper | PG    | Bodyweight | *25*     | High     | 3    | 5    |
 | [[Full Body#^7d58d7 \|Turkish Get-Up]]        | Full  | RC    | Kettlebell | *17.6*   | High     | 3    | 10   |
-| [[Upper#^9def13\|Bottoms Up]]                 | Upper | PG    | Kettlebell | *17.6*   |          | 3    | 10   |
-| [[Full Body#^7ecf05 \|Lunge Twist Halo]]      | Upper | RC    | Kettlebell | *17.6*   |          | 8    | 2    |
-| SingleArm Clean Press                         | Upper | EP    | Kettlebell | *17.6*   |          | 3    | 10   |
-| [[Lower#^308171 \|Romanian Deadlift]]         | Lower | CM    | Barbell    | 0        |          | 3    | 5    |
-| [[Full Body#^bb1837\|Kettlebell Swing]]       | Full  | PG    | Kettlebell | *17.6*   |          | 3    | 10   |
-| [[Full Body#^8b48af \|Kettlebell Snatch]]     | Full  | EP    | Kettlebell | *17.6*   |          | 3    | 10   |
-| [[Lower#^3ae11e \|Cossack Squat]]             | Lower | CM    | Kettlebell | *17.6*   |          | 3    | 10   |
-| [[Lower#^c9d45f \|Kettlebell Step-Up]]        | Lower | EP    | Kettlebell | *17.6*   |          | 3    | 10   |
+| [[Upper#^9def13\|Bottoms Up]]                 | Upper | PG    | Kettlebell | *17.6*   | High     | 3    | 10   |
+| [[Full Body#^7ecf05 \|Lunge Twist Halo]]      | Upper | RC    | Kettlebell | *17.6*   | High     | 8    | 2    |
+| SingleArm Clean Press                         | Upper | EP    | Kettlebell | *17.6*   | Med      | 3    | 10   |
+| [[Lower#^308171 \|Romanian Deadlift]]         | Lower | CM    | Barbell    | 0        | Low      | 3    | 5    |
+| [[Full Body#^bb1837\|Kettlebell Swing]]       | Full  | PG    | Kettlebell | *17.6*   | Med      | 3    | 10   |
+| [[Full Body#^8b48af \|Kettlebell Snatch]]     | Full  | EP    | Kettlebell | *17.6*   | Med      | 3    | 10   |
+| [[Lower#^3ae11e \|Cossack Squat]]             | Lower | CM    | Kettlebell | *17.6*   | Low      | 3    | 10   |
+| [[Lower#^c9d45f \|Kettlebell Step-Up]]        | Lower | EP    | Kettlebell | *17.6*   | Low      | 3    | 10   |
 ^freeweight
 
 | Body  | Exercise                                    | Focus  | Type       | W(lb/kg) | Priority | Time      | Sets | AltType    | Alt W(lb/kg) |
