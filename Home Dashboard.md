@@ -93,10 +93,6 @@ dg-publish: true
 > ```
 
 ---
-
-
-
-
 - ### Satisfaction #mcl/list-card 
 	```dataviewjs  
 	dv.span("**🏋️ Proudness 🏋️**")  
@@ -162,6 +158,8 @@ action:
   command: daily-notes
 ```
 
+#todo 
+- [ ] Cleanup todo's make it cleaner
 ```meta-bind-button
 style: primary
 hidden: true

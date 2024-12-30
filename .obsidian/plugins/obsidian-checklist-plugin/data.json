@@ -72,9 +72,7 @@
     "#todo/low/dev",
     "#todo/med/dev",
     "#todo/personal/med/dev",
-    "#todo/personal/med",
     "#todo/personal/low/dev",
-    "#todo/med/buisness",
     "#todo/low/buisness",
     "#todo/okr",
     "#todo/dev/bau",
@@ -89,16 +87,18 @@
     "#todo/high/refinethought/",
     "#todo/bau/interview/questions",
     "#todo/bau/interview",
-    "#todo/high/buisness",
     "#todo/med/medical",
     "#todo/stocks",
     "#todo/purchases/assets",
     "#todo/email/options",
-    "#todo/life/research",
     "#todo/notemerge",
     "#todo/bau/streches",
+    "#todo/cleanup",
+    "#todo/questions/topfive",
     "#todo/high/fin",
-    "#todo/cleanup"
+    "#todo/med/buisness",
+    "#todo/high/buisness",
+    "#todo/life/research"
   ],
   "_hiddenTags": []
 }

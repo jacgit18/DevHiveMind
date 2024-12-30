@@ -99,6 +99,7 @@ series:
 - [ ] 6 to 20 reps near failure at max
 - [ ] Focus on intensity then scale to volume
 - [ ] Slow intensity exercise should spend at least 5 min per exercise
+- [ ] non bold weight not verified based off tower 200 weights verify at gym 
 
 ![](https://www.youtube.com/watch?v=djj7QXZAIjM)
 
@@ -124,7 +125,6 @@ series:
 | Core  | [[Core#^b41212\| Leg Cable Reverse Crunch]]             | N/A      | RC    | Low      | 90     | 3    | 10   | 0     | 45       |
 ^machine
 
-non bold weight not verified based off tower 200 weights verify at gym 
 
 | Exercise                                      | Body  | Focus | Type       | W(lb/kg) | Priority | Sets | Reps |
 | --------------------------------------------- | ----- | ----- | ---------- | -------- | -------- | ---- | ---- |
