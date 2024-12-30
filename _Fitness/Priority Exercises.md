@@ -188,52 +188,52 @@ color purple
 
 
 
-| Priority | Focus  | Excercise                   | Weight | Sets | Reps | Position | Body  | Type        |
-| -------- | ------ | --------------------------- | ------ | ---- | ---- | -------- | ----- | ----------- |
-| High     | CM     | Abductor Outer Thigh        | *160*  | 3    | 10   | Squeeze  | Lower | Machine     |
-|          | CM     | Abduction Inner Thigh       | *110*  | 3    | 10   | Spread   | Lower | Machine     |
-| High     | CM     | Leg Press off Back Abductor | *540*  | 3    | 10   | Wide     | Lower | Machine     |
-| High     | CM     | Leg Press off Back Calf     | *270*  | 3    | 10   | Toes     | Lower | Machine     |
-| High     | CM     | Leg Press off Back Quads    | *540*  | 3    | 10   | Close    | Lower | Machine     |
-| High     | CM     | Leg Press off Back G&H      | *270*  | 3    | 10   | Heals    | Lower | Machine     |
-| High     | CM     | Leg Press Seated            | *110*  | 3    | 5    | UpClose  | Lower | Machine     |
-| Med      | CM     | Isolated Lateral Wide Chest | *90*   | 3    | 5    | Wide     | Upper | Machine     |
-| High     | PG     | Weighted Setead Row         | *85*   | 3    | 5    | N/A      | Upper | Machine     |
-| High     | CM     | Rear Delt Fly               | *40*   | 3    | 10   | N/A      | Upper | Machine     |
-| High     | CM     | Chest Fly                   | *70*   | 3    | 10   | N/A      | Upper | Machine     |
-| Med      | RC     | Cable Woodchopper           | 160    | 3    | 10   | N/A      | Upper | Machine     |
-| High     | PG     | Cable Balloon Abduction     | 160    | 3    | 10   | N/A      | Upper | Machine     |
-| Low      | PG     | Cable Floor Fly             | 160    | 3    | 10   | N/A      | Upper | Machine     |
-| High     | PG     | Cable Wolverine             | 160    | 3    | 10   | N/A      | Upper | Machine     |
-| Low      | CM     | Shoulder Press              | 0      | 3    | 10   | N/A      | Upper | Machine     |
-| Low      | CM     | Mid Row                     | 0      | 3    | 10   | N/A      | Upper | Machine     |
-| Low      | RC     | Leg Cable Reverse Crunch    | 90     | 3    | 10   | N/A      | Core  | Machine     |
-| High     | CM     | Bench Press                 | 0      | 3    | 5    | N/A      | Upper | FreeWeights |
-| High     | EP     | Clean to Jerk & Press       | 0      | 3    | 5    | N/A      | Full  | FreeWeights |
-| Med      | CM     | Zercher Squats              | 0      | 3    | 10   | N/A      | Lower | FreeWeights |
-| High     | PG     | ChinUp                      | *25*   | 3    | 5    | N/A      | Upper | FreeWeights |
-| High     | PG     | PullUp Wide                 | *25*   | 3    | 5    | N/A      | Upper | FreeWeights |
-| High     | PG     | PullUp Neutral              | *25*   | 3    | 5    | N/A      | Upper | FreeWeights |
-| High     | RC     | Turkish Get-Up              | *17.6* | 3    | 10   | N/A      | Full  | FreeWeights |
-| High     | PG     | Bottoms Up                  | *17.6* | 3    | 10   | N/A      | Upper | FreeWeights |
-| High     | RC     | Lunge Twist Halo            | *17.6* | 8    | 2    | N/A      | Upper | FreeWeights |
-| Med      | EP     | SingleArm Clean Press       | *17.6* | 3    | 10   | N/A      | Upper | FreeWeights |
-| Low      | CM     | Romanian Deadlift           | 0      | 3    | 5    | N/A      | Lower | FreeWeights |
-| Med      | PG     | Kettlebell Swing            | *17.6* | 3    | 10   | N/A      | Full  | FreeWeights |
-| Med      | EP     | Kettlebell Snatch           | *17.6* | 3    | 10   | N/A      | Full  | FreeWeights |
-| Low      | CM     | Cossack Squat               | *17.6* | 3    | 10   | N/A      | Lower | FreeWeights |
-| Low      | EP     | Kettlebell Step-Up          | *17.6* | 3    | 10   | N/A      | Lower | FreeWeights |
-| High     | PG     | Dead Hang                   | 0      | 1    | 30   | N/A      | Upper | Durration   |
-| High     | RC     | Russian Twists Kettle       | *17.6* | 3    | 20   | N/A      | Core  | Durration   |
-| High     | CM     | Farmer’s Walk               | *17.6* | 3    | 20   | N/A      | Full  | Durration   |
-| Low      | RC     | Rotational Slam             | 0      | 3    | 20   | N/A      | Full  | Durration   |
-| Med      | PG     | Seated Cable Row            | 0      | 3    | 20   | N/A      | Upper | Durration   |
-| Low      | EP     | Box Jumps                   | 0      | 3    | 20   | N/A      | Lower | Durration   |
-| Med      | EP     | Lateral Skater Jumps        | 0      | 3    | 20   | N/A      | Lower | Durration   |
-| Low      | EP     | Split Squat Jumps           | 0      | 3    | 20   | N/A      | Lower | Durration   |
-| Low      | RC     | Russian Twists Rope         | 0      | 3    | 20   | N/A      | Core  | Durration   |
-| Low      | Cardio | Alternating Waves           | 0      | 3    | 20   | N/A      | Full  | Durration   |
-| Low      | Cardio | Side-to-Side Waves          | 0      | 3    | 20   | N/A      | Full  | Durration   |
+| Excercise                   | Focus  | Weight | Priority | Sets | Reps | Position | Body  | Type        |
+| --------------------------- | ------ | ------ | -------- | ---- | ---- | -------- | ----- | ----------- |
+| Abductor Outer Thigh        | CM     | *160*  | High     | 3    | 10   | Squeeze  | Lower | Machine     |
+| Abduction Inner Thigh       | CM     | *110*  |          | 3    | 10   | Spread   | Lower | Machine     |
+| Leg Press off Back Abductor | CM     | *540*  | High     | 3    | 10   | Wide     | Lower | Machine     |
+| Leg Press off Back Calf     | CM     | *270*  | High     | 3    | 10   | Toes     | Lower | Machine     |
+| Leg Press off Back Quads    | CM     | *540*  | High     | 3    | 10   | Close    | Lower | Machine     |
+| Leg Press off Back G&H      | CM     | *270*  | High     | 3    | 10   | Heals    | Lower | Machine     |
+| Leg Press Seated            | CM     | *110*  | High     | 3    | 5    | UpClose  | Lower | Machine     |
+| Isolated Lateral Wide Chest | CM     | *90*   | Med      | 3    | 5    | Wide     | Upper | Machine     |
+| Weighted Setead Row         | PG     | *85*   | High     | 3    | 5    | N/A      | Upper | Machine     |
+| Rear Delt Fly               | CM     | *40*   | High     | 3    | 10   | N/A      | Upper | Machine     |
+| Chest Fly                   | CM     | *70*   | High     | 3    | 10   | N/A      | Upper | Machine     |
+| Cable Woodchopper           | RC     | 160    | Med      | 3    | 10   | N/A      | Upper | Machine     |
+| Cable Balloon Abduction     | PG     | 160    | High     | 3    | 10   | N/A      | Upper | Machine     |
+| Cable Floor Fly             | PG     | 160    | Low      | 3    | 10   | N/A      | Upper | Machine     |
+| Cable Wolverine             | PG     | 160    | High     | 3    | 10   | N/A      | Upper | Machine     |
+| Shoulder Press              | CM     | 0      | Low      | 3    | 10   | N/A      | Upper | Machine     |
+| Mid Row                     | CM     | 0      | Low      | 3    | 10   | N/A      | Upper | Machine     |
+| Leg Cable Reverse Crunch    | RC     | 90     | Low      | 3    | 10   | N/A      | Core  | Machine     |
+| Bench Press                 | CM     | 0      | High     | 3    | 5    | N/A      | Upper | FreeWeights |
+| Clean to Jerk & Press       | EP     | 0      | High     | 3    | 5    | N/A      | Full  | FreeWeights |
+| Zercher Squats              | CM     | 0      | Med      | 3    | 10   | N/A      | Lower | FreeWeights |
+| ChinUp                      | PG     | *25*   | High     | 3    | 5    | N/A      | Upper | FreeWeights |
+| PullUp Wide                 | PG     | *25*   | High     | 3    | 5    | N/A      | Upper | FreeWeights |
+| PullUp Neutral              | PG     | *25*   | High     | 3    | 5    | N/A      | Upper | FreeWeights |
+| Turkish Get-Up              | RC     | *17.6* | High     | 3    | 10   | N/A      | Full  | FreeWeights |
+| Bottoms Up                  | PG     | *17.6* | High     | 3    | 10   | N/A      | Upper | FreeWeights |
+| Lunge Twist Halo            | RC     | *17.6* | High     | 8    | 2    | N/A      | Upper | FreeWeights |
+| SingleArm Clean Press       | EP     | *17.6* | Med      | 3    | 10   | N/A      | Upper | FreeWeights |
+| Romanian Deadlift           | CM     | 0      | Low      | 3    | 5    | N/A      | Lower | FreeWeights |
+| Kettlebell Swing            | PG     | *17.6* | Med      | 3    | 10   | N/A      | Full  | FreeWeights |
+| Kettlebell Snatch           | EP     | *17.6* | Med      | 3    | 10   | N/A      | Full  | FreeWeights |
+| Cossack Squat               | CM     | *17.6* | Low      | 3    | 10   | N/A      | Lower | FreeWeights |
+| Kettlebell Step-Up          | EP     | *17.6* | Low      | 3    | 10   | N/A      | Lower | FreeWeights |
+| Dead Hang                   | PG     | 0      | High     | 1    | 30   | N/A      | Upper | Durration   |
+| Russian Twists Kettle       | RC     | *17.6* | High     | 3    | 20   | N/A      | Core  | Durration   |
+| Farmer’s Walk               | CM     | *17.6* | High     | 3    | 20   | N/A      | Full  | Durration   |
+| Rotational Slam             | RC     | 0      | Low      | 3    | 20   | N/A      | Full  | Durration   |
+| Seated Cable Row            | PG     | 0      | Med      | 3    | 20   | N/A      | Upper | Durration   |
+| Box Jumps                   | EP     | 0      | Low      | 3    | 20   | N/A      | Lower | Durration   |
+| Lateral Skater Jumps        | EP     | 0      | Med      | 3    | 20   | N/A      | Lower | Durration   |
+| Split Squat Jumps           | EP     | 0      | Low      | 3    | 20   | N/A      | Lower | Durration   |
+| Russian Twists Rope         | RC     | 0      | Low      | 3    | 20   | N/A      | Core  | Durration   |
+| Alternating Waves           | Cardio | 0      | Low      | 3    | 20   | N/A      | Full  | Durration   |
+| Side-to-Side Waves          | Cardio | 0      | Low      | 3    | 20   | N/A      | Full  | Durration   |
 ^all
 
 

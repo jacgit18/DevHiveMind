@@ -78,7 +78,6 @@
     "#todo/low/buisness",
     "#todo/okr",
     "#todo/dev/bau",
-    "#todo/questions/topfive",
     "#todo/personal/high/dev",
     "#todo/high/dev",
     "#todo/purchases",
@@ -98,7 +97,8 @@
     "#todo/life/research",
     "#todo/notemerge",
     "#todo/bau/streches",
-    "#todo/high/fin"
+    "#todo/high/fin",
+    "#todo/cleanup"
   ],
   "_hiddenTags": []
 }
