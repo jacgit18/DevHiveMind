@@ -128,6 +128,7 @@ series:
 
 | Exercise                                      | Body  | Focus | Type       | W(lb/kg) | Priority | Sets | Reps |
 | --------------------------------------------- | ----- | ----- | ---------- | -------- | -------- | ---- | ---- |
+| [[Full Body#^569c1a \| Arnold Press]]         | Upper | CM    | Dumbbell   | 0        | High     | 3    | 10   |
 | [[Upper#^bcb0df \|Bench Press]]               | Upper | CM    | Barbell    | 0        | High     | 3    | 5    |
 | [[Full Body#^0c16fd \|Clean to Jerk & Press]] | Full  | EP    | Barbell    | 0        | High     | 3    | 5    |
 | [[Full Body#^765b0b \|Zercher Squats]]        | Lower | CM    | Barbell    | 0        | Med      | 3    | 10   |
@@ -208,6 +209,7 @@ color purple
 | Shoulder Press              | CM     | 0      | Low      | 3    | 10   | N/A      | Upper | Machine     |
 | Mid Row                     | CM     | 0      | Low      | 3    | 10   | N/A      | Upper | Machine     |
 | Leg Cable Reverse Crunch    | RC     | 90     | Low      | 3    | 10   | N/A      | Core  | Machine     |
+| Arnold Press                | CM     | 0      | High     | 3    | 10   | N/A      | Upper | FreeWeights |
 | Bench Press                 | CM     | 0      | High     | 3    | 5    | N/A      | Upper | FreeWeights |
 | Clean to Jerk & Press       | EP     | 0      | High     | 3    | 5    | N/A      | Full  | FreeWeights |
 | Zercher Squats              | CM     | 0      | Med      | 3    | 10   | N/A      | Lower | FreeWeights |
