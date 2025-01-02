@@ -17,6 +17,7 @@ dg-publish:
 # Striking Guide
 ![[MMASchedule.jpg]]
 ### **Practice & Simulation**
+> ***Be in Constant Motion*** 
 
 Use the **UFC game** to simulate and experiment with techniques and strategies.
 
@@ -48,7 +49,6 @@ Use the **UFC game** to simulate and experiment with techniques and strategies.
     - You can keep your lead hand lower for flexibility and speed.
     - Also keep [[Distance Management Tactics]] in mind.
 - **Punch Timing**: Aim to strike between heartbeats for precision and flow.
-
 
 ### **3. Striking & Fainting**
 -  Taller opponents:
@@ -89,6 +89,7 @@ By continuously experimenting and refining your approach, you'll develop a dynam
 ## **Counter Striking Guide**
 - Use slight leans to bait an attack but maintain readiness to move in any direction.
 - Lean opposite to the punch’s direction (e.g., dip left against a right-hand punch).
+- Faint with level changes typically when opponent are in there weaker stance or same side stance.
 ### **Opposite Stance (Opposite Lead Foot)**
 - This occurs when you and your opponent have opposite lead feet (e.g., you're [[Stance Fundamentals#^b31948|Orthodox]], and they're [[Stance Fundamentals#^1981b8|Southpaw]]). It's generally easier to step outside their lead foot.
 
