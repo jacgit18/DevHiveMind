@@ -13,7 +13,7 @@
   "googleApiKey": "",
   "openRouterAiApiKey": "",
   "defaultChainType": "llm_chain",
-  "defaultModelKey": "gpt-4o|openai",
+  "defaultModelKey": "gemini-1.5-flash|google",
   "embeddingModelKey": "copilot-plus-small|copilot-plus",
   "temperature": 0.1,
   "maxTokens": 1000,
