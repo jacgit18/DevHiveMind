@@ -89,6 +89,7 @@ flowchart LR
 	3[Omoplata]
 	4[Armbar]
 
+	Closed <-.-> A
     A <-.-> B
     A <-.-> C
     A <-.-> D
