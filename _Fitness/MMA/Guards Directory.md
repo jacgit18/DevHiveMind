@@ -100,8 +100,10 @@ flowchart LR
     B --> G
     B <-.-> L
     B --> M
+    B --> M
     B --> O
     B --> R
+    
     C --> D
     C --> E
     C --> G

@@ -7,7 +7,6 @@ flowchart LR
     C[Spider]
     D[Butterfly]
     E[Lasso Guard]
-    F[X]
 	G[Collar/Sleeve]
 	H[Half Guard] 
 	I[Side Control] 
@@ -16,7 +15,6 @@ flowchart LR
 	L[Reverse DeLaRiva] 
 	M[Berimbolo]
 	N[50/50]
-	O[Worm]
 	P[Tornado]
 	Q[Rubber]
 	R[Mission Control]
@@ -35,27 +33,30 @@ flowchart LR
     A <-.-> Q
     A <-.-> R
     B <-.-> C
-    B --> F
+
     B --> G
     B <-.-> L
     B --> M
-    B --> O
+    B --> N
+
     B --> R
     C --> D
     C --> E
     C --> G
-	D --> F
+
+	D --> N
 	D --> Q
 	D --> R
-	F --> N
+
 	H <-.-> I
 	H --> P
 	H <-.-> Q 
 	H --> R
 	H <-.-> Z
 	I <-.-> J
+	J --> N
 	L <-.-> C
-	L --> F
+
 	I <-.-> K
 	R <-.-> Q 
 	R --> 1
@@ -88,8 +89,6 @@ style L fill:blue,stroke:black,stroke-width:4px,shadow:shadow
 style M fill:blue,stroke:black,stroke-width:4px,shadow:shadow
 
 style N fill:blue,stroke:black,stroke-width:4px,shadow:shadow
-
-style O fill:blue,stroke:black,stroke-width:4px,shadow:shadow
 
 style P fill:blue,stroke:black,stroke-width:4px,shadow:shadow
 
