@@ -18,6 +18,10 @@ You can design a UI-first workflow by sketching out the user interface and think
 
 For a front-end portfolio website, consider including the following routes/pages:  
 
+Carpenter themed frontend portfolio website to sell yourself and brand
+
+[https://ovou.com/product-category/cards/](https://ovou.com/product-category/cards/)
+
 #todo/website
 - [ ]  **Home:** A landing page that gives a brief introduction to who you are and what you do.
 - [ ]  **About:** A page with more detailed information about your background, skills, and experiences.

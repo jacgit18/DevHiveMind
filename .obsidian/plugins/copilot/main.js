@@ -57,8 +57,11 @@ function addIssueToContext(ctx, issueData) {
     path: ctx.path,
     errorMaps: [
       ctx.common.contextualErrorMap,
+      // contextual error map is first priority
       ctx.schemaErrorMap,
+      // then schema-bound map if available
       overrideMap,
+      // then global override map
       overrideMap === errorMap ? void 0 : errorMap
       // then global default map
     ].filter((x2) => !!x2)
@@ -131,6 +134,33 @@ function isValidIP(ip, version2) {
     return true;
   }
   if ((version2 === "v6" || !version2) && ipv6Regex.test(ip)) {
+    return true;
+  }
+  return false;
+}
+function isValidJWT(jwt, alg) {
+  if (!jwtRegex.test(jwt))
+    return false;
+  try {
+    const [header] = jwt.split(".");
+    const base642 = header.replace(/-/g, "+").replace(/_/g, "/").padEnd(header.length + (4 - header.length % 4) % 4, "=");
+    const decoded = JSON.parse(atob(base642));
+    if (typeof decoded !== "object" || decoded === null)
+      return false;
+    if (!decoded.typ || !decoded.alg)
+      return false;
+    if (alg && decoded.alg !== alg)
+      return false;
+    return true;
+  } catch (_a5) {
+    return false;
+  }
+}
+function isValidCidr(ip, version2) {
+  if ((version2 === "v4" || !version2) && ipv4CidrRegex.test(ip)) {
+    return true;
+  }
+  if ((version2 === "v6" || !version2) && ipv6CidrRegex.test(ip)) {
     return true;
   }
   return false;
@@ -227,7 +257,7 @@ function custom(check, params = {}, fatal) {
     });
   return ZodAny.create();
 }
-var util, objectUtil, ZodParsedType, getParsedType, ZodIssueCode, quotelessJson, ZodError, errorMap, overrideErrorMap, makeIssue, EMPTY_PATH, ParseStatus, INVALID, DIRTY, OK, isAborted, isDirty, isValid, isAsync, errorUtil, _ZodEnum_cache, _ZodNativeEnum_cache, ParseInputLazyPath, handleResult, ZodType, cuidRegex, cuid2Regex, ulidRegex, uuidRegex, nanoidRegex, durationRegex, emailRegex, _emojiRegex, emojiRegex, ipv4Regex, ipv6Regex, base64Regex, dateRegexSource, dateRegex, ZodString, ZodNumber, ZodBigInt, ZodBoolean, ZodDate, ZodSymbol, ZodUndefined, ZodNull, ZodAny, ZodUnknown, ZodNever, ZodVoid, ZodArray, ZodObject, ZodUnion, getDiscriminator, ZodDiscriminatedUnion, ZodIntersection, ZodTuple, ZodRecord, ZodMap, ZodSet, ZodFunction, ZodLazy, ZodLiteral, ZodEnum, ZodNativeEnum, ZodPromise, ZodEffects, ZodOptional, ZodNullable, ZodDefault, ZodCatch, ZodNaN, BRAND, ZodBranded, ZodPipeline, ZodReadonly, late, ZodFirstPartyTypeKind, instanceOfType, stringType, numberType, nanType, bigIntType, booleanType, dateType, symbolType, undefinedType, nullType, anyType, unknownType, neverType, voidType, arrayType, objectType, strictObjectType, unionType, discriminatedUnionType, intersectionType, tupleType, recordType, mapType, setType, functionType, lazyType, literalType, enumType, nativeEnumType, promiseType, effectsType, optionalType, nullableType, preprocessType, pipelineType, ostring, onumber, oboolean, coerce, NEVER, z;
+var util, objectUtil, ZodParsedType, getParsedType, ZodIssueCode, quotelessJson, ZodError, errorMap, overrideErrorMap, makeIssue, EMPTY_PATH, ParseStatus, INVALID, DIRTY, OK, isAborted, isDirty, isValid, isAsync, errorUtil, _ZodEnum_cache, _ZodNativeEnum_cache, ParseInputLazyPath, handleResult, ZodType, cuidRegex, cuid2Regex, ulidRegex, uuidRegex, nanoidRegex, jwtRegex, durationRegex, emailRegex, _emojiRegex, emojiRegex, ipv4Regex, ipv4CidrRegex, ipv6Regex, ipv6CidrRegex, base64Regex, base64urlRegex, dateRegexSource, dateRegex, ZodString, ZodNumber, ZodBigInt, ZodBoolean, ZodDate, ZodSymbol, ZodUndefined, ZodNull, ZodAny, ZodUnknown, ZodNever, ZodVoid, ZodArray, ZodObject, ZodUnion, getDiscriminator, ZodDiscriminatedUnion, ZodIntersection, ZodTuple, ZodRecord, ZodMap, ZodSet, ZodFunction, ZodLazy, ZodLiteral, ZodEnum, ZodNativeEnum, ZodPromise, ZodEffects, ZodOptional, ZodNullable, ZodDefault, ZodCatch, ZodNaN, BRAND, ZodBranded, ZodPipeline, ZodReadonly, late, ZodFirstPartyTypeKind, instanceOfType, stringType, numberType, nanType, bigIntType, booleanType, dateType, symbolType, undefinedType, nullType, anyType, unknownType, neverType, voidType, arrayType, objectType, strictObjectType, unionType, discriminatedUnionType, intersectionType, tupleType, recordType, mapType, setType, functionType, lazyType, literalType, enumType, nativeEnumType, promiseType, effectsType, optionalType, nullableType, preprocessType, pipelineType, ostring, onumber, oboolean, coerce, NEVER, z;
 var init_lib = __esm({
   "node_modules/zod/lib/index.mjs"() {
     (function(util2) {
@@ -382,6 +412,9 @@ var init_lib = __esm({
       return json.replace(/"([^"]+)":/g, "$1:");
     };
     ZodError = class extends Error {
+      get errors() {
+        return this.issues;
+      }
       constructor(issues) {
         super();
         this.issues = [];
@@ -399,9 +432,6 @@ var init_lib = __esm({
         }
         this.name = "ZodError";
         this.issues = issues;
-      }
-      get errors() {
-        return this.issues;
       }
       format(_mapper) {
         const mapper = _mapper || function(issue) {
@@ -705,34 +735,6 @@ var init_lib = __esm({
       }
     };
     ZodType = class {
-      constructor(def) {
-        this.spa = this.safeParseAsync;
-        this._def = def;
-        this.parse = this.parse.bind(this);
-        this.safeParse = this.safeParse.bind(this);
-        this.parseAsync = this.parseAsync.bind(this);
-        this.safeParseAsync = this.safeParseAsync.bind(this);
-        this.spa = this.spa.bind(this);
-        this.refine = this.refine.bind(this);
-        this.refinement = this.refinement.bind(this);
-        this.superRefine = this.superRefine.bind(this);
-        this.optional = this.optional.bind(this);
-        this.nullable = this.nullable.bind(this);
-        this.nullish = this.nullish.bind(this);
-        this.array = this.array.bind(this);
-        this.promise = this.promise.bind(this);
-        this.or = this.or.bind(this);
-        this.and = this.and.bind(this);
-        this.transform = this.transform.bind(this);
-        this.brand = this.brand.bind(this);
-        this.default = this.default.bind(this);
-        this.catch = this.catch.bind(this);
-        this.describe = this.describe.bind(this);
-        this.pipe = this.pipe.bind(this);
-        this.readonly = this.readonly.bind(this);
-        this.isNullable = this.isNullable.bind(this);
-        this.isOptional = this.isOptional.bind(this);
-      }
       get description() {
         return this._def.description;
       }
@@ -795,6 +797,43 @@ var init_lib = __esm({
         };
         const result = this._parseSync({ data, path: ctx.path, parent: ctx });
         return handleResult(ctx, result);
+      }
+      "~validate"(data) {
+        var _a5, _b;
+        const ctx = {
+          common: {
+            issues: [],
+            async: !!this["~standard"].async
+          },
+          path: [],
+          schemaErrorMap: this._def.errorMap,
+          parent: null,
+          data,
+          parsedType: getParsedType(data)
+        };
+        if (!this["~standard"].async) {
+          try {
+            const result = this._parseSync({ data, path: [], parent: ctx });
+            return isValid(result) ? {
+              value: result.value
+            } : {
+              issues: ctx.common.issues
+            };
+          } catch (err) {
+            if ((_b = (_a5 = err === null || err === void 0 ? void 0 : err.message) === null || _a5 === void 0 ? void 0 : _a5.toLowerCase()) === null || _b === void 0 ? void 0 : _b.includes("encountered")) {
+              this["~standard"].async = true;
+            }
+            ctx.common = {
+              issues: [],
+              async: true
+            };
+          }
+        }
+        return this._parseAsync({ data, path: [], parent: ctx }).then((result) => isValid(result) ? {
+          value: result.value
+        } : {
+          issues: ctx.common.issues
+        });
       }
       async parseAsync(data, params) {
         const result = await this.safeParseAsync(data, params);
@@ -873,6 +912,39 @@ var init_lib = __esm({
       superRefine(refinement) {
         return this._refinement(refinement);
       }
+      constructor(def) {
+        this.spa = this.safeParseAsync;
+        this._def = def;
+        this.parse = this.parse.bind(this);
+        this.safeParse = this.safeParse.bind(this);
+        this.parseAsync = this.parseAsync.bind(this);
+        this.safeParseAsync = this.safeParseAsync.bind(this);
+        this.spa = this.spa.bind(this);
+        this.refine = this.refine.bind(this);
+        this.refinement = this.refinement.bind(this);
+        this.superRefine = this.superRefine.bind(this);
+        this.optional = this.optional.bind(this);
+        this.nullable = this.nullable.bind(this);
+        this.nullish = this.nullish.bind(this);
+        this.array = this.array.bind(this);
+        this.promise = this.promise.bind(this);
+        this.or = this.or.bind(this);
+        this.and = this.and.bind(this);
+        this.transform = this.transform.bind(this);
+        this.brand = this.brand.bind(this);
+        this.default = this.default.bind(this);
+        this.catch = this.catch.bind(this);
+        this.describe = this.describe.bind(this);
+        this.pipe = this.pipe.bind(this);
+        this.readonly = this.readonly.bind(this);
+        this.isNullable = this.isNullable.bind(this);
+        this.isOptional = this.isOptional.bind(this);
+        this["~standard"] = {
+          version: 1,
+          vendor: "zod",
+          validate: (data) => this["~validate"](data)
+        };
+      }
       optional() {
         return ZodOptional.create(this, this._def);
       }
@@ -883,7 +955,7 @@ var init_lib = __esm({
         return this.nullable().optional();
       }
       array() {
-        return ZodArray.create(this, this._def);
+        return ZodArray.create(this);
       }
       promise() {
         return ZodPromise.create(this, this._def);
@@ -949,15 +1021,19 @@ var init_lib = __esm({
     };
     cuidRegex = /^c[^\s-]{8,}$/i;
     cuid2Regex = /^[0-9a-z]+$/;
-    ulidRegex = /^[0-9A-HJKMNP-TV-Z]{26}$/;
+    ulidRegex = /^[0-9A-HJKMNP-TV-Z]{26}$/i;
     uuidRegex = /^[0-9a-fA-F]{8}\b-[0-9a-fA-F]{4}\b-[0-9a-fA-F]{4}\b-[0-9a-fA-F]{4}\b-[0-9a-fA-F]{12}$/i;
     nanoidRegex = /^[a-z0-9_-]{21}$/i;
+    jwtRegex = /^[A-Za-z0-9-_]+\.[A-Za-z0-9-_]+\.[A-Za-z0-9-_]*$/;
     durationRegex = /^[-+]?P(?!$)(?:(?:[-+]?\d+Y)|(?:[-+]?\d+[.,]\d+Y$))?(?:(?:[-+]?\d+M)|(?:[-+]?\d+[.,]\d+M$))?(?:(?:[-+]?\d+W)|(?:[-+]?\d+[.,]\d+W$))?(?:(?:[-+]?\d+D)|(?:[-+]?\d+[.,]\d+D$))?(?:T(?=[\d+-])(?:(?:[-+]?\d+H)|(?:[-+]?\d+[.,]\d+H$))?(?:(?:[-+]?\d+M)|(?:[-+]?\d+[.,]\d+M$))?(?:[-+]?\d+(?:[.,]\d+)?S)?)??$/;
     emailRegex = /^(?!\.)(?!.*\.\.)([A-Z0-9_'+\-\.]*)[A-Z0-9_+-]@([A-Z0-9][A-Z0-9\-]*\.)+[A-Z]{2,}$/i;
     _emojiRegex = `^(\\p{Extended_Pictographic}|\\p{Emoji_Component})+$`;
     ipv4Regex = /^(?:(?:25[0-5]|2[0-4][0-9]|1[0-9][0-9]|[1-9][0-9]|[0-9])\.){3}(?:25[0-5]|2[0-4][0-9]|1[0-9][0-9]|[1-9][0-9]|[0-9])$/;
-    ipv6Regex = /^(([a-f0-9]{1,4}:){7}|::([a-f0-9]{1,4}:){0,6}|([a-f0-9]{1,4}:){1}:([a-f0-9]{1,4}:){0,5}|([a-f0-9]{1,4}:){2}:([a-f0-9]{1,4}:){0,4}|([a-f0-9]{1,4}:){3}:([a-f0-9]{1,4}:){0,3}|([a-f0-9]{1,4}:){4}:([a-f0-9]{1,4}:){0,2}|([a-f0-9]{1,4}:){5}:([a-f0-9]{1,4}:){0,1})([a-f0-9]{1,4}|(((25[0-5])|(2[0-4][0-9])|(1[0-9]{2})|([0-9]{1,2}))\.){3}((25[0-5])|(2[0-4][0-9])|(1[0-9]{2})|([0-9]{1,2})))$/;
+    ipv4CidrRegex = /^(?:(?:25[0-5]|2[0-4][0-9]|1[0-9][0-9]|[1-9][0-9]|[0-9])\.){3}(?:25[0-5]|2[0-4][0-9]|1[0-9][0-9]|[1-9][0-9]|[0-9])\/(3[0-2]|[12]?[0-9])$/;
+    ipv6Regex = /^(([0-9a-fA-F]{1,4}:){7,7}[0-9a-fA-F]{1,4}|([0-9a-fA-F]{1,4}:){1,7}:|([0-9a-fA-F]{1,4}:){1,6}:[0-9a-fA-F]{1,4}|([0-9a-fA-F]{1,4}:){1,5}(:[0-9a-fA-F]{1,4}){1,2}|([0-9a-fA-F]{1,4}:){1,4}(:[0-9a-fA-F]{1,4}){1,3}|([0-9a-fA-F]{1,4}:){1,3}(:[0-9a-fA-F]{1,4}){1,4}|([0-9a-fA-F]{1,4}:){1,2}(:[0-9a-fA-F]{1,4}){1,5}|[0-9a-fA-F]{1,4}:((:[0-9a-fA-F]{1,4}){1,6})|:((:[0-9a-fA-F]{1,4}){1,7}|:)|fe80:(:[0-9a-fA-F]{0,4}){0,4}%[0-9a-zA-Z]{1,}|::(ffff(:0{1,4}){0,1}:){0,1}((25[0-5]|(2[0-4]|1{0,1}[0-9]){0,1}[0-9])\.){3,3}(25[0-5]|(2[0-4]|1{0,1}[0-9]){0,1}[0-9])|([0-9a-fA-F]{1,4}:){1,4}:((25[0-5]|(2[0-4]|1{0,1}[0-9]){0,1}[0-9])\.){3,3}(25[0-5]|(2[0-4]|1{0,1}[0-9]){0,1}[0-9]))$/;
+    ipv6CidrRegex = /^(([0-9a-fA-F]{1,4}:){7,7}[0-9a-fA-F]{1,4}|([0-9a-fA-F]{1,4}:){1,7}:|([0-9a-fA-F]{1,4}:){1,6}:[0-9a-fA-F]{1,4}|([0-9a-fA-F]{1,4}:){1,5}(:[0-9a-fA-F]{1,4}){1,2}|([0-9a-fA-F]{1,4}:){1,4}(:[0-9a-fA-F]{1,4}){1,3}|([0-9a-fA-F]{1,4}:){1,3}(:[0-9a-fA-F]{1,4}){1,4}|([0-9a-fA-F]{1,4}:){1,2}(:[0-9a-fA-F]{1,4}){1,5}|[0-9a-fA-F]{1,4}:((:[0-9a-fA-F]{1,4}){1,6})|:((:[0-9a-fA-F]{1,4}){1,7}|:)|fe80:(:[0-9a-fA-F]{0,4}){0,4}%[0-9a-zA-Z]{1,}|::(ffff(:0{1,4}){0,1}:){0,1}((25[0-5]|(2[0-4]|1{0,1}[0-9]){0,1}[0-9])\.){3,3}(25[0-5]|(2[0-4]|1{0,1}[0-9]){0,1}[0-9])|([0-9a-fA-F]{1,4}:){1,4}:((25[0-5]|(2[0-4]|1{0,1}[0-9]){0,1}[0-9])\.){3,3}(25[0-5]|(2[0-4]|1{0,1}[0-9]){0,1}[0-9]))\/(12[0-8]|1[01][0-9]|[1-9]?[0-9])$/;
     base64Regex = /^([0-9a-zA-Z+/]{4})*(([0-9a-zA-Z+/]{2}==)|([0-9a-zA-Z+/]{3}=))?$/;
+    base64urlRegex = /^([0-9a-zA-Z-_]{4})*(([0-9a-zA-Z-_]{2}(==)?)|([0-9a-zA-Z-_]{3}(=)?))?$/;
     dateRegexSource = `((\\d\\d[2468][048]|\\d\\d[13579][26]|\\d\\d0[48]|[02468][048]00|[13579][26]00)-02-29|\\d{4}-((0[13578]|1[02])-(0[1-9]|[12]\\d|3[01])|(0[469]|11)-(0[1-9]|[12]\\d|30)|(02)-(0[1-9]|1\\d|2[0-8])))`;
     dateRegex = new RegExp(`^${dateRegexSource}$`);
     ZodString = class extends ZodType {
@@ -1216,11 +1292,41 @@ var init_lib = __esm({
               });
               status.dirty();
             }
+          } else if (check.kind === "jwt") {
+            if (!isValidJWT(input.data, check.alg)) {
+              ctx = this._getOrReturnCtx(input, ctx);
+              addIssueToContext(ctx, {
+                validation: "jwt",
+                code: ZodIssueCode.invalid_string,
+                message: check.message
+              });
+              status.dirty();
+            }
+          } else if (check.kind === "cidr") {
+            if (!isValidCidr(input.data, check.version)) {
+              ctx = this._getOrReturnCtx(input, ctx);
+              addIssueToContext(ctx, {
+                validation: "cidr",
+                code: ZodIssueCode.invalid_string,
+                message: check.message
+              });
+              status.dirty();
+            }
           } else if (check.kind === "base64") {
             if (!base64Regex.test(input.data)) {
               ctx = this._getOrReturnCtx(input, ctx);
               addIssueToContext(ctx, {
                 validation: "base64",
+                code: ZodIssueCode.invalid_string,
+                message: check.message
+              });
+              status.dirty();
+            }
+          } else if (check.kind === "base64url") {
+            if (!base64urlRegex.test(input.data)) {
+              ctx = this._getOrReturnCtx(input, ctx);
+              addIssueToContext(ctx, {
+                validation: "base64url",
                 code: ZodIssueCode.invalid_string,
                 message: check.message
               });
@@ -1272,8 +1378,20 @@ var init_lib = __esm({
       base64(message) {
         return this._addCheck({ kind: "base64", ...errorUtil.errToObj(message) });
       }
+      base64url(message) {
+        return this._addCheck({
+          kind: "base64url",
+          ...errorUtil.errToObj(message)
+        });
+      }
+      jwt(options) {
+        return this._addCheck({ kind: "jwt", ...errorUtil.errToObj(options) });
+      }
       ip(options) {
         return this._addCheck({ kind: "ip", ...errorUtil.errToObj(options) });
+      }
+      cidr(options) {
+        return this._addCheck({ kind: "cidr", ...errorUtil.errToObj(options) });
       }
       datetime(options) {
         var _a5, _b;
@@ -1365,8 +1483,7 @@ var init_lib = __esm({
         });
       }
       /**
-       * @deprecated Use z.string().min(1) instead.
-       * @see {@link ZodString.min}
+       * Equivalent to `.min(1)`
        */
       nonempty(message) {
         return this.min(1, errorUtil.errToObj(message));
@@ -1428,8 +1545,14 @@ var init_lib = __esm({
       get isIP() {
         return !!this._def.checks.find((ch) => ch.kind === "ip");
       }
+      get isCIDR() {
+        return !!this._def.checks.find((ch) => ch.kind === "cidr");
+      }
       get isBase64() {
         return !!this._def.checks.find((ch) => ch.kind === "base64");
+      }
+      get isBase64url() {
+        return !!this._def.checks.find((ch) => ch.kind === "base64url");
       }
       get minLength() {
         let min2 = null;
@@ -1700,17 +1823,15 @@ var init_lib = __esm({
       }
       _parse(input) {
         if (this._def.coerce) {
-          input.data = BigInt(input.data);
+          try {
+            input.data = BigInt(input.data);
+          } catch (_a5) {
+            return this._getInvalidInput(input);
+          }
         }
         const parsedType = this._getType(input);
         if (parsedType !== ZodParsedType.bigint) {
-          const ctx2 = this._getOrReturnCtx(input);
-          addIssueToContext(ctx2, {
-            code: ZodIssueCode.invalid_type,
-            expected: ZodParsedType.bigint,
-            received: ctx2.parsedType
-          });
-          return INVALID;
+          return this._getInvalidInput(input);
         }
         let ctx = void 0;
         const status = new ParseStatus();
@@ -1756,6 +1877,15 @@ var init_lib = __esm({
           }
         }
         return { status: status.value, value: input.data };
+      }
+      _getInvalidInput(input) {
+        const ctx = this._getOrReturnCtx(input);
+        addIssueToContext(ctx, {
+          code: ZodIssueCode.invalid_type,
+          expected: ZodParsedType.bigint,
+          received: ctx.parsedType
+        });
+        return INVALID;
       }
       gte(value, message) {
         return this.setLimit("min", value, true, errorUtil.toString(message));
@@ -4365,1543 +4495,6 @@ var init_esm_browser = __esm({
   }
 });
 
-// node_modules/langsmith/dist/singletons/traceable.js
-function isTraceableFunction(x2) {
-  return typeof x2 === "function" && "langsmith:traceable" in x2;
-}
-var MockAsyncLocalStorage, TRACING_ALS_KEY, mockAsyncLocalStorage, AsyncLocalStorageProvider, AsyncLocalStorageProviderSingleton, getCurrentRunTree, ROOT;
-var init_traceable = __esm({
-  "node_modules/langsmith/dist/singletons/traceable.js"() {
-    MockAsyncLocalStorage = class {
-      getStore() {
-        return void 0;
-      }
-      run(_2, callback) {
-        return callback();
-      }
-    };
-    TRACING_ALS_KEY = Symbol.for("ls:tracing_async_local_storage");
-    mockAsyncLocalStorage = new MockAsyncLocalStorage();
-    AsyncLocalStorageProvider = class {
-      getInstance() {
-        return globalThis[TRACING_ALS_KEY] ?? mockAsyncLocalStorage;
-      }
-      initializeGlobalInstance(instance) {
-        if (globalThis[TRACING_ALS_KEY] === void 0) {
-          globalThis[TRACING_ALS_KEY] = instance;
-        }
-      }
-    };
-    AsyncLocalStorageProviderSingleton = new AsyncLocalStorageProvider();
-    getCurrentRunTree = () => {
-      const runTree = AsyncLocalStorageProviderSingleton.getInstance().getStore();
-      if (runTree === void 0) {
-        throw new Error([
-          "Could not get the current run tree.",
-          "",
-          "Please make sure you are calling this method within a traceable function or the tracing is enabled."
-        ].join("\n"));
-      }
-      return runTree;
-    };
-    ROOT = Symbol.for("langsmith:traceable:root");
-  }
-});
-
-// node_modules/langsmith/singletons/traceable.js
-var init_traceable2 = __esm({
-  "node_modules/langsmith/singletons/traceable.js"() {
-    init_traceable();
-  }
-});
-
-// node_modules/@langchain/core/dist/utils/fast-json-patch/src/helpers.js
-function hasOwnProperty(obj, key) {
-  return _hasOwnProperty.call(obj, key);
-}
-function _objectKeys(obj) {
-  if (Array.isArray(obj)) {
-    const keys2 = new Array(obj.length);
-    for (let k3 = 0; k3 < keys2.length; k3++) {
-      keys2[k3] = "" + k3;
-    }
-    return keys2;
-  }
-  if (Object.keys) {
-    return Object.keys(obj);
-  }
-  let keys = [];
-  for (let i3 in obj) {
-    if (hasOwnProperty(obj, i3)) {
-      keys.push(i3);
-    }
-  }
-  return keys;
-}
-function _deepClone(obj) {
-  switch (typeof obj) {
-    case "object":
-      return JSON.parse(JSON.stringify(obj));
-    case "undefined":
-      return null;
-    default:
-      return obj;
-  }
-}
-function isInteger(str2) {
-  let i3 = 0;
-  const len = str2.length;
-  let charCode;
-  while (i3 < len) {
-    charCode = str2.charCodeAt(i3);
-    if (charCode >= 48 && charCode <= 57) {
-      i3++;
-      continue;
-    }
-    return false;
-  }
-  return true;
-}
-function escapePathComponent(path) {
-  if (path.indexOf("/") === -1 && path.indexOf("~") === -1)
-    return path;
-  return path.replace(/~/g, "~0").replace(/\//g, "~1");
-}
-function unescapePathComponent(path) {
-  return path.replace(/~1/g, "/").replace(/~0/g, "~");
-}
-function hasUndefined(obj) {
-  if (obj === void 0) {
-    return true;
-  }
-  if (obj) {
-    if (Array.isArray(obj)) {
-      for (let i4 = 0, len = obj.length; i4 < len; i4++) {
-        if (hasUndefined(obj[i4])) {
-          return true;
-        }
-      }
-    } else if (typeof obj === "object") {
-      const objKeys = _objectKeys(obj);
-      const objKeysLength = objKeys.length;
-      for (var i3 = 0; i3 < objKeysLength; i3++) {
-        if (hasUndefined(obj[objKeys[i3]])) {
-          return true;
-        }
-      }
-    }
-  }
-  return false;
-}
-function patchErrorMessageFormatter(message, args) {
-  const messageParts = [message];
-  for (const key in args) {
-    const value = typeof args[key] === "object" ? JSON.stringify(args[key], null, 2) : args[key];
-    if (typeof value !== "undefined") {
-      messageParts.push(`${key}: ${value}`);
-    }
-  }
-  return messageParts.join("\n");
-}
-var _hasOwnProperty, PatchError;
-var init_helpers = __esm({
-  "node_modules/@langchain/core/dist/utils/fast-json-patch/src/helpers.js"() {
-    _hasOwnProperty = Object.prototype.hasOwnProperty;
-    PatchError = class extends Error {
-      constructor(message, name, index2, operation, tree) {
-        super(patchErrorMessageFormatter(message, { name, index: index2, operation, tree }));
-        Object.defineProperty(this, "name", {
-          enumerable: true,
-          configurable: true,
-          writable: true,
-          value: name
-        });
-        Object.defineProperty(this, "index", {
-          enumerable: true,
-          configurable: true,
-          writable: true,
-          value: index2
-        });
-        Object.defineProperty(this, "operation", {
-          enumerable: true,
-          configurable: true,
-          writable: true,
-          value: operation
-        });
-        Object.defineProperty(this, "tree", {
-          enumerable: true,
-          configurable: true,
-          writable: true,
-          value: tree
-        });
-        Object.setPrototypeOf(this, new.target.prototype);
-        this.message = patchErrorMessageFormatter(message, {
-          name,
-          index: index2,
-          operation,
-          tree
-        });
-      }
-    };
-  }
-});
-
-// node_modules/@langchain/core/dist/utils/fast-json-patch/src/core.js
-var core_exports = {};
-__export(core_exports, {
-  JsonPatchError: () => JsonPatchError,
-  _areEquals: () => _areEquals,
-  applyOperation: () => applyOperation,
-  applyPatch: () => applyPatch,
-  applyReducer: () => applyReducer,
-  deepClone: () => deepClone,
-  getValueByPointer: () => getValueByPointer,
-  validate: () => validate2,
-  validator: () => validator
-});
-function getValueByPointer(document2, pointer) {
-  if (pointer == "") {
-    return document2;
-  }
-  var getOriginalDestination = { op: "_get", path: pointer };
-  applyOperation(document2, getOriginalDestination);
-  return getOriginalDestination.value;
-}
-function applyOperation(document2, operation, validateOperation = false, mutateDocument = true, banPrototypeModifications = true, index2 = 0) {
-  if (validateOperation) {
-    if (typeof validateOperation == "function") {
-      validateOperation(operation, 0, document2, operation.path);
-    } else {
-      validator(operation, 0);
-    }
-  }
-  if (operation.path === "") {
-    let returnValue = { newDocument: document2 };
-    if (operation.op === "add") {
-      returnValue.newDocument = operation.value;
-      return returnValue;
-    } else if (operation.op === "replace") {
-      returnValue.newDocument = operation.value;
-      returnValue.removed = document2;
-      return returnValue;
-    } else if (operation.op === "move" || operation.op === "copy") {
-      returnValue.newDocument = getValueByPointer(document2, operation.from);
-      if (operation.op === "move") {
-        returnValue.removed = document2;
-      }
-      return returnValue;
-    } else if (operation.op === "test") {
-      returnValue.test = _areEquals(document2, operation.value);
-      if (returnValue.test === false) {
-        throw new JsonPatchError("Test operation failed", "TEST_OPERATION_FAILED", index2, operation, document2);
-      }
-      returnValue.newDocument = document2;
-      return returnValue;
-    } else if (operation.op === "remove") {
-      returnValue.removed = document2;
-      returnValue.newDocument = null;
-      return returnValue;
-    } else if (operation.op === "_get") {
-      operation.value = document2;
-      return returnValue;
-    } else {
-      if (validateOperation) {
-        throw new JsonPatchError("Operation `op` property is not one of operations defined in RFC-6902", "OPERATION_OP_INVALID", index2, operation, document2);
-      } else {
-        return returnValue;
-      }
-    }
-  } else {
-    if (!mutateDocument) {
-      document2 = _deepClone(document2);
-    }
-    const path = operation.path || "";
-    const keys = path.split("/");
-    let obj = document2;
-    let t3 = 1;
-    let len = keys.length;
-    let existingPathFragment = void 0;
-    let key;
-    let validateFunction;
-    if (typeof validateOperation == "function") {
-      validateFunction = validateOperation;
-    } else {
-      validateFunction = validator;
-    }
-    while (true) {
-      key = keys[t3];
-      if (key && key.indexOf("~") != -1) {
-        key = unescapePathComponent(key);
-      }
-      if (banPrototypeModifications && (key == "__proto__" || key == "prototype" && t3 > 0 && keys[t3 - 1] == "constructor")) {
-        throw new TypeError("JSON-Patch: modifying `__proto__` or `constructor/prototype` prop is banned for security reasons, if this was on purpose, please set `banPrototypeModifications` flag false and pass it to this function. More info in fast-json-patch README");
-      }
-      if (validateOperation) {
-        if (existingPathFragment === void 0) {
-          if (obj[key] === void 0) {
-            existingPathFragment = keys.slice(0, t3).join("/");
-          } else if (t3 == len - 1) {
-            existingPathFragment = operation.path;
-          }
-          if (existingPathFragment !== void 0) {
-            validateFunction(operation, 0, document2, existingPathFragment);
-          }
-        }
-      }
-      t3++;
-      if (Array.isArray(obj)) {
-        if (key === "-") {
-          key = obj.length;
-        } else {
-          if (validateOperation && !isInteger(key)) {
-            throw new JsonPatchError("Expected an unsigned base-10 integer value, making the new referenced value the array element with the zero-based index", "OPERATION_PATH_ILLEGAL_ARRAY_INDEX", index2, operation, document2);
-          } else if (isInteger(key)) {
-            key = ~~key;
-          }
-        }
-        if (t3 >= len) {
-          if (validateOperation && operation.op === "add" && key > obj.length) {
-            throw new JsonPatchError("The specified index MUST NOT be greater than the number of elements in the array", "OPERATION_VALUE_OUT_OF_BOUNDS", index2, operation, document2);
-          }
-          const returnValue = arrOps[operation.op].call(operation, obj, key, document2);
-          if (returnValue.test === false) {
-            throw new JsonPatchError("Test operation failed", "TEST_OPERATION_FAILED", index2, operation, document2);
-          }
-          return returnValue;
-        }
-      } else {
-        if (t3 >= len) {
-          const returnValue = objOps[operation.op].call(operation, obj, key, document2);
-          if (returnValue.test === false) {
-            throw new JsonPatchError("Test operation failed", "TEST_OPERATION_FAILED", index2, operation, document2);
-          }
-          return returnValue;
-        }
-      }
-      obj = obj[key];
-      if (validateOperation && t3 < len && (!obj || typeof obj !== "object")) {
-        throw new JsonPatchError("Cannot perform operation at the desired path", "OPERATION_PATH_UNRESOLVABLE", index2, operation, document2);
-      }
-    }
-  }
-}
-function applyPatch(document2, patch, validateOperation, mutateDocument = true, banPrototypeModifications = true) {
-  if (validateOperation) {
-    if (!Array.isArray(patch)) {
-      throw new JsonPatchError("Patch sequence must be an array", "SEQUENCE_NOT_AN_ARRAY");
-    }
-  }
-  if (!mutateDocument) {
-    document2 = _deepClone(document2);
-  }
-  const results = new Array(patch.length);
-  for (let i3 = 0, length = patch.length; i3 < length; i3++) {
-    results[i3] = applyOperation(document2, patch[i3], validateOperation, true, banPrototypeModifications, i3);
-    document2 = results[i3].newDocument;
-  }
-  results.newDocument = document2;
-  return results;
-}
-function applyReducer(document2, operation, index2) {
-  const operationResult = applyOperation(document2, operation);
-  if (operationResult.test === false) {
-    throw new JsonPatchError("Test operation failed", "TEST_OPERATION_FAILED", index2, operation, document2);
-  }
-  return operationResult.newDocument;
-}
-function validator(operation, index2, document2, existingPathFragment) {
-  if (typeof operation !== "object" || operation === null || Array.isArray(operation)) {
-    throw new JsonPatchError("Operation is not an object", "OPERATION_NOT_AN_OBJECT", index2, operation, document2);
-  } else if (!objOps[operation.op]) {
-    throw new JsonPatchError("Operation `op` property is not one of operations defined in RFC-6902", "OPERATION_OP_INVALID", index2, operation, document2);
-  } else if (typeof operation.path !== "string") {
-    throw new JsonPatchError("Operation `path` property is not a string", "OPERATION_PATH_INVALID", index2, operation, document2);
-  } else if (operation.path.indexOf("/") !== 0 && operation.path.length > 0) {
-    throw new JsonPatchError('Operation `path` property must start with "/"', "OPERATION_PATH_INVALID", index2, operation, document2);
-  } else if ((operation.op === "move" || operation.op === "copy") && typeof operation.from !== "string") {
-    throw new JsonPatchError("Operation `from` property is not present (applicable in `move` and `copy` operations)", "OPERATION_FROM_REQUIRED", index2, operation, document2);
-  } else if ((operation.op === "add" || operation.op === "replace" || operation.op === "test") && operation.value === void 0) {
-    throw new JsonPatchError("Operation `value` property is not present (applicable in `add`, `replace` and `test` operations)", "OPERATION_VALUE_REQUIRED", index2, operation, document2);
-  } else if ((operation.op === "add" || operation.op === "replace" || operation.op === "test") && hasUndefined(operation.value)) {
-    throw new JsonPatchError("Operation `value` property is not present (applicable in `add`, `replace` and `test` operations)", "OPERATION_VALUE_CANNOT_CONTAIN_UNDEFINED", index2, operation, document2);
-  } else if (document2) {
-    if (operation.op == "add") {
-      var pathLen = operation.path.split("/").length;
-      var existingPathLen = existingPathFragment.split("/").length;
-      if (pathLen !== existingPathLen + 1 && pathLen !== existingPathLen) {
-        throw new JsonPatchError("Cannot perform an `add` operation at the desired path", "OPERATION_PATH_CANNOT_ADD", index2, operation, document2);
-      }
-    } else if (operation.op === "replace" || operation.op === "remove" || operation.op === "_get") {
-      if (operation.path !== existingPathFragment) {
-        throw new JsonPatchError("Cannot perform the operation at a path that does not exist", "OPERATION_PATH_UNRESOLVABLE", index2, operation, document2);
-      }
-    } else if (operation.op === "move" || operation.op === "copy") {
-      var existingValue = {
-        op: "_get",
-        path: operation.from,
-        value: void 0
-      };
-      var error = validate2([existingValue], document2);
-      if (error && error.name === "OPERATION_PATH_UNRESOLVABLE") {
-        throw new JsonPatchError("Cannot perform the operation from a path that does not exist", "OPERATION_FROM_UNRESOLVABLE", index2, operation, document2);
-      }
-    }
-  }
-}
-function validate2(sequence, document2, externalValidator) {
-  try {
-    if (!Array.isArray(sequence)) {
-      throw new JsonPatchError("Patch sequence must be an array", "SEQUENCE_NOT_AN_ARRAY");
-    }
-    if (document2) {
-      applyPatch(_deepClone(document2), _deepClone(sequence), externalValidator || true);
-    } else {
-      externalValidator = externalValidator || validator;
-      for (var i3 = 0; i3 < sequence.length; i3++) {
-        externalValidator(sequence[i3], i3, document2, void 0);
-      }
-    }
-  } catch (e3) {
-    if (e3 instanceof JsonPatchError) {
-      return e3;
-    } else {
-      throw e3;
-    }
-  }
-}
-function _areEquals(a3, b3) {
-  if (a3 === b3)
-    return true;
-  if (a3 && b3 && typeof a3 == "object" && typeof b3 == "object") {
-    var arrA = Array.isArray(a3), arrB = Array.isArray(b3), i3, length, key;
-    if (arrA && arrB) {
-      length = a3.length;
-      if (length != b3.length)
-        return false;
-      for (i3 = length; i3-- !== 0; )
-        if (!_areEquals(a3[i3], b3[i3]))
-          return false;
-      return true;
-    }
-    if (arrA != arrB)
-      return false;
-    var keys = Object.keys(a3);
-    length = keys.length;
-    if (length !== Object.keys(b3).length)
-      return false;
-    for (i3 = length; i3-- !== 0; )
-      if (!b3.hasOwnProperty(keys[i3]))
-        return false;
-    for (i3 = length; i3-- !== 0; ) {
-      key = keys[i3];
-      if (!_areEquals(a3[key], b3[key]))
-        return false;
-    }
-    return true;
-  }
-  return a3 !== a3 && b3 !== b3;
-}
-var JsonPatchError, deepClone, objOps, arrOps;
-var init_core = __esm({
-  "node_modules/@langchain/core/dist/utils/fast-json-patch/src/core.js"() {
-    init_helpers();
-    JsonPatchError = PatchError;
-    deepClone = _deepClone;
-    objOps = {
-      add: function(obj, key, document2) {
-        obj[key] = this.value;
-        return { newDocument: document2 };
-      },
-      remove: function(obj, key, document2) {
-        var removed = obj[key];
-        delete obj[key];
-        return { newDocument: document2, removed };
-      },
-      replace: function(obj, key, document2) {
-        var removed = obj[key];
-        obj[key] = this.value;
-        return { newDocument: document2, removed };
-      },
-      move: function(obj, key, document2) {
-        let removed = getValueByPointer(document2, this.path);
-        if (removed) {
-          removed = _deepClone(removed);
-        }
-        const originalValue = applyOperation(document2, {
-          op: "remove",
-          path: this.from
-        }).removed;
-        applyOperation(document2, {
-          op: "add",
-          path: this.path,
-          value: originalValue
-        });
-        return { newDocument: document2, removed };
-      },
-      copy: function(obj, key, document2) {
-        const valueToCopy = getValueByPointer(document2, this.from);
-        applyOperation(document2, {
-          op: "add",
-          path: this.path,
-          value: _deepClone(valueToCopy)
-        });
-        return { newDocument: document2 };
-      },
-      test: function(obj, key, document2) {
-        return { newDocument: document2, test: _areEquals(obj[key], this.value) };
-      },
-      _get: function(obj, key, document2) {
-        this.value = obj[key];
-        return { newDocument: document2 };
-      }
-    };
-    arrOps = {
-      add: function(arr2, i3, document2) {
-        if (isInteger(i3)) {
-          arr2.splice(i3, 0, this.value);
-        } else {
-          arr2[i3] = this.value;
-        }
-        return { newDocument: document2, index: i3 };
-      },
-      remove: function(arr2, i3, document2) {
-        var removedList = arr2.splice(i3, 1);
-        return { newDocument: document2, removed: removedList[0] };
-      },
-      replace: function(arr2, i3, document2) {
-        var removed = arr2[i3];
-        arr2[i3] = this.value;
-        return { newDocument: document2, removed };
-      },
-      move: objOps.move,
-      copy: objOps.copy,
-      test: objOps.test,
-      _get: objOps._get
-    };
-  }
-});
-
-// node_modules/@langchain/core/dist/utils/fast-json-patch/src/duplex.js
-function _generate(mirror, obj, patches, path, invertible) {
-  if (obj === mirror) {
-    return;
-  }
-  if (typeof obj.toJSON === "function") {
-    obj = obj.toJSON();
-  }
-  var newKeys = _objectKeys(obj);
-  var oldKeys = _objectKeys(mirror);
-  var changed = false;
-  var deleted = false;
-  for (var t3 = oldKeys.length - 1; t3 >= 0; t3--) {
-    var key = oldKeys[t3];
-    var oldVal = mirror[key];
-    if (hasOwnProperty(obj, key) && !(obj[key] === void 0 && oldVal !== void 0 && Array.isArray(obj) === false)) {
-      var newVal = obj[key];
-      if (typeof oldVal == "object" && oldVal != null && typeof newVal == "object" && newVal != null && Array.isArray(oldVal) === Array.isArray(newVal)) {
-        _generate(oldVal, newVal, patches, path + "/" + escapePathComponent(key), invertible);
-      } else {
-        if (oldVal !== newVal) {
-          changed = true;
-          if (invertible) {
-            patches.push({
-              op: "test",
-              path: path + "/" + escapePathComponent(key),
-              value: _deepClone(oldVal)
-            });
-          }
-          patches.push({
-            op: "replace",
-            path: path + "/" + escapePathComponent(key),
-            value: _deepClone(newVal)
-          });
-        }
-      }
-    } else if (Array.isArray(mirror) === Array.isArray(obj)) {
-      if (invertible) {
-        patches.push({
-          op: "test",
-          path: path + "/" + escapePathComponent(key),
-          value: _deepClone(oldVal)
-        });
-      }
-      patches.push({
-        op: "remove",
-        path: path + "/" + escapePathComponent(key)
-      });
-      deleted = true;
-    } else {
-      if (invertible) {
-        patches.push({ op: "test", path, value: mirror });
-      }
-      patches.push({ op: "replace", path, value: obj });
-      changed = true;
-    }
-  }
-  if (!deleted && newKeys.length == oldKeys.length) {
-    return;
-  }
-  for (var t3 = 0; t3 < newKeys.length; t3++) {
-    var key = newKeys[t3];
-    if (!hasOwnProperty(mirror, key) && obj[key] !== void 0) {
-      patches.push({
-        op: "add",
-        path: path + "/" + escapePathComponent(key),
-        value: _deepClone(obj[key])
-      });
-    }
-  }
-}
-function compare(tree1, tree2, invertible = false) {
-  var patches = [];
-  _generate(tree1, tree2, patches, "", invertible);
-  return patches;
-}
-var init_duplex = __esm({
-  "node_modules/@langchain/core/dist/utils/fast-json-patch/src/duplex.js"() {
-    init_helpers();
-    init_core();
-  }
-});
-
-// node_modules/@langchain/core/dist/utils/fast-json-patch/index.js
-var fast_json_patch_default;
-var init_fast_json_patch = __esm({
-  "node_modules/@langchain/core/dist/utils/fast-json-patch/index.js"() {
-    init_core();
-    init_duplex();
-    init_helpers();
-    init_core();
-    init_helpers();
-    fast_json_patch_default = {
-      ...core_exports,
-      // ...duplex,
-      JsonPatchError: PatchError,
-      deepClone: _deepClone,
-      escapePathComponent,
-      unescapePathComponent
-    };
-  }
-});
-
-// node_modules/decamelize/index.js
-var require_decamelize = __commonJS({
-  "node_modules/decamelize/index.js"(exports, module2) {
-    "use strict";
-    module2.exports = function(str2, sep) {
-      if (typeof str2 !== "string") {
-        throw new TypeError("Expected a string");
-      }
-      sep = typeof sep === "undefined" ? "_" : sep;
-      return str2.replace(/([a-z\d])([A-Z])/g, "$1" + sep + "$2").replace(/([A-Z]+)([A-Z][a-z\d]+)/g, "$1" + sep + "$2").toLowerCase();
-    };
-  }
-});
-
-// node_modules/@langchain/core/node_modules/camelcase/index.js
-var require_camelcase = __commonJS({
-  "node_modules/@langchain/core/node_modules/camelcase/index.js"(exports, module2) {
-    "use strict";
-    var UPPERCASE = /[\p{Lu}]/u;
-    var LOWERCASE = /[\p{Ll}]/u;
-    var LEADING_CAPITAL = /^[\p{Lu}](?![\p{Lu}])/gu;
-    var IDENTIFIER = /([\p{Alpha}\p{N}_]|$)/u;
-    var SEPARATORS = /[_.\- ]+/;
-    var LEADING_SEPARATORS = new RegExp("^" + SEPARATORS.source);
-    var SEPARATORS_AND_IDENTIFIER = new RegExp(SEPARATORS.source + IDENTIFIER.source, "gu");
-    var NUMBERS_AND_IDENTIFIER = new RegExp("\\d+" + IDENTIFIER.source, "gu");
-    var preserveCamelCase = (string, toLowerCase, toUpperCase) => {
-      let isLastCharLower = false;
-      let isLastCharUpper = false;
-      let isLastLastCharUpper = false;
-      for (let i3 = 0; i3 < string.length; i3++) {
-        const character = string[i3];
-        if (isLastCharLower && UPPERCASE.test(character)) {
-          string = string.slice(0, i3) + "-" + string.slice(i3);
-          isLastCharLower = false;
-          isLastLastCharUpper = isLastCharUpper;
-          isLastCharUpper = true;
-          i3++;
-        } else if (isLastCharUpper && isLastLastCharUpper && LOWERCASE.test(character)) {
-          string = string.slice(0, i3 - 1) + "-" + string.slice(i3 - 1);
-          isLastLastCharUpper = isLastCharUpper;
-          isLastCharUpper = false;
-          isLastCharLower = true;
-        } else {
-          isLastCharLower = toLowerCase(character) === character && toUpperCase(character) !== character;
-          isLastLastCharUpper = isLastCharUpper;
-          isLastCharUpper = toUpperCase(character) === character && toLowerCase(character) !== character;
-        }
-      }
-      return string;
-    };
-    var preserveConsecutiveUppercase = (input, toLowerCase) => {
-      LEADING_CAPITAL.lastIndex = 0;
-      return input.replace(LEADING_CAPITAL, (m1) => toLowerCase(m1));
-    };
-    var postProcess = (input, toUpperCase) => {
-      SEPARATORS_AND_IDENTIFIER.lastIndex = 0;
-      NUMBERS_AND_IDENTIFIER.lastIndex = 0;
-      return input.replace(SEPARATORS_AND_IDENTIFIER, (_2, identifier) => toUpperCase(identifier)).replace(NUMBERS_AND_IDENTIFIER, (m3) => toUpperCase(m3));
-    };
-    var camelCase2 = (input, options) => {
-      if (!(typeof input === "string" || Array.isArray(input))) {
-        throw new TypeError("Expected the input to be `string | string[]`");
-      }
-      options = {
-        pascalCase: false,
-        preserveConsecutiveUppercase: false,
-        ...options
-      };
-      if (Array.isArray(input)) {
-        input = input.map((x2) => x2.trim()).filter((x2) => x2.length).join("-");
-      } else {
-        input = input.trim();
-      }
-      if (input.length === 0) {
-        return "";
-      }
-      const toLowerCase = options.locale === false ? (string) => string.toLowerCase() : (string) => string.toLocaleLowerCase(options.locale);
-      const toUpperCase = options.locale === false ? (string) => string.toUpperCase() : (string) => string.toLocaleUpperCase(options.locale);
-      if (input.length === 1) {
-        return options.pascalCase ? toUpperCase(input) : toLowerCase(input);
-      }
-      const hasUpperCase = input !== toLowerCase(input);
-      if (hasUpperCase) {
-        input = preserveCamelCase(input, toLowerCase, toUpperCase);
-      }
-      input = input.replace(LEADING_SEPARATORS, "");
-      if (options.preserveConsecutiveUppercase) {
-        input = preserveConsecutiveUppercase(input, toLowerCase);
-      } else {
-        input = toLowerCase(input);
-      }
-      if (options.pascalCase) {
-        input = toUpperCase(input.charAt(0)) + input.slice(1);
-      }
-      return postProcess(input, toUpperCase);
-    };
-    module2.exports = camelCase2;
-    module2.exports.default = camelCase2;
-  }
-});
-
-// node_modules/@langchain/core/dist/load/map_keys.js
-function keyToJson(key, map) {
-  return map?.[key] || (0, import_decamelize.default)(key);
-}
-function mapKeys(fields, mapper, map) {
-  const mapped = {};
-  for (const key in fields) {
-    if (Object.hasOwn(fields, key)) {
-      mapped[mapper(key, map)] = fields[key];
-    }
-  }
-  return mapped;
-}
-var import_decamelize, import_camelcase;
-var init_map_keys = __esm({
-  "node_modules/@langchain/core/dist/load/map_keys.js"() {
-    import_decamelize = __toESM(require_decamelize(), 1);
-    import_camelcase = __toESM(require_camelcase(), 1);
-  }
-});
-
-// node_modules/@langchain/core/dist/load/serializable.js
-function shallowCopy(obj) {
-  return Array.isArray(obj) ? [...obj] : { ...obj };
-}
-function replaceSecrets(root2, secretsMap) {
-  const result = shallowCopy(root2);
-  for (const [path, secretId] of Object.entries(secretsMap)) {
-    const [last, ...partsReverse] = path.split(".").reverse();
-    let current = result;
-    for (const part of partsReverse.reverse()) {
-      if (current[part] === void 0) {
-        break;
-      }
-      current[part] = shallowCopy(current[part]);
-      current = current[part];
-    }
-    if (current[last] !== void 0) {
-      current[last] = {
-        lc: 1,
-        type: "secret",
-        id: [secretId]
-      };
-    }
-  }
-  return result;
-}
-function get_lc_unique_name(serializableClass) {
-  const parentClass = Object.getPrototypeOf(serializableClass);
-  const lcNameIsSubclassed = typeof serializableClass.lc_name === "function" && (typeof parentClass.lc_name !== "function" || serializableClass.lc_name() !== parentClass.lc_name());
-  if (lcNameIsSubclassed) {
-    return serializableClass.lc_name();
-  } else {
-    return serializableClass.name;
-  }
-}
-var Serializable;
-var init_serializable = __esm({
-  "node_modules/@langchain/core/dist/load/serializable.js"() {
-    init_map_keys();
-    Serializable = class {
-      /**
-       * The name of the serializable. Override to provide an alias or
-       * to preserve the serialized module name in minified environments.
-       *
-       * Implemented as a static method to support loading logic.
-       */
-      static lc_name() {
-        return this.name;
-      }
-      /**
-       * The final serialized identifier for the module.
-       */
-      get lc_id() {
-        return [
-          ...this.lc_namespace,
-          get_lc_unique_name(this.constructor)
-        ];
-      }
-      /**
-       * A map of secrets, which will be omitted from serialization.
-       * Keys are paths to the secret in constructor args, e.g. "foo.bar.baz".
-       * Values are the secret ids, which will be used when deserializing.
-       */
-      get lc_secrets() {
-        return void 0;
-      }
-      /**
-       * A map of additional attributes to merge with constructor args.
-       * Keys are the attribute names, e.g. "foo".
-       * Values are the attribute values, which will be serialized.
-       * These attributes need to be accepted by the constructor as arguments.
-       */
-      get lc_attributes() {
-        return void 0;
-      }
-      /**
-       * A map of aliases for constructor args.
-       * Keys are the attribute names, e.g. "foo".
-       * Values are the alias that will replace the key in serialization.
-       * This is used to eg. make argument names match Python.
-       */
-      get lc_aliases() {
-        return void 0;
-      }
-      constructor(kwargs, ..._args) {
-        Object.defineProperty(this, "lc_serializable", {
-          enumerable: true,
-          configurable: true,
-          writable: true,
-          value: false
-        });
-        Object.defineProperty(this, "lc_kwargs", {
-          enumerable: true,
-          configurable: true,
-          writable: true,
-          value: void 0
-        });
-        this.lc_kwargs = kwargs || {};
-      }
-      toJSON() {
-        if (!this.lc_serializable) {
-          return this.toJSONNotImplemented();
-        }
-        if (
-          // eslint-disable-next-line no-instanceof/no-instanceof
-          this.lc_kwargs instanceof Serializable || typeof this.lc_kwargs !== "object" || Array.isArray(this.lc_kwargs)
-        ) {
-          return this.toJSONNotImplemented();
-        }
-        const aliases = {};
-        const secrets = {};
-        const kwargs = Object.keys(this.lc_kwargs).reduce((acc, key) => {
-          acc[key] = key in this ? this[key] : this.lc_kwargs[key];
-          return acc;
-        }, {});
-        for (let current = Object.getPrototypeOf(this); current; current = Object.getPrototypeOf(current)) {
-          Object.assign(aliases, Reflect.get(current, "lc_aliases", this));
-          Object.assign(secrets, Reflect.get(current, "lc_secrets", this));
-          Object.assign(kwargs, Reflect.get(current, "lc_attributes", this));
-        }
-        Object.keys(secrets).forEach((keyPath) => {
-          let read = this;
-          let write = kwargs;
-          const [last, ...partsReverse] = keyPath.split(".").reverse();
-          for (const key of partsReverse.reverse()) {
-            if (!(key in read) || read[key] === void 0)
-              return;
-            if (!(key in write) || write[key] === void 0) {
-              if (typeof read[key] === "object" && read[key] != null) {
-                write[key] = {};
-              } else if (Array.isArray(read[key])) {
-                write[key] = [];
-              }
-            }
-            read = read[key];
-            write = write[key];
-          }
-          if (last in read && read[last] !== void 0) {
-            write[last] = write[last] || read[last];
-          }
-        });
-        return {
-          lc: 1,
-          type: "constructor",
-          id: this.lc_id,
-          kwargs: mapKeys(Object.keys(secrets).length ? replaceSecrets(kwargs, secrets) : kwargs, keyToJson, aliases)
-        };
-      }
-      toJSONNotImplemented() {
-        return {
-          lc: 1,
-          type: "not_implemented",
-          id: this.lc_id
-        };
-      }
-    };
-  }
-});
-
-// node_modules/@langchain/core/dist/utils/env.js
-async function getRuntimeEnvironment() {
-  if (runtimeEnvironment === void 0) {
-    const env = getEnv();
-    runtimeEnvironment = {
-      library: "langchain-js",
-      runtime: env
-    };
-  }
-  return runtimeEnvironment;
-}
-function getEnvironmentVariable(name) {
-  try {
-    return typeof process !== "undefined" ? (
-      // eslint-disable-next-line no-process-env
-      process.env?.[name]
-    ) : void 0;
-  } catch (e3) {
-    return void 0;
-  }
-}
-var isBrowser, isWebWorker, isJsDom, isDeno, isNode, getEnv, runtimeEnvironment;
-var init_env = __esm({
-  "node_modules/@langchain/core/dist/utils/env.js"() {
-    isBrowser = () => typeof window !== "undefined" && typeof window.document !== "undefined";
-    isWebWorker = () => typeof globalThis === "object" && globalThis.constructor && globalThis.constructor.name === "DedicatedWorkerGlobalScope";
-    isJsDom = () => typeof window !== "undefined" && window.name === "nodejs" || typeof navigator !== "undefined" && (navigator.userAgent.includes("Node.js") || navigator.userAgent.includes("jsdom"));
-    isDeno = () => typeof Deno !== "undefined";
-    isNode = () => typeof process !== "undefined" && typeof process.versions !== "undefined" && typeof process.versions.node !== "undefined" && !isDeno();
-    getEnv = () => {
-      let env;
-      if (isBrowser()) {
-        env = "browser";
-      } else if (isNode()) {
-        env = "node";
-      } else if (isWebWorker()) {
-        env = "webworker";
-      } else if (isJsDom()) {
-        env = "jsdom";
-      } else if (isDeno()) {
-        env = "deno";
-      } else {
-        env = "other";
-      }
-      return env;
-    };
-  }
-});
-
-// node_modules/@langchain/core/dist/callbacks/base.js
-var BaseCallbackHandlerMethodsClass, BaseCallbackHandler;
-var init_base = __esm({
-  "node_modules/@langchain/core/dist/callbacks/base.js"() {
-    init_esm_browser();
-    init_serializable();
-    init_env();
-    BaseCallbackHandlerMethodsClass = class {
-    };
-    BaseCallbackHandler = class extends BaseCallbackHandlerMethodsClass {
-      get lc_namespace() {
-        return ["langchain_core", "callbacks", this.name];
-      }
-      get lc_secrets() {
-        return void 0;
-      }
-      get lc_attributes() {
-        return void 0;
-      }
-      get lc_aliases() {
-        return void 0;
-      }
-      /**
-       * The name of the serializable. Override to provide an alias or
-       * to preserve the serialized module name in minified environments.
-       *
-       * Implemented as a static method to support loading logic.
-       */
-      static lc_name() {
-        return this.name;
-      }
-      /**
-       * The final serialized identifier for the module.
-       */
-      get lc_id() {
-        return [
-          ...this.lc_namespace,
-          get_lc_unique_name(this.constructor)
-        ];
-      }
-      constructor(input) {
-        super();
-        Object.defineProperty(this, "lc_serializable", {
-          enumerable: true,
-          configurable: true,
-          writable: true,
-          value: false
-        });
-        Object.defineProperty(this, "lc_kwargs", {
-          enumerable: true,
-          configurable: true,
-          writable: true,
-          value: void 0
-        });
-        Object.defineProperty(this, "ignoreLLM", {
-          enumerable: true,
-          configurable: true,
-          writable: true,
-          value: false
-        });
-        Object.defineProperty(this, "ignoreChain", {
-          enumerable: true,
-          configurable: true,
-          writable: true,
-          value: false
-        });
-        Object.defineProperty(this, "ignoreAgent", {
-          enumerable: true,
-          configurable: true,
-          writable: true,
-          value: false
-        });
-        Object.defineProperty(this, "ignoreRetriever", {
-          enumerable: true,
-          configurable: true,
-          writable: true,
-          value: false
-        });
-        Object.defineProperty(this, "ignoreCustomEvent", {
-          enumerable: true,
-          configurable: true,
-          writable: true,
-          value: false
-        });
-        Object.defineProperty(this, "raiseError", {
-          enumerable: true,
-          configurable: true,
-          writable: true,
-          value: false
-        });
-        Object.defineProperty(this, "awaitHandlers", {
-          enumerable: true,
-          configurable: true,
-          writable: true,
-          value: getEnvironmentVariable("LANGCHAIN_CALLBACKS_BACKGROUND") === "false"
-        });
-        this.lc_kwargs = input || {};
-        if (input) {
-          this.ignoreLLM = input.ignoreLLM ?? this.ignoreLLM;
-          this.ignoreChain = input.ignoreChain ?? this.ignoreChain;
-          this.ignoreAgent = input.ignoreAgent ?? this.ignoreAgent;
-          this.ignoreRetriever = input.ignoreRetriever ?? this.ignoreRetriever;
-          this.ignoreCustomEvent = input.ignoreCustomEvent ?? this.ignoreCustomEvent;
-          this.raiseError = input.raiseError ?? this.raiseError;
-          this.awaitHandlers = this.raiseError || (input._awaitHandler ?? this.awaitHandlers);
-        }
-      }
-      copy() {
-        return new this.constructor(this);
-      }
-      toJSON() {
-        return Serializable.prototype.toJSON.call(this);
-      }
-      toJSONNotImplemented() {
-        return Serializable.prototype.toJSONNotImplemented.call(this);
-      }
-      static fromMethods(methods2) {
-        class Handler extends BaseCallbackHandler {
-          constructor() {
-            super();
-            Object.defineProperty(this, "name", {
-              enumerable: true,
-              configurable: true,
-              writable: true,
-              value: v4_default()
-            });
-            Object.assign(this, methods2);
-          }
-        }
-        return new Handler();
-      }
-    };
-  }
-});
-
-// node_modules/@langchain/core/dist/tracers/base.js
-function _coerceToDict(value, defaultKey) {
-  return value && !Array.isArray(value) && typeof value === "object" ? value : { [defaultKey]: value };
-}
-function stripNonAlphanumeric(input) {
-  return input.replace(/[-:.]/g, "");
-}
-function convertToDottedOrderFormat(epoch, runId, executionOrder) {
-  const paddedOrder = executionOrder.toFixed(0).slice(0, 3).padStart(3, "0");
-  return stripNonAlphanumeric(`${new Date(epoch).toISOString().slice(0, -1)}${paddedOrder}Z`) + runId;
-}
-function isBaseTracer(x2) {
-  return typeof x2._addRunToRunMap === "function";
-}
-var BaseTracer;
-var init_base2 = __esm({
-  "node_modules/@langchain/core/dist/tracers/base.js"() {
-    init_base();
-    BaseTracer = class extends BaseCallbackHandler {
-      constructor(_fields) {
-        super(...arguments);
-        Object.defineProperty(this, "runMap", {
-          enumerable: true,
-          configurable: true,
-          writable: true,
-          value: /* @__PURE__ */ new Map()
-        });
-      }
-      copy() {
-        return this;
-      }
-      stringifyError(error) {
-        if (error instanceof Error) {
-          return error.message + (error?.stack ? `
-
-${error.stack}` : "");
-        }
-        if (typeof error === "string") {
-          return error;
-        }
-        return `${error}`;
-      }
-      _addChildRun(parentRun, childRun) {
-        parentRun.child_runs.push(childRun);
-      }
-      _addRunToRunMap(run) {
-        const currentDottedOrder = convertToDottedOrderFormat(run.start_time, run.id, run.execution_order);
-        const storedRun = { ...run };
-        if (storedRun.parent_run_id !== void 0) {
-          const parentRun = this.runMap.get(storedRun.parent_run_id);
-          if (parentRun) {
-            this._addChildRun(parentRun, storedRun);
-            parentRun.child_execution_order = Math.max(parentRun.child_execution_order, storedRun.child_execution_order);
-            storedRun.trace_id = parentRun.trace_id;
-            if (parentRun.dotted_order !== void 0) {
-              storedRun.dotted_order = [
-                parentRun.dotted_order,
-                currentDottedOrder
-              ].join(".");
-            } else {
-            }
-          } else {
-          }
-        } else {
-          storedRun.trace_id = storedRun.id;
-          storedRun.dotted_order = currentDottedOrder;
-        }
-        this.runMap.set(storedRun.id, storedRun);
-        return storedRun;
-      }
-      async _endTrace(run) {
-        const parentRun = run.parent_run_id !== void 0 && this.runMap.get(run.parent_run_id);
-        if (parentRun) {
-          parentRun.child_execution_order = Math.max(parentRun.child_execution_order, run.child_execution_order);
-        } else {
-          await this.persistRun(run);
-        }
-        this.runMap.delete(run.id);
-        await this.onRunUpdate?.(run);
-      }
-      _getExecutionOrder(parentRunId) {
-        const parentRun = parentRunId !== void 0 && this.runMap.get(parentRunId);
-        if (!parentRun) {
-          return 1;
-        }
-        return parentRun.child_execution_order + 1;
-      }
-      /**
-       * Create and add a run to the run map for LLM start events.
-       * This must sometimes be done synchronously to avoid race conditions
-       * when callbacks are backgrounded, so we expose it as a separate method here.
-       */
-      _createRunForLLMStart(llm, prompts, runId, parentRunId, extraParams, tags, metadata, name) {
-        const execution_order = this._getExecutionOrder(parentRunId);
-        const start_time = Date.now();
-        const finalExtraParams = metadata ? { ...extraParams, metadata } : extraParams;
-        const run = {
-          id: runId,
-          name: name ?? llm.id[llm.id.length - 1],
-          parent_run_id: parentRunId,
-          start_time,
-          serialized: llm,
-          events: [
-            {
-              name: "start",
-              time: new Date(start_time).toISOString()
-            }
-          ],
-          inputs: { prompts },
-          execution_order,
-          child_runs: [],
-          child_execution_order: execution_order,
-          run_type: "llm",
-          extra: finalExtraParams ?? {},
-          tags: tags || []
-        };
-        return this._addRunToRunMap(run);
-      }
-      async handleLLMStart(llm, prompts, runId, parentRunId, extraParams, tags, metadata, name) {
-        const run = this.runMap.get(runId) ?? this._createRunForLLMStart(llm, prompts, runId, parentRunId, extraParams, tags, metadata, name);
-        await this.onRunCreate?.(run);
-        await this.onLLMStart?.(run);
-        return run;
-      }
-      /**
-       * Create and add a run to the run map for chat model start events.
-       * This must sometimes be done synchronously to avoid race conditions
-       * when callbacks are backgrounded, so we expose it as a separate method here.
-       */
-      _createRunForChatModelStart(llm, messages, runId, parentRunId, extraParams, tags, metadata, name) {
-        const execution_order = this._getExecutionOrder(parentRunId);
-        const start_time = Date.now();
-        const finalExtraParams = metadata ? { ...extraParams, metadata } : extraParams;
-        const run = {
-          id: runId,
-          name: name ?? llm.id[llm.id.length - 1],
-          parent_run_id: parentRunId,
-          start_time,
-          serialized: llm,
-          events: [
-            {
-              name: "start",
-              time: new Date(start_time).toISOString()
-            }
-          ],
-          inputs: { messages },
-          execution_order,
-          child_runs: [],
-          child_execution_order: execution_order,
-          run_type: "llm",
-          extra: finalExtraParams ?? {},
-          tags: tags || []
-        };
-        return this._addRunToRunMap(run);
-      }
-      async handleChatModelStart(llm, messages, runId, parentRunId, extraParams, tags, metadata, name) {
-        const run = this.runMap.get(runId) ?? this._createRunForChatModelStart(llm, messages, runId, parentRunId, extraParams, tags, metadata, name);
-        await this.onRunCreate?.(run);
-        await this.onLLMStart?.(run);
-        return run;
-      }
-      async handleLLMEnd(output, runId) {
-        const run = this.runMap.get(runId);
-        if (!run || run?.run_type !== "llm") {
-          throw new Error("No LLM run to end.");
-        }
-        run.end_time = Date.now();
-        run.outputs = output;
-        run.events.push({
-          name: "end",
-          time: new Date(run.end_time).toISOString()
-        });
-        await this.onLLMEnd?.(run);
-        await this._endTrace(run);
-        return run;
-      }
-      async handleLLMError(error, runId) {
-        const run = this.runMap.get(runId);
-        if (!run || run?.run_type !== "llm") {
-          throw new Error("No LLM run to end.");
-        }
-        run.end_time = Date.now();
-        run.error = this.stringifyError(error);
-        run.events.push({
-          name: "error",
-          time: new Date(run.end_time).toISOString()
-        });
-        await this.onLLMError?.(run);
-        await this._endTrace(run);
-        return run;
-      }
-      /**
-       * Create and add a run to the run map for chain start events.
-       * This must sometimes be done synchronously to avoid race conditions
-       * when callbacks are backgrounded, so we expose it as a separate method here.
-       */
-      _createRunForChainStart(chain, inputs, runId, parentRunId, tags, metadata, runType, name) {
-        const execution_order = this._getExecutionOrder(parentRunId);
-        const start_time = Date.now();
-        const run = {
-          id: runId,
-          name: name ?? chain.id[chain.id.length - 1],
-          parent_run_id: parentRunId,
-          start_time,
-          serialized: chain,
-          events: [
-            {
-              name: "start",
-              time: new Date(start_time).toISOString()
-            }
-          ],
-          inputs,
-          execution_order,
-          child_execution_order: execution_order,
-          run_type: runType ?? "chain",
-          child_runs: [],
-          extra: metadata ? { metadata } : {},
-          tags: tags || []
-        };
-        return this._addRunToRunMap(run);
-      }
-      async handleChainStart(chain, inputs, runId, parentRunId, tags, metadata, runType, name) {
-        const run = this.runMap.get(runId) ?? this._createRunForChainStart(chain, inputs, runId, parentRunId, tags, metadata, runType, name);
-        await this.onRunCreate?.(run);
-        await this.onChainStart?.(run);
-        return run;
-      }
-      async handleChainEnd(outputs, runId, _parentRunId, _tags, kwargs) {
-        const run = this.runMap.get(runId);
-        if (!run) {
-          throw new Error("No chain run to end.");
-        }
-        run.end_time = Date.now();
-        run.outputs = _coerceToDict(outputs, "output");
-        run.events.push({
-          name: "end",
-          time: new Date(run.end_time).toISOString()
-        });
-        if (kwargs?.inputs !== void 0) {
-          run.inputs = _coerceToDict(kwargs.inputs, "input");
-        }
-        await this.onChainEnd?.(run);
-        await this._endTrace(run);
-        return run;
-      }
-      async handleChainError(error, runId, _parentRunId, _tags, kwargs) {
-        const run = this.runMap.get(runId);
-        if (!run) {
-          throw new Error("No chain run to end.");
-        }
-        run.end_time = Date.now();
-        run.error = this.stringifyError(error);
-        run.events.push({
-          name: "error",
-          time: new Date(run.end_time).toISOString()
-        });
-        if (kwargs?.inputs !== void 0) {
-          run.inputs = _coerceToDict(kwargs.inputs, "input");
-        }
-        await this.onChainError?.(run);
-        await this._endTrace(run);
-        return run;
-      }
-      /**
-       * Create and add a run to the run map for tool start events.
-       * This must sometimes be done synchronously to avoid race conditions
-       * when callbacks are backgrounded, so we expose it as a separate method here.
-       */
-      _createRunForToolStart(tool2, input, runId, parentRunId, tags, metadata, name) {
-        const execution_order = this._getExecutionOrder(parentRunId);
-        const start_time = Date.now();
-        const run = {
-          id: runId,
-          name: name ?? tool2.id[tool2.id.length - 1],
-          parent_run_id: parentRunId,
-          start_time,
-          serialized: tool2,
-          events: [
-            {
-              name: "start",
-              time: new Date(start_time).toISOString()
-            }
-          ],
-          inputs: { input },
-          execution_order,
-          child_execution_order: execution_order,
-          run_type: "tool",
-          child_runs: [],
-          extra: metadata ? { metadata } : {},
-          tags: tags || []
-        };
-        return this._addRunToRunMap(run);
-      }
-      async handleToolStart(tool2, input, runId, parentRunId, tags, metadata, name) {
-        const run = this.runMap.get(runId) ?? this._createRunForToolStart(tool2, input, runId, parentRunId, tags, metadata, name);
-        await this.onRunCreate?.(run);
-        await this.onToolStart?.(run);
-        return run;
-      }
-      // eslint-disable-next-line @typescript-eslint/no-explicit-any
-      async handleToolEnd(output, runId) {
-        const run = this.runMap.get(runId);
-        if (!run || run?.run_type !== "tool") {
-          throw new Error("No tool run to end");
-        }
-        run.end_time = Date.now();
-        run.outputs = { output };
-        run.events.push({
-          name: "end",
-          time: new Date(run.end_time).toISOString()
-        });
-        await this.onToolEnd?.(run);
-        await this._endTrace(run);
-        return run;
-      }
-      async handleToolError(error, runId) {
-        const run = this.runMap.get(runId);
-        if (!run || run?.run_type !== "tool") {
-          throw new Error("No tool run to end");
-        }
-        run.end_time = Date.now();
-        run.error = this.stringifyError(error);
-        run.events.push({
-          name: "error",
-          time: new Date(run.end_time).toISOString()
-        });
-        await this.onToolError?.(run);
-        await this._endTrace(run);
-        return run;
-      }
-      async handleAgentAction(action, runId) {
-        const run = this.runMap.get(runId);
-        if (!run || run?.run_type !== "chain") {
-          return;
-        }
-        const agentRun = run;
-        agentRun.actions = agentRun.actions || [];
-        agentRun.actions.push(action);
-        agentRun.events.push({
-          name: "agent_action",
-          time: new Date().toISOString(),
-          kwargs: { action }
-        });
-        await this.onAgentAction?.(run);
-      }
-      async handleAgentEnd(action, runId) {
-        const run = this.runMap.get(runId);
-        if (!run || run?.run_type !== "chain") {
-          return;
-        }
-        run.events.push({
-          name: "agent_end",
-          time: new Date().toISOString(),
-          kwargs: { action }
-        });
-        await this.onAgentEnd?.(run);
-      }
-      /**
-       * Create and add a run to the run map for retriever start events.
-       * This must sometimes be done synchronously to avoid race conditions
-       * when callbacks are backgrounded, so we expose it as a separate method here.
-       */
-      _createRunForRetrieverStart(retriever, query, runId, parentRunId, tags, metadata, name) {
-        const execution_order = this._getExecutionOrder(parentRunId);
-        const start_time = Date.now();
-        const run = {
-          id: runId,
-          name: name ?? retriever.id[retriever.id.length - 1],
-          parent_run_id: parentRunId,
-          start_time,
-          serialized: retriever,
-          events: [
-            {
-              name: "start",
-              time: new Date(start_time).toISOString()
-            }
-          ],
-          inputs: { query },
-          execution_order,
-          child_execution_order: execution_order,
-          run_type: "retriever",
-          child_runs: [],
-          extra: metadata ? { metadata } : {},
-          tags: tags || []
-        };
-        return this._addRunToRunMap(run);
-      }
-      async handleRetrieverStart(retriever, query, runId, parentRunId, tags, metadata, name) {
-        const run = this.runMap.get(runId) ?? this._createRunForRetrieverStart(retriever, query, runId, parentRunId, tags, metadata, name);
-        await this.onRunCreate?.(run);
-        await this.onRetrieverStart?.(run);
-        return run;
-      }
-      async handleRetrieverEnd(documents, runId) {
-        const run = this.runMap.get(runId);
-        if (!run || run?.run_type !== "retriever") {
-          throw new Error("No retriever run to end");
-        }
-        run.end_time = Date.now();
-        run.outputs = { documents };
-        run.events.push({
-          name: "end",
-          time: new Date(run.end_time).toISOString()
-        });
-        await this.onRetrieverEnd?.(run);
-        await this._endTrace(run);
-        return run;
-      }
-      async handleRetrieverError(error, runId) {
-        const run = this.runMap.get(runId);
-        if (!run || run?.run_type !== "retriever") {
-          throw new Error("No retriever run to end");
-        }
-        run.end_time = Date.now();
-        run.error = this.stringifyError(error);
-        run.events.push({
-          name: "error",
-          time: new Date(run.end_time).toISOString()
-        });
-        await this.onRetrieverError?.(run);
-        await this._endTrace(run);
-        return run;
-      }
-      async handleText(text, runId) {
-        const run = this.runMap.get(runId);
-        if (!run || run?.run_type !== "chain") {
-          return;
-        }
-        run.events.push({
-          name: "text",
-          time: new Date().toISOString(),
-          kwargs: { text }
-        });
-        await this.onText?.(run);
-      }
-      async handleLLMNewToken(token, idx, runId, _parentRunId, _tags, fields) {
-        const run = this.runMap.get(runId);
-        if (!run || run?.run_type !== "llm") {
-          throw new Error(`Invalid "runId" provided to "handleLLMNewToken" callback.`);
-        }
-        run.events.push({
-          name: "new_token",
-          time: new Date().toISOString(),
-          kwargs: { token, idx, chunk: fields?.chunk }
-        });
-        await this.onLLMNewToken?.(run, token, { chunk: fields?.chunk });
-        return run;
-      }
-    };
-  }
-});
-
 // node_modules/langsmith/node_modules/uuid/dist/esm-browser/regex.js
 var regex_default2;
 var init_regex2 = __esm({
@@ -5911,14 +4504,14 @@ var init_regex2 = __esm({
 });
 
 // node_modules/langsmith/node_modules/uuid/dist/esm-browser/validate.js
-function validate3(uuid) {
+function validate2(uuid) {
   return typeof uuid === "string" && regex_default2.test(uuid);
 }
 var validate_default2;
 var init_validate2 = __esm({
   "node_modules/langsmith/node_modules/uuid/dist/esm-browser/validate.js"() {
     init_regex2();
-    validate_default2 = validate3;
+    validate_default2 = validate2;
   }
 });
 
@@ -6736,134 +5329,6 @@ function convertLangChainMessageToExample(message) {
 }
 var init_messages = __esm({
   "node_modules/langsmith/dist/utils/messages.js"() {
-  }
-});
-
-// node_modules/langsmith/dist/utils/env.js
-async function getRuntimeEnvironment2() {
-  if (runtimeEnvironment2 === void 0) {
-    const env = getEnv2();
-    const releaseEnv = getShas();
-    runtimeEnvironment2 = {
-      library: "langsmith",
-      runtime: env,
-      sdk: "langsmith-js",
-      sdk_version: __version__,
-      ...releaseEnv
-    };
-  }
-  return runtimeEnvironment2;
-}
-function getLangChainEnvVarsMetadata() {
-  const allEnvVars = getEnvironmentVariables() || {};
-  const envVars = {};
-  const excluded = [
-    "LANGCHAIN_API_KEY",
-    "LANGCHAIN_ENDPOINT",
-    "LANGCHAIN_TRACING_V2",
-    "LANGCHAIN_PROJECT",
-    "LANGCHAIN_SESSION"
-  ];
-  for (const [key, value] of Object.entries(allEnvVars)) {
-    if (key.startsWith("LANGCHAIN_") && typeof value === "string" && !excluded.includes(key) && !key.toLowerCase().includes("key") && !key.toLowerCase().includes("secret") && !key.toLowerCase().includes("token")) {
-      if (key === "LANGCHAIN_REVISION_ID") {
-        envVars["revision_id"] = value;
-      } else {
-        envVars[key] = value;
-      }
-    }
-  }
-  return envVars;
-}
-function getEnvironmentVariables() {
-  try {
-    if (typeof process !== "undefined" && process.env) {
-      return Object.entries(process.env).reduce((acc, [key, value]) => {
-        acc[key] = String(value);
-        return acc;
-      }, {});
-    }
-    return void 0;
-  } catch (e3) {
-    return void 0;
-  }
-}
-function getEnvironmentVariable2(name) {
-  try {
-    return typeof process !== "undefined" ? (
-      // eslint-disable-next-line no-process-env
-      process.env?.[name]
-    ) : void 0;
-  } catch (e3) {
-    return void 0;
-  }
-}
-function getLangSmithEnvironmentVariable(name) {
-  return getEnvironmentVariable2(`LANGSMITH_${name}`) || getEnvironmentVariable2(`LANGCHAIN_${name}`);
-}
-function getShas() {
-  if (cachedCommitSHAs !== void 0) {
-    return cachedCommitSHAs;
-  }
-  const common_release_envs = [
-    "VERCEL_GIT_COMMIT_SHA",
-    "NEXT_PUBLIC_VERCEL_GIT_COMMIT_SHA",
-    "COMMIT_REF",
-    "RENDER_GIT_COMMIT",
-    "CI_COMMIT_SHA",
-    "CIRCLE_SHA1",
-    "CF_PAGES_COMMIT_SHA",
-    "REACT_APP_GIT_SHA",
-    "SOURCE_VERSION",
-    "GITHUB_SHA",
-    "TRAVIS_COMMIT",
-    "GIT_COMMIT",
-    "BUILD_VCS_NUMBER",
-    "bamboo_planRepository_revision",
-    "Build.SourceVersion",
-    "BITBUCKET_COMMIT",
-    "DRONE_COMMIT_SHA",
-    "SEMAPHORE_GIT_SHA",
-    "BUILDKITE_COMMIT"
-  ];
-  const shas = {};
-  for (const env of common_release_envs) {
-    const envVar = getEnvironmentVariable2(env);
-    if (envVar !== void 0) {
-      shas[env] = envVar;
-    }
-  }
-  cachedCommitSHAs = shas;
-  return shas;
-}
-var globalEnv, isBrowser2, isWebWorker2, isJsDom2, isDeno2, isNode2, getEnv2, runtimeEnvironment2, cachedCommitSHAs;
-var init_env2 = __esm({
-  "node_modules/langsmith/dist/utils/env.js"() {
-    init_dist();
-    isBrowser2 = () => typeof window !== "undefined" && typeof window.document !== "undefined";
-    isWebWorker2 = () => typeof globalThis === "object" && globalThis.constructor && globalThis.constructor.name === "DedicatedWorkerGlobalScope";
-    isJsDom2 = () => typeof window !== "undefined" && window.name === "nodejs" || typeof navigator !== "undefined" && (navigator.userAgent.includes("Node.js") || navigator.userAgent.includes("jsdom"));
-    isDeno2 = () => typeof Deno !== "undefined";
-    isNode2 = () => typeof process !== "undefined" && typeof process.versions !== "undefined" && typeof process.versions.node !== "undefined" && !isDeno2();
-    getEnv2 = () => {
-      if (globalEnv) {
-        return globalEnv;
-      }
-      if (isBrowser2()) {
-        globalEnv = "browser";
-      } else if (isNode2()) {
-        globalEnv = "node";
-      } else if (isWebWorker2()) {
-        globalEnv = "webworker";
-      } else if (isJsDom2()) {
-        globalEnv = "jsdom";
-      } else if (isDeno2()) {
-        globalEnv = "deno";
-      } else {
-        globalEnv = "other";
-      }
-      return globalEnv;
-    };
   }
 });
 
@@ -8739,14 +7204,6 @@ var require_semver2 = __commonJS({
 });
 
 // node_modules/langsmith/dist/utils/prompts.js
-function isVersionGreaterOrEqual(current_version, target_version) {
-  const current = (0, import_semver.parse)(current_version);
-  const target = (0, import_semver.parse)(target_version);
-  if (!current || !target) {
-    throw new Error("Invalid version format.");
-  }
-  return current.compare(target) >= 0;
-}
 function parsePromptIdentifier(identifier) {
   if (!identifier || identifier.split("/").length > 2 || identifier.startsWith("/") || identifier.endsWith("/") || identifier.split(":").length > 2) {
     throw new Error(`Invalid identifier format: ${identifier}`);
@@ -8809,30 +7266,39 @@ function defaultOptions() {
   };
 }
 function stringify(obj, replacer, spacer, options) {
-  if (typeof options === "undefined") {
-    options = defaultOptions();
-  }
-  decirc(obj, "", 0, [], void 0, 0, options);
-  var res;
   try {
-    if (replacerStack.length === 0) {
-      res = JSON.stringify(obj, replacer, spacer);
-    } else {
-      res = JSON.stringify(obj, replaceGetterValues(replacer), spacer);
+    return JSON.stringify(obj, replacer, spacer);
+  } catch (e3) {
+    if (!e3.message?.includes("Converting circular structure to JSON")) {
+      console.warn("[WARNING]: LangSmith received unserializable value.");
+      return "[Unserializable]";
     }
-  } catch (_2) {
-    return JSON.stringify("[unable to serialize, circular reference is too complex to analyze]");
-  } finally {
-    while (arr.length !== 0) {
-      var part = arr.pop();
-      if (part.length === 4) {
-        Object.defineProperty(part[0], part[1], part[3]);
+    console.warn("[WARNING]: LangSmith received circular JSON. This will decrease tracer performance.");
+    if (typeof options === "undefined") {
+      options = defaultOptions();
+    }
+    decirc(obj, "", 0, [], void 0, 0, options);
+    var res;
+    try {
+      if (replacerStack.length === 0) {
+        res = JSON.stringify(obj, replacer, spacer);
       } else {
-        part[0][part[1]] = part[2];
+        res = JSON.stringify(obj, replaceGetterValues(replacer), spacer);
+      }
+    } catch (_2) {
+      return JSON.stringify("[unable to serialize, circular reference is too complex to analyze]");
+    } finally {
+      while (arr.length !== 0) {
+        var part = arr.pop();
+        if (part.length === 4) {
+          Object.defineProperty(part[0], part[1], part[3]);
+        } else {
+          part[0][part[1]] = part[2];
+        }
       }
     }
+    return res;
   }
-  return res;
 }
 function setReplace(replace, val2, k3, parent) {
   var propertyDescriptor = Object.getOwnPropertyDescriptor(parent, k3);
@@ -8910,26 +7376,24 @@ var init_fast_safe_stringify = __esm({
 });
 
 // node_modules/langsmith/dist/client.js
-async function mergeRuntimeEnvIntoRunCreates(runs) {
-  const runtimeEnv = await getRuntimeEnvironment2();
+function mergeRuntimeEnvIntoRunCreate(run) {
+  const runtimeEnv = getRuntimeEnvironment();
   const envVars = getLangChainEnvVarsMetadata();
-  return runs.map((run) => {
-    const extra = run.extra ?? {};
-    const metadata = extra.metadata;
-    run.extra = {
-      ...extra,
-      runtime: {
-        ...runtimeEnv,
-        ...extra?.runtime
-      },
-      metadata: {
-        ...envVars,
-        ...envVars.revision_id || run.revision_id ? { revision_id: run.revision_id ?? envVars.revision_id } : {},
-        ...metadata
-      }
-    };
-    return run;
-  });
+  const extra = run.extra ?? {};
+  const metadata = extra.metadata;
+  run.extra = {
+    ...extra,
+    runtime: {
+      ...runtimeEnv,
+      ...extra?.runtime
+    },
+    metadata: {
+      ...envVars,
+      ...envVars.revision_id || run.revision_id ? { revision_id: run.revision_id ?? envVars.revision_id } : {},
+      ...metadata
+    }
+  };
+  return run;
 }
 async function toArray(iterable) {
   const result = [];
@@ -8944,13 +7408,13 @@ function trimQuotes(str2) {
   }
   return str2.trim().replace(/^"(.*)"$/, "$1").replace(/^'(.*)'$/, "$1");
 }
-var getTracingSamplingRate, isLocalhost, handle429, Queue, DEFAULT_BATCH_SIZE_LIMIT_BYTES, Client;
+var getTracingSamplingRate, isLocalhost, handle429, AutoBatchQueue, DEFAULT_BATCH_SIZE_LIMIT_BYTES, SERVER_INFO_REQUEST_TIMEOUT, Client;
 var init_client = __esm({
   "node_modules/langsmith/dist/client.js"() {
     init_esm_browser2();
     init_async_caller();
     init_messages();
-    init_env2();
+    init_env();
     init_dist();
     init_uuid();
     init_warn();
@@ -8984,7 +7448,7 @@ var init_client = __esm({
       }
       return false;
     };
-    Queue = class {
+    AutoBatchQueue = class {
       constructor() {
         Object.defineProperty(this, "items", {
           enumerable: true,
@@ -8992,32 +7456,61 @@ var init_client = __esm({
           writable: true,
           value: []
         });
-      }
-      get size() {
-        return this.items.length;
-      }
-      push(item) {
-        return new Promise((resolve) => {
-          this.items.push([item, resolve]);
+        Object.defineProperty(this, "sizeBytes", {
+          enumerable: true,
+          configurable: true,
+          writable: true,
+          value: 0
         });
       }
-      pop(upToN) {
-        if (upToN < 1) {
-          throw new Error("Number of items to pop off may not be less than 1.");
+      peek() {
+        return this.items[0];
+      }
+      push(item) {
+        let itemPromiseResolve;
+        const itemPromise = new Promise((resolve) => {
+          itemPromiseResolve = resolve;
+        });
+        const size4 = stringify(item.item).length;
+        this.items.push({
+          action: item.action,
+          payload: item.item,
+          // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
+          itemPromiseResolve,
+          itemPromise,
+          size: size4
+        });
+        this.sizeBytes += size4;
+        return itemPromise;
+      }
+      pop(upToSizeBytes) {
+        if (upToSizeBytes < 1) {
+          throw new Error("Number of bytes to pop off may not be less than 1.");
         }
         const popped = [];
-        while (popped.length < upToN && this.items.length) {
+        let poppedSizeBytes = 0;
+        while (poppedSizeBytes + (this.peek()?.size ?? 0) < upToSizeBytes && this.items.length > 0) {
           const item = this.items.shift();
           if (item) {
             popped.push(item);
-          } else {
-            break;
+            poppedSizeBytes += item.size;
+            this.sizeBytes -= item.size;
           }
         }
-        return [popped.map((it) => it[0]), () => popped.forEach((it) => it[1]())];
+        if (popped.length === 0 && this.items.length > 0) {
+          const item = this.items.shift();
+          popped.push(item);
+          poppedSizeBytes += item.size;
+          this.sizeBytes -= item.size;
+        }
+        return [
+          popped.map((it) => ({ action: it.action, item: it.payload })),
+          () => popped.forEach((it) => it.itemPromiseResolve())
+        ];
       }
     };
     DEFAULT_BATCH_SIZE_LIMIT_BYTES = 20971520;
+    SERVER_INFO_REQUEST_TIMEOUT = 2500;
     Client = class {
       constructor(config = {}) {
         Object.defineProperty(this, "apiKey", {
@@ -9092,23 +7585,11 @@ var init_client = __esm({
           writable: true,
           value: true
         });
-        Object.defineProperty(this, "batchEndpointSupported", {
-          enumerable: true,
-          configurable: true,
-          writable: true,
-          value: void 0
-        });
         Object.defineProperty(this, "autoBatchQueue", {
           enumerable: true,
           configurable: true,
           writable: true,
-          value: new Queue()
-        });
-        Object.defineProperty(this, "pendingAutoBatchedRunLimit", {
-          enumerable: true,
-          configurable: true,
-          writable: true,
-          value: 100
+          value: new AutoBatchQueue()
         });
         Object.defineProperty(this, "autoBatchTimeout", {
           enumerable: true,
@@ -9116,19 +7597,13 @@ var init_client = __esm({
           writable: true,
           value: void 0
         });
-        Object.defineProperty(this, "autoBatchInitialDelayMs", {
+        Object.defineProperty(this, "autoBatchAggregationDelayMs", {
           enumerable: true,
           configurable: true,
           writable: true,
           value: 250
         });
-        Object.defineProperty(this, "autoBatchAggregationDelayMs", {
-          enumerable: true,
-          configurable: true,
-          writable: true,
-          value: 50
-        });
-        Object.defineProperty(this, "serverInfo", {
+        Object.defineProperty(this, "batchSizeBytesLimit", {
           enumerable: true,
           configurable: true,
           writable: true,
@@ -9146,6 +7621,36 @@ var init_client = __esm({
           writable: true,
           value: void 0
         });
+        Object.defineProperty(this, "blockOnRootRunFinalization", {
+          enumerable: true,
+          configurable: true,
+          writable: true,
+          value: getEnvironmentVariable("LANGSMITH_TRACING_BACKGROUND") === "false"
+        });
+        Object.defineProperty(this, "traceBatchConcurrency", {
+          enumerable: true,
+          configurable: true,
+          writable: true,
+          value: 5
+        });
+        Object.defineProperty(this, "_serverInfo", {
+          enumerable: true,
+          configurable: true,
+          writable: true,
+          value: void 0
+        });
+        Object.defineProperty(this, "_getServerInfoPromise", {
+          enumerable: true,
+          configurable: true,
+          writable: true,
+          value: void 0
+        });
+        Object.defineProperty(this, "manualFlushMode", {
+          enumerable: true,
+          configurable: true,
+          writable: true,
+          value: false
+        });
         const defaultConfig = Client.getDefaultClientConfig();
         this.tracingSampleRate = getTracingSamplingRate();
         this.apiUrl = trimQuotes(config.apiUrl ?? defaultConfig.apiUrl) ?? "";
@@ -9157,17 +7662,25 @@ var init_client = __esm({
         if (this.webUrl?.endsWith("/")) {
           this.webUrl = this.webUrl.slice(0, -1);
         }
-        this.timeout_ms = config.timeout_ms ?? 12e3;
+        this.timeout_ms = config.timeout_ms ?? 9e4;
         this.caller = new AsyncCaller(config.callerOptions ?? {});
+        this.traceBatchConcurrency = config.traceBatchConcurrency ?? this.traceBatchConcurrency;
+        if (this.traceBatchConcurrency < 1) {
+          throw new Error("Trace batch concurrency must be positive.");
+        }
         this.batchIngestCaller = new AsyncCaller({
+          maxRetries: 2,
+          maxConcurrency: this.traceBatchConcurrency,
           ...config.callerOptions ?? {},
           onFailedResponseHook: handle429
         });
         this.hideInputs = config.hideInputs ?? config.anonymizer ?? defaultConfig.hideInputs;
         this.hideOutputs = config.hideOutputs ?? config.anonymizer ?? defaultConfig.hideOutputs;
         this.autoBatchTracing = config.autoBatchTracing ?? this.autoBatchTracing;
-        this.pendingAutoBatchedRunLimit = config.pendingAutoBatchedRunLimit ?? this.pendingAutoBatchedRunLimit;
+        this.blockOnRootRunFinalization = config.blockOnRootRunFinalization ?? this.blockOnRootRunFinalization;
+        this.batchSizeBytesLimit = config.batchSizeBytesLimit;
         this.fetchOptions = config.fetchOptions || {};
+        this.manualFlushMode = config.manualFlushMode ?? this.manualFlushMode;
       }
       static getDefaultClientConfig() {
         const apiKey = getLangSmithEnvironmentVariable("API_KEY");
@@ -9340,36 +7853,66 @@ var init_client = __esm({
           return sampled;
         }
       }
-      async drainAutoBatchQueue() {
-        while (this.autoBatchQueue.size >= 0) {
-          const [batch, done] = this.autoBatchQueue.pop(this.pendingAutoBatchedRunLimit);
+      async _getBatchSizeLimitBytes() {
+        const serverInfo = await this._ensureServerInfo();
+        return this.batchSizeBytesLimit ?? serverInfo.batch_ingest_config?.size_limit_bytes ?? DEFAULT_BATCH_SIZE_LIMIT_BYTES;
+      }
+      async _getMultiPartSupport() {
+        const serverInfo = await this._ensureServerInfo();
+        return serverInfo.instance_flags?.dataset_examples_multipart_enabled ?? false;
+      }
+      drainAutoBatchQueue(batchSizeLimit) {
+        const promises = [];
+        while (this.autoBatchQueue.items.length > 0) {
+          const [batch, done] = this.autoBatchQueue.pop(batchSizeLimit);
           if (!batch.length) {
             done();
-            return;
+            break;
           }
-          try {
-            await this.batchIngestRuns({
-              runCreates: batch.filter((item) => item.action === "create").map((item) => item.item),
-              runUpdates: batch.filter((item) => item.action === "update").map((item) => item.item)
-            });
-          } finally {
-            done();
+          const batchPromise = this._processBatch(batch, done).catch(console.error);
+          promises.push(batchPromise);
+        }
+        return Promise.all(promises);
+      }
+      async _processBatch(batch, done) {
+        if (!batch.length) {
+          done();
+          return;
+        }
+        try {
+          const ingestParams = {
+            runCreates: batch.filter((item) => item.action === "create").map((item) => item.item),
+            runUpdates: batch.filter((item) => item.action === "update").map((item) => item.item)
+          };
+          const serverInfo = await this._ensureServerInfo();
+          if (serverInfo?.batch_ingest_config?.use_multipart_endpoint) {
+            await this.multipartIngestRuns(ingestParams);
+          } else {
+            await this.batchIngestRuns(ingestParams);
           }
+        } finally {
+          done();
         }
       }
-      async processRunOperation(item, immediatelyTriggerBatch) {
-        const oldTimeout = this.autoBatchTimeout;
+      async processRunOperation(item) {
         clearTimeout(this.autoBatchTimeout);
         this.autoBatchTimeout = void 0;
-        const itemPromise = this.autoBatchQueue.push(item);
-        if (immediatelyTriggerBatch || this.autoBatchQueue.size > this.pendingAutoBatchedRunLimit) {
-          await this.drainAutoBatchQueue().catch(console.error);
+        if (item.action === "create") {
+          item.item = mergeRuntimeEnvIntoRunCreate(item.item);
         }
-        if (this.autoBatchQueue.size > 0) {
+        const itemPromise = this.autoBatchQueue.push(item);
+        if (this.manualFlushMode) {
+          return itemPromise;
+        }
+        const sizeLimitBytes = await this._getBatchSizeLimitBytes();
+        if (this.autoBatchQueue.sizeBytes > sizeLimitBytes) {
+          void this.drainAutoBatchQueue(sizeLimitBytes);
+        }
+        if (this.autoBatchQueue.items.length > 0) {
           this.autoBatchTimeout = setTimeout(() => {
             this.autoBatchTimeout = void 0;
-            void this.drainAutoBatchQueue().catch(console.error);
-          }, oldTimeout ? this.autoBatchAggregationDelayMs : this.autoBatchInitialDelayMs);
+            void this.drainAutoBatchQueue(sizeLimitBytes);
+          }, this.autoBatchAggregationDelayMs);
         }
         return itemPromise;
       }
@@ -9377,25 +7920,44 @@ var init_client = __esm({
         const response = await _getFetchImplementation()(`${this.apiUrl}/info`, {
           method: "GET",
           headers: { Accept: "application/json" },
-          signal: AbortSignal.timeout(this.timeout_ms),
+          signal: AbortSignal.timeout(SERVER_INFO_REQUEST_TIMEOUT),
           ...this.fetchOptions
         });
         await raiseForStatus(response, "get server info");
         return response.json();
       }
-      async batchEndpointIsSupported() {
-        try {
-          this.serverInfo = await this._getServerInfo();
-        } catch (e3) {
-          return false;
+      async _ensureServerInfo() {
+        if (this._getServerInfoPromise === void 0) {
+          this._getServerInfoPromise = (async () => {
+            if (this._serverInfo === void 0) {
+              try {
+                this._serverInfo = await this._getServerInfo();
+              } catch (e3) {
+                console.warn(`[WARNING]: LangSmith failed to fetch info on supported operations. Falling back to batch operations and default limits.`);
+              }
+            }
+            return this._serverInfo ?? {};
+          })();
         }
-        return true;
+        return this._getServerInfoPromise.then((serverInfo) => {
+          if (this._serverInfo === void 0) {
+            this._getServerInfoPromise = void 0;
+          }
+          return serverInfo;
+        });
       }
       async _getSettings() {
         if (!this.settings) {
           this.settings = this._get("/settings");
         }
         return await this.settings;
+      }
+      /**
+       * Flushes current queued traces.
+       */
+      async flush() {
+        const sizeLimitBytes = await this._getBatchSizeLimitBytes();
+        await this.drainAutoBatchQueue(sizeLimitBytes);
       }
       async createRun(run) {
         if (!this._filterForSampling([run]).length) {
@@ -9416,13 +7978,11 @@ var init_client = __esm({
           }).catch(console.error);
           return;
         }
-        const mergedRunCreateParams = await mergeRuntimeEnvIntoRunCreates([
-          runCreate
-        ]);
+        const mergedRunCreateParam = mergeRuntimeEnvIntoRunCreate(runCreate);
         const response = await this.caller.call(_getFetchImplementation(), `${this.apiUrl}/runs`, {
           method: "POST",
           headers,
-          body: stringify(mergedRunCreateParams[0]),
+          body: stringify(mergedRunCreateParam),
           signal: AbortSignal.timeout(this.timeout_ms),
           ...this.fetchOptions
         });
@@ -9467,41 +8027,15 @@ var init_client = __esm({
         if (!rawBatch.post.length && !rawBatch.patch.length) {
           return;
         }
-        preparedCreateParams = await mergeRuntimeEnvIntoRunCreates(preparedCreateParams);
-        if (this.batchEndpointSupported === void 0) {
-          this.batchEndpointSupported = await this.batchEndpointIsSupported();
-        }
-        if (!this.batchEndpointSupported) {
-          this.autoBatchTracing = false;
-          for (const preparedCreateParam of rawBatch.post) {
-            await this.createRun(preparedCreateParam);
-          }
-          for (const preparedUpdateParam of rawBatch.patch) {
-            if (preparedUpdateParam.id !== void 0) {
-              await this.updateRun(preparedUpdateParam.id, preparedUpdateParam);
-            }
-          }
-          return;
-        }
-        const sizeLimitBytes = this.serverInfo?.batch_ingest_config?.size_limit_bytes ?? DEFAULT_BATCH_SIZE_LIMIT_BYTES;
         const batchChunks = {
           post: [],
           patch: []
         };
-        let currentBatchSizeBytes = 0;
         for (const k3 of ["post", "patch"]) {
           const key = k3;
           const batchItems = rawBatch[key].reverse();
           let batchItem = batchItems.pop();
           while (batchItem !== void 0) {
-            const stringifiedBatchItem = stringify(batchItem);
-            if (currentBatchSizeBytes > 0 && currentBatchSizeBytes + stringifiedBatchItem.length > sizeLimitBytes) {
-              await this._postBatchIngestRuns(stringify(batchChunks));
-              currentBatchSizeBytes = 0;
-              batchChunks.post = [];
-              batchChunks.patch = [];
-            }
-            currentBatchSizeBytes += stringifiedBatchItem.length;
             batchChunks[key].push(batchItem);
             batchItem = batchItems.pop();
           }
@@ -9525,6 +8059,163 @@ var init_client = __esm({
         });
         await raiseForStatus(response, "batch create run", true);
       }
+      /**
+       * Batch ingest/upsert multiple runs in the Langsmith system.
+       * @param runs
+       */
+      async multipartIngestRuns({ runCreates, runUpdates }) {
+        if (runCreates === void 0 && runUpdates === void 0) {
+          return;
+        }
+        const allAttachments = {};
+        let preparedCreateParams = [];
+        for (const create9 of runCreates ?? []) {
+          const preparedCreate = this.prepareRunCreateOrUpdateInputs(create9);
+          if (preparedCreate.id !== void 0 && preparedCreate.attachments !== void 0) {
+            allAttachments[preparedCreate.id] = preparedCreate.attachments;
+          }
+          delete preparedCreate.attachments;
+          preparedCreateParams.push(preparedCreate);
+        }
+        let preparedUpdateParams = [];
+        for (const update2 of runUpdates ?? []) {
+          preparedUpdateParams.push(this.prepareRunCreateOrUpdateInputs(update2));
+        }
+        const invalidRunCreate = preparedCreateParams.find((runCreate) => {
+          return runCreate.trace_id === void 0 || runCreate.dotted_order === void 0;
+        });
+        if (invalidRunCreate !== void 0) {
+          throw new Error(`Multipart ingest requires "trace_id" and "dotted_order" to be set when creating a run`);
+        }
+        const invalidRunUpdate = preparedUpdateParams.find((runUpdate) => {
+          return runUpdate.trace_id === void 0 || runUpdate.dotted_order === void 0;
+        });
+        if (invalidRunUpdate !== void 0) {
+          throw new Error(`Multipart ingest requires "trace_id" and "dotted_order" to be set when updating a run`);
+        }
+        if (preparedCreateParams.length > 0 && preparedUpdateParams.length > 0) {
+          const createById = preparedCreateParams.reduce((params, run) => {
+            if (!run.id) {
+              return params;
+            }
+            params[run.id] = run;
+            return params;
+          }, {});
+          const standaloneUpdates = [];
+          for (const updateParam of preparedUpdateParams) {
+            if (updateParam.id !== void 0 && createById[updateParam.id]) {
+              createById[updateParam.id] = {
+                ...createById[updateParam.id],
+                ...updateParam
+              };
+            } else {
+              standaloneUpdates.push(updateParam);
+            }
+          }
+          preparedCreateParams = Object.values(createById);
+          preparedUpdateParams = standaloneUpdates;
+        }
+        if (preparedCreateParams.length === 0 && preparedUpdateParams.length === 0) {
+          return;
+        }
+        const accumulatedContext = [];
+        const accumulatedParts = [];
+        for (const [method, payloads] of [
+          ["post", preparedCreateParams],
+          ["patch", preparedUpdateParams]
+        ]) {
+          for (const originalPayload of payloads) {
+            const { inputs, outputs, events, attachments, ...payload } = originalPayload;
+            const fields = { inputs, outputs, events };
+            const stringifiedPayload = stringify(payload);
+            accumulatedParts.push({
+              name: `${method}.${payload.id}`,
+              payload: new Blob([stringifiedPayload], {
+                type: `application/json; length=${stringifiedPayload.length}`
+                // encoding=gzip
+              })
+            });
+            for (const [key, value] of Object.entries(fields)) {
+              if (value === void 0) {
+                continue;
+              }
+              const stringifiedValue = stringify(value);
+              accumulatedParts.push({
+                name: `${method}.${payload.id}.${key}`,
+                payload: new Blob([stringifiedValue], {
+                  type: `application/json; length=${stringifiedValue.length}`
+                })
+              });
+            }
+            if (payload.id !== void 0) {
+              const attachments2 = allAttachments[payload.id];
+              if (attachments2) {
+                delete allAttachments[payload.id];
+                for (const [name, attachment] of Object.entries(attachments2)) {
+                  let contentType;
+                  let content;
+                  if (Array.isArray(attachment)) {
+                    [contentType, content] = attachment;
+                  } else {
+                    contentType = attachment.mimeType;
+                    content = attachment.data;
+                  }
+                  if (name.includes(".")) {
+                    console.warn(`Skipping attachment '${name}' for run ${payload.id}: Invalid attachment name. Attachment names must not contain periods ('.'). Please rename the attachment and try again.`);
+                    continue;
+                  }
+                  accumulatedParts.push({
+                    name: `attachment.${payload.id}.${name}`,
+                    payload: new Blob([content], {
+                      type: `${contentType}; length=${content.byteLength}`
+                    })
+                  });
+                }
+              }
+            }
+            accumulatedContext.push(`trace=${payload.trace_id},id=${payload.id}`);
+          }
+        }
+        await this._sendMultipartRequest(accumulatedParts, accumulatedContext.join("; "));
+      }
+      async _sendMultipartRequest(parts, context) {
+        try {
+          const boundary = "----LangSmithFormBoundary" + Math.random().toString(36).slice(2);
+          const chunks = [];
+          for (const part of parts) {
+            chunks.push(new Blob([`--${boundary}\r
+`]));
+            chunks.push(new Blob([
+              `Content-Disposition: form-data; name="${part.name}"\r
+`,
+              `Content-Type: ${part.payload.type}\r
+\r
+`
+            ]));
+            chunks.push(part.payload);
+            chunks.push(new Blob(["\r\n"]));
+          }
+          chunks.push(new Blob([`--${boundary}--\r
+`]));
+          const body = new Blob(chunks);
+          const arrayBuffer = await body.arrayBuffer();
+          const res = await this.batchIngestCaller.call(_getFetchImplementation(), `${this.apiUrl}/runs/multipart`, {
+            method: "POST",
+            headers: {
+              ...this.headers,
+              "Content-Type": `multipart/form-data; boundary=${boundary}`
+            },
+            body: arrayBuffer,
+            signal: AbortSignal.timeout(this.timeout_ms),
+            ...this.fetchOptions
+          });
+          await raiseForStatus(res, "ingest multipart runs", true);
+        } catch (e3) {
+          console.warn(`${e3.message.trim()}
+
+Context: ${context}`);
+        }
+      }
       async updateRun(runId, run) {
         assertUuid(runId);
         if (run.inputs) {
@@ -9538,8 +8229,8 @@ var init_client = __esm({
           return;
         }
         if (this.autoBatchTracing && data.trace_id !== void 0 && data.dotted_order !== void 0) {
-          if (run.end_time !== void 0 && data.parent_run_id === void 0) {
-            await this.processRunOperation({ action: "update", item: data }, true);
+          if (run.end_time !== void 0 && data.parent_run_id === void 0 && this.blockOnRootRunFinalization && !this.manualFlushMode) {
+            await this.processRunOperation({ action: "update", item: data }).catch(console.error);
             return;
           } else {
             void this.processRunOperation({ action: "update", item: data }).catch(console.error);
@@ -10512,9 +9203,20 @@ Message: ${result.detail.join("\n")}`);
       async readExample(exampleId) {
         assertUuid(exampleId);
         const path = `/examples/${exampleId}`;
-        return await this._get(path);
+        const rawExample = await this._get(path);
+        const { attachment_urls, ...rest } = rawExample;
+        const example = rest;
+        if (attachment_urls) {
+          example.attachments = Object.entries(attachment_urls).reduce((acc, [key, value]) => {
+            acc[key.slice("attachment.".length)] = {
+              presigned_url: value.presigned_url
+            };
+            return acc;
+          }, {});
+        }
+        return example;
       }
-      async *listExamples({ datasetId, datasetName, exampleIds, asOf, splits, inlineS3Urls, metadata, limit: limit2, offset: offset5, filter: filter2 } = {}) {
+      async *listExamples({ datasetId, datasetName, exampleIds, asOf, splits, inlineS3Urls, metadata, limit: limit2, offset: offset5, filter: filter2, includeAttachments } = {}) {
         let datasetId_;
         if (datasetId !== void 0 && datasetName !== void 0) {
           throw new Error("Must provide either datasetName or datasetId, not both");
@@ -10556,9 +9258,22 @@ Message: ${result.detail.join("\n")}`);
         if (filter2 !== void 0) {
           params.append("filter", filter2);
         }
+        if (includeAttachments === true) {
+          ["attachment_urls", "outputs", "metadata"].forEach((field) => params.append("select", field));
+        }
         let i3 = 0;
-        for await (const examples of this._getPaginated("/examples", params)) {
-          for (const example of examples) {
+        for await (const rawExamples of this._getPaginated("/examples", params)) {
+          for (const rawExample of rawExamples) {
+            const { attachment_urls, ...rest } = rawExample;
+            const example = rest;
+            if (attachment_urls) {
+              example.attachments = Object.entries(attachment_urls).reduce((acc, [key, value]) => {
+                acc[key.slice("attachment.".length)] = {
+                  presigned_url: value.presigned_url
+                };
+                return acc;
+              }, {});
+            }
             yield example;
             i3++;
           }
@@ -11204,6 +9919,132 @@ ${detail}`);
         const result = await response.json();
         return this._getPromptUrl(`${owner}/${promptName}${result.commit_hash ? `:${result.commit_hash}` : ""}`);
       }
+      /**
+       * Update examples with attachments using multipart form data.
+       * @param updates List of ExampleUpdateWithAttachments objects to upsert
+       * @returns Promise with the update response
+       */
+      async updateExamplesMultipart(datasetId, updates = []) {
+        if (!await this._getMultiPartSupport()) {
+          throw new Error("Your LangSmith version does not allow using the multipart examples endpoint, please update to the latest version.");
+        }
+        const formData = new FormData();
+        for (const example of updates) {
+          const exampleId = example.id;
+          const exampleBody = {
+            ...example.metadata && { metadata: example.metadata },
+            ...example.split && { split: example.split }
+          };
+          const stringifiedExample = stringify(exampleBody);
+          const exampleBlob = new Blob([stringifiedExample], {
+            type: "application/json"
+          });
+          formData.append(exampleId, exampleBlob);
+          if (example.inputs) {
+            const stringifiedInputs = stringify(example.inputs);
+            const inputsBlob = new Blob([stringifiedInputs], {
+              type: "application/json"
+            });
+            formData.append(`${exampleId}.inputs`, inputsBlob);
+          }
+          if (example.outputs) {
+            const stringifiedOutputs = stringify(example.outputs);
+            const outputsBlob = new Blob([stringifiedOutputs], {
+              type: "application/json"
+            });
+            formData.append(`${exampleId}.outputs`, outputsBlob);
+          }
+          if (example.attachments) {
+            for (const [name, attachment] of Object.entries(example.attachments)) {
+              let mimeType;
+              let data;
+              if (Array.isArray(attachment)) {
+                [mimeType, data] = attachment;
+              } else {
+                mimeType = attachment.mimeType;
+                data = attachment.data;
+              }
+              const attachmentBlob = new Blob([data], {
+                type: `${mimeType}; length=${data.byteLength}`
+              });
+              formData.append(`${exampleId}.attachment.${name}`, attachmentBlob);
+            }
+          }
+          if (example.attachments_operations) {
+            const stringifiedAttachmentsOperations = stringify(example.attachments_operations);
+            const attachmentsOperationsBlob = new Blob([stringifiedAttachmentsOperations], {
+              type: "application/json"
+            });
+            formData.append(`${exampleId}.attachments_operations`, attachmentsOperationsBlob);
+          }
+        }
+        const response = await this.caller.call(_getFetchImplementation(), `${this.apiUrl}/v1/platform/datasets/${datasetId}/examples`, {
+          method: "PATCH",
+          headers: this.headers,
+          body: formData
+        });
+        const result = await response.json();
+        return result;
+      }
+      /**
+       * Upload examples with attachments using multipart form data.
+       * @param uploads List of ExampleUploadWithAttachments objects to upload
+       * @returns Promise with the upload response
+       */
+      async uploadExamplesMultipart(datasetId, uploads = []) {
+        if (!await this._getMultiPartSupport()) {
+          throw new Error("Your LangSmith version does not allow using the multipart examples endpoint, please update to the latest version.");
+        }
+        const formData = new FormData();
+        for (const example of uploads) {
+          const exampleId = (example.id ?? v4_default2()).toString();
+          const exampleBody = {
+            created_at: example.created_at,
+            ...example.metadata && { metadata: example.metadata },
+            ...example.split && { split: example.split }
+          };
+          const stringifiedExample = stringify(exampleBody);
+          const exampleBlob = new Blob([stringifiedExample], {
+            type: "application/json"
+          });
+          formData.append(exampleId, exampleBlob);
+          const stringifiedInputs = stringify(example.inputs);
+          const inputsBlob = new Blob([stringifiedInputs], {
+            type: "application/json"
+          });
+          formData.append(`${exampleId}.inputs`, inputsBlob);
+          if (example.outputs) {
+            const stringifiedOutputs = stringify(example.outputs);
+            const outputsBlob = new Blob([stringifiedOutputs], {
+              type: "application/json"
+            });
+            formData.append(`${exampleId}.outputs`, outputsBlob);
+          }
+          if (example.attachments) {
+            for (const [name, attachment] of Object.entries(example.attachments)) {
+              let mimeType;
+              let data;
+              if (Array.isArray(attachment)) {
+                [mimeType, data] = attachment;
+              } else {
+                mimeType = attachment.mimeType;
+                data = attachment.data;
+              }
+              const attachmentBlob = new Blob([data], {
+                type: `${mimeType}; length=${data.byteLength}`
+              });
+              formData.append(`${exampleId}.attachment.${name}`, attachmentBlob);
+            }
+          }
+        }
+        const response = await this.caller.call(_getFetchImplementation(), `${this.apiUrl}/v1/platform/datasets/${datasetId}/examples`, {
+          method: "POST",
+          headers: this.headers,
+          body: formData
+        });
+        const result = await response.json();
+        return result;
+      }
       async updatePrompt(promptIdentifier, options) {
         if (!await this.promptExists(promptIdentifier)) {
           throw new Error("Prompt does not exist, you must create it first.");
@@ -11257,18 +10098,7 @@ ${detail}`);
       }
       async pullPromptCommit(promptIdentifier, options) {
         const [owner, promptName, commitHash] = parsePromptIdentifier(promptIdentifier);
-        const serverInfo = await this._getServerInfo();
-        const useOptimization = isVersionGreaterOrEqual(serverInfo.version, "0.5.23");
-        let passedCommitHash = commitHash;
-        if (!useOptimization && commitHash === "latest") {
-          const latestCommitHash = await this._getLatestCommitHash(`${owner}/${promptName}`);
-          if (!latestCommitHash) {
-            throw new Error("No commits found");
-          } else {
-            passedCommitHash = latestCommitHash;
-          }
-        }
-        const response = await this.caller.call(_getFetchImplementation(), `${this.apiUrl}/commits/${owner}/${promptName}/${passedCommitHash}${options?.includeModel ? "?include_model=true" : ""}`, {
+        const response = await this.caller.call(_getFetchImplementation(), `${this.apiUrl}/commits/${owner}/${promptName}/${commitHash}${options?.includeModel ? "?include_model=true" : ""}`, {
           method: "GET",
           headers: this.headers,
           signal: AbortSignal.timeout(this.timeout_ms),
@@ -11389,15 +10219,190 @@ ${detail}`);
           throw new Error(`Invalid public ${kind4} URL or token: ${urlOrToken}`);
         }
       }
+      /**
+       * Awaits all pending trace batches. Useful for environments where
+       * you need to be sure that all tracing requests finish before execution ends,
+       * such as serverless environments.
+       *
+       * @example
+       * ```
+       * import { Client } from "langsmith";
+       *
+       * const client = new Client();
+       *
+       * try {
+       *   // Tracing happens here
+       *   ...
+       * } finally {
+       *   await client.awaitPendingTraceBatches();
+       * }
+       * ```
+       *
+       * @returns A promise that resolves once all currently pending traces have sent.
+       */
+      awaitPendingTraceBatches() {
+        if (this.manualFlushMode) {
+          console.warn("[WARNING]: When tracing in manual flush mode, you must call `await client.flush()` manually to submit trace batches.");
+          return Promise.resolve();
+        }
+        return Promise.all([
+          ...this.autoBatchQueue.items.map(({ itemPromise }) => itemPromise),
+          this.batchIngestCaller.queue.onIdle()
+        ]);
+      }
+    };
+  }
+});
+
+// node_modules/langsmith/dist/index.js
+var __version__;
+var init_dist = __esm({
+  "node_modules/langsmith/dist/index.js"() {
+    init_client();
+    init_run_trees();
+    init_fetch();
+    __version__ = "0.2.14";
+  }
+});
+
+// node_modules/langsmith/dist/utils/env.js
+function getRuntimeEnvironment() {
+  if (runtimeEnvironment === void 0) {
+    const env = getEnv();
+    const releaseEnv = getShas();
+    runtimeEnvironment = {
+      library: "langsmith",
+      runtime: env,
+      sdk: "langsmith-js",
+      sdk_version: __version__,
+      ...releaseEnv
+    };
+  }
+  return runtimeEnvironment;
+}
+function getLangChainEnvVarsMetadata() {
+  const allEnvVars = getEnvironmentVariables() || {};
+  const envVars = {};
+  const excluded = [
+    "LANGCHAIN_API_KEY",
+    "LANGCHAIN_ENDPOINT",
+    "LANGCHAIN_TRACING_V2",
+    "LANGCHAIN_PROJECT",
+    "LANGCHAIN_SESSION",
+    "LANGSMITH_API_KEY",
+    "LANGSMITH_ENDPOINT",
+    "LANGSMITH_TRACING_V2",
+    "LANGSMITH_PROJECT",
+    "LANGSMITH_SESSION"
+  ];
+  for (const [key, value] of Object.entries(allEnvVars)) {
+    if ((key.startsWith("LANGCHAIN_") || key.startsWith("LANGSMITH_")) && typeof value === "string" && !excluded.includes(key) && !key.toLowerCase().includes("key") && !key.toLowerCase().includes("secret") && !key.toLowerCase().includes("token")) {
+      if (key === "LANGCHAIN_REVISION_ID") {
+        envVars["revision_id"] = value;
+      } else {
+        envVars[key] = value;
+      }
+    }
+  }
+  return envVars;
+}
+function getEnvironmentVariables() {
+  try {
+    if (typeof process !== "undefined" && process.env) {
+      return Object.entries(process.env).reduce((acc, [key, value]) => {
+        acc[key] = String(value);
+        return acc;
+      }, {});
+    }
+    return void 0;
+  } catch (e3) {
+    return void 0;
+  }
+}
+function getEnvironmentVariable(name) {
+  try {
+    return typeof process !== "undefined" ? (
+      // eslint-disable-next-line no-process-env
+      process.env?.[name]
+    ) : void 0;
+  } catch (e3) {
+    return void 0;
+  }
+}
+function getLangSmithEnvironmentVariable(name) {
+  return getEnvironmentVariable(`LANGSMITH_${name}`) || getEnvironmentVariable(`LANGCHAIN_${name}`);
+}
+function getShas() {
+  if (cachedCommitSHAs !== void 0) {
+    return cachedCommitSHAs;
+  }
+  const common_release_envs = [
+    "VERCEL_GIT_COMMIT_SHA",
+    "NEXT_PUBLIC_VERCEL_GIT_COMMIT_SHA",
+    "COMMIT_REF",
+    "RENDER_GIT_COMMIT",
+    "CI_COMMIT_SHA",
+    "CIRCLE_SHA1",
+    "CF_PAGES_COMMIT_SHA",
+    "REACT_APP_GIT_SHA",
+    "SOURCE_VERSION",
+    "GITHUB_SHA",
+    "TRAVIS_COMMIT",
+    "GIT_COMMIT",
+    "BUILD_VCS_NUMBER",
+    "bamboo_planRepository_revision",
+    "Build.SourceVersion",
+    "BITBUCKET_COMMIT",
+    "DRONE_COMMIT_SHA",
+    "SEMAPHORE_GIT_SHA",
+    "BUILDKITE_COMMIT"
+  ];
+  const shas = {};
+  for (const env of common_release_envs) {
+    const envVar = getEnvironmentVariable(env);
+    if (envVar !== void 0) {
+      shas[env] = envVar;
+    }
+  }
+  cachedCommitSHAs = shas;
+  return shas;
+}
+var globalEnv, isBrowser, isWebWorker, isJsDom, isDeno, isNode, getEnv, runtimeEnvironment, cachedCommitSHAs;
+var init_env = __esm({
+  "node_modules/langsmith/dist/utils/env.js"() {
+    init_dist();
+    isBrowser = () => typeof window !== "undefined" && typeof window.document !== "undefined";
+    isWebWorker = () => typeof globalThis === "object" && globalThis.constructor && globalThis.constructor.name === "DedicatedWorkerGlobalScope";
+    isJsDom = () => typeof window !== "undefined" && window.name === "nodejs" || typeof navigator !== "undefined" && (navigator.userAgent.includes("Node.js") || navigator.userAgent.includes("jsdom"));
+    isDeno = () => typeof Deno !== "undefined";
+    isNode = () => typeof process !== "undefined" && typeof process.versions !== "undefined" && typeof process.versions.node !== "undefined" && !isDeno();
+    getEnv = () => {
+      if (globalEnv) {
+        return globalEnv;
+      }
+      if (isBrowser()) {
+        globalEnv = "browser";
+      } else if (isNode()) {
+        globalEnv = "node";
+      } else if (isWebWorker()) {
+        globalEnv = "webworker";
+      } else if (isJsDom()) {
+        globalEnv = "jsdom";
+      } else if (isDeno()) {
+        globalEnv = "deno";
+      } else {
+        globalEnv = "other";
+      }
+      return globalEnv;
     };
   }
 });
 
 // node_modules/langsmith/dist/env.js
 var isTracingEnabled;
-var init_env3 = __esm({
+var init_env2 = __esm({
   "node_modules/langsmith/dist/env.js"() {
-    init_env2();
+    init_env();
     isTracingEnabled = (tracingEnabled) => {
       if (tracingEnabled !== void 0) {
         return tracingEnabled;
@@ -11408,13 +10413,24 @@ var init_env3 = __esm({
   }
 });
 
+// node_modules/langsmith/dist/singletons/constants.js
+var _LC_CONTEXT_VARIABLES_KEY;
+var init_constants = __esm({
+  "node_modules/langsmith/dist/singletons/constants.js"() {
+    _LC_CONTEXT_VARIABLES_KEY = Symbol.for("lc:context_variables");
+  }
+});
+
 // node_modules/langsmith/dist/run_trees.js
-function stripNonAlphanumeric2(input) {
+function stripNonAlphanumeric(input) {
   return input.replace(/[-:.]/g, "");
 }
-function convertToDottedOrderFormat2(epoch, runId, executionOrder = 1) {
+function convertToDottedOrderFormat(epoch, runId, executionOrder = 1) {
   const paddedOrder = executionOrder.toFixed(0).slice(0, 3).padStart(3, "0");
-  return stripNonAlphanumeric2(`${new Date(epoch).toISOString().slice(0, -1)}${paddedOrder}Z`) + runId;
+  return stripNonAlphanumeric(`${new Date(epoch).toISOString().slice(0, -1)}${paddedOrder}Z`) + runId;
+}
+function isRunTree(x2) {
+  return x2 !== void 0 && typeof x2.createChild === "function" && typeof x2.postRun === "function";
 }
 function isLangChainTracerLike(x2) {
   return typeof x2 === "object" && x2 != null && typeof x2.name === "string" && x2.name === "langchain_tracer";
@@ -11434,10 +10450,11 @@ var Baggage, RunTree;
 var init_run_trees = __esm({
   "node_modules/langsmith/dist/run_trees.js"() {
     init_esm_browser2();
-    init_env2();
+    init_env();
     init_client();
-    init_env3();
+    init_env2();
     init_warn();
+    init_constants();
     Baggage = class {
       constructor(metadata, tags) {
         Object.defineProperty(this, "metadata", {
@@ -11615,15 +10632,25 @@ var init_run_trees = __esm({
           writable: true,
           value: void 0
         });
+        Object.defineProperty(this, "attachments", {
+          enumerable: true,
+          configurable: true,
+          writable: true,
+          value: void 0
+        });
+        if (isRunTree(originalConfig)) {
+          Object.assign(this, { ...originalConfig });
+          return;
+        }
         const defaultConfig = RunTree.getDefaultConfig();
         const { metadata, ...config } = originalConfig;
-        const client = config.client ?? RunTree.getSharedClient();
+        const client2 = config.client ?? RunTree.getSharedClient();
         const dedupedMetadata = {
           ...metadata,
           ...config?.extra?.metadata
         };
         config.extra = { ...config.extra, metadata: dedupedMetadata };
-        Object.assign(this, { ...defaultConfig, ...config, client });
+        Object.assign(this, { ...defaultConfig, ...config, client: client2 });
         if (!this.trace_id) {
           if (this.parent_run) {
             this.trace_id = this.parent_run.trace_id ?? this.id;
@@ -11634,7 +10661,7 @@ var init_run_trees = __esm({
         this.execution_order ?? (this.execution_order = 1);
         this.child_execution_order ?? (this.child_execution_order = 1);
         if (!this.dotted_order) {
-          const currentDottedOrder = convertToDottedOrderFormat2(this.start_time, this.id, this.execution_order);
+          const currentDottedOrder = convertToDottedOrderFormat(this.start_time, this.id, this.execution_order);
           if (this.parent_run) {
             this.dotted_order = this.parent_run.dotted_order + "." + currentDottedOrder;
           } else {
@@ -11646,11 +10673,11 @@ var init_run_trees = __esm({
         return {
           id: v4_default2(),
           run_type: "chain",
-          project_name: getEnvironmentVariable2("LANGCHAIN_PROJECT") ?? getEnvironmentVariable2("LANGCHAIN_SESSION") ?? // TODO: Deprecate
+          project_name: getEnvironmentVariable("LANGCHAIN_PROJECT") ?? getEnvironmentVariable("LANGCHAIN_SESSION") ?? // TODO: Deprecate
           "default",
           child_runs: [],
-          api_url: getEnvironmentVariable2("LANGCHAIN_ENDPOINT") ?? "http://localhost:1984",
-          api_key: getEnvironmentVariable2("LANGCHAIN_API_KEY"),
+          api_url: getEnvironmentVariable("LANGCHAIN_ENDPOINT") ?? "http://localhost:1984",
+          api_key: getEnvironmentVariable("LANGCHAIN_API_KEY"),
           caller_options: {},
           start_time: Date.now(),
           serialized: {},
@@ -11675,6 +10702,9 @@ var init_run_trees = __esm({
           execution_order: child_execution_order,
           child_execution_order
         });
+        if (_LC_CONTEXT_VARIABLES_KEY in this) {
+          child[_LC_CONTEXT_VARIABLES_KEY] = this[_LC_CONTEXT_VARIABLES_KEY];
+        }
         const LC_CHILD = Symbol.for("lc:child_config");
         const presentConfig = config.extra?.[LC_CHILD] ?? this.extra[LC_CHILD];
         if (isRunnableConfigLike(presentConfig)) {
@@ -11697,10 +10727,13 @@ var init_run_trees = __esm({
         this.child_runs.push(child);
         return child;
       }
-      async end(outputs, error, endTime = Date.now()) {
+      async end(outputs, error, endTime = Date.now(), metadata) {
         this.outputs = this.outputs ?? outputs;
         this.error = this.error ?? error;
         this.end_time = this.end_time ?? endTime;
+        if (metadata && Object.keys(metadata).length > 0) {
+          this.extra = this.extra ? { ...this.extra, metadata: { ...this.extra.metadata, ...metadata } } : { metadata };
+        }
       }
       _convertToCreate(run, runtimeEnv, excludeChildRuns = true) {
         const runExtra = run.extra ?? {};
@@ -11740,13 +10773,14 @@ var init_run_trees = __esm({
           parent_run_id,
           trace_id: run.trace_id,
           dotted_order: run.dotted_order,
-          tags: run.tags
+          tags: run.tags,
+          attachments: run.attachments
         };
         return persistedRun;
       }
       async postRun(excludeChildRuns = true) {
         try {
-          const runtimeEnv = await getRuntimeEnvironment2();
+          const runtimeEnv = getRuntimeEnvironment();
           const runCreate = await this._convertToCreate(this, runtimeEnv, true);
           await this.client.createRun(runCreate);
           if (!excludeChildRuns) {
@@ -11772,7 +10806,8 @@ var init_run_trees = __esm({
             events: this.events,
             dotted_order: this.dotted_order,
             trace_id: this.trace_id,
-            tags: this.tags
+            tags: this.tags,
+            attachments: this.attachments
           };
           await this.client.updateRun(this.id, runUpdate);
         } catch (error) {
@@ -11786,20 +10821,20 @@ var init_run_trees = __esm({
         const callbackManager = parentConfig?.callbacks;
         let parentRun;
         let projectName;
-        let client;
+        let client2;
         let tracingEnabled = isTracingEnabled();
         if (callbackManager) {
           const parentRunId = callbackManager?.getParentRunId?.() ?? "";
           const langChainTracer = callbackManager?.handlers?.find((handler) => handler?.name == "langchain_tracer");
           parentRun = langChainTracer?.getRun?.(parentRunId);
           projectName = langChainTracer?.projectName;
-          client = langChainTracer?.client;
+          client2 = langChainTracer?.client;
           tracingEnabled = tracingEnabled || !!langChainTracer;
         }
         if (!parentRun) {
           return new RunTree({
             ...props,
-            client,
+            client: client2,
             tracingEnabled,
             project_name: projectName
           });
@@ -11809,7 +10844,7 @@ var init_run_trees = __esm({
           id: parentRun.id,
           trace_id: parentRun.trace_id,
           dotted_order: parentRun.dotted_order,
-          client,
+          client: client2,
           tracingEnabled,
           project_name: projectName,
           tags: [
@@ -11879,21 +10914,1551 @@ var init_run_trees = __esm({
   }
 });
 
-// node_modules/langsmith/dist/index.js
-var __version__;
-var init_dist = __esm({
-  "node_modules/langsmith/dist/index.js"() {
-    init_client();
+// node_modules/langsmith/dist/singletons/traceable.js
+function isTraceableFunction(x2) {
+  return typeof x2 === "function" && "langsmith:traceable" in x2;
+}
+var MockAsyncLocalStorage, TRACING_ALS_KEY, mockAsyncLocalStorage, AsyncLocalStorageProvider, AsyncLocalStorageProviderSingleton, getCurrentRunTree, ROOT;
+var init_traceable = __esm({
+  "node_modules/langsmith/dist/singletons/traceable.js"() {
     init_run_trees();
-    init_fetch();
-    __version__ = "0.1.61";
+    MockAsyncLocalStorage = class {
+      getStore() {
+        return void 0;
+      }
+      run(_2, callback) {
+        return callback();
+      }
+    };
+    TRACING_ALS_KEY = Symbol.for("ls:tracing_async_local_storage");
+    mockAsyncLocalStorage = new MockAsyncLocalStorage();
+    AsyncLocalStorageProvider = class {
+      getInstance() {
+        return globalThis[TRACING_ALS_KEY] ?? mockAsyncLocalStorage;
+      }
+      initializeGlobalInstance(instance) {
+        if (globalThis[TRACING_ALS_KEY] === void 0) {
+          globalThis[TRACING_ALS_KEY] = instance;
+        }
+      }
+    };
+    AsyncLocalStorageProviderSingleton = new AsyncLocalStorageProvider();
+    getCurrentRunTree = () => {
+      const runTree = AsyncLocalStorageProviderSingleton.getInstance().getStore();
+      if (!isRunTree(runTree)) {
+        throw new Error([
+          "Could not get the current run tree.",
+          "",
+          "Please make sure you are calling this method within a traceable function or the tracing is enabled."
+        ].join("\n"));
+      }
+      return runTree;
+    };
+    ROOT = Symbol.for("langsmith:traceable:root");
   }
 });
 
-// node_modules/langsmith/index.js
-var init_langsmith = __esm({
-  "node_modules/langsmith/index.js"() {
-    init_dist();
+// node_modules/langsmith/singletons/traceable.js
+var init_traceable2 = __esm({
+  "node_modules/langsmith/singletons/traceable.js"() {
+    init_traceable();
+  }
+});
+
+// node_modules/@langchain/core/dist/utils/fast-json-patch/src/helpers.js
+function hasOwnProperty(obj, key) {
+  return _hasOwnProperty.call(obj, key);
+}
+function _objectKeys(obj) {
+  if (Array.isArray(obj)) {
+    const keys2 = new Array(obj.length);
+    for (let k3 = 0; k3 < keys2.length; k3++) {
+      keys2[k3] = "" + k3;
+    }
+    return keys2;
+  }
+  if (Object.keys) {
+    return Object.keys(obj);
+  }
+  let keys = [];
+  for (let i3 in obj) {
+    if (hasOwnProperty(obj, i3)) {
+      keys.push(i3);
+    }
+  }
+  return keys;
+}
+function _deepClone(obj) {
+  switch (typeof obj) {
+    case "object":
+      return JSON.parse(JSON.stringify(obj));
+    case "undefined":
+      return null;
+    default:
+      return obj;
+  }
+}
+function isInteger(str2) {
+  let i3 = 0;
+  const len = str2.length;
+  let charCode;
+  while (i3 < len) {
+    charCode = str2.charCodeAt(i3);
+    if (charCode >= 48 && charCode <= 57) {
+      i3++;
+      continue;
+    }
+    return false;
+  }
+  return true;
+}
+function escapePathComponent(path) {
+  if (path.indexOf("/") === -1 && path.indexOf("~") === -1)
+    return path;
+  return path.replace(/~/g, "~0").replace(/\//g, "~1");
+}
+function unescapePathComponent(path) {
+  return path.replace(/~1/g, "/").replace(/~0/g, "~");
+}
+function hasUndefined(obj) {
+  if (obj === void 0) {
+    return true;
+  }
+  if (obj) {
+    if (Array.isArray(obj)) {
+      for (let i4 = 0, len = obj.length; i4 < len; i4++) {
+        if (hasUndefined(obj[i4])) {
+          return true;
+        }
+      }
+    } else if (typeof obj === "object") {
+      const objKeys = _objectKeys(obj);
+      const objKeysLength = objKeys.length;
+      for (var i3 = 0; i3 < objKeysLength; i3++) {
+        if (hasUndefined(obj[objKeys[i3]])) {
+          return true;
+        }
+      }
+    }
+  }
+  return false;
+}
+function patchErrorMessageFormatter(message, args) {
+  const messageParts = [message];
+  for (const key in args) {
+    const value = typeof args[key] === "object" ? JSON.stringify(args[key], null, 2) : args[key];
+    if (typeof value !== "undefined") {
+      messageParts.push(`${key}: ${value}`);
+    }
+  }
+  return messageParts.join("\n");
+}
+var _hasOwnProperty, PatchError;
+var init_helpers = __esm({
+  "node_modules/@langchain/core/dist/utils/fast-json-patch/src/helpers.js"() {
+    _hasOwnProperty = Object.prototype.hasOwnProperty;
+    PatchError = class extends Error {
+      constructor(message, name, index2, operation, tree) {
+        super(patchErrorMessageFormatter(message, { name, index: index2, operation, tree }));
+        Object.defineProperty(this, "name", {
+          enumerable: true,
+          configurable: true,
+          writable: true,
+          value: name
+        });
+        Object.defineProperty(this, "index", {
+          enumerable: true,
+          configurable: true,
+          writable: true,
+          value: index2
+        });
+        Object.defineProperty(this, "operation", {
+          enumerable: true,
+          configurable: true,
+          writable: true,
+          value: operation
+        });
+        Object.defineProperty(this, "tree", {
+          enumerable: true,
+          configurable: true,
+          writable: true,
+          value: tree
+        });
+        Object.setPrototypeOf(this, new.target.prototype);
+        this.message = patchErrorMessageFormatter(message, {
+          name,
+          index: index2,
+          operation,
+          tree
+        });
+      }
+    };
+  }
+});
+
+// node_modules/@langchain/core/dist/utils/fast-json-patch/src/core.js
+var core_exports = {};
+__export(core_exports, {
+  JsonPatchError: () => JsonPatchError,
+  _areEquals: () => _areEquals,
+  applyOperation: () => applyOperation,
+  applyPatch: () => applyPatch,
+  applyReducer: () => applyReducer,
+  deepClone: () => deepClone,
+  getValueByPointer: () => getValueByPointer,
+  validate: () => validate3,
+  validator: () => validator
+});
+function getValueByPointer(document2, pointer) {
+  if (pointer == "") {
+    return document2;
+  }
+  var getOriginalDestination = { op: "_get", path: pointer };
+  applyOperation(document2, getOriginalDestination);
+  return getOriginalDestination.value;
+}
+function applyOperation(document2, operation, validateOperation = false, mutateDocument = true, banPrototypeModifications = true, index2 = 0) {
+  if (validateOperation) {
+    if (typeof validateOperation == "function") {
+      validateOperation(operation, 0, document2, operation.path);
+    } else {
+      validator(operation, 0);
+    }
+  }
+  if (operation.path === "") {
+    let returnValue = { newDocument: document2 };
+    if (operation.op === "add") {
+      returnValue.newDocument = operation.value;
+      return returnValue;
+    } else if (operation.op === "replace") {
+      returnValue.newDocument = operation.value;
+      returnValue.removed = document2;
+      return returnValue;
+    } else if (operation.op === "move" || operation.op === "copy") {
+      returnValue.newDocument = getValueByPointer(document2, operation.from);
+      if (operation.op === "move") {
+        returnValue.removed = document2;
+      }
+      return returnValue;
+    } else if (operation.op === "test") {
+      returnValue.test = _areEquals(document2, operation.value);
+      if (returnValue.test === false) {
+        throw new JsonPatchError("Test operation failed", "TEST_OPERATION_FAILED", index2, operation, document2);
+      }
+      returnValue.newDocument = document2;
+      return returnValue;
+    } else if (operation.op === "remove") {
+      returnValue.removed = document2;
+      returnValue.newDocument = null;
+      return returnValue;
+    } else if (operation.op === "_get") {
+      operation.value = document2;
+      return returnValue;
+    } else {
+      if (validateOperation) {
+        throw new JsonPatchError("Operation `op` property is not one of operations defined in RFC-6902", "OPERATION_OP_INVALID", index2, operation, document2);
+      } else {
+        return returnValue;
+      }
+    }
+  } else {
+    if (!mutateDocument) {
+      document2 = _deepClone(document2);
+    }
+    const path = operation.path || "";
+    const keys = path.split("/");
+    let obj = document2;
+    let t3 = 1;
+    let len = keys.length;
+    let existingPathFragment = void 0;
+    let key;
+    let validateFunction;
+    if (typeof validateOperation == "function") {
+      validateFunction = validateOperation;
+    } else {
+      validateFunction = validator;
+    }
+    while (true) {
+      key = keys[t3];
+      if (key && key.indexOf("~") != -1) {
+        key = unescapePathComponent(key);
+      }
+      if (banPrototypeModifications && (key == "__proto__" || key == "prototype" && t3 > 0 && keys[t3 - 1] == "constructor")) {
+        throw new TypeError("JSON-Patch: modifying `__proto__` or `constructor/prototype` prop is banned for security reasons, if this was on purpose, please set `banPrototypeModifications` flag false and pass it to this function. More info in fast-json-patch README");
+      }
+      if (validateOperation) {
+        if (existingPathFragment === void 0) {
+          if (obj[key] === void 0) {
+            existingPathFragment = keys.slice(0, t3).join("/");
+          } else if (t3 == len - 1) {
+            existingPathFragment = operation.path;
+          }
+          if (existingPathFragment !== void 0) {
+            validateFunction(operation, 0, document2, existingPathFragment);
+          }
+        }
+      }
+      t3++;
+      if (Array.isArray(obj)) {
+        if (key === "-") {
+          key = obj.length;
+        } else {
+          if (validateOperation && !isInteger(key)) {
+            throw new JsonPatchError("Expected an unsigned base-10 integer value, making the new referenced value the array element with the zero-based index", "OPERATION_PATH_ILLEGAL_ARRAY_INDEX", index2, operation, document2);
+          } else if (isInteger(key)) {
+            key = ~~key;
+          }
+        }
+        if (t3 >= len) {
+          if (validateOperation && operation.op === "add" && key > obj.length) {
+            throw new JsonPatchError("The specified index MUST NOT be greater than the number of elements in the array", "OPERATION_VALUE_OUT_OF_BOUNDS", index2, operation, document2);
+          }
+          const returnValue = arrOps[operation.op].call(operation, obj, key, document2);
+          if (returnValue.test === false) {
+            throw new JsonPatchError("Test operation failed", "TEST_OPERATION_FAILED", index2, operation, document2);
+          }
+          return returnValue;
+        }
+      } else {
+        if (t3 >= len) {
+          const returnValue = objOps[operation.op].call(operation, obj, key, document2);
+          if (returnValue.test === false) {
+            throw new JsonPatchError("Test operation failed", "TEST_OPERATION_FAILED", index2, operation, document2);
+          }
+          return returnValue;
+        }
+      }
+      obj = obj[key];
+      if (validateOperation && t3 < len && (!obj || typeof obj !== "object")) {
+        throw new JsonPatchError("Cannot perform operation at the desired path", "OPERATION_PATH_UNRESOLVABLE", index2, operation, document2);
+      }
+    }
+  }
+}
+function applyPatch(document2, patch, validateOperation, mutateDocument = true, banPrototypeModifications = true) {
+  if (validateOperation) {
+    if (!Array.isArray(patch)) {
+      throw new JsonPatchError("Patch sequence must be an array", "SEQUENCE_NOT_AN_ARRAY");
+    }
+  }
+  if (!mutateDocument) {
+    document2 = _deepClone(document2);
+  }
+  const results = new Array(patch.length);
+  for (let i3 = 0, length = patch.length; i3 < length; i3++) {
+    results[i3] = applyOperation(document2, patch[i3], validateOperation, true, banPrototypeModifications, i3);
+    document2 = results[i3].newDocument;
+  }
+  results.newDocument = document2;
+  return results;
+}
+function applyReducer(document2, operation, index2) {
+  const operationResult = applyOperation(document2, operation);
+  if (operationResult.test === false) {
+    throw new JsonPatchError("Test operation failed", "TEST_OPERATION_FAILED", index2, operation, document2);
+  }
+  return operationResult.newDocument;
+}
+function validator(operation, index2, document2, existingPathFragment) {
+  if (typeof operation !== "object" || operation === null || Array.isArray(operation)) {
+    throw new JsonPatchError("Operation is not an object", "OPERATION_NOT_AN_OBJECT", index2, operation, document2);
+  } else if (!objOps[operation.op]) {
+    throw new JsonPatchError("Operation `op` property is not one of operations defined in RFC-6902", "OPERATION_OP_INVALID", index2, operation, document2);
+  } else if (typeof operation.path !== "string") {
+    throw new JsonPatchError("Operation `path` property is not a string", "OPERATION_PATH_INVALID", index2, operation, document2);
+  } else if (operation.path.indexOf("/") !== 0 && operation.path.length > 0) {
+    throw new JsonPatchError('Operation `path` property must start with "/"', "OPERATION_PATH_INVALID", index2, operation, document2);
+  } else if ((operation.op === "move" || operation.op === "copy") && typeof operation.from !== "string") {
+    throw new JsonPatchError("Operation `from` property is not present (applicable in `move` and `copy` operations)", "OPERATION_FROM_REQUIRED", index2, operation, document2);
+  } else if ((operation.op === "add" || operation.op === "replace" || operation.op === "test") && operation.value === void 0) {
+    throw new JsonPatchError("Operation `value` property is not present (applicable in `add`, `replace` and `test` operations)", "OPERATION_VALUE_REQUIRED", index2, operation, document2);
+  } else if ((operation.op === "add" || operation.op === "replace" || operation.op === "test") && hasUndefined(operation.value)) {
+    throw new JsonPatchError("Operation `value` property is not present (applicable in `add`, `replace` and `test` operations)", "OPERATION_VALUE_CANNOT_CONTAIN_UNDEFINED", index2, operation, document2);
+  } else if (document2) {
+    if (operation.op == "add") {
+      var pathLen = operation.path.split("/").length;
+      var existingPathLen = existingPathFragment.split("/").length;
+      if (pathLen !== existingPathLen + 1 && pathLen !== existingPathLen) {
+        throw new JsonPatchError("Cannot perform an `add` operation at the desired path", "OPERATION_PATH_CANNOT_ADD", index2, operation, document2);
+      }
+    } else if (operation.op === "replace" || operation.op === "remove" || operation.op === "_get") {
+      if (operation.path !== existingPathFragment) {
+        throw new JsonPatchError("Cannot perform the operation at a path that does not exist", "OPERATION_PATH_UNRESOLVABLE", index2, operation, document2);
+      }
+    } else if (operation.op === "move" || operation.op === "copy") {
+      var existingValue = {
+        op: "_get",
+        path: operation.from,
+        value: void 0
+      };
+      var error = validate3([existingValue], document2);
+      if (error && error.name === "OPERATION_PATH_UNRESOLVABLE") {
+        throw new JsonPatchError("Cannot perform the operation from a path that does not exist", "OPERATION_FROM_UNRESOLVABLE", index2, operation, document2);
+      }
+    }
+  }
+}
+function validate3(sequence, document2, externalValidator) {
+  try {
+    if (!Array.isArray(sequence)) {
+      throw new JsonPatchError("Patch sequence must be an array", "SEQUENCE_NOT_AN_ARRAY");
+    }
+    if (document2) {
+      applyPatch(_deepClone(document2), _deepClone(sequence), externalValidator || true);
+    } else {
+      externalValidator = externalValidator || validator;
+      for (var i3 = 0; i3 < sequence.length; i3++) {
+        externalValidator(sequence[i3], i3, document2, void 0);
+      }
+    }
+  } catch (e3) {
+    if (e3 instanceof JsonPatchError) {
+      return e3;
+    } else {
+      throw e3;
+    }
+  }
+}
+function _areEquals(a3, b3) {
+  if (a3 === b3)
+    return true;
+  if (a3 && b3 && typeof a3 == "object" && typeof b3 == "object") {
+    var arrA = Array.isArray(a3), arrB = Array.isArray(b3), i3, length, key;
+    if (arrA && arrB) {
+      length = a3.length;
+      if (length != b3.length)
+        return false;
+      for (i3 = length; i3-- !== 0; )
+        if (!_areEquals(a3[i3], b3[i3]))
+          return false;
+      return true;
+    }
+    if (arrA != arrB)
+      return false;
+    var keys = Object.keys(a3);
+    length = keys.length;
+    if (length !== Object.keys(b3).length)
+      return false;
+    for (i3 = length; i3-- !== 0; )
+      if (!b3.hasOwnProperty(keys[i3]))
+        return false;
+    for (i3 = length; i3-- !== 0; ) {
+      key = keys[i3];
+      if (!_areEquals(a3[key], b3[key]))
+        return false;
+    }
+    return true;
+  }
+  return a3 !== a3 && b3 !== b3;
+}
+var JsonPatchError, deepClone, objOps, arrOps;
+var init_core = __esm({
+  "node_modules/@langchain/core/dist/utils/fast-json-patch/src/core.js"() {
+    init_helpers();
+    JsonPatchError = PatchError;
+    deepClone = _deepClone;
+    objOps = {
+      add: function(obj, key, document2) {
+        obj[key] = this.value;
+        return { newDocument: document2 };
+      },
+      remove: function(obj, key, document2) {
+        var removed = obj[key];
+        delete obj[key];
+        return { newDocument: document2, removed };
+      },
+      replace: function(obj, key, document2) {
+        var removed = obj[key];
+        obj[key] = this.value;
+        return { newDocument: document2, removed };
+      },
+      move: function(obj, key, document2) {
+        let removed = getValueByPointer(document2, this.path);
+        if (removed) {
+          removed = _deepClone(removed);
+        }
+        const originalValue = applyOperation(document2, {
+          op: "remove",
+          path: this.from
+        }).removed;
+        applyOperation(document2, {
+          op: "add",
+          path: this.path,
+          value: originalValue
+        });
+        return { newDocument: document2, removed };
+      },
+      copy: function(obj, key, document2) {
+        const valueToCopy = getValueByPointer(document2, this.from);
+        applyOperation(document2, {
+          op: "add",
+          path: this.path,
+          value: _deepClone(valueToCopy)
+        });
+        return { newDocument: document2 };
+      },
+      test: function(obj, key, document2) {
+        return { newDocument: document2, test: _areEquals(obj[key], this.value) };
+      },
+      _get: function(obj, key, document2) {
+        this.value = obj[key];
+        return { newDocument: document2 };
+      }
+    };
+    arrOps = {
+      add: function(arr2, i3, document2) {
+        if (isInteger(i3)) {
+          arr2.splice(i3, 0, this.value);
+        } else {
+          arr2[i3] = this.value;
+        }
+        return { newDocument: document2, index: i3 };
+      },
+      remove: function(arr2, i3, document2) {
+        var removedList = arr2.splice(i3, 1);
+        return { newDocument: document2, removed: removedList[0] };
+      },
+      replace: function(arr2, i3, document2) {
+        var removed = arr2[i3];
+        arr2[i3] = this.value;
+        return { newDocument: document2, removed };
+      },
+      move: objOps.move,
+      copy: objOps.copy,
+      test: objOps.test,
+      _get: objOps._get
+    };
+  }
+});
+
+// node_modules/@langchain/core/dist/utils/fast-json-patch/src/duplex.js
+function _generate(mirror, obj, patches, path, invertible) {
+  if (obj === mirror) {
+    return;
+  }
+  if (typeof obj.toJSON === "function") {
+    obj = obj.toJSON();
+  }
+  var newKeys = _objectKeys(obj);
+  var oldKeys = _objectKeys(mirror);
+  var changed = false;
+  var deleted = false;
+  for (var t3 = oldKeys.length - 1; t3 >= 0; t3--) {
+    var key = oldKeys[t3];
+    var oldVal = mirror[key];
+    if (hasOwnProperty(obj, key) && !(obj[key] === void 0 && oldVal !== void 0 && Array.isArray(obj) === false)) {
+      var newVal = obj[key];
+      if (typeof oldVal == "object" && oldVal != null && typeof newVal == "object" && newVal != null && Array.isArray(oldVal) === Array.isArray(newVal)) {
+        _generate(oldVal, newVal, patches, path + "/" + escapePathComponent(key), invertible);
+      } else {
+        if (oldVal !== newVal) {
+          changed = true;
+          if (invertible) {
+            patches.push({
+              op: "test",
+              path: path + "/" + escapePathComponent(key),
+              value: _deepClone(oldVal)
+            });
+          }
+          patches.push({
+            op: "replace",
+            path: path + "/" + escapePathComponent(key),
+            value: _deepClone(newVal)
+          });
+        }
+      }
+    } else if (Array.isArray(mirror) === Array.isArray(obj)) {
+      if (invertible) {
+        patches.push({
+          op: "test",
+          path: path + "/" + escapePathComponent(key),
+          value: _deepClone(oldVal)
+        });
+      }
+      patches.push({
+        op: "remove",
+        path: path + "/" + escapePathComponent(key)
+      });
+      deleted = true;
+    } else {
+      if (invertible) {
+        patches.push({ op: "test", path, value: mirror });
+      }
+      patches.push({ op: "replace", path, value: obj });
+      changed = true;
+    }
+  }
+  if (!deleted && newKeys.length == oldKeys.length) {
+    return;
+  }
+  for (var t3 = 0; t3 < newKeys.length; t3++) {
+    var key = newKeys[t3];
+    if (!hasOwnProperty(mirror, key) && obj[key] !== void 0) {
+      patches.push({
+        op: "add",
+        path: path + "/" + escapePathComponent(key),
+        value: _deepClone(obj[key])
+      });
+    }
+  }
+}
+function compare(tree1, tree2, invertible = false) {
+  var patches = [];
+  _generate(tree1, tree2, patches, "", invertible);
+  return patches;
+}
+var init_duplex = __esm({
+  "node_modules/@langchain/core/dist/utils/fast-json-patch/src/duplex.js"() {
+    init_helpers();
+    init_core();
+  }
+});
+
+// node_modules/@langchain/core/dist/utils/fast-json-patch/index.js
+var fast_json_patch_default;
+var init_fast_json_patch = __esm({
+  "node_modules/@langchain/core/dist/utils/fast-json-patch/index.js"() {
+    init_core();
+    init_duplex();
+    init_helpers();
+    init_core();
+    init_helpers();
+    fast_json_patch_default = {
+      ...core_exports,
+      // ...duplex,
+      JsonPatchError: PatchError,
+      deepClone: _deepClone,
+      escapePathComponent,
+      unescapePathComponent
+    };
+  }
+});
+
+// node_modules/decamelize/index.js
+var require_decamelize = __commonJS({
+  "node_modules/decamelize/index.js"(exports, module2) {
+    "use strict";
+    module2.exports = function(str2, sep) {
+      if (typeof str2 !== "string") {
+        throw new TypeError("Expected a string");
+      }
+      sep = typeof sep === "undefined" ? "_" : sep;
+      return str2.replace(/([a-z\d])([A-Z])/g, "$1" + sep + "$2").replace(/([A-Z]+)([A-Z][a-z\d]+)/g, "$1" + sep + "$2").toLowerCase();
+    };
+  }
+});
+
+// node_modules/@langchain/core/node_modules/camelcase/index.js
+var require_camelcase = __commonJS({
+  "node_modules/@langchain/core/node_modules/camelcase/index.js"(exports, module2) {
+    "use strict";
+    var UPPERCASE = /[\p{Lu}]/u;
+    var LOWERCASE = /[\p{Ll}]/u;
+    var LEADING_CAPITAL = /^[\p{Lu}](?![\p{Lu}])/gu;
+    var IDENTIFIER = /([\p{Alpha}\p{N}_]|$)/u;
+    var SEPARATORS = /[_.\- ]+/;
+    var LEADING_SEPARATORS = new RegExp("^" + SEPARATORS.source);
+    var SEPARATORS_AND_IDENTIFIER = new RegExp(SEPARATORS.source + IDENTIFIER.source, "gu");
+    var NUMBERS_AND_IDENTIFIER = new RegExp("\\d+" + IDENTIFIER.source, "gu");
+    var preserveCamelCase = (string, toLowerCase, toUpperCase) => {
+      let isLastCharLower = false;
+      let isLastCharUpper = false;
+      let isLastLastCharUpper = false;
+      for (let i3 = 0; i3 < string.length; i3++) {
+        const character = string[i3];
+        if (isLastCharLower && UPPERCASE.test(character)) {
+          string = string.slice(0, i3) + "-" + string.slice(i3);
+          isLastCharLower = false;
+          isLastLastCharUpper = isLastCharUpper;
+          isLastCharUpper = true;
+          i3++;
+        } else if (isLastCharUpper && isLastLastCharUpper && LOWERCASE.test(character)) {
+          string = string.slice(0, i3 - 1) + "-" + string.slice(i3 - 1);
+          isLastLastCharUpper = isLastCharUpper;
+          isLastCharUpper = false;
+          isLastCharLower = true;
+        } else {
+          isLastCharLower = toLowerCase(character) === character && toUpperCase(character) !== character;
+          isLastLastCharUpper = isLastCharUpper;
+          isLastCharUpper = toUpperCase(character) === character && toLowerCase(character) !== character;
+        }
+      }
+      return string;
+    };
+    var preserveConsecutiveUppercase = (input, toLowerCase) => {
+      LEADING_CAPITAL.lastIndex = 0;
+      return input.replace(LEADING_CAPITAL, (m1) => toLowerCase(m1));
+    };
+    var postProcess = (input, toUpperCase) => {
+      SEPARATORS_AND_IDENTIFIER.lastIndex = 0;
+      NUMBERS_AND_IDENTIFIER.lastIndex = 0;
+      return input.replace(SEPARATORS_AND_IDENTIFIER, (_2, identifier) => toUpperCase(identifier)).replace(NUMBERS_AND_IDENTIFIER, (m3) => toUpperCase(m3));
+    };
+    var camelCase2 = (input, options) => {
+      if (!(typeof input === "string" || Array.isArray(input))) {
+        throw new TypeError("Expected the input to be `string | string[]`");
+      }
+      options = {
+        pascalCase: false,
+        preserveConsecutiveUppercase: false,
+        ...options
+      };
+      if (Array.isArray(input)) {
+        input = input.map((x2) => x2.trim()).filter((x2) => x2.length).join("-");
+      } else {
+        input = input.trim();
+      }
+      if (input.length === 0) {
+        return "";
+      }
+      const toLowerCase = options.locale === false ? (string) => string.toLowerCase() : (string) => string.toLocaleLowerCase(options.locale);
+      const toUpperCase = options.locale === false ? (string) => string.toUpperCase() : (string) => string.toLocaleUpperCase(options.locale);
+      if (input.length === 1) {
+        return options.pascalCase ? toUpperCase(input) : toLowerCase(input);
+      }
+      const hasUpperCase = input !== toLowerCase(input);
+      if (hasUpperCase) {
+        input = preserveCamelCase(input, toLowerCase, toUpperCase);
+      }
+      input = input.replace(LEADING_SEPARATORS, "");
+      if (options.preserveConsecutiveUppercase) {
+        input = preserveConsecutiveUppercase(input, toLowerCase);
+      } else {
+        input = toLowerCase(input);
+      }
+      if (options.pascalCase) {
+        input = toUpperCase(input.charAt(0)) + input.slice(1);
+      }
+      return postProcess(input, toUpperCase);
+    };
+    module2.exports = camelCase2;
+    module2.exports.default = camelCase2;
+  }
+});
+
+// node_modules/@langchain/core/dist/load/map_keys.js
+function keyToJson(key, map) {
+  return map?.[key] || (0, import_decamelize.default)(key);
+}
+function mapKeys(fields, mapper, map) {
+  const mapped = {};
+  for (const key in fields) {
+    if (Object.hasOwn(fields, key)) {
+      mapped[mapper(key, map)] = fields[key];
+    }
+  }
+  return mapped;
+}
+var import_decamelize, import_camelcase;
+var init_map_keys = __esm({
+  "node_modules/@langchain/core/dist/load/map_keys.js"() {
+    import_decamelize = __toESM(require_decamelize(), 1);
+    import_camelcase = __toESM(require_camelcase(), 1);
+  }
+});
+
+// node_modules/@langchain/core/dist/load/serializable.js
+function shallowCopy(obj) {
+  return Array.isArray(obj) ? [...obj] : { ...obj };
+}
+function replaceSecrets(root2, secretsMap) {
+  const result = shallowCopy(root2);
+  for (const [path, secretId] of Object.entries(secretsMap)) {
+    const [last, ...partsReverse] = path.split(".").reverse();
+    let current = result;
+    for (const part of partsReverse.reverse()) {
+      if (current[part] === void 0) {
+        break;
+      }
+      current[part] = shallowCopy(current[part]);
+      current = current[part];
+    }
+    if (current[last] !== void 0) {
+      current[last] = {
+        lc: 1,
+        type: "secret",
+        id: [secretId]
+      };
+    }
+  }
+  return result;
+}
+function get_lc_unique_name(serializableClass) {
+  const parentClass = Object.getPrototypeOf(serializableClass);
+  const lcNameIsSubclassed = typeof serializableClass.lc_name === "function" && (typeof parentClass.lc_name !== "function" || serializableClass.lc_name() !== parentClass.lc_name());
+  if (lcNameIsSubclassed) {
+    return serializableClass.lc_name();
+  } else {
+    return serializableClass.name;
+  }
+}
+var Serializable;
+var init_serializable = __esm({
+  "node_modules/@langchain/core/dist/load/serializable.js"() {
+    init_map_keys();
+    Serializable = class {
+      /**
+       * The name of the serializable. Override to provide an alias or
+       * to preserve the serialized module name in minified environments.
+       *
+       * Implemented as a static method to support loading logic.
+       */
+      static lc_name() {
+        return this.name;
+      }
+      /**
+       * The final serialized identifier for the module.
+       */
+      get lc_id() {
+        return [
+          ...this.lc_namespace,
+          get_lc_unique_name(this.constructor)
+        ];
+      }
+      /**
+       * A map of secrets, which will be omitted from serialization.
+       * Keys are paths to the secret in constructor args, e.g. "foo.bar.baz".
+       * Values are the secret ids, which will be used when deserializing.
+       */
+      get lc_secrets() {
+        return void 0;
+      }
+      /**
+       * A map of additional attributes to merge with constructor args.
+       * Keys are the attribute names, e.g. "foo".
+       * Values are the attribute values, which will be serialized.
+       * These attributes need to be accepted by the constructor as arguments.
+       */
+      get lc_attributes() {
+        return void 0;
+      }
+      /**
+       * A map of aliases for constructor args.
+       * Keys are the attribute names, e.g. "foo".
+       * Values are the alias that will replace the key in serialization.
+       * This is used to eg. make argument names match Python.
+       */
+      get lc_aliases() {
+        return void 0;
+      }
+      constructor(kwargs, ..._args) {
+        Object.defineProperty(this, "lc_serializable", {
+          enumerable: true,
+          configurable: true,
+          writable: true,
+          value: false
+        });
+        Object.defineProperty(this, "lc_kwargs", {
+          enumerable: true,
+          configurable: true,
+          writable: true,
+          value: void 0
+        });
+        this.lc_kwargs = kwargs || {};
+      }
+      toJSON() {
+        if (!this.lc_serializable) {
+          return this.toJSONNotImplemented();
+        }
+        if (
+          // eslint-disable-next-line no-instanceof/no-instanceof
+          this.lc_kwargs instanceof Serializable || typeof this.lc_kwargs !== "object" || Array.isArray(this.lc_kwargs)
+        ) {
+          return this.toJSONNotImplemented();
+        }
+        const aliases = {};
+        const secrets = {};
+        const kwargs = Object.keys(this.lc_kwargs).reduce((acc, key) => {
+          acc[key] = key in this ? this[key] : this.lc_kwargs[key];
+          return acc;
+        }, {});
+        for (let current = Object.getPrototypeOf(this); current; current = Object.getPrototypeOf(current)) {
+          Object.assign(aliases, Reflect.get(current, "lc_aliases", this));
+          Object.assign(secrets, Reflect.get(current, "lc_secrets", this));
+          Object.assign(kwargs, Reflect.get(current, "lc_attributes", this));
+        }
+        Object.keys(secrets).forEach((keyPath) => {
+          let read = this;
+          let write = kwargs;
+          const [last, ...partsReverse] = keyPath.split(".").reverse();
+          for (const key of partsReverse.reverse()) {
+            if (!(key in read) || read[key] === void 0)
+              return;
+            if (!(key in write) || write[key] === void 0) {
+              if (typeof read[key] === "object" && read[key] != null) {
+                write[key] = {};
+              } else if (Array.isArray(read[key])) {
+                write[key] = [];
+              }
+            }
+            read = read[key];
+            write = write[key];
+          }
+          if (last in read && read[last] !== void 0) {
+            write[last] = write[last] || read[last];
+          }
+        });
+        return {
+          lc: 1,
+          type: "constructor",
+          id: this.lc_id,
+          kwargs: mapKeys(Object.keys(secrets).length ? replaceSecrets(kwargs, secrets) : kwargs, keyToJson, aliases)
+        };
+      }
+      toJSONNotImplemented() {
+        return {
+          lc: 1,
+          type: "not_implemented",
+          id: this.lc_id
+        };
+      }
+    };
+  }
+});
+
+// node_modules/@langchain/core/dist/utils/env.js
+async function getRuntimeEnvironment2() {
+  if (runtimeEnvironment2 === void 0) {
+    const env = getEnv2();
+    runtimeEnvironment2 = {
+      library: "langchain-js",
+      runtime: env
+    };
+  }
+  return runtimeEnvironment2;
+}
+function getEnvironmentVariable2(name) {
+  try {
+    if (typeof process !== "undefined") {
+      return process.env?.[name];
+    } else if (isDeno2()) {
+      return Deno?.env.get(name);
+    } else {
+      return void 0;
+    }
+  } catch (e3) {
+    return void 0;
+  }
+}
+var isBrowser2, isWebWorker2, isJsDom2, isDeno2, isNode2, getEnv2, runtimeEnvironment2;
+var init_env3 = __esm({
+  "node_modules/@langchain/core/dist/utils/env.js"() {
+    isBrowser2 = () => typeof window !== "undefined" && typeof window.document !== "undefined";
+    isWebWorker2 = () => typeof globalThis === "object" && globalThis.constructor && globalThis.constructor.name === "DedicatedWorkerGlobalScope";
+    isJsDom2 = () => typeof window !== "undefined" && window.name === "nodejs" || typeof navigator !== "undefined" && (navigator.userAgent.includes("Node.js") || navigator.userAgent.includes("jsdom"));
+    isDeno2 = () => typeof Deno !== "undefined";
+    isNode2 = () => typeof process !== "undefined" && typeof process.versions !== "undefined" && typeof process.versions.node !== "undefined" && !isDeno2();
+    getEnv2 = () => {
+      let env;
+      if (isBrowser2()) {
+        env = "browser";
+      } else if (isNode2()) {
+        env = "node";
+      } else if (isWebWorker2()) {
+        env = "webworker";
+      } else if (isJsDom2()) {
+        env = "jsdom";
+      } else if (isDeno2()) {
+        env = "deno";
+      } else {
+        env = "other";
+      }
+      return env;
+    };
+  }
+});
+
+// node_modules/@langchain/core/dist/callbacks/base.js
+function callbackHandlerPrefersStreaming(x2) {
+  return "lc_prefer_streaming" in x2 && x2.lc_prefer_streaming;
+}
+var BaseCallbackHandlerMethodsClass, BaseCallbackHandler, isBaseCallbackHandler;
+var init_base = __esm({
+  "node_modules/@langchain/core/dist/callbacks/base.js"() {
+    init_esm_browser();
+    init_serializable();
+    init_env3();
+    BaseCallbackHandlerMethodsClass = class {
+    };
+    BaseCallbackHandler = class extends BaseCallbackHandlerMethodsClass {
+      get lc_namespace() {
+        return ["langchain_core", "callbacks", this.name];
+      }
+      get lc_secrets() {
+        return void 0;
+      }
+      get lc_attributes() {
+        return void 0;
+      }
+      get lc_aliases() {
+        return void 0;
+      }
+      /**
+       * The name of the serializable. Override to provide an alias or
+       * to preserve the serialized module name in minified environments.
+       *
+       * Implemented as a static method to support loading logic.
+       */
+      static lc_name() {
+        return this.name;
+      }
+      /**
+       * The final serialized identifier for the module.
+       */
+      get lc_id() {
+        return [
+          ...this.lc_namespace,
+          get_lc_unique_name(this.constructor)
+        ];
+      }
+      constructor(input) {
+        super();
+        Object.defineProperty(this, "lc_serializable", {
+          enumerable: true,
+          configurable: true,
+          writable: true,
+          value: false
+        });
+        Object.defineProperty(this, "lc_kwargs", {
+          enumerable: true,
+          configurable: true,
+          writable: true,
+          value: void 0
+        });
+        Object.defineProperty(this, "ignoreLLM", {
+          enumerable: true,
+          configurable: true,
+          writable: true,
+          value: false
+        });
+        Object.defineProperty(this, "ignoreChain", {
+          enumerable: true,
+          configurable: true,
+          writable: true,
+          value: false
+        });
+        Object.defineProperty(this, "ignoreAgent", {
+          enumerable: true,
+          configurable: true,
+          writable: true,
+          value: false
+        });
+        Object.defineProperty(this, "ignoreRetriever", {
+          enumerable: true,
+          configurable: true,
+          writable: true,
+          value: false
+        });
+        Object.defineProperty(this, "ignoreCustomEvent", {
+          enumerable: true,
+          configurable: true,
+          writable: true,
+          value: false
+        });
+        Object.defineProperty(this, "raiseError", {
+          enumerable: true,
+          configurable: true,
+          writable: true,
+          value: false
+        });
+        Object.defineProperty(this, "awaitHandlers", {
+          enumerable: true,
+          configurable: true,
+          writable: true,
+          value: getEnvironmentVariable2("LANGCHAIN_CALLBACKS_BACKGROUND") === "false"
+        });
+        this.lc_kwargs = input || {};
+        if (input) {
+          this.ignoreLLM = input.ignoreLLM ?? this.ignoreLLM;
+          this.ignoreChain = input.ignoreChain ?? this.ignoreChain;
+          this.ignoreAgent = input.ignoreAgent ?? this.ignoreAgent;
+          this.ignoreRetriever = input.ignoreRetriever ?? this.ignoreRetriever;
+          this.ignoreCustomEvent = input.ignoreCustomEvent ?? this.ignoreCustomEvent;
+          this.raiseError = input.raiseError ?? this.raiseError;
+          this.awaitHandlers = this.raiseError || (input._awaitHandler ?? this.awaitHandlers);
+        }
+      }
+      copy() {
+        return new this.constructor(this);
+      }
+      toJSON() {
+        return Serializable.prototype.toJSON.call(this);
+      }
+      toJSONNotImplemented() {
+        return Serializable.prototype.toJSONNotImplemented.call(this);
+      }
+      static fromMethods(methods2) {
+        class Handler extends BaseCallbackHandler {
+          constructor() {
+            super();
+            Object.defineProperty(this, "name", {
+              enumerable: true,
+              configurable: true,
+              writable: true,
+              value: v4_default()
+            });
+            Object.assign(this, methods2);
+          }
+        }
+        return new Handler();
+      }
+    };
+    isBaseCallbackHandler = (x2) => {
+      const callbackHandler = x2;
+      return callbackHandler !== void 0 && typeof callbackHandler.copy === "function" && typeof callbackHandler.name === "string" && typeof callbackHandler.awaitHandlers === "boolean";
+    };
+  }
+});
+
+// node_modules/@langchain/core/dist/tracers/base.js
+function _coerceToDict(value, defaultKey) {
+  return value && !Array.isArray(value) && typeof value === "object" ? value : { [defaultKey]: value };
+}
+function stripNonAlphanumeric2(input) {
+  return input.replace(/[-:.]/g, "");
+}
+function convertToDottedOrderFormat2(epoch, runId, executionOrder) {
+  const paddedOrder = executionOrder.toFixed(0).slice(0, 3).padStart(3, "0");
+  return stripNonAlphanumeric2(`${new Date(epoch).toISOString().slice(0, -1)}${paddedOrder}Z`) + runId;
+}
+function isBaseTracer(x2) {
+  return typeof x2._addRunToRunMap === "function";
+}
+var BaseTracer;
+var init_base2 = __esm({
+  "node_modules/@langchain/core/dist/tracers/base.js"() {
+    init_base();
+    BaseTracer = class extends BaseCallbackHandler {
+      constructor(_fields) {
+        super(...arguments);
+        Object.defineProperty(this, "runMap", {
+          enumerable: true,
+          configurable: true,
+          writable: true,
+          value: /* @__PURE__ */ new Map()
+        });
+      }
+      copy() {
+        return this;
+      }
+      stringifyError(error) {
+        if (error instanceof Error) {
+          return error.message + (error?.stack ? `
+
+${error.stack}` : "");
+        }
+        if (typeof error === "string") {
+          return error;
+        }
+        return `${error}`;
+      }
+      _addChildRun(parentRun, childRun) {
+        parentRun.child_runs.push(childRun);
+      }
+      _addRunToRunMap(run) {
+        const currentDottedOrder = convertToDottedOrderFormat2(run.start_time, run.id, run.execution_order);
+        const storedRun = { ...run };
+        if (storedRun.parent_run_id !== void 0) {
+          const parentRun = this.runMap.get(storedRun.parent_run_id);
+          if (parentRun) {
+            this._addChildRun(parentRun, storedRun);
+            parentRun.child_execution_order = Math.max(parentRun.child_execution_order, storedRun.child_execution_order);
+            storedRun.trace_id = parentRun.trace_id;
+            if (parentRun.dotted_order !== void 0) {
+              storedRun.dotted_order = [
+                parentRun.dotted_order,
+                currentDottedOrder
+              ].join(".");
+            } else {
+            }
+          } else {
+          }
+        } else {
+          storedRun.trace_id = storedRun.id;
+          storedRun.dotted_order = currentDottedOrder;
+        }
+        this.runMap.set(storedRun.id, storedRun);
+        return storedRun;
+      }
+      async _endTrace(run) {
+        const parentRun = run.parent_run_id !== void 0 && this.runMap.get(run.parent_run_id);
+        if (parentRun) {
+          parentRun.child_execution_order = Math.max(parentRun.child_execution_order, run.child_execution_order);
+        } else {
+          await this.persistRun(run);
+        }
+        this.runMap.delete(run.id);
+        await this.onRunUpdate?.(run);
+      }
+      _getExecutionOrder(parentRunId) {
+        const parentRun = parentRunId !== void 0 && this.runMap.get(parentRunId);
+        if (!parentRun) {
+          return 1;
+        }
+        return parentRun.child_execution_order + 1;
+      }
+      /**
+       * Create and add a run to the run map for LLM start events.
+       * This must sometimes be done synchronously to avoid race conditions
+       * when callbacks are backgrounded, so we expose it as a separate method here.
+       */
+      _createRunForLLMStart(llm, prompts, runId, parentRunId, extraParams, tags, metadata, name) {
+        const execution_order = this._getExecutionOrder(parentRunId);
+        const start_time = Date.now();
+        const finalExtraParams = metadata ? { ...extraParams, metadata } : extraParams;
+        const run = {
+          id: runId,
+          name: name ?? llm.id[llm.id.length - 1],
+          parent_run_id: parentRunId,
+          start_time,
+          serialized: llm,
+          events: [
+            {
+              name: "start",
+              time: new Date(start_time).toISOString()
+            }
+          ],
+          inputs: { prompts },
+          execution_order,
+          child_runs: [],
+          child_execution_order: execution_order,
+          run_type: "llm",
+          extra: finalExtraParams ?? {},
+          tags: tags || []
+        };
+        return this._addRunToRunMap(run);
+      }
+      async handleLLMStart(llm, prompts, runId, parentRunId, extraParams, tags, metadata, name) {
+        const run = this.runMap.get(runId) ?? this._createRunForLLMStart(llm, prompts, runId, parentRunId, extraParams, tags, metadata, name);
+        await this.onRunCreate?.(run);
+        await this.onLLMStart?.(run);
+        return run;
+      }
+      /**
+       * Create and add a run to the run map for chat model start events.
+       * This must sometimes be done synchronously to avoid race conditions
+       * when callbacks are backgrounded, so we expose it as a separate method here.
+       */
+      _createRunForChatModelStart(llm, messages, runId, parentRunId, extraParams, tags, metadata, name) {
+        const execution_order = this._getExecutionOrder(parentRunId);
+        const start_time = Date.now();
+        const finalExtraParams = metadata ? { ...extraParams, metadata } : extraParams;
+        const run = {
+          id: runId,
+          name: name ?? llm.id[llm.id.length - 1],
+          parent_run_id: parentRunId,
+          start_time,
+          serialized: llm,
+          events: [
+            {
+              name: "start",
+              time: new Date(start_time).toISOString()
+            }
+          ],
+          inputs: { messages },
+          execution_order,
+          child_runs: [],
+          child_execution_order: execution_order,
+          run_type: "llm",
+          extra: finalExtraParams ?? {},
+          tags: tags || []
+        };
+        return this._addRunToRunMap(run);
+      }
+      async handleChatModelStart(llm, messages, runId, parentRunId, extraParams, tags, metadata, name) {
+        const run = this.runMap.get(runId) ?? this._createRunForChatModelStart(llm, messages, runId, parentRunId, extraParams, tags, metadata, name);
+        await this.onRunCreate?.(run);
+        await this.onLLMStart?.(run);
+        return run;
+      }
+      async handleLLMEnd(output, runId) {
+        const run = this.runMap.get(runId);
+        if (!run || run?.run_type !== "llm") {
+          throw new Error("No LLM run to end.");
+        }
+        run.end_time = Date.now();
+        run.outputs = output;
+        run.events.push({
+          name: "end",
+          time: new Date(run.end_time).toISOString()
+        });
+        await this.onLLMEnd?.(run);
+        await this._endTrace(run);
+        return run;
+      }
+      async handleLLMError(error, runId) {
+        const run = this.runMap.get(runId);
+        if (!run || run?.run_type !== "llm") {
+          throw new Error("No LLM run to end.");
+        }
+        run.end_time = Date.now();
+        run.error = this.stringifyError(error);
+        run.events.push({
+          name: "error",
+          time: new Date(run.end_time).toISOString()
+        });
+        await this.onLLMError?.(run);
+        await this._endTrace(run);
+        return run;
+      }
+      /**
+       * Create and add a run to the run map for chain start events.
+       * This must sometimes be done synchronously to avoid race conditions
+       * when callbacks are backgrounded, so we expose it as a separate method here.
+       */
+      _createRunForChainStart(chain, inputs, runId, parentRunId, tags, metadata, runType, name) {
+        const execution_order = this._getExecutionOrder(parentRunId);
+        const start_time = Date.now();
+        const run = {
+          id: runId,
+          name: name ?? chain.id[chain.id.length - 1],
+          parent_run_id: parentRunId,
+          start_time,
+          serialized: chain,
+          events: [
+            {
+              name: "start",
+              time: new Date(start_time).toISOString()
+            }
+          ],
+          inputs,
+          execution_order,
+          child_execution_order: execution_order,
+          run_type: runType ?? "chain",
+          child_runs: [],
+          extra: metadata ? { metadata } : {},
+          tags: tags || []
+        };
+        return this._addRunToRunMap(run);
+      }
+      async handleChainStart(chain, inputs, runId, parentRunId, tags, metadata, runType, name) {
+        const run = this.runMap.get(runId) ?? this._createRunForChainStart(chain, inputs, runId, parentRunId, tags, metadata, runType, name);
+        await this.onRunCreate?.(run);
+        await this.onChainStart?.(run);
+        return run;
+      }
+      async handleChainEnd(outputs, runId, _parentRunId, _tags, kwargs) {
+        const run = this.runMap.get(runId);
+        if (!run) {
+          throw new Error("No chain run to end.");
+        }
+        run.end_time = Date.now();
+        run.outputs = _coerceToDict(outputs, "output");
+        run.events.push({
+          name: "end",
+          time: new Date(run.end_time).toISOString()
+        });
+        if (kwargs?.inputs !== void 0) {
+          run.inputs = _coerceToDict(kwargs.inputs, "input");
+        }
+        await this.onChainEnd?.(run);
+        await this._endTrace(run);
+        return run;
+      }
+      async handleChainError(error, runId, _parentRunId, _tags, kwargs) {
+        const run = this.runMap.get(runId);
+        if (!run) {
+          throw new Error("No chain run to end.");
+        }
+        run.end_time = Date.now();
+        run.error = this.stringifyError(error);
+        run.events.push({
+          name: "error",
+          time: new Date(run.end_time).toISOString()
+        });
+        if (kwargs?.inputs !== void 0) {
+          run.inputs = _coerceToDict(kwargs.inputs, "input");
+        }
+        await this.onChainError?.(run);
+        await this._endTrace(run);
+        return run;
+      }
+      /**
+       * Create and add a run to the run map for tool start events.
+       * This must sometimes be done synchronously to avoid race conditions
+       * when callbacks are backgrounded, so we expose it as a separate method here.
+       */
+      _createRunForToolStart(tool2, input, runId, parentRunId, tags, metadata, name) {
+        const execution_order = this._getExecutionOrder(parentRunId);
+        const start_time = Date.now();
+        const run = {
+          id: runId,
+          name: name ?? tool2.id[tool2.id.length - 1],
+          parent_run_id: parentRunId,
+          start_time,
+          serialized: tool2,
+          events: [
+            {
+              name: "start",
+              time: new Date(start_time).toISOString()
+            }
+          ],
+          inputs: { input },
+          execution_order,
+          child_execution_order: execution_order,
+          run_type: "tool",
+          child_runs: [],
+          extra: metadata ? { metadata } : {},
+          tags: tags || []
+        };
+        return this._addRunToRunMap(run);
+      }
+      async handleToolStart(tool2, input, runId, parentRunId, tags, metadata, name) {
+        const run = this.runMap.get(runId) ?? this._createRunForToolStart(tool2, input, runId, parentRunId, tags, metadata, name);
+        await this.onRunCreate?.(run);
+        await this.onToolStart?.(run);
+        return run;
+      }
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
+      async handleToolEnd(output, runId) {
+        const run = this.runMap.get(runId);
+        if (!run || run?.run_type !== "tool") {
+          throw new Error("No tool run to end");
+        }
+        run.end_time = Date.now();
+        run.outputs = { output };
+        run.events.push({
+          name: "end",
+          time: new Date(run.end_time).toISOString()
+        });
+        await this.onToolEnd?.(run);
+        await this._endTrace(run);
+        return run;
+      }
+      async handleToolError(error, runId) {
+        const run = this.runMap.get(runId);
+        if (!run || run?.run_type !== "tool") {
+          throw new Error("No tool run to end");
+        }
+        run.end_time = Date.now();
+        run.error = this.stringifyError(error);
+        run.events.push({
+          name: "error",
+          time: new Date(run.end_time).toISOString()
+        });
+        await this.onToolError?.(run);
+        await this._endTrace(run);
+        return run;
+      }
+      async handleAgentAction(action, runId) {
+        const run = this.runMap.get(runId);
+        if (!run || run?.run_type !== "chain") {
+          return;
+        }
+        const agentRun = run;
+        agentRun.actions = agentRun.actions || [];
+        agentRun.actions.push(action);
+        agentRun.events.push({
+          name: "agent_action",
+          time: new Date().toISOString(),
+          kwargs: { action }
+        });
+        await this.onAgentAction?.(run);
+      }
+      async handleAgentEnd(action, runId) {
+        const run = this.runMap.get(runId);
+        if (!run || run?.run_type !== "chain") {
+          return;
+        }
+        run.events.push({
+          name: "agent_end",
+          time: new Date().toISOString(),
+          kwargs: { action }
+        });
+        await this.onAgentEnd?.(run);
+      }
+      /**
+       * Create and add a run to the run map for retriever start events.
+       * This must sometimes be done synchronously to avoid race conditions
+       * when callbacks are backgrounded, so we expose it as a separate method here.
+       */
+      _createRunForRetrieverStart(retriever, query, runId, parentRunId, tags, metadata, name) {
+        const execution_order = this._getExecutionOrder(parentRunId);
+        const start_time = Date.now();
+        const run = {
+          id: runId,
+          name: name ?? retriever.id[retriever.id.length - 1],
+          parent_run_id: parentRunId,
+          start_time,
+          serialized: retriever,
+          events: [
+            {
+              name: "start",
+              time: new Date(start_time).toISOString()
+            }
+          ],
+          inputs: { query },
+          execution_order,
+          child_execution_order: execution_order,
+          run_type: "retriever",
+          child_runs: [],
+          extra: metadata ? { metadata } : {},
+          tags: tags || []
+        };
+        return this._addRunToRunMap(run);
+      }
+      async handleRetrieverStart(retriever, query, runId, parentRunId, tags, metadata, name) {
+        const run = this.runMap.get(runId) ?? this._createRunForRetrieverStart(retriever, query, runId, parentRunId, tags, metadata, name);
+        await this.onRunCreate?.(run);
+        await this.onRetrieverStart?.(run);
+        return run;
+      }
+      async handleRetrieverEnd(documents, runId) {
+        const run = this.runMap.get(runId);
+        if (!run || run?.run_type !== "retriever") {
+          throw new Error("No retriever run to end");
+        }
+        run.end_time = Date.now();
+        run.outputs = { documents };
+        run.events.push({
+          name: "end",
+          time: new Date(run.end_time).toISOString()
+        });
+        await this.onRetrieverEnd?.(run);
+        await this._endTrace(run);
+        return run;
+      }
+      async handleRetrieverError(error, runId) {
+        const run = this.runMap.get(runId);
+        if (!run || run?.run_type !== "retriever") {
+          throw new Error("No retriever run to end");
+        }
+        run.end_time = Date.now();
+        run.error = this.stringifyError(error);
+        run.events.push({
+          name: "error",
+          time: new Date(run.end_time).toISOString()
+        });
+        await this.onRetrieverError?.(run);
+        await this._endTrace(run);
+        return run;
+      }
+      async handleText(text, runId) {
+        const run = this.runMap.get(runId);
+        if (!run || run?.run_type !== "chain") {
+          return;
+        }
+        run.events.push({
+          name: "text",
+          time: new Date().toISOString(),
+          kwargs: { text }
+        });
+        await this.onText?.(run);
+      }
+      async handleLLMNewToken(token, idx, runId, _parentRunId, _tags, fields) {
+        const run = this.runMap.get(runId);
+        if (!run || run?.run_type !== "llm") {
+          throw new Error(`Invalid "runId" provided to "handleLLMNewToken" callback.`);
+        }
+        run.events.push({
+          name: "new_token",
+          time: new Date().toISOString(),
+          kwargs: { token, idx, chunk: fields?.chunk }
+        });
+        await this.onLLMNewToken?.(run, token, { chunk: fields?.chunk });
+        return run;
+      }
+    };
   }
 });
 
@@ -12247,6 +12812,20 @@ var init_console = __esm({
   }
 });
 
+// node_modules/@langchain/core/dist/errors/index.js
+function addLangChainErrorFields(error, lc_error_code) {
+  error.lc_error_code = lc_error_code;
+  error.message = `${error.message}
+
+Troubleshooting URL: https://js.langchain.com/docs/troubleshooting/errors/${lc_error_code}/
+`;
+  return error;
+}
+var init_errors = __esm({
+  "node_modules/@langchain/core/dist/errors/index.js"() {
+  }
+});
+
 // node_modules/@langchain/core/dist/tools/utils.js
 function _isToolCall(toolCall) {
   return !!(toolCall && typeof toolCall === "object" && "type" in toolCall && toolCall.type === "tool_call");
@@ -12483,6 +13062,10 @@ var init_base3 = __esm({
       get text() {
         return typeof this.content === "string" ? this.content : "";
       }
+      /** The type of the message. */
+      getType() {
+        return this._getType();
+      }
       constructor(fields, kwargs) {
         if (typeof fields === "string") {
           fields = {
@@ -12589,6 +13172,9 @@ var init_base3 = __esm({
 });
 
 // node_modules/@langchain/core/dist/messages/tool.js
+function isDirectToolOutput(x2) {
+  return x2 != null && typeof x2 === "object" && "lc_direct_tool_output" in x2 && x2.lc_direct_tool_output === true;
+}
 function defaultToolCallParser(rawToolCalls) {
   const toolCalls = [];
   const invalidToolCalls = [];
@@ -12633,6 +13219,12 @@ var init_tool = __esm({
           fields = { content: fields, name, tool_call_id };
         }
         super(fields);
+        Object.defineProperty(this, "lc_direct_tool_output", {
+          enumerable: true,
+          configurable: true,
+          writable: true,
+          value: true
+        });
         Object.defineProperty(this, "status", {
           enumerable: true,
           configurable: true,
@@ -12724,6 +13316,9 @@ var init_tool = __esm({
 
 // node_modules/@langchain/core/dist/messages/ai.js
 function isAIMessage(x2) {
+  return x2._getType() === "ai";
+}
+function isAIMessageChunk(x2) {
   return x2._getType() === "ai";
 }
 var AIMessage, AIMessageChunk;
@@ -12830,7 +13425,8 @@ var init_ai = __esm({
             ...fields,
             tool_calls: fields.tool_calls ?? [],
             invalid_tool_calls: [],
-            tool_call_chunks: []
+            tool_call_chunks: [],
+            usage_metadata: fields.usage_metadata !== void 0 ? fields.usage_metadata : void 0
           };
         } else {
           const toolCalls = [];
@@ -12861,7 +13457,8 @@ var init_ai = __esm({
           initParams = {
             ...fields,
             tool_calls: toolCalls,
-            invalid_tool_calls: invalidToolCalls
+            invalid_tool_calls: invalidToolCalls,
+            usage_metadata: fields.usage_metadata !== void 0 ? fields.usage_metadata : void 0
           };
         }
         super(initParams);
@@ -12932,6 +13529,25 @@ var init_ai = __esm({
           }
         }
         if (this.usage_metadata !== void 0 || chunk.usage_metadata !== void 0) {
+          const inputTokenDetails = {
+            ...(this.usage_metadata?.input_token_details?.audio !== void 0 || chunk.usage_metadata?.input_token_details?.audio !== void 0) && {
+              audio: (this.usage_metadata?.input_token_details?.audio ?? 0) + (chunk.usage_metadata?.input_token_details?.audio ?? 0)
+            },
+            ...(this.usage_metadata?.input_token_details?.cache_read !== void 0 || chunk.usage_metadata?.input_token_details?.cache_read !== void 0) && {
+              cache_read: (this.usage_metadata?.input_token_details?.cache_read ?? 0) + (chunk.usage_metadata?.input_token_details?.cache_read ?? 0)
+            },
+            ...(this.usage_metadata?.input_token_details?.cache_creation !== void 0 || chunk.usage_metadata?.input_token_details?.cache_creation !== void 0) && {
+              cache_creation: (this.usage_metadata?.input_token_details?.cache_creation ?? 0) + (chunk.usage_metadata?.input_token_details?.cache_creation ?? 0)
+            }
+          };
+          const outputTokenDetails = {
+            ...(this.usage_metadata?.output_token_details?.audio !== void 0 || chunk.usage_metadata?.output_token_details?.audio !== void 0) && {
+              audio: (this.usage_metadata?.output_token_details?.audio ?? 0) + (chunk.usage_metadata?.output_token_details?.audio ?? 0)
+            },
+            ...(this.usage_metadata?.output_token_details?.reasoning !== void 0 || chunk.usage_metadata?.output_token_details?.reasoning !== void 0) && {
+              reasoning: (this.usage_metadata?.output_token_details?.reasoning ?? 0) + (chunk.usage_metadata?.output_token_details?.reasoning ?? 0)
+            }
+          };
           const left = this.usage_metadata ?? {
             input_tokens: 0,
             output_tokens: 0,
@@ -12945,7 +13561,15 @@ var init_ai = __esm({
           const usage_metadata = {
             input_tokens: left.input_tokens + right.input_tokens,
             output_tokens: left.output_tokens + right.output_tokens,
-            total_tokens: left.total_tokens + right.total_tokens
+            total_tokens: left.total_tokens + right.total_tokens,
+            // Do not include `input_token_details` / `output_token_details` keys in combined fields
+            // unless their values are defined.
+            ...Object.keys(inputTokenDetails).length > 0 && {
+              input_token_details: inputTokenDetails
+            },
+            ...Object.keys(outputTokenDetails).length > 0 && {
+              output_token_details: outputTokenDetails
+            }
           };
           combinedFields.usage_metadata = usage_metadata;
         }
@@ -13136,8 +13760,29 @@ function _coerceToolCall(toolCall) {
     return toolCall;
   }
 }
+function isSerializedConstructor(x2) {
+  return typeof x2 === "object" && x2 != null && x2.lc === 1 && Array.isArray(x2.id) && x2.kwargs != null && typeof x2.kwargs === "object";
+}
 function _constructMessageFromParams(params) {
-  const { type, ...rest } = params;
+  let type;
+  let rest;
+  if (isSerializedConstructor(params)) {
+    const className = params.id.at(-1);
+    if (className === "HumanMessage" || className === "HumanMessageChunk") {
+      type = "user";
+    } else if (className === "AIMessage" || className === "AIMessageChunk") {
+      type = "assistant";
+    } else if (className === "SystemMessage" || className === "SystemMessageChunk") {
+      type = "system";
+    } else {
+      type = "unknown";
+    }
+    rest = params.kwargs;
+  } else {
+    const { type: extractedType, ...otherParams } = params;
+    type = extractedType;
+    rest = otherParams;
+  }
   if (type === "human" || type === "user") {
     return new HumanMessage(rest);
   } else if (type === "ai" || type === "assistant") {
@@ -13149,6 +13794,14 @@ function _constructMessageFromParams(params) {
     return new AIMessage({ ...other, tool_calls });
   } else if (type === "system") {
     return new SystemMessage(rest);
+  } else if (type === "developer") {
+    return new SystemMessage({
+      ...rest,
+      additional_kwargs: {
+        ...rest.additional_kwargs,
+        __openai_role__: "developer"
+      }
+    });
   } else if (type === "tool" && "tool_call_id" in rest) {
     return new ToolMessage({
       ...rest,
@@ -13157,7 +13810,10 @@ function _constructMessageFromParams(params) {
       name: rest.name
     });
   } else {
-    throw new Error(`Unable to coerce message from array: only human, AI, or system message coercion is currently supported.`);
+    const error = addLangChainErrorFields(new Error(`Unable to coerce message from array: only human, AI, system, developer, or tool message coercion is currently supported.
+
+Received: ${JSON.stringify(params, null, 2)}`), "MESSAGE_COERCION_FAILURE");
+    throw error;
   }
 }
 function coerceMessageLikeToMessage(messageLike) {
@@ -13233,6 +13889,7 @@ function convertToChunk(message) {
 }
 var init_utils2 = __esm({
   "node_modules/@langchain/core/dist/messages/utils.js"() {
+    init_errors();
     init_utils();
     init_ai();
     init_base3();
@@ -13251,15 +13908,41 @@ var init_run_trees2 = __esm({
   }
 });
 
+// node_modules/langsmith/index.js
+var init_langsmith = __esm({
+  "node_modules/langsmith/index.js"() {
+    init_dist();
+  }
+});
+
+// node_modules/@langchain/core/dist/singletons/tracer.js
+var client, getDefaultLangChainClientSingleton;
+var init_tracer = __esm({
+  "node_modules/@langchain/core/dist/singletons/tracer.js"() {
+    init_langsmith();
+    init_env3();
+    getDefaultLangChainClientSingleton = () => {
+      if (client === void 0) {
+        const clientParams = getEnvironmentVariable2("LANGCHAIN_CALLBACKS_BACKGROUND") === "false" ? {
+          // LangSmith has its own backgrounding system
+          blockOnRootRunFinalization: true
+        } : {};
+        client = new Client(clientParams);
+      }
+      return client;
+    };
+  }
+});
+
 // node_modules/@langchain/core/dist/tracers/tracer_langchain.js
 var LangChainTracer;
 var init_tracer_langchain = __esm({
   "node_modules/@langchain/core/dist/tracers/tracer_langchain.js"() {
-    init_langsmith();
     init_run_trees2();
     init_traceable2();
-    init_env();
+    init_env3();
     init_base2();
+    init_tracer();
     LangChainTracer = class extends BaseTracer {
       constructor(fields = {}) {
         super(fields);
@@ -13287,10 +13970,10 @@ var init_tracer_langchain = __esm({
           writable: true,
           value: void 0
         });
-        const { exampleId, projectName, client } = fields;
-        this.projectName = projectName ?? getEnvironmentVariable("LANGCHAIN_PROJECT") ?? getEnvironmentVariable("LANGCHAIN_SESSION");
+        const { exampleId, projectName, client: client2 } = fields;
+        this.projectName = projectName ?? getEnvironmentVariable2("LANGCHAIN_PROJECT") ?? getEnvironmentVariable2("LANGCHAIN_SESSION");
         this.exampleId = exampleId;
-        this.client = client ?? new Client({});
+        this.client = client2 ?? getDefaultLangChainClientSingleton();
         const traceableTree = LangChainTracer.getTraceableRunTree();
         if (traceableTree) {
           this.updateFromRunTree(traceableTree);
@@ -13301,7 +13984,7 @@ var init_tracer_langchain = __esm({
           ...run,
           extra: {
             ...run.extra,
-            runtime: await getRuntimeEnvironment()
+            runtime: await getRuntimeEnvironment2()
           },
           child_runs: void 0,
           session_name: this.projectName,
@@ -13405,7 +14088,22 @@ var init_tracer_langchain = __esm({
   }
 });
 
-// node_modules/@langchain/core/dist/callbacks/promises.js
+// node_modules/@langchain/core/dist/singletons/async_local_storage/globals.js
+var TRACING_ALS_KEY2, _CONTEXT_VARIABLES_KEY, setGlobalAsyncLocalStorageInstance, getGlobalAsyncLocalStorageInstance;
+var init_globals = __esm({
+  "node_modules/@langchain/core/dist/singletons/async_local_storage/globals.js"() {
+    TRACING_ALS_KEY2 = Symbol.for("ls:tracing_async_local_storage");
+    _CONTEXT_VARIABLES_KEY = Symbol.for("lc:context_variables");
+    setGlobalAsyncLocalStorageInstance = (instance) => {
+      globalThis[TRACING_ALS_KEY2] = instance;
+    };
+    getGlobalAsyncLocalStorageInstance = () => {
+      return globalThis[TRACING_ALS_KEY2];
+    };
+  }
+});
+
+// node_modules/@langchain/core/dist/singletons/callbacks.js
 function createQueue() {
   const PQueue = "default" in import_p_queue2.default ? import_p_queue2.default.default : import_p_queue2.default;
   return new PQueue({
@@ -13413,28 +14111,52 @@ function createQueue() {
     concurrency: 1
   });
 }
+function getQueue() {
+  if (typeof queue === "undefined") {
+    queue = createQueue();
+  }
+  return queue;
+}
 async function consumeCallback(promiseFn, wait) {
   if (wait === true) {
-    await promiseFn();
-  } else {
-    if (typeof queue === "undefined") {
-      queue = createQueue();
+    const asyncLocalStorageInstance = getGlobalAsyncLocalStorageInstance();
+    if (asyncLocalStorageInstance !== void 0) {
+      await asyncLocalStorageInstance.run(void 0, async () => promiseFn());
+    } else {
+      await promiseFn();
     }
-    void queue.add(promiseFn);
+  } else {
+    queue = getQueue();
+    void queue.add(async () => {
+      const asyncLocalStorageInstance = getGlobalAsyncLocalStorageInstance();
+      if (asyncLocalStorageInstance !== void 0) {
+        await asyncLocalStorageInstance.run(void 0, async () => promiseFn());
+      } else {
+        await promiseFn();
+      }
+    });
   }
 }
 var import_p_queue2, queue;
+var init_callbacks = __esm({
+  "node_modules/@langchain/core/dist/singletons/callbacks.js"() {
+    import_p_queue2 = __toESM(require_dist(), 1);
+    init_globals();
+  }
+});
+
+// node_modules/@langchain/core/dist/callbacks/promises.js
 var init_promises = __esm({
   "node_modules/@langchain/core/dist/callbacks/promises.js"() {
-    import_p_queue2 = __toESM(require_dist(), 1);
+    init_callbacks();
   }
 });
 
 // node_modules/@langchain/core/dist/utils/callbacks.js
 var isTracingEnabled2;
-var init_callbacks = __esm({
+var init_callbacks2 = __esm({
   "node_modules/@langchain/core/dist/utils/callbacks.js"() {
-    init_env();
+    init_env3();
     isTracingEnabled2 = (tracingEnabled) => {
       if (tracingEnabled !== void 0) {
         return tracingEnabled;
@@ -13445,8 +14167,27 @@ var init_callbacks = __esm({
         "LANGSMITH_TRACING",
         "LANGCHAIN_TRACING"
       ];
-      return !!envVars.find((envVar) => getEnvironmentVariable(envVar) === "true");
+      return !!envVars.find((envVar) => getEnvironmentVariable2(envVar) === "true");
     };
+  }
+});
+
+// node_modules/@langchain/core/dist/singletons/async_local_storage/context.js
+function getContextVariable(name) {
+  const asyncLocalStorageInstance = getGlobalAsyncLocalStorageInstance();
+  if (asyncLocalStorageInstance === void 0) {
+    return void 0;
+  }
+  const runTree = asyncLocalStorageInstance.getStore();
+  return runTree?.[_CONTEXT_VARIABLES_KEY]?.[name];
+}
+var LC_CONFIGURE_HOOKS_KEY, _getConfigureHooks;
+var init_context = __esm({
+  "node_modules/@langchain/core/dist/singletons/async_local_storage/context.js"() {
+    init_run_trees2();
+    init_globals();
+    LC_CONFIGURE_HOOKS_KEY = Symbol("lc:configure_hooks");
+    _getConfigureHooks = () => getContextVariable(LC_CONFIGURE_HOOKS_KEY) || [];
   }
 });
 
@@ -13473,11 +14214,12 @@ var init_manager = __esm({
     init_base();
     init_console();
     init_utils2();
-    init_env();
+    init_env3();
     init_tracer_langchain();
     init_promises();
-    init_callbacks();
+    init_callbacks2();
     init_base2();
+    init_context();
     BaseCallbackManager = class {
       setHandler(handler) {
         return this.setHandlers([handler]);
@@ -14068,9 +14810,9 @@ var init_manager = __esm({
           }
           callbackManager = callbackManager.copy(Array.isArray(localHandlers) ? localHandlers.map(ensureHandler) : localHandlers?.handlers, false);
         }
-        const verboseEnabled = getEnvironmentVariable("LANGCHAIN_VERBOSE") === "true" || options?.verbose;
+        const verboseEnabled = getEnvironmentVariable2("LANGCHAIN_VERBOSE") === "true" || options?.verbose;
         const tracingV2Enabled = LangChainTracer.getTraceableRunTree()?.tracingEnabled || isTracingEnabled2();
-        const tracingEnabled = tracingV2Enabled || (getEnvironmentVariable("LANGCHAIN_TRACING") ?? false);
+        const tracingEnabled = tracingV2Enabled || (getEnvironmentVariable2("LANGCHAIN_TRACING") ?? false);
         if (verboseEnabled || tracingEnabled) {
           if (!callbackManager) {
             callbackManager = new CallbackManager();
@@ -14084,6 +14826,24 @@ var init_manager = __esm({
               const tracerV2 = new LangChainTracer();
               callbackManager.addHandler(tracerV2, true);
               callbackManager._parentRunId = LangChainTracer.getTraceableRunTree()?.id ?? callbackManager._parentRunId;
+            }
+          }
+        }
+        for (const { contextVar, inheritable = true, handlerClass, envVar } of _getConfigureHooks()) {
+          const createIfNotInContext = envVar && getEnvironmentVariable2(envVar) === "true" && handlerClass;
+          let handler;
+          const contextVarValue = contextVar !== void 0 ? getContextVariable(contextVar) : void 0;
+          if (contextVarValue && isBaseCallbackHandler(contextVarValue)) {
+            handler = contextVarValue;
+          } else if (createIfNotInContext) {
+            handler = new handlerClass({});
+          }
+          if (handler !== void 0) {
+            if (!callbackManager) {
+              callbackManager = new CallbackManager();
+            }
+            if (!callbackManager.handlers.some((h3) => h3.name === handler.name)) {
+              callbackManager.addHandler(handler, inheritable);
             }
           }
         }
@@ -14105,11 +14865,12 @@ var init_manager = __esm({
   }
 });
 
-// node_modules/@langchain/core/dist/singletons/index.js
-var MockAsyncLocalStorage2, mockAsyncLocalStorage2, TRACING_ALS_KEY2, LC_CHILD_KEY, AsyncLocalStorageProvider2, AsyncLocalStorageProviderSingleton2;
-var init_singletons = __esm({
-  "node_modules/@langchain/core/dist/singletons/index.js"() {
+// node_modules/@langchain/core/dist/singletons/async_local_storage/index.js
+var MockAsyncLocalStorage2, mockAsyncLocalStorage2, LC_CHILD_KEY, AsyncLocalStorageProvider2, AsyncLocalStorageProviderSingleton2;
+var init_async_local_storage = __esm({
+  "node_modules/@langchain/core/dist/singletons/async_local_storage/index.js"() {
     init_langsmith();
+    init_globals();
     init_manager();
     MockAsyncLocalStorage2 = class {
       getStore() {
@@ -14118,13 +14879,15 @@ var init_singletons = __esm({
       run(_store, callback) {
         return callback();
       }
+      enterWith(_store) {
+        return void 0;
+      }
     };
     mockAsyncLocalStorage2 = new MockAsyncLocalStorage2();
-    TRACING_ALS_KEY2 = Symbol.for("ls:tracing_async_local_storage");
     LC_CHILD_KEY = Symbol.for("lc:child_config");
     AsyncLocalStorageProvider2 = class {
       getInstance() {
-        return globalThis[TRACING_ALS_KEY2] ?? mockAsyncLocalStorage2;
+        return getGlobalAsyncLocalStorageInstance() ?? mockAsyncLocalStorage2;
       }
       getRunnableConfig() {
         const storage = this.getInstance();
@@ -14133,6 +14896,7 @@ var init_singletons = __esm({
       runWithConfig(config, callback, avoidCreatingRootRunTree) {
         const callbackManager = CallbackManager._configureSync(config?.callbacks, void 0, config?.tags, void 0, config?.metadata);
         const storage = this.getInstance();
+        const previousValue = storage.getStore();
         const parentRunId = callbackManager?.getParentRunId();
         const langChainTracer = callbackManager?.handlers?.find((handler) => handler?.name === "langchain_tracer");
         let runTree;
@@ -14147,15 +14911,209 @@ var init_singletons = __esm({
         if (runTree) {
           runTree.extra = { ...runTree.extra, [LC_CHILD_KEY]: config };
         }
+        if (previousValue !== void 0 && previousValue[_CONTEXT_VARIABLES_KEY] !== void 0) {
+          runTree[_CONTEXT_VARIABLES_KEY] = previousValue[_CONTEXT_VARIABLES_KEY];
+        }
         return storage.run(runTree, callback);
       }
       initializeGlobalInstance(instance) {
-        if (globalThis[TRACING_ALS_KEY2] === void 0) {
-          globalThis[TRACING_ALS_KEY2] = instance;
+        if (getGlobalAsyncLocalStorageInstance() === void 0) {
+          setGlobalAsyncLocalStorageInstance(instance);
         }
       }
     };
     AsyncLocalStorageProviderSingleton2 = new AsyncLocalStorageProvider2();
+  }
+});
+
+// node_modules/@langchain/core/dist/singletons/index.js
+var init_singletons = __esm({
+  "node_modules/@langchain/core/dist/singletons/index.js"() {
+    init_async_local_storage();
+    init_globals();
+  }
+});
+
+// node_modules/@langchain/core/dist/runnables/config.js
+async function getCallbackManagerForConfig(config) {
+  return CallbackManager._configureSync(config?.callbacks, void 0, config?.tags, void 0, config?.metadata);
+}
+function mergeConfigs(...configs) {
+  const copy = {};
+  for (const options of configs.filter((c4) => !!c4)) {
+    for (const key of Object.keys(options)) {
+      if (key === "metadata") {
+        copy[key] = { ...copy[key], ...options[key] };
+      } else if (key === "tags") {
+        const baseKeys = copy[key] ?? [];
+        copy[key] = [...new Set(baseKeys.concat(options[key] ?? []))];
+      } else if (key === "configurable") {
+        copy[key] = { ...copy[key], ...options[key] };
+      } else if (key === "timeout") {
+        if (copy.timeout === void 0) {
+          copy.timeout = options.timeout;
+        } else if (options.timeout !== void 0) {
+          copy.timeout = Math.min(copy.timeout, options.timeout);
+        }
+      } else if (key === "signal") {
+        if (copy.signal === void 0) {
+          copy.signal = options.signal;
+        } else if (options.signal !== void 0) {
+          if ("any" in AbortSignal) {
+            copy.signal = AbortSignal.any([
+              copy.signal,
+              options.signal
+            ]);
+          } else {
+            copy.signal = options.signal;
+          }
+        }
+      } else if (key === "callbacks") {
+        const baseCallbacks = copy.callbacks;
+        const providedCallbacks = options.callbacks;
+        if (Array.isArray(providedCallbacks)) {
+          if (!baseCallbacks) {
+            copy.callbacks = providedCallbacks;
+          } else if (Array.isArray(baseCallbacks)) {
+            copy.callbacks = baseCallbacks.concat(providedCallbacks);
+          } else {
+            const manager = baseCallbacks.copy();
+            for (const callback of providedCallbacks) {
+              manager.addHandler(ensureHandler(callback), true);
+            }
+            copy.callbacks = manager;
+          }
+        } else if (providedCallbacks) {
+          if (!baseCallbacks) {
+            copy.callbacks = providedCallbacks;
+          } else if (Array.isArray(baseCallbacks)) {
+            const manager = providedCallbacks.copy();
+            for (const callback of baseCallbacks) {
+              manager.addHandler(ensureHandler(callback), true);
+            }
+            copy.callbacks = manager;
+          } else {
+            copy.callbacks = new CallbackManager(providedCallbacks._parentRunId, {
+              handlers: baseCallbacks.handlers.concat(providedCallbacks.handlers),
+              inheritableHandlers: baseCallbacks.inheritableHandlers.concat(providedCallbacks.inheritableHandlers),
+              tags: Array.from(new Set(baseCallbacks.tags.concat(providedCallbacks.tags))),
+              inheritableTags: Array.from(new Set(baseCallbacks.inheritableTags.concat(providedCallbacks.inheritableTags))),
+              metadata: {
+                ...baseCallbacks.metadata,
+                ...providedCallbacks.metadata
+              }
+            });
+          }
+        }
+      } else {
+        const typedKey = key;
+        copy[typedKey] = options[typedKey] ?? copy[typedKey];
+      }
+    }
+  }
+  return copy;
+}
+function ensureConfig(config) {
+  const implicitConfig = AsyncLocalStorageProviderSingleton2.getRunnableConfig();
+  let empty = {
+    tags: [],
+    metadata: {},
+    recursionLimit: 25,
+    runId: void 0
+  };
+  if (implicitConfig) {
+    const { runId, runName, ...rest } = implicitConfig;
+    empty = Object.entries(rest).reduce(
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
+      (currentConfig, [key, value]) => {
+        if (value !== void 0) {
+          currentConfig[key] = value;
+        }
+        return currentConfig;
+      },
+      empty
+    );
+  }
+  if (config) {
+    empty = Object.entries(config).reduce(
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
+      (currentConfig, [key, value]) => {
+        if (value !== void 0) {
+          currentConfig[key] = value;
+        }
+        return currentConfig;
+      },
+      empty
+    );
+  }
+  if (empty?.configurable) {
+    for (const key of Object.keys(empty.configurable)) {
+      if (PRIMITIVES.has(typeof empty.configurable[key]) && !empty.metadata?.[key]) {
+        if (!empty.metadata) {
+          empty.metadata = {};
+        }
+        empty.metadata[key] = empty.configurable[key];
+      }
+    }
+  }
+  if (empty.timeout !== void 0) {
+    if (empty.timeout <= 0) {
+      throw new Error("Timeout must be a positive number");
+    }
+    const timeoutSignal = AbortSignal.timeout(empty.timeout);
+    if (empty.signal !== void 0) {
+      if ("any" in AbortSignal) {
+        empty.signal = AbortSignal.any([empty.signal, timeoutSignal]);
+      }
+    } else {
+      empty.signal = timeoutSignal;
+    }
+    delete empty.timeout;
+  }
+  return empty;
+}
+function patchConfig(config = {}, { callbacks, maxConcurrency, recursionLimit, runName, configurable, runId } = {}) {
+  const newConfig = ensureConfig(config);
+  if (callbacks !== void 0) {
+    delete newConfig.runName;
+    newConfig.callbacks = callbacks;
+  }
+  if (recursionLimit !== void 0) {
+    newConfig.recursionLimit = recursionLimit;
+  }
+  if (maxConcurrency !== void 0) {
+    newConfig.maxConcurrency = maxConcurrency;
+  }
+  if (runName !== void 0) {
+    newConfig.runName = runName;
+  }
+  if (configurable !== void 0) {
+    newConfig.configurable = { ...newConfig.configurable, ...configurable };
+  }
+  if (runId !== void 0) {
+    delete newConfig.runId;
+  }
+  return newConfig;
+}
+function pickRunnableConfigKeys(config) {
+  return config ? {
+    configurable: config.configurable,
+    recursionLimit: config.recursionLimit,
+    callbacks: config.callbacks,
+    tags: config.tags,
+    metadata: config.metadata,
+    maxConcurrency: config.maxConcurrency,
+    timeout: config.timeout,
+    signal: config.signal
+  } : void 0;
+}
+var DEFAULT_RECURSION_LIMIT, PRIMITIVES;
+var init_config = __esm({
+  "node_modules/@langchain/core/dist/runnables/config.js"() {
+    init_manager();
+    init_singletons();
+    DEFAULT_RECURSION_LIMIT = 25;
+    PRIMITIVES = /* @__PURE__ */ new Set(["string", "number", "boolean"]);
   }
 });
 
@@ -14246,6 +15204,7 @@ async function pipeGeneratorWithSetup(to, generator, startSetup, signal, ...args
 var IterableReadableStream, AsyncGeneratorWithSetup;
 var init_stream = __esm({
   "node_modules/@langchain/core/dist/utils/stream.js"() {
+    init_config();
     init_singletons();
     init_signal();
     IterableReadableStream = class extends ReadableStream {
@@ -14389,7 +15348,7 @@ var init_stream = __esm({
         this.config = params.config;
         this.signal = params.signal ?? this.config?.signal;
         this.setup = new Promise((resolve, reject) => {
-          void AsyncLocalStorageProviderSingleton2.runWithConfig(params.config, async () => {
+          void AsyncLocalStorageProviderSingleton2.runWithConfig(pickRunnableConfigKeys(params.config), async () => {
             this.firstResult = params.generator.next();
             if (params.startSetup) {
               this.firstResult.then(params.startSetup).then(resolve, reject);
@@ -14405,7 +15364,7 @@ var init_stream = __esm({
           this.firstResultUsed = true;
           return this.firstResult;
         }
-        return AsyncLocalStorageProviderSingleton2.runWithConfig(this.config, this.signal ? async () => {
+        return AsyncLocalStorageProviderSingleton2.runWithConfig(pickRunnableConfigKeys(this.config), this.signal ? async () => {
           return raceWithSignal(this.generator.next(...args), this.signal);
         } : async () => {
           return this.generator.next(...args);
@@ -14602,6 +15561,12 @@ var init_log_stream = __esm({
           configurable: true,
           writable: true,
           value: "log_stream_tracer"
+        });
+        Object.defineProperty(this, "lc_prefer_streaming", {
+          enumerable: true,
+          configurable: true,
+          writable: true,
+          value: true
         });
         this.autoClose = fields?.autoClose ?? true;
         this.includeNames = fields?.includeNames;
@@ -14961,6 +15926,12 @@ var init_event_stream = __esm({
           configurable: true,
           writable: true,
           value: "event_stream_tracer"
+        });
+        Object.defineProperty(this, "lc_prefer_streaming", {
+          enumerable: true,
+          configurable: true,
+          writable: true,
+          value: true
         });
         this.autoClose = fields?.autoClose ?? true;
         this.includeNames = fields?.includeNames;
@@ -15350,177 +16321,6 @@ var init_event_stream = __esm({
   }
 });
 
-// node_modules/@langchain/core/dist/runnables/config.js
-async function getCallbackManagerForConfig(config) {
-  return CallbackManager._configureSync(config?.callbacks, void 0, config?.tags, void 0, config?.metadata);
-}
-function mergeConfigs(...configs) {
-  const copy = {};
-  for (const options of configs.filter((c4) => !!c4)) {
-    for (const key of Object.keys(options)) {
-      if (key === "metadata") {
-        copy[key] = { ...copy[key], ...options[key] };
-      } else if (key === "tags") {
-        const baseKeys = copy[key] ?? [];
-        copy[key] = [...new Set(baseKeys.concat(options[key] ?? []))];
-      } else if (key === "configurable") {
-        copy[key] = { ...copy[key], ...options[key] };
-      } else if (key === "timeout") {
-        if (copy.timeout === void 0) {
-          copy.timeout = options.timeout;
-        } else if (options.timeout !== void 0) {
-          copy.timeout = Math.min(copy.timeout, options.timeout);
-        }
-      } else if (key === "signal") {
-        if (copy.signal === void 0) {
-          copy.signal = options.signal;
-        } else if (options.signal !== void 0) {
-          if ("any" in AbortSignal) {
-            copy.signal = AbortSignal.any([
-              copy.signal,
-              options.signal
-            ]);
-          } else {
-            copy.signal = options.signal;
-          }
-        }
-      } else if (key === "callbacks") {
-        const baseCallbacks = copy.callbacks;
-        const providedCallbacks = options.callbacks;
-        if (Array.isArray(providedCallbacks)) {
-          if (!baseCallbacks) {
-            copy.callbacks = providedCallbacks;
-          } else if (Array.isArray(baseCallbacks)) {
-            copy.callbacks = baseCallbacks.concat(providedCallbacks);
-          } else {
-            const manager = baseCallbacks.copy();
-            for (const callback of providedCallbacks) {
-              manager.addHandler(ensureHandler(callback), true);
-            }
-            copy.callbacks = manager;
-          }
-        } else if (providedCallbacks) {
-          if (!baseCallbacks) {
-            copy.callbacks = providedCallbacks;
-          } else if (Array.isArray(baseCallbacks)) {
-            const manager = providedCallbacks.copy();
-            for (const callback of baseCallbacks) {
-              manager.addHandler(ensureHandler(callback), true);
-            }
-            copy.callbacks = manager;
-          } else {
-            copy.callbacks = new CallbackManager(providedCallbacks._parentRunId, {
-              handlers: baseCallbacks.handlers.concat(providedCallbacks.handlers),
-              inheritableHandlers: baseCallbacks.inheritableHandlers.concat(providedCallbacks.inheritableHandlers),
-              tags: Array.from(new Set(baseCallbacks.tags.concat(providedCallbacks.tags))),
-              inheritableTags: Array.from(new Set(baseCallbacks.inheritableTags.concat(providedCallbacks.inheritableTags))),
-              metadata: {
-                ...baseCallbacks.metadata,
-                ...providedCallbacks.metadata
-              }
-            });
-          }
-        }
-      } else {
-        const typedKey = key;
-        copy[typedKey] = options[typedKey] ?? copy[typedKey];
-      }
-    }
-  }
-  return copy;
-}
-function ensureConfig(config) {
-  const implicitConfig = AsyncLocalStorageProviderSingleton2.getRunnableConfig();
-  let empty = {
-    tags: [],
-    metadata: {},
-    recursionLimit: 25,
-    runId: void 0
-  };
-  if (implicitConfig) {
-    const { runId, runName, ...rest } = implicitConfig;
-    empty = Object.entries(rest).reduce(
-      // eslint-disable-next-line @typescript-eslint/no-explicit-any
-      (currentConfig, [key, value]) => {
-        if (value !== void 0) {
-          currentConfig[key] = value;
-        }
-        return currentConfig;
-      },
-      empty
-    );
-  }
-  if (config) {
-    empty = Object.entries(config).reduce(
-      // eslint-disable-next-line @typescript-eslint/no-explicit-any
-      (currentConfig, [key, value]) => {
-        if (value !== void 0) {
-          currentConfig[key] = value;
-        }
-        return currentConfig;
-      },
-      empty
-    );
-  }
-  if (empty?.configurable) {
-    for (const key of Object.keys(empty.configurable)) {
-      if (PRIMITIVES.has(typeof empty.configurable[key]) && !empty.metadata?.[key]) {
-        if (!empty.metadata) {
-          empty.metadata = {};
-        }
-        empty.metadata[key] = empty.configurable[key];
-      }
-    }
-  }
-  if (empty.timeout !== void 0) {
-    if (empty.timeout <= 0) {
-      throw new Error("Timeout must be a positive number");
-    }
-    const timeoutSignal = AbortSignal.timeout(empty.timeout);
-    if (empty.signal !== void 0) {
-      if ("any" in AbortSignal) {
-        empty.signal = AbortSignal.any([empty.signal, timeoutSignal]);
-      }
-    } else {
-      empty.signal = timeoutSignal;
-    }
-    delete empty.timeout;
-  }
-  return empty;
-}
-function patchConfig(config = {}, { callbacks, maxConcurrency, recursionLimit, runName, configurable, runId } = {}) {
-  const newConfig = ensureConfig(config);
-  if (callbacks !== void 0) {
-    delete newConfig.runName;
-    newConfig.callbacks = callbacks;
-  }
-  if (recursionLimit !== void 0) {
-    newConfig.recursionLimit = recursionLimit;
-  }
-  if (maxConcurrency !== void 0) {
-    newConfig.maxConcurrency = maxConcurrency;
-  }
-  if (runName !== void 0) {
-    newConfig.runName = runName;
-  }
-  if (configurable !== void 0) {
-    newConfig.configurable = { ...newConfig.configurable, ...configurable };
-  }
-  if (runId !== void 0) {
-    delete newConfig.runId;
-  }
-  return newConfig;
-}
-var DEFAULT_RECURSION_LIMIT, PRIMITIVES;
-var init_config = __esm({
-  "node_modules/@langchain/core/dist/runnables/config.js"() {
-    init_manager();
-    init_singletons();
-    DEFAULT_RECURSION_LIMIT = 25;
-    PRIMITIVES = /* @__PURE__ */ new Set(["string", "number", "boolean"]);
-  }
-});
-
 // node_modules/@langchain/core/dist/utils/async_caller.js
 var import_p_retry2, import_p_queue3, STATUS_NO_RETRY2, defaultFailedAttemptHandler, AsyncCaller2;
 var init_async_caller2 = __esm({
@@ -15885,7 +16685,7 @@ function parseArrayDef(def, refs) {
   const res = {
     type: "array"
   };
-  if (def.type?._def?.typeName !== ZodFirstPartyTypeKind.ZodAny) {
+  if (def.type?._def && def.type?._def?.typeName !== ZodFirstPartyTypeKind.ZodAny) {
     res.items = parseDef(def.type._def, {
       ...refs,
       currentPath: [...refs.currentPath, "items"]
@@ -16086,7 +16886,7 @@ var init_effects = __esm({
 function parseEnumDef(def) {
   return {
     type: "string",
-    enum: def.values
+    enum: Array.from(def.values)
   };
 }
 var init_enum = __esm({
@@ -16171,9 +16971,6 @@ function parseStringDef(def, refs) {
   const res = {
     type: "string"
   };
-  function processPattern(value) {
-    return refs.patternStrategy === "escape" ? escapeNonAlphaNumeric(value) : value;
-  }
   if (def.checks) {
     for (const check of def.checks) {
       switch (check.kind) {
@@ -16212,10 +17009,10 @@ function parseStringDef(def, refs) {
           addPattern(res, zodPatterns.cuid2, check.message, refs);
           break;
         case "startsWith":
-          addPattern(res, RegExp(`^${processPattern(check.value)}`), check.message, refs);
+          addPattern(res, RegExp(`^${escapeLiteralCheckValue(check.value, refs)}`), check.message, refs);
           break;
         case "endsWith":
-          addPattern(res, RegExp(`${processPattern(check.value)}$`), check.message, refs);
+          addPattern(res, RegExp(`${escapeLiteralCheckValue(check.value, refs)}$`), check.message, refs);
           break;
         case "datetime":
           addFormat(res, "date-time", check.message, refs);
@@ -16234,7 +17031,7 @@ function parseStringDef(def, refs) {
           setResponseValueAndErrors(res, "maxLength", typeof res.maxLength === "number" ? Math.min(res.maxLength, check.value) : check.value, check.message, refs);
           break;
         case "includes": {
-          addPattern(res, RegExp(processPattern(check.value)), check.message, refs);
+          addPattern(res, RegExp(escapeLiteralCheckValue(check.value, refs)), check.message, refs);
           break;
         }
         case "ip": {
@@ -16246,8 +17043,23 @@ function parseStringDef(def, refs) {
           }
           break;
         }
+        case "base64url":
+          addPattern(res, zodPatterns.base64url, check.message, refs);
+          break;
+        case "jwt":
+          addPattern(res, zodPatterns.jwt, check.message, refs);
+          break;
+        case "cidr": {
+          if (check.version !== "v6") {
+            addPattern(res, zodPatterns.ipv4Cidr, check.message, refs);
+          }
+          if (check.version !== "v4") {
+            addPattern(res, zodPatterns.ipv6Cidr, check.message, refs);
+          }
+          break;
+        }
         case "emoji":
-          addPattern(res, zodPatterns.emoji, check.message, refs);
+          addPattern(res, zodPatterns.emoji(), check.message, refs);
           break;
         case "ulid": {
           addPattern(res, zodPatterns.ulid, check.message, refs);
@@ -16285,10 +17097,155 @@ function parseStringDef(def, refs) {
   }
   return res;
 }
-var emojiRegex2, zodPatterns, escapeNonAlphaNumeric, addFormat, addPattern, processRegExp;
+function escapeLiteralCheckValue(literal, refs) {
+  return refs.patternStrategy === "escape" ? escapeNonAlphaNumeric(literal) : literal;
+}
+function escapeNonAlphaNumeric(source) {
+  let result = "";
+  for (let i3 = 0; i3 < source.length; i3++) {
+    if (!ALPHA_NUMERIC.has(source[i3])) {
+      result += "\\";
+    }
+    result += source[i3];
+  }
+  return result;
+}
+function addFormat(schema, value, message, refs) {
+  if (schema.format || schema.anyOf?.some((x2) => x2.format)) {
+    if (!schema.anyOf) {
+      schema.anyOf = [];
+    }
+    if (schema.format) {
+      schema.anyOf.push({
+        format: schema.format,
+        ...schema.errorMessage && refs.errorMessages && {
+          errorMessage: { format: schema.errorMessage.format }
+        }
+      });
+      delete schema.format;
+      if (schema.errorMessage) {
+        delete schema.errorMessage.format;
+        if (Object.keys(schema.errorMessage).length === 0) {
+          delete schema.errorMessage;
+        }
+      }
+    }
+    schema.anyOf.push({
+      format: value,
+      ...message && refs.errorMessages && { errorMessage: { format: message } }
+    });
+  } else {
+    setResponseValueAndErrors(schema, "format", value, message, refs);
+  }
+}
+function addPattern(schema, regex2, message, refs) {
+  if (schema.pattern || schema.allOf?.some((x2) => x2.pattern)) {
+    if (!schema.allOf) {
+      schema.allOf = [];
+    }
+    if (schema.pattern) {
+      schema.allOf.push({
+        pattern: schema.pattern,
+        ...schema.errorMessage && refs.errorMessages && {
+          errorMessage: { pattern: schema.errorMessage.pattern }
+        }
+      });
+      delete schema.pattern;
+      if (schema.errorMessage) {
+        delete schema.errorMessage.pattern;
+        if (Object.keys(schema.errorMessage).length === 0) {
+          delete schema.errorMessage;
+        }
+      }
+    }
+    schema.allOf.push({
+      pattern: stringifyRegExpWithFlags(regex2, refs),
+      ...message && refs.errorMessages && { errorMessage: { pattern: message } }
+    });
+  } else {
+    setResponseValueAndErrors(schema, "pattern", stringifyRegExpWithFlags(regex2, refs), message, refs);
+  }
+}
+function stringifyRegExpWithFlags(regex2, refs) {
+  if (!refs.applyRegexFlags || !regex2.flags) {
+    return regex2.source;
+  }
+  const flags = {
+    i: regex2.flags.includes("i"),
+    m: regex2.flags.includes("m"),
+    s: regex2.flags.includes("s")
+    // `.` matches newlines
+  };
+  const source = flags.i ? regex2.source.toLowerCase() : regex2.source;
+  let pattern = "";
+  let isEscaped = false;
+  let inCharGroup = false;
+  let inCharRange = false;
+  for (let i3 = 0; i3 < source.length; i3++) {
+    if (isEscaped) {
+      pattern += source[i3];
+      isEscaped = false;
+      continue;
+    }
+    if (flags.i) {
+      if (inCharGroup) {
+        if (source[i3].match(/[a-z]/)) {
+          if (inCharRange) {
+            pattern += source[i3];
+            pattern += `${source[i3 - 2]}-${source[i3]}`.toUpperCase();
+            inCharRange = false;
+          } else if (source[i3 + 1] === "-" && source[i3 + 2]?.match(/[a-z]/)) {
+            pattern += source[i3];
+            inCharRange = true;
+          } else {
+            pattern += `${source[i3]}${source[i3].toUpperCase()}`;
+          }
+          continue;
+        }
+      } else if (source[i3].match(/[a-z]/)) {
+        pattern += `[${source[i3]}${source[i3].toUpperCase()}]`;
+        continue;
+      }
+    }
+    if (flags.m) {
+      if (source[i3] === "^") {
+        pattern += `(^|(?<=[\r
+]))`;
+        continue;
+      } else if (source[i3] === "$") {
+        pattern += `($|(?=[\r
+]))`;
+        continue;
+      }
+    }
+    if (flags.s && source[i3] === ".") {
+      pattern += inCharGroup ? `${source[i3]}\r
+` : `[${source[i3]}\r
+]`;
+      continue;
+    }
+    pattern += source[i3];
+    if (source[i3] === "\\") {
+      isEscaped = true;
+    } else if (inCharGroup && source[i3] === "]") {
+      inCharGroup = false;
+    } else if (!inCharGroup && source[i3] === "[") {
+      inCharGroup = true;
+    }
+  }
+  try {
+    new RegExp(pattern);
+  } catch {
+    console.warn(`Could not convert regex pattern at ${refs.currentPath.join("/")} to a flag-independent form! Falling back to the flag-ignorant source`);
+    return regex2.source;
+  }
+  return pattern;
+}
+var emojiRegex2, zodPatterns, ALPHA_NUMERIC;
 var init_string = __esm({
   "node_modules/zod-to-json-schema/dist/esm/parsers/string.js"() {
     init_errorMessages();
+    emojiRegex2 = void 0;
     zodPatterns = {
       /**
        * `c` was changed to `[cC]` to replicate /i flag
@@ -16325,150 +17282,26 @@ var init_string = __esm({
        * Unused
        */
       ipv4: /^(?:(?:25[0-5]|2[0-4][0-9]|1[0-9][0-9]|[1-9][0-9]|[0-9])\.){3}(?:25[0-5]|2[0-4][0-9]|1[0-9][0-9]|[1-9][0-9]|[0-9])$/,
+      ipv4Cidr: /^(?:(?:25[0-5]|2[0-4][0-9]|1[0-9][0-9]|[1-9][0-9]|[0-9])\.){3}(?:25[0-5]|2[0-4][0-9]|1[0-9][0-9]|[1-9][0-9]|[0-9])\/(3[0-2]|[12]?[0-9])$/,
       /**
        * Unused
        */
       ipv6: /^(([a-f0-9]{1,4}:){7}|::([a-f0-9]{1,4}:){0,6}|([a-f0-9]{1,4}:){1}:([a-f0-9]{1,4}:){0,5}|([a-f0-9]{1,4}:){2}:([a-f0-9]{1,4}:){0,4}|([a-f0-9]{1,4}:){3}:([a-f0-9]{1,4}:){0,3}|([a-f0-9]{1,4}:){4}:([a-f0-9]{1,4}:){0,2}|([a-f0-9]{1,4}:){5}:([a-f0-9]{1,4}:){0,1})([a-f0-9]{1,4}|(((25[0-5])|(2[0-4][0-9])|(1[0-9]{2})|([0-9]{1,2}))\.){3}((25[0-5])|(2[0-4][0-9])|(1[0-9]{2})|([0-9]{1,2})))$/,
+      ipv6Cidr: /^(([0-9a-fA-F]{1,4}:){7,7}[0-9a-fA-F]{1,4}|([0-9a-fA-F]{1,4}:){1,7}:|([0-9a-fA-F]{1,4}:){1,6}:[0-9a-fA-F]{1,4}|([0-9a-fA-F]{1,4}:){1,5}(:[0-9a-fA-F]{1,4}){1,2}|([0-9a-fA-F]{1,4}:){1,4}(:[0-9a-fA-F]{1,4}){1,3}|([0-9a-fA-F]{1,4}:){1,3}(:[0-9a-fA-F]{1,4}){1,4}|([0-9a-fA-F]{1,4}:){1,2}(:[0-9a-fA-F]{1,4}){1,5}|[0-9a-fA-F]{1,4}:((:[0-9a-fA-F]{1,4}){1,6})|:((:[0-9a-fA-F]{1,4}){1,7}|:)|fe80:(:[0-9a-fA-F]{0,4}){0,4}%[0-9a-zA-Z]{1,}|::(ffff(:0{1,4}){0,1}:){0,1}((25[0-5]|(2[0-4]|1{0,1}[0-9]){0,1}[0-9])\.){3,3}(25[0-5]|(2[0-4]|1{0,1}[0-9]){0,1}[0-9])|([0-9a-fA-F]{1,4}:){1,4}:((25[0-5]|(2[0-4]|1{0,1}[0-9]){0,1}[0-9])\.){3,3}(25[0-5]|(2[0-4]|1{0,1}[0-9]){0,1}[0-9]))\/(12[0-8]|1[01][0-9]|[1-9]?[0-9])$/,
       base64: /^([0-9a-zA-Z+/]{4})*(([0-9a-zA-Z+/]{2}==)|([0-9a-zA-Z+/]{3}=))?$/,
-      nanoid: /^[a-zA-Z0-9_-]{21}$/
+      base64url: /^([0-9a-zA-Z-_]{4})*(([0-9a-zA-Z-_]{2}(==)?)|([0-9a-zA-Z-_]{3}(=)?))?$/,
+      nanoid: /^[a-zA-Z0-9_-]{21}$/,
+      jwt: /^[A-Za-z0-9-_]+\.[A-Za-z0-9-_]+\.[A-Za-z0-9-_]*$/
     };
-    escapeNonAlphaNumeric = (value) => Array.from(value).map((c4) => /[a-zA-Z0-9]/.test(c4) ? c4 : `\\${c4}`).join("");
-    addFormat = (schema, value, message, refs) => {
-      if (schema.format || schema.anyOf?.some((x2) => x2.format)) {
-        if (!schema.anyOf) {
-          schema.anyOf = [];
-        }
-        if (schema.format) {
-          schema.anyOf.push({
-            format: schema.format,
-            ...schema.errorMessage && refs.errorMessages && {
-              errorMessage: { format: schema.errorMessage.format }
-            }
-          });
-          delete schema.format;
-          if (schema.errorMessage) {
-            delete schema.errorMessage.format;
-            if (Object.keys(schema.errorMessage).length === 0) {
-              delete schema.errorMessage;
-            }
-          }
-        }
-        schema.anyOf.push({
-          format: value,
-          ...message && refs.errorMessages && { errorMessage: { format: message } }
-        });
-      } else {
-        setResponseValueAndErrors(schema, "format", value, message, refs);
-      }
-    };
-    addPattern = (schema, regex2, message, refs) => {
-      if (schema.pattern || schema.allOf?.some((x2) => x2.pattern)) {
-        if (!schema.allOf) {
-          schema.allOf = [];
-        }
-        if (schema.pattern) {
-          schema.allOf.push({
-            pattern: schema.pattern,
-            ...schema.errorMessage && refs.errorMessages && {
-              errorMessage: { pattern: schema.errorMessage.pattern }
-            }
-          });
-          delete schema.pattern;
-          if (schema.errorMessage) {
-            delete schema.errorMessage.pattern;
-            if (Object.keys(schema.errorMessage).length === 0) {
-              delete schema.errorMessage;
-            }
-          }
-        }
-        schema.allOf.push({
-          pattern: processRegExp(regex2, refs),
-          ...message && refs.errorMessages && { errorMessage: { pattern: message } }
-        });
-      } else {
-        setResponseValueAndErrors(schema, "pattern", processRegExp(regex2, refs), message, refs);
-      }
-    };
-    processRegExp = (regexOrFunction, refs) => {
-      const regex2 = typeof regexOrFunction === "function" ? regexOrFunction() : regexOrFunction;
-      if (!refs.applyRegexFlags || !regex2.flags)
-        return regex2.source;
-      const flags = {
-        i: regex2.flags.includes("i"),
-        m: regex2.flags.includes("m"),
-        s: regex2.flags.includes("s")
-        // `.` matches newlines
-      };
-      const source = flags.i ? regex2.source.toLowerCase() : regex2.source;
-      let pattern = "";
-      let isEscaped = false;
-      let inCharGroup = false;
-      let inCharRange = false;
-      for (let i3 = 0; i3 < source.length; i3++) {
-        if (isEscaped) {
-          pattern += source[i3];
-          isEscaped = false;
-          continue;
-        }
-        if (flags.i) {
-          if (inCharGroup) {
-            if (source[i3].match(/[a-z]/)) {
-              if (inCharRange) {
-                pattern += source[i3];
-                pattern += `${source[i3 - 2]}-${source[i3]}`.toUpperCase();
-                inCharRange = false;
-              } else if (source[i3 + 1] === "-" && source[i3 + 2]?.match(/[a-z]/)) {
-                pattern += source[i3];
-                inCharRange = true;
-              } else {
-                pattern += `${source[i3]}${source[i3].toUpperCase()}`;
-              }
-              continue;
-            }
-          } else if (source[i3].match(/[a-z]/)) {
-            pattern += `[${source[i3]}${source[i3].toUpperCase()}]`;
-            continue;
-          }
-        }
-        if (flags.m) {
-          if (source[i3] === "^") {
-            pattern += `(^|(?<=[\r
-]))`;
-            continue;
-          } else if (source[i3] === "$") {
-            pattern += `($|(?=[\r
-]))`;
-            continue;
-          }
-        }
-        if (flags.s && source[i3] === ".") {
-          pattern += inCharGroup ? `${source[i3]}\r
-` : `[${source[i3]}\r
-]`;
-          continue;
-        }
-        pattern += source[i3];
-        if (source[i3] === "\\") {
-          isEscaped = true;
-        } else if (inCharGroup && source[i3] === "]") {
-          inCharGroup = false;
-        } else if (!inCharGroup && source[i3] === "[") {
-          inCharGroup = true;
-        }
-      }
-      try {
-        const regexTest = new RegExp(pattern);
-      } catch {
-        console.warn(`Could not convert regex pattern at ${refs.currentPath.join("/")} to a flag-independent form! Falling back to the flag-ignorant source`);
-        return regex2.source;
-      }
-      return pattern;
-    };
+    ALPHA_NUMERIC = new Set("ABCDEFGHIJKLMNOPQRSTUVXYZabcdefghijklmnopqrstuvxyz0123456789");
   }
 });
 
 // node_modules/zod-to-json-schema/dist/esm/parsers/record.js
 function parseRecordDef(def, refs) {
+  if (refs.target === "openAi") {
+    console.warn("Warning: OpenAI may not support records in schemas! Try an array of key-value pairs instead.");
+  }
   if (refs.target === "openApi3" && def.keyType?._def.typeName === ZodFirstPartyTypeKind.ZodEnum) {
     return {
       type: "object",
@@ -16494,7 +17327,7 @@ function parseRecordDef(def, refs) {
     return schema;
   }
   if (def.keyType?._def.typeName === ZodFirstPartyTypeKind.ZodString && def.keyType._def.checks?.length) {
-    const keyType = Object.entries(parseStringDef(def.keyType._def, refs)).reduce((acc, [key, value]) => key === "type" ? acc : { ...acc, [key]: value }, {});
+    const { type, ...keyType } = parseStringDef(def.keyType._def, refs);
     return {
       ...schema,
       propertyNames: keyType
@@ -16506,6 +17339,12 @@ function parseRecordDef(def, refs) {
         enum: def.keyType._def.values
       }
     };
+  } else if (def.keyType?._def.typeName === ZodFirstPartyTypeKind.ZodBranded && def.keyType._def.type._def.typeName === ZodFirstPartyTypeKind.ZodString && def.keyType._def.type._def.checks?.length) {
+    const { type, ...keyType } = parseBrandedDef(def.keyType._def, refs);
+    return {
+      ...schema,
+      propertyNames: keyType
+    };
   }
   return schema;
 }
@@ -16514,6 +17353,7 @@ var init_record = __esm({
     init_lib();
     init_parseDef();
     init_string();
+    init_branded();
   }
 });
 
@@ -16772,11 +17612,22 @@ function decideAdditionalProperties(def, refs) {
   }
 }
 function parseObjectDef(def, refs) {
+  const forceOptionalIntoNullable = refs.target === "openAi";
   const result = {
     type: "object",
     ...Object.entries(def.shape()).reduce((acc, [propName, propDef]) => {
       if (propDef === void 0 || propDef._def === void 0)
         return acc;
+      let propOptional = propDef.isOptional();
+      if (propOptional && forceOptionalIntoNullable) {
+        if (propDef instanceof ZodOptional) {
+          propDef = propDef._def.innerType;
+        }
+        if (!propDef.isNullable()) {
+          propDef = propDef.nullable();
+        }
+        propOptional = false;
+      }
       const parsedDef = parseDef(propDef._def, {
         ...refs,
         currentPath: [...refs.currentPath, "properties", propName],
@@ -16786,7 +17637,7 @@ function parseObjectDef(def, refs) {
         return acc;
       return {
         properties: { ...acc.properties, [propName]: parsedDef },
-        required: propDef.isOptional() ? acc.required : [...acc.required, propName]
+        required: propOptional ? acc.required : [...acc.required, propName]
       };
     }, { properties: {}, required: [] }),
     additionalProperties: decideAdditionalProperties(def, refs)
@@ -16797,6 +17648,7 @@ function parseObjectDef(def, refs) {
 }
 var init_object = __esm({
   "node_modules/zod-to-json-schema/dist/esm/parsers/object.js"() {
+    init_lib();
     init_parseDef();
   }
 });
@@ -17161,8 +18013,11 @@ var init_zodToJsonSchema = __esm({
       };
       if (refs.target === "jsonSchema7") {
         combined.$schema = "http://json-schema.org/draft-07/schema#";
-      } else if (refs.target === "jsonSchema2019-09") {
+      } else if (refs.target === "jsonSchema2019-09" || refs.target === "openAi") {
         combined.$schema = "https://json-schema.org/draft/2019-09/schema#";
+      }
+      if (refs.target === "openAi" && ("anyOf" in combined || "oneOf" in combined || "allOf" in combined || "type" in combined && Array.isArray(combined.type))) {
+        console.warn("Warning: OpenAI may not support schemas with unions as roots! Try wrapping it in an object property.");
       }
       return combined;
     };
@@ -17215,90 +18070,97 @@ var init_esm = __esm({
 function _escapeNodeLabel(nodeLabel) {
   return nodeLabel.replace(/[^a-zA-Z-_0-9]/g, "_");
 }
-function _adjustMermaidEdge(edge, nodes) {
-  const sourceNodeLabel = nodes[edge.source] ?? edge.source;
-  const targetNodeLabel = nodes[edge.target] ?? edge.target;
-  return [sourceNodeLabel, targetNodeLabel];
-}
 function _generateMermaidGraphStyles(nodeColors) {
   let styles2 = "";
   for (const [className, color2] of Object.entries(nodeColors)) {
-    styles2 += `	classDef ${className}class fill:${color2};
+    styles2 += `	classDef ${className} ${color2};
 `;
   }
   return styles2;
 }
 function drawMermaid(nodes, edges, config) {
-  const { firstNodeLabel, lastNodeLabel, nodeColors, withStyles = true, curveStyle = "linear", wrapLabelNWords = 9 } = config ?? {};
+  const { firstNode, lastNode, nodeColors, withStyles = true, curveStyle = "linear", wrapLabelNWords = 9 } = config ?? {};
   let mermaidGraph = withStyles ? `%%{init: {'flowchart': {'curve': '${curveStyle}'}}}%%
 graph TD;
 ` : "graph TD;\n";
   if (withStyles) {
     const defaultClassLabel = "default";
     const formatDict = {
-      [defaultClassLabel]: "{0}([{1}]):::otherclass"
+      [defaultClassLabel]: "{0}({1})"
     };
-    if (firstNodeLabel !== void 0) {
-      formatDict[firstNodeLabel] = "{0}[{0}]:::startclass";
+    if (firstNode !== void 0) {
+      formatDict[firstNode] = "{0}([{1}]):::first";
     }
-    if (lastNodeLabel !== void 0) {
-      formatDict[lastNodeLabel] = "{0}[{0}]:::endclass";
+    if (lastNode !== void 0) {
+      formatDict[lastNode] = "{0}([{1}]):::last";
     }
-    for (const node of Object.values(nodes)) {
-      const nodeLabel = formatDict[node] ?? formatDict[defaultClassLabel];
-      const escapedNodeLabel = _escapeNodeLabel(node);
-      const nodeParts = node.split(":");
-      const nodeSplit = nodeParts[nodeParts.length - 1];
-      mermaidGraph += `	${nodeLabel.replace(/\{0\}/g, escapedNodeLabel).replace(/\{1\}/g, nodeSplit)};
+    for (const [key, node] of Object.entries(nodes)) {
+      const nodeName = node.name.split(":").pop() ?? "";
+      const label = MARKDOWN_SPECIAL_CHARS.some((char) => nodeName.startsWith(char) && nodeName.endsWith(char)) ? `<p>${nodeName}</p>` : nodeName;
+      let finalLabel = label;
+      if (Object.keys(node.metadata ?? {}).length) {
+        finalLabel += `<hr/><small><em>${Object.entries(node.metadata ?? {}).map(([k3, v5]) => `${k3} = ${v5}`).join("\n")}</em></small>`;
+      }
+      const nodeLabel = (formatDict[key] ?? formatDict[defaultClassLabel]).replace("{0}", _escapeNodeLabel(key)).replace("{1}", finalLabel);
+      mermaidGraph += `	${nodeLabel}
 `;
     }
   }
-  let subgraph = "";
+  const edgeGroups = {};
   for (const edge of edges) {
-    const sourcePrefix = edge.source.includes(":") ? edge.source.split(":")[0] : void 0;
-    const targetPrefix = edge.target.includes(":") ? edge.target.split(":")[0] : void 0;
-    if (subgraph !== "" && (subgraph !== sourcePrefix || subgraph !== targetPrefix)) {
+    const srcParts = edge.source.split(":");
+    const tgtParts = edge.target.split(":");
+    const commonPrefix = srcParts.filter((src, i3) => src === tgtParts[i3]).join(":");
+    if (!edgeGroups[commonPrefix]) {
+      edgeGroups[commonPrefix] = [];
+    }
+    edgeGroups[commonPrefix].push(edge);
+  }
+  const seenSubgraphs = /* @__PURE__ */ new Set();
+  function addSubgraph(edges2, prefix) {
+    const selfLoop = edges2.length === 1 && edges2[0].source === edges2[0].target;
+    if (prefix && !selfLoop) {
+      const subgraph = prefix.split(":").pop();
+      if (seenSubgraphs.has(subgraph)) {
+        throw new Error(`Found duplicate subgraph '${subgraph}' -- this likely means that you're reusing a subgraph node with the same name. Please adjust your graph to have subgraph nodes with unique names.`);
+      }
+      seenSubgraphs.add(subgraph);
+      mermaidGraph += `	subgraph ${subgraph}
+`;
+    }
+    for (const edge of edges2) {
+      const { source, target, data, conditional } = edge;
+      let edgeLabel = "";
+      if (data !== void 0) {
+        let edgeData = data;
+        const words = edgeData.split(" ");
+        if (words.length > wrapLabelNWords) {
+          edgeData = Array.from({ length: Math.ceil(words.length / wrapLabelNWords) }, (_2, i3) => words.slice(i3 * wrapLabelNWords, (i3 + 1) * wrapLabelNWords).join(" ")).join("&nbsp;<br>&nbsp;");
+        }
+        edgeLabel = conditional ? ` -. &nbsp;${edgeData}&nbsp; .-> ` : ` -- &nbsp;${edgeData}&nbsp; --> `;
+      } else {
+        edgeLabel = conditional ? " -.-> " : " --> ";
+      }
+      mermaidGraph += `	${_escapeNodeLabel(source)}${edgeLabel}${_escapeNodeLabel(target)};
+`;
+    }
+    for (const nestedPrefix in edgeGroups) {
+      if (nestedPrefix.startsWith(`${prefix}:`) && nestedPrefix !== prefix) {
+        addSubgraph(edgeGroups[nestedPrefix], nestedPrefix);
+      }
+    }
+    if (prefix && !selfLoop) {
       mermaidGraph += "	end\n";
-      subgraph = "";
     }
-    if (subgraph === "" && sourcePrefix !== void 0 && sourcePrefix === targetPrefix) {
-      mermaidGraph = `	subgraph ${sourcePrefix}
-`;
-      subgraph = sourcePrefix;
-    }
-    const [source, target] = _adjustMermaidEdge(edge, nodes);
-    let edgeLabel = "";
-    if (edge.data !== void 0) {
-      let edgeData = edge.data;
-      const words = edgeData.split(" ");
-      if (words.length > wrapLabelNWords) {
-        edgeData = words.reduce((acc, word, i3) => {
-          if (i3 % wrapLabelNWords === 0)
-            acc.push("");
-          acc[acc.length - 1] += ` ${word}`;
-          return acc;
-        }, []).join("<br>");
-      }
-      if (edge.conditional) {
-        edgeLabel = ` -. ${edgeData} .-> `;
-      } else {
-        edgeLabel = ` -- ${edgeData} --> `;
-      }
-    } else {
-      if (edge.conditional) {
-        edgeLabel = ` -.-> `;
-      } else {
-        edgeLabel = ` --> `;
-      }
-    }
-    mermaidGraph += `	${_escapeNodeLabel(source)}${edgeLabel}${_escapeNodeLabel(target)};
-`;
   }
-  if (subgraph !== "") {
-    mermaidGraph += "end\n";
+  addSubgraph(edgeGroups[""] ?? [], "");
+  for (const prefix in edgeGroups) {
+    if (!prefix.includes(":") && prefix !== "") {
+      addSubgraph(edgeGroups[prefix], prefix);
+    }
   }
-  if (withStyles && nodeColors !== void 0) {
-    mermaidGraph += _generateMermaidGraphStyles(nodeColors);
+  if (withStyles) {
+    mermaidGraph += _generateMermaidGraphStyles(nodeColors ?? {});
   }
   return mermaidGraph;
 }
@@ -17323,28 +18185,27 @@ async function drawMermaidPng(mermaidSyntax, config) {
   const content = await res.blob();
   return content;
 }
+var MARKDOWN_SPECIAL_CHARS;
 var init_graph_mermaid = __esm({
   "node_modules/@langchain/core/dist/runnables/graph_mermaid.js"() {
+    MARKDOWN_SPECIAL_CHARS = ["*", "_", "`"];
   }
 });
 
 // node_modules/@langchain/core/dist/runnables/graph.js
-function nodeDataStr(node) {
-  if (!validate_default(node.id)) {
-    return node.id;
-  } else if (isRunnableInterface(node.data)) {
+function nodeDataStr(id, data) {
+  if (id !== void 0 && !validate_default(id)) {
+    return id;
+  } else if (isRunnableInterface(data)) {
     try {
-      let data = node.data.getName();
-      data = data.startsWith("Runnable") ? data.slice("Runnable".length) : data;
-      if (data.length > MAX_DATA_DISPLAY_NAME_LENGTH) {
-        data = `${data.substring(0, MAX_DATA_DISPLAY_NAME_LENGTH)}...`;
-      }
-      return data;
+      let dataStr = data.getName();
+      dataStr = dataStr.startsWith("Runnable") ? dataStr.slice("Runnable".length) : dataStr;
+      return dataStr;
     } catch (error) {
-      return node.data.getName();
+      return data.getName();
     }
   } else {
-    return node.data.name ?? "UnknownSchema";
+    return data.name ?? "UnknownSchema";
   }
 }
 function nodeDataJson(node) {
@@ -17363,16 +18224,35 @@ function nodeDataJson(node) {
     };
   }
 }
-var MAX_DATA_DISPLAY_NAME_LENGTH, Graph;
+function _firstNode(graph, exclude = []) {
+  const targets = new Set(graph.edges.filter((edge) => !exclude.includes(edge.source)).map((edge) => edge.target));
+  const found = [];
+  for (const node of Object.values(graph.nodes)) {
+    if (!exclude.includes(node.id) && !targets.has(node.id)) {
+      found.push(node);
+    }
+  }
+  return found.length === 1 ? found[0] : void 0;
+}
+function _lastNode(graph, exclude = []) {
+  const sources = new Set(graph.edges.filter((edge) => !exclude.includes(edge.target)).map((edge) => edge.source));
+  const found = [];
+  for (const node of Object.values(graph.nodes)) {
+    if (!exclude.includes(node.id) && !sources.has(node.id)) {
+      found.push(node);
+    }
+  }
+  return found.length === 1 ? found[0] : void 0;
+}
+var Graph;
 var init_graph = __esm({
   "node_modules/@langchain/core/dist/runnables/graph.js"() {
     init_esm();
     init_esm_browser();
     init_utils3();
     init_graph_mermaid();
-    MAX_DATA_DISPLAY_NAME_LENGTH = 42;
     Graph = class {
-      constructor() {
+      constructor(params) {
         Object.defineProperty(this, "nodes", {
           enumerable: true,
           configurable: true,
@@ -17385,6 +18265,8 @@ var init_graph = __esm({
           writable: true,
           value: []
         });
+        this.nodes = params?.nodes ?? this.nodes;
+        this.edges = params?.edges ?? this.edges;
       }
       // Convert the graph to a JSON-serializable format.
       // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -17413,12 +18295,17 @@ var init_graph = __esm({
           })
         };
       }
-      addNode(data, id) {
+      addNode(data, id, metadata) {
         if (id !== void 0 && this.nodes[id] !== void 0) {
           throw new Error(`Node with id ${id} already exists`);
         }
-        const nodeId = id || v4_default();
-        const node = { id: nodeId, data };
+        const nodeId = id ?? v4_default();
+        const node = {
+          id: nodeId,
+          data,
+          name: nodeDataStr(id, data),
+          metadata
+        };
         this.nodes[nodeId] = node;
         return node;
       }
@@ -17443,24 +18330,10 @@ var init_graph = __esm({
         return edge;
       }
       firstNode() {
-        const targets = new Set(this.edges.map((edge) => edge.target));
-        const found = [];
-        Object.values(this.nodes).forEach((node) => {
-          if (!targets.has(node.id)) {
-            found.push(node);
-          }
-        });
-        return found[0];
+        return _firstNode(this);
       }
       lastNode() {
-        const sources = new Set(this.edges.map((edge) => edge.source));
-        const found = [];
-        Object.values(this.nodes).forEach((node) => {
-          if (!sources.has(node.id)) {
-            found.push(node);
-          }
-        });
-        return found[0];
+        return _lastNode(this);
       }
       /**
        * Add all nodes and edges from another graph.
@@ -17495,35 +18368,58 @@ var init_graph = __esm({
       }
       trimFirstNode() {
         const firstNode = this.firstNode();
-        if (firstNode) {
-          const outgoingEdges = this.edges.filter((edge) => edge.source === firstNode.id);
-          if (Object.keys(this.nodes).length === 1 || outgoingEdges.length === 1) {
-            this.removeNode(firstNode);
-          }
+        if (firstNode && _firstNode(this, [firstNode.id])) {
+          this.removeNode(firstNode);
         }
       }
       trimLastNode() {
         const lastNode = this.lastNode();
-        if (lastNode) {
-          const incomingEdges = this.edges.filter((edge) => edge.target === lastNode.id);
-          if (Object.keys(this.nodes).length === 1 || incomingEdges.length === 1) {
-            this.removeNode(lastNode);
-          }
+        if (lastNode && _lastNode(this, [lastNode.id])) {
+          this.removeNode(lastNode);
         }
       }
+      /**
+       * Return a new graph with all nodes re-identified,
+       * using their unique, readable names where possible.
+       */
+      reid() {
+        const nodeLabels = Object.fromEntries(Object.values(this.nodes).map((node) => [node.id, node.name]));
+        const nodeLabelCounts = /* @__PURE__ */ new Map();
+        Object.values(nodeLabels).forEach((label) => {
+          nodeLabelCounts.set(label, (nodeLabelCounts.get(label) || 0) + 1);
+        });
+        const getNodeId = (nodeId) => {
+          const label = nodeLabels[nodeId];
+          if (validate_default(nodeId) && nodeLabelCounts.get(label) === 1) {
+            return label;
+          } else {
+            return nodeId;
+          }
+        };
+        return new Graph({
+          nodes: Object.fromEntries(Object.entries(this.nodes).map(([id, node]) => [
+            getNodeId(id),
+            { ...node, id: getNodeId(id) }
+          ])),
+          edges: this.edges.map((edge) => ({
+            ...edge,
+            source: getNodeId(edge.source),
+            target: getNodeId(edge.target)
+          }))
+        });
+      }
       drawMermaid(params) {
-        const { withStyles, curveStyle, nodeColors = { start: "#ffdfba", end: "#baffc9", other: "#fad7de" }, wrapLabelNWords } = params ?? {};
-        const nodes = {};
-        for (const node of Object.values(this.nodes)) {
-          nodes[node.id] = nodeDataStr(node);
-        }
-        const firstNode = this.firstNode();
-        const firstNodeLabel = firstNode ? nodeDataStr(firstNode) : void 0;
-        const lastNode = this.lastNode();
-        const lastNodeLabel = lastNode ? nodeDataStr(lastNode) : void 0;
-        return drawMermaid(nodes, this.edges, {
-          firstNodeLabel,
-          lastNodeLabel,
+        const { withStyles, curveStyle, nodeColors = {
+          default: "fill:#f2f0ff,line-height:1.2",
+          first: "fill-opacity:0",
+          last: "fill:#bfb6fc"
+        }, wrapLabelNWords } = params ?? {};
+        const graph = this.reid();
+        const firstNode = graph.firstNode();
+        const lastNode = graph.lastNode();
+        return drawMermaid(graph.nodes, graph.edges, {
+          firstNode: firstNode?.id,
+          lastNode: lastNode?.id,
           withStyles,
           curveStyle,
           nodeColors,
@@ -17573,7 +18469,7 @@ function isAsyncIterable(thing) {
 }
 function* consumeIteratorInContext(context, iter) {
   while (true) {
-    const { value, done } = AsyncLocalStorageProviderSingleton2.runWithConfig(context, iter.next.bind(iter), true);
+    const { value, done } = AsyncLocalStorageProviderSingleton2.runWithConfig(pickRunnableConfigKeys(context), iter.next.bind(iter), true);
     if (done) {
       break;
     } else {
@@ -17584,7 +18480,7 @@ function* consumeIteratorInContext(context, iter) {
 async function* consumeAsyncIterableInContext(context, iter) {
   const iterator = iter[Symbol.asyncIterator]();
   while (true) {
-    const { value, done } = await AsyncLocalStorageProviderSingleton2.runWithConfig(context, iterator.next.bind(iter), true);
+    const { value, done } = await AsyncLocalStorageProviderSingleton2.runWithConfig(pickRunnableConfigKeys(context), iterator.next.bind(iter), true);
     if (done) {
       break;
     } else {
@@ -17596,6 +18492,7 @@ var isIterator;
 var init_iter = __esm({
   "node_modules/@langchain/core/dist/runnables/iter.js"() {
     init_singletons();
+    init_config();
     isIterator = (x2) => x2 != null && typeof x2 === "object" && "next" in x2 && typeof x2.next === "function";
   }
 });
@@ -18634,6 +19531,12 @@ var init_base4 = __esm({
           writable: true,
           value: void 0
         });
+        Object.defineProperty(this, "omitSequenceTags", {
+          enumerable: true,
+          configurable: true,
+          writable: true,
+          value: false
+        });
         Object.defineProperty(this, "lc_serializable", {
           enumerable: true,
           configurable: true,
@@ -18650,6 +19553,7 @@ var init_base4 = __esm({
         this.middle = fields.middle ?? this.middle;
         this.last = fields.last;
         this.name = fields.name;
+        this.omitSequenceTags = fields.omitSequenceTags ?? this.omitSequenceTags;
       }
       get steps() {
         return [this.first, ...this.middle, this.last];
@@ -18666,7 +19570,7 @@ var init_base4 = __esm({
           for (let i3 = 0; i3 < initialSteps.length; i3 += 1) {
             const step = initialSteps[i3];
             const promise = step.invoke(nextStepInput, patchConfig(config, {
-              callbacks: runManager?.getChild(`seq:step:${i3 + 1}`)
+              callbacks: runManager?.getChild(this.omitSequenceTags ? void 0 : `seq:step:${i3 + 1}`)
             }));
             nextStepInput = await raceWithSignal(promise, options?.signal);
           }
@@ -18674,7 +19578,7 @@ var init_base4 = __esm({
             throw new Error("Aborted");
           }
           finalOutput = await this.last.invoke(nextStepInput, patchConfig(config, {
-            callbacks: runManager?.getChild(`seq:step:${this.steps.length}`)
+            callbacks: runManager?.getChild(this.omitSequenceTags ? void 0 : `seq:step:${this.steps.length}`)
           }));
         } catch (e3) {
           await runManager?.handleChainError(e3);
@@ -18696,7 +19600,7 @@ var init_base4 = __esm({
           for (let i3 = 0; i3 < this.steps.length; i3 += 1) {
             const step = this.steps[i3];
             const promise = step.batch(nextStepInputs, runManagers.map((runManager, j3) => {
-              const childRunManager = runManager?.getChild(`seq:step:${i3 + 1}`);
+              const childRunManager = runManager?.getChild(this.omitSequenceTags ? void 0 : `seq:step:${i3 + 1}`);
               return patchConfig(configList[j3], { callbacks: childRunManager });
             }), batchOptions);
             nextStepInputs = await raceWithSignal(promise, configList[0]?.signal);
@@ -18720,12 +19624,12 @@ var init_base4 = __esm({
         }
         try {
           let finalGenerator = steps[0].transform(inputGenerator(), patchConfig(otherOptions, {
-            callbacks: runManager?.getChild(`seq:step:1`)
+            callbacks: runManager?.getChild(this.omitSequenceTags ? void 0 : `seq:step:1`)
           }));
           for (let i3 = 1; i3 < steps.length; i3 += 1) {
             const step = steps[i3];
             finalGenerator = await step.transform(finalGenerator, patchConfig(otherOptions, {
-              callbacks: runManager?.getChild(`seq:step:${i3 + 1}`)
+              callbacks: runManager?.getChild(this.omitSequenceTags ? void 0 : `seq:step:${i3 + 1}`)
             }));
           }
           for await (const chunk of finalGenerator) {
@@ -18799,12 +19703,18 @@ var init_base4 = __esm({
         return Array.isArray(thing.middle) && Runnable.isRunnable(thing);
       }
       // eslint-disable-next-line @typescript-eslint/no-explicit-any
-      static from([first, ...runnables], name) {
+      static from([first, ...runnables], nameOrFields) {
+        let extra = {};
+        if (typeof nameOrFields === "string") {
+          extra.name = nameOrFields;
+        } else if (nameOrFields !== void 0) {
+          extra = nameOrFields;
+        }
         return new RunnableSequence({
+          ...extra,
           first: _coerceToRunnable(first),
           middle: runnables.slice(0, -1).map(_coerceToRunnable),
-          last: _coerceToRunnable(runnables[runnables.length - 1]),
-          name
+          last: _coerceToRunnable(runnables[runnables.length - 1])
         });
       }
     };
@@ -18993,7 +19903,7 @@ var init_base4 = __esm({
             callbacks: runManager?.getChild(),
             recursionLimit: (config?.recursionLimit ?? DEFAULT_RECURSION_LIMIT) - 1
           });
-          void AsyncLocalStorageProviderSingleton2.runWithConfig(childConfig, async () => {
+          void AsyncLocalStorageProviderSingleton2.runWithConfig(pickRunnableConfigKeys(childConfig), async () => {
             try {
               let output = await this.func(input, {
                 ...childConfig
@@ -19065,7 +19975,7 @@ var init_base4 = __esm({
           recursionLimit: (config?.recursionLimit ?? DEFAULT_RECURSION_LIMIT) - 1
         });
         const output = await new Promise((resolve, reject) => {
-          void AsyncLocalStorageProviderSingleton2.runWithConfig(childConfig, async () => {
+          void AsyncLocalStorageProviderSingleton2.runWithConfig(pickRunnableConfigKeys(childConfig), async () => {
             try {
               const res = await this.func(finalChunk, {
                 ...childConfig,
@@ -19156,31 +20066,37 @@ var init_base4 = __esm({
       }
       async invoke(input, options) {
         const config = ensureConfig(options);
-        const callbackManager_ = await getCallbackManagerForConfig(options);
+        const callbackManager_ = await getCallbackManagerForConfig(config);
         const { runId, ...otherConfigFields } = config;
         const runManager = await callbackManager_?.handleChainStart(this.toJSON(), _coerceToDict2(input, "input"), runId, void 0, void 0, void 0, otherConfigFields?.runName);
-        let firstError;
-        for (const runnable of this.runnables()) {
-          config?.signal?.throwIfAborted();
-          try {
-            const output = await runnable.invoke(input, patchConfig(otherConfigFields, { callbacks: runManager?.getChild() }));
-            await runManager?.handleChainEnd(_coerceToDict2(output, "output"));
-            return output;
-          } catch (e3) {
-            if (firstError === void 0) {
-              firstError = e3;
+        const childConfig = patchConfig(otherConfigFields, {
+          callbacks: runManager?.getChild()
+        });
+        const res = await AsyncLocalStorageProviderSingleton2.runWithConfig(childConfig, async () => {
+          let firstError;
+          for (const runnable of this.runnables()) {
+            config?.signal?.throwIfAborted();
+            try {
+              const output = await runnable.invoke(input, childConfig);
+              await runManager?.handleChainEnd(_coerceToDict2(output, "output"));
+              return output;
+            } catch (e3) {
+              if (firstError === void 0) {
+                firstError = e3;
+              }
             }
           }
-        }
-        if (firstError === void 0) {
-          throw new Error("No error stored at end of fallback.");
-        }
-        await runManager?.handleChainError(firstError);
-        throw firstError;
+          if (firstError === void 0) {
+            throw new Error("No error stored at end of fallback.");
+          }
+          await runManager?.handleChainError(firstError);
+          throw firstError;
+        });
+        return res;
       }
       async *_streamIterator(input, options) {
         const config = ensureConfig(options);
-        const callbackManager_ = await getCallbackManagerForConfig(options);
+        const callbackManager_ = await getCallbackManagerForConfig(config);
         const { runId, ...otherConfigFields } = config;
         const runManager = await callbackManager_?.handleChainStart(this.toJSON(), _coerceToDict2(input, "input"), runId, void 0, void 0, void 0, otherConfigFields?.runName);
         let firstError;
@@ -19191,7 +20107,8 @@ var init_base4 = __esm({
             callbacks: runManager?.getChild()
           });
           try {
-            stream = await runnable.stream(input, childConfig);
+            const originalStream = await runnable.stream(input, childConfig);
+            stream = consumeAsyncIterableInContext(childConfig, originalStream);
             break;
           } catch (e3) {
             if (firstError === void 0) {
@@ -19620,6 +20537,7 @@ var BaseLLMOutputParser, BaseOutputParser, OutputParserException;
 var init_base5 = __esm({
   "node_modules/@langchain/core/dist/output_parsers/base.js"() {
     init_runnables();
+    init_errors();
     BaseLLMOutputParser = class extends Runnable {
       /**
        * Parses the result of an LLM call with a given prompt. By default, it
@@ -19704,12 +20622,13 @@ var init_base5 = __esm({
             throw new Error("Arguments 'observation' & 'llmOutput' are required if 'sendToLlm' is true");
           }
         }
+        addLangChainErrorFields(this, "OUTPUT_PARSING_FAILURE");
       }
     };
   }
 });
 
-// node_modules/@langchain/core/dist/utils/@cfworker/json-schema/src/deep-compare-strict.js
+// node_modules/@cfworker/json-schema/dist/esm/deep-compare-strict.js
 function deepCompareStrict(a3, b3) {
   const typeofa = typeof a3;
   if (typeofa !== typeof b3) {
@@ -19750,30 +20669,26 @@ function deepCompareStrict(a3, b3) {
   return a3 === b3;
 }
 var init_deep_compare_strict = __esm({
-  "node_modules/@langchain/core/dist/utils/@cfworker/json-schema/src/deep-compare-strict.js"() {
+  "node_modules/@cfworker/json-schema/dist/esm/deep-compare-strict.js"() {
   }
 });
 
-// node_modules/@langchain/core/dist/utils/@cfworker/json-schema/src/pointer.js
+// node_modules/@cfworker/json-schema/dist/esm/pointer.js
 var init_pointer = __esm({
-  "node_modules/@langchain/core/dist/utils/@cfworker/json-schema/src/pointer.js"() {
+  "node_modules/@cfworker/json-schema/dist/esm/pointer.js"() {
   }
 });
 
-// node_modules/@langchain/core/dist/utils/@cfworker/json-schema/src/dereference.js
+// node_modules/@cfworker/json-schema/dist/esm/dereference.js
 var initialBaseURI;
 var init_dereference = __esm({
-  "node_modules/@langchain/core/dist/utils/@cfworker/json-schema/src/dereference.js"() {
+  "node_modules/@cfworker/json-schema/dist/esm/dereference.js"() {
     init_pointer();
-    initialBaseURI = // @ts-ignore
-    typeof self !== "undefined" && self.location && self.location.origin !== "null" ? (
-      //@ts-ignore
-      /* @__PURE__ */ new URL(self.location.origin + self.location.pathname + location.search)
-    ) : /* @__PURE__ */ new URL("https://github.com/cfworker");
+    initialBaseURI = typeof self !== "undefined" && self.location && self.location.origin !== "null" ? new URL(self.location.origin + self.location.pathname + location.search) : new URL("https://github.com/cfworker");
   }
 });
 
-// node_modules/@langchain/core/dist/utils/@cfworker/json-schema/src/format.js
+// node_modules/@cfworker/json-schema/dist/esm/format.js
 function bind(r4) {
   return r4.test.bind(r4);
 }
@@ -19810,7 +20725,7 @@ function regex(str2) {
   if (Z_ANCHOR.test(str2))
     return false;
   try {
-    new RegExp(str2);
+    new RegExp(str2, "u");
     return true;
   } catch (e3) {
     return false;
@@ -19818,7 +20733,7 @@ function regex(str2) {
 }
 var DATE, DAYS, TIME, HOSTNAME, URIREF, URITEMPLATE, URL_, UUID, JSON_POINTER, JSON_POINTER_URI_FRAGMENT, RELATIVE_JSON_POINTER, FASTDATE, FASTTIME, FASTDATETIME, FASTURIREFERENCE, EMAIL, IPV4, IPV6, DURATION, fullFormat, fastFormat, DATE_TIME_SEPARATOR, NOT_URI_FRAGMENT, URI_PATTERN, Z_ANCHOR;
 var init_format = __esm({
-  "node_modules/@langchain/core/dist/utils/@cfworker/json-schema/src/format.js"() {
+  "node_modules/@cfworker/json-schema/dist/esm/format.js"() {
     DATE = /^(\d\d\d\d)-(\d\d)-(\d\d)$/;
     DAYS = [0, 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
     TIME = /^(\d\d):(\d\d):(\d\d)(\.\d+)?(z|[+-]\d\d(?::?\d\d)?)?$/i;
@@ -19851,29 +20766,29 @@ var init_format = __esm({
     DURATION = (input) => input.length > 1 && input.length < 80 && (/^P\d+([.,]\d+)?W$/.test(input) || /^P[\dYMDTHS]*(\d[.,]\d+)?[YMDHS]$/.test(input) && /^P([.,\d]+Y)?([.,\d]+M)?([.,\d]+D)?(T([.,\d]+H)?([.,\d]+M)?([.,\d]+S)?)?$/.test(input));
     fullFormat = {
       date,
-      time: /* @__PURE__ */ time.bind(void 0, false),
+      time: time.bind(void 0, false),
       "date-time": date_time,
       duration: DURATION,
       uri,
-      "uri-reference": /* @__PURE__ */ bind(URIREF),
-      "uri-template": /* @__PURE__ */ bind(URITEMPLATE),
-      url: /* @__PURE__ */ bind(URL_),
+      "uri-reference": bind(URIREF),
+      "uri-template": bind(URITEMPLATE),
+      url: bind(URL_),
       email: EMAIL,
-      hostname: /* @__PURE__ */ bind(HOSTNAME),
-      ipv4: /* @__PURE__ */ bind(IPV4),
-      ipv6: /* @__PURE__ */ bind(IPV6),
+      hostname: bind(HOSTNAME),
+      ipv4: bind(IPV4),
+      ipv6: bind(IPV6),
       regex,
-      uuid: /* @__PURE__ */ bind(UUID),
-      "json-pointer": /* @__PURE__ */ bind(JSON_POINTER),
-      "json-pointer-uri-fragment": /* @__PURE__ */ bind(JSON_POINTER_URI_FRAGMENT),
-      "relative-json-pointer": /* @__PURE__ */ bind(RELATIVE_JSON_POINTER)
+      uuid: bind(UUID),
+      "json-pointer": bind(JSON_POINTER),
+      "json-pointer-uri-fragment": bind(JSON_POINTER_URI_FRAGMENT),
+      "relative-json-pointer": bind(RELATIVE_JSON_POINTER)
     };
     fastFormat = {
       ...fullFormat,
-      date: /* @__PURE__ */ bind(FASTDATE),
-      time: /* @__PURE__ */ bind(FASTTIME),
-      "date-time": /* @__PURE__ */ bind(FASTDATETIME),
-      "uri-reference": /* @__PURE__ */ bind(FASTURIREFERENCE)
+      date: bind(FASTDATE),
+      time: bind(FASTTIME),
+      "date-time": bind(FASTDATETIME),
+      "uri-reference": bind(FASTURIREFERENCE)
     };
     DATE_TIME_SEPARATOR = /t|\s/i;
     NOT_URI_FRAGMENT = /\/|:/;
@@ -19882,21 +20797,27 @@ var init_format = __esm({
   }
 });
 
-// node_modules/@langchain/core/dist/utils/@cfworker/json-schema/src/types.js
+// node_modules/@cfworker/json-schema/dist/esm/types.js
+var OutputFormat;
 var init_types = __esm({
-  "node_modules/@langchain/core/dist/utils/@cfworker/json-schema/src/types.js"() {
+  "node_modules/@cfworker/json-schema/dist/esm/types.js"() {
+    (function(OutputFormat2) {
+      OutputFormat2[OutputFormat2["Flag"] = 1] = "Flag";
+      OutputFormat2[OutputFormat2["Basic"] = 2] = "Basic";
+      OutputFormat2[OutputFormat2["Detailed"] = 4] = "Detailed";
+    })(OutputFormat || (OutputFormat = {}));
   }
 });
 
-// node_modules/@langchain/core/dist/utils/@cfworker/json-schema/src/ucs2-length.js
+// node_modules/@cfworker/json-schema/dist/esm/ucs2-length.js
 var init_ucs2_length = __esm({
-  "node_modules/@langchain/core/dist/utils/@cfworker/json-schema/src/ucs2-length.js"() {
+  "node_modules/@cfworker/json-schema/dist/esm/ucs2-length.js"() {
   }
 });
 
-// node_modules/@langchain/core/dist/utils/@cfworker/json-schema/src/validate.js
+// node_modules/@cfworker/json-schema/dist/esm/validate.js
 var init_validate3 = __esm({
-  "node_modules/@langchain/core/dist/utils/@cfworker/json-schema/src/validate.js"() {
+  "node_modules/@cfworker/json-schema/dist/esm/validate.js"() {
     init_deep_compare_strict();
     init_dereference();
     init_format();
@@ -19905,17 +20826,17 @@ var init_validate3 = __esm({
   }
 });
 
-// node_modules/@langchain/core/dist/utils/@cfworker/json-schema/src/validator.js
+// node_modules/@cfworker/json-schema/dist/esm/validator.js
 var init_validator = __esm({
-  "node_modules/@langchain/core/dist/utils/@cfworker/json-schema/src/validator.js"() {
+  "node_modules/@cfworker/json-schema/dist/esm/validator.js"() {
     init_dereference();
     init_validate3();
   }
 });
 
-// node_modules/@langchain/core/dist/utils/@cfworker/json-schema/src/index.js
-var init_src = __esm({
-  "node_modules/@langchain/core/dist/utils/@cfworker/json-schema/src/index.js"() {
+// node_modules/@cfworker/json-schema/dist/esm/index.js
+var init_esm2 = __esm({
+  "node_modules/@cfworker/json-schema/dist/esm/index.js"() {
     init_deep_compare_strict();
     init_dereference();
     init_format();
@@ -19927,22 +20848,15 @@ var init_src = __esm({
   }
 });
 
-// node_modules/@langchain/core/dist/utils/@cfworker/json-schema/index.js
-var init_json_schema = __esm({
-  "node_modules/@langchain/core/dist/utils/@cfworker/json-schema/index.js"() {
-    init_src();
-  }
-});
-
 // node_modules/@langchain/core/dist/output_parsers/transform.js
 var BaseTransformOutputParser, BaseCumulativeTransformOutputParser;
 var init_transform = __esm({
   "node_modules/@langchain/core/dist/output_parsers/transform.js"() {
+    init_esm2();
     init_base5();
     init_base3();
     init_utils2();
     init_outputs();
-    init_json_schema();
     BaseTransformOutputParser = class extends BaseOutputParser {
       async *_transform(inputGenerator) {
         for await (const chunk of inputGenerator) {
@@ -20932,6 +21846,7 @@ var parseFString, mustacheTemplateToNodes, parseMustache, interpolateFString, in
 var init_template = __esm({
   "node_modules/@langchain/core/dist/prompts/template.js"() {
     init_mustache();
+    init_errors();
     parseFString = (template) => {
       const chars = template.split("");
       const nodes = [];
@@ -20987,15 +21902,18 @@ var init_template = __esm({
       const parsed = mustache_default.parse(template);
       return mustacheTemplateToNodes(parsed);
     };
-    interpolateFString = (template, values) => parseFString(template).reduce((res, node) => {
-      if (node.type === "variable") {
-        if (node.name in values) {
-          return res + values[node.name];
+    interpolateFString = (template, values) => {
+      return parseFString(template).reduce((res, node) => {
+        if (node.type === "variable") {
+          if (node.name in values) {
+            const stringValue = typeof values[node.name] === "string" ? values[node.name] : JSON.stringify(values[node.name]);
+            return res + stringValue;
+          }
+          throw new Error(`(f-string) Missing value for input ${node.name}`);
         }
-        throw new Error(`(f-string) Missing value for input ${node.name}`);
-      }
-      return res + node.text;
-    }, "");
+        return res + node.text;
+      }, "");
+    };
     interpolateMustache = (template, values) => {
       configureMustache();
       return mustache_default.render(template, values);
@@ -21008,7 +21926,14 @@ var init_template = __esm({
       "f-string": parseFString,
       mustache: parseMustache
     };
-    renderTemplate = (template, templateFormat, inputValues) => DEFAULT_FORMATTER_MAPPING[templateFormat](template, inputValues);
+    renderTemplate = (template, templateFormat, inputValues) => {
+      try {
+        return DEFAULT_FORMATTER_MAPPING[templateFormat](template, inputValues);
+      } catch (e3) {
+        const error = addLangChainErrorFields(e3, "INVALID_PROMPT_INPUT");
+        throw error;
+      }
+    };
     parseTemplate2 = (template, templateFormat) => DEFAULT_PARSER_MAPPING[templateFormat](template);
     checkValidTemplate = (template, templateFormat, inputVariables) => {
       if (!(templateFormat in DEFAULT_FORMATTER_MAPPING)) {
@@ -21371,6 +22296,7 @@ var init_chat2 = __esm({
     init_prompt();
     init_image();
     init_template();
+    init_errors();
     BaseMessagePromptTemplate = class extends Runnable {
       constructor() {
         super(...arguments);
@@ -21448,6 +22374,7 @@ var init_chat2 = __esm({
             `Additional message: ${e3.message}`
           ].join("\n\n"));
           error.name = "InputFormatError";
+          error.lc_error_code = e3.lc_error_code;
           throw error;
         }
         return formattedMessages;
@@ -21849,7 +22776,8 @@ From: ${imgTemplate}`);
           } else {
             const inputValues = promptMessage.inputVariables.reduce((acc, inputVariable) => {
               if (!(inputVariable in allValues) && !(isMessagesPlaceholder(promptMessage) && promptMessage.optional)) {
-                throw new Error(`Missing value for input variable \`${inputVariable.toString()}\``);
+                const error = addLangChainErrorFields(new Error(`Missing value for input variable \`${inputVariable.toString()}\``), "INVALID_PROMPT_INPUT");
+                throw error;
               }
               acc[inputVariable] = allValues[inputVariable];
               return acc;
@@ -36998,7 +37926,7 @@ var init_dist_es10 = __esm({
 
 // node_modules/@aws-sdk/middleware-user-agent/dist-es/constants.js
 var USER_AGENT, X_AMZ_USER_AGENT, SPACE, UA_NAME_SEPARATOR, UA_NAME_ESCAPE_REGEX, UA_VALUE_ESCAPE_REGEX, UA_ESCAPE_CHAR;
-var init_constants = __esm({
+var init_constants2 = __esm({
   "node_modules/@aws-sdk/middleware-user-agent/dist-es/constants.js"() {
     USER_AGENT = "user-agent";
     X_AMZ_USER_AGENT = "x-amz-user-agent";
@@ -37016,7 +37944,7 @@ var init_user_agent_middleware = __esm({
   "node_modules/@aws-sdk/middleware-user-agent/dist-es/user-agent-middleware.js"() {
     init_dist_es9();
     init_dist_es10();
-    init_constants();
+    init_constants2();
     userAgentMiddleware = (options) => (next, context) => async (args) => {
       const { request } = args;
       if (!HttpRequest3.isInstance(request))
@@ -38004,7 +38932,7 @@ var init_config4 = __esm({
 
 // node_modules/@smithy/service-error-classification/dist-es/constants.js
 var THROTTLING_ERROR_CODES, TRANSIENT_ERROR_CODES, TRANSIENT_ERROR_STATUS_CODES, NODEJS_TIMEOUT_ERROR_CODES;
-var init_constants2 = __esm({
+var init_constants3 = __esm({
   "node_modules/@smithy/service-error-classification/dist-es/constants.js"() {
     THROTTLING_ERROR_CODES = [
       "BandwidthLimitExceeded",
@@ -38032,7 +38960,7 @@ var init_constants2 = __esm({
 var isClockSkewCorrectedError, isThrottlingError, isTransientError, isServerError;
 var init_dist_es20 = __esm({
   "node_modules/@smithy/service-error-classification/dist-es/index.js"() {
-    init_constants2();
+    init_constants3();
     isClockSkewCorrectedError = (error) => error.$metadata?.clockSkewCorrected;
     isThrottlingError = (error) => error.$metadata?.httpStatusCode === 429 || THROTTLING_ERROR_CODES.includes(error.name) || error.$retryable?.throttling == true;
     isTransientError = (error) => isClockSkewCorrectedError(error) || TRANSIENT_ERROR_CODES.includes(error.name) || NODEJS_TIMEOUT_ERROR_CODES.includes(error?.code || "") || TRANSIENT_ERROR_STATUS_CODES.includes(error.$metadata?.httpStatusCode || 0);
@@ -38156,7 +39084,7 @@ var init_DefaultRateLimiter = __esm({
 
 // node_modules/@smithy/util-retry/dist-es/constants.js
 var DEFAULT_RETRY_DELAY_BASE, MAXIMUM_RETRY_DELAY, THROTTLING_RETRY_DELAY_BASE, INITIAL_RETRY_TOKENS, RETRY_COST, TIMEOUT_RETRY_COST, NO_RETRY_INCREMENT, INVOCATION_ID_HEADER, REQUEST_HEADER;
-var init_constants3 = __esm({
+var init_constants4 = __esm({
   "node_modules/@smithy/util-retry/dist-es/constants.js"() {
     DEFAULT_RETRY_DELAY_BASE = 100;
     MAXIMUM_RETRY_DELAY = 20 * 1e3;
@@ -38174,7 +39102,7 @@ var init_constants3 = __esm({
 var getDefaultRetryBackoffStrategy;
 var init_defaultRetryBackoffStrategy = __esm({
   "node_modules/@smithy/util-retry/dist-es/defaultRetryBackoffStrategy.js"() {
-    init_constants3();
+    init_constants4();
     getDefaultRetryBackoffStrategy = () => {
       let delayBase = DEFAULT_RETRY_DELAY_BASE;
       const computeNextBackoffDelay = (attempts) => {
@@ -38195,7 +39123,7 @@ var init_defaultRetryBackoffStrategy = __esm({
 var createDefaultRetryToken;
 var init_defaultRetryToken = __esm({
   "node_modules/@smithy/util-retry/dist-es/defaultRetryToken.js"() {
-    init_constants3();
+    init_constants4();
     createDefaultRetryToken = ({ retryDelay, retryCount, retryCost }) => {
       const getRetryCount = () => retryCount;
       const getRetryDelay = () => Math.min(MAXIMUM_RETRY_DELAY, retryDelay);
@@ -38214,7 +39142,7 @@ var StandardRetryStrategy;
 var init_StandardRetryStrategy = __esm({
   "node_modules/@smithy/util-retry/dist-es/StandardRetryStrategy.js"() {
     init_config4();
-    init_constants3();
+    init_constants4();
     init_defaultRetryBackoffStrategy();
     init_defaultRetryToken();
     StandardRetryStrategy = class {
@@ -38310,7 +39238,7 @@ var init_AdaptiveRetryStrategy = __esm({
 // node_modules/@smithy/util-retry/dist-es/ConfiguredRetryStrategy.js
 var init_ConfiguredRetryStrategy = __esm({
   "node_modules/@smithy/util-retry/dist-es/ConfiguredRetryStrategy.js"() {
-    init_constants3();
+    init_constants4();
     init_StandardRetryStrategy();
   }
 });
@@ -38329,7 +39257,7 @@ var init_dist_es21 = __esm({
     init_DefaultRateLimiter();
     init_StandardRetryStrategy();
     init_config4();
-    init_constants3();
+    init_constants4();
     init_types10();
   }
 });
@@ -39820,7 +40748,7 @@ var init_command2 = __esm({
 
 // node_modules/@smithy/smithy-client/dist-es/constants.js
 var SENSITIVE_STRING;
-var init_constants4 = __esm({
+var init_constants5 = __esm({
   "node_modules/@smithy/smithy-client/dist-es/constants.js"() {
     SENSITIVE_STRING = "***SensitiveInformation***";
   }
@@ -40448,7 +41376,7 @@ var init_dist_es33 = __esm({
     init_client3();
     init_collect_stream_body();
     init_command2();
-    init_constants4();
+    init_constants5();
     init_create_aggregated_client();
     init_date_utils();
     init_default_error_handler();
@@ -40814,8 +41742,8 @@ function createPaginator(ClientCtor, CommandCtor, inputTokenName, outputTokenNam
 var makePagedClientRequest, get2;
 var init_createPaginator = __esm({
   "node_modules/@smithy/core/dist-es/pagination/createPaginator.js"() {
-    makePagedClientRequest = async (CommandCtor, client, input, ...args) => {
-      return await client.send(new CommandCtor(input), ...args);
+    makePagedClientRequest = async (CommandCtor, client2, input, ...args) => {
+      return await client2.send(new CommandCtor(input), ...args);
     };
     get2 = (fromObject, path) => {
       let cursor = fromObject;
@@ -41361,7 +42289,7 @@ var init_dist_es40 = __esm({
 
 // node_modules/@aws-sdk/core/node_modules/@smithy/signature-v4/dist-es/constants.js
 var ALGORITHM_QUERY_PARAM, CREDENTIAL_QUERY_PARAM, AMZ_DATE_QUERY_PARAM, SIGNED_HEADERS_QUERY_PARAM, EXPIRES_QUERY_PARAM, SIGNATURE_QUERY_PARAM, TOKEN_QUERY_PARAM, AUTH_HEADER, AMZ_DATE_HEADER, DATE_HEADER, GENERATED_HEADERS, SIGNATURE_HEADER, SHA256_HEADER, TOKEN_HEADER, ALWAYS_UNSIGNABLE_HEADERS, PROXY_HEADER_PATTERN, SEC_HEADER_PATTERN, ALGORITHM_IDENTIFIER, EVENT_ALGORITHM_IDENTIFIER, UNSIGNED_PAYLOAD, MAX_CACHE_SIZE, KEY_TYPE_IDENTIFIER, MAX_PRESIGNED_TTL;
-var init_constants5 = __esm({
+var init_constants6 = __esm({
   "node_modules/@aws-sdk/core/node_modules/@smithy/signature-v4/dist-es/constants.js"() {
     ALGORITHM_QUERY_PARAM = "X-Amz-Algorithm";
     CREDENTIAL_QUERY_PARAM = "X-Amz-Credential";
@@ -41411,7 +42339,7 @@ var init_credentialDerivation = __esm({
   "node_modules/@aws-sdk/core/node_modules/@smithy/signature-v4/dist-es/credentialDerivation.js"() {
     init_dist_es39();
     init_dist_es40();
-    init_constants5();
+    init_constants6();
     signingKeyCache = {};
     cacheQueue = [];
     createScope = (shortDate, region, service) => `${shortDate}/${region}/${service}/${KEY_TYPE_IDENTIFIER}`;
@@ -41443,7 +42371,7 @@ var init_credentialDerivation = __esm({
 var getCanonicalHeaders;
 var init_getCanonicalHeaders = __esm({
   "node_modules/@aws-sdk/core/node_modules/@smithy/signature-v4/dist-es/getCanonicalHeaders.js"() {
-    init_constants5();
+    init_constants6();
     getCanonicalHeaders = ({ headers }, unsignableHeaders, signableHeaders) => {
       const canonical = {};
       for (const headerName of Object.keys(headers).sort()) {
@@ -41468,7 +42396,7 @@ var getCanonicalQuery;
 var init_getCanonicalQuery = __esm({
   "node_modules/@aws-sdk/core/node_modules/@smithy/signature-v4/dist-es/getCanonicalQuery.js"() {
     init_dist_es28();
-    init_constants5();
+    init_constants6();
     getCanonicalQuery = ({ query = {} }) => {
       const keys = [];
       const serialized = {};
@@ -41504,7 +42432,7 @@ var init_getPayloadHash = __esm({
     init_dist_es41();
     init_dist_es39();
     init_dist_es40();
-    init_constants5();
+    init_constants6();
     getPayloadHash = async ({ headers, body }, hashConstructor) => {
       for (const headerName of Object.keys(headers)) {
         if (headerName.toLowerCase() === SHA256_HEADER) {
@@ -41698,7 +42626,7 @@ var prepareRequest;
 var init_prepareRequest = __esm({
   "node_modules/@aws-sdk/core/node_modules/@smithy/signature-v4/dist-es/prepareRequest.js"() {
     init_dist_es38();
-    init_constants5();
+    init_constants6();
     prepareRequest = (request) => {
       request = HttpRequest7.clone(request);
       for (const headerName of Object.keys(request.headers)) {
@@ -41739,7 +42667,7 @@ var init_SignatureV4 = __esm({
     init_dist_es13();
     init_dist_es28();
     init_dist_es40();
-    init_constants5();
+    init_constants6();
     init_credentialDerivation();
     init_getCanonicalHeaders();
     init_getCanonicalQuery();
@@ -44102,7 +45030,7 @@ var init_package = __esm({
 
 // node_modules/@aws-crypto/sha256-browser/build/module/constants.js
 var SHA_256_HASH, SHA_256_HMAC_ALGO, EMPTY_DATA_SHA_256;
-var init_constants6 = __esm({
+var init_constants7 = __esm({
   "node_modules/@aws-crypto/sha256-browser/build/module/constants.js"() {
     SHA_256_HASH = { name: "SHA-256" };
     SHA_256_HMAC_ALGO = {
@@ -44167,7 +45095,7 @@ var import_util3, Sha256;
 var init_webCryptoSha256 = __esm({
   "node_modules/@aws-crypto/sha256-browser/build/module/webCryptoSha256.js"() {
     import_util3 = __toESM(require_main());
-    init_constants6();
+    init_constants7();
     init_dist_es44();
     Sha256 = /** @class */
     function() {
@@ -45180,7 +46108,7 @@ var init_runtimeConfig_shared = __esm({
 
 // node_modules/@smithy/util-defaults-mode-browser/dist-es/constants.js
 var DEFAULTS_MODE_OPTIONS;
-var init_constants7 = __esm({
+var init_constants8 = __esm({
   "node_modules/@smithy/util-defaults-mode-browser/dist-es/constants.js"() {
     DEFAULTS_MODE_OPTIONS = ["in-region", "cross-region", "mobile", "standard", "legacy"];
   }
@@ -45192,7 +46120,7 @@ var init_resolveDefaultsModeConfig = __esm({
   "node_modules/@smithy/util-defaults-mode-browser/dist-es/resolveDefaultsModeConfig.js"() {
     init_dist_es();
     import_bowser2 = __toESM(require_es5());
-    init_constants7();
+    init_constants8();
     resolveDefaultsModeConfig = ({ defaultsMode } = {}) => memoize(async () => {
       const mode = typeof defaultsMode === "function" ? await defaultsMode() : defaultsMode;
       switch (mode?.toLowerCase()) {
@@ -47190,12 +48118,12 @@ var init_localStorage = __esm({
 });
 
 // node_modules/@aws-sdk/credential-provider-cognito-identity/dist-es/fromCognitoIdentityPool.js
-function fromCognitoIdentityPool({ accountId, cache: cache2 = localStorage(), client, clientConfig, customRoleArn, identityPoolId, logins, userIdentifier = !logins || Object.keys(logins).length === 0 ? "ANONYMOUS" : void 0, logger: logger2, parentClientConfig }) {
+function fromCognitoIdentityPool({ accountId, cache: cache2 = localStorage(), client: client2, clientConfig, customRoleArn, identityPoolId, logins, userIdentifier = !logins || Object.keys(logins).length === 0 ? "ANONYMOUS" : void 0, logger: logger2, parentClientConfig }) {
   logger2?.debug("@aws-sdk/credential-provider-cognito-identity - fromCognitoIdentity");
   const cacheKey = userIdentifier ? `aws:cognito-identity-credentials:${identityPoolId}:${userIdentifier}` : void 0;
   let provider = async () => {
     const { GetIdCommand: GetIdCommand2, CognitoIdentityClient: CognitoIdentityClient2 } = await Promise.resolve().then(() => (init_loadCognitoIdentity(), loadCognitoIdentity_exports));
-    const _client = client ?? new CognitoIdentityClient2(Object.assign({}, clientConfig ?? {}, { region: clientConfig?.region ?? parentClientConfig?.region }));
+    const _client = client2 ?? new CognitoIdentityClient2(Object.assign({}, clientConfig ?? {}, { region: clientConfig?.region ?? parentClientConfig?.region }));
     let identityId = cacheKey && await cache2.getItem(cacheKey);
     if (!identityId) {
       const { IdentityId = throwOnMissingId(logger2) } = await _client.send(new GetIdCommand2({
@@ -85326,9 +86254,10 @@ var init_base8 = __esm({
         return ["stop", "timeout", "signal", "tags", "metadata", "callbacks"];
       }
       constructor({ callbacks, callbackManager, ...params }) {
+        const { cache: cache2, ...rest } = params;
         super({
           callbacks: callbacks ?? callbackManager,
-          ...params
+          ...rest
         });
         Object.defineProperty(this, "caller", {
           enumerable: true,
@@ -85348,9 +86277,9 @@ var init_base8 = __esm({
           writable: true,
           value: void 0
         });
-        if (typeof params.cache === "object") {
-          this.cache = params.cache;
-        } else if (params.cache) {
+        if (typeof cache2 === "object") {
+          this.cache = cache2;
+        } else if (cache2) {
           this.cache = InMemoryCache.global();
         } else {
           this.cache = void 0;
@@ -115112,12 +116041,21 @@ var EmbeddingModelProviders = /* @__PURE__ */ ((EmbeddingModelProviders2) => {
   EmbeddingModelProviders2["LM_STUDIO"] = "lm-studio";
   EmbeddingModelProviders2["OPENAI_FORMAT"] = "3rd party (openai-format)";
   EmbeddingModelProviders2["COPILOT_PLUS"] = "copilot-plus";
+  EmbeddingModelProviders2["COPILOT_PLUS_JINA"] = "copilot-plus-jina";
   return EmbeddingModelProviders2;
 })(EmbeddingModelProviders || {});
 var BUILTIN_EMBEDDING_MODELS = [
   {
     name: "copilot-plus-small" /* COPILOT_PLUS_SMALL */,
     provider: "copilot-plus" /* COPILOT_PLUS */,
+    enabled: true,
+    isBuiltIn: true,
+    isEmbeddingModel: true,
+    core: true
+  },
+  {
+    name: "copilot-plus-multilingual" /* COPILOT_PLUS_MULTILINGUAL */,
+    provider: "copilot-plus-jina" /* COPILOT_PLUS_JINA */,
     enabled: true,
     isBuiltIn: true,
     isEmbeddingModel: true,
@@ -116735,6 +117673,12 @@ init_manager();
 init_base4();
 init_config();
 var BaseRetriever = class extends Runnable {
+  /**
+   * Constructs a new `BaseRetriever` instance with optional configuration fields.
+   *
+   * @param fields - Optional input configuration that can include `callbacks`,
+   *                 `tags`, `metadata`, and `verbose` settings for custom retriever behavior.
+   */
   constructor(fields) {
     super(fields);
     Object.defineProperty(this, "callbacks", {
@@ -116771,9 +117715,32 @@ var BaseRetriever = class extends Runnable {
    * changes to people currently using subclassed custom retrievers.
    * Change it on next major release.
    */
+  /**
+   * Placeholder method for retrieving relevant documents based on a query.
+   *
+   * This method is intended to be implemented by subclasses and will be
+   * converted to an abstract method in the next major release. Currently, it
+   * throws an error if not implemented, ensuring that custom retrievers define
+   * the specific retrieval logic.
+   *
+   * @param _query - The query string used to search for relevant documents.
+   * @param _callbacks - (optional) Callback manager for managing callbacks
+   *                     during retrieval.
+   * @returns A promise resolving to an array of `DocumentInterface` instances relevant to the query.
+   * @throws {Error} Throws an error indicating the method is not implemented.
+   */
   _getRelevantDocuments(_query, _callbacks) {
     throw new Error("Not implemented!");
   }
+  /**
+   * Executes a retrieval operation.
+   *
+   * @param input - The query string used to search for relevant documents.
+   * @param options - (optional) Configuration options for the retrieval run,
+   *                  which may include callbacks, tags, and metadata.
+   * @returns A promise that resolves to an array of `DocumentInterface` instances
+   *          representing the most relevant documents to the query.
+   */
   async invoke(input, options) {
     return this.getRelevantDocuments(input, ensureConfig(options));
   }
@@ -120914,10 +121881,9 @@ init_outputs();
 init_base8();
 init_manager();
 init_base4();
-init_event_stream();
-init_log_stream();
 init_stream();
 init_passthrough();
+init_base();
 var BaseChatModel = class extends BaseLanguageModel {
   constructor(fields) {
     super(fields);
@@ -120968,6 +121934,7 @@ var BaseChatModel = class extends BaseLanguageModel {
       };
       const runManagers = await callbackManager_?.handleChatModelStart(this.toJSON(), [messages], runnableConfig.runId, void 0, extra, void 0, void 0, runnableConfig.runName);
       let generationChunk;
+      let llmOutput;
       try {
         for await (const chunk of this._streamResponseChunks(messages, callOptions, runManagers?.[0])) {
           if (chunk.message.id == null) {
@@ -120985,6 +121952,15 @@ var BaseChatModel = class extends BaseLanguageModel {
           } else {
             generationChunk = generationChunk.concat(chunk);
           }
+          if (isAIMessageChunk(chunk.message) && chunk.message.usage_metadata !== void 0) {
+            llmOutput = {
+              tokenUsage: {
+                promptTokens: chunk.message.usage_metadata.input_tokens,
+                completionTokens: chunk.message.usage_metadata.output_tokens,
+                totalTokens: chunk.message.usage_metadata.total_tokens
+              }
+            };
+          }
         }
       } catch (err) {
         await Promise.all((runManagers ?? []).map((runManager) => runManager?.handleLLMError(err)));
@@ -120992,14 +121968,17 @@ var BaseChatModel = class extends BaseLanguageModel {
       }
       await Promise.all((runManagers ?? []).map((runManager) => runManager?.handleLLMEnd({
         // TODO: Remove cast after figuring out inheritance
-        generations: [[generationChunk]]
+        generations: [[generationChunk]],
+        llmOutput
       })));
     }
   }
   getLsParams(options) {
+    const providerName = this.getName().startsWith("Chat") ? this.getName().replace("Chat", "") : this.getName();
     return {
       ls_model_type: "chat",
-      ls_stop: options.stop
+      ls_stop: options.stop,
+      ls_provider: providerName
     };
   }
   /** @ignore */
@@ -121018,13 +121997,12 @@ var BaseChatModel = class extends BaseLanguageModel {
     const runManagers = await callbackManager_?.handleChatModelStart(this.toJSON(), baseMessages, handledOptions.runId, void 0, extra, void 0, void 0, handledOptions.runName);
     const generations = [];
     const llmOutputs = [];
-    const hasStreamingHandler = !!runManagers?.[0].handlers.find((handler) => {
-      return isStreamEventsHandler(handler) || isLogStreamHandler(handler);
-    });
+    const hasStreamingHandler = !!runManagers?.[0].handlers.find(callbackHandlerPrefersStreaming);
     if (hasStreamingHandler && baseMessages.length === 1 && this._streamResponseChunks !== BaseChatModel.prototype._streamResponseChunks) {
       try {
         const stream = await this._streamResponseChunks(baseMessages[0], parsedOptions, runManagers?.[0]);
         let aggregated;
+        let llmOutput;
         for await (const chunk of stream) {
           if (chunk.message.id == null) {
             const runId = runManagers?.at(0)?.runId;
@@ -121036,6 +122014,15 @@ var BaseChatModel = class extends BaseLanguageModel {
           } else {
             aggregated = concat(aggregated, chunk);
           }
+          if (isAIMessageChunk(chunk.message) && chunk.message.usage_metadata !== void 0) {
+            llmOutput = {
+              tokenUsage: {
+                promptTokens: chunk.message.usage_metadata.input_tokens,
+                completionTokens: chunk.message.usage_metadata.output_tokens,
+                totalTokens: chunk.message.usage_metadata.total_tokens
+              }
+            };
+          }
         }
         if (aggregated === void 0) {
           throw new Error("Received empty response from chat model call.");
@@ -121043,7 +122030,7 @@ var BaseChatModel = class extends BaseLanguageModel {
         generations.push([aggregated]);
         await runManagers?.[0].handleLLMEnd({
           generations,
-          llmOutput: {}
+          llmOutput
         });
       } catch (e3) {
         await runManagers?.[0].handleLLMError(e3);
@@ -121277,6 +122264,9 @@ var BaseChatModel = class extends BaseLanguageModel {
     if (typeof this.bindTools !== "function") {
       throw new Error(`Chat model must implement ".bindTools()" to use withStructuredOutput.`);
     }
+    if (config?.strict) {
+      throw new Error(`"strict" mode is not supported for this model by default.`);
+    }
     const schema = outputSchema;
     const name = config?.name;
     const description = schema.description ?? "A function available to call.";
@@ -121354,7 +122344,7 @@ var BaseChatModel = class extends BaseLanguageModel {
 init_outputs2();
 
 // node_modules/@langchain/core/utils/env.js
-init_env();
+init_env3();
 
 // node_modules/@langchain/cohere/node_modules/uuid/dist/esm-browser/stringify.js
 var byteToHex4 = [];
@@ -121481,7 +122471,7 @@ function convertMessageToCohereMessage(message, toolResults) {
 function isCohereTool(tool2) {
   return "name" in tool2 && "description" in tool2 && "parameterDefinitions" in tool2;
 }
-function isToolMessage(message) {
+function isToolMessage2(message) {
   return message._getType() === "tool";
 }
 function _convertJsonSchemaToCohereTool(jsonSchema) {
@@ -121565,7 +122555,7 @@ var ChatCohere = class extends BaseChatModel {
       writable: true,
       value: true
     });
-    const token = fields?.apiKey ?? getEnvironmentVariable("COHERE_API_KEY");
+    const token = fields?.apiKey ?? getEnvironmentVariable2("COHERE_API_KEY");
     if (!token) {
       throw new Error("No API key provided for ChatCohere.");
     }
@@ -121686,7 +122676,7 @@ var ChatCohere = class extends BaseChatModel {
     const toolResults = [];
     const currChatTurnMessages = this._getCurrChatTurnMessages(messages);
     for (const message of currChatTurnMessages) {
-      if (isToolMessage(message)) {
+      if (isToolMessage2(message)) {
         const toolMessage = message;
         const previousAiMsgs = currChatTurnMessages.filter((msg) => isAIMessage(msg) && msg.tool_calls !== void 0);
         if (previousAiMsgs.length > 0) {
@@ -121708,7 +122698,7 @@ var ChatCohere = class extends BaseChatModel {
   _messageToCohereToolResults(messages, toolMessageIndex) {
     const toolResults = [];
     const toolMessage = messages[toolMessageIndex];
-    if (!isToolMessage(toolMessage)) {
+    if (!isToolMessage2(toolMessage)) {
       throw new Error("The message index does not correspond to an instance of ToolMessage");
     }
     const messagesUntilTool = messages.slice(0, toolMessageIndex);
@@ -121940,9 +122930,8 @@ init_messages2();
 init_outputs();
 init_manager();
 init_base8();
-init_event_stream();
-init_log_stream();
 init_stream();
+init_base();
 
 // node_modules/@langchain/cohere/dist/embeddings.js
 var import_cohere_ai3 = __toESM(require_cohere_ai(), 1);
@@ -122002,7 +122991,7 @@ var CohereEmbeddings = class extends Embeddings {
       writable: true,
       value: void 0
     });
-    const apiKey = fieldsWithDefaults?.apiKey || getEnvironmentVariable("COHERE_API_KEY");
+    const apiKey = fieldsWithDefaults?.apiKey || getEnvironmentVariable2("COHERE_API_KEY");
     if (!apiKey) {
       throw new Error("Cohere API key not found");
     }
@@ -123345,7 +124334,7 @@ var ChatGoogleGenerativeAI = class extends BaseChatModel {
       throw new Error("`topK` must be a positive integer");
     }
     this.stopSequences = fields?.stopSequences ?? this.stopSequences;
-    this.apiKey = fields?.apiKey ?? getEnvironmentVariable("GOOGLE_API_KEY");
+    this.apiKey = fields?.apiKey ?? getEnvironmentVariable2("GOOGLE_API_KEY");
     if (!this.apiKey) {
       throw new Error("Please set an API key for Google GenerativeAI in the environment variable GOOGLE_API_KEY or in the `apiKey` field of the ChatGoogleGenerativeAI constructor");
     }
@@ -123674,7 +124663,7 @@ var GoogleGenerativeAIEmbeddings = class extends Embeddings {
     if (this.title && this.taskType !== "RETRIEVAL_DOCUMENT") {
       throw new Error("title can only be sepcified with TaskType.RETRIEVAL_DOCUMENT");
     }
-    this.apiKey = fields?.apiKey ?? getEnvironmentVariable("GOOGLE_API_KEY");
+    this.apiKey = fields?.apiKey ?? getEnvironmentVariable2("GOOGLE_API_KEY");
     if (!this.apiKey) {
       throw new Error("Please set an API key for Google GenerativeAI in the environmentb variable GOOGLE_API_KEY or in the `apiKey` field of the GoogleGenerativeAIEmbeddings constructor");
     }
@@ -126926,9 +127915,9 @@ var APIClient = class {
   }
 };
 var AbstractPage = class {
-  constructor(client, response, body, options) {
+  constructor(client2, response, body, options) {
     _AbstractPage_client.set(this, void 0);
-    __classPrivateFieldSet6(this, _AbstractPage_client, client, "f");
+    __classPrivateFieldSet6(this, _AbstractPage_client, client2, "f");
     this.options = options;
     this.response = response;
     this.body = body;
@@ -126974,8 +127963,8 @@ var AbstractPage = class {
   }
 };
 var PagePromise = class extends APIPromise {
-  constructor(client, request, Page2) {
-    super(request, async (props) => new Page2(client, props.response, await defaultParseResponse(props), props.options));
+  constructor(client2, request, Page2) {
+    super(request, async (props) => new Page2(client2, props.response, await defaultParseResponse(props), props.options));
   }
   /**
    * Allow auto-paginating iteration on an unawaited list call, eg:
@@ -127251,8 +128240,8 @@ function isObj(obj) {
 
 // node_modules/openai/pagination.mjs
 var Page = class extends AbstractPage {
-  constructor(client, response, body, options) {
-    super(client, response, body, options);
+  constructor(client2, response, body, options) {
+    super(client2, response, body, options);
     this.data = body.data || [];
     this.object = body.object;
   }
@@ -127272,8 +128261,8 @@ var Page = class extends AbstractPage {
   }
 };
 var CursorPage = class extends AbstractPage {
-  constructor(client, response, body, options) {
-    super(client, response, body, options);
+  constructor(client2, response, body, options) {
+    super(client2, response, body, options);
     this.data = body.data || [];
   }
   getPaginatedItems() {
@@ -127306,8 +128295,8 @@ var CursorPage = class extends AbstractPage {
 
 // node_modules/openai/resource.mjs
 var APIResource = class {
-  constructor(client) {
-    this._client = client;
+  constructor(client2) {
+    this._client = client2;
   }
 };
 
@@ -127464,7 +128453,7 @@ var isAssistantMessage = (message) => {
 var isFunctionMessage = (message) => {
   return message?.role === "function";
 };
-var isToolMessage2 = (message) => {
+var isToolMessage3 = (message) => {
   return message?.role === "tool";
 };
 
@@ -127828,7 +128817,7 @@ var AbstractChatCompletionRunner = class extends EventStream {
     this.messages.push(message);
     if (emit) {
       this._emit("message", message);
-      if ((isFunctionMessage(message) || isToolMessage2(message)) && message.content) {
+      if ((isFunctionMessage(message) || isToolMessage3(message)) && message.content) {
         this._emit("functionCallResult", message.content);
       } else if (isAssistantMessage(message) && message.function_call) {
         this._emit("functionCall", message.function_call);
@@ -127907,7 +128896,7 @@ var AbstractChatCompletionRunner = class extends EventStream {
       this._emit("totalUsage", __classPrivateFieldGet8(this, _AbstractChatCompletionRunner_instances, "m", _AbstractChatCompletionRunner_calculateTotalUsage).call(this));
     }
   }
-  async _createChatCompletion(client, params, options) {
+  async _createChatCompletion(client2, params, options) {
     const signal = options?.signal;
     if (signal) {
       if (signal.aborted)
@@ -127915,17 +128904,17 @@ var AbstractChatCompletionRunner = class extends EventStream {
       signal.addEventListener("abort", () => this.controller.abort());
     }
     __classPrivateFieldGet8(this, _AbstractChatCompletionRunner_instances, "m", _AbstractChatCompletionRunner_validateParams).call(this, params);
-    const chatCompletion = await client.chat.completions.create({ ...params, stream: false }, { ...options, signal: this.controller.signal });
+    const chatCompletion = await client2.chat.completions.create({ ...params, stream: false }, { ...options, signal: this.controller.signal });
     this._connected();
     return this._addChatCompletion(parseChatCompletion(chatCompletion, params));
   }
-  async _runChatCompletion(client, params, options) {
+  async _runChatCompletion(client2, params, options) {
     for (const message of params.messages) {
       this._addMessage(message, false);
     }
-    return await this._createChatCompletion(client, params, options);
+    return await this._createChatCompletion(client2, params, options);
   }
-  async _runFunctions(client, params, options) {
+  async _runFunctions(client2, params, options) {
     const role = "function";
     const { function_call = "auto", stream, ...restParams } = params;
     const singleFunctionToCall = typeof function_call !== "string" && function_call?.name;
@@ -127943,7 +128932,7 @@ var AbstractChatCompletionRunner = class extends EventStream {
       this._addMessage(message, false);
     }
     for (let i3 = 0; i3 < maxChatCompletions; ++i3) {
-      const chatCompletion = await this._createChatCompletion(client, {
+      const chatCompletion = await this._createChatCompletion(client2, {
         ...restParams,
         function_call,
         functions,
@@ -127984,7 +128973,7 @@ var AbstractChatCompletionRunner = class extends EventStream {
         return;
     }
   }
-  async _runTools(client, params, options) {
+  async _runTools(client2, params, options) {
     const role = "tool";
     const { tool_choice = "auto", stream, ...restParams } = params;
     const singleFunctionToCall = typeof tool_choice !== "string" && tool_choice?.function?.name;
@@ -128027,7 +129016,7 @@ var AbstractChatCompletionRunner = class extends EventStream {
       this._addMessage(message, false);
     }
     for (let i3 = 0; i3 < maxChatCompletions; ++i3) {
-      const chatCompletion = await this._createChatCompletion(client, {
+      const chatCompletion = await this._createChatCompletion(client2, {
         ...restParams,
         tool_choice,
         tools,
@@ -128111,7 +129100,7 @@ _AbstractChatCompletionRunner_instances = /* @__PURE__ */ new WeakSet(), _Abstra
     if (isFunctionMessage(message) && message.content != null) {
       return message.content;
     }
-    if (isToolMessage2(message) && message.content != null && typeof message.content === "string" && this.messages.some((x2) => x2.role === "assistant" && x2.tool_calls?.some((y2) => y2.type === "function" && y2.id === message.tool_call_id))) {
+    if (isToolMessage3(message) && message.content != null && typeof message.content === "string" && this.messages.some((x2) => x2.role === "assistant" && x2.tool_calls?.some((y2) => y2.type === "function" && y2.id === message.tool_call_id))) {
       return message.content;
     }
   }
@@ -128141,22 +129130,22 @@ _AbstractChatCompletionRunner_instances = /* @__PURE__ */ new WeakSet(), _Abstra
 // node_modules/openai/lib/ChatCompletionRunner.mjs
 var ChatCompletionRunner = class extends AbstractChatCompletionRunner {
   /** @deprecated - please use `runTools` instead. */
-  static runFunctions(client, params, options) {
+  static runFunctions(client2, params, options) {
     const runner = new ChatCompletionRunner();
     const opts = {
       ...options,
       headers: { ...options?.headers, "X-Stainless-Helper-Method": "runFunctions" }
     };
-    runner._run(() => runner._runFunctions(client, params, opts));
+    runner._run(() => runner._runFunctions(client2, params, opts));
     return runner;
   }
-  static runTools(client, params, options) {
+  static runTools(client2, params, options) {
     const runner = new ChatCompletionRunner();
     const opts = {
       ...options,
       headers: { ...options?.headers, "X-Stainless-Helper-Method": "runTools" }
     };
-    runner._run(() => runner._runTools(client, params, opts));
+    runner._run(() => runner._runTools(client2, params, opts));
     return runner;
   }
   _addMessage(message, emit = true) {
@@ -128433,12 +129422,12 @@ var ChatCompletionStream = class extends AbstractChatCompletionRunner {
     runner._run(() => runner._fromReadableStream(stream));
     return runner;
   }
-  static createChatCompletion(client, params, options) {
+  static createChatCompletion(client2, params, options) {
     const runner = new ChatCompletionStream(params);
-    runner._run(() => runner._runChatCompletion(client, { ...params, stream: true }, { ...options, headers: { ...options?.headers, "X-Stainless-Helper-Method": "stream" } }));
+    runner._run(() => runner._runChatCompletion(client2, { ...params, stream: true }, { ...options, headers: { ...options?.headers, "X-Stainless-Helper-Method": "stream" } }));
     return runner;
   }
-  async _createChatCompletion(client, params, options) {
+  async _createChatCompletion(client2, params, options) {
     super._createChatCompletion;
     const signal = options?.signal;
     if (signal) {
@@ -128447,7 +129436,7 @@ var ChatCompletionStream = class extends AbstractChatCompletionRunner {
       signal.addEventListener("abort", () => this.controller.abort());
     }
     __classPrivateFieldGet9(this, _ChatCompletionStream_instances, "m", _ChatCompletionStream_beginRequest).call(this);
-    const stream = await client.chat.completions.create({ ...params, stream: true }, { ...options, signal: this.controller.signal });
+    const stream = await client2.chat.completions.create({ ...params, stream: true }, { ...options, signal: this.controller.signal });
     this._connected();
     for await (const chunk of stream) {
       __classPrivateFieldGet9(this, _ChatCompletionStream_instances, "m", _ChatCompletionStream_addChunk).call(this, chunk);
@@ -128883,16 +129872,16 @@ var ChatCompletionStreamingRunner = class extends ChatCompletionStream {
     return runner;
   }
   /** @deprecated - please use `runTools` instead. */
-  static runFunctions(client, params, options) {
+  static runFunctions(client2, params, options) {
     const runner = new ChatCompletionStreamingRunner(null);
     const opts = {
       ...options,
       headers: { ...options?.headers, "X-Stainless-Helper-Method": "runFunctions" }
     };
-    runner._run(() => runner._runFunctions(client, params, opts));
+    runner._run(() => runner._runFunctions(client2, params, opts));
     return runner;
   }
-  static runTools(client, params, options) {
+  static runTools(client2, params, options) {
     const runner = new ChatCompletionStreamingRunner(
       // @ts-expect-error TODO these types are incompatible
       params
@@ -128901,7 +129890,7 @@ var ChatCompletionStreamingRunner = class extends ChatCompletionStream {
       ...options,
       headers: { ...options?.headers, "X-Stainless-Helper-Method": "runTools" }
     };
-    runner._run(() => runner._runTools(client, params, opts));
+    runner._run(() => runner._runTools(client2, params, opts));
     return runner;
   }
 };
@@ -130031,12 +131020,12 @@ var FileBatches = class extends APIResource {
     }
     const configuredConcurrency = options?.maxConcurrency ?? 5;
     const concurrencyLimit = Math.min(configuredConcurrency, files.length);
-    const client = this._client;
+    const client2 = this._client;
     const fileIterator = files.values();
     const allFileIds = [...fileIds];
     async function processFiles(iterator) {
       for (let item of iterator) {
-        const fileObj = await client.files.create({ file: item, purpose: "assistants" }, options);
+        const fileObj = await client2.files.create({ file: item, purpose: "assistants" }, options);
         allFileIds.push(fileObj.id);
       }
     }
@@ -131339,14 +132328,14 @@ var addPattern2 = (schema, regex2, message, refs) => {
       }
     }
     schema.allOf.push({
-      pattern: processRegExp2(regex2, refs),
+      pattern: processRegExp(regex2, refs),
       ...message && refs.errorMessages && { errorMessage: { pattern: message } }
     });
   } else {
-    setResponseValueAndErrors2(schema, "pattern", processRegExp2(regex2, refs), message, refs);
+    setResponseValueAndErrors2(schema, "pattern", processRegExp(regex2, refs), message, refs);
   }
 };
-var processRegExp2 = (regexOrFunction, refs) => {
+var processRegExp = (regexOrFunction, refs) => {
   const regex2 = typeof regexOrFunction === "function" ? regexOrFunction() : regexOrFunction;
   if (!refs.applyRegexFlags || !regex2.flags)
     return regex2.source;
@@ -132074,7 +133063,7 @@ function getEndpoint(config) {
 init_esm();
 
 // node_modules/@langchain/openai/dist/utils/errors.js
-function addLangChainErrorFields(error, lc_error_code) {
+function addLangChainErrorFields2(error, lc_error_code) {
   error.lc_error_code = lc_error_code;
   error.message = `${error.message}
 
@@ -132093,13 +133082,13 @@ function wrapOpenAIClientError(e3) {
     error = new Error(e3.message);
     error.name = "AbortError";
   } else if (e3.status === 400 && e3.message.includes("tool_calls")) {
-    error = addLangChainErrorFields(e3, "INVALID_TOOL_RESULTS");
+    error = addLangChainErrorFields2(e3, "INVALID_TOOL_RESULTS");
   } else if (e3.status === 401) {
-    error = addLangChainErrorFields(e3, "MODEL_AUTHENTICATION");
+    error = addLangChainErrorFields2(e3, "MODEL_AUTHENTICATION");
   } else if (e3.status === 429) {
-    error = addLangChainErrorFields(e3, "MODEL_RATE_LIMIT");
+    error = addLangChainErrorFields2(e3, "MODEL_RATE_LIMIT");
   } else if (e3.status === 404) {
-    error = addLangChainErrorFields(e3, "MODEL_NOT_FOUND");
+    error = addLangChainErrorFields2(e3, "MODEL_NOT_FOUND");
   } else {
     error = e3;
   }
@@ -132670,19 +133659,19 @@ var ChatOpenAI = class extends BaseChatModel {
       writable: true,
       value: void 0
     });
-    this.openAIApiKey = fields?.apiKey ?? fields?.openAIApiKey ?? fields?.configuration?.apiKey ?? getEnvironmentVariable("OPENAI_API_KEY");
+    this.openAIApiKey = fields?.apiKey ?? fields?.openAIApiKey ?? fields?.configuration?.apiKey ?? getEnvironmentVariable2("OPENAI_API_KEY");
     this.apiKey = this.openAIApiKey;
-    this.azureOpenAIApiKey = fields?.azureOpenAIApiKey ?? getEnvironmentVariable("AZURE_OPENAI_API_KEY");
+    this.azureOpenAIApiKey = fields?.azureOpenAIApiKey ?? getEnvironmentVariable2("AZURE_OPENAI_API_KEY");
     this.azureADTokenProvider = fields?.azureADTokenProvider ?? void 0;
     if (!this.azureOpenAIApiKey && !this.apiKey && !this.azureADTokenProvider) {
       throw new Error("OpenAI or Azure OpenAI API key or Token Provider not found");
     }
-    this.azureOpenAIApiInstanceName = fields?.azureOpenAIApiInstanceName ?? getEnvironmentVariable("AZURE_OPENAI_API_INSTANCE_NAME");
-    this.azureOpenAIApiDeploymentName = fields?.azureOpenAIApiDeploymentName ?? getEnvironmentVariable("AZURE_OPENAI_API_DEPLOYMENT_NAME");
-    this.azureOpenAIApiVersion = fields?.azureOpenAIApiVersion ?? getEnvironmentVariable("AZURE_OPENAI_API_VERSION");
-    this.azureOpenAIBasePath = fields?.azureOpenAIBasePath ?? getEnvironmentVariable("AZURE_OPENAI_BASE_PATH");
-    this.organization = fields?.configuration?.organization ?? getEnvironmentVariable("OPENAI_ORGANIZATION");
-    this.azureOpenAIEndpoint = fields?.azureOpenAIEndpoint ?? getEnvironmentVariable("AZURE_OPENAI_ENDPOINT");
+    this.azureOpenAIApiInstanceName = fields?.azureOpenAIApiInstanceName ?? getEnvironmentVariable2("AZURE_OPENAI_API_INSTANCE_NAME");
+    this.azureOpenAIApiDeploymentName = fields?.azureOpenAIApiDeploymentName ?? getEnvironmentVariable2("AZURE_OPENAI_API_DEPLOYMENT_NAME");
+    this.azureOpenAIApiVersion = fields?.azureOpenAIApiVersion ?? getEnvironmentVariable2("AZURE_OPENAI_API_VERSION");
+    this.azureOpenAIBasePath = fields?.azureOpenAIBasePath ?? getEnvironmentVariable2("AZURE_OPENAI_BASE_PATH");
+    this.organization = fields?.configuration?.organization ?? getEnvironmentVariable2("OPENAI_ORGANIZATION");
+    this.azureOpenAIEndpoint = fields?.azureOpenAIEndpoint ?? getEnvironmentVariable2("AZURE_OPENAI_ENDPOINT");
     this.modelName = fields?.model ?? fields?.modelName ?? this.model;
     this.model = this.modelName;
     this.modelKwargs = fields?.modelKwargs ?? {};
@@ -133451,17 +134440,17 @@ var OpenAIEmbeddings = class extends Embeddings {
       writable: true,
       value: void 0
     });
-    let apiKey = fieldsWithDefaults?.apiKey ?? fieldsWithDefaults?.openAIApiKey ?? getEnvironmentVariable("OPENAI_API_KEY");
-    const azureApiKey = fieldsWithDefaults?.azureOpenAIApiKey ?? getEnvironmentVariable("AZURE_OPENAI_API_KEY");
+    let apiKey = fieldsWithDefaults?.apiKey ?? fieldsWithDefaults?.openAIApiKey ?? getEnvironmentVariable2("OPENAI_API_KEY");
+    const azureApiKey = fieldsWithDefaults?.azureOpenAIApiKey ?? getEnvironmentVariable2("AZURE_OPENAI_API_KEY");
     this.azureADTokenProvider = fields?.azureADTokenProvider ?? void 0;
     if (!azureApiKey && !apiKey && !this.azureADTokenProvider) {
       throw new Error("OpenAI or Azure OpenAI API key or Token Provider not found");
     }
-    const azureApiInstanceName = fieldsWithDefaults?.azureOpenAIApiInstanceName ?? getEnvironmentVariable("AZURE_OPENAI_API_INSTANCE_NAME");
-    const azureApiDeploymentName = (fieldsWithDefaults?.azureOpenAIApiEmbeddingsDeploymentName || fieldsWithDefaults?.azureOpenAIApiDeploymentName) ?? (getEnvironmentVariable("AZURE_OPENAI_API_EMBEDDINGS_DEPLOYMENT_NAME") || getEnvironmentVariable("AZURE_OPENAI_API_DEPLOYMENT_NAME"));
-    const azureApiVersion = fieldsWithDefaults?.azureOpenAIApiVersion ?? getEnvironmentVariable("AZURE_OPENAI_API_VERSION");
-    this.azureOpenAIBasePath = fieldsWithDefaults?.azureOpenAIBasePath ?? getEnvironmentVariable("AZURE_OPENAI_BASE_PATH");
-    this.organization = fieldsWithDefaults?.configuration?.organization ?? getEnvironmentVariable("OPENAI_ORGANIZATION");
+    const azureApiInstanceName = fieldsWithDefaults?.azureOpenAIApiInstanceName ?? getEnvironmentVariable2("AZURE_OPENAI_API_INSTANCE_NAME");
+    const azureApiDeploymentName = (fieldsWithDefaults?.azureOpenAIApiEmbeddingsDeploymentName || fieldsWithDefaults?.azureOpenAIApiDeploymentName) ?? (getEnvironmentVariable2("AZURE_OPENAI_API_EMBEDDINGS_DEPLOYMENT_NAME") || getEnvironmentVariable2("AZURE_OPENAI_API_DEPLOYMENT_NAME"));
+    const azureApiVersion = fieldsWithDefaults?.azureOpenAIApiVersion ?? getEnvironmentVariable2("AZURE_OPENAI_API_VERSION");
+    this.azureOpenAIBasePath = fieldsWithDefaults?.azureOpenAIBasePath ?? getEnvironmentVariable2("AZURE_OPENAI_BASE_PATH");
+    this.organization = fieldsWithDefaults?.configuration?.organization ?? getEnvironmentVariable2("OPENAI_ORGANIZATION");
     this.modelName = fieldsWithDefaults?.model ?? fieldsWithDefaults?.modelName ?? this.model;
     this.model = this.modelName;
     this.batchSize = fieldsWithDefaults?.batchSize ?? (azureApiKey ? 1 : this.batchSize);
@@ -133637,20 +134626,22 @@ var StructuredTool = class extends BaseLangChain {
   async invoke(input, config) {
     let tool_call_id;
     let toolInput;
+    let enrichedConfig = ensureConfig(config);
     if (_isToolCall(input)) {
       tool_call_id = input.id;
       toolInput = input.args;
+      enrichedConfig = {
+        ...enrichedConfig,
+        toolCall: input,
+        configurable: {
+          ...enrichedConfig.configurable,
+          tool_call_id
+        }
+      };
     } else {
       toolInput = input;
     }
-    const ensuredConfig = ensureConfig(config);
-    return this.call(toolInput, {
-      ...ensuredConfig,
-      configurable: {
-        ...ensuredConfig.configurable,
-        tool_call_id
-      }
-    });
+    return this.call(toolInput, enrichedConfig);
   }
   /**
    * @deprecated Use .invoke() instead. Will be removed in 0.3.0.
@@ -133676,7 +134667,7 @@ Details: ${e3.message}`;
       throw new ToolInputParsingException(message, JSON.stringify(arg));
     }
     const config = parseCallbackConfigArg(configArg);
-    const callbackManager_ = await CallbackManager.configure(config.callbacks, this.callbacks, config.tags || tags, this.tags, config.metadata, this.metadata, { verbose: this.verbose });
+    const callbackManager_ = CallbackManager.configure(config.callbacks, this.callbacks, config.tags || tags, this.tags, config.metadata, this.metadata, { verbose: this.verbose });
     const runManager = await callbackManager_?.handleToolStart(this.toJSON(), typeof parsed === "string" ? parsed : JSON.stringify(parsed), config.runId, void 0, void 0, void 0, config.runName);
     delete config.runId;
     let result;
@@ -133834,9 +134825,20 @@ function tool(func, fields) {
     return new DynamicTool({
       ...fields,
       description: fields.description ?? fields.schema?.description ?? `${fields.name} tool`,
-      // TS doesn't restrict the type here based on the guard above
-      // eslint-disable-next-line @typescript-eslint/no-explicit-any
-      func
+      func: async (input, runManager, config) => {
+        return new Promise((resolve, reject) => {
+          const childConfig = patchConfig(config, {
+            callbacks: runManager?.getChild()
+          });
+          void AsyncLocalStorageProviderSingleton2.runWithConfig(pickRunnableConfigKeys(childConfig), async () => {
+            try {
+              resolve(func(input, childConfig));
+            } catch (e3) {
+              reject(e3);
+            }
+          });
+        });
+      }
     });
   }
   const description = fields.description ?? fields.schema.description ?? `${fields.name} tool`;
@@ -133851,7 +134853,7 @@ function tool(func, fields) {
         const childConfig = patchConfig(config, {
           callbacks: runManager?.getChild()
         });
-        void AsyncLocalStorageProviderSingleton2.runWithConfig(childConfig, async () => {
+        void AsyncLocalStorageProviderSingleton2.runWithConfig(pickRunnableConfigKeys(childConfig), async () => {
           try {
             resolve(func(input, childConfig));
           } catch (e3) {
@@ -133864,7 +134866,7 @@ function tool(func, fields) {
 }
 function _formatToolOutput(params) {
   const { content, artifact, toolCallId } = params;
-  if (toolCallId) {
+  if (toolCallId && !isDirectToolOutput(content)) {
     if (typeof content === "string" || Array.isArray(content) && content.every((item) => typeof item === "object")) {
       return new ToolMessage({
         content,
@@ -133963,8 +134965,8 @@ var DallEAPIWrapper = class extends Tool {
       writable: true,
       value: void 0
     });
-    const openAIApiKey = fields?.apiKey ?? fields?.openAIApiKey ?? getEnvironmentVariable("OPENAI_API_KEY");
-    const organization = fields?.organization ?? getEnvironmentVariable("OPENAI_ORGANIZATION");
+    const openAIApiKey = fields?.apiKey ?? fields?.openAIApiKey ?? getEnvironmentVariable2("OPENAI_API_KEY");
+    const organization = fields?.organization ?? getEnvironmentVariable2("OPENAI_ORGANIZATION");
     const clientConfig = {
       apiKey: openAIApiKey,
       organization,
@@ -134054,8 +135056,140 @@ Object.defineProperty(DallEAPIWrapper, "toolName", {
 
 // src/LLMProviders/embeddingManager.ts
 var import_obsidian5 = require("obsidian");
+
+// node_modules/@langchain/community/dist/embeddings/jina.js
+var JinaEmbeddings = class extends Embeddings {
+  constructor(fields) {
+    const fieldsWithDefaults = { maxConcurrency: 2, ...fields };
+    super(fieldsWithDefaults);
+    Object.defineProperty(this, "model", {
+      enumerable: true,
+      configurable: true,
+      writable: true,
+      value: "jina-clip-v2"
+    });
+    Object.defineProperty(this, "batchSize", {
+      enumerable: true,
+      configurable: true,
+      writable: true,
+      value: 24
+    });
+    Object.defineProperty(this, "baseUrl", {
+      enumerable: true,
+      configurable: true,
+      writable: true,
+      value: "https://api.jina.ai/v1/embeddings"
+    });
+    Object.defineProperty(this, "stripNewLines", {
+      enumerable: true,
+      configurable: true,
+      writable: true,
+      value: true
+    });
+    Object.defineProperty(this, "dimensions", {
+      enumerable: true,
+      configurable: true,
+      writable: true,
+      value: 1024
+    });
+    Object.defineProperty(this, "apiKey", {
+      enumerable: true,
+      configurable: true,
+      writable: true,
+      value: void 0
+    });
+    Object.defineProperty(this, "normalized", {
+      enumerable: true,
+      configurable: true,
+      writable: true,
+      value: true
+    });
+    const apiKey = fieldsWithDefaults?.apiKey || getEnvironmentVariable2("JINA_API_KEY") || getEnvironmentVariable2("JINA_AUTH_TOKEN");
+    if (!apiKey)
+      throw new Error("Jina API key not found");
+    this.apiKey = apiKey;
+    this.model = fieldsWithDefaults?.model ?? this.model;
+    this.dimensions = fieldsWithDefaults?.dimensions ?? this.dimensions;
+    this.batchSize = fieldsWithDefaults?.batchSize ?? this.batchSize;
+    this.stripNewLines = fieldsWithDefaults?.stripNewLines ?? this.stripNewLines;
+    this.normalized = fieldsWithDefaults?.normalized ?? this.normalized;
+  }
+  doStripNewLines(input) {
+    if (this.stripNewLines) {
+      return input.map((i3) => {
+        if (typeof i3 === "string") {
+          return i3.replace(/\n/g, " ");
+        }
+        if (i3.text) {
+          return { text: i3.text.replace(/\n/g, " ") };
+        }
+        return i3;
+      });
+    }
+    return input;
+  }
+  async embedDocuments(input) {
+    const batches = chunkArray(this.doStripNewLines(input), this.batchSize);
+    const batchRequests = batches.map((batch) => {
+      const params = this.getParams(batch);
+      return this.embeddingWithRetry(params);
+    });
+    const batchResponses = await Promise.all(batchRequests);
+    const embeddings = [];
+    for (let i3 = 0; i3 < batchResponses.length; i3 += 1) {
+      const batch = batches[i3];
+      const batchResponse = batchResponses[i3] || [];
+      for (let j3 = 0; j3 < batch.length; j3 += 1) {
+        embeddings.push(batchResponse[j3]);
+      }
+    }
+    return embeddings;
+  }
+  async embedQuery(input) {
+    const params = this.getParams(this.doStripNewLines([input]), true);
+    const embeddings = await this.embeddingWithRetry(params) || [[]];
+    return embeddings[0];
+  }
+  getParams(input, query) {
+    return {
+      model: this.model,
+      input,
+      dimensions: this.dimensions,
+      task: query ? "retrieval.query" : "retrieval.passage",
+      normalized: this.normalized
+    };
+  }
+  async embeddingWithRetry(body) {
+    const response = await fetch(this.baseUrl, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Authorization: `Bearer ${this.apiKey}`
+      },
+      body: JSON.stringify(body)
+    });
+    const embeddingData = await response.json();
+    if ("detail" in embeddingData && embeddingData.detail) {
+      throw new Error(`${embeddingData.detail}`);
+    }
+    return embeddingData.data.map(({ embedding }) => embedding);
+  }
+};
+
+// src/LLMProviders/CustomJinaEmbeddings.ts
+var CustomJinaEmbeddings = class extends JinaEmbeddings {
+  constructor(fields) {
+    super(fields);
+    if (fields?.baseUrl) {
+      this.baseUrl = fields.baseUrl;
+    }
+  }
+};
+
+// src/LLMProviders/embeddingManager.ts
 var EMBEDDING_PROVIDER_CONSTRUCTORS = {
   ["copilot-plus" /* COPILOT_PLUS */]: OpenAIEmbeddings,
+  ["copilot-plus-jina" /* COPILOT_PLUS_JINA */]: CustomJinaEmbeddings,
   ["openai" /* OPENAI */]: OpenAIEmbeddings,
   ["cohereai" /* COHEREAI */]: CohereEmbeddings,
   ["google" /* GOOGLE */]: GoogleGenerativeAIEmbeddings,
@@ -134068,6 +135202,7 @@ var EmbeddingManager = class {
   constructor() {
     this.providerApiKeyMap = {
       ["copilot-plus" /* COPILOT_PLUS */]: () => getSettings().plusLicenseKey,
+      ["copilot-plus-jina" /* COPILOT_PLUS_JINA */]: () => getSettings().plusLicenseKey,
       ["openai" /* OPENAI */]: () => getSettings().openAIApiKey,
       ["cohereai" /* COHEREAI */]: () => getSettings().cohereApiKey,
       ["google" /* GOOGLE */]: () => getSettings().googleApiKey,
@@ -134176,6 +135311,17 @@ var EmbeddingManager = class {
         timeout: 1e4,
         configuration: {
           baseURL: BREVILABS_API_BASE_URL,
+          fetch: customModel.enableCors ? safeFetch : void 0
+        }
+      },
+      ["copilot-plus-jina" /* COPILOT_PLUS_JINA */]: {
+        model: modelName,
+        apiKey: getDecryptedKey(settings.plusLicenseKey),
+        timeout: 1e4,
+        batchSize: 128,
+        dimensions: 512,
+        baseUrl: BREVILABS_API_BASE_URL + "/embeddings",
+        configuration: {
           fetch: customModel.enableCors ? safeFetch : void 0
         }
       },
@@ -135051,7 +136197,9 @@ var DBOperations = class {
     if (!docs || docs.length === 0) {
       return false;
     }
-    return docs.some((doc) => doc.document.embedding && doc.document.embedding.length > 0);
+    return docs.every((doc) => {
+      return doc?.document?.embedding && Array.isArray(doc.document.embedding) && doc.document.embedding.length > 0;
+    });
   }
   async getDocsJsonByPaths(paths) {
     if (!this.oramaDb) {
@@ -137184,9 +138332,9 @@ var APIClient2 = class {
   }
 };
 var AbstractPage2 = class {
-  constructor(client, response, body, options) {
+  constructor(client2, response, body, options) {
     _AbstractPage_client2.set(this, void 0);
-    __classPrivateFieldSet10(this, _AbstractPage_client2, client, "f");
+    __classPrivateFieldSet10(this, _AbstractPage_client2, client2, "f");
     this.options = options;
     this.response = response;
     this.body = body;
@@ -137232,8 +138380,8 @@ var AbstractPage2 = class {
   }
 };
 var PagePromise2 = class extends APIPromise2 {
-  constructor(client, request, Page2) {
-    super(request, async (props) => new Page2(client, props.response, await defaultParseResponse2(props), props.options));
+  constructor(client2, request, Page2) {
+    super(request, async (props) => new Page2(client2, props.response, await defaultParseResponse2(props), props.options));
   }
   /**
    * Allow auto-paginating iteration on an unawaited list call, eg:
@@ -137574,8 +138722,8 @@ var InternalServerError2 = class extends APIError2 {
 
 // node_modules/@anthropic-ai/sdk/resource.mjs
 var APIResource2 = class {
-  constructor(client) {
-    this._client = client;
+  constructor(client2) {
+    this._client = client2;
   }
 };
 
@@ -139550,7 +140698,7 @@ var ChatAnthropicMessages = class extends BaseChatModel {
       writable: true,
       value: void 0
     });
-    this.anthropicApiKey = fields?.apiKey ?? fields?.anthropicApiKey ?? getEnvironmentVariable("ANTHROPIC_API_KEY");
+    this.anthropicApiKey = fields?.apiKey ?? fields?.anthropicApiKey ?? getEnvironmentVariable2("ANTHROPIC_API_KEY");
     if (!this.anthropicApiKey && !fields?.createClient) {
       throw new Error("Anthropic API key not found");
     }
@@ -140914,9 +142062,9 @@ var APIClient3 = class {
   }
 };
 var AbstractPage3 = class {
-  constructor(client, response, body, options) {
+  constructor(client2, response, body, options) {
     _AbstractPage_client3.set(this, void 0);
-    __classPrivateFieldSet13(this, _AbstractPage_client3, client, "f");
+    __classPrivateFieldSet13(this, _AbstractPage_client3, client2, "f");
     this.options = options;
     this.response = response;
     this.body = body;
@@ -140962,8 +142110,8 @@ var AbstractPage3 = class {
   }
 };
 var PagePromise3 = class extends APIPromise3 {
-  constructor(client, request, Page2) {
-    super(request, async (props) => new Page2(client, props.response, await defaultParseResponse3(props), props.options));
+  constructor(client2, request, Page2) {
+    super(request, async (props) => new Page2(client2, props.response, await defaultParseResponse3(props), props.options));
   }
   /**
    * Allow auto-paginating iteration on an unawaited list call, eg:
@@ -141184,8 +142332,8 @@ var isRunningInBrowser3 = () => {
 
 // node_modules/groq-sdk/resource.mjs
 var APIResource3 = class {
-  constructor(client) {
-    this._client = client;
+  constructor(client2) {
+    this._client = client2;
   }
 };
 
@@ -141597,7 +142745,7 @@ var ChatGroq = class extends BaseChatModel {
       writable: true,
       value: true
     });
-    const apiKey = fields?.apiKey || getEnvironmentVariable("GROQ_API_KEY");
+    const apiKey = fields?.apiKey || getEnvironmentVariable2("GROQ_API_KEY");
     if (!apiKey) {
       throw new Error(`Groq API key not found. Please set the GROQ_API_KEY environment variable or provide the key into "apiKey"`);
     }
@@ -152483,7 +153631,7 @@ var getInputValue = (inputValues, inputKey) => {
 };
 var getOutputValue = (outputValues, outputKey) => {
   const value = getValue(outputValues, outputKey);
-  if (!value) {
+  if (!value && value !== "") {
     const keys = Object.keys(outputValues);
     throw new Error(`output values have ${keys.length} keys, you must specify an output key or pass only 1 key as output`);
   }
@@ -164785,7 +165933,7 @@ var CollapsibleContent2 = CollapsibleContent;
 
 // src/noteUtils.ts
 var import_obsidian25 = require("obsidian");
-function getLinkedNotes(file) {
+function getLinkedNotes(file, limit2 = 20) {
   const fileCache = app.metadataCache.getFileCache(file);
   const linkedNotes = [];
   if (fileCache?.links) {
@@ -164793,20 +165941,26 @@ function getLinkedNotes(file) {
       const resolvedFile = app.metadataCache.getFirstLinkpathDest(link.link, file.path);
       if (resolvedFile) {
         linkedNotes.push(resolvedFile);
+        if (linkedNotes.length >= limit2) {
+          break;
+        }
       }
     }
   }
-  if (fileCache?.embeds) {
+  if (fileCache?.embeds && linkedNotes.length < limit2) {
     for (const embed of fileCache.embeds) {
       const resolvedFile = app.metadataCache.getFirstLinkpathDest(embed.link, file.path);
       if (resolvedFile) {
         linkedNotes.push(resolvedFile);
+        if (linkedNotes.length >= limit2) {
+          break;
+        }
       }
     }
   }
   return [...new Set(linkedNotes)];
 }
-function getBacklinkedNotes(file) {
+function getBacklinkedNotes(file, limit2 = 20) {
   const backlinkedNotes = [];
   const backlinks = app.metadataCache.getBacklinksForFile(file);
   if (backlinks?.data) {
@@ -164814,6 +165968,9 @@ function getBacklinkedNotes(file) {
       const file2 = app.vault.getAbstractFileByPath(path);
       if (file2 instanceof import_obsidian25.TFile) {
         backlinkedNotes.push(file2);
+        if (backlinkedNotes.length >= limit2) {
+          break;
+        }
       }
     }
   }
