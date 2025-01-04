@@ -63,6 +63,7 @@ Don't necessarily need to start in full guard also any open guard can be used to
 
 ``` mermaid
 flowchart LR
+	Closed[Closed Full Guard] 
     A[Full Guard] 
     B[De La Riva] 
     C[Spider]
@@ -100,14 +101,14 @@ flowchart LR
     B --> G
     B <-.-> L
     B --> M
-    B --> M
+    B --> N
     B --> O
     B --> R
-    
     C --> D
     C --> E
     C --> G
 	D --> F
+	D --> N
 	D --> Q
 	D --> R
 	F --> N
@@ -117,6 +118,7 @@ flowchart LR
 	H --> R
 	H <-.-> Z
 	I <-.-> J
+	J --> N
 	L <-.-> C
 	L --> F
 	I <-.-> K
@@ -125,6 +127,8 @@ flowchart LR
 	R --> 2
 	R --> 3 
 	R --> 4 
+	
+style Closed fill:teal,stroke:black,stroke-width:4px,shadow:shadow
 
 style A fill:green,stroke:black,stroke-width:4px,shadow:shadow
 

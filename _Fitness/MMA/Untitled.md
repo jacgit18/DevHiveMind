@@ -25,6 +25,7 @@ flowchart LR
 	3[Omoplata]
 	4[Armbar]
 
+	Closed <-.-> A
     A <-.-> B
     A <-.-> C
     A <-.-> D
@@ -63,6 +64,8 @@ flowchart LR
 	R --> 2
 	R --> 3 
 	R --> 4 
+
+style Closed fill:teal,stroke:black,stroke-width:4px,shadow:shadow
 
 style A fill:green,stroke:black,stroke-width:4px,shadow:shadow
 
