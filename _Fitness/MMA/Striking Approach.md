@@ -34,13 +34,17 @@ Use the **UFC game** to simulate and experiment with techniques and strategies.
 ### **1. Be Playful and Adaptive**
 - Treat sparring as a game; keep it light and exploratory.
 - Imagine the opponent as a mirror: move in the opposite direction of their movement, emulating **lateral inversion** which the process of your movement in a mirror orienting inversely.
+- Move forward while also using lateral movement using and feinting with level changes making the other person react and creating openings.
 - When exiting or entering feel the void of space with something don't be a good guess and bring a gift when you come and leave showing manners giving some hands as you exit.
+- Vary entries and exits, mix up how you engage and disengage to avoid becoming predictable and to exploit different angles.
 - Push pace while being defensively responsible also using boxing against Muay Thai heavy attacker. 
+- Control hand placement, keep your hand extended to parry, disrupt, or occupy your opponent’s hand. 
+- Try probing jab using it to gauge distance, timing, and breaking their base or flow.
 
 **Breathing in Range**
 - Exhale sharply when engaging to stay relaxed and generate power.
 - Exhale on impact when you get hit and as you tighten the part of your body being hit but not head if your rolling away from impact.
-- Inhale out of Range
+- Inhale out of Range.
 
 ### **2. Defense & Punch Timing**
 - **Defensive Hand Positioning**:

@@ -11,6 +11,7 @@
 - [ ] look into leveraging a non-compete to get paid
 - [ ] Put everything in Gigi name look into the pros and cons of this or Trust
 - [ ] Look into freedom care to get paid for looking after your old family member
+- [ ] Update roth automated transfer each year to current contribution year for each account.
 
 ### Get: 
 - [ ] stockbroker^[Pay for a good Broker also research the Broker and them properly to provide and educate you with information]

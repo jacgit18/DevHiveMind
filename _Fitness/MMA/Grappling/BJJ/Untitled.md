@@ -11,18 +11,9 @@ Relates:
 Peer Reviewed: 0
 dg-publish:
 ---
-Move forward side to side  
-  
-try making opponent move  
-  
-  
-Probing jab feeling out jab
 
-change levels
-  
-keep hand out to swat or occupy opponents hand or frame to disrupt there base  
-  
-Use different exits and entries  
+
+
   
 Avoid Kipping in the Jiu Jitsu or at least making it your first decision because you could get in trouble
 

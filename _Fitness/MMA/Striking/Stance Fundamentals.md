@@ -19,7 +19,7 @@ dg-publish:
 Be Aware of the difference of [[Orthodox vs Southpaw]] and what options open up when in one versus the other.
 ### **Strongest Position for Each Stance**
 **Use feints to make your stance changes less obvious and more deceptive.**
-Narrow and wide stances can be thought of as variations of the squared stance, primarily adjusting the distance between your feet.
+Narrow and wide stances can be thought of as variations of the squared stance, primarily adjusting the distance between your feet. Also wide squared stance is good for hooks and uppercuts.
 
 **Best Stance Transition Order**
 
@@ -53,6 +53,7 @@ flowchart LR
 
 ### **1. Bladed vs. Squared Stance**
 - **Bladed Stance**:
+	- Good stance for jabs and cross.
     - Ideal for evasion and defensive movement.
     - Reduces your target area, allowing for faster lateral movement.
     - Best for side-to-side movement, circling, or angling off.

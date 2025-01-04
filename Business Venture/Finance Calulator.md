@@ -34,6 +34,8 @@ monthlyPreTaxIncome: 5200
 - You can allocate a maximum of **$1,800** for meal prep, assuming bills are deferred until after June.
 
 Do the math 12 months times monthly cost  
+
+You can withdraw Roth IRA contributions without penalties, as long as the amount does not exceed your total contributions—meaning you don’t withdraw earnings or capital gains.
   
 Of employer insurance or personal insurance when determining extra money in negotiating
 
