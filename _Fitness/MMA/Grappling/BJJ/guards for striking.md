@@ -12,59 +12,7 @@ Peer Reviewed: 0
 dg-publish:
 ---
 
-  
-  
-  
----  
-  
-6. K-Guard  
-  
-Why It’s Effective:  
-  
-Provides control of the opponent’s legs and can transition into leg locks or sweeps, taking them off-balance.  
-  
-Neutralizes their ability to strike effectively by keeping them focused on your leg positioning.  
-  
-  
-Best Practices:  
-  
-Keep your head protected and work actively to off-balance or attack the legs.  
-  
-  
-  
-  
----  
-  
-7. 2-on-1 (Arm Drag) Guard  
-  
-Why It’s Effective:  
-  
-Controlling one arm with a 2-on-1 grip neutralizes punches and opens opportunities for sweeps, submissions, or back takes.  
-  
-  
-Best Practices:  
-  
-Use it to quickly transition to a dominant position (like taking the back or standing up).  
-  
-  
-  
 
-  
-  
----  
-  
-10. Standing Guard Recovery  
-  
-Why It’s Effective:  
-  
-Keeps you mobile and helps create space to return to your feet or transition into a more advantageous position.  
-  
-  
-Best Practices:  
-  
-Use your frames to push off and stand up in base.  
-  
-Stay defensive as you create distance.  
   
   
   

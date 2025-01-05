@@ -1,4 +1,4 @@
-
+Safer for real world
 ``` mermaid
 flowchart LR
 	Closed[Closed Full Guard] 
@@ -15,7 +15,6 @@ flowchart LR
 	L[Reverse DeLaRiva] 
 	M[Berimbolo]
 	N[50/50]
-	P[Tornado]
 	Q[Rubber]
 	R[Mission Control]
 	Z[ZGuard]
@@ -50,7 +49,6 @@ flowchart LR
 	D --> R
 
 	H <-.-> I
-	H --> P
 	H <-.-> Q 
 	H --> R
 	H <-.-> Z
@@ -92,8 +90,6 @@ style L fill:blue,stroke:black,stroke-width:4px,shadow:shadow
 style M fill:blue,stroke:black,stroke-width:4px,shadow:shadow
 
 style N fill:blue,stroke:black,stroke-width:4px,shadow:shadow
-
-style P fill:blue,stroke:black,stroke-width:4px,shadow:shadow
 
 style Q fill:blue,stroke:black,stroke-width:4px,shadow:shadow
 

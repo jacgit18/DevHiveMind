@@ -83,6 +83,7 @@ flowchart LR
 	Q[Rubber]
 	R[Mission Control]
 	Z[ZGuard]
+	KGuard[KGuard]
 
 	1[Triangle]
 	2[Gogoplata]
@@ -90,6 +91,7 @@ flowchart LR
 	4[Armbar]
 
 	Closed <-.-> A
+	A <-.-> KGuard
     A <-.-> B
     A <-.-> C
     A <-.-> D
@@ -130,6 +132,8 @@ flowchart LR
 	R --> 4 
 	
 style Closed fill:teal,stroke:black,stroke-width:4px,shadow:shadow
+
+style KGuard fill:blue,stroke:black,stroke-width:4px,shadow:shadow
 
 style A fill:green,stroke:black,stroke-width:4px,shadow:shadow
 
