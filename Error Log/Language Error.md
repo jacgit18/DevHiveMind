@@ -1,20 +1,29 @@
 ---
 tags:
   - error
+  - languageOverlap
 author:
   - jacgit18
-Purpose: This documentation discusses
-Status: Draft
+Description: "`[Provide a brief description of the error.]`"
+Comments: Placeholder comment any thing else you want to mention about the document.
+Purpose: This documentation discusses this error in this context.
+Status: Capture
 Started: 
 EditDate: 
 Relates: 
-dg-publish: false
+Peer Reviewed: 
+dg-publish:
 ---
 ## Error Details
+```dataviewjs
+const { Description } = dv.current();
 
-### Description
-
-`[Provide a brief description of the error.]`
+// Display the payment breakdown
+dv.header(3, "Description");
+dv.paragraph(
+  `${Description}`,
+);
+```
 
 ### Steps to Reproduce
 
