@@ -44,7 +44,6 @@
   "custom-classes",
   "convert-url-to-iframe",
   "cmdr",
-  "obsidian-checklist-plugin",
   "calendar",
   "obsidian-book-search-plugin",
   "better-word-count",
@@ -60,5 +59,6 @@
   "obsidian-charts",
   "quick-latex",
   "sheet-plus",
-  "copilot"
+  "copilot",
+  "obsidian-checklist-plugin"
 ]
