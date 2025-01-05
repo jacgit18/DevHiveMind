@@ -17,7 +17,7 @@ dg-publish:
   
 Avoid Kipping in the Jiu Jitsu or at least making it your first decision because you could get in trouble
 
-
+Rubber Guard
 
 In a **real-world scenario** without a gi (e.g., MMA, street defense), your guard must prioritize **distance management**, **minimizing striking power**, and **improving your position quickly**. The following guards are most effective in mitigating punches, kicks, knees, and elbows:
 
@@ -55,7 +55,7 @@ In a **real-world scenario** without a gi (e.g., MMA, street defense), your guar
     - Allows for off-balancing (sweeps) and transitions to dominant positions.
 - **Key strategies:**
     - Stay seated and keep your head tight to their chest to avoid elbows.
-    - Use hooks under their legs to control their movement.
+    - Use hooks under their legs to control their movement along with frames.
     - Elevate and sweep them to gain top control or stand up.
 
 ---
