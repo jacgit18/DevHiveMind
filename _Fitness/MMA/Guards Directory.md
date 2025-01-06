@@ -176,9 +176,9 @@ style 1 fill:red,stroke:black,stroke-width:4px,shadow:shadow
 
 style 2 fill:red,stroke:black,stroke-width:4px,shadow:shadow
 
-style 3 fill:orange,stroke:black,stroke-width:4px,shadow:shadow
+style 3 fill:purple,stroke:black,stroke-width:4px,shadow:shadow
 
-style 4 fill:orange,stroke:black,stroke-width:4px,shadow:shadow
+style 4 fill:purple,stroke:black,stroke-width:4px,shadow:shadow
 ```
 
 

@@ -1,4 +1,4 @@
-Safer for real world
+## Real World Guards & Submissions
 ``` mermaid
 flowchart LR
 	Closed[Closed Full Guard] 
@@ -102,15 +102,15 @@ style 1 fill:red,stroke:black,stroke-width:4px,shadow:shadow
 
 style 2 fill:red,stroke:black,stroke-width:4px,shadow:shadow
 
-style 3 fill:orange,stroke:black,stroke-width:4px,shadow:shadow
+style 3 fill:purple,stroke:black,stroke-width:4px,shadow:shadow
 
-style 4 fill:orange,stroke:black,stroke-width:4px,shadow:shadow
+style 4 fill:purple,stroke:black,stroke-width:4px,shadow:shadow
 ```
 
-Sweeps
+## Guards to Sweeps
 ``` mermaid
 flowchart LR
-    Closed[Closed Full Guard] 
+	Closed[Closed Full Guard] 
     A[Full Guard] 
     B[De La Riva] 
     C[Spider]
@@ -127,33 +127,52 @@ flowchart LR
 	N[50/50]
 	O[Worm]
 	P[Tornado]
+	Q[Rubber]
+	R[Mission Control]
+	Z[ZGuard]
+	KGuard[KGuard]
 
-	1[test]
 
+	Closed <-.-> A
+	A <-.-> KGuard
     A <-.-> B
     A <-.-> C
     A <-.-> D
     A <-.-> E
     A <-.-> H
+    A <-.-> Q
+    A <-.-> R
     B <-.-> C
     B --> F
     B --> G
     B <-.-> L
     B --> M
+    B --> N
     B --> O
+    B --> R
     C --> D
     C --> E
     C --> G
 	D --> F
+	D --> N
+	D --> Q
+	D --> R
 	F --> N
 	H <-.-> I
 	H --> P
+	H <-.-> Q 
+	H --> R
+	H <-.-> Z
 	I <-.-> J
+	J --> N
 	L <-.-> C
 	L --> F
 	I <-.-> K
+	R <-.-> Q 
 
-    1 <-.-> A
+style Closed fill:teal,stroke:black,stroke-width:4px,shadow:shadow
+
+style KGuard fill:blue,stroke:black,stroke-width:4px,shadow:shadow
 
 style A fill:green,stroke:black,stroke-width:4px,shadow:shadow
 
@@ -184,4 +203,12 @@ style N fill:blue,stroke:black,stroke-width:4px,shadow:shadow
 style O fill:blue,stroke:black,stroke-width:4px,shadow:shadow
 
 style P fill:blue,stroke:black,stroke-width:4px,shadow:shadow
+
+style Q fill:blue,stroke:black,stroke-width:4px,shadow:shadow
+
+style R fill:blue,stroke:black,stroke-width:4px,shadow:shadow
+
+style Z fill:blue,stroke:black,stroke-width:4px,shadow:shadow
+
+
 ```
