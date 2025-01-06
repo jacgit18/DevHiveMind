@@ -397,7 +397,7 @@ style Z fill:blue,stroke:black,stroke-width:4px,shadow:shadow
 - Open Guard - Green
 - Side Control, Mount, Half Guard - Blue
 - Sprawl, Turtle - Purple
-- Back Control - Pink
+- Back Control - burlywood
 
 
 
@@ -458,7 +458,7 @@ style J fill:red,stroke:black,stroke-width:4px,shadow:shadow
 
 style L fill:blue,stroke:black,stroke-width:4px,shadow:shadow
 style M fill:red,stroke:black,stroke-width:4px,shadow:shadow
-style N fill:pink,stroke:black,stroke-width:4px,shadow:shadow
+style N fill:burlywood,stroke:black,stroke-width:4px,shadow:shadow
 
 style O fill:blue,stroke:black,stroke-width:4px,shadow:shadow
 style P fill:red,stroke:black,stroke-width:4px,shadow:shadow
