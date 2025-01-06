@@ -452,19 +452,19 @@ style E fill:orange,stroke:blue,stroke-width:4px,shadow:shadow
 
 style F fill:darkgray,stroke:red,stroke-width:4px,shadow:shadow
 
-style G fill:red,stroke:black,stroke-width:4px,shadow:shadow
-style H fill:red,stroke:black,stroke-width:4px,shadow:shadow
-style I fill:red,stroke:black,stroke-width:4px,shadow:shadow
-style J fill:red,stroke:black,stroke-width:4px,shadow:shadow
+style G fill:red,stroke:red,stroke-width:4px,shadow:shadow
+style H fill:red,stroke:red,stroke-width:4px,shadow:shadow
+style I fill:red,stroke:red,stroke-width:4px,shadow:shadow
+style J fill:red,stroke:red,stroke-width:4px,shadow:shadow
 
-style L fill:blue,stroke:black,stroke-width:4px,shadow:shadow
-style M fill:red,stroke:black,stroke-width:4px,shadow:shadow
-style N fill:burlywood,stroke:black,stroke-width:4px,shadow:shadow
+style L fill:blue,stroke:red,stroke-width:4px,shadow:shadow
+style M fill:red,stroke:red,stroke-width:4px,shadow:shadow
+style N fill:burlywood,stroke:red,stroke-width:4px,shadow:shadow
 
-style O fill:blue,stroke:black,stroke-width:4px,shadow:shadow
-style P fill:red,stroke:black,stroke-width:4px,shadow:shadow
+style O fill:blue,stroke:red,stroke-width:4px,shadow:shadow
+style P fill:red,stroke:red,stroke-width:4px,shadow:shadow
 
 style Q fill:purple,stroke:red,stroke-width:4px,shadow:shadow
-style R fill:blue,stroke:black,stroke-width:4px,shadow:shadow
-style S fill:red,stroke:black,stroke-width:4px,shadow:shadow
+style R fill:blue,stroke:red,stroke-width:4px,shadow:shadow
+style S fill:red,stroke:red,stroke-width:4px,shadow:shadow
 ```
