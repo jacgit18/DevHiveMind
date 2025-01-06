@@ -259,19 +259,19 @@ style R fill:blue,stroke:black,stroke-width:4px,shadow:shadow
 style Z fill:blue,stroke:black,stroke-width:4px,shadow:shadow
 
 
-style 1 fill:red,stroke:black,stroke-width:4px,shadow:shadow
+style 1 fill:darkgray,stroke:red,stroke-width:4px,shadow:shadow
 
-style 2 fill:red,stroke:black,stroke-width:4px,shadow:shadow
+style 2 fill:darkgray,stroke:red,stroke-width:4px,shadow:shadow
 
 style 3 fill:lime,stroke:black,stroke-width:4px,shadow:shadow
 
 style 4 fill:lime,stroke:black,stroke-width:4px,shadow:shadow
 
-style 5 fill:red,stroke:black,stroke-width:4px,shadow:shadow
+style 5 fill:darkgray,stroke:red,stroke-width:4px,shadow:shadow
 
-style 6 fill:red,stroke:black,stroke-width:4px,shadow:shadow
+style 6 fill:darkgray,stroke:red,stroke-width:4px,shadow:shadow
 
-style 7 fill:red,stroke:black,stroke-width:4px,shadow:shadow
+style 7 fill:darkgray,stroke:red,stroke-width:4px,shadow:shadow
 
 style 8 fill:lime,stroke:black,stroke-width:4px,shadow:shadow
 
@@ -394,7 +394,8 @@ style Z fill:blue,stroke:black,stroke-width:4px,shadow:shadow
 
 
 ## Submission Flows
-- Open Guard - Green
+red border are chokes, blue borders limbs
+- Open Guard - dark gray Chokes off back that can maybe used in other positions
 - Side Control, Mount, Half Guard - Blue
 - Sprawl, Turtle - Purple
 - Back Control - burlywood
@@ -439,17 +440,17 @@ flowchart LR
     P --> B
     P --> R
     
-style A fill:orange,stroke:black,stroke-width:4px,shadow:shadow
+style A fill:darkgray,stroke:red,stroke-width:4px,shadow:shadow, 
 
 style B fill:orange,stroke:black,stroke-width:4px,shadow:shadow
 
 style C fill:orange,stroke:black,stroke-width:4px,shadow:shadow
 
-style D fill:red,stroke:black,stroke-width:4px,shadow:shadow
+style D fill:darkgray,stroke:red,stroke-width:4px,shadow:shadow, 
 
 style E fill:orange,stroke:black,stroke-width:4px,shadow:shadow
 
-style F fill:green,stroke:black,stroke-width:4px,shadow:shadow
+style F fill:darkgray,stroke:red,stroke-width:4px,shadow:shadow
 
 style G fill:red,stroke:black,stroke-width:4px,shadow:shadow
 style H fill:red,stroke:black,stroke-width:4px,shadow:shadow
@@ -463,7 +464,7 @@ style N fill:burlywood,stroke:black,stroke-width:4px,shadow:shadow
 style O fill:blue,stroke:black,stroke-width:4px,shadow:shadow
 style P fill:red,stroke:black,stroke-width:4px,shadow:shadow
 
-style Q fill:purple,stroke:black,stroke-width:4px,shadow:shadow
+style Q fill:purple,stroke:red,stroke-width:4px,shadow:shadow
 style R fill:blue,stroke:black,stroke-width:4px,shadow:shadow
 style S fill:red,stroke:black,stroke-width:4px,shadow:shadow
 ```
