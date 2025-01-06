@@ -28,10 +28,7 @@ monthlyPreTaxIncome: 5200
 ---
 ### **Rough Financial Breakdown
 #todo/purchases/assets
-- [ ] Get a **Margin Account:** Minimum deposit required: $2,000 if you want to short stocks (not part of the budget at the moment).
 - [ ] futures trading
-
-- You can allocate a maximum of **$1,800** for meal prep, assuming bills are deferred until after June.
 
 Do the math 12 months times monthly cost  
 
