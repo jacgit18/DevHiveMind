@@ -83,6 +83,7 @@ By integrating imitation, iteration, and innovation, I aim to make smarter, futu
 
 ![](https://www.youtube.com/watch?v=eTkFItOG3Kk)
 
+![](https://www.youtube.com/watch?v=BG1tF2xH4f4)
 
 ![](https://www.youtube.com/watch?v=jyCJeglqCe4)
 

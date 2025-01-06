@@ -33,6 +33,7 @@ Use the **UFC game** to simulate and experiment with techniques and strategies.
 
 ### **1. Be Playful and Adaptive**
 - Treat sparring as a game; keep it light and exploratory.
+- Set feet quickly and throw body first be fully extending arms on punch.
 - Imagine the opponent as a mirror: move in the opposite direction of their movement, emulating **lateral inversion** which the process of your movement in a mirror orienting inversely.
 - Move forward while also using lateral movement using and feinting with level changes making the other person react and creating openings.
 - When exiting or entering feel the void of space with something don't be a good guess and bring a gift when you come and leave showing manners giving some hands as you exit.
@@ -53,6 +54,7 @@ Use the **UFC game** to simulate and experiment with techniques and strategies.
     - You can keep your lead hand lower for flexibility and speed.
     - Also keep [[Distance Management Tactics]] in mind.
 - **Punch Timing**: Aim to strike between heartbeats for precision and flow.
+- **Blocking  Kicks**: When checking kicks, lean slightly toward the side of the leg you're using to check in to the person kick almost like your leaning your leg on to there kicking leg. This allows the force of the kick to deflect off your shin and redirect your balance back toward your center, helping you recover quickly and stay stable. This subtle shift absorbs the impact more efficiently and positions you for a counterattack or continued defense.
 
 ### **3. Striking & Fainting**
 -  Taller opponents:
