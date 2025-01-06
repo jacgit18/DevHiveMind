@@ -345,4 +345,4 @@ Techniques that allow applying pressure or using body weight:
 - **Inversion**: Guards like De La Riva and Reverse De La Riva naturally flow into inverted positions like Berimbolo.  
 
 
-
+![](https://www.youtube.com/watch?v=Db1Do3LapcA)
