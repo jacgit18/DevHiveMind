@@ -23,6 +23,17 @@ flowchart LR
 	2[Gogoplata]
 	3[Omoplata]
 	4[Armbar]
+	5[ArmTriangle]
+	6[RNC]
+	7[Guillotine]
+
+	8[Kimura]
+	9[Americana]
+	10[AnkleLock]
+
+	11[HealLock]
+	12[BuggyChoke]
+
 
 	Closed <-.-> A
     A <-.-> B
@@ -102,9 +113,25 @@ style 1 fill:red,stroke:black,stroke-width:4px,shadow:shadow
 
 style 2 fill:red,stroke:black,stroke-width:4px,shadow:shadow
 
-style 3 fill:purple,stroke:black,stroke-width:4px,shadow:shadow
+style 3 fill:lime,stroke:black,stroke-width:4px,shadow:shadow
 
-style 4 fill:purple,stroke:black,stroke-width:4px,shadow:shadow
+style 4 fill:lime,stroke:black,stroke-width:4px,shadow:shadow
+
+style 5 fill:red,stroke:black,stroke-width:4px,shadow:shadow
+
+style 6 fill:red,stroke:black,stroke-width:4px,shadow:shadow
+
+style 7 fill:red,stroke:black,stroke-width:4px,shadow:shadow
+
+style 8 fill:lime,stroke:black,stroke-width:4px,shadow:shadow
+
+style 9 fill:lime,stroke:black,stroke-width:4px,shadow:shadow
+
+style 10 fill:lime,stroke:black,stroke-width:4px,shadow:shadow
+
+style 11 fill:lime,stroke:black,stroke-width:4px,shadow:shadow
+
+style 12 fill:purple,stroke:black,stroke-width:4px,shadow:shadow
 ```
 
 ## Guards to Sweeps
