@@ -24,6 +24,8 @@ flowchart LR
 	Z[ZGuard]
 	KGuard[KGuard]
 
+	OctopusGuard[Octopus Guard]
+
 	1[Triangle]
 	2[Gogoplata]
 	3[Omoplata]
@@ -69,7 +71,9 @@ flowchart LR
 	R --> 2
 	R --> 3 
 	R --> 4 
-	
+
+style OctopusGuard fill:blue,stroke:black,stroke-width:4px,shadow:shadow
+
 style Closed fill:teal,stroke:black,stroke-width:4px,shadow:shadow
 
 style KGuard fill:blue,stroke:black,stroke-width:4px,shadow:shadow
@@ -304,7 +308,7 @@ flowchart LR
 	R[Mission Control]
 	Z[ZGuard]
 	KGuard[KGuard]
-
+	OctopusGuard[Octopus Guard]
 
 	Closed <-.-> A
 	A <-.-> KGuard
@@ -342,6 +346,8 @@ flowchart LR
 	L --> F
 	I <-.-> K
 	R <-.-> Q 
+
+style OctopusGuard fill:blue,stroke:black,stroke-width:4px,shadow:shadow
 
 style Closed fill:teal,stroke:black,stroke-width:4px,shadow:shadow
 
