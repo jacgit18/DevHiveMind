@@ -263,9 +263,9 @@ style 1 fill:darkgray,stroke:red,stroke-width:4px,shadow:shadow
 
 style 2 fill:darkgray,stroke:red,stroke-width:4px,shadow:shadow
 
-style 3 fill:lime,stroke:black,stroke-width:4px,shadow:shadow
+style 3 fill:coral,stroke:lime,stroke-width:4px,shadow:shadow
 
-style 4 fill:lime,stroke:black,stroke-width:4px,shadow:shadow
+style 4 fill:coral,stroke:lime,stroke-width:4px,shadow:shadow
 
 style 5 fill:darkgray,stroke:red,stroke-width:4px,shadow:shadow
 
@@ -273,15 +273,15 @@ style 6 fill:darkgray,stroke:red,stroke-width:4px,shadow:shadow
 
 style 7 fill:darkgray,stroke:red,stroke-width:4px,shadow:shadow
 
-style 8 fill:lime,stroke:black,stroke-width:4px,shadow:shadow
+style 8 fill:coral,stroke:lime,stroke-width:4px,shadow:shadow
 
-style 9 fill:lime,stroke:black,stroke-width:4px,shadow:shadow
+style 9 fill:coral,stroke:lime,stroke-width:4px,shadow:shadow
 
-style 10 fill:lime,stroke:black,stroke-width:4px,shadow:shadow
+style 10 fill:coral,stroke:lime,stroke-width:4px,shadow:shadow
 
-style 11 fill:lime,stroke:black,stroke-width:4px,shadow:shadow
+style 11 fill:coral,stroke:lime,stroke-width:4px,shadow:shadow
 
-style 12 fill:purple,stroke:black,stroke-width:4px,shadow:shadow
+style 12 fill:darkgray,stroke:red,stroke-width:4px,shadow:shadow
 ```
 
 ## All Guards to Sweeps
@@ -442,13 +442,13 @@ flowchart LR
     
 style A fill:darkgray,stroke:red,stroke-width:4px,shadow:shadow, 
 
-style B fill:orange,stroke:black,stroke-width:4px,shadow:shadow
+style B fill:orange,stroke:blue,stroke-width:4px,shadow:shadow
 
-style C fill:orange,stroke:black,stroke-width:4px,shadow:shadow
+style C fill:orange,stroke:blue,stroke-width:4px,shadow:shadow
 
 style D fill:darkgray,stroke:red,stroke-width:4px,shadow:shadow, 
 
-style E fill:orange,stroke:black,stroke-width:4px,shadow:shadow
+style E fill:orange,stroke:blue,stroke-width:4px,shadow:shadow
 
 style F fill:darkgray,stroke:red,stroke-width:4px,shadow:shadow
 
