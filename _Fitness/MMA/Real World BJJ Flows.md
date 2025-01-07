@@ -85,6 +85,8 @@ style Closed fill:teal,stroke:black,stroke-width:4px,shadow:shadow
 
 style KGuard fill:blue,stroke:black,stroke-width:4px,shadow:shadow
 
+style ElevatorGuard fill:blue,stroke:black,stroke-width:4px,shadow:shadow
+
 style A fill:green,stroke:black,stroke-width:4px,shadow:shadow
 
 style B fill:blue,stroke:black,stroke-width:4px,shadow:shadow
@@ -233,6 +235,8 @@ flowchart LR
 	R --> 3 
 	R --> 4 
 
+style ElevatorGuard fill:blue,stroke:black,stroke-width:4px,shadow:shadow
+
 style Closed fill:teal,stroke:black,stroke-width:4px,shadow:shadow
 
 style OctopusGuard fill:blue,stroke:black,stroke-width:4px,shadow:shadow
@@ -375,6 +379,8 @@ flowchart LR
 	L --> F
 	I <-.-> K
 	R <-.-> Q 
+
+style ElevatorGuard fill:blue,stroke:black,stroke-width:4px,shadow:shadow
 
 style OctopusGuard fill:blue,stroke:black,stroke-width:4px,shadow:shadow
 
