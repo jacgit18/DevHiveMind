@@ -119,10 +119,9 @@ style R fill:blue,stroke:black,stroke-width:4px,shadow:shadow
 
 style Z fill:blue,stroke:black,stroke-width:4px,shadow:shadow
 
+style 1 fill:darkgray,stroke:red,stroke-width:4px,shadow:shadow
 
-style 1 fill:red,stroke:black,stroke-width:4px,shadow:shadow
-
-style 2 fill:red,stroke:black,stroke-width:4px,shadow:shadow
+style 2 fill:darkgray,stroke:red,stroke-width:4px,shadow:shadow
 
 style 3 fill:purple,stroke:black,stroke-width:4px,shadow:shadow
 
