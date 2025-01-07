@@ -1,60 +1,13 @@
-When choosing submissions in a **real-world self-defense scenario**, it's crucial to prioritize techniques that:
+### **Self-Defense Focused Submissions: Prioritizing Safety, Control, and Efficiency**
 
-1. Keep you safe from strikes (punches, kicks, slams).
-2. Maintain positional control.
-3. Minimize exposure to dangerous counters like being slammed.
+In real-world self-defense, your submission choices should prioritize:
 
-
-### **Chokes (Safe and Effective)**
-
-#### 1. **Rear Naked Choke (RNC)**
-
-- **Why it’s safe:**
-    - Keeps you behind the opponent, out of their striking range.
-    - No risk of getting slammed since you’re controlling their back.
-- **Application:**
-    - Secure hooks from back control.
-    - Slide one arm under their chin, grip your bicep, and squeeze.
-
----
-
-#### 2. **Guillotine Choke (Standing or Seated)**
-
-- **Why it’s safe:**
-    - Can be applied while sprawling to avoid takedowns.
-    - Keeps their head and posture controlled, limiting strikes.
-- **Tips for safety:**
-    - Apply from standing or seated guard, ensuring your legs are free to sprawl.
-    - Avoid pulling guard if slams are a risk.
-
----
-
-#### 3. **Arm Triangle Choke (From Mount or Side Control)**
-
-- **Why it’s safe:**
-    - Performed from dominant positions (top control).
-    - No exposure to strikes when properly locked.
-- **Application:**
-    - Trap their arm against their neck and apply pressure using chest and shoulder.
-
----
-
-#### 4. **Triangle Choke (Modified for Safety)**
-
-- **Why it’s relatively safe:**
-    - Neutralizes their ability to strike while locking their head and arm.
-    - Safer when controlled from a **high guard** to avoid ground-and-pound.
-- **Tips for safety:**
-    - Maintain tight control of their posture to prevent them from posturing up or slamming you.
-    - Use an angle to ensure the submission is effective quickly.
-
----
-
-
+1. **Safety from strikes (punches, kicks, slams).**
+2. **Positional control to limit escapes and counters.**
+3. **Minimizing exposure to dangerous counters like being slammed.**
 ### **Bottom Position Submissions**
 
 #### **Full Guard (Closed Guard)**
-
 - **Armbar**: Break posture and isolate the arm.
 - **Triangle Choke**: Trap one arm and the neck, locking your legs around their head.
 - **Kimura**: Secure wrist control and overhook for a shoulder lock.
@@ -63,66 +16,35 @@ When choosing submissions in a **real-world self-defense scenario**, it's crucia
 - **Omoplata**: Transition to a shoulder lock by attacking the arm.
 
 #### **Open Guards**
-
 - **Spider Guard**:
-    
-    - **Triangle Choke**: Isolate the head and one arm using grip control.
-    - **Armbar**: Use grip manipulation to create openings.
+    - **Triangle Choke**: Control arms and isolate the head and neck.
+    - **Armbar**: Manipulate grips to create submission openings.
 - **De La Riva Guard**:
-    
-    - **Triangle Choke**: Set up submissions by off-balancing your opponent.
-    - **Leg Locks**: Use transitions to attack kneebars or straight ankle locks.
+    - **Triangle Choke**: Off-balance and set up choke transitions.
+    - **Leg Locks**: Attack kneebars or ankle locks during sweeps.
 - **Butterfly Guard**:
-    
-    - **Guillotine Choke**: Target pressure passers leaning forward.
-    - **Armbar**: Create openings during sweeps.
+    - **Guillotine Choke**: Effective against pressure passers.
+    - **Armbar**: Openings appear during sweeps.
 - **X-Guard**:
-    
-    - **Straight Ankle Locks**: Attack during leg entanglements.
-    - **Heel Hooks**: Focus on isolating the opponent’s legs in transitions.
+    - **Straight Ankle Locks**: Attack leg entanglements with ankle locks.
+    - **Heel Hooks**: Focus on leg isolation in transitions.
 
 #### **Half Guard (Including Variations)**
-
-- **Kimura**: Lock down posture and isolate the arm.
-    
-- **Guillotine Choke**: Attack when they pressure forward.
-    
-- **Leg Locks**: Set up kneebars or heel hooks from entanglements.
-    
+- **Kimura**: Isolate the arm and control posture for a strong shoulder lock.
+- **Guillotine Choke**: Attack during forward pressure from your opponent.
+- **Leg Locks**: Kneebars and heel hooks are effective from entanglements.
 - **Deep Half Guard**:
-    
-    - **Back Takes to RNC**: Use sweeps to transition to the back and secure submissions.
-
+    - **Back Takes to RNC**: Transition to the back for rear-naked choke submissions.
 
 #### **Side Control**
-
-**Buggy Choke (From Bottom Side Control)**
-
-- **Why it’s safe:**
-    - Counters an opponent trying to punch you from side control.
-    - Uses your body to trap their head and arm.
-- **Tips for safety:**
-    - Lock in the choke tightly and quickly transition to escape if necessary.
-
+- **Buggy Choke**: Apply pressure when opponents attempt to strike, trapping their head and arm. **(Safety Tip)**: Transition quickly if needed to avoid strikes.
 
 #### **Leg Entanglements (Bottom/Guard Passing)**
+- **Straight Ankle Lock**: Allows distance and targets the lower body without exposing your face to strikes.
+    - **Safety Tip**: Apply quickly to avoid prolonged exposure.
 
-**Straight Ankle Lock**
-
-- **Why it’s safe:**
-    - Allows you to stay at a distance while targeting their lower body.
-    - Can be performed without exposing your face to strikes.
-- **Tips for safety:**
-    - Use this as a quick submission; don’t linger in the position.
-
-**Outside Ashi Garami for Heel Hook**
-
-- **Why it’s safer than inside leg positions:**
-    - Keeps their other leg farther away, reducing the risk of kicks.
-    - Effective at immobilizing them quickly.
-- **Tips for safety:**
-    - Apply the submission quickly and with control to avoid prolonged entanglements.
-
+- **Outside Ashi Garami (Heel Hook)**: Keeps the other leg farther away for better control and safety.
+    - **Safety Tip**: Execute quickly and with control to avoid lingering in risky positions.
 
 ---
 
@@ -167,7 +89,9 @@ When choosing submissions in a **real-world self-defense scenario**, it's crucia
 - **Cross Collar Choke**: Utilize deep lapel grips for a choke.
 
 
-#### **Mount/S-Mount/Side Control/Knee-on-Belly/Turtle**
+#### Mount/S-Mount/Side Control/Knee-on-Belly/Turtle
+S-mount is a mount but a high mount were you bring your knee above there head eventually hook there far arm with your other leg   
+
 **Straight Armbar (Mounted or Side Control)**
 
 - **Why it’s safe:**
