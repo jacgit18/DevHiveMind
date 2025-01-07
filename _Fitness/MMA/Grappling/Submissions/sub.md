@@ -93,6 +93,18 @@ When choosing submissions in a **real-world self-defense scenario**, it's crucia
     
     - **Back Takes to RNC**: Use sweeps to transition to the back and secure submissions.
 
+
+#### **Side Control**
+
+**Buggy Choke (From Bottom Side Control)**
+
+- **Why it’s safe:**
+    - Counters an opponent trying to punch you from side control.
+    - Uses your body to trap their head and arm.
+- **Tips for safety:**
+    - Lock in the choke tightly and quickly transition to escape if necessary.
+
+
 #### **Leg Entanglements (Bottom/Guard Passing)**
 
 **Straight Ankle Lock**
@@ -154,6 +166,17 @@ When choosing submissions in a **real-world self-defense scenario**, it's crucia
 - **Ezekiel Choke**: Use sleeve grips to apply a forearm choke.
 - **Cross Collar Choke**: Utilize deep lapel grips for a choke.
 
+
+#### **Mount/S-Mount/Side Control/Knee-on-Belly/Turtle**
+**Straight Armbar (Mounted or Side Control)**
+
+- **Why it’s safe:**
+    - Effective from dominant positions where you’re less likely to get hit or slammed.
+    - Keeps you in control of the arm and limits their ability to punch.
+- **Tips for safety:**
+    - Avoid armbars from closed guard in a self-defense scenario, as they expose you to strikes.
+
+
 #### **North-South**
 
 - **Kimura**: Leverage isolated arm control.
@@ -163,6 +186,16 @@ When choosing submissions in a **real-world self-defense scenario**, it's crucia
 
 - **Rear Naked Choke (RNC)**: Use seatbelt grips and secure the choke.
 - **Bow and Arrow Choke**: Attack with lapel grips while controlling the leg.
+
+
+**Rear Triangle Choke (From Back Control)**
+
+- **Why it’s safe:**
+    - Combines the benefits of rear control with a tight choke.
+    - Opponent cannot punch or kick effectively while trapped.
+- **Application:**
+    - Secure back control, isolate one arm, and lock your legs in a triangle configuration.
+
 
 #### **Leg Entanglements (Top/Guard Passing)**
 
@@ -192,48 +225,3 @@ When choosing submissions in a **real-world self-defense scenario**, it's crucia
 
 
 
-
-
-### **Joint Locks (Prioritize Safety)**
-
-
-
----
-
-#### 6. **Straight Armbar (Mounted or Side Control)**
-
-- **Why it’s safe:**
-    - Effective from dominant positions where you’re less likely to get hit or slammed.
-    - Keeps you in control of the arm and limits their ability to punch.
-- **Tips for safety:**
-    - Avoid armbars from closed guard in a self-defense scenario, as they expose you to strikes.
-
----
-
-#### 7. 
-
----
-
-### **Leg Attacks (Safer Options)**
-
-
-
----
-
-### **Control-Based Submissions**
-
-#### 10. **Buggy Choke (From Bottom Side Control)**
-
-- **Why it’s safe:**
-    - Counters an opponent trying to punch you from side control.
-    - Uses your body to trap their head and arm.
-- **Tips for safety:**
-    - Lock in the choke tightly and quickly transition to escape if necessary.
-
-#### 11. **Rear Triangle Choke (From Back Control)**
-
-- **Why it’s safe:**
-    - Combines the benefits of rear control with a tight choke.
-    - Opponent cannot punch or kick effectively while trapped.
-- **Application:**
-    - Secure back control, isolate one arm, and lock your legs in a triangle configuration.

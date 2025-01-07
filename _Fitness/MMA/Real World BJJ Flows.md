@@ -1,5 +1,7 @@
 ## All Guard Flow
 Remember you always start off Standing
+
+s-mount mount but a high mount were you bring your knee above there head eventually hook there far arm with your other leg   
 ``` mermaid
 flowchart LR
 	Closed[Closed Full Guard] 
