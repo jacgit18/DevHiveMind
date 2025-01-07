@@ -31,6 +31,11 @@ flowchart LR
 	3[Omoplata]
 	4[Armbar]
 
+	Closed --> OctopusGuard
+	D <-.-> OctopusGuard
+	H <-.-> OctopusGuard
+	I <-.-> OctopusGuard
+
 	Closed <-.-> A
 	A <-.-> KGuard
     A <-.-> B
@@ -180,9 +185,13 @@ flowchart LR
 	10[AnkleLock]
 
 	11[HealLock]
-	12[BuggyChoke]
 
 
+	Closed --> OctopusGuard
+	D <-.-> OctopusGuard
+	H <-.-> OctopusGuard
+	I <-.-> OctopusGuard
+	
 	Closed <-.-> A
     A <-.-> B
     A <-.-> C
@@ -281,7 +290,6 @@ style 10 fill:coral,stroke:lime,stroke-width:4px,shadow:shadow
 
 style 11 fill:coral,stroke:lime,stroke-width:4px,shadow:shadow
 
-style 12 fill:darkgray,stroke:red,stroke-width:4px,shadow:shadow
 ```
 
 ## All Guards to Sweeps
@@ -310,8 +318,26 @@ flowchart LR
 	KGuard[KGuard]
 	OctopusGuard[Octopus Guard]
 
+	ArmDrag[ArmDrag]
+	HipBump[HipBump]
+	Scissor[Scissor]
+	Flower[Flower]
+	ButterflySweep[ButterflySweep]
+	LumberJack[LumberJack]
+	Tripod[Tripod]
+	Balloon[Balloon]
+	KneeTap[KneeTap]
+	DoubleAnkle[DoubleAnkle]
+	PushSweep[PushSweep]
+
+	Closed --> OctopusGuard
+	D <-.-> OctopusGuard
+	H <-.-> OctopusGuard
+	I <-.-> OctopusGuard
+
 	Closed <-.-> A
 	A <-.-> KGuard
+	A --> PushSweep
     A <-.-> B
     A <-.-> C
     A <-.-> D
@@ -404,7 +430,7 @@ red border are chokes, blue borders limbs
 
 ```mermaid
 flowchart LR
-    A[Triangle Choke] <-.->  B[Armbar]
+    A[Triangle] <-.->  B[Armbar]
     A <-.-> C[Omoplata]
     A <-.->  D[Gogoplata]
     A <-.->  E
@@ -412,7 +438,7 @@ flowchart LR
     C <-.->  B
 
 
-    F[Guillotine Choke] .-> G[Ninja Choke]
+    F[Guillotine] .-> G[Ninja Choke]
     F .-> H[Peruvian Necktie]
     F .-> I[Arm-In Guillotine]
     F .-> Q
@@ -422,7 +448,7 @@ flowchart LR
     J --> L[D’Arce Choke]
     J --> B
 
-    M[Rear Naked Choke] --> B
+    M[RNC] --> B
     M --> N[Bow and Arrow Choke]
 
     O[Baseball Bat Choke] --> P[Ezekiel Choke]
@@ -439,6 +465,12 @@ flowchart LR
 
     P --> B
     P --> R
+
+
+	Americana[Americana]
+	AnkleLock[AnkleLock]
+	HealLock[HealLock]
+	BuggyChoke[BuggyChoke]
     
 style A fill:darkgray,stroke:red,stroke-width:4px,shadow:shadow, 
 
