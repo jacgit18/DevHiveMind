@@ -11,7 +11,16 @@ Relates:
 Peer Reviewed: 0
 dg-publish:
 ---
-Modified Open Guard (Feet on Hips or Biceps)**
+
+
+## Escapes/Sweeps
+
+
+![](https://www.youtube.com/watch?v=Z_FBT8ZDSmo)
+
+
+
+Modified Open Guard (Feet on Hips or Biceps)
 
 - **Why it's effective:**
     - Maintains distance and neutralizes their ability to punch effectively.
