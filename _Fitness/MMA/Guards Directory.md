@@ -132,3 +132,28 @@ Techniques that allow applying pressure or using body weight:
 
 
 ![](https://www.youtube.com/watch?v=Db1Do3LapcA)
+
+
+### **Guards to Transition From**
+
+- **Don’t stay static:** If you’re staying in one guard for too long in a real-world scenario, you risk being overwhelmed by strikes. Use these guards to quickly **sweep, escape, or improve your position.**
+
+---
+
+### **Additional Tips for Real-World Scenarios:**
+
+1. **Protect your head:** Always maintain hand or arm frames to block punches.
+2. **Create space:** Use your legs and hips to push the opponent away whenever possible.
+3. **Escape to standing:** Look for opportunities to transition to your feet and disengage.
+4. **Control posture:** Keep your opponent low to prevent strikes from gaining momentum.
+5. **Avoid flashy moves:** Focus on simple, high-percentage techniques that prioritize safety and control.
+
+These guards are tailored to mitigate the threat of strikes and ensure you can transition out of dangerous positions effectively.
+
+### Guards to Avoid
+
+- **Deep Half Guard:** Leaves your face exposed to downward strikes.
+- **Inverted Guard:** Vulnerable to stomps or downward punches.
+- **X-Guard:** Effective for sweeps but leaves your head exposed if not managed carefully.
+
+

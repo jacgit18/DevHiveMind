@@ -11,4 +11,11 @@ Relates:
 Peer Reviewed: 0
 dg-publish:
 ---
-create note from template like `Alt +n`
+De La Riva Guard (Modified for No-Gi)**
+
+- **Why it's effective:**
+    - Controls the opponent's leg and disrupts their balance, making it hard to generate striking power.
+    - Allows for sweeps or transitions to more dominant positions.
+- **Key strategies:**
+    - Use your leg to hook their lead leg and off-balance them.
+    - Control their wrist to block strikes while you work on sweeps.
