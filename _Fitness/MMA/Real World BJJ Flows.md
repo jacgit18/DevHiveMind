@@ -26,6 +26,8 @@ flowchart LR
 
 	OctopusGuard[Octopus Guard]
 
+	ElevatorGuard[Elevator Guard]
+
 	1[Triangle]
 	2[Gogoplata]
 	3[Omoplata]
@@ -123,9 +125,9 @@ style 1 fill:darkgray,stroke:red,stroke-width:4px,shadow:shadow
 
 style 2 fill:darkgray,stroke:red,stroke-width:4px,shadow:shadow
 
-style 3 fill:purple,stroke:black,stroke-width:4px,shadow:shadow
+style 3 fill:coral,stroke:lime,stroke-width:4px,shadow:shadow
 
-style 4 fill:purple,stroke:black,stroke-width:4px,shadow:shadow
+style 4 fill:coral,stroke:lime,stroke-width:4px,shadow:shadow
 ```
 
 
@@ -170,6 +172,7 @@ flowchart LR
 	R[Mission Control]
 	Z[ZGuard]
 	OctopusGuard[Octopus Guard]
+	ElevatorGuard[Elevator Guard]
 
 	1[Triangle]
 	2[Gogoplata]
@@ -316,6 +319,7 @@ flowchart LR
 	Z[ZGuard]
 	KGuard[KGuard]
 	OctopusGuard[Octopus Guard]
+	ElevatorGuard[Elevator Guard]
 
 	ArmDrag[ArmDrag]
 	HipBump[HipBump]

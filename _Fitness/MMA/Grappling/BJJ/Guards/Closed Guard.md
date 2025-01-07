@@ -11,4 +11,12 @@ Relates:
 Peer Reviewed: 0
 dg-publish:
 ---
-create note from template like `Alt +n`
+Closed Guard (With Overhooks and Wrist Control)
+
+- **Why it's effective:**
+    - Keeps the opponent close, making it difficult for them to generate power for strikes.
+    - Overhooks, wrist control, or head control neutralize their ability to punch.
+- **Key strategies:**
+    - Pull their posture down by controlling their head or arm.
+    - Use overhooks to trap their arms and reduce striking threats.
+    - Actively look for sweeps or submissions to avoid staying static (e.g., armbar or triangle choke).

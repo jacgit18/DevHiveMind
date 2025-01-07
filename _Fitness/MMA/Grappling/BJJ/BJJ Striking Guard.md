@@ -15,15 +15,7 @@ In a **real-world scenario** without a gi (e.g., MMA, street defense), your guar
 
 ---
 
-### **1. Closed Guard (With Overhooks and Wrist Control)**
-
-- **Why it's effective:**
-    - Keeps the opponent close, making it difficult for them to generate power for strikes.
-    - Overhooks, wrist control, or head control neutralize their ability to punch.
-- **Key strategies:**
-    - Pull their posture down by controlling their head or arm.
-    - Use overhooks to trap their arms and reduce striking threats.
-    - Actively look for sweeps or submissions to avoid staying static (e.g., armbar or triangle choke).
+### **1. 
 
 ---
 
@@ -42,25 +34,10 @@ In a **real-world scenario** without a gi (e.g., MMA, street defense), your guar
 
 ### **3. Butterfly Guard**
 
-- **Why it's effective:**
-    - Keeps the opponent close, reducing their striking range.
-    - Allows for off-balancing (sweeps) and transitions to dominant positions.
-- **Key strategies:**
-    - Stay seated and keep your head tight to their chest to avoid elbows.
-    - Use hooks under their legs to control their movement along with frames.
-    - Elevate and sweep them to gain top control or stand up.
 
 ---
 
-### **4. Modified Open Guard (Feet on Hips or Biceps)**
-
-- **Why it's effective:**
-    - Maintains distance and neutralizes their ability to punch effectively.
-    - Controls their posture by using your legs and grips on their wrists.
-- **Key strategies:**
-    - Push against their hips with your feet to maintain distance.
-    - If they throw punches, use your feet to push off and create space to stand up.
-    - Transition to sweeps (e.g., push sweep) if they try to close distance.
+### **4
 
 ---
 
@@ -86,14 +63,7 @@ In a **real-world scenario** without a gi (e.g., MMA, street defense), your guar
 
 ---
 
-### **7. Double Butterfly Hooks (Elevator Guard)**
-
-- **Why it's effective:**
-    - Prevents them from posturing up to throw punches or elbows.
-    - Can quickly transition to sweeps or stand-up escapes.
-- **Key strategies:**
-    - Keep your head tucked close to their torso.
-    - Use your hooks to elevate and off-balance them.
+### **7. 
 
 ---
 

@@ -11,6 +11,20 @@ Relates:
 Peer Reviewed: 0
 dg-publish:
 ---
+Modified Open Guard (Feet on Hips or Biceps)**
+
+- **Why it's effective:**
+    - Maintains distance and neutralizes their ability to punch effectively.
+    - Controls their posture by using your legs and grips on their wrists.
+- **Key strategies:**
+    - Push against their hips with your feet to maintain distance.
+    - If they throw punches, use your feet to push off and create space to stand up.
+    - Transition to sweeps (e.g., push sweep) if they try to close distance.
+
+
+
+
+
 **Using the Wall to Control and Limit Movement in Full Guard**
 
 When grappling, particularly in Brazilian Jiu-Jitsu (BJJ) or MMA, utilizing the environment—like the wall or cage—can be a strategic advantage. Here's an expanded breakdown of how to move your opponent and use the wall to control them while in their full guard:
