@@ -4,9 +4,6 @@ When choosing submissions in a **real-world self-defense scenario**, it's crucia
 2. Maintain positional control.
 3. Minimize exposure to dangerous counters like being slammed.
 
-Here’s a list of **safer submissions** in such scenarios:
-
----
 
 ### **Chokes (Safe and Effective)**
 
@@ -52,77 +49,6 @@ Here’s a list of **safer submissions** in such scenarios:
     - Use an angle to ensure the submission is effective quickly.
 
 ---
-
-### **Joint Locks (Prioritize Safety)**
-
-#### 5. **Kimura (From Guard or Side Control)**
-
-- **Why it’s safe:**
-    - Controls their arm, limiting their ability to strike.
-    - Safer from top side control or guard when you’re controlling their posture.
-- **Tips for safety:**
-    - Apply pressure quickly to avoid prolonged struggle.
-    - Be ready to transition if the opponent tries to slam you.
-
----
-
-#### 6. **Straight Armbar (Mounted or Side Control)**
-
-- **Why it’s safe:**
-    - Effective from dominant positions where you’re less likely to get hit or slammed.
-    - Keeps you in control of the arm and limits their ability to punch.
-- **Tips for safety:**
-    - Avoid armbars from closed guard in a self-defense scenario, as they expose you to strikes.
-
----
-
-#### 7. **Americana (Top Mount or Side Control)**
-
-- **Why it’s safe:**
-    - Performed from dominant positions that limit the opponent’s striking options.
-    - Quick submission to incapacitate the opponent.
-- **Application:**
-    - Pin their wrist to the mat, isolate their arm, and apply pressure to the shoulder joint.
-
----
-
-### **Leg Attacks (Safer Options)**
-
-#### 8. **Straight Ankle Lock**
-
-- **Why it’s safe:**
-    - Allows you to stay at a distance while targeting their lower body.
-    - Can be performed without exposing your face to strikes.
-- **Tips for safety:**
-    - Use this as a quick submission; don’t linger in the position.
-
-#### 9. **Outside Ashi Garami for Heel Hook**
-
-- **Why it’s safer than inside leg positions:**
-    - Keeps their other leg farther away, reducing the risk of kicks.
-    - Effective at immobilizing them quickly.
-- **Tips for safety:**
-    - Apply the submission quickly and with control to avoid prolonged entanglements.
-
----
-
-### **Control-Based Submissions**
-
-#### 10. **Buggy Choke (From Bottom Side Control)**
-
-- **Why it’s safe:**
-    - Counters an opponent trying to punch you from side control.
-    - Uses your body to trap their head and arm.
-- **Tips for safety:**
-    - Lock in the choke tightly and quickly transition to escape if necessary.
-
-#### 11. **Rear Triangle Choke (From Back Control)**
-
-- **Why it’s safe:**
-    - Combines the benefits of rear control with a tight choke.
-    - Opponent cannot punch or kick effectively while trapped.
-- **Application:**
-    - Secure back control, isolate one arm, and lock your legs in a triangle configuration.
 
 
 ### **Bottom Position Submissions**
@@ -177,9 +103,27 @@ Here’s a list of **safer submissions** in such scenarios:
 - **Americana**: Attack a pinned arm once in a dominant position.
 - **Kimura**: Transition from passing guard into side control for the submission.
 
+
+**Kimura (From Guard or Side Control)**
+- **Why it’s safe:**
+    - Controls their arm, limiting their ability to strike.
+    - Safer from top side control or guard when you’re controlling their posture.
+- **Tips for safety:**
+    - Apply pressure quickly to avoid prolonged struggle.
+    - Be ready to transition if the opponent tries to slam you.
+
 #### **Side Control**
 
 - **Americana**: Trap the arm and apply pressure toward the head.
+**Americana (Top Mount or Side Control)**
+
+- **Why it’s safe:**
+    - Performed from dominant positions that limit the opponent’s striking options.
+    - Quick submission to incapacitate the opponent.
+- **Application:**
+    - Pin their wrist to the mat, isolate their arm, and apply pressure to the shoulder joint.
+
+
 - **Kimura**: Use wrist control to isolate the shoulder.
 - **Arm Triangle**: Trap the opponent’s head and arm during a transition.
 - **Baseball Bat Choke**: Use lapel grips to create choke pressure.
@@ -228,3 +172,63 @@ Here’s a list of **safer submissions** in such scenarios:
 - **Top Position**: Emphasize control after passing guard, targeting arm locks, chokes, and leg locks.
 
 
+
+
+
+### **Joint Locks (Prioritize Safety)**
+
+
+
+---
+
+#### 6. **Straight Armbar (Mounted or Side Control)**
+
+- **Why it’s safe:**
+    - Effective from dominant positions where you’re less likely to get hit or slammed.
+    - Keeps you in control of the arm and limits their ability to punch.
+- **Tips for safety:**
+    - Avoid armbars from closed guard in a self-defense scenario, as they expose you to strikes.
+
+---
+
+#### 7. 
+
+---
+
+### **Leg Attacks (Safer Options)**
+
+#### 8. **Straight Ankle Lock**
+
+- **Why it’s safe:**
+    - Allows you to stay at a distance while targeting their lower body.
+    - Can be performed without exposing your face to strikes.
+- **Tips for safety:**
+    - Use this as a quick submission; don’t linger in the position.
+
+#### 9. **Outside Ashi Garami for Heel Hook**
+
+- **Why it’s safer than inside leg positions:**
+    - Keeps their other leg farther away, reducing the risk of kicks.
+    - Effective at immobilizing them quickly.
+- **Tips for safety:**
+    - Apply the submission quickly and with control to avoid prolonged entanglements.
+
+---
+
+### **Control-Based Submissions**
+
+#### 10. **Buggy Choke (From Bottom Side Control)**
+
+- **Why it’s safe:**
+    - Counters an opponent trying to punch you from side control.
+    - Uses your body to trap their head and arm.
+- **Tips for safety:**
+    - Lock in the choke tightly and quickly transition to escape if necessary.
+
+#### 11. **Rear Triangle Choke (From Back Control)**
+
+- **Why it’s safe:**
+    - Combines the benefits of rear control with a tight choke.
+    - Opponent cannot punch or kick effectively while trapped.
+- **Application:**
+    - Secure back control, isolate one arm, and lock your legs in a triangle configuration.
