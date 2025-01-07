@@ -33,6 +33,16 @@ flowchart LR
 	3[Omoplata]
 	4[Armbar]
 
+	A <-.-> ElevatorGuard
+	B <-.-> ElevatorGuard
+	C <-.-> ElevatorGuard
+	D <-.-> ElevatorGuard
+	F <-.-> ElevatorGuard
+	G <-.-> ElevatorGuard
+	H <-.-> ElevatorGuard
+	Z <-.-> ElevatorGuard
+	
+
 	Closed --> OctopusGuard
 	D <-.-> OctopusGuard
 	H <-.-> OctopusGuard
@@ -190,7 +200,15 @@ flowchart LR
 
 	11[HealLock]
 
-
+	A <-.-> ElevatorGuard
+	B <-.-> ElevatorGuard
+	C <-.-> ElevatorGuard
+	D <-.-> ElevatorGuard
+	F <-.-> ElevatorGuard
+	G <-.-> ElevatorGuard
+	H <-.-> ElevatorGuard
+	Z <-.-> ElevatorGuard
+	
 	Closed --> OctopusGuard
 	D <-.-> OctopusGuard
 	H <-.-> OctopusGuard
@@ -341,6 +359,15 @@ flowchart LR
 	D <-.-> OctopusGuard
 	H <-.-> OctopusGuard
 	I <-.-> OctopusGuard
+	
+	A <-.-> ElevatorGuard
+	B <-.-> ElevatorGuard
+	C <-.-> ElevatorGuard
+	D <-.-> ElevatorGuard
+	F <-.-> ElevatorGuard
+	G <-.-> ElevatorGuard
+	H <-.-> ElevatorGuard
+	Z <-.-> ElevatorGuard
 
 	Closed <-.-> A
 	A <-.-> KGuard
