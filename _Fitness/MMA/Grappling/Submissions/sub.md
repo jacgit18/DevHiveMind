@@ -93,6 +93,25 @@ When choosing submissions in a **real-world self-defense scenario**, it's crucia
     
     - **Back Takes to RNC**: Use sweeps to transition to the back and secure submissions.
 
+#### **Leg Entanglements (Bottom/Guard Passing)**
+
+**Straight Ankle Lock**
+
+- **Why it’s safe:**
+    - Allows you to stay at a distance while targeting their lower body.
+    - Can be performed without exposing your face to strikes.
+- **Tips for safety:**
+    - Use this as a quick submission; don’t linger in the position.
+
+**Outside Ashi Garami for Heel Hook**
+
+- **Why it’s safer than inside leg positions:**
+    - Keeps their other leg farther away, reducing the risk of kicks.
+    - Effective at immobilizing them quickly.
+- **Tips for safety:**
+    - Apply the submission quickly and with control to avoid prolonged entanglements.
+
+
 ---
 
 ### **Top Position Submissions**
@@ -197,21 +216,7 @@ When choosing submissions in a **real-world self-defense scenario**, it's crucia
 
 ### **Leg Attacks (Safer Options)**
 
-#### 8. **Straight Ankle Lock**
 
-- **Why it’s safe:**
-    - Allows you to stay at a distance while targeting their lower body.
-    - Can be performed without exposing your face to strikes.
-- **Tips for safety:**
-    - Use this as a quick submission; don’t linger in the position.
-
-#### 9. **Outside Ashi Garami for Heel Hook**
-
-- **Why it’s safer than inside leg positions:**
-    - Keeps their other leg farther away, reducing the risk of kicks.
-    - Effective at immobilizing them quickly.
-- **Tips for safety:**
-    - Apply the submission quickly and with control to avoid prolonged entanglements.
 
 ---
 
