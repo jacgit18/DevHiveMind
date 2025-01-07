@@ -51,7 +51,7 @@ Submissions
 Sweeps
 - 
 
-3. **[[Half Guards]]**  
+2. **[[Half Guards]]**  
    - Deep Half Guard  
    - ZGuard - Start with half guard knee shield at shoulder then switch to z guard at hip
 Submissions
@@ -59,7 +59,7 @@ Submissions
 Sweeps
 - 
 
-4. **Leg Entanglements**  
+3. **Leg Entanglements**  
    - Single-leg [[X Guard]] 
    - 50/50 Guard  
 Submissions
@@ -67,7 +67,7 @@ Submissions
 Sweeps
 - 
 
-5. **Inverted Guards**  
+4. **Inverted Guards**  
    - Tornado Guard  
    - Reverse De La Riva - Attack-Oriented Guard
 Sweeps
