@@ -122,26 +122,13 @@ Sweeps
 1. **Top Guards (Dominant Guards)**  
    - Mount Guard (transition from bottom)  
    - Top Turtle (attacking from dominant top position after breaking guard)  
+Submissions
+- **Neck Cranks (if allowed)**  
+	- Can Opener  
+	- Twister  
+Sweeps
+- 
 
-### Submissions
-
-
-1. **Pressure Submissions**  
-   - Ezekiel Choke (from mount or side control)  
-   - Cross Collar Choke
-   - Bow and Arrow Choke (from back control)  
-   - Loop Choke (quick to execute during transitions)
-   - D’Arce Choke (strong from side control or sprawl positions)
-   - Peruvian Necktie (quick attack in scrambles)
-
-2. **Arm Locks**  
-   - Americana (from mount or side control)  
-   - Armbar (with strength advantage)
-   - Wrist Locks (subtle attacks from many positions)
-
-3. **Neck Cranks (if allowed)**  
-   - Can Opener  
-   - Twister  
 
 ## Key Observations
 - **Larger Opponents:** Focus on guards and submissions that neutralize their strength, limit mobility, and capitalize on openings. Leverage-based techniques like leg locks and chokes are highly effective.  
@@ -150,14 +137,11 @@ Sweeps
 - **Opponent's Base**: Guards often flow based on your opponent’s balance and posture. For example, if they stand, you might switch to De La Riva or X-Guard; if they kneel, Butterfly or Half Guard is useful.  
 - **Grip Fighting**: Guards that rely on grips (Spider, Lasso, Worm) flow into those with similar control mechanisms.  
 - **Inversion**: Guards like De La Riva and Reverse De La Riva naturally flow into inverted positions like Berimbolo.  
+- **Don’t stay static:** If you’re staying in one guard for too long in a real-world scenario, you risk being overwhelmed by strikes. Use these guards to quickly **sweep, escape, or improve your position.**
 
 
 ![](https://www.youtube.com/watch?v=Db1Do3LapcA)
 
-
-### **Guards to Transition From**
-
-- **Don’t stay static:** If you’re staying in one guard for too long in a real-world scenario, you risk being overwhelmed by strikes. Use these guards to quickly **sweep, escape, or improve your position.**
 
 ---
 
