@@ -151,6 +151,8 @@ style 4 fill:coral,stroke:lime,stroke-width:4px,shadow:shadow
 
 ## Real World Guards & Submissions
 
+
+
 My default state in Jujitsu is reactive focus on being more proactive also incorporating more aggression.
 
 Submissions can be used as a form of sweep or used to create opportunity for other submission.
@@ -169,6 +171,10 @@ Submissions can be used as a form of sweep or used to create opportunity for oth
 - Always monitor grips on your collar and neck—don’t let them dominate this space.
 
 By focusing on proactive techniques, creating angles, and controlling key positions, you'll develop a more assertive and effective game plan.
+
+
+### Effective Against Larger Opponents
+
 
 ``` mermaid
 flowchart LR

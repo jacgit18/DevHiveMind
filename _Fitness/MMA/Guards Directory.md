@@ -33,37 +33,45 @@ dg-publish:
 	- ![[BJJDynamicTwo.gif]]
 	- ![[BJJDynamicThree.gif]]
 
-## Guard Flow 
-
-
-
-
-
-
+# Guard Flow 
 ## Effective Against Larger Opponents
 
 ### Guards 
 Guards that create distance, use leverage, or exploit the opponent's size and strength against them:
 
-1. **Open Guards**  Blue 
+1. **Open Guards**  
+Guards
    - [[De La Riva]] - Attack-Oriented Guard
    - [[Spider]] - Attack-Oriented Guard
    - [[Lasso]] 
    - [[Butterfly]] 
    - [[Collar & Sleeve]]  - Defensive-Oriented guard
+Submissions
+- 
+Sweeps
+- 
 
-2. **[[Half Guards]]**  
+3. **[[Half Guards]]**  
    - Deep Half Guard  
    - ZGuard - Start with half guard knee shield at shoulder then switch to z guard at hip
+Submissions
+- 
+Sweeps
+- 
 
-3. **Leg Entanglements**  
+4. **Leg Entanglements**  
    - Single-leg [[X Guard]] 
    - 50/50 Guard  
+Submissions
+- 
+Sweeps
+- 
 
-4. **Inverted Guards**  
+5. **Inverted Guards**  
    - Tornado Guard  
    - Reverse De La Riva - Attack-Oriented Guard
-
+Sweeps
+- 
 ### Submissions
 Techniques that leverage precision and joint manipulation rather than brute force:
 
