@@ -29,6 +29,7 @@ monthlyPreTaxIncome: 5200
 ### **Rough Financial Breakdown
 #todo/purchases/assets
 - [ ] futures trading
+- [ ] Need to set aside 2,000 or 1300 more to short stocks not part of balance 
 
 Do the math 12 months times monthly cost  
 
