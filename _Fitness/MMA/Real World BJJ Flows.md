@@ -174,6 +174,11 @@ By focusing on proactive techniques, creating angles, and controlling key positi
 
 
 ### Effective Against Larger Opponents
+#### Guards 
+Guards that create distance, use leverage, or exploit the opponent's size and strength against them:
+
+
+
 
 
 ``` mermaid

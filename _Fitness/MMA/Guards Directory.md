@@ -37,7 +37,9 @@ dg-publish:
 ## Effective Against Larger Opponents
 
 ### Guards 
-Guards that create distance, use leverage, or exploit the opponent's size and strength against them:
+Guards that create distance, use leverage, or exploit the opponent's size and strength against them
+
+Techniques that leverage precision and joint manipulation rather than brute force
 
 1. **Open Guards**  
 Guards
@@ -47,7 +49,11 @@ Guards
    - [[Butterfly]] 
    - [[Collar & Sleeve]]  - Defensive-Oriented guard
 Submissions
-- 
+- **Chokes** - All chokes give you armbars
+	- Triangle Choke  
+	- Guillotine Choke  
+	- Arm Triangle Choke (chain attack from side control or mount)
+	- Rear Naked Choke  
 Sweeps
 - 
 
@@ -55,7 +61,11 @@ Sweeps
    - Deep Half Guard  
    - ZGuard - Start with half guard knee shield at shoulder then switch to z guard at hip
 Submissions
-- 
+- **Arm Locks** 
+	- Armbar  
+	- Kimura (with proper leverage from side control, guard, or standing positions)
+	- Omoplata  
+	- Americana  
 Sweeps
 - 
 
@@ -63,7 +73,11 @@ Sweeps
    - Single-leg [[X Guard]] 
    - 50/50 Guard  
 Submissions
-- 
+- **Leg Attacks**  
+   - Straight Ankle Lock  
+   - Heel Hook  
+   - Toe Hold  
+   - Knee Bar (transition from leg entanglements)
 Sweeps
 - 
 
@@ -72,46 +86,45 @@ Sweeps
    - Reverse De La Riva - Attack-Oriented Guard
 Sweeps
 - 
-### Submissions
-Techniques that leverage precision and joint manipulation rather than brute force:
 
-1. **Chokes** - All chokes give you armbars
-   - Triangle Choke  
-   - Guillotine Choke  
-   - Arm Triangle Choke (chain attack from side control or mount)
-   - Rear Naked Choke  
-
-2. **Arm Locks**  
-   - Armbar  
-   - Kimura (with proper leverage from side control, guard, or standing positions)
-   - Omoplata  
-   - Americana  
-
-3. **Leg Attacks**  
-   - Straight Ankle Lock  
-   - Heel Hook  
-   - Toe Hold  
-   - Knee Bar (transition from leg entanglements)
 
 ## Effective Against Smaller Opponents
 
 ### Guards
-Guards that allow control and pressure, benefiting from weight and strength advantages:
+Guards that allow control and pressure, benefiting from weight and strength advantages
+
+Techniques that allow applying pressure or using body weight
 
 1. **[[Closed Guard]]**  - Defensive-Oriented guard
    - Standard Full Closed Guard  
    - High Guard  
+Submissions
+- **Pressure Submissions**  
+   - Ezekiel Choke (from mount or side control)  
+   - Cross Collar Choke
+   - Bow and Arrow Choke (from back control)  
+   - Loop Choke (quick to execute during transitions)
+   - D’Arce Choke (strong from side control or sprawl positions)
+   - Peruvian Necktie (quick attack in scrambles)
+Sweeps
+	- 
 
 2. **Pressure Guards**  
    - Half Guard with Underhook - Defensive-Oriented guard
    - Lockdown Guard  - lock legs in half guard
-
-3. **Top Guards (Dominant Guards)**  
+Submissions
+- **Arm Locks** 
+   - Americana (from mount or side control)  
+   - Armbar (with strength advantage)
+   - Wrist Locks (subtle attacks from many positions)
+Sweeps
+- 
+1. **Top Guards (Dominant Guards)**  
    - Mount Guard (transition from bottom)  
    - Top Turtle (attacking from dominant top position after breaking guard)  
 
 ### Submissions
-Techniques that allow applying pressure or using body weight:
+
 
 1. **Pressure Submissions**  
    - Ezekiel Choke (from mount or side control)  
