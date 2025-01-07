@@ -1,7 +1,6 @@
 ## All Guard Flow
 Remember you always start off Standing
 
-s-mount mount but a high mount were you bring your knee above there head eventually hook there far arm with your other leg   
 ``` mermaid
 flowchart LR
 	Closed[Closed Full Guard] 
@@ -21,6 +20,7 @@ flowchart LR
 	N[50/50]
 	O[Worm]
 	P[Tornado]
+	SMount[SMount]
 	Q[Rubber]
 	R[Mission Control]
 	Z[ZGuard]
@@ -43,6 +43,8 @@ flowchart LR
 	G <-.-> ElevatorGuard
 	H <-.-> ElevatorGuard
 	Z <-.-> ElevatorGuard
+
+	J <-.-> SMount
 	
 
 	Closed --> OctopusGuard
@@ -90,6 +92,8 @@ flowchart LR
 	R --> 2
 	R --> 3 
 	R --> 4 
+
+style SMount fill:blue,stroke:black,stroke-width:4px,shadow:shadow
 
 style OctopusGuard fill:blue,stroke:black,stroke-width:4px,shadow:shadow
 
@@ -183,6 +187,7 @@ flowchart LR
 	M[Berimbolo]
 	N[50/50]
 	Q[Rubber]
+	SMount[SMount]
 	R[Mission Control]
 	Z[ZGuard]
 	OctopusGuard[Octopus Guard]
@@ -201,6 +206,8 @@ flowchart LR
 	10[AnkleLock]
 
 	11[HealLock]
+
+	J <-.-> SMount
 
 	A <-.-> ElevatorGuard
 	B <-.-> ElevatorGuard
@@ -254,6 +261,8 @@ flowchart LR
 	R --> 2
 	R --> 3 
 	R --> 4 
+
+style SMount fill:blue,stroke:black,stroke-width:4px,shadow:shadow
 
 style ElevatorGuard fill:blue,stroke:black,stroke-width:4px,shadow:shadow
 
@@ -339,6 +348,7 @@ flowchart LR
 	O[Worm]
 	P[Tornado]
 	Q[Rubber]
+	SMount[SMount]
 	R[Mission Control]
 	Z[ZGuard]
 	KGuard[KGuard]
@@ -357,6 +367,8 @@ flowchart LR
 	DoubleAnkle[DoubleAnkle]
 	PushSweep[PushSweep]
 
+
+	J <-.-> SMount 
 	Closed --> OctopusGuard
 	D <-.-> OctopusGuard
 	H <-.-> OctopusGuard
@@ -408,6 +420,8 @@ flowchart LR
 	L --> F
 	I <-.-> K
 	R <-.-> Q 
+
+style SMount fill:blue,stroke:black,stroke-width:4px,shadow:shadow
 
 style ElevatorGuard fill:blue,stroke:black,stroke-width:4px,shadow:shadow
 

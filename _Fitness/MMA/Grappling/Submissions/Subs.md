@@ -1,5 +1,3 @@
-### **Self-Defense Focused Submissions: Prioritizing Safety, Control, and Efficiency**
-
 In real-world self-defense, your submission choices should prioritize:
 
 1. **Safety from strikes (punches, kicks, slams).**
@@ -41,88 +39,44 @@ In real-world self-defense, your submission choices should prioritize:
 
 #### **Leg Entanglements (Bottom/Guard Passing)**
 - **Straight Ankle Lock**: Allows distance and targets the lower body without exposing your face to strikes.
-    - **Safety Tip**: Apply quickly to avoid prolonged exposure.
-
 - **Outside Ashi Garami (Heel Hook)**: Keeps the other leg farther away for better control and safety.
-    - **Safety Tip**: Execute quickly and with control to avoid lingering in risky positions.
+
 
 ---
 
 ### **Top Position Submissions**
 
 #### **Passing Full Guard**
-
 - **Arm Triangle**: Control the head and arm after passing guard.
 - **Americana**: Attack a pinned arm once in a dominant position.
-- **Kimura**: Transition from passing guard into side control for the submission.
-
-
-**Kimura (From Guard or Side Control)**
-- **Why it’s safe:**
-    - Controls their arm, limiting their ability to strike.
-    - Safer from top side control or guard when you’re controlling their posture.
-- **Tips for safety:**
-    - Apply pressure quickly to avoid prolonged struggle.
-    - Be ready to transition if the opponent tries to slam you.
+- **Kimura (From Guard or Side Control)**:  Transition from passing guard into side control for the submission.
 
 #### **Side Control**
-
-- **Americana**: Trap the arm and apply pressure toward the head.
-**Americana (Top Mount or Side Control)**
-
-- **Why it’s safe:**
-    - Performed from dominant positions that limit the opponent’s striking options.
-    - Quick submission to incapacitate the opponent.
-- **Application:**
-    - Pin their wrist to the mat, isolate their arm, and apply pressure to the shoulder joint.
-
-
+- **Americana (Top Mount or Side Control)**: Trap the arm and apply pressure toward the head.
 - **Kimura**: Use wrist control to isolate the shoulder.
 - **Arm Triangle**: Trap the opponent’s head and arm during a transition.
 - **Baseball Bat Choke**: Use lapel grips to create choke pressure.
 
 #### **Mount**
-
 - **Armbar**: Swing into the submission after isolating an arm.
 - **Mounted Triangle**: Transition by trapping an arm and wrapping your legs.
 - **Ezekiel Choke**: Use sleeve grips to apply a forearm choke.
 - **Cross Collar Choke**: Utilize deep lapel grips for a choke.
 
-
 #### Mount/S-Mount/Side Control/Knee-on-Belly/Turtle
-S-mount is a mount but a high mount were you bring your knee above there head eventually hook there far arm with your other leg   
+S-mount is a high variation of the mount position where you elevate your knee above the opponent's head. The position allows for greater control and better access to submissions.
 
-**Straight Armbar (Mounted or Side Control)**
-
-- **Why it’s safe:**
-    - Effective from dominant positions where you’re less likely to get hit or slammed.
-    - Keeps you in control of the arm and limits their ability to punch.
-- **Tips for safety:**
-    - Avoid armbars from closed guard in a self-defense scenario, as they expose you to strikes.
-
+- **Straight Armbar (Mounted or Side Control)**
 
 #### **North-South**
-
 - **Kimura**: Leverage isolated arm control.
 - **North-South Choke**: Apply choke pressure with head-and-arm control.
 
 #### **Back Mount**
-
 - **Rear Naked Choke (RNC)**: Use seatbelt grips and secure the choke.
 - **Bow and Arrow Choke**: Attack with lapel grips while controlling the leg.
 
-
-**Rear Triangle Choke (From Back Control)**
-
-- **Why it’s safe:**
-    - Combines the benefits of rear control with a tight choke.
-    - Opponent cannot punch or kick effectively while trapped.
-- **Application:**
-    - Secure back control, isolate one arm, and lock your legs in a triangle configuration.
-
-
 #### **Leg Entanglements (Top/Guard Passing)**
-
 - **Straight Ankle Locks**: Attack exposed legs.
 - **Heel Hooks**: Apply rotational pressure on the knee.
 - **Kneebars**: Isolate and extend the opponent’s leg for the submission.
