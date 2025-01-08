@@ -185,12 +185,14 @@ style Turtle fill:blue,stroke:White,stroke-width:4px,shadow:shadow
 - **Guillotine Choke**
 - **Rear Naked Choke (RNC)**
 - **Triangle Choke**
+	- 
 - Try low in terms of positions
 	- **Buggy Choke** Avail from side control top & bottom
-		- Counter with From **Arm Triangle** If they attempt an arm triangle, use the choke to trap them in side control.
+		- Counter with from **Arm Triangle** If they attempt an arm triangle, use the choke to trap them in side control.
 	- **Ezekiel Choke** Avail from top Mount & bottom Half Guard
-		- Counter with From
-- **Arm Triangle**: Highly effective but with fewer positions to set up compared to others.
+		- Counter with from **RNC Defense** If they defend their neck by tucking their chin, use the sleeve for an Ezekiel choke.
+- **Arm Triangle** Avail from top side control  & Mount
+	- Counter with from **Triangle Defense** If they posture to escape a triangle, use the transition to lock an arm triangle.
 ### Top Submissions to Practice Countering and Escaping
 - **Kimura**
 - **Americana**
@@ -255,7 +257,6 @@ Look at [[Sub Counters]] & leverage [[Sub Tactics]]
 - **Neck Cranks:** Can Opener, Twister (if legal).
 - **Chokes:** D’Arce, Peruvian Necktie.
 
-use [[Prior Flow]]
 ``` mermaid
 flowchart LR
     A[Full Guard] 
@@ -294,8 +295,18 @@ flowchart LR
 	11[HealLock]
 	12[Buggy Choke]
 	13[Ezekiel Choke]
-
+	14[Bow&Arrow Choke]
+	
+	
+	1 <-.-> 4
+	1 <-.-> 3
+	5 <-.-> 7
+	5 <-.-> 8
+	6 <-.-> 4
+	6 <-.-> 14
+	7 <-.-> 5
 	12 <-.-> 1
+	13 <-.-> 5
 
     A <-.-> B
     A <-.-> C
@@ -335,12 +346,16 @@ flowchart LR
 	H <-.-> ElevatorGuard
 	H <-.-> OctopusGuard
 	H <-.-> Turtle
+	H <-.-> 13
 	I <-.-> J
 	I <-.-> OctopusGuard
 	I <-.-> Turtle
+	I <-.-> 5
 	I <-.-> 12
 	J --> N
 	J <-.-> SMount
+	J <-.-> 5
+	J --> 13
 	K <-.-> Turtle
 	L <-.-> C
 	L --> F
@@ -411,6 +426,8 @@ style 11 fill:coral,stroke:lime,stroke-width:4px,shadow:shadow
 style 12 fill:darkgray,stroke:red,stroke-width:4px,shadow:shadow
 
 style 13 fill:darkgray,stroke:red,stroke-width:4px,shadow:shadow
+
+style 14 fill:darkgray,stroke:red,stroke-width:4px,shadow:shadow
 
 style Closed fill:teal,stroke:yellow,stroke-width:4px,shadow:shadow
 

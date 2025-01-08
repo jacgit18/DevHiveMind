@@ -11,10 +11,6 @@ Relates:
 Peer Reviewed: 0
 dg-publish:
 ---
-Here’s a breakdown of the requested submissions, detailing how they can be initiated from various positions (top and bottom), their chaining potential, and counters to transition into them when defending against a submission.
-
----
-
 ### **1. Armbar (Straight Armbar)**
 
 #### **From Top:**
@@ -29,11 +25,6 @@ Here’s a breakdown of the requested submissions, detailing how they can be ini
 - **Closed Guard:** Break posture, isolate the arm, and pivot your hips to swing the leg over their head.
 - **Spider Guard:** Use grip control to stretch the opponent’s arm and transition into an armbar.
 - **Butterfly Guard:** Sweep or off-balance the opponent, isolating the arm during the transition.
-
-#### **Chains and Flows:**
-
-- **To Triangle Choke:** If they defend by pulling their arm out, loop your leg around their neck for a triangle.
-- **To Omoplata:** If they pull their arm downward, rotate and attack the shoulder.
 
 #### **Counters:**
 
@@ -56,11 +47,6 @@ Here’s a breakdown of the requested submissions, detailing how they can be ini
 - **Butterfly Guard:** Use an arm drag to expose their neck.
 - **Half Guard:** Trap their head and arm during pressure passing.
 
-#### **Chains and Flows:**
-
-- **To Arm-In Guillotine:** If they try to defend with one arm inside, adjust your grip to include their arm.
-- **To Arm Triangle:** If they escape by turning to the side, trap their head and arm for the arm triangle.
-
 #### **Counters:**
 
 - **From an Arm Triangle Escape:** If they roll out of an arm triangle, wrap their neck for a guillotine.
@@ -80,10 +66,6 @@ Here’s a breakdown of the requested submissions, detailing how they can be ini
 - **After a Sweep:** Sweep them and take their back as they recover.
 - **From Transition:** If you escape side control, transition to their back for the RNC.
 
-#### **Chains and Flows:**
-
-- **To Armbar:** If they defend by tucking their chin, isolate an arm for the armbar.
-- **To Bow and Arrow Choke:** If wearing a gi, grab their lapel to transition.
 
 #### **Counters:**
 
@@ -104,55 +86,10 @@ Here’s a breakdown of the requested submissions, detailing how they can be ini
 - **Closed Guard:** Trap one arm and pivot your hips to lock your legs around their head.
 - **Spider Guard:** Use grip control to manipulate their arms and isolate the neck.
 
-#### **Chains and Flows:**
-
-- **To Armbar:** If they defend by posturing, attack the isolated arm.
-- **To Omoplata:** If they try to stack, rotate to trap their shoulder.
-
 #### **Counters:**
 
 - **From a Guillotine Defense:** If they pull their neck out, trap one arm for a triangle.
 - **From an Armbar Escape:** When they pull their arm free, switch to a triangle.
-
----
-
-
-
----
-
-### **6. Ezekiel Choke**
-
-#### **From Bottom:**
-
-- **Half Guard:** Use the sleeve grip to attack when they apply pressure.
-
-#### **Chains and Flows:**
-
-- **To Arm Triangle:** If they turn their head to escape, trap their arm and attack the arm triangle.
-
-#### **Counters:**
-
-- **From RNC Defense:** If they defend their neck by tucking their chin, use the sleeve for an Ezekiel choke.
-
----
-
-### **7. Arm Triangle**
-
-#### **From Top:**
-
-- **Side Control:** Trap their head and arm with shoulder pressure.
-- **Mount:** Use chest pressure to isolate their head and arm.
-
-#### **Chains and Flows:**
-
-- **To Guillotine:** If they escape by turning into you, wrap their neck.
-- **To Kimura:** If they defend with their arms, attack the isolated shoulder.
-
-#### **Counters:**
-
-- **From Triangle Defense:** If they posture to escape a triangle, use the transition to lock an arm triangle.
-
----
 
 ### **Flow Summary**
 
