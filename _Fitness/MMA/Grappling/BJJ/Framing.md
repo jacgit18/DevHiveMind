@@ -13,6 +13,8 @@ dg-publish:
 ---
 ### Framing and Establishing Points of Contact in BJJ
 
+**Avoid Kipping** as a first option—it can put you in bad positions. Opt for more stable transitions first.
+
 - **Far Arm for Framing**:
     - Use your far arm (opposite to the shoulder that's on the ground) to initiate framing. This is crucial for creating initial space and controlling the opponent's movement.
 
@@ -32,7 +34,16 @@ This method combines both arms effectively while leveraging your legs to stay fl
 
 
 
-  
+### Hand Fighting Tips:
+**Keep Hands Low on the Collar**: High grips can give your opponent more control over you.
+
+**Control Hands vs. Solving Hand Problems**: Prioritize preventing grips and neutralizing their hands before solving grip issues.
+
+- Fight for the inside position; it gives you better leverage and control.
+- Use alternating inward and outward circling motions to break grips.
+- Always monitor grips on your collar and neck—don’t let them dominate this space.
+
+By focusing on proactive techniques, creating angles, and controlling key positions, you'll develop a more assertive and effective game plan.  
 
 
 
