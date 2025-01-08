@@ -114,13 +114,13 @@ style SMount fill:blue,stroke:black,stroke-width:4px,shadow:shadow
 
 style OctopusGuard fill:blue,stroke:black,stroke-width:4px,shadow:shadow
 
-style Closed fill:teal,stroke:black,stroke-width:4px,shadow:shadow
+style Closed fill:teal,stroke:yellow,stroke-width:4px,shadow:shadow
 
 style KGuard fill:blue,stroke:black,stroke-width:4px,shadow:shadow
 
 style ElevatorGuard fill:blue,stroke:black,stroke-width:4px,shadow:shadow
 
-style A fill:green,stroke:black,stroke-width:4px,shadow:shadow
+style A fill:green,stroke:red,stroke-width:4px,shadow:shadow
 
 style B fill:blue,stroke:black,stroke-width:4px,shadow:shadow
 
@@ -129,6 +129,8 @@ style C fill:blue,stroke:black,stroke-width:4px,shadow:shadow
 style D fill:blue,stroke:black,stroke-width:4px,shadow:shadow
 
 style E fill:blue,stroke:black,stroke-width:4px,shadow:shadow
+
+style F fill:blue,stroke:pink,stroke-width:4px,shadow:shadow
 
 style G fill:blue,stroke:black,stroke-width:4px,shadow:shadow
 
@@ -150,9 +152,9 @@ style O fill:blue,stroke:black,stroke-width:4px,shadow:shadow
 
 style P fill:blue,stroke:black,stroke-width:4px,shadow:shadow
 
-style Q fill:blue,stroke:black,stroke-width:4px,shadow:shadow
+style Q fill:blue,stroke:red,stroke-width:4px,shadow:shadow
 
-style R fill:blue,stroke:black,stroke-width:4px,shadow:shadow
+style R fill:blue,stroke:red,stroke-width:4px,shadow:shadow
 
 style Z fill:blue,stroke:black,stroke-width:4px,shadow:shadow
 
@@ -339,11 +341,11 @@ style SMount fill:blue,stroke:black,stroke-width:4px,shadow:shadow
 
 style ElevatorGuard fill:blue,stroke:black,stroke-width:4px,shadow:shadow
 
-style Closed fill:teal,stroke:black,stroke-width:4px,shadow:shadow
+style Closed fill:teal,stroke:yellow,stroke-width:4px,shadow:shadow
 
 style OctopusGuard fill:blue,stroke:black,stroke-width:4px,shadow:shadow
 
-style A fill:green,stroke:black,stroke-width:4px,shadow:shadow
+style A fill:green,stroke:red,stroke-width:4px,shadow:shadow
 
 style B fill:blue,stroke:black,stroke-width:4px,shadow:shadow
 
@@ -353,7 +355,7 @@ style D fill:blue,stroke:black,stroke-width:4px,shadow:shadow
 
 style E fill:blue,stroke:black,stroke-width:4px,shadow:shadow
 
-style F fill:blue,stroke:black,stroke-width:4px,shadow:shadow
+style F fill:blue,stroke:pink,stroke-width:4px,shadow:shadow
 
 style G fill:blue,stroke:black,stroke-width:4px,shadow:shadow
 
@@ -371,9 +373,9 @@ style M fill:blue,stroke:black,stroke-width:4px,shadow:shadow
 
 style N fill:blue,stroke:black,stroke-width:4px,shadow:shadow
 
-style Q fill:blue,stroke:black,stroke-width:4px,shadow:shadow
+style Q fill:blue,stroke:red,stroke-width:4px,shadow:shadow
 
-style R fill:blue,stroke:black,stroke-width:4px,shadow:shadow
+style R fill:blue,stroke:red,stroke-width:4px,shadow:shadow
 
 style Z fill:blue,stroke:black,stroke-width:4px,shadow:shadow
 
