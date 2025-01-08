@@ -2,6 +2,11 @@
 
 > **Your body isn't solely your possession it is subject to everyone assuming you allow them to control and manipulate it. Focus on what you can control, but within that scope of control understand you can't control everything no matter how much you fight. Embrace the flow of control or the absence of control.**
 
+#### Road to Third Strip
+#todo/Personal/MMA/BAU
+- [ ] Focus on Sweeps against [[BJJ Priority Flows#Priority Guards to Sweeps |Bigger People]]
+- [ ] Focus on Defense of [[BJJ Priority Flows#Top Submissions to Practice Countering and Escaping |Power Submissions]]
+
 Guards not mentioned here can be risky in real-world scenarios where strikes are a factor. It’s important to move away from a reactive mindset and focus on being more proactive throwing in more aggression in your approach.
 
 Submissions can serve as both sweeps and opportunities to transition to other submissions. Approach with the mindset that the opponent's limbs are obstacles; using submissions to manipulate their limbs can help create openings, especially for securing chokes.
