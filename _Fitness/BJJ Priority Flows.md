@@ -186,8 +186,10 @@ style Turtle fill:blue,stroke:White,stroke-width:4px,shadow:shadow
 - **Rear Naked Choke (RNC)**
 - **Triangle Choke**
 - Try low in terms of positions
-	- **Buggy Choke**
-	- **Ezekiel Choke**
+	- **Buggy Choke** Avail from side control top & bottom
+		- Counter with From **Arm Triangle** If they attempt an arm triangle, use the choke to trap them in side control.
+	- **Ezekiel Choke** Avail from top Mount & bottom Half Guard
+		- Counter with From
 - **Arm Triangle**: Highly effective but with fewer positions to set up compared to others.
 ### Top Submissions to Practice Countering and Escaping
 - **Kimura**
@@ -290,6 +292,10 @@ flowchart LR
 	9[Americana]
 	10[AnkleLock]
 	11[HealLock]
+	12[Buggy Choke]
+	13[Ezekiel Choke]
+
+	12 <-.-> 1
 
     A <-.-> B
     A <-.-> C
@@ -332,6 +338,7 @@ flowchart LR
 	I <-.-> J
 	I <-.-> OctopusGuard
 	I <-.-> Turtle
+	I <-.-> 12
 	J --> N
 	J <-.-> SMount
 	K <-.-> Turtle
@@ -400,6 +407,10 @@ style 9 fill:coral,stroke:lime,stroke-width:4px,shadow:shadow
 style 10 fill:coral,stroke:lime,stroke-width:4px,shadow:shadow
 
 style 11 fill:coral,stroke:lime,stroke-width:4px,shadow:shadow
+
+style 12 fill:darkgray,stroke:red,stroke-width:4px,shadow:shadow
+
+style 13 fill:darkgray,stroke:red,stroke-width:4px,shadow:shadow
 
 style Closed fill:teal,stroke:yellow,stroke-width:4px,shadow:shadow
 

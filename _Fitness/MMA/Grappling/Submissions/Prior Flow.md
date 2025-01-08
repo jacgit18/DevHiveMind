@@ -116,28 +116,11 @@ Here’s a breakdown of the requested submissions, detailing how they can be ini
 
 ---
 
-### **5. Buggy Choke**
 
-#### **From Bottom:**
-
-- **Side Control:** Use the opponent’s pressure to lock their head and arm with your legs.
-
-#### **Chains and Flows:**
-
-- **To Triangle Choke:** If they posture up, use their arm to transition to a triangle.
-
-#### **Counters:**
-
-- **From Arm Triangle Defense:** If they attempt an arm triangle, use the choke to trap them in side control.
 
 ---
 
 ### **6. Ezekiel Choke**
-
-#### **From Top:**
-
-- **Mount:** Use your sleeve grip to apply a forearm choke.
-- **Side Control:** Transition to mount and lock in the choke.
 
 #### **From Bottom:**
 
