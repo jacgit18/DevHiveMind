@@ -4,13 +4,14 @@
 
 #### Road to Third Strip
 #todo/Personal/MMA/BAU
+- [ ] Work on [[Framing]] & Closed Guard
 - [ ] Focus on Guards against Bigger People
-	- [ ] [[BJJ Priority Flows#]]
+	- [ ] [[BJJ Priority Flows#Priority Open Guard Variations|Open Guard Variations]]
 - [ ] Focus on Sweeps against Bigger People
 	- [ ] [[BJJ Priority Flows#Purple - Open Guard Sweeps |Open Guard Sweeps]]
 - [ ] Focus on Defense of [[BJJ Priority Flows#Top Submissions to Practice Countering and Escaping |Power Submissions]]
 - [ ] Look into Knee-on-Belly and add stuff here
-- [ ] Work on [[Framing]]
+
 
 Guards not mentioned here can be risky in real-world scenarios where strikes are a factor. It’s important to move away from a reactive mindset and focus on being more proactive throwing in more aggression in your approach.
 
@@ -448,7 +449,8 @@ Transition to positions that maximize weight advantage.
 - Shaolin Sweep
 
 #### White - Turtle/Mount/SMount Guard Sweeps 
-add sweeps from [[Turtle|Turtle]] and [[Mount]]
+#todo/Personal/MMA/BAU 
+- [ ] add sweeps from [[Turtle]] and [[Mount]]
 
 ``` mermaid
 flowchart LR
