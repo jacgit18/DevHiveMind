@@ -246,6 +246,7 @@ Look at [[Sub Counters]] & leverage [[Sub Tactics]]
 - **Neck Cranks:** Can Opener, Twister (if legal).
 - **Chokes:** D’Arce, Peruvian Necktie.
 
+use [[Prior Flow]]
 ``` mermaid
 flowchart LR
     A[Full Guard] 

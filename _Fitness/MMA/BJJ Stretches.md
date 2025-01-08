@@ -11,10 +11,7 @@ Relates:
 Peer Reviewed: 0
 dg-publish:
 ---
-# Opponent Size Best Practices (Bottom Defensive Position)  
-
-
-## BJJ Stretches
+## Stretches
 - Bird dog
 	- ![[birdDog.gif]]
 - Lock Clam

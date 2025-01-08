@@ -189,3 +189,6 @@ Spin toward their legs to turn the position into a scramble or transition to a d
 ---  
   
 Key Tip: In all three cases, prevention is the first step—focus on maintaining strong posture and avoiding isolation of your limbs to stop the setups early. If you're caught, prioritize escaping the position over brute-forcing your way out.
+
+
+
