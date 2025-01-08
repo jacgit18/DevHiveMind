@@ -120,7 +120,7 @@ style KGuard fill:blue,stroke:black,stroke-width:4px,shadow:shadow
 
 style ElevatorGuard fill:blue,stroke:black,stroke-width:4px,shadow:shadow
 
-style A fill:green,stroke:red,stroke-width:4px,shadow:shadow
+style A fill:green,stroke:purple,stroke-width:4px,shadow:shadow
 
 style B fill:blue,stroke:black,stroke-width:4px,shadow:shadow
 
@@ -152,9 +152,9 @@ style O fill:blue,stroke:black,stroke-width:4px,shadow:shadow
 
 style P fill:blue,stroke:black,stroke-width:4px,shadow:shadow
 
-style Q fill:blue,stroke:red,stroke-width:4px,shadow:shadow
+style Q fill:blue,stroke:purple,stroke-width:4px,shadow:shadow
 
-style R fill:blue,stroke:red,stroke-width:4px,shadow:shadow
+style R fill:blue,stroke:purple,stroke-width:4px,shadow:shadow
 
 style Z fill:blue,stroke:black,stroke-width:4px,shadow:shadow
 
@@ -345,7 +345,7 @@ style Closed fill:teal,stroke:yellow,stroke-width:4px,shadow:shadow
 
 style OctopusGuard fill:blue,stroke:black,stroke-width:4px,shadow:shadow
 
-style A fill:green,stroke:red,stroke-width:4px,shadow:shadow
+style A fill:green,stroke:purple,stroke-width:4px,shadow:shadow
 
 style B fill:blue,stroke:black,stroke-width:4px,shadow:shadow
 
@@ -373,9 +373,9 @@ style M fill:blue,stroke:black,stroke-width:4px,shadow:shadow
 
 style N fill:blue,stroke:black,stroke-width:4px,shadow:shadow
 
-style Q fill:blue,stroke:red,stroke-width:4px,shadow:shadow
+style Q fill:blue,stroke:purple,stroke-width:4px,shadow:shadow
 
-style R fill:blue,stroke:red,stroke-width:4px,shadow:shadow
+style R fill:blue,stroke:purple,stroke-width:4px,shadow:shadow
 
 style Z fill:blue,stroke:black,stroke-width:4px,shadow:shadow
 
@@ -404,7 +404,7 @@ style 11 fill:coral,stroke:lime,stroke-width:4px,shadow:shadow
 ```
 
 ## Priority Guards to Sweeps
-#### Red - Open Guard Sweeps 
+#### Purple - Open Guard Sweeps 
 - Scissor Sweep.
 - Pendulum (Flower) Sweep.
 - Butterfly Sweep.
@@ -547,8 +547,10 @@ flowchart LR
 	R <-.-> Q 
 	K <-.-> Turtle
 
-style Scissor fill:black,stroke:red,stroke-width:4px,shadow:shadow
+style Scissor fill:black,stroke:purple,stroke-width:4px,shadow:shadow
+
 style HalfGuardUnderhookSweep fill:black,stroke:orange,stroke-width:4px,shadow:shadow
+
 style PlanBSweep fill:black,stroke:yellow,stroke-width:4px,shadow:shadow
 
 style SickleSweep fill:black,stroke:yellow,stroke-width:4px,shadow:shadow
@@ -561,25 +563,25 @@ style PushSweep fill:black,stroke:yellow,stroke-width:4px,shadow:shadow
 
 style HomerSimpSweep fill:black,stroke:yellow,stroke-width:4px,shadow:shadow
 
-style ArmDrag fill:black,stroke:red,stroke-width:4px,shadow:shadow
+style ArmDrag fill:black,stroke:purple,stroke-width:4px,shadow:shadow
 
 style HipBump fill:black,stroke:yellow,stroke-width:4px,shadow:shadow
 
-style ButterflySweep fill:black,stroke:red,stroke-width:4px,shadow:shadow
+style ButterflySweep fill:black,stroke:purple,stroke-width:4px,shadow:shadow
 
 style ShaolinSweep fill:black,stroke:pink,stroke-width:4px,shadow:shadow
 
 style XSweep fill:black,stroke:pink,stroke-width:4px,shadow:shadow
 
-style BalloonSweep fill:red,stroke:yellow,stroke-width:4px,shadow:shadow
+style BalloonSweep fill:purple,stroke:yellow,stroke-width:4px,shadow:shadow
 
-style Flower fill:black,stroke:red,stroke-width:4px,shadow:shadow
+style Flower fill:black,stroke:purple,stroke-width:4px,shadow:shadow
 
-style LumberJack fill:black,stroke:red,stroke-width:4px,shadow:shadow
+style LumberJack fill:black,stroke:purple,stroke-width:4px,shadow:shadow
 
 style DoubleAnkleSweep fill:black,stroke:yellow,stroke-width:4px,shadow:shadow
 
-style TripodSweep fill:black,stroke:red,stroke-width:4px,shadow:shadow
+style TripodSweep fill:black,stroke:purple,stroke-width:4px,shadow:shadow
 
 style SMount fill:blue,stroke:White,stroke-width:4px,shadow:shadow
 
@@ -598,7 +600,7 @@ style Turtle fill:blue,stroke:White,stroke-width:4px,shadow:shadow
 
 style KGuard fill:blue,stroke:black,stroke-width:4px,shadow:shadow
 
-style A fill:green,stroke:red,stroke-width:4px,shadow:shadow
+style A fill:green,stroke:purple,stroke-width:4px,shadow:shadow
 
 style B fill:blue,stroke:black,stroke-width:4px,shadow:shadow
 
@@ -630,9 +632,9 @@ style O fill:blue,stroke:black,stroke-width:4px,shadow:shadow
 
 style P fill:blue,stroke:Aqua,stroke-width:4px,shadow:shadow
 
-style Q fill:blue,stroke:black,stroke-width:4px,shadow:shadow
+style Q fill:blue,stroke:purple,stroke-width:4px,shadow:shadow
 
-style R fill:blue,stroke:black,stroke-width:4px,shadow:shadow
+style R fill:blue,stroke:purple,stroke-width:4px,shadow:shadow
 
 style Z fill:blue,stroke:black,stroke-width:4px,shadow:shadow
 
