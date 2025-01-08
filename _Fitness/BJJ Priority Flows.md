@@ -263,7 +263,7 @@ flowchart LR
 	ElevatorGuard[Elevator Guard]
 
 	1[Triangle]
-	2[Gogoplata]
+
 	3[Omoplata]
 	4[Armbar]
 	5[ArmTriangle]
@@ -333,7 +333,7 @@ flowchart LR
 	I <-.-> K
 	R <-.-> Q 
 	R --> 1
-	R --> 2
+
 	R --> 3 
 	R --> 4 
 
@@ -382,7 +382,6 @@ style Z fill:blue,stroke:black,stroke-width:4px,shadow:shadow
 
 style 1 fill:darkgray,stroke:red,stroke-width:4px,shadow:shadow
 
-style 2 fill:darkgray,stroke:red,stroke-width:4px,shadow:shadow
 
 style 3 fill:coral,stroke:lime,stroke-width:4px,shadow:shadow
 
