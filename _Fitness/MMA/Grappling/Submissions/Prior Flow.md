@@ -26,13 +26,6 @@ dg-publish:
 - **Spider Guard:** Use grip control to stretch the opponent’s arm and transition into an armbar.
 - **Butterfly Guard:** Sweep or off-balance the opponent, isolating the arm during the transition.
 
-#### **Counters:**
-
-- **From a Guillotine Defense:** If the opponent defends a guillotine by extending an arm, transition into an armbar.
-- **From a Failed Triangle:** If they stack to escape a triangle, isolate the arm and apply the armbar.
-
----
-
 ### **2. Guillotine Choke**
 
 #### **From Top:**
@@ -47,10 +40,9 @@ dg-publish:
 - **Butterfly Guard:** Use an arm drag to expose their neck.
 - **Half Guard:** Trap their head and arm during pressure passing.
 
-#### **Counters:**
 
-- **From an Arm Triangle Escape:** If they roll out of an arm triangle, wrap their neck for a guillotine.
-- **From Failed Armbar Defense:** When they posture out of an armbar, use the momentum to wrap their neck.
+
+
 
 ---
 
@@ -67,29 +59,11 @@ dg-publish:
 - **From Transition:** If you escape side control, transition to their back for the RNC.
 
 
-#### **Counters:**
 
-- **From a Guillotine Defense:** If they defend by pulling their neck out, take their back for the RNC.
-- **From Triangle Escape:** If they posture out of a triangle, transition to their back.
 
 ---
 
-### **4. Triangle Choke**
 
-#### **From Top:**
-
-- **From Mount:** Trap one arm and isolate their head to drop into a mounted triangle.
-- **Side Control:** Step over their shoulder to set up the triangle.
-
-#### **From Bottom:**
-
-- **Closed Guard:** Trap one arm and pivot your hips to lock your legs around their head.
-- **Spider Guard:** Use grip control to manipulate their arms and isolate the neck.
-
-#### **Counters:**
-
-- **From a Guillotine Defense:** If they pull their neck out, trap one arm for a triangle.
-- **From an Armbar Escape:** When they pull their arm free, switch to a triangle.
 
 ### **Flow Summary**
 

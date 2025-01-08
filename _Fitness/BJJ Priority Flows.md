@@ -181,11 +181,17 @@ style Turtle fill:blue,stroke:White,stroke-width:4px,shadow:shadow
 ## Priority Submission Flow
 ### Top Submissions to Practice Attacking (Positions Available: 7+)
 - **Armbar (Straight Armbar)**
-	- Side Control (Far-Side Armbar)  
+	- Counter with from **Guillotine Defense** If the opponent defends a guillotine by extending an arm, transition into an armbar.
+	- Counter with from **Failed Triangle** If they stack to escape a triangle, isolate the arm and apply the armbar.
 - **Guillotine Choke**
+	- Counter with from **Arm Triangle Escape** If they roll out of an arm triangle, wrap their neck for a guillotine.
+	- Counter with from **Failed Armbar Defense** When they posture out of an armbar, use the momentum to wrap their neck.
 - **Rear Naked Choke (RNC)**
-- **Triangle Choke**
-	- 
+	- Counter with from **Guillotine Defense** If they defend by pulling their neck out, take their back for the RNC.
+	- Counter with from **Triangle Escape** If they posture out of a triangle, transition to their back.
+- **Triangle Choke** Top Mount & Side Control and Bottom Open Guard.
+	- Counter with from **Guillotine Defense** If they pull their neck out, trap one arm for a triangle.
+	- Counter with from  **Armbar Escape** When they pull their arm free, switch to a triangle.
 - Try low in terms of positions
 	- **Buggy Choke** Avail from side control top & bottom
 		- Counter with from **Arm Triangle** If they attempt an arm triangle, use the choke to trap them in side control.
