@@ -4,7 +4,10 @@
 
 #### Road to Third Strip
 #todo/Personal/MMA/BAU
-- [ ] Focus on Sweeps against [[BJJ Priority Flows#Priority Guards to Sweeps |Bigger People]]
+- [ ] Focus on Guards against Bigger People
+	- [ ] [[BJJ Priority Flows#]]
+- [ ] Focus on Sweeps against Bigger People
+	- [ ] [[BJJ Priority Flows#Purple - Open Guard Sweeps |Open Guard Sweeps]]
 - [ ] Focus on Defense of [[BJJ Priority Flows#Top Submissions to Practice Countering and Escaping |Power Submissions]]
 - [ ] Look into Knee-on-Belly and add stuff here
 - [ ] Work on [[Framing]]
@@ -497,11 +500,14 @@ flowchart LR
 	TripodSweep[TripodSweep]
 	XSweep[XSweep]
 
+	A --> ArmDrag
 	A --> BalloonSweep
+	A --> ButterflySweep
 	A --> Flower
+	A --> LumberJack
 	A --> Scissor
+	A --> TripodSweep
 	
-
 	Closed --> DoubleAnkleSweep
 	Closed --> HipBump
 	Closed --> HomerSimpSweep
@@ -509,6 +515,13 @@ flowchart LR
 	Closed --> SickleSweep
 	Closed --> PlanBSweep
 	Closed --> PushSweep
+	
+	F --> XSweep
+	H --> DeepHalfSweep
+	H --> HalfGuardUnderhookSweep
+	H --> OldSchoolSweep
+	L --> HelicopterSweep
+	N --> ShaolinSweep 
 
 	A <-.-> KGuard
     A <-.-> B
