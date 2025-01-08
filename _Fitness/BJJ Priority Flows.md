@@ -20,10 +20,10 @@ Remember you always start off Standing
 
 ``` mermaid
 flowchart LR
-	Closed[Closed Full Guard] 
     A[Full Guard] 
     B[De La Riva] 
     C[Spider]
+    Closed[Closed Full Guard] 
     D[Butterfly]
     E[Lasso Guard]
     F[X]
@@ -43,37 +43,14 @@ flowchart LR
 	SMount[SMount]
 	Turtle[Turtle]
 	KGuard[KGuard]
-
 	OctopusGuard[Octopus Guard]
-
 	ElevatorGuard[Elevator Guard]
 
 	1[Triangle]
-	2[Gogoplata]
+	2[change]
 	3[Omoplata]
 	4[Armbar]
 
-	A <-.-> ElevatorGuard
-	B <-.-> ElevatorGuard
-	C <-.-> ElevatorGuard
-	D <-.-> ElevatorGuard
-	F <-.-> ElevatorGuard
-	G <-.-> ElevatorGuard
-	H <-.-> ElevatorGuard
-	Z <-.-> ElevatorGuard
-	H <-.-> Turtle
-	I <-.-> Turtle
-	K <-.-> Turtle
-	
-	J <-.-> SMount
-	
-
-	Closed --> OctopusGuard
-	D <-.-> OctopusGuard
-	H <-.-> OctopusGuard
-	I <-.-> OctopusGuard
-
-	Closed <-.-> A
 	A <-.-> KGuard
     A <-.-> B
     A <-.-> C
@@ -82,6 +59,7 @@ flowchart LR
     A <-.-> H
     A <-.-> Q
     A <-.-> R
+    A <-.-> ElevatorGuard
     B <-.-> C
     B --> F
     B --> G
@@ -90,29 +68,45 @@ flowchart LR
     B --> N
     B --> O
     B --> R
+    B <-.-> ElevatorGuard
     C --> D
     C --> E
     C --> G
+    C <-.-> ElevatorGuard
+    Closed <-.-> A
+	Closed --> OctopusGuard
 	D --> F
 	D --> N
 	D --> Q
 	D --> R
+	D <-.-> ElevatorGuard
+	D <-.-> OctopusGuard
 	F --> N
+	F <-.-> ElevatorGuard
+	G <-.-> ElevatorGuard
 	H <-.-> I
 	H --> P
 	H <-.-> Q 
 	H --> R
 	H <-.-> Z
+	H <-.-> ElevatorGuard
+	H <-.-> OctopusGuard
+	H <-.-> Turtle
 	I <-.-> J
 	J --> N
+	J <-.-> SMount
+	K <-.-> Turtle
 	L <-.-> C
 	L --> F
 	I <-.-> K
+	I <-.-> OctopusGuard
+	I <-.-> Turtle
 	R <-.-> Q 
 	R --> 1
 	R --> 2
 	R --> 3 
 	R --> 4 
+	Z <-.-> ElevatorGuard
 
 style SMount fill:blue,stroke:white,stroke-width:4px,shadow:shadow
 
@@ -457,10 +451,10 @@ add sweeps from [[_Fitness/MMA/Grappling/BJJ/Untitled|Untitled]]
 
 ``` mermaid
 flowchart LR
-	Closed[Closed Full Guard] 
     A[Full Guard] 
     B[De La Riva] 
     C[Spider]
+    Closed[Closed Full Guard] 
     D[Butterfly]
     E[Lasso Guard]
     F[X]
@@ -477,11 +471,12 @@ flowchart LR
 	Q[Rubber]
 	R[Mission Control]
 	Z[ZGuard]
-		SMount[SMount]
+	SMount[SMount]
 	Turtle[Turtle]
 	KGuard[KGuard]
 	OctopusGuard[Octopus Guard]
 	ElevatorGuard[Elevator Guard]
+	
 
 	ArmDrag[ArmDrag]
 	ShaolinSweep[ShaolinSweep]
@@ -504,25 +499,6 @@ flowchart LR
 	DeepHalfSweep[DeepHalfSweep]
 	OldSchoolSweep[OldSchoolSweep]
 
-	J <-.-> SMount 
-	Closed --> OctopusGuard
-	D <-.-> OctopusGuard
-	H <-.-> OctopusGuard
-	I <-.-> OctopusGuard
-	H <-.-> Turtle
-	I <-.-> Turtle
-	K <-.-> Turtle
-	
-	A <-.-> ElevatorGuard
-	B <-.-> ElevatorGuard
-	C <-.-> ElevatorGuard
-	D <-.-> ElevatorGuard
-	F <-.-> ElevatorGuard
-	G <-.-> ElevatorGuard
-	H <-.-> ElevatorGuard
-	Z <-.-> ElevatorGuard
-
-	Closed <-.-> A
 	A <-.-> KGuard
     A <-.-> B
     A <-.-> C
@@ -531,6 +507,7 @@ flowchart LR
     A <-.-> H
     A <-.-> Q
     A <-.-> R
+    A <-.-> ElevatorGuard
     B <-.-> C
     B --> F
     B --> G
@@ -539,26 +516,42 @@ flowchart LR
     B --> N
     B --> O
     B --> R
+    B <-.-> ElevatorGuard
     C --> D
     C --> E
     C --> G
+    C <-.-> ElevatorGuard
+    Closed <-.-> A
+	Closed --> OctopusGuard
 	D --> F
 	D --> N
 	D --> Q
 	D --> R
+	D <-.-> ElevatorGuard
+	D <-.-> OctopusGuard
 	F --> N
+	F <-.-> ElevatorGuard
+	G <-.-> ElevatorGuard
 	H <-.-> I
 	H --> P
 	H <-.-> Q 
 	H --> R
 	H <-.-> Z
+	H <-.-> ElevatorGuard
+	H <-.-> OctopusGuard
+	H <-.-> Turtle
 	I <-.-> J
+	I <-.-> OctopusGuard
+	I <-.-> Turtle
 	J --> N
+	J <-.-> SMount 
+	K <-.-> Turtle
 	L <-.-> C
 	L --> F
 	I <-.-> K
 	R <-.-> Q 
-
+	Z <-.-> ElevatorGuard
+	
 style Scissor fill:black,stroke:purple,stroke-width:4px,shadow:shadow
 
 style HalfGuardUnderhookSweep fill:black,stroke:orange,stroke-width:4px,shadow:shadow
