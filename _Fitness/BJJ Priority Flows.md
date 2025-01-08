@@ -47,7 +47,7 @@ flowchart LR
 	ElevatorGuard[Elevator Guard]
 
 	1[Triangle]
-	2[change]
+	2[Gogoplata]
 	3[Omoplata]
 	4[Armbar]
 
@@ -240,10 +240,10 @@ Look at [[Sub Counters]] & leverage [[Sub Tactics]]
 
 ``` mermaid
 flowchart LR
-	Closed[Closed Full Guard] 
     A[Full Guard] 
     B[De La Riva] 
     C[Spider]
+    Closed[Closed Full Guard] 
     D[Butterfly]
     E[Lasso Guard]
     F[X]
@@ -264,45 +264,17 @@ flowchart LR
 	ElevatorGuard[Elevator Guard]
 
 	1[Triangle]
-
+	2[RNC]
 	3[Omoplata]
 	4[Armbar]
 	5[ArmTriangle]
 	6[RNC]
 	7[Guillotine]
-
 	8[Kimura]
 	9[Americana]
 	10[AnkleLock]
-
 	11[HealLock]
 
-	J <-.-> SMount
-
-	A <-.-> ElevatorGuard
-	B <-.-> ElevatorGuard
-	C <-.-> ElevatorGuard
-	D <-.-> ElevatorGuard
-	F <-.-> ElevatorGuard
-	G <-.-> ElevatorGuard
-	H <-.-> ElevatorGuard
-	Z <-.-> ElevatorGuard
-
-	F <-.-> ElevatorGuard
-	B --> F
-	D --> F
-	F --> N
-	L --> F
-	
-	Closed --> OctopusGuard
-	D <-.-> OctopusGuard
-	H <-.-> OctopusGuard
-	I <-.-> OctopusGuard
-	H <-.-> Turtle
-	I <-.-> Turtle
-	K <-.-> Turtle
-	
-	Closed <-.-> A
     A <-.-> B
     A <-.-> C
     A <-.-> D
@@ -310,36 +282,52 @@ flowchart LR
     A <-.-> H
     A <-.-> Q
     A <-.-> R
+    A <-.-> ElevatorGuard
     B <-.-> C
-
+	B --> F
     B --> G
     B <-.-> L
     B --> M
     B --> N
-
     B --> R
+    B <-.-> ElevatorGuard
     C --> D
     C --> E
     C --> G
-
+    C <-.-> ElevatorGuard
+	Closed <-.-> A
+	Closed --> OctopusGuard
+	D --> F
 	D --> N
 	D --> Q
 	D --> R
-
+	D <-.-> OctopusGuard
+	D <-.-> ElevatorGuard
+	F --> N
+	F <-.-> ElevatorGuard
+	G <-.-> ElevatorGuard
 	H <-.-> I
 	H <-.-> Q 
 	H --> R
 	H <-.-> Z
+	H <-.-> ElevatorGuard
+	H <-.-> OctopusGuard
+	H <-.-> Turtle
 	I <-.-> J
+	I <-.-> OctopusGuard
+	I <-.-> Turtle
 	J --> N
+	J <-.-> SMount
+	K <-.-> Turtle
 	L <-.-> C
-
+	L --> F
 	I <-.-> K
 	R <-.-> Q 
 	R --> 1
-
 	R --> 3 
 	R --> 4 
+	Turtle --> 2 
+	Z <-.-> ElevatorGuard
 
 style SMount fill:blue,stroke:white,stroke-width:4px,shadow:shadow
 
@@ -377,7 +365,7 @@ style L fill:blue,stroke:Cyan,stroke-width:4px,shadow:shadow
 
 style M fill:blue,stroke:black,stroke-width:4px,shadow:shadow
 
-style N fill:blue,stroke:black,stroke-width:4px,shadow:shadow
+style N fill:blue,stroke:pink,stroke-width:4px,shadow:shadow
 
 style Q fill:blue,stroke:purple,stroke-width:4px,shadow:shadow
 
@@ -388,6 +376,7 @@ style Z fill:blue,stroke:black,stroke-width:4px,shadow:shadow
 
 style 1 fill:darkgray,stroke:red,stroke-width:4px,shadow:shadow
 
+style 2 fill:darkgray,stroke:red,stroke-width:4px,shadow:shadow
 
 style 3 fill:coral,stroke:lime,stroke-width:4px,shadow:shadow
 
