@@ -37,10 +37,10 @@ flowchart LR
 	N[50/50]
 	O[Worm]
 	P[Tornado]
-	SMount[SMount]
 	Q[Rubber]
 	R[Mission Control]
 	Z[ZGuard]
+	SMount[SMount]
 	Turtle[Turtle]
 	KGuard[KGuard]
 
@@ -140,7 +140,7 @@ style F fill:blue,stroke:pink,stroke-width:4px,shadow:shadow
 
 style G fill:blue,stroke:purple,stroke-width:4px,shadow:shadow
 
-style H fill:green,stroke:black,stroke-width:4px,shadow:shadow
+style H fill:green,stroke:orange,stroke-width:4px,shadow:shadow
 
 style I fill:green,stroke:black,stroke-width:4px,shadow:shadow
 
@@ -156,7 +156,7 @@ style N fill:blue,stroke:pink,stroke-width:4px,shadow:shadow
 
 style O fill:blue,stroke:black,stroke-width:4px,shadow:shadow
 
-style P fill:blue,stroke:black,stroke-width:4px,shadow:shadow
+style P fill:blue,stroke:Cyan,stroke-width:4px,shadow:shadow
 
 style Q fill:blue,stroke:purple,stroke-width:4px,shadow:shadow
 
@@ -265,6 +265,7 @@ flowchart LR
 	SMount[SMount]
 	R[Mission Control]
 	Z[ZGuard]
+	Turtle[Turtle]
 	OctopusGuard[Octopus Guard]
 	ElevatorGuard[Elevator Guard]
 
@@ -303,6 +304,9 @@ flowchart LR
 	D <-.-> OctopusGuard
 	H <-.-> OctopusGuard
 	I <-.-> OctopusGuard
+	H <-.-> Turtle
+	I <-.-> Turtle
+	K <-.-> Turtle
 	
 	Closed <-.-> A
     A <-.-> B
@@ -345,27 +349,29 @@ flowchart LR
 
 style SMount fill:blue,stroke:white,stroke-width:4px,shadow:shadow
 
-style ElevatorGuard fill:blue,stroke:black,stroke-width:4px,shadow:shadow
+style ElevatorGuard fill:blue,stroke:purple,stroke-width:4px,shadow:shadow
 
 style Closed fill:teal,stroke:yellow,stroke-width:4px,shadow:shadow
+
+style Turtle fill:blue,stroke:White,stroke-width:4px,shadow:shadow
 
 style OctopusGuard fill:blue,stroke:black,stroke-width:4px,shadow:shadow
 
 style A fill:green,stroke:purple,stroke-width:4px,shadow:shadow
 
-style B fill:blue,stroke:black,stroke-width:4px,shadow:shadow
+style B fill:blue,stroke:purple,stroke-width:4px,shadow:shadow
 
-style C fill:blue,stroke:black,stroke-width:4px,shadow:shadow
+style C fill:blue,stroke:purple,stroke-width:4px,shadow:shadow
 
-style D fill:blue,stroke:black,stroke-width:4px,shadow:shadow
+style D fill:blue,stroke:purple,stroke-width:4px,shadow:shadow
 
-style E fill:blue,stroke:black,stroke-width:4px,shadow:shadow
+style E fill:blue,stroke:purple,stroke-width:4px,shadow:shadow
 
 style F fill:blue,stroke:pink,stroke-width:4px,shadow:shadow
 
-style G fill:blue,stroke:black,stroke-width:4px,shadow:shadow
+style G fill:blue,stroke:purple,stroke-width:4px,shadow:shadow
 
-style H fill:green,stroke:black,stroke-width:4px,shadow:shadow
+style H fill:green,stroke:orange,stroke-width:4px,shadow:shadow
 
 style I fill:green,stroke:black,stroke-width:4px,shadow:shadow
 
@@ -469,9 +475,9 @@ flowchart LR
 	O[Worm]
 	P[Tornado]
 	Q[Rubber]
-	SMount[SMount]
 	R[Mission Control]
 	Z[ZGuard]
+		SMount[SMount]
 	Turtle[Turtle]
 	KGuard[KGuard]
 	OctopusGuard[Octopus Guard]
