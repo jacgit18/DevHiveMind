@@ -34,131 +34,201 @@ dg-publish:
 	- ![[BJJDynamicThree.gif]]
 
 # Guard Flow 
-## Effective Against Larger Opponents
+Guards not mentioned are risky in terms of strikes
+## **Guard Flow: Effective Against Larger Opponents**
 
-### Guards 
-Guards that create distance, use leverage, or exploit the opponent's size and strength against them
+### **Guard Principles**
 
-Techniques that leverage precision and joint manipulation rather than brute force
+- Prioritize creating distance and breaking posture.
+- Use leverage-based techniques to neutralize strength.
+- Exploit gaps in their balance or mobility.
 
-1. **Open Guards**  
-Guards
-   - [[De La Riva]] - Attack-Oriented Guard
-   - [[Spider]] - Attack-Oriented Guard
-   - [[Lasso]] 
-   - [[Butterfly]] 
-   - [[Collar & Sleeve]]  - Defensive-Oriented guard
-Submissions
-- **Chokes** - All chokes give you armbars
-	- Triangle Choke  
-	- Guillotine Choke  
-	- Arm Triangle Choke (chain attack from side control or mount)
-	- Rear Naked Choke  
-Sweeps
-- 
+### **1. Open Guards**
 
-2. **[[Half Guards]]**  
-   - Deep Half Guard  
-   - ZGuard - Start with half guard knee shield at shoulder then switch to z guard at hip
-Submissions
-- **Arm Locks** 
-	- Armbar  
-	- Kimura (with proper leverage from side control, guard, or standing positions)
-	- Omoplata  
-	- Americana  
-Sweeps
-- 
+Guards:
 
-3. **Leg Entanglements**  
-   - Single-leg [[X Guard]] 
-   - 50/50 Guard  
-Submissions
-- **Leg Attacks**  
-   - Straight Ankle Lock  
-   - Heel Hook  
-   - Toe Hold  
-   - Knee Bar (transition from leg entanglements)
-Sweeps
-- 
+- [[De La Riva]] – Attack-oriented.
+- [[Spider]] – Leverage control with legs and grips.
+- [[Lasso]] – Control-oriented.
+- [[Butterfly]] – Great for sweeps and controlling posture.
+- [[Collar & Sleeve]] – Defensive, distance management.
 
-4. **Inverted Guards**  
-   - Tornado Guard  
-   - Reverse De La Riva - Attack-Oriented Guard
-Sweeps
-- 
+Submissions:
 
+- **Chokes:** Triangle, Guillotine, Rear Naked Choke, Arm Triangle.
+- **Armbars:** Set up from leg control or collar grips.
 
-## Effective Against Smaller Opponents
+Sweeps:
 
-### Guards
-Guards that allow control and pressure, benefiting from weight and strength advantages
-
-Techniques that allow applying pressure or using body weight
-
-1. **[[Closed Guard]]**  - Defensive-Oriented guard
-   - Standard Full Closed Guard  
-   - High Guard  
-Submissions
-- **Pressure Submissions**  
-   - Ezekiel Choke (from mount or side control)  
-   - Cross Collar Choke
-   - Bow and Arrow Choke (from back control)  
-   - Loop Choke (quick to execute during transitions)
-   - D’Arce Choke (strong from side control or sprawl positions)
-   - Peruvian Necktie (quick attack in scrambles)
-Sweeps
-	- 
-
-2. **Pressure Guards**  
-   - Half Guard with Underhook - Defensive-Oriented guard
-   - Lockdown Guard  - lock legs in half guard
-Submissions
-- **Arm Locks** 
-   - Americana (from mount or side control)  
-   - Armbar (with strength advantage)
-   - Wrist Locks (subtle attacks from many positions)
-Sweeps
-- 
-1. **Top Guards (Dominant Guards)**  
-   - Mount Guard (transition from bottom)  
-   - Top Turtle (attacking from dominant top position after breaking guard)  
-Submissions
-- **Neck Cranks (if allowed)**  
-	- Can Opener  
-	- Twister  
-Sweeps
-- 
-
-
-## Key Observations
-- **Larger Opponents:** Focus on guards and submissions that neutralize their strength, limit mobility, and capitalize on openings. Leverage-based techniques like leg locks and chokes are highly effective.  
-- **Smaller Opponents:** Use pressure-heavy guards and submissions that amplify your size advantage. Dominant positions like side control or mount are beneficial for transitioning to submissions.
-- **Guard Play:** Choose guards that give you options to attack, sweep, or transition based on the opponent’s reactions.  
-- **Opponent's Base**: Guards often flow based on your opponent’s balance and posture. For example, if they stand, you might switch to De La Riva or X-Guard; if they kneel, Butterfly or Half Guard is useful.  
-- **Grip Fighting**: Guards that rely on grips (Spider, Lasso, Worm) flow into those with similar control mechanisms.  
-- **Inversion**: Guards like De La Riva and Reverse De La Riva naturally flow into inverted positions like Berimbolo.  
-- **Don’t stay static:** If you’re staying in one guard for too long in a real-world scenario, you risk being overwhelmed by strikes. Use these guards to quickly **sweep, escape, or improve your position.**
-
-
-![](https://www.youtube.com/watch?v=Db1Do3LapcA)
-
+- Scissor Sweep.
+- Pendulum (Flower) Sweep.
+- Butterfly Sweep.
+- Balloon Swp (Tomoe Nage).
+- Lumberjack Sweep.
+- Arm Drag to Back Take Sweep
+- Tripod Sweep
 
 ---
 
-### **Additional Tips for Real-World Scenarios:**
+### **2. [[Closed Guard]]**
 
-1. **Protect your head:** Always maintain hand or arm frames to block punches.
-2. **Create space:** Use your legs and hips to push the opponent away whenever possible.
-3. **Escape to standing:** Look for opportunities to transition to your feet and disengage.
-4. **Control posture:** Keep your opponent low to prevent strikes from gaining momentum.
-5. **Avoid flashy moves:** Focus on simple, high-percentage techniques that prioritize safety and control.
+Focus: Control their posture and attack openings.
 
-These guards are tailored to mitigate the threat of strikes and ensure you can transition out of dangerous positions effectively.
+Submissions:
 
-### Guards to Avoid
+- **Chokes:** Triangle, Cross Collar Choke.
+- **Armlocks:** Kimura, Omoplata, Armbar.
 
-- **Deep Half Guard:** Leaves your face exposed to downward strikes.
-- **Inverted Guard:** Vulnerable to stomps or downward punches.
-- **X-Guard:** Effective for sweeps but leaves your head exposed if not managed carefully.
+Sweeps:
+
+- Hip Bump Sweep.
+- Balloon Sweep.
+- Double Ankle Sweep
+- Knee Tap Sweep
+- Homer Simpson Sweep
+- Plan B Sweep
+
+---
+
+### **3. [[Half Guards]]**
+
+Guards:
+
+- Deep Half Guard – Leverage-based, transitions to sweeps.
+- Z-Guard – Strong knee shield; transition to leg attacks.
+
+Submissions:
+
+- **Armlocks:** Americana, Kimura, Omoplata.
+
+Sweeps:
+
+- Deep Half Guard Sweeps
+- Knee Shield to Old School Sweep
+
+---
+
+### **4. Leg Entanglements**
+
+Guards:
+
+- [[X Guard]] – Attack legs or transition to sweeps.
+- 50/50 Guard – Control-oriented.
+
+Submissions:
+
+- **Leg Locks:** Heel Hook, Straight Ankle Lock, Toe Hold, Knee Bar.
+
+Sweeps:
+
+- X-Guard Sweep
+- Shaolin Sweep
+
+---
+
+### **5. Inverted Guards**
+
+Guards:
+
+- Tornado Guard – Dynamic; transitions to sweeps.
+- Reverse De La Riva – Attack-oriented, leads to inversions.
+
+Sweeps:
+
+- Helicopter Sweep.
+
+---
+
+---
+
+## **Guard Flow: Effective Against Smaller Opponents**
+
+### **Guard Principles**
+
+- Use control and pressure to dominate.
+- Transition to positions that maximize weight advantage.
+
+### **1. Closed Guard**
+
+Focus: Defensive guard with posture-breaking control.
+
+Submissions:
+
+- **Chokes:** Cross Collar, Ezekiel, Loop Choke, Bow and Arrow Choke.
+- **Armlocks:** Kimura, Americana.
+
+Sweeps:
+
+- Push-Pull (Sit-Up) Sweep.
+- Balloon Sweep.
+- Sickle Sweep.
+- Double Ankle Sweep
+- Plan B Sweep
+
+---
+
+### **2. Pressure Guards**
+
+Guards:
+
+- Half Guard with Underhook – Pressure-heavy control.
+- Lockdown Guard – Traps opponent’s leg for sweeps or transitions.
+
+Submissions:
+
+- **Pressure Submissions:** Americana, Wrist Locks.
+
+Sweeps:
+
+- Half Guard Underhook Sweeps.
+
+---
+
+### **3. Top Guards (Dominant Positions)**
+
+Guards:
+
+- Mount Guard – Dominate and apply submissions.
+- Top Turtle – Attack openings aggressively.
+
+Submissions:
+
+- **Neck Cranks:** Can Opener, Twister (if legal).
+- **Chokes:** D’Arce, Peruvian Necktie.
+
+---
+
+---
+
+## **Key Observations**
+
+1. **Opponent Dynamics:**
+    
+    - Against larger opponents, use leverage-based guards to neutralize strength.
+    - Against smaller opponents, use pressure guards to dominate and control.
+2. **Guard Transitions:**
+    
+    - Open Guards flow to Leg Entanglements or Inverted Guards when they stand.
+    - Closed Guard transitions to Half Guard when posture breaks fail.
+3. **Efficiency:** Avoid staying static; transition quickly to sweeps, escapes, or submissions.
+    
+
+---
+
+### **Guards to Avoid in Real-World Scenarios**
+
+- Deep Half Guard: Leaves face open to strikes.
+- Inverted Guard: Risky against stomps or downward strikes.
+- X-Guard: Vulnerable if opponent stays upright and strikes.
+
+---
+
+### **Real-World Tips**
+
+- **Distance Management:** Always use your legs to create space and control posture.
+- **Safe Escapes:** Prioritize sweeps that lead to standing disengagements if in danger.
+- **Adapt Quickly:** Switch guards based on the opponent's reactions and pressure.
 
 
+
+![](https://www.youtube.com/watch?v=Db1Do3LapcA)
