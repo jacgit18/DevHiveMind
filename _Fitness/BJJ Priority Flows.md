@@ -423,7 +423,6 @@ style Turtle fill:blue,stroke:White,stroke-width:4px,shadow:shadow
 ***Larger Opponents***
 *Focus: Control their posture and attack openings*
 - Hip Bump Sweep
-- Balloon Sweep (Tomoe Nage)
 - Double Ankle Sweep
 - Knee Tap Sweep
 - Homer Simpson Sweep
@@ -432,7 +431,6 @@ style Turtle fill:blue,stroke:White,stroke-width:4px,shadow:shadow
 *Use control and pressure to dominate.*
 Transition to positions that maximize weight advantage.
 - Push-Pull (Sit-Up) Sweep
-- Balloon Sweep
 - Sickle Sweep
 - Double Ankle Sweep
 - Plan B Sweep
@@ -479,27 +477,38 @@ flowchart LR
 	
 
 	ArmDrag[ArmDrag]
-	ShaolinSweep[ShaolinSweep]
-	XSweep[XSweep]
-	HalfGuardUnderhookSweep[HalfGuardUnderhookSweep]
-	HipBump[HipBump]
-	Scissor[Scissor]
-	SickleSweep[SickleSweep]
-	Flower[Flower]
-	ButterflySweep[ButterflySweep]
-	LumberJack[LumberJack]
-	TripodSweep[TripodSweep]
 	BalloonSweep[BalloonSweep]
-	KneeTap[KneeTap]
-	DoubleAnkleSweep[DoubleAnkleSweep]
-	PushSweep[PushSweep]
-	HomerSimpSweep[HomerSimpSweep]
-	PlanBSweep[PlanBSweep]
-	HelicopterSweep[HelicopterSweep]
+	ButterflySweep[ButterflySweep]
 	DeepHalfSweep[DeepHalfSweep]
+	DoubleAnkleSweep[DoubleAnkleSweep]
+	Flower[Flower]
+	HalfGuardUnderhookSweep[HalfGuardUnderhookSweep]
+	HelicopterSweep[HelicopterSweep]
+	HipBump[HipBump]
+	HomerSimpSweep[HomerSimpSweep]
+	KneeTap[KneeTap]
+	LumberJack[LumberJack]
 	OldSchoolSweep[OldSchoolSweep]
+	PlanBSweep[PlanBSweep]
+	PushSweep[PushSweep]
+	Scissor[Scissor]
+	ShaolinSweep[ShaolinSweep]
+	SickleSweep[SickleSweep]
+	TripodSweep[TripodSweep]
+	XSweep[XSweep]
 
+	A --> BalloonSweep
+	A --> Flower
 	A --> Scissor
+	
+
+	Closed --> DoubleAnkleSweep
+	Closed --> HipBump
+	Closed --> HomerSimpSweep
+	Closed --> KneeTap
+	Closed --> SickleSweep
+	Closed --> PlanBSweep
+	Closed --> PushSweep
 
 	A <-.-> KGuard
     A <-.-> B
