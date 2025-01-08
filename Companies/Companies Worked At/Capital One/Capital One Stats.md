@@ -13,6 +13,23 @@ Relates:
 dg-publish:
 ---
 ## Experience
+#todo/Career/Doc/BAU
+- [ ] Document things done in job along with lesson learned
+
+## Current 
+Worked under Apart of Card tech for both team
+
+Started in QA for Pain Killers under Empath Platform  now on  Real-time intelligence collection surge team
+
+Empath customer relations dealing with streams in terms of data sources collection  
+  
+Stream data sources encapsulates platforms and systems that produce data or change oriented events of interest to collections business processes. Stream data is exclusively published And subscribed to use the OneStream platform  
+  
+  
+Cloud orchestration processes from hooks to step functions
+## Old
+
+
 Worked on Painkiller under mojitos on a vertical team which could be mentioned if you work with more teams
 
 Performed integration testing in a micro frontend architecture using the Vue.js testing library and internal tools, ensuring seamless front-end functionality and an optimal user experience for Capital One agents using the Empath application.  

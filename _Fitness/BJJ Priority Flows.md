@@ -187,6 +187,8 @@ style Turtle fill:blue,stroke:White,stroke-width:4px,shadow:shadow
 - **Americana**
 - **Omoplata**
 
+specific counter to ones mention above located here [[Prior Counter]]
+
 Look at [[Sub Counters]] & leverage [[Sub Tactics]]
 
 #### **Guard Flow: Effective Against Larger Opponents**

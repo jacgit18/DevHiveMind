@@ -62,6 +62,7 @@ Use the **UFC game** to simulate and experiment with techniques and strategies.
 	- Use the **teep kick** like a jab to control range or disrupt rhythm, especially against taller opponents.
 	- Keep your guard compact and punches sharp to close the distance effectively.
 	- Throw quick lead uppercuts.
+- **Faint with the Body**: turn body appearing to throw some type of punch or kick.
 - **Sneaky Kicks**: Avoid telegraphing by minimizing shoulder movement.
 - **Faint Front Kick**: Lift your leg and show the sole of your foot to sell the feint, setting up other strikes.
 - **Faint Spin Kick**: faint the spin kick and doing a stance switch to a front or rear kick.

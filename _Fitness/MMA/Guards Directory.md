@@ -31,7 +31,9 @@ dg-publish:
 	- ![[BJJDynamicThree.gif]]
 
 
-
+Side Control (Far-Side Armbar)  
+  
+Knee-on-Belly
 
 
 
