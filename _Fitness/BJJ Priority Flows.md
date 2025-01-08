@@ -41,6 +41,7 @@ flowchart LR
 	Q[Rubber]
 	R[Mission Control]
 	Z[ZGuard]
+	Turtle[Turtle]
 	KGuard[KGuard]
 
 	OctopusGuard[Octopus Guard]
@@ -60,7 +61,10 @@ flowchart LR
 	G <-.-> ElevatorGuard
 	H <-.-> ElevatorGuard
 	Z <-.-> ElevatorGuard
-
+	H <-.-> Turtle
+	I <-.-> Turtle
+	K <-.-> Turtle
+	
 	J <-.-> SMount
 	
 
@@ -112,13 +116,15 @@ flowchart LR
 
 style SMount fill:blue,stroke:white,stroke-width:4px,shadow:shadow
 
+style ElevatorGuard fill:blue,stroke:purple,stroke-width:4px,shadow:shadow
+
 style OctopusGuard fill:blue,stroke:black,stroke-width:4px,shadow:shadow
 
 style Closed fill:teal,stroke:yellow,stroke-width:4px,shadow:shadow
 
-style KGuard fill:blue,stroke:black,stroke-width:4px,shadow:shadow
+style Turtle fill:blue,stroke:White,stroke-width:4px,shadow:shadow
 
-style ElevatorGuard fill:blue,stroke:purple,stroke-width:4px,shadow:shadow
+style KGuard fill:blue,stroke:black,stroke-width:4px,shadow:shadow
 
 style A fill:green,stroke:purple,stroke-width:4px,shadow:shadow
 
@@ -132,7 +138,7 @@ style E fill:blue,stroke:purple,stroke-width:4px,shadow:shadow
 
 style F fill:blue,stroke:pink,stroke-width:4px,shadow:shadow
 
-style G fill:blue,stroke:black,stroke-width:4px,shadow:shadow
+style G fill:blue,stroke:purple,stroke-width:4px,shadow:shadow
 
 style H fill:green,stroke:black,stroke-width:4px,shadow:shadow
 
@@ -146,7 +152,7 @@ style L fill:blue,stroke:Cyan,stroke-width:4px,shadow:shadow
 
 style M fill:blue,stroke:black,stroke-width:4px,shadow:shadow
 
-style N fill:blue,stroke:black,stroke-width:4px,shadow:shadow
+style N fill:blue,stroke:pink,stroke-width:4px,shadow:shadow
 
 style O fill:blue,stroke:black,stroke-width:4px,shadow:shadow
 
@@ -337,7 +343,7 @@ flowchart LR
 	R --> 3 
 	R --> 4 
 
-style SMount fill:blue,stroke:black,stroke-width:4px,shadow:shadow
+style SMount fill:blue,stroke:white,stroke-width:4px,shadow:shadow
 
 style ElevatorGuard fill:blue,stroke:black,stroke-width:4px,shadow:shadow
 
@@ -363,7 +369,7 @@ style H fill:green,stroke:black,stroke-width:4px,shadow:shadow
 
 style I fill:green,stroke:black,stroke-width:4px,shadow:shadow
 
-style J fill:green,stroke:black,stroke-width:4px,shadow:shadow
+style J fill:green,stroke:white,stroke-width:4px,shadow:shadow
 
 style K fill:green,stroke:black,stroke-width:4px,shadow:shadow
 
@@ -499,6 +505,7 @@ flowchart LR
 	I <-.-> OctopusGuard
 	H <-.-> Turtle
 	I <-.-> Turtle
+	K <-.-> Turtle
 	
 	A <-.-> ElevatorGuard
 	B <-.-> ElevatorGuard
@@ -545,7 +552,6 @@ flowchart LR
 	L --> F
 	I <-.-> K
 	R <-.-> Q 
-	K <-.-> Turtle
 
 style Scissor fill:black,stroke:purple,stroke-width:4px,shadow:shadow
 
@@ -592,7 +598,6 @@ style OctopusGuard fill:blue,stroke:black,stroke-width:4px,shadow:shadow
 style OldSchoolSweep fill:black,stroke:orange,stroke-width:4px,shadow:shadow
 
 style DeepHalfSweep fill:black,stroke:orange,stroke-width:4px,shadow:shadow
-
 
 style Closed fill:teal,stroke:yellow,stroke-width:4px,shadow:shadow
 
