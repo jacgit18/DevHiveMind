@@ -6,6 +6,7 @@
 #todo/Personal/MMA/BAU
 - [ ] Focus on Sweeps against [[BJJ Priority Flows#Priority Guards to Sweeps |Bigger People]]
 - [ ] Focus on Defense of [[BJJ Priority Flows#Top Submissions to Practice Countering and Escaping |Power Submissions]]
+- [ ] Look into Knee-on-Belly and add stuff here
 
 Guards not mentioned here can be risky in real-world scenarios where strikes are a factor. It’s important to move away from a reactive mindset and focus on being more proactive throwing in more aggression in your approach.
 
@@ -175,6 +176,7 @@ style Turtle fill:blue,stroke:White,stroke-width:4px,shadow:shadow
 ## Priority Submission Flow
 ### Top Submissions to Practice Attacking (Positions Available: 7+)
 - **Armbar (Straight Armbar)**
+	- Side Control (Far-Side Armbar)  
 - **Guillotine Choke**
 - **Rear Naked Choke (RNC)**
 - **Triangle Choke**

@@ -35,6 +35,8 @@ This method combines both arms effectively while leveraging your legs to stay fl
 
 
 ### Hand Fighting Tips:
+![](https://www.youtube.com/watch?v=Db1Do3LapcA)
+
 **Keep Hands Low on the Collar**: High grips can give your opponent more control over you.
 
 **Control Hands vs. Solving Hand Problems**: Prioritize preventing grips and neutralizing their hands before solving grip issues.

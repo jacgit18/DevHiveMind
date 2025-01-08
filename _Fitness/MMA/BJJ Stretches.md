@@ -12,12 +12,12 @@ Peer Reviewed: 0
 dg-publish:
 ---
 ## Stretches
-- Bird dog
-	- ![[birdDog.gif]]
 - Lock Clam
 	- ![](https://www.youtube.com/watch?v=PjHVshdrZM0)
 - Curl Up
 	- ![](https://www.youtube.com/watch?v=dV0847Mh6Xs)
+- Scorpion Flow
+	- ![](https://www.youtube.com/watch?v=5Hpc8fHNG18)
 - Hip Openers
 	- ![[HipOpenerOne.gif]]
 	- ![[HipOpenerTwo.gif]]
@@ -26,17 +26,9 @@ dg-publish:
 	- ![[BJJDynamicOne.gif]]
 	- ![[BJJDynamicTwo.gif]]
 	- ![[BJJDynamicThree.gif]]
-
-
-Side Control (Far-Side Armbar)  
-  
-Knee-on-Belly
-
-
-
-![](https://www.youtube.com/watch?v=Db1Do3LapcA)
+- Bird dog
+	- ![[birdDog.gif]]
 
 
 
 
-![](https://www.youtube.com/watch?v=5Hpc8fHNG18)
