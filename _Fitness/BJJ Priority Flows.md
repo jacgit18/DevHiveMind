@@ -110,7 +110,7 @@ flowchart LR
 	R --> 3 
 	R --> 4 
 
-style SMount fill:blue,stroke:black,stroke-width:4px,shadow:shadow
+style SMount fill:blue,stroke:white,stroke-width:4px,shadow:shadow
 
 style OctopusGuard fill:blue,stroke:black,stroke-width:4px,shadow:shadow
 
@@ -118,17 +118,17 @@ style Closed fill:teal,stroke:yellow,stroke-width:4px,shadow:shadow
 
 style KGuard fill:blue,stroke:black,stroke-width:4px,shadow:shadow
 
-style ElevatorGuard fill:blue,stroke:black,stroke-width:4px,shadow:shadow
+style ElevatorGuard fill:blue,stroke:purple,stroke-width:4px,shadow:shadow
 
 style A fill:green,stroke:purple,stroke-width:4px,shadow:shadow
 
-style B fill:blue,stroke:black,stroke-width:4px,shadow:shadow
+style B fill:blue,stroke:purple,stroke-width:4px,shadow:shadow
 
-style C fill:blue,stroke:black,stroke-width:4px,shadow:shadow
+style C fill:blue,stroke:purple,stroke-width:4px,shadow:shadow
 
-style D fill:blue,stroke:black,stroke-width:4px,shadow:shadow
+style D fill:blue,stroke:purple,stroke-width:4px,shadow:shadow
 
-style E fill:blue,stroke:black,stroke-width:4px,shadow:shadow
+style E fill:blue,stroke:purple,stroke-width:4px,shadow:shadow
 
 style F fill:blue,stroke:pink,stroke-width:4px,shadow:shadow
 
@@ -138,11 +138,11 @@ style H fill:green,stroke:black,stroke-width:4px,shadow:shadow
 
 style I fill:green,stroke:black,stroke-width:4px,shadow:shadow
 
-style J fill:green,stroke:black,stroke-width:4px,shadow:shadow
+style J fill:green,stroke:white,stroke-width:4px,shadow:shadow
 
 style K fill:green,stroke:black,stroke-width:4px,shadow:shadow
 
-style L fill:blue,stroke:black,stroke-width:4px,shadow:shadow
+style L fill:blue,stroke:Cyan,stroke-width:4px,shadow:shadow
 
 style M fill:blue,stroke:black,stroke-width:4px,shadow:shadow
 
@@ -367,7 +367,7 @@ style J fill:green,stroke:black,stroke-width:4px,shadow:shadow
 
 style K fill:green,stroke:black,stroke-width:4px,shadow:shadow
 
-style L fill:blue,stroke:black,stroke-width:4px,shadow:shadow
+style L fill:blue,stroke:Cyan,stroke-width:4px,shadow:shadow
 
 style M fill:blue,stroke:black,stroke-width:4px,shadow:shadow
 
@@ -585,7 +585,7 @@ style TripodSweep fill:black,stroke:purple,stroke-width:4px,shadow:shadow
 
 style SMount fill:blue,stroke:White,stroke-width:4px,shadow:shadow
 
-style ElevatorGuard fill:blue,stroke:black,stroke-width:4px,shadow:shadow
+style ElevatorGuard fill:blue,stroke:purple,stroke-width:4px,shadow:shadow
 
 style OctopusGuard fill:blue,stroke:black,stroke-width:4px,shadow:shadow
 
@@ -602,17 +602,17 @@ style KGuard fill:blue,stroke:black,stroke-width:4px,shadow:shadow
 
 style A fill:green,stroke:purple,stroke-width:4px,shadow:shadow
 
-style B fill:blue,stroke:black,stroke-width:4px,shadow:shadow
+style B fill:blue,stroke:purple,stroke-width:4px,shadow:shadow
 
-style C fill:blue,stroke:black,stroke-width:4px,shadow:shadow
+style C fill:blue,stroke:purple,stroke-width:4px,shadow:shadow
 
-style D fill:blue,stroke:black,stroke-width:4px,shadow:shadow
+style D fill:blue,stroke:purple,stroke-width:4px,shadow:shadow
 
-style E fill:blue,stroke:black,stroke-width:4px,shadow:shadow
+style E fill:blue,stroke:purple,stroke-width:4px,shadow:shadow
 
 style F fill:blue,stroke:pink,stroke-width:4px,shadow:shadow
 
-style G fill:blue,stroke:black,stroke-width:4px,shadow:shadow
+style G fill:blue,stroke:purple,stroke-width:4px,shadow:shadow
 
 style H fill:green,stroke:orange,stroke-width:4px,shadow:shadow
 
