@@ -179,6 +179,7 @@ style Turtle fill:blue,stroke:White,stroke-width:4px,shadow:shadow
 
 ```
 ## Priority Submission Flow
+ Practice alternating from **choke-to-limb** and vise versa to improve chances of getting a submission.
 ### Top Submissions to Practice Attacking (Positions Available: 7+)
 - **Armbar (Straight Armbar)**
 	- Counter with from **Guillotine Defense** If the opponent defends a guillotine by extending an arm, transition into an armbar.
@@ -201,12 +202,18 @@ style Turtle fill:blue,stroke:White,stroke-width:4px,shadow:shadow
 	- Counter with from **Triangle Defense** If they posture to escape a triangle, use the transition to lock an arm triangle.
 ### Top Submissions to Practice Countering and Escaping
 - **Kimura**
+	- Escapes
+	- Counters
 - **Americana**
+	- Escapes
+	- Counters
 - **Omoplata**
+	- Escapes
+	- Counters
 
 specific counter to ones mention above located here [[Prior Counter]]
 
-Look at [[Sub Counters]] & leverage [[Sub Tactics]]
+Look at [[Sub Counters]]  
 
 #### **Guard Flow: Effective Against Larger Opponents**
 
