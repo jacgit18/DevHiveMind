@@ -95,18 +95,21 @@ series:
 - [ ] try creating chart from table 
 - [x] Eaa over bcaa try looking into Eaa ✅ 2024-12-29
 - [ ] Check New Weight limits 
+- [ ] non bold weight not verified based off tower 200 weights verify at gym 
+
+#todo/Workout/BAU
+- [ ] Make shoulders more stable before doing  Turkish Get-up 
 - [ ] focus on stability then add resistance
 - [ ] 6 to 20 reps near failure at max
 - [ ] Focus on intensity then scale to volume
 - [ ] Slow intensity exercise should spend at least 5 min per exercise
-- [ ] non bold weight not verified based off tower 200 weights verify at gym 
 
 ![](https://www.youtube.com/watch?v=djj7QXZAIjM)
 
 | Body  | Machine                                                 | Position | Focus | Priority | Weight | Sets | Reps | Range | Per Side |
 | ----- | ------------------------------------------------------- | -------- | ----- | -------- | ------ | ---- | ---- | ----- | -------- |
-| Lower | Abductor Outer Thigh                                    | Spread   | CM    | Low      | *145*  | 3    | 10   | 7     | **160**  |
-| Lower | Abduction Inner Thigh                                   | Squeeze  | CM    | High     | *110*  | 3    | 10   | 0     | **110**  |
+| Lower | Abductor Outer Thigh                                    | Spread   | CM    | High     | *145*  | 3    | 10   | 7     | **160**  |
+| Lower | Abduction Inner Thigh                                   | Squeeze  | CM    | Med      | *110*  | 3    | 10   | 0     | **110**  |
 | Lower | Leg Press off Back Abductor                             | Wide     | CM    | High     | *540*  | 3    | 10   | 0     | 270      |
 | Lower | Leg Press off Back Calf                                 | Toes     | CM    | High     | *270*  | 3    | 10   | 0     | 135      |
 | Lower | Leg Press off Back Quads                                | Close    | CM    | High     | *540*  | 3    | 10   | 0     | 270      |
