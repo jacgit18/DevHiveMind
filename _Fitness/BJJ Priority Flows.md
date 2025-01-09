@@ -11,6 +11,7 @@
 	- [ ] [[BJJ Priority Flows#Purple - Open Guard Sweeps |Open Guard Sweeps]]
 - [ ] Focus on Defense of [[BJJ Priority Flows#Top Submissions to Practice Countering and Escaping |Power Submissions]]
 - [ ] Look into Knee-on-Belly and add stuff here
+- [ ] Keep chin close to chest in general when person tries to get arm behind neck for control and keep you flat on black.
 
 
 Guards not mentioned here can be risky in real-world scenarios where strikes are a factor. It’s important to move away from a reactive mindset and focus on being more proactive throwing in more aggression in your approach.
@@ -180,6 +181,7 @@ style Turtle fill:blue,stroke:White,stroke-width:4px,shadow:shadow
 ```
 ## Priority Submission Flow
  Practice alternating from **choke-to-limb** and vise versa to improve chances of getting a submission.
+ 
 ##### Top Submissions to Practice Attacking (Positions Available: 7+)
 - **Armbar (Straight Armbar)**
 	- Counter with from **Guillotine Defense** If the opponent defends a guillotine by extending an arm, transition into an armbar.

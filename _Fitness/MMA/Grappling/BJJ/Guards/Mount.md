@@ -16,6 +16,11 @@ dg-publish:
 
 ![](https://www.youtube.com/watch?v=pw_9ZZLkkNI&t=12s)
 
+Kipping
+
+![](https://www.youtube.com/watch?v=YJ63pFlQj3Y&t=217s)
+
+
 ### **Sweeps from Bottom Mount**
 
 1. **Bridge and Roll Sweep (Uppercut Sweep)**:
