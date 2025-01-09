@@ -19,7 +19,6 @@ dg-publish:
 - [ ] What role does technology play in optimizing the supply chain, and where do you see opportunities for improvement?
 - [ ] How do you ensure that supply chain operations align with sustainability goals or company values?
 
-## Disruptors
 
 
 ## Other Questions  

@@ -25,3 +25,6 @@ dg-publish:
 		- Alternatively Financial market focused think a little along the lines of data science word cloud but more then that 
 	- If javascript use [[Data Project Idea#Visualization libraries use|Visualization libraries]]
 	- consider things in this document [[Data Analytics Projects Ideas]] also [[Python Learning Plan]] libraries
+
+Follow this Process 
+[[Frontend Design]]

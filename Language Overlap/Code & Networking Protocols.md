@@ -2,6 +2,7 @@
 tags:
   - protocol
   - communication
+  - bestPractices
 author:
   - jacgit18
   - chatgpt

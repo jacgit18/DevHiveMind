@@ -18,7 +18,7 @@ dg-publish:
 - [ ] If you could only communicate using one word for the rest of your life what would it be?
 - [ ] 
 
-## Disruptors
+
 
 
 ## Other Questions  

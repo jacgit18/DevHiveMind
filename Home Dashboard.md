@@ -93,10 +93,6 @@ dg-publish: true
 > ```
 
 ---
-
-
-
-
 - ### Satisfaction #mcl/list-card 
 	```dataviewjs  
 	dv.span("**🏋️ Proudness 🏋️**")  
@@ -162,6 +158,8 @@ action:
   command: daily-notes
 ```
 
+#todo 
+- [ ] Cleanup todo's make it cleaner
 ```meta-bind-button
 style: primary
 hidden: true
@@ -218,7 +216,7 @@ actions:
 
 
 - 🔖 Tagged:  favorite 
- `$=dv.list(dv.pages('#favorite').sort(f=>f.file.name,"desc").limit(4).file.link)`
+ `$=dv.list(dv.pages('#favorite').sort(f=>f.file.name,"desc").limit(10).file.link)`
 - 〽️ Stats
 	-  File Count: `$=dv.pages().length`
 	

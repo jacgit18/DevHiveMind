@@ -25,3 +25,5 @@ Apache Kafka is often categorized as a distributed streaming platform or event s
 ![[1716556944362.gif]]
 
 ![[Kafka Performance.jpeg]]
+
+![[Kafaka101.gif]]

@@ -5,6 +5,7 @@ tags:
   - library
   - react
   - hooks
+  - bestPractices
 author:
   - jacgit18
   - chatgpt

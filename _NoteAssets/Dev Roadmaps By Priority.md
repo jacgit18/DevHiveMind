@@ -26,6 +26,8 @@ dg-publish:
 - [x] [[12 Factor App Docker.canvas|12 Factor App Docker]]
 - [ ] Create a unrestricted AI assistant like chatGpt without guardrails
 
+
+![[1729252749519.gif]]
 #### Develop OKR for Next Quarter
 #todo/Personal/High/Dev 
 - [ ] [[Microservices VS Monolithic Architecture |Microservices]] 
@@ -35,7 +37,7 @@ dg-publish:
 - [ ] [[Chaos Engineering]]
 - [ ] [[Domain-driven design]] 
 	- [ ] Depends on domain which may vary identify the domain of interest and learn more about that domain and look for companies or company departments that align.   
-
+- [ ] [[Algorithmic Trading]]
 #### Review
 #todo/Personal/Med/Dev 
 - [ ] [[devops.pdf]]

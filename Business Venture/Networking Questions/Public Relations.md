@@ -19,7 +19,6 @@ dg-publish:
 - [ ] What role does social media play in your PR strategy, and how do you manage it?
 - [ ] How do you handle crisis communication, especially when it involves technical issues or product failures?
 
-## Disruptors
 
 
 ## Other Questions  

@@ -19,7 +19,6 @@ dg-publish:
 - [ ] How do you manage financial risk and ensure compliance with regulations?
 - [ ] What challenges do you face when coordinating budgets across different departments?
 
-## Disruptors
 
 
 ## Other Questions  

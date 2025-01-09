@@ -101,3 +101,5 @@ Eviction Policy:Once the cache is full, any requests to add items to the cache
 
 
 ![[redisUseCase.jpeg]]
+
+![[Cache Eviction Strategies.gif]]

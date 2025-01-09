@@ -29,20 +29,6 @@ dg-publish:
 
 
 
-## Disruptors
->If you ask somebody about their job and what did they do and they're not really interested in explaining it you can pivot an alternate into asking them if you had a whole bunch of money what would you do with it
-- [ ] If you could snap your fingers and instantly create an app—that could solve any problem, personal or business-related, what would it be?
-- [ ] If you went from where you are right now to CEO overlord of your company or just got promoted and your boss reports to you what would you change
-- [ ] What was the moment or achievement that made you realize a career in software engineering (or your field) was a realistic and attainable goal for you? What was your smallest yet significant accomplishment that gave you that confidence in your ability and kind of let you know oh I can do this this makes sense let's go it.
-- [ ] If you weren't working in this career path or job what do you think you'll be doing
-- [ ] What crazy situation you've seen work as a...?
-- [ ] What is your biggest pet peeve when dealing with people in that environment?
-- [ ] What's the most memorable moment you've had while working in that job?
-- [ ] What's your opinion on tipping?
-- [ ] Why do you think some people always tip and others don’t?
-- [ ] Do you feel like you got some good transferable skills out of that job?
-
-
 ## Other Questions  
 - [ ] How is your industry changing, and what excites or worries you the most about these changes?  
 - [ ] Any interesting projects or in your career what was the most intresting one you have worked on? 

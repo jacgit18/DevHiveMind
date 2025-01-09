@@ -32,3 +32,4 @@ Additionally, React promotes the idea of having **no side effects** in component
 
 #todo/Personal/Low 
 - [ ] https://www.freecodecamp.org/news/new-react-19-features/
+- [ ] Review [[React State]]

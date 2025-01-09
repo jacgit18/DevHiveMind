@@ -16,7 +16,9 @@ dg-publish:
 #todo/Questions/TopFive 
 
 
-## Disruptors
+#todo/BAU/Interview/Questions
+- [ ] Ask how do senior developers go about looking for open source projects
+
 
 
 ## Other Questions  
@@ -34,3 +36,5 @@ When was a moment were things really started to click for you
 If you could snap your fingers and instantly create an app—that could solve any problem, personal or business-related, what would it be?
 
 How do you apply for jobs if at all or have it created anything to increase their applications?
+
+If you can reset your current career path at the snap of a finger would do anything differently? 
