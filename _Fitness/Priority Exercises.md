@@ -48,6 +48,9 @@ Start with a dynamic stretch to Improve blood flow and flexibility. End with a s
 	- Breathe deeply as you push your chest outward, squeezing your shoulder blades together. Then, reverse the motion by pulling your chest inward and separating your shoulder blades, keeping your elbows straight throughout the movement.
 
 ## Priority Workouts
+#todo/Personal/Med 
+- [ ] Revisit and edit chart
+![](https://www.youtube.com/watch?v=djj7QXZAIjM)
 ```chart
 type: bar
 id: all
@@ -104,8 +107,6 @@ series:
 - [ ] Get reps to 10
 - [ ] Focus on intensity then scale to volume
 - [ ] Slow intensity exercise should spend at least 5 min per exercise
-
-![](https://www.youtube.com/watch?v=djj7QXZAIjM)
 
 | Body  | Machine                                                 | Position | Focus | Priority | Weight | Sets | Reps | Range | Per Side |
 | ----- | ------------------------------------------------------- | -------- | ----- | -------- | ------ | ---- | ---- | ----- | -------- |
