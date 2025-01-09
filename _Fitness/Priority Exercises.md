@@ -105,24 +105,25 @@ series:
 
 | Body  | Machine                                                 | Position | Focus | Priority | Weight | Sets | Reps | Range | Per Side |
 | ----- | ------------------------------------------------------- | -------- | ----- | -------- | ------ | ---- | ---- | ----- | -------- |
-| Lower | Abductor Outer Thigh                                    | Squeeze  | CM    | High     | *160*  | 3    | 10   | 7     | **160**  |
-| Lower | Abduction Inner Thigh                                   | Spread   | CM    |          | *110*  | 3    | 10   | 0     | **110**  |
+| Lower | Abductor Outer Thigh                                    | Spread   | CM    | Low      | *145*  | 3    | 10   | 7     | **160**  |
+| Lower | Abduction Inner Thigh                                   | Squeeze  | CM    | High     | *110*  | 3    | 10   | 0     | **110**  |
 | Lower | Leg Press off Back Abductor                             | Wide     | CM    | High     | *540*  | 3    | 10   | 0     | 270      |
 | Lower | Leg Press off Back Calf                                 | Toes     | CM    | High     | *270*  | 3    | 10   | 0     | 135      |
 | Lower | Leg Press off Back Quads                                | Close    | CM    | High     | *540*  | 3    | 10   | 0     | 270      |
 | Lower | Leg Press off Back G&H                                  | Heals    | CM    | High     | *270*  | 3    | 10   | 0     | 135      |
 | Lower | Leg Press Seated                                        | UpClose  | CM    | High     | *110*  | 3    | 5    | 0     | **110**  |
 | Upper | Isolated Lateral Wide Chest                             | Wide     | CM    | Med      | *90*   | 3    | 5    | 0     | 45       |
-| Upper | Weighted Setead Row                                     | N/A      | PG    | High     | *85*   | 3    | 5    | 0     | 42.5     |
+| Upper | Weighted Mid Row                                        | N/A      | PG    | High     | *85*   | 3    | 5    | 0     | 42.5     |
+| Upper | Low Row                                                 | N/A      | PG    | Med      | 85     | 3    | 5    | 0     | 85       |
 | Upper | Rear Delt Fly                                           | N/A      | CM    | High     | *40*   | 3    | 10   | 0     | **40**   |
 | Upper | [[Upper#^238b6e \|Chest Fly]]                           | N/A      | CM    | High     | *70*   | 3    | 10   | 4     | **70**   |
 | Upper | [[Upper#^a7be5a \|Cable Woodchopper]]                   | N/A      | RC    | Med      | 160    | 3    | 10   | 0     | 80       |
 | Upper | [[CableBalloonAbduction.gif \|Cable Balloon Abduction]] | N/A      | PG    | High     | 160    | 3    | 10   | 0     | 80       |
 | Upper | [[CableFloorFly.gif \|Cable Floor Fly]]                 | N/A      | PG    | Low      | 160    | 3    | 10   | 0     | 80       |
-| Upper | [[CableWolverine.gif\|Cable Wolverine]]                 | N/A      | PG    | High     | 160    | 3    | 10   | 0     | 80       |
-| Upper | Shoulder Press                                          | N/A      | CM    | Low      | 0      | 3    | 10   | 0     | 0        |
-| Upper | Mid Row                                                 | N/A      | CM    | Low      | 0      | 3    | 10   | 0     | 0        |
-| Core  | [[Core#^b41212\| Leg Cable Reverse Crunch]]             | N/A      | RC    | Low      | 90     | 3    | 10   | 0     | 45       |
+| Upper | [[CableWolverine.gif\|Cable Wolverine]]                 | N/A      | PG    | High     | 160    | 3    | 5    | 0     | 80       |
+| Upper | Shoulder Press                                          | N/A      | CM    | Low      | 50     | 3    | 5    | 0     | 0        |
+| Upper | Mid Row                                                 | N/A      | PG    | Low      | 0      | 3    | 5    | 0     | 0        |
+| Core  | [[Core#^b41212\| Leg Cable Reverse Crunch]]             | N/A      | RC    | Low      | 90     | 3    | 5    | 0     | 45       |
 ^machine
 
 

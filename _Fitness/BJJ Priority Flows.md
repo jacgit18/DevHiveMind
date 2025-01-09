@@ -334,9 +334,10 @@ flowchart LR
     C --> E
     C --> G
     C <-.-> ElevatorGuard
-    C --> G
+    C <-.-> 4
 	Closed <-.-> A
-	Closed< -.-> 4
+	Closed <-.-> 4
+	Closed <-.-> 7
 	Closed --> OctopusGuard
 	D --> F
 	D --> N
@@ -344,6 +345,8 @@ flowchart LR
 	D --> R
 	D <-.-> OctopusGuard
 	D <-.-> ElevatorGuard
+	D <-.-> 4
+	D <-.-> 7
 	F --> N
 	F <-.-> ElevatorGuard
 	G <-.-> ElevatorGuard
@@ -354,6 +357,7 @@ flowchart LR
 	H <-.-> ElevatorGuard
 	H <-.-> OctopusGuard
 	H <-.-> Turtle
+	H <-.-> 7
 	H <-.-> 13
 	I <-.-> J
 	I <-.-> OctopusGuard
@@ -365,7 +369,8 @@ flowchart LR
 	J <-.-> SMount
 	J --> 4
 	J <-.-> 5
-	J --> 13
+	J <-.-> 7
+	J <-.-> 13
 	K <-.-> Turtle
 	L <-.-> C
 	L --> F
