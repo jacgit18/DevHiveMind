@@ -180,7 +180,7 @@ style Turtle fill:blue,stroke:White,stroke-width:4px,shadow:shadow
 ```
 ## Priority Submission Flow
  Practice alternating from **choke-to-limb** and vise versa to improve chances of getting a submission.
-### Top Submissions to Practice Attacking (Positions Available: 7+)
+##### Top Submissions to Practice Attacking (Positions Available: 7+)
 - **Armbar (Straight Armbar)**
 	- Counter with from **Guillotine Defense** If the opponent defends a guillotine by extending an arm, transition into an armbar.
 	- Counter with from **Failed Triangle** If they stack to escape a triangle, isolate the arm and apply the armbar.
@@ -200,20 +200,16 @@ style Turtle fill:blue,stroke:White,stroke-width:4px,shadow:shadow
 		- Counter with from **RNC Defense** If they defend their neck by tucking their chin, use the sleeve for an Ezekiel choke.
 - **Arm Triangle** Avail from top side control  & Mount
 	- Counter with from **Triangle Defense** If they posture to escape a triangle, use the transition to lock an arm triangle.
-### Top Submissions to Practice Countering and Escaping
-- **Kimura**
-	- Escapes
-	- Counters
-- **Americana**
-	- Escapes
-	- Counters
-- **Omoplata**
-	- Escapes
-	- Counters
+- **Von Flue Choke** Avail from top half guard
+	- Counter with from **Guillotine Defense**
+##### Top Submissions to Practice Countering and Escaping
+- **[[Priority Counter & Escapes#**Kimura (Shoulder Lock)**|Kimura]]**
+- **[[Priority Counter & Escapes#**Americana (Keylock)**|Americana]]**
+- **[[Priority Counter & Escapes#**Omoplata (Shoulder Lock from Guard)**|Omoplata]]**
 
-specific counter to ones mention above located here [[Prior Counter]]
-
-Look at [[Sub Counters]]  
+#todo/Personal/MMA/BAU 
+- [ ] Look at other [[Sub Counters]]  
+- [ ] Revisit full list of [[Subs]] from bottom and top
 
 #### **Guard Flow: Effective Against Larger Opponents**
 
@@ -731,6 +727,8 @@ red border are chokes, blue borders limbs
 - Side Control, Mount, Half Guard - Blue
 - Sprawl, Turtle - Purple
 - Back Control - burlywood
+
+Consider [[Exposing Arm]] to get person to attack your arm and give you opportunity to sweep.
 
 
 
