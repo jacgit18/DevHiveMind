@@ -18,7 +18,6 @@ dg-publish:
 - [ ] What advice do you have for software engineers transitioning into the digital health industry?
 - [ ] How do digital health startups and established companies differ in their approach to innovation and product development?
 
-## Disruptors
 
 
 ## Other Questions  

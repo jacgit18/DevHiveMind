@@ -3,6 +3,7 @@ tags:
   - career
   - employment
   - companies
+  - BAU
 author:
   - jacgit18
   - chatgpt
@@ -18,6 +19,8 @@ dg-publish:
 
 ![[Job Cycle.png]]
 > In April, when bonuses are typically distributed, individuals often reassess their positions or consider new opportunities, leading to potential changes in roles or responsibilities within the organization.
+
+Prioritize job hunting in Q1 and Q2
 ### Job Search & Interview Strategies
 1. **Understanding Job Role:**
    - When applying, inquire if the role is direct hire or contract, ensuring clarity about the nature of the position.
@@ -94,11 +97,182 @@ dg-publish:
    - Prioritize applying directly to the hiring company rather than through a third-party recruiter.
    - Consider going for direct hires to streamline communication and potentially negotiate terms more effectively.
 
-##### Questions to ask immediately after Layoff 
-- When do I receive my last paycheck?  
-- Will I receive severance pay?  
-- How long will I have to exercise my stock options?  
-- Does the company offer healthcare coverage after my last day, and if so for how long?  
-- Will you provide a reference for me?  
-- How can I get copies of my performance reviews, and by when?  
-- What will happen to my 401(k)?
+##### Questions & things to do after or before Layoff 
+- Connect with colleagues by sharing contact info and/or requesting to add them on LinkedIn ask for endorsements.
+- If you are receiving severance, sign the necessary paperwork as soon as possible so that your first payment is not delayed.  
+- NB: after reading the paperwork to make sure none of the clauses are non-starters for you.  
+- While you still have access to Slack, ask your manager, previous managers, and/or colleagues you worked closely with if they would be willing to give a reference check for you for your next role.  
+- Questions to ask
+	- When do I receive my last paycheck?  
+	- Will I receive severance pay?  
+	- How long will I have to exercise my stock options?  
+	- Does the company offer healthcare coverage after my last day, and if so for how long?  
+	- Will you provide a reference for me?  
+	- How can I get copies of my performance reviews, and by when?  
+	- What will happen to my 401(k)?
+
+
+
+## Selling Self
+![[nlnll.jpg]]
+#todo/cleanup
+- [ ] move and reduce stuff here and things in companies folder
+
+Don't specify software engineer level on LinkedIn let them guess ask
+
+I'm a data analyst/ business system analyst, by experience not training.
+
+Make a work problem you know to talk to co worker
+
+Don't just connect leave a note when connecting on LinkedIn
+
+talk in project like develop testing architecture for high priority aacounts 
+
+I focused on organizational governance, particularly in designing and implementing processes for technical bootcamps and upskilling software engineers.
+
+
+If if interviewing for another company and you tell them that you were laid off CC or previous manager who you have foster the relationship with to loop them in and they can provide positive feedback to the new hiring manager of the company you trying to interview with   
+
+You can also get copies of your performance reviews save them so you can use them as references for future hiring managers to look at
+
+
+
+Cold Call Strategy
+When initiating a cold call to inquire about a non-existent interview schedule, ensure your approach is tactful. Introduce yourself with your role and department, expressing your enthusiasm about the potential interview. Craft questions about the interview process, subtly gauging the intentions and advice offered by the person on the other end.
+
+If ask a specific technology or concept that you're not familiar with talk about other things answering the question to show off your transferable skills like oh this is a very interesting topic and Transition into talking about something similar around that topic or relating to show your transferable skills but don't say you don't know anything about or planning on it.
+
+
+Path to Engineering Initially, I was thinking about doing general IT or networking but I realized for IT that a lot of the work involved troubleshooting basic issues that if people were more observant they could figure out…. which is pretty funny because you run into similar issues but at a higher level like if somebody doesn't read the documentation. As for Networking, I took a terrible entry-level class which was the only class I remember falling asleep in, but I, 'm still a little interested in it especially when it comes to the hacking side of things & anonymity like I want to be like Mr Robot a little bit and learn Kali Linux.
+
+![[nono.gif]]
+PATH 1  
+  
+Navigating the software development process is like working on a puzzle without having the box that shows you the final image. The journey can be very chaotic at times. This specific aspect attracts me to this role—the combination of uncertainty about the final picture and the need to adeptly locate and assemble all the pieces, ultimately bringing order and structure to create a masterpiece.  
+  
+  
+PATH 2  
+  
+One of the reasons I like software engineering is because it is very variable and seems almost nebulous. I like to compare it to martial arts because it shares those same qualities, especially when you consider all the paths a fight can go down. Martial arts and engineering both involve dealing with dynamic and unpredictable situations. The only difference is that between engineering and martial arts is that one involves you getting hit in the head and losing a couple of brain cells, which is funny because you definitely can have those moments where you want to bang your head against that wall when you can't figure something out.  
+  
+That is why I am interested in this role.  
+  
+  
+PATH 3  
+  
+So I come from a technical bootcamp background and have experience as a full-stack developer working in the venture capital space at a Series A startup. Additionally, I've worked as a Business Systems Analyst (BSA), where I had the opportunity to plan out bootcamps tailored for diverse developer populations. So I have seen the software development process from many perspectives.
+
+
+
+
+
+So, I’m a full-stack engineer, but right now I’m contracting as a QA engineer at Capital One.  
+  
+Where im working on increasing test coverage for their internal credit card servicing application.  
+  
+So, if you have a Capital One card, I could at least make it look like you don’t have a balance.  
+  
+But before that, I was a Business Systems Analyst at TD Bank, where I had the chance to plan out technical boot camps.  
+  
+It was a cool experience because it gave me a break to really organize my thoughts around engineering. I was able to expand my understanding of software engineering as a whole in terms of all the different subject matter, and what I should try prioritizing.  
+  
+  
+I also worked as a full-stack engineer at a startup that eventually got into the Google Startup Accelerator.
+
+
+Work on taking your time to think and trigger a line of thought.
+
+
+## Random put somewhere that make sense
+![https://www.youtube.com/watch?v=Mnceg6R1JMQ](https://www.youtube.com/watch?v=Mnceg6R1JMQ)
+
+
+
+
+### Introvert skills
+1. **Highlight Your Listening Skills:**
+   “I have a strong ability to listen carefully to my colleagues and clients, which allows me to understand their needs deeply and respond thoughtfully. For instance, in my last role, I identified underlying team issues affecting a project just by paying close attention during meetings.”
+
+2. **Showcase Thoughtfulness and Preparation:**
+   “I always take the time to think before I speak, ensuring that my responses and actions are well-considered. This approach has led to successful outcomes, such as when I presented a thoroughly researched proposal that saved the company significant resources.”
+
+3. **Emphasise Your Ability to Work Independently:**
+   “I am very comfortable working independently and staying motivated without constant oversight. For example, I led a project where I managed all aspects from start to finish, resulting in a highly successful product launch.”
+
+4. **Detail Your Strength in Deep Focus:**
+   “My ability to focus deeply on tasks allows me to be highly productive and handle complex projects. In my previous job, I was able to complete a critical project ahead of schedule because I could work uninterrupted for extended periods.”
+
+5. **Mention Your Strong Writing Skills:**
+   “I excel in written communication, which is often clearer and more deliberate. At my last job, my detailed reports and documentation helped streamline processes and improve team communication significantly.”
+
+6. **Illustrate Your Collaborative Abilities:**
+   “I thrive in collaborative settings. I facilitate balanced discussions and respect diverse opinions, which helps in achieving collective goals.”
+
+7. **Present Yourself as a Problem Solver:**
+   “I am introspective and analytical, which makes me a strong problem solver. I once developed a creative solution to a recurring issue in our workflow, which improved efficiency and was adopted company-wide.”
+
+
+### Language to use
+- Domain
+- Engineering sounds harder
+
+## Fake Email
+Include available times an email when emailing the job that you're trying to apply for  
+  
+  
+To make an email look like a reply, you can follow these steps:  
+  
+1. **Subject Line**: Prefix the subject with "Re:". For example, if the original email subject was "Meeting Agenda", you would use "Re: Meeting Agenda".  
+  
+2. **Greeting and Salutation**: Start your email with a greeting that acknowledges the previous conversation, such as "Hi `[Name]`,", "Hello `[Name]`,", or "Dear `[Name]`,".  
+  
+3. **Quoted Text**: Include the original message in the body of your email. This can be done by copying the original email's text and pasting it below your response. Indent this text or use a different color to make it clear it’s a quoted message.  
+  
+4. **Reply Content**: Write your reply above the quoted text. This is where you address the points or questions raised in the original email.  
+  
+5. **Formatting**: Many email clients use a vertical line to indicate quoted text. You can manually add this line by using the “>” character at the beginning of each line of the quoted text.  
+  
+6. **Signature**: End with your signature, which should be consistent with the signature you typically use in emails.  
+  
+Here’s an example structure:  
+  
+---  
+  
+**Subject:** Re: Meeting Agenda  
+  
+**Hi [Name],**  
+  
+Thank you for sending the agenda. Here are my thoughts:  
+  
+[Your response]  
+  
+---  
+  
+On [Date], at [Time], [Original Sender] wrote:  
+  
+> Hi [Your Name],  
+>  
+> Here is the agenda for the upcoming meeting:  
+>  
+> - Point 1  
+> - Point 2  
+> - Point 3  
+>  
+> Let me know if you have any questions.  
+>  
+> Best regards,  
+> [Original Sender]  
+  
+---  
+  
+By following these steps, your email will look like a reply to the original message.
+
+Example
+![[2024-12-16 23.37.27 mail.google.com e969d966655b.png]]
+
+#todo/BAU 
+- [ ] Schedule on your calendar when to call or reach out again to a recruiter who told you when can you expect to hear back about next steps in interview process as best practice for yourself.
+- [ ] Send follow up message
+	- [ ] It was great meeting you to. I really enjoyed our conversation. Let's stay in touch—I'm eager to see where our paths might cross again and what future opportunities may arise.
+	- [ ] Hello just wanted to say how It was great meeting you at the event. I really enjoyed our conversation. Let's stay in touch—I'm eager to see where our paths might cross again and what future opportunities may arise.
+	- [ ] Maybe coffee chat or ask for referral. 

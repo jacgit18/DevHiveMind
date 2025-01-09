@@ -53,6 +53,7 @@ dg-publish:
 #todo/High/buisness 
 - [ ] Trademark software carpenter
 	- [ ] Create some type of email Branding for software carpenter
+	- [ ] Talk to tax person throughout the year about 4 times a year and make sure you trust them  
 - [ ] look more into trademark classes
 	- [ ] **Class 42**: Includes software development, computer programming, IT consulting, and technology-related services. This is likely the most relevant class for software and IT services.
 	- [ ] **Class 35**: Covers advertising, business management, and consulting services. This class may be relevant if you're offering consulting or business-related services in the software industry.

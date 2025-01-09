@@ -2,6 +2,7 @@
 tags:
   - governance
   - cloud
+  - bestPractices
 author:
   - jacgit18
   - chatgpt

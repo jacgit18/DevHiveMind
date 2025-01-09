@@ -33,7 +33,9 @@ Also known as Behavioral Testing, Black box testing is a software testing techni
 
 Resultant meaning occurring or produced as a result or consequence of something.
 
-Black box involves [[Functional Testing]], [[Non-functional Testing]], & [[Pre Acceptance Testing#^84bb7e |Regression Testing]]
+Black box involves [[Functional Testing]], [[Non-functional Testing]], & [[Pre Acceptance Testing#^84bb7e |Regression Testing]].
+
+There are several [[Black Box in Depth |technologies]] used in black box testing due to it nature of not having access to codebase.
 
 Some of the errors tested by this method are – 
 

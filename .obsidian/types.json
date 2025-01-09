@@ -54,6 +54,17 @@
     "Reads": "number",
     "Writes": "number",
     "AFRS_three": "number",
-    "userID": "number"
+    "userID": "number",
+    "HDHP": "number",
+    "MontltyHSA": "number",
+    "AnnualHSA": "number",
+    "WorkDays": "number",
+    "TotalWeeks": "number",
+    "Days": "number",
+    "IdealSalaryTaxRate": "number",
+    "CurrentTaxRate": "number",
+    "IdealSalary": "number",
+    "Salary": "number",
+    "monthlyPreTaxIncome": "number"
   }
 }

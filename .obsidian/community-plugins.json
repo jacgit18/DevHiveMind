@@ -33,7 +33,6 @@
   "heatmap-calendar",
   "obsidian-git",
   "obsidian-fullscreen-plugin",
-  "excel",
   "excalibrain",
   "dataview",
   "obsidian-emoji-toolbar",
@@ -45,7 +44,6 @@
   "custom-classes",
   "convert-url-to-iframe",
   "cmdr",
-  "obsidian-checklist-plugin",
   "calendar",
   "obsidian-book-search-plugin",
   "better-word-count",
@@ -56,5 +54,11 @@
   "obsidian-style-settings",
   "obsidian-meta-bind-plugin",
   "card-board",
-  "obsidian42-brat"
+  "obsidian42-brat",
+  "buttons",
+  "obsidian-charts",
+  "quick-latex",
+  "sheet-plus",
+  "copilot",
+  "obsidian-checklist-plugin"
 ]

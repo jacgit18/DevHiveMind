@@ -43,6 +43,8 @@ The 5 V's of data refer to five characteristics or dimensions that are used to d
 
 By considering these five dimensions of data—volume, velocity, variety, veracity, and value—organizations can better understand, manage, and leverage their data assets to drive business success and innovation.
 
+## Quantitative & Qualitative Data
+
 ![[Pasted image 20240429083438.png]]
 
 

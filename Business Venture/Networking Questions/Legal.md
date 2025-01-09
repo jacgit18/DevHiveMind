@@ -19,7 +19,6 @@ dg-publish:
 - [ ] What role does technology play in tracking and managing legal cases or compliance issues?
 - [ ] How do you stay updated on legal changes that could impact the company’s operations?
 
-## Disruptors
 
 
 ## Other Questions  

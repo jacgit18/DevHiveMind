@@ -75,6 +75,11 @@ Environment=HOME=/home/your_username
 sudo apt update  
 sudo apt install syncthing  
 syncthing  
+
+Enable Syncthing for the current user 
+systemctl --user enable syncthing 
+systemctl --user start syncthing
+
 clear  
 sudo nano /etc/systemd/system/syncthing.service  
 sudo systemctl daemon-reload  

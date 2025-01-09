@@ -16,6 +16,7 @@ dg-publish:
 
 #todo/Personal/High/Dev 
 - [ ] find notes related and condense and remove repetitiveness in vault  
+- [ ] look into OpenAPI (Swagger) - API specification
 ### Advanced communication technologies 
   
 1. **gRPC:** gRPC is a high-performance, open-source RPC (Remote Procedure Call) framework developed by Google. It uses HTTP/2 for transport and Protocol Buffers (protobuf) for serialization, providing features such as bidirectional streaming, strong typing, and efficient binary serialization.  

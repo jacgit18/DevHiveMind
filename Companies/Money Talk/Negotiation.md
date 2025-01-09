@@ -15,6 +15,10 @@ dg-publish: false
 ![[Money Talk.gif]]
 Negotiating your salary effectively requires a strategic approach. Consider the following steps:
 
+120,000 to 130 or 130,000 to 160 to adjust for inflation to actually make around $120  
+  
+if later stage startup ☝🏽 else seed startup 90,000 to 120,000
+
 1. **Take a Negotiation Class:**
    Enhance your negotiation skills by taking a class. Specify your salary range between $91,000 and $130,000.
 

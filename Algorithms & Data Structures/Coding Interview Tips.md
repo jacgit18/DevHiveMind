@@ -15,6 +15,15 @@ dg-publish:
 ---
 ![[Whiteboarding.gif]]
 
+#todo/BAU/Interview 
+- [ ] The simplest way to pass more interviews: just ask to skip the automated coding assessment.  
+  
+This is so easy that it may feel like cheating, but it's surprisingly effective.  
+  
+The purpose of async coding assessments is for companies to quickly filter out a bunch of candidates without wasting their precious human time  
+  
+Your goal as a candidate is to engage with a human ASAP. You can only form a connection with the interviewer, ask thoughtful questions, or collect feedback about your performance if you have human interaction.
+
 ### ❌ Avoid  
 Don't interrupting your interviewer when they are talking. Usually, if they speak, they are trying to give you hints or steer you in the right direction.  
 
