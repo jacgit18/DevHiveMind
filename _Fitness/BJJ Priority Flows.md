@@ -1,4 +1,4 @@
-## Real World Guards & Submission Flow
+## Real World Guards, Sweeps, & Submission Flows
 
 > **Your body isn't solely your possession it is subject to everyone assuming you allow them to control and manipulate it. Focus on what you can control, but within that scope of control understand you can't control everything no matter how much you fight. Embrace the flow of control or the absence of control.**
 
@@ -9,7 +9,7 @@
 	- [ ] [[BJJ Priority Flows#Priority Open Guard Variations|Open Guard Variations]]
 - [ ] Focus on Sweeps against Bigger People
 	- [ ] [[BJJ Priority Flows#Purple - Open Guard Sweeps |Open Guard Sweeps]]
-- [ ] Focus on Defense of [[BJJ Priority Flows#Top Submissions to Practice Countering and Escaping |Power Submissions]]
+- [ ] Focus on Defense of [[Priority Submission Flow#Top Submissions to Practice Countering and Escaping |Power Submissions]]
 - [ ] Look into Knee-on-Belly and add stuff here
 - [ ] Keep chin close to chest in general when person tries to get arm behind neck for control and keep you flat on black.
 
