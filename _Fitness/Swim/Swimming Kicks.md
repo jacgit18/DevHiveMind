@@ -46,6 +46,8 @@ The choice between a two-beat and six-beat kick largely depends on your goals (s
 
 
 ### **Phase One: Swimming Lessons**
+#todo/purchases 
+- [ ] get swim lessons
 - **Private Lessons:**
     - YMCA Cost: **$250–$300** for 8 classes.
     
