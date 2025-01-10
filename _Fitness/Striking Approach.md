@@ -40,7 +40,8 @@ Use the **UFC game** to simulate and experiment with techniques and strategies.
 - Vary entries and exits, mix up how you engage and disengage to avoid becoming predictable and to exploit different angles.
 - Push pace while being defensively responsible also using boxing against Muay Thai heavy attacker. 
 - Control hand placement, keep your hand extended to parry, disrupt, or occupy your opponent’s hand. 
-- Try probing jab using it to gauge distance, timing, and breaking their base or flow.
+- Try probing jab along with other strikes using it to fill the void of space while also using it to gauge distance, timing, and breaking their base or flow.
+- When trying to secure a clinch, it's generally easier to do so when both fighters are in opposite stances (mirror stance), as this creates a natural alignment for the clinch. In contrast, when both fighters are in the same-side stance, their arms and body positions are more aligned, making it harder to close the distance and establish the clinch.
 
 **Breathing in Range**
 - Exhale sharply when engaging to stay relaxed and generate power.
@@ -95,11 +96,13 @@ Try and use the other [[List of Feints]]
 By continuously experimenting and refining your approach, you'll develop a dynamic striking style that keeps opponents guessing.
 
 ## **Counter Striking Guide**
+Opposite side stance looks like a mirror but you are both in opposite stances meaning one person is in Orthodox and the other in Southpaw while same side stance doesn't look like a mirror but you're both in the same stance so both people are either orthodox or southpaw leading with the same leg.
+
 - Use slight leans to bait an attack but maintain readiness to move in any direction.
 - Lean opposite to the punch’s direction (e.g., dip left against a right-hand punch).
 - Faint with level changes typically when opponent are in there weaker stance or same side stance.
 ### **Opposite Stance (Opposite Lead Foot)**
-- This occurs when you and your opponent have opposite lead feet (e.g., you're [[Stance Fundamentals#^b31948|Orthodox]], and they're [[Stance Fundamentals#^1981b8|Southpaw]]). It's generally easier to step outside their lead foot.
+- This occurs when you and your opponent are a mirror of each other(e.g., you're [[Stance Fundamentals#^b31948|Orthodox]], and they're in [[Stance Fundamentals#^1981b8|Southpaw]]). It's generally easier to step outside their lead foot. 
 
 - Consider different Options listed here [[Orthodox vs Southpaw]]
 - Also Philly shell tends to be effective here.
@@ -135,7 +138,7 @@ By continuously experimenting and refining your approach, you'll develop a dynam
     - Step laterally to the outside of their lead foot to create angles for counterattacks.
 
 ### **Same Stance (Same Lead Foot)**
-- Occurs when you and your opponent have the same lead foot (e.g., both Orthodox or both Southpaw). It’s harder to step outside their lead foot, and leverage dynamics differ.
+- Occurs when you and your opponent have the same lead foot (e.g., both Orthodox or both Southpaw) basically your stance doesn't mirror each other. It’s harder to step outside their lead foot, and leverage dynamics differ.
 
 #### **Key Techniques**
 1. **Catching and Slapping**:
