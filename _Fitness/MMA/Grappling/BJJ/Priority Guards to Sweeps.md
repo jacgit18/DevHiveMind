@@ -24,18 +24,20 @@ dg-publish:
 #### Yellow - Closed Guard Sweeps 
 ***Larger Opponents***
 *Focus: Control their posture and attack openings*
-- Hip Bump Sweep
-- Double Ankle Sweep
-- Knee Tap Sweep
-- Homer Simpson Sweep
 - Plan B Sweep
+- Double Ankle Sweep
+- Hip Bump Sweep
+- Homer Simpson Sweep
+- Knee Tap Sweep
+
 ***Smaller Opponents***
 *Use control and pressure to dominate.*
 Transition to positions that maximize weight advantage.
+- Plan B Sweep
+- Double Ankle Sweep
 - Push-Pull (Sit-Up) Sweep
 - Sickle Sweep
-- Double Ankle Sweep
-- Plan B Sweep
+
 #### Cyan - Inverted  Guard Sweeps 
 - Helicopter Sweep
 #### Orange - Half Guard Sweeps 
