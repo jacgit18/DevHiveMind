@@ -32,37 +32,6 @@ Remember you always start off Standing
 
 ``` mermaid
 flowchart LR
-    A[Full Guard] 
-    B[De La Riva] 
-    C[Spider]
-    Closed[Closed Full Guard] 
-    D[Butterfly]
-    E[Lasso Guard]
-    F[X]
-	G[Collar/Sleeve]
-	H[Half Guard] 
-	I[Side Control] 
-	J[Mount] 
-	K[North/South] 
-	L[Reverse DeLaRiva] 
-	M[Berimbolo]
-	N[50/50]
-	O[Worm]
-	P[Tornado]
-	Q[Rubber]
-	R[Mission Control]
-	Z[ZGuard]
-	SMount[SMount]
-	Turtle[Turtle]
-	KGuard[KGuard]
-	OctopusGuard[Octopus Guard]
-	ElevatorGuard[Elevator Guard]
-
-	1[Triangle]
-	2[Gogoplata]
-	3[Omoplata]
-	4[Armbar]
-
 	A <-.-> KGuard
     A <-.-> B
     A <-.-> C
@@ -119,6 +88,37 @@ flowchart LR
 	R --> 3 
 	R --> 4 
 	Z <-.-> ElevatorGuard
+
+	A[Full Guard] 
+	B[De La Riva] 
+	C[Spider]
+	Closed[Closed Full Guard] 
+	D[Butterfly]
+	E[Lasso Guard]
+	F[X]
+	G[Collar/Sleeve]
+	H[Half Guard] 
+	I[Side Control] 
+	
+	K[North/South] 
+	L[Reverse DeLaRiva] 
+	M[Berimbolo]
+	N[50/50]
+	O[Worm]
+	P[Tornado]
+	Q[Rubber]
+	R[Mission Control]
+	Z[ZGuard]
+	SMount[SMount]
+	Turtle[Turtle]
+	KGuard[KGuard]
+	OctopusGuard[Octopus Guard]
+	ElevatorGuard[Elevator Guard]
+	
+	1[Triangle]
+	2[Gogoplata]
+	3[Omoplata]
+	4[Armbar]
 
 style A fill:green,stroke:purple,stroke-width:4px,shadow:shadow
 
