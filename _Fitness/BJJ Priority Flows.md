@@ -13,16 +13,15 @@
 - [ ] Look into Knee-on-Belly and add stuff here
 - [ ] Keep chin close to chest in general when person tries to get arm behind neck for control and keep you flat on black.
 
-
 Guards not mentioned here can be risky in real-world scenarios where strikes are a factor. It’s important to move away from a reactive mindset and focus on being more proactive throwing in more aggression in your approach.
 
 Submissions can serve as both sweeps and opportunities to transition to other submissions. Approach with the mindset that the opponent's limbs are obstacles; using submissions to manipulate their limbs can help create openings, especially for securing chokes.
 
 ### **Real-World Tips**
-- **Distance Management:** Always use your legs to create space and control posture.
-- **Safe Escapes:** Prioritize sweeps that lead to standing disengagements if in danger.
-- **Adapt Quickly:** Switch guards or submissions based on the opponent's reactions and pressure.
-### **Guards to Avoid in Real-World Scenarios**
+- **Distance Management:** Always use your legs to create space and control or break posture.
+- **Safe Escapes:** Prioritize sweeps that lead to standing disengagements if in danger while using leverage-based techniques to neutralize stronger person.
+- **Adapt Quickly:** Switch guards or submissions based on the opponent's reactions and pressure while also exploiting gaps in their balance or mobility.
+#### **Guards to Avoid in Real-World Scenarios**
 - Deep Half Guard: Leaves face open to strikes.
 - Inverted Guard: Risky against stomps or downward strikes.
 - X-Guard: Vulnerable if opponent stays upright and strikes.
@@ -180,11 +179,6 @@ style Turtle fill:blue,stroke:White,stroke-width:4px,shadow:shadow
 
 ```
 #### **Guard Flow: Effective Against Larger Opponents**
-##### **Guard Principles**
-- Prioritize creating distance and breaking posture.
-- Use leverage-based techniques to neutralize strength.
-- Exploit gaps in their balance or mobility.
-
 ##### Priority Open Guard Variations
 - [[De La Riva]] – Attack-oriented.
 - [[Spider]] – Leverage control with legs and grips.
