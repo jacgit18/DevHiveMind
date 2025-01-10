@@ -21,7 +21,7 @@ Submissions can serve as both sweeps and opportunities to transition to other su
 ### **Real-World Tips**
 - **Distance Management:** Always use your legs to create space and control posture.
 - **Safe Escapes:** Prioritize sweeps that lead to standing disengagements if in danger.
-- **Adapt Quickly:** Switch guards based on the opponent's reactions and pressure.
+- **Adapt Quickly:** Switch guards or submissions based on the opponent's reactions and pressure.
 ### **Guards to Avoid in Real-World Scenarios**
 - Deep Half Guard: Leaves face open to strikes.
 - Inverted Guard: Risky against stomps or downward strikes.
