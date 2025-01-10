@@ -13,7 +13,90 @@ dg-publish:
 ---
 ## Priority Flow
  Practice alternating from **choke-to-limb** and vise versa to improve chances of getting a submission.
- 
+
+ red border are chokes, blue borders limbs
+- Open Guard - dark gray Chokes off back that can maybe used in other positions
+- Side Control, Mount, Half Guard - Blue
+- Sprawl, Turtle - Purple
+- Back Control - burlywood
+
+Consider [[Exposing Arm]] to get person to attack your arm and give you opportunity to sweep.
+
+
+```mermaid
+flowchart LR
+    A[Triangle] <-.->  B[Armbar]
+    A <-.-> C[Omoplata]
+    A <-.->  D[Gogoplata]
+    A <-.->  E
+    B <-.-> E[Kimura]
+    C <-.->  B
+
+
+    F[Guillotine] .-> G[Ninja Choke]
+    F .-> H[Peruvian Necktie]
+    F .-> I[Arm-In Guillotine]
+    F .-> Q
+    F .-> L
+
+    J[Arm Triangle Choke] --> P
+    J --> L[D’Arce Choke]
+    J --> B
+
+    M[RNC] --> B
+    M --> N[Bow and Arrow Choke]
+
+    O[Baseball Bat Choke] --> P[Ezekiel Choke]
+    O --> B
+
+    Q[Anaconda Choke] --> L
+    Q --> H
+
+    R[Brabo Choke] --> J
+    R --> L
+
+    S[Cross Collar Choke] --> N
+    S --> P
+
+    P --> B
+    P --> R
+
+
+	Americana[Americana]
+	AnkleLock[AnkleLock]
+	HealLock[HealLock]
+	BuggyChoke[BuggyChoke]
+    
+style A fill:darkgray,stroke:red,stroke-width:4px,shadow:shadow, 
+
+style B fill:orange,stroke:blue,stroke-width:4px,shadow:shadow
+
+style C fill:orange,stroke:blue,stroke-width:4px,shadow:shadow
+
+style D fill:darkgray,stroke:red,stroke-width:4px,shadow:shadow, 
+
+style E fill:orange,stroke:blue,stroke-width:4px,shadow:shadow
+
+style F fill:darkgray,stroke:red,stroke-width:4px,shadow:shadow
+
+style G fill:red,stroke:red,stroke-width:4px,shadow:shadow
+style H fill:red,stroke:red,stroke-width:4px,shadow:shadow
+style I fill:red,stroke:red,stroke-width:4px,shadow:shadow
+style J fill:red,stroke:red,stroke-width:4px,shadow:shadow
+
+style L fill:blue,stroke:red,stroke-width:4px,shadow:shadow
+style M fill:red,stroke:red,stroke-width:4px,shadow:shadow
+style N fill:burlywood,stroke:red,stroke-width:4px,shadow:shadow
+
+style O fill:blue,stroke:red,stroke-width:4px,shadow:shadow
+style P fill:red,stroke:red,stroke-width:4px,shadow:shadow
+
+style Q fill:purple,stroke:red,stroke-width:4px,shadow:shadow
+style R fill:blue,stroke:red,stroke-width:4px,shadow:shadow
+style S fill:red,stroke:red,stroke-width:4px,shadow:shadow
+```
+
+
 ##### Top Submissions to Practice Attacking (Positions Available: 7+)
 - **Armbar (Straight Armbar)**
 	- Counter with from **Guillotine Defense** If the opponent defends a guillotine by extending an arm, transition into an armbar.
@@ -44,40 +127,6 @@ dg-publish:
 #todo/Personal/MMA/BAU 
 - [ ] Look at other [[Sub Counters]]  
 - [ ] Revisit full list of [[Subs]] from bottom and top
-
-#### **Guard Flow: Effective Against Larger Opponents**
-
-##### **Guard Principles**
-- Prioritize creating distance and breaking posture.
-- Use leverage-based techniques to neutralize strength.
-- Exploit gaps in their balance or mobility.
-
-##### Priority Open Guard Variations
-- [[De La Riva]] – Attack-oriented.
-- [[Spider]] – Leverage control with legs and grips.
-- [[Lasso]] – Control-oriented.
-- [[Butterfly]] – Great for sweeps and controlling posture.
-- [[Collar & Sleeve]] – Defensive, distance management.
-##### Priority [[Half Guards  |Half Guard]]  Variations
-- Deep Half Guard – Leverage-based, transitions to sweeps.
-- Z-Guard – Strong knee shield; transition to leg attacks.
-
-##### Priority Leg Entanglement Guard Variations
-- [[X Guard]] – Attack legs or transition to sweeps.
-- 50/50 Guard – Control-oriented.
-
-##### Priority Inverted  Guard Variations
-- Tornado Guard – Dynamic; transitions to sweeps.
-- Reverse De La Riva – Attack-oriented, leads to inversions.
-
-#### **Guard Flow: Effective Against Smaller Opponents**
-##### Priority Pressure Guards
-- Half Guard with Underhook – Pressure-heavy control.
-- Lockdown Guard – Traps opponent’s leg for sweeps or transitions.
-
-##### Top Guards (Dominant Positions)
-- Mount Guard – Dominate and apply submissions.
-- Top Turtle – Attack openings aggressively.
 
 #### **Guard Flow Sub: Effective Against Larger Opponents**
 ##### Open Guard Submissions
