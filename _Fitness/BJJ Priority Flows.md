@@ -9,6 +9,7 @@
 	- [ ] [[BJJ Priority Flows#Priority Open Guard Variations|Open Guard Variations]]
 - [ ] Focus on Sweeps against Bigger People
 	- [ ] [[Priority Guards to Sweeps#Purple - Open Guard Sweeps|Open Guard Sweeps]]
+- [ ] Work on attacking [[Priority Submission Flow#Top Submissions to Practice Attacking (Positions Available 7+) |Armbar]] from different positions.
 - [ ] Focus on Defense of [[Priority Submission Flow#Top Submissions to Practice Countering and Escaping |Power Submissions]]
 - [ ] Look into Knee-on-Belly and add stuff here
 - [ ] Keep chin close to chest in general when person tries to get arm behind neck for control and keep you flat on black.
@@ -25,6 +26,27 @@ Submissions can serve as both sweeps and opportunities to transition to other su
 - Deep Half Guard: Leaves face open to strikes.
 - Inverted Guard: Risky against stomps or downward strikes.
 - X-Guard: Vulnerable if opponent stays upright and strikes.
+
+example to remove
+
+```mehrmaid
+flowchart LR
+A --> B & D --> E --> F & G
+G --> F
+A["![[logo.png|100]]"]
+B("![[logo-old.png|100]]")
+D("$f(x)=\sum_i^\inf x^i$")
+E("**Caption**
+1. **Bold**
+2. *Italic*
+3. ==Marker==
+- [ ] Point
+---
+Different Section")
+F("#uni")
+G(("$\dfrac{2}{\pi}+2$"))
+```
+
 
 ## All Guard Flow
 Remember you always start off Standing
@@ -176,7 +198,6 @@ style OctopusGuard fill:blue,stroke:black,stroke-width:4px,shadow:shadow
 style SMount fill:blue,stroke:white,stroke-width:4px,shadow:shadow
 
 style Turtle fill:blue,stroke:White,stroke-width:4px,shadow:shadow
-
 ```
 #### **Guard Flow: Effective Against Larger Opponents**
 ##### Priority Open Guard Variations

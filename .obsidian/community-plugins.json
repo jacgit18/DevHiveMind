@@ -59,7 +59,9 @@
   "obsidian-charts",
   "quick-latex",
   "sheet-plus",
+  "copilot",
   "obsidian-checklist-plugin",
-  "mermaid-tools",
-  "mehrmaid"
+  "diagram-zoom-drag",
+  "mehrmaid",
+  "mermaid-tools"
 ]

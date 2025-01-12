@@ -114,6 +114,8 @@ dg-publish: true
 
 > [!success]+ Remember
 > **Even if we only did what we were capable of, we'd astound ourselves.** 
+> 
+> ***Start with small, incremental steps to establish a foundation. Gradually build a consistent rhythm and sustain it over time. Once you’re comfortable, repeat the process until you can move fluidly. From there, adapt and alternate your tempo as needed to match the demands of the task at hand.***
 ---
 
 
@@ -158,8 +160,6 @@ action:
   command: daily-notes
 ```
 
-#todo 
-- [ ] Cleanup todo's make it cleaner
 ```meta-bind-button
 style: primary
 hidden: true
