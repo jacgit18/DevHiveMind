@@ -32,6 +32,9 @@ Use the **UFC game** to simulate and experiment with techniques and strategies.
 ## **Striking Principles**
 ![](https://www.youtube.com/watch?v=HUyraSmgO3I)
 
+### Fluidity Tips
+![](https://www.youtube.com/watch?v=_utlJTCkn-A)  
+
 ![](https://www.youtube.com/watch?v=2umB17ZXMGM&t=207s)
 ### **1. Be Playful and Adaptive**
 - Treat sparring as a game; keep it light and exploratory.
