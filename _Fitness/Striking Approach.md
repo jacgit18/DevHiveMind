@@ -28,9 +28,11 @@ Use the **UFC game** to simulate and experiment with techniques and strategies.
 	- ![[HighKickStretchOne.gif]]
 	- ![[HighKickStretchTwo.gif]]
 	- ![[HighKickStretchThree.gif]]
+
 ## **Striking Principles**
 ![](https://www.youtube.com/watch?v=HUyraSmgO3I)
 
+![](https://www.youtube.com/watch?v=2umB17ZXMGM&t=207s)
 ### **1. Be Playful and Adaptive**
 - Treat sparring as a game; keep it light and exploratory.
 - Set feet quickly and throw body first be fully extending arms on punch.
