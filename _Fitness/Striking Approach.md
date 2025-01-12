@@ -78,6 +78,8 @@ Try and use the other [[List of Feints]]
     - Switch stances at various points—before, during, or after rhythm.
     - Experiment to discover what feels natural and unpredictable.
 
+Experiment with [[Striking Fluidity]]
+
 ### **5. Wall Leaning Strategy**
 - Use the wall to limit your movement intentionally.
 - This tactic can bait the opponent to attack, creating openings for counters.

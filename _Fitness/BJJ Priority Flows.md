@@ -14,7 +14,7 @@
 - [ ] Look into Knee-on-Belly and add stuff here
 - [ ] Keep chin close to chest in general when person tries to get arm behind neck for control and keep you flat on black.
 
-Guards not mentioned here can be risky in real-world scenarios where strikes are a factor. It’s important to move away from a reactive mindset and focus on being more proactive throwing in more aggression in your approach.
+Guards not mentioned here can be risky in real-world scenarios where strikes are a factor. It’s important to move away from a reactive mindset and focus on being more proactive throwing in more aggression in your approach. Also don't hold grips too tightly—loosen your grip and re-grab as needed to reduce strain and prevent hand injuries.
 
 Submissions can serve as both sweeps and opportunities to transition to other submissions. Approach with the mindset that the opponent's limbs are obstacles; using submissions to manipulate their limbs can help create openings, especially for securing chokes.
 
