@@ -21,14 +21,6 @@ dg-publish:
 
 Use the **UFC game** to simulate and experiment with techniques and strategies.
 
-#todo/BAU/Streches ^7a66bf
-- [ ] Striking Stretches todo 
-- Stretches for Kicks 
-	-  ![[BJJStrechOne.gif]]
-	- ![[HighKickStretchOne.gif]]
-	- ![[HighKickStretchTwo.gif]]
-	- ![[HighKickStretchThree.gif]]
-
 ## **Striking Principles**
 ![](https://www.youtube.com/watch?v=HUyraSmgO3I)
 
@@ -187,3 +179,11 @@ Focus on tight, compact strikes when they throw wide punches.
 2. **Shoulder Integration**:
     - Use your shoulder to generate power in counters, especially when throwing inside strikes.
 
+
+#todo/BAU/Streches ^7a66bf
+- [ ] Striking Stretches todo 
+- Stretches for Kicks 
+	-  ![[BJJStrechOne.gif]]
+	- ![[HighKickStretchOne.gif]]
+	- ![[HighKickStretchTwo.gif]]
+	- ![[HighKickStretchThree.gif]]
