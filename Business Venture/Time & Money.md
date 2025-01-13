@@ -1,7 +1,7 @@
 
 
-#todo/cleanup 
-- [ ] clean or merge with other note
+#todo/BAU/noteMerge 
+- [ ] clean or merge with other note [[Finance Calulator]]
 
 ## Hours in a lifetime
 ***692,040
@@ -11,6 +11,18 @@
 	- [ ] 6 to 4 hours outside activities besides work
 	- [ ] 6 to 4 hours on whatever else
 - 12 hours a week max
+
+730 hours per year spent shopping for food and cooking 
+
+730 x current salary per hour 
+
+730 x 30 = 21,900
+
+if pay for meal prep you roughly spend 180 per week 
+9,360
+
+
+
 
 See how productive you are at 4:00 a.m. to 11:00 a.m.
 
