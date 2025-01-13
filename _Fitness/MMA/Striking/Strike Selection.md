@@ -13,7 +13,8 @@ dg-publish:
 ---
 Here are four scenarios with shot selection strategies tailored to the stances:
 
-#to
+#todo/BAU/noteMerge 
+- [ ] compare and distill and combine with [[Striking Fluidity]] other striking not make it easy to remember
 
 
 ---
