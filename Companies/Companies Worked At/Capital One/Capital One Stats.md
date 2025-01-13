@@ -3,6 +3,7 @@ tags:
   - career
   - employment
   - CapitalOne
+  - favorite
 author:
   - jacgit18
 Purpose: This documentation discusses work done at current company.
@@ -13,13 +14,17 @@ Relates:
 dg-publish:
 ---
 ## Experience
-#todo/Career/Doc/BAU
+#todo/BAU/Career/Doc
 - [ ] Document things done in job along with lesson learned
+- [ ] Add info from [[Job Search Cycle]] and clean up
+
 
 ## Current 
 Worked under Apart of Card tech for both team
 
 Started in QA for Pain Killers under Empath Platform  now on  Real-time intelligence collection surge team
+
+
 
 Empath customer relations dealing with streams in terms of data sources collection  
   
