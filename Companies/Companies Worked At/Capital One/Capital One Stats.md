@@ -22,7 +22,7 @@ dg-publish:
 ## Current 
 Worked under Apart of Card tech for both team
 
-Started in QA for Pain Killers under Empath Platform  now on  Real-time intelligence collection surge team
+Started in QA for Pain Killers under Empath Platform  now on  Real-time intelligence collection surge team aligns with SOC - System and organization controls
 
 
 
