@@ -144,3 +144,11 @@ To identify the filesystem types on your system, you can use `lsblk` or `blkid`:
 ---
 
 By following these steps and reviewing potential issues with your disk, boot loader, or kernel, you should be able to diagnose and fix the problem causing your Linux system to drop to the `(initramfs)` prompt. Let me know if you need further assistance with any specific troubleshooting step!
+
+
+
+collection dlecauny payment plans dealing with discover process/ services maintaining services scale for discover customers artic is aws serverless suff lambda stepup stuff
+
+backend python step function no code
+
+pete mc
