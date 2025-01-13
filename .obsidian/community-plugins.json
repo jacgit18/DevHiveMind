@@ -62,5 +62,7 @@
   "obsidian-checklist-plugin",
   "diagram-zoom-drag",
   "mehrmaid",
-  "mermaid-tools"
+  "mermaid-tools",
+  "obsidian-markdown-formatting-assistant-plugin",
+  "obsidian-auto-link-title"
 ]
