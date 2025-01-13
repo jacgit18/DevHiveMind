@@ -11,7 +11,7 @@ Relates:
 Peer Reviewed: 0
 dg-publish:
 ---
-#todo/noteMerge 
+#todo/BAU/noteMerge 
 - [ ] combine with [[Breathing Guide]]
 
 ## Types of Exercise Movements  

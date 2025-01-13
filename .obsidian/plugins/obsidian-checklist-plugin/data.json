@@ -78,15 +78,12 @@
     "#todo/high/dev",
     "#todo/website",
     "#todo/mma",
-    "#todo/bau",
     "#todo/high/refinethought",
     "#todo/high/refinethought/",
     "#todo/bau/interview/questions",
     "#todo/bau/interview",
     "#todo/med/medical",
     "#todo/stocks",
-    "#todo/email/options",
-    "#todo/notemerge",
     "#todo/bau/streches",
     "#todo/cleanup",
     "#todo/questions/topfive",
@@ -102,7 +99,10 @@
     "#todo/purchases/assets",
     "#todo/personal/mma/bau",
     "#todo/low/dev",
-    "#todo/purchases"
+    "#todo/purchases",
+    "#todo/bau/email/options",
+    "#todo/bau/notemerge",
+    "#todo/high/finishwatching"
   ],
   "_hiddenTags": []
 }
