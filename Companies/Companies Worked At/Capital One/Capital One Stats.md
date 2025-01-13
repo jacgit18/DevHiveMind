@@ -22,8 +22,10 @@ dg-publish:
 ## Current 
 Worked under Apart of Card tech for both team
 
-Started in QA for Pain Killers under Empath Platform  now on  Real-time intelligence collection surge team aligns with SOC - System and organization controls
+Started in QA for Pain Killers under Empath Platform  now on  Real-time intelligence 
+Collection surge team aligns with SOC - System and organization controls
 
+collection dlecauny payment plans dealing with discover process/ services maintaining services scale for discover customers arctic is aws serverless suff lambda stepup  function no code
 
 
 Empath customer relations dealing with streams in terms of data sources collection  
