@@ -147,8 +147,8 @@ By following these steps and reviewing potential issues with your disk, boot loa
 
 
 
-collection dlecauny payment plans dealing with discover process/ services maintaining services scale for discover customers artic is aws serverless suff lambda stepup stuff
+collection dlecauny payment plans dealing with discover process/ services maintaining services scale for discover customers arctic is aws serverless suff lambda stepup stuff
 
-backend python step function no code
+backend engineer python step function no code
 
 pete mc
