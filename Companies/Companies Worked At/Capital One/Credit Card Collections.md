@@ -1,5 +1,6 @@
 ---
-tags: 
+tags:
+  - CapitalOne
 author:
   - gitUserNamePlaceHolder
 Comments: Placeholder comment any thing else you want to mention about the document.
@@ -50,4 +51,4 @@ Late payments, charge-offs, and collection accounts severely damage the cardhold
 - **Settlement**: Negotiating a reduced amount to settle the debt.  
 - **Bankruptcy**: In extreme cases, cardholders may file for bankruptcy, which can discharge or restructure their debt but has long-term financial consequences.
 
-Let me know if you’d like more details about any stage of the process!
+
