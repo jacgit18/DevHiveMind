@@ -20,23 +20,28 @@ dg-publish:
 
 
 ## Current 
-Worked under Card tech for both team
+Worked under Card tech for both teams at capital one. The first being in QA for PainKillers under **Empath** platform which deals with customer relations using streams in terms of data sources collection.  
+  
+**Stream** data sources encapsulates platforms and systems that produce data or change oriented events of interest to collections business processes. Stream data is exclusively published And subscribed to use the OneStream platform  
 
-Started in QA for Pain Killers under Empath Platform  now on  Real-time intelligence 
-Collection surge team aligns with SOC - System and organization controls
+Now on Real-time intelligence Collection(RTIC) surge team who align with SOC - System and organization controls.
 
-This team focus on [[Credit Card Collections]], delinquency, and stuff like payment plans. The focus of the work will center around maintaining and up-scaling process and services for capital one and future discovery customers as part of the Capital One Discovery merger
+This team focus on [[Credit Card Collections]], delinquency, and stuff like payment plans. The focus of the work will center around maintaining and up-scaling process and services for capital one and future discovery customers as part of the Capital One Discovery merger.
 
+We're building Arctic offers out for the next 6 month i may be working with AWS while   
+
+Cloud orchestration processes from hooks to step functions
 
 Arctic uses DynamoDB and utilizes AWS server-less architecture focusing on things like lambda and Step-Up which is no code.
 
+Credit card collection the main mission is to help customers who are off track get back on track of their payments the way this happens is through offers or specifically rtic offers  
+  
+this includes payment plans maybe reducing apy or other different plans etc..  
+  
+  
 
-Empath customer relations dealing with streams in terms of data sources collection  
-  
-Stream data sources encapsulates platforms and systems that produce data or change oriented events of interest to collections business processes. Stream data is exclusively published And subscribed to use the OneStream platform  
-  
-  
-Cloud orchestration processes from hooks to step functions
+
+
 ## Old
 
 
