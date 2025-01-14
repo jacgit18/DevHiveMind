@@ -143,3 +143,58 @@ Learning ML and AI effectively requires a structured approach, balancing foundat
 ---
 
 By focusing on practical implementation while gradually building foundational knowledge, you can effectively balance "just-in-time" learning with deeper conceptual understanding.
+
+
+There is currently no **AWS Certified AI Practitioner** certification. However, AWS offers the **AWS Certified Machine Learning – Specialty** certification, which covers artificial intelligence (AI) and machine learning (ML) concepts. Here's what it consists of:
+
+### **AWS Certified Machine Learning – Specialty Overview**
+
+#### **Who It's For:**
+
+- Data scientists, developers, or ML practitioners with 1–2 years of experience designing, building, or running ML/AI workloads on AWS.
+
+#### **Exam Details:**
+
+- **Format:** Multiple-choice, multiple-response questions
+- **Duration:** 180 minutes
+- **Cost:** $300 (USD)
+- **Exam Code:** MLS-C01
+
+#### **Domains Covered:**
+
+1. **Data Engineering (20%)**
+    
+    - Identifying and transforming data sources for ML.
+    - Implementing data repositories and pipelines.
+2. **Exploratory Data Analysis (24%)**
+    
+    - Analyzing data to understand relationships and detect anomalies.
+    - Preprocessing data for ML algorithms.
+3. **Modeling (36%)**
+    
+    - Selecting and training ML models.
+    - Optimizing hyperparameters and evaluating model performance.
+    - Understanding ML frameworks like TensorFlow, PyTorch, or AWS SageMaker.
+4. **Machine Learning Implementation and Operations (20%)**
+    
+    - Deploying, monitoring, and automating ML models.
+    - Ensuring scalability, cost optimization, and performance for AI/ML solutions.
+
+#### **Key AWS Services to Study:**
+
+- **Amazon SageMaker**: Training and deploying ML models.
+- **AWS Glue**: Data preparation.
+- **Amazon Rekognition**: Computer vision tasks.
+- **Amazon Comprehend**: Natural language processing.
+- **Amazon Polly**: Text-to-speech.
+- **Amazon Lex**: Conversational AI (chatbots).
+- **Amazon Transcribe**: Speech-to-text.
+- **Amazon Translate**: Language translation.
+
+#### **Recommended Prerequisites:**
+
+- Hands-on experience with AI/ML on AWS services.
+- Familiarity with basic ML algorithms, feature engineering, and data modeling.
+- Knowledge of scripting languages like Python.
+
+Would you like help with resources or study tips for this certification?
