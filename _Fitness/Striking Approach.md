@@ -38,6 +38,7 @@ Use the **UFC game** to simulate and experiment with techniques and strategies.
 - Push pace while being defensively responsible also using boxing against Muay Thai heavy attacker. 
 - Control hand placement, keep your hand extended to parry, disrupt, or occupy your opponent’s hand. 
 - Try probing jab along with other strikes using it to fill the void of space while also using it to gauge distance, timing, and breaking their base or flow.
+- When you keep your head still, you tend to move faster and maintain better balance. It’s all about weighing the pros and cons of stability versus mobility.
 - When trying to secure a clinch, it's generally easier to do so when both fighters are in opposite stances (mirror stance), as this creates a natural alignment for the clinch. In contrast, when both fighters are in the same-side stance, their arms and body positions are more aligned, making it harder to close the distance and establish the clinch.
 
 **Breathing in Range**

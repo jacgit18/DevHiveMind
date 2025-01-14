@@ -25,12 +25,10 @@ Worked under Apart of Card tech for both team
 Started in QA for Pain Killers under Empath Platform  now on  Real-time intelligence 
 Collection surge team aligns with SOC - System and organization controls
 
-This team focus on collections, delinquency, and stuff like payment plans. The focus of the work will center around maintaining and up-scaling process and services for capital one and future discovery customers as part of the Capital One Discovery merger
-
-arctic is aws serverless suff lambda stepup  function no code
+This team focus on [[Credit Card Collections]], delinquency, and stuff like payment plans. The focus of the work will center around maintaining and up-scaling process and services for capital one and future discovery customers as part of the Capital One Discovery merger
 
 
-Arctic uses dynamodb
+Arctic uses DynamoDB and utilizes AWS server-less architecture focusing on things like lambda and Step-Up which is no code.
 
 
 Empath customer relations dealing with streams in terms of data sources collection  
