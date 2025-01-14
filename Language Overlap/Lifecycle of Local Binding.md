@@ -86,6 +86,6 @@ jane().finaltermScore(); // B+
 
 
 ## Binding Overall
-The concept of local bindings is a programming language feature that can be found in various languages, not exclusive to #JavaScript. Many programming languages, especially those that support functions as first-class citizens or have lexical scoping, exhibit similar behavior with local bindings.
+The concept of local bindings is a programming language feature that can be found in various languages, not exclusive to JavaScript. Many programming languages, especially those that support functions as first-class citizens or have lexical scoping, exhibit similar behavior with local bindings.
 
-Languages like #python, #ruby, and many functional programming languages share this characteristic. The specifics of scoping rules and the handling of local bindings may vary across languages, but the general idea of local bindings being created and maintained during function execution is a common concept in programming language design.
+Languages like python, ruby, and many functional programming languages share this characteristic. The specifics of scoping rules and the handling of local bindings may vary across languages, but the general idea of local bindings being created and maintained during function execution is a common concept in programming language design.
