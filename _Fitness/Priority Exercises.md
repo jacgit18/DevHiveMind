@@ -225,7 +225,7 @@ color purple
 | Clean to Jerk & Press       | EP     | 0      | High     | 3    | 5    | N/A      | Full  | FreeWeights |
 | Zercher Squats              | CM     | 0      | Med      | 3    | 10   | N/A      | Lower | FreeWeights |
 | Zercher Deadlift            | CM     | 0      | Med      | 3    | 10   | N/A      | Lower | FreeWeights |
-| Zercher Lunge               | CM     | 0      | Med      | 3    | 10   | N/A      | Lower | FreeWeights |
+| Zercher Lungep              | CM     | 0      | Med      | 3    | 10   | N/A      | Lower | FreeWeights |
 | ChinUp                      | PG     | *25*   | High     | 3    | 5    | N/A      | Upper | FreeWeights |
 | PullUp Wide                 | PG     | *25*   | High     | 3    | 5    | N/A      | Upper | FreeWeights |
 | PullUp Neutral              | PG     | *25*   | High     | 3    | 5    | N/A      | Upper | FreeWeights |
