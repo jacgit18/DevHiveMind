@@ -24,11 +24,12 @@ Start with a dynamic stretch to Improve blood flow and flexibility. End with a s
     - Breath through exercises. exhale on push breath inhale on return depending on exercise.
     - Increase sets for more gain vs more reps for more endurance. Like 3 sets of 10 reps is more slow vs 10 sets of 3 reps can be done more faster.
     - Vary exercise to trick body rotating exercises pick a number of exercise you want to do and alternate the load.
-2. **Avoid Risky Movements:**
+    - Anything Zercher same under arm grip.
+1. **Avoid Risky Movements:**
     - Skip upright rows due to the unnatural shoulder position.
     - Skip Renegade rows
     - Stop two reps before exercise failure alternate this depending how you feel.
-3. **Equipment Tips:**
+2. **Equipment Tips:**
     - Use **barbells** for added weight when building strength.
     - Use **dumbbells** for greater range of motion and correcting muscle imbalances.
     - Any **curlbar** exercise can be done with barbell.
@@ -100,7 +101,7 @@ series:
 - [ ] Check New Weight limits 
 - [ ] non bold weight not verified based off tower 200 weights verify at gym 
 
-#todo/Workout/BAU
+#todo/BAU/Workout
 - [ ] Make shoulders more stable before doing  Turkish Get-up 
 - [ ] focus on stability then add resistance
 - [ ] 6 to 20 reps near failure at max
@@ -139,6 +140,7 @@ series:
 | [[Lower#^308171 \|Romanian Deadlift]]         | Lower | CM    | Barbell    | 0        | Low      | 3    | 5    |
 | [[Full Body#^0c16fd \|Clean to Jerk & Press]] | Full  | EP    | Barbell    | 0        | High     | 3    | 5    |
 | [[Full Body#^765b0b \|Zercher Squats]]        | Lower | CM    | Barbell    | 0        | Med      | 3    | 10   |
+| [[Full Body \|Zercher Deadlift]]              | Lower | CM    | Barbell    | 0        | High     | 3    | 5    |
 | [[Upper#^a2d3cc \|ChinUp]]                    | Upper | PG    | Bodyweight | *25*     | High     | 3    | 5    |
 | [[Upper#^bf9596 \|PullUp Wide]]               | Upper | PG    | Bodyweight | *25*     | High     | 3    | 5    |
 | [[Upper#^e81d31 \|PullUp Neutral]]            | Upper | PG    | Bodyweight | *25*     | High     | 3    | 5    |
