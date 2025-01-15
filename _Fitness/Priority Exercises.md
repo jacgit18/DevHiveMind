@@ -140,7 +140,8 @@ series:
 | [[Lower#^308171 \|Romanian Deadlift]]         | Lower | CM    | Barbell    | 0        | Low      | 3    | 5    |
 | [[Full Body#^0c16fd \|Clean to Jerk & Press]] | Full  | EP    | Barbell    | 0        | High     | 3    | 5    |
 | [[Full Body#^765b0b \|Zercher Squats]]        | Lower | CM    | Barbell    | 0        | Med      | 3    | 10   |
-| [[Full Body \|Zercher Deadlift]]              | Lower | CM    | Barbell    | 0        | High     | 3    | 5    |
+| [[Full Body#^b30c79\|Zercher Deadlift]]       | Lower | CM    | Barbell    | 0        | High     | 3    | 5    |
+| [[Full Body#^4b1677\|Zercher Lunge]]          | Lower | CM    | Barbell    | 0        | High     | 3    | 5    |
 | [[Upper#^a2d3cc \|ChinUp]]                    | Upper | PG    | Bodyweight | *25*     | High     | 3    | 5    |
 | [[Upper#^bf9596 \|PullUp Wide]]               | Upper | PG    | Bodyweight | *25*     | High     | 3    | 5    |
 | [[Upper#^e81d31 \|PullUp Neutral]]            | Upper | PG    | Bodyweight | *25*     | High     | 3    | 5    |
@@ -223,6 +224,8 @@ color purple
 | Bench Press                 | CM     | 0      | High     | 3    | 5    | N/A      | Upper | FreeWeights |
 | Clean to Jerk & Press       | EP     | 0      | High     | 3    | 5    | N/A      | Full  | FreeWeights |
 | Zercher Squats              | CM     | 0      | Med      | 3    | 10   | N/A      | Lower | FreeWeights |
+| Zercher Deadlift            | CM     | 0      | Med      | 3    | 10   | N/A      | Lower | FreeWeights |
+| Zercher Lunge               | CM     | 0      | Med      | 3    | 10   | N/A      | Lower | FreeWeights |
 | ChinUp                      | PG     | *25*   | High     | 3    | 5    | N/A      | Upper | FreeWeights |
 | PullUp Wide                 | PG     | *25*   | High     | 3    | 5    | N/A      | Upper | FreeWeights |
 | PullUp Neutral              | PG     | *25*   | High     | 3    | 5    | N/A      | Upper | FreeWeights |

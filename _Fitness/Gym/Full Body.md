@@ -30,6 +30,10 @@ dg-publish:
     - ![Around the World](https://www.youtube.com/watch?v=N4mMVG8S5Kg)
 - Zercher Squat ^765b0b
 	- ![](https://www.youtube.com/watch?v=nwx6Ip7hd3I)
+- Zercher Deadlift ^b30c79
+	- ![](https://www.youtube.com/watch?v=lPfveuUIkQY)
+- Zercher Lunge ^4b1677
+	- ![](https://www.youtube.com/watch?v=VOpO2BjcJSU)
 - Halo Lunge Twist(**Kettlebell**) ^7ecf05
 	- ![](https://www.youtube.com/watch?v=kt97CnwNZrE&list=TLPQMTUxMjIwMjSqjLz-Yp-KTQ&index=3)
 - Curtsy Lunge(_**Dumbbell**_)
