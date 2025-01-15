@@ -13,6 +13,7 @@ dg-publish:
 ---
 #todo/BAU/Clout-Chase
 - [ ] Post about twitter & bluesky
+- [ ]  Post about where business meets technical debt and Technical pivot More into this with monthly DevHiveMind Mondays
 
 When it comes to applications like Twitter (now X), Jack Dorsey's approach provides a fascinating case study. After selling Twitter, he went on to create Bluesky—a new platform designed to address many of the issues that plagued Twitter, such as bot activity and other systemic problems. By starting fresh, Dorsey was able to leverage everything he learned from Twitter's successes and failures to build something potentially better and more resilient from the ground up.
 

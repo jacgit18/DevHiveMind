@@ -93,7 +93,6 @@
     "#todo/life/research",
     "#todo/personal/med",
     "#todo/workout/bau",
-    "#todo/bau/clout-chase",
     "#todo/career/doc/bau",
     "#todo/personal/prompts",
     "#todo/purchases/assets",
@@ -102,7 +101,10 @@
     "#todo/purchases",
     "#todo/bau/email/options",
     "#todo/bau/notemerge",
-    "#todo/high/finishwatching"
+    "#todo/high/finishwatching",
+    "#todo/bau/workout",
+    "#todo/bau/life",
+    "#todo/bau"
   ],
   "_hiddenTags": []
 }
