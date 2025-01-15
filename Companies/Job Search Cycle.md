@@ -21,6 +21,9 @@ dg-publish:
 > In April, when bonuses are typically distributed, individuals often reassess their positions or consider new opportunities, leading to potential changes in roles or responsibilities within the organization.
 
 Prioritize job hunting in Q1 and Q2
+
+Engineers would probably be regulated to Mission critical things as opposed to Outsourcing to AI for mission critical projects when it comes to the near future for software engineer
+
 ### Job Search & Interview Strategies
 1. **Understanding Job Role:**
    - When applying, inquire if the role is direct hire or contract, ensuring clarity about the nature of the position.
