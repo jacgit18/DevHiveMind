@@ -17,6 +17,11 @@ Here are four scenarios with shot selection strategies tailored to the stances:
 - [ ] compare and distill and combine with [[Striking Fluidity]] other striking not make it easy to remember
 
 
+#todo/BAU/MMA/Drill
+- [ ] Roll hook drill head hook both sides to body hook on roll down.  
+- [ ] Rear kick to front teep push whole body forward into a knee coming from the rear then and with a kick with front leg.  
+- [ ] Send back fist off of your kick getting cached and being thrown.
+
 ---
 
 ### **Scenario 1: You’re Orthodox, Opponent is Southpaw (Opposite Stance)**
