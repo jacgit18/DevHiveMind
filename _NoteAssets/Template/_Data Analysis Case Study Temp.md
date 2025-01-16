@@ -14,9 +14,15 @@ dg-publish:
 
 #todo/Low/Dev 
 - [ ] [[Data Analytics Projects Ideas]] to look into
-- [ ] 
+- [ ] use Kaggle socially
 
-
+As you get more familiar with the career options available to data analysts, you’ll find that it’s important to have an online presence. By engaging with the data community online, you can ask questions, learn new skills, and demonstrate your achievements to potential employers.  
+  
+You’ve already covered several ways that you can build your online presence, from LinkedIn to GitHub to Medium. To develop a stronger connection to the data community and interact with fellow data professionals and enthusiasts, you can also build an online presence on Kaggle.  
+  
+In addition to datasets, Kaggle has micro-courses, competitions, forums, and a large community of users. With the  
+Kaggle Progression System  
+, you track your progress and growth within the platform and demonstrate your data skills and savvy to employers and colleagues.
 
 [[_AltCaseStudyTemp]]
 
