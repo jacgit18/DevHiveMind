@@ -3,7 +3,7 @@
 > **Your body isn't solely your possession it is subject to everyone assuming you allow them to control and manipulate it. Focus on what you can control, but within that scope of control understand you can't control everything no matter how much you fight. Embrace the flow of control or the absence of control.**
 
 #### Road to Third Strip
-#todo/Personal/MMA/BAU
+#todo/BAU/MMA/Drill 
 - [ ] Work on [[Framing]] & Closed Guard
 - [ ] Focus on Guards against Bigger People
 	- [ ] [[BJJ Priority Flows#Priority Open Guard Variations|Open Guard Variations]]

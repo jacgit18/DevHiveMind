@@ -46,7 +46,7 @@ In essence, a business systems analyst plays a crucial role in helping companies
 - 10% Quality Assurance (QA)
 - 30% Data Analyst
 	- For data analyst interview you would be given some type of case study to talk about and break down and elaborate on discussing your process while analyzing a sample data set. 
-#todo/Personal/High/Dev 
+#todo/High/Dev 
 - [ ] Have chatGPT come up with a case study and sample data set to examine and practice examining case study and data model.
 
 

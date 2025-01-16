@@ -30,7 +30,7 @@ The chosen architecture significantly influences how different components intera
 Let's explore how these architectural styles affect key components:  
 > These categories are not universally recognized or standardized within the field of software architecture just me grouping them 
 
-#todo/Personal/High/Dev 
+#todo/High/Dev 
 - [ ] https://medium.com/@iamprovidence/backend-side-architecture-evolution-n-layered-ddd-hexagon-onion-clean-architecture-643d72444ce4
 
 ## Codebase Integration

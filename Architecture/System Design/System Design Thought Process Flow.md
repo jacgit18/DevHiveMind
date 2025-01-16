@@ -27,7 +27,7 @@ excalidraw-autoexport: svg
 
 ![[System design core concepts.gif]]
 For more info read 
-#todo/Personal/High/Dev  
+#todo/High/Dev  
 - [ ] [[System Design Interview An Insider’s Guide Volume 1.pdf |System Design Interview An Insider’s Guide Volume 1]]
 - [ ] Payment system [[System Design Interview An Insider’s Guide Volume 2.pdf#page=316|System Design Interview An Insider’s Guide Volume 2, page 316]]
 - [ ] [[Designing Data-Intensive Applications The Big Ideas Behind Reliable, Scalable, and Maintainable Systems by Martin Kleppmann (z-lib.org).pdf |Designing Data-Intensive Applications]]
@@ -75733,10 +75733,10 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 		"currentItemStartArrowhead": null,
 		"currentItemEndArrowhead": "arrow",
 		"currentItemArrowType": "round",
-		"scrollX": 4840.508638339983,
-		"scrollY": 3208.022981536378,
+		"scrollX": 3964.89634230807,
+		"scrollY": 3436.33794785234,
 		"zoom": {
-			"value": 0.147157
+			"value": 0.133823
 		},
 		"currentItemRoundness": "round",
 		"gridSize": 20,

@@ -19,7 +19,7 @@ dg-publish:
 #### Main Long Quest By Order of Priority
 ***Refine notes based subject matter you are actively practicing like domain driven design not currently using it so low priority so when you actually using it refine documentation on it and Learn more.***
 ![[Things Todo.gif]]
-#todo/Personal/Med/Dev 
+#todo/Med/Dev 
 >[!note] 
 >Get to the level were you are doing 1 coding question a month while working full time
 - [ ] Finish [[Clean Code]] documentation and review
@@ -29,7 +29,7 @@ dg-publish:
 
 ![[1729252749519.gif]]
 #### Develop OKR for Next Quarter
-#todo/Personal/High/Dev 
+#todo/High/Dev 
 - [ ] [[Microservices VS Monolithic Architecture |Microservices]] 
 - [ ] [[Event Driven Architecture]] 
 - [ ] [[Reactive programming]]
@@ -39,7 +39,7 @@ dg-publish:
 	- [ ] Depends on domain which may vary identify the domain of interest and learn more about that domain and look for companies or company departments that align.   
 - [ ] [[Algorithmic Trading]]
 #### Review
-#todo/Personal/Med/Dev 
+#todo/Med/Dev 
 - [ ] [[devops.pdf]]
 - [ ] [[design-system.pdf]]
 - [ ] [[system-design.pdf]] 
@@ -51,7 +51,7 @@ dg-publish:
 
 ## New Path
 When you want to learn new languages in the future think about every time you have to prepare for technical interviews to start interviewing for a new job change what language you practice in once you feel like you have good understanding of how to build up solutions to programming challenges.
-#todo/Personal/Low/Dev  
+#todo/Low/Dev  
 - [ ] [[spring-boot.pdf]]
 - [[Python Learning Plan]]
 	- [ ] [[python.pdf]]
@@ -60,7 +60,7 @@ When you want to learn new languages in the future think about every time you ha
 
 ![[Researching.gif]]
 ## Alt Stuff to Try
-#todo/Personal/Med/Dev 
+#todo/Med/Dev
 - [ ] Linux Cert
 - [ ] content management system  
 - [ ] shopify  
@@ -73,14 +73,14 @@ When you want to learn new languages in the future think about every time you ha
 - [ ] **Math Skills for Programming:** Elevate your mathematical aptitude, a fundamental skill essential for various programming tasks.
 
 ## Projects
-#todo/Personal/Med/Dev
+#todo/Med/Dev
 - [ ] look into which info-graphics can be recreated and integrated in to note vault 
 - [ ] identify areas of automation were ever you see 
 - [ ] Identify most expensive manual process  
 
 
 ## Side Quest Revist
-#todo/Personal/Low/Dev 
+#todo/Low/Dev 
 - [ ] [[java.pdf]]
 - [ ] [[nodejs.pdf]]
 - [ ] [[qa.pdf]]

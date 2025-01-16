@@ -28,13 +28,13 @@ dg-publish:
 
 ## Describe Data Meaningfully 
 
-#todo/Personal/Low/Dev 
+#todo/Low/Dev 
 - [ ] https://towardsdatascience.com/why-im-learning-javascript-as-a-data-scientist-e2b87bcdac03
 
-#todo/Personal/Med/Dev 
+#todo/Med/Dev 
 - [ ] https://towardsdatascience.com/how-to-talk-about-data-and-analysis-to-non-data-people-2457dc600219
 
-#todo/Personal/High/Dev 
+#todo/High/Dev 
 - [ ] https://learn.microsoft.com/en-us/credentials/certifications/power-bi-data-analyst-associate/
 - [ ] https://medium.datadriveninvestor.com/chatgpt-python-power-bi-9771774810e0
 

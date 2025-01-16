@@ -12,7 +12,7 @@ Peer Reviewed: 0
 dg-publish:
 ---
 ## Objective Key Results
-#todo/Personal/High/Dev 
+#todo/High/Dev 
 - [ ] Portfolio Site
 	- [ ] Decide if your using MicroFrontends.
 	- [ ] Look into Frontend UI Lib Decide between Chakra or Material or Tailwind.

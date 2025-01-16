@@ -22,7 +22,7 @@ Clean code is clear, understandable, and maintainable. When you write clean code
 
 Clean code principles lead to highly modular source code easier to read and test. If you think of these practices as part of a house, clean code is the foundation. Implementing clean code principles is a foundational skill that pays off especially well when refactoring code or testing code under test. 
 
-#todo/Personal/High/Dev  
+#todo/High/Dev  
 - [ ] Finish Reading [[Clean Code A Handbook of Agile Software Craftsmanship.pdf#page=71&offset=-48,671,1|Clean Code A Handbook of Agile Software Craftsmanship, Function Arguments |Pg 71]]
 
 ## General rules

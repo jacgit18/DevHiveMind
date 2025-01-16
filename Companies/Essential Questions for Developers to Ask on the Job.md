@@ -12,7 +12,7 @@ Peer Reviewed: 0
 dg-publish:
 ---
 ### Infrastructure Questions:
-#todo/dev/BAU
+#todo/BAU/dev
 - [ ] What does the current tech stack look like, and are there any plans for changes or upgrades?
 - [ ] How is the infrastructure managed? Are there any specific tools or platforms in use (e.g., Terraform, Kubernetes)?
 - [ ] What is the process for deploying and scaling applications?
@@ -25,7 +25,7 @@ dg-publish:
 - [ ] What is the budget for infrastructure, and how is cost optimization handled?
 
 ### Project Questions:
-#todo/dev/BAU
+#todo/BAU/dev
 - [ ] What are the key projects currently underway, and what are their goals and timelines?
 - [ ] How are project priorities determined and communicated?
 - [ ] What is the typical process for starting new projects?
