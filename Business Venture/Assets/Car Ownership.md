@@ -111,7 +111,7 @@ In New York City and throughout New York State, these passing guidelines general
 - [ ] [[Car Ownership#Insurance |Liability Insurance]] base coverage
 - [ ] Uninsured Motorists
 
-#todo/BAU
+#todo/BAU/Life 
 - [ ] Take defensive course once every 36 months to maintain insurance reduction benefits and show cert to insurance within 90 days of completion.
 
 If you have a credit card with primary car rental insurance, you would typically need the following additional coverage:

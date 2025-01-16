@@ -49,7 +49,7 @@ Transition to positions that maximize weight advantage.
 - Shaolin Sweep
 
 #### White - Turtle/Mount/SMount Guard Sweeps 
-#todo/Personal/MMA/BAU 
+#todo/BAU/MMA  
 - [ ] add sweeps from [[Turtle]] and [[Mount]]
 
 ``` mehrmaid

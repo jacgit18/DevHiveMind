@@ -124,7 +124,7 @@ style S fill:red,stroke:red,stroke-width:4px,shadow:shadow
 - **[[Priority Counter & Escapes#**Americana (Keylock)**|Americana]]**
 - **[[Priority Counter & Escapes#**Omoplata (Shoulder Lock from Guard)**|Omoplata]]**
 
-#todo/Personal/MMA/BAU 
+#todo/BAU/MMA  
 - [ ] Look at other [[Sub Counters]]  
 - [ ] Revisit full list of [[Subs]] from bottom and top
 

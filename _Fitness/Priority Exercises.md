@@ -49,7 +49,7 @@ Start with a dynamic stretch to Improve blood flow and flexibility. End with a s
 	- Breathe deeply as you push your chest outward, squeezing your shoulder blades together. Then, reverse the motion by pulling your chest inward and separating your shoulder blades, keeping your elbows straight throughout the movement.
 
 ## Priority Workouts
-#todo/Personal/Med 
+#todo/Med/Dev 
 - [ ] Revisit and edit chart
 ![](https://www.youtube.com/watch?v=djj7QXZAIjM)
 ```chart
@@ -95,7 +95,7 @@ series:
 #todo/purchases 
 - [ ] [Neck Exercise Equipment](https://neckslevel.com/?srsltid=AfmBOop5fT_Vv8l5LRpyCbvCpA1c5eqQy_aHAuAeLX2zwNFjMtC1X-Y0)
 
-#todo/Life 
+#todo/Life/Research 
 - [ ] try creating chart from table 
 - [x] Eaa over bcaa try looking into Eaa ✅ 2024-12-29
 - [ ] Check New Weight limits 
