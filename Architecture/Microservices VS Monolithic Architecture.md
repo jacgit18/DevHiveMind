@@ -16,12 +16,12 @@ dg-publish: true
 ---
 ![[Monolithic vs Microservies.png]]
 #### Check out & maybe integrate
-#todo/Personal/Low/Dev 
+#todo/Low/Dev 
 - [ ] Read https://newsletter.techworld-with-milan.com/p/why-you-should-build-a-modular-monolith
 - [ ] https://read.engineerscodex.com/p/how-airbnb-scaled-by-moving-away
 - [ ] https://itnext.io/the-issue-with-sharing-data-in-a-microservice-architecture-d6a36f297ff5
 
-#todo/Personal/Med/Dev 
+#todo/Med/Dev 
 - [ ] https://medium.com/javarevisited/50-microservices-interview-questions-for-java-programmers-70a4a68c4349
 - [ ] https://medium.com/javarevisited/difference-between-microservices-and-monolithic-architecture-for-java-interviews-af525908c2d5
 

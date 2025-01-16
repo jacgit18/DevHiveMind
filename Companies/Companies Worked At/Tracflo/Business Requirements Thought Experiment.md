@@ -16,7 +16,7 @@ dg-publish:
 ---
 ## Tracflo Hypothetical Business Requirements Thoughts Experiment
 
-#todo/Personal/High 
+#todo/BAU/Clout-Chase  
 - [ ] post about this
 
 Lets say you have a mid-size project spanning 1500-2800 square feet, the typical duration is estimated to be 6-9 months. In the case of a large renovation or new construction project covering 3,000-5,000 square feet with high-end details, the timeframe extends to 9-12 months. Projects exceeding 5,000 square feet are often specialized and can extend well beyond 12 months.

@@ -14,7 +14,7 @@ dg-publish: true
 ---
 Ask about or come up with DAU(Daily Active User) use a easy consistent value that's easy to calculate also consider ratios and metadata.
 
-#todo/Personal/Med/Dev 
+#todo/Med/Dev 
 - [ ] Simplify and improve on math and approximation process and converting to different units.
 
 Depending on interviewer you might be able to use a calculator.
@@ -88,7 +88,7 @@ Total Monthly Post size = 150 Post per user in month * 300 bytes Total post size
 Monthly Post Storage Requirement = AU size 200M * Total post size 300 bytes * 150 monthly post = 9,000,000,000,000 bytes = 8.18TB = 8TB
 
 ###### Daily estimates
-#todo/Personal/Low 
+#todo/Low/Dev  
 - [ ] Double check calculations
 
 Total writes per day = 200,000,000 AU * 45,000 bytes Total Monthly Post size / 30 = 300,000,000,000 bytes = 286.1MB = 300MB
@@ -134,7 +134,7 @@ Overall Traffic = 200,000,000 AU * (15,000,000,000,000 bytes + 150,000,000,000,0
 Overall Traffic = 200,000,000 AU * 165,000,000,000,000 bytes = 33,000,000,000,000,000,000,000,000 bytes
 
 #### Memory Cache
-#todo/Personal/Low 
+#todo/Low/Dev  
 - [ ] Double check calculations
 
 caching is a way to serve read request faster use 80-20 rule for caching

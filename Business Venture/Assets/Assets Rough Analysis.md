@@ -88,7 +88,7 @@ Game plan when you want to sell set target range
 #todo/purchases 
 - [ ] use vpn to get better deals on steam and airport
 
-#todo/Personal/Low 
+#todo/low/buisness 
 - [ ] You can also look for the biggest parking lots in your area call the landlord and see if they need somebody to clean and maintain their property  
  
 ### **Updated Budget Allocation Analysis**

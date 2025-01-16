@@ -66,10 +66,7 @@
     "#todo/low/dev/personal",
     "#todo/med/dev/personal",
     "#todo/high/dev/personal",
-    "#todo/personal/high",
-    "#todo/personal/low",
     "#todo/med/dev",
-    "#todo/personal/med/dev",
     "#todo/low/buisness",
     "#todo/okr",
     "#todo/website",
@@ -90,7 +87,6 @@
     "#todo/personal/med",
     "#todo/workout/bau",
     "#todo/career/doc/bau",
-    "#todo/personal/prompts",
     "#todo/purchases/assets",
     "#todo/purchases",
     "#todo/bau/email/options",
@@ -98,14 +94,15 @@
     "#todo/high/finishwatching",
     "#todo/bau/workout",
     "#todo/bau/life",
-    "#todo/bau",
     "#todo/bau/mma/drill",
     "#todo/bau/career/doc",
     "#todo/bau/clout-chase",
-    "#todo/bau/dev",
     "#todo/low/dev",
     "#todo/personal/mma/bau",
-    "#todo/high/dev"
+    "#todo/high/dev",
+    "#todo/prompts",
+    "#todo/bau/dev",
+    "#todo/life"
   ],
   "_hiddenTags": []
 }

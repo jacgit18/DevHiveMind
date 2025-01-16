@@ -279,7 +279,7 @@ By following these steps, your email will look like a reply to the original mess
 Example
 ![[2024-12-16 23.37.27 mail.google.com e969d966655b.png]]
 
-#todo/BAU 
+#todo/BAU/Career  
 - [ ] Schedule on your calendar when to call or reach out again to a recruiter who told you when can you expect to hear back about next steps in interview process as best practice for yourself.
 - [ ] Send follow up message
 	- [ ] It was great meeting you to. I really enjoyed our conversation. Let's stay in touch—I'm eager to see where our paths might cross again and what future opportunities may arise.

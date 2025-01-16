@@ -95,7 +95,7 @@ series:
 #todo/purchases 
 - [ ] [Neck Exercise Equipment](https://neckslevel.com/?srsltid=AfmBOop5fT_Vv8l5LRpyCbvCpA1c5eqQy_aHAuAeLX2zwNFjMtC1X-Y0)
 
-#todo/Personal/High
+#todo/Life 
 - [ ] try creating chart from table 
 - [x] Eaa over bcaa try looking into Eaa ✅ 2024-12-29
 - [ ] Check New Weight limits 

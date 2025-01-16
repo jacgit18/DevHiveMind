@@ -26,5 +26,5 @@ dg-publish: false
 
 
 
-#todo/Personal/Low/Dev  
+#todo/Low/Dev 
 - [ ] Read for Meta interview https://blog.quastor.org/p/architecture-facebooks-distributed-message-queue

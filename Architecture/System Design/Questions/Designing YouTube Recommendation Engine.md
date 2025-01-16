@@ -333,7 +333,7 @@ Bandwidth per second = Bandwidth required / 86,400 seconds in a day = 3,472.22 M
 
 
 
-#todo/Personal/Low 
+#todo/Low/Dev  
 - [ ] Senior level estimation to research storage around machine learning models. **Total Storage:** Considering additional storage for video metadata, user profiles, and machine learning model checkpoints, let's estimate a total storage requirement of 500 GB per month. 
 
 

@@ -59,7 +59,7 @@ Strategically planning your paid time off (PTO) around public holidays can signi
 - **Take Off:** Friday, December 26  
 - **Total Days Off:** 4 days (Thursday, December 25 – Sunday, December 28)  
 
-#todo/BAU 
+#todo/BAU/Life  
 - [ ] List the specific days to take off in current day maximize time off around holidays
 
 **2026:**  

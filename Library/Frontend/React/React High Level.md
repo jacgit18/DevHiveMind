@@ -30,6 +30,6 @@ React is [[Common Declarative Algorithms |declarative]], meaning you describe wh
 
 Additionally, React promotes the idea of having **no side effects** in components. This means that the components don't directly modify the state or interact with the DOM outside of their render function. This leads to a more predictable and easier-to-understand codebase, as changes in one part of the application are less likely to unintentionally affect other parts.
 
-#todo/Personal/Low 
+#todo/low/buisness 
 - [ ] https://www.freecodecamp.org/news/new-react-19-features/
 - [ ] Review [[React State]]

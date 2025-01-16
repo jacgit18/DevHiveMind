@@ -21,7 +21,7 @@ At the seed stage, a startup has typically completed its initial funding round, 
 
 > Instead of working directly, you can work for equity-like as an angel investor so your time for equity as opposed to money directly
 
-#todo/Personal/Med/Dev 
+#todo/Med/Dev 
 - [ ] learn about Venture capital funds to better relate
 
 [[Pre-Seed Scenario]] 1 to 5 

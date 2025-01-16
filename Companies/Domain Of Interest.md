@@ -13,7 +13,7 @@ Relates:
 Peer Reviewed: 0
 dg-publish:
 ---
-#todo/Personal/Med/Dev 
+#todo/Med/Dev 
 - [ ] Learn about health care industry but specifically human biology so much exploration in terms of a domain.
 
 ## Industries or Subsectors 
