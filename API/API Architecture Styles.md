@@ -14,7 +14,7 @@ dg-publish:
 ---
 ![[API Architectural Styles.gif]]
 
-#todo/Personal/High/Dev 
+#todo/High/Dev 
 - [ ] find notes related and condense and remove repetitiveness in vault  
 - [ ] look into OpenAPI (Swagger) - API specification
 ### Advanced communication technologies 

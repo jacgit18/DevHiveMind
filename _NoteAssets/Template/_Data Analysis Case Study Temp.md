@@ -12,8 +12,9 @@ Peer Reviewed: 0
 dg-publish:
 ---
 
-#todo/Personal/Low/Dev 
+#todo/Low/Dev 
 - [ ] [[Data Analytics Projects Ideas]] to look into
+- [ ] 
 
 
 

@@ -51,10 +51,10 @@ dg-publish:
 Go through leetcode hards make chatGPT add bugs and debug. Also while doing figure out what problem is asking you can even choose to debug a solution using one of the patterns.
 
 ## System Design
-#todo/Personal/High/Dev  
+#todo/High/Dev  
 - [ ] [[System Design Interview An Insider’s Guide Volume 1.pdf#page=132&selection=0,31,7,85|DESIGN A WEB CRAWLER]]
 
-#todo/Personal/Med/Dev 
+#todo/Med/Dev 
 - [ ] Revisit chapter 2 briefly also chapter 4 to 7
 
 ## Order of Patterns to Focus on 
@@ -86,7 +86,7 @@ use while loop most of the time when number of iteration aren't known
 14. DFS
 15. BFS 
 
-#todo/Personal/High/Dev  
+#todo/High/Dev  
 - [ ] Create a Queue Generator Method Using Linked Lists
 - [ ] Union find also known as Disjoint-Set Union https://www.youtube.com/watch?v=ayW5B2W9hfo
 - [ ] https://www.geeksforgeeks.org/kruskals-minimum-spanning-tree-algorithm-greedy-algo-2/
