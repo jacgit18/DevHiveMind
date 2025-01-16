@@ -39,9 +39,15 @@ Credit card collection the main mission is to help customers who are off track g
 this includes payment plans maybe reducing apy or other different plans etc..  
   
   
+Splunk  
+  
+Talk about learning about splunk and some best practice and managing technical debt
 
-
-
+Ease and empath are clients and offers enrollment LLD  
+  
+  
+  
+Decisioning act as a recommendation agent to ensure proper treatment and surface at any given time
 ## Old
 
 

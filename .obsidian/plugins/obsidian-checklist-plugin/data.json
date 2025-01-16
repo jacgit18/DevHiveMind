@@ -93,14 +93,14 @@
     "#todo/bau/life",
     "#todo/bau/mma/drill",
     "#todo/bau/career/doc",
-    "#todo/bau/clout-chase",
     "#todo/low/dev",
     "#todo/high/dev",
     "#todo/prompts",
     "#todo/bau/dev",
     "#todo/bau/career",
     "#todo/bau/mma",
-    "#todo/high/finishwatching"
+    "#todo/high/finishwatching",
+    "#todo/high/refinethought/"
   ],
   "_hiddenTags": []
 }
