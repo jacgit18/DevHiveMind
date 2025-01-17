@@ -48,6 +48,13 @@ Ease and empath are clients and offers enrollment LLD
   
   
 Decisioning act as a recommendation agent to ensure proper treatment and surface at any given time
+
+Arctic decisioning generates contract  
+  
+  
+Were focus on enrollment
+
+
 ## Old
 
 
