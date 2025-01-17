@@ -7,7 +7,6 @@ kanban-plugin: board
 ## Capital one Stuff
 
 - [ ] C@pple2024Money
-- [ ] deep dive over ohio
 
 
 ## Position
