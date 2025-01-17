@@ -119,7 +119,7 @@ Mergers can increase chances of extension of a contract or create hiring boom cy
 
 ## Selling Self
 ![[nlnll.jpg]]
-#todo/cleanup
+#todo/BAU/noteRefine
 - [ ] move and reduce stuff here and things in companies folder
 
 Don't specify software engineer level on LinkedIn let them guess ask

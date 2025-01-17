@@ -16,6 +16,9 @@ dg-publish:
 ---
 ![[Abstract Data.gif]]
 
+#todo/BAU/noteRefine 
+- [ ] combine with other notes that make sense, or delete 
+
 Abstract Data Types (ADTs) are conceptual entities in computer science that define a set of data and the operations that can be performed on that data without specifying the details of how these operations will be implemented. This approach allows for the separation of the 'what' from the 'how,' enabling the focus on what operations are to be performed without getting entangled in the specifics of how these operations are executed in any particular programming language.
 
 ### Understanding ADTs Through Analogies:

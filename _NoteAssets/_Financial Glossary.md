@@ -16,6 +16,9 @@ Relates:
 Peer Reviewed: 0
 dg-publish: false
 ---
+#todo/BAU/noteRefine 
+- [ ] combine with other notes that make sense, or delete 
+
 - **10-K:** The annual report filed by companies in the U.S. to the SEC, detailing financial performance. SEC.gov is a key resource for these reports.
 - **10-Q:** A quarterly report filed to the SEC by U.S. companies, providing a continuous view of their financial position.
 - **8-K:** A report filed to the SEC for significant events affecting a company's financial status or share value.

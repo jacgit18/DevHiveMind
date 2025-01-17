@@ -1,12 +1,13 @@
 {
-  "todoPageName": "todo",
+  "todoPageName": "todo\nwork/todo",
   "showChecked": false,
   "showAllTodos": false,
+  "showOnlyActiveFile": false,
   "autoRefresh": true,
   "subGroups": false,
   "groupBy": "tag",
-  "sortDirectionItems": "new->old",
-  "sortDirectionGroups": "new->old",
+  "sortDirectionItems": "a->z",
+  "sortDirectionGroups": "a->z",
   "sortDirectionSubGroups": "new->old",
   "includeFiles": "",
   "lookAndFeel": "compact",
@@ -71,13 +72,11 @@
     "#todo/okr",
     "#todo/website",
     "#todo/mma",
-    "#todo/high/refinethought",
     "#todo/bau/interview/questions",
     "#todo/bau/interview",
     "#todo/med/medical",
     "#todo/stocks",
     "#todo/bau/streches",
-    "#todo/cleanup",
     "#todo/questions/topfive",
     "#todo/high/fin",
     "#todo/med/buisness",
@@ -100,7 +99,10 @@
     "#todo/bau/career",
     "#todo/bau/mma",
     "#todo/high/finishwatching",
-    "#todo/high/refinethought/"
+    "#todo/high/refinethought/",
+    "#todo/bau/clout-chase",
+    "#todo/bau/noterefine",
+    "#todo/work"
   ],
   "_hiddenTags": []
 }

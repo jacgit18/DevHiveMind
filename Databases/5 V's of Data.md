@@ -12,6 +12,8 @@ Peer Reviewed: 0
 dg-publish:
 ---
 ### Stages of Data 
+#todo/BAU/noteRefine 
+- [ ] clean up
 
 Plan: Decide what kind of data is needed, how it will be managed, and who will be responsible for it.  
   

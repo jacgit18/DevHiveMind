@@ -21,6 +21,9 @@ It means that the sub classes should extend the functionality of the super class
 
 That’s why we’ve mentioned earlier in [Class Diagram](https://medium.com/omarelgabrys-blog/e7535090824c) that it’s not a good case practice to override the methods of the super class in inheritance.
 
+#todo/BAU/noteRefine 
+- [ ] Review and combine with other notes that make sense
+
 >[!note] 
 >LSP is closely related **to the Single responsibility principle** and **Interface Segregation Principle**.
 
