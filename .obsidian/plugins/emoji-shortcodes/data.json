@@ -4,6 +4,8 @@
   "historyPriority": true,
   "historyLimit": 100,
   "history": [
+    ":old_key:",
+    ":closed_lock_with_key:",
     ":arrow_down_small:",
     ":100:",
     ":arrow_up_small:",
