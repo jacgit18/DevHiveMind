@@ -8,6 +8,7 @@ kanban-plugin: board
 
 - [ ] C@pple2024Money
 - [ ] For question use soc core slack channel
+- [ ] [[Capital One Stats]]
 
 
 ## Position

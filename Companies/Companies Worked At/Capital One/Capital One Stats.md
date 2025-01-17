@@ -55,6 +55,15 @@ Arctic decisioning generates contract
 Were focus on enrollment
 
 
+Alot of the work centered around contract related stuff
+
+
+ASV application service version  
+  
+  
+Rules lab is basically a internal tool that is used by business analyst to update credit policy without having to have software engineers mess around with codebases to do this just in terms of Simple Rules that you see on a website specifically for a credit card terms and policies and many other things around credit cards
+
+
 ## Old
 
 
