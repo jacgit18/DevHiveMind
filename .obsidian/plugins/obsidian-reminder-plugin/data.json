@@ -1,11 +1,19 @@
 {
   "scanned": true,
-  "reminders": {},
+  "reminders": {
+    "Clippings/Snippets.md": [
+      {
+        "title": "test",
+        "time": "2025-01-17",
+        "rowNumber": 10
+      }
+    ]
+  },
   "debug": false,
   "settings": {
     "reminderTime": "09:00",
     "laters": "In 30 minutes\nIn 1 hour\nIn 3 hours\nTomorrow\nNext week",
-    "useSystemNotification": false,
+    "useSystemNotification": true,
     "autoCompleteTrigger": "(@",
     "primaryReminderFormat": "ReminderPluginReminderFormat",
     "enableReminderPluginReminderFormat": true,
@@ -16,7 +24,7 @@
     "enableTasksPluginReminderFormat": false,
     "useCustomEmojiForTasksPlugin": false,
     "removeTagsForTasksPlugin": false,
-    "enableKanbanPluginReminderFormat": false,
+    "enableKanbanPluginReminderFormat": true,
     "editDetectionSec": 10,
     "reminderCheckIntervalSec": 5
   }
