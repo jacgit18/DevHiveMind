@@ -970,9 +970,9 @@ AI ^BDzzMuI5
 Machine Learning ^817PQ3Oo
 
 ## Element Links
-cfVAGpj7: [[Architecture/System Design/Questions/Designing YouTube Recommendation Engine.md#Table 1]]
-TsXzxI5r: [[Architecture/System Design/Questions/Designing YouTube Recommendation Engine.md#Table 2]]
-zrOOXy2q: [[Architecture/System Design/Questions/Designing YouTube Recommendation Engine.md#Table 3]]
+cfVAGpj7: [[Designing YouTube Recommendation Engine#Table 1]]
+TsXzxI5r: [[Designing YouTube Recommendation Engine#Table 2]]
+zrOOXy2q: [[Designing YouTube Recommendation Engine#Table 3]]
 D6RNpTN3: [[Integration of AI and Machine Learning Services#Amazon Rekognition]]
 
 ## Embedded Files
