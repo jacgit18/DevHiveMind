@@ -25,6 +25,16 @@ Prioritize job hunting in Q1 and Q2
 Engineers would probably be regulated to Mission critical things as opposed to Outsourcing to AI for mission critical projects when it comes to the near future for software engineer
 
 Mergers can increase chances of extension of a contract or create hiring boom cycle in the short term or cause future layoffs 
+
+
+#todo/BAU/Clout-Chase 
+- [ ] 🐝 Hive Mind Monday Alert! 🐝  
+	- [ ] shift to hive mind Monday exclusively every Monday or one Monday every month and have that be your posting on LinkedIn  
+  Include in post
+- https://docs.google.com/forms/d/e/1FAIpQLSc-NvwAUS2e3dndizHwgbqrldnfTFBD74E_zAIPJtd7fZyQjg/viewform?authuser=3
+- https://dev-garden.vercel.app/
+
+
 ### Job Search & Interview Strategies
 1. **Understanding Job Role:**
    - When applying, inquire if the role is direct hire or contract, ensuring clarity about the nature of the position.

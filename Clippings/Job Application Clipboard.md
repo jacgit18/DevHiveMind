@@ -13,12 +13,12 @@ Best,
 Joshua Carpentier  
   
   
-Here is my availability https://calendly.com/joshuaxcarpentier
-https://www.linkedin.com/in/joshua-carpentier/  
-https://github.com/jacgit18
-https://github.com/Professional-Job-Seekers/UnderTheWing
-https://github.com/jacgit18/DevHiveMind
-https://dev-garden.vercel.app
+- Here is my availability https://calendly.com/joshuaxcarpentier
+- https://www.linkedin.com/in/joshua-carpentier/  
+- https://github.com/jacgit18
+- https://github.com/Professional-Job-Seekers/UnderTheWing
+- https://github.com/jacgit18/DevHiveMind
+- https://dev-garden.vercel.app
   
   
 LinkedIn  
