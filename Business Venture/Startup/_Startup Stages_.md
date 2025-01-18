@@ -24,11 +24,11 @@ At the seed stage, a startup has typically completed its initial funding round, 
 #todo/Med/Dev 
 - [ ] learn about Venture capital funds to better relate
 
-[[Pre-Seed Scenario]] 1 to 5 
-[[Series A Scenario]] 10 to 50 
-[[Series B Scenario]] 50 to 150
-[[Series C Scenario]] 150 to 400  
-[[Series D Scenario]] 400 to 800 
+- [[Pre-Seed Scenario]] 1 to 5 
+- [[Series A Scenario]] 10 to 50 
+- [[Series B Scenario]] 50 to 150
+- [[Series C Scenario]] 150 to 400  
+- [[Series D Scenario]] 400 to 800 
 
 The workforce size at this juncture varies, but key insights into equity and stock options can guide potential employees:
 
