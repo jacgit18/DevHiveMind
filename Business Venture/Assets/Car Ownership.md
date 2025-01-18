@@ -11,6 +11,44 @@ Relates:
 Peer Reviewed: 0
 dg-publish:
 ---
+### Gear signal check Tell DMV to move their BIG ASS HEAD
+
+| ![[linesStuff.png]] | ![[proper.png]] | ![[mirroAllign.jpg]] |
+| ------------------- | --------------- | -------------------- |
+
+Driving more areas with lane changes in general and for turns  
+  
+When going around car on a one-way street pay attention to blind spots for cars or bikes coming  
+  
+Also parking in empty spaces with no cars next to it  
+  
+When pulling up to a curb make sure it lines up with the near the middle of your windshield wiper or a little to the left since your on the driver side of the car  
+  
+Practice turning on and off car and hazards  
+  
+Work on Pulling over to empty spot not parking  
+  
+turn on hazards after you pull over  
+  
+check blind spot in direction your exiting  
+  
+check blind spot in direction your backing into parking spot  
+  
+Stop check before making a turn then turn wheel and turn  
+  
+  
+practical driving slow near intersection  
+  
+when turning or driving down intersection without lights look down side walk inching forward paying attention to first lane your going through then shift attention to next lane and move accordingly  
+  
+  
+Person on the right goes first on all way stop sign otherwise who ever first  
+  
+If a bus stopped no stop sign up you can go around it is double parked  
+  
+  
+[https://www.instagram.com/reel/CwCxslps80W/?igshid=YTUzYTFiZDMwYg==](https://www.instagram.com/reel/CwCxslps80W/?igshid=YTUzYTFiZDMwYg==)
+
 ## Car tips:
 1. **Never leave keys in the ignition**: Always take your keys with you when fueling or paying for fuel.
 
