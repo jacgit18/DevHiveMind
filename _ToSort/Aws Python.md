@@ -1,3 +1,8 @@
+---
+tags:
+  - python
+  - learningPlan
+---
 Diving into serverless architecture and Python is exciting and provides plenty of opportunities to learn modern cloud design principles. Here’s a roadmap for getting started:
 
 ---
