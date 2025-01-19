@@ -18,8 +18,7 @@ kanban-plugin: board
 
 ## #todo/Work
 
-- [ ] jame
-- [ ] test (@2025-01-17)
+- [ ] Look at this [[Codebase Interview Question]] (@2025-01-20)
 
 
 ## Done
