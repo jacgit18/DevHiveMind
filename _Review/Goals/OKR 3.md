@@ -17,3 +17,5 @@ Learning in general
 
 
 
+- **Numpy:** A library for numerical operations, providing support for large, multi-dimensional arrays and matrices.
+- **Pandas:** A powerful data manipulation library offering data structures like DataFrames, enabling efficient data analysis and manipulation.
