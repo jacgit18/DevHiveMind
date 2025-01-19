@@ -13,6 +13,15 @@ Relates:
 Peer Reviewed: 0
 dg-publish:
 ---
+#### **Learning Approach:**
+
+- **When You Have Bearings:** Once you’ve gained a solid understanding of a topic or skill, begin experimenting and exploring new approaches confidently.
+- **When You’re New:** If you’re unfamiliar with a topic, it's crucial to follow established practices or seek guidance until you develop your own understanding.
+
+- **Pandas & NumPy** (Data manipulation)
+- **Scikit-learn** (Machine learning models)
+- **Practice using CloudShell**
+- **Explore AWS SDK & CLI**
 
 
 # Structured Approach to Learning Machine Learning (ML) and Artificial Intelligence (AI)
