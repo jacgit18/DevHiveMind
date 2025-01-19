@@ -75,8 +75,8 @@ series:
 - **Maintain New Weight (goal weight):** ~2,800 calories/day
 - **Slow Weight Gain:** ~1,700–1,800 calories/day over the course of a year (extremely slow, not typical for bulking).
 #### **Protein Requirements:**
-1. **Daily Protein for Maintenance/Gain:** ~158 grams/day
-2. **Protein for Cutting (higher intake for muscle preservation):** ~237 grams/day
+1. **Daily Protein for Maintenance/Gain:** ~158 – 330 grams of protein per day
+2. **Protein for Cutting (higher intake for muscle preservation):** ~180 grams/day
 
 ### Exercise Categories of Focus 
 1. **Explosive Power (Plyometric & Olympic Movements) - EP**

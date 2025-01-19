@@ -17,7 +17,10 @@ dg-publish:
 #todo/BAU/Career/Doc
 - [ ] Document things done in job along with lesson learned
 - [ ] Add info from [[Job Search Cycle]] and clean up
+- [ ] Mention ai skills in resume
 
+Selling self
+I started by working on Empath, a credit card servicing application, where I could do things like hide balances and make it look like you didn’t owe any money. Now, I’ve shifted to working in collections, where I focus on building processes to ensure you *do* pay what you owe—so, basically, I’ve gone from covering for you to making sure you give me my money.
 
 ## Current 
 Worked under Card tech for both teams at capital one. The first being in QA for PainKillers under **Empath** platform which deals with customer relations using streams in terms of data sources collection.  

@@ -75,6 +75,7 @@ By integrating imitation, iteration, and innovation, I aim to make smarter, futu
 
 #todo/High/finishWatching
 - [ ] stopped at 33:39 for Codie Sanchez podcast
+- [ ] Find Boring problems 😴
 - [ ] stopped at 30:00
 - [ ] people your crazy when you start a business or try a specific business that hasn't been done before 
 
@@ -99,6 +100,23 @@ Can use seller financing to get around taxes when selling business also keep an 
 The buyer can use future profits to buy the business from you
 
 If a book sucks at the beginning stop reading it move on to another book and if you find a good book read it multiple times
+
+
+### Pick something do one thing different from the competition
+![[comp.gif]]
+
+> Remember that the competition are your opposition not your enemy meaning they can become your  future calloborators
+
+You don't have to be an expert you just have to know more than the people looking for information  
+  
+But you can become an expert aiming for something niche and unique that other people aren't doing  
+  
+If you specialize in AI there are a whole bunch of other people chasing that they are other potential pathways so think about that because you have to compete against a lot  
+  
+Maybe Lean towards crypto or something outside the popular sector if your looking for money or experience  
+  
+You can maybe create quick guides around stuff that you are interested in and of this might be
+
 
 
 ## Taxes and trust to refine 
