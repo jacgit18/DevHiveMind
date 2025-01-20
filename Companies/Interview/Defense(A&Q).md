@@ -11,12 +11,13 @@ Status: Perpetual
 Started: 
 EditDate: 2024-02-20
 Relates: 
-dg-publish:
+dg-publish: 
+banner: "![[Defense.gif]]"
+banner_y: 
+banner_x:
 ---
-![[Defense.gif]]
-
 ## Technical Questions to Answer
-**Bring energy and a little comedy be social like they are your friends but not to much
+**Bring energy and a little comedy be social like they are your friends but not to much**
 ### Starting Questions
 1. What have you been doing recently?
 2. Tell me about yourself.

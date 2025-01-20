@@ -10,10 +10,11 @@ Status: Perpetual
 Started: 
 EditDate: 2024-02-20
 Relates: 
-dg-publish:
+dg-publish: 
+banner: "![[attack.gif]]"
+banner_y: 
+banner_x:
 ---
-![[attack.gif]]
-
 **Before the Interview(Optional):**
 - Create a resume cheat sheet and inform the interviewer about it to facilitate a dialogue.
 - Ask to record the interview for future reference.

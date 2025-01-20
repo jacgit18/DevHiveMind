@@ -14,7 +14,7 @@
   "useMarkdownLinks": false,
   "showFrontmatter": true,
   "readableLineLength": false,
-  "propertiesInDocument": "hidden",
+  "propertiesInDocument": "visible",
   "livePreview": true,
   "defaultViewMode": "preview",
   "showInlineTitle": false,

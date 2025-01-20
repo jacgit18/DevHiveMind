@@ -77,7 +77,6 @@
     "#todo/med/medical",
     "#todo/stocks",
     "#todo/bau/streches",
-    "#todo/questions/topfive",
     "#todo/high/fin",
     "#todo/med/buisness",
     "#todo/life/research",
@@ -101,7 +100,9 @@
     "#todo/work",
     "#todo/bau/noterefine",
     "#todo/high/buisness",
-    "#todo/high/finishwatching"
+    "#todo/high/finishwatching",
+    "#todo/bau/career/doc",
+    "#todo/questions/topfive"
   ],
   "_hiddenTags": []
 }
