@@ -3,17 +3,18 @@ tags:
   - career
   - employment
   - questions
+  - interview
 author:
   - jacgit18
+banner: "![[attack.gif]]"
+banner_x: 
+banner_y: 
 Purpose: This documentation discusses what questions to ask.
 Status: Perpetual
 Started: 
 EditDate: 2024-02-20
 Relates: 
-dg-publish: 
-banner: "![[attack.gif]]"
-banner_y: 
-banner_x:
+dg-publish:
 ---
 **Before the Interview(Optional):**
 - Create a resume cheat sheet and inform the interviewer about it to facilitate a dialogue.
