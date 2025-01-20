@@ -1,3 +1,22 @@
+---
+tags:
+  - favorite
+  - gym
+  - MMA
+author:
+  - gitUserNamePlaceHolder
+banner: 
+banner_x: 
+banner_y: 
+Comments: Placeholder comment any thing else you want to mention about the document.
+Purpose: This documentation discusses
+Status: 
+Started: 
+EditDate: 
+Relates: 
+Peer Reviewed: 0
+dg-publish:
+---
 ## Real World Guards, Sweeps, & Submission Flows
 
 > **Your body isn't solely your possession it is subject to everyone assuming you allow them to control and manipulate it. Focus on what you can control, but within that scope of control understand you can't control everything no matter how much you fight. Embrace the flow of control or the absence of control.**
