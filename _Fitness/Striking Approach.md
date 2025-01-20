@@ -5,6 +5,9 @@ tags:
   - MMA
 author:
   - gitUserNamePlaceHolder
+banner: 
+banner_x: 
+banner_y: 
 Comments: Placeholder comment any thing else you want to mention about the document.
 Purpose: This documentation discusses
 Status: 

@@ -65,6 +65,8 @@
     "CurrentTaxRate": "number",
     "IdealSalary": "number",
     "Salary": "number",
-    "monthlyPreTaxIncome": "number"
+    "monthlyPreTaxIncome": "number",
+    "banner_y": "number",
+    "banner_x": "number"
   }
 }

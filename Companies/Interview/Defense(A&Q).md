@@ -3,18 +3,19 @@ tags:
   - career
   - employment
   - questions
+  - interview
 author:
   - jacgit18
   - chatgpt
+banner: "![[Defense.gif]]"
+banner_x: 
+banner_y: 
 Purpose: This documentation discusses question you will answer.
 Status: Perpetual
 Started: 
 EditDate: 2024-02-20
 Relates: 
-dg-publish: 
-banner: "![[Defense.gif]]"
-banner_y: 
-banner_x:
+dg-publish:
 ---
 ## Technical Questions to Answer
 **Bring energy and a little comedy be social like they are your friends but not to much**

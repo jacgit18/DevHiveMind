@@ -2,7 +2,7 @@
 cssclasses:
   - dashboard
 banner: "![[Hive Banner.gif]]"
-banner_y: "0.494"
+banner_y: 0.494
 banner_x: 0.5
 dg-home: true
 dg-publish: true
