@@ -111,19 +111,19 @@ series:
 
 | Body  | Machine                                                 | Position | Focus | Priority | Weight | Sets | Reps | Range | Per Side |
 | ----- | ------------------------------------------------------- | -------- | ----- | -------- | ------ | ---- | ---- | ----- | -------- |
-| Lower | Abductor Outer Thigh                                    | Spread   | CM    | High     | *145*  | 3    | 5    | 7     | **160**  |
-| Lower | Abduction Inner Thigh                                   | Squeeze  | CM    | Med      | *110*  | 3    | 5    | 0     | **110**  |
+| Lower | Abduction Outer Thigh                                   | Spread   | CM    | Med      | *145*  | 3    | 5    | 7     | **160**  |
+| Lower | Adduction Inner Thigh                                   | Squeeze  | CM    | High     | *160*  | 3    | 5    | 0     | **110**  |
 | Lower | Leg Press off Back Abductor                             | Wide     | CM    | High     | *540*  | 3    | 5    | 0     | 270      |
 | Lower | Leg Press off Back Calf                                 | Toes     | CM    | High     | *270*  | 3    | 5    | 0     | 135      |
 | Lower | Leg Press off Back Quads                                | Close    | CM    | High     | *540*  | 3    | 5    | 0     | 270      |
 | Lower | Leg Press off Back G&H                                  | Heals    | CM    | High     | *270*  | 3    | 5    | 0     | 135      |
 | Lower | Leg Press Seated                                        | UpClose  | CM    | High     | *110*  | 3    | 5    | 0     | **110**  |
-| Upper | Isolated Lateral Wide Chest                             | Wide     | CM    | Med      | *90*   | 3    | 5    | 0     | 45       |
+| Upper | Isolated Lateral Wide Chest                             | Wide     | CM    | Med      | *100*  | 3    | 5    | 0     | 50       |
 | Upper | Fan Mid Row                                             | N/A      | PG    | Low      | 0      | 3    | 5    | 0     | 0        |
 | Upper | Low Row                                                 | N/A      | PG    | Med      | 85     | 3    | 5    | 0     | 85       |
 | Upper | Mid Row                                                 | N/A      | PG    | High     | *85*   | 3    | 5    | 0     | 42.5     |
 | Upper | Shoulder Press                                          | N/A      | CM    | Low      | 50     | 3    | 5    | 0     | 0        |
-| Upper | Rear Delt Fly                                           | N/A      | CM    | High     | *40*   | 3    | 5    | 0     | **40**   |
+| Upper | Rear Delt Fly                                           | N/A      | CM    | High     | *45*   | 3    | 5    | 0     | **40**   |
 | Upper | [[Upper#^238b6e \|Chest Fly]]                           | N/A      | CM    | High     | *70*   | 3    | 5    | 4     | **70**   |
 | Upper | [[Upper#^a7be5a \|Cable Woodchopper]]                   | N/A      | RC    | Med      | 160    | 3    | 5    | 0     | 80       |
 | Upper | [[CableBalloonAbduction.gif \|Cable Balloon Abduction]] | N/A      | PG    | High     | 160    | 3    | 5    | 0     | 80       |
@@ -135,7 +135,9 @@ series:
 
 | Exercise                                      | Body  | Focus | Type       | W(lb/kg) | Priority | Sets | Reps |
 | --------------------------------------------- | ----- | ----- | ---------- | -------- | -------- | ---- | ---- |
-| [[Full Body#^569c1a \| Arnold Press]]         | Upper | CM    | Dumbbell   | 0        | High     | 3    | 10   |
+| [[Full Body#^569c1a \| Arnold Press]]         | Upper | CM    | Dumbbell   | *20*     | High     | 3    | 10   |
+| Shoulder Press                                | Upper | CM    | Dumbbell   | *20*     | High     | 3    | 10   |
+| [[Upper#^ef7d41\|Chest Fly]]                  | Upper | CM    | Dumbbell   | *20*     | High     | 3    | 10   |
 | [[Upper#^bcb0df \|Bench Press]]               | Upper | CM    | Barbell    | 0        | High     | 3    | 5    |
 | [[Lower#^308171 \|Romanian Deadlift]]         | Lower | CM    | Barbell    | 0        | Low      | 3    | 5    |
 | [[Full Body#^0c16fd \|Clean to Jerk & Press]] | Full  | EP    | Barbell    | 0        | High     | 3    | 5    |
@@ -201,14 +203,15 @@ color purple
 
 | Excercise                   | Focus  | Weight | Priority | Sets | Reps | Position | Body  | Type        |
 | --------------------------- | ------ | ------ | -------- | ---- | ---- | -------- | ----- | ----------- |
-| Abduction Inner Thigh       | CM     | *160*  | High     | 3    | 5    | Squeeze  | Lower | Machine     |
-| Abductor Outer Thigh        | CM     | *110*  | Med      | 3    | 5    | Spread   | Lower | Machine     |
+| Leg Cable Reverse Crunch    | RC     | 90     | Low      | 3    | 10   | N/A      | Core  | Machine     |
+| Adduction Inner Thigh       | CM     | *160*  | Med      | 3    | 5    | Squeeze  | Lower | Machine     |
+| Abduction Outer Thigh       | CM     | *145*  | High     | 3    | 5    | Spread   | Lower | Machine     |
 | Leg Press off Back Abductor | CM     | *540*  | High     | 3    | 10   | Wide     | Lower | Machine     |
 | Leg Press off Back Calf     | CM     | *270*  | High     | 3    | 10   | Toes     | Lower | Machine     |
 | Leg Press off Back Quads    | CM     | *540*  | High     | 3    | 10   | Close    | Lower | Machine     |
 | Leg Press off Back G&H      | CM     | *270*  | High     | 3    | 10   | Heals    | Lower | Machine     |
 | Leg Press Seated            | CM     | *110*  | High     | 3    | 5    | UpClose  | Lower | Machine     |
-| Isolated Lateral Wide Chest | CM     | *90*   | Med      | 3    | 5    | Wide     | Upper | Machine     |
+| Isolated Lateral Wide Chest | CM     | *100*  | Med      | 3    | 5    | Wide     | Upper | Machine     |
 | Mid  Row                    | PG     | *85*   | High     | 3    | 5    | N/A      | Upper | Machine     |
 | Low  Row                    | PG     | *85*   | High     | 3    | 5    | N/A      | Upper | Machine     |
 | Rear Delt Fly               | CM     | *40*   | High     | 3    | 10   | N/A      | Upper | Machine     |
@@ -219,7 +222,7 @@ color purple
 | Cable Wolverine             | PG     | 160    | High     | 3    | 10   | N/A      | Upper | Machine     |
 | Shoulder Press              | CM     | 0      | Low      | 3    | 10   | N/A      | Upper | Machine     |
 | Fan Row                     | PG     | 0      | Low      | 3    | 10   | N/A      | Upper | Machine     |
-| Leg Cable Reverse Crunch    | RC     | 90     | Low      | 3    | 10   | N/A      | Core  | Machine     |
+| Chest Fly                   | CM     | *20*   | High     | 3    | 10   | N/A      | Upper | FreeWeights |
 | Arnold Press                | CM     | 0      | High     | 3    | 10   | N/A      | Upper | FreeWeights |
 | Bench Press                 | CM     | 0      | High     | 3    | 5    | N/A      | Upper | FreeWeights |
 | Clean to Jerk & Press       | EP     | 0      | High     | 3    | 5    | N/A      | Full  | FreeWeights |

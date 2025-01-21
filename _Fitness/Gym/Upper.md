@@ -22,7 +22,7 @@ Get to your reps to 15 sec each try to extend for 45 sec MAX
 	For rear when pulling stop when both arms are straight don't go past shoulders  ^238b6e
 
 	- ![](https://www.youtube.com/watch?v=H4mVGHaK2f4)
-	Front Fly with Dumbbell
+	Front Fly with Dumbbell ^ef7d41
 	- ![](https://www.youtube.com/watch?v=Nhvz9EzdJ4U)
 	Rear/ reverse Fly with Dumbbell
 	- ![Dumbbell](https://www.youtube.com/watch?v=nlkF7_2O_Lw)
