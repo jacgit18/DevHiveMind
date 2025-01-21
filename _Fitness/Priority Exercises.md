@@ -145,7 +145,7 @@ series:
 | [[Full Body#^0c16fd \|Clean to Jerk & Press]] | Full  | EP    | Barbell    | *20*     | Low      | 3    | 5    |
 | [[Full Body#^765b0b \|Zercher Squats]]        | Lower | CM    | Barbell    | *20*     | Med      | 3    | 10   |
 | [[Full Body#^b30c79\|Zercher Deadlift]]       | Lower | CM    | Barbell    | *20*     | High     | 3    | 5    |
-| Hip Thrust                                    | Lower | CM    | Barbell    | *20*     | High     | 3    | 10   |
+|  [[Lower#^2559bb \|Hip Thrust]]               | Lower | CM    | Barbell    | *20*     | High     | 3    | 10   |
 | [[Full Body#^4b1677\|Zercher Lunge]]          | Lower | CM    | Barbell    | *20*     | Low      | 3    | 5    |
 | [[Upper#^a2d3cc \|ChinUp]]                    | Upper | PG    | Bodyweight | *25*     | High     | 3    | 5    |
 | [[Upper#^bf9596 \|PullUp Wide]]               | Upper | PG    | Bodyweight | *25*     | High     | 3    | 5    |

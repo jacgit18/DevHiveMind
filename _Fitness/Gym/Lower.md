@@ -29,8 +29,8 @@ Get to your reps to 15 sec each try to extend for 45 sec MAX
 	- ![](https://www.youtube.com/watch?v=gLogcYIvgRA)
 - Sumo Squat
 	- ![](https://www.youtube.com/watch?v=vBA3vyOxJv0)
-- Hip Thrust (_Barbell_)
-	- ![](https://www.youtube.com/watch?v=5S8SApGU_Lk)
+- Hip Thrust (_Barbell_) ^2559bb
+	- ![](https://www.youtube.com/watch?v=76t0z3Tdx6Q)
 - Kettlebell Rotational Clean
 	- ![](https://www.youtube.com/watch?v=Iofsc9ssQPE)
 - Bulgarian Split Squat  
