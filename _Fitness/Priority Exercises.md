@@ -6,6 +6,9 @@ tags:
   - favorite
 author:
   - gitUserNamePlaceHolder
+banner: "![[weight-lifting-anime-mashle-funny-workout-dve2194rciuyep9p.gif]]"
+banner_y: 
+banner_x: 
 Comments: Placeholder comment any thing else you want to mention about the document.
 Purpose: This documentation discusses
 Status: 
@@ -25,11 +28,11 @@ Start with a dynamic stretch to Improve blood flow and flexibility. End with a s
     - Increase sets for more gain vs more reps for more endurance. Like 3 sets of 10 reps is more slow vs 10 sets of 3 reps can be done more faster.
     - Vary exercise to trick body rotating exercises pick a number of exercise you want to do and alternate the load.
     - Anything Zercher same under arm grip.
-1. **Avoid Risky Movements:**
+2. **Avoid Risky Movements:**
     - Skip upright rows due to the unnatural shoulder position.
     - Skip Renegade rows
     - Stop two reps before exercise failure alternate this depending how you feel.
-2. **Equipment Tips:**
+3. **Equipment Tips:**
     - Use **barbells** for added weight when building strength.
     - Use **dumbbells** for greater range of motion and correcting muscle imbalances.
     - Any **curlbar** exercise can be done with barbell.
@@ -142,6 +145,7 @@ series:
 | [[Full Body#^0c16fd \|Clean to Jerk & Press]] | Full  | EP    | Barbell    | *20*     | Low      | 3    | 5    |
 | [[Full Body#^765b0b \|Zercher Squats]]        | Lower | CM    | Barbell    | *20*     | Med      | 3    | 10   |
 | [[Full Body#^b30c79\|Zercher Deadlift]]       | Lower | CM    | Barbell    | *20*     | High     | 3    | 5    |
+| Hip Thrust                                    | Lower | CM    | Barbell    | *20*     | High     | 3    | 10   |
 | [[Full Body#^4b1677\|Zercher Lunge]]          | Lower | CM    | Barbell    | *20*     | Low      | 3    | 5    |
 | [[Upper#^a2d3cc \|ChinUp]]                    | Upper | PG    | Bodyweight | *25*     | High     | 3    | 5    |
 | [[Upper#^bf9596 \|PullUp Wide]]               | Upper | PG    | Bodyweight | *25*     | High     | 3    | 5    |
@@ -220,12 +224,12 @@ color purple
 | Cable Floor Fly             | PG     | 160    | Low      | 3    | 10   | N/A      | Upper | Machine     |
 | Cable Wolverine             | PG     | 160    | High     | 3    | 10   | N/A      | Upper | Machine     |
 | Shoulder Press              | CM     | 0      | Low      | 3    | 10   | N/A      | Upper | Machine     |
-| Fan Row                     | PG     | 0      | Low      | 3    | 10   | N/A      | Upper | Machine     |
 | Chest Fly                   | CM     | *20*   | High     | 3    | 10   | N/A      | Upper | FreeWeights |
 | Arnold Press                | CM     | *20*   | High     | 3    | 10   | N/A      | Upper | FreeWeights |
 | Shoulder Press              | CM     | *20*   | High     | 3    | 10   | N/A      | Upper | FreeWeights |
 | Bench Press                 | CM     | *20*   | High     | 3    | 5    | N/A      | Upper | FreeWeights |
 | Clean to Jerk & Press       | EP     | *20*   | Low      | 3    | 5    | N/A      | Full  | FreeWeights |
+| Hip Thrust                  | CM     | *20*   | High     | 3    | 5    | N/A      | Lower | FreeWeights |
 | Zercher Squats              | CM     | *20*   | Med      | 3    | 10   | N/A      | Lower | FreeWeights |
 | Zercher Deadlift            | CM     | *20*   | Med      | 3    | 10   | N/A      | Lower | FreeWeights |
 | Zercher Lunge               | CM     | *20*   | Low      | 3    | 10   | N/A      | Lower | FreeWeights |
