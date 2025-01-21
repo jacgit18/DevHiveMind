@@ -98,7 +98,7 @@ series:
 #todo/Life/Research 
 - [ ] try creating chart from table 
 - [x] Eaa over bcaa try looking into Eaa ✅ 2024-12-29
-- [ ] Check New Weight limits 
+- [x] Check New Weight limits ✅ 2025-01-20
 - [ ] non bold weight not verified based off tower 200 weights verify at gym 
 
 #todo/BAU/Workout
@@ -119,10 +119,9 @@ series:
 | Lower | Leg Press off Back G&H                                  | Heals    | CM    | High     | *270*  | 3    | 5    | 0     | 135      |
 | Lower | Leg Press Seated                                        | UpClose  | CM    | High     | *110*  | 3    | 5    | 0     | **110**  |
 | Upper | Isolated Lateral Wide Chest                             | Wide     | CM    | Med      | *100*  | 3    | 5    | 0     | 50       |
-| Upper | Fan Mid Row                                             | N/A      | PG    | Low      | 0      | 3    | 5    | 0     | 0        |
-| Upper | Low Row                                                 | N/A      | PG    | Med      | 85     | 3    | 5    | 0     | 85       |
+| Upper | Low Row                                                 | N/A      | PG    | Med      | *85*   | 3    | 5    | 0     | 85       |
 | Upper | Mid Row                                                 | N/A      | PG    | High     | *85*   | 3    | 5    | 0     | 42.5     |
-| Upper | Shoulder Press                                          | N/A      | CM    | Low      | 50     | 3    | 5    | 0     | 0        |
+| Upper | Shoulder Press                                          | N/A      | CM    | Low      | *50*   | 3    | 5    | 0     | 0        |
 | Upper | Rear Delt Fly                                           | N/A      | CM    | High     | *45*   | 3    | 5    | 0     | **40**   |
 | Upper | [[Upper#^238b6e \|Chest Fly]]                           | N/A      | CM    | High     | *70*   | 3    | 5    | 4     | **70**   |
 | Upper | [[Upper#^a7be5a \|Cable Woodchopper]]                   | N/A      | RC    | Med      | 160    | 3    | 5    | 0     | 80       |
@@ -138,12 +137,12 @@ series:
 | [[Full Body#^569c1a \| Arnold Press]]         | Upper | CM    | Dumbbell   | *20*     | High     | 3    | 10   |
 | Shoulder Press                                | Upper | CM    | Dumbbell   | *20*     | High     | 3    | 10   |
 | [[Upper#^ef7d41\|Chest Fly]]                  | Upper | CM    | Dumbbell   | *20*     | High     | 3    | 10   |
-| [[Upper#^bcb0df \|Bench Press]]               | Upper | CM    | Barbell    | 0        | High     | 3    | 5    |
-| [[Lower#^308171 \|Romanian Deadlift]]         | Lower | CM    | Barbell    | 0        | Low      | 3    | 5    |
-| [[Full Body#^0c16fd \|Clean to Jerk & Press]] | Full  | EP    | Barbell    | 0        | High     | 3    | 5    |
-| [[Full Body#^765b0b \|Zercher Squats]]        | Lower | CM    | Barbell    | 0        | Med      | 3    | 10   |
-| [[Full Body#^b30c79\|Zercher Deadlift]]       | Lower | CM    | Barbell    | 0        | High     | 3    | 5    |
-| [[Full Body#^4b1677\|Zercher Lunge]]          | Lower | CM    | Barbell    | 0        | High     | 3    | 5    |
+| [[Upper#^bcb0df \|Bench Press]]               | Upper | CM    | Barbell    | *20*     | High     | 3    | 5    |
+| [[Lower#^308171 \|Romanian Deadlift]]         | Lower | CM    | Barbell    | *20*     | Low      | 3    | 5    |
+| [[Full Body#^0c16fd \|Clean to Jerk & Press]] | Full  | EP    | Barbell    | *20*     | Low      | 3    | 5    |
+| [[Full Body#^765b0b \|Zercher Squats]]        | Lower | CM    | Barbell    | *20*     | Med      | 3    | 10   |
+| [[Full Body#^b30c79\|Zercher Deadlift]]       | Lower | CM    | Barbell    | *20*     | High     | 3    | 5    |
+| [[Full Body#^4b1677\|Zercher Lunge]]          | Lower | CM    | Barbell    | *20*     | Low      | 3    | 5    |
 | [[Upper#^a2d3cc \|ChinUp]]                    | Upper | PG    | Bodyweight | *25*     | High     | 3    | 5    |
 | [[Upper#^bf9596 \|PullUp Wide]]               | Upper | PG    | Bodyweight | *25*     | High     | 3    | 5    |
 | [[Upper#^e81d31 \|PullUp Neutral]]            | Upper | PG    | Bodyweight | *25*     | High     | 3    | 5    |
@@ -223,12 +222,13 @@ color purple
 | Shoulder Press              | CM     | 0      | Low      | 3    | 10   | N/A      | Upper | Machine     |
 | Fan Row                     | PG     | 0      | Low      | 3    | 10   | N/A      | Upper | Machine     |
 | Chest Fly                   | CM     | *20*   | High     | 3    | 10   | N/A      | Upper | FreeWeights |
-| Arnold Press                | CM     | 0      | High     | 3    | 10   | N/A      | Upper | FreeWeights |
-| Bench Press                 | CM     | 0      | High     | 3    | 5    | N/A      | Upper | FreeWeights |
-| Clean to Jerk & Press       | EP     | 0      | High     | 3    | 5    | N/A      | Full  | FreeWeights |
-| Zercher Squats              | CM     | 0      | Med      | 3    | 10   | N/A      | Lower | FreeWeights |
-| Zercher Deadlift            | CM     | 0      | Med      | 3    | 10   | N/A      | Lower | FreeWeights |
-| Zercher Lunge               | CM     | 0      | Med      | 3    | 10   | N/A      | Lower | FreeWeights |
+| Arnold Press                | CM     | *20*   | High     | 3    | 10   | N/A      | Upper | FreeWeights |
+| Shoulder Press              | CM     | *20*   | High     | 3    | 10   | N/A      | Upper | FreeWeights |
+| Bench Press                 | CM     | *20*   | High     | 3    | 5    | N/A      | Upper | FreeWeights |
+| Clean to Jerk & Press       | EP     | *20*   | Low      | 3    | 5    | N/A      | Full  | FreeWeights |
+| Zercher Squats              | CM     | *20*   | Med      | 3    | 10   | N/A      | Lower | FreeWeights |
+| Zercher Deadlift            | CM     | *20*   | Med      | 3    | 10   | N/A      | Lower | FreeWeights |
+| Zercher Lunge               | CM     | *20*   | Low      | 3    | 10   | N/A      | Lower | FreeWeights |
 | ChinUp                      | PG     | *25*   | High     | 3    | 5    | N/A      | Upper | FreeWeights |
 | PullUp Wide                 | PG     | *25*   | High     | 3    | 5    | N/A      | Upper | FreeWeights |
 | PullUp Neutral              | PG     | *25*   | High     | 3    | 5    | N/A      | Upper | FreeWeights |
@@ -236,7 +236,7 @@ color purple
 | Bottoms Up                  | PG     | *17.6* | High     | 3    | 10   | N/A      | Upper | FreeWeights |
 | Lunge Twist Halo            | RC     | *17.6* | High     | 8    | 2    | N/A      | Upper | FreeWeights |
 | SingleArm Clean Press       | EP     | *17.6* | Med      | 3    | 10   | N/A      | Upper | FreeWeights |
-| Romanian Deadlift           | CM     | 0      | Low      | 3    | 5    | N/A      | Lower | FreeWeights |
+| Romanian Deadlift           | CM     | *20*   | Low      | 3    | 5    | N/A      | Lower | FreeWeights |
 | Kettlebell Swing            | PG     | *17.6* | Med      | 3    | 10   | N/A      | Full  | FreeWeights |
 | Kettlebell Snatch           | EP     | *17.6* | Med      | 3    | 10   | N/A      | Full  | FreeWeights |
 | Cossack Squat               | CM     | *17.6* | Low      | 3    | 10   | N/A      | Lower | FreeWeights |
