@@ -145,15 +145,15 @@ series:
 | [[Full Body#^0c16fd \|Clean to Jerk & Press]] | Full  | EP    | Barbell    | *20*     | Low      | 3    | 5    |
 | [[Full Body#^765b0b \|Zercher Squats]]        | Lower | CM    | Barbell    | *20*     | Med      | 3    | 10   |
 | [[Full Body#^b30c79\|Zercher Deadlift]]       | Lower | CM    | Barbell    | *20*     | High     | 3    | 5    |
-|  [[Lower#^2559bb \|Hip Thrust]]               | Lower | CM    | Barbell    | *20*     | High     | 3    | 10   |
+| [[Lower#^2559bb \|Hip Thrust]]                | Lower | CM    | Barbell    | *20*     | High     | 3    | 10   |
 | [[Full Body#^4b1677\|Zercher Lunge]]          | Lower | CM    | Barbell    | *20*     | Low      | 3    | 5    |
 | [[Upper#^a2d3cc \|ChinUp]]                    | Upper | PG    | Bodyweight | *25*     | High     | 3    | 5    |
 | [[Upper#^bf9596 \|PullUp Wide]]               | Upper | PG    | Bodyweight | *25*     | High     | 3    | 5    |
 | [[Upper#^e81d31 \|PullUp Neutral]]            | Upper | PG    | Bodyweight | *25*     | High     | 3    | 5    |
+| Single Arm Clean Press                        | Upper | EP    | Kettlebell | *17.6*   | Med      | 3    | 10   |
 | [[Upper#^9def13\|Bottoms Up]]                 | Upper | PG    | Kettlebell | *17.6*   | High     | 3    | 10   |
 | [[Full Body#^7ecf05 \|Lunge Twist Halo]]      | Upper | RC    | Kettlebell | *17.6*   | High     | 8    | 2    |
 | [[Full Body#^7d58d7 \|Turkish Get-Up]]        | Full  | RC    | Kettlebell | *17.6*   | Low      | 3    | 10   |
-| SingleArm Clean Press                         | Upper | EP    | Kettlebell | *17.6*   | Med      | 3    | 10   |
 | [[Full Body#^bb1837\|Kettlebell Swing]]       | Full  | PG    | Kettlebell | *17.6*   | Med      | 3    | 10   |
 | [[Full Body#^8b48af \|Kettlebell Snatch]]     | Full  | EP    | Kettlebell | *17.6*   | Med      | 3    | 10   |
 | [[Lower#^3ae11e \|Cossack Squat]]             | Lower | CM    | Kettlebell | *17.6*   | Low      | 3    | 10   |
