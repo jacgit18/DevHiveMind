@@ -35,6 +35,7 @@ Use the **UFC game** to simulate and experiment with techniques and strategies.
 - Treat sparring as a game; keep it light and exploratory.
 - Set feet quickly and throw body first be fully extending arms on punch.
 - Imagine the opponent as a mirror: move in the opposite direction of their movement, emulating **lateral inversion** which the process of your movement in a mirror orienting inversely.
+- Monkey see monkey do try imitating the person you're sparring with and their movements and stuff.
 - Move forward while also using lateral movement using and feinting with level changes making the other person react and creating openings.
 - When exiting or entering feel the void of space with something don't be a good guess and bring a gift when you come and leave showing manners giving some hands as you exit.
 - Vary entries and exits, mix up how you engage and disengage to avoid becoming predictable and to exploit different angles.

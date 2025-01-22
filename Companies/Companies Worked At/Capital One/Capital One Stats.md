@@ -33,14 +33,15 @@ This team focus on [[Credit Card Collections]], delinquency, and stuff like paym
 
 We're building Arctic offers out for the next 6 month i may be working with AWS while   
 
-Cloud orchestration processes from hooks to step functions
+Cloud orchestration processes from Scheduled hook Rtic to step functions
 
 Arctic uses DynamoDB and utilizes AWS server-less architecture focusing on things like lambda and Step-Up which is no code.
 
 Credit card collection the main mission is to help customers who are off track get back on track of their payments the way this happens is through offers or specifically rtic offers  
   
 this includes payment plans maybe reducing apy or other different plans etc..  
-  
+
+Might be enhancing dialing through offers
   
 Splunk  
   
@@ -65,6 +66,7 @@ ASV application service version
   
   
 Rules lab is basically a internal tool that is used by business analyst to update credit policy without having to have software engineers mess around with codebases to do this just in terms of Simple Rules that you see on a website specifically for a credit card terms and policies and many other things around credit cards
+
 
 
 ## Old

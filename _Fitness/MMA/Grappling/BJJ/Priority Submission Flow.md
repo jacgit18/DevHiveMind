@@ -98,7 +98,7 @@ style S fill:red,stroke:red,stroke-width:4px,shadow:shadow
 
 
 ##### Top Submissions to Practice Attacking (Positions Available: 7+)
-- **Armbar (Straight Armbar)**
+- **[[Armbar]] (Straight Armbar)**
 	- Counter with from **Guillotine Defense** If the opponent defends a guillotine by extending an arm, transition into an armbar.
 	- Counter with from **Failed Triangle** If they stack to escape a triangle, isolate the arm and apply the armbar.
 - **Guillotine Choke**

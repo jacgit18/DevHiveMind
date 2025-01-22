@@ -106,7 +106,7 @@ series:
 
 #todo/BAU/Workout
 - [ ] Make shoulders more stable before doing  Turkish Get-up 
-- [ ] focus on stability then add resistance
+- [ ] focus on stability then add resistance and more weight
 - [ ] 6 to 20 reps near failure at max
 - [ ] Get reps to 10
 - [ ] Focus on intensity then scale to volume
