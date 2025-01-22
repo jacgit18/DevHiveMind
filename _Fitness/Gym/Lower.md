@@ -38,6 +38,8 @@ Get to your reps to 15 sec each try to extend for 45 sec MAX
 - Kettlebell Deadlift
     - ![Deadlift (Kettlebell)](https://www.youtube.com/embed/hinonqqzatk?feature=oembed)
 - Leg Press 
+- Nordic Hamstring Curl
+	- ![Nordic Hamstring Curl - YouTube](https://www.youtube.com/watch?v=kjv4WQXWl_A) ^4e02bb
 ### Plyometrics(Jumps) Calisthenics
 - Box Jumps ^3b9f2c
 	- ![](https://www.youtube.com/watch?v=NBY9-kTuHEk)

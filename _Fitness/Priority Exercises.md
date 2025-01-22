@@ -142,6 +142,7 @@ series:
 | [[Upper#^ef7d41\|Chest Fly]]                  | Upper | CM    | Dumbbell   | *20*     | High     | 3    | 10   |
 | [[Upper#^bcb0df \|Bench Press]]               | Upper | CM    | Barbell    | *20*     | High     | 3    | 5    |
 | [[Lower#^308171 \|Romanian Deadlift]]         | Lower | CM    | Barbell    | *20*     | Low      | 3    | 5    |
+| [[Lower#^4e02bb \|Nordic Hamstring Curl]]     | Lower | CM    | Barbell    | *90*     | High     | 3    | 5    |
 | [[Full Body#^0c16fd \|Clean to Jerk & Press]] | Full  | EP    | Barbell    | *20*     | Low      | 3    | 5    |
 | [[Full Body#^765b0b \|Zercher Squats]]        | Lower | CM    | Barbell    | *20*     | Med      | 3    | 10   |
 | [[Full Body#^b30c79\|Zercher Deadlift]]       | Lower | CM    | Barbell    | *20*     | High     | 3    | 5    |
@@ -229,6 +230,7 @@ color purple
 | Shoulder Press              | CM     | 20        | Low      | 3    | 10   | N/A      | Upper | FreeWeights |
 | Bench Press                 | CM     | 20        | High     | 3    | 5    | N/A      | Upper | FreeWeights |
 | Hip Thrust                  | CM     | 20        | High     | 3    | 5    | N/A      | Lower | FreeWeights |
+| Nordic Hamstring Curl       | CM     | 90        | High     | 3    | 5    | N/A      | Lower | FreeWeights |
 | Zercher Squats              | CM     | 20        | Med      | 3    | 10   | N/A      | Lower | FreeWeights |
 | Zercher Deadlift            | CM     | 20        | Med      | 3    | 10   | N/A      | Lower | FreeWeights |
 | Zercher Lunge               | CM     | 20        | Low      | 3    | 10   | N/A      | Lower | FreeWeights |
