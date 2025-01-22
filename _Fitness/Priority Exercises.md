@@ -138,7 +138,7 @@ series:
 | Exercise                                      | Body  | Focus | Type       | W(lb/kg) | Priority | Sets | Reps |
 | --------------------------------------------- | ----- | ----- | ---------- | -------- | -------- | ---- | ---- |
 | [[Full Body#^569c1a \| Arnold Press]]         | Upper | CM    | Dumbbell   | *20*     | High     | 3    | 10   |
-| Shoulder Press                                | Upper | CM    | Dumbbell   | *20*     | High     | 3    | 10   |
+| Shoulder Press                                | Upper | CM    | Dumbbell   | *20*     | Low      | 3    | 10   |
 | [[Upper#^ef7d41\|Chest Fly]]                  | Upper | CM    | Dumbbell   | *20*     | High     | 3    | 10   |
 | [[Upper#^bcb0df \|Bench Press]]               | Upper | CM    | Barbell    | *20*     | High     | 3    | 5    |
 | [[Lower#^308171 \|Romanian Deadlift]]         | Lower | CM    | Barbell    | *20*     | Low      | 3    | 5    |
@@ -226,7 +226,7 @@ color purple
 | Shoulder Press              | CM     | 0      | Low      | 3    | 10   | N/A      | Upper | Machine     |
 | Chest Fly                   | CM     | *20*   | High     | 3    | 10   | N/A      | Upper | FreeWeights |
 | Arnold Press                | CM     | *20*   | High     | 3    | 10   | N/A      | Upper | FreeWeights |
-| Shoulder Press              | CM     | *20*   | High     | 3    | 10   | N/A      | Upper | FreeWeights |
+| Shoulder Press              | CM     | *20*   | Low      | 3    | 10   | N/A      | Upper | FreeWeights |
 | Bench Press                 | CM     | *20*   | High     | 3    | 5    | N/A      | Upper | FreeWeights |
 | Clean to Jerk & Press       | EP     | *20*   | Low      | 3    | 5    | N/A      | Full  | FreeWeights |
 | Hip Thrust                  | CM     | *20*   | High     | 3    | 5    | N/A      | Lower | FreeWeights |
