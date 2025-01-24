@@ -9,6 +9,7 @@ kanban-plugin: board
 - [ ] Look at this [[Codebase Interview Question]] (@2025-01-28)
 - [ ] Upcoming Workflow [[Publish to onstream workflow]]
 - [ ] AWS Solution Architect certification
+- [ ] Acknowledge commit follow up
 
 
 ## Capital one Stuff

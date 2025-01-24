@@ -31,11 +31,16 @@ monthlyPreTaxIncome: 5200
 - [ ] futures trading
 - [ ] Need to set aside 2,000 or 1300 more to short stocks not part of balance 
 
+
+New monthly about 1,576.01
+
 Do the math 12 months times monthly cost  
 
 You can withdraw Roth IRA contributions without penalties, as long as the amount does not exceed your total contributions—meaning you don’t withdraw earnings or capital gains.
   
 Of employer insurance or personal insurance when determining extra money in negotiating
+
+
 
 ```dataviewjs
 const { IdealSalary, Days, TotalWeeks, Salary, WorkDays } = dv.current();
