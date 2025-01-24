@@ -28,7 +28,7 @@ kanban-plugin: board
 - [ ] [[AWS SQS]]
 - [ ] [[Serverless Architecture]]
 - [ ] Amazon EventBridge
-- [ ] [[OneStream]]
+- [ ] [[OneStream Notes |OneStream]]
 - [ ] DynamoDB
 - [ ] Python
 
