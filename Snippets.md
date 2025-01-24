@@ -7,7 +7,7 @@ kanban-plugin: board
 ## #todo/Work
 
 - [ ] Look at this [[Codebase Interview Question]] (@2025-01-28)
-- [ ] Ask to shadow Young during sessions of team mate (@2025-01-24)
+- [ ] Ask to shadow Young during sessions of team mate (@2025-01-31)
 - [ ] Upcoming Workflow [[Publish to onstream workflow]]
 
 
@@ -16,7 +16,7 @@ kanban-plugin: board
 - [ ] C@pple2024Money
 - [ ] For question use soc core slack channel
 - [ ] [[Capital One Stats]]
-- [ ] working on Straight Outta collections team use this name when OOO
+- [ ] working on Straight Outta collections team use this name when OOO #straightouttacollections
 - [ ] BSE - Business Salient event
 
 
