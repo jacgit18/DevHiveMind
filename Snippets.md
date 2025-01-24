@@ -23,13 +23,6 @@ kanban-plugin: board
 - [ ] BSE - Business Salient event
 
 
-## Side Hustle Ideas
-
-- [ ] House sitting dog walker while software engineering
-- [ ] Carpet cleaning
-- [ ] Power washer
-
-
 ## Tech Topic Focus
 
 - [ ] [[AWS SQS]]
@@ -44,6 +37,13 @@ kanban-plugin: board
 
 - [ ] Ask to shadow Young during sessions of team mate (@2025-01-31)
 - [ ] Vision and dental is united healthcare
+
+
+## Side Hustle Ideas
+
+- [ ] House sitting dog walker while software engineering
+- [ ] Carpet cleaning
+- [ ] Power washer
 
 
 
