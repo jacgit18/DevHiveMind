@@ -10,6 +10,7 @@ kanban-plugin: board
 - [ ] Upcoming Workflow [[Publish to onstream workflow]]
 - [ ] AWS Solution Architect certification
 - [ ] Acknowledge that you don't know. Commit to finding the answer and follow up.
+- [ ] buy time
 
 
 ## Capital one Stuff
