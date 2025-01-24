@@ -67,6 +67,12 @@ ASV application service version
   
 Rules lab is basically a internal tool that is used by business analyst to update credit policy without having to have software engineers mess around with codebases to do this just in terms of Simple Rules that you see on a website specifically for a credit card terms and policies and many other things around credit cards
 
+Get people out of credit card delinquency and catch Bad actors
+
+Currently working on the customer resume Department  
+  
+  
+Before I was under contact center enablement Department
 
 
 ## Old
