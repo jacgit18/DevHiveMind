@@ -7,10 +7,11 @@ kanban-plugin: board
 ## #todo/Work
 
 - [ ] Look at this [[Codebase Interview Question]] (@2025-01-28)
-- [ ] Upcoming Workflow [[Publish to onstream workflow]]
+- [ ] Upcoming work [[Publish to onstream workflow]]
 - [ ] AWS Solution Architect certification
-- [ ] Acknowledge that you don't know. Commit to finding the answer and follow up.
 - [ ] buy time
+- [ ] Acknowledge that you don't know. Commit to finding the answer and follow up.
+- [ ] Okay so off the top of my head I can't tell you with 100% certainty but let me look into that and I'll come back to you with an answer but while that happens did you have any other questions this moment
 
 
 ## Capital one Stuff
