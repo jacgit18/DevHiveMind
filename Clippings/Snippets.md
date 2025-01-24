@@ -17,16 +17,35 @@ kanban-plugin: board
 - [ ] For question use soc core slack channel
 - [ ] [[Capital One Stats]]
 - [ ] working on Straight Outta collections team use this name when OOO
+- [ ] BSE - Business Salient event
+
+
+## Side Hustle Ideas
+
+- [ ] House sitting dog walker while software engineering
+- [ ] Carpet cleaning
+- [ ] Power washer
+
+
+## Tech Topic Focus
+
+- [ ] [[AWS SQS]]
+- [ ] [[Serverless Architecture]]
+- [ ] Amazon EventBridge
+- [ ] [[OneStream]]
+- [ ] DynamoDB
+- [ ] Python
 
 
 ## Done
 
+- [ ] Vision and dental is united healthcare
 
 
 
 
 %% kanban:settings
 ```
-{"kanban-plugin":"board","list-collapse":[false,false,false]}
+{"kanban-plugin":"board","list-collapse":[false,false,false,false,false]}
 ```
 %%

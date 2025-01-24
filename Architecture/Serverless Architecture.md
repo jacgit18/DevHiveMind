@@ -9,7 +9,7 @@ Purpose: This documentation discusses serverless architecture.
 Status: Refinement
 Started: 
 EditDate: 2024-03-07
-Relates: 
+Relates: "[[AWS Lambda]]"
 Peer Reviewed: 0
 dg-publish:
 ---
