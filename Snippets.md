@@ -7,7 +7,6 @@ kanban-plugin: board
 ## #todo/Work
 
 - [ ] Look at this [[Codebase Interview Question]] (@2025-01-28)
-- [ ] Ask to shadow Young during sessions of team mate (@2025-01-31)
 - [ ] Upcoming Workflow [[Publish to onstream workflow]]
 - [ ] AWS Solution Architect certification
 
@@ -40,6 +39,7 @@ kanban-plugin: board
 
 ## Done
 
+- [ ] Ask to shadow Young during sessions of team mate (@2025-01-31)
 - [ ] Vision and dental is united healthcare
 
 
