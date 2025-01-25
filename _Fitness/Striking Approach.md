@@ -20,9 +20,9 @@ dg-publish:
 # Striking Guide
 ![[MMASchedule.jpg]]
 ### **Practice & Simulation**
-> ***Be in Constant Motion*** 
+> ***Be in constant motion prioritizing timing over speed*** 
 
-Use the **UFC game** to simulate and experiment with techniques and strategies.
+Use the **UFC game** to simulate and experiment with techniques and strategies practicing breathing technique and stance change.
 
 ## **Striking Principles**
 ![](https://www.youtube.com/watch?v=HUyraSmgO3I)
