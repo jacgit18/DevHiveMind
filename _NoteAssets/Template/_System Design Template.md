@@ -3770,8 +3770,8 @@ iK4B0afz: [[_NoteAssets/Template/_System Design Template.md#Entity Definition Ta
 		},
 		{
 			"type": "embeddable",
-			"version": 17,
-			"versionNonce": 773983359,
+			"version": 18,
+			"versionNonce": 773983360,
 			"index": "c0E1",
 			"isDeleted": false,
 			"id": "iK4B0afz",
@@ -3830,8 +3830,8 @@ iK4B0afz: [[_NoteAssets/Template/_System Design Template.md#Entity Definition Ta
 		"currentItemStartArrowhead": null,
 		"currentItemEndArrowhead": "arrow",
 		"currentItemArrowType": "round",
-		"scrollX": 4357.365159259747,
-		"scrollY": 1795.0664044831883,
+		"scrollX": 2959.7751212412704,
+		"scrollY": 1795.0664044831885,
 		"zoom": {
 			"value": 0.298013
 		},
