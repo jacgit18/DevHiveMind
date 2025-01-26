@@ -53,8 +53,6 @@ dg-publish:
 When you want to learn new languages in the future think about every time you have to prepare for technical interviews to start interviewing for a new job change what language you practice in once you feel like you have good understanding of how to build up solutions to programming challenges.
 #todo/Low/Dev  
 - [ ] [[spring-boot.pdf]]
-- [[Python Learning Plan]]
-	- [ ] [[python.pdf]]
 - [ ] https://brilliant.org/paths/probability-statistics-finance/
 
 

@@ -14,7 +14,7 @@ EditDate: 2024-03-04
 Relates: 
 dg-publish:
 ---
-![[Buffet principle.png]]
+![[Career/_Infographic/Buffet principle.png]]
 
 1. **Focused Stock Portfolio:**
    - Recommendation: Avoid excessive diversification in your stock portfolio. Instead, maintain a focused portfolio to closely monitor and capitalize on your best-performing stocks.

@@ -1,34 +1,19 @@
-Hi Andrea,   
-  
-My name is Joshua Carpentier, and I'm a Full Stack Developer contacting you about your Software Engineer role and was interested in your company.   
-  
-I would love to discuss the team's goals for this role and understand how my skill set applies to the role. In addition, I would love to walk you through my motivation/intention for this particular role. My availability is listed here: https://calendly.com/joshuaxcarpentier/30min  
-  
-Please let me know how to proceed further. And feel free to share or forward me to a Technical Recruiter on your team if that's more appropriate.  
-  
-Thank you,  
-  
-Best,  
-  
-Joshua Carpentier  
-  
-  
-- Here is my availability https://calendly.com/joshuaxcarpentier
-- https://www.linkedin.com/in/joshua-carpentier/  
-- https://github.com/jacgit18
-- https://github.com/Professional-Job-Seekers/UnderTheWing
-- https://github.com/jacgit18/DevHiveMind
-- https://dev-garden.vercel.app
-  
-  
-LinkedIn  
-  
-Software Carpentier Future Software Architect  
-  
-New York, NY, USA  
-United States  
-  
-COVER LETTER  
+---
+tags:
+  - career
+author:
+  - gitUserNamePlaceHolder
+Comments: Placeholder comment any thing else you want to mention about the document.
+Purpose: This documentation discusses
+Status: Perpetual
+Started: 
+EditDate: 
+Relates: 
+Peer Reviewed: 0
+dg-publish:
+---
+#todo/BAU/Career 
+- [ ] update with [[Capital One Stats]]
   
 Dear Recruitment Team,  
   
@@ -42,53 +27,3 @@ I am eager to bring my skills and experience to your company and contribute to i
 Sincerely,  
   
 Joshua Carpentier  
-  
-  
-  
-  
-Joshua  
-  
-Carpentier  
-  
-  
-347-219-7865   
-  
-‪609-948-4110‬   
-  
-joshuaxcarpentier@gmail.com
-  
-https://linktr.ee/joshuacarpentier
-  
-  
-  
-New York City College of Technology   
-  
-Bachelors  
-Computer Information Systems  
-  
-251 E 29th St, Brooklyn, NY, 11226, USA   
-  
-Capital One Bank  
-  
-TD Bank  
-  
-NYC Department of Social Services   
-  
-Application Support Engineer   
-  
-Blank Technologies Corp   
-  
-System Support Engineer   
-  
-CUNY Tech Prep   
-  
-Apprenticeship   
-  
-Full-Stack Developer    
-  
-Independent Consultant   
-  
-  
-LinkedIn   
-  
-Recruitment

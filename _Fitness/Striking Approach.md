@@ -25,6 +25,9 @@ dg-publish:
 Use the **UFC game** to simulate and experiment with techniques and strategies practicing breathing technique and stance change.
 
 ## **Striking Principles**
+> [!abstract] End Goal
+> The goal is to penetrate an opponent's center-line defense, create angles, and disrupt their balance to enhance striking effectiveness.
+
 ![](https://www.youtube.com/watch?v=HUyraSmgO3I)
 
 ### Fluidity Tips

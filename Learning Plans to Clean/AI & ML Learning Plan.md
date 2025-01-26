@@ -2,6 +2,7 @@
 tags:
   - learningPlan
   - python
+  - "#todo/OKR"
 author:
   - gitUserNamePlaceHolder
 Comments: Placeholder comment any thing else you want to mention about the document.
@@ -22,6 +23,8 @@ dg-publish:
 - **Scikit-learn** (Machine learning models)
 - **Practice using CloudShell**
 - **Explore AWS SDK & CLI**
+
+- [ ] combine with other learning plan into one that is more hyper focused and overlapped
 
 
 # Structured Approach to Learning Machine Learning (ML) and Artificial Intelligence (AI)

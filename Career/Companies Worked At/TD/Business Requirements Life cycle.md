@@ -40,7 +40,7 @@ The identification and prioritization of themes are crucial in guiding the devel
 ### Requirement Types
 Features contribute to both [[Functional Requirements]] and non-functional requirements, they are typically derived from functional requirements as specific capabilities or functionalities that the system must provide to satisfy user needs. 
 
-[[Non-functional requirements]], on the other hand, define the criteria for how those features should perform or behave to meet broader system objectives. Both types of requirements are essential for effectively designing, implementing, and evaluating a system.
+[[Non-Functional Requirements]], on the other hand, define the criteria for how those features should perform or behave to meet broader system objectives. Both types of requirements are essential for effectively designing, implementing, and evaluating a system.
 
 [[Testing Stages Relationship |Requirements in testing context]]
 when testing look for bugs ask if the behavior defined in the codebase is intended because it could be a known or unknown bug or just a lot more complexity or something just ask questions.

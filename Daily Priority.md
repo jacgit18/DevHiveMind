@@ -6,12 +6,14 @@ kanban-plugin: board
 
 ## #todo/Work
 
+- [ ] Cancel Audible (@2025-02-22)
 - [ ] Look at this [[Codebase Interview Question]] (@2025-01-28)
 - [ ] Upcoming work [[Publish to onstream workflow]]
 - [ ] AWS Solution Architect certification
 - [ ] buy time
 - [ ] Acknowledge that you don't know. Commit to finding the answer and follow up.
 - [ ] Okay so off the top of my head I can't tell you with 100% certainty but let me look into that and I'll come back to you with an answer but while that happens did you have any other questions this moment
+- [ ] Clean up Todo
 
 
 ## Capital one Stuff
@@ -23,7 +25,7 @@ kanban-plugin: board
 - [ ] BSE - Business Salient event
 
 
-## Tech Topic Focus
+## Priority Tech Topic of Focus
 
 - [ ] [[AWS SQS]]
 - [ ] [[Serverless Architecture]]
@@ -133,10 +135,49 @@ kanban-plugin: board
 - [ ] Vision and dental is united healthcare
 
 
+## Job Clipboard
+
+- [ ] Hi Andrea,   
+	  
+	My name is Joshua Carpentier, and I'm a Full Stack Developer contacting you about your Software Engineer role and was interested in your company.   
+	  
+	I would love to discuss the team's goals for this role and understand how my skill set applies to the role. In addition, I would love to walk you through my motivation/intention for this particular role. My availability is listed here: https://calendly.com/joshuaxcarpentier/30min  
+	  
+	Please let me know how to proceed further. And feel free to share or forward me to a Technical Recruiter on your team if that's more appropriate.  
+	  
+	Thank you,  
+	  
+	Best,  
+	  
+	Joshua Carpentier
+- [ ] - Here is my availability https://calendly.com/joshuaxcarpentier
+	- https://www.linkedin.com/in/joshua-carpentier/  
+	- https://github.com/jacgit18
+	- https://github.com/Professional-Job-Seekers/UnderTheWing
+	- https://github.com/jacgit18/DevHiveMind
+	- https://dev-garden.vercel.app
+- [ ] Software Carpentier Future Software Architect
+- [ ] New York, NY, USA
+- [ ] United States
+- [ ] Joshua
+- [ ] Carpentier
+- [ ] 347-219-7865
+- [ ] joshuaxcarpentier@gmail.com
+- [ ] https://linktr.ee/joshuacarpentier
+- [ ] New York City College of Technology
+- [ ] Bachelors
+- [ ] Computer Information Systems
+- [ ] 251 E 29th St, Brooklyn, NY, 11226, USA
+- [ ] Capital One Bank
+- [ ] TD Bank
+- [ ] Tracflo
+- [ ] CUNY Tech Prep
+
+
 
 
 %% kanban:settings
 ```
-{"kanban-plugin":"board","list-collapse":[false,false,false,false,false,false]}
+{"kanban-plugin":"board","list-collapse":[false,false,false,false,false,false,false]}
 ```
 %%
