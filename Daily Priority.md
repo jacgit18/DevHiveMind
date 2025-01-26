@@ -27,12 +27,12 @@ kanban-plugin: board
 
 ## Priority Tech Topic of Focus
 
-- [ ] [[AWS SQS]]
 - [ ] [[Serverless Architecture]]
+- [ ] [[AWS SQS]]
 - [ ] Amazon EventBridge
-- [ ] [[OneStream Notes |OneStream]]
-- [ ] DynamoDB
 - [ ] Python
+- [ ] DynamoDB
+- [ ] [[OneStream Notes |OneStream]]
 
 
 ## AWS Solution Archetict
