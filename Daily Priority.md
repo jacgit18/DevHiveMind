@@ -4,6 +4,12 @@ kanban-plugin: board
 
 ---
 
+## ##### Standing on business
+
+- [ ] > [!attention] Stay focused on your own rhythm.
+	> Not everyone is on the same page, and even if they seem aligned, their actions might not be entirely transparent.
+
+
 ## #todo/Work
 
 - [ ] Cancel Audible (@2025-02-22)
@@ -16,7 +22,7 @@ kanban-plugin: board
 - [ ] Clean up Todo
 
 
-## Capital one Stuff
+## Cap One Stuff
 
 - [ ] C@pple2024Money
 - [ ] For question use soc core slack channel
@@ -178,6 +184,6 @@ kanban-plugin: board
 
 %% kanban:settings
 ```
-{"kanban-plugin":"board","list-collapse":[false,false,false,false,false,false,false]}
+{"kanban-plugin":"board","list-collapse":[false,false,false,false,false,false,false,false]}
 ```
 %%
