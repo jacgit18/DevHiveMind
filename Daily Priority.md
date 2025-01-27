@@ -138,8 +138,8 @@ kanban-plugin: board
 
 ## Done
 
-- [ ] Ask to shadow Young during sessions of team mate (@2025-01-31)
-- [ ] Vision and dental is united healthcare
+- [x] Ask to shadow Young during sessions of team mate (@2025-01-31) ✅ 2025-01-27
+- [x] Vision and dental is united healthcare ✅ 2025-01-27
 
 
 ## Job Clipboard
@@ -185,6 +185,6 @@ kanban-plugin: board
 
 %% kanban:settings
 ```
-{"kanban-plugin":"board","list-collapse":[false,false,false,false,false,false,false,false]}
+{"kanban-plugin":"board","list-collapse":[false,false,false,false,false,false,false,false],"show-checkboxes":true,"link-date-to-daily-note":true}
 ```
 %%
