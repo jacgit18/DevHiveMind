@@ -19,6 +19,8 @@ kanban-plugin: board
 - [ ] Acknowledge that you don't know. Commit to finding the answer and follow up.
 - [ ] Okay so off the top of my head I can't tell you with 100% certainty but let me look into that and I'll come back to you with an answer but while that happens did you have any other questions this moment
 - [ ] Clean up Todo
+- [ ] Switch to magnesium/zinc two times a day (@2025-02-03)
+- [ ] Get probiotics and prebiotics (@2025-03-01)
 
 
 ## Cap One Stuff
