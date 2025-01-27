@@ -18,7 +18,7 @@ Send published events to onestream
 then 
 
 
-we have lambda that is a publisher sending published events to onestream which then sends the data to QsinkLamda to BSE SQS(simple queue service)
+we have lambda that is a publisher sending published events to onestream which then sends the data to Qsink to BSE SQS(simple queue service)
 
 
 at the same time eventbridge rules are process by DLQ Drainer Lambda which sends start message move task to the BSE SQS which then invokes event analyzer lambda which publishes data 
