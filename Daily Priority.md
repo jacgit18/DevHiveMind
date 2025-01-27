@@ -12,7 +12,6 @@ kanban-plugin: board
 
 ## #todo/Work
 
-- [ ] Cancel Audible (@2025-02-22)
 - [ ] Look at this [[Codebase Interview Question]] (@2025-01-28)
 - [ ] Upcoming work [[Publish to onstream workflow]]
 - [ ] AWS Solution Architect certification
