@@ -24,6 +24,8 @@ we have lambda that is a publisher sending published events to onestream which t
 at the same time eventbridge rules are process by DLQ Drainer Lambda which sends start message move task to the BSE SQS which then invokes event analyzer lambda which publishes data 
 
 
+
+
 Your understanding of how AWS Lambda works is on the right track, but there’s more to it when integrating with other AWS services and handling workflows like the one you’ve described. Let me break it down:
 
 ---
