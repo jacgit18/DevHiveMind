@@ -12,7 +12,7 @@ kanban-plugin: board
 
 ## #todo/Work
 
-- [ ] Look at this [[Codebase Interview Question]] (@2025-01-28)
+- [ ] Look at this [[Codebase Interview Question]] (@2025-01-29)
 - [ ] Upcoming work [[Publish to onstream workflow]]
 - [ ] AWS Solution Architect certification
 - [ ] buy time
