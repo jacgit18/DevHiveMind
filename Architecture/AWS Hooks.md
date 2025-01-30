@@ -7,10 +7,10 @@ author:
   - gitUserNamePlaceHolder
 Comments: Placeholder comment any thing else you want to mention about the document.
 Purpose: This documentation discusses
-Status: 
-Started: 
+Status: Capture
+Started: 2025-01-30
 EditDate: 
-Relates: "[[Serve"
+Relates: "[[Serverless Architecture]]"
 Peer Reviewed: 0
 dg-publish:
 ---
@@ -57,4 +57,3 @@ In **AWS**, a **hook** is a mechanism that allows a function or service to trigg
 ✅ **Improve Resilience** – Handle failures automatically (e.g., retry on errors).  
 ✅ **Enhance Security** – Validate configurations before changes go live.
 
-Would you like an example of how to implement a specific AWS hook?
