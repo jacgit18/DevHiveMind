@@ -9,8 +9,7 @@ kanban-plugin: board
 - [ ] Buy time
 - [ ] Acknowledge that you don't know. Commit to finding the answer and follow up.
 - [ ] Okay so off the top of my head I can't tell you with 100% certainty but let me look into that and I'll come back to you with an answer but while that happens did you have any other questions this moment
-- [ ] > [!attention] Stay focused on your own rhythm.
-	> Not everyone is on the same page, and even if they seem aligned, their actions might not be entirely transparent.
+- [ ] ![[Business decision#^68639f]]
 
 
 ## #todo/Work

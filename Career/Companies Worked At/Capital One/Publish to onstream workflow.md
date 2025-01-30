@@ -13,3 +13,17 @@ Relates: "[[OneStream]]"
 Peer Reviewed: 0
 dg-publish:
 ---
+Qsink not lambda
+
+
+Lambda subscribe to things like sns when it comes to asynchronous process but there are more options now Like sqs  
+  
+  
+  
+A high level pattern that typically happens now is you have a publisher who sends things to SNS which can connect to multiple things and then that connects to a sqs  
+  
+  
+Another common use case with aws lambda is glue Logic for step function workflows  
+  
+  
+Running lambdas locally
