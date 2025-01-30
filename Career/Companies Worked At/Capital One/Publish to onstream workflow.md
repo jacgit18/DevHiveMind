@@ -16,6 +16,15 @@ dg-publish:
 Qsink not lambda
 
 
+KT Knowledge Transfer  
+  
+  
+5 bpa workflows
+
+
+
+
+
 Lambda subscribe to things like sns when it comes to asynchronous process but there are more options now Like sqs  
   
   
