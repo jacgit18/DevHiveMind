@@ -36,3 +36,11 @@ Another common use case with aws lambda is glue Logic for step function workflow
   
   
 Running lambdas locally
+
+
+
+They need a way to automate to publish data to onestream
+
+
+
+
