@@ -75772,10 +75772,10 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 		"currentItemStartArrowhead": null,
 		"currentItemEndArrowhead": "arrow",
 		"currentItemArrowType": "round",
-		"scrollX": 886.994523048256,
-		"scrollY": 1604.1606095196507,
+		"scrollX": 3964.8853655473954,
+		"scrollY": 3787.107462045092,
 		"zoom": {
-			"value": 0.678697
+			"value": 0.121734
 		},
 		"currentItemRoundness": "round",
 		"gridSize": 20,
