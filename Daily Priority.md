@@ -20,6 +20,7 @@ kanban-plugin: board
 - [ ] Clean up Todo in vault
 - [ ] Switch to magnesium/zinc two times a day (@2025-02-03)
 - [ ] Get probiotics and prebiotics (@2025-03-01)
+- [ ] Clean up Vault in General
 
 
 ## Cap One Stuff
