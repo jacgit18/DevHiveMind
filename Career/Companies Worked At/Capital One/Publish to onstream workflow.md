@@ -51,4 +51,6 @@ how is DMN,s accessed by AWS Step function
 DMN Domain Model & Notation
 
 
-Agent or customer enters empath or ease(maybe cap one mobile app) starts process with an event through the exchange
+Agent or customer enters empath or ease(maybe cap one mobile app) platforms which starts a process with an event through the exchange which is a internal digital asset manger and marketplace were capital one employees can publish, manage, find and use data. the exchange contains API's, streams, datasets and features that can be discovered and consumed by user. features can combine multiple datasets to produce calculated or relative datasets.
+
+when you trigger event through the exchange you hit an API kicking off BFF Lambda. the customer account is locked then the enrollment synchronous workflow is started
