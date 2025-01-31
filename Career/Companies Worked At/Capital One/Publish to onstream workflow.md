@@ -61,7 +61,7 @@ when you trigger event through the exchange you hit an API kicking off BFF Lambd
 
 UCP unified customer profile  provides data on enrollment contracts
 
-
+AMA Analytical Data Management 
 
 
 There is a Data Lambda if event's `lifecycle_stage = READ ENROLLMENT`
