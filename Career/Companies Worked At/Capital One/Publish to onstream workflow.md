@@ -49,3 +49,6 @@ ByteMorphers team creates DMN,s using Rules lab that ends up getting used by AWS
 how is DMN,s accessed by AWS Step function
 
 DMN Domain Model & Notation
+
+
+Agent or customer enters empath or ease(maybe cap one mobile app) starts process with an event through the exchange
