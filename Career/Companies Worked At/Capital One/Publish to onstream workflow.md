@@ -64,7 +64,7 @@ UCP unified customer profile  provides data on enrollment contracts
 
 
 
-
+There is a Data Lambda if event `lifecycle_stage = READ ENROLLMENT`
 
 
 
