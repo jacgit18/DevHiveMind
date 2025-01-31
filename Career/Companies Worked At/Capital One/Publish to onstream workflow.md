@@ -21,8 +21,11 @@ KT Knowledge Transfer
   
 5 bpa workflows
 
+Business process automation
 
+MVP Min Viable Product 
 
+LLD Low Level Design
 
 
 Lambda subscribe to things like sns when it comes to asynchronous process but there are more options now Like sqs  
