@@ -45,3 +45,7 @@ They need a way to automate to publish data to onestream
 
 
 ByteMorphers team creates DMN,s using Rules lab that ends up getting used by AWS step functions
+
+how is DMN,s accessed by AWS Step function
+
+DMN Domain Model & Notation
