@@ -64,8 +64,8 @@ UCP unified customer profile  provides data on enrollment contracts
 
 
 
-There is a Data Lambda if event `lifecycle_stage = READ ENROLLMENT`
-
+There is a Data Lambda if event's `lifecycle_stage = READ ENROLLMENT`
+an error gets triggered 
 
 
 Using **AWS AppSync** as an intermediary between a **database** and an **exchange** (a data platform with APIs, streams, datasets, and features) allows for **real-time bidirectional data flow**, efficient API management, and seamless data synchronization.
