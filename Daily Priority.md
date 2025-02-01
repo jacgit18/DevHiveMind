@@ -10,6 +10,7 @@ kanban-plugin: board
 - [ ] Acknowledge that you don't know. Commit to finding the answer and follow up.
 - [ ] Okay so off the top of my head I can't tell you with 100% certainty but let me look into that and I'll come back to you with an answer but while that happens did you have any other questions this moment
 - [ ] ![[Business decision#^68639f]]
+- [ ] <iframe src="https://www.instagram.com/reel/DENfHhYubPw/embed" width="250" height="500" frameborder="0" allowfullscreen></iframe>
 
 
 ## #todo/Work
@@ -185,6 +186,6 @@ kanban-plugin: board
 
 %% kanban:settings
 ```
-{"kanban-plugin":"board","list-collapse":[false,false,false,false,false,false,false,false],"show-checkboxes":true,"link-date-to-daily-note":true}
+{"kanban-plugin":"board","list-collapse":[false,false,false,false,false,false,false,false],"show-checkboxes":false,"link-date-to-daily-note":true}
 ```
 %%
