@@ -90,6 +90,9 @@ marketing, raise prices, sell related things after you buy the business
 
 ![](https://www.youtube.com/watch?v=jyCJeglqCe4)
 
+![Money Expert: The GREATEST Wealth Transfer Just Started (Don’t Miss Out!) \| Chris Camillo - YouTube](https://www.youtube.com/watch?v=T1AGppA5s38)
+
+
 #todo/High/refineThought/
 - [ ] maybe Buy or invest basic business like a laundromat instead of a startup
 - [ ] there are three things you can have when going buy a business Capital,  Expertise, or Time
