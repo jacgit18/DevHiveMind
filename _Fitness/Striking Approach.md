@@ -24,6 +24,8 @@ dg-publish:
 
 Use the **UFC game** to simulate and experiment with techniques and strategies practicing breathing technique and stance change.
 
+MMA has shorter combos because of takedowns. When kicking use high knee elevation before flipping out the leg to kick better.
+
 ## **Striking Principles**
 > [!abstract] End Goal
 > The goal is to penetrate an opponent's center-line defense, create angles, and disrupt their balance to enhance striking effectiveness.
