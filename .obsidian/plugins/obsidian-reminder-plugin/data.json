@@ -3,11 +3,6 @@
   "reminders": {
     "Daily Priority.md": [
       {
-        "title": "Switch to magnesium/zinc two times a day",
-        "time": "2025-02-03",
-        "rowNumber": 21
-      },
-      {
         "title": "Look at this [[Codebase Interview Question]]",
         "time": "2025-02-07",
         "rowNumber": 17
