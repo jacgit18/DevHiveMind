@@ -136,3 +136,8 @@ IAM execution role
 - IAM policy includes actions you can take with the resource
 - Trust policy that allows Lambda to _AssumeRole_
 - Creator must have permission for _iam:PassRole_
+
+
+
+AWS SAM
+an application framework that simplifies creation and deployment of your serverless applications. it an extension of AWS Cloud Formation  
