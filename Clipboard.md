@@ -151,3 +151,15 @@ You can install the AWS SAM CLI locally to help test your serverless application
 It is important to analyze how long your function runs. When you analyze the duration, you can better determine any problems that might increase the invocation of the function beyond your expected length. Load testing your Lambda function is the best way to determine the optimum timeout value.
 
 Your Lambda function is billed based on runtime in 1-ms increments. Avoiding lengthy timeouts for functions can prevent you from being billed while a function is simply waiting to time out.
+
+
+## **Testing concurrency**
+
+The most important factor for your concurrency, memory, and timeout settings is to verify application testing against real-world conditions. To do this, follow these suggestions:
+
+- Run performance tests that simulate peak levels of invocations.
+    - View the metrics for the amount of throttling that occurs during performance peaks.
+- Determine whether the existing backend can handle the speed of requests sent to it.
+    - Don't test in isolation. If you’re connecting to Amazon Relational Database Service (Amazon RDS), ensure that you test that the concurrency levels for your function can be processed by the database.
+- Does your error handling work as expected? 
+    - Tests should include pushing the application beyond the concurrency settings to verify correct error handling.
