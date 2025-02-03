@@ -163,3 +163,15 @@ The most important factor for your concurrency, memory, and timeout settings is 
     - Don't test in isolation. If you’re connecting to Amazon Relational Database Service (Amazon RDS), ensure that you test that the concurrency levels for your function can be processed by the database.
 - Does your error handling work as expected? 
     - Tests should include pushing the application beyond the concurrency settings to verify correct error handling.
+
+
+
+**The AWS CloudFormation template is considered the _blueprint_ for the Lambda function.**
+
+The CloudFormation template specifies every detail of the Lambda function and the environment required for the Lambda function to run. CloudFormation provides a common language and format that all parts of AWS can read and understand.
+
+
+
+**CloudFormation is infrastructure as code.**
+
+The entire infrastructure needed for your Lambda function is written to a text file. This file (template) then deploys your desired stack. A stack is a collection of AWS resources that you can manage as a single unit. The template becomes the single source of truth for deploying identical stacks into any AWS account. Each time the Lambda function is invoked, it runs by using information provided in the CloudFormation template.
