@@ -141,3 +141,5 @@ IAM execution role
 
 AWS SAM
 an application framework that simplifies creation and deployment of your serverless applications. it an extension of AWS Cloud Formation  
+
+You can install the AWS SAM CLI locally to help test your serverless applications, validate your AWS SAM templates, and streamline your deployments.
