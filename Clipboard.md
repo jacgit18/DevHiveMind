@@ -119,3 +119,20 @@ Lambda reads events from the following services:
 |**Event Source Mapping**|No (Auto-Triggered)|Depends on source|SQS, Kinesis, DynamoDB|
 
 Would you like any specific details on configuration or best practices?
+
+
+Resource Based policies
+Lambda resource-based (function) policy
+
+- Associated with a "push" event source such as Amazon API Gateway
+- Created when you add a trigger to a Lambda function
+- Allows the event source to take the _lambda:InvokeFunction_ action
+
+
+
+IAM execution role
+
+- Role selected or created when you create a Lambda function
+- IAM policy includes actions you can take with the resource
+- Trust policy that allows Lambda to _AssumeRole_
+- Creator must have permission for _iam:PassRole_
