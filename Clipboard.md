@@ -175,3 +175,13 @@ The CloudFormation template specifies every detail of the Lambda function and th
 **CloudFormation is infrastructure as code.**
 
 The entire infrastructure needed for your Lambda function is written to a text file. This file (template) then deploys your desired stack. A stack is a collection of AWS resources that you can manage as a single unit. The template becomes the single source of truth for deploying identical stacks into any AWS account. Each time the Lambda function is invoked, it runs by using information provided in the CloudFormation template.
+
+
+
+AWS X-Ray records how the Lambda functions are running.  
+
+You can use X-Ray for:
+
+- Tuning performance
+- Identifying the call flow of Lambda functions and API calls
+- Tracing path and timing of an invocation to locate bottlenecks and failures
