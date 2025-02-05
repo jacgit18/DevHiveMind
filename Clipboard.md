@@ -185,3 +185,22 @@ You can use X-Ray for:
 - Tuning performance
 - Identifying the call flow of Lambda functions and API calls
 - Tracing path and timing of an invocation to locate bottlenecks and failures
+
+
+## Three patterns for communicating status updates
+
+In an architecture in the previous lesson, the client service submitted an order, and the SQS queue gave a response to API Gateway with the message ID. Then Lambda pulled the message from the queue and handed it off to Step Functions to complete the order process and update the job status as it moved through the workflow.
+
+The next thing you need to consider is how to provide the status to the calling client. The method you choose depends on your use case. The next set of videos looks at three potential approaches:
+
+- bullet
+    
+    Client polling
+    
+- bullet
+    
+    Webhooks with Amazon Simple Notification Service (Amazon SNS)
+    
+- bullet
+    
+    WebSockets with AWS AppSync
