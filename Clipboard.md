@@ -193,14 +193,14 @@ In an architecture in the previous lesson, the client service submitted an order
 
 The next thing you need to consider is how to provide the status to the calling client. The method you choose depends on your use case. The next set of videos looks at three potential approaches:
 
-- bullet
+- Client polling
     
-    Client polling
+- Webhooks with Amazon Simple Notification Service (Amazon SNS)
     
-- bullet
-    
-    Webhooks with Amazon Simple Notification Service (Amazon SNS)
-    
-- bullet
-    
-    WebSockets with AWS AppSync
+- WebSockets with AWS AppSync
+
+
+Another serverless data processing pattern you can use is messaging, instead of streaming. Amazon Simple Notification Service (Amazon SNS) uses a publication/subscription, or pub/sub, model, which means that a single published message can have multiple consumers. To learn more, choose the play button.
+
+
+list most common aws service patterns in terms of 
