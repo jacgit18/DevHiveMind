@@ -50,7 +50,30 @@ Distinct API endpoints can point to old compared to new components and safe depl
 New feature branches can be _serverless first_, and legacy components can be decommissioned as they are replaced. This pattern represents a more systematic approach to adopting serverless, allowing you to move to critical improvements where you see benefit quickly but with less risk and upheaval than the leapfrog pattern.
 
 
-
+-   
+    bullet
+    
+    What does this application do and how are its components organized?
+    
+- bullet
+    
+    How can you break your data needs up based on the command query responsibility segregation (CQRS) pattern?
+    
+- bullet
+    
+    How does the application scale and what components drive the capacity you need?
+    
+- bullet
+    
+    Do you have schedule-based tasks?
+    
+- bullet
+    
+    Do you have workers listening to a queue?
+    
+- bullet
+    
+    Where can you refactor or enhance functionality without impacting the current implementation?
 
 
 For Aws lambda you need to define access permission and triggering events then the code dependencies and configuration which includes things like execution parameters memory timeout and concurrency
@@ -240,6 +263,16 @@ Another serverless data processing pattern you can use is messaging, instead of 
 
 
 To architect serverless applications, you need to understand migration strategies, the types of compute and data stores you can select, and different application architecture patterns you can use.
+
+
+### Considerations for choosing Fargate or Lambda for serverless compute
+
+When selecting to use either Fargate or Lambda for your serverless compute, consider the differences between the two and the needs of your workload.
+
+|   |   |
+|---|---|
+|AWS Fargate|AWS Lambda|
+|- Lift and shift with minimal rework<br>- Longer-running processes or larger deployment packages<br>- Predictable, consistent workload<br>- Need more than 3 GB of memory<br>- Application with a non-HTTP/S listener<br>- Run side cars with your service (agents only supported as side cars)<br>- Container image portability with Docker runtime|- Tasks that run less than 15 minutes<br>- Spiky, unpredictable workloads<br>- Unknown demand<br>- Lighter-weight, application-focused stateless computing<br>- Simplified IT automation<br>- Real-time data processing<br>- Reduced complexity for development and operations|
 
 
 list most common aws service patterns in terms of 
