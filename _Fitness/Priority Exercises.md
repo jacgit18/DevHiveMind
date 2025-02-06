@@ -129,7 +129,7 @@ series:
 | Upper | Shoulder Press                                          | Wide     | CM    | Low      | *50*      | 3    | 5    | 0     | *50*     |
 | Upper | [[CableFloorFly.gif \|Cable Floor Fly]]                 | N/A      | PG    | Low      | ***160*** | 3    | 5    | 0     | ***80*** |
 | Core  | [[Core#^b41212\| Leg Cable Reverse Crunch]]             | N/A      | RC    | Low      | ***90***  | 3    | 5    | 0     | ***45*** |
-| Upper | Assisted Bench Press                                    | N/A      | CM    |          |           |      |      |       |          |
+| Upper | Assisted Bench Press                                    | N/A      | CM    | Med      | *50*      | 3    | 5    | 0     | *50*     |
 ^machine
 
 
@@ -146,7 +146,7 @@ series:
 | [[Upper#^e81d31 \|PullUp Neutral]]            | Upper | PG    | Bodyweight | *25*     | High     | 3    | 5    |
 | [[Upper#^9def13\|Bottoms Up]]                 | Upper | PG    | Kettlebell | *17.6*   | High     | 3    | 10   |
 | [[Full Body#^7ecf05 \|Lunge Twist Halo]]      | Upper | RC    | Kettlebell | *17.6*   | High     | 8    | 2    |
-| [[Full Body#^765b0b \|Zercher Squats]]        | Lower | CM    | Barbell    | *20*     | Med      | 3    | 10   |
+| [[Full Body#^765b0b \|Zercher Squats]]        | Lower | CM    | Barbell    | *50*     | Med      | 3    | 10   |
 | Single Arm Clean Press                        | Upper | EP    | Kettlebell | *17.6*   | Med      | 3    | 10   |
 | [[Full Body#^bb1837\|Kettlebell Swing]]       | Full  | PG    | Kettlebell | *17.6*   | Med      | 3    | 10   |
 | [[Full Body#^8b48af \|Kettlebell Snatch]]     | Full  | EP    | Kettlebell | *17.6*   | Med      | 3    | 10   |

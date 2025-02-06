@@ -11,6 +11,8 @@ kanban-plugin: board
 - [ ] Okay so off the top of my head I can't tell you with 100% certainty but let me look into that and I'll come back to you with an answer but while that happens did you have any other questions this moment
 - [ ] ![[Business decision#^68639f]]
 - [ ] <iframe src="https://www.instagram.com/reel/DENfHhYubPw/embed" width="250" height="500" frameborder="0" allowfullscreen></iframe>
+- [ ] Building breath of knowledge is beneficial for you and employer because it opens you up for more opportunities
+- [ ] Building depth of knowledge and specializing is only beneficial for your employer because it can limit opportunities because your specific skillet
 
 
 ## #todo/Work

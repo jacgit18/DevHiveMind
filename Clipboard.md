@@ -17,7 +17,17 @@ console.log("User input:", userInput);
 	"filepath": "_NoteAssets/Images To Move/Ink/Writing/2025.2.2 - 8.42am.writing"
 }
 ```
+## Migration patterns  
+While designing your application, it's critical for you to choose services and patterns that suit your workloads based on characteristics such as expected throughput, service limits, and cost. This helps you adopt serverless architectures in a way that is customized to what your solutions need to do and to the skills and organizational models you are working within.
 
+
+As the name suggests, with the leapfrog pattern, you bypass interim steps and go straight from an on-premises legacy architecture to a serverless cloud architecture.
+
+
+
+
+
+For Aws lambda you need to define access permission and triggering events then the code dependencies and configuration which includes things like execution parameters memory timeout and concurrency
 
 
 AWS Lambda supports different **Invocation Models** for running functions, depending on how the function is triggered and how it handles responses. The three main invocation models are:
@@ -201,6 +211,9 @@ The next thing you need to consider is how to provide the status to the calling 
 
 
 Another serverless data processing pattern you can use is messaging, instead of streaming. Amazon Simple Notification Service (Amazon SNS) uses a publication/subscription, or pub/sub, model, which means that a single published message can have multiple consumers. To learn more, choose the play button.
+
+
+To architect serverless applications, you need to understand migration strategies, the types of compute and data stores you can select, and different application architecture patterns you can use.
 
 
 list most common aws service patterns in terms of 
