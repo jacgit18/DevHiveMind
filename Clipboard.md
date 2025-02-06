@@ -359,7 +359,37 @@ As we review scaling considerations for different AWS services in this lesson, c
 Throttling logic 
 
 Throttling the number of requests that can hit the endpoint might help reduce the number of failures on the backend. You might also need to introduce additional error handling on the frontend.
+### 
 
+Best practices for testing load
+
+- bullet
+    
+    Use authentic data and access patterns.
+    
+- bullet
+    
+    Address issues at each integration point end to end, and iterate.
+    
+- bullet
+    
+    Remember the business drivers, and make trade-offs that support them.
+    
+- bullet
+    
+    Know your "error budget," and validate your failure management mechanisms.
+    
+
+**The best tip for serverless load testing is that no tip or best practice is going to apply 100 percent to all situations. You need to dive deep into the specifics of your workload. Test it and monitor it under conditions that are like production.**
+
+### 
+
+Testing tips
+
+- ****Watch service limits.**** Service limits are in place to protect customers from unauthorized use of services. Limits that are not properly monitored might result in a degradation or throttling of service and additional cost. Many limits are soft limits. You can request limit increases.
+- ****Use all of the monitoring tools available to you while testing and when you go into production.**** Managed services have built-in logging and metrics that you can monitor and alarm on in Amazon CloudWatch.
+- ****Don’t try to mock services you can’t control.**** Perform your integration and load tests using the services in an AWS environment that will be the same as the production environment.
+- ****When using DynamoDB, make sure that you’ve set the capacity to handle the load that you are testing**.** Use on-demand mode or auto scaling to accommodate the performance testing cycle.
 
 #todo/prompts 
 - [ ] list most common aws service patterns in terms of 
