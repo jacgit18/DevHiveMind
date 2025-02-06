@@ -114,14 +114,14 @@ series:
 | Lower | Leg Press off Back Quads                                | Close    | CM    | High     | *540*     | 3    | 5    | 0     | **270**  |
 | Lower | Leg Press off Back G&H                                  | Heals    | CM    | High     | *270*     | 3    | 5    | 0     | **135**  |
 | Lower | Leg Press Seated                                        | UpClose  | CM    | High     | *110*     | 3    | 5    | 0     | **110**  |
-| Upper | Rear Delt Fly                                           | N/A      | CM    | High     | *45*      | 3    | 5    | 0     | *45*     |
+| Upper | Rear Delt Fly                                           | N/A      | CM    | High     | *50*      | 3    | 5    | 0     | *45*     |
 | Upper | [[Upper#^238b6e \|Chest Fly]]                           | N/A      | CM    | High     | *70*      | 3    | 5    | 4     | *70*     |
-| Lower | Adduction Inner Thigh                                   | Squeeze  | CM    | High     | *160*     | 3    | 5    | 0     | **160**  |
+| Lower | Adduction Inner Thigh                                   | Squeeze  | CM    | High     | *190*     | 3    | 5    | 0     | **160**  |
 | Upper | [[CableWolverine.gif\|Cable Wolverine]]                 | N/A      | PG    | High     | ***160*** | 3    | 5    | 0     | ***80*** |
 | Upper | [[CableBalloonAbduction.gif \|Cable Balloon Abduction]] | N/A      | PG    | High     | ***160*** | 3    | 5    | 0     | ***80*** |
 | Upper | Mid Row                                                 | N/A      | PG    | High     | *85*      | 3    | 5    | 0     | **42.5** |
 | Upper | [[Upper#^a7be5a \|Cable Woodchopper]]                   | N/A      | RC    | Med      | ***160*** | 3    | 5    | 0     | ***80*** |
-| Lower | Abduction Outer Thigh                                   | Spread   | CM    | Med      | *145*     | 3    | 5    | 7     | *145*    |
+| Lower | Abduction Outer Thigh                                   | Spread   | CM    | Med      | *160*     | 3    | 5    | 7     | *145*    |
 | Upper | Isolated Lateral Chest                                  | Wide     | CM    | Med      | *100*     | 3    | 5    | 0     | **50**   |
 | Upper | Low Row                                                 | N/A      | PG    | Med      | *85*      | 3    | 5    | 0     | *85*     |
 | Upper | Shoulder Press                                          | N/A      | CM    | Low      | *50*      | 3    | 5    | 0     | *50*     |
@@ -132,7 +132,7 @@ series:
 
 | Exercise                                      | Body  | Focus | Type       | W(lb/kg) | Priority | Sets | Reps |
 | --------------------------------------------- | ----- | ----- | ---------- | -------- | -------- | ---- | ---- |
-| [[Full Body#^569c1a \| Arnold Press]]         | Upper | CM    | Dumbbell   | *20*     | High     | 3    | 10   |
+| [[Full Body#^569c1a \| Arnold Press]]         | Upper | CM    | Dumbbell   | *20*     | High     | 3    | 5    |
 | [[Upper#^ef7d41\|Chest Fly]]                  | Upper | CM    | Dumbbell   | *20*     | High     | 3    | 10   |
 | [[Upper#^bcb0df \|Bench Press]]               | Upper | CM    | Barbell    | *20*     | High     | 3    | 5    |
 | [[Lower#^4e02bb \|Nordic Hamstring Curl]]     | Lower | CM    | Barbell    | *90*     | High     | 3    | 5    |
