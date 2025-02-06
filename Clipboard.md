@@ -282,7 +282,13 @@ With Lambda functions, there are two sides that define the necessary scope of pe
   
 IAM policy vs Trust policy
 
+Sam server-less application model
 
+
+Cloud 9 dev environment can practice dev in it as if you're doing it locally in vs code
+
+
+Sources of events in AWS can be storage related like S3 Amazon kinesis dynamodb then you can have endpoints services like AWS iot core AWS step functions AWS API Gateway Amazon Alexa then you have a repository related services like cloud formation cloud trail Cloud watch code commit and then other services like Crown events SNS sqs SES that can give out events and you can use those events to trigger something with a hook or something or Lambda
 
 
 list most common aws service patterns in terms of 
