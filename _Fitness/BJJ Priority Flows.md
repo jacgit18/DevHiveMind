@@ -42,7 +42,7 @@ Submissions can serve as both sweeps and opportunities to transition to other su
 
 > [!abstract] Bottom Up Approach 
 > ***"You train jiu-jitsu to fight on the ground and rise to your feet. In life, you learn to face battles starting from rock bottom, standing up stronger and taller each time." ***
-### Real-World Tips
+### Real-World Tips**
 > Slow down opponent in between transitions then pick and choose when to use you're speed
 - **Distance Management:** Always use your legs to create space and control or break posture.
 - **Safe Escapes:** Prioritize sweeps that lead to standing disengagements if in danger while using leverage-based techniques to neutralize stronger person.

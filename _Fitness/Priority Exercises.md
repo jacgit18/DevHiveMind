@@ -106,6 +106,7 @@ series:
 - [ ] Get reps to 10
 - [ ] Focus on intensity then scale to volume
 - [ ] Slow intensity exercise should spend at least 5 min per exercise
+- [ ] Other leg press variation lesser reps
 
 | Body  | Machine                                                 | Position | Focus | Priority | Weight    | Sets | Reps | Range | Per Side |
 | ----- | ------------------------------------------------------- | -------- | ----- | -------- | --------- | ---- | ---- | ----- | -------- |
@@ -124,9 +125,11 @@ series:
 | Lower | Abduction Outer Thigh                                   | Spread   | CM    | Med      | *160*     | 3    | 5    | 7     | *145*    |
 | Upper | Isolated Lateral Chest                                  | Wide     | CM    | Med      | *100*     | 3    | 5    | 0     | **50**   |
 | Upper | Low Row                                                 | N/A      | PG    | Med      | *85*      | 3    | 5    | 0     | *85*     |
-| Upper | Shoulder Press                                          | N/A      | CM    | Low      | *50*      | 3    | 5    | 0     | *50*     |
+| Upper | Shoulder Press                                          | Narrow   | CM    | Low      | *40*      | 3    | 5    | 0     | *40*     |
+| Upper | Shoulder Press                                          | Wide     | CM    | Low      | *50*      | 3    | 5    | 0     | *50*     |
 | Upper | [[CableFloorFly.gif \|Cable Floor Fly]]                 | N/A      | PG    | Low      | ***160*** | 3    | 5    | 0     | ***80*** |
 | Core  | [[Core#^b41212\| Leg Cable Reverse Crunch]]             | N/A      | RC    | Low      | ***90***  | 3    | 5    | 0     | ***45*** |
+| Upper | Assisted Bench Press                                    | N/A      | CM    |          |           |      |      |       |          |
 ^machine
 
 
@@ -154,6 +157,7 @@ series:
 | [[Full Body#^7d58d7 \|Turkish Get-Up]]        | Full  | RC    | Kettlebell | *17.6*   | Low      | 3    | 10   |
 | [[Lower#^3ae11e \|Cossack Squat]]             | Lower | CM    | Kettlebell | *17.6*   | Low      | 3    | 10   |
 | [[Lower#^c9d45f \|Kettlebell Step-Up]]        | Lower | EP    | Kettlebell | *17.6*   | Low      | 3    | 10   |
+| Rear Dealt Fly                                | Upper | CM    | Dumbbell   | *20*     | Low      | 3    | 10   |
 ^freeweight
 
 | Body  | Exercise                                    | Focus  | Type       | W(lb/kg) | Priority | Time      | Sets | AltType    | Alt W(lb/kg) |
