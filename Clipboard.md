@@ -327,9 +327,38 @@ This course doesn’t mention every possible pattern, but hopefully it illustrat
 
 
 
+## 
+
+**Scaling considerations  
+**
+
+There are lots of ways to connect managed services and serverless applications to create more complex serverless architectures.
+
+To successfully scale your serverless architecture, you need to know the capabilities and service limits of the services that you’re integrating. Also, select patterns that optimize your application for the scale you need to support. Key considerations include the following:
+
+- bullet
+    
+    Timeouts
+    
+- bullet
+    
+    Retry behaviors
+    
+- bullet
+    
+    Throughput
+    
+- bullet
+    
+    Payload size
+    
+
+As we review scaling considerations for different AWS services in this lesson, contemplate how each of these considerations will affect the scaling of the service.
 
 
+Throttling logic 
 
+Throttling the number of requests that can hit the endpoint might help reduce the number of failures on the backend. You might also need to introduce additional error handling on the frontend.
 
 
 #todo/prompts 
