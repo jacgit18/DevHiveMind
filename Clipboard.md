@@ -294,4 +294,43 @@ Cloud 9 dev environment can practice dev in it as if you're doing it locally in 
 Sources of events in AWS can be storage related like S3 Amazon kinesis dynamodb then you can have endpoints services like AWS iot core AWS step functions AWS API Gateway Amazon Alexa then you have a repository related services like cloud formation cloud trail Cloud watch code commit and then other services like Crown events SNS sqs SES that can give out events and you can use those events to trigger something with a hook or something or Lambda
 
 
-list most common aws service patterns in terms of 
+## **Best practices for serverless applications**
+
+By using the event-driven patterns found in this module, you can start creating your own serverless applications. You can use the [Serverless Patterns Collection](https://serverlessland.com/patterns) and the [AWS Serverless Application Repository](https://aws.amazon.com/serverless/serverlessrepo/) to help jump-start your work to reduce undifferentiated heavy lifting. Reference [The Amazon Builders' Library](https://aws.amazon.com/builders-library/) for articles written by senior technical leaders who have deep expertise in how Amazon and AWS design and build their own systems.
+
+This course doesn’t mention every possible pattern, but hopefully it illustrates the variety of ways you can apply event-driven approaches to your workloads. Here are key best practices:
+
+- bullet
+    
+    **Don’t reinvent the wheel.**  
+    Use managed services when possible and use the AWS Serverless Application Repository and Serverless Patterns Collection.
+    
+- bullet
+    
+    **Don’t just port your code.**   
+    You can easily copy code from other applications and run it in Lambda. But if you don’t apply event-driven thinking, you’re going to miss out on some of the benefits. It’s OK to start here, but revisit and iterate.
+    
+- bullet
+    
+    **Stay current.**  
+    Services and available serverless applications evolve quickly. There might be an easier way to do something.
+    
+- **Prefer idempotent, stateless functions.
+
+- **When you can’t, use Step Functions where you need stateful control (retries, long-running).
+    
+- **Keep events inside AWS services for as long as possible.**  
+    Let AWS services talk directly to each other whenever possible rather than writing code to do it.
+    
+- **Verify the limits of all of the services involved.**  
+    You can use AWS Service Quotas console to view and request increases for most AWS quotas.
+
+
+
+
+
+
+
+
+#todo/prompts 
+- [ ] list most common aws service patterns in terms of 
