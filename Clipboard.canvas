@@ -1,6 +1,7 @@
 {
 	"nodes":[
-		{"id":"0e5a5cb4872c4db4","x":-300,"y":-520,"width":634,"height":360,"type":"file","file":"_NoteAssets/Images To Move/ezgif.com-crop.gif"}
+		{"id":"0e5a5cb4872c4db4","x":-300,"y":-520,"width":634,"height":360,"type":"file","file":"_NoteAssets/Images To Move/ezgif.com-crop.gif"},
+		{"id":"3a72e3a742cadaf1","x":-269,"y":-120,"width":572,"height":479,"type":"text","text":"### \n\n**Three security best practices**\n\nThere are three important security best practices that will be discussed in more depth for the remainder of this lesson. These include the following:\n\n- •\n    \n    Follow the principle of least privilege.\n    \n- •\n    \n    Protect data at rest and in transit.\n    \n- •\n    \n    Audit your system for changes, unexpected access, unusual patterns, or errors.\n\n**Follow the principle of least privilege** \n\nAmazon API Gateway is the front door to your application, so it’s a good place to start preventing unauthorized access to your APIs."}
 	],
 	"edges":[]
 }
