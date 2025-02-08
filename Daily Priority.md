@@ -10,7 +10,7 @@ kanban-plugin: board
 - [ ] Acknowledge that you don't know. Commit to finding the answer and follow up.
 - [ ] Okay so off the top of my head I can't tell you with 100% certainty but let me look into that and I'll come back to you with an answer but while that happens did you have any other questions this moment
 - [ ] ![[Business decision#^68639f]]
-- [ ] <iframe src="https://www.instagram.com/reel/DENfHhYubPw/embed" width="250" height="500" frameborder="0" allowfullscreen></iframe>
+- [ ] <iframe src="https://www.instagram.com/p/DENfHhYubPw/" width="250" height="500" frameborder="0" allowfullscreen></iframe>
 - [ ] Building breath of knowledge is beneficial for you and employer because it opens you up for more opportunities
 - [ ] Building depth of knowledge and specializing is only beneficial for your employer because it can limit opportunities because your specific skillet
 
@@ -27,7 +27,7 @@ kanban-plugin: board
 - [ ] Create dummy resources with localstack
 - [ ] Be more of a contractor like tangy running a business acting as a consultant and providing your services instead of a employee
 - [ ] Skip more steps move faster and smarter in career going every incremental step by step is the old way of doing things need to adapt for the new environment
-- [ ] <iframe src="https://www.instagram.com/reel/DENfHhYubPw/embed" width="250" height="500" frameborder="0" allowfullscreen></iframe>
+- [ ] <iframe src="https://www.instagram.com/reel/DFZ6vlJSoqJ/?igsh=MWw2d3R6b3AycnM5aA%3D%3D" width="250" height="500" frameborder="0" allowfullscreen></iframe>
 
 
 ## Cap One Stuff
