@@ -27,6 +27,7 @@ kanban-plugin: board
 - [ ] Create dummy resources with localstack
 - [ ] Be more of a contractor like tangy running a business acting as a consultant and providing your services instead of a employee
 - [ ] Skip more steps move faster and smarter in career going every incremental step by step is the old way of doing things need to adapt for the new environment
+- [ ] <iframe src="https://www.instagram.com/reel/DENfHhYubPw/embed" width="250" height="500" frameborder="0" allowfullscreen></iframe>
 
 
 ## Cap One Stuff
