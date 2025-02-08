@@ -63,6 +63,7 @@ MMA has shorter combos because of takedowns. When kicking use high knee elevatio
     - Also keep [[Distance Management Tactics]] in mind.
 - **Punch Timing**: Aim to strike between heartbeats for precision and flow.
 - **Blocking  Kicks**: When checking kicks, lean slightly toward the side of the leg you're using to check in to the person kick almost like your leaning your leg on to there kicking leg. This allows the force of the kick to deflect off your shin and redirect your balance back toward your center, helping you recover quickly and stay stable. This subtle shift absorbs the impact more efficiently and positions you for a counterattack or continued defense.
+- **Clinch**: don’t stay stuck in one position for more than five seconds—keep adjusting to find a better angle. Control the space, focus on positioning, and don’t get too caught up fighting the arms because you can get caught and don't bend down can catch a knee.
 - Also when blocking kicks to legs the best scenario to aim for is making them kick you at the the strongest part of your leg which is the area under the knee avoid and limit taking kicks to the weakest part which is the lower shin and you don't need to shift weight on back leg so much along with lifting check leg very high. 
 
 ### **3. Striking & Fainting**

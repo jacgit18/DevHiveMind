@@ -25,6 +25,8 @@ kanban-plugin: board
 - [ ] Get probiotics and prebiotics (@2025-03-01)
 - [ ] Clean up Vault in General
 - [ ] Create dummy resources with localstack
+- [ ] Be more of a contractor like tangy running a business acting as a consultant and providing your services instead of a employee
+- [ ] Skip more steps move faster and smarter in career going every incremental step by step is the old way of doing things need to adapt for the new environment
 
 
 ## Cap One Stuff
