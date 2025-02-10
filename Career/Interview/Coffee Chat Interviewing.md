@@ -10,7 +10,7 @@ Purpose: This documentation discusses the coffee chat.
 Status: Done
 Started: 
 EditDate: 2024-02-20
-Relates: [[Job Search Cycle]]
+Relates: 
 dg-publish:
 ---
 **Stop cold-DMing people for a “chat” or “coffee” on LinkedIn. Here’s what to do instead:**
