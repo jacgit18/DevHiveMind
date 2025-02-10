@@ -393,3 +393,23 @@ Testing tips
 
 #todo/prompts 
 - [ ] list most common aws service patterns in terms of 
+
+
+
+
+Alt jobs  
+  
+Triple A Roadside Assistance  
+  
+Visual interpreter for the blind  
+[https://aira.io/](https://aira.io/)  
+  
+  
+Study pool  [Studypool - Homework Help](https://www.studypool.com)
+  
+It help desk technician  
+  
+Medical transcription  
+  
+  
+Virtual receptionist

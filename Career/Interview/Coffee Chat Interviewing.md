@@ -10,9 +10,30 @@ Purpose: This documentation discusses the coffee chat.
 Status: Done
 Started: 
 EditDate: 2024-02-20
-Relates: 
+Relates: [[Job Search Cycle]]
 dg-publish:
 ---
+**Stop cold-DMing people for a “chat” or “coffee” on LinkedIn. Here’s what to do instead:**
+
+### **How to Reach Out the Right Way:**
+
+✅ **Do your research first.** Before messaging, understand their role—titles can mean different things across companies. Don’t just DM the first person with the right keywords in their profile.
+
+✅ **Be specific about why you’re reaching out.** A personalized, well-researched message is far more effective than a generic blast.
+
+✅ **Make it easy to respond.** Instead of asking for a meeting, ask if they’d be open to answering 2–3 quick questions via DM. This respects their time.
+
+✅ **Find a warm introduction if possible.** Even a loose connection boosts your chances of a reply.
+
+### **Better Outreach Example:**
+
+_"Hi [Name], I came across your work at [Company] and really liked [specific project/post/talk]. I’m particularly interested in [specific aspect of their role] and would love to hear your perspective. If you’re open to it, could I send you 3 short questions over DM? Thanks either way!"_
+
+This approach shows respect for their time, demonstrates genuine interest, and makes it easy for them to say yes.
+
+Quality outreach to 20 people beats a spray-and-pray approach to 200.
+
+
 1. Immerse yourself in information about the person, their company, and the industry or technology they're involved in.
 2. Avoid directly asking for a job; focus on understanding them, their role, and the company's significance.
 3. Let them do the talking; ask questions and learn about their experiences.
