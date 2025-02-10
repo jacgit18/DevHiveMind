@@ -60,6 +60,7 @@ MMA has shorter combos because of takedowns. When kicking use high knee elevatio
     - Use your backhand to catch and block punches.
     - Keep your backhand higher to protect your head and as your primary guard hand alternating between guarding with the one and both.
     - You can keep your lead hand lower for flexibility and speed.
+    - Use jab defensively.
     - Also keep [[Distance Management Tactics]] in mind.
 - **Punch Timing**: Aim to strike between heartbeats for precision and flow.
 - **Blocking  Kicks**: When checking kicks, lean slightly toward the side of the leg you're using to check in to the person kick almost like your leaning your leg on to there kicking leg. This allows the force of the kick to deflect off your shin and redirect your balance back toward your center, helping you recover quickly and stay stable. This subtle shift absorbs the impact more efficiently and positions you for a counterattack or continued defense.
