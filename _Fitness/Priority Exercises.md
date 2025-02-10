@@ -71,6 +71,7 @@ series:
 - 15% body fat 
 - **Weight:** 120 lbs
 - **WaterToDrink:** 80 oz
+- Watch food videos before or while eating to stimulate your appetite and help you eat more without feeling full too quickly. Also walk around while eating and limit water to eat more.
 #### Calories
 - **Maintain Current Weight:** ~2,100 calories/day
 - **Calorie Goal for Gaining Weight (fast approach):** ~3,600 calories/day
