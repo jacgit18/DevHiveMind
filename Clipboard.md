@@ -10,6 +10,18 @@ console.log("User input:", userInput);
 [Redis Demystified: A Simple Introduction for System Design 🧩 - DEV Community](https://dev.to/priya01/redis-demystified-a-simple-introduction-for-system-design-56mb)
 
 
+Create a ticket  
+  
+  
+Tag contractor and pete  
+  
+Create stories for work that doesn't have a ticket that you are doing  
+  
+  
+Local stock is a cloud service emulator that empowers developers to run AWS applications locally eliminating the need for a cloud connection by encapsulating these services within a single container local stock streamlined the testing and development process
+
+
+
 
 ```handwritten-ink
 {

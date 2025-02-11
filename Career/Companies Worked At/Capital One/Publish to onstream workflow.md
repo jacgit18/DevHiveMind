@@ -14,6 +14,14 @@ Peer Reviewed: 0
 dg-publish:
 ---
 
+A hook is a event that is configured to fire in the future. Hooks manage the schedule invocations of business processes by capturing identification information to trigger events at specific future times  
+  
+  
+Hooks are created when tasks are performed by business process automation when a decision is made to reevaluate the customer at a later time  
+  
+Hooks are deleted when tasks are performed by BPA in response to Broad exclusion where where we don't know when or if we will be able to engage with a customer in the future
+
+
 
 
 KT Knowledge Transfer  

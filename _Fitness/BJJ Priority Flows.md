@@ -23,6 +23,7 @@ dg-publish:
 
 #### Road to Third Strip
 #todo/BAU/MMA/Drill 
+- [ ] Prioritize protecting neck over framing
 - [ ] Work on [[Framing]] & Closed Guard
 - [ ] Focus on Guards against Bigger People
 	- [ ] [[BJJ Priority Flows#Priority Open Guard Variations|Open Guard Variations]]
