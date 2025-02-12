@@ -22,55 +22,142 @@ Understanding how the mechanics and momentum of one strike naturally transition 
 
 Below is a list of strike combinations that flow into each other seamlessly, with explanations of why they work.
 
+### Scenario 1 
+![[open-stance.jpeg]]
+#### Opposite Mirror Stance
+
+##### You’re Orthodox, Opponent is Southpaw
+
+**Focus:** Target their open side and control angles.
+
+1. **Jab to Cross**
+    - Jab to measure distance, then throw a powerful cross down the open centerline.
+    - Follow up by stepping outside their lead foot for a dominant angle.
+    
+2. **Rear Round Kick to the Body**
+    - Target their exposed right side (ribs or liver). Use the kick to slow them down and create openings.
+    
+3. **Lead Hook to Rear Low Kick**
+    - Use the lead hook to distract and target the inside of their lead leg with the rear low kick.
+
+4. **Counter Cross or Overhand**
+    - When they jab, slip outside and fire your rear cross or overhand to counter.
+
+
+
+**Jab to Front Round Kick**  
+
+**Jab to Rear Round Kick**  
+
+**Jab to Rear Teep Kick**  
+
+**Jab to Lead Teep Kick**  
+
+ **Jab to Elbow**  
+
+**Cross to Lead Round Kick**  
+
+**Lead Hook to Rear Round Kick**  
+
+**Rear Round Kick to Cross**  
+
+**Rear Round Kick to Cross**  
+
+**Lead Front Kick to Jab**  
+
+**Lead Front Kick to Lead Hook**  
+
+**Rear Round Kick to Lead Round Kick** 
+
+**Lead Front Kick to Rear Round Kick**  
+
+**Cross to Spinning Back Kick**  
+
+**Front Teep to Switch Kick**  
+
+**Cross to Stance Switch Rear Side Kick** 
+
+**Stance Switch Rear Side Kick to Jab**
+
+**Lead Hook to Rear Elbow**  
+
+##### You’re Southpaw, Opponent is Orthodox 
+
+**Focus:** Use your open side advantage to dominate exchanges.
+
+1. **Cross to Lead Hook**
+    - Fire your left cross down the open line and follow with a lead hook as you step outside their lead foot.
+    
+2. **Rear Round Kick to the Body**
+    - Aim for their exposed right ribs or liver. If they drop their hand, transition to a high kick.
+    
+3. **Jab to Rear Cross**
+    - Use your jab to disrupt their rhythm, then fire a rear cross to capitalize on the opening.
+    
+4. **Counter Rear Cross**
+    - When they jab, slip to your outside and fire your rear cross to exploit their open centerline.
+
 
 
 ---
 
-## Kick-to-Kick Combinations
+### Scenario 2
+![[gettyimages-1332961304-612x612.jpg]]
+#### Same Side Stance
+##### Orthodox vs Orthodox 
 
-2. **Rear Round Kick → Lead Round Kick**  
-   - The momentum of retracting the rear round kick shifts your weight onto your rear foot, priming your lead leg for a follow-up round kick.
+**Focus:** Battle of lead hands and capitalize on openings in their guard.
 
-3. **Lead Front Kick → Rear Round Kick**  
-   - The retraction of the lead front kick shifts your weight to your rear leg, loading the rear round kick.
+1. **Double Jab to Rear Cross**
+    - Use a double jab to break their rhythm and follow with a rear cross to split their guard.
+    
+2. **Rear Low Kick to Lead Hook**
+    - Chop the outside of their lead leg with a rear low kick, then follow with a lead hook upstairs.
+    
+3. **Rear Round Kick to the Head**
+    - Set this up with a jab or feint, then fire the kick over their guard to catch them off guard.
 
-4. **Rear Teep → Switch Kick**  
-   - The retraction of the rear teep shifts your weight to your lead leg, making it easy to execute a switch kick with your rear leg.
+4. **Pull Counter with Rear Cross**
+    - Draw out their jab, lean back, and fire a rear cross straight down the pipe.
 
----
 
-## Punch-to-Elbow or Kick Combinations
+##### Southpaw vs Southpaw 
 
-5. **Jab → Lead Elbow**  
-   - After a jab, stepping in with your lead hand can easily transition into a lead elbow strike.
+**Focus:** Outmaneuver their lead hand and exploit rear-side openings.
 
-6. **Cross → Spinning Back Kick**  
-   - The rotation of the cross can set you up to spin into a rear spinning back kick by continuing the momentum.
+5. **Double Jab to Rear Cross**
+    - Use the jab to disrupt their timing, then follow with a left cross to split their guard.
+    
+6. **Lead Hook to Rear Low Kick**
+    - Target the outside of their lead leg with your rear low kick after distracting them with the lead hook.
+    
+7. **Rear Teep Kick to the Body**
+    - Push them back and keep them off-balance, disrupting their attacks.
+    
+8. **Slip Counter with Lead Hook**
+    - Slip their jab to the outside and fire a lead hook to exploit openings in their guard.
 
-7. **Lead Hook → Rear Elbow**  
-   - The hip rotation from the lead hook can bring your rear elbow forward for a fluid follow-up strike.
 
----
+### Scenario 3
 
-## Key Concepts for Fluidity
+#### Multi Stance
 
-- **Weight Transfer:**  
-  Use the natural weight shift from one strike to load the next.  
+##### Opposite Mirror or Same side Stance Orientation
+**Lead Hook to Rear Uppercut**  
+**Lead Hook to Jab**  
 
-- **Hip Rotation:**  
-  Rotation generates power, and the movement from one strike often primes the next.
 
-- **Retracting Efficiently:**  
-  Always bring your body back to balance after a strike to prepare for the next move. Avoid stiffness or overexertion.
 
-- **Timing and Rhythm:**  
-  Practice combinations slowly at first to build muscle memory and ensure smooth transitions.
 
----
+##### Opposite Mirror Orientation
+Anything mirror coming from the rear hand is tricky because limited angle and lean towards the power side of opponent
+###### You’re Orthodox, Opponent is Southpaw
+**Rear Uppercut to Lead Hook**  
 
-## Final Tip
 
-Experiment with these combinations on a heavy bag or pads to feel how your body naturally flows between strikes. Stay relaxed, focus on using your entire body (hips, shoulders, and feet), and aim for seamless transitions.  
+###### You’re Southpaw, Opponent is Orthodox
+**Rear Uppercut to Lead Hook**  
+
 
 ### Focus: Tight vs. Wide Punch Mechanics (Hooks and Uppercuts)
 
@@ -87,11 +174,11 @@ Experiment with these combinations on a heavy bag or pads to feel how your body 
     - Allows for faster follow-up punches and smoother combos.
 
 #### Drill Ideas:
-8. **Transition Combos:**
+9. **Transition Combos:**
     - Throw an uppercut, then a tight hook with minimal shoulder rotation for speed.
     - Reverse it: Start with a wide, powerful hook (full shoulder turn) and follow with a compact uppercut.
 
-9. **Close-Range Adjustments:**
+10. **Close-Range Adjustments:**
     - Practice chaining wide and tight punches to adapt to different ranges and angles.
     - Use wide punches to create openings and tight punches to exploit them quickly.
 
