@@ -107,4 +107,3 @@ Here are four scenarios with shot selection strategies tailored to the stances:
 - **Feints**: Use feints to draw reactions and create openings.
 - **Angles**: Angling off after throwing strikes, especially crosses or hooks, ensures you stay out of their line of fire.
 
-Would you like footwork drills or defensive counters to complement these scenarios?
