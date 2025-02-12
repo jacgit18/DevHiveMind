@@ -13,23 +13,16 @@ dg-publish:
 ---
 # The Key to Fluid Striking
 
-Understanding how the mechanics and momentum of one strike naturally transition into the next is essential for fluid striking. This involves **retraction**, **rotation**, and **weight shifting**. Below is a list of strike combinations that flow into each other seamlessly, with explanations of why they work.
+Understanding how the mechanics and momentum of one strike naturally transition into the next is essential for fluid striking. This involves **retraction**, **rotation**, and **weight shifting**. 
 
----
+#todo/BAU/MMA/Drill
+- [ ] Roll hook drill head hook both sides to body hook on roll down.  
+- [ ] Rear kick to front teep push whole body forward into a knee coming from the rear then and with a kick with front leg.  
+- [ ] Send back fist off of your kick getting cached and being thrown.
 
-## Punch-to-Punch Combinations
+Below is a list of strike combinations that flow into each other seamlessly, with explanations of why they work.
 
 
-
-2. **Lead Hook → Rear Uppercut**  
-   - The rotation of the lead hook brings your rear hip forward, perfectly positioning your rear uppercut.  
-   - It’s like unwinding the hook to throw the uppercut.
-
-3. **Rear Uppercut → Lead Hook**  
-   - The upward motion of the uppercut drives your lead side forward, making it easy to follow up with a lead hook.
-
-4. **Lead Hook → Jab**  
-   - After the hook, your lead hand is already chambered, making the jab a natural reset or follow-up to maintain pressure.
 
 ---
 

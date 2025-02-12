@@ -11,16 +11,11 @@ Relates:
 Peer Reviewed: 0
 dg-publish:
 ---
-Here are four scenarios with shot selection strategies tailored to the stances:
-
-#todo/BAU/noteMerge 
-- [ ] compare and distill and combine with [[Striking Fluidity]] other striking not make it easy to remember
 
 
-#todo/BAU/MMA/Drill
-- [ ] Roll hook drill head hook both sides to body hook on roll down.  
-- [ ] Rear kick to front teep push whole body forward into a knee coming from the rear then and with a kick with front leg.  
-- [ ] Send back fist off of your kick getting cached and being thrown.
+
+
+
 
 ---
 
@@ -100,3 +95,22 @@ Here are four scenarios with shot selection strategies tailored to the stances:
     - Slip their jab to the outside and fire a lead hook to exploit openings in their guard.
 
 
+### Scenario 3
+
+#### Multi Stance
+
+##### Opposite Mirror or Same side Stance Orientation
+**Lead Hook to Rear Uppercut**  
+**Lead Hook to Jab**  
+
+
+
+
+##### Opposite Mirror Orientation
+Anything mirror coming from the rear hand is tricky because limited angle and lean towards the power side of opponent
+###### You’re Orthodox, Opponent is Southpaw
+**Rear Uppercut to Lead Hook**  
+
+
+###### You’re Southpaw, Opponent is Orthodox
+**Rear Uppercut to Lead Hook**  
