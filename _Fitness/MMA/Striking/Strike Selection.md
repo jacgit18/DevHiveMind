@@ -66,50 +66,39 @@ Here are four scenarios with shot selection strategies tailored to the stances:
 
 ---
 
-### **Scenario 2: You’re Orthodox, Opponent is Orthodox (Same Side Stance)**
+### Scenario 2
+#### Same Side Stance
+##### Orthodox vs Orthodox 
 
 **Focus:** Battle of lead hands and capitalize on openings in their guard.
 
 1. **Double Jab to Rear Cross**
-    
     - Use a double jab to break their rhythm and follow with a rear cross to split their guard.
+    
 2. **Rear Low Kick to Lead Hook**
-    
     - Chop the outside of their lead leg with a rear low kick, then follow with a lead hook upstairs.
+    
 3. **Rear Round Kick to the Head**
-    
     - Set this up with a jab or feint, then fire the kick over their guard to catch them off guard.
-4. **Pull Counter with Rear Cross**
     
+4. **Pull Counter with Rear Cross**
     - Draw out their jab, lean back, and fire a rear cross straight down the pipe.
 
----
 
-
----
-
-### **Scenario 4: You’re Southpaw, Opponent is Southpaw (Same Stance)**
+##### Southpaw vs Southpaw 
 
 **Focus:** Outmaneuver their lead hand and exploit rear-side openings.
 
-1. **Double Jab to Rear Cross**
-    
+5. **Double Jab to Rear Cross**
     - Use the jab to disrupt their timing, then follow with a left cross to split their guard.
-2. **Lead Hook to Rear Low Kick**
     
+6. **Lead Hook to Rear Low Kick**
     - Target the outside of their lead leg with your rear low kick after distracting them with the lead hook.
-3. **Rear Teep Kick to the Body**
     
+7. **Rear Teep Kick to the Body**
     - Push them back and keep them off-balance, disrupting their attacks.
-4. **Slip Counter with Lead Hook**
     
+8. **Slip Counter with Lead Hook**
     - Slip their jab to the outside and fire a lead hook to exploit openings in their guard.
 
----
-
-### **Key Notes for All Scenarios:**
-
-- **Footwork**: Always try to step outside their lead foot in opposite stance scenarios to gain an angle advantage.
-- **Feints**: Use feints to draw reactions and create openings.
-- **Angles**: Angling off after throwing strikes, especially crosses or hooks, ensures you stay out of their line of fire.
 
