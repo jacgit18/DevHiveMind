@@ -14,11 +14,6 @@ dg-publish:
 
 
 
-
-
-
----
-
 ### Scenario 1 
 #### Opposite Mirror Stance
 
@@ -38,6 +33,14 @@ dg-publish:
 
 4. **Counter Cross or Overhand**
     - When they jab, slip outside and fire your rear cross or overhand to counter.
+
+
+
+**Jab to Front Round Kick**  
+
+**Jab to Rear Round Kick**  
+
+**Jab to Rear Front Kick (Teep)**  
 
 ##### You’re Southpaw, Opponent is Orthodox 
 

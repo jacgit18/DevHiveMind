@@ -28,8 +28,7 @@ Below is a list of strike combinations that flow into each other seamlessly, wit
 
 ## Punch-to-Kick Combinations
 
-5. **Jab → Rear Round Kick**  
-   - The jab shifts your weight to your lead leg, making it easier to pivot and swing your rear leg into a round kick.
+
 
 6. **Cross → Lead Round Kick**  
    - The cross shifts your weight to your rear leg, leaving your lead leg light and ready to swing into a lead round kick.  
