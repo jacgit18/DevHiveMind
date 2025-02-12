@@ -31,35 +31,33 @@ Here are four scenarios with shot selection strategies tailored to the stances:
 
 **Focus:** Target their open side and control angles.
 
-1. **Jab to Rear Cross**
-    
-    - Jab to measure distance, then throw a powerful rear cross down the open centerline.
+1. **Jab to Cross**
+    - Jab to measure distance, then throw a powerful cross down the open centerline.
     - Follow up by stepping outside their lead foot for a dominant angle.
+    
 2. **Rear Round Kick to the Body**
-    
     - Target their exposed right side (ribs or liver). Use the kick to slow them down and create openings.
+    
 3. **Lead Hook to Rear Low Kick**
-    
     - Use the lead hook to distract and target the inside of their lead leg with the rear low kick.
-4. **Counter Rear Cross or Overhand**
-    
+
+4. **Counter Cross or Overhand**
     - When they jab, slip outside and fire your rear cross or overhand to counter.
 
 ##### You’re Southpaw, Opponent is Orthodox 
 
 **Focus:** Use your open side advantage to dominate exchanges.
 
-1. **Rear Cross to Lead Hook**
-    
+1. **Cross to Lead Hook**
     - Fire your left cross down the open line and follow with a lead hook as you step outside their lead foot.
+    
 2. **Rear Round Kick to the Body**
-    
     - Aim for their exposed right ribs or liver. If they drop their hand, transition to a high kick.
+    
 3. **Jab to Rear Cross**
-    
     - Use your jab to disrupt their rhythm, then fire a rear cross to capitalize on the opening.
-4. **Counter Rear Cross**
     
+4. **Counter Rear Cross**
     - When they jab, slip to your outside and fire your rear cross to exploit their open centerline.
 
 
@@ -72,16 +70,16 @@ Here are four scenarios with shot selection strategies tailored to the stances:
 
 **Focus:** Battle of lead hands and capitalize on openings in their guard.
 
-1. **Double Jab to Rear Cross**
+5. **Double Jab to Rear Cross**
     - Use a double jab to break their rhythm and follow with a rear cross to split their guard.
     
-2. **Rear Low Kick to Lead Hook**
+6. **Rear Low Kick to Lead Hook**
     - Chop the outside of their lead leg with a rear low kick, then follow with a lead hook upstairs.
     
-3. **Rear Round Kick to the Head**
+7. **Rear Round Kick to the Head**
     - Set this up with a jab or feint, then fire the kick over their guard to catch them off guard.
-    
-4. **Pull Counter with Rear Cross**
+
+8. **Pull Counter with Rear Cross**
     - Draw out their jab, lean back, and fire a rear cross straight down the pipe.
 
 
@@ -89,16 +87,16 @@ Here are four scenarios with shot selection strategies tailored to the stances:
 
 **Focus:** Outmaneuver their lead hand and exploit rear-side openings.
 
-5. **Double Jab to Rear Cross**
+9. **Double Jab to Rear Cross**
     - Use the jab to disrupt their timing, then follow with a left cross to split their guard.
     
-6. **Lead Hook to Rear Low Kick**
+10. **Lead Hook to Rear Low Kick**
     - Target the outside of their lead leg with your rear low kick after distracting them with the lead hook.
     
-7. **Rear Teep Kick to the Body**
+11. **Rear Teep Kick to the Body**
     - Push them back and keep them off-balance, disrupting their attacks.
     
-8. **Slip Counter with Lead Hook**
+12. **Slip Counter with Lead Hook**
     - Slip their jab to the outside and fire a lead hook to exploit openings in their guard.
 
 
