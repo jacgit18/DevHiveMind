@@ -11,27 +11,46 @@ Relates:
 Peer Reviewed: 0
 dg-publish:
 ---
+Here’s a structured and easy-to-remember number system for strikes, expanding on what you already have while keeping consistency:
 
-Jab = 1
-Cross = 2
-Left Hook = 3
-Right Hook = 4
-Left Uppercut = 5 
-Right Uppercut = 6
+### **Punches:**
+1 = Jab  
+2 = Cross  
+3 = Lead Hook  
+4 = Rear Hook  
+5 = Lead Uppercut  
+6 = Rear Uppercut
 
+### **Elbows:**
+1.2 = Lead Elbow  
+2.2 = Rear Elbow  
+1.3 = Spinning Rear Elbow  
+2.3 = Spinning Lead Elbow  
+1.4 = Spinning Back Elbow (Rear)  
+2.4 = Spinning Back Elbow (Lead)
 
-Left Elbow = 1.2
-Right Elbow = 2.2
+### **Kicks:**
 
-Spinning Left Elbow = 1.3
-Spinning Right Elbow = 2.3
+**Lead Kicks:**  
+7 = Lead Roundhouse  
+8 = Lead Side Kick  
+9 = Lead Teep
 
-Spinning back Left = 1.4
-Spinning back Right = 2.4
+**Switch Lead Kicks (stance switch before kicking):**  
+7.1 = Lead Switch Roundhouse  
+8.1 = Lead Switch Side Kick  
+9.1 = Lead Switch Teep
 
-Front Round House 
-Front Side kick
-Front Teep
+**Rear Kicks:**  
+7.2 = Rear Roundhouse  
+8.2 = Rear Side Kick  
+9.2 = Rear Teep
+
+**Switch Rear Kicks (stance switch before kicking):**
+7.3 = Rear Switch Roundhouse  
+8.3 = Rear Switch Side Kick  
+9.3 = Rear Switch Teep
+
 ### Scenario 1 
 #### Opposite Mirror Stance
 
