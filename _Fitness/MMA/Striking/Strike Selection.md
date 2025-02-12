@@ -42,7 +42,14 @@ dg-publish:
 
 **Jab to Rear Teep Kick**  
 
+**Jab to Lead Teep Kick**  
+
 **Cross to Lead Round Kick**  
+
+ **Lead Hook to Rear Round Kick**  
+
+
+**Cross to Stance Switch Rear Side Kick** 
 
 ##### You’re Southpaw, Opponent is Orthodox 
 

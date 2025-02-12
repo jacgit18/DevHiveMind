@@ -29,57 +29,46 @@ Below is a list of strike combinations that flow into each other seamlessly, wit
 ## Punch-to-Kick Combinations
 
 
-
-
-7. **Lead Hook → Rear Round Kick**  
-   - The rotation of the hook brings your rear hip forward, perfectly priming your body for a rear round kick.
-
-8. **Jab → Rear Front Kick (Teep)**  
-   - The jab keeps your opponent at bay and shifts your weight slightly forward, making it easy to bring your rear leg up for a front kick.
-
-9. **Cross → Rear Side Kick**  
-   - The rotation and weight transfer of the cross help align your rear hip and chamber your rear leg for a powerful side kick.
-
 ---
 
 ## Kick-to-Punch Combinations
 
-10. **Rear Round Kick → Cross**  
+3. **Rear Round Kick → Cross**  
    - After retracting your rear round kick, your weight naturally shifts back to your rear foot, loading your rear hand for a powerful cross.
 
-11. **Lead Front Kick → Jab**  
+4. **Lead Front Kick → Jab**  
    - When retracting your lead leg from a front kick, your weight shifts forward, making the jab a quick follow-up.
 
-12. **Rear Side Kick → Jab**  
+5. **Rear Side Kick → Jab**  
    - The retraction of the rear side kick brings your body into alignment for a quick jab to maintain distance or pressure.
 
-13. **Lead Round Kick → Lead Hook**  
+6. **Lead Round Kick → Lead Hook**  
    - After throwing a lead round kick, your lead leg re-chambers and plants, creating rotation and balance for a lead hook.
 
 ---
 
 ## Kick-to-Kick Combinations
 
-14. **Rear Round Kick → Lead Round Kick**  
+7. **Rear Round Kick → Lead Round Kick**  
    - The momentum of retracting the rear round kick shifts your weight onto your rear foot, priming your lead leg for a follow-up round kick.
 
-15. **Lead Front Kick → Rear Round Kick**  
+8. **Lead Front Kick → Rear Round Kick**  
    - The retraction of the lead front kick shifts your weight to your rear leg, loading the rear round kick.
 
-16. **Rear Teep → Switch Kick**  
+9. **Rear Teep → Switch Kick**  
    - The retraction of the rear teep shifts your weight to your lead leg, making it easy to execute a switch kick with your rear leg.
 
 ---
 
 ## Punch-to-Elbow or Kick Combinations
 
-17. **Jab → Lead Elbow**  
+10. **Jab → Lead Elbow**  
    - After a jab, stepping in with your lead hand can easily transition into a lead elbow strike.
 
-18. **Cross → Spinning Back Kick**  
+11. **Cross → Spinning Back Kick**  
    - The rotation of the cross can set you up to spin into a rear spinning back kick by continuing the momentum.
 
-19. **Lead Hook → Rear Elbow**  
+12. **Lead Hook → Rear Elbow**  
    - The hip rotation from the lead hook can bring your rear elbow forward for a fluid follow-up strike.
 
 ---
@@ -119,11 +108,11 @@ Experiment with these combinations on a heavy bag or pads to feel how your body 
     - Allows for faster follow-up punches and smoother combos.
 
 #### Drill Ideas:
-20. **Transition Combos:**
+13. **Transition Combos:**
     - Throw an uppercut, then a tight hook with minimal shoulder rotation for speed.
     - Reverse it: Start with a wide, powerful hook (full shoulder turn) and follow with a compact uppercut.
 
-21. **Close-Range Adjustments:**
+14. **Close-Range Adjustments:**
     - Practice chaining wide and tight punches to adapt to different ranges and angles.
     - Use wide punches to create openings and tight punches to exploit them quickly.
 
