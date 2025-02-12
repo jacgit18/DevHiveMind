@@ -24,7 +24,10 @@ Here are four scenarios with shot selection strategies tailored to the stances:
 
 ---
 
-### **Scenario 1: You’re Orthodox, Opponent is Southpaw (Opposite Stance)**
+### Scenario 1 
+#### Opposite Mirror Stance
+
+##### You’re Orthodox, Opponent is Southpaw
 
 **Focus:** Target their open side and control angles.
 
@@ -42,9 +45,28 @@ Here are four scenarios with shot selection strategies tailored to the stances:
     
     - When they jab, slip outside and fire your rear cross or overhand to counter.
 
+##### You’re Southpaw, Opponent is Orthodox 
+
+**Focus:** Use your open side advantage to dominate exchanges.
+
+1. **Rear Cross to Lead Hook**
+    
+    - Fire your left cross down the open line and follow with a lead hook as you step outside their lead foot.
+2. **Rear Round Kick to the Body**
+    
+    - Aim for their exposed right ribs or liver. If they drop their hand, transition to a high kick.
+3. **Jab to Rear Cross**
+    
+    - Use your jab to disrupt their rhythm, then fire a rear cross to capitalize on the opening.
+4. **Counter Rear Cross**
+    
+    - When they jab, slip to your outside and fire your rear cross to exploit their open centerline.
+
+
+
 ---
 
-### **Scenario 2: You’re Orthodox, Opponent is Orthodox (Same Stance)**
+### **Scenario 2: You’re Orthodox, Opponent is Orthodox (Same Side Stance)**
 
 **Focus:** Battle of lead hands and capitalize on openings in their guard.
 
@@ -63,22 +85,6 @@ Here are four scenarios with shot selection strategies tailored to the stances:
 
 ---
 
-### **Scenario 3: You’re Southpaw, Opponent is Orthodox (Opposite Stance)**
-
-**Focus:** Use your open side advantage to dominate exchanges.
-
-1. **Rear Cross to Lead Hook**
-    
-    - Fire your left cross down the open line and follow with a lead hook as you step outside their lead foot.
-2. **Rear Round Kick to the Body**
-    
-    - Aim for their exposed right ribs or liver. If they drop their hand, transition to a high kick.
-3. **Jab to Rear Cross**
-    
-    - Use your jab to disrupt their rhythm, then fire a rear cross to capitalize on the opening.
-4. **Counter Rear Cross**
-    
-    - When they jab, slip to your outside and fire your rear cross to exploit their open centerline.
 
 ---
 
