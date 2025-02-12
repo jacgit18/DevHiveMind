@@ -30,9 +30,6 @@ Below is a list of strike combinations that flow into each other seamlessly, wit
 
 
 
-6. **Cross → Lead Round Kick**  
-   - The cross shifts your weight to your rear leg, leaving your lead leg light and ready to swing into a lead round kick.  
-   - This combination works well for surprising opponents.
 
 7. **Lead Hook → Rear Round Kick**  
    - The rotation of the hook brings your rear hip forward, perfectly priming your body for a rear round kick.

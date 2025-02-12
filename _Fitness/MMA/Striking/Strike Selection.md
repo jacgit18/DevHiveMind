@@ -40,7 +40,9 @@ dg-publish:
 
 **Jab to Rear Round Kick**  
 
-**Jab to Rear Front Kick (Teep)**  
+**Jab to Rear Teep Kick**  
+
+**Cross to Lead Round Kick**  
 
 ##### You’re Southpaw, Opponent is Orthodox 
 
