@@ -23,13 +23,12 @@ Here’s a structured and easy-to-remember number system for strikes, expanding 
 6 = Rear Uppercut
 
 ### **Elbows:**
-1.2 = Lead Elbow  
+1.2 = Lead Elbow 
+1.3 = Spinning Lead Elbow  
+1.4 = Spinning Back Elbow (Lead)  
 2.2 = Rear Elbow  
-1.3 = Spinning Rear Elbow  
-2.3 = Spinning Lead Elbow  
-1.4 = Spinning Back Elbow (Rear)  
-2.4 = Spinning Back Elbow (Lead)
-
+2.3 = Spinning Rear Elbow  
+2.4 = Spinning Back Elbow (Rear)
 ### **Kicks:**
 **Lead Kicks:**  
 7 = Lead Roundhouse  
