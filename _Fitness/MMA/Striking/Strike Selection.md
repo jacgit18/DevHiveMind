@@ -12,8 +12,26 @@ Peer Reviewed: 0
 dg-publish:
 ---
 
+Jab = 1
+Cross = 2
+Left Hook = 3
+Right Hook = 4
+Left Uppercut = 5 
+Right Uppercut = 6
 
 
+Left Elbow = 1.2
+Right Elbow = 2.2
+
+Spinning Left Elbow = 1.3
+Spinning Right Elbow = 2.3
+
+Spinning back Left = 1.4
+Spinning back Right = 2.4
+
+Front Round House 
+Front Side kick
+Front Teep
 ### Scenario 1 
 #### Opposite Mirror Stance
 
@@ -46,8 +64,9 @@ dg-publish:
 
 **Cross to Lead Round Kick**  
 
- **Lead Hook to Rear Round Kick**  
+**Lead Hook to Rear Round Kick**  
 
+**Rear Round Kick to Cross**  
 
 **Cross to Stance Switch Rear Side Kick** 
 
