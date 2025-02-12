@@ -13,6 +13,7 @@ dg-publish:
 ---
 Here’s a structured and easy-to-remember number system for strikes, expanding on what you already have while keeping consistency:
 
+can target anything
 ### **Punches:**
 1 = Jab  
 2 = Cross  
@@ -87,7 +88,23 @@ Here’s a structured and easy-to-remember number system for strikes, expanding 
 
 **Rear Round Kick to Cross**  
 
+**Rear Round Kick to Cross**  
+
+**Lead Front Kick to Jab**  
+
+**Lead Front Kick to Lead Hook**  
+
+**Rear Round Kick to Lead Round Kick** 
+
+**Lead Front Kick to Rear Round Kick**  
+
+**Rear Teep to Switch Kick** 
+
+**Front Teep to Switch Kick**  
+
 **Cross to Stance Switch Rear Side Kick** 
+
+**Stance Switch Rear Side Kick to Jab**
 
 ##### You’re Southpaw, Opponent is Orthodox 
 
