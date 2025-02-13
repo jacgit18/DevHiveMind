@@ -51,7 +51,7 @@ Anything not listed might not have fit criteria in terms of open space striking 
 | **Switch Rear Kicks** | 7.3    | Rear Switch Roundhouse     |
 |                       | 8.3    | Rear Switch Side Kick      |
 |                       | 9.3    | Rear Switch Teep           |
-| **Spinning Kicks**    | 10     | Spinning Back Kick         |
+| **Spinning Shit**     | 10     | Spinning Back Kick         |
 
 
 
