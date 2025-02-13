@@ -9885,7 +9885,7 @@ class StatusBar {
 }
 
 // keep pluginVersion in sync with manifest.json
-const pluginVersion = "3.0.0";
+const pluginVersion = "3.0.1";
 // switch to local dev server for development
 const baseURL = "https://readwise.io";
 // define our initial settings
@@ -10170,7 +10170,6 @@ class ReadwisePlugin extends obsidian.Plugin {
                             console.error(`Error while processing entry: ${entry.filename}`);
                         }
                         // write the full document text file
-                        let isFullDocumentTextFileCreated = false;
                         if (data.full_document_text && data.full_document_text_path) {
                             const processedFullDocumentTextFileName = data.full_document_text_path.replace(/^Readwise/, this.settings.readwiseDir);
                             console.log("Writing full document text", processedFullDocumentTextFileName);
@@ -10181,7 +10180,6 @@ class ReadwisePlugin extends obsidian.Plugin {
                             if (!(yield this.fs.exists(processedFullDocumentTextFileName))) {
                                 // it's a new full document content file, just save it
                                 yield this.fs.write(processedFullDocumentTextFileName, data.full_document_text);
-                                isFullDocumentTextFileCreated = true;
                             }
                             else {
                                 // full document content file already exists — overwrite it if it wasn't edited locally
@@ -10203,13 +10201,7 @@ class ReadwisePlugin extends obsidian.Plugin {
                                 // if the file already exists we need to append content to existing one
                                 const existingContent = yield this.fs.read(processedFileName);
                                 const existingContentHash = Md5.hashStr(existingContent).toString();
-                                if (isFullDocumentTextFileCreated) {
-                                    // full document content has just been created but the highlights file exists
-                                    // this means someone just wanted to resync full document content file alone
-                                    // leave the existing content — otherwise we'd append all highlights once again!
-                                    contentToSave = existingContent;
-                                }
-                                else if (existingContentHash !== data.last_content_hash) {
+                                if (existingContentHash !== data.last_content_hash) {
                                     // content has been modified (it differs from the previously exported full document)
                                     contentToSave = existingContent.trimEnd() + "\n" + data.append_only_content;
                                 }

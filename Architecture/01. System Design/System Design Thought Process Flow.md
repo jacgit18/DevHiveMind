@@ -26,7 +26,7 @@ excalidraw-autoexport: svg
 ---
 
 ![[System design core concepts.gif]]
-For more info read 
+
 #todo/High/Dev  
 - [ ] [[System Design Interview An Insider’s Guide Volume 1.pdf |System Design Interview An Insider’s Guide Volume 1]]
 - [ ] Payment system [[System Design Interview An Insider’s Guide Volume 2.pdf#page=316|System Design Interview An Insider’s Guide Volume 2, page 316]]
@@ -160,7 +160,7 @@ If you expect system to process high traffic consider this [[High Traffic Archit
 
 When it comes to cloud services like AWS there are a broad range of services like [[Messaging systems]]like Messing queue to handle a line actions like video uploads from multiples users or process user interactions (e.g., likes, dislikes, views), and [[Caches]] which if you implement locally you can improve response time and also synchronize data with a CDN to improve content delivery performance. Data is usually sent to the user from the CDN's cache if it exists there else requested content is not available in the CDN's cache, then the CDN retrieves it from the original cache or origin server and caches it locally for future requests but you should keep caching policies in my mind.
 
-You can discuss the usage of [[Monitoring & Observability |monitoring/logging]] which can be used at different levels of your architecture for overall metrics, you can talk about up-time and down-time using [[Chaos Engineering]] in order to identify weakness in the overall system by injecting controlled failures and disruption into a system or access system capacity to reevaluate things bandwidth and other resources needs. You have things like `Amazon MQ`, `Amazon ElastiCache`, and `Amazon CloudWatch` which could be very beneficial because of community support and documentation available. Alternatively if you don't want cloud solutions because of cost you can use things like [[Apache Kafka]], `Redis` for caching, or something like `Prometheus`. You also have services for things like static [[File System Storage]] services like [[Cloud Storage#Amazon S3 |Amazon S3]] which can handle thing like data replication also can be used with [[Content Delivery Network |CDN]] services like `Amazon Cloudfront` which also supports Dynamic content or alternatives like `Cloudflare`, or `Fastly` improving traffic and fault tolerance. 
+You can discuss the usage of [[Monitoring & Observability |monitoring/logging]] topics like [[OpenTelemetry]] which can be used at different levels of your architecture for overall metrics, you can talk about up-time and down-time using [[Chaos Engineering]] in order to identify weakness in the overall system by injecting controlled failures and disruption into a system or access system capacity to reevaluate things bandwidth and other resources needs. You have things like `Amazon MQ`, `Amazon ElastiCache`, and `Amazon CloudWatch` which could be very beneficial because of community support and documentation available. Alternatively if you don't want cloud solutions because of cost you can use things like [[Apache Kafka]], `Redis` for caching, or something like `Prometheus`. You also have services for things like static [[File System Storage]] services like [[Cloud Storage#Amazon S3 |Amazon S3]] which can handle thing like data replication also can be used with [[Content Delivery Network |CDN]] services like `Amazon Cloudfront` which also supports Dynamic content or alternatives like `Cloudflare`, or `Fastly` improving traffic and fault tolerance. 
 
 When it comes to all these components you also want keep [[Data Flow]] in mind as well like all the different sources of data, the processing and transformation, storage, transportation and communication. Along with things like versioning, change management, and monitoring.  
 
@@ -75772,10 +75772,10 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 		"currentItemStartArrowhead": null,
 		"currentItemEndArrowhead": "arrow",
 		"currentItemArrowType": "round",
-		"scrollX": 2705.2918460705027,
-		"scrollY": 9107.825519705646,
+		"scrollX": 3964.889951447791,
+		"scrollY": 6152.576350268004,
 		"zoom": {
-			"value": 0.1
+			"value": 0.106987
 		},
 		"currentItemRoundness": "round",
 		"gridSize": 20,
