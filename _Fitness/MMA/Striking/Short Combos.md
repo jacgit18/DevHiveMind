@@ -21,22 +21,22 @@ Here are **short MMA-optimized striking combinations**, designed for **quick exe
 
 _(Emphasizing open angles and defensive exits after striking.)_
 
-1. **1 → 2 → 7.2**  
+-  **1 → 2 → 7.2**  
     _(Jab → Cross → Rear Round Kick)_
     
-    - Classic 1-2 followed by a **low or body round kick** to stay safe from takedowns.
-2. **9 → 2 → 7.2**  
+    
+- **9 → 2 → 7.2**  
     _(Lead Teep → Cross → Rear Round Kick)_
     
-    - Uses a teep to create space before launching a quick cross and leg kick.
-3. **1 → 2 → 10**  
+
+- **1 → 2 → 10**  
     _(Jab → Cross → Spinning Back Kick)_
     
-    - Fast setup into a spinning kick, **best used when opponent backs up.**
-4. **1 → 7.2 → 2**  
+
+- **1 → 7.2 → 2**  
     _(Jab → Rear Round Kick → Cross)_
     
-    - A **low kick disrupts balance**, allowing for a strong finishing cross.
+
 
 ---
 
@@ -44,22 +44,22 @@ _(Emphasizing open angles and defensive exits after striking.)_
 
 _(Focusing on linear attacks and short bursts of power.)_
 
-1. **1 → 9 → 2**  
+- **1 → 9 → 2**  
     _(Jab → Lead Front Kick → Cross)_
     
-    - **Front kick to the body** creates space before throwing the cross.
-2. **1 → 2 → 1.2**  
+
+- **1 → 2 → 1.2**  
     _(Jab → Cross → Lead Elbow)_
     
-    - **Great for closing distance** and landing short-range elbow strikes.
-3. **2 → 3 → 7.2**  
+
+- **2 → 3 → 7.2**  
     _(Cross → Lead Hook → Rear Round Kick)_
     
-    - Works well when the opponent tries to counter after the cross.
-4. **1 → 8 → 2**  
+
+- **1 → 8 → 2**  
     _(Jab → Lead Side Kick → Cross)_
     
-    - Side kick to disrupt movement before stepping in with a clean cross.
+
 
 ---
 
@@ -67,25 +67,24 @@ _(Focusing on linear attacks and short bursts of power.)_
 
 _(Quick setups that are effective regardless of stance differences.)_
 
-5. **3 → 2 → 7.2**  
+- **3 → 2 → 7.2**  
     _(Lead Hook → Cross → Rear Round Kick)_
-    
-    - Good **pressure combination**, making the opponent react defensively.
-6. **9 → 1 → 8.2**  
+
+
+- **9 → 1 → 8.2**  
     _(Lead Front Kick → Jab → Rear Side Kick)_
-    
 
-- Teep controls distance, setting up a **powerful side kick** to push the opponent away.
 
-7. **7.2 → 2 → 3**  
+
+- **7.2 → 2 → 3**  
     _(Rear Round Kick → Cross → Lead Hook)_
 
-- Uses the **kick to enter**, followed by boxing to close the gap.
 
-8. **2 → 6 → 7.2**  
+
+- **2 → 6 → 7.2**  
     _(Cross → Rear Uppercut → Rear Round Kick)_
 
-- **Counters level changes**, making it harder for the opponent to shoot for a takedown.
+
 
 ---
 
