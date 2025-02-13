@@ -65,8 +65,6 @@ _(Jab → Rear Round Kick → Cross → Lead Hook → Spinning Lead Elbow → Re
 
 - **9.3 → 3 → 7.2 → 6 → 2 → 9 → 7.2**  
     _(Rear Switch Teep → Lead Hook → Rear Round Kick → Rear Uppercut → Cross → Lead Front Kick → Rear Round Kick)_
-    
-    - A seamless transition between kicks, punches, and setups for continued pressure.
 
 ---
 
