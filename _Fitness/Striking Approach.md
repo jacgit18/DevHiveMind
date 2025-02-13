@@ -86,12 +86,12 @@ Try and use the other [[List of Feints]]
     - Throw strikes in the middle of a rhythm, break rhythm, or return to it.
     - Try the **Thai hop** during rhythm shifts to confuse your opponent.
     - Throw shots you want your opponent to throw so if you want them to jab do a jab.
-    - Generally, you want to avoid slipping toward the inside, meaning toward the side or direction of your opponent's back leg. If you do end up slipping that way, it's best to throw a counterpunch or at least move your head. Ideally, you should slip toward the outside, toward the direction of your opponent lead leg.
+    - Generally, you want to avoid slipping toward the inside, meaning toward the side or direction of your opponent's back leg. If you do end up slipping that way, it's best to throw a counter-punch or at least move your head. Ideally, you should slip toward the outside, toward the direction of your opponent lead leg.
 - **Stance Switching**:
     - Switch stances at various points—before, during, or after rhythm.
     - Experiment to discover what feels natural and unpredictable.
 
-Experiment with [[Striking Fluidity]]
+Experiment with [[Striking Fluidity]], [[Long Combos]] & [[Short Combos]]. 
 
 ### **5. Wall Leaning Strategy**
 - Use the wall to limit your movement intentionally.
