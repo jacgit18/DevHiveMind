@@ -40,6 +40,9 @@ kanban-plugin: board
 - [ ] [[Capital One Stats]]
 - [ ] working on Straight Outta collections team use this name when OOO #straightouttacollections
 - [ ] BSE - Business Salient event
+- [ ] have more fun and mentally flow to get more quality out of the work.
+- [ ] Clarity is confidence get as much clarity through the questions you ask yourself along with others and the drive to have confidence in your own ability weather it engineering or life.
+- [ ] be more descriptive and visual in your language
 
 
 ## Priority Tech Topic of Focus
