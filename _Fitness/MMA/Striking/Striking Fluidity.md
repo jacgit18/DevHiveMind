@@ -57,58 +57,6 @@ Anything not listed might not have fit criteria in terms of open space striking 
 |                       | 18     | Tornado Kick           |
 |                       | 19     | Spinning Heel Kick     |
 
-```mermaid
-graph TD
-    Jab(1) --> Cross(2)
-    Cross --> RoundKick(7.2)
-
-    FrontKick(9) --> Cross(2)
-    Cross --> RoundKick(7.2)
-
-    Jab(1) --> Cross(2)
-    Cross --> SpinBackKick(10)
-
-    Jab(1) --> RoundKick(7.2)
-    RoundKick --> Cross(2)
-
-    Jab(1) --> FrontKick(9)
-    FrontKick --> Cross(2)
-
-    Jab(1) --> Cross(2)
-    Cross --> Elbow(1.2)
-
-    Cross(2) --> Hook(3)
-    Hook --> RoundKick(7.2)
-
-    Jab(1) --> SideKick(8)
-    SideKick --> Cross(2)
-
-    Hook(3) --> Cross(2)
-    Cross --> RoundKick(7.2)
-
-    FrontKick(9) --> Jab(1)
-    Jab --> SideKick(8.2)
-
-    RoundKick(7.2) --> Cross(2)
-    Cross --> Hook(3)
-
-    Cross(2) --> Uppercut(6)
-    Uppercut --> RoundKick(7.2)
-
-    style Jab fill:#f9f,stroke:#333,stroke-width:4px;
-    style Cross fill:#ff9,stroke:#333,stroke-width:4px;
-    style RoundKick fill:#9ff,stroke:#333,stroke-width:4px;
-    style FrontKick fill:#cfc,stroke:#333,stroke-width:4px;
-    style SpinBackKick fill:#fc9,stroke:#333,stroke-width:4px;
-    style Elbow fill:#f99,stroke:#333,stroke-width:4px;
-    style Hook fill:#99f,stroke:#333,stroke-width:4px;
-    style SideKick fill:#ccf,stroke:#333,stroke-width:4px;
-    style Uppercut fill:#f66,stroke:#333,stroke-width:4px;
-
-    linkStyle default stroke:#000,stroke-width:4px;
-
-```
-
 ### Scenario 1 
 ![[open-stance.jpeg]]
 #### Opposite Mirror Stance 
@@ -118,13 +66,13 @@ Anything mirror coming from the rear hand is tricky because limited angle and le
 ##### Either Opponent Orientation
 - **1 → 2** (Jab → Cross)
 - **1 → 7.2** (Jab → Rear Round Kick)
-- **2 → 10** (Cross → Spinning Back Kick)
+- **2 → 15** (Cross → Spinning Back Kick)
 - **9 → 7.1** (Front Teep → Switch Round Kick)
 - **3 → 7.2** (Lead Hook → Rear Round Kick)
 - **3 → 6** (Lead Hook → Rear Uppercut)
 - **6 → 3** (Rear Uppercut → Lead Hook)
 - **7.2 → 2** (Rear Round Kick → Cross)
-- **9 → 7.2** (Lead Front Kick → Rear Round Kick)
+- **9 → 7.2** (Lead Teep → Rear Round Kick)
 - **2 → 8.3** (Cross → Stance Switch Rear Side Kick)
 
 > For switch rear side kick the lead foot will become back foot thrown in this scenario you can fake and throw front kick instead.
@@ -142,11 +90,11 @@ Anything mirror coming from the rear hand is tricky because limited angle and le
 - Outmaneuver their lead hand and exploit rear-side openings for Southpaw vs Southpaw.
 
 - **1 → 9** (Jab → Lead Teep Kick)
-- **1 → 1.2** (Jab → Lead Elbow)
+- **1 → 13** (Jab → Lead Elbow)
 - **2 → 7** (Cross → Lead Round Kick)
 - **1 → 1 → 2** (Double Jab → Rear Cross)
 - **7.2 → 3** (Rear Low Kick → Lead Hook)
-- **9 → 3** (Lead Front Kick → Lead Hook)
+- **9 → 3** (Lead Teep Kick → Lead Hook)
 - **7.2 → 7** (Rear Round Kick → Lead Round Kick)
 - **1 → 1 → 2** (Double Jab → Rear Cross)
 - **3 → 7.2** (Lead Hook → Rear Round Kick)
@@ -198,3 +146,57 @@ Anything mirror coming from the rear hand is tricky because limited angle and le
 - Faster and more efficient combinations.
 - Greater adaptability to different fighting ranges.
 - Unpredictable striking patterns that improve both offense and defense.
+
+### Experiment
+
+```mermaid
+graph TD
+    Jab(1) --> Cross(2)
+    Cross --> RoundKick(7.2)
+
+    FrontKick(9) --> Cross(2)
+    Cross --> RoundKick(7.2)
+
+    Jab(1) --> Cross(2)
+    Cross --> SpinBackKick(10)
+
+    Jab(1) --> RoundKick(7.2)
+    RoundKick --> Cross(2)
+
+    Jab(1) --> FrontKick(9)
+    FrontKick --> Cross(2)
+
+    Jab(1) --> Cross(2)
+    Cross --> Elbow(1.2)
+
+    Cross(2) --> Hook(3)
+    Hook --> RoundKick(7.2)
+
+    Jab(1) --> SideKick(8)
+    SideKick --> Cross(2)
+
+    Hook(3) --> Cross(2)
+    Cross --> RoundKick(7.2)
+
+    FrontKick(9) --> Jab(1)
+    Jab --> SideKick(8.2)
+
+    RoundKick(7.2) --> Cross(2)
+    Cross --> Hook(3)
+
+    Cross(2) --> Uppercut(6)
+    Uppercut --> RoundKick(7.2)
+
+    style Jab fill:#f9f,stroke:#333,stroke-width:4px;
+    style Cross fill:#ff9,stroke:#333,stroke-width:4px;
+    style RoundKick fill:#9ff,stroke:#333,stroke-width:4px;
+    style FrontKick fill:#cfc,stroke:#333,stroke-width:4px;
+    style SpinBackKick fill:#fc9,stroke:#333,stroke-width:4px;
+    style Elbow fill:#f99,stroke:#333,stroke-width:4px;
+    style Hook fill:#99f,stroke:#333,stroke-width:4px;
+    style SideKick fill:#ccf,stroke:#333,stroke-width:4px;
+    style Uppercut fill:#f66,stroke:#333,stroke-width:4px;
+
+    linkStyle default stroke:#000,stroke-width:4px;
+
+```
