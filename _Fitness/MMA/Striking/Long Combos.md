@@ -19,12 +19,12 @@ Here are **longer striking combinations** using the given number system, incorpo
 
 **(Focus: Targeting open angles, stance manipulation, and power shots)**
 
-- **1 → 2 → 7.2 → 6 → 3 → 10**  
+- **1 → 2 → 7.2 → 6 → 3 → 15**  
     _(Jab → Cross → Rear Round Kick → Rear Uppercut → Lead Hook → Spinning Back Kick)_
     
 
 - **9 → 7.1 → 2 → 3 → 7.2 → 2**  
-    _(Lead Front Kick → Switch Round Kick → Cross → Lead Hook → Rear Round Kick → Cross)_
+    _(Lead Front Kick → Stance Switch Round Kick → Cross → Lead Hook → Rear Round Kick → Cross)_
     
 
 - **1 → 7.2 → 2 → 8.3 → 6 → 3 → 7.2**  
@@ -36,7 +36,7 @@ Here are **longer striking combinations** using the given number system, incorpo
 ### **Same-Side Stance (Orthodox vs. Orthodox or Southpaw vs. Southpaw)**
 
 **(Focus: Linear attacks, close-range striking, and short-range power shots)**  
-- **1 → 9 → 2 → 1.2 → 3 → 7.2 → 10**  
+- **1 → 9 → 2 → 13 → 3 → 7.2 → 15**  
 _(Jab → Lead Teep Kick → Cross → Lead Elbow → Lead Hook → Rear Round Kick → Spinning Back Kick)_
 
 - **1 → 1 → 2 → 7.2 → 3 → 6 → 2**  
@@ -44,7 +44,7 @@ _(Jab → Lead Teep Kick → Cross → Lead Elbow → Lead Hook → Rear Round K
 
 
 - **7.2 → 3 → 9 → 2 → 7 → 2 → 8**  
-    _(Rear Low Kick → Lead Hook → Lead Front Kick → Cross → Lead Round Kick → Cross → Lead Side Kick)_
+    _(Rear Low Kick → Lead Hook → Lead Teep Kick → Cross → Lead Round Kick → Cross → Lead Side Kick)_
 
 
 ---
@@ -52,16 +52,16 @@ _(Jab → Lead Teep Kick → Cross → Lead Elbow → Lead Hook → Rear Round K
 ### **Multi-Stance Orientation (Works in Either Opposite or Same-Side Stance)**
 
 **(Focus: Maximizing adaptability in both stance orientations)**  
-- **1 → 7.2 → 2 → 3 → 1.3 → 7.2 → 10**  
+- **1 → 7.2 → 2 → 3 → 17 → 7.2 → 15**  
 _(Jab → Rear Round Kick → Cross → Lead Hook → Spinning Lead Elbow → Rear Round Kick → Spinning Back Kick)_
 
 
-16. **3 → 1 → 9.2 → 7.3 → 6 → 3 → 2.2**  
+- **3 → 1 → 9.2 → 7.3 → 6 → 3 → 14**  
     _(Lead Hook → Jab → Rear Teep → Rear Switch Round Kick → Rear Uppercut → Lead Hook → Rear Elbow)_
     
 
-- **9 → 1 → 7.2 → 2 → 8.2 → 1.4 → 2**  
-    _(Lead Front Kick → Jab → Rear Round Kick → Cross → Rear Side Kick → Spinning Back Elbow → Cross)_
+- **9 → 1 → 7.2 → 2 → 8.2 → 17 → 2**  
+    _(Lead Teep Kick → Jab → Rear Round Kick → Cross → Rear Side Kick → Spinning Back Elbow → Cross)_
 
 - **9.3 → 3 → 7.2 → 6 → 2 → 9 → 7.2**  
     _(Rear Switch Teep → Lead Hook → Rear Round Kick → Rear Uppercut → Cross → Lead Front Kick → Rear Round Kick)_

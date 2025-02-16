@@ -110,7 +110,7 @@ Anything mirror coming from the rear hand is tricky because limited angle and le
 
 - **3 → 1** (Lead Hook → Jab)
 - **1 → 7.2** (Jab → Rear Round Kick)
-- **3 → 2.2** (Lead Hook → Rear Elbow)
+- **3 → 14** (Lead Hook → Rear Elbow)
 - **9 → 1** (Lead Front Kick → Jab)
 
 
