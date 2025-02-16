@@ -29,7 +29,7 @@ _(Emphasizing open angles and defensive exits after striking.)_
     _(Lead Teep → Cross → Rear Round Kick)_
     
 
-- **1 → 2 → 10**  
+- **1 → 2 → 15** 
     _(Jab → Cross → Spinning Back Kick)_
     
 
@@ -44,11 +44,11 @@ _(Emphasizing open angles and defensive exits after striking.)_
 
 _(Focusing on linear attacks and short bursts of power.)_
 
-- **1 → 9 → 2**  
+- **1 → 7 → 2**  
     _(Jab → Lead Front Kick → Cross)_
     
 
-- **1 → 2 → 1.2**  
+- **1 → 2 → 13**  
     _(Jab → Cross → Lead Elbow)_
     
 
@@ -56,7 +56,7 @@ _(Focusing on linear attacks and short bursts of power.)_
     _(Cross → Lead Hook → Rear Round Kick)_
     
 
-- **1 → 8 → 2**  
+- **1 → 8.1 → 2**  
     _(Jab → Lead Side Kick → Cross)_
     
 
@@ -71,7 +71,7 @@ _(Quick setups that are effective regardless of stance differences.)_
     _(Lead Hook → Cross → Rear Round Kick)_
 
 
-- **9 → 1 → 8.2**  
+- **7 → 1 → 8.2**  
     _(Lead Front Kick → Jab → Rear Side Kick)_
 
 
