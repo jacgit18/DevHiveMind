@@ -136,7 +136,6 @@ series:
 
 | Exercise                                      | Body  | Focus | Type       | W(lb/kg) | Priority | Sets | Reps |
 | --------------------------------------------- | ----- | ----- | ---------- | -------- | -------- | ---- | ---- |
-| [[Full Body#^569c1a \| Arnold Press]]         | Upper | CM    | Dumbbell   | *20*     | High     | 3    | 5    |
 | [[Upper#^ef7d41\|Chest Fly]]                  | Upper | CM    | Dumbbell   | *20*     | High     | 3    | 10   |
 | [[Upper#^bcb0df \|Bench Press]]               | Upper | CM    | Barbell    | *20*     | High     | 3    | 5    |
 | [[Lower#^4e02bb \|Nordic Hamstring Curl]]     | Lower | CM    | Barbell    | *90*     | High     | 3    | 5    |
@@ -147,6 +146,7 @@ series:
 | [[Upper#^e81d31 \|PullUp Neutral]]            | Upper | PG    | Bodyweight | *25*     | High     | 3    | 5    |
 | [[Upper#^9def13\|Bottoms Up]]                 | Upper | PG    | Kettlebell | *17.6*   | High     | 3    | 10   |
 | [[Full Body#^7ecf05 \|Lunge Twist Halo]]      | Upper | RC    | Kettlebell | *17.6*   | High     | 8    | 2    |
+| [[Full Body#^569c1a \| Arnold Press]]         | Upper | CM    | Dumbbell   | *20*     | Med      | 3    | 5    |
 | [[Full Body#^765b0b \|Zercher Squats]]        | Lower | CM    | Barbell    | *50*     | Med      | 3    | 10   |
 | Single Arm Clean Press                        | Upper | EP    | Kettlebell | *17.6*   | Med      | 3    | 10   |
 | [[Full Body#^bb1837\|Kettlebell Swing]]       | Full  | PG    | Kettlebell | *17.6*   | Med      | 3    | 10   |
@@ -220,7 +220,7 @@ color purple
 | Cable Balloon Abduction     | PG     | ***160*** | High     | 3    | 10   | N/A      | Upper | Machine     |
 | Cable Wolverine             | PG     | ***160*** | High     | 3    | 10   | N/A      | Upper | Machine     |
 | Chest Fly                   | CM     | 20        | High     | 3    | 10   | N/A      | Upper | FreeWeights |
-| Arnold Press                | CM     | 20        | High     | 3    | 10   | N/A      | Upper | FreeWeights |
+| Arnold Press                | CM     | 20        | Med      | 3    | 10   | N/A      | Upper | FreeWeights |
 | Bench Press                 | CM     | 20        | High     | 3    | 5    | N/A      | Upper | FreeWeights |
 | Hip Thrust                  | CM     | 20        | High     | 3    | 5    | N/A      | Lower | FreeWeights |
 | Nordic Hamstring Curl       | CM     | 90        | High     | 3    | 5    | N/A      | Lower | FreeWeights |
