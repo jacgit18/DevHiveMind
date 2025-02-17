@@ -93,6 +93,8 @@ understand there motivation for selling
 
 - home services like window cleaning
 - handy man
+- hoa garbage company
+- use neighborhood apps to find and source for problems 
 
 the higher they go the more terms 
 
