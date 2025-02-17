@@ -74,7 +74,7 @@ This framework balances:
 By integrating imitation, iteration, and innovation, I aim to make smarter, future-proof investment decisions.
 
 #todo/High/finishWatching
-- [ ] stopped at 38:00 for Codie Sanchez podcast
+- [x] stopped at 38:00 for Codie Sanchez podcast ✅ 2025-02-17
 - [ ] Find Boring problems 😴
 - [ ] stopped at 30:00
 - [ ] people your crazy when you start a business or try a specific business that hasn't been done before 
@@ -96,7 +96,9 @@ understand there motivation for selling
 - hoa garbage company
 - use neighborhood apps to find and source for problems 
 
-the higher they go the more terms 
+the higher they go the more terms
+
+off 
 
 also maybe payless up front when coming up with terms 
 
