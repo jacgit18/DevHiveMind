@@ -98,7 +98,8 @@ understand there motivation for selling
 
 the higher they go the more terms
 
-off 
+
+off market quiet sellers word to mouth and on market deals platforms that connect with you with people
 
 also maybe payless up front when coming up with terms 
 
