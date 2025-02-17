@@ -84,8 +84,18 @@ By integrating imitation, iteration, and innovation, I aim to make smarter, futu
 
 marketing, raise prices, sell related things after you buy the business 
 
+you can sell a business if you dont wanted and want to avoid taxes 
 
-seller financing
+understand there motivation for selling 
+
+[[Seller Financing]]
+
+
+the higher they go the more terms 
+
+also mapayless up front 
+
+you have to find these opportunities 
 
 ![](https://www.youtube.com/watch?v=eTkFItOG3Kk)
 
