@@ -77,7 +77,7 @@ By integrating imitation, iteration, and innovation, I aim to make smarter, futu
 - [x] stopped at 38:00 for Codie Sanchez podcast ✅ 2025-02-17
 - [ ] Find Boring problems 😴
 - [ ] stopped at 30:00
-- [ ] people your crazy when you start a business or try a specific business that hasn't been done before 
+- [ ] people say your crazy when you start a business or try a specific business that hasn't been done before 
 
 ![](https://youtu.be/gc8VstbuOQA?si=W1MU8sb0FuqGiN-7&t=2019)
 
