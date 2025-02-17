@@ -91,9 +91,16 @@ understand there motivation for selling
 [[Seller Financing]]
 
 
+- home services like window cleaning
+- handy man
+
 the higher they go the more terms 
 
-also mapayless up front 
+also maybe payless up front when coming up with terms 
+
+the more complexity higher chance for bullshit
+
+remove cancers quicker use third party to track finances for a period to see if there is any theft happening
 
 you have to find these opportunities 
 
