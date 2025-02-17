@@ -82,7 +82,10 @@ By integrating imitation, iteration, and innovation, I aim to make smarter, futu
 ![](https://youtu.be/gc8VstbuOQA?si=W1MU8sb0FuqGiN-7&t=2019)
 
 
-marketing, raise prices, sell related things after you buy the business  
+marketing, raise prices, sell related things after you buy the business 
+
+
+seller financing
 
 ![](https://www.youtube.com/watch?v=eTkFItOG3Kk)
 
