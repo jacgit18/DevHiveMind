@@ -26,6 +26,8 @@ Use the **UFC game** to simulate and experiment with techniques and strategies p
 
 MMA has shorter combos because of takedowns. When kicking use high knee elevation before flipping out the leg to kick better.
 
+Keep sparing for Muay Thai down to 2 or 3 times a month for safety and quality.  
+
 ## **Striking Principles**
 > [!abstract] End Goal
 > The goal is to penetrate an opponent's center-line defense, create angles, and disrupt their balance to enhance striking effectiveness.

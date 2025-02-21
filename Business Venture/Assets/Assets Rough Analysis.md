@@ -33,6 +33,9 @@ Creating a hustle with funeral plots involves buying and selling plots for profi
   
 Remember, this business involves sensitive matters, so maintaining respect and professionalism is crucial.
 
+borrow against SPY or VOO or both or even total non retirement portfolio  
+
+Set aside car money in Investments to borrow against to eventually use that money for a car instead of just saving for a car in your savings account
 
 #todo/stocks
 - [ ] VOO
