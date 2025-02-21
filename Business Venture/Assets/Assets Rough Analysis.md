@@ -35,6 +35,10 @@ Remember, this business involves sensitive matters, so maintaining respect and p
 
 
 #todo/stocks
+- [ ] VOO
+- [ ] SPY buy everyday
+- [ ] Crypto
+- [ ] Female and youth centric stocks like makeup etc look into influencer's to get tapped in like tiktok etc..
 - [ ] NIKE 
 - [ ] WPC
 - [ ] PLD
@@ -46,8 +50,7 @@ Remember, this business involves sensitive matters, so maintaining respect and p
 - [ ] CRIN
 - [ ] VEA
 - [ ] SCHH
-- [ ] VOO
-- [ ] SPY
+
 - [ ] VWO
 - [ ] VTI
 - [ ] COF
