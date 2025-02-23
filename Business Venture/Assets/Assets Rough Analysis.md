@@ -33,14 +33,21 @@ Creating a hustle with funeral plots involves buying and selling plots for profi
   
 Remember, this business involves sensitive matters, so maintaining respect and professionalism is crucial.
 
-borrow against SPY or VOO or both or even total non retirement portfolio  
 
 Set aside car money in Investments to borrow against to eventually use that money for a car instead of just saving for a car in your savings account
 
+im good at assessing risk
+
+
+ Buy everyday to eventually borrow against 
+- [ ] VOO in Roth IRA ✅ (Lower fees, better long-term compounding, no taxes).
+- [ ] SPY in Individual Brokerage (only if you want to trade frequently).
+- [ ] Buy and invest time into Crypto since working in banking maybe as a engineer
+
+
+
 #todo/stocks
-- [ ] VOO
-- [ ] SPY buy everyday
-- [ ] Crypto
+
 - [ ] Female and youth centric stocks like makeup etc look into influencer's to get tapped in like tiktok etc..
 - [ ] NIKE 
 - [ ] WPC
