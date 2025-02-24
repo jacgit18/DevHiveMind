@@ -108,6 +108,7 @@ series:
 - [ ] Focus on intensity then scale to volume
 - [ ] Slow intensity exercise should spend at least 5 min per exercise
 - [ ] Other leg press variation lesser reps
+- [ ] Controlled Explosive Burpee
 
 | Body  | Machine                                                 | Position | Focus | Priority | Weight    | Sets | Reps | Range | Per Side |
 | ----- | ------------------------------------------------------- | -------- | ----- | -------- | --------- | ---- | ---- | ----- | -------- |
@@ -168,7 +169,8 @@ series:
 | Full  | [[Full Body#^775bc4 \|Farmer’s Walk]]       | CM     | Kettlebell | *17.6*   | High     | **20**sec | 3    | Dumbbell   | *20*         |
 | Upper | [[Full Body#^05e3ec \|Seated Cable Row]]    | PG     | Machine    | *0*      | Med      | **20**sec | 3    | Machine    | *0*          |
 | Lower | [[Lower#^afd7a0 \|Lateral Skater Jumps]]    | EP     | Jump       | *0*      | Med      | **20**sec | 3    | Jump       | *0*          |
-| Full  | [[Upper#^d58de0 \|Rotational Slam]]         | RC     | MediBall   | 0        | Low      | **20**sec | 3    | MediBall   | 0            |
+| Full  | Jump Rope                                   | Cardio | Rope       | *0*      | Med      | **20**sec | 3    | Jump       | *0*          |
+| Full  | [[Upper#^d58de0 \|Rotational Slam]]         | RC     | MediBall   | 20       | Low      | **20**sec | 3    | MediBall   | 20           |
 | Lower | [[Lower#^3b9f2c \|Box Jumps]]               | EP     | Jump       | *0*      | Low      | **20**sec | 3    | Jump       | *0*          |
 | Lower | [[Lower#^aad169 \|Split Squat Jumps]]       | EP     | Jump       | *0*      | Low      | **20**sec | 3    | Jump       | *0*          |
 | Core  | [[Core#^fdacde \|Russian Twists]]           | RC     | Rope       | *0*      | Low      | **20**sec | 3    | Rope       | *0*          |
@@ -238,6 +240,7 @@ color purple
 | Cable Woodchopper           | RC     | ***160*** | Med      | 3    | 10   | N/A      | Upper | Machine     |
 | Zercher Squats              | CM     | 20        | Med      | 3    | 10   | N/A      | Lower | FreeWeights |
 | Seated Cable Row            | PG     | 0         | Med      | 3    | 20   | N/A      | Upper | Durration   |
+| Jump Rope<br>               |        |           |          |      |      |          |       |             |
 | Zercher Deadlift            | CM     | 20        | Med      | 3    | 10   | N/A      | Lower | FreeWeights |
 | Kettlebell Swing            | PG     | 17.6      | Med      | 3    | 10   | N/A      | Full  | FreeWeights |
 | SingleArm Clean Press       | EP     | 17.6      | Med      | 3    | 10   | N/A      | Upper | FreeWeights |
