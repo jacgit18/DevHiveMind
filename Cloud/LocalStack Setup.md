@@ -39,34 +39,27 @@ an offset is
 
 ```json
 {
-"List" : [
-"rateChange"{
- "offset": 16
-}
-
-"action1"{
- "offset": 3 // wait 3 days to execute action 
-}
-
-"action2"{
- "offset": 0 // imediate execute action
-}
-
-
-
-
-...
-
-"action100"{
- "offset": 1
-}
-
-]
-
+  "List": [
+    {
+      "name": "rateChange",
+      "offset": 16
+      "otherData": ...
+    },
+    {
+      "name": "action1",
+      "offset": 3 // wait 3 days to execute action 
+    },
+    {
+      "name": "action2", // imediate execute action
+      "offset": 0
+    },
+    {
+      "name": "action100",
+      "offset": 1
+    }
+  ]
 }
 ```
-
-
 
 
 ## 1. Create a Lambda Function  
