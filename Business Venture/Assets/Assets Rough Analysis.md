@@ -107,7 +107,7 @@ Game plan when you want to sell set target range
 ### **Updated Budget Allocation Analysis**
 2025 investment project analysis copy for the next year after in chatgpt
 Future breakdown to follow
-- 50% real estate 
+- 50% real estate (probably lesser)
 - 15% companies in terms of stocks 
 - 15% ETFs in terms of stock and 
 - 18% in terms of speculative this can be crypto also startup Investments, Sports betting, then 
