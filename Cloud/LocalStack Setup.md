@@ -27,14 +27,47 @@ When comes to Payments still being decided were its being sent to.
 
 We just schedule when hooks fire
 
-There is a list of actions associated with each contract which also has one offset we need to filter through 
+There is a list of actions associated with each contract which also has one offset we need to separate  those actions by the offset meaning immediate actions fired on the same day and eventual actions which are triggered by hooks based on offset date.
+
+Data lambda => JSON => Enrollment Async Step Function
 
 an offset is 
 
 
-
 #todo/CapitalOne
-- [ ] Need to mock payload based on schema provided from other team 
+- [ ] Need to mock payload based on schema provided from other team below is rough draft of how it should look may need to set hooks in the future for fulfillment lambda
+
+```json
+{
+"List" : [
+"rateChange"{
+ "offset": 16
+}
+
+"action1"{
+ "offset": 3 // wait 3 days to execute action 
+}
+
+"action2"{
+ "offset": 0 // imediate execute action
+}
+
+
+
+
+...
+
+"action100"{
+ "offset": 1
+}
+
+]
+
+}
+```
+
+
+
 
 ## 1. Create a Lambda Function  
 - Packages a Python script (`lambda-function.py`) into a ZIP file.
