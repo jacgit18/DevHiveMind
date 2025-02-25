@@ -20,6 +20,7 @@ kanban-plugin: board
 
 - [ ] Look at this [[Codebase Interview Question]] (@2025-02-26)
 - [ ] Upcoming work [[Publish to onstream workflow]]
+- [ ] [[LocalStack Setup]]
 - [ ] Re-watch AI PR session
 - [ ] AWS Solution Architect certification
 - [ ] Clean up Todo in vault

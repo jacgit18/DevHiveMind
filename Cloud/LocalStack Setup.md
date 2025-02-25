@@ -17,6 +17,13 @@ dg-publish:
 ---
 This document provides a step-by-step guide to setting up **AWS Lambda, IAM (Identity and Access Management), and Step Functions** using **LocalStack**, which is a local AWS cloud emulator. The setup is meant for running and testing AWS services locally without needing an actual AWS account.
 
+When a agent or who ever initiate contract offer from empath 
+
+Can only process one contract at a time
+
+
+#todo/CapitalOne
+- [ ] Need to mock payload based on schema provided from other team 
 
 ## 1. Create a Lambda Function  
 - Packages a Python script (`lambda-function.py`) into a ZIP file.
