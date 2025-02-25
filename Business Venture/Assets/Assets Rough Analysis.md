@@ -39,6 +39,13 @@ Set aside car money in Investments to borrow against to eventually use that mone
 im good at assessing risk
 
 
+crypto make sense for me since in banking also can enable things like transferring assets peer to peer as well as  
+  
+trading or transferring assets on Saturday or Sunday when markets are typically closed as well international banking related things.
+
+
+Trade options at a lower rate terms of money allocated for option trading
+
  Buy every week to eventually borrow against 
 - [ ] VOO in Roth IRA ✅ (Lower fees, better long-term compounding, no taxes).
 - [ ] SPY in Individual Brokerage (only if you want to trade frequently).

@@ -113,7 +113,7 @@ dg-publish: true
 	```
 
 ---
-![[Daily Priority]]
+
 
 ---
 
