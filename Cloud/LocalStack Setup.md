@@ -17,9 +17,20 @@ dg-publish:
 ---
 This document provides a step-by-step guide to setting up **AWS Lambda, IAM (Identity and Access Management), and Step Functions** using **LocalStack**, which is a local AWS cloud emulator. The setup is meant for running and testing AWS services locally without needing an actual AWS account.
 
-When a agent or who ever initiate contract offer from empath 
+When a agent or who ever initiate contract offer from Empath 
 
-Can only process one contract at a time
+goes rules lab coming back with true or false 
+
+Can only process one contract at a time which comes from a frontend through the exchange through the public API invoker getting things like contract id, contract info, and account id along with contract draft which gets sent to rules lab which determines contract eligibility if eligible we update the UCP with the status to enroll and set the payments and publish to one stream for the eventual workflow and do a audit and send a response back to the client this is the immediate workflow. 
+
+When comes to Payments still being decided were its being sent to.  
+
+We just schedule when hooks fire
+
+There is a list of actions associated with each contract which also has one offset we need to filter through 
+
+an offset is 
+
 
 
 #todo/CapitalOne
