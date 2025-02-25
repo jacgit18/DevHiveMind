@@ -39,7 +39,7 @@ Keep sparing for Muay Thai down to 2 or 3 times a month for safety and quality.
 
 ![](https://www.youtube.com/watch?v=2umB17ZXMGM&t=207s)
 ### **1. Be Playful and Adaptive**
-- Treat sparring as a game; keep it light and exploratory.
+- Treat sparring as a game; keep it light and exploratory take up space and the other person time.
 - Set feet quickly and throw body first be fully extending arms on punch.
 - Imagine the opponent as a mirror: move in the opposite direction of their movement, emulating **lateral inversion** which the process of your movement in a mirror orienting inversely.
 - Monkey see monkey do try imitating the person you're sparring with and their movements and stuff.
