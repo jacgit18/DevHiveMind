@@ -50,9 +50,10 @@ Dental 13.74
 Medical 437.98
 Vision 6.72
 Commuter  110 
+401k 144
 
 ---
-Total benefits 926.78
+Total benefits 1070.78
 
 
 
