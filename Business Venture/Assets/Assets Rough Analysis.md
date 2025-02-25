@@ -39,7 +39,7 @@ Set aside car money in Investments to borrow against to eventually use that mone
 im good at assessing risk
 
 
- Buy everyday to eventually borrow against 
+ Buy every week to eventually borrow against 
 - [ ] VOO in Roth IRA ✅ (Lower fees, better long-term compounding, no taxes).
 - [ ] SPY in Individual Brokerage (only if you want to trade frequently).
 - [ ] Buy and invest time into Crypto since working in banking maybe as a engineer
