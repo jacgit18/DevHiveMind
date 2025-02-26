@@ -16,13 +16,13 @@ kanban-plugin: board
 - [ ] No levels
 
 
-## #todo/Work
+## #todo/CapitalOne
 
 - [ ] Look at this [[Codebase Interview Question]] (@2025-03-05)
 - [ ] Upcoming work [[Publish to onstream workflow]]
 - [ ] [[LocalStack Setup]]
 - [ ] Create dummy resources with localstack
-- [ ] Re-watch AI PR session
+- [ ] Scrumaster from april 1st to may 14th
 - [ ] AWS Solution Architect certification
 - [ ] Clean up Todo in vault
 - [ ] Get probiotics and prebiotics (@2025-03-01)
