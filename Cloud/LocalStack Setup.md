@@ -79,6 +79,7 @@ aws --endpoint-url=http://localhost:4566 lambda create-function \
     --handler lambda_function.lambda_handler \
     --zip-file fileb://function.zip \
     --role arn:aws:iam::000000000000:role/lambda-role
+    --region us-east-1
 ```
 
 ## 2. Create IAM Role
