@@ -136,7 +136,108 @@ aws --endpoint-url=http://localhost:4566 lambda update-function-code \
     --zip-file fileb://DataLambda.zip
 ```
 
-## 7. Update Step Functions State Machine
+
+## 7. Define Your State Machine
+
+Create a **state machine definition file** (e.g., `collections-process-offers-enrollment.json`). This file defines the **workflow logic**, such as which Lambda functions are invoked, whether you have conditions, retries, or parallel states. Example structure (simplified):
+
+```json
+{
+    "Comment": "Enrollment State Machine",
+    "StartAt": "VerifyCustomer",
+    "States": {
+        "VerifyCustomer": {
+            "Type": "Task",
+            "Resource": "arn:aws:lambda:us-east-1:000000000000:function:VerifyCustomer",
+            "Next": "ProcessData"
+        },
+        "ProcessData": {
+            "Type": "Task",
+            "Resource": "arn:aws:lambda:us-east-1:000000000000:function:DataLambda",
+            "End": true
+        }
+    }
+}
+```
+### Step 1: Deploy the Step Function to LocalStack
+
+Run the following command to **update or create the state machine using LocalStack**.
+
+```bash
+aws --endpoint-url=http://localhost:4566 stepfunctions update-state-machine \
+    --state-machine-arn arn:aws:states:us-east-1:000000000000:stateMachine:EnrollmentStateMachine \
+    --definition file://collections-process-offers-enrollment.json
+```
+
+- This assumes you already have a state machine called `EnrollmentStateMachine`.
+- If you're **creating it for the first time**, you'd run:
+
+```bash
+aws --endpoint-url=http://localhost:4566 stepfunctions create-state-machine \
+    --name EnrollmentStateMachine \
+    --definition file://collections-process-offers-enrollment.json \
+    --role-arn arn:aws:iam::000000000000:role/lambda-role
+```
+
+The `role-arn` must match your LocalStack IAM role.
+
+
+
+### Step 2: Test the Step Function
+
+Once the state machine is updated/created, you can **trigger it with an input file** (like `input.json`).
+
+```bash
+aws --endpoint-url=http://localhost:4566 stepfunctions start-execution \
+    --state-machine-arn arn:aws:states:us-east-1:000000000000:stateMachine:EnrollmentStateMachine \
+    --input file://input.json
+```
+
+
+
+### Step 3: Monitor Execution
+
+To check the execution status, you can list and describe executions.
+
+```bash
+aws --endpoint-url=http://localhost:4566 stepfunctions list-executions \
+    --state-machine-arn arn:aws:states:us-east-1:000000000000:stateMachine:EnrollmentStateMachine
+```
+
+```bash
+aws --endpoint-url=http://localhost:4566 stepfunctions describe-execution \
+    --execution-arn <execution-arn>
+```
+
+---
+
+### Summary of Components
+
+|Component|Example|
+|---|---|
+|**Lambda Function 1**|`VerifyCustomer`|
+|**Lambda Function 2**|`DataLambda`|
+|**DynamoDB Table**|`Offers`|
+|**IAM Role**|`lambda-role`|
+|**Step Function**|`EnrollmentStateMachine`|
+|**State Machine Definition**|`collections-process-offers-enrollment.json`|
+|**Execution Input**|`input.json`|
+
+---
+
+### Overall Flow
+
+1. `EnrollmentStateMachine` starts.
+2. It invokes `VerifyCustomer`.
+3. If successful, it invokes `DataLambda`.
+4. `DataLambda` processes data, maybe interacts with DynamoDB (`Offers` table).
+5. Execution completes.
+
+
+
+
+
+## 8. Update Step Functions State Machine
 - Updates an AWS Step Functions state machine (`EnrollmentStateMachine`) using a definition file (`collections-process-offers-enrollment.json`).
 
 ```sh
@@ -145,7 +246,8 @@ aws --endpoint-url=http://localhost:4566 stepfunctions update-state-machine \
     --definition file://collections-process-offers-enrollment.json
 ```
 
-## 8. Test Step Function Execution
+
+## 9. Test Step Function Execution
 - Starts an execution of the `EnrollmentStateMachine` with an input file (`input.json`). 
 
 ```sh
