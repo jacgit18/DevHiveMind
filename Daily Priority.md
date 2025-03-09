@@ -22,6 +22,7 @@ kanban-plugin: board
 - [ ] Upcoming work [[Publish to onstream workflow]]
 - [ ] [[LocalStack Setup]]
 - [ ] Create dummy resources with localstack
+- [ ] Need to reach out to Arrow way team for idempont
 - [ ] Scrumaster from april 1st to may 14th
 - [ ] AWS Solution Architect certification
 - [ ] Clean up Todo in vault
