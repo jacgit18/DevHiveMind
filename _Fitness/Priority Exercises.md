@@ -104,7 +104,7 @@ series:
 #todo/BAU/Workout
 - [ ] Focus on stability for 3 months then add resistance and more weight and reattempt low priority excercise
 - [ ] 6 to 20 reps near failure at max
-- [ ] Get reps to 10
+- [ ] Get to 8 set 4 reps heavy weights
 - [ ] Focus on intensity then scale to volume
 - [ ] Slow intensity exercise should spend at least 5 min per exercise
 - [ ] Other leg press variation lesser reps
