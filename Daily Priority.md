@@ -55,6 +55,8 @@ kanban-plugin: board
 - [ ] Python
 - [ ] DynamoDB
 - [ ] [[OneStream Notes |OneStream]]
+- [ ] Amd and elf
+- [ ] create Guide on aws iam with commands
 
 
 ## AWS Solution Archetict
