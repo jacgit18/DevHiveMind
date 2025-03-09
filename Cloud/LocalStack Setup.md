@@ -40,6 +40,13 @@ Does offset has to do with sending offers offers to people in delinquency depend
 #todo/CapitalOne
 - [ ] Need to mock payload based on schema provided from other team below is rough draft of how it should look may need to set hooks in the future for fulfillment lambda
 
+
+Delete colima and reinstall for broken localstack
+
+Fms fuffilment management service  
+  
+AMA auditability monitoring and Analytics
+
 ```json
 {
   "List": [
