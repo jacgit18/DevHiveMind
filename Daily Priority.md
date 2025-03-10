@@ -21,7 +21,6 @@ kanban-plugin: board
 - [ ] Look at this [[Codebase Interview Question]] (@2025-03-05)
 - [ ] Upcoming work [[Publish to onstream workflow]]
 - [ ] [[LocalStack Setup]]
-- [ ] Create dummy resources with localstack
 - [ ] Need to reach out to Arrow way team for idempont
 - [ ] Scrumaster from april 1st to may 14th
 - [ ] AWS Solution Architect certification
