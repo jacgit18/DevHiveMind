@@ -8,6 +8,7 @@ kanban-plugin: board
 
 - [ ] Buy time
 - [ ] Don't Specify Level
+- [ ] Ask yourself What can i get done in 10 min to limit procrastination
 - [ ] Acknowledge that you don't know. Commit to finding the answer and follow up.
 - [ ] Okay so off the top of my head I can't tell you with 100% certainty but let me look into that and I'll come back to you with an answer but while that happens did you have any other questions this moment
 - [ ] ![[Business decision#^68639f]]
@@ -25,7 +26,6 @@ kanban-plugin: board
 - [ ] Scrumaster from april 1st to may 14th
 - [ ] AWS Solution Architect certification
 - [ ] Clean up Todo in vault
-- [ ] Get probiotics and prebiotics (@2025-03-01)
 - [ ] Clean up Vault in General
 - [ ] Be more of a contractor like tangy running a business acting as a consultant and providing your services instead of a employee
 - [ ] Skip more steps move faster and smarter in career going every incremental step by step is the old way of doing things need to adapt for the new environment
