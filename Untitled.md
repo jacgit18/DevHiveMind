@@ -1,0 +1,1 @@
+Idempotence meaning calling or invoking it multiple times doesn’t change the result.
