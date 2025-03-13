@@ -18,5 +18,6 @@
   "livePreview": true,
   "defaultViewMode": "preview",
   "showInlineTitle": false,
-  "strictLineBreaks": true
+  "strictLineBreaks": true,
+  "showUnsupportedFiles": true
 }
