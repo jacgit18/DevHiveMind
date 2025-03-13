@@ -22,9 +22,7 @@ kanban-plugin: board
 - [ ] Look at this [[Codebase Interview Question]] (@2025-03-05)
 - [ ] Upcoming work [[Publish to onstream workflow]]
 - [ ] [[LocalStack Setup]]
-- [ ] Need to reach out to Arrow way team for idempont
 - [ ] Scrumaster from april 1st to may 14th
-- [ ] AWS Solution Architect certification
 - [ ] Clean up Todo in vault
 - [ ] Clean up Vault in General
 - [ ] Be more of a contractor like tangy running a business acting as a consultant and providing your services instead of a employee
@@ -54,7 +52,6 @@ kanban-plugin: board
 - [ ] Python
 - [ ] DynamoDB
 - [ ] [[OneStream Notes |OneStream]]
-- [ ] Amd and elf
 - [ ] create Guide on aws iam with commands
 - [ ] roth ira tax docs come May 31st
 

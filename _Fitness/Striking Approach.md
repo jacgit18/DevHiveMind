@@ -24,7 +24,7 @@ dg-publish:
 
 Use the **UFC game** to simulate and experiment with techniques and strategies practicing breathing technique and stance change.
 
-MMA has shorter combos because of takedowns. When kicking use high knee elevation before flipping out the leg to kick better.
+MMA has shorter combos because of takedowns. When kicking use high knee elevation before flipping out the leg to kick better. Move head right after throwing a punch generally.
 
 Keep sparing for Muay Thai down to 2 or 3 times a month for safety and quality.  
 
@@ -115,6 +115,7 @@ Opposite side stance looks like a mirror but you are both in opposite stances me
 - Use slight leans to bait an attack but maintain readiness to move in any direction.
 - Lean opposite to the punch’s direction (e.g., dip left against a right-hand punch).
 - Faint with level changes typically when opponent are in there weaker stance or same side stance.
+- Occupy their lead hand with your rear hand to provoke a reaction—this often compels them to throw their rear hand, which has a longer recovery time, creating an opening for you to exploit.
 ### **Opposite Stance (Opposite Lead Foot)**
 - This occurs when you and your opponent are a mirror of each other(e.g., you're [[Stance Fundamentals#^b31948|Orthodox]], and they're in [[Stance Fundamentals#^1981b8|Southpaw]]). It's generally easier to step outside their lead foot. 
 
