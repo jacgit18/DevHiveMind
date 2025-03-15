@@ -19,5 +19,6 @@
   "defaultViewMode": "preview",
   "showInlineTitle": false,
   "strictLineBreaks": true,
-  "showUnsupportedFiles": true
+  "showUnsupportedFiles": true,
+  "newLinkFormat": "relative"
 }
