@@ -40,14 +40,14 @@ After completing this lab, you should know how to do the following:
 
 Task 1: Create an Amazon VPC in a Region 
 In this task, you create a new Amazon VPC in the AWS Cloud. 
-ⓘ Learn more: With Amazon VPC, you can provision a logically isolated section of the AWS Cloud where you can launch AWS resources in a virtual network that you define. You have complete control over your virtual networking environment, including selection of your own IP address ranges, creation of subnets, and configuration of route tables and network gateways. You can also use the enhanced security options in Amazon VPC to provide more granular access to and from the Amazon EC2 instances in your virtual network. 
+
 
 
 
 3.
  At the top of the AWS Management Console, in the search bar, search for and choose VPC. 
 ! Caution: Verify that the Region displayed in the top-right corner of the console is the same as the Region value on the left side of this lab page. 
- Note: The VPC management console offers a VPC Wizard, which can automatically create several VPC architectures. However, in this lab you create the VPC components manually. 
+ 
 4.
  In the left navigation pane, choose Your VPCs. 
 The console displays a list of your currently available VPCs. A default VPC is provided so that you can launch resources as soon as you start using AWS. 
@@ -81,13 +81,13 @@ ec2-52-42-133-255.us-west-2.compute.amazonaws.com
  Choose Save. 
 A  You have successfully modified the settings for vpc-xxxxxxxxxx / Lab VPC. message is displayed on top of the screen. 
 Any Amazon EC2 instances launched into this Amazon VPC now automatically receive a DNS hostname. You can also create a more meaningful DNS name (for example, app.company.com) using records in Amazon Route 53. 
- Congratulations! You have successfully created your own VPC and now you can launch the AWS resources in this defined virtual network. 
+
 
 
 Task 2: Create public subnets and private subnets 
 In this task, you create a public subnet and a private subnet in the lab VPC. To add a new subnet to your VPC, you must specify an IPv4 CIDR block for the subnet from the range of your VPC. You can specify the Availability Zone in which you want the subnet to reside. You can have multiple subnets in the same Availability Zone. 
  
- Note: A subnet is a sub-range of IP addresses within a network. You can launch AWS resources into a specified subnet. Use a public subnet for resources that must be connected to the internet, and use a private subnet for resources that are to remain isolated from the internet. 
+
 Task 2.1: Create your public subnet 
 The public subnet is for internet-facing resources. 
 11.
@@ -111,8 +111,7 @@ A  You have successfully created 1 subnet: subnet-xxxxxx message is displayed on
 Expected output: It should display the following: 
 •
  State:  Available 
- Note: The VPC has a CIDR range of 10.0.0.0/16, which includes all 10.0.x.x IP addresses. The subnet you just created has a CIDR range of 10.0.0.0/24, which includes all 10.0.0.x IP addresses. These ranges might look similar, but the subnet is smaller than the VPC because of the /24 in the CIDR range. 
-Now, configure the subnet to automatically assign a public IP address for all instances launched within it. 
+ 
 15.
  Select ☑ Public Subnet. 
 16.
@@ -123,7 +122,7 @@ The Edit subnet settings page is displayed.
 18.
  Choose Save. 
 A  You have successfully changed subnet settings: Enable auto-assign public IPv4 address message is displayed on top of the screen. 
- Note: Even though this subnet is named Public Subnet, it is not yet public. A public subnet must have an internet gateway and route to the gateway. You create and attach the internet gateway and route tables in this lab. 
+
 Task 2.2: Create your private subnet 
 The private subnet is for resources that are to remain isolated from the internet. 
 19.
@@ -151,7 +150,7 @@ Your VPC now has two subnets. However, these subnets are isolated and cannot com
 
 Task 3: Create an internet gateway 
 In this task, you create an internet gateway so that internet traffic can access the public subnet. To grant access to or from the internet for instances in a subnet in a VPC, you create an internet gateway and attach it to your VPC. Then you add a route to your subnet&apos;s route table that directs internet-bound traffic to the internet gateway. 
-ⓘ Learn more: An internet gateway serves two purposes: To provide a target in your VPC route tables for internet-bound traffic, and to perform network address translation (NAT) for instances that have been assigned public IPv4 addresses. 
+
 22.
  In the left navigation pane, choose Internet gateways. 
 23.
@@ -180,7 +179,7 @@ The internet gateway is now attached to your Lab VPC. Even though you have creat
 
 Task 4: Route internet traffic in the public subnet to the internet gateway 
 In this task, you create a route table and add a route to the route table to direct internet-bound traffic to your internet gateway and associate your public subnets with your route table. Each subnet in your VPC must be associated with a route table; the table controls the routing for the subnet. A subnet can only be associated with one route table at a time, but you can associate multiple subnets with the same route table. 
-ⓘ Learn more: A route table contains a set of rules, called routes, that are used to determine where network traffic is directed. To use an internet gateway, your subnet&apos;s route table must contain a route that directs internet-bound traffic to the internet gateway. You can scope the route to all destinations not explicitly known to the route table (0.0.0.0/0 for IPv4 or ::/0 for IPv6), or you can scope the route to a narrower range of IP addresses. If your subnet is associated with a route table that has a route to an internet gateway, it&apos;s known as a public subnet. 
+
 29.
  In the left navigation pane, choose Route tables. 
 There is currently one default route table associated with the VPC, Lab VPC. This routes traffic locally. You now create an additional route table to route public traffic to your internet gateway. 
@@ -219,13 +218,12 @@ A  Updated routes for rtb-xxxxxxx / Public Route Table successfully message is d
 39.
  Choose Save associations. 
 A  You have successfully updated subnet associations for rtb-xxxxxxx / Public Route Table. message is displayed on top of the screen. 
- Note: The subnet is now public because it has a route to the internet through the internet gateway. 
- Congratulations! You have successfully configured the route table. 
+ 
 
 
 Task 5: Create a public security group 
 In this task, you create a security group so that users can access your Amazon EC2 instance. Security groups in a VPC specify which traffic is allowed to or from an Amazon EC2 instance. 
-ⓘ Learn more: You can use Amazon EC2 security groups to help secure instances within an Amazon VPC. By using security groups in a VPC, you can specify both inbound and outbound network traffic that is allowed to or from each Amazon EC2 instance. Traffic that is not explicitly allowed to or from an instance is automatically denied. 
+
  Security: It is recommended to use HTTPS protocol to improve web traffic security. However, to simplify this lab, only HTTP protocol is used. 
 40.
  In the left navigation pane, choose Security groups. 
@@ -258,7 +256,7 @@ A  Security group (sg-xxxxxxx | Public SG) was created successfully message is d
 Task 6: Launch an Amazon EC2 instance into a public subnet 
 In this task, you launch an Amazon EC2 instance into a public subnet. To activate communication over the internet for IPv4, your instance must have a public IPv4 address that&apos;s associated with a private IPv4 address on your instance. By default, your instance is only aware of the private (internal) IP address space defined within the VPC and subnet. 
  
-ⓘ Learn more: The internet gateway that you created logically provides the one-to-one NAT on behalf of your instance. So when traffic leaves your VPC subnet and goes to the internet, the reply address field is set to the public IPv4 address or Elastic IP address of your instance, and not its private IP address. 
+
 45.
  At the top of the AWS Management Console, in the search bar, search for and choose EC2. 
 The Amazon EC2 Management Console is displayed. 
@@ -391,12 +389,6 @@ A new browser tab or window opens with a connection to the Public Instance.
 81.
   Command: Enter the following command to change to the home directory (/home/ssm-user/) and test web connectivity using the cURL command: 
 cd ~ curl -I https://aws.amazon.com/training/  
- Expected output: 
-HTTP/2 200 content-type: text/html;charset=UTF-8 server: Server date: Wed, 19 Apr 2023 14:43:47 GMT x-amz-rid: 6HVPS1JY1XW2S1K34Q3Z set-cookie: aws-priv=eyJ2IjoxLCJldSI6MCwic3QiOjB9; Version=1; Comment=&quot;Anonymous cookie for privacy regulations&quot;; Domain=.aws.amazon.com; Max-Age=31536000; Expires=Thu, 18-Apr-2024 14:43:47 GMT; Path=/; Secure set-cookie: aws_lang=en; Domain=.amazon.com; Path=/ x-frame-options: SAMEORIGIN
-
-
-x-xss-protection: 1; mode=block strict-transport-security: max-age=63072000 x-content-type-options: nosniff x-amz-id-1: 6HVPS1JY1XW2S1K34Q3Z last-modified: Thu, 30 Mar 2023 15:58:02 GMT content-security-policy-report-only: default-src *; connect-src *; font-src * data:; frame-src *; img-src * data:; media-src *; object-src *; script-src *; style-src &apos;unsafe-inline&apos; *; report-uri https://prod-us-west-2.csp-report.marketing.aws.dev/submit vary: accept-encoding,Content-Type,Accept-Encoding,User-Agent x-cache: Miss from cloudfront via: 1.1 88c333921d5c405e037b84bb8c2dc33e.cloudfront.net (CloudFront) x-amz-cf-pop: GRU3-P1 x-amz-cf-id: 89R1wtM9vYV0kIQXrEVkcoNzg_C3UfQJIEVkC5BA3xiIH3FD0nVnYw==  
- 
 
 Task 9: Create a NAT gateway and configuring routing in the private subnet 
 In this task, you create a NAT gateway and then create a route table to route non-local traffic to the NAT gateway. You then attach the route table to the private subnet. You can use a NAT gateway to allow instances in a private subnet to connect to the internet or other AWS services, but prevent the internet from initiating a connection with those instances. 
@@ -599,10 +591,5 @@ A new browser tab or window opens with a connection to the Private Instance.
 131.
   Command: Enter the following command to change to the home directory (/home/ssm-user/) and test web connectivity using the cURL command: 
 cd ~ curl -I https://aws.amazon.com/training/   
-
- Expected output: 
-HTTP/2 200 content-type: text/html;charset=UTF-8 server: Server date: Wed, 19 Apr 2023 14:59:09 GMT x-amz-rid: AZPXJ57K93ERATZV588Z set-cookie: aws-priv=eyJ2IjoxLCJldSI6MCwic3QiOjB9; Version=1; Comment=&quot;Anonymous cookie for privacy regulations&quot;; Domain=.aws.amazon.com; Max-Age=31536000; Expires=Thu, 18-Apr-2024 14:59:08 GMT; Path=/; Secure set-cookie: aws_lang=en; Domain=.amazon.com; Path=/ x-frame-options: SAMEORIGIN x-xss-protection: 1; mode=block strict-transport-security: max-age=63072000 x-content-type-options: nosniff x-amz-id-1: AZPXJ57K93ERATZV588Z last-modified: Thu, 30 Mar 2023 15:58:02 GMT content-security-policy-report-only: default-src *; connect-src *; font-src * data:; frame-src *; img-src * data:; media-src *; object-src *; script-src *; style-src &apos;unsafe-inline&apos; *; report-uri https://prod-us-west-2.csp-report.marketing.aws.dev/submit vary: accept-encoding,Content-Type,Accept-Encoding,User-Agent x-cache: Miss from cloudfront via: 1.1 fb6a4eca9caced7b791557c24b8c6606.cloudfront.net (CloudFront) x-amz-cf-pop: GRU3-P1
-x-amz-cf-id: Tjphb1UhSXmtyHvybuq4QIFwzTurEI0g_saLB2nLjlYRiBbHbqn85Q==  
-
 
 

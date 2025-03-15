@@ -6,6 +6,7 @@ kanban-plugin: board
 
 ## ##### Standing on business
 
+- [ ] Best practices aren't set practices
 - [ ] Buy time
 - [ ] Don't Specify Level
 - [ ] Ask yourself What can i get done in 10 min to limit procrastination
