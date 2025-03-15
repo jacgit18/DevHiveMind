@@ -277,7 +277,7 @@ In this task, you add a tag to the Amazon EC2 instance.
  Locate the Name and tags section. 
 49.
  In the Name field, enter Public Instance. 
- Note: No additional instance tags are required for this lab. 
+
 Task 6.3: Select an AMI 
 In this task, you choose an Amazon Machine Image (AMI). The AMI contains a copy of the disk volume used to launch the instance. 
 50.
@@ -346,8 +346,7 @@ Your Amazon EC2 instance is now launched and configured as you specified.
 The Amazon EC2 console is displayed. 
 68.
  Occasionally choose the console refresh button  and wait for Public Instance to display the Instance state as  Running and wait for Status check to pass  3/3 checks passed. 
- Note: The Amazon EC2 instance named Public Instance is initially in a Pending state. The instance state then changes to  Running indicating that the instance has finished booting. 
- Congratulations! You have successfully launched an Amazon EC2 instance into a public subnet. 
+ 
 
 
 Task 7: Connect to a public instance through HTTP 
@@ -373,7 +372,7 @@ The web page hosted on the Amazon EC2 instance is displayed. The page displays t
 
 Task 8: Connect to the Amazon EC2 instance in the public subnet through Session Manager 
 In this task, you connect to your Amazon EC2 instance in the public subnet using Session Manager. 
-ⓘ Learn more: Session Manager is a fully managed AWS Systems Manager capability that you use to manage your Amazon EC2 instances through an interactive one-click browser-based shell or through the AWS Command Line Interface (AWS CLI). You can use Session Manager to start a session with an Amazon EC2 instance in your account. After starting the session, you can run bash commands as you would through any other connection type. 
+
 76.
  At the top of the AWS Management Console, in the search bar, search for and choose EC2. 
 77.
@@ -383,8 +382,7 @@ In this task, you connect to your Amazon EC2 instance in the public subnet using
 The Connect to instance page is displayed. 
 79.
  Choose the Session Manager tab. 
-ⓘ Learn more: With Session Manager, you can connect to Amazon EC2 instances without needing to expose the SSH port on your firewall or Amazon VPC security group. For more information, see 
-AWS Systems Manager Session Manager
+
 . 
 80.
  Choose Connect. 
@@ -402,7 +400,7 @@ x-xss-protection: 1; mode=block strict-transport-security: max-age=63072000 x-co
 
 Task 9: Create a NAT gateway and configuring routing in the private subnet 
 In this task, you create a NAT gateway and then create a route table to route non-local traffic to the NAT gateway. You then attach the route table to the private subnet. You can use a NAT gateway to allow instances in a private subnet to connect to the internet or other AWS services, but prevent the internet from initiating a connection with those instances. 
- Note: To create a NAT gateway, you must specify the public subnet in which the NAT gateway should reside. You must also specify an Elastic IP address to associate with the NAT gateway when you create it. You cannot change the Elastic IP address after you associate it with the NAT gateway. After you&apos;ve created a NAT gateway, you must update the route table associated with one or more of your private subnets to point internet-bound traffic to the NAT gateway. This allows instances in your private subnets to communicate with the internet. 
+ 
 82.
  Return to the AWS Management Console browser tab. 
 83.
@@ -459,12 +457,12 @@ A  Updated routes for rtb-xxxxxxx / Private Route Table successfully message is 
  Choose Save associations. 
 A  You have successfully updated subnet associations for rtb-xxxxxxx / Private Route Table. message is displayed on top of the screen. 
 This route sends internet-bound traffic from the private subnet to the NAT gateway that is in the same Availability Zone. 
- Congratulations! You have successfully created the NAT gateway and configured the private route table. 
+
 
 
 Task 10: Create a security group for private resources 
 In this task, you create a security group that allows incoming HTTP traffic from resources assigned to the public security group. In a multi-tiered architecture, resources in a private subnet are should not directly accessible from the internet, however their is a common use case to route web traffic from publicly accessible resources to private resources. 
-ⓘ Learn more: When you specify a security group as the source for a rule, traffic is allowed from the network interfaces that are associated with the source security group for the specified port and protocol. Incoming traffic is allowed based on the private IP addresses of the network interfaces that are associated with the source security group (and not the public IP or Elastic IP addresses). Adding a security group as a source does not add rules from the source security group. 
+
 98.
  In the left navigation pane, choose Security groups. 
 99.
@@ -494,11 +492,11 @@ o
 102.
  Choose Create security group. 
 A  Security group (sg-xxxxxxx | Private SG) was created successfully message is displayed on top of the screen. 
- Congratulations! You have successfully created the private security group. 
+
 
 Task 11: Launch an Amazon EC2 instance into a private subnet 
 In this task, you launch an Amazon EC2 instance into a private subnet. 
-ⓘ Learn more: Private instances can route their traffic through a NAT gateway or a NAT instance to access the internet. Private instances use the public IP address of the NAT gateway or NAT instance to traverse the internet. The NAT gateway or NAT instance allows outbound communication but doesn’t allow machines on the internet to initiate a connection to the privately addressed instances. 
+
 103.
  At the top of the AWS Management Console, in the search bar, search for and choose EC2. 
 The Amazon EC2 console is displayed. 
@@ -512,7 +510,7 @@ The Launch an instance page is displayed. In this task, you add a tag to the Ama
  Locate the Name and tags section. 
 107.
  Enter Private Instance in the Name field. 
- Note: No additional instance tags are required for this lab. 
+
 Task 11.3: Select an AMI 
 In this task, you choose an AMI. The AMI contains a copy of the disk volume used to launch the instance. 
 108.
@@ -564,7 +562,7 @@ The remaining settings on the page can be left at their default values.
 Task 11.10: Configure user data 
 121.
  Locate and expand the ▶ Advanced details section. 
- Note: To install and configure the new instance as a web server, you provide a user data script that automatically runs when the instance launches. 
+
 122.
  In the User data - optional section, copy and paste the following: 
 #!/bin/bash # To connect to your EC2 instance and install the Apache web server with PHP yum update -y yum install -y httpd php8.1 systemctl enable httpd.service systemctl start httpd cd /var/www/html wget  https://us-west-2-tcprod.s3.amazonaws.com/courses/ILT-TF-200-ARCHIT/v7.9.8.prod-1c01ca56/lab-2-VPC/scripts/instanceData.zip unzip instanceData.zip  
@@ -582,8 +580,7 @@ Your Amazon EC2 instance is now launched and configured as you specified.
 The Amazon EC2 console is displayed. 
 126.
  Occasionally choose the console refresh button  and wait for Private Instance to display the Instance state as  Running and wait for Status check to pass  3/3 checks passed. 
- Note: The Amazon EC2 instance named Private Instance is initially in a Pending state. The instance state then changes to  Running indicating that the instance has finished booting. 
- Congratulations! You have successfully launched an Amazon EC2 instance into a private subnet. 
+
 
 
 Task 12: Connect to the Amazon EC2 instance in the private subnet 
@@ -598,10 +595,11 @@ The Connect to instance page is displayed.
 130.
  Choose Connect. 
 A new browser tab or window opens with a connection to the Private Instance. 
- Note: The Session Manager service is not updated in real time. If you experience errors with Session Manager connecting to an Amazon EC2 instance you just launched, ensure that you have given the instance a few minutes to launch, pass health checks, and communicate with the Session Manager service before trying to open a session connection again. 
+
 131.
   Command: Enter the following command to change to the home directory (/home/ssm-user/) and test web connectivity using the cURL command: 
 cd ~ curl -I https://aws.amazon.com/training/   
+
  Expected output: 
 HTTP/2 200 content-type: text/html;charset=UTF-8 server: Server date: Wed, 19 Apr 2023 14:59:09 GMT x-amz-rid: AZPXJ57K93ERATZV588Z set-cookie: aws-priv=eyJ2IjoxLCJldSI6MCwic3QiOjB9; Version=1; Comment=&quot;Anonymous cookie for privacy regulations&quot;; Domain=.aws.amazon.com; Max-Age=31536000; Expires=Thu, 18-Apr-2024 14:59:08 GMT; Path=/; Secure set-cookie: aws_lang=en; Domain=.amazon.com; Path=/ x-frame-options: SAMEORIGIN x-xss-protection: 1; mode=block strict-transport-security: max-age=63072000 x-content-type-options: nosniff x-amz-id-1: AZPXJ57K93ERATZV588Z last-modified: Thu, 30 Mar 2023 15:58:02 GMT content-security-policy-report-only: default-src *; connect-src *; font-src * data:; frame-src *; img-src * data:; media-src *; object-src *; script-src *; style-src &apos;unsafe-inline&apos; *; report-uri https://prod-us-west-2.csp-report.marketing.aws.dev/submit vary: accept-encoding,Content-Type,Accept-Encoding,User-Agent x-cache: Miss from cloudfront via: 1.1 fb6a4eca9caced7b791557c24b8c6606.cloudfront.net (CloudFront) x-amz-cf-pop: GRU3-P1
 x-amz-cf-id: Tjphb1UhSXmtyHvybuq4QIFwzTurEI0g_saLB2nLjlYRiBbHbqn85Q==  
