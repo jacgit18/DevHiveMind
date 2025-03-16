@@ -36,6 +36,9 @@ Remember, this business involves sensitive matters, so maintaining respect and p
 
 Set aside car money in Investments to borrow against to eventually use that money for a car instead of just saving for a car in your savings account
 
+Get a shitty car color that you don't like that is less popular to get a discount and then you can change it afterwards
+
+
 im good at assessing risk
 
 

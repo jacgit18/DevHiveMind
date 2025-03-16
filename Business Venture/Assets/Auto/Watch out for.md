@@ -32,5 +32,5 @@
 - [ ] go for toyota or Subaru which is also reliable
 - [ ] research the tires
 - [ ] look into [https://www.nicb.org](https://www.nicb.org/)
-- [ ] [[Car Todo]] to add
+- [ ] [[Auto/Car Todo]] to add
 

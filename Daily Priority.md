@@ -35,6 +35,7 @@ kanban-plugin: board
 
 ## Cap One Stuff
 
+- [ ] ###### Try to get put on a team that manages this [Capital One Auto Navigator](https://www.capitalone.com/cars/)
 - [ ] C@pple2024Money
 - [ ] For question use soc core slack channel
 - [ ] [[Capital One Stats]]
