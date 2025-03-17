@@ -36,6 +36,7 @@ kanban-plugin: board
 ## Cap One Stuff
 
 - [ ] ###### Try to get put on a team that manages this [Capital One Auto Navigator](https://www.capitalone.com/cars/)
+- [ ] Focus engineering efforts on getting on teams or industries of interest that you're trying to learn about more that overlap with your personal life like healthcare understanding that better and navigating it personally better or Auto Etc could be anything
 - [ ] C@pple2024Money
 - [ ] For question use soc core slack channel
 - [ ] [[Capital One Stats]]
@@ -56,6 +57,8 @@ kanban-plugin: board
 - [ ] [[OneStream Notes |OneStream]]
 - [ ] create Guide on aws iam with commands
 - [ ] roth ira tax docs come May 31st
+- [ ] Ask doctor for letter of Medical Necessity for supplements pick a exclusive credit cards for supplements once you get letter then you can expense things out from that day for Supplements for HSA
+- [ ] Post about localstack and servless development in aws
 
 
 ## AWS Solution Archetict

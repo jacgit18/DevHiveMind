@@ -29,8 +29,9 @@ MMA has shorter combos because of takedowns. When kicking use high knee elevatio
 Keep sparing for Muay Thai down to 2 or 3 times a month for safety and quality.  
 
 ## **Striking Principles**
-> [!abstract] End Goal
-> The goal is to penetrate an opponent's center-line defense, create angles, and disrupt their balance to enhance striking effectiveness.
+> [!tip] FIRE 
+> - Striking is fire you play with it you don't try to control or hold it. 
+> - The goal is to penetrate an opponent's center-line defense, create angles, and disrupt their balance to enhance striking effectiveness.
 
 ![](https://www.youtube.com/watch?v=HUyraSmgO3I)
 
@@ -38,8 +39,10 @@ Keep sparing for Muay Thai down to 2 or 3 times a month for safety and quality.
 ![](https://www.youtube.com/watch?v=_utlJTCkn-A)  
 
 ![](https://www.youtube.com/watch?v=2umB17ZXMGM&t=207s)
+
 ### **1. Be Playful and Adaptive**
 - Treat sparring as a game; keep it light and exploratory take up space and the other person time.
+- Plan head movement before punching & time people on there steps to kick and be aware of your timing when moving.
 - Set feet quickly and throw body first be fully extending arms on punch.
 - Imagine the opponent as a mirror: move in the opposite direction of their movement, emulating **lateral inversion** which the process of your movement in a mirror orienting inversely.
 - Monkey see monkey do try imitating the person you're sparring with and their movements and stuff.

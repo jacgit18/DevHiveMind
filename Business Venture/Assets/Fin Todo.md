@@ -13,6 +13,7 @@
 - [ ] Look into freedom care to get paid for looking after your old family member
 - [ ] Update roth automated transfer each year to current contribution year for each account.
 
+Avoid democratic states for real estate and look into section 8
 ### Get: 
 - [ ] stockbroker^[Pay for a good Broker also research the Broker and them properly to provide and educate you with information]
 - [ ] accountants

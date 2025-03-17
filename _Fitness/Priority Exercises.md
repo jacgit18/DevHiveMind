@@ -103,7 +103,7 @@ series:
 
 #todo/BAU/Workout
 - [ ] Focus on stability for 3 months then add resistance and more weight and reattempt low priority excercise
-- [ ] 6 to 20 reps near failure at max
+- [ ] 6 to 20 reps near failure at max with heavy weights
 - [ ] Get to 8 set 4 reps heavy weights
 - [ ] Focus on intensity then scale to volume
 - [ ] Slow intensity exercise should spend at least 5 min per exercise
@@ -119,10 +119,12 @@ series:
 | Lower | Leg Press Seated                                        | UpClose  | CM    | High     | *110*     | 3    | 5    | 0     | **110**  |
 | Upper | Rear Delt Fly                                           | N/A      | CM    | High     | *50*      | 3    | 5    | 0     | *45*     |
 | Upper | [[Upper#^238b6e \|Chest Fly]]                           | N/A      | CM    | High     | *70*      | 3    | 5    | 4     | *70*     |
+| Upper | Crunch Chest Fly                                        | N/A      | CM    | High     | *70*      | 3    | 5    | 2     | *70*     |
 | Lower | Adduction Inner Thigh                                   | Squeeze  | CM    | High     | *190*     | 3    | 5    | 0     | **160**  |
 | Upper | [[CableWolverine.gif\|Cable Wolverine]]                 | N/A      | PG    | High     | ***160*** | 3    | 5    | 0     | ***80*** |
 | Upper | [[CableBalloonAbduction.gif \|Cable Balloon Abduction]] | N/A      | PG    | High     | ***160*** | 3    | 5    | 0     | ***80*** |
-| Upper | Mid Row                                                 | N/A      | PG    | High     | *85*      | 3    | 5    | 0     | **42.5** |
+| Upper | Blink Mid Row                                           | N/A      | PG    | High     | *85*      | 4    | 5    | 0     | **42.5** |
+| Upper | Crunch Mid Row                                          | N/A      | PG    | High     | *165*     | 4    | 5    | 0     | **165**  |
 | Upper | [[Upper#^a7be5a \|Cable Woodchopper]]                   | N/A      | RC    | Med      | ***160*** | 3    | 5    | 0     | ***80*** |
 | Lower | Abduction Outer Thigh                                   | Spread   | CM    | Med      | *160*     | 3    | 5    | 7     | *145*    |
 | Upper | Isolated Lateral Chest                                  | Wide     | CM    | Med      | *100*     | 3    | 5    | 0     | **50**   |
@@ -132,6 +134,7 @@ series:
 | Upper | [[CableFloorFly.gif \|Cable Floor Fly]]                 | N/A      | PG    | Low      | ***160*** | 3    | 5    | 0     | ***80*** |
 | Core  | [[Core#^b41212\| Leg Cable Reverse Crunch]]             | N/A      | RC    | Low      | ***90***  | 3    | 5    | 0     | ***45*** |
 | Upper | Assisted Bench Press                                    | N/A      | CM    | Med      | *50*      | 3    | 5    | 0     | *50*     |
+| Lower | Hip Thrust                                              | N/A      | CM    | High     | ***100*** | 4    | 8    | 0     | **50**   |
 ^machine
 
 

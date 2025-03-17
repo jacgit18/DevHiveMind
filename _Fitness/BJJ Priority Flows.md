@@ -42,8 +42,10 @@ Guards not mentioned here can be risky in real-world scenarios where strikes are
 Submissions can serve as both sweeps and opportunities to transition to other submissions. Approach with the mindset that the opponent's limbs are obstacles; using submissions to manipulate their limbs can help create openings, especially for securing chokes.
 
 > [!abstract] Bottom Up Approach 
-> ***"You train jiu-jitsu to fight on the ground and rise to your feet. In life, you learn to face battles starting from rock bottom, standing up stronger and taller each time." ***
-### Real-World Tips**
+> ***"You train jiu-jitsu to fight on the ground and rise to your feet. In life, you learn to face battles starting from rock bottom, standing up stronger and taller each time." *** 
+
+At times it can BJJ can be like water in the fluidity but at times you can be like air and at other times you have to implement control bending things to your will like the earth. 
+### Real-World Tips
 > Slow down opponent in between transitions then pick and choose when to use you're speed
 - **Distance Management:** Always use your legs to create space and control or break posture.
 - **Safe Escapes:** Prioritize sweeps that lead to standing disengagements if in danger while using leverage-based techniques to neutralize stronger person.
