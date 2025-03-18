@@ -51,6 +51,10 @@ Start with a dynamic stretch to Improve blood flow and flexibility. End with a s
 - [[Upper#^5ff8c1 |Scapular Push-Ups ]]
 	- Breathe deeply as you push your chest outward, squeezing your shoulder blades together. Then, reverse the motion by pulling your chest inward and separating your shoulder blades, keeping your elbows straight throughout the movement.
 
+### Stretches To add in Regularly
+- 90:90
+- Cossack squats
+
 ## Priority Workouts
 #todo/Med/Dev 
 - [ ] Revisit and edit chart
