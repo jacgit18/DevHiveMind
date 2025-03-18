@@ -21,7 +21,7 @@ Create stories for work that doesn't have a ticket that you are doing
 Local stock is a cloud service emulator that empowers developers to run AWS applications locally eliminating the need for a cloud connection by encapsulating these services within a single container local stock streamlined the testing and development process
 
 
-
+One streams sends to aws and clodwatch logs are triggered for sqs repo
 
 ```handwritten-ink
 {
