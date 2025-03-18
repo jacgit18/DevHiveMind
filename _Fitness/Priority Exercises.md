@@ -51,7 +51,19 @@ Start with a dynamic stretch to Improve blood flow and flexibility. End with a s
 - [[Upper#^5ff8c1 |Scapular Push-Ups ]]
 	- Breathe deeply as you push your chest outward, squeezing your shoulder blades together. Then, reverse the motion by pulling your chest inward and separating your shoulder blades, keeping your elbows straight throughout the movement.
 
-### Stretches To add in Regularly
+### Row Machine 
+- **Workout 1: 1 Minute On, 1 Minute Off**
+- **Workout 2: All-Out in a Minute**
+- **Workout 3: 10 to 20 Alternation** - for 20 min or less alt from 10 to 20 strokes per minute
+- **Workout 4: Power Strokes**
+- **Workout 5:  Rounds 1 to 4**
+	- Round 1: Row one minute, then rest for 90 seconds.
+	- Round 2: Row two minutes, then rest for three minutes.
+	- Round 3: Row three minutes, then rest for four minutes and 30 seconds.
+	- Round 4: Row four minutes, then rest for six minutes.
+	- Round 5: Row three minutes, then rest for four minutes and 30 seconds.
+	- Round 6: Row two minutes, then rest for three minutes.
+	- Round 7: Row for one minute.
 
 ## Priority Workouts
 #todo/Med/Dev 
