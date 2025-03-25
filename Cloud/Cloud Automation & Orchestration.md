@@ -12,7 +12,10 @@ Relates:
 Peer Reviewed: 0
 dg-publish:
 ---
-# **AWS Services That Generate or Start Other Services**
+# **Services That Generate or Start Other Services**
+
+#todo/Med/Dev 
+- [ ] Update with Google & Azure services
 
 This is a categorized breakdown of AWS services that **provision, automate, or manage** infrastructure and applications within an **IaaS (Infrastructure as a Service)** context.
 
