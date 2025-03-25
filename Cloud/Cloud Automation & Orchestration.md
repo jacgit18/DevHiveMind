@@ -21,13 +21,13 @@ Application load balancers for server-less architecture
 
 
 
-5 vpc per region and they are region locked  
+
   
   
-Leave default vpc don't delete it  
+
   
   
-The latest processer when it comes to ec2 can be the better choice especially if it's more performant which reduces time for task and bring Downs cost sometimes depending on things
+
 
 
 
