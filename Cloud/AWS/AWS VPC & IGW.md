@@ -1,5 +1,7 @@
 ---
-tags: 
+tags:
+  - cloud
+  - AWS
 author:
   - gitUserNamePlaceHolder
 Comments: Placeholder comment any thing else you want to mention about the document.
@@ -13,6 +15,22 @@ dg-publish:
 ---
 #### **What is AWS VPC?**
 
+Amazon **Virtual Private Cloud (VPC)** is a logically isolated network within the AWS cloud that allows you to define,  isolate, and control sections your **networking environment** within the  AWS Cloud infrastructure. It enables you to create a secure, scalable, and customizable network infrastructure for running AWS resources like EC2 instances, RDS databases, and other services. By default, resources within a VPC cannot communicate with the internet or other VPCs unless specifically configured to do so.  
+
+With VPC, you have full control over:
+
+- **IP address ranges** (IPv4 and IPv6)
+- **Subnet creation** (public and private subnets)
+- **Route tables and network gateways**
+- **Security settings** (security groups and network ACLs)
+- **Connectivity** (internet access, VPNs, AWS Direct Connect)
+    
+
+**Side Note:** AWS allows up to **5 VPCs per region**, and they are **region-locked**, meaning they cannot span multiple regions. However, you can request an increase in the VPC limit if needed.
+
+
+##### **What Problem Does AWS VPC Solve?**
+Before VPC, AWS resources were deployed in a **shared networking environment**, which had limited customization and security options. AWS VPC solves several critical problems:
 
 
 
@@ -20,15 +38,7 @@ dg-publish:
 
 
 
-Amazon **Virtual Private Cloud (VPC)** is a logically isolated network within the AWS cloud that allows you to define,  isolate section of the AWS Cloud infrastructure
-
-
-define and control your own **networking environment**. It enables you to create a secure, scalable, and customizable network infrastructure for running AWS resources like EC2 instances, RDS databases, and other services.
-
-
-
-where you can launch AWS resources such as EC2 instances, RDS databases, and more. By default, resources within a VPC cannot communicate with the internet or other VPCs unless specifically configured to do so.  
-  
+#### **What is AWS IGW?**
 An Internet Gateway(IGW) is a horizontally scaled, redundant, and highly available VPC component that allows communication between instances in your VPC and the internet. It serves as a target for routing traffic destined for the internet from your VPC's subnets.  
   
 The relationship between a VPC and an Internet Gateway is as follows:  

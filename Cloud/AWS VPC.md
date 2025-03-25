@@ -13,35 +13,16 @@ dg-publish:
 ---
 ### **What is AWS VPC and What Problem Does It Solve?**
 
-With VPC, you have full control over:
 
-- **IP address ranges** (IPv4 and IPv6)
-    
-- **Subnet creation** (public and private subnets)
-    
-- **Route tables and network gateways**
-    
-- **Security settings** (security groups and network ACLs)
-    
-- **Connectivity** (internet access, VPNs, AWS Direct Connect)
-    
-
-**Side Note:** AWS allows up to **5 VPCs per region**, and they are **region-locked**, meaning they cannot span multiple regions. However, you can request an increase in the VPC limit if needed.
 
 ---
 
-### **What Problem Does AWS VPC Solve?**
-
-Before VPC, AWS resources were deployed in a **shared networking environment**, which had limited customization and security options. AWS VPC solves several critical problems:
 
 #### **1. Network Isolation and Security**
-
 - AWS VPC creates a **private network** where your resources are isolated from other AWS customers.
-    
 - It allows you to **segment resources** using **subnets** (e.g., public vs. private subnets).
-    
 - Security Groups and Network ACLs provide **firewall-level security** at both the instance and subnet levels.
-    
+
 
 **Problem Solved:** Protects your infrastructure from unauthorized access and external threats.
 
