@@ -24,14 +24,11 @@ IaaS provides virtualized computing resources over the internet, allowing users 
 
 
 ### **Management & Governance**
-
 **AWS CloudFormation** → **IaaS / PaaS**
 - It automates infrastructure provisioning, making it infrastructure-as-code (IaaS).
-
 - However, it also abstracts some management, pushing it into PaaS territory.
 
 ### **Security, Identity, & Compliance**
-
 **AWS CloudHSM** → **IaaS / PaaS**
 - Provides dedicated hardware for key management (leaning toward IaaS), but AWS handles some management aspects, making it partially PaaS.
 
@@ -44,8 +41,13 @@ PaaS offers a platform allowing customers to develop, run, and manage applicatio
 - **AWS Lambda**: Enables running code without provisioning or managing servers, automatically scaling with demand.
 - **Amazon Relational Database Service (RDS)**: Simplifies setting up, operating, and scaling relational databases.
 
-### **Management & Governance**
+### **Networking & Content Delivery**
+ **AWS CloudFront** 
+- A managed CDN service that handles caching and content delivery without needing infrastructure management.
 
+### **Application Integration**
+**AWS CloudSearch** 
+- A fully managed search service that abstracts the underlying infrastructure while allowing customization.
 
 
 ## **3. Software as a Service (SaaS)**
@@ -56,19 +58,18 @@ SaaS delivers software applications over the internet on a subscription basis. A
 - **Amazon Chime**: Offers communications services including voice, video, and chat.
 - **Amazon QuickSight**: Delivers business intelligence (BI) services with data visualization capabilities.
 
-
 ### **Management & Governance**
-
-**AWS CloudTrail** → **SaaS**
+**AWS CloudTrail**
 - It provides logging and auditing as a managed service with no underlying infrastructure to manage.
+
+**AWS CloudWatch**
+- A fully managed monitoring service that provides observability across AWS applications and infrastructure.
 
 ## **4. Function as a Service (FaaS)**
 
 FaaS is a subset of serverless computing that allows users to execute code in response to events without managing servers. In AWS, the primary FaaS offering is:
 
 - **AWS Lambda**: Allows running code in response to events such as changes in data or system state, automatically managing the compute fleet.
-
-
 
 It's important to note that some AWS services can span multiple categories. For instance, **AWS Lambda** is primarily considered a FaaS offering but also fits within the broader PaaS category due to its platform capabilities.
 
