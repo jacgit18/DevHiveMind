@@ -13,10 +13,6 @@ dg-publish:
 ---
 ### **What is AWS VPC and What Problem Does It Solve?**
 
-#### **What is AWS VPC?**
-
-Amazon **Virtual Private Cloud (VPC)** is a logically isolated network within the AWS cloud that allows you to define and control your own **networking environment**. It enables you to create a secure, scalable, and customizable network infrastructure for running AWS resources like EC2 instances, RDS databases, and other services.
-
 With VPC, you have full control over:
 
 - **IP address ranges** (IPv4 and IPv6)

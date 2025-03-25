@@ -11,7 +11,23 @@ Relates:
 Peer Reviewed: 0
 dg-publish:
 ---
-In AWS, a Virtual Private Cloud (VPC) is a logically isolated section of the AWS Cloud where you can launch AWS resources such as EC2 instances, RDS databases, and more. By default, resources within a VPC cannot communicate with the internet or other VPCs unless specifically configured to do so.  
+#### **What is AWS VPC?**
+
+
+
+
+
+
+
+
+Amazon **Virtual Private Cloud (VPC)** is a logically isolated network within the AWS cloud that allows you to define,  isolate section of the AWS Cloud infrastructure
+
+
+define and control your own **networking environment**. It enables you to create a secure, scalable, and customizable network infrastructure for running AWS resources like EC2 instances, RDS databases, and other services.
+
+
+
+where you can launch AWS resources such as EC2 instances, RDS databases, and more. By default, resources within a VPC cannot communicate with the internet or other VPCs unless specifically configured to do so.  
   
 An Internet Gateway(IGW) is a horizontally scaled, redundant, and highly available VPC component that allows communication between instances in your VPC and the internet. It serves as a target for routing traffic destined for the internet from your VPC's subnets.  
   
