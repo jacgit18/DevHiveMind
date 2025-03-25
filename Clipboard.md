@@ -12,8 +12,7 @@ console.log("User input:", userInput);
 
 Create a ticket  
   
-  
-Tag contractor and pete  
+
   
 Create stories for work that doesn't have a ticket that you are doing  
   

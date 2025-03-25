@@ -1,5 +1,7 @@
 ---
-tags: 
+tags:
+  - cloud
+  - methodology
 author:
   - jacgit18
   - chatgpt
@@ -12,15 +14,8 @@ Relates:
 Peer Reviewed: 0
 dg-publish:
 ---
-Infrastructure as a Service (IaaS) and Infrastructure as Code (IaC) are related concepts in cloud computing, but they serve different purposes:  
-  
-1. **Infrastructure as a Service (IaaS):**  
-- IaaS refers to a cloud computing service model where cloud providers offer virtualized computing resources over the internet. These resources typically include virtual machines, storage, networking, and other infrastructure components.  
-- With IaaS, users can provision and manage virtualized infrastructure resources on-demand, paying only for the resources they use. Examples of IaaS providers include Amazon Web Services (AWS), Microsoft Azure, and Google Cloud Platform (GCP).  
-- Users have full control over the configuration, management, and scaling of the infrastructure components, but they are responsible for managing the operating systems, middleware, applications, and data running on these virtual machines.  
-  
-2. **Infrastructure as Code (IaC):**  
-- IaC is a practice of managing and provisioning infrastructure resources using machine-readable configuration files or scripts, rather than manually configuring infrastructure components through graphical user interfaces (GUIs) or command-line interfaces (CLIs).  
+# **Infrastructure as Code:**  
+- IaC is a methodology within [[Cloud Service Model]] to manage and provisioning infrastructure resources using machine-readable configuration files or scripts, rather than manually configuring infrastructure components through graphical user interfaces (GUIs) or command-line interfaces (CLIs).  
 - With IaC, infrastructure configurations are defined in code (e.g., YAML, JSON, or programming languages like Terraform, CloudFormation, or Ansible). These configuration files or scripts describe the desired state of the infrastructure, including servers, networks, storage, security policies, and dependencies.  
 - IaC enables infrastructure to be treated as code, allowing for version control, code review, and automated testing of infrastructure changes. It also facilitates the automation of infrastructure provisioning and management, ensuring consistency, repeatability, and scalability.  
 - By adopting IaC practices, organizations can achieve infrastructure agility, improve collaboration between development and operations teams (DevOps), and accelerate the deployment of applications and services in a cloud environment.  
@@ -28,7 +23,6 @@ Infrastructure as a Service (IaaS) and Infrastructure as Code (IaC) are related 
 **Infrastructure as Code (IaC)** is fundamentally about automation, but where it falls within the **IaaS vs. PaaS** spectrum depends on how it's used and the specific service involved.
 
 - **IaC as IaaS**:
-    
     - When using IaC to provision raw infrastructure (e.g., EC2 instances, VPCs, security groups, databases), it aligns with **Infrastructure as a Service (IaaS)**.
     - Example: AWS **CloudFormation**, Terraform, and Ansible, when used to manage VMs, networking, and storage.
 

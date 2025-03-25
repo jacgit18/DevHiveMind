@@ -1,5 +1,6 @@
 ---
-tags: 
+tags:
+  - cloud
 author:
   - gitUserNamePlaceHolder
 Comments: Placeholder comment any thing else you want to mention about the document.
@@ -17,7 +18,7 @@ This is a categorized breakdown of AWS services that **provision, automate, or m
 
 ---
 
-## **1. Infrastructure as Code (IaC) & Automation**
+## **1. Infrastructure as Code ([[IAC|IAC]]) & Automation**
 
 Services that define, provision, and manage AWS resources through templates or automation.
 
