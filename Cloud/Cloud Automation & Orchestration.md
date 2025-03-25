@@ -11,26 +11,6 @@ Relates:
 Peer Reviewed: 0
 dg-publish:
 ---
-Security 4 ways - IAM, Network Security, Data Encryption, Application Security
-
-Dynamodb and serverless you don't have to worry about vpcs in the architecture also no dealing with load balancers  
-  
-  
-Application load balancers for server-less architecture
-
-
-
-
-
-  
-  
-
-  
-  
-
-
-
-
 # **AWS Services That Generate or Start Other Services**
 
 This is a categorized breakdown of AWS services that **provision, automate, or manage** infrastructure and applications within an **IaaS (Infrastructure as a Service)** context.

@@ -23,6 +23,10 @@ Local stock is a cloud service emulator that empowers developers to run AWS appl
 
 One streams sends to aws and clodwatch logs are triggered for sqs repo
 
+
+Security 4 ways - IAM, Network Security, Data Encryption, Application Security
+
+
 ```handwritten-ink
 {
 	"versionAtEmbed": "0.3.3",
