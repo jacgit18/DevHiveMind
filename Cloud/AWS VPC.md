@@ -18,46 +18,21 @@ dg-publish:
 ---
 
 
-#### **1. Network Isolation and Security**
-- AWS VPC creates a **private network** where your resources are isolated from other AWS customers.
-- It allows you to **segment resources** using **subnets** (e.g., public vs. private subnets).
-- Security Groups and Network ACLs provide **firewall-level security** at both the instance and subnet levels.
-
-
-**Problem Solved:** Protects your infrastructure from unauthorized access and external threats.
 
 ---
 
-#### **2. Customizable IP Addressing and Network Configuration**
 
-- With AWS VPC, you define your own **IP address range** using **CIDR blocks**.
-    
-- You can configure **multiple subnets** across different availability zones.
-    
-- You control how traffic flows using **route tables** and **internet gateways**.
-    
-
-**Problem Solved:** Gives complete control over network architecture, allowing for customized configurations.
 
 ---
 
-#### **3. Private and Secure Communication Between AWS Services**
 
-- AWS VPC allows secure **private communication** between EC2 instances, RDS databases, Lambda functions, and other AWS services.
-    
-- Services like **VPC Peering, AWS PrivateLink, and AWS Transit Gateway** enable private communication across different VPCs or AWS accounts.
-    
-
-**Problem Solved:** Eliminates the need for exposing internal services to the public internet.
 
 ---
 
 #### **4. Scalable and Flexible Connectivity**
 
 - VPC can **scale** with your infrastructure as you grow.
-    
 - You can **connect your on-premises data center** to AWS using **VPNs or AWS Direct Connect**.
-    
 - Load balancers, NAT gateways, and Elastic IPs ensure **high availability** and **efficient traffic distribution**.
     
 
