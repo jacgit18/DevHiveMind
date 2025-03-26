@@ -14,7 +14,8 @@ Peer Reviewed: 0
 dg-publish: false
 ---
 ![[Service Types.jpg]]
-AWS offers a range of services that fall under the categories of Infrastructure as a Service (IaaS), Platform as a Service (PaaS), and Software as a Service (SaaS). EC2 (Elastic Compute Cloud) is indeed an IaaS offering, providing virtual servers in the cloud, while Elastic Beanstalk is a higher-level service that abstracts away the infrastructure management and is classified as a PaaS. Other AWS services, such as S3 (Simple Storage Service), RDS (Relational Database Service), and Lambda, also fall into different categories within the spectrum of cloud service models.
+
+Cloud offers a range of services that fall under the categories of Infrastructure as a Service (IaaS), Platform as a Service (PaaS), and Software as a Service (SaaS). EC2 (Elastic Compute Cloud) is indeed an IaaS offering, providing virtual servers in the cloud, while Elastic Beanstalk is a higher-level service that abstracts away the infrastructure management and is classified as a PaaS. Other AWS services, such as S3 (Simple Storage Service), RDS (Relational Database Service), and Lambda, also fall into different categories within the spectrum of cloud service models.
 
 ## IAAS
 IaaS, or Infrastructure as a Service, leverages virtualization to provide cloud infrastructure encompassing servers, network, storage, and operating systems. Recognized for its flexibility, users have complete control through dashboards and APIs. Unlike other models, IaaS necessitates user management of applications, data, runtimes, middleware, and OS, while the provider handles servers, storage, networking, and visualization layers.

@@ -7,7 +7,7 @@ Purpose: This documentation discusses
 Status: 
 Started: 
 EditDate: 
-Relates: 
+Relates: "[[Cloud Service Model]]"
 Peer Reviewed: 0
 dg-publish:
 ---
@@ -46,17 +46,13 @@ PaaS offers a platform allowing customers to develop, run, and manage applicatio
 - **Why?** OpsWorks provides **configuration management** and **application deployment automation** using **Chef and Puppet**, abstracting away the need to manually configure and manage servers.
 - **Overlap?** While it interacts with IaaS (e.g., EC2 instances), its automation and orchestration features make it more of a **PaaS** offering.
 
-
 **AWS Control Tower**
 - **Why?** Control Tower simplifies **multi-account governance and security compliance** by providing an **automated framework** for managing AWS accounts.
 - **Overlap?** It does not provide raw infrastructure (IaaS) but rather **manages and enforces policies** over multiple AWS accounts, making it a **platform service**.
 
-
 ### **Networking & Content Delivery**
  **AWS CloudFront** 
 - A managed CDN service that handles caching and content delivery without needing infrastructure management.
-
-
 
 ### **Application Integration**
 **AWS CloudSearch** 
