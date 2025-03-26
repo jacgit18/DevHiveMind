@@ -243,8 +243,13 @@ body:not(.native-scrollbars) .modal-container ::-webkit-scrollbar-thumb {
 
 /* mod top buttons */
 
-.sidebar-toggle-button.mod-left {
-    top: 24px;
+.mod-windows .sidebar-toggle-button.mod-left {
+    top: 28px;
+}
+
+.mod-macos.is-hidden-frameless:not(.is-popout-window) .sidebar-toggle-button.mod-right {
+    position: relative;
+    background-color: auto;
 }
 
 .workspace-ribbon.mod-left:before {
@@ -314,7 +319,7 @@ body:not(.native-scrollbars) .modal-container ::-webkit-scrollbar-thumb {
 
 .nav-file-title, .nav-folder-title {
     min-width: calc(100% - 12px);
-    border-radius: 6px;
+    border-radius: 0px;
 }
 
 .nav-file-title:hover, .nav-folder-title:hover {
@@ -325,7 +330,12 @@ body:not(.native-scrollbars) .modal-container ::-webkit-scrollbar-thumb {
     padding: 0 4px;
 }
 
+body:not(.is-phone) .workspace-leaf.mod-active .tree-item-self.has-focus {
+    box-shadow: none;
+}
+
 .nav-file-title.is-active {
+    margin: 4px 0px;
     background: rgba(255, 255, 255, 0.05);
     border: 1px solid rgba(255, 255, 255, 0.08);
     box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.5);
@@ -371,20 +381,27 @@ body:not(.native-scrollbars) .modal-container ::-webkit-scrollbar-thumb {
 /* change flash animation */
 
 .is-flashing {
-    background: transparent;
+    mix-blend-mode: normal;
 }
 
-.is-flashing .nav-file-title {
+.is-flashing.nav-file-title::after {
+    content: ' ';
+    display: block;
+    position: absolute;
+    width: 200%;
+    height: 100%;
+    margin-top: -4px;
+    margin-left: -100%;
+    margin-right: -100%;
     background: linear-gradient(90deg, 
         rgba(255, 255, 255, 0.05) 0%,
         rgba(255, 255, 255, 0.05) 30%,
         rgba(255, 255, 255, 0.3) 50%,
         rgba(255, 255, 255, 0.05) 70%,
         rgba(255, 255, 255, 0.05) 100%);
-    animation: flashing 5s infinite;
+    animation: flashing 3s infinite;
     animation-timing-function: linear;
     background-size: 200px 100%;
-    /* --text-highlight-bg: var(--custom-accent); */
 }
 
 @keyframes flashing {
@@ -465,8 +482,8 @@ body:not(.plugin-sliding-panes):not(.is-mobile) .workspace-leaf-content[data-typ
 
 .titlebar .titlebar-text::after {
     z-index: 5;
-    opacity: 0.7;
-    content: " - https://tmz.io/sodalite v0.8.2";
+    opacity: 0.5;
+    content: " - https://tmz.io/sodalite v0.8.4";
 }
 
 /* status bar */
@@ -646,7 +663,9 @@ body:not(.is-mobile) .workspace-leaf-content > .nav-header + *::-webkit-scrollba
     margin-top: 48px;
 }
 
-body:not(.is-mobile) .workspace-leaf-content[data-type="bookmarks"] .view-content {
+body:not(.is-mobile) .workspace-leaf-content[data-type="bookmarks"] .view-content,
+body:not(.is-mobile) .workspace-leaf-content[data-type="outline"] .view-content,
+body:not(.is-mobile) .workspace-leaf-content[data-type="all-properties"] .view-content {
     padding-top: 56px;
 }
 
