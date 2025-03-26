@@ -29,6 +29,7 @@ Services that define, provision, and manage AWS resources through templates or a
 - **AWS OpsWorks** → Automates configuration management using **Chef/Puppet**.
 - **AWS Service Catalog** → Creates and manages **pre-approved CloudFormation stacks**.
 - **AWS Proton** → Automates infrastructure templates for **containerized and serverless applications**.
+- **AWS CodePipline** → is the primary service that orchestrates the flow between CodeCommit, CodeBuild, and CodeDeploy in a CI/CD workflow.
 
 ---
 
