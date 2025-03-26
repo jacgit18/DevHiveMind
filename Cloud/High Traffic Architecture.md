@@ -33,5 +33,3 @@ Here are steps you can take to make the transition:
 6. **Monitor and Optimize**: Continuously monitor your application's performance and resource utilization using CloudWatch metrics and logs. Optimize your EC2 instances and scaling configurations as needed to ensure cost-effectiveness and optimal performance.
 
 By transitioning to Elastic Beanstalk with EC2 instances, you can better accommodate high traffic while maintaining control and flexibility over your infrastructure resources.
-
-32NSPVOe3Q3JLu
