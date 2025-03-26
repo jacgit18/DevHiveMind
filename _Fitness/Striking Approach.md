@@ -61,6 +61,14 @@ Keep sparing for Muay Thai down to 2 or 3 times a month for safety and quality.
 - Inhale out of Range.
 
 ### **2. Defense & Punch Timing**
+#### Optimal Striking Defense Order of Operations 
+this is a thought process which is a mental order of operation not a rule more of a guideline:
+1. Use footwork to stay at a safe range or angle.  
+2. Hand fight to control their hands or parry an incoming punch to create openings.  
+3. If they overextend, use head movement slightly and counter. **Use Head Movement (If Needed, But Secondary to Footwork)**
+4. If a kick comes, block or evade first, then counter. **(When Footwork and Hand Fighting Fail Block)**
+5. Attack with a strike once you have an advantage in position, control, or see opening.
+
 - **Defensive Hand Positioning**:
     - Use your backhand to catch and block punches.
     - Keep your backhand higher to protect your head and as your primary guard hand alternating between guarding with the one and both.
