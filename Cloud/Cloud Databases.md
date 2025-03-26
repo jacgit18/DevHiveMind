@@ -13,11 +13,33 @@ Relates:
 Peer Reviewed: 0
 dg-publish:
 ---
-![[Aws DB services.png]]
+When navigating the realm of databases in AWS, there exist various approaches.
 
-When navigating the realm of databases in AWS, there exist various approaches. 
 
-![[Purpose built DB.png]]
+# AWS Database Services
+
+| Database Type | AWS Service                                                    |
+| ------------- | -------------------------------------------------------------- |
+| Relational    | Amazon Aurora, Amazon RDS, Amazon Redshift                     |
+| Key-value     | Amazon DynamoDB                                                |
+| In-memory     | Amazon ElastiCache for Memcached, Amazon ElastiCache for Redis |
+| Document      | Amazon DocumentDB                                              |
+| Wide column   | Amazon Keyspaces                                               |
+| Graph         | Amazon Neptune                                                 |
+| Time series   | Amazon Timestream                                              |
+| Ledger        | Amazon Quantum Ledger Database (Amazon QLDB)                   |
+
+
+# Purpose-Built Databases in AWS
+
+| Database Type          | Use Case                                                                 | AWS Service                     |
+|------------------------|--------------------------------------------------------------------------|---------------------------------|
+| Relational             | Traditional apps, CRM, eCommerce                                         | Amazon RDS, Aurora, Redshift    |
+| Non-Relational (NoSQL) | High-traffic web apps, eCommerce, Gaming                                 | Amazon DynamoDB                 |
+| In-memory              | Caching, session management                                              | Amazon ElastiCache              |
+| Graph                  | Fraud detection, social networking, recommendation engines               | Amazon Neptune                  |
+
+
 Cloud databases are categorized into different service models within cloud computing:
 
 1. **[[Cloud Service Model#SAAS|SAAS]] (Software as a Service):** Cloud databases under SaaS typically provide storage and data analytical tools. Users access these services through a web interface, and the provider manages infrastructure, maintenance, and updates.
@@ -33,5 +55,4 @@ When opting for the Infrastructure as a Service (IaaS) approach, you have the fl
 
 Alternatively, you can adopt more of a Software as a Service (SaaS) approach, where your focus shifts towards optimizing and configuring your application, rather than managing the underlying infrastructure. This can be achieved by leveraging managed services such as `RDS` which launches with AWS VPC by default or `DynamoDB` which is good for serverless architecture and can be used without a lot of setup, allowing you to offload the operational overhead of database management to AWS.
 ![[Benefits of Managed DB.png]]
-
 

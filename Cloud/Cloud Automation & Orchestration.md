@@ -15,7 +15,7 @@ dg-publish:
 # **Services That Generate or Start Other Services**
 
 #todo/Med/Dev 
-- [ ] Update with Google & Azure services
+- [ ] Update with Google & Azure S
 
 This is a categorized breakdown of AWS services that **provision, automate, or manage** infrastructure and applications within an **IaaS (Infrastructure as a Service)** context.
 
