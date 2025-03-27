@@ -143,6 +143,7 @@ series:
 | Lower | Abduction Outer Thigh                                   | Spread   | CM    | Med      | *160*     | 3    | 5    | 7     | *145*    |
 | Upper | Isolated Lateral Chest                                  | Wide     | CM    | Med      | *100*     | 3    | 5    | 0     | **50**   |
 | Upper | Low Row                                                 | N/A      | PG    | Med      | *85*      | 3    | 5    | 0     | *85*     |
+| Upper | Crunch Low Row                                          | N/A      | PG    | Med      | *88*      | 3    | 5    | 0     | *88*     |
 | Upper | Shoulder Press                                          | Narrow   | CM    | Low      | *40*      | 3    | 5    | 0     | *40*     |
 | Upper | Shoulder Press                                          | Wide     | CM    | Low      | *50*      | 3    | 5    | 0     | *50*     |
 | Upper | [[CableFloorFly.gif \|Cable Floor Fly]]                 | N/A      | PG    | Low      | ***160*** | 3    | 5    | 0     | ***80*** |
