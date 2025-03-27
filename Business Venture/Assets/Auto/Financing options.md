@@ -16,3 +16,23 @@ When looking for a loan to finance a car purchase, there are several options ava
 7. Online Marketplaces: Some online marketplaces connect borrowers with multiple lenders, allowing you to receive loan offers from various sources. This can help you compare rates and terms easily.  
   
 Before selecting a lender, it's important to compare interest rates, loan terms, fees, and eligibility criteria. Shop around and obtain pre-approval from multiple lenders to find the best financing option that suits your needs and financial situation.
+
+
+
+Car dealerships are **not legally required** to tell you how long a car has been on the lot, but many will provide this information if you ask. Some dealerships may be hesitant to share it, especially if the car has been sitting for a long time, as that could give buyers leverage to negotiate a lower price.
+
+### **Ways to Find Out This Information:**
+1. **Ask Directly** – Some dealers will tell you if you ask, especially if you phrase it as part of your decision-making process.
+
+2. **Check the Vehicle History Report** – Services like **Carfax or AutoCheck** sometimes include auction or dealer listing dates.
+
+3. **Look at the Manufacturer’s Date** – Check the sticker inside the driver’s door for the build date. If it's an older model year but still unsold, it may have been sitting for a while.
+
+4. **Use the VIN on Online Marketplaces** – Some dealer websites and third-party sites (e.g., Cargurus) show how long a car has been listed for sale.
+
+
+### **Why It Matters:**
+- Cars sitting for **90+ days** often mean better negotiation leverage.
+- Older inventory costs the dealership money in interest, making them more likely to offer discounts.
+
+

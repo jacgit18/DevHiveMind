@@ -47,3 +47,5 @@ with open("data.jsonl", "r") as file:
         print(data)
 ```
 
+#todo/Med/Dev 
+- [ ] [10 Must-Know Python Libraries for LLMs in 2025 - MachineLearningMastery.com](https://machinelearningmastery.com/10-must-know-python-libraries-for-llms-in-2025/)

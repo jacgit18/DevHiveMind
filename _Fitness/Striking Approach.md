@@ -17,7 +17,7 @@ Relates:
 Peer Reviewed: 0
 dg-publish:
 ---
-# Striking Guide
+# Striking Guide 
 ![[MMASchedule.jpg]]
 ### **Practice & Simulation**
 > ***Be in constant motion prioritizing timing over speed*** 
@@ -31,6 +31,7 @@ Keep sparing for Muay Thai down to 2 or 3 times a month for safety and quality.
 ## **Striking Principles**
 > [!tip] FIRE 
 > - Striking is fire you play with it you don't try to control or hold it. 
+> - "Be undefined yet deliberate, untethered yet rooted, and always ready to shift."
 > - The goal is to penetrate an opponent's center-line defense, create angles, and disrupt their balance to enhance striking effectiveness.
 
 ![](https://www.youtube.com/watch?v=HUyraSmgO3I)
