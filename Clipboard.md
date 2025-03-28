@@ -25,6 +25,8 @@ One streams sends to aws and clodwatch logs are triggered for sqs repo
 
 Security 4 ways - IAM, Network Security, Data Encryption, Application Security
 
+You can ignore path when creating iam role
+
 
 ```handwritten-ink
 {

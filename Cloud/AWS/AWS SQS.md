@@ -13,6 +13,10 @@ dg-publish:
 ---
 Amazon **SQS (Simple Queue Service)** is designed for **temporary, transient data** rather than permanent storage. It is primarily used for **decoupling services** in distributed systems, allowing components to communicate asynchronously.
 
+#todo/High/Dev 
+- [ ] [Guide to Sending Messages to an SQS Queue With Lambda. \| by Kim siangchin \| Code Like A Girl](https://code.likeagirl.io/guide-to-sending-messages-to-an-sqs-queue-with-lambda-758cf782cb83)
+- [ ] [A guide to using LocalStack — Running AWS Locally \| by Deepika Juneja \| Medium](https://deepikajuneja.medium.com/a-guide-to-using-localstack-running-aws-locally-cd68744e2c94)
+
 ### **What Type of Data is Processed by SQS?**
 
 1. **Event-Driven Data** – Messages that trigger processing in another system (e.g., order placed, user signup, email notifications).

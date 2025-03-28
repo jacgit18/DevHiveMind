@@ -8,6 +8,7 @@ kanban-plugin: board
 
 - [ ] Best practices aren't set practices
 - [ ] Buy time
+- [ ] Its not there job to believe its you'res
 - [ ] Don't Specify Level
 - [ ] Ask yourself What can i get done in 10 min to limit procrastination
 - [ ] Acknowledge that you don't know. Commit to finding the answer and follow up.
@@ -51,6 +52,11 @@ kanban-plugin: board
 - [ ] [Pharmacy](https://chatgpt.com/c/67e69bc2-2cac-800d-ba00-814cda6174fc)
 - [ ] [Cloud & Buis Logic](https://chatgpt.com/c/67e69c11-b7c4-800d-a419-fad9ff4a9d0f)
 - [ ] [Lambda Step Function flow](https://chatgpt.com/share/67e5700f-b400-800d-b888-3d60a50e5cb9)
+- [ ] ## Glaucoma Consultation  
+	- ✔Remake appointment to confirm if you need weed 😌💨 (@2025-06-30)  
+	- ✔ Eye pressure (tonometry test)  
+	- ✔ Optic nerve health (dilated eye exam, OCT scan)  
+	- ✔ Visual field test (to check for blind spots)
 
 
 ## Priority Tech Topic of Focus
@@ -58,7 +64,6 @@ kanban-plugin: board
 - [ ] [[Serverless Architecture]]
 - [ ] [[AWS SQS]]
 - [ ] Amazon EventBridge
-- [ ] Python
 - [ ] DynamoDB
 - [ ] [[OneStream Notes |OneStream]]
 - [ ] roth ira tax docs come May 31st
