@@ -20,17 +20,49 @@ Here’s a **detailed step-by-step guide** on **Managing AWS IAM Roles and Polic
 
 # **Step-by-Step Guide: Managing AWS IAM Roles and Policies**
 
+IAM policies define what **actions** a user, group, or role is **allowed or denied** to perform on AWS resources.
+
+A trust policy defines **who** can **assume** an IAM role. It specifies the **[[IAM Principles]]** (e.g., AWS services or users) allowed to assume the role and what actions they are allowed to perform once they have assumed the role.
+
+Trust policies are attached to **IAM roles**. When a service (like AWS Lambda, EC2, or an external user) needs to perform actions on your behalf, it needs to "assume" a role that has the necessary permissions.
+
+
+In **AWS**, a **trust policy** is a JSON document attached to an **IAM role** that defines **who (which entities) is allowed to assume the role**.
+
+These entities can be:
+
+- AWS accounts
+- Specific IAM users
+- Other AWS services (like EC2, Lambda, etc.)
+- Federated users from an external identity provider
+
+
+```json
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Principal": {
+                "Service": "ec2.amazonaws.com"
+            },
+            "Action": "sts:AssumeRole"
+        }
+    ]
+}
+```
+
+
+
 ## **Step 1: Follow the Principle of Least Privilege**
 
 📌 **Goal:** Assign only the required permissions to users, roles, or services.  
 ✅ **Actions:**
 
 - Define **specific** permissions instead of using wildcards (`*`).
-    
 - Regularly review and **remove unnecessary permissions** using **AWS IAM Access Analyzer**.
-    
 
-### **Example: Least Privilege IAM Policy (JSON)**
+### **Example: Least Privilege IAM Policy(Permissions Policy):**
 
 This policy allows read-only access to S3 **without granting full S3 permissions**.
 

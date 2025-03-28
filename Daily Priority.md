@@ -73,6 +73,8 @@ kanban-plugin: board
 	- ✔ Visual field test (to check for blind spots)
 - [ ] roth ira tax docs come May 31st
 - [ ] Ask doctor for letter of Medical Necessity for supplements pick a exclusive credit cards for supplements once you get letter then you can expense things out from that day for Supplements for HSA
+- [ ] Investigate the top achievers in software engineering. List key lessons from their success and discern patterns, strategies, habits, and mindset that contributes to their high productivity. Ask me detailed questions about my current work situation, my skills, and my professional goals. Based on my top responses contextualized the lessons from top performers to my unique context. Suggest specific actionable steps I can take to implement these lessons in my daily routine boost my productivity and overall performance.
+- [ ] As a decision making assistant apply your reasoning to the situation where I'm deliberating whether to do a or b. Generate a comprehensive evaluation that lists out pro and cons making this decision and also considering the potential long-term implications, possible alternative options, and any risk or opportunities associated with each. Your objectives is provided a detailed multifaceted analysis that will guide me toward a well-informed decision.
 
 
 ## AWS Solution Archetict
