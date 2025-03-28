@@ -27,30 +27,6 @@ A trust policy defines **who** can **assume** an IAM role. It specifies the **[[
 Trust policies are attached to **IAM roles**. When a service (like AWS Lambda, EC2, or an external user) needs to perform actions on your behalf, it needs to "assume" a role that has the necessary permissions.
 
 
-In **AWS**, a **trust policy** is a JSON document attached to an **IAM role** that defines **who (which entities) is allowed to assume the role**.
-
-These entities can be:
-
-- AWS accounts
-- Specific IAM users
-- Other AWS services (like EC2, Lambda, etc.)
-- Federated users from an external identity provider
-
-
-```json
-{
-    "Version": "2012-10-17",
-    "Statement": [
-        {
-            "Effect": "Allow",
-            "Principal": {
-                "Service": "ec2.amazonaws.com"
-            },
-            "Action": "sts:AssumeRole"
-        }
-    ]
-}
-```
 
 
 
