@@ -27,6 +27,8 @@ Archive: Keep relevant data stored for long-term and future reference.
   
 Destroy: Remove data from storage and delete any shared copies of the data.
 
+keep [[Data Visualization Choices.pdf]] in mind
+
 
 ![[5 V.png]]
 

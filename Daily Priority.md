@@ -16,6 +16,7 @@ kanban-plugin: board
 - [ ] Okay so off the top of my head I can't tell you with 100% certainty but let me look into that and I'll come back to you with an answer but while that happens did you have any other questions this moment
 - [ ] Ask more what if questions as a engineer when asking about scenarios
 - [ ] Clarity is confidence get as much clarity through the questions you ask yourself along with others and the drive to have confidence in your own ability weather it engineering or life.
+- [ ] Look at this [[Codebase Interview Question]] (@2025-03-05)
 - [ ] ![[Business decision#^68639f]]
 - [ ] <iframe src="https://www.instagram.com/p/DENfHhYubPw/" width="250" height="500" frameborder="0" allowfullscreen></iframe>
 - [ ] Building breath of knowledge is beneficial for you and employer because it opens you up for more opportunities
@@ -27,8 +28,9 @@ kanban-plugin: board
 - [ ] Check out Tickets for [Linkin Park](https://www.ticketmaster.com/event/3000616CBC102456?irgwc=1&clickid=yb%3A3dyX9lxyKRQ8QFvUZ3UK-UkszbDzFySChSM0&camefrom=CFC_BUYAT_1387536&impradid=1387536&REFERRAL_ID=tmfeedbuyat1387536&wt.mc_id=aff_BUYAT_1387536&utm_source=1387536-Seated&impradname=Seated&utm_medium=affiliate&ircid=4272)
 - [ ] ###### Try to get put on a team that manages this [Capital One Auto Navigator](https://www.capitalone.com/cars/)
 - [ ] Focus engineering efforts on getting on teams or industries of interest that you're trying to learn about more that overlap with your personal life like healthcare understanding that better and navigating it personally better or Auto Etc could be anything
-- [ ] Look at this [[Codebase Interview Question]] (@2025-03-05)
+- [ ] create Guide on aws iam with commands
 - [ ] Scrum master from April 3rd to  16th
+- [ ] Post about localstack and servless development in aws
 - [ ] [[LocalStack Setup]]
 - [ ] [[Capital One Stats]]
 - [ ] Examples of BSE - Business Salient event
@@ -48,6 +50,7 @@ kanban-plugin: board
 - [ ] [life insurance](https://chatgpt.com/share/67e409a1-b2ac-800d-a332-5bff0f27e85d)
 - [ ] [Pharmacy](https://chatgpt.com/c/67e69bc2-2cac-800d-ba00-814cda6174fc)
 - [ ] [Cloud & Buis Logic](https://chatgpt.com/c/67e69c11-b7c4-800d-a419-fad9ff4a9d0f)
+- [ ] [Lambda Step Function flow](https://chatgpt.com/share/67e5700f-b400-800d-b888-3d60a50e5cb9)
 
 
 ## Priority Tech Topic of Focus
@@ -58,10 +61,8 @@ kanban-plugin: board
 - [ ] Python
 - [ ] DynamoDB
 - [ ] [[OneStream Notes |OneStream]]
-- [ ] create Guide on aws iam with commands
 - [ ] roth ira tax docs come May 31st
 - [ ] Ask doctor for letter of Medical Necessity for supplements pick a exclusive credit cards for supplements once you get letter then you can expense things out from that day for Supplements for HSA
-- [ ] Post about localstack and servless development in aws
 
 
 ## AWS Solution Archetict
