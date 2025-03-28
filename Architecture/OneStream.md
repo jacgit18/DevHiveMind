@@ -41,4 +41,4 @@ OneStream is an Enterprise Performance Management (EPM) software platform design
 ## Common Use Cases  
 OneStream is commonly used in industries like finance, manufacturing, healthcare, and retail to simplify financial processes and improve decision-making.  
 
-Are you exploring it for work or learning purposes? Let me know if you need tips or resources!  
+

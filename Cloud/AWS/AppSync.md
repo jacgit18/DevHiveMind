@@ -1,7 +1,7 @@
 ---
 tags:
   - CapitalOne
-  - career
+  - cloud
 author:
   - gitUserNamePlaceHolder
 Comments: Placeholder comment any thing else you want to mention about the document.
@@ -9,7 +9,7 @@ Purpose: This documentation discusses
 Status: 
 Started: 
 EditDate: 
-Relates: "[[OneStream]]"
+Relates: 
 Peer Reviewed: 0
 dg-publish:
 ---
@@ -45,5 +45,3 @@ Using **AWS AppSync** as an intermediary between a **database** and an **exchang
     - It returns only the required data via GraphQL.
 
 This architecture ensures **efficient data transfer, low latency, and scalable real-time communication** between the database and the exchange.
-
-
