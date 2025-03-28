@@ -17,6 +17,7 @@ kanban-plugin: board
 - [ ] Okay so off the top of my head I can't tell you with 100% certainty but let me look into that and I'll come back to you with an answer but while that happens did you have any other questions this moment
 - [ ] Ask more what if questions as a engineer when asking about scenarios
 - [ ] Clarity is confidence get as much clarity through the questions you ask yourself along with others and the drive to have confidence in your own ability weather it engineering or life.
+- [ ] I’m a Software Carpenter — it’s a nod to my name. My goal is to establish a foundation and become a Software Architect.
 - [ ] Look at this [[Codebase Interview Question]] (@2025-03-05)
 - [ ] ![[Business decision#^68639f]]
 - [ ] <iframe src="https://www.instagram.com/p/DENfHhYubPw/" width="250" height="500" frameborder="0" allowfullscreen></iframe>
@@ -49,11 +50,13 @@ kanban-plugin: board
 ## #prompt
 
 - [ ] [Selling Self](https://chatgpt.com/c/67e6ace8-206c-800d-9053-0fcaebe60ed6)
+- [ ] [Business deal](https://chatgpt.com/c/67e6b18a-6988-800d-b459-b1cb747bd640)
 - [ ] [life insurance](https://chatgpt.com/share/67e409a1-b2ac-800d-a332-5bff0f27e85d)
 - [ ] [Pharmacy](https://chatgpt.com/c/67e69bc2-2cac-800d-ba00-814cda6174fc)
 - [ ] [Cloud & Buis Logic](https://chatgpt.com/c/67e69c11-b7c4-800d-a419-fad9ff4a9d0f)
 - [ ] [Lambda Step Function flow](https://chatgpt.com/share/67e5700f-b400-800d-b888-3d60a50e5cb9)
 - [ ] [Stock Margins](https://chatgpt.com/c/67ce27e4-1ba0-800d-b90f-18322b05a957)
+- [ ] List out steps to do [A] then refine those steps in terms of minimizing the number of steps creating bigger steps or even skipping steps for [A] focus on the quality of steps taken and what you get out of each one
 - [ ] ## Glaucoma Consultation  
 	- ✔Remake appointment to confirm if you need weed 😌💨 (@2025-06-30)  
 	- ✔ Eye pressure (tonometry test)  
