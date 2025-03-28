@@ -30,14 +30,18 @@ kanban-plugin: board
 - [ ] Check out Tickets for [Linkin Park](https://www.ticketmaster.com/event/3000616CBC102456?irgwc=1&clickid=yb%3A3dyX9lxyKRQ8QFvUZ3UK-UkszbDzFySChSM0&camefrom=CFC_BUYAT_1387536&impradid=1387536&REFERRAL_ID=tmfeedbuyat1387536&wt.mc_id=aff_BUYAT_1387536&utm_source=1387536-Seated&impradname=Seated&utm_medium=affiliate&ircid=4272)
 - [ ] ###### Try to get put on a team that manages this [Capital One Auto Navigator](https://www.capitalone.com/cars/)
 - [ ] Focus engineering efforts on getting on teams or industries of interest that you're trying to learn about more that overlap with your personal life like healthcare understanding that better and navigating it personally better or Auto Etc could be anything
-- [ ] create Guide on aws iam with commands
 - [ ] Scrum master from April 3rd to  16th
 - [ ] Post about localstack and servless development in aws
 - [ ] [[Capital One Stats]]
 - [ ] ###### Priority Tech Topic of Focus
+- [ ] create Guide on aws iam with commands
+- [ ] [IAM Part 0](https://chatgpt.com/share/67e6bb49-a01c-800d-afce-683be8545491)
+- [ ] [IAM part 1](https://chatgpt.com/share/67e6bb1e-fdcc-800d-9fe4-24a46aaa7890)
 - [ ] [[Serverless Architecture]]
 - [ ] [[LocalStack Setup]]
 - [ ] [[AWS SQS]]
+- [ ] [[DynamoDB]]
+- [ ] [[OneStream Notes |OneStream]]
 - [ ] Amazon EventBridge
 - [ ] Examples of BSE - Business Salient event
 - [ ] For question use soc core slack channel
@@ -69,12 +73,6 @@ kanban-plugin: board
 	- ✔ Visual field test (to check for blind spots)
 - [ ] roth ira tax docs come May 31st
 - [ ] Ask doctor for letter of Medical Necessity for supplements pick a exclusive credit cards for supplements once you get letter then you can expense things out from that day for Supplements for HSA
-
-
-## Priority Tech Topic of Focus
-
-- [ ] [[DynamoDB]]
-- [ ] [[OneStream Notes |OneStream]]
 
 
 ## AWS Solution Archetict
@@ -166,7 +164,6 @@ kanban-plugin: board
 
 ## Side Hustle Ideas
 
-- [ ] House sitting dog walker while software engineering
 - [ ] Carpet cleaning
 - [ ] Power washer
 
@@ -220,6 +217,6 @@ kanban-plugin: board
 
 %% kanban:settings
 ```
-{"kanban-plugin":"board","list-collapse":[false,false,false,false,false,false,false,false],"show-checkboxes":false,"link-date-to-daily-note":true}
+{"kanban-plugin":"board","list-collapse":[false,false,false,false,false,false,false],"show-checkboxes":false,"link-date-to-daily-note":true}
 ```
 %%
