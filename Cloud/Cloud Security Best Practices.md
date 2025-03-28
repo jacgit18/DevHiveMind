@@ -21,7 +21,7 @@ dg-publish:
 - **Encryption in Transit**: Protect data during transmission by enabling SSL/TLS for communication between services, ensuring secure data transfers. Cloud providers offer built-in encryption for data in transit across their networks.
     
 - **Access Control for Encryption Keys**: Implement strict policies to control who and what can access the encryption keys. This can be done using role-based access control (RBAC) in **Azure**, **Google Cloud IAM**, or **AWS IAM**.
-    
+
 
 **2. Regularly Audit Your System for Changes, Unauthorized Access, Unusual Patterns, or Errors**
 
