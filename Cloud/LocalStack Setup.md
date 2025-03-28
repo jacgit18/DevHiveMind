@@ -20,6 +20,7 @@ This document provides a step-by-step guide to setting up **AWS Lambda, IAM (Ide
 #todo/CapitalOne 
 - [ ] Post about localstack and servless development in aws
 
+Follow [[Managing IAM]] structure when defining json files along with [[Cloud Security Best Practices]]
 
 ## 1. Create a Lambda Function  
 - Packages a Python script (`lambda-function.py`) into a ZIP file.
@@ -123,6 +124,10 @@ Run the following command to **update or create the state machine using LocalSta
 aws --endpoint-url=http://localhost:4566 stepfunctions update-state-machine \
     --state-machine-arn arn:aws:states:us-east-1:000000000000:stateMachine:EnrollmentStateMachine \
     --definition file://collections-process-offers-enrollment.asl.json
+	--logging-configuration '{"level": "ALL", "includeExecutionData": true,
+	"destinations": [{"cloudWatchLogsLogGroup": {"logGroupArn":  
+	"arn:aws:logs:us-east-1:000000000000:log-group:/aws/states/  
+	collections-process-rtic-offers-enrollment"}}]}'
 ```
 
 - This assumes you already have a state machine called `EnrollmentStateMachine`.
@@ -132,7 +137,11 @@ aws --endpoint-url=http://localhost:4566 stepfunctions update-state-machine \
 aws --endpoint-url=http://localhost:4566 stepfunctions create-state-machine \
     --name EnrollmentStateMachine \
     --definition file://collections-process-offers-enrollment.asl.json \
-    --role-arn arn:aws:iam::000000000000:role/lambda-role
+    --role-arn arn:aws:iam:: 000000000000:role/state-machine-execution-role  
+	--logging-configuration '{"level": "ALL", "includeExecutionData": true,
+	"destinations": [{"cloudWatchLogsLogGroup": {"logGroupArn":  
+	"arn:aws:logs:us-east-1:000000000000:log-group:/aws/states/  
+	collections-process-rtic-offers-enrollment"}}]}'
 ```
 
 The `role-arn` must match your LocalStack IAM role.
