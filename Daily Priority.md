@@ -48,10 +48,12 @@ kanban-plugin: board
 
 ## #prompt
 
+- [ ] [Selling Self](https://chatgpt.com/c/67e6ace8-206c-800d-9053-0fcaebe60ed6)
 - [ ] [life insurance](https://chatgpt.com/share/67e409a1-b2ac-800d-a332-5bff0f27e85d)
 - [ ] [Pharmacy](https://chatgpt.com/c/67e69bc2-2cac-800d-ba00-814cda6174fc)
 - [ ] [Cloud & Buis Logic](https://chatgpt.com/c/67e69c11-b7c4-800d-a419-fad9ff4a9d0f)
 - [ ] [Lambda Step Function flow](https://chatgpt.com/share/67e5700f-b400-800d-b888-3d60a50e5cb9)
+- [ ] [Stock Margins](https://chatgpt.com/c/67ce27e4-1ba0-800d-b90f-18322b05a957)
 - [ ] ## Glaucoma Consultation  
 	- ✔Remake appointment to confirm if you need weed 😌💨 (@2025-06-30)  
 	- ✔ Eye pressure (tonometry test)  
