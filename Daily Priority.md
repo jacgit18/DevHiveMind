@@ -11,8 +11,11 @@ kanban-plugin: board
 - [ ] Don't Specify Level
 - [ ] Ask yourself What can i get done in 10 min to limit procrastination
 - [ ] Acknowledge that you don't know. Commit to finding the answer and follow up.
+- [ ] be more descriptive and visual in your language
+- [ ] have more fun and mentally flow to get more quality out of the work.
 - [ ] Okay so off the top of my head I can't tell you with 100% certainty but let me look into that and I'll come back to you with an answer but while that happens did you have any other questions this moment
 - [ ] Ask more what if questions as a engineer when asking about scenarios
+- [ ] Clarity is confidence get as much clarity through the questions you ask yourself along with others and the drive to have confidence in your own ability weather it engineering or life.
 - [ ] ![[Business decision#^68639f]]
 - [ ] <iframe src="https://www.instagram.com/p/DENfHhYubPw/" width="250" height="500" frameborder="0" allowfullscreen></iframe>
 - [ ] Building breath of knowledge is beneficial for you and employer because it opens you up for more opportunities
@@ -22,31 +25,28 @@ kanban-plugin: board
 ## #todo/CapitalOne
 
 - [ ] Check out Tickets for [Linkin Park](https://www.ticketmaster.com/event/3000616CBC102456?irgwc=1&clickid=yb%3A3dyX9lxyKRQ8QFvUZ3UK-UkszbDzFySChSM0&camefrom=CFC_BUYAT_1387536&impradid=1387536&REFERRAL_ID=tmfeedbuyat1387536&wt.mc_id=aff_BUYAT_1387536&utm_source=1387536-Seated&impradname=Seated&utm_medium=affiliate&ircid=4272)
+- [ ] ###### Try to get put on a team that manages this [Capital One Auto Navigator](https://www.capitalone.com/cars/)
+- [ ] Focus engineering efforts on getting on teams or industries of interest that you're trying to learn about more that overlap with your personal life like healthcare understanding that better and navigating it personally better or Auto Etc could be anything
 - [ ] Look at this [[Codebase Interview Question]] (@2025-03-05)
 - [ ] Upcoming work [[Publish to onstream workflow]]
 - [ ] [[LocalStack Setup]]
 - [ ] Scrumaster from april 1st to may 14th
+- [ ] [[Capital One Stats]]
+- [ ] Examples of BSE - Business Salient event
+- [ ] For question use soc core slack channel
+- [ ] working on Straight Outta collections team use this name when OOO #straightouttacollections
+- [ ] C@pple2024Money
 - [ ] Clean up Todo in vault
 - [ ] Clean up Vault in General
 - [ ] Be more of a contractor like tangy running a business acting as a consultant and providing your services instead of a employee
 - [ ] Skip more steps move faster and smarter in career going every incremental step by step is the old way of doing things need to adapt for the new environment
-- [ ] <iframe src="https://www.instagram.com/reel/DFZ6vlJSoqJ/?igsh=MWw2d3R6b3AycnM5aA%3D%3D" width="250" height="500" frameborder="0" allowfullscreen></iframe>
 - [ ] list out questions you should ask yourself if making the decision to re-architect something or recreate it from scratch when it comes software engineering an application
-- [ ] Examples of business salient events
+- [ ] <iframe src="https://www.instagram.com/reel/DFZ6vlJSoqJ/?igsh=MWw2d3R6b3AycnM5aA%3D%3D" width="250" height="500" frameborder="0" allowfullscreen></iframe>
 
 
-## Cap One Stuff
+## #prompt
 
-- [ ] ###### Try to get put on a team that manages this [Capital One Auto Navigator](https://www.capitalone.com/cars/)
-- [ ] Focus engineering efforts on getting on teams or industries of interest that you're trying to learn about more that overlap with your personal life like healthcare understanding that better and navigating it personally better or Auto Etc could be anything
-- [ ] C@pple2024Money
-- [ ] For question use soc core slack channel
-- [ ] [[Capital One Stats]]
-- [ ] working on Straight Outta collections team use this name when OOO #straightouttacollections
-- [ ] BSE - Business Salient event
-- [ ] have more fun and mentally flow to get more quality out of the work.
-- [ ] Clarity is confidence get as much clarity through the questions you ask yourself along with others and the drive to have confidence in your own ability weather it engineering or life.
-- [ ] be more descriptive and visual in your language
+- [ ] [life insurance](https://chatgpt.com/share/67e409a1-b2ac-800d-a332-5bff0f27e85d)
 
 
 ## Priority Tech Topic of Focus
