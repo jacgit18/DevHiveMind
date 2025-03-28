@@ -65,6 +65,7 @@ kanban-plugin: board
 - [ ] [Lambda Step Function flow](https://chatgpt.com/share/67e5700f-b400-800d-b888-3d60a50e5cb9)
 - [ ] [Stock & Margin Rates](https://chatgpt.com/share/67e6b7e3-8494-800d-bb00-c69e8a318908)
 - [ ] [Trust](https://chatgpt.com/share/67e6b62a-b334-800d-9633-90f4311dcc9f)
+- [ ] [Becoming a Startup Investor](https://chatgpt.com/share/67e6c8eb-37d4-800d-93d2-2a77066f5668)
 - [ ] [Apartment Lessons](https://chatgpt.com/share/67e6c049-4900-800d-b280-cf247f2a0454)
 - [ ] List out steps to do [A] then refine those steps in terms of minimizing the number of steps creating bigger steps or even skipping steps for [A] focus on the quality of steps taken and what you get out of each one
 - [ ] ## Glaucoma Consultation  
