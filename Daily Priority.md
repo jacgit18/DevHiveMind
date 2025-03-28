@@ -166,6 +166,12 @@ kanban-plugin: board
 
 - [ ] Carpet cleaning
 - [ ] Power washer
+- [ ] Triple A Roadside Assistance
+- [ ] [Visual interpreter for the blind](<[https://aira.io/](https://aira.io/)>)
+- [ ] [Study pool](<[Studypool - Homework Help](https://www.studypool.com)>)
+- [ ] Virtual receptionist
+- [ ] Medical transcription
+- [ ] It help desk technician
 
 
 ## Done
