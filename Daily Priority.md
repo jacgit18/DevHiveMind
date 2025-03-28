@@ -56,12 +56,15 @@ kanban-plugin: board
 - [ ] [Cloud & Buis Logic](https://chatgpt.com/c/67e69c11-b7c4-800d-a419-fad9ff4a9d0f)
 - [ ] [Lambda Step Function flow](https://chatgpt.com/share/67e5700f-b400-800d-b888-3d60a50e5cb9)
 - [ ] [Stock Margins](https://chatgpt.com/c/67ce27e4-1ba0-800d-b90f-18322b05a957)
+- [ ] [Trust](https://chatgpt.com/c/67b8872a-6bd8-800d-a0c3-c5d8ac5c788b)
 - [ ] List out steps to do [A] then refine those steps in terms of minimizing the number of steps creating bigger steps or even skipping steps for [A] focus on the quality of steps taken and what you get out of each one
 - [ ] ## Glaucoma Consultation  
 	- ✔Remake appointment to confirm if you need weed 😌💨 (@2025-06-30)  
 	- ✔ Eye pressure (tonometry test)  
 	- ✔ Optic nerve health (dilated eye exam, OCT scan)  
 	- ✔ Visual field test (to check for blind spots)
+- [ ] roth ira tax docs come May 31st
+- [ ] Ask doctor for letter of Medical Necessity for supplements pick a exclusive credit cards for supplements once you get letter then you can expense things out from that day for Supplements for HSA
 
 
 ## Priority Tech Topic of Focus
@@ -71,8 +74,6 @@ kanban-plugin: board
 - [ ] Amazon EventBridge
 - [ ] DynamoDB
 - [ ] [[OneStream Notes |OneStream]]
-- [ ] roth ira tax docs come May 31st
-- [ ] Ask doctor for letter of Medical Necessity for supplements pick a exclusive credit cards for supplements once you get letter then you can expense things out from that day for Supplements for HSA
 
 
 ## AWS Solution Archetict
