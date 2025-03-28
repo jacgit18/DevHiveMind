@@ -28,9 +28,8 @@ kanban-plugin: board
 - [ ] ###### Try to get put on a team that manages this [Capital One Auto Navigator](https://www.capitalone.com/cars/)
 - [ ] Focus engineering efforts on getting on teams or industries of interest that you're trying to learn about more that overlap with your personal life like healthcare understanding that better and navigating it personally better or Auto Etc could be anything
 - [ ] Look at this [[Codebase Interview Question]] (@2025-03-05)
-- [ ] Upcoming work [[Publish to onstream workflow]]
+- [ ] Scrum master from April 3rd to  16th
 - [ ] [[LocalStack Setup]]
-- [ ] Scrumaster from april 1st to may 14th
 - [ ] [[Capital One Stats]]
 - [ ] Examples of BSE - Business Salient event
 - [ ] For question use soc core slack channel
@@ -47,6 +46,8 @@ kanban-plugin: board
 ## #prompt
 
 - [ ] [life insurance](https://chatgpt.com/share/67e409a1-b2ac-800d-a332-5bff0f27e85d)
+- [ ] [Pharmacy](https://chatgpt.com/c/67e69bc2-2cac-800d-ba00-814cda6174fc)
+- [ ] [Cloud & Buis Logic](https://chatgpt.com/c/67e69c11-b7c4-800d-a419-fad9ff4a9d0f)
 
 
 ## Priority Tech Topic of Focus
