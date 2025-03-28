@@ -33,8 +33,12 @@ kanban-plugin: board
 - [ ] create Guide on aws iam with commands
 - [ ] Scrum master from April 3rd to  16th
 - [ ] Post about localstack and servless development in aws
-- [ ] [[LocalStack Setup]]
 - [ ] [[Capital One Stats]]
+- [ ] ###### Priority Tech Topic of Focus
+- [ ] [[Serverless Architecture]]
+- [ ] [[LocalStack Setup]]
+- [ ] [[AWS SQS]]
+- [ ] Amazon EventBridge
 - [ ] Examples of BSE - Business Salient event
 - [ ] For question use soc core slack channel
 - [ ] working on Straight Outta collections team use this name when OOO #straightouttacollections
@@ -49,14 +53,14 @@ kanban-plugin: board
 
 ## #prompt
 
-- [ ] [Selling Self](https://chatgpt.com/c/67e6ace8-206c-800d-9053-0fcaebe60ed6)
-- [ ] [Business deal](https://chatgpt.com/c/67e6b18a-6988-800d-b459-b1cb747bd640)
+- [ ] [Selling Self](https://chatgpt.com/share/67e6b6eb-62a4-800d-aa4e-2cb298ad57d0)
+- [ ] [Business Deal Structuring](https://chatgpt.com/share/67e6b68f-37f4-800d-af3c-5fba183c72fa)
 - [ ] [life insurance](https://chatgpt.com/share/67e409a1-b2ac-800d-a332-5bff0f27e85d)
-- [ ] [Pharmacy](https://chatgpt.com/c/67e69bc2-2cac-800d-ba00-814cda6174fc)
-- [ ] [Cloud & Buis Logic](https://chatgpt.com/c/67e69c11-b7c4-800d-a419-fad9ff4a9d0f)
+- [ ] [Pharmacy](https://chatgpt.com/share/67e6b745-81dc-800d-b774-f473294807c7)
+- [ ] [Cloud & Business Logic](https://chatgpt.com/share/67e6b77a-a5b4-800d-be3b-eb68a719d1b5)
 - [ ] [Lambda Step Function flow](https://chatgpt.com/share/67e5700f-b400-800d-b888-3d60a50e5cb9)
-- [ ] [Stock Margins](https://chatgpt.com/c/67ce27e4-1ba0-800d-b90f-18322b05a957)
-- [ ] [Trust](https://chatgpt.com/c/67b8872a-6bd8-800d-a0c3-c5d8ac5c788b)
+- [ ] [Stock & Margin Rates](https://chatgpt.com/share/67e6b7e3-8494-800d-bb00-c69e8a318908)
+- [ ] [Trust](https://chatgpt.com/share/67e6b62a-b334-800d-9633-90f4311dcc9f)
 - [ ] List out steps to do [A] then refine those steps in terms of minimizing the number of steps creating bigger steps or even skipping steps for [A] focus on the quality of steps taken and what you get out of each one
 - [ ] ## Glaucoma Consultation  
 	- ✔Remake appointment to confirm if you need weed 😌💨 (@2025-06-30)  
@@ -69,10 +73,7 @@ kanban-plugin: board
 
 ## Priority Tech Topic of Focus
 
-- [ ] [[Serverless Architecture]]
-- [ ] [[AWS SQS]]
-- [ ] Amazon EventBridge
-- [ ] DynamoDB
+- [ ] [[DynamoDB]]
 - [ ] [[OneStream Notes |OneStream]]
 
 
