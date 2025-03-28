@@ -95,7 +95,7 @@ aws --endpoint-url=http://localhost:4566 lambda update-function-code \
 
 ## 7. Define Your State Machine
 
-Create a **state machine definition file** (e.g., `collections-process-offers-enrollment.json`). This file defines the **workflow logic**, such as which Lambda functions are invoked, whether you have conditions, retries, or parallel states. Example structure (simplified):
+Create a **state machine definition file** (e.g., `collections-process-offers-enrollment.asl.json`). This file defines the **workflow logic**, such as which Lambda functions are invoked, whether you have conditions, retries, or parallel states. Example structure (simplified):
 
 ```json
 {
@@ -122,7 +122,7 @@ Run the following command to **update or create the state machine using LocalSta
 ```bash
 aws --endpoint-url=http://localhost:4566 stepfunctions update-state-machine \
     --state-machine-arn arn:aws:states:us-east-1:000000000000:stateMachine:EnrollmentStateMachine \
-    --definition file://collections-process-offers-enrollment.json
+    --definition file://collections-process-offers-enrollment.asl.json
 ```
 
 - This assumes you already have a state machine called `EnrollmentStateMachine`.
@@ -131,7 +131,7 @@ aws --endpoint-url=http://localhost:4566 stepfunctions update-state-machine \
 ```bash
 aws --endpoint-url=http://localhost:4566 stepfunctions create-state-machine \
     --name EnrollmentStateMachine \
-    --definition file://collections-process-offers-enrollment.json \
+    --definition file://collections-process-offers-enrollment.asl.json \
     --role-arn arn:aws:iam::000000000000:role/lambda-role
 ```
 
