@@ -15,30 +15,10 @@ Relates:
 Peer Reviewed: 0
 dg-publish:
 ---
-  
-Always Free Resources (No Expiration, Limited Usage)  
-  
-These services are free forever, as long as you stay within usage limits:  
-  
-✅ AWS Lambda – 1 million free requests per month  
-✅ Amazon S3 (Storage) – 5GB Standard Storage  
-✅ Amazon DynamoDB (NoSQL Database) – 25GB of storage, 25 read/write units  
-✅ Amazon API Gateway – 1 million API calls per month  
-✅ Amazon CloudWatch – 5GB logs, 1M API requests, basic monitoring  
-✅ AWS IAM (Identity & Access Management) – Free for user roles and permissions  
-✅ AWS SNS (Simple Notification Service) – 1M free push notifications  
-✅ AWS SES (Simple Email Service) – 3,000 outbound emails per month  
-✅ AWS CodeCommit – 5 active users, unlimited repositories  
-✅ AWS Step Functions – 4,000 free state transitions per month
-
-What You Can Build for Free  
-- Static Website (S3 + CloudFront + Route 53 with Free DNS)  
-- Small Web App (EC2 or Lambda + API Gateway + DynamoDB)  
-- CI/CD Pipeline (CodeCommit + CodePipeline + CodeBuild)  
-- Serverless API (Lambda + API Gateway + DynamoDB)
-
-
 This document provides a step-by-step guide to setting up **AWS Lambda, IAM (Identity and Access Management), and Step Functions** using **LocalStack**, which is a local AWS cloud emulator. The setup is meant for running and testing AWS services locally without needing an actual AWS account.
+
+#todo/CapitalOne 
+- [ ] Post about localstack and servless development in aws
 
 
 ## 1. Create a Lambda Function  
@@ -47,7 +27,7 @@ This document provides a step-by-step guide to setting up **AWS Lambda, IAM (Ide
 - The function is assigned a role (`lambda-role`), which is required for execution permissions.
 
 ```sh
-zip -r function.zip lambda-function.py
+zip -r function.zip lambda-function.py // code should have logic to zip itself
 
 aws --endpoint-url=http://localhost:4566 lambda create-function \
     --function-name VerifyCustomer \
@@ -243,63 +223,3 @@ This setup is used to locally develop and test an AWS-based workflow involving:
 
 By using **LocalStack**, developers can simulate AWS services without incurring costs or requiring internet access.
 
-
-
-In **LocalStack**, you should avoid setting **persistence to 0** for any service where you need data to persist between restarts. Here are some key services where persistence matters:
-
-### **1. DynamoDB**
-
-- **Avoid setting persistence to 0** if you're testing locally and want to keep your database records across LocalStack restarts.
-- **Fix:** Enable persistence by using:
-    
-    ```bash
-    export DATA_DIR=/tmp/localstack/data
-    ```
-    
-
-### **2. S3**
-
-- If persistence is disabled, uploaded files will be lost when LocalStack restarts.
-- **Fix:** Use the `DATA_DIR` setting or mount a volume in Docker.
-
-### **3. Step Functions**
-
-- Without persistence, execution history and state machine definitions will be lost after restart.
-- **Fix:** Set a **data directory** for LocalStack to store state machine data.
-
-### **4. SQS & SNS**
-
-- Messages in queues or topics will be wiped out if persistence is off.
-- **Fix:** Store messages by enabling persistence.
-
-### **How to Enable Persistence in LocalStack**
-
-To keep data even after a restart, start LocalStack with:
-
-```bash
-export DATA_DIR=/tmp/localstack/data
-```
-
-or in **Docker Compose**:
-
-```yaml
-services:
-  localstack:
-    image: localstack/localstack
-    environment:
-      - DATA_DIR=/var/lib/localstack
-    volumes:
-      - "./localstack_data:/var/lib/localstack"
-```
-
-### **When Is It OK to Disable Persistence?**
-
-- If you **only need ephemeral testing** (e.g., running tests in CI/CD).
-- If data persistence isn't needed (e.g., temporary S3 file uploads).
-- If you want to reset state easily between test runs.
-
-Would you like help configuring persistence for a specific LocalStack service?
-
-
-
- 

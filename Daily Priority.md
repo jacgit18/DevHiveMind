@@ -18,6 +18,7 @@ kanban-plugin: board
 - [ ] Ask more what if questions as a engineer when asking about scenarios
 - [ ] Clarity is confidence get as much clarity through the questions you ask yourself along with others and the drive to have confidence in your own ability weather it engineering or life.
 - [ ] I’m a Software Carpenter — it’s a nod to my name. My goal is to establish a foundation and become a Software Architect.
+- [ ] Be more of a contractor like tangy running a business acting as a consultant and providing your services instead of a employee
 - [ ] Look at this [[Codebase Interview Question]] (@2025-03-05)
 - [ ] ![[Business decision#^68639f]]
 - [ ] <iframe src="https://www.instagram.com/p/DENfHhYubPw/" width="250" height="500" frameborder="0" allowfullscreen></iframe>
@@ -27,14 +28,18 @@ kanban-plugin: board
 
 ## #todo/CapitalOne
 
+- [ ] Scrum master from April 3rd to  16th
 - [ ] Check out Tickets for [Linkin Park](https://www.ticketmaster.com/event/3000616CBC102456?irgwc=1&clickid=yb%3A3dyX9lxyKRQ8QFvUZ3UK-UkszbDzFySChSM0&camefrom=CFC_BUYAT_1387536&impradid=1387536&REFERRAL_ID=tmfeedbuyat1387536&wt.mc_id=aff_BUYAT_1387536&utm_source=1387536-Seated&impradname=Seated&utm_medium=affiliate&ircid=4272)
 - [ ] ###### Try to get put on a team that manages this [Capital One Auto Navigator](https://www.capitalone.com/cars/)
 - [ ] Focus engineering efforts on getting on teams or industries of interest that you're trying to learn about more that overlap with your personal life like healthcare understanding that better and navigating it personally better or Auto Etc could be anything
-- [ ] Scrum master from April 3rd to  16th
-- [ ] Post about localstack and servless development in aws
 - [ ] [[Capital One Stats]]
+- [ ] Ask about Examples of BSE - Business Salient event
+- [ ] C@pple2024Money
+- [ ] Clean up Todo in vault
+- [ ] Clean up Vault in General
+- [ ] Skip more steps move faster and smarter in career going every incremental step by step is the old way of doing things need to adapt for the new environment
+- [ ] list out questions you should ask yourself if making the decision to re-architect something or recreate it from scratch when it comes software engineering an application
 - [ ] ###### Priority Tech Topic of Focus
-- [ ] create Guide on aws iam with commands
 - [ ] [IAM Part 0](https://chatgpt.com/share/67e6bb49-a01c-800d-afce-683be8545491)
 - [ ] [IAM part 1](https://chatgpt.com/share/67e6bb1e-fdcc-800d-9fe4-24a46aaa7890)
 - [ ] [[Serverless Architecture]]
@@ -43,15 +48,6 @@ kanban-plugin: board
 - [ ] [[DynamoDB]]
 - [ ] [[OneStream Notes |OneStream]]
 - [ ] Amazon EventBridge
-- [ ] Examples of BSE - Business Salient event
-- [ ] For question use soc core slack channel
-- [ ] working on Straight Outta collections team use this name when OOO #straightouttacollections
-- [ ] C@pple2024Money
-- [ ] Clean up Todo in vault
-- [ ] Clean up Vault in General
-- [ ] Be more of a contractor like tangy running a business acting as a consultant and providing your services instead of a employee
-- [ ] Skip more steps move faster and smarter in career going every incremental step by step is the old way of doing things need to adapt for the new environment
-- [ ] list out questions you should ask yourself if making the decision to re-architect something or recreate it from scratch when it comes software engineering an application
 - [ ] <iframe src="https://www.instagram.com/reel/DFZ6vlJSoqJ/?igsh=MWw2d3R6b3AycnM5aA%3D%3D" width="250" height="500" frameborder="0" allowfullscreen></iframe>
 
 
