@@ -15,54 +15,48 @@ console.log("User input:", userInput);
 
 
 
+### What is `sts:AssumeRole`?
 
+`sts:AssumeRole` is an **AWS Security Token Service (STS)** action that lets a trusted **entity** (user, service, or application) **temporarily assume an IAM role**. When successful, it returns **temporary security credentials** (access key, secret key, session token) to act as the role and access resources based on the role's **permissions policy**.
 
+---
 
+### Why is `sts:AssumeRole` Important?
 
+- Provides **temporary permissions** for AWS services (e.g., Lambda, EC2, cross-account access).
+- Supports **temporary, limited-privilege credentials**, which are more secure than long-lived credentials.
+- Enables **cross-account access** by allowing one account to assume a role in another.
 
+---
 
-### 1. **IAM Policies**
+### Example Scenario
 
-- **Permissions Policies**: These define what actions an IAM role can perform on which resources. These are the policies that grant permissions (e.g., `s3:GetObject` on a specific bucket).
-    
-- IAM policies can be **inline policies** (directly embedded within the role) or **managed policies** (either AWS managed or customer managed).
-    
+A **Lambda function** in **Account A** needs to read objects from an **S3 bucket in Account B**. Account B creates a role with S3 read permissions and a **trust policy** that allows Account A’s Lambda to assume the role. The Lambda calls:
 
-### 2. **Trust Policies**
+```bash
+aws sts assume-role --role-arn "arn:aws:iam::account-b-id:role/S3ReadOnlyRole" --role-session-name "LambdaSession"
 
-- A **trust policy** is part of an IAM role and defines **who** can assume the role. It specifies the trusted entities (like an AWS service or another IAM role) that are allowed to assume the role and perform actions on your behalf.
-    
-- Example: The Lambda service is trusted to assume the role to invoke a Lambda function.
-    
+```
 
-### 3. **Resource-Based Policies**
+Response:
+```json
+{ 
+  "Credentials": {
+        "AccessKeyId": "ASIA...",
+        "SecretAccessKey": "secret...",
+        "SessionToken": "token..."
+    }
+}
+```
 
-- These are typically applied to AWS resources like S3 buckets, SNS topics, or Lambda functions, **not IAM roles themselves**. These policies grant permissions to entities (users, services) to access the resource.
-    
-- For example, an S3 bucket can have a resource-based policy that allows a specific IAM role or user to access the objects in the bucket.
-    
+The Lambda can now **use these temporary credentials** to access the S3 bucket.
 
-### 4. **Permissions Boundaries**
+---
 
-- A **permissions boundary** is an advanced feature used to limit the permissions that an IAM role or user can have. Even if an IAM policy grants a user or role wide permissions, the permissions boundary can restrict those permissions by setting the maximum allowable permissions.
-    
-- Example: You might have a permissions boundary that restricts the IAM role to only allow access to specific AWS services, regardless of the permissions defined in the role's policies.
-    
+### Key Point
 
-### Hierarchy & Summary:
+`sts:AssumeRole` requires:
 
-- **IAM Role**: The entity that is assumed by trusted services or users.
-    
-    - **Trust Policy**: Defines who can assume the role.
-        
-    - **IAM Policies**: Define what actions can be performed on which resources (permissions).
-        
-    - **Permissions Boundaries**: Limit the permissions that the role can assume, even if broader permissions are granted by IAM policies.
-        
-    - **Resource-Based Policies**: These are applied to AWS resources (like S3, Lambda) and define permissions for **who** can access those resources. They aren't directly part of the role itself but work with the role's permissions.
-        
-
-### So in essence:
-
-- **IAM Role = Trust Policy + IAM Policies** (with optional Permissions Boundaries).
-- **Resource-Based Policies** are used on resources and are separate from IAM roles themselves but can grant permissions to those roles.
+1. The **trust policy** allowing the calling entity to assume the role.
+2. The calling entity must have **permission** to invoke `sts:AssumeRole` on the role.
+```

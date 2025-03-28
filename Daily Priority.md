@@ -40,6 +40,7 @@ kanban-plugin: board
 - [ ] Skip more steps move faster and smarter in career going every incremental step by step is the old way of doing things need to adapt for the new environment
 - [ ] list out questions you should ask yourself if making the decision to re-architect something or recreate it from scratch when it comes software engineering an application
 - [ ] ###### Priority Tech Topic of Focus
+- [ ] clean up [[Work LOB and arch notes to clean]]
 - [ ] [IAM Part 0](https://chatgpt.com/share/67e6bb49-a01c-800d-afce-683be8545491)
 - [ ] [IAM part 1](https://chatgpt.com/share/67e6bb1e-fdcc-800d-9fe4-24a46aaa7890)
 - [ ] [[Serverless Architecture]]
@@ -79,6 +80,26 @@ kanban-plugin: board
 
 ## AWS Solution Archetict
 
+- [ ] ###### Always Free Resources (No Expiration, Limited Usage)  
+	  
+	These services are free forever, as long as you stay within usage limits:  
+	  
+	✅ AWS Lambda – 1 million free requests per month  
+	✅ Amazon S3 (Storage) – 5GB Standard Storage  
+	✅ Amazon DynamoDB (NoSQL Database) – 25GB of storage, 25 read/write units  
+	✅ Amazon API Gateway – 1 million API calls per month  
+	✅ Amazon CloudWatch – 5GB logs, 1M API requests, basic monitoring  
+	✅ AWS IAM (Identity & Access Management) – Free for user roles and permissions  
+	✅ AWS SNS (Simple Notification Service) – 1M free push notifications  
+	✅ AWS SES (Simple Email Service) – 3,000 outbound emails per month  
+	✅ AWS CodeCommit – 5 active users, unlimited repositories  
+	✅ AWS Step Functions – 4,000 free state transitions per month
+	
+	###### What You Can Build for Free  
+	- Static Website (S3 + CloudFront + Route 53 with Free DNS)  
+	- Small Web App (EC2 or Lambda + API Gateway + DynamoDB)  
+	- CI/CD Pipeline (CodeCommit + CodePipeline + CodeBuild)  
+	- Serverless API (Lambda + API Gateway + DynamoDB)
 - [ ] ## 1. AWS Core Services
 	
 	- **Compute**: EC2, Lambda, Auto Scaling, Elastic Beanstalk
