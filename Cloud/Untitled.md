@@ -11,6 +11,17 @@ Relates:
 Peer Reviewed: 0
 dg-publish:
 ---
+Create a ticket  
+  
+
+  
+Create stories for work that doesn't have a ticket that you are doing  
+
+
+
+
+
+
 When a agent or who ever initiate contract offer from Empath 
 
 goes rules lab coming back with true or false 
@@ -30,7 +41,7 @@ Hooks are created when tasks are performed by business process automation when a
 Hooks are deleted when tasks are performed by BPA in response to Broad exclusion where where we don't know when or if we will be able to engage with a customer in the future
 
 
-
+One streams sends to aws and clodwatch logs are triggered for sqs repo
 
 
 There is a list of actions associated with each contract which also has one offset we need to separate  those actions by the offset meaning immediate actions fired on the same day and eventual actions which are triggered by hooks based on offset date.
@@ -98,6 +109,19 @@ UCP unified customer profile  provides data on enrollment contracts
 
 There is a Data Lambda if event's `lifecycle_stage = READ ENROLLMENT`
 an error gets triggered 
+
+
+Send published events to onestream
+
+then 
+
+
+we have lambda that is a publisher sending published events to onestream which then sends the data to Qsink to BSE SQS(simple queue service)
+
+
+at the same time eventbridge rules are process by DLQ Drainer Lambda which sends start message move task to the BSE SQS which then invokes event analyzer lambda which publishes data 
+
+
 
 
 

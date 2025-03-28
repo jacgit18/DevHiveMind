@@ -4,6 +4,9 @@ tags:
   - employment
   - CapitalOne
   - favorite
+  - RTIC
+  - cloud
+  - AWS
 author:
   - jacgit18
 Purpose: This documentation discusses work done at current company.
@@ -13,9 +16,6 @@ EditDate:
 Relates: "[[OneStream]]"
 dg-publish:
 ---
-
-
-
 Your understanding of how AWS Lambda works is on the right track, but there’s more to it when integrating with other AWS services and handling workflows like the one you’ve described. Let me break it down:
 
 ---
@@ -120,4 +120,3 @@ Your project has a more complex setup involving multiple services, publishers, q
 4. Error handling mechanisms like DLQs ensure failed events are retried or logged.
 5. Monitoring and automation ensure scalability and reliability.
 
-Would you like more detail on any specific part of this process?

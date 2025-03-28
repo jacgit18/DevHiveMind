@@ -15,7 +15,14 @@ Relates:
 Peer Reviewed: 0
 dg-publish:
 ---
+LocalStack is a cloud service emulator that enables developers to run AWS applications locally, eliminating the need for a cloud connection. By encapsulating AWS services within a single container, LocalStack streamlines the testing and development process, providing a fast, reliable, and cost-effective environment for local development.
+
 This document provides a step-by-step guide to setting up **AWS Lambda, IAM (Identity and Access Management), and Step Functions** using **LocalStack**, which is a local AWS cloud emulator. The setup is meant for running and testing AWS services locally without needing an actual AWS account.
+
+> [!note] Side Note
+> When creating an IAM role in LocalStack, you can ignore the **path** parameter because LocalStack does not enforce IAM role path constraints as AWS does. In AWS, the **path** is an optional parameter used to organize IAM roles within a hierarchical namespace (e.g., `/service-role/` or `/application/`). However, LocalStack simplifies IAM role management and does not require or validate the **path**, making it unnecessary for local development and testing.
+
+This allows for a more streamlined approach when defining IAM roles in LocalStack, reducing complexity and potential errors during local testing. 
 
 #todo/CapitalOne 
 - [ ] Post about localstack and servless development in aws

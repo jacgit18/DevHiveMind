@@ -46,7 +46,7 @@ kanban-plugin: board
 - [ ] [[LocalStack Setup]]
 - [ ] [[AWS SQS]]
 - [ ] [[DynamoDB]]
-- [ ] [[OneStream Notes |OneStream]]
+- [ ] [[RTIC General AWS Infrastructure|OneStream]]
 - [ ] Amazon EventBridge
 - [ ] <iframe src="https://www.instagram.com/reel/DFZ6vlJSoqJ/?igsh=MWw2d3R6b3AycnM5aA%3D%3D" width="250" height="500" frameborder="0" allowfullscreen></iframe>
 
