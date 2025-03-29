@@ -60,6 +60,9 @@ dg-publish:
 - **Resource-Based Policies** are used on resources and are separate from IAM roles themselves but can grant permissions to those roles.
 
 
+
+#  **Common Serverless Services & Their Permissions**
+
 ## Key Principles
 - **Least Privilege**: Only grant the permissions necessary for a specific function.
 - **Service Roles**: Each Lambda (or other service) should have its **own role**.
