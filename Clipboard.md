@@ -15,6 +15,16 @@ console.log("User input:", userInput);
 
 
 
+
+
+
+
+
+
+
+
+
+
 ### What is `sts:AssumeRole`?
 
 `sts:AssumeRole` is an **AWS Security Token Service (STS)** action that lets a trusted **entity** (user, service, or application) **temporarily assume an IAM role**. When successful, it returns **temporary security credentials** (access key, secret key, session token) to act as the role and access resources based on the role's **permissions policy**.

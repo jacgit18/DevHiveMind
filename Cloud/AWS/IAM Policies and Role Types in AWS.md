@@ -61,9 +61,4 @@ dg-publish:
 
 
 
-#  **Common Serverless Services & Their Permissions**
 
-## Key Principles
-- **Least Privilege**: Only grant the permissions necessary for a specific function.
-- **Service Roles**: Each Lambda (or other service) should have its **own role**.
-- **Policy Attachment**: Permissions are attached via **IAM Policies** which are linked to IAM **Roles**.

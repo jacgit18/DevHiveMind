@@ -58,6 +58,8 @@ aws --endpoint-url=http://localhost:4566 iam create-role \
 ## 3. Attach Policy to IAM Role
 - Attaches a policy (`policy.json`) to the IAM role.
 - Ensures that Lambda has the necessary permissions.
+- **Inline policies** (via `put-role-policy`) are used **less frequently**, usually for **one-off role-specific permissions**.
+- **In real-world scenarios**, managed policies (via `attach-role-policy`) are more common because they allow **better scalability and maintainability**.
 ```sh
 aws --endpoint-url=http://localhost:4566 iam put-role-policy \
     --role-name lambda-role \

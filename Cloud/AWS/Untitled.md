@@ -1,6 +1,13 @@
-# 🔹 **Common Serverless Services & Their Permissions**
+#  **Common Serverless Services & Their Permissions**
 
-## 1️⃣ **Lambda Permissions**
+## Key Principles
+- **Least Privilege**: Only grant the permissions necessary for a specific function.
+- **Service Roles**: Each Lambda (or other service) should have its **own role**.
+- **Policy Attachment**: Permissions are attached via **IAM Policies** which are linked to IAM **Roles**.
+
+
+
+##  **Lambda Permissions**
 
 When Lambda interacts with other services, it needs permissions. Common examples:
 
@@ -19,9 +26,26 @@ When Lambda interacts with other services, it needs permissions. Common examples
 
 `{     "Version": "2012-10-17",     "Statement": [         {             "Effect": "Allow",             "Action": [                 "dynamodb:GetItem",                 "dynamodb:PutItem",                 "dynamodb:UpdateItem",                 "dynamodb:DeleteItem",                 "dynamodb:Scan"             ],             "Resource": "arn:aws:dynamodb:us-east-1:123456789012:table/MyTable"         },         {             "Effect": "Allow",             "Action": [                 "logs:CreateLogGroup",                 "logs:CreateLogStream",                 "logs:PutLogEvents"             ],             "Resource": "arn:aws:logs:us-east-1:123456789012:log-group:/aws/lambda/*:*"         }     ] }`
 
+
+### Lambda Execution Role (Serverless)
+
+Permissions for a **Lambda function** to work with other services.
+
+**Common Actions:**
+
+`"Action": [     "logs:CreateLogGroup",     "logs:CreateLogStream",     "logs:PutLogEvents",     "s3:GetObject",     "s3:PutObject",     "dynamodb:PutItem",     "dynamodb:GetItem" ]`
+
+**Common Resources:**
+
+- `arn:aws:logs:*:*:*`
+- `arn:aws:s3:::my-bucket/*`
+- `arn:aws:dynamodb:region:account-id:table/MyTable`
+
+
+
 ---
 
-## 2️⃣ **API Gateway Permissions**
+## **API Gateway Permissions**
 
 API Gateway itself doesn’t need permissions unless you're using **IAM-based authorization** for endpoints. However, if you want to allow API Gateway to trigger a Lambda, ensure:
 
@@ -36,7 +60,7 @@ API Gateway itself doesn’t need permissions unless you're using **IAM-based au
 
 ---
 
-## 3️⃣ **DynamoDB Permissions**
+## **DynamoDB Permissions**
 
 When Lambda interacts with DynamoDB, typical permissions include:
 
@@ -60,7 +84,7 @@ When Lambda interacts with DynamoDB, typical permissions include:
 
 ---
 
-## 4️⃣ **S3 Permissions**
+## **S3 Permissions**
 
 For serverless apps handling file uploads/downloads:
 
@@ -80,7 +104,7 @@ For serverless apps handling file uploads/downloads:
 
 ---
 
-## 5️⃣ **Step Functions Permissions**
+## **Step Functions Permissions**
 
 If Lambda triggers or interacts with Step Functions:
 
@@ -97,7 +121,7 @@ If Lambda triggers or interacts with Step Functions:
 
 ---
 
-## 6️⃣ **EventBridge (CloudWatch Events) Permissions**
+## **EventBridge (CloudWatch Events) Permissions**
 
 For Lambda to publish custom events:
 
