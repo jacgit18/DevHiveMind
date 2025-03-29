@@ -11,7 +11,6 @@ Relates:
 Peer Reviewed: 0
 dg-publish:
 ---
-
 ### 1. **IAM Policies**
 
 - **Permissions Policies**: These define what actions an IAM role can perform on which resources. These are the policies that grant permissions (e.g., `s3:GetObject` on a specific bucket).
@@ -59,3 +58,9 @@ dg-publish:
 
 - **IAM Role = Trust Policy + IAM Policies** (with optional Permissions Boundaries).
 - **Resource-Based Policies** are used on resources and are separate from IAM roles themselves but can grant permissions to those roles.
+
+
+## Key Principles
+- **Least Privilege**: Only grant the permissions necessary for a specific function.
+- **Service Roles**: Each Lambda (or other service) should have its **own role**.
+- **Policy Attachment**: Permissions are attached via **IAM Policies** which are linked to IAM **Roles**.

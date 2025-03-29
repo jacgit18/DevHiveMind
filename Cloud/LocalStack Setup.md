@@ -206,9 +206,6 @@ aws --endpoint-url=http://localhost:4566 stepfunctions describe-execution \
 5. Execution completes.
 
 
-
-
-
 ## 8. Update Step Functions State Machine
 - Updates an AWS Step Functions state machine (`EnrollmentStateMachine`) using a definition file (`collections-process-offers-enrollment.json`).
 
@@ -227,6 +224,28 @@ aws --endpoint-url=http://localhost:4566 stepfunctions start-execution \
     --state-machine-arn arn:aws:states:us-east-1:000000000000:stateMachine:EnrollmentStateMachine \
     --input file://input.json
 ```
+
+## **10. List IAM Roles**
+
+```sh
+aws iam list-roles --endpoint-url=http://localhost:4566
+```
+
+
+## **11. Delete IAM Roles**
+
+```sh
+aws iam delete-policy --policy-arn arn:aws:iam::aws:policy/MyCustomPolicy --endpoint-url=http://localhost:4566
+```
+
+
+## **12. Debug IAM Roles**
+
+```sh
+aws iam get-role --role-name LambdaExecutionRole --endpoint-url=http://localhost:4566
+```
+
+
 
 ### **Purpose of This Setup**
 
