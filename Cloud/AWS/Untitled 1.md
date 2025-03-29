@@ -13,38 +13,50 @@ dg-publish:
 ---
 # **Serverless IAM Role Best Practices**
 
-✅ **Separate Roles per Function**  
-Don’t reuse roles across different Lambdas unless they have **identical permissions needs**.
+## **Separate Roles per Function**
 
-✅ **Use Wildcards Sparingly**  
+Don’t reuse roles across different Lambdas unless they have **identical permission needs**.
+
+## **Use Wildcards Sparingly**
+
 Only allow `*` in development or if truly necessary.
 
-✅ **Monitor with CloudTrail**  
+## **Monitor with CloudTrail**
+
 Log who/what changed roles/policies.
 
-✅ **Review Periodically**  
+## **Review Periodically**
+
 Use tools like **AWS IAM Access Analyzer** to detect over-privileged roles.
 
-✅ **Use Conditions**  
+## **Use Conditions**
+
 Restrict by source IP, VPC, or even request tags when possible.
 
+---
 
 # **AWS CLI Example - Attach Policy to Role**
 
+```sh
+aws iam attach-role-policy \  
+    --role-name MyLambdaRole \  
+    --policy-arn arn:aws:iam::aws:policy/AWSLambdaBasicExecutionRole
+```
 
-`aws iam attach-role-policy \     --role-name MyLambdaRole \     --policy-arn arn:aws:iam::aws:policy/AWSLambdaBasicExecutionRole`
+# **AWS CLI Example - Inline Policy (Full Example)**
 
-# 🔹 **AWS CLI Example - Inline Policy (Full Example)**
-
-
-
-`aws iam put-role-policy \     --role-name MyLambdaRole \     --policy-name MyInlinePolicy \     --policy-document file://policy.json`
+```sh
+aws iam put-role-policy \  
+    --role-name MyLambdaRole \  
+    --policy-name MyInlinePolicy \  
+    --policy-document file://policy.json
+```
 
 Where `policy.json` is the JSON document (like the examples above).
 
 ---
 
-# ⚡ **Summary Table - Common AWS Managed Policies for Serverless**
+# **Summary Table - Common AWS Managed Policies for Serverless**
 
 |Policy Name|Description|
 |---|---|
@@ -57,23 +69,23 @@ Where `policy.json` is the JSON document (like the examples above).
 
 ---
 
-
-
-
-
+# **Understanding ARN Structure**
 
 In an **AWS IAM policy's `Resource` ARN**, the part **after the region** usually represents the **account ID** followed by the **specific resource type and name**.
 
-### 📚 **General ARN Format**
+## **General ARN Format**
 
-`arn:aws:<service>:<region>:<account-id>:<resource-type>/<resource-name>`
+```sh
+arn:aws:<service>:<region>:<account-id>:<resource-type>/<resource-name>
+```
 
 ---
 
-### 🔹 **Example Breakdown - DynamoDB Table**
+## **Example Breakdown - DynamoDB Table**
 
-
-`arn:aws:dynamodb:us-east-1:123456789012:table/MyTable`
+```sh
+arn:aws:dynamodb:us-east-1:123456789012:table/MyTable
+```
 
 |Section|Example|Description|
 |---|---|---|
@@ -85,7 +97,7 @@ In an **AWS IAM policy's `Resource` ARN**, the part **after the region** usually
 
 ---
 
-### 🔹 **Examples by Service**
+## **Examples by Service**
 
 |Service|Example ARN|Explanation|
 |---|---|---|
@@ -99,7 +111,7 @@ In an **AWS IAM policy's `Resource` ARN**, the part **after the region** usually
 
 ---
 
-### 🔹 In Short
+## **In Short**
 
 ✅ **Immediately after the region is the AWS Account ID.**  
 ✅ **Then comes the resource type (table, function, bucket, etc.).**  
@@ -107,10 +119,12 @@ In an **AWS IAM policy's `Resource` ARN**, the part **after the region** usually
 
 ---
 
-### 🔹 How to Find the Right ARN
+## **How to Find the Right ARN**
 
 You can find the full ARN in:
 
 - **AWS Console** (each service usually shows the ARN somewhere in the UI)
+    
 - **AWS CLI** with describe commands (e.g., `aws lambda get-function`)
+    
 - **CloudFormation Outputs** (if you deploy resources via IaC)
