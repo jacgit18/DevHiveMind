@@ -64,7 +64,7 @@ kanban-plugin: board
 - [ ] [Becoming a Startup Investor](https://chatgpt.com/share/67e6c8eb-37d4-800d-93d2-2a77066f5668)
 - [ ] [CDL Process and Costs](https://chatgpt.com/share/67e6cc4f-f5f0-800d-8e07-fe3b96a8e5e4)
 - [ ] [Apartment Lessons](https://chatgpt.com/share/67e6c049-4900-800d-b280-cf247f2a0454)
-- [ ] List out steps to do [A] then refine those steps in terms of minimizing the number of steps creating bigger steps or even skipping steps for [A] focus on the quality of steps taken and what you get out of each one
+- [ ] List out steps to do [A] then refine those steps in terms of minimizing the number of steps creating bigger steps or more optimal smaller steps that can reduce the number of steps or even skipping steps for [A] focus on the quality of steps taken and what you get out of each one
 - [ ] ## Glaucoma Consultation  
 	- ✔Remake appointment to confirm if you need weed 😌💨 (@2025-06-30)  
 	- ✔ Eye pressure (tonometry test)  
