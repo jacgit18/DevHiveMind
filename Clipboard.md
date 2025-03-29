@@ -18,7 +18,44 @@ console.log("User input:", userInput);
 
 
 
+Here’s a **combined policy for a Lambda function** that:
 
+- Logs to CloudWatch
+- Reads from S3
+- Writes to DynamoDB
+
+```json
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Effect": "Allow",
+      "Action": [
+        "logs:CreateLogGroup",
+        "logs:CreateLogStream",
+        "logs:PutLogEvents"
+      ],
+      "Resource": "arn:aws:logs:*:*:*"
+    },
+    {
+      "Effect": "Allow",
+      "Action": [
+        "s3:GetObject",
+        "s3:PutObject"
+      ],
+      "Resource": "arn:aws:s3:::my-bucket/*"
+    },
+    {
+      "Effect": "Allow",
+      "Action": [
+        "dynamodb:PutItem",
+        "dynamodb:GetItem"
+      ],
+      "Resource": "arn:aws:dynamodb:us-east-1:123456789012:table/MyTable"
+    }
+  ]
+}
+```
 
 
 
@@ -77,11 +114,3 @@ The Lambda can now **use these temporary credentials** to access the S3 bucket.
 
 
 
-Here’s a **combined policy for a Lambda function** that:
-
-- Logs to CloudWatch
-- Reads from S3
-- Writes to DynamoDB
-
-
-`{     "Version": "2012-10-17",     "Statement": [         {             "Effect": "Allow",             "Action": [                 "logs:CreateLogGroup",                 "logs:CreateLogStream",                 "logs:PutLogEvents"             ],             "Resource": "arn:aws:logs:*:*:*"         },         {             "Effect": "Allow",             "Action": [                 "s3:GetObject",                 "s3:PutObject"             ],             "Resource": "arn:aws:s3:::my-bucket/*"         },         {             "Effect": "Allow",             "Action": [                 "dynamodb:PutItem",                 "dynamodb:GetItem"             ],             "Resource": "arn:aws:dynamodb:us-east-1:123456789012:table/MyTable"         }     ] }`

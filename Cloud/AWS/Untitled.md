@@ -1,13 +1,15 @@
 # **Common Serverless Services & Their Permissions**
 
 ## Key Principles
+
 - **Least Privilege**: Only grant the permissions necessary for a specific function.
+    
 - **Service Roles**: Each Lambda (or other service) should have its **own role**.
+    
 - **Policy Attachment**: Permissions are attached via **IAM Policies** which are linked to IAM **Roles**.
+    
 
-
-
-##  **Lambda Permissions**
+## **Lambda Permissions**
 
 When Lambda interacts with other services, it needs permissions. Common examples:
 
@@ -22,10 +24,33 @@ When Lambda interacts with other services, it needs permissions. Common examples
 
 ### **Example Inline Policy for Lambda (Basic CRUD on DynamoDB + Logs)**
 
-
-
-`{     "Version": "2012-10-17",     "Statement": [         {             "Effect": "Allow",             "Action": [                 "dynamodb:GetItem",                 "dynamodb:PutItem",                 "dynamodb:UpdateItem",                 "dynamodb:DeleteItem",                 "dynamodb:Scan"             ],             "Resource": "arn:aws:dynamodb:us-east-1:123456789012:table/MyTable"         },         {             "Effect": "Allow",             "Action": [                 "logs:CreateLogGroup",                 "logs:CreateLogStream",                 "logs:PutLogEvents"             ],             "Resource": "arn:aws:logs:us-east-1:123456789012:log-group:/aws/lambda/*:*"         }     ] }`
-
+```json
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Action": [
+                "dynamodb:GetItem",
+                "dynamodb:PutItem",
+                "dynamodb:UpdateItem",
+                "dynamodb:DeleteItem",
+                "dynamodb:Scan"
+            ],
+            "Resource": "arn:aws:dynamodb:us-east-1:123456789012:table/MyTable"
+        },
+        {
+            "Effect": "Allow",
+            "Action": [
+                "logs:CreateLogGroup",
+                "logs:CreateLogStream",
+                "logs:PutLogEvents"
+            ],
+            "Resource": "arn:aws:logs:us-east-1:123456789012:log-group:/aws/lambda/*:*"
+        }
+    ]
+}
+```
 
 ### Lambda Execution Role (Serverless)
 
@@ -33,15 +58,26 @@ Permissions for a **Lambda function** to work with other services.
 
 **Common Actions:**
 
-`"Action": [     "logs:CreateLogGroup",     "logs:CreateLogStream",     "logs:PutLogEvents",     "s3:GetObject",     "s3:PutObject",     "dynamodb:PutItem",     "dynamodb:GetItem" ]`
+```json
+"Action": [
+    "logs:CreateLogGroup",
+    "logs:CreateLogStream",
+    "logs:PutLogEvents",
+    "s3:GetObject",
+    "s3:PutObject",
+    "dynamodb:PutItem",
+    "dynamodb:GetItem"
+]
+```
 
 **Common Resources:**
 
 - `arn:aws:logs:*:*:*`
+    
 - `arn:aws:s3:::my-bucket/*`
+    
 - `arn:aws:dynamodb:region:account-id:table/MyTable`
-
-
+    
 
 ---
 
@@ -54,10 +90,21 @@ API Gateway itself doesn’t need permissions unless you're using **IAM-based au
 
 ### Example Lambda Resource Policy (Allow API Gateway to Invoke)
 
-
-
-`{     "Version": "2012-10-17",     "Statement": [         {             "Effect": "Allow",             "Principal": {                 "Service": "apigateway.amazonaws.com"             },             "Action": "lambda:InvokeFunction",             "Resource": "arn:aws:lambda:us-east-1:123456789012:function:MyFunction"         }     ] }`
-
+```json
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Principal": {
+                "Service": "apigateway.amazonaws.com"
+            },
+            "Action": "lambda:InvokeFunction",
+            "Resource": "arn:aws:lambda:us-east-1:123456789012:function:MyFunction"
+        }
+    ]
+}
+```
 
 ### API Gateway Execution (Serverless)
 
@@ -65,15 +112,19 @@ If Lambda needs to be invoked by API Gateway.
 
 **Common Actions:**
 
-
-`"Action": [     "apigateway:Invoke",     "lambda:InvokeFunction" ]`
+```json
+"Action": [
+    "apigateway:Invoke",
+    "lambda:InvokeFunction"
+]
+```
 
 **Common Resources:**
 
 - `arn:aws:apigateway:*::/restapis/*/stages/*`
     
 - `arn:aws:lambda:region:account-id:function:*`
-
+    
 
 ---
 
@@ -96,21 +147,18 @@ When Lambda interacts with DynamoDB, typical permissions include:
 
 ### Example Policy for DynamoDB Full Access to Table
 
-
-`{     "Effect": "Allow",     "Action": "dynamodb:*",     "Resource": "arn:aws:dynamodb:us-east-1:123456789012:table/MyTable" }`
-
-
-If Lambda or applications access DynamoDB.
-
-**Common Actions:**
-
-`"Action": [     "dynamodb:GetItem",     "dynamodb:PutItem",     "dynamodb:UpdateItem",     "dynamodb:Query",     "dynamodb:Scan" ]`
+```json
+{
+    "Effect": "Allow",
+    "Action": "dynamodb:*",
+    "Resource": "arn:aws:dynamodb:us-east-1:123456789012:table/MyTable"
+}
+```
 
 **Common Resources:**
 
 - `arn:aws:dynamodb:region:account-id:table/MyTable`
-
-
+    
 
 ---
 
@@ -129,22 +177,29 @@ For serverless apps handling file uploads/downloads:
 
 ### Example S3 Bucket Access Policy
 
-
-`{     "Effect": "Allow",     "Action": [         "s3:GetObject",         "s3:PutObject",         "s3:DeleteObject"     ],     "Resource": "arn:aws:s3:::my-bucket-name/*" }, {     "Effect": "Allow",     "Action": "s3:ListBucket",     "Resource": "arn:aws:s3:::my-bucket-name" }`
-
-
-If Lambda or other resources need to read/write from S3.
-
-**Common Actions:**
-
-
-`"Action": [     "s3:PutObject",     "s3:GetObject",     "s3:DeleteObject",     "s3:ListBucket" ]`
+```json
+{
+    "Effect": "Allow",
+    "Action": [
+        "s3:GetObject",
+        "s3:PutObject",
+        "s3:DeleteObject"
+    ],
+    "Resource": "arn:aws:s3:::my-bucket-name/*"
+},
+{
+    "Effect": "Allow",
+    "Action": "s3:ListBucket",
+    "Resource": "arn:aws:s3:::my-bucket-name"
+}
+```
 
 **Common Resources:**
 
 - `arn:aws:s3:::my-bucket`
     
 - `arn:aws:s3:::my-bucket/*`
+    
 
 ---
 
@@ -159,27 +214,21 @@ If Lambda triggers or interacts with Step Functions:
 
 ### Example Step Functions Policy
 
-
-
-`{     "Effect": "Allow",     "Action": [         "states:StartExecution",         "states:DescribeExecution"     ],     "Resource": "arn:aws:states:us-east-1:123456789012:stateMachine:MyStateMachine" }`
-
-
-### Step Functions
-
-If Lambda or other services trigger Step Functions.
-
-**Common Actions:**
-
-json
-
-CopyEdit
-
-`"Action": [     "states:StartExecution",     "states:DescribeExecution",     "states:StopExecution" ]`
+```json
+{
+    "Effect": "Allow",
+    "Action": [
+        "states:StartExecution",
+        "states:DescribeExecution"
+    ],
+    "Resource": "arn:aws:states:us-east-1:123456789012:stateMachine:MyStateMachine"
+}
+```
 
 **Common Resources:**
 
 - `arn:aws:states:region:account-id:stateMachine:MyStateMachine`
-
+    
 
 ---
 
@@ -192,34 +241,57 @@ For Lambda to publish custom events:
 
 ### Example EventBridge Policy
 
-
-
-`{     "Effect": "Allow",     "Action": "events:PutEvents",     "Resource": "arn:aws:events:us-east-1:123456789012:event-bus/default" }`
-
-If Lambda functions are triggered by or trigger EventBridge rules.
-
-**Common Actions:**
-
-
-`"Action": [     "events:PutEvents" ]`
+```json
+{
+    "Effect": "Allow",
+    "Action": "events:PutEvents",
+    "Resource": "arn:aws:events:us-east-1:123456789012:event-bus/default"
+}
+```
 
 **Common Resources:**
 
 - `arn:aws:events:region:account-id:rule/MyRule`
-
+    
 
 ---
 
+## **Logging Permissions**
 
+### Example CloudWatch Logs Policy
+
+```json
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Effect": "Allow",
+      "Action": [
+        "logs:CreateLogGroup",
+        "logs:CreateLogStream",
+        "logs:PutLogEvents"
+      ],
+      "Resource": "arn:aws:logs:*:*:*"
+    }
+  ]
+}
+```
 
 
 All Lambda functions need permissions to write logs.
 
 **Common Actions:**
 
-
-`"Action": [     "logs:CreateLogGroup",     "logs:CreateLogStream",     "logs:PutLogEvents" ]`
+```json
+"Action": [
+    "logs:CreateLogGroup",
+    "logs:CreateLogStream",
+    "logs:PutLogEvents"
+]
+```
 
 **Common Resources:**
 
 - `arn:aws:logs:*:*:*`
+
+
