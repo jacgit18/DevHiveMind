@@ -40,6 +40,13 @@ dg-publish:
 
 ### Hierarchy & Summary:
 
+|Policy Type|Attached To|Defines|
+|---|---|---|
+|Identity-based (Permissions)|Users, Groups, Roles|What they can do with AWS resources|
+|Resource-based|AWS Resources|Who can access the resource & what they can do|
+|Permissions Boundary|Users, Roles|The **maximum permissions** they can have|
+|Trust Policy|Roles|Who can assume the role|
+
 - **IAM Role**: The entity that is assumed by trusted services or users.
     
     - **Trust Policy**: Defines who can assume the role.

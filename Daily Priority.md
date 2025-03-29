@@ -41,7 +41,6 @@ kanban-plugin: board
 - [ ] list out questions you should ask yourself if making the decision to re-architect something or recreate it from scratch when it comes software engineering an application
 - [ ] ###### Priority Tech Topic of Focus
 - [ ] clean up [[Work LOB and arch notes to clean]]
-- [ ] [IAM Part 0](https://chatgpt.com/share/67e6bb49-a01c-800d-afce-683be8545491)
 - [ ] [IAM part 1](https://chatgpt.com/share/67e6bb1e-fdcc-800d-9fe4-24a46aaa7890)
 - [ ] [[Serverless Architecture]]
 - [ ] [[LocalStack Setup]]
