@@ -1,4 +1,4 @@
-#  **Common Serverless Services & Their Permissions**
+# **Common Serverless Services & Their Permissions**
 
 ## Key Principles
 - **Least Privilege**: Only grant the permissions necessary for a specific function.
@@ -58,6 +58,23 @@ API Gateway itself doesn’t need permissions unless you're using **IAM-based au
 
 `{     "Version": "2012-10-17",     "Statement": [         {             "Effect": "Allow",             "Principal": {                 "Service": "apigateway.amazonaws.com"             },             "Action": "lambda:InvokeFunction",             "Resource": "arn:aws:lambda:us-east-1:123456789012:function:MyFunction"         }     ] }`
 
+
+### API Gateway Execution (Serverless)
+
+If Lambda needs to be invoked by API Gateway.
+
+**Common Actions:**
+
+
+`"Action": [     "apigateway:Invoke",     "lambda:InvokeFunction" ]`
+
+**Common Resources:**
+
+- `arn:aws:apigateway:*::/restapis/*/stages/*`
+    
+- `arn:aws:lambda:region:account-id:function:*`
+
+
 ---
 
 ## **DynamoDB Permissions**
@@ -82,6 +99,19 @@ When Lambda interacts with DynamoDB, typical permissions include:
 
 `{     "Effect": "Allow",     "Action": "dynamodb:*",     "Resource": "arn:aws:dynamodb:us-east-1:123456789012:table/MyTable" }`
 
+
+If Lambda or applications access DynamoDB.
+
+**Common Actions:**
+
+`"Action": [     "dynamodb:GetItem",     "dynamodb:PutItem",     "dynamodb:UpdateItem",     "dynamodb:Query",     "dynamodb:Scan" ]`
+
+**Common Resources:**
+
+- `arn:aws:dynamodb:region:account-id:table/MyTable`
+
+
+
 ---
 
 ## **S3 Permissions**
@@ -102,6 +132,20 @@ For serverless apps handling file uploads/downloads:
 
 `{     "Effect": "Allow",     "Action": [         "s3:GetObject",         "s3:PutObject",         "s3:DeleteObject"     ],     "Resource": "arn:aws:s3:::my-bucket-name/*" }, {     "Effect": "Allow",     "Action": "s3:ListBucket",     "Resource": "arn:aws:s3:::my-bucket-name" }`
 
+
+If Lambda or other resources need to read/write from S3.
+
+**Common Actions:**
+
+
+`"Action": [     "s3:PutObject",     "s3:GetObject",     "s3:DeleteObject",     "s3:ListBucket" ]`
+
+**Common Resources:**
+
+- `arn:aws:s3:::my-bucket`
+    
+- `arn:aws:s3:::my-bucket/*`
+
 ---
 
 ## **Step Functions Permissions**
@@ -119,6 +163,24 @@ If Lambda triggers or interacts with Step Functions:
 
 `{     "Effect": "Allow",     "Action": [         "states:StartExecution",         "states:DescribeExecution"     ],     "Resource": "arn:aws:states:us-east-1:123456789012:stateMachine:MyStateMachine" }`
 
+
+### Step Functions
+
+If Lambda or other services trigger Step Functions.
+
+**Common Actions:**
+
+json
+
+CopyEdit
+
+`"Action": [     "states:StartExecution",     "states:DescribeExecution",     "states:StopExecution" ]`
+
+**Common Resources:**
+
+- `arn:aws:states:region:account-id:stateMachine:MyStateMachine`
+
+
 ---
 
 ## **EventBridge (CloudWatch Events) Permissions**
@@ -134,5 +196,30 @@ For Lambda to publish custom events:
 
 `{     "Effect": "Allow",     "Action": "events:PutEvents",     "Resource": "arn:aws:events:us-east-1:123456789012:event-bus/default" }`
 
+If Lambda functions are triggered by or trigger EventBridge rules.
+
+**Common Actions:**
+
+
+`"Action": [     "events:PutEvents" ]`
+
+**Common Resources:**
+
+- `arn:aws:events:region:account-id:rule/MyRule`
+
+
 ---
 
+
+
+
+All Lambda functions need permissions to write logs.
+
+**Common Actions:**
+
+
+`"Action": [     "logs:CreateLogGroup",     "logs:CreateLogStream",     "logs:PutLogEvents" ]`
+
+**Common Resources:**
+
+- `arn:aws:logs:*:*:*`

@@ -46,6 +46,44 @@ dg-publish:
 |Permissions Boundary|Users, Roles|The **maximum permissions** they can have|
 |Trust Policy|Roles|Who can assume the role|
 
+| Entity       | What It Is                                                                            | Typical Use Case                                            |
+| ------------ | ------------------------------------------------------------------------------------- | ----------------------------------------------------------- |
+| **Users**    | Individual people (developers, admins, etc.) with **permanent AWS login credentials** | Developers logging into the console or CLI                  |
+| **Groups**   | Collections of users that share permissions                                           | All developers in the "DevGroup" get read-only access to S3 |
+| **Policies** | Sets of permissions defining what actions are allowed or denied                       | One policy could say "Allow read/write to S3"               |
+| **Roles**    | Temporary, **assumable identities** with policies attached                            | Lambda assumes a **role** to get access to DynamoDB         |
+
+
+|**Role**|**Permissions**|
+|---|---|
+|**Admin**|Full control, can create/delete resources, manage security, etc.|
+|**Dev**|Read/write access to development resources (like S3, DynamoDB), but **no permissions to manage users, groups, or billing**|
+
+## Typical Setup
+
+- **Admins** belong to an `AdminGroup` with `AdministratorAccess` policy.
+- **Devs** belong to a `DevGroup` with a custom policy like:
+
+
+```json
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Action": [
+                "s3:ListBucket",
+                "s3:GetObject",
+                "lambda:ListFunctions",
+                "lambda:InvokeFunction"
+            ],
+            "Resource": "*"
+        }
+    ]
+}
+```
+
+
 - **IAM Role**: The entity that is assumed by trusted services or users.
     
     - **Trust Policy**: Defines who can assume the role.
