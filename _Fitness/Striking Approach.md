@@ -28,6 +28,15 @@ MMA has shorter combos because of takedowns. When kicking use high knee elevatio
 
 Keep sparing for Muay Thai down to 2 or 3 times a month for safety and quality.  
 
+#todo/BAU/MMA/Drill 
+- [ ] Work on close range kicks
+- [ ] Work more on leg kicks and setting them up
+	- When they Circle away from your back leg side aim for the legs with your kicks.
+	- Throw Inside leg kicks to lead leg when in Same stance as the other person and outside leg kick when in different opposite mirror stance.
+- [ ] Work on body kicks and while improving on [[Striking Approach#Optimal Striking Defense Order of Operations]] for hands and footwork
+- [ ] Work on Angling out after throwing while pair it with feints and strikes to disguise things.
+- [ ] For hands just try landing the jab more
+
 ## **Striking Principles**
 > [!tip] FIRE 
 > - Striking is fire you play with it you don't try to control or hold it. 
