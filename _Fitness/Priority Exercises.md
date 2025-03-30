@@ -149,7 +149,7 @@ series:
 | Upper | [[CableFloorFly.gif \|Cable Floor Fly]]                 | N/A      | PG    | Low      | ***160*** | 3    | 5    | 0     | ***80*** |
 | Core  | [[Core#^b41212\| Leg Cable Reverse Crunch]]             | N/A      | RC    | Low      | ***90***  | 3    | 5    | 0     | ***45*** |
 | Upper | Assisted Bench Press                                    | N/A      | CM    | Med      | *50*      | 3    | 5    | 0     | *50*     |
-| Lower | Hip Thrust                                              | N/A      | CM    | High     | ***100*** | 4    | 8    | 0     | **50**   |
+| Lower | Hip Thrust                                              | N/A      | CM    | High     | ***110*** | 4    | 8    | 0     | **55**   |
 ^machine
 
 
