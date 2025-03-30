@@ -101,7 +101,10 @@
     "#todo/high/buisness",
     "#todo/high/finishwatching",
     "#todo/bau/career/doc",
-    "#todo/questions/topfive"
+    "#todo/questions/topfive",
+    "#todo/bau/intergrate",
+    "#todo/capitalone",
+    "#todo/OKR"
   ],
   "_hiddenTags": []
 }
