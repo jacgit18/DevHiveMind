@@ -218,3 +218,43 @@ If any policy explicitly denies the action, it will override any allow. If no de
 - **Hierarchy**: The hierarchy starts with explicit denies and includes IAM policies, resource-based policies, trust policies, and permissions boundaries.
 
 
+
+## Here’s a **combined policy for a Lambda function** that:
+
+- Logs to CloudWatch
+- Reads from S3
+- Writes to DynamoDB
+
+```json
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Effect": "Allow",
+      "Action": [
+        "logs:CreateLogGroup",
+        "logs:CreateLogStream",
+        "logs:PutLogEvents"
+      ],
+      "Resource": "arn:aws:logs:*:*:*"
+    },
+    {
+      "Effect": "Allow",
+      "Action": [
+        "s3:GetObject",
+        "s3:PutObject"
+      ],
+      "Resource": "arn:aws:s3:::my-bucket/*"
+    },
+    {
+      "Effect": "Allow",
+      "Action": [
+        "dynamodb:PutItem",
+        "dynamodb:GetItem"
+      ],
+      "Resource": "arn:aws:dynamodb:us-east-1:123456789012:table/MyTable"
+    }
+  ]
+}
+```
+
