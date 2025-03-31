@@ -26,6 +26,8 @@ This allows for a more streamlined approach when defining IAM roles in LocalStac
 
 #todo/CapitalOne 
 - [ ] Post about Localstack and serverless development in AWS
+- [ ] [How to Setup AWS Locally Using LocalStack Without Spending a Buck \| by Ben Meehan \| Medium](https://medium.com/@ben.meehan_27368/how-to-setup-aws-locally-using-localstack-without-spending-a-buck-1c6e20bce8)
+- [ ] [A guide to using LocalStack — Running AWS Locally \| by Deepika Juneja \| Medium](https://deepikajuneja.medium.com/a-guide-to-using-localstack-running-aws-locally-cd68744e2c94)
 
 Follow [[Managing IAM]] structure when defining json files along with [[Cloud Security Best Practices]]
 
