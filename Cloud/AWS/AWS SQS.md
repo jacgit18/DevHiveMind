@@ -15,7 +15,7 @@ Amazon **SQS (Simple Queue Service)** is designed for **temporary, transient dat
 
 #todo/High/Dev 
 - [ ] [Guide to Sending Messages to an SQS Queue With Lambda. \| by Kim siangchin \| Code Like A Girl](https://code.likeagirl.io/guide-to-sending-messages-to-an-sqs-queue-with-lambda-758cf782cb83)
-- [ ] [A guide to using LocalStack — Running AWS Locally \| by Deepika Juneja \| Medium](https://deepikajuneja.medium.com/a-guide-to-using-localstack-running-aws-locally-cd68744e2c94)
+
 
 ### **What Type of Data is Processed by SQS?**
 
