@@ -12,6 +12,8 @@ Peer Reviewed: 0
 dg-publish:
 ---
 ## Evasive Movements Weakness
+> [!note] Side Note
+> Slipping and rolling can keep you in range which might be good or bad depending on intent, pulling back can leave you vulnerable to leg kicks. 
 
 ### **Pull** Openings
 ![](https://www.youtube.com/watch?v=cM0-19YYXVI&t=4s)
