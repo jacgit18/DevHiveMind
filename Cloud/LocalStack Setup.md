@@ -25,7 +25,7 @@ This document provides a step-by-step guide to setting up **AWS Lambda, IAM (Ide
 This allows for a more streamlined approach when defining IAM roles in LocalStack, reducing complexity and potential errors during local testing. 
 
 #todo/CapitalOne 
-- [ ] Post about localstack and servless development in aws
+- [ ] Post about Localstack and serverless development in AWS
 
 Follow [[Managing IAM]] structure when defining json files along with [[Cloud Security Best Practices]]
 
