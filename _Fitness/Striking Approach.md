@@ -36,7 +36,7 @@ Keep sparing for Muay Thai down to 2 or 3 times a month for safety and quality.
 - [ ] Work on body kicks and while improving on [[Striking Approach#Optimal Striking Defense Order of Operations]] for hands and footwork
 - [ ] Work on Angling out after throwing while pair it with feints and strikes to disguise things.
 - [ ] For hands just try landing the jab more
-- [ ] Work on [[Defense Energy Management]]
+- [ ] Work on [[Defense Energy Management]] & [[Defensive Tactic Transitions]]
 
 ## **Striking Principles**
 > [!tip] FIRE 
