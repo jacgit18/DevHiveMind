@@ -18,7 +18,7 @@ In striking, different defensive options have varying energy costs based on move
 ## 🔹 Lower Energy Cost (More Efficient)
 
 1. **Blocking** – Uses minimal movement, mainly arm positioning. It’s efficient but can cause damage over time.  
-2. **Parrying** – A slight redirection of strikes, requiring small, precise movements.  
+2. **Parrying** – A slight redirection of strikes, requiring small, precise movements with shoulder, elbow, or hand.  
 3. **Hand Fighting** – Intercepting and controlling an opponent’s hands takes some energy but is efficient if used strategically.  
 
 ## 🔸 Moderate Energy Cost  
