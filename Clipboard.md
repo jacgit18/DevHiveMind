@@ -39,3 +39,24 @@ When you’re operating your serverless applications at scale, you can’t affor
 - Is my application fast or slow, as experienced by my end users?
 
 -  What key performance indicators (KPIs) and service level agreements (SLAs) should we establish, and how do we know if they’re being met?
+
+
+| Deployment                  | Consumer Impact                                  | Rollback                                      | Event Model Factors                     | Deployment Speed |
+| --------------------------- | ------------------------------------------------ | --------------------------------------------- | --------------------------------------- | ---------------- |
+| **All-at-once**             | All at once                                      | Redeploy older version                        | Any event model at low concurrency rate | Immediate        |
+| **Canary/**  <br>**Linear** | 1-10% typical initial traffic shift, then phased | Revert 100% of traffic to previous deployment | Better for high-concurrency workloads   | Minutes to hours |
+
+
+  
+
+| Deployment Preferences Type   | Description                                                                                                 |
+| ----------------------------- | ----------------------------------------------------------------------------------------------------------- |
+| Canary10Percent30Minutes      | Shifts 10 percent of traffic in the first increment. The remaining 90 percent is deployed 30 minutes later. |
+| Canary10Percent5Minutes       | Shifts 10 percent of traffic in the first increment. The remaining 90 percent is deployed 5 minutes later.  |
+| Canary10Percent10Minutes      | Shifts 10 percent of traffic in the first increment. The remaining 90 percent is deployed 10 minutes later. |
+| Canary10Percent15Minutes      | Shifts 10 percent of traffic in the first increment. The remaining 90 percent is deployed 15 minutes later. |
+| Linear10PercentEvery10Minutes | Shifts 10 percent of traffic every 10 minutes until all traffic is shifted.                                 |
+| Linear10PercentEvery1Minute   | Shifts 10 percent of traffic every minute until all traffic is shifted.                                     |
+| Linear10PercentEvery2Minutes  | Shifts 10 percent of traffic every 2 minutes until all traffic is shifted.                                  |
+| Linear10PercentEvery3Minutes  | Shifts 10 percent of traffic every 3 minutes until all traffic is shifted.                                  |
+| AllAtOnce                     | Shifts all traffic to the updated Lambda functions at one time.                                             |
