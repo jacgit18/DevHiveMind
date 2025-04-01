@@ -20,7 +20,7 @@ Create stories for work that doesn't have a ticket that you are doing
 
 
 
-
+Loe level of effort
 
 When a agent or who ever initiate contract offer from Empath 
 
