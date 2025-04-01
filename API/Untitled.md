@@ -11,6 +11,8 @@ Relates:
 Peer Reviewed: 0
 dg-publish:
 ---
+relates aws
+
 ### **Choosing between RESTful APIs and WebSocket APIs**
 
 Using API Gateway, you can build and deploy both RESTful APIs and WebSocket APIs. Now that you have an introduction to these API types, this table compares a few features of each to help you choose the right API type.

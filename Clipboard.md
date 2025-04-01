@@ -25,7 +25,7 @@ To learn more, expand each of the following three categories.
 
 
 
-
+relates to aws 
 ## 
 
 **The three pillars of observability**
