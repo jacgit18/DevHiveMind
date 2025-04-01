@@ -23,9 +23,5 @@ dg-publish:
 	- ![[BJJDynamicOne.gif]]
 	- ![[BJJDynamicTwo.gif]]
 	- ![[BJJDynamicThree.gif]]
-- Bird dog
-	- ![[birdDog.gif]]
-
-
 
 
