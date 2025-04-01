@@ -26,4 +26,16 @@ To learn more, expand each of the following three categories.
 
 
 
+## 
 
+**The three pillars of observability**
+
+When you’re operating your serverless applications at scale, you can’t afford to fly blind. You need to be able to answer important operational and business questions including the following:
+
+- Is my decoupled service up or down?
+    
+- Is one of my services causing a performance bottleneck?
+    
+- Is my application fast or slow, as experienced by my end users?
+
+-  What key performance indicators (KPIs) and service level agreements (SLAs) should we establish, and how do we know if they’re being met?
