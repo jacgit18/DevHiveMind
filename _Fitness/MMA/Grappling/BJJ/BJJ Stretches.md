@@ -18,10 +18,7 @@ dg-publish:
 	- ![](https://www.youtube.com/watch?v=dV0847Mh6Xs)
 - Scorpion Flow
 	- ![](https://www.youtube.com/watch?v=5Hpc8fHNG18)
-- Hip Openers
-	- ![[HipOpenerOne.gif]]
-	- ![[HipOpenerTwo.gif]]
-	- ![[HipOpenerThree.gif]]
+
 - Bjj Movements
 	- ![[BJJDynamicOne.gif]]
 	- ![[BJJDynamicTwo.gif]]
