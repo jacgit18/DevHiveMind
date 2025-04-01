@@ -135,6 +135,7 @@ series:
 | Upper | [[Upper#^238b6e \|Chest Fly]]                           | N/A      | CM    | High     | *70*      | 3    | 5    | 4     | *70*     |
 | Upper | Crunch Chest Fly                                        | N/A      | CM    | High     | *70*      | 3    | 5    | 1     | *70*     |
 | Lower | Adduction Inner Thigh                                   | Squeeze  | CM    | High     | *190*     | 3    | 5    | 0     | **160**  |
+| Lower | Crunch Inner Thigh                                      | Squeeze  | CM    | High     | *150*     | 3    | 5    | 0     | **160**  |
 | Upper | [[CableWolverine.gif\|Cable Wolverine]]                 | N/A      | PG    | High     | ***160*** | 3    | 5    | 0     | ***80*** |
 | Upper | [[CableBalloonAbduction.gif \|Cable Balloon Abduction]] | N/A      | PG    | High     | ***160*** | 3    | 5    | 0     | ***80*** |
 | Upper | Blink Mid Row                                           | N/A      | PG    | High     | *85*      | 4    | 5    | 0     | **42.5** |
@@ -145,7 +146,7 @@ series:
 | Upper | Low Row                                                 | N/A      | PG    | Med      | *85*      | 3    | 5    | 0     | *85*     |
 | Upper | Crunch Low Row                                          | N/A      | PG    | Med      | *88*      | 3    | 5    | 0     | *88*     |
 | Upper | Shoulder Press                                          | Narrow   | CM    | Low      | *40*      | 3    | 5    | 0     | *40*     |
-| Upper | Shoulder Press                                          | Wide     | CM    | Low      | *50*      | 3    | 5    | 0     | *50*     |
+| Upper | Shoulder Press                                          | Wide     | CM    | Low      | *70*      | 3    | 5    | 0     | *70*     |
 | Upper | [[CableFloorFly.gif \|Cable Floor Fly]]                 | N/A      | PG    | Low      | ***160*** | 3    | 5    | 0     | ***80*** |
 | Core  | [[Core#^b41212\| Leg Cable Reverse Crunch]]             | N/A      | RC    | Low      | ***90***  | 3    | 5    | 0     | ***45*** |
 | Upper | Assisted Bench Press                                    | N/A      | CM    | Med      | *50*      | 3    | 5    | 0     | *50*     |
