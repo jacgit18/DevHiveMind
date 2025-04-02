@@ -39,7 +39,6 @@ Start with a dynamic stretch to Improve blood flow and flexibility. End with a s
 
 ### Start  Dynamic End Static
 - Hold push-up extended & unextended
-- Try [[BJJ Stretches]] 
 - [[Core#^60b781 |Tuck Jumps to Plank]]
 - Dynamic Butterfly Hip Rocks → Butterfly Stretch
 - Dynamic Cat-Cow Transitions -> Cat-Cow Stretch
