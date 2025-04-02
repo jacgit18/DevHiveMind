@@ -10,7 +10,7 @@ kanban-plugin: board
 - [ ] Buy time
 - [ ] [Fuck Leetcode](https://www.interviewcoder.co/#pricing)
 - [ ] Its not there job to believe its you'res
-- [ ] Don't Specify Level
+- [ ] Don't Specify Your Level let people assume
 - [ ] Ask yourself What can i get done in 10 min to limit procrastination
 - [ ] Acknowledge that you don't know. Commit to finding the answer and follow up.
 - [ ] be more descriptive and visual in your language
@@ -19,7 +19,7 @@ kanban-plugin: board
 - [ ] Ask more what if questions as a engineer when asking about scenarios
 - [ ] Clarity is confidence get as much clarity through the questions you ask yourself along with others and the drive to have confidence in your own ability weather it engineering or life.
 - [ ] I’m a Software Carpenter — it’s a nod to my name. My goal is to establish a foundation and become a Software Architect.
-- [ ] Be more of a contractor like tangy running a business acting as a consultant and providing your services instead of a employee
+- [ ] Be more of a contractor like tangy running a business acting as a consultant or third party vendor and providing your services instead of a employee
 - [ ] Look at this [[Codebase Interview Question]] (@2025-03-05)
 - [ ] ![[Business decision#^68639f]]
 - [ ] <iframe src="https://www.instagram.com/p/DENfHhYubPw/" width="250" height="500" frameborder="0" allowfullscreen></iframe>
