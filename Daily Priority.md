@@ -9,7 +9,7 @@ kanban-plugin: board
 - [ ] Best practices aren't set practices
 - [ ] Buy time
 - [ ] [Fuck Leetcode](https://www.interviewcoder.co/#pricing)
-- [ ] Its not there job to believe its you'res
+- [ ] Always assume sub optimal environment Its not there job to believe its you'res
 - [ ] Don't Specify Your Level let people assume
 - [ ] Ask yourself What can i get done in 10 min to limit procrastination
 - [ ] Acknowledge that you don't know. Commit to finding the answer and follow up.
