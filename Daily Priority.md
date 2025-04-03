@@ -53,7 +53,7 @@ kanban-plugin: board
 
 ## #prompt
 
-- [ ] [Selling Self](https://chatgpt.com/share/67e6b6eb-62a4-800d-aa4e-2cb298ad57d0)
+- [ ] [ChatGPT - Capital One Role Positioning](https://chatgpt.com/share/67edf3f1-c90c-800d-8e7f-bcf4a316ba2d)
 - [ ] [Business Deal Structuring](https://chatgpt.com/share/67e6b68f-37f4-800d-af3c-5fba183c72fa)
 - [ ] [life insurance](https://chatgpt.com/share/67e409a1-b2ac-800d-a332-5bff0f27e85d)
 - [ ] [Pharmacy](https://chatgpt.com/share/67e6b745-81dc-800d-b774-f473294807c7)
@@ -194,6 +194,7 @@ kanban-plugin: board
 - [ ] Virtual receptionist
 - [ ] Medical transcription
 - [ ] It help desk technician
+- [ ] Maybe create a company like make lab that 3D prints things for startups who don't want to invest in a 3D printer
 
 
 ## Done
