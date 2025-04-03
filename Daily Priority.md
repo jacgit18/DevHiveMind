@@ -56,7 +56,7 @@ kanban-plugin: board
 - [ ] [ChatGPT - Capital One Role Positioning](https://chatgpt.com/share/67edf3f1-c90c-800d-8e7f-bcf4a316ba2d)
 - [ ] [Business Deal Structuring](https://chatgpt.com/share/67e6b68f-37f4-800d-af3c-5fba183c72fa)
 - [ ] [life insurance](https://chatgpt.com/share/67e409a1-b2ac-800d-a332-5bff0f27e85d)
-- [ ] For life insurance cant do lump sum PUA anymore would need to do a lumps within the first two years of a new policy upgrade which will make quarterly premiums like around 80 to 90
+- [ ] For life insurance cant do lump sum PUA anymore would need to do a lumps within the first two years of a new policy might want to consider upgrade to poicy which will make quarterly premiums like around 80 to 90 but lets have a 2 year window to do lump sum PUA contributions
 - [ ] [Pharmacy](https://chatgpt.com/share/67e6b745-81dc-800d-b774-f473294807c7)
 - [ ] [Cloud & Business Logic](https://chatgpt.com/share/67e6b77a-a5b4-800d-be3b-eb68a719d1b5)
 - [ ] [Lambda Step Function flow](https://chatgpt.com/share/67e5700f-b400-800d-b888-3d60a50e5cb9)
