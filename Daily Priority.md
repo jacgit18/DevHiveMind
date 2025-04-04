@@ -6,14 +6,16 @@ kanban-plugin: board
 
 ## ##### Standing on business
 
-- [ ] Best practices aren't set practices
 - [ ] Buy time
+- [ ] ###### Treat your attention like its money
+- [ ] Best practices aren't set practices
 - [ ] [Fuck Leetcode](https://www.interviewcoder.co/#pricing)
 - [ ] Always assume sub optimal environment Its not there job to believe its you'res
-- [ ] Don't Specify Your Level let people assume
+- [ ] ###### Don't Specify Your Level let people assume
 - [ ] Ask yourself What can i get done in 10 min to limit procrastination
 - [ ] Acknowledge that you don't know. Commit to finding the answer and follow up.
 - [ ] be more descriptive and visual in your language
+- [ ] Have a plan before telling anybody that you're not going to hit a deadline especially with your Tech lead
 - [ ] have more fun and mentally flow to get more quality out of the work.
 - [ ] Okay so off the top of my head I can't tell you with 100% certainty but let me look into that and I'll come back to you with an answer but while that happens did you have any other questions this moment
 - [ ] Ask more what if questions as a engineer when asking about scenarios
@@ -41,7 +43,7 @@ kanban-plugin: board
 - [ ] Skip more steps move faster and smarter in career going every incremental step by step is the old way of doing things need to adapt for the new environment
 - [ ] list out questions you should ask yourself if making the decision to re-architect something or recreate it from scratch when it comes software engineering an application
 - [ ] ###### Priority Tech Topic of Focus
-- [ ] clean up [[Work LOB and arch notes to clean]]
+- [ ] [[Work LOB and arch notes to clean]]
 - [ ] [[Serverless Architecture]]
 - [ ] [[LocalStack Setup]]
 - [ ] [[AWS SQS]]
@@ -56,6 +58,7 @@ kanban-plugin: board
 - [ ] [ChatGPT - Capital One Role Positioning](https://chatgpt.com/share/67edf3f1-c90c-800d-8e7f-bcf4a316ba2d)
 - [ ] [Business Deal Structuring](https://chatgpt.com/share/67e6b68f-37f4-800d-af3c-5fba183c72fa)
 - [ ] [life insurance](https://chatgpt.com/share/67e409a1-b2ac-800d-a332-5bff0f27e85d)
+- [ ] Money in policy is more secure historically during bad markets
 - [ ] For life insurance cant do lump sum PUA anymore would need to do a lumps within the first two years of a new policy might want to consider upgrade to poicy which will make quarterly premiums like around 80 to 90 but lets have a 2 year window to do lump sum PUA contributions
 - [ ] [Pharmacy](https://chatgpt.com/share/67e6b745-81dc-800d-b774-f473294807c7)
 - [ ] [Cloud & Business Logic](https://chatgpt.com/share/67e6b77a-a5b4-800d-be3b-eb68a719d1b5)

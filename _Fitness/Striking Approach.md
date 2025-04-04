@@ -30,6 +30,8 @@ Keep sparing for Muay Thai down to 2 or 3 times a month for safety and quality.
 
 #todo/BAU/MMA/Drill 
 - [ ] Work on close range kicks
+- [ ] Untuck chin on exit to use head movement if needed.
+- [ ] Use hands when they throw low kicks at you not just timing for leg kick check make them pay you in some way.
 - [ ] Work more on leg kicks and setting them up
 	- When they Circle away from your back leg side aim for the legs with your kicks.
 	- Throw Inside leg kicks to lead leg when in Same stance as the other person and outside leg kick when in different opposite mirror stance.
@@ -85,6 +87,7 @@ this is a thought process which is a mental order of operation not a rule more o
     - Keep your backhand higher to protect your head and as your primary guard hand alternating between guarding with the one and both.
     - You can keep your lead hand lower for flexibility and speed.
     - Use jab defensively.
+    - Manipulate your opponent with the jab by varying speed, range, and levels—using it to poke(jab at defense), probe, and post to set up openings and control the fight.
     - Also keep [[Distance Management Tactics]] in mind.
 - **Punch Timing**: Aim to strike between heartbeats for precision and flow.
 - **Blocking  Kicks**: When checking kicks, lean slightly toward the side of the leg you're using to check in to the person kick almost like your leaning your leg on to there kicking leg. This allows the force of the kick to deflect off your shin and redirect your balance back toward your center, helping you recover quickly and stay stable. This subtle shift absorbs the impact more efficiently and positions you for a counterattack or continued defense.

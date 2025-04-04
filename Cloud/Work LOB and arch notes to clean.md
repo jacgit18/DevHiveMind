@@ -11,6 +11,62 @@ Relates:
 Peer Reviewed: 0
 dg-publish:
 ---
+Streams lambda is AMA  
+  
+  
+Raid log  
+  
+A spreadsheet for risk actions impediments and decisions
+
+
+
+
+
+App sync ucp  
+  
+Demo lambda is a placeholder for data lambda potentially for testing purposes to create a contract but data lambda is ideal but schema can vary between the two  
+  
+Data lambda needs to interface with the appsync scehma mutations from collections infra ucp  
+  
+There is a update contract status in data Lambda  
+  
+  
+Hooks process generate a bse  
+  
+  
+In current discorvery stage what in the hook is determines destination  
+  
+  
+Job scope and owner or resible parties  
+  
+Otp  
+One time payment  
+  
+Collection customer and they pay today or they on a monthly payment plans  
+  
+Ptp  
+Promise to pay  
+  
+Empath clear the ptp  
+  
+  
+  
+  
+Bff  
+Backend for frontend  
+  
+Each repo have a section of the aws infrastructure and one deployed interact with existing infrastructure
+
+
+
+
+
+
+
+
+
+
+
 Create a ticket  
   
 

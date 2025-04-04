@@ -39,6 +39,7 @@ Start with a dynamic stretch to Improve blood flow and flexibility. End with a s
 
 ### Start  Dynamic End Static
 - Hold push-up extended & unextended
+- Make a fist if you feel off balance to create tension during exercises.
 - [[Core#^60b781 |Tuck Jumps to Plank]]
 - Dynamic Butterfly Hip Rocks → Butterfly Stretch
 - Dynamic Cat-Cow Transitions -> Cat-Cow Stretch
@@ -131,8 +132,8 @@ series:
 | Lower | Leg Press off Back G&H                                  | Heals    | CM    | High     | *270*     | 3    | 5    | 0     | **135**  |
 | Lower | Leg Press Seated                                        | UpClose  | CM    | High     | *110*     | 3    | 5    | 0     | **110**  |
 | Upper | Rear Delt Fly                                           | N/A      | CM    | High     | *50*      | 3    | 5    | 0     | *45*     |
-| Upper | [[Upper#^238b6e \|Chest Fly]]                           | N/A      | CM    | High     | *70*      | 3    | 5    | 4     | *70*     |
-| Upper | Crunch Chest Fly                                        | N/A      | CM    | High     | *70*      | 3    | 5    | 1     | *70*     |
+| Upper | [[Upper#^238b6e \|Chest Fly]]                           | N/A      | CM    | High     | *80*      | 3    | 5    | 4     | *80*     |
+| Upper | Crunch Chest Fly                                        | N/A      | CM    | High     | *80*      | 3    | 5    | 1     | *80*     |
 | Lower | Adduction Inner Thigh                                   | Squeeze  | CM    | High     | *190*     | 3    | 5    | 0     | **160**  |
 | Lower | Crunch Inner Thigh                                      | Squeeze  | CM    | High     | *150*     | 3    | 5    | 0     | **160**  |
 | Upper | [[CableWolverine.gif\|Cable Wolverine]]                 | N/A      | PG    | High     | ***160*** | 3    | 5    | 0     | ***80*** |
