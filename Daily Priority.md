@@ -84,6 +84,25 @@ kanban-plugin: board
 - [ ] As a decision making assistant apply your reasoning to the situation where I'm deliberating whether to do a or b. Generate a comprehensive evaluation that lists out pro and cons making this decision and also considering the potential long-term implications, possible alternative options, and any risk or opportunities associated with each. Your objectives is provided a detailed multifaceted analysis that will guide me toward a well-informed decision.
 
 
+## Random Stuff
+
+- [ ] roth ira tax docs come May 31st
+- [ ] 3000 left to contribute to roth
+- [ ] Max Amount to have in Checking 3500 two cover two months of expense that can change
+- [ ] add 3500 to 5500 in reg fid for spy
+- [ ] Maybe create a company like make lab that 3D prints things for startups who don't want to invest in a 3D printer
+- [ ] You're not required to use your auto insurance you can pay out of pocket because if you go to your insurance sometimes it can increase your premiums after the fact food for thought
+- [ ] ## Side Hustle
+- [ ] Carpet cleaning
+- [ ] It help desk technician
+- [ ] Medical transcription
+- [ ] Power washer
+- [ ] Triple A Roadside Assistance
+- [ ] Virtual receptionist
+- [ ] [Study pool](<[Studypool - Homework Help](https://www.studypool.com)>)
+- [ ] [Visual interpreter for the blind](<[https://aira.io/](https://aira.io/)>)
+
+
 ## AWS Solution Archetict
 
 - [ ] ###### Always Free Resources (No Expiration, Limited Usage)  
@@ -189,23 +208,6 @@ kanban-plugin: board
 	  - Linux Academy (now part of A Cloud Guru)
 	- **Documentation**: AWS official documentation for services
 	- **Forums and Communities**: Reddit, AWS Discussion Forums, etc.
-
-
-## Side Hustle Ideas
-
-- [ ] roth ira tax docs come May 31st
-- [ ] 3000 left to contribute to roth
-- [ ] Max Amount to have in Checking 3500 two cover two months of expense that can change
-- [ ] add 3500 to 5500 in fid for spy
-- [ ] Carpet cleaning
-- [ ] Power washer
-- [ ] Triple A Roadside Assistance
-- [ ] [Visual interpreter for the blind](<[https://aira.io/](https://aira.io/)>)
-- [ ] [Study pool](<[Studypool - Homework Help](https://www.studypool.com)>)
-- [ ] Virtual receptionist
-- [ ] Medical transcription
-- [ ] It help desk technician
-- [ ] Maybe create a company like make lab that 3D prints things for startups who don't want to invest in a 3D printer
 
 
 ## Done
