@@ -65,3 +65,7 @@ When you’re operating your serverless applications at scale, you can’t affor
 | Linear10PercentEvery2Minutes  | Shifts 10 percent of traffic every 2 minutes until all traffic is shifted.                                  |
 | Linear10PercentEvery3Minutes  | Shifts 10 percent of traffic every 3 minutes until all traffic is shifted.                                  |
 | AllAtOnce                     | Shifts all traffic to the updated Lambda functions at one time.                                             |
+
+
+
+## Email To Send

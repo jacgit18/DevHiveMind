@@ -14,9 +14,11 @@ kanban-plugin: board
 - [ ] [Fuck Leetcode](https://www.interviewcoder.co/#pricing)
 - [ ] Always assume sub optimal environment Its not there job to believe its you'res
 - [ ] ###### Don't Specify Your Level let people assume
+- [ ] Life is like a playlist—each moment a different song, each experience its own beat. As the tracks shift and rhythms change, you move through them with your own baseline rhythm underneath it all. Sometimes it's hard to stay grounded when the tempo around you speeds up or slows down. That's why it's important to practice syncing with the external rhythm of the world without losing your own rhythm—maintaining your inner composition while adapting to the changing soundtrack the world is playing around you in the background.
 - [ ] Ask yourself What can i get done in 10 min to limit procrastination
 - [ ] Acknowledge that you don't know. Commit to finding the answer and follow up.
 - [ ] be more descriptive and visual in your language
+- [ ] Find the who like a mentor or someone to handle certain things, not the how
 - [ ] Have a plan before telling anybody that you're not going to hit a deadline especially with your Tech lead
 - [ ] have more fun and mentally flow to get more quality out of the work.
 - [ ] Okay so off the top of my head I can't tell you with 100% certainty but let me look into that and I'll come back to you with an answer but while that happens did you have any other questions this moment
