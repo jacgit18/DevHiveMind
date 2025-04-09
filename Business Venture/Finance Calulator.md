@@ -31,6 +31,7 @@ monthlyPreTaxIncome: 5200
 - [ ] futures trading
 
 
+Crunch gym comes from cap one not citi credit card
 
 New monthly about 1,576.01 ???
 
