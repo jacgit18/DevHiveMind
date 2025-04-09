@@ -39,6 +39,11 @@ Keep sparing for Muay Thai down to 2 or 3 times a month for safety and quality.
 - [ ] Work on Angling out after throwing while pair it with feints and strikes to disguise things.
 - [ ] For hands just try landing the jab more
 - [ ] Work on [[Defense Energy Management]] & [[Defensive Tactic Transitions]]
+- [ ] Breathing Management
+	- [ ] Light movement breathe **in and out through the nose**
+	- [ ] Moderate movement pushing things a little bit more or getting pushed breathe **out through mouth and in through nose**
+	- [ ] High movement breathing **in and out through the mouth** but still try to be efficient about breathing patterns in this scenario
+
 
 ## **Striking Principles**
 > [!tip] FIRE 
