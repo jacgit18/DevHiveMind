@@ -69,3 +69,15 @@ When you’re operating your serverless applications at scale, you can’t affor
 
 
 ## Email To Send
+Subject: Interest in Auto Loan Team Opportunities at Capital One  
+  
+Hi [Vendor Contact's Name],  
+  
+I hope you're doing well. As we approach the end of my current contract in June, I wanted to check in and mention something I’ve been thinking about. I’m not sure how much sway or visibility you have when it comes to which teams I might be placed on if the contract gets extended, but I wanted to express my interest in Capital One’s auto loan line of business.  
+  
+It’s a space I’d be excited to support and grow in, and I’d love to be considered if there are any contractor needs in that area. Please let me know if that’s something worth exploring or if there’s anything I should keep in mind moving forward.  
+  
+Thanks again for your continued support—I really appreciate it.  
+  
+Best,  
+[Your Full Name]

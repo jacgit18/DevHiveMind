@@ -36,7 +36,7 @@ kanban-plugin: board
 ## #todo/CapitalOne
 
 - [ ] Scrum master from April 3rd to  16th
-- [ ] Check out Tickets for [Linkin Park](https://www.ticketmaster.com/event/3000616CBC102456?irgwc=1&clickid=yb%3A3dyX9lxyKRQ8QFvUZ3UK-UkszbDzFySChSM0&camefrom=CFC_BUYAT_1387536&impradid=1387536&REFERRAL_ID=tmfeedbuyat1387536&wt.mc_id=aff_BUYAT_1387536&utm_source=1387536-Seated&impradname=Seated&utm_medium=affiliate&ircid=4272)
+- [ ] [[Clipboard#Email To Send]] in June
 - [ ] ###### Try to get put on a team that manages this [Capital One Auto Navigator](https://www.capitalone.com/cars/)
 - [ ] Focus engineering efforts on getting on teams or industries of interest that you're trying to learn about more that overlap with your personal life like healthcare understanding that better and navigating it personally better or Auto Etc could be anything
 - [ ] [[Capital One Stats]]
@@ -88,13 +88,15 @@ kanban-plugin: board
 
 ## Random Stuff
 
+- [ ] Check out Tickets for [Linkin Park](https://www.ticketmaster.com/event/3000616CBC102456?irgwc=1&clickid=yb%3A3dyX9lxyKRQ8QFvUZ3UK-UkszbDzFySChSM0&camefrom=CFC_BUYAT_1387536&impradid=1387536&REFERRAL_ID=tmfeedbuyat1387536&wt.mc_id=aff_BUYAT_1387536&utm_source=1387536-Seated&impradname=Seated&utm_medium=affiliate&ircid=4272)
+- [ ] ## Short term Fin Stuff
 - [ ] roth ira tax docs come May 31st
 - [ ] 3000 left to contribute to roth
 - [ ] Max Amount to have in Checking 3500 two cover two months of expense that can change
 - [ ] add 3500 to 5500 in reg fid for spy
-- [ ] Maybe create a company like make lab that 3D prints things for startups who don't want to invest in a 3D printer
 - [ ] You're not required to use your auto insurance you can pay out of pocket because if you go to your insurance sometimes it can increase your premiums after the fact food for thought
 - [ ] ## Side Hustle
+- [ ] Maybe create a company like make lab that 3D prints things for startups who don't want to invest in a 3D printer
 - [ ] Carpet cleaning
 - [ ] It help desk technician
 - [ ] Medical transcription
