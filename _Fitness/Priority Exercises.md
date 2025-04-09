@@ -111,18 +111,19 @@ series:
 	- Pulley Machine can use [[Tower 200.pdf |Tower 200]] for practice weight ranges from 25 to 45
 
 #todo/Life/Research 
-- [x] Eaa over bcaa try looking into Eaa ✅ 2024-12-29
-- [x] Check New Weight limits ✅ 2025-01-20
 - [ ] orange weight not verified based off tower 200 weights verify at gym 
 
 #todo/BAU/Workout
 - [ ] Focus on stability for 3 months then add resistance and more weight and reattempt low priority excercise
 - [ ] 6 to 20 reps near failure at max with heavy weights
 - [ ] Get to 8 set 4 reps heavy weights
+- [ ] Do hip thrust without weight or lower weight
 - [ ] Focus on intensity then scale to volume
 - [ ] Slow intensity exercise should spend at least 5 min per exercise
 - [ ] Other leg press variation lesser reps
 - [ ] Controlled Explosive Burpee
+
+> Crunch gym machine are heaver then Blink.
 
 | Body  | Machine                                                 | Position | Focus | Priority | Weight    | Sets | Reps | Range | Per Side |
 | ----- | ------------------------------------------------------- | -------- | ----- | -------- | --------- | ---- | ---- | ----- | -------- |
@@ -134,14 +135,15 @@ series:
 | Upper | Rear Delt Fly                                           | N/A      | CM    | High     | *50*      | 3    | 5    | 0     | *45*     |
 | Upper | [[Upper#^238b6e \|Chest Fly]]                           | N/A      | CM    | High     | *80*      | 3    | 5    | 4     | *80*     |
 | Upper | Crunch Chest Fly                                        | N/A      | CM    | High     | *80*      | 3    | 5    | 1     | *80*     |
-| Lower | Adduction Inner Thigh                                   | Squeeze  | CM    | High     | *190*     | 3    | 5    | 0     | **160**  |
-| Lower | Crunch Inner Thigh                                      | Squeeze  | CM    | High     | *150*     | 3    | 5    | 0     | **160**  |
+| Lower | Adduction Inner Thigh                                   | Squeeze  | CM    | High     | *190*     | 3    | 5    | 0     | *190*    |
+| Lower | Crunch Inner Thigh                                      | Squeeze  | CM    | High     | *140*     | 3    | 5    | 0     | *140*    |
 | Upper | [[CableWolverine.gif\|Cable Wolverine]]                 | N/A      | PG    | High     | ***160*** | 3    | 5    | 0     | ***80*** |
 | Upper | [[CableBalloonAbduction.gif \|Cable Balloon Abduction]] | N/A      | PG    | High     | ***160*** | 3    | 5    | 0     | ***80*** |
 | Upper | Blink Mid Row                                           | N/A      | PG    | High     | *85*      | 4    | 5    | 0     | **42.5** |
 | Upper | Crunch Mid Row                                          | N/A      | PG    | High     | *165*     | 4    | 5    | 0     | **165**  |
 | Upper | [[Upper#^a7be5a \|Cable Woodchopper]]                   | N/A      | RC    | Med      | ***160*** | 3    | 5    | 0     | ***80*** |
-| Lower | Abduction Outer Thigh                                   | Spread   | CM    | Med      | *160*     | 3    | 5    | 7     | *145*    |
+| Lower | Abduction Outer Thigh                                   | Spread   | CM    | Med      | *160*     | 3    | 5    | 7     | *160*    |
+| Lower | Crunch Abduction Outer Thigh                            | Spread   | CM    | Med      | *100*     | 3    | 5    | 7     | *100*    |
 | Upper | Isolated Lateral Chest                                  | Wide     | CM    | Med      | *100*     | 3    | 5    | 0     | **50**   |
 | Upper | Low Row                                                 | N/A      | PG    | Med      | *85*      | 3    | 5    | 0     | *85*     |
 | Upper | Crunch Low Row                                          | N/A      | PG    | Med      | *88*      | 3    | 5    | 0     | *88*     |
@@ -186,6 +188,7 @@ series:
 | Upper | [[Upper#^b1e482 \|Dead Hang]]               | PG     | Bodyweight | *0*      | High     | **30**sec | 1    | Bodyweight | 0            |
 | Core  | [[Core#^6516d4\|Russian Twists]]            | RC     | Kettlebell | *17.6*   | High     | **20**sec | 3    | MediBall   | 0            |
 | Full  | [[Full Body#^775bc4 \|Farmer’s Walk]]       | CM     | Kettlebell | *17.6*   | High     | **20**sec | 3    | Dumbbell   | *20*         |
+| Upper | Switch Catch                                | EP     | Dumbell    | *5*      | High     | **1**Min  | 1    | Dumbbell   | *5*          |
 | Upper | [[Full Body#^05e3ec \|Seated Cable Row]]    | PG     | Machine    | *0*      | Med      | **20**sec | 3    | Machine    | *0*          |
 | Lower | [[Lower#^afd7a0 \|Lateral Skater Jumps]]    | EP     | Jump       | *0*      | Med      | **20**sec | 3    | Jump       | *0*          |
 | Full  | Jump Rope                                   | Cardio | Rope       | *0*      | Med      | **20**sec | 3    | Jump       | *0*          |

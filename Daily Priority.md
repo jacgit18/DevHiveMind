@@ -6,6 +6,8 @@ kanban-plugin: board
 
 ## ##### Standing on business
 
+- [ ] [[Striking Approach]]
+- [ ] [[Priority Exercises]]
 - [ ] Buy time
 - [ ] ###### Treat your attention like its money
 - [ ] Best practices aren't set practices
@@ -58,7 +60,8 @@ kanban-plugin: board
 - [ ] [ChatGPT - Capital One Role Positioning](https://chatgpt.com/share/67edf3f1-c90c-800d-8e7f-bcf4a316ba2d)
 - [ ] [Business Deal Structuring](https://chatgpt.com/share/67e6b68f-37f4-800d-af3c-5fba183c72fa)
 - [ ] [life insurance](https://chatgpt.com/share/67e409a1-b2ac-800d-a332-5bff0f27e85d)
-- [ ] Money in policy is more secure historically during bad markets
+- [ ] [Second Policy for PUA](https://chatgpt.com/share/67f03df3-9060-800d-8e7a-b236515f36d4)
+- [ ] Money in policy is more secure historically during bad markets also see if there are lower policies
 - [ ] For life insurance cant do lump sum PUA anymore would need to do a lumps within the first two years of a new policy might want to consider upgrade to poicy which will make quarterly premiums like around 80 to 90 but lets have a 2 year window to do lump sum PUA contributions
 - [ ] [Pharmacy](https://chatgpt.com/share/67e6b745-81dc-800d-b774-f473294807c7)
 - [ ] [Cloud & Business Logic](https://chatgpt.com/share/67e6b77a-a5b4-800d-be3b-eb68a719d1b5)
@@ -68,6 +71,7 @@ kanban-plugin: board
 - [ ] [Medical Courier Business](https://chatgpt.com/share/67e6cb33-5a94-800d-90e4-d5da3e6c1065)
 - [ ] [Becoming a Startup Investor](https://chatgpt.com/share/67e6c8eb-37d4-800d-93d2-2a77066f5668)
 - [ ] [CDL Process and Costs](https://chatgpt.com/share/67e6cc4f-f5f0-800d-8e07-fe3b96a8e5e4)
+- [ ] [Borrowing Against Assets](https://chatgpt.com/share/67f56ec6-ec7c-800d-a03b-48f0e0712f43)
 - [ ] [Apartment Lessons](https://chatgpt.com/share/67e6c049-4900-800d-b280-cf247f2a0454)
 - [ ] List out steps to do [A] then refine those steps in terms of minimizing the number of steps creating bigger steps or more optimal smaller steps that can reduce the number of steps or even skipping steps for [A] focus on the quality of steps taken and what you get out of each one
 - [ ] ## Glaucoma Consultation  
@@ -75,7 +79,6 @@ kanban-plugin: board
 	- ✔ Eye pressure (tonometry test)  
 	- ✔ Optic nerve health (dilated eye exam, OCT scan)  
 	- ✔ Visual field test (to check for blind spots)
-- [ ] roth ira tax docs come May 31st
 - [ ] Ask doctor for letter of Medical Necessity for supplements pick a exclusive credit cards for supplements once you get letter then you can expense things out from that day for Supplements for HSA
 - [ ] Investigate the top achievers in software engineering. List key lessons from their success and discern patterns, strategies, habits, and mindset that contributes to their high productivity. Ask me detailed questions about my current work situation, my skills, and my professional goals. Based on my top responses contextualized the lessons from top performers to my unique context. Suggest specific actionable steps I can take to implement these lessons in my daily routine boost my productivity and overall performance.
 - [ ] As a decision making assistant apply your reasoning to the situation where I'm deliberating whether to do a or b. Generate a comprehensive evaluation that lists out pro and cons making this decision and also considering the potential long-term implications, possible alternative options, and any risk or opportunities associated with each. Your objectives is provided a detailed multifaceted analysis that will guide me toward a well-informed decision.
@@ -190,6 +193,10 @@ kanban-plugin: board
 
 ## Side Hustle Ideas
 
+- [ ] roth ira tax docs come May 31st
+- [ ] 3000 left to contribute to roth
+- [ ] Max Amount to have in Checking 3500 two cover two months of expense that can change
+- [ ] add 3500 to 5500 in fid for spy
 - [ ] Carpet cleaning
 - [ ] Power washer
 - [ ] Triple A Roadside Assistance
@@ -204,7 +211,6 @@ kanban-plugin: board
 ## Done
 
 - [x] Ask to shadow Young during sessions of team mate (@2025-01-31) ✅ 2025-01-27
-- [x] Vision and dental is united healthcare ✅ 2025-01-27
 
 
 ## Job Clipboard

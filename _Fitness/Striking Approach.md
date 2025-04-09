@@ -53,6 +53,11 @@ Keep sparing for Muay Thai down to 2 or 3 times a month for safety and quality.
 
 ![](https://www.youtube.com/watch?v=2umB17ZXMGM&t=207s)
 
+
+### Distractions 
+- Watch the shoulders and elbows and their body language to gauge intent don't worry about the punch or kicks.
+
+
 ### **1. Be Playful and Adaptive**
 - Treat sparring as a game; keep it light and exploratory take up space and the other person time.
 - Plan head movement before punching & time people on there steps to kick and be aware of your timing when moving.
