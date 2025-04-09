@@ -36,7 +36,8 @@ kanban-plugin: board
 ## #todo/CapitalOne
 
 - [ ] Scrum master from April 3rd to  16th
-- [ ] [[Clipboard#Email To Send]] in June
+- [ ] [[Clipboard#Email To Send]] on (@2025-06-01)
+- [ ] Update Resume with [[Clipboard#Resume Placeholder Experience]]
 - [ ] ###### Try to get put on a team that manages this [Capital One Auto Navigator](https://www.capitalone.com/cars/)
 - [ ] Focus engineering efforts on getting on teams or industries of interest that you're trying to learn about more that overlap with your personal life like healthcare understanding that better and navigating it personally better or Auto Etc could be anything
 - [ ] [[Capital One Stats]]
