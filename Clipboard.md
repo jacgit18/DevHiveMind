@@ -13,6 +13,15 @@ console.log("User input:", userInput);
 }
 ```
 
+Avoid premature optimization 
+
+At a part in system design doc about building own tools
+
+When doing migration you want monitoring before doing anything manager 
+
+
+
+https://chatgpt.com/share/67f6ff55-c0a8-800d-8673-1d9137b6a27d
 
 
 [How AI Agents Are Quietly Transforming Frontend Development - The New Stack](https://thenewstack.io/how-ai-agents-are-quietly-transforming-frontend-development/)

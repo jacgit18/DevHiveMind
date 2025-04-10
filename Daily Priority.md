@@ -8,7 +8,7 @@ kanban-plugin: board
 
 - [ ] [[Striking Approach]]
 - [ ] [[Priority Exercises]]
-- [ ] Buy time
+- [ ] Be smart about buying time and pay the price more for things that matter and have an unavoidable cost
 - [ ] ###### Treat your attention like its money
 - [ ] Best practices aren't set practices
 - [ ] [Fuck Leetcode](https://www.interviewcoder.co/#pricing)
