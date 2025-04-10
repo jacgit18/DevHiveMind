@@ -92,7 +92,6 @@
     "#todo/high/dev",
     "#todo/prompts",
     "#todo/bau/dev",
-    "#todo/bau/career",
     "#todo/bau/mma",
     "#todo/high/refinethought/",
     "#todo/bau/clout-chase",
@@ -102,9 +101,9 @@
     "#todo/high/finishwatching",
     "#todo/bau/career/doc",
     "#todo/questions/topfive",
-    "#todo/bau/intergrate",
     "#todo/capitalone",
-    "#todo/OKR"
+    "#todo/OKR",
+    "#todo/bau/intergrate"
   ],
   "_hiddenTags": []
 }

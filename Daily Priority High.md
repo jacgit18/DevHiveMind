@@ -63,6 +63,7 @@ kanban-plugin: board
 - [ ] [ChatGPT - Capital One Role Positioning](https://chatgpt.com/share/67edf3f1-c90c-800d-8e7f-bcf4a316ba2d)
 - [ ] [Business Deal Structuring](https://chatgpt.com/share/67e6b68f-37f4-800d-af3c-5fba183c72fa)
 - [ ] [life insurance](https://chatgpt.com/share/67e409a1-b2ac-800d-a332-5bff0f27e85d)
+- [ ] [Personality Meets Decentralized Arch](https://chatgpt.com/share/67f771b6-33f4-800d-9da5-55d8b0ce0498)
 - [ ] [Second Policy for PUA](https://chatgpt.com/share/67f03df3-9060-800d-8e7a-b236515f36d4)
 - [ ] Money in policy is more secure historically during bad markets also see if there are lower policies
 - [ ] For life insurance cant do lump sum PUA anymore would need to do a lumps within the first two years of a new policy might want to consider upgrade to poicy which will make quarterly premiums like around 80 to 90 but lets have a 2 year window to do lump sum PUA contributions
@@ -77,12 +78,6 @@ kanban-plugin: board
 - [ ] [Borrowing Against Assets](https://chatgpt.com/share/67f56ec6-ec7c-800d-a03b-48f0e0712f43)
 - [ ] [Apartment Lessons](https://chatgpt.com/share/67e6c049-4900-800d-b280-cf247f2a0454)
 - [ ] List out steps to do [A] then refine those steps in terms of minimizing the number of steps creating bigger steps or more optimal smaller steps that can reduce the number of steps or even skipping steps for [A] focus on the quality of steps taken and what you get out of each one
-- [ ] ## Glaucoma Consultation  
-	- ✔Remake appointment to confirm if you need weed 😌💨 (@2025-06-30)  
-	- ✔ Eye pressure (tonometry test)  
-	- ✔ Optic nerve health (dilated eye exam, OCT scan)  
-	- ✔ Visual field test (to check for blind spots)
-- [ ] Ask doctor for letter of Medical Necessity for supplements pick a exclusive credit cards for supplements once you get letter then you can expense things out from that day for Supplements for HSA
 - [ ] Investigate the top achievers in software engineering. List key lessons from their success and discern patterns, strategies, habits, and mindset that contributes to their high productivity. Ask me detailed questions about my current work situation, my skills, and my professional goals. Based on my top responses contextualized the lessons from top performers to my unique context. Suggest specific actionable steps I can take to implement these lessons in my daily routine boost my productivity and overall performance.
 - [ ] As a decision making assistant apply your reasoning to the situation where I'm deliberating whether to do a or b. Generate a comprehensive evaluation that lists out pro and cons making this decision and also considering the potential long-term implications, possible alternative options, and any risk or opportunities associated with each. Your objectives is provided a detailed multifaceted analysis that will guide me toward a well-informed decision.
 
@@ -90,6 +85,12 @@ kanban-plugin: board
 ## Random Stuff
 
 - [ ] Check out Tickets for [Linkin Park](https://www.ticketmaster.com/event/3000616CBC102456?irgwc=1&clickid=yb%3A3dyX9lxyKRQ8QFvUZ3UK-UkszbDzFySChSM0&camefrom=CFC_BUYAT_1387536&impradid=1387536&REFERRAL_ID=tmfeedbuyat1387536&wt.mc_id=aff_BUYAT_1387536&utm_source=1387536-Seated&impradname=Seated&utm_medium=affiliate&ircid=4272)
+- [ ] Ask doctor for letter of Medical Necessity for supplements pick a exclusive credit cards for supplements once you get letter then you can expense things out from that day for Supplements for HSA
+- [ ] ## Glaucoma Consultation  
+	- ✔Remake appointment to confirm if you need weed 😌💨 (@2025-06-30)  
+	- ✔ Eye pressure (tonometry test)  
+	- ✔ Optic nerve health (dilated eye exam, OCT scan)  
+	- ✔ Visual field test (to check for blind spots)
 - [ ] ## Short term Fin Stuff
 - [ ] roth ira tax docs come May 31st
 - [ ] 3000 left to contribute to roth
@@ -106,6 +107,10 @@ kanban-plugin: board
 - [ ] Virtual receptionist
 - [ ] [Study pool](<[Studypool - Homework Help](https://www.studypool.com)>)
 - [ ] [Visual interpreter for the blind](<[https://aira.io/](https://aira.io/)>)
+
+
+## Done
+
 
 
 ## AWS Solution Archetict
@@ -213,11 +218,6 @@ kanban-plugin: board
 	  - Linux Academy (now part of A Cloud Guru)
 	- **Documentation**: AWS official documentation for services
 	- **Forums and Communities**: Reddit, AWS Discussion Forums, etc.
-
-
-## Done
-
-- [x] Ask to shadow Young during sessions of team mate (@2025-01-31) ✅ 2025-01-27
 
 
 ## Job Clipboard
