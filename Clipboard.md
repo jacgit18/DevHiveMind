@@ -13,6 +13,16 @@ console.log("User input:", userInput);
 }
 ```
 
+
+Pager duty alerts to phone etc on failure  
+Publish message to pager duty in the future
+
+
+
+
+
+
+
 Avoid premature optimization 
 
 Add a part in system design doc about building own tools instead of using someones library
@@ -25,6 +35,29 @@ https://chatgpt.com/share/67f6ff55-c0a8-800d-8673-1d9137b6a27d
 
 
 [How AI Agents Are Quietly Transforming Frontend Development - The New Stack](https://thenewstack.io/how-ai-agents-are-quietly-transforming-frontend-development/)
+
+
+
+Lensa lets you visualize and monitor live data in Kafka streams—like credit card transactions—in real-time.  
+  
+Kafka is commonly used in systems that require high-throughput, real-time data processing, such as fraud detection systems, recommendation engines, or payment processing pipelines. Lensa (assuming this refers to an internal tool or a real-time data visualization platform) sits on top of Kafka to give engineers, analysts, and product teams a clear window into what’s happening across their data streams as it happens.  
+  
+Use Case: Credit Card Transaction Monitoring  
+  
+Imagine you're working at a financial company that handles millions of credit card transactions per day. These transactions are flowing through Kafka topics. Lensa allows you to do things like:  
+  
+Monitor anomalies: See spikes or unusual patterns in transaction amounts or volume that could signal fraud.  
+  
+Segment data: Filter by merchant category, location, card type, or customer segment in real-time.  
+  
+Audit flows: Trace the lifecycle of a transaction across various Kafka topics and services.  
+  
+Debug issues: Catch failed transactions or processing errors as they happen, without digging through log files.  
+  
+  
+In short, Lensa acts like a real-time dashboard and debugger for your Kafka-based systems—making abstract streams of data more human-friendly and actionable.
+
+
 
 
 
