@@ -62,6 +62,7 @@ kanban-plugin: board
 
 - [ ] [Personality Meets Decentralized Arch](https://chatgpt.com/share/67f771b6-33f4-800d-9da5-55d8b0ce0498)
 - [ ] [ChatGPT - Capital One Role Positioning](https://chatgpt.com/share/67edf3f1-c90c-800d-8e7f-bcf4a316ba2d)
+- [ ] [Lambda Step Function flow](https://chatgpt.com/share/67e5700f-b400-800d-b888-3d60a50e5cb9)
 - [ ] [Business Deal Structuring](https://chatgpt.com/share/67e6b68f-37f4-800d-af3c-5fba183c72fa)
 - [ ] [life insurance](https://chatgpt.com/share/67e409a1-b2ac-800d-a332-5bff0f27e85d)
 - [ ] [Second Policy for PUA](https://chatgpt.com/share/67f03df3-9060-800d-8e7a-b236515f36d4)
@@ -69,7 +70,6 @@ kanban-plugin: board
 - [ ] For life insurance cant do lump sum PUA anymore would need to do a lumps within the first two years of a new policy might want to consider upgrade to poicy which will make quarterly premiums like around 80 to 90 but lets have a 2 year window to do lump sum PUA contributions
 - [ ] [Pharmacy](https://chatgpt.com/share/67e6b745-81dc-800d-b774-f473294807c7)
 - [ ] [Cloud & Business Logic](https://chatgpt.com/share/67e6b77a-a5b4-800d-be3b-eb68a719d1b5)
-- [ ] [Lambda Step Function flow](https://chatgpt.com/share/67e5700f-b400-800d-b888-3d60a50e5cb9)
 - [ ] [Stock & Margin Rates](https://chatgpt.com/share/67e6b7e3-8494-800d-bb00-c69e8a318908)
 - [ ] [Trust](https://chatgpt.com/share/67e6b62a-b334-800d-9633-90f4311dcc9f)
 - [ ] [Medical Courier Business](https://chatgpt.com/share/67e6cb33-5a94-800d-90e4-d5da3e6c1065)
