@@ -143,7 +143,7 @@ series:
 | Upper | Crunch Mid Row                                          | N/A      | PG    | High     | *165*     | 4    | 5    | 0     | **165**  |
 | Upper | [[Upper#^a7be5a \|Cable Woodchopper]]                   | N/A      | RC    | Med      | ***160*** | 3    | 5    | 0     | ***80*** |
 | Lower | Abduction Outer Thigh                                   | Spread   | CM    | Med      | *160*     | 3    | 5    | 7     | *160*    |
-| Lower | Crunch Abduction Outer Thigh                            | Spread   | CM    | Med      | *100*     | 3    | 5    | 7     | *100*    |
+| Lower | Crunch Abduction Outer Thigh                            | Spread   | CM    | Med      | *110*     | 3    | 5    | 7     | *110*    |
 | Upper | Isolated Lateral Chest                                  | Wide     | CM    | Med      | *100*     | 3    | 5    | 0     | **50**   |
 | Upper | Low Row                                                 | N/A      | PG    | Med      | *85*      | 3    | 5    | 0     | *85*     |
 | Upper | Crunch Low Row                                          | N/A      | PG    | Med      | *88*      | 3    | 5    | 0     | *88*     |
@@ -182,6 +182,8 @@ series:
 | [[Lower#^c9d45f \|Kettlebell Step-Up]]        | Lower | EP    | Kettlebell | *17.6*   | Low      | 3    | 10   |
 | Rear Dealt Fly                                | Upper | CM    | Dumbbell   | *20*     | Low      | 3    | 10   |
 ^freeweight
+
+Squeeze not to wide
 
 | Body  | Exercise                                    | Focus  | Type       | W(lb/kg) | Priority | Time      | Sets | AltType    | Alt W(lb/kg) |
 | ----- | ------------------------------------------- | ------ | ---------- | -------- | -------- | --------- | ---- | ---------- | ------------ |
