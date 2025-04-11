@@ -60,10 +60,10 @@ kanban-plugin: board
 
 ## #prompt
 
+- [ ] [Personality Meets Decentralized Arch](https://chatgpt.com/share/67f771b6-33f4-800d-9da5-55d8b0ce0498)
 - [ ] [ChatGPT - Capital One Role Positioning](https://chatgpt.com/share/67edf3f1-c90c-800d-8e7f-bcf4a316ba2d)
 - [ ] [Business Deal Structuring](https://chatgpt.com/share/67e6b68f-37f4-800d-af3c-5fba183c72fa)
 - [ ] [life insurance](https://chatgpt.com/share/67e409a1-b2ac-800d-a332-5bff0f27e85d)
-- [ ] [Personality Meets Decentralized Arch](https://chatgpt.com/share/67f771b6-33f4-800d-9da5-55d8b0ce0498)
 - [ ] [Second Policy for PUA](https://chatgpt.com/share/67f03df3-9060-800d-8e7a-b236515f36d4)
 - [ ] Money in policy is more secure historically during bad markets also see if there are lower policies
 - [ ] For life insurance cant do lump sum PUA anymore would need to do a lumps within the first two years of a new policy might want to consider upgrade to poicy which will make quarterly premiums like around 80 to 90 but lets have a 2 year window to do lump sum PUA contributions
