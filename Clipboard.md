@@ -15,7 +15,7 @@ console.log("User input:", userInput);
 
 Avoid premature optimization 
 
-At a part in system design doc about building own tools
+Add a part in system design doc about building own tools instead of using someones library
 
 When doing migration you want monitoring before doing anything manager 
 
