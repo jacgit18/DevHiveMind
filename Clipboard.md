@@ -28,7 +28,7 @@ https://chatgpt.com/share/67f6ff55-c0a8-800d-8673-1d9137b6a27d
 
 
 
-
+Use operator for anything stateful in python
 ### Deployment strategies
 
 With Lambda traffic shifting, you can send a small subset of traffic to your newest function version while keeping the majority of incoming production traffic to your old, stable version. Some of the following deployment strategies use traffic shifting. Traffic shifting helps you validate that your new Lambda version works as expected, before sending all production traffic to it.
