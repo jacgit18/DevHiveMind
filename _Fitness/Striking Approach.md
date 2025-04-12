@@ -60,14 +60,12 @@ Keep sparing for Muay Thai down to 2 or 3 times a month for safety and quality.
 
 
 ### Distractions 
-Watch the shoulders and elbows and their body language to gauge intent don't worry about the punch or kicks.
-
 **Pro Tip:**  
-Don’t fixate on just one area. Keep cycling your attention between these body parts like you’re scanning for signals. Over time, you’ll start to “see” the rhythm behind their movements and respond before they fully commit.
+Don’t fixate on just one area. Keep cycling your attention between these body parts like you’re scanning for signals. Over time, you’ll start to “see” the rhythm behind their movements and respond before they fully commit reading there body language to gauge there intent don't worry about the punch or kicks.
 
 #### 1. Feet
-Watch for weight shifts, pivots, and stances.  
-Their feet reveal balance, direction, and whether they’re setting up to move, strike, or retreat.
+- Watch for weight shifts, pivots, and stances.  
+- Their feet reveal balance, direction, and whether they’re setting up to move, strike, or retreat.
 
 #### 2. Hips
 - The hips generate power—any rotation or shift can signal an incoming strike.  
