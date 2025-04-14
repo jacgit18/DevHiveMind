@@ -13,7 +13,7 @@ kanban-plugin: board
 - [ ] Best practices aren't set practices
 - [ ] [Fuck Leetcode](https://www.interviewcoder.co/#pricing)
 - [ ] Always assume sub optimal environment Its not there job to believe its you'res
-- [ ] ###### Don't Specify Your Level let people assume
+- [ ] ![[Business decision#^68639f]]
 - [ ] Life is like a playlist—each moment a different song, each experience its own beat. As the tracks shift and rhythms change, you move through them with your own baseline rhythm underneath it all. Sometimes it's hard to stay grounded when the tempo around you speeds up or slows down. That's why it's important to practice syncing with the external rhythm of the world without losing your own rhythm—maintaining your inner composition while adapting to the changing soundtrack the world is playing around you in the background.
 - [ ] Ask yourself What can i get done in 10 min to limit procrastination
 - [ ] Acknowledge that you don't know. Commit to finding the answer and follow up.
@@ -26,12 +26,8 @@ kanban-plugin: board
 - [ ] Clarity is confidence get as much clarity through the questions you ask yourself along with others and the drive to have confidence in your own ability weather it engineering or life.
 - [ ] I’m a Software Carpenter — it’s a nod to my name. My goal is to establish a foundation and become a Software Architect.
 - [ ] Be more of a contractor like tangy running a business acting as a consultant or third party vendor and providing your services instead of a employee
-- [ ] Look at this [[Codebase Interview Question]] (@2025-03-05)
-- [ ] ![[Business decision#^68639f]]
-- [ ] <iframe src="https://www.instagram.com/p/DENfHhYubPw/" width="250" height="500" frameborder="0" allowfullscreen></iframe>
 - [ ] Building breath of knowledge is beneficial for you and employer because it opens you up for more opportunities
 - [ ] Building depth of knowledge and specializing is only beneficial for your employer because it can limit opportunities because your specific skillet
-- [ ] Be willing to start over
 
 
 ## #todo/CapitalOne
@@ -40,6 +36,7 @@ kanban-plugin: board
 - [ ] [[Clipboard#Email To Send]] on (@2025-06-01)
 - [ ] Update Resume with [[Clipboard#Resume Placeholder Experience]]
 - [ ] ###### Try to get put on a team that manages this [Capital One Auto Navigator](https://www.capitalone.com/cars/)
+- [ ] Look at this [[Codebase Interview Question]] (@2025-03-05)
 - [ ] Focus engineering efforts on getting on teams or industries of interest that you're trying to learn about more that overlap with your personal life like healthcare understanding that better and navigating it personally better or Auto Etc could be anything
 - [ ] Ask about Examples of BSE - Business Salient event
 - [ ] C@pple2024Money
@@ -59,10 +56,17 @@ kanban-plugin: board
 - [ ] [[DynamoDB]]
 - [ ] [[RTIC General AWS Infrastructure|OneStream]]
 - [ ] Amazon EventBridge
+
+
+## #todo/BAU/Career
+
+- [ ] ###### Don't Specify Your Level let people assume
+- [ ] Be willing to start over
 - [ ] <iframe src="https://www.instagram.com/reel/DFZ6vlJSoqJ/?igsh=MWw2d3R6b3AycnM5aA%3D%3D" width="250" height="500" frameborder="0" allowfullscreen></iframe>
+- [ ] <iframe src="https://www.instagram.com/p/DENfHhYubPw/" width="250" height="500" frameborder="0" allowfullscreen></iframe>
 
 
-## #techPrompts
+## #todo/techPrompts
 
 - [ ] List out steps to do [A] then refine those steps in terms of minimizing the number of steps creating bigger steps or more optimal smaller steps that can reduce the number of steps or even skipping steps for [A] focus on the quality of steps taken and what you get out of each one
 - [ ] Investigate the top achievers in software engineering. List key lessons from their success and discern patterns, strategies, habits, and mindset that contributes to their high productivity. Ask me detailed questions about my current work situation, my skills, and my professional goals. Based on my top responses contextualized the lessons from top performers to my unique context. Suggest specific actionable steps I can take to implement these lessons in my daily routine boost my productivity and overall performance.
@@ -73,7 +77,7 @@ kanban-plugin: board
 - [ ] [LLC Setup for Contractors](https://chatgpt.com/share/67fd60de-a568-800d-93b1-cfc6802d7305)
 
 
-## #finLifePrompt
+## #todo/finLifePrompt
 
 - [ ] [Top Drone Companies 2025](https://chatgpt.com/share/67fae67a-ee8c-800d-9804-f74a0520d0bd)
 - [ ] Check out Tickets for [Linkin Park](https://www.ticketmaster.com/event/3000616CBC102456?irgwc=1&clickid=yb%3A3dyX9lxyKRQ8QFvUZ3UK-UkszbDzFySChSM0&camefrom=CFC_BUYAT_1387536&impradid=1387536&REFERRAL_ID=tmfeedbuyat1387536&wt.mc_id=aff_BUYAT_1387536&utm_source=1387536-Seated&impradname=Seated&utm_medium=affiliate&ircid=4272)
@@ -91,7 +95,7 @@ kanban-plugin: board
 - [ ] [Personality Meets Decentralized Arch](https://chatgpt.com/share/67f771b6-33f4-800d-9da5-55d8b0ce0498)
 
 
-## #gymPrompt
+## #todo/gymPrompt
 
 - [ ] [ChatGPT - BJJ Hip Abductor Training](https://chatgpt.com/share/67fc25d3-3a7c-800d-9d47-64755453bd61)
 
@@ -100,6 +104,6 @@ kanban-plugin: board
 
 %% kanban:settings
 ```
-{"kanban-plugin":"board","list-collapse":[false,false,false,false,false],"show-checkboxes":false,"link-date-to-daily-note":true}
+{"kanban-plugin":"board","list-collapse":[false,false,false,false,false,false],"show-checkboxes":false,"link-date-to-daily-note":true}
 ```
 %%
