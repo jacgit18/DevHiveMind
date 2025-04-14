@@ -70,14 +70,15 @@ kanban-plugin: board
 - [ ] [Business Deal Structuring](https://chatgpt.com/share/67e6b68f-37f4-800d-af3c-5fba183c72fa)
 - [ ] [ChatGPT - Capital One Role Positioning](https://chatgpt.com/share/67edf3f1-c90c-800d-8e7f-bcf4a316ba2d)
 - [ ] [Cloud & Business Logic](https://chatgpt.com/share/67e6b77a-a5b4-800d-be3b-eb68a719d1b5)
+- [ ] [LLC Setup for Contractors](https://chatgpt.com/share/67fd60de-a568-800d-93b1-cfc6802d7305)
 
 
 ## #finLifePrompt
 
+- [ ] [Top Drone Companies 2025](https://chatgpt.com/share/67fae67a-ee8c-800d-9804-f74a0520d0bd)
 - [ ] Check out Tickets for [Linkin Park](https://www.ticketmaster.com/event/3000616CBC102456?irgwc=1&clickid=yb%3A3dyX9lxyKRQ8QFvUZ3UK-UkszbDzFySChSM0&camefrom=CFC_BUYAT_1387536&impradid=1387536&REFERRAL_ID=tmfeedbuyat1387536&wt.mc_id=aff_BUYAT_1387536&utm_source=1387536-Seated&impradname=Seated&utm_medium=affiliate&ircid=4272)
 - [ ] [Apartment Lessons](https://chatgpt.com/share/67e6c049-4900-800d-b280-cf247f2a0454)
 - [ ] [CDL Process and Costs](https://chatgpt.com/share/67e6cc4f-f5f0-800d-8e07-fe3b96a8e5e4)
-- [ ] [Personality Meets Decentralized Arch](https://chatgpt.com/share/67f771b6-33f4-800d-9da5-55d8b0ce0498)
 - [ ] [Becoming a Startup Investor](https://chatgpt.com/share/67e6c8eb-37d4-800d-93d2-2a77066f5668)
 - [ ] [Borrowing Against Assets](https://chatgpt.com/share/67f56ec6-ec7c-800d-a03b-48f0e0712f43)
 - [ ] [Medical Courier Business](https://chatgpt.com/share/67e6cb33-5a94-800d-90e4-d5da3e6c1065)
@@ -87,6 +88,7 @@ kanban-plugin: board
 - [ ] For life insurance cant do lump sum PUA anymore would need to do a lumps within the first two years of a new policy might want to consider upgrade to poicy which will make quarterly premiums like around 80 to 90 but lets have a 2 year window to do lump sum PUA contributions
 - [ ] [Trust](https://chatgpt.com/share/67e6b62a-b334-800d-9633-90f4311dcc9f)
 - [ ] [Stock & Margin Rates](https://chatgpt.com/share/67e6b7e3-8494-800d-bb00-c69e8a318908)
+- [ ] [Personality Meets Decentralized Arch](https://chatgpt.com/share/67f771b6-33f4-800d-9da5-55d8b0ce0498)
 
 
 ## #gymPrompt
