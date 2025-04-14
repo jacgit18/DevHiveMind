@@ -159,7 +159,8 @@ series:
 | Exercise                                      | Body  | Focus | Type       | W(lb/kg) | Priority | Sets | Reps |
 | --------------------------------------------- | ----- | ----- | ---------- | -------- | -------- | ---- | ---- |
 | [[Upper#^ef7d41\|Chest Fly]]                  | Upper | CM    | Dumbbell   | *20*     | High     | 3    | 10   |
-| [[Upper#^bcb0df \|Bench Press]]               | Upper | CM    | Barbell    | *20*     | High     | 3    | 5    |
+| [[Upper#^bcb0df \|Bench Press]]               | Upper | CM    | Barbell    | *30*     | High     | 3    | 5    |
+| Incline Bench Press                           | Upper | CM    | Barbell    | *20*     | High     | 3    | 5    |
 | [[Lower#^4e02bb \|Nordic Hamstring Curl]]     | Lower | CM    | Barbell    | *90*     | High     | 3    | 5    |
 | [[Lower#^2559bb \|Hip Thrust]]                | Lower | CM    | Barbell    | *20*     | High     | 3    | 10   |
 | [[Full Body#^b30c79\|Zercher Deadlift]]       | Lower | CM    | Barbell    | *20*     | High     | 3    | 5    |
