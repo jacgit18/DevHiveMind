@@ -152,18 +152,6 @@ kanban-plugin: board
 
 ## Random Stuff
 
-- [ ] Ask doctor for letter of Medical Necessity for supplements pick a exclusive credit cards for supplements once you get letter then you can expense things out from that day for Supplements for HSA
-- [ ] ## Glaucoma Consultation  
-	- ✔Remake appointment to confirm if you need weed 😌💨 (@2025-06-30)  
-	- ✔ Eye pressure (tonometry test)  
-	- ✔ Optic nerve health (dilated eye exam, OCT scan)  
-	- ✔ Visual field test (to check for blind spots)
-- [ ] ## Short term Fin Stuff
-- [ ] roth ira tax docs come May 31st
-- [ ] 3000 left to contribute to roth
-- [ ] Max Amount to have in Checking 3500 two cover two months of expense that can change
-- [ ] add 3500 or 5500 more in reg fid for spy
-- [ ] You're not required to use your auto insurance you can pay out of pocket because if you go to your insurance sometimes it can increase your premiums after the fact food for thought
 - [ ] ## Side Hustle
 - [ ] Maybe create a company like make lab that 3D prints things for startups who don't want to invest in a 3D printer
 - [ ] Carpet cleaning

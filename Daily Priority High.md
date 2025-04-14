@@ -77,7 +77,6 @@ kanban-plugin: board
 - [ ] [CDL Process and Costs](https://chatgpt.com/share/67e6cc4f-f5f0-800d-8e07-fe3b96a8e5e4)
 - [ ] [Personality Meets Decentralized Arch](https://chatgpt.com/share/67f771b6-33f4-800d-9da5-55d8b0ce0498)
 - [ ] [Becoming a Startup Investor](https://chatgpt.com/share/67e6c8eb-37d4-800d-93d2-2a77066f5668)
-- [ ] [Pharmacy](https://chatgpt.com/share/67e6b745-81dc-800d-b774-f473294807c7)
 - [ ] [Borrowing Against Assets](https://chatgpt.com/share/67f56ec6-ec7c-800d-a03b-48f0e0712f43)
 - [ ] [Medical Courier Business](https://chatgpt.com/share/67e6cb33-5a94-800d-90e4-d5da3e6c1065)
 - [ ] [life insurance](https://chatgpt.com/share/67e409a1-b2ac-800d-a332-5bff0f27e85d)
