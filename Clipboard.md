@@ -59,6 +59,14 @@ In short, Lensa acts like a real-time dashboard and debugger for your Kafka-base
 
 
 
+## work convo 
+
+Showing up in a meeting say that you know you're interrupting but and continue with your point  
+  
+Detach like one critiquing something like oh this resume needs a little bit of clarity in this area instead of mentioning the word you in your criticism  
+  
+Im curious if you were me what would you do reframe things when asking for people's opinions
+
 
 
 Use operator for anything stateful in python
