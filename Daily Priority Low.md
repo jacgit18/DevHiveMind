@@ -150,9 +150,8 @@ kanban-plugin: board
 	- **Forums and Communities**: Reddit, AWS Discussion Forums, etc.
 
 
-## Random Stuff
+## ## Side Hustle
 
-- [ ] ## Side Hustle
 - [ ] Maybe create a company like make lab that 3D prints things for startups who don't want to invest in a 3D printer
 - [ ] Carpet cleaning
 - [ ] It help desk technician

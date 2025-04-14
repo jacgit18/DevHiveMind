@@ -134,7 +134,7 @@ series:
 | Lower | Leg Press Seated                                        | UpClose  | CM    | High     | *110*     | 3    | 5    | 0     | **110**  |
 | Upper | Rear Delt Fly                                           | N/A      | CM    | High     | *50*      | 3    | 5    | 0     | *45*     |
 | Upper | [[Upper#^238b6e \|Chest Fly]]                           | N/A      | CM    | High     | *80*      | 3    | 5    | 4     | *80*     |
-| Upper | Crunch Chest Fly                                        | N/A      | CM    | High     | *80*      | 3    | 5    | 1     | *80*     |
+| Upper | Crunch Chest Fly                                        | N/A      | CM    | High     | *90*      | 3    | 5    | 1     | *90*     |
 | Lower | Adduction Inner Thigh                                   | Squeeze  | CM    | High     | *190*     | 3    | 5    | 0     | *190*    |
 | Lower | Crunch Inner Thigh                                      | Squeeze  | CM    | High     | *140*     | 3    | 5    | 0     | *140*    |
 | Upper | [[CableWolverine.gif\|Cable Wolverine]]                 | N/A      | PG    | High     | ***160*** | 3    | 5    | 0     | ***80*** |
