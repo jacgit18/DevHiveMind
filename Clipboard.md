@@ -14,6 +14,17 @@ console.log("User input:", userInput);
 ```
 
 
+
+
+
+
+
+
+
+
+
+
+
 Pager duty alerts to phone etc on failure  
 Publish message to pager duty in the future
 
@@ -73,9 +84,17 @@ Detach like one critiquing something like oh this resume needs a little bit of c
   
 Im curious if you were me what would you do reframe things when asking for people's opinions
 
+Don't have virtual backgrounds have stuff in the background that bring up conversation during Zoom
+
+
+
+
 
 
 Use operator for anything stateful in python
+
+
+
 ### Deployment strategies
 
 With Lambda traffic shifting, you can send a small subset of traffic to your newest function version while keeping the majority of incoming production traffic to your old, stable version. Some of the following deployment strategies use traffic shifting. Traffic shifting helps you validate that your new Lambda version works as expected, before sending all production traffic to it.
