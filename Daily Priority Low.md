@@ -153,6 +153,7 @@ kanban-plugin: board
 ## ## Side Hustle
 
 - [ ] Maybe create a company like make lab that 3D prints things for startups who don't want to invest in a 3D printer
+- [ ] sell cars at a dealership
 - [ ] Carpet cleaning
 - [ ] It help desk technician
 - [ ] Medical transcription
