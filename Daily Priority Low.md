@@ -4,7 +4,7 @@ kanban-plugin: board
 
 ---
 
-## Job Clipboard
+## ## Job Clipboard
 
 - [ ] Hi Andrea,   
 	  
@@ -43,7 +43,7 @@ kanban-plugin: board
 - [ ] CUNY Tech Prep
 
 
-## Certifications
+## ## Certifications
 
 - [ ] ###### Always Free Resources (No Expiration, Limited Usage)  
 	  
