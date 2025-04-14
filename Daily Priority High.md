@@ -88,8 +88,9 @@ kanban-plugin: board
 - [ ] [Stock & Margin Rates](https://chatgpt.com/share/67e6b7e3-8494-800d-bb00-c69e8a318908)
 
 
-## Done
+## #gymPrompt
 
+- [ ] [ChatGPT - BJJ Hip Abductor Training](https://chatgpt.com/share/67fc25d3-3a7c-800d-9d47-64755453bd61)
 
 
 
