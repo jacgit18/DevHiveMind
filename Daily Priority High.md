@@ -24,7 +24,6 @@ kanban-plugin: board
 - [ ] Okay so off the top of my head I can't tell you with 100% certainty but let me look into that and I'll come back to you with an answer but while that happens did you have any other questions this moment
 - [ ] Ask more what if questions as a engineer when asking about scenarios
 - [ ] Clarity is confidence get as much clarity through the questions you ask yourself along with others and the drive to have confidence in your own ability weather it engineering or life.
-- [ ] I’m a Software Carpenter — it’s a nod to my name. My goal is to establish a foundation and become a Software Architect.
 - [ ] Be more of a contractor like tangy running a business acting as a consultant or third party vendor and providing your services instead of a employee
 - [ ] Building breath of knowledge is beneficial for you and employer because it opens you up for more opportunities
 - [ ] Building depth of knowledge and specializing is only beneficial for your employer because it can limit opportunities because your specific skillet
@@ -32,7 +31,6 @@ kanban-plugin: board
 
 ## #todo/CapitalOne
 
-- [ ] Scrum master from April 3rd to  16th
 - [ ] [[Clipboard#Email To Send]] on (@2025-06-01)
 - [ ] Update Resume with [[Clipboard#Resume Placeholder Experience]]
 - [ ] ###### Try to get put on a team that manages this [Capital One Auto Navigator](https://www.capitalone.com/cars/)
@@ -70,13 +68,13 @@ kanban-plugin: board
 
 ## #todo/techPrompts
 
+- [ ] [LLC Setup for Contractors](https://chatgpt.com/share/67fd60de-a568-800d-93b1-cfc6802d7305)
 - [ ] List out steps to do [A] then refine those steps in terms of minimizing the number of steps creating bigger steps or more optimal smaller steps that can reduce the number of steps or even skipping steps for [A] focus on the quality of steps taken and what you get out of each one
 - [ ] Investigate the top achievers in software engineering. List key lessons from their success and discern patterns, strategies, habits, and mindset that contributes to their high productivity. Ask me detailed questions about my current work situation, my skills, and my professional goals. Based on my top responses contextualized the lessons from top performers to my unique context. Suggest specific actionable steps I can take to implement these lessons in my daily routine boost my productivity and overall performance.
 - [ ] As a decision making assistant apply your reasoning to the situation where I'm deliberating whether to do a or b. Generate a comprehensive evaluation that lists out pro and cons making this decision and also considering the potential long-term implications, possible alternative options, and any risk or opportunities associated with each. Your objectives is provided a detailed multifaceted analysis that will guide me toward a well-informed decision.
 - [ ] [Business Deal Structuring](https://chatgpt.com/share/67e6b68f-37f4-800d-af3c-5fba183c72fa)
 - [ ] [ChatGPT - Capital One Role Positioning](https://chatgpt.com/share/67edf3f1-c90c-800d-8e7f-bcf4a316ba2d)
 - [ ] [Cloud & Business Logic](https://chatgpt.com/share/67e6b77a-a5b4-800d-be3b-eb68a719d1b5)
-- [ ] [LLC Setup for Contractors](https://chatgpt.com/share/67fd60de-a568-800d-93b1-cfc6802d7305)
 
 
 ## #todo/finLifePrompt
@@ -87,7 +85,6 @@ kanban-plugin: board
 - [ ] [CDL Process and Costs](https://chatgpt.com/share/67e6cc4f-f5f0-800d-8e07-fe3b96a8e5e4)
 - [ ] [Becoming a Startup Investor](https://chatgpt.com/share/67e6c8eb-37d4-800d-93d2-2a77066f5668)
 - [ ] [Borrowing Against Assets](https://chatgpt.com/share/67f56ec6-ec7c-800d-a03b-48f0e0712f43)
-- [ ] [Medical Courier Business](https://chatgpt.com/share/67e6cb33-5a94-800d-90e4-d5da3e6c1065)
 - [ ] [life insurance](https://chatgpt.com/share/67e409a1-b2ac-800d-a332-5bff0f27e85d)
 - [ ] [Second Policy for PUA](https://chatgpt.com/share/67f03df3-9060-800d-8e7a-b236515f36d4)
 - [ ] Money in policy is more secure historically during bad markets also see if there are lower policies

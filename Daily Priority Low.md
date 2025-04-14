@@ -156,6 +156,7 @@ kanban-plugin: board
 - [ ] sell cars at a dealership
 - [ ] Carpet cleaning
 - [ ] It help desk technician
+- [ ] [Medical Courier Business](https://chatgpt.com/share/67e6cb33-5a94-800d-90e4-d5da3e6c1065)
 - [ ] Medical transcription
 - [ ] Power washer
 - [ ] Triple A Roadside Assistance
