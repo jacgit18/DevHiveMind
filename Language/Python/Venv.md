@@ -16,6 +16,8 @@ dg-publish: false
 ---
 To create a virtual environment in **VS Code** for Python, follow these steps:
 
+#todo/Low/Dev 
+- [ ] [PEP 20 – The Zen of Python \| peps.python.org](https://peps.python.org/pep-0020/)
 ### **1. Open VS Code and Your Project Folder**
 
 Make sure you're inside your project folder in VS Code.

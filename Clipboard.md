@@ -20,6 +20,12 @@ Publish message to pager duty in the future
 
 
 
+Iteration are repetitions where you are modifying the repetition with error correction and continuing to do it over and over again modifying for error correction that is where you make a lot of improvement  
+  
+If you fail its just a iteration that you can pivot from in terms of cutting losses when it makes sense to to continue to iterate and get where you want to be
+
+
+
 
 
 
