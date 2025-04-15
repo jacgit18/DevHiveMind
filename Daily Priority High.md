@@ -60,9 +60,9 @@ kanban-plugin: board
 
 ## #todo/BAU/Career
 
+- [ ] Be willing to start over
 - [ ] work on [[Networking Script]]
 - [ ] ###### Don't Specify Your Level let people assume
-- [ ] Be willing to start over
 - [ ] <iframe src="https://www.instagram.com/reel/DFZ6vlJSoqJ/?igsh=MWw2d3R6b3AycnM5aA%3D%3D" width="250" height="500" frameborder="0" allowfullscreen></iframe>
 - [ ] <iframe src="https://www.instagram.com/p/DENfHhYubPw/" width="250" height="500" frameborder="0" allowfullscreen></iframe>
 
