@@ -180,10 +180,19 @@ Dates of Employment
 - Collaborated with compliance, product, and engineering teams to translate business logic into scalable automation solutions.
     
 - Improved communication and escalation handling by embedding custom triggers and decision points into automated workflows.
-  
-  
----  
-  
-Want a more casual or more technical version?
 
 
+
+
+“I work on **automating the collections process**—essentially making sure the system knows when and how to reach out to customers, what options they have, and how we scale that across millions of accounts.”
+
+“I work on business automation for collections, where we design systems that scale across millions of accounts while staying compliant with financial regulations.”
+
+
+“The work I do ensures that collections are handled efficiently and fairly, using automation to reduce errors, personalize outreach, and optimize recovery processes.”
+
+
+
+- _“Ever wonder how a bank decides when to remind you about a missed payment? I build the backend automation that figures out when and how those decisions happen.”_
+    
+- _“I work on the behind-the-scenes tech that makes collections smarter, more scalable, and automated—so a system, not a person, is making decisions.”_
