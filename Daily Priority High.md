@@ -43,6 +43,7 @@ kanban-plugin: board
 - [ ] Skip more steps move faster and smarter in career going every incremental step by step is the old way of doing things need to adapt for the new environment
 - [ ] list out questions you should ask yourself if making the decision to re-architect something or recreate it from scratch when it comes software engineering an application
 - [ ] ###### Priority Tech Topic of Focus
+- [ ] Getting future component monitoring stories
 - [ ] [[LocalStack Setup]]
 - [ ] [Create SNS in LocalStack](https://chatgpt.com/share/67f7ffb8-6624-800d-a877-aeec9abe189c)
 - [ ] [Lambda Step Function flow](https://chatgpt.com/share/67e5700f-b400-800d-b888-3d60a50e5cb9)

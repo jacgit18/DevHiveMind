@@ -15,9 +15,10 @@ console.log("User input:", userInput);
 
 
 
+Abstracting out LLD for better business audience understand then create other diagrams that are more for devs that goes more into technical details
 
-
-
+EventBridge is like the air traffic controller for events in AWS.  
+It makes sure the right events go to the right place, at the right time, without you having to write glue code.
 
 
 Pager duty alerts to phone etc on failure  
@@ -32,6 +33,14 @@ Iteration are repetitions where you are modifying the repetition with error corr
   
 If you fail its just a iteration that you can pivot from in terms of cutting losses when it makes sense to to continue to iterate and get where you want to be
 
+
+
+[The heart of architecture: cohesers and decouplers \| ITNEXT](https://itnext.io/cohesers-and-decouplers-ecac2964081a)
+
+[The heart of architecture: deconstructing patterns \| ITNEXT](https://itnext.io/deconstructing-patterns-a605967e2da6)
+
+
+[Choose your own architecture \| ITNEXT](https://itnext.io/choose-your-own-architecture-92c56b12f7b0)
 
 
 
