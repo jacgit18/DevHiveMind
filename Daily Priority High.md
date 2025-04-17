@@ -63,6 +63,7 @@ kanban-plugin: board
 - [ ] Be willing to start over
 - [ ] work on [[Networking Script]]
 - [ ] ###### Don't Specify Your Level let people assume
+- [ ] Dont use the language "hard coded" in technical presentations for the future
 - [ ] <iframe src="https://www.instagram.com/reel/DFZ6vlJSoqJ/?igsh=MWw2d3R6b3AycnM5aA%3D%3D" width="250" height="500" frameborder="0" allowfullscreen></iframe>
 - [ ] <iframe src="https://www.instagram.com/p/DENfHhYubPw/" width="250" height="500" frameborder="0" allowfullscreen></iframe>
 
@@ -93,6 +94,7 @@ kanban-plugin: board
 - [ ] [Trust](https://chatgpt.com/share/67e6b62a-b334-800d-9633-90f4311dcc9f)
 - [ ] [Stock & Margin Rates](https://chatgpt.com/share/67e6b7e3-8494-800d-bb00-c69e8a318908)
 - [ ] [Personality Meets Decentralized Arch](https://chatgpt.com/share/67f771b6-33f4-800d-9da5-55d8b0ce0498)
+- [ ] [Notes Use Case](https://chatgpt.com/share/680087c1-71ec-800d-8e0c-5f0ca827511a)
 
 
 ## #todo/gymPrompt

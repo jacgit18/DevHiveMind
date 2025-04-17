@@ -20,13 +20,10 @@ console.log("User input:", userInput);
 
 
 
-
-
-
-
-
 Pager duty alerts to phone etc on failure  
 Publish message to pager duty in the future
+
+When using sns in localstack with sns it wont send an actual email
 
 
 
