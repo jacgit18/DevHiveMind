@@ -45,6 +45,11 @@ If you fail its just a iteration that you can pivot from in terms of cutting los
 
 
 
+
+[Smart Contract Mechanics + AI Sneak Peek w/ kalepail - YouTube](https://www.youtube.com/watch?v=vi_jgvOKsl8)
+
+
+
 [30+ MCP Ideas with Complete Source Code - DEV Community](https://dev.to/copilotkit/30-mcp-ideas-with-complete-source-code-d8e)
 
 
