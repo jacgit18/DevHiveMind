@@ -27867,7 +27867,6 @@ var _SharedDocument = class _SharedDocument extends SharedEntity {
       }
     });
     this._canvasExtenstions = new PeerdraftRecord();
-    addIsSharedClass(this.path, this.plugin);
   }
   static async fromView(view, plugin, opts = { permanent: false }) {
     if (!view.file) return;
@@ -27912,6 +27911,7 @@ var _SharedDocument = class _SharedDocument extends SharedEntity {
     await doc2.startIndexedDBSync();
     doc2.syncWithServer();
     plugin.activeStreamClient.add([doc2.shareId]);
+    addIsSharedClass(doc2.path, plugin);
     return doc2;
   }
   static async fromShareURL(url, plugin) {
