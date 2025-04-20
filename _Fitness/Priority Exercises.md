@@ -120,13 +120,16 @@ series:
 - [ ] Do hip thrust without weight or lower weight
 - [ ] Focus on intensity then scale to volume
 - [ ] Slow intensity exercise should spend at least 5 min per exercise
-- [ ] Other leg press variation lesser reps
 - [ ] Controlled Explosive Burpee
+- [ ] Do [[Grip Strength Training]] every day
+- [ ] Use 30 to 45 degree angle for incline bench press which seem more effective for you then flat bench.
+- [ ] Half lateral chest press meaning alternating between the full squeeze and a half movement not going all the way. Same thing with adduction machine.
 
 > Crunch gym machine are heaver then Blink.
 
 | Body  | Machine                                                 | Position | Focus | Priority | Weight    | Sets | Reps | Range | Per Side |
 | ----- | ------------------------------------------------------- | -------- | ----- | -------- | --------- | ---- | ---- | ----- | -------- |
+| Lower | Crunch Angled Leg Press                                 | WTCH     | CM    | High     | *360*     | 3    | 5    | 0     | **180**  |
 | Lower | Leg Press off Back Abductor                             | Wide     | CM    | High     | *540*     | 3    | 5    | 0     | **270**  |
 | Lower | Leg Press off Back Calf                                 | Toes     | CM    | High     | *270*     | 3    | 5    | 0     | **135**  |
 | Lower | Leg Press off Back Quads                                | Close    | CM    | High     | *540*     | 3    | 5    | 0     | **270**  |

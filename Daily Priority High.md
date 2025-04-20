@@ -11,6 +11,7 @@ kanban-plugin: board
 - [ ] Be smart about buying time and pay the price more for things that matter and have an unavoidable cost
 - [ ] ###### Treat your attention like its money
 - [ ] Best practices aren't set practices
+- [ ] Your the only person who can do the job of changing things
 - [ ] [Fuck Leetcode](https://www.interviewcoder.co/#pricing)
 - [ ] Always assume sub optimal environment Its not there job to believe its you'res
 - [ ] ![[Business decision#^68639f]]

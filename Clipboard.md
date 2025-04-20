@@ -45,6 +45,11 @@ If you fail its just a iteration that you can pivot from in terms of cutting los
 
 
 
+[30+ MCP Ideas with Complete Source Code - DEV Community](https://dev.to/copilotkit/30-mcp-ideas-with-complete-source-code-d8e)
+
+
+[Setting Up the Official GitHub MCP Server: A simple Guide - DEV Community](https://dev.to/debs_obrien/setting-up-the-official-github-mcp-server-a-simple-guide-707)
+
 
 Avoid premature optimization 
 

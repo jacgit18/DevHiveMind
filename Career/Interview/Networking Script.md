@@ -17,7 +17,9 @@ When you talk to someone again, casually reference a small detail they mentioned
 That’s your springboard—build from there.
 
 
----
+  
+Play to your strengths and match the energy of the group when entering it and find opportunities to gradually increase it if it makes sense.
+
 
 ## **Intro Hook**
 
