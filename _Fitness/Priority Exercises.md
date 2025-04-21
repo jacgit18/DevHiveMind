@@ -127,35 +127,37 @@ series:
 
 > Crunch gym machine are heaver then Blink.
 
-| Body  | Machine                                                 | Position | Focus | Priority | Weight    | Sets | Reps | Range | Per Side |
-| ----- | ------------------------------------------------------- | -------- | ----- | -------- | --------- | ---- | ---- | ----- | -------- |
-| Lower | Crunch Angled Leg Press                                 | WTCH     | CM    | High     | *360*     | 3    | 5    | 0     | **180**  |
-| Lower | Leg Press off Back Abductor                             | Wide     | CM    | High     | *540*     | 3    | 5    | 0     | **270**  |
-| Lower | Leg Press off Back Calf                                 | Toes     | CM    | High     | *270*     | 3    | 5    | 0     | **135**  |
-| Lower | Leg Press off Back Quads                                | Close    | CM    | High     | *540*     | 3    | 5    | 0     | **270**  |
-| Lower | Leg Press off Back G&H                                  | Heals    | CM    | High     | *270*     | 3    | 5    | 0     | **135**  |
-| Lower | Leg Press Seated                                        | UpClose  | CM    | High     | *110*     | 3    | 5    | 0     | **110**  |
-| Upper | Rear Delt Fly                                           | N/A      | CM    | High     | *50*      | 3    | 5    | 0     | *45*     |
-| Upper | [[Upper#^238b6e \|Chest Fly]]                           | N/A      | CM    | High     | *80*      | 3    | 5    | 4     | *80*     |
-| Upper | Crunch Chest Fly                                        | N/A      | CM    | High     | *90*      | 3    | 5    | 1     | *90*     |
-| Lower | Adduction Inner Thigh                                   | Squeeze  | CM    | High     | *190*     | 3    | 5    | 0     | *190*    |
-| Lower | Crunch Inner Thigh                                      | Squeeze  | CM    | High     | *140*     | 3    | 5    | 0     | *140*    |
-| Upper | [[CableWolverine.gif\|Cable Wolverine]]                 | N/A      | PG    | High     | ***160*** | 3    | 5    | 0     | ***80*** |
-| Upper | [[CableBalloonAbduction.gif \|Cable Balloon Abduction]] | N/A      | PG    | High     | ***160*** | 3    | 5    | 0     | ***80*** |
-| Upper | Blink Mid Row                                           | N/A      | PG    | High     | *85*      | 4    | 5    | 0     | **42.5** |
-| Upper | Crunch Mid Row                                          | N/A      | PG    | High     | *165*     | 4    | 5    | 0     | **165**  |
-| Upper | [[Upper#^a7be5a \|Cable Woodchopper]]                   | N/A      | RC    | Med      | ***160*** | 3    | 5    | 0     | ***80*** |
-| Lower | Abduction Outer Thigh                                   | Spread   | CM    | Med      | *160*     | 3    | 5    | 7     | *160*    |
-| Lower | Crunch Abduction Outer Thigh                            | Spread   | CM    | Med      | *110*     | 3    | 5    | 7     | *110*    |
-| Upper | Isolated Lateral Chest                                  | Wide     | CM    | Med      | *100*     | 3    | 5    | 0     | **50**   |
-| Upper | Low Row                                                 | N/A      | PG    | Med      | *85*      | 3    | 5    | 0     | *85*     |
-| Upper | Crunch Low Row                                          | N/A      | PG    | Med      | *88*      | 3    | 5    | 0     | *88*     |
-| Upper | Shoulder Press                                          | Narrow   | CM    | Low      | *40*      | 3    | 5    | 0     | *40*     |
-| Upper | Shoulder Press                                          | Wide     | CM    | Low      | *70*      | 3    | 5    | 0     | *70*     |
-| Upper | [[CableFloorFly.gif \|Cable Floor Fly]]                 | N/A      | PG    | Low      | ***160*** | 3    | 5    | 0     | ***80*** |
-| Core  | [[Core#^b41212\| Leg Cable Reverse Crunch]]             | N/A      | RC    | Low      | ***90***  | 3    | 5    | 0     | ***45*** |
-| Upper | Assisted Bench Press                                    | N/A      | CM    | Med      | *50*      | 3    | 5    | 0     | *50*     |
-| Lower | Hip Thrust                                              | N/A      | CM    | High     | ***110*** | 4    | 8    | 0     | **55**   |
+| Body  | Machine                                                 | Position | Focus | Priority | Weight    | Sets | Reps | Range | Per Side | Body Part |
+| ----- | ------------------------------------------------------- | -------- | ----- | -------- | --------- | ---- | ---- | ----- | -------- | --------- |
+| Lower | Crunch Angled Leg Press                                 | WTCH     | CM    | High     | *360*     | 3    | 5    | 0     | **180**  |           |
+| Lower | Leg Press off Back Abductor                             | Wide     | CM    | High     | *540*     | 3    | 5    | 0     | **270**  |           |
+| Lower | Leg Press off Back Calf                                 | Toes     | CM    | High     | *270*     | 3    | 5    | 0     | **135**  |           |
+| Lower | Leg Press off Back Quads                                | Close    | CM    | High     | *540*     | 3    | 5    | 0     | **270**  |           |
+| Lower | Leg Press off Back G&H                                  | Heals    | CM    | High     | *270*     | 3    | 5    | 0     | **135**  |           |
+| Lower | Leg Press Seated                                        | UpClose  | CM    | High     | *110*     | 3    | 5    | 0     | **110**  |           |
+| Upper | Rear Delt Fly                                           | N/A      | CM    | High     | *50*      | 3    | 5    | 0     | *45*     |           |
+| Upper | [[Upper#^238b6e \|Chest Fly]]                           | N/A      | CM    | High     | *80*      | 3    | 5    | 4     | *80*     |           |
+| Upper | Crunch Chest Fly                                        | N/A      | CM    | High     | *90*      | 3    | 5    | 1     | *90*     |           |
+| Lower | Adduction Inner Thigh                                   | Squeeze  | CM    | High     | *190*     | 3    | 5    | 0     | *190*    |           |
+| Lower | Crunch Inner Thigh                                      | Squeeze  | CM    | High     | *140*     | 3    | 5    | 0     | *140*    |           |
+| Upper | [[CableWolverine.gif\|Cable Wolverine]]                 | N/A      | PG    | High     | ***160*** | 3    | 5    | 0     | ***80*** |           |
+| Upper | [[CableBalloonAbduction.gif \|Cable Balloon Abduction]] | N/A      | PG    | High     | ***160*** | 3    | 5    | 0     | ***80*** |           |
+| Upper | Blink Mid Row                                           | N/A      | PG    | High     | *85*      | 4    | 5    | 0     | **42.5** |           |
+| Upper | Crunch Mid Row                                          | N/A      | PG    | High     | *165*     | 4    | 5    | 0     | **165**  |           |
+| Upper | [[Upper#^a7be5a \|Cable Woodchopper]]                   | N/A      | RC    | Med      | ***160*** | 3    | 5    | 0     | ***80*** |           |
+| Lower | Abduction Outer Thigh                                   | Spread   | CM    | Med      | *160*     | 3    | 5    | 7     | *160*    |           |
+| Lower | Crunch Abduction Outer Thigh                            | Spread   | CM    | Med      | *110*     | 3    | 5    | 7     | *110*    |           |
+| Upper | Isolated Lateral Chest                                  | Wide     | CM    | Med      | *100*     | 3    | 5    | 0     | **50**   |           |
+| Upper | Low Row                                                 | N/A      | PG    | Med      | *85*      | 3    | 5    | 0     | *85*     |           |
+| Upper | Crunch Low Row                                          | N/A      | PG    | Med      | *88*      | 3    | 5    | 0     | *88*     |           |
+| Upper | Shoulder Press                                          | Narrow   | CM    | Low      | *40*      | 3    | 5    | 0     | *40*     |           |
+| Upper | Shoulder Press                                          | Wide     | CM    | Low      | *70*      | 3    | 5    | 0     | *70*     |           |
+| Upper | [[CableFloorFly.gif \|Cable Floor Fly]]                 | N/A      | PG    | Low      | ***160*** | 3    | 5    | 0     | ***80*** |           |
+| Core  | [[Core#^b41212\| Leg Cable Reverse Crunch]]             | N/A      | RC    | Low      | ***90***  | 3    | 5    | 0     | ***45*** |           |
+| Upper | Assisted Bench Press                                    | N/A      | CM    | Med      | *50*      | 3    | 5    | 0     | *50*     |           |
+| Lower | Hip Thrust                                              | N/A      | CM    | High     | ***110*** | 4    | 8    | 0     | **55**   |           |
+| Upper | [[Upper#^971765 \|Back Cable Lateral Raise]]            | N/A      | PG    | High     |           | 4    | 8    |       |          | Shoulder  |
+|       | Overhead Cable Extension                                |          |       |          |           |      |      |       |          | Tricep    |
 ^machine
 
 

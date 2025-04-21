@@ -108,3 +108,5 @@ dg-publish:
     
 - Track your progress every 2 weeks
     
+
+![[Hand Exercise.pdf]]

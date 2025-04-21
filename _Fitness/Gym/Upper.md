@@ -40,6 +40,8 @@ Get to your reps to 15 sec each try to extend for 45 sec MAX
 	- ![](https://www.youtube.com/watch?v=6Fzep104f0s)
 - Cable Woodchopper ^a7be5a
 	- ![](https://www.youtube.com/watch?v=mvvu8imyMFs)
+- Back lateral raise ^971765
+	- ![Behind The Back Cable Lateral Raise \| How To - YouTube](https://www.youtube.com/watch?v=y4Djk_G0yEg)
 - Single-Arm Row (**Kettlebell**)
 - Reverse Grip Curl (_Curl Bar_)
 - Overhead Press (_**Dumbbell**_)
