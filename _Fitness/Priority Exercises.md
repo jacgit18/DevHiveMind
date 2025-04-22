@@ -31,6 +31,10 @@ Start with a dynamic stretch to Improve blood flow and flexibility. End with a s
 2. **Avoid Risky Movements:**
     - Skip upright rows due to the unnatural shoulder position.
     - Skip Renegade rows
+    - Stay away from 
+	    - Romanian dead lift
+	    - Dumbbell Lateral raise 
+	    - Hanging Leg raises 
     - Stop two reps before exercise failure alternate this depending how you feel.
 3. **Equipment Tips:**
     - Use **barbells** for added weight when building strength.

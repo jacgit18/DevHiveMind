@@ -53,6 +53,9 @@ If you fail its just a iteration that you can pivot from in terms of cutting los
 [30+ MCP Ideas with Complete Source Code - DEV Community](https://dev.to/copilotkit/30-mcp-ideas-with-complete-source-code-d8e)
 
 
+[Model Context Protocol (MCP): 8 MCP Servers Every Developer Should Try! - DEV Community](https://dev.to/pavanbelagatti/model-context-protocol-mcp-8-mcp-servers-every-developer-should-try-5hm2)
+
+
 [Setting Up the Official GitHub MCP Server: A simple Guide - DEV Community](https://dev.to/debs_obrien/setting-up-the-official-github-mcp-server-a-simple-guide-707)
 
 
