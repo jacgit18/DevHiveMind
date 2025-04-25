@@ -11,6 +11,85 @@ Relates:
 Peer Reviewed: 0
 dg-publish:
 ---
+## April Info 
+
+
+elaborate on how to do this Mocking out AWS step functions and services
+
+Reach out to young for poc ellio
+
+
+
+possible logging flow CloudWatch Logs → Kinesis Firehose → Splunk HEC
+
+
+Payments configure workflow get called after enrollment when iniating but when canceling it get called first and is also called by the bff  
+  
+How to test step functions because its not a executable py file its a asl.json file  
+  
+  
+Deploying step function in dev aws console no go it messes with cloud formation
+
+### Offer system of records
+
+Hooks are Set properly and fire at the right time  
+  
+  
+For whole component or the specific parts of the component for monitoring  
+  
+Not individual states or possibly so havent deside on what the focus of the failure should be focused on  
+  
+Every state failures trigger pager duty alert were not using clodwatch more teams using pager duty  
+  
+Every step functions consist of states going from one to the  
+  
+Splunk might be involved it sets up alerts for pager duty  
+  
+Splunk through clooudwatch  
+  
+  
+Cancalation and post enrollment has some implementation examples  
+  
+  
+  
+For every perminent failure in the output detected trigger pagerDuty alert.  
+  
+  
+  
+  
+Cloudwatch monitor DLQ  
+  
+  
+  
+DLQ is for lambda failure to eventually try again maybe in a hour or so or at least human manual intervention in terms of a retry  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+Retry from bff  
+  
+Talk Artic offer 11 about what is the state of perment failure handeling it how does it work or doest work how we want  
+  
+  
+Create thread this relate to component monitoring story  
+  
+  
+We need to create a pager Duty service and set it up with our current cloud watch logs in some way. For RTIC enrollment  
+  
+
+
+
+
+
+
+## March & Before
+
+
 Streams lambda is AMA  
   
   

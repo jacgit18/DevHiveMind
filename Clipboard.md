@@ -49,6 +49,14 @@ If you fail its just a iteration that you can pivot from in terms of cutting los
 [Choose your own architecture \| ITNEXT](https://itnext.io/choose-your-own-architecture-92c56b12f7b0)
 
 
+[5 self‑hosted finance apps that export perfectly into Excel for deeper analysis](https://www.xda-developers.com/self-hosted-finance-apps-export-excel/)
+
+
+
+
+
+- [ ] [How I save $$$ by self-hosting these 5 open source tools - DEV Community](https://dev.to/code42cate/how-i-save-by-self-hosting-these-5-open-source-tools-17mb)
+- [ ] [How I use n8n and AI agents to scale my startup](https://sliplane.io/blog/how-i-use-n8n-and-ai-agents-to-scale-my-startup)
 
 
 

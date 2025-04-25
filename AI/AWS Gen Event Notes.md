@@ -15,6 +15,48 @@ dg-publish:
 
 #todo/High/Dev 
 - [ ] revisit and prompt about other things [ChatGPT - Generative AI Use Cases](https://chatgpt.com/share/680a8f10-f448-800d-bf4d-74d425ffedff)
+- [ ] ask about these
+
+Explain component of gen ai application and the flow between them  
+  
+Explain when you should go through a guard rail and the aws guardrail service and the concept of it in the context of AWS bedrock  
+  
+Explain hallucinations check  
+  
+What is fm inference  
+  
+  
+Explain prompt attack injection  
+  
+  
+Explain bedrock agents and the concept of ai agents use action like with api calls, lambdas, step functions etc...  
+  
+  
+Explain ai agent orchestration also agent group  
+  
+Agent executes lambda which also can contian api call there is also api schema  
+  
+Agent is basically acts as a controller  
+  
+You can apply decentralized architecture to ai agents mean your not having an agent handeling to many thing's  
+  
+You also leverage event sourcing and hook triggers  
+  
+Multi agent collaboration  
+  
+How does an agent look like in terms of codebase level and file architecture  
+  
+  
+Are agents aware of each other if so how  
+  
+Rag is safe in comparison to agents  
+  
+  
+  
+What is the purpose and what problem did Jupiter notebook solve and explain it's use case in aws sage maker studio
+
+
+
 
 
 

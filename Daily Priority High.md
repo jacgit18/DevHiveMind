@@ -32,6 +32,8 @@ kanban-plugin: board
 
 ## #todo/CapitalOne
 
+- [ ] [[Work LOB and arch notes to clean]]
+- [ ] possible logging flow CloudWatch Logs → Kinesis Firehose → Splunk HEC
 - [ ] [[Clipboard#Email To Send]] on (@2025-06-01)
 - [ ] Update Resume with [[Clipboard#Resume Placeholder Experience]]
 - [ ] ###### Try to get put on a team that manages this [Capital One Auto Navigator](https://www.capitalone.com/cars/)
@@ -50,7 +52,6 @@ kanban-plugin: board
 - [ ] [Create SNS in LocalStack](https://chatgpt.com/share/67f7ffb8-6624-800d-a877-aeec9abe189c)
 - [ ] [Lambda Step Function flow](https://chatgpt.com/share/67e5700f-b400-800d-b888-3d60a50e5cb9)
 - [ ] [[Capital One Stats]]
-- [ ] [[Work LOB and arch notes to clean]]
 - [ ] [[Serverless Architecture]]
 - [ ] [[AWS SQS]]
 - [ ] [[DynamoDB]]
@@ -64,9 +65,14 @@ kanban-plugin: board
 ## #todo/BAU/Career
 
 - [ ] Be willing to start over
-- [ ] work on [[Networking Script]]
+- [ ] Learn the right things
+- [ ] Give your self 3 days before making any decisions
+- [ ] [Merger Buisness Cases Study](https://chatgpt.com/share/680bea65-c684-800d-b17b-900161bd4eb8)
+- [ ] work on [[Networking Script]] & post more about networking events
 - [ ] ###### Don't Specify Your Level let people assume
 - [ ] Dont use the language "hard coded" in technical presentations for the future
+- [ ] Ask what is your preference in terms of meeting like zoom erc.. or voice call
+- [ ] Strategically quit were it make sense
 - [ ] <iframe src="https://www.instagram.com/reel/DFZ6vlJSoqJ/?igsh=MWw2d3R6b3AycnM5aA%3D%3D" width="250" height="500" frameborder="0" allowfullscreen></iframe>
 - [ ] <iframe src="https://www.instagram.com/p/DENfHhYubPw/" width="250" height="500" frameborder="0" allowfullscreen></iframe>
 
@@ -80,6 +86,7 @@ kanban-plugin: board
 - [ ] [Business Deal Structuring](https://chatgpt.com/share/67e6b68f-37f4-800d-af3c-5fba183c72fa)
 - [ ] [ChatGPT - Capital One Role Positioning](https://chatgpt.com/share/67edf3f1-c90c-800d-8e7f-bcf4a316ba2d)
 - [ ] [Cloud & Business Logic](https://chatgpt.com/share/67e6b77a-a5b4-800d-be3b-eb68a719d1b5)
+- [ ] [Credit Card Data Advantage](https://chatgpt.com/share/680a5be4-9274-800d-858f-0847742b1e90)
 
 
 ## #todo/finLifePrompt
@@ -98,6 +105,8 @@ kanban-plugin: board
 - [ ] [Stock & Margin Rates](https://chatgpt.com/share/67e6b7e3-8494-800d-bb00-c69e8a318908)
 - [ ] [Personality Meets Decentralized Arch](https://chatgpt.com/share/67f771b6-33f4-800d-9da5-55d8b0ce0498)
 - [ ] [Notes Use Case](https://chatgpt.com/share/680087c1-71ec-800d-8e0c-5f0ca827511a)
+- [ ] [Buy and Sell Online Businesses, Websites, Apps & Domains - Flippa](https://flippa.com)
+- [ ] [BizBuySell - The Internet's Largest Business for Sale & Franchise for Sale Marketplace](https://www.bizbuysell.com)
 
 
 ## #todo/gymPrompt

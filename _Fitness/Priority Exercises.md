@@ -119,13 +119,17 @@ series:
 
 #todo/BAU/Workout
 - [ ] Focus on stability for 3 months then add resistance and more weight and reattempt low priority excercise
-- [ ] 6 to 20 reps near failure at max with heavy weights
-- [ ] Get to 8 set 4 reps heavy weights
-- [ ] Do hip thrust without weight or lower weight
 - [ ] Focus on intensity then scale to volume
-- [ ] Slow intensity exercise should spend at least 5 min per exercise
+- [ ]  Perform **6–20 reps per set**, close to failure, using **heavy weights** to maximize hypertrophy across rep ranges.
+- [ ]  Work up to **4 sets of 8 reps** with progressively **heavier weights** to build **raw strength** and do it at  slow intensity spending at least 5 min per exercise  building joint strength.
+- [ ]  Do **3–5 sets of 6–12 reps** to develop **muscle endurance and size** (classic hypertrophy range).
+- [ ]  Incorporate **low-rep (3–6), fast-tempo lifts** with both **heavy and light weights** to train **explosiveness and power**.
+- [ ] revisit and refine [[_Fitness/Untitled|Untitled]]
+- [ ] Do hip thrust without weight or lower weight
 - [ ] Controlled Explosive Burpee
+- [ ] Hover in more of a standing position for abduction leg squeezing machine 70 to 80lb
 - [ ] Do [[Grip Strength Training]] every day
+- [ ] If you took a cold bath before working out make sure you really stretch to warm up again to reduce injury.
 - [ ] Use 30 to 45 degree angle for incline bench press which seem more effective for you then flat bench.
 - [ ] Half lateral chest press meaning alternating between the full squeeze and a half movement not going all the way. Same thing with adduction machine.
 
@@ -162,6 +166,7 @@ series:
 | Lower | Hip Thrust                                              | N/A      | CM    | High     | ***110*** | 4    | 8    | 0     | **55**   |           |
 | Upper | [[Upper#^971765 \|Back Cable Lateral Raise]]            | N/A      | PG    | High     |           | 4    | 8    |       |          | Shoulder  |
 |       | Overhead Cable Extension                                |          | PG    |          |           |      |      |       |          | Tricep    |
+|       | Lat Pull down                                           |          | PG    |          | *125*     |      |      |       | *125*    |           |
 ^machine
 
 
@@ -169,7 +174,8 @@ series:
 | --------------------------------------------- | ----- | ----- | ---------- | ---------- | -------- | ---- | ---- |
 | [[Upper#^ef7d41\|Chest Fly]]                  | Upper | CM    | Dumbbell   | *20*       | High     | 3    | 10   |
 | [[Upper#^bcb0df \|Bench Press]]               | Upper | CM    | Barbell    | *30*       | High     | 3    | 5    |
-| Incline Bench Press                           | Upper | CM    | Barbell    | *20*       | High     | 3    | 5    |
+| Incline Bench Press                           | Upper | CM    | Barbell    | *20*       | High     | 4    | 8    |
+| Incline Bench Press                           | Upper | CM    | Dumbell    | *20*       | High     | 4    | 8    |
 | [[Lower#^4e02bb \|Nordic Hamstring Curl]]     | Lower | CM    | Barbell    | *90*       | High     | 3    | 5    |
 | [[Lower#^2559bb \|Hip Thrust]]                | Lower | CM    | Barbell    | *20*       | High     | 3    | 10   |
 | [[Full Body#^b30c79\|Zercher Deadlift]]       | Lower | CM    | Barbell    | *20*       | High     | 3    | 5    |

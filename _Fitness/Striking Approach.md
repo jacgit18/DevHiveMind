@@ -104,6 +104,15 @@ Don’t fixate on just one area. Keep cycling your attention between these body 
 - Inhale out of Range.
 
 ### **2. Defense & Punch Timing**
+> [!caution] 
+> Moving slower makes it easier to check kicks with your leg in Mauy Thai also it is easier to check with legs when in a wider stance but while moving faster and in a narrow stance you are forced to use footwork along with utilizing the cross block with your arms for kicks. 
+
+- Technique 1: Same-Side Arm + Knee Combo (Crossing Motion for Momentum)  
+	- “When throwing a knee, try pairing it with the same-side hand. Instead of the typical downward swipe (like you would with a kick), use a crossing motion — almost like throwing a hook. This creates rotational momentum through your upper body, helping to drive the knee forward with more power. Visually, it’s like you’re forming a ‘plus sign’ with your arms and the knee — the hand crosses one direction, the knee rises the other.”
+
+- Technique 2: Creating Distance with a Push Kick-Like Shin Frame  
+	- “If someone crashes in close and you don’t have time to throw a clean strike, you can twist your hips and throw your leg up as if you're throwing a roundhouse — but instead of aiming to snap, drive your shin into their body and push off. Think of it like a cross between a kick and a frame: your shin lands on their torso or hip, and you use it to create space and reset the distance.”
+
 #### Optimal Striking Defense Order of Operations 
 this is a thought process which is a mental order of operation not a rule more of a guideline:
 1. Use footwork to stay at a safe range or angle.  
