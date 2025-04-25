@@ -161,7 +161,7 @@ series:
 | Upper | Assisted Bench Press                                    | N/A      | CM    | Med      | *50*      | 3    | 5    | 0     | *50*     |           |
 | Lower | Hip Thrust                                              | N/A      | CM    | High     | ***110*** | 4    | 8    | 0     | **55**   |           |
 | Upper | [[Upper#^971765 \|Back Cable Lateral Raise]]            | N/A      | PG    | High     |           | 4    | 8    |       |          | Shoulder  |
-|       | Overhead Cable Extension                                |          |       |          |           |      |      |       |          | Tricep    |
+|       | Overhead Cable Extension                                |          | PG    |          |           |      |      |       |          | Tricep    |
 ^machine
 
 
@@ -192,6 +192,8 @@ series:
 | [[Lower#^3ae11e \|Cossack Squat]]             | Lower | CM    | Kettlebell | *17.6*     | Low      | 3    | 10   |
 | [[Lower#^c9d45f \|Kettlebell Step-Up]]        | Lower | EP    | Kettlebell | *17.6*     | Low      | 3    | 10   |
 | Rear Dealt Fly                                | Upper | CM    | Dumbbell   | *20*       | Low      | 3    | 10   |
+|                                               |       |       |            |            |          |      |      |
+|                                               |       |       |            |            |          |      |      |
 ^freeweight
 
 Squeeze not to wide

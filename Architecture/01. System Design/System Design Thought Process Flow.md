@@ -28,6 +28,7 @@ excalidraw-autoexport: svg
 ![[System design core concepts.gif]]
 
 #todo/High/Dev  
+- [ ] Expand this to include AI  [[AWS Gen Event Notes]]
 - [ ] [[System Design Interview An Insider’s Guide Volume 1.pdf |System Design Interview An Insider’s Guide Volume 1]]
 - [ ] Payment system [[System Design Interview An Insider’s Guide Volume 2.pdf#page=316|System Design Interview An Insider’s Guide Volume 2, page 316]]
 - [ ] [[Designing Data-Intensive Applications The Big Ideas Behind Reliable, Scalable, and Maintainable Systems by Martin Kleppmann (z-lib.org).pdf |Designing Data-Intensive Applications]]
@@ -658,7 +659,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 {
 	"type": "excalidraw",
 	"version": 2,
-	"source": "https://github.com/zsviczian/obsidian-excalidraw-plugin/releases/tag/2.9.2",
+	"source": "https://github.com/zsviczian/obsidian-excalidraw-plugin/releases/tag/2.10.1",
 	"elements": [
 		{
 			"type": "line",
@@ -75772,10 +75773,10 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 		"currentItemStartArrowhead": null,
 		"currentItemEndArrowhead": "arrow",
 		"currentItemArrowType": "round",
-		"scrollX": 2780.705177086721,
-		"scrollY": 4206.446017817509,
+		"scrollX": 4921.088698809785,
+		"scrollY": 3208.0062612879,
 		"zoom": {
-			"value": 0.106987
+			"value": 0.146699
 		},
 		"currentItemRoundness": "round",
 		"gridSize": 20,
@@ -75797,6 +75798,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 			"type": "selection",
 			"customType": null,
 			"locked": false,
+			"fromSelection": false,
 			"lastActiveTool": null
 		}
 	},

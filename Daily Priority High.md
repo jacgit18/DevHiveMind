@@ -41,6 +41,7 @@ kanban-plugin: board
 - [ ] C@pple2024Money
 - [ ] Clean up Todo in vault
 - [ ] Clean up Vault in General
+- [ ] Update code block examples that are actually  meant for running in vault
 - [ ] Skip more steps move faster and smarter in career going every incremental step by step is the old way of doing things need to adapt for the new environment
 - [ ] list out questions you should ask yourself if making the decision to re-architect something or recreate it from scratch when it comes software engineering an application
 - [ ] ###### Priority Tech Topic of Focus

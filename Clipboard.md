@@ -6,6 +6,12 @@ console.log("User input:", userInput);
 ```
 
 
+
+```javascript
+let userInput = "Please enter something:";  
+
+console.log("User input:", userInput);
+```
 ```handwritten-ink
 {
 	"versionAtEmbed": "0.3.3",
