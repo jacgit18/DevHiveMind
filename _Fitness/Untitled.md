@@ -11,6 +11,85 @@ Relates:
 Peer Reviewed: 0
 dg-publish:
 ---
+
+
+
+
+Alright — you're combining **strength**, **size/endurance**, and **explosiveness/power** — but wondering about **best order of operations** and whether the truths apply across all exercises.
+
+First, **YES**:  
+The key ideas you mention — _working up slowly, keeping time under tension (slow tempo for strength), and progressively increasing weights_ — are true across almost all resistance training, especially for:
+
+- Building **joint strength**
+    
+- Improving **control**
+    
+- Preventing **injury**
+    
+
+Now for **order of operations**, here's the optimal way to stack it:
+
+---
+
+### Best Order of Operations:
+
+1. **Explosiveness and Power First** (low reps, fast tempo)
+    
+    - You want to be fresh for power training.
+        
+    - Explosive movements require maximum nervous system energy.
+        
+    - Examples: Speed deadlifts, power cleans, kettlebell swings, jump squats.
+        
+2. **Strength Work Second** (slow, heavy sets of 8)
+    
+    - Heavy, controlled sets focus on raw strength and joint resilience.
+        
+    - Spend at least 5 minutes here per exercise (resting between sets if needed).
+        
+3. **Muscle Size/Endurance Work Last** (higher reps 6–12)
+    
+    - Hypertrophy and endurance are easier when slightly fatigued.
+        
+    - You can still push hard without risking your nervous system or technique collapsing.
+        
+
+---
+
+### Visualized like this:
+
+> **Explosiveness (power focus)** → **Strength (slow heavy focus)** → **Hypertrophy/Endurance (higher rep burn)**
+
+---
+
+### Quick Reason Why:
+
+- Power = needs freshness and speed (tired = sloppy form and zero explosiveness)
+    
+- Strength = needs controlled focus but tolerates some fatigue
+    
+- Size/endurance = can be done under more fatigue because it's about _muscle burn_, not _perfect speed or maximum tension_
+    
+
+---
+
+### Bonus Truths (apply to all phases):
+
+- Always **warm up lighter** before jumping into heavy/fast sets.
+    
+- **Tempo and control** matter more than chasing the next weight increase.
+    
+- If your joints feel "weird" or unstable at all, **stop immediately and scale the movement**.
+    
+
+---
+
+Would you want me to sketch a sample mini-program (like a 2-3 day split) using this logic too? It could help you actually plug it in faster if you're building a workout around it.  
+**(Would only take a minute.)**
+
+
+
+
 ### **1. 6–20 Reps Close to Failure with Heavy Weights (Hypertrophy Across Rep Ranges)**
 
 **Goal:** Build muscle mass (hypertrophy) by using a wide rep range.
@@ -198,3 +277,25 @@ Would you like help combining all of this into a weekly training split or a prog
 ---
 
 Would you like a sample weekly split for each month?
+
+
+
+### **Summary:**
+
+- **Hypertrophy = Close to failure, 6–20 reps, heavy enough weights** → true almost everywhere.
+    
+- **Strength = Heavy, slow, progressive overload, ~4×8** → true for compound lifts especially.
+    
+- **Endurance/Size = 6–12 reps, volume focus** → true for most movements.
+    
+- **Explosiveness = 3–6 reps, fast and fresh** → more exercise-specific, but principles still apply broadly.
+    
+
+---
+
+### **The Only Exception?**
+
+- Some **very tiny isolation movements** (like wrist curls, ankle rehab, rotator cuff exercises) — where you sometimes avoid heavy weights or explosive work because they’re small stabilizers, not prime movers.
+    
+- Otherwise?  
+    **Big picture: This logic holds across most training exercises.**

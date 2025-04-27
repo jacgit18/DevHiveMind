@@ -56,4 +56,3 @@ If your goal is to maximize **explosiveness** while avoiding weight loss, the fo
 4. **Lift heavy on non-sprint days** – Strength training complements explosive sprinting.  
 5. **Increase calorie intake** – Emphasize **carbs and protein** on sprint days to fuel and recover.  
   
-Would you like any modifications, such as more agility work or sprinting variations?
