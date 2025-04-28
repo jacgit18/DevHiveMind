@@ -58,7 +58,7 @@ If you fail its just a iteration that you can pivot from in terms of cutting los
 - [ ] [How I save $$$ by self-hosting these 5 open source tools - DEV Community](https://dev.to/code42cate/how-i-save-by-self-hosting-these-5-open-source-tools-17mb)
 - [ ] [How I use n8n and AI agents to scale my startup](https://sliplane.io/blog/how-i-use-n8n-and-ai-agents-to-scale-my-startup)
 
-
+[Every Developer Needs to Self-Host - DEV Community](https://dev.to/code42cate/every-developer-needs-to-self-host-43mm)
 
 [Smart Contract Mechanics + AI Sneak Peek w/ kalepail - YouTube](https://www.youtube.com/watch?v=vi_jgvOKsl8)
 

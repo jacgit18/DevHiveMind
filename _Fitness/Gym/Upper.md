@@ -77,6 +77,11 @@ Get to your reps to 15 sec each try to extend for 45 sec MAX
 
 - Lateral Head Single Arm Cable Tricep Extension
 	- ![Lateral Head Single Arm Cable Tricep Extension - YouTube](https://www.youtube.com/watch?v=vVW9LwaahNw) ^88a124
+
+
+- Kneeling Cable Crunch ^c9a0f9
+	- ![Cable Crunch: Do It Right! - YouTube](https://www.youtube.com/watch?v=ToJeyhydUxU)
+
 ### Calisthenics (No Weights)
 - Plyometric Plank with Shoulder Tap
 - Dead Hang ^b1e482

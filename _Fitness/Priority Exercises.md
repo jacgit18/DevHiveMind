@@ -134,6 +134,8 @@ series:
 - [ ] Half lateral chest press meaning alternating between the full squeeze and a half movement not going all the way. Same thing with adduction machine.
 - [ ] Keep elbows high above head and alt cable height at hip and foot level for Overhead extension
 
+Put a mat or something under your lower back to increase the exercise for C shape and crunch
+
 > Crunch gym machine are heaver then Blink.
 
 | Body  | Machine                                                 | Position | Focus | Priority | Weight    | Sets | Reps | Range | Per Side | Body Part |
@@ -205,6 +207,8 @@ series:
 | [[Upper#^6d88c7 \| Incline Preacher Curl]]    |       |       |            |            |          |      |      |                                                                   |
 | [[Upper#^42bc7c \| Cable Curl]]               |       |       |            |            |          |      |      |                                                                   |
 | [[Upper#^88a124 \|Lateral Head Single Arm]]   |       |       |            |            |          |      |      |                                                                   |
+| [[Upper#^c9a0f9 \|Kneeling Cable Crunch]]     |       |       |            |            |          |      |      | Upper Abs                                                         |
+| Bench Reverse Crunch                          |       |       |            |            |          |      |      |                                                                   |
 ^freeweight
 
 
