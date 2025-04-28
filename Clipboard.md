@@ -229,3 +229,189 @@ Dates of Employment
 - _“Ever wonder how a bank decides when to remind you about a missed payment? I build the backend automation that figures out when and how those decisions happen.”_
     
 - _“I work on the behind-the-scenes tech that makes collections smarter, more scalable, and automated—so a system, not a person, is making decisions.”_
+
+
+
+
+
+
+- Free storage
+	- [https://www.pexels.com](https://www.pexels.com/)  
+	- [https://mega.io](https://mega.io/)
+
+
+
+
+
+- Midjourney (with all their tiers)
+    
+- ChatGPT API (with pricing tiers)
+    
+- Other major AIs (like Claude, Gemini, Stability AI) and their tiers
+    
+
+Here's the expanded version:
+
+---
+
+# Free Storage Options
+
+- **Pexels**:  
+    Free stock photos and videos. No account needed, no hidden fees.
+    
+- **Mega.io**:  
+    Free cloud storage — you get **20 GB** free just for signing up.  
+    Great for saving backups, photos, videos, etc.
+    
+
+---
+
+# Midjourney (AI Art Generator) Pricing
+
+Midjourney is used for making AI-generated images. You pay monthly and get different limits based on your plan:
+
+|Plan|Price|Image Generation|Relax Mode?|
+|:--|:--|:--|:--|
+|Basic|~$10/month|~200 images/month|No|
+|Standard|~$30/month|~900 images/month|Yes (unlimited images, but slower)|
+|Pro|~$60/month|~Unlimited images (fast mode for 12–15 hours per month) + Relax Mode|Yes (priority in Relax Mode queue)|
+|Mega (Stealth Plan)|~$120/month|Same as Pro but you can make images **privately**|Yes|
+
+**Relax Mode** = Unlimited images, but they take ~10 minutes to generate.
+
+---
+
+# ChatGPT (OpenAI API) Pricing
+
+If you want to **use ChatGPT through an app or your own software**, you pay based on how much text you send/receive.
+
+|Model|Price (Input)|Price (Output)|Notes|
+|:--|:--|:--|:--|
+|GPT-3.5 Turbo|~$0.0015 per 1K tokens|~$0.0020 per 1K tokens|Cheapest, fast, decent|
+|GPT-4|~$0.03 per 1K tokens|~$0.06 per 1K tokens|Smarter, more expensive|
+|GPT-4 Turbo (cheaper version)|~$0.01–0.03 per 1K tokens|~$0.02–0.06 per 1K tokens|Used in ChatGPT Plus|
+
+**Tokens = pieces of words**.  
+**Rough idea**: 1,000 tokens = about 750 words.
+
+---
+
+# Other Major AI Tools (with Their Pricing)
+
+## Claude (Anthropic)
+
+Chatbot similar to ChatGPT, but focuses more on safety and longer conversations.
+
+|Model|Price (Input)|Price (Output)|Notes|
+|:--|:--|:--|:--|
+|Claude 3 Haiku (fast/light)|~$0.25 per 1M tokens|~$1.25 per 1M tokens|Super cheap, fast|
+|Claude 3 Sonnet (middle)|~$3 per 1M tokens|~$15 per 1M tokens|Good balance|
+|Claude 3 Opus (highest-end)|~$15 per 1M tokens|~$75 per 1M tokens|Huge memory, very smart|
+
+_(1M tokens = roughly 750,000 words)_
+
+---
+
+## Gemini (Google DeepMind)
+
+Another chatbot and AI model from Google.
+
+- **Prices** vary, but roughly similar to GPT-4 Turbo.
+    
+- Gemini Pro = ~$0.002 per 1K tokens (cheap)
+    
+- Gemini 1.5 Pro (long conversations) = ~$0.007 per 1K tokens.
+    
+
+---
+
+## Stability AI (for Images)
+
+AI art generation (like Midjourney or DALL-E).
+
+|Plan|Price|Notes|
+|:--|:--|:--|
+|Free tier|Free|Limited generation|
+|Starter Plan|~$20/month|More image generations|
+|Professional/Enterprise|~$99/month+|Heavy usage (companies mostly)|
+
+You pay **per image** if using the API directly (starting at about **$0.005–$0.02 per image**).
+
+---
+
+# Quick Rules of Thumb
+
+|Situation|Free Option|Paid Option|
+|:--|:--|:--|
+|Storing files or photos|**Mega.io**, **Pexels**|Pay only if you need tons of storage|
+|Making AI art casually|**Midjourney Basic Plan**|Upgrade to Standard/Pro if you want fast + more images|
+|Using ChatGPT for fun|**ChatGPT Free**|Pay for GPT-4 if you want smarter answers|
+|Building an app with AI|Start cheap with **GPT-3.5**|Use **Claude**, **Gemini**, or **GPT-4** if you need smarter or longer conversations|
+
+---
+
+# Final Notes
+
+- **Bigger = Slower and More Expensive** (for models and images).
+    
+- **Relax modes** and **low-cost tiers** exist — but always check for hidden "rate limits."
+    
+- **APIs** charge _for what you actually use_ — not a flat monthly fee unless you're buying bundled credits.
+    
+
+---
+
+Would you also want a simple **comparison table** of “Best for Personal Use vs. Best for Building Stuff” next?  
+Could be a fast chart like "If you want X → use Y" to make it super easy. Want me to?
+
+
+
+
+
+
+A **token** is basically a **small piece of text** — like a word chunk — that AI models (like ChatGPT) use to read, process, and generate language.
+
+- A **token** could be a whole short word (like “cat”)
+    
+- Or **part of a long word** (like “amazing” gets split into "amaz" + "ing")
+    
+- **Spaces and punctuation** count too.
+    
+
+**Example:**
+
+|Text|How Many Tokens?|
+|:--|:--|
+|"Hello"|1 token|
+|"Hello, how are you?"|6 tokens|
+|"Artificial Intelligence is awesome."|5–7 tokens (depending on the model)|
+
+**Quick rule:**
+
+> About **1,000 tokens ≈ 750 words** of normal writing.
+
+---
+
+**Why do tokens matter?**
+
+- When you **send** a message to AI, it costs tokens (input).
+    
+- When AI **replies** back, that also costs tokens (output).
+    
+- The **bigger** your text, the **more tokens** it uses → and the **more money** it costs if you’re paying for API usage.
+    
+
+---
+
+**Another way to picture it:**
+
+Imagine you’re sending a letter.
+
+- Each **token** is like a tiny **stamp** you have to stick on your letter.
+    
+- Bigger letters (more words) = **more stamps (tokens)** = **more cost**.
+    
+
+---
+
+Would you want me to also show a few "real" examples of how different sentences break into tokens so you can see it? (It's actually kinda interesting.)
