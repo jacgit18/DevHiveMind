@@ -33,6 +33,7 @@ kanban-plugin: board
 
 ## #todo/CapitalOne
 
+- [ ] [[PTP Config Workflow]]
 - [ ] [[Work LOB and arch notes to clean]]
 - [ ] possible logging flow CloudWatch Logs → Kinesis Firehose → Splunk HEC
 - [ ] [[Clipboard#Email To Send]] on (@2025-06-01)
