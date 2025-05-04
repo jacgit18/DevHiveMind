@@ -45,6 +45,12 @@ Keep sparing for Muay Thai down to 2 or 3 times a month for safety and quality.
 	- [ ] High movement breathing **in and out through the mouth** but still try to be efficient about breathing patterns in this scenario
 
 
+### **Rule for Checking Kicks**  
+- **Front leg**: Default for low kicks, long range, and retreating.  
+- **Back leg**: Default for body kicks, advancing, and close range.  
+- **Always adjust based on stance (orthodox/southpaw) and opponent’s timing**.
+
+
 ## **Striking Principles**
 > [!tip] FIRE 
 > - Striking is fire you play with it you don't try to control or hold it. 

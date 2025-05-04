@@ -47,7 +47,12 @@ Document the names of future teams to better reach out to them in the future
 Push more frequently for aws experiments
 
 
+### Old ticket 
 
+Were to go with hooks ticket reach out to young for hooks and look at aws dev console for other spike in reguards to queue  
+  
+  
+Kensis doesnt have any direct intergration with step function and cant take from one cloud watch log and send to another cloudwatch log it would have to be an alternative aws service in terms of this experiment of process logs with Kinises within step function
 
 
 ## April Info 
