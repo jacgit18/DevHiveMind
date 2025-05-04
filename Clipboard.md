@@ -53,7 +53,7 @@ If you fail its just a iteration that you can pivot from in terms of cutting los
 
 [5 self‑hosted finance apps that export perfectly into Excel for deeper analysis](https://www.xda-developers.com/self-hosted-finance-apps-export-excel/)
 
-
+[GitHub - aws-samples/amazon-bedrock-workshop: This is a workshop designed for Amazon Bedrock a foundational model service.](https://github.com/aws-samples/amazon-bedrock-workshop/tree/main)
 
 
 

@@ -25,7 +25,7 @@ dg-publish:
 How to fire hook lambda  
   
   
-Look at repo for request body  
+Look at repo for request body  to mock
   
   
 Look cloudwatch log for sqs being triggered
