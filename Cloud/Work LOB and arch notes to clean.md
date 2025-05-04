@@ -36,6 +36,8 @@ Look cloudwatch log for sqs being triggered
 
 ### People
 
+Story points are important in terms of velocity and looking good
+
 Kirtan complete failure monitoring
 
 Kyle Lieisure offers 11 team  
