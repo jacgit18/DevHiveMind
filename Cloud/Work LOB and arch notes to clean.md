@@ -15,7 +15,155 @@ dg-publish:
 
 
 
+### Logging 
 
+Okay — thanks for clarifying — this helps a lot.  
+  
+You’re saying:  
+  
+Your real-world goal is send CloudWatch Logs to Splunk.  
+  
+For now, you’re experimenting by sending CloudWatch Logs through Kinesis (Splunk will come later).  
+  
+You want to prove the concept — that you can stream/process logs.  
+  
+Important: For the final production version, you want to use Step Functions, avoid using Lambda as much as possible.  
+  
+  
+  
+---  
+  
+Here's the real situation you're dealing with:  
+  
+CloudWatch Logs → [Processing] → Splunk (eventually)  
+  
+You’re trying to insert Kinesis in the middle now, then later replace or add Splunk as a destination.  
+  
+  
+---  
+  
+The Challenge  
+  
+CloudWatch Logs cannot directly push to Kinesis.  
+  
+Step Functions cannot pull from CloudWatch Logs.  
+  
+SNS can't pull from CloudWatch Logs either.  
+  
+  
+Normally Lambda acts as the “glue” to pull logs and push them into Kinesis.  
+If you want no Lambda, then you need something else to move data from CloudWatch to Kinesis.  
+  
+  
+---  
+  
+Good Proof-of-Concept Plan  
+  
+Here’s what I suggest for your experiment:  
+  
+[1] CloudWatch Logs subscription filter → Kinesis directly (via a Firehose or native subscription)  
+  
+CloudWatch Logs CAN send logs directly to Kinesis Data Firehose via a subscription filter.  
+  
+NO Lambda needed.  
+  
+Firehose can then put records into:  
+  
+S3 (temporary bucket),  
+  
+Kinesis Stream (optionally),  
+  
+Later you can point Firehose to Splunk.  
+  
+  
+  
+You don’t even need Step Functions at this stage.  
+  
+  
+---  
+  
+Production version  
+  
+Later, when you add Step Functions, Step Functions would orchestrate monitoring and flow control — not pull logs directly.  
+  
+  
+---  
+  
+Example Architecture (No Lambda)  
+  
+For now:  
+  
+CloudWatch Log Group  
+→ Subscription Filter  
+→ Kinesis Data Firehose  
+→ S3 Bucket (temporary storage for now)  
+  
+Later (production):  
+  
+CloudWatch Log Group  
+→ Subscription Filter  
+→ Kinesis Data Firehose  
+→ Splunk Endpoint  
+  
+Optional Step Function (Production Monitoring/Orchestration):  
+  
+Step Function  
+→ Waits for S3 delivery confirmation (or Kinesis checkpoint)  
+→ Invokes a "success" or "retry" path  
+  
+But notice: Step Functions manage orchestration, not the direct data movement.  
+  
+  
+---  
+  
+Why Kinesis Firehose instead of Kinesis Data Stream?  
+  
+Firehose is easier: it handles batching, retries, delivery — no code.  
+  
+Firehose can directly integrate with:  
+  
+S3  
+  
+Redshift  
+  
+Elasticsearch  
+  
+Splunk  
+  
+  
+If you use Kinesis Data Stream, you would need something (an app or service) to consume the stream — which brings you back to Lambda, ECS, etc.  
+  
+  
+Firehose avoids Lambda completely.  
+  
+  
+---  
+  
+Simple Walkthrough  
+  
+1. Create a Kinesis Data Firehose Delivery Stream (destination = S3 for now).  
+  
+  
+2. Create a CloudWatch Logs subscription filter that pushes logs into Firehose.  
+  
+  
+3. Logs flow from CloudWatch → Firehose → S3.  
+  
+  
+4. (Later) Replace S3 with Splunk endpoint when ready.  
+  
+  
+  
+  
+---  
+  
+Bonus  
+  
+Firehose can buffer the logs (for example, every 5 MB or 60 seconds) before delivering.  
+  
+It can also transform data using a Lambda transform function optionally — but you don't need that now.  
+  
+Step Functions could be added later to handle "flow control" — like if a delivery fails.
 
 
 
