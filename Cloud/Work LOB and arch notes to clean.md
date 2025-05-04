@@ -18,6 +18,22 @@ dg-publish:
 
 
 
+
+
+### General Dev Stuff
+
+How to fire hook lambda  
+  
+  
+Look at repo for request body  
+  
+  
+Look cloudwatch log for sqs being triggered
+
+
+
+
+
 ### People
 
 Kirtan complete failure monitoring
