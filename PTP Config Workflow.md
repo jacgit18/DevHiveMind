@@ -35,7 +35,7 @@ Ask what triggers the step function
         
         - This will be a list of scheduled contract payments.
             
-        - Key fields: `paymentDate`, `amount`
+        - Key fields: `paymentDate`, `paymentAmount`
             
 - Use this list to build input for the **RT Payment Scheduler Lambda**.
     
