@@ -11,6 +11,27 @@ Relates:
 Peer Reviewed: 0
 dg-publish:
 ---
+## May 
+
+
+
+
+
+
+### People
+
+Kirtan complete failure monitoring
+
+Kyle Lieisure offers 11 team  
+  
+Document the names of future teams to better reach out to them in the future  
+  
+Push more frequently for aws experiments
+
+
+
+
+
 ## April Info 
 
 

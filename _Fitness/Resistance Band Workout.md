@@ -40,6 +40,7 @@ Light explosive reps to activate striking mechanics without fatigue.
     
 
 
+
 ## **Martial Arts Resistance Band Workout**
 
 **(3–4x/week for BJJ, Judo, and Muay Thai)**

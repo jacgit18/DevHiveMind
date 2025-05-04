@@ -40,6 +40,8 @@ Iteration are repetitions where you are modifying the repetition with error corr
 If you fail its just a iteration that you can pivot from in terms of cutting losses when it makes sense to to continue to iterate and get where you want to be
 
 
+[Seeing Cloud Differently: My Experience with the AWS Well-Architected Framework - DEV Community](https://dev.to/glory_ugochukwu_57b6cf663/seeing-cloud-differently-my-experience-with-the-aws-well-architected-framework-2o52)
+
 
 [The heart of architecture: cohesers and decouplers \| ITNEXT](https://itnext.io/cohesers-and-decouplers-ecac2964081a)
 
