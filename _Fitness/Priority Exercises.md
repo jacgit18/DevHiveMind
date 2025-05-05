@@ -20,7 +20,20 @@ dg-publish:
 ---
 # Attributes
 
-
+### Stats
+- 15% body fat 
+- **Weight:** 120 lbs
+- **WaterToDrink:** 80 oz
+- Watch food videos before or while eating to stimulate your appetite and help you eat more without feeling full too quickly. Also walk around while eating and limit water to eat more.
+#### Calories
+- **Maintain Current Weight:** ~2,100 calories/day
+- **Calorie Goal for Gaining Weight (fast approach):** ~3,600 calories/day
+- **Calorie Goal for Gaining Weight (moderate approach):** ~3,300 calories/day (current target)
+- **Maintain New Weight (goal weight):** ~2,800 calories/day
+- **Slow Weight Gain:** ~1,700–1,800 calories/day over the course of a year (extremely slow, not typical for bulking).
+#### **Protein Requirements:**
+1. **Daily Protein for Maintenance/Gain:** ~158 – 330 grams of protein per day
+2. **Protein for Cutting (higher intake for muscle preservation):** ~180 grams/day
 
 
 
@@ -149,20 +162,7 @@ color purple
 | **Fri** | MMA or Gym   | BJJ+MT **OR** BJJ+Kickboxing **OR** BJJ+Kickboxing+MT |
 | **Sat** | MMA          | BJJ+MT **OR** BJJ+Kickboxing **OR** BJJ+Kickboxing+MT |
 
-### Stats
-- 15% body fat 
-- **Weight:** 120 lbs
-- **WaterToDrink:** 80 oz
-- Watch food videos before or while eating to stimulate your appetite and help you eat more without feeling full too quickly. Also walk around while eating and limit water to eat more.
-#### Calories
-- **Maintain Current Weight:** ~2,100 calories/day
-- **Calorie Goal for Gaining Weight (fast approach):** ~3,600 calories/day
-- **Calorie Goal for Gaining Weight (moderate approach):** ~3,300 calories/day (current target)
-- **Maintain New Weight (goal weight):** ~2,800 calories/day
-- **Slow Weight Gain:** ~1,700–1,800 calories/day over the course of a year (extremely slow, not typical for bulking).
-#### **Protein Requirements:**
-1. **Daily Protein for Maintenance/Gain:** ~158 – 330 grams of protein per day
-2. **Protein for Cutting (higher intake for muscle preservation):** ~180 grams/day
+
 
 ### Exercise Categories of Focus 
 **Rotational/Core Strength - RC**
