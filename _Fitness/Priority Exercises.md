@@ -18,6 +18,12 @@ Relates:
 Peer Reviewed: 0
 dg-publish:
 ---
+# Attributes
+
+
+
+
+
 # Warm-Up & Cool-Down 
 Start with a dynamic stretch to Improve blood flow and flexibility. End with a static stretch targeting major muscle groups. Basically any static stretch has a dynamic variation with movement. 
 
@@ -25,11 +31,7 @@ Start with a dynamic stretch to Improve blood flow and flexibility. End with a s
 
 ## Best Practices
 
-
-
-
-
-2. **Avoid Risky Movements:**
+1. **Avoid Risky Movements:**
     - Skip upright rows due to the unnatural shoulder position.
     - Skip Renegade rows
     - Stay away from 
@@ -38,7 +40,7 @@ Start with a dynamic stretch to Improve blood flow and flexibility. End with a s
 	    - Hanging Leg raises 
 	    - Leg extension if pain don't do it 
     - Stop two reps before exercise failure alternate this depending how you feel.
-3. **Equipment Tips:**
+2. **Equipment Tips:**
     - Use **barbells** for added weight when building strength.
     - Use **dumbbells** for greater range of motion and correcting muscle imbalances.
     - Any **curlbar** exercise can be done with barbell.
@@ -113,11 +115,12 @@ color purple
 - [ ] Pick rest day each week
 - [ ] Do Controlled Explosive Burpee
 - [ ] Do [[Grip Strength Training]] every day
+- [ ] Use wide grip for pull up machine dip
 - [ ] Eventually add hanging weight to your pull-ups
 - [ ] Point toes inward keep butt down for Leg extension
 - [ ] Experiment days play around with kettlebell and other stuff
 - [ ] Workout more in the winter body retains weight more Oct to Feb
-- [ ] Maybe limit excercise to 3 different excercise per session shifting phases 
+- [ ] Maybe limit exercise to 3 different exercise per session shifting phases 
 
 
 #todo/BAU/Workout

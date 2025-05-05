@@ -45,14 +45,14 @@ This process can be a lambda or something else ask bobby what he is doing around
 ---
 
 #### **3. Integration with RT Payment Scheduler**
-Create new list with this data
+Create new list with this data that has to include the stuff below and what ever else stuff 
 - **Input Needed:**  
     A list of objects with:
     
     ```json
     { 
-      date: string, 
-      amount: number 
+      paymentDate: string, 
+      paymentAmount: number 
     }
     ```
     
@@ -69,7 +69,9 @@ Create new list with this data
 
 #### **4. Response Handling**
 
-- Expected fields in response:
+there will be a list of multiple scheduled payments meaning more then one ptp
+
+- Expected fields in response from payment RT for every PTP in the list sent an API call is made in RT Payment that can fail or pass those results are routed to created and failed promise:
     
     ```json
     {
