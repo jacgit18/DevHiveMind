@@ -63,7 +63,7 @@ Start with a dynamic stretch to Improve blood flow and flexibility. End with a s
 - Make a fist if you feel off balance to create tension during exercises.
 - [[Core#^60b781 |Tuck Jumps to Plank]]
 - Dynamic Butterfly Hip Rocks → Butterfly Stretch
-- Dynamic Cat-Cow Transitions -> Cat-Cow Stretch
+- Dynamic Cat-Cow Tranadd sitions -> Cat-Cow Stretch
 - Dynamic Pigeon Transitions -> Pigeon Pose
 - Dynamic [[Core#^beda1a |Supine Windshield Wipers]] -> [[Core#^66bd94 |Spinal Twist ]]
 - Plyometric Plank with Shoulder Tap
