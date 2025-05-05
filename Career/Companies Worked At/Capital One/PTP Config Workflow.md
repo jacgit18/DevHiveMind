@@ -45,7 +45,7 @@ This process can be a lambda or something else ask bobby what he is doing around
 ---
 
 #### **3. Integration with RT Payment Scheduler**
-
+Create new list with this data
 - **Input Needed:**  
     A list of objects with:
     
@@ -100,7 +100,7 @@ This process can be a lambda or something else ask bobby what he is doing around
 - **Ask Young:**
     
     - Where does the output of this step function go?
-    - What 
+    - What triggers this step function
         
 
 ---
@@ -126,7 +126,3 @@ This process can be a lambda or something else ask bobby what he is doing around
     
 -  Plan for error handling in step function.
     
-
----
-
-Would you like this rewritten in a more visual flowchart style or converted into a project task list format (like Jira or Notion)?
