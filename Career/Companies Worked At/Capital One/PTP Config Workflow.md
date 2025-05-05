@@ -30,12 +30,14 @@ Ask what triggers the step function
 - **Check:** `contract.status === "enrolled"`
     
 - If enrolled:
+
+This process can be a lambda or something else ask bobby what he is doing around his data after getting it from data lambda from contracts into his step function
     
-    - Extract `draftScheduledPayments` from the contract:
-        
-        - This will be a list of scheduled contract payments.
-            
-        - Key fields: `paymentDate`, `paymentAmount`
+- Extract `draftScheduledPayments` from the contract:
+	
+	- This will be a list of scheduled contract payments.
+		
+	- Key fields: `paymentDate`, `paymentAmount`
             
 - Use this list to build input for the **RT Payment Scheduler Lambda**.
     
@@ -98,6 +100,7 @@ Ask what triggers the step function
 - **Ask Young:**
     
     - Where does the output of this step function go?
+    - What 
         
 
 ---
