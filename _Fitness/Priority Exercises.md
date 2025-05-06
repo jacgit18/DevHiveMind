@@ -178,7 +178,7 @@ color purple
 | **Sat** | MMA          | BJJ+MT **OR** BJJ+Kickboxing **OR** BJJ+Kickboxing+MT |
 
 
-#### Core Excercise
+#### Core Exercise Lift Goals
 
 | Exercise              | Goal Multiplier | Goal Weight                   | Timeline (Estimated) | If Heavier | Goal Weight | Timeline (Adjusted) |
 | --------------------- | --------------- | ----------------------------- | -------------------- | ---------- | ----------- | ------------------- |
