@@ -190,6 +190,7 @@ color purple
 | **Hip Thrust**        | 2x              | **240 lbs**                   | 4–6 months           |            | **315 lbs** | 6–12 months         |
 
 ### Sample Hip Thrust Program 
+(can swap and alt for other exercises and do it in phases on same day)
 **Day 1 (Heavy)**  
 - Barbell Hip Thrust: 4x5 @ 160–180 lbs (1.5x BW)  
 - Banded Pulse Thrusts: 3x15 (explosive at top)  
