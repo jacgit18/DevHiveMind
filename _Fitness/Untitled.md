@@ -66,7 +66,7 @@ dg-publish:
 
 ---
 
-## **Training Phases
+## Training Phases
 
 **Phase shifts every 4–6 weeks** to avoid adaptation plateaus.  
 
