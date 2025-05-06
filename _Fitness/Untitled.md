@@ -15,11 +15,12 @@ dg-publish:
 
 > **Train intensity before volume**. Prioritize neural output early, then shift to fatigue-driven work.
 
-### **Movement Quality Standards**
-
+### Terms
 - **Concentric (Lifting)**: Explode as fast as form allows.
 - **Eccentric (Lowering)**: Controlled and deliberate (2–4 seconds).
-- **RM** - Rep Max.
+- **Rep Max**: RM
+- **Rotational/Core Strength**:  RC
+- **Pulling/Grip Strength**: PG
 
 ---
 

@@ -24,14 +24,27 @@ dg-publish:
 - 15% body fat 
 - **Weight:** 120 lbs
 - **WaterToDrink:** 80 oz
-- Watch food videos before or while eating to stimulate your appetite and help you eat more without feeling full too quickly. Also walk around while eating and limit water to eat more.
+
+| Weeks | Weight |
+| ----- | ------ |
+| 1     |        |
+| 2     |        |
+| 3     |        |
+| 4     |        |
+| 5     |        |
+| 6     |        |
+| 7     |        |
+
 #### Calories
+> [!tip] Food for Thought
+>  Watch food videos before or while eating to stimulate your appetite and help you eat more without feeling full too quickly. Also walk around while eating and limit water to eat more.
+
 - **Maintain Current Weight:** ~2,100 calories/day
 - **Calorie Goal for Gaining Weight (fast approach):** ~3,600 calories/day
 - **Calorie Goal for Gaining Weight (moderate approach):** ~3,300 calories/day (current target)
 - **Maintain New Weight (goal weight):** ~2,800 calories/day
 - **Slow Weight Gain:** ~1,700–1,800 calories/day over the course of a year (extremely slow, not typical for bulking).
-#### **Protein Requirements:**
+##### **Protein Requirements:**
 1. **Daily Protein for Maintenance/Gain:** ~158 – 330 grams of protein per day
 2. **Protein for Cutting (higher intake for muscle preservation):** ~180 grams/day
 
@@ -52,6 +65,7 @@ Start with a dynamic stretch to Improve blood flow and flexibility. End with a s
 	    - Dumbbell Lateral raise 
 	    - Hanging Leg raises 
 	    - Leg extension if pain don't do it 
+	    - doing max weight for excercise that hit same muscle on the same day
     - Stop two reps before exercise failure alternate this depending how you feel.
 2. **Equipment Tips:**
     - Use **barbells** for added weight when building strength.
@@ -131,7 +145,7 @@ color purple
 - [ ] Use wide grip for pull up machine dip
 - [ ] Eventually add hanging weight to your pull-ups
 - [ ] Point toes inward keep butt down for Leg extension
-- [ ] Experiment days play around with kettlebell and other stuff
+- [ ] Pick one experiment days play around with kettlebell and other stuff
 - [ ] Workout more in the winter body retains weight more Oct to Feb
 - [ ] Maybe limit exercise to 3 different exercise per session shifting phases 
 
@@ -145,12 +159,13 @@ color purple
 - [ ] Use 30 to 45 degree angle for incline bench press which seem more effective for your body type then flat bench.
 - [ ] Half lateral chest press meaning alternating between the full squeeze and a half movement not going all the way. Same thing with adduction machine.
 - [ ] Use [[Tower 200.pdf |Tower 200]] for practicing cable machine exercises the weight ranges from 25 to 45 lb. Also orange weight not verified based off tower 200 weights verify at gym. 
+- [ ] **Limit Combination Exercises (Weight and Endurance)**
+	- **Purpose**: Prioritize strength and muscle growth.
+	- **Strategy**: When focusing on gaining weight, it's important to prioritize weightlifting and muscle-building exercises over combining endurance movements with heavy lifting. Combining endurance exercises with weight training can decrease the overall intensity and focus needed for strength development.
+	- **Recommendation**: Stick to pure weight training for muscle growth and use endurance exercises sparingly to avoid burning excessive calories or compromising muscle recovery.
 
 
-
-
-
-
+#### Schedule 
 
 | Day     | Session Type | Options (Choose 1)                                    |
 | ------- | ------------ | ----------------------------------------------------- |
@@ -163,19 +178,29 @@ color purple
 | **Sat** | MMA          | BJJ+MT **OR** BJJ+Kickboxing **OR** BJJ+Kickboxing+MT |
 
 
+#### Core Excercise
 
-### Exercise Categories of Focus 
-**Rotational/Core Strength - RC**
-**Pulling/Grip Strength - PG**
+| Exercise              | Goal Multiplier | Goal Weight                   | Timeline (Estimated) | If Heavier | Goal Weight | Timeline (Adjusted) |
+| --------------------- | --------------- | ----------------------------- | -------------------- | ---------- | ----------- | ------------------- |
+| **Deadlift**          | 2.5x            | **300 lbs**                   | 9–12 months          |            | **375 lbs** | 12-24 months        |
+| **Squat**             | 2x              | **240 lbs**                   | 8–10 months          |            | **300 lbs** | 9–18 months         |
+| **Bench Press**       | 1.5x            | **180 lbs**                   | 6–8 months           |            | **225 lbs** | 9–18 months         |
+| **Overhead Press**    | 1.0x            | **120 lbs**                   | 6–8 months           |            | **150 lbs** | 12-24 months        |
+| **Weighted Pull-Ups** | +0.5x           | **+60 lbs** (attached weight) | 6–9 months           |            | **+75 lbs** | 9–18 months         |
+| **Hip Thrust**        | 2x              | **240 lbs**                   | 4–6 months           |            | **315 lbs** | 6–12 months         |
 
-
-
-**Limit Combination Exercises (Weight and Endurance)**
-- **Purpose**: Prioritize strength and muscle growth.
-- **Strategy**: When focusing on gaining weight, it's important to prioritize weightlifting and muscle-building exercises over combining endurance movements with heavy lifting. Combining endurance exercises with weight training can decrease the overall intensity and focus needed for strength development.
-- **Recommendation**: Stick to pure weight training for muscle growth and use endurance exercises sparingly to avoid burning excessive calories or compromising muscle recovery.
-
-
+### Sample Hip Thrust Program 
+**Day 1 (Heavy)**  
+- Barbell Hip Thrust: 4x5 @ 160–180 lbs (1.5x BW)  
+- Banded Pulse Thrusts: 3x15 (explosive at top)  
+  
+**Day 2 (Endurance)**  
+- Single-Leg Hip Thrust: 3x12/leg @ 40–50 lbs  
+- Bodyweight Hip Thrust Holds: 3x30 sec (squeeze glutes)  
+  
+**Day 3 (Speed)**  
+- Light Hip Thrust: 6x3 @ 90 lbs (**max speed**)  
+- Kettlebell Swing (for hip snap): 4x15  
 
 | Body  | Exercise                                    | Focus  | Type       | W(lb/kg) | Priority | Duration | Sets | AltType    | Alt W(lb/kg) |
 | ----- | ------------------------------------------- | ------ | ---------- | -------- | -------- | -------- | ---- | ---------- | ------------ |
