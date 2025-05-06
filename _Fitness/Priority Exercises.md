@@ -180,14 +180,17 @@ color purple
 
 #### Core Exercise Lift Goals
 
-| Exercise              | Goal Multiplier | Goal Weight                   | Timeline (Estimated) | If Heavier | Goal Weight | Timeline (Adjusted) |
-| --------------------- | --------------- | ----------------------------- | -------------------- | ---------- | ----------- | ------------------- |
-| **Deadlift**          | 2.5x            | **300 lbs**                   | 9–12 months          |            | **375 lbs** | 12-24 months        |
-| **Squat**             | 2x              | **240 lbs**                   | 8–10 months          |            | **300 lbs** | 9–18 months         |
-| **Bench Press**       | 1.5x            | **180 lbs**                   | 6–8 months           |            | **225 lbs** | 9–18 months         |
-| **Overhead Press**    | 1.0x            | **120 lbs**                   | 6–8 months           |            | **150 lbs** | 12-24 months        |
-| **Weighted Pull-Ups** | +0.5x           | **+60 lbs** (attached weight) | 6–9 months           |            | **+75 lbs** | 9–18 months         |
-| **Hip Thrust**        | 2x              | **240 lbs**                   | 4–6 months           |            | **315 lbs** | 6–12 months         |
+|Exercise|Goal Multiplier|Goal Weight|Timeline (Estimated)|If Heavier|Goal Weight|Timeline (Adjusted)|
+|---|---|---|---|---|---|---|
+|**Hip Thrust**|2.5x|**300 lbs**|9–12 months||**375 lbs**|12–24 months|
+|**Hack Squat Machine**|2x|**240 lbs**|4–6 months||**300 lbs**|6–12 months|
+|**Squat**|2x|**240 lbs**|8–10 months||**300 lbs**|9–18 months|
+|**Deadlift**|2.5x|**300 lbs**|9–12 months||**375 lbs**|12–24 months|
+|**Bench Press**|1.5x|**180 lbs**|6–8 months||**225 lbs**|9–18 months|
+|**Overhead Press**|1.0x|**120 lbs**|6–8 months||**150 lbs**|12–24 months|
+|**Weighted Pull-Ups**|+0.5x|**+60 lbs** (attached weight)|6–9 months||**+75 lbs**|9–18 months|
+|**Single-Leg Leg Press**|2x|**240 lbs**|4–6 months||**315 lbs**|6–12 months|
+
 
 ### Sample Hip Thrust Program 
 (can swap and alt for other exercises and do it in phases on same day)
