@@ -31,15 +31,6 @@ Attach band to side and rotate from your core in a fighting stance. Mimics throw
 **6. Band-Resisted Fast Jabs or Teeps** – _15 seconds each side x 2 rounds_  
 Light explosive reps to activate striking mechanics without fatigue.
 
----
-
-### **Optional Finisher (30 sec)**
-
-- **Jump Rope or Footwork Shuffle**  
-    _(Fast feet, light bounce to elevate heart rate)_
-    
-
-
 
 ## **Martial Arts Resistance Band Workout**
 

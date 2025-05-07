@@ -25,15 +25,15 @@ dg-publish:
 - **Weight:** 120 lbs
 - **WaterToDrink:** 80 oz
 
-| Weeks | Weight |
-| ----- | ------ |
-| 1     |        |
-| 2     |        |
-| 3     |        |
-| 4     |        |
-| 5     |        |
-| 6     |        |
-| 7     |        |
+| Weeks | Weight | Date       |
+| ----- | ------ | ---------- |
+| 1     |        | 06/01/2025 |
+| 2     |        |            |
+| 3     |        |            |
+| 4     |        |            |
+| 5     |        |            |
+| 6     |        |            |
+| 7     |        |            |
 
 #### Calories
 > [!tip] Food for Thought
@@ -55,7 +55,20 @@ Start with a dynamic stretch to Improve blood flow and flexibility. End with a s
 
 > Crunch gym machine are heaver then Blink.
 
+
 ## Best Practices
+#todo/Workout 
+- [ ] Follow [[Workout Phases]] starting June
+
+
+### Terms
+- **Concentric (Lifting)**: Explode as fast as form allows.
+- **Eccentric (Lowering)**: Controlled and deliberate (2–4 seconds).
+- **Rep Max**: RM
+- **Rotational/Core Strength**:  RC
+- **Pulling/Grip Strength**: PG
+
+Inhale on on **Eccentric** when lowering the weight and exhale on **Concentric** which the lift or basically the hard part of the excercise and while doing excercise where you are holding in place like a Plank maintain slow, steady breathing throughout the hold. 
 
 1. **Avoid Risky Movements:**
     - Skip upright rows due to the unnatural shoulder position.
@@ -65,26 +78,63 @@ Start with a dynamic stretch to Improve blood flow and flexibility. End with a s
 	    - Dumbbell Lateral raise 
 	    - Hanging Leg raises 
 	    - Leg extension if pain don't do it 
-	    - doing max weight for excercise that hit same muscle on the same day
+	    - Doing max weight for excercise that hit same muscle on the same day
     - Stop two reps before exercise failure alternate this depending how you feel.
 2. **Equipment Tips:**
     - Use **barbells** for added weight when building strength.
     - Use **dumbbells** for greater range of motion and correcting muscle imbalances.
     - Any **curlbar** exercise can be done with barbell.
 
+### **Progression Rules**
+- **Hypertrophy**: Add 1 rep/set or +2.5 lbs weekly
+- **Strength**: +5 lbs/week (upper), +10 lbs (lower)
+- **Injury Rule**: If pain >2/10, regress load or variation
+
+### Exceptions 
+- **Small muscles/stabilizers**: Favor tempo over intensity (e.g., 3x15 slow calf raises).
+- Otherwise?  
+    **Big picture: The logic about phases holds across most training exercises.**
+
+
 ### Start  Dynamic End Static
-- Hold push-up extended & unextended
-- Make a fist if you feel off balance to create tension during exercises.
-- [[Core#^60b781 |Tuck Jumps to Plank]]
-- Dynamic Butterfly Hip Rocks → Butterfly Stretch
-- Dynamic Cat-Cow Tranadd sitions -> Cat-Cow Stretch
-- Dynamic Pigeon Transitions -> Pigeon Pose
-- Dynamic [[Core#^beda1a |Supine Windshield Wipers]] -> [[Core#^66bd94 |Spinal Twist ]]
-- Plyometric Plank with Shoulder Tap
-- Dynamic Hip Flexor Swings -> [[Lower#^357346 |Lizard Pose ]]
-	- For dynamic part lift your back knee off the ground if it was resting begin rocking forward and backward, shifting your weight between your front foot and back toes.
-- [[Upper#^5ff8c1 |Scapular Push-Ups ]]
-	- Breathe deeply as you push your chest outward, squeezing your shoulder blades together. Then, reverse the motion by pulling your chest inward and separating your shoulder blades, keeping your elbows straight throughout the movement.
+
+#### **Warm-Up (RAMP Protocol)**
+Duck walk
+- **Raise**: 
+	- Rower
+	- Jump rope
+	- Light jog or incline treadmill walk
+	- High knees
+	- Butt kicks
+	- Arm circles (large & fast)
+	- [[Core#^60b781 |Tuck Jumps to Plank]]
+	- Fast-paced shadowboxing
+- **Activate**: 
+	- Glute bridges
+	- Quadruped kickbacks
+	- Plyometric Plank with Shoulder Tap
+	- Hold push-up extended & unextended
+	- Shoulder Band pull-aparts
+	- [[Upper#^5ff8c1 |Scapular Push-Ups ]]
+		- Breathe deeply as you push your chest outward, squeezing your shoulder blades together. Then, reverse the motion by pulling your chest inward and separating your shoulder blades, keeping your elbows straight throughout the movement.
+- **Mobilize**: 
+	- 90/90 transitions
+	- Standing Hip circling
+    - Lunge with overhead reach
+    - Open books
+	- Dynamic Butterfly Hip Rocks → Butterfly Stretch
+	- Dynamic Cat-Cow Transitions -> Cat-Cow Stretch
+	- Dynamic Pigeon Transitions -> Pigeon Pose
+	- Dynamic [[Core#^beda1a |Supine Windshield Wipers]] -> [[Core#^66bd94 |Spinal Twist ]]
+	- Dynamic Hip Flexor Swings -> [[Lower#^357346 |Lizard Pose ]]
+		- For dynamic part lift your back knee off the ground if it was resting begin rocking forward and backward, shifting your weight between your front foot and back toes.
+
+- **Potentiate**: 
+	- Jump squats (bodyweight or band-assisted)
+	- Bounding (forward or lateral)
+	- Power skips
+	- Clap push-ups or explosive incline push-ups
+
 
 ### Row Machine 
 - **Workout 1: 1 Minute On, 1 Minute Off**
@@ -142,11 +192,14 @@ color purple
 - [ ] Pick rest day each week
 - [ ] Do Controlled Explosive Burpee
 - [ ] Do [[Grip Strength Training]] every day
+- [ ] Use wide grip for pull up machine dip
+- [ ] Make a fist if you feel off balance to create tension during exercises.
 - [ ] Eventually add hanging weight to your pull-ups
 - [ ] Point toes inward keep butt down for Leg extension
 - [ ] Pick one experiment days play around with kettlebell and other stuff
 - [ ] Workout more in the winter body retains weight more Oct to Feb
 - [ ] Maybe limit exercise to 3 different exercise per session shifting phases 
+- [ ] Eventually cycle in [[Resistance Band Workout]] 
 
 
 #todo/BAU/Workout
@@ -166,6 +219,19 @@ color purple
 
 #### Schedule 
 
+#todo/BAU/Workout 
+- [ ] Start Using O2 trainer again for diaphragmatic breathing
+	- Try using during cold baths but first maybe try before or after bath.
+- [ ] Cold Bath max 20 minutes assuming warm start first if not lesser by end of May start cold fully and use 60 BPM(Beats Per Minute) metronome.
+	- Maybe switch to back to warm start or cold showers in the fall at a lower frequency.
+	- But if Cold start about 3 min total.
+- [ ] Sparring on Sunday
+- Sleep 
+	- [ ] Stop Eating 3 hour before sleep
+	- [ ] Stop Drinking 2 hour before sleep
+	- [ ] Stop Scrolling 1 hour before sleep
+
+
 | Day     | Session Type | Options (Choose 1)                                    |
 | ------- | ------------ | ----------------------------------------------------- |
 | **Sun** | Gym          | Lower Body + Core                                     |
@@ -179,114 +245,165 @@ color purple
 
 #### Core Exercise Lift Goals
 
-|Exercise|Goal Multiplier|Goal Weight|Timeline (Estimated)|If Heavier|Goal Weight|Timeline (Adjusted)|
-|---|---|---|---|---|---|---|
-|**Hip Thrust**|2.5x|**300 lbs**|9–12 months||**375 lbs**|12–24 months|
-|**Hack Squat Machine**|2x|**240 lbs**|4–6 months||**300 lbs**|6–12 months|
-|**Squat**|2x|**240 lbs**|8–10 months||**300 lbs**|9–18 months|
-|**Deadlift**|2.5x|**300 lbs**|9–12 months||**375 lbs**|12–24 months|
-|**Bench Press**|1.5x|**180 lbs**|6–8 months||**225 lbs**|9–18 months|
-|**Overhead Press**|1.0x|**120 lbs**|6–8 months||**150 lbs**|12–24 months|
-|**Weighted Pull-Ups**|+0.5x|**+60 lbs** (attached weight)|6–9 months||**+75 lbs**|9–18 months|
-|**Single-Leg Leg Press**|2x|**240 lbs**|4–6 months||**315 lbs**|6–12 months|
+| Exercise                   | Goal Multiplier | Goal Weight     | Timeline (Estimated) | If Heavier        | Goal Weight | Timeline (Adjusted) |
+| -------------------------- | --------------- | --------------- | -------------------- | ----------------- | ----------- | ------------------- |
+| **Hip Thrust**             | 2.5x            | **300 lbs**     | 9–12 months          |                   | **375 lbs** | 12–24 months        |
+| ~~**Hack Squat Machine**~~ | ~~2x~~          | ~~**240 lbs**~~ | ~~4–6 months~~       |                   | **300 lbs** | 6–12 months         |
+| **Squat**                  | 2x              | **240 lbs**     | 8–10 months          |                   | **300 lbs** | 9–18 months         |
+| **Deadlift**               | 2.5x            | **300 lbs**     | 9–12 months          |                   | **375 lbs** | 12–24 months        |
+| **Bench Press**            | 1.5x            | **180 lbs**     | 6–8 months           |                   | **225 lbs** | 9–18 months         |
+| **Overhead Press**         | 1.0x            | **120 lbs**     | 6–8 months           |                   | **150 lbs** | 12–24 months        |
+| **Weighted Pull-Ups**      | +0.5x           | **+60 lbs**     | 6–9 months           | (attached weight) | **+75 lbs** | 9–18 months         |
+| **Single-Leg Leg Press**   | 2x              | **240 lbs**     | 4–6 months           |                   | **315 lbs** | 6–12 months         |
 
 
 ### Sample Hip Thrust Program 
 (can swap and alt for other exercises and do it in phases on same day)
 **Day 1 (Heavy)**  
-- Barbell Hip Thrust: 4x5 @ 160–180 lbs (1.5x BW)  
+- Hip Thrust: 4x5 @ 120–180 lbs (1.5x BW)  
 - Banded Pulse Thrusts: 3x15 (explosive at top)  
   
 **Day 2 (Endurance)**  
-- Single-Leg Hip Thrust: 3x12/leg @ 40–50 lbs  
+- Single-Leg Hip Thrust: 3x12/leg @ 40–60 lbs  
 - Bodyweight Hip Thrust Holds: 3x30 sec (squeeze glutes)  
   
 **Day 3 (Speed)**  
 - Light Hip Thrust: 6x3 @ 90 lbs (**max speed**)  
 - Kettlebell Swing (for hip snap): 4x15  
 
-| Body  | Exercise                                    | Focus  | Type       | W(lb/kg) | Priority | Duration | Sets | AltType    | Alt W(lb/kg) |
-| ----- | ------------------------------------------- | ------ | ---------- | -------- | -------- | -------- | ---- | ---------- | ------------ |
-| Core  | [[Core#^6516d4\|Russian Twists]]            | RC     | Kettlebell | 17.6     | Highest  | 00:00:20 | 3    | MediBall   | 0            |
-| Core  | [[Core#^fdacde \|Russian Twists]]           | RC     | Rope       | 0        | Highest  | 00:00:20 | 3    | Rope       | *0*          |
-| Full  | [[Full Body#^775bc4 \|Farmer’s Walk]]       | CM     | Kettlebell | 17.6     | Highest  | 00:00:20 | 3    | Dumbbell   | *20*         |
-| Upper | [[Upper#^b1e482 \|Dead Hang]]               | PG     | Bodyweight | 0        | Highest  | 00:00:30 | 1    | Bodyweight | 0            |
-| Upper | Switch Catch                                | EP     | Dumbell    | 5        | Highest  | 01:00:00 | 1    | Dumbbell   | *5*          |
-| Lower | [[Lower#^3b9f2c \|Box Jumps]]               | EP     | Jump       | 0        | Highest  | 00:00:20 | 3    | Jump       | *0*          |
-| Upper | [[Full Body#^05e3ec \|Seated Cable Row]]    | PG     | Machine    | 0        | High     | 00:00:20 | 3    | Machine    | *0*          |
-| Full  | Jump Rope                                   | Cardio | Rope       | 0        | High     | 00:00:20 | 3    | Jump       | *0*          |
-| Lower | [[Lower#^aad169 \|Split Squat Jumps]]       | EP     | Jump       | 0        | Med      | 00:00:20 | 3    | Jump       | *0*          |
-| Lower | [[Lower#^afd7a0 \|Lateral Skater Jumps]]    | EP     | Jump       | 0        | Med      | 00:00:20 | 3    | Jump       | *0*          |
-| Full  | [[Upper#^d58de0 \|Rotational Slam]]         | RC     | MediBall   | 20       | Low      | 00:00:20 | 3    | MediBall   | 20           |
-| Full  | [[Full Body#^64091e \| Alternating Waves]]  | Cardio | Rope       | 0        | Low      | 00:00:20 | 3    | Rope       | *0*          |
-| Full  | [[Full Body#^164e0e \| Side-to-Side Waves]] | Cardio | Rope       | 0        | Low      | 00:00:20 | 3    | Rope       | *0*          |
+| Body  | Exercise                                    | Tried | Focus  | Type       | W(lb/kg) | Priority | Duration | Sets | AltType    | Tried | Alt W(lb/kg) |
+| ----- | ------------------------------------------- | ----- | ------ | ---------- | -------- | -------- | -------- | ---- | ---------- | ----- | ------------ |
+| Core  | [[Core#^6516d4\|Russian Twists]]            | Yes   | RC     | Kettlebell | 17.6     | Highest  | 00:00:20 | 3    | MediBall   |       | 0            |
+| Core  | [[Core#^fdacde \|Russian Twists]]           |       | RC     | Rope       | 0        | Highest  | 00:00:20 | 3    | Rope       |       | *0*          |
+| Full  | [[Full Body#^775bc4 \|Farmer’s Walk]]       |       | CM     | Kettlebell | 17.6     | Highest  | 00:00:20 | 3    | Dumbbell   |       | *20*         |
+| Upper | [[Upper#^b1e482 \|Dead Hang]]               |       | PG     | Bodyweight | 0        | Highest  | 00:00:30 | 1    | Bodyweight |       | 0            |
+| Upper | Switch Catch                                | Yes   | EP     | Dumbell    | 5        | Highest  | 01:00:00 | 1    | Dumbbell   |       | *5*          |
+| Lower | [[Lower#^3b9f2c \|Box Jumps]]               |       | EP     | Jump       | 0        | Highest  | 00:00:20 | 3    | Jump       |       | *0*          |
+| Upper | [[Full Body#^05e3ec \|Seated Cable Row]]    | Yes   | PG     | Machine    | 0        | High     | 00:00:20 | 3    | Machine    | yes   | *0*          |
+| Full  | Jump Rope                                   |       | Cardio | Rope       | 0        | High     | 00:00:20 | 3    | Jump       |       | *0*          |
+| Lower | [[Lower#^aad169 \|Split Squat Jumps]]       |       | EP     | Jump       | 0        | Med      | 00:00:20 | 3    | Jump       |       | *0*          |
+| Lower | [[Lower#^afd7a0 \|Lateral Skater Jumps]]    |       | EP     | Jump       | 0        | Med      | 00:00:20 | 3    | Jump       |       | *0*          |
+| Full  | [[Upper#^d58de0 \|Rotational Slam]]         |       | RC     | MediBall   | 20       | Low      | 00:00:20 | 3    | MediBall   |       | 20           |
+| Full  | [[Full Body#^64091e \| Alternating Waves]]  |       | Cardio | Rope       | 0        | Low      | 00:00:20 | 3    | Rope       |       | *0*          |
+| Full  | [[Full Body#^164e0e \| Side-to-Side Waves]] |       | Cardio | Rope       | 0        | Low      | 00:00:20 | 3    | Rope       |       | *0*          |
 ^duration
 
+## **Optimal Workout Order of Operations**
+
+> **Train intensity before volume**. Prioritize neural output early, then shift to fatigue-driven work.
 
 
-| Exercise                            | Weight    | Body  | Priority | Type       | Body Part       | Sets | Reps | Tried | Motion | Exercise                                                | Position | Range | Focus | Per Side |
-| ----------------------------------- | --------- | ----- | -------- | ---------- | --------------- | ---- | ---- | ----- | ------ | ------------------------------------------------------- | -------- | ----- | ----- | -------- |
-| Kneeling Cable Crunch               | 44        | Core  | Highest  | Cable      | Upper Abdominal | 4    | 8    | Yes   | Pull   | [[Upper#^c9a0f9 \|Kneeling Cable Crunch]]               | N/A      | 5     | CM    | **44**   |
-| Rev Crunch                          | 0         | Core  | Highest  | BodyWeight | Lower Abdominal | 4    | 8    | Yes   | Pull   | Rev Crunch                                              | Bench    | 0     | RC    | *0*      |
-| Single Leg Press                    | 270       | Lower | Highest  | Fixed      |                 | 4    | 8    | Yes   | Push   | Single Leg Press                                        | N/A      | 0     | CM    | *135*    |
-| Hip Thrust                          | 120       | Lower | Highest  | Fixed      | Hamstring/Hips  | 4    | 8    | Yes   | Push   | [[Lower#^2559bb \|Hip Thrust]]                          | N/A      | 0     | CM    | *60*     |
-| Nordic Hamstring Curl               | 0         | Lower | Highest  | Bodyweight |                 | 4    | 8    |       |        | [[Lower#^4e02bb \|Nordic Hamstring Curl]]               | N/A      | 0     | CM    | ****     |
-| Abduction Outer Thigh               | 110       | Lower | Highest  | Fixed      |                 | 4    | 8    | Yes   | Push   | Abduction Outer Thigh                                   | Spread   | 7     | CM    | **110**  |
-| Leg Extension                       | 85        | Lower | High     | Fixed      |                 | 4    | 8    |       | Push   | Leg Extension                                           | N/A      | 0     | CM    | **85**   |
-| Adduction Inner Thigh               | 140       | Lower | High     | Fixed      |                 | 4    | 8    | Yes   | Pull   | Adduction Inner Thigh                                   | Squeeze  | 0     | CM    | **140**  |
-| Bench Press                         | 35        | Upper | Highest  | Barbell    |                 | 4    | 8    | Yes   | Push   | [[Upper#^3f7ed5 \|Bench Press]]                         | Incline  | 0     | CM    | *17.5*   |
-| Chest Fly                           | 90        | Upper | Highest  | Fixed      |                 | 4    | 8    | Yes   | Push   | [[Upper#^238b6e \|Chest Fly]]                           | N/A      | 4     | CM    | **90**   |
-| Chest Press                         | 60        | Upper | Highest  | Fixed      |                 | 4    | 8    |       | Push   | Chest Press                                             | Wide     | 1     | CM    | **60**   |
-| Seated Dip                          | 105       | Upper | Highest  | Fixed      |                 | 4    | 8    |       | Push   | Seated Dip                                              | N/A      | 0     | CMEP  | **125**  |
-| Mid Row                             | 165       | Upper | Highest  | Fixed      |                 | 4    | 8    |       |        | Mid Row                                                 | N/A      | 0     | PG    | **165**  |
-| Plate Pull Down                     | 90        | Upper | Highest  | Fixed      | Back Lats       | 4    | 8    |       | Pull   | Plate Pull Down                                         | N/A      | 0     | CM    | *45*     |
-| Kettlebell Swing                    | 17.6      | Full  | Highest  | Kettlebell | Multi           | 4    | 8    |       |        | [[Full Body#^bb1837\|Kettlebell Swing]]                 | N/A      | 0     | PG    | **17.6** |
-| Turkish Get-Up                      | 17.6      | Full  | Highest  | Kettlebell | Multi           | 4    | 8    |       | Both   | [[Full Body#^7d58d7 \|Turkish Get-Up]]                  | N/A      | 0     | RC    | **17.6** |
-| Zercher Deadlift                    | 90        | Full  | Highest  | Barbell    | Multi           | 4    | 8    |       |        | [[Full Body#^b30c79\|Zercher Deadlift]]                 | N/A      | 0     | CM    | *45*     |
-| Rear Delt Fly                       | 60        | Upper | Highest  | Fixed      | Shoulder Delt   | 4    | 8    |       | Pull   | Rear Delt Fly                                           | N/A      | 0     | CM    | **60**   |
-| Rear Delt Fly                       | 20        | Upper | High     | Dumbbell   | Shoulder Delt   | 4    | 8    |       | Pull   | Rear Delt Fly                                           | N/A      | 0     | CM    | *10*     |
-| Lat Pull down                       | 125       | Upper | High     | Fixed      | Back Lats       | 4    | 8    |       | Pull   | [[Upper#^ba48ce \|Lat Pull down]]                       | Wide     | 0     | PG    | **125**  |
-| Bench Press                         | 35        | Upper | High     | Barbell    |                 | 4    | 8    |       | Push   | [[Upper#^bcb0df \|Bench Press]]                         | Flat     | 0     | CM    | *17.5*   |
-| Single Arm Back Cable Lateral Raise | 0         | Upper | High     | Cable      | Shoulder        | 4    | 8    |       |        | [[Upper#^971765 \|Single Arm Back Cable Lateral Raise]] | N/A      | 0     | PG    | **0**    |
-| Cable Wolverine                     | ***160*** | Upper | High     | Cable      |                 | 4    | 8    |       | Pull   | [[CableWolverine.gif\|Cable Wolverine]]                 | N/A      | 0     | PG    | *80*     |
-| Bench Press                         | 40        | Upper | High     | Dumbbell   |                 | 4    | 8    |       | Push   | Bench Press                                             | Incline  | 0     | CM    | *20*     |
-| Body Weight Dips                    | 0         | Upper | High     | BodyWeight |                 | 4    | 8    |       | Push   | [[Upper#^a56816 \|Body Weight Dips]]                    | Narrow   | 0     | CMEP  | *0*      |
-| Body Weight Dip                     | 0         | Upper | High     | BodyWeight |                 | 4    | 8    |       | Push   | Body Weight Dip                                         | Wide     | 0     | CMEP  | *0*      |
-| Cable Balloon Abduction             | ***160*** | Upper | High     | Cable      |                 | 4    | 8    |       | Pull   | [[CableBalloonAbduction.gif \|Cable Balloon Abduction]] | N/A      | 0     | PG    | *80*     |
-| PullUp Wide                         | 0         | Upper | High     | Bodyweight |                 | 4    | 8    |       |        | [[Upper#^bf9596 \|PullUp Wide]]                         | N/A      | 0     | PG    | ****     |
-| Wide Curl                           | 0         | Upper | High     | Dumbbell   |                 | 4    | 8    |       |        | [[Upper#^60f95e \|Wide Curl]]                           | N/A      | 0     | CM    | ****     |
-| ChinUp                              | 0         | Upper | High     | Bodyweight |                 | 4    | 8    |       |        | [[Upper#^a2d3cc \|ChinUp]]                              | N/A      | 0     | PG    | ****     |
-| Incline Preacher Curl               | 0         | Upper | High     | Dumbbell   |                 | 4    | 8    |       |        | [[Upper#^6d88c7 \| Incline Preacher Curl]]              | N/A      | 0     | CM    | ****     |
-| PullUp Neutral                      | 0         | Upper | High     | Bodyweight |                 | 4    | 8    |       |        | [[Upper#^e81d31 \|PullUp Neutral]]                      | N/A      | 0     | PG    | ****     |
-| Bottoms Up                          | 17.6      | Upper | High     | Kettlebell |                 | 4    | 8    |       |        | [[Upper#^9def13\|Bottoms Up]]                           | N/A      | 0     | PG    | **17.6** |
-| Lunge Twist Halo                    | 17.6      | Upper | High     | Kettlebell |                 | 4    | 8    |       |        | [[Full Body#^7ecf05 \|Lunge Twist Halo]]                | N/A      | 0     | RC    | **17.6** |
-| Overhead Extension                  | 20        | Upper | High     | Dumbbell   |                 | 4    | 8    |       |        | [[Upper#^f128a8 \|Overhead Extension]]                  | N/A      | 0     | CM    | **20**   |
-| Around the World                    | 17.6      | Upper | Med      | Kettlebell |                 | 4    | 8    |       |        | Around the World                                        | N/A      | 0     | RC    | **17.6** |
-| Arnold Press                        | 20        | Upper | Med      | Dumbbell   |                 | 4    | 8    |       |        | [[Full Body#^569c1a \| Arnold Press]]                   | N/A      | 0     | CM    | **10**   |
-| Low Row                             | 88        | Upper | Med      | Fixed      |                 | 4    | 8    |       |        | Low Row                                                 | N/A      | 0     | PG    | **88**   |
-| Shoulder Press                      | 20        | Upper | Med      | Dumbbell   |                 | 4    | 8    |       |        | Shoulder Press                                          | N/A      | 0     | CM    | *10*     |
-| Shoulder Press                      | 40        | Upper | Med      | Fixed      |                 | 4    | 8    |       |        | Shoulder Press                                          | Narrow   | 0     | CM    | *20*     |
-| Shoulder Press                      | 70        | Upper | Med      | Fixed      |                 | 4    | 8    |       |        | Shoulder Press                                          | Wide     | 0     | CM    | *35*     |
-| Two Hand Overhead extension         | 0         | Upper | Med      | Cable      | Tricep          | 4    | 8    |       |        | [[Upper#^05b651 \|Two Hand Overhead extension]]         | N/A      | 0     | PG    | **0**    |
-| Cable Woodchopper                   | ***160*** | Upper | Med      | Cable      |                 | 4    | 8    |       |        | [[Upper#^a7be5a \|Cable Woodchopper]]                   | N/A      | 0     | RC    | ***80*** |
-| Zercher Squats                      | 50        | Lower | Med      | Barbell    |                 | 4    | 8    |       |        | [[Full Body#^765b0b \|Zercher Squats]]                  | N/A      | 0     | CM    | *25*     |
-| Single Arm Clean Press              | 17.6      | Upper | Med      | Kettlebell |                 | 4    | 8    |       |        | Single Arm Clean Press                                  | N/A      | 0     | EP    | **17.6** |
-| Kettlebell Snatch                   | 17.6      | Full  | Med      | Kettlebell |                 | 4    | 8    |       |        | [[Full Body#^8b48af \|Kettlebell Snatch]]               | N/A      | 0     | EP    | **17.6** |
-| Lateral Raise                       | 10        | Upper | Med      | Bands      |                 | 4    | 8    |       |        | [[Upper#^61234b \| Lateral Raise]]                      | N/A      | 0     | CM    | **10**   |
-| Clean to Jerk & Press               | 10        | Full  | Med      | Barbell    |                 | 4    | 8    |       |        | [[Full Body#^0c16fd \|Clean to Jerk & Press]]           | N/A      | 0     | EP    | **5**    |
-| Lateral Head Single Arm             | 0         | Upper | Med      | Cable      |                 | 4    | 8    |       |        | [[Upper#^88a124 \|Lateral Head Single Arm]]             | N/A      | 0     | CM    | ****     |
-| Cable Curl                          | 0         | Upper | Med      | Cable      |                 | 4    | 8    |       |        | [[Upper#^42bc7c \| Cable Curl]]                         | N/A      | 0     | CM    | ****     |
-| Zercher Lunge                       | 20        | Lower | Low      | Barbell    |                 | 4    | 8    |       | Push   | [[Full Body#^4b1677\|Zercher Lunge]]                    | N/A      | 0     | CM    | *10*     |
-| Cable Floor Fly                     | ***160*** | Upper | Low      | Cable      |                 | 4    | 8    |       |        | [[CableFloorFly.gif \|Cable Floor Fly]]                 | N/A      | 0     | PG    | ***80*** |
-| Cossack Squat                       | 17.6      | Lower | Low      | Kettlebell |                 | 4    | 8    |       | Push   | [[Lower#^3ae11e \|Cossack Squat]]                       | N/A      | 0     | CM    | **17.6** |
-| Kettlebell Step-Up                  | 17.6      | Lower | Low      | Kettlebell |                 | 4    | 8    |       | Push   | [[Lower#^c9d45f \|Kettlebell Step-Up]]                  | N/A      | 0     | EP    | **17.6** |
-| Leg Cable Reverse Crunch            | 90        | Core  | Low      | Cable      |                 | 4    | 8    |       |        | [[Core#^b41212\| Leg Cable Reverse Crunch]]             | N/A      | 0     | RC    | *45*     |
-| Angled Leg Press                    | 360       | Lower | Low      | Fixed      |                 | 4    | 8    |       |        | Angled Leg Press                                        | WTCH     | 0     | CM    | *180*    |
-| Leg Press Seated                    | 110       | Lower | Low      | Fixed      |                 | 4    | 8    |       |        | Leg Press Seated                                        | UpClose  | 0     | CM    | **110**  |
-| Leg Press off Back G&H              | 270       | Lower | Low      | Fixed      |                 | 4    | 8    |       |        | Leg Press off Back G&H                                  | Heals    | 0     | CM    | *135*    |
-| Leg Press off Back Quads            | 540       | Lower | Low      | Fixed      |                 | 4    | 8    |       |        | Leg Press off Back Quads                                | Close    | 0     | CM    | *270*    |
-| Leg Press off Back Abductor         | 540       | Lower | Low      | Fixed      |                 | 4    | 8    |       |        | Leg Press off Back Abductor                             | Wide     | 0     | CM    | *270*    |
-| Leg Press off Back Calf             | 270       | Lower | Low      | Fixed      |                 | 4    | 8    |       |        | Leg Press off Back Calf                                 | Toes     | 0     | CM    | *135*    |
-| Romanian Deadlift                   | 20        | Lower | Lowest   | Barbell    |                 | 4    | 8    |       | Pull   | [[Lower#^308171 \|Romanian Deadlift]]                   | N/A      | 0     | CM    | *10*     |
+**EP** → **CM** → **Hypertrophy (PG/RC)**  
+
+##### 1.  Explosive Power  - EP (Do First)
+> Speed is a skill—train it while fresh.
+
+- **Why**: Start with these to engage fast-twitch muscle fibers and improve explosive strength which can include Plyometric & Olympic Movements. Requires high neural drive and pristine form. Fatigue kills both.
+
+- **Prescription**:
+    - **3–5 sets of 3–5 reps**
+    - **≥85% 1RM** or max intent with lighter loads
+    - **Tempo**: 1s up (max speed), 2s down
+    - **Rest**: 3–5 minutes
+    - **Examples**: Olympic lifts, jump squats, med ball slams, weighted sprints, trap bar jumps
+
+##### **2. Strength Compound Movements - CM  (Train While Focused)**
+> Strength tolerates some fatigue, but still demands precision.
+
+- **Why**: Builds raw output, joint integrity, and compound movement proficiency. Follow with heavy, compound lifts to build muscle and functional strength use narrow grip or positioning for more of a compound movement.
+
+- **Prescription**:
+    - **4–5 sets of 4–8 reps**
+    - **75–85% 1RM**
+    - **Tempo**: 2–1–2 (eccentric–pause–concentric)
+    - **Rest**: 2–4 minutes
+    - **Examples**: Squats, deadlifts, bench press, weighted pull-ups
+
+
+##### **3. Hypertrophy & Endurance (Finish With Fatigue)**
+> Size/endurance = can be done under more fatigue because it's about _muscle burn_, not _perfect speed or maximum tension_
+
+- **Why**: Focuses on metabolic stress and time-under-tension. Fatigue is actually useful here.
+
+- **Prescription**:
+    - **3–4 sets of 8–15 reps**
+    - **60–75% 1RM**
+    - **Tempo**: 3–1–1 (emphasize eccentric)
+    - **Rest**: 30–90 seconds
+    - **Examples**: Isolation lifts, machine work, burnout sets
+
+---
+
+
+
+
+
+| Exercise                            | Weight    | Body  | Priority | Type       | Tried | Body Part      | Sets | Reps | Motion | Exercise                                                | Position | Range | Focus | Per Side |
+| ----------------------------------- | --------- | ----- | -------- | ---------- | ----- | -------------- | ---- | ---- | ------ | ------------------------------------------------------- | -------- | ----- | ----- | -------- |
+| PullUp                              | 0         | Upper | Highest  | Bodyweight | Yes   | Back Lats      | 4    | 8    | Pull   | [[Upper#^e81d31 \|PullUp]]                              | Neutral  | 0     | PG    | ****     |
+| Kneeling Cable Crunch               | 44        | Core  | Highest  | Cable      | Yes   |                | 4    | 8    | Pull   | [[Upper#^c9a0f9 \|Kneeling Cable Crunch]]               | N/A      | 0     | CM    | **44**   |
+| Rev Crunch                          | 0         | Core  | Highest  | BodyWeight | Yes   |                | 4    | 8    | Pull   | Rev Crunch                                              | Bench    | 0     | RC    | *0*      |
+| Hack Squat                          | 270       | Lower | Highest  | Fixed      | Yes   |                | 4    | 8    | Push   | Hack Squat                                              | N/A      | 0     | CM    | *135*    |
+| Single Leg Press                    | 270       | Lower | Highest  | Fixed      | Yes   |                | 4    | 8    | Push   | Single Leg Press                                        | N/A      | 0     | CM    | *135*    |
+| Hip Thrust                          | 120       | Lower | Highest  | Fixed      | Yes   | Hamstring/Hips | 4    | 8    | Push   | [[Lower#^2559bb \|Hip Thrust]]                          | N/A      | 0     | CM    | *60*     |
+| Nordic Hamstring Curl               | 0         | Lower | Highest  | Bodyweight |       |                | 4    | 8    | Pull   | [[Lower#^4e02bb \|Nordic Hamstring Curl]]               | N/A      | 0     | CM    | ****     |
+| Abduction Outer Thigh               | 110       | Lower | Highest  | Fixed      | Yes   |                | 4    | 8    | Push   | Abduction Outer Thigh                                   | Spread   | 7     | CM    | **110**  |
+| Leg Extension                       | 85        | Lower | High     | Fixed      | Yes   |                | 4    | 8    | Push   | Leg Extension                                           | N/A      | 0     | CM    | **85**   |
+| Adduction Inner Thigh               | 140       | Lower | High     | Fixed      | Yes   |                | 4    | 8    | Pull   | Adduction Inner Thigh                                   | Squeeze  | 0     | CM    | **140**  |
+| Bench Press                         | 35        | Upper | Highest  | Barbell    | Yes   | Chest          | 4    | 8    | Push   | [[Upper#^bcb0df \|Bench Press]]                         | Flat     | 0     | CM    | *17.5*   |
+| Bench Press                         | 35        | Upper | Highest  | Barbell    | Yes   | Chest          | 4    | 8    | Push   | [[Upper#^3f7ed5 \|Bench Press]]                         | Incline  | 0     | CM    | *17.5*   |
+| Chest Fly                           | 90        | Upper | Highest  | Fixed      | Yes   | Chest          | 4    | 8    | Push   | [[Upper#^238b6e \|Chest Fly]]                           | N/A      | 4     | CM    | **90**   |
+| Chest Press                         | 60        | Upper | Highest  | Fixed      | Yes   | Chest          | 4    | 8    | Push   | Chest Press                                             | Wide     | 1     | CM    | **60**   |
+| Seated Dip                          | 125       | Upper | Highest  | Fixed      |       |                | 4    | 8    | Push   | Seated Dip                                              | N/A      | 0     | CMEP  | **125**  |
+| Mid Row                             | 165       | Upper | Highest  | Fixed      |       |                | 4    | 8    | Pull   | Mid Row                                                 | N/A      | 0     | PG    | **165**  |
+| Plate Pull Down                     | 90        | Upper | Highest  | Fixed      |       | Back Lats      | 4    | 8    | Pull   | Plate Pull Down                                         | N/A      | 0     | CM    | *45*     |
+| Kettlebell Swing                    | 17.6      | Full  | Highest  | Kettlebell |       | Multi          | 4    | 8    |        | [[Full Body#^bb1837\|Kettlebell Swing]]                 | N/A      | 0     | PG    | **17.6** |
+| Turkish Get-Up                      | 17.6      | Full  | Highest  | Kettlebell |       | Multi          | 4    | 8    | Both   | [[Full Body#^7d58d7 \|Turkish Get-Up]]                  | N/A      | 0     | RC    | **17.6** |
+| Zercher Deadlift                    | 90        | Full  | Highest  | Barbell    |       | Multi          | 4    | 8    |        | [[Full Body#^b30c79\|Zercher Deadlift]]                 | N/A      | 0     | CM    | *45*     |
+| Tire Flip                           | 0         | Full  | Highest  | Tire       |       | Multi          | 4    | 8    | Both   | Tire Flip                                               | N/A      | 4     | CM    | **0**    |
+| Rear Delt Fly                       | 60        | Upper | Highest  | Fixed      |       | Shoulder Delt  | 4    | 8    | Pull   | Rear Delt Fly                                           | N/A      | 0     | CM    | **60**   |
+| Rear Delt Fly                       | 20        | Upper | High     | Dumbbell   |       | Shoulder Delt  | 4    | 8    | Pull   | Rear Delt Fly                                           | N/A      | 0     | CM    | *10*     |
+| Lat Pull down                       | 125       | Upper | High     | Fixed      |       | Back Lats      | 4    | 8    | Pull   | [[Upper#^ba48ce \|Lat Pull down]]                       | Wide     | 0     | PG    | **125**  |
+| Single Arm Back Cable Lateral Raise | 0         | Upper | High     | Cable      |       | Shoulder       | 4    | 8    |        | [[Upper#^971765 \|Single Arm Back Cable Lateral Raise]] | N/A      | 0     | PG    | **0**    |
+| Cable Wolverine                     | ***160*** | Upper | High     | Cable      |       |                | 4    | 8    | Pull   | [[CableWolverine.gif\|Cable Wolverine]]                 | N/A      | 0     | PG    | *80*     |
+| Bench Press                         | 40        | Upper | High     | Dumbbell   |       |                | 4    | 8    | Push   | Bench Press                                             | Incline  | 0     | CM    | *20*     |
+| Body Weight Dips                    | 0         | Upper | High     | BodyWeight |       |                | 4    | 8    | Push   | [[Upper#^a56816 \|Body Weight Dips]]                    | Narrow   | 0     | CMEP  | *0*      |
+| Body Weight Dip                     | 0         | Upper | High     | BodyWeight |       |                | 4    | 8    | Push   | Body Weight Dip                                         | Wide     | 0     | CMEP  | *0*      |
+| Cable Balloon Abduction             | ***160*** | Upper | High     | Cable      |       |                | 4    | 8    | Pull   | [[CableBalloonAbduction.gif \|Cable Balloon Abduction]] | N/A      | 0     | PG    | *80*     |
+| PullUp                              | 0         | Upper | High     | Bodyweight |       |                | 4    | 8    |        | [[Upper#^bf9596 \|PullUp]]                              | Wide     | 0     | PG    | ****     |
+| Wide Curl                           | 0         | Upper | High     | Dumbbell   |       |                | 4    | 8    |        | [[Upper#^60f95e \|Wide Curl]]                           | N/A      | 0     | CM    | ****     |
+| ChinUp                              | 0         | Upper | High     | Bodyweight |       |                | 4    | 8    |        | [[Upper#^a2d3cc \|ChinUp]]                              | N/A      | 0     | PG    | ****     |
+| Incline Preacher Curl               | 0         | Upper | High     | Dumbbell   |       | Biceps         | 4    | 8    |        | [[Upper#^6d88c7 \| Incline Preacher Curl]]              | N/A      | 0     | CM    | ****     |
+| Bottoms Up                          | 17.6      | Upper | High     | Kettlebell |       |                | 4    | 8    |        | [[Upper#^9def13\|Bottoms Up]]                           | N/A      | 0     | PG    | **17.6** |
+| Lunge Twist Halo                    | 17.6      | Upper | High     | Kettlebell |       |                | 4    | 8    |        | [[Full Body#^7ecf05 \|Lunge Twist Halo]]                | N/A      | 0     | RC    | **17.6** |
+| Overhead Extension                  | 20        | Upper | High     | Dumbbell   |       |                | 4    | 8    |        | [[Upper#^f128a8 \|Overhead Extension]]                  | N/A      | 0     | CM    | **20**   |
+| Around the World                    | 17.6      | Upper | Med      | Kettlebell |       |                | 4    | 8    |        | Around the World                                        | N/A      | 0     | RC    | **17.6** |
+| Arnold Press                        | 20        | Upper | Med      | Dumbbell   |       |                | 4    | 8    |        | [[Full Body#^569c1a \| Arnold Press]]                   | N/A      | 0     | CM    | **10**   |
+| Low Row                             | 88        | Upper | Med      | Fixed      |       |                | 4    | 8    |        | Low Row                                                 | N/A      | 0     | PG    | **88**   |
+| Shoulder Press                      | 20        | Upper | Med      | Dumbbell   |       | Shoulder       | 4    | 8    |        | Shoulder Press                                          | N/A      | 0     | CM    | *10*     |
+| Shoulder Press                      | 40        | Upper | Med      | Fixed      |       | Shoulder       | 4    | 8    |        | Shoulder Press                                          | Narrow   | 0     | CM    | *20*     |
+| Shoulder Press                      | 70        | Upper | Med      | Fixed      |       | Shoulder       | 4    | 8    |        | Shoulder Press                                          | Wide     | 0     | CM    | *35*     |
+| Two Hand Overhead extension         | 0         | Upper | Med      | Cable      |       | Tricep         | 4    | 8    |        | [[Upper#^05b651 \|Two Hand Overhead extension]]         | N/A      | 0     | PG    | **0**    |
+| Cable Woodchopper                   | ***160*** | Upper | Med      | Cable      |       |                | 4    | 8    |        | [[Upper#^a7be5a \|Cable Woodchopper]]                   | N/A      | 0     | RC    | ***80*** |
+| Zercher Squats                      | 50        | Lower | Med      | Barbell    |       |                | 4    | 8    |        | [[Full Body#^765b0b \|Zercher Squats]]                  | N/A      | 0     | CM    | *25*     |
+| Single Arm Clean Press              | 17.6      | Upper | Med      | Kettlebell |       |                | 4    | 8    |        | Single Arm Clean Press                                  | N/A      | 0     | EP    | **17.6** |
+| Kettlebell Snatch                   | 17.6      | Full  | Med      | Kettlebell |       |                | 4    | 8    |        | [[Full Body#^8b48af \|Kettlebell Snatch]]               | N/A      | 0     | EP    | **17.6** |
+| Lateral Raise                       | 10        | Upper | Med      | Bands      |       |                | 4    | 8    |        | [[Upper#^61234b \| Lateral Raise]]                      | N/A      | 0     | CM    | **10**   |
+| Clean to Jerk & Press               | 10        | Full  | Med      | Barbell    |       |                | 4    | 8    |        | [[Full Body#^0c16fd \|Clean to Jerk & Press]]           | N/A      | 0     | EP    | **5**    |
+| Lateral Head Single Arm             | 0         | Upper | Med      | Cable      |       |                | 4    | 8    |        | [[Upper#^88a124 \|Lateral Head Single Arm]]             | N/A      | 0     | CM    | ****     |
+| Cable Curl                          | 0         | Upper | Med      | Cable      |       |                | 4    | 8    |        | [[Upper#^42bc7c \| Cable Curl]]                         | N/A      | 0     | CM    | ****     |
+| Zercher Lunge                       | 20        | Lower | Low      | Barbell    |       |                | 4    | 8    | Push   | [[Full Body#^4b1677\|Zercher Lunge]]                    | N/A      | 0     | CM    | *10*     |
+| Cable Floor Fly                     | ***160*** | Upper | Low      | Cable      |       |                | 4    | 8    |        | [[CableFloorFly.gif \|Cable Floor Fly]]                 | N/A      | 0     | PG    | ***80*** |
+| Cossack Squat                       | 17.6      | Lower | Low      | Kettlebell |       |                | 4    | 8    | Push   | [[Lower#^3ae11e \|Cossack Squat]]                       | N/A      | 0     | CM    | **17.6** |
+| Kettlebell Step-Up                  | 17.6      | Lower | Low      | Kettlebell |       |                | 4    | 8    | Push   | [[Lower#^c9d45f \|Kettlebell Step-Up]]                  | N/A      | 0     | EP    | **17.6** |
+| Leg Cable Reverse Crunch            | 90        | Core  | Low      | Cable      |       |                | 4    | 8    |        | [[Core#^b41212\| Leg Cable Reverse Crunch]]             | N/A      | 0     | RC    | *45*     |
+| Angled Leg Press                    | 360       | Lower | Low      | Fixed      |       |                | 4    | 8    |        | Angled Leg Press                                        | WTCH     | 0     | CM    | *180*    |
+| Leg Press Seated                    | 110       | Lower | Low      | Fixed      |       |                | 4    | 8    |        | Leg Press Seated                                        | UpClose  | 0     | CM    | **110**  |
+| Leg Press off Back G&H              | 270       | Lower | Low      | Fixed      |       |                | 4    | 8    |        | Leg Press off Back G&H                                  | Heals    | 0     | CM    | *135*    |
+| Leg Press off Back Quads            | 540       | Lower | Low      | Fixed      |       |                | 4    | 8    |        | Leg Press off Back Quads                                | Close    | 0     | CM    | *270*    |
+| Leg Press off Back Abductor         | 540       | Lower | Low      | Fixed      |       |                | 4    | 8    |        | Leg Press off Back Abductor                             | Wide     | 0     | CM    | *270*    |
+| Leg Press off Back Calf             | 270       | Lower | Low      | Fixed      |       |                | 4    | 8    |        | Leg Press off Back Calf                                 | Toes     | 0     | CM    | *135*    |
+| Romanian Deadlift                   | 20        | Lower | Lowest   | Barbell    |       |                | 4    | 8    | Pull   | [[Lower#^308171 \|Romanian Deadlift]]                   | N/A      | 0     | CM    | *10*     |
 ^all
+
 
