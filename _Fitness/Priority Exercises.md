@@ -99,7 +99,7 @@ Inhale on on **Eccentric** when lowering the weight and exhale on **Concentric**
 ### Start  Dynamic End Static
 
 #### **Warm-Up (RAMP Protocol)**
-Duck walk
+Do Duck walks it overlaps with multiple of these categories.
 - **Raise**: 
 	- Rower
 	- Jump rope
@@ -107,10 +107,13 @@ Duck walk
 	- High knees
 	- Butt kicks
 	- Arm circles (large & fast)
+	- Pike Pushup
 	- [[Core#^60b781 |Tuck Jumps to Plank]]
 	- Fast-paced shadowboxing
 - **Activate**: 
 	- Glute bridges
+	- Superman hold
+	- Calf Raise
 	- Quadruped kickbacks
 	- Plyometric Plank with Shoulder Tap
 	- Hold push-up extended & unextended
@@ -333,8 +336,6 @@ color purple
     - **Examples**: Isolation lifts, machine work, burnout sets
 
 ---
-
-
 
 
 
