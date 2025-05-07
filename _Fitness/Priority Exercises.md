@@ -225,7 +225,7 @@ color purple
 #todo/BAU/Workout 
 - [ ] Start Using O2 trainer again for diaphragmatic breathing
 	- Try using during cold baths but first maybe try before or after bath.
-- [ ] Cold Bath max 20 minutes assuming warm start first if not lesser by end of May start cold fully and use 60 BPM(Beats Per Minute) metronome.
+- [ ] Cold Bath max 20 minutes to help regulate nervous system assuming warm start first if not lesser by end of May start cold fully and while listening to 60 BPM(Beats Per Minute) metronome.
 	- Maybe switch to back to warm start or cold showers in the fall at a lower frequency.
 	- But if Cold start about 3 min total.
 - [ ] Sparring on Sunday
