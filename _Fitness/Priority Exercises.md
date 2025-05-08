@@ -192,6 +192,7 @@ color purple
 
 
 #todo/BAU/Workout
+- [ ] Goal is 4 sets 8 reps update current sets and reps for exercises at CM Phase
 - [ ] Dead Hang at BK-MMA
 - [ ] Pick rest day each week
 - [ ] Pick 2 days out of the week to cook also can budget out two days out of the week to eat out.
