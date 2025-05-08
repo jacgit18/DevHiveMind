@@ -196,7 +196,7 @@ color purple
 - [ ] Dead Hang at BK-MMA
 - [ ] Pick rest day each week
 - [ ] Do Controlled Explosive Burpee
-- [ ] Do [[Grip Strength Training]] every day
+- [x] Do [[Grip Strength Training]] every day ✅ 2025-05-08
 - [ ] Use wide grip for pull up machine dip
 - [ ] Anything Zercher same under arm grip
 - [ ] Eventually cycle in [[Resistance Band Workout]] 
