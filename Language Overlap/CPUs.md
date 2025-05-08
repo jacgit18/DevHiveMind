@@ -52,7 +52,7 @@ Multiprocessing is good for scaling up to be used on multiple machines and can
 ![[1718947920180.gif]]
 
 
-#todo/Personal/Med/Dev 
+#todo/Med/Dev 
 - [ ] shorten answers
 
 ## Flashcard

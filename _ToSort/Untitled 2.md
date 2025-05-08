@@ -15,7 +15,15 @@ dg-publish:
 ![[Pasted image 20240620142902.png]]
 
 
-![[Pasted image 20240620142912.png]]
+
+
+```mermaid
+graph TD;
+    Customer -- Places --> Order;
+    Customer -- Adds items --> ShoppingCart;
+    Order -- Paid by --> Payment;
+```
+
 
 View > Component > Modules > Interfaces
 

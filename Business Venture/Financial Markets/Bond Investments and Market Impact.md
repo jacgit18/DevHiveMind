@@ -94,7 +94,7 @@ Bond ETFs are seen as more volatile due to fluctuating market prices, making the
 **Key Differences:**  
 - Treasury bonds are a specific type of U.S. government bond, while "government bonds" cover a wider range of debt instruments.
 
-#todo/High/refineThought 
+#todo/BAU/noteRefine  
 - [ ] refine and  merge 
 - [ ] look into a little more 
 	- [ ] Annuities and bonds options  

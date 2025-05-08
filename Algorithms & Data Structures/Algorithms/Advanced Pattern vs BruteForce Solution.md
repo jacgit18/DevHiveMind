@@ -45,6 +45,8 @@ function sortedSquaredArray(array) {
   return newArray;
 }
 
+console.log(sortedSquaredArray([1,2,3]))
+
 ```
 
 ```javascript

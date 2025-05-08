@@ -8299,7 +8299,3469 @@
       },
       "active": "62d2738c8ec9ae78",
       "mtime": "2025-01-07T14:29:54-05:00"
+    },
+    "Tower 200": {
+      "main": {
+        "id": "5324373015726ba8",
+        "type": "split",
+        "children": [
+          {
+            "id": "4509724f8bf84da7",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "0c75ac475da4eeb8",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "_Fitness/Gym/Core.md",
+                    "mode": "preview",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "Core"
+                }
+              },
+              {
+                "id": "5c3c1e282cb29f0e",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "_Fitness/Gym/Upper.md",
+                    "mode": "preview",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "Upper"
+                }
+              }
+            ]
+          },
+          {
+            "id": "ffd0b03b385ce4ff",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "7815a5e3e3d1d436",
+                "type": "leaf",
+                "state": {
+                  "type": "image",
+                  "state": {
+                    "file": "_Fitness/Exercise Visuals/CableWolverine.gif"
+                  },
+                  "icon": "lucide-image",
+                  "title": "CableWolverine"
+                }
+              },
+              {
+                "id": "5ecc0aa593ec5af6",
+                "type": "leaf",
+                "state": {
+                  "type": "image",
+                  "state": {
+                    "file": "_Fitness/Exercise Visuals/CableBalloonAbduction.gif"
+                  },
+                  "icon": "lucide-image",
+                  "title": "CableBalloonAbduction"
+                }
+              },
+              {
+                "id": "4b51dcbe8ed68121",
+                "type": "leaf",
+                "state": {
+                  "type": "image",
+                  "state": {
+                    "file": "_Fitness/Exercise Visuals/CableFloorFly.gif"
+                  },
+                  "icon": "lucide-image",
+                  "title": "CableFloorFly"
+                }
+              }
+            ]
+          }
+        ],
+        "direction": "vertical"
+      },
+      "left": {
+        "id": "25d07a4f8307e30a",
+        "type": "split",
+        "children": [
+          {
+            "id": "0ee18ba8f838b73c",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "62d2738c8ec9ae78",
+                "type": "leaf",
+                "state": {
+                  "type": "file-explorer",
+                  "state": {
+                    "sortOrder": "alphabetical"
+                  },
+                  "icon": "lucide-folder-closed",
+                  "title": "Files"
+                }
+              },
+              {
+                "id": "381a89071adb230b",
+                "type": "leaf",
+                "state": {
+                  "type": "search",
+                  "state": {
+                    "query": "tag:#CapitalOne  ",
+                    "matchingCase": false,
+                    "explainSearch": false,
+                    "collapseAll": false,
+                    "extraContext": false,
+                    "sortOrder": "alphabetical"
+                  },
+                  "icon": "lucide-search",
+                  "title": "Search"
+                }
+              },
+              {
+                "id": "e12d4e2fc2bb5ad2",
+                "type": "leaf",
+                "state": {
+                  "type": "bookmarks",
+                  "state": {},
+                  "icon": "lucide-bookmark",
+                  "title": "Bookmarks"
+                }
+              }
+            ]
+          }
+        ],
+        "direction": "horizontal",
+        "width": 366.5
+      },
+      "right": {
+        "id": "b5ea247522179402",
+        "type": "split",
+        "children": [
+          {
+            "id": "83e776fc6ed87418",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "71a2a86b225196f6",
+                "type": "leaf",
+                "state": {
+                  "type": "backlink",
+                  "state": {
+                    "file": "Home Dashboard.md",
+                    "collapseAll": false,
+                    "extraContext": false,
+                    "sortOrder": "alphabetical",
+                    "showSearch": false,
+                    "searchQuery": "",
+                    "backlinkCollapsed": false,
+                    "unlinkedCollapsed": true
+                  },
+                  "icon": "links-coming-in",
+                  "title": "Backlinks for Home Dashboard"
+                }
+              },
+              {
+                "id": "ac6ff17f4c3cbb25",
+                "type": "leaf",
+                "state": {
+                  "type": "outgoing-link",
+                  "state": {
+                    "file": "Home Dashboard.md",
+                    "linksCollapsed": false,
+                    "unlinkedCollapsed": true
+                  },
+                  "icon": "links-going-out",
+                  "title": "Outgoing links from Home Dashboard"
+                }
+              },
+              {
+                "id": "8c3a0e2d9aae24e2",
+                "type": "leaf",
+                "state": {
+                  "type": "tag",
+                  "state": {
+                    "sortOrder": "frequency",
+                    "useHierarchy": true
+                  },
+                  "icon": "lucide-tags",
+                  "title": "Tags"
+                }
+              },
+              {
+                "id": "442323dcd9dfef22",
+                "type": "leaf",
+                "state": {
+                  "type": "outline",
+                  "state": {
+                    "file": "Devops/Bash vs ZSH.md"
+                  },
+                  "icon": "lucide-list",
+                  "title": "Outline of Bash vs ZSH"
+                }
+              },
+              {
+                "id": "d64fc540a9faff39",
+                "type": "leaf",
+                "state": {
+                  "type": "Strange New Worlds",
+                  "state": {},
+                  "icon": "file-digit",
+                  "title": "Strange New Worlds"
+                }
+              },
+              {
+                "id": "7159a69de638fd57",
+                "type": "leaf",
+                "state": {
+                  "type": "podcast_player_view",
+                  "state": {},
+                  "icon": "play-circle",
+                  "title": "Podcast Player"
+                }
+              },
+              {
+                "id": "32979ed8fe27c039",
+                "type": "leaf",
+                "state": {
+                  "type": "calendar",
+                  "state": {},
+                  "icon": "calendar-with-checkmark",
+                  "title": "Calendar"
+                }
+              },
+              {
+                "id": "5493e04468ddac9b",
+                "type": "leaf",
+                "state": {
+                  "type": "all-properties",
+                  "state": {
+                    "sortOrder": "frequency",
+                    "showSearch": false,
+                    "searchQuery": ""
+                  },
+                  "icon": "lucide-archive",
+                  "title": "All properties"
+                }
+              },
+              {
+                "id": "e794f1fda7c1a1f5",
+                "type": "leaf",
+                "state": {
+                  "type": "file-properties",
+                  "state": {
+                    "file": "Business Venture/Health Vision Dental Insurance.md"
+                  },
+                  "icon": "lucide-info",
+                  "title": "File properties for Health Vision Dental Insurance"
+                }
+              },
+              {
+                "id": "dc7da57f42f09ec1",
+                "type": "leaf",
+                "state": {
+                  "type": "reminder-list",
+                  "state": {},
+                  "icon": "clock",
+                  "title": "Reminders"
+                }
+              },
+              {
+                "id": "a22df37d3819fcdc",
+                "type": "leaf",
+                "state": {
+                  "type": "copilot-chat-view",
+                  "state": {},
+                  "icon": "message-square",
+                  "title": "Copilot"
+                }
+              },
+              {
+                "id": "cc7d551b3d2df816",
+                "type": "leaf",
+                "state": {
+                  "type": "todo",
+                  "state": {},
+                  "icon": "checkmark",
+                  "title": "Todo List"
+                }
+              },
+              {
+                "id": "2ba4bcfe7c65e1d8",
+                "type": "leaf",
+                "state": {
+                  "type": "git-view",
+                  "state": {},
+                  "icon": "git-pull-request",
+                  "title": "Source Control"
+                }
+              }
+            ],
+            "currentTab": 12
+          }
+        ],
+        "direction": "horizontal",
+        "width": 200,
+        "collapsed": true
+      },
+      "left-ribbon": {
+        "hiddenItems": {
+          "sheet-plus:Create excel file": false,
+          "obsidian-read-it-later:ReadItLater: Create from clipboard": false,
+          "homepage:Open homepage": false,
+          "obsidian-git:Open Git source control": false,
+          "switcher:Open quick switcher": false,
+          "graph:Open graph view": false,
+          "canvas:Create new canvas": false,
+          "daily-notes:Open today's daily note": false,
+          "templates:Insert template": false,
+          "command-palette:Open command palette": false,
+          "markdown-importer:Open format converter": false,
+          "audio-recorder:Start/stop recording": false,
+          "workspaces:Manage workspace layouts": false,
+          "templater-obsidian:Templater": false,
+          "obsidian-spaced-repetition:Review flashcards": false,
+          "obsidian-rich-links:Rich Links": false,
+          "darlal-switcher-plus:Open in Headings Mode": false,
+          "darlal-switcher-plus:Open Symbols for the active editor": false,
+          "obsidian-projects:Open projects": false,
+          "obsidian-kanban:Create new board": false,
+          "janitor:Janitor: scan vault": false,
+          "digitalgarden:Digital Garden Publication Center": false,
+          "obsidian-book-search-plugin:Create new book note": false,
+          "table-editor-obsidian:Advanced Tables Toolbar": false,
+          "obsidian-advanced-slides:Show Slide Preview": false,
+          "obsidian-excalidraw-plugin:Create new drawing": false,
+          "obsidian42-brat:BRAT": false,
+          "copilot:Open Copilot Chat": false,
+          "periodic-notes:Open today": false,
+          "card-board:CardBoard": false
+        }
+      },
+      "active": "0c75ac475da4eeb8",
+      "mtime": "2025-01-09T18:09:23-05:00"
+    },
+    "refinementTags": {
+      "main": {
+        "id": "5324373015726ba8",
+        "type": "split",
+        "children": [
+          {
+            "id": "4509724f8bf84da7",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "e7a7b303c61786dc",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "_NoteAssets/_Financial Glossary.md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "_Financial Glossary"
+                }
+              },
+              {
+                "id": "8b081e122afc1a53",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Companies/Companies Worked At/Capital One/Capital One Stats.md",
+                    "mode": "preview",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "Capital One Stats"
+                }
+              }
+            ]
+          },
+          {
+            "id": "adf7f08bb499eff3",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "2d620bc28c6226c2",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Business Venture/Financial Markets/Bond Investments and Market Impact.md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "Bond Investments and Market Impact"
+                }
+              },
+              {
+                "id": "ad9353124e3bb371",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Language Overlap/Classes/Access Modifiers.md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "Access Modifiers"
+                }
+              }
+            ],
+            "currentTab": 1
+          }
+        ],
+        "direction": "vertical"
+      },
+      "left": {
+        "id": "25d07a4f8307e30a",
+        "type": "split",
+        "children": [
+          {
+            "id": "0ee18ba8f838b73c",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "62d2738c8ec9ae78",
+                "type": "leaf",
+                "state": {
+                  "type": "file-explorer",
+                  "state": {
+                    "sortOrder": "alphabetical"
+                  },
+                  "icon": "lucide-folder-closed",
+                  "title": "Files"
+                }
+              },
+              {
+                "id": "381a89071adb230b",
+                "type": "leaf",
+                "state": {
+                  "type": "search",
+                  "state": {
+                    "query": "refine",
+                    "matchingCase": false,
+                    "explainSearch": false,
+                    "collapseAll": false,
+                    "extraContext": false,
+                    "sortOrder": "alphabetical"
+                  },
+                  "icon": "lucide-search",
+                  "title": "Search"
+                }
+              },
+              {
+                "id": "e12d4e2fc2bb5ad2",
+                "type": "leaf",
+                "state": {
+                  "type": "bookmarks",
+                  "state": {},
+                  "icon": "lucide-bookmark",
+                  "title": "Bookmarks"
+                }
+              }
+            ],
+            "currentTab": 1
+          }
+        ],
+        "direction": "horizontal",
+        "width": 363.5110321044922
+      },
+      "right": {
+        "id": "b5ea247522179402",
+        "type": "split",
+        "children": [
+          {
+            "id": "83e776fc6ed87418",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "71a2a86b225196f6",
+                "type": "leaf",
+                "state": {
+                  "type": "backlink",
+                  "state": {
+                    "file": "Home Dashboard.md",
+                    "collapseAll": false,
+                    "extraContext": false,
+                    "sortOrder": "alphabetical",
+                    "showSearch": false,
+                    "searchQuery": "",
+                    "backlinkCollapsed": false,
+                    "unlinkedCollapsed": true
+                  },
+                  "icon": "links-coming-in",
+                  "title": "Backlinks for Home Dashboard"
+                }
+              },
+              {
+                "id": "ac6ff17f4c3cbb25",
+                "type": "leaf",
+                "state": {
+                  "type": "outgoing-link",
+                  "state": {
+                    "file": "Home Dashboard.md",
+                    "linksCollapsed": false,
+                    "unlinkedCollapsed": true
+                  },
+                  "icon": "links-going-out",
+                  "title": "Outgoing links from Home Dashboard"
+                }
+              },
+              {
+                "id": "8c3a0e2d9aae24e2",
+                "type": "leaf",
+                "state": {
+                  "type": "tag",
+                  "state": {
+                    "sortOrder": "frequency",
+                    "useHierarchy": true
+                  },
+                  "icon": "lucide-tags",
+                  "title": "Tags"
+                }
+              },
+              {
+                "id": "442323dcd9dfef22",
+                "type": "leaf",
+                "state": {
+                  "type": "outline",
+                  "state": {
+                    "file": "Devops/Bash vs ZSH.md"
+                  },
+                  "icon": "lucide-list",
+                  "title": "Outline of Bash vs ZSH"
+                }
+              },
+              {
+                "id": "d64fc540a9faff39",
+                "type": "leaf",
+                "state": {
+                  "type": "Strange New Worlds",
+                  "state": {},
+                  "icon": "file-digit",
+                  "title": "Strange New Worlds"
+                }
+              },
+              {
+                "id": "7159a69de638fd57",
+                "type": "leaf",
+                "state": {
+                  "type": "podcast_player_view",
+                  "state": {},
+                  "icon": "play-circle",
+                  "title": "Podcast Player"
+                }
+              },
+              {
+                "id": "32979ed8fe27c039",
+                "type": "leaf",
+                "state": {
+                  "type": "calendar",
+                  "state": {},
+                  "icon": "calendar-with-checkmark",
+                  "title": "Calendar"
+                }
+              },
+              {
+                "id": "5493e04468ddac9b",
+                "type": "leaf",
+                "state": {
+                  "type": "all-properties",
+                  "state": {
+                    "sortOrder": "frequency",
+                    "showSearch": false,
+                    "searchQuery": ""
+                  },
+                  "icon": "lucide-archive",
+                  "title": "All properties"
+                }
+              },
+              {
+                "id": "e794f1fda7c1a1f5",
+                "type": "leaf",
+                "state": {
+                  "type": "file-properties",
+                  "state": {
+                    "file": "Language Overlap/Classes/Access Modifiers.md"
+                  },
+                  "icon": "lucide-info",
+                  "title": "File properties for Access Modifiers"
+                }
+              },
+              {
+                "id": "119408eca5171204",
+                "type": "leaf",
+                "state": {
+                  "type": "reminder-list",
+                  "state": {},
+                  "icon": "clock",
+                  "title": "Reminders"
+                }
+              },
+              {
+                "id": "ccc14a9fa54b368e",
+                "type": "leaf",
+                "state": {
+                  "type": "git-view",
+                  "state": {},
+                  "icon": "git-pull-request",
+                  "title": "Source Control"
+                }
+              },
+              {
+                "id": "b3cfc2653a5cba01",
+                "type": "leaf",
+                "state": {
+                  "type": "todo",
+                  "state": {},
+                  "icon": "checkmark",
+                  "title": "Todo List"
+                }
+              }
+            ],
+            "currentTab": 8
+          }
+        ],
+        "direction": "horizontal",
+        "width": 354.5
+      },
+      "left-ribbon": {
+        "hiddenItems": {
+          "obsidian-markdown-formatting-assistant-plugin:Open Markdown Formatting Assistant": false,
+          "obsidian-read-it-later:ReadItLater: Create from clipboard": false,
+          "homepage:Open homepage": false,
+          "obsidian-git:Open Git source control": false,
+          "switcher:Open quick switcher": false,
+          "graph:Open graph view": false,
+          "canvas:Create new canvas": false,
+          "daily-notes:Open today's daily note": false,
+          "templates:Insert template": false,
+          "command-palette:Open command palette": false,
+          "markdown-importer:Open format converter": false,
+          "audio-recorder:Start/stop recording": false,
+          "workspaces:Manage workspace layouts": false,
+          "templater-obsidian:Templater": false,
+          "obsidian-spaced-repetition:Review flashcards": false,
+          "obsidian-rich-links:Rich Links": false,
+          "darlal-switcher-plus:Open in Headings Mode": false,
+          "darlal-switcher-plus:Open Symbols for the active editor": false,
+          "obsidian-projects:Open projects": false,
+          "obsidian-kanban:Create new board": false,
+          "janitor:Janitor: scan vault": false,
+          "digitalgarden:Digital Garden Publication Center": false,
+          "obsidian-book-search-plugin:Create new book note": false,
+          "table-editor-obsidian:Advanced Tables Toolbar": false,
+          "obsidian-advanced-slides:Show Slide Preview": false,
+          "obsidian-excalidraw-plugin:Create new drawing": false,
+          "obsidian42-brat:BRAT": false,
+          "sheet-plus:Create excel file": false,
+          "mermaid-tools:Open Mermaid Toolbar": false,
+          "periodic-notes:Open today": false,
+          "card-board:CardBoard": false
+        }
+      },
+      "active": "ad9353124e3bb371",
+      "mtime": "2025-01-17T02:32:40-05:00"
+    },
+    "gjgg": {
+      "main": {
+        "id": "5324373015726ba8",
+        "type": "split",
+        "children": [
+          {
+            "id": "4509724f8bf84da7",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "e7a7b303c61786dc",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Companies/Companies Worked At/Capital One/OneStream Notes.md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "OneStream Notes"
+                }
+              },
+              {
+                "id": "162a78735c9fb623",
+                "type": "leaf",
+                "state": {
+                  "type": "excalidraw",
+                  "state": {
+                    "file": "Architecture/01. System Design/System Design Thought Process Flow.md"
+                  },
+                  "icon": "excalidraw-icon",
+                  "title": "System Design Thought Process Flow"
+                }
+              },
+              {
+                "id": "3be58e86e1d620e5",
+                "type": "leaf",
+                "state": {
+                  "type": "excalidraw",
+                  "state": {
+                    "file": "_NoteAssets/Template/_System Design Template.md"
+                  },
+                  "icon": "excalidraw-icon",
+                  "title": "_System Design Template"
+                }
+              },
+              {
+                "id": "f0cfe7762e43175b",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "_NoteAssets/Template/_System Design Template with Dataview 1.md",
+                    "mode": "preview",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "_System Design Template with Dataview 1"
+                }
+              },
+              {
+                "id": "e75e095ef00bf210",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "_NoteAssets/Template/_System Design Template with Dataview 1 1.md",
+                    "mode": "preview",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "_System Design Template with Dataview 1 1"
+                }
+              },
+              {
+                "id": "915b2f56fa87df97",
+                "type": "leaf",
+                "state": {
+                  "type": "excalidraw",
+                  "state": {
+                    "file": "Architecture/01. System Design/Questions/Designing YouTube Recommendation Engine.md"
+                  },
+                  "icon": "excalidraw-icon",
+                  "title": "Designing YouTube Recommendation Engine"
+                }
+              }
+            ]
+          }
+        ],
+        "direction": "vertical"
+      },
+      "left": {
+        "id": "25d07a4f8307e30a",
+        "type": "split",
+        "children": [
+          {
+            "id": "0ee18ba8f838b73c",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "62d2738c8ec9ae78",
+                "type": "leaf",
+                "state": {
+                  "type": "file-explorer",
+                  "state": {
+                    "sortOrder": "alphabetical"
+                  },
+                  "icon": "lucide-folder-closed",
+                  "title": "Files"
+                }
+              },
+              {
+                "id": "381a89071adb230b",
+                "type": "leaf",
+                "state": {
+                  "type": "search",
+                  "state": {
+                    "query": "finance calculat",
+                    "matchingCase": false,
+                    "explainSearch": false,
+                    "collapseAll": true,
+                    "extraContext": false,
+                    "sortOrder": "alphabetical"
+                  },
+                  "icon": "lucide-search",
+                  "title": "Search"
+                }
+              },
+              {
+                "id": "e12d4e2fc2bb5ad2",
+                "type": "leaf",
+                "state": {
+                  "type": "bookmarks",
+                  "state": {},
+                  "icon": "lucide-bookmark",
+                  "title": "Bookmarks"
+                }
+              }
+            ]
+          }
+        ],
+        "direction": "horizontal",
+        "width": 447.5
+      },
+      "right": {
+        "id": "b5ea247522179402",
+        "type": "split",
+        "children": [
+          {
+            "id": "83e776fc6ed87418",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "71a2a86b225196f6",
+                "type": "leaf",
+                "state": {
+                  "type": "backlink",
+                  "state": {
+                    "file": "Home Dashboard.md",
+                    "collapseAll": false,
+                    "extraContext": false,
+                    "sortOrder": "alphabetical",
+                    "showSearch": false,
+                    "searchQuery": "",
+                    "backlinkCollapsed": false,
+                    "unlinkedCollapsed": true
+                  },
+                  "icon": "links-coming-in",
+                  "title": "Backlinks for Home Dashboard"
+                }
+              },
+              {
+                "id": "ac6ff17f4c3cbb25",
+                "type": "leaf",
+                "state": {
+                  "type": "outgoing-link",
+                  "state": {
+                    "file": "Home Dashboard.md",
+                    "linksCollapsed": false,
+                    "unlinkedCollapsed": true
+                  },
+                  "icon": "links-going-out",
+                  "title": "Outgoing links from Home Dashboard"
+                }
+              },
+              {
+                "id": "8c3a0e2d9aae24e2",
+                "type": "leaf",
+                "state": {
+                  "type": "tag",
+                  "state": {
+                    "sortOrder": "frequency",
+                    "useHierarchy": true
+                  },
+                  "icon": "lucide-tags",
+                  "title": "Tags"
+                }
+              },
+              {
+                "id": "442323dcd9dfef22",
+                "type": "leaf",
+                "state": {
+                  "type": "outline",
+                  "state": {
+                    "file": "Devops/Bash vs ZSH.md"
+                  },
+                  "icon": "lucide-list",
+                  "title": "Outline of Bash vs ZSH"
+                }
+              },
+              {
+                "id": "d64fc540a9faff39",
+                "type": "leaf",
+                "state": {
+                  "type": "Strange New Worlds",
+                  "state": {},
+                  "icon": "file-digit",
+                  "title": "Strange New Worlds"
+                }
+              },
+              {
+                "id": "7159a69de638fd57",
+                "type": "leaf",
+                "state": {
+                  "type": "podcast_player_view",
+                  "state": {},
+                  "icon": "play-circle",
+                  "title": "Podcast Player"
+                }
+              },
+              {
+                "id": "32979ed8fe27c039",
+                "type": "leaf",
+                "state": {
+                  "type": "calendar",
+                  "state": {},
+                  "icon": "calendar-with-checkmark",
+                  "title": "Calendar"
+                }
+              },
+              {
+                "id": "5493e04468ddac9b",
+                "type": "leaf",
+                "state": {
+                  "type": "all-properties",
+                  "state": {
+                    "sortOrder": "frequency",
+                    "showSearch": false,
+                    "searchQuery": ""
+                  },
+                  "icon": "lucide-archive",
+                  "title": "All properties"
+                }
+              },
+              {
+                "id": "e794f1fda7c1a1f5",
+                "type": "leaf",
+                "state": {
+                  "type": "file-properties",
+                  "state": {
+                    "file": "Companies/Companies Worked At/Capital One/OneStream Notes.md"
+                  },
+                  "icon": "lucide-info",
+                  "title": "File properties for OneStream Notes"
+                }
+              },
+              {
+                "id": "dc7da57f42f09ec1",
+                "type": "leaf",
+                "state": {
+                  "type": "reminder-list",
+                  "state": {},
+                  "icon": "clock",
+                  "title": "Reminders"
+                }
+              },
+              {
+                "id": "cc7d551b3d2df816",
+                "type": "leaf",
+                "state": {
+                  "type": "todo",
+                  "state": {},
+                  "icon": "checkmark",
+                  "title": "Todo List"
+                }
+              },
+              {
+                "id": "2ba4bcfe7c65e1d8",
+                "type": "leaf",
+                "state": {
+                  "type": "git-view",
+                  "state": {},
+                  "icon": "git-pull-request",
+                  "title": "Source Control"
+                }
+              }
+            ],
+            "currentTab": 8
+          }
+        ],
+        "direction": "horizontal",
+        "width": 385.5
+      },
+      "left-ribbon": {
+        "hiddenItems": {
+          "obsidian-markdown-formatting-assistant-plugin:Open Markdown Formatting Assistant": false,
+          "sheet-plus:Create excel file": false,
+          "obsidian-read-it-later:ReadItLater: Create from clipboard": false,
+          "homepage:Open homepage": false,
+          "obsidian-git:Open Git source control": false,
+          "switcher:Open quick switcher": false,
+          "graph:Open graph view": false,
+          "canvas:Create new canvas": false,
+          "daily-notes:Open today's daily note": false,
+          "templates:Insert template": false,
+          "command-palette:Open command palette": false,
+          "markdown-importer:Open format converter": false,
+          "audio-recorder:Start/stop recording": false,
+          "workspaces:Manage workspace layouts": false,
+          "templater-obsidian:Templater": false,
+          "obsidian-spaced-repetition:Review flashcards": false,
+          "obsidian-rich-links:Rich Links": false,
+          "darlal-switcher-plus:Open in Headings Mode": false,
+          "darlal-switcher-plus:Open Symbols for the active editor": false,
+          "obsidian-projects:Open projects": false,
+          "obsidian-kanban:Create new board": false,
+          "janitor:Janitor: scan vault": false,
+          "digitalgarden:Digital Garden Publication Center": false,
+          "obsidian-book-search-plugin:Create new book note": false,
+          "table-editor-obsidian:Advanced Tables Toolbar": false,
+          "obsidian-advanced-slides:Show Slide Preview": false,
+          "obsidian-excalidraw-plugin:Create new drawing": false,
+          "obsidian42-brat:BRAT": false,
+          "mermaid-tools:Open Mermaid Toolbar": false,
+          "periodic-notes:Open today": false,
+          "card-board:CardBoard": false
+        }
+      },
+      "active": "e7a7b303c61786dc",
+      "mtime": "2025-01-24T16:20:15-05:00"
+    },
+    "buibiu": {
+      "main": {
+        "id": "5324373015726ba8",
+        "type": "split",
+        "children": [
+          {
+            "id": "4509724f8bf84da7",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "e7a7b303c61786dc",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "_Fitness/Striking Approach.md",
+                    "mode": "preview",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "Striking Approach"
+                }
+              },
+              {
+                "id": "b58263d620335511",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "_Fitness/MMA/Striking/Striking Fluidity.md",
+                    "mode": "preview",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "Striking Fluidity"
+                }
+              },
+              {
+                "id": "07b9de7daf810c5b",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "_Fitness/MMA/Striking/Stance Fundamentals.md",
+                    "mode": "preview",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "Stance Fundamentals"
+                }
+              }
+            ],
+            "currentTab": 1
+          },
+          {
+            "id": "397ab2b3aaf57d30",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "7d3e8eee64d97524",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "_Fitness/MMA/Striking/Strike Selection.md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "Strike Selection"
+                }
+              },
+              {
+                "id": "3989d00ea3647043",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "_Fitness/MMA/Striking/Orthodox vs Southpaw.md",
+                    "mode": "preview",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "Orthodox vs Southpaw"
+                }
+              },
+              {
+                "id": "341272139d411c13",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "_Fitness/MMA/Striking/Weakness in Striking.md",
+                    "mode": "preview",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "Weakness in Striking"
+                }
+              }
+            ]
+          }
+        ],
+        "direction": "vertical"
+      },
+      "left": {
+        "id": "25d07a4f8307e30a",
+        "type": "split",
+        "children": [
+          {
+            "id": "0ee18ba8f838b73c",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "62d2738c8ec9ae78",
+                "type": "leaf",
+                "state": {
+                  "type": "file-explorer",
+                  "state": {
+                    "sortOrder": "alphabetical",
+                    "autoReveal": false
+                  },
+                  "icon": "lucide-folder-closed",
+                  "title": "Files"
+                }
+              },
+              {
+                "id": "381a89071adb230b",
+                "type": "leaf",
+                "state": {
+                  "type": "search",
+                  "state": {
+                    "query": "opposite",
+                    "matchingCase": false,
+                    "explainSearch": false,
+                    "collapseAll": false,
+                    "extraContext": false,
+                    "sortOrder": "alphabetical"
+                  },
+                  "icon": "lucide-search",
+                  "title": "Search"
+                }
+              },
+              {
+                "id": "e12d4e2fc2bb5ad2",
+                "type": "leaf",
+                "state": {
+                  "type": "bookmarks",
+                  "state": {},
+                  "icon": "lucide-bookmark",
+                  "title": "Bookmarks"
+                }
+              }
+            ]
+          }
+        ],
+        "direction": "horizontal",
+        "width": 363.5110321044922
+      },
+      "right": {
+        "id": "b5ea247522179402",
+        "type": "split",
+        "children": [
+          {
+            "id": "83e776fc6ed87418",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "71a2a86b225196f6",
+                "type": "leaf",
+                "state": {
+                  "type": "backlink",
+                  "state": {
+                    "file": "Home Dashboard.md",
+                    "collapseAll": false,
+                    "extraContext": false,
+                    "sortOrder": "alphabetical",
+                    "showSearch": false,
+                    "searchQuery": "",
+                    "backlinkCollapsed": false,
+                    "unlinkedCollapsed": true
+                  },
+                  "icon": "links-coming-in",
+                  "title": "Backlinks for Home Dashboard"
+                }
+              },
+              {
+                "id": "ac6ff17f4c3cbb25",
+                "type": "leaf",
+                "state": {
+                  "type": "outgoing-link",
+                  "state": {
+                    "file": "Home Dashboard.md",
+                    "linksCollapsed": false,
+                    "unlinkedCollapsed": true
+                  },
+                  "icon": "links-going-out",
+                  "title": "Outgoing links from Home Dashboard"
+                }
+              },
+              {
+                "id": "8c3a0e2d9aae24e2",
+                "type": "leaf",
+                "state": {
+                  "type": "tag",
+                  "state": {
+                    "sortOrder": "frequency",
+                    "useHierarchy": true
+                  },
+                  "icon": "lucide-tags",
+                  "title": "Tags"
+                }
+              },
+              {
+                "id": "442323dcd9dfef22",
+                "type": "leaf",
+                "state": {
+                  "type": "outline",
+                  "state": {
+                    "file": "Devops/Bash vs ZSH.md"
+                  },
+                  "icon": "lucide-list",
+                  "title": "Outline of Bash vs ZSH"
+                }
+              },
+              {
+                "id": "d64fc540a9faff39",
+                "type": "leaf",
+                "state": {
+                  "type": "Strange New Worlds",
+                  "state": {},
+                  "icon": "file-digit",
+                  "title": "Strange New Worlds"
+                }
+              },
+              {
+                "id": "7159a69de638fd57",
+                "type": "leaf",
+                "state": {
+                  "type": "podcast_player_view",
+                  "state": {},
+                  "icon": "play-circle",
+                  "title": "Podcast Player"
+                }
+              },
+              {
+                "id": "32979ed8fe27c039",
+                "type": "leaf",
+                "state": {
+                  "type": "calendar",
+                  "state": {},
+                  "icon": "calendar-with-checkmark",
+                  "title": "Calendar"
+                }
+              },
+              {
+                "id": "5493e04468ddac9b",
+                "type": "leaf",
+                "state": {
+                  "type": "all-properties",
+                  "state": {
+                    "sortOrder": "frequency",
+                    "showSearch": false,
+                    "searchQuery": ""
+                  },
+                  "icon": "lucide-archive",
+                  "title": "All properties"
+                }
+              },
+              {
+                "id": "e794f1fda7c1a1f5",
+                "type": "leaf",
+                "state": {
+                  "type": "file-properties",
+                  "state": {
+                    "file": "Daily Priority.md"
+                  },
+                  "icon": "lucide-info",
+                  "title": "File properties for Daily Priority"
+                }
+              },
+              {
+                "id": "119408eca5171204",
+                "type": "leaf",
+                "state": {
+                  "type": "reminder-list",
+                  "state": {},
+                  "icon": "clock",
+                  "title": "Reminders"
+                }
+              },
+              {
+                "id": "ccc14a9fa54b368e",
+                "type": "leaf",
+                "state": {
+                  "type": "git-view",
+                  "state": {},
+                  "icon": "git-pull-request",
+                  "title": "Source Control"
+                }
+              },
+              {
+                "id": "b3cfc2653a5cba01",
+                "type": "leaf",
+                "state": {
+                  "type": "todo",
+                  "state": {},
+                  "icon": "checkmark",
+                  "title": "Todo List"
+                }
+              },
+              {
+                "id": "9ee71897ebb55942",
+                "type": "leaf",
+                "state": {
+                  "type": "side-panel-control-view",
+                  "state": {},
+                  "icon": "viewIcon",
+                  "title": "Markdown-Autocomplete"
+                }
+              }
+            ],
+            "currentTab": 10
+          }
+        ],
+        "direction": "horizontal",
+        "width": 354.5
+      },
+      "left-ribbon": {
+        "hiddenItems": {
+          "obsidian-markdown-formatting-assistant-plugin:Open Markdown Formatting Assistant": false,
+          "obsidian-read-it-later:ReadItLater: Create from clipboard": false,
+          "homepage:Open homepage": false,
+          "obsidian-git:Open Git source control": false,
+          "switcher:Open quick switcher": false,
+          "graph:Open graph view": false,
+          "canvas:Create new canvas": false,
+          "daily-notes:Open today's daily note": false,
+          "templates:Insert template": false,
+          "command-palette:Open command palette": false,
+          "markdown-importer:Open format converter": false,
+          "audio-recorder:Start/stop recording": false,
+          "workspaces:Manage workspace layouts": false,
+          "templater-obsidian:Templater": false,
+          "obsidian-spaced-repetition:Review flashcards": false,
+          "obsidian-rich-links:Rich Links": false,
+          "darlal-switcher-plus:Open in Headings Mode": false,
+          "darlal-switcher-plus:Open Symbols for the active editor": false,
+          "obsidian-projects:Open projects": false,
+          "obsidian-kanban:Create new board": false,
+          "janitor:Janitor: scan vault": false,
+          "digitalgarden:Digital Garden Publication Center": false,
+          "obsidian-book-search-plugin:Create new book note": false,
+          "table-editor-obsidian:Advanced Tables Toolbar": false,
+          "obsidian-advanced-slides:Show Slide Preview": false,
+          "obsidian-excalidraw-plugin:Create new drawing": false,
+          "obsidian42-brat:BRAT": false,
+          "sheet-plus:Create excel file": false,
+          "mermaid-tools:Open Mermaid Toolbar": false,
+          "periodic-notes:Open today": false,
+          "card-board:CardBoard": false
+        }
+      },
+      "active": "7d3e8eee64d97524",
+      "mtime": "2025-02-12T00:24:17-05:00"
+    },
+    "fight edit": {
+      "main": {
+        "id": "5324373015726ba8",
+        "type": "split",
+        "children": [
+          {
+            "id": "4509724f8bf84da7",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "e7a7b303c61786dc",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "_Fitness/Striking Approach.md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "Striking Approach"
+                }
+              },
+              {
+                "id": "b58263d620335511",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "_Fitness/MMA/Striking/Striking Fluidity.md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "Striking Fluidity"
+                }
+              },
+              {
+                "id": "07b9de7daf810c5b",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "_Fitness/MMA/Striking/Stance Fundamentals.md",
+                    "mode": "preview",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "Stance Fundamentals"
+                }
+              }
+            ],
+            "currentTab": 2
+          },
+          {
+            "id": "397ab2b3aaf57d30",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "3989d00ea3647043",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "_Fitness/MMA/Striking/Orthodox vs Southpaw.md",
+                    "mode": "preview",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "Orthodox vs Southpaw"
+                }
+              },
+              {
+                "id": "341272139d411c13",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "_Fitness/MMA/Striking/Weakness in Striking.md",
+                    "mode": "preview",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "Weakness in Striking"
+                }
+              },
+              {
+                "id": "7d3e8eee64d97524",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "_Fitness/MMA/Striking/Long Combos.md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "Long Combos"
+                }
+              },
+              {
+                "id": "0db3335537ef22ab",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "_Fitness/MMA/Striking/Short Combos.md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "Short Combos"
+                }
+              }
+            ],
+            "currentTab": 3
+          }
+        ],
+        "direction": "vertical"
+      },
+      "left": {
+        "id": "25d07a4f8307e30a",
+        "type": "split",
+        "children": [
+          {
+            "id": "0ee18ba8f838b73c",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "62d2738c8ec9ae78",
+                "type": "leaf",
+                "state": {
+                  "type": "file-explorer",
+                  "state": {
+                    "sortOrder": "alphabetical",
+                    "autoReveal": false
+                  },
+                  "icon": "lucide-folder-closed",
+                  "title": "Files"
+                }
+              },
+              {
+                "id": "381a89071adb230b",
+                "type": "leaf",
+                "state": {
+                  "type": "search",
+                  "state": {
+                    "query": "opposite",
+                    "matchingCase": false,
+                    "explainSearch": false,
+                    "collapseAll": false,
+                    "extraContext": false,
+                    "sortOrder": "alphabetical"
+                  },
+                  "icon": "lucide-search",
+                  "title": "Search"
+                }
+              },
+              {
+                "id": "e12d4e2fc2bb5ad2",
+                "type": "leaf",
+                "state": {
+                  "type": "bookmarks",
+                  "state": {},
+                  "icon": "lucide-bookmark",
+                  "title": "Bookmarks"
+                }
+              }
+            ]
+          }
+        ],
+        "direction": "horizontal",
+        "width": 363.5110321044922
+      },
+      "right": {
+        "id": "b5ea247522179402",
+        "type": "split",
+        "children": [
+          {
+            "id": "83e776fc6ed87418",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "71a2a86b225196f6",
+                "type": "leaf",
+                "state": {
+                  "type": "backlink",
+                  "state": {
+                    "file": "Home Dashboard.md",
+                    "collapseAll": false,
+                    "extraContext": false,
+                    "sortOrder": "alphabetical",
+                    "showSearch": false,
+                    "searchQuery": "",
+                    "backlinkCollapsed": false,
+                    "unlinkedCollapsed": true
+                  },
+                  "icon": "links-coming-in",
+                  "title": "Backlinks for Home Dashboard"
+                }
+              },
+              {
+                "id": "ac6ff17f4c3cbb25",
+                "type": "leaf",
+                "state": {
+                  "type": "outgoing-link",
+                  "state": {
+                    "file": "Home Dashboard.md",
+                    "linksCollapsed": false,
+                    "unlinkedCollapsed": true
+                  },
+                  "icon": "links-going-out",
+                  "title": "Outgoing links from Home Dashboard"
+                }
+              },
+              {
+                "id": "8c3a0e2d9aae24e2",
+                "type": "leaf",
+                "state": {
+                  "type": "tag",
+                  "state": {
+                    "sortOrder": "frequency",
+                    "useHierarchy": true
+                  },
+                  "icon": "lucide-tags",
+                  "title": "Tags"
+                }
+              },
+              {
+                "id": "442323dcd9dfef22",
+                "type": "leaf",
+                "state": {
+                  "type": "outline",
+                  "state": {
+                    "file": "Devops/Bash vs ZSH.md"
+                  },
+                  "icon": "lucide-list",
+                  "title": "Outline of Bash vs ZSH"
+                }
+              },
+              {
+                "id": "d64fc540a9faff39",
+                "type": "leaf",
+                "state": {
+                  "type": "Strange New Worlds",
+                  "state": {},
+                  "icon": "file-digit",
+                  "title": "Strange New Worlds"
+                }
+              },
+              {
+                "id": "7159a69de638fd57",
+                "type": "leaf",
+                "state": {
+                  "type": "podcast_player_view",
+                  "state": {},
+                  "icon": "play-circle",
+                  "title": "Podcast Player"
+                }
+              },
+              {
+                "id": "32979ed8fe27c039",
+                "type": "leaf",
+                "state": {
+                  "type": "calendar",
+                  "state": {},
+                  "icon": "calendar-with-checkmark",
+                  "title": "Calendar"
+                }
+              },
+              {
+                "id": "5493e04468ddac9b",
+                "type": "leaf",
+                "state": {
+                  "type": "all-properties",
+                  "state": {
+                    "sortOrder": "frequency",
+                    "showSearch": false,
+                    "searchQuery": ""
+                  },
+                  "icon": "lucide-archive",
+                  "title": "All properties"
+                }
+              },
+              {
+                "id": "e794f1fda7c1a1f5",
+                "type": "leaf",
+                "state": {
+                  "type": "file-properties",
+                  "state": {
+                    "file": "Daily Priority.md"
+                  },
+                  "icon": "lucide-info",
+                  "title": "File properties for Daily Priority"
+                }
+              },
+              {
+                "id": "119408eca5171204",
+                "type": "leaf",
+                "state": {
+                  "type": "reminder-list",
+                  "state": {},
+                  "icon": "clock",
+                  "title": "Reminders"
+                }
+              },
+              {
+                "id": "ccc14a9fa54b368e",
+                "type": "leaf",
+                "state": {
+                  "type": "git-view",
+                  "state": {},
+                  "icon": "git-pull-request",
+                  "title": "Source Control"
+                }
+              },
+              {
+                "id": "b3cfc2653a5cba01",
+                "type": "leaf",
+                "state": {
+                  "type": "todo",
+                  "state": {},
+                  "icon": "checkmark",
+                  "title": "Todo List"
+                }
+              },
+              {
+                "id": "9ee71897ebb55942",
+                "type": "leaf",
+                "state": {
+                  "type": "side-panel-control-view",
+                  "state": {},
+                  "icon": "viewIcon",
+                  "title": "Markdown-Autocomplete"
+                }
+              }
+            ],
+            "currentTab": 10
+          }
+        ],
+        "direction": "horizontal",
+        "width": 354.5
+      },
+      "left-ribbon": {
+        "hiddenItems": {
+          "obsidian-markdown-formatting-assistant-plugin:Open Markdown Formatting Assistant": false,
+          "obsidian-read-it-later:ReadItLater: Create from clipboard": false,
+          "homepage:Open homepage": false,
+          "obsidian-git:Open Git source control": false,
+          "switcher:Open quick switcher": false,
+          "graph:Open graph view": false,
+          "canvas:Create new canvas": false,
+          "daily-notes:Open today's daily note": false,
+          "templates:Insert template": false,
+          "command-palette:Open command palette": false,
+          "markdown-importer:Open format converter": false,
+          "audio-recorder:Start/stop recording": false,
+          "workspaces:Manage workspace layouts": false,
+          "templater-obsidian:Templater": false,
+          "obsidian-spaced-repetition:Review flashcards": false,
+          "obsidian-rich-links:Rich Links": false,
+          "darlal-switcher-plus:Open in Headings Mode": false,
+          "darlal-switcher-plus:Open Symbols for the active editor": false,
+          "obsidian-projects:Open projects": false,
+          "obsidian-kanban:Create new board": false,
+          "janitor:Janitor: scan vault": false,
+          "digitalgarden:Digital Garden Publication Center": false,
+          "obsidian-book-search-plugin:Create new book note": false,
+          "table-editor-obsidian:Advanced Tables Toolbar": false,
+          "obsidian-advanced-slides:Show Slide Preview": false,
+          "obsidian-excalidraw-plugin:Create new drawing": false,
+          "obsidian42-brat:BRAT": false,
+          "sheet-plus:Create excel file": false,
+          "mermaid-tools:Open Mermaid Toolbar": false,
+          "periodic-notes:Open today": false,
+          "card-board:CardBoard": false
+        }
+      },
+      "active": "0db3335537ef22ab",
+      "mtime": "2025-02-13T01:49:34-05:00"
+    },
+    "AWS Mar": {
+      "main": {
+        "id": "5324373015726ba8",
+        "type": "split",
+        "children": [
+          {
+            "id": "4509724f8bf84da7",
+            "type": "tabs",
+            "dimension": 37.20499768625636,
+            "children": [
+              {
+                "id": "778e9c298315d9ae",
+                "type": "leaf",
+                "state": {
+                  "type": "kanban",
+                  "state": {
+                    "file": "Daily Priority.md",
+                    "kanbanViewState": {
+                      "kanban-plugin": "board",
+                      "list-collapse": [
+                        false,
+                        false,
+                        false,
+                        false,
+                        false,
+                        false,
+                        false
+                      ]
+                    }
+                  },
+                  "icon": "lucide-trello",
+                  "title": "Daily Priority"
+                }
+              },
+              {
+                "id": "cb2ff9b862d12419",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Cloud/AWS/Managing IAM.md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "Managing IAM"
+                }
+              },
+              {
+                "id": "f3d9fc849dcdd506",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Cloud/AWS/IAM Policies and Role Types in AWS.md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "IAM Policies and Role Types in AWS"
+                }
+              },
+              {
+                "id": "a3ac836fa257f55c",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Cloud/LocalStack Setup.md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "LocalStack Setup"
+                }
+              },
+              {
+                "id": "55876c0e31fb75ec",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Cloud/AWS/IAM Policies and Role Types in AWS.md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "IAM Policies and Role Types in AWS"
+                }
+              }
+            ]
+          },
+          {
+            "id": "e5aa402bc28958f7",
+            "type": "tabs",
+            "dimension": 34.79870430356316,
+            "children": [
+              {
+                "id": "5afa03602f666a2e",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Cloud/Hierarchy of Policies in AWS.md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "Hierarchy of Policies in AWS"
+                }
+              },
+              {
+                "id": "e7a7b303c61786dc",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Cloud/Work LOB and arch notes to clean.md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "Work LOB and arch notes to clean"
+                }
+              }
+            ]
+          },
+          {
+            "id": "2e757ea4749de59b",
+            "type": "tabs",
+            "dimension": 27.996298010180467,
+            "children": [
+              {
+                "id": "e0a22d1bdc6a6258",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Cloud/AWS/Untitled.md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "Untitled"
+                }
+              },
+              {
+                "id": "453063f5bb4ccc5f",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Cloud/AWS/Untitled 1.md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "Untitled 1"
+                }
+              },
+              {
+                "id": "4b4952bc4b266fef",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Clipboard.md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "Clipboard"
+                }
+              }
+            ],
+            "currentTab": 2
+          }
+        ],
+        "direction": "vertical"
+      },
+      "left": {
+        "id": "25d07a4f8307e30a",
+        "type": "split",
+        "children": [
+          {
+            "id": "0ee18ba8f838b73c",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "62d2738c8ec9ae78",
+                "type": "leaf",
+                "state": {
+                  "type": "file-explorer",
+                  "state": {
+                    "sortOrder": "alphabetical",
+                    "autoReveal": false
+                  },
+                  "icon": "lucide-folder-closed",
+                  "title": "Files"
+                }
+              },
+              {
+                "id": "381a89071adb230b",
+                "type": "leaf",
+                "state": {
+                  "type": "search",
+                  "state": {
+                    "query": "",
+                    "matchingCase": false,
+                    "explainSearch": false,
+                    "collapseAll": false,
+                    "extraContext": false,
+                    "sortOrder": "alphabetical"
+                  },
+                  "icon": "lucide-search",
+                  "title": "Search"
+                }
+              },
+              {
+                "id": "e12d4e2fc2bb5ad2",
+                "type": "leaf",
+                "state": {
+                  "type": "bookmarks",
+                  "state": {},
+                  "icon": "lucide-bookmark",
+                  "title": "Bookmarks"
+                }
+              }
+            ]
+          }
+        ],
+        "direction": "horizontal",
+        "width": 363.5110321044922,
+        "collapsed": true
+      },
+      "right": {
+        "id": "b5ea247522179402",
+        "type": "split",
+        "children": [
+          {
+            "id": "584aafd2742fea53",
+            "type": "tabs",
+            "dimension": 50,
+            "children": [
+              {
+                "id": "e794f1fda7c1a1f5",
+                "type": "leaf",
+                "state": {
+                  "type": "file-properties",
+                  "state": {
+                    "file": "Daily Priority.md"
+                  },
+                  "icon": "lucide-info",
+                  "title": "File properties for Daily Priority"
+                }
+              },
+              {
+                "id": "b3cfc2653a5cba01",
+                "type": "leaf",
+                "state": {
+                  "type": "todo",
+                  "state": {},
+                  "icon": "checkmark",
+                  "title": "Todo List"
+                }
+              },
+              {
+                "id": "119408eca5171204",
+                "type": "leaf",
+                "state": {
+                  "type": "reminder-list",
+                  "state": {},
+                  "icon": "clock",
+                  "title": "Reminders"
+                }
+              },
+              {
+                "id": "9ee71897ebb55942",
+                "type": "leaf",
+                "state": {
+                  "type": "side-panel-control-view",
+                  "state": {},
+                  "icon": "viewIcon",
+                  "title": "Markdown-Autocomplete"
+                }
+              }
+            ]
+          },
+          {
+            "id": "cf5e2cd4f83cc97a",
+            "type": "tabs",
+            "dimension": 50,
+            "children": [
+              {
+                "id": "ccc14a9fa54b368e",
+                "type": "leaf",
+                "state": {
+                  "type": "git-view",
+                  "state": {},
+                  "icon": "git-pull-request",
+                  "title": "Source Control"
+                }
+              },
+              {
+                "id": "5493e04468ddac9b",
+                "type": "leaf",
+                "state": {
+                  "type": "all-properties",
+                  "state": {
+                    "sortOrder": "frequency",
+                    "showSearch": false,
+                    "searchQuery": ""
+                  },
+                  "icon": "lucide-archive",
+                  "title": "All properties"
+                }
+              },
+              {
+                "id": "32979ed8fe27c039",
+                "type": "leaf",
+                "state": {
+                  "type": "calendar",
+                  "state": {},
+                  "icon": "calendar-with-checkmark",
+                  "title": "Calendar"
+                }
+              },
+              {
+                "id": "71a2a86b225196f6",
+                "type": "leaf",
+                "state": {
+                  "type": "backlink",
+                  "state": {
+                    "file": "Cloud/High Traffic Architecture.md",
+                    "collapseAll": false,
+                    "extraContext": false,
+                    "sortOrder": "alphabetical",
+                    "showSearch": false,
+                    "searchQuery": "",
+                    "backlinkCollapsed": false,
+                    "unlinkedCollapsed": true
+                  },
+                  "icon": "links-coming-in",
+                  "title": "Backlinks for High Traffic Architecture"
+                }
+              },
+              {
+                "id": "7159a69de638fd57",
+                "type": "leaf",
+                "state": {
+                  "type": "podcast_player_view",
+                  "state": {},
+                  "icon": "play-circle",
+                  "title": "Podcast Player"
+                }
+              },
+              {
+                "id": "8c3a0e2d9aae24e2",
+                "type": "leaf",
+                "state": {
+                  "type": "tag",
+                  "state": {
+                    "sortOrder": "frequency",
+                    "useHierarchy": true,
+                    "showSearch": false,
+                    "searchQuery": ""
+                  },
+                  "icon": "lucide-tags",
+                  "title": "Tags"
+                }
+              },
+              {
+                "id": "ac6ff17f4c3cbb25",
+                "type": "leaf",
+                "state": {
+                  "type": "outgoing-link",
+                  "state": {
+                    "file": "Cloud/High Traffic Architecture.md",
+                    "linksCollapsed": false,
+                    "unlinkedCollapsed": true
+                  },
+                  "icon": "links-going-out",
+                  "title": "Outgoing links from High Traffic Architecture"
+                }
+              },
+              {
+                "id": "d64fc540a9faff39",
+                "type": "leaf",
+                "state": {
+                  "type": "Strange New Worlds",
+                  "state": {},
+                  "icon": "file-digit",
+                  "title": "Strange New Worlds"
+                }
+              },
+              {
+                "id": "442323dcd9dfef22",
+                "type": "leaf",
+                "state": {
+                  "type": "outline",
+                  "state": {
+                    "file": "Cloud/High Traffic Architecture.md",
+                    "followCursor": false,
+                    "showSearch": false,
+                    "searchQuery": ""
+                  },
+                  "icon": "lucide-list",
+                  "title": "Outline of High Traffic Architecture"
+                }
+              }
+            ]
+          }
+        ],
+        "direction": "horizontal",
+        "width": 354.5
+      },
+      "left-ribbon": {
+        "hiddenItems": {
+          "obsidian-excalidraw-plugin:New drawing": false,
+          "obsidian-markdown-formatting-assistant-plugin:Open Markdown Formatting Assistant": false,
+          "obsidian-read-it-later:ReadItLater: Create from clipboard": false,
+          "homepage:Open homepage": false,
+          "obsidian-git:Open Git source control": false,
+          "switcher:Open quick switcher": false,
+          "graph:Open graph view": false,
+          "canvas:Create new canvas": false,
+          "daily-notes:Open today's daily note": false,
+          "templates:Insert template": false,
+          "command-palette:Open command palette": false,
+          "markdown-importer:Open format converter": false,
+          "audio-recorder:Start/stop recording": false,
+          "workspaces:Manage workspace layouts": false,
+          "templater-obsidian:Templater": false,
+          "obsidian-spaced-repetition:Review flashcards": false,
+          "obsidian-rich-links:Rich Links": false,
+          "darlal-switcher-plus:Open in Headings Mode": false,
+          "darlal-switcher-plus:Open Symbols for the active editor": false,
+          "obsidian-projects:Open projects": false,
+          "obsidian-kanban:Create new board": false,
+          "janitor:Janitor: scan vault": false,
+          "digitalgarden:Digital Garden Publication Center": false,
+          "obsidian-book-search-plugin:Create new book note": false,
+          "table-editor-obsidian:Advanced Tables Toolbar": false,
+          "obsidian-advanced-slides:Show Slide Preview": false,
+          "obsidian42-brat:BRAT": false,
+          "sheet-plus:Create excel file": false,
+          "mermaid-tools:Open Mermaid Toolbar": false,
+          "periodic-notes:Open today": false,
+          "card-board:CardBoard": false
+        }
+      },
+      "active": "ccc14a9fa54b368e",
+      "mtime": "2025-03-30T15:47:19-04:00"
+    },
+    "stuff": {
+      "main": {
+        "id": "5324373015726ba8",
+        "type": "split",
+        "children": [
+          {
+            "id": "4509724f8bf84da7",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "e7a7b303c61786dc",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Home Dashboard.md",
+                    "mode": "preview",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "Home Dashboard"
+                }
+              }
+            ]
+          }
+        ],
+        "direction": "vertical"
+      },
+      "left": {
+        "id": "25d07a4f8307e30a",
+        "type": "split",
+        "children": [
+          {
+            "id": "0ee18ba8f838b73c",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "62d2738c8ec9ae78",
+                "type": "leaf",
+                "state": {
+                  "type": "file-explorer",
+                  "state": {
+                    "sortOrder": "alphabetical",
+                    "autoReveal": false
+                  },
+                  "icon": "lucide-folder-closed",
+                  "title": "Files"
+                }
+              },
+              {
+                "id": "381a89071adb230b",
+                "type": "leaf",
+                "state": {
+                  "type": "search",
+                  "state": {
+                    "query": "",
+                    "matchingCase": false,
+                    "explainSearch": false,
+                    "collapseAll": false,
+                    "extraContext": false,
+                    "sortOrder": "alphabetical"
+                  },
+                  "icon": "lucide-search",
+                  "title": "Search"
+                }
+              },
+              {
+                "id": "e12d4e2fc2bb5ad2",
+                "type": "leaf",
+                "state": {
+                  "type": "bookmarks",
+                  "state": {},
+                  "icon": "lucide-bookmark",
+                  "title": "Bookmarks"
+                }
+              }
+            ]
+          }
+        ],
+        "direction": "horizontal",
+        "width": 363.5110321044922,
+        "collapsed": true
+      },
+      "right": {
+        "id": "b5ea247522179402",
+        "type": "split",
+        "children": [
+          {
+            "id": "584aafd2742fea53",
+            "type": "tabs",
+            "dimension": 25,
+            "children": [
+              {
+                "id": "e794f1fda7c1a1f5",
+                "type": "leaf",
+                "pinned": true,
+                "state": {
+                  "type": "file-properties",
+                  "state": {
+                    "file": "Home Dashboard.md"
+                  },
+                  "pinned": true,
+                  "icon": "lucide-info",
+                  "title": "File properties for Home Dashboard"
+                }
+              },
+              {
+                "id": "119408eca5171204",
+                "type": "leaf",
+                "pinned": true,
+                "state": {
+                  "type": "reminder-list",
+                  "state": {},
+                  "pinned": true,
+                  "icon": "clock",
+                  "title": "Reminders"
+                }
+              },
+              {
+                "id": "7159a69de638fd57",
+                "type": "leaf",
+                "pinned": true,
+                "state": {
+                  "type": "podcast_player_view",
+                  "state": {},
+                  "pinned": true,
+                  "icon": "play-circle",
+                  "title": "Podcast Player"
+                }
+              },
+              {
+                "id": "72dca0273219d1ab",
+                "type": "leaf",
+                "pinned": true,
+                "state": {
+                  "type": "custom-frames-google-keep",
+                  "state": {},
+                  "pinned": true,
+                  "icon": "lucide-files",
+                  "title": "Google Keep"
+                }
+              }
+            ],
+            "currentTab": 3
+          },
+          {
+            "id": "d1235854646d74f7",
+            "type": "tabs",
+            "dimension": 25,
+            "children": [
+              {
+                "id": "442323dcd9dfef22",
+                "type": "leaf",
+                "pinned": true,
+                "state": {
+                  "type": "outline",
+                  "state": {
+                    "file": "Home Dashboard.md",
+                    "followCursor": false,
+                    "showSearch": false,
+                    "searchQuery": ""
+                  },
+                  "pinned": true,
+                  "icon": "lucide-list",
+                  "title": "Outline of Home Dashboard"
+                }
+              },
+              {
+                "id": "9ee71897ebb55942",
+                "type": "leaf",
+                "pinned": true,
+                "state": {
+                  "type": "side-panel-control-view",
+                  "state": {},
+                  "pinned": true,
+                  "icon": "viewIcon",
+                  "title": "Markdown-Autocomplete"
+                }
+              },
+              {
+                "id": "71a2a86b225196f6",
+                "type": "leaf",
+                "pinned": true,
+                "state": {
+                  "type": "backlink",
+                  "state": {
+                    "file": "Home Dashboard.md",
+                    "collapseAll": false,
+                    "extraContext": false,
+                    "sortOrder": "alphabetical",
+                    "showSearch": false,
+                    "searchQuery": "",
+                    "backlinkCollapsed": false,
+                    "unlinkedCollapsed": true
+                  },
+                  "pinned": true,
+                  "icon": "links-coming-in",
+                  "title": "Backlinks for Home Dashboard"
+                }
+              },
+              {
+                "id": "ccc14a9fa54b368e",
+                "type": "leaf",
+                "pinned": true,
+                "state": {
+                  "type": "git-view",
+                  "state": {},
+                  "pinned": true,
+                  "icon": "git-pull-request",
+                  "title": "Source Control"
+                }
+              },
+              {
+                "id": "ac6ff17f4c3cbb25",
+                "type": "leaf",
+                "pinned": true,
+                "state": {
+                  "type": "outgoing-link",
+                  "state": {
+                    "file": "Home Dashboard.md",
+                    "linksCollapsed": false,
+                    "unlinkedCollapsed": true
+                  },
+                  "pinned": true,
+                  "icon": "links-going-out",
+                  "title": "Outgoing links from Home Dashboard"
+                }
+              }
+            ],
+            "currentTab": 3
+          },
+          {
+            "id": "cf5e2cd4f83cc97a",
+            "type": "tabs",
+            "dimension": 50,
+            "children": [
+              {
+                "id": "b3cfc2653a5cba01",
+                "type": "leaf",
+                "pinned": true,
+                "state": {
+                  "type": "todo",
+                  "state": {},
+                  "pinned": true,
+                  "icon": "checkmark",
+                  "title": "Todo List"
+                }
+              },
+              {
+                "id": "5493e04468ddac9b",
+                "type": "leaf",
+                "pinned": true,
+                "state": {
+                  "type": "all-properties",
+                  "state": {
+                    "sortOrder": "frequency",
+                    "showSearch": false,
+                    "searchQuery": ""
+                  },
+                  "pinned": true,
+                  "icon": "lucide-archive",
+                  "title": "All properties"
+                }
+              },
+              {
+                "id": "8c3a0e2d9aae24e2",
+                "type": "leaf",
+                "state": {
+                  "type": "tag",
+                  "state": {
+                    "sortOrder": "frequency",
+                    "useHierarchy": true,
+                    "showSearch": false,
+                    "searchQuery": ""
+                  },
+                  "icon": "lucide-tags",
+                  "title": "Tags"
+                }
+              },
+              {
+                "id": "32979ed8fe27c039",
+                "type": "leaf",
+                "state": {
+                  "type": "calendar",
+                  "state": {},
+                  "icon": "calendar-with-checkmark",
+                  "title": "Calendar"
+                }
+              },
+              {
+                "id": "d64fc540a9faff39",
+                "type": "leaf",
+                "state": {
+                  "type": "Strange New Worlds",
+                  "state": {},
+                  "icon": "file-digit",
+                  "title": "Strange New Worlds"
+                }
+              }
+            ]
+          }
+        ],
+        "direction": "horizontal",
+        "width": 354.5
+      },
+      "left-ribbon": {
+        "hiddenItems": {
+          "obsidian-excalidraw-plugin:New drawing": false,
+          "obsidian-markdown-formatting-assistant-plugin:Open Markdown Formatting Assistant": false,
+          "obsidian-read-it-later:ReadItLater: Create from clipboard": false,
+          "homepage:Open homepage": false,
+          "obsidian-git:Open Git source control": false,
+          "switcher:Open quick switcher": false,
+          "graph:Open graph view": false,
+          "canvas:Create new canvas": false,
+          "daily-notes:Open today's daily note": false,
+          "templates:Insert template": false,
+          "command-palette:Open command palette": false,
+          "markdown-importer:Open format converter": false,
+          "audio-recorder:Start/stop recording": false,
+          "workspaces:Manage workspace layouts": false,
+          "templater-obsidian:Templater": false,
+          "obsidian-spaced-repetition:Review flashcards": false,
+          "obsidian-rich-links:Rich Links": false,
+          "darlal-switcher-plus:Open in Headings Mode": false,
+          "darlal-switcher-plus:Open Symbols for the active editor": false,
+          "obsidian-projects:Open projects": false,
+          "obsidian-kanban:Create new board": false,
+          "janitor:Janitor: scan vault": false,
+          "digitalgarden:Digital Garden Publication Center": false,
+          "obsidian-book-search-plugin:Create new book note": false,
+          "table-editor-obsidian:Advanced Tables Toolbar": false,
+          "obsidian-advanced-slides:Show Slide Preview": false,
+          "obsidian42-brat:BRAT": false,
+          "sheet-plus:Create excel file": false,
+          "mermaid-tools:Open Mermaid Toolbar": false,
+          "periodic-notes:Open today": false,
+          "card-board:CardBoard": false
+        }
+      },
+      "active": "ccc14a9fa54b368e",
+      "mtime": "2025-03-30T16:02:19-04:00"
+    },
+    "stack": {
+      "main": {
+        "id": "5324373015726ba8",
+        "type": "split",
+        "children": [
+          {
+            "id": "4509724f8bf84da7",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "e7a7b303c61786dc",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Home Dashboard.md",
+                    "mode": "preview",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "Home Dashboard"
+                }
+              },
+              {
+                "id": "9269e5435a66dee9",
+                "type": "leaf",
+                "state": {
+                  "type": "kanban",
+                  "state": {
+                    "file": "Daily Priority High.md",
+                    "kanbanViewState": {
+                      "kanban-plugin": "board",
+                      "list-collapse": [
+                        false,
+                        false,
+                        false,
+                        false,
+                        false,
+                        false
+                      ]
+                    }
+                  },
+                  "icon": "lucide-trello",
+                  "title": "Daily Priority High"
+                }
+              },
+              {
+                "id": "acae093465f4edcd",
+                "type": "leaf",
+                "state": {
+                  "type": "webviewer",
+                  "state": {
+                    "url": "https://chatgpt.com/share/67edf3f1-c90c-800d-8e7f-bcf4a316ba2d",
+                    "title": "Capital One Role Positioning",
+                    "mode": "webview"
+                  },
+                  "icon": "globe-2",
+                  "title": "Capital One Role Positioning"
+                }
+              },
+              {
+                "id": "4f33826b0a51d1b3",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Cloud/LocalStack Setup.md",
+                    "mode": "preview",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "LocalStack Setup"
+                }
+              }
+            ],
+            "currentTab": 3
+          },
+          {
+            "id": "20ff1f3c439ef907",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "2e19ec3a294d5c67",
+                "type": "leaf",
+                "state": {
+                  "type": "webviewer",
+                  "state": {
+                    "url": "https://chatgpt.com/share/67f7ffb8-6624-800d-a877-aeec9abe189c",
+                    "title": "Create SNS in LocalStack",
+                    "mode": "webview"
+                  },
+                  "icon": "globe-2",
+                  "title": "Create SNS in LocalStack"
+                }
+              },
+              {
+                "id": "e7760c5d49697e9e",
+                "type": "leaf",
+                "state": {
+                  "type": "webviewer",
+                  "state": {
+                    "url": "https://chatgpt.com/c/67feaeea-8048-800d-91f2-cc686233f415",
+                    "title": "AWS Lambda Step Function Integration",
+                    "mode": "blank"
+                  },
+                  "icon": "globe-2",
+                  "title": "AWS Lambda Step Function Integration"
+                }
+              }
+            ],
+            "currentTab": 1
+          }
+        ],
+        "direction": "vertical"
+      },
+      "left": {
+        "id": "25d07a4f8307e30a",
+        "type": "split",
+        "children": [
+          {
+            "id": "0ee18ba8f838b73c",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "62d2738c8ec9ae78",
+                "type": "leaf",
+                "state": {
+                  "type": "file-explorer",
+                  "state": {
+                    "sortOrder": "alphabetical",
+                    "autoReveal": false
+                  },
+                  "icon": "lucide-folder-closed",
+                  "title": "Files"
+                }
+              },
+              {
+                "id": "381a89071adb230b",
+                "type": "leaf",
+                "state": {
+                  "type": "search",
+                  "state": {
+                    "query": "json",
+                    "matchingCase": false,
+                    "explainSearch": false,
+                    "collapseAll": false,
+                    "extraContext": false,
+                    "sortOrder": "alphabetical"
+                  },
+                  "icon": "lucide-search",
+                  "title": "Search"
+                }
+              },
+              {
+                "id": "e12d4e2fc2bb5ad2",
+                "type": "leaf",
+                "state": {
+                  "type": "bookmarks",
+                  "state": {},
+                  "icon": "lucide-bookmark",
+                  "title": "Bookmarks"
+                }
+              }
+            ]
+          }
+        ],
+        "direction": "horizontal",
+        "width": 466.5,
+        "collapsed": true
+      },
+      "right": {
+        "id": "b5ea247522179402",
+        "type": "split",
+        "children": [
+          {
+            "id": "584aafd2742fea53",
+            "type": "tabs",
+            "dimension": 40.05681818181819,
+            "children": [
+              {
+                "id": "e794f1fda7c1a1f5",
+                "type": "leaf",
+                "pinned": true,
+                "state": {
+                  "type": "file-properties",
+                  "state": {
+                    "file": "Home Dashboard.md"
+                  },
+                  "pinned": true,
+                  "icon": "lucide-info",
+                  "title": "File properties for Home Dashboard"
+                }
+              },
+              {
+                "id": "119408eca5171204",
+                "type": "leaf",
+                "pinned": true,
+                "state": {
+                  "type": "reminder-list",
+                  "state": {},
+                  "pinned": true,
+                  "icon": "clock",
+                  "title": "Reminders"
+                }
+              },
+              {
+                "id": "7159a69de638fd57",
+                "type": "leaf",
+                "pinned": true,
+                "state": {
+                  "type": "podcast_player_view",
+                  "state": {},
+                  "pinned": true,
+                  "icon": "play-circle",
+                  "title": "Podcast Player"
+                }
+              },
+              {
+                "id": "72dca0273219d1ab",
+                "type": "leaf",
+                "pinned": true,
+                "state": {
+                  "type": "custom-frames-google-keep",
+                  "state": {},
+                  "pinned": true,
+                  "icon": "lucide-files",
+                  "title": "Google Keep"
+                }
+              }
+            ],
+            "currentTab": 3
+          },
+          {
+            "id": "d1235854646d74f7",
+            "type": "tabs",
+            "dimension": 39.58333333333333,
+            "children": [
+              {
+                "id": "442323dcd9dfef22",
+                "type": "leaf",
+                "pinned": true,
+                "state": {
+                  "type": "outline",
+                  "state": {
+                    "file": "Home Dashboard.md",
+                    "followCursor": false,
+                    "showSearch": false,
+                    "searchQuery": ""
+                  },
+                  "pinned": true,
+                  "icon": "lucide-list",
+                  "title": "Outline of Home Dashboard"
+                }
+              },
+              {
+                "id": "9ee71897ebb55942",
+                "type": "leaf",
+                "pinned": true,
+                "state": {
+                  "type": "side-panel-control-view",
+                  "state": {},
+                  "pinned": true,
+                  "icon": "viewIcon",
+                  "title": "Markdown-Autocomplete"
+                }
+              },
+              {
+                "id": "71a2a86b225196f6",
+                "type": "leaf",
+                "pinned": true,
+                "state": {
+                  "type": "backlink",
+                  "state": {
+                    "file": "Home Dashboard.md",
+                    "collapseAll": false,
+                    "extraContext": false,
+                    "sortOrder": "alphabetical",
+                    "showSearch": false,
+                    "searchQuery": "",
+                    "backlinkCollapsed": false,
+                    "unlinkedCollapsed": true
+                  },
+                  "pinned": true,
+                  "icon": "links-coming-in",
+                  "title": "Backlinks for Home Dashboard"
+                }
+              },
+              {
+                "id": "ccc14a9fa54b368e",
+                "type": "leaf",
+                "pinned": true,
+                "state": {
+                  "type": "git-view",
+                  "state": {},
+                  "pinned": true,
+                  "icon": "git-pull-request",
+                  "title": "Source Control"
+                }
+              },
+              {
+                "id": "ac6ff17f4c3cbb25",
+                "type": "leaf",
+                "pinned": true,
+                "state": {
+                  "type": "outgoing-link",
+                  "state": {
+                    "file": "Home Dashboard.md",
+                    "linksCollapsed": false,
+                    "unlinkedCollapsed": true
+                  },
+                  "pinned": true,
+                  "icon": "links-going-out",
+                  "title": "Outgoing links from Home Dashboard"
+                }
+              }
+            ],
+            "currentTab": 3
+          },
+          {
+            "id": "cf5e2cd4f83cc97a",
+            "type": "tabs",
+            "dimension": 20.359848484848484,
+            "children": [
+              {
+                "id": "b3cfc2653a5cba01",
+                "type": "leaf",
+                "pinned": true,
+                "state": {
+                  "type": "todo",
+                  "state": {},
+                  "pinned": true,
+                  "icon": "checkmark",
+                  "title": "Todo List"
+                }
+              },
+              {
+                "id": "5493e04468ddac9b",
+                "type": "leaf",
+                "pinned": true,
+                "state": {
+                  "type": "all-properties",
+                  "state": {
+                    "sortOrder": "frequency",
+                    "showSearch": false,
+                    "searchQuery": ""
+                  },
+                  "pinned": true,
+                  "icon": "lucide-archive",
+                  "title": "All properties"
+                }
+              },
+              {
+                "id": "8c3a0e2d9aae24e2",
+                "type": "leaf",
+                "state": {
+                  "type": "tag",
+                  "state": {
+                    "sortOrder": "frequency",
+                    "useHierarchy": true,
+                    "showSearch": false,
+                    "searchQuery": ""
+                  },
+                  "icon": "lucide-tags",
+                  "title": "Tags"
+                }
+              },
+              {
+                "id": "32979ed8fe27c039",
+                "type": "leaf",
+                "state": {
+                  "type": "calendar",
+                  "state": {},
+                  "icon": "calendar-with-checkmark",
+                  "title": "Calendar"
+                }
+              },
+              {
+                "id": "d64fc540a9faff39",
+                "type": "leaf",
+                "state": {
+                  "type": "Strange New Worlds",
+                  "state": {},
+                  "icon": "file-digit",
+                  "title": "Strange New Worlds"
+                }
+              }
+            ]
+          }
+        ],
+        "direction": "horizontal",
+        "width": 457.5,
+        "collapsed": true
+      },
+      "left-ribbon": {
+        "hiddenItems": {
+          "obsidian-excalidraw-plugin:New drawing": false,
+          "obsidian-markdown-formatting-assistant-plugin:Open Markdown Formatting Assistant": false,
+          "obsidian-read-it-later:ReadItLater: Create from clipboard": false,
+          "homepage:Open homepage": false,
+          "obsidian-git:Open Git source control": false,
+          "switcher:Open quick switcher": false,
+          "graph:Open graph view": false,
+          "canvas:Create new canvas": false,
+          "daily-notes:Open today's daily note": false,
+          "templates:Insert template": false,
+          "command-palette:Open command palette": false,
+          "markdown-importer:Open format converter": false,
+          "audio-recorder:Start/stop recording": false,
+          "workspaces:Manage workspace layouts": false,
+          "templater-obsidian:Templater": false,
+          "obsidian-spaced-repetition:Review flashcards": false,
+          "obsidian-rich-links:Rich Links": false,
+          "darlal-switcher-plus:Open in Headings Mode": false,
+          "darlal-switcher-plus:Open Symbols for the active editor": false,
+          "obsidian-projects:Open projects": false,
+          "obsidian-kanban:Create new board": false,
+          "janitor:Janitor: scan vault": false,
+          "digitalgarden:Digital Garden Publication Center": false,
+          "obsidian-book-search-plugin:Create new book note": false,
+          "table-editor-obsidian:Advanced Tables Toolbar": false,
+          "obsidian-advanced-slides:Show Slide Preview": false,
+          "obsidian42-brat:BRAT": false,
+          "sheet-plus:Create excel file": false,
+          "mermaid-tools:Open Mermaid Toolbar": false,
+          "periodic-notes:Open today": false,
+          "card-board:CardBoard": false
+        }
+      },
+      "active": "e7760c5d49697e9e",
+      "mtime": "2025-04-15T17:01:46-04:00"
+    },
+    "regimen": {
+      "main": {
+        "id": "5324373015726ba8",
+        "type": "split",
+        "children": [
+          {
+            "id": "5f08d2c1092fc970",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "e7a7b303c61786dc",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Home Dashboard.md",
+                    "mode": "preview",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "Home Dashboard"
+                }
+              },
+              {
+                "id": "ead1eb51d4326ba1",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "_Fitness/Priority Exercises.md",
+                    "mode": "preview",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "Priority Exercises"
+                }
+              },
+              {
+                "id": "a5132668a98f7b50",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "_Fitness/Untitled.md",
+                    "mode": "preview",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "Untitled"
+                }
+              },
+              {
+                "id": "958dd9026dd20b9a",
+                "type": "leaf",
+                "state": {
+                  "type": "kanban",
+                  "state": {
+                    "file": "Daily Priority High.md",
+                    "kanbanViewState": {
+                      "kanban-plugin": "board",
+                      "list-collapse": [
+                        false,
+                        false,
+                        false,
+                        false,
+                        false,
+                        false
+                      ]
+                    }
+                  },
+                  "icon": "lucide-trello",
+                  "title": "Daily Priority High"
+                }
+              }
+            ],
+            "currentTab": 3
+          },
+          {
+            "id": "ff7b61392511be70",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "2d3e4f0e1972a0eb",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "_Fitness/Untitled 1.md",
+                    "mode": "preview",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "Untitled 1"
+                }
+              },
+              {
+                "id": "0374578677031ae4",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "_Fitness/Resistance Band Workout.md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "Resistance Band Workout"
+                }
+              },
+              {
+                "id": "430c79fabb86a73b",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "_Fitness/Hip Thrust.md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "Hip Thrust"
+                }
+              }
+            ],
+            "currentTab": 2
+          },
+          {
+            "id": "b068bc4af96b5ee6",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "8e08c69f7fb8084a",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "_Fitness/Untitled 2.md",
+                    "mode": "preview",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "Untitled 2"
+                }
+              },
+              {
+                "id": "6f7d57f266f65008",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Career/Companies Worked At/Capital One/PTP Config Workflow.md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "PTP Config Workflow"
+                }
+              }
+            ],
+            "currentTab": 1
+          }
+        ],
+        "direction": "vertical"
+      },
+      "left": {
+        "id": "25d07a4f8307e30a",
+        "type": "split",
+        "children": [
+          {
+            "id": "0ee18ba8f838b73c",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "62d2738c8ec9ae78",
+                "type": "leaf",
+                "state": {
+                  "type": "file-explorer",
+                  "state": {
+                    "sortOrder": "alphabetical",
+                    "autoReveal": false
+                  },
+                  "icon": "lucide-folder-closed",
+                  "title": "Files"
+                }
+              },
+              {
+                "id": "381a89071adb230b",
+                "type": "leaf",
+                "state": {
+                  "type": "search",
+                  "state": {
+                    "query": "json",
+                    "matchingCase": false,
+                    "explainSearch": false,
+                    "collapseAll": false,
+                    "extraContext": false,
+                    "sortOrder": "alphabetical"
+                  },
+                  "icon": "lucide-search",
+                  "title": "Search"
+                }
+              },
+              {
+                "id": "e12d4e2fc2bb5ad2",
+                "type": "leaf",
+                "state": {
+                  "type": "bookmarks",
+                  "state": {},
+                  "icon": "lucide-bookmark",
+                  "title": "Bookmarks"
+                }
+              }
+            ]
+          }
+        ],
+        "direction": "horizontal",
+        "width": 466.5
+      },
+      "right": {
+        "id": "b5ea247522179402",
+        "type": "split",
+        "children": [
+          {
+            "id": "584aafd2742fea53",
+            "type": "tabs",
+            "dimension": 40.05681818181819,
+            "children": [
+              {
+                "id": "e794f1fda7c1a1f5",
+                "type": "leaf",
+                "state": {
+                  "type": "file-properties",
+                  "state": {
+                    "file": "Home Dashboard.md"
+                  },
+                  "icon": "lucide-info",
+                  "title": "File properties for Home Dashboard"
+                }
+              },
+              {
+                "id": "119408eca5171204",
+                "type": "leaf",
+                "state": {
+                  "type": "reminder-list",
+                  "state": {},
+                  "icon": "clock",
+                  "title": "Reminders"
+                }
+              },
+              {
+                "id": "7159a69de638fd57",
+                "type": "leaf",
+                "pinned": true,
+                "state": {
+                  "type": "podcast_player_view",
+                  "state": {},
+                  "pinned": true,
+                  "icon": "play-circle",
+                  "title": "Podcast Player"
+                }
+              },
+              {
+                "id": "72dca0273219d1ab",
+                "type": "leaf",
+                "pinned": true,
+                "state": {
+                  "type": "custom-frames-google-keep",
+                  "state": {},
+                  "pinned": true,
+                  "icon": "lucide-files",
+                  "title": "Google Keep"
+                }
+              }
+            ],
+            "currentTab": 3
+          },
+          {
+            "id": "d1235854646d74f7",
+            "type": "tabs",
+            "dimension": 39.58333333333333,
+            "children": [
+              {
+                "id": "442323dcd9dfef22",
+                "type": "leaf",
+                "pinned": true,
+                "state": {
+                  "type": "outline",
+                  "state": {
+                    "file": "Home Dashboard.md",
+                    "followCursor": false,
+                    "showSearch": false,
+                    "searchQuery": ""
+                  },
+                  "pinned": true,
+                  "icon": "lucide-list",
+                  "title": "Outline of Home Dashboard"
+                }
+              },
+              {
+                "id": "9ee71897ebb55942",
+                "type": "leaf",
+                "pinned": true,
+                "state": {
+                  "type": "side-panel-control-view",
+                  "state": {},
+                  "pinned": true,
+                  "icon": "viewIcon",
+                  "title": "Markdown-Autocomplete"
+                }
+              },
+              {
+                "id": "71a2a86b225196f6",
+                "type": "leaf",
+                "pinned": true,
+                "state": {
+                  "type": "backlink",
+                  "state": {
+                    "file": "Home Dashboard.md",
+                    "collapseAll": false,
+                    "extraContext": false,
+                    "sortOrder": "alphabetical",
+                    "showSearch": false,
+                    "searchQuery": "",
+                    "backlinkCollapsed": false,
+                    "unlinkedCollapsed": true
+                  },
+                  "pinned": true,
+                  "icon": "links-coming-in",
+                  "title": "Backlinks for Home Dashboard"
+                }
+              },
+              {
+                "id": "ccc14a9fa54b368e",
+                "type": "leaf",
+                "state": {
+                  "type": "git-view",
+                  "state": {},
+                  "icon": "git-pull-request",
+                  "title": "Source Control"
+                }
+              },
+              {
+                "id": "ac6ff17f4c3cbb25",
+                "type": "leaf",
+                "pinned": true,
+                "state": {
+                  "type": "outgoing-link",
+                  "state": {
+                    "file": "Home Dashboard.md",
+                    "linksCollapsed": false,
+                    "unlinkedCollapsed": true
+                  },
+                  "pinned": true,
+                  "icon": "links-going-out",
+                  "title": "Outgoing links from Home Dashboard"
+                }
+              }
+            ],
+            "currentTab": 3
+          },
+          {
+            "id": "cf5e2cd4f83cc97a",
+            "type": "tabs",
+            "dimension": 20.359848484848484,
+            "children": [
+              {
+                "id": "b3cfc2653a5cba01",
+                "type": "leaf",
+                "pinned": true,
+                "state": {
+                  "type": "todo",
+                  "state": {},
+                  "pinned": true,
+                  "icon": "checkmark",
+                  "title": "Todo List"
+                }
+              },
+              {
+                "id": "5493e04468ddac9b",
+                "type": "leaf",
+                "pinned": true,
+                "state": {
+                  "type": "all-properties",
+                  "state": {
+                    "sortOrder": "frequency",
+                    "showSearch": false,
+                    "searchQuery": ""
+                  },
+                  "pinned": true,
+                  "icon": "lucide-archive",
+                  "title": "All properties"
+                }
+              },
+              {
+                "id": "8c3a0e2d9aae24e2",
+                "type": "leaf",
+                "state": {
+                  "type": "tag",
+                  "state": {
+                    "sortOrder": "frequency",
+                    "useHierarchy": true,
+                    "showSearch": false,
+                    "searchQuery": ""
+                  },
+                  "icon": "lucide-tags",
+                  "title": "Tags"
+                }
+              },
+              {
+                "id": "32979ed8fe27c039",
+                "type": "leaf",
+                "state": {
+                  "type": "calendar",
+                  "state": {},
+                  "icon": "calendar-with-checkmark",
+                  "title": "Calendar"
+                }
+              },
+              {
+                "id": "d64fc540a9faff39",
+                "type": "leaf",
+                "state": {
+                  "type": "Strange New Worlds",
+                  "state": {},
+                  "icon": "file-digit",
+                  "title": "Strange New Worlds"
+                }
+              }
+            ]
+          }
+        ],
+        "direction": "horizontal",
+        "width": 382.5,
+        "collapsed": true
+      },
+      "left-ribbon": {
+        "hiddenItems": {
+          "obsidian-excalidraw-plugin:New drawing": false,
+          "obsidian-markdown-formatting-assistant-plugin:Open Markdown Formatting Assistant": false,
+          "obsidian-read-it-later:ReadItLater: Create from clipboard": false,
+          "homepage:Open homepage": false,
+          "obsidian-git:Open Git source control": false,
+          "switcher:Open quick switcher": false,
+          "graph:Open graph view": false,
+          "canvas:Create new canvas": false,
+          "daily-notes:Open today's daily note": false,
+          "templates:Insert template": false,
+          "command-palette:Open command palette": false,
+          "markdown-importer:Open format converter": false,
+          "audio-recorder:Start/stop recording": false,
+          "workspaces:Manage workspace layouts": false,
+          "templater-obsidian:Templater": false,
+          "obsidian-spaced-repetition:Review flashcards": false,
+          "obsidian-rich-links:Rich Links": false,
+          "darlal-switcher-plus:Open in Headings Mode": false,
+          "darlal-switcher-plus:Open Symbols for the active editor": false,
+          "obsidian-projects:Open projects": false,
+          "obsidian-kanban:Create new board": false,
+          "janitor:Janitor: scan vault": false,
+          "digitalgarden:Digital Garden Publication Center": false,
+          "obsidian-book-search-plugin:Create new book note": false,
+          "table-editor-obsidian:Advanced Tables Toolbar": false,
+          "obsidian-advanced-slides:Show Slide Preview": false,
+          "obsidian42-brat:BRAT": false,
+          "sheet-plus:Create excel file": false,
+          "mermaid-tools:Open Mermaid Toolbar": false,
+          "periodic-notes:Open today": false,
+          "card-board:CardBoard": false
+        }
+      },
+      "active": "62d2738c8ec9ae78",
+      "mtime": "2025-05-04T18:46:09-04:00"
     }
   },
-  "active": "arts"
+  "active": "regimen"
 }

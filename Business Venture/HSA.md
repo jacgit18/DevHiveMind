@@ -15,6 +15,8 @@ dg-publish:
 The Internal Revenue Service (IRS) sets annual contribution limits for Health Savings Accounts (HSAs). The current contribution limits for the tax year 2022 (for individuals with self-only coverage under an HSA-qualified high-deductible health plan) are $3,650. For those with family coverage under an HSA-qualified high-deductible health plan, the contribution limit is $7,300. Additionally, individuals age 55 or older may make catch-up contributions of up to $1,000.
 
 
+The letter and receipts are for just in case you are audited by the IRS
+
 If you have your own **HSA** (Health Savings Account) and healthcare plan that is separate from your employer, you can still contribute to the HSA pre-tax, but the process is slightly different from when it’s done through employer payroll deductions. Here's how you can set it up and contribute pre-tax:  
   
 ### 1. **Establish Your HSA**  

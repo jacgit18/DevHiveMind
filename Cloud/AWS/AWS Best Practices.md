@@ -22,6 +22,11 @@ use Virtual Private Cloud and Virtual Private Cloud together
 
 Configure network settings to permit inbound HTTP traffic from the internet, enabling web access to your resources. Additionally, allow SSH traffic exclusively from your specified IP address, ensuring secure remote access to your instances while restricting unauthorized connections. This setup enhances network security by implementing precise access controls tailored to your requirements.
 
+
+#todo/Med/Dev 
+- [ ] [Serverless is a Scam. - DEV Community](https://dev.to/code42cate/serverless-is-a-scam-5fc0)
+
+
 ### Use Services like 
 
 ![[AWS Services.png]]

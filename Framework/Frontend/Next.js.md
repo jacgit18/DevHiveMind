@@ -18,7 +18,7 @@ dg-publish: true
 ![[nextjs-visuals-2024.png]]
 Next.js is a React-based web framework that simplifies the development of web applications by providing a structured and opinionated approach. It solves several challenges faced in traditional React applications, such as server-side rendering, automatic code splitting, and easy client-side navigation.
 
-#todo/Personal/Low/Dev 
+#todo/Low/Dev 
 - [ ] https://dev.to/nevodavid/top-12-libraries-for-your-nextjs-project-1oob
 
 By offering server-side rendering, Next.js enhances performance and [[SEO]], as it generates HTML on the server instead of relying solely on client-side rendering. Automatic code splitting ensures that only the necessary JavaScript is sent to the browser, optimizing page load times. Additionally, Next.js facilitates client-side navigation through its built-in routing system, streamlining the development of single-page applications.

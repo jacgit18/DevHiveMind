@@ -38,7 +38,7 @@ var __publicField = (obj, key, value) => __defNormalProp(obj, typeof key !== "sy
 
 // node_modules/cuint/lib/uint32.js
 var require_uint32 = __commonJS({
-  "node_modules/cuint/lib/uint32.js"(exports3, module2) {
+  "node_modules/cuint/lib/uint32.js"(exports2, module2) {
     (function(root) {
       var radixPowerCache = {
         36: UINT32(Math.pow(36, 5)),
@@ -252,13 +252,13 @@ var require_uint32 = __commonJS({
       } else {
         root["UINT32"] = UINT32;
       }
-    })(exports3);
+    })(exports2);
   }
 });
 
 // node_modules/cuint/lib/uint64.js
 var require_uint64 = __commonJS({
-  "node_modules/cuint/lib/uint64.js"(exports3, module2) {
+  "node_modules/cuint/lib/uint64.js"(exports2, module2) {
     (function(root) {
       var radixPowerCache = {
         16: UINT64(Math.pow(16, 5)),
@@ -617,21 +617,21 @@ var require_uint64 = __commonJS({
       } else {
         root["UINT64"] = UINT64;
       }
-    })(exports3);
+    })(exports2);
   }
 });
 
 // node_modules/cuint/index.js
 var require_cuint = __commonJS({
-  "node_modules/cuint/index.js"(exports3) {
-    exports3.UINT32 = require_uint32();
-    exports3.UINT64 = require_uint64();
+  "node_modules/cuint/index.js"(exports2) {
+    exports2.UINT32 = require_uint32();
+    exports2.UINT64 = require_uint64();
   }
 });
 
 // node_modules/xxhashjs/lib/xxhash.js
 var require_xxhash = __commonJS({
-  "node_modules/xxhashjs/lib/xxhash.js"(exports3, module2) {
+  "node_modules/xxhashjs/lib/xxhash.js"(exports2, module2) {
     var UINT32 = require_cuint().UINT32;
     UINT32.prototype.xxh_update = function(low, high) {
       var b00 = PRIME32_2._low;
@@ -909,7 +909,7 @@ var require_xxhash = __commonJS({
 
 // node_modules/xxhashjs/lib/xxhash64.js
 var require_xxhash64 = __commonJS({
-  "node_modules/xxhashjs/lib/xxhash64.js"(exports3, module2) {
+  "node_modules/xxhashjs/lib/xxhash64.js"(exports2, module2) {
     var UINT64 = require_cuint().UINT64;
     var PRIME64_1 = UINT64("11400714785074694791");
     var PRIME64_2 = UINT64("14029467366897019727");
@@ -1248,7 +1248,7 @@ var require_xxhash64 = __commonJS({
 
 // node_modules/xxhashjs/lib/index.js
 var require_lib = __commonJS({
-  "node_modules/xxhashjs/lib/index.js"(exports3, module2) {
+  "node_modules/xxhashjs/lib/index.js"(exports2, module2) {
     module2.exports = {
       h32: require_xxhash(),
       h64: require_xxhash64()
@@ -1258,9 +1258,9 @@ var require_lib = __commonJS({
 
 // node_modules/simple-peer/simplepeer.min.js
 var require_simplepeer_min = __commonJS({
-  "node_modules/simple-peer/simplepeer.min.js"(exports3, module2) {
+  "node_modules/simple-peer/simplepeer.min.js"(exports2, module2) {
     (function(e) {
-      if ("object" == typeof exports3 && "undefined" != typeof module2) module2.exports = e();
+      if ("object" == typeof exports2 && "undefined" != typeof module2) module2.exports = e();
       else if ("function" == typeof define && define.amd) define([], e);
       else {
         var t;
@@ -3862,7 +3862,7 @@ var require_simplepeer_min = __commonJS({
 
 // node_modules/lodash/lodash.js
 var require_lodash = __commonJS({
-  "node_modules/lodash/lodash.js"(exports3, module2) {
+  "node_modules/lodash/lodash.js"(exports2, module2) {
     (function() {
       var undefined2;
       var VERSION2 = "4.17.21";
@@ -4190,7 +4190,7 @@ var require_lodash = __commonJS({
       var freeGlobal = typeof globalThis == "object" && globalThis && globalThis.Object === Object && globalThis;
       var freeSelf = typeof self == "object" && self && self.Object === Object && self;
       var root = freeGlobal || freeSelf || Function("return this")();
-      var freeExports = typeof exports3 == "object" && exports3 && !exports3.nodeType && exports3;
+      var freeExports = typeof exports2 == "object" && exports2 && !exports2.nodeType && exports2;
       var freeModule = freeExports && typeof module2 == "object" && module2 && !module2.nodeType && module2;
       var moduleExports = freeModule && freeModule.exports === freeExports;
       var freeProcess = moduleExports && freeGlobal.process;
@@ -6335,7 +6335,7 @@ var require_lodash = __commonJS({
             return func(number);
           };
         }
-        var createSet = !(Set2 && 1 / setToArray(new Set2([, -0]))[1] == INFINITY) ? noop2 : function(values2) {
+        var createSet = !(Set2 && 1 / setToArray(new Set2([, -0]))[1] == INFINITY) ? noop3 : function(values2) {
           return new Set2(values2);
         };
         function createToPairs(keysFunc) {
@@ -6562,7 +6562,7 @@ var require_lodash = __commonJS({
         function getAllKeysIn(object) {
           return baseGetAllKeys(object, keysIn, getSymbolsIn);
         }
-        var getData = !metaMap ? noop2 : function(func) {
+        var getData = !metaMap ? noop3 : function(func) {
           return metaMap.get(func);
         };
         function getFuncName(func) {
@@ -7804,7 +7804,7 @@ var require_lodash = __commonJS({
             return !predicate.apply(this, args2);
           };
         }
-        function once(func) {
+        function once2(func) {
           return before(2, func);
         }
         var overArgs = castRest(function(func, transforms) {
@@ -8750,7 +8750,7 @@ var require_lodash = __commonJS({
           }
           return this;
         }
-        function noop2() {
+        function noop3() {
         }
         function nthArg(n) {
           n = toInteger(n);
@@ -8925,7 +8925,7 @@ var require_lodash = __commonJS({
         lodash.nthArg = nthArg;
         lodash.omit = omit;
         lodash.omitBy = omitBy;
-        lodash.once = once;
+        lodash.once = once2;
         lodash.orderBy = orderBy;
         lodash.over = over;
         lodash.overArgs = overArgs;
@@ -9105,7 +9105,7 @@ var require_lodash = __commonJS({
         lodash.multiply = multiply;
         lodash.nth = nth;
         lodash.noConflict = noConflict;
-        lodash.noop = noop2;
+        lodash.noop = noop3;
         lodash.now = now2;
         lodash.pad = pad2;
         lodash.padEnd = padEnd;
@@ -9336,7 +9336,7 @@ var require_lodash = __commonJS({
       } else {
         root._ = _;
       }
-    }).call(exports3);
+    }).call(exports2);
   }
 });
 
@@ -9350,201 +9350,293 @@ module.exports = __toCommonJS(main_exports);
 // src/peerdraftPlugin.ts
 var import_obsidian21 = require("obsidian");
 
-// node_modules/@jspm/core/nodelibs/browser/chunk-2eac56ff.js
-var exports = {};
-var _dewExec = false;
-var _global = typeof globalThis !== "undefined" ? globalThis : typeof self !== "undefined" ? self : globalThis;
-function dew() {
-  if (_dewExec) return exports;
-  _dewExec = true;
-  var process3 = exports = {};
-  var cachedSetTimeout;
-  var cachedClearTimeout;
-  function defaultSetTimout() {
-    throw new Error("setTimeout has not been defined");
-  }
-  function defaultClearTimeout() {
-    throw new Error("clearTimeout has not been defined");
-  }
-  (function() {
-    try {
-      if (typeof setTimeout === "function") {
-        cachedSetTimeout = setTimeout;
-      } else {
-        cachedSetTimeout = defaultSetTimout;
-      }
-    } catch (e) {
-      cachedSetTimeout = defaultSetTimout;
-    }
-    try {
-      if (typeof clearTimeout === "function") {
-        cachedClearTimeout = clearTimeout;
-      } else {
-        cachedClearTimeout = defaultClearTimeout;
-      }
-    } catch (e) {
-      cachedClearTimeout = defaultClearTimeout;
-    }
-  })();
-  function runTimeout(fun) {
-    if (cachedSetTimeout === setTimeout) {
-      return setTimeout(fun, 0);
-    }
-    if ((cachedSetTimeout === defaultSetTimout || !cachedSetTimeout) && setTimeout) {
-      cachedSetTimeout = setTimeout;
-      return setTimeout(fun, 0);
-    }
-    try {
-      return cachedSetTimeout(fun, 0);
-    } catch (e) {
-      try {
-        return cachedSetTimeout.call(null, fun, 0);
-      } catch (e2) {
-        return cachedSetTimeout.call(this || _global, fun, 0);
-      }
-    }
-  }
-  function runClearTimeout(marker) {
-    if (cachedClearTimeout === clearTimeout) {
-      return clearTimeout(marker);
-    }
-    if ((cachedClearTimeout === defaultClearTimeout || !cachedClearTimeout) && clearTimeout) {
-      cachedClearTimeout = clearTimeout;
-      return clearTimeout(marker);
-    }
-    try {
-      return cachedClearTimeout(marker);
-    } catch (e) {
-      try {
-        return cachedClearTimeout.call(null, marker);
-      } catch (e2) {
-        return cachedClearTimeout.call(this || _global, marker);
-      }
-    }
-  }
-  var queue = [];
-  var draining = false;
-  var currentQueue;
-  var queueIndex = -1;
-  function cleanUpNextTick() {
-    if (!draining || !currentQueue) {
-      return;
-    }
-    draining = false;
-    if (currentQueue.length) {
-      queue = currentQueue.concat(queue);
-    } else {
-      queueIndex = -1;
-    }
-    if (queue.length) {
-      drainQueue();
-    }
-  }
-  function drainQueue() {
-    if (draining) {
-      return;
-    }
-    var timeout = runTimeout(cleanUpNextTick);
-    draining = true;
-    var len = queue.length;
-    while (len) {
-      currentQueue = queue;
-      queue = [];
-      while (++queueIndex < len) {
-        if (currentQueue) {
-          currentQueue[queueIndex].run();
-        }
-      }
-      queueIndex = -1;
-      len = queue.length;
-    }
-    currentQueue = null;
-    draining = false;
-    runClearTimeout(timeout);
-  }
-  process3.nextTick = function(fun) {
-    var args2 = new Array(arguments.length - 1);
-    if (arguments.length > 1) {
-      for (var i = 1; i < arguments.length; i++) {
-        args2[i - 1] = arguments[i];
-      }
-    }
-    queue.push(new Item2(fun, args2));
-    if (queue.length === 1 && !draining) {
-      runTimeout(drainQueue);
-    }
-  };
-  function Item2(fun, array) {
-    (this || _global).fun = fun;
-    (this || _global).array = array;
-  }
-  Item2.prototype.run = function() {
-    (this || _global).fun.apply(null, (this || _global).array);
-  };
-  process3.title = "browser";
-  process3.browser = true;
-  process3.env = {};
-  process3.argv = [];
-  process3.version = "";
-  process3.versions = {};
-  function noop2() {
-  }
-  process3.on = noop2;
-  process3.addListener = noop2;
-  process3.once = noop2;
-  process3.off = noop2;
-  process3.removeListener = noop2;
-  process3.removeAllListeners = noop2;
-  process3.emit = noop2;
-  process3.prependListener = noop2;
-  process3.prependOnceListener = noop2;
-  process3.listeners = function(name) {
-    return [];
-  };
-  process3.binding = function(name) {
-    throw new Error("process.binding is not supported");
-  };
-  process3.cwd = function() {
-    return "/";
-  };
-  process3.chdir = function(dir) {
-    throw new Error("process.chdir is not supported");
-  };
-  process3.umask = function() {
-    return 0;
-  };
-  return exports;
+// node-modules-polyfills:path
+function unimplemented(name) {
+  throw new Error("Node.js process " + name + " is not supported by JSPM core outside of Node.js");
 }
-var process2 = dew();
-process2.platform = "browser";
-process2.addListener;
-process2.argv;
-process2.binding;
-process2.browser;
-process2.chdir;
-process2.cwd;
-process2.emit;
-process2.env;
-process2.listeners;
-process2.nextTick;
-process2.off;
-process2.on;
-process2.once;
-process2.prependListener;
-process2.prependOnceListener;
-process2.removeAllListeners;
-process2.removeListener;
-process2.title;
-process2.umask;
-process2.version;
-process2.versions;
-
-// node_modules/@jspm/core/nodelibs/browser/chunk-23dbec7b.js
+var queue = [];
+var draining = false;
+var currentQueue;
+var queueIndex = -1;
+function cleanUpNextTick() {
+  if (!draining || !currentQueue)
+    return;
+  draining = false;
+  if (currentQueue.length) {
+    queue = currentQueue.concat(queue);
+  } else {
+    queueIndex = -1;
+  }
+  if (queue.length)
+    drainQueue();
+}
+function drainQueue() {
+  if (draining)
+    return;
+  var timeout = setTimeout(cleanUpNextTick, 0);
+  draining = true;
+  var len = queue.length;
+  while (len) {
+    currentQueue = queue;
+    queue = [];
+    while (++queueIndex < len) {
+      if (currentQueue)
+        currentQueue[queueIndex].run();
+    }
+    queueIndex = -1;
+    len = queue.length;
+  }
+  currentQueue = null;
+  draining = false;
+  clearTimeout(timeout);
+}
+function nextTick(fun) {
+  var args2 = new Array(arguments.length - 1);
+  if (arguments.length > 1) {
+    for (var i = 1; i < arguments.length; i++)
+      args2[i - 1] = arguments[i];
+  }
+  queue.push(new Item(fun, args2));
+  if (queue.length === 1 && !draining)
+    setTimeout(drainQueue, 0);
+}
+function Item(fun, array) {
+  this.fun = fun;
+  this.array = array;
+}
+Item.prototype.run = function() {
+  this.fun.apply(null, this.array);
+};
+var title = "browser";
+var arch = "x64";
+var platform = "browser";
+var env = {
+  PATH: "/usr/bin",
+  LANG: navigator.language + ".UTF-8",
+  PWD: "/",
+  HOME: "/home",
+  TMP: "/tmp"
+};
+var argv = ["/usr/bin/node"];
+var execArgv = [];
+var version = "v16.8.0";
+var versions = {};
+var emitWarning = function(message, type2) {
+  console.warn((type2 ? type2 + ": " : "") + message);
+};
+var binding = function(name) {
+  unimplemented("binding");
+};
+var umask = function(mask) {
+  return 0;
+};
+var cwd = function() {
+  return "/";
+};
+var chdir = function(dir) {
+};
+var release = {
+  name: "node",
+  sourceUrl: "",
+  headersUrl: "",
+  libUrl: ""
+};
+function noop() {
+}
+var _rawDebug = noop;
+var moduleLoadList = [];
+function _linkedBinding(name) {
+  unimplemented("_linkedBinding");
+}
+var domain = {};
+var _exiting = false;
+var config = {};
+function dlopen(name) {
+  unimplemented("dlopen");
+}
+function _getActiveRequests() {
+  return [];
+}
+function _getActiveHandles() {
+  return [];
+}
+var reallyExit = noop;
+var _kill = noop;
+var cpuUsage = function() {
+  return {};
+};
+var resourceUsage = cpuUsage;
+var memoryUsage = cpuUsage;
+var kill = noop;
+var exit = noop;
+var openStdin = noop;
+var allowedNodeEnvironmentFlags = {};
+function assert(condition, message) {
+  if (!condition) throw new Error(message || "assertion error");
+}
+var features = {
+  inspector: false,
+  debug: false,
+  uv: false,
+  ipv6: false,
+  tls_alpn: false,
+  tls_sni: false,
+  tls_ocsp: false,
+  tls: false,
+  cached_builtins: true
+};
+var _fatalExceptions = noop;
+var setUncaughtExceptionCaptureCallback = noop;
+function hasUncaughtExceptionCaptureCallback() {
+  return false;
+}
+var _tickCallback = noop;
+var _debugProcess = noop;
+var _debugEnd = noop;
+var _startProfilerIdleNotifier = noop;
+var _stopProfilerIdleNotifier = noop;
+var stdout = void 0;
+var stderr = void 0;
+var stdin = void 0;
+var abort = noop;
+var pid = 2;
+var ppid = 1;
+var execPath = "/bin/usr/node";
+var debugPort = 9229;
+var argv0 = "node";
+var _preload_modules = [];
+var setSourceMapsEnabled = noop;
+var _performance = {
+  now: typeof performance !== "undefined" ? performance.now.bind(performance) : void 0,
+  timing: typeof performance !== "undefined" ? performance.timing : void 0
+};
+if (_performance.now === void 0) {
+  nowOffset = Date.now();
+  if (_performance.timing && _performance.timing.navigationStart) {
+    nowOffset = _performance.timing.navigationStart;
+  }
+  _performance.now = () => Date.now() - nowOffset;
+}
+var nowOffset;
+function uptime() {
+  return _performance.now() / 1e3;
+}
+var nanoPerSec = 1e9;
+function hrtime(previousTimestamp) {
+  var baseNow = Math.floor((Date.now() - _performance.now()) * 1e-3);
+  var clocktime = _performance.now() * 1e-3;
+  var seconds = Math.floor(clocktime) + baseNow;
+  var nanoseconds = Math.floor(clocktime % 1 * 1e9);
+  if (previousTimestamp) {
+    seconds = seconds - previousTimestamp[0];
+    nanoseconds = nanoseconds - previousTimestamp[1];
+    if (nanoseconds < 0) {
+      seconds--;
+      nanoseconds += nanoPerSec;
+    }
+  }
+  return [seconds, nanoseconds];
+}
+hrtime.bigint = function(time) {
+  var diff2 = hrtime(time);
+  if (typeof BigInt === "undefined") {
+    return diff2[0] * nanoPerSec + diff2[1];
+  }
+  return BigInt(diff2[0] * nanoPerSec) + BigInt(diff2[1]);
+};
+var _maxListeners = 10;
+var _events = {};
+var _eventsCount = 0;
+function on() {
+  return process2;
+}
+var addListener = on;
+var once = on;
+var off = on;
+var removeListener = on;
+var removeAllListeners = on;
+var emit = noop;
+var prependListener = on;
+var prependOnceListener = on;
+function listeners(name) {
+  return [];
+}
+var process2 = {
+  version,
+  versions,
+  arch,
+  platform,
+  release,
+  _rawDebug,
+  moduleLoadList,
+  binding,
+  _linkedBinding,
+  _events,
+  _eventsCount,
+  _maxListeners,
+  on,
+  addListener,
+  once,
+  off,
+  removeListener,
+  removeAllListeners,
+  emit,
+  prependListener,
+  prependOnceListener,
+  listeners,
+  domain,
+  _exiting,
+  config,
+  dlopen,
+  uptime,
+  _getActiveRequests,
+  _getActiveHandles,
+  reallyExit,
+  _kill,
+  cpuUsage,
+  resourceUsage,
+  memoryUsage,
+  kill,
+  exit,
+  openStdin,
+  allowedNodeEnvironmentFlags,
+  assert,
+  features,
+  _fatalExceptions,
+  setUncaughtExceptionCaptureCallback,
+  hasUncaughtExceptionCaptureCallback,
+  emitWarning,
+  nextTick,
+  _tickCallback,
+  _debugProcess,
+  _debugEnd,
+  _startProfilerIdleNotifier,
+  _stopProfilerIdleNotifier,
+  stdout,
+  stdin,
+  stderr,
+  abort,
+  umask,
+  chdir,
+  cwd,
+  env,
+  title,
+  argv,
+  execArgv,
+  pid,
+  ppid,
+  execPath,
+  debugPort,
+  hrtime,
+  argv0,
+  _preload_modules,
+  setSourceMapsEnabled
+};
 var exports$1 = {};
-var _dewExec2 = false;
-function dew2() {
-  if (_dewExec2) return exports$1;
-  _dewExec2 = true;
+var _dewExec = false;
+function dew() {
+  if (_dewExec) return exports$1;
+  _dewExec = true;
   var process$1 = process2;
   function assertPath(path) {
     if (typeof path !== "string") {
@@ -9620,16 +9712,16 @@ function dew2() {
   }
   var posix2 = {
     // path.resolve([from ...], to)
-    resolve: function resolve3() {
+    resolve: function resolve22() {
       var resolvedPath = "";
       var resolvedAbsolute = false;
-      var cwd;
+      var cwd2;
       for (var i = arguments.length - 1; i >= -1 && !resolvedAbsolute; i--) {
         var path;
         if (i >= 0) path = arguments[i];
         else {
-          if (cwd === void 0) cwd = process$1.cwd();
-          path = cwd;
+          if (cwd2 === void 0) cwd2 = process$1.cwd();
+          path = cwd2;
         }
         assertPath(path);
         if (path.length === 0) {
@@ -9929,24 +10021,22 @@ function dew2() {
   exports$1 = posix2;
   return exports$1;
 }
-var exports2 = dew2();
-
-// node-modules-polyfills:path
-var _makeLong = exports2._makeLong;
-var basename = exports2.basename;
-var delimiter = exports2.delimiter;
-var dirname = exports2.dirname;
-var extname = exports2.extname;
-var format = exports2.format;
-var isAbsolute = exports2.isAbsolute;
-var join = exports2.join;
-var normalize = exports2.normalize;
-var parse = exports2.parse;
-var posix = exports2.posix;
-var relative = exports2.relative;
-var resolve = exports2.resolve;
-var sep = exports2.sep;
-var win32 = exports2.win32;
+var exports = dew();
+var _makeLong = exports._makeLong;
+var basename = exports.basename;
+var delimiter = exports.delimiter;
+var dirname = exports.dirname;
+var extname = exports.extname;
+var format = exports.format;
+var isAbsolute = exports.isAbsolute;
+var join = exports.join;
+var normalize = exports.normalize;
+var parse = exports.parse;
+var posix = exports.posix;
+var relative = exports.relative;
+var resolve = exports.resolve;
+var sep = exports.sep;
+var win32 = exports.win32;
 
 // node_modules/lib0/math.js
 var floor = Math.floor;
@@ -12292,7 +12382,7 @@ var readClientsStructRefs = (decoder, doc2) => {
         }
         default: {
           const cantCopyParentInfo = (info & (BIT7 | BIT8)) === 0;
-          const struct = new Item(
+          const struct = new Item2(
             createID(client, clock),
             null,
             // left
@@ -12683,7 +12773,7 @@ var createAbsolutePositionFromRelativePosition = (rpos, doc2, followUndoneDeleti
     }
     const res = followUndoneDeletions ? followRedone(store, rightID) : { item: getItem(store, rightID), diff: 0 };
     const right = res.item;
-    if (!(right instanceof Item)) {
+    if (!(right instanceof Item2)) {
       return null;
     }
     type2 = /** @type {AbstractType<any>} */
@@ -12706,7 +12796,7 @@ var createAbsolutePositionFromRelativePosition = (rpos, doc2, followUndoneDeleti
         return null;
       }
       const { item } = followUndoneDeletions ? followRedone(store, typeID) : { item: getItem(store, typeID) };
-      if (item instanceof Item && item.content instanceof ContentType) {
+      if (item instanceof Item2 && item.content instanceof ContentType) {
         type2 = item.content.type;
       } else {
         return null;
@@ -12821,7 +12911,7 @@ var getItem = (
 var findIndexCleanStart = (transaction, structs, clock) => {
   const index = findIndexSS(structs, clock);
   const struct = structs[index];
-  if (struct.id.clock < clock && struct instanceof Item) {
+  if (struct.id.clock < clock && struct instanceof Item2) {
     structs.splice(index + 1, 0, splitItem(transaction, struct, clock - struct.id.clock));
     return index + 1;
   }
@@ -12910,7 +13000,7 @@ var tryToMergeWithLefts = (structs, pos) => {
   for (; i > 0; right = left, left = structs[--i - 1]) {
     if (left.deleted === right.deleted && left.constructor === right.constructor) {
       if (left.mergeWith(right)) {
-        if (right instanceof Item && right.parentSub !== null && /** @type {AbstractType<any>} */
+        if (right instanceof Item2 && right.parentSub !== null && /** @type {AbstractType<any>} */
         right.parent._map.get(right.parentSub) === right) {
           right.parent._map.set(
             right.parentSub,
@@ -12943,7 +13033,7 @@ var tryGcDeleteSet = (ds, store, gcFilter) => {
         if (deleteItem.clock + deleteItem.len <= struct2.id.clock) {
           break;
         }
-        if (struct2 instanceof Item && struct2.deleted && !struct2.keep && gcFilter(struct2)) {
+        if (struct2 instanceof Item2 && struct2.deleted && !struct2.keep && gcFilter(struct2)) {
           struct2.gc(store, false);
         }
       }
@@ -13118,7 +13208,7 @@ var StackItem = class {
 };
 var clearUndoManagerStackItem = (tr, um, stackItem) => {
   iterateDeletedStructs(tr, stackItem.deletions, (item) => {
-    if (item instanceof Item && um.scope.some((type2) => isParentOf(type2, item))) {
+    if (item instanceof Item2 && um.scope.some((type2) => isParentOf(type2, item))) {
       keepItem(item, false);
     }
   });
@@ -13138,7 +13228,7 @@ var popStackItem = (undoManager, stack, eventType) => {
       const itemsToDelete = [];
       let performedChange = false;
       iterateDeletedStructs(transaction, stackItem.insertions, (struct) => {
-        if (struct instanceof Item) {
+        if (struct instanceof Item2) {
           if (struct.redone !== null) {
             let { item, diff: diff2 } = followRedone(store, struct.id);
             if (diff2 > 0) {
@@ -13156,7 +13246,7 @@ var popStackItem = (undoManager, stack, eventType) => {
         }
       });
       iterateDeletedStructs(transaction, stackItem.deletions, (struct) => {
-        if (struct instanceof Item && scope.some((type2) => isParentOf(type2, struct)) && // Never redo structs in stackItem.insertions because they were created and deleted in the same capture interval.
+        if (struct instanceof Item2 && scope.some((type2) => isParentOf(type2, struct)) && // Never redo structs in stackItem.insertions because they were created and deleted in the same capture interval.
         !isDeleted(stackItem.insertions, struct.id)) {
           itemsToRedo.add(struct);
         }
@@ -13258,7 +13348,7 @@ var UndoManager = class extends ObservableV2 {
         transaction.deleteSet,
         /** @param {Item|GC} item */
         (item) => {
-          if (item instanceof Item && this.scope.some((type2) => isParentOf(type2, item))) {
+          if (item instanceof Item2 && this.scope.some((type2) => isParentOf(type2, item))) {
             keepItem(item, true);
           }
         }
@@ -13403,7 +13493,7 @@ function* lazyStructReaderGenerator(decoder) {
         clock += len;
       } else if ((BITS5 & info) !== 0) {
         const cantCopyParentInfo = (info & (BIT7 | BIT8)) === 0;
-        const struct = new Item(
+        const struct = new Item2(
           createID(client, clock),
           null,
           // left
@@ -13479,7 +13569,7 @@ var sliceStruct = (left, diff2) => {
       left
     );
     const { client, clock } = leftItem.id;
-    return new Item(
+    return new Item2(
       createID(client, clock + diff2),
       null,
       createID(client, clock + diff2 - 1),
@@ -14242,7 +14332,7 @@ var typeListInsertGenericsAfter = (transaction, parent, referenceItem, content) 
   let jsonContent = [];
   const packJsonContent = () => {
     if (jsonContent.length > 0) {
-      left = new Item(createID(ownClientId, getState(store, ownClientId)), left, left && left.lastId, right, right && right.id, parent, null, new ContentAny(jsonContent));
+      left = new Item2(createID(ownClientId, getState(store, ownClientId)), left, left && left.lastId, right, right && right.id, parent, null, new ContentAny(jsonContent));
       left.integrate(transaction, 0);
       jsonContent = [];
     }
@@ -14264,14 +14354,14 @@ var typeListInsertGenericsAfter = (transaction, parent, referenceItem, content) 
           switch (c.constructor) {
             case Uint8Array:
             case ArrayBuffer:
-              left = new Item(createID(ownClientId, getState(store, ownClientId)), left, left && left.lastId, right, right && right.id, parent, null, new ContentBinary(new Uint8Array(
+              left = new Item2(createID(ownClientId, getState(store, ownClientId)), left, left && left.lastId, right, right && right.id, parent, null, new ContentBinary(new Uint8Array(
                 /** @type {Uint8Array} */
                 c
               )));
               left.integrate(transaction, 0);
               break;
             case Doc:
-              left = new Item(createID(ownClientId, getState(store, ownClientId)), left, left && left.lastId, right, right && right.id, parent, null, new ContentDoc(
+              left = new Item2(createID(ownClientId, getState(store, ownClientId)), left, left && left.lastId, right, right && right.id, parent, null, new ContentDoc(
                 /** @type {Doc} */
                 c
               ));
@@ -14279,7 +14369,7 @@ var typeListInsertGenericsAfter = (transaction, parent, referenceItem, content) 
               break;
             default:
               if (c instanceof AbstractType) {
-                left = new Item(createID(ownClientId, getState(store, ownClientId)), left, left && left.lastId, right, right && right.id, parent, null, new ContentType(c));
+                left = new Item2(createID(ownClientId, getState(store, ownClientId)), left, left && left.lastId, right, right && right.id, parent, null, new ContentType(c));
                 left.integrate(transaction, 0);
               } else {
                 throw new Error("Unexpected content type in insert operation");
@@ -14422,7 +14512,7 @@ var typeMapSet = (transaction, parent, key, value) => {
         }
     }
   }
-  new Item(createID(ownClientId, getState(doc2.store, ownClientId)), left, left && left.lastId, null, null, parent, key, content).integrate(transaction, 0);
+  new Item2(createID(ownClientId, getState(doc2.store, ownClientId)), left, left && left.lastId, null, null, parent, key, content).integrate(transaction, 0);
 };
 var typeMapGet = (parent, key) => {
   const val = parent._map.get(key);
@@ -15020,7 +15110,7 @@ var insertNegatedAttributes = (transaction, parent, currPos, negatedAttributes) 
   negatedAttributes.forEach((val, key) => {
     const left = currPos.left;
     const right = currPos.right;
-    const nextFormat = new Item(createID(ownClientId, getState(doc2.store, ownClientId)), left, left && left.lastId, right, right && right.id, parent, null, new ContentFormat(key, val));
+    const nextFormat = new Item2(createID(ownClientId, getState(doc2.store, ownClientId)), left, left && left.lastId, right, right && right.id, parent, null, new ContentFormat(key, val));
     nextFormat.integrate(transaction, 0);
     currPos.right = nextFormat;
     currPos.forward();
@@ -15064,7 +15154,7 @@ var insertAttributes = (transaction, parent, currPos, attributes) => {
     if (!equalAttrs(currentVal, val)) {
       negatedAttributes.set(key, currentVal);
       const { left, right } = currPos;
-      currPos.right = new Item(createID(ownClientId, getState(doc2.store, ownClientId)), left, left && left.lastId, right, right && right.id, parent, null, new ContentFormat(key, val));
+      currPos.right = new Item2(createID(ownClientId, getState(doc2.store, ownClientId)), left, left && left.lastId, right, right && right.id, parent, null, new ContentFormat(key, val));
       currPos.right.integrate(transaction, 0);
       currPos.forward();
     }
@@ -15089,7 +15179,7 @@ var insertText = (transaction, parent, currPos, text3, attributes) => {
   if (parent._searchMarker) {
     updateMarkerChanges(parent._searchMarker, currPos.index, content.getLength());
   }
-  right = new Item(createID(ownClientId, getState(doc2.store, ownClientId)), left, left && left.lastId, right, right && right.id, parent, null, content);
+  right = new Item2(createID(ownClientId, getState(doc2.store, ownClientId)), left, left && left.lastId, right, right && right.id, parent, null, content);
   right.integrate(transaction, 0);
   currPos.right = right;
   currPos.index = index;
@@ -15140,7 +15230,7 @@ var formatText = (transaction, parent, currPos, length3, attributes) => {
     for (; length3 > 0; length3--) {
       newlines += "\n";
     }
-    currPos.right = new Item(createID(ownClientId, getState(doc2.store, ownClientId)), currPos.left, currPos.left && currPos.left.lastId, currPos.right, currPos.right && currPos.right.id, parent, null, new ContentString(newlines));
+    currPos.right = new Item2(createID(ownClientId, getState(doc2.store, ownClientId)), currPos.left, currPos.left && currPos.left.lastId, currPos.right, currPos.right && currPos.right.id, parent, null, new ContentString(newlines));
     currPos.right.integrate(transaction, 0);
     currPos.forward();
   }
@@ -16177,13 +16267,13 @@ var YXmlFragment = class _YXmlFragment extends AbstractType {
    *
    * @public
    */
-  toDOM(_document = document, hooks = {}, binding) {
+  toDOM(_document = document, hooks = {}, binding2) {
     const fragment2 = _document.createDocumentFragment();
-    if (binding !== void 0) {
-      binding._createAssociation(fragment2, this);
+    if (binding2 !== void 0) {
+      binding2._createAssociation(fragment2, this);
     }
     typeListForEach(this, (xmlType) => {
-      fragment2.insertBefore(xmlType.toDOM(_document, hooks, binding), null);
+      fragment2.insertBefore(xmlType.toDOM(_document, hooks, binding2), null);
     });
     return fragment2;
   }
@@ -16507,7 +16597,7 @@ var YXmlElement = class _YXmlElement extends YXmlFragment {
    *
    * @public
    */
-  toDOM(_document = document, hooks = {}, binding) {
+  toDOM(_document = document, hooks = {}, binding2) {
     const dom = _document.createElement(this.nodeName);
     const attrs = this.getAttributes();
     for (const key in attrs) {
@@ -16517,10 +16607,10 @@ var YXmlElement = class _YXmlElement extends YXmlFragment {
       }
     }
     typeListForEach(this, (yxml) => {
-      dom.appendChild(yxml.toDOM(_document, hooks, binding));
+      dom.appendChild(yxml.toDOM(_document, hooks, binding2));
     });
-    if (binding !== void 0) {
-      binding._createAssociation(dom, this);
+    if (binding2 !== void 0) {
+      binding2._createAssociation(dom, this);
     }
     return dom;
   }
@@ -16602,7 +16692,7 @@ var YXmlHook = class _YXmlHook extends YMap {
    *
    * @public
    */
-  toDOM(_document = document, hooks = {}, binding) {
+  toDOM(_document = document, hooks = {}, binding2) {
     const hook = hooks[this.hookName];
     let dom;
     if (hook !== void 0) {
@@ -16611,8 +16701,8 @@ var YXmlHook = class _YXmlHook extends YMap {
       dom = document.createElement(this.hookName);
     }
     dom.setAttribute("data-yjs-hook", this.hookName);
-    if (binding !== void 0) {
-      binding._createAssociation(dom, this);
+    if (binding2 !== void 0) {
+      binding2._createAssociation(dom, this);
     }
     return dom;
   }
@@ -16683,10 +16773,10 @@ var YXmlText = class _YXmlText extends YText {
    *
    * @public
    */
-  toDOM(_document = document, hooks, binding) {
+  toDOM(_document = document, hooks, binding2) {
     const dom = _document.createTextNode(this.toString());
-    if (binding !== void 0) {
-      binding._createAssociation(dom, this);
+    if (binding2 !== void 0) {
+      binding2._createAssociation(dom, this);
     }
     return dom;
   }
@@ -17648,7 +17738,7 @@ var followRedone = (store, id2) => {
     item = getItem(store, nextID);
     diff2 = nextID.clock - item.id.clock;
     nextID = item.redone;
-  } while (nextID !== null && item instanceof Item);
+  } while (nextID !== null && item instanceof Item2);
   return {
     item,
     diff: diff2
@@ -17663,7 +17753,7 @@ var keepItem = (item, keep) => {
 };
 var splitItem = (transaction, leftItem, diff2) => {
   const { client, clock } = leftItem.id;
-  const rightItem = new Item(
+  const rightItem = new Item2(
     createID(client, clock + diff2),
     leftItem,
     createID(client, clock + diff2 - 1),
@@ -17773,7 +17863,7 @@ var redoItem = (transaction, item, redoitems, itemsToDelete, ignoreRemoteMapChan
   }
   const nextClock = getState(store, ownClientID);
   const nextId = createID(ownClientID, nextClock);
-  const redoneItem = new Item(
+  const redoneItem = new Item2(
     nextId,
     left,
     left && left.lastId,
@@ -17788,7 +17878,7 @@ var redoItem = (transaction, item, redoitems, itemsToDelete, ignoreRemoteMapChan
   redoneItem.integrate(transaction, 0);
   return redoneItem;
 };
-var Item = class _Item extends AbstractStruct {
+var Item2 = class _Item extends AbstractStruct {
   /**
    * @param {ID} id
    * @param {Item | null} left
@@ -18266,10 +18356,10 @@ var import_state3 = require("@codemirror/state");
 // src/ui.ts
 var import_obsidian = require("obsidian");
 var ShowTextModal = class extends import_obsidian.Modal {
-  constructor(app, title, message) {
+  constructor(app, title2, message) {
     super(app);
     this.message = message;
-    this.title = title;
+    this.title = title2;
   }
   onOpen() {
     this.titleEl.setText(this.title);
@@ -18279,8 +18369,8 @@ var ShowTextModal = class extends import_obsidian.Modal {
     this.containerEl.empty();
   }
 };
-var showTextModal = (app, title, text3) => {
-  new ShowTextModal(app, title, text3).open();
+var showTextModal = (app, title2, text3) => {
+  new ShowTextModal(app, title2, text3).open();
 };
 var showNotice = (text3, duration) => {
   return new import_obsidian.Notice(text3, duration);
@@ -18878,11 +18968,11 @@ var PeerdraftRecord = class extends ObservableV2 {
 };
 
 // node_modules/dexie/dist/modern/dexie.mjs
-var _global2 = typeof globalThis !== "undefined" ? globalThis : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : globalThis;
+var _global = typeof globalThis !== "undefined" ? globalThis : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : globalThis;
 var keys2 = Object.keys;
 var isArray2 = Array.isArray;
-if (typeof Promise !== "undefined" && !_global2.Promise) {
-  _global2.Promise = Promise;
+if (typeof Promise !== "undefined" && !_global.Promise) {
+  _global.Promise = Promise;
 }
 function extend(obj, extension) {
   if (typeof extension !== "object")
@@ -18932,12 +19022,12 @@ function slice(args2, start, end) {
 function override(origFunc, overridedFactory) {
   return overridedFactory(origFunc);
 }
-function assert(b) {
+function assert2(b) {
   if (!b)
     throw new Error("Assertion Failed");
 }
 function asap$1(fn) {
-  if (_global2.setImmediate)
+  if (_global.setImmediate)
     setImmediate(fn);
   else
     setTimeout(fn, 0);
@@ -18983,7 +19073,7 @@ function setByKeyPath(obj, keyPath, value) {
   if ("isFrozen" in Object && Object.isFrozen(obj))
     return;
   if (typeof keyPath !== "string" && "length" in keyPath) {
-    assert(typeof value !== "string" && "length" in value);
+    assert2(typeof value !== "string" && "length" in value);
     for (var i = 0, l = keyPath.length; i < l; ++i) {
       setByKeyPath(obj, keyPath[i], value[i]);
     }
@@ -19037,8 +19127,8 @@ var concat = [].concat;
 function flatten(a) {
   return concat.apply([], a);
 }
-var intrinsicTypeNames = "BigUint64Array,BigInt64Array,Array,Boolean,String,Date,RegExp,Blob,File,FileList,FileSystemFileHandle,FileSystemDirectoryHandle,ArrayBuffer,DataView,Uint8ClampedArray,ImageBitmap,ImageData,Map,Set,CryptoKey".split(",").concat(flatten([8, 16, 32, 64].map((num) => ["Int", "Uint", "Float"].map((t) => t + num + "Array")))).filter((t) => _global2[t]);
-var intrinsicTypes = intrinsicTypeNames.map((t) => _global2[t]);
+var intrinsicTypeNames = "BigUint64Array,BigInt64Array,Array,Boolean,String,Date,RegExp,Blob,File,FileList,FileSystemFileHandle,FileSystemDirectoryHandle,ArrayBuffer,DataView,Uint8ClampedArray,ImageBitmap,ImageData,Map,Set,CryptoKey".split(",").concat(flatten([8, 16, 32, 64].map((num) => ["Int", "Uint", "Float"].map((t) => t + num + "Array")))).filter((t) => _global[t]);
+var intrinsicTypes = intrinsicTypeNames.map((t) => _global[t]);
 arrayToObject(intrinsicTypeNames, (x) => [x, true]);
 var circularRefs = null;
 function deepClone(any2) {
@@ -19379,7 +19469,7 @@ var patchGlobalPromise = !!resolvedGlobalPromise;
 var stack_being_generated = false;
 var schedulePhysicalTick = resolvedGlobalPromise ? () => {
   resolvedGlobalPromise.then(physicalTick);
-} : _global2.setImmediate ? setImmediate.bind(null, physicalTick) : _global2.MutationObserver ? () => {
+} : _global.setImmediate ? setImmediate.bind(null, physicalTick) : _global.MutationObserver ? () => {
   var hiddenDiv = document.createElement("div");
   new MutationObserver(() => {
     physicalTick();
@@ -19666,10 +19756,10 @@ function handleRejection(promise, reason) {
     endMicroTickScope();
 }
 function propagateAllListeners(promise) {
-  var listeners = promise._listeners;
+  var listeners2 = promise._listeners;
   promise._listeners = [];
-  for (var i = 0, len = listeners.length; i < len; ++i) {
-    propagateToListener(promise, listeners[i]);
+  for (var i = 0, len = listeners2.length; i < len; ++i) {
+    propagateToListener(promise, listeners2[i]);
   }
   var psd = promise._PSD;
   --psd.ref || psd.finalize();
@@ -19924,7 +20014,7 @@ function switchToZone(targetZone, bEnteringZone) {
     nativePromiseProto.then = targetEnv.nthen;
     GlobalPromise.prototype.then = targetEnv.gthen;
     if (currentZone.global || targetZone.global) {
-      Object.defineProperty(_global2, "Promise", targetEnv.PromiseProp);
+      Object.defineProperty(_global, "Promise", targetEnv.PromiseProp);
       GlobalPromise.all = targetEnv.all;
       GlobalPromise.race = targetEnv.race;
       GlobalPromise.resolve = targetEnv.resolve;
@@ -19937,10 +20027,10 @@ function switchToZone(targetZone, bEnteringZone) {
   }
 }
 function snapShot() {
-  var GlobalPromise = _global2.Promise;
+  var GlobalPromise = _global.Promise;
   return patchGlobalPromise ? {
     Promise: GlobalPromise,
-    PromiseProp: Object.getOwnPropertyDescriptor(_global2, "Promise"),
+    PromiseProp: Object.getOwnPropertyDescriptor(_global, "Promise"),
     all: GlobalPromise.all,
     race: GlobalPromise.race,
     allSettled: GlobalPromise.allSettled,
@@ -19993,19 +20083,19 @@ function globalError(err, promise) {
   if (rv !== false)
     try {
       var event, eventData = { promise, reason: err };
-      if (_global2.document && document.createEvent) {
+      if (_global.document && document.createEvent) {
         event = document.createEvent("Event");
         event.initEvent(UNHANDLEDREJECTION, true, true);
         extend(event, eventData);
-      } else if (_global2.CustomEvent) {
+      } else if (_global.CustomEvent) {
         event = new CustomEvent(UNHANDLEDREJECTION, { detail: eventData });
         extend(event, eventData);
       }
-      if (event && _global2.dispatchEvent) {
+      if (event && _global.dispatchEvent) {
         dispatchEvent(event);
-        if (!_global2.PromiseRejectionEvent && _global2.onunhandledrejection)
+        if (!_global.PromiseRejectionEvent && _global.onunhandledrejection)
           try {
-            _global2.onunhandledrejection(event);
+            _global.onunhandledrejection(event);
           } catch (_) {
           }
       }
@@ -21322,14 +21412,14 @@ var STORAGE_MUTATED_DOM_EVENT_NAME = "x-storagemutated-1";
 var globalEvents = Events(null, DEXIE_STORAGE_MUTATED_EVENT_NAME);
 var Transaction2 = class {
   _lock() {
-    assert(!PSD.global);
+    assert2(!PSD.global);
     ++this._reculock;
     if (this._reculock === 1 && !PSD.global)
       PSD.lockOwnerFor = this;
     return this;
   }
   _unlock() {
-    assert(!PSD.global);
+    assert2(!PSD.global);
     if (--this._reculock === 0) {
       if (!PSD.global)
         PSD.lockOwnerFor = null;
@@ -21351,7 +21441,7 @@ var Transaction2 = class {
       return this;
     const idbdb = this.db.idbdb;
     const dbOpenError = this.db._state.dbOpenError;
-    assert(!this.idbtrans);
+    assert2(!this.idbtrans);
     if (!idbtrans && !idbdb) {
       switch (dbOpenError && dbOpenError.name) {
         case "DatabaseClosedError":
@@ -21364,7 +21454,7 @@ var Transaction2 = class {
     }
     if (!this.active)
       throw new exceptions.TransactionInactive();
-    assert(this._completion._state === null);
+    assert2(this._completion._state === null);
     idbtrans = this.idbtrans = idbtrans || (this.db.core ? this.db.core.transaction(this.storeNames, this.mode, { durability: this.chromeTransactionDurability }) : idbdb.transaction(this.storeNames, this.mode, { durability: this.chromeTransactionDurability }));
     idbtrans.onerror = wrap((ev) => {
       preventDefault(ev);
@@ -21945,15 +22035,15 @@ function runUpgraders(db, oldVersion, idbUpgradeTrans, reject2) {
   });
 }
 function updateTablesAndIndexes({ _novip: db }, oldVersion, trans, idbUpgradeTrans) {
-  const queue = [];
-  const versions = db._versions;
+  const queue2 = [];
+  const versions2 = db._versions;
   let globalSchema = db._dbSchema = buildGlobalSchema(db, db.idbdb, idbUpgradeTrans);
   let anyContentUpgraderHasRun = false;
-  const versToRun = versions.filter((v) => v._cfg.version >= oldVersion);
-  versToRun.forEach((version) => {
-    queue.push(() => {
+  const versToRun = versions2.filter((v) => v._cfg.version >= oldVersion);
+  versToRun.forEach((version2) => {
+    queue2.push(() => {
       const oldSchema = globalSchema;
-      const newSchema = version._cfg.dbschema;
+      const newSchema = version2._cfg.dbschema;
       adjustToExistingIndexNames(db, oldSchema, idbUpgradeTrans);
       adjustToExistingIndexNames(db, newSchema, idbUpgradeTrans);
       globalSchema = db._dbSchema = newSchema;
@@ -21974,8 +22064,8 @@ function updateTablesAndIndexes({ _novip: db }, oldVersion, trans, idbUpgradeTra
           change.del.forEach((idxName) => store.deleteIndex(idxName));
         }
       });
-      const contentUpgrade = version._cfg.contentUpgrade;
-      if (contentUpgrade && version._cfg.version > oldVersion) {
+      const contentUpgrade = version2._cfg.contentUpgrade;
+      if (contentUpgrade && version2._cfg.version > oldVersion) {
         generateMiddlewareStacks(db, idbUpgradeTrans);
         trans._memoizedTables = {};
         anyContentUpgraderHasRun = true;
@@ -22003,9 +22093,9 @@ function updateTablesAndIndexes({ _novip: db }, oldVersion, trans, idbUpgradeTra
         return returnValue && typeof returnValue.then === "function" ? DexiePromise.resolve(returnValue) : promiseFollowed.then(() => returnValue);
       }
     });
-    queue.push((idbtrans) => {
+    queue2.push((idbtrans) => {
       if (!anyContentUpgraderHasRun || !hasIEDeleteObjectStoreBug) {
-        const newSchema = version._cfg.dbschema;
+        const newSchema = version2._cfg.dbschema;
         deleteRemovedTables(newSchema, idbtrans);
       }
       removeTablesApi(db, [db.Transaction.prototype]);
@@ -22014,7 +22104,7 @@ function updateTablesAndIndexes({ _novip: db }, oldVersion, trans, idbUpgradeTra
     });
   });
   function runQueue() {
-    return queue.length ? DexiePromise.resolve(queue.shift()(trans.idbtrans)).then(runQueue) : DexiePromise.resolve();
+    return queue2.length ? DexiePromise.resolve(queue2.shift()(trans.idbtrans)).then(runQueue) : DexiePromise.resolve();
   }
   return runQueue().then(() => {
     createMissingTables(globalSchema, idbUpgradeTrans);
@@ -22137,7 +22227,7 @@ function adjustToExistingIndexNames({ _novip: db }, schema, idbtrans) {
       }
     }
   }
-  if (typeof navigator !== "undefined" && /Safari/.test(navigator.userAgent) && !/(Chrome\/|Edge\/)/.test(navigator.userAgent) && _global2.WorkerGlobalScope && _global2 instanceof _global2.WorkerGlobalScope && [].concat(navigator.userAgent.match(/Safari\/(\d*)/))[1] < 604) {
+  if (typeof navigator !== "undefined" && /Safari/.test(navigator.userAgent) && !/(Chrome\/|Edge\/)/.test(navigator.userAgent) && _global.WorkerGlobalScope && _global instanceof _global.WorkerGlobalScope && [].concat(navigator.userAgent.match(/Safari\/(\d*)/))[1] < 604) {
     db._hasGetAll = false;
   }
 }
@@ -22170,13 +22260,13 @@ var Version = class {
   stores(stores) {
     const db = this.db;
     this._cfg.storesSource = this._cfg.storesSource ? extend(this._cfg.storesSource, stores) : stores;
-    const versions = db._versions;
+    const versions2 = db._versions;
     const storesSpec = {};
     let dbschema = {};
-    versions.forEach((version) => {
-      extend(storesSpec, version._cfg.storesSource);
-      dbschema = version._cfg.dbschema = {};
-      version._parseStoresSpec(storesSpec, dbschema);
+    versions2.forEach((version2) => {
+      extend(storesSpec, version2._cfg.storesSource);
+      dbschema = version2._cfg.dbschema = {};
+      version2._parseStoresSpec(storesSpec, dbschema);
     });
     db._dbSchema = dbschema;
     removeTablesApi(db, [db._allTables, db, db.Transaction.prototype]);
@@ -23176,13 +23266,13 @@ var Dexie$1 = class _Dexie$1 {
     if (this.idbdb || this._state.isBeingOpened)
       throw new exceptions.Schema("Cannot add version when database is open");
     this.verno = Math.max(this.verno, versionNumber);
-    const versions = this._versions;
-    var versionInstance = versions.filter((v) => v._cfg.version === versionNumber)[0];
+    const versions2 = this._versions;
+    var versionInstance = versions2.filter((v) => v._cfg.version === versionNumber)[0];
     if (versionInstance)
       return versionInstance;
     versionInstance = new this.Version(versionNumber);
-    versions.push(versionInstance);
-    versions.sort(lowerVersionFirst);
+    versions2.push(versionInstance);
+    versions2.sort(lowerVersionFirst);
     versionInstance.stores({});
     this._state.autoSchema = false;
     return versionInstance;
@@ -23447,8 +23537,8 @@ function liveQuery(querier) {
 var domDeps;
 try {
   domDeps = {
-    indexedDB: _global2.indexedDB || _global2.mozIndexedDB || _global2.webkitIndexedDB || _global2.msIndexedDB,
-    IDBKeyRange: _global2.IDBKeyRange || _global2.webkitIDBKeyRange
+    indexedDB: _global.indexedDB || _global.mozIndexedDB || _global.webkitIndexedDB || _global.msIndexedDB,
+    IDBKeyRange: _global.IDBKeyRange || _global.webkitIDBKeyRange
   };
 } catch (e) {
   domDeps = { indexedDB: null, IDBKeyRange: null };
@@ -25031,7 +25121,22 @@ var saveJWT = (oid, jwt) => {
   localStorage.setItem(oid + "-peerdraft-jwt", jwt);
 };
 var getJWT = (oid) => {
-  return localStorage.getItem(oid + "-peerdraft-jwt");
+  const jwt = localStorage.getItem(oid + "-peerdraft-jwt");
+  if (!jwt) return null;
+  try {
+    const parts = jwt.split(".");
+    if (parts.length !== 3) return null;
+    const payload = JSON.parse(atob(parts[1]));
+    if (!payload.exp) return jwt;
+    if (payload.exp * 1e3 < Date.now()) {
+      localStorage.removeItem(oid + "-peerdraft-jwt");
+      return null;
+    }
+    return jwt;
+  } catch (e) {
+    localStorage.removeItem(oid + "-peerdraft-jwt");
+    return null;
+  }
 };
 var clearJWT = (oid) => {
   localStorage.removeItem(oid + "-peerdraft-jwt");
@@ -25412,8 +25517,8 @@ var moveFolder = async (oldPath, newPath, plugin) => {
 };
 
 // src/workspace/explorerView.ts
-var addIsSharedClass = (path, plugin) => {
-  const fileExplorers = getFileExplorers(plugin);
+var addIsSharedClass = async (path, plugin) => {
+  const fileExplorers = await getFileExplorers(plugin);
   fileExplorers.forEach((fileExplorer) => {
     const fileItem = fileExplorer.view.fileItems[path];
     if (!fileItem) return;
@@ -25421,8 +25526,8 @@ var addIsSharedClass = (path, plugin) => {
     el.addClass("pd-explorer-shared");
   });
 };
-var removeIsSharedClass = (path, plugin) => {
-  const fileExplorers = getFileExplorers(plugin);
+var removeIsSharedClass = async (path, plugin) => {
+  const fileExplorers = await getFileExplorers(plugin);
   fileExplorers.forEach((fileExplorer) => {
     const fileItem = fileExplorer.view.fileItems[path];
     if (!fileItem) return;
@@ -25430,12 +25535,13 @@ var removeIsSharedClass = (path, plugin) => {
     el.removeClass("pd-explorer-shared");
   });
 };
-var getFileExplorers = (plugin) => {
+var getFileExplorers = async (plugin) => {
   const fileExplorers = [];
-  plugin.app.workspace.iterateAllLeaves((leaf) => {
+  plugin.app.workspace.iterateAllLeaves(async (leaf) => {
     const viewType = leaf.view.getViewType();
     if (viewType === "file-explorer") {
       if (!fileExplorers.includes(leaf)) {
+        await leaf.loadIfDeferred();
         fileExplorers.push(leaf);
       }
     }
@@ -26159,11 +26265,11 @@ var Semaphore = class {
   }
   runExclusive(callback_1) {
     return __awaiter$2(this, arguments, void 0, function* (callback, weight = 1, priority = 0) {
-      const [value, release] = yield this.acquire(weight, priority);
+      const [value, release2] = yield this.acquire(weight, priority);
       try {
         return yield callback(value);
       } finally {
-        release();
+        release2();
       }
     });
   }
@@ -27761,7 +27867,6 @@ var _SharedDocument = class _SharedDocument extends SharedEntity {
       }
     });
     this._canvasExtenstions = new PeerdraftRecord();
-    addIsSharedClass(this.path, this.plugin);
   }
   static async fromView(view, plugin, opts = { permanent: false }) {
     if (!view.file) return;
@@ -27806,6 +27911,7 @@ var _SharedDocument = class _SharedDocument extends SharedEntity {
     await doc2.startIndexedDBSync();
     doc2.syncWithServer();
     plugin.activeStreamClient.add([doc2.shareId]);
+    addIsSharedClass(doc2.path, plugin);
     return doc2;
   }
   static async fromShareURL(url, plugin) {
@@ -27945,6 +28051,7 @@ var _SharedDocument = class _SharedDocument extends SharedEntity {
       doc2.addExtensionToLeaf(id2);
     }
     showNotice(`Inititialized share for ${file.path}`);
+    addIsSharedClass(file.path, plugin);
     return doc2;
   }
   static findByPath(path) {
@@ -28587,9 +28694,9 @@ var setupWS3 = (provider) => {
         provider.authenticated = true;
         provider.emit("authenticated", [data2]);
       } else if (messageType === SHOW_MESSAGE_MESSAGE) {
-        const title = readVarString(decoder);
+        const title2 = readVarString(decoder);
         const content = readVarString(decoder);
-        provider.emit("showMessage", [title, content]);
+        provider.emit("showMessage", [title2, content]);
       }
     };
     websocket.onerror = (event) => {
@@ -28655,7 +28762,7 @@ var PeerdraftWebsocketProvider = class extends ObservableV2 {
     resyncInterval = -1,
     maxBackoffTime = 2500,
     jwt = void 0,
-    version = ""
+    version: version2 = ""
   } = {}) {
     super();
     this.url = serverUrl;
@@ -28671,7 +28778,7 @@ var PeerdraftWebsocketProvider = class extends ObservableV2 {
     this._resyncInterval = 0;
     this.authenticated = false;
     this.jwt = jwt;
-    this.version = version;
+    this.version = version2;
     this._checkInterval = window.setInterval(() => {
       if (this.wsconnected && messageReconnectTimeout2 < getUnixTime() - this.wsLastMessageReceived) {
         this.ws.close();
@@ -28736,12 +28843,12 @@ var PeerdraftWebsocketProvider = class extends ObservableV2 {
     writeVarString(encoder, id2);
     this.sendMessage(toUint8Array(encoder));
   }
-  sendAuthenicationRequest(jwt, version) {
+  sendAuthenicationRequest(jwt, version2) {
     this.jwt = jwt;
     const encoder = createEncoder();
     writeVarUint(encoder, MESSAGE_AUTHENTICATION_REQUEST);
     writeVarString(encoder, jwt);
-    writeVarString(encoder, version);
+    writeVarString(encoder, version2);
     this.sendMessage(toUint8Array(encoder));
   }
   sendCreateNewSession(tempId) {
@@ -28758,14 +28865,14 @@ var PeerdraftWebsocketProvider = class extends ObservableV2 {
     writeVarString(encoder, id2);
     this.sendMessage(toUint8Array(encoder));
   }
-  authenticate(jwt, version) {
+  authenticate(jwt, version2) {
     return new Promise((resolve3) => {
       const handler = async (data) => {
         this.off("authenticated", handler);
         resolve3(data);
       };
       this.on("authenticated", handler);
-      this.sendAuthenicationRequest(jwt, version);
+      this.sendAuthenicationRequest(jwt, version2);
     });
   }
   sendMessage(buf) {
@@ -29107,7 +29214,7 @@ var createMenu = (menu, file, plugin, prefix = "") => {
 var import_obsidian20 = require("obsidian");
 
 // node_modules/svelte/src/runtime/internal/utils.js
-function noop() {
+function noop2() {
 }
 function run(fn) {
   return fn();
@@ -29132,7 +29239,7 @@ function subscribe2(store, ...callbacks) {
     for (const callback of callbacks) {
       callback(void 0);
     }
-    return noop;
+    return noop2;
   }
   const unsub = store.subscribe(...callbacks);
   return unsub.unsubscribe ? () => unsub.unsubscribe() : unsub;
@@ -29456,7 +29563,7 @@ function init(component, options, instance2, create_fragment2, not_equal, props2
     ctx: [],
     // state
     props: props2,
-    update: noop,
+    update: noop2,
     not_equal,
     bound: blank_object(),
     // lifecycle
@@ -29723,7 +29830,7 @@ var SvelteComponent = class {
   /** @returns {void} */
   $destroy() {
     destroy_component(this, 1);
-    this.$destroy = noop;
+    this.$destroy = noop2;
   }
   /**
    * @template {Extract<keyof Events, string>} K
@@ -29733,7 +29840,7 @@ var SvelteComponent = class {
    */
   $on(type2, callback) {
     if (!is_function(callback)) {
-      return noop;
+      return noop2;
     }
     const callbacks = this.$$.callbacks[type2] || (this.$$.callbacks[type2] = []);
     callbacks.push(callback);
@@ -29796,7 +29903,7 @@ var import_obsidian19 = require("obsidian");
 
 // node_modules/svelte/src/runtime/store/index.js
 var subscriber_queue = [];
-function writable(value, start = noop) {
+function writable(value, start = noop2) {
   let stop;
   const subscribers = /* @__PURE__ */ new Set();
   function set2(new_value) {
@@ -29820,11 +29927,11 @@ function writable(value, start = noop) {
   function update2(fn) {
     set2(fn(value));
   }
-  function subscribe3(run2, invalidate = noop) {
+  function subscribe3(run2, invalidate = noop2) {
     const subscriber = [run2, invalidate];
     subscribers.add(subscriber);
     if (subscribers.size === 1) {
-      stop = start(set2, update2) || noop;
+      stop = start(set2, update2) || noop2;
     }
     run2(value);
     return () => {
@@ -30043,7 +30150,7 @@ function create_if_block(ctx) {
     m(target, anchor) {
       insert(target, div3, anchor);
     },
-    p: noop,
+    p: noop2,
     d(detaching) {
       if (detaching) {
         detach(div3);
@@ -30449,8 +30556,8 @@ function create_fragment(ctx) {
         }
       }
     },
-    i: noop,
-    o: noop,
+    i: noop2,
+    o: noop2,
     d(detaching) {
       if (detaching) {
         detach(h1);
@@ -30702,9 +30809,9 @@ var PeerdraftPlugin9 = class extends import_obsidian21.Plugin {
           plugin.settings.plan.type = data.plan.type;
           saveSettings(plugin.settings, plugin);
         });
-        this.serverSync.on("showMessage", (title, content) => {
+        this.serverSync.on("showMessage", (title2, content) => {
           const modal = new import_obsidian21.Modal(plugin.app);
-          modal.setTitle(title);
+          modal.setTitle(title2);
           modal.contentEl.innerHTML = content;
           modal.open();
         });

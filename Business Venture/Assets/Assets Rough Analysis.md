@@ -34,7 +34,31 @@ Creating a hustle with funeral plots involves buying and selling plots for profi
 Remember, this business involves sensitive matters, so maintaining respect and professionalism is crucial.
 
 
+Set aside car money in Investments to borrow against to eventually use that money for a car instead of just saving for a car in your savings account
+
+Get a shitty car color that you don't like that is less popular to get a discount and then you can change it afterwards
+
+
+im good at assessing risk
+
+
+crypto make sense for me since in banking also can enable things like transferring assets peer to peer as well as  
+  
+trading or transferring assets on Saturday or Sunday when markets are typically closed as well international banking related things.
+
+
+Trade options at a lower rate terms of money allocated for option trading
+
+ Buy every week to eventually borrow against 
+- [ ] VOO in Roth IRA ✅ (Lower fees, better long-term compounding, no taxes).
+- [ ] SPY in Individual Brokerage (only if you want to trade frequently).
+- [ ] Buy and invest time into Crypto since working in banking maybe as a engineer
+
+
+
 #todo/stocks
+
+- [ ] Female and youth centric stocks like makeup etc look into influencer's to get tapped in like tiktok etc..
 - [ ] NIKE 
 - [ ] WPC
 - [ ] PLD
@@ -46,8 +70,7 @@ Remember, this business involves sensitive matters, so maintaining respect and p
 - [ ] CRIN
 - [ ] VEA
 - [ ] SCHH
-- [ ] VOO
-- [ ] SPY
+
 - [ ] VWO
 - [ ] VTI
 - [ ] COF
@@ -88,13 +111,13 @@ Game plan when you want to sell set target range
 #todo/purchases 
 - [ ] use vpn to get better deals on steam and airport
 
-#todo/Personal/Low 
+#todo/low/buisness 
 - [ ] You can also look for the biggest parking lots in your area call the landlord and see if they need somebody to clean and maintain their property  
  
 ### **Updated Budget Allocation Analysis**
 2025 investment project analysis copy for the next year after in chatgpt
 Future breakdown to follow
-- 50% real estate 
+- 50% real estate (probably lesser)
 - 15% companies in terms of stocks 
 - 15% ETFs in terms of stock and 
 - 18% in terms of speculative this can be crypto also startup Investments, Sports betting, then 

@@ -12,7 +12,7 @@ EditDate: 2024-03-11
 Relates:
 ---
 ### Look in to these projects
-#todo/Personal/Med/Dev 
+#todo/Med/Dev 
 - [ ] Open source project  https://www.freecodecamp.org/news/github-search-tips/
 - [ ] https://thenewstack.io/javascript-react-library-lets-developers-build-ai-chatbots/
 - [ ] https://dev.to/bigsondev/10-projects-to-skyrocket-your-coding-skills-19hl

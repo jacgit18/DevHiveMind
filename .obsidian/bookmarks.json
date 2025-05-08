@@ -16,36 +16,26 @@
       "path": "Personal/Mom.md"
     },
     {
-      "type": "group",
-      "ctime": 1684560266466,
-      "items": [
-        {
-          "type": "file",
-          "ctime": 1684560245773,
-          "path": "Other/Gen Todo.md"
-        },
-        {
-          "type": "file",
-          "ctime": 1684560245773,
-          "path": "Other/Fin Todo.md"
-        },
-        {
-          "type": "file",
-          "ctime": 1684560245773,
-          "path": "_Low Priority.md"
-        },
-        {
-          "type": "file",
-          "ctime": 1684560245773,
-          "path": "_Read.md"
-        }
-      ],
-      "title": "Main List"
-    },
-    {
       "type": "file",
       "ctime": 1684708791188,
       "path": "_NoteAssets/Obsidian Reads/Callouts.md"
+    },
+    {
+      "type": "url",
+      "ctime": 1744429646673,
+      "url": "https://chatgpt.com/?model=auto",
+      "title": "ChatGPT"
+    },
+    {
+      "type": "url",
+      "ctime": 1743357283773,
+      "url": "https://keep.google.com/",
+      "title": "Google Keep"
+    },
+    {
+      "type": "file",
+      "ctime": 1737449967471,
+      "path": "_Fitness/Priority Exercises.md"
     }
   ]
 }

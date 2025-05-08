@@ -40,5 +40,5 @@ Quotas extend beyond external APIs, finding utility within corporate firewalls. 
 Unlocking API potential demands strategic orchestration aligning business objectives with data traffic nuances. Quotas emerge as linchpins, weaving business acumen and technical finesse in the dynamic realm of API management.
 
 
-#todo/Personal/High/Dev 
+#todo/High/Dev 
 - [ ] Look into https://blog.quastor.org/p/rate-limiting-stripe

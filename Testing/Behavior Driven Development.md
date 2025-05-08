@@ -14,7 +14,7 @@ dg-publish: true
 ---
 Behavior Driven Development (BDD) extends the principles of Test Driven Development (TDD) by emphasizing writing scenarios from the end user's perspective, fostering collaboration between business stakeholders and developers.
 
-#todo/Personal/Low/Dev 
+#todo/Low/Dev 
 - [ ] https://nocodebdd.com/bdd-vs-tdd/
 
 BDD comprises two integral components:
