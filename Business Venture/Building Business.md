@@ -20,6 +20,7 @@ dg-publish:
 
 #todo/High/buisness 
 - [ ] Ask a business owner about their plans and whether they are open to selling; this can be a pathway to gaining business ownership.
+- [ ] Maybe rent a office running as your business and modify it to make it like a house
 - [ ] Look into Haitian passport [https://embassies.info/PermanentMissionofHaititoUNinNewYork](https://embassies.info/PermanentMissionofHaititoUNinNewYork)
 - Look into 
 	- [ ] network for marketing experts

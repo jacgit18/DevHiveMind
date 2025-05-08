@@ -1,5 +1,6 @@
 ---
-tags: 
+tags:
+  - MMA
 author:
   - gitUserNamePlaceHolder
 Comments: Placeholder comment any thing else you want to mention about the document.
@@ -96,3 +97,5 @@ In BJJ, circling inside or outside depends on your specific goal and the situati
 1. The type of control you wish to establish.
 2. Your ability to defend against potential counters.
 3. The level of risk you're willing to take in a given position or exchange.
+
+

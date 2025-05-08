@@ -74,18 +74,50 @@ This framework balances:
 By integrating imitation, iteration, and innovation, I aim to make smarter, future-proof investment decisions.
 
 #todo/High/finishWatching
-- [ ] stopped at 33:39 for Codie Sanchez podcast
+- [x] stopped at 38:00 for Codie Sanchez podcast ✅ 2025-02-17
+- [ ] Find Boring problems 😴
 - [ ] stopped at 30:00
-- [ ] people your crazy when you start a business or try a specific business that hasn't been done before 
+- [ ] people say your crazy when you start a business or try a specific business that hasn't been done before 
 
 ![](https://youtu.be/gc8VstbuOQA?si=W1MU8sb0FuqGiN-7&t=2019)
 
+Money Motivation get angry about people taking advantage of others because lack of it
+
+marketing, raise prices, sell related things after you buy the business 
+
+you can sell a business if you dont wanted and want to avoid taxes 
+
+understand there motivation for selling 
+
+[[Seller Financing]]
+
+
+- home services like window cleaning
+- handy man
+- hoa garbage company
+- use neighborhood apps to find and source for problems 
+
+the higher they go the more terms
+
+
+off market quiet sellers word to mouth and on market deals platforms that connect with you with people
+
+also maybe payless up front when coming up with terms 
+
+the more complexity higher chance for bullshit
+
+remove cancers quicker use third party to track finances for a period to see if there is any theft happening
+
+you have to find these opportunities 
 
 ![](https://www.youtube.com/watch?v=eTkFItOG3Kk)
 
 ![](https://www.youtube.com/watch?v=BG1tF2xH4f4)
 
 ![](https://www.youtube.com/watch?v=jyCJeglqCe4)
+
+![Money Expert: The GREATEST Wealth Transfer Just Started (Don’t Miss Out!) \| Chris Camillo - YouTube](https://www.youtube.com/watch?v=T1AGppA5s38)
+
 
 #todo/High/refineThought/
 - [ ] maybe Buy or invest basic business like a laundromat instead of a startup
@@ -99,6 +131,23 @@ Can use seller financing to get around taxes when selling business also keep an 
 The buyer can use future profits to buy the business from you
 
 If a book sucks at the beginning stop reading it move on to another book and if you find a good book read it multiple times
+
+
+### Pick something do one thing different from the competition
+![[comp.gif]]
+
+> Remember that the competition are your opposition not your enemy meaning they can become your  future calloborators
+
+You don't have to be an expert you just have to know more than the people looking for information  
+  
+But you can become an expert aiming for something niche and unique that other people aren't doing  
+  
+If you specialize in AI there are a whole bunch of other people chasing that they are other potential pathways so think about that because you have to compete against a lot  
+  
+Maybe Lean towards crypto or something outside the popular sector if your looking for money or experience  
+  
+You can maybe create quick guides around stuff that you are interested in and of this might be
+
 
 
 ## Taxes and trust to refine 

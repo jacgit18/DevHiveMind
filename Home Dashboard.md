@@ -112,11 +112,15 @@ dg-publish: true
 	renderHeatmapCalendar(this.container, calendarData) 
 	```
 
-> [!success]+ Remember
-> **Even if we only did what we were capable of, we'd astound ourselves.** 
 ---
 
 
+---
+
+> [!success]+ Remember
+> **Even if we only did what we were capable of, we'd astound ourselves.** 
+> 
+> ***Start with small, incremental steps to establish a foundation. Gradually build a consistent rhythm and sustain it over time. Once you’re comfortable, repeat the process until you can move fluidly. From there, adapt and alternate your tempo as needed to match the demands of the task at hand.***
 
 - #### Projects #mcl/list-card 
     - [[Project 1]]
@@ -158,8 +162,6 @@ action:
   command: daily-notes
 ```
 
-#todo 
-- [ ] Cleanup todo's make it cleaner
 ```meta-bind-button
 style: primary
 hidden: true
@@ -169,7 +171,6 @@ action:
   type: command
   command: periodic-notes:open-weekly-note
 ```
-
 ```meta-bind-button
 style: destructive
 label: View Tasks

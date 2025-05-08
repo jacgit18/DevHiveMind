@@ -12,6 +12,8 @@ Peer Reviewed: 0
 dg-publish:
 ---
 ## Evasive Movements Weakness
+> [!note] Side Note
+> Slipping and rolling can keep you in range which might be good or bad depending on intent, pulling back can leave you vulnerable to leg kicks. 
 
 ### **Pull** Openings
 ![](https://www.youtube.com/watch?v=cM0-19YYXVI&t=4s)
@@ -105,5 +107,5 @@ dg-publish:
     - Slipping laterally without maintaining balance can expose the boxer to trips like the inner reap or outer reap, which opponents can use to off-balance and take them down.
 
 ## Block
-### Cross Check
-![[backKickBlock.gif]]
+### Low kick Cross Check
+Block low kick to lead leg with rear stepping it back and parring the kick with the sole of the foot

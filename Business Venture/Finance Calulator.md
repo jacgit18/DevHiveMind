@@ -29,13 +29,34 @@ monthlyPreTaxIncome: 5200
 ### **Rough Financial Breakdown
 #todo/purchases/assets
 - [ ] futures trading
-- [ ] Need to set aside 2,000 or 1300 more to short stocks not part of balance 
+
+
+Crunch gym comes from cap one not citi credit card
+
+New monthly about 1,576.01 ???
 
 Do the math 12 months times monthly cost  
 
 You can withdraw Roth IRA contributions without penalties, as long as the amount does not exceed your total contributions—meaning you don’t withdraw earnings or capital gains.
   
 Of employer insurance or personal insurance when determining extra money in negotiating
+
+
+New Monthly assuming no missed days  
+2,805.76(4 weeks) -110 commuter benefits(max can set to 325 or 350) = 2,695.76 monthly
+
+Monthly benefits (Half amounts for bi weekly check amount)  
+hsa contribution 358.34
+Dental 13.74
+Medical 437.98
+Vision 6.72
+Commuter  110 
+401k 144
+
+---
+Total benefits 1070.78
+
+
 
 ```dataviewjs
 const { IdealSalary, Days, TotalWeeks, Salary, WorkDays } = dv.current();

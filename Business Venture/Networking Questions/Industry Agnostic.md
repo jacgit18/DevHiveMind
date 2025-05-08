@@ -31,7 +31,7 @@ dg-publish:
 
 ## Other Questions  
 - [ ] How is your industry changing, and what excites or worries you the most about these changes?  
-- [ ] Any interesting projects or in your career what was the most intresting one you have worked on? 
+- [ ] Any interesting projects or in your career what was the most interesting one you have worked on? 
 - [ ] What’s a common misconception people have about your job?  
 - [ ] How do you stay updated and informed about trends and developments in your field?  
 - [ ] How does your work impact your broader goals? Do you feel like it supports or aligns with your goals in some way?  

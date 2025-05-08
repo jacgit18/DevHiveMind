@@ -1,5 +1,6 @@
 ---
-tags: 
+tags:
+  - gym
 author:
   - gitUserNamePlaceHolder
 Comments: Placeholder comment any thing else you want to mention about the document.
@@ -28,8 +29,8 @@ Get to your reps to 15 sec each try to extend for 45 sec MAX
 	- ![](https://www.youtube.com/watch?v=gLogcYIvgRA)
 - Sumo Squat
 	- ![](https://www.youtube.com/watch?v=vBA3vyOxJv0)
-- Hip Thrust (_Barbell_)
-	- ![](https://www.youtube.com/watch?v=5S8SApGU_Lk)
+- Hip Thrust (_Barbell_) ^2559bb
+	- ![](https://www.youtube.com/watch?v=76t0z3Tdx6Q)
 - Kettlebell Rotational Clean
 	- ![](https://www.youtube.com/watch?v=Iofsc9ssQPE)
 - Bulgarian Split Squat  
@@ -37,6 +38,8 @@ Get to your reps to 15 sec each try to extend for 45 sec MAX
 - Kettlebell Deadlift
     - ![Deadlift (Kettlebell)](https://www.youtube.com/embed/hinonqqzatk?feature=oembed)
 - Leg Press 
+- Nordic Hamstring Curl
+	- ![Nordic Hamstring Curl - YouTube](https://www.youtube.com/watch?v=kjv4WQXWl_A) ^4e02bb
 ### Plyometrics(Jumps) Calisthenics
 - Box Jumps ^3b9f2c
 	- ![](https://www.youtube.com/watch?v=NBY9-kTuHEk)
@@ -59,3 +62,9 @@ Get to your reps to 15 sec each try to extend for 45 sec MAX
 	- ![](https://www.youtube.com/watch?v=NvYlFIawdgk)
 - Lunge with Rope Waves
 	- ![](https://www.youtube.com/watch?v=bPCZY_sG5eA&list=TLPQMTUxMjIwMjTU6oT9G9b_2w&index=3)
+- Reverse Hyper Extension(can use hyper ext machine)
+	- ![🎥 Reverse Hyperextensions - Incline Bench - YouTube](https://www.youtube.com/watch?v=Vr3FYsX6zRE)
+- n
+- Glute Ham Raise
+	- ![Glute ham raise on back extension - YouTube](https://www.youtube.com/watch?v=-DLrUNl30U4)
+- 

@@ -6,7 +6,7 @@ author:
   - chatgpt
 Comments: Placeholder comment any thing else you want to mention about the document.
 Purpose: This documentation discusses this is a glossary of technical terms with a brief explanation of technical jargon that can be backed link to.
-Status: Refinement
+Status: Perpetual
 Started: 
 EditDate: 2024-03-03
 Relates: 

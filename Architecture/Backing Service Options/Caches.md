@@ -24,6 +24,10 @@ Caches, usually smaller and faster in access times, act as temporary storage sol
   
 Cache implementations can vary based on the specific needs and architecture of a system. While cache servers like Redis are commonly used due to their specialized features and performance characteristics, caching can also be implemented in various other forms without using a dedicated cache server.
 
+
+#todo/Med/Dev 
+- [ ] [Redis Demystified: A Simple Introduction for System Design 🧩 - DEV Community](https://dev.to/priya01/redis-demystified-a-simple-introduction-for-system-design-56mb)
+
 # Cache Types
 ![[cacheEveryWhere.jpeg]]
 ## CDN Caching

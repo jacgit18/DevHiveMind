@@ -81,3 +81,9 @@ flowchart LR
 - **Wide Stance**:
     - Provides stability and balance for power strikes but may telegraph movements more easily.
     - Ideal for close-range situations, especially when anticipating a takedown attempt. A wide stance helps you stay grounded by lowering your center of gravity, making it harder for your opponent to off-balance or take you down.
+
+
+## Bladed Stance Strengths & Weaknesses 
+A semi-bladed or fully bladed stance affects both offensive and defensive kicking dynamics. A heavily bladed stance enhances side kicks, oblique kicks, and certain spinning techniques by aligning the hips for quick, linear strikes. However, it reduces the speed and fluidity of round kicks, switch kicks, and rear kicks, as the hips must rotate further to generate force, making these attacks more telegraphed.  
+  
+Defensively, a bladed stance can compromise balance and stability, making it harder to check kicks or shift weight efficiently. The narrower stance limits the ability to react quickly to incoming leg kicks, as the lead leg is more exposed and the hips are less squared for immediate defensive adjustments.

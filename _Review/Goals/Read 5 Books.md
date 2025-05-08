@@ -1,7 +1,7 @@
 ---
 area:
   - Personal Growth
-Progress: 0
+Progress: 4
 Target: 26
 Start: 
 Deadline: 2025-12-31

@@ -1,13 +1,14 @@
 ---
-tags: 
+tags:
+  - questions
 author:
   - gitUserNamePlaceHolder
 Comments: Placeholder comment any thing else you want to mention about the document.
 Purpose: This documentation discusses
-Status: 
-Started: 
+Status: Perpetual
+Started: 2024-08-01
 EditDate: 
-Relates: 
+Relates: "[[_Startup Stages_]]"
 Peer Reviewed: 0
 dg-publish:
 ---
@@ -17,7 +18,7 @@ dg-publish:
 #todo/Questions/TopFive 
 - [ ] What inspired you to start your company?
 - [ ] What problem does your startup solve, and how did you identify it?
-- [ ] I've noticed that many successful startups have unique funding journeys. I'm curious, how did your company navigate its funding process?
+- [ ] I've noticed that many successful startups have unique [[Funding |funding]] journeys. I'm curious, how did your company navigate its funding process?
 - [ ] What kind of support, beyond financial, have your angel investors provided and what do you look for in a Angel investor?
 - [ ] What did you do before you worked there or started your startup?
 - [ ] What has been the biggest challenges you've faced as a founder outside of funding?

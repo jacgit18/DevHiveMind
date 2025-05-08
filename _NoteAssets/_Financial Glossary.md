@@ -9,7 +9,7 @@ author:
   - chatgpt
 Comments: Placeholder comment any thing else you want to mention about the document.
 Purpose: This list out financial terminology.
-Status: Refinement
+Status: Perpetual
 Started: 
 EditDate: 2024-03-04
 Relates: 

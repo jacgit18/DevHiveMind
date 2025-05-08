@@ -17,6 +17,11 @@ dg-publish: true
 ---
 ![[AI vs Machine vs Deep.png]]
 
+#todo/Low/Dev 
+- [ ] Look into Conversational AI [Sesame](https://www.sesame.com)
+
+
+
 1. **AI (Artificial Intelligence) Layers:**
    - **Rule-Based Systems:**
      - Traditional AI systems may include rule-based components where explicit rules are defined to make decisions or take actions.

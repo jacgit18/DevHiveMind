@@ -30,3 +30,51 @@ Knee Shield Half Guard (Z-Guard)**
     - Use your bottom leg to trap their leg, limiting their movement.
     - Control their wrist or bicep to block strikes.
     - Transition to full guard or get back to your feet when possible.
+
+
+```mehrmaid
+flowchart LR
+A --> C
+B --> D
+C & D --> E
+E --> F & G
+F --> H
+G --> J
+subgraph X ["$X$"]
+A(("$A$"))
+end
+subgraph id1 ["$Y$"]
+G(("$G$"))
+end
+subgraph id3 ["$Z$"]
+E(("$E$"))
+end
+C(("$C$"))
+D(("$D$"))
+F(("$F$"))
+B(("$B$"))
+H(("$H$"))
+J(("$J$"))
+```
+
+
+
+
+```mehrmaid
+flowchart LR
+A --> B & C --> D --> E --> F & G
+G --> F
+A["![[logo.png|100]]"]
+B("![[logo-old.png|100]]")
+C("[[thisisalink]]")
+D("$f(x)=\sum_i^\inf x^i$")
+E("**Caption**
+1. **Bold**
+2. *Italic*
+3. ==Marker==
+- [ ] Point
+---
+Different Section")
+F("#uni")
+G(("$\dfrac{2}{\pi}+2$"))
+```

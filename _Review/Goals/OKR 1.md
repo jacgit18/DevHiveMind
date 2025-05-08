@@ -14,7 +14,7 @@ dg-publish:
 ---
  
 ## Objective Key Results
-#todo/Personal/High/Dev 
+#todo/High/Dev 
 - [ ] Solve LeetCode problems and master Grokking Algorithm Patterns to pass technical interviews.
 	- [ ] Revisit mock technical problems you tried next month.
 	- [ ] Follow [[Problem Solving Regimen]]

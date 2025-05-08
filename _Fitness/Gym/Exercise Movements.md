@@ -1,5 +1,6 @@
 ---
-tags: 
+tags:
+  - gym
 author:
   - gitUserNamePlaceHolder
 Comments: Placeholder comment any thing else you want to mention about the document.
@@ -11,7 +12,7 @@ Relates:
 Peer Reviewed: 0
 dg-publish:
 ---
-#todo/noteMerge 
+#todo/BAU/noteMerge 
 - [ ] combine with [[Breathing Guide]]
 
 ## Types of Exercise Movements  

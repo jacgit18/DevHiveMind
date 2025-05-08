@@ -25,6 +25,8 @@ Because, _What if you changed a behavior of an object, where some other parts o
 > _The key benefit of this design principle is that already tried and tested code is not touched which means they won’t break._
 
 
+#todo/BAU/noteRefine 
+- [ ] Review and combine with other notes that make sense
 
 
 1. **Java:**
