@@ -82,6 +82,11 @@ Get to your reps to 15 sec each try to extend for 45 sec MAX
 - Kneeling Cable Crunch ^c9a0f9
 	- ![Cable Crunch: Do It Right! - YouTube](https://www.youtube.com/watch?v=ToJeyhydUxU)
 
+- Super Rom Lateral ^767e47
+	- ![Super ROM Lateral Raises - YouTube](https://www.youtube.com/watch?v=IxHCPaByyE0)
+
+- Two Arm Dumbbell ^cf2720
+	- ![How To Do Two Arm Dumbbell Row \| Exercise Demo - YouTube](https://www.youtube.com/watch?v=VsRqipqJ6ng)
 ### Calisthenics (No Weights)
 - Plyometric Plank with Shoulder Tap
 - Dead Hang ^b1e482

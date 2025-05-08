@@ -110,10 +110,11 @@ Focus: Refine breathing, rhythm, and max performance
 
 - **Track punch counts** each week and aim for +10% improvement
     
-- Use apps or punch trackers (like FightCamp or punch counters on wearables)
+- Use apps or punch trackers (like FightCamp or punch counters on wearable)
     
 - Focus on **light, fast punches**, not power—minimize wasted motion
     
 - Recovery matters: sleep, protein intake, and hydration are key
     
+
 
