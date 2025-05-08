@@ -192,26 +192,24 @@ color purple
 
 
 #todo/BAU/Workout
-- [ ] Goal is 4 sets 8 reps update current sets and reps for exercises at CM Phase
+
 - [ ] Dead Hang at BK-MMA
 - [ ] Pick rest day each week
-- [ ] Pick 2 days out of the week to cook also can budget out two days out of the week to eat out.
 - [ ] Do Controlled Explosive Burpee
 - [ ] Do [[Grip Strength Training]] every day
 - [ ] Use wide grip for pull up machine dip
-- [ ] Make a fist if you feel off balance to create tension during exercises
-- [ ] If you don't feel the excercise in the muscle reduce the momentum
+- [ ] Anything Zercher same under arm grip
+- [ ] Eventually cycle in [[Resistance Band Workout]] 
 - [ ] Eventually add hanging weight to your pull-ups
 - [ ] Point toes inward keep butt down for Leg extension
-- [ ] Pick one experiment days play around with kettlebell and other stuff
 - [ ] Workout more in the winter body retains weight more Oct to Feb
+- [ ] If you don't feel the excercise in the muscle reduce the momentum
+- [ ] Make a fist if you feel off balance to create tension during exercises
+- [ ] Pick one experiment days play around with kettlebell and other stuff
 - [ ] Maybe limit exercise to 3 different exercise per session shifting phases 
-- [ ] Eventually cycle in [[Resistance Band Workout]] 
-
-
-#todo/BAU/Workout
-- [ ] Anything Zercher same under arm grip.
+- [ ] Goal is 4 sets 8 reps update current sets and reps for exercises at CM Phase
 - [ ] Hover in more of a standing position for abduction leg squeezing machine 70 to 80 lb.
+- [ ] Pick 2 days out of the week to cook also can budget out two days out of the week to eat out
 - [ ] For Single arm Variation of wide dumbbell curl try with cable starting behind back wrist height.
 - [ ] Keep elbows high above head and alt cable height at hip and foot level for Overhead extension.
 - [ ] If you took a cold bath before working out make sure you really stretch to warm up again to reduce injury.
