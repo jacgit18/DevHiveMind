@@ -80,7 +80,7 @@ Get to your reps to 15 sec each try to extend for 45 sec MAX
 
 
 - Kneeling Cable Crunch ^c9a0f9
-	- ![Cable Crunch: Do It Right! - YouTube](https://www.youtube.com/watch?v=ToJeyhydUxU)
+	- ![Cable Crunch - Abs / Core Exercise - Bodybuilding.com - YouTube](https://www.youtube.com/watch?v=3qjoXDTuyOE)
 
 - Super Rom Lateral ^767e47
 	- ![Super ROM Lateral Raises - YouTube](https://www.youtube.com/watch?v=IxHCPaByyE0)
