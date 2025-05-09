@@ -111,7 +111,7 @@ _~2–3 minutes total – pick 2–3_ or pick one to do for the whole time.
 - Rower or Incline Treadmill Walk – **1 min**
 - Jump Rope – **1 min**
 - Fast High Knees + Butt Kicks – **30s each**
-- Arm Circles (Large & Fast) – **20 reps each direction**
+- Arm Circles with 5lb dumbbells (Large & Fast) – **20 reps each direction**
 - Pike Push-Ups – **6–8 reps**
 - [[Core#^60b781 |Tuck Jumps to Plank]]– **6 reps**
 - Shadowboxing (fast-paced) – **30–45s**
@@ -396,7 +396,7 @@ Rev Crunch Flexion
 Back Extension Weighted and unweighted 
 Weighted kettle-bell Double crunch anti Extension
 Plank dip floor or bench
-Farmer marches 
+
 
 | Exercise                            | Old Weight | Weight    | Sets | Reps | Per Side | Body   | Priority | Type       | Tried | Body Part      | Motion | Exercise                                                | Position  | Range | Focus |
 | ----------------------------------- | ---------- | --------- | ---- | ---- | -------- | ------ | -------- | ---------- | ----- | -------------- | ------ | ------------------------------------------------------- | --------- | ----- | ----- |
