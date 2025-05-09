@@ -45,7 +45,7 @@ Get to your reps to 15 sec each try to extend for 45 sec MAX
 - Hack Squat  ^1de02b
 	- ![Hack Squat - YouTube](https://www.youtube.com/watch?v=rYgNArpwE7E)
 
-
+	- ![Reverse Hack Squat vs Front Squat \| Difference in Exercises - YouTube](https://www.youtube.com/watch?v=fJhhnCldVks)
 
 ### Plyometrics(Jumps) Calisthenics
 - Box Jumps ^3b9f2c
