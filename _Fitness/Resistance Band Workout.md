@@ -115,4 +115,3 @@ Light explosive reps to activate striking mechanics without fatigue.
 - Always work from an **athletic/fighting stance**
 - Emphasize **speed, snap, and control**
 - Quality over quantity: **precise reps > fatigue reps**
-    
