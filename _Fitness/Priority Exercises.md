@@ -330,7 +330,7 @@ color purple
 | Core  | [[Core#^6516d4\|Russian Twists]]            | Yes   | RC     | Kettlebell | 17.6     | Highest  | 00:00:20 | 3    | MediBall   |       | 0            |
 | Core  | [[Core#^fdacde \|Russian Twists]]           |       | RC     | Rope       | 0        | Highest  | 00:00:20 | 3    | Rope       |       | *0*          |
 | Full  | [[Full Body#^775bc4 \|Farmer’s Walk]]       |       | CM     | Kettlebell | 17.6     | Highest  | 00:00:20 | 3    | Dumbbell   |       | *20*         |
-| Full  | Farmer’s March                              |       | CM     | Kettlebell | 17.6     | Highest  | 00:00:20 | 3    | Dumbbell   |       | *20*         |
+| Full  | Farmer’s Marchfs                            |       | CM     | Kettlebell | 17.6     | Highest  | 00:00:20 | 3    | Dumbbell   |       | *20*         |
 | Upper | [[Upper#^b1e482 \|Dead Hang]]               | Yes   | PG     | Bodyweight | 0        | Highest  | 00:00:30 | 1    | Bodyweight |       | 0            |
 | Upper | Switch Catch                                | Yes   | EP     | Dumbell    | 5        | Highest  | 01:00:00 | 1    | Dumbbell   |       | *5*          |
 | Lower | [[Lower#^3b9f2c \|Box Jumps]]               |       | EP     | Jump       | 0        | Highest  | 00:00:20 | 3    | Jump       |       | *0*          |
