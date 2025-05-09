@@ -11,10 +11,7 @@ Relates:
 Peer Reviewed: 0
 dg-publish:
 ---
-Here’s a **smart $300/week food budget** that balances eating out (3x) with meal prepping (4x) while keeping things nutritious, tasty, and cost-effective.  
-  
----  
-  
+refine this and include different meals base on ingredients mentioned 
 ### **Budget Breakdown**  
 | Category | Cost (Weekly) | Notes |  
 |------------------------|--------------|-------|  
@@ -27,14 +24,12 @@ Here’s a **smart $300/week food budget** that balances eating out (3x) with me
 ---  
   
 ### **Meal Prep Plan (4 Days)**  
-**Goal:** High-protein, veggie-heavy, easy to reheat.  
-  
 #### **Breakfast (Cost: ~$20 total)**  
 - **Overnight Oats** (Oats + Greek yogurt + peanut butter + frozen berries)  
 - **Egg Muffins** (Eggs, spinach, turkey sausage)  
   
 #### **Lunch/Dinner (Cost: ~$80 total)**  
-- **Protein:** Chicken thighs ($10), ground turkey ($8), tofu ($5)  
+- **Protein:** Chicken thighs ($10), ground turkey ($8), steak, beef
 - **Carbs:** Rice ($3), sweet potatoes ($4), quinoa ($5)  
 - **Veggies:** Frozen mix ($8), fresh greens ($6)  
 - **Meal Ideas:**  
@@ -47,8 +42,6 @@ Here’s a **smart $300/week food budget** that balances eating out (3x) with me
 - Almonds ($7)  
 - Hummus + carrots ($8)  
   
-#### **Extras (Cost: ~$20 total)**  
-- Olive oil, spices, sauces  
   
 ---  
   
@@ -63,9 +56,7 @@ Here’s a **smart $300/week food budget** that balances eating out (3x) with me
 - Burger + fries  
 - Pizza slice + salad  
   
-**Rules:**  
-- No drinks (stick to water = save $4/meal).  
-- Skip apps/desserts unless sharing.  
+order grubhub with multiple things for two days 
   
 ---  
   
