@@ -25,9 +25,11 @@ Get to your reps to 15 sec each try to extend for 45 sec MAX
 	- ![](https://www.youtube.com/watch?v=hDIiCBIM6tE)
 - Kettlebell Step-Up ^c9d45f
 	- ![](https://www.youtube.com/watch?v=lXvA8exxWmE)
+
 - Deadlift(_**Dumbbell**_) 
-	- ![](https://www.youtube.com/watch?v=gLogcYIvgRA
-	
+	- ![](https://www.youtube.com/watch?v=gLogcYIvgRA)
+
+
 - DeadLift ^1260ed
 	- ![How to PROPERLY Deadlift for Growth (5 Easy Steps) - YouTube](https://www.youtube.com/watch?v=XxWcirHIwVo&t=315s)
 - Sumo Squat
