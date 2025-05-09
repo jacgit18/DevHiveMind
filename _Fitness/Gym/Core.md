@@ -38,3 +38,7 @@ Get to your reps to 15 sec each try to extend for 45 sec MAX
 - V-Up (Medicine Ball)
 	- ![](https://www.youtube.com/watch?v=xuTgCKRSy04)
 
+
+
+
+![8 Core movements you're not training (but should be) - YouTube](https://www.youtube.com/watch?v=1Pmrf7XtT3s&list=WL&index=1)

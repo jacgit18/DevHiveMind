@@ -390,11 +390,18 @@ color purple
 
 ![[muscle-anatomy-chart.jpg]]
 
+
+Rev Crunch Flexion
+Back Extension Weighted and unweighted 
+Weighted kettle-bell Double crunch anti Extension
+Plank dip floor or bench
+Farmer marches 
+
 | Exercise                            | Old Weight | Weight    | Sets | Reps | Per Side | Body   | Priority | Type       | Tried | Body Part      | Motion | Exercise                                                | Position  | Range | Focus |
 | ----------------------------------- | ---------- | --------- | ---- | ---- | -------- | ------ | -------- | ---------- | ----- | -------------- | ------ | ------------------------------------------------------- | --------- | ----- | ----- |
 | PullUp                              | 0          | 0         | 4    | 8    | ****     | Upper  | Highest  | Bodyweight | Yes   | Back Lats      | Pull   | [[Upper#^e81d31 \|PullUp]]                              | Neutral   | N/A   | PG    |
 | Kneeling Cable Crunch               | 33         | 44        | 4    | 8    | **44**   | Core   | Highest  | Cable      | Yes   | Upper Abdom    | Pull   | [[Upper#^c9a0f9 \|Kneeling Cable Crunch]]               | Grounded  | N/A   | CM    |
-| Rev Crunch                          | 0          | 0         | 4    | 8    | *0*      | Core   | Highest  | BodyWeight | Yes   | Lower Abdom    | Pull   | Rev Crunch                                              | Bench     | N/A   | RC    |
+| Rev Crunch                          | 0          | 0         | 4    | 8    | *0*      | Core   | Highest  | BodyWeight | Yes   | Lower Abdom    | Pull   | Rev Crunch try on incline bench                         | Bench     | N/A   | RC    |
 | Hack Squat                          | 270        | 300       | 4    | 8    | *150*    | Bottom | Highest  | Fixed      | Yes   | Hamstring      | Push   | [[Lower#^1de02b \|Hack Squat]]                          | N/A       | N/A   | CM    |
 | Single Leg Press                    | 180        | 270       | 4    | 8    | *135*    | Bottom | Highest  | Fixed      | Yes   | Hamstring      | Push   | Single Leg Press                                        | N/A       | N/A   | CM    |
 | Hip Thrust                          | 90         | 120       | 4    | 8    | *60*     | Bottom | Highest  | Fixed      | Yes   | Hamstring/Hips | Push   | [[Lower#^2559bb \|Hip Thrust]]                          | N/A       | N/A   | CM    |
