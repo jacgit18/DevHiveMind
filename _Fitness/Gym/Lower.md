@@ -34,6 +34,12 @@ Get to your reps to 15 sec each try to extend for 45 sec MAX
 	- ![How to PROPERLY Deadlift for Growth (5 Easy Steps) - YouTube](https://www.youtube.com/watch?v=XxWcirHIwVo&t=315s)
 - Sumo Squat
 	- ![](https://www.youtube.com/watch?v=vBA3vyOxJv0)
+
+
+![How To Preform The Double Racked Kettlebell B Stance Squat - YouTube](https://youtu.be/7On3si5XswU?si=goXbSM5ndEYNu-Qe) ^eadbc3
+
+![Best BJJ Strength Training Exercises 4: B Stance Squat - YouTube](https://youtu.be/5uFUvFXhp7U?si=3PGzZ_XSqbFGPbqN)
+
 - Hip Thrust (_Barbell_) ^2559bb
 	- ![](https://www.youtube.com/watch?v=76t0z3Tdx6Q)
 - Kettlebell Rotational Clean
@@ -79,4 +85,17 @@ Get to your reps to 15 sec each try to extend for 45 sec MAX
 - n
 - Glute Ham Raise
 	- ![Glute ham raise on back extension - YouTube](https://www.youtube.com/watch?v=-DLrUNl30U4)
-- 
+
+
+
+![90/90 Hip Switch (Improve Hip Health & Mobility) - YouTube](https://www.youtube.com/watch?v=qq_Z7sAmVrA) ^ee779f
+
+
+
+![Open Book Stretch for Upper Back Tightness - YouTube](https://www.youtube.com/watch?v=k8bDrMMP9H0) ^4158ea
+
+
+![Cat Cow - Exercise Library - YouTube](https://www.youtube.com/watch?v=ESJ6Ghvgr6k) ^9744bc
+
+
+![Quadruped Kickbacks - YouTube](https://www.youtube.com/watch?v=GO4ZH3L72ck) ^01867f

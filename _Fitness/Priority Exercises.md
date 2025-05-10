@@ -122,11 +122,12 @@ _~2–3 minutes total – pick 4–5_
 - Glute Bridges – **10–12 reps**
 - Superman Hold – **20–30s hold**
 - Calf Raises – **10–12 reps**
-- Quadruped Kickbacks – **8–10 reps/side**
+- [[Lower#^01867f |Quadruped Kickbacks]] – **8–10 reps/side**
 - Plyometric Plank Shoulder Taps – **8–12 taps**
 - Push-Up Hold (top and bottom) – **10s each**
 - [[Core#^5805af |Side Plank Hip dip]] (floor or bench feet on ground or bench) - **10–12 reps**
 - Shoulder Band Pull-Aparts – **15–20 reps**
+- [[Core#^a235d1 |Pancake Stretch]]
 - [[Upper#^5ff8c1 |Scapular Push-Ups ]] – **10–12 reps with deep breathing**
 	- Breathe deeply as you push your chest outward, squeezing your shoulder blades together. Then, reverse the motion by pulling your chest inward and separating your shoulder blades, keeping your elbows straight throughout the movement.
 
@@ -137,14 +138,13 @@ _~2–3 minutes total – pick 4–5_
 #### **3. Mobilize (Dynamic Range of Motion)**
 _~3–4 minutes total – choose a flow or 3–5 moves_
 
-- 90/90 Transitions – **8 reps**
+- [[Lower#^ee779f |90/90 Transitions ]] – **8 reps**
 - Standing Hip Circles – **10 circles/side**
 - Lunge with Overhead Reach – **5 reps/side**
-- “Open Book” Thoracic Twist – **6 reps/side**
+- [[Lower#^4158ea |“Open Book” Thoracic Twist]] – **6 reps/side**
 - Butterfly Hip Rocks → Butterfly Stretch – **8 rocks + 10s stretch**
-- Dynamic Cat-Cow → Hold Cat-Cow Stretch – **6–8 transitions + 10s hold**
-- Dynamic [[Core#^beda1a |Supine Windshield Wipers]] -> [[Core#^66bd94 |Spinal Twist ]] – **4–6 transitions + 10s pose**
-- Supine Windshield Wipers → Spinal Twist – **6–8 reps + 10s/side**
+- [[Lower#^9744bc |Dynamic Cat-Cow]] → Hold Cat-Cow Stretch – **6–8 transitions + 10s hold**
+- Dynamic [[Core#^beda1a |Supine Windshield Wipers]] – **4–6 transitions + 10s pose**
 - Dynamic Hip Flexor Swings -> [[Lower#^357346 |Lizard Pose ]] – **6 swings + 10s hold/side**
 	- For dynamic part lift your back knee off the ground if it was resting begin rocking forward and backward, shifting your weight between your front foot and back toes.
 
@@ -220,6 +220,8 @@ color purple
 - [ ] Eventually cycle in [[Resistance Band Workout]] 
 - [ ] Eventually add hanging weight to your pull-ups
 - [ ] Point toes inward keep butt down for Leg extension
+- [ ] for Zercher Squats put bar on frame instead of ground to make it easier to lift
+- [ ] After doing that deadlifts for a while switch to deficit deadlifts where you're standing on a plate and doing the deadlift which increases range of motion of the motion.
 - [ ] Workout more in the winter body retains weight more Oct to Feb
 - [ ] If you don't feel the excercise in the muscle reduce the momentum
 - [ ] Make a fist if you feel off balance to create tension during exercises
@@ -333,10 +335,11 @@ color purple
 | Core  | [[Core#^fdacde \|Russian Twists]]           |       | RC     | Rope       | 0        | Highest  | 00:00:20 | 3    | Rope       |       | *0*          |
 | Full  | [[Full Body#^775bc4 \|Farmer’s Walk]]       |       | CM     | Kettlebell | 17.6     | Highest  | 00:00:20 | 3    | Dumbbell   |       | *20*         |
 | Full  | Farmer’s Marchfs                            |       | CM     | Kettlebell | 17.6     | Highest  | 00:00:20 | 3    | Dumbbell   |       | *20*         |
+| Full  | [[Lower#^eadbc3 \|B-Stance Squat]]          |       | CM     | Kettlebell | 17.6     | Highest  | 01:00:00 | 3    | Dumbbell   |       | *20*<br>     |
 | Upper | [[Upper#^b1e482 \|Dead Hang]]               | Yes   | PG     | Bodyweight | 0        | Highest  | 00:00:30 | 1    | Bodyweight |       | 0            |
-| Upper | Switch Catch                                | Yes   | EP     | Dumbell    | 5        | Highest  | 01:00:00 | 1    | Dumbbell   |       | *5*          |
+| Upper | Switch Catch                                | Yes   | EP     | Dumbbell   | 5        | Highest  | 01:00:00 | 1    | Dumbbell   |       | *5*          |
 | Lower | [[Lower#^3b9f2c \|Box Jumps]]               |       | EP     | Jump       | 0        | Highest  | 00:00:20 | 3    | Jump       |       | *0*          |
-| Upper | [[Full Body#^05e3ec \|Seated Cable Row]]    | Yes   | PG     | Machine    | 0        | High     | 00:00:20 | 3    | Machine    | yes   | *0*          |
+| Upper | [[Full Body#^05e3ec \|Seated Cable Row]]    | Yes   | PG     | Fixed      | 0        | High     | 00:00:20 | 3    | Machine    | yes   | *0*          |
 | Full  | Jump Rope                                   |       | Cardio | Rope       | 0        | High     | 00:00:20 | 3    | Jump       |       | *0*          |
 | Lower | [[Lower#^aad169 \|Split Squat Jumps]]       |       | EP     | Jump       | 0        | Med      | 00:00:20 | 3    | Jump       |       | *0*          |
 | Lower | [[Lower#^afd7a0 \|Lateral Skater Jumps]]    |       | EP     | Jump       | 0        | Med      | 00:00:20 | 3    | Jump       |       | *0*          |
@@ -394,13 +397,15 @@ color purple
 ![[muscle-anatomy-chart.jpg]]
 
 
-
+![[Peek 2025-05-10 16-19.gif]]
 
 | Exercise                            | Old Weight | Weight    | Sets | Reps | Type       | Priority | Body   | Position            | Per Side | Exercise                                                       | Tried | Body Part      | Motion | Range | Focus |
 | ----------------------------------- | ---------- | --------- | ---- | ---- | ---------- | -------- | ------ | ------------------- | -------- | -------------------------------------------------------------- | ----- | -------------- | ------ | ----- | ----- |
 | PullUp                              | 0          | 0         | 4    | 8    | Bodyweight | Highest  | Upper  | Neutral             | ****     | [[Upper#^e81d31 \|PullUp]]                                     | Yes   | Back Lats      | Pull   | N/A   | PG    |
 | Kneeling Cable Crunch               | 33         | 44        | 4    | 8    | Cable      | Highest  | Core   | Grounded add twists | **44**   | [[Core#^9ffa73\|Kneeling Cable Crunch]]                        | Yes   | Upper Abdom    | Pull   | N/A   | CM    |
 | Rev Crunch                          | 0          | 0         | 4    | 8    | BodyWeight | Highest  | Core   | Bench               | *0*      | Rev Crunch try on incline bench                                | Yes   | Lower Abdom    | Pull   | N/A   | RC    |
+| Jefferson Curl                      | 0          | 0         | 4    | 8    | Kettlebell | Highest  | Back   | Platform            | *0*      | [[Core#^7f79f3 \| Jefferson Curl]]                             | Yes   | Lower Abdom    | Pull   | N/A   | RC    |
+| Rev Nordic                          | 0          | 0         | 4    | 8    | BodyWeight | Highest  | Core   | Ground              | *0*      | [[Core#^dd110e \|Rev Nordic]]                                  | Yes   | Lower Abdom    | Pull   | N/A   | RC    |
 | Hack Squat                          | 270        | 300       | 4    | 8    | Fixed      | Highest  | Bottom | N/A                 | *150*    | [[Lower#^1de02b \|Hack Squat]]                                 | Yes   | Hamstring      | Push   | N/A   | CM    |
 | Single Leg Press                    | 180        | 270       | 4    | 8    | Fixed      | Highest  | Bottom | N/A                 | *135*    | Single Leg Press                                               | Yes   | Hamstring      | Push   | N/A   | CM    |
 | Hip Thrust                          | 90         | 120       | 4    | 8    | Fixed      | Highest  | Bottom | N/A                 | *60*     | [[Lower#^2559bb \|Hip Thrust]]                                 | Yes   | Hamstring/Hips | Push   | N/A   | CM    |

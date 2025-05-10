@@ -59,6 +59,10 @@ Get to your reps to 15 sec each try to extend for 45 sec MAX
 - Overhead Press (_**Dumbbell**_)
 - Barbell Incline Bench Press ^3f7ed5
 	- ![How to PROPERLY Incline Barbell Bench Press (FIX YOUR FORM NOW) - YouTube](https://www.youtube.com/watch?v=5kyLUGVq_pk)
+
+![￼Best Bench Press Tutorial Ever Made - YouTube](https://youtu.be/EdDqD4aKwxM?si=_AANsohPdgl8jWwb)
+
+
 - Bent-Over Row (Low Priority)
 - Lat Pull Down  ^ba48ce
 	- ![How to do Lat Pulldowns (AVOID MISTAKES!) - YouTube](https://www.youtube.com/watch?v=SALxEARiMkw&list=TLPQMjcwNDIwMjWOBRc2Cey09g&index=3)
