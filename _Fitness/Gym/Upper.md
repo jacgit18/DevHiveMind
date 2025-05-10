@@ -62,6 +62,7 @@ Get to your reps to 15 sec each try to extend for 45 sec MAX
 - Bent-Over Row (Low Priority)
 - Lat Pull Down  ^ba48ce
 	- ![How to do Lat Pulldowns (AVOID MISTAKES!) - YouTube](https://www.youtube.com/watch?v=SALxEARiMkw&list=TLPQMjcwNDIwMjWOBRc2Cey09g&index=3)
+	- ![Single Arm Cable Lat Pulldown Machine - YouTube](https://youtu.be/HBC5s98wXko?si=qOBbyPwLaogAZVYI)
 - Dumbbell Overhead Extension  ^f128a8
 	- ![Dumbbell Overhead Tricep Extension - YouTube](https://www.youtube.com/watch?v=4--u52sHZPs)
 
@@ -79,14 +80,36 @@ Get to your reps to 15 sec each try to extend for 45 sec MAX
 	- ![Lateral Head Single Arm Cable Tricep Extension - YouTube](https://www.youtube.com/watch?v=vVW9LwaahNw) ^88a124
 
 
-- Kneeling Cable Crunch ^c9a0f9
-	- ![Cable Crunch - Abs / Core Exercise - Bodybuilding.com - YouTube](https://www.youtube.com/watch?v=3qjoXDTuyOE)
 
 - Super Rom Lateral ^767e47
 	- ![Super ROM Lateral Raises - YouTube](https://www.youtube.com/watch?v=IxHCPaByyE0)
 
 - Two Arm Dumbbell ^cf2720
 	- ![How To Do Two Arm Dumbbell Row \| Exercise Demo - YouTube](https://www.youtube.com/watch?v=VsRqipqJ6ng)
+
+
+![How To Perform HAMMER CURLS \| Biceps Exercise Tutorial - YouTube](https://youtu.be/BRVDS6HVR9Q?si=1ZzT73ed4fM-vwLt) ^eddf76
+
+
+
+![Incline Dumbbell Row - YouTube](https://www.youtube.com/watch?v=tZUYS7X50so&list=WL&index=10) ^4b1e6d
+
+Reverse Preacher Curl(3:14)
+![The ONLY 2 Exercises You Need For Massive Arms - YouTube](https://youtu.be/WvlDMlMx1Ok?si=01WmA2xTJVWDG5WI&t=194) ^b1905f
+
+
+
+![Chest Supported lateral raises \| FULL TUTORIAL \| You NEED to be doing these! - YouTube](https://www.youtube.com/watch?v=vglQ2WGUwcA) ^034a05
+
+
+
+
+![How To Do A Tricep Kickback - YouTube](https://youtu.be/JPmbMOu4IYw?si=CSUBKFdT26udvKqI) ^7abb42
+
+
+![Dumbbell Bench Wrist Curl - YouTube](https://youtu.be/2wPpcJBe03o?si=2jksy77b1xc4f5Pr) ^1156ec
+
+![How To: Reverse Seated Wrist Curl - YouTube](https://youtu.be/FW7URAaC-vE?si=rrbZUiV0loPicJB1)
 ### Calisthenics (No Weights)
 - Plyometric Plank with Shoulder Tap
 - Dead Hang ^b1e482
@@ -104,6 +127,19 @@ _Tip:_ Use added weight if possible; heavier weight makes pull-ups feel easier w
 - Tricep Dip ^a56816
 	- ![2 Forgotten Exercises That Blew Up My Chest & Unlocked My Posture - YouTube](https://www.youtube.com/watch?v=p5Lx2BeVKR4&t=186s)
 
+![CONCENTRATION CURL - YouTube](https://youtu.be/VMbDQ8PZazY?si=P0KE-GIfGr7KOoto) ^40500c
+
+
+![STOP Doing Dumbbell Press Like This (5 Mistakes Slowing Your Chest Gains) - YouTube](https://youtu.be/QsYre__-aro?si=Rnp1pgNN4f3aO-fX) ^db98b7
+
+
+
+
+![How to Pike Push Up \| Pike Push Up Progressions - YouTube](https://www.youtube.com/watch?v=Ajna6AxQdtw) ^4a9cd1
+
+
+
+![Cable Pallof Press - YouTube](https://www.youtube.com/watch?v=ma2OjgP5XDc&pp=ygUMUGFsbG9mIFByZXNz) ^bfafbc
 
 ### Plyometrics(Jumps) Calisthenics
 - Clap push-ups

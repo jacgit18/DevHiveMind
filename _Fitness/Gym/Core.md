@@ -42,3 +42,18 @@ Get to your reps to 15 sec each try to extend for 45 sec MAX
 
 
 ![8 Core movements you're not training (but should be) - YouTube](https://www.youtube.com/watch?v=1Pmrf7XtT3s&list=WL&index=1)
+
+![Feet Elevated Side Plank Hip Dip - YouTube](https://www.youtube.com/watch?v=7qfH2ff6GsQ) ^5805af
+
+
+![Dumbbell Double Crunch - YouTube](https://www.youtube.com/watch?v=JK_s_PHGL_w) ^450568
+
+
+
+[Cable Crunch Mistakes](https://www.youtube.com/@CoryArmstrongFitness)
+
+
+
+ ![Cable Crunch - Abs / Core Exercise - Bodybuilding.com - YouTube](https://www.youtube.com/watch?v=3qjoXDTuyOE) ^9ffa73
+
+

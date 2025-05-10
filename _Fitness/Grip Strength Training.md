@@ -13,7 +13,10 @@ dg-publish:
 ---
 ## 💪 Grip Strength Regimen: 50 lb to 200 lb (50 lb Increments)
 
-### 🎯 Goal: Progress through 50 lb, 100 lb, 150 lb, and 200 lb grippers
+![5 Grips To Try With Hand Gripper( VEIN GAINS ) - YouTube](https://youtu.be/83Hr9Bh6Kc8?si=di2mNiCGJRX_fv97)
+
+
+
 
 **Timeframe per level:** ~4–6 weeks (varies by individual)
 
