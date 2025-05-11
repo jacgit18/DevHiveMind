@@ -23,18 +23,18 @@ dg-publish:
 ### Stats
 - 15% body fat 
 - **Weight Last Year:** 115 lbs
-- **[[Water Intake|WaterToDrink]]:** 80 oz
+- **WaterToDrink:** 80 oz
 
 | Weeks | Weight | Date       |
 | ----- | ------ | ---------- |
 | 0     | 120    | 05/01/2025 |
 | 1     |        | 06/01/2025 |
-| 2     |        | 07/01/2025 |
-| 3     |        | 08/01/2025 |
-| 4     |        | 09/01/2025 |
-| 5     |        | 10/01/2025 |
-| 6     |        | 11/01/2025 |
-| 7     |        | 12/01/2025 |
+| 2     |        |            |
+| 3     |        |            |
+| 4     |        |            |
+| 5     |        |            |
+| 6     |        |            |
+| 7     |        |            |
 
 #### Calories
 > [!tip] Food for Thought
@@ -69,7 +69,7 @@ Start with a dynamic stretch to Improve blood flow and flexibility. End with a s
 - **Rotational/Core Strength**:  RC
 - **Pulling/Grip Strength**: PG
 
-Inhale on on **Eccentric** when lowering the weight and exhale on **Concentric** which the lift or basically the hard part of the exercise and while doing exercise where you are holding in place like a Plank maintain slow, steady breathing throughout the hold. 
+Inhale on on **Eccentric** when lowering the weight and exhale on **Concentric** which the lift or basically the hard part of the excercise and while doing excercise where you are holding in place like a Plank maintain slow, steady breathing throughout the hold. 
 
 1. **Avoid Risky Movements:**
     - Skip upright rows due to the unnatural shoulder position.
@@ -121,13 +121,17 @@ _~2–3 minutes total – pick 4–5_
 
 - Glute Bridges – **10–12 reps**
 - Superman Hold – **20–30s hold**
-- Standing Calf Raises – **10–12 reps**
+- Calf Raises – **10–12 reps**
 - [[Lower#^01867f |Quadruped Kickbacks]] – **8–10 reps/side**
 - Plyometric Plank Shoulder Taps – **8–12 taps**
 - Push-Up Hold (top and bottom) – **10s each**
 - [[Core#^5805af |Side Plank Hip dip]] (floor or bench feet on ground or bench) - **10–12 reps**
 - Shoulder Band Pull-Aparts – **15–20 reps**
 - [[Core#^a235d1 |Pancake Stretch]]
+- [[Lower#^b0a0df|Tib Raise]]
+- [[Lower#^8a3d01|Iso Calf Raise with Lunge]]
+- [[Lower#^58f942|Lunge ISO Heel Raise]]
+- [[Lower#^da4cd0| Banded Joint Mobilizations]]
 - [[Upper#^5ff8c1 |Scapular Push-Ups ]] – **10–12 reps with deep breathing**
 	- Breathe deeply as you push your chest outward, squeezing your shoulder blades together. Then, reverse the motion by pulling your chest inward and separating your shoulder blades, keeping your elbows straight throughout the movement.
 
@@ -413,6 +417,9 @@ color purple
 | Abduction Outer Thigh               | 90         | 110       | 4    | 8    | Fixed      | Highest  | Bottom | Spread              | **110**  | Abduction Outer Thigh                                          | Yes   | Outer Thigh    | Push   | 7     | CM    |
 | Bench Press                         | 30         | 35        | 4    | 8    | Barbell    | Highest  | Upper  | Flat                | *17.5*   | [[Upper#^bcb0df \|Bench Press]]                                | Yes   | Chest          | Push   | N/A   | CM    |
 | Bench Press                         | 30         | 35        | 4    | 8    | Barbell    | Highest  | Upper  | Incline             | *17.5*   | [[Upper#^3f7ed5 \|Bench Press]]                                | Yes   | Chest          | Push   | N/A   | CM    |
+| Angled Chest Fly                    | 20         | 20        | 4    | 8    | Band       | Highest  | Upper  | N/A                 | **90**   | Angled Chest Fly                                               | Yes   | Chest          | Push   | 4     | CM    |
+| Angled Chest Fly                    | 80         | 90        | 4    | 8    | Cable      | Highest  | Upper  | N/A                 | **90**   | Angled Chest Fly                                               | Yes   | Chest          | Push   | 4     | CM    |
+| Hex Chest Press                     | 20         | 20        | 4    | 8    | Band       | Highest  | Upper  | N/A                 | **90**   | Angled Chest Fly                                               | Yes   | Chest          | Push   | 4     | CM    |
 | Chest Fly                           | 80         | 90        | 4    | 8    | Fixed      | Highest  | Upper  | N/A                 | **90**   | [[Upper#^238b6e \|Chest Fly]]                                  | Yes   | Chest          | Push   | 4     | CM    |
 | Chest Press                         | 50         | 60        | 4    | 8    | Fixed      | Highest  | Upper  | Wide                | **60**   | Chest Press                                                    | Yes   | Chest          | Push   | 1     | CM    |
 | Seated Dip                          | 95         | 105       | 4    | 8    | Fixed      | Highest  | Upper  | N/A                 | **125**  | Seated Dip                                                     | Yes   | Tricep         | Push   | N/A   | CMEP  |

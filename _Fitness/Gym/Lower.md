@@ -99,3 +99,14 @@ Get to your reps to 15 sec each try to extend for 45 sec MAX
 
 
 ![Quadruped Kickbacks - YouTube](https://www.youtube.com/watch?v=GO4ZH3L72ck) ^01867f
+
+
+
+![Tib Raise with Eversion Inversion - YouTube](https://youtu.be/5AIrfsgYdKY?si=Q17wxWTyWFty_W_8) ^b0a0df
+
+
+![Iso Calf Raise with Lunge - YouTube](https://youtu.be/I8EfBzUFyMo?si=7LAxf79F9CnMSAxC) ^8a3d01
+
+![Lunge ISO Heel Raise - YouTube](https://youtu.be/Zwy4h0NukbQ?si=AYz0q6ZnrqsT7T6W) ^58f942
+
+![Banded Joint Mobilizations for Stiff Ankles - YouTube](https://youtu.be/ILSbK8RnGdI?si=86ONU_PSK-td-Nlm) ^da4cd0

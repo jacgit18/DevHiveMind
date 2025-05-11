@@ -115,3 +115,130 @@ Light explosive reps to activate striking mechanics without fatigue.
 - Always work from an **athletic/fighting stance**
 - Emphasize **speed, snap, and control**
 - Quality over quantity: **precise reps > fatigue reps**
+
+
+
+
+lateral lung
+
+calf press
+
+
+close grip curl
+
+kneeling concentration curl 
+
+standard curl 
+
+
+
+for standing chest excercise play with the angles and orientations
+
+
+
+seated underhand grip row
+
+
+
+Try with prolonged tension variation 
+
+squat 
+
+Donkey kick
+
+
+
+
+Drop curty lungg
+
+leg extentions while on stomach also try standing version pulling band up and pushing leg down 
+
+
+## Single leg on band
+lung
+
+single leg deadlift standing on one leg leaning forward while extending leg 
+
+## crossing bands pull
+bent over back fly 
+
+unbent over back fly 
+
+kick outs 
+
+## Middle band pull
+
+Standing upright row 
+
+Sumo Squat
+
+
+## Standing on Middle of  band pull
+front and lateral raise alternation
+
+Standing shoulder press keep band inside elbow not outside
+
+
+
+banded push ups
+
+alternating chest press duration based like a minute 
+
+seated rows  top of ankles under feet wrap
+
+
+
+seated face pulls 
+
+standing back fly
+
+crank the mower 
+
+Front raises 
+
+v raise cross 
+Scare Crow
+Shrugs
+
+
+
+2 upper
+2 lower
+
+1 full body experiment 
+
+
+2 core
+
+
+
+| Exercise Name                | Type       | Body Region |
+| ---------------------------- | ---------- | ----------- |
+| **Upper Body**               |            |             |
+| Banded Push-Up               | Bodyweight | Chest       |
+| Resistance Band Chest Press  | Band       | Chest       |
+| Resistance Band Rows         | Band       | Back        |
+| Banded Pull-Apart            | Band       | Shoulders   |
+| Overhead Shoulder Press      | Band       | Shoulders   |
+| Banded Bicep Curls           | Band       | Arms        |
+| Triceps Kickbacks            | Band       | Arms        |
+| **Lower Body**               |            |             |
+| Banded Squats                | Band       | Legs        |
+| Resistance Band Deadlifts    | Band       | Legs        |
+| Banded Lunges                | Band       | Legs        |
+| Glute Bridges with Band      | Band       | Glutes      |
+| Lateral Band Walks           | Band       | Hips        |
+| **Core**                     |            |             |
+| Banded Russian Twists        | Band       | Core        |
+| Resistance Band Woodchoppers | Band       | Core        |
+| Pallof Press                 | Band       | Core        |
+| **Full Body / Explosive**    |            |             |
+| Banded Thrusters             | Band       | Full Body   |
+| Resistance Band Burpees      | Band       | Full Body   |
+| Banded Kettlebell Swings     | Band       | Full Body   |
+| Resistance Band Jump Squats  | Band       | Full Body   |
+
+
+
+![THE COMPLETE RESISTANCE BAND EXERCISE GUIDE](https://www.youtube.com/watch?v=L08vWPkMftQ&utm_source=chatgpt.com)
+
