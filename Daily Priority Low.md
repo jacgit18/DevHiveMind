@@ -169,7 +169,8 @@ kanban-plugin: board
 
 ## ## Activities
 
-- [ ] ## Biking
+- [ ] ## Classes
+- [ ] [Woodworking Classes in Brooklyn - Craftsman Ave](https://craftsmanave.com/woodworking-classes/)
 - [ ] sign up for 202 and 302
 - [ ] [Bike New York](https://bikenewyork.enmotive.com/users/orders)
 - [ ] [NYC DOT - Bicycle Maps](https://www.nyc.gov/html/dot/html/bicyclists/bikemaps.shtml)
