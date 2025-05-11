@@ -42,3 +42,42 @@ Get to your reps to 15 sec each try to extend for 45 sec MAX
 
 
 ![8 Core movements you're not training (but should be) - YouTube](https://www.youtube.com/watch?v=1Pmrf7XtT3s&list=WL&index=1)
+
+![Feet Elevated Side Plank Hip Dip - YouTube](https://www.youtube.com/watch?v=7qfH2ff6GsQ) ^5805af
+
+
+![Dumbbell Double Crunch - YouTube](https://www.youtube.com/watch?v=JK_s_PHGL_w) ^450568
+
+
+
+[Cable Crunch Mistakes](https://www.youtube.com/@CoryArmstrongFitness)
+
+
+
+ ![Cable Crunch - Abs / Core Exercise - Bodybuilding.com - YouTube](https://www.youtube.com/watch?v=3qjoXDTuyOE) ^9ffa73
+
+
+![Reverse Nordic - YouTube](https://youtu.be/x2K8uH7dcqg?si=XvJ6HMTCCVyXnpTX) ^dd110e
+
+
+
+
+
+## Pancake
+
+![Pancake Stretch Routine \| Follow Along - YouTube](https://youtu.be/B1_YA47gtm0?si=_oBDpaLBejKI-8mV)
+
+
+
+![Pancake stretch for beginners - YouTube](https://youtu.be/iO1tsB5ygMg?si=YRVgj1ZB-Z_TRNvb) ^a235d1
+
+
+
+## Jefferson Curl
+
+
+![KB Jefferson curls - YouTube](https://www.youtube.com/watch?v=y80cxEpuYEU) ^7f79f3
+
+
+
+![Reverse Jefferson Curls - YouTube](https://www.youtube.com/watch?v=RhE5EIb-ZMg)
