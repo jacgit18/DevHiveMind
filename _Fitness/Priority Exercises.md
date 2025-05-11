@@ -121,7 +121,7 @@ _~2–3 minutes total – pick 4–5_
 
 - Glute Bridges – **10–12 reps**
 - Superman Hold – **20–30s hold**
-- Calf Raises – **10–12 reps**
+- Standing Calf Raises – **10–12 reps**
 - [[Lower#^01867f |Quadruped Kickbacks]] – **8–10 reps/side**
 - Plyometric Plank Shoulder Taps – **8–12 taps**
 - Push-Up Hold (top and bottom) – **10s each**
