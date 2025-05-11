@@ -174,6 +174,8 @@ kanban-plugin: board
 - [ ] [Bike New York](https://bikenewyork.enmotive.com/users/orders)
 - [ ] [NYC DOT - Bicycle Maps](https://www.nyc.gov/html/dot/html/bicyclists/bikemaps.shtml)
 - [ ] [Bike New York Events - 22 Upcoming Activities and Tickets \| Eventbrite](https://www.eventbrite.com/o/bike-new-york-13403125692#collections)
+- [ ] ## Stuff
+- [ ] [Special Waste Disposal · NYC311](https://portal.311.nyc.gov/article/?kanumber=KA-01973)
 
 
 
