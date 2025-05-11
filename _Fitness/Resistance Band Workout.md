@@ -118,6 +118,9 @@ Light explosive reps to activate striking mechanics without fatigue.
 
 
 
+Banded push up
+
+
 
 lateral lung
 
@@ -200,7 +203,9 @@ v raise cross
 Scare Crow
 Shrugs
 
+## Back leg on Band
 
+Cross body upper chest fly standing
 
 
 
