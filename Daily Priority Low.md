@@ -152,6 +152,7 @@ kanban-plugin: board
 
 ## ## Side Hustle
 
+- [ ] [Google Search Ticker Tags](https://www.google.com/search?q=ticker+tags&sourceid=chrome&ie=UTF-8)
 - [ ] Maybe create a company like make lab that 3D prints things for startups who don't want to invest in a 3D printer
 - [ ] sell cars at a dealership
 - [ ] Carpet cleaning
@@ -165,10 +166,18 @@ kanban-plugin: board
 - [ ] [Visual interpreter for the blind](<[https://aira.io/](https://aira.io/)>)
 
 
+## ## Activities
+
+- [ ] ## Biking
+- [ ] [Bike New York](https://bikenewyork.enmotive.com/users/orders)
+- [ ] [NYC DOT - Bicycle Maps](https://www.nyc.gov/html/dot/html/bicyclists/bikemaps.shtml)
+- [ ] [Bike New York Events - 22 Upcoming Activities and Tickets \| Eventbrite](https://www.eventbrite.com/o/bike-new-york-13403125692#collections)
+
+
 
 
 %% kanban:settings
 ```
-{"kanban-plugin":"board","list-collapse":[false,false,false,false,false,false,false,false,false]}
+{"kanban-plugin":"board","list-collapse":[false,false,false,false,false,false,false,false,false,false]}
 ```
 %%
