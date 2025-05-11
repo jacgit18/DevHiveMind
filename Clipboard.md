@@ -40,6 +40,11 @@ Iteration are repetitions where you are modifying the repetition with error corr
 If you fail its just a iteration that you can pivot from in terms of cutting losses when it makes sense to to continue to iterate and get where you want to be
 
 
+
+[Automating A Custom VPC Stack Using IaC \| by Donovan Tucker \| Medium](https://medium.com/@donovanjtucker14/automating-a-custom-vpc-stack-using-iac-a220676956c7)
+
+
+
 [Seeing Cloud Differently: My Experience with the AWS Well-Architected Framework - DEV Community](https://dev.to/glory_ugochukwu_57b6cf663/seeing-cloud-differently-my-experience-with-the-aws-well-architected-framework-2o52)
 
 
