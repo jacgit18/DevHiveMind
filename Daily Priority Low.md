@@ -170,6 +170,7 @@ kanban-plugin: board
 ## ## Activities
 
 - [ ] ## Classes
+- [ ] [Flatbush BJJ \| BJJ Classes Flatbush \| Brazilian Jiu Jitsu Flatbush \| Pillar Jiu Jitsu](https://pillarjiujitsu.com)
 - [ ] [Woodworking Classes in Brooklyn - Craftsman Ave](https://craftsmanave.com/woodworking-classes/)
 - [ ] sign up for 202 and 302
 - [ ] [Bike New York](https://bikenewyork.enmotive.com/users/orders)
@@ -177,6 +178,8 @@ kanban-plugin: board
 - [ ] [Bike New York Events - 22 Upcoming Activities and Tickets \| Eventbrite](https://www.eventbrite.com/o/bike-new-york-13403125692#collections)
 - [ ] ## Stuff
 - [ ] [Special Waste Disposal · NYC311](https://portal.311.nyc.gov/article/?kanumber=KA-01973)
+- [ ] [Directions — DOWNTOWN TENNIS CLUB](https://downtowntennisnyc.com/directions)
+- [ ] [Home \| Brooklyn — VITAL Climbing Gym](https://www.vitalclimbinggym.com/brooklyn)
 - [ ] [classes – New York City Kendo Club](https://www.nyckendoclub.com/classes/)
 - [ ] [New York City City Guide \| ClassPass](https://classpass.com/locations/new-york)
 - [ ] [New York City Kendo Club \| New York NY \| Facebook](https://www.facebook.com/kendoclubnyc/)
