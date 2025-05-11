@@ -171,6 +171,7 @@ kanban-plugin: board
 
 - [ ] ## Classes
 - [ ] [Flatbush BJJ \| BJJ Classes Flatbush \| Brazilian Jiu Jitsu Flatbush \| Pillar Jiu Jitsu](https://pillarjiujitsu.com)
+- [ ] [Beginner Salsa - NYC Tickets, Tue, Aug 27, 2024 at 6:00 PM \| Eventbrite](https://www.eventbrite.com/e/beginner-salsa-nyc-tickets-974109065437?aff=ebdssbdestsearch)
 - [ ] [Woodworking Classes in Brooklyn - Craftsman Ave](https://craftsmanave.com/woodworking-classes/)
 - [ ] sign up for 202 and 302
 - [ ] [Bike New York](https://bikenewyork.enmotive.com/users/orders)
