@@ -151,7 +151,7 @@ Donkey kick
 
 Drop curty lungg
 
-leg extentions while on stomach also try standing version pulling band up and pushing leg down 
+Single leg extension while on stomach also try standing version pulling band up and pushing leg down 
 
 
 ## Single leg on band
