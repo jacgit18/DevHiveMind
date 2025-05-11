@@ -164,11 +164,13 @@ kanban-plugin: board
 - [ ] Virtual receptionist
 - [ ] [Study pool](<[Studypool - Homework Help](https://www.studypool.com)>)
 - [ ] [Visual interpreter for the blind](<[https://aira.io/](https://aira.io/)>)
+- [ ] [#1 Bundle: All-in-one Personal Finance Package – Spread Sheet Max](https://spreadsheetmax.com/products/1-bundle-all-in-one-personal-finance-package?utm_medium=VID+3&utm_campaign=USA+LOOKALIKE+WB&utm_content=Lookalike+%28US%2C+7%25+to+8%25%29+-+WB+-+180+D&fbclid=PAZXh0bgNhZW0BMABhZGlkAasWJom0kH0BpsGUduguxP63hekWAmg5jSfischbcXw7lGDj8DxlrennZLwFFQnzodJ-Mw_aem_Bm9Ae1G9LXax2ZbPMbnCrA&utm_source=facebook&campaign_id=120214169698120493&ad_id=120214169820250493&variant=51726711718211)
 
 
 ## ## Activities
 
 - [ ] ## Biking
+- [ ] sign up for 202 and 302
 - [ ] [Bike New York](https://bikenewyork.enmotive.com/users/orders)
 - [ ] [NYC DOT - Bicycle Maps](https://www.nyc.gov/html/dot/html/bicyclists/bikemaps.shtml)
 - [ ] [Bike New York Events - 22 Upcoming Activities and Tickets \| Eventbrite](https://www.eventbrite.com/o/bike-new-york-13403125692#collections)
