@@ -176,6 +176,14 @@ kanban-plugin: board
 - [ ] [Bike New York Events - 22 Upcoming Activities and Tickets \| Eventbrite](https://www.eventbrite.com/o/bike-new-york-13403125692#collections)
 - [ ] ## Stuff
 - [ ] [Special Waste Disposal · NYC311](https://portal.311.nyc.gov/article/?kanumber=KA-01973)
+- [ ] [classes – New York City Kendo Club](https://www.nyckendoclub.com/classes/)
+- [ ] [New York City City Guide \| ClassPass](https://classpass.com/locations/new-york)
+- [ ] [New York City Kendo Club \| New York NY \| Facebook](https://www.facebook.com/kendoclubnyc/)
+- [ ] [Area 53 - Your Guide to Unlimited Entertainment in NYC](https://area53nyc.com)
+- [ ] [Epic Laser Tag & Mini Bowling - Area 53 NYC](https://area53nyc.com/dumbo/)
+- [ ] ## Road Trip
+- [ ] [MAKE MY DRIVE FUN](https://makemydrivefun.com)
+- [ ] [Airbnb \| Pocono Mountains - Vacation Rentals & Places to Stay](https://www.airbnb.com/s/Pocono-Mountains--PA/homes?refinement_paths%5B%5D=%2Fhomes&place_id=ChIJDa0vIgq9xIkRvRIDApq1P0w&checkin=2025-01-16&checkout=2025-01-17&adults=2)
 
 
 
