@@ -119,6 +119,10 @@ Don’t fixate on just one area. Keep cycling your attention between these body 
 - Technique 2: Creating Distance with a Push Kick-Like Shin Frame  
 	- “If someone crashes in close and you don’t have time to throw a clean strike, you can twist your hips and throw your leg up as if you're throwing a roundhouse — but instead of aiming to snap, drive your shin into their body and push off. Think of it like a cross between a kick and a frame: your shin lands on their torso or hip, and you use it to create space and reset the distance.”
 
+- When pushing someone, drive through their chest with one arm while using the other to block or frame. Pull your hips back for leverage, and consider lifting a leg to generate momentum or set up a pivot.
+
+- Block with your glove angled at 45°, positioning it near the outside corner of your eyebrow as you throw. This gives you coverage while staying compact and ready to counter.
+
 #### Optimal Striking Defense Order of Operations 
 this is a thought process which is a mental order of operation not a rule more of a guideline:
 1. Use footwork to stay at a safe range or angle.  
