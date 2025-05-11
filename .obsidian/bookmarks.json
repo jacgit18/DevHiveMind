@@ -42,6 +42,12 @@
       "ctime": 1746924279766,
       "url": "http://127.0.0.1:8384/",
       "title": "Note Sync"
+    },
+    {
+      "type": "url",
+      "ctime": 1746925441616,
+      "url": "https://github.com/jacgit18/DevHiveMind",
+      "title": "jacgit18/DevHiveMind: DevHiveMind a software developer Encyclopedia."
     }
   ]
 }

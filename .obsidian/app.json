@@ -13,7 +13,7 @@
   "trashOption": "system",
   "useMarkdownLinks": false,
   "showFrontmatter": true,
-  "readableLineLength": false,
+  "readableLineLength": true,
   "propertiesInDocument": "hidden",
   "livePreview": true,
   "defaultViewMode": "preview",
