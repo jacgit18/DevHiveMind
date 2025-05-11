@@ -23,18 +23,18 @@ dg-publish:
 ### Stats
 - 15% body fat 
 - **Weight Last Year:** 115 lbs
-- **WaterToDrink:** 80 oz
+- **[[Water Intake|WaterToDrink]]:** 80 oz
 
 | Weeks | Weight | Date       |
 | ----- | ------ | ---------- |
 | 0     | 120    | 05/01/2025 |
 | 1     |        | 06/01/2025 |
-| 2     |        |            |
-| 3     |        |            |
-| 4     |        |            |
-| 5     |        |            |
-| 6     |        |            |
-| 7     |        |            |
+| 2     |        | 07/01/2025 |
+| 3     |        | 08/01/2025 |
+| 4     |        | 09/01/2025 |
+| 5     |        | 10/01/2025 |
+| 6     |        | 11/01/2025 |
+| 7     |        | 12/01/2025 |
 
 #### Calories
 > [!tip] Food for Thought
@@ -69,7 +69,7 @@ Start with a dynamic stretch to Improve blood flow and flexibility. End with a s
 - **Rotational/Core Strength**:  RC
 - **Pulling/Grip Strength**: PG
 
-Inhale on on **Eccentric** when lowering the weight and exhale on **Concentric** which the lift or basically the hard part of the excercise and while doing excercise where you are holding in place like a Plank maintain slow, steady breathing throughout the hold. 
+Inhale on on **Eccentric** when lowering the weight and exhale on **Concentric** which the lift or basically the hard part of the exercise and while doing exercise where you are holding in place like a Plank maintain slow, steady breathing throughout the hold. 
 
 1. **Avoid Risky Movements:**
     - Skip upright rows due to the unnatural shoulder position.
@@ -122,11 +122,7 @@ _~2–3 minutes total – pick 4–5_
 - Glute Bridges – **10–12 reps**
 - Superman Hold – **20–30s hold**
 - Calf Raises – **10–12 reps**
-<<<<<<< HEAD
-- Quadruped Kickbac – **8–10 reps/side**
-=======
 - [[Lower#^01867f |Quadruped Kickbacks]] – **8–10 reps/side**
->>>>>>> origin/Jacgit18personalContribution
 - Plyometric Plank Shoulder Taps – **8–12 taps**
 - Push-Up Hold (top and bottom) – **10s each**
 - [[Core#^5805af |Side Plank Hip dip]] (floor or bench feet on ground or bench) - **10–12 reps**
