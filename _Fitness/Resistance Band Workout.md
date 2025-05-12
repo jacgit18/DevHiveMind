@@ -135,15 +135,15 @@ standard curl
 
 
 
-for standing chest excercise play with the angles and orientations
 
 
 
-seated underhand grip row
 
 
 
-Try with prolonged tension variation 
+
+
+
 
 squat 
 
@@ -162,66 +162,97 @@ lung
 
 single leg deadlift standing on one leg leaning forward while extending leg 
 
-## crossing bands pull
-bent over back fly 
-
-unbent over back fly 
 
 kick outs 
 
-## Middle band pull
+
+
+
+
+
+
+
+
+
+
+
+
+## Back leg on Band
+
+
+# Resistance Band Workout
+
+
+alternating lib excercise make duration based like a minute 
+
+Try exercises  with prolonged tension variation 
+
+
+for standing chest excercise play with the angles and orientations
+
+## Back
+
+### Seated with bands Tied
+
+rows  top of ankles under feet wrap
+face pulls 
+underhand grip row
+
+### Front Leg on Band
+
+Single Arm crank the mower 
+
+
+
+### crossing bands pull
+bent over back fly 
+
+
+
+### Stretching Bands
+
+standing back fly
+
+## CHEST 
+### Standing Wide on band
+
+alternating Cross body upper chest fly  
+
+
+### Grounded on band 
+*Banded push up different variations*
+
+
+## Shoulder
+
+### Standing on Middle of  band pull
+front and lateral raise alternation
+
+Standing shoulder press keep band inside elbow not outside
+
+Front raises 
+
+
+### Standing Wide on band
+Shrugs
+
+
+Scare Crow
+
+
+### crossing bands pull
+
+unbent over back fly 
+
+v raise Narrow feet 
+
+
+### Middle band pull
 
 Standing upright row 
 
 Sumo Squat
 
-
-## Standing on Middle of  band pull
-front and lateral raise alternation
-
-Standing shoulder press keep band inside elbow not outside
-
-
-
-
-
-alternating chest press duration based like a minute 
-
-seated rows  top of ankles under feet wrap
-
-
-
-seated face pulls 
-
-standing back fly
-
-
-
-Front raises 
-
-v raise cross 
-Scare Crow
-Shrugs
-
-## Back leg on Band
-
-
-
-
-# Back
-
-## Front Leg on Band
-
-Single Arm crank the mower 
-
-# CHEST 
-## Standing Wide on band
-
-alternating Cross body upper chest fly  
-
-
-## Grounded on band 
-*Banded push up different variations*
 
 
 
