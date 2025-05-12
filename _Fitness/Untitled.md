@@ -13,123 +13,122 @@ dg-publish:
 ---
 # **Resistance Band Workout Guide**
 
-**General Notes:**
+![THE COMPLETE RESISTANCE BAND EXERCISE GUIDE](https://www.youtube.com/watch?v=L08vWPkMftQ&utm_source=chatgpt.com)
 
+## **General Notes:**
 - Many of these movements can be done with either bands or cables.
 - For **alternating limb** exercises, use **time-based sets** (e.g., 1 minute).
 - **Play with angles** (especially for chest and shoulder work).
 - For **single-leg banded exercises**, the **rear leg** often takes the resistance.
 - Try **prolonged tension** variations for added intensity.
 
----
-
-## **1. Legs** _(Priority: Foundation for full-body control + strength)_
-
-### **Standing – Band Under Both Feet**
-- Squats
-- Lateral lunges
-- Calf presses
-
-### **Standing – Middle Band Pull**
-- Sumo squat
-
-### **Single Leg on Band**
-- Lunges
-- Donkey kicks
-
-### **Front Leg on Band**
-- Drop curtsy lunges
-
-### **Crossing Bands Pull**
-- Kick-outs
-
-
-## **2. Back** _(Priority: Posture, pulling balance, and spinal control)_
-
-### **Seated with Bands Tied**
-- Rows (band tied near ankles or under feet)
-- Face pulls
-- Underhand grip rows
-
-
-### **Front Leg on Band**
-- Single-arm “crank-the-mower” rows
-
-
-### **Crossing Bands Pull**
-- Bent-over back fly
-
-
-### **Stretching Bands**
-- Standing back fly
-
-
-## **3. Chest** _(Priority: Angle variation and time-under-tension)_
-
-### **Standing – Wide Stance on Band**
-- Alternating cross-body upper chest fly (play with angles)
-
-
-### **Grounded (Band Behind Back or Anchored)**
-- Banded push-up variations
-
-
-
-## **4. Biceps** _(Priority: Balanced arm development and elbow health)_
-
-### **Standing – Band Under Both Feet**
-- Close-grip curl
-- Standard bicep curl
-- Wide-grip curl _(short head focus)_
-- Drag curl _(long head focus)_
-- Reverse-grip curl _(brachialis, use light weight)_
-- Hammer curl _(brachialis, allows heavier weight)_
-
-
-### **Single-Leg on Band**
-- Kneeling concentration curl _(preference-based)_
-- Squatting concentration curl _(adds leg engagement)_
-
-### **Standing on Band – U Shape**
-- Squatting preacher curl
-
-
-## **5. Triceps** _(Priority: Balanced push strength and arm aesthetics)_
-
-- Tricep kickbacks 
-- Overhead tricep extensions *(Single leg)*
-- Lying tricep extensions _(on back)_
 
 ---
 
-## **6. Shoulders** _(Priority: Control, posture, and multi-directional stability)_
+## **1. Legs** _(Priority: 1 – Foundational strength, full-body engagement)_
 
-### **Standing – Middle of Band**
-- Front & lateral raise (alternating)
-- Standing shoulder press _(band inside elbows)_
-- Front raises
-- Scarecrow raises
-- Upright rows
-
-### **Crossing Bands Pull**
-- Bent-over back fly
-- V-raise (narrow feet stance)
-
-
-
-## **7. Forearms** _(Priority: Grip endurance and arm function)_
-
-- Band roll-ups & unrolls _(wrist control)_
-
-### **Standing on Band – U Shape**
-- Squatting forearm curls
+- Squats – **1**
+    
+- Sumo squat – **1**
+    
+- Lunges – **1**
+    
+- Drop curtsy lunges – **2** _(balance challenge, less stable)_
+    
+- Lateral lunges – **2**
+    
+- Donkey kicks – **3** _(glute isolation, but less resistance range)_
+    
+- Calf presses – **3**
+    
+- Kick-outs – **4** _(can be awkward to load properly with bands)_
+    
 
 
+## **2. Back** _(Priority: 1 – Posture, pulling strength, injury prevention)_
 
-## **8. Core** _(Priority: Stability and anti-rotation)_
+- Rows – **1**
+    
+- Face pulls – **1**
+    
+- Underhand grip rows – **2**
+    
+- Single-arm “crank-the-mower” rows – **2**
+    
+- Bent-over back fly – **3** _(hard to load properly without good angle)_
+    
+- Standing back fly – **3** _(needs controlled tension to be effective)_
+    
 
-- Side dips (standing with band)
 
-### **Single Leg on Band**
+## **3. Chest** _(Priority: 2 – Band-friendly with smart angle play)_
 
-- Core lifting oblique pulls
+- Banded push-up variations – **1**
+    
+- Alternating cross-body upper chest fly – **2** _(great with good tension control)_
+    
+
+
+## **4. Biceps** _(Priority: 3 – Excellent isolation, bands allow strict form)_
+
+- Hammer curl – **1** _(strong, functional angle for bands)_
+    
+- Standard curl – **1**
+    
+- Close-grip curl – **2**
+    
+- Wide-grip curl – **2**
+    
+- Drag curl – **2**
+    
+- Reverse-grip curl – **2** _(great for brachialis but lighter resistance)_
+    
+- Squatting preacher curl – **3**
+    
+- Kneeling concentration curl – **3** _(pure isolation)_
+    
+- Squatting concentration curl – **3** _(adds complexity but can be awkward)_
+    
+
+
+## **5. Triceps** _(Priority: 3 – Useful for full arm balance, depends on tension setup)_
+
+- Overhead tricep extensions – **1**  *(Single Leg)*
+    
+- Lying tricep extensions – **2**
+    
+- Tricep kickbacks – **3** _(harder to load effectively with bands)_
+    
+
+
+## **6. Shoulders** _(Priority: 4 – Useful, but band resistance varies across range)_
+
+- Standing shoulder press – **1**
+    
+- Front & lateral raise (alternating) – **2**
+    
+- Upright rows – **2**
+    
+- Front raises – **2**
+    
+- Scarecrow raises – **3**
+
+- V-raise – **3**
+    
+- Bent-over back fly – **3**
+    
+
+
+## **7. Core** _(Priority: 4 – Supplementary, good for control & obliques)_
+
+- Core lifting oblique pulls – **2**
+    
+- Side dips – **3**
+    
+
+
+## **8. Forearms** _(Priority: 5 – Good finishers, but low load with bands)_
+
+- Band roll-ups & unrolls – **3**
+    
+- Squatting forearm curls – **3**

@@ -261,6 +261,7 @@ color purple
 	- [ ] Stop Eating 3 hour before sleep
 	- [ ] Stop Drinking 2 hour before sleep
 	- [ ] Stop Scrolling 1 hour before sleep
+- [ ] For one of the days at Gym  focus on full body while also using the day for experimenting.
 
 
 | Best Order Of Operations  | Day     | Session Type | Options (Choose 1)                                    |
@@ -275,6 +276,8 @@ color purple
 
 
 #### Core Exercise Lift Goals
+
+Prioritize resistance bands for explosive phase they can be used for other phase but the most optimal use case is for explosive power.
 
 ##### **Explosive Power (EP Phase)**
 
