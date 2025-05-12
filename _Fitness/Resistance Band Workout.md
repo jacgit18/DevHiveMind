@@ -120,7 +120,7 @@ Light explosive reps to activate striking mechanics without fatigue.
 
 
 
-## Back leg on Band
+
 
 
 # Resistance Band Workout
@@ -133,6 +133,9 @@ Try exercises  with prolonged tension variation
 
 for standing chest excercise play with the angles and orientations
 
+
+for Single leg on band excercise alot of the time it is the back leg
+
 ## Biceps
 
 ### Standing different ranges on band 
@@ -140,11 +143,23 @@ close grip curl
 
 standard curl 
 
+Wide grip bicep curl (Short head focus)
+
+Drag curl(Long head focus)
+
+Reverse Grip bicep curl (Brachialis) - use lighter weights more focused Brachialis
+
+Hammer curl  (Brachialis) - allows for heavier weights
 
 ### Single leg on band
 
-kneeling concentration curl 
+kneeling concentration curl either 
+Squatting concentration curl
 
+Overhead tricep extension
+
+### Standing  on Band like a U Shape  
+Squatting preacher curl
 
 ## Legs
 

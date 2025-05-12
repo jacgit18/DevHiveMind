@@ -45,10 +45,14 @@ Keep sparing for Muay Thai down to 2 or 3 times a month for safety and quality.
 	- [ ] High movement breathing **in and out through the mouth** but still try to be efficient about breathing patterns in this scenario
 
 
-### **Rule for Checking Kicks**  
-- **Front leg**: Default for low kicks, long range, and retreating.  
-- **Back leg**: Default for body kicks, advancing, and close range.  
-- **Always adjust based on stance (orthodox/southpaw) and opponent’s timing**.
+### **Leg Kick Principles**
+- **Inside leg kicks (to lead leg):**  Harder to check, easier to catch. Use with timing and angle awareness.
+- **Outside leg kicks (to lead leg):**  Easier to land, but also easier to get checked. Use with setup and exit strategy.
+
+#### Best Leg For Checking 
+- **Front leg:**  Best for low kicks, long-range attacks, and retreating counters.
+- **Back leg:**  Preferred for body kicks, forward pressure, and close-range exchanges.
+- **Adapt constantly:**  Adjust based on stance (orthodox/southpaw) and opponent’s timing.
 
 
 ## **Striking Principles**
