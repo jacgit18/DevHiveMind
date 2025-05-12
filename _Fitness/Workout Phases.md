@@ -59,3 +59,24 @@ dg-publish:
 
 
  
+
+  
+  
+  
+#### **Sets & Reps**  
+| **Goal**              | **Sets** | **Reps** | **Tempo**                            | **Rest**  |     |
+| --------------------- | -------- | -------- | ------------------------------------ | --------- | --- |
+| **Explosive Power**   | 3–5      | 3–6      | Explosive concentric, slow eccentric | 2–3 min   |     |
+| **Strength Compound** | 3–4      | 8–12     | Controlled (2-1-2)                   | 60–90 sec |     |
+| **Endurance**         | 2–3      | 15–20+   | Fast, rhythmic                       | 30–45 sec |     |
+  
+  
+  
+  
+### **2. Set & Rep Recommendations**  
+| **Exercise Type** | **Sets** | **Reps** | **Tempo** | **Notes** |  
+|-------------------------|----------|----------|-----------------|----------------------------|  
+| **Lower-Body Explosive** (e.g., Banded Squat Jumps) | 3–5 | 3–6 | Fast concentric, controlled eccentric | Stop when speed declines (~10% drop in height/speed). |  
+| **Upper-Body Explosive** (e.g., Banded Plyo Push-Ups) | 3–4 | 4–8 | Explode up, slow down | Focus on punching/clinch power. |  
+| **Rotational Power** (e.g., Banded Medicine Ball Throws) | 3–4 | 5–8/side | Max effort throws | Anchor band behind for resistance. |  
+| **Sport-Specific** (e.g., Banded Knee Strikes) | 3–5 | 5–8/leg | Fast recoil | Mimic Muay Thai clinch knees. |

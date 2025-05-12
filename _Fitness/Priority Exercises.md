@@ -278,7 +278,9 @@ color purple
 
 Prioritize resistance bands for explosive phase they can be used for other phase but the most optimal use case is for explosive power also 2 sets 10 reps for warm up when it comes to bands.
 
-##### **Explosive Power (EP Phase)**
+##### **Explosive Power (EP Phase)
+
+3 to 5 sets of 3 to 6 reps on average to aim for 
 
 | Exercise             | Goal Weight    | Adjusted Timeline |
 | -------------------- | -------------- | ----------------- |
