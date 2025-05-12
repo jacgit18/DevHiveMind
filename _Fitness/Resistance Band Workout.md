@@ -118,7 +118,7 @@ Light explosive reps to activate striking mechanics without fatigue.
 
 
 
-Banded push up
+
 
 
 
@@ -205,7 +205,19 @@ Shrugs
 
 ## Back leg on Band
 
-Cross body upper chest fly standing
+
+
+
+
+
+# CHEST 
+## Standing Wide on band
+
+alternating Cross body upper chest fly  
+
+
+## Grounded on band 
+*Banded push up different variations*
 
 
 
