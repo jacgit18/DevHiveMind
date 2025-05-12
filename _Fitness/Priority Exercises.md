@@ -222,7 +222,6 @@ color purple
 - [ ] Use wide grip for pull up machine dip
 - [ ] Anything Zercher same under arm grip try with resistance bands
 - [ ] Single leg deadlift standing on one leg leaning forward while extending leg 
-- [ ] Eventually cycle in [[Resistance Band Workout]] 
 - [ ] Eventually add hanging weight to your pull-ups
 - [ ] Point toes inward keep butt down for Leg extension
 - [ ] for Zercher Squats put bar on frame instead of ground to make it easier to lift
@@ -261,7 +260,7 @@ color purple
 	- [ ] Stop Eating 3 hour before sleep
 	- [ ] Stop Drinking 2 hour before sleep
 	- [ ] Stop Scrolling 1 hour before sleep
-- [ ] For one of the days at Gym  focus on full body while also using the day for experimenting.
+- [ ] For one of the days at Gym  focus on full body while also using the day for experimenting cycling in [[Total Body Resistance Exercise]] or [[Stability Ball Workout Plan]] 
 
 
 | Best Order Of Operations  | Day     | Session Type | Options (Choose 1)                                    |

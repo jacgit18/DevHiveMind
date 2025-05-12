@@ -33,6 +33,8 @@ kanban-plugin: board
 
 ## #todo/CapitalOne
 
+- [ ] Revist [[Job Hunt Strategy]]
+- [ ] [Renting an Apartment in New York City Registration, Wed, May 21, 2025 at 12:00 PM \| Eventbrite](https://www.eventbrite.com/e/renting-an-apartment-in-new-york-city-registration-1336815604459?aff=ebemoffollowpublishemail)
 - [ ] [[PTP Config Workflow]]
 - [ ] [[Work LOB and arch notes to clean]]
 - [ ] possible logging flow CloudWatch Logs → Kinesis Firehose → Splunk HEC
