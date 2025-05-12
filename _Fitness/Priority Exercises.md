@@ -221,6 +221,7 @@ color purple
 - [x] Do [[Grip Strength Training]] every day ✅ 2025-05-08
 - [ ] Use wide grip for pull up machine dip
 - [ ] Anything Zercher same under arm grip try with resistance bands
+- [ ] Single leg deadlift standing on one leg leaning forward while extending leg 
 - [ ] Eventually cycle in [[Resistance Band Workout]] 
 - [ ] Eventually add hanging weight to your pull-ups
 - [ ] Point toes inward keep butt down for Leg extension
@@ -437,7 +438,8 @@ color purple
 | Two Arm Row                         | 0          | 0         | 4    | 8    | Standing            |                   | Lats           | Dumbbell   | Highest  | Upper  |       | *0*      | [[Upper#^cf2720 \|Two Arm Row]]                                | Pull   | N/A   | CM    |
 | Super Rom Lateral Raises            | 0          | 0         | 4    | 8    | Standing            |                   | Multi          | Dumbbell   | Highest  | Upper  |       | *0*      | [[Upper#^767e47 \|Super Rom Lateral Raises]]                   | Pull   | N/A   | CM    |
 | Deadlift                            | 10         | 20        | 4    | 8    | Standing            |                   | Multi          | Barbell    | Highest  | Bottom |       | *10*     | [[Lower#^1260ed \|Deadlift]]                                   | Pull   | N/A   | CM    |
-| Deadlift                            | 10         | 20        | 4    | 8    | Standing            |                   | Multi          | Band       | Highest  | Bottom |       | *10*     | Deadlift                                                       | Pull   | N/A   | CM    |
+| Deadlift                            | 10         | 20        | 4    | 8    | Standing            |                   | Multi          | Bands      | Highest  | Bottom |       | *10*     | Deadlift                                                       | Pull   | N/A   | CM    |
+| Single Leg Deadlift                 | 10         | 20        | 4    | 8    | Standing            |                   | Multi          | Bands      | Highest  | Bottom |       | *10*     | Single Leg Deadlift                                            | Pull   | N/A   | CM    |
 | Arnold Press                        | 10         | 20        | 4    | 8    | N/A                 |                   | Shoulder       | Dumbbell   | High     | Upper  | Yes   | **10**   | [[Full Body#^569c1a \| Arnold Press]]                          | Push   | N/A   | CM    |
 | Adduction Inner Thigh               | 110        | 120       | 4    | 8    | Squeeze             |                   | Inner Thigh    | Fixed      | High     | Bottom | Yes   | **140**  | Adduction Inner Thigh                                          | Pull   | 0     | CM    |
 | Leg Extension                       | 75         | 85        | 4    | 8    | N/A                 |                   | Hamstring      | Fixed      | High     | Bottom | Yes   | **85**   | Leg Extension                                                  | Push   | 0     | CM    |

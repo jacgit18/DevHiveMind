@@ -120,63 +120,6 @@ Light explosive reps to activate striking mechanics without fatigue.
 
 
 
-
-
-lateral lung
-
-calf press
-
-
-close grip curl
-
-kneeling concentration curl 
-
-standard curl 
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-
-Donkey kick
-
-
-
-
-Drop curty lunge
-
-
-
-
-## Single leg on band
-lung
-
-single leg deadlift standing on one leg leaning forward while extending leg 
-
-
-kick outs 
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## Back leg on Band
 
 
@@ -190,10 +133,46 @@ Try exercises  with prolonged tension variation
 
 for standing chest excercise play with the angles and orientations
 
+## Biceps
+
+### Standing different ranges on band 
+close grip curl
+
+standard curl 
+
+
+### Single leg on band
+
+kneeling concentration curl 
+
+
 ## Legs
 
-
+### Standing different ranges on band 
 squat
+
+lateral lung
+
+### Standing on Middle of  band pull
+
+calf press
+### Middle band pull
+
+Sumo Squat
+
+### Single leg on band
+
+Lunge
+
+Donkey kick
+
+### Front Leg on Band
+
+Drop curtsy lunge
+
+### crossing bands pull
+
+kick outs 
 
 ## Back
 
@@ -254,7 +233,7 @@ v raise Narrow feet
 
 Standing upright row 
 
-Sumo Squat
+
 
 
 
