@@ -276,7 +276,7 @@ color purple
 
 #### Core Exercise Lift Goals
 
-Prioritize resistance bands for explosive phase they can be used for other phase but the most optimal use case is for explosive power.
+Prioritize resistance bands for explosive phase they can be used for other phase but the most optimal use case is for explosive power also 2 sets 10 reps for warm up when it comes to bands.
 
 ##### **Explosive Power (EP Phase)**
 
