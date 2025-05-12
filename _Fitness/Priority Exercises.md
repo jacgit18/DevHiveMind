@@ -278,9 +278,6 @@ color purple
 
 > **Train intensity before volume**. Prioritize neural output early, then shift to fatigue-driven work.
 
-#### Core Exercise Lift Goals
-
-Prioritize resistance bands for explosive phase they can be used for other phase but the most optimal use case is for explosive power also 2 sets 10 reps for warm up when it comes to bands.
 
 
 |**Goal**|**Sets**|**Reps**|**Tempo**|**Rest**|
@@ -292,6 +289,9 @@ Prioritize resistance bands for explosive phase they can be used for other phase
 
 
 ##### **Explosive Power (EP Phase)
+Prioritize resistance bands for explosive phase they can be used for other phase but the most optimal use case is for explosive power also 2 sets 10 reps for warm up when it comes to bands.
+
+> Speed is a skill—train it while fresh.
 
 | Exercise             | Goal Weight    | Adjusted Timeline |
 | -------------------- | -------------- | ----------------- |
@@ -303,10 +303,24 @@ Prioritize resistance bands for explosive phase they can be used for other phase
 | Weighted Pull-Ups    | +30 lbs (fast) | 9–12 months       |
 | Single-Leg Leg Press | 40 lbs max     | Immediately       |
 
+- **Why**: Start with these to engage fast-twitch muscle fibers and improve explosive strength which can include Plyometric & Olympic Movements. Requires high neural drive and pristine form. Fatigue kills both.
+
+
+- **Prescription**:
+    - **3–5 sets of 3–5 reps**
+    - **≥85% 1RM** or max intent with lighter loads
+    - **Tempo**: 1s up (max speed), 2s down
+    - **Rest**: 3–5 minutes
+    - **Examples**: Olympic lifts, jump squats, med ball slams, weighted sprints, trap bar jumps
+
+
+
 ---
 
 ##### **Strength Compound (CM Phase)**
-**Starting Point** will switch to optimal order 
+**Starting Point** will switch to optimal order of **EP** → **CM** → **Hypertrophy (PG/RC)**  
+
+> Strength tolerates some fatigue, but still demands precision.
 
 | Exercise                   | Goal Multiplier | Goal @  120     | Timeline (Estimated) | Goal @ 150      | Timeline (Adjusted) |
 | -------------------------- | --------------- | --------------- | -------------------- | --------------- | ------------------- |
@@ -318,10 +332,23 @@ Prioritize resistance bands for explosive phase they can be used for other phase
 | **Weighted Pull-Ups**      | +0.5x           | **+60 lbs**     | 6–9 months           | **+75 lbs**     | 9–18 months         |
 | **Single-Leg Leg Press**   | 2x              | **240 lbs**     | 4–6 months           | **315 lbs**     | 6–12 months         |
 
+- **Why**: Builds raw output, joint integrity, and compound movement proficiency. Follow with heavy, compound lifts to build muscle and functional strength use narrow grip or positioning for more of a compound movement.
+
+- **Prescription**:
+    - **4–5 sets of 4–8 reps**
+    - **75–85% 1RM**
+    - **Tempo**: 2–1–2 (eccentric–pause–concentric)
+    - **Rest**: 2–4 minutes
+    - **Examples**: Squats, deadlifts, bench press, weighted pull-ups
+
+
+
+
 ---
 
 
 ##### **Hypertrophy & Endurance (HE Phase)**
+> Size/endurance = can be done under more fatigue because it's about _muscle burn_, not _perfect speed or maximum tension_
 
 | Exercise             | Rep Range Focus | Goal @ 120 lb | Timeline (Est.) | Goal @ 150 lb | Timeline (Adjusted) |
 | -------------------- | --------------- | ------------- | --------------- | ------------- | ------------------- |
@@ -332,6 +359,16 @@ Prioritize resistance bands for explosive phase they can be used for other phase
 | Overhead Press       | 10–12 reps      | 70–90 lbs     | 4–6 months      | 90–115 lbs    | 6–9 months          |
 | Weighted Pull-Ups    | 6–8 reps        | +35–45 lbs    | 4–6 months      | +45–55 lbs    | 6–9 months          |
 | Single-Leg Leg Press | 12–15 reps      | 145–180 lbs   | 3–4 months      | 180–225 lbs   | 4–6 months          |
+
+- **Why**: Focuses on metabolic stress and time-under-tension. Fatigue is actually useful here.
+
+- **Prescription**:
+    - **3–4 sets of 8–15 reps**
+    - **60–75% 1RM**
+    - **Tempo**: 3–1–1 (emphasize eccentric)
+    - **Rest**: 30–90 seconds
+    - **Examples**: Isolation lifts, machine work, burnout sets
+
 
 
 ### Sample Hip Thrust Program 
@@ -369,45 +406,6 @@ Prioritize resistance bands for explosive phase they can be used for other phase
 | Full  | [[Full Body#^164e0e \| Side-to-Side Waves]] |       | Cardio | Rope       | 0        | Low      | 00:00:20 | 3    | Rope       |       | *0*          |
 ^duration
 
-
-
-
-##### 1.  Explosive Power  - EP (Do First)
-> Speed is a skill—train it while fresh.
-
-- **Why**: Start with these to engage fast-twitch muscle fibers and improve explosive strength which can include Plyometric & Olympic Movements. Requires high neural drive and pristine form. Fatigue kills both.
-
-- **Prescription**:
-    - **3–5 sets of 3–5 reps**
-    - **≥85% 1RM** or max intent with lighter loads
-    - **Tempo**: 1s up (max speed), 2s down
-    - **Rest**: 3–5 minutes
-    - **Examples**: Olympic lifts, jump squats, med ball slams, weighted sprints, trap bar jumps
-
-##### **2. Strength Compound Movements - CM  (Train While Focused)**
-> Strength tolerates some fatigue, but still demands precision.
-
-- **Why**: Builds raw output, joint integrity, and compound movement proficiency. Follow with heavy, compound lifts to build muscle and functional strength use narrow grip or positioning for more of a compound movement.
-
-- **Prescription**:
-    - **4–5 sets of 4–8 reps**
-    - **75–85% 1RM**
-    - **Tempo**: 2–1–2 (eccentric–pause–concentric)
-    - **Rest**: 2–4 minutes
-    - **Examples**: Squats, deadlifts, bench press, weighted pull-ups
-
-
-##### **3. Hypertrophy & Endurance (Finish With Fatigue)**
-> Size/endurance = can be done under more fatigue because it's about _muscle burn_, not _perfect speed or maximum tension_
-
-- **Why**: Focuses on metabolic stress and time-under-tension. Fatigue is actually useful here.
-
-- **Prescription**:
-    - **3–4 sets of 8–15 reps**
-    - **60–75% 1RM**
-    - **Tempo**: 3–1–1 (emphasize eccentric)
-    - **Rest**: 30–90 seconds
-    - **Examples**: Isolation lifts, machine work, burnout sets
 
 ---
 
