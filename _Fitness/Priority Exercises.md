@@ -274,13 +274,24 @@ color purple
 |  **Arms**                 | **Sat** | MMA          | BJJ+MT **OR** BJJ+Kickboxing **OR** BJJ+Kickboxing+MT |
 
 
+## **Optimal Workout Order of Operations**
+
+> **Train intensity before volume**. Prioritize neural output early, then shift to fatigue-driven work.
+
 #### Core Exercise Lift Goals
 
 Prioritize resistance bands for explosive phase they can be used for other phase but the most optimal use case is for explosive power also 2 sets 10 reps for warm up when it comes to bands.
 
-##### **Explosive Power (EP Phase)
 
-3 to 5 sets of 3 to 6 reps on average to aim for 
+|**Goal**|**Sets**|**Reps**|**Tempo**|**Rest**|
+|---|---|---|---|---|
+|**Explosive Power**|3–5|3–6|Explosive concentric, slow eccentric|2–3 min|
+|**Strength / Compound**|3–4|6–10|Controlled (2-1-2)|60–90 sec|
+|**Hypertrophy / Endurance**|2–4|12–20+|Smooth and rhythmic (1-0-1 or 2-0-2)|30–60 sec|
+
+
+
+##### **Explosive Power (EP Phase)
 
 | Exercise             | Goal Weight    | Adjusted Timeline |
 | -------------------- | -------------- | ----------------- |
@@ -358,12 +369,8 @@ Prioritize resistance bands for explosive phase they can be used for other phase
 | Full  | [[Full Body#^164e0e \| Side-to-Side Waves]] |       | Cardio | Rope       | 0        | Low      | 00:00:20 | 3    | Rope       |       | *0*          |
 ^duration
 
-## **Optimal Workout Order of Operations**
-
-> **Train intensity before volume**. Prioritize neural output early, then shift to fatigue-driven work.
 
 
-**EP** → **CM** → **Hypertrophy (PG/RC)**  
 
 ##### 1.  Explosive Power  - EP (Do First)
 > Speed is a skill—train it while fresh.
