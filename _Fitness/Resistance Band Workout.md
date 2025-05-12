@@ -145,7 +145,7 @@ standard curl
 
 
 
-squat 
+ 
 
 Donkey kick
 
@@ -190,6 +190,11 @@ Try exercises  with prolonged tension variation
 
 for standing chest excercise play with the angles and orientations
 
+## Legs
+
+
+squat
+
 ## Back
 
 ### Seated with bands Tied
@@ -232,12 +237,10 @@ Standing shoulder press keep band inside elbow not outside
 
 Front raises 
 
+Scare Crow
 
 ### Standing Wide on band
 Shrugs
-
-
-Scare Crow
 
 
 ### crossing bands pull
