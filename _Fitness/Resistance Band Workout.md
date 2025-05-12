@@ -152,9 +152,9 @@ Donkey kick
 
 
 
-Drop curty lungg
+Drop curty lunge
 
-Single leg extension while on stomach also try standing version pulling band up and pushing leg down 
+
 
 
 ## Single leg on band
@@ -183,7 +183,7 @@ Standing shoulder press keep band inside elbow not outside
 
 
 
-banded push ups
+
 
 alternating chest press duration based like a minute 
 
@@ -195,7 +195,7 @@ seated face pulls
 
 standing back fly
 
-crank the mower 
+
 
 Front raises 
 
@@ -208,7 +208,11 @@ Shrugs
 
 
 
+# Back
 
+## Front Leg on Band
+
+Single Arm crank the mower 
 
 # CHEST 
 ## Standing Wide on band
