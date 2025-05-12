@@ -20,7 +20,6 @@ dg-publish:
   
 - **Plank with Shoulder Taps** → **Band-Resisted Plank Taps** (Loop band around wrists)
 
-- **Skull Crushers** → **Band Overhead Tricep Extensions** (Step on band, extend overhead)
 
 ## **General Notes:**
 - Many of these movements can be done with either bands or cables.
