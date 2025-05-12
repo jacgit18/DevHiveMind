@@ -125,8 +125,9 @@ Light explosive reps to activate striking mechanics without fatigue.
 
 # Resistance Band Workout
 
+A lot of these exercises can be done with bands or cables
 
-alternating lib excercise make duration based like a minute 
+alternating limb excercise make duration based like a minute 
 
 Try exercises  with prolonged tension variation 
 
@@ -135,6 +136,15 @@ for standing chest excercise play with the angles and orientations
 
 
 for Single leg on band excercise alot of the time it is the back leg
+
+## Forearm
+
+  
+Roll up and unroll  
+
+
+### Standing  on Band like a U Shape  
+Squatting Forearm curls
 
 ## Biceps
 
@@ -151,12 +161,16 @@ Reverse Grip bicep curl (Brachialis) - use lighter weights more focused Brachial
 
 Hammer curl  (Brachialis) - allows for heavier weights
 
+
+Tricep kickbacks
 ### Single leg on band
 
-kneeling concentration curl either 
-Squatting concentration curl
+kneeling concentration curl either or just preference 
+Squatting concentration curl adds a squat which could be harder
 
 Overhead tricep extension
+
+Lying tricep extensions on back 
 
 ### Standing  on Band like a U Shape  
 Squatting preacher curl
@@ -249,6 +263,13 @@ v raise Narrow feet
 Standing upright row 
 
 
+## Core 
+  
+Dip to side  
+
+### Single leg on band
+  
+Core Lifting oblique
 
 
 
