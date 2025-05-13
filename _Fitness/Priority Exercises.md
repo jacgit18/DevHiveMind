@@ -278,13 +278,13 @@ color purple
 
 > **Train intensity before volume**. Prioritize neural output early, then shift to fatigue-driven work.
 
+- [ ] **Deload**: Switch phases every 4–6 weeks to reduce volume so go form compound or hypertrophy to Explosive 
 
-
-|**Goal**|**Sets**|**Reps**|**Tempo**|**Rest**|
-|---|---|---|---|---|
-|**Explosive Power**|3–5|3–6|Explosive concentric, slow eccentric|2–3 min|
-|**Strength / Compound**|3–4|6–10|Controlled (2-1-2)|60–90 sec|
-|**Hypertrophy / Endurance**|2–4|12–20+|Smooth and rhythmic (1-0-1 or 2-0-2)|30–60 sec|
+| Goal                        | Sets | Reps   | Tempo                                | **Rest**  |
+| --------------------------- | ---- | ------ | ------------------------------------ | --------- |
+| **Explosive Power**         | 3–5  | 3–6    | Explosive concentric, slow eccentric | 2–3 min   |
+| **Strength / Compound**     | 3–4  | 6–10   | Controlled (2-1-2)                   | 60–90 sec |
+| **Hypertrophy / Endurance** | 2–4  | 12–20+ | Smooth and rhythmic (1-0-1 or 2-0-2) | 30–60 sec |
 
 
 

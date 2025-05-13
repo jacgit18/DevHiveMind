@@ -94,3 +94,4 @@ dg-publish:
 ## **8. Forearms** _(Priority: 5 – Good finishers, but low load with bands)_
 - Band roll-ups & unrolls – **3**
 - Squatting forearm curls – **3**
+
