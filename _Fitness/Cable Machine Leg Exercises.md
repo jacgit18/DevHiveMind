@@ -67,24 +67,28 @@ dg-publish:
 - **Bonus:** Engages core and balance
     
 
-#### **7. Cable Bulgarian Split Squats**
 
-- _Mimics:_ Single-leg power for rear-leg kicks and takedown defense
-    
-- **How:** Back foot elevated, band or cable in front or to side
-    
-- **Focus:** Drive through front heel
-    
 
-#### **8. Cable Knee Circle (Hip Mobility Drill)**
+
+#### **7. Cable Knee Circle (Hip Mobility Drill)**
 
 - _Mimics:_ Knee shield movement, kick chambering and recovery
     
 - **How:** Move knee in a wide circular motion under tension
     
 - **Great for:** Warm-ups or cooldowns
+
+### **Execution:**
+
+1. **Lift your knee** up to hip height (as if you were chambering a knee or teep).
     
-
----
-
-Would you like a sample routine structure for integrating these across a week or as a warm-up for Muay Thai/BJJ training?
+2. **Start drawing a slow circle** with your knee, moving:
+    
+    - Outward (external rotation) — great for opening the hips for roundhouse/side kicks.
+        
+    - Inward (internal rotation) — simulates guard retention or tight spaces in grappling.
+        
+3. **Control the motion** through all ranges—don’t let the cable yank your leg.
+    
+4. Reverse the direction after 5–10 controlled reps.
+    
