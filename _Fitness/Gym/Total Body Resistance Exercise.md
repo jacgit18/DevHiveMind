@@ -64,33 +64,33 @@ dg-publish:
 - ![TRX Fallout (Rollout) Progressions - YouTube](https://www.youtube.com/watch?v=qvwoEeMz2-g) ^7e128f
 2. **TRX Russian Twists (Feet in Straps)**  
 - *Why?* Rotational power for **hooks (Muay Thai) and freestyle rotation**.  
-- ![TRX Fallout (Rollout) Progressions - YouTube](https://www.youtube.com/watch?v=qvwoEeMz2-g)
-3. **TRX Knee Tucks (Alternating)**  
+- ![Standing Russian Twist \| TRX \| Strength and Conditioning Exercises - YouTube](https://www.youtube.com/watch?v=7zpXipLThLI) ^d7d533
+1. **TRX Knee Tucks (Alternating)**  
 - *Why?* Hip flexor endurance for **guard retention (BJJ) and dolphin kicks (swimming)**.  
 - ![TRX alternating Knee Tucks - YouTube](https://www.youtube.com/watch?v=I1Ui_rsf8xk)
   
   
-  
+   ^45141d
 ### **3. Sport-Specific Conditioning (Metabolic Finisher)**  
 *(Pick 1-2 rounds, 3-5 exercises, 30s work/15s rest)*  
 - **TRX Burpee** (Grappling sprawl → explosive stand-up)  
-- ![TRX Burpee Level 3 - YouTube](https://www.youtube.com/watch?v=C_rKVEucJak)
+- ![TRX Burpee Level 3 - YouTube](https://www.youtube.com/watch?v=C_rKVEucJak) ^3dcd4e
 - **TRX Mount Climbers** (BJJ mount escapes)  
-- ![Fetching Title#8qxy](https://www.youtube.com/watch?v=3SgaRs3GD0U)
+- ![Fetching Title#8qxy](https://www.youtube.com/watch?v=3SgaRs3GD0U) ^865012
 - **TRX Rotating Plank** (Muay Thai teep conditioning)  
-- ![TRX Plank into Rotations - RCA Fitness - YouTube](https://www.youtube.com/watch?v=TT2jUlSOZNc)
+- ![TRX Plank into Rotations - RCA Fitness - YouTube](https://www.youtube.com/watch?v=TT2jUlSOZNc) ^d3c2d7
 - **TRX Alternating Superman Pulls** (Swim stroke endurance)  
 - ![TRX Superman - YouTube](https://www.youtube.com/watch?v=abd-XbU79qc)
   
-  
+   ^58f92b
 ### **4. Recovery & Mobility**  
 - **TRX Assisted Deep Squat Hold** (Hip mobility for kicks)  
-- ![TRX Deep Squat - YouTube](https://www.youtube.com/watch?v=Hi8WsDEuBrc)
+- ![TRX Deep Squat - YouTube](https://www.youtube.com/watch?v=Hi8WsDEuBrc) ^a4b669
 - **TRX T-Spine Rotations** (For swimming/shoulder health)  
-- ![TRX T spine Rotation - YouTube](https://www.youtube.com/watch?v=Z5ftr88omuc)
+- ![TRX T spine Rotation - YouTube](https://www.youtube.com/watch?v=Z5ftr88omuc) ^623746
 - **TRX Hamstring Floss** (Prevents pulls from high kicks)  
 - ![Banded Hamstring Floss - YouTube](https://www.youtube.com/watch?v=GJd68oOADFY)
-  
+   ^370c0c
 ---  
   
 ### **Programming Notes**  
