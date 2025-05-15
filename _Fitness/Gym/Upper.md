@@ -164,3 +164,6 @@ _Tip:_ Use added weight if possible; heavier weight makes pull-ups feel easier w
 - Seated Waves(Battle Ropes)
 	- ![](https://www.youtube.com/watch?v=BMS0bK7w4Io&list=TLPQMTUxMjIwMjTU6oT9G9b_2w&index=13)
 
+
+
+![Equipment Demo - The Landmine Twist - YouTube](https://www.youtube.com/watch?v=SDLLsi98xJY) ^b8a4b6
