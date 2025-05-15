@@ -57,5 +57,7 @@ dg-publish:
 - **Rest**: Full recovery (2–5 min) between explosive sets
 - **Optional**: Sled pushes, bounding drills, single-leg hops for coordination
 
+## Breathing Exercises
+ ![Breathing exercise 1, with "Original 2.0" o2trainer - YouTube](https://www.youtube.com/watch?v=-Es3HOd0PT8&list=PL8NG4An03Sa_ZvEIyHFojC65BhMV08qr1&index=5)
 
- 
+![Breathing exercise 2 with "Original 2.0" o2trainer - YouTube](https://www.youtube.com/watch?v=G0PEfYuh6VM&list=PL8NG4An03Sa_ZvEIyHFojC65BhMV08qr1&index=6)
