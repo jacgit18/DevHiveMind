@@ -1,4 +1,44 @@
-rebase
+## May Notes
+
+Working under customer resiliency specifically credit card
+
+
+
+No response from ptp  
+  
+Should be synchrous after payment then ptp call regardless out failure  
+  
+Ama(Relates to Auditing) is done doing cloudwatch  
+  
+  
+Maybe delet payments from payment scheduler Rt which is a second call but also fulfillment can check  
+  
+Ptp send a response for bff weather payment is successful
+
+
+
+
+Data lambda pass thru update  
+  
+  
+Bff call payments and payments invoke ptp  
+  
+  
+Ptp is legacy track agent metric  
+  
+Short term use case  
+  
+Will eventually phased out but agents need it  
+  
+  
+Ptp called after payments  
+  
+Originally doing manual payments which ptp is apart of
+
+
+
+
+
 ### **PTP Configuration Workflow Notes**
 
 

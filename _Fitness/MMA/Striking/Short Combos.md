@@ -17,7 +17,7 @@ Here are **short MMA-optimized striking combinations**, designed for **quick exe
 
 ---
 
-### **Opposite Mirror Stance (Orthodox vs. Southpaw or Vice Versa)**
+### **Mirror Opposite Stance (Orthodox vs. Southpaw or Vice Versa)**
 
 _(Emphasizing open angles and defensive exits after striking.)_
 

@@ -68,7 +68,7 @@ dg-publish:
 
 ## **5. Triceps** _(Priority: 3 – Useful for full arm balance, depends on tension setup)_
 - Overhead tricep extensions – **1**  *(Single Leg)*
-- Lying tricep extensions – **2**
+- Lying Tricep extensions – **2**
 - Tricep kickbacks – **3** _(harder to load effectively with bands)_
 
 

@@ -56,3 +56,35 @@ If your goal is to maximize **explosiveness** while avoiding weight loss, the fo
 4. **Lift heavy on non-sprint days** – Strength training complements explosive sprinting.  
 5. **Increase calorie intake** – Emphasize **carbs and protein** on sprint days to fuel and recover.  
   
+
+
+### **Running Form Tips & Drills**
+
+**Breathing:**
+- Use a **double inhale, single exhale** rhythm to regulate breath and stay relaxed under effort.
+
+
+**Foot Mechanics:**
+- Keep your feet **relaxed during the swing**, but **brace (lightly flex) on impact**.
+
+- Avoid landing with your **legs fully extended** — there should always be a **slight bend in the knees** to absorb shock.
+
+
+**Arm Mechanics:**
+- Swing arms **back and forth without crossing the midline** of your body.
+
+- Elbows should drive **slightly behind you**, helping with rhythm and propulsion.
+
+
+**Drills to Reinforce Proper Mechanics:**
+
+1. **Butt Kickers (Tall Posture)**
+    - Keep your **torso upright**—no forward lean.
+    - Focus on lifting your heels up to touch your hands behind you.
+    - This reinforces **leg recovery and hamstring activation**.
+
+2. **High Knees or Marching High Knees**
+    - Drive knees up to **hip height or higher**, maintaining posture.
+    - Alternate with walking backward for recovery and coordination.
+    - Helps train **hip flexor strength and stride lift**.
+

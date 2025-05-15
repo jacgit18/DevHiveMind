@@ -61,6 +61,9 @@ Get to your reps to 15 sec each try to extend for 45 sec MAX
 
 
 
+- Pallof Press ^0729fc
+	- ![Pallofpress](https://youtu.be/-0N2xTi69t8?si=80nCTJTg4ZyCNXYO)
+
 
 
 ## Pancake
@@ -81,3 +84,5 @@ Get to your reps to 15 sec each try to extend for 45 sec MAX
 
 
 ![Reverse Jefferson Curls - YouTube](https://www.youtube.com/watch?v=RhE5EIb-ZMg)
+
+![Resistance Band Russian Twists - YouTube](https://www.youtube.com/watch?v=kI2H5xGnxcM) ^c16b16

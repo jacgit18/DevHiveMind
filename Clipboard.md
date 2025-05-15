@@ -34,11 +34,18 @@ When using sns in localstack with sns it wont send an actual email
 
 
 
+Java isn't good for serverless in comparison to other languages
+
 
 Iteration are repetitions where you are modifying the repetition with error correction and continuing to do it over and over again modifying for error correction that is where you make a lot of improvement  
   
 If you fail its just a iteration that you can pivot from in terms of cutting losses when it makes sense to to continue to iterate and get where you want to be
 
+
+[Access Obsidian from anywhere using a browser by self-hosting it](https://www.xda-developers.com/i-self-hosted-obsidian-so-i-can-access-it-in-web-browser-anywhere/)
+
+
+[Implementing Callback Pattern with Step Functions](https://awsfundamentals.com/blog/building-a-real-world-use-case-with-step-functions-and-the-callback-pattern)
 
 
 [Automating A Custom VPC Stack Using IaC \| by Donovan Tucker \| Medium](https://medium.com/@donovanjtucker14/automating-a-custom-vpc-stack-using-iac-a220676956c7)

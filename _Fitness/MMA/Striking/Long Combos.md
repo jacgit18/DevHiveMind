@@ -11,11 +11,11 @@ Relates:
 Peer Reviewed: 0
 dg-publish:
 ---
-Here are **longer striking combinations** using the given number system, incorporating stance considerations, fluidity, and attack variety. These combinations mix **punches, elbows, kicks, and stance switches** to create well-rounded sequences for both **opposite mirror stance** and **same-side stance** situations.
+Here are **longer striking combinations** using the given number system, incorporating stance considerations, fluidity, and attack variety. These combinations mix **punches, elbows, kicks, and stance switches** to create well-rounded sequences for both **mirror opposite  stance** and **same-side stance** situations.
 
 ---
 
-### **Opposite Mirror Stance (Orthodox vs. Southpaw or Vice Versa)**
+### **Mirror Opposite Stance (Orthodox vs. Southpaw or Vice Versa)**
 
 **(Focus: Targeting open angles, stance manipulation, and power shots)**
 

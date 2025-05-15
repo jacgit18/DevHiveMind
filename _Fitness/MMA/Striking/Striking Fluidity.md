@@ -59,7 +59,7 @@ Anything not listed might not have fit criteria in terms of open space striking 
 
 ### Scenario 1 
 ![[open-stance.jpeg]]
-#### Opposite Mirror Stance 
+#### Mirror Oppoisite Stance 
 Anything mirror coming from the rear hand is tricky because limited angle and lean towards the power side of opponent
 
 **Focus:** Target their open side and control angles. 

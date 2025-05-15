@@ -11,10 +11,6 @@ Relates:
 Peer Reviewed: 0
 dg-publish:
 ---
-Here’s a **TRX-based fitness regimen** tailored to enhance performance in **swimming, BJJ, Judo, and Muay Thai**. The focus is on **core stability, grip strength, rotational power, and explosive endurance**—critical for combat sports and swimming.  
-  
----  
-  
 ### **TRX Training Principles for Martial Arts & Swimming**  
 1. **Unstable Resistance:** Mimics off-balance grappling and swimming strokes.  
 2. **Rotational Core Work:** Essential for throws, kicks, and freestyle swimming.  
@@ -28,51 +24,72 @@ Here’s a **TRX-based fitness regimen** tailored to enhance performance in **sw
   
 ### **1. Warm-Up (5-10 mins)**  
 - **TRX Arm Circles** (Shoulder mobility)  
-- **TRX Hip Openers** (Grappling prep)  
+- ![TRX Plank with Arm Circles - YouTube](https://www.youtube.com/watch?v=PNJ3SLDpllE)
+
 - **TRX Jump Squats** (Explosiveness)  
-  
----  
+- ![Marines Force Fitness-TRX Jump Squat - YouTube](https://www.youtube.com/watch?v=XYDLa82kmOw)
+
+- **TRX Hip Openers** (Grappling prep)  Looks dangerous
+- ![TRX Wide Hip Opener (mobilitetstræning) - YouTube](https://www.youtube.com/watch?v=NNsT1ojHuy8)
+
+
+
   
 ### **2. Strength & Power (Priority Exercises)**  
 #### **A. Upper Body (Clinch/Grip/Pulling Strength)**  
 1. **TRX Atomic Push-Ups**  
 - *Why?* Builds chest, shoulders, and **core compression** (for swimming turns and grappling scrambles).  
+- ![TRX Atomic Push Up - YouTube](https://www.youtube.com/watch?v=kdoWKTEEc6g)
 2. **TRX Rows (Single-Arm, Rotational)**  
 - *Why?* Unilateral strength for **swimming pulls** and **gi grip endurance**.  
+- ![How to perform: Single arm TRX row w/ rotation - YouTube](https://www.youtube.com/watch?v=xlvYxStAL8M)
 3. **TRX Biceps Curl to Y-Fly**  
 - *Why?* Combines arm flexion (BJJ grips) with scapular stability (swimming).  
+- ![TRX Y Fly + Biceps Curls - YouTube](https://www.youtube.com/watch?v=HOp5_Of1fzE)
   
 #### **B. Lower Body (Explosiveness/Kicking Base)**  
 1. **TRX Pistol Squats (Assisted)**  
 - *Why?* Single-leg strength for **kicks (Muay Thai) and takedown defense (Judo)**.  
+- ![How To TRX Assisted Pistol Squat - YouTube](https://www.youtube.com/watch?v=HqCHXb91yMQ)
 2. **TRX Jump Lunges**  
 - *Why?* Plyometric for **shooting doubles (BJJ/Judo) and flip turns (swimming)**.  
+- ![TRX jump lunges - YouTube](https://www.youtube.com/watch?v=U37FCHjOX1w)
 3. **TRX Hamstring Curls**  
 - *Why?* Prevents pulls during **kicks and breaststroke kicks**.  
+- ![Hot to Perform the TRX Hamstring Curl - YouTube](https://www.youtube.com/watch?v=JcJ2i2gUW3o)
   
 #### **C. Core & Rotation (Throws, Strikes, Swim Rotation)**  
 1. **TRX Fallout Rollouts**  
 - *Why?* Anti-extension core strength for **takedowns and swim stability**.  
+- ![TRX Fallout (Rollout) Progressions - YouTube](https://www.youtube.com/watch?v=qvwoEeMz2-g)
 2. **TRX Russian Twists (Feet in Straps)**  
 - *Why?* Rotational power for **hooks (Muay Thai) and freestyle rotation**.  
+- ![TRX Fallout (Rollout) Progressions - YouTube](https://www.youtube.com/watch?v=qvwoEeMz2-g)
 3. **TRX Knee Tucks (Alternating)**  
 - *Why?* Hip flexor endurance for **guard retention (BJJ) and dolphin kicks (swimming)**.  
+- ![TRX alternating Knee Tucks - YouTube](https://www.youtube.com/watch?v=I1Ui_rsf8xk)
   
----  
+  
   
 ### **3. Sport-Specific Conditioning (Metabolic Finisher)**  
 *(Pick 1-2 rounds, 3-5 exercises, 30s work/15s rest)*  
-- **TRX Burpee + Row** (Grappling sprawl → explosive stand-up)  
+- **TRX Burpee** (Grappling sprawl → explosive stand-up)  
+- ![TRX Burpee Level 3 - YouTube](https://www.youtube.com/watch?v=C_rKVEucJak)
 - **TRX Mount Climbers** (BJJ mount escapes)  
-- **TRX Rotating Plank to Kick** (Muay Thai teep conditioning)  
+- ![Fetching Title#8qxy](https://www.youtube.com/watch?v=3SgaRs3GD0U)
+- **TRX Rotating Plank** (Muay Thai teep conditioning)  
+- ![TRX Plank into Rotations - RCA Fitness - YouTube](https://www.youtube.com/watch?v=TT2jUlSOZNc)
 - **TRX Alternating Superman Pulls** (Swim stroke endurance)  
+- ![TRX Superman - YouTube](https://www.youtube.com/watch?v=abd-XbU79qc)
   
----  
   
 ### **4. Recovery & Mobility**  
 - **TRX Assisted Deep Squat Hold** (Hip mobility for kicks)  
+- ![TRX Deep Squat - YouTube](https://www.youtube.com/watch?v=Hi8WsDEuBrc)
 - **TRX T-Spine Rotations** (For swimming/shoulder health)  
+- ![TRX T spine Rotation - YouTube](https://www.youtube.com/watch?v=Z5ftr88omuc)
 - **TRX Hamstring Floss** (Prevents pulls from high kicks)  
+- ![Banded Hamstring Floss - YouTube](https://www.youtube.com/watch?v=GJd68oOADFY)
   
 ---  
   

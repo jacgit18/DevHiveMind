@@ -6,7 +6,7 @@ tags:
 author:
   - gitUserNamePlaceHolder
 banner: "![[fight.gif]]"
-banner_x: 
+banner_x: NaN
 banner_y: 
 Comments: Placeholder comment any thing else you want to mention about the document.
 Purpose: This documentation discusses
@@ -106,7 +106,7 @@ Don’t fixate on just one area. Keep cycling your attention between these body 
 - Control hand placement, keep your hand extended to parry, disrupt, or occupy your opponent’s hand. 
 - Try probing jab along with other strikes using it to fill the void of space while also using it to gauge distance, timing, and breaking their base or flow. Also avoid turning head when throwing kick use peripheral vision.
 - When you keep your head still, you tend to move faster and maintain better balance. It’s all about weighing the pros and cons of stability versus mobility.
-- When trying to secure a clinch, it's generally easier to do so when both fighters are in opposite stances (mirror stance), as this creates a natural alignment for the clinch. In contrast, when both fighters are in the same-side stance, their arms and body positions are more aligned, making it harder to close the distance and establish the clinch.
+- When trying to secure a clinch, it's generally easier to do so when both fighters are in mirror opposite stances (mirror stance), as this creates a natural alignment for the clinch. In contrast, when both fighters are in the same-side stance, their arms and body positions are more aligned, making it harder to close the distance and establish the clinch.
 
 **Breathing in Range**
 - Exhale sharply when engaging to stay relaxed and generate power.
@@ -148,6 +148,9 @@ this is a thought process which is a mental order of operation not a rule more o
 - Also when blocking kicks to legs the best scenario to aim for is making them kick you at the the strongest part of your leg which is the area under the knee avoid and limit taking kicks to the weakest part which is the lower shin and you don't need to shift weight on back leg so much along with lifting check leg very high. 
 
 ### **3. Striking & Fainting**
+> **"Straight beats circular(hook), circular(hook) beats straight."**  
+
+
 -  Taller opponents:
 	- Use the **teep kick** like a jab to control range or disrupt rhythm, especially against taller opponents.
 	- Keep your guard compact and punches sharp to close the distance effectively.
@@ -157,8 +160,29 @@ this is a thought process which is a mental order of operation not a rule more o
 - **Faint Front Kick**: Lift your leg and show the sole of your foot to sell the feint, setting up other strikes.
 - **Faint Spin Kick**: faint the spin kick and doing a stance switch to a front or rear kick.
 - **Faint Body/Head**: punch or kick to the body or head then attack the other target.
+- Try and use the other [[List of Feints]]
 
-Try and use the other [[List of Feints]]
+#### Punch Mechanics
+- **Straight punches (jabs, crosses)** travel the shortest distance to the target (linear path).  
+- **Circular punches (hooks, uppercuts)** take a longer, arcing path.  
+- **Result**: A well-timed straight punch can intercept and land before a looping punch completes its arc.  
+##### **When They Throw Circular (Hooks/Uppercuts):**  
+- **Fire a straight punch (jab/cross) down the middle** to disrupt their rotation.  
+- Example: If they load up a left hook, shoot a stiff jab to their chin before their hook lands.  
+- *Why it works*: Their elbow flaring out opens their guard.  
+  
+##### **When You Throw Straight:**  
+- **Watch for their counters** (especially overhands/hooks).  
+- Example: After you jab, pull your head off-center to avoid a looping counter.  
+- *Danger*: Circular punches can "wrap around" straight-line defenses.  
+
+##### Exceptions & Refinements**  
+- **Speed matters**: If their circular punch is faster than your straight, it’ll land first.  
+- **Angles matter**: If they’re cutting angles (e.g., Mayweather’s pull-counter), their "circular" punch may realign as a straight shot.  
+- **Combos**: After landing straight, pivot or clinch to avoid circular counters.  
+
+
+
 
 ### **4. Rhythm & Movement**
 - **Play with Rhythm**:
@@ -194,7 +218,7 @@ Opposite side stance looks like a mirror but you are both in opposite stances me
 - Lean opposite to the punch’s direction (e.g., dip left against a right-hand punch).
 - Faint with level changes typically when opponent are in there weaker stance or same side stance.
 - Occupy their lead hand with your rear hand to provoke a reaction—this often compels them to throw their rear hand, which has a longer recovery time, creating an opening for you to exploit.
-### **Opposite Stance (Opposite Lead Foot)**
+### **Mirror Opposite Stance (Opposite Lead Foot)**
 - This occurs when you and your opponent are a mirror of each other(e.g., you're [[Stance Fundamentals#^b31948|Orthodox]], and they're in [[Stance Fundamentals#^1981b8|Southpaw]]). It's generally easier to step outside their lead foot. 
 
 - Consider different Options listed here [[Orthodox vs Southpaw]]
