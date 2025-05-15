@@ -13,13 +13,13 @@ dg-publish:
 ---
 refine this and include different meals base on ingredients mentioned 
 ### **Budget Breakdown**  
-| Category | Cost (Weekly) | Notes |  
-|------------------------|--------------|-------|  
-| **Groceries (Meal Prep - 4 days)** | **$140** | Bulk buys, whole foods |  
-| **Eating Out (3 meals)** | **$105** | ~$35/meal max |  
-| **Snacks/Extras** | **$35** | Protein bars, fruit, etc. |  
-| **Emergency Buffer** | **$20** | Unplanned costs |  
-| **Total** | **$300** | |  
+| Category                           | Cost (Monthly) | Notes                     |     |
+| ---------------------------------- | -------------- | ------------------------- | --- |
+| **Groceries (Meal Prep - 4 days)** | **$140**       | Bulk buys, whole foods    |     |
+| **Eating Out (3 meals)**           | **$105**       | ~$35/meal max             |     |
+| **Snacks/Extras**                  | **$35**        | Protein bars, fruit, etc. |     |
+| **Emergency Buffer**               | **$20**        | Unplanned costs           |     |
+| **Total**                          | **$300**       |                           |     |
   
 ---  
   

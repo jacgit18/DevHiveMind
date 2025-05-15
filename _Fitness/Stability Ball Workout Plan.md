@@ -94,6 +94,7 @@ dg-publish:
 
 - **Bird Dog with Knee on Ball** – **2**
 - ![Bird Dog on Swiss Ball - YouTube](https://www.youtube.com/watch?v=uQpqxubnzPM)
+
 - **Plank Elbow Taps with Feet on Ball** – **3**
 
 
