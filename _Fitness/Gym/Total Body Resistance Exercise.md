@@ -23,9 +23,9 @@ dg-publish:
 *(45-60 mins/session)*  
   
 ### **1. Warm-Up (5-10 mins)**  
-- **TRX Arm Circles** (Shoulder mobility)  
+- **TRX Arm Circles** (Shoulder mobility)   
 - ![TRX Plank with Arm Circles - YouTube](https://www.youtube.com/watch?v=PNJ3SLDpllE)
-
+ ^661445
 - **TRX Jump Squats** (Explosiveness)  
 - ![Marines Force Fitness-TRX Jump Squat - YouTube](https://www.youtube.com/watch?v=XYDLa82kmOw)
 
