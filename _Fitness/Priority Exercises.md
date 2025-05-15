@@ -217,6 +217,7 @@ color purple
 
 - [ ] Dead Hang at BK-MMA
 - [ ] Pick rest day each week
+- [ ] Do 5 to 6 exercises per session 
 - [ ] Do Controlled Explosive Burpee
 - [x] Do [[Grip Strength Training]] every day ✅ 2025-05-08
 - [ ] Run to gym following [[Sprinting Regimen]]
@@ -501,9 +502,9 @@ Prioritize resistance bands for explosive phase they can be used for other phase
 | Atomic Push Up                      | 0          | 20        | 4    | 8    | Standing            | Multi          | TRX        | [[Total Body Resistance Exercise]]                             |                   | Highest  | Bottom |       | *10*     | Pull   | N/A   | CM    |
 | Single-Arm Rotational Row           | 0          | 20        | 4    | 8    | Standing            | Multi          | TRX        | [[Total Body Resistance Exercise]]                             |                   | Highest  | Bottom |       | *10*     | Pull   | N/A   | CM    |
 | Curl to Y-Fly                       | 0          | 20        | 4    | 8    | Standing            | Multi          | TRX        | [[Total Body Resistance Exercise]]                             |                   | Highest  | Bottom |       | *10*     | Pull   | N/A   | CM    |
-|                                     | 10         | 20        | 4    | 8    | Standing            | Multi          | TRX        | [[Total Body Resistance Exercise]]                             |                   | Highest  | Bottom |       | *10*     | Pull   | N/A   | CM    |
-|                                     | 10         | 20        | 4    | 8    | Standing            | Multi          | TRX        | [[Total Body Resistance Exercise]]                             |                   | Highest  | Bottom |       | *10*     | Pull   | N/A   | CM    |
-|                                     | 10         | 20        | 4    | 8    | Standing            | Multi          | TRX        | [[Total Body Resistance Exercise]]                             |                   | Highest  | Bottom |       | *10*     | Pull   | N/A   | CM    |
+| Pistol Squats                       | 10         | 20        | 4    | 8    | Standing            | Multi          | TRX        | [[Total Body Resistance Exercise]]                             |                   | Highest  | Bottom |       | *10*     | Pull   | N/A   | CM    |
+| Jump Lunges                         | 10         | 20        | 4    | 8    | Standing            | Multi          | TRX        | [[Total Body Resistance Exercise]]                             |                   | Highest  | Bottom |       | *10*     | Pull   | N/A   | CM    |
+| Hamstring Curls                     | 10         | 20        | 4    | 8    | Standing            | Multi          | TRX        | [[Total Body Resistance Exercise]]                             |                   | Highest  | Bottom |       | *10*     | Pull   | N/A   | CM    |
 |                                     | 10         | 20        | 4    | 8    | Standing            | Multi          | TRX        | [[Total Body Resistance Exercise]]                             |                   | Highest  | Bottom |       | *10*     | Pull   | N/A   | CM    |
 |                                     | 10         | 20        | 4    | 8    | Standing            | Multi          | TRX        | [[Total Body Resistance Exercise]]                             |                   | Highest  | Bottom |       | *10*     | Pull   | N/A   | CM    |
 |                                     | 10         | 20        | 4    | 8    | Standing            | Multi          | TRX        | [[Total Body Resistance Exercise]]                             |                   | Highest  | Bottom |       | *10*     | Pull   | N/A   | CM    |
