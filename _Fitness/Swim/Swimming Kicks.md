@@ -12,7 +12,7 @@ Peer Reviewed: 0
 dg-publish:
 ---
 When it comes to swimming, the type of kick you use often depends on the stroke, your goals, and the level of intensity you’re aiming for. Here's a breakdown of different swimming forms and the preferred kick patterns:  
-  
+
 ### **Freestyle (Front Crawl)**  
 - **Six-Beat Kick:** This is the most common and involves six kicks per stroke cycle (three kicks per arm stroke). It’s ideal for longer distances and competitive swimming as it provides consistent propulsion and helps maintain a streamlined body position.  
 - **Two-Beat Kick:** This involves two kicks per stroke cycle (one kick per arm stroke) and is typically used in long-distance or open-water swimming. It's less tiring and helps conserve energy while maintaining a steady pace.  
