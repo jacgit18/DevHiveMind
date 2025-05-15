@@ -39,29 +39,29 @@ dg-publish:
 #### **A. Upper Body (Clinch/Grip/Pulling Strength)**  
 1. **TRX Atomic Push-Ups**  
 - *Why?* Builds chest, shoulders, and **core compression** (for swimming turns and grappling scrambles).  
-- ![TRX Atomic Push Up - YouTube](https://www.youtube.com/watch?v=kdoWKTEEc6g)
-2. **TRX Rows (Single-Arm, Rotational)**  
+- ![TRX Atomic Push Up - YouTube](https://www.youtube.com/watch?v=kdoWKTEEc6g) ^9a11d1
+2. **TRX Rows (Single-Arm, Rotational)**   
 - *Why?* Unilateral strength for **swimming pulls** and **gi grip endurance**.  
-- ![How to perform: Single arm TRX row w/ rotation - YouTube](https://www.youtube.com/watch?v=xlvYxStAL8M)
+- ![How to perform: Single arm TRX row w/ rotation - YouTube](https://www.youtube.com/watch?v=xlvYxStAL8M) ^0f0cba
 3. **TRX Biceps Curl to Y-Fly**  
 - *Why?* Combines arm flexion (BJJ grips) with scapular stability (swimming).  
 - ![TRX Y Fly + Biceps Curls - YouTube](https://www.youtube.com/watch?v=HOp5_Of1fzE)
-  
+   ^2f8cfd
 #### **B. Lower Body (Explosiveness/Kicking Base)**  
 1. **TRX Pistol Squats (Assisted)**  
 - *Why?* Single-leg strength for **kicks (Muay Thai) and takedown defense (Judo)**.  
-- ![How To TRX Assisted Pistol Squat - YouTube](https://www.youtube.com/watch?v=HqCHXb91yMQ)
+- ![How To TRX Assisted Pistol Squat - YouTube](https://www.youtube.com/watch?v=HqCHXb91yMQ) ^0c4d25
 2. **TRX Jump Lunges**  
 - *Why?* Plyometric for **shooting doubles (BJJ/Judo) and flip turns (swimming)**.  
-- ![TRX jump lunges - YouTube](https://www.youtube.com/watch?v=U37FCHjOX1w)
+- ![TRX jump lunges - YouTube](https://www.youtube.com/watch?v=U37FCHjOX1w) ^41abf0
 3. **TRX Hamstring Curls**  
 - *Why?* Prevents pulls during **kicks and breaststroke kicks**.  
 - ![Hot to Perform the TRX Hamstring Curl - YouTube](https://www.youtube.com/watch?v=JcJ2i2gUW3o)
-  
+   ^567e9e
 #### **C. Core & Rotation (Throws, Strikes, Swim Rotation)**  
 1. **TRX Fallout Rollouts**  
 - *Why?* Anti-extension core strength for **takedowns and swim stability**.  
-- ![TRX Fallout (Rollout) Progressions - YouTube](https://www.youtube.com/watch?v=qvwoEeMz2-g)
+- ![TRX Fallout (Rollout) Progressions - YouTube](https://www.youtube.com/watch?v=qvwoEeMz2-g) ^7e128f
 2. **TRX Russian Twists (Feet in Straps)**  
 - *Why?* Rotational power for **hooks (Muay Thai) and freestyle rotation**.  
 - ![TRX Fallout (Rollout) Progressions - YouTube](https://www.youtube.com/watch?v=qvwoEeMz2-g)
