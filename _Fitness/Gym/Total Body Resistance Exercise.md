@@ -28,13 +28,13 @@ dg-publish:
  ^661445
 - **TRX Jump Squats** (Explosiveness)  
 - ![Marines Force Fitness-TRX Jump Squat - YouTube](https://www.youtube.com/watch?v=XYDLa82kmOw)
-
+ ^726153
 - **TRX Hip Openers** (Grappling prep)  Looks dangerous
 - ![TRX Wide Hip Opener (mobilitetstræning) - YouTube](https://www.youtube.com/watch?v=NNsT1ojHuy8)
 
 
 
-  
+   ^723ad2
 ### **2. Strength & Power (Priority Exercises)**  
 #### **A. Upper Body (Clinch/Grip/Pulling Strength)**  
 1. **TRX Atomic Push-Ups**  
