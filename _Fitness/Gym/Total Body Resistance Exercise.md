@@ -106,3 +106,4 @@ dg-publish:
 | **Monday** | Upper Body + Core | Atomic Push-Ups, Single-Arm Rows, Fallouts |  
 | **Wednesday**| Lower Body + Rotation | Pistol Squats, Russian Twists, Jump Lunges |  
 | **Friday** | Sport-Specific Conditioning | Burpee Rows, Mount Climbers, Knee Tucks |  
+
