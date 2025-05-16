@@ -110,3 +110,5 @@ Get to your reps to 15 sec each try to extend for 45 sec MAX
 ![Lunge ISO Heel Raise - YouTube](https://youtu.be/Zwy4h0NukbQ?si=AYz0q6ZnrqsT7T6W) ^58f942
 
 ![Banded Joint Mobilizations for Stiff Ankles - YouTube](https://youtu.be/ILSbK8RnGdI?si=86ONU_PSK-td-Nlm) ^da4cd0
+
+![Deep Squat w/ Band Single Arm Reach - YouTube](https://www.youtube.com/watch?v=VpBlbi7TNUc) ^ab16e7
