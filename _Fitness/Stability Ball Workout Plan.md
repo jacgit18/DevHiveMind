@@ -53,11 +53,11 @@ dg-publish:
 ## **3. Grappling Simulation & Positional Control** _(Priority: 2 for BJJ)_
 
 - **Mount Control Drills (knees on ball, hold position)** – **1**
-    
+
 - **Side Control Pressure Drill (chest on ball, hip drop)** – **2**
-    
+
 - **Post and Base Transitions (hands/feet on floor, ball under hips)** – **3**
-    
+
 
 
 

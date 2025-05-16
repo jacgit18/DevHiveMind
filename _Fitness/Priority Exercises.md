@@ -221,6 +221,7 @@ color purple
 - [ ] Do Controlled Explosive Burpee
 - [x] Do [[Grip Strength Training]] every day ✅ 2025-05-08
 - [ ] Run to gym following [[Sprinting Regimen]]
+- [ ] Use [[Stability Ball Workout Plan]] for core strengthening, flexibility, and stretching,  
 - [ ] Anything Zercher same under arm grip try with resistance bands
 - [ ] Single leg deadlift standing on one leg leaning forward while extending leg 
 - [ ] Try Larsen bench press or incline bench hovering or keeping straight legs to focus more on core.
@@ -262,7 +263,7 @@ color purple
 	- [ ] Stop Eating 3 hour before sleep
 	- [ ] Stop Drinking 2 hour before sleep
 	- [ ] Stop Scrolling 1 hour before sleep
-- [ ] For one of the days at Gym  focus on full body while also using the day for experimenting cycling in [[Total Body Resistance Exercise]] or [[Stability Ball Workout Plan]] 
+- [ ] For one of the days at Gym  focus on full body while also using the day for experimenting.
 
 
 | Best Order Of Operations  | Day     | Session Type | Options (Choose 1)                                    |
