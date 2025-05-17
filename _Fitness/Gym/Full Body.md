@@ -57,6 +57,9 @@ dg-publish:
 - Sled push  ^03bc4f
 	- ![](https://www.youtube.com/watch?v=9XRRXaUpnLk)
 	- ![TOP 7 Prowler Sled Exercises for MAX Muscle & Power - YouTube](https://www.youtube.com/watch?v=QN9bI-3ZLCI)
+
+- ![Dumbbell Farmers March - YouTube](https://www.youtube.com/watch?v=C2I_HsdDVCE) ^0c52b2
+
 ### Cardio Calisthenic
 - Rope Slams
 	- ![](https://www.youtube.com/watch?v=o_1l_6D21z8)
