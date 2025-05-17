@@ -107,10 +107,6 @@ Reverse Preacher Curl(3:14)
 
 
 
-
-![How To Do A Tricep Kickback - YouTube](https://youtu.be/JPmbMOu4IYw?si=CSUBKFdT26udvKqI) ^7abb42
-
-
 ![Dumbbell Bench Wrist Curl - YouTube](https://youtu.be/2wPpcJBe03o?si=2jksy77b1xc4f5Pr) ^1156ec
 
 ![How To: Reverse Seated Wrist Curl - YouTube](https://youtu.be/FW7URAaC-vE?si=rrbZUiV0loPicJB1)
@@ -172,3 +168,6 @@ _Tip:_ Use added weight if possible; heavier weight makes pull-ups feel easier w
 
 
 ![Marpo Rope Pulling Machine - YouTube](https://youtu.be/hP_xdsp7Ojk?si=HPTb9E4H-3t8iqK_) ^f49369
+
+
+![Dumbbell Skull Crusher - OPEX Exercise Library - YouTube](https://www.youtube.com/watch?v=jO2Jl9eZpXk) ^6beb70

@@ -32,6 +32,7 @@ Get to your reps to 15 sec each try to extend for 45 sec MAX
 
 - DeadLift ^1260ed
 	- ![How to PROPERLY Deadlift for Growth (5 Easy Steps) - YouTube](https://www.youtube.com/watch?v=XxWcirHIwVo&t=315s)
+	- ![How to Perform a Deficit Deadlift - YouTube](https://www.youtube.com/watch?v=hnuPZZfeRzs)
 - Sumo Squat
 	- ![](https://www.youtube.com/watch?v=vBA3vyOxJv0)
 
@@ -112,3 +113,5 @@ Get to your reps to 15 sec each try to extend for 45 sec MAX
 ![Banded Joint Mobilizations for Stiff Ankles - YouTube](https://youtu.be/ILSbK8RnGdI?si=86ONU_PSK-td-Nlm) ^da4cd0
 
 ![Deep Squat w/ Band Single Arm Reach - YouTube](https://www.youtube.com/watch?v=VpBlbi7TNUc) ^ab16e7
+
+![How to do a Sky Squat Reach stretch - YouTube](https://www.youtube.com/watch?v=Zv1wILGzeec)
