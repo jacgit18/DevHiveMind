@@ -29,6 +29,11 @@ refine this and include different meals base on ingredients mentioned
 - **Egg Muffins** (Eggs, spinach, turkey sausage)  
   
 #### **Lunch/Dinner (Cost: ~$80 total)**  
+
+14 dollar meal for x 3 days x 4 weeks =  168
+
+
+
 - **Protein:** Chicken thighs ($10), ground turkey ($8), steak, beef
 - **Carbs:** Rice ($3), sweet potatoes ($4), quinoa ($5)  
 - **Veggies:** Frozen mix ($8), fresh greens ($6)  
