@@ -167,3 +167,8 @@ _Tip:_ Use added weight if possible; heavier weight makes pull-ups feel easier w
 
 
 ![Equipment Demo - The Landmine Twist - YouTube](https://www.youtube.com/watch?v=SDLLsi98xJY) ^b8a4b6
+
+
+
+
+![Marpo Rope Pulling Machine - YouTube](https://youtu.be/hP_xdsp7Ojk?si=HPTb9E4H-3t8iqK_) ^f49369
