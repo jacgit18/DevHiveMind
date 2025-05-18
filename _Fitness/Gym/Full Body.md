@@ -60,6 +60,14 @@ dg-publish:
 
 - ![Dumbbell Farmers March - YouTube](https://www.youtube.com/watch?v=C2I_HsdDVCE) ^0c52b2
 
+
+- ![Overhead SQUAT: Full Guide & Tips in Just 2 Min - YouTube](https://www.youtube.com/watch?v=fArbuOoXCOI) ^cbb17a
+- ![Fix your overhead squat mobility fast! - YouTube](https://www.youtube.com/watch?v=7dazkuWGOa8)
+
+
+- ![How to do a Kettlebell Goblet Squat - YouTube](https://www.youtube.com/watch?v=MWHIs0zxkCU) ^dec99b
+
+
 ### Cardio Calisthenic
 - Rope Slams
 	- ![](https://www.youtube.com/watch?v=o_1l_6D21z8)
@@ -75,4 +83,6 @@ dg-publish:
 	- ![](https://www.youtube.com/watch?v=rifQ2I9iY_o)
 - Battle Rope Jacks
 	- ![](https://www.youtube.com/watch?v=r7Ndi0YYZ-0)
+
+
 
