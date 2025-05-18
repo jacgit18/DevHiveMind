@@ -217,10 +217,9 @@ color purple
 
 #todo/BAU/Workout
 
-- [ ] Dead Hang at BK-MMA
+- [ ] Dead Hang at BK-MMA & Leg Day
 - [ ] Pick rest day each week
 - [ ] Do 5 to 6 exercises per session 
-- [ ] Do Controlled Explosive Burpee
 - [x] Do [[Grip Strength Training]] every day ✅ 2025-05-08
 - [ ] Run to gym following [[Sprinting Regimen]]
 - [ ] Use [[Stability Ball Workout Plan]] for core strengthening, flexibility, and stretching,  
