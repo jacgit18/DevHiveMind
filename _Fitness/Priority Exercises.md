@@ -47,7 +47,7 @@ dg-publish:
 - **Slow Weight Gain:** ~1,700–1,800 calories/day over the course of a year (extremely slow, not typical for bulking).
  
 #todo/BAU/Life 
-- [ ] Order unity twice a month or some alt staying under $260 and $70 left over for super market and eating out maybe $30 more if eating out or networking so $360 for food at max
+- [ ] Order [[Food]] from CookUnity twice a month or some alt staying under $260 and $70 left over for super market and eating out maybe $30 more if eating out or networking so $360 for food at max
 ##### **Protein Requirements:**
 1. **Daily Protein for Maintenance/Gain:** ~158 – 330 grams of protein per day
 2. **Protein for Cutting (higher intake for muscle preservation):** ~180 grams/day
@@ -268,7 +268,7 @@ color purple
 	- [ ] Stop Eating 3 hour before sleep
 	- [ ] Stop Drinking 2 hour before sleep
 	- [ ] Stop Scrolling 1 hour before sleep
-- [ ] For one of the days at Gym  focus on full body while also using the day for experimenting.
+- [ ] For one of the days at Gym focus on full body while also using the day for experimenting.
 - [ ] If very sore or exhausted do a light day with bands to still get something in but not do anything heavy with weights.
 - [ ] Rotate in different exercises every **8-12 weeks** to avoid stagnation.
 
