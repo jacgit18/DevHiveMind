@@ -33,11 +33,6 @@
       "title": "Google Keep"
     },
     {
-      "type": "file",
-      "ctime": 1737449967471,
-      "path": "_Fitness/Priority Exercises.md"
-    },
-    {
       "type": "url",
       "ctime": 1746924279766,
       "url": "http://127.0.0.1:8384/",
@@ -54,6 +49,21 @@
       "ctime": 1747292559235,
       "url": "https://www.youtube.com/",
       "title": "YouTube"
+    },
+    {
+      "type": "file",
+      "ctime": 1747429809698,
+      "path": "_Fitness/Gym/Optimal Order by Exercise Type.md"
+    },
+    {
+      "type": "file",
+      "ctime": 1737449967471,
+      "path": "_Fitness/Priority Exercises.md"
+    },
+    {
+      "type": "file",
+      "ctime": 1747429792053,
+      "path": "_Fitness/Striking Approach.md"
     }
   ]
 }
