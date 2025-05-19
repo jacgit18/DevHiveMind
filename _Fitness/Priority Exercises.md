@@ -45,6 +45,9 @@ dg-publish:
 - **Calorie Goal for Gaining Weight (moderate approach):** ~3,300 calories/day (current target)
 - **Maintain New Weight (goal weight):** ~2,800 calories/day
 - **Slow Weight Gain:** ~1,700–1,800 calories/day over the course of a year (extremely slow, not typical for bulking).
+ 
+#todo/BAU/Life 
+- [ ] Order unity twice a month or some alt staying under $260 and $70 left over for super market and eating out maybe $30 more if eating out or networking so $360 for food at max
 ##### **Protein Requirements:**
 1. **Daily Protein for Maintenance/Gain:** ~158 – 330 grams of protein per day
 2. **Protein for Cutting (higher intake for muscle preservation):** ~180 grams/day
