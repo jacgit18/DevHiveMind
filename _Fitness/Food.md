@@ -14,17 +14,17 @@ dg-publish:
 
 ## **Budget Breakdown (Monthly)**
 
-| Category                                  | Cost     | Notes                                           |
-| ----------------------------------------- | -------- | ----------------------------------------------- |
+| Category                                  |   Cost   | Notes                                           |
+| ----------------------------------------- | :------: | ----------------------------------------------- |
 | **Groceries (Meal Prep - 4 Days/Week)**   | **$110** | Aldi, Trader Joe’s, frozen produce prioritized  |
 | **Cooked Food (Corner stores/Grab-n-go)** | **$150** | Prepared meals, protein bars, fruit             |
 | **Dining Out (Optional)**                 | **$100** | 1–2 restaurant/bar visits or delivery per month |
 | **Total**                                 | **$360** |                                                 |
-|                                           | *or*     |                                                 |
-|                                           |          |                                                 |
-
-or 2 weeks of Cookunity for 230 and 130 left over
-
+|                                           |   *or*   |                                                 |
+| **Groceries (Meal Prep - 2 Weeks)**       | **$65**  |                                                 |
+| **CookUnity**                             | **$230** |                                                 |
+| **Dining Out (Optional)**                 | **$65**  |                                                 |
+| **Total**                                 | **$360** |                                                 |
 
 
 
