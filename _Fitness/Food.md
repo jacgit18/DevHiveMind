@@ -11,84 +11,385 @@ Relates:
 Peer Reviewed: 0
 dg-publish:
 ---
-refine this and include different meals base on ingredients mentioned 
-### **Budget Breakdown**  
-| Category                           | Cost (Monthly) | Notes                     |     |
-| ---------------------------------- | -------------- | ------------------------- | --- |
-| **Groceries (Meal Prep - 4 days)** | **$140**       | Bulk buys, whole foods    |     |
-| **Eating Out (3 meals)**           | **$105**       | ~$35/meal max             |     |
-| **Snacks/Extras**                  | **$35**        | Protein bars, fruit, etc. |     |
-| **Emergency Buffer**               | **$20**        | Unplanned costs           |     |
-| **Total**                          | **$300**       |                           |     |
-  
----  
-  
-### **Meal Prep Plan (4 Days)**  
-#### **Breakfast (Cost: ~$20 total)**  
-- **Overnight Oats** (Oats + Greek yogurt + peanut butter + frozen berries)  
-- **Egg Muffins** (Eggs, spinach, turkey sausage)  
-  
-#### **Lunch/Dinner (Cost: ~$80 total)**  
+## 🍽️ DAILY MEAL TARGETS
 
-14 dollar meal for x 3 days x 4 weeks =  168
+**Calories:** ~3,000  
+**Protein:** ~200g  
+**Meals/day:** 4 main meals + 1–2 snacks/shakes
 
+---
 
+## 🗓️ **Day 1: Chicken & Quinoa Power Bowl + Peanut Butter Oats Shake**
 
-- **Protein:** Chicken thighs ($10), ground turkey ($8), steak, beef
-- **Carbs:** Rice ($3), sweet potatoes ($4), quinoa ($5)  
-- **Veggies:** Frozen mix ($8), fresh greens ($6)  
-- **Meal Ideas:**  
-- Turkey & quinoa bowls  
-- Stir-fry with rice  
-- Chicken + roasted sweet potatoes  
-  
-#### **Snacks (Cost: ~$20 total)**  
-- Greek yogurt ($5)  
-- Almonds ($7)  
-- Hummus + carrots ($8)  
-  
-  
----  
-  
-### **Eating Out Strategy (3 Meals, $105)**  
-1. **Fast-Casual (~$12/meal)**  
-- Chipotle bowl (double protein)  
-- Sweetgreen salad  
-2. **Takeout (~$15/meal)**  
-- Thai curry + rice  
-- Sushi roll combo  
-3. **"Treat Meal" (~$18/meal)**  
-- Burger + fries  
-- Pizza slice + salad  
-  
-order grubhub with multiple things for two days 
-  
----  
-  
-### **Pro Tips to Stay on Budget**  
-1. **Groceries:** Buy store brands, frozen veggies, bulk rice/beans.  
-2. **Meal Prep:** Cook in batches (e.g., 4lbs chicken at once).  
-3. **Eating Out:**  
-- Use apps (TooGoodToGo for discounts).  
-- Order lunch specials (cheaper than dinner).  
-4. **Leftovers:** Repurpose (e.g., extra chicken → tacos next day).  
-  
----  
-  
-### **Sample Weekly Plan**  
-| Day | Meal Prep | Eating Out |  
-|-----------|-----------|------------|  
-| **Sun** | Cook all meals | – |  
-| **Mon** | Prepped lunch/dinner | – |  
-| **Tue** | Prepped lunch | Takeout dinner ($15) |  
-| **Wed** | Prepped lunch/dinner | – |  
-| **Thu** | Prepped lunch | Fast-casual dinner ($12) |  
-| **Fri** | Prepped lunch | Treat meal ($18) |  
-| **Sat** | – | – (Leftovers or flex) |  
-  
----  
-  
-### **Final Notes**  
-- This keeps **~70% whole foods**, **30% convenience**.  
-- Adjust protein/veggie ratios based on your needs (e.g., more meat = +$10).  
-- Want a **cheaper version**? Swap one eating-out meal for homemade (saves ~$30).
+### 🍛 Meal 1: Chicken & Quinoa Power Bowl
+
+- **Ingredients (per serving):**
+    
+    - 6 oz grilled chicken breast
+        
+    - 1 cup cooked quinoa
+        
+    - 1 cup steamed broccoli
+        
+    - 1 tbsp olive oil
+        
+    - ½ cup cherry tomatoes
+        
+- **Calories:** ~650
+    
+- **Protein:** ~50g
+    
+
+**💡 Repurpose**: Use extra chicken/quinoa for wraps or salad bowls.
+
+---
+
+### 🥤 Snack/Shake 1: Peanut Butter Oat Protein Shake
+
+- **Ingredients:**
+    
+    - 2 tbsp peanut butter
+        
+    - 1 cup whole milk
+        
+    - ½ cup oats
+        
+    - 1 scoop whey protein (optional: ~$34 for 5 lbs at BJ’s, ~$0.50/serving)
+        
+    - 1 banana
+        
+- **Calories:** ~700
+    
+- **Protein:** ~40g
+    
+
+---
+
+### 🍝 Meal 2: Leftover Chicken Quinoa Wrap
+
+- **Ingredients:**
+    
+    - 4 oz leftover chicken
+        
+    - ½ cup quinoa
+        
+    - 1 whole wheat tortilla
+        
+    - 2 tbsp Greek yogurt (sour cream substitute)
+        
+    - Handful of lettuce or spinach
+        
+- **Calories:** ~500
+    
+- **Protein:** ~40g
+    
+
+---
+
+### 🥣 Snack 2: Cottage Cheese Bowl
+
+- 1 cup cottage cheese
+    
+- 1 tbsp honey
+    
+- 1 tbsp peanut butter or almonds
+    
+- **Calories:** ~400
+    
+- **Protein:** ~30g
+    
+
+---
+
+### 🍲 Meal 3: Rice + Eggs + Broccoli
+
+- 1 cup cooked white rice
+    
+- 2 eggs + 3 egg whites
+    
+- 1 cup broccoli sautéed in olive oil
+    
+- **Calories:** ~600
+    
+- **Protein:** ~40g
+    
+
+---
+
+## **Day 1 Totals:**
+
+- **Calories:** ~2,850–3,100
+    
+- **Protein:** ~200g
+    
+
+---
+
+## 🗓️ **Day 2: Turkey & Sweet Potato Skillet + Cottage Cheese Wraps**
+
+### 🍲 Meal 1: Ground Turkey Sweet Potato Skillet
+
+- 6 oz ground turkey
+    
+- 1 medium sweet potato
+    
+- ½ onion sautéed
+    
+- 1 tbsp olive oil
+    
+- **Calories:** ~600
+    
+- **Protein:** ~50g
+    
+
+---
+
+### 🍽️ Meal 2: Turkey Wrap with Cheese
+
+- 4 oz turkey
+    
+- 1 tortilla
+    
+- 1 slice cheddar
+    
+- Spinach, tomatoes
+    
+- Mustard or Greek yogurt
+    
+- **Calories:** ~500
+    
+- **Protein:** ~35g
+    
+
+---
+
+### 🥤 Shake: Banana Peanut Butter Protein Shake (Same as Day 1)
+
+- **Calories:** ~700
+    
+- **Protein:** ~40g
+    
+
+---
+
+### 🍳 Meal 3: Eggs & Rice + Spinach
+
+- 2 whole eggs + 4 egg whites
+    
+- 1 cup cooked rice
+    
+- 1 cup spinach sautéed in olive oil
+    
+- **Calories:** ~550
+    
+- **Protein:** ~40g
+    
+
+---
+
+### 🍨 Snack: Greek Yogurt + Granola + Honey
+
+- 1 cup Greek yogurt
+    
+- 1/3 cup granola
+    
+- 1 tbsp honey
+    
+- **Calories:** ~400
+    
+- **Protein:** ~35g
+    
+
+---
+
+## **Day 2 Totals:**
+
+- **Calories:** ~2,900–3,100
+    
+- **Protein:** ~200g
+    
+
+---
+
+## 🗓️ **Day 3: Lentil Chicken Stew + Egg Sandwiches**
+
+### 🍲 Meal 1: Lentil Chicken Stew (1.5 servings)
+
+- 1 cup lentils
+    
+- 6 oz shredded chicken
+    
+- 1 cup carrots, onion, broth
+    
+- Olive oil drizzle
+    
+- **Calories:** ~650
+    
+- **Protein:** ~50g
+    
+
+---
+
+### 🥪 Meal 2: Egg Sandwich x 2
+
+- 4 eggs + 2 egg whites
+    
+- 2 slices toast x 2
+    
+- Cheese slice optional
+    
+- **Calories:** ~600
+    
+- **Protein:** ~40g
+    
+
+---
+
+### 🥤 Shake: Oats + Peanut Butter + Banana (Same)
+
+- **Calories:** ~700
+    
+- **Protein:** ~40g
+    
+
+---
+
+### 🍛 Meal 3: Chicken + Quinoa + Feta + Spinach
+
+- 6 oz chicken
+    
+- 1 cup quinoa
+    
+- 1/2 cup spinach
+    
+- 1 oz feta
+    
+- **Calories:** ~600
+    
+- **Protein:** ~40g
+    
+
+---
+
+### 🍫 Snack: Trail Mix or Nut Bar + Milk
+
+- ~250–300 cal
+    
+- ~20g protein
+    
+
+---
+
+## **Day 3 Totals:**
+
+- **Calories:** ~3,100
+    
+- **Protein:** ~200g
+    
+
+---
+
+## 🗓️ **Day 4: Spinach Feta Chicken + Protein Pasta**
+
+### 🍗 Meal 1: Spinach & Feta Stuffed Chicken
+
+- 1 large breast (~6–7 oz)
+    
+- ½ cup cooked spinach
+    
+- 1 oz feta
+    
+- 1 tbsp olive oil
+    
+- **Calories:** ~600
+    
+- **Protein:** ~50g
+    
+
+---
+
+### 🍝 Meal 2: Protein Pasta Bowl
+
+- 1.5 cups cooked chickpea/lentil pasta (e.g. Banza)
+    
+- 1/2 cup tomato sauce
+    
+- 1 tbsp olive oil
+    
+- 2 tbsp grated cheese
+    
+- **Calories:** ~600
+    
+- **Protein:** ~40g
+    
+
+---
+
+### 🥤 Shake (Same as previous)
+
+- **Calories:** ~700
+    
+- **Protein:** ~40g
+    
+
+---
+
+### 🍳 Meal 3: Egg Veggie Stir-Fry + Toast
+
+- 3 eggs + 3 egg whites
+    
+- 1 cup chopped peppers/onions
+    
+- 2 slices toast
+    
+- Butter or olive oil
+    
+- **Calories:** ~600
+    
+- **Protein:** ~40g
+    
+
+---
+
+### 🥛 Snack: Greek Yogurt + Almonds
+
+- 1 cup yogurt
+    
+- 1 oz almonds
+    
+- **Calories:** ~400
+    
+- **Protein:** ~30g
+    
+
+---
+
+## **Day 4 Totals:**
+
+- **Calories:** ~3,000
+    
+- **Protein:** ~200g
+    
+
+---
+
+## 🛒 Ingredient Price Summary (Monthly Bulk)
+
+|Item|Est. Cost|Store|
+|---|---|---|
+|Chicken breast (10 lb)|~$25|Aldi or BJ’s|
+|Ground turkey (4 lb)|~$12|Aldi|
+|Eggs (3 dozen)|~$7|Aldi or C-Town|
+|Whole milk (2 gal)|~$7|Aldi|
+|Oats (2 lb)|~$3|Aldi|
+|Peanut butter (2 jars)|~$4|Aldi|
+|Quinoa or rice (4 lb)|~$6|Aldi/Trader Joe’s|
+|Sweet potatoes (3 lb)|~$3|C-Town|
+|Spinach, broccoli, carrots|~$10|Aldi|
+|Greek yogurt (2 tubs)|~$7|Aldi|
+|Whey protein (5 lbs)|~$34|BJ’s|
+|Lentils (2 lb dry)|~$2|Trader Joe’s|
+|Chickpea/lentil pasta|~$3|Trader Joe’s|
+|Olive oil, spices, extras|~$15|Aldi/C-Town|
+
+**Total (monthly):** ~$130–$145
