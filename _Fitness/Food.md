@@ -11,15 +11,31 @@ Relates:
 Peer Reviewed: 0
 dg-publish:
 ---
+
+## **Budget Breakdown (Monthly)**
+
+| Category                                  | Cost     | Notes                                           |
+| ----------------------------------------- | -------- | ----------------------------------------------- |
+| **Groceries (Meal Prep - 4 Days/Week)**   | **$110** | Aldi, Trader Joe’s, frozen produce prioritized  |
+| **Cooked Food (Corner stores/Grab-n-go)** | **$150** | Prepared meals, protein bars, fruit             |
+| **Dining Out (Optional)**                 | **$100** | 1–2 restaurant/bar visits or delivery per month |
+| **Total**                                 | **$360** |                                                 |
+|                                           | *or*     |                                                 |
+|                                           |          |                                                 |
+
+or 2 weeks of Cookunity for 230 and 130 left over
+
+
+
+
 ## 🍽️ DAILY MEAL TARGETS
 
 **Calories:** ~3,000  
 **Protein:** ~200g  
 **Meals/day:** 4 main meals + 1–2 snacks/shakes
 
----
 
-## 🗓️ **Day 1: Chicken & Quinoa Power Bowl + Peanut Butter Oats Shake**
+## Day 1
 
 ### 🍛 Meal 1: Chicken & Quinoa Power Bowl
 
@@ -125,7 +141,7 @@ dg-publish:
 
 ---
 
-## 🗓️ **Day 2: Turkey & Sweet Potato Skillet + Cottage Cheese Wraps**
+## Day 2
 
 ### 🍲 Meal 1: Ground Turkey Sweet Potato Skillet
 
@@ -211,7 +227,7 @@ dg-publish:
 
 ---
 
-## 🗓️ **Day 3: Lentil Chicken Stew + Egg Sandwiches**
+## Day 3
 
 ### 🍲 Meal 1: Lentil Chicken Stew (1.5 servings)
 
@@ -289,7 +305,7 @@ dg-publish:
 
 ---
 
-## 🗓️ **Day 4: Spinach Feta Chicken + Protein Pasta**
+## Day 4
 
 ### 🍗 Meal 1: Spinach & Feta Stuffed Chicken
 
