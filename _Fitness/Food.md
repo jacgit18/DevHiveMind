@@ -12,27 +12,133 @@ Peer Reviewed: 0
 dg-publish:
 ---
 
+# Meal Plan 
+
+
+**Calories:** ~2,900 to 3,000  
+**Protein:** ~150g to 215g  
+
+
+Amounts of money it cost to cover the deficit of protein drinks per day  
+  
+6×6.20 = 37.20
+
+
 ## **Budget Breakdown (Monthly)**
 
-| Category                                  |   Cost   | Notes                                           |
-| ----------------------------------------- | :------: | ----------------------------------------------- |
-| **Groceries (Meal Prep - 4 Days/Week)**   | **$110** | Aldi, Trader Joe’s, frozen produce prioritized  |
-| **Cooked Food (Corner stores/Grab-n-go)** | **$150** | Prepared meals, protein bars, fruit             |
-| **Dining Out (Optional)**                 | **$100** | 1–2 restaurant/bar visits or delivery per month |
-| **Total**                                 | **$360** |                                                 |
-|                                           |   *or*   |                                                 |
-| **Groceries (Meal Prep - 2 Weeks)**       | **$65**  |                                                 |
-| **CookUnity**                             | **$230** |                                                 |
-| **Dining Out (Optional)**                 | **$65**  |                                                 |
-| **Total**                                 | **$360** |                                                 |
+| Category                                  |    Cost     | Notes                                           |
+| ----------------------------------------- | :---------: | ----------------------------------------------- |
+| **Groceries (Meal Prep - 4 Days/Week)**   |  **$110**   | Aldi, Trader Joe’s, frozen produce prioritized  |
+| **Cooked Food (Corner stores/Grab-n-go)** |  **$150**   | Prepared meals, protein bars, fruit             |
+| **Dining Out (Optional)**                 |  **$100**   | 1–2 restaurant/bar visits or delivery per month |
+| **Protein Drinks(Optional)**              | **$82**<br> | 2 packs  24 bottles  a month roughly            |
+| **Total**                                 |  **$360**   | 332 or 442 if protein drinks no Dining out      |
+|                                           |    *or*     |                                                 |
+| **Groceries (Meal Prep - 2 Weeks)**       |   **$65**   |                                                 |
+| **CookUnity**                             |  **$230**   |                                                 |
+| **Dining Out (Optional)**                 |   **$65**   |                                                 |
+| **Protein Drinks(Optional)**              | **$82**<br> |                                                 |
+| **Total**                                 |  **$360**   |                                                 |
+
+
+Tuna fish
+
+### Homemade snacks to cover 1220 calorie 48 to 113g protein deficit
+protein deficit assumes no protein drink
+
+
+12 slice cheese  
+
+10 pairs of bread so 10 sandwiches  
+
+
+#### Sandwich  have one a day 
+Sandwich total protein and calories  
+22g protein 290 protein depending on ingredients
+
+this is made from 2 slices of Dave killer bread which is 8g protein 140 calories total
+
+Provolone cheese 5g protein 70 calories  
+  
+Chicken breast 6 slices 9g protein 80 calories 
+Not sure how much chicken breast is present but eating six slices per sandwich since thin
 
 
 
-## 🍽️ DAILY MEAL TARGETS
+Peanut Butter Banana Protein Sandwich  
+  
+Ingredients: 2 slices whole grain bread, 2 tbsp peanut butter, ½ sliced banana, sprinkle of protein powder  
+  
+~20g protein | ~400–500 kcal
 
-**Calories:** ~3,000  
-**Protein:** ~200g  
-**Meals/day:** 4 main meals + 1–2 snacks/shakes
+
+
+Cottage Cheese & Honey Sandwich  
+  
+Ingredients: ½ cup cottage cheese (in a sandwich thin), drizzle of honey or jam  
+  
+~15g protein | ~300–350 kcal
+
+
+
+
+
+
+
+#### Yogurt 
+
+### **Cottage Cheese + Yogurt Blend**
+
+- **Ingredients**:
+    
+    - 1/2 cup full-fat cottage cheese
+        
+    - 1/2 cup full-fat Greek yogurt
+        
+    - 1 tbsp flax seeds
+        
+    - 1 banana or apple chunks
+        
+- **Approx. Calories**: 450–500
+    
+- **Protein**: ~25g
+
+### **Fruit & Nut Yogurt Bowl**
+
+- **Ingredients**:
+    
+    - 1 cup Greek yogurt
+        
+    - 1/2 cup chopped mango or berries
+        
+    - 2 tbsp mixed nuts (walnuts, almonds, cashews)
+        
+    - 1 tbsp shredded coconut
+        
+    - Optional: drizzle of honey
+        
+- **Approx. Calories**: 500–600
+    
+- **Protein**: ~20g
+
+
+## 🍽️ DAILY MEAL TARGETS Cook Unity Meal Weeks
+**Daily Estimate Calories & Protein:**
+- **Protein drink:** 220 kcal & 40g Protein 
+- **Average meal (x2):** 880 kcal each → 1,760 kcal & 42g each → 84g Protein
+- **Additional item**(Calories and Protein varies by meal)  
+	- **Eggs**: ~210 kcal & 18g Protein 
+	- **Oats with Peanut Butter** ~245 kcal & 9g Protein
+- **Total:** ~2,190 kcal & 142g protein
+- rough 900 to 1000 cal deficit &  142g - 40 = 102g Protein without shakes
+
+
+
+
+## 🍽️ DAILY MEAL TARGETS Cooking Weeks
+
+Make food for 4 days including buy premade food for 3 days out of the week 
+
 
 
 ## Day 1
@@ -75,9 +181,7 @@ dg-publish:
     - 1 banana
         
 - **Calories:** ~700
-    
 - **Protein:** ~40g
-    
 
 ---
 
@@ -409,3 +513,92 @@ dg-publish:
 |Olive oil, spices, extras|~$15|Aldi/C-Town|
 
 **Total (monthly):** ~$130–$145
+
+
+
+Got it! Here are **high-calorie, high-protein yogurt recipes without protein powder**, all using whole food ingredients:
+
+---
+
+### 1. **Nut Butter Yogurt Bowl**
+
+- **Ingredients**:
+    
+    - 1 cup full-fat Greek yogurt
+        
+    - 2 tbsp peanut butter or almond butter
+        
+    - 1 tbsp honey
+        
+    - 1/4 cup granola
+        
+    - 1 tbsp chia or flax seeds
+        
+- **Approx. Calories**: 500–600
+    
+- **Protein**: ~20g
+    
+
+---
+
+### 2. **Savory Egg & Yogurt Bowl (Turkish-style)**
+
+- **Ingredients**:
+    
+    - 1 cup plain Greek yogurt
+        
+    - 2 soft-boiled or poached eggs
+        
+    - Drizzle of olive oil or chili oil
+        
+    - Pinch of salt, garlic powder, and paprika
+        
+    - Optional: crusty bread for dipping
+        
+- **Approx. Calories**: 400–500
+    
+- **Protein**: ~25g
+    
+
+---
+
+### 3. **Banana & Nut Yogurt Mix**
+
+- **Ingredients**:
+    
+    - 1 cup full-fat Greek yogurt
+        
+    - 1 sliced banana
+        
+    - 2 tbsp chopped walnuts or almonds
+        
+    - Dash of cinnamon
+        
+- **Approx. Calories**: 450–550
+    
+- **Protein**: ~20g
+    
+
+---
+
+### 4. **Overnight Oats with Yogurt**
+
+- **Ingredients**:
+    
+    - 1/2 cup oats
+        
+    - 1 cup full-fat Greek yogurt
+        
+    - 1/2 cup whole milk
+        
+    - 1 tbsp chia seeds
+        
+    - 1 tbsp peanut butter
+        
+    - Optional: fruit like chopped dates, banana, or berries
+        
+- **Refrigerate overnight**
+    
+- **Approx. Calories**: 600–700
+    
+- **Protein**: ~25g
