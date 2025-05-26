@@ -425,7 +425,7 @@ dead bug hand pushed against wall alternating pushing heals down - Anti-extensio
 
 DeadBug Alt Heel Tap
 
-
+Try pull up position at top holding it
 
 | Body  | Exercise                                    | Tried | Focus  | Type       | W(lb/kg) |                      | Priority | Duration | Sets | AltType    | Tried | Alt W(lb/kg) |
 | ----- | ------------------------------------------- | ----- | ------ | ---------- | -------- | -------------------- | -------- | -------- | ---- | ---------- | ----- | ------------ |
