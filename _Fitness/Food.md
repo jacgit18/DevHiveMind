@@ -23,6 +23,10 @@ Amounts of money it cost to cover the deficit of protein drinks per day
   
 6×6.20 = 37.20
 
+Tuna fish
+
+Corn bread
+
 
 ## **Budget Breakdown (Monthly)**
 
@@ -41,7 +45,7 @@ Amounts of money it cost to cover the deficit of protein drinks per day
 | **Total**                                 |  **$360**   |                                                 |
 
 
-Tuna fish
+
 
 ### Homemade snacks to cover 1220 calorie 48 to 113g protein deficit
 protein deficit assumes no protein drink

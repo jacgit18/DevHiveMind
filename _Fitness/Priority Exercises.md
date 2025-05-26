@@ -63,6 +63,8 @@ Start with a dynamic stretch to Improve blood flow and flexibility. End with a s
 ## Best Practices
 #todo/Workout 
 - [ ] Follow [[Workout Phases]] starting June and focus on [[Optimal Order Of Operations For Body Development]] and [[Optimal Order by Exercise Type]] 
+- [ ] Keep [[Muscle Imbalance]] in mind 
+
 
 
 ### Terms
@@ -468,7 +470,7 @@ Prioritize resistance bands for explosive phase they can be used for other phase
 | Hip Extension                       | 10         | 20        | 4    | 8    | Standing  | Multi                 | Bottom | _Highest | [[Cable Machine Leg Exercises#^d00f82 \|Hip Extension]]                 |       | Cables     | N/A               | *10*     | Push   | N/A   | CM    |
 | Hip Flexion                         | 10         | 20        | 4    | 8    | Standing  | Multi                 | Bottom | _Highest | [[Cable Machine Leg Exercises \|Hip Flexion ]]                          |       | Cables     | N/A               | *10*     | Push   | N/A   | CM    |
 | Hip Openers                         | 0          | 0         | 4    | 8    | Standing  | Multi                 | Bottom | _Highest | [[Total Body Resistance Exercise#^723ad2 \|Hip Openers]]                |       | TRX        | N/A               | *10*     | Pull   | N/A   | CM    |
-| Hip Thrust                          | 90         | 120       | 4    | 8    | Seated    | Hamstring/Hips        | Bottom | _Highest | [[Lower#^2559bb \|Hip Thrust]]                                          | Yes   | Fixed      | N/A               | *60*     | Push   | N/A   | CM    |
+| Hip Thrust                          | 120        | 130       | 4    | 8    | Seated    | Hamstring/Hips        | Bottom | _Highest | [[Lower#^2559bb \|Hip Thrust]]                                          | Yes   | Fixed      | N/A               | *60*     | Push   | N/A   | CM    |
 | Incline Row                         | 0          | 0         | 4    | 8    | Bench     | Lats                  | Upper  | _Highest | [[Upper#^4b1e6d \|Incline Row]]                                         |       | Dumbbell   | N/A               | *0*      | Pull   | N/A   | CM    |
 | Jefferson Curl                      | 0          | 0         | 4    | 8    | Platform  | Lower Abdom           | Back   | _Highest | [[Core#^7f79f3 \| Jefferson Curl]]                                      | Yes   | Kettlebell | N/A               | *0*      | Pull   | N/A   | RC    |
 | Jump Lunges                         | 0          | 0         | 4    | 8    | Standing  | Multi                 | Bottom | _Highest | [[Total Body Resistance Exercise#^41abf0 \|Jump Lunges]]                |       | TRX        | N/A               | *10*     | Pull   | N/A   | CM    |
