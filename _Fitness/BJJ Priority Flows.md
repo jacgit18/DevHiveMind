@@ -21,7 +21,8 @@ dg-publish:
 
 > **Your body isn't solely your possession it is subject to everyone assuming you allow them to control and manipulate it. Focus on what you can control, but within that scope of control understand you can't control everything no matter how much you fight. Embrace the flow of control or the absence of control.**
 
-#### Road to Third Strip
+Dig through the ground and reach for the sky and break them down to ground
+#### Road to Fourth Strip
 #todo/BAU/MMA/Drill 
 - [ ] Prioritize protecting neck over framing
 - [ ] Work on [[Framing]] & Closed Guard
@@ -45,6 +46,8 @@ Submissions can serve as both sweeps and opportunities to transition to other su
 > ***"You train jiu-jitsu to fight on the ground and rise to your feet. In life, you learn to face battles starting from rock bottom, standing up stronger and taller each time." *** 
 
 At times it can BJJ can be like water in the fluidity but at times you can be like air and at other times you have to implement control bending things to your will like the earth. 
+
+
 ### Real-World Tips
 > Slow down opponent in between transitions then pick and choose when to use you're speed
 - **Distance Management:** Always use your legs to create space and control or break posture.

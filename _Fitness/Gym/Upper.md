@@ -109,6 +109,8 @@ Reverse Preacher Curl(3:14)
 
 ![Dumbbell Bench Wrist Curl - YouTube](https://youtu.be/2wPpcJBe03o?si=2jksy77b1xc4f5Pr) ^1156ec
 
+![FOREARMS (FLEXORS) - Seated Side Wrist Curls - YouTube](https://youtu.be/9IJfwmjy4xc?si=7wVY7AckqtwIK92c)
+
 ![How To: Reverse Seated Wrist Curl - YouTube](https://youtu.be/FW7URAaC-vE?si=rrbZUiV0loPicJB1)
 
 ![The Push Press - YouTube](https://www.youtube.com/watch?v=iaBVSJm78ko) ^98dc6c

@@ -45,7 +45,63 @@ Corn bread
 | **Total**                                 |  **$360**   |                                                 |
 
 
+## 🔥 **RAISE (Increase Body Temp & Heart Rate)**
 
+> These are **dynamic** movements that elevate heart rate — not commonly done on your side, but here's what applies:
+
+### **Dynamic (On Side)**
+
+- **Side-to-Side Rolling** – Roll from side to side across a mat, using arms and hips to initiate; great for warm blood flow in spine/core.
+    
+- **Side-Lying Bicycles** – Pedal your top leg like a bike in the air to raise HR slightly and warm up hips.
+    
+
+---
+
+## 💡 **ACTIVATE (Engage Muscle Groups)**
+
+> Controlled, repetitive contractions to wake up stabilizers and movers (often glutes, core, shoulders).
+
+### **Dynamic**
+
+- **Side-Lying Leg Lifts** – Top leg lifts straight up and down; targets glute medius.
+    
+- **Clamshells** – Knees bent, feet together, open top knee like a clamshell.
+    
+- **Side-Lying Hip Circles** – Lift top leg and draw slow circles in the air.
+    
+- **Side Plank Leg Raises** – From a side plank, lift top leg up/down; glutes + core activation.
+    
+
+### **Static**
+
+- **Side Plank Hold** – Elbow under shoulder, hips lifted; hold 15–30 sec per side.
+    
+- **Side-Lying Isometric Clam Hold** – Open clamshell and hold at top range.
+    
+
+---
+
+## 💥 **POTENTIATE (Prep for Explosive Work)**
+
+> Primer exercises—often isometric or resisted—to stimulate CNS and movement patterns used in training.
+
+### **Dynamic**
+
+- **Side Plank with Knee Drive** – From a side plank, explosively drive the top knee toward the chest, mimicking sprint mechanics.
+    
+- **Band-Resisted Side Clamshells** – Add a loop band for more neural drive; short bursts of powerful reps.
+
+
+
+**Barbell Exercises: Upper vs Lower Body Considerations**
+
+Upper body barbell exercises—like the bench press—can sometimes place unnecessary strain on the wrists due to the fixed, straight bar grip. If the grip doesn’t align naturally with your wrist and shoulder joints, it can cause discomfort or even injury over time.
+
+In contrast, barbell movements for the lower body (like squats and deadlifts) or full-body lifts often allow for a more natural grip or distribute load in a way that’s generally better tolerated.
+
+🔍 **Key Takeaway:**  
+Pay attention to how your body feels. If a movement feels off—especially in your wrists, shoulders, or joints—it may be worth adjusting your grip, switching to dumbbells, or using specialty bars (like a Swiss bar or safety squat bar) that allow for a more neutral position.
 
 ### Homemade snacks to cover 1220 calorie 48 to 113g protein deficit
 protein deficit assumes no protein drink
@@ -54,6 +110,22 @@ protein deficit assumes no protein drink
 12 slice cheese  
 
 10 pairs of bread so 10 sandwiches  
+
+
+
+
+
+Chia seeds 150 calories 5g Protien 2.5 tbsp
+
+
+Greek yogurt 200 calories 7g Protien two out of three cups
+
+
+Cottage cheese 120 calories 13g Protein 1/2 cup
+
+
+Almonds or other nuts about 160 calories 6G Protein 28g about 24 nuts
+
 
 
 #### Sandwich  have one a day 
@@ -606,3 +678,178 @@ Got it! Here are **high-calorie, high-protein yogurt recipes without protein pow
 - **Approx. Calories**: 600–700
     
 - **Protein**: ~25g
+
+
+
+
+
+Here's a combined list showing **calories and protein** per nut type, based on a **1 oz (28g)** serving, which includes the **approximate number of nuts per serving**.
+
+---
+
+🔥 **Top Nuts by Calories** *(per 1 oz / 28g serving)*  
+*(Includes protein and approx. nut count)*
+
+1. **Macadamia nuts** – 204 kcal, 2g protein (≈ 10–12 nuts)  
+2. **Pecans** – 200 kcal, 3g protein (≈ 18–20 halves)  
+3. **Pine nuts** – 190 kcal, 4g protein (≈ 167 nuts)  
+4. **Brazil nuts** – 187 kcal, 4g protein (≈ 6–8 nuts)  
+5. **Walnuts** – 185 kcal, 4g protein (≈ 14 halves)  
+6. **Almonds** – 165 kcal, 6g protein (≈ 23 nuts)  
+7. **Pistachios** – 160 kcal, 6g protein (≈ 49 nuts, shelled)  
+8. **Peanuts** – 161 kcal, 7.3g protein (≈ 28 nuts)  
+9. **Cashews** – 157 kcal, 5g protein (≈ 18 nuts)  
+
+---
+
+💪 **Top Nuts by Protein** *(per 1 oz / 28g serving)*  
+*(Includes calories and approx. nut count)*
+
+1. **Peanuts** – 7.3g protein, 161 kcal (≈ 28 nuts)  
+2. **Almonds** – 6g protein, 165 kcal (≈ 23 nuts)  
+3. **Pistachios** – 6g protein, 160 kcal (≈ 49 nuts, shelled)  
+4. **Cashews** – 5g protein, 157 kcal (≈ 18 nuts)  
+5. **Pine nuts** – 4g protein, 190 kcal (≈ 167 nuts)  
+6. **Brazil nuts** – 4g protein, 187 kcal (≈ 6–8 nuts)  
+7. **Walnuts** – 4g protein, 185 kcal (≈ 14 halves)  
+8. **Pecans** – 3g protein, 200 kcal (≈ 18–20 halves)  
+9. **Macadamia nuts** – 2g protein, 204 kcal (≈ 10–12 nuts)  
+
+---
+
+Let me know if you'd like:
+- A **visual chart or infographic**
+- A version sorted by **fat content** or **fiber**
+- Or a quick list of **nut butters** for similar macros!
+
+
+
+
+Here’s a list of **healthy milk options**—including dairy and plant-based—along with popular **brands** known for better ingredients (low sugar, minimal additives, and higher nutritional value):
+
+---
+
+## 🥛 Dairy-Based Milks
+
+### 1. **Organic Grass-Fed Whole Milk**
+
+**Brand**: _Organic Valley, Maple Hill_
+
+- Why it’s good: Higher in omega-3s and CLA, no synthetic hormones or antibiotics.
+    
+- Best for: Whole food nutrition, coffee, or cooking.
+    
+
+### 2. **A2 Milk**
+
+**Brand**: _a2 Milk Company_
+
+- Why it’s good: Contains only A2 beta-casein (easier to digest for some).
+    
+- Best for: People sensitive to regular milk but not lactose intolerant.
+    
+
+### 3. **Lactose-Free Milk**
+
+**Brand**: _Fairlife, Organic Valley Lactose-Free_
+
+- Why it’s good: Easier on digestion, still high in protein.
+    
+- Fairlife is ultra-filtered (more protein, less sugar).
+    
+
+---
+
+## 🌱 Plant-Based Milks (Unsweetened)
+
+### 4. **Unsweetened Almond Milk**
+
+**Brand**: _MALK, Elmhurst, Three Trees_
+
+- Why it’s good: Short ingredient list (just almonds, water, salt), no gums or fillers.
+    
+- Best for: Smoothies, light coffee drinks, cereal.
+    
+
+### 5. **Unsweetened Oat Milk**
+
+**Brand**: _Elmhurst, Willa’s, Oatly (Low-Fat or Original)_
+
+- Why it’s good: Creamy, higher in carbs but with beta-glucan fiber.
+    
+- Avoid flavored/sweetened versions with added oil or sugar.
+    
+- Best for: Lattes, baking, cereal.
+    
+
+### 6. **Unsweetened Soy Milk**
+
+**Brand**: _Westsoy, Edensoy (unsweetened organic)_
+
+- Why it’s good: Highest plant-based protein (~7–9g per serving), often fortified.
+    
+- Best for: Cooking, protein needs.
+    
+
+### 7. **Unsweetened Coconut Milk (Carton)**
+
+**Brand**: _Native Forest, So Delicious Organic_
+
+- Why it’s good: Lower in carbs, clean ingredients.
+    
+- Not the same as canned coconut milk for cooking.
+    
+- Best for: Keto/low-carb, smoothies, tropical recipes.
+    
+
+### 8. **Unsweetened Macadamia Milk**
+
+**Brand**: _Milkadamia (Unsweetened Original)_
+
+- Why it’s good: Creamy texture, low sugar, omega-7s.
+    
+- Best for: Coffee, smoothies.
+    
+
+### 9. **Pea Protein Milk**
+
+**Brand**: _Ripple (Unsweetened Original)_
+
+- Why it’s good: High in protein (~8g), allergen-friendly, lower sugar.
+    
+- Best for: Kids, smoothies, coffee.
+    
+
+---
+
+## ✅ Tips for Choosing Healthy Milk
+
+- **Look for:**
+    
+    - Unsweetened versions (0g added sugar)
+        
+    - Fortified with calcium & vitamin D
+        
+    - Short ingredient lists (2–4 ingredients)
+        
+    - No gums, oils, or carrageenan if possible
+        
+- **Avoid:**
+    
+    - Flavored versions (often high in sugar)
+        
+    - Added vegetable oils (especially in oat milk)
+        
+    - Long ingredient lists with preservatives
+        
+
+---
+
+Let me know if you'd like a version tailored to:
+
+- **Bulking or cutting**
+    
+- **Keto or low-carb**
+    
+- **Digestive issues or allergies**  
+    Or want a **chart comparing macros per serving**!

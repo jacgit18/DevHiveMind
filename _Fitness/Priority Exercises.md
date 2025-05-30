@@ -65,8 +65,6 @@ Start with a dynamic stretch to Improve blood flow and flexibility. End with a s
 - [ ] Follow [[Workout Phases]] starting June and focus on [[Optimal Order Of Operations For Body Development]] and [[Optimal Order by Exercise Type]] 
 - [ ] Keep [[Muscle Imbalance]] in mind 
 
-
-
 ### Terms
 - **Concentric (Lifting)**: Explode as fast as form allows.
 - **Eccentric (Lowering)**: Controlled and deliberate (2–4 seconds).
@@ -103,6 +101,15 @@ Inhale on on **Eccentric** when lowering the weight and exhale on **Concentric**
 
 
 ## Start  Dynamic End Static
+Like BJJ and a baby start off on back and progress to standing
+
+- **When to Use Weights:**
+    - ✅ **Mobility/Activation**: Use **bodyweight only**
+    - ✅ **Strength/Endurance/Burnout**: Add **light weights** (only if form stays clean)
+
+
+⏱️ **Total Time:** 5–15 minutes(about 7 min at home and gym)
+🎯 **Each Exercise:** 10–15 reps or 20–30 seconds unless noted
 
 ### **Warm-Up (RAMP Protocol)**
 **Recommended Duration:** ~2–3 minutes per section (Total: 10–15 min)  
@@ -110,23 +117,41 @@ Inhale on on **Eccentric** when lowering the weight and exhale on **Concentric**
 
 ---
 
+[Deadbug heel tap - YouTube](https://youtu.be/VRpXreaHz7w?si=MSTm2UNzlRLyQt3E)
+
+
+[Track & Sprinting Warm-Up \| Stuart McMillan & Dr. Andrew Huberman - YouTube](https://youtu.be/Aj5SONT3T2o?si=99_yybqIXa_uwj5w)
+
+
 #### **1. Raise (Increase Body Temp & Heart Rate)**
 _~2–3 minutes total – pick 2–3_ or pick one to do for the whole time.
 
+##### Seated
 - Rower or Incline Treadmill Walk – **1 min**
-- Jump Rope – **1 min**
-- Fast High Knees + Butt Kicks – **30s each**
-- [Arm Circles](https://www.youtube.com/watch?v=YGXgpcr7UY4) with 5lb dumbbells different ranges – **20 reps each direction**
-- Punch Ups with 5lb dumbbells
-- Chest Fly with 5lb dumbbells
+
+##### **Grounded On Front**
 - [[Upper#^4a9cd1 |Pike Push-Ups]] – **6–8 reps**
 - [[Core#^60b781 |Tuck Jumps to Plank]]– **6 reps**
+
+##### **Standing**
+- **Shoulder Rolls** – Forward & backward, 10 reps each
+- **Torso Twists** – Controlled rotation side-to-side, 15–20 reps
+- **Neck Rolls** – Slow circles, 5 reps each direction
+- **Wrist Curl** - Do a few sets not as many as other exercises
+- Jump Rope – **1 min**
+- Fast High Knees + Butt Kicks – **30s each**
+- Arm Swings (Hugs) – **30s**
+- Punch Ups with 5lb dumbbells
+- Chest Fly with 5lb dumbbells
+- Jumping Jacks – **1 min**
+- [Arm Circles](https://www.youtube.com/watch?v=YGXgpcr7UY4) with 5lb dumbbells different ranges – **20 reps each direction**
 - Shadowboxing with Resistance bands (fast-paced) – **30–45s**
-  
+
 #### **2. Activate (Engage Muscle Groups)**
 _~2–3 minutes total – pick 4–5_
 
 - Glute Bridges – **10–12 reps**
+- ClamShells -  **10–12 reps**
 - Superman Hold – **20–30s hold**
 - Calf Raises – **10–12 reps**
 - [[Lower#^01867f |Quadruped Kickbacks]] – **8–10 reps/side**
@@ -149,16 +174,32 @@ _~2–3 minutes total – pick 4–5_
 #### **3. Mobilize (Dynamic Range of Motion)**
 _~3–4 minutes total – choose a flow or 3–5 moves_
 
+##### Seated
 - [[Lower#^ee779f |90/90 Transitions ]] – **8 reps**
-- Standing Hip Circles – **10 circles/side**
-- Lunge with Overhead Reach – **5 reps/side**
-- [[Lower#^4158ea |“Open Book” Thoracic Twist]] – **6 reps/side**
 - Butterfly Hip Rocks → Butterfly Stretch – **8 rocks + 10s stretch**
-- [[Lower#^9744bc |Dynamic Cat-Cow]] → Hold Cat-Cow Stretch – **6–8 transitions + 10s hold**
+
+##### **Grounded On Back**
+- [[Lower#^4158ea |“Open Book” Thoracic Twist]] – **6 reps/side**
 - Dynamic [[Core#^beda1a |Supine Windshield Wipers]] – **4–6 transitions + 10s pose**
+
+##### **Grounded On Front**
+- **Inchworms** – Stand → walk hands to plank → back up, 5–8 reps
+- **World’s Greatest Stretch** – Deep lunge + rotation, 3–5 per side
+- [[Lower#^9744bc |Dynamic Cat-Cow]] → Hold Cat-Cow Stretch – **6–8 transitions + 10s hold**
 - Dynamic Hip Flexor Swings -> [[Lower#^357346 |Lizard Pose ]] – **6 swings + 10s hold/side**
 	- For dynamic part lift your back knee off the ground if it was resting begin rocking forward and backward, shifting your weight between your front foot and back toes.
 
+
+##### **Grounded On Side**
+- **Side-Lying Leg Lifts** – Leg raises to warm up outer hips/glutes(Try standing version as well)
+
+
+##### **Standing**
+- **Scapular Wall Slides** – Slide arms up/down while back touches wall, 10 reps
+- **Leg Swings** – Front/back & side-to-side, 10–15 each leg
+- **Walking Lunges + Reach** – Forward lunge + arms overhead, 8–10 each leg
+- **Hip Circles / Openers** – Knee lift and rotate out, 8–10 per leg
+- **Knee Hugs to Calf Raise** – Alternate legs, balance & stretch, 8–10 each leg
 
 #### **4. Potentiate (Prep for Explosive Work)**
 _~1–2 minutes total – pick 2_
@@ -260,6 +301,7 @@ color purple
 
 #todo/BAU/Workout 
 - [ ] Do empty bar warm up sets
+- [ ] For alternating arm excercise start with left arm then go to right
 - [ ] Start Using O2 trainer again for diaphragmatic breathing
 	- Try using during cold baths but first maybe try before or after bath.
 - [ ] Cold Bath max 20 minutes to help regulate nervous system assuming warm start first if not lesser by end of May start cold fully and while listening to 60 BPM(Beats Per Minute) metronome.
@@ -367,6 +409,7 @@ Prioritize resistance bands for explosive phase they can be used for other phase
 | **Overhead Press**         | 1.0x            | **120 lbs**     | 6–8 months           | **150 lbs**     | 12–24 months        |
 | **Weighted Pull-Ups**      | +0.5x           | **+60 lbs**     | 6–9 months           | **+75 lbs**     | 9–18 months         |
 | **Single-Leg Leg Press**   | 2x              | **240 lbs**     | 4–6 months           | **315 lbs**     | 6–12 months         |
+| **Power Sled**             | 2x              | **240 lbs**     | 4–6 months           | **300 lbs**     | 4–6 months          |
 
 - **Why**: Builds raw output, joint integrity, and compound movement proficiency. Follow with heavy, compound lifts to build muscle and functional strength use narrow grip or positioning for more of a compound movement.
 
@@ -419,6 +462,8 @@ Prioritize resistance bands for explosive phase they can be used for other phase
 - Bodyweight Hip Thrust Holds: 3x30 sec (squeeze glutes)  
 - Kettlebell Swing (for hip snap): 4x15  
 
+## Put some where
+
 add these pull and push column for the exercise rotational, 
 
 dead bug hand pushed against wall alternating pushing heals down - Anti-extension
@@ -426,6 +471,53 @@ dead bug hand pushed against wall alternating pushing heals down - Anti-extensio
 DeadBug Alt Heel Tap
 
 Try pull up position at top holding it
+
+
+Anything dumbbell  15lb
+
+
+Free tire about 88
+
+
+Leg extension range 2 orange circle at knee and 120lb for machine in back
+
+dont rotate on back extension 20lb
+
+
+chest fly machine  90
+
+Hold leg press at different stages
+
+
+Lat pull down pull elbow near hip not chest same for row get up close pull to hip
+
+
+
+For squats to them with wide stance with toes pointed out slightly not the widest stance just not narrow
+
+  
+
+Chest press handles at nipple height
+
+
+
+Nerve floss 30 sec 2 to 3 sets 
+
+Active hamstring stretch same duration
+
+Same thing but passive hamstring stretch
+
+  
+
+see if you can hold nose without breathing for 40 sec without your body react to breath
+
+
+
+Half Kneeling Row
+
+Use opposite side knee leaning against low bench
+![Half Kneeling 1 Arm Thorax Cable Row Coaching and Cues - YouTube](https://youtu.be/afE9JabFqR4?si=Q7eXtrCmYCcxOV_T)
+
 
 | Body  | Exercise                                    | Tried | Focus  | Type       | W(lb/kg) |                      | Priority | Duration | Sets | AltType    | Tried | Alt W(lb/kg) |
 | ----- | ------------------------------------------- | ----- | ------ | ---------- | -------- | -------------------- | -------- | -------- | ---- | ---------- | ----- | ------------ |
@@ -570,7 +662,7 @@ Try pull up position at top holding it
 | Hip Thrust                          | 120        | 130       | 4    | 8    | Seated    | Hamstring/Hips        | Bottom | _Highest | Yes   | Fixed      | N/A               | [[Lower#^2559bb \|Hip Thrust]]                                          | *60*     | Push          | N/A   | CM    |
 | Mid Row                             | 145        | 165       | 4    | 8    | Seated    | Back Lats             | Upper  | _Highest | Yes   | Fixed      | N/A               | Mid Row                                                                 | **165**  | Pull          | N/A   | PG    |
 | Plate Pull Down                     | 70         | 90        | 4    | 8    | Seated    | Back Lats             | Upper  | _Highest | Yes   | Fixed      | N/A               | Plate Pull Down                                                         | *45*     | Pull          | N/A   | CM    |
-| Rear Delt Fly                       | 50         | 60        | 4    | 8    | Seated    | Shoulder Delt         | Upper  | _Highest | Yes   | Fixed      | N/A               | Rear Delt Fly                                                           | **60**   | Pull          | 0     | CM    |
+| Rear Delt Fly                       | 60         | 70        | 4    | 8    | Seated    | Shoulder Delt         | Upper  | _Highest | Yes   | Fixed      | N/A               | Rear Delt Fly                                                           | **60**   | Pull          | 0     | CM    |
 | Seated Dip                          | 95         | 105       | 4    | 8    | Seated    | Tricep                | Upper  | _Highest | Yes   | Fixed      | N/A               | Seated Dip                                                              | **125**  | Push          | N/A   | CMEP  |
 | Single Arm Plate Pull Down          | 45         | 65        | 4    | 8    | Seated    | Back Lats             | Upper  | _Highest | Yes   | Fixed      | N/A               | Single Arm Plate Pull Down                                              | **65**   | Pull          | N/A   | CM    |
 | Single Leg Press                    | 90         | 180       | 4    | 8    | Seated    | Hamstring             | Bottom | _Highest | Yes   | Fixed      | N/A               | Single Leg Press                                                        | *135*    | Push          | N/A   | CM    |
@@ -600,7 +692,7 @@ Try pull up position at top holding it
 | Single Arm Clean Press              | 17.6       | 17.6      | 4    | 8    | Standing  | Multi                 | Upper  | Med      |       | Kettlebell | N/A               | Single Arm Clean Press                                                  | **17.6** | Pull          | N/A   | EP    |
 | Cossack Squat                       | 17.6       | 17.6      | 4    | 8    | Standing  | Hamstring             | Bottom | Low      |       | Kettlebell | N/A               | [[Lower#^3ae11e \|Cossack Squat]]                                       | **17.6** | Push          | N/A   | CM    |
 | Kettlebell Step-Up                  | 17.6       | 17.6      | 4    | 8    | Standing  | Multi                 | Bottom | Low      |       | Kettlebell | N/A               | [[Lower#^c9d45f \|Kettlebell Step-Up]]                                  | **17.6** | Push          | N/A   | EP    |
-| Power Sled                          | 0          | 0         | 4    | 8    | Standing  | Multi                 | Full   | _Highest |       | Sled       | N/A               | [[Full Body#^03bc4f \|Power Sled]]                                      | **0**    | Both          | N/A   | CM    |
+| Power Sled                          | 0          | 50        | 4    | 8    | Standing  | Multi                 | Full   | _Highest |       | Sled       | N/A               | [[Full Body#^03bc4f \|Power Sled]]                                      | *25*     | Both          | N/A   | CM    |
 | Tire Flip                           | 0          | 0         | 4    | 8    | Standing  | Multi                 | Full   | _Highest |       | Tire       | N/A               | Tire Flip                                                               | **0**    | Both          | N/A   | CM    |
 | Arm Circles                         | 0          | 0         | 4    | 8    | Standing  | Shoulder              | Upper  | _Highest |       | TRX        | N/A               | [[Total Body Resistance Exercise#^661445\|Arm Circles]]                 | *10*     | Pull          | N/A   | CM    |
 | Burpee                              | 0          | 0         | 4    | 8    | Standing  | Multi                 | Full   | _Highest |       | TRX        | N/A               | [[Total Body Resistance Exercise#^3dcd4e \|Burpee]]                     | *10*     | Pull          | N/A   | CM    |
