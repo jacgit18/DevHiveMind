@@ -236,3 +236,15 @@ This kick has more power and commitment, often used to break down an opponent’
 - Use the **outside kick** to commit and shift angle—then rotate into power shots or evasive movement.
 - **Watch how they react**:  
   Do they lean, step back, raise their leg? That tells you what’s open next.
+
+
+Practice very slow drills in general like for instance for sprinting you can practice running very slow making sure you are aware of your heels when they impact the floor to negate he'll striking when you are landing your heel first the ground
+
+  
+Heel squat on plate
+
+
+  
+  
+
+Leg extensions not as effective for me at least in terms of Rehabilitation aspect

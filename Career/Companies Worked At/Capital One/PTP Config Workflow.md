@@ -1,3 +1,8 @@
+## Dev tip 
+
+Mention Just a nit pick in pr
+
+mention TBD  in code for debug giving brief description
 ## May Notes
 
 Working under customer resiliency specifically credit card
