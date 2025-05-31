@@ -5,6 +5,9 @@ sprinting is full body freeing with tall open posture while jogging is more lowe
 over time your timing and body will tighten in the right spots automatically
 
 
+Cosack position but on knee with extended leg  extend v arms leaning to alternating side
+
+alternatively lung position extend v arms leaning back rotating towards one shoulder
 
 **Core Principles Throughout:**
 1.  **Stand Tall:** Chest open, shoulders down/back straight, head neutral (eyes forward/up), core  engaged, bring thighs high without bringing knees up to high.
