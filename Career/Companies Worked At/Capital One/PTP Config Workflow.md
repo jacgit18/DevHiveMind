@@ -3,6 +3,8 @@
 Mention Just a nit pick in pr
 
 mention TBD  in code for debug giving brief description
+
+Documenting can cause or help with identifying flaws in logic
 ## May Notes
 
 Working under customer resiliency specifically credit card
