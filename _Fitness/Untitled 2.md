@@ -1,9 +1,13 @@
+![https://youtu.be/Aj5SONT3T2o?si=9z5TvZuR1iBfgjch&t=515](https://youtu.be/Aj5SONT3T2o?si=9z5TvZuR1iBfgjch&t=515)
+
+sprinting is full body freeing with tall open posture while jogging is more lower body legs closed posture to a certain extent
+
+over time your timing and body will tighten in the right spots automatically
 
 
-**Goal:** Dynamic Warm-up focusing on posture, ankle stiffness, running mechanics, and multi-planar movement.
 
 **Core Principles Throughout:**
-1.  **Stand Tall:** Chest open, shoulders down/back, head neutral (eyes forward/up), core gently engaged.
+1.  **Stand Tall:** Chest open, shoulders down/back straight, head neutral (eyes forward/up), core  engaged, bring thighs high without bringing knees up to high.
 2.  **Expressive & Fluid:** Move with purpose and rhythm, not rigidity.
 3.  **Ankle Stiffness (Skipping/Running):** Actively dorsiflex foot (pull toes up towards shin) *just before* and *during* ground contact. Imagine landing on a "ball" under the forefoot/midfoot.
 4.  **Controlled Landings:** Land softly, absorbing impact through muscles.
@@ -45,6 +49,9 @@
 6.  **Explosive Upper Body (1 min):**
     *   **Elbow Push-ups (Pike Push-up Focus):** Start in a strong plank. Walk feet towards hands, lifting hips high into a deep pike position. Bend elbows *back* along your ribs (not flared out), lowering the top of your head towards the floor between hands. Push back up powerfully through the "pike" hinge. Keep core tight. (Focuses on shoulder strength/stability and explosive drive through upper back/shoulders).
 
+at the 7:30 mark hinging up almost like pike
+
+
 7.  **Rotational Core (1 min):**
     *   **Rotational Side Plank:** Start in a strong side plank on forearm, feet stacked or staggered. Extend the top arm straight up. Rotate the torso *under* the body, reaching the top arm down and "through" the space beneath you (like giving the floor a hug). Rotate back open. Keep hips high. Control the rotation with your core.
 
@@ -73,4 +80,3 @@
 *   Adjust durations/reps based on your time and feel. Start shorter and build up.
 *   Listen to your body. If something hurts, modify or skip it.
 
-This refined routine takes your excellent movement ideas and organizes them into a logical, safe, and effective warm-up specifically targeting your goals for posture, ankle stiffness, running mechanics, and dynamic movement.
