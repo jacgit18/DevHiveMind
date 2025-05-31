@@ -5,9 +5,7 @@ sprinting is full body freeing with tall open posture while jogging is more lowe
 over time your timing and body will tighten in the right spots automatically
 
 
-Cosack position but on knee with extended leg  extend v arms leaning to alternating side
 
-alternatively lung position extend v arms leaning back rotating towards one shoulder
 
 **Core Principles Throughout:**
 1.  **Stand Tall:** Chest open, shoulders down/back straight, head neutral (eyes forward/up), core  engaged, bring thighs high without bringing knees up to high.
@@ -29,6 +27,9 @@ alternatively lung position extend v arms leaning back rotating towards one shou
         *   *Backward Walking:* Exaggerate knee lift and heel-to-butt action. Stay tall.
         *   *Backward Skipping:* Light, quick skips backward, focusing on forefoot contact and ankle stiffness.
     *   **Carioca (Grapevine):** Smooth cross-steps front and back. Keep hips/shoulders relatively square, use expressive arm swing for rhythm.
+    * Cosack position but on knee with extended leg  extend v arms leaning to alternating side
+    * alternatively lung position extend v arms leaning back rotating towards one shoulder
+    * lunge position rotate and side bend down over the front leg that is kneeling for the lunge almost trying to look at extended leg
 
 3.  **Mobility & Coordination (2-3 mins):**
     *   **Linear Leg Swings (forward/back):** Stand tall on one leg (hold wall if needed), swing other leg straight forward and back (like a pendulum). Stay on supporting toe. Emphasize controlled swing, not momentum. (Hip flexor/hamstring mobility).
