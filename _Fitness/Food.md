@@ -112,7 +112,7 @@ protein deficit assumes no protein drink
 10 pairs of bread so 10 sandwiches  
 
 
-
+Kozy shack rice pudding 120 calories 4g protein
 
 
 Chia seeds 150 calories 5g Protien 2.5 tbsp

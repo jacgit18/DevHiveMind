@@ -40,7 +40,7 @@ alternatively lung position extend v arms leaning back rotating towards one shou
     *   **Single-Leg RDL w/ Knee Drive Swing:**
         1.  Stand tall on one leg, slight bend in standing knee.
         2.  Hinge at hips into a shallow Single-Leg RDL position, letting the non-standing leg extend straight back (optional slight bend).
-        3.  *Explosively* swing the non-standing leg *forward* into a high knee drive position. **Hold the high knee position tall for 3 seconds** (balance challenge).
+        3.  *Explosively* swing the non-standing leg *backward* then *forward* into a high knee drive position. **Hold the leg  position tall for 3 seconds** (balance challenge).
         4.  *Explosively* plant that foot forward into the next step/stance.
         5.  Alternate legs with each rep. Focus on controlled hinge, explosive drive, stable hold, and controlled landing.
         *   **Cue:** "Hinge - Swing & Hold Tall (3 sec) - Explode Step."
