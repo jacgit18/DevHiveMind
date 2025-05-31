@@ -152,7 +152,6 @@ _~2–3 minutes total – pick 2–3_ or pick one to do for the whole time.
 _~2–3 minutes total – pick 4–5_
 
 - Glute Bridges – **10–12 reps**
-- ClamShells -  **10–12 reps**
 - Superman Hold – **20–30s hold**
 - Calf Raises – **10–12 reps**
 - [[Lower#^01867f |Quadruped Kickbacks]] – **8–10 reps/side**
@@ -175,13 +174,17 @@ _~2–3 minutes total – pick 4–5_
 #### **3. Mobilize (Dynamic Range of Motion)**
 _~3–4 minutes total – choose a flow or 3–5 moves_
 
+##### **Grounded On Back**
+- [[Lower#^4158ea |“Open Book” Thoracic Twist]] – **6 reps/side**
+- Dynamic [[Core#^beda1a |Supine Windshield Wipers]] – **4–6 transitions + 10s pose**
+
 ##### Seated
 - [[Lower#^ee779f |90/90 Transitions ]] – **8 reps**
 - Butterfly Hip Rocks → Butterfly Stretch – **8 rocks + 10s stretch**
 
-##### **Grounded On Back**
-- [[Lower#^4158ea |“Open Book” Thoracic Twist]] – **6 reps/side**
-- Dynamic [[Core#^beda1a |Supine Windshield Wipers]] – **4–6 transitions + 10s pose**
+##### **Grounded On Side**
+- **Side-Lying Leg Lifts** – Leg raises to warm up outer hips/glutes(Try standing version as well)
+
 
 ##### **Grounded On Front**
 - **Inchworms** – Stand → walk hands to plank → back up, 5–8 reps
@@ -189,10 +192,6 @@ _~3–4 minutes total – choose a flow or 3–5 moves_
 - [[Lower#^9744bc |Dynamic Cat-Cow]] → Hold Cat-Cow Stretch – **6–8 transitions + 10s hold**
 - Dynamic Hip Flexor Swings -> [[Lower#^357346 |Lizard Pose ]] – **6 swings + 10s hold/side**
 	- For dynamic part lift your back knee off the ground if it was resting begin rocking forward and backward, shifting your weight between your front foot and back toes.
-
-
-##### **Grounded On Side**
-- **Side-Lying Leg Lifts** – Leg raises to warm up outer hips/glutes(Try standing version as well)
 
 
 ##### **Standing**
@@ -205,11 +204,13 @@ _~3–4 minutes total – choose a flow or 3–5 moves_
 #### **4. Potentiate (Prep for Explosive Work)**
 _~1–2 minutes total – pick 2_
 
+##### **Grounded On Side**
+- Clap Push-Ups or Explosive Incline Push-Ups – **4–6 reps**
+
+##### **Standing**
 - Jump Squats or Band-Assisted – **6–8 reps**
 - Bounding (forward/lateral) – **2–3 passes**
 - Power Skips – **2 passes (20–30 yards)**
-- Clap Push-Ups or Explosive Incline Push-Ups – **4–6 reps**
-
 
 ### Row Machine 
 - **Workout 1: 1 Minute On, 1 Minute Off**
@@ -645,7 +646,7 @@ Use opposite side knee leaning against low bench
 | Incline Row                         | 0          | 0         | 4    | 8    | Bench     | Lats                  | Upper  | _Highest |       | Dumbbell   | N/A               | [[Upper#^4b1e6d \|Incline Row]]                                         | *0*      | Pull          | N/A   | CM    |
 | Super Rom Lateral Raises            | 0          | 0         | 4    | 8    | Standing  | Multi                 | Upper  | _Highest |       | Dumbbell   | N/A               | [[Upper#^767e47 \|Super Rom Lateral Raises]]                            | *0*      | Pull          | N/A   | CM    |
 | Two Arm Row                         | 0          | 0         | 4    | 8    | Standing  | Lats                  | Upper  | _Highest |       | Dumbbell   | N/A               | [[Upper#^cf2720 \|Two Arm Row]]                                         | *0*      | Pull          | N/A   | CM    |
-| Wrist Curl                          | 0          | 0         | 4    | 8    | Bench     | Forearm               | Upper  | _Highest |       | Dumbbell   | N/A               | [[Upper#^1156ec\|Wrist Curl]]                                           | *0*      | Pull          | N/A   | CM    |
+| Wrist Curl                          | 5          | 10        | 4    | 8    | Standing  | Forearm               | Upper  | _Highest |       | Dumbbell   | N/A               | [[Upper#^1156ec\|Wrist Curl]]                                           | *0*      | Pull          | N/A   | CM    |
 | Reverse Preacher Curl               | 0          | 0         | 4    | 8    | Standing  | Biceps                | Upper  | _Highest |       | Dumbbell   | N/A               | [[Upper#^b1905f\| Reverse Preacher Curl]]                               | ****     | Pull          | N/A   | CM    |
 | Wide Curl                           | 0          | 0         | 4    | 8    | Standing  | Biceps                | Upper  | High     |       | Dumbbell   | N/A               | [[Upper#^60f95e \|Wide Curl]]                                           | ****     | Pull          | N/A   | CM    |
 | Incline Preacher Curl               | 0          | 0         | 4    | 8    | Standing  | Biceps                | Upper  | High     |       | Dumbbell   | N/A               | [[Upper#^6d88c7 \| Incline Preacher Curl]]                              | ****     | Pull          | N/A   | CM    |

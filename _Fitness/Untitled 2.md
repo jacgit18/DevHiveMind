@@ -4,7 +4,7 @@ sprinting is full body freeing with tall open posture while jogging is more lowe
 
 over time your timing and body will tighten in the right spots automatically
 
-
+dumbbell lunge on balance board or plate or platform
 
 
 **Core Principles Throughout:**
@@ -28,7 +28,7 @@ over time your timing and body will tighten in the right spots automatically
         *   *Backward Skipping:* Light, quick skips backward, focusing on forefoot contact and ankle stiffness.
     *   **Carioca (Grapevine):** Smooth cross-steps front and back. Keep hips/shoulders relatively square, use expressive arm swing for rhythm.
     * Cosack position but on knee with extended leg  extend v arms leaning to alternating side
-    * alternatively lung position extend v arms leaning back rotating towards one shoulder
+    * lung position extend v arms leaning back rotating towards one shoulder
     * lunge position rotate and side bend down over the front leg that is kneeling for the lunge almost trying to look at extended leg
 
 3.  **Mobility & Coordination (2-3 mins):**
