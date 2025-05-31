@@ -64,6 +64,7 @@ Start with a dynamic stretch to Improve blood flow and flexibility. End with a s
 #todo/Workout 
 - [ ] Follow [[Workout Phases]] starting June and focus on [[Optimal Order Of Operations For Body Development]] and [[Optimal Order by Exercise Type]] 
 - [ ] Keep [[Muscle Imbalance]] in mind 
+- [ ] Practice skipping at the gym for warm ups
 
 ### Terms
 - **Concentric (Lifting)**: Explode as fast as form allows.
