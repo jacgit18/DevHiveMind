@@ -136,6 +136,14 @@ Like BJJ and a baby start off on back and progress to standing
 [Banded seated pancake stretch - YouTube](https://youtu.be/pOre0ykuinQ?si=o9F4u3NXBxoaiOHi)
 compare to jeffereson
 
+
+Avoid cold water baths close to workouts especially post maybe consider doing it a few hours before sleeping or before working out
+
+  
+  
+
+Be relaxed to keep stress down improving recovery
+
 #### **1. Raise (Increase Body Temp & Heart Rate)**
 _~2–3 minutes total – pick 2–3_ or pick one to do for the whole time.
 

@@ -12,6 +12,9 @@ Peer Reviewed: 0
 dg-publish:
 ---
 
+Ai project that ingest psychological content from specific youtubers usng the text data to train and develop models on it to be a better psychological analyzer agent type thing
+
+
 Great — here’s a beginner-friendly learning roadmap that blends **generative AI fundamentals** with **psychological insight**. Think of it as “learning how minds (and machines that mimic them) work” in parallel.
 
 ---
