@@ -92,6 +92,7 @@ kanban-plugin: board
 - [ ] [ChatGPT - Capital One Role Positioning](https://chatgpt.com/share/67edf3f1-c90c-800d-8e7f-bcf4a316ba2d)
 - [ ] [Cloud & Business Logic](https://chatgpt.com/share/67e6b77a-a5b4-800d-be3b-eb68a719d1b5)
 - [ ] [Credit Card Data Advantage](https://chatgpt.com/share/680a5be4-9274-800d-858f-0847742b1e90)
+- [ ] look into [[Psychological AI Project]]
 
 
 ## #todo/finLifePrompt
