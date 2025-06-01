@@ -41,6 +41,14 @@ Iteration are repetitions where you are modifying the repetition with error corr
   
 If you fail its just a iteration that you can pivot from in terms of cutting losses when it makes sense to to continue to iterate and get where you want to be
 
+[GitHub - 0xk1h0/ChatGPT\_DAN: ChatGPT DAN, Jailbreaks prompt](https://github.com/0xk1h0/ChatGPT_DAN)
+
+
+[The Illustrated Transformer – Jay Alammar – Visualizing machine learning one concept at a time.](https://jalammar.github.io/illustrated-transformer/)
+
+
+[Forget Notion and Obsidian, this self-hosted note-taking tool is my new favorite](https://www.xda-developers.com/this-self-hosted-markdown-editor-is-my-new-favorite-way-to-take-notes/)
+
 
 [Access Obsidian from anywhere using a browser by self-hosting it](https://www.xda-developers.com/i-self-hosted-obsidian-so-i-can-access-it-in-web-browser-anywhere/)
 

@@ -33,6 +33,7 @@ kanban-plugin: board
 
 ## #todo/CapitalOne
 
+- [ ] Create Milestones to avoid being overwhelmed
 - [ ] Revist [[Job Hunt Strategy]]
 - [ ] [Renting an Apartment in New York City Registration, Wed, May 21, 2025 at 12:00 PM \| Eventbrite](https://www.eventbrite.com/e/renting-an-apartment-in-new-york-city-registration-1336815604459?aff=ebemoffollowpublishemail)
 - [ ] [[PTP Config Workflow]]
