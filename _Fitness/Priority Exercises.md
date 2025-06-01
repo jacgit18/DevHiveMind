@@ -129,6 +129,8 @@ Like BJJ and a baby start off on back and progress to standing
 
 [Seated Good Mornings - YouTube](https://youtu.be/cJWYiUkiWrE?si=jV2MY1IGw_U0I5Y3)
 
+[How To Use the TIB BAR - Knee, Ankle and Shin Rehab (including shin splints) - YouTube](https://youtu.be/1nZgmPik6Mk?si=Yw-MvDMiVGwvb7ZL)
+
 [Cable pancake stretch - YouTube](https://youtu.be/xgU1YYHwprQ?si=N0aX9UVVJqDLvvrS)
 
 [Banded seated pancake stretch - YouTube](https://youtu.be/pOre0ykuinQ?si=o9F4u3NXBxoaiOHi)
