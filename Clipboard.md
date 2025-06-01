@@ -117,6 +117,13 @@ https://chatgpt.com/share/67f6ff55-c0a8-800d-8673-1d9137b6a27d
 
 
 
+
+Scale breaks things at a small level that's when you have things that are special that don't really break as much but when you try to scale it it breaks eventually hit that similar issue with Dunbar number when it comes to company scaling and problems occur along with quality
+
+
+
+
+
 Lensa lets you visualize and monitor live data in Kafka streams—like credit card transactions—in real-time.  
   
 Kafka is commonly used in systems that require high-throughput, real-time data processing, such as fraud detection systems, recommendation engines, or payment processing pipelines. Lensa (assuming this refers to an internal tool or a real-time data visualization platform) sits on top of Kafka to give engineers, analysts, and product teams a clear window into what’s happening across their data streams as it happens.  

@@ -5,6 +5,13 @@ Mention Just a nit pick in pr
 mention TBD  in code for debug giving brief description
 
 Documenting can cause or help with identifying flaws in logic
+
+
+If you're working on something like how you were with the step functions always look for opportunities where there are people who are working on something similar or that may start out similar to copy off of their work instead of doing the effort
+
+
+
+
 ## May Notes
 
 Working under customer resiliency specifically credit card
