@@ -126,6 +126,11 @@ Like BJJ and a baby start off on back and progress to standing
 [Deadbug heel tap - YouTube](https://youtu.be/VRpXreaHz7w?si=MSTm2UNzlRLyQt3E)
 
 
+[Offset Walk - YouTube](https://youtu.be/Fc-27p17TPE?si=UyGkyXJ5FRZz-_tB)
+
+
+
+
 [Seated Good Morning, Dumbbells - YouTube](https://youtu.be/RGcNDV8d0Wc?si=64zelC35xu482B6t)
 
 [Seated Good Mornings - YouTube](https://youtu.be/cJWYiUkiWrE?si=jV2MY1IGw_U0I5Y3)
@@ -140,8 +145,7 @@ compare to jeffereson
 
 Avoid cold water baths close to workouts especially post maybe consider doing it a few hours before sleeping or before working out
 
-  
-  
+
 
 Be relaxed to keep stress down improving recovery
 
