@@ -44,6 +44,9 @@ If you fail its just a iteration that you can pivot from in terms of cutting los
 [GitHub - 0xk1h0/ChatGPT\_DAN: ChatGPT DAN, Jailbreaks prompt](https://github.com/0xk1h0/ChatGPT_DAN)
 
 
+[GitHub - BaldissaraMatheus/Tasks.md: A self-hosted, Markdown file based task management board](https://github.com/BaldissaraMatheus/Tasks.md)
+
+
 [The Illustrated Transformer – Jay Alammar – Visualizing machine learning one concept at a time.](https://jalammar.github.io/illustrated-transformer/)
 
 
