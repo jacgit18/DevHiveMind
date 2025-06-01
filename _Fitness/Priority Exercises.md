@@ -64,6 +64,10 @@ Start with a dynamic stretch to Improve blood flow and flexibility. End with a s
 #todo/Workout 
 - [ ] Follow [[Workout Phases]] starting June and focus on [[Optimal Order Of Operations For Body Development]] and [[Optimal Order by Exercise Type]] 
 - [ ] Keep [[Muscle Imbalance]] in mind 
+- [ ] For Lower body focus on 80% strength training and 20% hypertrophy. 
+- [ ] For Upper body focus on 20% strength training and 80% hypertrophy training to failure with high volume but first establish a good strength baseline.
+- [ ] Focus on starting workout session with strength training for whatever part of the body your targeting then end session with high volume hypertrophy training.
+- [ ] After a year or more shift phases for strength training and high volume hypertrophy training. 
 - [ ] Practice at the gym for warm ups and outside skip and walk a little in between jogging spurts  add a lunge extending upper body up on lunge
 
 ### Terms
@@ -121,7 +125,7 @@ Like BJJ and a baby start off on back and progress to standing
 [Deadbug heel tap - YouTube](https://youtu.be/VRpXreaHz7w?si=MSTm2UNzlRLyQt3E)
 
 
-[Track & Sprinting Warm-Up \| Stuart McMillan & Dr. Andrew Huberman - YouTube](https://youtu.be/Aj5SONT3T2o?si=99_yybqIXa_uwj5w)
+
 
 
 #### **1. Raise (Increase Body Temp & Heart Rate)**
