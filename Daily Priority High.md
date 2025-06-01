@@ -69,6 +69,8 @@ kanban-plugin: board
 
 ## #todo/BAU/Career
 
+- [ ] [ChatGPT - Stakeholder Requirements Questions](https://chatgpt.com/share/683c0e6e-e31c-800d-9b48-9bf72b235bbd)
+- [ ] Try using [[Requirements to Code Skeleton]]
 - [ ] Be willing to start over
 - [ ] Learn the right things
 - [ ] Give your self 3 days before making any decisions

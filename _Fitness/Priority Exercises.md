@@ -69,6 +69,7 @@ Start with a dynamic stretch to Improve blood flow and flexibility. End with a s
 - [ ] Focus on starting workout session with strength training for whatever part of the body your targeting then end session with high volume hypertrophy training.
 - [ ] After a year or more shift phases for strength training and high volume hypertrophy training. 
 - [ ] Practice at the gym for warm ups and outside skip and walk a little in between jogging spurts  add a lunge extending upper body up on lunge
+- [ ] For rest days make it one of my weekdays like if I have a networking event and there isn't a good timing in terms of going before or maybe even after the event and you can also take cold Baths on that day
 
 ### Terms
 - **Concentric (Lifting)**: Explode as fast as form allows.

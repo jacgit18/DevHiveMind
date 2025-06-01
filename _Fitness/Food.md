@@ -112,7 +112,12 @@ protein deficit assumes no protein drink
 10 pairs of bread so 10 sandwiches  
 
 
-Kozy shack rice pudding 120 calories 4g protein
+Kozy shack rice pudding 120 calories 4g protein And on average for the pudding about 6 bucks
+
+
+Beet juice is 100 calories 3g protein four bottles about 15 bucks  
+  
+
 
 
 Chia seeds 150 calories 5g Protien 2.5 tbsp
