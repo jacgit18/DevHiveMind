@@ -127,6 +127,9 @@ Cottage cheese 120 calories 13g Protein 1/2 cup
 Almonds or other nuts about 160 calories 6G Protein 28g about 24 nuts
 
 
+Chase freedom and bj card for food
+
+
 
 #### Sandwich  have one a day 
 Sandwich total protein and calories  

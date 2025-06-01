@@ -44,6 +44,10 @@ If you fail its just a iteration that you can pivot from in terms of cutting los
 [GitHub - 0xk1h0/ChatGPT\_DAN: ChatGPT DAN, Jailbreaks prompt](https://github.com/0xk1h0/ChatGPT_DAN)
 
 
+
+[I found the best way to watch YouTube videos with these free and open-source tools](https://www.xda-developers.com/way-watch-youtube-videos-free-open-source/)
+
+
 [GitHub - BaldissaraMatheus/Tasks.md: A self-hosted, Markdown file based task management board](https://github.com/BaldissaraMatheus/Tasks.md)
 
 
