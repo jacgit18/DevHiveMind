@@ -129,7 +129,9 @@ Like BJJ and a baby start off on back and progress to standing
 [Offset Walk - YouTube](https://youtu.be/Fc-27p17TPE?si=UyGkyXJ5FRZz-_tB)
 
 
+[Scapular Push up on Elbows - YouTube](https://youtu.be/DKkgzXfcXMQ?si=wC_124w4vpq8Nyyf)
 
+[Side to Side Rolling - YouTube](https://youtu.be/LRijmsnZwZc?si=-_x8NPJUWaJYxim4)
 
 [Seated Good Morning, Dumbbells - YouTube](https://youtu.be/RGcNDV8d0Wc?si=64zelC35xu482B6t)
 
@@ -175,22 +177,29 @@ _~2–3 minutes total – pick 2–3_ or pick one to do for the whole time.
 
 #### **2. Activate (Engage Muscle Groups)**
 _~2–3 minutes total – pick 4–5_
-
+##### **Grounded On Back**
 - Glute Bridges – **10–12 reps**
+
+##### Seated
+- [[Core#^a235d1 |Pancake Stretch]]
+
+##### **Grounded On Side**
+- [[Core#^5805af |Side Plank Hip dip]] (floor or bench feet on ground or bench) - **10–12 reps** - Lateral flexion
+##### **Grounded On Front**
 - Superman Hold – **20–30s hold**
-- Calf Raises – **10–12 reps**
 - [[Lower#^01867f |Quadruped Kickbacks]] – **8–10 reps/side**
 - Plyometric Plank Shoulder Taps – **8–12 taps** - use bands if doing regular plank
 - Push-Up Hold (top and bottom) – **10s each**
-- [[Core#^5805af |Side Plank Hip dip]] (floor or bench feet on ground or bench) - **10–12 reps** - Lateral flexion
+- [[Upper#^5ff8c1 |Scapular Push-Ups ]] – **10–12 reps with deep breathing**
+	- Breathe deeply as you push your chest outward, squeezing your shoulder blades together. Then, reverse the motion by pulling your chest inward and separating your shoulder blades, keeping your elbows straight throughout the movement.
+
+##### **Standing**
+- Calf Raises – **10–12 reps**
 - Shoulder Band Pull-Aparts – **15–20 reps**
-- [[Core#^a235d1 |Pancake Stretch]]
 - [[Lower#^b0a0df|TIB Raise]]
 - [[Lower#^8a3d01|ISO Calf Raise with Lunge]]
 - [[Lower#^58f942|Lunge ISO Heel Raise]]
 - [[Lower#^da4cd0|Banded Joint Mobilizations]]
-- [[Upper#^5ff8c1 |Scapular Push-Ups ]] – **10–12 reps with deep breathing**
-	- Breathe deeply as you push your chest outward, squeezing your shoulder blades together. Then, reverse the motion by pulling your chest inward and separating your shoulder blades, keeping your elbows straight throughout the movement.
 
 **Optional Add-In:**
 - **Duck Walks** – **2 passes across gym or 30–45 seconds**
@@ -209,16 +218,12 @@ _~3–4 minutes total – choose a flow or 3–5 moves_
 
 ##### **Grounded On Side**
 - **Side-Lying Leg Lifts** – Leg raises to warm up outer hips/glutes(Try standing version as well)
-
-
 ##### **Grounded On Front**
 - **Inchworms** – Stand → walk hands to plank → back up, 5–8 reps
 - **World’s Greatest Stretch** – Deep lunge + rotation, 3–5 per side
 - [[Lower#^9744bc |Dynamic Cat-Cow]] → Hold Cat-Cow Stretch – **6–8 transitions + 10s hold**
 - Dynamic Hip Flexor Swings -> [[Lower#^357346 |Lizard Pose ]] – **6 swings + 10s hold/side**
 	- For dynamic part lift your back knee off the ground if it was resting begin rocking forward and backward, shifting your weight between your front foot and back toes.
-
-
 ##### **Standing**
 - **Scapular Wall Slides** – Slide arms up/down while back touches wall, 10 reps
 - **Leg Swings** – Front/back & side-to-side, 10–15 each leg
@@ -398,15 +403,15 @@ Prioritize resistance bands for explosive phase they can be used for other phase
 
 > Speed is a skill—train it while fresh.
 
-| Exercise             | Goal Weight    | Adjusted Timeline |
-| -------------------- | -------------- | ----------------- |
-| Hip Thrust           | 225–250 lbs    | 12–18 months      |
-| Hack Squat Machine   | 180–200 lbs    | 6–9 months        |
-| Deadlift             | 225–275 lbs    | 12–18 months      |
-| Bench Press          | 135–155 lbs    | 9–12 months       |
-| Overhead Press       | 95–105 lbs     | 9–12 months       |
-| Weighted Pull-Ups    | +30 lbs (fast) | 9–12 months       |
-| Single-Leg Leg Press | 40 lbs max     | Immediately       |
+| Exercise                 | Goal Weight    | Adjusted Timeline |
+| ------------------------ | -------------- | ----------------- |
+| **Hip Thrust**           | 225–250 lbs    | 12–18 months      |
+| **Hack Squat Machine**   | 180–200 lbs    | 6–9 months        |
+| **Deadlift**             | 225–275 lbs    | 12–18 months      |
+| **Bench Press**          | 135–155 lbs    | 9–12 months       |
+| **Overhead Press**       | 95–105 lbs     | 9–12 months       |
+| **Weighted Pull-Ups**    | +30 lbs (fast) | 9–12 months       |
+| **Single-Leg Leg Press** | 40 lbs max     | Immediately       |
 
 - **Why**: Start with these to engage fast-twitch muscle fibers and improve explosive strength which can include Plyometric & Olympic Movements. Requires high neural drive and pristine form. Fatigue kills both.
 
