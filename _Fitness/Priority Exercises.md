@@ -125,6 +125,13 @@ Like BJJ and a baby start off on back and progress to standing
 
 [Deadbug heel tap - YouTube](https://youtu.be/VRpXreaHz7w?si=MSTm2UNzlRLyQt3E)
 
+dead bug hand pushed against wall alternating pushing heals down - Anti-extension
+
+DeadBug Alt Heel Tap
+
+
+For full body days alt from strength upper to lower hypotrophy and vise versa strength lower to upper hypotrophy
+
 
 [Offset Walk - YouTube](https://youtu.be/Fc-27p17TPE?si=UyGkyXJ5FRZz-_tB)
 
@@ -150,6 +157,27 @@ Avoid cold water baths close to workouts especially post maybe consider doing it
 
 
 Be relaxed to keep stress down improving recovery
+
+
+All the way down push-ups with a hand release at the bottom then superman and then push back up 
+
+  
+  
+
+Mike Tyson push up
+
+  
+
+Back window
+
+  
+
+Dive bomber
+
+  
+
+T stand plank push up
+
 
 #### **1. Raise (Increase Body Temp & Heart Rate)**
 _~2–3 minutes total – pick 2–3_ or pick one to do for the whole time.
@@ -498,9 +526,7 @@ Prioritize resistance bands for explosive phase they can be used for other phase
 
 add these pull and push column for the exercise rotational, 
 
-dead bug hand pushed against wall alternating pushing heals down - Anti-extension
 
-DeadBug Alt Heel Tap
 
 Try pull up position at top holding it
 
