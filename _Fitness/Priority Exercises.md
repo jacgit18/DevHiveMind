@@ -125,8 +125,14 @@ Like BJJ and a baby start off on back and progress to standing
 [Deadbug heel tap - YouTube](https://youtu.be/VRpXreaHz7w?si=MSTm2UNzlRLyQt3E)
 
 
+[Seated Good Morning, Dumbbells - YouTube](https://youtu.be/RGcNDV8d0Wc?si=64zelC35xu482B6t)
 
+[Seated Good Mornings - YouTube](https://youtu.be/cJWYiUkiWrE?si=jV2MY1IGw_U0I5Y3)
 
+[Cable pancake stretch - YouTube](https://youtu.be/xgU1YYHwprQ?si=N0aX9UVVJqDLvvrS)
+
+[Banded seated pancake stretch - YouTube](https://youtu.be/pOre0ykuinQ?si=o9F4u3NXBxoaiOHi)
+compare to jeffereson
 
 #### **1. Raise (Increase Body Temp & Heart Rate)**
 _~2–3 minutes total – pick 2–3_ or pick one to do for the whole time.
