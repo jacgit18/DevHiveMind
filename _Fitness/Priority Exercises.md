@@ -220,7 +220,7 @@ Chest press handles at nipple height
 see if you can hold nose without breathing for 40 sec without your body react to breath
 
 
-
+Avoid laying on bed outside of sleeping
 
 
 
@@ -668,15 +668,15 @@ Prioritize resistance bands for explosive phase they can be used for other phase
 | PullUp                              | 0          | 0         | 4    | 8    | Neutral   | Back Lats             | Upper  | _Highest | Yes   | Bodyweight | N/A               | [[Upper#^e81d31 \|PullUp]]                                              | ****     | Pull          | N/A   | PG    |
 | Rev Crunch                          | 0          | 0         | 4    | 8    | Bench     | Lower Abdom           | Core   | _Highest | Yes   | BodyWeight | N/A               | Rev Crunch try on incline bench                                         | *0*      | Flexion       | N/A   | RC    |
 | Rev Nordic                          | 0          | 0         | 4    | 8    | Grounded  | Lower Abdom           | Core   | _Highest | Yes   | BodyWeight | N/A               | [[Core#^dd110e \|Rev Nordic]]                                           | *0*      | Pull          | N/A   | RC    |
-| Back Extension                      | 0          | 20        | 4    | 8    | Bench     | Abdom                 | Core   | High     | Yes   | BodyWeight | N/A               | Back Extension                                                          | *0*      | Extension     | N/A   | RC    |
+| Back Extension                      | 0          | 15        | 4    | 8    | Bench     | Abdom                 | Core   | High     | Yes   | BodyWeight | N/A               | Back Extension                                                          | *0*      | Extension     | N/A   | RC    |
 | ChinUp                              | 0          | 0         | 4    | 8    | Underhand | Lats                  | Upper  | High     |       | Bodyweight | N/A               | [[Upper#^a2d3cc \|ChinUp]]                                              | ****     | Pull          | N/A   | PG    |
 | Dip                                 | 0          | 0         | 4    | 8    | Wide      | Tricep                | Upper  | High     | Yes   | BodyWeight | N/A               | Dip                                                                     | *0*      | Push          | N/A   | CMEP  |
 | Dips                                | 0          | 0         | 4    | 8    | Narrow    | Tricep                | Upper  | High     | Yes   | BodyWeight | N/A               | [[Upper#^a56816 \|Dips]]                                                | *0*      | Push          | N/A   | CMEP  |
 | Double Crunch                       | 0          | 0         | 4    | 8    | Grounded  | Abdom                 | Core   | High     |       | BodyWeight | N/A               | [[Core#^450568 \|Double Crunch]]                                        | *0*      | Pull          | N/A   | RC    |
 | PullUp                              | 0          | 0         | 4    | 8    | Wide      | Lats                  | Upper  | High     | Yes   | Bodyweight | N/A               | [[Upper#^bf9596 \|PullUp]]                                              | ****     | Pull          | N/A   | PG    |
 | Angled Chest Fly                    | 80         | 90        | 4    | 8    | Standing  | Chest                 | Upper  | _Highest | Yes   | Cable      | N/A               | Angled Chest Fly                                                        | **90**   | Push          | 4     | CM    |
-| Kneeling Cable Crunch               | 33         | 44        | 4    | 8    | Grounded  | Upper Abdom add twist | Core   | _Highest | Yes   | Cable      | N/A               | [[Core#^9ffa73\|Kneeling Cable Crunch]]                                 | **44**   | Pull          | N/A   | CM    |
 | Pallof Press                        | 33         | 44        | 4    | 8    | Standing  | Side Abbs             | Core   | _Highest |       | Cable      | N/A               | [[Core#^0729fc\|Pallof Press]]                                          | **44**   | Anti Rotation | N/A   | CM    |
+| Kneeling Cable Crunch               | 33         | 44        | 4    | 8    | Grounded  | Upper Abdom add twist | Core   | High     | Yes   | Cable      | N/A               | [[Core#^9ffa73\|Kneeling Cable Crunch]]                                 | **44**   | Pull          | N/A   | CM    |
 | Cable Curl                          | 0          | 0         | 4    | 8    | Standing  | Bicep                 | Upper  | Med      |       | Cable      | N/A               | [[Upper#^42bc7c \| Cable Curl]]                                         | ****     | Pull          | N/A   | CM    |
 | Cable Balloon Abduction             | ***160***  | ***160*** | 4    | 8    | Standing  | Chest                 | Upper  | High     |       | Cable      | N/A               | [[CableBalloonAbduction.gif \|Cable Balloon Abduction]]                 | *80*     | Pull          | 0     | PG    |
 | Cable Snap Downs                    | ***160***  | ***160*** | 4    | 8    | Standing  | Chest                 | Upper  | High     |       | Cable      | N/A               | [Cable Snap Downs](https://www.youtube.com/shorts/IW40KjCwNmA)          | *80*     | Pull          | 0     | PG    |
