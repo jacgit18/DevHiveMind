@@ -76,6 +76,10 @@ Get to your reps to 15 sec each try to extend for 45 sec MAX
 
 
 
+![Banded seated pancake stretch - YouTube](https://youtu.be/pOre0ykuinQ?si=o9F4u3NXBxoaiOHi) ^eb4c68
+
+![Cable pancake stretch - YouTube](https://youtu.be/xgU1YYHwprQ?si=N0aX9UVVJqDLvvrS) ^c47ced
+
 ## Jefferson Curl
 
 

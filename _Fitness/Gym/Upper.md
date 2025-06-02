@@ -84,6 +84,9 @@ Get to your reps to 15 sec each try to extend for 45 sec MAX
 	- ![Lateral Head Single Arm Cable Tricep Extension - YouTube](https://www.youtube.com/watch?v=vVW9LwaahNw) ^88a124
 
 
+![Half Kneeling 1 Arm Thorax Cable Row Coaching and Cues - YouTube](https://youtu.be/afE9JabFqR4?si=Q7eXtrCmYCcxOV_T) ^0a983d
+
+
 
 - Super Rom Lateral ^767e47
 	- ![Super ROM Lateral Raises - YouTube](https://www.youtube.com/watch?v=IxHCPaByyE0)

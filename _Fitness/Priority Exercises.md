@@ -64,8 +64,11 @@ Start with a dynamic stretch to Improve blood flow and flexibility. End with a s
 #todo/Workout 
 - [ ] Follow [[Workout Phases]] starting June and focus on [[Optimal Order Of Operations For Body Development]] and [[Optimal Order by Exercise Type]] 
 - [ ] Keep [[Muscle Imbalance]] in mind 
+- [ ] For full body days alt from strength upper to lower hypertrophy and vise versa strength lower to upper hypertrophy
 - [ ] For Lower body focus on 80% strength training and 20% hypertrophy. 
 - [ ] For Upper body focus on 20% strength training and 80% hypertrophy training to failure with high volume but first establish a good strength baseline.
+- [ ] one hypo day and next day strength day
+- [ ] target upper with hypo and lower with strength
 - [ ] Focus on starting workout session with strength training for whatever part of the body your targeting then end session with high volume hypertrophy training.
 - [ ] After a year or more shift phases for strength training and high volume hypertrophy training. 
 - [ ] Practice at the gym for warm ups and outside skip and walk a little in between jogging spurts  add a lunge extending upper body up on lunge
@@ -130,7 +133,7 @@ dead bug hand pushed against wall alternating pushing heals down - Anti-extensio
 DeadBug Alt Heel Tap
 
 
-For full body days alt from strength upper to lower hypotrophy and vise versa strength lower to upper hypotrophy
+
 
 
 [Offset Walk - YouTube](https://youtu.be/Fc-27p17TPE?si=UyGkyXJ5FRZz-_tB)
@@ -146,10 +149,19 @@ For full body days alt from strength upper to lower hypotrophy and vise versa st
 
 [How To Use the TIB BAR - Knee, Ankle and Shin Rehab (including shin splints) - YouTube](https://youtu.be/1nZgmPik6Mk?si=Yw-MvDMiVGwvb7ZL)
 
-[Cable pancake stretch - YouTube](https://youtu.be/xgU1YYHwprQ?si=N0aX9UVVJqDLvvrS)
 
-[Banded seated pancake stretch - YouTube](https://youtu.be/pOre0ykuinQ?si=o9F4u3NXBxoaiOHi)
-compare to jeffereson
+Practice very slow drills in general like for instance for sprinting you can practice running very slow making sure you are aware of your heels when they impact the floor to negate he'll striking when you are landing your heel first the ground
+
+  
+Heel squat on plate
+
+  
+
+Leg extensions not as effective for me at least in terms of Rehabilitation aspect
+
+
+
+Use opposite side knee leaning against low bench when doing Half Kneeling Row
 
 
 Avoid cold water baths close to workouts especially post maybe consider doing it a few hours before sleeping or before working out
@@ -161,8 +173,18 @@ Be relaxed to keep stress down improving recovery
 
 All the way down push-ups with a hand release at the bottom then superman and then push back up 
 
+
+Anything dumbbell  15lb min
+
+
+
   
-  
+Update pull and push column for the exercise that are rotational, 
+
+Try pull up position at top holding it
+
+
+
 
 Mike Tyson push up
 
@@ -177,6 +199,29 @@ Dive bomber
   
 
 T stand plank push up
+
+
+
+
+Free tire about 88
+
+dont rotate on back extension
+
+Leg extension range 2 orange circle at knee and 120lb for machine in back
+
+Lat pull down pull elbow near hip not chest same for row get up close pull to hip
+
+For squats to them with wide stance with toes pointed out slightly not the widest stance just not narrow
+
+
+Chest press handles at nipple height
+
+
+see if you can hold nose without breathing for 40 sec without your body react to breath
+
+
+
+
 
 
 #### **1. Raise (Increase Body Temp & Heart Rate)**
@@ -243,6 +288,7 @@ _~3–4 minutes total – choose a flow or 3–5 moves_
 ##### Seated
 - [[Lower#^ee779f |90/90 Transitions ]] – **8 reps**
 - Butterfly Hip Rocks → Butterfly Stretch – **8 rocks + 10s stretch**
+- [[Core#^eb4c68 | Pancake Stretch]]  **4 sets 8 reps**
 
 ##### **Grounded On Side**
 - **Side-Lying Leg Lifts** – Leg raises to warm up outer hips/glutes(Try standing version as well)
@@ -489,15 +535,15 @@ Prioritize resistance bands for explosive phase they can be used for other phase
 ##### **Hypertrophy & Endurance (HE Phase)**
 > Size/endurance = can be done under more fatigue because it's about _muscle burn_, not _perfect speed or maximum tension_
 
-| Exercise             | Rep Range Focus | Goal @ 120 lb | Timeline (Est.) | Goal @ 150 lb | Timeline (Adjusted) |
-| -------------------- | --------------- | ------------- | --------------- | ------------- | ------------------- |
-| Hip Thrust           | 12–15 reps      | 185–225 lbs   | 6–9 months      | 225–280 lbs   | 9–12 months         |
-| Hack Squat Machine   | 10–12 reps      | 145–180 lbs   | 3–4 months      | 180–225 lbs   | 4–6 months          |
-| Deadlift             | 8–10 reps       | 185–225 lbs   | 6–9 months      | 225–280 lbs   | 9–12 months         |
-| Bench Press          | 10–12 reps      | 110–135 lbs   | 4–6 months      | 135–170 lbs   | 6–9 months          |
-| Overhead Press       | 10–12 reps      | 70–90 lbs     | 4–6 months      | 90–115 lbs    | 6–9 months          |
-| Weighted Pull-Ups    | 6–8 reps        | +35–45 lbs    | 4–6 months      | +45–55 lbs    | 6–9 months          |
-| Single-Leg Leg Press | 12–15 reps      | 145–180 lbs   | 3–4 months      | 180–225 lbs   | 4–6 months          |
+| Exercise                 | Rep Range Focus | Goal @ 120 lb | Timeline (Est.) | Goal @ 150 lb | Timeline (Adjusted) |
+| ------------------------ | --------------- | ------------- | --------------- | ------------- | ------------------- |
+| **Hip Thrust**           | 12–15 reps      | 185–225 lbs   | 6–9 months      | 225–280 lbs   | 9–12 months         |
+| **Hack Squat Machine**   | 10–12 reps      | 145–180 lbs   | 3–4 months      | 180–225 lbs   | 4–6 months          |
+| **Deadlift**             | 8–10 reps       | 185–225 lbs   | 6–9 months      | 225–280 lbs   | 9–12 months         |
+| **Bench Press**          | 10–12 reps      | 110–135 lbs   | 4–6 months      | 135–170 lbs   | 6–9 months          |
+| **Overhead Press**       | 10–12 reps      | 70–90 lbs     | 4–6 months      | 90–115 lbs    | 6–9 months          |
+| **Weighted Pull-Ups**    | 6–8 reps        | +35–45 lbs    | 4–6 months      | +45–55 lbs    | 6–9 months          |
+| **Single-Leg Leg Press** | 12–15 reps      | 145–180 lbs   | 3–4 months      | 180–225 lbs   | 4–6 months          |
 
 - **Why**: Focuses on metabolic stress and time-under-tension. Fatigue is actually useful here.
 
@@ -510,72 +556,20 @@ Prioritize resistance bands for explosive phase they can be used for other phase
 
 
 
-### Sample Hip Thrust Program 
-(can swap and alt for other exercises and do it in phases on same day)
+### Hip Thrust Program 
 
 **Day 1 (Heavy)**  
 - Hip Thrust: 4x8 @ 130–180 lbs (1.5x BW)  
 - Banded Pulse Thrusts: 3x15 (explosive at top)  
   
-**Day 2 (Endurance)**  
-- Single-Leg Hip Thrust: 3x12/leg @ 40–65 lbs  
+**Day 2 (Hypertrophy)**  
+- Hip Thrust: 3x12/leg @ 70–90 lbs -  Slow eccentric to failure
+- Single-Leg Hip Thrust: 3x12/leg @ 40–65 lbs -  Slow eccentric
 - Bodyweight Hip Thrust Holds: 3x30 sec (squeeze glutes)  
 - Kettlebell Swing (for hip snap): 4x15  
 
-## Put some where
-
-add these pull and push column for the exercise rotational, 
-
-
-
-Try pull up position at top holding it
-
-
-Anything dumbbell  15lb
-
-
-Free tire about 88
-
-
-Leg extension range 2 orange circle at knee and 120lb for machine in back
-
-dont rotate on back extension 20lb
-
-
-chest fly machine  90
-
-Hold leg press at different stages
-
-
-Lat pull down pull elbow near hip not chest same for row get up close pull to hip
-
-
-
-For squats to them with wide stance with toes pointed out slightly not the widest stance just not narrow
-
-  
-
-Chest press handles at nipple height
-
-
-
-Nerve floss 30 sec 2 to 3 sets 
-
-Active hamstring stretch same duration
-
-Same thing but passive hamstring stretch
-
-  
-
-see if you can hold nose without breathing for 40 sec without your body react to breath
-
-
-
-Half Kneeling Row
-
-Use opposite side knee leaning against low bench
-![Half Kneeling 1 Arm Thorax Cable Row Coaching and Cues - YouTube](https://youtu.be/afE9JabFqR4?si=Q7eXtrCmYCcxOV_T)
-
+**Day 3 (Explosive)**  
+- Hip Thrust: 6x3 @ 90 - explosive concentric, 1-second pause, controlled eccentric
 
 | Body  | Exercise                                    | Tried | Focus  | Type       | W(lb/kg) |                      | Priority | Duration | Sets | AltType    | Tried | Alt W(lb/kg) |
 | ----- | ------------------------------------------- | ----- | ------ | ---------- | -------- | -------------------- | -------- | -------- | ---- | ---------- | ----- | ------------ |
@@ -617,6 +611,7 @@ Use opposite side knee leaning against low bench
 | Shoulder Press                      | 10         | 20        | 4    | 8    | Standing  | Shoulder              | Upper  | _Highest | Yes   | Bands      |                   | Shoulder Press                                                          | *10*     | Pull          | N/A   | CM    |
 | Standing back fly                   | 10         | 20        | 4    | 8    | Standing  | Multi                 | Upper  | _Highest | Yes   | Bands      |                   | Standing back fly                                                       | *10*     | Pull          | N/A   | CM    |
 | Upright row                         | 10         | 20        | 4    | 8    | Standing  | Multi                 | Upper  | _Highest | Yes   | Bands      |                   | Upright row                                                             | *10*     | Pull          | N/A   | CM    |
+| Half Kneeling Row                   | 10         | 20        | 4    | 8    | Kneeling  | Multi                 | Upper  | _Highest |       | Cable      |                   | [[Upper#^0a983d \|Half Kneeling Row]]                                   | *10*     | Pull          | N/A   | CM    |
 | Squats                              | 10         | 20        | 4    | 8    | Standing  | Legs Multi            | Bottom | _Highest | Yes   | Bands      |                   | Squats                                                                  | *10*     | Push          | N/A   | CM    |
 | Squats & Reach                      | 0          | 0         | 4    | 8    | Standing  | Legs Multi            | Bottom | _Highest |       | Bands      |                   | [[Lower#^ab16e7 \|Squats & Reach]]                                      | *10*     | Push          | N/A   | CM    |
 | Sumo squat                          | 10         | 20        | 4    | 8    | Standing  | Legs Multi            | Bottom | _Highest | Yes   | Bands      |                   | Sumo squat                                                              | *10*     | Push          | N/A   | CM    |
@@ -673,7 +668,7 @@ Use opposite side knee leaning against low bench
 | PullUp                              | 0          | 0         | 4    | 8    | Neutral   | Back Lats             | Upper  | _Highest | Yes   | Bodyweight | N/A               | [[Upper#^e81d31 \|PullUp]]                                              | ****     | Pull          | N/A   | PG    |
 | Rev Crunch                          | 0          | 0         | 4    | 8    | Bench     | Lower Abdom           | Core   | _Highest | Yes   | BodyWeight | N/A               | Rev Crunch try on incline bench                                         | *0*      | Flexion       | N/A   | RC    |
 | Rev Nordic                          | 0          | 0         | 4    | 8    | Grounded  | Lower Abdom           | Core   | _Highest | Yes   | BodyWeight | N/A               | [[Core#^dd110e \|Rev Nordic]]                                           | *0*      | Pull          | N/A   | RC    |
-| Back Extension                      | 0          | 0         | 4    | 8    | Bench     | Abdom                 | Core   | High     | Yes   | BodyWeight | N/A               | Back Extension                                                          | *0*      | Extension     | N/A   | RC    |
+| Back Extension                      | 0          | 20        | 4    | 8    | Bench     | Abdom                 | Core   | High     | Yes   | BodyWeight | N/A               | Back Extension                                                          | *0*      | Extension     | N/A   | RC    |
 | ChinUp                              | 0          | 0         | 4    | 8    | Underhand | Lats                  | Upper  | High     |       | Bodyweight | N/A               | [[Upper#^a2d3cc \|ChinUp]]                                              | ****     | Pull          | N/A   | PG    |
 | Dip                                 | 0          | 0         | 4    | 8    | Wide      | Tricep                | Upper  | High     | Yes   | BodyWeight | N/A               | Dip                                                                     | *0*      | Push          | N/A   | CMEP  |
 | Dips                                | 0          | 0         | 4    | 8    | Narrow    | Tricep                | Upper  | High     | Yes   | BodyWeight | N/A               | [[Upper#^a56816 \|Dips]]                                                | *0*      | Push          | N/A   | CMEP  |
@@ -687,6 +682,7 @@ Use opposite side knee leaning against low bench
 | Cable Snap Downs                    | ***160***  | ***160*** | 4    | 8    | Standing  | Chest                 | Upper  | High     |       | Cable      | N/A               | [Cable Snap Downs](https://www.youtube.com/shorts/IW40KjCwNmA)          | *80*     | Pull          | 0     | PG    |
 | Cable Wolverine                     | ***160***  | ***160*** | 4    | 8    | Standing  | Chest                 | Upper  | High     |       | Cable      | N/A               | [[CableWolverine.gif\|Cable Wolverine]]                                 | *80*     | Pull          | 0     | PG    |
 | Single Arm Back Cable Lateral Raise | 0          | 0         | 4    | 8    | Standing  | Shoulder              | Upper  | High     |       | Cable      | N/A               | [[Upper#^971765 \|Single Arm Back Cable Lateral Raise]]                 | **0**    | Pull          | N/A   | PG    |
+| Pancake Stretch                     | ***160***  | ***160*** | 4    | 8    | Seated    | Multi                 | Full   | High     |       | Cable      | N/A               | [[Core#^c47ced \| Pancake Stretch]]                                     | ***80*** | Pull          | 0     | RC    |
 | Cable Woodchopper                   | ***160***  | ***160*** | 4    | 8    | Standing  | Multi                 | Upper  | Med      |       | Cable      | N/A               | [[Upper#^a7be5a \|Cable Woodchopper]]                                   | ***80*** | Pull          | 0     | RC    |
 | Lateral Head Single Arm             | 0          | 0         | 4    | 8    | Standing  | Shoulder              | Upper  | Med      |       | Cable      | N/A               | [[Upper#^88a124 \|Lateral Head Single Arm]]                             | ****     | Pull          | N/A   | CM    |
 | Two Hand Overhead extension         | 0          | 0         | 4    | 8    | Standing  | Tricep                | Upper  | Med      |       | Cable      | N/A               | [[Upper#^05b651 \|Two Hand Overhead extension]]                         | **0**    | Pull          | N/A   | PG    |
