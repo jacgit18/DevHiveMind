@@ -14,6 +14,9 @@ If you're working on something like how you were with the step functions always 
 7ps capital one testing platform will be doing behavior driven test
 
 
+Make file that creates aws resources in local stack
+
+
 
 
 ## May Notes
