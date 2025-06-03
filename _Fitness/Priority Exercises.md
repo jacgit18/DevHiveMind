@@ -599,11 +599,11 @@ Prioritize resistance bands for explosive phase they can be used for other phase
 
 **Day 1 (Heavy)**  
 - Hip Thrust: 4x8 @ 130–180 lbs (1.5x BW)  
-- Banded Pulse Thrusts: 3x15 (explosive at top)  
+- Single-Leg Hip Thrust: 3x12/leg @ 90 lbs 
   
-**Day 2 (Hypertrophy)**  
-- Hip Thrust: 3x12/leg @ 70–90 lbs -  Slow eccentric to failure
-- Single-Leg Hip Thrust: 3x12/leg @ 40–65 lbs -  Slow eccentric
+**Day 2 (Hypertrophy)**  -  Slow eccentric to failure
+- Hip Thrust: 3x12/leg @ 70–90 lbs 
+- Single-Leg Hip Thrust: 3x12/leg @ 70 lbs 
 - Bodyweight Hip Thrust Holds: 3x30 sec (squeeze glutes)  
 - Kettlebell Swing (for hip snap): 4x15  
 
@@ -650,7 +650,7 @@ Prioritize resistance bands for explosive phase they can be used for other phase
 | Shoulder Press                      | 10         | 20        | 4    | 8    | Yes   | Bands      | _Highest |                   | Upper  | Shoulder              | Standing  | Shoulder Press                                                          | *10*     | Pull          | N/A   | CM    |
 | Standing back fly                   | 10         | 20        | 4    | 8    | Yes   | Bands      | _Highest |                   | Upper  | Multi                 | Standing  | Standing back fly                                                       | *10*     | Pull          | N/A   | CM    |
 | Upright row                         | 10         | 20        | 4    | 8    | Yes   | Bands      | _Highest |                   | Upper  | Multi                 | Standing  | Upright row                                                             | *10*     | Pull          | N/A   | CM    |
-| Half Kneeling Row                   | 10         | 20        | 4    | 8    |       | Cable      | _Highest |                   | Upper  | Multi                 | Kneeling  | [[Upper#^0a983d \|Half Kneeling Row]]                                   | *10*     | Pull          | N/A   | CM    |
+| Half Kneeling Row                   | 22         | 55        | 4    | 8    |       | Cable      | _Highest |                   | Upper  | Multi                 | Kneeling  | [[Upper#^0a983d \|Half Kneeling Row]]                                   | *10*     | Pull          | N/A   | CM    |
 | Squats                              | 10         | 20        | 4    | 8    | Yes   | Bands      | _Highest |                   | Bottom | Legs Multi            | Standing  | Squats                                                                  | *10*     | Push          | N/A   | CM    |
 | Squats & Reach                      | 0          | 0         | 4    | 8    |       | Bands      | _Highest |                   | Bottom | Legs Multi            | Standing  | [[Lower#^ab16e7 \|Squats & Reach]]                                      | *10*     | Push          | N/A   | CM    |
 | Sumo squat                          | 10         | 20        | 4    | 8    | Yes   | Bands      | _Highest |                   | Bottom | Legs Multi            | Standing  | Sumo squat                                                              | *10*     | Push          | N/A   | CM    |

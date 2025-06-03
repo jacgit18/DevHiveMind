@@ -136,3 +136,61 @@ Let me know if you want a printable version or to tailor this for indoor/outdoor
 
 ---
 
+
+## 🔥 **RAISE (Increase Body Temp & Heart Rate)**
+
+> These are **dynamic** movements that elevate heart rate — not commonly done on your side, but here's what applies:
+
+### **Dynamic (On Side)**
+
+- **Side-to-Side Rolling** – Roll from side to side across a mat, using arms and hips to initiate; great for warm blood flow in spine/core.
+    
+- **Side-Lying Bicycles** – Pedal your top leg like a bike in the air to raise HR slightly and warm up hips.
+    
+
+---
+
+## 💡 **ACTIVATE (Engage Muscle Groups)**
+
+> Controlled, repetitive contractions to wake up stabilizers and movers (often glutes, core, shoulders).
+
+### **Dynamic**
+
+- **Side-Lying Leg Lifts** – Top leg lifts straight up and down; targets glute medius.
+    
+- **Clamshells** – Knees bent, feet together, open top knee like a clamshell.
+    
+- **Side-Lying Hip Circles** – Lift top leg and draw slow circles in the air.
+    
+- **Side Plank Leg Raises** – From a side plank, lift top leg up/down; glutes + core activation.
+    
+
+### **Static**
+
+- **Side Plank Hold** – Elbow under shoulder, hips lifted; hold 15–30 sec per side.
+    
+- **Side-Lying Isometric Clam Hold** – Open clamshell and hold at top range.
+    
+
+---
+
+## 💥 **POTENTIATE (Prep for Explosive Work)**
+
+> Primer exercises—often isometric or resisted—to stimulate CNS and movement patterns used in training.
+
+### **Dynamic**
+
+- **Side Plank with Knee Drive** – From a side plank, explosively drive the top knee toward the chest, mimicking sprint mechanics.
+    
+- **Band-Resisted Side Clamshells** – Add a loop band for more neural drive; short bursts of powerful reps.
+
+
+
+**Barbell Exercises: Upper vs Lower Body Considerations**
+
+Upper body barbell exercises—like the bench press—can sometimes place unnecessary strain on the wrists due to the fixed, straight bar grip. If the grip doesn’t align naturally with your wrist and shoulder joints, it can cause discomfort or even injury over time.
+
+In contrast, barbell movements for the lower body (like squats and deadlifts) or full-body lifts often allow for a more natural grip or distribute load in a way that’s generally better tolerated.
+
+🔍 **Key Takeaway:**  
+Pay attention to how your body feels. If a movement feels off—especially in your wrists, shoulders, or joints—it may be worth adjusting your grip, switching to dumbbells, or using specialty bars (like a Swiss bar or safety squat bar) that allow for a more neutral position.
