@@ -116,6 +116,7 @@ https://chatgpt.com/share/67f6ff55-c0a8-800d-8673-1d9137b6a27d
 [How AI Agents Are Quietly Transforming Frontend Development - The New Stack](https://thenewstack.io/how-ai-agents-are-quietly-transforming-frontend-development/)
 
 
+[GoJS - Interactive Diagrams for the Web in JavaScript and TypeScript](https://gojs.net/latest/?a=s9&gad_source=1&gad_campaignid=21942866392&gclid=Cj0KCQjwuvrBBhDcARIsAKRrkjfqrWCSTxssOvjncqQGm-dgrYOh0mvicxyQfKIJnGWM_uLeWxMIB4gaAiUmEALw_wcB)
 
 
 Scale breaks things at a small level that's when you have things that are special that don't really break as much but when you try to scale it it breaks eventually hit that similar issue with Dunbar number when it comes to company scaling and problems occur along with quality
