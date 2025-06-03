@@ -52,12 +52,8 @@ dg-publish:
 1. **Daily Protein for Maintenance/Gain:** ~158 – 330 grams of protein per day
 2. **Protein for Cutting (higher intake for muscle preservation):** ~180 grams/day
 
-
-
 # Warm-Up & Cool-Down 
 Start with a dynamic stretch to Improve blood flow and flexibility. End with a static stretch targeting major muscle groups. Basically any static stretch has a dynamic variation with movement. 
-
-> Crunch gym machine are heaver then Blink.
 
 
 ## Best Practices
@@ -123,6 +119,15 @@ Like BJJ and a baby start off on back and progress to standing
 ### **Warm-Up (RAMP Protocol)**
 **Recommended Duration:** ~2–3 minutes per section (Total: 10–15 min)  
 **Tip:** Prioritize movement quality over speed. Use Duck Walks between sections or as part of the "Activate" phase.
+
+> Sprinting engages the whole body with a tall, open, and powerful posture, emphasizing full extension and drive, whereas jogging is more contained—focused on lower-body movement with a relatively closed, compact posture.
+
+![https://youtu.be/Aj5SONT3T2o?si=9z5TvZuR1iBfgjch&t=515](https://youtu.be/Aj5SONT3T2o?si=9z5TvZuR1iBfgjch&t=515)
+
+**Skipping Foundation (2-3 mins):**
+    *   **Focus:** Tall posture, head up, expressive arms, **active ankle dorsiflexion on landing.**
+    *   **Cue:** "Land like you're stepping on a hot plate - quick, light, front of foot angled up (dorsiflexed)."
+    *   **Execution:** Skip continuously, focusing on rhythm and form. Keep core engaged, back straight.
 
 ---
 
@@ -223,20 +228,26 @@ see if you can hold nose without breathing for 40 sec without your body react to
 Avoid laying on bed outside of sleeping
 
 
+over time your timing and body will tighten in the right spots automatically
+
+dumbbell lunge on balance board or plate or platform
+
+
+
+
 
 #### **1. Raise (Increase Body Temp & Heart Rate)**
 _~2–3 minutes total – pick 2–3_ or pick one to do for the whole time.
 
 ##### Seated
 - Rower or Incline Treadmill Walk – **1 min**
-
 ##### **Grounded On Front**
 - [[Upper#^4a9cd1 |Pike Push-Ups]] – **6–8 reps**
 - [[Core#^60b781 |Tuck Jumps to Plank]]– **6 reps**
 
 ##### **Standing**
-- **Shoulder Rolls** – Forward & backward, 10 reps each
-- **Torso Twists** – Controlled rotation side-to-side, 15–20 reps
+- **Shoulder Rolls** – Forward & backward, *10 reps each*
+- **Torso Twists** – Controlled rotation side-to-side - like throwing hook, *15–20 reps*
 - **Neck Rolls** – Slow circles, 5 reps each direction
 - **Wrist Curl** - Do a few sets not as many as other exercises
 - Jump Rope – **1 min**
@@ -245,8 +256,10 @@ _~2–3 minutes total – pick 2–3_ or pick one to do for the whole time.
 - Punch Ups with 5lb dumbbells
 - Chest Fly with 5lb dumbbells
 - Jumping Jacks – **1 min**
-- [Arm Circles](https://www.youtube.com/watch?v=YGXgpcr7UY4) with 5lb dumbbells different ranges – **20 reps each direction**
-- Shadowboxing with Resistance bands (fast-paced) – **30–45s**
+- [Arm Circles](https://www.youtube.com/watch?v=YGXgpcr7UY4) with 5lb dumbbells different ranges – *20 reps each direction*
+- Shadowboxing with Resistance bands (fast-paced) – *30–45s*
+###### Sprinting  Specific
+- **Free Flow Skipping**
 
 #### **2. Activate (Engage Muscle Groups)**
 _~2–3 minutes total – pick 4–5_
@@ -258,6 +271,7 @@ _~2–3 minutes total – pick 4–5_
 
 ##### **Grounded On Side**
 - [[Core#^5805af |Side Plank Hip dip]] (floor or bench feet on ground or bench) - **10–12 reps** - Lateral flexion
+- **Rotational Side Plank**
 ##### **Grounded On Front**
 - Superman Hold – **20–30s hold**
 - [[Lower#^01867f |Quadruped Kickbacks]] – **8–10 reps/side**
@@ -265,6 +279,9 @@ _~2–3 minutes total – pick 4–5_
 - Push-Up Hold (top and bottom) – **10s each**
 - [[Upper#^5ff8c1 |Scapular Push-Ups ]] – **10–12 reps with deep breathing**
 	- Breathe deeply as you push your chest outward, squeezing your shoulder blades together. Then, reverse the motion by pulling your chest inward and separating your shoulder blades, keeping your elbows straight throughout the movement.
+- **Elbow Push-ups (Pike Push-up Focus)**
+- **Scorpion Stretch**
+- **Supine lower body** - t position leg raise to opposite hand
 
 ##### **Standing**
 - Calf Raises – **10–12 reps**
@@ -273,9 +290,13 @@ _~2–3 minutes total – pick 4–5_
 - [[Lower#^8a3d01|ISO Calf Raise with Lunge]]
 - [[Lower#^58f942|Lunge ISO Heel Raise]]
 - [[Lower#^da4cd0|Banded Joint Mobilizations]]
+- Twisted arms
 
 **Optional Add-In:**
 - **Duck Walks** – **2 passes across gym or 30–45 seconds**
+
+###### Sprinting  Specific - 1 min 
+- **Single-Leg RDL w/ Knee Drive Swing** - Hold 3 sec in each part explode, swing, and Step.
 
 
 #### **3. Mobilize (Dynamic Range of Motion)**
@@ -286,6 +307,7 @@ _~3–4 minutes total – choose a flow or 3–5 moves_
 - Dynamic [[Core#^beda1a |Supine Windshield Wipers]] – **4–6 transitions + 10s pose**
 
 ##### Seated
+- **Spinal Twists** - 30 sec
 - [[Lower#^ee779f |90/90 Transitions ]] – **8 reps**
 - Butterfly Hip Rocks → Butterfly Stretch – **8 rocks + 10s stretch**
 - [[Core#^eb4c68 | Pancake Stretch]]  **4 sets 8 reps**
@@ -304,6 +326,23 @@ _~3–4 minutes total – choose a flow or 3–5 moves_
 - **Walking Lunges + Reach** – Forward lunge + arms overhead, 8–10 each leg
 - **Hip Circles / Openers** – Knee lift and rotate out, 8–10 per leg
 - **Knee Hugs to Calf Raise** – Alternate legs, balance & stretch, 8–10 each leg
+
+###### Sprinting  Specific - 1 min
+- **Backward Walking & Skipping**
+- **Carioca**
+- **High Knee Circles**
+* **Internal/External Ankle Circles**
+* **Lateral Leg Swings (side-to-side)**
+* **Linear Leg Swings (forward/back)**
+- **Side Shuffles**
+- **Walking Lunges with Reach:** Step into lunge, drive *up* powerfully through the front heel, reaching both arms overhead tall. Keep torso upright. (Focuses on extension, hip flexor stretch).
+
+
+
+* Cossack position but on knee with extended leg  extend v arms leaning to alternating side
+* lung position extend v arms leaning back rotating towards one shoulder
+* lunge position rotate and side bend down over the front leg that is kneeling for the lunge almost trying to look at extended leg
+
 
 #### **4. Potentiate (Prep for Explosive Work)**
 _~1–2 minutes total – pick 2_
