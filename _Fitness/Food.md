@@ -51,7 +51,12 @@ protein deficit assumes no protein drink
 
 Dave Killer Bread 5.47
 
-12 slice cheese  
+12 slice cheese  provolone 4.89
+swiss cheese 4.89
+
+turkey/chicken 4.29
+
+honey roasted  turkey 5.95
 
 10 pairs of bread so 10 sandwiches  
 
@@ -61,7 +66,7 @@ Kozy shack rice pudding 120 calories 4g protein And on average for the pudding a
 
 Beet juice is 100 calories 3g protein four bottles about 15 bucks  
   
-
+mandarins 2.79 serving size 3 about 120ish
 
 
 Chia seeds 150 calories 5g Protien 2.5 tbsp
