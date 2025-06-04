@@ -124,7 +124,7 @@ https://chatgpt.com/share/67f6ff55-c0a8-800d-8673-1d9137b6a27d
 Scale breaks things at a small level that's when you have things that are special that don't really break as much but when you try to scale it it breaks eventually hit that similar issue with Dunbar number when it comes to company scaling and problems occur along with quality
 
 
-
+[This Obsidian alternative works inside a web browser, and I can’t stop using it](https://www.xda-developers.com/this-obsidian-alternative-works-inside-a-web-browser-i-cant-stop-using-it/)
 
 
 Lensa lets you visualize and monitor live data in Kafka streams—like credit card transactions—in real-time.  
