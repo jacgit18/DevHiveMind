@@ -55,11 +55,10 @@ dg-publish:
 # Warm-Up & Cool-Down 
 Start with a dynamic stretch to Improve blood flow and flexibility. End with a static stretch targeting major muscle groups. Basically any static stretch has a dynamic variation with movement. 
 
-
 ## Best Practices
 #todo/Workout 
 - [ ] Follow [[Workout Phases]] starting June and focus on [[Optimal Order Of Operations For Body Development]] and [[Optimal Order by Exercise Type]] 
-- [ ] Keep [[Muscle Imbalance]] in mind 
+- [ ] for alternating arm excercise start with left arm
 - [ ] For full body days alt from strength upper to lower hypertrophy and vise versa strength lower to upper hypertrophy
 - [ ] For Lower body focus on 80% strength training and 20% hypertrophy. 
 - [ ] For Upper body focus on 20% strength training and 80% hypertrophy training to failure with high volume but first establish a good strength baseline.
@@ -69,6 +68,7 @@ Start with a dynamic stretch to Improve blood flow and flexibility. End with a s
 - [ ] After a year or more shift phases for strength training and high volume hypertrophy training. 
 - [ ] Practice at the gym for warm ups and outside skip and walk a little in between jogging spurts  add a lunge extending upper body up on lunge
 - [ ] For rest days make it one of my weekdays like if I have a networking event and there isn't a good timing in terms of going before or maybe even after the event and you can also take cold Baths on that day
+- [ ] Take a break from Barbell chest presses and two arm variations of exercises  for muscle Imbalance test out two arm excercise again in August if still a issue try again in October.
 
 ### Terms
 - **Concentric (Lifting)**: Explode as fast as form allows.
@@ -137,111 +137,6 @@ Like BJJ and a baby start off on back and progress to standing
 
 ---
 
-[Deadbug heel tap - YouTube](https://youtu.be/VRpXreaHz7w?si=MSTm2UNzlRLyQt3E)
-
-dead bug hand pushed against wall alternating pushing heals down - Anti-extension
-
-DeadBug Alt Heel Tap
-
-
-
-
-
-[Offset Walk - YouTube](https://youtu.be/Fc-27p17TPE?si=UyGkyXJ5FRZz-_tB)
-
-
-[Scapular Push up on Elbows - YouTube](https://youtu.be/DKkgzXfcXMQ?si=wC_124w4vpq8Nyyf)
-
-[Side to Side Rolling - YouTube](https://youtu.be/LRijmsnZwZc?si=-_x8NPJUWaJYxim4)
-
-[Seated Good Morning, Dumbbells - YouTube](https://youtu.be/RGcNDV8d0Wc?si=64zelC35xu482B6t)
-
-[Seated Good Mornings - YouTube](https://youtu.be/cJWYiUkiWrE?si=jV2MY1IGw_U0I5Y3)
-
-[How To Use the TIB BAR - Knee, Ankle and Shin Rehab (including shin splints) - YouTube](https://youtu.be/1nZgmPik6Mk?si=Yw-MvDMiVGwvb7ZL)
-
-
-Practice very slow drills in general like for instance for sprinting you can practice running very slow making sure you are aware of your heels when they impact the floor to negate he'll striking when you are landing your heel first the ground
-
-  
-Heel squat on plate
-
-  
-
-Leg extensions not as effective for me at least in terms of Rehabilitation aspect
-
-
-
-Use opposite side knee leaning against low bench when doing Half Kneeling Row
-
-
-Avoid cold water baths close to workouts especially post maybe consider doing it a few hours before sleeping or before working out
-
-
-
-Be relaxed to keep stress down improving recovery
-
-
-All the way down push-ups with a hand release at the bottom then superman and then push back up 
-
-
-Anything dumbbell  15lb min
-
-
-
-  
-Update pull and push column for the exercise that are rotational, 
-
-Try pull up position at top holding it
-
-
-
-
-Mike Tyson push up
-
-  
-
-Back window
-
-  
-
-Dive bomber
-
-  
-
-T stand plank push up
-
-
-
-
-Free tire about 88
-
-dont rotate on back extension
-
-Leg extension range 2 orange circle at knee and 120lb for machine in back
-
-Lat pull down pull elbow near hip not chest same for row get up close pull to hip
-
-For squats to them with wide stance with toes pointed out slightly not the widest stance just not narrow
-
-
-Chest press handles at nipple height
-
-
-see if you can hold nose without breathing for 40 sec without your body react to breath
-
-
-Avoid laying on bed outside of sleeping
-
-
-over time your timing and body will tighten in the right spots automatically
-
-dumbbell lunge on balance board or plate or platform
-
-
-
-
-
 #### **1. Raise (Increase Body Temp & Heart Rate)**
 _~2–3 minutes total – pick 2–3_ or pick one to do for the whole time.
 
@@ -273,7 +168,6 @@ _~2–3 minutes total – pick 2–3_ or pick one to do for the whole time.
 - Jumping Jacks – **1 min**
 - [Arm Circles](https://www.youtube.com/watch?v=YGXgpcr7UY4) with 5lb dumbbells different ranges – *20 reps each direction*
 - Shadowboxing with Resistance bands (fast-paced) – *30–45s*
-
 
 #### **2. Activate (Engage Muscle Groups)**
 _~2–3 minutes total – pick 4–5_
@@ -360,7 +254,6 @@ _~3–4 minutes total – choose a flow or 3–5 moves_
 
 #### **4. Potentiate (Prep for Explosive Work)**
 _~1–2 minutes total – pick 2_
-
 ##### **Grounded On Side**
 - **Side Plank with Knee Drive** – From a side plank, explosively drive the top knee toward the chest, mimicking sprint mechanics.
 ##### **Grounded On Front**
@@ -423,7 +316,6 @@ color purple
 
 
 #todo/BAU/Workout
-
 - [ ] Dead Hang at BK-MMA & Leg Day
 - [ ] Pick rest day each week
 - [ ] Do 5 to 6 exercises per session 
@@ -456,7 +348,6 @@ color purple
 	- **Purpose**: Prioritize strength and muscle growth.
 	- **Strategy**: When focusing on gaining weight, it's important to prioritize weightlifting and muscle-building exercises over combining endurance movements with heavy lifting. Combining endurance exercises with weight training can decrease the overall intensity and focus needed for strength development.
 	- **Recommendation**: Stick to pure weight training for muscle growth and use endurance exercises sparingly to avoid burning excessive calories or compromising muscle recovery.
-
 
 #### Schedule 
 
@@ -495,8 +386,8 @@ color purple
 - No improvement in endurance after 2–3 weeks.  
   
 ### **Balance Board Frequency: How Many Days Per Week?**  
-- **Beginners:** 2-3x/week (5-10 mins/session).  
-- **Intermediate/Advanced:** 3-4x/week (10-15 mins/session).  
+- **Beginners:** 2-3x/week (5-10 mins/session) or 2 songs length.
+- **Intermediate/Advanced:** 3-4x/week (10-15 mins/session) 4 songs.  
 - **Elite (MMA/Gymnasts):** 5x/week (integrated into warm-ups or cooldowns).
 
 
@@ -517,7 +408,7 @@ color purple
 
 > **Train intensity before volume**. Prioritize neural output early, then shift to fatigue-driven work.
 
-- [ ] **Deload**: Switch phases every 4–6 weeks to reduce volume so go form compound or hypertrophy to Explosive 
+- [ ] **Deload**: Switch phases every 4–6 weeks to reduce volume so go form compound or hypertrophy to Explosive after 2 years or so or as it gets harder to add muscle.
 
 | Goal                        | Sets | Reps   | Tempo                                | **Rest**  |
 | --------------------------- | ---- | ------ | ------------------------------------ | --------- |
@@ -579,9 +470,7 @@ Prioritize resistance bands for explosive phase they can be used for other phase
     - **75–85% 1RM**
     - **Tempo**: 2–1–2 (eccentric–pause–concentric)
     - **Rest**: 2–4 minutes
-    - **Examples**: Squats, deadlifts, bench press, weighted pull-ups
-
-
+    - **Examples**: Squats, deadlifts, bench press, weighted pull-ups.
 
 
 ---
@@ -608,8 +497,6 @@ Prioritize resistance bands for explosive phase they can be used for other phase
     - **Tempo**: 3–1–1 (emphasize eccentric)
     - **Rest**: 30–90 seconds
     - **Examples**: Isolation lifts, machine work, burnout sets
-
-
 
 ### Hip Thrust Program 
 
@@ -658,7 +545,8 @@ Prioritize resistance bands for explosive phase they can be used for other phase
 | Angled Chest Fly                    | 20         | 20        | 4    | 8    | Yes   | Bands      | _Highest |                   | Upper  | Chest                 | Standing  | Angled Chest Fly                                                        | *20*     | Push          | 4     | CM    |
 | Face pulls                          | 10         | 20        | 4    | 8    | Yes   | Bands      | _Highest |                   | Upper  | Back                  | Grounded  | Face pulls                                                              | *10*     | Pull          | N/A   | CM    |
 | Front & lateral raise               | 10         | 20        | 4    | 8    | Yes   | Bands      | _Highest |                   | Upper  | Shoulder              | Standing  | Front & lateral raise                                                   | *10*     | Pull          | N/A   | CM    |
-| Hammer Curls                        | 10         | 20        | 4    | 8    | Yes   | Bands      | _Highest |                   | Upper  | Multi                 | Standing  | Hammer Curls                                                            | *10*     | Pull          | N/A   | CM    |
+| Zottman Curls                       | 10         | 20        | 4    | 8    | Yes   | Bands      | High     |                   | Upper  | Multi                 | Standing  | Zottman Curls                                                           | *10*     | Pull          | N/A   | CM    |
+| Hammer Curls                        | 10         | 20        | 4    | 8    | Yes   | Bands      | High     |                   | Upper  | Multi                 | Standing  | Hammer Curls                                                            | *10*     | Pull          | N/A   | CM    |
 | Hex Chest Press                     | 20         | 20        | 4    | 8    | Yes   | Bands      | _Highest |                   | Upper  | Chest                 | Standing  | Angled Chest Fly                                                        | **90**   | Push          | 4     | CM    |
 | Lunges                              | 10         | 20        | 4    | 8    | Yes   | Bands      | _Highest |                   | Bottom | Legs Multi            | Standing  | Lunges                                                                  | *10*     | Push          | N/A   | CM    |
 | Overhand Row                        | 10         | 20        | 4    | 8    | Yes   | Bands      | _Highest |                   | Upper  | Tricep                | Grounded  | Overhand Row                                                            | *10*     | Pull          | N/A   | CM    |
@@ -712,7 +600,7 @@ Prioritize resistance bands for explosive phase they can be used for other phase
 | Landmine Twist                      | 20         | 40        | 4    | 8    |       | Barbell    | High     | N/A               | Upper  | Core                  | Standing  | [[Upper#^b8a4b6 \|Landmine Twist ]]                                     | *10*     | Pull          | N/A   | CM    |
 | Lateral Rotations                   | 0          | 0         | 4    | 8    |       | Barbell    | High     | N/A               | Full   | Multi                 | Landmine  | [[Landmines#^ceab94 \|Lateral Rotations]]                               | *0*      | Pull          | N/A   | RC    |
 | B Squats                            | 20         | 40        | 4    | 8    |       | Barbell    | High     | N/A               | Bottom | Multi                 | Standing  | B Squats                                                                | *25*     | Pull          | N/A   | CM    |
-| Squat to Press                      | 0          | 0         | 4    | 8    |       | Barbell    | High     | N/A               | Full   | Multi                 | Landmine  | [[Landmines#^82b155 \|Squat to Press]]                                  | *0*      | Pull          | N/A   | RC    |
+| Squat to Press                      | 0          | 0         | 4    | 8    |       | Barbell    | High     | N/A               | Full   | Multi                 | Landmine  | [[Landmines#^11ad14\|Squat to Press]]                                   | *0*      | Pull          | N/A   | RC    |
 | Clean to Jerk & Press               | 0          | 20        | 4    | 8    | Yes   | Barbell    | High     | N/A               | Full   | Multi                 | Standing  | [[Full Body#^0c16fd \|Clean to Jerk & Press]]                           | **5**    | Pull          | N/A   | EP    |
 | Single-Arm Shoulder Press           | 0          | 0         | 4    | 8    |       | Barbell    | High     | N/A               | Upper  | Shoulder              | Landmine  | [[Landmines#^2a2dc9 \|Single-Arm Shoulder Press]]                       | *0*      | Pull          | N/A   | RC    |
 | Reverse Lunge + Rotation            | 0          | 0         | 4    | 8    |       | Barbell    | Med      | N/A               | Full   | Multi                 | Landmine  | [[Landmines#^82208b\|Reverse Lunge + Rotation]]                         | *0*      | Pull          | N/A   | RC    |
@@ -763,7 +651,8 @@ Prioritize resistance bands for explosive phase they can be used for other phase
 | Skull Crusher                       | 5          | 10        | 4    | 8    | Yes   | Dumbbell   | _Highest | N/A               | Upper  | Tricep                | Seated    | [[Upper#^6beb70\|Skull Crusher]]                                        | *15*     | Push          | N/A   | CM    |
 | Shoulder Press                      | 15         | 20        | 4    | 8    | Yes   | Dumbbell   | High     | N/A               | Upper  | Shoulder              | Seated    | Shoulder Press                                                          | *10*     | Push          | N/A   | CM    |
 | Lateral Raise                       | 5          | 10        | 4    | 8    | Yes   | Dumbbell   | Low      | N/A               | Upper  | Multi                 | Standing  | [[Upper#^034a05\| Lateral Raise]]                                       | **10**   | Pull          | N/A   | CM    |
-| Hammer Curls                        | 10         | 20        | 4    | 8    | Yes   | Dumbbell   | _Highest | N/A               | Upper  | Biceps                | Standing  | [[Upper#^eddf76\| Hammer Curls]]                                        | **10**   | Push          | N/A   | CM    |
+| Zottman Curls                       | 10         | 15        | 4    | 8    | Yes   | Dumbbell   | _Highest | N/A               | Upper  | Biceps                | Standing  | [[Upper#^bee68f\| Zottman Curls]]                                       | **10**   | Push          | N/A   | CM    |
+| Hammer Curls                        | 10         | 20        | 4    | 8    | Yes   | Dumbbell   | High     | N/A               | Upper  | Biceps                | Standing  | [[Upper#^eddf76\| Hammer Curls]]                                        | **10**   | Push          | N/A   | CM    |
 | Single Arm Concentration Curls      | 10         | 20        | 4    | 8    | Yes   | Dumbbell   | Med      | N/A               | Upper  | Biceps                | Seated    | [[Upper#^40500c\| Single Arm Concentration Curls]]                      | **10**   | Push          | N/A   | CM    |
 | Abduction Outer Thigh               | 110        | 120       | 4    | 8    | Yes   | Fixed      | _Highest | N/A               | Bottom | Outer Thigh           | Spread    | Abduction Outer Thigh                                                   | **110**  | Push          | 7     | CM    |
 | Chest Fly                           | 80         | 90        | 4    | 8    | Yes   | Fixed      | _Highest | N/A               | Upper  | Chest                 | Seated    | [[Upper#^238b6e \|Chest Fly]]                                           | **90**   | Push          | 4     | CM    |

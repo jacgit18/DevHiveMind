@@ -24,7 +24,8 @@ Here’s the **prioritized ranking (1-5)** of the best landmine exercises for **
 - **Why?** Combines leg drive (Muay Thai clinch, BJJ stand-ups) with overhead strength (swimming strokes).  
 - ![Landmine Squat To Press - YouTube](https://www.youtube.com/watch?v=0oJsNm_MreY)
    ^82b155
-**5. Landmine Lateral Rotations**  
+   
+**5. Landmine Lateral Rotations**   ^11ad14
 - **Why?** Reinforces rotational endurance for **Muay Thai (combos), BJJ (guard passing), and swimming (stroke rhythm).**  
 - ![Landmine Lateral Rotation w: Backhand: alternative to olympic lifting! - YouTube](https://www.youtube.com/watch?v=XF0VlRwy7P4)
   

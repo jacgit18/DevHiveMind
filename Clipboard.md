@@ -66,6 +66,8 @@ If you fail its just a iteration that you can pivot from in terms of cutting los
 [Automating A Custom VPC Stack Using IaC \| by Donovan Tucker \| Medium](https://medium.com/@donovanjtucker14/automating-a-custom-vpc-stack-using-iac-a220676956c7)
 
 
+[How to Design My First AI Agent \| Towards Data Science](https://towardsdatascience.com/how-to-design-my-first-ai-agent/)
+
 
 [Seeing Cloud Differently: My Experience with the AWS Well-Architected Framework - DEV Community](https://dev.to/glory_ugochukwu_57b6cf663/seeing-cloud-differently-my-experience-with-the-aws-well-architected-framework-2o52)
 

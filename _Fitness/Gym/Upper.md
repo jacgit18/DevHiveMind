@@ -88,6 +88,8 @@ Get to your reps to 15 sec each try to extend for 45 sec MAX
 
 
 
+![How to Perform Zottman Curls \| Bicep / Forearms Exercise Tutorial - YouTube](https://youtu.be/D7bMA4WEKMI?si=HGj50ikErJzjCp47) ^bee68f
+
 - Super Rom Lateral ^767e47
 	- ![Super ROM Lateral Raises - YouTube](https://www.youtube.com/watch?v=IxHCPaByyE0)
 
