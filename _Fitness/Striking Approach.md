@@ -50,6 +50,7 @@ Keep sparing for Muay Thai down to 2 or 3 times a month for safety and quality.
 ### **Leg Kick Principles**
 - **Inside leg kicks (to lead leg):**  Harder to check, easier to catch. Use with timing and angle awareness.
 - **Outside leg kicks (to lead leg):**  Easier to land, but also easier to get checked. Use with setup and exit strategy.
+- Follow [[Leg Kick Strategy]]
 
 #### Best Leg For Checking 
 - **Front leg:**  Best for low kicks, long-range attacks, and retreating counters.
@@ -162,7 +163,7 @@ this is a thought process which is a mental order of operation not a rule more o
 - **Faint Front Kick**: Lift your leg and show the sole of your foot to sell the feint, setting up other strikes.
 - **Faint Spin Kick**: faint the spin kick and doing a stance switch to a front or rear kick.
 - **Faint Body/Head**: punch or kick to the body or head then attack the other target.
-- Try and use the other [[List of Feints]]
+- Try and use the other [[List of Feints]] & think about [[Strike Statistics]]
 
 #### Punch Mechanics
 - **Straight punches (jabs, crosses)** travel the shortest distance to the target (linear path).  
