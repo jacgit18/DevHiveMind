@@ -76,7 +76,6 @@
     "#todo/med/medical",
     "#todo/stocks",
     "#todo/bau/streches",
-    "#todo/high/fin",
     "#todo/med/buisness",
     "#todo/life/research",
     "#todo/workout/bau",
@@ -89,7 +88,6 @@
     "#todo/bau/life",
     "#todo/bau/mma/drill",
     "#todo/low/dev",
-    "#todo/high/dev",
     "#todo/prompts",
     "#todo/bau/dev",
     "#todo/bau/mma",
@@ -97,14 +95,14 @@
     "#todo/bau/clout-chase",
     "#todo/work",
     "#todo/bau/noterefine",
-    "#todo/high/buisness",
     "#todo/high/finishwatching",
     "#todo/bau/career/doc",
     "#todo/questions/topfive",
     "#todo/capitalone",
     "#todo/OKR",
     "#todo/bau/intergrate",
-    "#todo/bau/career"
+    "#todo/bau/career",
+    "#todo/high/dev"
   ],
   "_hiddenTags": []
 }

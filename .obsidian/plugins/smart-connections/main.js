@@ -464,7 +464,7 @@ var SmartEnv = class {
    * If a newer version is loaded into a runtime that already has an older environment,
    * an automatic reload of all existing mains will occur.
    */
-  static version = 2.139139;
+  static version = 2.139211;
   scope_name = "smart_env";
   static global_ref = ROOT_SCOPE;
   global_ref = this.constructor.global_ref;
@@ -3585,6 +3585,7 @@ var DefaultEntitiesVectorAdapter = class extends EntitiesVectorAdapter {
           this.is_queue_halted = false;
           break;
         }
+        this._show_embed_progress_notice(embed_queue.length);
         const batch = embed_queue.slice(i, i + this.collection.embed_model.batch_size);
         await Promise.all(batch.map((item) => item.get_embed_input()));
         try {
@@ -3605,7 +3606,6 @@ Please set the API key in the settings.`);
         });
         this.embedded_total += batch.length;
         this.total_tokens += batch.reduce((acc, item) => acc + (item.tokens || 0), 0);
-        this._show_embed_progress_notice(embed_queue.length);
         if (this.embedded_total - this.last_save_total > 1e3) {
           this.last_save_total = this.embedded_total;
           await this.collection.process_save_queue();
@@ -3624,13 +3624,20 @@ Please set the API key in the settings.`);
       this._is_processing_embed_queue = false;
     }
   }
+  get should_show_embed_progress_notice() {
+    if (Date.now() - (this.last_notice_time ?? 0) > 3e4) {
+      return true;
+    }
+    return this.embedded_total - this.last_notice_embedded_total >= 100;
+  }
   /**
    * Displays the embedding progress notice.
    * @private
    * @returns {void}
    */
   _show_embed_progress_notice(embed_queue_length) {
-    if (this.embedded_total - this.last_notice_embedded_total < 100) return;
+    if (!this.should_show_embed_progress_notice) return;
+    this.last_notice_time = Date.now();
     this.last_notice_embedded_total = this.embedded_total;
     this.notices?.show("embedding_progress", {
       progress: this.embedded_total,
@@ -3810,9 +3817,7 @@ var SmartEntity = class extends CollectionItem {
    */
   init() {
     super.init();
-    if (!this.vec) {
-      this.queue_embed();
-    } else if (this.vec.length !== this.embed_model.model_config.dims) {
+    if (!this.vec || !this.vec.length) {
       this.vec = null;
       this.queue_embed();
     }
@@ -8206,15 +8211,15 @@ var SmartEmbedModel = class extends SmartModel {
   get_embedding_model_options() {
     return Object.entries(this.models).map(([key, model]) => ({ value: key, name: key }));
   }
-  /**
-   * Get embedding model options including 'None' option
-   * @returns {Array<Object>} Array of model options with value and name
-   */
-  get_block_embedding_model_options() {
-    const options = this.get_embedding_model_options();
-    options.unshift({ value: "None", name: "None" });
-    return options;
-  }
+  // /**
+  //  * Get embedding model options including 'None' option
+  //  * @returns {Array<Object>} Array of model options with value and name
+  //  */
+  // get_block_embedding_model_options() {
+  //   const options = this.get_embedding_model_options();
+  //   options.unshift({ value: 'None', name: 'None' });
+  //   return options;
+  // }
 };
 
 // node_modules/obsidian-smart-env/node_modules/smart-model/adapters/_adapter.js
@@ -9350,6 +9355,16 @@ var transformers_models = {
     "description": "Local, 4,096 tokens, 384 dim",
     "adapter": "transformers"
   },
+  // Too slow and persistent crashes
+  // "jinaai/jina-embeddings-v2-base-de": {
+  //   "id": "jinaai/jina-embeddings-v2-base-de",
+  //   "batch_size": 1,
+  //   "dims": 768,
+  //   "max_tokens": 4096,
+  //   "name": "jina-embeddings-v2-base-de",
+  //   "description": "Local, 4,096 tokens, 768 dim, German",
+  //   "adapter": "transformers"
+  // },
   "Xenova/jina-embeddings-v2-base-zh": {
     "id": "Xenova/jina-embeddings-v2-base-zh",
     "batch_size": 1,
@@ -9582,8 +9597,16 @@ var SmartEmbedOllamaAdapter = class extends SmartEmbedModelApiAdapter {
    */
   parse_model_data(model_data) {
     if (!Array.isArray(model_data)) {
+      this.model_data = {};
       console.error("Invalid model data format from Ollama:", model_data);
       return {};
+    }
+    if (model_data.length === 0) {
+      this.model_data = { "no_models_available": {
+        id: "no_models_available",
+        name: "No models currently available"
+      } };
+      return this.model_data;
     }
     return model_data.reduce((acc, model) => {
       const info = model.model_info || {};
@@ -10201,6 +10224,52 @@ function calculate_embed_coverage(collection, total_items) {
   return `<p><strong>Embedding coverage:</strong> ${display}</p>` + (is_unembedded.length ? `<p><strong>Unembedded:</strong> ${is_unembedded.length}</p>` : "");
 }
 
+// node_modules/obsidian-smart-env/utils/open_url_externally.js
+function open_url_externally(plugin, url) {
+  const webviewer = plugin.app.internalPlugins?.plugins?.webviewer?.instance;
+  window.open(url, webviewer ? "_external" : "_blank");
+}
+
+// node_modules/obsidian-smart-env/components/supporter_callout.js
+function build_html6(plugin, opts = {}) {
+  const { plugin_name = plugin.manifest.name } = opts;
+  return `<div class="wrapper">
+    <div id="footer-callout" data-callout-metadata="" data-callout-fold="" data-callout="info" class="callout" style="mix-blend-mode: unset;">
+      <div class="callout-title">
+        <div class="callout-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-info">
+            <circle cx="12" cy="12" r="10"></circle>
+            <path d="M12 16v-4"></path>
+            <path d="M12 8h.01"></path>
+          </svg>
+        </div>
+        <div class="callout-title-inner">
+          <p><strong>Fuel the circle of empowerment</strong></p>
+          <p>Your support shapes the future ${plugin_name}.</p>
+          <a href="https://smartconnections.app/community-supporters?utm_source=obsidian-${plugin_name.replace(/[^a-zA-Z0-9]/g, "-").toLowerCase()}" class="button">Become a Supporter</a>
+        </div>
+      </div>
+    </div>
+  </div>`;
+}
+function render8(plugin, opts = {}) {
+  const html = build_html6.call(this, plugin, opts);
+  const frag = this.create_doc_fragment(html);
+  const callout = frag.querySelector("#footer-callout");
+  post_process7.call(this, plugin, callout, opts);
+  return callout;
+}
+function post_process7(plugin, callout) {
+  const button = callout.querySelector("a");
+  button.addEventListener("click", (e) => {
+    e.preventDefault();
+    e.stopPropagation();
+    open_url_externally(plugin, button.href);
+  });
+}
+
 // node_modules/obsidian-smart-env/smart_env.config.js
 var smart_env_config = {
   collections: {},
@@ -10208,7 +10277,8 @@ var smart_env_config = {
   components: {
     collection_settings: render5,
     env_settings: render6,
-    env_stats: render7
+    env_stats: render7,
+    supporter_callout: render8
   }
 };
 
@@ -10298,12 +10368,24 @@ var smart_env_config2 = {
         }
       }
     },
+    excluded_headings: "",
     file_exclusions: "Untitled",
     folder_exclusions: "",
+    language: "en",
+    new_user: true,
+    smart_chat_threads: {
+      chat_model: {
+        adapter: "ollama",
+        ollama: {}
+      }
+    },
+    smart_notices: {},
     smart_view_filter: {
+      expanded_view: false,
       render_markdown: true,
       show_full_path: false
-    }
+    },
+    version: ""
   }
 };
 merge_env_config(smart_env_config2, smart_env_config);
@@ -10447,6 +10529,10 @@ var NOTICES = {
         env.smart_sources.entities_vector_adapter.resume_embed_queue_processing(100);
       }
     },
+    timeout: 0
+  },
+  embedding_error: {
+    en: "Error embedding: {{error}}",
     timeout: 0
   },
   import_progress: {
@@ -12681,27 +12767,13 @@ var SmartViewObsidianAdapter2 = class extends SmartViewAdapter2 {
 };
 
 // node_modules/smart-collections/components/settings.js
-async function render8(scope, opts = {}) {
+async function render9(scope, opts = {}) {
   const html = Object.entries(scope.settings_config).map(([setting_key, setting_config]) => {
     if (!setting_config.setting) setting_config.setting = setting_key;
     return this.render_setting_html(setting_config);
   }).join("\n");
   const heading_html = `<h2>${scope.collection_key.split("_").map((word) => word.charAt(0).toUpperCase() + word.slice(1)).join(" ")} Settings</h2>`;
   const frag = this.create_doc_fragment(heading_html + html);
-  return await post_process7.call(this, scope, frag, opts);
-}
-async function post_process7(scope, frag, opts = {}) {
-  await this.render_setting_components(frag, { scope });
-  return frag;
-}
-
-// node_modules/smart-model/components/settings.js
-async function render9(scope, opts = {}) {
-  const html = Object.entries(scope.settings_config).map(([setting_key, setting_config]) => {
-    if (!setting_config.setting) setting_config.setting = setting_key;
-    return this.render_setting_html(setting_config);
-  }).join("\n");
-  const frag = this.create_doc_fragment(html);
   return await post_process8.call(this, scope, frag, opts);
 }
 async function post_process8(scope, frag, opts = {}) {
@@ -12709,23 +12781,41 @@ async function post_process8(scope, frag, opts = {}) {
   return frag;
 }
 
+// node_modules/smart-model/components/settings.js
+async function render10(scope, opts = {}) {
+  const html = Object.entries(scope.settings_config).map(([setting_key, setting_config]) => {
+    if (!setting_config.setting) setting_config.setting = setting_key;
+    return this.render_setting_html(setting_config);
+  }).join("\n");
+  const frag = this.create_doc_fragment(html);
+  return await post_process9.call(this, scope, frag, opts);
+}
+async function post_process9(scope, frag, opts = {}) {
+  await this.render_setting_components(frag, { scope });
+  return frag;
+}
+
 // src/components/connections.js
-async function build_html6(view, opts = {}) {
-  const top_bar_buttons = [
+function build_top_bar_buttons(view) {
+  const expanded_view = view.env.settings.smart_view_filter.expanded_view ?? view.env.settings.expanded_view;
+  const buttons = [
     { title: "Refresh", icon: "refresh-cw" },
-    { title: "Fold all toggle", icon: view.env.settings.expanded_view ? "fold-vertical" : "unfold-vertical" },
+    { title: "Fold all toggle", icon: expanded_view ? "fold-vertical" : "unfold-vertical" },
     { title: "Lookup", icon: "search" },
     { title: "Settings", icon: "settings" },
     { title: "Help", icon: "help-circle" }
-  ].map((btn) => `
+  ];
+  return buttons.map((btn) => `
     <button
       title="${btn.title}"
       aria-label="${btn.title} button"
-      ${btn.style ? `style="${btn.style}"` : ""}
     >
       ${this.get_icon_html(btn.icon)}
     </button>
   `).join("");
+}
+async function build_html7(view, opts = {}) {
+  const top_bar_buttons = build_top_bar_buttons.call(this, view);
   const html = `<div class="sc-connections-view">
     <div class="sc-top-bar">
       <p class="sc-context" data-key="">
@@ -12744,17 +12834,18 @@ async function build_html6(view, opts = {}) {
   </div>`;
   return html;
 }
-async function render10(view, opts = {}) {
-  let html = await build_html6.call(this, view, opts);
+async function render11(view, opts = {}) {
+  const html = await build_html7.call(this, view, opts);
   const frag = this.create_doc_fragment(html);
-  return await post_process9.call(this, view, frag, opts);
+  return await post_process10.call(this, view, frag, opts);
 }
-async function post_process9(view, frag, opts = {}) {
+async function post_process10(view, frag, opts = {}) {
   const container = frag.querySelector(".sc-list");
   const toggle_button = frag.querySelector("[title='Fold all toggle']");
   toggle_button.addEventListener("click", () => {
-    const expanded = view.env.settings.expanded_view;
-    view.env.settings.expanded_view = !expanded;
+    const expanded = view.env.settings.smart_view_filter.expanded_view ?? view.env.settings.expanded_view;
+    if (!view.env.settings.smart_view_filter) view.env.settings.smart_view_filter = {};
+    view.env.settings.smart_view_filter.expanded_view = !expanded;
     container.querySelectorAll(".sc-result").forEach(async (elm) => {
       if (expanded) {
         elm.classList.add("sc-collapsed");
@@ -12762,8 +12853,9 @@ async function post_process9(view, frag, opts = {}) {
         elm.classList.remove("sc-collapsed");
       }
     });
-    this.safe_inner_html(toggle_button, this.get_icon_html(view.env.settings.expanded_view ? "fold-vertical" : "unfold-vertical"));
-    toggle_button.setAttribute("aria-label", view.env.settings.expanded_view ? "Fold all" : "Unfold all");
+    const updated_expanded_view = view.env.settings.smart_view_filter.expanded_view;
+    this.safe_inner_html(toggle_button, this.get_icon_html(updated_expanded_view ? "fold-vertical" : "unfold-vertical"));
+    toggle_button.setAttribute("aria-label", updated_expanded_view ? "Fold all" : "Unfold all");
   });
   const refresh_button = frag.querySelector("[title='Refresh']");
   refresh_button.addEventListener("click", () => {
@@ -12775,7 +12867,7 @@ async function post_process9(view, frag, opts = {}) {
   });
   const help_button = frag.querySelector("[title='Help']");
   help_button?.addEventListener("click", () => {
-    window.open("https://docs.smartconnections.app/connections-pane", "_blank");
+    open_url_externally("https://smartconnections.app/story/smart-connections-getting-started/?utm_source=connections-view-help");
   });
   const settings_button = frag.querySelector("[title='Settings']");
   settings_button?.addEventListener("click", () => {
@@ -12788,10 +12880,11 @@ async function post_process9(view, frag, opts = {}) {
 }
 
 // src/components/lookup.js
-async function build_html7(collection, opts = {}) {
+async function build_html8(collection, opts = {}) {
+  const expanded_view = collection.settings.smart_view_filter.expanded_view ?? collection.settings.expanded_view;
   return `<div id="sc-lookup-view">
     <div class="sc-top-bar">
-      <button class="sc-fold-toggle">${this.get_icon_html(collection.settings.expanded_view ? "fold-vertical" : "unfold-vertical")}</button>
+      <button class="sc-fold-toggle">${this.get_icon_html(expanded_view ? "fold-vertical" : "unfold-vertical")}</button>
     </div>
     <div class="sc-container">
       <h2>Smart Lookup</h2>
@@ -12814,12 +12907,12 @@ async function build_html7(collection, opts = {}) {
     </div>
   </div>`;
 }
-async function render11(collection, opts = {}) {
-  let html = await build_html7.call(this, collection, opts);
+async function render12(collection, opts = {}) {
+  let html = await build_html8.call(this, collection, opts);
   const frag = this.create_doc_fragment(html);
-  return await post_process10.call(this, collection, frag, opts);
+  return await post_process11.call(this, collection, frag, opts);
 }
-async function post_process10(collection, frag, opts = {}) {
+async function post_process11(collection, frag, opts = {}) {
   const query_input = frag.querySelector("#query");
   const results_container = frag.querySelector(".sc-list");
   const render_lookup = async (query, results_container2) => {
@@ -12853,7 +12946,7 @@ async function post_process10(collection, frag, opts = {}) {
   const fold_toggle = frag.querySelector(".sc-fold-toggle");
   fold_toggle.addEventListener("click", async (event) => {
     const container = event.target.closest("#sc-lookup-view");
-    const expanded = collection.settings.expanded_view;
+    const expanded = collection.settings.smart_view_filter.expanded_view ?? collection.settings.expanded_view;
     const results = container.querySelectorAll(".sc-result");
     for (const elm of results) {
       if (expanded) {
@@ -12862,9 +12955,11 @@ async function post_process10(collection, frag, opts = {}) {
         elm.click();
       }
     }
-    collection.settings.expanded_view = !expanded;
-    this.safe_inner_html(fold_toggle, this.get_icon_html(collection.settings.expanded_view ? "fold-vertical" : "unfold-vertical"));
-    fold_toggle.setAttribute("aria-label", collection.settings.expanded_view ? "Fold all" : "Unfold all");
+    if (!collection.settings.smart_view_filter) collection.settings.smart_view_filter = {};
+    collection.settings.smart_view_filter.expanded_view = !expanded;
+    const updated_expanded_view = collection.settings.smart_view_filter.expanded_view;
+    this.safe_inner_html(fold_toggle, this.get_icon_html(updated_expanded_view ? "fold-vertical" : "unfold-vertical"));
+    fold_toggle.setAttribute("aria-label", updated_expanded_view ? "Fold all" : "Unfold all");
   });
   return frag;
 }
@@ -12899,10 +12994,9 @@ function register_block_hover_popover(parent, target, env, block_key, plugin) {
 }
 
 // src/components/connections_result.js
-async function build_html8(result, opts = {}) {
+async function build_html9(result, opts = {}) {
   const item = result.item;
   const score = result.score;
-  const expanded_view = item.env.settings.expanded_view;
   return `<div class="temp-container">
     <div
       class="sc-result sc-collapsed"
@@ -12924,12 +13018,12 @@ async function build_html8(result, opts = {}) {
     </div>
   </div>`;
 }
-async function render12(result_scope, opts = {}) {
-  let html = await build_html8.call(this, result_scope, opts);
+async function render13(result_scope, opts = {}) {
+  let html = await build_html9.call(this, result_scope, opts);
   const frag = this.create_doc_fragment(html);
-  return await post_process11.call(this, result_scope, frag, opts);
+  return await post_process12.call(this, result_scope, frag, opts);
 }
-async function post_process11(result_scope, frag, opts = {}) {
+async function post_process12(result_scope, frag, opts = {}) {
   const { item, score } = result_scope;
   const env = item.env;
   const plugin = env.smart_connections_plugin;
@@ -13013,7 +13107,8 @@ ${await entity.read()}`;
     attributeFilter: ["class"]
     // Only observe class changes
   });
-  if (!env.settings.expanded_view) return result_elm;
+  const expanded_view = env.settings.smart_view_filter.expanded_view ?? env.settings.expanded_view;
+  if (!expanded_view) return result_elm;
   toggle_result(result_elm);
   return result_elm;
 }
@@ -13031,11 +13126,11 @@ function process_for_rendering2(content) {
 }
 
 // src/components/connections_results.js
-async function build_html9(results, opts = {}) {
+async function build_html10(results, opts = {}) {
   return ``;
 }
-async function render13(results, opts = {}) {
-  const html = await build_html9.call(this, results, opts);
+async function render14(results, opts = {}) {
+  const html = await build_html10.call(this, results, opts);
   const frag = this.create_doc_fragment(html);
   const result_frags = await Promise.all(results.map((result) => {
     return result.item.env.render_component("connections_result", result, { ...opts });
@@ -13045,7 +13140,7 @@ async function render13(results, opts = {}) {
 }
 
 // src/views/smart_chat.js
-function build_html10(obsidian_view, opts = {}) {
+function build_html11(obsidian_view, opts = {}) {
   const top_bar_buttons = [
     // { title: 'Open Conversation Note', icon: 'external-link' },
     { title: "New Chat", icon: "plus" },
@@ -13079,12 +13174,12 @@ function build_html10(obsidian_view, opts = {}) {
     ${obsidian_view.attribution || ""}
   `;
 }
-async function render14(obsidian_view, opts = {}) {
-  const html = build_html10.call(this, obsidian_view, opts);
+async function render15(obsidian_view, opts = {}) {
+  const html = build_html11.call(this, obsidian_view, opts);
   const frag = this.create_doc_fragment(html);
-  return await post_process12.call(this, obsidian_view, frag, opts);
+  return await post_process13.call(this, obsidian_view, frag, opts);
 }
-async function post_process12(obsidian_view, frag, opts) {
+async function post_process13(obsidian_view, frag, opts) {
   const chat_box = frag.querySelector(".sc-thread");
   const settings_button = frag.querySelector('button[title="Chat Settings"]');
   const overlay_container = frag.querySelector(".smart-chat-overlay");
@@ -17722,6 +17817,7 @@ var DefaultEntitiesVectorAdapter2 = class extends EntitiesVectorAdapter2 {
           this.is_queue_halted = false;
           break;
         }
+        this._show_embed_progress_notice(embed_queue.length);
         const batch = embed_queue.slice(i, i + this.collection.embed_model.batch_size);
         await Promise.all(batch.map((item) => item.get_embed_input()));
         try {
@@ -17742,7 +17838,6 @@ Please set the API key in the settings.`);
         });
         this.embedded_total += batch.length;
         this.total_tokens += batch.reduce((acc, item) => acc + (item.tokens || 0), 0);
-        this._show_embed_progress_notice(embed_queue.length);
         if (this.embedded_total - this.last_save_total > 1e3) {
           this.last_save_total = this.embedded_total;
           await this.collection.process_save_queue();
@@ -17761,13 +17856,20 @@ Please set the API key in the settings.`);
       this._is_processing_embed_queue = false;
     }
   }
+  get should_show_embed_progress_notice() {
+    if (Date.now() - (this.last_notice_time ?? 0) > 3e4) {
+      return true;
+    }
+    return this.embedded_total - this.last_notice_embedded_total >= 100;
+  }
   /**
    * Displays the embedding progress notice.
    * @private
    * @returns {void}
    */
   _show_embed_progress_notice(embed_queue_length) {
-    if (this.embedded_total - this.last_notice_embedded_total < 100) return;
+    if (!this.should_show_embed_progress_notice) return;
+    this.last_notice_time = Date.now();
     this.last_notice_embedded_total = this.embedded_total;
     this.notices?.show("embedding_progress", {
       progress: this.embedded_total,
@@ -17947,9 +18049,7 @@ var SmartEntity2 = class extends CollectionItem2 {
    */
   init() {
     super.init();
-    if (!this.vec) {
-      this.queue_embed();
-    } else if (this.vec.length !== this.embed_model.model_config.dims) {
+    if (!this.vec || !this.vec.length) {
       this.vec = null;
       this.queue_embed();
     }
@@ -18548,7 +18648,7 @@ var connections_filter_config2 = {
 };
 
 // node_modules/smart-sources/components/source.js
-async function render15(entity, opts = {}) {
+async function render16(entity, opts = {}) {
   let markdown;
   if (should_render_embed3(entity)) markdown = `${entity.embed_link}
 
@@ -18557,14 +18657,14 @@ ${await entity.read()}`;
   let frag;
   if (source.env.settings.smart_view_filter.render_markdown) frag = await this.render_markdown(markdown, source);
   else frag = this.create_doc_fragment(`<span>${markdown}</span>`);
-  return await post_process13.call(this, source, frag, opts);
+  return await post_process14.call(this, source, frag, opts);
 }
 function process_for_rendering3(content) {
   if (content.includes("```dataview")) content = content.replace(/```dataview/g, "```\\dataview");
   if (content.includes("![[")) content = content.replace(/\!\[\[/g, "! [[");
   return content;
 }
-async function post_process13(scope, frag, opts = {}) {
+async function post_process14(scope, frag, opts = {}) {
   return frag;
 }
 function should_render_embed3(entity) {
@@ -19072,7 +19172,7 @@ ${content}`.substring(0, max_tokens * 4);
    * @returns {Function} The render function for the source component.
    */
   get component() {
-    return render15;
+    return render16;
   }
   // Currently unused, but useful for later
   /**
@@ -19991,7 +20091,7 @@ var SmartThreads = class extends SmartSources2 {
 };
 
 // smart-chat-v0/components/thread.js
-function build_html11(thread, opts = {}) {
+function build_html12(thread, opts = {}) {
   return `
     <div class="sc-thread" data-thread-key="${thread.key}">
       <div class="sc-message-container">
@@ -20026,14 +20126,14 @@ function build_html11(thread, opts = {}) {
     </div>
   `;
 }
-async function render17(thread, opts = {}) {
-  const html = build_html11.call(this, thread, {
+async function render18(thread, opts = {}) {
+  const html = build_html12.call(this, thread, {
     show_welcome: opts.show_welcome !== false
   });
   const frag = this.create_doc_fragment(html);
-  return await post_process14.call(this, thread, frag, opts);
+  return await post_process15.call(this, thread, frag, opts);
 }
-async function post_process14(thread, frag, opts) {
+async function post_process15(thread, frag, opts) {
   const container = frag.querySelector(".sc-message-container");
   if (thread.messages.length) {
     thread.messages.forEach((msg) => {
@@ -20170,7 +20270,7 @@ function extract_internal_embedded_links(user_input) {
 }
 
 // smart-chat-v0/components/error.js
-function build_html12(error, opts = {}) {
+function build_html13(error, opts = {}) {
   const error_message = error?.error?.message || error?.message || "An unknown error occurred";
   const error_code = error?.error?.code || error?.code;
   const error_type = error?.error?.type || error?.type || "Error";
@@ -20203,12 +20303,12 @@ function build_html12(error, opts = {}) {
     </div>
   `;
 }
-async function render18(error, opts = {}) {
-  const html = build_html12.call(this, error, opts);
+async function render19(error, opts = {}) {
+  const html = build_html13.call(this, error, opts);
   const frag = this.create_doc_fragment(html);
-  return await post_process15.call(this, error, frag, opts);
+  return await post_process16.call(this, error, frag, opts);
 }
-async function post_process15(error, frag, opts) {
+async function post_process16(error, frag, opts) {
   const close_button = frag.querySelector(".sc-error-close");
   if (close_button) {
     close_button.addEventListener("click", () => {
@@ -20239,7 +20339,7 @@ async function post_process15(error, frag, opts) {
         await opts.retry();
         container.remove();
       } catch (retry_error) {
-        const new_error_frag = await render18.call(this, retry_error, opts);
+        const new_error_frag = await render19.call(this, retry_error, opts);
         container.replaceWith(new_error_frag);
       }
     });
@@ -20523,7 +20623,7 @@ var SmartThread = class extends SmartSource2 {
    * @returns {Promise<DocumentFragment>}
    */
   async render_error(response, container = this.messages_container) {
-    const frag = await render18.call(this.smart_view, response);
+    const frag = await render19.call(this.smart_view, response);
     if (container) container.appendChild(frag);
     return frag;
   }
@@ -21381,7 +21481,7 @@ var SmartMessages = class extends SmartBlocks2 {
 };
 
 // smart-chat-v0/components/message.js
-function build_html13(message, opts = {}) {
+function build_html14(message, opts = {}) {
   const content = Array.isArray(message.content) ? message.content.map((part) => {
     if (part.type === "image_url") {
       return " ![[" + part.input.image_path + "]] ";
@@ -21419,12 +21519,12 @@ function build_html13(message, opts = {}) {
   }
   return html;
 }
-async function render19(message, opts = {}) {
-  const html = build_html13.call(this, message, opts);
+async function render20(message, opts = {}) {
+  const html = build_html14.call(this, message, opts);
   const frag = this.create_doc_fragment(html);
-  return await post_process16.call(this, message, frag, opts);
+  return await post_process17.call(this, message, frag, opts);
 }
-async function post_process16(message, frag, opts) {
+async function post_process17(message, frag, opts) {
   const copy_button = frag.querySelector(".sc-msg-button:not(.regenerate)");
   if (copy_button) {
     copy_button.addEventListener("click", () => {
@@ -21507,7 +21607,7 @@ async function post_process16(message, frag, opts) {
 }
 
 // smart-chat-v0/components/context.js
-function build_html14(message, opts = {}) {
+function build_html15(message, opts = {}) {
   const lookup_results = message.tool_call_output || [];
   if (lookup_results.length === 0) {
     return "";
@@ -21536,13 +21636,13 @@ function build_html14(message, opts = {}) {
     </div>
   `;
 }
-async function render20(message, opts = {}) {
-  const html = build_html14.call(this, message, opts);
+async function render21(message, opts = {}) {
+  const html = build_html15.call(this, message, opts);
   if (!html) return document.createDocumentFragment();
   const frag = this.create_doc_fragment(html);
-  return await post_process17.call(this, message, frag, opts);
+  return await post_process18.call(this, message, frag, opts);
 }
-async function post_process17(message, frag, opts) {
+async function post_process18(message, frag, opts) {
   const header = frag.querySelector(".sc-context-header");
   const list = frag.querySelector(".sc-context-list");
   const toggle_icon = frag.querySelector(".sc-context-toggle-icon");
@@ -21589,7 +21689,7 @@ async function post_process17(message, frag, opts) {
 }
 
 // smart-chat-v0/components/tool_calls.js
-function build_html15(message, opts = {}) {
+function build_html16(message, opts = {}) {
   const tool_calls = message.tool_calls || [];
   if (tool_calls.length === 0) {
     return "";
@@ -21610,13 +21710,13 @@ function build_html15(message, opts = {}) {
     </div>
   `;
 }
-async function render21(message, opts = {}) {
-  const html = build_html15.call(this, message, opts);
+async function render22(message, opts = {}) {
+  const html = build_html16.call(this, message, opts);
   if (!html) return document.createDocumentFragment();
   const frag = this.create_doc_fragment(html);
-  return await post_process18.call(this, message, frag, opts);
+  return await post_process19.call(this, message, frag, opts);
 }
-async function post_process18(message, frag, opts) {
+async function post_process19(message, frag, opts) {
   const tool_call_headers = frag.querySelectorAll(".sc-tool-call-header");
   tool_call_headers.forEach((header) => {
     const content = header.nextElementSibling;
@@ -21642,7 +21742,7 @@ async function post_process18(message, frag, opts) {
 }
 
 // smart-chat-v0/components/system_message.js
-function build_html16(message, opts = {}) {
+function build_html17(message, opts = {}) {
   return `
     <div class="sc-system-message-container" id="${message.data.id}">
       <div class="sc-system-message-header" tabindex="0" role="button" aria-expanded="false" aria-controls="${message.data.id}-content">
@@ -21660,12 +21760,12 @@ function build_html16(message, opts = {}) {
     </div>
   `;
 }
-async function render22(message, opts = {}) {
-  const html = build_html16.call(this, message, opts);
+async function render23(message, opts = {}) {
+  const html = build_html17.call(this, message, opts);
   const frag = this.create_doc_fragment(html);
-  return await post_process19.call(this, message, frag, opts);
+  return await post_process20.call(this, message, frag, opts);
 }
-async function post_process19(message, frag, opts) {
+async function post_process20(message, frag, opts) {
   const header = frag.querySelector(".sc-system-message-header");
   const content = frag.querySelector(".sc-system-message-content");
   const toggle_icon = frag.querySelector(".sc-system-message-toggle-icon");
@@ -21786,13 +21886,13 @@ var SmartMessage = class extends SmartBlock2 {
   async render(container = this.thread.messages_container) {
     let frag;
     if (this.role === "system") {
-      frag = await render22.call(this.smart_view, this);
+      frag = await render23.call(this.smart_view, this);
     } else if (this.tool_calls?.length > 0) {
-      frag = await render21.call(this.smart_view, this);
+      frag = await render22.call(this.smart_view, this);
     } else if (this.role === "tool") {
       frag = await this.context_template.call(this.smart_view, this);
     } else {
-      frag = await render19.call(this.smart_view, this);
+      frag = await render20.call(this.smart_view, this);
     }
     if (container) {
       this.elm = container.querySelector(`#${this.data.id}`);
@@ -21806,7 +21906,7 @@ var SmartMessage = class extends SmartBlock2 {
     return frag;
   }
   get context_template() {
-    return this.env.opts.components.lookup_context || render20;
+    return this.env.opts.components.lookup_context || render21;
   }
   /**
    * Converts the message into a request payload that can be sent to the AI model.
@@ -22403,7 +22503,7 @@ css_sheet2.replaceSync(`.source-inspector {
 var source_inspector_default = css_sheet2;
 
 // src/components/source_inspector.js
-function build_html17(source2, opts = {}) {
+function build_html18(source2, opts = {}) {
   return `
     <div class="smart-chat-message source-inspector">
       <h2>Blocks</h2>
@@ -22411,14 +22511,14 @@ function build_html17(source2, opts = {}) {
     </div>
   `;
 }
-async function render23(source2, opts = {}) {
-  const html = build_html17(source2, opts);
+async function render24(source2, opts = {}) {
+  const html = build_html18(source2, opts);
   const frag = this.create_doc_fragment(html);
   this.apply_style_sheet(source_inspector_default);
-  await post_process20.call(this, source2, frag, opts);
+  await post_process21.call(this, source2, frag, opts);
   return frag;
 }
-async function post_process20(source2, frag, opts = {}) {
+async function post_process21(source2, frag, opts = {}) {
   const container = frag.querySelector(".source-inspector .source-inspector-blocks-container");
   if (!container) return frag;
   if (!source2 || !source2.blocks || source2.blocks.length === 0) {
@@ -22516,24 +22616,24 @@ var smart_env_config3 = {
     }
   },
   components: {
-    lookup: render11,
-    connections_results: render13,
-    smart_chat: render14,
-    connections: render10,
-    source_inspector: render23,
+    lookup: render12,
+    connections_results: render14,
+    smart_chat: render15,
+    connections: render11,
+    source_inspector: render24,
     smart_sources: {
       // settings: source_settings_component,
-      connections: render10
+      connections: render11
     },
     smart_blocks: {
-      connections: render10
+      connections: render11
     },
     smart_threads: {
-      settings: render8,
-      thread: render17
+      settings: render9,
+      thread: render18
     },
     smart_chat_model: {
-      settings: render9
+      settings: render10
     }
   },
   default_settings: {
@@ -22562,23 +22662,50 @@ var smart_env_config3 = {
   }
 };
 
+// src/modals/getting_started.js
+var import_obsidian20 = require("obsidian");
+var GettingStartedModal = class extends import_obsidian20.Modal {
+  constructor(plugin) {
+    super(plugin.app);
+    this.plugin = plugin;
+  }
+  onOpen() {
+    this.titleEl.setText("Getting Started With Smart Connections");
+    this.modalEl.addClass("sc-getting-started-modal");
+    const container = this.contentEl.createEl("div", { cls: "sc-getting-started-container" });
+    const webview = container.createEl("webview", {
+      attr: {
+        src: "https://smartconnections.app/story/smart-connections-getting-started/?utm_source=obsidian-modal",
+        allowpopups: ""
+      }
+    });
+    webview.style.width = "100%";
+    webview.style.height = "100%";
+  }
+  onClose() {
+    this.contentEl.empty();
+  }
+};
+
 // src/components/main_settings.js
-async function build_html18(scope_plugin) {
+async function build_html19(scope_plugin) {
   const html = `
     <div id="smart-connections-settings">
       ${render_header_callout()}
+      <div id="smart-connections-getting-started-container">
+        <button class="sc-getting-started-button">Getting started guide</button>
+      </div>
       <div data-connections-settings-container>
         <h2>Connections view</h2>
       </div>
       <div data-smart-settings="env"></div>
       <div data-smart-notices></div>
       ${render_sign_in_or_open_smart_plugins(scope_plugin)}
-      ${render_footer_callout()}
     </div>
   `;
   return html;
 }
-async function render24(scope_plugin) {
+async function render25(scope_plugin) {
   if (!scope_plugin.env) {
     const load_frag = this.create_doc_fragment(`
       <div><button>Load Smart Environment</button></div>
@@ -22589,11 +22716,11 @@ async function render24(scope_plugin) {
     });
     return load_frag;
   }
-  const html = await build_html18.call(this, scope_plugin);
+  const html = await build_html19.call(this, scope_plugin);
   const frag = this.create_doc_fragment(html);
-  return await post_process21.call(this, scope_plugin, frag);
+  return await post_process22.call(this, scope_plugin, frag);
 }
-async function post_process21(scope_plugin, frag) {
+async function post_process22(scope_plugin, frag) {
   const muted_notices_frag = await scope_plugin.env.render_component("muted_notices", scope_plugin.env);
   frag.querySelector("[data-smart-notices]").appendChild(muted_notices_frag);
   await this.render_setting_components(frag, { scope: scope_plugin });
@@ -22601,12 +22728,6 @@ async function post_process21(scope_plugin, frag) {
   if (env_settings_container) {
     const env_settings_frag = await scope_plugin.env.render_component("env_settings", scope_plugin.env);
     env_settings_container.appendChild(env_settings_frag);
-  }
-  const supportersButton = frag.querySelector('[data-setting="smart_community"] button');
-  if (supportersButton) {
-    supportersButton.addEventListener("click", () => {
-      scope_plugin.open_supporters_modal();
-    });
   }
   const connections_settings = frag.querySelector("[data-connections-settings-container]");
   if (connections_settings) {
@@ -22626,36 +22747,15 @@ async function post_process21(scope_plugin, frag) {
       scope_plugin.open_url_externally(header_btn.href);
     });
   }
-  const footer_btn = frag.querySelector("#footer-callout a");
-  if (footer_btn) {
-    footer_btn.addEventListener("click", (e) => {
-      e.preventDefault();
-      scope_plugin.open_url_externally(footer_btn.href);
+  const supporter_callout = await scope_plugin.env.render_component("supporter_callout", scope_plugin);
+  frag.appendChild(supporter_callout);
+  const getting_started_button = frag.querySelector(".sc-getting-started-button");
+  if (getting_started_button) {
+    getting_started_button.addEventListener("click", (e) => {
+      new GettingStartedModal(scope_plugin).open();
     });
   }
   return frag;
-}
-function render_footer_callout() {
-  return `
-    <div id="footer-callout" data-callout-metadata="" data-callout-fold="" data-callout="info" class="callout" style="mix-blend-mode: unset;">
-      <div class="callout-title">
-        <div class="callout-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-            stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-info">
-            <circle cx="12" cy="12" r="10"></circle>
-            <path d="M12 16v-4"></path>
-            <path d="M12 8h.01"></path>
-          </svg>
-        </div>
-        <div class="callout-title-inner">
-          <p><strong>Fuel the circle of empowerment</strong></p>
-          <p>Your support shapes the future.</p>
-          <a href="https://smartconnections.app/community-supporters" class="button">Become a Supporter</a>
-        </div>
-      </div>
-    </div>
-  `;
 }
 function render_header_callout() {
   return `
@@ -22694,7 +22794,7 @@ function render_sign_in_or_open_smart_plugins(scope_plugin) {
 }
 
 // src/components/muted_notices.js
-async function build_html19(env, opts = {}) {
+async function build_html20(env, opts = {}) {
   let html = `<div class="muted-notice-container" style="display: flex; flex-direction: column; gap: 10px;">
     <h2>Muted notices</h2>
   `;
@@ -22711,13 +22811,13 @@ async function build_html19(env, opts = {}) {
   html += `</div>`;
   return html;
 }
-async function render25(env, opts = {}) {
-  let html = await build_html19.call(this, env, opts);
+async function render26(env, opts = {}) {
+  let html = await build_html20.call(this, env, opts);
   const frag = this.create_doc_fragment(html);
-  post_process22.call(this, env, frag, opts);
+  post_process23.call(this, env, frag, opts);
   return frag;
 }
-async function post_process22(env, frag, opts = {}) {
+async function post_process23(env, frag, opts = {}) {
   const unmute_buttons = frag.querySelectorAll(".unmute-button");
   unmute_buttons.forEach((button) => {
     button.addEventListener("click", () => {
@@ -22734,53 +22834,27 @@ var smart_env_config4 = {
   collections: {},
   item_types: {},
   components: {
-    connections: render10,
-    connections_result: render12,
-    connections_results: render13,
-    lookup: render11,
-    main_settings: render24,
-    muted_notices: render25,
-    source_inspector: render23
+    connections: render11,
+    connections_result: render13,
+    connections_results: render14,
+    lookup: render12,
+    main_settings: render25,
+    muted_notices: render26,
+    source_inspector: render24
   }
 };
 
-// src/default_settings.js
-function default_settings() {
-  return {
-    settings: {
-      new_user: true,
-      // v2.2
-      legacy_transformers: false,
-      actions: {
-        "lookup": true
-      },
-      smart_notices: {},
-      // v2.1
-      system_prompts_folder: "smart prompts",
-      chat_model_platform_key: "open_router",
-      open_router: {},
-      // V1
-      api_key: "",
-      excluded_headings: "",
-      folder_exclusions: "",
-      show_full_path: false,
-      expanded_view: true,
-      language: "en",
-      version: ""
-    }
-  };
-}
-
 // src/views/smart_view.obsidian.js
-var import_obsidian21 = require("obsidian");
+var import_obsidian22 = require("obsidian");
 
 // node_modules/obsidian-smart-env/utils/wait_for_env_to_load.js
-var import_obsidian20 = require("obsidian");
-async function wait_for_env_to_load(scope) {
+var import_obsidian21 = require("obsidian");
+async function wait_for_env_to_load(scope, opts = {}) {
+  const { wait_for_states = ["loaded"] } = opts;
   const container = scope.container || scope.containerEl;
-  if (scope.env?.state !== "loaded") {
+  if (!wait_for_states.includes(scope.env?.state)) {
     let clicked_load_env = false;
-    while (scope.env.state === "init" && import_obsidian20.Platform.isMobile && !clicked_load_env) {
+    while (scope.env.state === "init" && import_obsidian21.Platform.isMobile && !clicked_load_env) {
       if (container) {
         container.empty();
         scope.env.smart_view.safe_inner_html(container, "<button>Load Smart Environment</button>");
@@ -22793,7 +22867,7 @@ async function wait_for_env_to_load(scope) {
       }
       await new Promise((r) => setTimeout(r, 2e3));
     }
-    while (scope.env.state !== "loaded") {
+    while (!wait_for_states.includes(scope.env.state)) {
       if (container) {
         const loading_msg = scope.env?.smart_connections_plugin?.obsidian_is_syncing ? "Waiting for Obsidian Sync to finish..." : "Loading Obsidian Smart Environment...";
         container.empty();
@@ -22807,7 +22881,7 @@ async function wait_for_env_to_load(scope) {
 }
 
 // src/views/smart_view.obsidian.js
-var SmartObsidianView = class extends import_obsidian21.ItemView {
+var SmartObsidianView = class extends import_obsidian22.ItemView {
   /**
    * Creates an instance of SmartObsidianView.
    * @param {any} leaf
@@ -22943,7 +23017,7 @@ var SmartObsidianView = class extends import_obsidian21.ItemView {
 };
 
 // src/views/sc_connections.obsidian.js
-var import_obsidian22 = require("obsidian");
+var import_obsidian23 = require("obsidian");
 var ScConnectionsView = class extends SmartObsidianView {
   static get view_type() {
     return "smart-connections-view";
@@ -22962,6 +23036,14 @@ var ScConnectionsView = class extends SmartObsidianView {
     }));
     this.plugin.registerEvent(this.app.workspace.on("active-leaf-change", (leaf) => {
       if (leaf.view instanceof this.constructor) {
+        if (!this.container) return console.log("Connections view event: active-leaf-change: no container, skipping");
+        if (typeof this.container.checkVisibility === "function" && this.container.checkVisibility() === false) {
+          return console.log("Connections view event: active-leaf-change: not visible, skipping");
+        }
+        if (this.plugin.app.workspace.activeLeaf.view.constructor.view_type === this.constructor.view_type) {
+          this.render_view();
+          return;
+        }
         const leaf_path = leaf.view.file?.path;
         if (leaf_path && leaf_path !== this.last_leaf_path) {
           this.last_leaf_path = leaf_path;
@@ -23000,7 +23082,7 @@ var ScConnectionsView = class extends SmartObsidianView {
     }
   };
   async render_view(entity = null, container = this.container) {
-    if (container.checkVisibility() === false) return console.log("View inactive, skipping render nearest");
+    if (container.checkVisibility() === false) return console.log("render_view: View inactive, skipping render nearest");
     let current_file;
     if (!entity) {
       current_file = this.app.workspace.getActiveFile();
@@ -23090,7 +23172,7 @@ function post_process_note_inspect_opener(view, frag, opts = {}) {
   });
   return frag;
 }
-var SmartNoteInspectModal = class extends import_obsidian22.Modal {
+var SmartNoteInspectModal = class extends import_obsidian23.Modal {
   constructor(smart_connections_plugin, entity) {
     super(smart_connections_plugin.app);
     this.smart_connections_plugin = smart_connections_plugin;
@@ -23108,6 +23190,10 @@ var SmartNoteInspectModal = class extends import_obsidian22.Modal {
     const frag = await this.env.render_component("source_inspector", this.entity);
     this.contentEl.appendChild(frag);
   }
+};
+
+// src/views/connections_view.js
+var ConnectionsView = class extends ScConnectionsView {
 };
 
 // src/views/sc_lookup.obsidian.js
@@ -23136,7 +23222,7 @@ var ScLookupView = class extends SmartObsidianView {
 };
 
 // src/views/smart_chat.obsidian.js
-var import_obsidian23 = require("obsidian");
+var import_obsidian24 = require("obsidian");
 var SmartChatsView = class extends SmartObsidianView {
   static get view_type() {
     return "smart-chat-v0";
@@ -23295,7 +23381,7 @@ var SmartChatsView = class extends SmartObsidianView {
     if (this.textarea.value.endsWith("[[")) this.textarea.value = this.textarea.value.slice(0, -2);
   }
 };
-var ScChatHistoryModal = class extends import_obsidian23.FuzzySuggestModal {
+var ScChatHistoryModal = class extends import_obsidian24.FuzzySuggestModal {
   constructor(app, view) {
     super(app);
     this.app = app;
@@ -23315,7 +23401,7 @@ var ScChatHistoryModal = class extends import_obsidian23.FuzzySuggestModal {
     this.view.open_thread(thread_name);
   }
 };
-var ScOmniModal = class extends import_obsidian23.FuzzySuggestModal {
+var ScOmniModal = class extends import_obsidian24.FuzzySuggestModal {
   constructor(app, view) {
     super(app);
     this.app = app;
@@ -23347,7 +23433,7 @@ var ScOmniModal = class extends import_obsidian23.FuzzySuggestModal {
     this.view.open_modal(item);
   }
 };
-var ContextSelectModal = class extends import_obsidian23.FuzzySuggestModal {
+var ContextSelectModal = class extends import_obsidian24.FuzzySuggestModal {
   constructor(app, view) {
     super(app);
     this.app = app;
@@ -23365,7 +23451,7 @@ var ContextSelectModal = class extends import_obsidian23.FuzzySuggestModal {
 var ScFileSelectModal = class extends ContextSelectModal {
   constructor(app, view) {
     super(app, view);
-    const mod_key = import_obsidian23.Platform.isMacOS ? `\u2318` : `ctrl`;
+    const mod_key = import_obsidian24.Platform.isMacOS ? `\u2318` : `ctrl`;
     this.setInstructions([
       {
         command: `\u2190`,
@@ -23393,7 +23479,7 @@ var ScFileSelectModal = class extends ContextSelectModal {
     return item.basename;
   }
   selectSuggestion(item, evt) {
-    if (import_obsidian23.Keymap.isModEvent(evt)) this.view.insert_system_prompt(item.item);
+    if (import_obsidian24.Keymap.isModEvent(evt)) this.view.insert_system_prompt(item.item);
     else {
       const link = `[[${item.item.path}]] `;
       if (evt.shiftKey) this.view.insert_selection("!" + link);
@@ -23517,7 +23603,7 @@ var SmartChatGPTView = class extends SmartObsidianView {
     this.frame = document.createElement("webview", {});
     this.frame.setAttribute("allowpopups", "");
     this.frame.setAttribute("useragent", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.6723.191 Safari/537.36");
-    this.frame.setAttribute("partition", "persist:smart-chatgpt");
+    this.frame.setAttribute("partition", this.plugin.app.getWebviewPartition());
     this.frame.style.width = "100%";
     this.frame.style.height = "100%";
     this.frame.setAttribute("src", "https://chatgpt.com/");
@@ -23526,8 +23612,8 @@ var SmartChatGPTView = class extends SmartObsidianView {
 };
 
 // src/views/sc_private_chat.obsidian.js
-var import_obsidian24 = require("obsidian");
-var SmartPrivateChatView = class extends import_obsidian24.ItemView {
+var import_obsidian25 = require("obsidian");
+var SmartPrivateChatView = class extends import_obsidian25.ItemView {
   static get view_type() {
     return "smart-private-chat";
   }
@@ -23581,15 +23667,16 @@ var SmartPrivateChatView = class extends import_obsidian24.ItemView {
 };
 
 // node_modules/smart-chat-obsidian/src/smart_chat.obsidian.js
-var import_obsidian26 = require("obsidian");
+var import_obsidian27 = require("obsidian");
 
 // node_modules/smart-chat-obsidian/node_modules/obsidian-smart-env/utils/wait_for_env_to_load.js
-var import_obsidian25 = require("obsidian");
-async function wait_for_env_to_load2(scope) {
+var import_obsidian26 = require("obsidian");
+async function wait_for_env_to_load2(scope, opts = {}) {
+  const { wait_for_states = ["loaded"] } = opts;
   const container = scope.container || scope.containerEl;
-  if (scope.env?.state !== "loaded") {
+  if (!wait_for_states.includes(scope.env?.state)) {
     let clicked_load_env = false;
-    while (scope.env.state === "init" && import_obsidian25.Platform.isMobile && !clicked_load_env) {
+    while (scope.env.state === "init" && import_obsidian26.Platform.isMobile && !clicked_load_env) {
       if (container) {
         container.empty();
         scope.env.smart_view.safe_inner_html(container, "<button>Load Smart Environment</button>");
@@ -23602,7 +23689,7 @@ async function wait_for_env_to_load2(scope) {
       }
       await new Promise((r) => setTimeout(r, 2e3));
     }
-    while (scope.env.state !== "loaded") {
+    while (!wait_for_states.includes(scope.env.state)) {
       if (container) {
         const loading_msg = scope.env?.smart_connections_plugin?.obsidian_is_syncing ? "Waiting for Obsidian Sync to finish..." : "Loading Obsidian Smart Environment...";
         container.empty();
@@ -23616,7 +23703,7 @@ async function wait_for_env_to_load2(scope) {
 }
 
 // node_modules/smart-chat-obsidian/src/smart_chat.obsidian.js
-var SmartChatView = class extends import_obsidian26.ItemView {
+var SmartChatView = class extends import_obsidian27.ItemView {
   /**
    * @param {WorkspaceLeaf} leaf
    * @param {Plugin} plugin
@@ -24519,11 +24606,11 @@ var SmartAction = class extends CollectionItem3 {
     return params;
   }
   async post_process(params, result) {
-    for (const post_process36 of this.action_post_processes) {
-      result = await post_process36.call(this, params, result);
+    for (const post_process37 of this.action_post_processes) {
+      result = await post_process37.call(this, params, result);
     }
-    for (const post_process36 of this.default_post_processes) {
-      result = await post_process36.call(this, params, result);
+    for (const post_process37 of this.default_post_processes) {
+      result = await post_process37.call(this, params, result);
     }
     return result;
   }
@@ -25772,6 +25859,9 @@ ${completion_opts.system_message}` : "");
   set current_completion(completion) {
     this._current_completion = completion;
   }
+  get last_completion() {
+    return this.completions[this.completions.length - 2];
+  }
   get completion_keys() {
     return list_thread_items(this);
   }
@@ -25841,7 +25931,7 @@ var SmartChatThreads = class extends Collection3 {
     return {
       active_thread_key: "",
       chat_model: {
-        platform_key: "openai"
+        adapter: "ollama"
       },
       system_prompt: "",
       detect_self_referential: true,
@@ -25928,8 +26018,7 @@ var SmartCompletions = class extends Collection3 {
     if (!this._chat_model) {
       this._chat_model = this.env.init_module("smart_chat_model", {
         model_config: {},
-        settings: this.settings.chat_model,
-        // each platform's config
+        settings: this.settings.chat_model ?? this.env.smart_chat_threads?.settings?.chat_model ?? {},
         reload_model: this.reload_chat_model.bind(this),
         re_render_settings: this.re_render_settings?.bind(this) ?? (() => {
           console.log("no re_render_settings");
@@ -26163,6 +26252,15 @@ function parse_xml_fragments(xml_input) {
 
 // node_modules/smart-chat-obsidian/node_modules/smart-completions/smart_completion.js
 var SmartCompletion = class extends CollectionItem3 {
+  constructor(env, data = null) {
+    super(env, data);
+    this.run_adapter_item_constructors();
+  }
+  run_adapter_item_constructors() {
+    for (const [key, AdapterClass] of Object.entries(this.completion_adapters)) {
+      AdapterClass.item_constructor?.(this);
+    }
+  }
   /**
    * Default data structure for a new SmartCompletion item.
    * @static
@@ -26224,6 +26322,7 @@ var SmartCompletion = class extends CollectionItem3 {
         await adapter.to_request?.();
       }
     }
+    return this.data.completion.request;
   }
   async parse_response() {
     const data_keys = Object.keys(this.data);
@@ -26234,6 +26333,7 @@ var SmartCompletion = class extends CollectionItem3 {
         await adapter.from_response?.();
       }
     }
+    return this.data.completion.responses;
   }
   /**
    * Calls the underlying chat model, stores the response in completion.responses.
@@ -26245,6 +26345,10 @@ var SmartCompletion = class extends CollectionItem3 {
       return;
     }
     const chat_model = this.get_chat_model(opts);
+    this.data.completion.chat_model = {
+      model_key: chat_model.model_key,
+      platform_key: chat_model.adapter_name
+    };
     if (!chat_model) {
       console.warn("No chat model available for SmartCompletion. Check environment config.");
       return;
@@ -26306,10 +26410,6 @@ var SmartCompletion = class extends CollectionItem3 {
       console.log("no chat_model, using collection chat_model");
       return this.collection?.chat_model || null;
     }
-  }
-  get is_last_in_thread() {
-    if (!this.thread || !this.thread.completion_keys?.length) return false;
-    return this.thread.completion_keys[this.thread.completion_keys.length - 1] === this.key;
   }
   get response() {
     return this.data.completion.responses[0];
@@ -26373,10 +26473,8 @@ var SmartCompletion = class extends CollectionItem3 {
     }
     return messages;
   }
-  get thread() {
-    const thread_key = this.data.thread_key;
-    if (!thread_key) return null;
-    return this.env.smart_chat_threads.get(thread_key);
+  get is_completed() {
+    return this.data.completion.responses.length > 0;
   }
 };
 
@@ -26639,6 +26737,8 @@ var ActionCompletionAdapter = class extends SmartCompletionAdapter {
   async to_request() {
     const action_key = this.data.action_key;
     if (!action_key) return;
+    const thread = this.item.thread;
+    if (thread.current_completion !== this.item) return console.log("ActionCompletionAdapter: skipping tools, not the current completion");
     const action_opts = this.data.action_opts;
     const action_collection = this.item.env.smart_actions;
     if (!action_collection) {
@@ -26782,6 +26882,8 @@ var ActionXmlCompletionAdapter = class extends ActionCompletionAdapter {
   async to_request() {
     const action_key = this.data.action_xml_key;
     if (!action_key) return;
+    const thread = this.item.thread;
+    if (thread.current_completion !== this.item) return console.log("ActionXmlCompletionAdapter: skipping tools, not the current completion");
     const action_item = this.env.smart_actions?.get(action_key);
     if (!action_item) {
       return console.warn(`SmartAction '${action_key}' not found`);
@@ -26933,6 +27035,15 @@ var ThreadCompletionAdapter = class extends SmartCompletionAdapter {
   static get property_name() {
     return "thread_key";
   }
+  static item_constructor(completion) {
+    Object.defineProperty(completion, "thread", {
+      get() {
+        const thread_key = completion.data.thread_key;
+        if (!thread_key) return null;
+        return completion.env.smart_chat_threads.get(thread_key);
+      }
+    });
+  }
   /**
    * to_request: Appends messages from the referenced thread.
    * @returns {Promise<void>}
@@ -26940,6 +27051,8 @@ var ThreadCompletionAdapter = class extends SmartCompletionAdapter {
   async to_request() {
     const thread_key = this.data.thread_key;
     if (!thread_key) return;
+    const thread = this.item.thread;
+    if (thread.current_completion !== this.item) return console.log("ThreadCompletionAdapter: skipping thread, not the current completion");
     const thread_collection = this.item.env.smart_chat_threads;
     if (!thread_collection) {
       console.warn("No 'smart_chat_threads' collection found in environment; skipping thread adapter.");
@@ -26953,10 +27066,11 @@ var ThreadCompletionAdapter = class extends SmartCompletionAdapter {
     if (!this.request.messages) {
       this.request.messages = [];
     }
-    const last_completion = thread_item.completions[thread_item.completions.length - 2];
-    if (last_completion) {
-      this.request.messages.push(...last_completion.data.completion.request.messages);
-      this.request.messages.push({ role: "assistant", content: last_completion.response_text });
+    const prior_completions = thread_item.completions.slice(0, -1);
+    for (let i = 0; i < prior_completions.length; i++) {
+      const prior_completion = prior_completions[i];
+      this.request.messages.push(...(await prior_completion.build_request()).messages || []);
+      this.request.messages.push({ role: "assistant", content: prior_completion.response_text });
     }
   }
   /**
@@ -28163,8 +28277,8 @@ css_sheet3.replaceSync(`/**
 var chat_default = css_sheet3;
 
 // node_modules/smart-chat-obsidian/src/chat_history_modal.js
-var import_obsidian27 = require("obsidian");
-var ChatHistoryModal = class extends import_obsidian27.FuzzySuggestModal {
+var import_obsidian28 = require("obsidian");
+var ChatHistoryModal = class extends import_obsidian28.FuzzySuggestModal {
   /**
    * @param {Object} plugin - Main plugin instance with `app` and `env`.
    */
@@ -28219,7 +28333,7 @@ var ChatHistoryModal = class extends import_obsidian27.FuzzySuggestModal {
 };
 
 // node_modules/smart-chat-obsidian/src/components/chat.js
-function build_html20(chat_threads_collection, opts = {}) {
+function build_html21(chat_threads_collection, opts = {}) {
   return `
     <div class="smart-chat-chat-container">
       <div class="smart-chat-top-bar-container">
@@ -28251,15 +28365,15 @@ function build_html20(chat_threads_collection, opts = {}) {
     </div>
   `;
 }
-async function render26(chat_threads_collection, opts = {}) {
-  const html = await build_html20.call(this, chat_threads_collection, opts);
+async function render27(chat_threads_collection, opts = {}) {
+  const html = await build_html21.call(this, chat_threads_collection, opts);
   const frag = this.create_doc_fragment(html);
   chat_threads_collection.container = frag.querySelector(".smart-chat-chat-container");
   this.apply_style_sheet(chat_default);
-  post_process23.call(this, chat_threads_collection, frag, opts);
+  post_process24.call(this, chat_threads_collection, frag, opts);
   return frag;
 }
-async function post_process23(chat_threads_collection, frag, opts = {}) {
+async function post_process24(chat_threads_collection, frag, opts = {}) {
   const env = chat_threads_collection.env;
   const threads_container = chat_threads_collection.container.querySelector(".smart-chat-threads-container");
   let active_thread = chat_threads_collection.active_thread;
@@ -28382,8 +28496,8 @@ function thread_has_user_message(thread) {
 }
 
 // node_modules/smart-chat-obsidian/node_modules/smart-context-obsidian/src/views/context_selector_modal.js
-var import_obsidian28 = require("obsidian");
-var ContextSelectorModal = class _ContextSelectorModal extends import_obsidian28.FuzzySuggestModal {
+var import_obsidian29 = require("obsidian");
+var ContextSelectorModal = class _ContextSelectorModal extends import_obsidian29.FuzzySuggestModal {
   static open(env, opts) {
     const plugin = env.smart_contexts_plugin || env.smart_chat_plugin || env.smart_connections_plugin;
     if (!env.context_selector_modal) {
@@ -28414,12 +28528,12 @@ var ContextSelectorModal = class _ContextSelectorModal extends import_obsidian28
     this.plugin.env.create_env_getter(this);
     this.mod_key_was_held = false;
     this.modalEl.addEventListener("keydown", (e) => {
-      this.mod_key_was_held = import_obsidian28.Keymap.isModifier(e, "Mod");
+      this.mod_key_was_held = import_obsidian29.Keymap.isModifier(e, "Mod");
       if (e.key === "Enter") this.selectActiveSuggestion(e);
       if (e.key === "Escape") this.close(true);
     });
     this.resultContainerEl.addEventListener("click", (e) => {
-      this.mod_key_was_held = import_obsidian28.Keymap.isModifier(e, "Mod");
+      this.mod_key_was_held = import_obsidian29.Keymap.isModifier(e, "Mod");
     });
   }
   ensure_ctx() {
@@ -28642,6 +28756,12 @@ css_sheet4.replaceSync(`.sc-context-builder {
   }
   .sc-context-footer {
     flex: 0 1 auto;
+    .sc-context-actions {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      justify-content: flex-end;
+    }
   }
 }
 
@@ -28682,26 +28802,30 @@ css_sheet4.replaceSync(`.sc-context-builder {
 var context_builder_default = css_sheet4;
 
 // node_modules/smart-chat-obsidian/src/components/chat_context_builder.js
-function build_html21(ctx, opts = {}) {
+function build_html22(ctx, opts = {}) {
   return `<div>
     <div class="sc-context-builder sc-chat-context-builder" data-context-key="${ctx.data.key}">
       <div class="sc-context-header">
+      </div>
+      <div class="sc-context-body">
+        <div class="sc-context-tree"></div>
+      </div>
+      <div class="sc-context-footer">
         <div class="sc-context-stats"></div>
         <div class="sc-context-actions"></div>
       </div>
-      <div class="sc-context-tree"></div>
     </div>
   </div>`;
 }
-async function render27(ctx, opts = {}) {
-  const html = build_html21.call(this, ctx, opts);
+async function render28(ctx, opts = {}) {
+  const html = build_html22.call(this, ctx, opts);
   const frag = this.create_doc_fragment(html);
   const ctx_container = frag.querySelector(".sc-context-builder");
   this.apply_style_sheet(context_builder_default);
-  await post_process24.call(this, ctx, ctx_container, opts);
+  await post_process25.call(this, ctx, ctx_container, opts);
   return ctx_container;
 }
-async function post_process24(ctx, container, opts = {}) {
+async function post_process25(ctx, container, opts = {}) {
   const env = ctx?.env;
   const completion = opts.completion;
   if (!completion) return container;
@@ -28728,23 +28852,17 @@ async function post_process24(ctx, container, opts = {}) {
     ...opts,
     update_callback
   });
-  console.log("tree_container", tree_container);
   this.empty(tree_el);
   tree_el.replaceWith(tree_container);
   const stats_container = await ctx.env.render_component("context_stats", ctx, {
     ...opts
   });
-  console.log("stats_container", stats_container);
   this.empty(stats_el);
   stats_el.replaceWith(stats_container);
   if (thread_has_user_message(thread)) {
     const send_btn = document.createElement("button");
     send_btn.textContent = "Send";
     send_btn.addEventListener("click", async (e) => {
-      const updated_ctx = await env?.smart_contexts?.create_or_update({
-        context_items: { ...ctx.data.context_items }
-      });
-      completion.data.context_key = updated_ctx?.key;
       actions_el.innerHTML = "";
       const typing = completion.thread?.message_container?.closest(".smart-chat-thread")?.querySelector(".smart-chat-typing-indicator");
       if (typing) typing.style.display = "block";
@@ -28756,7 +28874,7 @@ async function post_process24(ctx, container, opts = {}) {
 }
 
 // node_modules/smart-chat-obsidian/src/components/chat_model_settings.js
-async function render28(env, opts = {}) {
+async function render29(env, opts = {}) {
   const smart_chat_model_settings_config = env.smart_chat_threads?.chat_model?.settings_config;
   return await this.render_settings(smart_chat_model_settings_config, {
     scope: env.smart_chat_threads?.chat_model
@@ -28764,7 +28882,7 @@ async function render28(env, opts = {}) {
 }
 
 // node_modules/smart-chat-obsidian/src/components/chat_thread_settings.js
-async function render29(env, opts = {}) {
+async function render30(env, opts = {}) {
   return await this.render_settings(env.smart_chat_threads.settings_config, {
     scope: env.smart_chat_threads
   });
@@ -28939,25 +29057,25 @@ css_sheet5.replaceSync(`/**
 var completion_default = css_sheet5;
 
 // node_modules/smart-chat-obsidian/src/components/completion.js
-function build_html22(completion, opts = {}) {
+function build_html23(completion, opts = {}) {
   return `
     <div class="smart-chat-completion-sequence" data-completion-key="${completion.key}">
     </div>
   `;
 }
-async function render30(completion, opts = {}) {
+async function render31(completion, opts = {}) {
   if (!completion.container) {
-    const html = await build_html22.call(this, completion, opts);
+    const html = await build_html23.call(this, completion, opts);
     const frag = this.create_doc_fragment(html);
     this.apply_style_sheet(completion_default);
-    post_process25.call(this, completion, frag, opts);
+    post_process26.call(this, completion, frag, opts);
     return frag;
   } else {
-    post_process25.call(this, completion, completion.container, opts);
+    post_process26.call(this, completion, completion.container, opts);
     return completion.container;
   }
 }
-async function post_process25(completion, frag, opts = {}) {
+async function post_process26(completion, frag, opts = {}) {
   if (!completion.container) {
     completion.container = frag.querySelector(".smart-chat-completion-sequence");
   }
@@ -28965,6 +29083,15 @@ async function post_process25(completion, frag, opts = {}) {
     completion.system_elm = await completion.env.render_component("message_system", completion);
     completion.container.appendChild(completion.system_elm);
   }
+  const model_info_container = await completion.env.render_component("message_model_info", completion);
+  if (model_info_container) {
+    if (completion.model_info_elm) {
+      completion.model_info_elm.replaceWith(model_info_container);
+    } else {
+      completion.container.appendChild(model_info_container);
+    }
+  }
+  completion.model_info_elm = model_info_container;
   if (!completion.user_elm && completion.data.user_message) {
     completion.user_elm = await completion.env.render_component("message_user", completion);
     completion.container.appendChild(completion.user_elm);
@@ -29048,7 +29175,8 @@ async function post_process25(completion, frag, opts = {}) {
   if (completion.data.actions?.lookup_context) {
     const typing_indicator = completion.container.closest(".smart-chat-thread")?.querySelector(".smart-chat-typing-indicator");
     if (typing_indicator) typing_indicator.style.display = "none";
-    if (completion.is_last_in_thread) {
+    const last_completion_key = completion.thread.completion_keys[completion.thread.completion_keys.length - 1];
+    if (last_completion_key === completion.key) {
       completion.thread.new_completion({
         context_key: completion.data.actions.lookup_context
       });
@@ -29074,7 +29202,7 @@ async function update_action_message(completion) {
 }
 
 // node_modules/smart-chat-obsidian/src/components/confirm_delete.js
-function build_html23(chat_thread, opts = {}) {
+function build_html24(chat_thread, opts = {}) {
   return `
     <div class="smart-chat-confirm-delete-overlay" style="
       position: absolute;
@@ -29107,13 +29235,13 @@ function build_html23(chat_thread, opts = {}) {
     </div>
   `;
 }
-async function render31(chat_thread, opts = {}) {
-  const html = build_html23(chat_thread, opts);
+async function render32(chat_thread, opts = {}) {
+  const html = build_html24(chat_thread, opts);
   const frag = this.create_doc_fragment(html);
-  post_process26.call(this, chat_thread, frag, opts);
+  post_process27.call(this, chat_thread, frag, opts);
   return frag;
 }
-function post_process26(chat_thread, frag, opts = {}) {
+function post_process27(chat_thread, frag, opts = {}) {
   const confirmOverlay = frag.querySelector(".smart-chat-confirm-delete-overlay");
   if (!confirmOverlay) return frag;
   const confirmBtn = confirmOverlay.querySelector(".smart-chat-confirm-delete-confirm");
@@ -29133,7 +29261,7 @@ function post_process26(chat_thread, frag, opts = {}) {
 }
 
 // node_modules/smart-chat-obsidian/src/components/message_action.js
-function build_html24(completion, opts = {}) {
+function build_html25(completion, opts = {}) {
   const action = completion.data.action_key;
   let action_data = completion.action_call;
   if (typeof action_data === "string") {
@@ -29182,23 +29310,23 @@ function build_html24(completion, opts = {}) {
     </div>
   </div>`;
 }
-async function render32(completion, opts = {}) {
-  const html = build_html24(completion, opts);
+async function render33(completion, opts = {}) {
+  const html = build_html25(completion, opts);
   const frag = this.create_doc_fragment(html);
   if (opts.await_post_process) {
-    await post_process27.call(this, completion, frag, opts);
+    await post_process28.call(this, completion, frag, opts);
   } else {
-    post_process27.call(this, completion, frag, opts);
+    post_process28.call(this, completion, frag, opts);
   }
   return frag;
 }
-function post_process27(completion, frag, opts = {}) {
+function post_process28(completion, frag, opts = {}) {
   return frag;
 }
 
 // node_modules/smart-chat-obsidian/src/components/message_assistant.js
-var import_obsidian29 = require("obsidian");
-async function build_html25(completion, opts = {}) {
+var import_obsidian30 = require("obsidian");
+async function build_html26(completion, opts = {}) {
   const text = completion.response_text || "";
   return `
     <div class="smart-chat-message assistant">
@@ -29221,24 +29349,24 @@ async function build_html25(completion, opts = {}) {
     </div>
   `;
 }
-async function render33(completion, opts = {}) {
-  const html = await build_html25.call(this, completion, opts);
+async function render34(completion, opts = {}) {
+  const html = await build_html26.call(this, completion, opts);
   const frag = this.create_doc_fragment(html);
-  if (opts.await_post_process) await post_process28.call(this, completion, frag, opts);
-  else post_process28.call(this, completion, frag, opts);
+  if (opts.await_post_process) await post_process29.call(this, completion, frag, opts);
+  else post_process29.call(this, completion, frag, opts);
   return frag;
 }
-async function post_process28(completion, frag, opts = {}) {
+async function post_process29(completion, frag, opts = {}) {
   const content = frag.querySelector(".smart-chat-message-content");
   const copyButton = frag.querySelector(".smart-chat-message-copy-button");
   this.empty(content);
   const plugin = completion.env.smart_chat_plugin || completion.env.smart_connections_plugin;
-  await import_obsidian29.MarkdownRenderer.render(
+  await import_obsidian30.MarkdownRenderer.render(
     plugin.app,
     completion.response_text,
     content,
     "",
-    new import_obsidian29.Component()
+    new import_obsidian30.Component()
   );
   copyButton?.addEventListener("click", async () => {
     try {
@@ -29247,7 +29375,7 @@ async function post_process28(completion, frag, opts = {}) {
         return;
       }
       await navigator.clipboard.writeText(completion.response_text || "");
-      new import_obsidian29.Notice("Copied to clipboard");
+      new import_obsidian30.Notice("Copied to clipboard");
     } catch (err) {
       console.error("Failed to copy raw markdown:", err);
     }
@@ -29255,8 +29383,46 @@ async function post_process28(completion, frag, opts = {}) {
   return frag;
 }
 
+// node_modules/smart-chat-obsidian/src/components/message_model_info.js
+function build_html27(completion, opts = {}) {
+  const model_key = completion.data.completion?.chat_model?.model_key ?? completion.chat_model?.model_key;
+  const platform_key = completion.data.completion?.chat_model?.platform_key ?? completion.chat_model?.adapter_name;
+  return (
+    /* html */
+    `<div class="wrapper">
+    <div class="model-info" data-model-key="${model_key}" data-platform-key="${platform_key}">
+      <div class="smart-chat-message-content">
+        Model: <code>${model_key}</code> (<code>${platform_key}</code>)
+      </div>
+    </div>
+  </div>`
+  );
+}
+async function render35(completion, opts = {}) {
+  if (!should_show_model_info(completion)) return null;
+  const html = build_html27(completion, opts);
+  const frag = this.create_doc_fragment(html);
+  const container = frag.querySelector(".model-info");
+  return container;
+}
+function should_show_model_info(completion) {
+  const thread = completion.thread;
+  if (!thread) return true;
+  const idx = thread.completions.findIndex((x) => x.key === completion.key);
+  if (idx === 0) return true;
+  const prev = thread.last_completion;
+  const cm_prev = prev?.data?.completion?.chat_model;
+  const cm_curr = completion === thread.current_completion ? {
+    model_key: completion.chat_model.model_key,
+    platform_key: completion.chat_model.adapter_name
+  } : completion.data?.completion?.chat_model;
+  if (!cm_prev) return true;
+  if (!cm_curr) return true;
+  return cm_prev.platform_key !== cm_curr.platform_key || cm_prev.model_key !== cm_curr.model_key;
+}
+
 // node_modules/smart-chat-obsidian/src/components/message_system.js
-function build_html26(completion, opts = {}) {
+function build_html28(completion, opts = {}) {
   const text = completion.data.system_message || "(No system prompt set)";
   return `
     <div class="smart-chat-message system">
@@ -29264,19 +29430,19 @@ function build_html26(completion, opts = {}) {
     </div>
   `;
 }
-async function render34(completion, opts = {}) {
-  const html = build_html26(completion, opts);
+async function render36(completion, opts = {}) {
+  const html = build_html28(completion, opts);
   const frag = this.create_doc_fragment(html);
-  post_process29.call(this, completion, frag, opts);
+  post_process30.call(this, completion, frag, opts);
   return frag;
 }
-function post_process29(completion, frag, opts = {}) {
+function post_process30(completion, frag, opts = {}) {
   return frag;
 }
 
 // node_modules/smart-chat-obsidian/src/components/message_user.js
-var import_obsidian30 = require("obsidian");
-function build_html27(completion, opts = {}) {
+var import_obsidian31 = require("obsidian");
+function build_html29(completion, opts = {}) {
   const text = completion.data.user_message || "";
   return `
     <div class="smart-chat-message user">
@@ -29286,28 +29452,28 @@ function build_html27(completion, opts = {}) {
     </div>
   `;
 }
-async function render35(completion, opts = {}) {
-  const html = await build_html27.call(this, completion, opts);
+async function render37(completion, opts = {}) {
+  const html = await build_html29.call(this, completion, opts);
   const frag = this.create_doc_fragment(html);
-  post_process30.call(this, completion, frag, opts);
+  post_process31.call(this, completion, frag, opts);
   return frag;
 }
-async function post_process30(completion, frag, opts = {}) {
+async function post_process31(completion, frag, opts = {}) {
   const content = frag.querySelector(".smart-chat-message-content");
   this.empty(content);
   const plugin = completion.env.smart_chat_plugin || completion.env.smart_connections_plugin;
-  await import_obsidian30.MarkdownRenderer.render(
+  await import_obsidian31.MarkdownRenderer.render(
     plugin.app,
     completion.data.user_message,
     content,
     "",
-    new import_obsidian30.Component()
+    new import_obsidian31.Component()
   );
   return frag;
 }
 
 // node_modules/smart-chat-obsidian/src/components/overlay_requires_settings.js
-function build_html28(opts = {}) {
+function build_html30(opts = {}) {
   return `
     <div class="smart-chat-confirm-missing-config-overlay" style="
       position: absolute;
@@ -29337,13 +29503,13 @@ function build_html28(opts = {}) {
     </div>
   `;
 }
-async function render36(chat_thread, opts = {}) {
-  const html = build_html28.call(this, opts);
+async function render38(chat_thread, opts = {}) {
+  const html = build_html30.call(this, opts);
   const frag = this.create_doc_fragment(html);
-  post_process31.call(this, chat_thread, frag, opts);
+  post_process32.call(this, chat_thread, frag, opts);
   return frag;
 }
-function post_process31(chat_thread, frag, opts = {}) {
+function post_process32(chat_thread, frag, opts = {}) {
   const overlayEl = frag.querySelector(".smart-chat-confirm-missing-config-overlay");
   if (!overlayEl) return frag;
   const openSettingsBtn = overlayEl.querySelector(".smart-chat-open-settings");
@@ -29578,7 +29744,7 @@ css_sheet6.replaceSync(`.smart-chat-thread {
 var thread_default = css_sheet6;
 
 // node_modules/smart-chat-obsidian/src/components/thread.js
-var import_obsidian31 = require("obsidian");
+var import_obsidian32 = require("obsidian");
 
 // node_modules/smart-chat-obsidian/src/utils/insert_text_in_chunks.js
 function split_into_chunks(text, size = 1024) {
@@ -29624,10 +29790,10 @@ function text_to_nodes(txt) {
 
 // node_modules/smart-chat-obsidian/src/components/thread.js
 function should_send_message(e, requiredModifier) {
-  const pressed_shift = import_obsidian31.Keymap.isModifier(e, "Shift");
-  const pressed_mod = import_obsidian31.Keymap.isModifier(e, "Mod");
-  const pressed_alt = import_obsidian31.Keymap.isModifier(e, "Alt");
-  const pressed_meta = import_obsidian31.Keymap.isModifier(e, "Meta");
+  const pressed_shift = import_obsidian32.Keymap.isModifier(e, "Shift");
+  const pressed_mod = import_obsidian32.Keymap.isModifier(e, "Mod");
+  const pressed_alt = import_obsidian32.Keymap.isModifier(e, "Alt");
+  const pressed_meta = import_obsidian32.Keymap.isModifier(e, "Meta");
   if (requiredModifier === "none") {
     return !pressed_shift && !pressed_mod && !pressed_alt && !pressed_meta;
   }
@@ -29637,7 +29803,7 @@ function should_send_message(e, requiredModifier) {
   if (requiredModifier === "meta") return pressed_meta;
   return false;
 }
-function build_html29(chat_thread, opts = {}) {
+function build_html31(chat_thread, opts = {}) {
   return `
     <div class="smart-chat-thread" data-thread-key="${chat_thread.key}">
       <div class="smart-chat-message-container"></div>
@@ -29680,15 +29846,15 @@ function build_html29(chat_thread, opts = {}) {
     </div>
   `;
 }
-async function render37(chat_thread, opts = {}) {
-  const html = build_html29.call(this, chat_thread, opts);
+async function render39(chat_thread, opts = {}) {
+  const html = build_html31.call(this, chat_thread, opts);
   const frag = this.create_doc_fragment(html);
   this.apply_style_sheet(thread_default);
   chat_thread.container = frag.querySelector(".smart-chat-thread");
-  post_process32.call(this, chat_thread, frag, opts);
+  post_process33.call(this, chat_thread, frag, opts);
   return frag;
 }
-async function post_process32(chat_thread, frag, opts = {}) {
+async function post_process33(chat_thread, frag, opts = {}) {
   const env = chat_thread.env;
   const plugin = env.smart_chat_plugin || env.smart_connections_plugin;
   const message_container = chat_thread.container.querySelector(".smart-chat-message-container");
@@ -29876,18 +30042,19 @@ var smart_env_config5 = {
     SmartChatThread
   },
   components: {
-    chat: render26,
-    chat_context_builder: render27,
-    chat_model_settings: render28,
-    chat_thread_settings: render29,
-    completion: render30,
-    confirm_delete: render31,
-    message_action: render32,
-    message_assistant: render33,
-    message_system: render34,
-    message_user: render35,
-    overlay_requires_settings: render36,
-    thread: render37
+    chat: render27,
+    chat_context_builder: render28,
+    chat_model_settings: render29,
+    chat_thread_settings: render30,
+    completion: render31,
+    confirm_delete: render32,
+    message_action: render33,
+    message_assistant: render34,
+    message_model_info: render35,
+    message_system: render36,
+    message_user: render37,
+    overlay_requires_settings: render38,
+    thread: render39
   }
 };
 
@@ -29919,6 +30086,12 @@ css_sheet7.replaceSync(`.sc-context-builder {
   }
   .sc-context-footer {
     flex: 0 1 auto;
+    .sc-context-actions {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      justify-content: flex-end;
+    }
   }
 }
 
@@ -29959,7 +30132,7 @@ css_sheet7.replaceSync(`.sc-context-builder {
 var context_builder_default2 = css_sheet7;
 
 // node_modules/smart-context-obsidian/src/components/context_builder.js
-function build_html30(ctx, opts = {}) {
+function build_html32(ctx, opts = {}) {
   return `<div>
     <div class="sc-context-builder" data-context-key="${ctx.data.key}">
       <div class="sc-context-header">
@@ -29973,15 +30146,15 @@ function build_html30(ctx, opts = {}) {
     </div>
   </div>`;
 }
-async function render38(ctx, opts = {}) {
-  const html = build_html30.call(this, ctx, opts);
+async function render40(ctx, opts = {}) {
+  const html = build_html32.call(this, ctx, opts);
   const frag = this.create_doc_fragment(html);
   const ctx_container = frag.querySelector(".sc-context-builder");
   this.apply_style_sheet(context_builder_default2);
-  await post_process33.call(this, ctx, ctx_container, opts);
+  await post_process34.call(this, ctx, ctx_container, opts);
   return ctx_container;
 }
-async function post_process33(ctx, container, opts = {}) {
+async function post_process34(ctx, container, opts = {}) {
   const body = container.querySelector(".sc-context-body");
   const tree_container = await ctx.env.render_component("context_tree", ctx, opts);
   this.empty(body);
@@ -29997,19 +30170,19 @@ function estimate_tokens(char_count) {
   return Math.ceil(char_count / 4);
 }
 var get_selected_items = (ctx) => Object.keys(ctx?.data?.context_items || {}).map((k) => ({ path: k }));
-function build_html31(ctx) {
+function build_html33(ctx) {
   return `<div>
     <div class="sc-stats" aria-live="polite"></div>
   </div>`;
 }
-async function render39(ctx, opts = {}) {
-  const html = build_html31(ctx);
+async function render41(ctx, opts = {}) {
+  const html = build_html33(ctx);
   const frag = this.create_doc_fragment(html);
   const container = frag.querySelector(".sc-stats");
-  post_process34.call(this, ctx, container, opts);
+  post_process35.call(this, ctx, container, opts);
   return container;
 }
-async function post_process34(ctx, container, opts = {}) {
+async function post_process35(ctx, container, opts = {}) {
   const items = get_selected_items(ctx);
   if (!items.length) {
     container.textContent = "Add context";
@@ -30202,7 +30375,7 @@ function get_links_to_depth(target_source, max_depth = 1, {
 }
 
 // node_modules/smart-context-obsidian/node_modules/obsidian-smart-env/utils/open_note.js
-var import_obsidian32 = require("obsidian");
+var import_obsidian33 = require("obsidian");
 async function open_note(plugin, target_path, event = null, opts = {}) {
   const { new_tab = false } = opts;
   const env = plugin.env;
@@ -30225,8 +30398,8 @@ async function open_note(plugin, target_path, event = null, opts = {}) {
   }
   let leaf;
   if (event) {
-    const is_mod = import_obsidian32.Keymap.isModEvent(event);
-    const is_alt = import_obsidian32.Keymap.isModifier(event, "Alt");
+    const is_mod = import_obsidian33.Keymap.isModEvent(event);
+    const is_alt = import_obsidian33.Keymap.isModifier(event, "Alt");
     if (is_mod && is_alt) {
       leaf = plugin.app.workspace.splitActiveLeaf("vertical");
     } else if (is_mod || new_tab) {
@@ -30247,11 +30420,11 @@ async function open_note(plugin, target_path, event = null, opts = {}) {
 }
 
 // node_modules/smart-context-obsidian/src/components/context_tree.js
-var import_obsidian35 = require("obsidian");
+var import_obsidian36 = require("obsidian");
 
 // node_modules/smart-context-obsidian/src/views/context_selector_modal.js
-var import_obsidian33 = require("obsidian");
-var ContextSelectorModal2 = class _ContextSelectorModal extends import_obsidian33.FuzzySuggestModal {
+var import_obsidian34 = require("obsidian");
+var ContextSelectorModal2 = class _ContextSelectorModal extends import_obsidian34.FuzzySuggestModal {
   static open(env, opts) {
     const plugin = env.smart_contexts_plugin || env.smart_chat_plugin || env.smart_connections_plugin;
     if (!env.context_selector_modal) {
@@ -30282,12 +30455,12 @@ var ContextSelectorModal2 = class _ContextSelectorModal extends import_obsidian3
     this.plugin.env.create_env_getter(this);
     this.mod_key_was_held = false;
     this.modalEl.addEventListener("keydown", (e) => {
-      this.mod_key_was_held = import_obsidian33.Keymap.isModifier(e, "Mod");
+      this.mod_key_was_held = import_obsidian34.Keymap.isModifier(e, "Mod");
       if (e.key === "Enter") this.selectActiveSuggestion(e);
       if (e.key === "Escape") this.close(true);
     });
     this.resultContainerEl.addEventListener("click", (e) => {
-      this.mod_key_was_held = import_obsidian33.Keymap.isModifier(e, "Mod");
+      this.mod_key_was_held = import_obsidian34.Keymap.isModifier(e, "Mod");
     });
   }
   ensure_ctx() {
@@ -30483,14 +30656,14 @@ var ContextSelectorModal2 = class _ContextSelectorModal extends import_obsidian3
 };
 
 // node_modules/smart-context-obsidian/node_modules/obsidian-smart-env/utils/register_block_hover_popover.js
-var import_obsidian34 = require("obsidian");
+var import_obsidian35 = require("obsidian");
 function register_block_hover_popover2(parent, target, env, block_key, plugin) {
   target.addEventListener("mouseover", async (ev) => {
-    if (import_obsidian34.Keymap.isModEvent(ev)) {
+    if (import_obsidian35.Keymap.isModEvent(ev)) {
       const block = env.smart_blocks.get(block_key);
       const markdown = await block?.read();
       if (markdown) {
-        const popover = new import_obsidian34.HoverPopover(parent, target);
+        const popover = new import_obsidian35.HoverPopover(parent, target);
         const frag = env.smart_view.create_doc_fragment(`<div class="markdown-embed is-loaded">
                 <div class="markdown-embed-content node-insert-event">
                   <div class="markdown-preview-view markdown-rendered node-insert-event show-indentation-guide allow-fold-headings allow-fold-lists">
@@ -30502,7 +30675,7 @@ function register_block_hover_popover2(parent, target, env, block_key, plugin) {
         popover.hoverEl.classList.add("smart-block-popover");
         popover.hoverEl.appendChild(frag);
         const sizer = popover.hoverEl.querySelector(".markdown-preview-sizer");
-        import_obsidian34.MarkdownRenderer.render(plugin.app, markdown, sizer, "/", popover);
+        import_obsidian35.MarkdownRenderer.render(plugin.app, markdown, sizer, "/", popover);
       }
     }
   });
@@ -30510,22 +30683,22 @@ function register_block_hover_popover2(parent, target, env, block_key, plugin) {
 
 // node_modules/smart-context-obsidian/src/components/context_tree.js
 var get_selected_items2 = (ctx) => Object.keys(ctx?.data?.context_items || {}).map((k) => ({ path: k }));
-function build_html32(ctx) {
+function build_html34(ctx) {
   const items = get_selected_items2(ctx);
   const tree_list_html = build_context_items_tree_html(items);
   return `<div>
     <div class="sc-context-tree">${tree_list_html || "<em>No items selected\u2026</em>"}</div>
   </div>`;
 }
-async function render40(ctx, opts = {}) {
-  const html = build_html32(ctx);
+async function render42(ctx, opts = {}) {
+  const html = build_html34(ctx);
   const frag = this.create_doc_fragment(html);
   this.apply_style_sheet(context_tree_default);
   const container = frag.querySelector(".sc-context-tree");
-  post_process35.call(this, ctx, container, opts);
+  post_process36.call(this, ctx, container, opts);
   return container;
 }
-async function post_process35(ctx, container, opts = {}) {
+async function post_process36(ctx, container, opts = {}) {
   const env = ctx?.env;
   const plugin = env?.smart_context_plugin || env?.smart_chat_plugin || env?.smart_connections_plugin;
   const render_tree = () => {
@@ -30551,7 +30724,7 @@ async function post_process35(ctx, container, opts = {}) {
         });
       });
       container.querySelectorAll(".sc-tree-connections").forEach((btn) => {
-        const icon = (0, import_obsidian35.getIcon)("smart-connections");
+        const icon = (0, import_obsidian36.getIcon)("smart-connections");
         btn.appendChild(icon);
         btn.addEventListener("click", async (e) => {
           const p = e.currentTarget.dataset.path;
@@ -30571,7 +30744,7 @@ async function post_process35(ctx, container, opts = {}) {
         if (!target) return;
         const links = get_links_to_depth(target, 3);
         if (!links.length) return;
-        const icon = (0, import_obsidian35.getIcon)("link");
+        const icon = (0, import_obsidian36.getIcon)("link");
         btn.appendChild(icon);
         btn.addEventListener("click", (e) => {
           const p = e.currentTarget.dataset.path;
@@ -30626,7 +30799,7 @@ async function post_process35(ctx, container, opts = {}) {
 }
 
 // node_modules/smart-context-obsidian/src/utils/show_stats_notice.js
-var import_obsidian36 = require("obsidian");
+var import_obsidian37 = require("obsidian");
 function show_stats_notice(stats, contextMsg) {
   let noticeMsg = `Copied to clipboard! (${contextMsg})`;
   if (stats) {
@@ -30642,33 +30815,33 @@ function show_stats_notice(stats, contextMsg) {
       }
     }
   }
-  new import_obsidian36.Notice(noticeMsg);
+  new import_obsidian37.Notice(noticeMsg);
 }
 
 // node_modules/smart-context-obsidian/src/utils/copy_to_clipboard.js
-var import_obsidian37 = require("obsidian");
+var import_obsidian38 = require("obsidian");
 async function copy_to_clipboard(text) {
   try {
     if (navigator?.clipboard?.writeText) {
       await navigator.clipboard.writeText(text);
-    } else if (!import_obsidian37.Platform.isMobile) {
+    } else if (!import_obsidian38.Platform.isMobile) {
       const { clipboard } = require("electron");
       clipboard.writeText(text);
     } else {
-      new import_obsidian37.Notice("Unable to copy text: no valid method found.");
+      new import_obsidian38.Notice("Unable to copy text: no valid method found.");
     }
   } catch (err) {
     console.error("Failed to copy text:", err);
-    new import_obsidian37.Notice("Failed to copy.");
+    new import_obsidian38.Notice("Failed to copy.");
   }
 }
 
 // node_modules/smart-context-obsidian/src/components/copy_to_clipboard_button.js
-function build_html33() {
+function build_html35() {
   return '<button class="sc-copy-clipboard" type="button">Copy to clipboard</button>';
 }
-async function render41(ctx) {
-  const html = build_html33();
+async function render43(ctx) {
+  const html = build_html35();
   const frag = this.create_doc_fragment(html);
   const btn = frag.querySelector("button");
   btn.addEventListener("click", async () => {
@@ -30684,16 +30857,16 @@ var smart_env_config6 = {
   collections: {},
   item_types: {},
   components: {
-    context_builder: render38,
-    context_stats: render39,
-    context_tree: render40,
-    copy_to_clipboard_button: render41
+    context_builder: render40,
+    context_stats: render41,
+    context_tree: render42,
+    copy_to_clipboard_button: render43
   }
 };
 
 // src/sc_settings_tab.js
-var import_obsidian38 = require("obsidian");
-var ScSettingsTab = class extends import_obsidian38.PluginSettingTab {
+var import_obsidian39 = require("obsidian");
+var ScSettingsTab = class extends import_obsidian39.PluginSettingTab {
   constructor(app, plugin) {
     super(app, plugin);
     this.plugin = plugin;
@@ -30718,7 +30891,7 @@ var ScSettingsTab = class extends import_obsidian38.PluginSettingTab {
     return this._smart_view;
   }
   async render() {
-    await wait_for_env_to_load(this);
+    await wait_for_env_to_load(this, { wait_for_states: ["loading", "loaded"] });
     this.smart_view.safe_inner_html(this.containerEl, '<div class="sc-loading">Loading main settings...</div>');
     this.plugin.env.render_component("main_settings", this.plugin).then((frag) => {
       this.containerEl.empty();
@@ -30728,7 +30901,7 @@ var ScSettingsTab = class extends import_obsidian38.PluginSettingTab {
 };
 
 // node_modules/obsidian-smart-env/utils/open_note.js
-var import_obsidian39 = require("obsidian");
+var import_obsidian40 = require("obsidian");
 async function open_note2(plugin, target_path, event = null, opts = {}) {
   const { new_tab = false } = opts;
   const env = plugin.env;
@@ -30751,8 +30924,8 @@ async function open_note2(plugin, target_path, event = null, opts = {}) {
   }
   let leaf;
   if (event) {
-    const is_mod = import_obsidian39.Keymap.isModEvent(event);
-    const is_alt = import_obsidian39.Keymap.isModifier(event, "Alt");
+    const is_mod = import_obsidian40.Keymap.isModEvent(event);
+    const is_alt = import_obsidian40.Keymap.isModifier(event, "Alt");
     if (is_mod && is_alt) {
       leaf = plugin.app.workspace.splitActiveLeaf("vertical");
     } else if (is_mod || new_tab) {
@@ -30773,10 +30946,10 @@ async function open_note2(plugin, target_path, event = null, opts = {}) {
 }
 
 // src/sc_oauth.js
-var import_obsidian41 = require("obsidian");
+var import_obsidian42 = require("obsidian");
 
 // ../smart-plugins-obsidian/utils.js
-var import_obsidian40 = require("obsidian");
+var import_obsidian41 = require("obsidian");
 function get_smart_server_url() {
   if (typeof window !== "undefined" && window.SMART_SERVER_URL_OVERRIDE) {
     return window.SMART_SERVER_URL_OVERRIDE;
@@ -30906,7 +31079,7 @@ async function write_files_with_adapter(adapter, baseFolder, files) {
   }
 }
 async function fetch_plugin_zip(repoName, token) {
-  const resp = await (0, import_obsidian40.requestUrl)({
+  const resp = await (0, import_obsidian41.requestUrl)({
     url: `${get_smart_server_url()}/plugin_download`,
     method: "POST",
     headers: {
@@ -30955,7 +31128,7 @@ function set_local_storage_token({ access_token, refresh_token }, oauth_storage_
 async function exchange_code_for_tokens(code, plugin) {
   const oauth_storage_prefix = plugin.app.vault.getName().toLowerCase().replace(/[^a-z0-9]/g, "_") + "_smart_plugins_oauth_";
   const url = `${get_smart_server_url()}/auth/oauth_exchange2`;
-  const resp = await (0, import_obsidian41.requestUrl)({
+  const resp = await (0, import_obsidian42.requestUrl)({
     url,
     method: "POST",
     headers: { "Content-Type": "application/json" },
@@ -30992,7 +31165,7 @@ async function install_smart_plugins_plugin(plugin) {
 }
 
 // node_modules/smart-notices/smart_notices.js
-var import_obsidian42 = require("obsidian");
+var import_obsidian43 = require("obsidian");
 
 // node_modules/smart-notices/notices.js
 var NOTICES2 = {
@@ -31106,6 +31279,10 @@ var NOTICES2 = {
         env.smart_sources.entities_vector_adapter.resume_embed_queue_processing(100);
       }
     },
+    timeout: 0
+  },
+  embedding_error: {
+    en: "Error embedding: {{error}}",
     timeout: 0
   },
   import_progress: {
@@ -31304,7 +31481,7 @@ var SmartNotices2 = class {
    */
   _add_mute_button(id, container) {
     const btn = document.createElement("button");
-    (0, import_obsidian42.setIcon)(btn, "bell-off");
+    (0, import_obsidian43.setIcon)(btn, "bell-off");
     btn.addEventListener("click", () => {
       if (!this.settings.muted) this.settings.muted = {};
       this.settings.muted[id] = true;
@@ -31331,139 +31508,6 @@ var SmartNotices2 = class {
     delete this.active[normalized_id];
   }
 };
-
-// src/views/smart_supporters_modal.js
-var import_obsidian43 = require("obsidian");
-var ScSupportersModal = class extends import_obsidian43.Modal {
-  constructor(plugin) {
-    super(plugin.app);
-    this.plugin = plugin;
-  }
-  onOpen() {
-    this.titleEl.innerText = "Smart Connections Supporter Community";
-    this.render();
-  }
-  render() {
-    this.modalEl.style.maxHeight = "80vh";
-    this.contentEl.empty();
-    const container = this.contentEl.createDiv({ cls: "sc-supporters" });
-    this.plugin.env.smart_view.safe_inner_html(container, `
-      <p>The success of Smart Connections is a direct result of our community of supporters who generously fund and evaluate new features. 
-        Their unwavering commitment to privacy-focused, open-source software benefits all. 
-        Together, we can continue to innovate and make a positive impact on the world.</p>
-      <p><b>Supporter benefits include:</b></p>
-      <ul>
-        <li>Early access to new &amp; experimental features:
-          <ul>
-            <li>Early access to new versions enables supporters to help ensure new features are ready for the broader community.</li>
-            <li><i>Current Early Access Features:</i><ul>
-              <li>\u{1F5BC}\uFE0F Add images to Smart Chat (multimodal chat)</li>
-              <li>Re-ranking model in the Smart Connections View</li>
-              <li>Smart Chat History in canvas format</li>
-            </ul></li>
-            <li><i>Coming soon to Early Access:</i><ul>
-              <li>PDF Support in Smart Connections view</li>
-              <li>Edit notes in Smart Chat</li>
-              <li>New retrieval methods in Smart Chat</li>
-              <li>Review retrieved context before sending in Smart Chat</li>
-              <li>Audio files in Smart Connections view</li>
-            </ul></li>
-            <li><i>Past Early Access Features:</i><ul>
-              <li>ChatGPT integration with your Obsidian Vault</li>
-              <li>Mobile support for Smart Connections</li>
-            </ul></li>
-          </ul>
-        </li>
-        <li>Access to the supporter-only <a href="https://chat.smartconnections.app">private chat</a>:
-          <ul>
-            <li><i>Community:</i>
-              <ul>
-                <li>Ask questions and share insights with other supporters.</li>
-              </ul>
-            </li>
-            <li><i>Help &amp; Support (priority):</i>
-              <ul>
-                <li>Swift, top-priority support in the <a href="https://chat.smartconnections.app">Supporter Chat</a>.</li>
-              </ul>
-            </li>
-            <li><i>Feature Requests (priority):</i>
-              <ul>
-                <li>Influence the future of Smart Connections with priority feature requests in the <a href="https://chat.smartconnections.app">Supporter Chat</a>.</li>
-              </ul>
-            </li>
-            <li><i>Insider Updates:</i>
-              <ul>
-                <li>Learn about the latest features &amp; improvements before they are announced.</li>
-              </ul>
-            </li>
-          </ul>
-        </li>
-        <li><b>For a very limited time:</b> Early access to Smart Connect: Use ChatGPT with your notes <i>without</i> uploading your notes to the cloud using <a href="https://chat.openai.com/g/g-9Xb1mRJYl-smart-connect-obsidian">Smart Connect - Obsidian</a> GPT.</li>
-      </ul>
-      <hr>
-      <!-- <div class="setting-component"
-        data-name="Supporter License Key"
-        data-type="text"
-        data-setting="license_key"
-        data-description="Note: this is not required to use Smart Connections."
-        data-placeholder="Enter your license_key"
-      ></div> -->
-      ${render_sign_in_or_open_smart_plugins2(this.plugin)}
-      <div class="setting-component"
-        data-name="Become a Supporter"
-        data-setting="become_supporter"
-        data-btn-text="Become a Supporter"
-        data-type="button"
-      ></div>
-      <div class="setting-component"
-        data-setting="open_private_chat"
-        data-name="Supporter Community Chat"
-        data-btn-text="Join us"
-        data-description='Join the supporter community chat.'
-        data-type="button"
-      ></div>
-      <div class="setting-component"
-        data-setting="open_gpt"
-        data-name="Smart Connect - Obsidian GPT"
-        data-btn-text="Open GPT"
-        data-description='Chat with your notes in ChatGPT without uploading your notes to the cloud!'
-        data-type="button"
-      ></div>
-    `);
-    this.plugin.env.smart_view.render_setting_components(this.contentEl, { scope: this.plugin }).then(() => {
-      const become_supporter = container.querySelector('[data-setting="become_supporter"] button');
-      become_supporter?.addEventListener("click", (e) => {
-        e.preventDefault();
-        this.plugin.open_url_externally("https://buy.stripe.com/9AQ7sWemT48u1LGcN4");
-      });
-      const open_private_chat = container.querySelector('[data-setting="open_private_chat"] button');
-      open_private_chat?.addEventListener("click", (e) => {
-        e.preventDefault();
-        this.plugin.open_url_externally("https://chat.smartconnections.app/");
-      });
-      const open_gpt = container.querySelector('[data-setting="open_gpt"] button');
-      open_gpt?.addEventListener("click", (e) => {
-        e.preventDefault();
-        this.plugin.open_url_externally("https://chat.openai.com/g/g-9Xb1mRJYl-smart-connections-2");
-      });
-    });
-  }
-};
-function render_sign_in_or_open_smart_plugins2(scope_plugin) {
-  const oauth_storage_prefix = scope_plugin.app.vault.getName().toLowerCase().replace(/[^a-z0-9]/g, "_") + "_smart_plugins_oauth_";
-  const isLoggedIn = !!localStorage.getItem(oauth_storage_prefix + "token");
-  const buttonLabel = isLoggedIn ? "Open Smart Plugins" : "Sign in";
-  const buttonCallback = isLoggedIn ? "open_smart_plugins_settings" : "initiate_smart_plugins_oauth";
-  return `
-    <div class="setting-component"
-      data-name="Smart Plugins - Early Access"
-      data-type="button"
-      data-btn-text="${buttonLabel}"
-      data-description="Supporters can sign in to access early-release Smart Plugins"
-      data-callback="${buttonCallback}"
-    ></div>
-  `;
-}
 
 // src/modals/connections.js
 var import_obsidian44 = require("obsidian");
@@ -31572,6 +31616,9 @@ var SmartChatSettingTab = class extends import_obsidian45.PluginSettingTab {
     this.containerEl.createEl("div", {
       cls: "smart-chat-env-settings-container"
     });
+    this.containerEl.createEl("div", {
+      cls: "smart-chat-supporter-callout-container"
+    });
     this.env.render_component("chat_thread_settings", this.env).then((frag) => {
       const settings_container = this.containerEl.querySelector(".smart-chat-settings-container");
       settings_container.empty();
@@ -31587,12 +31634,20 @@ var SmartChatSettingTab = class extends import_obsidian45.PluginSettingTab {
         text: "Model"
       });
       model_settings_container.appendChild(frag);
+      const chat_model_dropdown = model_settings_container.querySelector('[data-name="Chat Model"] select');
+      chat_model_dropdown.addEventListener("change", (e) => {
+        SmartChatView.open(this.plugin);
+      });
     });
     this.env.smart_view.apply_style_sheet(settings_tab_default);
     this.env.render_component("env_settings", this.env).then((frag) => {
       const settings_container = this.containerEl.querySelector(".smart-chat-env-settings-container");
       settings_container.empty();
       settings_container.appendChild(frag);
+    });
+    this.env.render_component("supporter_callout", this.plugin, { plugin_name: "Smart Chat" }).then((frag) => {
+      const supporter_callout_container = this.containerEl.querySelector(".smart-chat-supporter-callout-container");
+      supporter_callout_container.appendChild(frag);
     });
   }
 };
@@ -31774,7 +31829,7 @@ function register_connections_score_command(plugin) {
 }
 
 // releases/3.0.0.md
-var __default = '# Smart Connections `v3`\r\n## New Features\r\n### Bases integration\r\n- Introduces new command `Add: Connections score base column` and modal for selecting note that should be used in the comparison\r\n	- A `base` file must be open and active for the command to appear\r\n- Adds a new column to the current that display the connections score (semantic similarity) between each note and a specified file\r\n	- makes `cos_sim(file.file, TARGET)` available as a bases function\r\n### Smart Chat v1\r\n- Effectively utilizes the Smart Environment architecture to facilitate deeper integration and new features.\r\n#### Improved Smart Chat UI\r\n- New context builder\r\n	- makes managing conversation context easier\r\n- Drag images and notes into the chat window to add as context\r\n- Separate settings tab specifically for chat features\r\n#### *Improved Smart Chat compatibility with Local Models*\r\n- Note lookup (RAG) now compatible with models that don\'t support tool calling\r\n	- Disable tool calling in the settings\r\n### Ollama embedding adapter\r\n- use Ollama to create embeddings\r\n\r\n## Fixed\r\n- renders content in connections results when all result items are expanded by default\r\n## Housekeeping\r\n- Updated README\r\n	- Improved Getting Started section\r\n	- Removed extraneous details\r\n- Improved version release process\r\n- Smart Chat `v0` (legacy)\r\n	- Smart Chat `v0` will continue to be available for a short time and will be removed in `v3.1` unless unforeseen issues arise in which case it will be removed sooner.\r\n	- Smart Chat `v0` code was moved from `brianpetro/jsbrains` to the Smart Connections repo\r\n\r\n## patch `v3.0.1`\r\n\r\nImproved Mobile UX and cleaned up extraneous code.\r\n\r\n## patch `v3.0.3`\r\n\r\nFixed issue where connections results would not render if expand-all results was toggled on.\r\n\r\n## patch `v3.0.4`\r\n\r\nPrevented frontmatter blocks from being included in connections results. Fixed toggle-fold-all logic.\r\n\r\n## patch `v3.0.5`\r\n\r\nFixes Ollama Embedding model loading issue in the settings.\r\n\r\n## patch `v3.0.6`\r\n\r\nFixed release notes should only show once after update.\r\n\r\n## patch `v3.0.7`\r\n\r\nAdded "current/dynamic" option in bases connection score modal to add score based on current file. Fixed issue causing Ollama to seemingly embed at 0 tokens/sec. Fixed bases integration modal failing on new bases.\r\n\r\n## patch `v3.0.8`\r\n\r\n- Improved bases integration UX\r\n	- prevent throwing error on erroroneous input in `cos_sim` base function\r\n	- gracefully handle when smart_env is not loaded yet\r\n- Reduced max size of markdown file that will be imported from 1MB to 300KB (prevent long initial import)\r\n	- advanced configuration available via `smart_sources.obsidian_markdown_source_content_adapter.max_import_size` in `smart_env.json`\r\n- Removed deprecated Smart Search API registered to window since `smart_env` object is now globally accessible\r\n- Fixed bug causing expanded connections results to render twice\r\n\r\n## patch `v3.0.9`\r\n\r\n- Reworked the context builder UX in Smart Chat to prevent confusion\r\n	- Context is now added to the chat regardless of how the context selector modal is closed\r\n	- Removed "Back" button in favor of "Back" suggestion item\r\n- Fixed using `@` to open context selector in Smart Chat\r\n	- "Done" button now appears in the context selector modal when it is opened from the keyboard\r\n\r\n## patch `v3.0.10`\r\n\r\nFixed Google Gemini integration in the new Smart Chat\r\n\r\n## patch `v3.0.11`\r\n\r\nFixes unexpected scroll issue when dragging file from connections view (issue #1073)\r\n\r\n## patch `v3.0.12`\r\n\r\nFixes pasted text: should paste lines in correct order (no longer reversed)\r\n\r\n## patch `v3.0.13`\r\n\r\n- Prevents trying to process embed queue if embed model is not loaded\r\n	- Particularly for Ollama which may not be turned on when Obsidian starts\r\n	- Re-checks for Ollama server in intervals of a minute\r\n	- Embed queue can be restarted by clicking "Reload sources" in the Smart Environment settings\r\n\r\n## patch `v3.0.14`\n\r\n- Improved hover popover for blocks in connections results and context builder\r\n- Refactored `context_builder` component to extract `context_tree` component and prevent passing UI components\r\n  - these components are frequently re-used, the updated architecture should make it easier to maintain and extend\r\n- Fixed: should not embed blocks with size less than `min_chars`\r\n- Fixed: Smart Chat completion requests should have a properly ordered `messages` array';
+var __default = '# Smart Connections `v3`\r\n## New Features\r\n### Bases integration\r\n- Introduces new command `Add: Connections score base column` and modal for selecting note that should be used in the comparison\r\n	- A `base` file must be open and active for the command to appear\r\n- Adds a new column to the current that display the connections score (semantic similarity) between each note and a specified file\r\n	- makes `cos_sim(file.file, TARGET)` available as a bases function\r\n### Smart Chat v1\r\n- Effectively utilizes the Smart Environment architecture to facilitate deeper integration and new features.\r\n#### Improved Smart Chat UI\r\n- New context builder\r\n	- makes managing conversation context easier\r\n- Drag images and notes into the chat window to add as context\r\n- Separate settings tab specifically for chat features\r\n#### *Improved Smart Chat compatibility with Local Models*\r\n- Note lookup (RAG) now compatible with models that don\'t support tool calling\r\n	- Disable tool calling in the settings\r\n### Ollama embedding adapter\r\n- use Ollama to create embeddings\r\n\r\n## Fixed\r\n- renders content in connections results when all result items are expanded by default\r\n## Housekeeping\r\n- Updated README\r\n	- Improved Getting Started section\r\n	- Removed extraneous details\r\n- Improved version release process\r\n- Smart Chat `v0` (legacy)\r\n	- Smart Chat `v0` will continue to be available for a short time and will be removed in `v3.1` unless unforeseen issues arise in which case it will be removed sooner.\r\n	- Smart Chat `v0` code was moved from `brianpetro/jsbrains` to the Smart Connections repo\r\n\r\n## patch `v3.0.1`\r\n\r\nImproved Mobile UX and cleaned up extraneous code.\r\n\r\n## patch `v3.0.3`\r\n\r\nFixed issue where connections results would not render if expand-all results was toggled on.\r\n\r\n## patch `v3.0.4`\r\n\r\nPrevented frontmatter blocks from being included in connections results. Fixed toggle-fold-all logic.\r\n\r\n## patch `v3.0.5`\r\n\r\nFixes Ollama Embedding model loading issue in the settings.\r\n\r\n## patch `v3.0.6`\r\n\r\nFixed release notes should only show once after update.\r\n\r\n## patch `v3.0.7`\r\n\r\nAdded "current/dynamic" option in bases connection score modal to add score based on current file. Fixed issue causing Ollama to seemingly embed at 0 tokens/sec. Fixed bases integration modal failing on new bases.\r\n\r\n## patch `v3.0.8`\r\n\r\n- Improved bases integration UX\r\n	- prevent throwing error on erroroneous input in `cos_sim` base function\r\n	- gracefully handle when smart_env is not loaded yet\r\n- Reduced max size of markdown file that will be imported from 1MB to 300KB (prevent long initial import)\r\n	- advanced configuration available via `smart_sources.obsidian_markdown_source_content_adapter.max_import_size` in `smart_env.json`\r\n- Removed deprecated Smart Search API registered to window since `smart_env` object is now globally accessible\r\n- Fixed bug causing expanded connections results to render twice\r\n\r\n## patch `v3.0.9`\r\n\r\n- Reworked the context builder UX in Smart Chat to prevent confusion\r\n	- Context is now added to the chat regardless of how the context selector modal is closed\r\n	- Removed "Back" button in favor of "Back" suggestion item\r\n- Fixed using `@` to open context selector in Smart Chat\r\n	- "Done" button now appears in the context selector modal when it is opened from the keyboard\r\n\r\n## patch `v3.0.10`\r\n\r\nFixed Google Gemini integration in the new Smart Chat\r\n\r\n## patch `v3.0.11`\r\n\r\nFixes unexpected scroll issue when dragging file from connections view (issue #1073)\r\n\r\n## patch `v3.0.12`\r\n\r\nFixes pasted text: should paste lines in correct order (no longer reversed)\r\n\r\n## patch `v3.0.13`\r\n\r\n- Prevents trying to process embed queue if embed model is not loaded\r\n	- Particularly for Ollama which may not be turned on when Obsidian starts\r\n	- Re-checks for Ollama server in intervals of a minute\r\n	- Embed queue can be restarted by clicking "Reload sources" in the Smart Environment settings\r\n\r\n## patch `v3.0.14`\r\n\r\n- Improved hover popover for blocks in connections results and context builder\r\n- Refactored `context_builder` component to extract `context_tree` component and prevent passing UI components\r\n  - these components are frequently re-used, the updated architecture should make it easier to maintain and extend\r\n- Fixed: should not embed blocks with size less than `min_chars`\r\n- Fixed: Smart Chat completion requests should have a properly ordered `messages` array\r\n\r\n## patch `v3.0.15`\r\n\r\n- Fixed: some Ollama embedding models triggering re-embedding every restart\r\n\r\n## patch `v3.0.16`\r\n\r\n- Fixed: no models available in Ollama should no longer cause issues in the settings\r\n\r\n## patch `v3.0.17`\r\n\r\n- Improved embedding processing UX\r\n	- show notification immediately to allow pausing sooner\r\n	- show notification every 30 seconds in addition to every 100 embeddings\r\n- Fixed: Smart Environment settings tab should be visible during "loading" state\r\n	- prevents "Loading Obsidian Smart Environment..." message from appearing indefinitely in instances where the environment fails to load from errors related to specific embedding models\r\n\r\n## patch `v3.0.18`\r\n\r\n- Fixed: Smart Connections view rendering on mobile\r\n	- should render when opening the view from the sidebar\r\n	- should update the results to the currently active file\r\n\r\n## patch `v3.0.19`\r\n\r\n- Added: model info to Smart Chat view\r\n	- shows before the first message and anytime the model changes since the last message\r\n- Fixed: ChatGPT sign-in with Google account\r\n	- should now work as expected\r\n	- will require re-signing in to ChatGPT after update\r\n- Fixed: Smart Chat thread adapter should better handle past completions to prevent unexpected behavior\r\n	- prevented `build_request` from outputting certain request content unless the completion is the current completion\r\n		- logic is specific to completion adapters (actions, actions_xml, thread)\r\n\r\n## patch `v3.0.20`\r\n\r\n- Fixed: Smart Environment settings tab should be visible during "loading" and "loaded" states\r\n- Fixed: Open URL externally should use window.open with "_external" if webviewer plugin is installed\r\n\r\n## patch `v3.0.21`\r\n\r\n- Implemented Smart Completions fallback to Smart Chat configuration\r\n	- WHY: enables use via global `smart_env` instance without requiring `chat_model` parameters in every request\r\n\r\n## patch `v3.0.22`\r\n\r\n- Improved connections view event handling\r\n	- prevent throwing error when no view container is present on iOS\r\n\r\n## patch `v3.0.23`\n\r\n- Added Getting Started guide\r\n	- opens automatically for new users\r\n	- can be opened manually via command `Show getting started`\r\n	- can be opened from the connections view "Help" icon\r\n	- can be opened from the main settings "Open getting started guide" button';
 
 // src/modals/release_notes.js
 var import_obsidian47 = require("obsidian");
@@ -31814,12 +31869,9 @@ var {
   Platform: Platform6
 } = import_obsidian48.default;
 var SmartConnectionsPlugin = class extends Plugin {
-  static get defaults() {
-    return default_settings();
-  }
   get item_views() {
     return {
-      ScConnectionsView,
+      ConnectionsView,
       ScLookupView,
       SmartChatsView,
       SmartChatGPTView,
@@ -31931,7 +31983,9 @@ var SmartConnectionsPlugin = class extends Plugin {
     set_last_known_version(this.manifest.version);
     setTimeout(() => {
       this.open_connections_view();
-      this.open_chat_view();
+    }, 1e3);
+    setTimeout(() => {
+      new GettingStartedModal(this).open();
     }, 1e3);
     if (this.app.workspace.rightSplit.collapsed) this.app.workspace.rightSplit.toggle();
     this.add_to_gitignore("\n\n# Ignore Smart Environment folder\n.smart-env");
@@ -32065,6 +32119,13 @@ var SmartConnectionsPlugin = class extends Plugin {
         new ReleaseNotesModal(this, this.manifest.version).open();
       }
     });
+    this.addCommand({
+      id: "show-getting-started",
+      name: "Show getting started",
+      callback: () => {
+        new GettingStartedModal(this).open();
+      }
+    });
   }
   // We keep the old code
   async add_to_gitignore(ignore, message = null) {
@@ -32195,15 +32256,11 @@ ${message ? "# " + message + "\n" : ""}${ignore}`);
    * Opens a URL externally, using the Obsidian webviewer plugin if possible,
    * otherwise falling back to window.open().
    *
+   * @deprecated use open_url_externally from obsidian-smart-env/utils/open_url_externally.js instead
    * @param {string} url
    */
   open_url_externally(url) {
-    const webviewer = this.app.internalPlugins?.plugins?.webviewer?.instance;
-    if (webviewer && typeof webviewer.openUrlExternally === "function") {
-      webviewer.openUrlExternally(url);
-    } else {
-      window.open(url, "_blank");
-    }
+    open_url_externally(this, url);
   }
   /**
    * Handles the OAuth callback from the Smart Plugins server.
@@ -32247,10 +32304,6 @@ ${message ? "# " + message + "\n" : ""}${ignore}`);
     if (spTab) {
       this.app.setting.openTab(spTab);
     }
-  }
-  open_supporters_modal() {
-    if (!this.supporters_modal) this.supporters_modal = new ScSupportersModal(this);
-    this.supporters_modal.open();
   }
   // DEPRECATED
   /**
