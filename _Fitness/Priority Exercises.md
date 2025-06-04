@@ -204,7 +204,7 @@ _~2–3 minutes total – pick 4–5_
 - Twisted arms
 
 **Optional Add-In:**
-- **Duck Walks** – **2 passes across gym or 30–45 seconds**
+- **Duck Walks** – **2 passes across gym or 30–45 seconds** - with mediball
 
 ###### Sprinting  Specific - 1 min 
 - ***Single-Leg RDL w/ Knee Drive Swing*** - Hold 3 sec in each part explode, swing, and Step.
@@ -229,15 +229,14 @@ _~3–4 minutes total – choose a flow or 3–5 moves_
 - **Inchworms** – Stand → walk hands to plank → back up, 5–8 reps
 - **World’s Greatest Stretch** – Deep lunge + rotation opposite side arm in relation to front kneeling knee, 3–5 per side
 - [[Lower#^9744bc |Dynamic Cat-Cow]] → Hold Cat-Cow Stretch – **6–8 transitions + 10s hold**
-- Dynamic Hip Flexor Swings -> [[Lower#^357346 |Lizard Pose ]] – **6 swings + 10s hold/side**
+- Dynamic Hip Flexor Swings -> [[Lower#^357346 |Lizard Pose ]] (Just a lower to the ground version with elbows down) – **6 swings + 10s hold/side**
 	- For dynamic part lift your back knee off the ground if it was resting begin rocking forward and backward, shifting your weight between your front foot and back toes.
-##### **Standing**
-- ***Scapular Wall Slides*** – Slide arms up/down while back touches wall, 10 reps
-- ***Leg Swings*** – Front/back & side-to-side, 10–15 each leg
-- ***Walking Lunges + Reach*** – Forward lunge + arms overhead, 8–10 each leg
-- ***Hip Circles / Openers*** – Knee lift and rotate out, 8–10 per leg
-- ***Knee Hugs to Calf Raise*** – Alternate legs, balance & stretch, 8–10 each leg
-
+##### **Standing** - **10 reps Each Limb**
+- ***Scapular Wall Slides*** – Slide arms up/down while back touches wall
+- ***Leg Swings*** – Front/back & side-to-side
+- ***Walking Lunges + Reach*** – Forward lunge + arms overhead
+- ***Hip Circles / Openers*** – Knee lift and rotate out
+- ***Knee Hugs to Calf Raise*** – Alternate legs, balance & stretch
 ##### Sprinting  Specific - 1 min
 - ***Backward Walking & Skipping***
 - ***Carioca***
@@ -600,7 +599,7 @@ Prioritize resistance bands for explosive phase they can be used for other phase
 | Landmine Twist                      | 20         | 40        | 4    | 8    |       | Barbell    | High     | N/A               | Upper  | Core                  | Standing  | [[Upper#^b8a4b6 \|Landmine Twist ]]                                     | *10*     | Pull          | N/A   | CM    |
 | Lateral Rotations                   | 0          | 0         | 4    | 8    |       | Barbell    | High     | N/A               | Full   | Multi                 | Landmine  | [[Landmines#^ceab94 \|Lateral Rotations]]                               | *0*      | Pull          | N/A   | RC    |
 | B Squats                            | 20         | 40        | 4    | 8    |       | Barbell    | High     | N/A               | Bottom | Multi                 | Standing  | B Squats                                                                | *25*     | Pull          | N/A   | CM    |
-| Squat to Press                      | 0          | 0         | 4    | 8    |       | Barbell    | High     | N/A               | Full   | Multi                 | Landmine  | [[Landmines#^11ad14\|Squat to Press]]                                   | *0*      | Pull          | N/A   | RC    |
+| Squat to Press                      | 0          | 0         | 4    | 8    |       | Barbell    | Low      | N/A               | Full   | Multi                 | Landmine  | [[Landmines#^70b95c \|Squat to Press]]                                  | *0*      | Pull          | N/A   | RC    |
 | Clean to Jerk & Press               | 0          | 20        | 4    | 8    | Yes   | Barbell    | High     | N/A               | Full   | Multi                 | Standing  | [[Full Body#^0c16fd \|Clean to Jerk & Press]]                           | **5**    | Pull          | N/A   | EP    |
 | Single-Arm Shoulder Press           | 0          | 0         | 4    | 8    |       | Barbell    | High     | N/A               | Upper  | Shoulder              | Landmine  | [[Landmines#^2a2dc9 \|Single-Arm Shoulder Press]]                       | *0*      | Pull          | N/A   | RC    |
 | Reverse Lunge + Rotation            | 0          | 0         | 4    | 8    |       | Barbell    | Med      | N/A               | Full   | Multi                 | Landmine  | [[Landmines#^82208b\|Reverse Lunge + Rotation]]                         | *0*      | Pull          | N/A   | RC    |
@@ -680,7 +679,7 @@ Prioritize resistance bands for explosive phase they can be used for other phase
 | Leg Press off Back G&H              | 235        | 270       | 4    | 8    | Yes   | Fixed      | Low      | N/A               | Bottom | Multi                 | Heals     | Leg Press off Back G&H                                                  | *135*    | Push          | N/A   | CM    |
 | Leg Press off Back Quads            | 540        | 540       | 4    | 8    | Yes   | Fixed      | Low      | N/A               | Bottom | Quads                 | Close     | Leg Press off Back Quads                                                | *270*    | Push          | N/A   | CM    |
 | Leg Press Seated                    | 100        | 110       | 4    | 8    | Yes   | Fixed      | Low      | N/A               | Bottom | Multi                 | UpClose   | Leg Press Seated                                                        | **110**  | Push          | N/A   | CM    |
-| Jefferson Curl                      | 0          | 0         | 4    | 8    | Yes   | Kettlebell | _Highest | N/A               | Back   | Lower Abdom           | Platform  | [[Core#^7f79f3 \| Jefferson Curl]]                                      | *0*      | Pull          | N/A   | RC    |
+| Jefferson Curl                      | 0          | 0         | 4    | 8    |       | Kettlebell | _Highest | N/A               | Back   | Lower Abdom           | Platform  | [[Core#^7f79f3 \| Jefferson Curl]]                                      | *0*      | Pull          | N/A   | RC    |
 | Kettlebell Swing                    | 17.6       | 17.6      | 4    | 8    | Yes   | Kettlebell | _Highest | N/A               | Full   | Multi                 | Standing  | [[Full Body#^bb1837\|Kettlebell Swing]]                                 | **17.6** | Both          | N/A   | PG    |
 | Turkish Get-Up                      | 17.6       | 17.6      | 4    | 8    | Yes   | Kettlebell | _Highest | N/A               | Full   | Multi                 | Grounded  | [[Full Body#^7d58d7 \|Turkish Get-Up]]                                  | **17.6** | Both          | N/A   | RC    |
 | Bottoms Up                          | 17.6       | 17.6      | 4    | 8    | Yes   | Kettlebell | High     | N/A               | Upper  | Multi                 | Standing  | [[Upper#^9def13\|Bottoms Up]]                                           | **17.6** | Pull          | N/A   | PG    |
