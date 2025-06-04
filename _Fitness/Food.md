@@ -44,7 +44,7 @@ Corn bread
 | **Protein Drinks(Optional)**              | **$82**<br> |                                                 |
 | **Total**                                 |  **$360**   |                                                 |
 
-
+[15+ High-Protein Breakfast Recipes for Better Gut Health](https://www.eatingwell.com/high-protein-breakfast-recipes-for-better-gut-health-11746773)
 
 ### Homemade snacks to cover 1220 calorie 48 to 113g protein deficit
 protein deficit assumes no protein drink
@@ -52,11 +52,16 @@ protein deficit assumes no protein drink
 Dave Killer Bread 5.47
 
 12 slice cheese  provolone 4.89
-swiss cheese 4.89
 
-turkey/chicken 4.29
 
-honey roasted  turkey 5.95
+Swiss cheese 4.89
+
+
+Honey Turkey 100 calories 9G protein  $5.95 serving size 6
+
+Chicken breast  70 calories 10g  protein $4.29  serving size 5
+
+
 
 10 pairs of bread so 10 sandwiches  
 

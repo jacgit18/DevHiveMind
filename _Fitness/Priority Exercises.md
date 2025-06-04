@@ -99,6 +99,12 @@ Inhale on on **Eccentric** when lowering the weight and exhale on **Concentric**
 - **Strength**: +5 lbs/week (upper), +10 lbs (lower)
 - **Injury Rule**: If pain >2/10, regress load or variation
 
+**Barbell Exercises: Upper vs Lower Body Considerations**
+
+Upper body barbell exercises—like the bench press—can sometimes place unnecessary strain on the wrists due to the fixed, straight bar grip. If the grip doesn’t align naturally with your wrist and shoulder joints, it can cause discomfort or even injury over time.
+
+In contrast, barbell movements for the lower body (like squats and deadlifts) or full-body lifts often allow for a more natural grip or distribute load in a way that’s generally better tolerated.
+
 ### Exceptions 
 - **Small muscles/stabilizers**: Favor tempo over intensity (e.g., 3x15 slow calf raises).
 - Otherwise?  
@@ -239,17 +245,26 @@ dumbbell lunge on balance board or plate or platform
 #### **1. Raise (Increase Body Temp & Heart Rate)**
 _~2–3 minutes total – pick 2–3_ or pick one to do for the whole time.
 
+##### **Grounded On Back**
+- Bicycles – **1 min**
 ##### Seated
 - Rower or Incline Treadmill Walk – **1 min**
+
+##### **Grounded On Side**
+- **Side-to-Side Rolling** – Roll from side to side across a mat, using arms and hips to initiate; great for warm blood flow in spine/core.
+    
+- **Side-Lying Bicycles** – Pedal your top leg like a bike in the air to raise HR slightly and warm up hips.
+
 ##### **Grounded On Front**
 - [[Upper#^4a9cd1 |Pike Push-Ups]] – **6–8 reps**
 - [[Core#^60b781 |Tuck Jumps to Plank]]– **6 reps**
 
 ##### **Standing**
+- ***Free Flow Skipping***
 - **Shoulder Rolls** – Forward & backward, *10 reps each*
 - **Torso Twists** – Controlled rotation side-to-side - like throwing hook, *15–20 reps*
 - **Neck Rolls** – Slow circles, 5 reps each direction
-- **Wrist Curl** - Do a few sets not as many as other exercises
+- **[[Wrist Curl]]** - Do a few sets not as many as you would other exercises at home maybe in gym for specific variations.
 - Jump Rope – **1 min**
 - Fast High Knees + Butt Kicks – **30s each**
 - Arm Swings (Hugs) – **30s**
@@ -258,8 +273,7 @@ _~2–3 minutes total – pick 2–3_ or pick one to do for the whole time.
 - Jumping Jacks – **1 min**
 - [Arm Circles](https://www.youtube.com/watch?v=YGXgpcr7UY4) with 5lb dumbbells different ranges – *20 reps each direction*
 - Shadowboxing with Resistance bands (fast-paced) – *30–45s*
-###### Sprinting  Specific
-- **Free Flow Skipping**
+
 
 #### **2. Activate (Engage Muscle Groups)**
 _~2–3 minutes total – pick 4–5_
@@ -271,7 +285,10 @@ _~2–3 minutes total – pick 4–5_
 
 ##### **Grounded On Side**
 - [[Core#^5805af |Side Plank Hip dip]] (floor or bench feet on ground or bench) - **10–12 reps** - Lateral flexion
-- **Rotational Side Plank**
+- **Side-Lying Leg Lifts** – Top leg lifts straight up and down; targets glute medius.
+- **Side-Lying Hip Circles** – Lift top leg and draw slow circles in the air.
+- **Side Plank Leg Raises** – From a side plank, lift top leg up/down; glutes + core activation.
+- ***Rotational Side Plank*** -  3–4 slow rotations per side
 ##### **Grounded On Front**
 - Superman Hold – **20–30s hold**
 - [[Lower#^01867f |Quadruped Kickbacks]] – **8–10 reps/side**
@@ -279,9 +296,9 @@ _~2–3 minutes total – pick 4–5_
 - Push-Up Hold (top and bottom) – **10s each**
 - [[Upper#^5ff8c1 |Scapular Push-Ups ]] – **10–12 reps with deep breathing**
 	- Breathe deeply as you push your chest outward, squeezing your shoulder blades together. Then, reverse the motion by pulling your chest inward and separating your shoulder blades, keeping your elbows straight throughout the movement.
-- **Elbow Push-ups (Pike Push-up Focus)**
-- **Scorpion Stretch**
-- **Supine lower body** - t position leg raise to opposite hand
+- ***Elbow Push-ups (Pike Push-up Focus)*** - 8 reps
+- ***Scorpion Stretch*** - 30 sec each side
+- ***Supine lower body*** - t position leg raise to opposite hand (6 reps/side)
 
 ##### **Standing**
 - Calf Raises – **10–12 reps**
@@ -296,7 +313,7 @@ _~2–3 minutes total – pick 4–5_
 - **Duck Walks** – **2 passes across gym or 30–45 seconds**
 
 ###### Sprinting  Specific - 1 min 
-- **Single-Leg RDL w/ Knee Drive Swing** - Hold 3 sec in each part explode, swing, and Step.
+- ***Single-Leg RDL w/ Knee Drive Swing*** - Hold 3 sec in each part explode, swing, and Step.
 
 
 #### **3. Mobilize (Dynamic Range of Motion)**
@@ -310,44 +327,43 @@ _~3–4 minutes total – choose a flow or 3–5 moves_
 - **Spinal Twists** - 30 sec
 - [[Lower#^ee779f |90/90 Transitions ]] – **8 reps**
 - Butterfly Hip Rocks → Butterfly Stretch – **8 rocks + 10s stretch**
-- [[Core#^eb4c68 | Pancake Stretch]]  **4 sets 8 reps**
+- [[Core#^eb4c68 | Pancake Stretch]]  - **4 sets 8 reps**
 
 ##### **Grounded On Side**
 - **Side-Lying Leg Lifts** – Leg raises to warm up outer hips/glutes(Try standing version as well)
 ##### **Grounded On Front**
 - **Inchworms** – Stand → walk hands to plank → back up, 5–8 reps
-- **World’s Greatest Stretch** – Deep lunge + rotation, 3–5 per side
+- **World’s Greatest Stretch** – Deep lunge + rotation opposite side arm in relation to front kneeling knee, 3–5 per side
 - [[Lower#^9744bc |Dynamic Cat-Cow]] → Hold Cat-Cow Stretch – **6–8 transitions + 10s hold**
 - Dynamic Hip Flexor Swings -> [[Lower#^357346 |Lizard Pose ]] – **6 swings + 10s hold/side**
 	- For dynamic part lift your back knee off the ground if it was resting begin rocking forward and backward, shifting your weight between your front foot and back toes.
 ##### **Standing**
-- **Scapular Wall Slides** – Slide arms up/down while back touches wall, 10 reps
-- **Leg Swings** – Front/back & side-to-side, 10–15 each leg
-- **Walking Lunges + Reach** – Forward lunge + arms overhead, 8–10 each leg
-- **Hip Circles / Openers** – Knee lift and rotate out, 8–10 per leg
-- **Knee Hugs to Calf Raise** – Alternate legs, balance & stretch, 8–10 each leg
+- ***Scapular Wall Slides*** – Slide arms up/down while back touches wall, 10 reps
+- ***Leg Swings*** – Front/back & side-to-side, 10–15 each leg
+- ***Walking Lunges + Reach*** – Forward lunge + arms overhead, 8–10 each leg
+- ***Hip Circles / Openers*** – Knee lift and rotate out, 8–10 per leg
+- ***Knee Hugs to Calf Raise*** – Alternate legs, balance & stretch, 8–10 each leg
 
-###### Sprinting  Specific - 1 min
-- **Backward Walking & Skipping**
-- **Carioca**
-- **High Knee Circles**
-* **Internal/External Ankle Circles**
-* **Lateral Leg Swings (side-to-side)**
-* **Linear Leg Swings (forward/back)**
-- **Side Shuffles**
-- **Walking Lunges with Reach:** Step into lunge, drive *up* powerfully through the front heel, reaching both arms overhead tall. Keep torso upright. (Focuses on extension, hip flexor stretch).
-
-
-
-* Cossack position but on knee with extended leg  extend v arms leaning to alternating side
-* lung position extend v arms leaning back rotating towards one shoulder
-* lunge position rotate and side bend down over the front leg that is kneeling for the lunge almost trying to look at extended leg
-
+##### Sprinting  Specific - 1 min
+- ***Backward Walking & Skipping***
+- ***Carioca***
+- ***High Knee Circles***
+* ***Internal/External Ankle Circles***
+* ***Lateral Leg Swings (side-to-side)***
+* ***Linear Leg Swings (forward/back)***
+- ***Side Shuffles***
+###### Spinal Twist - *5 reps/side*
+- ***Half-Kneeling Cossack V Reach*** - keep tension in extend leg. 
+- ***Half-Kneeling Lunge V Reach with Rotation*** - side bend and rotate towards back foot away from front then alternate front foot. 
+- ***Walking Lunges with Reach*** - Step into lunge, drive *up* powerfully through the front heel, reaching both arms overhead tall. Keep torso upright. (Focuses on extension, hip flexor stretch).
+- ***Quarter-Kneeling Cossack V Reach*** - keep back leg hovering off floor in a split squat position rotating down towards back foot at a downward angle into the ground.
 
 #### **4. Potentiate (Prep for Explosive Work)**
 _~1–2 minutes total – pick 2_
 
 ##### **Grounded On Side**
+- **Side Plank with Knee Drive** – From a side plank, explosively drive the top knee toward the chest, mimicking sprint mechanics.
+##### **Grounded On Front**
 - Clap Push-Ups or Explosive Incline Push-Ups – **4–6 reps**
 
 ##### **Standing**
