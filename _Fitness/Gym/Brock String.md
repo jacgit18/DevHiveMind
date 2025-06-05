@@ -13,6 +13,8 @@ dg-publish:
 ---
 ### **How the Brock String Helps You (Age 31, Nearsighted, Worsening Vision)**  
 
+> Alternate with and without glasses
+
 1. **Reduces Eye Strain**  
 
    - If you spend long hours on screens (computer/phone), your eye muscles can "lock" in near-focus mode, worsening myopia. The Brock String trains your eyes to **flexibly switch focus** between distances, reducing strain.  
@@ -42,6 +44,8 @@ dg-publish:
   
 
 ### **Your Customized Brock String Plan**  
+
+![📍How To Do The FAMOUS Vision Therapy Exercise: Brock String Exercise - YouTube](https://youtu.be/4rDygaF3Dog?si=0isBlPCEC9mv-kaQ)
 
 **Goal:** Combat worsening myopia + reduce digital eye strain.  
 
