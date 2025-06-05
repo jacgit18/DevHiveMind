@@ -20,8 +20,18 @@ DeadBug Alt Heel Tap
 
 
 Seated row in back 90 45 per side
-
   
+
+- **Example (Dumbbell Bench Press):**  
+
+  - Start with **50 lbs x 10 reps** (if the last 2 reps were tough but doable, this is your **~10RM**).  
+
+  - If you hit **12+ reps easily**, go up **5–10 lbs** next set.  
+
+  - If you **fail before 6 reps**, drop **10–20 lbs** and retest.
+
+
+
 
 Running days no leg day
 
