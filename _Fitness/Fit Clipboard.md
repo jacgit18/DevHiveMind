@@ -156,7 +156,7 @@ Narrow feet on back extension for lower back
 Wide feet for glutes on back extension
 
 
-
+5lb rear delt standing
 
 
 180 or lower to go deep in hack squat

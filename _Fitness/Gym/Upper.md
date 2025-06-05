@@ -35,7 +35,9 @@ Get to your reps to 15 sec each try to extend for 45 sec MAX
 	- ![](https://www.youtube.com/watch?v=H4mVGHaK2f4)
 	Front Fly with Dumbbell ^ef7d41
 	- ![](https://www.youtube.com/watch?v=Nhvz9EzdJ4U)
-	Rear/ reverse Fly with Dumbbell ^d1a6fd
+	Rear/ reverse Fly with Dumbbell 
+		- ![Exercise Index - Bent Over Dumbbell Rear Delt Raise - YouTube](https://youtu.be/73WpaOMnhSU?si=HXTqn-ncBpk57ADz)
+ ^98fc91
 	- ![Dumbbell](https://www.youtube.com/watch?v=nlkF7_2O_Lw)
 - Shoulder Press - Avoid behind-the-head; stick to pressing in front.
 - Chest Press (Machine or Free Weights)
