@@ -37,6 +37,7 @@ Here’s the **prioritized ranking (1-5)** of the best landmine exercises for **
 - **Why?** Unilateral strength helps **swimming (stroke balance) and Muay Thai (jab/clinch stability).**  
 - ![How To Do The Landmine Shoulder Press - YouTube](https://www.youtube.com/watch?v=t9GuiNQo1O4)
    ^2a2dc9
+![Landmine Press for Shoulder health (DO THEM NOW) - YouTube](https://youtu.be/qFXojXa-RCU?si=KU-YY4kleeOyeNmZ)
 
 **7. Landmine Reverse Lunge + Rotation**  
 - **Why?** Mobility and rotational control benefit **BJJ (hip movement) and Muay Thai (angle changes).**  

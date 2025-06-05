@@ -168,3 +168,5 @@ Hypotrophy back extension no weights
   
 
 Strength training on back extension a dumbbell
+
+landmine shoulder press pririoty 
