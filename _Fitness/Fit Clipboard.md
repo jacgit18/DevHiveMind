@@ -19,6 +19,14 @@ dead bug hand pushed against wall alternating pushing heals down - Anti-extensio
 DeadBug Alt Heel Tap
 
 
+Seated row in back 90 45 per side
+
+  
+
+Running days no leg day
+
+
+Road passed survival to blue belt
 
 
 
