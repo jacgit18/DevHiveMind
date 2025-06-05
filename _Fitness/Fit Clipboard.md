@@ -141,3 +141,30 @@ can use heavy resistance bands with plate to create a sudo weighted vest and use
   
 
 Practice offset with one weight on barbell and at home with resistance band kettlebell
+
+
+
+
+Kettlebell dribble
+
+  
+
+Narrow feet on back extension for lower back
+
+  
+
+Wide feet for glutes on back extension
+
+
+
+
+
+180 or lower to go deep in hack squat
+
+  
+
+Hypotrophy back extension no weights
+
+  
+
+Strength training on back extension a dumbbell
