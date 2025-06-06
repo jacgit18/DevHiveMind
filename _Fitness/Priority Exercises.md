@@ -20,9 +20,53 @@ dg-publish:
 ---
 # Attributes
 
-### Stats
+## Stats
+
+#todo/Med/Dev 
+- [ ] Revisit and edit chart switch to table with current top exercises of focus
+![](https://www.youtube.com/watch?v=djj7QXZAIjM)
+```chart
+type: bar
+id: all
+labels: [Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday]
+series:
+  - title: Title 1
+    data: [1, 2, 3, 4, 5, 6, 7, 8, 9]
+  - title: Title 2
+    data: [5, 4, 3, 2, 1, 0, -1, -2, -3]
+```
+
+Experimental Button That Generates files
+```dataviewjs
+let pages = dv.pages("#workouts").where(b => b.date_of_workout >= DateTime.now().minus({weeks:1})).groupBy(b => b.date_of_workout)
+
+for (let group of pages.sort(d => d.key, 'desc')) { 
+	dv.header(6, group.key);
+	dv.table(["File", "Exercise", "Set", "Reps", "Time", "Weight"], 
+		group.rows 
+			.sort(k => k.type, 'asc')
+			.map(k => [k.file.link, k["exercise"], k["sets"], k["reps"], k["time"], k["weight"]]))
+}
+```
+```button
+name Add Exercise
+type command
+action QuickAdd: Add Exercise
+color purple
+```
+^button-l21b
+
+
+## Calories
+> [!tip] Food for Thought
+>  Watch food videos before or while eating to stimulate your appetite and help you eat more without feeling full too quickly. Also walk around while eating and limit water to eat more.
+
+
+#todo/BAU/Life 
+- [ ] Order [[Food]] from CookUnity twice a month or some alt staying under $260 and $70 left over for super market and eating out maybe $30 more if eating out or networking so $360 for food at max
+
 - 15% body fat 
-- **Weight Last Year:** 115 lbs
+- **Weight Last Year:** 113 lbs
 - **WaterToDrink:** 80 oz
 
 | Weeks | Weight | Date       |
@@ -36,93 +80,100 @@ dg-publish:
 | 6     |        |            |
 | 7     |        |            |
 
-#### Calories
-> [!tip] Food for Thought
->  Watch food videos before or while eating to stimulate your appetite and help you eat more without feeling full too quickly. Also walk around while eating and limit water to eat more.
-
 - **Maintain Current Weight:** ~2,100 calories/day
 - **Calorie Goal for Gaining Weight (fast approach):** ~3,600 calories/day
 - **Calorie Goal for Gaining Weight (moderate approach):** ~3,300 calories/day (current target)
 - **Maintain New Weight (goal weight):** ~2,800 calories/day
 - **Slow Weight Gain:** ~1,700–1,800 calories/day over the course of a year (extremely slow, not typical for bulking).
  
-#todo/BAU/Life 
-- [ ] Order [[Food]] from CookUnity twice a month or some alt staying under $260 and $70 left over for super market and eating out maybe $30 more if eating out or networking so $360 for food at max
 ##### **Protein Requirements:**
 1. **Daily Protein for Maintenance/Gain:** ~158 – 330 grams of protein per day
 2. **Protein for Cutting (higher intake for muscle preservation):** ~180 grams/day
 
-# Warm-Up & Cool-Down 
-Start with a dynamic stretch to Improve blood flow and flexibility. End with a static stretch targeting major muscle groups. Basically any static stretch has a dynamic variation with movement. 
-
 ## Best Practices
-#todo/Workout 
-- [ ] Follow [[Workout Phases]] starting June and focus on [[Optimal Order Of Operations For Body Development]] and [[Optimal Order by Exercise Type]] 
-- [ ] for alternating arm excercise start with left arm
-- [ ] For full body days alt from strength upper to lower hypertrophy and vise versa strength lower to upper hypertrophy
-- [ ] For Lower body focus on 80% strength training and 20% hypertrophy. 
-- [ ] For Upper body focus on 20% strength training and 80% hypertrophy training to failure with high volume but first establish a good strength baseline.
-- [ ] one hypo day and next day strength day
-- [ ] target upper with hypo and lower with strength
-- [ ] Focus on starting workout session with strength training for whatever part of the body your targeting then end session with high volume hypertrophy training.
-- [ ] After a year or more shift phases for strength training and high volume hypertrophy training. 
-- [ ] Practice at the gym for warm ups and outside skip and walk a little in between jogging spurts  add a lunge extending upper body up on lunge
-- [ ] For rest days make it one of my weekdays like if I have a networking event and there isn't a good timing in terms of going before or maybe even after the event and you can also take cold Baths on that day
-- [ ] Take a break from Barbell chest presses and two arm variations of exercises  for muscle Imbalance test out two arm excercise again in August if still a issue try again in October.
+#todo/BAU/Workout  
+- [ ] Alternate between **hypertrophy and strength phases on different days**. Aim to train **at least 5 to 6 days per week**, which allows for effective coverage of both upper and lower body across both training phases.
+- [ ] After you've built a solid training foundation (about a year or more of consistent training), consider **shifting your focus in multi-week blocks** so alternating phase every 6 weeks.
+- [ ] Advance stage shift focus of phases:
+	- [ ] For Lower body focus on 80% strength training and 20% hypertrophy. 
+	- [ ] For Upper body focus on 20% strength training and 80% hypertrophy training to failure with high volume.
+- [ ] Cycle in different exercises every **8-12 weeks** to avoid stagnation.
+- [ ] Do 10 empty reps to reduce injury before doing excercise.
+- [ ] Follow [[Workout Phases]] starting June and focus on [[Optimal Order Of Operations For Body Development]] and [[Optimal Order by Exercise Type]]. 
+- [ ] Focus on solo arm exercises always starting with left arm then shift to dual arm exercises for muscle Imbalance, test out two arm excercise again in August if still a issue try again in October with Barbell chest press and chest flys.
+- [ ] For full body days and in general always start strength phase but for full body days alternate area of focus so one day focus strength training on lower then next day upper and the part of the body that isn't doing strength should focus on hypertrophy and use this day for experimenting throwing in random exercises.
+- [ ]  If you're not **feeling the target muscle** during an exercise, **reduce momentum** and slow down the movement to improve control and mind-muscle connection and If you feel **off balance**, try **making a fist**—this creates full-body tension and enhances stability during the lift.
+- [ ] Sprint to and from gym a few times a week after you build to it.
 
-### Terms
-- **Concentric (Lifting)**: Explode as fast as form allows.
-- **Eccentric (Lowering)**: Controlled and deliberate (2–4 seconds).
-- **Rep Max**: RM
+
+
+
+
+
+
+
+
+- [ ] **Limit Combination Exercises (Weight and Endurance)**
+	- **Purpose**: Prioritize strength and muscle growth.
+	- **Strategy**: When focusing on gaining weight, it's important to prioritize weightlifting and muscle-building exercises over combining endurance movements with heavy lifting. Combining endurance exercises with weight training can decrease the overall intensity and focus needed for strength development.
+	- **Recommendation**: Stick to pure weight training for muscle growth and use endurance exercises sparingly to avoid burning excessive calories or compromising muscle recovery.
+
+#### Schedule 
+
+#todo/BAU/Workout 
+- [ ] For one of the days at Gym focus on full body while also using the day for experimenting.
+- [ ] For rest days make it one of my weekdays like if I have a networking event and there isn't a good timing in terms of going before or maybe even after the event and you can also take cold Baths on that day
+- [ ] If very sore or exhausted do a light day with bands to still get something in but not do anything heavy with weights.
+
+
+- [ ] Start Using O2 trainer again for diaphragmatic breathing
+	- Try using during cold baths but first maybe try before or after bath.
+- [ ] Cold Bath max 20 minutes to help regulate nervous system assuming warm start first if not lesser by end of May start cold fully and while listening to 60 BPM(Beats Per Minute) metronome.
+	- Maybe switch to back to warm start or cold showers in the fall at a lower frequency.
+	- But if Cold start about 3 min total.
+
+- Sleep 
+	- [ ] Stop Eating 3 hour before sleep
+	- [ ] Stop Drinking 2 hour before sleep
+	- [ ] Stop Scrolling 1 hour before sleep
+
+
+
+
+
+
+
 - **Rotational/Core Strength**:  RC
 - **Pulling/Grip Strength**: PG
 
-Inhale on on **Eccentric** when lowering the weight and exhale on **Concentric** which the lift or basically the hard part of the excercise and while doing excercise where you are holding in place like a Plank maintain slow, steady breathing throughout the hold. 
+**Seasonal Training Strategy**
 
-1. **Avoid Risky Movements:**
-    - Skip upright rows due to the unnatural shoulder position.
-    - Skip Renegade rows
-    - Stay away from 
-	    - Romanian dead lift
-	    - Dumbbell Lateral raise 
-	    - Hanging Leg raises 
-	    - Leg extension if pain don't do it 
-	    - Doing max weight for excercise that hit same muscle on the same day
-    - Stop two reps before exercise failure alternate this depending how you feel.
-2. **Equipment Tips:**
-    - Use **barbells** for added weight when building strength.
-    - Use **dumbbells** for greater range of motion and correcting muscle imbalances.
-    - Any **curlbar** exercise can be done with barbell.
+Your body tends to **retain more weight during the colder months** (October to February), making it an ideal time to **increase training frequency** and build mass or strength.
 
-### **Progression Rules**
-- **Hypertrophy**: Add 1 rep/set or +2.5 lbs weekly
-- **Strength**: +5 lbs/week (upper), +10 lbs (lower)
-- **Injury Rule**: If pain >2/10, regress load or variation
-
-**Barbell Exercises: Upper vs Lower Body Considerations**
-
-Upper body barbell exercises—like the bench press—can sometimes place unnecessary strain on the wrists due to the fixed, straight bar grip. If the grip doesn’t align naturally with your wrist and shoulder joints, it can cause discomfort or even injury over time.
-
-In contrast, barbell movements for the lower body (like squats and deadlifts) or full-body lifts often allow for a more natural grip or distribute load in a way that’s generally better tolerated.
-
-### Exceptions 
-- **Small muscles/stabilizers**: Favor tempo over intensity (e.g., 3x15 slow calf raises).
-- Otherwise?  
-    **Big picture: The logic about phases holds across most training exercises.**
+- Once you’ve hit your baseline, aim for **6 workouts per week in the winter** to take advantage of this natural tendency.
+    
+- In the **warmer months**, when energy is often spent on outdoor activities and appetite may decrease, **4 to 5 workouts per week** can be more sustainable.
 
 
-## Start  Dynamic End Static
-Like BJJ and a baby start off on back and progress to standing
-
-- **When to Use Weights:**
-    - ✅ **Mobility/Activation**: Use **bodyweight only**
-    - ✅ **Strength/Endurance/Burnout**: Add **light weights** (only if form stays clean)
 
 
-⏱️ **Total Time:** 5–15 minutes(about 7 min at home and gym)
-🎯 **Each Exercise:** 10–15 reps or 20–30 seconds unless noted
 
-### **Warm-Up (RAMP Protocol)**
+
+
+
+
+
+
+
+
+
+# Dynamic Warm-Up (RAMP Protocol) & Static Cool-Down 
+
+Start with a dynamic stretch to Improve blood flow and flexibility. End with a static stretch targeting major muscle groups. Basically any static stretch has a dynamic variation with movement. 
+
+#todo/BAU/Workout 
+- [ ] If you took a cold bath before working out make sure you really stretch to warm up again to reduce injury.
+
 **Recommended Duration:** ~2–3 minutes per section (Total: 10–15 min)  
 **Tip:** Prioritize movement quality over speed. Use Duck Walks between sections or as part of the "Activate" phase.
 
@@ -131,12 +182,20 @@ Like BJJ and a baby start off on back and progress to standing
 ![https://youtu.be/Aj5SONT3T2o?si=9z5TvZuR1iBfgjch&t=515](https://youtu.be/Aj5SONT3T2o?si=9z5TvZuR1iBfgjch&t=515)
 
 **Skipping Foundation (2-3 mins):**
-    *   **Focus:** Tall posture, head up, expressive arms, **active ankle dorsiflexion on landing.**
-    *   **Cue:** "Land like you're stepping on a hot plate - quick, light, front of foot angled up (dorsiflexed)."
-    *   **Execution:** Skip continuously, focusing on rhythm and form. Keep core engaged, back straight.
+- **Focus:** Tall posture, head up, expressive arms, **active ankle dorsiflexion on landing.**
+- **Cue:** "Land like you're stepping on a hot plate - quick, light, front of foot angled up (dorsiflexed)."
+- **Execution:** Skip continuously, focusing on rhythm and form. Keep core engaged, back straight.
+
+**When to Use Weights:**
+    - ✅ **Mobility/Activation**: Use **bodyweight only**
+    - ✅ **Strength/Endurance/Burnout**: Add **light weights** (only if form stays clean)
+
+⏱️ **Total Time:** 5–15 minutes(about 7 min at home and gym)
+🎯 **Each Exercise:** 10–15 reps or 20–30 seconds unless noted
+
 
 ---
-
+> **Start off Back like a baby and progress to standing then running**
 #### **1. Raise (Increase Body Temp & Heart Rate)**
 _~2–3 minutes total – pick 2–3_ or pick one to do for the whole time.
 
@@ -155,7 +214,7 @@ _~2–3 minutes total – pick 2–3_ or pick one to do for the whole time.
 - [[Core#^60b781 |Tuck Jumps to Plank]]– **6 reps**
 
 ##### **Standing**
-- ***Free Flow Skipping***
+- ***Free Flow Skipping*** at or on the way to gym.
 - **Shoulder Rolls** – Forward & backward, *10 reps each*
 - **Torso Twists** – Controlled rotation side-to-side - like throwing hook, *15–20 reps*
 - **Neck Rolls** – Slow circles, 5 reps each direction
@@ -245,6 +304,7 @@ _~3–4 minutes total – choose a flow or 3–5 moves_
 * ***Lateral Leg Swings (side-to-side)***
 * ***Linear Leg Swings (forward/back)***
 - ***Side Shuffles***
+
 ###### Spinal Twist - *5 reps/side*
 - ***Half-Kneeling Cossack V Reach*** - keep tension in extend leg. 
 - ***Half-Kneeling Lunge V Reach with Rotation*** - side bend and rotate towards back foot away from front then alternate front foot. 
@@ -263,6 +323,59 @@ _~1–2 minutes total – pick 2_
 - Bounding (forward/lateral) – **2–3 passes**
 - Power Skips – **2 passes (20–30 yards)**
 
+##### Sprinting  Specific - 1 min
+- ***Power skips for height***
+- ***Bounding***
+- ***Sprint activation:***  
+	- 3 build-up sprints (gradually increasing effort from 60% → 80% → 90%)  
+  
+# Exercises
+>**Barbell Exercises: Upper vs Lower Body Considerations**
+Upper body barbell exercises—like the bench press—can sometimes place unnecessary strain on the wrists due to the fixed, straight bar grip. If the grip doesn’t align naturally with your wrist and shoulder joints, it can cause discomfort or even injury over time.
+In contrast, barbell movements for the lower body (like squats and deadlifts) or full-body lifts often allow for a more natural grip or distribute load in a way that’s generally better tolerated.
+
+The general principles of **training phases** like strength and hypertrophy apply to most exercises. However, when training **smaller muscles and stabilizers**, it's often better to prioritize **tempo and control over intensity** example calf raises and wrist curls should be done with a slow tempo about 3x15. 
+### Breathing & Core Engagement in Exercise
+- **Inhale** during the **eccentric phase** (_lowering the weight_).
+- **Exhale** during the **concentric phase** (_lifting the weight_), which is typically the more strenuous part of the movement.
+- While performing static holds like a **plank**, focus on **slow, steady breathing** throughout the duration of the hold.
+- No matter the movement—whether lifting, lowering, or holding—**keep your core engaged the entire time**. A braced core provides essential stability and protects your spine during all phases of the exercise.
+
+### Equipment Tips:
+- Use **barbells** for added weight when building strength.
+- Use **dumbbells** for greater range of motion and correcting muscle imbalances.
+- Any **curlbar** exercise can be done with barbell.
+
+### **Progression Rules**
+- **Hypertrophy**: Add 1 rep/set or +2.5 lbs weekly
+- **Strength**: +5 lbs/week (upper), +10 lbs (lower)
+- **Injury Rule**: If pain >2/10, regress load or variation
+
+## Regimen
+#todo/BAU/Workout
+
+- [ ] Do [[Grip Strength Training]]
+- [ ] Dead Hang at BK-MMA & Leg Day
+- [ ] Eventually add hanging weight to your pull-ups using heavy resistance band to secure plate body. 
+- [ ] Cycle in [[Stability Ball Workout Plan]] for core strengthening, flexibility, and stretching,  
+- [ ] Try Larsen bench press on flat bench or incline bench hovering or keeping straight legs to focus more on core.
+- [ ] After doing that deadlifts for a while switch to deficit deadlifts where you're standing on a plate and doing the deadlift which increases range of motion of the motion.
+- [ ] Use [[Tower 200.pdf |Tower 200]] for practicing cable machine exercises the weight ranges from 25 to 45 lb.  
+
+- [ ] When doing Incline reverse crunch a flexion excercise were you should suck in belly button towards bench. 
+- [ ] Point toes inward keep butt down for Leg extension
+
+- [ ] For Single arm Variation of wide dumbbell curl try with cable starting behind back wrist height.
+- [ ] Keep elbows high above head and alt cable height at hip and foot level for Overhead extension.
+
+- [ ] Use 30 to 45 degree angle for incline bench press which seem more effective for your body type then flat bench.
+
+
+
+- [ ] Hover in more of a standing position for abduction leg squeezing machine 70 to 80 lb.
+
+- [ ] Half lateral chest press meaning alternating between the full squeeze and a half movement not going all the way. Same thing with adduction machine.
+
 ### Row Machine 
 - **Workout 1: 1 Minute On, 1 Minute Off**
 - **Workout 2: All-Out in a Minute**
@@ -277,95 +390,23 @@ _~1–2 minutes total – pick 2_
 	- Round 6: Row two minutes, then rest for three minutes.
 	- Round 7: Row for one minute.
 
-## Priority Workouts
-#todo/Med/Dev 
-- [ ] Revisit and edit chart
-![](https://www.youtube.com/watch?v=djj7QXZAIjM)
-```chart
-type: bar
-id: all
-labels: [Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday]
-series:
-  - title: Title 1
-    data: [1, 2, 3, 4, 5, 6, 7, 8, 9]
-  - title: Title 2
-    data: [5, 4, 3, 2, 1, 0, -1, -2, -3]
-```
 
-Experimental Button That Generates files
-```dataviewjs
-let pages = dv.pages("#workouts").where(b => b.date_of_workout >= DateTime.now().minus({weeks:1})).groupBy(b => b.date_of_workout)
-
-for (let group of pages.sort(d => d.key, 'desc')) { 
-	dv.header(6, group.key);
-	dv.table(["File", "Exercise", "Set", "Reps", "Time", "Weight"], 
-		group.rows 
-			.sort(k => k.type, 'asc')
-			.map(k => [k.file.link, k["exercise"], k["sets"], k["reps"], k["time"], k["weight"]]))
-}
-```
-```button
-name Add Exercise
-type command
-action QuickAdd: Add Exercise
-color purple
-```
-^button-l21b
+### Risky Exercises & Movements:
+- Skip upright rows due to the unnatural shoulder position.
+- Skip Renegade rows
+- Stay away from 
+	- Romanian dead lift (can be dangerous if not done properly)
+	- Dumbbell Lateral raise 
+	- Hanging Leg raises 
+	- Leg extension if pain don't do it 
+	- Doing max weight for excercise that hit same muscle on the same day
+- Stop two reps before exercise failure alternate this depending how you feel.
 
 
 
-#todo/BAU/Workout
-- [ ] Dead Hang at BK-MMA & Leg Day
-- [ ] Pick rest day each week
-- [ ] Do 5 to 6 exercises per session 
-- [x] Do [[Grip Strength Training]] every day ✅ 2025-05-08
-- [ ] Run to gym following [[Sprinting Regimen]]
-- [ ] Use [[Stability Ball Workout Plan]] for core strengthening, flexibility, and stretching,  
-- [ ] Anything Zercher same under arm grip try with resistance bands
-- [ ] Single leg deadlift standing on one leg leaning forward while extending leg 
-- [ ] Try Larsen bench press or incline bench hovering or keeping straight legs to focus more on core.
-- [ ] Eventually add hanging weight to your pull-ups
-- [ ] Point toes inward keep butt down for Leg extension
-- [ ] for Zercher Squats put bar on frame instead of ground to make it easier to lift
-- [ ] After doing that deadlifts for a while switch to deficit deadlifts where you're standing on a plate and doing the deadlift which increases range of motion of the motion.
-- [ ] Workout more in the winter body retains weight more Oct to Feb
-- [ ] If you don't feel the excercise in the muscle reduce the momentum
-- [ ] Make a fist if you feel off balance to create tension during exercises
-- [ ] Pick one experiment days play around with kettlebell and other stuff
-- [ ] Maybe limit exercise to 3 different exercise per session shifting phases 
-- [ ] Goal is 4 sets 8 reps update current sets and reps for exercises at CM Phase
-- [ ] Hover in more of a standing position for abduction leg squeezing machine 70 to 80 lb.
-- [ ] When doing Incline reverse crunch a flexion excercise were you should suck in belly button towards bench. 
-- [ ] Pick 2 days out of the week to cook also can budget out two days out of the week to eat out
-- [ ] For Single arm Variation of wide dumbbell curl try with cable starting behind back wrist height.
-- [ ] Keep elbows high above head and alt cable height at hip and foot level for Overhead extension.
-- [ ] If you took a cold bath before working out make sure you really stretch to warm up again to reduce injury.
-- [ ] Use 30 to 45 degree angle for incline bench press which seem more effective for your body type then flat bench.
-- [ ] Half lateral chest press meaning alternating between the full squeeze and a half movement not going all the way. Same thing with adduction machine.
-- [ ] Use [[Tower 200.pdf |Tower 200]] for practicing cable machine exercises the weight ranges from 25 to 45 lb. Also orange weight not verified based off tower 200 weights verify at gym. 
-- [ ] **Limit Combination Exercises (Weight and Endurance)**
-	- **Purpose**: Prioritize strength and muscle growth.
-	- **Strategy**: When focusing on gaining weight, it's important to prioritize weightlifting and muscle-building exercises over combining endurance movements with heavy lifting. Combining endurance exercises with weight training can decrease the overall intensity and focus needed for strength development.
-	- **Recommendation**: Stick to pure weight training for muscle growth and use endurance exercises sparingly to avoid burning excessive calories or compromising muscle recovery.
 
-#### Schedule 
 
-#todo/BAU/Workout 
-- [ ] Do empty bar warm up sets
-- [ ] For alternating arm excercise start with left arm then go to right
-- [ ] Start Using O2 trainer again for diaphragmatic breathing
-	- Try using during cold baths but first maybe try before or after bath.
-- [ ] Cold Bath max 20 minutes to help regulate nervous system assuming warm start first if not lesser by end of May start cold fully and while listening to 60 BPM(Beats Per Minute) metronome.
-	- Maybe switch to back to warm start or cold showers in the fall at a lower frequency.
-	- But if Cold start about 3 min total.
-- [ ] Sparring on Sunday
-- Sleep 
-	- [ ] Stop Eating 3 hour before sleep
-	- [ ] Stop Drinking 2 hour before sleep
-	- [ ] Stop Scrolling 1 hour before sleep
-- [ ] For one of the days at Gym focus on full body while also using the day for experimenting.
-- [ ] If very sore or exhausted do a light day with bands to still get something in but not do anything heavy with weights.
-- [ ] Rotate in different exercises every **8-12 weeks** to avoid stagnation.
+
 
 ### **Recommended O2 Trainer Routine**  
 #### **Frequency:**  
@@ -406,6 +447,8 @@ color purple
 ## **Optimal Workout Order of Operations**
 
 > **Train intensity before volume**. Prioritize neural output early, then shift to fatigue-driven work.
+
+
 
 - [ ] **Deload**: Switch phases every 4–6 weeks to reduce volume so go form compound or hypertrophy to Explosive after 2 years or so or as it gets harder to add muscle.
 
@@ -590,12 +633,12 @@ Prioritize resistance bands for explosive phase they can be used for other phase
 | Bench Press                         | 30         | 40        | 4    | 8    | Yes   | Barbell    | _Highest | N/A               | Upper  | Chest                 | Flat      | [[Upper#^bcb0df \|Bench Press]]                                         | *17.5*   | Push          | N/A   | CM    |
 | Bench Press                         | 30         | 40        | 4    | 8    | Yes   | Barbell    | _Highest | N/A               | Upper  | Chest                 | Incline   | [[Upper#^3f7ed5 \|Bench Press]]                                         | *17.5*   | Push          | N/A   | CM    |
 | Deadlift                            | 20         | 40        | 4    | 8    | Yes   | Barbell    | _Highest | N/A               | Full   | Multi                 | Standing  | [[Lower#^1260ed \|Deadlift]]                                            | *10*     | Pull          | N/A   | CM    |
-| Zercher Deadlift                    | 20         | 40        | 4    | 8    |       | Barbell    | _Highest | N/A               | Full   | Multi                 | Standing  | [[Full Body#^b30c79\|Zercher Deadlift]]                                 | *45*     | Pull          | N/A   | CM    |
+| Zercher Deadlift                    | 20         | 40        | 4    | 8    |       | Barbell    | _Highest | N/A               | Full   | Multi                 | Underhand | [[Full Body#^b30c79\|Zercher Deadlift]]                                 | *45*     | Pull          | N/A   | CM    |
 | Romanian Deadlift                   | 20         | 40        | 4    | 8    |       | Barbell    | _Highest | N/A               | Full   | Multi                 | Standing  | [[Lower#^308171 \|Romanian Deadlift]]                                   | *10*     | Pull          | N/A   | CM    |
 | B Squats                            | 20         | 40        | 4    | 8    |       | Barbell    | High     | N/A               | Bottom | Multi                 | Standing  | B Squats                                                                | *25*     | Pull          | N/A   | CM    |
 | Clean to Jerk & Press               | 0          | 20        | 4    | 8    | Yes   | Barbell    | High     | N/A               | Full   | Multi                 | Standing  | [[Full Body#^0c16fd \|Clean to Jerk & Press]]                           | **5**    | Pull          | N/A   | EP    |
-| Zercher Lunge                       | 20         | 40        | 4    | 8    |       | Barbell    | Med      | N/A               | Bottom | Multi                 | Standing  | [[Full Body#^4b1677\|Zercher Lunge]]                                    | *10*     | Push          | N/A   | CM    |
-| Zercher Squats                      | 20         | 40        | 4    | 8    | Yes   | Barbell    | Med      | N/A               | Bottom | Multi                 | Standing  | [[Full Body#^765b0b \|Zercher Squats]]                                  | *25*     | Pull          | N/A   | CM    |
+| Zercher Lunge                       | 20         | 40        | 4    | 8    |       | Barbell    | Med      | N/A               | Bottom | Multi                 | Underhand | [[Full Body#^4b1677\|Zercher Lunge]]                                    | *10*     | Push          | N/A   | CM    |
+| Zercher Squats                      | 20         | 40        | 4    | 8    | Yes   | Barbell    | Med      | N/A               | Bottom | Multi                 | Underhand | [[Full Body#^765b0b \|Zercher Squats]]                                  | *25*     | Pull          | N/A   | CM    |
 | Nordic Hamstring Curl               | 0          | 0         | 4    | 8    |       | Bodyweight | _Highest | N/A               | Bottom | Hamstring             | Grounded  | [[Lower#^4e02bb \|Nordic Hamstring Curl]]                               | ****     | Pull          | N/A   | CM    |
 | PullUp                              | 0          | 0         | 4    | 8    | Yes   | Bodyweight | _Highest | N/A               | Upper  | Back Lats             | Neutral   | [[Upper#^e81d31 \|PullUp]]                                              | ****     | Pull          | N/A   | PG    |
 | Rev Crunch                          | 0          | 0         | 4    | 8    | Yes   | BodyWeight | _Highest | N/A               | Core   | Lower Abdom           | Bench     | Rev Crunch try on incline bench                                         | *0*      | Flexion       | N/A   | RC    |

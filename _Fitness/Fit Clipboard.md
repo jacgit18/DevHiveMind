@@ -19,24 +19,6 @@ dead bug hand pushed against wall alternating pushing heals down - Anti-extensio
 DeadBug Alt Heel Tap
 
 
-Seated row in back 90 45 per side
-  
-
-- **Example (Dumbbell Bench Press):**  
-
-  - Start with **50 lbs x 10 reps** (if the last 2 reps were tough but doable, this is your **~10RM**).  
-
-  - If you hit **12+ reps easily**, go up **5–10 lbs** next set.  
-
-  - If you **fail before 6 reps**, drop **10–20 lbs** and retest.
-
-
-
-
-Running days no leg day
-
-
-Road passed survival to blue belt
 
 
 
@@ -142,31 +124,14 @@ can use heavy resistance bands with plate to create a sudo weighted vest and use
 
 Practice offset with one weight on barbell and at home with resistance band kettlebell
 
+[Dumbbell Side Raise with Single Leg Balance - YouTube](https://youtu.be/7cfhwCU2-y0?si=CxwXSgm6RWSQF8Ah)
 
 
+[Knee Circles - YouTube](https://youtu.be/ROiyq3-2ljY?si=jmBGQDk3fKu4mPAt)
 
-Kettlebell dribble
-
-  
-
-Narrow feet on back extension for lower back
-
-  
-
-Wide feet for glutes on back extension
+[Side Plank with Knee Drive (CORRECT FORM): myFit Personal Training - YouTube](https://youtu.be/4ydfLjw8aWE?si=gcidItLGPbnqe7Ry)
 
 
-5lb rear delt standing
+[Side Lying Bicycle - YouTube](https://youtu.be/CYmpb7fw1Gc?si=95ff52rPZ2OTaYnZ)
 
-
-180 or lower to go deep in hack squat
-
-  
-
-Hypotrophy back extension no weights
-
-  
-
-Strength training on back extension a dumbbell
-
-landmine shoulder press pririoty 
+[This Stiff Guy Learns the Pancake Fold in 107 Days - Ft. @calimove - YouTube](https://youtu.be/c97FhK6-7FU?si=yPdSa701SwqZh0xJ)
