@@ -388,7 +388,7 @@ dumbbell lunge on balance board or plate or platform
 - [ ] Try Larsen bench press on flat bench or incline bench hovering or keeping straight legs to focus more on core.
 - [ ] After doing that deadlifts for a while switch to deficit deadlifts where you're standing on a plate and doing the deadlift which increases range of motion of the motion.
 - [ ] Use [[Tower 200.pdf |Tower 200]] for practicing cable machine exercises the weight ranges from 25 to 45 lb.  
-- [ ] Use Sled on full body day
+
 
 - [ ] When doing Incline reverse crunch a flexion excercise were you should suck in belly button towards bench. 
 
