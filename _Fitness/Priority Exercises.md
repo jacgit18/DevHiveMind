@@ -439,9 +439,9 @@ Muscle tightness reduction regimen
 | Best Order Of Operations  | Day     | Session Type       | Options (Choose 1)               | Phase       |
 | ------------------------- | ------- | ------------------ | -------------------------------- | ----------- |
 | **Glutes/Hamstrings**     | **Sun** | Gym                | Lower Body                       | Strength    |
-| **Core**                  | **Mon** | MMA/Gym            | Full Body + Sled                 | Hypertrophy |
+| **Core**                  | **Mon** | MMA/Gym            | Full Body(**Experiment**) + Sled | Hypertrophy |
 | **Scapular & Upper Back** | **Tue** | Gym or Rest        | Upper Body + Run + Balance Board | Strength    |
-| **Lats/Traps**            | **Wed** | MMA or Gym or Rest | Full Body + Sled                 | Hypertrophy |
+| **Lats/Traps**            | **Wed** | MMA or Gym or Rest | Full Body(**Experiment**) + Sled | Hypertrophy |
 | **Quads**                 | **Thu** | Gym or Rest        | Upper Body + Run + Balance Board | Strength    |
 | **Chest/Delts**           | **Fri** | MMA or Gym or Rest | Lower Body                       | Hypertrophy |
 | **Arms**                  | **Sat** | MMA or Gym         |                                  | Explosive   |
