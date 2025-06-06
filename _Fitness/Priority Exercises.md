@@ -349,6 +349,19 @@ The general principles of **training phases** like strength and hypertrophy appl
 - **Injury Rule**: If pain >2/10, regress load or variation
 
 ## Regimen
+
+| Best Order Of Operations  | Day     | Session Type       | Options (Choose 1)               | Phase              |
+| ------------------------- | ------- | ------------------ | -------------------------------- | ------------------ |
+| **Glutes/Hamstrings**     | **Sun** | Gym                | Upper Body + Run + Balance Board | Strength           |
+| **Core**                  | **Mon** | MMA/Gym            | Full Body(**Experiment**) + Sled | Strength/Explosive |
+| **Scapular & Upper Back** | **Tue** | Gym or Rest        | Upper Body + Run + Balance Board | Hypertrophy        |
+| **Lats/Traps**            | **Wed** | MMA or Gym or Rest | Lower Body                       | Hypertrophy        |
+| **Quads**                 | **Thu** | Gym or Rest        | Full Body(**Experiment**) + Sled | Strength           |
+| **Chest/Delts**           | **Fri** | MMA or Gym or Rest | Lower Body                       | Strength           |
+| **Arms**                  | **Sat** | MMA or Gym         |                                  |                    |
+
+
+
 #todo/BAU/Workout
 
 - [ ] Do [[Grip Strength Training]]
@@ -434,17 +447,6 @@ Muscle tightness reduction regimen
 	- Leg extension if pain don't do it 
 	- Doing max weight for excercise that hit same muscle on the same day
 - Stop two reps before exercise failure alternate this depending how you feel.
-
-
-| Best Order Of Operations  | Day     | Session Type       | Options (Choose 1)               | Phase       |
-| ------------------------- | ------- | ------------------ | -------------------------------- | ----------- |
-| **Glutes/Hamstrings**     | **Sun** | Gym                | Lower Body                       | Strength    |
-| **Core**                  | **Mon** | MMA/Gym            | Full Body(**Experiment**) + Sled | Hypertrophy |
-| **Scapular & Upper Back** | **Tue** | Gym or Rest        | Upper Body + Run + Balance Board | Strength    |
-| **Lats/Traps**            | **Wed** | MMA or Gym or Rest | Full Body(**Experiment**) + Sled | Hypertrophy |
-| **Quads**                 | **Thu** | Gym or Rest        | Upper Body + Run + Balance Board | Strength    |
-| **Chest/Delts**           | **Fri** | MMA or Gym or Rest | Lower Body                       | Hypertrophy |
-| **Arms**                  | **Sat** | MMA or Gym         |                                  | Explosive   |
 
 
 ## **Optimal Workout Order of Operations**
