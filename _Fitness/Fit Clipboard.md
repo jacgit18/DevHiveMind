@@ -48,14 +48,14 @@ dg-publish:
 
 
 
-Avoid cold water baths close to workouts especially post maybe consider doing it a few hours before sleeping or before working out
 
 
 
-Be relaxed to keep stress down improving recovery
 
 
-All the way down push-ups with a hand release at the bottom then superman and then push back up 
+
+
+
 
 
 

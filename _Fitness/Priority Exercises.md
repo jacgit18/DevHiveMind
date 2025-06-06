@@ -24,6 +24,7 @@ dg-publish:
 
 #todo/Med/Dev 
 - [ ] Revisit and edit chart switch to table with current top exercises of focus
+- [ ] Update pull and push column for the exercise that are rotational.
 ![](https://www.youtube.com/watch?v=djj7QXZAIjM)
 ```chart
 type: bar
@@ -124,6 +125,9 @@ color purple
 - [ ] For rest days make it one of my weekdays like if I have a networking event and there isn't a good timing in terms of going before or maybe even after the event and you can also take cold Baths on that day
 - [ ] If very sore or exhausted do a light day with bands to still get something in but not do anything heavy with weights.
 
+Be relaxed to keep stress down improving recovery
+
+Avoid cold water baths close to workouts especially post maybe consider doing it a few hours before sleeping or before working out
 
 - [ ] Start Using O2 trainer again for diaphragmatic breathing
 	- Try using during cold baths but first maybe try before or after bath.
@@ -373,6 +377,7 @@ The general principles of **training phases** like strength and hypertrophy appl
 - [ ] Use 30 to 45 degree angle for incline bench press which seem more effective for your body type then flat bench.
 - [ ] Hover in more of a standing position for abduction leg squeezing machine 70 to 80 lb.
 - [ ] Use opposite side knee leaning against low bench when doing Half Kneeling Row.
+- [ ] Try all the way down push-ups with a hand release at the bottom then superman and then push back up. 
 
 Sumo squad over lunges
 
