@@ -34,18 +34,18 @@ dg-publish:
 [How To Use the TIB BAR - Knee, Ankle and Shin Rehab (including shin splints) - YouTube](https://youtu.be/1nZgmPik6Mk?si=Yw-MvDMiVGwvb7ZL)
 
 
-Practice very slow drills in general like for instance for sprinting you can practice running very slow making sure you are aware of your heels when they impact the floor to negate he'll striking when you are landing your heel first the ground
 
-  
-Heel squat on plate
 
   
 
-Leg extensions not as effective for me at least in terms of Rehabilitation aspect
+
+  
 
 
 
-Use opposite side knee leaning against low bench when doing Half Kneeling Row
+
+
+
 
 
 Avoid cold water baths close to workouts especially post maybe consider doing it a few hours before sleeping or before working out
@@ -65,7 +65,7 @@ All the way down push-ups with a hand release at the bottom then superman and th
 
 
   
-Update pull and push column for the exercise that are rotational, 
+
 
 Try pull up position at top holding it
 
@@ -89,9 +89,9 @@ T stand plank push up
 
 
 
-Free tire about 88
 
-dont rotate on back extension
+
+
 
 Leg extension range 2 orange circle at knee and 120lb for machine in back
 

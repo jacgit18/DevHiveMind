@@ -105,6 +105,7 @@ color purple
 - [ ] If you're not **feeling the target muscle** during an exercise, **reduce momentum** and slow down the movement to improve control and mind-muscle connection and If you feel **off balance**, try **making a fist**—this creates full-body tension and enhances stability during the lift.
 - [ ] Sprint to and from gym a twice a week after you build to it on Upper body or full body days where you aren't doing MMA, You can also skip first part of warm up regimen. 
 - [ ] On Off days when drained or finding it hard to get moving take Amino Acid.
+- [ ] Also follow [[Muscle Release Regimen]] you have muscle tightness.
 
 
 
@@ -365,9 +366,13 @@ The general principles of **training phases** like strength and hypertrophy appl
 
 
 #todo/BAU/Workout
-
 - [ ] Do [[Grip Strength Training]]
 - [ ] Dead Hang at BK-MMA & Leg Day
+- [ ] Point toes inward keep butt down for Leg extension.
+- [ ] Leg extensions not as effective for me at least in terms of rehabilitation aspect.
+- [ ] Use 30 to 45 degree angle for incline bench press which seem more effective for your body type then flat bench.
+- [ ] Hover in more of a standing position for abduction leg squeezing machine 70 to 80 lb.
+- [ ] Use opposite side knee leaning against low bench when doing Half Kneeling Row.
 
 Sumo squad over lunges
 
@@ -381,16 +386,11 @@ dumbbell lunge on balance board or plate or platform
 - [ ] Use Sled on full body day
 
 - [ ] When doing Incline reverse crunch a flexion excercise were you should suck in belly button towards bench. 
-- [ ] Point toes inward keep butt down for Leg extension
+
 
 
 - [ ] Keep elbows high above head and alt cable height at hip and foot level for Overhead extension.
 
-- [ ] Use 30 to 45 degree angle for incline bench press which seem more effective for your body type then flat bench.
-
-
-
-- [ ] Hover in more of a standing position for abduction leg squeezing machine 70 to 80 lb.
 
 - [ ] Half lateral chest press meaning alternating between the full squeeze and a half movement not going all the way. Same thing with adduction machine.
 
@@ -416,7 +416,7 @@ dumbbell lunge on balance board or plate or platform
 
 ###  O2 Trainer Routine
 #### **Frequency:**  
-- **Days Per Week:** **4–5 days** (allow 2–3 rest days for recovery).  
+- **Days Per Week:** **4–5 days** (allow 2–3 rest days for recovery). 
 - **Sessions Per Day:** **1–2 times daily** (morning + pre/post-workout).  
   
 #### **Duration & Sets:**  
@@ -449,6 +449,7 @@ dumbbell lunge on balance board or plate or platform
 - Skip Renegade rows
 - Stay away from 
 	- Romanian dead lift (can be dangerous if not done properly)
+	- Don't rotate on back extension
 	- Dumbbell Lateral raise 
 	- Hanging Leg raises 
 	- Leg extension if pain don't do it 
