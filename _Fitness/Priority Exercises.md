@@ -104,6 +104,7 @@ color purple
 - [ ] For full body days and in general always start strength phase but for full body days alternate area of focus so one day focus strength training on lower then next day upper and the part of the body that isn't doing strength should focus on hypertrophy and use this day for experimenting throwing in random exercises.
 - [ ] If you're not **feeling the target muscle** during an exercise, **reduce momentum** and slow down the movement to improve control and mind-muscle connection and If you feel **off balance**, try **making a fist**—this creates full-body tension and enhances stability during the lift.
 - [ ] Sprint to and from gym a twice a week after you build to it on Upper body or full body days where you aren't doing MMA, You can also skip first part of warm up regimen. 
+- [ ] On Off days when drained or finding it hard to get moving take Amino Acid.
 
 
 
@@ -118,7 +119,7 @@ color purple
 #### Schedule 
 
 #todo/BAU/Workout 
-- [ ] For one of the days at Gym focus on full body while also using the day for experimenting.
+
 - [ ] For rest days make it one of my weekdays like if I have a networking event and there isn't a good timing in terms of going before or maybe even after the event and you can also take cold Baths on that day
 - [ ] If very sore or exhausted do a light day with bands to still get something in but not do anything heavy with weights.
 
