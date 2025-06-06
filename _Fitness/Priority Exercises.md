@@ -436,15 +436,15 @@ Muscle tightness reduction regimen
 - Stop two reps before exercise failure alternate this depending how you feel.
 
 
-| Best Order Of Operations  | Day     | Session Type | Options (Choose 1)                                                |
-| ------------------------- | ------- | ------------ | ----------------------------------------------------------------- |
-| **Glutes/Hamstrings**     | **Sun** | Gym          | Lower Body + Sled                                                 |
-| **Core**                  | **Mon** | MMA/Gym      | Full Body & BJJ + Kickboxing **OR** BJJ + Judo **OR** BJJ+Judo+MT |
-| **Scapular & Upper Back** | **Tue** | Gym          | Upper Body + Run + Balance Board                                  |
-| **Lats/Traps**            | **Wed** | Gym          | Upper Body + Run + Balance Board                                  |
-| **Quads**                 | **Thu** | Gym          | Full Body + Sled                                                  |
-| **Chest/Delts**           | **Fri** | MMA or Gym   | BJJ+MT **OR** BJJ+Kickboxing **OR** BJJ+Kickboxing+MT             |
-| **Arms**                  | **Sat** | MMA or Gym   | BJJ+MT **OR** BJJ+Kickboxing **OR** BJJ+Kickboxing+MT             |
+| Best Order Of Operations  | Day     | Session Type       | Options (Choose 1)               | Phase       |
+| ------------------------- | ------- | ------------------ | -------------------------------- | ----------- |
+| **Glutes/Hamstrings**     | **Sun** | Gym                | Lower Body                       | Strength    |
+| **Core**                  | **Mon** | MMA/Gym            | Full Body + Sled                 | Hypertrophy |
+| **Scapular & Upper Back** | **Tue** | Gym or Rest        | Upper Body + Run + Balance Board | Strength    |
+| **Lats/Traps**            | **Wed** | MMA or Gym or Rest | Full Body + Sled                 | Hypertrophy |
+| **Quads**                 | **Thu** | Gym or Rest        | Upper Body + Run + Balance Board | Strength    |
+| **Chest/Delts**           | **Fri** | MMA or Gym or Rest | Lower Body                       | Hypertrophy |
+| **Arms**                  | **Sat** | MMA or Gym         |                                  | Explosive   |
 
 
 ## **Optimal Workout Order of Operations**
