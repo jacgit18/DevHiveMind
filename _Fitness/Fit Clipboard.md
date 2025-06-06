@@ -12,11 +12,9 @@ Peer Reviewed: 0
 dg-publish:
 ---
 
-[Deadbug heel tap - YouTube](https://youtu.be/VRpXreaHz7w?si=MSTm2UNzlRLyQt3E)
 
-dead bug hand pushed against wall alternating pushing heals down - Anti-extension
 
-DeadBug Alt Heel Tap
+
 
 
 
@@ -113,10 +111,10 @@ Avoid laying on bed outside of sleeping
 
 over time your timing and body will tighten in the right spots automatically
 
-dumbbell lunge on balance board or plate or platform
 
 
-Sumo squad over lunges
+
+
 
 can use heavy resistance bands with plate to create a sudo weighted vest and use it for pulls etc 
 

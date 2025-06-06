@@ -230,6 +230,7 @@ _~2–3 minutes total – pick 2–3_ or pick one to do for the whole time.
 _~2–3 minutes total – pick 4–5_
 ##### **Grounded On Back**
 - Glute Bridges – **10–12 reps**
+- [Dead Bug ](https://youtu.be/VRpXreaHz7w?si=MSTm2UNzlRLyQt3E) hand pushed against wall alternating pushing heals down - Anti-extension
 
 ##### Seated
 - [[Core#^a235d1 |Pancake Stretch]]
@@ -367,6 +368,11 @@ The general principles of **training phases** like strength and hypertrophy appl
 
 - [ ] Do [[Grip Strength Training]]
 - [ ] Dead Hang at BK-MMA & Leg Day
+
+Sumo squad over lunges
+
+dumbbell lunge on balance board or plate or platform
+
 - [ ] Eventually add hanging weight to your pull-ups using heavy resistance band to secure plate body. 
 - [ ] Cycle in [[Stability Ball Workout Plan]] for core strengthening, flexibility, and stretching,  
 - [ ] Try Larsen bench press on flat bench or incline bench hovering or keeping straight legs to focus more on core.
@@ -377,12 +383,12 @@ The general principles of **training phases** like strength and hypertrophy appl
 - [ ] When doing Incline reverse crunch a flexion excercise were you should suck in belly button towards bench. 
 - [ ] Point toes inward keep butt down for Leg extension
 
-- [ ] For Single arm Variation of wide dumbbell curl try with cable starting behind back wrist height.
+
 - [ ] Keep elbows high above head and alt cable height at hip and foot level for Overhead extension.
 
 - [ ] Use 30 to 45 degree angle for incline bench press which seem more effective for your body type then flat bench.
 
-Muscle tightness reduction regimen
+
 
 - [ ] Hover in more of a standing position for abduction leg squeezing machine 70 to 80 lb.
 
