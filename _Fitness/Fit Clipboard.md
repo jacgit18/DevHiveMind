@@ -12,14 +12,6 @@ Peer Reviewed: 0
 dg-publish:
 ---
 
-
-
-
-
-
-
-
-
 [Offset Walk - YouTube](https://youtu.be/Fc-27p17TPE?si=UyGkyXJ5FRZz-_tB)
 
 
@@ -33,94 +25,7 @@ dg-publish:
 
 [How To Use the TIB BAR - Knee, Ankle and Shin Rehab (including shin splints) - YouTube](https://youtu.be/1nZgmPik6Mk?si=Yw-MvDMiVGwvb7ZL)
 
-
-
-
   
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-Try pull up position at top holding it
-
-
-
-
-Mike Tyson push up
-
-  
-
-Back window
-
-  
-
-Dive bomber
-
-  
-
-T stand plank push up
-
-
-
-
-
-
-
-
-Leg extension range 2 orange circle at knee and 120lb for machine in back
-
-Lat pull down pull elbow near hip not chest same for row get up close pull to hip
-
-For squats to them with wide stance with toes pointed out slightly not the widest stance just not narrow
-
-
-Chest press handles at nipple height
-
-
-see if you can hold nose without breathing for 40 sec without your body react to breath
-
-
-Avoid laying on bed outside of sleeping
-
-
-over time your timing and body will tighten in the right spots automatically
-
-
-
-
-
-
-can use heavy resistance bands with plate to create a sudo weighted vest and use it for pulls etc 
-
-  
-
-Practice offset with one weight on barbell and at home with resistance band kettlebell
 
 [Dumbbell Side Raise with Single Leg Balance - YouTube](https://youtu.be/7cfhwCU2-y0?si=CxwXSgm6RWSQF8Ah)
 
@@ -133,3 +38,82 @@ Practice offset with one weight on barbell and at home with resistance band kett
 [Side Lying Bicycle - YouTube](https://youtu.be/CYmpb7fw1Gc?si=95ff52rPZ2OTaYnZ)
 
 [This Stiff Guy Learns the Pancake Fold in 107 Days - Ft. @calimove - YouTube](https://youtu.be/c97FhK6-7FU?si=yPdSa701SwqZh0xJ)
+
+
+[Dynamic Heel-Toe Walking Stretch - YouTube](https://youtu.be/oQ_-LIbhYgo?si=AJ9rlIThcWFCCrKF)
+
+
+
+[Heel to Toe Rock - YouTube](https://youtu.be/FMZX3mpffeE?si=2j29Yv4oHRCG7eD8)
+
+
+[6 Exercises to Improve Wrist Joint Mobility and Range of Motion - YouTube](https://youtu.be/nvJ-1suJCTU?si=3GvE2C1PMCw7q56E)
+
+
+
+  [Mike Tyson Pushup Explained - YouTube](https://youtu.be/j-oSVFU2eMc?si=wrdA1D7v8er-VnJj)
+
+
+
+[Back Widows ▓ QUICK GUIDE ▓ 4 Steps! - YouTube](https://youtu.be/JdwsVHc6oQ4?si=CHDAGqPSGfL9JxAb)
+
+
+[Dive Bomber Push-Up \| Exercise Guide - YouTube](https://youtu.be/mvNcSF-nXg4?si=1v8oj6089sp1d-rZ)
+
+
+[T Stand Pushups - YouTube](https://youtu.be/9MkDQjuGcxw?si=DkWlFtakhAN1fOTP)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+

@@ -24,7 +24,6 @@ dg-publish:
 
 #todo/Med/Dev 
 - [ ] Revisit and edit chart switch to table with current top exercises of focus
-- [ ] Update pull and push column for the exercise that are rotational.
 ![](https://www.youtube.com/watch?v=djj7QXZAIjM)
 ```chart
 type: bar
@@ -70,22 +69,26 @@ color purple
 - **Weight Last Year:** 113 lbs
 - **WaterToDrink:** 80 oz
 
-| Weeks | Weight | Date       |
-| ----- | ------ | ---------- |
-| 0     | 120    | 05/01/2025 |
-| 1     | 122    | 06/01/2025 |
-| 2     |        |            |
-| 3     |        |            |
-| 4     |        |            |
-| 5     |        |            |
-| 6     |        |            |
-| 7     |        |            |
+| Months | Weight | Date       |
+| ------ | ------ | ---------- |
+| 0      | 120    | 05/01/2025 |
+| 1      | 122    | 06/01/2025 |
+| 2      |        |            |
+| 3      |        |            |
+| 4      |        |            |
+| 5      |        |            |
+| 6      |        |            |
+| 7      |        |            |
 
 - **Maintain Current Weight:** ~2,100 calories/day
 - **Calorie Goal for Gaining Weight (fast approach):** ~3,600 calories/day
 - **Calorie Goal for Gaining Weight (moderate approach):** ~3,300 calories/day (current target)
 - **Maintain New Weight (goal weight):** ~2,800 calories/day
 - **Slow Weight Gain:** ~1,700–1,800 calories/day over the course of a year (extremely slow, not typical for bulking).
+- **Sleep:** avoid laying on bed outside of sleeping
+	- Stop Eating 3 hour before sleep
+	- Stop Drinking 2 hour before sleep
+	- Stop Scrolling 1 hour before sleep
  
 ##### **Protein Requirements:**
 1. **Daily Protein for Maintenance/Gain:** ~158 – 330 grams of protein per day
@@ -94,7 +97,7 @@ color purple
 ## Best Practices
 #todo/BAU/Workout  
 - [ ] Alternate between **hypertrophy and strength phases on different days**. Aim to train **at least 5 to 6 days per week**, which allows for effective coverage of both upper and lower body across both training phases.
-- [ ] After you've built a solid training foundation (about a year or more of consistent training), consider **shifting your focus in multi-week blocks** so alternating phase every 6 weeks.
+- [ ] After you've built a solid training foundation (about 2 years or more of consistent training), consider **shifting your focus in multi-week blocks** so alternating phase every 6 weeks because it gets harder to make gains after a certain point.
 - [ ] Advance stage shift focus of phases:
 	- [ ] For Lower body focus on 80% strength training and 20% hypertrophy. 
 	- [ ] For Upper body focus on 20% strength training and 80% hypertrophy training to failure with high volume.
@@ -104,78 +107,22 @@ color purple
 - [ ] Focus on solo arm exercises always starting with left arm then shift to dual arm exercises for muscle Imbalance, test out two arm excercise again in August if still a issue try again in October with Barbell chest press and chest flys.
 - [ ] For full body days and in general always start strength phase but for full body days alternate area of focus so one day focus strength training on lower then next day upper and the part of the body that isn't doing strength should focus on hypertrophy and use this day for experimenting throwing in random exercises.
 - [ ] If you're not **feeling the target muscle** during an exercise, **reduce momentum** and slow down the movement to improve control and mind-muscle connection and If you feel **off balance**, try **making a fist**—this creates full-body tension and enhances stability during the lift.
-- [ ] Sprint to and from gym a twice a week after you build to it on Upper body or full body days where you aren't doing MMA, You can also skip first part of warm up regimen. 
+- [ ] Sprint to and from gym a twice a week after you build to it on Upper body or full body days where you aren't doing MMA, You can also skip first part of warm up regimen. Also when building up to sprinting the half mile to and from the gym start off with three times a week and scale back to twice a week.
 - [ ] On Off days when drained or finding it hard to get moving take Amino Acid.
-- [ ] Also follow [[Muscle Release Regimen]] you have muscle tightness.
-
-
-
-
-
-
-
-
-
-
-
-#### Schedule 
-
-#todo/BAU/Workout 
-
-- [ ] For rest days make it one of my weekdays like if I have a networking event and there isn't a good timing in terms of going before or maybe even after the event and you can also take cold Baths on that day
+- [ ] Also follow [[Muscle Release Regimen]] you have muscle tightness also try using static stretches for cool down and working on flexibility.
 - [ ] If very sore or exhausted do a light day with bands to still get something in but not do anything heavy with weights.
-
-Be relaxed to keep stress down improving recovery
-
-Avoid cold water baths close to workouts especially post maybe consider doing it a few hours before sleeping or before working out
-
-- [ ] Start Using O2 trainer again for diaphragmatic breathing
-	- Try using during cold baths but first maybe try before or after bath.
-- [ ] Cold Bath max 20 minutes to help regulate nervous system assuming warm start first if not lesser by end of May start cold fully and while listening to 60 BPM(Beats Per Minute) metronome.
-	- Maybe switch to back to warm start or cold showers in the fall at a lower frequency.
-	- But if Cold start about 3 min total.
-
-- Sleep 
-	- [ ] Stop Eating 3 hour before sleep
-	- [ ] Stop Drinking 2 hour before sleep
-	- [ ] Stop Scrolling 1 hour before sleep
-
-
-
-
-
-
-
-- **Rotational/Core Strength**:  RC
-- **Pulling/Grip Strength**: PG
-
-**Seasonal Training Strategy**
-
-Your body tends to **retain more weight during the colder months** (October to February), making it an ideal time to **increase training frequency** and build mass or strength.
-
-- Once you’ve hit your baseline, aim for **6 workouts per week in the winter** to take advantage of this natural tendency.
-    
-- In the **warmer months**, when energy is often spent on outdoor activities and appetite may decrease, **4 to 5 workouts per week** can be more sustainable.
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [ ] Once at solid baseline switch to a **Seasonal Training Strategy** while also integrating workout phases aiming for **6 workouts per week in the winter/fall** were your body tends to **retain more weight during the colder months** (September to February), making it an ideal time to **increase training frequency** and build mass or strength. Then In the **warmer months**, when energy is often spent on outdoor activities and appetite may decrease, **4 to 5 workouts per week** can be more sustainable.
 
 # Dynamic Warm-Up (RAMP Protocol) & Static Cool-Down 
 
 Start with a dynamic stretch to Improve blood flow and flexibility. End with a static stretch targeting major muscle groups. Basically any static stretch has a dynamic variation with movement. 
 
 #todo/BAU/Workout 
-- [ ] If you took a cold bath before working out make sure you really stretch to warm up again to reduce injury.
+- [ ] Avoid cold water baths close to workouts especially post maybe consider doing it a few hours before sleeping make sure you really stretch to warm up again to reduce injury from cold muscle.
+- [ ] For rest days make it one of my weekdays like if I have a networking event and there isn't a good timing in terms of going before or maybe even after the event and you can also take cold Baths on that day and before bed.
+- [ ] Keep in mind that cold bath can affect muscle gains so balance that out and nervous system regulation.
+	- Try listening to 60 BPM(Beats Per Minute) metronome while taking cold bath for 3 min max and maybe use O2 trainer during this.
+	- Switch back to warm start or cold showers in the fall at a lower frequency.
 
 **Recommended Duration:** ~2–3 minutes per section (Total: 10–15 min)  
 **Tip:** Prioritize movement quality over speed. Use Duck Walks between sections or as part of the "Activate" phase.
@@ -295,6 +242,7 @@ _~3–4 minutes total – choose a flow or 3–5 moves_
 - Dynamic Hip Flexor Swings -> [[Lower#^357346 |Lizard Pose ]] (Just a lower to the ground version with elbows down) – **6 swings + 10s hold/side**
 	- For dynamic part lift your back knee off the ground if it was resting begin rocking forward and backward, shifting your weight between your front foot and back toes.
 ##### **Standing** - **10 reps Each Limb**
+- PVC Walk
 - ***Scapular Wall Slides*** – Slide arms up/down while back touches wall
 - ***Leg Swings*** – Front/back & side-to-side
 - ***Walking Lunges + Reach*** – Forward lunge + arms overhead
@@ -338,7 +286,17 @@ _~1–2 minutes total – pick 2_
 Upper body barbell exercises—like the bench press—can sometimes place unnecessary strain on the wrists due to the fixed, straight bar grip. If the grip doesn’t align naturally with your wrist and shoulder joints, it can cause discomfort or even injury over time.
 In contrast, barbell movements for the lower body (like squats and deadlifts) or full-body lifts often allow for a more natural grip or distribute load in a way that’s generally better tolerated.
 
-The general principles of **training phases** like strength and hypertrophy apply to most exercises. However, when training **smaller muscles and stabilizers**, it's often better to prioritize **tempo and control over intensity** example calf raises and wrist curls should be done with a slow tempo about 3x15.  You should also limit combination exercises since focused on adding weight.
+The general principles of **training phases** like strength and hypertrophy apply to most exercises. However, when training **smaller muscles and stabilizers**, it's often better to prioritize **tempo and control over intensity** example calf raises and wrist curls should be done with a slow tempo about 3x15.  You should also limit combination exercises since focused on adding weight also over time muscle tightening and timing will tighten in the right spots automatically or faster or at least take less effort when bracing for impact.
+
+| Goal                            | Sets | Reps   | Tempo                                | **Rest**  |
+| ------------------------------- | ---- | ------ | ------------------------------------ | --------- |
+| **CM** - Compound Movement(Str) | 3–4  | 6–10   | Controlled (2-1-2)                   | 60–90 sec |
+| **EP** - Explosive Power        | 3–5  | 3–6    | Explosive concentric, slow eccentric | 2–3 min   |
+| **Hypertrophy / Endurance**     | 2–4  | 12–20+ | Smooth and rhythmic (1-0-1 or 2-0-2) | 30–60 sec |
+
+- **Pulling/Grip Strength**: PG
+- **Rotational/Core Strength**:  RC
+
 ### Breathing & Core Engagement in Exercise
 - **Inhale** during the **eccentric phase** (_lowering the weight_).
 - **Exhale** during the **concentric phase** (_lifting the weight_), which is typically the more strenuous part of the movement.
@@ -349,56 +307,93 @@ The general principles of **training phases** like strength and hypertrophy appl
 - Use **barbells** for added weight when building strength.
 - Use **dumbbells** for greater range of motion and correcting muscle imbalances.
 - Any **curlbar** exercise can be done with barbell.
+- You can use **heavy resistance bands combined with a weight plate** to create a **pseudo weighted vest**. This setup can be used for exercises like **pull-ups, dips, and other bodyweight movements** to add resistance without needing an actual vest.
 
+## Phases
+**Starting Point** will switch to optimal order of **EP** → **CM** → **Hypertrophy (PG/RC)**  
 ### **Progression Rules**
 - **Hypertrophy**: Add 1 rep/set or +2.5 lbs weekly
 - **Strength**: +5 lbs/week (upper), +10 lbs (lower)
 - **Injury Rule**: If pain >2/10, regress load or variation
 
+##### Explosive Power (EP Phase)
+Prioritize resistance bands for explosive phase they can be used for other phase but the most optimal use case is for explosive power also 2 sets 10 reps for warm up when it comes to bands.
+
+> Speed is a skill—train it while fresh.
+
+| Exercise                 | Goal Weight    | Adjusted Timeline |
+| ------------------------ | -------------- | ----------------- |
+| **Hip Thrust**           | 225–250 lbs    | 12–18 months      |
+| **Hack Squat Machine**   | 180–200 lbs    | 6–9 months        |
+| **Deadlift**             | 225–275 lbs    | 12–18 months      |
+| **Bench Press**          | 135–155 lbs    | 9–12 months       |
+| **Overhead Press**       | 95–105 lbs     | 9–12 months       |
+| **Weighted Pull-Ups**    | +30 lbs (fast) | 9–12 months       |
+| **Single-Leg Leg Press** | 40 lbs max     | Immediately       |
+
+##### **Strength Compound (CM Phase)**
+
+> Strength tolerates some fatigue, but still demands precision.
+
+| Exercise                   | Goal Multiplier | Goal @  120     | Timeline (Estimated) | Goal @ 150      | Timeline (Adjusted) |
+| -------------------------- | --------------- | --------------- | -------------------- | --------------- | ------------------- |
+| **Hip Thrust**             | 2.5x            | **300 lbs**     | 9–12 months          | **375 lbs**     | 12–24 months        |
+| ~~**Hack Squat Machine**~~ | ~~2x~~          | ~~**240 lbs**~~ | ~~4–6 months~~       | ~~**300 lbs**~~ | ~~6–12 months~~     |
+| **Deadlift**               | 2.5x            | **300 lbs**     | 9–12 months          | **375 lbs**     | 12–24 months        |
+| **Bench Press**            | 1.5x            | **180 lbs**     | 6–8 months           | **225 lbs**     | 9–18 months         |
+| **Overhead Press**         | 1.0x            | **120 lbs**     | 6–8 months           | **150 lbs**     | 12–24 months        |
+| **Weighted Pull-Ups**      | +0.5x           | **+60 lbs**     | 6–9 months           | **+75 lbs**     | 9–18 months         |
+| **Single-Leg Leg Press**   | 2x              | **240 lbs**     | 4–6 months           | **315 lbs**     | 6–12 months         |
+| **Power Sled**             | 2x              | **240 lbs**     | 4–6 months           | **300 lbs**     | 4–6 months          |
+
+
+##### **Hypertrophy & Endurance (HE Phase)**
+> Size/endurance = can be done under more fatigue because it's about _muscle burn_, not _perfect speed or maximum tension_
+
+| Exercise                 | Rep Range Focus | Goal @ 120 lb | Timeline (Est.) | Goal @ 150 lb | Timeline (Adjusted) |
+| ------------------------ | --------------- | ------------- | --------------- | ------------- | ------------------- |
+| **Hip Thrust**           | 12–15 reps      | 185–225 lbs   | 6–9 months      | 225–280 lbs   | 9–12 months         |
+| **Hack Squat Machine**   | 10–12 reps      | 145–180 lbs   | 3–4 months      | 180–225 lbs   | 4–6 months          |
+| **Deadlift**             | 8–10 reps       | 185–225 lbs   | 6–9 months      | 225–280 lbs   | 9–12 months         |
+| **Bench Press**          | 10–12 reps      | 110–135 lbs   | 4–6 months      | 135–170 lbs   | 6–9 months          |
+| **Overhead Press**       | 10–12 reps      | 70–90 lbs     | 4–6 months      | 90–115 lbs    | 6–9 months          |
+| **Weighted Pull-Ups**    | 6–8 reps        | +35–45 lbs    | 4–6 months      | +45–55 lbs    | 6–9 months          |
+| **Single-Leg Leg Press** | 12–15 reps      | 145–180 lbs   | 3–4 months      | 180–225 lbs   | 4–6 months          |
+
+
 ## Regimen
+> **Train intensity before volume**. Prioritize neural output early, then shift to fatigue-driven work.
 
-| Best Order Of Operations  | Day     | Session Type       | Options (Choose 1)               | Phase              |
-| ------------------------- | ------- | ------------------ | -------------------------------- | ------------------ |
-| **Glutes/Hamstrings**     | **Sun** | Gym                | Upper Body + Run + Balance Board | Strength           |
-| **Core**                  | **Mon** | MMA/Gym            | Full Body(**Experiment**) + Sled | Strength/Explosive |
-| **Scapular & Upper Back** | **Tue** | Gym or Rest        | Upper Body + Run + Balance Board | Hypertrophy        |
-| **Lats/Traps**            | **Wed** | MMA or Gym or Rest | Lower Body                       | Hypertrophy        |
-| **Quads**                 | **Thu** | Gym or Rest        | Full Body(**Experiment**) + Sled | Strength           |
-| **Chest/Delts**           | **Fri** | MMA or Gym or Rest | Lower Body                       | Strength           |
-| **Arms**                  | **Sat** | MMA or Gym         |                                  |                    |
-
-
+| Best Order Of Operations  | Day     | Session Type       | Options (Choose 1)               | Phase                 |
+| ------------------------- | ------- | ------------------ | -------------------------------- | --------------------- |
+| **Glutes/Hamstrings**     | **Sun** | Gym                | Upper Body + Run + Balance Board | Strength              |
+| **Core**                  | **Mon** | MMA/Gym            | Full Body(**Experiment**) + Sled | Explosive to Strength |
+| **Scapular & Upper Back** | **Tue** | Gym or Rest        | Upper Body + Run + Balance Board | Hypertrophy           |
+| **Lats/Traps**            | **Wed** | MMA or Gym or Rest | Lower Body                       | Hypertrophy           |
+| **Quads**                 | **Thu** | Gym or Rest        | Full Body(**Experiment**) + Sled | Strength              |
+| **Chest/Delts**           | **Fri** | MMA or Gym or Rest | Lower Body                       | Strength              |
+| **Arms**                  | **Sat** | MMA or Gym         |                                  |                       |
 
 #todo/BAU/Workout
 - [ ] Do [[Grip Strength Training]]
 - [ ] Dead Hang at BK-MMA & Leg Day
-- [ ] Point toes inward keep butt down for Leg extension.
-- [ ] Leg extensions not as effective for me at least in terms of rehabilitation aspect.
+- [ ] Do more bodyweight exercises with weights 
+- [ ] On pull up try holding position at the top holding it for 3 sec and same at the bottom.
+- [ ] Use [[Tower 200.pdf |Tower 200]] for practicing cable machine exercises the weight ranges from 25 to 45 lb.  
+- [ ] Cycle in [[Stability Ball Workout Plan]] for core strengthening, flexibility, and stretching,  
 - [ ] Use 30 to 45 degree angle for incline bench press which seem more effective for your body type then flat bench.
 - [ ] Hover in more of a standing position for abduction leg squeezing machine 70 to 80 lb.
+- [ ] Lat pull down pull elbow near hip not chest same for row get up close pull to hip.
 - [ ] Use opposite side knee leaning against low bench when doing Half Kneeling Row.
+- [ ] Try dumbbell lunge with back leg on balance board or plate or platform. 
+- [ ] For squats do them with wide stance with toes pointed out slightly not the widest stance just not narrow.
+- [ ] Keep elbows high above head and alt cable height at hip and foot level for Overhead extension.
+- [ ] When doing Incline **reverse crunch** a flexion excercise suck in belly button towards bench. 
 - [ ] Try all the way down push-ups with a hand release at the bottom then superman and then push back up. 
-
-Sumo squad over lunges
-
-dumbbell lunge on balance board or plate or platform
-
-- [ ] Eventually add hanging weight to your pull-ups using heavy resistance band to secure plate body. 
-- [ ] Cycle in [[Stability Ball Workout Plan]] for core strengthening, flexibility, and stretching,  
+- [ ] Practice offset with one weight on barbell and at home with resistance band kettlebell.
 - [ ] Try Larsen bench press on flat bench or incline bench hovering or keeping straight legs to focus more on core.
 - [ ] After doing that deadlifts for a while switch to deficit deadlifts where you're standing on a plate and doing the deadlift which increases range of motion of the motion.
-- [ ] Use [[Tower 200.pdf |Tower 200]] for practicing cable machine exercises the weight ranges from 25 to 45 lb.  
-
-
-- [ ] When doing Incline reverse crunch a flexion excercise were you should suck in belly button towards bench. 
-
-
-
-- [ ] Keep elbows high above head and alt cable height at hip and foot level for Overhead extension.
-
-
-- [ ] Half lateral chest press meaning alternating between the full squeeze and a half movement not going all the way. Same thing with adduction machine.
-
+- [ ] Leg extensions not as effective for me at least in terms of rehabilitation aspect but still can benefit from the excercise just make sure no pain and proper form pointing toes inward with butt down keep the range at the orange sticker. 
 ### Balance Board Programming  
 - **Beginners:** 2-3x/week (5-10 mins/session) or 2 songs length.
 - **Intermediate/Advanced:** 3-4x/week (10-15 mins/session) 4 songs.  
@@ -434,7 +429,22 @@ dumbbell lunge on balance board or plate or platform
 - Dizziness or lightheadedness.  
 - Excessive ribcage/diaphragm soreness.  
 - No improvement in endurance after 2–3 weeks.  
-  
+
+### Tower 200 Programming  – With Adequate Space
+#### **Cable at Top Angle
+- **Kneeling Cable Crunch** – Great for weighted ab work.
+- **Single-Arm Lateral Head Pushdown** – Targets the lateral (outer) head of the triceps.
+
+#### **Cable at Low Angle
+- **Cable Curl** – Classic biceps isolation.
+- **Single-Arm Back Cable Lateral Raise** – Hits rear delts with a unique angle.
+- **Cable Pull-Through** _(test weight)_ – Glute and hamstring focus.
+- **Cable Lunge** _(test weight)_ – Adds resistance to unilateral leg training.
+- **Cable Woodchopper** _(test weight)_ – Engages the obliques and rotational core strength.
+- **Two-Handed Overhead Raise or Extension** _(test weight)_ – Can target shoulders or triceps depending on form.
+- **Pancake Stretch with Resistance** _(test weight)_ – Potential for loaded stretching or active mobility.
+
+
 ### Row Machine Program
 - **Workout 1: 1 Minute On, 1 Minute Off**
 - **Workout 2: All-Out in a Minute**
@@ -459,105 +469,7 @@ dumbbell lunge on balance board or plate or platform
 	- Hanging Leg raises 
 	- Leg extension if pain don't do it 
 	- Doing max weight for excercise that hit same muscle on the same day
-- Stop two reps before exercise failure alternate this depending how you feel.
-
-
-## **Optimal Workout Order of Operations**
-
-> **Train intensity before volume**. Prioritize neural output early, then shift to fatigue-driven work.
-
-
-
-- [ ] **Deload**: Switch phases every 4–6 weeks to reduce volume so go form compound or hypertrophy to Explosive after 2 years or so or as it gets harder to add muscle.
-
-| Goal                        | Sets | Reps   | Tempo                                | **Rest**  |
-| --------------------------- | ---- | ------ | ------------------------------------ | --------- |
-| **Strength / Compound**     | 3–4  | 6–10   | Controlled (2-1-2)                   | 60–90 sec |
-| **Explosive Power**         | 3–5  | 3–6    | Explosive concentric, slow eccentric | 2–3 min   |
-| **Hypertrophy / Endurance** | 2–4  | 12–20+ | Smooth and rhythmic (1-0-1 or 2-0-2) | 30–60 sec |
-
-
-
-##### Explosive Power (EP Phase)
-Prioritize resistance bands for explosive phase they can be used for other phase but the most optimal use case is for explosive power also 2 sets 10 reps for warm up when it comes to bands.
-
-> Speed is a skill—train it while fresh.
-
-| Exercise                 | Goal Weight    | Adjusted Timeline |
-| ------------------------ | -------------- | ----------------- |
-| **Hip Thrust**           | 225–250 lbs    | 12–18 months      |
-| **Hack Squat Machine**   | 180–200 lbs    | 6–9 months        |
-| **Deadlift**             | 225–275 lbs    | 12–18 months      |
-| **Bench Press**          | 135–155 lbs    | 9–12 months       |
-| **Overhead Press**       | 95–105 lbs     | 9–12 months       |
-| **Weighted Pull-Ups**    | +30 lbs (fast) | 9–12 months       |
-| **Single-Leg Leg Press** | 40 lbs max     | Immediately       |
-
-- **Why**: Start with these to engage fast-twitch muscle fibers and improve explosive strength which can include Plyometric & Olympic Movements. Requires high neural drive and pristine form. Fatigue kills both.
-
-
-- **Prescription**:
-    - **3–5 sets of 3–5 reps**
-    - **≥85% 1RM** or max intent with lighter loads
-    - **Tempo**: 1s up (max speed), 2s down
-    - **Rest**: 3–5 minutes
-    - **Examples**: Olympic lifts, jump squats, med ball slams, weighted sprints, trap bar jumps
-
-
-
----
-
-##### **Strength Compound (CM Phase)**
-**Starting Point** will switch to optimal order of **EP** → **CM** → **Hypertrophy (PG/RC)**  
-
-> Strength tolerates some fatigue, but still demands precision.
-
-| Exercise                   | Goal Multiplier | Goal @  120     | Timeline (Estimated) | Goal @ 150      | Timeline (Adjusted) |
-| -------------------------- | --------------- | --------------- | -------------------- | --------------- | ------------------- |
-| **Hip Thrust**             | 2.5x            | **300 lbs**     | 9–12 months          | **375 lbs**     | 12–24 months        |
-| ~~**Hack Squat Machine**~~ | ~~2x~~          | ~~**240 lbs**~~ | ~~4–6 months~~       | ~~**300 lbs**~~ | ~~6–12 months~~     |
-| **Deadlift**               | 2.5x            | **300 lbs**     | 9–12 months          | **375 lbs**     | 12–24 months        |
-| **Bench Press**            | 1.5x            | **180 lbs**     | 6–8 months           | **225 lbs**     | 9–18 months         |
-| **Overhead Press**         | 1.0x            | **120 lbs**     | 6–8 months           | **150 lbs**     | 12–24 months        |
-| **Weighted Pull-Ups**      | +0.5x           | **+60 lbs**     | 6–9 months           | **+75 lbs**     | 9–18 months         |
-| **Single-Leg Leg Press**   | 2x              | **240 lbs**     | 4–6 months           | **315 lbs**     | 6–12 months         |
-| **Power Sled**             | 2x              | **240 lbs**     | 4–6 months           | **300 lbs**     | 4–6 months          |
-
-- **Why**: Builds raw output, joint integrity, and compound movement proficiency. Follow with heavy, compound lifts to build muscle and functional strength use narrow grip or positioning for more of a compound movement.
-
-- **Prescription**:
-    - **4–5 sets of 4–8 reps**
-    - **75–85% 1RM**
-    - **Tempo**: 2–1–2 (eccentric–pause–concentric)
-    - **Rest**: 2–4 minutes
-    - **Examples**: Squats, deadlifts, bench press, weighted pull-ups.
-
-
----
-
-
-##### **Hypertrophy & Endurance (HE Phase)**
-> Size/endurance = can be done under more fatigue because it's about _muscle burn_, not _perfect speed or maximum tension_
-
-| Exercise                 | Rep Range Focus | Goal @ 120 lb | Timeline (Est.) | Goal @ 150 lb | Timeline (Adjusted) |
-| ------------------------ | --------------- | ------------- | --------------- | ------------- | ------------------- |
-| **Hip Thrust**           | 12–15 reps      | 185–225 lbs   | 6–9 months      | 225–280 lbs   | 9–12 months         |
-| **Hack Squat Machine**   | 10–12 reps      | 145–180 lbs   | 3–4 months      | 180–225 lbs   | 4–6 months          |
-| **Deadlift**             | 8–10 reps       | 185–225 lbs   | 6–9 months      | 225–280 lbs   | 9–12 months         |
-| **Bench Press**          | 10–12 reps      | 110–135 lbs   | 4–6 months      | 135–170 lbs   | 6–9 months          |
-| **Overhead Press**       | 10–12 reps      | 70–90 lbs     | 4–6 months      | 90–115 lbs    | 6–9 months          |
-| **Weighted Pull-Ups**    | 6–8 reps        | +35–45 lbs    | 4–6 months      | +45–55 lbs    | 6–9 months          |
-| **Single-Leg Leg Press** | 12–15 reps      | 145–180 lbs   | 3–4 months      | 180–225 lbs   | 4–6 months          |
-
-- **Why**: Focuses on metabolic stress and time-under-tension. Fatigue is actually useful here.
-
-- **Prescription**:
-    - **3–4 sets of 8–15 reps**
-    - **60–75% 1RM**
-    - **Tempo**: 3–1–1 (emphasize eccentric)
-    - **Rest**: 30–90 seconds
-    - **Examples**: Isolation lifts, machine work, burnout sets
-
+- Stop two reps before exercise failure alternate this depending how you feel
 
 | Body  | Exercise                                    | Tried | Focus  | Type       | W(lb/kg) |                      | Priority | Duration | Sets | AltType    | Tried | Alt W(lb/kg) |
 | ----- | ------------------------------------------- | ----- | ------ | ---------- | -------- | -------------------- | -------- | -------- | ---- | ---------- | ----- | ------------ |
@@ -655,25 +567,25 @@ Prioritize resistance bands for explosive phase they can be used for other phase
 | PullUp                              | 0          | 0         | 4    | 8    | Yes   | Bodyweight | High     | N/A               | Upper  | Lats                  | Wide      | [[Upper#^bf9596 \|PullUp]]                                              | ****     | Pull          | N/A   | PG    |
 | Half Kneeling Row                   | 22         | 55        | 4    | 8    | Yes   | Cable      | High     | N/A               | Upper  | Multi                 | Kneeling  | [[Upper#^0a983d \|Half Kneeling Row]]                                   | *10*     | Pull          | N/A   | CM    |
 | Angled Chest Fly                    | 80         | 90        | 4    | 8    | Yes   | Cable      | _Highest | N/A               | Upper  | Chest                 | Standing  | Angled Chest Fly                                                        | **90**   | Push          | 4     | CM    |
-| Pallof Press                        | 20         | 30        | 4    | 8    | Yes   | Cable      | _Highest | N/A               | Core   | Side Abbs             | Standing  | [[Core#^0729fc\|Pallof Press]]                                          | **44**   | Anti Rotation | N/A   | CM    |
-| Kneeling Cable Crunch               | 33         | 44        | 4    | 8    | Yes   | Cable      | High     | N/A               | Core   | Upper Abdom add twist | Grounded  | [[Core#^9ffa73\|Kneeling Cable Crunch]]                                 | **44**   | Pull          | N/A   | CM    |
-| Cable Curl                          | 30         | 40        | 4    | 8    | Yes   | Cable      | Med      | N/A               | Upper  | Bicep                 | Standing  | [[Upper#^42bc7c \| Cable Curl]]                                         | ****     | Pull          | N/A   | CM    |
-| Cable Balloon Abduction             | ***160***  | ***160*** | 4    | 8    |       | Cable      | High     | N/A               | Upper  | Chest                 | Standing  | [[CableBalloonAbduction.gif \|Cable Balloon Abduction]]                 | *80*     | Pull          | 0     | PG    |
-| Cable Snap Downs                    | ***160***  | ***160*** | 4    | 8    |       | Cable      | High     | N/A               | Upper  | Chest                 | Standing  | [Cable Snap Downs](https://www.youtube.com/shorts/IW40KjCwNmA)          | *80*     | Pull          | 0     | PG    |
-| Cable Wolverine                     | ***160***  | ***160*** | 4    | 8    |       | Cable      | High     | N/A               | Upper  | Chest                 | Standing  | [[CableWolverine.gif\|Cable Wolverine]]                                 | *80*     | Pull          | 0     | PG    |
-| Single Arm Back Cable Lateral Raise | 10         | 10        | 4    | 8    | Yes   | Cable      | High     | N/A               | Upper  | Shoulder              | Standing  | [[Upper#^971765 \|Single Arm Back Cable Lateral Raise]]                 | **0**    | Pull          | N/A   | PG    |
-| Pancake Stretch                     | ***160***  | ***160*** | 4    | 8    |       | Cable      | High     | N/A               | Full   | Multi                 | Seated    | [[Core#^c47ced \| Pancake Stretch]]                                     | ***80*** | Pull          | 0     | RC    |
-| Cable Woodchopper                   | ***160***  | ***160*** | 4    | 8    |       | Cable      | Med      | N/A               | Upper  | Multi                 | Standing  | [[Upper#^a7be5a \|Cable Woodchopper]]                                   | ***80*** | Pull          | 0     | RC    |
-| Lateral Head Single Arm             | 10         | 20        | 4    | 8    | Yes   | Cable      | Med      | N/A               | Upper  | Shoulder              | Standing  | [[Upper#^88a124 \|Lateral Head Single Arm]]                             | ****     | Pull          | N/A   | CM    |
-| Two Hand Overhead extension         | 0          | 0         | 4    | 8    |       | Cable      | Med      | N/A               | Upper  | Tricep                | Standing  | [[Upper#^05b651 \|Two Hand Overhead extension]]                         | **0**    | Pull          | N/A   | PG    |
-| Cable Floor Fly                     | ***160***  | ***160*** | 4    | 8    |       | Cable      | Low      | N/A               | Upper  | Chest                 | Standing  | [[CableFloorFly.gif \|Cable Floor Fly]]                                 | ***80*** | Push          | 0     | PG    |
-| Leg Cable Reverse Crunch            | 0          | 0         | 4    | 8    |       | Cable      | Low      | N/A               | Core   | Legs Multi            | Grounded  | [[Core#^b41212\| Leg Cable Reverse Crunch]]                             | *45*     | Pull          | 0     | RC    |
-| Hip Extension                       | 10         | 20        | 4    | 8    |       | Cables     | _Highest | N/A               | Bottom | Multi                 | Standing  | [[Cable Machine Leg Exercises#^d00f82 \|Hip Extension]]                 | *10*     | Push          | N/A   | CM    |
-| Hip Flexion                         | 10         | 20        | 4    | 8    |       | Cables     | _Highest | N/A               | Bottom | Multi                 | Standing  | [[Cable Machine Leg Exercises \|Hip Flexion ]]                          | *10*     | Push          | N/A   | CM    |
-| Kickback                            | 10         | 20        | 4    | 8    |       | Cables     | _Highest | N/A               | Bottom | Multi                 | Standing  | [[Cable Machine Leg Exercises#^0552eb \|Kickback]]                      | *10*     | Push          | N/A   | CM    |
-| Pull Through                        | 10         | 20        | 4    | 8    |       | Cables     | _Highest | N/A               | Bottom | Multi                 | Standing  | [[Cable Machine Leg Exercises#^8ca0fd \|Pull Through]]                  | *10*     | Push          | N/A   | CM    |
-| Side Kick                           | 10         | 20        | 4    | 8    |       | Cables     | _Highest | N/A               | Bottom | Multi                 | Standing  | [[Cable Machine Leg Exercises#^dc7113 \|Side Kick]]                     | *10*     | Push          | N/A   | CM    |
-| Step Through Lunge                  | 10         | 20        | 4    | 8    |       | Cables     | _Highest | N/A               | Bottom | Multi                 | Standing  | [[Cable Machine Leg Exercises#^62416f \|Step Through Lunge]]            | *10*     | Push          | N/A   | CM    |
+| Pallof Press                        | 20         | 30        | 4    | 8    | Yes   | Cable      | _Highest | N/A               | Core   | Side Abbs             | Middle    | [[Core#^0729fc\|Pallof Press]]                                          | **44**   | Anti Rotation | N/A   | CM    |
+| Kneeling Cable Crunch               | 33         | 44        | 4    | 8    | Yes   | Cable      | High     | N/A               | Core   | Upper Abdom add twist | Top Angle | [[Core#^9ffa73\|Kneeling Cable Crunch]]                                 | **44**   | Pull          | N/A   | CM    |
+| Cable Curl                          | 30         | 40        | 4    | 8    | Yes   | Cable      | Med      | N/A               | Upper  | Bicep                 | Low Angle | [[Upper#^42bc7c \| Cable Curl]]                                         | ****     | Pull          | N/A   | CM    |
+| Cable Balloon Abduction             | ***160***  | ***160*** | 4    | 8    |       | Cable      | High     | N/A               | Upper  | Chest                 | Top Angle | [[CableBalloonAbduction.gif \|Cable Balloon Abduction]]                 | *80*     | Pull          | 0     | PG    |
+| Cable Snap Downs                    | ***160***  | ***160*** | 4    | 8    |       | Cable      | High     | N/A               | Upper  | Chest                 | Top Angle | [Cable Snap Downs](https://www.youtube.com/shorts/IW40KjCwNmA)          | *80*     | Pull          | 0     | PG    |
+| Cable Wolverine                     | ***160***  | ***160*** | 4    | 8    |       | Cable      | High     | N/A               | Upper  | Chest                 | Low Angle | [[CableWolverine.gif\|Cable Wolverine]]                                 | *80*     | Pull          | 0     | PG    |
+| Single Arm Back Cable Lateral Raise | 10         | 10        | 4    | 8    | Yes   | Cable      | _Highest | N/A               | Upper  | Shoulder              | Low Angle | [[Upper#^971765 \|Single Arm Back Cable Lateral Raise]]                 | **0**    | Pull          | N/A   | PG    |
+| Pancake Stretch                     | ***160***  | ***160*** | 4    | 8    |       | Cable      | High     | N/A               | Full   | Multi                 | Low Angle | [[Core#^c47ced \| Pancake Stretch]]                                     | ***80*** | Pull          | 0     | RC    |
+| Cable Woodchopper                   | ***160***  | ***160*** | 4    | 8    |       | Cable      | Med      | N/A               | Upper  | Multi                 | Low Angle | [[Upper#^a7be5a \|Cable Woodchopper]]                                   | ***80*** | Pull          | 0     | RC    |
+| Lateral Head Single Arm             | 10         | 20        | 4    | 8    | Yes   | Cable      | Med      | N/A               | Upper  | Shoulder              | Top Angle | [[Upper#^88a124 \|Lateral Head Single Arm]]                             | ****     | Pull          | N/A   | CM    |
+| Two Hand Overhead extension         | 0          | 0         | 4    | 8    |       | Cable      | Med      | N/A               | Upper  | Tricep                | Low Angle | [[Upper#^05b651 \|Two Hand Overhead extension]]                         | **0**    | Pull          | N/A   | PG    |
+| Cable Floor Fly                     | ***160***  | ***160*** | 4    | 8    |       | Cable      | Low      | N/A               | Upper  | Chest                 | Top Angle | [[CableFloorFly.gif \|Cable Floor Fly]]                                 | ***80*** | Push          | 0     | PG    |
+| Leg Cable Reverse Crunch            | 0          | 0         | 4    | 8    |       | Cable      | Low      | N/A               | Core   | Legs Multi            | Low Angle | [[Core#^b41212\| Leg Cable Reverse Crunch]]                             | *45*     | Pull          | 0     | RC    |
+| Hip Extension                       | 10         | 20        | 4    | 8    |       | Cables     | _Highest | N/A               | Bottom | Multi                 | Low Angle | [[Cable Machine Leg Exercises#^d00f82 \|Hip Extension]]                 | *10*     | Push          | N/A   | CM    |
+| Hip Flexion                         | 10         | 20        | 4    | 8    |       | Cables     | Low      | N/A               | Bottom | Multi                 | Low Angle | [[Cable Machine Leg Exercises \|Hip Flexion ]]                          | *10*     | Push          | N/A   | CM    |
+| Kickback                            | 10         | 20        | 4    | 8    |       | Cables     | _Highest | N/A               | Bottom | Multi                 | Low Angle | [[Cable Machine Leg Exercises#^0552eb \|Kickback]]                      | *10*     | Push          | N/A   | CM    |
+| Pull Through                        | 10         | 20        | 4    | 8    |       | Cables     | _Highest | N/A               | Bottom | Multi                 | Low Angle | [[Cable Machine Leg Exercises#^8ca0fd \|Pull Through]]                  | *10*     | Push          | N/A   | CM    |
+| Side Kick                           | 10         | 20        | 4    | 8    |       | Cables     | Med      | N/A               | Bottom | Multi                 | Low Angle | [[Cable Machine Leg Exercises#^dc7113 \|Side Kick]]                     | *10*     | Push          | N/A   | CM    |
+| Step Through Lunge                  | 10         | 20        | 4    | 8    |       | Cables     | _Highest | N/A               | Bottom | Multi                 | Low Angle | [[Cable Machine Leg Exercises#^62416f \|Step Through Lunge]]            | *10*     | Push          | N/A   | CM    |
 | Arnold Press                        | 10         | 20        | 4    | 8    | Yes   | Dumbbell   | _Highest | N/A               | Upper  | Shoulder              | Standing  | [[Full Body#^569c1a \| Arnold Press]]                                   | **10**   | Push          | N/A   | CM    |
 | Incline Row                         | 0          | 0         | 4    | 8    |       | Dumbbell   | High     | N/A               | Upper  | Lats                  | Bench     | [[Upper#^4b1e6d \|Incline Row]]                                         | *0*      | Pull          | N/A   | CM    |
 | Super Rom Lateral Raises            | 5          | 10        | 4    | 8    | Yes   | Dumbbell   | _Highest | N/A               | Upper  | Multi                 | Standing  | [[Upper#^767e47 \|Super Rom Lateral Raises]]                            | *0*      | Pull          | N/A   | CM    |
@@ -706,7 +618,7 @@ Prioritize resistance bands for explosive phase they can be used for other phase
 | Goblet Squat                        | 30         | 30        | 4    | 8    | Yes   | Fixed      | _Highest | N/A               | Full   | Hamstring             | Standing  | [[Full Body#^dec99b \|Goblet Squat]]                                    | *150*    | Push          | N/A   | CM    |
 | Adduction Inner Thigh               | 110        | 120       | 4    | 8    | Yes   | Fixed      | High     | N/A               | Bottom | Inner Thigh           | Squeeze   | Adduction Inner Thigh                                                   | **140**  | Pull          | 0     | CM    |
 | Lat Pull down                       | 105        | 125       | 4    | 8    | Yes   | Fixed      | High     | N/A               | Upper  | Back Lats             | Underhand | [[Upper#^ba48ce \|Lat Pull down]]                                       | **125**  | Pull          | N/A   | PG    |
-| Leg Extension                       | 75         | 85        | 4    | 8    | Yes   | Fixed      | High     | N/A               | Bottom | Hamstring             | Seated    | Leg Extension                                                           | **85**   | Push          | 0     | CM    |
+| Leg Extension                       | 85         | 120       | 4    | 8    | Yes   | Fixed      | High     | N/A               | Bottom | Hamstring             | Seated    | Leg Extension                                                           | **85**   | Push          | 0     | CM    |
 | Shoulder Press                      | 30         | 40        | 4    | 8    | Yes   | Fixed      | Med      | N/A               | Upper  | Shoulder              | Narrow    | Shoulder Press                                                          | *20*     | Push          | N/A   | CM    |
 | Shoulder Press                      | 60         | 70        | 4    | 8    | Yes   | Fixed      | Med      | N/A               | Upper  | Shoulder              | Wide      | Shoulder Press                                                          | *35*     | Push          | N/A   | CM    |
 | Low Row                             | 77         | 88        | 4    | 8    | Yes   | Fixed      | Med      | N/A               | Upper  | Lats                  | Seated    | [Low Row](https://youtu.be/S5jNFL_jzBU?si=v0klXgt6vDqI_Pmu)             | **88**   |               | N/A   | PG    |
