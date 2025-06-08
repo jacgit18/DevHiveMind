@@ -89,7 +89,11 @@ Almonds or other nuts about 160 calories 6G Protein 28g about 24 nuts
 Chase freedom and bj card for food
 
 
+Look for healthy Greek yogurt, and cottage cheese
 
+  
+
+Aldi Greek yogurt 200 calories 7g protein
 #### Sandwich  have one a day 
 Sandwich total protein and calories  
 22g protein 290 protein depending on ingredients
