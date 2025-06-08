@@ -123,7 +123,7 @@ Start with a dynamic stretch to Improve blood flow and flexibility. End with a s
 - [ ] Keep in mind that cold bath can affect muscle gains so balance that out and nervous system regulation.
 	- Try listening to 60 BPM(Beats Per Minute) metronome while taking cold bath for 3 min max and maybe use O2 trainer during this.
 	- Switch back to warm start or cold showers in the fall at a lower frequency.
-- [ ] Practice 30 seconds on off on for stretch 6 days a week for a specific stretches to develop this flexibility.
+- [ ] 
 
 **Recommended Duration:** ~2–3 minutes per section (Total: 10–15 min)  
 **Tip:** Prioritize movement quality over speed. Use Duck Walks between sections or as part of the "Activate" phase.
@@ -309,6 +309,7 @@ The general principles of **training phases** like strength and hypertrophy appl
 - Use **barbells** for added weight when building strength.
 - Use **dumbbells** for greater range of motion and correcting muscle imbalances.
 - Any **curlbar** exercise can be done with barbell.
+- Elastic bar can be good for warm up.
 - You can use **heavy resistance bands combined with a weight plate** to create a **pseudo weighted vest**. This setup can be used for exercises like **pull-ups, dips, and other bodyweight movements** to add resistance without needing an actual vest.
 - For resistance band exercises focus on **Explosive Power** or **Hypertrophy**,  you can still do strength if your still weak in certain area's but you will eventually plateau you can also mix up bands clipping multiple ones together.
 
