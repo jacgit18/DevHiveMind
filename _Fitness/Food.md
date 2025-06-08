@@ -69,7 +69,7 @@ Chicken breast  70 calories 10g  protein $4.29  serving size 5
 Kozy shack rice pudding 120 calories 4g protein And on average for the pudding about 6 bucks
 
 
-Beet juice is 100 calories 3g protein four bottles about 15 bucks  
+4 x Beet juice is 100 calories 3g protein about 15 bucks  
   
 mandarins 2.79 serving size 3 about 120ish
 
