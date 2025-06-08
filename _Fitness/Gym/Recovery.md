@@ -12,6 +12,126 @@ Peer Reviewed: 0
 dg-publish:
 ---
 
+# 🧘‍♂️ **15-Minute Mobility Routine**
+
+A **comprehensive routine** combining **foam rolling, lacrosse ball, and Swiss ball** work for **pain relief, rehab, and functional movement prep**.  
+Adjust intensity based on your goals: _maintenance vs. injury recovery_.
+
+---
+
+## **1. Foam Rolling (5–6 Minutes)**
+
+**🎯 Goal:** Release large muscle groups and fascial tension  
+**🛠️ Technique:** Slow rolls (1 inch/sec) + pause on tender spots (5–10 sec)
+
+### **A. Lower Body**
+
+- **Quads (1 min):** Lie facedown, roll mid-thigh to knee.  
+    _Tip:_ Bend knee for deeper pressure.
+    
+- **Hamstrings (1 min):** Sit with legs extended, roll glutes to knees.  
+    _Tip:_ Rotate legs inward/outward.
+    
+- **Calves (1 min):** Cross one leg over the other, roll from Achilles to knee.
+    
+- **IT Band (30 sec/side):** Lie on side, roll hip to knee.  
+    _Note:_ Keep brief — avoid overstimulation.
+    
+
+### **B. Upper Body**
+
+- **Lats (30 sec/side):** Lie on side, arm overhead, roll armpit to mid-back.
+    
+- **Thoracic Spine (1 min):** Roll upper/mid-back with hands behind head.  
+    _Tip:_ Extend over roller to open chest.
+    
+
+---
+
+## **2. Lacrosse Ball (4–5 Minutes)**
+
+**🎯 Goal:** Target trigger points and smaller, deeper muscles  
+**🛠️ Technique:** 30–45 sec per spot, use gentle circles or static pressure
+
+### **A. Feet / Plantar Fascia (1 min/side):**
+
+- Stand or sit, roll under arch and heel.  
+    _Excellent for plantar fasciitis._
+    
+
+### **B. Glutes / Piriformis (1 min/side):**
+
+- Sit on ball, cross ankle over opposite knee, lean into tight spots.
+    
+
+### **C. Upper Back / Shoulders (1 min/side):**
+
+- Pin ball between spine and wall, target rhomboids and rear delts.
+    
+
+### **D. Pec Minor (30 sec/side):**
+
+- Place ball below collarbone, lean into doorway.  
+    _Helps fix rounded shoulders._
+    
+
+---
+
+## **3. Swiss Ball (4–5 Minutes)**
+
+**🎯 Goal:** Core activation, spine mobility, and stability
+
+### **A. Hip Flexor Stretch (1 min/side):**
+
+- Kneel with one leg on ball, lunge forward.  
+    _Stretch plus balance challenge._
+    
+
+### **B. Swiss Ball Wall Squats (1 min):**
+
+- Place ball between lower back and wall, squat slowly.  
+    _Engages glutes and quads._
+    
+
+### **C. Thoracic Extensions (1 min):**
+
+- Lie back on ball, arms behind head, gently extend backward.  
+    _Great posture reset._
+    
+
+### **D. Dead Bug (1 min):**
+
+- Lie back on ball, alternate extending opposite arms and legs.  
+    _Core stability and control._
+    
+
+---
+
+## ✅ **Routine Summary**
+
+|**Tool**|**Focus Area**|**Time**|**Key Benefit**|
+|---|---|---|---|
+|Foam Roller|Lower/Upper Body|5–6 min|Myofascial release|
+|Lacrosse Ball|Trigger Points|4–5 min|Deep pain relief|
+|Swiss Ball|Mobility / Core|4–5 min|Dynamic stability + posture|
+
+🕒 **Total Time:** ~15 Minutes
+
+---
+
+## 💡 **Pro Tips**
+
+- **Rehab Mode:** Use lighter pressure; avoid pain flare-ups.
+    
+- **Pre-Workout:** Prioritize dynamic work (e.g., Swiss ball squats).
+    
+- **Post-Workout:** Spend extra time on chronically tight areas (e.g., lats, hamstrings).
+    
+
+---
+
+**Do this 3x/week** for noticeable mobility and pain reduction.  
+Want a **shorter or longer version**? Just ask!
 
 ---
 

@@ -29,7 +29,8 @@ MMA has shorter combos because of takedowns. When kicking use high knee elevatio
 Keep sparing for Muay Thai down to 2 or 3 times a month for safety and quality.  
 
 #todo/BAU/MMA/Drill 
-- [ ] Work on close range kicks
+- [ ] Work on close range 
+- [ ] Hold on in place and wait while you're moving to throw a strike sooner than later instead of pulling back and having to work to time a counter.
 - [ ] Use Philly shell in Muay Thai for fainting and baiting your opponent to throw things and also maybe getting into a clinch.
 - [ ] Avoid looking at feet when throwing leg kicks or in general just look at opponent in a consistent way and deviate from that look as a tactic to get the person to misread you.
 - [ ] Untuck chin on exit to use head movement if needed.
