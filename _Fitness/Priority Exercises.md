@@ -123,6 +123,7 @@ Start with a dynamic stretch to Improve blood flow and flexibility. End with a s
 - [ ] Keep in mind that cold bath can affect muscle gains so balance that out and nervous system regulation.
 	- Try listening to 60 BPM(Beats Per Minute) metronome while taking cold bath for 3 min max and maybe use O2 trainer during this.
 	- Switch back to warm start or cold showers in the fall at a lower frequency.
+- [ ] Practice 30 seconds on off on for stretch 6 days a week for a specific stretches to develop this flexibility.
 
 **Recommended Duration:** ~2–3 minutes per section (Total: 10–15 min)  
 **Tip:** Prioritize movement quality over speed. Use Duck Walks between sections or as part of the "Activate" phase.
@@ -169,8 +170,9 @@ _~2–3 minutes total – pick 2–3_ or pick one to do for the whole time.
 - **Torso Twists** – Controlled rotation side-to-side - like throwing hook, *15–20 reps*
 - **Neck Rolls** – Slow circles, 5 reps each direction
 - Jump Rope – **1 min**
-- Fast High Knees + Butt Kicks – **30s each**
-- Arm Swings (Hugs) – **30s**
+- High Knees + Butt Kicks – **30s each**
+- Lateral Skips(gallop)  – **30s each**
+- Arm Swings (Hugs) – **30s each**
 - Punch Ups with 5lb dumbbells
 - Chest Fly with 5lb dumbbells
 - Jumping Jacks – **1 min**
