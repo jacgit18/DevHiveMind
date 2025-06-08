@@ -168,7 +168,6 @@ _~2–3 minutes total – pick 2–3_ or pick one to do for the whole time.
 - **Shoulder Rolls** – Forward & backward, *10 reps each*
 - **Torso Twists** – Controlled rotation side-to-side - like throwing hook, *15–20 reps*
 - **Neck Rolls** – Slow circles, 5 reps each direction
-- **[[Wrist Curl]]** - Do a few sets not as many as you would other exercises at home maybe in gym for specific variations.
 - Jump Rope – **1 min**
 - Fast High Knees + Butt Kicks – **30s each**
 - Arm Swings (Hugs) – **30s**
@@ -242,6 +241,7 @@ _~3–4 minutes total – choose a flow or 3–5 moves_
 - Dynamic Hip Flexor Swings -> [[Lower#^357346 |Lizard Pose ]] (Just a lower to the ground version with elbows down) – **6 swings + 10s hold/side**
 	- For dynamic part lift your back knee off the ground if it was resting begin rocking forward and backward, shifting your weight between your front foot and back toes.
 ##### **Standing** - **10 reps Each Limb**
+- **[[Wrist Curl]]** - Do a few sets not as many as you would other exercises at home maybe in gym for specific variations.
 - PVC Walk
 - ***Scapular Wall Slides*** – Slide arms up/down while back touches wall
 - ***Leg Swings*** – Front/back & side-to-side
