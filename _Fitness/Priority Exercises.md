@@ -438,11 +438,11 @@ Prioritize resistance bands for explosive phase they can be used for other phase
 - No improvement in endurance after 2–3 weeks.  
 
 ### Tower 200 Programming  – With Adequate Space
-#### **Cable at Top Angle
+#### Cable at Top Angle
 - **Kneeling Cable Crunch** – Great for weighted ab work.
 - **Single-Arm Lateral Head Pushdown** – Targets the lateral (outer) head of the triceps.
 
-#### **Cable at Low Angle
+#### Cable at Low Angle
 - **Cable Curl** – Classic biceps isolation.
 - **Single-Arm Back Cable Lateral Raise** – Hits rear delts with a unique angle.
 - **Cable Pull-Through** _(test weight)_ – Glute and hamstring focus.
@@ -621,7 +621,7 @@ Prioritize resistance bands for explosive phase they can be used for other phase
 | Bench Press                         | 10         | 15        | 4    | 8    | [[Upper#^db98b7 \|Bench Press]]                                         | Yes   | Dumbbell                         | Incline               | _Highest | N/A                      | Upper  | Chest                             | *20*     | N/A   | CM               |
 | Overhead Extension                  | 10         | 15        | 4    | 8    | [[Upper#^f128a8 \|Overhead Extension]]                                  | Yes   | Dumbbell                         | Standing              | Med      | N/A                      | Upper  | Tricep                            | **20**   | N/A   | CM               |
 | Rear Delt Fly                       | 10         | 15        | 4    | 8    | [[Upper#^98fc91\|Rear Delt Fly]]                                        | Yes   | Dumbbell                         | Both                  | High     | N/A                      | Upper  | Shoulder Delt                     | *10*     | 0     | CM               |
-| Skull Crusher                       | 5          | 10        | 4    | 8    | [[Upper#^6beb70\|Skull Crusher]]                                        | Yes   | Dumbbell                         | Seated                | _Highest | N/A                      | Upper  | Tricep                            | *15*     | N/A   | CM               |
+| Skull Crusher                       | 5          | 10        | 4    | 8    | [[Upper#^6beb70\|Skull Crusher]]                                        | Yes   | Dumbbell                         | Seated                | High     | N/A                      | Upper  | Tricep                            | *15*     | N/A   | CM               |
 | Shoulder Press                      | 15         | 20        | 4    | 8    | Shoulder Press                                                          | Yes   | Dumbbell                         | Seated                | Med      | N/A                      | Upper  | Shoulder                          | *10*     | N/A   | CM               |
 | Lateral Raise                       | 5          | 10        | 4    | 8    | [[Upper#^034a05\| Lateral Raise]]                                       | Yes   | Dumbbell                         | Standing              | Low      | N/A                      | Upper  | Multi                             | **10**   | N/A   | CM               |
 | Zottman Curls                       | 10         | 15        | 4    | 8    | [[Upper#^bee68f\| Zottman Curls]]                                       | Yes   | Dumbbell                         | Standing              | _Highest | N/A                      | Upper  | Biceps                            | **10**   | N/A   | CM               |
