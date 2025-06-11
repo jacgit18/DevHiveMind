@@ -19,7 +19,7 @@ console.log("User input:", userInput);
 }
 ```
 
-
+[I started using NotebookLM with Obsidian and it’s been a game-changer](https://www.xda-developers.com/using-notebooklm-with-obsidian/)
 
 Abstracting out LLD for better business audience understand then create other diagrams that are more for devs that goes more into technical details
 
@@ -84,6 +84,7 @@ If you fail its just a iteration that you can pivot from in terms of cutting los
 
 [GitHub - aws-samples/amazon-bedrock-workshop: This is a workshop designed for Amazon Bedrock a foundational model service.](https://github.com/aws-samples/amazon-bedrock-workshop/tree/main)
 
+[JSONata Exerciser](https://try.jsonata.org)
 
 
 - [ ] [How I save $$$ by self-hosting these 5 open source tools - DEV Community](https://dev.to/code42cate/how-i-save-by-self-hosting-these-5-open-source-tools-17mb)
