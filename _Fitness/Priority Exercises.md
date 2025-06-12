@@ -369,17 +369,17 @@ Prioritize resistance bands for explosive phase they can be used for other phase
 
 
 ## Regimen
-> **Train intensity before volume**. Prioritize neural output early, then shift to fatigue-driven work.
+> **Train intensity before volume**. Prioritize neural output early, then shift to fatigue-driven work. Can shift things depending how you feel
 
-| Day     | Session Type       | Options (Choose 1)               | Phase                 | Best Order Of Operations  |
-| ------- | ------------------ | -------------------------------- | --------------------- | ------------------------- |
-| **Sun** | Gym                | Upper Body + Run + Balance Board | Strength              | **Glutes/Hamstrings**     |
-| **Mon** | MMA/Gym            | Full Body(**Experiment**) + Sled | Explosive to Strength | **Core**                  |
-| **Tue** | Gym or Rest        | Upper Body + Run + Balance Board | Hypertrophy           | **Scapular & Upper Back** |
-| **Wed** | MMA or Gym or Rest | Lower Body                       | Hypertrophy           | **Lats/Traps**            |
-| **Thu** | Gym or Rest        | Full Body(**Experiment**) + Sled | Strength              | **Quads**                 |
-| **Fri** | MMA or Gym or Rest | Lower Body                       | Strength              | **Chest/Delts**           |
-| **Sat** | MMA or Gym         |                                  |                       | **Arms**                  |
+| Day     | Session Type       | Options (Choose 1)               | Phase                             | Best Order Of Operations  |
+| ------- | ------------------ | -------------------------------- | --------------------------------- | ------------------------- |
+| **Sun** | Gym                | Upper Body + Run + Balance Board | Strength                          | **Glutes/Hamstrings**     |
+| **Mon** | MMA/Gym            | Full Body(**Experiment**) + Sled | Explosive Upper to Strength Lower | **Core**                  |
+| **Tue** | Gym or Rest        | Upper Body + Run + Balance Board | Hypertrophy                       | **Scapular & Upper Back** |
+| **Wed** | MMA or Gym or Rest | Lower Body + Dead Hang           | Hypertrophy                       | **Lats/Traps**            |
+| **Thu** | Gym or Rest        | Full Body(**Experiment**) + Sled | Explosive Lower to Strength Upper | **Quads**                 |
+| **Fri** | MMA or Gym or Rest | Lower Body + Dead Hang           | Strength                          | **Chest/Delts**           |
+| **Sat** | MMA or Gym         |                                  |                                   | **Arms**                  |
 
 #todo/BAU/Workout
 - [ ] Do [[Grip Strength Training]]
