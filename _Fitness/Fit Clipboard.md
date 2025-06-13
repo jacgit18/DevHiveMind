@@ -68,12 +68,65 @@ dg-publish:
 [Rope Sled Pulls l Bodyweight Exercise l Advanced Strength Training l - YouTube](https://youtu.be/WyqpYp1TnwE?si=DRNmvxuT2z18yVAg)
 
 
+[Kettlebell Suitcase Deadlift - YouTube](https://youtu.be/eUjU3YBHe-Y?si=9Mrs6EpsKoFdQk21)
 
 
 
+[Band Assisted Thoracic Rotation - YouTube](https://youtu.be/3NgyG2JImfw?si=7BrnDvazkUUFuEbO)
 
 
+Deadlift with trap bar
 
+
+trap bar squat jump 
+
+can flip trap bar to lower the grip
+
+trap bar overhead press if you focusing on hypotrophy
+
+Here’s a refined and clearer version of your pull-up variations and the muscle groups they target:
+
+---
+
+### **Pull-Up & Chin-Up Variations – Muscle Focus**
+narrow are top priority
+
+- **Narrow-Grip Pull-Up**
+    
+    - **Primary:** Forearms, rear delts
+        
+    - **Secondary:** Upper back, biceps
+        
+    - _Tip:_ Keep strict form to maximize rear delt activation.
+        
+- **Narrow-Grip Chin-Up (45° Angle Wrists)**
+    
+    - **Primary:** Lats, rear delts, biceps
+        
+    - **Secondary:** Forearms
+        
+    - _Tip:_ Angled wrist grip helps balance biceps and lat recruitment.
+        
+- **Medium-Grip Pull-Up (On Angled Section of Bar)**
+    
+    - **Primary:** Lats
+        
+    - **Secondary:** Mid-traps, rear delts
+        
+    - _Tip:_ This is the classic grip for full lat engagement with shoulder width involvement.
+        
+- **Neutral-Grip Pull-Up (Palms Facing In)**
+    
+    - **Primary:** Lats
+        
+    - **Secondary:** Biceps, brachialis
+        
+    - _Tip:_ Neutral grip is easiest on the shoulders and elbow joints while still hitting the lats hard.
+        
+
+---
+
+Let me know if you want a table version or a visual cue for each.
 
 
 
