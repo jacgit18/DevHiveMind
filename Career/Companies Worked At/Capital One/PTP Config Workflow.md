@@ -25,6 +25,9 @@ Sorry im trying to formulate my thought
 **Only push placeholder code if it's actively helping you solve a problem or you're stuck and need to share context with teammates.**  
 Avoid pushing placeholders that serve no functional purpose or are just there to "fill in space." These can clutter the codebase, cause confusion during reviews, and make the commit history harder to follow. If something is incomplete but you're working through a problem or need feedback on your approach, a clearly labeled placeholder with a meaningful comment is acceptable. Otherwise, it's better to keep local stubs or notes to yourself until the implementation is ready or necessary.
 
+
+When you think you are done with implementing whatever feature Etc then raise the pr avoid raising it when you are experimenting and you have like placeholders and 100% sure on the requirements if so ask for help ask questions to get clarification then when you think it's actually what it needs to be then raise PR instead of using it for people to read your code and you to correct it accordingly without thinking
+
 ## June
 
 7ps capital one testing platform will be doing behavior driven test
