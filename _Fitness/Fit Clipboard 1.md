@@ -90,9 +90,9 @@ can flip trap bar to lower the grip
 
 trap bar overhead press if you focusing on hypotrophy
 
-Here’s a refined and clearer version of your pull-up variations and the muscle groups they target:
-
----
+Kettlebell Sumo Squat** (5/5) – Best all-around for most lifters.  
+ 
+ **Dumbbell B-Squat** (5/5) – Top for unilateral work.
 
 ### **Pull-Up & Chin-Up Variations – Muscle Focus**
 narrow are top priority
