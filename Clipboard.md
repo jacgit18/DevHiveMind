@@ -27,6 +27,8 @@ EventBridge is like the air traffic controller for events in AWS.
 It makes sure the right events go to the right place, at the right time, without you having to write glue code.
 
 
+[🔐 Kali GPT – The Future of Penetration Testing is Here 🔐 \| ASHISH DABHANE](https://www.linkedin.com/posts/ashish-dabhane-55ba1227b_cybersecurity-kalilinux-kaligpt-activity-7337184039394537473-LY_k/?utm_source=share&utm_medium=member_android&rcm=ACoAAB5RM-sBDcWQxGls-I2ibiN5J52xIwkopmg)
+
 Pager duty alerts to phone etc on failure  
 Publish message to pager duty in the future
 
