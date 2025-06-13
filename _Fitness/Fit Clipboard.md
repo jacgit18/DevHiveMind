@@ -75,6 +75,10 @@ dg-publish:
 [Band Assisted Thoracic Rotation - YouTube](https://youtu.be/3NgyG2JImfw?si=7BrnDvazkUUFuEbO)
 
 
+Lower Body + Dead Hang
+
+For kettlebell RDL use opposite side where you are holding the Kettlebell this side that is lifting the leg
+
 Deadlift with trap bar
 
 

@@ -21,7 +21,7 @@ dg-publish:
 - **Variation:** Use slow eccentrics to improve control.
 
 
-![Watch on YouTube](https://www.youtube.com/watch?v=MUvXfV97-Us)
+![Watch on YouTube](https://www.youtube.com/watch?v=MUvXfV97-Us) ^6dcf9a
 
 
 
