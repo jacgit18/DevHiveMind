@@ -21,6 +21,10 @@ Sorry im trying to formulate my thought
 "Then" in gurken are treated as assertion
 
 
+
+**Only push placeholder code if it's actively helping you solve a problem or you're stuck and need to share context with teammates.**  
+Avoid pushing placeholders that serve no functional purpose or are just there to "fill in space." These can clutter the codebase, cause confusion during reviews, and make the commit history harder to follow. If something is incomplete but you're working through a problem or need feedback on your approach, a clearly labeled placeholder with a meaningful comment is acceptable. Otherwise, it's better to keep local stubs or notes to yourself until the implementation is ready or necessary.
+
 ## June
 
 7ps capital one testing platform will be doing behavior driven test
