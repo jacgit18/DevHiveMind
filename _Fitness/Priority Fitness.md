@@ -435,7 +435,7 @@ Prioritize resistance bands for explosive phase they can be used for other phase
 - **Incline Dumbbell Bench/Floor Press** + **Single-Arm Tricep Extension**
 
 #### **Session 2: Pull Focus**
-Chin ups higher priority alternate each quar
+Chin ups higher priority alternate each quarter or even month
 1. **Landmine Single Leg RDL** - 10lb
 2. **Narrow-Grip Chin-Up** 
 3. **Narrow-Grip Pull-Up** 
@@ -454,21 +454,20 @@ Chin ups higher priority alternate each quar
 - Don’t pair **Zottman Curls + Chin-Ups** in the same day too often—they both heavily load the **biceps tendon**.
 #### **Session 3: Push + Pull (Hybrid)**
 ##### **Push (Home-Friendly Options):**
-1. **Arnold Press** – 4 sets of 8–10 reps
+1. **Arnold Press** 
+2.  **Single-Arm Tricep Extension** 
 
-2. **6-Way Shoulder Raise** – 2 sets of 10 reps (per direction)  
+3. **6-Way Shoulder Raise** – 2 sets of 10 reps (per direction)  
        _Alternate with:_  
        **Single-Arm Behind-Back Cable Lateral Raise** – 2 sets of 12–15 reps
 
 ##### **Pull:**
-- If at home, **replace bar-based exercises with wrist curls**.
-- Choose one of the following combinations based on your goal:  
+- Choose Two combinations based on your goal:  
        - **Most Balanced:**  
-          - **Pull-Up** + **Zottman Curl**  
-          _(Strength + Hypertrophy)_  
+          - **Pull-Up** + **Zottman Curl** _(Strength + Hypertrophy)_  
        - **Aesthetic Focus:**  
-          - **Chin-Up** + **Super ROM Lateral Raise Wrist Curl**  
-          _(Upper Body Symmetry)_
+          - **Chin-Up** + **Super ROM Lateral Raise Wrist Curl** _(Upper Body Symmetry)_
+	  - **Landmine Single-Leg RDL** + **Narrow-Grip Pull-Up/Chin-Up**
 
 ### Leg Programming 
 
