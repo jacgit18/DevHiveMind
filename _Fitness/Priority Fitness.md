@@ -453,21 +453,17 @@ Chin ups higher priority alternate each quarter or even month
 
 - Don’t pair **Zottman Curls + Chin-Ups** in the same day too often—they both heavily load the **biceps tendon**.
 #### **Session 3: Push + Pull (Hybrid)**
-##### **Push (Home-Friendly Options):**
-1. **Arnold Press** 
-2.  **Single-Arm Tricep Extension** 
-
-3. **6-Way Shoulder Raise** – 2 sets of 10 reps (per direction)  
-       _Alternate with:_  
-       **Single-Arm Behind-Back Cable Lateral Raise** – 2 sets of 12–15 reps
-
+##### **Push:**
+1. **Landmine Anti Rotations** 
+2. **Single Arm Chest Press** or **Dumbbell Floor Press**/**Incline Dumbbell Bench Press** 
+3. **Single-Arm Tricep Extension** 
+4. **Single-Arm Behind-Back Cable Lateral Raise** 
+5. **Landmine Rotational Press** 
 ##### **Pull:**
-- Choose Two combinations based on your goal:  
-       - **Most Balanced:**  
-          - **Pull-Up** + **Zottman Curl** _(Strength + Hypertrophy)_  
-       - **Aesthetic Focus:**  
-          - **Chin-Up** + **Super ROM Lateral Raise Wrist Curl** _(Upper Body Symmetry)_
-	  - **Landmine Single-Leg RDL** + **Narrow-Grip Pull-Up/Chin-Up**
+Choose Two combinations based on your goal:  
+- **Pull-Up** + **Zottman Curl** 
+- **Chin-Up** + **Super ROM Lateral Raise Wrist Curl** 
+- **Landmine Single-Leg RDL** + **Narrow-Grip Pull-Up/Chin-Up**
 
 ### Leg Programming 
 
