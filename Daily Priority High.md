@@ -7,7 +7,7 @@ kanban-plugin: board
 ## ##### Standing on business
 
 - [ ] [[Striking Approach]]
-- [ ] [[Priority Exercises]]
+- [ ] [[Priority Fitness]]
 - [ ] I rob banks first TD, now Capital One who is next 👀
 - [ ] Be smart about buying time and pay the price more for things that matter and have an unavoidable cost
 - [ ] ###### Treat your attention like its money
