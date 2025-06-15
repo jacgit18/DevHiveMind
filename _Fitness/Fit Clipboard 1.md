@@ -26,22 +26,7 @@ dg-publish:
 [How To Use the TIB BAR - Knee, Ankle and Shin Rehab (including shin splints) - YouTube](https://youtu.be/1nZgmPik6Mk?si=Yw-MvDMiVGwvb7ZL)
 
   
-
-[Dumbbell Side Raise with Single Leg Balance - YouTube](https://youtu.be/7cfhwCU2-y0?si=CxwXSgm6RWSQF8Ah)
-
-
-[Knee Circles - YouTube](https://youtu.be/ROiyq3-2ljY?si=jmBGQDk3fKu4mPAt)
-
 [Side Plank with Knee Drive (CORRECT FORM): myFit Personal Training - YouTube](https://youtu.be/4ydfLjw8aWE?si=gcidItLGPbnqe7Ry)
-
-
-[Side Lying Bicycle - YouTube](https://youtu.be/CYmpb7fw1Gc?si=95ff52rPZ2OTaYnZ)
-
-
-
-
-
-
 
 
 
@@ -63,12 +48,6 @@ trap bar squat jump
 
 
 trap bar overhead press if you focusing on hypotrophy
-
-
-
-
-
-
 
 
 

@@ -158,7 +158,7 @@ _~2–3 minutes total – pick 2–3_ or pick one to do for the whole time.
 ##### **Grounded On Side**
 - **Side-to-Side Rolling** – Roll from side to side across a mat, using arms and hips to initiate; great for warm blood flow in spine/core.
     
-- **Side-Lying Bicycles** – Pedal your top leg like a bike in the air to raise HR slightly and warm up hips.
+- [**Side-Lying Bicycles**](https://www.youtube.com/watch?v=CYmpb7fw1Gc) – Pedal your top leg like a bike in the air to raise HR slightly and warm up hips.
 
 ##### **Grounded On Front**
 - [[Upper#^4a9cd1 |Pike Push-Ups]] – **6–8 reps**
@@ -216,7 +216,8 @@ _~2–3 minutes total – pick 4–5_
 - [[Lower#^da4cd0|Banded Joint Mobilizations]]
 - Twisted arms
 - [Heel to Toe Rock](https://www.youtube.com/watch?v=FMZX3mpffeE) & [Walk](https://www.youtube.com/watch?v=oQ_-LIbhYgo) 
-
+- [Knee Circles](https://youtu.be/ROiyq3-2ljY?si=jmBGQDk3fKu4mPAt)
+- [Dumbbell Side Raise with Single Leg Balance](https://youtu.be/7cfhwCU2-y0?si=CxwXSgm6RWSQF8Ah)
 
 **Optional Add-In:**
 - **Duck Walks** – **2 passes across gym or 30–45 seconds** - with mediball
