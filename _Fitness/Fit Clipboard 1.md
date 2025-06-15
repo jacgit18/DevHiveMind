@@ -41,10 +41,10 @@ Random day
 
 
 
-Trap Bar Jump
 
 
-trap bar squat jump 
+
+
 
 
 trap bar overhead press if you focusing on hypotrophy

@@ -470,40 +470,29 @@ Choose Two combinations based on your goal:
 #### **Session 1: Squat-Dominant (Quad & Core Focus)**
 1. **Hack Squat** – 4 sets of 8–10 reps
 2. **Walking Barbell Lunge/Zercher Lunge** – 3 sets of 10–12 steps per leg
-3. **Dumbbell Bulgarian Split Squat (B-Squat)** – 3 sets of 8–10 reps
+3. **Dumbbell Bulgarian Split Squat** – 3 sets of 8–10 reps
 4. **Leg Extension** – 3 sets of 12–15 reps
 5. **Tib Bar Raise** – 3 sets of 15–20 reps
-
-**Best Pairings**
-- **Hack Squat** + **Leg Extension** – Quad-heavy pair for hypertrophy
-- **Walking Lunge** + **B-Squat** – Functional and unilateral strength combo
-- **Tib Raise** at the end – Prevents shin splints and strengthens lower leg
-
 
 #### **Session 2: Hinge + Posterior Chain (Glutes, Hamstrings, Core)**
 1. **Cable Pull Through** – 4 sets of 10–12 reps
 2. **Band Single-Leg Deadlift** – 3 sets of 8–10 reps
 3. **Cable Hip Extension** – 3 sets of 12–15 reps
-4. **Tib Bar Raise** – 2 sets of 15–20 reps _(optional if sore from Session 1)_
-
 
 **Best Pairings**
 - **Pull Through** + **Hip Extension** – Target glutes with different angles and loading
 - **Zercher Lunge** + **Band Deadlift** – Core + hinge pattern with balance
-- **Tib Raise** optional for foot/ankle strength
-
 
 #### **Session 3: Stability, Mobility, and Accessories (Control + Balance)**
 
 1. **Single Leg Press** – 3 sets of 10 reps per leg
 2. **Cable Side Kick** – 3 sets of 12–15 reps per leg
-3. Band single leg barbell Squat
+3. **Band single leg barbell Squat**
 4. **Cable Hip Flexion** – 3 sets of 12–15 reps per leg
 5. **Abduction Machine (Outer Thigh)** – 3 sets of 15–20 reps
 6. **Kettlebell Sumo Squat** – 3 sets of 12–15 reps
 7. **B-Squat**
-8. **Band Scarecrow Raises** – 2 sets of 15 reps _(upper-back/postural accessory)_
-
+8. **Band Scarecrow Raises**
 
 **Best Pairings**
 - **Single Leg Press** + **Sumo Squat** – Balanced leg press and wide-stance squat
@@ -702,6 +691,7 @@ Choose Two combinations based on your goal:
 | Lateral Rotations                   | 0          | 10     | 4     | 8     | Med          | Barbell Landmine                    | Full            | Multi                             | [[Landmines#^ceab94 \|Lateral Rotations]]                                                     | Yes       | Standing                              | **N/A**                  | *0*      | **N/A**     | RC               |
 | Reverse Lunge + Rotation            | 0          | 10     | 4     | 8     | Med          | Barbell Landmine                    | Full            | Multi                             | [[Landmines#^82208b\|Reverse Lunge + Rotation]]                                               | Yes       | Standing                              | **N/A**                  | *0*      | **N/A**     | RC               |
 | Single Leg RDL                      | 20         | 20     | 4     | 8     | _Highest     | Barbell/Kettlebell/Landmine         | Full            | Multi                             | [Single Leg RDL](https://youtu.be/lghxTgWZ9TM?si=fuXk0b2GPHCgdj--)                            | Yes       | Standing                              | **N/A**                  | ***10*** | **N/A**     | CM               |
+| Overhead Press                      | 20         | 50     | 4     | 8     | _Highest     | TrapBar                             |                 |                                   |                                                                                               |           |                                       |                          |          |             |                  |
 | Deadlift                            | 20         | 50     | 4     | 8     | _Highest     | Barbell/TrapBar Low Handle          | Full            | Multi                             | [[Lower#^1260ed \|Deadlift]]                                                                  | Yes       | Standing                              | **N/A**                  | *10*     | **N/A**     | CM               |
 | Nordic Hamstring Curl               | 0          | 0      | 4     | 8     | _Highest     | Bodyweight                          | Bottom          | Hamstring                         | [[Lower#^4e02bb \|Nordic Hamstring Curl]]                                                     | **TBD**   | Grounded                              | **N/A**                  | ****     | **N/A**     | CM               |
 | Back Extension                      | 0          | 15     | 4     | 8     | _Highest     | BodyWeight                          | Core            | Abdominal                         | Back Extension                                                                                | Yes       | Bench                                 | **N/A**                  | *0*      | **N/A**     | RC/Extension     |
