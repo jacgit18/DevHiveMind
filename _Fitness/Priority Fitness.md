@@ -428,13 +428,11 @@ Prioritize resistance bands for explosive phase they can be used for other phase
 1. **Narrow-Grip Pull-Up** – 4 sets of 6–8 reps
 2. **Narrow-Grip Chin-Up** – 3 sets of 8–10 reps
 3. **Zottman Curl** – 3 sets of 10–12 reps
-4. **Super ROM Lateral Raise** – 3 sets of 12–15 reps
-5. **Wrist Curl** – 2 sets of 15 reps
+4. **Super ROM Lateral Raise Wrist Curl** – 3 sets of 12–15 reps
 
 *Best Pairing*
 - **Narrow-Grip Pull-Up** + **Zottman Curl**
-- **Chin-Up** + **Super ROM Lateral Raise**
-- **Zottman Curl** + **Wrist Curl**
+- **Chin-Up** + **Super ROM Lateral Raise Wrist Curl**
 
 #### **Session 3: Push + Pull (Hybrid)**
 ##### **Push (Home-Friendly Options):**
@@ -451,7 +449,7 @@ Prioritize resistance bands for explosive phase they can be used for other phase
           - **Pull-Up** + **Zottman Curl**  
           _(Strength + Hypertrophy)_  
        - **Aesthetic Focus:**  
-          - **Chin-Up** + **Super ROM Lateral Raise**  
+          - **Chin-Up** + **Super ROM Lateral Raise Wrist Curl**  
           _(Upper Body Symmetry)_
 
 ### Leg Programming 
@@ -669,9 +667,9 @@ Prioritize resistance bands for explosive phase they can be used for other phase
 | Bench Press                         | 10         | 15     | 4     | 8     | _Highest     | Dumbbell                            | Upper           | Chest                             | [[Upper#^db98b7 \|Bench Press]]                                                               | Yes       | Incline                               | **N/A**                  | *20*     | **N/A**     | CM               |
 | Floor Press                         | 15         | 17.5   | 4     | 8     | _Highest     | Dumbbell                            | Upper           | Chest                             | [Floor Press](https://youtu.be/T0Y3OBF1bNI?si=EzKw-AXKUVGF96ZY)                               | Yes       | Grounded                              | **N/A**                  | ****     | **N/A**     | CM               |
 | 6-Way Shoulder Raise                |            | 10     | 4     | 8     | _Highest     | Dumbbell                            | Upper           | Shoulder                          | [6-Way Shoulder Raise](https://www.youtube.com/watch?v=nvEE4u3qfJY)                           | Yes       | Seated                                | **N/A**                  | ****     | **N/A**     | CM               |
-| Super Rom Lateral Raises            | 5          | 10     | 4     | 8     | _Highest     | Dumbbell                            | Upper           | Multi                             | [[Upper#^767e47 \|Super Rom Lateral Raises]]                                                  | Yes       | Standing                              | **N/A**                  | *0*      | **N/A**     | CM               |
+| Super Rom Lateral Raises Wrist Curl | 5          | 10     | 4     | 8     | _Highest     | Dumbbell                            | Upper           | Multi                             | [[Upper#^767e47 \|Super Rom Lateral Raises Wrist Curl]]                                       | Yes       | Standing                              | **N/A**                  | *0*      | **N/A**     | CM               |
 | Two Arm Row                         | 10         | 20     | 4     | 8     | _Highest     | Dumbbell                            | Upper           | Lats                              | [[Upper#^cf2720 \|Two Arm Row]]                                                               | Yes       | Standing                              | **N/A**                  | *0*      | **N/A**     | CM               |
-| Zottman Curls                       | 10         | 15     | 4     | 8     | _Highest     | Dumbbell                            | Upper           | Biceps                            | [[Upper#^bee68f\| Zottman Curls]]                                                             | Yes       | Standing/Grounded Swiss Ball          | **N/A**                  | **10**   | **N/A**     | CM               |
+| Zottman Curls                       | 10         | 15     | 4     | 8     | _Highest     | Dumbbell                            | Upper           | Biceps                            | [[Upper#^bee68f\| Zottman Curls]]                                                             | Yes       | Standing/Grounded Swiss Ball/ Incline | **N/A**                  | **10**   | **N/A**     | CM               |
 | Arnold Press                        | 10         | 20     | 4     | 8     | _Highest     | Dumbbell                            | Upper - Arms    | Front & Side Delt Triceps Biceps  | [[Full Body#^569c1a \| Arnold Press]]                                                         | Yes       | Standing                              | **N/A**                  | **10**   | **N/A**     | CM               |
 | Abduction Outer Thigh               | 120        | 130    | 4     | 8     | _Highest     | Fixed                               | Bottom          | Outer Thigh                       | Abduction Outer Thigh                                                                         | Yes       | Spread                                | **N/A**                  | **110**  | 7           | CM               |
 | Hack Squat                          | 270        | 300    | 4     | 8     | _Highest     | Fixed                               | Bottom          | Hamstring                         | [[Lower#^1de02b \|Hack Squat]]                                                                | Yes       | Seated                                | **N/A**                  | *150*    | **N/A**     | CM               |
@@ -736,7 +734,6 @@ Prioritize resistance bands for explosive phase they can be used for other phase
 | Reverse Preacher Curl               | 10         | 20     | 4     | 8     | High         | Dumbbell                            | Upper           | Biceps                            | [Reverse Preacher Curl](https://youtu.be/h8LVaKRAFY0?si=ix3lKao_fRA33nqU)                     | Yes       | Leaning On Curl Machine or swiss ball | **N/A**                  | ****     | **N/A**     | CM               |
 | Skull Crusher                       | 5          | 10     | 4     | 8     | High         | Dumbbell                            | Upper           | Tricep                            | [[Upper#^6beb70\|Skull Crusher]]                                                              | Yes       | Seated                                | **N/A**                  | *15*     | **N/A**     | CM               |
 | Wide Curl                           | 0          | 15     | 4     | 8     | High         | Dumbbell                            | Upper           | Biceps                            | [[Upper#^60f95e \|Wide Curl]]                                                                 | Yes       | Standing                              | **N/A**                  | ****     | **N/A**     | CM               |
-| Wrist Curl                          | 5          | 10     | 4     | 8     | High         | Dumbbell                            | Upper           | Forearm                           | [[Upper#^1156ec\|Wrist Curl]]                                                                 | Yes       | Standing                              | **N/A**                  | *0*      | **N/A**     | CM               |
 | Hammer Curls                        | 10         | 20     | 4     | 8     | High         | Dumbbell                            | Upper - Mid Arm | Biceps Brac-...                   | [[Upper#^eddf76\| Hammer Curls]]                                                              | Yes       | Standing                              | **N/A**                  | **10**   | **N/A**     | CM               |
 | Adduction Inner Thigh               | 110        | 120    | 4     | 8     | High         | Fixed                               | Bottom          | Inner Thigh                       | Adduction Inner Thigh                                                                         | Yes       | Squeeze                               | **N/A**                  | **140**  | 0           | CM               |
 | Leg Extension                       | 85         | 120    | 4     | 8     | High         | Fixed                               | Bottom          | Hamstring                         | Leg Extension                                                                                 | Yes       | Seated                                | **N/A**                  | **85**   | 2           | CM               |
