@@ -416,28 +416,31 @@ Prioritize resistance bands for explosive phase they can be used for other phase
 
 ### Right to Bare Arms Program
 
-#### **Session 1: Push Focus**
-1. **Arnold Press** – 20lb
-2. **Dumbbell Floor Press** or **Incline Dumbbell Bench Press** – 17.5lb
-3. **Single-Arm Tricep Extension** – 20lb
-4. **6-Way Shoulder Raise** – 5lb
-5. **Single Arm Chest Press** - 40lb
-6. **Landmine Rotational Press** - 10lb
-7. **Landmine Anti Rotations** - 10lb
-8. **Landmine Russian Twist** - 10lb
-9. **Landmine Z Press** - 10lb
+#### **Session 1: Push Focus Ordered By Priority**
+1. **Landmine Z Press** - 10lb
+2. **Single Arm Chest Press** - 40lb
+3. **Landmine Anti Rotations** - 10lb
+4. **Dumbbell Floor Press** or **Incline Dumbbell Bench Press** – 17.5lb
+5. **Landmine Rotational Press** - 10lb
+6. **Arnold Press** – 20lb
+7. **Landmine Russian Twist** - 10lb
+8. **Single-Arm Tricep Extension** – 20lb
+9. **6-Way Shoulder Raise** – 5lb
 10. **Single-Arm Behind-Back Cable Lateral Raise** – 10lb (*Build to it*)
 
-*Best Pairing*
-- **Arnold Press** + **6-Way Shoulder Raise** _(or Back Cable Lateral Raise)_
-- **Dumbbell Floor Press / Incline Press** + **Single-Arm Tricep Extension**
+*Best Pairing*(in Same Session for Injury Mitagation)
+- **Arnold Press** + **Landmine Russian Twist**
+- **Landmine Z Press** + **Single-Arm Chest Press**
+- **Incline Dumbbell Bench/Floor Press** + **Landmine Anti-Rotations**
+- **Incline Dumbbell Bench/Floor Press** + **Single-Arm Tricep Extension**
 
 #### **Session 2: Pull Focus**
-1. **Narrow-Grip Pull-Up** – 4 sets of 6–8 reps
-2. **Narrow-Grip Chin-Up** – 3 sets of 8–10 reps
-3. **Zottman Curl** – 3 sets of 10–12 reps
-4. **Super ROM Lateral Raise Wrist Curl** – 3 sets of 12–15 reps
-5. **Landmine Single Leg RDL**
+1. **Landmine Single Leg RDL**
+2. **Narrow-Grip Pull-Up** – 4 sets of 6–8 reps
+3. **Narrow-Grip Chin-Up** – 3 sets of 8–10 reps
+4. **Zottman Curl** – 3 sets of 10–12 reps
+5. **Super ROM Lateral Raise Wrist Curl** – 3 sets of 12–15 reps
+
 
 *Best Pairing*
 - **Narrow-Grip Pull-Up** + **Zottman Curl**
