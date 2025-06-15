@@ -422,7 +422,8 @@ Prioritize resistance bands for explosive phase they can be used for other phase
 3. **Single-Arm Tricep Extension** – 3 sets of 10–12 reps
 4. **6-Way Shoulder Raise** – 2 sets of 10 reps (per direction)  
 5. **Single Arm Chest Press**
-6. **Single-Arm Behind-Back Cable Lateral Raise** – 2 sets of 12–15 reps (*Build to it*)
+6. Landmine Shoulder Press
+7. **Single-Arm Behind-Back Cable Lateral Raise** – 2 sets of 12–15 reps (*Build to it*)
 
 *Best Pairing*
 - **Arnold Press** + **6-Way Shoulder Raise** _(or Back Cable Lateral Raise)_
@@ -433,7 +434,7 @@ Prioritize resistance bands for explosive phase they can be used for other phase
 2. **Narrow-Grip Chin-Up** – 3 sets of 8–10 reps
 3. **Zottman Curl** – 3 sets of 10–12 reps
 4. **Super ROM Lateral Raise Wrist Curl** – 3 sets of 12–15 reps
-5. **Landm Single Leg RDL**
+5. **Landmine Single Leg RDL**
 
 *Best Pairing*
 - **Narrow-Grip Pull-Up** + **Zottman Curl**
