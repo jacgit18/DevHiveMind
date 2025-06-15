@@ -74,7 +74,7 @@ Get to your reps to 15 sec each try to extend for 45 sec MAX
 
 ![Pancake stretch for beginners - YouTube](https://youtu.be/iO1tsB5ygMg?si=YRVgj1ZB-Z_TRNvb) ^a235d1
 
-
+![This Stiff Guy Learns the Pancake Fold in 107 Days - Ft. @calimove - YouTube](https://youtu.be/c97FhK6-7FU?si=yPdSa701SwqZh0xJ)
 
 ![Banded seated pancake stretch - YouTube](https://youtu.be/pOre0ykuinQ?si=o9F4u3NXBxoaiOHi) ^eb4c68
 

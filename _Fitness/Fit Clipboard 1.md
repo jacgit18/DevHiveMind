@@ -37,35 +37,6 @@ dg-publish:
 
 [Side Lying Bicycle - YouTube](https://youtu.be/CYmpb7fw1Gc?si=95ff52rPZ2OTaYnZ)
 
-[This Stiff Guy Learns the Pancake Fold in 107 Days - Ft. @calimove - YouTube](https://youtu.be/c97FhK6-7FU?si=yPdSa701SwqZh0xJ)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

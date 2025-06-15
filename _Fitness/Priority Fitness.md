@@ -123,7 +123,7 @@ Start with a dynamic stretch to Improve blood flow and flexibility. End with a s
 - [ ] Keep in mind that cold bath can affect muscle gains so balance that out and nervous system regulation.
 	- Try listening to 60 BPM(Beats Per Minute) metronome while taking cold bath for 3 min max and maybe use O2 trainer during this.
 	- Switch back to warm start or cold showers in the fall at a lower frequency.
-- [ ] 
+
 
 **Recommended Duration:** ~2–3 minutes per section (Total: 10–15 min)  
 **Tip:** Prioritize movement quality over speed. Use Duck Walks between sections or as part of the "Activate" phase.
