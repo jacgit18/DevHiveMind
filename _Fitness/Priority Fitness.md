@@ -417,12 +417,12 @@ Prioritize resistance bands for explosive phase they can be used for other phase
 ### Right to Bare Arms Program
 
 #### **Session 1: Push Focus**
-1. **Arnold Press** – 4 sets of 8–10 reps
-2. **Dumbbell Floor Press** or **Incline Dumbbell Bench Press** – 4 sets of 6–8 reps
+1. **Arnold Press** – 20lb
+2. **Dumbbell Floor Press** or **Incline Dumbbell Bench Press** – 17.5lb
 3. **Single-Arm Tricep Extension** – 3 sets of 10–12 reps
-4. **6-Way Shoulder Raise** – 2 sets of 10 reps (per direction)  
-5. **Single Arm Chest Press**
-6. Landmine Shoulder Press
+4. **6-Way Shoulder Raise** – 5lb
+5. **Single Arm Chest Press** - 40lb
+6. Landmine Shoulder Press - 10lb
 7. **Single-Arm Behind-Back Cable Lateral Raise** – 2 sets of 12–15 reps (*Build to it*)
 
 *Best Pairing*
