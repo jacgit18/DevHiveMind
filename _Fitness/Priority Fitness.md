@@ -393,6 +393,7 @@ Prioritize resistance bands for explosive phase they can be used for other phase
 - [ ] Do [[Grip Strength Training]]
 - [ ] Dead Hang at BK-MMA & Leg Day
 - [ ] Do more bodyweight exercises with weights 
+- [ ] Over time max 11 exercises per session
 - [ ] On pull up try holding position at the top holding it for 3 sec and same at the bottom.
 - [ ] Use [[Tower 200.pdf |Tower 200]] for practicing cable machine exercises the weight ranges from 25 to 45 lb.  
 - [ ] Cycle in [[Stability Ball Workout Plan]] for core strengthening, flexibility, and stretching,  
@@ -414,12 +415,14 @@ Prioritize resistance bands for explosive phase they can be used for other phase
 - [ ] Leg extensions not as effective for me at least in terms of rehabilitation aspect but still can benefit from the excercise just make sure no pain and proper form pointing toes inward with butt down keep the range at the orange sticker. 
 
 ### Right to Bare Arms Program
+
 #### **Session 1: Push Focus**
 1. **Arnold Press** – 4 sets of 8–10 reps
 2. **Dumbbell Floor Press** or **Incline Dumbbell Bench Press** – 4 sets of 6–8 reps
 3. **Single-Arm Tricep Extension** – 3 sets of 10–12 reps
 4. **6-Way Shoulder Raise** – 2 sets of 10 reps (per direction)  
-5. **Single-Arm Behind-Back Cable Lateral Raise** – 2 sets of 12–15 reps (*Build to it*)
+5. **Single Arm Chest Press**
+6. **Single-Arm Behind-Back Cable Lateral Raise** – 2 sets of 12–15 reps (*Build to it*)
 
 *Best Pairing*
 - **Arnold Press** + **6-Way Shoulder Raise** _(or Back Cable Lateral Raise)_

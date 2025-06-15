@@ -32,7 +32,7 @@ dg-publish:
 
 
 
-Max 11 exercises per session
+
 
 
 Resistance band d load week potentially or days
