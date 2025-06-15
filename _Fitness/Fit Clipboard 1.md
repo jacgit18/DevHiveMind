@@ -40,39 +40,38 @@ dg-publish:
 [This Stiff Guy Learns the Pancake Fold in 107 Days - Ft. @calimove - YouTube](https://youtu.be/c97FhK6-7FU?si=yPdSa701SwqZh0xJ)
 
 
-[Dynamic Heel-Toe Walking Stretch - YouTube](https://youtu.be/oQ_-LIbhYgo?si=AJ9rlIThcWFCCrKF)
 
 
 
-[Heel to Toe Rock - YouTube](https://youtu.be/FMZX3mpffeE?si=2j29Yv4oHRCG7eD8)
-
-
-[6 Exercises to Improve Wrist Joint Mobility and Range of Motion - YouTube](https://youtu.be/nvJ-1suJCTU?si=3GvE2C1PMCw7q56E)
 
 
 
-  [Mike Tyson Pushup Explained - YouTube](https://youtu.be/j-oSVFU2eMc?si=wrdA1D7v8er-VnJj)
 
 
 
-[Back Widows ▓ QUICK GUIDE ▓ 4 Steps! - YouTube](https://youtu.be/JdwsVHc6oQ4?si=CHDAGqPSGfL9JxAb)
-
-
-[Dive Bomber Push-Up \| Exercise Guide - YouTube](https://youtu.be/mvNcSF-nXg4?si=1v8oj6089sp1d-rZ)
-
-
-[T Stand Pushups - YouTube](https://youtu.be/9MkDQjuGcxw?si=DkWlFtakhAN1fOTP)
 
 
 
-[Rope Sled Pulls l Bodyweight Exercise l Advanced Strength Training l - YouTube](https://youtu.be/WyqpYp1TnwE?si=DRNmvxuT2z18yVAg)
-
-
-[Kettlebell Suitcase Deadlift - YouTube](https://youtu.be/eUjU3YBHe-Y?si=9Mrs6EpsKoFdQk21)
 
 
 
-[Band Assisted Thoracic Rotation - YouTube](https://youtu.be/3NgyG2JImfw?si=7BrnDvazkUUFuEbO)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
