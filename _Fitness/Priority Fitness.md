@@ -379,15 +379,15 @@ Prioritize resistance bands for explosive phase they can be used for other phase
 ## Regimen
 > **Train intensity before volume**. Prioritize neural output early, then shift to fatigue-driven work. Can shift things depending how you feel
 
-| Day     | Session Type       | Options (Choose 1)               | Week One Phase                                      | Week Two Phase                                      | Best Order Of Operations  |
-| ------- | ------------------ | -------------------------------- | --------------------------------------------------- | --------------------------------------------------- | ------------------------- |
-| **Sun** | Gym                | Upper Body + Run + Balance Board | Pull *Strength*                                     | Push *Strength*                                     | **Glutes/Hamstrings**     |
-| **Mon** | MMA/Gym            | Full Body(**Experiment**) + Sled | **Explosive** Upper Push to *Strength* Lower        | **Explosive** Upper Pull to *Strength* Lower        | **Core**                  |
-| **Tue** | Gym or Rest        | Upper Body + Run + Balance Board | Pull ***Hypertrophy***                              | Push ***Hypertrophy***                              | **Scapular & Upper Back** |
-| **Wed** | MMA or Gym or Rest | Lower Body + Dead Hang           | ***Hypertrophy***                                   | ***Hypertrophy***                                   | **Lats/Traps**            |
-| **Thu** | Gym or Rest        |                                  |                                                     |                                                     | **Quads**                 |
-| **Fri** | MMA or Gym or Rest | Full Body(**Experiment**) + Sled | **Explosive** Lower to ***Hypertrophy*** Upper Push | **Explosive** Lower to ***Hypertrophy*** Upper Pull | **Chest/Delts**           |
-| **Sat** | MMA or Gym         | Lower Body + Dead Hang           | *Strength*                                          | *Strength*                                          | **Arms**                  |
+| Day     | Session Type       | Options (Choose 1)                | Week One Phase                                      | Week Two Phase                                      | Best Order Of Operations  |
+| ------- | ------------------ | --------------------------------- | --------------------------------------------------- | --------------------------------------------------- | ------------------------- |
+| **Sun** | Gym                | Upper Body + Run + Balance Board  | Pull *Strength*                                     | Push *Strength*                                     | **Glutes/Hamstrings**     |
+| **Mon** | MMA/Gym            | Full Body(**Experiment**) + Sled  | **Explosive** Upper Push to *Strength* Lower        | **Explosive** Upper Pull to *Strength* Lower        | **Core**                  |
+| **Tue** | Gym or Rest        | Upper Body + Run + Balance Board  | Pull ***Hypertrophy***                              | Push ***Hypertrophy***                              | **Scapular & Upper Back** |
+| **Wed** | MMA or Gym or Rest | Lower Body + Dead Hang            | ***Hypertrophy***                                   | ***Hypertrophy***                                   | **Lats/Traps**            |
+| **Thu** | Gym or Rest        |                                   |                                                     |                                                     | **Quads**                 |
+| **Fri** | MMA or Gym or Rest | Full Body(**Experiment**) + Sled  | **Explosive** Lower to ***Hypertrophy*** Upper Push | **Explosive** Lower to ***Hypertrophy*** Upper Pull | **Chest/Delts**           |
+| **Sat** | MMA or Gym         | Lower Body + Dead Hang            | *Strength*                                          | *Strength*                                          | **Arms**                  |
 
 #todo/BAU/Workout
 - [ ] Do [[Grip Strength Training]]
@@ -428,24 +428,30 @@ Prioritize resistance bands for explosive phase they can be used for other phase
 9. **6-Way Shoulder Raise** – 5lb
 10. **Single-Arm Behind-Back Cable Lateral Raise** – 10lb (*Build to it*)
 
-*Best Pairing*(in Same Session for Injury Mitagation)
+*Best Pairing*(in Same Session for Injury Mitigation)
 - **Arnold Press** + **Landmine Russian Twist**
 - **Landmine Z Press** + **Single-Arm Chest Press**
 - **Incline Dumbbell Bench/Floor Press** + **Landmine Anti-Rotations**
 - **Incline Dumbbell Bench/Floor Press** + **Single-Arm Tricep Extension**
 
 #### **Session 2: Pull Focus**
-1. **Landmine Single Leg RDL**
-2. **Narrow-Grip Pull-Up** – 4 sets of 6–8 reps
-3. **Narrow-Grip Chin-Up** – 3 sets of 8–10 reps
-4. **Zottman Curl** – 3 sets of 10–12 reps
-5. **Super ROM Lateral Raise Wrist Curl** – 3 sets of 12–15 reps
+Chin ups higher priority
+1. **Landmine Single Leg RDL** - 10lb
+2. **Narrow-Grip Chin-Up** 
+3. **Narrow-Grip Pull-Up** 
+4. **Zottman Curl** – 15lb
+5. **Super ROM Lateral Raise Wrist Curl** – 5lb
 
 
 *Best Pairing*
+- **Landmine Single-Leg RDL** + **Narrow-Grip Pull-Up/Chin-Up**
 - **Narrow-Grip Pull-Up** + **Zottman Curl**
 - **Chin-Up** + **Super ROM Lateral Raise Wrist Curl**
 
+
+- Alternate **Pull-Up and Chin-Up** weekly or in different sessions to avoid elbow tendinitis or biceps overuse.
+
+- Don’t pair **Zottman Curls + Chin-Ups** in the same day too often—they both heavily load the **biceps tendon**.
 #### **Session 3: Push + Pull (Hybrid)**
 ##### **Push (Home-Friendly Options):**
 1. **Arnold Press** – 4 sets of 8–10 reps
