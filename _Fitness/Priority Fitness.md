@@ -419,11 +419,14 @@ Prioritize resistance bands for explosive phase they can be used for other phase
 #### **Session 1: Push Focus**
 1. **Arnold Press** – 20lb
 2. **Dumbbell Floor Press** or **Incline Dumbbell Bench Press** – 17.5lb
-3. **Single-Arm Tricep Extension** – 3 sets of 10–12 reps
+3. **Single-Arm Tricep Extension** – 20lb
 4. **6-Way Shoulder Raise** – 5lb
 5. **Single Arm Chest Press** - 40lb
-6. Landmine Shoulder Press - 10lb
-7. **Single-Arm Behind-Back Cable Lateral Raise** – 2 sets of 12–15 reps (*Build to it*)
+6. **Landmine Rotational Press** - 10lb
+7. **Landmine Anti Rotations** - 10lb
+8. **Landmine Russian Twist** - 10lb
+9. **Landmine Z Press** - 10lb
+10. **Single-Arm Behind-Back Cable Lateral Raise** – 10lb (*Build to it*)
 
 *Best Pairing*
 - **Arnold Press** + **6-Way Shoulder Raise** _(or Back Cable Lateral Raise)_
