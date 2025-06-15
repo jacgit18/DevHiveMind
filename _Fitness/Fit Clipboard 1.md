@@ -75,80 +75,45 @@ dg-publish:
 [Band Assisted Thoracic Rotation - YouTube](https://youtu.be/3NgyG2JImfw?si=7BrnDvazkUUFuEbO)
 
 
-[Exercise Index - 6 Ways for Shoulders - YouTube]([https://youtu.be/nvEE4u3qfJY?si=03Lk68QNXA0X_el6](https://youtu.be/nvEE4u3qfJY?si=03Lk68QNXA0X_el6))
+
 
 Max 11 exercises per session
 
-For kettlebell RDL use opposite side where you are holding the Kettlebell this side that is lifting the leg
 
-Deadlift with trap bar
+Resistance band d load week potentially or days
+
+Random day
+
+
 
 Trap Bar Jump
 
 
 trap bar squat jump 
 
-can flip trap bar to lower the grip
 
 trap bar overhead press if you focusing on hypotrophy
 
-Kettlebell Sumo Squat** (5/5) – Best all-around for most lifters.  
- 
- **Dumbbell B-Squat** (5/5) – Top for unilateral work.
+
+
+
+
+
+
+
 
 Hypertrophy thrives on explosive lifts (1s), slow eccentrics (3s), 3–5 hard sets of 6–12 reps, and progressive overload— going to failure on the last set.
 
 
-### **Pull-Up & Chin-Up Variations – Muscle Focus**
-narrow are top priority
 
-- **Narrow-Grip Pull-Up**
-    
-    - **Primary:** Forearms, rear delts
-        
-    - **Secondary:** Upper back, biceps
-        
-    - _Tip:_ Keep strict form to maximize rear delt activation.
-        
-- **Narrow-Grip Chin-Up (45° Angle Wrists)**
-    
-    - **Primary:** Lats, rear delts, biceps
-        
-    - **Secondary:** Forearms
-        
-    - _Tip:_ Angled wrist grip helps balance biceps and lat recruitment.
-        
-- **Medium-Grip Pull-Up (On Angled Section of Bar)**
-    
-    - **Primary:** Lats
-        
-    - **Secondary:** Mid-traps, rear delts
-        
-    - _Tip:_ This is the classic grip for full lat engagement with shoulder width involvement.
-        
-- **Neutral-Grip Pull-Up (Palms Facing In)**
-    
-    - **Primary:** Lats
-        
-    - **Secondary:** Biceps, brachialis
-        
-    - _Tip:_ Neutral grip is easiest on the shoulders and elbow joints while still hitting the lats hard.
-        
-
----
-
-Let me know if you want a table version or a visual cue for each.
+Jefferson curl on step thing upstairs
 
 
 
+maybe add dead hang wrist curl
 
-Got it! You're looking for **complex, multi-joint exercises** (like the Zottman curl) that engage **multiple muscle groups simultaneously** across the entire body. These exercises combine strength, coordination, and functional movement patterns. Below is a categorized list of the best options, along with their benefits and when to use them.  
 
-  
 
----
-
-  
 
 ### **Full-Body Complex Exercises**  
 
@@ -726,7 +691,127 @@ Try integrating **one cue at a time** until it becomes reflexive. Train hard! �
 
 
 
+Here’s how to **seamlessly integrate isometric holds** into your current **strength/power/hypertrophy split** without adding extra sessions, optimized for your martial arts and lifting goals:
 
+  
+
+---
+
+  
+
+### **Option 1: Blend Into Existing Workouts**  
+
+#### **Strength Days (Heavy Lifts)**  
+
+- **After main lifts**: Add 2–3 sets of **isometric holds at sticking points** (e.g., bench press lockout, deadlift at knees).  
+
+  - *Example*:  
+
+    - Bench Press: 3x5 reps → 2x15 sec top hold (70% 1RM).  
+
+    - Deadlift: 3x5 reps → 2x10 sec hold just below knees.  
+
+  - *Why*: Reinforces strength at weak points without fatigue interference.  
+
+  
+
+#### **Power/Explosive Days**  
+
+- **Pre-power movement**: Use **short isometrics to prime CNS** (e.g., pause at bottom of jump squat before exploding).  
+
+  - *Example*:  
+
+    - Box Jumps: 3x5 with 3-sec pause in squat position before each jump.  
+
+  - *Why*: Enhances rate of force development (RFD) by teaching explosive transitions.  
+
+  
+
+#### **Hypertrophy Days**  
+
+- **Mid- or end-of-workout**: Add **high-TUT isometrics** for metabolic stress.  
+
+  - *Example*:  
+
+    - Squats: 3x12 reps → 1x30 sec parallel squat hold (bodyweight).  
+
+    - Pull-Ups: 3x10 reps → 1x20 sec top hold.  
+
+  - *Why*: Boosts time under tension for growth without compromising volume.  
+
+  
+
+---
+
+  
+
+### **Option 2: Dedicated Isometric Day (If Recovery Allows)**  
+
+- **Frequency**: 1x/week (e.g., active recovery day).  
+
+- **Structure**:  
+
+  - **Full-body isometrics** (3–5 exercises, 3–4 sets each).  
+
+  - *Example Session*:  
+
+    1. **Squat Hold**: 3x30 sec (weighted).  
+
+    2. **Push-Up Mid-Hold**: 3x20 sec (feet elevated).  
+
+    3. **Deadlift Hold**: 3x15 sec (at knees, 60% 1RM).  
+
+    4. **Hanging Leg Raise Hold**: 3x15 sec.  
+
+  - *Why*: Focused connective tissue strengthening without systemic fatigue.  
+
+  
+
+---
+
+  
+
+### **Key Programming Notes**  
+
+1. **Prioritize Holds on Strength Days** (complement heavy lifts).  
+
+2. **Avoid Overlap**: Don’t do isometric squats before a heavy squat day.  
+
+3. **Progression**: Increase hold time by 5 sec/week or add weight (e.g., vest for squat holds).  
+
+  
+
+**Sample Weekly Integration**  
+
+| **Day**       | **Focus**          | **Isometric Add-On**                     |  
+
+|---------------|--------------------|------------------------------------------|  
+
+| **Monday**    | Strength (Upper)  | Bench press lockout holds (2x15 sec)     |  
+
+| **Tuesday**   | Power (Lower)     | Paused jump squats (3-sec bottom hold)   |  
+
+| **Thursday**  | Hypertrophy (Full) | Squat hold (1x30 sec post-squats)        |  
+
+| **Saturday**  | Strength (Lower)  | Deadlift hold at knees (2x10 sec)        |  
+
+  
+
+---
+
+  
+
+### **Why This Works for You**  
+
+- **Martial Arts**: Improves static strength for clinches/kicks (e.g., squat holds mimic fighting stances).  
+
+- **Efficiency**: No extra sessions—enhances existing workouts.  
+
+- **Injury Resilience**: Bulletproofs tendons for high-impact training.  
+
+  
+
+**Adjust as needed** based on fatigue (e.g., skip holds on deload weeks). Want exercise substitutions for martial arts-specific gains?
 
 
 

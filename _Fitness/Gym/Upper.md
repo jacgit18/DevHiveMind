@@ -131,12 +131,8 @@ Reverse Preacher Curl(3:14)
 - **Pull-Up Bar Variations
 	- Wide Grip  ^bf9596
 		- ![](https://www.youtube.com/watch?v=dAScZVF5o9k)
-	- Neutral Grip ^e81d31
-		-  ![](https://www.youtube.com/watch?v=djTQ1C_pvYw&list=TLPQMTQxMjIwMjQ2MGDLyOWw0w&index=2)
-	- Chin-Up Grip
-		-  ![](https://www.youtube.com/watch?v=mRy9m2Q9_1I)
-_Tip:_ Use added weight if possible; heavier weight makes pull-ups feel easier when unloaded. ^a2d3cc
 
+	
 - Tricep Dip ^a56816
 	- ![2 Forgotten Exercises That Blew Up My Chest & Unlocked My Posture - YouTube](https://www.youtube.com/watch?v=p5Lx2BeVKR4&t=186s)
 

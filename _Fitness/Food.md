@@ -27,6 +27,7 @@ Tuna fish
 
 Corn bread
 
+Himalayan salt with coconut water instead electro maybe
 
 ## **Budget Breakdown (Monthly)**
 
