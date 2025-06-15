@@ -435,7 +435,7 @@ Prioritize resistance bands for explosive phase they can be used for other phase
 - **Incline Dumbbell Bench/Floor Press** + **Single-Arm Tricep Extension**
 
 #### **Session 2: Pull Focus**
-Chin ups higher priority
+Chin ups higher priority alternate each quar
 1. **Landmine Single Leg RDL** - 10lb
 2. **Narrow-Grip Chin-Up** 
 3. **Narrow-Grip Pull-Up** 
