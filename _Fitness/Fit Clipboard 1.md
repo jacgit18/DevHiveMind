@@ -30,126 +30,45 @@ dg-publish:
 
 
 
-[How To Do Trap Bar Jump Squat \| Exercise Demo - YouTube](https://youtu.be/52-P8hlrKqg?si=89waZDCby5-d_eT_)
 
-
-
-
-
-
-In Muay Thai (or any striking art), breaking out of mental or physical loops—where you’re stuck repeating the same actions predictably or hesitating—requires **conscious triggers (cues)** to disrupt autopilot mode. Here are some effective solutions:
-
-  
-
----
-
-  
 
 ### **1. Mental Disruptors (To Break Loops)**
 
 - **Verbal Cues**:  
-
   - Silently say "NOW" or "GO" to snap yourself into committed action.  
-
   - Use a sharp exhale (like a hiss) to trigger aggression (e.g., the "tss" sound Nak Muay make when striking).  
 
-  
-
-- **Visual Cues**:  
-
-  - Focus on your opponent’s **chest/neck** instead of their feet or hands (prevents "target fixation").  
-
-  - Notice their stance shifts: If they’re heavy on one leg, attack the other side.  
-
-  
 
 - **Reset Tactics**:  
-
   - **Step offline**: Angle-cut instead of moving straight back.  
-
   - **Clap your gloves together** (physically resets your hands and mind).  
-
-  
-
----
 
   
 
 ### **2. Physical Disruptors (To Stop Looping Techniques)**
 
 - **Pre-Entry Fake**:  
-
   - Fake a teep → then throw a cross or switch kick.  
-
   - Fake a lazy jab → then blast a rear knee.  
 
-  *(Breaks the habit of telegraphing.)*  
-
-  
 
 - **Commitment Fixes**:  
-
   - **"Half-Force Rule"**: If you throw a technique at 50%, you **must** follow up with a 100% strike immediately after.  
 
   - **"First Strike is a Feint"**: Mentally frame your initial strike as a setup, not a power shot (frees hesitation).  
 
   
-
 - **Rhythm Breakers**:  
-
   - Pause for a half-beat, then explode (e.g., jab… pause… sudden low kick).  
-
   - Switch stances abruptly to force yourself out of patterns.  
 
-  
 
----
-
-  
 
 ### **3. Fixing "Looking at the Foot" Before Kicking**  
 
 - **Drill**: Shadowbox while staring at a fixed point (e.g., a spot on the wall). Have a partner hold pads without calling kicks—practice kicking *without* glancing down.  
 
 - **Cue**: "Kick blind" – Trust your proprioception; you don’t need to see the target to land.  
-
-  
-
----
-
-  
-
-### **4. Non-Commitment Fix**  
-
-- **Mental Shift**:  
-
-  - Think **"I will get countered if I don’t commit"** (fear of consequence > fear of whiffing).  
-
-  - Imagine your strikes are "burning" through the target (visualize穿透力).  
-
-- **Drill**:  
-
-  - **Power-Volume Rounds**: 30 sec of only 100% power strikes, no setups (conditions full commitment).  
-
-  
-
----
-
-  
-
-### **Key Insight**  
-
-Loops happen when you’re **defensive-minded** or **overthinking**. Simplify:  
-
-- **Offensive Loop?** → Add a fake or angle change.  
-
-- **Defensive Loop?** → Counter instead of shelling up.  
-
-  
-
-Try integrating **one cue at a time** until it becomes reflexive. Train hard! 🥊
-
-
 
 
 

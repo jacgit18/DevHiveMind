@@ -109,7 +109,7 @@ color purple
 - [ ] If you're not **feeling the target muscle** during an exercise, **reduce momentum** and slow down the movement to improve control and mind-muscle connection and If you feel **off balance**, try **making a fist**—this creates full-body tension and enhances stability during the lift.
 - [ ] Sprint to and from gym a twice a week after you build to it on Upper body or full body days where you aren't doing MMA, You can also skip first part of warm up regimen. Also when building up to sprinting the half mile to and from the gym start off with three times a week and scale back to twice a week.
 - [ ] On Off days when drained or finding it hard to get moving take Amino Acid.
-- [ ] Also follow [[Muscle Release Regimen]] you have muscle tightness also try using static stretches for cool down and working on flexibility.
+- [ ] Also follow [[Muscle Release Regimen]] you have muscle tightness also try using static stretches for cool down and working on flexibility. Also work on [[Big Toe Flexibility]].
 - [ ] If very sore or exhausted do a light day with bands to still get something in but not do anything heavy with weights.
 - [ ] Once at solid baseline switch to a **Seasonal Training Strategy** while also integrating workout phases aiming for **6 workouts per week in the winter/fall** were your body tends to **retain more weight during the colder months** (September to February), making it an ideal time to **increase training frequency** and build mass or strength. Then In the **warmer months**, when energy is often spent on outdoor activities and appetite may decrease, **4 to 5 workouts per week** can be more sustainable.
 
@@ -387,7 +387,7 @@ Prioritize resistance bands for explosive phase they can be used for other phase
 | **Mon** | MMA/Gym            | Full Body(**Experiment**) + Sled | **Explosive** Upper Push to *Strength* Lower        | **Explosive** Upper Pull to *Strength* Lower        | **Core**                  |
 | **Tue** | Gym or Rest        | Upper Body + Run + Balance Board | Pull ***Hypertrophy***                              | Push ***Hypertrophy***                              | **Scapular & Upper Back** |
 | **Wed** | MMA or Gym or Rest | Lower Body + Dead Hang           | ***Hypertrophy***                                   | ***Hypertrophy***                                   | **Lats/Traps**            |
-| **Thu** | Gym or Rest        | Random Day                       |                                                     |                                                     | **Quads**                 |
+| **Thu** | Gym or Rest        |                                  |                                                     |                                                     | **Quads**                 |
 | **Fri** | MMA or Gym or Rest | Full Body(**Experiment**) + Sled | **Explosive** Lower to ***Hypertrophy*** Upper Push | **Explosive** Lower to ***Hypertrophy*** Upper Pull | **Chest/Delts**           |
 | **Sat** | MMA or Gym         | Lower Body + Dead Hang           | *Strength*                                          | *Strength*                                          | **Arms**                  |
 
@@ -417,7 +417,7 @@ Prioritize resistance bands for explosive phase they can be used for other phase
 - [ ] Leg extensions not as effective for me at least in terms of rehabilitation aspect but still can benefit from the excercise just make sure no pain and proper form pointing toes inward with butt down keep the range at the orange sticker. 
 
 ### Right to Bare Arms Program
-
+Depending on week and day the session can vary by phase from strength, hypertrophy, or explosive power training.
 #### **Session 1: Push Focus Ordered By Priority**
 1. **Landmine Z Press** - 10lb
 2. **Single Arm Chest Press** - 40lb
@@ -438,23 +438,27 @@ Prioritize resistance bands for explosive phase they can be used for other phase
 - **Incline Dumbbell Bench/Floor Press** + **Single-Arm Tricep Extension**
 
 #### **Session 2: Pull Focus**
-Chin ups higher priority alternate each quarter or even month. Try Burpe to Pull Up. 
+Chin ups higher priority alternate each quarter or even month. Try Burpee to Pull Up. 
 1. **Landmine Single Leg RDL** - 10lb
 2. **Narrow-Grip Chin-Up** 
 3. **Narrow-Grip Pull-Up** 
 4. **Zottman Curl** – 15lb
 5. **Super ROM Lateral Raise Wrist Curl** – 5lb
-6. **Barbell Clean Jerk Press** - 20lb
+6. **Pallof Press** - 30lb
+7. **Rev Crunch** 
+8. **Kneeling Cable Crunch**
+9. **Back Extension** 
+10. **Barbell Clean Jerk Press** - 20lb
 
 *Best Pairing*
 - **Landmine Single-Leg RDL** + **Narrow-Grip Pull-Up/Chin-Up**
 - **Narrow-Grip Pull-Up** + **Zottman Curl**
 - **Chin-Up** + **Super ROM Lateral Raise Wrist Curl**
 
-Alternate **Pull-Up and Chin-Up** weekly or in different sessions to avoid elbow tendinitis or biceps overuse. Don’t pair **Zottman Curls + Chin-Ups** in the same day too often—they both heavily load the **biceps tendon**.
+> Alternate **Pull-Up and Chin-Up** weekly or in different sessions to avoid elbow tendinitis or biceps overuse. Don’t pair **Zottman Curls + Chin-Ups** in the same day too often—they both heavily load the **biceps tendon**.
 
 #### **Session 3: Push + Pull (Hybrid)**
-- **Barbell Clean Jerk Press** - 20lb
+- **Barbell Clean Jerk Press** 
 ##### **Push:**
 1. **Landmine Anti Rotations** 
 2. **Single Arm Chest Press** or **Dumbbell Floor Press**/**Incline Dumbbell Bench Press** 
@@ -463,6 +467,15 @@ Alternate **Pull-Up and Chin-Up** weekly or in different sessions to avoid elbow
 5. **Landmine Rotational Press** 
 
 ##### **Pull:**
+1. **Narrow-Grip Pull-Up/Chin-Up**
+2. **Zottman Curl**
+3. **Super ROM Lateral Raise Wrist Curl** 
+4. **Landmine Single-Leg RDL**
+5. **Pallof Press** 
+6. **Rev Crunch** 
+7. **Kneeling Cable Crunch**
+8. **Back Extension** 
+
 Choose Two combinations based on your goal:  
 - **Pull-Up** + **Zottman Curl** 
 - **Chin-Up** + **Super ROM Lateral Raise Wrist Curl** 
@@ -476,7 +489,7 @@ Choose Two combinations based on your goal:
 3. **Dumbbell Bulgarian Split Squat** – 3 sets of 8–10 reps
 4. **Leg Extension** – 3 sets of 12–15 reps
 5. **Tib Bar Raise** – 3 sets of 15–20 reps
-
+6. **Trap Bar Squat Jump** - 20lb
 #### **Session 2: Hinge + Posterior Chain (Glutes, Hamstrings, Core)**
 1. **Cable Pull Through** – 4 sets of 10–12 reps
 2. **Band Single-Leg Deadlift** – 3 sets of 8–10 reps
@@ -516,7 +529,6 @@ Choose Two combinations based on your goal:
 
 - **Day 3 (Explosive)**  
 	- Hip Thrust: 6x3 @ 90 - explosive concentric, 1-second pause, controlled eccentric
-
 
 
 ### Balance Board Programming  
@@ -695,6 +707,7 @@ Choose Two combinations based on your goal:
 | Reverse Lunge + Rotation            | 0          | 10     | 4     | 8     | Med          | Barbell Landmine                    | Full            | Multi                             | [[Landmines#^82208b\|Reverse Lunge + Rotation]]                                               | Yes       | Standing                              | **N/A**                  | *0*      | **N/A**     | RC               |
 | Single Leg RDL                      | 20         | 20     | 4     | 8     | _Highest     | Barbell/Kettlebell/Landmine         | Full            | Multi                             | [Single Leg RDL](https://youtu.be/lghxTgWZ9TM?si=fuXk0b2GPHCgdj--)                            | Yes       | Standing                              | **N/A**                  | ***10*** | **N/A**     | CM               |
 | Overhead Press                      | 20         | 50     | 4     | 8     | _Highest     | TrapBar                             | Upper           | Multi                             | [Overhead Press](https://youtu.be/T06x4_z1nts?si=7Zo_5KzHrfrBAtrh)                            | **TBD**   | Standing                              | **N/A**                  | ***10*** | **N/A**     | CM               |
+| Squat Jump                          | 0          | 20     | 4     | 8     | _Highest     | TrapBar                             | Bottom          | Multi                             | [Squat Jump](https://www.youtube.com/watch?v=52-P8hlrKqg)                                     | **TBD**   | Standing                              | **N/A**                  | ***10*** | **N/A**     | EP               |
 | Deadlift                            | 20         | 50     | 4     | 8     | _Highest     | Barbell/TrapBar Low Handle          | Full            | Multi                             | [[Lower#^1260ed \|Deadlift]]                                                                  | Yes       | Standing                              | **N/A**                  | *10*     | **N/A**     | CM               |
 | Nordic Hamstring Curl               | 0          | 0      | 4     | 8     | _Highest     | Bodyweight                          | Bottom          | Hamstring                         | [[Lower#^4e02bb \|Nordic Hamstring Curl]]                                                     | **TBD**   | Grounded                              | **N/A**                  | ****     | **N/A**     | CM               |
 | Back Extension                      | 0          | 15     | 4     | 8     | _Highest     | BodyWeight                          | Core            | Abdominal                         | Back Extension                                                                                | Yes       | Bench                                 | **N/A**                  | *0*      | **N/A**     | RC/Extension     |
