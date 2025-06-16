@@ -520,21 +520,8 @@ Allowed to practice each excercise max once a week.
 5. **Tib Bar Raise** – -3 times a week
 
 *Best Pairing*
-- **Cable Pull Through** (hip hinge focus)
-    
-- **Band Single-Leg Deadlift** (unilateral balance + hinge)
-    
-- **Tib Bar Raise** (anterior tib activation / ankle balance)
-    
-
-
-- **Hip Thrust** (horizontal glute loading)
-    
-- **Cable Hip Extension** (isolated glute activation, vertical plane)
-    
-- **Tib Bar Raise** (again, ankle + shin work to prevent knee injuries)
-
-
+- **Cable Pull Through** + **Band Single-Leg Deadlift** + **Tib Bar Raise
+- **Hip Thrust** + **Cable Hip Extension** + **Tib Bar Raise**
 #### **Session 3: Stability, Mobility, and Accessories (Control + Balance)**
 *Allowed to practice each excercise max **twice** a week.*
 1. **Trap Bar Squat Jump** - 20lb
@@ -546,7 +533,7 @@ Allowed to practice each excercise max once a week.
 
 *Best Pairing*
 - **Trap Bar Squat Jump** + **Cable Side Kick** + **Band Scarecrow Raises** 
-- 
+- **Cable Hip Flexion** + **Abduction Machine** + **Leg Extension** 
 
 #### Hip Thrust Program 
 
