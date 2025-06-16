@@ -156,7 +156,7 @@ _~2–3 minutes total – pick 2–3_ or pick one to do for the whole time.
 - Rower or Incline Treadmill Walk – **1 min**
 
 ##### **Grounded On Side**
-- **Side-to-Side Rolling** – Roll from side to side across a mat, using arms and hips to initiate; great for warm blood flow in spine/core.
+- **[Side-to-Side Rolling](https://www.youtube.com/watch?v=LRijmsnZwZc)** – Roll from side to side across a mat, using arms and hips to initiate; great for warm blood flow in spine/core.
     
 - [**Side-Lying Bicycles**](https://www.youtube.com/watch?v=CYmpb7fw1Gc) – Pedal your top leg like a bike in the air to raise HR slightly and warm up hips.
 
@@ -185,6 +185,7 @@ _~2–3 minutes total – pick 4–5_
 - Glute Bridges – **10–12 reps**
 - [Dead Bug ](https://youtu.be/VRpXreaHz7w?si=MSTm2UNzlRLyQt3E) hand pushed against wall alternating pushing heals down - Anti-extension
 - [Back Widows](https://www.youtube.com/watch?v=JdwsVHc6oQ4)
+- [Supine Figure 4 Stretch](https://youtu.be/xVq2-g_leTI?si=ww6BkkfN_oYEWmdC) keep back flat
 
 ##### Seated
 - [[Core#^a235d1 |Pancake Stretch]] - **4 sets 8 reps**
@@ -196,12 +197,13 @@ _~2–3 minutes total – pick 4–5_
 - **Side Plank Leg Raises** – From a side plank, lift top leg up/down; glutes + core activation.
 - ***Rotational Side Plank*** -  3–4 slow rotations per side
 ##### **Grounded On Front**
-- *BirdDog* – **20–30s hold**
+- *BirdDog* – **20–30s hold** - 3 to 4 times a week
 - [[Lower#^01867f |Quadruped Kickbacks]] – **8–10 reps/side**
 - Plyometric Plank Shoulder Taps – **8–12 taps** - use bands if doing regular plank
 - Push-Up Hold (top and bottom) – **10s each**
 - [[Upper#^5ff8c1 |Scapular Push-Ups ]] – **10–12 reps with deep breathing**
 	- Breathe deeply as you push your chest outward, squeezing your shoulder blades together. Then, reverse the motion by pulling your chest inward and separating your shoulder blades, keeping your elbows straight throughout the movement.
+- [Scapular Push up on Elbows](https://www.youtube.com/watch?v=DKkgzXfcXMQ)
 - [Mike Tyson Pushup](https://www.youtube.com/watch?v=j-oSVFU2eMc)
 - ***Elbow Push-ups (Pike Push-up Focus)*** - 8 reps
 - ***Scorpion Stretch*** - 30 sec each side
@@ -210,7 +212,7 @@ _~2–3 minutes total – pick 4–5_
 ##### **Standing**
 - Calf Raises – **10–12 reps**
 - Shoulder Band Pull-Aparts – **15–20 reps**
-- [[Lower#^b0a0df|TIB Raise]]
+- Standing [[Lower#^b0a0df|TIB Raise]]
 - [[Lower#^8a3d01|ISO Calf Raise with Lunge]]
 - [[Lower#^58f942|Lunge ISO Heel Raise]]
 - [[Lower#^da4cd0|Banded Joint Mobilizations]]
@@ -218,9 +220,10 @@ _~2–3 minutes total – pick 4–5_
 - [Heel to Toe Rock](https://www.youtube.com/watch?v=FMZX3mpffeE) & [Walk](https://www.youtube.com/watch?v=oQ_-LIbhYgo) 
 - [Knee Circles](https://youtu.be/ROiyq3-2ljY?si=jmBGQDk3fKu4mPAt)
 - [Dumbbell Side Raise with Single Leg Balance](https://youtu.be/7cfhwCU2-y0?si=CxwXSgm6RWSQF8Ah)
+- [Offset Walk](https://www.youtube.com/watch?v=Fc-27p17TPE)
 
 **Optional Add-In:**
-- **Duck Walks** – **2 passes across gym or 30–45 seconds** - with mediball
+- **[Duck Walks](https://www.youtube.com/watch?v=qM3GNLKI9rg)** – **2 passes across gym or 30–45 seconds** - with mediball
 
 ###### Sprinting  Specific - 1 min 
 - ***Single-Leg RDL w/ Knee Drive Swing*** - Hold 3 sec in each part explode, swing, and Step.
@@ -237,10 +240,13 @@ _~3–4 minutes total – choose a flow or 3–5 moves_
 - **Spinal Twists** - 30 sec
 - [[Lower#^ee779f |90/90 Transitions ]] – **8 reps**
 - Butterfly Hip Rocks → Butterfly Stretch – **8 rocks + 10s stretch**
+- Barbell [Seated Good Mornings](https://www.youtube.com/watch?v=cJWYiUkiWrE)
+- Dumbbell [Seated Good Morning](https://www.youtube.com/watch?v=RGcNDV8d0Wc)
 
 ##### **Grounded On Side**
 - **Side-Lying Leg Lifts** – Leg raises to warm up outer hips/glutes(Try standing version as well)
 - [T Stand Push Up](https://www.youtube.com/watch?v=9MkDQjuGcxw)
+- [Side Plank with Knee Drive](https://www.youtube.com/watch?v=4ydfLjw8aWE)
 ##### **Grounded On Front**
 - **Inchworms** – Stand → walk hands to plank → back up, 5–8 reps
 - **World’s Greatest Stretch** – Deep lunge + rotation opposite side arm in relation to front kneeling knee, 3–5 per side
@@ -296,9 +302,6 @@ Upper body barbell exercises—like the bench press—can sometimes place unnece
 In contrast, barbell movements for the lower body (like squats and deadlifts) or full-body lifts often allow for a more natural grip or distribute load in a way that’s generally better tolerated.
 
 The general principles of **training phases** like strength and hypertrophy apply to most exercises. However, when training **smaller muscles and stabilizers**, it's often better to prioritize **tempo and control over intensity** example calf raises and wrist curls should be done with a slow tempo about 3x15.  You should also limit combination exercises since focused on adding weight also over time muscle tightening and timing will tighten in the right spots automatically or faster or at least take less effort when bracing for impact.
-
-#todo/BAU/Workout 
-- [ ]  Do back extension and bird dog 2 to 3 times a week. 
 
 | Goal                            | Sets | Reps   | Tempo                                | **Rest**  |
 | ------------------------------- | ---- | ------ | ------------------------------------ | --------- |
@@ -416,10 +419,18 @@ Prioritize resistance bands for explosive phase they can be used for other phase
 - [ ] After doing that deadlifts for a while switch to deficit deadlifts where you're standing on a plate and doing the deadlift which increases range of motion of the motion.
 - [ ] Leg extensions not as effective for me at least in terms of rehabilitation aspect but still can benefit from the excercise just make sure no pain and proper form pointing toes inward with butt down keep the range at the orange sticker. 
 
-### Right to Bare Arms Program
+## Body Part Specific Programs 
 Depending on week and day the session can vary by phase from strength, hypertrophy, or explosive power training.
+
+Outside of best parings other parings you do make it a light day instead of a intense day.
+
+### Full Body Program
+- **Barbell Clean Jerk Press** - 1 time a week
+- **Sled** - twice a week push and pull.
+### Right to Bare Arms Program
+Allowed to practice each excercise max twice a week.
 #### **Session 1: Push Focus Ordered By Priority**
-1. **Landmine Z Press** - 10lb
+1. **Landmine Z Press** - 10lb 
 2. **Single Arm Chest Press** - 40lb
 3. **Landmine Anti Rotations** - 10lb
 4. **Dumbbell Floor Press** or **Incline Dumbbell Bench Press** – 17.5lb
@@ -445,9 +456,9 @@ Chin ups higher priority alternate each quarter or even month. Try Burpee to Pul
 4. **Zottman Curl** – 15lb
 5. **Super ROM Lateral Raise Wrist Curl** – 5lb
 6. **Pallof Press** - 30lb
-7. **Rev Crunch** 
-8. **Kneeling Cable Crunch**
-9. **Back Extension** 
+7. **Rev Crunch** 3 times a week
+8. **Kneeling Cable Crunch** - 3 times a week
+9. **Back Extension** - 15lb - 3 times a week
 10. **Barbell Clean Jerk Press** - 20lb
 
 *Best Pairing*
@@ -458,7 +469,6 @@ Chin ups higher priority alternate each quarter or even month. Try Burpee to Pul
 > Alternate **Pull-Up and Chin-Up** weekly or in different sessions to avoid elbow tendinitis or biceps overuse. Don’t pair **Zottman Curls + Chin-Ups** in the same day too often—they both heavily load the **biceps tendon**.
 
 #### **Session 3: Push + Pull (Hybrid)**
-- **Barbell Clean Jerk Press** 
 ##### **Push:**
 1. **Landmine Anti Rotations** 
 2. **Single Arm Chest Press** or **Dumbbell Floor Press**/**Incline Dumbbell Bench Press** 
@@ -474,46 +484,49 @@ Chin ups higher priority alternate each quarter or even month. Try Burpee to Pul
 5. **Pallof Press** 
 6. **Rev Crunch** 
 7. **Kneeling Cable Crunch**
-8. **Back Extension** 
+8. **Back Extension** - 3 to 4 times a week
 
 Choose Two combinations based on your goal:  
+- **Barbell Clean Jerk Press**  + **Landmine Anti-Rotations**
+- **Barbell Clean Jerk Press**  +  **Landmine Single-Leg RDL**
+- **Barbell Clean Jerk Press**  + **Narrow-Grip Pull-Up**
 - **Pull-Up** + **Zottman Curl** 
 - **Chin-Up** + **Super ROM Lateral Raise Wrist Curl** 
 - **Landmine Single-Leg RDL** + **Narrow-Grip Pull-Up/Chin-Up**
 
 ### Leg Programming 
 
-#### **Session 1: Squat-Dominant (Quad & Core Focus)**
-1. **Hack Squat** – 4 sets of 8–10 reps
-2. **Walking Barbell Lunge/Zercher Lunge** – 3 sets of 10–12 steps per leg
-3. **Dumbbell Bulgarian Split Squat** – 3 sets of 8–10 reps
-4. **Leg Extension** – 3 sets of 12–15 reps
-5. **Tib Bar Raise** – 3 sets of 15–20 reps
-6. **Trap Bar Squat Jump** - 20lb
-#### **Session 2: Hinge + Posterior Chain (Glutes, Hamstrings, Core)**
-1. **Cable Pull Through** – 4 sets of 10–12 reps
-2. **Band Single-Leg Deadlift** – 3 sets of 8–10 reps
-3. **Cable Hip Extension** – 3 sets of 12–15 reps
+#### Session 1: Main Compound Squat & Lunge Patterns
+Allowed to practice each excercise max once a week.
+1. **Hack Squat** – 
+2. **Single Leg Press** –
+3. **Walking Barbell Lunge/Zercher Lunge** – 
+4. **Dumbbell Bulgarian Split Squat** – twice a week
+5. **Kettlebell Sumo Squat** – twice a week
+6. **B-Squat** -
+7. **Band Single-Leg Barbell Squat** -
 
-**Best Pairings**
-- **Pull Through** + **Hip Extension** – Target glutes with different angles and loading
-- **Zercher Lunge** + **Band Deadlift** – Core + hinge pattern with balance
+*Best Pairing*
+
+#### **Session 2: Hinge + Posterior Chain (Glutes, Hamstrings, Core)**
+1. **Cable Pull Through** – - 2 times a week
+2. **Band Single-Leg Deadlift** – - 2 times a week
+3. **Cable Hip Extension** – -3 times a week
+4. **Hip Thrust** - -3 times a week
+5. **Tib Bar Raise** – -3 times a week
+
+*Best Pairing*
 
 #### **Session 3: Stability, Mobility, and Accessories (Control + Balance)**
+Allowed to practice each excercise max twice a week.
+1. **Trap Bar Squat Jump** - 20lb
+2. **Cable Side Kick** – 
+3. **Cable Hip Flexion** – 
+4. **Abduction Machine (Outer Thigh)** – 
+5. **Band Scarecrow Raises** - 
+6. **Leg Extension** – 
 
-1. **Single Leg Press** – 3 sets of 10 reps per leg
-2. **Cable Side Kick** – 3 sets of 12–15 reps per leg
-3. **Band single leg barbell Squat**
-4. **Cable Hip Flexion** – 3 sets of 12–15 reps per leg
-5. **Abduction Machine (Outer Thigh)** – 3 sets of 15–20 reps
-6. **Kettlebell Sumo Squat** – 3 sets of 12–15 reps
-7. **B-Squat**
-8. **Band Scarecrow Raises**
-
-**Best Pairings**
-- **Single Leg Press** + **Sumo Squat** – Balanced leg press and wide-stance squat
-- **Side Kick** + **Hip Flexion** + **Abduction** – Great trio for hip strength & joint stability
-- **Scarecrow Raises** – Added posture control, especially after hip work
+*Best Pairing*
 
 #### Hip Thrust Program 
 
@@ -796,7 +809,7 @@ Choose Two combinations based on your goal:
 | Single Arm Clean Press              | 10         | 20     | 4     | 8     | Med          | Kettlebell                          | Upper           | Multi                             | [Single Arm Clean Press](https://youtu.be/VZxio6dPxWo?si=VGDZkGh6qT3-ltXE)                    | Yes       | Standing                              | **N/A**                  | **17.6** | **N/A**     | EP               |
 | Sled Push                           | 0          | 50     | 2     | 4     | _Highest     | Sled                                | Full            | Multi                             | [[Full Body#^03bc4f \|Sled Push]]                                                             | Yes       | Standing                              | **N/A**                  | *25*     | **N/A**     | CM               |
 | Sled Pull                           | 0          | 50     | 2     | 4     | _Highest     | Sled                                | Full            | Multi                             | [Sled Pull](https://www.youtube.com/watch?v=WyqpYp1TnwE)                                      | Yes       | Standing                              | **N/A**                  | *25*     | **N/A**     | CM               |
-| Tib Bar Raise                       | 0          | 5      | 4     | 8     | _Highest     | Tib Bar                             | Bottom          | Ankle Tibialis                    | Tib Bar Raise                                                                                 | Yes       | Seated                                | **N/A**                  | *10*     | **N/A**     | CM               |
+| Tib Bar Raise                       | 0          | 5      | 4     | 8     | _Highest     | Tib Bar                             | Bottom          | Ankle Tibialis                    | [Tib Bar Raise](https://www.youtube.com/watch?v=1nZgmPik6Mk)                                  | Yes       | Seated                                | **N/A**                  | *10*     | **N/A**     | CM               |
 | Tib Bar Hamstring Curl              | 0          | 5      | 4     | 8     | High         | Tib Bar                             | Bottom          | Hamstring                         | Tib Bar Hamstring Curl                                                                        | Yes       | Seated                                | **N/A**                  | *10*     | **N/A**     | CM               |
 | Tib Bar Leg Extension               | 0          | 5      | 4     | 8     | High         | Tib Bar                             | Bottom          | Quad                              | Tib Bar Leg Extension                                                                         | Yes       | Seated                                | **N/A**                  | *10*     | **N/A**     | CM               |
 | Tire Flip                           | 0          | 0      | 4     | 8     | _Highest     | Tire                                | Full            | Multi                             | Tire Flip                                                                                     | **Later** | Standing                              | **N/A**                  | **0**    | **N/A**     | CM               |

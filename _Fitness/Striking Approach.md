@@ -78,21 +78,44 @@ Keep sparing for Muay Thai down to 2 or 3 times a month for safety and quality.
 **Pro Tip:**  
 Don’t fixate on just one area. Keep cycling your attention between these body parts like you’re scanning for signals. Over time, you’ll start to “see” the rhythm behind their movements and respond before they fully commit reading there body language to gauge there intent don't worry about the punch or kicks.
 
-#### 1. Feet
+##### 1. Feet
 - Watch for weight shifts, pivots, and stances.  
 - Their feet reveal balance, direction, and whether they’re setting up to move, strike, or retreat.
 
-#### 2. Hips
+##### 2. Hips
 - The hips generate power—any rotation or shift can signal an incoming strike.  
 - Pay attention to whether they’re loading up or staying relaxed.
 
-#### 3. Shoulders
+##### 3. Shoulders
 - Shoulders often move just before a punch is thrown.  
 - Look for tension, rises, or drops that hint at jabs, hooks, or overhands.
 
-#### 4. Elbows
+##### 4. Elbows
 - Elbows can telegraph punches, especially straights and hooks.  
 - A sudden flare or drop can give away the strike before it’s fully launched.
+
+### **Use Mental Disruptors (To Break Loops)**
+- **Verbal Cues**:  
+  - Silently say "NOW" or "GO" to snap yourself into committed action.  
+  - Use a sharp exhale (like a hiss) to trigger aggression (e.g., the "tss" sound Nak Muay make when striking).  
+
+- **Commitment Fixes**:  
+  - **"Half-Force Rule"**: If you throw a technique at 50%, you **must** follow up with a 100% or 70% in sparing.  
+
+- **Reset Tactics**:  
+  - **Step offline**: Angle-cut instead of moving straight back.  
+  - **Clap your gloves together** (physically resets your hands and mind).  
+
+- **Pre-Entry Fake**:  
+  - Fake a teep → then throw a cross or switch kick.  
+  - Fake a lazy jab → then blast a rear knee.  
+
+  - **"First Strike is a Feint"**: Mentally frame your initial strike as a setup, not a power shot (frees hesitation).  
+
+- **Rhythm Breakers**:  
+  - Pause for a half-beat, then explode (e.g., jab… pause… sudden low kick).  
+  - Switch stances abruptly to force yourself out of patterns.  
+
 
 ---
 
