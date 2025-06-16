@@ -444,7 +444,7 @@ Chin ups higher priority alternate each quarter or even month. Try Burpe to Pull
 3. **Narrow-Grip Pull-Up** 
 4. **Zottman Curl** – 15lb
 5. **Super ROM Lateral Raise Wrist Curl** – 5lb
-
+6. **Barbell Clean Jerk Press** - 20lb
 
 *Best Pairing*
 - **Landmine Single-Leg RDL** + **Narrow-Grip Pull-Up/Chin-Up**
@@ -454,7 +454,7 @@ Chin ups higher priority alternate each quarter or even month. Try Burpe to Pull
 Alternate **Pull-Up and Chin-Up** weekly or in different sessions to avoid elbow tendinitis or biceps overuse. Don’t pair **Zottman Curls + Chin-Ups** in the same day too often—they both heavily load the **biceps tendon**.
 
 #### **Session 3: Push + Pull (Hybrid)**
-- **Barbell Clean Jerk Press**
+- **Barbell Clean Jerk Press** - 20lb
 ##### **Push:**
 1. **Landmine Anti Rotations** 
 2. **Single Arm Chest Press** or **Dumbbell Floor Press**/**Incline Dumbbell Bench Press** 
