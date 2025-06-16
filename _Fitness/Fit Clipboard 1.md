@@ -298,21 +298,8 @@ Great question. The **Barbell Clean & Jerk Press** is a **high-intensity, explos
 
  **2. Landmine Single-Leg RDL**
 
-* 🦵 Hip-hinge stability, single-leg glute + hamstring control
-* **Why:** Builds posterior chain balance → protects knees and hips during landings and pulls
-* **Do this BEFORE or AFTER**, depending on your energy
-
----
-
-### **3. Narrow-Grip Pull-Up**
-
-* 🧍Vertical pull strengthens scapular stability and lats
-* **Why:** Balances all that vertical pressing—critical for shoulder joint health
-* Use as a **super-set** or cooldown to unload shoulder pressure
-
----
-
-### **4. Band Scarecrow Raises**
+**3. Narrow-Grip Pull-Up**
+**4. Band Scarecrow Raises**
 
 * 🏹 Scapular stability, rotator cuff prehab
 * **Why:** Protects shoulder integrity from ballistic pressing
