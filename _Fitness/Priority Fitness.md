@@ -498,12 +498,12 @@ Choose Two combinations based on your goal:
 
 #### Session 1: Main Compound Squat & Lunge Patterns
 Allowed to practice each excercise max once a week.
-1. **Hack Squat** – 
-2. **Single Leg Press** –
-3. **Walking Barbell Lunge/Zercher Lunge** – 
-4. **Dumbbell Bulgarian Split Squat** – twice a week
-5. **Kettlebell Sumo Squat** – twice a week
-6. **B-Squat** -
+1. **Hack Squat** – 300lb
+2. **Single Leg Press** – 180lb
+3. **Walking Barbell Lunge/Zercher Lunge** – 20lb
+4. **Dumbbell Bulgarian Split Squat** - 20lb  – twice a week
+5. **Kettlebell Sumo Squat** – 20lb - twice a week
+6. **Kettlebell B-Squat** -
 7. **Band Single-Leg Barbell Squat** -
 
 *Best Pairing*
@@ -516,7 +516,7 @@ Allowed to practice each excercise max once a week.
 1. **Cable Pull Through** – - 2 times a week
 2. **Band Single-Leg Deadlift** – - 2 times a week
 3. **Cable Hip Extension** – -3 times a week
-4. **Hip Thrust** - -3 times a week
+4. **Hip Thrust** - 130lb -3 times a week
 5. **Tib Bar Raise** – -3 times a week
 
 *Best Pairing*
@@ -774,6 +774,7 @@ Allowed to practice each excercise max once a week.
 | Skull Crusher                       | 5          | 10     | 4     | 8     | High         | Dumbbell                            | Upper           | Tricep                            | [[Upper#^6beb70\|Skull Crusher]]                                                              | Yes       | Seated                                | **N/A**                  | *15*     | **N/A**     | CM               |
 | Wide Curl                           | 0          | 15     | 4     | 8     | High         | Dumbbell                            | Upper           | Biceps                            | [[Upper#^60f95e \|Wide Curl]]                                                                 | Yes       | Standing                              | **N/A**                  | ****     | **N/A**     | CM               |
 | Hammer Curls                        | 10         | 20     | 4     | 8     | High         | Dumbbell                            | Upper - Mid Arm | Biceps Brac-...                   | [[Upper#^eddf76\| Hammer Curls]]                                                              | Yes       | Standing                              | **N/A**                  | **10**   | **N/A**     | CM               |
+| Bulgarian Split Squat               |            |        |       |       |              |                                     |                 |                                   | Bulgarian Split Squat                                                                         | **TBD**   | Standing                              | **N/A**                  | **10**   | **N/A**     | CM               |
 | Lateral Raise                       | 5          | 10     | 4     | 8     | Low          | Dumbbell                            | Upper           | Multi                             | [[Upper#^034a05\| Lateral Raise]]                                                             | Yes       | Standing                              | **N/A**                  | **10**   | **N/A**     | CM               |
 | Overhead Extension                  | 10         | 15     | 4     | 8     | Med          | Dumbbell                            | Upper           | Tricep                            | [[Upper#^f128a8 \|Overhead Extension]]                                                        | Yes       | Standing                              | **N/A**                  | **20**   | **N/A**     | CM               |
 | Shoulder Press                      | 15         | 20     | 4     | 8     | Med          | Dumbbell                            | Upper           | Shoulder                          | Shoulder Press                                                                                | Yes       | Seated                                | **N/A**                  | *10*     | **N/A**     | CM               |
