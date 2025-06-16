@@ -144,33 +144,6 @@ ask again for upper body
 whats the best parings that go together in a way were if you were doing in the same day it would limit injury
 
 
-### ✅ **Smart Pairings** (per session)
-
-#### **Session A – Strength/Hypertrophy, Balanced Load**
-
-- **Hack Squat** (main strength work – bilateral, quad dominant)
-    
-- **Dumbbell Bulgarian Split Squat** (unilateral, glute/quad focused)
-    
-- **Band Single-Leg Barbell Squat** (finisher for stability + glute medius)
-    
-
-> Great mix of machine + free weight + instability. Limits heavy axial loading (no barbell on spine).
-
----
-
-#### **Session B – Glute/Posterior Chain Focus**
-
-- **Kettlebell Sumo Squat** (wide stance, hip dominant)
-    
-- **Walking Barbell/Zercher Lunge** (core + glute, unilateral gait pattern)
-    
-- Optional: **B-Squat** (if light/moderate, as a finisher or warm-up variation)
-    
-
-> Focuses more on hip engagement and glutes. Avoid overdoing walking lunges with too much volume—risk for hip/IT band issues.
-
----
 
 #### **Session C – Machine-Based, Low Back Deload**
 

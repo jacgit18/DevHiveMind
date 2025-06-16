@@ -507,7 +507,9 @@ Allowed to practice each excercise max once a week.
 7. **Band Single-Leg Barbell Squat** -
 
 *Best Pairing*
-
+- **Hack Squat**  + **Dumbbell Bulgarian Split Squat**  + **Band Single-Leg Barbell Squat**
+- **Kettlebell Sumo Squat** + **Walking Barbell/Zercher Lunge** + **B-Squat**
+- **Hack Squat**/**Kettlebell Sumo Squat**   + **Dumbbell Bulgarian Split Squat**  + **Band Single-Leg Barbell Squat**
 #### **Session 2: Hinge + Posterior Chain (Glutes, Hamstrings, Core)**
 1. **Cable Pull Through** – - 2 times a week
 2. **Band Single-Leg Deadlift** – - 2 times a week
