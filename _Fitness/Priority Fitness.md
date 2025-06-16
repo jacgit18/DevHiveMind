@@ -503,8 +503,8 @@ Allowed to practice each excercise max once a week.
 3. **Walking Barbell Lunge/Zercher Lunge** – 20lb
 4. **Dumbbell Bulgarian Split Squat** - 20lb  – twice a week
 5. **Kettlebell Sumo Squat** – 20lb - twice a week
-6. **Kettlebell B-Squat** -
-7. **Band Single-Leg Barbell Squat** -
+6. **Barbell/Kettlebell B-Squat** - 20lb
+7. **Band Single-Leg Barbell Squat** - 20lb
 
 *Best Pairing*
 - **Hack Squat**  + **Dumbbell Bulgarian Split Squat**  + **Band Single-Leg Barbell Squat**
@@ -513,11 +513,11 @@ Allowed to practice each excercise max once a week.
 - **B-Squat** + **Walking Barbell/Zercher Lunge** + **Band Single-Leg Barbell Squat** 
 
 #### **Session 2: Hinge + Posterior Chain (Glutes, Hamstrings, Core)**
-1. **Cable Pull Through** – - 2 times a week
-2. **Band Single-Leg Deadlift** – - 2 times a week
-3. **Cable Hip Extension** – -3 times a week
+1. **Cable Pull Through** – 33lb- 2 times a week
+2. **Band Single-Leg Deadlift** – 20lb - 2 times a week - add to table
+3. **Cable Hip Extension** – 50lb -3 times a week
 4. **Hip Thrust** - 130lb -3 times a week
-5. **Tib Bar Raise** – -3 times a week
+5. **Tib Bar Raise** – 5lb -3 times a week
 
 *Best Pairing*
 - **Cable Pull Through** + **Band Single-Leg Deadlift** + **Tib Bar Raise
@@ -525,11 +525,11 @@ Allowed to practice each excercise max once a week.
 #### **Session 3: Stability, Mobility, and Accessories (Control + Balance)**
 *Allowed to practice each excercise max **twice** a week.*
 1. **Trap Bar Squat Jump** - 20lb
-2. **Cable Side Kick** – 
-3. **Cable Hip Flexion** – 
-4. **Abduction Machine (Outer Thigh)** – 
-5. **Band Scarecrow Raises** - 
-6. **Leg Extension** – 
+2. **Cable Side Kick** – 20lb
+3. **Cable Hip Flexion** – 30lb
+4. **Abduction Machine (Outer Thigh)** – 130lb
+5. **Band Scarecrow Raises** - 20lb
+6. **Leg Extension** – 120lb
 
 *Best Pairing*
 - **Trap Bar Squat Jump** + **Cable Side Kick** + **Band Scarecrow Raises** 
@@ -774,7 +774,7 @@ Allowed to practice each excercise max once a week.
 | Skull Crusher                       | 5          | 10     | 4     | 8     | High         | Dumbbell                            | Upper           | Tricep                            | [[Upper#^6beb70\|Skull Crusher]]                                                              | Yes       | Seated                                | **N/A**                  | *15*     | **N/A**     | CM               |
 | Wide Curl                           | 0          | 15     | 4     | 8     | High         | Dumbbell                            | Upper           | Biceps                            | [[Upper#^60f95e \|Wide Curl]]                                                                 | Yes       | Standing                              | **N/A**                  | ****     | **N/A**     | CM               |
 | Hammer Curls                        | 10         | 20     | 4     | 8     | High         | Dumbbell                            | Upper - Mid Arm | Biceps Brac-...                   | [[Upper#^eddf76\| Hammer Curls]]                                                              | Yes       | Standing                              | **N/A**                  | **10**   | **N/A**     | CM               |
-| Bulgarian Split Squat               |            |        |       |       |              |                                     |                 |                                   | Bulgarian Split Squat                                                                         | **TBD**   | Standing                              | **N/A**                  | **10**   | **N/A**     | CM               |
+| Bulgarian Split Squat               | 10         | 20     | 4     | 8     | _Highest     | Dumbbell                            | Bottom          | Multi                             | [Bulgarian Split Squat](https://youtu.be/-4LVK1crLSw?si=64dcsLdLjn7vV6S2)                     | **TBD**   | Standing                              | **N/A**                  | **10**   | **N/A**     | CM               |
 | Lateral Raise                       | 5          | 10     | 4     | 8     | Low          | Dumbbell                            | Upper           | Multi                             | [[Upper#^034a05\| Lateral Raise]]                                                             | Yes       | Standing                              | **N/A**                  | **10**   | **N/A**     | CM               |
 | Overhead Extension                  | 10         | 15     | 4     | 8     | Med          | Dumbbell                            | Upper           | Tricep                            | [[Upper#^f128a8 \|Overhead Extension]]                                                        | Yes       | Standing                              | **N/A**                  | **20**   | **N/A**     | CM               |
 | Shoulder Press                      | 15         | 20     | 4     | 8     | Med          | Dumbbell                            | Upper           | Shoulder                          | Shoulder Press                                                                                | Yes       | Seated                                | **N/A**                  | *10*     | **N/A**     | CM               |
