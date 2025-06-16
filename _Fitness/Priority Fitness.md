@@ -325,6 +325,8 @@ The general principles of **training phases** like strength and hypertrophy appl
 
 ## Phases
 **Starting Point** will switch to optimal order of **EP** → **CM** → **Hypertrophy (PG/RC)**  
+
+
 ### **Progression Rules**
 - **Hypertrophy**: Add 1 rep/set or +2.5 lbs weekly
 - **Strength**: +5 lbs/week (upper), +10 lbs (lower)
@@ -379,15 +381,15 @@ Prioritize resistance bands for explosive phase they can be used for other phase
 ## Regimen
 > **Train intensity before volume**. Prioritize neural output early, then shift to fatigue-driven work. Can shift things depending how you feel
 
-| Day     | Session Type       | Options (Choose 1)                | Week One Phase                                      | Week Two Phase                                      | Best Order Of Operations  |
-| ------- | ------------------ | --------------------------------- | --------------------------------------------------- | --------------------------------------------------- | ------------------------- |
-| **Sun** | Gym                | Upper Body + Run + Balance Board  | Pull *Strength*                                     | Push *Strength*                                     | **Glutes/Hamstrings**     |
-| **Mon** | MMA/Gym            | Full Body(**Experiment**) + Sled  | **Explosive** Upper Push to *Strength* Lower        | **Explosive** Upper Pull to *Strength* Lower        | **Core**                  |
-| **Tue** | Gym or Rest        | Upper Body + Run + Balance Board  | Pull ***Hypertrophy***                              | Push ***Hypertrophy***                              | **Scapular & Upper Back** |
-| **Wed** | MMA or Gym or Rest | Lower Body + Dead Hang            | ***Hypertrophy***                                   | ***Hypertrophy***                                   | **Lats/Traps**            |
-| **Thu** | Gym or Rest        |                                   |                                                     |                                                     | **Quads**                 |
-| **Fri** | MMA or Gym or Rest | Full Body(**Experiment**) + Sled  | **Explosive** Lower to ***Hypertrophy*** Upper Push | **Explosive** Lower to ***Hypertrophy*** Upper Pull | **Chest/Delts**           |
-| **Sat** | MMA or Gym         | Lower Body + Dead Hang            | *Strength*                                          | *Strength*                                          | **Arms**                  |
+| Day     | Session Type       | Options (Choose 1)               | Week One Phase                                      | Week Two Phase                                      | Best Order Of Operations  |
+| ------- | ------------------ | -------------------------------- | --------------------------------------------------- | --------------------------------------------------- | ------------------------- |
+| **Sun** | Gym                | Upper Body + Run + Balance Board | Pull *Strength*                                     | Push *Strength*                                     | **Glutes/Hamstrings**     |
+| **Mon** | MMA/Gym            | Full Body(**Experiment**) + Sled | **Explosive** Upper Push to *Strength* Lower        | **Explosive** Upper Pull to *Strength* Lower        | **Core**                  |
+| **Tue** | Gym or Rest        | Upper Body + Run + Balance Board | Pull ***Hypertrophy***                              | Push ***Hypertrophy***                              | **Scapular & Upper Back** |
+| **Wed** | MMA or Gym or Rest | Lower Body + Dead Hang           | ***Hypertrophy***                                   | ***Hypertrophy***                                   | **Lats/Traps**            |
+| **Thu** | Gym or Rest        | Random Day                       |                                                     |                                                     | **Quads**                 |
+| **Fri** | MMA or Gym or Rest | Full Body(**Experiment**) + Sled | **Explosive** Lower to ***Hypertrophy*** Upper Push | **Explosive** Lower to ***Hypertrophy*** Upper Pull | **Chest/Delts**           |
+| **Sat** | MMA or Gym         | Lower Body + Dead Hang           | *Strength*                                          | *Strength*                                          | **Arms**                  |
 
 #todo/BAU/Workout
 - [ ] Do [[Grip Strength Training]]
@@ -423,10 +425,11 @@ Prioritize resistance bands for explosive phase they can be used for other phase
 4. **Dumbbell Floor Press** or **Incline Dumbbell Bench Press** – 17.5lb
 5. **Landmine Rotational Press** - 10lb
 6. **Arnold Press** – 20lb
-7. **Landmine Russian Twist** - 10lb
-8. **Single-Arm Tricep Extension** – 20lb
-9. **6-Way Shoulder Raise** – 5lb
-10. **Single-Arm Behind-Back Cable Lateral Raise** – 10lb (*Build to it*)
+7. **Overhead TrapBar Press** - 50lb
+8. **Landmine Russian Twist** - 10lb
+9. **Single-Arm Tricep Extension** – 20lb
+10. **6-Way Shoulder Raise** – 5lb
+11. **Single-Arm Behind-Back Cable Lateral Raise** – 10lb (*Build to it*)
 
 *Best Pairing*(in Same Session for Injury Mitigation)
 - **Arnold Press** + **Landmine Russian Twist**
@@ -691,7 +694,7 @@ Choose Two combinations based on your goal:
 | Lateral Rotations                   | 0          | 10     | 4     | 8     | Med          | Barbell Landmine                    | Full            | Multi                             | [[Landmines#^ceab94 \|Lateral Rotations]]                                                     | Yes       | Standing                              | **N/A**                  | *0*      | **N/A**     | RC               |
 | Reverse Lunge + Rotation            | 0          | 10     | 4     | 8     | Med          | Barbell Landmine                    | Full            | Multi                             | [[Landmines#^82208b\|Reverse Lunge + Rotation]]                                               | Yes       | Standing                              | **N/A**                  | *0*      | **N/A**     | RC               |
 | Single Leg RDL                      | 20         | 20     | 4     | 8     | _Highest     | Barbell/Kettlebell/Landmine         | Full            | Multi                             | [Single Leg RDL](https://youtu.be/lghxTgWZ9TM?si=fuXk0b2GPHCgdj--)                            | Yes       | Standing                              | **N/A**                  | ***10*** | **N/A**     | CM               |
-| Overhead Press                      | 20         | 50     | 4     | 8     | _Highest     | TrapBar                             |                 |                                   |                                                                                               |           |                                       |                          |          |             |                  |
+| Overhead Press                      | 20         | 50     | 4     | 8     | _Highest     | TrapBar                             | Upper           | Multi                             | [Overhead Press](https://youtu.be/T06x4_z1nts?si=7Zo_5KzHrfrBAtrh)                            | **TBD**   | Standing                              | **N/A**                  | ***10*** | **N/A**     | CM               |
 | Deadlift                            | 20         | 50     | 4     | 8     | _Highest     | Barbell/TrapBar Low Handle          | Full            | Multi                             | [[Lower#^1260ed \|Deadlift]]                                                                  | Yes       | Standing                              | **N/A**                  | *10*     | **N/A**     | CM               |
 | Nordic Hamstring Curl               | 0          | 0      | 4     | 8     | _Highest     | Bodyweight                          | Bottom          | Hamstring                         | [[Lower#^4e02bb \|Nordic Hamstring Curl]]                                                     | **TBD**   | Grounded                              | **N/A**                  | ****     | **N/A**     | CM               |
 | Back Extension                      | 0          | 15     | 4     | 8     | _Highest     | BodyWeight                          | Core            | Abdominal                         | Back Extension                                                                                | Yes       | Bench                                 | **N/A**                  | *0*      | **N/A**     | RC/Extension     |

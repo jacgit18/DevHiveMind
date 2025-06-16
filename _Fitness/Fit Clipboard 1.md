@@ -30,14 +30,7 @@ dg-publish:
 
 
 
-
-
-
-
-
-Resistance band d load week potentially or days
-
-Random day
+[How To Do Trap Bar Jump Squat \| Exercise Demo - YouTube](https://youtu.be/52-P8hlrKqg?si=89waZDCby5-d_eT_)
 
 
 
@@ -47,7 +40,8 @@ Random day
 
 
 
-trap bar overhead press if you focusing on hypotrophy
+
+
 
 
 
