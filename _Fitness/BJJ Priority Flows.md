@@ -47,6 +47,8 @@ Submissions can serve as both sweeps and opportunities to transition to other su
 
 At times it can BJJ can be like water in the fluidity but at times you can be like air and at other times you have to implement control bending things to your will like the earth. 
 
+Explode out of certain positions where your legs are in a bind just move more aggressively and faster don't make it look pretty.
+
 
 ### Real-World Tips
 > Slow down opponent in between transitions then pick and choose when to use you're speed

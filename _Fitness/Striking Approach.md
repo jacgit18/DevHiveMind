@@ -116,6 +116,7 @@ Don’t fixate on just one area. Keep cycling your attention between these body 
   - Pause for a half-beat, then explode (e.g., jab… pause… sudden low kick).  
   - Switch stances abruptly to force yourself out of patterns.  
 
+Think of current shot as the setup for the next move progress to something like a clinch etc...
 
 ---
 
