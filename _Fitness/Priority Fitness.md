@@ -326,7 +326,7 @@ The general principles of **training phases** like strength and hypertrophy appl
 ## Phases
 **Starting Point** will switch to optimal order of **EP** → **CM** → **Hypertrophy (PG/RC)**  
 
-
+Hypertrophy thrives on explosive lifts (1s), slow eccentrics (3s), 5 sets 15 reps, and progressive overload— going to failure on the last set.
 ### **Progression Rules**
 - **Hypertrophy**: Add 1 rep/set or +2.5 lbs weekly
 - **Strength**: +5 lbs/week (upper), +10 lbs (lower)
@@ -438,7 +438,7 @@ Prioritize resistance bands for explosive phase they can be used for other phase
 - **Incline Dumbbell Bench/Floor Press** + **Single-Arm Tricep Extension**
 
 #### **Session 2: Pull Focus**
-Chin ups higher priority alternate each quarter or even month
+Chin ups higher priority alternate each quarter or even month. Try Burpe to Pull Up. 
 1. **Landmine Single Leg RDL** - 10lb
 2. **Narrow-Grip Chin-Up** 
 3. **Narrow-Grip Pull-Up** 
@@ -451,17 +451,17 @@ Chin ups higher priority alternate each quarter or even month
 - **Narrow-Grip Pull-Up** + **Zottman Curl**
 - **Chin-Up** + **Super ROM Lateral Raise Wrist Curl**
 
+Alternate **Pull-Up and Chin-Up** weekly or in different sessions to avoid elbow tendinitis or biceps overuse. Don’t pair **Zottman Curls + Chin-Ups** in the same day too often—they both heavily load the **biceps tendon**.
 
-- Alternate **Pull-Up and Chin-Up** weekly or in different sessions to avoid elbow tendinitis or biceps overuse.
-
-- Don’t pair **Zottman Curls + Chin-Ups** in the same day too often—they both heavily load the **biceps tendon**.
 #### **Session 3: Push + Pull (Hybrid)**
+- **Barbell Clean Jerk Press**
 ##### **Push:**
 1. **Landmine Anti Rotations** 
 2. **Single Arm Chest Press** or **Dumbbell Floor Press**/**Incline Dumbbell Bench Press** 
 3. **Single-Arm Tricep Extension** 
 4. **Single-Arm Behind-Back Cable Lateral Raise** 
 5. **Landmine Rotational Press** 
+
 ##### **Pull:**
 Choose Two combinations based on your goal:  
 - **Pull-Up** + **Zottman Curl** 
