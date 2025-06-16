@@ -312,3 +312,10 @@ You lead with your most taxing move (squat jump), pair it with a low-load hip ab
 - ✅ **Abduction Machine** – outer glute/hip isolation
     
 - ✅ **Leg Extension** – quad/knee focus, machine-stabilized
+
+
+
+Explode out of certain positions where your legs are in a bind just move more aggressively and faster don't make it look pretty
+
+  
+Think of current shot as the setup for the next move progress to something like a clinch etc...
