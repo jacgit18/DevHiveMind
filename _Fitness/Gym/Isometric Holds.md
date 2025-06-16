@@ -145,59 +145,6 @@ whats the best parings that go together in a way were if you were doing in the s
 
 
 
-#### **Session C – Machine-Based, Low Back Deload**
-
-- **Single Leg Press**
-    
-- **Hack Squat** or **Kettlebell Sumo Squat** (light/moderate)
-    
-- **Band Single-Leg Squat** (stability finisher)
-    
-
-> Good for low back deload days, since you're off the barbell.
-
----
-
-#### **Session D – Athletic/Control Day**
-
-- **B-Squat** (for control and positional strength)
-    
-- **Walking Barbell/Zercher Lunge** (light/moderate for patterning)
-    
-- **Band Single-Leg Barbell Squat** (glute med/stability)
-    
-
-> Not a max strength day—focus on coordination, stability, and posture.
-
----
-
-### ❌ **Pairings to Avoid in One Day**
-
-- **Hack Squat + Bulgarian Split Squat + Walking Lunge**  
-    → All very quad/knee-heavy. This will burn you out **and** spike joint stress.
-    
-- **Single-Leg Press + Bulgarian Split Squat + Band Single-Leg Squat**  
-    → Too many unilateral exercises—fatigue accumulates fast, especially mentally and for stabilizers.
-    
-
----
-
-### 🗓️ **Weekly Structure Example**
-
-If doing **2-3 lower body sessions per week**, you can rotate focus:
-
-- **Day 1 (Strength Quad Focus)**: Hack Squat, DB Bulgarian, Band SL Squat
-    
-- **Day 2 (Glute/Hip Focus)**: KB Sumo Squat, Walking Zercher Lunge, B-Squat
-    
-- **Day 3 (Machine/Deload)**: SL Leg Press, Hack or Sumo (light), Band SL Squat
-    
-
----
-
-Want me to organize these based on your goal (e.g. explosive power, hypertrophy, strength balance)?
-
-
 
 To minimize injury and maximize recovery, smart pairings come down to **joint stress balance**, **movement pattern variation**, and **muscle fatigue management**. Here's a suggested pairing structure based on the exercises you listed, especially since some are done more frequently:
 

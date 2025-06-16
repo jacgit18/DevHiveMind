@@ -509,7 +509,9 @@ Allowed to practice each excercise max once a week.
 *Best Pairing*
 - **Hack Squat**  + **Dumbbell Bulgarian Split Squat**  + **Band Single-Leg Barbell Squat**
 - **Kettlebell Sumo Squat** + **Walking Barbell/Zercher Lunge** + **B-Squat**
-- **Hack Squat**/**Kettlebell Sumo Squat**   + **Dumbbell Bulgarian Split Squat**  + **Band Single-Leg Barbell Squat**
+- **Hack Squat**/**Kettlebell Sumo Squat**  + **Band Single-Leg Squat** + **Single Leg Press**
+- **B-Squat** + **Walking Barbell/Zercher Lunge** + **Band Single-Leg Barbell Squat** 
+
 #### **Session 2: Hinge + Posterior Chain (Glutes, Hamstrings, Core)**
 1. **Cable Pull Through** – - 2 times a week
 2. **Band Single-Leg Deadlift** – - 2 times a week
@@ -518,9 +520,23 @@ Allowed to practice each excercise max once a week.
 5. **Tib Bar Raise** – -3 times a week
 
 *Best Pairing*
+- **Cable Pull Through** (hip hinge focus)
+    
+- **Band Single-Leg Deadlift** (unilateral balance + hinge)
+    
+- **Tib Bar Raise** (anterior tib activation / ankle balance)
+    
+
+
+- **Hip Thrust** (horizontal glute loading)
+    
+- **Cable Hip Extension** (isolated glute activation, vertical plane)
+    
+- **Tib Bar Raise** (again, ankle + shin work to prevent knee injuries)
+
 
 #### **Session 3: Stability, Mobility, and Accessories (Control + Balance)**
-Allowed to practice each excercise max twice a week.
+*Allowed to practice each excercise max **twice** a week.*
 1. **Trap Bar Squat Jump** - 20lb
 2. **Cable Side Kick** – 
 3. **Cable Hip Flexion** – 
@@ -529,6 +545,8 @@ Allowed to practice each excercise max twice a week.
 6. **Leg Extension** – 
 
 *Best Pairing*
+- **Trap Bar Squat Jump** + **Cable Side Kick** + **Band Scarecrow Raises** 
+- 
 
 #### Hip Thrust Program 
 
