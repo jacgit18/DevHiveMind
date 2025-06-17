@@ -139,14 +139,3 @@ _Think: Pump work, metabolic stress training_
 |**Yielding**|Strength & tendon health|Holding load statically under gravity|Strength / Joint Resilience|
 |**Positional**|Break through weak spots|Holding at precise angles mid-lift|Strength / Technique|
 |**Tension / Peak Hold**|Hypertrophy / Burn|Sustained muscle contraction|Hypertrophy / Finishers|
-
-ask again for upper body
-whats the best parings that go together in a way were if you were doing in the same day it would limit injury
-
-
-
-
-
-
-
-  

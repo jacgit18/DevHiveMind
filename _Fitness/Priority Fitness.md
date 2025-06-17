@@ -335,21 +335,24 @@ Hypertrophy thrives on explosive lifts (1s), slow eccentrics (3s), 5 sets 15 rep
 - **Strength**: +5 lbs/week (upper), +10 lbs (lower)
 - **Injury Rule**: If pain >2/10, regress load or variation
 
+#todo/BAU/Workout 
+- [ ] Adjust explosive power and hypertrophy in relation to strength max weight 
 ##### Explosive Power (EP Phase)
 Prioritize resistance bands for explosive phase they can be used for other phase but the most optimal use case is for explosive power also 2 sets 10 reps for warm up when it comes to bands.
 
 > Speed is a skill—train it while fresh.
 
-| Exercise                 | Goal Weight    | Adjusted Timeline |
-| ------------------------ | -------------- | ----------------- |
-| **Hip Thrust**           | 225–250 lbs    | 12–18 months      |
-| **Hack Squat Machine**   | 180–200 lbs    | 6–9 months        |
-| **Deadlift**             | 225–275 lbs    | 12–18 months      |
-| **Bench Press**          | 135–155 lbs    | 9–12 months       |
-| **Overhead Press**       | 95–105 lbs     | 9–12 months       |
-| **Weighted Pull-Ups**    | +30 lbs (fast) | 9–12 months       |
-| **Single-Leg Leg Press** | 40 lbs max     | Immediately       |
-| **Tib Bar**              | 60 lbs max     | 6–9 months        |
+| Exercise                         | Goal Setsx Reps | Weight (30–60% 1RM) | Timeline    |
+| -------------------------------- | --------------- | ------------------- | ----------- |
+| **Hip Thrust**                   | 4x5             | 95–135 lbs          | 6–9 months  |
+| **Hack Squat Machine**           | 4x5             | 90–135 lbs          | 3–6 months  |
+| **Deadlift** (Trap/Conventional) | 3x3             | 135–185 lbs         | 6–12 months |
+| **Bench Press**                  | 4x5             | 75–95 lbs           | 6–9 months  |
+| **Overhead Press**               | 4x5             | 45–65 lbs           | 6–9 months  |
+| **Weighted Pull-Ups**            | 3x6             | +10–20 lbs          | 6–9 months  |
+| **Single-Leg Leg Press**         | 3x8             | 20–30 lbs           | Immediately |
+| **Tib Bar**                      | 3x10            | 25–40 lbs           | 3–6 months  |
+
 
 ##### **Strength Compound (CM Phase)**
 
@@ -370,15 +373,17 @@ Prioritize resistance bands for explosive phase they can be used for other phase
 ##### **Hypertrophy & Endurance (HE Phase)**
 > Size/endurance = can be done under more fatigue because it's about _muscle burn_, not _perfect speed or maximum tension_
 
-| Exercise                 | Rep Range Focus | Goal @ 120 lb | Timeline (Est.) | Goal @ 150 lb | Timeline (Adjusted) |
-| ------------------------ | --------------- | ------------- | --------------- | ------------- | ------------------- |
-| **Hip Thrust**           | 12–15 reps      | 185–225 lbs   | 6–9 months      | 225–280 lbs   | 9–12 months         |
-| **Hack Squat Machine**   | 10–12 reps      | 145–180 lbs   | 3–4 months      | 180–225 lbs   | 4–6 months          |
-| **Deadlift**             | 8–10 reps       | 185–225 lbs   | 6–9 months      | 225–280 lbs   | 9–12 months         |
-| **Bench Press**          | 10–12 reps      | 110–135 lbs   | 4–6 months      | 135–170 lbs   | 6–9 months          |
-| **Overhead Press**       | 10–12 reps      | 70–90 lbs     | 4–6 months      | 90–115 lbs    | 6–9 months          |
-| **Weighted Pull-Ups**    | 6–8 reps        | +35–45 lbs    | 4–6 months      | +45–55 lbs    | 6–9 months          |
-| **Single-Leg Leg Press** | 12–15 reps      | 145–180 lbs   | 3–4 months      | 180–225 lbs   | 4–6 months          |
+
+| Exercise                 | Sets x Reps | Goal @ 120 lb | Timeline (Est.) | Goal @ 150 lb | Timeline (Adjusted) |
+| ------------------------ | ----------- | ------------- | --------------- | ------------- | ------------------- |
+| **Hip Thrust**           | 4x15        | 185–225 lbs   | 6–9 months      | 225–280 lbs   | 9–12 months         |
+| **Hack Squat Machine**   | 4x12        | 135–180 lbs   | 6 months        | 180–225 lbs   | 9–12 months         |
+| **Deadlift**             | 3x10        | 185–225 lbs   | 6–9 months      | 225–275 lbs   | 9–15 months         |
+| **Bench Press**          | 3x12        | 95–115 lbs    | 6–9 months      | 115–135 lbs   | 9–12 months         |
+| **Overhead Press**       | 3x10        | 65–75 lbs     | 6–9 months      | 75–95 lbs     | 9–12 months         |
+| **Weighted Pull-Ups**    | 3x8         | +15 lbs       | 6 months        | +30 lbs       | 9–12 months         |
+| **Single-Leg Leg Press** | 3x15        | 40–50 lbs     | Immediately     | 60 lbs        | 3–6 months          |
+| **Tib Bar**              | 3x20        | 40–50 lbs     | 3–6 months      | 60 lbs        | 6–9 months          |
 
 
 ## Regimen
@@ -420,13 +425,16 @@ Prioritize resistance bands for explosive phase they can be used for other phase
 - [ ] Leg extensions not as effective for me at least in terms of rehabilitation aspect but still can benefit from the excercise just make sure no pain and proper form pointing toes inward with butt down keep the range at the orange sticker. 
 
 ## Body Part Specific Programs 
+> For each excercise allowed to do 3 times a week max. Also each fixed gym machine has a freeweight variations you can pivot to if not available.
+
 Depending on week and day the session can vary by phase from strength, hypertrophy, or explosive power training.
 
-Outside of best parings other parings you do make it a light day instead of a intense day.
+Outside of best parings other parings you do make it a light day instead of a intense day because best paring for injury mitigation.
 
+Weight ranges lowest explosive power weight to max strength weight.
 ### Full Body Program
-- **Barbell Clean Jerk Press** - 1 time a week
-- **Sled** - twice a week push and pull.
+- **Barbell Clean Jerk Press** - 1 time a week. - 20lb 
+- **Sled** - twice a week push and pull. - 50lb
 ### Right to Bare Arms Program
 Allowed to practice each excercise max twice a week.
 #### **Session 1: Push Focus Ordered By Priority**
@@ -442,33 +450,32 @@ Allowed to practice each excercise max twice a week.
 10. **6-Way Shoulder Raise** – 5lb
 11. **Single-Arm Behind-Back Cable Lateral Raise** – 10lb (*Build to it*)
 
-*Best Pairing*(in Same Session for Injury Mitigation)
-- **Arnold Press** + **Landmine Russian Twist**
-- **Landmine Z Press** + **Single-Arm Chest Press**
-- **Incline Dumbbell Bench/Floor Press** + **Landmine Anti-Rotations**
-- **Incline Dumbbell Bench/Floor Press** + **Single-Arm Tricep Extension**
-
+*Best Pairing*
+- **Landmine Z Press** + **Single-Arm Chest Press** + **Landmine Anti-Rotations** + **Single-Arm Tricep Extension
+- **Arnold Press** + **Landmine Russian Twist** + **6-Way Shoulder Raise** + **Single-Arm Behind-Back Cable Lateral Raise** 
+- **Incline Dumbbell Bench/Floor Press** + **Landmine Rotational Press** + **Overhead TrapBar Press**
 #### **Session 2: Pull Focus**
 Chin ups higher priority alternate each quarter or even month. Try Burpee to Pull Up. 
-1. **Landmine Single Leg RDL** - 10lb
+1. **Band/Barbell/Dumbbell/Landmine Single Leg RDL** - 10lb to 20lb
 2. **Narrow-Grip Chin-Up** 
 3. **Narrow-Grip Pull-Up** 
 4. **Zottman Curl** – 15lb
 5. **Super ROM Lateral Raise Wrist Curl** – 5lb
 6. **Pallof Press** - 30lb
-7. **Rev Crunch** 3 times a week
-8. **Kneeling Cable Crunch** - 3 times a week
-9. **Back Extension** - 15lb - 3 times a week
-10. **Barbell Clean Jerk Press** - 20lb
+7. **Rev Crunch** 
+8. **Kneeling Cable Crunch** - 33lb
+9. **Back Extension** - 15lb 
+
 
 *Best Pairing*
-- **Landmine Single-Leg RDL** + **Narrow-Grip Pull-Up/Chin-Up**
-- **Narrow-Grip Pull-Up** + **Zottman Curl**
-- **Chin-Up** + **Super ROM Lateral Raise Wrist Curl**
+-  **Single-Leg RDL** + **Narrow-Grip Pull-Up/Chin-Up** + **Back Extension** + **Pallof Press**
+- **Zottman Curl** + **Super ROM Lateral Raise Wrist Curl** + **Pallof Press** + **Kneeling Cable Crunch** 
+- **Narrow-Grip Pull-Up/Chin-Up** + **Super ROM Lateral Raise Wrist Curl** + **Kneeling Cable Crunch** 
 
 > Alternate **Pull-Up and Chin-Up** weekly or in different sessions to avoid elbow tendinitis or biceps overuse. Don’t pair **Zottman Curls + Chin-Ups** in the same day too often—they both heavily load the **biceps tendon**.
 
 #### **Session 3: Push + Pull (Hybrid)**
+- **Barbell Clean Jerk Press** 
 ##### **Push:**
 1. **Landmine Anti Rotations** 
 2. **Single Arm Chest Press** or **Dumbbell Floor Press**/**Incline Dumbbell Bench Press** 
@@ -484,25 +491,20 @@ Chin ups higher priority alternate each quarter or even month. Try Burpee to Pul
 5. **Pallof Press** 
 6. **Rev Crunch** 
 7. **Kneeling Cable Crunch**
-8. **Back Extension** - 3 to 4 times a week
+8. **Back Extension** 
 
-Choose Two combinations based on your goal:  
-- **Barbell Clean Jerk Press**  + **Landmine Anti-Rotations**
-- **Barbell Clean Jerk Press**  +  **Landmine Single-Leg RDL**
-- **Barbell Clean Jerk Press**  + **Narrow-Grip Pull-Up**
-- **Pull-Up** + **Zottman Curl** 
-- **Chin-Up** + **Super ROM Lateral Raise Wrist Curl** 
-- **Landmine Single-Leg RDL** + **Narrow-Grip Pull-Up/Chin-Up**
-
+*Best Pairing*
+- **Single Arm Chest Press** or **Dumbbell Floor Press**/**Incline Dumbbell Bench Press** + **Pallof Press** +  **Landmine Anti-Rotations**
+- **Landmine Single-Leg RDL** + **Dumbbell Floor Press**/**Incline Dumbbell Bench Press** + **Single-Arm Tricep Extension** + **Landmine Anti-Rotations** or **Pallof Press** + **Super ROM Lateral Raise Wrist Curl**
+- **Narrow-Grip Pull-Up/Chin-Up** + **Zottman Curl** + **Back Extension** + **Rev Crunch** or **Kneeling Cable Crunch**
 ### Leg Programming 
 
 #### Session 1: Main Compound Squat & Lunge Patterns
-Allowed to practice each excercise max once a week.
 1. **Hack Squat** – 300lb
 2. **Single Leg Press** – 180lb
 3. **Walking Barbell Lunge/Zercher Lunge** – 20lb
-4. **Dumbbell Bulgarian Split Squat** - 20lb  – twice a week
-5. **Kettlebell Sumo Squat** – 20lb - twice a week
+4. **Dumbbell Bulgarian Split Squat** - 20lb 
+5. **Kettlebell Sumo Squat** – 20lb 
 6. **Barbell/Kettlebell B-Squat** - 20lb
 7. **Band Single-Leg Barbell Squat** - 20lb
 
@@ -513,17 +515,15 @@ Allowed to practice each excercise max once a week.
 - **B-Squat** + **Walking Barbell/Zercher Lunge** + **Band Single-Leg Barbell Squat** 
 
 #### **Session 2: Hinge + Posterior Chain (Glutes, Hamstrings, Core)**
-1. **Cable Pull Through** – 33lb- 2 times a week
-2. **Band Single-Leg Deadlift** – 20lb - 2 times a week - add to table
-3. **Cable Hip Extension** – 50lb -3 times a week
-4. **Hip Thrust** - 130lb -3 times a week
-5. **Tib Bar Raise** – 5lb -3 times a week
+1. **Cable Pull Through** – 33lb
+2. **Cable Hip Extension** – 50lb 
+3. **Hip Thrust(single/dual)** - 90lb to 130lb 
+4. **Tib Bar Raise** – 5lb 
 
 *Best Pairing*
-- **Cable Pull Through** + **Band Single-Leg Deadlift** + **Tib Bar Raise
+- **Cable Pull Through** + **Tib Bar Raise
 - **Hip Thrust** + **Cable Hip Extension** + **Tib Bar Raise**
 #### **Session 3: Stability, Mobility, and Accessories (Control + Balance)**
-*Allowed to practice each excercise max **twice** a week.*
 1. **Trap Bar Squat Jump** - 20lb
 2. **Cable Side Kick** – 20lb
 3. **Cable Hip Flexion** – 30lb
@@ -534,22 +534,6 @@ Allowed to practice each excercise max once a week.
 *Best Pairing*
 - **Trap Bar Squat Jump** + **Cable Side Kick** + **Band Scarecrow Raises** 
 - **Cable Hip Flexion** + **Abduction Machine** + **Leg Extension** 
-
-#### Hip Thrust Program 
-
-- **Day 1 (Strength Heavy)**  
-	- Hip Thrust: 4x8 @ 130–180 lbs (1.5x BW)  
-	- Single-Leg Hip Thrust: 3x12/leg @ 90 lbs 
-  
-- **Day 2 (Hypertrophy)**  -  Slow eccentric to failure
-	- Hip Thrust: 3x12/leg @ 70–90 lbs 
-	- Single-Leg Hip Thrust: 3x12/leg @ 70 lbs 
-	- Bodyweight Hip Thrust Holds: 3x30 sec (squeeze glutes)  
-	- Kettlebell Swing (for hip snap): 4x15  
-
-- **Day 3 (Explosive)**  
-	- Hip Thrust: 6x3 @ 90 - explosive concentric, 1-second pause, controlled eccentric
-
 
 ### Balance Board Programming  
 - **Beginners:** 2-3x/week (5-10 mins/session) or 2 songs length.
