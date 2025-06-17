@@ -445,10 +445,11 @@ Allowed to practice each excercise max twice a week.
 5. **Landmine Rotational Press** - 10lb
 6. **Arnold Press** – 20lb
 7. **Overhead TrapBar Press** - 50lb
-8. **Landmine Russian Twist** - 10lb
-9. **Single-Arm Tricep Extension** – 20lb
-10. **6-Way Shoulder Raise** – 5lb
-11. **Single-Arm Behind-Back Cable Lateral Raise** – 10lb (*Build to it*)
+8. **Pallof Press** - 30lb
+9. **Landmine Russian Twist** - 10lb
+10. **Single-Arm Tricep Extension** – 20lb
+11. **6-Way Shoulder Raise** – 5lb
+12. **Single-Arm Behind-Back Cable Lateral Raise** – 10lb (*Build to it*)
 
 *Best Pairing*
 - **Landmine Z Press** + **Single-Arm Chest Press** + **Landmine Anti-Rotations** + **Single-Arm Tricep Extension
@@ -461,14 +462,12 @@ Chin ups higher priority alternate each quarter or even month. Try Burpee to Pul
 3. **Narrow-Grip Pull-Up** 
 4. **Zottman Curl** – 15lb
 5. **Super ROM Lateral Raise Wrist Curl** – 5lb
-6. **Pallof Press** - 30lb
-7. **Rev Crunch** 
-8. **Kneeling Cable Crunch** - 33lb
-9. **Back Extension** - 15lb 
-
+6. **Rev Crunch** 
+7. **Kneeling Cable Crunch** - 33lb
+8. **Back Extension** - 15lb 
 
 *Best Pairing*
--  **Single-Leg RDL** + **Narrow-Grip Pull-Up/Chin-Up** + **Back Extension** + **Pallof Press**
+- **Single-Leg RDL** + **Narrow-Grip Pull-Up/Chin-Up** + **Back Extension** + **Pallof Press**
 - **Zottman Curl** + **Super ROM Lateral Raise Wrist Curl** + **Pallof Press** + **Kneeling Cable Crunch** 
 - **Narrow-Grip Pull-Up/Chin-Up** + **Super ROM Lateral Raise Wrist Curl** + **Kneeling Cable Crunch** 
 
