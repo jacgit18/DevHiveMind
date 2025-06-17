@@ -454,7 +454,7 @@ Allowed to practice each excercise max twice a week.
 *Best Pairing*
 - **Landmine Z Press** + **Single-Arm Chest Press** + **Landmine Anti-Rotations** + **Single-Arm Tricep Extension
 - **Arnold Press** + **Landmine Russian Twist** + **6-Way Shoulder Raise** + **Single-Arm Behind-Back Cable Lateral Raise** 
-- **Incline Dumbbell Bench/Floor Press** + **Landmine Rotational Press** + **Overhead TrapBar Press**
+- **Incline Dumbbell Bench/Floor Press** + **Landmine Rotational Press** + **Overhead TrapBar Press** + **Pallof Press**
 #### **Session 2: Pull Focus**
 Chin ups higher priority alternate each quarter or even month. Try Burpee to Pull Up. 
 1. **Band/Barbell/Dumbbell/Landmine Single Leg RDL** - 10lb to 20lb
@@ -467,8 +467,8 @@ Chin ups higher priority alternate each quarter or even month. Try Burpee to Pul
 8. **Back Extension** - 15lb 
 
 *Best Pairing*
-- **Single-Leg RDL** + **Narrow-Grip Pull-Up/Chin-Up** + **Back Extension** + **Pallof Press**
-- **Zottman Curl** + **Super ROM Lateral Raise Wrist Curl** + **Pallof Press** + **Kneeling Cable Crunch** 
+- **Single-Leg RDL** + **Narrow-Grip Pull-Up/Chin-Up** + **Back Extension** 
+- **Zottman Curl** + **Super ROM Lateral Raise Wrist Curl**  + **Kneeling Cable Crunch** 
 - **Narrow-Grip Pull-Up/Chin-Up** + **Super ROM Lateral Raise Wrist Curl** + **Kneeling Cable Crunch** 
 
 > Alternate **Pull-Up and Chin-Up** weekly or in different sessions to avoid elbow tendinitis or biceps overuse. Don’t pair **Zottman Curls + Chin-Ups** in the same day too often—they both heavily load the **biceps tendon**.
