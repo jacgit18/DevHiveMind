@@ -52,6 +52,8 @@ trx pistol squat
 leg on high box pistol squat starting in single leg squatting position then pushing up
 
 
+[Master the Turkish Get-Up (Avoid These 3 Mistakes!) - YouTube](https://youtu.be/jFK8FOiLa_M?si=L8oB-1-BZ8M6Wfsp)
+
 [How to PROPERLY Squat for Growth (4 Easy Steps) - YouTube](https://youtu.be/gcNh17Ckjgg?si=L0Lmos_bpSJcs9u1)
 
 
