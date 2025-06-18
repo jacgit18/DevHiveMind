@@ -1,8 +1,42 @@
 
 sit with dumbbell extend leg your lunging on move a little to the outside placing dumbbells there to lunge from
 
-2. **Cat-Cow / Spinal Wave / Deep Squat Hold**
-    
+bulgarian builds to pistol squat
+
+[Felix Bar](https://youtu.be/mkRDoV83Y0M?si=BSPRPBericJza2p_) - good arm warm up
+
+[Elevated Smith Machine Lunge](https://youtu.be/Yp5O9Cz6Ajg?si=bFGCfbzNqt_JobTA)
+
+[Rotator cuff 90 degrees external rotation with dumbbell - YouTube](https://youtu.be/EUMsYC_W3aI?si=GFgIUffRsKjwesZU)
+
+
+[Single Leg Cable Romanian Deadlift - YouTube](https://youtu.be/2M1Mikqf5lY?si=1Me7DqZvB5XL1Orm)
+
+
+
+[Swiss Ball Side Flexion - Level 1 - GymCalc.com - YouTube](https://youtu.be/kFty8-wF69k?si=uAMaVNjSfn33ebzw)
+
+[Swiss Ball Side Flexion - Level 2 - GymCalc.com - YouTube](https://youtu.be/68eJEt4NQqc?si=_sbeTFGs2b3DVm9t)
+
+[Swiss Ball Side Flexion - Level 3 - GymCalc.com - YouTube](https://youtu.be/-W02_G1f0aM?si=ERpJXiz8LvGJ7885)
+
+
+[Swiss Ball Side Flexion - Level 4 - GymCalc.com - YouTube](https://youtu.be/2VCOHVeRdKs?si=U5aowRV0FRbtSK2b)
+
+[Swiss Ball Side Flexion - Level 5 - GymCalc.com - YouTube](https://youtu.be/ltuv2fYMXqk?si=IkiMMxr0jMaj7n0P)
+
+[BICEPS - Lying Zottman Curls - YouTube](https://youtu.be/cnEcZiOeFO0?si=4nSqffNzqQyAvXBj)
+
+
+Standing
+[Spinal Waves](https://youtu.be/KCfh_wCssK8?si=QaERnrtYGrEVxAsZ)
+
+[Body Waves](https://youtu.be/kBFg1mgCe0A?si=VyoasKccy3rlSq5D)
+
+[Cross leg Lateral Flexion](https://youtu.be/HxZjsIYVPd4?si=8zxedkghLRZMA7ln)
+
+
+[Wall Assisted QL Stretch - YouTube](https://youtu.be/ZYkOmJZXFdQ?si=cQ23f2Il-1cjt4Tf)
 
 ## Core Stability & Rotation
 
