@@ -15,6 +15,14 @@ wedge heel elevated squats
 
 any exercises deficit like deficit  deadlift helps gets you into a deeper position and exploding out of it and increase range of motion but build to it
 
+
+Hips, core, and chest should move together like a solid pillar — no collapsing or sequencing.
+
+When descending into a squat, avoid letting your butt tuck under or round toward your legs at the bottom — this ‘butt wink’ can put stress on your lower back and increase the risk of injury. One common cause is limited ankle mobility. A practical way to address this is by elevating your heels using weight plates or squat wedges, which helps you stay more upright and maintain proper hip and spine alignment. Keep in mind this is a short term fix not a long term solution.
+
+Avoid squatting with running shoes and squat wider as well
+
+
 [LOW CABLE GOBLET SQUAT \| Exercise Demonstration Video and Guide - YouTube](https://youtu.be/f6eI0JI9AYA?si=TTKH4FrAivJYEyd0)
 
 
