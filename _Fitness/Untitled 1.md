@@ -3,6 +3,30 @@ sit with dumbbell extend leg your lunging on move a little to the outside placin
 
 bulgarian builds to pistol squat
 
+maybe use 2 plates instead of bench on bulg
+
+backward sled walk
+
+sled pull pancake 
+
+standing sled pull
+
+wedge heel elevated squats
+
+any exercises deficit like deficit  deadlift helps gets you into a deeper position and exploding out of it and increase range of motion but build to it
+
+[LOW CABLE GOBLET SQUAT \| Exercise Demonstration Video and Guide - YouTube](https://youtu.be/f6eI0JI9AYA?si=TTKH4FrAivJYEyd0)
+
+
+[Heel Elevated Trap Bar Squat - YouTube](https://youtu.be/3HJxxKAB3Jo?si=_qUqy3-nnXTozDWg)
+
+[How To: Barbell Back Squat (Heels Elevated) - YouTube](https://youtu.be/NCKyEUYvVqU?si=Pxgz8k1rh7PHMKiQ)
+
+[Hip Airplane - YouTube](https://youtu.be/2hIL15iGuNA?si=4F-c9pubcVK9mTze)
+
+
+use tib bar while on incline bench to practice [Nordic Hamstring Curl](https://youtu.be/PcxNRBnfBd0?si=_EnPiuwgF3Rx0uo4)
+
 [Felix Bar](https://youtu.be/mkRDoV83Y0M?si=BSPRPBericJza2p_) - good arm warm up
 
 [Elevated Smith Machine Lunge](https://youtu.be/Yp5O9Cz6Ajg?si=bFGCfbzNqt_JobTA)
@@ -12,6 +36,26 @@ bulgarian builds to pistol squat
 
 [Single Leg Cable Romanian Deadlift - YouTube](https://youtu.be/2M1Mikqf5lY?si=1Me7DqZvB5XL1Orm)
 
+helps build to pistol [Patrick Step - YouTube](https://youtu.be/jAbO12BipQU?si=oWN-xGlMG-rAokpl)
+
+
+pistol squat prep strengthing
+
+narrow squat
+deep squat
+bulgarian squat
+cossack squat
+box pistol squat standing from seated position on box or something
+essentric pistol squat practice lowewing on one leg
+hand to wall pistol squat 
+trx pistol squat
+leg on high box pistol squat starting in single leg squatting position then pushing up
+
+
+[How to PROPERLY Squat for Growth (4 Easy Steps) - YouTube](https://youtu.be/gcNh17Ckjgg?si=L0Lmos_bpSJcs9u1)
+
+
+[Banded Dumbbell Bench Press - YouTube](https://youtu.be/nzPvCtwkETM?si=ayLMQYM4NFk1FKbE)
 
 
 [Swiss Ball Side Flexion - Level 1 - GymCalc.com - YouTube](https://youtu.be/kFty8-wF69k?si=uAMaVNjSfn33ebzw)

@@ -390,21 +390,20 @@ Prioritize resistance bands for explosive phase they can be used for other phase
 ## Regimen
 > **Train intensity before volume**. Prioritize neural output early, then shift to fatigue-driven work. Can shift things depending how you feel
 
-| Day     | Session Type       | Options (Choose 1)               | Week One Phase                                      | Week Two Phase                                      | Best Order Of Operations  |
-| ------- | ------------------ | -------------------------------- | --------------------------------------------------- | --------------------------------------------------- | ------------------------- |
-| **Sun** | Gym                | Upper Body + Run + Balance Board | Pull *Strength*                                     | Push *Strength*                                     | **Glutes/Hamstrings**     |
-| **Mon** | MMA/Gym            | Full Body(**Experiment**) + Sled | **Explosive** Upper Push to *Strength* Lower        | **Explosive** Upper Pull to *Strength* Lower        | **Core**                  |
-| **Tue** | Gym or Rest        | Upper Body + Run + Balance Board | Pull ***Hypertrophy***                              | Push ***Hypertrophy***                              | **Scapular & Upper Back** |
-| **Wed** | MMA or Gym or Rest | Lower Body + Dead Hang           | ***Hypertrophy***                                   | ***Hypertrophy***                                   | **Lats/Traps**            |
-| **Thu** | Gym or Rest        |                                  |                                                     |                                                     | **Quads**                 |
-| **Fri** | MMA or Gym or Rest | Full Body(**Experiment**) + Sled | **Explosive** Lower to ***Hypertrophy*** Upper Push | **Explosive** Lower to ***Hypertrophy*** Upper Pull | **Chest/Delts**           |
-| **Sat** | MMA or Gym         | Lower Body + Dead Hang           | *Strength*                                          | *Strength*                                          | **Arms**                  |
+| Day      | Session Type       | Options (Choose 1)               | Week One Phase                                            | Week Two Phase                                          | Best Order Of Operations  |
+| -------- | ------------------ | -------------------------------- | --------------------------------------------------------- | ------------------------------------------------------- | ------------------------- |
+| **Sun**  | Gym                | Upper Body + Run + Balance Board | **Pull** *Strength*                                       | ***Push*** *Strength*                                   | **Glutes/Hamstrings**     |
+| **Mon**  | MMA/Gym            | Full Body(**Experiment**) + Sled | **Explosive** Upper ***Push*** to *Strength* Lower        | **Explosive** Upper **Pull** to *Strength* Lower        | **Core**                  |
+| **Tues** | MMA or Gym or Rest | Lower Body + Dead Hang           | ***Hypertrophy***                                         | ***Hypertrophy***                                       | **Scapular & Upper Back** |
+| **Wed**  | Gym or Rest        | Upper Body + Run + Balance Board | **Pull** ***Hypertrophy***                                | *Push* ***Hypertrophy***                                | **Lats/Traps**            |
+| **Thu**  | Gym or Rest        |                                  |                                                           |                                                         | **Quads**                 |
+| **Fri**  | MMA or Gym or Rest | Full Body(**Experiment**) + Sled | **Explosive** Lower to ***Hypertrophy*** Upper ***Push*** | **Explosive** Lower to ***Hypertrophy*** Upper **Pull** | **Chest/Delts**           |
+| **Sat**  | MMA or Gym         | Lower Body + Dead Hang           | *Strength*                                                | *Strength*                                              | **Arms**                  |
 
 #todo/BAU/Workout
 - [ ] Avoid being on phone affects performance
 - [ ] Do [[Grip Strength Training]]
 - [ ] Dead Hang at BK-MMA & Leg Day
-- [ ] Do more bodyweight exercises with weights 
 - [ ] Over time max 11 exercises per session
 - [ ] On pull up try holding position at the top holding it for 3 sec and same at the bottom.
 - [ ] Use [[Tower 200.pdf |Tower 200]] for practicing cable machine exercises the weight ranges from 25 to 45 lb.  
@@ -515,7 +514,7 @@ Chin ups higher priority alternate each quarter or even month. Try Burpee to Pul
 All leg cable excercise are done at a low angle.
 
 #### Session 1: Main Compound Squat & Lunge Patterns
-1. **Hack Squat** – 300lb
+1. **Hack Squat** – 300lb - if ankles begin to lift move feet up
 2. **Single Leg Press** – 180lb
 3. **Walking Barbell Lunge/Zercher Lunge** – 20lb
 4. Weighted [Elevated Lunge](https://youtu.be/OVFHK2Iev70?si=oiRNDNHznSrNP_RC) if your getting to 40lb to 60lb dumbbell in lunge switch to barbell
