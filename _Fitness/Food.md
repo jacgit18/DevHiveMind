@@ -30,6 +30,8 @@ Corn bread
 Himalayan salt with coconut water instead electro maybe
 
 
+
+
 ### Probiotics food source
 
 Look for brands that are healthy Bobby approved
@@ -50,6 +52,23 @@ Stay under $35 for the month for sources of probiotics which is the cost of supp
   
 
 Maybe Get Seven or four bottles of Kombucha assuming only using as a source of probiotics look into the math
+
+
+Getting probiotic might be more worth it especially when you compare prices
+
+  
+
+Kiefer or yogurt on average is 
+
+Per day: ~130 kcal + ~12.5g protein
+
+
+
+Price for the month would roughly be $48 and a probiotic is around that price or a little lower depending on what you get
+
+  
+
+proably do a middle ground of supplements and things like Kiefer, yogurt, kombucha
 
 ## **Budget Breakdown (Monthly)**
 
