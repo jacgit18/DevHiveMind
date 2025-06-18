@@ -13109,7 +13109,450 @@
       },
       "active": "5ca3ef619a4a1db5",
       "mtime": "2025-05-16T01:41:26-04:00"
+    },
+    "zxc": {
+      "main": {
+        "id": "5324373015726ba8",
+        "type": "split",
+        "children": [
+          {
+            "id": "4509724f8bf84da7",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "e7a7b303c61786dc",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Home Dashboard.md",
+                    "mode": "preview",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "Home Dashboard"
+                }
+              },
+              {
+                "id": "a100f0859df18da8",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "_Fitness/Priority Fitness.md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "Priority Fitness"
+                }
+              },
+              {
+                "id": "5aedff82c026e7f2",
+                "type": "leaf",
+                "state": {
+                  "type": "webviewer",
+                  "state": {
+                    "url": "https://www.youtube.com/watch?v=-4LVK1crLSw",
+                    "title": "The ULTIMATE Bulgarian Split Squat Tutorial - YouTube",
+                    "mode": "webview"
+                  },
+                  "icon": "globe-2",
+                  "title": "The ULTIMATE Bulgarian Split Squat Tutorial - YouTube"
+                }
+              },
+              {
+                "id": "e42f83d8eaa949cb",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "_Fitness/Gym/Plyometrics.md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "Plyometrics"
+                }
+              }
+            ],
+            "currentTab": 3
+          },
+          {
+            "id": "5587db087ba141e1",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "1ce558fc83a1c282",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "_Fitness/Untitled 1.md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "Untitled 1"
+                }
+              },
+              {
+                "id": "4d99e81b035966d2",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "_Fitness/Gym/Untitled.md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "Untitled"
+                }
+              },
+              {
+                "id": "f8736572b71d8996",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "_Fitness/Food.md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "Food"
+                }
+              },
+              {
+                "id": "835d512da0e19288",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Career/Companies Worked At/Capital One/Approach Commitment.md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "Approach Commitment"
+                }
+              }
+            ],
+            "currentTab": 1
+          }
+        ],
+        "direction": "vertical"
+      },
+      "left": {
+        "id": "25d07a4f8307e30a",
+        "type": "split",
+        "children": [
+          {
+            "id": "0ee18ba8f838b73c",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "62d2738c8ec9ae78",
+                "type": "leaf",
+                "state": {
+                  "type": "file-explorer",
+                  "state": {
+                    "sortOrder": "alphabetical",
+                    "autoReveal": false
+                  },
+                  "icon": "lucide-folder-closed",
+                  "title": "Files"
+                }
+              },
+              {
+                "id": "381a89071adb230b",
+                "type": "leaf",
+                "state": {
+                  "type": "search",
+                  "state": {
+                    "query": "on off",
+                    "matchingCase": false,
+                    "explainSearch": false,
+                    "collapseAll": false,
+                    "extraContext": false,
+                    "sortOrder": "alphabetical"
+                  },
+                  "icon": "lucide-search",
+                  "title": "Search"
+                }
+              },
+              {
+                "id": "e12d4e2fc2bb5ad2",
+                "type": "leaf",
+                "state": {
+                  "type": "bookmarks",
+                  "state": {},
+                  "icon": "lucide-bookmark",
+                  "title": "Bookmarks"
+                }
+              }
+            ]
+          }
+        ],
+        "direction": "horizontal",
+        "width": 466.5
+      },
+      "right": {
+        "id": "b5ea247522179402",
+        "type": "split",
+        "children": [
+          {
+            "id": "584aafd2742fea53",
+            "type": "tabs",
+            "dimension": 39.23611111111111,
+            "children": [
+              {
+                "id": "e794f1fda7c1a1f5",
+                "type": "leaf",
+                "state": {
+                  "type": "file-properties",
+                  "state": {
+                    "file": "Business Venture/Assets/Fin Todo.md"
+                  },
+                  "icon": "lucide-info",
+                  "title": "File properties for Fin Todo"
+                }
+              },
+              {
+                "id": "119408eca5171204",
+                "type": "leaf",
+                "state": {
+                  "type": "reminder-list",
+                  "state": {},
+                  "icon": "clock",
+                  "title": "Reminders"
+                }
+              },
+              {
+                "id": "7159a69de638fd57",
+                "type": "leaf",
+                "pinned": true,
+                "state": {
+                  "type": "podcast_player_view",
+                  "state": {},
+                  "pinned": true,
+                  "icon": "play-circle",
+                  "title": "Podcast Player"
+                }
+              },
+              {
+                "id": "72dca0273219d1ab",
+                "type": "leaf",
+                "pinned": true,
+                "state": {
+                  "type": "custom-frames-google-keep",
+                  "state": {},
+                  "pinned": true,
+                  "icon": "lucide-files",
+                  "title": "Google Keep"
+                }
+              }
+            ],
+            "currentTab": 3
+          },
+          {
+            "id": "d1235854646d74f7",
+            "type": "tabs",
+            "dimension": 27.638888888888893,
+            "children": [
+              {
+                "id": "442323dcd9dfef22",
+                "type": "leaf",
+                "pinned": true,
+                "state": {
+                  "type": "outline",
+                  "state": {
+                    "file": "Home Dashboard.md",
+                    "followCursor": false,
+                    "showSearch": false,
+                    "searchQuery": ""
+                  },
+                  "pinned": true,
+                  "icon": "lucide-list",
+                  "title": "Outline of Home Dashboard"
+                }
+              },
+              {
+                "id": "9ee71897ebb55942",
+                "type": "leaf",
+                "pinned": true,
+                "state": {
+                  "type": "side-panel-control-view",
+                  "state": {},
+                  "pinned": true,
+                  "icon": "viewIcon",
+                  "title": "Markdown-Autocomplete"
+                }
+              },
+              {
+                "id": "71a2a86b225196f6",
+                "type": "leaf",
+                "pinned": true,
+                "state": {
+                  "type": "backlink",
+                  "state": {
+                    "file": "Home Dashboard.md",
+                    "collapseAll": false,
+                    "extraContext": false,
+                    "sortOrder": "alphabetical",
+                    "showSearch": false,
+                    "searchQuery": "",
+                    "backlinkCollapsed": false,
+                    "unlinkedCollapsed": true
+                  },
+                  "pinned": true,
+                  "icon": "links-coming-in",
+                  "title": "Backlinks for Home Dashboard"
+                }
+              },
+              {
+                "id": "ccc14a9fa54b368e",
+                "type": "leaf",
+                "state": {
+                  "type": "git-view",
+                  "state": {},
+                  "icon": "git-pull-request",
+                  "title": "Source Control"
+                }
+              },
+              {
+                "id": "ac6ff17f4c3cbb25",
+                "type": "leaf",
+                "pinned": true,
+                "state": {
+                  "type": "outgoing-link",
+                  "state": {
+                    "file": "Home Dashboard.md",
+                    "linksCollapsed": false,
+                    "unlinkedCollapsed": true
+                  },
+                  "pinned": true,
+                  "icon": "links-going-out",
+                  "title": "Outgoing links from Home Dashboard"
+                }
+              }
+            ],
+            "currentTab": 3
+          },
+          {
+            "id": "cf5e2cd4f83cc97a",
+            "type": "tabs",
+            "dimension": 33.125,
+            "children": [
+              {
+                "id": "b3cfc2653a5cba01",
+                "type": "leaf",
+                "pinned": true,
+                "state": {
+                  "type": "todo",
+                  "state": {},
+                  "pinned": true,
+                  "icon": "checkmark",
+                  "title": "Todo List"
+                }
+              },
+              {
+                "id": "5493e04468ddac9b",
+                "type": "leaf",
+                "pinned": true,
+                "state": {
+                  "type": "all-properties",
+                  "state": {
+                    "sortOrder": "frequency",
+                    "showSearch": false,
+                    "searchQuery": ""
+                  },
+                  "pinned": true,
+                  "icon": "lucide-archive",
+                  "title": "All properties"
+                }
+              },
+              {
+                "id": "8c3a0e2d9aae24e2",
+                "type": "leaf",
+                "state": {
+                  "type": "tag",
+                  "state": {
+                    "sortOrder": "frequency",
+                    "useHierarchy": true,
+                    "showSearch": false,
+                    "searchQuery": ""
+                  },
+                  "icon": "lucide-tags",
+                  "title": "Tags"
+                }
+              },
+              {
+                "id": "32979ed8fe27c039",
+                "type": "leaf",
+                "state": {
+                  "type": "calendar",
+                  "state": {},
+                  "icon": "calendar-with-checkmark",
+                  "title": "Calendar"
+                }
+              },
+              {
+                "id": "d64fc540a9faff39",
+                "type": "leaf",
+                "state": {
+                  "type": "Strange New Worlds",
+                  "state": {},
+                  "icon": "file-digit",
+                  "title": "Strange New Worlds"
+                }
+              }
+            ],
+            "currentTab": 4
+          }
+        ],
+        "direction": "horizontal",
+        "width": 464.5
+      },
+      "left-ribbon": {
+        "hiddenItems": {
+          "obsidian-excalidraw-plugin:New drawing": false,
+          "obsidian-markdown-formatting-assistant-plugin:Open Markdown Formatting Assistant": false,
+          "obsidian-read-it-later:ReadItLater: Create from clipboard": false,
+          "homepage:Open homepage": false,
+          "obsidian-git:Open Git source control": false,
+          "switcher:Open quick switcher": false,
+          "graph:Open graph view": false,
+          "canvas:Create new canvas": false,
+          "daily-notes:Open today's daily note": false,
+          "templates:Insert template": false,
+          "command-palette:Open command palette": false,
+          "markdown-importer:Open format converter": false,
+          "audio-recorder:Start/stop recording": false,
+          "workspaces:Manage workspace layouts": false,
+          "templater-obsidian:Templater": false,
+          "obsidian-spaced-repetition:Review flashcards": false,
+          "obsidian-rich-links:Rich Links": false,
+          "darlal-switcher-plus:Open in Headings Mode": false,
+          "darlal-switcher-plus:Open Symbols for the active editor": false,
+          "obsidian-projects:Open projects": false,
+          "obsidian-kanban:Create new board": false,
+          "janitor:Janitor: scan vault": false,
+          "digitalgarden:Digital Garden Publication Center": false,
+          "obsidian-book-search-plugin:Create new book note": false,
+          "table-editor-obsidian:Advanced Tables Toolbar": false,
+          "obsidian-advanced-slides:Show Slide Preview": false,
+          "obsidian42-brat:BRAT": false,
+          "sheet-plus:Create excel file": false,
+          "mermaid-tools:Open Mermaid Toolbar": false,
+          "periodic-notes:Open today": false,
+          "card-board:CardBoard": false
+        }
+      },
+      "active": "e42f83d8eaa949cb",
+      "mtime": "2025-06-18T16:13:55-04:00"
     }
   },
-  "active": "mus"
+  "active": "zxc"
 }
