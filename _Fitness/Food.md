@@ -35,7 +35,6 @@ Himalayan salt with coconut water instead electro maybe
 Look for brands that are healthy Bobby approved
 
   
-
 Try Sauerkraut and kimchi
 
   
@@ -46,7 +45,7 @@ Get Kiefer and kombucha
 
   
 
-Stay under $35 for the month for sources of probiotics which is the cost of supplements that last a month
+Stay under $35 for the month for sources of probiotics which is the cost of supplements that last a month or stay under $21 for the month 
 
   
 

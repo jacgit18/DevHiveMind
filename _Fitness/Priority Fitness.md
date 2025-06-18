@@ -240,8 +240,7 @@ _~3–4 minutes total – choose a flow or 3–5 moves_
 - **Spinal Twists** - 30 sec
 - [[Lower#^ee779f |90/90 Transitions ]] – **8 reps**
 - Butterfly Hip Rocks → Butterfly Stretch – **8 rocks + 10s stretch**
-- Barbell [Seated Good Mornings](https://www.youtube.com/watch?v=cJWYiUkiWrE)
-- Dumbbell [Seated Good Morning](https://www.youtube.com/watch?v=RGcNDV8d0Wc)
+
 
 ##### **Grounded On Side**
 - **Side-Lying Leg Lifts** – Leg raises to warm up outer hips/glutes(Try standing version as well)
@@ -258,6 +257,8 @@ _~3–4 minutes total – choose a flow or 3–5 moves_
 ##### **Standing** - **10 reps Each Limb**
 - **[[Wrist Curl]]** - Do a few sets not as many as you would other exercises at home maybe in gym for specific variations. Also consider these [variations](https://www.youtube.com/watch?v=nvJ-1suJCTU). 
 - PVC Walk
+- Elevated Pigeon Stretch - On [incline bench](https://youtu.be/szFOKnVgGpQ?si=r0IMfaQKljbJeS6P) then progress to [flat bench](https://youtu.be/BmVEn3LfHcg?si=ZDSdN6h4TePiPIj8) (60–90 sec per side)
+- [Forward Fold Stretch](https://youtu.be/goN4rWbQUn4?si=pPni5D3dJWgLUboT)
 - ***Scapular Wall Slides*** – Slide arms up/down while back touches wall
 - ***Leg Swings*** – Front/back & side-to-side
 - ***Walking Lunges + Reach*** – Forward lunge + arms overhead
@@ -400,6 +401,7 @@ Prioritize resistance bands for explosive phase they can be used for other phase
 | **Sat** | MMA or Gym         | Lower Body + Dead Hang           | *Strength*                                          | *Strength*                                          | **Arms**                  |
 
 #todo/BAU/Workout
+- [ ] Avoid being on phone affects performance
 - [ ] Do [[Grip Strength Training]]
 - [ ] Dead Hang at BK-MMA & Leg Day
 - [ ] Do more bodyweight exercises with weights 
@@ -436,7 +438,7 @@ Weight ranges lowest explosive power weight to max strength weight.
 - **Barbell Clean Jerk Press** - 1 time a week. - 20lb 
 - **Sled** - twice a week push and pull. - 50lb
 ### Right to Bare Arms Program
-Allowed to practice each excercise max twice a week.
+Allowed to practice each excercise *here* max twice a week.
 #### **Session 1: Push Focus Ordered By Priority**
 1. **Landmine Z Press** - 10lb 
 2. **Single Arm Chest Press** - 40lb
@@ -464,11 +466,14 @@ Chin ups higher priority alternate each quarter or even month. Try Burpee to Pul
 5. **Super ROM Lateral Raise Wrist Curl** – 5lb
 6. **Rev Crunch** 
 7. **Kneeling Cable Crunch**(Top Angle) - 33lb 
-8. **Back Extension** - 15lb 
-9. **Pallof Press**(Wrist Height) - 30lb
-10. **Lateral Head Single-Arm Tricep Extension**(Top Angle) – 20lb
-11. **Single-Arm Behind-Back Cable Lateral Raise**(Low Angle) – 10lb (*Build to it*)
-12. **Cable Pancake Stretch**(Low An) - 49.5
+8. **Pallof Press**(Wrist Height) - 30lb
+9. **Lateral Head Single-Arm Tricep Extension**(Top Angle) – 20lb
+10. **Cable Pancake Stretch**(Low Angle) - 49.5
+11. **Back Extension** - 15lb - do consistently for a 2 weeks and try ft to single leg variation then maybe [rotating variation](https://youtu.be/KJwARxV9a6g?si=4C--YLWJnUcFaMmx) once doing consistent 4 sets 8 reps.
+
+*Build to*
+12. **Single-Arm Behind-Back Cable Lateral Raise**(Low Angle) – 10lb 
+
 
 *Best Pairing*
 - **Single-Leg RDL** + **Narrow-Grip Pull-Up/Chin-Up** + **Back Extension** 
@@ -496,23 +501,24 @@ Chin ups higher priority alternate each quarter or even month. Try Burpee to Pul
 6. **Rev Crunch** 
 7. **Kneeling Cable Crunch**(Top Angle)
 8. **Back Extension** 
-9. **Single-Arm Behind-Back Cable Lateral Raise**(Low Angle) – 
+9. **Single-Arm Behind-Back Cable Lateral Raise**(Low Angle) 
 
 *Best Pairing*
 - **Single Arm Chest Press** or **Dumbbell Floor Press**/**Incline Dumbbell Bench Press** + **Pallof Press** +  **Landmine Anti-Rotations**
 - **Landmine Single-Leg RDL** + **Dumbbell Floor Press**/**Incline Dumbbell Bench Press** + **Single-Arm Tricep Extension** + **Landmine Anti-Rotations** or **Pallof Press** + **Super ROM Lateral Raise Wrist Curl**
 - **Narrow-Grip Pull-Up/Chin-Up** + **Zottman Curl** + **Back Extension** + **Rev Crunch** or **Kneeling Cable Crunch**
 ### Leg Programming 
-All cable excercise 
+All leg cable excercise are done at a low angle.
 
 #### Session 1: Main Compound Squat & Lunge Patterns
 1. **Hack Squat** – 300lb
 2. **Single Leg Press** – 180lb
 3. **Walking Barbell Lunge/Zercher Lunge** – 20lb
-4. **Dumbbell Bulgarian Split Squat** - 20lb 
-5. **Kettlebell Sumo Squat** – 20lb 
-6. **Barbell/Kettlebell B-Squat** - 20lb
-7. **Band Single-Leg Barbell Squat** - 20lb
+4. Weighted [Elevated Lunge](https://youtu.be/OVFHK2Iev70?si=oiRNDNHznSrNP_RC) if your getting to 40lb to 60lb dumbbell in lunge switch to barbell
+5. **Dumbbell Bulgarian Split Squat**(Try [elevated](https://youtu.be/DXK-VbFE6ic?si=NHqOeitXD0h_YQsr) front leg variation) - 20lb 
+6. **Kettlebell Sumo Squat** – 20lb 
+7. **Barbell/Kettlebell B-Squat** - 20lb
+8. **Band Single-Leg Barbell Squat** - 20lb
 
 *Best Pairing*
 - **Hack Squat**  + **Dumbbell Bulgarian Split Squat**  + **Band Single-Leg Barbell Squat**

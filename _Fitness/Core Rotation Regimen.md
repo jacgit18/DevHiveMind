@@ -11,149 +11,30 @@ Relates:
 Peer Reviewed: 0
 dg-publish:
 ---
-Here's a **refined, structured fitness plan** based on your **core rotation and posterior chain goals**, assuming you're training **6 days a week**. This plan is designed to build **mobility, stability, and strength**, progressively moving from bodyweight to loaded variations, with optimal **exercise frequency** and **transition timing**.
-
----
-## Best Order of Exercises (Prioritized for Your Goal)
-
-Here’s a **smarter sequence** to train **mobility → activation → core → lateral work**, all in one workout, 2–3x per week.
-
----
-
 ### 🔥 Core Posterior Chain + QL Workout (45–60 min)
 
 #### 🔹 Warm-Up & Mobility (5–10 min)
 
-1. **Elevated Pigeon Stretch** – 1–2 min per side
-    
+- Barbell [Seated Good Mornings](https://www.youtube.com/watch?v=cJWYiUkiWrE)
+- Dumbbell [Seated Good Morning](https://www.youtube.com/watch?v=RGcNDV8d0Wc)
+
+[Lateral Flexion on Stability Ball](https://youtu.be/FrohQ--m7fs?si=Z4akKJnru0ut8S8X)
+
+
+sit with dumbbell extend leg your lunging on move a little to the outside placing dumbbells there to lunge from
+
 2. **Cat-Cow / Spinal Wave / Deep Squat Hold**
     
 
-#### 🔹 Posterior Chain Priming
-
-3. **Back Extensions** – 3x10–15
-    
-4. **Single-Leg Back Extensions** – 2x6–8 per leg
-    
-
-#### 🔹 Core Stability & Rotation
+## Core Stability & Rotation
 
 5. **Core Rotation on Back Extension Machine** – 2–3x10 per side
     
 6. **Jefferson Curl** (light) – 2x5–8 (1x/week is enough)
     
 
-#### 🔹 Lateral Chain Focus
-
-7. **Side Lateral QL Extensions** – 3x8–12
-    
-    - Start bodyweight → light dumbbell → heavier over time
 
 
-
-## 🧠 Goal
-
-- Develop strong rotational core, posterior chain, and hip mobility
-    
-- Improve unilateral strength and spinal control
-    
-- Gradual progression from bodyweight → free weights
-    
-
----
-
-## 🗓️ Weekly Split (6 Days)
-
-|Day|Focus|
-|---|---|
-|Mon|Posterior Chain + Core Rotation|
-|Tues|Lower Body Strength + Mobility|
-|Wed|Posterior Chain + Core Rotation|
-|Thurs|Rest or Light Cardio + Mobility|
-|Fri|Lower Body Strength + Rotation|
-|Sat|Posterior Chain + Core Rotation|
-|Sun|Rest|
-
----
-
-## 🔄 Exercise Progression & Frequency
-
-Each exercise is listed with:
-
-- Frequency per week
-    
-- Progression plan
-    
-- Transition trigger (when to level up)
-    
-- Free weight addition tips
-    
-
----
-
-### 1. 🔙 **Back Extensions**
-
-- **Frequency:** 2–3x/week
-    
-- **Phase 1:** Bodyweight (3x10–15)
-    
-- **Phase 2:** Hug a plate or dumbbell (3x8–12)
-    
-- **Phase 3:** Add barbell across upper back
-    
-- **Transition When:** 3x15 clean reps with bodyweight
-    
-
-✅ _Use back extension machine or glute-ham raise bench_
-
----
-
-### 2. 🧘 **Elevated Pigeon Stretch on Bench**
-
-- **Frequency:** Daily mobility warm-up or post-lift
-    
-- **Phase 1:** Incline bench
-    
-- **Phase 2:** Flat bench or floor
-    
-- **Hold:** 60–90 sec per side
-    
-- **Transition When:** You can rest fully on the leg with minimal tension
-    
-
-✅ _Add reach or torso rotation for active mobility_
-
----
-
-### 3. 🦵 **Elevated Bulgarian Split Squats**
-
-- **Frequency:** 2x/week
-    
-- **Phase 1:** Bodyweight (3x8–10 each side)
-    
-- **Phase 2:** Add dumbbells
-    
-- **Phase 3:** Add barbell or tempo (3–1–0)
-    
-- **Transition When:** Can do 3x10 each side with balance and control
-    
-
-✅ _Add a slight forward lean to engage glutes more_
-
----
-
-### 4. 🦵 **Single-Leg Back Extensions**
-
-- **Frequency:** 1–2x/week
-    
-- **Phase 1:** Bodyweight, hands across chest (2–3x8 each leg)
-    
-- **Phase 2:** Weighted plate or dumbbell
-    
-- **Transition When:** 3x8 smooth reps per side without twisting or jerking
-    
-
-✅ _Use controlled tempo for hamstring/glute isolation_
 
 ---
 
