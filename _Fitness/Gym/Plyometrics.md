@@ -34,7 +34,7 @@ dg-publish:
    - High knees, butt kicks, lateral skips(gallop) (2x20m each)
 
 2. **Plyometrics (Low Intensity)**  
-   - **Box Jumps** – 3x5 (controlled landing)  
+   - **[Box Jumps](https://youtu.be/BeqK8ksNC-E?si=egDA5gHf1YU0RlU1)** – 3x5 (controlled landing)  
    - **Squat Jumps** – 3x6 (pause at bottom)  
    - **Single-Leg Hops** – 2x5/leg (focus on stability)
 
