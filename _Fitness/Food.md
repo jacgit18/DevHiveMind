@@ -29,6 +29,29 @@ Corn bread
 
 Himalayan salt with coconut water instead electro maybe
 
+
+### Probiotics food source
+
+Look for brands that are healthy Bobby approved
+
+  
+
+Try Sauerkraut and kimchi
+
+  
+
+Get yogurt with probiotics unflavored add sweeteners after, 
+
+Get Kiefer and kombucha
+
+  
+
+Stay under $35 for the month for sources of probiotics which is the cost of supplements that last a month
+
+  
+
+Maybe Get Seven or four bottles of Kombucha assuming only using as a source of probiotics look into the math
+
 ## **Budget Breakdown (Monthly)**
 
 | Category                                  |    Cost     | Notes                                           |

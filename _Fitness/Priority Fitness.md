@@ -440,21 +440,21 @@ Allowed to practice each excercise max twice a week.
 #### **Session 1: Push Focus Ordered By Priority**
 1. **Landmine Z Press** - 10lb 
 2. **Single Arm Chest Press** - 40lb
-3. **Landmine Anti Rotations** - 10lb
-4. **Dumbbell Floor Press** or **Incline Dumbbell Bench Press** – 17.5lb
-5. **Landmine Rotational Press** - 10lb
-6. **Arnold Press** – 20lb
-7. **Overhead TrapBar Press** - 50lb
-8. **Pallof Press** - 30lb
-9. **Landmine Russian Twist** - 10lb
-10. **Single-Arm Tricep Extension** – 20lb
-11. **6-Way Shoulder Raise** – 5lb
-12. **Single-Arm Behind-Back Cable Lateral Raise** – 10lb (*Build to it*)
+3. **Dumbbell Floor Press** or **Incline Dumbbell Bench Press** – 17.5lb
+4. **Arnold Press** – 20lb
+5. **Overhead TrapBar Press** - 50lb
+6. **6-Way Shoulder Raise** – 5lb
+7. **Landmine Anti Rotations** - 10lb
+
+*Build to*
+8. **Landmine Russian Twist** - 10lb
+9. **Landmine Rotational Press** - 10lb
 
 *Best Pairing*
-- **Landmine Z Press** + **Single-Arm Chest Press** + **Landmine Anti-Rotations** + **Single-Arm Tricep Extension
-- **Arnold Press** + **Landmine Russian Twist** + **6-Way Shoulder Raise** + **Single-Arm Behind-Back Cable Lateral Raise** 
-- **Incline Dumbbell Bench/Floor Press** + **Landmine Rotational Press** + **Overhead TrapBar Press** + **Pallof Press**
+- **Landmine Z Press** + **Single-Arm Chest Press** + **Landmine Anti-Rotations** 
+- **Arnold Press** + **Landmine Russian Twist** + **6-Way Shoulder Raise** 
+- **Incline Dumbbell Bench/Floor Press** + **Landmine Rotational Press** + **Overhead TrapBar Press** 
+
 #### **Session 2: Pull Focus**
 Chin ups higher priority alternate each quarter or even month. Try Burpee to Pull Up. 
 1. **Band/Barbell/Dumbbell/Landmine Single Leg RDL** - 10lb to 20lb
@@ -463,13 +463,19 @@ Chin ups higher priority alternate each quarter or even month. Try Burpee to Pul
 4. **Zottman Curl** – 15lb
 5. **Super ROM Lateral Raise Wrist Curl** – 5lb
 6. **Rev Crunch** 
-7. **Kneeling Cable Crunch** - 33lb
+7. **Kneeling Cable Crunch**(Top Angle) - 33lb 
 8. **Back Extension** - 15lb 
+9. **Pallof Press**(Wrist Height) - 30lb
+10. **Lateral Head Single-Arm Tricep Extension**(Top Angle) – 20lb
+11. **Single-Arm Behind-Back Cable Lateral Raise**(Low Angle) – 10lb (*Build to it*)
+12. **Cable Pancake Stretch**(Low An) - 49.5
 
 *Best Pairing*
 - **Single-Leg RDL** + **Narrow-Grip Pull-Up/Chin-Up** + **Back Extension** 
 - **Zottman Curl** + **Super ROM Lateral Raise Wrist Curl**  + **Kneeling Cable Crunch** 
 - **Narrow-Grip Pull-Up/Chin-Up** + **Super ROM Lateral Raise Wrist Curl** + **Kneeling Cable Crunch** 
+- **Narrow-Grip Pull-Up/Chin-Up** + **Pallof Press** + **Reverse Crunch**  
+- **Lateral Head Single-Arm Tricep Extension** + **Single-Arm Behind-Back Cable Lateral Raise** + **Cable Pancake Stretch**  
 
 > Alternate **Pull-Up and Chin-Up** weekly or in different sessions to avoid elbow tendinitis or biceps overuse. Don’t pair **Zottman Curls + Chin-Ups** in the same day too often—they both heavily load the **biceps tendon**.
 
@@ -478,25 +484,26 @@ Chin ups higher priority alternate each quarter or even month. Try Burpee to Pul
 ##### **Push:**
 1. **Landmine Anti Rotations** 
 2. **Single Arm Chest Press** or **Dumbbell Floor Press**/**Incline Dumbbell Bench Press** 
-3. **Single-Arm Tricep Extension** 
-4. **Single-Arm Behind-Back Cable Lateral Raise** 
-5. **Landmine Rotational Press** 
+3. **Lateral Head Single-Arm Tricep Extension**(Top Angle)
+4. **Landmine Rotational Press** 
 
 ##### **Pull:**
 1. **Narrow-Grip Pull-Up/Chin-Up**
 2. **Zottman Curl**
 3. **Super ROM Lateral Raise Wrist Curl** 
 4. **Landmine Single-Leg RDL**
-5. **Pallof Press** 
+5. **Pallof Press**(Wrist Height) 
 6. **Rev Crunch** 
-7. **Kneeling Cable Crunch**
+7. **Kneeling Cable Crunch**(Top Angle)
 8. **Back Extension** 
+9. **Single-Arm Behind-Back Cable Lateral Raise**(Low Angle) – 
 
 *Best Pairing*
 - **Single Arm Chest Press** or **Dumbbell Floor Press**/**Incline Dumbbell Bench Press** + **Pallof Press** +  **Landmine Anti-Rotations**
 - **Landmine Single-Leg RDL** + **Dumbbell Floor Press**/**Incline Dumbbell Bench Press** + **Single-Arm Tricep Extension** + **Landmine Anti-Rotations** or **Pallof Press** + **Super ROM Lateral Raise Wrist Curl**
 - **Narrow-Grip Pull-Up/Chin-Up** + **Zottman Curl** + **Back Extension** + **Rev Crunch** or **Kneeling Cable Crunch**
 ### Leg Programming 
+All cable excercise 
 
 #### Session 1: Main Compound Squat & Lunge Patterns
 1. **Hack Squat** – 300lb
@@ -514,7 +521,7 @@ Chin ups higher priority alternate each quarter or even month. Try Burpee to Pul
 - **B-Squat** + **Walking Barbell/Zercher Lunge** + **Band Single-Leg Barbell Squat** 
 
 #### **Session 2: Hinge + Posterior Chain (Glutes, Hamstrings, Core)**
-1. **Cable Pull Through** – 33lb
+1. **Cable Pull Through**(Lo – 33lb
 2. **Cable Hip Extension** – 50lb 
 3. **Hip Thrust(single/dual)** - 90lb to 130lb 
 4. **Tib Bar Raise** – 5lb 
