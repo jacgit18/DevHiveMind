@@ -115,7 +115,7 @@ Pancake
 pigeon
 Middle split
 
-
+add band to hip thrust 
 
 
 connects upper lower body for bjj keep core engage 
@@ -125,6 +125,12 @@ dead bug extended foot alternating height of foot to the ground
 [Best BJJ Strength Training Exercises 6: The 'Dead Bug' Core Exercise - YouTube](https://youtu.be/M14fmjvDXMo?si=KpG6WH6nQ5Qdl8Bm)
 
 
+[Base Rows](https://youtu.be/Qmw9TKnQ9NY?si=gNe_2K45P71UKz5y)
+
+lean forward a little on lunges keeping neutral spine specifically dummbell to simulate shooting a shot 
+
+
+[Best BJJ Strength Training Exercises 3: The Modified Split Squat - YouTube](https://youtu.be/DfGu48vMmlU?si=DbDYi5Wq3JKopM3P)
 
 ## Core Stability & Rotation
 
