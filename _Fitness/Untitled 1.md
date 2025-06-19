@@ -96,6 +96,36 @@ Standing
 
 [Wall Assisted QL Stretch - YouTube](https://youtu.be/ZYkOmJZXFdQ?si=cQ23f2Il-1cjt4Tf)
 
+
+Full body days will be reserved for cycling different exercise modalities like plyometrics resistance calstetics you name it
+
+  
+
+Considered a plyometric week each month
+
+  
+Follow [this](https://youtu.be/hsNvqUmCAAo?si=SbGmouCgXsZ44_tJ)
+Practice middle split
+
+Static end stretch 4 days at home or gym or both 30sec each
+
+forward Fold stretch
+Butterfly
+Pancake
+pigeon
+Middle split
+
+
+
+
+connects upper lower body for bjj keep core engage 
+dead bug heal tap 
+dead bug extended foot alternating height of foot to the ground 
+
+[Best BJJ Strength Training Exercises 6: The 'Dead Bug' Core Exercise - YouTube](https://youtu.be/M14fmjvDXMo?si=KpG6WH6nQ5Qdl8Bm)
+
+
+
 ## Core Stability & Rotation
 
 ### 5. 🧎‍♂️ **Good Mornings**
