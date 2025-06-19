@@ -11,33 +11,6 @@ Relates:
 Peer Reviewed: 0
 dg-publish:
 ---
-Since you're training for **martial arts** (speed, power, agility) while also **weight training** (strength/mass), integrating **calisthenics and plyometrics** strategically can enhance your performance. Here’s how to cycle them into your regimen for maximum benefit:
-
-  
-
----
-
-  
-
-### **1. Current Baseline (Pull-Ups + Stretching) → What to Add Next**  
-
-#### **Phase 1: Foundational Strength (2–4 Weeks)**  
-
-**Goal**: Build strength and control to prep for plyometrics and advanced calisthenics.  
-
-- **Add These Movements**:  
-
-  - **Push-Ups (Variations)**: Archer push-ups or weighted push-ups for upper-body balance.  
-
-  - **Dips**: For triceps/shoulder stability (use parallel bars or rings).  
-
-  - **Pistol Squats (or Step-Ups)**: Unilateral leg strength to complement weight training.  
-
-  - **Hanging Leg Raises**: Core strength for kicks/grappling.  
-
-  
-
-**Frequency**: 2–3x/week (post-weight training or on off days).  
 
   
 

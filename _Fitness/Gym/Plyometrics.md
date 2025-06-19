@@ -13,11 +13,11 @@ dg-publish:
 ---
 ### **Program Structure**
 
-| **Phase**     | **Duration** | **Primary Focus**           | **Plyometric Emphasis**           | **Hypertrophy Integration**           |
-|---------------|--------------|------------------------------|-----------------------------------|---------------------------------------|
-| **Phase 1**   | Weeks 1–4     | **Foundational Power**       | Low-intensity plyos + technique   | Moderate volume (8–12 reps)           |
-| **Phase 2**   | Weeks 5–8     | **Reactive Strength**        | High-intensity plyos (SSC focus)  | Strength-focused (5–8 reps)           |
-| **Phase 3**   | Weeks 9–12    | **Peak Power + Mass**        | Sport-specific explosiveness      | High volume (hypertrophy priority)    |
+| Phase       | Duration   | **Primary Focus**      | **Plyometric Emphasis**          | **Hypertrophy Integration**        |
+| ----------- | ---------- | ---------------------- | -------------------------------- | ---------------------------------- |
+| **Phase 1** | Weeks 1–4  | **Foundational Power** | Low-intensity plyos + technique  | Moderate volume (8–12 reps)        |
+| **Phase 2** | Weeks 5–8  | **Reactive Strength**  | High-intensity plyos (SSC focus) | Strength-focused (5–8 reps)        |
+| **Phase 3** | Weeks 9–12 | **Peak Power + Mass**  | Sport-specific explosiveness     | High volume (hypertrophy priority) |
 
 ---
 
