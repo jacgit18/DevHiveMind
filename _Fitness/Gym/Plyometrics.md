@@ -13,7 +13,7 @@ dg-publish:
 ---
 ### **Program Structure**
 
-| Phase       | Duration   | **Primary Focus**      | **Plyometric Emphasis**          | **Hypertrophy Integration**        |
+| Phase       | Duration   | Primary Focus          | Plyometric Emphasis              | Hypertrophy Integration            |
 | ----------- | ---------- | ---------------------- | -------------------------------- | ---------------------------------- |
 | **Phase 1** | Weeks 1–4  | **Foundational Power** | Low-intensity plyos + technique  | Moderate volume (8–12 reps)        |
 | **Phase 2** | Weeks 5–8  | **Reactive Strength**  | High-intensity plyos (SSC focus) | Strength-focused (5–8 reps)        |
@@ -75,9 +75,9 @@ dg-publish:
 
 #### **Sample Power/Hypertrophy Split**
 
-| **Day**     | **Focus**               | **Plyo/Explosive Element**      | **Hypertrophy Work**                    |
-|-------------|--------------------------|----------------------------------|-----------------------------------------|
-| **Day 1**   | Lower Power              | **Weighted Jumps** (4x4)         | Front Squats 4x6                         |
-| **Day 2**   | Upper Hypertrophy        | *None*                           | Bench 4x8, Rows 4x10                     |
-| **Day 3**   | Full-Body Explosive      | **Med Ball Throws** (3x6)        | Clean Pulls 3x5                          |
-| **Day 4**   | Lower Hypertrophy        | *None*                           | Leg Press 4x12, Ham Curls 4x10          |
+| Day       | Focus               | Plyo/Explosive Element    | Hypertrophy Work               |
+| --------- | ------------------- | ------------------------- | ------------------------------ |
+| **Day 1** | Lower Power         | **Weighted Jumps** (4x4)  | Front Squats 4x6               |
+| **Day 2** | Upper Hypertrophy   | *None*                    | Bench 4x8, Rows 4x10           |
+| **Day 3** | Full-Body Explosive | **Med Ball Throws** (3x6) | Clean Pulls 3x5                |
+| **Day 4** | Lower Hypertrophy   | *None*                    | Leg Press 4x12, Ham Curls 4x10 |
