@@ -37,6 +37,7 @@ dg-publish:
    - **[Box Jumps](https://youtu.be/BeqK8ksNC-E?si=egDA5gHf1YU0RlU1)** – 3x5 (controlled landing)  
    - **Squat Jumps** – 3x6 (pause at bottom)  
    - **Single-Leg Hops** – 2x5/leg (focus on stability)
+   - [Pogo Jumps - YouTube](https://youtu.be/iU-TKr4YesM?si=--xrqvN2fMHZOnea)
 
 3. **Hypertrophy Option (Post-Plyo)**  
    - **Bulgarian Split Squats** – 3x10/leg  
@@ -81,3 +82,39 @@ dg-publish:
 | **Day 2** | Upper Hypertrophy   | *None*                    | Bench 4x8, Rows 4x10           |
 | **Day 3** | Full-Body Explosive | **Med Ball Throws** (3x6) | Clean Pulls 3x5                |
 | **Day 4** | Lower Hypertrophy   | *None*                    | Leg Press 4x12, Ham Curls 4x10 |
+
+use explosive sets and reps 3x10
+
+
+**Day 1 – Jump Mechanics + Vertical Focus**
+
+- Dynamic Warm-up
+    
+- [Depth Jumps](https://youtu.be/AzPJZHOmGEg?si=XtatqKBQg9eL9Yli)
+    
+- Tuck Jumps
+    
+- Pogo Hops
+    
+- Split Squat Jumps
+    
+- (Optional) Trap Bar Deadlifts
+    
+- Cooldown
+    
+
+**Day 2 – Horizontal Power + Unilateral Focus**
+
+- Warm-up
+    
+- Broad Jumps
+    
+- Single-Leg Bounds
+    
+- Lateral Skater Hops
+    
+- Kneeling Jumps
+    
+- (Optional) Bulgarian Split Squats
+    
+- Cooldown
