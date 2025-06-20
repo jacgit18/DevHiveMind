@@ -136,26 +136,6 @@ lean forward a little on lunges keeping neutral spine specifically dummbell to s
 
 [Best BJJ Strength Training Exercises 3: The Modified Split Squat - YouTube](https://youtu.be/DfGu48vMmlU?si=DbDYi5Wq3JKopM3P)
 
-## Core Stability & Rotation
-
-### 5. 🧎‍♂️ **Good Mornings**
-
-
-- Barbell [Seated Good Mornings](https://www.youtube.com/watch?v=cJWYiUkiWrE)
-- Dumbbell [Seated Good Morning](https://www.youtube.com/watch?v=RGcNDV8d0Wc)
-
-- **Frequency:** 1–2x/week (replace Romanian Deadlifts)
-    
-- **Phase 1:** Bodyweight or light bar (PVC or empty barbell)
-    
-- **Phase 2:** Add barbell gradually (start with 45–65 lbs)
-    
-- **Transition When:** 3x10 with flat back and hip hinge control
-    
-
-✅ _Brace core like you’re doing a plank during reps_
-
----
 
 
 
@@ -192,7 +172,7 @@ Preparing your knees for **track bar jumps** (or any plyometric/explosive jumpin
 ### **Prehab & Strengthening Exercises for Knee Stability**  
 
 *(Do these 2–3x/week as part of your warm-up or strength routine.)*  
-C
+
 
 #### **2. Knee & Tendon Resilience**  
 
