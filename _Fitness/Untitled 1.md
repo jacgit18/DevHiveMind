@@ -162,7 +162,7 @@ do this but start push up position and go to seated position not as much holding
 
 [Tuck Jump to L Sit - YouTube](https://youtu.be/vnr7epVV6YE?si=IZJNc7a61GR9Tloo)
 
-
+13. **[Good Mornings](https://youtu.be/dEJ0FTm-CEk?si=LAPsPziQZQNGBvph)**
 
 
 Preparing your knees for **track bar jumps** (or any plyometric/explosive jumping) requires a mix of **strength, stability, mobility, and proper movement mechanics**. Since track bar jumps (like hurdles or box jumps) involve high-impact landings, you need to bulletproof your knees to prevent injury.  
