@@ -162,4 +162,20 @@ lean forward a little on lunges keeping neutral spine specifically dummbell to s
 - **Phase 2:** Add more weight or increase reps (up to 20–25 lbs over time)
     
 - **Transition When:** Full range with control and no lower back discomfort
-    
+
+
+
+Use plyometrics Hops and skips if you are in a hurry for runs if you can't stretch
+
+  
+
+Calf raise on steps
+
+  
+
+Also on toe calf raises leaning against something like bed
+
+
+
+
+[14 Calisthenics Exercises on Gymnastics Rings - for every Level](https://www.gornation.com/blogs/news/exercises-gymnastics-rings)
