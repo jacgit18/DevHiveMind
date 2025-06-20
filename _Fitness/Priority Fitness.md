@@ -475,7 +475,7 @@ Chin ups higher priority alternate each quarter or even month. Try Burpee to Pul
 11. **Side Lateral QL Extension** - 15lb - same thing after building up from single leg back extension and doing this consistently then do [rotating variation](https://youtu.be/KJwARxV9a6g?si=4C--YLWJnUcFaMmx) once doing consistent 4 sets 8 reps.
 	- Besides doing on back extension machine can do [Lateral Flexion on Stability Ball](https://youtu.be/FrohQ--m7fs?si=Z4akKJnru0ut8S8X)
 12. **Single-Arm Behind-Back Cable Lateral Raise**(Low Angle) – 10lb
-13.  **Good Mornings**
+13. **Good Mornings**
 14. **Jefferson Curl**(Try upstairs) - 20lb
 
 
