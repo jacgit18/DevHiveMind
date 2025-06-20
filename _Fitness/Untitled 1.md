@@ -103,6 +103,9 @@ Full body days will be reserved for cycling different exercise modalities like p
 
 Considered a plyometric week each month
 
+- **Isometric Holds** (e.g., Wall Sit) – Builds endurance in the quads and knees.  
+
+
   
 Follow [this](https://youtu.be/hsNvqUmCAAo?si=SbGmouCgXsZ44_tJ)
 Practice middle split
@@ -187,3 +190,27 @@ tie resistance bands to leg practice kicks to improve speed
 do this but start push up position and go to seated position not as much holding
 
 [Tuck Jump to L Sit - YouTube](https://youtu.be/vnr7epVV6YE?si=IZJNc7a61GR9Tloo)
+
+
+
+
+Preparing your knees for **track bar jumps** (or any plyometric/explosive jumping) requires a mix of **strength, stability, mobility, and proper movement mechanics**. Since track bar jumps (like hurdles or box jumps) involve high-impact landings, you need to bulletproof your knees to prevent injury.  
+
+  
+
+### **Prehab & Strengthening Exercises for Knee Stability**  
+
+*(Do these 2–3x/week as part of your warm-up or strength routine.)*  
+C
+
+#### **2. Knee & Tendon Resilience**  
+
+- **Spanish Squats** (with band resistance) – Reduces patellar stress while strengthening quads.  
+
+#### **4. Mobility & Injury Prevention**  
+
+- **Couch Stretch** – Improves quad/hip flexibility for better landing mechanics.  
+
+- **Band-Resisted Terminal Knee Extensions** – Strengthens the VMO (inner quad) to stabilize the knee.  
+
+
