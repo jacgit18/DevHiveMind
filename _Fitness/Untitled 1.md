@@ -182,3 +182,8 @@ Also on toe calf raises leaning against something like bed
 
 
 tie resistance bands to leg practice kicks to improve speed
+
+
+do this but start push up position and go to seated position not as much holding
+
+[Tuck Jump to L Sit - YouTube](https://youtu.be/vnr7epVV6YE?si=IZJNc7a61GR9Tloo)
