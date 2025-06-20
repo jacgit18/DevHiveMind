@@ -124,6 +124,7 @@ add band to hip thrust
 connects upper lower body for bjj keep core engage 
 dead bug heal tap 
 dead bug extended foot alternating height of foot to the ground 
+cat cow
 
 [Best BJJ Strength Training Exercises 6: The 'Dead Bug' Core Exercise - YouTube](https://youtu.be/M14fmjvDXMo?si=KpG6WH6nQ5Qdl8Bm)
 
@@ -155,16 +156,6 @@ lean forward a little on lunges keeping neutral spine specifically dummbell to s
 ✅ _Brace core like you’re doing a plank during reps_
 
 ---
-
-### 6. 🧘 **Jefferson Curl**
-
-- **Frequency:** 1–2x/week (mobilization + spinal strength)
-    
-- **Phase 1:** Use 5–10 lb dumbbell, slow descent (3x5)
-    
-- **Phase 2:** Add more weight or increase reps (up to 20–25 lbs over time)
-    
-- **Transition When:** Full range with control and no lower back discomfort
 
 
 
