@@ -179,3 +179,6 @@ Also on toe calf raises leaning against something like bed
 
 
 [14 Calisthenics Exercises on Gymnastics Rings - for every Level](https://www.gornation.com/blogs/news/exercises-gymnastics-rings)
+
+
+tie resistance bands to leg practice kicks to improve speed
