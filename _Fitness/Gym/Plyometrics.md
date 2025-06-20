@@ -38,6 +38,7 @@ dg-publish:
    - **Squat Jumps** – 3x6 (pause at bottom)  
    - **Single-Leg Hops** – 2x5/leg (focus on stability)
    - [Pogo Jumps - YouTube](https://youtu.be/iU-TKr4YesM?si=--xrqvN2fMHZOnea)
+   - **Depth Drops → Broad Jumps** (3x5): For horizontal explosiveness.  
 
 3. **Hypertrophy Option (Post-Plyo)**  
    - **Bulgarian Split Squats** – 3x10/leg  
@@ -66,6 +67,28 @@ dg-publish:
    - **Trap Bar Jumps** (20–30% 1RM) – 3x5
 
 ---
+
+
+### **Phase 3: Advanced Calisthenics (Ongoing)**  
+
+**Goal**: Mastery for functional strength and injury resilience.  
+
+- **Skill-Based Additions**:  
+
+  - **Muscle-Ups** (transition from explosive pull-ups).  
+
+  - **Front Lever Progressions** (for core/back strength).  
+
+  - **Handstand Push-Ups** (shoulder stability/striking power).  
+
+  
+
+**Frequency**: 2x/week (skill work post-training or on mobility days).  
+
+  
+
+
+
 
 ### **Phase 3: Peak Power + Mass (Weeks 9–12)**
 
