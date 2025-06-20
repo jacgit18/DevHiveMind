@@ -393,11 +393,11 @@ Prioritize resistance bands for explosive phase they can be used for other phase
 | Day      | Session Type       | Options (Choose 1)               | Week One Phase                                            | Week Two Phase                                          | Best Order Of Operations  |
 | -------- | ------------------ | -------------------------------- | --------------------------------------------------------- | ------------------------------------------------------- | ------------------------- |
 | **Sun**  | Gym                | Upper Body + Run + Balance Board | **Pull** *Strength*                                       | ***Push*** *Strength*                                   | **Glutes/Hamstrings**     |
-| **Mon**  | MMA/Gym            | Full Body(**Experiment**) + Sled | **Explosive** Upper ***Push*** to *Strength* Lower        | **Explosive** Upper **Pull** to *Strength* Lower        | **Core**                  |
+| **Mon**  | MMA/Gym            | Full Body + Sled                 | **Explosive** Upper ***Push*** to *Strength* Lower        | **Explosive** Upper **Pull** to *Strength* Lower        | **Core**                  |
 | **Tues** | MMA or Gym or Rest | Lower Body + Dead Hang           | ***Hypertrophy***                                         | ***Hypertrophy***                                       | **Scapular & Upper Back** |
 | **Wed**  | Gym or Rest        | Upper Body + Run + Balance Board | **Pull** ***Hypertrophy***                                | *Push* ***Hypertrophy***                                | **Lats/Traps**            |
-| **Thu**  | Gym or Rest        |                                  |                                                           |                                                         | **Quads**                 |
-| **Fri**  | MMA or Gym or Rest | Full Body(**Experiment**) + Sled | **Explosive** Lower to ***Hypertrophy*** Upper ***Push*** | **Explosive** Lower to ***Hypertrophy*** Upper **Pull** | **Chest/Delts**           |
+| **Thu**  | Gym or Rest        | Random **Experiment**            | Random **Experiment**                                     | Random **Experiment**                                   | **Quads**                 |
+| **Fri**  | MMA or Gym or Rest | Full Body + Sled                 | **Explosive** Lower to ***Hypertrophy*** Upper ***Push*** | **Explosive** Lower to ***Hypertrophy*** Upper **Pull** | **Chest/Delts**           |
 | **Sat**  | MMA or Gym         | Lower Body + Dead Hang           | *Strength*                                                | *Strength*                                              | **Arms**                  |
 
 #todo/BAU/Workout
