@@ -165,23 +165,18 @@ do this but start push up position and go to seated position not as much holding
 13. **[Good Mornings](https://youtu.be/dEJ0FTm-CEk?si=LAPsPziQZQNGBvph)**
 
 
-Preparing your knees for **track bar jumps** (or any plyometric/explosive jumping) requires a mix of **strength, stability, mobility, and proper movement mechanics**. Since track bar jumps (like hurdles or box jumps) involve high-impact landings, you need to bulletproof your knees to prevent injury.  
-
-  
-
-### **Prehab & Strengthening Exercises for Knee Stability**  
-
-*(Do these 2–3x/week as part of your warm-up or strength routine.)*  
 
 
-#### **2. Knee & Tendon Resilience**  
-
-- **Spanish Squats** (with band resistance) – Reduces patellar stress while strengthening quads.  
-
-#### **4. Mobility & Injury Prevention**  
-
-- **Couch Stretch** – Improves quad/hip flexibility for better landing mechanics.  
-
-- **Band-Resisted Terminal Knee Extensions** – Strengthens the VMO (inner quad) to stabilize the knee.  
 
 
+
+- **[Couch Stretch](https://youtu.be/Fg-lwNBzVV8?si=dVeSmrUB9MDLOurz)** – Improves quad/hip flexibility for better landing mechanics.  
+
+
+[Lateral Bound to Box Jump - YouTube](https://youtu.be/0rVHnVFBliY?si=2oUKjvjmW2vcRkcJ)
+
+
+[Cable Lateral Walk - YouTube](https://youtu.be/nw8NjG2YOLY?si=KAo4G6B3_5Av1s_t)
+
+
+[Lateral Sled Drag - YouTube](https://youtu.be/rGtYmX2aeAA?si=PnniyFsIluLeViKa)
