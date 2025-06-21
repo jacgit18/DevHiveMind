@@ -180,3 +180,9 @@ do this but start push up position and go to seated position not as much holding
 
 
 [Lateral Sled Drag - YouTube](https://youtu.be/rGtYmX2aeAA?si=PnniyFsIluLeViKa)
+
+
+
+Kettlebell Swing
+
+[Kettlebell Manmaker](https://youtu.be/P4BIVAgJbZY?si=_gnVpDS6HX7WgacW)
