@@ -1,3 +1,5 @@
+Zercher Squat off the rack
+
 
 sit with dumbbell extend leg your lunging on move a little to the outside placing dumbbells there to lunge from
 
@@ -172,7 +174,7 @@ do this but start push up position and go to seated position not as much holding
 
 
 
-[Lateral Bound to Box Jump - YouTube](https://youtu.be/0rVHnVFBliY?si=2oUKjvjmW2vcRkcJ)
+
 
 
 [Cable Lateral Walk - YouTube](https://youtu.be/nw8NjG2YOLY?si=KAo4G6B3_5Av1s_t)
