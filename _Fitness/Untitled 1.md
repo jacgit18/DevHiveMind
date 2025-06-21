@@ -170,7 +170,6 @@ do this but start push up position and go to seated position not as much holding
 
 
 
-- **[Couch Stretch](https://youtu.be/Fg-lwNBzVV8?si=dVeSmrUB9MDLOurz)** – Improves quad/hip flexibility for better landing mechanics.  
 
 
 [Lateral Bound to Box Jump - YouTube](https://youtu.be/0rVHnVFBliY?si=2oUKjvjmW2vcRkcJ)
@@ -185,4 +184,25 @@ do this but start push up position and go to seated position not as much holding
 
 Kettlebell Swing
 
-[Kettlebell Manmaker](https://youtu.be/P4BIVAgJbZY?si=_gnVpDS6HX7WgacW)
+[Dumbbell Man Maker](https://youtu.be/rXjJ46zoQrM?si=XtGPVO8zeVQeapj6)(Easier)
+[Kettlebell Man Maker](https://youtu.be/P4BIVAgJbZY?si=_gnVpDS6HX7WgacW)(Harder)
+
+
+
+
+
+[Half Kneeling Thoracic Spine Rotation with a Foam Roller](https://youtu.be/xkiQPLWeLZo?si=tUY19TzqQ5pJxqdi)
+
+[Half Kneeling Thoracic Windmill (Open) - YouTube](https://youtu.be/pFqBNPIhNtA?si=Vgvf_AI_JRIaTTsM)
+
+
+[Thoracic Seated Rotation + Side Flexion - YouTube](https://youtu.be/-Mpiy5qa8B8?si=F0Kb_DUluXDODs4L)
+
+
+[Foam Roller Thoracic Extension - YouTube](https://youtu.be/9Y11Kc0E0og?si=VLP-WKR1BoKK7fA1)
+
+[Elevated Prayer Stretch - YouTube](https://youtu.be/c7cnNg6rBes?si=fo9zL9t_O3WrLgrR)
+
+**[Couch Stretch](https://youtu.be/Fg-lwNBzVV8?si=dVeSmrUB9MDLOurz)**
+
+[Supine Shoulder Slides - Hooklying Position - YouTube](https://youtu.be/ODc0f0ZPeOE?si=ssRpY3rY2AlblSXx)
