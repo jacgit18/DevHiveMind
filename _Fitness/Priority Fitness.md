@@ -347,6 +347,7 @@ Prioritize resistance bands for explosive phase they can be used for other phase
 | -------------------------------- | --------------- | ------------------- | ----------- |
 | **Hip Thrust**                   | 4x5             | 95–135 lbs          | 6–9 months  |
 | **Hack Squat Machine**           | 4x5             | 90–135 lbs          | 3–6 months  |
+| **Unsupported Squat**            | 4x5             | 70–120 lbs          | 3–6 months  |
 | **Deadlift** (Trap/Conventional) | 3x3             | 135–185 lbs         | 6–12 months |
 | **Bench Press**                  | 4x5             | 75–95 lbs           | 6–9 months  |
 | **Overhead Press**               | 4x5             | 45–65 lbs           | 6–9 months  |
@@ -380,6 +381,7 @@ Prioritize resistance bands for explosive phase they can be used for other phase
 | ------------------------ | ----------- | ------------- | --------------- | ------------- | ------------------- |
 | **Hip Thrust**           | 4x15        | 185–225 lbs   | 6–9 months      | 225–280 lbs   | 9–12 months         |
 | **Hack Squat Machine**   | 4x12        | 135–180 lbs   | 6 months        | 180–225 lbs   | 9–12 months         |
+| **Unsupported Squat**    | 4x12        | 110–160 lbs   | 6 months        | 160–200 lbs   | 9–12 months         |
 | **Deadlift**             | 3x10        | 185–225 lbs   | 6–9 months      | 225–275 lbs   | 9–15 months         |
 | **Bench Press**          | 3x12        | 95–115 lbs    | 6–9 months      | 115–135 lbs   | 9–12 months         |
 | **Overhead Press**       | 3x10        | 65–75 lbs     | 6–9 months      | 75–95 lbs     | 9–12 months         |
