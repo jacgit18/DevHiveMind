@@ -363,6 +363,7 @@ Prioritize resistance bands for explosive phase they can be used for other phase
 | -------------------------- | --------------- | --------------- | -------------------- | --------------- | ------------------- |
 | **Hip Thrust**             | 2.5x            | **300 lbs**     | 9–12 months          | **375 lbs**     | 12–24 months        |
 | ~~**Hack Squat Machine**~~ | ~~2x~~          | ~~**240 lbs**~~ | ~~4–6 months~~       | ~~**300 lbs**~~ | ~~6–12 months~~     |
+| **Unsupported Squat**      | 1.67x           | **200 lbs**     | 4–6 months           | **250 lbs**     | 6–12 months         |
 | **Deadlift**               | 2.5x            | **300 lbs**     | 9–12 months          | **375 lbs**     | 12–24 months        |
 | **Bench Press**            | 1.5x            | **180 lbs**     | 6–8 months           | **225 lbs**     | 9–18 months         |
 | **Overhead Press**         | 1.0x            | **120 lbs**     | 6–8 months           | **150 lbs**     | 12–24 months        |
