@@ -1,11 +1,13 @@
 Zercher Squat off the rack
 
+Deadlift once a week
+
 
 sit with dumbbell extend leg your lunging on move a little to the outside placing dumbbells there to lunge from
 
 bulgarian builds to pistol squat
 
-maybe use 2 plates instead of bench on bulg
+
 
 backward sled walk
 
