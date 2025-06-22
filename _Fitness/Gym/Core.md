@@ -68,7 +68,7 @@ Get to your reps to 15 sec each try to extend for 45 sec MAX
 
 ## Pancake
 
-![Pancake Stretch Routine \| Follow Along - YouTube](https://youtu.be/B1_YA47gtm0?si=_oBDpaLBejKI-8mV)
+
 
 
 

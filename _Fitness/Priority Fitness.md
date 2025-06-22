@@ -150,9 +150,16 @@ Start with a dynamic stretch to Improve blood flow and flexibility. End with a s
 > **Start off Back like a baby and progress to standing then running**
 
 #### 0. Priority To Develop Split 
+*Perform Static Stretch at end of workout 4 times a week 30 sec each*
+**In this Order**
 
+- [Supine Figure 4 Stretch](https://youtu.be/xVq2-g_leTI?si=ww6BkkfN_oYEWmdC) - keep back flat
+- Butterfly
+- Elevated Pigeon Stretch - On [incline bench](https://youtu.be/szFOKnVgGpQ?si=r0IMfaQKljbJeS6P) then progress to [flat bench](https://youtu.be/BmVEn3LfHcg?si=ZDSdN6h4TePiPIj8) or stick to floor (30 sec per side) 
+- Cossack Squat
 - [Forward Fold Stretch](https://youtu.be/goN4rWbQUn4?si=pPni5D3dJWgLUboT) 
-- 
+- Standing Pancake
+- [Seated Pancake](https://youtu.be/B1_YA47gtm0?si=_oBDpaLBejKI-8mV)
 - [Middle split](https://youtu.be/hsNvqUmCAAo?si=SbGmouCgXsZ44_tJ) 
 
 #### **1. Raise (Increase Body Temp & Heart Rate)**
@@ -193,10 +200,6 @@ _~2–3 minutes total – pick 4–5_
 - Glute Bridges – **10–12 reps**
 - [Dead Bug ](https://youtu.be/VRpXreaHz7w?si=MSTm2UNzlRLyQt3E) hand pushed against wall alternating pushing heals down - Anti-extension
 - [Back Widows](https://www.youtube.com/watch?v=JdwsVHc6oQ4)
-- [Supine Figure 4 Stretch](https://youtu.be/xVq2-g_leTI?si=ww6BkkfN_oYEWmdC) keep back flat
-
-##### Seated
-- [[Core#^a235d1 |Pancake Stretch]] - **4 sets 8 reps**
 
 ##### **Grounded On Side**
 - [[Core#^5805af |Side Plank Hip dip]] (floor or bench feet on ground or bench) - **10–12 reps** - Lateral flexion
@@ -265,7 +268,6 @@ _~3–4 minutes total – choose a flow or 3–5 moves_
 ##### **Standing** - **10 reps Each Limb**
 - **[[Wrist Curl]]** - Do a few sets not as many as you would other exercises at home maybe in gym for specific variations. Also consider these [variations](https://www.youtube.com/watch?v=nvJ-1suJCTU). 
 - PVC Walk
-- Elevated Pigeon Stretch - On [incline bench](https://youtu.be/szFOKnVgGpQ?si=r0IMfaQKljbJeS6P) then progress to [flat bench](https://youtu.be/BmVEn3LfHcg?si=ZDSdN6h4TePiPIj8) (60–90 sec per side)
 - ***Scapular Wall Slides*** – Slide arms up/down while back touches wall
 - ***Leg Swings*** – Front/back & side-to-side
 - ***Walking Lunges + Reach*** – Forward lunge + arms overhead

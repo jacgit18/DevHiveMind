@@ -117,11 +117,7 @@ Standing
 [Wall Assisted QL Stretch - YouTube](https://youtu.be/ZYkOmJZXFdQ?si=cQ23f2Il-1cjt4Tf)
 
 
-Full body days will be reserved for cycling different exercise modalities like plyometrics resistance calstetics you name it
 
-  
-
-Considered a plyometric week each month
 
 - **Isometric Holds** (e.g., Wall Sit) – Builds endurance in the quads and knees.  
 
@@ -133,12 +129,6 @@ Considered a plyometric week each month
 
 
 
-Butterfly
-Cossack Squat
-Standing Pancake
-Figure 4
-Seated Pancake
-pigeon
 
 
 
