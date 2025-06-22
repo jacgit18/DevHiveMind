@@ -80,15 +80,6 @@ trx pistol squat
 leg on high box pistol squat starting in single leg squatting position then pushing up
 
 
-[Single-Leg Snatch (RDL, Plate, Hip Lock) - YouTube](https://youtu.be/L9hk1LiqGsU?si=-dJyrtt3Mq7XezCu)
-
-
-
-
-
-
-
-
 
 
 

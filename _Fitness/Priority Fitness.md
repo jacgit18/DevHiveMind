@@ -451,6 +451,7 @@ Weight ranges lowest explosive power weight to max strength weight. Hit Strength
 *Build to Doing Safely*
 - **Barbell Clean Jerk Press** - 1 time a week. - 20lb
 - **[Turkish Get-Up](https://youtu.be/jFK8FOiLa_M?si=L8oB-1-BZ8M6Wfsp)** - 10lb to 15lb
+- **[Single-Leg Snatch (RDL, Plate, Hip Lock)](https://youtu.be/L9hk1LiqGsU?si=-dJyrtt3Mq7XezCu)**
 ### Right to Bare Arms Program
 Allowed to practice each excercise *here* max twice a week.
 #### **Session 1: Push Focus**
