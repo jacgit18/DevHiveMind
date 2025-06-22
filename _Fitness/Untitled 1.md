@@ -127,18 +127,21 @@ Considered a plyometric week each month
 
 
   
-Follow [this](https://youtu.be/hsNvqUmCAAo?si=SbGmouCgXsZ44_tJ)
-Practice middle split
 
-Static end stretch 4 days at home or gym or both 30sec each
 
-forward Fold stretch
+
+
+
+
 Butterfly
-Pancake
+Cossack Squat
+Standing Pancake
+Figure 4
+Seated Pancake
 pigeon
-Middle split
 
-add band to hip thrust 
+
+
 
 
 connects upper lower body for bjj keep core engage 

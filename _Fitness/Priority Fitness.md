@@ -123,6 +123,7 @@ Start with a dynamic stretch to Improve blood flow and flexibility. End with a s
 - [ ] Keep in mind that cold bath can affect muscle gains so balance that out and nervous system regulation.
 	- Try listening to 60 BPM(Beats Per Minute) metronome while taking cold bath for 3 min max and maybe use O2 trainer during this.
 	- Switch back to warm start or cold showers in the fall at a lower frequency.
+- [ ] Static end stretch 4 days at home or gym or both 30sec each.
 
 
 **Recommended Duration:** ~2–3 minutes per section (Total: 10–15 min)  
@@ -147,6 +148,13 @@ Start with a dynamic stretch to Improve blood flow and flexibility. End with a s
 
 ---
 > **Start off Back like a baby and progress to standing then running**
+
+#### 0. Priority To Develop Split 
+
+- [Forward Fold Stretch](https://youtu.be/goN4rWbQUn4?si=pPni5D3dJWgLUboT) 
+- 
+- [Middle split](https://youtu.be/hsNvqUmCAAo?si=SbGmouCgXsZ44_tJ) 
+
 #### **1. Raise (Increase Body Temp & Heart Rate)**
 _~2–3 minutes total – pick 2–3_ or pick one to do for the whole time.
 
@@ -258,7 +266,6 @@ _~3–4 minutes total – choose a flow or 3–5 moves_
 - **[[Wrist Curl]]** - Do a few sets not as many as you would other exercises at home maybe in gym for specific variations. Also consider these [variations](https://www.youtube.com/watch?v=nvJ-1suJCTU). 
 - PVC Walk
 - Elevated Pigeon Stretch - On [incline bench](https://youtu.be/szFOKnVgGpQ?si=r0IMfaQKljbJeS6P) then progress to [flat bench](https://youtu.be/BmVEn3LfHcg?si=ZDSdN6h4TePiPIj8) (60–90 sec per side)
-- [Forward Fold Stretch](https://youtu.be/goN4rWbQUn4?si=pPni5D3dJWgLUboT)
 - ***Scapular Wall Slides*** – Slide arms up/down while back touches wall
 - ***Leg Swings*** – Front/back & side-to-side
 - ***Walking Lunges + Reach*** – Forward lunge + arms overhead
