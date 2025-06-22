@@ -156,3 +156,18 @@ If pain persists >2 weeks or you notice:  
   
 
 **Key Insight**: Most toe stiffness comes from **poor toe push-off mechanics**. Retrain your foot to **land/load through the ball of the foot**, not the toe tip.
+
+
+
+do toe band exercises on a elevated surface 
+
+also [foot bridges](https://youtu.be/swio6RF4YZY?si=zP3QTUKg0SsN8Hvh) stepping on two bricks and keeping foot intact not flex to train toes
+
+
+[Resistance Band Exercises For Healthy Feet & Toe Alignment - YouTube](https://youtu.be/GdlUz4eA_ec?si=Wx33lKEPDLW93Y43)
+
+[4 exercises that helped to strengthen my ankle #fitness #workout #football #ankle #rehab #gym - YouTube](https://youtube.com/shorts/QkuQ_zquFd0?si=mI5R9fL1FO3wv3mF)
+
+
+[Build Strong Feet: Exercises To Strengthen Your Foot & Ankle - YouTube](https://youtu.be/S5xKokqeOb4?si=VH_qaZR9YenlDF5p)
+

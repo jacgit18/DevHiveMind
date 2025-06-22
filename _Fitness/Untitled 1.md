@@ -186,17 +186,6 @@ do this but start push up position and go to seated position not as much holding
 
 
 
-do toe band exercises on a elevated surface 
-
-also [foot bridges](https://youtu.be/swio6RF4YZY?si=zP3QTUKg0SsN8Hvh) stepping on two bricks and keeping foot intact not flex to train toes
-
-
-[Resistance Band Exercises For Healthy Feet & Toe Alignment - YouTube](https://youtu.be/GdlUz4eA_ec?si=Wx33lKEPDLW93Y43)
-
-[4 exercises that helped to strengthen my ankle #fitness #workout #football #ankle #rehab #gym - YouTube](https://youtube.com/shorts/QkuQ_zquFd0?si=mI5R9fL1FO3wv3mF)
-
-
-
 
 [Cable Lateral Walk - YouTube](https://youtu.be/nw8NjG2YOLY?si=KAo4G6B3_5Av1s_t)
 
