@@ -170,11 +170,14 @@ do this but start push up position and go to seated position not as much holding
 
 
 
+do toe band exercises on a elevated surface 
+
+also [foot bridges](https://youtu.be/swio6RF4YZY?si=zP3QTUKg0SsN8Hvh) stepping on two bricks and keeping foot intact not flex to train toes
 
 
+[Resistance Band Exercises For Healthy Feet & Toe Alignment - YouTube](https://youtu.be/GdlUz4eA_ec?si=Wx33lKEPDLW93Y43)
 
-
-
+[4 exercises that helped to strengthen my ankle #fitness #workout #football #ankle #rehab #gym - YouTube](https://youtube.com/shorts/QkuQ_zquFd0?si=mI5R9fL1FO3wv3mF)
 
 
 
@@ -186,7 +189,7 @@ do this but start push up position and go to seated position not as much holding
 
 
 
-Kettlebell Swing
+Kettlebell Swing before man maker
 
 [Dumbbell Man Maker](https://youtu.be/rXjJ46zoQrM?si=XtGPVO8zeVQeapj6)(Easier)
 [Kettlebell Man Maker](https://youtu.be/P4BIVAgJbZY?si=_gnVpDS6HX7WgacW)(Harder)
@@ -210,3 +213,5 @@ Kettlebell Swing
 **[Couch Stretch](https://youtu.be/Fg-lwNBzVV8?si=dVeSmrUB9MDLOurz)**
 
 [Supine Shoulder Slides - Hooklying Position - YouTube](https://youtu.be/ODc0f0ZPeOE?si=ssRpY3rY2AlblSXx)
+
+

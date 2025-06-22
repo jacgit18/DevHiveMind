@@ -30,7 +30,9 @@ Corn bread
 Himalayan salt with coconut water instead electro maybe
 
 
+swap out electorlights with collegen peptides when finished with collegen supplements
 
+maybe add methylfoli supplement back if higher dosage is more helpfull 
 
 ### Probiotics food source
 
@@ -44,6 +46,11 @@ Try Sauerkraut and kimchi
 Get yogurt with probiotics unflavored add sweeteners after, 
 
 Get Kiefer and kombucha
+
+8 oz of kefir a day
+
+
+About $44 in kefir a month which is about two bottles each week
 
   
 

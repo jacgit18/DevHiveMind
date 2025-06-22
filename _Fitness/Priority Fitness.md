@@ -435,30 +435,35 @@ Depending on week and day the session can vary by phase from strength, hypertrop
 
 Outside of best parings other parings you do make it a light day instead of a intense day because best paring for injury mitigation.
 
-Weight ranges lowest explosive power weight to max strength weight.
+Weight ranges lowest explosive power weight to max strength weight. Hit Strength phase variation of the exercise of favorite excercise then shift to trying others and increasing weight and stuff once your consistently hitting 4x8. 
 ### Full Body Program
-- **Barbell Clean Jerk Press** - 1 time a week. - 20lb 
 - **Sled** - twice a week push and pull. - 50lb
+
+*Build to Doing*
+- **Barbell Clean Jerk Press** - 1 time a week. - 20lb 
 ### Right to Bare Arms Program
 Allowed to practice each excercise *here* max twice a week.
 #### **Session 1: Push Focus Ordered By Priority**
 1. **Landmine Z Press** - 10lb 
-2. **Single Arm Chest Press** - 40lb
+2. **Single Arm Chest Press** - 50lb
 3. **Dumbbell Floor Press** or **Incline Dumbbell Bench Press** – 17.5lb
 4. **Arnold Press** – 20lb
-5. **Overhead TrapBar Press** - 50lb
-6. **6-Way Shoulder Raise** – 5lb
+5. **Overhead Barbell/TrapBar Press** - 20lb
+6. **6-Way Shoulder Raise** – 10lb
 7. **Landmine Anti Rotations** - 10lb
+8. **Wide Seated Dip** - 125lb
+9. **Chest Fly** - 90lb
 
-*Build to*
+*Build to Doing*
 8. **Landmine Russian Twist** - 10lb
 9. **Landmine Rotational Press** - 10lb
 
 *Best Pairing*
 - **Landmine Z Press** + **Single-Arm Chest Press** + **Landmine Anti-Rotations** 
-- **Arnold Press** + **Landmine Russian Twist** + **6-Way Shoulder Raise** 
-- **Incline Dumbbell Bench/Floor Press** + **Landmine Rotational Press** + **Overhead TrapBar Press** 
-
+- **Arnold Press** + **Landmine Russian Twist** + **6-Way Shoulder Raise Wrist Curl** 
+- **Incline Dumbbell Bench/Floor Press** + **Landmine Rotational Press** + **Overhead Barbell/TrapBar Press** 
+- **Incline Dumbbell Bench/Floor Press** + **Overhead Barbell/TrapBar Press** + **6-Way Shoulder Raise Wrist Curl** 
+- **Wide Seated Dip** +**Chest Fly**
 #### **Session 2: Pull Focus**
 Chin ups higher priority alternate each quarter or even month. Try Burpee to Pull Up. 
 1. **Band/Barbell/Dumbbell/Landmine Single Leg RDL** - 10lb to 20lb
@@ -469,29 +474,40 @@ Chin ups higher priority alternate each quarter or even month. Try Burpee to Pul
 6. **Rev Crunch** 
 7. **Kneeling Cable Crunch**(Top Angle) - 33lb 
 8. **Pallof Press**(Wrist Height) - 30lb
-9. **Lateral Head Single-Arm Tricep Extension**(Top Angle) – 20lb
-10. **Cable Pancake Stretch**(Low Angle) - 49.5
-11. **Back Extension** - 15lb - do consistently for a 2 weeks and try ft to single leg variation 
+9. **Rear Delt Fly** - 70lb
+10. **Lateral Head Single-Arm Tricep Extension**(Top Angle) – 20lb
+11. **Cable Pancake Stretch**(Low Angle) - 49.5
+12. **Back Extension** - 15lb - do consistently for a 2 weeks and try ft to single leg variation 
 
 
-*Build to*
+*Build to Doing*
 11. **Side Lateral QL Extension** - 15lb - same thing after building up from single leg back extension and doing this consistently then do [rotating variation](https://youtu.be/KJwARxV9a6g?si=4C--YLWJnUcFaMmx) once doing consistent 4 sets 8 reps.
 	- Besides doing on back extension machine can do [Lateral Flexion on Stability Ball](https://youtu.be/FrohQ--m7fs?si=Z4akKJnru0ut8S8X)
 12. **Single-Arm Behind-Back Cable Lateral Raise**(Low Angle) – 10lb
 13. **Jefferson Curl**(Try upstairs) - 20lb
 
 
-*Best Pairing*
+*Best to Pairing*
 - **Single-Leg RDL** + **Narrow-Grip Pull-Up/Chin-Up** + **Back Extension** 
 - **Zottman Curl** + **Super ROM Lateral Raise Wrist Curl**  + **Kneeling Cable Crunch** 
 - **Narrow-Grip Pull-Up/Chin-Up** + **Super ROM Lateral Raise Wrist Curl** + **Kneeling Cable Crunch** 
 - **Narrow-Grip Pull-Up/Chin-Up** + **Pallof Press** + **Reverse Crunch**  
+- **Narrow-Grip Pull-Up/Chin-Up** + **Pallof Press** + **Kneeling Cable Crunch** 
 - **Lateral Head Single-Arm Tricep Extension** + **Single-Arm Behind-Back Cable Lateral Raise** + **Cable Pancake Stretch**  
+- **Rear Delt Fly** +  **Pallof Press** + **Single-Leg RDL**
+- **Rear Delt Fly** + **Narrow-Grip Pull-Up/Chin-Up** + **Back Extension** 
+- **Reverse Crunch** + **Zottman Curl** + **Super ROM Lateral Raise Wrist Curl** 
+- **Rear Delt Fly** + **Single-Arm Behind-Back Cable Lateral Raise** +  **Lateral Head Single-Arm Tricep Extension**
+
+*Best Build to Pairings*
+- **Cable Pancake Stretch** + **Side Lateral QL Extension** + **Jefferson Curl**
+
 
 > Alternate **Pull-Up and Chin-Up** weekly or in different sessions to avoid elbow tendinitis or biceps overuse. Don’t pair **Zottman Curls + Chin-Ups** in the same day too often—they both heavily load the **biceps tendon**.
 
 #### **Session 3: Push + Pull (Hybrid)**
 - **Barbell Clean Jerk Press** 
+
 ##### **Push:**
 1. **Landmine Anti Rotations** 
 2. **Single Arm Chest Press** or **Dumbbell Floor Press**/**Incline Dumbbell Bench Press** 
@@ -509,6 +525,7 @@ Chin ups higher priority alternate each quarter or even month. Try Burpee to Pul
 8. **Back Extension** 
 9. **Single-Arm Behind-Back Cable Lateral Raise**(Low Angle) 
 
+
 *Best Pairing*
 - **Single Arm Chest Press** or **Dumbbell Floor Press**/**Incline Dumbbell Bench Press** + **Pallof Press** +  **Landmine Anti-Rotations**
 - **Landmine Single-Leg RDL** + **Dumbbell Floor Press**/**Incline Dumbbell Bench Press** + **Single-Arm Tricep Extension** + **Landmine Anti-Rotations** or **Pallof Press** + **Super ROM Lateral Raise Wrist Curl**
@@ -518,13 +535,14 @@ All leg cable excercise are done at a low angle.
 
 #### Session 1: Main Compound Squat & Lunge Patterns
 1. **Hack Squat** – 300lb - if ankles begin to lift move feet up
-2. **Single Leg Press** – 180lb
-3. **Walking Barbell Lunge/Zercher Lunge** – 20lb
-4. Weighted [Elevated Lunge](https://youtu.be/OVFHK2Iev70?si=oiRNDNHznSrNP_RC) if your getting to 40lb to 60lb dumbbell in lunge switch to barbell
-5. **Dumbbell Bulgarian Split Squat**(Try [elevated](https://youtu.be/DXK-VbFE6ic?si=NHqOeitXD0h_YQsr) front leg variation) - 20lb 
-6. **Kettlebell Sumo Squat** – 20lb 
-7. **Barbell/Kettlebell B-Squat** - 20lb
-8. **Band Single-Leg Barbell Squat** - 20lb
+2. Incline High Bar on trap muscle Squat/Zercher Squat - 50lb
+3. **Single Leg Press** – 180lb
+4. **Walking Barbell Lunge/Zercher Lunge(bar 13)** – 20lb
+5. Weighted [Elevated Lunge](https://youtu.be/OVFHK2Iev70?si=oiRNDNHznSrNP_RC) if your getting to 40lb to 60lb dumbbell in lunge switch to barbell
+6. **Dumbbell Bulgarian Split Squat**(Try [elevated](https://youtu.be/DXK-VbFE6ic?si=NHqOeitXD0h_YQsr) front leg variation) - 20lb 
+7. **Kettlebell Sumo Squat** – 20lb 
+8. **Barbell/Kettlebell B-Squat** - 20lb
+9. **Band Single-Leg Barbell Squat** - 20lb
 
 *Best Pairing*
 - **Hack Squat**  + **Dumbbell Bulgarian Split Squat**  + **Band Single-Leg Barbell Squat**
@@ -533,10 +551,13 @@ All leg cable excercise are done at a low angle.
 - **B-Squat** + **Walking Barbell/Zercher Lunge** + **Band Single-Leg Barbell Squat** 
 
 #### **Session 2: Hinge + Posterior Chain (Glutes, Hamstrings, Core)**
-1. **Cable Pull Through**(Lo – 33lb
+1. **Cable Pull Through** – 33lb
 2. **Cable Hip Extension** – 50lb 
-3. **Hip Thrust(single/dual)** - 90lb to 130lb 
+3. **Hip Thrust(dual/single-Perform with Medium Band)** - 90lb to 130lb 
 4. **Tib Bar Raise** – 5lb 
+
+*Build to Doing*
+5. **Nordic Hamstring Curl** - Practice on bench with tib bar
 
 *Best Pairing*
 - **Cable Pull Through** + **Tib Bar Raise
@@ -624,6 +645,7 @@ All leg cable excercise are done at a low angle.
 	- Romanian dead lift (can be dangerous if not done properly)
 	- Don't rotate on back extension and don't round it either
 	- Dumbbell Lateral raise
+	- Dumbbell kick back do cable tricep extension
 	- Dumbbell chest fly 
 	- Hanging Leg raises 
 	- Leg extension if pain don't do it 
@@ -716,7 +738,7 @@ All leg cable excercise are done at a low angle.
 | B Squats                            | 40         | 50     | 4     | 8     | High         | Barbell                             | Bottom          | Multi                             | B Squats                                                                                      | Yes       | Standing                              | **N/A**                  | *25*     | **N/A**     | CM               |
 | Clean to Jerk & Press               | 20         | 20     | 4     | 8     | High         | Barbell                             | Full            | Multi                             | [[Full Body#^0c16fd \|Clean to Jerk & Press]]                                                 | Yes       | Standing                              | **N/A**                  | **5**    | **N/A**     | EP               |
 | Zercher Lunge                       | 10         | 20     | 4     | 8     | Med          | Barbell                             | Bottom          | Multi                             | [[Full Body#^4b1677\|Zercher Lunge]]                                                          | Yes       | Underhand                             | **N/A**                  | *10*     | **N/A**     | CM               |
-| Zercher Squats                      | 20         | 40     | 4     | 8     | Med          | Barbell                             | Bottom          | Multi                             | [[Full Body#^765b0b \|Zercher Squats]]                                                        | Yes       | Underhand                             | **N/A**                  | *25*     | **N/A**     | CM               |
+| Zercher Squats                      | 40         | 50     | 4     | 8     | Med          | Barbell                             | Bottom          | Multi                             | [[Full Body#^765b0b \|Zercher Squats]]                                                        | Yes       | Underhand                             | **N/A**                  | *25*     | **N/A**     | CM               |
 | Landmine Russian Twist              | 0          | 10     | 4     | 8     | _Highest     | Barbell Landmine                    | Core            | Multi                             | [[Landmines#^f73ff4\|Landmine Russian Twist]]                                                 | Yes       | Grounded                              | **N/A**                  | *0*      | **N/A**     | RC               |
 | Landmine Z Press                    | 0          | 10     | 4     | 8     | _Highest     | Barbell Landmine                    | Core            | Multi                             | [[Landmines#^aa7892\|Landmine Z Press]]                                                       | Yes       | Grounded                              | **N/A**                  | *0*      | **N/A**     | RC               |
 | Anti-Rotation Press                 | 0          | 10     | 4     | 8     | _Highest     | Barbell Landmine                    | Full            | Multi                             | [[Landmines#^759af1\|Anti-Rotation Press]]                                                    | Yes       | Standing                              | **N/A**                  | *0*      | **N/A**     | RC               |
@@ -725,11 +747,11 @@ All leg cable excercise are done at a low angle.
 | Landmine Twist                      | 0          | 10     | 4     | 8     | High         | Barbell Landmine                    | Core            | Abdominal                         | [[Upper#^b8a4b6 \|Landmine Twist ]]                                                           | Yes       | Standing                              | **N/A**                  | *10*     | **N/A**     | CM               |
 | Single-Arm Shoulder Press           | 0          | 10     | 4     | 8     | High         | Barbell Landmine                    | Upper           | Shoulder                          | [[Landmines#^2a2dc9 \|Single-Arm Shoulder Press]]                                             | Yes       | Standing                              | **N/A**                  | *0*      | **N/A**     | RC               |
 | Hip Toss                            | 0          | 10     | 4     | 8     | Low          | Barbell Landmine                    | Full            | Multi                             | [[Landmines#^b4696f \|Hip Toss]]                                                              | Yes       | Standing                              | **N/A**                  | *0*      | **N/A**     | RC               |
-| Squat to Press                      | 0          | 10     | 4     | 8     | Low          | Barbell Landmine                    | Full            | Multi                             | [[Landmines#^70b95c \|Squat to Press]]                                                        | Yes       | Standing                              | **N/A**                  | *0*      | **N/A**     | RC               |
+| Squat to Press                      | 5          | 20     | 4     | 8     | Low          | Barbell Landmine                    | Full            | Multi                             | [[Landmines#^70b95c \|Squat to Press]]                                                        | Yes       | Standing                              | **N/A**                  | *0*      | **N/A**     | RC               |
 | Lateral Rotations                   | 0          | 10     | 4     | 8     | Med          | Barbell Landmine                    | Full            | Multi                             | [[Landmines#^ceab94 \|Lateral Rotations]]                                                     | Yes       | Standing                              | **N/A**                  | *0*      | **N/A**     | RC               |
 | Reverse Lunge + Rotation            | 0          | 10     | 4     | 8     | Med          | Barbell Landmine                    | Full            | Multi                             | [[Landmines#^82208b\|Reverse Lunge + Rotation]]                                               | Yes       | Standing                              | **N/A**                  | *0*      | **N/A**     | RC               |
 | Single Leg RDL                      | 20         | 20     | 4     | 8     | _Highest     | Barbell/Kettlebell/Landmine         | Full            | Multi                             | [Single Leg RDL](https://youtu.be/lghxTgWZ9TM?si=fuXk0b2GPHCgdj--)                            | Yes       | Standing                              | **N/A**                  | ***10*** | **N/A**     | CM               |
-| Overhead Press                      | 20         | 20     | 4     | 8     | _Highest     | Barbell/TrapBar                     | Upper           | Multi                             | [Overhead Press](https://youtu.be/T06x4_z1nts?si=7Zo_5KzHrfrBAtrh)                            | Yes       | Standing                              | **N/A**                  | ***10*** | **N/A**     | CM               |
+| Overhead Press                      | 10         | 20     | 4     | 8     | _Highest     | Barbell/TrapBar                     | Upper           | Multi                             | [Overhead Press](https://youtu.be/T06x4_z1nts?si=7Zo_5KzHrfrBAtrh)                            | Yes       | Standing                              | **N/A**                  | ***10*** | **N/A**     | CM               |
 | Squat Jump                          | 20         | 50     | 4     | 8     | _Highest     | TrapBar                             | Bottom          | Multi                             | [Squat Jump](https://www.youtube.com/watch?v=52-P8hlrKqg)                                     | Yes       | Standing                              | **N/A**                  | ***10*** | **N/A**     | EP               |
 | Deadlift                            | 50         | 100    | 4     | 8     | _Highest     | Barbell/TrapBar Low Handle          | Full            | Multi                             | [[Lower#^1260ed \|Deadlift]]                                                                  | Yes       | Standing                              | **N/A**                  | *10*     | **N/A**     | CM               |
 | Nordic Hamstring Curl               | 0          | 0      | 4     | 8     | _Highest     | Bodyweight                          | Bottom          | Hamstring                         | [[Lower#^4e02bb \|Nordic Hamstring Curl]]                                                     | **TD**    | Grounded                              | **N/A**                  | ****     | **N/A**     | CM               |
@@ -787,9 +809,9 @@ All leg cable excercise are done at a low angle.
 | Hip Thrust                          | 120        | 130    | 4     | 8     | _Highest     | Fixed                               | Bottom          | Hamstring/Hips                    | [[Lower#^2559bb \|Hip Thrust]]                                                                | Yes       | Seated                                | **N/A**                  | *60*     | **N/A**     | CM               |
 | Single Leg Press                    | 90         | 180    | 4     | 8     | _Highest     | Fixed                               | Bottom          | Hamstring                         | Single Leg Press                                                                              | Yes       | Seated                                | **N/A**                  | *135*    | **N/A**     | CM               |
 | Goblet Squat                        | 30         | 30     | 4     | 8     | _Highest     | Fixed                               | Full            | Hamstring                         | [[Full Body#^dec99b \|Goblet Squat]]                                                          | Yes       | Standing                              | **N/A**                  | *150*    | **N/A**     | CM               |
-| Overhead Squat                      | 0          | 40     | 4     | 8     | _Highest     | Fixed                               | Full            | Hamstring                         | [[Full Body#^cbb17a \|Overhead Squat]]                                                        | Yes       | Standing                              | **N/A**                  | *150*    | **N/A**     | CM               |
+| Overhead Squat                      | 20         | 40     | 4     | 8     | _Highest     | Barbell                             | Full            | Hamstring                         | [[Full Body#^cbb17a \|Overhead Squat]]                                                        | Yes       | Standing                              | **N/A**                  | *150*    | **N/A**     | CM               |
 | Chest Fly                           | 80         | 90     | 4     | 8     | _Highest     | Fixed                               | Upper           | Chest                             | [[Upper#^238b6e \|Chest Fly]]                                                                 | Yes       | Seated                                | **N/A**                  | **90**   | 4           | CM               |
-| Chest Press                         | 40         | 40     | 4     | 8     | _Highest     | Fixed                               | Upper           | Chest                             | Chest Press                                                                                   | Yes       | Wide                                  | **N/A**                  | **60**   | 1           | CM               |
+| Chest Press                         | 40         | 50     | 4     | 8     | _Highest     | Fixed                               | Upper           | Chest                             | Chest Press                                                                                   | Yes       | Wide                                  | **N/A**                  | **60**   | 1           | CM               |
 | Mid Row                             | 145        | 165    | 4     | 8     | _Highest     | Fixed                               | Upper           | Back Lats                         | Mid Row                                                                                       | Yes       | Seated                                | **N/A**                  | **165**  | **N/A**     | PG               |
 | Plate Pull Down                     | 70         | 90     | 4     | 8     | _Highest     | Fixed                               | Upper           | Back Lats                         | Plate Pull Down                                                                               | Yes       | Seated                                | **N/A**                  | *45*     | **N/A**     | CM               |
 | Rear Delt Fly                       | 60         | 70     | 4     | 8     | _Highest     | Fixed                               | Upper           | Shoulder Delt                     | Rear Delt Fly                                                                                 | Yes       | Seated                                | **N/A**                  | **60**   | 0           | CM               |
