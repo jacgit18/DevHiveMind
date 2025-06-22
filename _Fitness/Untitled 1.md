@@ -125,7 +125,7 @@ Standing
 connects upper lower body for bjj keep core engage 
 dead bug heal tap 
 dead bug extended foot alternating height of foot to the ground 
-cat cow
+
 
 [Best BJJ Strength Training Exercises 6: The 'Dead Bug' Core Exercise - YouTube](https://youtu.be/M14fmjvDXMo?si=KpG6WH6nQ5Qdl8Bm)
 
@@ -140,7 +140,7 @@ lean forward a little on lunges keeping neutral spine specifically dummbell to s
 
 
 
-Use plyometrics Hops and skips if you are in a hurry for runs if you can't stretch
+Use plyometrics pogo Hops and skips if you are in a hurry for runs if you can't stretch
 
   
 
