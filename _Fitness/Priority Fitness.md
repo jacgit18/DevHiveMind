@@ -525,7 +525,7 @@ Chin ups higher priority alternate each quarter or even month. Try Burpee to Pul
 
 ##### **Pull:**
 1. **Narrow-Grip Pull-Up/Chin-Up**
-2. **Zottman Curl**
+2. **Zottman Curl Standing(Easiest)/**
 3. **Super ROM Lateral Raise Wrist Curl** 
 4. **Landmine Single-Leg RDL**
 5. **Pallof Press**(Wrist Height) 
@@ -547,7 +547,7 @@ All leg cable excercise are done at a low angle.
 2. Incline High Bar on trap muscle Squat/Zercher Squat - 50lb
 3. **Single Leg Press** – 180lb
 4. **Walking Barbell Lunge/Zercher Lunge(bar 13)** – 20lb
-5. Weighted [Elevated Lunge](https://youtu.be/OVFHK2Iev70?si=oiRNDNHznSrNP_RC) if your getting to 40lb to 60lb dumbbell in lunge switch to barbell
+5. [Elevated Smith Machine Lunge](https://youtu.be/Yp5O9Cz6Ajg?si=bFGCfbzNqt_JobTA) - try [Elevated Lunge](https://youtu.be/OVFHK2Iev70?si=oiRNDNHznSrNP_RC) with dumbbell at max 40lb to 60lb then switch to free barbell
 6. **Dumbbell Bulgarian Split Squat**(Try [elevated](https://youtu.be/DXK-VbFE6ic?si=NHqOeitXD0h_YQsr) front leg variation) - 20lb 
 7. **Kettlebell Sumo Squat** – 20lb 
 8. **Barbell/Kettlebell B-Squat** - 20lb

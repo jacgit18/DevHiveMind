@@ -57,7 +57,7 @@ Descending flutter kicks
 
 
 
-[Elevated Smith Machine Lunge](https://youtu.be/Yp5O9Cz6Ajg?si=bFGCfbzNqt_JobTA)
+
 
 [Rotator cuff 90 degrees external rotation with dumbbell - YouTube](https://youtu.be/EUMsYC_W3aI?si=GFgIUffRsKjwesZU)
 
@@ -103,7 +103,7 @@ leg on high box pistol squat starting in single leg squatting position then push
 
 [Swiss Ball Side Flexion - Level 5 - GymCalc.com - YouTube](https://youtu.be/ltuv2fYMXqk?si=IkiMMxr0jMaj7n0P)
 
-[BICEPS - Lying Zottman Curls - YouTube](https://youtu.be/cnEcZiOeFO0?si=4nSqffNzqQyAvXBj)
+
 
 
 Standing
