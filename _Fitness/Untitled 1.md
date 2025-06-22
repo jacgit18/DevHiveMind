@@ -82,14 +82,14 @@ leg on high box pistol squat starting in single leg squatting position then push
 
 [Single-Leg Snatch (RDL, Plate, Hip Lock) - YouTube](https://youtu.be/L9hk1LiqGsU?si=-dJyrtt3Mq7XezCu)
 
-[Single-Leg Snatch (RDL, Plate, Hip Lock) - YouTube](https://youtu.be/L9hk1LiqGsU?si=-dJyrtt3Mq7XezCu)
-
-[Master the Turkish Get-Up (Avoid These 3 Mistakes!) - YouTube](https://youtu.be/jFK8FOiLa_M?si=L8oB-1-BZ8M6Wfsp)
-
-[How to PROPERLY Squat for Growth (4 Easy Steps) - YouTube](https://youtu.be/gcNh17Ckjgg?si=L0Lmos_bpSJcs9u1)
 
 
-[Banded Dumbbell Bench Press - YouTube](https://youtu.be/nzPvCtwkETM?si=ayLMQYM4NFk1FKbE)
+
+
+
+
+
+
 
 
 [Swiss Ball Side Flexion - Level 1 - GymCalc.com - YouTube](https://youtu.be/kFty8-wF69k?si=uAMaVNjSfn33ebzw)
@@ -119,7 +119,7 @@ Standing
 
 
 
-- **Isometric Holds** (e.g., Wall Sit) – Builds endurance in the quads and knees.  
+
 
 
   

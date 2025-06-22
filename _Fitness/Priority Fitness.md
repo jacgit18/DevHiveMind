@@ -413,6 +413,7 @@ Prioritize resistance bands for explosive phase they can be used for other phase
 
 #todo/BAU/Workout
 - [ ] Avoid being on phone affects performance
+- [ ] Practice **Isometric Holds** during exercises
 - [ ] Do [[Grip Strength Training]]
 - [ ] Dead Hang at BK-MMA & Leg Day
 - [ ] Over time max 11 exercises per session
@@ -448,13 +449,14 @@ Weight ranges lowest explosive power weight to max strength weight. Hit Strength
 - **Sled** - twice a week push and pull. - 50lb
 
 *Build to Doing Safely*
-- **Barbell Clean Jerk Press** - 1 time a week. - 20lb 
+- **Barbell Clean Jerk Press** - 1 time a week. - 20lb
+- **[Turkish Get-Up](https://youtu.be/jFK8FOiLa_M?si=L8oB-1-BZ8M6Wfsp)** - 10lb to 15lb
 ### Right to Bare Arms Program
 Allowed to practice each excercise *here* max twice a week.
-#### **Session 1: Push Focus Ordered By Priority**
+#### **Session 1: Push Focus**
 1. **Landmine Z Press** - 10lb 
 2. **Single Arm Chest Press** - 50lb
-3. **Dumbbell Floor Press** or **Incline Dumbbell Bench Press** – 17.5lb
+3. **Dumbbell Floor** or **Incline Dumbbell Bench** or [Banded Dumbbell Bench](https://youtu.be/nzPvCtwkETM?si=ayLMQYM4NFk1FKbE)(Helps with form) Press– 17.5lb
 4. **Arnold Press** – 20lb
 5. **Overhead Barbell/TrapBar Press** - 20lb
 6. **6-Way Shoulder Raise Wrist Curl**(Consider **[[Wrist Curl]]** Regimen with [variations](https://www.youtube.com/watch?v=nvJ-1suJCTU)) – 10lb
@@ -477,7 +479,7 @@ Chin ups higher priority alternate each quarter or even month. Try Burpee to Pul
 1. **Band/Barbell/Dumbbell/Landmine Single Leg RDL** - 10lb to 20lb
 2. **Narrow-Grip Chin-Up** 
 3. **Narrow-Grip Pull-Up** 
-4. **Zottman Curl** – 15lb
+4. **Zottman Curl Standing(Easiest)/[Seated](https://youtu.be/cnEcZiOeFO0?si=4nSqffNzqQyAvXBj)(hardest)** - go half and half  – 20lb
 5. **Super ROM Lateral Raise Wrist Curl** – 5lb
 6. **Rev Crunch** 
 7. **Kneeling Cable Crunch**(Top Angle) - 33lb 
@@ -525,7 +527,7 @@ Chin ups higher priority alternate each quarter or even month. Try Burpee to Pul
 
 ##### **Pull:**
 1. **Narrow-Grip Pull-Up/Chin-Up**
-2. **Zottman Curl Standing(Easiest)/**
+2. **Zottman Curl Standing(Easiest)/Seated(Hardest)**
 3. **Super ROM Lateral Raise Wrist Curl** 
 4. **Landmine Single-Leg RDL**
 5. **Pallof Press**(Wrist Height) 
@@ -543,6 +545,7 @@ Chin ups higher priority alternate each quarter or even month. Try Burpee to Pul
 All leg cable excercise are done at a low angle.
 
 #### Session 1: Main Compound Squat & Lunge Patterns
+[How to PROPERLY Squat for Growth (4 Easy Steps) - YouTube](https://youtu.be/gcNh17Ckjgg?si=L0Lmos_bpSJcs9u1)
 1. **Hack Squat** – 300lb - if ankles begin to lift move feet up
 2. Incline High Bar on trap muscle Squat/Zercher Squat - 50lb
 3. **Single Leg Press** – 180lb
