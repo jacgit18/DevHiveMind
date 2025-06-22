@@ -131,9 +131,6 @@ Standing
 
 
 
-
-
-
 connects upper lower body for bjj keep core engage 
 dead bug heal tap 
 dead bug extended foot alternating height of foot to the ground 
