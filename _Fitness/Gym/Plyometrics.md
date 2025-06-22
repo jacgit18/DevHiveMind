@@ -37,12 +37,10 @@ dg-publish:
    - **[Box Jumps](https://youtu.be/BeqK8ksNC-E?si=egDA5gHf1YU0RlU1)** – 3x5 (controlled landing)  
    - **Squat Jumps** – 3x6 (pause at bottom)  
    - **Single-Leg Hops** – 2x5/leg (focus on stability)
-   - [Pogo Jumps - YouTube](https://youtu.be/iU-TKr4YesM?si=--xrqvN2fMHZOnea)
+
    - **Depth Drops → Broad Jumps** (3x5): For horizontal explosiveness.  
 
-3. **Hypertrophy Option (Post-Plyo)**  
-   - **Bulgarian Split Squats** – 3x10/leg  
-   - **RDLs** – 3x8 (slow eccentric)
+
 
 ---
 

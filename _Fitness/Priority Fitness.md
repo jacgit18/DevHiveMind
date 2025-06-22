@@ -188,9 +188,8 @@ _~2–3 minutes total – pick 2–3_ or pick one to do for the whole time.
 - High Knees + Butt Kicks – **30s each**
 - Lateral Skips(gallop)  – **30s each**
 - Arm Swings (Hugs) – **30s each**
-- Punch Ups with 5lb dumbbells
-- Chest Fly with 5lb dumbbells
 - Jumping Jacks – **1 min**
+- [Pogo Jumps](https://youtu.be/iU-TKr4YesM?si=--xrqvN2fMHZOnea) - **1 min**
 - [Arm Circles](https://www.youtube.com/watch?v=YGXgpcr7UY4) with 5lb dumbbells different ranges – *20 reps each direction*
 - Shadowboxing with Resistance bands (fast-paced) – *30–45s*
 
