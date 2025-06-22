@@ -323,12 +323,12 @@ The general principles of **training phases** like strength and hypertrophy appl
 - Use **barbells** for added weight when building strength.
 - Use **dumbbells** for greater range of motion and correcting muscle imbalances.
 - Any **curlbar** exercise can be done with barbell.
-- Elastic bar can be good for warm up.
+- [Felix Bar](https://youtu.be/mkRDoV83Y0M?si=BSPRPBericJza2p_) can be a  good arm warm up.
 - You can use **heavy resistance bands combined with a weight plate** to create a **pseudo weighted vest**. This setup can be used for exercises like **pull-ups, dips, and other bodyweight movements** to add resistance without needing an actual vest.
 - For resistance band exercises focus on **Explosive Power** or **Hypertrophy**,  you can still do strength if your still weak in certain area's but you will eventually plateau you can also mix up bands clipping multiple ones together.
 
 ## Phases
-**Starting Point** will switch to optimal order of **EP** → **CM** → **Hypertrophy (PG/RC)**  
+**Starting Point** will switch to optimal order of **EP(PG/RC)** → **Strength CM(PG/RC)** → **Hypertrophy(PG/RC)**  
 
 Hypertrophy thrives on explosive lifts (1s), slow eccentrics (3s), 5 sets 15 reps, and progressive overload— going to failure on the last set.
 ### **Progression Rules**
@@ -439,7 +439,7 @@ Weight ranges lowest explosive power weight to max strength weight. Hit Strength
 ### Full Body Program
 - **Sled** - twice a week push and pull. - 50lb
 
-*Build to Doing*
+*Build to Doing Safely*
 - **Barbell Clean Jerk Press** - 1 time a week. - 20lb 
 ### Right to Bare Arms Program
 Allowed to practice each excercise *here* max twice a week.
@@ -454,7 +454,7 @@ Allowed to practice each excercise *here* max twice a week.
 8. **Wide Seated Dip** - 125lb
 9. **Chest Fly** - 90lb
 
-*Build to Doing*
+*Build to Doing Safely*
 8. **Landmine Russian Twist** - 10lb
 9. **Landmine Rotational Press** - 10lb
 
@@ -480,7 +480,7 @@ Chin ups higher priority alternate each quarter or even month. Try Burpee to Pul
 12. **Back Extension** - 15lb - do consistently for a 2 weeks and try ft to single leg variation 
 
 
-*Build to Doing*
+*Build to Doing Safely*
 11. **Side Lateral QL Extension** - 15lb - same thing after building up from single leg back extension and doing this consistently then do [rotating variation](https://youtu.be/KJwARxV9a6g?si=4C--YLWJnUcFaMmx) once doing consistent 4 sets 8 reps.
 	- Besides doing on back extension machine can do [Lateral Flexion on Stability Ball](https://youtu.be/FrohQ--m7fs?si=Z4akKJnru0ut8S8X)
 12. **Single-Arm Behind-Back Cable Lateral Raise**(Low Angle) – 10lb
@@ -506,6 +506,7 @@ Chin ups higher priority alternate each quarter or even month. Try Burpee to Pul
 > Alternate **Pull-Up and Chin-Up** weekly or in different sessions to avoid elbow tendinitis or biceps overuse. Don’t pair **Zottman Curls + Chin-Ups** in the same day too often—they both heavily load the **biceps tendon**.
 
 #### **Session 3: Push + Pull (Hybrid)**
+##### **Both:**
 - **Barbell Clean Jerk Press** 
 
 ##### **Push:**
@@ -556,8 +557,8 @@ All leg cable excercise are done at a low angle.
 3. **Hip Thrust(dual/single-Perform with Medium Band)** - 90lb to 130lb 
 4. **Tib Bar Raise** – 5lb 
 
-*Build to Doing*
-5. **Nordic Hamstring Curl** - Practice on bench with tib bar
+*Build to Doing Safely*
+5. **[Nordic Hamstring Curl](https://youtu.be/PcxNRBnfBd0?si=_EnPiuwgF3Rx0uo4)** - Practice on incline bench with tib bar
 
 *Best Pairing*
 - **Cable Pull Through** + **Tib Bar Raise

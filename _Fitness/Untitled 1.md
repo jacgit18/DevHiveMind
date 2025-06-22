@@ -37,9 +37,9 @@ Descending flutter kicks
 [Hip Airplane - YouTube](https://youtu.be/2hIL15iGuNA?si=4F-c9pubcVK9mTze)
 
 
-use tib bar while on incline bench to practice [Nordic Hamstring Curl](https://youtu.be/PcxNRBnfBd0?si=_EnPiuwgF3Rx0uo4)
 
-[Felix Bar](https://youtu.be/mkRDoV83Y0M?si=BSPRPBericJza2p_) - good arm warm up
+
+
 
 [Elevated Smith Machine Lunge](https://youtu.be/Yp5O9Cz6Ajg?si=bFGCfbzNqt_JobTA)
 
@@ -51,7 +51,7 @@ use tib bar while on incline bench to practice [Nordic Hamstring Curl](https://y
 helps build to pistol [Patrick Step - YouTube](https://youtu.be/jAbO12BipQU?si=oWN-xGlMG-rAokpl)
 
 
-pistol squat prep strengthing
+pistol squat prep strengthening
 
 narrow squat
 deep squat
