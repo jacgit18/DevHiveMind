@@ -448,14 +448,18 @@ Outside of best parings other parings you do make it a light day instead of a in
 
 Weight ranges lowest explosive power weight to max strength weight. Hit Strength phase variation of the exercise of favorite excercise then shift to trying others and increasing weight and stuff once your consistently hitting 4x8. 
 ### Full Body Program
+- **Kettlebell Swing** 
 - **Sled** - twice a week push and pull - 50lb
 	- Backward walk, seated pancake pull, standing pull
+	- [Lateral Sled Drag](https://youtu.be/rGtYmX2aeAA?si=PnniyFsIluLeViKa)
+- **Trap bar Deadlift** -  1 time a week - 50lb
 
 *Build to Doing Safely*
 - **Barbell Clean Jerk Press** - 1 time a week - 20lb
-- **Trap bar Deadlift** -  1 time a week - 50lb
 - **[Turkish Get-Up](https://youtu.be/jFK8FOiLa_M?si=L8oB-1-BZ8M6Wfsp)** - 10lb to 15lb
 - **[Single-Leg Snatch (RDL, Plate, Hip Lock)](https://youtu.be/L9hk1LiqGsU?si=-dJyrtt3Mq7XezCu)**
+- [Dumbbell Man Maker](https://youtu.be/rXjJ46zoQrM?si=XtGPVO8zeVQeapj6)(Easier)
+- [Kettlebell Man Maker](https://youtu.be/P4BIVAgJbZY?si=_gnVpDS6HX7WgacW)(Harder)
 ### Right to Bare Arms Program
 Allowed to practice each excercise *here* max twice a week.
 #### **Session 1: Push Focus**
@@ -470,8 +474,8 @@ Allowed to practice each excercise *here* max twice a week.
 9. **Chest Fly** - 90lb
 
 *Build to Doing Safely*
-8. **Landmine Russian Twist** - 10lb
-9. **Landmine Rotational Press** - 10lb
+9. **Landmine Russian Twist** - 10lb
+10. **Landmine Rotational Press** - 10lb
 
 *Best Pairing*
 - **Landmine Z Press** + **Single-Arm Chest Press** + **Landmine Anti-Rotations** 
@@ -561,6 +565,13 @@ All leg cable excercise are done at a low angle.
 7. **Kettlebell Sumo Squat** – 20lb 
 8. **Barbell/Kettlebell B-Squat** - 20lb
 9. **Band Single-Leg Barbell Squat** - 20lb
+
+*Build to Doing Safely*
+10. **Pistol Squat**
+	1. Box Elevated Lowering pistol squat
+	2. Box Elevated Raising pistol squat
+	3. hand on wall pistol squat
+11. **Barbell Pistol Squat**
 
 *Best Pairing*
 - **Hack Squat**  + **Bulgarian Split Squat**  + **Band Single-Leg Barbell Squat**

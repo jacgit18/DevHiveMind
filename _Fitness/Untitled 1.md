@@ -60,18 +60,6 @@ Avoid squatting with running shoes and squat wider as well
 
 
 
-pistol squat prep strengthening
-
-
-box pistol squat standing from seated position on box or something
-eccentric pistol squat practice lowering on one leg
-
-hand to wall pistol squat 
-
-leg on high box pistol squat starting in single leg squatting position then pushing up
-
-
-Pick a day to not wear running shoes to do barbell trap bar exercises
 
 
 [Swiss Ball Side Flexion - Level 1 - GymCalc.com - YouTube](https://youtu.be/kFty8-wF69k?si=uAMaVNjSfn33ebzw)
@@ -159,17 +147,16 @@ do this but start push up position and go to seated position not as much holding
 
 
 
-[Cable Lateral Walk - YouTube](https://youtu.be/nw8NjG2YOLY?si=KAo4G6B3_5Av1s_t)
-
-
-[Lateral Sled Drag - YouTube](https://youtu.be/rGtYmX2aeAA?si=PnniyFsIluLeViKa)
+[Cable Lateral Walk](https://youtu.be/nw8NjG2YOLY?si=KAo4G6B3_5Av1s_t)
 
 
 
-Kettlebell Swing before man maker
 
-[Dumbbell Man Maker](https://youtu.be/rXjJ46zoQrM?si=XtGPVO8zeVQeapj6)(Easier)
-[Kettlebell Man Maker](https://youtu.be/P4BIVAgJbZY?si=_gnVpDS6HX7WgacW)(Harder)
+
+
+
+
+
 
 
 
