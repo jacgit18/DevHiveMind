@@ -160,7 +160,7 @@ Start with a dynamic stretch to Improve blood flow and flexibility. End with a s
 - Elevated Pigeon Stretch - On [incline bench](https://youtu.be/szFOKnVgGpQ?si=r0IMfaQKljbJeS6P) then progress to [flat bench](https://youtu.be/BmVEn3LfHcg?si=ZDSdN6h4TePiPIj8) or stick to floor (30 sec per side) 
 - [Cossack Squat](https://youtu.be/fyAl4o1BGVo?si=OalBzfY8-KxgS7qA)
 - [Forward Fold Stretch](https://youtu.be/goN4rWbQUn4?si=pPni5D3dJWgLUboT) 
-- Standing Pancake
+- [Standing Pancake](https://youtu.be/CJqdb_HKzzY?si=70QbUrfcSt6PdYWb)
 - [Seated Pancake](https://youtu.be/B1_YA47gtm0?si=_oBDpaLBejKI-8mV)
 - [Middle split](https://youtu.be/hsNvqUmCAAo?si=SbGmouCgXsZ44_tJ) 
 
