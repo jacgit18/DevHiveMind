@@ -155,12 +155,18 @@ Start with a dynamic stretch to Improve blood flow and flexibility. End with a s
 
 - [Supine Figure 4 Stretch](https://youtu.be/xVq2-g_leTI?si=ww6BkkfN_oYEWmdC) - keep back flat
 - Butterfly
+- BirdDog  
+- [[Lower#^9744bc |Dynamic Cat-Cow]] → Hold Cat-Cow Stretch – **6–8 transitions + 10s hold**
 - Elevated Pigeon Stretch - On [incline bench](https://youtu.be/szFOKnVgGpQ?si=r0IMfaQKljbJeS6P) then progress to [flat bench](https://youtu.be/BmVEn3LfHcg?si=ZDSdN6h4TePiPIj8) or stick to floor (30 sec per side) 
 - [Cossack Squat](https://youtu.be/fyAl4o1BGVo?si=OalBzfY8-KxgS7qA)
 - [Forward Fold Stretch](https://youtu.be/goN4rWbQUn4?si=pPni5D3dJWgLUboT) 
 - Standing Pancake
 - [Seated Pancake](https://youtu.be/B1_YA47gtm0?si=_oBDpaLBejKI-8mV)
 - [Middle split](https://youtu.be/hsNvqUmCAAo?si=SbGmouCgXsZ44_tJ) 
+
+Other Stuff
+- [Spinal Waves](https://youtu.be/KCfh_wCssK8?si=QaERnrtYGrEVxAsZ)
+- [Body Waves](https://youtu.be/kBFg1mgCe0A?si=VyoasKccy3rlSq5D)
 
 #### **1. Raise (Increase Body Temp & Heart Rate)**
 _~2–3 minutes total – pick 2–3_ or pick one to do for the whole time.
@@ -198,9 +204,11 @@ _~2–3 minutes total – pick 2–3_ or pick one to do for the whole time.
 _~2–3 minutes total – pick 4–5_
 ##### **Grounded On Back**
 - Glute Bridges – **10–12 reps**
-- [Dead Bug ](https://youtu.be/VRpXreaHz7w?si=MSTm2UNzlRLyQt3E) hand pushed against wall alternating pushing heals down - Anti-extension
 - [Back Widows](https://www.youtube.com/watch?v=JdwsVHc6oQ4)
 - Descending flutter kicks
+- [Dead Bug ](https://youtu.be/VRpXreaHz7w?si=MSTm2UNzlRLyQt3E)(Anti-extension) - hand pushed against wall alternating pushing heals down. Try [BJJ Variation](https://youtu.be/M14fmjvDXMo?si=KpG6WH6nQ5Qdl8Bm) keeping core engaged and upper and lower body connected extended foot alternating height of foot to the ground. 
+
+
 
 ##### **Grounded On Side**
 - [[Core#^5805af |Side Plank Hip dip]] (floor or bench feet on ground or bench) - **10–12 reps** - Lateral flexion
@@ -209,9 +217,8 @@ _~2–3 minutes total – pick 4–5_
 - **Side Plank Leg Raises** – From a side plank, lift top leg up/down; glutes + core activation.
 - ***Rotational Side Plank*** -  3–4 slow rotations per side
 ##### **Grounded On Front**
-- *BirdDog* – **20–30s hold** - 3 to 4 times a week
 - [[Lower#^01867f |Quadruped Kickbacks]] – **8–10 reps/side**
-- Plyometric Plank Shoulder Taps – **8–12 taps** - use bands if doing regular plank
+- Plank Shoulder Taps – **8–12 taps**
 - Push-Up Hold (top and bottom) – **10s each**
 - [[Upper#^5ff8c1 |Scapular Push-Ups ]] – **10–12 reps with deep breathing**
 	- Breathe deeply as you push your chest outward, squeezing your shoulder blades together. Then, reverse the motion by pulling your chest inward and separating your shoulder blades, keeping your elbows straight throughout the movement.
@@ -235,7 +242,8 @@ _~2–3 minutes total – pick 4–5_
 - [Knee Circles](https://youtu.be/ROiyq3-2ljY?si=jmBGQDk3fKu4mPAt)
 - [Dumbbell Side Raise with Single Leg Balance](https://youtu.be/7cfhwCU2-y0?si=CxwXSgm6RWSQF8Ah)
 - [Offset Walk](https://www.youtube.com/watch?v=Fc-27p17TPE)
-- [Wall Assisted QL Stretch - YouTube](https://youtu.be/ZYkOmJZXFdQ?si=cQ23f2Il-1cjt4Tf)
+- [Wall Assisted QL Stretch](https://youtu.be/ZYkOmJZXFdQ?si=cQ23f2Il-1cjt4Tf)
+- [Hip Airplane](https://youtu.be/2hIL15iGuNA?si=4F-c9pubcVK9mTze)
 
 **Optional Add-In:**
 - **[Duck Walks](https://www.youtube.com/watch?v=qM3GNLKI9rg)** – **2 passes across gym or 30–45 seconds** - with mediball
@@ -264,12 +272,12 @@ _~3–4 minutes total – choose a flow or 3–5 moves_
 ##### **Grounded On Front**
 - **Inchworms** – Stand → walk hands to plank → back up, 5–8 reps
 - **World’s Greatest Stretch** – Deep lunge + rotation opposite side arm in relation to front kneeling knee, 3–5 per side
-- [[Lower#^9744bc |Dynamic Cat-Cow]] → Hold Cat-Cow Stretch – **6–8 transitions + 10s hold**
 - Dynamic Hip Flexor Swings -> [[Lower#^357346 |Lizard Pose ]] (Just a lower to the ground version with elbows down) – **6 swings + 10s hold/side**
 	- For dynamic part lift your back knee off the ground if it was resting begin rocking forward and backward, shifting your weight between your front foot and back toes.
 - [Dive Bomber Push-Up](https://www.youtube.com/watch?v=mvNcSF-nXg4)
 - [Band Assisted Thoracic Rotation](https://www.youtube.com/watch?v=3NgyG2JImfw)
 ##### **Standing** - **10 reps Each Limb**
+- [Cross leg Lateral Flexion](https://youtu.be/HxZjsIYVPd4?si=8zxedkghLRZMA7ln)
 - PVC Walk
 - **[Couch Stretch](https://youtu.be/Fg-lwNBzVV8?si=dVeSmrUB9MDLOurz)**
 - ***Scapular Wall Slides*** – Slide arms up/down while back touches wall
@@ -436,7 +444,6 @@ Prioritize resistance bands for explosive phase they can be used for other phase
 - [ ] For kettlebell RDL use opposite side where you are holding the Kettlebell this side that is lifting the leg.
 - [ ] For squats do them with wide stance with toes pointed out slightly not the widest stance just not narrow.
 - [ ] Keep elbows high above head and alt cable height at hip and foot level for Overhead extension.
-- [ ] When doing Incline **reverse crunch** a flexion excercise suck in belly button towards bench. 
 - [ ] Try all the way down push-ups with a hand release at the bottom and then push back up. 
 - [ ] Practice offset with one weight on barbell and at home with resistance band kettlebell.
 - [ ] Try Larsen bench press on flat bench or incline bench hovering or keeping straight legs to focus more on core.
@@ -492,7 +499,7 @@ Allowed to practice each excercise *here* max twice a week.
 - **Wide Seated Dip** + **Chest Fly**
 #### **Session 2: Pull Focus**
 Chin ups higher priority alternate each quarter or even month. Try Burpee to Pull Up. 
-1. **Band/Barbell/Dumbbell/Landmine Single Leg RDL** - 10lb to 20lb
+1. **Band/Barbell/[Cable](https://youtu.be/2M1Mikqf5lY?si=1Me7DqZvB5XL1Orm)/Dumbbell/Landmine Single Leg RDL** - 10lb to 20lb
 2. **Narrow-Grip Chin-Up** 
 3. **Narrow-Grip Pull-Up** 
 4. **Zottman Curl Standing(Easiest)/[Seated](https://youtu.be/cnEcZiOeFO0?si=4nSqffNzqQyAvXBj)(hardest)** - go half and half  – 20lb
@@ -504,6 +511,7 @@ Chin ups higher priority alternate each quarter or even month. Try Burpee to Pul
 10. **Lateral Head Single-Arm Tricep Extension**(Top Angle) – 20lb
 11. **Cable Pancake Stretch**(Low Angle) - 49.5
 12. **Back Extension** - 15lb - do consistently for a 2 weeks and try ft to single leg variation 
+13. **[Low Cable Goblet Squat](https://youtu.be/f6eI0JI9AYA?si=TTKH4FrAivJYEyd0)** - 
 
 
 *Build to Doing Safely*
@@ -562,7 +570,7 @@ All leg cable excercise are done at a low angle. Avoid squatting with running sh
 
 When descending into a squat, avoid letting your hips tuck under or round toward your legs at the bottom — a movement known as the “butt wink.” This can place unnecessary stress on your lower back and increase the risk of injury. A common cause is limited ankle mobility. As a short-term fix, try elevating your heels with weight plates or squat wedges to help you stay more upright and maintain proper hip and spine alignment. Just note this doesn’t address the root issue. Throughout the movement, your hips, core, and chest should move as one solid unit — no collapsing or out-of-sync sequencing.
 
-Lean forward a little on lunges keeping neutral spine specifically dumbbell to simulate shooting a shot. 
+Lean forward a little on [lunge/squat](https://youtu.be/DfGu48vMmlU?si=DbDYi5Wq3JKopM3P) keeping neutral spine specifically dumbbell to simulate shooting a shot. 
 
 #### Session 1: Main Compound Squat & Lunge Patterns
 [How to PROPERLY Squat for Growth (4 Easy Steps)](https://youtu.be/gcNh17Ckjgg?si=L0Lmos_bpSJcs9u1)

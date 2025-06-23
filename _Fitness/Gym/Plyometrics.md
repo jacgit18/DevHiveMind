@@ -11,6 +11,25 @@ Relates:
 Peer Reviewed: 0
 dg-publish:
 ---
+
+
+[The ONLY 2 Exercises You Need For A Thick Back - YouTube](https://youtu.be/JdjJC6eIk44?si=435iItkw0NEV0vrm)
+
+45 degree angle wide grip  low row for mid back forearms aligned with hands no outside or inside when pulling back lean back and brace core  to pull at a angle watch out and make sure it doesn't feel like a shrug keep back straight 
+
+let back open up while fully extend and contract on concentric
+
+alt use incline bench for chested supported row pushing chest through bench
+
+standing chest supported upright low row pulling motion kind of like a reverse dip motion
+
+
+
+
+
+
+
+
 ### **Program Structure**
 
 | Phase       | Duration   | Primary Focus          | Plyometric Emphasis              | Hypertrophy Integration            |
@@ -19,126 +38,67 @@ dg-publish:
 | **Phase 2** | Weeks 5–8  | **Reactive Strength**  | High-intensity plyos (SSC focus) | Strength-focused (5–8 reps)        |
 | **Phase 3** | Weeks 9–12 | **Peak Power + Mass**  | Sport-specific explosiveness     | High volume (hypertrophy priority) |
 
+
+
 ---
 
 ### **Phase 1: Foundational Power (Weeks 1–4)**
 
-**Goal:** Teach proper landing mechanics, prep tendons/joints, build baseline power.
+**Plyometrics (Low Intensity)**
 
-- **Plyo Work:** 2x/week (lower body focus)  
-- **Hypertrophy Option:** 1–2 accessory lifts post-plyo.
-
-#### **Sample Session (Lower Body Explosive Day)**
-
-1. **Dynamic Warm-Up**  
-   - High knees, butt kicks, lateral skips(gallop) (2x20m each)
-
-2. **Plyometrics (Low Intensity)**  
-   - **[Box Jumps](https://youtu.be/BeqK8ksNC-E?si=egDA5gHf1YU0RlU1)** – 3x5 (controlled landing)  
-   - **Squat Jumps** – 3x6 (pause at bottom)  
-   - **Single-Leg Hops** – 2x5/leg (focus on stability)
-
-   - **Depth Drops → Broad Jumps** (3x5): For horizontal explosiveness.  
-
+- [**Box Jumps**](https://youtu.be/BeqK8ksNC-E?si=egDA5gHf1YU0RlU1) – 3x5 (emphasize controlled landings)
+- **Single-Leg Hops** – 2x5/leg (focus on stability and balance)
+- **Depth Drops → Broad Jumps** – 3x5 (build horizontal explosiveness)
 
 
 ---
 
 ### **Phase 2: Reactive Strength (Weeks 5–8)**
 
-**Goal:** Maximize stretch-shortening cycle (SSC) for explosive power.
+**Day 1 – Vertical Emphasis + Jump Mechanics**
 
-- **Plyo Work:** 2x/week (higher intensity)  
-- **Hypertrophy Option:** Reduced to 1 accessory lift (avoid fatigue)
-
-#### **Sample Session**
-
-1. **Dynamic Warm-Up**  
-   - Depth drop to vertical jump – 2x5
-
-2. **Plyometrics (High Intensity)**  
-   - **Depth Jumps** (12–24" box) – 3x5  
-   - **Broad Jumps** – 3x5 (max distance)  
-   - **Lateral Bound to Stick** – 2x4/side
-
-3. **Optional Strength-Hypertrophy Lift**  
-   - **Trap Bar Jumps** (20–30% 1RM) – 3x5
-
----
-
-
-### **Phase 3: Advanced Calisthenics (Ongoing)**  
-
-**Goal**: Mastery for functional strength and injury resilience.  
-
-- **Skill-Based Additions**:  
-
-  - **Muscle-Ups** (transition from explosive pull-ups).  
-
-  - **Front Lever Progressions** (for core/back strength).  
-
-  - **Handstand Push-Ups** (shoulder stability/striking power).  
-
-  
-
-**Frequency**: 2x/week (skill work post-training or on mobility days).  
-
-  
-
-[Lateral Bound to Box Jump - YouTube](https://youtu.be/0rVHnVFBliY?si=2oUKjvjmW2vcRkcJ)
-
-
-### **Phase 3: Peak Power + Mass (Weeks 9–12)**
-
-**Goal:** Blend maximal explosiveness with hypertrophy for functional mass.
-
-- **Plyo Work:** 1x/week (maintenance), 1x power-focused lift  
-- **Hypertrophy Priority:** 3–4 sessions/week
-
-#### **Sample Power/Hypertrophy Split**
-
-| Day       | Focus               | Plyo/Explosive Element    | Hypertrophy Work               |
-| --------- | ------------------- | ------------------------- | ------------------------------ |
-| **Day 1** | Lower Power         | **Weighted Jumps** (4x4)  | Front Squats 4x6               |
-| **Day 2** | Upper Hypertrophy   | *None*                    | Bench 4x8, Rows 4x10           |
-| **Day 3** | Full-Body Explosive | **Med Ball Throws** (3x6) | Clean Pulls 3x5                |
-| **Day 4** | Lower Hypertrophy   | *None*                    | Leg Press 4x12, Ham Curls 4x10 |
-
-use explosive sets and reps 3x10
-
-
-**Day 1 – Jump Mechanics + Vertical Focus**
-
-- Dynamic Warm-up
+- **Dynamic Warm-Up** – Include depth drop to vertical jump
     
-- [Depth Jumps](https://youtu.be/AzPJZHOmGEg?si=XtatqKBQg9eL9Yli)
+- [**Depth Jumps**](https://youtu.be/AzPJZHOmGEg?si=XtatqKBQg9eL9Yli) – focus on minimal ground contact time
     
-- Tuck Jumps
+- **Broad Jumps** – 3x5 (maximize distance)
     
-- Pogo Hops
-    
-- Split Squat Jumps
-    
-- (Optional) Trap Bar Deadlifts
-    
-- Cooldown
-    
+- **Split Squat Jumps** – focus on vertical drive and soft landings
+
 
 **Day 2 – Horizontal Power + Unilateral Focus**
 
-- Warm-up
+- [**Lateral Bound to Box Jump**](https://youtu.be/0rVHnVFBliY?si=2oUKjvjmW2vcRkcJ)
     
-- Broad Jumps
+-  **Lateral Bound to Stick** – 2x4/side (stabilize on landing)
     
-- Single-Leg Bounds
+- **Broad Jumps** – reinforce horizontal output
     
-- Lateral Skater Hops
+- **Single-Leg Bounds** – emphasize explosive push-off
     
-- Kneeling Jumps
+- **Lateral Skater Hops** – reactive lateral coordination
     
-- (Optional) Bulgarian Split Squats
+- **Kneeling Jumps** – hip extension and triple flexor explosiveness
     
-- Cooldown
+
+---
+
+### **Phase 3: Peak Power + Calisthenics (Weeks 9–12 and beyond)**
+
+**Advanced Calisthenics Focus**
+
+- **Muscle-Ups** – progression from explosive pull-ups (for full-body coordination)
+
+- **Front Lever Progressions** – strengthen posterior chain and core
+
+
+
+
+
+[14 Calisthenics Exercises on Gymnastics Rings - for every Level](https://www.gornation.com/blogs/news/exercises-gymnastics-rings)
+
+
+
 
 
 
@@ -158,3 +118,4 @@ use explosive sets and reps 3x10
 [Supine Shoulder Slides - Hooklying Position - YouTube](https://youtu.be/ODc0f0ZPeOE?si=ssRpY3rY2AlblSXx)
 
 
+[Rotator cuff 90 degrees external rotation with dumbbell - YouTube](https://youtu.be/EUMsYC_W3aI?si=GFgIUffRsKjwesZU)
