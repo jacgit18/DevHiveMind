@@ -152,10 +152,10 @@ Start with a dynamic stretch to Improve blood flow and flexibility. End with a s
 #### 0. Priority To Develop Split 
 *Perform Static Stretch at end of workout 4 times a week 30 sec each*
 **In this Order**
-- [Supine Figure 4 Stretch](https://youtu.be/xVq2-g_leTI?si=ww6BkkfN_oYEWmdC) - keep back flat
+- [Supine Figure 4 Stretch](https://youtu.be/xVq2-g_leTI?si=ww6BkkfN_oYEWmdC)(Not Required for Split) - keep back flat
 - Butterfly
-- BirdDog  
-- [[Lower#^9744bc |Dynamic Cat-Cow]] → Hold Cat-Cow Stretch – **6–8 transitions + 10s hold**
+- BirdDog(Not Required for Split)  
+- [[Lower#^9744bc |Dynamic Cat-Cow]] → Hold Cat-Cow Stretch – (Not Required for Split)
 - Elevated Pigeon Stretch - On [incline bench](https://youtu.be/szFOKnVgGpQ?si=r0IMfaQKljbJeS6P) then progress to [flat bench](https://youtu.be/BmVEn3LfHcg?si=ZDSdN6h4TePiPIj8) or stick to floor (30 sec per side) 
 - [Cossack Squat](https://youtu.be/fyAl4o1BGVo?si=OalBzfY8-KxgS7qA)
 - [Forward Fold Stretch](https://youtu.be/goN4rWbQUn4?si=pPni5D3dJWgLUboT) 
