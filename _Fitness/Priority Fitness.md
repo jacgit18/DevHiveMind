@@ -156,7 +156,7 @@ Start with a dynamic stretch to Improve blood flow and flexibility. End with a s
 - [Supine Figure 4 Stretch](https://youtu.be/xVq2-g_leTI?si=ww6BkkfN_oYEWmdC) - keep back flat
 - Butterfly
 - Elevated Pigeon Stretch - On [incline bench](https://youtu.be/szFOKnVgGpQ?si=r0IMfaQKljbJeS6P) then progress to [flat bench](https://youtu.be/BmVEn3LfHcg?si=ZDSdN6h4TePiPIj8) or stick to floor (30 sec per side) 
-- Cossack Squat
+- [Cossack Squat](https://youtu.be/fyAl4o1BGVo?si=OalBzfY8-KxgS7qA)
 - [Forward Fold Stretch](https://youtu.be/goN4rWbQUn4?si=pPni5D3dJWgLUboT) 
 - Standing Pancake
 - [Seated Pancake](https://youtu.be/B1_YA47gtm0?si=_oBDpaLBejKI-8mV)
@@ -219,6 +219,7 @@ _~2–3 minutes total – pick 4–5_
 - ***Elbow Push-ups (Pike Push-up Focus)*** - 8 reps
 - ***Scorpion Stretch*** - 30 sec each side
 - ***Supine lower body*** - t position leg raise to opposite hand (6 reps/side)
+- [Tuck Jump to L Sit](https://youtu.be/vnr7epVV6YE?si=IZJNc7a61GR9Tloo) - do this but start push up position and go to seated position keeping hands down without the hold and go back to push up position
 
 ##### **Standing**
 - Calf Raises – **10–12 reps**
@@ -448,11 +449,13 @@ Outside of best parings other parings you do make it a light day instead of a in
 
 Weight ranges lowest explosive power weight to max strength weight. Hit Strength phase variation of the exercise of favorite excercise then shift to trying others and increasing weight and stuff once your consistently hitting 4x8. 
 ### Full Body Program
+- **[Cable Lateral Walk](https://youtu.be/nw8NjG2YOLY?si=KAo4G6B3_5Av1s_t)**
 - **Kettlebell Swing** 
 - **Sled** - twice a week push and pull - 50lb
 	- Backward walk, seated pancake pull, standing pull
 	- [Lateral Sled Drag](https://youtu.be/rGtYmX2aeAA?si=PnniyFsIluLeViKa)
 - **Trap bar Deadlift** -  1 time a week - 50lb
+- **Standing [Good Mornings](https://youtu.be/dEJ0FTm-CEk?si=LAPsPziQZQNGBvph)**
 
 *Build to Doing Safely*
 - **Barbell Clean Jerk Press** - 1 time a week - 20lb
