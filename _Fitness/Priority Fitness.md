@@ -179,7 +179,8 @@ _~2–3 minutes total – pick 2–3_ or pick one to do for the whole time.
 - [[Upper#^4a9cd1 |Pike Push-Ups]] – **6–8 reps**
 - [[Core#^60b781 |Tuck Jumps to Plank]]– **6 reps**
 
-##### **Standing**
+##### **Standing** 
+*Skip and pogo hop if in a hurry before sprinting*
 - ***Free Flow Skipping*** at or on the way to gym.
 - **Shoulder Rolls** – Forward & backward, *10 reps each*
 - **Torso Twists** – Controlled rotation side-to-side - like throwing hook, *15–20 reps*
@@ -222,9 +223,9 @@ _~2–3 minutes total – pick 4–5_
 - [Tuck Jump to L Sit](https://youtu.be/vnr7epVV6YE?si=IZJNc7a61GR9Tloo) - do this but start push up position and go to seated position keeping hands down without the hold and go back to push up position
 
 ##### **Standing**
-- Calf Raises – **10–12 reps**
+- Calf Raises - on steps also leaning on bead on toes
 - [Patrick Step](https://youtu.be/jAbO12BipQU?si=oWN-xGlMG-rAokpl)
-- Shoulder Band Pull-Aparts – **15–20 reps**
+- Shoulder Band Pull-Aparts
 - Standing [[Lower#^b0a0df|TIB Raise]]
 - [[Lower#^8a3d01|ISO Calf Raise with Lunge]]
 - [[Lower#^58f942|Lunge ISO Heel Raise]]
@@ -234,6 +235,7 @@ _~2–3 minutes total – pick 4–5_
 - [Knee Circles](https://youtu.be/ROiyq3-2ljY?si=jmBGQDk3fKu4mPAt)
 - [Dumbbell Side Raise with Single Leg Balance](https://youtu.be/7cfhwCU2-y0?si=CxwXSgm6RWSQF8Ah)
 - [Offset Walk](https://www.youtube.com/watch?v=Fc-27p17TPE)
+- [Wall Assisted QL Stretch - YouTube](https://youtu.be/ZYkOmJZXFdQ?si=cQ23f2Il-1cjt4Tf)
 
 **Optional Add-In:**
 - **[Duck Walks](https://www.youtube.com/watch?v=qM3GNLKI9rg)** – **2 passes across gym or 30–45 seconds** - with mediball
@@ -269,6 +271,7 @@ _~3–4 minutes total – choose a flow or 3–5 moves_
 - [Band Assisted Thoracic Rotation](https://www.youtube.com/watch?v=3NgyG2JImfw)
 ##### **Standing** - **10 reps Each Limb**
 - PVC Walk
+- **[Couch Stretch](https://youtu.be/Fg-lwNBzVV8?si=dVeSmrUB9MDLOurz)**
 - ***Scapular Wall Slides*** – Slide arms up/down while back touches wall
 - ***Leg Swings*** – Front/back & side-to-side
 - ***Walking Lunges + Reach*** – Forward lunge + arms overhead
@@ -449,6 +452,7 @@ Outside of best parings other parings you do make it a light day instead of a in
 
 Weight ranges lowest explosive power weight to max strength weight. Hit Strength phase variation of the exercise of favorite excercise then shift to trying others and increasing weight and stuff once your consistently hitting 4x8. 
 ### Full Body Program
+- **[Base Rows](https://youtu.be/Qmw9TKnQ9NY?si=gNe_2K45P71UKz5y)**
 - **[Cable Lateral Walk](https://youtu.be/nw8NjG2YOLY?si=KAo4G6B3_5Av1s_t)**
 - **Kettlebell Swing** 
 - **Sled** - twice a week push and pull - 50lb
@@ -554,7 +558,11 @@ Chin ups higher priority alternate each quarter or even month. Try Burpee to Pul
 - **Landmine Single-Leg RDL** + **Dumbbell Floor Press**/**Incline Dumbbell Bench Press** + **Single-Arm Tricep Extension** + **Landmine Anti-Rotations** or **Pallof Press** + **Super ROM Lateral Raise Wrist Curl**
 - **Narrow-Grip Pull-Up/Chin-Up** + **Zottman Curl** + **Back Extension** + **Rev Crunch** or **Kneeling Cable Crunch**
 ### Leg Programming 
-All leg cable excercise are done at a low angle.
+All leg cable excercise are done at a low angle. Avoid squatting with running shoes and squat wider as well if issues in squatting form.
+
+When descending into a squat, avoid letting your hips tuck under or round toward your legs at the bottom — a movement known as the “butt wink.” This can place unnecessary stress on your lower back and increase the risk of injury. A common cause is limited ankle mobility. As a short-term fix, try elevating your heels with weight plates or squat wedges to help you stay more upright and maintain proper hip and spine alignment. Just note this doesn’t address the root issue. Throughout the movement, your hips, core, and chest should move as one solid unit — no collapsing or out-of-sync sequencing.
+
+Lean forward a little on lunges keeping neutral spine specifically dumbbell to simulate shooting a shot. 
 
 #### Session 1: Main Compound Squat & Lunge Patterns
 [How to PROPERLY Squat for Growth (4 Easy Steps)](https://youtu.be/gcNh17Ckjgg?si=L0Lmos_bpSJcs9u1)

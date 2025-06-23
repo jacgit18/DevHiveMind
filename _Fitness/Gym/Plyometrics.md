@@ -139,3 +139,22 @@ use explosive sets and reps 3x10
 - (Optional) Bulgarian Split Squats
     
 - Cooldown
+
+
+
+
+[Half Kneeling Thoracic Spine Rotation with a Foam Roller](https://youtu.be/xkiQPLWeLZo?si=tUY19TzqQ5pJxqdi)
+
+[Half Kneeling Thoracic Windmill (Open) - YouTube](https://youtu.be/pFqBNPIhNtA?si=Vgvf_AI_JRIaTTsM)
+
+
+[Thoracic Seated Rotation + Side Flexion - YouTube](https://youtu.be/-Mpiy5qa8B8?si=F0Kb_DUluXDODs4L)
+
+
+[Foam Roller Thoracic Extension - YouTube](https://youtu.be/9Y11Kc0E0og?si=VLP-WKR1BoKK7fA1)
+
+[Elevated Prayer Stretch - YouTube](https://youtu.be/c7cnNg6rBes?si=fo9zL9t_O3WrLgrR)
+
+[Supine Shoulder Slides - Hooklying Position - YouTube](https://youtu.be/ODc0f0ZPeOE?si=ssRpY3rY2AlblSXx)
+
+
