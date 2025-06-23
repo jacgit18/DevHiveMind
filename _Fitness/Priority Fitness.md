@@ -152,7 +152,6 @@ Start with a dynamic stretch to Improve blood flow and flexibility. End with a s
 #### 0. Priority To Develop Split 
 *Perform Static Stretch at end of workout 4 times a week 30 sec each*
 **In this Order**
-
 - [Supine Figure 4 Stretch](https://youtu.be/xVq2-g_leTI?si=ww6BkkfN_oYEWmdC) - keep back flat
 - Butterfly
 - BirdDog  
