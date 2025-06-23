@@ -199,6 +199,7 @@ _~2–3 minutes total – pick 4–5_
 - Glute Bridges – **10–12 reps**
 - [Dead Bug ](https://youtu.be/VRpXreaHz7w?si=MSTm2UNzlRLyQt3E) hand pushed against wall alternating pushing heals down - Anti-extension
 - [Back Widows](https://www.youtube.com/watch?v=JdwsVHc6oQ4)
+- Descending flutter kicks
 
 ##### **Grounded On Side**
 - [[Core#^5805af |Side Plank Hip dip]] (floor or bench feet on ground or bench) - **10–12 reps** - Lateral flexion
@@ -221,6 +222,7 @@ _~2–3 minutes total – pick 4–5_
 
 ##### **Standing**
 - Calf Raises – **10–12 reps**
+- [Patrick Step](https://youtu.be/jAbO12BipQU?si=oWN-xGlMG-rAokpl)
 - Shoulder Band Pull-Aparts – **15–20 reps**
 - Standing [[Lower#^b0a0df|TIB Raise]]
 - [[Lower#^8a3d01|ISO Calf Raise with Lunge]]
@@ -333,6 +335,7 @@ The general principles of **training phases** like strength and hypertrophy appl
 - [Felix Bar](https://youtu.be/mkRDoV83Y0M?si=BSPRPBericJza2p_) can be a  good arm warm up.
 - You can use **heavy resistance bands combined with a weight plate** to create a **pseudo weighted vest**. This setup can be used for exercises like **pull-ups, dips, and other bodyweight movements** to add resistance without needing an actual vest.
 - For resistance band exercises focus on **Explosive Power** or **Hypertrophy**,  you can still do strength if your still weak in certain area's but you will eventually plateau you can also mix up bands clipping multiple ones together.
+- Any exercises with deficit like deficit deadlift helps gets you into a deeper position and exploding out of it and increase range of motion but build to it.
 
 ## Phases
 **Starting Point** will switch to optimal order of **EP(PG/RC)** → **Strength CM(PG/RC)** → **Hypertrophy(PG/RC)**  
@@ -445,10 +448,12 @@ Outside of best parings other parings you do make it a light day instead of a in
 
 Weight ranges lowest explosive power weight to max strength weight. Hit Strength phase variation of the exercise of favorite excercise then shift to trying others and increasing weight and stuff once your consistently hitting 4x8. 
 ### Full Body Program
-- **Sled** - twice a week push and pull. - 50lb
+- **Sled** - twice a week push and pull - 50lb
+	- Backward walk, seated pancake pull, standing pull
 
 *Build to Doing Safely*
-- **Barbell Clean Jerk Press** - 1 time a week. - 20lb
+- **Barbell Clean Jerk Press** - 1 time a week - 20lb
+- **Trap bar Deadlift** -  1 time a week - 50lb
 - **[Turkish Get-Up](https://youtu.be/jFK8FOiLa_M?si=L8oB-1-BZ8M6Wfsp)** - 10lb to 15lb
 - **[Single-Leg Snatch (RDL, Plate, Hip Lock)](https://youtu.be/L9hk1LiqGsU?si=-dJyrtt3Mq7XezCu)**
 ### Right to Bare Arms Program
@@ -473,7 +478,7 @@ Allowed to practice each excercise *here* max twice a week.
 - **Arnold Press** + **Landmine Russian Twist** + **6-Way Shoulder Raise Wrist Curl** 
 - **Incline Dumbbell Bench/Floor Press** + **Landmine Rotational Press** + **Overhead Barbell/TrapBar Press** 
 - **Incline Dumbbell Bench/Floor Press** + **Overhead Barbell/TrapBar Press** + **6-Way Shoulder Raise Wrist Curl** 
-- **Wide Seated Dip** +**Chest Fly**
+- **Wide Seated Dip** + **Chest Fly**
 #### **Session 2: Pull Focus**
 Chin ups higher priority alternate each quarter or even month. Try Burpee to Pull Up. 
 1. **Band/Barbell/Dumbbell/Landmine Single Leg RDL** - 10lb to 20lb
@@ -545,19 +550,20 @@ Chin ups higher priority alternate each quarter or even month. Try Burpee to Pul
 All leg cable excercise are done at a low angle.
 
 #### Session 1: Main Compound Squat & Lunge Patterns
-[How to PROPERLY Squat for Growth (4 Easy Steps) - YouTube](https://youtu.be/gcNh17Ckjgg?si=L0Lmos_bpSJcs9u1)
+[How to PROPERLY Squat for Growth (4 Easy Steps)](https://youtu.be/gcNh17Ckjgg?si=L0Lmos_bpSJcs9u1)
+*Make Squats Narrow and Deep to improve pistol squat*
 1. **Hack Squat** – 300lb - if ankles begin to lift move feet up
-2. Incline High Bar on trap muscle Squat/Zercher Squat - 50lb
-3. **Single Leg Press** – 180lb
-4. **Walking Barbell Lunge/Zercher Lunge(bar 13)** – 20lb
-5. [Elevated Smith Machine Lunge](https://youtu.be/Yp5O9Cz6Ajg?si=bFGCfbzNqt_JobTA) - try [Elevated Lunge](https://youtu.be/OVFHK2Iev70?si=oiRNDNHznSrNP_RC) with dumbbell at max 40lb to 60lb then switch to free barbell
-6. **Dumbbell Bulgarian Split Squat**(Try [elevated](https://youtu.be/DXK-VbFE6ic?si=NHqOeitXD0h_YQsr) front leg variation) - 20lb 
+2. **Squat/Zercher Squat** - Incline High Bar(on trap muscle)  - 50lb
+3. **Bulgarian Split Squat**(Try [elevated](https://youtu.be/DXK-VbFE6ic?si=NHqOeitXD0h_YQsr) front leg variation) - 20lb
+4. **Single Leg Press** – 180lb
+5. **Walking Barbell Lunge/Zercher Lunge(bar 13)** – 20lb
+6. [Elevated Smith Machine Lunge](https://youtu.be/Yp5O9Cz6Ajg?si=bFGCfbzNqt_JobTA) - try [Elevated Lunge](https://youtu.be/OVFHK2Iev70?si=oiRNDNHznSrNP_RC) with dumbbell at max 40lb to 60lb then switch to free barbell
 7. **Kettlebell Sumo Squat** – 20lb 
 8. **Barbell/Kettlebell B-Squat** - 20lb
 9. **Band Single-Leg Barbell Squat** - 20lb
 
 *Best Pairing*
-- **Hack Squat**  + **Dumbbell Bulgarian Split Squat**  + **Band Single-Leg Barbell Squat**
+- **Hack Squat**  + **Bulgarian Split Squat**  + **Band Single-Leg Barbell Squat**
 - **Kettlebell Sumo Squat** + **Walking Barbell/Zercher Lunge** + **B-Squat**
 - **Hack Squat**/**Kettlebell Sumo Squat**  + **Band Single-Leg Squat** + **Single Leg Press**
 - **B-Squat** + **Walking Barbell/Zercher Lunge** + **Band Single-Leg Barbell Squat** 
