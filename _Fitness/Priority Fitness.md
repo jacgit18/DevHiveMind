@@ -244,8 +244,6 @@ _~2–3 minutes total – pick 4–5_
 - [Wall Assisted QL Stretch](https://youtu.be/ZYkOmJZXFdQ?si=cQ23f2Il-1cjt4Tf)
 - [Hip Airplane](https://youtu.be/2hIL15iGuNA?si=4F-c9pubcVK9mTze)
 
-**Optional Add-In:**
-- **[Duck Walks](https://www.youtube.com/watch?v=qM3GNLKI9rg)** – **2 passes across gym or 30–45 seconds** - with mediball
 
 ###### Sprinting  Specific - 1 min 
 - ***Single-Leg RDL w/ Knee Drive Swing*** - Hold 3 sec in each part explode, swing, and Step.
@@ -304,16 +302,21 @@ _~1–2 minutes total – pick 2_
 ##### **Grounded On Side**
 - **Side Plank with Knee Drive** – From a side plank, explosively drive the top knee toward the chest, mimicking sprint mechanics.
 ##### **Grounded On Front**
-- Clap Push-Ups or Explosive Incline Push-Ups – **4–6 reps**
+- Clap Push-Ups or Explosive Incline Push-Ups 
 
 ##### **Standing**
-- Jump Squats or Band-Assisted – **6–8 reps**
-- Bounding (forward/lateral) – **2–3 passes**
-- Power Skips – **2 passes (20–30 yards)**
+*Low Intensity* 3x5
+- [**Box Jumps**](https://youtu.be/BeqK8ksNC-E?si=egDA5gHf1YU0RlU1)(emphasize controlled landings)
+- **[Depth Drops](https://youtu.be/GZLyZCqF8BQ?si=nBlSwsv1gYkI-E7G) → [Broad Jumps](https://youtu.be/c6Etg7bpFfI?si=OiQycPSYIMS67gHu)**
+- [**Depth Jumps**](https://youtu.be/AzPJZHOmGEg?si=XtatqKBQg9eL9Yli) – focus on minimal ground contact time jump intimidate on impact.  
+- **[Duck Walks](https://www.youtube.com/watch?v=qM3GNLKI9rg)**(maybe with mediball) – **2 passes across gym or 30–45 seconds** 
+- **Single-Leg Hops**(focus on stability and balance)
+- **Split Squat Jumps** – focus on vertical drive and soft landings.
 
+- **[Kneeling Jumps](https://youtu.be/xalzVINlx7Q?si=d47sM7vQ5wTv9og1)**
 ##### Sprinting  Specific - 1 min
-- ***Power skips for height***
-- ***Bounding***
+- ***[Power Skips](https://youtu.be/TQAuoQR2xao?si=eEPRLm7vtgw4Tqdl) for height***
+- ***Bounding***(forward/lateral)
 - ***Sprint activation:***  
 	- 3 build-up sprints (gradually increasing effort from 60% → 80% → 90%)  
   

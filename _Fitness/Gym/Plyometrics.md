@@ -42,28 +42,12 @@ standing chest supported upright low row pulling motion kind of like a reverse d
 
 ---
 
-### **Phase 1: Foundational Power (Weeks 1–4)**
-
-**Plyometrics (Low Intensity)**
-
-- [**Box Jumps**](https://youtu.be/BeqK8ksNC-E?si=egDA5gHf1YU0RlU1) – 3x5 (emphasize controlled landings)
-- **Single-Leg Hops** – 2x5/leg (focus on stability and balance)
-- **Depth Drops → Broad Jumps** – 3x5 (build horizontal explosiveness)
 
 
 ---
 
 ### **Phase 2: Reactive Strength (Weeks 5–8)**
 
-**Day 1 – Vertical Emphasis + Jump Mechanics**
-
-- **Dynamic Warm-Up** – Include depth drop to vertical jump
-    
-- [**Depth Jumps**](https://youtu.be/AzPJZHOmGEg?si=XtatqKBQg9eL9Yli) – focus on minimal ground contact time
-    
-- **Broad Jumps** – 3x5 (maximize distance)
-    
-- **Split Squat Jumps** – focus on vertical drive and soft landings
 
 
 **Day 2 – Horizontal Power + Unilateral Focus**
@@ -72,13 +56,11 @@ standing chest supported upright low row pulling motion kind of like a reverse d
     
 -  **Lateral Bound to Stick** – 2x4/side (stabilize on landing)
     
-- **Broad Jumps** – reinforce horizontal output
-    
 - **Single-Leg Bounds** – emphasize explosive push-off
     
 - **Lateral Skater Hops** – reactive lateral coordination
     
-- **Kneeling Jumps** – hip extension and triple flexor explosiveness
+
     
 
 ---
