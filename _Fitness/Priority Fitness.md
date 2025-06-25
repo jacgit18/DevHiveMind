@@ -513,14 +513,14 @@ Chin ups higher priority alternate each quarter or even month. Try Burpee to Pul
 10. **Lateral Head Single-Arm Tricep Extension**(Top Angle) – 20lb
 11. **Cable Pancake Stretch**(Low Angle) - 49.5
 12. **Back Extension** - 15lb - do consistently for a 2 weeks and try ft to single leg variation 
-13. **[Low Cable Goblet Squat](https://youtu.be/f6eI0JI9AYA?si=TTKH4FrAivJYEyd0)** - 
+13. **[Low Cable Goblet Squat](https://youtu.be/f6eI0JI9AYA?si=TTKH4FrAivJYEyd0)**  - 
 
 
 *Build to Doing Safely*
 11. **Side Lateral QL Extension** - 15lb - same thing after building up from single leg back extension and doing this consistently then do [rotating variation](https://youtu.be/KJwARxV9a6g?si=4C--YLWJnUcFaMmx) once doing consistent 4 sets 8 reps.
 	- Besides doing on back extension machine can do [Lateral Flexion on Stability Ball](https://youtu.be/FrohQ--m7fs?si=Z4akKJnru0ut8S8X)
 12. **Single-Arm Behind-Back Cable Lateral Raise**(Low Angle) – 10lb
-13. **Jefferson Curl**(Try upstairs) - 20lb
+13. **Jefferson Curl Barbell/Kettlebell** - 20lb
 
 
 *Best to Pairing*
@@ -579,7 +579,7 @@ Lean forward a little on [lunge/squat](https://youtu.be/DfGu48vMmlU?si=DbDYi5Wq3
 *Make Squats Narrow and Deep to improve pistol squat*
 1. **Hack Squat** – 300lb - if ankles begin to lift move feet up
 2. **Squat/Zercher Squat** - Incline High Bar(on trap muscle)  - 50lb
-3. **Bulgarian Split Squat**(Try [elevated](https://youtu.be/DXK-VbFE6ic?si=NHqOeitXD0h_YQsr) front leg variation) - 20lb
+3. **Barbell/Dumbbell Bulgarian Split Squat**(Try [elevated](https://youtu.be/DXK-VbFE6ic?si=NHqOeitXD0h_YQsr) front leg variation) - 20lb
 4. **Single Leg Press** – 180lb
 5. **Walking Barbell Lunge/Zercher Lunge(bar 13)** – 20lb
 6. [Elevated Smith Machine Lunge](https://youtu.be/Yp5O9Cz6Ajg?si=bFGCfbzNqt_JobTA) - try [Elevated Lunge](https://youtu.be/OVFHK2Iev70?si=oiRNDNHznSrNP_RC) with dumbbell at max 40lb to 60lb then switch to free barbell
@@ -849,7 +849,7 @@ Lean forward a little on [lunge/squat](https://youtu.be/DfGu48vMmlU?si=DbDYi5Wq3
 | Skull Crusher                       | 5          | 10     | 4     | 8     | High         | Dumbbell                            | Upper           | Tricep                            | [[Upper#^6beb70\|Skull Crusher]]                                                              | Yes       | Seated                                | **N/A**                  | **N/A**     | CM               |
 | Wide Curl                           | 0          | 15     | 4     | 8     | High         | Dumbbell                            | Upper           | Biceps                            | [[Upper#^60f95e \|Wide Curl]]                                                                 | Yes       | Standing                              | **N/A**                  | **N/A**     | CM               |
 | Hammer Curls                        | 10         | 20     | 4     | 8     | High         | Dumbbell                            | Upper - Mid Arm | Biceps Brac-...                   | [[Upper#^eddf76\| Hammer Curls]]                                                              | Yes       | Standing                              | **N/A**                  | **N/A**     | CM               |
-| Bulgarian Split Squat               | 10         | 20     | 4     | 8     | _Highest     | Dumbbell                            | Bottom          | Multi                             | [Bulgarian Split Squat](https://youtu.be/-4LVK1crLSw?si=64dcsLdLjn7vV6S2)                     | **TD**    | Standing                              | **N/A**                  | **N/A**     | CM               |
+| Bulgarian Split Squat               | 10         | 20     | 4     | 8     | _Highest     | Dumbbell                            | Bottom          | Multi                             | [Bulgarian Split Squat](https://youtu.be/-4LVK1crLSw?si=64dcsLdLjn7vV6S2)                     | Yes       | Standing                              | **N/A**                  | **N/A**     | CM               |
 | Lateral Raise                       | 5          | 10     | 4     | 8     | Low          | Dumbbell                            | Upper           | Multi                             | [[Upper#^034a05\| Lateral Raise]]                                                             | Yes       | Standing                              | **N/A**                  | **N/A**     | CM               |
 | Overhead Extension                  | 10         | 15     | 4     | 8     | Med          | Dumbbell                            | Upper           | Tricep                            | [[Upper#^f128a8 \|Overhead Extension]]                                                        | Yes       | Standing                              | **N/A**                  | **N/A**     | CM               |
 | Shoulder Press                      | 15         | 20     | 4     | 8     | Med          | Dumbbell                            | Upper           | Shoulder                          | Shoulder Press                                                                                | Yes       | Seated                                | **N/A**                  | **N/A**     | CM               |
