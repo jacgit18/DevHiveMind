@@ -479,15 +479,15 @@ Weight ranges lowest explosive power weight to max strength weight. Hit Strength
 ### Right to Bare Arms Program
 Allowed to practice each excercise *here* max twice a week.
 #### **Session 1: Push Focus**
-1. **Landmine Z Press** - 10lb 
-2. **Single Arm Chest Press** - 50lb
-3. **Dumbbell Floor** or **Incline Dumbbell Bench** or [Banded Dumbbell Bench](https://youtu.be/nzPvCtwkETM?si=ayLMQYM4NFk1FKbE)(Helps with form) Press– 17.5lb
-4. **Arnold Press** – 20lb
-5. **Overhead Barbell/TrapBar Press** - 20lb
-6. **6-Way Shoulder Raise Wrist Curl**(Consider **[[Wrist Curl]]** Regimen with [variations](https://www.youtube.com/watch?v=nvJ-1suJCTU)) – 10lb
-7. **Landmine Anti Rotations** - 10lb
-8. **Wide Seated Dip** - 125lb
-9. **Chest Fly** - 90lb
+1. **Single Arm Chest Press** - 50lb
+2. **Dumbbell Floor** or **Incline Dumbbell Bench** or [Banded Dumbbell Bench](https://youtu.be/nzPvCtwkETM?si=ayLMQYM4NFk1FKbE)(Helps with form) Press– 17.5lb
+3. **Arnold Press** – 20lb
+4. **6-Way Shoulder Raise Wrist Curl**(Consider **[[Wrist Curl]]** Regimen with [variations](https://www.youtube.com/watch?v=nvJ-1suJCTU)) – 10lb
+5. **Landmine Anti Rotations** - 10lb
+6. **Wide Seated Dip** - 125lb
+7. **Chest Fly** - 90lb
+8. **Landmine Z Press** - 10lb 
+9. **Overhead Barbell/TrapBar Press** - 20lb
 
 *Build to Doing Safely*
 9. **Landmine Russian Twist** - 10lb
@@ -579,7 +579,7 @@ Lean forward a little on [lunge/squat](https://youtu.be/DfGu48vMmlU?si=DbDYi5Wq3
 *Make Squats Narrow and Deep to improve pistol squat*
 1. **Hack Squat** – 300lb - if ankles begin to lift move feet up
 2. **Squat/Zercher Squat** - Incline High Bar(on trap muscle)  - 50lb
-3. **Barbell/Dumbbell Bulgarian Split Squat**(Try [elevated](https://youtu.be/DXK-VbFE6ic?si=NHqOeitXD0h_YQsr) front leg variation) - 20lb
+3. **Barbell/Dumbbell Bulgarian Split Squat**(Try [elevated](https://youtu.be/DXK-VbFE6ic?si=NHqOeitXD0h_YQsr) front leg variation also use leg curl roller) - 20lb
 4. **Single Leg Press** – 180lb
 5. **Walking Barbell Lunge/Zercher Lunge(bar 13)** – 20lb
 6. [Elevated Smith Machine Lunge](https://youtu.be/Yp5O9Cz6Ajg?si=bFGCfbzNqt_JobTA) - try [Elevated Lunge](https://youtu.be/OVFHK2Iev70?si=oiRNDNHznSrNP_RC) with dumbbell at max 40lb to 60lb then switch to free barbell
