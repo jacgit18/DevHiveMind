@@ -73,7 +73,7 @@ color purple
 | ------ | ------ | ---------- |
 | 0      | 120    | 05/01/2025 |
 | 1      | 122    | 06/01/2025 |
-| 2      |        |            |
+| 2      |        | 07/01/2025 |
 | 3      |        |            |
 | 4      |        |            |
 | 5      |        |            |
@@ -322,8 +322,8 @@ _~1–2 minutes total – pick 2_
 - ***Sprint activation:***  
 	- 3 build-up sprints (gradually increasing effort from 60% → 80% → 90%)  
 
-  ###### Build to
-  - **Muscle-Ups** – progression from explosive pull-ups (for full-body coordination)
+###### Build to
+- **Muscle-Ups** – progression from explosive pull-ups (for full-body coordination)
 - **Front Lever Progressions** – strengthen posterior chain and core
 - [14 Calisthenics Exercises on Gymnastics Rings](https://www.gornation.com/blogs/news/exercises-gymnastics-rings) 
 
