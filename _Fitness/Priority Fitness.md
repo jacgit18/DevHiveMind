@@ -304,22 +304,30 @@ _~1–2 minutes total – pick 2_
 ##### **Grounded On Front**
 - Clap Push-Ups or Explosive Incline Push-Ups 
 
-##### **Standing**
-*Low Intensity* 3x5
+##### **Standing** (Low Intensity 3x5)
 - [**Box Jumps**](https://youtu.be/BeqK8ksNC-E?si=egDA5gHf1YU0RlU1)(emphasize controlled landings)
-- **[Depth Drops](https://youtu.be/GZLyZCqF8BQ?si=nBlSwsv1gYkI-E7G) → [Broad Jumps](https://youtu.be/c6Etg7bpFfI?si=OiQycPSYIMS67gHu)**
+- **[Lateral Bound to Box Jump](https://youtu.be/0rVHnVFBliY?si=2oUKjvjmW2vcRkcJ)**
+-  **Lateral Bound to Stick** – 2x4/side (stabilize on landing)
+- **[Depth Drops](https://youtu.be/GZLyZCqF8BQ?si=nBlSwsv1gYkI-E7G) to  [Broad Jumps](https://youtu.be/c6Etg7bpFfI?si=OiQycPSYIMS67gHu)**
 - [**Depth Jumps**](https://youtu.be/AzPJZHOmGEg?si=XtatqKBQg9eL9Yli) – focus on minimal ground contact time jump intimidate on impact.  
 - **[Duck Walks](https://www.youtube.com/watch?v=qM3GNLKI9rg)**(maybe with mediball) – **2 passes across gym or 30–45 seconds** 
 - **Single-Leg Hops**(focus on stability and balance)
 - **Split Squat Jumps** – focus on vertical drive and soft landings.
-
+- **[Lateral Skater Hops](https://youtu.be/Xz27DudBfSs?si=F8c9RaX6OC6byK27)** 
 - **[Kneeling Jumps](https://youtu.be/xalzVINlx7Q?si=d47sM7vQ5wTv9og1)**
 ##### Sprinting  Specific - 1 min
-- ***[Power Skips](https://youtu.be/TQAuoQR2xao?si=eEPRLm7vtgw4Tqdl) for height***
-- ***Bounding***(forward/lateral)
+- ***[Power Skips](https://youtu.be/TQAuoQR2xao?si=eEPRLm7vtgw4Tqdl)(for height)***
+- ***[Bounding](https://youtu.be/5Sz5J7nekKQ?si=zaDlJkq5Xxz90Nmn)***
+- **[Single-Leg Bounds](https://youtu.be/yUmxCUib7Fw?si=b8FHphOMdWMEJZsY)** 
 - ***Sprint activation:***  
 	- 3 build-up sprints (gradually increasing effort from 60% → 80% → 90%)  
-  
+
+  ###### Build to
+  - **Muscle-Ups** – progression from explosive pull-ups (for full-body coordination)
+- **Front Lever Progressions** – strengthen posterior chain and core
+- [14 Calisthenics Exercises on Gymnastics Rings](https://www.gornation.com/blogs/news/exercises-gymnastics-rings) 
+
+
 # Exercises
 >**Barbell Exercises: Upper vs Lower Body Considerations**
 Upper body barbell exercises—like the bench press—can sometimes place unnecessary strain on the wrists due to the fixed, straight bar grip. If the grip doesn’t align naturally with your wrist and shoulder joints, it can cause discomfort or even injury over time.
@@ -468,9 +476,9 @@ Weight ranges lowest explosive power weight to max strength weight. Hit Strength
 	- Backward walk, seated pancake pull, standing pull
 	- [Lateral Sled Drag](https://youtu.be/rGtYmX2aeAA?si=PnniyFsIluLeViKa)
 - **Trap bar Deadlift** -  1 time a week - 50lb
-- **Standing [Good Mornings](https://youtu.be/dEJ0FTm-CEk?si=LAPsPziQZQNGBvph)**
+- ~~**Standing [Good Mornings](https://youtu.be/dEJ0FTm-CEk?si=LAPsPziQZQNGBvph)**~~ not worth doing
 
-*Build to Doing Safely*
+##### Build to Doing Safely
 - **Barbell Clean Jerk Press** - 1 time a week - 20lb
 - **[Turkish Get-Up](https://youtu.be/jFK8FOiLa_M?si=L8oB-1-BZ8M6Wfsp)** - 10lb to 15lb
 - **[Single-Leg Snatch (RDL, Plate, Hip Lock)](https://youtu.be/L9hk1LiqGsU?si=-dJyrtt3Mq7XezCu)**
@@ -489,11 +497,11 @@ Allowed to practice each excercise *here* max twice a week.
 8. **Landmine Z Press** - 10lb 
 9. **Overhead Barbell/TrapBar Press** - 20lb
 
-*Build to Doing Safely*
+##### Build to Doing Safely
 9. **Landmine Russian Twist** - 10lb
 10. **Landmine Rotational Press** - 10lb
 
-*Best Pairing*
+##### Best Pairing
 - **Landmine Z Press** + **Single-Arm Chest Press** + **Landmine Anti-Rotations** 
 - **Arnold Press** + **Landmine Russian Twist** + **6-Way Shoulder Raise Wrist Curl** 
 - **Incline Dumbbell Bench/Floor Press** + **Landmine Rotational Press** + **Overhead Barbell/TrapBar Press** 
@@ -516,14 +524,14 @@ Chin ups higher priority alternate each quarter or even month. Try Burpee to Pul
 13. **[Low Cable Goblet Squat](https://youtu.be/f6eI0JI9AYA?si=TTKH4FrAivJYEyd0)**  - 
 
 
-*Build to Doing Safely*
+##### Build to Doing Safely
 11. **Side Lateral QL Extension** - 15lb - same thing after building up from single leg back extension and doing this consistently then do [rotating variation](https://youtu.be/KJwARxV9a6g?si=4C--YLWJnUcFaMmx) once doing consistent 4 sets 8 reps.
 	- Besides doing on back extension machine can do [Lateral Flexion on Stability Ball](https://youtu.be/FrohQ--m7fs?si=Z4akKJnru0ut8S8X)
 12. **Single-Arm Behind-Back Cable Lateral Raise**(Low Angle) – 10lb
 13. **Jefferson Curl Barbell/Kettlebell** - 20lb
 
 
-*Best to Pairing*
+##### Best Pairing
 - **Single-Leg RDL** + **Narrow-Grip Pull-Up/Chin-Up** + **Back Extension** 
 - **Zottman Curl** + **Super ROM Lateral Raise Wrist Curl**  + **Kneeling Cable Crunch** 
 - **Narrow-Grip Pull-Up/Chin-Up** + **Super ROM Lateral Raise Wrist Curl** + **Kneeling Cable Crunch** 
@@ -535,7 +543,7 @@ Chin ups higher priority alternate each quarter or even month. Try Burpee to Pul
 - **Reverse Crunch** + **Zottman Curl** + **Super ROM Lateral Raise Wrist Curl** 
 - **Rear Delt Fly** + **Single-Arm Behind-Back Cable Lateral Raise** +  **Lateral Head Single-Arm Tricep Extension**
 
-*Best Build to Pairings*
+##### Best to Build to Pairings
 - **Cable Pancake Stretch** + **Side Lateral QL Extension** + **Jefferson Curl**
 
 
@@ -563,7 +571,7 @@ Chin ups higher priority alternate each quarter or even month. Try Burpee to Pul
 9. **Single-Arm Behind-Back Cable Lateral Raise**(Low Angle) 
 
 
-*Best Pairing*
+##### Best Pairing
 - **Single Arm Chest Press** or **Dumbbell Floor Press**/**Incline Dumbbell Bench Press** + **Pallof Press** +  **Landmine Anti-Rotations**
 - **Landmine Single-Leg RDL** + **Dumbbell Floor Press**/**Incline Dumbbell Bench Press** + **Single-Arm Tricep Extension** + **Landmine Anti-Rotations** or **Pallof Press** + **Super ROM Lateral Raise Wrist Curl**
 - **Narrow-Grip Pull-Up/Chin-Up** + **Zottman Curl** + **Back Extension** + **Rev Crunch** or **Kneeling Cable Crunch**
@@ -587,14 +595,14 @@ Lean forward a little on [lunge/squat](https://youtu.be/DfGu48vMmlU?si=DbDYi5Wq3
 8. **Barbell/Kettlebell B-Squat** - 20lb
 9. **Band Single-Leg Barbell Squat** - 20lb
 
-*Build to Doing Safely*
+##### Build to Doing Safely
 10. **Pistol Squat**
 	1. Box Elevated Lowering pistol squat
 	2. Box Elevated Raising pistol squat
 	3. hand on wall pistol squat
-11. **Barbell Pistol Squat**
+	4. **Barbell Pistol Squat**
 
-*Best Pairing*
+##### Best Pairing
 - **Hack Squat**  + **Bulgarian Split Squat**  + **Band Single-Leg Barbell Squat**
 - **Kettlebell Sumo Squat** + **Walking Barbell/Zercher Lunge** + **B-Squat**
 - **Hack Squat**/**Kettlebell Sumo Squat**  + **Band Single-Leg Squat** + **Single Leg Press**
@@ -606,10 +614,10 @@ Lean forward a little on [lunge/squat](https://youtu.be/DfGu48vMmlU?si=DbDYi5Wq3
 3. **Hip Thrust(dual/single-Perform with Medium Band)** - 90lb to 130lb 
 4. **Tib Bar Raise** – 5lb 
 
-*Build to Doing Safely*
+##### Build to Doing Safely
 5. **[Nordic Hamstring Curl](https://youtu.be/PcxNRBnfBd0?si=_EnPiuwgF3Rx0uo4)** - Practice on incline bench with tib bar
 
-*Best Pairing*
+##### Best Pairing
 - **Cable Pull Through** + **Tib Bar Raise
 - **Hip Thrust** + **Cable Hip Extension** + **Tib Bar Raise**
 #### **Session 3: Stability, Mobility, and Accessories (Control + Balance)**
@@ -620,7 +628,7 @@ Lean forward a little on [lunge/squat](https://youtu.be/DfGu48vMmlU?si=DbDYi5Wq3
 5. **Band Scarecrow Raises** - 20lb
 6. **Leg Extension** – 120lb
 
-*Best Pairing*
+##### Best Pairing
 - **Trap Bar Squat Jump** + **Cable Side Kick** + **Band Scarecrow Raises** 
 - **Cable Hip Flexion** + **Abduction Machine** + **Leg Extension** 
 
