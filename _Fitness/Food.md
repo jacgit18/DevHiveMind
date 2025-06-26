@@ -79,19 +79,25 @@ proably do a middle ground of supplements and things like Kiefer, yogurt, kombuc
 
 ## **Budget Breakdown (Monthly)**
 
-| Category                                  |    Cost     | Notes                                           |
-| ----------------------------------------- | :---------: | ----------------------------------------------- |
-| **Groceries (Meal Prep - 4 Days/Week)**   |  **$110**   | Aldi, Trader Joe’s, frozen produce prioritized  |
-| **Cooked Food (Corner stores/Grab-n-go)** |  **$150**   | Prepared meals, protein bars, fruit             |
-| **Dining Out (Optional)**                 |  **$100**   | 1–2 restaurant/bar visits or delivery per month |
-| **Protein Drinks(Optional)**              | **$82**<br> | 2 packs  24 bottles  a month roughly            |
-| **Total**                                 |  **$360**   | 332 or 442 if protein drinks no Dining out      |
-|                                           |    *or*     |                                                 |
-| **Groceries (Meal Prep - 2 Weeks)**       |   **$65**   |                                                 |
-| **CookUnity**                             |  **$230**   |                                                 |
-| **Dining Out (Optional)**                 |   **$65**   |                                                 |
-| **Protein Drinks(Optional)**              | **$82**<br> |                                                 |
-| **Total**                                 |  **$360**   |                                                 |
+| Category                                  |     Cost     | Notes                                                                                                                                             |
+| ----------------------------------------- | :----------: | ------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Groceries (Meal Prep - 4 Days/Week)**   |   **$110**   | Aldi, Trader Joe’s, frozen produce prioritized                                                                                                    |
+| **Cooked Food (Corner stores/Grab-n-go)** |   **$150**   | Prepared meals, protein bars, fruit                                                                                                               |
+| **Dining Out (Optional)**                 |   **$100**   | 1–2 restaurant/bar visits or delivery per month                                                                                                   |
+| **Protein Drinks(Optional)**              | **$82**<br>  | 2 packs  24 bottles  a month roughly                                                                                                              |
+| **Total**                                 |   **$360**   | 332 or 442 if protein drinks no Dining out                                                                                                        |
+|                                           |     *or*     |                                                                                                                                                   |
+| **Groceries (Meal Prep - 2 Weeks)**       |   **$65**    |                                                                                                                                                   |
+| **CookUnity**                             |   **$230**   |                                                                                                                                                   |
+| **Dining Out (Optional)**                 |   **$65**    |                                                                                                                                                   |
+| **Protein Drinks(Optional)**              | **$82**<br>  |                                                                                                                                                   |
+| **Total**                                 |   **$360**   |                                                                                                                                                   |
+|                                           |     *or*     |                                                                                                                                                   |
+| **Groceries**                             |   **$140**   | Cook enough to cover rest of calories                                                                                                             |
+| **Dining Out (Optional/fun)**             |   **$80**    | max 1,250 a month including food along with general fun                                                                                           |
+| **Mass Gainer**                           | **$140**<br> | 2 containers a month  710 calories and 53g protein a day for a whole month mixing in extra things to get 1/3 of calories and protein in for gains |
+| **Supplements**                           |              | Get Each Quarter costing under $1,500 not including Mass Gainer                                                                                   |
+| **Total**                                 |   **$360**   |                                                                                                                                                   |
 
 [15+ High-Protein Breakfast Recipes for Better Gut Health](https://www.eatingwell.com/high-protein-breakfast-recipes-for-better-gut-health-11746773)
 
