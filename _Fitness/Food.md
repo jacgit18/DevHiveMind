@@ -77,6 +77,15 @@ Price for the month would roughly be $48 and a probiotic is around that price or
 
 proably do a middle ground of supplements and things like Kiefer, yogurt, kombucha
 
+
+
+
+Try tofu
+
+Eggs
+
+Rice and beans
+
 ## **Budget Breakdown (Monthly)**
 
 | Category                                  |     Cost     | Notes                                                                                                                                                                                                                            |

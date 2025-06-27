@@ -446,6 +446,7 @@ Prioritize resistance bands for explosive phase they can be used for other phase
 - [ ] Use [[Tower 200.pdf |Tower 200]] for practicing cable machine exercises the weight ranges from 25 to 45 lb.  
 - [ ] Cycle in [[Stability Ball Workout Plan]] for core strengthening, flexibility, and stretching,  
 - [ ] Use 30 to 45 degree angle for incline bench press which seem more effective for your body type then flat bench.
+- [ ] Explosive day squat jumps other days deadlifts for trap bar
 - [ ] Hover in more of a standing position for abduction leg squeezing machine 70 to 80 lb.
 - [ ] Lat pull down pull elbow near hip not chest same for row get up close pull to hip.
 - [ ] Use opposite side knee leaning against low bench when doing Half Kneeling Row.
@@ -524,7 +525,9 @@ Chin ups higher priority alternate each quarter or even month. Try Burpee to Pul
 12. **Back Extension** - 15lb - do consistently for a 2 weeks and try ft to single leg variation 
 13. **[Low Cable Goblet Squat](https://youtu.be/f6eI0JI9AYA?si=TTKH4FrAivJYEyd0)**  - 
 
+[Seated Y Cable Raises](https://youtu.be/-yL_BS28hcY?si=oO9QrIO_sv2SF5K1)(Do upstairs)
 
+anything raise related best cables 
 ##### Build to Doing Safely
 11. **Side Lateral QL Extension** - 15lb - same thing after building up from single leg back extension and doing this consistently then do [rotating variation](https://youtu.be/KJwARxV9a6g?si=4C--YLWJnUcFaMmx) once doing consistent 4 sets 8 reps.
 	- Besides doing on back extension machine can do [Lateral Flexion on Stability Ball](https://youtu.be/FrohQ--m7fs?si=Z4akKJnru0ut8S8X)
