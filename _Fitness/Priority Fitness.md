@@ -319,6 +319,7 @@ _~1–2 minutes total – pick 2_
 - ***[Power Skips](https://youtu.be/TQAuoQR2xao?si=eEPRLm7vtgw4Tqdl)(for height)***
 - ***[Bounding](https://youtu.be/5Sz5J7nekKQ?si=zaDlJkq5Xxz90Nmn)***
 - **[Single-Leg Bounds](https://youtu.be/yUmxCUib7Fw?si=b8FHphOMdWMEJZsY)** 
+- [Medicine ball Posture Exercise](https://www.youtube.com/shorts/t1-Zxrcg-PI)
 - ***Sprint activation:***  
 	- 3 build-up sprints (gradually increasing effort from 60% → 80% → 90%)  
 
@@ -584,7 +585,7 @@ Lean forward a little on [lunge/squat](https://youtu.be/DfGu48vMmlU?si=DbDYi5Wq3
 
 #### Session 1: Main Compound Squat & Lunge Patterns
 [How to PROPERLY Squat for Growth (4 Easy Steps)](https://youtu.be/gcNh17Ckjgg?si=L0Lmos_bpSJcs9u1)
-*Make Squats Narrow and Deep to improve pistol squat and set bar height to 13 for anything zercher*
+*Make Squats Narrow and Deep to improve pistol squat and set bar height to 13 for anything Zercher*
 1. **Hack Squat** – 300lb - if ankles begin to lift move feet up
 2. **Squat/Zercher Squat** - Incline High Bar(on trap muscle)  - 50lb
 3. **Barbell/Dumbbell Bulgarian Split Squat**(Try [elevated](https://youtu.be/DXK-VbFE6ic?si=NHqOeitXD0h_YQsr) front leg variation also use [leg curl roller](https://youtu.be/VC5kbLSuo30?si=NLitkOhL50votRUC)) - 20lb
