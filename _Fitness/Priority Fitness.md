@@ -584,12 +584,12 @@ Lean forward a little on [lunge/squat](https://youtu.be/DfGu48vMmlU?si=DbDYi5Wq3
 
 #### Session 1: Main Compound Squat & Lunge Patterns
 [How to PROPERLY Squat for Growth (4 Easy Steps)](https://youtu.be/gcNh17Ckjgg?si=L0Lmos_bpSJcs9u1)
-*Make Squats Narrow and Deep to improve pistol squat*
+*Make Squats Narrow and Deep to improve pistol squat and set bar height to 13 for anything zercher*
 1. **Hack Squat** – 300lb - if ankles begin to lift move feet up
 2. **Squat/Zercher Squat** - Incline High Bar(on trap muscle)  - 50lb
-3. **Barbell/Dumbbell Bulgarian Split Squat**(Try [elevated](https://youtu.be/DXK-VbFE6ic?si=NHqOeitXD0h_YQsr) front leg variation also use leg curl roller) - 20lb
+3. **Barbell/Dumbbell Bulgarian Split Squat**(Try [elevated](https://youtu.be/DXK-VbFE6ic?si=NHqOeitXD0h_YQsr) front leg variation also use [leg curl roller](https://youtu.be/VC5kbLSuo30?si=NLitkOhL50votRUC)) - 20lb
 4. **Single Leg Press** – 180lb
-5. **Walking Barbell Lunge/Zercher Lunge(bar 13)** – 20lb
+5. **Walking Barbell Lunge/Zercher Lunge** – 20lb
 6. [Elevated Smith Machine Lunge](https://youtu.be/Yp5O9Cz6Ajg?si=bFGCfbzNqt_JobTA) - try [Elevated Lunge](https://youtu.be/OVFHK2Iev70?si=oiRNDNHznSrNP_RC) with dumbbell at max 40lb to 60lb then switch to free barbell
 7. **Kettlebell Sumo Squat** – 20lb 
 8. **Barbell/Kettlebell B-Squat** - 20lb
