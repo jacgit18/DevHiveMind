@@ -25,7 +25,7 @@ Aldi healthy Pasta
 baby carrot 1.29
 green grapes 4.36
 cherries 6.70
-banannas 1.59
+bananas 1.59
 
 ### Month Itemized Breakdown: Max 220
 #### Week One($62.18)
