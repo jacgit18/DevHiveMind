@@ -21,6 +21,7 @@ Not always getting eggs since in house a lot and can exclude Wonder beets
 
 find healthier bread and keifer brand and what ever else 
 
+orange is a verified health brand 
 
 ### Month Itemized Breakdown: Max 220
 #### Week One($62.18)
@@ -30,15 +31,15 @@ find healthier bread and keifer brand and what ever else
 - **Honey Turkey**: $5.95
 - **Mandarins**: $2.79 
 - **Provolone Cheese**: $4.89 
-- **Rice Pudding**: $7.50 
+- ***Kozy Rice Pudding***: $7.50 
 - **Seltzer**: $2.50 × 2 = $5.00
 - **Wonder Beet**: $3.79 × 2 = $7.58
 
 #### Week Two($28.50)
 - **Keifer**: $6.00 
-- **Kombucha**: $5.00 x 2 = 10
+- ***Kombucha***: $5.00 x 2 = 10
 - **Seltzer**: $2.50 × 2 = $5.00
-- **Rice Pudding**: $7.50 
+- ***Kozy Rice Pudding***: $7.50 
 
 #### Week Three($44.31)
 - **Dave Killer Bread**: $5.47 
@@ -50,9 +51,9 @@ find healthier bread and keifer brand and what ever else
 
 #### Week Four($28.48)
 - **Keifer**: $6.00 
-- **Kombucha**: $4.99 x 2
+- ***Kombucha***: $5.00 x 2 = 10
 - **Seltzer**: $2.50 × 2 = $5.00
-- **Rice Pudding**: $7.50 
+- ***Kozy Rice Pudding***: $7.50 
 
 
 ### Total Monthly Cost: $163.47
@@ -131,7 +132,6 @@ proably do a middle ground of supplements and things like Kiefer, yogurt, kombuc
 
 Try tofu
 
-Eggs
 
 Rice and beans
 
