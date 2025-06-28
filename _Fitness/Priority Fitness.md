@@ -494,7 +494,7 @@ Allowed to practice each excercise *here* max twice a week.
 3. **Arnold Press** – 20lb
 4. **[6 Ways for Shoulder Raise](https://www.youtube.com/watch?v=nvEE4u3qfJY) With Wrist Curl**(Consider **[[Wrist Curl]]** Regimen with [variations](https://www.youtube.com/watch?v=nvJ-1suJCTU) and try with cable) – 10lb
 5. **Landmine Anti Rotations** - 10lb
-6. **Wide Seated Dip** - 125lb
+6. **Wide Seated Dip** - 145lb
 7. **Chest Fly** - 90lb
 8. **Landmine Z Press** - 10lb 
 9. **Overhead Barbell/TrapBar Press** - 20lb
