@@ -511,19 +511,18 @@ Allowed to practice each excercise *here* max twice a week.
 - **Wide Seated Dip** + **Chest Fly**
 #### **Session 2: Pull Focus**
 Chin ups higher priority alternate each quarter or even month. Try Burpee to Pull Up. 
-1. **Band/Barbell/[Cable](https://youtu.be/2M1Mikqf5lY?si=1Me7DqZvB5XL1Orm)/Dumbbell/Landmine Single Leg RDL** - 10lb to 30lb
-2. **Narrow-Grip Chin-Up** 
-3. **Narrow-Grip Pull-Up** 
-4. **Zottman Curl Standing(Easiest)/[Seated](https://youtu.be/cnEcZiOeFO0?si=4nSqffNzqQyAvXBj)(hardest- *build more strength for it*)** - go half and half  – 20lb
-5. **Super ROM Lateral Raise Wrist Curl** (try cable)– 5lb
-6. **Rev Crunch** 
-7. **Kneeling Cable Crunch**(Top Angle) - 33lb 
-8. **Pallof Press**(Wrist Height) - 30lb
-9. **Rear Delt Fly** - 70lb
-10. **Lateral Head Single-Arm Tricep Extension**(Top Angle) – 20lb
-11. **Cable Pancake Stretch**(Low Angle) - 49.5
-12. **Back Extension** - 15lb - do consistently for a 2 weeks and try ft to single leg variation 
-13. **[Low Cable Goblet Squat](https://youtu.be/f6eI0JI9AYA?si=TTKH4FrAivJYEyd0)**  - 30lb to 40lb
+1. **Narrow-Grip Chin-Up** 
+2. **Narrow-Grip Pull-Up** 
+3. **Zottman Curl Standing(Easiest)/[Seated](https://youtu.be/cnEcZiOeFO0?si=4nSqffNzqQyAvXBj)(hardest- *build more strength for it*)** - go half and half  – 20lb
+4. **Super ROM Lateral Raise Wrist Curl** (try cable)– 5lb
+5. **Rev Crunch** 
+6. **Kneeling Cable Crunch**(Top Angle) - 33lb 
+7. **Pallof Press**(Wrist Height) - 30lb
+8. **Rear Delt Fly** - 70lb
+9. **Lateral Head Single-Arm Tricep Extension**(Top Angle) – 20lb
+10. **Cable Pancake Stretch**(Low Angle) - 49.5
+11. **Back Extension** - 15lb - do consistently for a 2 weeks and try ft to single leg variation 
+12. **[Low Cable Goblet Squat](https://youtu.be/f6eI0JI9AYA?si=TTKH4FrAivJYEyd0)**  - 30lb to 40lb
 
 [Seated Y Cable Raises](https://youtu.be/-yL_BS28hcY?si=oO9QrIO_sv2SF5K1)(Do upstairs)
 
@@ -531,12 +530,13 @@ Chin ups higher priority alternate each quarter or even month. Try Burpee to Pul
 
 
 
-cables are best for isolation of muscle  maybe focus hypertrophy days around that
+cables are best for isolation of muscle  maybe focus hypertrophy days around that pulling out cable [properly](https://youtu.be/JUDTGZh4rhg?si=rsQZQsKYSnAV1XkB) 
 ##### Build to Doing Safely
-11. **Side Lateral QL Extension** - 15lb - same thing after building up from single leg back extension and doing this consistently then do [rotating variation](https://youtu.be/KJwARxV9a6g?si=4C--YLWJnUcFaMmx) once doing consistent 4 sets 8 reps.
+13. **Band/Barbell/[Cable](https://youtu.be/2M1Mikqf5lY?si=1Me7DqZvB5XL1Orm)/Dumbbell/Landmine Single Leg RDL** - 10lb to 30lb
+14. **Side Lateral QL Extension** - 15lb - same thing after building up from single leg back extension and doing this consistently then do [rotating variation](https://youtu.be/KJwARxV9a6g?si=4C--YLWJnUcFaMmx) once doing consistent 4 sets 8 reps.
 	- Besides doing on back extension machine can do [Lateral Flexion on Stability Ball](https://youtu.be/FrohQ--m7fs?si=Z4akKJnru0ut8S8X)
-12. **Single-Arm Behind-Back Cable Lateral Raise**(Low Angle) – 10lb
-13. **Jefferson Curl Barbell/Kettlebell** - 20lb
+15. **Single-Arm Behind-Back Cable Lateral Raise**(Low Angle) – 10lb
+16. **Jefferson Curl Barbell/Kettlebell** - 20lb
 
 
 ##### Best Pairing
