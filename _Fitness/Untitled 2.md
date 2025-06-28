@@ -4,7 +4,7 @@ last mile delivery business 
 self storage
 
 
-
+![[ChatGPT Image Jun 28, 2025, 04_30_44 PM.png]]
 
 
 
