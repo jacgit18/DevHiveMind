@@ -26,28 +26,6 @@ dg-publish:
 | **Total**                                 |   **$663**   | Almost 8,000 for the year max excluding extra fun with just Groceries, Dining out,  & mass gainer about 360 and 460 roughly if doing a hybrid of Premade food and Eating out so at max a year about 5,600 excluding other stuff. |
 
 
-Reduce stuff & add other stuff
-
-Make meal prep effortless as possible 
-
-Not always getting eggs since in house a lot and can exclude Wonder beets
-
-find healthier bread and keifer brand and what ever else 
-
-orange is a verified healthy brand 
-
-
-Himalayan salt with coconut water instead electro maybe
-
-swap out electorlights with collegen peptides when finished with collegen supplements
-
-maybe add methylfoli supplement back if higher dosage is more helpfull 
-
-
-knock out probiotic for collagen peptides more annoying to get into diet from food will bump up cost to 1,516
-
-
-
 ## Food cost
 
 ### Month Itemized Breakdown: 
@@ -62,11 +40,15 @@ knock out probiotic for collagen peptides more annoying to get into diet from fo
 - **Seltzer**: $2.50 × 2 = $5.00
 - **Wonder Beet**: $3.79 × 2 = $7.58
 
+- **Premade food from Store**(Optional) - $15.00 x 3 = $45
+
 #### Week Two($28.50)
 - **Keifer**: $6.00 
 - ***Kombucha***: $5.00 x 2 = 10
 - **Seltzer**: $2.50 × 2 = $5.00
 - ***Kozy Rice Pudding***: $7.50 
+
+- **Premade food from Store**(Optional) - $15.00 x 3 = $45
 
 #### Week Three($44.31)
 - **Dave Killer Bread**: $5.47 
@@ -76,11 +58,15 @@ knock out probiotic for collagen peptides more annoying to get into diet from fo
 - **Provolone Cheese**: $4.89
 - **Seltzer**: $2.50 × 2 = $5.00
 
+- **Premade food from Store**(Optional) - $15.00 x 3 = $45
+
 #### Week Four($28.48)
 - **Keifer**: $6.00 
 - ***Kombucha***: $5.00 x 2 = 10
 - **Seltzer**: $2.50 × 2 = $5.00
 - ***Kozy Rice Pudding***: $7.50 
+
+- **Premade food from Store**(Optional) - $15.00 x 3 = $45
 
 
 

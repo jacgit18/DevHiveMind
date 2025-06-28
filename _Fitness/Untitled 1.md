@@ -1,4 +1,44 @@
 
+last mile delivery business 
+
+self storage
+
+
+
+
+Super rom a fuller range lateral raise try cable variation 
+
+
+Barbell dead lift 60 max probably for trap bar to
+
+
+
+
+Reduce stuff & add other stuff
+
+Make meal prep effortless as possible 
+
+Not always getting eggs since in house a lot and can exclude Wonder beets
+
+find healthier bread and keifer brand and what ever else 
+
+orange is a verified healthy brand 
+
+
+Himalayan salt with coconut water instead electro maybe
+
+swap out electorlights with collegen peptides when finished with collegen supplements
+
+maybe add methylfoli supplement back if higher dosage is more helpfull 
+
+
+knock out probiotic for collagen peptides more annoying to get into diet from food will bump up cost to 1,516
+
+
+
+
+
+
 [15+ High-Protein Breakfast Recipes for Better Gut Health](https://www.eatingwell.com/high-protein-breakfast-recipes-for-better-gut-health-11746773)
 
 Plan a BJS trip when it makes sense 
