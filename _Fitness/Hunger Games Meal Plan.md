@@ -11,7 +11,9 @@ Relates:
 Peer Reviewed: 0
 dg-publish:
 ---
-## Food cost
+# Meal Plan 
+**Calories:** ~2,900 to 3,200  
+**Protein:** ~150g to 215g  
 
 Reduce stuff & add other stuff
 
@@ -23,14 +25,16 @@ find healthier bread and keifer brand and what ever else
 
 orange is a verified healthy brand 
 
+## Food cost
+
 ### Month Itemized Breakdown: Max 220
 #### Week One($62.18)
-- **Dave Killer Bread**: $5.47 (10 servings)
-- **Eggs**: $5.50 × 2 = $11.00 (8 servings)
-- **Keifer**: $6.00 × 2 = $12.00 (8 servings)
+- **Dave Killer Bread**: $5.47 (10 servings total)
+- **Eggs**: $5.50 × 2 = $11.00 (4 servings total  4 meals)
+- **Keifer**: $6.00 × 2 = $12.00 (4 servings per bottle)
 - **Honey Turkey**: $5.95
 - **Mandarins**: $2.79 
-- **Provolone Cheese**: $4.89 
+- **Provolone Cheese**: $4.89 (12 servings)
 - ***Kozy Rice Pudding***: $7.50 
 - **Seltzer**: $2.50 × 2 = $5.00
 - **Wonder Beet**: $3.79 × 2 = $7.58
@@ -45,8 +49,8 @@ orange is a verified healthy brand
 - **Dave Killer Bread**: $5.47 
 - **Eggs**: $5.50 × 2 = $11.00
 - **Keifer**: $6.00 × 2 = $12.00
-- **Honey Turkey**: $5.95 (no quantity, so $5.95)
-- **Provolone Cheese**: $4.89 (no quantity, so $4.89)
+- **Honey Turkey**: $5.95 
+- **Provolone Cheese**: $4.89
 - **Seltzer**: $2.50 × 2 = $5.00
 
 #### Week Four($28.48)
@@ -63,17 +67,9 @@ orange is a verified healthy brand
 
 
 
-# Meal Plan 
-
-
-**Calories:** ~2,900 to 3,000  
-**Protein:** ~150g to 215g  
 
 
 
-Tuna fish
-
-Corn bread
 
 Himalayan salt with coconut water instead electro maybe
 
@@ -84,6 +80,9 @@ maybe add methylfoli supplement back if higher dosage is more helpfull
 
 
 
+knock out probiotic for collagen peptides more annoying to get into diet from food will bump up cost to 1,516
+
+[15+ High-Protein Breakfast Recipes for Better Gut Health](https://www.eatingwell.com/high-protein-breakfast-recipes-for-better-gut-health-11746773)
 
 
 ## **Budget Breakdown (Monthly)**
@@ -110,58 +109,8 @@ maybe add methylfoli supplement back if higher dosage is more helpfull
 | **Supplements**                           |   **$123**   | Get Each Quarter costing under $1,500 for the year not including Mass Gainer. Cost mentioned here is divided by 12 months and rounded up making it 123 a month roughly.                                                          |
 | **Total**                                 |   **$663**   | Almost 8,000 for the year max excluding extra fun with just Groceries, Dining out,  & mass gainer about 360 and 460 roughly if doing a hybrid of Premade food and Eating out so at max a year about 5,600 excluding other stuff. |
 
-knock out probiotic for collagen peptides more annoying to get into diet from food will bump up cost to 1,516
-
-[15+ High-Protein Breakfast Recipes for Better Gut Health](https://www.eatingwell.com/high-protein-breakfast-recipes-for-better-gut-health-11746773)
-
-### Homemade snacks to cover 1220 calorie 48 to 113g protein deficit
-protein deficit assumes no protein drink
-
-Dave Killer Bread 5.47
-
-12 slice cheese  provolone 4.89
 
 
-Swiss cheese 4.89
-
-
-Honey Turkey 100 calories 9G protein  $5.95 serving size 6
-
-Chicken breast  70 calories 10g  protein $4.29  serving size 5
-
-
-
-10 pairs of bread so 10 sandwiches  
-
-
-Kozy shack rice pudding 120 calories 4g protein And on average for the pudding about 6 bucks
-
-
-4 x Beet juice is 100 calories 3g protein about 15 bucks  
-  
-mandarins 2.79 serving size 3 about 120ish
-
-
-Chia seeds 150 calories 5g Protien 2.5 tbsp
-
-
-Greek yogurt 200 calories 7g Protien two out of three cups
-
-
-Cottage cheese 120 calories 13g Protein 1/2 cup
-
-
-Almonds or other nuts about 160 calories 6G Protein 28g about 24 nuts
-
-
-Chase freedom and bj card for food
-
-
-Look for healthy Greek yogurt, and cottage cheese
-
-  
-
-Aldi Greek yogurt 200 calories 7g protein
 #### Sandwich  have one a day 
 Sandwich total protein and calories  
 22g protein 290 protein depending on ingredients
@@ -192,7 +141,7 @@ Ingredients: ½ cup cottage cheese (in a sandwich thin), drizzle of honey or jam
 
 
 
-
+Corn bread
 
 
 #### Yogurt 

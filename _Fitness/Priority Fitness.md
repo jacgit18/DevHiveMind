@@ -63,7 +63,7 @@ color purple
 
 
 #todo/BAU/Life 
-- [ ] Order [[Food]] from CookUnity twice a month or some alt staying under $260 and $70 left over for super market and eating out maybe $30 more if eating out or networking so $360 for food at max
+- [ ] Order [[Hunger Games Meal Plan]] from CookUnity twice a month or some alt staying under $260 and $70 left over for super market and eating out maybe $30 more if eating out or networking so $360 for food at max
 
 - 15% body fat 
 - **Weight Last Year:** 113 lbs
