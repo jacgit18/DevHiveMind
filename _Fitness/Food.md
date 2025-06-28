@@ -12,38 +12,47 @@ Peer Reviewed: 0
 dg-publish:
 ---
 ## Food cost
+Not always getting eggs since in house a lot and can exclude Wonder beets
 
-### Month Itemized Breakdown:
+add other stuff
+
+### Month Itemized Breakdown: max 220
 #### Week One
-- **Wonder Beet**: $3.79 × 2 = $7.58
-- **Kombucha**: $4.99 (no quantity, so $4.99)
+- **Dave Killer Bread**: $5.47 
+- **Eggs**: $5.50 × 2 = $11.00 (8 servings)
 - **Keifer**: $6.00 × 2 = $12.00
+- **Honey Turkey**: $5.95 (no quantity, so $5.95)
+- **Mandarins**: $2.79 
+- **Provolone Cheese**: $4.89 (no quantity, so $4.89)
+- **Rice Pudding**: $7.50 
 - **Seltzer**: $2.50 × 2 = $5.00
-- **Rice Pudding**: $7.50 (no quantity, so $7.50)
-- **Dave Killer Bread**: $5.47 (no quantity, so $5.47)
-- **Mandarins**: $2.79 (no quantity, so $2.79)
-- **Eggs**: $5.50 × 2 = $11.00
+- **Wonder Beet**: $3.79 × 2 = $7.58
+
 #### Week Two
-- **Keifer**: $6.00 × 2 = $12.00
-- **Rice Pudding**: $7.50 (no quantity, so $7.50)
-
-
+- **Keifer**: $6.00 
+- **Kombucha**: $5.00 x 2 = 10
+- **Seltzer**: $2.50 × 2 = $5.00
+- **Rice Pudding**: $7.50 
 
 #### Week Three
+- **Dave Killer Bread**: $5.47 
 - **Eggs**: $5.50 × 2 = $11.00
+- **Keifer**: $6.00 × 2 = $12.00
+- **Honey Turkey**: $5.95 (no quantity, so $5.95)
+- **Provolone Cheese**: $4.89 (no quantity, so $4.89)
+- **Seltzer**: $2.50 × 2 = $5.00
 
 #### Week Four
-
-
-
-- **Provolone Cheese**: $4.89 (no quantity, so $4.89)
-- **Honey Turkey**: $5.95 (no quantity, so $5.95)
-
-
+- **Keifer**: $6.00 
+- **Kombucha**: $4.99 x 2
+- **Seltzer**: $2.50 × 2 = $5.00
+- **Rice Pudding**: $7.50 
 
 
 ### Total Average  Weekly Cost: 
 ### Total Monthly Cost: 
+
+
 
 
 
