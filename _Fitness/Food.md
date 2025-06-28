@@ -931,3 +931,31 @@ Let me know if you'd like a version tailored to:
 
 
 
+## **Homemade Snacks to Fill Calorie/Protein Gaps**
+
+(_Targets: ~1,220 kcal and ~48–113g protein when no shakes used_)
+
+### **Sandwiches (1 per day)**
+
+|Type|Protein|Calories|Ingredients|
+|---|--:|--:|---|
+|Chicken & Cheese|~22g|~290|2 slices Dave’s Killer Bread (8g), 6 slices deli chicken (9g), provolone (5g)|
+|PB Banana Protein|~20g|400–500|2 slices bread, 2 tbsp peanut butter, ½ banana, sprinkle of protein powder|
+|Cottage Cheese & Honey|~15g|300–350|½ cup cottage cheese, sandwich thin, honey or jam|
+
+---
+
+### **Yogurt Blends**
+
+- **Cottage Cheese + Greek Yogurt Bowl**
+    
+    - _Ingredients:_ ½ cup cottage cheese, ½ cup Greek yogurt, flax seeds, banana/apple
+        
+    - _Calories:_ 450–500 | _Protein:_ ~25g
+        
+- **Fruit & Nut Yogurt Bowl**
+    
+    - _Ingredients:_ 1 cup Greek yogurt, fruit, nuts, shredded coconut, optional honey
+        
+    - _Calories:_ 500–600 | _Protein:_ ~20g
+        
