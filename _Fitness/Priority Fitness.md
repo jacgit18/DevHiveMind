@@ -514,7 +514,7 @@ Chin ups higher priority alternate each quarter or even month. Try Burpee to Pul
 1. **Band/Barbell/[Cable](https://youtu.be/2M1Mikqf5lY?si=1Me7DqZvB5XL1Orm)/Dumbbell/Landmine Single Leg RDL** - 10lb to 30lb
 2. **Narrow-Grip Chin-Up** 
 3. **Narrow-Grip Pull-Up** 
-4. **Zottman Curl Standing(Easiest)/[Seated](https://youtu.be/cnEcZiOeFO0?si=4nSqffNzqQyAvXBj)(hardest)** - go half and half  – 20lb
+4. **Zottman Curl Standing(Easiest)/[Seated](https://youtu.be/cnEcZiOeFO0?si=4nSqffNzqQyAvXBj)(hardest- *build more strength for it*)** - go half and half  – 20lb
 5. **Super ROM Lateral Raise Wrist Curl** (try cable)– 5lb
 6. **Rev Crunch** 
 7. **Kneeling Cable Crunch**(Top Angle) - 33lb 
