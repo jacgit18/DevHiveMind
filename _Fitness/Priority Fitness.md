@@ -472,11 +472,11 @@ Outside of best parings other parings you do make it a light day instead of a in
 Weight ranges lowest explosive power weight to max strength weight. Hit Strength phase variation of the exercise of favorite excercise then shift to trying others and increasing weight and stuff once your consistently hitting 4x8. 
 ### Full Body Program
 - **[Base Rows](https://youtu.be/Qmw9TKnQ9NY?si=gNe_2K45P71UKz5y)**
-- **[Cable Lateral Walk](https://youtu.be/nw8NjG2YOLY?si=KAo4G6B3_5Av1s_t)**
+- **[Cable Lateral Walk](https://youtu.be/nw8NjG2YOLY?si=KAo4G6B3_5Av1s_t)** - 20lb to 30lb
 - **Kettlebell Swing** 
 - **Sled** - twice a week push and pull - 50lb
 	- Backward walk, seated pancake pull, standing pull
-	- [Lateral Sled Drag](https://youtu.be/rGtYmX2aeAA?si=PnniyFsIluLeViKa)
+	- [Lateral Sled Drag](https://youtu.be/rGtYmX2aeAA?si=PnniyFsIluLeViKa) - try
 - **Trap bar Deadlift** -  1 time a week - 50lb
 - ~~**Standing [Good Mornings](https://youtu.be/dEJ0FTm-CEk?si=LAPsPziQZQNGBvph)**~~ not worth doing
 
@@ -492,7 +492,7 @@ Allowed to practice each excercise *here* max twice a week.
 1. **Single Arm Chest Press** - 50lb
 2. **Dumbbell Floor** or **Incline Dumbbell Bench** or [Banded Dumbbell Bench](https://youtu.be/nzPvCtwkETM?si=ayLMQYM4NFk1FKbE)(Helps with form) Press– 17.5lb
 3. **Arnold Press** – 20lb
-4. **6-Way Shoulder Raise Wrist Curl**(Consider **[[Wrist Curl]]** Regimen with [variations](https://www.youtube.com/watch?v=nvJ-1suJCTU)) – 10lb
+4. **[6 Ways for Shoulder Raise](https://www.youtube.com/watch?v=nvEE4u3qfJY) With Wrist Curl**(Consider **[[Wrist Curl]]** Regimen with [variations](https://www.youtube.com/watch?v=nvJ-1suJCTU) and try with cable) – 10lb
 5. **Landmine Anti Rotations** - 10lb
 6. **Wide Seated Dip** - 125lb
 7. **Chest Fly** - 90lb
@@ -511,11 +511,11 @@ Allowed to practice each excercise *here* max twice a week.
 - **Wide Seated Dip** + **Chest Fly**
 #### **Session 2: Pull Focus**
 Chin ups higher priority alternate each quarter or even month. Try Burpee to Pull Up. 
-1. **Band/Barbell/[Cable](https://youtu.be/2M1Mikqf5lY?si=1Me7DqZvB5XL1Orm)/Dumbbell/Landmine Single Leg RDL** - 10lb to 20lb
+1. **Band/Barbell/[Cable](https://youtu.be/2M1Mikqf5lY?si=1Me7DqZvB5XL1Orm)/Dumbbell/Landmine Single Leg RDL** - 10lb to 30lb
 2. **Narrow-Grip Chin-Up** 
 3. **Narrow-Grip Pull-Up** 
 4. **Zottman Curl Standing(Easiest)/[Seated](https://youtu.be/cnEcZiOeFO0?si=4nSqffNzqQyAvXBj)(hardest)** - go half and half  – 20lb
-5. **Super ROM Lateral Raise Wrist Curl** – 5lb
+5. **Super ROM Lateral Raise Wrist Curl** (try cable)– 5lb
 6. **Rev Crunch** 
 7. **Kneeling Cable Crunch**(Top Angle) - 33lb 
 8. **Pallof Press**(Wrist Height) - 30lb
@@ -523,7 +523,7 @@ Chin ups higher priority alternate each quarter or even month. Try Burpee to Pul
 10. **Lateral Head Single-Arm Tricep Extension**(Top Angle) – 20lb
 11. **Cable Pancake Stretch**(Low Angle) - 49.5
 12. **Back Extension** - 15lb - do consistently for a 2 weeks and try ft to single leg variation 
-13. **[Low Cable Goblet Squat](https://youtu.be/f6eI0JI9AYA?si=TTKH4FrAivJYEyd0)**  - 
+13. **[Low Cable Goblet Squat](https://youtu.be/f6eI0JI9AYA?si=TTKH4FrAivJYEyd0)**  - 30lb to 40lb
 
 [Seated Y Cable Raises](https://youtu.be/-yL_BS28hcY?si=oO9QrIO_sv2SF5K1)(Do upstairs)
 
