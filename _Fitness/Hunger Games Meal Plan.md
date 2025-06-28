@@ -54,7 +54,6 @@ dg-publish:
 
 #### Week Three($44.31)
 - **Dave Killer Bread**: $5.47 
-- **Eggs**: $5.50 × 2 = $11.00
 - **Keifer**: $6.00 × 2 = $12.00
 - ***Kozy Rice Pudding***: $7.50 
 - **Honey Turkey**: $5.95 
