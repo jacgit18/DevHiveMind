@@ -70,9 +70,6 @@ orange is a verified healthy brand
 **Protein:** ~150g to 215g  
 
 
-Amounts of money it cost to cover the deficit of protein drinks per day  
-  
-6×6.20 = 37.20
 
 Tuna fish
 
@@ -85,47 +82,9 @@ swap out electorlights with collegen peptides when finished with collegen supple
 
 maybe add methylfoli supplement back if higher dosage is more helpfull 
 
-### Probiotics food source
-
-Look for brands that are healthy Bobby approved
-
-  
-Try Sauerkraut and kimchi
-
-  
-
-Get yogurt with probiotics unflavored add sweeteners after, 
-
-Get Kiefer and kombucha
-
-8 oz of kefir a day
-
-
-About $44 in kefir a month which is about two bottles each week
-
-  
-
-Stay under $35 for the month for sources of probiotics which is the cost of supplements that last a month or stay under $21 for the month 
-
-  
 
 
 
-
-
-  
-
-Kiefer or yogurt on average is 
-
-Per day: ~130 kcal + ~12.5g protein
-
-
-
-
-Try tofu
-
-
-Rice and beans
 
 ## **Budget Breakdown (Monthly)**
 
