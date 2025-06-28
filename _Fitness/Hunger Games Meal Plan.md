@@ -29,24 +29,26 @@ dg-publish:
 ## Food cost
 
 ### Month Itemized Breakdown: 
+
+45 to 50 a week
 #### Week One($62.18)
 - **Dave Killer Bread**: $5.47 (10 servings total)
 - **Eggs**: $5.50 × 2 = $11.00 (4 servings total 4 meals with 3 eggs per container)
 - **Keifer**: $6.00 × 2 = $12.00 (4 servings per bottle)
+- ***Kozy Rice Pudding***: $7.50(6 servings)
 - **Honey Turkey**: $5.95
 - **Mandarins**: $2.79 
 - **Provolone Cheese**: $4.89 (12 servings)
-- ***Kozy Rice Pudding***: $7.50(6 servings)
 - **Seltzer**: $2.50 × 2 = $5.00
-- **Wonder Beet**: $3.79 × 2 = $7.58
+- ***Wonder Beet***: $3.79 
+
 
 - **Premade food from Store**(Optional) - $15.00 x 3 = $45
 
 #### Week Two($28.50)
 - **Keifer**: $6.00 
 - ***Kombucha***: $5.00 x 2 = 10
-- **Seltzer**: $2.50 × 2 = $5.00
-- ***Kozy Rice Pudding***: $7.50 
+
 
 - **Premade food from Store**(Optional) - $15.00 x 3 = $45
 
@@ -54,6 +56,7 @@ dg-publish:
 - **Dave Killer Bread**: $5.47 
 - **Eggs**: $5.50 × 2 = $11.00
 - **Keifer**: $6.00 × 2 = $12.00
+- ***Kozy Rice Pudding***: $7.50 
 - **Honey Turkey**: $5.95 
 - **Provolone Cheese**: $4.89
 - **Seltzer**: $2.50 × 2 = $5.00
@@ -63,8 +66,7 @@ dg-publish:
 #### Week Four($28.48)
 - **Keifer**: $6.00 
 - ***Kombucha***: $5.00 x 2 = 10
-- **Seltzer**: $2.50 × 2 = $5.00
-- ***Kozy Rice Pudding***: $7.50 
+- ***Wonder Beet***: $3.79 
 
 - **Premade food from Store**(Optional) - $15.00 x 3 = $45
 
