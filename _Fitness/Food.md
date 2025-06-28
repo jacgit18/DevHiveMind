@@ -11,6 +11,41 @@ Relates:
 Peer Reviewed: 0
 dg-publish:
 ---
+## Food cost
+
+### Month Itemized Breakdown:
+#### Week One
+- **Wonder Beet**: $3.79 × 2 = $7.58
+- **Kombucha**: $4.99 (no quantity, so $4.99)
+- **Keifer**: $6.00 × 2 = $12.00
+- **Seltzer**: $2.50 × 2 = $5.00
+- **Rice Pudding**: $7.50 (no quantity, so $7.50)
+- **Dave Killer Bread**: $5.47 (no quantity, so $5.47)
+- **Mandarins**: $2.79 (no quantity, so $2.79)
+- **Eggs**: $5.50 × 2 = $11.00
+#### Week Two
+- **Keifer**: $6.00 × 2 = $12.00
+- **Rice Pudding**: $7.50 (no quantity, so $7.50)
+
+
+
+#### Week Three
+- **Eggs**: $5.50 × 2 = $11.00
+
+#### Week Four
+
+
+
+- **Provolone Cheese**: $4.89 (no quantity, so $4.89)
+- **Honey Turkey**: $5.95 (no quantity, so $5.95)
+
+
+
+
+### Total Average  Weekly Cost: 
+### Total Monthly Cost: 
+
+
 
 # Meal Plan 
 
@@ -605,22 +640,22 @@ Make food for 4 days including buy premade food for 3 days out of the week
 
 ## 🛒 Ingredient Price Summary (Monthly Bulk)
 
-|Item|Est. Cost|Store|
-|---|---|---|
-|Chicken breast (10 lb)|~$25|Aldi or BJ’s|
-|Ground turkey (4 lb)|~$12|Aldi|
-|Eggs (3 dozen)|~$7|Aldi or C-Town|
-|Whole milk (2 gal)|~$7|Aldi|
-|Oats (2 lb)|~$3|Aldi|
-|Peanut butter (2 jars)|~$4|Aldi|
-|Quinoa or rice (4 lb)|~$6|Aldi/Trader Joe’s|
-|Sweet potatoes (3 lb)|~$3|C-Town|
-|Spinach, broccoli, carrots|~$10|Aldi|
-|Greek yogurt (2 tubs)|~$7|Aldi|
-|Whey protein (5 lbs)|~$34|BJ’s|
-|Lentils (2 lb dry)|~$2|Trader Joe’s|
-|Chickpea/lentil pasta|~$3|Trader Joe’s|
-|Olive oil, spices, extras|~$15|Aldi/C-Town|
+| Item                       | Est. Cost | Store             |
+| -------------------------- | --------- | ----------------- |
+| Chicken breast (10 lb)     | ~$25      | Aldi or BJ’s      |
+| Ground turkey (4 lb)       | ~$12      | Aldi              |
+| Eggs (3 dozen)             | ~$7       | Aldi or C-Town    |
+| Whole milk (2 gal)         | ~$7       | Aldi              |
+| Oats (2 lb)                | ~$3       | Aldi              |
+| Peanut butter (2 jars)     | ~$4       | Aldi              |
+| Quinoa or rice (4 lb)      | ~$6       | Aldi/Trader Joe’s |
+| Sweet potatoes (3 lb)      | ~$3       | C-Town            |
+| Spinach, broccoli, carrots | ~$10      | Aldi              |
+| Greek yogurt (2 tubs)      | ~$7       | Aldi              |
+| Whey protein (5 lbs)       | ~$34      | BJ’s              |
+| Lentils (2 lb dry)         | ~$2       | Trader Joe’s      |
+| Chickpea/lentil pasta      | ~$3       | Trader Joe’s      |
+| Olive oil, spices, extras  | ~$15      | Aldi/C-Town       |
 
 **Total (monthly):** ~$130–$145
 
