@@ -41,46 +41,60 @@ dg-publish:
 - [ ] Eggs, Quinoa, Chicken, Steak, Turkey, Pork  
 - [ ] Look for quality deli meat brands maybe
 - [ ] For Mass gainer skip a month and try other two higher calorie flavors 
-#### Week One($62.18)
+#### Week One($46.81)
 ##### Shake 
 - **Keifer**: $6.00 × 2 = $12.00 (4 servings per bottle)
 - ***Transparent Labs Mass Gainer***:  760 cal and 53G protein(serving size 2 Scoops)
 
-##### Lunc/Snack 
+##### Lunch/Snack 
+- **Eggs**: $5.50 × 2 = $11.00 (4 servings total 4 meals with 3 eggs per container)
+
+###### Sandwich
 - **Dave Killer Bread**: $5.47 (10 servings total)
 - **Honey Turkey**: $5.95 
 - **Provolone Cheese**: $4.89 (12 servings)
 - Add extra healthy stuff to increase calories 
 - 10 sandwiches about **290 cal** roughly **9G Quality protein** from deli meat
 
-
-- **Eggs**: $5.50 × 2 = $11.00 (4 servings total 4 meals with 3 eggs per container)
-
+###### Snacks
 - ***Kozy Rice Pudding***: $7.50(6 servings 120 calories)
 
 ##### Extra
-- Chia Seeds
+- Chia Seeds( 150 cal 5G Protein 2.5 tbsp)
 
 ##### Dinner 
 - Quinoa
 
-#### Week Two($28.50)
+###### Total Daily Cal & Protein 
+- 760 cal / 53G
+
+
+#### Week Two($42)
+Exclude cost of previous item purchase in previous week
+
 ##### Shake 
 - **Keifer**: $6.00 × 2 = $12.00 (4 servings per bottle)
 - ***Transparent Labs Mass Gainer***
 
-##### Sandwich/Snack 
+##### Lunch/Snack 
+
+
 
 
 ##### Dinner 
 - **Premade food from Store**(Optional) - $15.00 x 2 = $30
 
-#### Week Three($44.31)
+
+###### Total Daily Cal & Protein 
+- 760 cal / 53G
+
+
+#### Week Three($35.81)
 ##### Shake 
 - **Keifer**: $6.00 × 2 = $12.00 (4 servings per bottle)
 - ***Transparent Labs Mass Gainer***
 
-##### Sandwich/Snack 
+##### Lunch/Snack 
 - **Dave Killer Bread**: $5.47 
 - ***Kozy Rice Pudding***: $7.50 
 - **Honey Turkey**: $5.95 
@@ -89,15 +103,21 @@ dg-publish:
 ##### Dinner 
 
 
-#### Week Four($28.48)
+###### Total Daily Cal & Protein 
+- 760 cal / 53G
+
+#### Week Four($42)
 ##### Shake 
 - **Keifer**: $6.00 × 2 = $12.00 (4 servings per bottle)
 - ***Transparent Labs Mass Gainer***
 
-##### Sandwich/Snack 
+##### Lunch/Snack 
 
 ##### Dinner 
 - **Premade food from Store**(Optional) - $15.00 x 2 = $30
+
+###### Total Daily Cal & Protein 
+- 760 cal / 53G
 
 
 #### Extra Potential Add On
@@ -116,11 +136,15 @@ dg-publish:
 - Celery 
 
 
+current total 166.62 - 220 limit = 53.38 left over with current stuff only two weeks with 2 days of premade food 
 
-REDO MATH
-current total 116.62
-premade about 65 roughly 
-so $45ish left with current stuff
+Alt scenario without ginsing 
+current total 166.62 - 393 limit = 226.38 
+
+ 166.62 - 60 premade food 
+ 116.62 + 90 in premade food -  393 limit 
+
+
 
 can modify supplement stack to bump up things maybe remove **Ginsing plus with Lion mane**
 $43.20 quarterly about $172.80 annually knocking supplement cost to $1,385
@@ -130,6 +154,8 @@ new supplement stack without ginsing plus total of $1,385 breakdowns to $116 mon
 $172.80 + 220 = Increasing grocery max to $393 
 
 Increasing max per week to about $100 rounded up
+
+
 
 ### Total Monthly Cost: $163.47
 
