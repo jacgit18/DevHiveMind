@@ -89,9 +89,9 @@ Rice and beans
 
 
 
-pecans
 
-machadamia
+
+
 
 
 Almonds or other nuts about 160 calories 6G Protein 28g about 24 nuts

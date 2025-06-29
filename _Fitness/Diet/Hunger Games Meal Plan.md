@@ -62,13 +62,18 @@ dg-publish:
 
 ##### Extra
 - Chia Seeds( 150 cal 5G Protein 2.5 tbsp)
+- Pecans
+- Machadamia
+- Almonds 
+- 
 
 ##### Dinner 
 ###### Meat
+update numbers
 **Healthiest Cuts (USDA "Lean" or "Extra Lean" labels):**   
-- **Chicken Breast**:
+- **Chicken Breast**: 165 cal 31G
 - **Top Round/London Broil**: 36g protein, 7g fat per 100g.  
-- **Eye of Round/Sirloin**: <5g total fat, minimal marbling.  
+- **Eye of Round/Top Sirloin**: <5g total fat, minimal marbling.  
 - **Bottom Round**: 8g fat, 27g protein.  
 - **Flank Steak**: Lean but tougher; best marinated.  
 - **Pork Tenderloin**: Leanest (3g fat/100g), comparable to chicken breast .  
@@ -88,6 +93,8 @@ dg-publish:
 
 ###### Non Meat
 - Quinoa
+- Pasta
+- 
 
 ###### Total Daily Cal & Protein 
 - 760 cal / 53G
