@@ -39,8 +39,9 @@ dg-publish:
 - [ ] Once finalized build recipes around grocery list like a restaurant would  
 - [ ] Exclude mass gainer from cost calculation below only include in calories and protein calculation
 - [ ] Eggs, Quinoa, Chicken, Steak, Turkey, Pork  
-- [ ] Look for quality deli meat brands maybe
+- [ ] Look for quality **Deli Meats** choose nitrate-free turkey/roast beef brands
 - [ ] For Mass gainer skip a month and try other two higher calorie flavors 
+
 #### Week One($46.81)
 ##### Shake 
 - **Keifer**: $6.00 × 2 = $12.00 (4 servings per bottle each 8oz)

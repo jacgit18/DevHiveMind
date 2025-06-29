@@ -15,7 +15,6 @@ dg-publish:
 ### **1. Poultry (Skinless)**  
 
 **Healthiest Cuts:**  
-
 - **Chicken Breast (boneless/skinless)**: Leanest option, high in protein (29g/100g), low in saturated fat (0.8g) .  
 
 - **Turkey Breast**: Similar to chicken but slightly leaner; lower in calories and saturated fat .  
@@ -23,15 +22,9 @@ dg-publish:
 - **Chicken/Turkey Thighs (skinless)**: Dark meat has more iron and zinc but slightly higher fat than breast .  
 
   
-
 **Avoid:** Fried wings, processed nuggets, or skin-on cuts (higher saturated fat).  
 
   
-
----
-
-  
-
 ### **2. Beef (Lean Cuts)**  
 
 **Healthiest Cuts (USDA "Lean" or "Extra Lean" labels):**   
@@ -60,11 +53,6 @@ dg-publish:
 
 **Tip:** Opt for "Select" or "Choice" grades over "Prime" (more marbling) .  
 
-  
-
----
-
-  
 
 ### **3. Pork**  
 
@@ -78,11 +66,6 @@ dg-publish:
 **Avoid:** Bacon, sausage, or cured ham (high in sodium/nitrates) .  
 
   
-
----
-
-  
-
 ### **4. Fish & Seafood**  
 
 **Best Options:**  
@@ -99,10 +82,6 @@ dg-publish:
 
   
 
----
-
-  
-
 ### **5. Processed Meats (Least Healthy)**  
 
 - **Deli Meats**: Choose nitrate-free turkey/roast beef over salami or bologna .  
@@ -111,29 +90,10 @@ dg-publish:
 
 - **Bacon**: Carcinogenic when consumed frequently .  
 
-  
-
----
 
   
 
-### **Key Takeaways**  
 
-1. **Leanest Proteins:** Skinless poultry, white fish, pork tenderloin, and lean beef cuts (round/sirloin).  
-
-2. **Moderate Fats:** Fatty fish (salmon), dark poultry meat, and select beef cuts (strip steak).  
-
-3. **Limit:** High-fat red meats (ribeye, T-bone) and all processed meats .  
-
-4. **Cooking Tips:** Trim visible fat, grill/bake instead of frying, and avoid charring to reduce carcinogens .  
-
-  
-
-For sourcing, prioritize **grass-fed beef**, **organic poultry**, and **wild-caught fish** when possible . Check labels for "no antibiotics/hormones" and minimal additives .
-
-
-
-Absolutely — here’s your **4-week rotating healthy meat plan** updated with **rough cost estimates** based on average U.S. supermarket prices as of mid-2025.
 
 > 🛒 **Prices will vary by location, quality (organic/grass-fed), and store.** These are ballpark estimates based on standard grocery store prices (not warehouse bulk or premium butcher).
 
