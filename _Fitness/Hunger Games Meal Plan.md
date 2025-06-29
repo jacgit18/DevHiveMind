@@ -35,6 +35,8 @@ dg-publish:
 #todo/BAU 
 - [ ] Update weekly totals
 - [ ] Buy meat, pasta, etc..  for a better idea on average monthly cost 
+- [ ] Finalize before end of year to add weight more effectively and control spending 
+- [ ] Once finalized build recipes around grocery list like a restaurant would  
 #### Week One($62.18)
 - **Dave Killer Bread**: $5.47 (10 servings total)
 - **Eggs**: $5.50 × 2 = $11.00 (4 servings total 4 meals with 3 eggs per container)
@@ -79,6 +81,7 @@ can modify supplement stack to bump things
 #### Infrequent Purchase
 - Black Pepper
 - Himalayan Salt(mix with coconut water for Homemade  Electrolytes)
+- Celery 
 
 ### Total Monthly Cost: $163.47
 
