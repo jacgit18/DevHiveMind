@@ -34,7 +34,7 @@ dg-publish:
 
 #todo/BAU 
 - [ ] Update weekly totals
-- [ ] Try Current new supplement stack without Ginsing plus for like a week to gauge difference
+- [ ] Try Current new supplement stack without Ginsing plus for like a week to gauge difference so start July 17th
 - [ ] Buy meat, pasta, etc..  for a better idea on average monthly cost 
 - [ ] Finalize before end of year to add weight more effectively and control spending 
 - [ ] Once finalized build recipes around grocery list like a restaurant would  
