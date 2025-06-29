@@ -74,7 +74,7 @@ can modify supplement stack to bump things
 - **Mandarins**: $2.79 
 - ***Kombucha***: $5.00 
 - ***Kombucha***: $5.00 x 2 = 10
-- ***Wonder Beet***: $3.79 
+- ***Wonder Beet***(Mix with Baking Soda for Performance Enhancer): $3.79 
 
 - **Premade food from Store**(Optional) - $15.00 x 3 = $45
 
