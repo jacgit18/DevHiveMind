@@ -39,10 +39,12 @@ dg-publish:
 - [ ] Finalize before end of year to add weight more effectively and control spending 
 - [ ] Once finalized build recipes around grocery list like a restaurant would  
 - [ ] Exclude mass gainer from cost calculation below 
+- [ ] Eggs, Quinoa, Chicken, Steak, Turkey, Pork  
+- [ ] Look for quality deli meats 
 #### Week One($62.18)
 ##### Shake 
 - **Keifer**: $6.00 × 2 = $12.00 (4 servings per bottle)
-- ***Transparent Labs Mass Gainer***
+- ***Transparent Labs Mass Gainer***:  
 
 ##### Sandwich/Snack 
 - **Dave Killer Bread**: $5.47 (10 servings total)
@@ -54,7 +56,7 @@ dg-publish:
 
 - **Eggs**: $5.50 × 2 = $11.00 (4 servings total 4 meals with 3 eggs per container)
 
-- ***Kozy Rice Pudding***: $7.50(6 servings)
+- ***Kozy Rice Pudding***: $7.50(6 servings 120 calories)
 
 ##### Dinner 
 
@@ -97,11 +99,11 @@ dg-publish:
 #### Extra Potential Add On
 - **Coconut Water**: 
 - **Seltzer**: $2.50 × 2 = $5.00
-- **Mandarins**: $2.79 
+- **Mandarins**: $2.79 (serving size about 3)
 - ***Kombucha***: $5.00 
 - ***Kombucha***: $5.00 x 2 = 10
 - ***Wonder Beet***(Mix with Baking Soda for Performance Enhancer): $3.79 
-
+- Cottage cheese 120 calories 13g Protein 1/2 cup
 - **Premade food from Store**(Optional) - $15.00 x 3 = $45
 
 #### Infrequent Purchase
