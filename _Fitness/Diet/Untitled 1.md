@@ -66,6 +66,14 @@ kimchi
 
 
 
+**Lentil Stew**
+- Lentils + carrots + potatoes + coconut milk (for creaminess)  
+- *Freeze extras.*  
+
+
+ **Beef & Quinoa Stir-Fry**  
+- Lean ground beef + quinoa + bell peppers + soy sauce + sesame oil  
+- *Cook 3 lbs beef + 2 cups quinoa for 5 meals.*  
 
 
 #### Sandwich  have one a day 
