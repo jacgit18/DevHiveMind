@@ -38,53 +38,61 @@ dg-publish:
 - [ ] Buy meat, pasta, etc..  for a better idea on average monthly cost 
 - [ ] Finalize before end of year to add weight more effectively and control spending 
 - [ ] Once finalized build recipes around grocery list like a restaurant would  
-
-
+- [ ] Exclude mass gainer from cost calculation below 
 #### Week One($62.18)
+##### Shake 
+- **Keifer**: $6.00 × 2 = $12.00 (4 servings per bottle)
+- ***Transparent Labs Mass Gainer***
+
 ##### Sandwich/Snack 
 - **Dave Killer Bread**: $5.47 (10 servings total)
 - **Honey Turkey**: $5.95 
 - **Provolone Cheese**: $4.89 (12 servings)
-
-10 sandwiches about 290 cal roughly  
-###### Total Calories/Protein = 100 Placeholder Calories/10G Protein
+- Add extra healthy stuff to increase calories 
+- 10 sandwiches about **290 cal** roughly **9G Quality protein** from deli meat
 
 
 - **Eggs**: $5.50 × 2 = $11.00 (4 servings total 4 meals with 3 eggs per container)
-- **Keifer**: $6.00 × 2 = $12.00 (4 servings per bottle)
+
 - ***Kozy Rice Pudding***: $7.50(6 servings)
 
+##### Dinner 
 
 #### Week Two($28.50)
-- **Keifer**: $6.00 × 2 = $12.00 
+##### Shake 
+- **Keifer**: $6.00 × 2 = $12.00 (4 servings per bottle)
+- ***Transparent Labs Mass Gainer***
+
+##### Sandwich/Snack 
+
+
+##### Dinner 
 - **Premade food from Store**(Optional) - $15.00 x 2 = $30
 
 #### Week Three($44.31)
+##### Shake 
+- **Keifer**: $6.00 × 2 = $12.00 (4 servings per bottle)
+- ***Transparent Labs Mass Gainer***
+
+##### Sandwich/Snack 
 - **Dave Killer Bread**: $5.47 
-- **Keifer**: $6.00 × 2 = $12.00
 - ***Kozy Rice Pudding***: $7.50 
 - **Honey Turkey**: $5.95 
 - **Provolone Cheese**: $4.89
 
+##### Dinner 
+
+
 #### Week Four($28.48)
-- **Keifer**: $6.00 × 2 = $12.00 
+##### Shake 
+- **Keifer**: $6.00 × 2 = $12.00 (4 servings per bottle)
+- ***Transparent Labs Mass Gainer***
+
+##### Sandwich/Snack 
+
+##### Dinner 
 - **Premade food from Store**(Optional) - $15.00 x 2 = $30
 
-
-
-REDO MATH
-current total 116.62
-premade about 65 roughly 
-so $45ish left with current stuff
-
-can modify supplement stack to bump up things maybe remove **Ginsing plus with Lion mane**
-$43.20 quarterly about $172.80 annually knocking supplement cost to $1,385
-
-new supplement stack without ginsing plus total of $1,385 breakdowns to $116 monthly
-
-$172.80 + 220 = Increasing grocery max to $393 
-
-Increasing max per week to about $100 rounded up
 
 #### Extra Potential Add On
 - **Coconut Water**: 
@@ -100,6 +108,21 @@ Increasing max per week to about $100 rounded up
 - Black Pepper
 - Himalayan Salt(mix with coconut water for Homemade  Electrolytes)
 - Celery 
+
+
+REDO MATH
+current total 116.62
+premade about 65 roughly 
+so $45ish left with current stuff
+
+can modify supplement stack to bump up things maybe remove **Ginsing plus with Lion mane**
+$43.20 quarterly about $172.80 annually knocking supplement cost to $1,385
+
+new supplement stack without ginsing plus total of $1,385 breakdowns to $116 monthly
+
+$172.80 + 220 = Increasing grocery max to $393 
+
+Increasing max per week to about $100 rounded up
 
 ### Total Monthly Cost: $163.47
 
