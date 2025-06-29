@@ -100,67 +100,19 @@ kimchi
 
 
 
-Price for the month would roughly be $48 and a probiotic is around that price or a little lower depending on what you get
-
-  
-
-proably do a middle ground of supplements and things like Kiefer, yogurt, kombucha
-
-
-### Probiotics food source
-
-Look for brands that are healthy Bobby approved
-  
-
-
-
-Get yogurt with probiotics unflavored add sweeteners after, 
-
-Get Kiefer and kombucha
-
-8 oz of kefir a day
-
-
-About $44 in kefir a month which is about two bottles each week
-
-  
-
-Stay under $35 for the month for sources of probiotics which is the cost of supplements that last a month or stay under $21 for the month 
-
-
 ### Homemade snacks to cover 1220 calorie 48 to 113g protein deficit
 
 
 
 
-Swiss cheese 4.89
+
 
 
 Honey Turkey 100 calories 9G protein  $5.95 serving size 6
 
 Chicken breast  70 calories 10g  protein $4.29  serving size 5
 
-
-
-
-Kozy shack rice pudding 120 calories 4g protein And on average for the pudding about 6 bucks
-
-
-
   
-
-
-
-Chia seeds 150 calories 5g Protien 2.5 tbsp
-
-
-Greek yogurt 200 calories 7g Protien two out of three cups
-
-
-
-
-
-Almonds or other nuts about 160 calories 6G Protein 28g about 24 nuts
 
 
 
@@ -192,7 +144,7 @@ Ingredients: ½ cup cottage cheese (in a sandwich thin), drizzle of honey or jam
 ~15g protein | ~300–350 kcal
 
 
-
+Almonds or other nuts about 160 calories 6G Protein 28g about 24 nuts
 
 Corn bread
 

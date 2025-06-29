@@ -43,7 +43,7 @@ dg-publish:
 - [ ] For Mass gainer skip a month and try other two higher calorie flavors 
 #### Week One($46.81)
 ##### Shake 
-- **Keifer**: $6.00 × 2 = $12.00 (4 servings per bottle)
+- **Keifer**: $6.00 × 2 = $12.00 (4 servings per bottle each 8oz)
 - ***Transparent Labs Mass Gainer***:  760 cal and 53G protein(serving size 2 Scoops)
 
 ##### Lunch/Snack 
@@ -51,7 +51,7 @@ dg-publish:
 
 ###### Sandwich
 - **Dave Killer Bread**: $5.47 (10 servings total)
-- **Honey Turkey**: $5.95 
+- **Honey Turkey**: $5.95 (100 cal 9G protein serving size 6)/ **Chicken breast**: $4.29(70 cal 10G protein serving size 5)
 - **Provolone Cheese**: $4.89 (12 servings)
 - Add extra healthy stuff to increase calories 
 - 10 sandwiches about **290 cal** roughly **9G Quality protein** from deli meat
@@ -122,6 +122,7 @@ Exclude cost of previous item purchase in previous week
 
 #### Extra Potential Add On
 - **Coconut Water**: 
+- Greek Yogurt
 - **Seltzer**: $2.50 × 2 = $5.00
 - **Mandarins**: $2.79 (serving size about 3)
 - ***Kombucha***: $5.00 
