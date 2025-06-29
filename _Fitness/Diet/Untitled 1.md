@@ -39,7 +39,7 @@ Barbell dead lift 60 max probably for trap bar to
 
 
 
-
+Too good to go
 
 
 
@@ -63,7 +63,9 @@ Sauerkraut
 
 kimchi
 
+french toast
 
+carrots in protein shake 
 
 
 **Lentil Stew**
@@ -75,6 +77,19 @@ kimchi
 - Lean ground beef + quinoa + bell peppers + soy sauce + sesame oil  
 - *Cook 3 lbs beef + 2 cups quinoa for 5 meals.*  
 
+Pasta w/ Chickpeas
+Turkey Chili
+
+Chili
+
+
+### **Trader Joe's**
+
+- Gnocchi, pesto, gluten-free pasta, turkey chili
+    
+- Garlic salt, coconut flour, canned tomatoes
+    
+- Bagels, coconut yogurt, nuts
 
 #### Sandwich  have one a day 
 
