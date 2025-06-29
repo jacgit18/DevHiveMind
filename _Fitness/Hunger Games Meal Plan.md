@@ -139,10 +139,11 @@ Exclude cost of previous item purchase in previous week
 current total 166.62 - 220 limit = 53.38 left over with current stuff only two weeks with 2 days of premade food 
 
 Alt scenario without ginsing 
-current total 166.62 - 393 limit = 226.38 
+116.62 no premade - 393 = 277 left over
+current total 166.62 - 393 limit = 226.38 left over
 
- 166.62 - 60 premade food 
- 116.62 + 90 in premade food -  393 limit 
+166.62 - 60 premade food 
+116.62 + 90 in max premade food = 206.62 -  393 limit = 186.38 left over
 
 
 
