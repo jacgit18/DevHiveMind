@@ -50,9 +50,9 @@ dg-publish:
 - **Eggs**: $5.50 × 2 = $11.00 (4 servings total 4 meals with 3 eggs per container)
 
 ###### Sandwich
-- **Dave Killer Bread**: $5.47 (10 servings total)
+- **Dave Killer Bread**: $5.47 (10 servings total each 140 cal )
 - **Honey Turkey**: $5.95 (100 cal 9G protein serving size 6)/ **Chicken breast**: $4.29(70 cal 10G protein serving size 5)
-- **Provolone Cheese**: $4.89 (12 servings)
+- **Provolone Cheese**: $4.89 (12 servings 70 cal)
 - Add extra healthy stuff to increase calories 
 - 10 sandwiches about **290 cal** roughly **9G Quality protein** from deli meat
 

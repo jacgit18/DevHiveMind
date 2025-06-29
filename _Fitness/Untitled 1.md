@@ -89,6 +89,19 @@ Rice and beans
 
 
 
+pecans
+
+machadamia
+
+
+Almonds or other nuts about 160 calories 6G Protein 28g about 24 nuts
+
+wallnut
+
+Corn bread
+
+
+
 Try
 
 tofu
@@ -100,34 +113,9 @@ kimchi
 
 
 
-### Homemade snacks to cover 1220 calorie 48 to 113g protein deficit
-
-
-
-
-
-
-
-Honey Turkey 100 calories 9G protein  $5.95 serving size 6
-
-Chicken breast  70 calories 10g  protein $4.29  serving size 5
-
-  
-
 
 
 #### Sandwich  have one a day 
-Sandwich total protein and calories  
-22g protein 290 protein depending on ingredients
-
-this is made from 2 slices of Dave killer bread which is 8g protein 140 calories total
-
-Provolone cheese 5g protein 70 calories  
-  
-Chicken breast 6 slices 9g protein 80 calories 
-Not sure how much chicken breast is present but eating six slices per sandwich since thin
-
-
 
 Peanut Butter Banana Protein Sandwich  
   
@@ -144,9 +132,6 @@ Ingredients: ½ cup cottage cheese (in a sandwich thin), drizzle of honey or jam
 ~15g protein | ~300–350 kcal
 
 
-Almonds or other nuts about 160 calories 6G Protein 28g about 24 nuts
-
-Corn bread
 
 
 
