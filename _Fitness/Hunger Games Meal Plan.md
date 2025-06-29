@@ -65,8 +65,10 @@ dg-publish:
 REDO MATH
 current total 116.62
 premade about 65 roughly 
-so $45ish left with current stuff 
-can modify supplement stack to bump things
+so $45ish left with current stuff
+
+can modify supplement stack to bump up things maybe remove Ginsing plus with Lion mane
+$43.20 quarterly about $172.80 annually 
 
 #### Extra Potential Add On
 - **Coconut Water**: 
