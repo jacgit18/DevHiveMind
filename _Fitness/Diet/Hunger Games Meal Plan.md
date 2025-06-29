@@ -98,8 +98,8 @@ update numbers
 
 ###### Non Meat
 - Quinoa
-- Pasta
-- Rice 
+- Aldi healthy Pasta
+- Rice Brown or Black
 - Canned Beans Chickpeas or Soybeans or pinto or navy
 
 ###### Total Daily Cal & Protein 
@@ -172,6 +172,12 @@ Exclude cost of previous item purchase in previous week
 - Almonds $
 - Walnut $
 - Sweet potatoes $
+- Oats 
+- baby carrot 1.29
+- green grapes 4.36
+- cherries 6.70
+- bananas 1.59
+
 #### Infrequent Purchase
 - Black Pepper
 - Himalayan Salt(mix with coconut water for Homemade  Electrolytes)

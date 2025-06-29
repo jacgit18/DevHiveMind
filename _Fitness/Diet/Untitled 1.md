@@ -36,15 +36,11 @@ Barbell dead lift 60 max probably for trap bar to
 
 [15+ High-Protein Breakfast Recipes for Better Gut Health](https://www.eatingwell.com/high-protein-breakfast-recipes-for-better-gut-health-11746773)
 
-Plan a BJS trip when it makes sense 
 
 
-Oats 
-Aldi healthy Pasta
-baby carrot 1.29
-green grapes 4.36
-cherries 6.70
-bananas 1.59
+
+
+
 
 
 
