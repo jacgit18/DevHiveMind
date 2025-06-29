@@ -47,17 +47,13 @@ dg-publish:
   
 
 **Moderate Cuts:**  
-
 - **Filet Mignon**: Lean but pricier (10g fat/100g) .  
-
 - **New York Strip**: 6g fat, buttery texture .  
 
   
 
 **Unhealthiest Cuts:**  
-
 - **Ribeye**: 22g fat (10g saturated) per 100g .  
-
 - **T-Bone/Porterhouse**: High in saturated fat (18g/100g) .  
 
   
@@ -75,7 +71,6 @@ dg-publish:
 **Healthiest Cuts:**  
 
 - **Pork Tenderloin**: Leanest (3g fat/100g), comparable to chicken breast .  
-
 - **Pork Loin Chops**: Leaner than shoulder or ribs.  
 
   

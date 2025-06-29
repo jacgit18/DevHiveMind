@@ -63,6 +63,29 @@ dg-publish:
 - Chia Seeds( 150 cal 5G Protein 2.5 tbsp)
 
 ##### Dinner 
+###### Meat
+**Healthiest Cuts (USDA "Lean" or "Extra Lean" labels):**   
+- **Chicken Breast**:
+- **Top Round/London Broil**: 36g protein, 7g fat per 100g.  
+- **Eye of Round/Sirloin**: <5g total fat, minimal marbling.  
+- **Bottom Round**: 8g fat, 27g protein.  
+- **Flank Steak**: Lean but tougher; best marinated.  
+- **Pork Tenderloin**: Leanest (3g fat/100g), comparable to chicken breast .  
+- **Pork Loin Chops**: Leaner than shoulder or ribs.  
+- **Canned Tuna**: Affordable, protein-packed.  
+
+**Moderate Cuts:**  
+- **Filet Mignon**: Lean but pricier (10g fat/100g) .  
+- **New York Strip**: 6g fat, buttery texture .  
+
+  
+
+**Unhealthiest Cuts:**  
+- **Ribeye**: 22g fat (10g saturated) per 100g .  
+- **T-Bone/Porterhouse**: High in saturated fat (18g/100g) .  
+
+
+###### Non Meat
 - Quinoa
 
 ###### Total Daily Cal & Protein 
