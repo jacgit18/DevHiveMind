@@ -43,6 +43,7 @@ dg-publish:
 - [ ] Look for quality **Deli Meats** choose nitrate-free turkey/roast beef brands
 - [ ] For Mass gainer skip a month and try other two higher calorie flavors 
 - [ ] Not always getting eggs since in house a lot and can exclude Wonder beets
+- [ ] Make 4 day meal plan the rest of days premade food 
 
 #### Week One($46.81)
 ##### Shake 
@@ -177,6 +178,12 @@ Exclude cost of previous item purchase in previous week
 - green grapes 4.36
 - cherries 6.70
 - bananas 1.59
+- Spinach 
+- Cabbage 
+- Cucumber
+- Cauliflower 
+- Broccoli
+- Beets
 
 #### Infrequent Purchase
 - Black Pepper
