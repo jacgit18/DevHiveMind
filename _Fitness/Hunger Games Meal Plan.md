@@ -31,6 +31,10 @@ dg-publish:
 ### Month Itemized Breakdown: 
 
 45 to 50 a week
+
+#todo/BAU 
+- [ ] Update weekly totals
+- [ ] Buy meat, pasta, etc..  for a better idea on average monthly cost 
 #### Week One($62.18)
 - **Dave Killer Bread**: $5.47 (10 servings total)
 - **Eggs**: $5.50 × 2 = $11.00 (4 servings total 4 meals with 3 eggs per container)
@@ -38,12 +42,9 @@ dg-publish:
 - ***Kozy Rice Pudding***: $7.50(6 servings)
 - **Honey Turkey**: $5.95
 - **Provolone Cheese**: $4.89 (12 servings)
-- **Seltzer**: $2.50 × 2 = $5.00
-
 
 #### Week Two($28.50)
 - **Keifer**: $6.00 × 2 = $12.00 
-
 - **Premade food from Store**(Optional) - $15.00 x 2 = $30
 
 #### Week Three($44.31)
@@ -52,23 +53,22 @@ dg-publish:
 - ***Kozy Rice Pudding***: $7.50 
 - **Honey Turkey**: $5.95 
 - **Provolone Cheese**: $4.89
-- **Seltzer**: $2.50 × 2 = $5.00
-
-
 
 #### Week Four($28.48)
 - **Keifer**: $6.00 × 2 = $12.00 
-
 - **Premade food from Store**(Optional) - $15.00 x 2 = $30
 
 
+
+REDO MATH
 current total 116.62
 premade about 65 roughly 
-
-so $4 left with current stuff
+so $45ish left with current stuff 
+can modify supplement stack to bump things
 
 #### Extra Potential Add On
 - **Coconut Water**: 
+- **Seltzer**: $2.50 × 2 = $5.00
 - **Mandarins**: $2.79 
 - ***Kombucha***: $5.00 
 - ***Kombucha***: $5.00 x 2 = 10

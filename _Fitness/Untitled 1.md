@@ -6,6 +6,19 @@ self storage
 
 
 
+
+
+
+Chest fly before dumbbell press
+
+Leg curl before squats
+
+Leg curl focus on hypotrophy leg extension focus on strength
+
+Pull up fast on the concentric and on the eccentric lower slowly
+
+
+
 Super rom a fuller range lateral raise try cable variation 
 
 
