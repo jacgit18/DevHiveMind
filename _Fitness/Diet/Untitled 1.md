@@ -46,6 +46,10 @@ Too good to go
 
 
 
+## Fish that I might be allergic to
+- [ ] Anchovy  
+- [ ] Mackerel  
+- [ ] Sardine
 
 
 
@@ -82,7 +86,7 @@ Turkey Chili
 
 Chili
 
-
+Macadamia Oil
 ### **Trader Joe's**
 
 - Gnocchi, pesto, gluten-free pasta, turkey chili
