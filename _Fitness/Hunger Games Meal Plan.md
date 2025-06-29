@@ -30,23 +30,23 @@ dg-publish:
 
 ### Month Itemized Breakdown: 
 
-45 to 50 a week
-
 #todo/BAU 
 - [ ] Update weekly totals
+- [ ] get weekly cost to around 45 to 50 a week assuming no change with supplement
 - [ ] Try Current new supplement stack without Ginsing plus for like a week to gauge difference so start July 17th
 - [ ] Buy meat, pasta, etc..  for a better idea on average monthly cost 
 - [ ] Finalize before end of year to add weight more effectively and control spending 
 - [ ] Once finalized build recipes around grocery list like a restaurant would  
-- [ ] Exclude mass gainer from cost calculation below 
+- [ ] Exclude mass gainer from cost calculation below only include in calories and protein calculation
 - [ ] Eggs, Quinoa, Chicken, Steak, Turkey, Pork  
-- [ ] Look for quality deli meats 
+- [ ] Look for quality deli meat brands maybe
+- [ ] For Mass gainer skip a month and try other two higher calorie flavors 
 #### Week One($62.18)
 ##### Shake 
 - **Keifer**: $6.00 × 2 = $12.00 (4 servings per bottle)
-- ***Transparent Labs Mass Gainer***:  
+- ***Transparent Labs Mass Gainer***:  760 cal and 53G protein(serving size 2 Scoops)
 
-##### Sandwich/Snack 
+##### Lunc/Snack 
 - **Dave Killer Bread**: $5.47 (10 servings total)
 - **Honey Turkey**: $5.95 
 - **Provolone Cheese**: $4.89 (12 servings)
@@ -58,7 +58,11 @@ dg-publish:
 
 - ***Kozy Rice Pudding***: $7.50(6 servings 120 calories)
 
+##### Extra
+- Chia Seeds
+
 ##### Dinner 
+- Quinoa
 
 #### Week Two($28.50)
 ##### Shake 
@@ -110,6 +114,7 @@ dg-publish:
 - Black Pepper
 - Himalayan Salt(mix with coconut water for Homemade  Electrolytes)
 - Celery 
+
 
 
 REDO MATH
