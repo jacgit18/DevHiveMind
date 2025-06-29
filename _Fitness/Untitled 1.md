@@ -6,9 +6,6 @@ self storage
 
 
 
-
-
-
 Chest fly before dumbbell press
 
 Leg curl before squats
@@ -29,25 +26,8 @@ Barbell dead lift 60 max probably for trap bar to
 
 
 
-Reduce stuff & add other stuff
-
-Make meal prep effortless as possible 
-
-Not always getting eggs since in house a lot and can exclude Wonder beets
-
-find healthier bread and keifer brand and what ever else 
-
-orange is a verified healthy brand 
 
 
-
-
-swap out electorlights with collegen peptides when finished with collegen supplements
-
-maybe add methylfoli supplement back if higher dosage is more helpfull 
-
-
-knock out probiotic for collagen peptides more annoying to get into diet from food will bump up cost to 1,516
 
 
 
@@ -59,32 +39,12 @@ knock out probiotic for collagen peptides more annoying to get into diet from fo
 Plan a BJS trip when it makes sense 
 
 
-Sweet potatoes $
-
-Frozen Sweet potatoes $
-
-Asparagus $
-
-Green Beans $
-
-Frozen Fruit $
-
-Tuna fish $2
-
 Oats 
-
-Peanut Butter
-
-Irish Butter
-
 Aldi healthy Pasta
-
 baby carrot 1.29
 green grapes 4.36
 cherries 6.70
 bananas 1.59
-
-
 Rice and beans
 
 
@@ -94,9 +54,6 @@ Rice and beans
 
 
 
-Almonds or other nuts about 160 calories 6G Protein 28g about 24 nuts
-
-wallnut
 
 Corn bread
 
@@ -681,52 +638,6 @@ Got it! Here are **high-calorie, high-protein yogurt recipes without protein pow
 
 
 
-Here's a combined list showing **calories and protein** per nut type, based on a **1 oz (28g)** serving, which includes the **approximate number of nuts per serving**.
-
----
-
-🔥 **Top Nuts by Calories** *(per 1 oz / 28g serving)*  
-*(Includes protein and approx. nut count)*
-
-1. **Macadamia nuts** – 204 kcal, 2g protein (≈ 10–12 nuts)  
-2. **Pecans** – 200 kcal, 3g protein (≈ 18–20 halves)  
-3. **Pine nuts** – 190 kcal, 4g protein (≈ 167 nuts)  
-4. **Brazil nuts** – 187 kcal, 4g protein (≈ 6–8 nuts)  
-5. **Walnuts** – 185 kcal, 4g protein (≈ 14 halves)  
-6. **Almonds** – 165 kcal, 6g protein (≈ 23 nuts)  
-7. **Pistachios** – 160 kcal, 6g protein (≈ 49 nuts, shelled)  
-8. **Peanuts** – 161 kcal, 7.3g protein (≈ 28 nuts)  
-9. **Cashews** – 157 kcal, 5g protein (≈ 18 nuts)  
-
----
-
-💪 **Top Nuts by Protein** *(per 1 oz / 28g serving)*  
-*(Includes calories and approx. nut count)*
-
-1. **Peanuts** – 7.3g protein, 161 kcal (≈ 28 nuts)  
-2. **Almonds** – 6g protein, 165 kcal (≈ 23 nuts)  
-3. **Pistachios** – 6g protein, 160 kcal (≈ 49 nuts, shelled)  
-4. **Cashews** – 5g protein, 157 kcal (≈ 18 nuts)  
-5. **Pine nuts** – 4g protein, 190 kcal (≈ 167 nuts)  
-6. **Brazil nuts** – 4g protein, 187 kcal (≈ 6–8 nuts)  
-7. **Walnuts** – 4g protein, 185 kcal (≈ 14 halves)  
-8. **Pecans** – 3g protein, 200 kcal (≈ 18–20 halves)  
-9. **Macadamia nuts** – 2g protein, 204 kcal (≈ 10–12 nuts)  
-
----
-
-Let me know if you'd like:
-- A **visual chart or infographic**
-- A version sorted by **fat content** or **fiber**
-- Or a quick list of **nut butters** for similar macros!
-
-
-
-
-Here’s a list of **healthy milk options**—including dairy and plant-based—along with popular **brands** known for better ingredients (low sugar, minimal additives, and higher nutritional value):
-
----
-
 ## 🥛 Dairy-Based Milks
 
 ### 1. **Organic Grass-Fed Whole Milk**
@@ -818,55 +729,7 @@ Here’s a list of **healthy milk options**—including dairy and plant-based—
 - Best for: Kids, smoothies, coffee.
     
 
----
 
-## ✅ Tips for Choosing Healthy Milk
-
-- **Look for:**
-    
-    - Unsweetened versions (0g added sugar)
-        
-    - Fortified with calcium & vitamin D
-        
-    - Short ingredient lists (2–4 ingredients)
-        
-    - No gums, oils, or carrageenan if possible
-        
-- **Avoid:**
-    
-    - Flavored versions (often high in sugar)
-        
-    - Added vegetable oils (especially in oat milk)
-        
-    - Long ingredient lists with preservatives
-        
-
----
-
-Let me know if you'd like a version tailored to:
-
-- **Bulking or cutting**
-    
-- **Keto or low-carb**
-    
-- **Digestive issues or allergies**  
-    Or want a **chart comparing macros per serving**!
-
-
-
-## **Homemade Snacks to Fill Calorie/Protein Gaps**
-
-(_Targets: ~1,220 kcal and ~48–113g protein when no shakes used_)
-
-### **Sandwiches (1 per day)**
-
-|Type|Protein|Calories|Ingredients|
-|---|--:|--:|---|
-|Chicken & Cheese|~22g|~290|2 slices Dave’s Killer Bread (8g), 6 slices deli chicken (9g), provolone (5g)|
-|PB Banana Protein|~20g|400–500|2 slices bread, 2 tbsp peanut butter, ½ banana, sprinkle of protein powder|
-|Cottage Cheese & Honey|~15g|300–350|½ cup cottage cheese, sandwich thin, honey or jam|
-
----
 
 ### **Yogurt Blends**
 
@@ -881,4 +744,24 @@ Let me know if you'd like a version tailored to:
     - _Ingredients:_ 1 cup Greek yogurt, fruit, nuts, shredded coconut, optional honey
         
     - _Calories:_ 500–600 | _Protein:_ ~20g
-        
+
+
+
+
+---
+
+🔥 **Top Nuts by Calories** *(per 1 oz / 28g serving)*  
+*(Includes protein and approx. nut count)*
+
+1. **Macadamia nuts** – 204 kcal, 2g protein (≈ 10–12 nuts)  
+2. **Pecans** – 200 kcal, 3g protein (≈ 18–20 halves)  
+3. **Pine nuts** – 190 kcal, 4g protein (≈ 167 nuts)  
+4. **Brazil nuts** – 187 kcal, 4g protein (≈ 6–8 nuts)  
+5. **Walnuts** – 185 kcal, 4g protein (≈ 14 halves)  
+6. **Almonds** – 165 kcal, 6g protein (≈ 23 nuts)  
+7. **Pistachios** – 160 kcal, 6g protein (≈ 49 nuts, shelled)  
+8. **Peanuts** – 161 kcal, 7.3g protein (≈ 28 nuts)  
+9. **Cashews** – 157 kcal, 5g protein (≈ 18 nuts)  
+
+---
+

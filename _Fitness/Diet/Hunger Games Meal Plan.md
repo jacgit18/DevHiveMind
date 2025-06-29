@@ -31,6 +31,7 @@ dg-publish:
 ### Month Itemized Breakdown: 
 
 #todo/BAU 
+- [ ] Make meal prep effortless as possible 
 - [ ] Update weekly totals
 - [ ] get weekly cost to around 45 to 50 a week assuming no change with supplement
 - [ ] Try Current new supplement stack without Ginsing plus for like a week to gauge difference so start July 17th
@@ -41,6 +42,7 @@ dg-publish:
 - [ ] Eggs, Quinoa, Chicken, Steak, Turkey, Pork  
 - [ ] Look for quality **Deli Meats** choose nitrate-free turkey/roast beef brands
 - [ ] For Mass gainer skip a month and try other two higher calorie flavors 
+- [ ] Not always getting eggs since in house a lot and can exclude Wonder beets
 
 #### Week One($46.81)
 ##### Shake 
@@ -48,7 +50,7 @@ dg-publish:
 - ***Transparent Labs Mass Gainer***:  760 cal and 53G protein(serving size 2 Scoops)
 
 ##### Lunch/Snack 
-- **Eggs**: $5.50 × 2 = $11.00 (4 servings total 4 meals with 3 eggs per container)
+- **Eggs**: $5.50 × 2 = $11.00 (4 servings total 4 meals with 3 eggs per container 210 cal 18G protein)
 
 ###### Sandwich
 - **Dave Killer Bread**: $5.47 (10 servings total each 140 cal )
@@ -63,9 +65,12 @@ dg-publish:
 ##### Extra
 - Chia Seeds( 150 cal 5G Protein 2.5 tbsp)
 - Pecans
-- Machadamia
-- Almonds 
-- 
+- Irish Butter
+- Frozen Sweet potatoes $
+- Frozen Asparagus $
+- Frozen Green Beans $
+- Frozen Fruit $
+
 
 ##### Dinner 
 ###### Meat
@@ -94,7 +99,8 @@ update numbers
 ###### Non Meat
 - Quinoa
 - Pasta
-- 
+- Rice
+- Canned Beans
 
 ###### Total Daily Cal & Protein 
 - 760 cal / 53G
@@ -156,12 +162,16 @@ Exclude cost of previous item purchase in previous week
 - Greek Yogurt
 - **Seltzer**: $2.50 × 2 = $5.00
 - **Mandarins**: $2.79 (serving size about 3)
+- Peanut Butter
 - ***Kombucha***: $5.00 
 - ***Kombucha***: $5.00 x 2 = 10
 - ***Wonder Beet***(Mix with Baking Soda for Performance Enhancer): $3.79 
 - Cottage cheese 120 calories 13g Protein 1/2 cup
 - **Premade food from Store**(Optional) - $15.00 x 3 = $45
-
+- Macadamia nut $
+- Almonds $
+- Walnut $
+- Sweet potatoes $
 #### Infrequent Purchase
 - Black Pepper
 - Himalayan Salt(mix with coconut water for Homemade  Electrolytes)
