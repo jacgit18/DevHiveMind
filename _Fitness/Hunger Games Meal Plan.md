@@ -38,13 +38,22 @@ dg-publish:
 - [ ] Buy meat, pasta, etc..  for a better idea on average monthly cost 
 - [ ] Finalize before end of year to add weight more effectively and control spending 
 - [ ] Once finalized build recipes around grocery list like a restaurant would  
+
+
 #### Week One($62.18)
+##### Sandwich/Snack 
 - **Dave Killer Bread**: $5.47 (10 servings total)
+- **Honey Turkey**: $5.95 
+- **Provolone Cheese**: $4.89 (12 servings)
+
+10 sandwiches about 290 cal roughly  
+###### Total Calories/Protein = 100 Placeholder Calories/10G Protein
+
+
 - **Eggs**: $5.50 × 2 = $11.00 (4 servings total 4 meals with 3 eggs per container)
 - **Keifer**: $6.00 × 2 = $12.00 (4 servings per bottle)
 - ***Kozy Rice Pudding***: $7.50(6 servings)
-- **Honey Turkey**: $5.95
-- **Provolone Cheese**: $4.89 (12 servings)
+
 
 #### Week Two($28.50)
 - **Keifer**: $6.00 × 2 = $12.00 
@@ -71,9 +80,11 @@ so $45ish left with current stuff
 can modify supplement stack to bump up things maybe remove **Ginsing plus with Lion mane**
 $43.20 quarterly about $172.80 annually knocking supplement cost to $1,385
 
-$172.80 + 220 = $393 max
+new supplement stack without ginsing plus total of $1,385 breakdowns to $116 monthly
 
-new supplement total of $1,385 breakdowns to $116 monthly
+$172.80 + 220 = Increasing grocery max to $393 
+
+Increasing max per week to about $100 rounded up
 
 #### Extra Potential Add On
 - **Coconut Water**: 
