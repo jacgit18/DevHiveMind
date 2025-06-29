@@ -37,20 +37,14 @@ dg-publish:
 - **Keifer**: $6.00 × 2 = $12.00 (4 servings per bottle)
 - ***Kozy Rice Pudding***: $7.50(6 servings)
 - **Honey Turkey**: $5.95
-- **Mandarins**: $2.79 
 - **Provolone Cheese**: $4.89 (12 servings)
 - **Seltzer**: $2.50 × 2 = $5.00
 
 
-
-- **Premade food from Store**(Optional) - $15.00 x 3 = $45
-
 #### Week Two($28.50)
 - **Keifer**: $6.00 × 2 = $12.00 
 
-
-
-- **Premade food from Store**(Optional) - $15.00 x 3 = $45
+- **Premade food from Store**(Optional) - $15.00 x 2 = $30
 
 #### Week Three($44.31)
 - **Dave Killer Bread**: $5.47 
@@ -60,19 +54,31 @@ dg-publish:
 - **Provolone Cheese**: $4.89
 - **Seltzer**: $2.50 × 2 = $5.00
 
-- **Premade food from Store**(Optional) - $15.00 x 3 = $45
+
 
 #### Week Four($28.48)
 - **Keifer**: $6.00 × 2 = $12.00 
 
+- **Premade food from Store**(Optional) - $15.00 x 2 = $30
 
-- **Premade food from Store**(Optional) - $15.00 x 3 = $45
 
+current total 116.62
+premade about 65 roughly 
+
+so $4 left with current stuff
 
 #### Extra Potential Add On
+- **Coconut Water**: 
+- **Mandarins**: $2.79 
 - ***Kombucha***: $5.00 
 - ***Kombucha***: $5.00 x 2 = 10
 - ***Wonder Beet***: $3.79 
+
+- **Premade food from Store**(Optional) - $15.00 x 3 = $45
+
+#### Infrequent Purchase
+- Black Pepper
+- Himalayan Salt(mix with coconut water for Homemade  Electrolytes)
 
 ### Total Monthly Cost: $163.47
 

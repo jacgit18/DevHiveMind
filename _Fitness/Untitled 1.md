@@ -27,7 +27,7 @@ find healthier bread and keifer brand and what ever else
 orange is a verified healthy brand 
 
 
-Himalayan salt with coconut water instead electro maybe
+
 
 swap out electorlights with collegen peptides when finished with collegen supplements
 
