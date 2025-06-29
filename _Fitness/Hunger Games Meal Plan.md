@@ -34,6 +34,7 @@ dg-publish:
 
 #todo/BAU 
 - [ ] Update weekly totals
+- [ ] Try Current new supplement stack without Ginsing plus for like a week to gauge difference
 - [ ] Buy meat, pasta, etc..  for a better idea on average monthly cost 
 - [ ] Finalize before end of year to add weight more effectively and control spending 
 - [ ] Once finalized build recipes around grocery list like a restaurant would  
@@ -67,8 +68,12 @@ current total 116.62
 premade about 65 roughly 
 so $45ish left with current stuff
 
-can modify supplement stack to bump up things maybe remove Ginsing plus with Lion mane
-$43.20 quarterly about $172.80 annually 
+can modify supplement stack to bump up things maybe remove **Ginsing plus with Lion mane**
+$43.20 quarterly about $172.80 annually knocking supplement cost to $1,385
+
+$172.80 + 220 = $393 max
+
+new supplement total of $1,385 breakdowns to $116 monthly
 
 #### Extra Potential Add On
 - **Coconut Water**: 
