@@ -99,8 +99,8 @@ update numbers
 ###### Non Meat
 - Quinoa
 - Pasta
-- Rice
-- Canned Beans
+- Rice 
+- Canned Beans Chickpeas or Soybeans or pinto or navy
 
 ###### Total Daily Cal & Protein 
 - 760 cal / 53G

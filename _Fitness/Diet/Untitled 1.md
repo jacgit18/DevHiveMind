@@ -45,7 +45,7 @@ baby carrot 1.29
 green grapes 4.36
 cherries 6.70
 bananas 1.59
-Rice and beans
+
 
 
 
