@@ -14,6 +14,8 @@ Barbell dead lift 60 max probably for trap bar to
 
 
 
+
+
 Reduce stuff & add other stuff
 
 Make meal prep effortless as possible 
