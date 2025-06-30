@@ -75,7 +75,9 @@ dg-publish:
 
 ##### Dinner 
 ###### Meat
-update numbers
+#todo/BAU 
+- [ ]  Break down into a week assuming only eating one type of meat a week then half it between 4 days and use excess 
+
 **Healthiest Cuts (USDA "Lean" or "Extra Lean" labels):**   
 - **Chicken Breast**: 165 cal 31G
 - **Top Round/London Broil**: 36g protein, 7g fat per 100g.  
@@ -87,8 +89,10 @@ update numbers
 - **Canned Tuna**: Affordable, protein-packed.  
 
 **Moderate Cuts:**  
-- **Filet Mignon**: Lean but pricier (10g fat/100g) .  
-- **New York Strip**: 6g fat, buttery texture .  
+- **Filet Mignon**: Lean but pricier (10g fat/100g)   
+- **New York Strip**: 6g fat, buttery texture 
+- **Ground Beef**
+- **Ground Turkey**
 
   
 
