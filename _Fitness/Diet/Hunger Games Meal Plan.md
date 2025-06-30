@@ -51,7 +51,7 @@ dg-publish:
 - ***Transparent Labs Mass Gainer***:  760 cal and 53G protein(serving size 2 Scoops)
 
 ##### Lunch/Snack 
-- **Eggs**: $5.50 × 2 = $11.00 (4 servings total 4 meals with 3 eggs per container 210 cal 18G protein)
+- **Eggs**: $5.50 × 2 = $11.00 (4 servings total 4 meals with 3 eggs per serving 210 cal 18G protein)
 
 ###### Sandwich
 - **Dave Killer Bread**: $5.47 (10 servings total each 140 cal )
