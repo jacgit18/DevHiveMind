@@ -47,10 +47,9 @@ dg-publish:
 
 #### Week One($46.81)
 ##### Extra
-- Pecans
-- Irish Butter
+- Pecans $
+- Irish Butter $
 - Frozen Sweet potatoes $
-- Frozen Asparagus $
 - Frozen Green Beans $
 
 
@@ -76,6 +75,7 @@ dg-publish:
 - Add extra healthy stuff to increase calories 
 - 10 sandwiches about **290 cal** roughly **9G Quality protein** from deli meat
 ###### Total Daily Calories & Protein:  306 cal/ 9G protein
+
 
 ##### Snacks
 - ***Kozy Rice Pudding***: $7.50(6 servings 120 calories)
@@ -116,12 +116,13 @@ dg-publish:
 - Aldi healthy Pasta
 - Rice Brown or Black
 - Canned Beans Chickpeas or Soybeans or pinto or navy
+- **Trader Joe Frozen Asparagus** $3.99()
 
 ###### Total Daily Calories & Protein:  120 cal/ 0G protein
 
 
-### Total Daily Calories & Protein:  760 cal 53G protein
-
+### Total Daily Calories & Protein:  1,776 to 1,821 cal 80G protein
+not including dinner calculation
 
 #### Week Two($42)
 Exclude cost of previous item purchase in previous week
@@ -130,17 +131,33 @@ Exclude cost of previous item purchase in previous week
 - ***Trader Joe Goat milk Keifer***: $5.69 × 2 = $11.18 (4 servings per bottle each 8oz 150 cal)
 - ***Transparent Labs Mass Gainer***
 
-##### Lunch/Snack 
 
+###### Total Daily Calories & Protein:  0 cal/ 0G protein
+
+##### Breakfast
+
+###### Total Daily Calories & Protein:  0 cal/ 0G protein
+
+
+
+##### Sandwich
+
+###### Total Daily Calories & Protein:  0 cal/ 0G protein
+
+
+##### Snacks
+###### Total Daily Calories & Protein:  0 cal/ 0G protein
 
 
 
 ##### Dinner 
 - **Premade food from Store**(Optional) - $15.00 x 2 = $30
 
+###### Total Daily Calories & Protein:  0 cal/ 0G protein
 
-###### Total Daily Cal & Protein 
-- 760 cal / 53G
+
+
+### Total Daily Calories & Protein:  0 cal 0G protein
 
 
 #### Week Three($35.81)
@@ -148,30 +165,74 @@ Exclude cost of previous item purchase in previous week
 - ***Trader Joe Goat milk Keifer***: $5.69 × 2 = $11.18 (4 servings per bottle each 8oz 150 cal)
 - ***Transparent Labs Mass Gainer***
 
-##### Lunch/Snack 
+
+###### Total Daily Calories & Protein:  1140 to  1185 cal/ 53G protein
+
+
+
+##### Breakfast
+
+###### Total Daily Calories & Protein:  1140 to  1185 cal/ 53G protein
+
+
+
+##### Sandwich
 - **Dave Killer Bread**: $5.47 
-- ***Kozy Rice Pudding***: $7.50 
 - **Honey Turkey**: $5.95 
-- **Provolone Cheese**: $4.89
+- **Artikaas Gouda Cheese from Trader Joe**: $3.99 (11 servings 66 cal)
+
+###### Total Daily Calories & Protein:  1140 to  1185 cal/ 53G protein
+
+
+##### Snacks
+- ***Kozy Rice Pudding***: $7.50 
+
+###### Total Daily Calories & Protein:  1140 to  1185 cal/ 53G protein
+
+
 
 ##### Dinner 
 
+###### Total Daily Calories & Protein:  1140 to  1185 cal/ 53G protein
 
-###### Total Daily Cal & Protein 
-- 760 cal / 53G
+
+
+### Total Daily Calories & Protein:  0 cal 0G protein
+
 
 #### Week Four($42)
 ##### Shake 
 - ***Trader Joe Goat milk Keifer***: $5.69 × 2 = $11.18 (4 servings per bottle each 8oz 150 cal)
 - ***Transparent Labs Mass Gainer***
 
-##### Lunch/Snack 
+###### Total Daily Calories & Protein:  1140 to  1185 cal/ 53G protein
+
+
+##### Breakfast
+
+
+###### Total Daily Calories & Protein:  1140 to  1185 cal/ 53G protein
+##### Sandwich
+
+
+###### Total Daily Calories & Protein:  1140 to  1185 cal/ 53G protein
+
+
+##### Snack 
+
+###### Total Daily Calories & Protein:  1140 to  1185 cal/ 53G protein
+
 
 ##### Dinner 
 - **Premade food from Store**(Optional) - $15.00 x 2 = $30
 
-###### Total Daily Cal & Protein 
-- 760 cal / 53G
+
+###### Total Daily Calories & Protein:  1140 to  1185 cal/ 53G protein
+
+
+### Total Daily Calories & Protein:  0 cal 0G protein
+
+
 
 
 #### Extra Potential Add On
