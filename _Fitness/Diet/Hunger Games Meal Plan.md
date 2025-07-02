@@ -47,8 +47,13 @@ dg-publish:
 
 #### Week One($46.81)
 ##### Shake 
-- **Keifer**: $6.00 × 2 = $12.00 (4 servings per bottle each 8oz)
+- ***Trader Joe Goat milk Keifer***: $5.69 × 2 = $11.18 (4 servings per bottle each 8oz 150 cal)
+- **Frozen Raspberries Trader Joe** $3.79(serving size 1 cup cal 80)
+- **Chia Seeds**: $0.00(Find a brand serving size 2.5 Tbsp cal 150)
+- ***Thorne Prebiotic***: $0.00(se1 scope )
 - ***Transparent Labs Mass Gainer***:  760 cal and 53G protein(serving size 2 Scoops)
+
+###### Total Daily Calories & Protein:  
 
 ##### Lunch/Snack 
 - **Eggs**: $5.50 × 2 = $11.00 (4 servings total 4 meals with 3 eggs per serving 210 cal 18G protein)
@@ -56,7 +61,7 @@ dg-publish:
 ###### Sandwich
 - **Dave Killer Bread**: $5.47 (10 servings total each 140 cal )
 - **Honey Turkey**: $5.95 (100 cal 9G protein serving size 6)/ **Chicken breast**: $4.29(70 cal 10G protein serving size 5)
-- **ArtiiGouda Cheese**: $4.89 (12 servings 70 cal)
+- **Artikaas Gouda Cheese from Trader Joe**: $3.99 (11 servings 66 cal)
 - Add extra healthy stuff to increase calories 
 - 10 sandwiches about **290 cal** roughly **9G Quality protein** from deli meat
 
@@ -70,7 +75,7 @@ dg-publish:
 - Frozen Sweet potatoes $
 - Frozen Asparagus $
 - Frozen Green Beans $
-- Frozen Fruit $
+
 
 
 ##### Dinner 
@@ -115,7 +120,7 @@ dg-publish:
 Exclude cost of previous item purchase in previous week
 
 ##### Shake 
-- **Keifer**: $6.00 × 2 = $12.00 (4 servings per bottle)
+- ***Trader Joe Goat milk Keifer***: $5.69 × 2 = $11.18 (4 servings per bottle each 8oz 150 cal)
 - ***Transparent Labs Mass Gainer***
 
 ##### Lunch/Snack 
@@ -133,7 +138,7 @@ Exclude cost of previous item purchase in previous week
 
 #### Week Three($35.81)
 ##### Shake 
-- **Keifer**: $6.00 × 2 = $12.00 (4 servings per bottle)
+- ***Trader Joe Goat milk Keifer***: $5.69 × 2 = $11.18 (4 servings per bottle each 8oz 150 cal)
 - ***Transparent Labs Mass Gainer***
 
 ##### Lunch/Snack 
@@ -150,7 +155,7 @@ Exclude cost of previous item purchase in previous week
 
 #### Week Four($42)
 ##### Shake 
-- **Keifer**: $6.00 × 2 = $12.00 (4 servings per bottle)
+- ***Trader Joe Goat milk Keifer***: $5.69 × 2 = $11.18 (4 servings per bottle each 8oz 150 cal)
 - ***Transparent Labs Mass Gainer***
 
 ##### Lunch/Snack 
