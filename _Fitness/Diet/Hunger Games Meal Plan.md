@@ -50,10 +50,10 @@ dg-publish:
 - ***Trader Joe Goat milk Keifer***: $5.69 × 2 = $11.18 (4 servings per bottle each 8oz 150 cal)
 - **Frozen Raspberries Trader Joe** $3.79(serving size 1 cup cal 80)
 - **Chia Seeds**: $0.00(Find a brand serving size 2.5 Tbsp cal 150)
-- ***Thorne Prebiotic***: $0.00(se1 scope )
+- ***Thorne Prebiotic***: $0.00(serving size 1 scope 45 cal)
 - ***Transparent Labs Mass Gainer***:  760 cal and 53G protein(serving size 2 Scoops)
 
-###### Total Daily Calories & Protein:  
+###### Total Daily Calories & Protein:  1185 cal/ 53G protein
 
 ##### Lunch/Snack 
 - **Eggs**: $5.50 × 2 = $11.00 (4 servings total 4 meals with 3 eggs per serving 210 cal 18G protein)
