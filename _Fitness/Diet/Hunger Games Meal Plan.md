@@ -56,7 +56,7 @@ dg-publish:
 ###### Sandwich
 - **Dave Killer Bread**: $5.47 (10 servings total each 140 cal )
 - **Honey Turkey**: $5.95 (100 cal 9G protein serving size 6)/ **Chicken breast**: $4.29(70 cal 10G protein serving size 5)
-- **Provolone Cheese**: $4.89 (12 servings 70 cal)
+- **ArtiiGouda Cheese**: $4.89 (12 servings 70 cal)
 - Add extra healthy stuff to increase calories 
 - 10 sandwiches about **290 cal** roughly **9G Quality protein** from deli meat
 
@@ -188,7 +188,7 @@ Exclude cost of previous item purchase in previous week
 - Cauliflower 
 - Broccoli
 - Beets
-
+- **Provolone Cheese**: $4.89 (12 servings 70 cal)
 #### Infrequent Purchase
 - Black Pepper
 - Himalayan Salt(mix with coconut water for Homemade  Electrolytes)
