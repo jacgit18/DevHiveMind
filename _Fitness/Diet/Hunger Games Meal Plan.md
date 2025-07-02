@@ -51,6 +51,7 @@ dg-publish:
 - Irish Butter $
 - Frozen Sweet potatoes $
 - Frozen Green Beans $
+- Trader joes sliced turkey breast 5.99 no nitrates ()
 
 
 ##### Shake 
@@ -79,6 +80,8 @@ dg-publish:
 
 ##### Snacks
 - ***Kozy Rice Pudding***: $7.50(6 servings 120 calories)
+- **Trader Joe Cashew Yogurt**: $4.99(4 servings 3/4 cups each 140 cal) 
+
 
 ###### Total Daily Calories & Protein:  120 cal/ 0G protein
 
