@@ -46,36 +46,41 @@ dg-publish:
 - [ ] Make 4 day meal plan the rest of days premade food 
 
 #### Week One($46.81)
-##### Shake 
-- ***Trader Joe Goat milk Keifer***: $5.69 × 2 = $11.18 (4 servings per bottle each 8oz 150 cal)
-- **Frozen Raspberries Trader Joe** $3.79(serving size 1 cup cal 80)
-- **Chia Seeds**: $0.00(Find a brand serving size 2.5 Tbsp cal 150)
-- ***Thorne Prebiotic***: $0.00(serving size 1 scope 45 cal)
-- ***Transparent Labs Mass Gainer***:  760 cal and 53G protein(serving size 2 Scoops)
-
-###### Total Daily Calories & Protein:  1185 cal/ 53G protein
-
-##### Lunch/Snack 
-- **Eggs**: $5.50 × 2 = $11.00 (4 servings total 4 meals with 3 eggs per serving 210 cal 18G protein)
-
-###### Sandwich
-- **Dave Killer Bread**: $5.47 (10 servings total each 140 cal )
-- **Honey Turkey**: $5.95 (100 cal 9G protein serving size 6)/ **Chicken breast**: $4.29(70 cal 10G protein serving size 5)
-- **Artikaas Gouda Cheese from Trader Joe**: $3.99 (11 servings 66 cal)
-- Add extra healthy stuff to increase calories 
-- 10 sandwiches about **290 cal** roughly **9G Quality protein** from deli meat
-
-###### Snacks
-- ***Kozy Rice Pudding***: $7.50(6 servings 120 calories)
-
 ##### Extra
-- Chia Seeds( 150 cal 5G Protein 2.5 tbsp)
 - Pecans
 - Irish Butter
 - Frozen Sweet potatoes $
 - Frozen Asparagus $
 - Frozen Green Beans $
 
+
+##### Shake 
+- ***Trader Joe Goat milk Keifer***: $5.69 × 2 = $11.18 (4 servings per bottle each 8oz 150 cal)
+- **Frozen Raspberries Trader Joe** $3.79(serving size 1 cup cal 80)
+- **Chia Seeds**: $0.00(Find a brand serving size 2.5 Tbsp cal 150)
+- ***Thorne Prebiotic***: $0.00(serving size 1 scope 45 cal)
+- ***Transparent Labs Mass Gainer***:  760 cal and 53G protein(serving size 2 Scoops)
+###### Total Daily Calories & Protein:  1140 to  1185 cal/ 53G protein
+
+
+##### Breakfast 
+- **Eggs**: $5.50 × 2 = $11.00 (4 servings total 4 meals with 3 eggs per serving 210 cal 18G protein)
+
+###### Total Daily Calories & Protein:  210 cal/ 18G protein
+
+
+##### Sandwich
+- **Dave Killer Bread**: $5.47 (10 servings total each 140 cal )
+- **Honey Turkey**: $5.95 (100 cal 9G protein serving size 6)/ **Chicken breast**: $4.29(70 cal 10G protein serving size 5)
+- **Artikaas Gouda Cheese from Trader Joe**: $3.99 (11 servings 66 cal)
+- Add extra healthy stuff to increase calories 
+- 10 sandwiches about **290 cal** roughly **9G Quality protein** from deli meat
+###### Total Daily Calories & Protein:  306 cal/ 9G protein
+
+##### Snacks
+- ***Kozy Rice Pudding***: $7.50(6 servings 120 calories)
+
+###### Total Daily Calories & Protein:  120 cal/ 0G protein
 
 
 ##### Dinner 
@@ -112,8 +117,10 @@ dg-publish:
 - Rice Brown or Black
 - Canned Beans Chickpeas or Soybeans or pinto or navy
 
-###### Total Daily Cal & Protein 
-- 760 cal / 53G
+###### Total Daily Calories & Protein:  120 cal/ 0G protein
+
+
+### Total Daily Calories & Protein:  760 cal 53G protein
 
 
 #### Week Two($42)
