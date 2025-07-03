@@ -52,7 +52,8 @@ dg-publish:
 - Frozen Sweet potatoes $
 - Frozen Green Beans $
 - Trader joes sliced turkey breast 5.99 no nitrates ()
-- 899 cherry juice
+- 8.99 cherry juice
+- Sweet potato Gnocchi $3.69
 
 
 ##### Shake 
@@ -122,6 +123,7 @@ dg-publish:
 - Rice Brown or Black
 - Canned Beans Chickpeas or Soybeans or pinto or navy
 - **Trader Joe Frozen Asparagus** $3.99()
+- **Trader Joe Frozen Brussels Sprouts**: $3.99()
 
 ###### Total Daily Calories & Protein:  120 cal/ 0G protein
 
