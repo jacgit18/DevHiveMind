@@ -45,7 +45,8 @@ dg-publish:
 - [ ] Not always getting eggs since in house a lot and can exclude Wonder beets
 - [ ] Make 4 day meal plan the rest of days premade food 
 
-#### Week One($46.81)
+#### Week One($54.88) 
+dinner not included yet in total for week
 ##### Extra
 - Pecans $
 - Irish Butter $
