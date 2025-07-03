@@ -53,7 +53,7 @@ dg-publish:
 - Frozen Green Beans $
 - Trader joes sliced turkey breast 5.99 no nitrates ()
 - 8.99 cherry juice
-- Sweet potato Gnocchi $3.69
+- Sweet potato Gnocchi $3.69 (1 serving 230 cal whole bag 690 cal)
 
 
 ##### Shake 
