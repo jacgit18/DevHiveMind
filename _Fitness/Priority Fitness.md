@@ -94,7 +94,7 @@ color purple
 1. **Daily Protein for Maintenance/Gain:** ~120 – 330 grams of protein per day
 2. **Protein for Cutting (higher intake for muscle preservation):** ~180 grams/day
 
-![[ChatGPT Image Jun 28, 2025, 04_30_44 PM.png]]
+![[ChatGPT Image Jul 3, 2025, 04_58_45 PM.png]]
 ## Best Practices
 #todo/BAU/Workout  
 - [ ] Alternate between **hypertrophy and strength phases on different days**. Aim to train **at least 5 to 6 days per week**, which allows for effective coverage of both upper and lower body across both training phases.
