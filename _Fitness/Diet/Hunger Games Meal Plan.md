@@ -44,7 +44,7 @@ dg-publish:
 - [ ] For Mass gainer skip a month and try other two higher calorie flavors 
 - [ ] Not always getting eggs since in house a lot and can exclude Wonder beets
 - [ ] Make 4 day meal plan the rest of days premade food 
-- [ ] Go to Ditmas health food spot once a month, Aldi and trader  twice a week  
+- [ ] Go to Ditmas health food spot once a month, Aldi and trader Joe's twice a week  
 
 #### Week One($54.88) 
 dinner not included yet in total for week
@@ -54,7 +54,7 @@ dinner not included yet in total for week
 - Frozen Sweet potatoes $
 - Frozen Green Beans $
 - Trader joes sliced turkey breast 5.99 no nitrates ()
-- 8.99 cherry juice
+- 8.99 cherry juice (from ditmas health food store )
 - Sweet potato Gnocchi $3.69 (1 serving 230 cal whole bag 690 cal)
 
 
