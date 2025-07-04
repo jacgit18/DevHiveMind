@@ -440,7 +440,7 @@ Weight ranges lowest explosive power weight to max strength weight. Hit Strength
 - **[Cable Lateral Walk](https://youtu.be/nw8NjG2YOLY?si=KAo4G6B3_5Av1s_t)** - 20lb to 30lb
 - Suitcase Carry/March - 20lb
 - Farmer Carry/March - 20lb
-- **Kettlebell Swing** 
+- **Kettlebell Swing** - 20lb
 - **Sled** - twice a week push and pull - 50lb
 	- Backward walk, seated pancake pull, standing pull
 	- [Lateral Sled Drag](https://youtu.be/rGtYmX2aeAA?si=PnniyFsIluLeViKa) - try
