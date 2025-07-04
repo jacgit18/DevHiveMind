@@ -44,6 +44,7 @@ dg-publish:
 - [ ] For Mass gainer skip a month and try other two higher calorie flavors 
 - [ ] Not always getting eggs since in house a lot and can exclude Wonder beets
 - [ ] Make 4 day meal plan the rest of days premade food 
+- [ ] Go to Ditmas health food spot once a month, Aldi and trader  twice a week  
 
 #### Week One($54.88) 
 dinner not included yet in total for week
@@ -59,7 +60,7 @@ dinner not included yet in total for week
 
 ##### Shake 
 - ***Trader Joe Goat milk Keifer***: $5.69 × 2 = $11.18 (4 servings per bottle each 8oz 150 cal)
-- **Frozen Raspberries Trader Joe** $3.79(serving size 1 cup cal 80)
+- **Frozen Raspberries Trader Joe** $3.79(serving size 1 cup cal 80) x 3 =
 - **Chia Seeds**: $0.00(Find a brand serving size 2.5 Tbsp cal 150)
 - ***Thorne Prebiotic***: $0.00(serving size 1 scope 45 cal)
 - ***Transparent Labs Mass Gainer***:  760 cal and 53G protein(serving size 2 Scoops)
@@ -132,15 +133,16 @@ dinner not included yet in total for week
 ### Total Daily Calories & Protein:  1,776 to 1,821 cal 80G protein
 not including dinner calculation
 
-#### Week Two($42)
-Exclude cost of previous item purchase in previous week
+#### Week Two($41.18)
+Exclude cost of previous item purchase in previous week and buy things like kiefier in bulk the week before but include in this week calculation
 
 ##### Shake 
 - ***Trader Joe Goat milk Keifer***: $5.69 × 2 = $11.18 (4 servings per bottle each 8oz 150 cal)
-- ***Transparent Labs Mass Gainer***
+- ***Transparent Labs Mass Gainer***:  760 cal and 53G protein(serving size 2 Scoops)
 
 
 ###### Total Daily Calories & Protein:  0 cal/ 0G protein
+
 
 ##### Breakfast
 

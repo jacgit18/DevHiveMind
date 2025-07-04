@@ -618,7 +618,7 @@ Lean forward a little on [lunge/squat](https://youtu.be/DfGu48vMmlU?si=DbDYi5Wq3
 - **B-Squat** + **Walking Barbell/Zercher Lunge** + **Band Single-Leg Barbell Squat** 
 
 #### **Session 2: Hinge + Posterior Chain (Glutes, Hamstrings, Core)**
-1. **Cable Pull Through** – 33lb
+1. **Cable/[Sled](https://youtu.be/kZyoyXUYYnQ?si=g3JDFGSTlRTOKzbi) Pull Through** – 33lb
 2. **Cable Hip Extension** – 50lb 
 3. **Hip Thrust(dual/single-Perform with Medium Band)** - 90lb to 130lb 
 4. **Tib Bar Raise** – 5lb 
