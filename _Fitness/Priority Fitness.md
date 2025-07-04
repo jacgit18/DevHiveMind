@@ -57,42 +57,6 @@ color purple
 ^button-l21b
 
 
-## Calories
-> [!tip] Food for Thought
->  Watch food videos before or while eating to stimulate your appetite and help you eat more without feeling full too quickly. Also walk around while eating and limit water to eat more.
-
-
-#todo/BAU/Life 
-- [ ] Order [[Hunger Games Meal Plan]] from CookUnity twice a month or some alt staying under $260 and $70 left over for super market and eating out maybe $30 more if eating out or networking so $360 for food at max
-
-- 15% body fat 
-- **Weight Last Year:** 113 lbs
-- **WaterToDrink:** 80 oz
-
-| Months | Weight | Date       |
-| ------ | ------ | ---------- |
-| 0      | 120    | 05/01/2025 |
-| 1      | 122    | 06/01/2025 |
-| 2      | 123    | 07/01/2025 |
-| 3      |        |            |
-| 4      |        |            |
-| 5      |        |            |
-| 6      |        |            |
-| 7      |        |            |
-
-- **Maintain Current Weight:** ~2,100 calories/day
-- **Calorie Goal for Gaining Weight (fast approach):** ~3,600 calories/day
-- **Calorie Goal for Gaining Weight (moderate approach):** ~3,300 calories/day (current target)
-- **Maintain New Weight (goal weight):** ~2,800 calories/day
-- **Slow Weight Gain:** ~1,700–1,800 calories/day over the course of a year (extremely slow, not typical for bulking).
-- **Sleep:** avoid laying on bed outside of sleeping
-	- Stop Eating 3 hour before sleep
-	- Stop Drinking 2 hour before sleep
-	- Stop Scrolling 1 hour before sleep
- 
-##### **Protein Requirements:**
-1. **Daily Protein for Maintenance/Gain:** ~120 – 330 grams of protein per day
-2. **Protein for Cutting (higher intake for muscle preservation):** ~180 grams/day
 
 ![[ChatGPT Image Jul 3, 2025, 04_58_45 PM.png]]
 ## Best Practices

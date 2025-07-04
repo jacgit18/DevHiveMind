@@ -12,8 +12,41 @@ Peer Reviewed: 0
 dg-publish:
 ---
 # Meal Plan 
-**Calories:** ~2,900 to 3,200  
-**Protein:** ~150g to 215g  
+
+> [!tip] Food for Thought
+>  Watch food videos before or while eating to stimulate your appetite and help you eat more without feeling full too quickly. Also walk around while eating and limit water to eat more.
+
+
+| Months | Weight | Date       |
+| ------ | ------ | ---------- |
+| 0      | 120    | 05/01/2025 |
+| 1      | 122    | 06/01/2025 |
+| 2      | 123    | 07/01/2025 |
+| 3      | 12     | 08/01/2025 |
+| 4      | 12     | 09/01/2025 |
+| 5      | 12     | 10/01/2025 |
+| 6      | 13     | 11/01/2025 |
+| 7      | 13     | 12/01/2025 |
+
+
+- 15% body fat
+- **Calorie range to hit:** ~2,900 to 3,200  
+- **Protein range to hit:** ~150g to 215g  
+- **WaterToDrink:** 80 oz
+- **Weight Last Year:** 113 lbs
+- **Maintain Current Weight:** ~2,100 calories/day
+- **Calorie Goal for Gaining Weight (fast approach):** ~3,600 calories/day
+- **Calorie Goal for Gaining Weight (moderate approach):** ~3,200 calories/day (current target)
+- **Maintain New Weight (goal weight):** ~2,800 calories/day
+- **Slow Weight Gain:** ~1,700–1,800 calories/day over the course of a year (extremely slow, not typical for bulking).
+- **Sleep:** avoid laying on bed outside of sleeping
+	- Stop Eating 3 hour before sleep
+	- Stop Drinking 2 hour before sleep
+	- Stop Scrolling 1 hour before sleep
+
+##### **Protein Requirements:**
+1. **Daily Protein for Maintenance/Gain:** ~120 – 330 grams of protein per day
+2. **Protein for Cutting (higher intake for muscle preservation):** ~180 grams/day
 
 | Category                                  |          Cost          | Notes                                                                                                                                                                                                                            |
 | ----------------------------------------- | :--------------------: | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -24,6 +57,8 @@ dg-publish:
 | **Cooked Food (Corner stores/Grab-n-go)** |        **$180**        | Prepared meals 3 times a week about $45 a week                                                                                                                                                                                   |
 | **Dining Out (Optional/fun)**             |        **$80**         | max 1,250 a month including food along with general fun                                                                                                                                                                          |
 | **Total**                                 |        **$663**        | Almost 8,000 for the year max excluding extra fun with just Groceries, Dining out,  & mass gainer about 360 and 460 roughly if doing a hybrid of Premade food and Eating out so at max a year about 5,600 excluding other stuff. |
+
+
 
 
 ## Food cost
