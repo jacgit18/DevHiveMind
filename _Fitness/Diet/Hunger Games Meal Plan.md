@@ -89,14 +89,14 @@ dinner not included yet in total for week
 - Frozen Sweet potatoes $
 - Frozen Green Beans $
 - Trader joes sliced turkey breast 5.99 no nitrates ()
-- 8.99 cherry juice (from ditmas health food store )
+- ***Lakewood Cherry Juice***: (from ditmas health food store )$8.99
 - Sweet potato Gnocchi $3.69 (1 serving 230 cal whole bag 690 cal)
 
 
 ##### Shake 
 - ***Trader Joe Goat milk Keifer***: $5.69 × 2 = $11.18 (4 servings per bottle each 8oz 150 cal)
-- **Frozen Raspberries Trader Joe** $3.79(serving size 1 cup cal 80) x 3 =
-- **Chia Seeds**: $0.00(Find a brand serving size 2.5 Tbsp cal 150)
+- **Frozen Raspberries Trader Joe** $3.79(serving size 1 cup cal 80) x 3 =$11.37
+- **Chia Seeds**: $0.00(*Find a brand* serving size 2.5 Tbsp cal 150)
 - ***Thorne Prebiotic***: $0.00(serving size 1 scope 45 cal)
 - ***Transparent Labs Mass Gainer***:  760 cal and 53G protein(serving size 2 Scoops)
 ###### Total Daily Calories & Protein:  1140 to  1185 cal/ 53G protein
@@ -169,10 +169,13 @@ dinner not included yet in total for week
 not including dinner calculation
 
 #### Week Two($41.18)
-Exclude cost of previous item purchase in previous week and buy things like kiefier in bulk the week before but include in this week calculation
+Exclude cost of previous item purchase in previous week and buy things like kiefier in bulk the week before but include in this week calculation for calories and protein
 
 ##### Shake 
 - ***Trader Joe Goat milk Keifer***: $5.69 × 2 = $11.18 (4 servings per bottle each 8oz 150 cal)
+- **Frozen Raspberries Trader Joe**:(serving size 1 cup cal 80)
+- **Chia Seeds**: $0.00(Find a brand serving size 2.5 Tbsp cal 150)
+- ***Thorne Prebiotic***: $0.00(serving size 1 scope 45 cal)
 - ***Transparent Labs Mass Gainer***:  760 cal and 53G protein(serving size 2 Scoops)
 
 
