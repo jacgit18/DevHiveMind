@@ -91,42 +91,35 @@ dinner not included yet in total for week
 - Trader joes sliced turkey breast 5.99 no nitrates ()
 - ***Lakewood Cherry Juice***: (from ditmas health food store )$8.99
 - Sweet potato Gnocchi $3.69 (1 serving 230 cal whole bag 690 cal)
+- **Trader Joe Cashew Yogurt**: $4.99(4 servings 3/4 cups each 140 cal) 
 
 
-##### Shake 
-- ***Trader Joe Goat milk Keifer***: $5.69 × 2 = $11.18 (4 servings per bottle each 8oz 150 cal)
+##### Shake($22.55) - Total Daily Calories & Protein:  1140 to  1185 cal/ 53G protein
+- ***Trader Joe Goat milk Keifer***: $5.69 (4 servings per bottle each 8oz 150 cal) × 2 = $11.18
 - **Frozen Raspberries Trader Joe** $3.79(serving size 1 cup cal 80) x 3 =$11.37
 - **Chia Seeds**: $0.00(*Find a brand* serving size 2.5 Tbsp cal 150)
 - ***Thorne Prebiotic***: $0.00(serving size 1 scope 45 cal)
 - ***Transparent Labs Mass Gainer***:  760 cal and 53G protein(serving size 2 Scoops)
-###### Total Daily Calories & Protein:  1140 to  1185 cal/ 53G protein
 
 
-##### Breakfast 
+##### Breakfast($11.00) -  Total Daily Calories & Protein:  210 cal/ 18G protein
 - **Eggs**: $5.50 × 2 = $11.00 (4 servings total 4 meals with 3 eggs per serving 210 cal 18G protein)
 
-###### Total Daily Calories & Protein:  210 cal/ 18G protein
 
-
-##### Sandwich
+##### Sandwich($21.41) - Total Daily Calories & Protein:  686 cal/ 9G protein
 - **Dave Killer Bread**: $5.47 (10 servings total each 140 cal )
 - **Honey Turkey**: $5.95 (100 cal 9G protein serving size 6)/ **Chicken breast**: $4.29(70 cal 10G protein serving size 5)
 - **Artikaas Gouda Cheese from Trader Joe**: $3.99 (11 servings 66 cal)
-- **Trader Joe Everything Bagel**:$1.99( 380 cal) x3 = 
+- **Trader Joe Everything Bagel**:$1.99( 380 cal) x3 = 6.00
 - Add extra healthy stuff to increase calories 
 - 10 sandwiches about **290 cal** roughly **9G Quality protein** from deli meat
-###### Total Daily Calories & Protein:  306 cal/ 9G protein
 
-
-##### Snacks
+##### Snacks($7.50) - Total Daily Calories & Protein:  120 cal/ 0G protein
 - ***Kozy Rice Pudding***: $7.50(6 servings 120 calories)
-- **Trader Joe Cashew Yogurt**: $4.99(4 servings 3/4 cups each 140 cal) 
 
 
-###### Total Daily Calories & Protein:  120 cal/ 0G protein
 
-
-##### Dinner 
+##### Dinner($) - Total Daily Calories & Protein:  0 cal/ 0G protein
 ###### Meat
 #todo/BAU 
 - [ ]  Break down into a week assuming only eating one type of meat a week then half it between 4 days and use excess 
@@ -147,8 +140,6 @@ dinner not included yet in total for week
 - **Ground Beef**
 - **Ground Turkey**
 
-  
-
 **Unhealthiest Cuts:**  
 - **Ribeye**: 22g fat (10g saturated) per 100g .  
 - **T-Bone/Porterhouse**: High in saturated fat (18g/100g) .  
@@ -162,16 +153,16 @@ dinner not included yet in total for week
 - **Trader Joe Frozen Asparagus** $3.99()
 - **Trader Joe Frozen Brussels Sprouts**: $3.99()
 
-###### Total Daily Calories & Protein:  120 cal/ 0G protein
-
-
 ### Total Daily Calories & Protein:  1,776 to 1,821 cal 80G protein
 not including dinner calculation
+
+
 
 #### Week Two($41.18)
 Exclude cost of previous item purchase in previous week and buy things like kiefier in bulk the week before but include in this week calculation for calories and protein
 
-##### Shake 
+
+##### Shake($22.55) - Total Daily Calories & Protein:  1140 to  1185 cal/ 53G protein 
 - ***Trader Joe Goat milk Keifer***: $5.69 × 2 = $11.18 (4 servings per bottle each 8oz 150 cal)
 - **Frozen Raspberries Trader Joe**:(serving size 1 cup cal 80)
 - **Chia Seeds**: $0.00(Find a brand serving size 2.5 Tbsp cal 150)
@@ -179,12 +170,8 @@ Exclude cost of previous item purchase in previous week and buy things like kief
 - ***Transparent Labs Mass Gainer***:  760 cal and 53G protein(serving size 2 Scoops)
 
 
-###### Total Daily Calories & Protein:  0 cal/ 0G protein
-
-
-##### Breakfast
-
-###### Total Daily Calories & Protein:  0 cal/ 0G protein
+##### Breakfast($11.00) -  Total Daily Calories & Protein:  210 cal/ 18G protein
+- **Eggs**:(4 servings total 4 meals with 3 eggs per serving 210 cal 18G protein)
 
 
 
