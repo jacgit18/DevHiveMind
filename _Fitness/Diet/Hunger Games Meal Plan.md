@@ -80,6 +80,7 @@ dg-publish:
 - [ ] Not always getting eggs since in house a lot and can exclude Wonder beets
 - [ ] Make 4 day meal plan the rest of days premade food 
 - [ ] Go to Ditmas health food spot once a month, Aldi and trader Joe's twice a week  
+- [ ] Maybe do [Chia pudding](https://youtu.be/jRu2aFdRL54?si=QwMBArCKrPHB3PPp) instead of throwing in shake get a healthy milk and include yogurt etc...
 
 #### Week One($54.88) 
 dinner not included yet in total for week
@@ -94,7 +95,7 @@ dinner not included yet in total for week
 - **Trader Joe Cashew Yogurt**: $4.99(4 servings 3/4 cups each 140 cal) 
 
 
-##### Shake($22.55) - Total Daily Calories & Protein:  1140 to  1185 cal/ 53G protein
+##### Shake($22.55) - Total Daily Calories & Protein:  1205 to 1285 cal/ 53G protein
 - ***Trader Joe Goat milk Keifer***: $5.69 (4 servings per bottle each 8oz 150 cal) × 2 = $11.18
 - **Frozen Raspberries Trader Joe** $3.79(serving size 1 cup cal 80) x 3 =$11.37
 - **Chia Seeds**: $0.00(*Find a brand* serving size 2.5 Tbsp cal 150)
