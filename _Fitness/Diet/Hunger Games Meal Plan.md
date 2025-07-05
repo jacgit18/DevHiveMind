@@ -67,6 +67,8 @@ dg-publish:
 
 #todo/BAU 
 - [ ] Buy 4 bottles of Kiefer every two weeks
+- [ ] 2 bags of bread 
+- [ ] Increase main dinner meat, Quinoa, or deli meat when eggs aren't available 
 - [ ] Make meal prep effortless as possible 
 - [ ] Update weekly totals
 - [ ] get weekly cost to around 45 to 50 a week assuming no change with supplement
@@ -97,10 +99,10 @@ dinner not included yet in total for week
 
 
 ##### Shake($22.55) - Total Daily Calories & Protein:  1205 to 1285 cal/ 53G protein
-- ***Trader Joe Goat milk Keifer***: $5.69 (4 servings per bottle each 8oz 150 cal) × 2 = $11.18
-- **Frozen Raspberries Trader Joe** $3.79(serving size 1 cup cal 80) x 3 =$11.37
+- ***Trader Joe Goat milk Keifer***: $5.69 ( 150 cal 4 servings per bottle each 8oz) × 2 = $11.18
+- **Frozen Raspberries Trader Joe** $3.79( 80 cal serving size 1 cup) x 3 =$11.37
 - **Chia Seeds**: $0.00(*Find a brand* serving size 2.5 Tbsp cal 150)
-- ***Thorne Prebiotic***: $0.00(serving size 1 scope 45 cal)
+- ***Thorne Prebiotic***: $0.00(45 cal serving size 1 scope)
 - ***Transparent Labs Mass Gainer***:  760 cal and 53G protein(serving size 2 Scoops)
 
 
@@ -164,16 +166,16 @@ not including dinner calculation
 Exclude cost of previous item purchase in previous week and buy things like kiefier in bulk the week before but include in this week calculation for calories and protein
 
 
-##### Shake($22.55) - Total Daily Calories & Protein:  1205 to 1285 cal/ 53G protein
+##### Shake($0) - Total Daily Calories & Protein:  1205 to 1285 cal/ 53G protein
 - ***Trader Joe Goat milk Keifer***: = (150 cal)
-- **Frozen Raspberries Trader Joe**:(cal 80)
-- **Chia Seeds**: $0.00(F cal 150)
-- ***Thorne Prebiotic***: $0.00(serving size 1 scope 45 cal)
-- ***Transparent Labs Mass Gainer***:  760 cal and 53G protein(serving size 2 Scoops)
+- **Frozen Raspberries Trader Joe**:(80 cal)
+- **Chia Seeds**: (cal 150)
+- ***Thorne Prebiotic***:(45 cal)
+- ***Transparent Labs Mass Gainer***:  760 cal and 53G protein
 
 
 ##### Breakfast($11.00) -  Total Daily Calories & Protein:  210 cal/ 18G protein
-- **Eggs**:(4 servings total 4 meals with 3 eggs per serving 210 cal 18G protein)
+- **Eggs**:(210 cal 18G protein)
 
 
 
@@ -199,8 +201,11 @@ Exclude cost of previous item purchase in previous week and buy things like kief
 
 #### Week Three($35.81)
 ##### Shake($22.55) - Total Daily Calories & Protein:  1205 to 1285 cal/ 53G protein
-- ***Trader Joe Goat milk Keifer***: $5.69 × 2 = $11.18 (4 servings per bottle each 8oz 150 cal)
-- ***Transparent Labs Mass Gainer***
+- ***Trader Joe Goat milk Keifer***: = (150 cal)
+- **Frozen Raspberries Trader Joe**:(80 cal)
+- **Chia Seeds**: (cal 150)
+- ***Thorne Prebiotic***: (45 cal)
+- ***Transparent Labs Mass Gainer***:  760 cal and 53G protein
 
 
 
@@ -238,10 +243,11 @@ Exclude cost of previous item purchase in previous week and buy things like kief
 
 #### Week Four($42)
 ##### Shake($22.55) - Total Daily Calories & Protein:  1205 to 1285 cal/ 53G protein
-- ***Trader Joe Goat milk Keifer***: $5.69 × 2 = $11.18 (4 servings per bottle each 8oz 150 cal)
-- ***Transparent Labs Mass Gainer***
-
-
+- ***Trader Joe Goat milk Keifer***: = (150 cal)
+- **Frozen Raspberries Trader Joe**:(80 cal)
+- **Chia Seeds**: (cal 150)
+- ***Thorne Prebiotic***: (45 cal)
+- ***Transparent Labs Mass Gainer***:  760 cal and 53G protein
 
 ##### Breakfast
 
