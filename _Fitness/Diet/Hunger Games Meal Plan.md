@@ -66,6 +66,7 @@ dg-publish:
 ### Month Itemized Breakdown: 
 
 #todo/BAU 
+- [ ] Buy 4 bottles of Kiefer every two weeks
 - [ ] Make meal prep effortless as possible 
 - [ ] Update weekly totals
 - [ ] get weekly cost to around 45 to 50 a week assuming no change with supplement
@@ -154,7 +155,7 @@ dinner not included yet in total for week
 - **Trader Joe Frozen Asparagus** $3.99()
 - **Trader Joe Frozen Brussels Sprouts**: $3.99()
 
-### Total Daily Calories & Protein:  1,776 to 1,821 cal 80G protein
+### Total Daily Calories & Protein:  2,221 to 2,301 cal 80G protein
 not including dinner calculation
 
 
@@ -163,10 +164,10 @@ not including dinner calculation
 Exclude cost of previous item purchase in previous week and buy things like kiefier in bulk the week before but include in this week calculation for calories and protein
 
 
-##### Shake($22.55) - Total Daily Calories & Protein:  1140 to  1185 cal/ 53G protein 
-- ***Trader Joe Goat milk Keifer***: $5.69 × 2 = $11.18 (4 servings per bottle each 8oz 150 cal)
-- **Frozen Raspberries Trader Joe**:(serving size 1 cup cal 80)
-- **Chia Seeds**: $0.00(Find a brand serving size 2.5 Tbsp cal 150)
+##### Shake($22.55) - Total Daily Calories & Protein:  1205 to 1285 cal/ 53G protein
+- ***Trader Joe Goat milk Keifer***: = (150 cal)
+- **Frozen Raspberries Trader Joe**:(cal 80)
+- **Chia Seeds**: $0.00(F cal 150)
 - ***Thorne Prebiotic***: $0.00(serving size 1 scope 45 cal)
 - ***Transparent Labs Mass Gainer***:  760 cal and 53G protein(serving size 2 Scoops)
 
@@ -178,18 +179,18 @@ Exclude cost of previous item purchase in previous week and buy things like kief
 
 ##### Sandwich
 
-###### Total Daily Calories & Protein:  0 cal/ 0G protein
+
 
 
 ##### Snacks
-###### Total Daily Calories & Protein:  0 cal/ 0G protein
+
 
 
 
 ##### Dinner 
 - **Premade food from Store**(Optional) - $15.00 x 2 = $30
 
-###### Total Daily Calories & Protein:  0 cal/ 0G protein
+
 
 
 
@@ -197,18 +198,17 @@ Exclude cost of previous item purchase in previous week and buy things like kief
 
 
 #### Week Three($35.81)
-##### Shake 
+##### Shake($22.55) - Total Daily Calories & Protein:  1205 to 1285 cal/ 53G protein
 - ***Trader Joe Goat milk Keifer***: $5.69 × 2 = $11.18 (4 servings per bottle each 8oz 150 cal)
 - ***Transparent Labs Mass Gainer***
 
 
-###### Total Daily Calories & Protein:  1140 to  1185 cal/ 53G protein
 
 
 
 ##### Breakfast
 
-###### Total Daily Calories & Protein:  1140 to  1185 cal/ 53G protein
+
 
 
 
@@ -217,19 +217,19 @@ Exclude cost of previous item purchase in previous week and buy things like kief
 - **Honey Turkey**: $5.95 
 - **Artikaas Gouda Cheese from Trader Joe**: $3.99 (11 servings 66 cal)
 
-###### Total Daily Calories & Protein:  1140 to  1185 cal/ 53G protein
+
 
 
 ##### Snacks
 - ***Kozy Rice Pudding***: $7.50 
 
-###### Total Daily Calories & Protein:  1140 to  1185 cal/ 53G protein
+
 
 
 
 ##### Dinner 
 
-###### Total Daily Calories & Protein:  1140 to  1185 cal/ 53G protein
+
 
 
 
@@ -237,33 +237,32 @@ Exclude cost of previous item purchase in previous week and buy things like kief
 
 
 #### Week Four($42)
-##### Shake 
+##### Shake($22.55) - Total Daily Calories & Protein:  1205 to 1285 cal/ 53G protein
 - ***Trader Joe Goat milk Keifer***: $5.69 × 2 = $11.18 (4 servings per bottle each 8oz 150 cal)
 - ***Transparent Labs Mass Gainer***
 
-###### Total Daily Calories & Protein:  1140 to  1185 cal/ 53G protein
 
 
 ##### Breakfast
 
 
-###### Total Daily Calories & Protein:  1140 to  1185 cal/ 53G protein
+
 ##### Sandwich
 
 
-###### Total Daily Calories & Protein:  1140 to  1185 cal/ 53G protein
+
 
 
 ##### Snack 
 
-###### Total Daily Calories & Protein:  1140 to  1185 cal/ 53G protein
+
 
 
 ##### Dinner 
 - **Premade food from Store**(Optional) - $15.00 x 2 = $30
 
 
-###### Total Daily Calories & Protein:  1140 to  1185 cal/ 53G protein
+
 
 
 ### Total Daily Calories & Protein:  0 cal 0G protein
