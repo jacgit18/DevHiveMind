@@ -85,7 +85,7 @@ dg-publish:
 - [ ] Go to Ditmas health food spot once a month, Aldi and trader Joe's twice a week  
 - [ ] Maybe do [Chia pudding](https://youtu.be/jRu2aFdRL54?si=QwMBArCKrPHB3PPp) instead of throwing in shake get a healthy milk and include yogurt etc...
 
-#### Week One($54.88) 
+#### Week One($60.35)  - total daily calories/protein:  2,221 to 2,301/80G 
 dinner not included yet in total for week
 ##### Extra
 - Pecans $
@@ -110,8 +110,8 @@ dinner not included yet in total for week
 - **Eggs**: $5.50 × 2 = $11.00 (4 servings total 4 meals with 3 eggs per serving 210 cal 18G protein)
 
 
-##### Sandwich($21.41) - Total Daily Calories & Protein:  686 cal/ 9G protein
-- **Dave Killer Bread**: $5.47 (10 servings total each 140 cal )
+##### Sandwich($26.88) - Total Daily Calories & Protein:  686 cal/ 9G protein
+- **Dave Killer Bread**: $5.47 ( 140 cal 10 servings total each) x 2 = $10.94
 - **Honey Turkey**: $5.95 (100 cal 9G protein serving size 6)/ **Chicken breast**: $4.29(70 cal 10G protein serving size 5)
 - **Artikaas Gouda Cheese from Trader Joe**: $3.99 (11 servings 66 cal)
 - **Trader Joe Everything Bagel**:$1.99( 380 cal) x3 = 6.00
@@ -157,9 +157,6 @@ dinner not included yet in total for week
 - **Trader Joe Frozen Asparagus** $3.99()
 - **Trader Joe Frozen Brussels Sprouts**: $3.99()
 
-### Total Daily Calories & Protein:  2,221 to 2,301 cal 80G protein
-not including dinner calculation
-
 
 
 #### Week Two($41.18)
@@ -174,12 +171,13 @@ Exclude cost of previous item purchase in previous week and buy things like kief
 - ***Transparent Labs Mass Gainer***:  760 cal and 53G protein
 
 
-##### Breakfast($11.00) -  Total Daily Calories & Protein:  210 cal/ 18G protein
+##### Breakfast($0) -  Total Daily Calories & Protein:  210 cal/ 18G protein
 - **Eggs**:(210 cal 18G protein)
 
 
 
-##### Sandwich
+##### Sandwich($21.41) - Total Daily Calories & Protein:  686 cal/ 9G protein
+- **Dave Killer Bread**: (140 cal)
 
 
 
