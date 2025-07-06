@@ -34,11 +34,9 @@ dg-publish:
 - **Protein range to hit:** ~150g to 215g  
 - **WaterToDrink:** 80 oz
 - **Weight Last Year:** 113 lbs
-- **Maintain Current Weight:** ~2,100 calories/day
 - **Calorie Goal for Gaining Weight (fast approach):** ~3,600 calories/day
 - **Calorie Goal for Gaining Weight (moderate approach):** ~3,200 calories/day (current target)
-- **Maintain New Weight (goal weight):** ~2,800 calories/day
-- **Slow Weight Gain:** ~1,700–1,800 calories/day over the course of a year (extremely slow, not typical for bulking).
+- **Maintain New Weight (goal weight 145 to 155):** ~2,800 calories/day
 - **Sleep:** avoid laying on bed outside of sleeping
 	- Stop Eating 3 hour before sleep
 	- Stop Drinking 2 hour before sleep
