@@ -8,7 +8,7 @@ author:
   - gitUserNamePlaceHolder
 banner: "![[weight-lifting-anime-mashle-funny-workout-dve2194rciuyep9p.gif]]"
 banner_y: 
-banner_x: NaN
+banner_x: 
 Comments: Placeholder comment any thing else you want to mention about the document.
 Purpose: This documentation discusses
 Status: 

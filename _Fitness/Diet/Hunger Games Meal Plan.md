@@ -86,6 +86,7 @@ dg-publish:
 - [ ] Make 4 day meal plan the rest of days premade food 
 - [ ] Go to Ditmas health food spot once a month, Aldi and trader Joe's twice a week  
 - [ ] Maybe do [Chia pudding](https://youtu.be/jRu2aFdRL54?si=QwMBArCKrPHB3PPp) instead of throwing in shake get a healthy milk maybe from whole foods and include yogurt etc...
+- [ ] Add extra healthy stuff in sandwich to increase calories 
 
 #### Week One($60.35)  - total daily calories/protein:  2,221 to 2,301/80G 
 dinner not included yet in total for week
@@ -104,11 +105,10 @@ dinner not included yet in total for week
 
 ##### Sandwich($26.88) - Total Daily Calories & Protein:  686 cal/ 9G protein
 - **Dave Killer Bread**: $5.47 ( 140 cal 10 servings total each) x 2 = $10.94
-- **Honey Turkey**: $5.95 (100 cal 9G protein serving size 6)/ **Chicken breast**: $4.29(70 cal 10G protein serving size 5)
+- **Honey Turkey**: $5.95 (100 cal 9G protein serving size 6)/ **Chicken Breast**: $4.29(70 cal 10G protein serving size 5)
 - **Artikaas Gouda Cheese from Trader Joe**: $3.99 (11 servings 66 cal)
 - **Trader Joe Everything Bagel**:$1.99( 380 cal) x3 = 6.00
-- Add extra healthy stuff to increase calories 
-- 10 sandwiches about **290 cal** roughly **9G Quality protein** from deli meat
+- 20 sandwiches about **290 cal** roughly **9G Quality protein** from deli meat
 
 ##### Snacks($7.50) - Total Daily Calories & Protein:  120 cal/ 0G protein
 - ***Kozy Rice Pudding***: $7.50(120 calories 6 servings)
@@ -193,7 +193,8 @@ Exclude cost of previous item purchase in previous week and buy things like kief
 
 
 ##### Breakfast($11.00) -  Total Daily Calories & Protein:  210 cal/ 18G protein
-- **Eggs**: (4 servings total 4 meals with 3 eggs per serving 210 cal 18G protein)
+- **Eggs**: $5.50 × 2 = $11.00 (4 servings total 4 meals with 3 eggs per serving 210 cal 18G protein)
+
 
 
 ##### Sandwich($26.88) - Total Daily Calories & Protein:  686 cal/ 9G protein
