@@ -71,6 +71,8 @@ dg-publish:
 - [ ] Increase main dinner meat, Quinoa, or deli meat when eggs aren't available 
 - [ ] Make meal prep effortless as possible 
 - [ ] Update weekly totals
+- [ ] Try Healthy Avocado brownies no box stuff
+- [ ] Maybe try Smoked salmon and cream cheese
 - [ ] get weekly cost to around 45 to 50 a week assuming no change with supplement
 - [ ] Try Current new supplement stack without Ginsing plus for like a week to gauge difference so start July 17th
 - [ ] Buy meat, pasta, etc..  for a better idea on average monthly cost 
@@ -87,16 +89,6 @@ dg-publish:
 
 #### Week One($60.35)  - total daily calories/protein:  2,221 to 2,301/80G 
 dinner not included yet in total for week
-##### Extra
-- Pecans $
-- Irish Butter $
-- Frozen Sweet potatoes $
-- Frozen Green Beans $
-- Trader joes sliced turkey breast 5.99 no nitrates ()
-- ***Lakewood Cherry Juice***: (from ditmas health food store )$8.99
-- Sweet potato Gnocchi $3.69 (1 serving 230 cal whole bag 690 cal)
-- **Trader Joe Cashew Yogurt**: $4.99(4 servings 3/4 cups each 140 cal) 
-
 
 ##### Shake($22.55) - Total Daily Calories & Protein:  1205 to 1285 cal/ 53G protein
 - ***Trader Joe Goat milk Keifer***: $5.69 ( 150 cal 4 servings per bottle each 8oz) × 2 = $11.18
@@ -164,9 +156,6 @@ total cost includes premade food and cost and kiefier
 
 Exclude cost of previous item purchase in previous week and buy things like kiefier in bulk the week before but include in this week calculation for calories and protein
 
-
-
-
 ##### Shake($0) - Total Daily Calories & Protein:  1205 to 1285 cal/ 53G protein
 - ***Trader Joe Goat milk Keifer***: = (150 cal)
 - **Frozen Raspberries Trader Joe**:(80 cal)
@@ -194,49 +183,41 @@ Exclude cost of previous item purchase in previous week and buy things like kief
 
 
 
-#### Week Three($35.81)
+#### Week Three($35.81) - total daily calories/protein:  2,221 to 2,301/80G 
 ##### Shake($22.55) - Total Daily Calories & Protein:  1205 to 1285 cal/ 53G protein
-- ***Trader Joe Goat milk Keifer***: = (150 cal)
-- **Frozen Raspberries Trader Joe**:(80 cal)
-- **Chia Seeds**: (cal 150)
-- ***Thorne Prebiotic***: (45 cal)
-- ***Transparent Labs Mass Gainer***:  760 cal and 53G protein
+- ***Trader Joe Goat milk Keifer***: $5.69 ( 150 cal 4 servings per bottle each 8oz) × 2 = $11.18
+- **Frozen Raspberries Trader Joe** $3.79( 80 cal serving size 1 cup) x 3 =$11.37
+- **Chia Seeds**: $0.00(*Find a brand* serving size 2.5 Tbsp cal 150)
+- ***Thorne Prebiotic***: $0.00(45 cal serving size 1 scope)
+- ***Transparent Labs Mass Gainer***:  760 cal and 53G protein(serving size 2 Scoops)
 
 
+##### Breakfast($11.00) -  Total Daily Calories & Protein:  210 cal/ 18G protein
+- **Eggs**: (4 servings total 4 meals with 3 eggs per serving 210 cal 18G protein)
 
 
-
-##### Breakfast
-
-
-
-
-
-##### Sandwich
-- **Dave Killer Bread**: $5.47 
-- **Honey Turkey**: $5.95 
+##### Sandwich($26.88) - Total Daily Calories & Protein:  686 cal/ 9G protein
+- **Dave Killer Bread**: $5.47 ( 140 cal 10 servings total each) x 2 = $10.94
+- **Honey Turkey**: $5.95 (100 cal 9G protein serving size 6)/ **Chicken breast**: $4.29(70 cal 10G protein serving size 5)
 - **Artikaas Gouda Cheese from Trader Joe**: $3.99 (11 servings 66 cal)
+- **Trader Joe Everything Bagel**:$1.99( 380 cal) x3 = 6.00
+
+
+##### Snacks($7.50) - Total Daily Calories & Protein:  120 cal/ 0G protein
+- ***Kozy Rice Pudding***: $7.50(120 calories 6 servings)
+
+
+
+##### Dinner($0) - Total Daily Calories & Protein:  0 cal/ 0G protein
+
+- 
 
 
 
 
-##### Snacks
-- ***Kozy Rice Pudding***: $7.50 
 
 
-
-
-
-##### Dinner 
-
-
-
-
-
-### Total Daily Calories & Protein:  0 cal 0G protein
-
-
-#### Week Four($42)
+#### Week Four($42) - total daily calories/protein:  0/0G 
 ##### Shake($22.55) - Total Daily Calories & Protein:  1205 to 1285 cal/ 53G protein
 - ***Trader Joe Goat milk Keifer***: = (150 cal)
 - **Frozen Raspberries Trader Joe**:(80 cal)
@@ -244,36 +225,39 @@ Exclude cost of previous item purchase in previous week and buy things like kief
 - ***Thorne Prebiotic***: (45 cal)
 - ***Transparent Labs Mass Gainer***:  760 cal and 53G protein
 
-##### Breakfast
+
+
+##### Breakfast($0) -  Total Daily Calories & Protein:  210 cal/ 18G protein
+- **Eggs**:(210 cal 18G protein)
 
 
 
-##### Sandwich
+##### Sandwich($0) - Total Daily Calories & Protein:  0 cal/ 0G protein
+- **Dave Killer Bread**: (140 cal)
+- **Trader Joe Everything Bagel**:(380 cal)
 
 
+##### Snacks($0) - Total Daily Calories & Protein:  0 cal/ 0G protein
+- 
 
 
-
-##### Snack 
-
-
-
-
-##### Dinner 
+##### Dinner($0) - Total Daily Calories & Protein:  0 cal/ 0G protein
 - **Premade food from Store**(Optional) - $15.00 x 2 = $30
 
 
 
 
 
-### Total Daily Calories & Protein:  0 cal 0G protein
-
-
-
-
 #### Extra Potential Add On
+- Pecans $
+- Irish Butter $
+- Frozen Sweet potatoes $
+- Frozen Green Beans $
+- Trader joes sliced turkey breast 5.99 no nitrates ()
+- ***Lakewood Cherry Juice***: (from ditmas health food store )$8.99
+- Sweet potato Gnocchi $3.69 (1 serving 230 cal whole bag 690 cal)
+- **Trader Joe Cashew Yogurt**: $4.99(4 servings 3/4 cups each 140 cal) 
 - **Coconut Water**: 
-- Greek Yogurt
 - **Seltzer**: $2.50 × 2 = $5.00
 - **Mandarins**: $2.79 (serving size about 3)
 - Peanut Butter

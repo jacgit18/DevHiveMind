@@ -31,6 +31,8 @@ It makes sure the right events go to the right place, at the right time, without
 
 [🔐 Kali GPT – The Future of Penetration Testing is Here 🔐 \| ASHISH DABHANE](https://www.linkedin.com/posts/ashish-dabhane-55ba1227b_cybersecurity-kalilinux-kaligpt-activity-7337184039394537473-LY_k/?utm_source=share&utm_medium=member_android&rcm=ACoAAB5RM-sBDcWQxGls-I2ibiN5J52xIwkopmg)
 
+[A Beginner’s Guide to Mastering Gemini + Google Sheets - KDnuggets](https://www.kdnuggets.com/a-beginners-guide-to-mastering-gemini-google-sheets)
+
 Pager duty alerts to phone etc on failure  
 Publish message to pager duty in the future
 
