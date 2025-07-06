@@ -119,11 +119,11 @@ dinner not included yet in total for week
 - 10 sandwiches about **290 cal** roughly **9G Quality protein** from deli meat
 
 ##### Snacks($7.50) - Total Daily Calories & Protein:  120 cal/ 0G protein
-- ***Kozy Rice Pudding***: $7.50(6 servings 120 calories)
+- ***Kozy Rice Pudding***: $7.50(120 calories 6 servings)
 
 
 
-##### Dinner($) - Total Daily Calories & Protein:  0 cal/ 0G protein
+##### Dinner($0) - Total Daily Calories & Protein:  0 cal/ 0G protein
 ###### Meat
 #todo/BAU 
 - [ ]  Break down into a week assuming only eating one type of meat a week then half it between 4 days and use excess 
@@ -159,8 +159,12 @@ dinner not included yet in total for week
 
 
 
-#### Week Two($41.18)
+#### Week Two($41.18) - total daily calories/protein:  0/0G 
+total cost includes premade food and cost and kiefier
+
 Exclude cost of previous item purchase in previous week and buy things like kiefier in bulk the week before but include in this week calculation for calories and protein
+
+
 
 
 ##### Shake($0) - Total Daily Calories & Protein:  1205 to 1285 cal/ 53G protein
@@ -176,25 +180,18 @@ Exclude cost of previous item purchase in previous week and buy things like kief
 
 
 
-##### Sandwich($21.41) - Total Daily Calories & Protein:  686 cal/ 9G protein
+##### Sandwich($0) - Total Daily Calories & Protein:  0 cal/ 0G protein
 - **Dave Killer Bread**: (140 cal)
+- **Trader Joe Everything Bagel**:(380 cal)
 
 
+##### Snacks($0) - Total Daily Calories & Protein:  0 cal/ 0G protein
+- 
 
 
-##### Snacks
-
-
-
-
-##### Dinner 
+##### Dinner($0) - Total Daily Calories & Protein:  0 cal/ 0G protein
 - **Premade food from Store**(Optional) - $15.00 x 2 = $30
 
-
-
-
-
-### Total Daily Calories & Protein:  0 cal 0G protein
 
 
 #### Week Three($35.81)
