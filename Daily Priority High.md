@@ -40,7 +40,7 @@ kanban-plugin: board
 - [ ] [[PTP Config Workflow]]
 - [ ] [[Work LOB and arch notes to clean]]
 - [ ] possible logging flow CloudWatch Logs → Kinesis Firehose → Splunk HEC
-- [ ] [[Clipboard#Email To Send]] on (@2025-06-01)
+- [x] [[Clipboard#Email To Send]] on (@2025-06-01)
 - [ ] Update Resume with [[Clipboard#Resume Placeholder Experience]]
 - [ ] ###### Try to get put on a team that manages this [Capital One Auto Navigator](https://www.capitalone.com/cars/)
 - [ ] Look at this [[Codebase Interview Question]] (@2025-03-05)
