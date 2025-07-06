@@ -455,7 +455,7 @@ Weight ranges lowest explosive power weight to max strength weight. Hit Strength
 - [Dumbbell Man Maker](https://youtu.be/rXjJ46zoQrM?si=XtGPVO8zeVQeapj6)(Easier)
 - [Kettlebell Man Maker](https://youtu.be/P4BIVAgJbZY?si=_gnVpDS6HX7WgacW)(Harder)
 ### Right to Bare Arms Program
-Allowed to practice each excercise *here* max twice a week. Also try doing chest fly before chest press. also keep chest up when coming down on chest press
+Allowed to practice each excercise *here* max twice a week. Also try doing chest fly before chest press. Also keep chest up when doing chest press.
 #### **Session 1: Push Focus**
 1. **Single Arm Chest Press** - 50lb
 2. **Dumbbell Floor** or **Incline Dumbbell Bench** or [Banded Dumbbell Bench](https://youtu.be/nzPvCtwkETM?si=ayLMQYM4NFk1FKbE)(Helps with form) Press– 17.5lb
