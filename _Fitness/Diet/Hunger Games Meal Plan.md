@@ -29,6 +29,16 @@ dg-publish:
 | 7      | 13     | 12/01/2025 |
 
 
+| Months | Weight | Date       |
+| ------ | ------ | ---------- |
+| 1      | 13     | 01/01/2026 |
+| 2      | 14     | 02/01/2026 |
+|        |        |            |
+| 12     | 150    |            |
+
+
+
+
 - 15% body fat
 - **Calorie range to hit:** ~2,900 to 3,200  
 - **Protein range to hit:** ~150g to 215g  
