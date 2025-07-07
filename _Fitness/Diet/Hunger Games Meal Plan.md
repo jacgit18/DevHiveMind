@@ -121,7 +121,6 @@ need money for non meat as well and occasional seasoning etc...
 - [ ]  Break down into a week assuming only eating one type of meat a week then half it between 4 days and use excess 
 
 **Healthiest Cuts (USDA "Lean" or "Extra Lean" labels):**   
-- **Chicken Breast**: 165 cal 31G
 - **Top Round/London Broil**: 36g protein, 7g fat per 100g.  
 - **Eye of Round/Top Sirloin**: <5g total fat, minimal marbling.  
 - **Bottom Round**: 8g fat, 27g protein.  
@@ -129,6 +128,8 @@ need money for non meat as well and occasional seasoning etc...
 - **Pork Tenderloin**: Leanest (3g fat/100g), comparable to chicken breast .  
 - **Pork Loin Chops**: Leaner than shoulder or ribs.  
 - **Canned Tuna**: Affordable, protein-packed.  
+- **Chicken Breast**: 165 cal 31G
+
 
 **Moderate Cuts:**  
 - **Filet Mignon**: Lean but pricier (10g fat/100g)   
@@ -140,9 +141,12 @@ need money for non meat as well and occasional seasoning etc...
 - **Ribeye**: 22g fat (10g saturated) per 100g .  
 - **T-Bone/Porterhouse**: High in saturated fat (18g/100g) .  
 
-***Butcher cuts***
+***Butcher cuts*** dry aged
+- flank steak 
+- 2 London Broil 24 to 28oz about 42 ish each so 90ish max
 - 3 New York Strip Steak 24oz  possibly 70ish or
 - 4 New York Strip Steak 20oz  possibly 90ish 
+- 8 filets order 4 pairs of 2 about 140ish maybe 8oz
 
 
 ###### Non Meat
