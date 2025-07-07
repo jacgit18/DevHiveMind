@@ -57,8 +57,6 @@ dg-publish:
 | **Total**                                 |        **$663**        | Almost 8,000 for the year max excluding extra fun with just Groceries, Dining out,  & mass gainer about 360 and 460 roughly if doing a hybrid of Premade food and Eating out so at max a year about 5,600 excluding other stuff. |
 
 
-
-
 ## Food cost
 
 ### Month Itemized Breakdown: 
@@ -250,8 +248,10 @@ Exclude cost of previous item purchase in previous week and buy things like kief
 #### Extra Potential Add On
 - Pecans $
 - Irish Butter $
+- Chicken sausage
 - Frozen Sweet potatoes $
 - Frozen Green Beans $
+- Purely Elizabeth granola 7.50 usually 10
 - Trader joes sliced turkey breast 5.99 no nitrates ()
 - ***Lakewood Cherry Juice***: (from ditmas health food store )$8.99
 - Sweet potato Gnocchi $3.69 (1 serving 230 cal whole bag 690 cal)

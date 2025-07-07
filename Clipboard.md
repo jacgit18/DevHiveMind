@@ -47,6 +47,9 @@ Iteration are repetitions where you are modifying the repetition with error corr
   
 If you fail its just a iteration that you can pivot from in terms of cutting losses when it makes sense to to continue to iterate and get where you want to be
 
+Use a low medium channel this tends to generate a high signal to get in contact with an employer you are interested in like sending a letter in the mail you have to get creative about how you get yourself out there or notice
+
+
 [GitHub - 0xk1h0/ChatGPT\_DAN: ChatGPT DAN, Jailbreaks prompt](https://github.com/0xk1h0/ChatGPT_DAN)
 
 
