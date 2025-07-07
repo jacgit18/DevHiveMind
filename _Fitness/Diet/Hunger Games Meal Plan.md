@@ -141,8 +141,8 @@ need money for non meat as well and occasional seasoning etc...
 - **Ribeye**: 22g fat (10g saturated) per 100g .  
 - **T-Bone/Porterhouse**: High in saturated fat (18g/100g) .  
 
-***Butcher cuts*** dry aged
-- flank steak 
+***Butcher cuts*** dry aged downtown Brooklyn butcher 
+- 4 flank steak 100ish 
 - 2 London Broil 24 to 28oz about 42 ish each so 90ish max
 - 3 New York Strip Steak 24oz  possibly 70ish or
 - 4 New York Strip Steak 20oz  possibly 90ish 
