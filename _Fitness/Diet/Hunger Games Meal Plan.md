@@ -112,6 +112,10 @@ dinner not included yet in total for week
 
 
 ##### Dinner($0) - Total Daily Calories & Protein:  0 cal/ 0G protein
+
+160 max can spend for a month 100 
+maybe drop another supplement to increase budget needed in addition to potential ginsing supplement drop 
+need money for non meat as well and occasional seasoning etc...
 ###### Meat
 #todo/BAU 
 - [ ]  Break down into a week assuming only eating one type of meat a week then half it between 4 days and use excess 
@@ -135,6 +139,10 @@ dinner not included yet in total for week
 **Unhealthiest Cuts:**  
 - **Ribeye**: 22g fat (10g saturated) per 100g .  
 - **T-Bone/Porterhouse**: High in saturated fat (18g/100g) .  
+
+***Butcher cuts***
+- 3 New York Strip Steak 24oz  possibly 70ish or
+- 4 New York Strip Steak 20oz  possibly 90ish 
 
 
 ###### Non Meat
