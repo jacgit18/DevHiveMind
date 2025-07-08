@@ -403,17 +403,16 @@ Prioritize resistance bands for explosive phase they can be used for other phase
 
 ### 🧠 **A Hybrid Recommendation**
 
-Instead of four totally separate weeks, you might try this blend:
+| Day      | Session Type | Focus                  | Week 1 – Strength Focus                             | Week 2 – Hypertrophy Focus                                | Week 3 – Explosive Focus                                           | Week 4 – Free Form | Best Order of Operations |
+| -------- | ------------ | ---------------------- | --------------------------------------------------- | --------------------------------------------------------- | ------------------------------------------------------------------ | ------------------ | ------------------------ |
+| **Sun**  | Gym          | Upper + Run + Balance  | Pull _**Strength**_ + _Explosive primer (jumps)_    | Pull _**Hypertrophy**_ + _Power cleans (light)_           | Pull _**Explosive**_ (Throws, MB slams) + Strength finisher        |                    | Glutes / Hamstrings      |
+| **Mon**  | MMA/Gym      | Full Body + Sled       | Push _**Strength Upper**_ + _Sled Sprints_          | Push _**Hypertrophy Upper**_ + _Sled + Pause Reps_        | Upper _**Explosive**_ (contrast: push press + clap push-up)        |                    | Core                     |
+| **Tues** | MMA/Gym/Rest | Lower Body + Dead Hang | _**Strength Lower**_ + _Scap/Dead Hang Holds_       | _**Hypertrophy Lower**_ (tempos, high reps) + _Dead Hang_ | _**Explosive Lower**_ (jumps, bounds) + _Posterior Chain_          |                    | Scapular & Upper Back    |
+| **Wed**  | Gym          | Upper + Run + Balance  | Push _**Strength**_ + _Explosive Med Ball Throws_   | Push _**Hypertrophy**_ + _Power Push-ups_                 | Push _**Explosive**_ (MB slams, drop push-ups) + _Isometric Holds_ |                    | Lats / Traps             |
+| **Thu**  | Gym or Rest  | Random Experiment      | Weak Point Strength Work (e.g., split squats, GHR)  | Novel Hypertrophy (BFR, mechanical drop sets)             | Speed/Power Flow Circuit (EMOM or contrast pairing)                |                    | Quads                    |
+| **Fri**  | MMA/Gym/Rest | Full Body + Sled       | _**Strength Lower**_ → _Push Hypertrophy Accessory_ | _**Hypertrophy Lower**_ → _Push Explosive Finisher_       | _**Explosive Lower**_ (depth jumps) → Push _Isometric Core_        |                    | Chest / Delts            |
+| **Sat**  | MMA or Gym   | Lower + Dead Hang      | _**Strength Lower**_ (Trap bar / RDLs) + Hang Holds | _**Hypertrophy Lower**_ + _Explosive Lunge Finishers_     | _**Explosive Lower**_ (contrast: hex bar jump → box jump)          |                    | Arms                     |
 
-#### ➤ **3-week cycle:**
-
-1. **Week 1 – Strength-Dominant**: Keep some low-volume hypertrophy as accessories.
-    
-2. **Week 2 – Hypertrophy-Dominant**: Keep strength as a primer (e.g., 3x3 compounds) and explosive movement as CNS activation.
-    
-3. **Week 3 – Explosive-Dominant**: Emphasize contrast training (e.g., heavy lift → jump), med balls, sleds, etc.
-    
-4. **Optional Week 4 – Mixed**: Auto-regulate this week for fun, deload, or creative experiments.
 
 #todo/BAU/Workout
 - [ ] Avoid being on phone affects performance
