@@ -391,7 +391,7 @@ Prioritize resistance bands for explosive phase they can be used for other phase
 ## Regimen
 > **Train intensity before volume**. Prioritize neural output early, then shift to fatigue-driven work. Can shift things depending how you feel
 
-| Day      | Session Type       | Options (Choose 1)               | Week One Phase                                            | Week Two Phase                                          | Best Order Of Operations  |
+| Day      | Session Type       | Focus                            | Week One Phase                                            | Week Two Phase                                          | Best Order Of Operations  |
 | -------- | ------------------ | -------------------------------- | --------------------------------------------------------- | ------------------------------------------------------- | ------------------------- |
 | **Sun**  | Gym                | Upper Body + Run + Balance Board | **Pull** *Strength*                                       | ***Push*** *Strength*                                   | **Glutes/Hamstrings**     |
 | **Mon**  | MMA/Gym            | Full Body + Sled                 | **Explosive** Upper ***Push*** to *Strength* Lower        | **Explosive** Upper **Pull** to *Strength* Lower        | **Core**                  |
@@ -400,6 +400,20 @@ Prioritize resistance bands for explosive phase they can be used for other phase
 | **Thu**  | Gym or Rest        | Random **Experiment**            | Random **Experiment**                                     | Random **Experiment**                                   | **Quads**                 |
 | **Fri**  | MMA or Gym or Rest | Full Body + Sled                 | **Explosive** Lower to ***Hypertrophy*** Upper ***Push*** | **Explosive** Lower to ***Hypertrophy*** Upper **Pull** | **Chest/Delts**           |
 | **Sat**  | MMA or Gym         | Lower Body + Dead Hang           | *Strength*                                                | *Strength*                                              | **Arms**                  |
+
+### 🧠 **A Hybrid Recommendation**
+
+Instead of four totally separate weeks, you might try this blend:
+
+#### ➤ **3-week cycle:**
+
+1. **Week 1 – Strength-Dominant**: Keep some low-volume hypertrophy as accessories.
+    
+2. **Week 2 – Hypertrophy-Dominant**: Keep strength as a primer (e.g., 3x3 compounds) and explosive movement as CNS activation.
+    
+3. **Week 3 – Explosive-Dominant**: Emphasize contrast training (e.g., heavy lift → jump), med balls, sleds, etc.
+    
+4. **Optional Week 4 – Mixed**: Auto-regulate this week for fun, deload, or creative experiments.
 
 #todo/BAU/Workout
 - [ ] Avoid being on phone affects performance
