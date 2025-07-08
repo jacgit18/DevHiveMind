@@ -26,6 +26,7 @@ Abstracting out LLD for better business audience understand then create other di
 EventBridge is like the air traffic controller for events in AWS.  
 It makes sure the right events go to the right place, at the right time, without you having to write glue code.
 
+[What I learned building an AI coding agent for a year](https://share.google/Mix7tYPBU6ucbBdM9)
 
 [I use this lightweight app to manage Docker projects in my home lab and I love it](https://share.google/lzRIB2NdOdYuEiqeB)
 
