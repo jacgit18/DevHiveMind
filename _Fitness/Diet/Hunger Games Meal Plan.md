@@ -128,13 +128,15 @@ maybe drop another supplement to increase budget needed in addition to potential
 need money for non meat as well and occasional seasoning etc...
 ###### Meat
 #todo/BAU 
-- [ ]  Break down into a week assuming only eating one type of meat a week then half it between 4 days and use excess 
+- [ ]  Break down into a week assuming only eating one type of meat a week then half it between 4 days and use excess also prioritize cost
 
 **Healthiest Cuts (USDA "Lean" or "Extra Lean" labels):**   
-- **Top Round/London Broil**: 36g protein, 7g fat per 100g.  
+- **Top Round**: 36g protein, 7g fat per 100g.  
 - **Eye of Round/Top Sirloin**: <5g total fat, minimal marbling.  
-- **Bottom Round**: 8g fat, 27g protein.  
 - **Flank Steak**: Lean but tougher; best marinated.  
+- **Hanger Steak**
+
+
 - **Pork Tenderloin**: Leanest (3g fat/100g), comparable to chicken breast .  
 - **Pork Loin Chops**: Leaner than shoulder or ribs.  
 - **Canned Tuna**: Affordable, protein-packed.  
@@ -142,7 +144,6 @@ need money for non meat as well and occasional seasoning etc...
 
 
 **Moderate Cuts:**  
-- **Filet Mignon**: Lean but pricier (10g fat/100g)   
 - **New York Strip**: 6g fat, buttery texture 
 - **Ground Beef**
 - **Ground Turkey**
@@ -158,6 +159,7 @@ need money for non meat as well and occasional seasoning etc...
 - 4 New York Strip Steak 20oz  possibly 90ish 
 - 8 filets order 4 pairs of 2 about 140ish maybe 8oz
 
+Target steaks pretty decent
 
 ###### Non Meat
 - Quinoa
