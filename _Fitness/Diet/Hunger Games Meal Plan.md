@@ -129,28 +129,47 @@ need money for non meat as well and occasional seasoning etc...
 ###### Meat
 #todo/BAU 
 - [ ]  Break down into a week assuming only eating one type of meat a week then half it between 4 days and use excess also prioritize cost
+## 🥩 **Healthiest Cuts** (USDA _“Lean” or “Extra Lean”_)
 
-**Healthiest Cuts (USDA "Lean" or "Extra Lean" labels):**   
-- **Top Round**: 36g protein, 7g fat per 100g.  
-- **Eye of Round/Top Sirloin**: <5g total fat, minimal marbling.  
-- **Flank Steak**: Lean but tougher; best marinated.  
-- **Hanger Steak**
+|Cut|Avg. Cooked Size|Protein (g)|Fat (g)|Calories|Notes|
+|---|---|---|---|---|---|
+|**Top Round**|4 oz (113g)|~40g|~8g|~220|Very lean and affordable. Great for roast beef, stir-fry.|
+|**Eye of Round**|4 oz (113g)|~32g|~5g|~180|Leanest beef cut. Tougher; cook low and slice thin.|
+|**Top Sirloin**|4 oz (113g)|~31g|~6g|~190|Lean with flavor; grill or pan-sear.|
+|**Flank Steak**|4 oz (113g)|~32g|~8g|~210|Marinate well; slice thin.|
+|**Hanger Steak**|4 oz (113g)|~33g|~9g|~220|Rich flavor; a hidden lean gem.|
+|**Flat Iron**|4 oz (113g)|~31g|~9g|~210|Underrated cut — tender and flavorful.|
+|**Pork Tenderloin**|4 oz (113g)|~30g|~3g|~150|Leanest pork cut; roast or pan-sear.|
+|**Pork Loin Chops**|4 oz (113g)|~29g|~6g|~170|Leaner than ribs or shoulder; best grilled or baked.|
+|**Chicken Breast**|4 oz (113g)|~33g|~3.5g|~165|Staple protein. Grill, bake, or shred.|
+|**Canned Tuna (in water)**|4 oz|~26g|~1g|~110|Budget protein; great in salads, wraps, or rice bowls.|
 
+---
 
-- **Pork Tenderloin**: Leanest (3g fat/100g), comparable to chicken breast .  
-- **Pork Loin Chops**: Leaner than shoulder or ribs.  
-- **Canned Tuna**: Affordable, protein-packed.  
-- **Chicken Breast**: 165 cal 31G
+## 🥩 **Moderate Cuts**
 
+A little more fat but still good for bulking, refeeds, or mixed macros.
 
-**Moderate Cuts:**  
-- **New York Strip**: 6g fat, buttery texture 
-- **Ground Beef**
-- **Ground Turkey**
+|Cut|Avg. Cooked Size|Protein (g)|Fat (g)|Calories|Notes|
+|---|---|---|---|---|---|
+|**New York Strip**|4 oz (113g)|~31g|~13g|~250|Bold flavor. Trim visible fat for leaner prep.|
+|**80/20 Ground Beef**|4 oz|~27g|~22g|~280|Rich, moist — use sparingly during a cut.|
+|**90/10 Ground Beef**|4 oz|~28g|~11g|~210|Good compromise between taste and leanness.|
+|**93/7 Ground Turkey**|4 oz|~29g|~7g|~180|Lean and mild — great seasoned or in patties.|
 
-**Unhealthiest Cuts:**  
-- **Ribeye**: 22g fat (10g saturated) per 100g .  
-- **T-Bone/Porterhouse**: High in saturated fat (18g/100g) .  
+---
+
+### ⚖️ Summary Table: Per 4 oz Cooked (113g)
+
+|Category|Protein Range|Fat Range|Calorie Range|
+|---|---|---|---|
+|**Lean/Extra Lean**|30–40g|1–9g|110–220 kcal|
+|**Moderate Cuts**|27–31g|7–22g|180–280 kcal|
+
+---
+
+Would you like me to format this as a printable PDF or plug it into a spreadsheet or meal tracker?
+
 
 ***Butcher cuts*** dry aged downtown Brooklyn butcher 
 - 4 flank steak 100ish 
