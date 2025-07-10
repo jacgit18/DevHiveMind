@@ -70,6 +70,8 @@ kanban-plugin: board
 
 ## #todo/BAU/Career
 
+- [ ] ##### Look and work with AI with no guardrails focusing on Psychology
+- [ ] ##### Build high value skill per quarter as of now dedicate this to non-technical skills
 - [ ] [ChatGPT - Stakeholder Requirements Questions](https://chatgpt.com/share/683c0e6e-e31c-800d-9b48-9bf72b235bbd)
 - [ ] Try using [[Requirements to Code Skeleton]]
 - [ ] Be willing to start over

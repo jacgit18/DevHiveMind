@@ -19,6 +19,7 @@ console.log("User input:", userInput);
 }
 ```
 
+Do more riskier things when you at the beginning of your company to get notice obviously nothing illegal and bad looking but get what I mean
 
 When stuck during session ask and call in coworker
 
