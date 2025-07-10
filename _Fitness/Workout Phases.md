@@ -64,12 +64,4 @@ dg-publish:
 
 
 
-| Day      | Session Type       | Focus                            | Week One Phase                                            | Week Two Phase                                          | Best Order Of Operations  |
-| -------- | ------------------ | -------------------------------- | --------------------------------------------------------- | ------------------------------------------------------- | ------------------------- |
-| **Sun**  | Gym                | Upper Body + Run + Balance Board | **Pull** *Strength*                                       | ***Push*** *Strength*                                   | **Glutes/Hamstrings**     |
-| **Mon**  | MMA/Gym            | Full Body + Sled                 | **Explosive** Upper ***Push*** to *Strength* Lower        | **Explosive** Upper **Pull** to *Strength* Lower        | **Core**                  |
-| **Tues** | MMA or Gym or Rest | Lower Body + Dead Hang           | ***Hypertrophy***                                         | ***Hypertrophy***                                       | **Scapular & Upper Back** |
-| **Wed**  | Gym or Rest        | Upper Body + Run + Balance Board | **Pull** ***Hypertrophy***                                | *Push* ***Hypertrophy***                                | **Lats/Traps**            |
-| **Thu**  | Gym or Rest        | Random **Experiment**            | Random **Experiment**                                     | Random **Experiment**                                   | **Quads**                 |
-| **Fri**  | MMA or Gym         | Lower Body + Dead Hang           | *Strength*                                                | *Strength*                                              | **Arms**                  |
-| **Sat**  | MMA or Gym or Rest | Full Body + Sled                 | **Explosive** Lower to ***Hypertrophy*** Upper ***Push*** | **Explosive** Lower to ***Hypertrophy*** Upper **Pull** | **Chest/Delts**           |
+
