@@ -458,8 +458,8 @@ Weight ranges lowest explosive power weight to max strength weight. Hit Strength
 - **Sled** - twice a week push and pull - 50lb
 	- Backward walk, seated pancake pull, standing pull
 	- [Lateral Sled Drag](https://youtu.be/rGtYmX2aeAA?si=PnniyFsIluLeViKa) - try
-- **Trap bar Deadlift** -  1 time a week - 50lb
-- ~~**Standing [Good Mornings](https://youtu.be/dEJ0FTm-CEk?si=LAPsPziQZQNGBvph)**~~ not worth doing
+- ~~**Trap bar Deadlift** -  1 time a week - 50lb~~
+- ~~**Standing [Good Mornings](https://youtu.be/dEJ0FTm-CEk?si=LAPsPziQZQNGBvph)**~~ ~~not worth doing~~
 
 ##### Build to Doing Safely
 - **Barbell Clean Jerk Press** - 1 time a week - 20lb
