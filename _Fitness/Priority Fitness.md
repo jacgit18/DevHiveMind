@@ -440,6 +440,23 @@ Prioritize resistance bands for explosive phase they can be used for other phase
 - [ ] After doing that deadlifts for a while switch to deficit deadlifts where you're standing on a plate and doing the deadlift which increases range of motion of the motion.
 - [ ] Leg extensions not as effective for me at least in terms of rehabilitation aspect but still can benefit from the excercise just make sure no pain and proper form pointing toes inward with butt down keep the range at the orange sticker. 
 
+Leg curl before any squating excercise
+
+  
+  
+  
+
+Use smaller bar with knee excercises 
+
+  
+  
+
+Prone Leg curl 60
+
+  
+  
+
+Kneeling squat on toes with dumbbells behind
 ## Body Part Specific Programs 
 > For each excercise allowed to do 3 times a week max. Also each fixed gym machine has a freeweight variations you can pivot to if not available.
 
