@@ -440,23 +440,6 @@ Prioritize resistance bands for explosive phase they can be used for other phase
 - [ ] After doing that deadlifts for a while switch to deficit deadlifts where you're standing on a plate and doing the deadlift which increases range of motion of the motion.
 - [ ] Leg extensions not as effective for me at least in terms of rehabilitation aspect but still can benefit from the excercise just make sure no pain and proper form pointing toes inward with butt down keep the range at the orange sticker. 
 
-Leg curl before any squating excercise
-
-  
-  
-  
-
-Use smaller bar with knee excercises 
-
-  
-  
-
-Prone Leg curl 60
-
-  
-  
-
-Kneeling squat on toes with dumbbells behind
 ## Body Part Specific Programs 
 > For each excercise allowed to do 3 times a week max. Also each fixed gym machine has a freeweight variations you can pivot to if not available.
 
@@ -586,6 +569,8 @@ All leg cable excercise are done at a low angle. Avoid squatting with running sh
 
 When descending into a squat, avoid letting your hips tuck under or round toward your legs at the bottom — a movement known as the “butt wink.” This can place unnecessary stress on your lower back and increase the risk of injury. A common cause is limited ankle mobility. As a short-term fix, try elevating your heels with weight plates or squat wedges to help you stay more upright and maintain proper hip and spine alignment. Just note this doesn’t address the root issue. Throughout the movement, your hips, core, and chest should move as one solid unit — no collapsing or out-of-sync sequencing.
 
+Prone Leg curl before any squatting excercise
+
 Lean forward a little on [lunge/squat](https://youtu.be/DfGu48vMmlU?si=DbDYi5Wq3JKopM3P) keeping neutral spine specifically dumbbell to simulate shooting a shot. 
 
 #### Session 1: Main Compound Squat & Lunge Patterns
@@ -594,12 +579,14 @@ Lean forward a little on [lunge/squat](https://youtu.be/DfGu48vMmlU?si=DbDYi5Wq3
 1. **Hack Squat** – 300lb - if ankles begin to lift move feet up
 2. **Squat/Zercher Squat** - Incline High Bar(on trap muscle)  - 50lb
 3. **Barbell/Dumbbell Bulgarian Split Squat**(Try [elevated](https://youtu.be/DXK-VbFE6ic?si=NHqOeitXD0h_YQsr) front leg variation also use [leg curl roller](https://youtu.be/VC5kbLSuo30?si=NLitkOhL50votRUC)) - 20lb
-4. **Single Leg Press** – 180lb
-5. **Walking Barbell Lunge/Zercher Lunge** – 20lb
-6. [Elevated Smith Machine Lunge](https://youtu.be/Yp5O9Cz6Ajg?si=bFGCfbzNqt_JobTA) - try [Elevated Lunge](https://youtu.be/OVFHK2Iev70?si=oiRNDNHznSrNP_RC) with dumbbell at max 40lb to 60lb then switch to free barbell
-7. **Kettlebell Sumo Squat** – 20lb 
-8. **Barbell/Kettlebell B-Squat** - 20lb
-9. **Band Single-Leg Barbell Squat** - 20lb
+4. **Kneeling Squat on toes with bar/Dumbbell behind** - lb
+5. **Single Leg Press** – 180lb
+6. **Walking Barbell Lunge/Zercher Lunge** – 20lb
+7. [Elevated Smith Machine Lunge](https://youtu.be/Yp5O9Cz6Ajg?si=bFGCfbzNqt_JobTA) - try [Elevated Lunge](https://youtu.be/OVFHK2Iev70?si=oiRNDNHznSrNP_RC) with dumbbell at max 40lb to 60lb then switch to free barbell
+8. **Kettlebell Sumo Squat** – 20lb 
+9. **Barbell/Kettlebell B-Squat** - 20lb
+10. **Band Single-Leg Barbell Squat** - 20lb
+11. **Prone Leg Curl** - 60lb
 
 ##### Build to Doing Safely
 10. **Pistol Squat**
