@@ -129,7 +129,7 @@ need money for non meat as well and occasional seasoning etc...
 ###### Meat
 #todo/BAU 
 - [ ]  Break down into a week assuming only eating one type of meat a week then half it between 4 days and use excess also prioritize cost
-
+![[GLkAgUi.png]]
 ## 🥩 **Healthiest Cuts** (USDA _“Lean” or “Extra Lean”_)
 
 | Cut                        | Avg. Cooked Size | Protein (g) | Fat (g) | Calories | Notes                                                     |
