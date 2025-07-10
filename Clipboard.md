@@ -19,6 +19,10 @@ console.log("User input:", userInput);
 }
 ```
 
+
+When stuck during session ask and call in coworker
+
+
 [I started using NotebookLM with Obsidian and it’s been a game-changer](https://www.xda-developers.com/using-notebooklm-with-obsidian/)
 
 Abstracting out LLD for better business audience understand then create other diagrams that are more for devs that goes more into technical details
