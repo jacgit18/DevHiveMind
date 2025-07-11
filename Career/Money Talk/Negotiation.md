@@ -13,6 +13,11 @@ Relates:
 dg-publish: false
 ---
 ![[Money Talk.gif]]
+
+#todo/BAU/Career
+- [ ] [15 Rules for Negotiating a Job Offer](https://hbr.org/2014/04/15-rules-for-negotiating-a-job-offer)
+- [ ] [Ten Rules for Negotiating a Job Offer - haseeb qureshi](https://haseebq.com/my-ten-rules-for-negotiating-a-job-offer/)
+- [ ] 
 Negotiating your salary effectively requires a strategic approach. Consider the following steps:
 
 120,000 to 130 or 130,000 to 160 to adjust for inflation to actually make around $120  
