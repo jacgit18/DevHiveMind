@@ -17,7 +17,9 @@ dg-publish: false
 #todo/BAU/Career
 - [ ] [15 Rules for Negotiating a Job Offer](https://hbr.org/2014/04/15-rules-for-negotiating-a-job-offer)
 - [ ] [Ten Rules for Negotiating a Job Offer - haseeb qureshi](https://haseebq.com/my-ten-rules-for-negotiating-a-job-offer/)
-- [ ] 
+- [ ] [How to negotiate salary: 9 tips from a pro salary negotiator](https://fearlesssalarynegotiation.com/salary-negotiation-guide/)
+- [ ] [Salary vs. Total Compensation: What's the Difference? \| Indeed.com](https://www.indeed.com/career-advice/pay-salary/salary-vs-total-compensation)
+
 Negotiating your salary effectively requires a strategic approach. Consider the following steps:
 
 120,000 to 130 or 130,000 to 160 to adjust for inflation to actually make around $120  
