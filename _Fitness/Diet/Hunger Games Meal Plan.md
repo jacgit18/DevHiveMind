@@ -101,7 +101,7 @@ dinner not included yet in total for week
 - ***Trader Joe Goat milk Keifer***: $5.69 ( 150 cal 4 servings per bottle each 8oz) × 2 = $11.18
 - **Frozen Raspberries Trader Joe** $3.79( 80 cal serving size 1 cup) x 3 =$11.37
 - **Chia Seeds**: $0.00(*Find a brand* serving size 2.5 Tbsp cal 150)
-- ***Thorne Prebiotic***: $0.00(45 cal serving size 1 scope)
+- ~~***Thorne fiberMend Prebiotic***:(45 cal)~~
 - ***Transparent Labs Mass Gainer***:  760 cal and 53G protein(serving size 2 Scoops)
 
 
@@ -195,7 +195,7 @@ Exclude cost of previous item purchase in previous week and buy things like kief
 - ***Trader Joe Goat milk Keifer***: = (150 cal)
 - **Frozen Raspberries Trader Joe**:(80 cal)
 - **Chia Seeds**: (cal 150)
-- ***Thorne Prebiotic***:(45 cal)
+- ~~***Thorne fiberMend Prebiotic***:(45 cal)~~
 - ***Transparent Labs Mass Gainer***:  760 cal and 53G protein
 
 
@@ -223,7 +223,7 @@ Exclude cost of previous item purchase in previous week and buy things like kief
 - ***Trader Joe Goat milk Keifer***: $5.69 ( 150 cal 4 servings per bottle each 8oz) × 2 = $11.18
 - **Frozen Raspberries Trader Joe** $3.79( 80 cal serving size 1 cup) x 3 =$11.37
 - **Chia Seeds**: $0.00(*Find a brand* serving size 2.5 Tbsp cal 150)
-- ***Thorne Prebiotic***: $0.00(45 cal serving size 1 scope)
+- ~~***Thorne fiberMend Prebiotic***:(45 cal)~~
 - ***Transparent Labs Mass Gainer***:  760 cal and 53G protein(serving size 2 Scoops)
 
 
@@ -258,7 +258,7 @@ Exclude cost of previous item purchase in previous week and buy things like kief
 - ***Trader Joe Goat milk Keifer***: = (150 cal)
 - **Frozen Raspberries Trader Joe**:(80 cal)
 - **Chia Seeds**: (cal 150)
-- ***Thorne Prebiotic***: (45 cal)
+- ~~***Thorne fiberMend Prebiotic***:(45 cal)~~
 - ***Transparent Labs Mass Gainer***:  760 cal and 53G protein
 
 
@@ -325,6 +325,8 @@ Exclude cost of previous item purchase in previous week and buy things like kief
 - Black Pepper
 - Himalayan Salt(mix with coconut water for Homemade  Electrolytes)
 - Celery 
+
+Knocked out **fiberMend** from stack still might remove  as well **Ginsing plus with Lion mane** but redo math without Fibermend 
 
 
 current total 166.62 - 220 limit = 53.38 left over with current stuff only two weeks with 2 days of premade food 
