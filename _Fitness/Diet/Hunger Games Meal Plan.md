@@ -326,7 +326,7 @@ Exclude cost of previous item purchase in previous week and buy things like kief
 - Himalayan Salt(mix with coconut water for Homemade  Electrolytes)
 - Celery 
 
-Knocked out **fiberMend** from stack still might remove  as well **Ginsing plus with Lion mane** but redo math without Fibermend 
+Knocked out **fiberMend** from stack still might remove  as well **Ginsing plus with Lion mane**  without Fibermend and without ginsing  is 1,464.88 
 
 
 current total 166.62 - 220 limit = 53.38 left over with current stuff only two weeks with 2 days of premade food 
