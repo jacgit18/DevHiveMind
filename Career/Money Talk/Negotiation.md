@@ -19,6 +19,8 @@ dg-publish: false
 - [ ] [Ten Rules for Negotiating a Job Offer - haseeb qureshi](https://haseebq.com/my-ten-rules-for-negotiating-a-job-offer/)
 - [ ] [How to negotiate salary: 9 tips from a pro salary negotiator](https://fearlesssalarynegotiation.com/salary-negotiation-guide/)
 - [ ] [Salary vs. Total Compensation: What's the Difference? \| Indeed.com](https://www.indeed.com/career-advice/pay-salary/salary-vs-total-compensation)
+- [ ] [How not to bomb your offer negotiation](https://www.freecodecamp.org/news/how-not-to-bomb-your-offer-negotiation-c46bb9bc7dea/)
+- [ ] [How to Negotiate Your Salary (Scripts to Use for ANY Job)](https://www.iwillteachyoutoberich.com/salary-negotiation/)
 
 Negotiating your salary effectively requires a strategic approach. Consider the following steps:
 
