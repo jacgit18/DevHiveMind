@@ -18,20 +18,31 @@ It sounds like you're dealing with **stiffness, pain, and reduced mobility in yo
 ---
 
   
+do toe band exercises on a elevated surface 
+
+also [foot bridges](https://youtu.be/swio6RF4YZY?si=zP3QTUKg0SsN8Hvh) stepping on two bricks and keeping foot intact not flex to train toes
+
+
+[Resistance Band Exercises For Healthy Feet & Toe Alignment - YouTube](https://youtu.be/GdlUz4eA_ec?si=Wx33lKEPDLW93Y43)
+
+[4 exercises that helped to strengthen my ankle #fitness #workout #football #ankle #rehab #gym - YouTube](https://youtube.com/shorts/QkuQ_zquFd0?si=mI5R9fL1FO3wv3mF)
+
+
+[Build Strong Feet: Exercises To Strengthen Your Foot & Ankle - YouTube](https://youtu.be/S5xKokqeOb4?si=VH_qaZR9YenlDF5p)
+
+
 
 ### **Step 1: Reduce Inflammation & Pain**  
 
 - **RICE Method** (Post-Training):  
 
-  - **Rest**: Avoid aggressive toe-loading (e.g., jump kicks) for 1–2 weeks.  
+- **Rest**: Avoid aggressive toe-loading (e.g., jump kicks) for 1–2 weeks.  
 
-  - **Ice**: 10 mins on/off every 2 hours (reduce swelling).  
+- **Ice**: 10 mins on/off every 2 hours (reduce swelling).  
 
-  - **Compression**: Wear a **toe sleeve** or buddy-tape to the 2nd toe for stability.  
+- **Compression**: Wear a **toe sleeve** or buddy-tape to the 2nd toe for stability.  
 
-  - **Elevation**: Prop foot up when sitting.  
-
-  
+- **Elevation**: Prop foot up when sitting.  
 
 - **Topical Relief**: Arnica gel or **voltaren (diclofenac)** for acute pain.  
 
@@ -157,17 +168,4 @@ If pain persists >2 weeks or you notice:  
 
 **Key Insight**: Most toe stiffness comes from **poor toe push-off mechanics**. Retrain your foot to **land/load through the ball of the foot**, not the toe tip.
 
-
-
-do toe band exercises on a elevated surface 
-
-also [foot bridges](https://youtu.be/swio6RF4YZY?si=zP3QTUKg0SsN8Hvh) stepping on two bricks and keeping foot intact not flex to train toes
-
-
-[Resistance Band Exercises For Healthy Feet & Toe Alignment - YouTube](https://youtu.be/GdlUz4eA_ec?si=Wx33lKEPDLW93Y43)
-
-[4 exercises that helped to strengthen my ankle #fitness #workout #football #ankle #rehab #gym - YouTube](https://youtube.com/shorts/QkuQ_zquFd0?si=mI5R9fL1FO3wv3mF)
-
-
-[Build Strong Feet: Exercises To Strengthen Your Foot & Ankle - YouTube](https://youtu.be/S5xKokqeOb4?si=VH_qaZR9YenlDF5p)
 

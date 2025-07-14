@@ -8,7 +8,7 @@ author:
   - gitUserNamePlaceHolder
 banner: "![[weight-lifting-anime-mashle-funny-workout-dve2194rciuyep9p.gif]]"
 banner_y: 
-banner_x: NaN
+banner_x: 
 Comments: Placeholder comment any thing else you want to mention about the document.
 Purpose: This documentation discusses
 Status: 
@@ -61,239 +61,34 @@ color purple
 ![[ChatGPT Image Jul 3, 2025, 04_58_45 PM.png]]
 ## Best Practices
 #todo/BAU/Workout  
-- [ ] Alternate between **hypertrophy and strength phases on different days**. Aim to train **at least 5 to 6 days per week**, which allows for effective coverage of both upper and lower body across both training phases.
 - [ ] After you've built a solid training foundation (about 2 years or more of consistent training), consider **shifting your focus in multi-week blocks** so alternating phase every 6 weeks because it gets harder to make gains after a certain point.
 - [ ] Advance stage shift focus of phases:
 	- [ ] For Lower body focus on 80% strength training and 20% hypertrophy. 
 	- [ ] For Upper body focus on 20% strength training and 80% hypertrophy training to failure with high volume.
-- [ ] Cycle in different exercises every **8-12 weeks** to avoid stagnation.
-- [ ] Do 10 empty reps to reduce injury before doing excercise.
-- [ ] Follow [[Workout Phases]] starting June and focus on [[Optimal Order Of Operations For Body Development]] and [[Optimal Order by Exercise Type]]. 
-- [ ] Focus on solo arm exercises always starting with left arm then shift to dual arm exercises for muscle Imbalance, test out two arm excercise again in August if still a issue try again in October with Barbell chest press and chest flys.
-- [ ] For full body days and in general always start strength phase but for full body days alternate area of focus so one day focus strength training on lower then next day upper and the part of the body that isn't doing strength should focus on hypertrophy and use this day for experimenting throwing in random exercises.
-- [ ] If you're not **feeling the target muscle** during an exercise, **reduce momentum** and slow down the movement to improve control and mind-muscle connection and If you feel **off balance**, try **making a fist**—this creates full-body tension and enhances stability during the lift.
+- [ ] Cycle in different exercises every **8-12 weeks** to avoid stagnation also limit range of exercises per session to 11 excercise and limit phone usage to preserve performance.
+- [ ] Do 10 empty explosive reps to reduce injury before doing excercise and for light days focus on bands and cycling in things like [[Stability Ball Workout Plan]] for core strengthening, flexibility, and stretching.
+- [ ] Do [[Stretch Regimen]]
+- [ ] Focus on solo arm exercises until next year also on the on and off days when drained or finding it hard to get moving take Amino Acid.
+- [ ] Practice [[Grip Strength Training]] trying out explosive and strength phases.
+- [ ] If you're not **feeling the target muscle** during an exercise, **reduce momentum** and slow down the movement to improve control and mind-muscle connection and If you feel **off balance**, try **making a fist**—this creates full-body tension and enhances stability during the lift also try **Isometric Holds** like on concentric and eccentric of different exercises.
+- [ ] Once at solid baseline switch to a **Seasonal Training Strategy** while also integrating workout phases aiming for **7 workouts per week in the winter/fall** were your body tends to **retain more weight during the colder months** (September to February), making it an ideal time to **increase training frequency** and build mass or strength. Then In the **warmer months**, when energy is often spent on outdoor activities and appetite may decrease, **4 to 5 workouts per week** can be more sustainable.
 - [ ] Sprint to and from gym a twice a week after you build to it on Upper body or full body days where you aren't doing MMA, You can also skip first part of warm up regimen. Also when building up to sprinting the half mile to and from the gym start off with three times a week and scale back to twice a week.
-- [ ] On Off days when drained or finding it hard to get moving take Amino Acid.
-- [ ] Also follow [[Muscle Release Regimen]] you have muscle tightness also try using static stretches for cool down and working on flexibility. Also work on [[Big Toe Flexibility]].
-- [ ] If very sore or exhausted do a light day with bands to still get something in but not do anything heavy with weights.
-- [ ] Once at solid baseline switch to a **Seasonal Training Strategy** while also integrating workout phases aiming for **6 workouts per week in the winter/fall** were your body tends to **retain more weight during the colder months** (September to February), making it an ideal time to **increase training frequency** and build mass or strength. Then In the **warmer months**, when energy is often spent on outdoor activities and appetite may decrease, **4 to 5 workouts per week** can be more sustainable.
 
-# Dynamic Warm-Up (RAMP Protocol) & Static Cool-Down 
+## Workout Tips
+#todo/BAU/Workout  
+- [ ] Rotate your **thumb internally** to end of range for **barbell bench press**.
+- [ ] Rotate your **pinky externally** to where you are at the end of the range where your hands are facing **palm up** when it comes to **curls**.
+- [ ] Hover in more of a standing position for **Abduction Leg Squeezing** machine 70 to 80 lb.
+- [ ] Lat pull down pull elbow near hip not chest same for row get up close pull to hip.
+- [ ] Use opposite side knee leaning against low bench when doing Half Kneeling Row.
+- [ ] For kettlebell RDL use opposite side where you are holding the Kettlebell this side that is lifting the leg.
+- [ ] Keep elbows high above head and alt cable height at hip and foot level for Overhead extension.
+- [ ] 45 degree Incline bench press over flat bench for my body type as well as Larsen bench press on flat bench or incline bench hovering or keeping straight legs to focus more on core.
 
-Start with a dynamic stretch to Improve blood flow and flexibility. End with a static stretch targeting major muscle groups. Basically any static stretch has a dynamic variation with movement. 
-
-#todo/BAU/Workout 
-- [ ] Avoid cold water baths close to workouts especially post maybe consider doing it a few hours before sleeping make sure you really stretch to warm up again to reduce injury from cold muscle.
-- [ ] For rest days make it one of my weekdays like if I have a networking event and there isn't a good timing in terms of going before or maybe even after the event and you can also take cold Baths on that day and before bed.
-- [ ] Keep in mind that cold bath can affect muscle gains so balance that out and nervous system regulation.
-	- Try listening to 60 BPM(Beats Per Minute) metronome while taking cold bath for 3 min max and maybe use O2 trainer during this.
-	- Switch back to warm start or cold showers in the fall at a lower frequency.
-- [ ] Static end stretch 4 days at home or gym or both 30sec each.
-
-
-**Recommended Duration:** ~2–3 minutes per section (Total: 10–15 min)  
-**Tip:** Prioritize movement quality over speed. Use Duck Walks between sections or as part of the "Activate" phase.
-
-> Sprinting engages the whole body with a tall, open, and powerful posture, emphasizing full extension and drive, whereas jogging is more contained—focused on lower-body movement with a relatively closed, compact posture.
-
-![https://youtu.be/Aj5SONT3T2o?si=9z5TvZuR1iBfgjch&t=515](https://youtu.be/Aj5SONT3T2o?si=9z5TvZuR1iBfgjch&t=515)
-
-**Skipping Foundation (2-3 mins):**
-- **Focus:** Tall posture, head up, expressive arms, **active ankle dorsiflexion on landing.**
-- **Cue:** "Land like you're stepping on a hot plate - quick, light, front of foot angled up (dorsiflexed)."
-- **Execution:** Skip continuously, focusing on rhythm and form. Keep core engaged, back straight.
-
-**When to Use Weights:**
-    - ✅ **Mobility/Activation**: Use **bodyweight only**
-    - ✅ **Strength/Endurance/Burnout**: Add **light weights** (only if form stays clean)
-
-⏱️ **Total Time:** 5–15 minutes(about 7 min at home and gym)
-🎯 **Each Exercise:** 10–15 reps or 20–30 seconds unless noted
-
-
----
-> **Start off Back like a baby and progress to standing then running**
-
-#### 0. Priority To Develop Split 
-*Perform Static Stretch at end of workout 4 times a week 30 sec each*
-**In this Order**
-- [Supine Figure 4 Stretch](https://youtu.be/xVq2-g_leTI?si=ww6BkkfN_oYEWmdC)(Not Required for Split) - keep back flat
-- Butterfly
-- BirdDog(Not Required for Split)  
-- [[Lower#^9744bc |Dynamic Cat-Cow]] → Hold Cat-Cow Stretch – (Not Required for Split)
-- Elevated Pigeon Stretch - On [incline bench](https://youtu.be/szFOKnVgGpQ?si=r0IMfaQKljbJeS6P) then progress to [flat bench](https://youtu.be/BmVEn3LfHcg?si=ZDSdN6h4TePiPIj8) or stick to floor (30 sec per side) 
-- [Cossack Squat](https://youtu.be/fyAl4o1BGVo?si=OalBzfY8-KxgS7qA)
-- [Forward Fold Stretch](https://youtu.be/goN4rWbQUn4?si=pPni5D3dJWgLUboT) 
-- [Standing Pancake](https://youtu.be/4TU9K40LZ6A?si=kWxpXgb7wdZ35HQO)
-- [Seated Pancake](https://youtu.be/B1_YA47gtm0?si=_oBDpaLBejKI-8mV)
-- [Middle split](https://youtu.be/hsNvqUmCAAo?si=SbGmouCgXsZ44_tJ) 
-
-Other Stuff
-- [Spinal Waves](https://youtu.be/KCfh_wCssK8?si=QaERnrtYGrEVxAsZ)
-- [Body Waves](https://youtu.be/kBFg1mgCe0A?si=VyoasKccy3rlSq5D)
-
-#### **1. Raise (Increase Body Temp & Heart Rate)**
-_~2–3 minutes total – pick 2–3_ or pick one to do for the whole time.
-
-##### **Grounded On Back**
-- Bicycles – **1 min**
-##### Seated
-- Rower or Incline Treadmill Walk – **1 min**
-
-##### **Grounded On Side**
-- **[Side-to-Side Rolling](https://www.youtube.com/watch?v=LRijmsnZwZc)** – Roll from side to side across a mat, using arms and hips to initiate; great for warm blood flow in spine/core.
-    
-- [**Side-Lying Bicycles**](https://www.youtube.com/watch?v=CYmpb7fw1Gc) – Pedal your top leg like a bike in the air to raise HR slightly and warm up hips.
-
-##### **Grounded On Front**
-- [[Upper#^4a9cd1 |Pike Push-Ups]] – **6–8 reps**
-- [[Core#^60b781 |Tuck Jumps to Plank]]– **6 reps**
-
-##### **Standing** 
-*Skip and pogo hop if in a hurry before sprinting*
-- ***Free Flow Skipping*** at or on the way to gym.
-- **Shoulder Rolls** – Forward & backward, *10 reps each*
-- **Torso Twists** – Controlled rotation side-to-side - like throwing hook, *15–20 reps*
-- **Neck Rolls** – Slow circles, 5 reps each direction
-- Jump Rope – **1 min**
-- High Knees + Butt Kicks – **30s each**
-- Lateral Skips(gallop)  – **30s each**
-- Arm Swings (Hugs) – **30s each**
-- Jumping Jacks – **1 min**
-- [Pogo Jumps](https://youtu.be/iU-TKr4YesM?si=--xrqvN2fMHZOnea) - **1 min**
-- [Arm Circles](https://www.youtube.com/watch?v=YGXgpcr7UY4) with 5lb dumbbells different ranges – *20 reps each direction*
-- Shadowboxing with Resistance bands (fast-paced) – *30–45s*
-
-#### **2. Activate (Engage Muscle Groups)**
-_~2–3 minutes total – pick 4–5_
-##### **Grounded On Back**
-- Glute Bridges – **10–12 reps**
-- [Back Widows](https://www.youtube.com/watch?v=JdwsVHc6oQ4)
-- Descending flutter kicks
-- [Dead Bug ](https://youtu.be/VRpXreaHz7w?si=MSTm2UNzlRLyQt3E)(Anti-extension) - hand pushed against wall alternating pushing heals down. Try [BJJ Variation](https://youtu.be/M14fmjvDXMo?si=KpG6WH6nQ5Qdl8Bm) keeping core engaged and upper and lower body connected extended foot alternating height of foot to the ground. 
-
-
-
-##### **Grounded On Side**
-- [[Core#^5805af |Side Plank Hip dip]] (floor or bench feet on ground or bench) - **10–12 reps** - Lateral flexion
-- **Side-Lying Leg Lifts** – Top leg lifts straight up and down; targets glute medius.
-- **Side-Lying Hip Circles** – Lift top leg and draw slow circles in the air.
-- **Side Plank Leg Raises** – From a side plank, lift top leg up/down; glutes + core activation.
-- ***Rotational Side Plank*** -  3–4 slow rotations per side
-##### **Grounded On Front**
-- [[Lower#^01867f |Quadruped Kickbacks]] – **8–10 reps/side**
-- Plank Shoulder Taps – **8–12 taps**
-- Push-Up Hold (top and bottom) – **10s each**
-- [[Upper#^5ff8c1 |Scapular Push-Ups ]] – **10–12 reps with deep breathing**
-	- Breathe deeply as you push your chest outward, squeezing your shoulder blades together. Then, reverse the motion by pulling your chest inward and separating your shoulder blades, keeping your elbows straight throughout the movement.
-- [Scapular Push up on Elbows](https://www.youtube.com/watch?v=DKkgzXfcXMQ)
-- [Mike Tyson Pushup](https://www.youtube.com/watch?v=j-oSVFU2eMc)
-- ***Elbow Push-ups (Pike Push-up Focus)*** - 8 reps
-- ***Scorpion Stretch*** - 30 sec each side
-- ***Supine lower body*** - t position leg raise to opposite hand (6 reps/side)
-- [Tuck Jump to L Sit](https://youtu.be/vnr7epVV6YE?si=IZJNc7a61GR9Tloo) - do this but start push up position and go to seated position keeping hands down without the hold and go back to push up position
-
-##### **Standing**
-- Calf Raises - on steps also leaning on bead on toes
-- [Patrick Step](https://youtu.be/jAbO12BipQU?si=oWN-xGlMG-rAokpl)
-- Shoulder Band Pull-Aparts
-- Standing [[Lower#^b0a0df|TIB Raise]]
-- [[Lower#^8a3d01|ISO Calf Raise with Lunge]]
-- [[Lower#^58f942|Lunge ISO Heel Raise]]
-- [[Lower#^da4cd0|Banded Joint Mobilizations]]
-- Twisted arms
-- [Heel to Toe Rock](https://www.youtube.com/watch?v=FMZX3mpffeE) & [Walk](https://www.youtube.com/watch?v=oQ_-LIbhYgo) 
-- [Knee Circles](https://youtu.be/ROiyq3-2ljY?si=jmBGQDk3fKu4mPAt)
-- [Dumbbell Side Raise with Single Leg Balance](https://youtu.be/7cfhwCU2-y0?si=CxwXSgm6RWSQF8Ah)
-- [Offset Walk](https://www.youtube.com/watch?v=Fc-27p17TPE)
-- [Wall Assisted QL Stretch](https://youtu.be/ZYkOmJZXFdQ?si=cQ23f2Il-1cjt4Tf)
-- [Hip Airplane](https://youtu.be/2hIL15iGuNA?si=4F-c9pubcVK9mTze)
-
-
-###### Sprinting  Specific - 1 min 
-- ***Single-Leg RDL w/ Knee Drive Swing*** - Hold 3 sec in each part explode, swing, and Step.
-
-
-#### **3. Mobilize (Dynamic Range of Motion)**
-_~3–4 minutes total – choose a flow or 3–5 moves_
-
-##### **Grounded On Back**
-- [[Lower#^4158ea |“Open Book” Thoracic Twist]] – **6 reps/side**
-- Dynamic [[Core#^beda1a |Supine Windshield Wipers]] – **4–6 transitions + 10s pose**
-
-##### Seated
-- **Spinal Twists** - 30 sec
-- [[Lower#^ee779f |90/90 Transitions ]] – **8 reps**
-- Butterfly Hip Rocks → Butterfly Stretch – **8 rocks + 10s stretch**
-
-
-##### **Grounded On Side**
-- **Side-Lying Leg Lifts** – Leg raises to warm up outer hips/glutes(Try standing version as well)
-- [T Stand Push Up](https://www.youtube.com/watch?v=9MkDQjuGcxw)
-- [Side Plank with Knee Drive](https://www.youtube.com/watch?v=4ydfLjw8aWE)
-##### **Grounded On Front**
-- **Inchworms** – Stand → walk hands to plank → back up, 5–8 reps
-- **World’s Greatest Stretch** – Deep lunge + rotation opposite side arm in relation to front kneeling knee, 3–5 per side
-- Dynamic Hip Flexor Swings -> [[Lower#^357346 |Lizard Pose ]] (Just a lower to the ground version with elbows down) – **6 swings + 10s hold/side**
-	- For dynamic part lift your back knee off the ground if it was resting begin rocking forward and backward, shifting your weight between your front foot and back toes.
-- [Dive Bomber Push-Up](https://www.youtube.com/watch?v=mvNcSF-nXg4)
-- [Band Assisted Thoracic Rotation](https://www.youtube.com/watch?v=3NgyG2JImfw)
-##### **Standing** - **10 reps Each Limb**
-- [Cross leg Lateral Flexion](https://youtu.be/HxZjsIYVPd4?si=8zxedkghLRZMA7ln)
-- PVC Walk
-- **[Couch Stretch](https://youtu.be/Fg-lwNBzVV8?si=dVeSmrUB9MDLOurz)**
-- ***Scapular Wall Slides*** – Slide arms up/down while back touches wall
-- ***Leg Swings*** – Front/back & side-to-side
-- ***Walking Lunges + Reach*** – Forward lunge + arms overhead
-- ***Hip Circles / Openers*** – Knee lift and rotate out
-- ***Knee Hugs to Calf Raise*** – Alternate legs, balance & stretch
-##### Sprinting  Specific - 1 min
-- ***Backward Walking & Skipping***
-- ***Carioca***
-- ***High Knee Circles***
-* ***Internal/External Ankle Circles***
-* ***Lateral Leg Swings (side-to-side)***
-* ***Linear Leg Swings (forward/back)***
-- ***Side Shuffles***
-
-###### Spinal Twist - *5 reps/side*
-- ***Half-Kneeling Cossack V Reach*** - keep tension in extend leg. 
-- ***Half-Kneeling Lunge V Reach with Rotation*** - side bend and rotate towards back foot away from front then alternate front foot. 
-- ***Walking Lunges with Reach*** - Step into lunge, drive *up* powerfully through the front heel, reaching both arms overhead tall. Keep torso upright. (Focuses on extension, hip flexor stretch).
-- ***Quarter-Kneeling Cossack V Reach*** - keep back leg hovering off floor in a split squat position rotating down towards back foot at a downward angle into the ground.
-
-#### **4. Potentiate (Prep for Explosive Work)**
-_~1–2 minutes total – pick 2_
-##### **Grounded On Side**
-- **Side Plank with Knee Drive** – From a side plank, explosively drive the top knee toward the chest, mimicking sprint mechanics.
-##### **Grounded On Front**
-- Clap Push-Ups or Explosive Incline Push-Ups 
-
-##### **Standing** (Low Intensity 3x5)
-- [**Box Jumps**](https://youtu.be/BeqK8ksNC-E?si=egDA5gHf1YU0RlU1)(emphasize controlled landings)
-- **[Lateral Bound to Box Jump](https://youtu.be/0rVHnVFBliY?si=2oUKjvjmW2vcRkcJ)**
--  **Lateral Bound to Stick** – 2x4/side (stabilize on landing)
-- **[Depth Drops](https://youtu.be/GZLyZCqF8BQ?si=nBlSwsv1gYkI-E7G) to  [Broad Jumps](https://youtu.be/c6Etg7bpFfI?si=OiQycPSYIMS67gHu)**
-- [**Depth Jumps**](https://youtu.be/AzPJZHOmGEg?si=XtatqKBQg9eL9Yli) – focus on minimal ground contact time jump intimidate on impact.  
-- **[Duck Walks](https://www.youtube.com/watch?v=qM3GNLKI9rg)**(maybe with mediball) – **2 passes across gym or 30–45 seconds** 
-- **Single-Leg Hops**(focus on stability and balance)
-- **Split Squat Jumps** – focus on vertical drive and soft landings.
-- **[Lateral Skater Hops](https://youtu.be/Xz27DudBfSs?si=F8c9RaX6OC6byK27)** 
-- **[Kneeling Jumps](https://youtu.be/xalzVINlx7Q?si=d47sM7vQ5wTv9og1)**
-##### Sprinting  Specific - 1 min
-- ***[Power Skips](https://youtu.be/TQAuoQR2xao?si=eEPRLm7vtgw4Tqdl)(for height)***
-- ***[Bounding](https://youtu.be/5Sz5J7nekKQ?si=zaDlJkq5Xxz90Nmn)***
-- **[Single-Leg Bounds](https://youtu.be/yUmxCUib7Fw?si=b8FHphOMdWMEJZsY)** 
-- [Medicine ball Posture Exercise](https://www.youtube.com/shorts/t1-Zxrcg-PI)
-- ***Sprint activation:***  
-	- 3 build-up sprints (gradually increasing effort from 60% → 80% → 90%)  
-
-###### Build to
-- **Muscle-Ups** – progression from explosive pull-ups (for full-body coordination)
-- **Front Lever Progressions** – strengthen posterior chain and core
-- [14 Calisthenics Exercises on Gymnastics Rings](https://www.gornation.com/blogs/news/exercises-gymnastics-rings) 
-
-
+## To Try
+#todo/Workout/Try
+- [ ] Try dumbbell lunge with back leg on balance board or plate or platform. 
+- [ ] Try all the way down push-ups with a hand release at the bottom and then push back up. 
 # Exercises
 >**Barbell Exercises: Upper vs Lower Body Considerations**
 Upper body barbell exercises—like the bench press—can sometimes place unnecessary strain on the wrists due to the fixed, straight bar grip. If the grip doesn’t align naturally with your wrist and shoulder joints, it can cause discomfort or even injury over time.
@@ -307,127 +102,51 @@ The general principles of **training phases** like strength and hypertrophy appl
 | **EP** - Explosive Power        | 3–5  | 3–6    | Explosive concentric, slow eccentric | 2–3 min   |
 | **Hypertrophy / Endurance**     | 2–4  | 12–20+ | Smooth and rhythmic (1-0-1 or 2-0-2) | 30–60 sec |
 
-- **Pulling/Grip Strength**: PG
-- **Rotational/Core Strength**:  RC
-
 ### Breathing & Core Engagement in Exercise
 - **Inhale** during the **eccentric phase** (_lowering the weight_).
 - **Exhale** during the **concentric phase** (_lifting the weight_), which is typically the more strenuous part of the movement.
 - While performing static holds like a **plank**, focus on **slow, steady breathing** throughout the duration of the hold.
 - No matter the movement—whether lifting, lowering, or holding—**keep your core engaged the entire time**. A braced core provides essential stability and protects your spine during all phases of the exercise.
 
-### Equipment Tips:
+### Equipment Tips
+- [Felix Bar](https://youtu.be/mkRDoV83Y0M?si=BSPRPBericJza2p_) can be a  good arm warm up.
+- Use [[Tower 200.pdf |Tower 200]] for practicing cable machine exercises the weight ranges from 25 to 45 lb.
 - Use **barbells** for added weight when building strength.
 - Use **dumbbells** for greater range of motion and correcting muscle imbalances.
 - Any **curlbar** exercise can be done with barbell.
-- [Felix Bar](https://youtu.be/mkRDoV83Y0M?si=BSPRPBericJza2p_) can be a  good arm warm up.
 - You can use **heavy resistance bands combined with a weight plate** to create a **pseudo weighted vest**. This setup can be used for exercises like **pull-ups, dips, and other bodyweight movements** to add resistance without needing an actual vest.
 - For resistance band exercises focus on **Explosive Power** or **Hypertrophy**,  you can still do strength if your still weak in certain area's but you will eventually plateau you can also mix up bands clipping multiple ones together.
 - Any exercises with deficit like deficit deadlift helps gets you into a deeper position and exploding out of it and increase range of motion but build to it.
 
-## Phases
+## Phases 
 **Starting Point** will switch to optimal order of **EP(PG/RC)** → **Strength CM(PG/RC)** → **Hypertrophy(PG/RC)**  
+- **Pulling/Grip Strength**: PG
+- **Rotational/Core Strength**:  RC
 
-Hypertrophy thrives on explosive lifts (1s), slow eccentrics (3s), 5 sets 15 reps, and progressive overload— going to failure on the last set.
-### **Progression Rules**
+### Progression Rules
+#todo/BAU/Workout 
+- [ ] Adjust explosive power and hypertrophy in relation to strength max weight.
+- [ ] Keep [[Gym Core Exercise Weight Goals]] in mind.
+
 - **Hypertrophy**: Add 1 rep/set or +2.5 lbs weekly
 - **Strength**: +5 lbs/week (upper), +10 lbs (lower)
 - **Injury Rule**: If pain >2/10, regress load or variation
-
-#todo/BAU/Workout 
-- [ ] Adjust explosive power and hypertrophy in relation to strength max weight 
-##### Explosive Power (EP Phase)
-Prioritize resistance bands for explosive phase they can be used for other phase but the most optimal use case is for explosive power also 2 sets 10 reps for warm up when it comes to bands.
-
-> Speed is a skill—train it while fresh.
-
-| Exercise                         | Goal Setsx Reps | Weight (30–60% 1RM) | Timeline    |
-| -------------------------------- | --------------- | ------------------- | ----------- |
-| **Hip Thrust**                   | 4x5             | 95–135 lbs          | 6–9 months  |
-| **Hack Squat Machine**           | 4x5             | 90–135 lbs          | 3–6 months  |
-| **Unsupported Squat**            | 4x5             | 70–120 lbs          | 3–6 months  |
-| **Deadlift** (Trap/Conventional) | 3x3             | 135–185 lbs         | 6–12 months |
-| **Bench Press**                  | 4x5             | 75–95 lbs           | 6–9 months  |
-| **Overhead Press**               | 4x5             | 45–65 lbs           | 6–9 months  |
-| **Weighted Pull-Ups**            | 3x6             | +10–20 lbs          | 6–9 months  |
-| **Single-Leg Leg Press**         | 3x8             | 20–30 lbs           | Immediately |
-| **Tib Bar**                      | 3x10            | 25–40 lbs           | 3–6 months  |
-
-
-##### **Strength Compound (CM Phase)**
-
-> Strength tolerates some fatigue, but still demands precision.
-
-| Exercise                   | Goal Multiplier | Goal @  120     | Timeline (Estimated) | Goal @ 150      | Timeline (Adjusted) |
-| -------------------------- | --------------- | --------------- | -------------------- | --------------- | ------------------- |
-| **Hip Thrust**             | 2.5x            | **300 lbs**     | 9–12 months          | **375 lbs**     | 12–24 months        |
-| ~~**Hack Squat Machine**~~ | ~~2x~~          | ~~**240 lbs**~~ | ~~4–6 months~~       | ~~**300 lbs**~~ | ~~6–12 months~~     |
-| **Unsupported Squat**      | 1.67x           | **200 lbs**     | 4–6 months           | **250 lbs**     | 6–12 months         |
-| **Deadlift**               | 2.5x            | **300 lbs**     | 9–12 months          | **375 lbs**     | 12–24 months        |
-| **Bench Press**            | 1.5x            | **180 lbs**     | 6–8 months           | **225 lbs**     | 9–18 months         |
-| **Overhead Press**         | 1.0x            | **120 lbs**     | 6–8 months           | **150 lbs**     | 12–24 months        |
-| **Weighted Pull-Ups**      | +0.5x           | **+60 lbs**     | 6–9 months           | **+75 lbs**     | 9–18 months         |
-| **Single-Leg Leg Press**   | 2x              | **240 lbs**     | 4–6 months           | **315 lbs**     | 6–12 months         |
-| **Power Sled**             | 2x              | **240 lbs**     | 4–6 months           | **300 lbs**     | 4–6 months          |
-| **Tib Bar**                | 30 - 40% BW     | **50 lbs**      | 4–6 months           | **60 lbs**      | 4–6 months          |
-
-##### **Hypertrophy & Endurance (HE Phase)**
-> Size/endurance = can be done under more fatigue because it's about _muscle burn_, not _perfect speed or maximum tension_
-
-
-| Exercise                 | Sets x Reps | Goal @ 120 lb | Timeline (Est.) | Goal @ 150 lb | Timeline (Adjusted) |
-| ------------------------ | ----------- | ------------- | --------------- | ------------- | ------------------- |
-| **Hip Thrust**           | 4x15        | 185–225 lbs   | 6–9 months      | 225–280 lbs   | 9–12 months         |
-| **Hack Squat Machine**   | 4x12        | 135–180 lbs   | 6 months        | 180–225 lbs   | 9–12 months         |
-| **Unsupported Squat**    | 4x12        | 110–160 lbs   | 6 months        | 160–200 lbs   | 9–12 months         |
-| **Deadlift**             | 3x10        | 185–225 lbs   | 6–9 months      | 225–275 lbs   | 9–15 months         |
-| **Bench Press**          | 3x12        | 95–115 lbs    | 6–9 months      | 115–135 lbs   | 9–12 months         |
-| **Overhead Press**       | 3x10        | 65–75 lbs     | 6–9 months      | 75–95 lbs     | 9–12 months         |
-| **Weighted Pull-Ups**    | 3x8         | +15 lbs       | 6 months        | +30 lbs       | 9–12 months         |
-| **Single-Leg Leg Press** | 3x15        | 40–50 lbs     | Immediately     | 60 lbs        | 3–6 months          |
-| **Tib Bar**              | 3x20        | 40–50 lbs     | 3–6 months      | 60 lbs        | 6–9 months          |
 
 
 ## Regimen
 > **Train intensity before volume**. Prioritize neural output early, then shift to fatigue-driven work. Can shift things depending how you feel also Heavy Days are Orange.
 
 
-| Day        | Session Type                                     | Week 1 – Strength Focus                     | Week 2 – Hypertrophy Focus                    | Week 3 – Explosive Focus                       | Week 4 – Free Form | Best Order of Operations |
-| ---------- | ------------------------------------------------ | ------------------------------------------- | --------------------------------------------- | ---------------------------------------------- | ------------------ | ------------------------ |
-| ***Sun***  | Upper + Run + Balance Board                      | **Pull Strength**                           | *Pull Explosive* → **Hypertrophy Finisher**   | *Pull Explosive* → **Hypertrophy Finisher**    |                    | Glutes / Hamstrings      |
-| **Mon**    | Full Body + Sled                                 | *Lower Hypertrophy* **Upper Push Strength** | *Lower Strength*  **Upper Push Hypertrophy**  | *Lower Hypertrophy*  **Upper Push Explosive ** |                    | Core                     |
-| ***Tues*** | Lower + *Machine/Freeweight* Dead Hang(MMA)      | *Lower Strength*                            | *Lower Hypertrophy *                          | *Lower Explosive*                              |                    | Scapular & Upper Back    |
-| **Wed**    | Upper + Run + Balance Board                      | **Push Strength**                           | *Push Explosive* →   **Hypertrophy Finisher** | *Push Explosive* →  **Hypertrophy Finisher**   |                    | Lats / Traps             |
-| ***Thu***  | **GYM NO MMA**       Full Body + Sled            | PUSH/PULL                                   | IT TO THE                                     | Fucking LIMIT                                  | WHATEVER YOU WANT  | Quads                    |
-| **Fri**    | Lower +              *Cable Machine*   Dead Hang | *Lower Strength*                            | *Lower Hypertrophy*                           | *Lower Explosive*                              |                    | Arms                     |
-| ***Sat***  | Full Body + Sled                                 | *Lower Strength* **Upper Push Hypertrophy** | *Lower Hypertrophy*  **Upper Push Explosive** | *Lower Explosive*  **Upper Push Strength**     |                    | Chest / Delts            |
+| Day        | Session Type                                          | Week 1 – Strength Focus                     | Week 2 – Hypertrophy Focus                    | Week 3 – Explosive Focus                       | Week 4 – Free Form | Best Order of Operations |
+| ---------- | ----------------------------------------------------- | ------------------------------------------- | --------------------------------------------- | ---------------------------------------------- | ------------------ | ------------------------ |
+| ***Sun***  | Upper + Run + Balance Board                           | **Pull Strength**                           | *Pull Explosive* → **Hypertrophy Finisher**   | *Pull Explosive* → **Hypertrophy Finisher**    |                    | Glutes / Hamstrings      |
+| **Mon**    | Full Body + Sled                                      | *Lower Hypertrophy* **Upper Push Strength** | *Lower Strength*  **Upper Push Hypertrophy**  | *Lower Hypertrophy*  **Upper Push Explosive ** |                    | Core                     |
+| ***Tues*** | Lower + *Machine/Freeweight* Dead Hang(MMA)           | *Lower Strength*                            | *Lower Hypertrophy *                          | *Lower Explosive*                              |                    | Scapular & Upper Back    |
+| **Wed**    | Upper + Run + Balance Board                           | **Push Strength**                           | *Push Explosive* →   **Hypertrophy Finisher** | *Push Explosive* →  **Hypertrophy Finisher**   |                    | Lats / Traps             |
+| ***Thu***  | **GYM NO MMA**       Full Body + Sled                 | PUSH/PULL                                   | IT TO THE                                     | Fucking LIMIT                                  | WHATEVER YOU WANT  | Quads                    |
+| **Fri**    | Lower +              *Cable Machine*   Dead Hang(MMA) | *Lower Strength*                            | *Lower Hypertrophy*                           | *Lower Explosive*                              |                    | Chest / Delts            |
+| ***Sat***  | Full Body + Sled                                      | *Lower Strength* **Upper Push Hypertrophy** | *Lower Hypertrophy*  **Upper Push Explosive** | *Lower Explosive*  **Upper Push Strength**     |                    | Arms                     |
 
-
-#todo/BAU/Workout
-- [ ] Avoid being on phone affects performance
-
-- [ ] Do [[Grip Strength Training]]
-
-- [ ] Over time max 11 exercises per session
-- [ ] On pull up try holding position at the top holding it for 3 sec and same at the bottom.
-- [ ] Use [[Tower 200.pdf |Tower 200]] for practicing cable machine exercises the weight ranges from 25 to 45 lb.  
-- [ ] Cycle in [[Stability Ball Workout Plan]] for core strengthening, flexibility, and stretching,  
-- [ ] Use 30 to 45 degree angle for incline bench press which seem more effective for your body type then flat bench.
-- [ ] Explosive day squat jumps other days deadlifts for trap bar
-- [ ] Hover in more of a standing position for abduction leg squeezing machine 70 to 80 lb.
-- [ ] Lat pull down pull elbow near hip not chest same for row get up close pull to hip.
-- [ ] Use opposite side knee leaning against low bench when doing Half Kneeling Row.
-- [ ] Rotate your **pinky externally** to where you are at the end of the range where your hands are facing **palm up** when it comes to **curls**.
-- [ ] Rotate your **thumb internally** to end of range for **barbell bench press**.
-- [ ] Try dumbbell lunge with back leg on balance board or plate or platform. 
-- [ ] For kettlebell RDL use opposite side where you are holding the Kettlebell this side that is lifting the leg.
-- [ ] For squats do them with wide stance with toes pointed out slightly not the widest stance just not narrow.
-- [ ] Keep elbows high above head and alt cable height at hip and foot level for Overhead extension.
-- [ ] Try all the way down push-ups with a hand release at the bottom and then push back up. 
-- [ ] Practice offset with one weight on barbell and at home with resistance band kettlebell.
-- [ ] Try Larsen bench press on flat bench or incline bench hovering or keeping straight legs to focus more on core.
-- [ ] After doing that deadlifts for a while switch to deficit deadlifts where you're standing on a plate and doing the deadlift which increases range of motion of the motion.
-- [ ] Leg extensions not as effective for me at least in terms of rehabilitation aspect but still can benefit from the excercise just make sure no pain and proper form pointing toes inward with butt down keep the range at the orange sticker. 
 
 ## Body Part Specific Programs 
 > For each excercise allowed to do 3 times a week max. Also each fixed gym machine has a freeweight variations you can pivot to if not available.
@@ -566,19 +285,15 @@ Lean forward a little on [lunge/squat](https://youtu.be/DfGu48vMmlU?si=DbDYi5Wq3
 [How to PROPERLY Squat for Growth (4 Easy Steps)](https://youtu.be/gcNh17Ckjgg?si=L0Lmos_bpSJcs9u1)
 *Make Squats Narrow and Deep to improve pistol squat and set bar height to 13 for anything Zercher*
 1. **Hack Squat** – 300lb - if ankles begin to lift move feet up
-2. **Squat/Zercher Squat** - Incline High Bar(on trap muscle)  - 50lb
-3. **Barbell/Dumbbell Bulgarian Split Squat**(Try [elevated](https://youtu.be/DXK-VbFE6ic?si=NHqOeitXD0h_YQsr) front leg variation also use [leg curl roller](https://youtu.be/VC5kbLSuo30?si=NLitkOhL50votRUC)) - 20lb
-4. **Kneeling Squat on toes with bar/Dumbbell behind** - lb
+2. **Barbell Squat/Zercher B-Squat** - Incline High Bar(on trap muscle)  - 50lb
+3. **Dumbbell Bulgarian Split Squat**(Try [elevated](https://youtu.be/DXK-VbFE6ic?si=NHqOeitXD0h_YQsr) front leg variation also use [leg curl roller](https://youtu.be/VC5kbLSuo30?si=NLitkOhL50votRUC)) - 20lb
+4. **Kneeling Squat on toes with curlbar/Dumbbell behind** - lb
 5. **Single Leg Press** – 180lb
 6. **Walking Barbell Lunge/Zercher Lunge** – 20lb
-7. [Elevated Smith Machine Lunge](https://youtu.be/Yp5O9Cz6Ajg?si=bFGCfbzNqt_JobTA) - try [Elevated Lunge](https://youtu.be/OVFHK2Iev70?si=oiRNDNHznSrNP_RC) with dumbbell at max 40lb to 60lb then switch to free barbell
-8. **Kettlebell Sumo Squat** – 20lb 
-9. **Barbell/Kettlebell B-Squat** - 20lb
-10. **Band Single-Leg Barbell Squat** - 20lb
-11. **Prone Leg Curl** - 60lb
-
+7. **Kettlebell B-Squat/Sumo** - 20lb
+8. ~~[Elevated Smith Machine Lunge](https://youtu.be/Yp5O9Cz6Ajg?si=bFGCfbzNqt_JobTA) - try [Elevated Lunge](https://youtu.be/OVFHK2Iev70?si=oiRNDNHznSrNP_RC) with dumbbell at max 40lb to 60lb then switch to free barbell~~
 ##### Build to Doing Safely
-10. **Pistol Squat**
+9. **Pistol Squat**
 	1. Box Elevated Lowering pistol squat
 	2. Box Elevated Raising pistol squat
 	3. hand on wall pistol squat
@@ -598,18 +313,18 @@ Lean forward a little on [lunge/squat](https://youtu.be/DfGu48vMmlU?si=DbDYi5Wq3
 
 ##### Build to Doing Safely
 5. **[Nordic Hamstring Curl](https://youtu.be/PcxNRBnfBd0?si=_EnPiuwgF3Rx0uo4)** - Practice on incline bench with tib bar
-
 ##### Best Pairing
 - **Cable Pull Through** + **Tib Bar Raise
 - **Hip Thrust** + **Cable Hip Extension** + **Tib Bar Raise**
+
 #### **Session 3: Stability, Mobility, and Accessories (Control + Balance)**
 1. **Trap Bar Squat Jump** - 20lb
 2. **Cable Side Kick** – 20lb
 3. **Cable Hip Flexion** – 30lb
 4. **Abduction Machine (Outer Thigh)** – 130lb
 5. **Band Scarecrow Raises** - 20lb
-6. **Leg Extension** – 120lb
-
+6. **Prone Leg Curl** - 60lb
+7. **Leg Extension** – 120lb
 ##### Best Pairing
 - **Trap Bar Squat Jump** + **Cable Side Kick** + **Band Scarecrow Raises** 
 - **Cable Hip Flexion** + **Abduction Machine** + **Leg Extension** 
@@ -619,8 +334,8 @@ Lean forward a little on [lunge/squat](https://youtu.be/DfGu48vMmlU?si=DbDYi5Wq3
 - **Intermediate/Advanced:** 3-4x/week (10-15 mins/session) 4 songs.  
 - **Elite (MMA/Gymnasts):** 5x/week (integrated into warm-ups or cooldowns).
 
+###  [O2 Trainer Routine](https://www.youtube.com/watch?v=-Es3HOd0PT8&list=PL8NG4An03Sa_ZvEIyHFojC65BhMV08qr1&index=5)
 
-###  O2 Trainer Routine
 #### **Frequency:**  
 - **Days Per Week:** **4–5 days** (allow 2–3 rest days for recovery). 
 - **Sessions Per Day:** **1–2 times daily** (morning + pre/post-workout).  

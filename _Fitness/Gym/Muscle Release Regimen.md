@@ -22,7 +22,7 @@ dg-publish:
 
 ---
 
-### 🦶 **FEET & LOWER LEG**
+### 🦶 **FEET & LOWER LEG & [[Big Toe Flexibility |Toes]]**
 
 |Area|Tool|Duration|Notes|
 |---|---|---|---|

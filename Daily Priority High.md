@@ -72,6 +72,8 @@ kanban-plugin: board
 
 - [ ] ##### Look and work with AI with no guardrails focusing on Psychology
 - [ ] ##### Build high value skill per quarter as of now dedicate this to non-technical skills
+- [ ] ##### Send voice notes for networking on LinkedIn to stand out Try a Little experiments in general outside of this and outside of job stuff just in general experiment
+- [ ] [AI Application Research](https://chatgpt.com/share/68704988-e2f8-800d-878c-8728b49d5276)
 - [ ] [ChatGPT - Stakeholder Requirements Questions](https://chatgpt.com/share/683c0e6e-e31c-800d-9b48-9bf72b235bbd)
 - [ ] Try using [[Requirements to Code Skeleton]]
 - [ ] Be willing to start over
