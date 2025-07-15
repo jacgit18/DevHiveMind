@@ -18,8 +18,6 @@ Relates:
 Peer Reviewed: 0
 dg-publish:
 ---
-# Attributes
-
 ![[ChatGPT Image Jul 3, 2025, 04_58_45 PM.png]]
 ## Best Practices
 #todo/BAU/Workout  
@@ -40,12 +38,14 @@ dg-publish:
 #todo/BAU/Workout  
 - [ ] Rotate your **thumb internally** to end of range for **barbell bench press**.
 - [ ] Rotate your **pinky externally** to where you are at the end of the range where your hands are facing **palm up** when it comes to **curls**.
+- [ ] **Prone Leg curl** before any **squatting** excercise.
 - [ ] Hover in more of a standing position for **Abduction Leg Squeezing** machine 70 to 80 lb.
 - [ ] Lat pull down pull elbow near hip not chest same for row get up close pull to hip.
 - [ ] Use opposite side knee leaning against low bench when doing Half Kneeling Row.
 - [ ] For kettlebell RDL use opposite side where you are holding the Kettlebell this side that is lifting the leg.
 - [ ] Keep elbows high above head and alt cable height at hip and foot level for Overhead extension.
 - [ ] 45 degree Incline bench press over flat bench for my body type as well as Larsen bench press on flat bench or incline bench hovering or keeping straight legs to focus more on core.
+- [ ] Lean forward a little on [lunge/squat](https://youtu.be/DfGu48vMmlU?si=DbDYi5Wq3JKopM3P) keeping neutral spine specifically dumbbell to simulate shooting a shot. 
 
 ## To Try
 #todo/Workout/Try
@@ -53,6 +53,8 @@ dg-publish:
 - [ ] Try all the way down push-ups with a hand release at the bottom and then push back up. 
 - [ ] try rdl kettle 
 - [ ] try Burpee pull up
+- [ ] try [Seated Y Cable Raises](https://youtu.be/-yL_BS28hcY?si=oO9QrIO_sv2SF5K1)(Do upstairs)
+- [ ] try [FreeMotion Front Shoulder Raise](https://youtu.be/_bzJ1Yb4XCU?si=v0UUNLSilV6NVM76)
 # Exercises
 >**Barbell Exercises: Upper vs Lower Body Considerations**
 Upper body barbell exercises—like the bench press—can sometimes place unnecessary strain on the wrists due to the fixed, straight bar grip. If the grip doesn’t align naturally with your wrist and shoulder joints, it can cause discomfort or even injury over time.
@@ -75,6 +77,7 @@ The general principles of **training phases** like strength and hypertrophy appl
 ### Equipment Tips
 - [Felix Bar](https://youtu.be/mkRDoV83Y0M?si=BSPRPBericJza2p_) can be a  good arm warm up.
 - Use [[Tower 200.pdf |Tower 200]] for practicing cable machine exercises the weight ranges from 25 to 45 lb.
+- Use cables which are best for isolation of muscle so maybe focus hypertrophy days around cable [properly](https://youtu.be/JUDTGZh4rhg?si=rsQZQsKYSnAV1XkB). 
 - Use **barbells** for added weight when building strength.
 - Use **dumbbells** for greater range of motion and correcting muscle imbalances.
 - Any **curlbar** exercise can be done with barbell.
@@ -132,9 +135,9 @@ Outside of best parings other parings you do make it a light day instead of a in
 ##### Build to Doing Safely
 - **Barbell Clean Jerk Press** - 1 time a week - 20lb
 - **[Turkish Get-Up](https://youtu.be/jFK8FOiLa_M?si=L8oB-1-BZ8M6Wfsp)** - 10lb to 15lb
-- **[Single-Leg Snatch (RDL, Plate, Hip Lock)](https://youtu.be/L9hk1LiqGsU?si=-dJyrtt3Mq7XezCu)**
-- [Dumbbell Man Maker](https://youtu.be/rXjJ46zoQrM?si=XtGPVO8zeVQeapj6)(Easier)
-- [Kettlebell Man Maker](https://youtu.be/P4BIVAgJbZY?si=_gnVpDS6HX7WgacW)(Harder)
+- **[Single-Leg Snatch (RDL, Plate, Hip Lock)](https://youtu.be/L9hk1LiqGsU?si=-dJyrtt3Mq7XezCu)** -25lb
+- [Dumbbell Man Maker](https://youtu.be/rXjJ46zoQrM?si=XtGPVO8zeVQeapj6)(Easier) -10lb to 15lb
+- [Kettlebell Man Maker](https://youtu.be/P4BIVAgJbZY?si=_gnVpDS6HX7WgacW)(Harder) -10lb to 15lb
 ### Right to Bare Arms Program
 Allowed to practice each excercise *here* max twice a week. Also try doing chest fly before chest press. Also keep chest up when doing chest press.
 #### **Session 1: Push Focus**
@@ -173,13 +176,6 @@ Chin ups higher priority alternate each quarter or even month. Try Burpee to Pul
 11. **Back Extension** - 15lb - do consistently for a 2 weeks and try ft to single leg variation 
 12. **[Low Cable Goblet Squat](https://youtu.be/f6eI0JI9AYA?si=TTKH4FrAivJYEyd0)**  - 30lb to 40lb
 
-[Seated Y Cable Raises](https://youtu.be/-yL_BS28hcY?si=oO9QrIO_sv2SF5K1)(Do upstairs)
-
-[FreeMotion Front Shoulder Raise](https://youtu.be/_bzJ1Yb4XCU?si=v0UUNLSilV6NVM76)
-
-
-
-cables are best for isolation of muscle  maybe focus hypertrophy days around that pulling out cable [properly](https://youtu.be/JUDTGZh4rhg?si=rsQZQsKYSnAV1XkB) 
 ##### Build to Doing Safely
 13. **Band/Barbell/[Cable](https://youtu.be/2M1Mikqf5lY?si=1Me7DqZvB5XL1Orm)/Dumbbell/Landmine Single Leg RDL** - 10lb to 30lb
 14. **Side Lateral QL Extension** - 15lb - same thing after building up from single leg back extension and doing this consistently then do [rotating variation](https://youtu.be/KJwARxV9a6g?si=4C--YLWJnUcFaMmx) once doing consistent 4 sets 8 reps.
@@ -236,10 +232,6 @@ cables are best for isolation of muscle  maybe focus hypertrophy days around tha
 All leg cable excercise are done at a low angle. Avoid squatting with running shoes and squat wider as well if issues in squatting form.
 
 When descending into a squat, avoid letting your hips tuck under or round toward your legs at the bottom — a movement known as the “butt wink.” This can place unnecessary stress on your lower back and increase the risk of injury. A common cause is limited ankle mobility. As a short-term fix, try elevating your heels with weight plates or squat wedges to help you stay more upright and maintain proper hip and spine alignment. Just note this doesn’t address the root issue. Throughout the movement, your hips, core, and chest should move as one solid unit — no collapsing or out-of-sync sequencing.
-
-Prone Leg curl before any squatting excercise
-
-Lean forward a little on [lunge/squat](https://youtu.be/DfGu48vMmlU?si=DbDYi5Wq3JKopM3P) keeping neutral spine specifically dumbbell to simulate shooting a shot. 
 
 #### Session 1: Main Compound Squat & Lunge Patterns
 [How to PROPERLY Squat for Growth (4 Easy Steps)](https://youtu.be/gcNh17Ckjgg?si=L0Lmos_bpSJcs9u1)
