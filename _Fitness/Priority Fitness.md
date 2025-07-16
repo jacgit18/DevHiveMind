@@ -100,18 +100,18 @@ The general principles of **training phases** like strength and hypertrophy appl
 
 
 ## Regimen
-> **Train intensity before volume**. Prioritize neural output early, then shift to fatigue-driven work. Can shift things depending how you feel also Heavy Days are Orange.
+> **Train intensity before volume**. Prioritize neural output early, then shift to fatigue-driven work. Can shift things depending how you feel but heavy push it to limit days  fall under Hypertrophy week 4 days max since going to failure.
 
 
-| Day        | Session Type                                          | Week 1 – Strength Focus                     | Week 2 – Hypertrophy Focus                    | Week 3 – Explosive Focus                       | Week 4 – Free Form | Best Order of Operations |
-| ---------- | ----------------------------------------------------- | ------------------------------------------- | --------------------------------------------- | ---------------------------------------------- | ------------------ | ------------------------ |
-| ***Sun***  | Upper + Run + Balance Board                           | **Pull Strength**                           | *Pull Explosive* → **Hypertrophy Finisher**   | *Pull Explosive* → **Hypertrophy Finisher**    |                    | Glutes / Hamstrings      |
-| **Mon**    | Full Body + Sled                                      | *Lower Hypertrophy* **Upper Push Strength** | *Lower Strength*  **Upper Push Hypertrophy**  | *Lower Hypertrophy*  **Upper Push Explosive ** |                    | Core                     |
-| ***Tues*** | Lower + *Machine/Freeweight* Dead Hang(MMA)           | *Lower Strength*                            | *Lower Hypertrophy *                          | *Lower Explosive*                              |                    | Scapular & Upper Back    |
-| **Wed**    | Upper + Run + Balance Board                           | **Push Strength**                           | *Push Explosive* →   **Hypertrophy Finisher** | *Push Explosive* →  **Hypertrophy Finisher**   |                    | Lats / Traps             |
-| ***Thu***  | **GYM NO MMA**       Full Body + Sled                 | PUSH/PULL                                   | IT TO THE                                     | Fucking LIMIT                                  | WHATEVER YOU WANT  | Quads                    |
-| **Fri**    | Lower +              *Cable Machine*   Dead Hang(MMA) | *Lower Strength*                            | *Lower Hypertrophy*                           | *Lower Explosive*                              |                    | Chest / Delts            |
-| ***Sat***  | Full Body + Sled                                      | *Lower Strength* **Upper Push Hypertrophy** | *Lower Hypertrophy*  **Upper Push Explosive** | *Lower Explosive*  **Upper Push Strength**     |                    | Arms                     |
+| Day      | Session Type                                          | Week 1 – Strength Focus                     | Week 2 – Hypertrophy Focus                    | Week 3 – Explosive Focus                       | Week 4 – Free Form | Best Order of Operations |
+| -------- | ----------------------------------------------------- | ------------------------------------------- | --------------------------------------------- | ---------------------------------------------- | ------------------ | ------------------------ |
+| **Sun**  | Upper + Run + Balance Board                           | **Pull Strength**                           | *Pull Explosive* → **Hypertrophy Finisher**   | *Pull Explosive* → **Hypertrophy Finisher**    |                    | Glutes / Hamstrings      |
+| **Mon**  | Full Body + Sled                                      | *Lower Hypertrophy* **Upper Push Strength** | *Lower Strength*  **Upper Push Hypertrophy**  | *Lower Hypertrophy*  **Upper Push Explosive ** |                    | Core                     |
+| **Tues** | Lower + *Machine/Freeweight* Dead Hang(MMA)           | *Lower Strength*                            | *Lower Hypertrophy *                          | *Lower Explosive*                              |                    | Scapular & Upper Back    |
+| **Wed**  | Upper + Run + Balance Board                           | **Push Strength**                           | *Push Explosive* →   **Hypertrophy Finisher** | *Push Explosive* →  **Hypertrophy Finisher**   |                    | Lats / Traps             |
+| **Thu**  | **GYM NO MMA**       Full Body + Sled                 | PUSH/PULL                                   | IT TO THE                                     | Fucking LIMIT                                  | WHATEVER YOU WANT  | Quads                    |
+| **Fri**  | Lower +              *Cable Machine*   Dead Hang(MMA) | *Lower Strength*                            | *Lower Hypertrophy*                           | *Lower Explosive*                              |                    | Chest / Delts            |
+| **Sat**  | Full Body + Sled                                      | *Lower Strength* **Upper Push Hypertrophy** | *Lower Hypertrophy*  **Upper Push Explosive** | *Lower Explosive*  **Upper Push Strength**     |                    | Arms                     |
 
 
 ## Body Part Specific Programs 
