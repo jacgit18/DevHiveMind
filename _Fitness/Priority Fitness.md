@@ -147,7 +147,7 @@ Allowed to practice each excercise *here* max twice a week. Also try doing chest
 4. **[6 Ways for Shoulder Raise](https://www.youtube.com/watch?v=nvEE4u3qfJY) With Wrist Curl**(Consider **[[Wrist Curl]]** Regimen with [variations](https://www.youtube.com/watch?v=nvJ-1suJCTU) and try with cable) – 10lb
 5. **Landmine Anti Rotations** - 10lb
 6. **Wide Seated Dip** - 145lb
-7. **Chest Fly** - 90lb
+7. **Chest Fly** - 100lb
 8. **Landmine Z Press** - 10lb 
 9. **Overhead Barbell/TrapBar Press** - 20lb
 
@@ -239,7 +239,7 @@ When descending into a squat, avoid letting your hips tuck under or round toward
 1. **Hack Squat** – 300lb - if ankles begin to lift move feet up
 2. **Barbell Squat/Zercher B-Squat** - Incline High Bar(on trap muscle)  - 50lb
 3. **Dumbbell Bulgarian Split Squat**(Try [elevated](https://youtu.be/DXK-VbFE6ic?si=NHqOeitXD0h_YQsr) front leg variation also use [leg curl roller](https://youtu.be/VC5kbLSuo30?si=NLitkOhL50votRUC)) - 20lb
-4. **Kneeling Squat on toes with curlbar/Dumbbell behind** - lb
+4. **Kneeling Squat on toes with curlbar/Dumbbell behind** - 45lb maybe higher
 5. **Single Leg Press** – 180lb
 6. **Walking Barbell Lunge/Zercher Lunge** – 20lb
 7. **Kettlebell B-Squat/Sumo** - 20lb
