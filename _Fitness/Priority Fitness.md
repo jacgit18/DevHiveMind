@@ -103,37 +103,37 @@ The general principles of **training phases** like strength and hypertrophy appl
 > **Train intensity before volume**. Prioritize neural output early, then shift to fatigue-driven work. Can shift things depending how you feel but heavy push it to limit days  fall under Hypertrophy week 4 days max since going to failure.
 
 
-| Day      | Session Type                                          | Week 1 – Strength Focus                     | Week 2 – Hypertrophy Focus                    | Week 3 – Explosive Focus                       | Week 4 – Free Form | Best Order of Operations |
-| -------- | ----------------------------------------------------- | ------------------------------------------- | --------------------------------------------- | ---------------------------------------------- | ------------------ | ------------------------ |
-| **Sun**  | Upper + Run + Balance Board                           | **Pull Strength**                           | *Pull Explosive* → **Hypertrophy Finisher**   | *Pull Explosive* → **Hypertrophy Finisher**    |                    | Glutes / Hamstrings      |
-| **Mon**  | Full Body + Sled                                      | *Lower Hypertrophy* **Upper Push Strength** | *Lower Strength*  **Upper Push Hypertrophy**  | *Lower Hypertrophy*  **Upper Push Explosive ** |                    | Core                     |
-| **Tues** | Lower + *Machine/Freeweight* Dead Hang(MMA)           | *Lower Strength*                            | *Lower Hypertrophy *                          | *Lower Explosive*                              |                    | Scapular & Upper Back    |
-| **Wed**  | Upper + Run + Balance Board                           | **Push Strength**                           | *Push Explosive* →   **Hypertrophy Finisher** | *Push Explosive* →  **Hypertrophy Finisher**   |                    | Lats / Traps             |
-| **Thu**  | **GYM NO MMA**       Full Body + Sled                 | PUSH/PULL                                   | IT TO THE                                     | Fucking LIMIT                                  | WHATEVER YOU WANT  | Quads                    |
-| **Fri**  | Lower +              *Cable Machine*   Dead Hang(MMA) | *Lower Strength*                            | *Lower Hypertrophy*                           | *Lower Explosive*                              |                    | Chest / Delts            |
-| **Sat**  | Full Body + Sled                                      | *Lower Strength* **Upper Push Hypertrophy** | *Lower Hypertrophy*  **Upper Push Explosive** | *Lower Explosive*  **Upper Push Strength**     |                    | Arms                     |
+| Day      | Session Type                                          | Week 1 – Strength Focus                                                                 | Week 2 – Hypertrophy Focus                         | Week 3 – Explosive Focus                          | Week 4 – Free Form | Best Order of Operations |
+| -------- | ----------------------------------------------------- | --------------------------------------------------------------------------------------- | -------------------------------------------------- | ------------------------------------------------- | ------------------ | ------------------------ |
+| **Sun**  | Upper + Run + Balance Board                           | ***[[Priority Fitness#Session 2 Pull Focus \|Pull]] *** Strength                        | ***Pull *** *Explosive* → **Hypertrophy Finisher** | ***Pull*** *Explosive* → **Hypertrophy Finisher** |                    | Glutes / Hamstrings      |
+| **Mon**  | Full Body + Sled + Clean Jerk Press                   | *Lower Hypertrophy* **Upper [[Priority Fitness#Session 1 Push Focus \|Push]] Strength** | *Lower Strength*  **Upper Push Hypertrophy**       | *Lower Hypertrophy*  **Upper Push Explosive **    |                    | Core                     |
+| **Tues** | Lower + *Machine/Freeweight* Dead Hang(MMA)           | *Lower Strength*                                                                        | *Lower Hypertrophy *                               | *Lower Explosive*                                 |                    | Scapular & Upper Back    |
+| **Wed**  | Upper + Run + Balance Board                           | **Push Strength**                                                                       | *Push Explosive* →   **Hypertrophy Finisher**      | *Push Explosive* →  **Hypertrophy Finisher**      |                    | Lats / Traps             |
+| **Thu**  | **GYM NO MMA**       Full Body + Sled                 | PUSH/PULL                                                                               | IT TO THE                                          | Fucking LIMIT                                     | WHATEVER YOU WANT  | Quads                    |
+| **Fri**  | Lower +              *Cable Machine*   Dead Hang(MMA) | *Lower Strength*                                                                        | *Lower Hypertrophy*                                | *Lower Explosive*                                 |                    | Chest / Delts            |
+| **Sat**  | Full Body + Sled                                      | *Lower Strength* ***Upper Pull Hypertrophy***                                           | *Lower Hypertrophy*  ***Upper Pull Explosive***    | *Lower Explosive*  ***Upper Pull Strength***      |                    | Arms                     |
 
 
 ## Body Part Specific Programs 
 > For each excercise allowed to do 3 times a week max. Also each fixed gym machine has a freeweight variations you can pivot to if not available.
 
-Outside of best parings other parings you do make it a light day instead of a intense day because best paring for injury mitigation.
+Outside of best parings other parings you do make it a light day instead of a intense day because best paring for injury mitigation. also orange is very high priority out of all excercise here.
 
 ### Full Body Program
-- **[Base Rows](https://youtu.be/Qmw9TKnQ9NY?si=gNe_2K45P71UKz5y)**
+- **[Base Rows](https://youtu.be/Qmw9TKnQ9NY?si=gNe_2K45P71UKz5y)** - 20lb to 30lb
 - **[Cable Lateral Walk](https://youtu.be/nw8NjG2YOLY?si=KAo4G6B3_5Av1s_t)** - 20lb to 30lb
 - [Bottom Ups](https://www.youtube.com/watch?v=TJjRZBpY75I) - 20lb
-- Suitcase Carry/March - 20lb(Start with then transition to farmer)
+- ***Suitcase Carry/March*** - 20lb(Start with then transition to farmer)
 - Farmer Carry/March - 20lb
 - **Kettlebell Swing** - 20lb
-- **Sled** - twice a week push and pull - 50lb
+- ***Sled*** - twice a week push and pull - 50lb
 	- Backward walk, seated pancake pull, standing pull
-	- [Lateral Sled Drag](https://youtu.be/rGtYmX2aeAA?si=PnniyFsIluLeViKa) - try
+	- [Lateral Sled Drag](https://youtu.be/rGtYmX2aeAA?si=PnniyFsIluLeViKa)(try) - 50lb
 - ~~**Trap bar Deadlift** -  1 time a week - 50lb~~
 - ~~**Standing [Good Mornings](https://youtu.be/dEJ0FTm-CEk?si=LAPsPziQZQNGBvph)**~~ ~~not worth doing~~
 
 ##### Build to Doing Safely
-- **Barbell Clean Jerk Press** - 1 time a week - 20lb
+- ***Barbell Clean Jerk Press*** - 1 time a week - 20lb
 - **[Turkish Get-Up](https://youtu.be/jFK8FOiLa_M?si=L8oB-1-BZ8M6Wfsp)** - 10lb to 15lb
 - **[Single-Leg Snatch (RDL, Plate, Hip Lock)](https://youtu.be/L9hk1LiqGsU?si=-dJyrtt3Mq7XezCu)** -25lb
 - [Dumbbell Man Maker](https://youtu.be/rXjJ46zoQrM?si=XtGPVO8zeVQeapj6)(Easier) -10lb to 15lb
@@ -164,7 +164,7 @@ Allowed to practice each excercise *here* max twice a week. Also try doing chest
 #### **Session 2: Pull Focus**
 Chin ups higher priority alternate each quarter or even month. Try Burpee to Pull Up. 
 1. **Narrow-Grip Chin-Up** 
-2. **Narrow-Grip Pull-Up** 
+2. ***Narrow-Grip Pull-Up***
 3. **Zottman Curl Standing(Easiest)/[Seated](https://youtu.be/cnEcZiOeFO0?si=4nSqffNzqQyAvXBj)(hardest- *build more strength for it*)** - go half and half  – 20lb
 4. **Super ROM Lateral Raise Wrist Curl** (try cable)– 5lb
 5. **Rev Crunch** 
