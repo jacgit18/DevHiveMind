@@ -141,7 +141,7 @@ Outside of best parings other parings you do make it a light day instead of a in
 ### Right to Bare Arms Program
 Allowed to practice each excercise *here* max twice a week. Also try doing chest fly before chest press. Also keep chest up when doing chest press.
 #### **Session 1: Push Focus**
-1. **Single Arm Chest Press** - 50lb
+1. **Single Arm Chest Press** - 70lb
 2. **Dumbbell Floor** or **Incline Dumbbell Bench** or [Banded Dumbbell Bench](https://youtu.be/nzPvCtwkETM?si=ayLMQYM4NFk1FKbE)(Helps with form) Press– 17.5lb
 3. **Arnold Press** – 20lb
 4. **[6 Ways for Shoulder Raise](https://www.youtube.com/watch?v=nvEE4u3qfJY) With Wrist Curl**(Consider **[[Wrist Curl]]** Regimen with [variations](https://www.youtube.com/watch?v=nvJ-1suJCTU) and try with cable) – 10lb
