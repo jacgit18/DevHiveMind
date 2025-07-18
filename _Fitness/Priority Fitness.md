@@ -148,8 +148,9 @@ Allowed to practice each excercise *here* max twice a week. Also try doing chest
 5. **Landmine Anti Rotations** - 10lb
 6. **Wide Seated Dip** - 145lb
 7. **Chest Fly** - 100lb
-8. **Landmine Z Press** - 10lb 
-9. **Overhead Barbell/TrapBar Press** - 20lb
+8. **[Seated Pec Minor Fly](https://youtu.be/sC91H2XLtJc?si=bSV_IhpBVbdADHz2&t=286)**(Better ROM then chest fly) - lb
+9. **Landmine Z Press** - 10lb 
+10. **Overhead Barbell/TrapBar Press** - 20lb
 
 ##### Build to Doing Safely
 9. **Landmine Russian Twist** - 10lb
