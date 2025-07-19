@@ -124,7 +124,7 @@ Skip hypertrophy for some of these excercise were doing a lot of lifting since i
 - **[Base Rows](https://youtu.be/Qmw9TKnQ9NY?si=gNe_2K45P71UKz5y)** - 20lb to 30lb
 - **[Cable Lateral Walk](https://youtu.be/nw8NjG2YOLY?si=KAo4G6B3_5Av1s_t)** - 20lb to 30lb
 - [Bottom Ups](https://www.youtube.com/watch?v=TJjRZBpY75I) - 20lb
-- ***Suitcase Carry/March*** - 20lb(Start with then transition to farmer)
+- ***Suitcase Carry/[March](https://www.youtube.com/watch?v=a9HkuLYNyJ0)*** - 20lb(Start with then transition to farmer)
 - Farmer Carry/March - 20lb
 - **Kettlebell Swing** - 20lb
 - ***Sled*** - twice a week push and pull - 50lb
