@@ -119,7 +119,8 @@ The general principles of **training phases** like strength and hypertrophy appl
 
 Outside of best parings other parings you do make it a light day instead of a intense day because best paring for injury mitigation. also orange is very high priority out of all excercise here.
 
-### Full Body Program
+### Full Body Program 
+Skip hypertrophy for some of these excercise were doing a lot of lifting since it can be dangerous but should be safe for something like sled pulls and pushes.
 - **[Base Rows](https://youtu.be/Qmw9TKnQ9NY?si=gNe_2K45P71UKz5y)** - 20lb to 30lb
 - **[Cable Lateral Walk](https://youtu.be/nw8NjG2YOLY?si=KAo4G6B3_5Av1s_t)** - 20lb to 30lb
 - [Bottom Ups](https://www.youtube.com/watch?v=TJjRZBpY75I) - 20lb
@@ -133,7 +134,7 @@ Outside of best parings other parings you do make it a light day instead of a in
 - ~~**Standing [Good Mornings](https://youtu.be/dEJ0FTm-CEk?si=LAPsPziQZQNGBvph)**~~ ~~not worth doing~~
 
 ##### Build to Doing Safely
-- ***Barbell Clean Jerk Press*** - 1 time a week - 20lb
+- [***Barbell Clean Jerk Press*** ](https://www.youtube.com/watch?v=8IYt7AtP8BI) - 1 time a week - 20lb
 - **[Turkish Get-Up](https://youtu.be/jFK8FOiLa_M?si=L8oB-1-BZ8M6Wfsp)** - 10lb to 15lb
 - **[Single-Leg Snatch (RDL, Plate, Hip Lock)](https://youtu.be/L9hk1LiqGsU?si=-dJyrtt3Mq7XezCu)** -25lb
 - [Dumbbell Man Maker](https://youtu.be/rXjJ46zoQrM?si=XtGPVO8zeVQeapj6)(Easier) -10lb to 15lb
