@@ -151,7 +151,7 @@ Allowed to practice each excercise *here* max twice a week. Also try doing chest
 7. **Wide Seated Dip** - 145lb
 8. **[Seated Pec Minor Fly](https://youtu.be/sC91H2XLtJc?si=bSV_IhpBVbdADHz2&t=286)**(Better ROM then chest fly) - lb
 9. **Chest Fly** - 100lb
-10. **Landmine Z Press** - 10lb 
+10. **[Landmine Z Press](https://youtu.be/app94pzXOuU?si=kOpaa_oC9HkpkRNv)** - 10lb 
 11. **Overhead Barbell/TrapBar Press** - 20lb
 
 ##### Build to Doing Safely

@@ -54,6 +54,9 @@ Start with a dynamic stretch to Improve blood flow and flexibility. End with a s
 ---
 > **Start off Back like a baby and progress to standing then running**
 
+Dynamic Isometric Calisthenics
+
+
 #### 0. Priority Static Stretches
 
 **Priority Dynamic Stretches**
@@ -127,7 +130,7 @@ _~2–3 minutes total – pick 4–5_
 - [[Lower#^01867f |Quadruped Kickbacks]] – **8–10 reps/side**
 - Plank Shoulder Taps – **8–12 taps**
 - Push-Up Hold (top and bottom) – **10s each**
-- [[Upper#^5ff8c1 |Scapular Push-Ups ]] – **10–12 reps with deep breathing**
+- [Scapular Push-Ups ](https://www.youtube.com/watch?v=FTpVhBkyIzk&list=TLPQMTUxMjIwMjT8Ie0IftYKYw&index=3) – **10–12 reps with deep breathing**
 	- Breathe deeply as you push your chest outward, squeezing your shoulder blades together. Then, reverse the motion by pulling your chest inward and separating your shoulder blades, keeping your elbows straight throughout the movement.
 - [Scapular Push up on Elbows](https://www.youtube.com/watch?v=DKkgzXfcXMQ)
 - [Mike Tyson Pushup](https://www.youtube.com/watch?v=j-oSVFU2eMc)

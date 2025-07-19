@@ -9,6 +9,7 @@ Here’s the **prioritized ranking (1-5)** of the best landmine exercises for **
 - **Why?** Rotational power is critical for **Muay Thai (round kicks, hooks), BJJ (hip escapes, sweeps), and swimming (freestyle rotation).**  
 - ![Landmine Rotational Press - YouTube](https://www.youtube.com/watch?v=ONDeomDVlbE)
    ^c3eccd
+   
 **2. Landmine Anti-Rotation Press**   ^ae56eb
 - **Why?** Core stability is vital for **BJJ (defensive framing), Muay Thai (balance in kicks), and swimming (streamlined body position).**  
 - ![How To Do Landmine Anti Rotations - YouTube](https://www.youtube.com/watch?v=8aXStDm3cOs)
@@ -56,7 +57,7 @@ Here’s the **prioritized ranking (1-5)** of the best landmine exercises for **
 ![Landmine Russian Twist - YouTube](https://youtu.be/Zb-l68-4KFM?si=I8zR3VtIppuQNJk_) ^f73ff4
 
 
-![Landmine Z Press - YouTube](https://youtu.be/app94pzXOuU?si=kOpaa_oC9HkpkRNv) ^aa7892
+**[Landmine Z Press](https://youtu.be/app94pzXOuU?si=kOpaa_oC9HkpkRNv)** ^aa7892
 
 ---  
   

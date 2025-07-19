@@ -13,9 +13,6 @@ Peer Reviewed: 0
 dg-publish:
 ---
 ### Dynamic Isometric Calisthenics (No Weights)
-Get to your reps to 15 sec each try to extend for 45 sec MAX
-- Scapular Push-Ups ^5ff8c1
-	-  ![](https://www.youtube.com/watch?v=FTpVhBkyIzk&list=TLPQMTUxMjIwMjT8Ie0IftYKYw&index=3)
 
 
 
