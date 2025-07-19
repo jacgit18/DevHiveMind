@@ -51,7 +51,7 @@ dg-publish:
 #todo/Workout/Try
 - [ ] Try dumbbell lunge with back leg on balance board or plate or platform. 
 - [ ] Try all the way down push-ups with a hand release at the bottom and then push back up. 
-- [ ] try rdl kettle 
+- [ ] try RDL Kettlebell 
 - [ ] try Burpee pull up
 - [ ] try [Seated Y Cable Raises](https://youtu.be/-yL_BS28hcY?si=oO9QrIO_sv2SF5K1)(Do upstairs)
 - [ ] try [FreeMotion Front Shoulder Raise](https://youtu.be/_bzJ1Yb4XCU?si=v0UUNLSilV6NVM76)
@@ -144,13 +144,14 @@ Allowed to practice each excercise *here* max twice a week. Also try doing chest
 1. **Single Arm Chest Press** - 70lb
 2. **Dumbbell Floor** or **Incline Dumbbell Bench** or [Banded Dumbbell Bench](https://youtu.be/nzPvCtwkETM?si=ayLMQYM4NFk1FKbE)(Helps with form) Press– 17.5lb
 3. **Arnold Press** – 20lb
-4. **[6 Ways for Shoulder Raise](https://www.youtube.com/watch?v=nvEE4u3qfJY) With Wrist Curl**(Consider **[[Wrist Curl]]** Regimen with [variations](https://www.youtube.com/watch?v=nvJ-1suJCTU) and try with cable) – 10lb
-5. **Landmine Anti Rotations** - 10lb
-6. **Wide Seated Dip** - 145lb
-7. **Chest Fly** - 100lb
+4. **[6 Ways for Shoulder Raise](https://www.youtube.com/watch?v=nvEE4u3qfJY) With Wrist Curl**  – 10lb
+5. **Cable Wrist Curl**(Consider **[[Wrist Curl]]** Regimen with [variations](https://www.youtube.com/watch?v=nvJ-1suJCTU)) – 10lb
+6. **Landmine Anti Rotations** - 10lb
+7. **Wide Seated Dip** - 145lb
 8. **[Seated Pec Minor Fly](https://youtu.be/sC91H2XLtJc?si=bSV_IhpBVbdADHz2&t=286)**(Better ROM then chest fly) - lb
-9. **Landmine Z Press** - 10lb 
-10. **Overhead Barbell/TrapBar Press** - 20lb
+9. **Chest Fly** - 100lb
+10. **Landmine Z Press** - 10lb 
+11. **Overhead Barbell/TrapBar Press** - 20lb
 
 ##### Build to Doing Safely
 9. **Landmine Russian Twist** - 10lb
