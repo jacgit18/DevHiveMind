@@ -25,6 +25,7 @@ Dig through the ground and reach for the sky and break them down to ground
 #### Road to Fourth Strip
 #todo/BAU/MMA/Drill 
 - [ ] Prioritize protecting neck over framing
+- [ ] Bridge with single far leg went inside control to create space and get under
 - [ ] Work on [[Framing]] & Closed Guard
 - [ ] Focus on Guards against Bigger People
 	- [ ] [[BJJ Priority Flows#Priority Open Guard Variations|Open Guard Variations]]

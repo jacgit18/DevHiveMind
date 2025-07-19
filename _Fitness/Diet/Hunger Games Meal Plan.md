@@ -323,6 +323,7 @@ Exclude cost of previous item purchase in previous week and buy things like kief
 - Cauliflower 
 - Broccoli
 - Beets
+- Ground beef eggs
 - **Provolone Cheese**: $4.89 (12 servings 70 cal)
 #### Infrequent Purchase
 - Black Pepper

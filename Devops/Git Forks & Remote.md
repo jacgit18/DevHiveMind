@@ -25,6 +25,7 @@ You and a teammate are both working on different forks of the same upstream repo
 3. Fetch their branch/changes.
 4. Merge them into your fork.
 5. Push the merged updates to your own fork on GitHub.
+6. Also in this scenario your following the leader in this case my teammate who is rebasing  from main which i usually have to do but once they get there branched merged then i will need to rebase from main.
 
 ---
 
@@ -120,12 +121,3 @@ git push origin YOUR-BRANCH-NAME
     
 - Avoid directly committing to `main` unless necessary — use **feature branches**.
     
-
----
-
-Let me know if you’d like a visual diagram for this workflow!
-
-```
-
-Let me know if you'd like this saved as a downloadable `.md` file or converted into a Notion or Confluence-friendly format!
-```
