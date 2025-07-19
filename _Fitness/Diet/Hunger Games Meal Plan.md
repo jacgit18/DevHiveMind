@@ -94,6 +94,9 @@ dg-publish:
 - [ ] Maybe do [Chia pudding](https://youtu.be/jRu2aFdRL54?si=QwMBArCKrPHB3PPp) instead of throwing in shake get a healthy milk maybe from whole foods and include yogurt etc...
 - [ ] Add extra healthy stuff in sandwich to increase calories 
 
+#todo/BAU/Supplements
+- [ ] Try doing 10g to 15g of creatine  for the high end try when networking or doing something important for work.
+
 #### Week One($60.35)  - total daily calories/protein:  2,221 to 2,301/80G 
 dinner not included yet in total for week
 
