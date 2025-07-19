@@ -54,7 +54,7 @@ Here’s the **prioritized ranking (1-5)** of the best landmine exercises for **
 
    ^b4696f
 
-![Landmine Russian Twist - YouTube](https://youtu.be/Zb-l68-4KFM?si=I8zR3VtIppuQNJk_) ^f73ff4
+**[Landmine Russian Twist](https://youtu.be/Zb-l68-4KFM?si=I8zR3VtIppuQNJk_)**^f73ff4
 
 
 **[Landmine Z Press](https://youtu.be/app94pzXOuU?si=kOpaa_oC9HkpkRNv)** ^aa7892

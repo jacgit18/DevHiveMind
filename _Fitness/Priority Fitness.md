@@ -155,7 +155,7 @@ Allowed to practice each excercise *here* max twice a week. Also try doing chest
 11. **Overhead Barbell/TrapBar Press** - 20lb
 
 ##### Build to Doing Safely
-9. **Landmine Russian Twist** - 10lb
+9. **[Landmine Russian Twist](https://youtu.be/Zb-l68-4KFM?si=I8zR3VtIppuQNJk_)** - 10lb
 10. **Landmine Rotational Press** - 10lb
 
 ##### Best Pairing
