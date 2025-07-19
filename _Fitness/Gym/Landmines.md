@@ -7,7 +7,7 @@ Here’s the **prioritized ranking (1-5)** of the best landmine exercises for **
 ### **Tier 1 (Essential – Highest Carryover)**  
 **1. Landmine Rotational Press**  
 - **Why?** Rotational power is critical for **Muay Thai (round kicks, hooks), BJJ (hip escapes, sweeps), and swimming (freestyle rotation).**  
-- ![Landmine Rotational Press - YouTube](https://www.youtube.com/watch?v=ONDeomDVlbE)
+- [Landmine Rotational Press](https://www.youtube.com/watch?v=ONDeomDVlbE)
    ^c3eccd
    
 **2. Landmine Anti-Rotation Press**   ^ae56eb

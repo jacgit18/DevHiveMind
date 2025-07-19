@@ -147,7 +147,7 @@ Allowed to practice each excercise *here* max twice a week. Also try doing chest
 3. **Arnold Press** – 20lb
 4. **[6 Ways for Shoulder Raise](https://www.youtube.com/watch?v=nvEE4u3qfJY) With Wrist Curl**  – 10lb
 5. **Cable Wrist Curl**(Consider **[[Wrist Curl]]** Regimen with [variations](https://www.youtube.com/watch?v=nvJ-1suJCTU)) – 10lb
-6. **[Landmine Anti Rotations](https://www.youtube.com/watch?v=8aXStDm3cOs)** - 10lb
+6. ***[Landmine Anti Rotations](https://www.youtube.com/watch?v=8aXStDm3cOs) - 10lb***
 7. **Wide Seated Dip** - 145lb
 8. **[Seated Pec Minor Fly](https://youtu.be/sC91H2XLtJc?si=bSV_IhpBVbdADHz2&t=286)**(Better ROM then chest fly) - lb
 9. **Chest Fly** - 100lb
@@ -156,7 +156,7 @@ Allowed to practice each excercise *here* max twice a week. Also try doing chest
 
 ##### Build to Doing Safely
 9. **[Landmine Russian Twist](https://youtu.be/Zb-l68-4KFM?si=I8zR3VtIppuQNJk_)** - 10lb
-10. **Landmine Rotational Press** - 10lb
+10. **[Landmine Rotational Press](https://www.youtube.com/watch?v=ONDeomDVlbE)** - 10lb
 
 ##### Best Pairing
 - **Landmine Z Press** + **Single-Arm Chest Press** + **Landmine Anti-Rotations** 
