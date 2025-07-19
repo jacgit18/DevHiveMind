@@ -49,7 +49,7 @@ Here’s the **prioritized ranking (1-5)** of the best landmine exercises for **
 ### **Tier 4 (Situational – Good but Limited Impact)**  
 **8. Landmine Hip Throw**  
 - **Why?** Useful for **BJJ (takedown mechanics) but less transfer to swimming/Muay Thai.**  
-- ![Landmine Hip Toss - YouTube](https://www.youtube.com/watch?v=qQM18ZSGxMQ)
+- [Landmine Hip Toss](https://www.youtube.com/watch?v=qQM18ZSGxMQ)
   
 
    ^b4696f
