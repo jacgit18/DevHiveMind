@@ -147,7 +147,7 @@ Allowed to practice each excercise *here* max twice a week. Also try doing chest
 3. **Arnold Press** – 20lb
 4. **[6 Ways for Shoulder Raise](https://www.youtube.com/watch?v=nvEE4u3qfJY) With Wrist Curl**  – 10lb
 5. **Cable Wrist Curl**(Consider **[[Wrist Curl]]** Regimen with [variations](https://www.youtube.com/watch?v=nvJ-1suJCTU)) – 10lb
-6. **Landmine Anti Rotations** - 10lb
+6. **[Landmine Anti Rotations](https://www.youtube.com/watch?v=8aXStDm3cOs)** - 10lb
 7. **Wide Seated Dip** - 145lb
 8. **[Seated Pec Minor Fly](https://youtu.be/sC91H2XLtJc?si=bSV_IhpBVbdADHz2&t=286)**(Better ROM then chest fly) - lb
 9. **Chest Fly** - 100lb
@@ -180,7 +180,7 @@ Chin ups higher priority alternate each quarter or even month. Try Burpee to Pul
 12. **[Low Cable Goblet Squat](https://youtu.be/f6eI0JI9AYA?si=TTKH4FrAivJYEyd0)**  - 30lb to 40lb
 
 ##### Build to Doing Safely
-13. **Band/Barbell/[Cable](https://youtu.be/2M1Mikqf5lY?si=1Me7DqZvB5XL1Orm)/Dumbbell/Landmine Single Leg RDL** - 10lb to 30lb
+13. **Band/Barbell/[Cable](https://youtu.be/2M1Mikqf5lY?si=1Me7DqZvB5XL1Orm)/Dumbbell/[Landmine Single-Leg RDL](https://www.youtube.com/watch?v=wZJERqVNY98)** - 10lb to 30lb
 14. **Side Lateral QL Extension** - 15lb - same thing after building up from single leg back extension and doing this consistently then do [rotating variation](https://youtu.be/KJwARxV9a6g?si=4C--YLWJnUcFaMmx) once doing consistent 4 sets 8 reps.
 	- Besides doing on back extension machine can do [Lateral Flexion on Stability Ball](https://youtu.be/FrohQ--m7fs?si=Z4akKJnru0ut8S8X)
 15. **Single-Arm Behind-Back Cable Lateral Raise**(Low Angle) – 10lb

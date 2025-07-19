@@ -12,11 +12,11 @@ Here’s the **prioritized ranking (1-5)** of the best landmine exercises for **
    
 **2. Landmine Anti-Rotation Press**   ^ae56eb
 - **Why?** Core stability is vital for **BJJ (defensive framing), Muay Thai (balance in kicks), and swimming (streamlined body position).**  
-- ![How To Do Landmine Anti Rotations - YouTube](https://www.youtube.com/watch?v=8aXStDm3cOs)
+- [Landmine Anti Rotations](https://www.youtube.com/watch?v=8aXStDm3cOs)
    ^227c32
 **3. Landmine RDL (Single or Double-Arm)**   ^759af1
 - **Why?** Strengthens the posterior chain for **BJJ (takedowns, guard retention), Muay Thai (power in kicks), and swimming (dolphin kicks, starts/turns).**  
-- ![The Landmine Single-Leg RDL - YouTube](https://www.youtube.com/watch?v=wZJERqVNY98)
+- [Landmine Single-Leg RDL](https://www.youtube.com/watch?v=wZJERqVNY98)
    ^c3c1f0
 ---  
   
@@ -49,7 +49,7 @@ Here’s the **prioritized ranking (1-5)** of the best landmine exercises for **
 ### **Tier 4 (Situational – Good but Limited Impact)**  
 **8. Landmine Hip Throw**  
 - **Why?** Useful for **BJJ (takedown mechanics) but less transfer to swimming/Muay Thai.**  
-- [Landmine Hip Toss](https://www.youtube.com/watch?v=qQM18ZSGxMQ)
+- ![Landmine Hip Toss](https://www.youtube.com/watch?v=qQM18ZSGxMQ)
   
 
    ^b4696f
