@@ -117,13 +117,13 @@ Reverse Preacher Curl(3:14)
 
 ![How To: Reverse Seated Wrist Curl - YouTube](https://youtu.be/FW7URAaC-vE?si=rrbZUiV0loPicJB1)
 
-![The Push Press - YouTube](https://www.youtube.com/watch?v=iaBVSJm78ko) ^98dc6c
+[The Push Press - YouTube](https://www.youtube.com/watch?v=iaBVSJm78ko) ^98dc6c
 
 
 ### Calisthenics (No Weights)
 - Plyometric Plank with Shoulder Tap
 - Dead Hang ^b1e482
-	- ![Dead Hang](https://www.youtube.com/watch?v=Jzl77Ibdypw)
+	- [Dead Hang](https://www.youtube.com/watch?v=Jzl77Ibdypw)
 	- [Dead Hang](https://www.youtube.com/watch?v=ShkBXOGK7A8)
 - **Pull-Up Bar Variations
 	- Wide Grip  ^bf9596
