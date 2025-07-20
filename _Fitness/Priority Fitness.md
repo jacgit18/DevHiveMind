@@ -144,14 +144,15 @@ Allowed to practice each excercise *here* max twice a week. Also try doing chest
 #### **Session 1: Push Focus**
 1. **Single Arm Chest Press** - 70lb
 2. **Dumbbell Floor** or **Incline Dumbbell Bench** or [Banded Dumbbell Bench](https://youtu.be/nzPvCtwkETM?si=ayLMQYM4NFk1FKbE)(Helps with form) Press– 17.5lb
-3. **Arnold Press** – 20lb
-4. **[6 Ways for Shoulder Raise](https://www.youtube.com/watch?v=nvEE4u3qfJY) With Wrist Curl**  – 10lb
-5. **Cable Wrist Curl**(Consider **[[Wrist Curl]]** Regimen with [variations](https://www.youtube.com/watch?v=nvJ-1suJCTU)) – 10lb
-6. ***[Landmine Anti Rotations](https://www.youtube.com/watch?v=8aXStDm3cOs) - 10lb***
-7. **Wide Seated Tricep Dip/ [Bodyweight Tricep Dip](https://www.youtube.com/watch?v=p5Lx2BeVKR4&t=186s)** - 145lb
-8. **[Seated Pec Minor Fly](https://youtu.be/sC91H2XLtJc?si=bSV_IhpBVbdADHz2&t=286)**(Better ROM then chest fly) - lb
-9. **Chest Fly** - 100lb
-10. **[Landmine Shoulder Z Press](https://youtu.be/app94pzXOuU?si=kOpaa_oC9HkpkRNv)** - 10lb 
+3. **Barbell Bench Press** - 30lb
+4. **Arnold Press** – 20lb
+5. **[6 Ways for Shoulder Raise](https://www.youtube.com/watch?v=nvEE4u3qfJY) With Wrist Curl**  – 10lb
+6. **Cable Wrist Curl**(Consider **[[Wrist Curl]]** Regimen with [variations](https://www.youtube.com/watch?v=nvJ-1suJCTU)) – 10lb
+7. ***[Landmine Anti Rotations](https://www.youtube.com/watch?v=8aXStDm3cOs) - 10lb***
+8. **Wide Seated Tricep Dip/ [Bodyweight Tricep Dip](https://www.youtube.com/watch?v=p5Lx2BeVKR4&t=186s)** - 145lb
+9. **[Seated Pec Minor Fly](https://youtu.be/sC91H2XLtJc?si=bSV_IhpBVbdADHz2&t=286)**(Better ROM then chest fly) - lb
+10. **Chest Fly** - 100lb
+11. **[Landmine Shoulder Z Press](https://youtu.be/app94pzXOuU?si=kOpaa_oC9HkpkRNv)** - 10lb 
 
 ##### Build to Doing Safely
 11. **[Landmine Russian Twist](https://youtu.be/Zb-l68-4KFM?si=I8zR3VtIppuQNJk_)** - 10lb

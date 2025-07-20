@@ -136,7 +136,7 @@ Reverse Preacher Curl(3:14)
 ![CONCENTRATION CURL - YouTube](https://youtu.be/VMbDQ8PZazY?si=P0KE-GIfGr7KOoto) ^40500c
 
 
-![STOP Doing Dumbbell Press Like This (5 Mistakes Slowing Your Chest Gains) - YouTube](https://youtu.be/QsYre__-aro?si=Rnp1pgNN4f3aO-fX) ^db98b7
+[STOP Doing Dumbbell Press Like This (5 Mistakes Slowing Your Chest Gains) - YouTube](https://youtu.be/QsYre__-aro?si=Rnp1pgNN4f3aO-fX) ^db98b7
 
 
 
