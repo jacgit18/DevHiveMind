@@ -37,6 +37,7 @@ dg-publish:
 ## Workout Tips
 #todo/BAU/Workout  
 - [ ] Rotate your **thumb internally** to end of range for **barbell bench press**.
+- [ ] Alternate each month doing one month pull up and next month chin up continuing each month after so chin up on then pull up on
 - [ ] Rotate your **pinky externally** to where you are at the end of the range where your hands are facing **palm up** when it comes to **curls**.
 - [ ] **Prone Leg curl** before any **squatting** excercise.
 - [ ] Hover in more of a standing position for **Abduction Leg Squeezing** machine 70 to 80 lb.
@@ -164,10 +165,10 @@ Allowed to practice each excercise *here* max twice a week. Also try doing chest
 - **Incline Dumbbell Bench/Floor Press** + **Landmine Rotational Press** + **Overhead Barbell/TrapBar Press** 
 - **Incline Dumbbell Bench/Floor Press** + **Overhead Barbell/TrapBar Press** + **6-Way Shoulder Raise Wrist Curl** 
 - **Wide Seated Dip** + **Chest Fly**
+
 #### **Session 2: Pull Focus**
-Chin ups higher priority alternate each quarter or even month. Try Burpee to Pull Up. 
-1. **Narrow-Grip Chin-Up** 
-2. ***Narrow-Grip Pull-Up***
+1. ***Narrow-Grip Chin-Up*** 
+2. **Narrow-Grip Pull-Up**
 3. **Zottman Curl Standing(Easiest)/[Seated](https://youtu.be/cnEcZiOeFO0?si=4nSqffNzqQyAvXBj)(hardest- *build more strength for it*)** - go half and half  – 20lb
 4. **Super ROM Lateral Raise Wrist Curl** (try cable)– 5lb
 5. **Rev Crunch** 
