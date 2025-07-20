@@ -173,7 +173,7 @@ Chin ups higher priority alternate each quarter or even month. Try Burpee to Pul
 5. **Rev Crunch** 
 6. **Kneeling Cable Crunch**(Top Angle) - 33lb 
 7. **Pallof Press**(Wrist Height) - 30lb
-8. **Rear Delt Fly** - 70lb
+8. **Rear Delt Fly/[DB Chest Supported Rear Delt Fly](https://youtu.be/iCbVhDNpG-Y?si=g-puZtoYX7u57LwT)** - 70lb/20lb
 9. **Lateral Head Single-Arm Tricep Extension**(Top Angle) – 20lb
 10. **Cable Pancake Stretch**(Low Angle) - 49.5
 11. **Back Extension** - 15lb - do consistently for a 2 weeks and try ft to single leg variation 
