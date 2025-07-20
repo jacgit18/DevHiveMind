@@ -131,7 +131,7 @@ Reverse Preacher Curl(3:14)
 
 	
 - Tricep Dip ^a56816
-	- ![2 Forgotten Exercises That Blew Up My Chest & Unlocked My Posture - YouTube](https://www.youtube.com/watch?v=p5Lx2BeVKR4&t=186s)
+	- [Bodyweight Tricep Dip](https://www.youtube.com/watch?v=p5Lx2BeVKR4&t=186s)
 
 ![CONCENTRATION CURL - YouTube](https://youtu.be/VMbDQ8PZazY?si=P0KE-GIfGr7KOoto) ^40500c
 
