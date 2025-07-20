@@ -146,9 +146,10 @@ Allowed to practice each excercise *here* max twice a week. Also try doing chest
 #### **Session 1: Push Focus**
 1. **Single Arm Chest Press** - 70lb
 2. **Dumbbell Floor** or **Incline Dumbbell Bench** or [Banded Dumbbell Bench](https://youtu.be/nzPvCtwkETM?si=ayLMQYM4NFk1FKbE)([Helps with form](https://youtu.be/QsYre__-aro?si=7PEG01LFDkV1D8ks&t=70)) Press– 17.5lb
-3. **Barbell Bench Press**([Use proper form](https://youtu.be/4Y2ZdHCOXok?si=uSEuLn5DQpCemOoT&t=424)) - 30lb
+3. **Barbell Bench Press**([Use proper form](https://youtu.be/4Y2ZdHCOXok?si=uSEuLn5DQpCemOoT&t=424) also warm up with empty bar shifting to max weight) - 30lb
 	1. Use explosive Phase variation to improve at bottom of movement as well 
-	2. 
+	2. Use close grip bench press for top of movement.
+	3. For the middle overhead press in the clean jerk press will help with this.
 4. **Arnold Press** – 20lb
 5. **[6 Ways for Shoulder Raise](https://www.youtube.com/watch?v=nvEE4u3qfJY) With Wrist Curl**  – 10lb
 6. **Cable Wrist Curl**(Consider **[[Wrist Curl]]** Regimen with [variations](https://www.youtube.com/watch?v=nvJ-1suJCTU)) – 10lb
@@ -185,11 +186,14 @@ Allowed to practice each excercise *here* max twice a week. Also try doing chest
 13. **[Low Cable Goblet Squat](https://youtu.be/f6eI0JI9AYA?si=TTKH4FrAivJYEyd0)**  - 30lb to 40lb
 
 ##### Build to Doing Safely
-13. ***Band/Barbell/[Cable](https://youtu.be/2M1Mikqf5lY?si=1Me7DqZvB5XL1Orm)/Dumbbell/[Landmine Single-Leg RDL](https://www.youtube.com/watch?v=wZJERqVNY98) - 10lb to 30lb***
-14. **Side Lateral QL Extension** - 15lb - same thing after building up from single leg back extension and doing this consistently then do [rotating variation](https://youtu.be/KJwARxV9a6g?si=4C--YLWJnUcFaMmx) once doing consistent 4 sets 8 reps.
+14. Bench press accessory excercise to strengthening rotater cuff
+	1. **Butler Tricep Cable Extension** - lb
+	2. **Flat Bench Press** - 5lb
+15. ***Band/Barbell/[Cable](https://youtu.be/2M1Mikqf5lY?si=1Me7DqZvB5XL1Orm)/Dumbbell/[Landmine Single-Leg RDL](https://www.youtube.com/watch?v=wZJERqVNY98) - 10lb to 30lb***
+16. **Side Lateral QL Extension** - 15lb - same thing after building up from single leg back extension and doing this consistently then do [rotating variation](https://youtu.be/KJwARxV9a6g?si=4C--YLWJnUcFaMmx) once doing consistent 4 sets 8 reps.
 	- Besides doing on back extension machine can do [Lateral Flexion on Stability Ball](https://youtu.be/FrohQ--m7fs?si=Z4akKJnru0ut8S8X)
-15. **Single-Arm Behind-Back Cable Lateral Raise**(Low Angle) – 10lb
-16. **Jefferson Curl Barbell/Kettlebell** - 20lb
+17. **Single-Arm Behind-Back Cable Lateral Raise**(Low Angle) – 10lb
+18. **Jefferson Curl Barbell/Kettlebell** - 20lb
 
 
 ##### Best Pairing
