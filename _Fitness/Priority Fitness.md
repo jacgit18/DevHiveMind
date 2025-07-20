@@ -144,7 +144,7 @@ Allowed to practice each excercise *here* max twice a week. Also try doing chest
 #### **Session 1: Push Focus**
 1. **Single Arm Chest Press** - 70lb
 2. **Dumbbell Floor** or **Incline Dumbbell Bench** or [Banded Dumbbell Bench](https://youtu.be/nzPvCtwkETM?si=ayLMQYM4NFk1FKbE)([Helps with form](https://youtu.be/QsYre__-aro?si=7PEG01LFDkV1D8ks&t=70)) Press– 17.5lb
-3. **Barbell Bench Press** - 30lb
+3. **Barbell Bench Press**([Use proper form](https://youtu.be/4Y2ZdHCOXok?si=uSEuLn5DQpCemOoT&t=424)) - 30lb
 4. **Arnold Press** – 20lb
 5. **[6 Ways for Shoulder Raise](https://www.youtube.com/watch?v=nvEE4u3qfJY) With Wrist Curl**  – 10lb
 6. **Cable Wrist Curl**(Consider **[[Wrist Curl]]** Regimen with [variations](https://www.youtube.com/watch?v=nvJ-1suJCTU)) – 10lb
