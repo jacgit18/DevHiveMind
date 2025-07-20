@@ -37,7 +37,7 @@ dg-publish:
 ## Workout Tips
 #todo/BAU/Workout  
 - [ ] Rotate your **thumb internally** to end of range for **barbell bench press**.
-- [ ] Alternate each month doing one month pull up and next month chin up continuing each month after so chin up on then pull up on
+- [ ] Interleave pull-ups and chin-ups monthly.
 - [ ] Rotate your **pinky externally** to where you are at the end of the range where your hands are facing **palm up** when it comes to **curls**.
 - [ ] **Prone Leg curl** before any **squatting** excercise.
 - [ ] Hover in more of a standing position for **Abduction Leg Squeezing** machine 70 to 80 lb.
@@ -121,7 +121,8 @@ The general principles of **training phases** like strength and hypertrophy appl
 Outside of best parings other parings you do make it a light day instead of a intense day because best paring for injury mitigation. also orange is very high priority out of all excercise here.
 
 ### Full Body Program 
-Skip hypertrophy for some of these excercise were doing a lot of lifting since it can be dangerous but should be safe for something like sled pulls and pushes.
+Skip hypertrophy for some of these excercise were doing a lot of lifting since it can be dangerous but should be safe for something like sled pulls and pushes. Also for excercise session frequency reduce frequency to one time a week as you go up in max weight for strength phase.
+
 - **[Base Rows](https://youtu.be/Qmw9TKnQ9NY?si=gNe_2K45P71UKz5y)** - 20lb to 30lb
 - **[Cable Lateral Walk](https://youtu.be/nw8NjG2YOLY?si=KAo4G6B3_5Av1s_t)** - 20lb to 30lb
 - [Bottom Ups](https://www.youtube.com/watch?v=TJjRZBpY75I) - 20lb
@@ -146,6 +147,8 @@ Allowed to practice each excercise *here* max twice a week. Also try doing chest
 1. **Single Arm Chest Press** - 70lb
 2. **Dumbbell Floor** or **Incline Dumbbell Bench** or [Banded Dumbbell Bench](https://youtu.be/nzPvCtwkETM?si=ayLMQYM4NFk1FKbE)([Helps with form](https://youtu.be/QsYre__-aro?si=7PEG01LFDkV1D8ks&t=70)) Press– 17.5lb
 3. **Barbell Bench Press**([Use proper form](https://youtu.be/4Y2ZdHCOXok?si=uSEuLn5DQpCemOoT&t=424)) - 30lb
+	1. Use explosive Phase variation to improve at bottom of movement as well 
+	2. 
 4. **Arnold Press** – 20lb
 5. **[6 Ways for Shoulder Raise](https://www.youtube.com/watch?v=nvEE4u3qfJY) With Wrist Curl**  – 10lb
 6. **Cable Wrist Curl**(Consider **[[Wrist Curl]]** Regimen with [variations](https://www.youtube.com/watch?v=nvJ-1suJCTU)) – 10lb
