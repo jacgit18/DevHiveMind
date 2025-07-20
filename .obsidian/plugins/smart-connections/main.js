@@ -401,6 +401,10 @@ function deep_merge_no_overwrite(target, source2, path = []) {
           if (!has_same_fn) {
             target[key].push(item);
           }
+        } else if (item === null || ["string", "number", "boolean", "undefined"].includes(typeof item)) {
+          if (!target[key].includes(item)) {
+            target[key].push(item);
+          }
         } else {
           target[key].push(item);
         }
@@ -457,7 +461,19 @@ function merge_env_config(target, incoming) {
       continue;
     }
     if (Array.isArray(value)) {
-      target[key] = [...target[key] || [], ...value];
+      if (Array.isArray(target[key])) {
+        if (value.length > 0 && (typeof value[0] === "string" || typeof value[0] === "number" || typeof value[0] === "boolean")) {
+          target[key] = Array.from(/* @__PURE__ */ new Set([...target[key], ...value]));
+        } else {
+          target[key] = [...target[key], ...value];
+        }
+      } else {
+        if (value.length > 0 && (typeof value[0] === "string" || typeof value[0] === "number" || typeof value[0] === "boolean")) {
+          target[key] = Array.from(new Set(value));
+        } else {
+          target[key] = [...value];
+        }
+      }
     } else if (value && typeof value === "object") {
       if (!target[key]) target[key] = {};
       deep_merge_no_overwrite(target[key], value);
@@ -476,7 +492,7 @@ var SmartEnv = class {
    * If a newer version is loaded into a runtime that already has an older environment,
    * an automatic reload of all existing mains will occur.
    */
-  static version = 2.139242;
+  static version = 2.139245;
   scope_name = "smart_env";
   static global_ref = ROOT_SCOPE;
   global_ref = this.constructor.global_ref;
@@ -1276,7 +1292,6 @@ var SmartFs = class {
     this.add_ignore_pattern("**/.**");
     this.add_ignore_pattern("**/.*/**");
     this.add_ignore_pattern("**/*.ajson");
-    this.add_ignore_pattern("**/*.excalidraw.md");
   }
   /**
    * Add a new ignore pattern
@@ -2748,6 +2763,9 @@ var CollectionItem = class _CollectionItem {
    * @param {string} [filter_opts.exclude_key_starts_with] - Exclude keys starting with this string.
    * @param {string[]} [filter_opts.exclude_key_starts_with_any] - Exclude keys starting with any of these strings.
    * @param {string} [filter_opts.exclude_key_includes] - Exclude keys that include this string.
+   * @param {string[]} [filter_opts.exclude_key_includes_any] - Exclude keys that include any of these strings.
+   * @param {string} [filter_opts.exclude_key_ends_with] - Exclude keys ending with this string.
+   * @param {string[]} [filter_opts.exclude_key_ends_with_any] - Exclude keys ending with any of these strings.
    * @param {string} [filter_opts.key_ends_with] - Include only keys ending with this string.
    * @param {string} [filter_opts.key_starts_with] - Include only keys starting with this string.
    * @param {string[]} [filter_opts.key_starts_with_any] - Include only keys starting with any of these strings.
@@ -2763,6 +2781,7 @@ var CollectionItem = class _CollectionItem {
       exclude_key_includes,
       exclude_key_includes_any,
       exclude_key_ends_with,
+      exclude_key_ends_with_any,
       key_ends_with,
       key_starts_with,
       key_starts_with_any,
@@ -2775,6 +2794,7 @@ var CollectionItem = class _CollectionItem {
     if (exclude_key_includes && this.key.includes(exclude_key_includes)) return false;
     if (exclude_key_includes_any && exclude_key_includes_any.some((include) => this.key.includes(include))) return false;
     if (exclude_key_ends_with && this.key.endsWith(exclude_key_ends_with)) return false;
+    if (exclude_key_ends_with_any && exclude_key_ends_with_any.some((suffix) => this.key.endsWith(suffix))) return false;
     if (key_ends_with && !this.key.endsWith(key_ends_with)) return false;
     if (key_starts_with && !this.key.startsWith(key_starts_with)) return false;
     if (key_starts_with_any && !key_starts_with_any.some((prefix) => this.key.startsWith(prefix))) return false;
@@ -4008,12 +4028,12 @@ var SmartEntity = class extends CollectionItem {
     return this.collection.embed_model;
   }
   /**
-   * Determines if the entity should be embedded.
+   * Determines if the entity should be embedded if unembedded. NOT the same as is_unembedded.
    * @readonly
    * @returns {boolean} True if no vector is set, false otherwise.
    */
   get should_embed() {
-    return !this.vec && this.size > (this.settings?.min_chars || 300);
+    return this.size > (this.settings?.min_chars || 300);
   }
   /**
    * Sets the error for the embedding model.
@@ -4379,7 +4399,11 @@ var SmartEntities = class extends Collection {
    * @returns {Array<Object>} The embed queue.
    */
   get embed_queue() {
-    if (!this._embed_queue?.length) this._embed_queue = Object.values(this.items).filter((item) => item._queue_embed && item.should_embed);
+    if (!this._embed_queue?.length) {
+      console.time(`Building embed queue`);
+      this._embed_queue = Object.values(this.items).filter((item) => item._queue_embed || item.is_unembedded && item.should_embed);
+      console.timeEnd(`Building embed queue`);
+    }
     return this._embed_queue;
   }
   /**
@@ -4930,7 +4954,7 @@ ${content}`.substring(0, max_chars);
    * @returns {number} The size.
    */
   get size() {
-    return this.file?.stat?.size || 0;
+    return this.source_adapter.size || 0;
   }
   /**
    * Retrieves the last import stat of the SmartSource.
@@ -5014,9 +5038,6 @@ ${content}`.substring(0, max_chars);
   }
   get path() {
     return this.data.path || this.data.key;
-  }
-  get should_embed() {
-    return !this.vec || !this.embed_hash || this.embed_hash !== this.read_hash;
   }
   get source_adapters() {
     return this.collection.source_adapters;
@@ -5151,6 +5172,13 @@ var SmartSources = class extends SmartEntities {
     const ext = this.get_extension_for_path(file_path);
     if (!ext) {
       return;
+    }
+    if (this.fs.is_excluded(file_path)) {
+      console.warn(`File ${file_path} is excluded from processing.`);
+      return;
+    }
+    if (!this.fs.files[file_path]) {
+      this.fs.include_file(file_path);
     }
     if (this.items[file_path]) return this.items[file_path];
     const item = new this.item_type(this.env, { path: file_path });
@@ -6625,6 +6653,9 @@ ${current_content}`;
     ].join("\n").trim();
     await this.update(new_content);
   }
+  get size() {
+    return this.item.file?.stat?.size || 0;
+  }
 };
 
 // node_modules/obsidian-smart-env/node_modules/smart-sources/utils/get_markdown_links.js
@@ -6787,7 +6818,7 @@ var MarkdownSourceContentAdapter = class extends FileSourceContentAdapter {
     };
     this.item.loaded_at = Date.now();
     this.item.queue_save();
-    this.item.queue_embed();
+    if (this.item.should_embed) this.item.queue_embed();
   }
   // // WIP: move block parsing here
   // async read() {
@@ -6868,7 +6899,7 @@ var MarkdownSourceContentAdapter = class extends FileSourceContentAdapter {
   }
 };
 
-// node_modules/obsidian-smart-env/node_modules/smart-sources/adapters/obsidian_markdown.js
+// node_modules/obsidian-smart-env/adapters/smart-sources/obsidian_markdown.js
 var import_obsidian2 = require("obsidian");
 var ObsidianMarkdownSourceContentAdapter = class extends MarkdownSourceContentAdapter {
   /**
@@ -6921,6 +6952,39 @@ var ObsidianMarkdownSourceContentAdapter = class extends MarkdownSourceContentAd
     }
     const newMd = (0, import_obsidian2.htmlToMarkdown)(container);
     return newMd;
+  }
+};
+
+// node_modules/obsidian-smart-env/adapters/smart-sources/excalidraw.js
+var ExcalidrawSourceContentAdapter = class extends ObsidianMarkdownSourceContentAdapter {
+  static extensions = ["excalidraw.md"];
+  is_media = true;
+  // Excalidraw files are treated as media for rendering
+  async read(opts = {}) {
+    const full_content = await super.read(opts);
+    const BEGIN_LINE_MATCHER = "# Text Elements";
+    const END_LINE_MATCHER = "# Drawing";
+    const text_elements_start = full_content.indexOf(BEGIN_LINE_MATCHER);
+    const drawing_lines_start = full_content.indexOf(END_LINE_MATCHER);
+    if (text_elements_start === -1 || drawing_lines_start === -1) {
+      console.warn("Excalidraw file does not contain expected sections. File: " + this.item.key);
+      this.item.data.last_read.size = 0;
+      return "";
+    }
+    const text_content = full_content.slice(text_elements_start + BEGIN_LINE_MATCHER.length, drawing_lines_start).trim();
+    const stripped_refs = text_content.split("\n").map((line) => {
+      if (line.trim() === "%%") return "";
+      if (line.trim() === "#") return "";
+      return line.replace(/\^[a-z0-9]+$/i, "").trim();
+    }).filter(Boolean).join("\n");
+    this.item.data.last_read.size = stripped_refs.length;
+    return stripped_refs;
+  }
+  get size() {
+    if (this.item.data?.last_read?.size) {
+      return this.item.data.last_read.size;
+    }
+    return this.file?.stat?.size || 0;
   }
 };
 
@@ -12835,6 +12899,78 @@ var SmartChatModelGroqRequestAdapter = class extends SmartChatModelRequestAdapte
 var SmartChatModelGroqResponseAdapter = class extends SmartChatModelResponseAdapter {
 };
 
+// node_modules/obsidian-smart-env/node_modules/smart-chat-model/adapters/xai.js
+var SmartChatModelXaiAdapter = class extends SmartChatModelApiAdapter {
+  /** Human-readable platform key used by SmartChatModel */
+  static key = "xai";
+  /** @type {import('./_adapter.js').SmartChatModelAdapter['constructor']['defaults']} */
+  static defaults = {
+    description: "xAI Grok",
+    type: "API",
+    adapter: "xAI_Grok",
+    endpoint: "https://api.x.ai/v1/chat/completions",
+    streaming: true,
+    models_endpoint: "https://api.x.ai/v1/models",
+    default_model: "grok-3-mini-beta",
+    signup_url: "https://ide.x.ai",
+    can_use_tools: true
+  };
+  /** Grok is OpenAI-compatible → reuse the stock adapters */
+  get req_adapter() {
+    return SmartChatModelRequestAdapter;
+  }
+  get res_adapter() {
+    return SmartChatModelResponseAdapter;
+  }
+  /* ------------------------------------------------------------------ *
+   *  Model-list helpers
+   * ------------------------------------------------------------------ */
+  /**
+   * The Grok `/v1/models` route is **GET**, not POST.
+   * Override the HTTP verb so `get_models()` works.
+   * @returns {string} 'GET'
+   */
+  get models_endpoint_method() {
+    return "GET";
+  }
+  /**
+   * Parse `/v1/models` payload to the canonical shape used by SmartChat.
+   *
+   * Grok returns:
+   * ```json
+   * { "object":"list",
+   *   "data":[{ "id":"grok-3-beta", "context_length":128000, …}] }
+   * ```
+   */
+  parse_model_data(model_data = {}) {
+    const list = model_data.data || model_data.models || [];
+    return list.reduce((acc, m) => {
+      const id = m.id || m.name;
+      acc[id] = {
+        id,
+        model_name: id,
+        description: m.description || `context: ${m.context_length || "n/a"}`,
+        max_input_tokens: m.context_length || 128e3,
+        multimodal: !!m.modality && m.modality.includes("vision"),
+        raw: m
+      };
+      return acc;
+    }, {});
+  }
+  /* ------------------------------------------------------------------ *
+   *  Validation helpers
+   * ------------------------------------------------------------------ */
+  validate_config() {
+    if (!this.adapter_config.model_key) {
+      return { valid: false, message: "No model selected." };
+    }
+    if (!this.api_key) {
+      return { valid: false, message: "API key is missing." };
+    }
+    return { valid: true, message: "Configuration is valid." };
+  }
+};
+
 // node_modules/obsidian-smart-env/default.config.js
 var import_obsidian13 = require("obsidian");
 
@@ -13726,7 +13862,7 @@ var ActionCompletionAdapter = class extends SmartCompletionAdapter {
     const action_key = this.data.action_key;
     if (!action_key) return;
     const thread = this.item.thread;
-    if (thread.current_completion !== this.item) return console.log("ActionCompletionAdapter: skipping tools, not the current completion");
+    if (thread && thread.current_completion !== this.item) return console.log("ActionCompletionAdapter: skipping tools, not the current completion");
     const action_opts = this.data.action_opts;
     const action_collection = this.item.env.smart_actions;
     if (!action_collection) {
@@ -13740,13 +13876,13 @@ var ActionCompletionAdapter = class extends SmartCompletionAdapter {
     }
     let tools;
     try {
-      const action_module = action_item.module;
-      tools = action_module.tool ? [action_module.tool] : convert_openapi_to_tools(action_module.openapi);
+      const tool2 = action_item.as_tool;
+      tools = tool2 ? [tool2] : [];
     } catch (err) {
-      console.warn("Error compiling ephemeral action", err);
+      console.warn("Error generating action tool", err);
       return;
     }
-    if (!tools) return;
+    if (!tools.length) return;
     if (!this.data.actions) this.data.actions = {};
     this.data.actions[action_key] = true;
     this.insert_tools(tools, { force: true });
@@ -13815,44 +13951,6 @@ var ActionCompletionAdapter = class extends SmartCompletionAdapter {
     }
   }
 };
-function convert_openapi_to_tools(openapi_spec) {
-  const tools = [];
-  for (const path in openapi_spec.paths) {
-    const methods = openapi_spec.paths[path];
-    for (const method in methods) {
-      const endpoint = methods[method];
-      const parameters = endpoint.parameters || [];
-      const requestBody = endpoint.requestBody;
-      const properties = {};
-      const required = [];
-      parameters.forEach((param) => {
-        properties[param.name] = {
-          type: param.schema.type,
-          description: param.description || ""
-        };
-        if (param.required) required.push(param.name);
-      });
-      if (requestBody) {
-        const schema = requestBody.content["application/json"].schema;
-        Object.assign(properties, schema.properties);
-        if (schema.required) required.push(...schema.required);
-      }
-      tools.push({
-        type: "function",
-        function: {
-          name: endpoint.operationId || `${method}_${path.replace(/\//g, "_").replace(/[{}]/g, "")}`,
-          description: endpoint.summary || endpoint.description || "",
-          parameters: {
-            type: "object",
-            properties,
-            required
-          }
-        }
-      });
-    }
-  }
-  return tools;
-}
 
 // node_modules/obsidian-smart-env/node_modules/smart-completions/adapters/action_xml.js
 function scaffold_xml(root_tag, root_desc, params) {
@@ -13885,12 +13983,12 @@ var ActionXmlCompletionAdapter = class extends ActionCompletionAdapter {
     }
     let tools;
     try {
-      const mod = action_item.module;
-      tools = mod.tool ? [mod.tool] : convert_openapi_to_tools(mod.openapi);
+      const tool2 = action_item.as_tool;
+      tools = tool2 ? [tool2] : [];
     } catch (err) {
       return console.warn("Unable to compile OpenAPI \u2192 tools", err);
     }
-    if (!tools?.length) return;
+    if (!tools.length) return;
     const func_def = tools[0].function;
     const param_props = func_def.parameters?.properties || {};
     const required_params = func_def.parameters?.required || [];
@@ -14658,9 +14756,109 @@ async function post_process8(env, frag, opts = {}) {
   });
 }
 
+// node_modules/obsidian-smart-env/components/source_inspector.css
+var css_sheet2 = new CSSStyleSheet();
+css_sheet2.replaceSync(`.source-inspector {
+  background-color: var(--background-secondary-alt);
+  margin: var(--size-4-3) 0;
+  padding: var(--size-4-3);
+  border-radius: var(--radius-m);
+}
+
+.source-inspector-blocks-container {
+  margin-top: var(--size-4-2);
+  display: flex;
+  flex-direction: column;
+  gap: var(--size-4-3);
+}
+
+.source-inspector-blocks-container blockquote {
+  margin-left: var(--size-4-3);
+  padding-left: var(--size-4-3);
+  border-left: 2px solid var(--text-faint);
+}
+`);
+var source_inspector_default = css_sheet2;
+
+// node_modules/obsidian-smart-env/components/source_inspector.js
+function build_html8(source2, opts = {}) {
+  return `<div>
+    <div class="source-inspector-source-info">
+      <button class="source-inspector-show-data-btn" type="button">Show source data</button>
+      <div class="source-inspector-source-data" style="display:none; margin: 0.5em 0;">
+        <pre style="max-height:300px; overflow:auto; background:#222; color:#fff; padding:0.5em; border-radius:4px;"></pre>
+      </div>
+    </div>
+    <div class="smart-chat-message source-inspector">
+      <h2>Blocks</h2>
+      <div class="source-inspector-blocks-container"></div>
+    </div>
+  </div>`;
+}
+async function render10(source2, opts = {}) {
+  const html = build_html8(source2, opts);
+  const frag = this.create_doc_fragment(html);
+  this.apply_style_sheet(source_inspector_default);
+  await post_process9.call(this, source2, frag, opts);
+  return frag;
+}
+async function post_process9(source2, frag, opts = {}) {
+  const container = frag.querySelector(".source-inspector .source-inspector-blocks-container");
+  if (!container) return frag;
+  const source_info = frag.querySelector(".source-inspector-source-info");
+  const btn = frag.querySelector(".source-inspector-show-data-btn");
+  const data_div = frag.querySelector(".source-inspector-source-data");
+  const pre = data_div?.querySelector("pre");
+  if (btn && data_div && pre) {
+    btn.addEventListener("click", () => {
+      if (data_div.style.display === "none") {
+        pre.textContent = JSON.stringify(source2.data, null, 2);
+        data_div.style.display = "";
+        btn.textContent = "Hide source data";
+      } else {
+        data_div.style.display = "none";
+        btn.textContent = "Show source data";
+      }
+    });
+  }
+  const source_should_embed = source2.should_embed ? `<span style="color: green;">should embed</span>` : `<span style="color: orange;">embedding skipped</span>`;
+  const source_embed_status = source2.vec ? `<span style="color: green;">vectorized</span>` : `<span style="color: orange;">not vectorized</span>`;
+  const source_info_frag = this.create_doc_fragment(`<p>${source_should_embed} | ${source_embed_status}</p>`);
+  source_info.appendChild(source_info_frag);
+  if (!source2 || !source2.blocks || source2.blocks.length === 0) {
+    this.safe_inner_html(container, `<p>No blocks</p>`);
+    return frag;
+  }
+  const sorted_blocks = source2.blocks.sort((a, b) => a.line_start - b.line_start);
+  for (const block of sorted_blocks) {
+    const sub_key_display = block.sub_key.split("#").join(" > ");
+    const block_info = `${sub_key_display} (${block.size} chars; lines: ${block.line_start}-${block.line_end})`;
+    const should_embed = block.should_embed ? `<span style="color: green;">should embed</span>` : `<span style="color: orange;">embedding skipped</span>`;
+    const embed_status = block.vec ? `<span style="color: green;">vectorized</span>` : `<span style="color: orange;">not vectorized</span>`;
+    let block_content = "";
+    try {
+      const raw = await block.read();
+      block_content = raw.replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/\n/g, "<br>").replace(/\t/g, "&nbsp;&nbsp;");
+    } catch (err) {
+      console.error("[source_inspector] Error reading block:", err);
+      block_content = `<em style="color:red;">Error reading block content</em>`;
+    }
+    const block_frag = this.create_doc_fragment(`
+      <p>
+        ${block_info}<br>
+        ${should_embed} | ${embed_status}
+      </p>
+      <blockquote>${block_content}</blockquote>
+      <hr>
+    `);
+    container.appendChild(block_frag);
+  }
+  return frag;
+}
+
 // node_modules/obsidian-smart-env/components/supporter_callout.js
 var import_obsidian9 = require("obsidian");
-function build_html8(plugin, opts = {}) {
+function build_html9(plugin, opts = {}) {
   const { plugin_name = plugin.manifest.name } = opts;
   return `<div class="wrapper">
     <div id="footer-callout" data-callout-metadata="" data-callout-fold="" data-callout="info" class="callout" style="mix-blend-mode: unset;">
@@ -14717,8 +14915,8 @@ function build_html8(plugin, opts = {}) {
     </div>
   </div>`;
 }
-function render10(plugin, opts = {}) {
-  const html = build_html8.call(this, plugin, opts);
+function render11(plugin, opts = {}) {
+  const html = build_html9.call(this, plugin, opts);
   const frag = this.create_doc_fragment(html);
   const callout = frag.querySelector("#footer-callout");
   const icon_container = callout.querySelector(".callout-icon");
@@ -14727,15 +14925,15 @@ function render10(plugin, opts = {}) {
     this.empty(icon_container);
     icon_container.appendChild(icon);
   }
-  post_process9.call(this, plugin, callout, opts);
+  post_process10.call(this, plugin, callout, opts);
   return callout;
 }
-function post_process9(plugin, callout) {
+function post_process10(plugin, callout) {
 }
 
 // node_modules/obsidian-smart-env/components/user_agreement_callout.js
 var import_obsidian10 = require("obsidian");
-function build_html9(plugin, opts = {}) {
+function build_html10(plugin, opts = {}) {
   const { plugin_name = plugin.manifest.name } = opts;
   return `<div class="wrapper">
     <div id="footer-callout" data-callout-metadata="" data-callout-fold="" data-callout="info" class="callout" style="mix-blend-mode: unset;">
@@ -14757,8 +14955,8 @@ function build_html9(plugin, opts = {}) {
     </div>
   </div>`;
 }
-function render11(plugin, opts = {}) {
-  const html = build_html9.call(this, plugin, opts);
+function render12(plugin, opts = {}) {
+  const html = build_html10.call(this, plugin, opts);
   const frag = this.create_doc_fragment(html);
   const callout = frag.querySelector("#footer-callout");
   const icon_container = callout.querySelector(".callout-icon");
@@ -14767,10 +14965,10 @@ function render11(plugin, opts = {}) {
     this.empty(icon_container);
     icon_container.appendChild(icon);
   }
-  post_process10.call(this, plugin, callout, opts);
+  post_process11.call(this, plugin, callout, opts);
   return callout;
 }
-function post_process10(plugin, callout) {
+function post_process11(plugin, callout) {
 }
 
 // node_modules/obsidian-smart-env/smart_env.config.js
@@ -14783,8 +14981,9 @@ var smart_env_config = {
     env_stats: render7,
     lean_coffee_callout: render8,
     muted_notices: render9,
-    supporter_callout: render10,
-    user_agreement_callout: render11
+    source_inspector: render10,
+    supporter_callout: render11,
+    user_agreement_callout: render12
   }
 };
 
@@ -14824,7 +15023,8 @@ var smart_env_config2 = {
         lm_studio: SmartChatModelLmStudioAdapter,
         ollama: SmartChatModelOllamaAdapter,
         open_router: SmartChatModelOpenRouterAdapter,
-        openai: SmartChatModelOpenaiAdapter
+        openai: SmartChatModelOpenaiAdapter,
+        xai: SmartChatModelXaiAdapter
       },
       http_adapter: new SmartHttpRequest({
         adapter: SmartHttpObsidianRequestAdapter,
@@ -14839,7 +15039,8 @@ var smart_env_config2 = {
       data_adapter: AjsonMultiFileSourcesDataAdapter,
       source_adapters: {
         "md": ObsidianMarkdownSourceContentAdapter,
-        "txt": ObsidianMarkdownSourceContentAdapter
+        "txt": ObsidianMarkdownSourceContentAdapter,
+        "excalidraw.md": ExcalidrawSourceContentAdapter
         // "canvas": MarkdownSourceContentAdapter,
         // "default": MarkdownSourceContentAdapter,
       },
@@ -14856,7 +15057,8 @@ var smart_env_config2 = {
       data_adapter: AjsonMultiFileBlocksDataAdapter,
       block_adapters: {
         "md": MarkdownBlockContentAdapter,
-        "txt": MarkdownBlockContentAdapter
+        "txt": MarkdownBlockContentAdapter,
+        "excalidraw.md": MarkdownBlockContentAdapter
         // "canvas": MarkdownBlockContentAdapter,
       }
     },
@@ -15290,8 +15492,8 @@ var SmartNotices = class {
 };
 
 // node_modules/obsidian-smart-env/styles.css
-var css_sheet2 = new CSSStyleSheet();
-css_sheet2.replaceSync(`.status-bar-item:has(.smart-env-status-container) {
+var css_sheet3 = new CSSStyleSheet();
+css_sheet3.replaceSync(`.status-bar-item:has(.smart-env-status-container) {
   padding: 0 0.5em;
 
   &:hover {
@@ -15305,7 +15507,7 @@ css_sheet2.replaceSync(`.status-bar-item:has(.smart-env-status-container) {
     color: var(--status-bar-text-color);
   }
 }`);
-var styles_default = css_sheet2;
+var styles_default = css_sheet3;
 
 // node_modules/obsidian-smart-env/sc_oauth.js
 var import_obsidian17 = require("obsidian");
@@ -15567,7 +15769,11 @@ var SmartEnv2 = class extends SmartEnv {
       plugin.app.vault.on("create", (file) => {
         if (file instanceof import_obsidian18.TFile && this.smart_sources?.source_adapters?.[file.extension]) {
           const source2 = this.smart_sources?.init_file_path(file.path);
-          if (source2) this.smart_sources?.fs.include_file(file.path);
+          if (source2) {
+            this.queue_source_re_import(source2);
+          } else {
+            console.warn("SmartEnv: Unable to init source for newly created file", file.path);
+          }
         }
       })
     );
@@ -15575,7 +15781,11 @@ var SmartEnv2 = class extends SmartEnv {
       plugin.app.vault.on("rename", (file, old_path) => {
         if (file instanceof import_obsidian18.TFile && this.smart_sources?.source_adapters?.[file.extension]) {
           const source2 = this.smart_sources?.init_file_path(file.path);
-          if (source2) this.smart_sources?.fs.include_file(file.path);
+          if (source2) {
+            this.queue_source_re_import(source2);
+          } else {
+            console.warn("SmartEnv: Unable to init source for renamed file", file.path);
+          }
         }
         if (old_path) {
           const source2 = this.smart_sources?.get(old_path);
@@ -15593,13 +15803,11 @@ var SmartEnv2 = class extends SmartEnv {
     plugin.registerEvent(
       plugin.app.vault.on("modify", (file) => {
         if (file instanceof import_obsidian18.TFile && this.smart_sources?.source_adapters?.[file.extension]) {
-          if (!this.sources_re_import_queue) this.sources_re_import_queue = {};
-          if (this.sources_re_import_queue?.[file.path]) return;
           const source2 = this.smart_sources?.get(file.path);
           if (source2) {
-            source2.data.last_import = { at: 0, hash: null, mtime: 0, size: 0 };
-            this.sources_re_import_queue[source2.key] = source2;
-            this.debounce_re_import_queue();
+            this.queue_source_re_import(source2);
+          } else {
+            console.warn("SmartEnv: Unable to get source for modified file", file.path);
           }
         }
       })
@@ -15623,6 +15831,15 @@ var SmartEnv2 = class extends SmartEnv {
     );
     this.refresh_status();
   }
+  // queue re-import the file
+  queue_source_re_import(source2) {
+    if (!source2 || !source2.key) return;
+    if (!this.sources_re_import_queue) this.sources_re_import_queue = {};
+    if (this.sources_re_import_queue?.[source2.key]) return;
+    source2.data.last_import = { at: 0, hash: null, mtime: 0, size: 0 };
+    this.sources_re_import_queue[source2.key] = source2;
+    this.debounce_re_import_queue();
+  }
   debounce_re_import_queue() {
     this.refresh_status();
     this.sources_re_import_halted = true;
@@ -15640,7 +15857,7 @@ var SmartEnv2 = class extends SmartEnv {
       for (const [key, src] of Object.entries(this.sources_re_import_queue)) {
         await src.import();
         if (!this.smart_sources._embed_queue) this.smart_sources._embed_queue = [];
-        this.smart_sources._embed_queue.push(src);
+        if (src.should_embed) this.smart_sources._embed_queue.push(src);
         if (this.smart_blocks.settings.embed_blocks) {
           for (const block of src.blocks) {
             if (block._queue_embed || block.should_embed && block.is_unembedded) {
@@ -15654,7 +15871,9 @@ var SmartEnv2 = class extends SmartEnv {
           this.debounce_re_import_queue();
         }
       }
-      await this.smart_sources?.process_embed_queue();
+      if (this.smart_sources?._embed_queue?.length) {
+        await this.smart_sources.process_embed_queue();
+      }
     }
     if (this.sources_re_import_timeout) clearTimeout(this.sources_re_import_timeout);
     this.sources_re_import_timeout = null;
@@ -16478,7 +16697,6 @@ var SmartFs2 = class {
     this.add_ignore_pattern("**/.**");
     this.add_ignore_pattern("**/.*/**");
     this.add_ignore_pattern("**/*.ajson");
-    this.add_ignore_pattern("**/*.excalidraw.md");
   }
   /**
    * Add a new ignore pattern
@@ -17725,30 +17943,30 @@ var SmartViewObsidianAdapter2 = class extends SmartViewAdapter2 {
 };
 
 // node_modules/smart-collections/components/settings.js
-async function render12(scope, opts = {}) {
+async function render13(scope, opts = {}) {
   const html = Object.entries(scope.settings_config).map(([setting_key, setting_config]) => {
     if (!setting_config.setting) setting_config.setting = setting_key;
     return this.render_setting_html(setting_config);
   }).join("\n");
   const heading_html = `<h2>${scope.collection_key.split("_").map((word) => word.charAt(0).toUpperCase() + word.slice(1)).join(" ")} Settings</h2>`;
   const frag = this.create_doc_fragment(heading_html + html);
-  return await post_process11.call(this, scope, frag, opts);
+  return await post_process12.call(this, scope, frag, opts);
 }
-async function post_process11(scope, frag, opts = {}) {
+async function post_process12(scope, frag, opts = {}) {
   await this.render_setting_components(frag, { scope });
   return frag;
 }
 
 // node_modules/smart-model/components/settings.js
-async function render13(scope, opts = {}) {
+async function render14(scope, opts = {}) {
   const html = Object.entries(scope.settings_config).map(([setting_key, setting_config]) => {
     if (!setting_config.setting) setting_config.setting = setting_key;
     return this.render_setting_html(setting_config);
   }).join("\n");
   const frag = this.create_doc_fragment(html);
-  return await post_process12.call(this, scope, frag, opts);
+  return await post_process13.call(this, scope, frag, opts);
 }
-async function post_process12(scope, frag, opts = {}) {
+async function post_process13(scope, frag, opts = {}) {
   await this.render_setting_components(frag, { scope });
   return frag;
 }
@@ -17799,7 +18017,7 @@ var StoryModal = class _StoryModal extends import_obsidian20.Modal {
   }
 };
 
-// src/views/note_inspect_modal.js
+// node_modules/obsidian-smart-env/views/source_inspector.js
 var import_obsidian21 = require("obsidian");
 var SmartNoteInspectModal = class extends import_obsidian21.Modal {
   constructor(smart_connections_plugin, entity) {
@@ -17838,7 +18056,7 @@ function build_top_bar_buttons(view_env) {
     </button>`
   ).join("");
 }
-async function build_html10(entity, opts = {}) {
+async function build_html11(entity, opts = {}) {
   const top_bar_buttons = build_top_bar_buttons.call(this, entity.env);
   return `<div><div class="sc-connections-view">
     <div class="sc-top-bar">
@@ -17852,26 +18070,26 @@ async function build_html10(entity, opts = {}) {
     </div>
   </div></div>`;
 }
-async function render14(entity, opts = {}) {
-  const html = await build_html10.call(this, entity, opts);
+async function render15(entity, opts = {}) {
+  const html = await build_html11.call(this, entity, opts);
   const frag = this.create_doc_fragment(html);
   const container = frag.querySelector(".sc-connections-view");
-  post_process13.call(this, entity, container, opts);
+  post_process14.call(this, entity, container, opts);
   return container;
 }
-async function post_process13(entity, container, opts = {}) {
+async function post_process14(entity, container, opts = {}) {
   const plugin = entity.env.smart_connections_plugin;
   const list_el = container.querySelector(".sc-list");
   const header_ctx = container.querySelector(".sc-top-bar .sc-context");
   const footer_ctx = container.querySelector(".sc-bottom-bar .sc-context");
   const filter_settings = entity.env.settings.smart_view_filter;
-  const view_ref = opts.view;
   const render_results = async () => {
     const exclude_keys = Object.keys(entity.data.hidden_connections || {});
     const results = await entity.find_connections({
       exclude_source_connections: entity.env.smart_blocks.settings.embed_blocks,
       exclude_key_ends_with: "---frontmatter---",
-      exclude_keys
+      exclude_keys,
+      ...opts.filter || {}
     });
     const results_frag = await entity.env.render_component(
       "connections_results",
@@ -17886,7 +18104,22 @@ async function post_process13(entity, container, opts = {}) {
     footer_ctx.dataset.key = entity.key;
     list_el.dataset.key = entity.key;
   };
-  await render_results();
+  if (entity.vec) {
+    await render_results();
+  } else {
+    list_el.createEl("p", {
+      text: "This source is not embedded. Check your Smart Environment settings. For example, the current content may be less than the minimum embedding size.",
+      cls: "sc-warning"
+    });
+    const inspect_btn = list_el.createEl("button", {
+      text: "Inspect Source",
+      cls: "sc-inspect-source-btn",
+      title: "Inspect source details"
+    });
+    inspect_btn.addEventListener("click", async () => {
+      new SmartNoteInspectModal(plugin, entity).open();
+    });
+  }
   const toggle_btn = container.querySelector('[title="Fold all toggle"]');
   toggle_btn.addEventListener("click", () => {
     const expanded = entity.env.settings.smart_view_filter.expanded_view ?? entity.env.settings.expanded_view;
@@ -17928,7 +18161,7 @@ async function post_process13(entity, container, opts = {}) {
 }
 
 // src/components/lookup.js
-async function build_html11(collection, opts = {}) {
+async function build_html12(collection, opts = {}) {
   const expanded_view = collection.env.settings.smart_view_filter?.expanded_view ?? collection.env.settings.expanded_view;
   return `<div id="sc-lookup-view">
     <div class="sc-top-bar">
@@ -17955,16 +18188,20 @@ async function build_html11(collection, opts = {}) {
     </div>
   </div>`;
 }
-async function render15(collection, opts = {}) {
-  let html = await build_html11.call(this, collection, opts);
+async function render16(collection, opts = {}) {
+  let html = await build_html12.call(this, collection, opts);
   const frag = this.create_doc_fragment(html);
-  return await post_process14.call(this, collection, frag, opts);
+  return await post_process15.call(this, collection, frag, opts);
 }
-async function post_process14(collection, frag, opts = {}) {
+async function post_process15(collection, frag, opts = {}) {
   const query_input = frag.querySelector("#query");
   const results_container = frag.querySelector(".sc-list");
   const render_lookup = async (query, results_container2) => {
-    const results = await collection.lookup({ hypotheticals: [query] });
+    const lookup_params = {
+      hypotheticals: [query],
+      filter: opts.filter
+    };
+    const results = await collection.lookup(lookup_params);
     this.empty(results_container2);
     const results_frag = await collection.env.render_component("connections_results", results, opts);
     Array.from(results_frag.children).forEach((elm) => results_container2.appendChild(elm));
@@ -18013,11 +18250,11 @@ async function post_process14(collection, frag, opts = {}) {
 }
 
 // src/components/connections_results.js
-async function build_html12(results, opts = {}) {
+async function build_html13(results, opts = {}) {
   return ``;
 }
-async function render16(results, opts = {}) {
-  const html = await build_html12.call(this, results, opts);
+async function render17(results, opts = {}) {
+  const html = await build_html13.call(this, results, opts);
   const frag = this.create_doc_fragment(html);
   if (!results || !Array.isArray(results) || results.length === 0) {
     const no_results = this.create_doc_fragment(`<p class="sc-no-results">No results found.<br><em>Try using the refresh button. If that doesn't work, try running "Clear sources data" and then "Reload sources" in the Smart Environment settings.</em></p>`);
@@ -18032,7 +18269,7 @@ async function render16(results, opts = {}) {
 }
 
 // src/views/smart_chat.js
-function build_html13(obsidian_view, opts = {}) {
+function build_html14(obsidian_view, opts = {}) {
   const top_bar_buttons = [
     // { title: 'Open Conversation Note', icon: 'external-link' },
     { title: "New Chat", icon: "plus" },
@@ -18066,12 +18303,12 @@ function build_html13(obsidian_view, opts = {}) {
     ${obsidian_view.attribution || ""}
   `;
 }
-async function render17(obsidian_view, opts = {}) {
-  const html = build_html13.call(this, obsidian_view, opts);
+async function render18(obsidian_view, opts = {}) {
+  const html = build_html14.call(this, obsidian_view, opts);
   const frag = this.create_doc_fragment(html);
-  return await post_process15.call(this, obsidian_view, frag, opts);
+  return await post_process16.call(this, obsidian_view, frag, opts);
 }
-async function post_process15(obsidian_view, frag, opts) {
+async function post_process16(obsidian_view, frag, opts) {
   const chat_box = frag.querySelector(".sc-thread");
   const settings_button = frag.querySelector('button[title="Chat Settings"]');
   const overlay_container = frag.querySelector(".smart-chat-overlay");
@@ -21936,6 +22173,9 @@ var CollectionItem2 = class _CollectionItem {
    * @param {string} [filter_opts.exclude_key_starts_with] - Exclude keys starting with this string.
    * @param {string[]} [filter_opts.exclude_key_starts_with_any] - Exclude keys starting with any of these strings.
    * @param {string} [filter_opts.exclude_key_includes] - Exclude keys that include this string.
+   * @param {string[]} [filter_opts.exclude_key_includes_any] - Exclude keys that include any of these strings.
+   * @param {string} [filter_opts.exclude_key_ends_with] - Exclude keys ending with this string.
+   * @param {string[]} [filter_opts.exclude_key_ends_with_any] - Exclude keys ending with any of these strings.
    * @param {string} [filter_opts.key_ends_with] - Include only keys ending with this string.
    * @param {string} [filter_opts.key_starts_with] - Include only keys starting with this string.
    * @param {string[]} [filter_opts.key_starts_with_any] - Include only keys starting with any of these strings.
@@ -21951,6 +22191,7 @@ var CollectionItem2 = class _CollectionItem {
       exclude_key_includes,
       exclude_key_includes_any,
       exclude_key_ends_with,
+      exclude_key_ends_with_any,
       key_ends_with,
       key_starts_with,
       key_starts_with_any,
@@ -21963,6 +22204,7 @@ var CollectionItem2 = class _CollectionItem {
     if (exclude_key_includes && this.key.includes(exclude_key_includes)) return false;
     if (exclude_key_includes_any && exclude_key_includes_any.some((include) => this.key.includes(include))) return false;
     if (exclude_key_ends_with && this.key.endsWith(exclude_key_ends_with)) return false;
+    if (exclude_key_ends_with_any && exclude_key_ends_with_any.some((suffix) => this.key.endsWith(suffix))) return false;
     if (key_ends_with && !this.key.endsWith(key_ends_with)) return false;
     if (key_starts_with && !this.key.startsWith(key_starts_with)) return false;
     if (key_starts_with_any && !key_starts_with_any.some((prefix) => this.key.startsWith(prefix))) return false;
@@ -23196,12 +23438,12 @@ var SmartEntity2 = class extends CollectionItem2 {
     return this.collection.embed_model;
   }
   /**
-   * Determines if the entity should be embedded.
+   * Determines if the entity should be embedded if unembedded. NOT the same as is_unembedded.
    * @readonly
    * @returns {boolean} True if no vector is set, false otherwise.
    */
   get should_embed() {
-    return !this.vec && this.size > (this.settings?.min_chars || 300);
+    return this.size > (this.settings?.min_chars || 300);
   }
   /**
    * Sets the error for the embedding model.
@@ -23567,7 +23809,11 @@ var SmartEntities2 = class extends Collection2 {
    * @returns {Array<Object>} The embed queue.
    */
   get embed_queue() {
-    if (!this._embed_queue?.length) this._embed_queue = Object.values(this.items).filter((item) => item._queue_embed && item.should_embed);
+    if (!this._embed_queue?.length) {
+      console.time(`Building embed queue`);
+      this._embed_queue = Object.values(this.items).filter((item) => item._queue_embed || item.is_unembedded && item.should_embed);
+      console.timeEnd(`Building embed queue`);
+    }
     return this._embed_queue;
   }
   /**
@@ -23642,7 +23888,7 @@ var connections_filter_config2 = {
 };
 
 // node_modules/smart-sources/components/source.js
-async function render18(entity, opts = {}) {
+async function render19(entity, opts = {}) {
   let markdown;
   if (should_render_embed2(entity)) markdown = `${entity.embed_link}
 
@@ -23651,14 +23897,14 @@ ${await entity.read()}`;
   let frag;
   if (source.env.settings.smart_view_filter.render_markdown) frag = await this.render_markdown(markdown, source);
   else frag = this.create_doc_fragment(`<span>${markdown}</span>`);
-  return await post_process16.call(this, source, frag, opts);
+  return await post_process17.call(this, source, frag, opts);
 }
 function process_for_rendering2(content) {
   if (content.includes("```dataview")) content = content.replace(/```dataview/g, "```\\dataview");
   if (content.includes("![[")) content = content.replace(/\!\[\[/g, "! [[");
   return content;
 }
-async function post_process16(scope, frag, opts = {}) {
+async function post_process17(scope, frag, opts = {}) {
   return frag;
 }
 function should_render_embed2(entity) {
@@ -24064,7 +24310,7 @@ ${content}`.substring(0, max_chars);
    * @returns {number} The size.
    */
   get size() {
-    return this.file?.stat?.size || 0;
+    return this.source_adapter.size || 0;
   }
   /**
    * Retrieves the last import stat of the SmartSource.
@@ -24149,9 +24395,6 @@ ${content}`.substring(0, max_chars);
   get path() {
     return this.data.path || this.data.key;
   }
-  get should_embed() {
-    return !this.vec || !this.embed_hash || this.embed_hash !== this.read_hash;
-  }
   get source_adapters() {
     return this.collection.source_adapters;
   }
@@ -24171,7 +24414,7 @@ ${content}`.substring(0, max_chars);
    * @returns {Function} The render function for the source component.
    */
   get component() {
-    return render18;
+    return render19;
   }
   // Currently unused, but useful for later
   /**
@@ -24285,6 +24528,13 @@ var SmartSources2 = class extends SmartEntities2 {
     const ext = this.get_extension_for_path(file_path);
     if (!ext) {
       return;
+    }
+    if (this.fs.is_excluded(file_path)) {
+      console.warn(`File ${file_path} is excluded from processing.`);
+      return;
+    }
+    if (!this.fs.files[file_path]) {
+      this.fs.include_file(file_path);
     }
     if (this.items[file_path]) return this.items[file_path];
     const item = new this.item_type(this.env, { path: file_path });
@@ -25103,7 +25353,7 @@ var SmartThreads = class extends SmartSources2 {
 };
 
 // smart-chat-v0/components/thread.js
-function build_html14(thread, opts = {}) {
+function build_html15(thread, opts = {}) {
   return `
     <div class="sc-thread" data-thread-key="${thread.key}">
       <div class="sc-message-container">
@@ -25138,14 +25388,14 @@ function build_html14(thread, opts = {}) {
     </div>
   `;
 }
-async function render20(thread, opts = {}) {
-  const html = build_html14.call(this, thread, {
+async function render21(thread, opts = {}) {
+  const html = build_html15.call(this, thread, {
     show_welcome: opts.show_welcome !== false
   });
   const frag = this.create_doc_fragment(html);
-  return await post_process17.call(this, thread, frag, opts);
+  return await post_process18.call(this, thread, frag, opts);
 }
-async function post_process17(thread, frag, opts) {
+async function post_process18(thread, frag, opts) {
   const container = frag.querySelector(".sc-message-container");
   if (thread.messages.length) {
     thread.messages.forEach((msg) => {
@@ -25282,7 +25532,7 @@ function extract_internal_embedded_links(user_input) {
 }
 
 // smart-chat-v0/components/error.js
-function build_html15(error, opts = {}) {
+function build_html16(error, opts = {}) {
   const error_message = error?.error?.message || error?.message || "An unknown error occurred";
   const error_code = error?.error?.code || error?.code;
   const error_type = error?.error?.type || error?.type || "Error";
@@ -25315,12 +25565,12 @@ function build_html15(error, opts = {}) {
     </div>
   `;
 }
-async function render21(error, opts = {}) {
-  const html = build_html15.call(this, error, opts);
+async function render22(error, opts = {}) {
+  const html = build_html16.call(this, error, opts);
   const frag = this.create_doc_fragment(html);
-  return await post_process18.call(this, error, frag, opts);
+  return await post_process19.call(this, error, frag, opts);
 }
-async function post_process18(error, frag, opts) {
+async function post_process19(error, frag, opts) {
   const close_button = frag.querySelector(".sc-error-close");
   if (close_button) {
     close_button.addEventListener("click", () => {
@@ -25351,7 +25601,7 @@ async function post_process18(error, frag, opts) {
         await opts.retry();
         container.remove();
       } catch (retry_error) {
-        const new_error_frag = await render21.call(this, retry_error, opts);
+        const new_error_frag = await render22.call(this, retry_error, opts);
         container.replaceWith(new_error_frag);
       }
     });
@@ -25635,7 +25885,7 @@ var SmartThread = class extends SmartSource2 {
    * @returns {Promise<DocumentFragment>}
    */
   async render_error(response, container = this.messages_container) {
-    const frag = await render21.call(this.smart_view, response);
+    const frag = await render22.call(this.smart_view, response);
     if (container) container.appendChild(frag);
     return frag;
   }
@@ -26493,7 +26743,7 @@ var SmartMessages = class extends SmartBlocks2 {
 };
 
 // smart-chat-v0/components/message.js
-function build_html16(message, opts = {}) {
+function build_html17(message, opts = {}) {
   const content = Array.isArray(message.content) ? message.content.map((part) => {
     if (part.type === "image_url") {
       return " ![[" + part.input.image_path + "]] ";
@@ -26531,12 +26781,12 @@ function build_html16(message, opts = {}) {
   }
   return html;
 }
-async function render22(message, opts = {}) {
-  const html = build_html16.call(this, message, opts);
+async function render23(message, opts = {}) {
+  const html = build_html17.call(this, message, opts);
   const frag = this.create_doc_fragment(html);
-  return await post_process19.call(this, message, frag, opts);
+  return await post_process20.call(this, message, frag, opts);
 }
-async function post_process19(message, frag, opts) {
+async function post_process20(message, frag, opts) {
   const copy_button = frag.querySelector(".sc-msg-button:not(.regenerate)");
   if (copy_button) {
     copy_button.addEventListener("click", () => {
@@ -26619,7 +26869,7 @@ async function post_process19(message, frag, opts) {
 }
 
 // smart-chat-v0/components/context.js
-function build_html17(message, opts = {}) {
+function build_html18(message, opts = {}) {
   const lookup_results = message.tool_call_output || [];
   if (lookup_results.length === 0) {
     return "";
@@ -26648,13 +26898,13 @@ function build_html17(message, opts = {}) {
     </div>
   `;
 }
-async function render23(message, opts = {}) {
-  const html = build_html17.call(this, message, opts);
+async function render24(message, opts = {}) {
+  const html = build_html18.call(this, message, opts);
   if (!html) return document.createDocumentFragment();
   const frag = this.create_doc_fragment(html);
-  return await post_process20.call(this, message, frag, opts);
+  return await post_process21.call(this, message, frag, opts);
 }
-async function post_process20(message, frag, opts) {
+async function post_process21(message, frag, opts) {
   const header = frag.querySelector(".sc-context-header");
   const list = frag.querySelector(".sc-context-list");
   const toggle_icon = frag.querySelector(".sc-context-toggle-icon");
@@ -26701,7 +26951,7 @@ async function post_process20(message, frag, opts) {
 }
 
 // smart-chat-v0/components/tool_calls.js
-function build_html18(message, opts = {}) {
+function build_html19(message, opts = {}) {
   const tool_calls = message.tool_calls || [];
   if (tool_calls.length === 0) {
     return "";
@@ -26722,13 +26972,13 @@ function build_html18(message, opts = {}) {
     </div>
   `;
 }
-async function render24(message, opts = {}) {
-  const html = build_html18.call(this, message, opts);
+async function render25(message, opts = {}) {
+  const html = build_html19.call(this, message, opts);
   if (!html) return document.createDocumentFragment();
   const frag = this.create_doc_fragment(html);
-  return await post_process21.call(this, message, frag, opts);
+  return await post_process22.call(this, message, frag, opts);
 }
-async function post_process21(message, frag, opts) {
+async function post_process22(message, frag, opts) {
   const tool_call_headers = frag.querySelectorAll(".sc-tool-call-header");
   tool_call_headers.forEach((header) => {
     const content = header.nextElementSibling;
@@ -26754,7 +27004,7 @@ async function post_process21(message, frag, opts) {
 }
 
 // smart-chat-v0/components/system_message.js
-function build_html19(message, opts = {}) {
+function build_html20(message, opts = {}) {
   return `
     <div class="sc-system-message-container" id="${message.data.id}">
       <div class="sc-system-message-header" tabindex="0" role="button" aria-expanded="false" aria-controls="${message.data.id}-content">
@@ -26772,12 +27022,12 @@ function build_html19(message, opts = {}) {
     </div>
   `;
 }
-async function render25(message, opts = {}) {
-  const html = build_html19.call(this, message, opts);
+async function render26(message, opts = {}) {
+  const html = build_html20.call(this, message, opts);
   const frag = this.create_doc_fragment(html);
-  return await post_process22.call(this, message, frag, opts);
+  return await post_process23.call(this, message, frag, opts);
 }
-async function post_process22(message, frag, opts) {
+async function post_process23(message, frag, opts) {
   const header = frag.querySelector(".sc-system-message-header");
   const content = frag.querySelector(".sc-system-message-content");
   const toggle_icon = frag.querySelector(".sc-system-message-toggle-icon");
@@ -26898,13 +27148,13 @@ var SmartMessage = class extends SmartBlock2 {
   async render(container = this.thread.messages_container) {
     let frag;
     if (this.role === "system") {
-      frag = await render25.call(this.smart_view, this);
+      frag = await render26.call(this.smart_view, this);
     } else if (this.tool_calls?.length > 0) {
-      frag = await render24.call(this.smart_view, this);
+      frag = await render25.call(this.smart_view, this);
     } else if (this.role === "tool") {
       frag = await this.context_template.call(this.smart_view, this);
     } else {
-      frag = await render22.call(this.smart_view, this);
+      frag = await render23.call(this.smart_view, this);
     }
     if (container) {
       this.elm = container.querySelector(`#${this.data.id}`);
@@ -26918,7 +27168,7 @@ var SmartMessage = class extends SmartBlock2 {
     return frag;
   }
   get context_template() {
-    return this.env.opts.components.lookup_context || render23;
+    return this.env.opts.components.lookup_context || render24;
   }
   /**
    * Converts the message into a request payload that can be sent to the AI model.
@@ -27490,80 +27740,6 @@ var EnvJsonThreadSourceAdapter = class extends ThreadSourceAdapter {
   }
 };
 
-// src/components/source_inspector.css
-var css_sheet3 = new CSSStyleSheet();
-css_sheet3.replaceSync(`.source-inspector {
-  background-color: var(--background-secondary-alt);
-  margin: var(--size-4-3) 0;
-  padding: var(--size-4-3);
-  border-radius: var(--radius-m);
-}
-
-.source-inspector-blocks-container {
-  margin-top: var(--size-4-2);
-  display: flex;
-  flex-direction: column;
-  gap: var(--size-4-3);
-}
-
-.source-inspector-blocks-container blockquote {
-  margin-left: var(--size-4-3);
-  padding-left: var(--size-4-3);
-  border-left: 2px solid var(--text-faint);
-}
-`);
-var source_inspector_default = css_sheet3;
-
-// src/components/source_inspector.js
-function build_html20(source2, opts = {}) {
-  return `
-    <div class="smart-chat-message source-inspector">
-      <h2>Blocks</h2>
-      <div class="source-inspector-blocks-container"></div>
-    </div>
-  `;
-}
-async function render26(source2, opts = {}) {
-  const html = build_html20(source2, opts);
-  const frag = this.create_doc_fragment(html);
-  this.apply_style_sheet(source_inspector_default);
-  await post_process23.call(this, source2, frag, opts);
-  return frag;
-}
-async function post_process23(source2, frag, opts = {}) {
-  const container = frag.querySelector(".source-inspector .source-inspector-blocks-container");
-  if (!container) return frag;
-  if (!source2 || !source2.blocks || source2.blocks.length === 0) {
-    this.safe_inner_html(container, `<p>No blocks</p>`);
-    return frag;
-  }
-  const sortedBlocks = source2.blocks.sort((a, b) => a.line_start - b.line_start);
-  for (const block of sortedBlocks) {
-    const subKeyDisplay = block.sub_key.split("#").join(" > ");
-    const blockInfo = `${subKeyDisplay} (${block.size} chars; lines: ${block.line_start}-${block.line_end})`;
-    const should_embed = block.should_embed ? `<span style="color: green;">should embed</span>` : `<span style="color: orange;">embedding skipped</span>`;
-    const embed_status = block.vec ? `<span style="color: green;">vectorized</span>` : `<span style="color: orange;">not vectorized</span>`;
-    let blockContent = "";
-    try {
-      const raw = await block.read();
-      blockContent = raw.replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/\n/g, "<br>").replace(/\t/g, "&nbsp;&nbsp;");
-    } catch (err) {
-      console.error("[source_inspector] Error reading block:", err);
-      blockContent = `<em style="color:red;">Error reading block content</em>`;
-    }
-    const blockFrag = this.create_doc_fragment(`
-      <p>
-        ${blockInfo}<br>
-        ${should_embed} | ${embed_status}
-      </p>
-      <blockquote>${blockContent}</blockquote>
-      <hr>
-    `);
-    container.appendChild(blockFrag);
-  }
-  return frag;
-}
-
 // src/smart_env.config.js
 var smart_env_config3 = {
   env_path: "",
@@ -27628,24 +27804,24 @@ var smart_env_config3 = {
     }
   },
   components: {
-    lookup: render15,
-    connections_results: render16,
-    smart_chat: render17,
-    connections: render14,
-    source_inspector: render26,
+    lookup: render16,
+    connections_results: render17,
+    smart_chat: render18,
+    connections: render15,
+    source_inspector: render10,
     smart_sources: {
       // settings: source_settings_component,
-      connections: render14
+      connections: render15
     },
     smart_blocks: {
-      connections: render14
+      connections: render15
     },
     smart_threads: {
-      settings: render12,
-      thread: render20
+      settings: render13,
+      thread: render21
     },
     smart_chat_model: {
-      settings: render13
+      settings: render14
     }
   },
   default_settings: {
@@ -28071,13 +28247,12 @@ var smart_env_config4 = {
   collections: {},
   item_types: {},
   components: {
-    connections: render14,
+    connections: render15,
     connections_result: render27,
-    connections_results: render16,
+    connections_results: render17,
     connections_v1: render28,
-    lookup: render15,
-    main_settings: render29,
-    source_inspector: render26
+    lookup: render16,
+    main_settings: render29
   }
 };
 
@@ -28285,7 +28460,61 @@ var ConnectionsView = class extends SmartObsidianView {
   /* ------------------------------------------------------------------ */
   async render_view(target = null, container = this.container) {
     if (container.checkVisibility?.() === false) return;
-    let entity = await this.#resolve_entity(target);
+    if (!target) target = this.app.workspace.getActiveFile()?.path;
+    if (!target) {
+      container.empty();
+      container.createEl("p", { text: "No active file to render connections." });
+      return;
+    }
+    const target_key = typeof target === "string" ? target : target.key ?? target.path;
+    if (!target_key) {
+      container.empty();
+      let msg = "No valid target key provided.";
+      if (target && typeof target === "object") {
+        msg += ` Received target object: ${JSON.stringify(target)}`;
+      }
+      container.createEl("p", { text: msg });
+      return;
+    }
+    let entity;
+    const is_block = target_key.includes("#");
+    if (is_block) {
+      entity = this.env.smart_blocks.get(target_key);
+      if (!entity) {
+        console.warn("ConnectionsView: No entity found for block: " + target_key);
+        const source_key = target_key.split("#")[0];
+        const source2 = this.env.smart_sources.get(source_key);
+        if (source2) {
+          return this.render_view(source2, container);
+        } else {
+          container.empty();
+          container.createEl("p", { text: 'No block or source found for "' + target_key + '".' });
+          return;
+        }
+      }
+    } else {
+      entity = this.env.smart_sources.get(target_key);
+      if (!entity) {
+        console.warn("ConnectionsView: No entity found for source: " + target_key);
+        const source2 = this.env.smart_sources.init_file_path(target_key);
+        if (source2) {
+          this.env.queue_source_re_import(source2);
+          container.empty();
+          container.createEl("p", { text: "Source not found, but initialized. Requires embedding." });
+          container.createEl("button", {
+            text: "Embed now"
+          }).addEventListener("click", async () => {
+            await this.env.run_re_import();
+            this.render_view(source2, container);
+          });
+          return;
+        } else {
+          container.empty();
+          container.createEl("p", { text: 'No source found for "' + target_key + '". Unable to import. Check Smart Environment exclusion settings.' });
+          return;
+        }
+      }
+    }
     if (!entity) {
       container.empty();
       container.createEl("p", { text: "No entity found for the current note." });
@@ -28309,27 +28538,6 @@ var ConnectionsView = class extends SmartObsidianView {
     entity.queue_import();
     await entity.collection.process_source_import_queue();
     this.render_view(entity.key);
-  }
-  /* ------------------------------------------------------------------ */
-  async #resolve_entity(input) {
-    if (!input) input = this.app.workspace.getActiveFile()?.path;
-    if (!input) return null;
-    if (typeof input !== "string") input = input.path ?? "";
-    const collection = input.includes("#") ? this.env.smart_blocks : this.env.smart_sources;
-    let entity = collection.get(input);
-    if (!entity) {
-      collection.fs.include_file(input);
-      entity = collection.init_file_path(input);
-      if (entity) {
-        await entity.import();
-        await collection.process_embed_queue();
-      }
-    }
-    if (entity?.should_embed && !entity.vec) {
-      entity.queue_embed();
-      await collection.process_embed_queue();
-    }
-    return entity;
   }
 };
 
@@ -29147,6 +29355,9 @@ var CollectionItem3 = class _CollectionItem {
    * @param {string} [filter_opts.exclude_key_starts_with] - Exclude keys starting with this string.
    * @param {string[]} [filter_opts.exclude_key_starts_with_any] - Exclude keys starting with any of these strings.
    * @param {string} [filter_opts.exclude_key_includes] - Exclude keys that include this string.
+   * @param {string[]} [filter_opts.exclude_key_includes_any] - Exclude keys that include any of these strings.
+   * @param {string} [filter_opts.exclude_key_ends_with] - Exclude keys ending with this string.
+   * @param {string[]} [filter_opts.exclude_key_ends_with_any] - Exclude keys ending with any of these strings.
    * @param {string} [filter_opts.key_ends_with] - Include only keys ending with this string.
    * @param {string} [filter_opts.key_starts_with] - Include only keys starting with this string.
    * @param {string[]} [filter_opts.key_starts_with_any] - Include only keys starting with any of these strings.
@@ -29162,6 +29373,7 @@ var CollectionItem3 = class _CollectionItem {
       exclude_key_includes,
       exclude_key_includes_any,
       exclude_key_ends_with,
+      exclude_key_ends_with_any,
       key_ends_with,
       key_starts_with,
       key_starts_with_any,
@@ -29174,6 +29386,7 @@ var CollectionItem3 = class _CollectionItem {
     if (exclude_key_includes && this.key.includes(exclude_key_includes)) return false;
     if (exclude_key_includes_any && exclude_key_includes_any.some((include) => this.key.includes(include))) return false;
     if (exclude_key_ends_with && this.key.endsWith(exclude_key_ends_with)) return false;
+    if (exclude_key_ends_with_any && exclude_key_ends_with_any.some((suffix) => this.key.endsWith(suffix))) return false;
     if (key_ends_with && !this.key.endsWith(key_ends_with)) return false;
     if (key_starts_with && !this.key.startsWith(key_starts_with)) return false;
     if (key_starts_with_any && !key_starts_with_any.some((prefix) => this.key.startsWith(prefix))) return false;
@@ -29754,10 +29967,10 @@ var SmartAction = class extends CollectionItem3 {
     return this._action_adapter;
   }
   get action_post_processes() {
-    return Object.values(this.module.post_processes || {});
+    return Object.values(this.module?.post_processes || {});
   }
   get action_pre_processes() {
-    return Object.values(this.module.pre_processes || {});
+    return Object.values(this.module?.pre_processes || {});
   }
   get active() {
     return this.data.active !== false;
@@ -29784,6 +29997,14 @@ var SmartAction = class extends CollectionItem3 {
   }
   get source_type() {
     return this.data.source_type;
+  }
+  /**
+   * OpenAI tool definition for this action.
+   * Delegates to the action adapter.
+   * @returns {object|null}
+   */
+  get as_tool() {
+    return this.action_adapter.as_tool;
   }
 };
 
@@ -30504,7 +30725,58 @@ var SmartActionAdapter = class {
     }
     return await fn.call(this.item, params);
   }
+  /**
+   * Generate an OpenAI-style tool definition for this action.
+   * By default it checks `module.tool` or converts `module.openapi`.
+   * @returns {object|null}
+   */
+  get as_tool() {
+    if (!this.module) return null;
+    if (this.module.tool) return this.module.tool;
+    if (this.module.openapi) {
+      return convert_openapi_to_tools2(this.module.openapi)[0] || null;
+    }
+    return null;
+  }
 };
+function convert_openapi_to_tools2(openapi_spec) {
+  const tools = [];
+  for (const path in openapi_spec.paths || {}) {
+    const methods = openapi_spec.paths[path];
+    for (const method in methods) {
+      const endpoint = methods[method];
+      const parameters = endpoint.parameters || [];
+      const requestBody = endpoint.requestBody;
+      const properties = {};
+      const required = [];
+      parameters.forEach((param) => {
+        properties[param.name] = {
+          type: param.schema.type,
+          description: param.description || ""
+        };
+        if (param.required) required.push(param.name);
+      });
+      if (requestBody) {
+        const schema = requestBody.content["application/json"].schema;
+        Object.assign(properties, schema.properties);
+        if (schema.required) required.push(...schema.required);
+      }
+      tools.push({
+        type: "function",
+        function: {
+          name: endpoint.operationId || `${method}_${path.replace(/\//g, "_").replace(/[{}]/g, "")}`,
+          description: endpoint.summary || endpoint.description || "",
+          parameters: {
+            type: "object",
+            properties,
+            required
+          }
+        }
+      });
+    }
+  }
+  return tools;
+}
 
 // node_modules/smart-chat-obsidian/node_modules/smart-actions/smart_actions.js
 var SmartActions = class extends Collection3 {
@@ -30538,6 +30810,7 @@ var smart_actions_default = {
 var lookup_context_exports = {};
 __export(lookup_context_exports, {
   lookup_context: () => lookup_context,
+  render_output: () => render_output,
   tool: () => tool
 });
 async function lookup_context(params = {}) {
@@ -30640,6 +30913,13 @@ var tool = {
     }
   }
 };
+async function render_output(env, output, params) {
+  const context = env.smart_contexts.get(output);
+  if (!context) {
+    return `No context found for key: ${output}`;
+  }
+  return await env.render_component("context_builder", context);
+}
 
 // node_modules/smart-chat-obsidian/src/collections/smart_actions.js
 smart_actions_default.default_actions = {
@@ -30779,6 +31059,7 @@ var SmartChatThread = class extends CollectionItem3 {
   static get defaults() {
     return {
       data: {
+        name: "",
         system_prompt: "",
         items: {}
       }
@@ -30792,6 +31073,15 @@ var SmartChatThread = class extends CollectionItem3 {
       this.data.key = formatted;
     }
     return this.data.key;
+  }
+  /**
+   * @property {string} name - Friendly thread name; falls back to key if empty.
+   */
+  get name() {
+    return this.data.name || this.data.key;
+  }
+  set name(val) {
+    this.data.name = val;
   }
   get chat_model() {
     return this.collection.chat_model;
@@ -30826,7 +31116,7 @@ var SmartChatThread = class extends CollectionItem3 {
   }
   get current_completion() {
     if (!this._current_completion || this._current_completion && this._current_completion.data.completion.responses.length !== 0) {
-      this._current_completion = null;
+      this._current_completion = this.init_completion();
     }
     return this._current_completion;
   }
@@ -31737,7 +32027,7 @@ var ActionCompletionAdapter2 = class extends SmartCompletionAdapter2 {
     const action_key = this.data.action_key;
     if (!action_key) return;
     const thread = this.item.thread;
-    if (thread.current_completion !== this.item) return console.log("ActionCompletionAdapter: skipping tools, not the current completion");
+    if (thread && thread.current_completion !== this.item) return console.log("ActionCompletionAdapter: skipping tools, not the current completion");
     const action_opts = this.data.action_opts;
     const action_collection = this.item.env.smart_actions;
     if (!action_collection) {
@@ -31751,13 +32041,13 @@ var ActionCompletionAdapter2 = class extends SmartCompletionAdapter2 {
     }
     let tools;
     try {
-      const action_module = action_item.module;
-      tools = action_module.tool ? [action_module.tool] : convert_openapi_to_tools2(action_module.openapi);
+      const tool2 = action_item.as_tool;
+      tools = tool2 ? [tool2] : [];
     } catch (err) {
-      console.warn("Error compiling ephemeral action", err);
+      console.warn("Error generating action tool", err);
       return;
     }
-    if (!tools) return;
+    if (!tools.length) return;
     if (!this.data.actions) this.data.actions = {};
     this.data.actions[action_key] = true;
     this.insert_tools(tools, { force: true });
@@ -31826,44 +32116,6 @@ var ActionCompletionAdapter2 = class extends SmartCompletionAdapter2 {
     }
   }
 };
-function convert_openapi_to_tools2(openapi_spec) {
-  const tools = [];
-  for (const path in openapi_spec.paths) {
-    const methods = openapi_spec.paths[path];
-    for (const method in methods) {
-      const endpoint = methods[method];
-      const parameters = endpoint.parameters || [];
-      const requestBody = endpoint.requestBody;
-      const properties = {};
-      const required = [];
-      parameters.forEach((param) => {
-        properties[param.name] = {
-          type: param.schema.type,
-          description: param.description || ""
-        };
-        if (param.required) required.push(param.name);
-      });
-      if (requestBody) {
-        const schema = requestBody.content["application/json"].schema;
-        Object.assign(properties, schema.properties);
-        if (schema.required) required.push(...schema.required);
-      }
-      tools.push({
-        type: "function",
-        function: {
-          name: endpoint.operationId || `${method}_${path.replace(/\//g, "_").replace(/[{}]/g, "")}`,
-          description: endpoint.summary || endpoint.description || "",
-          parameters: {
-            type: "object",
-            properties,
-            required
-          }
-        }
-      });
-    }
-  }
-  return tools;
-}
 
 // node_modules/smart-chat-obsidian/node_modules/smart-completions/adapters/action_xml.js
 function scaffold_xml2(root_tag, root_desc, params) {
@@ -31896,12 +32148,12 @@ var ActionXmlCompletionAdapter2 = class extends ActionCompletionAdapter2 {
     }
     let tools;
     try {
-      const mod = action_item.module;
-      tools = mod.tool ? [mod.tool] : convert_openapi_to_tools2(mod.openapi);
+      const tool2 = action_item.as_tool;
+      tools = tool2 ? [tool2] : [];
     } catch (err) {
       return console.warn("Unable to compile OpenAPI \u2192 tools", err);
     }
-    if (!tools?.length) return;
+    if (!tools.length) return;
     const func_def = tools[0].function;
     const param_props = func_def.parameters?.properties || {};
     const required_params = func_def.parameters?.required || [];
@@ -33429,7 +33681,7 @@ var ChatHistoryModal = class extends import_obsidian35.FuzzySuggestModal {
    * @returns {string}
    */
   getItemText(thread) {
-    return thread.key;
+    return thread.name;
   }
   /**
    * Invoked when the user picks a suggestion.
@@ -33569,10 +33821,10 @@ async function post_process27(chat_threads_collection, container, opts = {}) {
   }
   const thread_name_input = container.querySelector(".smart-chat-chat-name-input");
   if (thread_name_input) {
-    thread_name_input.value = active_thread.key;
+    thread_name_input.value = active_thread.name;
     const renameHandler = (current_thread) => {
       const new_val = thread_name_input.value.trim();
-      if (!new_val || new_val === current_thread.key) {
+      if (!new_val || new_val === current_thread.name) {
         return;
       }
       rename_thread(chat_threads_collection, current_thread, new_val);
@@ -33610,7 +33862,7 @@ async function post_process27(chat_threads_collection, container, opts = {}) {
       const thread_frag = await env.render_component("thread", new_thread, opts);
       threads_container.appendChild(thread_frag);
       if (thread_name_input) {
-        thread_name_input.value = new_thread.key;
+        thread_name_input.value = new_thread.name;
       }
     });
   }
@@ -33642,14 +33894,8 @@ async function open_plugin_settings(app2) {
   await app2.setting.open();
   await app2.setting.openTabById("smart-chat");
 }
-function rename_thread(collection, thread, new_key) {
-  const old_key = thread.key;
-  delete collection.items[old_key];
-  thread.data.key = new_key;
-  collection.set(thread);
-  if (collection.settings.active_thread_key === old_key) {
-    collection.settings.active_thread_key = new_key;
-  }
+function rename_thread(collection, thread, new_name) {
+  thread.data.name = new_name;
   thread.queue_save();
   collection.process_save_queue();
 }
@@ -34236,7 +34482,7 @@ async function post_process28(ctx, container, opts = {}) {
   const thread = completion.thread;
   const actions_el = container.querySelector(".sc-context-actions");
   this.empty(actions_el);
-  completion.thread.container.querySelector(".smart-chat-add-context-button")?.remove();
+  completion.thread.container?.querySelector(".smart-chat-add-context-button")?.remove();
   if (Object.keys(ctx.data.context_items || {}).length === 0) {
     const btn = document.createElement("button");
     btn.className = "smart-chat-add-context-button";
@@ -35455,6 +35701,13 @@ function text_to_nodes(txt) {
 async function add_items_to_current_context(thread, paths = []) {
   const env = thread.env;
   if (!paths.length) return null;
+  if (!thread.current_completion) {
+    if (typeof thread.init_completion === "function") {
+      thread.current_completion = thread.init_completion();
+    } else if (typeof thread.new_completion === "function") {
+      thread.new_completion();
+    }
+  }
   const completion = thread.current_completion;
   const ctx_key = completion.data.context_key;
   const ctx = ctx_key ? env.smart_contexts.get(ctx_key) : null;
@@ -35615,9 +35868,6 @@ async function post_process36(chat_thread, thread_container, opts = {}) {
     this.safe_inner_html(message_container, `
       <div class="smart-chat-default-message">${initial_message}</div>
     `);
-    if (!chat_thread.current_completion) {
-      chat_thread.current_completion = chat_thread.init_completion();
-    }
     if (!chat_thread.current_completion.container) {
       const completion_container = await env.render_component("completion", chat_thread.current_completion);
       message_container.appendChild(completion_container);
@@ -35640,11 +35890,14 @@ async function post_process36(chat_thread, thread_container, opts = {}) {
     const data = { user_message: user_text, new_user_message: true };
     if (sys_msg) data.system_message = chat_thread.get_system_prompt({ system_message: sys_msg });
     if (chat_thread.has_self_referential_pronoun(user_text)) {
-      const action_property = chat_thread.collection.settings.use_tool_calls ? "action_key" : "action_xml_key";
-      data[action_property] = "lookup_context";
-      data.action_opts = {
-        context_key: chat_thread.current_completion.data.context_key
-      };
+      const ctx_key = chat_thread.current_completion.data.context_key;
+      const existing_ctx = env.smart_contexts.get(ctx_key);
+      const has_manual_context = existing_ctx && Object.keys(existing_ctx.data?.context_items ?? {}).length > 0;
+      if (!has_manual_context) {
+        const action_property = chat_thread.collection.settings.use_tool_calls ? "action_key" : "action_xml_key";
+        data[action_property] = "lookup_context";
+        data.action_opts = { context_key: ctx_key };
+      }
       console.log({ data });
     }
     chat_thread.current_completion.data = { ...chat_thread.current_completion.data, ...data };
@@ -37339,7 +37592,7 @@ var SmartNotices2 = class {
   }
 };
 
-// src/modals/connections.js
+// src/views/connections_modal.js
 var import_obsidian51 = require("obsidian");
 var ConnectionsModal = class extends import_obsidian51.FuzzySuggestModal {
   constructor(plugin) {
@@ -37363,7 +37616,6 @@ var ConnectionsModal = class extends import_obsidian51.FuzzySuggestModal {
     const env = this.plugin.env;
     let entity = env.smart_sources.get(active.path);
     if (!entity) {
-      env.smart_sources.fs.include_file(active.path);
       entity = env.smart_sources.init_file_path(active.path);
       if (!entity) return;
       await entity.import();
@@ -37489,7 +37741,7 @@ var import_obsidian53 = require("obsidian");
 var import_obsidian54 = require("obsidian");
 
 // releases/3.0.0.md
-var __default = '# Smart Connections `v3`\n## New Features\n\n### Smart Chat v1\n- Effectively utilizes the Smart Environment architecture to facilitate deeper integration and new features.\n#### Improved Smart Chat UI\n- New context builder\n	- makes managing conversation context easier\n- Drag images and notes into the chat window to add as context\n- Separate settings tab specifically for chat features\n#### *Improved Smart Chat compatibility with Local Models*\n- Note lookup (RAG) now compatible with models that don\'t support tool calling\n	- Disable tool calling in the settings\n### Ollama embedding adapter\n- use Ollama to create embeddings\n\n## Fixed\n- renders content in connections results when all result items are expanded by default\n## Housekeeping\n- Updated README\n	- Improved Getting Started section\n	- Removed extraneous details\n- Improved version release process\n- Smart Chat `v0` (legacy)\n	- Smart Chat `v0` will continue to be available for a short time and will be removed in `v3.1` unless unforeseen issues arise in which case it will be removed sooner.\n	- Smart Chat `v0` code was moved from `brianpetro/jsbrains` to the Smart Connections repo\n\n## patch `v3.0.1`\n\nImproved Mobile UX and cleaned up extraneous code.\n\n## patch `v3.0.3`\n\nFixed issue where connections results would not render if expand-all results was toggled on.\n\n## patch `v3.0.4`\n\nPrevented frontmatter blocks from being included in connections results. Fixed toggle-fold-all logic.\n\n## patch `v3.0.5`\n\nFixes Ollama Embedding model loading issue in the settings.\n\n## patch `v3.0.6`\n\nFixed release notes should only show once after update.\n\n## patch `v3.0.7`\n\nAdded "current/dynamic" option in bases connection score modal to add score based on current file. Fixed issue causing Ollama to seemingly embed at 0 tokens/sec. Fixed bases integration modal failing on new bases.\n\n## patch `v3.0.8`\n\n- Improved bases integration UX\n	- prevent throwing error on erroroneous input in `cos_sim` base function\n	- gracefully handle when smart_env is not loaded yet\n- Reduced max size of markdown file that will be imported from 1MB to 300KB (prevent long initial import)\n	- advanced configuration available via `smart_sources.obsidian_markdown_source_content_adapter.max_import_size` in `smart_env.json`\n- Removed deprecated Smart Search API registered to window since `smart_env` object is now globally accessible\n- Fixed bug causing expanded connections results to render twice\n\n## patch `v3.0.9`\n\n- Reworked the context builder UX in Smart Chat to prevent confusion\n	- Context is now added to the chat regardless of how the context selector modal is closed\n	- Removed "Back" button in favor of "Back" suggestion item\n- Fixed using `@` to open context selector in Smart Chat\n	- "Done" button now appears in the context selector modal when it is opened from the keyboard\n\n## patch `v3.0.10`\n\nFixed Google Gemini integration in the new Smart Chat\n\n## patch `v3.0.11`\n\nFixes unexpected scroll issue when dragging file from connections view (issue #1073)\n\n## patch `v3.0.12`\n\nFixes pasted text: should paste lines in correct order (no longer reversed)\n\n## patch `v3.0.13`\n\n- Prevents trying to process embed queue if embed model is not loaded\n	- Particularly for Ollama which may not be turned on when Obsidian starts\n	- Re-checks for Ollama server in intervals of a minute\n	- Embed queue can be restarted by clicking "Reload sources" in the Smart Environment settings\n\n## patch `v3.0.14`\n\n- Improved hover popover for blocks in connections results and context builder\n- Refactored `context_builder` component to extract `context_tree` component and prevent passing UI components\n  - these components are frequently re-used, the updated architecture should make it easier to maintain and extend\n- Fixed: should not embed blocks with size less than `min_chars`\n- Fixed: Smart Chat completion requests should have a properly ordered `messages` array\n\n## patch `v3.0.15`\n\n- Fixed: some Ollama embedding models triggering re-embedding every restart\n\n## patch `v3.0.16`\n\n- Fixed: no models available in Ollama should no longer cause issues in the settings\n\n## patch `v3.0.17`\n\n- Improved embedding processing UX\n	- show notification immediately to allow pausing sooner\n	- show notification every 30 seconds in addition to every 100 embeddings\n- Fixed: Smart Environment settings tab should be visible during "loading" state\n	- prevents "Loading Obsidian Smart Environment..." message from appearing indefinitely in instances where the environment fails to load from errors related to specific embedding models\n\n## patch `v3.0.18`\n\n- Fixed: Smart Connections view rendering on mobile\n	- should render when opening the view from the sidebar\n	- should update the results to the currently active file\n\n## patch `v3.0.19`\n\n- Added: model info to Smart Chat view\n	- shows before the first message and anytime the model changes since the last message\n- Fixed: ChatGPT sign-in with Google account\n	- should now work as expected\n	- will require re-signing in to ChatGPT after update\n- Fixed: Smart Chat thread adapter should better handle past completions to prevent unexpected behavior\n	- prevented `build_request` from outputting certain request content unless the completion is the current completion\n		- logic is specific to completion adapters (actions, actions_xml, thread)\n\n## patch `v3.0.20`\n\n- Fixed: Smart Environment settings tab should be visible during "loading" and "loaded" states\n- Fixed: Open URL externally should use window.open with "_external" if webviewer plugin is installed\n\n## patch `v3.0.21`\n\n- Implemented Smart Completions fallback to Smart Chat configuration\n	- WHY: enables use via global `smart_env` instance without requiring `chat_model` parameters in every request\n\n## patch `v3.0.22`\n\n- Improved connections view event handling\n	- prevent throwing error when no view container is present on iOS\n\n## patch `v3.0.23`\n\n- Added Getting Started guide\n	- opens automatically for new users\n	- can be opened manually via command `Show getting started`\n	- can be opened from the connections view "Help" icon\n	- can be opened from the main settings "Open getting started guide" button\n\n## patch `v3.0.24`\n\nFix Lookup tab not displaying.\n\n## patch `v3.0.25`\n\nFixed connections view help button failing to open\n\n## patch `v3.0.26`\n\nTemp disable bases integration since Obsidian changed how the integration works and there is currently no clear path to updating.\n\n## patch `v3.0.27`\n\n- Added: Smart Chat lookup now supports folder-based filtering\n	- mention a folder when requesting a lookup using self-referential pronoun (no special folder syntax required)\n		- ex. "Summarize my thoughts on this topic based on notes in my Content folder"\n- Added: Smart Chat system prompt now allows `{{folder_tree}}` variable\n	- this variable will be replaced with the folder tree of the current vault\n	- useful for providing context about the vault structure to the model\n- Improved: Smart Chat system message UI\n	- now collapses when longer than 10 lines\n\n## patch `v3.0.28`\n\nFixed: Getting Started slideshow UX on mobile.\n\n## patch `v3.0.29`\n\n- Fixed: prevented regex special characters from throwing error when excluded file/folder contains them\n- Fixed: Smart Chat should return lookup context results when Smart Blocks are disabled\n\n## patch `v3.0.30`\n\n- Added: Drag multiple files into the Smart Chat window to add as context\n- Fixed: Smart Connections results remain stable when dragging connection from bottom of the list\n\n## patch `v3.0.31`\n\n- Added: Smart Chat: "Retrieve more" button in lookup results\n	- allows retrieving more results from the lookup\n	- includes retrieved context in subsequent lookup to provide more context to the model\n- Improved: Smart Chat: prior message handling in subsequent completions\n\n## patch `v3.0.32`\n\n- Added: Anthropic Claude Sonnet 4 & Opus 4 to Smart Chat\n- Improved: Smart Chat new note button no longer automatically addes open notes as context \n	- Added: "Add visible" and "Add open" notes options to Smart Context selector \n	- Added: "Add context" button above chat input on new chat for quick access to context selector\n- Fixed: Removing an item in the context selector updates the stats\n- Fixed: Smart Chat system message should render no more than once per turn\n\n## patch `v3.0.33`\n\n- Improved: Context Tree styles improved by samhiatt (PR #1091)\n- Improved: Smart Chat message should be full width if container is less than 600px\n- Fixed: Smart Chat model selection should handle when Ollama is available but no models are installed\n\n## patch `v3.0.34`\n\n- Added: Multi-modal support (images as context) using Ollama models\n	- requires Ollama models that support multi-modal input like `gemma3:4b`\n\n\n## patch `v3.0.37`\n\n- Fixed: Ollama `max_tokens` parameter should accurately reflect the model\'s max tokens\n- Fixed: Getting Started slideshow should only show automatically for new users\n\n## patch `v3.0.38`\n\n- Fixed: Smart Chat LM Studio models handling of `tool_choice` parameter\n\n## patch `v3.0.39`\n\n- Improved: Release notes user experience to use the same as the native Obsidian release notes\n	- Now uses new tab instead of modal to display the release notes\n- Fixed: Reduced vector length OpenAI embedding models should be selectable in the settings\n\n## patch `v3.0.40`\n\n- Added: Smart Chat: Support for PDFs as context in compatible models\n	- Currently works with Anthropic, Google Gemini, and OpenAI models\n	- PDFs must be manually added to the chat context. The context lookup action will not surface the PDFs because they are not embedded.\n- Improved: Smart Chat: LM Studio settings\n	- Added: Instructions for setting up LM Studio (CORS)\n	- Removed: Unecessary API key setting\n\n## patch `v3.0.41`\n\n- Fix: Bug in outlinks parsing was preventing embedding processing in some cases\n\n## patch `v3.0.42`\n\n- Added: `re_import_wait_time` setting to Smart Environment settings\n	- allows setting the time to wait before re-importing and embedding a note after it has been modified\n	- WHY: improves real-time nature of the connections\n- Improved: Connections view: Handling when current note hasn\'t been imported\n	- removed notification\n	- added refresh instructions to the connections view\n- Improved: Connections view when no results are found\n - added "No connections found" message\n - added instructions for reloading sources from the settings\n- Reduced size of bundled plugin from ~6.5MB to ~1MB (>80% reduction)\n - removed tokenizer that\'s only used by OpenAI embedding models\n - removed sourcemap since it\'s removed by Obsidian anyway\n - WHY: make the code easier to read (trust through transparency)\n- Fixed: Embeddings should update when file is changed\n\n## patch `v3.0.43`\n\n- Fixed: Smart Chat: Context tree connections icon should show connections in the suggestions when clicked\n\n## patch `v3.0.44`\n\n- Improved: Settings descriptions for the Connections view\n- Changed: Moved "muted notices" settings to the obsidian-smart-env module\n\n## patch `v3.0.45`\n\n- Added: Status element for indicating embedding queue for changed notes\n	- click to begin embedding otherwise waits until `re_import_wait_time` has passed\n- Fixed: Smart Environment: only changed blocks should re-embed when the note is modified\n	- Adds block has check to parse_blocks to prevent `queue_embed` from being called on blocks that haven\'t changed\n- Fixed: Release notes should open in a new tab instead of relpacing the current tab\n- Moved: Smart Plugins access to the obsidian-smart-env module\n\n## patch `v3.0.46`\n\n- Added: Smart Chat: Include relevance score for item in context tree if retrieved from a lookup\n	- allows users to see how relevant the item is to the current chat context\n- Added: Snowflake Arctic Embed models to the built-in embedding adapter (transformers)\n	- Snowflake/snowflake-arctic-embed-xs\n	- Snowflake/snowflake-arctic-embed-s\n	- Snowflake/snowflake-arctic-embed-m\n- Added: Report a bug and Request a feature buttons to the settings\n- Fixed: Smart Context: Tree should not split paths with slashes or hashtags within wikilinks\n	- ex. `[[some/path.md#subpath]]` should not be split into `some/path.md` and `subpath`\n- Improved: Smart Chat: Prevent trying to use folder scope in lookup when the folder provided by the AI does not exist\n\n## patch `v3.0.47`\n\n- Added: Hide connections in connections view\n	- Right-click on a connection result to open the new context menu\n	- Select "Hide" to hide the connection result\n	- Select "Unhide All" to unhide all hidden connections for the current item\n- Updated: Smart Contexts to use new ContextItem architecture\n	- The new architecture allows for more flexibility and better performance\n\n## patch `v3.0.50`\n\n- Added: Smart Chat: Latest OpenAI chat models (removed incompatible models)\n	- o3 and o4 class models now available in the settingsa\n\n## patch `v3.0.51`\n\n- Fixed: Connections view: Include/Exclude filters should allow multiple comma-separated values\n\n## patch `v3.0.52`\n\n- Fixed: Initial import should not embed blocks where `should_embed` is false\n  - see #1077 for details\n	- improves performance and decreases embedding time by reducing total number of blocks\n	- may require "Clear sources data" and "Reload sources" to be run in the settings to take effect\n\n## patch `v3.0.53`\n\n- Improved: Smart Chat: opening logic (prevent splitting sidebar)\n	- now opens in new tab in main workspace by default\n	- tab may still be dragged to the sidebar\n- Fixed: Smart Chat: Context selector should open when Smart Context plugin is not installed\n	- should now open the context selector modal instead of throwing an error\n\n## patch `v3.0.54`\n\n- Fixed: Smart Chat: Context selector: "Done" button should not cause crash\n- Added discussion template for Smart Connections workflows and button to open it\n	- encourages users to share their workflows with the community\n	- button opens the discussion template in a new tab\n	- discussion template includes instructions for sharing workflows\n\n## patch `v3.0.55`\n\n- Fixed: Smart Chat `@` should open context selector modal on subsequent messages\n\n## patch `v3.0.56`\n\n- Added: Smart Chat: Improved message link interactions\n  - hover-preview: hold cmd/ctrl while hovering to preview the link\n	- drag: click and hold the link, dragging it to create a link in the active note, or dragging to the chat window to add as context\n	- click: hold cmd/ctrl while clicking to open the link in a new tab, cmd/ctrl+alt click to open in split view\n- Fixed: Smart Chat: new threads should save after the first message\n\n## patch `v3.0.57`\n\n- Improved: Smart Chat: date format in default thread name\n- Fixed: Smart Chat: message copy button should copy message to the clipboard';
+var __default = '# Smart Connections `v3`\n## New Features\n\n### Smart Chat v1\n- Effectively utilizes the Smart Environment architecture to facilitate deeper integration and new features.\n#### Improved Smart Chat UI\n- New context builder\n	- makes managing conversation context easier\n- Drag images and notes into the chat window to add as context\n- Separate settings tab specifically for chat features\n#### *Improved Smart Chat compatibility with Local Models*\n- Note lookup (RAG) now compatible with models that don\'t support tool calling\n	- Disable tool calling in the settings\n### Ollama embedding adapter\n- use Ollama to create embeddings\n\n## Fixed\n- renders content in connections results when all result items are expanded by default\n## Housekeeping\n- Updated README\n	- Improved Getting Started section\n	- Removed extraneous details\n- Improved version release process\n- Smart Chat `v0` (legacy)\n	- Smart Chat `v0` will continue to be available for a short time and will be removed in `v3.1` unless unforeseen issues arise in which case it will be removed sooner.\n	- Smart Chat `v0` code was moved from `brianpetro/jsbrains` to the Smart Connections repo\n\n## patch `v3.0.1`\n\nImproved Mobile UX and cleaned up extraneous code.\n\n## patch `v3.0.3`\n\nFixed issue where connections results would not render if expand-all results was toggled on.\n\n## patch `v3.0.4`\n\nPrevented frontmatter blocks from being included in connections results. Fixed toggle-fold-all logic.\n\n## patch `v3.0.5`\n\nFixes Ollama Embedding model loading issue in the settings.\n\n## patch `v3.0.6`\n\nFixed release notes should only show once after update.\n\n## patch `v3.0.7`\n\nAdded "current/dynamic" option in bases connection score modal to add score based on current file. Fixed issue causing Ollama to seemingly embed at 0 tokens/sec. Fixed bases integration modal failing on new bases.\n\n## patch `v3.0.8`\n\n- Improved bases integration UX\n	- prevent throwing error on erroroneous input in `cos_sim` base function\n	- gracefully handle when smart_env is not loaded yet\n- Reduced max size of markdown file that will be imported from 1MB to 300KB (prevent long initial import)\n	- advanced configuration available via `smart_sources.obsidian_markdown_source_content_adapter.max_import_size` in `smart_env.json`\n- Removed deprecated Smart Search API registered to window since `smart_env` object is now globally accessible\n- Fixed bug causing expanded connections results to render twice\n\n## patch `v3.0.9`\n\n- Reworked the context builder UX in Smart Chat to prevent confusion\n	- Context is now added to the chat regardless of how the context selector modal is closed\n	- Removed "Back" button in favor of "Back" suggestion item\n- Fixed using `@` to open context selector in Smart Chat\n	- "Done" button now appears in the context selector modal when it is opened from the keyboard\n\n## patch `v3.0.10`\n\nFixed Google Gemini integration in the new Smart Chat\n\n## patch `v3.0.11`\n\nFixes unexpected scroll issue when dragging file from connections view (issue #1073)\n\n## patch `v3.0.12`\n\nFixes pasted text: should paste lines in correct order (no longer reversed)\n\n## patch `v3.0.13`\n\n- Prevents trying to process embed queue if embed model is not loaded\n	- Particularly for Ollama which may not be turned on when Obsidian starts\n	- Re-checks for Ollama server in intervals of a minute\n	- Embed queue can be restarted by clicking "Reload sources" in the Smart Environment settings\n\n## patch `v3.0.14`\n\n- Improved hover popover for blocks in connections results and context builder\n- Refactored `context_builder` component to extract `context_tree` component and prevent passing UI components\n  - these components are frequently re-used, the updated architecture should make it easier to maintain and extend\n- Fixed: should not embed blocks with size less than `min_chars`\n- Fixed: Smart Chat completion requests should have a properly ordered `messages` array\n\n## patch `v3.0.15`\n\n- Fixed: some Ollama embedding models triggering re-embedding every restart\n\n## patch `v3.0.16`\n\n- Fixed: no models available in Ollama should no longer cause issues in the settings\n\n## patch `v3.0.17`\n\n- Improved embedding processing UX\n	- show notification immediately to allow pausing sooner\n	- show notification every 30 seconds in addition to every 100 embeddings\n- Fixed: Smart Environment settings tab should be visible during "loading" state\n	- prevents "Loading Obsidian Smart Environment..." message from appearing indefinitely in instances where the environment fails to load from errors related to specific embedding models\n\n## patch `v3.0.18`\n\n- Fixed: Smart Connections view rendering on mobile\n	- should render when opening the view from the sidebar\n	- should update the results to the currently active file\n\n## patch `v3.0.19`\n\n- Added: model info to Smart Chat view\n	- shows before the first message and anytime the model changes since the last message\n- Fixed: ChatGPT sign-in with Google account\n	- should now work as expected\n	- will require re-signing in to ChatGPT after update\n- Fixed: Smart Chat thread adapter should better handle past completions to prevent unexpected behavior\n	- prevented `build_request` from outputting certain request content unless the completion is the current completion\n		- logic is specific to completion adapters (actions, actions_xml, thread)\n\n## patch `v3.0.20`\n\n- Fixed: Smart Environment settings tab should be visible during "loading" and "loaded" states\n- Fixed: Open URL externally should use window.open with "_external" if webviewer plugin is installed\n\n## patch `v3.0.21`\n\n- Implemented Smart Completions fallback to Smart Chat configuration\n	- WHY: enables use via global `smart_env` instance without requiring `chat_model` parameters in every request\n\n## patch `v3.0.22`\n\n- Improved connections view event handling\n	- prevent throwing error when no view container is present on iOS\n\n## patch `v3.0.23`\n\n- Added Getting Started guide\n	- opens automatically for new users\n	- can be opened manually via command `Show getting started`\n	- can be opened from the connections view "Help" icon\n	- can be opened from the main settings "Open getting started guide" button\n\n## patch `v3.0.24`\n\nFix Lookup tab not displaying.\n\n## patch `v3.0.25`\n\nFixed connections view help button failing to open\n\n## patch `v3.0.26`\n\nTemp disable bases integration since Obsidian changed how the integration works and there is currently no clear path to updating.\n\n## patch `v3.0.27`\n\n- Added: Smart Chat lookup now supports folder-based filtering\n	- mention a folder when requesting a lookup using self-referential pronoun (no special folder syntax required)\n		- ex. "Summarize my thoughts on this topic based on notes in my Content folder"\n- Added: Smart Chat system prompt now allows `{{folder_tree}}` variable\n	- this variable will be replaced with the folder tree of the current vault\n	- useful for providing context about the vault structure to the model\n- Improved: Smart Chat system message UI\n	- now collapses when longer than 10 lines\n\n## patch `v3.0.28`\n\nFixed: Getting Started slideshow UX on mobile.\n\n## patch `v3.0.29`\n\n- Fixed: prevented regex special characters from throwing error when excluded file/folder contains them\n- Fixed: Smart Chat should return lookup context results when Smart Blocks are disabled\n\n## patch `v3.0.30`\n\n- Added: Drag multiple files into the Smart Chat window to add as context\n- Fixed: Smart Connections results remain stable when dragging connection from bottom of the list\n\n## patch `v3.0.31`\n\n- Added: Smart Chat: "Retrieve more" button in lookup results\n	- allows retrieving more results from the lookup\n	- includes retrieved context in subsequent lookup to provide more context to the model\n- Improved: Smart Chat: prior message handling in subsequent completions\n\n## patch `v3.0.32`\n\n- Added: Anthropic Claude Sonnet 4 & Opus 4 to Smart Chat\n- Improved: Smart Chat new note button no longer automatically addes open notes as context \n	- Added: "Add visible" and "Add open" notes options to Smart Context selector \n	- Added: "Add context" button above chat input on new chat for quick access to context selector\n- Fixed: Removing an item in the context selector updates the stats\n- Fixed: Smart Chat system message should render no more than once per turn\n\n## patch `v3.0.33`\n\n- Improved: Context Tree styles improved by samhiatt (PR #1091)\n- Improved: Smart Chat message should be full width if container is less than 600px\n- Fixed: Smart Chat model selection should handle when Ollama is available but no models are installed\n\n## patch `v3.0.34`\n\n- Added: Multi-modal support (images as context) using Ollama models\n	- requires Ollama models that support multi-modal input like `gemma3:4b`\n\n\n## patch `v3.0.37`\n\n- Fixed: Ollama `max_tokens` parameter should accurately reflect the model\'s max tokens\n- Fixed: Getting Started slideshow should only show automatically for new users\n\n## patch `v3.0.38`\n\n- Fixed: Smart Chat LM Studio models handling of `tool_choice` parameter\n\n## patch `v3.0.39`\n\n- Improved: Release notes user experience to use the same as the native Obsidian release notes\n	- Now uses new tab instead of modal to display the release notes\n- Fixed: Reduced vector length OpenAI embedding models should be selectable in the settings\n\n## patch `v3.0.40`\n\n- Added: Smart Chat: Support for PDFs as context in compatible models\n	- Currently works with Anthropic, Google Gemini, and OpenAI models\n	- PDFs must be manually added to the chat context. The context lookup action will not surface the PDFs because they are not embedded.\n- Improved: Smart Chat: LM Studio settings\n	- Added: Instructions for setting up LM Studio (CORS)\n	- Removed: Unecessary API key setting\n\n## patch `v3.0.41`\n\n- Fix: Bug in outlinks parsing was preventing embedding processing in some cases\n\n## patch `v3.0.42`\n\n- Added: `re_import_wait_time` setting to Smart Environment settings\n	- allows setting the time to wait before re-importing and embedding a note after it has been modified\n	- WHY: improves real-time nature of the connections\n- Improved: Connections view: Handling when current note hasn\'t been imported\n	- removed notification\n	- added refresh instructions to the connections view\n- Improved: Connections view when no results are found\n - added "No connections found" message\n - added instructions for reloading sources from the settings\n- Reduced size of bundled plugin from ~6.5MB to ~1MB (>80% reduction)\n - removed tokenizer that\'s only used by OpenAI embedding models\n - removed sourcemap since it\'s removed by Obsidian anyway\n - WHY: make the code easier to read (trust through transparency)\n- Fixed: Embeddings should update when file is changed\n\n## patch `v3.0.43`\n\n- Fixed: Smart Chat: Context tree connections icon should show connections in the suggestions when clicked\n\n## patch `v3.0.44`\n\n- Improved: Settings descriptions for the Connections view\n- Changed: Moved "muted notices" settings to the obsidian-smart-env module\n\n## patch `v3.0.45`\n\n- Added: Status element for indicating embedding queue for changed notes\n	- click to begin embedding otherwise waits until `re_import_wait_time` has passed\n- Fixed: Smart Environment: only changed blocks should re-embed when the note is modified\n	- Adds block has check to parse_blocks to prevent `queue_embed` from being called on blocks that haven\'t changed\n- Fixed: Release notes should open in a new tab instead of relpacing the current tab\n- Moved: Smart Plugins access to the obsidian-smart-env module\n\n## patch `v3.0.46`\n\n- Added: Smart Chat: Include relevance score for item in context tree if retrieved from a lookup\n	- allows users to see how relevant the item is to the current chat context\n- Added: Snowflake Arctic Embed models to the built-in embedding adapter (transformers)\n	- Snowflake/snowflake-arctic-embed-xs\n	- Snowflake/snowflake-arctic-embed-s\n	- Snowflake/snowflake-arctic-embed-m\n- Added: Report a bug and Request a feature buttons to the settings\n- Fixed: Smart Context: Tree should not split paths with slashes or hashtags within wikilinks\n	- ex. `[[some/path.md#subpath]]` should not be split into `some/path.md` and `subpath`\n- Improved: Smart Chat: Prevent trying to use folder scope in lookup when the folder provided by the AI does not exist\n\n## patch `v3.0.47`\n\n- Added: Hide connections in connections view\n	- Right-click on a connection result to open the new context menu\n	- Select "Hide" to hide the connection result\n	- Select "Unhide All" to unhide all hidden connections for the current item\n- Updated: Smart Contexts to use new ContextItem architecture\n	- The new architecture allows for more flexibility and better performance\n\n## patch `v3.0.50`\n\n- Added: Smart Chat: Latest OpenAI chat models (removed incompatible models)\n	- o3 and o4 class models now available in the settingsa\n\n## patch `v3.0.51`\n\n- Fixed: Connections view: Include/Exclude filters should allow multiple comma-separated values\n\n## patch `v3.0.52`\n\n- Fixed: Initial import should not embed blocks where `should_embed` is false\n  - see #1077 for details\n	- improves performance and decreases embedding time by reducing total number of blocks\n	- may require "Clear sources data" and "Reload sources" to be run in the settings to take effect\n\n## patch `v3.0.53`\n\n- Improved: Smart Chat: opening logic (prevent splitting sidebar)\n	- now opens in new tab in main workspace by default\n	- tab may still be dragged to the sidebar\n- Fixed: Smart Chat: Context selector should open when Smart Context plugin is not installed\n	- should now open the context selector modal instead of throwing an error\n\n## patch `v3.0.54`\n\n- Fixed: Smart Chat: Context selector: "Done" button should not cause crash\n- Added discussion template for Smart Connections workflows and button to open it\n	- encourages users to share their workflows with the community\n	- button opens the discussion template in a new tab\n	- discussion template includes instructions for sharing workflows\n\n## patch `v3.0.55`\n\n- Fixed: Smart Chat `@` should open context selector modal on subsequent messages\n\n## patch `v3.0.56`\n\n- Added: Smart Chat: Improved message link interactions\n  - hover-preview: hold cmd/ctrl while hovering to preview the link\n	- drag: click and hold the link, dragging it to create a link in the active note, or dragging to the chat window to add as context\n	- click: hold cmd/ctrl while clicking to open the link in a new tab, cmd/ctrl+alt click to open in split view\n- Fixed: Smart Chat: new threads should save after the first message\n\n## patch `v3.0.57`\n\n- Improved: Smart Chat: date format in default thread name\n- Fixed: Smart Chat: message copy button should copy message to the clipboard\n\n## patch `v3.0.58`\n\n- Improved: Smart Connections dynamic codeblock:  filter options passed to connections and lookup components; adjust styles for better layout\n- Fixed: Smart Chat: should always have a `current_completion` instance (prevent failing to send subsequent messages)\n\n## patch `v3.0.59`\n\n- Added: Smart Chat: xAI Grok adapter\n	- allows using xAI Grok models in Smart Chat\n	- requires xAI Grok API key to be set in the settings\n- Added: Excalidraw source adapter\n	- allows Excalidraw files to be used as sources in Smart Connections\n	- supports Excalidraw files with `.excalidraw.md` extension\n- Added: Source inspector: source-level information\n	- shows whether the source should be embedded based on the settings and current content\n	- shows whether the source has been embedded (vectorized)\n	- added button to show the full surce data object\n- Improved: Connections view: improved messaging when connections results cannot be returned\n	- added more detailed error messages for different failure scenarios\n\n## patch `v3.0.60`\n\n- Smart Chat: bug fixes\n	- improve chat thread name handling\n	- prevent errors when chat is open onload';
 
 // src/views/release_notes_view.js
 var ReleaseNotesView = class _ReleaseNotesView extends import_obsidian54.ItemView {
@@ -37762,7 +38014,6 @@ var SmartConnectionsPlugin = class extends Plugin {
           const source_data_path = source2.collection.data_adapter.get_item_data_path(source2.key);
           await this.env.data_fs.remove(source_data_path);
         } else {
-          this.env.smart_sources.fs.include_file(curr_file.path);
           source2 = this.env.smart_sources.init_file_path(curr_file.path);
         }
         if (!source2) return this.notices.show("unable_to_init_source", { key: curr_file.path });
@@ -37829,11 +38080,36 @@ ${message ? "# " + message + "\n" : ""}${ignore}`);
   async render_code_block(contents, container, ctx) {
     container.empty();
     container.createEl("span", { text: "Loading\u2026" });
+    await SmartEnv2.wait_for({ loaded: true });
+    const content_lines = [];
+    const filter = {};
     if (contents.trim().length) {
+      const lines = contents.split("\n").map((line) => line.trim()).filter((line) => line.length);
+      for (const line of lines) {
+        if (line.startsWith("include:")) {
+          const value = line.replace("include:", "").trim();
+          if (value) filter.key_includes_any = value.split(",").map((v) => v.trim());
+          continue;
+        }
+        if (line.startsWith("does not end with:")) {
+          const value = line.replace("does not end with:", "").trim();
+          if (value) filter.exclude_key_ends_with_any = value.split(",").map((v) => v.trim());
+          continue;
+        }
+        if (line.startsWith("limit:")) {
+          const value = line.replace("limit:", "").trim();
+          if (value) filter.limit = parseInt(value);
+          continue;
+        }
+        content_lines.push(line);
+      }
+    }
+    if (content_lines.length) {
+      contents = content_lines.join("\n");
       const frag2 = await this.env.render_component(
         "lookup",
         this.env.smart_sources,
-        { attribution: this.attribution, query: contents }
+        { attribution: this.attribution, query: contents, filter }
       );
       container.empty();
       container.appendChild(frag2);
@@ -37848,7 +38124,7 @@ ${message ? "# " + message + "\n" : ""}${ignore}`);
     const frag = await this.env.render_component(
       "connections",
       entity,
-      { attribution: this.attribution }
+      { attribution: this.attribution, filter }
     );
     container.empty();
     container.appendChild(frag);
