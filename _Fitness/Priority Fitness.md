@@ -172,12 +172,13 @@ Chin ups higher priority alternate each quarter or even month. Try Burpee to Pul
 4. **Super ROM Lateral Raise Wrist Curl** (try cable)– 5lb
 5. **Rev Crunch** 
 6. **Kneeling Cable Crunch**(Top Angle) - 33lb 
-7. **Pallof Press**(Wrist Height) - 30lb
+7. **[Pallof Press](https://www.youtube.com/watch?v=ma2OjgP5XDc&pp=ygUMUGFsbG9mIFByZXNz)**(Wrist Height) - 30lb
 8. **Rear Delt Fly/[DB Chest Supported Rear Delt Fly](https://youtu.be/iCbVhDNpG-Y?si=g-puZtoYX7u57LwT)** - 70lb/20lb
-9. **Lateral Head Single-Arm Tricep Extension**(Top Angle) – 20lb
-10. **Cable Pancake Stretch**(Low Angle) - 49.5
-11. **Back Extension** - 15lb - do consistently for a 2 weeks and try ft to single leg variation 
-12. **[Low Cable Goblet Squat](https://youtu.be/f6eI0JI9AYA?si=TTKH4FrAivJYEyd0)**  - 30lb to 40lb
+9. **[Incline Prone Lateral Raise](https://youtu.be/Wz1C8NzWg5A?si=epnUd7OS6WC75u1Y&t=112)** - 15lb
+10. **Lateral Head Single-Arm Tricep Extension**(Top Angle) – 20lb
+11. **Cable Pancake Stretch**(Low Angle) - 49.5
+12. **Back Extension** - 15lb - do consistently for a 2 weeks and try ft to single leg variation 
+13. **[Low Cable Goblet Squat](https://youtu.be/f6eI0JI9AYA?si=TTKH4FrAivJYEyd0)**  - 30lb to 40lb
 
 ##### Build to Doing Safely
 13. ***Band/Barbell/[Cable](https://youtu.be/2M1Mikqf5lY?si=1Me7DqZvB5XL1Orm)/Dumbbell/[Landmine Single-Leg RDL](https://www.youtube.com/watch?v=wZJERqVNY98) - 10lb to 30lb***

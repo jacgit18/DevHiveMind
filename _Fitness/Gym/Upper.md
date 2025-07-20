@@ -145,7 +145,7 @@ Reverse Preacher Curl(3:14)
 
 
 
-![Cable Pallof Press - YouTube](https://www.youtube.com/watch?v=ma2OjgP5XDc&pp=ygUMUGFsbG9mIFByZXNz) ^bfafbc
+[Pallof Press](https://www.youtube.com/watch?v=ma2OjgP5XDc&pp=ygUMUGFsbG9mIFByZXNz) ^bfafbc
 
 ### Plyometrics(Jumps) Calisthenics
 - Clap push-ups
@@ -173,3 +173,5 @@ Reverse Preacher Curl(3:14)
 
 
 ![Dumbbell Skull Crusher - OPEX Exercise Library - YouTube](https://www.youtube.com/watch?v=jO2Jl9eZpXk) ^6beb70
+
+
