@@ -188,7 +188,7 @@ Allowed to practice each excercise *here* max twice a week. Also try doing chest
 ##### Build to Doing Safely
 14. Bench press accessory excercise to strengthening rotater cuff
 	1. **Butler Tricep Cable Extension** - lb
-	2. **Flat Bench Press** - 5lb
+	2. **Flat Bench Shoulder Press** - 5lb
 15. ***Band/Barbell/[Cable](https://youtu.be/2M1Mikqf5lY?si=1Me7DqZvB5XL1Orm)/Dumbbell/[Landmine Single-Leg RDL](https://www.youtube.com/watch?v=wZJERqVNY98) - 10lb to 30lb***
 16. **Side Lateral QL Extension** - 15lb - same thing after building up from single leg back extension and doing this consistently then do [rotating variation](https://youtu.be/KJwARxV9a6g?si=4C--YLWJnUcFaMmx) once doing consistent 4 sets 8 reps.
 	- Besides doing on back extension machine can do [Lateral Flexion on Stability Ball](https://youtu.be/FrohQ--m7fs?si=Z4akKJnru0ut8S8X)
