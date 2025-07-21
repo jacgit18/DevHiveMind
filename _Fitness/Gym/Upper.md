@@ -175,3 +175,4 @@ Reverse Preacher Curl(3:14)
 ![Dumbbell Skull Crusher - OPEX Exercise Library - YouTube](https://www.youtube.com/watch?v=jO2Jl9eZpXk) ^6beb70
 
 
+[Cable Rope Facepull - YouTube](https://youtu.be/-MODnZdnmAQ?si=0nMt_vSzAvhDLWC6)
