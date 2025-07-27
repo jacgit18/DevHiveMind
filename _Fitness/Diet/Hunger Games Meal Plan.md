@@ -17,16 +17,17 @@ dg-publish:
 >  Watch food videos before or while eating to stimulate your appetite and help you eat more without feeling full too quickly. Also walk around while eating and limit water to eat more.
 
 
-| Months | Weight | Date       |
-| ------ | ------ | ---------- |
-| 0      | 120    | 05/01/2025 |
-| 1      | 122    | 06/01/2025 |
-| 2      | 123    | 07/01/2025 |
-| 3      | 12     | 08/01/2025 |
-| 4      | 12     | 09/01/2025 |
-| 5      | 12     | 10/01/2025 |
-| 6      | 13     | 11/01/2025 |
-| 7      | 13     | 12/01/2025 |
+| Months | Weight   | Date       |
+| ------ | -------- | ---------- |
+| -1     | 112(avg) | 2024       |
+| 0      | 120      | 05/01/2025 |
+| 1      | 122      | 06/01/2025 |
+| 2      | 123      | 07/01/2025 |
+| 3      | 125      | 08/01/2025 |
+| 4      | 12       | 09/01/2025 |
+| 5      | 12       | 10/01/2025 |
+| 6      | 13       | 11/01/2025 |
+| 7      | 13       | 12/01/2025 |
 
 
 | Months | Weight | Date       |
@@ -169,6 +170,8 @@ A little more fat but still good for bulking, refeeds, or mixed macros.
 |**Lean/Extra Lean**|30–40g|1–9g|110–220 kcal|
 |**Moderate Cuts**|27–31g|7–22g|180–280 kcal|
 
+- Aldi Top Round 
+- 
 
 ***Butcher cuts*** dry aged downtown Brooklyn butcher 
 - 4 flank steak 100ish 
