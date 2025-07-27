@@ -133,7 +133,7 @@ dinner not included yet in total for week
 ##### Dinner($0) - Total Daily Calories & Protein:  0 cal/ 0G protein
 
 ###### Accessories
-- Aldi Irish Butter(Hard/Soft): $4.19/$4.45
+- ***Aldi Irish Butter***(Hard/Soft): $4.19/$4.45
 
 ###### Meat
 - Aldi Top Round Steak $11.52 - breaks down to 4 cuts 280cal and 36G protein x2 = $23.04
@@ -158,18 +158,19 @@ Target steaks pretty decent
 
 ###### Non Meat
 - Quinoa
-- Aldi Chickpea pasta $3.79 6 servings 200cal
+- ***Aldi Chickpea Pasta*** $3.79 6 servings 200cal
 - Aldi Brown rice quinoa pasta $3.69 8 servings 200cal
 - 14 servings so for 2 meals per day in week roughly so have a pasta week
 - Raw sweet potatoes $2.89
 - Aldi Garbanzo beans $1.19
-- Aldi Frozen Asparagus $3.19 5
-- Aldi Frozen 
-- Aldi Frozen 
+- Aldi Frozen Asparagus $3.19 60cal total 20 per severing
+- Aldi Frozen Sweet Potatoes 200cal total 60 per serving
+- Aldi Frozen Brussels Sprouts 180cal total 45 per serving
+- Aldi Frozen Green Beans 150cal total 30 per serving
+- Aldi Frozen Spinach $2.15 90cal total 25 per severing
 - Rice Brown or Black
 - Canned Beans Chickpeas or Soybeans or pinto or navy
-- **Trader Joe Frozen Asparagus** $3.99()
-- **Trader Joe Frozen Brussels Sprouts**: $3.99()
+
 
 
 
@@ -310,6 +311,8 @@ Exclude cost of previous item purchase in previous week and buy things like kief
 - Beets
 - Ground beef eggs
 - **Provolone Cheese**: $4.89 (12 servings 70 cal)
+- **Trader Joe Frozen Asparagus** $3.99()
+- **Trader Joe Frozen Brussels Sprouts**: $3.99()
 #### Infrequent Purchase
 - Black Pepper
 - Himalayan Salt(mix with coconut water for Homemade  Electrolytes)
