@@ -141,8 +141,8 @@ dinner not included yet in total for week
 
 
 - Aldi Whole Chicken $14.03
-- Aldi Chicken breast $10.81
-- Aldi Ground meat $12 to $25(big pack)
+- Aldi Chicken Breast $10.81
+- Aldi Ground meat $11 to $25(big pack)
 
 
 - Bj's Wellsley Farms Boneless Beef Ribeye Steak -  $56.39
