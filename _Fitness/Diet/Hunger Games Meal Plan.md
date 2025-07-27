@@ -133,7 +133,8 @@ dinner not included yet in total for week
 ##### Dinner($0) - Total Daily Calories & Protein:  0 cal/ 0G protein
 
 ###### Meat
-- Aldi Top Round Steak $11.52 - breaks down to 4 cuts 280cal and 36G protein
+- Aldi Top Round Steak $11.52 - breaks down to 4 cuts 280cal and 36G protein x2 = $23.04
+
 - Aldi Whole Chicken $14.03
 - Aldi Chicken breast $10.81
 - Aldi Ground meat $12 to $25(big pack)
