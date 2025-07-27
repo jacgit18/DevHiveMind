@@ -189,8 +189,9 @@ Target steaks pretty decent
 
 ###### Non Meat
 - Quinoa
-- Aldi Chickpea pasta $3.79
-- Aldi Brown rice quinoa pasta $3.69
+- Aldi Chickpea pasta $3.79 6 servings 200cal
+- Aldi Brown rice quinoa pasta $3.69 8 servings 200cal
+- 14 servings so for 2 meals per day in week roughly so have a pasta week
 - Raw sweet potatoes 2.89
 - Aldi Garbanzo beans 1.19
 
