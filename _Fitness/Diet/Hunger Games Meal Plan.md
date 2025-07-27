@@ -134,12 +134,14 @@ dinner not included yet in total for week
 
 ###### Meat
 - Aldi Top Round Steak $11.52 - breaks down to 4 cuts 280cal and 36G protein x2 = $23.04
+- Bj's Wellsley Farms Inside Round London Broil, 3.25-4lbs $25.26
+
 
 - Aldi Whole Chicken $14.03
 - Aldi Chicken breast $10.81
 - Aldi Ground meat $12 to $25(big pack)
 - Aldi Tuna $1.69
-- Bj's Wellsley Farms Inside Round London Broil, 3.25-4lbs $25.26
+
 - Bj's Wellsley Farms Boneless Beef Ribeye Steak, 2.75-3.5 lbs $56.39
 
 ***Butcher cuts*** dry aged downtown Brooklyn butcher 
