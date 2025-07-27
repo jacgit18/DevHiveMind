@@ -173,6 +173,10 @@ A little more fat but still good for bulking, refeeds, or mixed macros.
 - Aldi Top Round Steak $11.52
 - Aldi Whole Chicken $14.03
 - Aldi Chicken breast $10.81
+- Aldi Ground meat $12 to $25(big pack)
+- Aldi Tuna $1.69
+- Bj's Wellsley Farms Inside Round London Broil, 3.25-4lbs $25.26
+- Bj's Wellsley Farms Boneless Beef Ribeye Steak, 2.75-3.5 lbs $56.39
 
 ***Butcher cuts*** dry aged downtown Brooklyn butcher 
 - 4 flank steak 100ish 
@@ -185,7 +189,11 @@ Target steaks pretty decent
 
 ###### Non Meat
 - Quinoa
-- Aldi healthy Pasta
+- Aldi Chickpea pasta $3.79
+- Aldi Brown rice quinoa pasta $3.69
+- Raw sweet potatoes 2.89
+- Aldi Garbanzo beans 1.19
+
 - Rice Brown or Black
 - Canned Beans Chickpeas or Soybeans or pinto or navy
 - **Trader Joe Frozen Asparagus** $3.99()
