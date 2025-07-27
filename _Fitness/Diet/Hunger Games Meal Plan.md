@@ -170,7 +170,7 @@ A little more fat but still good for bulking, refeeds, or mixed macros.
 |**Lean/Extra Lean**|30–40g|1–9g|110–220 kcal|
 |**Moderate Cuts**|27–31g|7–22g|180–280 kcal|
 
-- Aldi Top Round Steak $11.52
+- Aldi Top Round Steak $11.52 - breaks down to 4 cuts 280cal and 36G protein
 - Aldi Whole Chicken $14.03
 - Aldi Chicken breast $10.81
 - Aldi Ground meat $12 to $25(big pack)
