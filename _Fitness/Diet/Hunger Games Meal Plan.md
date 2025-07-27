@@ -98,6 +98,12 @@ dg-publish:
 #todo/BAU/Supplements
 - [ ] Try doing 10g to 15g of creatine  for the high end try when networking or doing something important for work.
 
+160 max can spend for a month 100 
+maybe drop another supplement to increase budget needed in addition to potential ginsing supplement drop 
+need money for non meat as well and occasional seasoning etc...
+
+#todo/BAU 
+- [ ]  Break down into a week assuming only eating one type of meat a week then half it between 4 days and use excess also prioritize cost
 #### Week One($60.35)  - total daily calories/protein:  2,221 to 2,301/80G 
 dinner not included yet in total for week
 
@@ -127,48 +133,7 @@ dinner not included yet in total for week
 
 ##### Dinner($0) - Total Daily Calories & Protein:  0 cal/ 0G protein
 
-160 max can spend for a month 100 
-maybe drop another supplement to increase budget needed in addition to potential ginsing supplement drop 
-need money for non meat as well and occasional seasoning etc...
 ###### Meat
-#todo/BAU 
-- [ ]  Break down into a week assuming only eating one type of meat a week then half it between 4 days and use excess also prioritize cost
-![[GLkAgUi.png]]
-## 🥩 **Healthiest Cuts** (USDA _“Lean” or “Extra Lean”_)
-
-| Cut                        | Avg. Cooked Size | Protein (g) | Fat (g) | Calories | Notes                                                     |
-| -------------------------- | ---------------- | ----------- | ------- | -------- | --------------------------------------------------------- |
-| **Top Round**              | 4 oz (113g)      | ~40g        | ~8g     | ~220     | Very lean and affordable. Great for roast beef, stir-fry. |
-| **Eye of Round**           | 4 oz (113g)      | ~32g        | ~5g     | ~180     | Leanest beef cut. Tougher; cook low and slice thin.       |
-| **Top Sirloin**            | 4 oz (113g)      | ~31g        | ~6g     | ~190     | Lean with flavor; grill or pan-sear.                      |
-| **Flank Steak**            | 4 oz (113g)      | ~32g        | ~8g     | ~210     | Marinate well; slice thin.                                |
-| **Hanger Steak**           | 4 oz (113g)      | ~33g        | ~9g     | ~220     | Rich flavor; a hidden lean gem.                           |
-| **Flat Iron**              | 4 oz (113g)      | ~31g        | ~9g     | ~210     | Underrated cut — tender and flavorful.                    |
-| **Pork Tenderloin**        | 4 oz (113g)      | ~30g        | ~3g     | ~150     | Leanest pork cut; roast or pan-sear.                      |
-| **Pork Loin Chops**        | 4 oz (113g)      | ~29g        | ~6g     | ~170     | Leaner than ribs or shoulder; best grilled or baked.      |
-| **Chicken Breast**         | 4 oz (113g)      | ~33g        | ~3.5g   | ~165     | Staple protein. Grill, bake, or shred.                    |
-| **Canned Tuna (in water)** | 4 oz             | ~26g        | ~1g     | ~110     | Budget protein; great in salads, wraps, or rice bowls.    |
-
-
-
-## 🥩 **Moderate Cuts**
-
-A little more fat but still good for bulking, refeeds, or mixed macros.
-
-|Cut|Avg. Cooked Size|Protein (g)|Fat (g)|Calories|Notes|
-|---|---|---|---|---|---|
-|**New York Strip**|4 oz (113g)|~31g|~13g|~250|Bold flavor. Trim visible fat for leaner prep.|
-|**80/20 Ground Beef**|4 oz|~27g|~22g|~280|Rich, moist — use sparingly during a cut.|
-|**90/10 Ground Beef**|4 oz|~28g|~11g|~210|Good compromise between taste and leanness.|
-|**93/7 Ground Turkey**|4 oz|~29g|~7g|~180|Lean and mild — great seasoned or in patties.|
-
-
-### ⚖️ Summary Table: Per 4 oz Cooked (113g)
-
-|Category|Protein Range|Fat Range|Calorie Range|
-|---|---|---|---|
-|**Lean/Extra Lean**|30–40g|1–9g|110–220 kcal|
-|**Moderate Cuts**|27–31g|7–22g|180–280 kcal|
 
 - Aldi Top Round Steak $11.52 - breaks down to 4 cuts 280cal and 36G protein
 - Aldi Whole Chicken $14.03
@@ -376,3 +341,39 @@ Increasing max per week to about $100 rounded up
 
 
 
+[[GLkAgUi.png]]
+## 🥩 **Healthiest Cuts** (USDA _“Lean” or “Extra Lean”_)
+
+| Cut                        | Avg. Cooked Size | Protein (g) | Fat (g) | Calories | Notes                                                     |
+| -------------------------- | ---------------- | ----------- | ------- | -------- | --------------------------------------------------------- |
+| **Top Round**              | 4 oz (113g)      | ~40g        | ~8g     | ~220     | Very lean and affordable. Great for roast beef, stir-fry. |
+| **Eye of Round**           | 4 oz (113g)      | ~32g        | ~5g     | ~180     | Leanest beef cut. Tougher; cook low and slice thin.       |
+| **Top Sirloin**            | 4 oz (113g)      | ~31g        | ~6g     | ~190     | Lean with flavor; grill or pan-sear.                      |
+| **Flank Steak**            | 4 oz (113g)      | ~32g        | ~8g     | ~210     | Marinate well; slice thin.                                |
+| **Hanger Steak**           | 4 oz (113g)      | ~33g        | ~9g     | ~220     | Rich flavor; a hidden lean gem.                           |
+| **Flat Iron**              | 4 oz (113g)      | ~31g        | ~9g     | ~210     | Underrated cut — tender and flavorful.                    |
+| **Pork Tenderloin**        | 4 oz (113g)      | ~30g        | ~3g     | ~150     | Leanest pork cut; roast or pan-sear.                      |
+| **Pork Loin Chops**        | 4 oz (113g)      | ~29g        | ~6g     | ~170     | Leaner than ribs or shoulder; best grilled or baked.      |
+| **Chicken Breast**         | 4 oz (113g)      | ~33g        | ~3.5g   | ~165     | Staple protein. Grill, bake, or shred.                    |
+| **Canned Tuna (in water)** | 4 oz             | ~26g        | ~1g     | ~110     | Budget protein; great in salads, wraps, or rice bowls.    |
+
+
+
+## 🥩 **Moderate Cuts**
+
+A little more fat but still good for bulking, refeeds, or mixed macros.
+
+|Cut|Avg. Cooked Size|Protein (g)|Fat (g)|Calories|Notes|
+|---|---|---|---|---|---|
+|**New York Strip**|4 oz (113g)|~31g|~13g|~250|Bold flavor. Trim visible fat for leaner prep.|
+|**80/20 Ground Beef**|4 oz|~27g|~22g|~280|Rich, moist — use sparingly during a cut.|
+|**90/10 Ground Beef**|4 oz|~28g|~11g|~210|Good compromise between taste and leanness.|
+|**93/7 Ground Turkey**|4 oz|~29g|~7g|~180|Lean and mild — great seasoned or in patties.|
+
+
+### ⚖️ Summary Table: Per 4 oz Cooked (113g)
+
+|Category|Protein Range|Fat Range|Calorie Range|
+|---|---|---|---|
+|**Lean/Extra Lean**|30–40g|1–9g|110–220 kcal|
+|**Moderate Cuts**|27–31g|7–22g|180–280 kcal|
