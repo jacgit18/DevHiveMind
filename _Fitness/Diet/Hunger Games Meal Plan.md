@@ -131,6 +131,7 @@ dinner not included yet in total for week
 
 
 ##### Dinner($0) - Total Daily Calories & Protein:  0 cal/ 0G protein
+Eat two pieces of meat per day so one chicken breast for a meal and some other meat or another chicken breast
 
 ###### Accessories
 - ***Aldi Irish Butter***(Hard/Soft): $4.19/$4.45
@@ -141,7 +142,7 @@ dinner not included yet in total for week
 
 
 - Aldi Whole Chicken $14.03
-- Aldi Chicken Breast $10.81
+- Aldi Chicken Breast $10.81 - 6 breast 430cal and 82G per breast(might be off assume table values)
 - Aldi Ground meat $11 to $25(big pack)
 
 
@@ -164,7 +165,7 @@ Target steaks pretty decent
 - Raw sweet potatoes $2.89
 - Aldi Garbanzo beans $1.19
 - Aldi Frozen Asparagus $3.19 60cal total 20 per severing
-- Aldi Frozen Sweet Potatoes 200cal total 60 per serving
+- Aldi Frozen Sweet Potatoes 275cal total 110 per serving
 - Aldi Frozen Brussels Sprouts 180cal total 45 per serving
 - Aldi Frozen Green Beans 150cal total 30 per serving
 - Aldi Frozen Spinach $2.15 90cal total 25 per severing
