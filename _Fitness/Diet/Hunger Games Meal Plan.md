@@ -130,11 +130,9 @@ dinner not included yet in total for week
 - ***Kozy Rice Pudding***: $7.50(120 calories 6 servings)
 
 
-
 ##### Dinner($0) - Total Daily Calories & Protein:  0 cal/ 0G protein
 
 ###### Meat
-
 - Aldi Top Round Steak $11.52 - breaks down to 4 cuts 280cal and 36G protein
 - Aldi Whole Chicken $14.03
 - Aldi Chicken breast $10.81
@@ -165,6 +163,10 @@ Target steaks pretty decent
 - **Trader Joe Frozen Asparagus** $3.99()
 - **Trader Joe Frozen Brussels Sprouts**: $3.99()
 
+
+
+###### Outside Food 
+- [Fat Fowl's Menu — Fat Fowl](https://www.thefatfowl.com/fat-fowl-menu)
 
 
 #### Week Two($41.18) - total daily calories/protein:  0/0G 
@@ -226,10 +228,6 @@ Exclude cost of previous item purchase in previous week and buy things like kief
 
 
 ##### Dinner($0) - Total Daily Calories & Protein:  0 cal/ 0G protein
-
-- 
-
-
 
 
 
