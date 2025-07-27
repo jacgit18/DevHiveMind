@@ -170,8 +170,9 @@ A little more fat but still good for bulking, refeeds, or mixed macros.
 |**Lean/Extra Lean**|30–40g|1–9g|110–220 kcal|
 |**Moderate Cuts**|27–31g|7–22g|180–280 kcal|
 
-- Aldi Top Round 
-- 
+- Aldi Top Round Steak $11.52
+- Aldi Whole Chicken $14.03
+- Aldi Chicken breast $10.81
 
 ***Butcher cuts*** dry aged downtown Brooklyn butcher 
 - 4 flank steak 100ish 
@@ -292,7 +293,8 @@ Exclude cost of previous item purchase in previous week and buy things like kief
 
 #### Extra Potential Add On
 - Pecans $
-- Irish Butter $
+- Aldi Irish Butter(Hard/Soft): $4.19/$4.45
+- 
 - Chicken sausage
 - Canned Tuna
 - Frozen Sweet potatoes $
