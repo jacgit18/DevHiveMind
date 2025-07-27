@@ -133,6 +133,7 @@ dinner not included yet in total for week
 ##### Dinner($0) - Total Daily Calories & Protein:  0 cal/ 0G protein
 Eat two pieces of meat per day so one chicken breast for a meal and some other meat or another chicken breast
 
+
 ###### Accessories
 - ***Aldi Irish Butter***(Hard/Soft): $4.19/$4.45
 
