@@ -79,7 +79,6 @@ dg-publish:
 - [ ] Make meal prep effortless as possible 
 - [ ] Update weekly totals
 - [ ] Try Healthy Avocado brownies no box stuff
-- [ ] Maybe try Smoked salmon and cream cheese
 - [ ] get weekly cost to around 45 to 50 a week assuming no change with supplement
 - [ ] Try Current new supplement stack without Ginsing plus for like a week to gauge difference so start July 17th
 - [ ] Buy meat, pasta, etc..  for a better idea on average monthly cost 
@@ -88,7 +87,6 @@ dg-publish:
 - [ ] Exclude mass gainer from cost calculation below only include in calories and protein calculation
 - [ ] Eggs, Quinoa, Chicken, Steak, Turkey, Pork  
 - [ ] Look for quality **Deli Meats** choose nitrate-free turkey/roast beef brands
-- [ ] For Mass gainer skip a month and try other two higher calorie flavors 
 - [ ] Not always getting eggs since in house a lot and can exclude Wonder beets
 - [ ] Make 4 day meal plan the rest of days premade food 
 - [ ] Go to Ditmas health food spot once a month, Aldi and trader Joe's twice a week  
@@ -111,6 +109,7 @@ dinner not included yet in total for week
 - ***Trader Joe Goat milk Keifer***: $5.69 ( 150 cal 4 servings per bottle each 8oz) × 2 = $11.18
 - **Frozen Raspberries Trader Joe** $3.79( 80 cal serving size 1 cup) x 3 =$11.37
 - **Chia Seeds**: $0.00(*Find a brand* serving size 2.5 Tbsp cal 150)
+- **These Nuts** $0.00 (1/4 cup serving size 120cal)
 - ~~***Thorne fiberMend Prebiotic***:(45 cal)~~
 - ***Transparent Labs Mass Gainer***:  760 cal and 53G protein(serving size 2 Scoops)
 
