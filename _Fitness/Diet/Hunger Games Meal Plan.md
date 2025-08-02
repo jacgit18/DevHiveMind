@@ -134,6 +134,7 @@ dinner not included yet in total for week
 Eat two pieces of meat per day so one chicken breast for a meal and some other meat or another chicken breast
 
 chicken 4oz 120cal 24G 
+rice avg serving size 1 cup about 230 to 250cal
 
 aldi path buy all at once avoid eating red meat several days straight
 total divided by week
