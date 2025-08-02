@@ -137,9 +137,20 @@ total divided by week
 chicken week 330cal 62G a day roughly Total price guesstimate $30 for week 2 breast
 chicken week 330cal 62G a day roughly Total price guesstimate $30 for week 2 breast
 Ground meat 5lb about 20 patties 280cal 28G 4 patties worth of meat per day for 5 days $25 4oz patties
-Top Round Steak $11.52 - breaks down to 4 cuts 280cal and 36G protein x2 = $23.04
+Top Round Steak $11.52 - breaks down to 4 cuts 280cal and 36G protein x2 = $25
+
+$110 roughly for total meat a month 
+
+butter 4.20 x 2 = 8.40
+***Aldi Chickpea Pasta*** $3.79 6 servings each 200cal so 2 servings across 3 days if cooking whole box 400cal total each day x 2 = $7.60
+
+Potato
+
+Rice 
 
 
+
+dinner rough total 
 
 
 ###### Accessories
