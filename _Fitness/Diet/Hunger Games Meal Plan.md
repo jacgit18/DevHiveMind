@@ -92,6 +92,7 @@ dg-publish:
 - [ ] Go to Ditmas health food spot once a month, Aldi and trader Joe's twice a week  
 - [ ] Maybe do [Chia pudding](https://youtu.be/jRu2aFdRL54?si=QwMBArCKrPHB3PPp) instead of throwing in shake get a healthy milk maybe from whole foods and include yogurt etc...
 - [ ] Add extra healthy stuff in sandwich to increase calories 
+- [ ] check rice price and quality rice like black or brown rice
 
 #todo/BAU/Supplements
 - [ ] Try doing 10g to 15g of creatine  for the high end try when networking or doing something important for work.
@@ -146,7 +147,9 @@ $110 roughly for total meat a month
 butter 4.20 x 2 = 8.40
 ***Aldi Chickpea Pasta*** $3.79 6 servings each 200cal so 2 servings across 3 days if cooking whole box 400cal total each day x 2 = $7.60
 
- Raw sweet potatoes $2.89
+***Aldi Brown Rice Quinoa Pasta*** $3.69 8 servings 200cal x 2 = $7.40
+
+Raw sweet potatoes $2.89 80cal about 160cal for two potatoes 
 
 
 dinner rough total 
