@@ -94,6 +94,7 @@ dg-publish:
 - [ ] Add extra healthy stuff in sandwich to increase calories 
 - [ ] Try taking Theanine before bed
 - [ ] check rice price and quality rice like black or brown rice
+- [ ] try peanut butter and avocado in shake
 
 #todo/BAU/Supplements
 - [ ] Try doing 10g to 15g of creatine  for the high end try when networking or doing something important for work.
