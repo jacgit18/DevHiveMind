@@ -132,6 +132,12 @@ dinner not included yet in total for week
 ##### Dinner($0) - Total Daily Calories & Protein:  0 cal/ 0G protein
 Eat two pieces of meat per day so one chicken breast for a meal and some other meat or another chicken breast
 
+aldi path buy all at once avoid eating red meat several days straight
+total divided by week
+chicken week 330cal 62G a day roughly Total price guesstimate $30 for week
+chicken week 330cal 62G a day roughly Total price guesstimate $30 for week
+Ground meat 5lb about 
+
 
 ###### Accessories
 - ***Aldi Irish Butter***(Hard/Soft): $4.19/$4.45
