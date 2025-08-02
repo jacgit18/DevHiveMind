@@ -146,10 +146,7 @@ $110 roughly for total meat a month
 butter 4.20 x 2 = 8.40
 ***Aldi Chickpea Pasta*** $3.79 6 servings each 200cal so 2 servings across 3 days if cooking whole box 400cal total each day x 2 = $7.60
 
-Potato
-
-Rice 
-
+ Raw sweet potatoes $2.89
 
 
 dinner rough total 
