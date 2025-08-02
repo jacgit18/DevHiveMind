@@ -134,6 +134,8 @@ dinner not included yet in total for week
 ##### Dinner($0) - Total Daily Calories & Protein:  0 cal/ 0G protein
 Eat two pieces of meat per day so one chicken breast for a meal and some other meat or another chicken breast
 
+mostly chicken heavy diet is the aim since healther them
+
 chicken 4oz 120cal 24G 
 rice avg serving size 1 cup about 230 to 250cal
 
@@ -161,8 +163,10 @@ non meat total $40 rounded to
 
 dinner rough total $175 = 43.75 per week
 
+ends up almost being to much like $446 Roughly Life LOL results in making more money but goal is to get an estimate on calorie intake in proportion to cost
 
-
+calories total with this rough configuration hitting about 3,000cal 
+protein 
 
 ###### Accessories
 - ***Aldi Irish Butter***(Hard/Soft): $4.19/$4.45
