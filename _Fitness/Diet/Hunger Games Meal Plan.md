@@ -153,6 +153,9 @@ butter 4.20 x 2 = 8.40
 
 Raw sweet potatoes $2.89 80cal about 160cal for two potatoes 
 
+Aldi Frozen Green Beans $3.00 150cal total 30 per serving
+Aldi Frozen Spinach $2.15 90cal total 25 per severing
+
 
 dinner rough total 
 
