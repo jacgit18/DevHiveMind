@@ -134,9 +134,12 @@ Eat two pieces of meat per day so one chicken breast for a meal and some other m
 
 aldi path buy all at once avoid eating red meat several days straight
 total divided by week
-chicken week 330cal 62G a day roughly Total price guesstimate $30 for week
-chicken week 330cal 62G a day roughly Total price guesstimate $30 for week
-Ground meat 5lb about 
+chicken week 330cal 62G a day roughly Total price guesstimate $30 for week 2 breast
+chicken week 330cal 62G a day roughly Total price guesstimate $30 for week 2 breast
+Ground meat 5lb about 20 patties 280cal 28G 4 patties worth of meat per day for 5 days $25 4oz patties
+Top Round Steak $11.52 - breaks down to 4 cuts 280cal and 36G protein x2 = $23.04
+
+
 
 
 ###### Accessories
