@@ -142,7 +142,8 @@ Eat two pieces of meat per day so one chicken breast for a meal and some other m
 
 
 - Aldi Whole Chicken $14.03
-- Aldi Chicken Breast $10.81 - 6 breast 430cal and 82G per breast(might be off assume table values)
+- Aldi Chicken Breast $10.81 - 6 breast 430cal and 82G per breast(might be off assume table values) x 2 = $22.00
+	- Rough draft 2 breast per day 165cal per breast 31G  12 breast a week for 6 days
 - Aldi Ground meat $11 to $25(big pack)
 
 
