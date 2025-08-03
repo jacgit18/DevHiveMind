@@ -1,3 +1,69 @@
+1 month aldi/bj meat split
+monthly
+Pork loin chop 1 pack 8 chops each 4 days      $18.65
+Chicken 18 days 2 breast    4 packs    $52
+Ground Beef Sirloin, 2 lbs 4 days  8 patties  $14.50
+
+Aldi Top Round 8 days 8 cuts 2 steaks  $24  
+travel $10
+
+
+upfront quarterly 272.81 
+
+
+non meat
+butter 4.20 x 2 = 8.40
+***Aldi Chickpea Pasta*** $3.79 6 servings each 200cal so 2 servings across 3 days if cooking whole box 400cal total each day x 2 = $7.60
+
+***Aldi Brown Rice Quinoa Pasta*** $3.69 8 servings 200cal x 2 = $7.40
+
+Raw sweet potatoes $2.89 80cal about 160cal for two potatoes x 2 = $5.80
+
+Aldi Frozen Green Beans $3.00 150cal total 30 per serving x 2 = $6
+Aldi Frozen Spinach $2.15 90cal total 25 per severing x 2 = $4.30
+
+
+
+
+
+other stuff
+kiefer x 7 = 40
+frozen fruit x 2 = 7.60
+eggs x 8 = 44
+sandwich stuff x 4 = 108
+rice pudding = 7.50
+
+40 non meat + other stuff 247 = 287 + meat 120 = 367
+
+
+quarter cost 
+
+120 + 741 = 861 + 360 = 1,221
+
+
+yearly
+5,000 food almost 
+1,600 supplements
+1,728 mass gainer 
+8,328 total health & food probably around 9000 assuming cost of non food and also including rice maybe bjs membership 
+
+10,000 overall
+
+
+breaks down 694 a month
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 last mile delivery business 
 

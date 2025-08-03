@@ -137,6 +137,11 @@ Eat two pieces of meat per day so one chicken breast for a meal and some other m
 
 mostly chicken heavy diet is the aim since healthier then red meat 
 
+
+if bjs option should uber once a month since delivery would cost around the same in total in terms of from and too
+
+for chicken if getting 4 packs 1 pack for fam and  three pack for me for month 
+
 chicken 4oz 120cal 24G 
 rice avg serving size 1 cup about 230 to 250cal
 
@@ -148,6 +153,56 @@ Ground meat 5lb about 20 patties 280cal 28G 4 patties worth of meat per day for 
 Top Round Steak $11.52 - breaks down to 4 cuts 280cal and 36G protein x2 = $25
 
 $135 roughly for total meat a month 
+bjs meat cheaper(steak and chicken) $86 + $25 ground meat max maybe lower etc..  + 30 commute maybe 10 dollars more for the same amount of meat
+
+the 30 commute can be divide by 3 since one trip assuming you once a quarter but would actually be 10 per month so actually cheaper then aldi
+
+
+for bjs one trip each quarter 
+
+
+
+10 packs of chicken breast for 3 months 13 if family into it 3 pack for them and whatever else stuff they get
+
+
+  for bjs 5.5lb ground meat it ends up being about 22 servings of 4oz patties each being roughly 170cal  26g  protein $27.45 so about 20G protein per burger 2 burgers per day for 11 days 
+
+1 month
+Ground meat 11 days 22 patties    1 packs    $25
+Chicken 18 days 2 breast    4 packs    $52
+Strip loin Steak 4 days 1 pack 4 streaks   $51
+travel $10
+
+
+probably can exclude or swap out with ground meat
+Pork loin chop 1 pack 8 chops each 4 days      $18.65  
+
+
+1 month
+Pork loin chop 2 pack 8 chops each 4 days      $37
+Chicken 18 days 2 breast    4 packs    $52
+Strip loin Steak 4 days 1 pack 4 streaks   $51
+travel $10
+
+
+
+
+
+
+1 month aldi/bj meat split
+Pork loin chop 1 pack 8 chops each 4 days      $18.65
+Chicken 18 days 2 breast    4 packs    $52
+Ground Beef Sirloin, 2 lbs 4 days  8 patties  $14.50
+Aldi Top Round 8 days 8 cuts 2 steaks  $24  
+travel $10
+
+kiefer x 7 = 40
+
+
+120 total + 40 non meat = 160
+
+
+
 
 
 butter 4.20 x 2 = 8.40
@@ -170,6 +225,12 @@ calories total with this rough configuration hitting about 3,000cal
 protein  total is 128 
 
 add a can of tuna which is about 27G for 5oz or get extra eggs might be cheaper then extra deli meat and also healthier since tuna can have mercury or try ground turkey 
+
+
+
+
+
+
 
 ###### Accessories
 - ***Aldi Irish Butter***(Hard/Soft): $4.19/$4.45
