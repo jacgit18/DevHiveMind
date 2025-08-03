@@ -29,7 +29,8 @@ Aldi Frozen Spinach $2.15 90cal total 25 per severing x 2 = $4.30
 other stuff
 kiefer x 7 = 40
 frozen fruit x 2 = 7.60
-eggs x 8 = 44
+eggs x 8 = 44 / cheaper at Bjs split between bjs and Aldi
+eggs x 5 = 14 + 5.50 x3 = 14 + 16.50 = 8 eggs $30.50
 sandwich stuff x 4 = 108
 rice pudding = 7.50
 
