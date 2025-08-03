@@ -45,12 +45,12 @@ yearly
 5,000 food almost 
 1,600 supplements
 1,728 mass gainer 
-8,328 total health & food probably around 9000 assuming cost of non food and also including rice maybe bjs membership 
+8,328 total health & food probably around 9000 assuming cost of non food and also including rice maybe bjs membership also beverages
 
 10,000 overall
 
 
-breaks down 694 a month
+breaks down 834 a month
 
 
 
