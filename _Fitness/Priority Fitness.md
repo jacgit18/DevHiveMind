@@ -52,7 +52,7 @@ dg-publish:
 #todo/Workout/Try
 - [ ] Try dumbbell lunge with back leg on balance board or plate or platform. 
 - [ ] Try all the way down push-ups with a hand release at the bottom and then push back up. 
-- [ ] try RDL Kettlebell 
+- [x] try RDL Kettlebell ✅ 2025-08-03
 - [ ] try Burpee pull up
 - [ ] try [Seated Y Cable Raises](https://youtu.be/-yL_BS28hcY?si=oO9QrIO_sv2SF5K1)(Do upstairs)
 - [ ] try [FreeMotion Front Shoulder Raise](https://youtu.be/_bzJ1Yb4XCU?si=v0UUNLSilV6NVM76)
@@ -128,7 +128,7 @@ Skip hypertrophy for some of these excercise were doing a lot of lifting since i
 - [Bottom Ups](https://www.youtube.com/watch?v=TJjRZBpY75I) - 20lb
 - ***Suitcase Carry/[March](https://www.youtube.com/watch?v=a9HkuLYNyJ0)*** - 20lb(Start with then transition to farmer)
 - Farmer Carry/March - 20lb
-- **Kettlebell Swing** - 20lb
+- ~~**Kettlebell Swing** - 20lb~~
 - ***Sled*** - twice a week push and pull - 50lb
 	- Backward walk, seated pancake pull, standing pull
 	- [Lateral Sled Drag](https://youtu.be/rGtYmX2aeAA?si=PnniyFsIluLeViKa)(try) - 50lb
@@ -189,7 +189,7 @@ Allowed to practice each excercise *here* max twice a week. Also try doing chest
 14. Bench press accessory excercise to strengthening rotater cuff
 	1. **Butler Tricep Cable Extension** - lb
 	2. **Flat Bench Shoulder Press** - 5lb
-15. ***Band/Barbell/[Cable](https://youtu.be/2M1Mikqf5lY?si=1Me7DqZvB5XL1Orm)/Dumbbell/[Landmine Single-Leg RDL](https://www.youtube.com/watch?v=wZJERqVNY98) - 10lb to 30lb***
+15. ***Band/Barbell/[Cable](https://youtu.be/2M1Mikqf5lY?si=1Me7DqZvB5XL1Orm)/Dumbbell/[Landmine Single-Leg RDL](https://www.youtube.com/watch?v=wZJERqVNY98) /[Kettlebell](https://youtu.be/b9bHy3ojQWA?si=4WkDrYdZGXFY-GAX)(15lb)- 10lb to 30lb***
 16. **Side Lateral QL Extension** - 15lb - same thing after building up from single leg back extension and doing this consistently then do [rotating variation](https://youtu.be/KJwARxV9a6g?si=4C--YLWJnUcFaMmx) once doing consistent 4 sets 8 reps.
 	- Besides doing on back extension machine can do [Lateral Flexion on Stability Ball](https://youtu.be/FrohQ--m7fs?si=Z4akKJnru0ut8S8X)
 17. **Single-Arm Behind-Back Cable Lateral Raise**(Low Angle) – 10lb
