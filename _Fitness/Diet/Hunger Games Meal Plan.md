@@ -17,17 +17,17 @@ dg-publish:
 >  Watch food videos before or while eating to stimulate your appetite and help you eat more without feeling full too quickly. Also walk around while eating and limit water to eat more.
 
 
-| Months | Weight   | Date       |
-| ------ | -------- | ---------- |
-| -1     | 112(avg) | 2024       |
-| 0      | 120      | 05/01/2025 |
-| 1      | 122      | 06/01/2025 |
-| 2      | 123      | 07/01/2025 |
-| 3      | 125      | 08/01/2025 |
-| 4      | 128      | 09/01/2025 |
-| 5      | 12       | 10/01/2025 |
-| 6      | 13       | 11/01/2025 |
-| 7      | 13       | 12/01/2025 |
+| Months | Weight   | Date         |
+| ------ | -------- | ------------ |
+| -1     | 112(avg) | Before Money |
+| 0      | 120      | 05/01/2025   |
+| 1      | 122      | 06/01/2025   |
+| 2      | 123      | 07/01/2025   |
+| 3      | 125      | 08/01/2025   |
+| 4      | 128      | 09/01/2025   |
+| 5      | 12       | 10/01/2025   |
+| 6      | 13       | 11/01/2025   |
+| 7      | 13       | 12/01/2025   |
 
 
 | Months | Weight | Date       |
