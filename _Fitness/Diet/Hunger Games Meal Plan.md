@@ -109,6 +109,18 @@ need money for non meat as well and occasional seasoning etc...
 
 #todo/BAU 
 - [ ]  Break down into a week assuming only eating one type of meat a week then half it between 4 days and use excess also prioritize cost
+
+
+Costco and BJs cost around the same
+
+  
+
+10,000 overall for extra cost and price fluctuations
+
+  
+
+30 max for premade food
+
 #### Week One($60.35)  - total daily calories/protein:  2,221 to 2,301/80G 
 dinner not included yet in total for week
 
