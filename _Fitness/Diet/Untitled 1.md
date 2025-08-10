@@ -1,3 +1,6 @@
+The extra cost of a BJ's order at Max can go up to about 20 which includes the delivery fee driver tip and tax roughly on twice or once a quarter trip
+
+
 1 month aldi/bj meat split
 monthly
 Pork loin chop 1 pack 8 chops each 4 days      $18.65

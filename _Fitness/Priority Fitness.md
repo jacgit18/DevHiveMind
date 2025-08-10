@@ -162,7 +162,7 @@ Allowed to practice each excercise *here* max twice a week. Also try doing chest
 	2. Use close grip bench press for top of movement.
 	3. For the middle overhead press in the clean jerk press will help with this.
 4. **Arnold Press** – 20lb
-5. **Cable Wrist Curl**(Consider **[[Wrist Curl]]** Regimen with [variations](https://www.youtube.com/watch?v=nvJ-1suJCTU)) – 10lb
+5. ~~**Cable Wrist Curl**~~(Consider **[[Wrist Curl]]** regimen/[variations](https://www.youtube.com/watch?v=nvJ-1suJCTU)) – 10lb
 6. ***[Landmine Anti Rotations](https://www.youtube.com/watch?v=8aXStDm3cOs) - 10lb***
 7. **Wide Seated Tricep Dip/ [Bodyweight Tricep Dip](https://www.youtube.com/watch?v=p5Lx2BeVKR4&t=186s)** - 145lb
 8. **[Seated Pec Minor Fly](https://youtu.be/sC91H2XLtJc?si=bSV_IhpBVbdADHz2&t=286)**(Better ROM then chest fly) - lb
