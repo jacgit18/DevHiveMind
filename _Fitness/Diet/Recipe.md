@@ -54,3 +54,21 @@ Cook the rice like pasta and check it a couple of times then drain it to avoid o
 Put just enough water to avoid cooking rice wrong
 
 Use nuts and protein shakes to limit insulin Spike as well as adding more nutrients and absorption of those nutrients
+
+
+Broth and Stock 
+Onion carrots celery
+
+  
+
+Pepper corn 
+
+  
+
+Bayleaf
+
+  
+
+Broth is made with Meats along with bones
+
+Stock is only bones

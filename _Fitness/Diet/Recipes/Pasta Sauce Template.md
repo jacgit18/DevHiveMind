@@ -11,7 +11,7 @@ Relates:
 ---
 ![[2025-08-04 13.49.31 www.ethanchlebowski.com 192da689a193.png]]
 
-## **Versatile Vegetable Pasta Sauce Template**
+## **Versatile Pasta Sauce Base Template**
 
 **Core Vegetable Base**
 
