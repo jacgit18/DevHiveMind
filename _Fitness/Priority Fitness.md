@@ -58,6 +58,7 @@ dg-publish:
 - [ ] try All out 4 min then 4 min coasting so run then a slow walk then back to intense 4 min
 - [ ] try doing a specific exercise when you feel a type of way can be hitting bag at crunch for example whatever comes to mind
 - [ ] try Isometric hold for strength phrase
+- [ ] train hypertrophy by song duration and beat to simplify
 # Exercises
 >**Barbell Exercises: Upper vs Lower Body Considerations**
 Upper body barbell exercises—like the bench press—can sometimes place unnecessary strain on the wrists due to the fixed, straight bar grip. If the grip doesn’t align naturally with your wrist and shoulder joints, it can cause discomfort or even injury over time.
