@@ -50,7 +50,7 @@ Transition to positions that maximize weight advantage.
 
 #### White - Turtle/Mount/SMount Guard Sweeps 
 #todo/BAU/MMA  
-- [ ] add sweeps from [[Turtle]] and [[Mount]]
+- [ ] add sweeps from [[_Fitness/MMA/Grappling/BJJ/Guards/Turtle]] and [[Mount]]
 
 ``` mehrmaid
 flowchart LR
