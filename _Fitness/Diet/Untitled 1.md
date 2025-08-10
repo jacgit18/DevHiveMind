@@ -56,7 +56,19 @@ breaks down 834 a month
 
 
 
+2 cans of tuna a week max skipjack
 
+
+Tuna over deli meat is healthier
+
+  
+  
+
+Albacore tuna
+
+  
+
+Oil tuna if lazy
 
 
 
