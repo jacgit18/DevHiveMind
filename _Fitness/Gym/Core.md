@@ -54,7 +54,7 @@ Get to your reps to 15 sec each try to extend for 45 sec MAX
 
 
 
- ![Cable Crunch - Abs / Core Exercise - Bodybuilding.com - YouTube](https://www.youtube.com/watch?v=3qjoXDTuyOE) ^9ffa73
+**[Kneeling Cable Crunch](https://www.youtube.com/watch?v=3qjoXDTuyOE)** ^9ffa73
 
 
 ![Reverse Nordic - YouTube](https://youtu.be/x2K8uH7dcqg?si=XvJ6HMTCCVyXnpTX) ^dd110e
@@ -62,7 +62,7 @@ Get to your reps to 15 sec each try to extend for 45 sec MAX
 
 
 - Pallof Press ^0729fc
-	- ![Pallofpress](https://youtu.be/-0N2xTi69t8?si=80nCTJTg4ZyCNXYO)
+	- [Pallofpress](https://youtu.be/-0N2xTi69t8?si=80nCTJTg4ZyCNXYO)
 
 
 
@@ -76,7 +76,7 @@ Get to your reps to 15 sec each try to extend for 45 sec MAX
 
 ![This Stiff Guy Learns the Pancake Fold in 107 Days - Ft. @calimove - YouTube](https://youtu.be/c97FhK6-7FU?si=yPdSa701SwqZh0xJ)
 
-![Banded seated pancake stretch - YouTube](https://youtu.be/pOre0ykuinQ?si=o9F4u3NXBxoaiOHi) ^eb4c68
+[Banded seated pancake stretch - YouTube](https://youtu.be/pOre0ykuinQ?si=o9F4u3NXBxoaiOHi) ^eb4c68
 
 ![Cable pancake stretch - YouTube](https://youtu.be/xgU1YYHwprQ?si=N0aX9UVVJqDLvvrS) ^c47ced
 

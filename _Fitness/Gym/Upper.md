@@ -50,7 +50,7 @@ dg-publish:
 - Cable Woodchopper ^a7be5a
 	- ![](https://www.youtube.com/watch?v=mvvu8imyMFs)
 - Back lateral raise ^971765
-	- ![Behind The Back Cable Lateral Raise \| How To - YouTube](https://www.youtube.com/watch?v=y4Djk_G0yEg)
+	- [Behind The Back Cable Lateral Raise \| How To - YouTube](https://www.youtube.com/watch?v=y4Djk_G0yEg)
 - Over head tricep extension  ^05b651
 	- ![OVERHEAD LOW ROPE TRICEP EXTENSION - YouTube](https://www.youtube.com/watch?v=MegBRxtR14I)
 - Single-Arm Row (**Kettlebell**)
@@ -80,7 +80,7 @@ dg-publish:
 
 
 - Lateral Head Single Arm Cable Tricep Extension
-	- ![Lateral Head Single Arm Cable Tricep Extension - YouTube](https://www.youtube.com/watch?v=vVW9LwaahNw) ^88a124
+	- [Lateral Head Single Arm Cable Tricep Extension - YouTube](https://www.youtube.com/watch?v=vVW9LwaahNw) ^88a124
 
 
 ![Half Kneeling 1 Arm Thorax Cable Row Coaching and Cues - YouTube](https://youtu.be/afE9JabFqR4?si=Q7eXtrCmYCcxOV_T) ^0a983d

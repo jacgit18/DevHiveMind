@@ -23,7 +23,7 @@ Boil then fry potatoes for another meal like with ground meat
 
 
 
-  
+  15 min chicken drum stick
   
   
 
@@ -50,5 +50,7 @@ If doubling the rice don't double the water
 
 Cook the rice like pasta and check it a couple of times then drain it to avoid over or under cooked rice 
 
+
+Put just enough water to avoid cooking rice wrong
 
 Use nuts and protein shakes to limit insulin Spike as well as adding more nutrients and absorption of those nutrients

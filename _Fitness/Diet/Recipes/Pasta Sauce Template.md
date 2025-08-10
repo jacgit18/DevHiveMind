@@ -9,6 +9,8 @@ Started:
 EditDate: 
 Relates: "[[Bread]]"
 ---
+![[2025-08-04 13.49.31 www.ethanchlebowski.com 192da689a193.png]]
+
 ## **Versatile Vegetable Pasta Sauce Template**
 
 **Core Vegetable Base**

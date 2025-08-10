@@ -43,19 +43,21 @@ dg-publish:
 - [ ] Hover in more of a standing position for **Abduction Leg Squeezing** machine 70 to 80 lb.
 - [ ] Lat pull down pull elbow near hip not chest same for row get up close pull to hip.
 - [ ] Use opposite side knee leaning against low bench when doing Half Kneeling Row.
-- [ ] For kettlebell RDL use opposite side where you are holding the Kettlebell this side that is lifting the leg.
+- [ ] For kettlebell RDL use same side leg and arm while the opposite leg is the standing leg you hing off of.
 - [ ] Keep elbows high above head and alt cable height at hip and foot level for Overhead extension.
 - [ ] 45 degree Incline bench press over flat bench for my body type as well as Larsen bench press on flat bench or incline bench hovering or keeping straight legs to focus more on core.
 - [ ] Lean forward a little on [lunge/squat](https://youtu.be/DfGu48vMmlU?si=DbDYi5Wq3JKopM3P) keeping neutral spine specifically dumbbell to simulate shooting a shot. 
 
 ## To Try
 #todo/Workout/Try
-- [ ] Try dumbbell lunge with back leg on balance board or plate or platform. 
-- [ ] Try all the way down push-ups with a hand release at the bottom and then push back up. 
-- [x] try RDL Kettlebell ✅ 2025-08-03
+- [ ] try dumbbell lunge with back leg on balance board or plate or platform. 
+- [ ] try all the way down push-ups with a hand release at the bottom and then push back up. 
 - [ ] try Burpee pull up
 - [ ] try [Seated Y Cable Raises](https://youtu.be/-yL_BS28hcY?si=oO9QrIO_sv2SF5K1)(Do upstairs)
 - [ ] try [FreeMotion Front Shoulder Raise](https://youtu.be/_bzJ1Yb4XCU?si=v0UUNLSilV6NVM76)
+- [ ] try All out 4 min then 4 min coasting so run then a slow walk then back to intense 4 min
+- [ ] try doing a specific exercise when you feel a type of way can be hitting bag at crunch for example whatever comes to mind
+- [ ] try Isometric hold for strength phrase
 # Exercises
 >**Barbell Exercises: Upper vs Lower Body Considerations**
 Upper body barbell exercises—like the bench press—can sometimes place unnecessary strain on the wrists due to the fixed, straight bar grip. If the grip doesn’t align naturally with your wrist and shoulder joints, it can cause discomfort or even injury over time.
@@ -125,13 +127,21 @@ Skip hypertrophy for some of these excercise were doing a lot of lifting since i
 
 - **[Base Rows](https://youtu.be/Qmw9TKnQ9NY?si=gNe_2K45P71UKz5y)** - 20lb to 30lb
 - **[Cable Lateral Walk](https://youtu.be/nw8NjG2YOLY?si=KAo4G6B3_5Av1s_t)** - 20lb to 30lb
-- [Bottom Ups](https://www.youtube.com/watch?v=TJjRZBpY75I) - 20lb
+- **[Bottom Ups](https://www.youtube.com/watch?v=TJjRZBpY75I)** - 20lb
 - ***Suitcase Carry/[March](https://www.youtube.com/watch?v=a9HkuLYNyJ0)*** - 20lb(Start with then transition to farmer)
 - Farmer Carry/March - 20lb
 - ~~**Kettlebell Swing** - 20lb~~
 - ***Sled*** - twice a week push and pull - 50lb
 	- Backward walk, seated pancake pull, standing pull
-	- [Lateral Sled Drag](https://youtu.be/rGtYmX2aeAA?si=PnniyFsIluLeViKa)(try) - 50lb
+	- **[Lateral Sled Drag](https://youtu.be/rGtYmX2aeAA?si=PnniyFsIluLeViKa)**(try) - 50lb
+	- 1 set if including pulling should follow ROM excercise cadence. 
+	- Example: 3 pushes pulling different each time or pull exclusive day whatever it is switch to 20lb on Hypertrophy and explosive week.
+		- push sled 
+		- pull sled backwards
+		- pull with left arm
+		- pull with right arm
+	- Alt set 2x8 and 3x10
+		-  push and pull sled backwards
 - ~~**Trap bar Deadlift** -  1 time a week - 50lb~~
 - ~~**Standing [Good Mornings](https://youtu.be/dEJ0FTm-CEk?si=LAPsPziQZQNGBvph)**~~ ~~not worth doing~~
 
@@ -151,13 +161,12 @@ Allowed to practice each excercise *here* max twice a week. Also try doing chest
 	2. Use close grip bench press for top of movement.
 	3. For the middle overhead press in the clean jerk press will help with this.
 4. **Arnold Press** – 20lb
-5. **[6 Ways for Shoulder Raise](https://www.youtube.com/watch?v=nvEE4u3qfJY) With Wrist Curl**  – 10lb
-6. **Cable Wrist Curl**(Consider **[[Wrist Curl]]** Regimen with [variations](https://www.youtube.com/watch?v=nvJ-1suJCTU)) – 10lb
-7. ***[Landmine Anti Rotations](https://www.youtube.com/watch?v=8aXStDm3cOs) - 10lb***
-8. **Wide Seated Tricep Dip/ [Bodyweight Tricep Dip](https://www.youtube.com/watch?v=p5Lx2BeVKR4&t=186s)** - 145lb
-9. **[Seated Pec Minor Fly](https://youtu.be/sC91H2XLtJc?si=bSV_IhpBVbdADHz2&t=286)**(Better ROM then chest fly) - lb
-10. **Chest Fly** - 100lb
-11. **[Landmine Shoulder Z Press](https://youtu.be/app94pzXOuU?si=kOpaa_oC9HkpkRNv)** - 10lb 
+5. **Cable Wrist Curl**(Consider **[[Wrist Curl]]** Regimen with [variations](https://www.youtube.com/watch?v=nvJ-1suJCTU)) – 10lb
+6. ***[Landmine Anti Rotations](https://www.youtube.com/watch?v=8aXStDm3cOs) - 10lb***
+7. **Wide Seated Tricep Dip/ [Bodyweight Tricep Dip](https://www.youtube.com/watch?v=p5Lx2BeVKR4&t=186s)** - 145lb
+8. **[Seated Pec Minor Fly](https://youtu.be/sC91H2XLtJc?si=bSV_IhpBVbdADHz2&t=286)**(Better ROM then chest fly) - lb
+9. **Chest Fly** - 100lb
+10. **[Landmine Shoulder Z Press](https://youtu.be/app94pzXOuU?si=kOpaa_oC9HkpkRNv)** - 10lb 
 
 ##### Build to Doing Safely
 11. **[Landmine Russian Twist](https://youtu.be/Zb-l68-4KFM?si=I8zR3VtIppuQNJk_)** - 10lb
@@ -165,47 +174,50 @@ Allowed to practice each excercise *here* max twice a week. Also try doing chest
 
 ##### Best Pairing
 - **Landmine Z Press** + **Single-Arm Chest Press** + **Landmine Anti-Rotations** 
-- **Arnold Press** + **Landmine Russian Twist** + **6-Way Shoulder Raise Wrist Curl** 
+- **Arnold Press** + **Landmine Russian Twist** 
 - **Incline Dumbbell Bench/Floor Press** + **Landmine Rotational Press** + **Overhead Barbell/TrapBar Press** 
-- **Incline Dumbbell Bench/Floor Press** + **Overhead Barbell/TrapBar Press** + **6-Way Shoulder Raise Wrist Curl** 
+- **Incline Dumbbell Bench/Floor Press** + **Overhead Barbell/TrapBar Press**
 - **Wide Seated Dip** + **Chest Fly**
 
 #### **Session 2: Pull Focus**
 1. ***Narrow-Grip Chin-Up*** 
 2. **Narrow-Grip Pull-Up**
 3. **Zottman Curl Standing(Easiest)/[Seated](https://youtu.be/cnEcZiOeFO0?si=4nSqffNzqQyAvXBj)(hardest- *build more strength for it*)** - go half and half  – 20lb
-4. **Super ROM Lateral Raise Wrist Curl** (try cable)– 5lb
-5. **Rev Crunch** 
-6. **Kneeling Cable Crunch**(Top Angle) - 33lb 
+4. **Super ROM [6 Ways for Shoulder Raise](https://www.youtube.com/watch?v=nvEE4u3qfJY) With Wrist Curl**  – 5lb 
+	1. Strength phase 2x8 since like 5 exercises in one
+	2. Hypertrophy 3x10 and avoid explosive phase 
+	3. Prime shoulder with bands
+5. **Reverse Bench Crunch**
+6. **[Kneeling Cable Crunch](https://www.youtube.com/watch?v=3qjoXDTuyOE)**(Top Angle) - 40lb 
 7. **[Pallof Press](https://www.youtube.com/watch?v=ma2OjgP5XDc&pp=ygUMUGFsbG9mIFByZXNz)**(Wrist Height) - 30lb
 8. **Rear Delt Fly/[DB Chest Supported Rear Delt Fly](https://youtu.be/iCbVhDNpG-Y?si=g-puZtoYX7u57LwT)** - 70lb/20lb
 9. **[Incline Prone Lateral Raise](https://youtu.be/Wz1C8NzWg5A?si=epnUd7OS6WC75u1Y&t=112)** - 15lb
-10. **Lateral Head Single-Arm Tricep Extension**(Top Angle) – 20lb
-11. **Cable Pancake Stretch**(Low Angle) - 49.5
+10. **[Lateral Head Single Arm Tricep Extension](https://www.youtube.com/watch?v=vVW9LwaahNw)**(Top Angle) – 20lb
+11. **[Cable Pancake Stretch](https://youtu.be/pOre0ykuinQ?si=o9F4u3NXBxoaiOHi)**(Low Angle) - 49.5
 12. **Back Extension** - 15lb - do consistently for a 2 weeks and try ft to single leg variation 
 13. **[Low Cable Goblet Squat](https://youtu.be/f6eI0JI9AYA?si=TTKH4FrAivJYEyd0)**  - 30lb to 40lb
 
 ##### Build to Doing Safely
-14. Bench press accessory excercise to strengthening rotater cuff
-	1. **Butler Tricep Cable Extension** - lb
+14. Bench press accessory excercise to strengthening rotator cuff
+	1. ~~**Butler Tricep Cable Extension**(Top Angle) - lb pull down from mid back pinky down palms away from back~~
 	2. **Flat Bench Shoulder Press** - 5lb
 15. ***Band/Barbell/[Cable](https://youtu.be/2M1Mikqf5lY?si=1Me7DqZvB5XL1Orm)/Dumbbell/[Landmine Single-Leg RDL](https://www.youtube.com/watch?v=wZJERqVNY98) /[Kettlebell](https://youtu.be/b9bHy3ojQWA?si=4WkDrYdZGXFY-GAX)(15lb)- 10lb to 30lb***
 16. **Side Lateral QL Extension** - 15lb - same thing after building up from single leg back extension and doing this consistently then do [rotating variation](https://youtu.be/KJwARxV9a6g?si=4C--YLWJnUcFaMmx) once doing consistent 4 sets 8 reps.
 	- Besides doing on back extension machine can do [Lateral Flexion on Stability Ball](https://youtu.be/FrohQ--m7fs?si=Z4akKJnru0ut8S8X)
-17. **Single-Arm Behind-Back Cable Lateral Raise**(Low Angle) – 10lb
+17. **[Single-Arm Behind-Back Cable Lateral Raise](https://www.youtube.com/watch?v=y4Djk_G0yEg)**(Low Angle) – 10lb
 18. **Jefferson Curl Barbell/Kettlebell** - 20lb
 
 
 ##### Best Pairing
 - **Single-Leg RDL** + **Narrow-Grip Pull-Up/Chin-Up** + **Back Extension** 
-- **Zottman Curl** + **Super ROM Lateral Raise Wrist Curl**  + **Kneeling Cable Crunch** 
-- **Narrow-Grip Pull-Up/Chin-Up** + **Super ROM Lateral Raise Wrist Curl** + **Kneeling Cable Crunch** 
+- **Zottman Curl** + **Super ROM**  + **Kneeling Cable Crunch** 
+- **Narrow-Grip Pull-Up/Chin-Up** + **Super ROM** + **Kneeling Cable Crunch** 
 - **Narrow-Grip Pull-Up/Chin-Up** + **Pallof Press** + **Reverse Crunch**  
 - **Narrow-Grip Pull-Up/Chin-Up** + **Pallof Press** + **Kneeling Cable Crunch** 
 - **Lateral Head Single-Arm Tricep Extension** + **Single-Arm Behind-Back Cable Lateral Raise** + **Cable Pancake Stretch**  
 - **Rear Delt Fly** +  **Pallof Press** + **Single-Leg RDL**
 - **Rear Delt Fly** + **Narrow-Grip Pull-Up/Chin-Up** + **Back Extension** 
-- **Reverse Crunch** + **Zottman Curl** + **Super ROM Lateral Raise Wrist Curl** 
+- **Reverse Crunch** + **Zottman Curl** + **Super ROM**
 - **Rear Delt Fly** + **Single-Arm Behind-Back Cable Lateral Raise** +  **Lateral Head Single-Arm Tricep Extension**
 
 ##### Best to Build to Pairings
@@ -527,10 +539,10 @@ color purple
 | Hip Flexion                         | 20         | 30     | 4     | 8     | Low          | Cable - Ankle                       | Bottom          | Multi                             | [[Cable Machine Leg Exercises#^6dcf9a\|Hip Flexion]]                                          | Yes       | _Low Angle                            | **N/A**                  | **N/A**     | CM               |
 | Side Kick                           | 10         | 20     | 4     | 8     | Med          | Cable - Ankle                       | Bottom          | Multi                             | [[Cable Machine Leg Exercises#^dc7113 \|Side Kick]]                                           | Yes       | _Low Angle                            | **N/A**                  | **N/A**     | CM               |
 | Leg Cable Reverse Crunch            | 10         | 20     | 4     | 8     | Low          | Cable - Ankle Both Sides            | Core            | Legs Multi                        | [[Core#^b41212\| Leg Cable Reverse Crunch]]                                                   | Yes       | _Low Angle                            | **N/A**                  | 0           | RC               |
-| Pallof Press                        | 20         | 30     | 4     | 8     | _Highest     | Cable - Handle                      | Core            | Obliques Side Abdominal           | [[Core#^0729fc\|Pallof Press]]                                                                | Yes       | _Middle                               | **N/A**                  | **N/A**     | CM/Anti Rotation |
+| Pallof Press                        | 20         | 30     | 4     | 8     | _Highest     | Cable - Handle                      | Core            | Obliques Side Abdominal           | Pallof Press                                                                                  | Yes       | _Middle                               | **N/A**                  | **N/A**     | CM/Anti Rotation |
 | Angled Chest Fly                    | 80         | 90     | 4     | 8     | _Highest     | Cable - Handle                      | Upper           | Chest                             | Angled Chest Fly                                                                              | Yes       | Standing                              | **N/A**                  | 4           | CM               |
-| Lateral Head Single Arm             | 10         | 20     | 4     | 8     | _Highest     | Cable - Handle                      | Upper           | Tricep                            | [[Upper#^88a124 \|Lateral Head Single Arm]]                                                   | Yes       | _Top Angle                            | **N/A**                  | **N/A**     | CM               |
-| Single Arm Back Cable Lateral Raise | 10         | 10     | 4     | 3     | _Highest     | Cable - Handle                      | Upper           | Shoulder                          | [[Upper#^971765 \|Single Arm Back Cable Lateral Raise]]                                       | Yes       | _Low Angle                            | **N/A**                  | **N/A**     | PG               |
+| Lateral Head Single Arm             | 10         | 20     | 4     | 8     | _Highest     | Cable - Handle                      | Upper           | Tricep                            | Lateral Head Single Arm                                                                       | Yes       | _Top Angle                            | **N/A**                  | **N/A**     | CM               |
+| Single Arm Back Cable Lateral Raise | 10         | 10     | 4     | 3     | _Highest     | Cable - Handle                      | Upper           | Shoulder                          | Single Arm Back Cable Lateral Raise                                                           | Yes       | _Low Angle                            | **N/A**                  | **N/A**     | PG               |
 | Half Kneeling Row                   | 22         | 55     | 4     | 8     | High         | Cable - Handle                      | Upper           | Multi                             | [[Upper#^0a983d \|Half Kneeling Row]]                                                         | Yes       | Kneeling                              | **N/A**                  | **N/A**     | CM               |
 | Cable Floor Fly                     | 13         | 17     | 4     | 8     | Low          | Cable - Handle                      | Upper           | Chest                             | [[CableFloorFly.gif \|Cable Floor Fly]]                                                       | Yes       | _Top Angle                            | **N/A**                  | 5 - 7       | PG               |
 | Cable Woodchopper                   | 16         | 22     | 4     | 8     | Med          | Cable - Handle                      | Upper           | Multi                             | [[Upper#^a7be5a \|Cable Woodchopper]]                                                         | Yes       | _Low Angle                            | **N/A**                  | 0           | RC               |
@@ -540,7 +552,7 @@ color purple
 | Cable Snap Downs                    | 13         | 20     | 4     | 8     | High         | Cable - Rope                        | Upper           | Chest                             | [Cable Snap Downs](https://www.youtube.com/shorts/IW40KjCwNmA)                                | Yes       | _Top Angle                            | **N/A**                  | 0           | PG               |
 | Two Hand Overhead extension         | 16         | 22     | 4     | 8     | Med          | Cable - Rope                        | Upper           | Tricep                            | [[Upper#^05b651 \|Two Hand Overhead extension]]                                               | Yes       | _Low Angle                            | **N/A**                  | **N/A**     | PG               |
 | Kneeling Cable Crunch               | 33         | 44     | 4     | 8     | High         | Cable - Rope on Swiss Ball Optional | Core            | Upper Abdominal                   | [[Core#^9ffa73\|Kneeling Cable Crunch]]                                                       | Yes       | _Top Angle(add twist)                 | **N/A**                  | **N/A**     | CM               |
-| Pancake Stretch                     | 0          | 49.5   | 4     | 8     | High         | Cable - Rope/Sled -Rope             | Full            | Multi                             | [[Core#^c47ced \| Pancake Stretch]]                                                           | Yes       | _Low Angle                            | **N/A**                  | 0           | RC               |
+| Pancake Stretch                     | 0          | 49.5   | 4     | 8     | High         | Cable - Rope/Sled -Rope             | Full            | Multi                             | Pancake Stretch                                                                               | Yes       | _Low Angle                            | **N/A**                  | 0           | RC               |
 | Step Through Lunge                  | 10         | 33     | 4     | 8     | Med          | Cables - Handle                     | Bottom          | Multi                             | [[Cable Machine Leg Exercises#^62416f \|Step Through Lunge]]                                  | Yes       | _Low Angle                            | **N/A**                  | **N/A**     | CM               |
 | Pull Through                        | 10         | 33     | 4     | 8     | _Highest     | Cables - Rope                       | Bottom          | Multi                             | [[Cable Machine Leg Exercises#^8ca0fd \|Pull Through]]                                        | Yes       | _Low Angle                            | **N/A**                  | **N/A**     | CM               |
 | Double Crunch                       | 0          | 10     | 4     | 8     | _Highest     | Dumbbell                            | Core            | Abdominal                         | [[Core#^450568 \|Double Crunch]]                                                              | Yes       | Grounded                              | **N/A**                  | **N/A**     | RC               |
