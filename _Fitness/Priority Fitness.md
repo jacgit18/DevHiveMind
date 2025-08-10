@@ -260,7 +260,7 @@ When descending into a squat, avoid letting your hips tuck under or round toward
 #### Session 1: Main Compound Squat & Lunge Patterns
 [How to PROPERLY Squat for Growth (4 Easy Steps)](https://youtu.be/gcNh17Ckjgg?si=L0Lmos_bpSJcs9u1)
 *Make Squats Narrow and Deep to improve pistol squat and set bar height to 13 for anything Zercher*
-1. **Hack Squat** – 300lb - if ankles begin to lift move feet up
+1. **Hack Squat** – 300/180/90lb - if ankles begin to lift move feet up
 2. **Barbell Squat/Zercher B-Squat** - Incline High Bar(on trap muscle)  - 50lb
 3. **Dumbbell Bulgarian Split Squat**(Try [elevated](https://youtu.be/DXK-VbFE6ic?si=NHqOeitXD0h_YQsr) front leg variation also use [leg curl roller](https://youtu.be/VC5kbLSuo30?si=NLitkOhL50votRUC)) - 20lb
 4. **Kneeling Squat on toes with curlbar/Dumbbell behind** - 45lb maybe higher
