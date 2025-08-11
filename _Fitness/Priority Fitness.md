@@ -58,6 +58,8 @@ dg-publish:
 - [ ] try All out 4 min then 4 min coasting so run then a slow walk then back to intense 4 min
 - [ ] try doing a specific exercise when you feel a type of way can be hitting bag at crunch for example whatever comes to mind
 - [ ] try Isometric hold for strength phrase
+- [ ] warm up more with lunges and lunges to kicks, knees, and teeps
+- [ ] also warm up or prime your body before an excercise like squat before squatting a bar or do push ups before bench press.
 - [ ] train hypertrophy by song duration and beat to simplify
 # Exercises
 >**Barbell Exercises: Upper vs Lower Body Considerations**
