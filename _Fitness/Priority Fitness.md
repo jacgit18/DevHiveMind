@@ -47,6 +47,9 @@ dg-publish:
 - [ ] Keep elbows high above head and alt cable height at hip and foot level for Overhead extension.
 - [ ] 45 degree Incline bench press over flat bench for my body type as well as Larsen bench press on flat bench or incline bench hovering or keeping straight legs to focus more on core.
 - [ ] Lean forward a little on [lunge/squat](https://youtu.be/DfGu48vMmlU?si=DbDYi5Wq3JKopM3P) keeping neutral spine specifically dumbbell to simulate shooting a shot. 
+- [ ] Do 1 minute rest between reps and 2 min between exercises especially if going heavy
+- [ ] Add reps then add weights over time for different exercises so for strength phase get to like 5x8 then increase weight shifting back to 4x8 do the same for other phases so explosive 3x10 to 4x10 and adjust weight relative to strength phase max weight and for hypertrophy maybe just scale stick to song duration and adjust weight relative to strength phase max weight.
+- [ ] Between reps and excercise work on visualizing, breathing, moving around, and do mobility band excercise. 
 
 ## To Try
 #todo/Workout/Try
@@ -109,15 +112,15 @@ The general principles of **training phases** like strength and hypertrophy appl
 > **Train intensity before volume**. Prioritize neural output early, then shift to fatigue-driven work. Can shift things depending how you feel but heavy push it to limit days  fall under Hypertrophy week 4 days max since going to failure.
 
 
-| Day      | Session Type                                                                               | Week 1 – Strength Focus                                                                 | Week 2 – Hypertrophy Focus                         | Week 3 – Explosive Focus                          | Week 4 – Free Form | Best Order of Operations |
-| -------- | ------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------- | -------------------------------------------------- | ------------------------------------------------- | ------------------ | ------------------------ |
-| **Sun**  | Upper + Run + Balance Board                                                                | ***[[Priority Fitness#Session 2 Pull Focus \|Pull]] *** Strength                        | ***Pull *** *Explosive* → **Hypertrophy Finisher** | ***Pull*** *Explosive* → **Hypertrophy Finisher** |                    | Glutes / Hamstrings      |
-| **Mon**  | Full Body + Sled + Clean Jerk Press                                                        | *Lower Hypertrophy* **Upper [[Priority Fitness#Session 1 Push Focus \|Push]] Strength** | *Lower Strength*  **Upper Push Hypertrophy**       | *Lower Hypertrophy*  **Upper Push Explosive **    |                    | Core                     |
-| **Tues** | Lower + *Machine/Freeweight* [Dead Hang](https://www.youtube.com/watch?v=ShkBXOGK7A8)(MMA) | *Lower Strength*                                                                        | *Lower Hypertrophy *                               | *Lower Explosive*                                 |                    | Scapular & Upper Back    |
-| **Wed**  | Upper + Run + Balance Board                                                                | **Push Strength**                                                                       | *Push Explosive* →   **Hypertrophy Finisher**      | *Push Explosive* →  **Hypertrophy Finisher**      |                    | Lats / Traps             |
-| **Thu**  | WHATEVER YOU WANT                                                                          | DAY                                                                                     | TRY NEW THINGS                                     | JUST BE LIGHT WITH IT                             |                    | Quads                    |
-| **Fri**  | Lower +                *Cable Machine*     Dead Hang(MMA)                                  | *Lower Strength*                                                                        | *Lower Hypertrophy*                                | *Lower Explosive*                                 |                    | Chest / Delts            |
-| **Sat**  | Full Body + Sled                                                                           | *Lower Strength* ***Upper Pull Hypertrophy***                                           | *Lower Hypertrophy*  ***Upper Pull Explosive***    | *Lower Explosive*  ***Upper Pull Strength***      |                    | Arms                     |
+| Day      | Session Type                                                                               | Week 1 – Strength Focus                                                                 | Week 2 – Hypertrophy Focus                         | Week 3 – Explosive Focus                          | Week 4 – Free Form    | Best Order of Operations |
+| -------- | ------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------- | -------------------------------------------------- | ------------------------------------------------- | --------------------- | ------------------------ |
+| **Sun**  | Upper + Run + Balance Board                                                                | ***[[Priority Fitness#Session 2 Pull Focus \|Pull]] *** Strength                        | ***Pull *** *Explosive* → **Hypertrophy Finisher** | ***Pull*** *Explosive* → **Hypertrophy Finisher** | Try new things        | Glutes / Hamstrings      |
+| **Mon**  | Full Body + Sled + Clean Jerk Press                                                        | *Lower Hypertrophy* **Upper [[Priority Fitness#Session 1 Push Focus \|Push]] Strength** | *Lower Strength*  **Upper Push Hypertrophy**       | *Lower Hypertrophy*  **Upper Push Explosive **    | like Plyometric etc.. | Core                     |
+| **Tues** | Lower + *Machine/Freeweight* [Dead Hang](https://www.youtube.com/watch?v=ShkBXOGK7A8)(MMA) | *Lower Strength*                                                                        | *Lower Hypertrophy *                               | *Lower Explosive*                                 |                       | Scapular & Upper Back    |
+| **Wed**  | Upper + Run + Balance Board                                                                | **Push Strength**                                                                       | *Push Explosive* →   **Hypertrophy Finisher**      | *Push Explosive* →  **Hypertrophy Finisher**      |                       | Lats / Traps             |
+| **Thu**  | Full Body + Sled + Clean Jerk Press                                                        | Anything                                                                                | Anything                                           | Anything                                          |                       | Quads                    |
+| **Fri**  | Lower +                *Cable Machine*     Dead Hang(MMA)                                  | *Lower Strength*                                                                        | *Lower Hypertrophy*                                | *Lower Explosive*                                 |                       | Chest / Delts            |
+| **Sat**  | Full Body + Sled + Clean Jerk Press                                                        | *Lower Strength* ***Upper Pull Hypertrophy***                                           | *Lower Hypertrophy*  ***Upper Pull Explosive***    | *Lower Explosive*  ***Upper Pull Strength***      |                       | Arms                     |
 
 
 ## Body Part Specific Programs 
@@ -135,8 +138,8 @@ Skip hypertrophy for some of these excercise were doing a lot of lifting since i
 - Farmer Carry/March - 20lb
 - ~~**Kettlebell Swing** - 20lb~~
 - ***Sled*** - twice a week push and pull - 50lb
-	- Backward walk, seated pancake pull, standing pull
-	- **[Lateral Sled Drag](https://youtu.be/rGtYmX2aeAA?si=PnniyFsIluLeViKa)**(try) - 50lb
+	- Backward walk(backward pull over later pull if choosing one), ~~seated pancake pull~~, rope pull
+	- **[Crossover Step Lateral Sled Drag](https://youtu.be/rGtYmX2aeAA?si=PnniyFsIluLeViKa)** - 20lb(try using bands with using arms)
 	- 1 set if including pulling should follow ROM excercise cadence. 
 	- Example: 3 pushes pulling different each time or pull exclusive day whatever it is switch to 20lb on Hypertrophy and explosive week.
 		- push sled 
@@ -163,7 +166,7 @@ Allowed to practice each excercise *here* max twice a week. Also try doing chest
 	1. Use explosive Phase variation to improve at bottom of movement as well 
 	2. Use close grip bench press for top of movement.
 	3. For the middle overhead press in the clean jerk press will help with this.
-4. **Arnold Press** – 20lb
+4. **Arnold Press**/**Shoulder Press**(alternate) – 20lb 
 5. ~~**[Cable Wrist Curl pronated](https://youtu.be/UbfzCh0oJ5E?si=KtTGfiJfP5ep3CkD)/[supinated](https://youtu.be/WVAaKJvToe0?si=r9TKMQbLs1xmpiL0)**(Consider **[[Wrist Curl]]** regimen/[variations](https://www.youtube.com/watch?v=nvJ-1suJCTU)) – 10lb
 6. ***[Landmine Anti Rotations](https://www.youtube.com/watch?v=8aXStDm3cOs) - 10lb***
 7. **Wide Seated Tricep Dip/ [Bodyweight Tricep Dip](https://www.youtube.com/watch?v=p5Lx2BeVKR4&t=186s)** - 145lb
@@ -196,8 +199,8 @@ Allowed to practice each excercise *here* max twice a week. Also try doing chest
 8. **Rear Delt Fly/[DB Chest Supported Rear Delt Fly](https://youtu.be/iCbVhDNpG-Y?si=g-puZtoYX7u57LwT)** - 70lb/20lb
 9. **[Incline Prone Lateral Raise](https://youtu.be/Wz1C8NzWg5A?si=epnUd7OS6WC75u1Y&t=112)** - 15lb
 10. **[Lateral Head Single Arm Tricep Extension](https://www.youtube.com/watch?v=vVW9LwaahNw)**(Top Angle) – 20lb
-11. **[Cable Pancake Stretch](https://youtu.be/pOre0ykuinQ?si=o9F4u3NXBxoaiOHi)**(Low Angle) - 49.5
-12. **Back Extension** - 15lb - do consistently for a 2 weeks and try ft to single leg variation 
+11. **[Cable Assisted Pancake Stretch](https://youtu.be/n6N2-hhbQmw?si=ljxeT4mgAdF0ls8K)**(Low Angle) - 49.5
+12. **Back Extension** - 15lb - do consistently for 2 weeks and try ft to single leg variation 
 13. **[Low Cable Goblet Squat](https://youtu.be/f6eI0JI9AYA?si=TTKH4FrAivJYEyd0)**  - 30lb to 40lb
 
 ##### Build to Doing Safely
