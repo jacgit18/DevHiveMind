@@ -151,6 +151,9 @@ Skip hypertrophy for some of these excercise were doing a lot of lifting since i
 - ~~**Trap bar Deadlift** -  1 time a week - 50lb~~
 - ~~**Standing [Good Mornings](https://youtu.be/dEJ0FTm-CEk?si=LAPsPziQZQNGBvph)**~~ ~~not worth doing~~
 
+#### Plyometrics
+
+
 ##### Build to Doing Safely
 - [***Barbell Clean Jerk Press*** ](https://www.youtube.com/watch?v=8IYt7AtP8BI) - 1 time a week - 20lb
 - **[Turkish Get-Up](https://youtu.be/jFK8FOiLa_M?si=L8oB-1-BZ8M6Wfsp)** - 10lb to 15lb
