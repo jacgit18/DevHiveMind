@@ -306,9 +306,10 @@ When descending into a squat, avoid letting your hips tuck under or round toward
 1. **Trap Bar Squat Jump** - 20lb
 2. **Cable Side Kick** – 20lb
 3. **Cable Hip Flexion** – 30lb
-4. **Abduction Machine (Outer Thigh)** – 130lb
-5. **Band Scarecrow Raises** - 20lb
-6. **Leg Extension** – 120lb
+4. **Kettlebell Leg Raise** – 15lb
+5. **Abduction Machine (Outer Thigh)** – 130lb
+6. **Band Scarecrow Raises** - 20lb
+7. **Leg Extension** – 120lb
 ##### Best Pairing
 - **Trap Bar Squat Jump** + **Cable Side Kick** + **Band Scarecrow Raises** 
 - **Cable Hip Flexion** + **Abduction Machine** + **Leg Extension** 
