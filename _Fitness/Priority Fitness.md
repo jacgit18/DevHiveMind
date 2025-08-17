@@ -63,7 +63,7 @@ dg-publish:
 - [ ] try Isometric hold for strength phrase
 - [ ] warm up more with lunges and lunges to kicks, knees, and teeps
 - [ ] also warm up or prime your body before an excercise like squat before squatting a bar or do push ups before bench press.
-- [ ] train hypertrophy by song duration and beat to simplify
+- [ ] train hypertrophy by song duration and beat to simplify and no 1 min break between sets
 # Exercises
 >**Barbell Exercises: Upper vs Lower Body Considerations**
 Upper body barbell exercises—like the bench press—can sometimes place unnecessary strain on the wrists due to the fixed, straight bar grip. If the grip doesn’t align naturally with your wrist and shoulder joints, it can cause discomfort or even injury over time.

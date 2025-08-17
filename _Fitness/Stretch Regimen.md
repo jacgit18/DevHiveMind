@@ -116,7 +116,7 @@ _~2–3 minutes total – pick 4–5_
 - Glute Bridges – **10–12 reps**
 - [Back Widows](https://www.youtube.com/watch?v=JdwsVHc6oQ4)
 - Descending flutter kicks
-- [Dead Bug ](https://youtu.be/VRpXreaHz7w?si=MSTm2UNzlRLyQt3E)(Anti-extension) - hand pushed against wall alternating pushing heals down. Try [BJJ Variation](https://youtu.be/M14fmjvDXMo?si=KpG6WH6nQ5Qdl8Bm) keeping core engaged and upper and lower body connected extended foot alternating height of foot to the ground. 
+- [Dead Bug ](https://youtu.be/VRpXreaHz7w?si=MSTm2UNzlRLyQt3E)(Anti-extension) - hand pushed against wall alternating pushing heals down. Try [BJJ Variation](https://youtu.be/M14fmjvDXMo?si=KpG6WH6nQ5Qdl8Bm) keeping core engaged and upper and lower body connected extended foot alternating height of foot to the ground or keep a block between arms and legs then alternating leg while holding the block with the other leg. 
 
 
 
