@@ -10,6 +10,9 @@ Steak for other months in the quarter
 
 
 
+Prefer skipjack tuna 
+
+
 
 
 Squat push shoulder to end of range

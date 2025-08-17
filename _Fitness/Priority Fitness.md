@@ -33,6 +33,7 @@ dg-publish:
 - [ ] If you're not **feeling the target muscle** during an exercise, **reduce momentum** and slow down the movement to improve control and mind-muscle connection and If you feel **off balance**, try **making a fist**—this creates full-body tension and enhances stability during the lift also try **Isometric Holds** like on concentric and eccentric of different exercises.
 - [ ] Once at solid baseline switch to a **Seasonal Training Strategy** while also integrating workout phases aiming for **7 workouts per week in the winter/fall** were your body tends to **retain more weight during the colder months** (September to February), making it an ideal time to **increase training frequency** and build mass or strength. Then In the **warmer months**, when energy is often spent on outdoor activities and appetite may decrease, **4 to 5 workouts per week** can be more sustainable.
 - [ ] Sprint to and from gym a twice a week after you build to it on Upper body or full body days where you aren't doing MMA, You can also skip first part of warm up regimen. Also when building up to sprinting the half mile to and from the gym start off with three times a week and scale back to twice a week.
+- [ ] Workout during midday or afternoon for Hypertrophy week
 
 ## Workout Tips
 #todo/BAU/Workout  
@@ -127,6 +128,8 @@ The general principles of **training phases** like strength and hypertrophy appl
 > For each excercise allowed to do 3 times a week max. Also each fixed gym machine has a freeweight variations you can pivot to if not available.
 
 Outside of best parings other parings you do make it a light day instead of a intense day because best paring for injury mitigation. also orange is very high priority out of all excercise here.
+
+For leg day, upper body day, and full body day on hypertrophy week alternate between spreading hypertrophy across excercise in session doing less set training to overall failure then on other days try reducing the variation of exercises focusing on a few excercise training those to failure but keeping sets you have planned. 
 
 ### Full Body Program 
 Skip hypertrophy for some of these excercise were doing a lot of lifting since it can be dangerous but should be safe for something like sled pulls and pushes. Also for excercise session frequency reduce frequency to one time a week as you go up in max weight for strength phase.
