@@ -267,7 +267,7 @@ Allowed to practice each excercise *here* max twice a week. Also try doing chest
 ### Leg Programming 
 All leg cable excercise are done at a low angle. Avoid squatting with running shoes and squat wider as well if issues in squatting form.
 
-Alternate single and dual leg each week.
+Alternate single and dual leg each month.
 
 When descending into a squat, avoid letting your hips tuck under or round toward your legs at the bottom — a movement known as the “butt wink.” This can place unnecessary stress on your lower back and increase the risk of injury. A common cause is limited ankle mobility. As a short-term fix, try elevating your heels with weight plates or squat wedges to help you stay more upright and maintain proper hip and spine alignment. Just note this doesn’t address the root issue. Throughout the movement, your hips, core, and chest should move as one solid unit — no collapsing or out-of-sync sequencing.
 
