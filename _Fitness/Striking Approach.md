@@ -26,7 +26,7 @@ Use the **UFC game** to simulate and experiment with techniques and strategies p
 
 MMA has shorter combos because of takedowns. When kicking use high knee elevation before flipping out the leg to kick better. Move head right after throwing a punch generally.
 
-> 
+> Purpose: Train and fight to stop fighting self and fight the world
 
 Keep sparing for Muay Thai down to 2 or 3 times a month for safety and quality.  
 

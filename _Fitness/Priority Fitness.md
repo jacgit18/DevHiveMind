@@ -271,7 +271,7 @@ When descending into a squat, avoid letting your hips tuck under or round toward
 *Make Squats Narrow and Deep to improve pistol squat and set bar height to 13 for anything Zercher*
 1. **Hack Squat** – 300/180/90lb - if ankles begin to lift move feet up
 2. **Barbell Squat/Zercher B-Squat** - Incline High Bar(on trap muscle)  - 50lb
-3. **Dumbbell Bulgarian Split Squat**(Try [elevated](https://youtu.be/DXK-VbFE6ic?si=NHqOeitXD0h_YQsr) front leg variation also use [leg curl roller](https://youtu.be/VC5kbLSuo30?si=NLitkOhL50votRUC)) - 20lb
+3. **Dumbbell Bulgarian Split Squat/Prone Leg Curl** (Try [elevated](https://youtu.be/DXK-VbFE6ic?si=NHqOeitXD0h_YQsr) front leg variation also use [leg curl roller](https://youtu.be/VC5kbLSuo30?si=NLitkOhL50votRUC)) - 20lb/60lb half sets
 4. **Kneeling Squat on toes with curlbar/Dumbbell behind** - 45lb maybe higher
 5. **Single Leg Press** – 180lb
 6. **Walking Barbell Lunge/Zercher Lunge** – 20lb
@@ -308,8 +308,7 @@ When descending into a squat, avoid letting your hips tuck under or round toward
 3. **Cable Hip Flexion** – 30lb
 4. **Abduction Machine (Outer Thigh)** – 130lb
 5. **Band Scarecrow Raises** - 20lb
-6. **Prone Leg Curl** - 60lb
-7. **Leg Extension** – 120lb
+6. **Leg Extension** – 120lb
 ##### Best Pairing
 - **Trap Bar Squat Jump** + **Cable Side Kick** + **Band Scarecrow Raises** 
 - **Cable Hip Flexion** + **Abduction Machine** + **Leg Extension** 
