@@ -151,7 +151,7 @@ Skip hypertrophy for some of these excercise were doing a lot of lifting since i
 		- pull with right arm
 	- Alt set 2x8 and 3x10
 		-  push and pull sled backwards
-- ~~**Trap bar Deadlift** -  1 time a week - 50lb~~
+- **Trap bar Deadlift** - 50lb(black band)
 - ~~**Standing [Good Mornings](https://youtu.be/dEJ0FTm-CEk?si=LAPsPziQZQNGBvph)**~~ ~~not worth doing~~
 
 #### Plyometrics
@@ -309,7 +309,7 @@ When descending into a squat, avoid letting your hips tuck under or round toward
 1. **Trap Bar Squat Jump** - 20lb
 2. **Cable Side Kick** – 20lb
 3. **Cable Hip Flexion** – 30lb
-4. **Kettlebell Leg Raise** – 15lb
+4. **Kettlebell Leg Raise**(at end of workout session and leg day)  – 15lb
 5. **Abduction Machine (Outer Thigh)** – 130lb
 6. **Band Scarecrow Raises** - 20lb
 7. **Leg Extension** – 120lb

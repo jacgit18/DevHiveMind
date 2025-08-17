@@ -12,8 +12,11 @@ Steak for other months in the quarter
 
 Prefer skipjack tuna 
 
+Star anise in beef stock
 
 
+
+Mobility excercise 
 
 Squat push shoulder to end of range
 
