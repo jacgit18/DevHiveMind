@@ -15,16 +15,3 @@ Prefer skipjack tuna
 Star anise in beef stock
 
 
-
-Mobility excercise 
-
-Squat push shoulder to end of range
-
-Hip up grab heels look up
-
-Stand flex upper body into body while bent at hip repeat
-
-
-
-Hypertrophy Week avoid weight lifting on Mondays and for MMA that week go on Mondays and Thursday or Saturday for work day go in the afternoon or mid day
-

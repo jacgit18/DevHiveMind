@@ -57,6 +57,19 @@ Start with a dynamic stretch to Improve blood flow and flexibility. End with a s
 Dynamic Isometric Calisthenics
 
 
+
+Mobility excercise 
+
+Squat push shoulder to end of range
+
+Hip up grab heels look up
+
+Stand flex upper body into body while bent at hip repeat
+
+
+
+
+
 #### 0. Priority Static Stretches
 
 **Priority Dynamic Stretches**
