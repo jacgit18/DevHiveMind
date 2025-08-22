@@ -176,7 +176,7 @@ Allowed to practice each excercise *here* max twice a week.
 4. **Arnold Press**/**Shoulder Press**(alternate) – 20lb 
 5. ~~**[Cable Wrist Curl pronated](https://youtu.be/UbfzCh0oJ5E?si=KtTGfiJfP5ep3CkD)/[supinated](https://youtu.be/WVAaKJvToe0?si=r9TKMQbLs1xmpiL0)**(Consider **[[Wrist Curl]]** regimen/[variations](https://www.youtube.com/watch?v=nvJ-1suJCTU)) – 10lb
 6. ***[Landmine Anti Rotations](https://www.youtube.com/watch?v=8aXStDm3cOs) - 10lb***
-7. **Wide Seated Tricep Dip/ [Bodyweight Tricep Dip](https://www.youtube.com/watch?v=p5Lx2BeVKR4&t=186s)** - 145lb
+7. **Wide Seated Tricep Dip/[Bodyweight Tricep Dip](https://www.youtube.com/watch?v=p5Lx2BeVKR4&t=186s)** - 145lb
 8. **[Seated Cable Pec Minor Fly](https://youtu.be/sC91H2XLtJc?si=bSV_IhpBVbdADHz2&t=286)**(Better ROM then chest fly Top Angle) - 20lb(Machine 5 and 5)
 9. **Chest Fly** - 100lb
 
@@ -206,19 +206,18 @@ Allowed to practice each excercise *here* max twice a week.
 8. **Rear Delt Fly/[DB Chest Supported Rear Delt Fly](https://youtu.be/iCbVhDNpG-Y?si=g-puZtoYX7u57LwT)** - 70lb/20lb
 9. **[Incline Prone Lateral Raise](https://youtu.be/Wz1C8NzWg5A?si=epnUd7OS6WC75u1Y&t=112)** - 15lb
 10. **[Lateral Head Single Arm Tricep Extension](https://www.youtube.com/watch?v=vVW9LwaahNw)**(Top Angle) – 20lb
-11. **[Cable Assisted Pancake Stretch](https://youtu.be/n6N2-hhbQmw?si=ljxeT4mgAdF0ls8K)**(Low Angle) - 49.5
-12. **Back Extension** - 15lb 
-13. **[Low Cable Goblet Squat](https://youtu.be/f6eI0JI9AYA?si=TTKH4FrAivJYEyd0)**  - 40lb
+11. **Back Extension** - 15lb 
+12. **[Low Cable Goblet Squat](https://youtu.be/f6eI0JI9AYA?si=TTKH4FrAivJYEyd0)**  - 40lb
 
 ##### Build to Doing Safely
-14. Bench press accessory excercise to strengthening rotator cuff
+13. Bench press accessory excercise to strengthening rotator cuff
 	1. ~~**Butler Tricep Cable Extension**(Top Angle) - 20lb pull down from mid back pinky down palms away from back~~
 	2. **Flat Bench Shoulder Press** - 5lb
-15. ***Band/Barbell/[Cable](https://youtu.be/2M1Mikqf5lY?si=1Me7DqZvB5XL1Orm)/Dumbbell/[Landmine Single-Leg RDL](https://www.youtube.com/watch?v=wZJERqVNY98) /[Kettlebell](https://youtu.be/b9bHy3ojQWA?si=4WkDrYdZGXFY-GAX)(15lb)- 10lb to 30lb***
-16. **Side Lateral QL Extension** - 15lb - same thing after building up from single leg back extension and doing this consistently then do [rotating variation](https://youtu.be/KJwARxV9a6g?si=4C--YLWJnUcFaMmx) once doing consistent 4 sets 8 reps.
+14. ***Band/Barbell/[Cable](https://youtu.be/2M1Mikqf5lY?si=1Me7DqZvB5XL1Orm)/Dumbbell/[Landmine Single-Leg RDL](https://www.youtube.com/watch?v=wZJERqVNY98) /[Kettlebell](https://youtu.be/b9bHy3ojQWA?si=4WkDrYdZGXFY-GAX)(15lb)- 10lb to 30lb***
+15. **Side Lateral QL Extension** - 15lb - same thing after building up from single leg back extension and doing this consistently then do [rotating variation](https://youtu.be/KJwARxV9a6g?si=4C--YLWJnUcFaMmx) once doing consistent 4 sets 8 reps.
 	- Besides doing on back extension machine can do [Lateral Flexion on Stability Ball](https://youtu.be/FrohQ--m7fs?si=Z4akKJnru0ut8S8X)
-17. **[Single-Arm Behind-Back Cable Lateral Raise](https://www.youtube.com/watch?v=y4Djk_G0yEg)**(Low Angle) – 10lb
-18. **Jefferson Curl Barbell/Kettlebell** - 20lb
+16. **[Single-Arm Behind-Back Cable Lateral Raise](https://www.youtube.com/watch?v=y4Djk_G0yEg)**(Low Angle) – 10lb
+17. **Jefferson Curl Barbell/Kettlebell** - 20lb
 
 
 ##### Best Pairing
@@ -277,7 +276,7 @@ When descending into a squat, avoid letting your hips tuck under or round toward
 2. **Barbell Squat/Zercher B-Squat** - Incline High Bar(on trap muscle)  - 50lb
 3. **Dumbbell Bulgarian Split Squat/Prone Leg Curl** (Try [elevated](https://youtu.be/DXK-VbFE6ic?si=NHqOeitXD0h_YQsr) front leg variation also use [leg curl roller](https://youtu.be/VC5kbLSuo30?si=NLitkOhL50votRUC)) - 20lb/60lb half sets
 4. **Kneeling Squat on toes with curlbar/Dumbbell behind** - 45lb maybe higher
-5. **Single Leg Press** – 180lb
+5. **Single/dual Leg Press** – 180lb/360lb
 6. **Walking Barbell Lunge/Zercher Lunge** – 20lb
 7. **Kettlebell B-Squat/Sumo** - 20lb
 8. ~~[Elevated Smith Machine Lunge](https://youtu.be/Yp5O9Cz6Ajg?si=bFGCfbzNqt_JobTA) - try [Elevated Lunge](https://youtu.be/OVFHK2Iev70?si=oiRNDNHznSrNP_RC) with dumbbell at max 40lb to 60lb then switch to free barbell~~
@@ -310,13 +309,34 @@ When descending into a squat, avoid letting your hips tuck under or round toward
 1. **Trap Bar Squat Jump** - 20lb
 2. **Cable Side Kick** – 20lb
 3. **Cable Hip Flexion** – 30lb
-4. **Kettlebell Leg Raise**(at end of workout session)  – 15lb
-5. **Abduction Machine (Outer Thigh)** – 130lb
-6. **Band Scarecrow Raises** - 20lb
-7. **Leg Extension** – 120lb
+4. **Abduction Machine (Outer Thigh)** – 130lb
+5. **Band Scarecrow Raises** - 20lb
+6. **Leg Extension** – 120lb
 ##### Best Pairing
 - **Trap Bar Squat Jump** + **Cable Side Kick** + **Band Scarecrow Raises** 
 - **Cable Hip Flexion** + **Abduction Machine** + **Leg Extension** 
+
+
+### End Session Depending Session Type
+#### Core
+1. **[Kneeling Cable Crunch](https://www.youtube.com/watch?v=3qjoXDTuyOE)**(Top Angle) - 50lb 
+2. **[Pallof Press](https://www.youtube.com/watch?v=ma2OjgP5XDc&pp=ygUMUGFsbG9mIFByZXNz)**(Wrist Height) - 20lb
+#### Leg
+1. ***[Cable Single Leg RDL](https://youtu.be/2M1Mikqf5lY?si=1Me7DqZvB5XL1Orm(15lb)***(Low Angle) - 20lb
+2. **Kettlebell Leg Raise**  – 15lb
+##### Priority Static Stretch to develop splits
+*Perform Static Stretch at end of workout 4 times a week 30 sec each*
+- Butterfly
+- Standing Hamstring stretch
+- Elevated Pigeon Stretch - On [incline bench](https://youtu.be/szFOKnVgGpQ?si=r0IMfaQKljbJeS6P) then progress to [flat bench](https://youtu.be/BmVEn3LfHcg?si=ZDSdN6h4TePiPIj8) or stick to floor (30 sec per side) 
+- [Cossack Squat](https://youtu.be/fyAl4o1BGVo?si=OalBzfY8-KxgS7qA)
+- [Forward Fold Stretch](https://youtu.be/goN4rWbQUn4?si=pPni5D3dJWgLUboT) 
+- [Standing Pancake](https://youtu.be/4TU9K40LZ6A?si=kWxpXgb7wdZ35HQO)
+- **[Cable Assisted Pancake](https://youtu.be/n6N2-hhbQmw?si=ljxeT4mgAdF0ls8K)**(Low Angle) /[Regular Pancake](https://youtu.be/B1_YA47gtm0?si=_oBDpaLBejKI-8mV) - 50lb
+- [Full split](https://youtu.be/hsNvqUmCAAo?si=SbGmouCgXsZ44_tJ) 
+
+
+
 
 ### Balance Board Programming  
 - **Beginners:** 2-3x/week (5-10 mins/session) or 2 songs length.
@@ -395,3 +415,7 @@ When descending into a squat, avoid letting your hips tuck under or round toward
 	- Leg extension if pain don't do it 
 	- Doing max weight for excercise that hit same muscle on the same day
 - Stop two reps before exercise failure alternate this depending how you feel
+
+
+### Recovery
+- Follow [[Muscle Release Regimen |Muscle release regimen with tools]]

@@ -14,8 +14,6 @@ dg-publish:
 Can swap make explosive week optional or move it around and supplement with extra Strength or Hypertrophy week play by ear.
 
 
-
-
 Chest fly/ cable pec minor fly before any chest press type excercise and prone leg curl first before any leg excercise
 
 
