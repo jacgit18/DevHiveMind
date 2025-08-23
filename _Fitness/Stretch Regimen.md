@@ -153,6 +153,7 @@ _~3–4 minutes total – choose a flow or 3–5 moves_
 - BirdDog
 - **Inchworms** – Stand → walk hands to plank → back up, 5–8 reps
 - **World’s Greatest Stretch** – Deep lunge + rotation opposite side arm in relation to front kneeling knee, 3–5 per side
+- [[Lower#^9744bc |Dynamic Cat-Cow]] → Hold Cat-Cow Stretch 
 - Dynamic Hip Flexor Swings -> [[Lower#^357346 |Lizard Pose ]] (Just a lower to the ground version with elbows down) – **6 swings + 10s hold/side**
 	- For dynamic part lift your back knee off the ground if it was resting begin rocking forward and backward, shifting your weight between your front foot and back toes.
 - [Dive Bomber Push-Up](https://www.youtube.com/watch?v=mvNcSF-nXg4)
@@ -174,6 +175,10 @@ _~3–4 minutes total – choose a flow or 3–5 moves_
 - ***Walking Lunges + Reach*** – Forward lunge + arms overhead
 - ***Hip Circles / Openers*** – Knee lift and rotate out
 - ***Knee Hugs to Calf Raise*** – Alternate legs, balance & stretch
+
+#todo/BAU/Workout/try 
+- [ ] [Body Waves](https://youtu.be/kBFg1mgCe0A?si=VyoasKccy3rlSq5D)
+- [ ] [Spinal Waves](https://youtu.be/KCfh_wCssK8?si=QaERnrtYGrEVxAsZ)
 ##### Sprinting  Specific - 1 min
 - ***Backward Walking & Skipping***
 - ***Carioca***

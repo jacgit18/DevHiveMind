@@ -175,34 +175,34 @@ Alternate each month keeping the week training phase in to account the weights f
 ### Right to Bare Arms Program
 Allowed to practice each excercise *here* max twice a week. 
 #### **Session 1: Push Focus**
-1. **Single Arm Chest Press** - 70lb
-2. **Dumbbell Floor** or **Incline Dumbbell Bench** or [Banded Dumbbell Bench](https://youtu.be/nzPvCtwkETM?si=ayLMQYM4NFk1FKbE)([Helps with form](https://youtu.be/QsYre__-aro?si=7PEG01LFDkV1D8ks&t=70)) Press– 17.5lb
-3. **Barbell Bench Press**([Use proper form](https://youtu.be/4Y2ZdHCOXok?si=uSEuLn5DQpCemOoT&t=424) also warm up with empty bar shifting to max weight) - 30lb
+1. **Single Arm Chest Press** - 30lb/50lb/70lb
+2. **Dumbbell Floor** or **Incline Dumbbell Bench** or [Banded Dumbbell Bench](https://youtu.be/nzPvCtwkETM?si=ayLMQYM4NFk1FKbE)([Helps with form](https://youtu.be/QsYre__-aro?si=7PEG01LFDkV1D8ks&t=70)) Press– 20lb/20lb/20lb
+3. **Barbell Bench Press**([Use proper form](https://youtu.be/4Y2ZdHCOXok?si=uSEuLn5DQpCemOoT&t=424) also warm up with empty bar shifting to max weight) - 10lb/20lb/30lb
 	1. Use explosive Phase variation to improve at bottom of movement as well 
 	2. Use close grip bench press for top of movement.
 	3. For the middle overhead press in the clean jerk press will help with this.
-4. **Arnold Press**/**Shoulder Press**(alternate) – 20lb 
+4. **Arnold Press**/**Shoulder Press**(alternate) – 20lb/20lb/20lb  
 5. ~~**[Cable Wrist Curl pronated](https://youtu.be/UbfzCh0oJ5E?si=KtTGfiJfP5ep3CkD)/[supinated](https://youtu.be/WVAaKJvToe0?si=r9TKMQbLs1xmpiL0)**(Consider **[[Wrist Curl]]** regimen/[variations](https://www.youtube.com/watch?v=nvJ-1suJCTU)) – 10lb
-6. **Wide Seated Tricep Dip/[Bodyweight Tricep Dip](https://www.youtube.com/watch?v=p5Lx2BeVKR4&t=186s)** - 145lb
-7. **[Seated Cable Pec Minor Fly](https://youtu.be/sC91H2XLtJc?si=bSV_IhpBVbdADHz2&t=286)**(Better ROM then chest fly Top Angle) - 20lb(Machine 5 and 5)
-8. **Chest Fly** - 100lb
-9. ***[Landmine Anti Rotations](https://www.youtube.com/watch?v=8aXStDm3cOs) - 10lb***
+6. **Wide Seated Tricep Dip/[Bodyweight Tricep Dip](https://www.youtube.com/watch?v=p5Lx2BeVKR4&t=186s)** - 70lb/90/145lb
+7. **[Seated Cable Pec Minor Fly](https://youtu.be/sC91H2XLtJc?si=bSV_IhpBVbdADHz2&t=286)**(Better ROM then chest fly Top Angle) - 20lb/20lb/20lb(Machine 5 and 5)
+8. **Chest Fly** - 50lb/70lb/100lb
+9. ***[Landmine Anti Rotations](https://www.youtube.com/watch?v=8aXStDm3cOs) - 10lb/10lb/10lb***
 
 
 #### **Session 2: Pull Focus**
-1. ***Narrow-Grip Chin-Up*** 
-2. **Narrow-Grip Pull-Up**/**Neutral-Grip Pull-Up**
-3. **Zottman Curl Standing(Easiest)/[Seated](https://youtu.be/cnEcZiOeFO0?si=4nSqffNzqQyAvXBj)(hardest- *build more strength for it*)** - go half and half  – 20lb
-4. **Super ROM [6 Ways for Shoulder Raise](https://www.youtube.com/watch?v=nvEE4u3qfJY) With Wrist Curl**  – 5lb 
+1. ***Narrow-Grip Chin-Up*** - bodyweight/10lb/10lb/10lb
+2. **Narrow-Grip Pull-Up**/**Neutral-Grip Pull-Up** - bodyweight/10lb/10lb/10lb
+3. **Zottman Curl Standing(Easiest)/[Seated](https://youtu.be/cnEcZiOeFO0?si=4nSqffNzqQyAvXBj)(hardest- *build more strength for it*)** - 15lb to 20lb/20lb/20lb
+4. **Super ROM [6 Ways for Shoulder Raise](https://www.youtube.com/watch?v=nvEE4u3qfJY) With Wrist Curl**  – 5lb/5lb/5lb 
 	1. Strength phase 2x8 since like 5 exercises in one
 	2. Hypertrophy 3x10 and avoid explosive phase 
 	3. Prime shoulder with bands
 5. **Reverse Bench Crunch** - Bodyweight 
-6. **Rear Delt Fly/[DB Chest Supported Rear Delt Fly](https://youtu.be/iCbVhDNpG-Y?si=g-puZtoYX7u57LwT)** - 70lb/20lb
-7. **[Incline Prone Lateral Raise](https://youtu.be/Wz1C8NzWg5A?si=epnUd7OS6WC75u1Y&t=112)** - 15lb
-8. **[Lateral Head Single Arm Tricep Extension](https://www.youtube.com/watch?v=vVW9LwaahNw)**(Top Angle) – 20lb
-9. **Back Extension**(try Isometric holds) - 15lb 
-10. **[Low Cable Goblet Squat](https://youtu.be/f6eI0JI9AYA?si=TTKH4FrAivJYEyd0)**  - 40lb
+6. **Rear Delt Fly/[DB Chest Supported Rear Delt Fly](https://youtu.be/iCbVhDNpG-Y?si=g-puZtoYX7u57LwT)** - 30lb/50lb/70lb | 20lb/20lb/20lb
+7. **[Incline Prone Lateral Raise](https://youtu.be/Wz1C8NzWg5A?si=epnUd7OS6WC75u1Y&t=112)** - 10lb/10lb/10lb | reverse non dumbbell variation of pec minor fly
+8. **[Lateral Head Single Arm Tricep Extension](https://www.youtube.com/watch?v=vVW9LwaahNw)**(Top Angle) – 20lb/20lb/20lb
+9. **Back Extension**(try Isometric holds) - bodyweight/15lb/15lb/15lb  
+10. **[Low Cable Goblet Squat](https://youtu.be/f6eI0JI9AYA?si=TTKH4FrAivJYEyd0)**  - 40lb/40lb/40lb
 
 
 ### Leg Programming 
@@ -221,31 +221,32 @@ All leg cable excercise are done at a low angle. Avoid squatting with running sh
 8. ~~[Elevated Smith Machine Lunge](https://youtu.be/Yp5O9Cz6Ajg?si=bFGCfbzNqt_JobTA) - try [Elevated Lunge](https://youtu.be/OVFHK2Iev70?si=oiRNDNHznSrNP_RC) with dumbbell at max 40lb to 60lb then switch to free barbell~~
 
 #### **Session 2: Hinge + Posterior Chain (Glutes, Hamstrings, Core)**
-1. **Cable/[Sled](https://youtu.be/kZyoyXUYYnQ?si=g3JDFGSTlRTOKzbi) Pull Through** – 33lb
-2. **Cable Hip Extension** – 50lb 
-3. **Hip Thrust(dual/single-Perform with Medium Band)** - 90lb to 130lb 
-4. **Tib Bar Raise** – 5lb 
+1. **Cable/[Sled](https://youtu.be/kZyoyXUYYnQ?si=g3JDFGSTlRTOKzbi) Pull Through** – 30lb/30lb/30lb
+2. **Cable Hip Extension** – 50lb/50lb/50lb 
+3. **Hip Thrust(single/dual-Perform with Medium Band)** - 50lb | 50lb / *60lb | 90lb* / 90lb | 130lb 
+4. **Tib Bar Raise** – 5lb/5lb/5lb 
 
 #### **Session 3: Stability, Mobility, and Accessories (Control + Balance)**
-1. **Trap Bar Squat Jump** - 20lb
-2. **Cable Side Kick** – 20lb
-3. **Cable Hip Flexion** – 30lb
-4. **Abduction Machine (Outer Thigh)** – 130lb
-5. **Band Scarecrow Raises** - 20lb
-6. **Leg Extension** – 120lb
+1. **Trap Bar Squat Jump** - 20lb/40lb/50lb
+2. **Cable Side Kick** – 20lb/20lb/20lb
+3. **Cable Hip Flexion** – 30lb/30lb/30lb
+4. **Abduction Machine (Outer Thigh)** – 60lb/80lb/130lb
+5. **Band Scarecrow Raises** - 20lb/20lb/20lb
+6. **Leg Extension** – 60lb/90lb/120lb
 
 #### Build to Doing Safely
 ##### Full Body
 - ~~**[Turkish Get-Up](https://youtu.be/jFK8FOiLa_M?si=L8oB-1-BZ8M6Wfsp)** - 10lb to 15lb~~
-- **[Single-Leg Snatch (RDL, Plate, Hip Lock)](https://youtu.be/L9hk1LiqGsU?si=-dJyrtt3Mq7XezCu)** -25lb
-- [Dumbbell Man Maker](https://youtu.be/rXjJ46zoQrM?si=XtGPVO8zeVQeapj6)(Easier) -10lb
-- [Kettlebell Man Maker](https://youtu.be/P4BIVAgJbZY?si=_gnVpDS6HX7WgacW)(Harder) -10lb 
+- **[Single-Leg Snatch (RDL, Plate, Hip Lock)](https://youtu.be/L9hk1LiqGsU?si=-dJyrtt3Mq7XezCu)** - 25lb/25lb/25lb
+- [Dumbbell Man Maker](https://youtu.be/rXjJ46zoQrM?si=XtGPVO8zeVQeapj6)(Easier) -10lb/10lb/10lb
+- [Kettlebell Man Maker](https://youtu.be/P4BIVAgJbZY?si=_gnVpDS6HX7WgacW)(Harder) -10lb/10lb/10lb 
 
 ##### Upper
 ###### Push
--  **[Landmine Shoulder Z Press](https://youtu.be/app94pzXOuU?si=kOpaa_oC9HkpkRNv)** - 10lb 
--  **[Landmine Russian Twist](https://youtu.be/Zb-l68-4KFM?si=I8zR3VtIppuQNJk_)** - 10lb
--  ***[Landmine Rotational Press](https://www.youtube.com/watch?v=ONDeomDVlbE) - 10lb***
+-  **[Landmine Shoulder Z Press](https://youtu.be/app94pzXOuU?si=kOpaa_oC9HkpkRNv)** - 10lb/10lb/10lb 
+-  **[Landmine Russian Twist](https://youtu.be/Zb-l68-4KFM?si=I8zR3VtIppuQNJk_)** - 10lb/10lb/10lb
+-  ***[Landmine Rotational Press](https://www.youtube.com/watch?v=ONDeomDVlbE) - 10lb/10lb/10lb***
+
 
 ###### Pull
 - **[Dragon Flag](https://youtu.be/U5pviWt7sMo?si=bTziyFRf9FBf40sF)** - Bodyweight
@@ -256,6 +257,7 @@ All leg cable excercise are done at a low angle. Avoid squatting with running sh
 - **[Side Lateral QL Extension](https://youtu.be/UaydER2VIUc?si=wkQxbIqiz7lJQF_7)** - 15lb/15lb/15lb 
 	- After building up from single leg back extension and doing this consistently then do [rotating variation](https://youtu.be/KJwARxV9a6g?si=4C--YLWJnUcFaMmx) once doing consistent strength PR.
 	- Besides doing on back extension machine can do [Lateral Flexion on Stability Ball](https://youtu.be/FrohQ--m7fs?si=Z4akKJnru0ut8S8X)
+- **[Roman Chair Hip Adduction](https://youtu.be/j5HWZOfIePI?si=EsYf8Gg0rFO16y-p)** - Bodyweight/10lb/10lb/10lb 
 - **[Single-Arm Behind-Back Cable Lateral Raise](https://www.youtube.com/watch?v=y4Djk_G0yEg)**(Low Angle) – 10lb/10lb/10lb
 - **Jefferson Curl Barbell/Kettlebell** - 20lb/20lb/20lb
 
@@ -269,11 +271,11 @@ All leg cable excercise are done at a low angle. Avoid squatting with running sh
 
 ### End Session Depending Session Type
 #### Core
-1. **[Kneeling Cable Crunch](https://www.youtube.com/watch?v=3qjoXDTuyOE)**(Top Angle) - 50lb 
-2. **[Pallof Press](https://www.youtube.com/watch?v=ma2OjgP5XDc&pp=ygUMUGFsbG9mIFByZXNz)** to **[Lateral Walk](https://youtu.be/nw8NjG2YOLY?si=KAo4G6B3_5Av1s_t)**(Wrist Height) - 20lb
+1. **[Kneeling Cable Crunch](https://www.youtube.com/watch?v=3qjoXDTuyOE)**(Top Angle) - 50lb/50lb/50lb 
+2. **[Pallof Press](https://www.youtube.com/watch?v=ma2OjgP5XDc&pp=ygUMUGFsbG9mIFByZXNz)** to **[Lateral Walk](https://youtu.be/nw8NjG2YOLY?si=KAo4G6B3_5Av1s_t)**(Wrist Height) - 20lb/20lb/20lb
 #### Leg
-1. ***[Cable Single Leg RDL](https://youtu.be/2M1Mikqf5lY?si=1Me7DqZvB5XL1Orm(15lb)***(Low Angle) - 20lb
-2. **Kettlebell Leg Raise**  – 15lb
+1. ***[Cable Single Leg RDL](https://youtu.be/2M1Mikqf5lY?si=1Me7DqZvB5XL1Orm(15lb)***(Low Angle) - 20lb/20lb/20lb
+2. **Kettlebell Leg Raise**  – 15lb/15lb/15lb
 ##### Priority Static Stretch to develop splits
 *Perform Static Stretch at end of workout 4 times a week 30 sec each*
 - Butterfly
@@ -282,14 +284,9 @@ All leg cable excercise are done at a low angle. Avoid squatting with running sh
 - [Cossack Squat](https://youtu.be/fyAl4o1BGVo?si=OalBzfY8-KxgS7qA)
 - [Forward Fold Stretch](https://youtu.be/goN4rWbQUn4?si=pPni5D3dJWgLUboT) 
 - [Standing Pancake](https://youtu.be/4TU9K40LZ6A?si=kWxpXgb7wdZ35HQO)
-- **[Cable Assisted Pancake](https://youtu.be/n6N2-hhbQmw?si=ljxeT4mgAdF0ls8K)**(Low Angle) /[Regular Pancake](https://youtu.be/B1_YA47gtm0?si=_oBDpaLBejKI-8mV) - 50lb
+- **[Cable Assisted Pancake](https://youtu.be/n6N2-hhbQmw?si=ljxeT4mgAdF0ls8K)**(Low Angle) /[Regular Pancake](https://youtu.be/B1_YA47gtm0?si=_oBDpaLBejKI-8mV) - 50lb/50lb/50lb
 - [Full split](https://youtu.be/hsNvqUmCAAo?si=SbGmouCgXsZ44_tJ) 
 - [Supine Figure 4 Stretch](https://youtu.be/xVq2-g_leTI?si=ww6BkkfN_oYEWmdC)(Not Required for Split) - keep back flat do at start for running days and at end for non running days.
-
-**Priority Dynamic Stretches**
-- [Body Waves](https://youtu.be/kBFg1mgCe0A?si=VyoasKccy3rlSq5D)
-- [Spinal Waves](https://youtu.be/KCfh_wCssK8?si=QaERnrtYGrEVxAsZ)
-- [[Lower#^9744bc |Dynamic Cat-Cow]] → Hold Cat-Cow Stretch – (Not Required for Split)
 
 #### Optimal Exercise Pairing
 ##### Best Pairing - Push

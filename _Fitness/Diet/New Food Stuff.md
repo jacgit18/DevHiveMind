@@ -23,6 +23,8 @@
 
 ### Primary (Animal) Proteins
 
+4 packs of meat for fam each month or separate purchase
+
 |Quantity/Type|Days Covered|Cost|
 |---|---|---|
 |Chicken breast (4 packs)|9 days|$70|
