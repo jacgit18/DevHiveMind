@@ -138,6 +138,8 @@ Meal prep twice a week
 
 
 
+If seasoning just do marinades when it comes to vacuum sealing nothing else like salt or black pepper alone
+
 eaa once a year
 
 

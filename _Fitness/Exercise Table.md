@@ -11,39 +11,6 @@ Relates:
 Peer Reviewed: 0
 dg-publish:
 ---
-Can swap make explosive week optional or move it around and supplement with extra Strength or Hypertrophy week play by ear.
-
-
-Chest fly/ cable pec minor fly before any chest press type excercise and prone leg curl first before any leg excercise
-
-
-Alternating months
-Month One
-chin up 
-single leg varition of excercise
-kettlebell rdl 
-back extension
-hip thrust 
-Bulgarian split
-etc..
-
-Month Two
-pull up
-regular dual leg excercise for leg exercises
-
-
-repeat for the whole year month 1 then 2 then 1 and 2 and so on 
-
-| Month           | Upper Body Pull      | Single-Leg / Dual-Leg Focus                                                  | Hip Hinge              | Posterior Chain Accessory | Squat Variation       |
-| --------------- | -------------------- | ---------------------------------------------------------------------------- | ---------------------- | ------------------------- | --------------------- |
-| 1 (Odd months)  | Chin-up              | Single-leg variation (e.g. Bulgarian split squat, step-up, single-leg press) | Kettlebell RDL         | Back Extension            | Bulgarian Split Squat |
-| 2 (Even months) | Pull-up              | Bilateral variation (e.g. barbell squat, leg press, hack squat)              | Barbell RDL / Deadlift | Back Extension            | Barbell Squat         |
-| 3               | Repeat Month 1       | —                                                                            | —                      | —                         | —                     |
-| 4               | Repeat Month 2       | —                                                                            | —                      | —                         | —                     |
-| …               | Alternate each month | —                                                                            | —                      | —                         | —                     |
-
-
-
 ![](https://www.youtube.com/watch?v=djj7QXZAIjM)
 ```chart
 type: bar

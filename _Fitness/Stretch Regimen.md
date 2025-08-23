@@ -24,12 +24,9 @@ Start with a dynamic stretch to Improve blood flow and flexibility. End with a s
 
 #todo/BAU/Workout 
 - [ ] Avoid cold water baths close to workouts especially post maybe consider doing it a few hours before sleeping make sure you really stretch to warm up again to reduce injury from cold muscle.
-- [ ] For rest days make it one of my weekdays like if I have a networking event and there isn't a good timing in terms of going before or maybe even after the event and you can also take cold Baths on that day and before bed.
 - [ ] Keep in mind that cold bath can affect muscle gains so balance that out and nervous system regulation.
 	- Try listening to 60 BPM(Beats Per Minute) metronome while taking cold bath for 3 min max and maybe use O2 trainer during this.
 	- Switch back to warm start or cold showers in the fall at a lower frequency.
-- [ ] Static end stretch 4 days at home or gym or both 30sec each.
-
 
 **Recommended Duration:** ~2–3 minutes per section (Total: 10–15 min)  
 **Tip:** Prioritize movement quality over speed. Use Duck Walks between sections or as part of the "Activate" phase.
@@ -53,37 +50,6 @@ Start with a dynamic stretch to Improve blood flow and flexibility. End with a s
 
 ---
 > **Start off Back like a baby and progress to standing then running**
-
-Dynamic Isometric Calisthenics
-
-
-
-Mobility excercise 
-
-Squat push shoulder to end of range
-
-Hip up grab heels look up
-
-Stand flex upper body into body while bent at hip repeat
-
-
-
-
-
-#### 0. Priority Static Stretches
-
-**Priority Dynamic Stretches**
-- [Spinal Waves](https://youtu.be/KCfh_wCssK8?si=QaERnrtYGrEVxAsZ)
-- [Body Waves](https://youtu.be/kBFg1mgCe0A?si=VyoasKccy3rlSq5D)
-- BirdDog
-
-**Priority Static Stretches to develop splits**
-*Perform Static Stretch at end of workout 4 times a week 30 sec each*
-
-- [[Lower#^9744bc |Dynamic Cat-Cow]] → Hold Cat-Cow Stretch – (Not Required for Split)
-- [Supine Figure 4 Stretch](https://youtu.be/xVq2-g_leTI?si=ww6BkkfN_oYEWmdC)(Not Required for Split) - keep back flat
-
-
 
 
 #### **1. Raise (Increase Body Temp & Heart Rate)**
@@ -125,8 +91,6 @@ _~2–3 minutes total – pick 4–5_
 - [Back Widows](https://www.youtube.com/watch?v=JdwsVHc6oQ4)
 - Descending flutter kicks
 - [Dead Bug ](https://youtu.be/VRpXreaHz7w?si=MSTm2UNzlRLyQt3E)(Anti-extension) - hand pushed against wall alternating pushing heals down. Try [BJJ Variation](https://youtu.be/M14fmjvDXMo?si=KpG6WH6nQ5Qdl8Bm) keeping core engaged and upper and lower body connected extended foot alternating height of foot to the ground or keep a block between arms and legs then alternating leg while holding the block with the other leg. 
-
-
 
 ##### **Grounded On Side**
 - [[Core#^5805af |Side Plank Hip dip]] (floor or bench feet on ground or bench) - **10–12 reps** - Lateral flexion
@@ -186,12 +150,21 @@ _~3–4 minutes total – choose a flow or 3–5 moves_
 - [T Stand Push Up](https://www.youtube.com/watch?v=9MkDQjuGcxw)
 - [Side Plank with Knee Drive](https://www.youtube.com/watch?v=4ydfLjw8aWE)
 ##### **Grounded On Front**
+- BirdDog
 - **Inchworms** – Stand → walk hands to plank → back up, 5–8 reps
 - **World’s Greatest Stretch** – Deep lunge + rotation opposite side arm in relation to front kneeling knee, 3–5 per side
 - Dynamic Hip Flexor Swings -> [[Lower#^357346 |Lizard Pose ]] (Just a lower to the ground version with elbows down) – **6 swings + 10s hold/side**
 	- For dynamic part lift your back knee off the ground if it was resting begin rocking forward and backward, shifting your weight between your front foot and back toes.
 - [Dive Bomber Push-Up](https://www.youtube.com/watch?v=mvNcSF-nXg4)
 - [Band Assisted Thoracic Rotation](https://www.youtube.com/watch?v=3NgyG2JImfw)
+
+
+##### Standing Mobility Exercise
+#todo/BAU/Workout/try 
+- [ ] Squat push shoulder to end of range
+- [ ] Hip up grab heels look up
+- [ ] Stand flex upper body into body while bent at hip repeat
+
 ##### **Standing** - **10 reps Each Limb**
 - [Cross leg Lateral Flexion](https://youtu.be/HxZjsIYVPd4?si=8zxedkghLRZMA7ln)
 - PVC Walk
