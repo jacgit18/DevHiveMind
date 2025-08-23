@@ -31,14 +31,16 @@ but proably switching to thighs now since it covers the 4 day not the breast whi
 
 so 4 packs 50 for chicken thigh
 
+55 roughly if half and half
+
 | Quantity/Type             | Days Covered | Cost     |
 | ------------------------- | ------------ | -------- |
-| Chicken breast (4 packs)  | 9 days       | $        |
+| Chicken breast (4 packs)  | 9 days       | $50      |
 | Steak (1 pack)            | 4 days       | $51      |
-| Pork (1 pack)             | 4 days       | $22      |
+| Pork (1 pack)             | 4 days       | $20      |
 | Ground turkey (1 pack)    | 4 days       | $10      |
-| Ground beef (1 pack)      | 4 days       | $15      |
-| **Primary Protein Total** |              | **$168** |
+| Ground beef (1 pack)      | 4 days       | $25      |
+| **Primary Protein Total** |              | **$156** |
 
 ### Accessory Proteins
 
