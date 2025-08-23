@@ -13,6 +13,10 @@ travel $10
 
 upfront quarterly 272.81 
 
+- ***Trader Joe Goat milk Keifer***: $5.69 ( 150 cal 4 servings per bottle each 8oz) × 2 = $11.18
+
+
+
 
 non meat
 butter 4.20 x 2 = 8.40
@@ -31,6 +35,7 @@ Aldi Frozen Spinach $2.15 90cal total 25 per severing x 2 = $4.30
 
 other stuff
 kiefer x 7 = 40
+
 frozen fruit x 2 = 7.60
 eggs x 8 = 44 / cheaper at Bjs split between bjs and Aldi
 eggs x 5 = 14 + 5.50 x3 = 14 + 16.50 = 8 eggs $30.50
