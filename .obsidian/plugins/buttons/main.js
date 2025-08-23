@@ -935,7 +935,7 @@ var require_formula_evaluator = __commonJS({
 __export(exports, {
   default: () => ButtonsPlugin
 });
-var import_obsidian18 = __toModule(require("obsidian"));
+var import_obsidian20 = __toModule(require("obsidian"));
 
 // src/utils.ts
 var import_obsidian = __toModule(require("obsidian"));
@@ -1037,8 +1037,14 @@ var insertButton = (app, outputObject) => {
   const buttonArr = [];
   buttonArr.push("```button");
   outputObject.name && buttonArr.push(`name ${outputObject.name}`);
-  outputObject.type && buttonArr.push(`type ${outputObject.type}`);
-  outputObject.action && buttonArr.push(`action ${outputObject.action}`);
+  if (outputObject.type && outputObject.type.includes("note") && outputObject.noteTitle && outputObject.openMethod) {
+    const noteType = `note(${outputObject.noteTitle}, ${outputObject.openMethod}) ${outputObject.type.replace("note ", "")}`;
+    buttonArr.push(`type ${noteType}`);
+    outputObject.action && buttonArr.push(`action ${outputObject.action}`);
+  } else {
+    outputObject.type && buttonArr.push(`type ${outputObject.type}`);
+    outputObject.action && buttonArr.push(`action ${outputObject.action}`);
+  }
   outputObject.id && buttonArr.push(`id ${outputObject.id}`);
   outputObject.swap && buttonArr.push(`swap ${outputObject.swap}`);
   outputObject.remove && buttonArr.push(`remove ${outputObject.remove}`);
@@ -1049,7 +1055,7 @@ var insertButton = (app, outputObject) => {
   outputObject.customTextColor && buttonArr.push(`customTextColor ${outputObject.customTextColor}`);
   outputObject.class && buttonArr.push(`class ${outputObject.class}`);
   outputObject.folder && buttonArr.push(`folder ${outputObject.folder}`);
-  outputObject.folder && buttonArr.push(`prompt ${outputObject.prompt}`);
+  outputObject.prompt && buttonArr.push(`prompt ${outputObject.prompt}`);
   if (outputObject.actions && Array.isArray(outputObject.actions) && outputObject.actions.length > 0) {
     buttonArr.push(`actions ${JSON.stringify(outputObject.actions)}`);
   }
@@ -1083,7 +1089,10 @@ var createArgumentObject = (source) => {
     "class",
     "folder",
     "prompt",
-    "actions"
+    "actions",
+    "width",
+    "height",
+    "align"
   ]);
   for (let i = 0; i < lines.length; i++) {
     const line = lines[i];
@@ -1091,72 +1100,25 @@ var createArgumentObject = (source) => {
     const key = split[0]?.toLowerCase();
     if (!key)
       continue;
-    if (key === "actions") {
+    if (key === "name") {
+      const parseLines = [line.replace(/^name\s*/, "")];
+      let destructor = parseMultiLine(lines, i, parseLines);
+      if (destructor.parseValue[0] == "{") {
+        acc[key] = destructor.parseValue.slice(1, -1).trim();
+      } else {
+        acc[key] = destructor.parseValue.trim();
+      }
+      i = destructor.i;
+    } else if (key === "actions") {
       const jsonLines = [line.replace(/^actions\s*/, "")];
-      let bracketCount = 0;
-      let braceCount = 0;
-      let inString = false;
-      let escaped = false;
-      for (const char of jsonLines[0]) {
-        if (escaped) {
-          escaped = false;
-          continue;
-        }
-        if (char === "\\") {
-          escaped = true;
-          continue;
-        }
-        if (char === '"' && !escaped) {
-          inString = !inString;
-          continue;
-        }
-        if (!inString) {
-          if (char === "[")
-            bracketCount++;
-          else if (char === "]")
-            bracketCount--;
-          else if (char === "{")
-            braceCount++;
-          else if (char === "}")
-            braceCount--;
-        }
-      }
-      while ((bracketCount > 0 || braceCount > 0) && i + 1 < lines.length) {
-        i++;
-        const nextLine = lines[i];
-        jsonLines.push(nextLine);
-        for (const char of nextLine) {
-          if (escaped) {
-            escaped = false;
-            continue;
-          }
-          if (char === "\\") {
-            escaped = true;
-            continue;
-          }
-          if (char === '"' && !escaped) {
-            inString = !inString;
-            continue;
-          }
-          if (!inString) {
-            if (char === "[")
-              bracketCount++;
-            else if (char === "]")
-              bracketCount--;
-            else if (char === "{")
-              braceCount++;
-            else if (char === "}")
-              braceCount--;
-          }
-        }
-      }
-      const jsonString = jsonLines.join("\n").trim();
+      let destructor = parseMultiLine(lines, i, jsonLines);
       try {
-        acc[key] = JSON.parse(jsonString);
+        acc[key] = JSON.parse(destructor.parseValue);
       } catch (e) {
-        new import_obsidian.Notice("Error: Malformed JSON in actions field. Please check your chain button syntax.", 4e3);
         acc[key] = [];
+        new import_obsidian.Notice(`Error: Malformed JSON in actions field. Please check your chain button syntax.`, 4e3);
       }
+      i = destructor.i;
     } else if (key === "action") {
       const actionLines = [line.replace(/^action\s*/, "")];
       while (i + 1 < lines.length) {
@@ -1212,6 +1174,71 @@ async function getNewArgs(app, position) {
 var wrapAround = (value, size) => {
   return (value % size + size) % size;
 };
+var parseMultiLine = (lines, iStart, parseLinesStart) => {
+  let i = iStart;
+  let parseLines = parseLinesStart;
+  let bracketCount = 0;
+  let braceCount = 0;
+  let inString = false;
+  let escaped = false;
+  let parseValue;
+  for (const char of parseLines[0]) {
+    if (escaped) {
+      escaped = false;
+      continue;
+    }
+    if (char === "\\") {
+      escaped = true;
+      continue;
+    }
+    if (char === '"' && !escaped) {
+      inString = !inString;
+      continue;
+    }
+    if (!inString) {
+      if (char === "[")
+        bracketCount++;
+      else if (char === "]")
+        bracketCount--;
+      else if (char === "{")
+        braceCount++;
+      else if (char === "}")
+        braceCount--;
+    }
+  }
+  while ((bracketCount > 0 || braceCount > 0) && i + 1 < lines.length) {
+    i++;
+    const nextLine = lines[i];
+    parseLines.push(nextLine);
+    for (const char of nextLine) {
+      if (escaped) {
+        escaped = false;
+        continue;
+      }
+      if (char === "\\") {
+        escaped = true;
+        continue;
+      }
+      if (char === '"' && !escaped) {
+        inString = !inString;
+        continue;
+      }
+      if (!inString) {
+        if (char === "[")
+          bracketCount++;
+        else if (char === "]")
+          bracketCount--;
+        else if (char === "{")
+          braceCount++;
+        else if (char === "}")
+          braceCount--;
+      }
+    }
+  }
+  const parseString = parseLines.join("\n").trim();
+  parseValue = parseString;
+  return { parseValue, i };
+};
 
 // src/events.ts
 var buttonEventListener = (app, callback) => {
@@ -1226,13 +1253,13 @@ var openFileListener = (app, storeEvents, callback) => {
 };
 
 // src/modal.ts
-var import_obsidian16 = __toModule(require("obsidian"));
+var import_obsidian18 = __toModule(require("obsidian"));
 
 // src/button.ts
-var import_obsidian14 = __toModule(require("obsidian"));
+var import_obsidian16 = __toModule(require("obsidian"));
 
 // src/buttonTypes/calculate.ts
-var import_obsidian8 = __toModule(require("obsidian"));
+var import_obsidian9 = __toModule(require("obsidian"));
 var import_math_expression_evaluator = __toModule(require_formula_evaluator());
 
 // src/handlers/removeButton.ts
@@ -1283,21 +1310,64 @@ var removeButton = async (app, remove2, lineStart, lineEnd) => {
 };
 
 // src/handlers/removeSection.ts
-var removeSection = async (app, section) => {
+var removeSection = async (app, section, buttonPosition, preCapturedCursorLine) => {
   const { contentArray, file } = await createContentArray(app);
   if (section.includes("[") && section.includes("]")) {
     const args = section.match(/\[(.*)\]/);
     if (args && args[1]) {
+      if (args[1].trim().toLowerCase() === "cursor") {
+        if (preCapturedCursorLine !== void 0) {
+          if (preCapturedCursorLine >= 0 && preCapturedCursorLine < contentArray.length) {
+            contentArray.splice(preCapturedCursorLine, 1);
+            const content = contentArray.join("\n");
+            await app.vault.modify(file, content);
+          }
+        }
+        return;
+      }
       const argArray = args[1].split(/,\s?/);
       if (argArray[0]) {
-        const start2 = parseInt(argArray[0]) - 1;
+        let startLine;
+        const firstArgRelative = argArray[0].match(/^([+-])(\d+)$/);
+        if (firstArgRelative && buttonPosition) {
+          const operator = firstArgRelative[1];
+          const offset2 = parseInt(firstArgRelative[2]);
+          if (operator === "+") {
+            startLine = buttonPosition.lineEnd + 1 + offset2;
+          } else {
+            startLine = buttonPosition.lineStart + 1 - offset2;
+            if (startLine < 1) {
+              startLine = 1;
+            }
+          }
+        } else {
+          startLine = parseInt(argArray[0]);
+        }
+        const start2 = startLine - 1;
         if (argArray.length === 1) {
           contentArray.splice(start2, 1);
         } else {
-          const end2 = parseInt(argArray[1]);
-          if (!isNaN(end2)) {
-            const numLines = end2 - start2;
-            contentArray.splice(start2, numLines);
+          let endLine;
+          const secondArgRelative = argArray[1].match(/^([+-])(\d+)$/);
+          if (secondArgRelative && buttonPosition) {
+            const operator = secondArgRelative[1];
+            const offset2 = parseInt(secondArgRelative[2]);
+            if (operator === "+") {
+              endLine = buttonPosition.lineEnd + 1 + offset2;
+            } else {
+              endLine = buttonPosition.lineStart + 1 - offset2;
+              if (endLine < 1) {
+                endLine = 1;
+              }
+            }
+          } else {
+            endLine = parseInt(argArray[1]);
+          }
+          if (!isNaN(endLine)) {
+            const numLines = endLine - start2;
+            if (numLines > 0) {
+              contentArray.splice(start2, numLines);
+            }
           }
         }
         const content = contentArray.join("\n");
@@ -1314,14 +1384,15 @@ var import_obsidian3 = __toModule(require("obsidian"));
 var import_obsidian2 = __toModule(require("obsidian"));
 async function templater(app, template2, _target) {
   const activeFile = template2 || app.workspace.getActiveFile();
+  const targetFile = _target || activeFile;
   if (!activeFile) {
     new import_obsidian2.Notice("No active file found for templater processing.");
     return;
   }
   const config = {
-    template_file: activeFile,
+    template_file: template2,
     active_file: activeFile,
-    target_file: activeFile,
+    target_file: targetFile,
     run_mode: "DynamicProcessor"
   };
   const plugins = app.plugins.plugins;
@@ -1436,45 +1507,115 @@ var appendContent = async (app, insert, lineEnd, isTemplater) => {
 
 // src/handlers/addContentAtLine.ts
 var import_obsidian5 = __toModule(require("obsidian"));
-var addContentAtLine = async (app, insert, type, isTemplater) => {
-  const lineNumber = type.match(/(\d+)/g);
-  if (lineNumber && lineNumber[0]) {
-    const insertionPoint = parseInt(lineNumber[0]) - 1;
-    const activeView = app.workspace.getActiveViewOfType(import_obsidian5.MarkdownView);
-    if (activeView) {
-      const file = activeView.file;
-      let content = await app.vault.read(file);
-      const contentArray = content.split("\n");
-      if (typeof insert === "string") {
-        const lines = insert.split("\n");
-        contentArray.splice(insertionPoint, 0, ...lines);
-      } else {
-        if (isTemplater) {
-          const runTemplater = await templater_default(app, insert, file);
-          const content2 = await app.vault.read(insert);
-          const processed = await runTemplater(content2);
-          const lines = processed.split("\n");
-          contentArray.splice(insertionPoint, 0, ...lines);
-        } else {
-          activeView.editor.setCursor(insertionPoint);
-          await app.internalPlugins?.plugins["templates"].instance.insertTemplate(insert);
-          return;
-        }
+var addContentAtLine = async (app, insert, type, isTemplater, buttonPosition) => {
+  let insertionPoint;
+  const relativeMatch = type.match(/line\(([+-])(\d+)\)/);
+  if (relativeMatch && buttonPosition) {
+    const operator = relativeMatch[1];
+    const offset2 = parseInt(relativeMatch[2]);
+    if (operator === "+") {
+      insertionPoint = buttonPosition.lineEnd + offset2;
+    } else {
+      insertionPoint = buttonPosition.lineStart - offset2;
+      if (insertionPoint < 0) {
+        insertionPoint = 0;
       }
-      content = contentArray.join("\n");
-      await app.vault.modify(file, content);
     }
   } else {
-    new import_obsidian5.Notice("There was an issue adding content, please try again", 2e3);
+    const lineNumber = type.match(/(\d+)/g);
+    if (lineNumber && lineNumber[0]) {
+      insertionPoint = parseInt(lineNumber[0]) - 1;
+    } else {
+      new import_obsidian5.Notice("There was an issue parsing the line number, please try again", 2e3);
+      return;
+    }
+  }
+  const activeView = app.workspace.getActiveViewOfType(import_obsidian5.MarkdownView);
+  if (activeView) {
+    const file = activeView.file;
+    let content = await app.vault.read(file);
+    const contentArray = content.split("\n");
+    if (typeof insert === "string") {
+      const lines = insert.split("\n");
+      contentArray.splice(insertionPoint, 0, ...lines);
+    } else {
+      if (isTemplater) {
+        const runTemplater = await templater_default(app, insert, file);
+        const content2 = await app.vault.read(insert);
+        const processed = await runTemplater(content2);
+        const lines = processed.split("\n");
+        contentArray.splice(insertionPoint, 0, ...lines);
+      } else {
+        activeView.editor.setCursor(insertionPoint);
+        await app.internalPlugins?.plugins["templates"].instance.insertTemplate(insert);
+        return;
+      }
+    }
+    content = contentArray.join("\n");
+    await app.vault.modify(file, content);
+  }
+};
+
+// src/handlers/addContentAtCursor.ts
+var import_obsidian6 = __toModule(require("obsidian"));
+var addContentAtCursor = async (app, insert, isTemplater) => {
+  const activeView = app.workspace.getActiveViewOfType(import_obsidian6.MarkdownView);
+  if (activeView) {
+    const editor = activeView.editor;
+    const cursor = editor.getCursor();
+    if (typeof insert === "string") {
+      editor.replaceRange(insert, cursor);
+      const lines = insert.split("\n");
+      if (lines.length === 1) {
+        editor.setCursor({
+          line: cursor.line,
+          ch: cursor.ch + insert.length
+        });
+      } else {
+        editor.setCursor({
+          line: cursor.line + lines.length - 1,
+          ch: lines[lines.length - 1].length
+        });
+      }
+    } else {
+      if (isTemplater) {
+        const file = activeView.file;
+        const runTemplater = await templater_default(app, insert, file);
+        if (runTemplater) {
+          const templateContent = await app.vault.read(insert);
+          const processed = await runTemplater(templateContent);
+          editor.replaceRange(processed, cursor);
+          const lines = processed.split("\n");
+          if (lines.length === 1) {
+            editor.setCursor({
+              line: cursor.line,
+              ch: cursor.ch + processed.length
+            });
+          } else {
+            editor.setCursor({
+              line: cursor.line + lines.length - 1,
+              ch: lines[lines.length - 1].length
+            });
+          }
+        } else {
+          new import_obsidian6.Notice("Failed to initialize Templater processor", 2e3);
+          return;
+        }
+      } else {
+        await app.internalPlugins?.plugins["templates"].instance.insertTemplate(insert);
+      }
+    }
+  } else {
+    new import_obsidian6.Notice("There was an issue inserting content at cursor, please try again", 2e3);
   }
 };
 
 // src/handlers/createNote.ts
-var import_obsidian7 = __toModule(require("obsidian"));
+var import_obsidian8 = __toModule(require("obsidian"));
 
 // src/nameModal.ts
-var import_obsidian6 = __toModule(require("obsidian"));
-var nameModal = class extends import_obsidian6.Modal {
+var import_obsidian7 = __toModule(require("obsidian"));
+var nameModal = class extends import_obsidian7.Modal {
   constructor(app, onSubmit, defaultName) {
     super(app);
     __publicField(this, "result");
@@ -1486,13 +1627,13 @@ var nameModal = class extends import_obsidian6.Modal {
   onOpen() {
     const { contentEl } = this;
     contentEl.createEl("h1", { text: "Name of new note" });
-    new import_obsidian6.Setting(contentEl).setName("Name").addText((text2) => {
+    new import_obsidian7.Setting(contentEl).setName("Name").addText((text2) => {
       text2.setPlaceholder(this.defaultName);
       text2.onChange((value) => {
         this.result = value;
       });
     });
-    new import_obsidian6.Setting(contentEl).addButton((btn) => btn.setButtonText("Create Note").setCta().onClick(() => {
+    new import_obsidian7.Setting(contentEl).addButton((btn) => btn.setButtonText("Create Note").setCta().onClick(() => {
       this.close();
       this.onSubmit(this.result);
     }));
@@ -1520,6 +1661,8 @@ var createNote = async (app, type, folder, prompt, filePath, isTemplater) => {
         const promptedName = await new Promise((res) => new nameModal(app, res, fileName).open());
         fullPath = promptedName ? `${directoryPath}/${promptedName}.md` : fullPath;
       }
+      const originalActiveView = app.workspace.getActiveViewOfType(import_obsidian8.MarkdownView);
+      const originalActiveLeaf = originalActiveView?.leaf;
       let file;
       if (typeof filePath === "string") {
         file = await app.vault.create(fullPath, filePath);
@@ -1533,7 +1676,13 @@ var createNote = async (app, type, folder, prompt, filePath, isTemplater) => {
           await app.vault.modify(file, processed);
         } else {
           file = await app.vault.create(fullPath, "");
-          await app.internalPlugins?.plugins["templates"].instance.insertTemplate(filePath);
+          const tempLeaf = app.workspace.getLeaf("tab");
+          try {
+            await tempLeaf.openFile(file);
+            await app.internalPlugins?.plugins["templates"].instance.insertTemplate(filePath);
+          } finally {
+            tempLeaf.detach();
+          }
         }
       }
       const openOption = path[2];
@@ -1552,21 +1701,25 @@ var createNote = async (app, type, folder, prompt, filePath, isTemplater) => {
         const leaf = app.workspace.getLeaf("tab");
         await leaf.openFile(file);
       } else if (openOption === "same") {
-        const activeLeaf = app.workspace.activeLeaf;
-        if (activeLeaf) {
-          await activeLeaf.openFile(file);
+        if (originalActiveLeaf && originalActiveLeaf.view) {
+          await originalActiveLeaf.openFile(file);
         } else {
-          await app.workspace.getLeaf().openFile(file);
+          const currentActiveView = app.workspace.getActiveViewOfType(import_obsidian8.MarkdownView);
+          if (currentActiveView?.leaf) {
+            await currentActiveView.leaf.openFile(file);
+          } else {
+            await app.workspace.getLeaf().openFile(file);
+          }
         }
       } else {
         await app.workspace.getLeaf().openFile(file);
       }
     } catch (e) {
       console.error("Error in Buttons: ", e);
-      new import_obsidian7.Notice("There was an error! Maybe the file already exists?", 2e3);
+      new import_obsidian8.Notice("There was an error! Maybe the file already exists?", 2e3);
     }
   } else {
-    new import_obsidian7.Notice(`couldn't parse the path!`, 2e3);
+    new import_obsidian8.Notice(`couldn't parse the path!`, 2e3);
   }
 };
 
@@ -1613,6 +1766,21 @@ var getInlineButtonPosition = async (app, id) => {
   });
   return position;
 };
+var getBlockButtonPositionById = async (app, id) => {
+  const store = getStore(app.isMobile);
+  if (!store || !id)
+    return void 0;
+  const activeFile = app.workspace.getActiveFile();
+  if (!activeFile)
+    return void 0;
+  const button = store.find((item) => item.id === `button-${id}` && item.path === activeFile.path);
+  if (!button)
+    return void 0;
+  return {
+    lineStart: button.position.start.line,
+    lineEnd: button.position.end.line
+  };
+};
 var findNumber = async (app, lineNumber) => {
   const content = await createContentArray(app);
   const value = [];
@@ -1632,13 +1800,13 @@ var calculate = async (app, { action }, position) => {
   const variables = action.match(/\$[0-9]*/g);
   if (variables) {
     const output = variables.map(async (value) => {
-      const activeView = app.workspace.getActiveViewOfType(import_obsidian8.MarkdownView);
+      const activeView = app.workspace.getActiveViewOfType(import_obsidian9.MarkdownView);
       if (activeView) {
         const lineNumber = parseInt(value.substring(1));
         const numbers = await findNumber(app, lineNumber);
         return { variable: value, numbers };
       } else {
-        new import_obsidian8.Notice(`couldn't read file`, 2e3);
+        new import_obsidian9.Notice(`couldn't read file`, 2e3);
       }
     });
     const resolved = await Promise.all(output);
@@ -1646,7 +1814,7 @@ var calculate = async (app, { action }, position) => {
       if (term.numbers) {
         equation = equation.replace(term.variable, term.numbers.join(""));
       } else {
-        new import_obsidian8.Notice("Check the line number in your calculate button", 3e3);
+        new import_obsidian9.Notice("Check the line number in your calculate button", 3e3);
         equation = void 0;
       }
     });
@@ -1663,8 +1831,18 @@ var remove = async (app, { remove: remove2 }, { lineStart, lineEnd }) => {
 };
 
 // src/buttonTypes/replace.ts
-var replace = async (app, { replace: replace2 }) => {
-  await removeSection(app, replace2);
+var import_obsidian10 = __toModule(require("obsidian"));
+var replace = async (app, { replace: replace2 }, position) => {
+  let cursorPosition;
+  if (replace2.includes("[cursor]")) {
+    const activeView = app.workspace.getActiveViewOfType(import_obsidian10.MarkdownView);
+    if (activeView) {
+      const editor = activeView.editor;
+      const cursor = editor.getCursor();
+      cursorPosition = cursor.line;
+    }
+  }
+  await removeSection(app, replace2, position, cursorPosition);
 };
 
 // src/buttonTypes/text.ts
@@ -1679,61 +1857,123 @@ var text = async (app, args, position) => {
     createNote(app, args.type, args.folder, args.prompt, args.action, false);
   }
   if (args.type.includes("line")) {
-    await addContentAtLine(app, args.action, args.type, false);
+    await addContentAtLine(app, args.action, args.type, false, position);
+  }
+  if (args.type.includes("cursor")) {
+    await addContentAtCursor(app, args.action, false);
   }
 };
 
 // src/buttonTypes/template.ts
-var import_obsidian9 = __toModule(require("obsidian"));
+var import_obsidian11 = __toModule(require("obsidian"));
+var findTemplate = (app, templateFile, templatesEnabled, templaterPluginEnabled) => {
+  const allFiles = app.vault.getFiles();
+  const results = [];
+  if (templatesEnabled) {
+    const folder = app.internalPlugins.plugins.templates.instance.options.folder;
+    if (folder) {
+      const folderLower = folder.toLowerCase();
+      const coreTemplateFile = allFiles.find((file) => file.path.toLowerCase() === `${folderLower}/${templateFile}.md`);
+      if (coreTemplateFile) {
+        results.push({
+          file: coreTemplateFile,
+          source: "core",
+          isTemplater: false
+        });
+      }
+    }
+  }
+  if (templaterPluginEnabled) {
+    const templaterPlugin = app.plugins?.plugins["templater-obsidian"];
+    const folder = templaterPlugin?.settings?.templates_folder;
+    if (folder) {
+      const folderLower = folder.toLowerCase();
+      const templaterFile = allFiles.find((file) => file.path.toLowerCase() === `${folderLower}/${templateFile}.md`);
+      if (templaterFile) {
+        results.push({
+          file: templaterFile,
+          source: "templater",
+          isTemplater: true
+        });
+      }
+    }
+  }
+  if (results.length === 0) {
+    return { file: null, isTemplater: false, source: "none" };
+  } else if (results.length === 1) {
+    const result = results[0];
+    return {
+      file: result.file,
+      isTemplater: result.isTemplater,
+      source: result.source
+    };
+  } else {
+    const templaterResult = results.find((r) => r.source === "templater");
+    const coreResult = results.find((r) => r.source === "core");
+    if (templaterResult && coreResult) {
+      new import_obsidian11.Notice(`Found template "${templateFile}" in both Core Templates and Templater folders. Using Templater version.`, 3e3);
+      return {
+        file: templaterResult.file,
+        isTemplater: templaterResult.isTemplater,
+        source: templaterResult.source
+      };
+    }
+    const result = results[0];
+    return {
+      file: result.file,
+      isTemplater: result.isTemplater,
+      source: result.source
+    };
+  }
+};
 var template = async (app, args, position) => {
   const templatesEnabled = app.internalPlugins.plugins.templates.enabled;
-  const templaterPluginEnabled = app.plugins.plugins["templater-obsidian"];
-  let isTemplater = false;
+  const templaterPluginEnabled = !!app.plugins.plugins["templater-obsidian"];
   const templateFile = args.action.toLowerCase();
-  const allFiles = app.vault.getFiles();
-  let file = null;
-  if (templatesEnabled || templaterPluginEnabled) {
+  if (!templatesEnabled && !templaterPluginEnabled) {
+    new import_obsidian11.Notice("You need to have the Templates or Templater plugin enabled and Template folder defined", 2e3);
+    return;
+  }
+  const searchResult = findTemplate(app, templateFile, templatesEnabled, templaterPluginEnabled);
+  if (!searchResult.file) {
+    const availableFolders = [];
     if (templatesEnabled) {
-      const folder = templatesEnabled && app.internalPlugins.plugins.templates.instance.options.folder?.toLowerCase();
-      const isFound = allFiles.filter((file2) => {
-        let found = false;
-        if (file2.path.toLowerCase() === `${folder}/${templateFile}.md`) {
-          found = true;
-        }
-        return found;
-      });
-      file = isFound[0];
+      const coreFolder = app.internalPlugins.plugins.templates.instance.options.folder;
+      if (coreFolder)
+        availableFolders.push(`Core Templates: ${coreFolder}`);
     }
-    if (!file && templaterPluginEnabled) {
-      const folder = templaterPluginEnabled && app.plugins?.plugins["templater-obsidian"]?.settings.templates_folder?.toLowerCase();
-      const isFound = allFiles.filter((file2) => {
-        let found = false;
-        if (file2.path.toLowerCase() === `${folder}/${templateFile}.md`) {
-          found = true;
-          isTemplater = true;
-        }
-        return found;
-      });
-      file = isFound[0];
+    if (templaterPluginEnabled) {
+      const templaterPlugin = app.plugins?.plugins["templater-obsidian"];
+      const templaterFolder = templaterPlugin?.settings?.templates_folder;
+      if (templaterFolder)
+        availableFolders.push(`Templater: ${templaterFolder}`);
     }
-    if (file) {
-      if (args.type.includes("prepend")) {
-        await prependContent(app, file, position.lineStart, isTemplater);
-      }
-      if (args.type.includes("append")) {
-        await appendContent(app, file, position.lineEnd, isTemplater);
-      }
-      if (args.type.includes("note")) {
-        createNote(app, args.type, args.folder, args.prompt, file, isTemplater);
-      }
-      if (args.type.includes("line")) {
-        await addContentAtLine(app, file, args.type, isTemplater);
-      }
-    } else {
-      new import_obsidian9.Notice(`Couldn't find the specified template, please check and try again`, 2e3);
+    const folderList = availableFolders.length > 0 ? `
+
+Searched in: ${availableFolders.join(", ")}` : "";
+    new import_obsidian11.Notice(`Couldn't find template "${templateFile}.md" in any configured template folder.${folderList}`, 4e3);
+    return;
+  }
+  const { file, isTemplater } = searchResult;
+  try {
+    if (args.type.includes("prepend")) {
+      await prependContent(app, file, position.lineStart, isTemplater);
     }
-  } else {
-    new import_obsidian9.Notice("You need to have the Templates or Templater plugin enabled and Template folder defined", 2e3);
+    if (args.type.includes("append")) {
+      await appendContent(app, file, position.lineEnd, isTemplater);
+    }
+    if (args.type.includes("note")) {
+      createNote(app, args.type, args.folder, args.prompt, file, isTemplater);
+    }
+    if (args.type.includes("line")) {
+      await addContentAtLine(app, file, args.type, isTemplater, position);
+    }
+    if (args.type.includes("cursor")) {
+      await addContentAtCursor(app, file, isTemplater);
+    }
+  } catch (error) {
+    console.error("Error executing template action:", error);
+    new import_obsidian11.Notice(`Error executing template "${templateFile}". Check console for details.`, 3e3);
   }
 };
 
@@ -1749,42 +1989,42 @@ var copy = ({ action }) => {
 };
 
 // src/buttonTypes/command.ts
-var import_obsidian10 = __toModule(require("obsidian"));
+var import_obsidian12 = __toModule(require("obsidian"));
 var command = (app, args, buttonStart) => {
   const allCommands = app.commands.listCommands();
   const action = args.action;
   const command2 = allCommands.filter((command3) => command3.name.toUpperCase() === action.toUpperCase().trim())[0];
   if (!command2) {
-    new import_obsidian10.Notice(`Command "${action}" not found. Available commands can be found in the Command Palette.`);
+    new import_obsidian12.Notice(`Command "${action}" not found. Available commands can be found in the Command Palette.`);
     console.error(`Button command error: Command "${action}" not found.`);
     console.log("Available commands:", allCommands.map((cmd) => cmd.name));
     return;
   }
   try {
     if (args.type.includes("prepend")) {
-      app.workspace.getActiveViewOfType(import_obsidian10.MarkdownView).editor.setCursor(buttonStart.lineStart, 0);
+      app.workspace.getActiveViewOfType(import_obsidian12.MarkdownView).editor.setCursor(buttonStart.lineStart, 0);
       app.commands.executeCommandById(command2.id);
     }
     if (args.type.includes("append")) {
-      app.workspace.getActiveViewOfType(import_obsidian10.MarkdownView).editor.setCursor(buttonStart.lineEnd + 2, 0);
+      app.workspace.getActiveViewOfType(import_obsidian12.MarkdownView).editor.setCursor(buttonStart.lineEnd + 2, 0);
       app.commands.executeCommandById(command2.id);
     }
     if (args.type === "command") {
       app.commands.executeCommandById(command2.id);
     }
   } catch (error) {
-    new import_obsidian10.Notice(`Failed to execute command "${action}": ${error.message}`);
+    new import_obsidian12.Notice(`Failed to execute command "${action}": ${error.message}`);
     console.error(`Button command execution error:`, error);
   }
 };
 
 // src/buttonTypes/swap.ts
-var import_obsidian12 = __toModule(require("obsidian"));
+var import_obsidian14 = __toModule(require("obsidian"));
 
 // src/buttonTypes/templater.ts
-var import_obsidian11 = __toModule(require("obsidian"));
+var import_obsidian13 = __toModule(require("obsidian"));
 var templater2 = async (app, position) => {
-  const activeView = app.workspace.getActiveViewOfType(import_obsidian11.MarkdownView);
+  const activeView = app.workspace.getActiveViewOfType(import_obsidian13.MarkdownView);
   if (activeView) {
     await activeView.save();
     const file = activeView.file;
@@ -1840,11 +2080,8 @@ var swap = async (app, swap2, id, inline, file, buttonStart) => {
       if (args.templater) {
         args = await templater2(app, position);
         if (inline) {
-          new import_obsidian12.Notice("templater args don't work with inline buttons yet", 2e3);
+          new import_obsidian14.Notice("templater args don't work with inline buttons yet", 2e3);
         }
-      }
-      if (args.replace) {
-        await replace(app, args);
       }
       if (args.type === "command") {
         command(app, args, buttonStart);
@@ -1871,22 +2108,52 @@ var swap = async (app, swap2, id, inline, file, buttonStart) => {
         await remove(app, args, position);
       }
       if (args.replace) {
-        await replace(app, args);
+        content = await app.vault.read(file);
+        position = inline ? await getInlineButtonPosition(app, id) : getButtonPosition(content, args);
+        await replace(app, args, position);
       }
     }
   });
 };
 
 // src/buttonTypes/chain.ts
-var import_obsidian13 = __toModule(require("obsidian"));
+var import_obsidian15 = __toModule(require("obsidian"));
 var chain = async (app, args, position, inline, id, file) => {
   if (!Array.isArray(args.actions)) {
-    new import_obsidian13.Notice("No actions array found for chain button.");
+    new import_obsidian15.Notice("No actions array found for chain button.");
     return;
   }
   for (const actionObj of args.actions) {
     try {
       const actionArgs = { ...args, ...actionObj };
+      let processedAction = actionArgs.action;
+      let processedType = actionArgs.type;
+      let processedFolder = actionArgs.folder;
+      if (args.templater) {
+        try {
+          const activeFile = file || app.workspace.getActiveFile();
+          if (activeFile) {
+            const runTemplater = await templater_default(app, activeFile, activeFile);
+            if (runTemplater) {
+              if (actionArgs.action && actionArgs.action.includes("<%")) {
+                processedAction = await runTemplater(actionArgs.action);
+              }
+              if (actionArgs.type && actionArgs.type.includes("<%")) {
+                processedType = await runTemplater(actionArgs.type);
+              }
+              if (actionArgs.folder && actionArgs.folder.includes("<%")) {
+                processedFolder = await runTemplater(actionArgs.folder);
+              }
+            }
+          }
+        } catch (error) {
+          console.error("Error processing templater in chain action:", error);
+          new import_obsidian15.Notice("Error processing templater in chain action. Check console for details.", 2e3);
+        }
+      }
+      actionArgs.action = processedAction;
+      actionArgs.type = processedType;
+      actionArgs.folder = processedFolder;
       let currentPosition = position;
       if (actionArgs.type && (actionArgs.type.includes("text") || actionArgs.type.includes("template"))) {
         if (file) {
@@ -1909,11 +2176,11 @@ var chain = async (app, args, position, inline, id, file) => {
       } else if (actionArgs.type === "chain") {
         await chain(app, actionArgs, currentPosition, inline, id, file);
       } else {
-        new import_obsidian13.Notice(`Unsupported action type in chain: ${actionArgs.type}`);
+        new import_obsidian15.Notice(`Unsupported action type in chain: ${actionArgs.type}`);
       }
     } catch (e) {
       console.error("Error executing chain action:", actionObj, e);
-      new import_obsidian13.Notice(`Error executing chain action: ${actionObj.type}`);
+      new import_obsidian15.Notice(`Error executing chain action: ${actionObj.type}`);
     }
   }
 };
@@ -1925,6 +2192,7 @@ var createButton = ({
   args,
   inline,
   id,
+  component,
   clickOverride
 }) => {
   const button = el.createEl("button", {
@@ -1939,7 +2207,30 @@ var createButton = ({
   if (args.customtextcolor) {
     button.style.color = args.customtextcolor;
   }
-  button.innerHTML = args.name;
+  import_obsidian16.MarkdownRenderer.render(app, args.name, button, app.workspace.getActiveFile()?.path || "", component);
+  const numberOfLines = args.name.split("\n").length;
+  let paddingTop = "auto";
+  let paddingBottom = "auto";
+  let alignment = args.align?.split(" ") || ["center", "middle"];
+  if (args.height) {
+    if (alignment.includes("top")) {
+      alignment = alignment.filter((a) => a !== "top");
+      paddingBottom = parseFloat(args.height) - 1.2 * numberOfLines + "em";
+    } else if (alignment.includes("bottom")) {
+      alignment = alignment.filter((a) => a !== "bottom");
+      paddingTop = parseFloat(args.height) - 1.2 * numberOfLines + "em";
+    } else {
+      alignment = alignment.filter((a) => a !== "middle");
+      paddingTop = (parseFloat(args.height) - 1.2 * numberOfLines) / 2 + "em";
+      paddingBottom = (parseFloat(args.height) - 1.2 * numberOfLines) / 2 + "em";
+    }
+  }
+  if (args.width) {
+    args.width += "em";
+  } else {
+    args.width = "auto";
+  }
+  button.innerHTML = `<div style='width: ${args.width};padding-top: ${paddingTop};padding-bottom: ${paddingBottom};text-align: ${alignment[0] || "center"};line-height: 1.2em;'>${button.innerHTML.slice(14, -4)}</div>`;
   args.id ? button.setAttribute("id", args.id) : "";
   button.on("click", "button", () => {
     clickOverride ? clickOverride.click(...clickOverride.params) : clickHandler(app, args, inline, id);
@@ -1947,71 +2238,83 @@ var createButton = ({
   return button;
 };
 var clickHandler = async (app, args, inline, id) => {
-  const activeView = app.workspace.getActiveViewOfType(import_obsidian14.MarkdownView);
+  const activeView = app.workspace.getActiveViewOfType(import_obsidian16.MarkdownView);
   const activeFile = activeView?.file || app.workspace.getActiveFile();
   if (!activeFile) {
-    new import_obsidian14.Notice("No active file found. Buttons can only be used with files.");
+    new import_obsidian16.Notice("No active file found. Buttons can only be used with files.");
     return;
   }
   let content = await app.vault.read(activeFile);
-  const buttonStart = getButtonPosition(content, args);
-  let position = inline ? await getInlineButtonPosition(app, id) : getButtonPosition(content, args);
-  if (inline && args.templater && args.action && args.action.includes("<%")) {
+  const idFirstPosition = !inline && id ? await getBlockButtonPositionById(app, id) : void 0;
+  const buttonStart = idFirstPosition ?? getButtonPosition(content, args);
+  let position = inline ? await getInlineButtonPosition(app, id) : idFirstPosition ?? getButtonPosition(content, args);
+  let processedAction = args.action;
+  let processedType = args.type;
+  let processedFolder = args.folder;
+  if (args.templater) {
     try {
       const runTemplater = await templater_default(app, activeFile, activeFile);
       if (runTemplater) {
-        args.action = await runTemplater(args.action);
+        if (args.action && args.action.includes("<%")) {
+          processedAction = await runTemplater(args.action);
+        }
+        if (args.type && args.type.includes("<%")) {
+          processedType = await runTemplater(args.type);
+        }
+        if (args.folder && args.folder.includes("<%")) {
+          processedFolder = await runTemplater(args.folder);
+        }
       }
     } catch (error) {
-      console.error("Error processing templater in inline button:", error);
-      new import_obsidian14.Notice("Error processing templater in inline button. Check console for details.", 2e3);
+      console.error("Error processing templater in button:", error);
+      new import_obsidian16.Notice("Error processing templater in button. Check console for details.", 2e3);
     }
   }
+  const processedArgs = { ...args, action: processedAction, type: processedType, folder: processedFolder };
   if (args.replace) {
-    replace(app, args);
+    replace(app, processedArgs, position);
   }
-  if (args.type && args.type.includes("command")) {
-    command(app, args, buttonStart);
+  if (processedArgs.type && processedArgs.type.includes("command")) {
+    command(app, processedArgs, buttonStart);
   }
-  if (args.type === "copy") {
-    copy(args);
+  if (processedArgs.type === "copy") {
+    copy(processedArgs);
   }
-  if (args.type === "link") {
-    link(args);
+  if (processedArgs.type === "link") {
+    link(processedArgs);
   }
-  if (args.type && args.type.includes("template")) {
+  if (processedArgs.type && processedArgs.type.includes("template")) {
     content = await app.vault.read(activeFile);
-    position = inline ? await getInlineButtonPosition(app, id) : getButtonPosition(content, args);
-    await template(app, args, position);
+    position = inline ? await getInlineButtonPosition(app, id) : await getBlockButtonPositionById(app, id) ?? getButtonPosition(content, args);
+    await template(app, processedArgs, position);
   }
-  if (args.type === "calculate") {
-    await calculate(app, args, position);
+  if (processedArgs.type === "calculate") {
+    await calculate(app, processedArgs, position);
   }
-  if (args.type && args.type.includes("text")) {
+  if (processedArgs.type && processedArgs.type.includes("text")) {
     content = await app.vault.read(activeFile);
-    position = inline ? await getInlineButtonPosition(app, id) : getButtonPosition(content, args);
-    await text(app, args, position);
+    position = inline ? await getInlineButtonPosition(app, id) : await getBlockButtonPositionById(app, id) ?? getButtonPosition(content, args);
+    await text(app, processedArgs, position);
   }
   if (args.swap) {
     if (!inline) {
-      new import_obsidian14.Notice("swap args only work in inline buttons for now", 2e3);
+      new import_obsidian16.Notice("swap args only work in inline buttons for now", 2e3);
     } else {
       await swap(app, args.swap, id, inline, activeFile, buttonStart);
     }
   }
   if (args.remove) {
     content = await app.vault.read(activeFile);
-    position = inline ? await getInlineButtonPosition(app, id) : getButtonPosition(content, args);
-    await remove(app, args, position);
+    await remove(app, processedArgs, position);
   }
-  if (args.type === "chain") {
-    await chain(app, args, position, inline, id, activeFile);
+  if (processedArgs.type === "chain") {
+    await chain(app, processedArgs, position, inline, id, activeFile);
     return;
   }
 };
 
 // src/suggest.ts
-var import_obsidian15 = __toModule(require("obsidian"));
+var import_obsidian17 = __toModule(require("obsidian"));
 
 // node_modules/@popperjs/core/lib/enums.js
 var top = "top";
@@ -3579,7 +3882,7 @@ var TextInputSuggest = class {
     __publicField(this, "suggest");
     this.app = app;
     this.inputEl = inputEl;
-    this.scope = new import_obsidian15.Scope();
+    this.scope = new import_obsidian17.Scope();
     this.suggestEl = createDiv("suggestion-container");
     const suggestion = this.suggestEl.createDiv("suggestion");
     this.suggest = new Suggest(this, suggestion, this.scope);
@@ -3655,44 +3958,70 @@ var TemplateSuggest = class extends TextInputSuggest {
   constructor() {
     super(...arguments);
     __publicField(this, "templatesEnabled", this.app.internalPlugins.plugins.templates.enabled);
-    __publicField(this, "templaterPlugin", this.app.plugins.plugins["templater-obsidian"]);
-    __publicField(this, "folder", () => {
+    __publicField(this, "templaterPluginEnabled", !!this.app.plugins.plugins["templater-obsidian"]);
+    __publicField(this, "getTemplateFolders", () => {
       const folders = [];
       if (this.templatesEnabled) {
-        const folder = this.app.internalPlugins.plugins.templates.instance.options.folder;
-        if (folder) {
-          folders.push(folder.toLowerCase());
-        }
-        if (this.templaterPlugin) {
-          const folder2 = this.templaterPlugin.settings.templates_folder;
-          if (folder2) {
-            folders.push(folder2.toLowerCase());
-          }
+        const coreFolder = this.app.internalPlugins.plugins.templates.instance.options.folder;
+        if (coreFolder) {
+          folders.push(coreFolder.toLowerCase());
         }
       }
-      return folders[0] ? folders : void 0;
+      if (this.templaterPluginEnabled) {
+        const templaterPlugin = this.app.plugins.plugins["templater-obsidian"];
+        const templaterFolder = templaterPlugin?.settings?.templates_folder;
+        if (templaterFolder) {
+          folders.push(templaterFolder.toLowerCase());
+        }
+      }
+      return folders;
     });
   }
   getSuggestions(inputStr) {
     const abstractFiles = this.app.vault.getAllLoadedFiles();
     const files = [];
     const lowerCaseInputStr = inputStr.toLowerCase();
-    const folders = this.folder();
+    const folders = this.getTemplateFolders();
+    if (folders.length === 0) {
+      return files;
+    }
     abstractFiles.forEach((file) => {
       let exists = false;
-      folders && folders.forEach((folder) => {
+      folders.forEach((folder) => {
         if (file.path.toLowerCase().contains(`${folder}/`)) {
           exists = true;
         }
       });
-      if (file instanceof import_obsidian15.TFile && file.extension === "md" && exists && file.path.toLowerCase().contains(lowerCaseInputStr)) {
+      if (file instanceof import_obsidian17.TFile && file.extension === "md" && exists && file.path.toLowerCase().contains(lowerCaseInputStr)) {
         files.push(file);
       }
     });
     return files;
   }
   renderSuggestion(file, el) {
-    el.setText(file.name.split(".")[0]);
+    const fileName = file.name.split(".")[0];
+    const folders = this.getTemplateFolders();
+    let source = "";
+    for (const folder of folders) {
+      if (file.path.toLowerCase().contains(`${folder}/`)) {
+        if (this.templatesEnabled) {
+          const coreFolder = this.app.internalPlugins.plugins.templates.instance.options.folder?.toLowerCase();
+          if (coreFolder === folder) {
+            source = " (Core)";
+            break;
+          }
+        }
+        if (this.templaterPluginEnabled) {
+          const templaterPlugin = this.app.plugins.plugins["templater-obsidian"];
+          const templaterFolder = templaterPlugin?.settings?.templates_folder?.toLowerCase();
+          if (templaterFolder === folder) {
+            source = " (Templater)";
+            break;
+          }
+        }
+      }
+    }
+    el.setText(fileName + source);
   }
   selectSuggestion(file) {
     this.inputEl.value = file.name.split(".")[0];
@@ -3721,13 +4050,14 @@ var ButtonSuggest = class extends TextInputSuggest {
 };
 
 // src/modal.ts
-var ButtonModal = class extends import_obsidian16.Modal {
+var ButtonModal = class extends import_obsidian18.Modal {
   constructor(app) {
     super(app);
     __publicField(this, "activeView");
     __publicField(this, "activeEditor");
     __publicField(this, "activeCursor");
     __publicField(this, "buttonPreviewEl", createEl("p"));
+    __publicField(this, "previewComponent", null);
     __publicField(this, "commandSuggestEl", createEl("input", { type: "text" }));
     __publicField(this, "fileSuggestEl", createEl("input", { type: "text" }));
     __publicField(this, "removeSuggestEl", createEl("input", { type: "text" }));
@@ -3758,6 +4088,8 @@ var ButtonModal = class extends import_obsidian16.Modal {
       blockId: "",
       folder: "",
       prompt: false,
+      openMethod: "",
+      noteTitle: "My New Note",
       actions: []
     });
     this.commandSuggest = new CommandSuggest(this.app, this.commandSuggestEl);
@@ -4014,10 +4346,12 @@ var ButtonModal = class extends import_obsidian16.Modal {
     const previewSection = mainContainer.createEl("div", { cls: "preview-section" });
     previewSection.createEl("h3", { cls: "section-title", text: "Button Preview" });
     const previewContainer = previewSection.createEl("div", { cls: "preview-container" });
+    this.previewComponent = new import_obsidian18.Component();
     this.buttonPreviewEl = createButton({
       app: this.app,
       el: previewContainer,
-      args: { name: "My Awesome Button" }
+      args: { name: "My Awesome Button" },
+      component: this.previewComponent
     });
   }
   renderChainActions(container) {
@@ -4130,6 +4464,7 @@ var ButtonModal = class extends import_obsidian16.Modal {
     templateTypeSelect.createEl("option", { value: "prepend template", text: "Prepend" });
     templateTypeSelect.createEl("option", { value: "append template", text: "Append" });
     templateTypeSelect.createEl("option", { value: "line template", text: "Line" });
+    templateTypeSelect.createEl("option", { value: "cursor template", text: "Cursor" });
     templateTypeSelect.createEl("option", { value: "note template", text: "Note" });
     const templateInput = field.createEl("input", {
       type: "text",
@@ -4158,6 +4493,7 @@ var ButtonModal = class extends import_obsidian16.Modal {
     textTypeSelect.createEl("option", { value: "append text", text: "Append" });
     textTypeSelect.createEl("option", { value: "prepend text", text: "Prepend" });
     textTypeSelect.createEl("option", { value: "line text", text: "Line" });
+    textTypeSelect.createEl("option", { value: "cursor text", text: "Cursor" });
     textTypeSelect.createEl("option", { value: "note text", text: "Note" });
     const textArea = field.createEl("textarea", {
       cls: "field-textarea",
@@ -4370,7 +4706,30 @@ var ButtonModal = class extends import_obsidian16.Modal {
       attr: { placeholder: "My New Note" }
     });
     nameInput.addEventListener("input", (e) => {
-      this.outputObject.action = e.target.value;
+      this.outputObject.noteTitle = e.target.value;
+    });
+    const openMethodField = container.createEl("div", { cls: "form-field" });
+    openMethodField.createEl("label", { cls: "field-label", text: "Opening Method" });
+    openMethodField.createEl("div", { cls: "field-description", text: "How should the new note be opened?" });
+    const openMethodSelect = openMethodField.createEl("select", { cls: "dropdown" });
+    const openMethods = [
+      { value: "tab", text: "New Tab" },
+      { value: "vsplit", text: "Vertical Split" },
+      { value: "hsplit", text: "Horizontal Split" },
+      { value: "same", text: "Same Window" },
+      { value: "false", text: "Don't Open" }
+    ];
+    openMethods.forEach((method, index) => {
+      const option = openMethodSelect.createEl("option");
+      option.value = method.value;
+      option.textContent = method.text;
+      if (index === 0) {
+        option.selected = true;
+        this.outputObject.openMethod = method.value;
+      }
+    });
+    openMethodSelect.addEventListener("change", (e) => {
+      this.outputObject.openMethod = e.target.value;
     });
     const folderField = container.createEl("div", { cls: "form-field" });
     folderField.createEl("label", { cls: "field-label", text: "Default Folder" });
@@ -4401,7 +4760,30 @@ var ButtonModal = class extends import_obsidian16.Modal {
       attr: { placeholder: "My New Note" }
     });
     nameInput.addEventListener("input", (e) => {
-      this.outputObject.action = e.target.value;
+      this.outputObject.noteTitle = e.target.value;
+    });
+    const openMethodField = container.createEl("div", { cls: "form-field" });
+    openMethodField.createEl("label", { cls: "field-label", text: "Opening Method" });
+    openMethodField.createEl("div", { cls: "field-description", text: "How should the new note be opened?" });
+    const openMethodSelect = openMethodField.createEl("select", { cls: "dropdown" });
+    const openMethods = [
+      { value: "tab", text: "New Tab" },
+      { value: "vsplit", text: "Vertical Split" },
+      { value: "hsplit", text: "Horizontal Split" },
+      { value: "same", text: "Same Window" },
+      { value: "false", text: "Don't Open" }
+    ];
+    openMethods.forEach((method, index) => {
+      const option = openMethodSelect.createEl("option");
+      option.value = method.value;
+      option.textContent = method.text;
+      if (index === 0) {
+        option.selected = true;
+        this.outputObject.openMethod = method.value;
+      }
+    });
+    openMethodSelect.addEventListener("change", (e) => {
+      this.outputObject.openMethod = e.target.value;
     });
     const folderField = container.createEl("div", { cls: "form-field" });
     folderField.createEl("label", { cls: "field-label", text: "Default Folder" });
@@ -4417,10 +4799,14 @@ var ButtonModal = class extends import_obsidian16.Modal {
   }
   onClose() {
     const { contentEl } = this;
+    if (this.previewComponent) {
+      this.previewComponent.unload();
+      this.previewComponent = null;
+    }
     contentEl.empty();
   }
 };
-var InlineButtonModal = class extends import_obsidian16.Modal {
+var InlineButtonModal = class extends import_obsidian18.Modal {
   constructor(app) {
     super(app);
     __publicField(this, "buttonSuggestEl", createEl("input", { type: "text" }));
@@ -4447,7 +4833,7 @@ var InlineButtonModal = class extends import_obsidian16.Modal {
 };
 
 // src/livePreview.ts
-var import_obsidian17 = __toModule(require("obsidian"));
+var import_obsidian19 = __toModule(require("obsidian"));
 var import_view = __toModule(require("@codemirror/view"));
 var import_language = __toModule(require("@codemirror/language"));
 function selectionAndRangeOverlap(selection, rangeFrom, rangeTo) {
@@ -4512,9 +4898,14 @@ var ButtonWidget = class extends import_view.WidgetType {
     this.id = id;
     this.app = app;
     this.line = line;
+    __publicField(this, "component");
+    this.component = new import_obsidian19.Component();
   }
   eq(other) {
     return other.id === this.id;
+  }
+  destroy() {
+    this.component.unload();
   }
   toDOM() {
     this.el.innerText = "Loading...";
@@ -4527,11 +4918,38 @@ var ButtonWidget = class extends import_view.WidgetType {
       const args = await getButtonById(this.app, this.id);
       if (args) {
         const name = args.name;
-        const className = args.class;
+        const classNames = args.class.split(" ");
         const color = args.color;
-        this.el.innerText = name || "";
-        if (className) {
-          this.el.addClass(className);
+        this.el.innerHTML = "";
+        import_obsidian19.MarkdownRenderer.render(this.app, name, this.el, this.app.workspace.getActiveFile()?.path || "", this.component);
+        let numberOfLines = args.name.split("\n").length;
+        let paddingTop = "auto";
+        let paddingBottom = "auto";
+        let alignment = args.align?.split(" ") || ["center", "middle"];
+        if (args.height) {
+          if (alignment.includes("top")) {
+            alignment = alignment.filter((a) => a !== "top");
+            paddingBottom = parseFloat(args.height) - 1.2 * numberOfLines + "em";
+          } else if (alignment.includes("bottom")) {
+            alignment = alignment.filter((a) => a !== "bottom");
+            paddingTop = parseFloat(args.height) - 1.2 * numberOfLines + "em";
+          } else {
+            alignment = alignment.filter((a) => a !== "middle");
+            paddingTop = (parseFloat(args.height) - 1.2 * numberOfLines) / 2 + "em";
+            paddingBottom = (parseFloat(args.height) - 1.2 * numberOfLines) / 2 + "em";
+          }
+        }
+        if (args.width) {
+          args.width += "em";
+        } else {
+          args.width = "auto";
+        }
+        this.el.innerHTML = `<div style='width: ${args.width};padding-top: ${paddingTop};padding-bottom: ${paddingBottom};text-align: ${alignment[0] || "center"};line-height: 1.2em;'>${this.el.innerHTML.slice(14, -4)}</div>`;
+        if (classNames.length > 0) {
+          this.el.removeClass("button-default");
+          classNames.forEach((className) => {
+            this.el.addClass(className);
+          });
         }
         if (color) {
           this.el.addClass(color);
@@ -4551,57 +4969,69 @@ var ButtonWidget = class extends import_view.WidgetType {
     }
   }
   async handleButtonClick(args) {
-    const activeView = this.app.workspace.getActiveViewOfType(import_obsidian17.MarkdownView);
+    const activeView = this.app.workspace.getActiveViewOfType(import_obsidian19.MarkdownView);
     const activeFile = activeView?.file || this.app.workspace.getActiveFile();
     if (!activeFile) {
-      new import_obsidian17.Notice("No active file found. Buttons can only be used with files.");
+      new import_obsidian19.Notice("No active file found. Buttons can only be used with files.");
       return;
     }
-    if (args.templater && args.action && args.action.includes("<%")) {
+    let processedAction = args.action;
+    let processedType = args.type;
+    let processedFolder = args.folder;
+    if (args.templater) {
       try {
         const runTemplater = await templater_default(this.app, activeFile, activeFile);
         if (runTemplater) {
-          args.action = await runTemplater(args.action);
+          if (args.action && args.action.includes("<%")) {
+            processedAction = await runTemplater(args.action);
+          }
+          if (args.type && args.type.includes("<%")) {
+            processedType = await runTemplater(args.type);
+          }
+          if (args.folder && args.folder.includes("<%")) {
+            processedFolder = await runTemplater(args.folder);
+          }
         }
       } catch (error) {
-        console.error("Error processing templater in inline button:", error);
-        new import_obsidian17.Notice("Error processing templater in inline button. Check console for details.", 2e3);
+        console.error("Error processing templater in button:", error);
+        new import_obsidian19.Notice("Error processing templater in button. Check console for details.", 2e3);
       }
     }
+    const processedArgs = { ...args, action: processedAction, type: processedType, folder: processedFolder };
     const buttonStart = await getInlineButtonPosition(this.app, this.id);
     let position = await getInlineButtonPosition(this.app, this.id);
     if (args.replace) {
-      await replace(this.app, args);
+      await replace(this.app, processedArgs, position);
     }
-    if (args.type && args.type.includes("command")) {
-      command(this.app, args, buttonStart);
+    if (processedArgs.type && processedArgs.type.includes("command")) {
+      command(this.app, processedArgs, buttonStart);
     }
-    if (args.type === "copy") {
-      copy(args);
+    if (processedArgs.type === "copy") {
+      copy(processedArgs);
     }
-    if (args.type === "link") {
-      link(args);
+    if (processedArgs.type === "link") {
+      link(processedArgs);
     }
-    if (args.type && args.type.includes("template")) {
+    if (processedArgs.type && processedArgs.type.includes("template")) {
       position = await getInlineButtonPosition(this.app, this.id);
-      await template(this.app, args, position);
+      await template(this.app, processedArgs, position);
     }
-    if (args.type === "calculate") {
-      await calculate(this.app, args, position);
+    if (processedArgs.type === "calculate") {
+      await calculate(this.app, processedArgs, position);
     }
-    if (args.type && args.type.includes("text")) {
+    if (processedArgs.type && processedArgs.type.includes("text")) {
       position = await getInlineButtonPosition(this.app, this.id);
-      await text(this.app, args, position);
+      await text(this.app, processedArgs, position);
     }
     if (args.swap) {
       await swap(this.app, args.swap, this.id, true, activeFile, buttonStart);
     }
     if (args.remove) {
       position = await getInlineButtonPosition(this.app, this.id);
-      await remove(this.app, args, position);
+      await remove(this.app, processedArgs, position);
     }
-    if (args.type === "chain") {
-      await chain(this.app, args, position, true, this.id, activeFile);
+    if (processedArgs.type === "chain") {
+      await chain(this.app, processedArgs, position, true, this.id, activeFile);
       return;
     }
   }
@@ -4609,14 +5039,14 @@ var ButtonWidget = class extends import_view.WidgetType {
 var livePreview_default = buttonPlugin;
 
 // src/index.ts
-var ButtonsPlugin = class extends import_obsidian18.Plugin {
+var ButtonsPlugin = class extends import_obsidian20.Plugin {
   constructor() {
     super(...arguments);
     __publicField(this, "buttonEvents");
     __publicField(this, "closedFile");
     __publicField(this, "buttonEdit");
     __publicField(this, "createButton");
-    __publicField(this, "storeEvents", new import_obsidian18.Events());
+    __publicField(this, "storeEvents", new import_obsidian20.Events());
     __publicField(this, "indexCount", 0);
     __publicField(this, "storeEventsRef");
   }
@@ -4644,25 +5074,38 @@ var ButtonsPlugin = class extends import_obsidian18.Plugin {
       name: "Insert Inline Button",
       callback: () => new InlineButtonModal(this.app).open()
     });
+    const assignedBlocks = new Set();
     this.registerMarkdownCodeBlockProcessor("button", async (source, el, ctx) => {
       const file = this.app.vault.getFiles().find((f) => f.path === ctx.sourcePath);
-      if (source.includes("<%") && file) {
-        try {
-          const runTemplater = await templater_default(this.app, file, file);
-          if (runTemplater) {
-            source = await runTemplater(source);
-          }
-        } catch (error) {
-          console.error("Error processing templater in button:", error);
-        }
-      }
       addButtonToStore(this.app, file);
       let args = createArgumentObject(source);
       const storeArgs = await getButtonFromStore(this.app, args);
       args = storeArgs ? storeArgs.args : args;
-      const id = storeArgs && storeArgs.id;
-      if (Boolean(args["hidden"]) !== true)
-        createButton({ app: this.app, el, args, inline: false, id });
+      let id = storeArgs && storeArgs.id;
+      if (!id && file) {
+        try {
+          const store = getStore(this.app.isMobile);
+          const content = await this.app.vault.cachedRead(file);
+          const contentArray = content.split("\n");
+          const candidates = (store || []).filter((item) => item.path === file.path && item.id?.startsWith("button-"));
+          for (const item of candidates) {
+            const blockInner = contentArray.slice(item.position.start.line + 1, item.position.end.line).join("\n");
+            if (blockInner.trim() === source.trim()) {
+              const key = `${item.path}:${item.position.start.line}:${item.position.end.line}`;
+              if (!assignedBlocks.has(key)) {
+                id = item.id.split("button-")[1];
+                assignedBlocks.add(key);
+                break;
+              }
+            }
+          }
+        } catch (_) {
+        }
+      }
+      if (Boolean(args["hidden"]) !== true) {
+        const component = new import_obsidian20.Component();
+        createButton({ app: this.app, el, args, inline: false, id, component });
+      }
     });
     this.registerMarkdownPostProcessor(async (el, ctx) => {
       const codeblocks = el.querySelectorAll("code");
@@ -4696,7 +5139,7 @@ var ButtonsPlugin = class extends import_obsidian18.Plugin {
     this.storeEvents.offref(this.storeEventsRef);
   }
 };
-var InlineButton = class extends import_obsidian18.MarkdownRenderChild {
+var InlineButton = class extends import_obsidian20.MarkdownRenderChild {
   constructor(el, app, args, id) {
     super(el);
     this.el = el;
@@ -4710,7 +5153,8 @@ var InlineButton = class extends import_obsidian18.MarkdownRenderChild {
       el: this.el,
       args: this.args,
       inline: true,
-      id: this.id
+      id: this.id,
+      component: this
     });
     this.el.replaceWith(button);
   }
