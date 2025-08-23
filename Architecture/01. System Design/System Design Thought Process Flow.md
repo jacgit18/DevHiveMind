@@ -661,7 +661,7 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 {
 	"type": "excalidraw",
 	"version": 2,
-	"source": "https://github.com/zsviczian/obsidian-excalidraw-plugin/releases/tag/2.12.4",
+	"source": "https://github.com/zsviczian/obsidian-excalidraw-plugin/releases/tag/2.13.2",
 	"elements": [
 		{
 			"type": "line",
@@ -76465,8 +76465,8 @@ e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 		"currentItemStartArrowhead": null,
 		"currentItemEndArrowhead": "arrow",
 		"currentItemArrowType": "round",
-		"scrollX": 3964.871793436116,
-		"scrollY": 4355.390708382585,
+		"scrollX": 2915.8400234355186,
+		"scrollY": 5141.289628225655,
 		"zoom": {
 			"value": 0.112474
 		},
