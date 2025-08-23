@@ -25,14 +25,20 @@
 
 4 packs of meat for fam each month or separate purchase
 
-|Quantity/Type|Days Covered|Cost|
-|---|---|---|
-|Chicken breast (4 packs)|9 days|$70|
-|Steak (1 pack)|4 days|$51|
-|Pork (1 pack)|4 days|$22|
-|Ground turkey (1 pack)|4 days|$10|
-|Ground beef (1 pack)|4 days|$15|
-|**Primary Protein Total**||**$168**|
+hit about 176 on last trip total with the two chicken thigh packs and 2 breast packs 
+
+but proably switching to thighs now since it covers the 4 day not the breast which i confused avg $13
+
+so 4 packs 50 for chicken thigh
+
+| Quantity/Type             | Days Covered | Cost     |
+| ------------------------- | ------------ | -------- |
+| Chicken breast (4 packs)  | 9 days       | $        |
+| Steak (1 pack)            | 4 days       | $51      |
+| Pork (1 pack)             | 4 days       | $22      |
+| Ground turkey (1 pack)    | 4 days       | $10      |
+| Ground beef (1 pack)      | 4 days       | $15      |
+| **Primary Protein Total** |              | **$168** |
 
 ### Accessory Proteins
 

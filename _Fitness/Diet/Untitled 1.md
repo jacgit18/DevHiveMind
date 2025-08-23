@@ -16,7 +16,7 @@ upfront quarterly 272.81
 - ***Trader Joe Goat milk Keifer***: $5.69 ( 150 cal 4 servings per bottle each 8oz) × 2 = $11.18
 
 
-
+Irish butter bjs $12.79 6 stix
 
 non meat
 butter 4.20 x 2 = 8.40
