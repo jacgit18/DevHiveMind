@@ -25,6 +25,8 @@
 
 4 packs of meat for fam each month or separate purchase
 
+
+
 hit about 176 on last trip total with the two chicken thigh packs and 2 breast packs 
 
 but proably switching to thighs now since it covers the 4 day not the breast which i confused avg $13
@@ -33,16 +35,34 @@ so 4 packs 50 for chicken thigh
 
 55 roughly if half and half
 
-| Quantity/Type             | Days Covered | Cost     |
-| ------------------------- | ------------ | -------- |
-| Chicken breast (4 packs)  | 9 days       | $50      |
-| Steak (1 pack)            | 4 days       | $51      |
-| Pork (1 pack)             | 4 days       | $20      |
-| Ground turkey (1 pack)    | 4 days       | $10      |
-| Ground beef (1 pack)      | 4 days       | $25      |
-| **Primary Protein Total** |              | **$156** |
+thigh protein roughly 209cal 25G protein
 
+possibly 2 more packs of chicken or alternatives which is roughly 26
+
+swap 5th chicken pack for other meat if not enough
+
+| Quantity/Type                                    | Days Covered | Days Needed | Serving   | Wieght  | Cost     |
+| ------------------------------------------------ | ------------ | ----------- | --------- | ------- | -------- |
+| Chicken Thigh (5 packs)                          | 13 days      |             | 2 Thighs  | 4oz     | $63      |
+| ~~Chicken Breast~~                               |              |             |           | ~~4oz~~ |          |
+| ~~Australian Lamb Loin Chop~~                    | ~~4 days~~   |             |           |         |          |
+| Steak (1 pack)                                   | 4 days       |             | 2 cuts    |         | $51      |
+| Pork Loin Chop (1 pack)                          | 4 days       |             | 2 cuts    |         | $20      |
+| Ground turkey 2.5lb (2 pack)                     | 5 days       |             | 4 patties | 4oz     | $10      |
+| Ground beef 5lb (1 pack)                         | 5 days       |             | 4 patties | 4oz     | $25      |
+| **Primary Protein Total**                        | 31 days      | 30          |           |         | **$169** |
+| Canned tuna (8 cans split serving size)          | 16 days      |             | 1/2 can   |         | $36      |
+| Eggs(Flex by as needed but need 60 eggs a month) | 0            | 30          | 2 eggs    |         |          |
+tuna is extra doesnt add to total of days of protein 
+same with eggs
 ### Accessory Proteins
+
+2x Eggs 5.69 36 eggs need 60 eggs a month to get 2 eggs a day on average
+4 to 5x reg pack eggs if only getting eggs once at bjs
+
+70cal 6G
+
+5 pack would have been 60 eggs not sure on price but no 5 pack that i saw
 
 | Item                                    | Days Covered | Cost    |
 | --------------------------------------- | ------------ | ------- |
