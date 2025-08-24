@@ -197,12 +197,14 @@ Allowed to practice each excercise *here* max twice a week.
 	1. Strength phase 2x8 since like 5 exercises in one
 	2. Hypertrophy 3x10 and avoid explosive phase 
 	3. Prime shoulder with bands
-5. **Reverse Bench Crunch** - Bodyweight 
-6. **Rear Delt Fly/[DB Chest Supported Rear Delt Fly](https://youtu.be/iCbVhDNpG-Y?si=g-puZtoYX7u57LwT)** - 30lb/50lb/70lb | 20lb/20lb/20lb
-7. **[Incline Prone Lateral Raise](https://youtu.be/Wz1C8NzWg5A?si=epnUd7OS6WC75u1Y&t=112)** - 10lb/10lb/10lb | reverse non dumbbell variation of pec minor fly
-8. **[Lateral Head Single Arm Tricep Extension](https://www.youtube.com/watch?v=vVW9LwaahNw)**(Top Angle) – 20lb/20lb/20lb
-9. **Back Extension**(try Isometric holds) - bodyweight/15lb/15lb/15lb  
-10. **[Low Cable Goblet Squat](https://youtu.be/f6eI0JI9AYA?si=TTKH4FrAivJYEyd0)**  - 40lb/40lb/40lb
+5. **Halo** 15lb/15lb/15lb
+6. **Reverse Bench Crunch** - Bodyweight 
+7. **Rear Delt Fly/[DB Chest Supported Rear Delt Fly](https://youtu.be/iCbVhDNpG-Y?si=g-puZtoYX7u57LwT)** - 30lb/50lb/70lb | 20lb/20lb/20lb
+8. **[Incline Prone Lateral Raise](https://youtu.be/Wz1C8NzWg5A?si=epnUd7OS6WC75u1Y&t=112)** - 10lb/10lb/10lb | reverse non dumbbell variation of pec minor fly
+9. **[Lateral Head Single Arm Tricep Extension](https://www.youtube.com/watch?v=vVW9LwaahNw)**(Top Angle) – 20lb/20lb/20lb
+10. **Back Extension**(try Isometric holds) - bodyweight/15lb/15lb/15lb  
+11. **[Roman Chair Hip Abduction](https://youtu.be/j5HWZOfIePI?si=EsYf8Gg0rFO16y-p)** - Bodyweight/10lb/10lb/10lb 
+12. **[Low Cable Goblet Squat](https://youtu.be/f6eI0JI9AYA?si=TTKH4FrAivJYEyd0)**  - 40lb/40lb/40lb
 
 
 ### Leg Programming 
@@ -257,7 +259,6 @@ All leg cable excercise are done at a low angle. Avoid squatting with running sh
 - **[Side Lateral QL Extension](https://youtu.be/UaydER2VIUc?si=wkQxbIqiz7lJQF_7)** - 15lb/15lb/15lb 
 	- After building up from single leg back extension and doing this consistently then do [rotating variation](https://youtu.be/KJwARxV9a6g?si=4C--YLWJnUcFaMmx) once doing consistent strength PR.
 	- Besides doing on back extension machine can do [Lateral Flexion on Stability Ball](https://youtu.be/FrohQ--m7fs?si=Z4akKJnru0ut8S8X)
-- **[Roman Chair Hip Adduction](https://youtu.be/j5HWZOfIePI?si=EsYf8Gg0rFO16y-p)** - Bodyweight/10lb/10lb/10lb 
 - **[Single-Arm Behind-Back Cable Lateral Raise](https://www.youtube.com/watch?v=y4Djk_G0yEg)**(Low Angle) – 10lb/10lb/10lb
 - **Jefferson Curl Barbell/Kettlebell** - 20lb/20lb/20lb
 
