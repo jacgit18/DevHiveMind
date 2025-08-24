@@ -197,7 +197,7 @@ Allowed to practice each excercise *here* max twice a week.
 	1. Strength phase 2x8 since like 5 exercises in one
 	2. Hypertrophy 3x10 and avoid explosive phase 
 	3. Prime shoulder with bands
-5. **Halo** 15lb/15lb/15lb
+5. **Halo** 15lb/15lb/20lb
 6. **Reverse Bench Crunch** - Bodyweight 
 7. **Rear Delt Fly/[DB Chest Supported Rear Delt Fly](https://youtu.be/iCbVhDNpG-Y?si=g-puZtoYX7u57LwT)** - 30lb/50lb/70lb | 20lb/20lb/20lb
 8. **[Incline Prone Lateral Raise](https://youtu.be/Wz1C8NzWg5A?si=epnUd7OS6WC75u1Y&t=112)** - 10lb/10lb/10lb | reverse non dumbbell variation of pec minor fly
