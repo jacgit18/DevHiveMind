@@ -155,7 +155,7 @@ Alternate each month keeping the week training phase in to account the weights f
 - ***Sled***(try rope pull variation on explosive week **1x10/2x8**) - 20lb/50lb/70lb 
 	- **[Crossover Step Lateral Sled Drag](https://youtu.be/rGtYmX2aeAA?si=PnniyFsIluLeViKa)** 
 	- Follow Super ROM excercise cadence with less sets and reps for higher weight. 
-- **Trap bar Deadlift**(green/black band) - 20lb/30lb/50lb
+- **[Trap Bar Deadlift](https://youtu.be/zDRgPfiHJ_c?si=hnoOefbzidE4bw4f)**(green/black band) - 20lb/30lb/50lb
 - ~~**Barbell Standing [Good Mornings](https://youtu.be/dEJ0FTm-CEk?si=LAPsPziQZQNGBvph)**~~ ~~not worth doing~~
 
 #### Row Machine Program
