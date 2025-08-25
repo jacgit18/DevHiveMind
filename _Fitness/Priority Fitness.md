@@ -146,7 +146,7 @@ The general principles of **training phases** like strength and hypertrophy appl
 8. Pallof Press (anti-rotation core)
 9. Cable Single Leg RDL
 
-## Full Body Day Part 2 Sunday
+## Full Body Day Part 2 Sunday Sprint Day
 1. Cable Pec Minor Fly/Chest Fly ✅ (warm-up / activation)  
 2. Prone Leg Curl ✅  
 3. Back Extension (posterior chain, low back protection)  
@@ -157,17 +157,7 @@ The general principles of **training phases** like strength and hypertrophy appl
 8. Zottman Curl (biceps + forearms)  
 9. Pallof Press (anti-rotation core)  
 
-## Upper Body Day Part 1 Monday
-1. Cable Pec Minor Fly ✅ (warm-up / activation)  
-2. Chest / Bench Press  
-3. Halo (shoulder mobility + stability)  
-4. Shoulder Press  
-5. Super ROM Six-Ways Raise (deltoid health)  
-6. Zottman Curl (biceps + forearms)  
-7. Kneeling Cable Crunch  
-8. Pallof Press (anti-rotation core)  
-
-## Lower Body Day Part 1 Tuesday
+## Lower Body Day Part 1 Monday
 1. Cable Pec Minor Fly/Chest Fly ✅ (warm-up / activation)  
 2. Prone Leg Curl ✅  
 3. Back Extension (posterior chain, low back protection)  
@@ -179,16 +169,19 @@ The general principles of **training phases** like strength and hypertrophy appl
 8. Trap Bar Squat Jump (power finisher)  
 9. Kettlebell Leg Raise
 
-## Upper Body Day Part 2 Wednesday
-1. Cable Pec Minor Fly/Chest Fly ✅ (warm-up / activation)    
+
+## Upper Body Day Part 1 Tuesday Sprint Day
+1. Cable Pec Minor Fly/Chest Fly ✅ (warm-up / activation)  
 2. Chest / Bench Press  
 3. Halo (shoulder mobility + stability)  
 4. Shoulder Press  
 5. Super ROM Six-Ways Raise (deltoid health)  
-6. Kneeling Cable Crunch  
-7. Pallof Press (anti-rotation core)  
+6. Zottman Curl (biceps + forearms)  
+7. Kneeling Cable Crunch  
+8. Pallof Press (anti-rotation core)  
 
-## Lower Body Day Part 2 Thursday
+
+## Lower Body Day Part 2 Wednesday
 1. Prone Leg Curl ✅  
 2. Back Extension (posterior chain, low back protection)  
 3. Dumbbell Bulgarian Split Squat  
@@ -197,6 +190,15 @@ The general principles of **training phases** like strength and hypertrophy appl
 6. Hack Squat *or* Leg Press (depending on recovery)  
 7. Trap Bar Squat Jump (power finisher)  
 8. Kettlebell Leg Raise
+
+## Upper Body Day Part 2 Thursday Sprint Day
+1. Cable Pec Minor Fly/Chest Fly ✅ (warm-up / activation)    
+2. Chest / Bench Press  
+3. Halo (shoulder mobility + stability)  
+4. Shoulder Press  
+5. Super ROM Six-Ways Raise (deltoid health)  
+6. Kneeling Cable Crunch  
+7. Pallof Press (anti-rotation core)  
 
 
 ## Body Part Specific Programs 
@@ -212,10 +214,10 @@ Anything not on this list is most likely a bad excercise or not worth doing base
 #### Schedule for Alternating Variation in Exercises
 Alternate each month keeping the week training phase in to account the weights follow like this when alternating phase in session **explosive** to **hypertrophy** | **explosive** to **strength** | **strength** to **hypertrophy** also weights follow ***explosive/hypertrophy/strength***.
 
-| Month           | Sled                             | Back Extension                                  | Upper Body                  |                        | Leg Focus            |           |
-| --------------- | -------------------------------- | ----------------------------------------------- | --------------------------- | ---------------------- | -------------------- | --------- |
-| 1 (Odd months)  | Push to Lateral(left/right) Pull | Unilateral back ext & Roman Chair Hip abduction | Single Arm(were it applies) | Chin-up                | Single-leg variation | Leg Press |
-| 2 (Even months) | Push to Pull                     | Bilateral Back ext                              | Bilateral Arm               | Neutral/Narrow Pull-up | Bilateral variation  | HackSmith |
+| Month           | Sled                             | Back Extension                                                     | Upper Body                  |                        | Leg Focus            |           |
+| --------------- | -------------------------------- | ------------------------------------------------------------------ | --------------------------- | ---------------------- | -------------------- | --------- |
+| 1 (Odd months)  | Push to Lateral(left/right) Pull | Unilateral back ext 2x8 with 5 sec ISO & Roman Chair Hip abduction | Single Arm(were it applies) | Chin-up                | Single-leg variation | Leg Press |
+| 2 (Even months) | Push to Pull                     | Bilateral Back ext 4x8 with 10 sec ISO                             | Bilateral Arm               | Neutral/Narrow Pull-up | Bilateral variation  | HackSmith |
 - [***Barbell Clean Jerk Press*** ](https://www.youtube.com/watch?v=8IYt7AtP8BI) - 20lb/20lb/20lb
 - **[Base Rows](https://youtu.be/Qmw9TKnQ9NY?si=gNe_2K45P71UKz5y)** - 10lb/20lb/30lb
 - **[Suitcase Bottom Up March](https://www.youtube.com/watch?v=TJjRZBpY75I)**(**1x10/2x8**) - 5lb/10lb/20lb 
@@ -285,7 +287,7 @@ All leg cable excercise are done at a low angle. Avoid squatting with running sh
 2. **Barbell Squat/Zercher B-Squat** - Incline High Bar(on trap muscle)  - 50lb
 3. **Dumbbell Bulgarian Split Squat/Prone Leg Curl** (Try [elevated](https://youtu.be/DXK-VbFE6ic?si=NHqOeitXD0h_YQsr) front leg variation also use [leg curl roller](https://youtu.be/VC5kbLSuo30?si=NLitkOhL50votRUC)) - 20lb/60lb half sets
 4. **Kneeling Squat on toes with curlbar/Dumbbell behind** - 45lb maybe higher
-5. **Unilateral/Bilateral Leg Press** – 180lb/360lb/500lb
+5. **Unilateral/Bilateral Leg Press** – 180lb/360lb/500lb | 180lb/360lb/500lb
 6. **Walking Barbell Lunge/Zercher Lunge** – 20lb
 7. **Kettlebell B-Squat/Sumo** - 20lb
 8. **[Roman Chair Hip Abduction](https://youtu.be/j5HWZOfIePI?si=EsYf8Gg0rFO16y-p)** - Bodyweight/10lb/10lb/10lb 
