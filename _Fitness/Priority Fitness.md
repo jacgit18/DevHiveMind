@@ -131,33 +131,46 @@ The general principles of **training phases** like strength and hypertrophy appl
 ### Back Injury Prevention
 Must have In Session
 
+Walking Barbell Lunge/Zercher Lunge
+Dumbbell Bulgarian Split Squat
+
+
 Upper Body
 Halo
+Pall of Press
 
 Full body day 
 Clean jerk press
 Halo
+Pall of Press
 Prone leg curl 
 Sled
 
 Lower body day
 Deadlift 
-Prone leg curl 
+Hack Squat
 Hip thrust
+Prone leg curl 
+Trap Bar Squat Jump
 
 Upper body 
 Halo
+Pall of Press
 
 Full body day
 Back extension
 Halo
+Pall of Press
 Prone leg curl 
 Sled
 
 
 lower body day
 Back extension
+Deadlift 
+Leg Press
 Prone leg curl 
+Trap Bar Squat Jump
 
 
 ## Body Part Specific Programs 
@@ -173,10 +186,10 @@ Anything not on this list is most likely a bad excercise or not worth doing base
 #### Schedule for Alternating Variation in Exercises
 Alternate each month keeping the week training phase in to account the weights follow like this when alternating phase in session **explosive** to **hypertrophy** | **explosive** to **strength** | **strength** to **hypertrophy** also weights follow ***explosive/hypertrophy/strength***.
 
-| Month           | Sled                             | Upper Body                  |                        | Leg Focus            |
-| --------------- | -------------------------------- | --------------------------- | ---------------------- | -------------------- |
-| 1 (Odd months)  | Push to Lateral(left/right) Pull | Single Arm(were it applies) | Chin-up                | Single-leg variation |
-| 2 (Even months) | Push to Pull                     | Bilateral Arm               | Neutral/Narrow Pull-up | Bilateral variation  |
+| Month           | Sled                             | Back Ext | Upper Body                  |                        | Leg Focus            |
+| --------------- | -------------------------------- | -------- | --------------------------- | ---------------------- | -------------------- |
+| 1 (Odd months)  | Push to Lateral(left/right) Pull |          | Single Arm(were it applies) | Chin-up                | Single-leg variation |
+| 2 (Even months) | Push to Pull                     |          | Bilateral Arm               | Neutral/Narrow Pull-up | Bilateral variation  |
 - [***Barbell Clean Jerk Press*** ](https://www.youtube.com/watch?v=8IYt7AtP8BI) - 20lb/20lb/20lb
 - **[Base Rows](https://youtu.be/Qmw9TKnQ9NY?si=gNe_2K45P71UKz5y)** - 10lb/20lb/30lb
 - **[Suitcase Bottom Up March](https://www.youtube.com/watch?v=TJjRZBpY75I)**(**1x10/2x8**) - 5lb/10lb/20lb 
@@ -248,7 +261,7 @@ All leg cable excercise are done at a low angle. Avoid squatting with running sh
 2. **Barbell Squat/Zercher B-Squat** - Incline High Bar(on trap muscle)  - 50lb
 3. **Dumbbell Bulgarian Split Squat/Prone Leg Curl** (Try [elevated](https://youtu.be/DXK-VbFE6ic?si=NHqOeitXD0h_YQsr) front leg variation also use [leg curl roller](https://youtu.be/VC5kbLSuo30?si=NLitkOhL50votRUC)) - 20lb/60lb half sets
 4. **Kneeling Squat on toes with curlbar/Dumbbell behind** - 45lb maybe higher
-5. **Single/dual Leg Press** – 180lb/360lb/500lb
+5. **Unilateral/Bilateral Leg Press** – 180lb/360lb/500lb
 6. **Walking Barbell Lunge/Zercher Lunge** – 20lb
 7. **Kettlebell B-Squat/Sumo** - 20lb
 8. ~~[Elevated Smith Machine Lunge](https://youtu.be/Yp5O9Cz6Ajg?si=bFGCfbzNqt_JobTA) - try [Elevated Lunge](https://youtu.be/OVFHK2Iev70?si=oiRNDNHznSrNP_RC) with dumbbell at max 40lb to 60lb then switch to free barbell~~
