@@ -115,7 +115,6 @@ The general principles of **training phases** like strength and hypertrophy appl
 - [ ] Follow [[Muscle Release Regimen |Muscle release regimen with tools]]
 
 ## Regimen
-- [ ] Start with [[Stretch Regimen]]
 
 | Day      | Session Type                                                                               | Week 1 – Strength Focus                                                                    | Week 2 – Hypertrophy Focus                         | Week 3 – Explosive/Plyometrics Focus              | Week 4 – Free | Best Order of Operations |
 | -------- | ------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------ | -------------------------------------------------- | ------------------------------------------------- | ------------- | ------------------------ |
@@ -134,6 +133,7 @@ The general principles of **training phases** like strength and hypertrophy appl
 - Maintain strong **core + posterior chain focus** to protect spine.  
 
 #todo/BAU/Workout 
+- [ ] Start with [[Stretch Regimen]]
 - [ ] Swap out some Leg stuff next year with cable excercise or some hybrid of the two
 ## Full Body Day Part 1 Saturday
 1. Cable Pec Minor Fly/Chest Fly ✅ (warm-up / activation)  
