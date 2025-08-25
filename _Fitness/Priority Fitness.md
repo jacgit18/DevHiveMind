@@ -128,11 +128,73 @@ The general principles of **training phases** like strength and hypertrophy appl
 | **Sat**  | Full Body + Sled + Clean Jerk Press                                                        | *Lower Strength* ***Upper Pull Hypertrophy***                                           | *Lower Hypertrophy*  ***Upper Pull Explosive***    | *Lower Explosive*  ***Upper Pull Strength***      |               | Arms                     |
 
 
+# Session Breakdown  
+**In-Session Musts for Back Injury Prevention**  
+- Always start with **Cable Pec Minor Fly** and **Prone Leg Curl**.  
+- Maintain strong **core + posterior chain focus** to protect spine.  
 
+## Full Body Day Part 1 Saturday
+1. Cable Pec Minor Fly ✅  
+2. Prone Leg Curl ✅  
+3. Clean & Jerk Press (explosive power)  
+4. Halo  
+5. Row Machine (horizontal pull)  
+6. Sled Push/Pull (conditioning + legs)  
+7. Reverse Crunch / Dragonfly  
+8. Pallof Press (anti-rotation core)
+9. Cable Single Leg RDL
 
+## Full Body Day Part 2 Sunday
+1. Cable Pec Minor Fly ✅  
+2. Prone Leg Curl ✅  
+3. Back Extension (posterior chain, low back protection)  
+4. Halo  
+5. Row Machine (horizontal pull)  
+6. Sled Push/Pull (conditioning + legs)  
+7. Reverse Crunch / Dragonfly  
+8. Zottman Curl (biceps + forearms)  
+9. Pallof Press (anti-rotation core)  
 
+## Upper Body Day Part 1 Monday
+1. Cable Pec Minor Fly ✅ (warm-up / activation)  
+2. Chest / Bench Press  
+3. Halo (shoulder mobility + stability)  
+4. Shoulder Press  
+5. Super ROM Six-Ways Raise (deltoid health)  
+6. Zottman Curl (biceps + forearms)  
+7. Kneeling Cable Crunch  
+8. Pallof Press (anti-rotation core)  
 
+## Lower Body Day Part 1 Tuesday
+1. Cable Pec Minor Fly ✅  
+2. Prone Leg Curl ✅  
+3. Back Extension (posterior chain, low back protection)  
+4. Dumbbell Bulgarian Split Squat  
+   - *alt:* Walking Barbell Lunge / Zercher Lunge  
+5. Deadlift  
+6. Hack Squat *or* Leg Press (depending on recovery)  
+7. Hip Thrust (glutes focus)  
+8. Trap Bar Squat Jump (power finisher)  
+9. Kettlebell Leg Raise
 
+## Upper Body Day Part 2 Wednesday
+1. Cable Pec Minor Fly ✅ (warm-up / activation)  
+2. Chest / Bench Press  
+3. Halo (shoulder mobility + stability)  
+4. Shoulder Press  
+5. Super ROM Six-Ways Raise (deltoid health)  
+6. Kneeling Cable Crunch  
+7. Pallof Press (anti-rotation core)  
+
+## Lower Body Day Part 2 Thursday
+1. Prone Leg Curl ✅  
+2. Back Extension (posterior chain, low back protection)  
+3. Dumbbell Bulgarian Split Squat  
+   - *alt:* Walking Barbell Lunge / Zercher Lunge  
+5. Deadlift  
+6. Hack Squat *or* Leg Press (depending on recovery)  
+7. Trap Bar Squat Jump (power finisher)  
+8. Kettlebell Leg Raise
 
 
 ## Body Part Specific Programs 
