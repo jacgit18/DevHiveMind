@@ -85,7 +85,7 @@ dg-publish:
 - [ ] Try Healthy Avocado brownies no box stuff
 - [ ] get weekly cost to around 45 to 50 a week assuming no change with supplement
 - [ ] Try Current new supplement stack without Ginsing plus for like a week to gauge difference so start July 17th
-- [ ] Buy meat, pasta, etc..  for a better idea on average monthly cost 
+- [x] Buy meat, pasta, etc..  for a better idea on average monthly cost ✅ 2025-08-25
 - [ ] Finalize before end of year to add weight more effectively and control spending 
 - [ ] Once finalized build recipes around grocery list like a restaurant would  
 - [ ] Exclude mass gainer from cost calculation below only include in calories and protein calculation
@@ -111,7 +111,7 @@ need money for non meat as well and occasional seasoning etc...
 - [ ]  Break down into a week assuming only eating one type of meat a week then half it between 4 days and use excess also prioritize cost
 
 
-Costco and BJs cost around the same
+
 
   
 
