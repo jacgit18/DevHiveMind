@@ -1,121 +1,3 @@
-The extra cost of a BJ's order at Max can go up to about 20 which includes the delivery fee driver tip and tax roughly on twice or once a quarter trip
-
-
-1 month aldi/bj meat split
-monthly
-Pork loin chop 1 pack 8 chops each 4 days      $18.65
-Chicken 18 days 2 breast    4 packs    $52
-Ground Beef Sirloin, 2 lbs 4 days  8 patties  $14.50
-
-Aldi Top Round 8 days 8 cuts 2 steaks  $24  
-travel $10
-
-
-upfront quarterly 272.81 
-
-- ***Trader Joe Goat milk Keifer***: $5.69 ( 150 cal 4 servings per bottle each 8oz) × 2 = $11.18
-
-
-Irish butter bjs $12.79 6 stix
-
-non meat
-butter 4.20 x 2 = 8.40
-***Aldi Chickpea Pasta*** $3.79 6 servings each 200cal so 2 servings across 3 days if cooking whole box 400cal total each day x 2 = $7.60
-
-***Aldi Brown Rice Quinoa Pasta*** $3.69 8 servings 200cal x 2 = $7.40
-
-Raw sweet potatoes $2.89 80cal about 160cal for two potatoes x 2 = $5.80
-
-Aldi Frozen Green Beans $3.00 150cal total 30 per serving x 2 = $6
-Aldi Frozen Spinach $2.15 90cal total 25 per severing x 2 = $4.30
-
-
-
-
-
-other stuff
-kiefer x 7 = 40
-
-frozen fruit x 2 = 7.60
-eggs x 8 = 44 / cheaper at Bjs split between bjs and Aldi
-eggs x 5 = 14 + 5.50 x3 = 14 + 16.50 = 8 eggs $30.50
-sandwich stuff x 4 = 108
-rice pudding = 7.50
-
-40 non meat + other stuff 247 = 287 + meat 120 = 367
-
-
-quarter cost 
-
-120 + 741 = 861 + 360 = 1,221
-
-
-yearly
-5,000 food almost 
-1,600 supplements
-1,728 mass gainer 
-8,328 total health & food probably around 9000 assuming cost of non food and also including rice maybe bjs membership also beverages
-
-10,000 overall
-
-
-breaks down 834 a month
-
-
-
-
-2 cans of tuna a week max skipjack
-
-
-Tuna over deli meat is healthier
-
-  find healthy Oatmeal brand
-  
-
-Albacore tuna
-
-  
-
-Oil tuna if lazy
-
-
-
-
-
-
-
-
-
-last mile delivery business 
-
-self storage
-
-
-
-
-Chest fly before dumbbell press
-
-Leg curl before squats
-
-Leg curl focus on hypotrophy leg extension focus on strength
-
-Pull up fast on the concentric and on the eccentric lower slowly
-
-
-
-Super rom a fuller range lateral raise try cable variation 
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -126,27 +8,25 @@ Super rom a fuller range lateral raise try cable variation 
 
 
 
-Too good to go
 
 
 
 
 
 
-## Fish that I might be allergic to
-- [ ] Anchovy  
-- [ ] Mackerel  
-- [ ] Sardine
 
 
 
 
 
-Corn bread
+
+
 
 
 
 Try
+
+Corn bread
 
 tofu
 
