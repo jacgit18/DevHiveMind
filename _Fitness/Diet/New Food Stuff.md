@@ -190,3 +190,13 @@ Prefer skipjack tuna
 Star anise in beef stock
 
 
+rice Thyme butter garlic salt
+
+
+
+Mass gainer consideration
+288 price
+108G
+1,560cal
+4 containers
+when heavier try 16 cans of tuna  half each day covers 32 days
