@@ -133,6 +133,8 @@ The general principles of **training phases** like strength and hypertrophy appl
 - Always start with **Cable Pec Minor Fly** and **Prone Leg Curl**.  
 - Maintain strong **core + posterior chain focus** to protect spine.  
 
+#todo/BAU/Workout 
+- [ ] Swap out some Leg stuff next year with cable excercise or some hybrid of the two
 ## Full Body Day Part 1 Saturday
 1. Cable Pec Minor Fly ✅  
 2. Prone Leg Curl ✅  
@@ -210,10 +212,10 @@ Anything not on this list is most likely a bad excercise or not worth doing base
 #### Schedule for Alternating Variation in Exercises
 Alternate each month keeping the week training phase in to account the weights follow like this when alternating phase in session **explosive** to **hypertrophy** | **explosive** to **strength** | **strength** to **hypertrophy** also weights follow ***explosive/hypertrophy/strength***.
 
-| Month           | Sled                             | Back Extension                                  | Upper Body                  |                        | Leg Focus            |
-| --------------- | -------------------------------- | ----------------------------------------------- | --------------------------- | ---------------------- | -------------------- |
-| 1 (Odd months)  | Push to Lateral(left/right) Pull | Unilateral back ext & Roman Chair Hip abduction | Single Arm(were it applies) | Chin-up                | Single-leg variation |
-| 2 (Even months) | Push to Pull                     | Bilateral Back ext                              | Bilateral Arm               | Neutral/Narrow Pull-up | Bilateral variation  |
+| Month           | Sled                             | Back Extension                                  | Upper Body                  |                        | Leg Focus            |           |
+| --------------- | -------------------------------- | ----------------------------------------------- | --------------------------- | ---------------------- | -------------------- | --------- |
+| 1 (Odd months)  | Push to Lateral(left/right) Pull | Unilateral back ext & Roman Chair Hip abduction | Single Arm(were it applies) | Chin-up                | Single-leg variation | Leg Press |
+| 2 (Even months) | Push to Pull                     | Bilateral Back ext                              | Bilateral Arm               | Neutral/Narrow Pull-up | Bilateral variation  | HackSmith |
 - [***Barbell Clean Jerk Press*** ](https://www.youtube.com/watch?v=8IYt7AtP8BI) - 20lb/20lb/20lb
 - **[Base Rows](https://youtu.be/Qmw9TKnQ9NY?si=gNe_2K45P71UKz5y)** - 10lb/20lb/30lb
 - **[Suitcase Bottom Up March](https://www.youtube.com/watch?v=TJjRZBpY75I)**(**1x10/2x8**) - 5lb/10lb/20lb 
