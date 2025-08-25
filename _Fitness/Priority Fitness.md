@@ -143,8 +143,8 @@ The general principles of **training phases** like strength and hypertrophy appl
 5. Row Machine (horizontal pull)  
 6. Sled Push/Pull (conditioning + legs)  
 7. Reverse Crunch / Dragonfly  
-8. Pallof Press (anti-rotation core)
-9. Cable Single Leg RDL
+8. Pallof Press (anti-rotation core) 📈
+9. Cable Single Leg RDL 📈
 
 ## Full Body Day Part 2 Sunday Sprint Day
 1. Cable Pec Minor Fly/Chest Fly ✅ (warm-up / activation)  
@@ -155,7 +155,7 @@ The general principles of **training phases** like strength and hypertrophy appl
 6. Sled Push/Pull (conditioning + legs)  
 7. Reverse Crunch / Dragonfly  
 8. Zottman Curl (biceps + forearms)  
-9. Pallof Press (anti-rotation core)  
+9. Pallof Press (anti-rotation core)  📈
 
 ## Lower Body Day Part 1 Monday
 1. Cable Pec Minor Fly/Chest Fly ✅ (warm-up / activation)  
@@ -167,7 +167,7 @@ The general principles of **training phases** like strength and hypertrophy appl
 6. Hack Squat *or* Leg Press (depending on recovery)  
 7. Hip Thrust (glutes focus)  
 8. Trap Bar Squat Jump (power finisher)  
-9. Kettlebell Leg Raise
+9. Kettlebell Leg Raise📈
 
 
 ## Upper Body Day Part 1 Tuesday Sprint Day
@@ -177,8 +177,9 @@ The general principles of **training phases** like strength and hypertrophy appl
 4. Shoulder Press  
 5. Super ROM Six-Ways Raise (deltoid health)  
 6. Zottman Curl (biceps + forearms)  
-7. Kneeling Cable Crunch  
-8. Pallof Press (anti-rotation core)  
+7. Cable Assisted Pancake 📈
+8. Kneeling Cable Crunch  📈
+9. Pallof Press (anti-rotation core)  📈
 
 
 ## Lower Body Day Part 2 Wednesday
@@ -189,7 +190,7 @@ The general principles of **training phases** like strength and hypertrophy appl
 5. Deadlift  
 6. Hack Squat *or* Leg Press (depending on recovery)  
 7. Trap Bar Squat Jump (power finisher)  
-8. Kettlebell Leg Raise
+8. Kettlebell Leg Raise 📈
 
 ## Upper Body Day Part 2 Thursday Sprint Day
 1. Cable Pec Minor Fly/Chest Fly ✅ (warm-up / activation)    
@@ -197,8 +198,9 @@ The general principles of **training phases** like strength and hypertrophy appl
 3. Halo (shoulder mobility + stability)  
 4. Shoulder Press  
 5. Super ROM Six-Ways Raise (deltoid health)  
-6. Kneeling Cable Crunch  
-7. Pallof Press (anti-rotation core)  
+6. Cable Assisted Pancake 📈
+7. Kneeling Cable Crunch  📈
+8. Pallof Press (anti-rotation core)  📈
 
 
 ## Body Part Specific Programs 
