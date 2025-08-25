@@ -10,6 +10,11 @@ Started:
 EditDate: 
 Relates:
 ---
+
+Limit things to 3 spices or premade spice/sauce from store for meats
+
+
+
 ### **Ingredients for Haitian Seasoning (Epis):**
 
 - **2 tablespoons fresh thyme** (or 1 tablespoon dried thyme)
