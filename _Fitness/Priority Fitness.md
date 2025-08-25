@@ -52,22 +52,16 @@ dg-publish:
 - [ ] Do 1 minute rest between reps and 2 min between exercises especially if going heavy
 - [ ] Add reps then add weights over time for different exercises so for strength phase get to like 5x8 then increase weight shifting back to 4x8 do the same for other phases so explosive 3x10 to 4x10 and adjust weight relative to strength phase max weight and for hypertrophy maybe just scale stick to song duration and adjust weight relative to strength phase max weight.
 - [ ] Between reps and excercise work on visualizing, breathing, moving around, and do mobility band excercise. 
-- [ ] Don’t pair **Zottman Curls + Chin-Ups** in the same day too often—they both heavily load the **biceps tendon**.
-
 
 ## To Try
 #todo/Workout/Try
 - [ ] try dumbbell lunge with back leg on balance board or plate or platform. 
 - [ ] try all the way down push-ups with a hand release at the bottom and then push back up. 
-- [ ] try Burpee pull up
 - [ ] try [Seated Y Cable Raises](https://youtu.be/-yL_BS28hcY?si=oO9QrIO_sv2SF5K1)(Do upstairs)
 - [ ] try [FreeMotion Front Shoulder Raise](https://youtu.be/_bzJ1Yb4XCU?si=v0UUNLSilV6NVM76)
-- [ ] try All out 4 min then 4 min coasting so run then a slow walk then back to intense 4 min
-- [ ] try doing a specific exercise when you feel a type of way can be hitting bag at crunch for example whatever comes to mind
-- [ ] try Isometric hold for strength phrase
-- [ ] warm up more with lunges and lunges to kicks, knees, and teeps
-- [ ] also warm up or prime your body before an excercise like squat before squatting a bar or do push ups before bench press.
-- [ ] train hypertrophy by song duration and beat to simplify and no 1 min break between sets
+
+
+
 # Exercises
 >**Barbell Exercises: Upper vs Lower Body Considerations**
 Upper body barbell exercises—like the bench press—can sometimes place unnecessary strain on the wrists due to the fixed, straight bar grip. If the grip doesn’t align naturally with your wrist and shoulder joints, it can cause discomfort or even injury over time.
@@ -134,7 +128,11 @@ The general principles of **training phases** like strength and hypertrophy appl
 
 #todo/BAU/Workout 
 - [ ] Start with [[Stretch Regimen]]
+- [ ] Cycle in warm up doing  lunges to kicks, knees, and teeps
 - [ ] Swap out some Leg stuff next year with cable excercise or some hybrid of the two
+- [ ] Train hypertrophy by song duration and beat to simplify and no 1 min break between sets
+- [ ] Practice priming excercise movement like squat before squatting a bar or do push ups before bench press.
+- [ ]  Run all out 1 min then 1 min coasting so run then a slow walk then back to intense 1 min once able to do a minutes build to 4 min.
 ### Full Body Day Part 1 Saturday
 1. Cable Pec Minor Fly/Chest Fly ✅ (warm-up / activation)  
 2. Prone Leg Curl ✅  
