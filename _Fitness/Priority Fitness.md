@@ -128,29 +128,22 @@ The general principles of **training phases** like strength and hypertrophy appl
 | **Sat**  | Full Body + Sled + Clean Jerk Press                                                        | *Lower Strength* ***Upper Pull Hypertrophy***                                           | *Lower Hypertrophy*  ***Upper Pull Explosive***    | *Lower Explosive*  ***Upper Pull Strength***      |               | Arms                     |
 
 
-### Back Injury Prevention
-Always prioritize cable pec fly and leg curl
+### Session Breakdown 
+Must have In Session with Back Injury Prevention
 
-Must have In Session
-
-Walking Barbell Lunge/Zercher Lunge
-
-Dumbbell Bulgarian Split Squat
-
-Reverse Crunch/Dragon Fly
-
-Kneeling Cable Crunch
-
-Zottman Curl
+Always prioritize cable pec fly and leg curl at beginning of session
 
 
-Upper Body
+Upper body 
 Cable Pec Minor Fly
-Chest Press 
+Chest/Bench Press 
 Halo
+Kneeling Cable Crunch
 Pall of Press
 Shoulder Press
 Super ROM Six Ways Raise
+Zottman Curl
+
 
 Full body day 
 Cable Pec Minor Fly
@@ -158,19 +151,24 @@ Clean jerk press
 Halo
 Pall of Press
 Prone leg curl 
+Reverse Crunch/Dragon Fly
+Row Machine
 Sled
 
+
 Lower body day
+Dumbbell Bulgarian Split Squat | Walking Barbell Lunge/Zercher Lunge
 Deadlift 
 Hack Squat
 Hip thrust
 Prone leg curl 
 Trap Bar Squat Jump
 
-Upper body 
+Upper Body
 Cable Pec Minor Fly
-Chest Press 
+Chest/Bench Press 
 Halo
+Kneeling Cable Crunch
 Pall of Press
 Shoulder Press
 Super ROM Six Ways Raise
@@ -181,11 +179,15 @@ Back extension
 Halo
 Pall of Press
 Prone leg curl 
+Reverse Crunch/Dragon Fly
+Row Machine
 Sled
+Zottman Curl
 
 
 lower body day
 Back extension
+Dumbbell Bulgarian Split Squat | Walking Barbell Lunge/Zercher Lunge
 Deadlift 
 Leg Press
 Prone leg curl 

@@ -190,3 +190,67 @@ Prefer skipjack tuna
 Star anise in beef stock
 
 
+
+
+# Session Breakdown  
+**In-Session Musts for Back Injury Prevention**  
+- Always start with **Cable Pec Minor Fly** and **Prone Leg Curl**.  
+- Maintain strong **core + posterior chain focus** to protect spine.  
+
+## 🔹 Upper Body Day
+1. Cable Pec Minor Fly ✅ (warm-up / activation)  
+2. Prone Leg Curl ✅ (hamstring protection)  
+3. Chest / Bench Press  
+4. Halo (shoulder mobility + stability)  
+5. Kneeling Cable Crunch  
+6. Pallof Press (anti-rotation core)  
+7. Shoulder Press  
+8. Super ROM Six-Ways Raise (deltoid health)  
+9. Zottman Curl (biceps + forearms)  
+
+---
+
+## 🔹 Full Body Day
+1. Cable Pec Minor Fly ✅  
+2. Prone Leg Curl ✅  
+3. Clean & Jerk Press (explosive power)  
+4. Halo  
+5. Pallof Press  
+6. Row Machine (horizontal pull)  
+7. Sled Push/Pull (conditioning + legs)  
+8. Reverse Crunch / Dragonfly  
+9. Zottman Curl (optional finisher)  
+
+---
+
+## 🔹 Lower Body Day
+1. Cable Pec Minor Fly ✅  
+2. Prone Leg Curl ✅  
+3. Back Extension (posterior chain, low back protection)  
+4. Dumbbell Bulgarian Split Squat  
+   - *alt:* Walking Barbell Lunge / Zercher Lunge  
+5. Deadlift  
+6. Hack Squat *or* Leg Press (depending on recovery)  
+7. Hip Thrust (glutes focus)  
+8. Trap Bar Squat Jump (power finisher)  
+
+---
+
+## 🔹 Upper Body Day
+1. Cable Pec Minor Fly ✅ (warm-up / activation)  
+2. Prone Leg Curl ✅ (hamstring protection)  
+3. Chest / Bench Press  
+4. Halo (shoulder mobility + stability)  
+5. Kneeling Cable Crunch  
+6. Pallof Press (anti-rotation core)  
+7. Shoulder Press  
+8. Super ROM Six-Ways Raise (deltoid health)  
+9. Zottman Curl (biceps + forearms)  
+
+
+### ⚡ Notes
+- **Order Priority:** Prehab (pec fly + leg curl) → Compound lifts → Accessory/core → Explosive work.  
+- **Back Health Focus:** Avoid stacking heavy hip hinge moves (deadlift, hip thrust, back extension) in one day unless load is moderated.  
+- **Core Antagonists:** Halo + Pallof + Reverse Crunches balance spinal stability.  
+
+
