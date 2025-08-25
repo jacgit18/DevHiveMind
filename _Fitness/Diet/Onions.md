@@ -11,10 +11,6 @@ Relates:
 Peer Reviewed: 0
 dg-publish:
 ---
-Alright — let’s strip the fluff and make a **decision-making framework** you can actually use mid-cooking, not a poetic onion monologue.
-
----
-
 ## **Onion Selection Framework**
 
 **Step 1 — Decide the Role of the Onion in the Dish**
@@ -132,7 +128,3 @@ Alright — let’s strip the fluff and make a **decision-making framework** you
 |**Quick cook**|Shallot|Yellow|Sweet|Red|White|
 |**Grill/Roast**|Yellow|Yellow|Sweet|Red|White|
 |**Pickling**|Shallot|Yellow|Sweet|Red|White|
-
----
-
-If you want, I can push this into a **3-step “flowchart”** so you can mentally run through it in 5 seconds while cooking. That would make onion choice practically automatic. Would you like me to?

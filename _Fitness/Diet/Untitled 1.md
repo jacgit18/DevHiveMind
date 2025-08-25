@@ -754,10 +754,3 @@ Got it! Here are **high-calorie, high-protein yogurt recipes without protein pow
 9. **Cashews** – 157 kcal, 5g protein (≈ 18 nuts)  
 
 ---
-
-
-
-
-Bj shopping list
-Toilet paper not Scott's
-steak

@@ -20,9 +20,33 @@ dg-publish:
 | **Grain (Rice/Quinoa) Week**          | Rice or Quinoa                 | Other veggies mentioned (from Pasta & Potato weeks)                              | Chicken, Pork, Ground Meat |
 | **Mixed Week** (Pasta/Potatoes/Grain) | Mix of Pasta, Potatoes, Grains | Other veggies mentioned (from all previous weeks)                                | Chicken, Pork, Ground Meat |
 
-Need to finalize veggie montly cost
+cooking tips and recipes 
+
+multi potato week more versatile 
+
+If egg floats throw away
 
 
+
+Boil then fry potatoes for another meal like with ground meat
+
+  15 min chicken drum stick
+
+
+Broth is made with Meats along with bones
+
+Stock is only bones
+
+
+Can freeze Bones from chicken as well as chicken feet after eating and watch rinsing them and stuff then use to make chicken broth when you have enough
+
+
+
+Broth and Stock 
+Onion carrots celery
+
+Pepper corn 
+  
 
 | Quantity/Type                                           | Days Covered | Serving   | Protein for Individ | Cal for Individ | Wieght | Cost     |
 | ------------------------------------------------------- | ------------ | --------- | ------------------- | --------------- | ------ | -------- |
@@ -38,7 +62,7 @@ Need to finalize veggie montly cost
 |                                                         |              |           |                     |                 |        | $213.36  |
 
 
-
+Use nuts and protein shakes to limit insulin Spike as well as adding more nutrients and absorption of those nutrients
 
 maybe frozen food from bjs 
 #### Week One - total daily calories/protein: 2,221 to 2,301/80G
