@@ -128,6 +128,28 @@ The general principles of **training phases** like strength and hypertrophy appl
 | **Sat**  | Full Body + Sled + Clean Jerk Press                                                        | *Lower Strength* ***Upper Pull Hypertrophy***                                           | *Lower Hypertrophy*  ***Upper Pull Explosive***    | *Lower Explosive*  ***Upper Pull Strength***      |               | Arms                     |
 
 
+### Back Injury Prevention
+Full body day 
+Clean jerk press
+Prone leg curl 
+Sled
+
+Lower body day
+Deadlift 
+Prone leg curl 
+Hip thrust
+
+
+full body day
+Back extension
+Prone leg curl 
+Sled
+
+
+lower body day
+Back extension
+Prone leg curl 
+
 
 ## Body Part Specific Programs 
 > For each excercise allowed to do 3 times a week max. Also each fixed gym machine has a freeweight variations you can pivot to if not available.
