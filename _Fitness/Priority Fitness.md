@@ -53,7 +53,7 @@ dg-publish:
 - [ ] Add reps then add weights over time for different exercises so for strength phase get to like 5x8 then increase weight shifting back to 4x8 do the same for other phases so explosive 3x10 to 4x10 and adjust weight relative to strength phase max weight and for hypertrophy maybe just scale stick to song duration and adjust weight relative to strength phase max weight.
 - [ ] Between reps and excercise work on visualizing, breathing, moving around, and do mobility band excercise. 
 - [ ] Don’t pair **Zottman Curls + Chin-Ups** in the same day too often—they both heavily load the **biceps tendon**.
-- [ ] Chest fly/ cable pec minor fly before any chest press type excercise and prone leg curl first before any leg excercise or Super Rom
+
 
 ## To Try
 #todo/Workout/Try
@@ -127,7 +127,7 @@ The general principles of **training phases** like strength and hypertrophy appl
 | **Fri**  | Full Body + Sled + Clean Jerk Press                                                        | Anything                                                                                   | Anything                                           | Anything                                          |               | Arms                     |
 
 
-# Session Breakdown  
+## Session Breakdown  
 **In-Session Musts for Back Injury Prevention**  
 - Always start with **Cable Pec Minor Fly** and **Prone Leg Curl**.  
 - Maintain strong **core + posterior chain focus** to protect spine.  
@@ -135,7 +135,7 @@ The general principles of **training phases** like strength and hypertrophy appl
 #todo/BAU/Workout 
 - [ ] Start with [[Stretch Regimen]]
 - [ ] Swap out some Leg stuff next year with cable excercise or some hybrid of the two
-## Full Body Day Part 1 Saturday
+### Full Body Day Part 1 Saturday
 1. Cable Pec Minor Fly/Chest Fly ✅ (warm-up / activation)  
 2. Prone Leg Curl ✅  
 3. Clean & Jerk Press (explosive power)  
@@ -146,7 +146,7 @@ The general principles of **training phases** like strength and hypertrophy appl
 8. Pallof Press (anti-rotation core) 📈
 9. Cable Single Leg RDL 📈
 
-## Full Body Day Part 2 Sunday Sprint Day
+### Full Body Day Part 2 Sunday Sprint Day
 1. Cable Pec Minor Fly/Chest Fly ✅ (warm-up / activation)  
 2. Prone Leg Curl ✅  
 3. Back Extension (posterior chain, low back protection)  
@@ -154,10 +154,10 @@ The general principles of **training phases** like strength and hypertrophy appl
 5. Row Machine (horizontal pull)  
 6. Sled Push/Pull (conditioning + legs)  
 7. Reverse Crunch / Dragonfly  
-8. Zottman Curl (biceps + forearms)  
+8. Zottman Curl (biceps + forearms)  - No Chin-ups on this day 
 9. Pallof Press (anti-rotation core)  📈
 
-## Lower Body Day Part 1 Monday
+### Lower Body Day Part 1 Monday
 1. Cable Pec Minor Fly/Chest Fly ✅ (warm-up / activation)  
 2. Prone Leg Curl ✅  
 3. Back Extension (posterior chain, low back protection)  
@@ -170,19 +170,19 @@ The general principles of **training phases** like strength and hypertrophy appl
 9. Kettlebell Leg Raise📈
 
 
-## Upper Body Day Part 1 Tuesday Sprint Day
+### Upper Body Day Part 1 Tuesday Sprint Day
 1. Cable Pec Minor Fly/Chest Fly ✅ (warm-up / activation)  
 2. Chest / Bench Press  
 3. Halo (shoulder mobility + stability)  
 4. Shoulder Press  
 5. Super ROM Six-Ways Raise (deltoid health)  
-6. Zottman Curl (biceps + forearms)  
+6. Zottman Curl (biceps + forearms)  - No Chin-ups on this day 
 7. Cable Assisted Pancake 📈
 8. Kneeling Cable Crunch  📈
 9. Pallof Press (anti-rotation core)  📈
 
 
-## Lower Body Day Part 2 Wednesday
+### Lower Body Day Part 2 Wednesday
 1. Prone Leg Curl ✅  
 2. Back Extension (posterior chain, low back protection)  
 3. Dumbbell Bulgarian Split Squat  
@@ -192,7 +192,7 @@ The general principles of **training phases** like strength and hypertrophy appl
 7. Trap Bar Squat Jump (power finisher)  
 8. Kettlebell Leg Raise 📈
 
-## Upper Body Day Part 2 Thursday Sprint Day
+### Upper Body Day Part 2 Thursday Sprint Day
 1. Cable Pec Minor Fly/Chest Fly ✅ (warm-up / activation)    
 2. Chest / Bench Press  
 3. Halo (shoulder mobility + stability)  
@@ -201,7 +201,6 @@ The general principles of **training phases** like strength and hypertrophy appl
 6. Cable Assisted Pancake 📈
 7. Kneeling Cable Crunch  📈
 8. Pallof Press (anti-rotation core)  📈
-
 
 ## Body Part Specific Programs 
 > For each excercise allowed to do 3 times a week max. Also each fixed gym machine has a freeweight variations you can pivot to if not available.
