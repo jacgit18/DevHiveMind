@@ -129,17 +129,28 @@ The general principles of **training phases** like strength and hypertrophy appl
 
 
 ### Back Injury Prevention
+Always prioritize cable pec fly and leg curl
+
 Must have In Session
 
 Walking Barbell Lunge/Zercher Lunge
+
 Dumbbell Bulgarian Split Squat
+
+Reverse Crunch/Dragon Fly
+
 
 
 Upper Body
+Cable Pec Minor Fly
+Chest Press 
 Halo
 Pall of Press
+Shoulder Press
+Super ROM 
 
 Full body day 
+Cable Pec Minor Fly
 Clean jerk press
 Halo
 Pall of Press
@@ -154,10 +165,15 @@ Prone leg curl
 Trap Bar Squat Jump
 
 Upper body 
+Cable Pec Minor Fly
+Chest Press 
 Halo
 Pall of Press
+Shoulder Press
+Super ROM 
 
 Full body day
+Cable Pec Minor Fly
 Back extension
 Halo
 Pall of Press
@@ -186,10 +202,10 @@ Anything not on this list is most likely a bad excercise or not worth doing base
 #### Schedule for Alternating Variation in Exercises
 Alternate each month keeping the week training phase in to account the weights follow like this when alternating phase in session **explosive** to **hypertrophy** | **explosive** to **strength** | **strength** to **hypertrophy** also weights follow ***explosive/hypertrophy/strength***.
 
-| Month           | Sled                             | Back Ext | Upper Body                  |                        | Leg Focus            |
-| --------------- | -------------------------------- | -------- | --------------------------- | ---------------------- | -------------------- |
-| 1 (Odd months)  | Push to Lateral(left/right) Pull |          | Single Arm(were it applies) | Chin-up                | Single-leg variation |
-| 2 (Even months) | Push to Pull                     |          | Bilateral Arm               | Neutral/Narrow Pull-up | Bilateral variation  |
+| Month           | Sled                             | Back Extension                                  | Upper Body                  |                        | Leg Focus            |
+| --------------- | -------------------------------- | ----------------------------------------------- | --------------------------- | ---------------------- | -------------------- |
+| 1 (Odd months)  | Push to Lateral(left/right) Pull | Unilateral back ext & Roman Chair Hip abduction | Single Arm(were it applies) | Chin-up                | Single-leg variation |
+| 2 (Even months) | Push to Pull                     | Bilateral Back ext                              | Bilateral Arm               | Neutral/Narrow Pull-up | Bilateral variation  |
 - [***Barbell Clean Jerk Press*** ](https://www.youtube.com/watch?v=8IYt7AtP8BI) - 20lb/20lb/20lb
 - **[Base Rows](https://youtu.be/Qmw9TKnQ9NY?si=gNe_2K45P71UKz5y)** - 10lb/20lb/30lb
 - **[Suitcase Bottom Up March](https://www.youtube.com/watch?v=TJjRZBpY75I)**(**1x10/2x8**) - 5lb/10lb/20lb 
@@ -228,9 +244,8 @@ Allowed to practice each excercise *here* max twice a week.
 4. **Arnold Press**/**Shoulder Press**(alternate) – 20lb/20lb/20lb  
 5. ~~**[Cable Wrist Curl pronated](https://youtu.be/UbfzCh0oJ5E?si=KtTGfiJfP5ep3CkD)/[supinated](https://youtu.be/WVAaKJvToe0?si=r9TKMQbLs1xmpiL0)**(Consider **[[Wrist Curl]]** regimen/[variations](https://www.youtube.com/watch?v=nvJ-1suJCTU)) – 10lb
 6. **Wide Seated Tricep Dip/[Bodyweight Tricep Dip](https://www.youtube.com/watch?v=p5Lx2BeVKR4&t=186s)** - 70lb/90/145lb
-7. **[Seated Cable Pec Minor Fly](https://youtu.be/sC91H2XLtJc?si=bSV_IhpBVbdADHz2&t=286)**(Better ROM then chest fly Top Angle) - 20lb/20lb/20lb(Machine 5 and 5)
-8. **Chest Fly** - 50lb/70lb/100lb
-9. ***[Landmine Anti Rotations](https://www.youtube.com/watch?v=8aXStDm3cOs) - 10lb/10lb/10lb***
+7. **Chest Fly** - 50lb/70lb/100lb
+8. ***[Landmine Anti Rotations](https://www.youtube.com/watch?v=8aXStDm3cOs) - 10lb/10lb/10lb***
 
 
 #### **Session 2: Pull Focus**
@@ -244,11 +259,10 @@ Allowed to practice each excercise *here* max twice a week.
 5. **Halo** 15lb/15lb/20lb
 6. **Reverse Bench Crunch** - Bodyweight 
 7. **Rear Delt Fly/[DB Chest Supported Rear Delt Fly](https://youtu.be/iCbVhDNpG-Y?si=g-puZtoYX7u57LwT)** - 30lb/50lb/70lb | 20lb/20lb/20lb
-8. **[Incline Prone Lateral Raise](https://youtu.be/Wz1C8NzWg5A?si=epnUd7OS6WC75u1Y&t=112)** - 10lb/10lb/10lb | reverse non dumbbell variation of pec minor fly
+8. **[Incline Prone Lateral Raise](https://youtu.be/Wz1C8NzWg5A?si=epnUd7OS6WC75u1Y&t=112)**/**[Seated Cable Pec Minor Fly](https://youtu.be/sC91H2XLtJc?si=bSV_IhpBVbdADHz2&t=286)**(Better ROM then chest fly Top Angle) - 20lb/20lb/20lb(Machine 5 and 5)
 9. **[Lateral Head Single Arm Tricep Extension](https://www.youtube.com/watch?v=vVW9LwaahNw)**(Top Angle) – 20lb/20lb/20lb
 10. **Back Extension**(try Isometric holds) - bodyweight/15lb/15lb/15lb  
-11. **[Roman Chair Hip Abduction](https://youtu.be/j5HWZOfIePI?si=EsYf8Gg0rFO16y-p)** - Bodyweight/10lb/10lb/10lb 
-12. **[Low Cable Goblet Squat](https://youtu.be/f6eI0JI9AYA?si=TTKH4FrAivJYEyd0)**  - 40lb/40lb/40lb
+11. **[Low Cable Goblet Squat](https://youtu.be/f6eI0JI9AYA?si=TTKH4FrAivJYEyd0)**  - 40lb/40lb/40lb
 
 
 ### Leg Programming 
@@ -264,7 +278,8 @@ All leg cable excercise are done at a low angle. Avoid squatting with running sh
 5. **Unilateral/Bilateral Leg Press** – 180lb/360lb/500lb
 6. **Walking Barbell Lunge/Zercher Lunge** – 20lb
 7. **Kettlebell B-Squat/Sumo** - 20lb
-8. ~~[Elevated Smith Machine Lunge](https://youtu.be/Yp5O9Cz6Ajg?si=bFGCfbzNqt_JobTA) - try [Elevated Lunge](https://youtu.be/OVFHK2Iev70?si=oiRNDNHznSrNP_RC) with dumbbell at max 40lb to 60lb then switch to free barbell~~
+8. **[Roman Chair Hip Abduction](https://youtu.be/j5HWZOfIePI?si=EsYf8Gg0rFO16y-p)** - Bodyweight/10lb/10lb/10lb 
+9. ~~[Elevated Smith Machine Lunge](https://youtu.be/Yp5O9Cz6Ajg?si=bFGCfbzNqt_JobTA) - try [Elevated Lunge](https://youtu.be/OVFHK2Iev70?si=oiRNDNHznSrNP_RC) with dumbbell at max 40lb to 60lb then switch to free barbell~~
 
 #### **Session 2: Hinge + Posterior Chain (Glutes, Hamstrings, Core)**
 1. **Cable/[Sled](https://youtu.be/kZyoyXUYYnQ?si=g3JDFGSTlRTOKzbi) Pull Through** – 30lb/30lb/30lb
