@@ -139,6 +139,9 @@ Dumbbell Bulgarian Split Squat
 
 Reverse Crunch/Dragon Fly
 
+Kneeling Cable Crunch
+
+Zottman Curl
 
 
 Upper Body
@@ -147,7 +150,7 @@ Chest Press
 Halo
 Pall of Press
 Shoulder Press
-Super ROM 
+Super ROM Six Ways Raise
 
 Full body day 
 Cable Pec Minor Fly
@@ -170,7 +173,7 @@ Chest Press
 Halo
 Pall of Press
 Shoulder Press
-Super ROM 
+Super ROM Six Ways Raise
 
 Full body day
 Cable Pec Minor Fly
