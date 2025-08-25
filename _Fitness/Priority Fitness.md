@@ -136,7 +136,7 @@ The general principles of **training phases** like strength and hypertrophy appl
 #todo/BAU/Workout 
 - [ ] Swap out some Leg stuff next year with cable excercise or some hybrid of the two
 ## Full Body Day Part 1 Saturday
-1. Cable Pec Minor Fly ✅  
+1. Cable Pec Minor Fly/Chest Fly ✅ (warm-up / activation)  
 2. Prone Leg Curl ✅  
 3. Clean & Jerk Press (explosive power)  
 4. Halo  
@@ -147,7 +147,7 @@ The general principles of **training phases** like strength and hypertrophy appl
 9. Cable Single Leg RDL
 
 ## Full Body Day Part 2 Sunday
-1. Cable Pec Minor Fly ✅  
+1. Cable Pec Minor Fly/Chest Fly ✅ (warm-up / activation)  
 2. Prone Leg Curl ✅  
 3. Back Extension (posterior chain, low back protection)  
 4. Halo  
@@ -168,7 +168,7 @@ The general principles of **training phases** like strength and hypertrophy appl
 8. Pallof Press (anti-rotation core)  
 
 ## Lower Body Day Part 1 Tuesday
-1. Cable Pec Minor Fly ✅  
+1. Cable Pec Minor Fly/Chest Fly ✅ (warm-up / activation)  
 2. Prone Leg Curl ✅  
 3. Back Extension (posterior chain, low back protection)  
 4. Dumbbell Bulgarian Split Squat  
@@ -180,7 +180,7 @@ The general principles of **training phases** like strength and hypertrophy appl
 9. Kettlebell Leg Raise
 
 ## Upper Body Day Part 2 Wednesday
-1. Cable Pec Minor Fly ✅ (warm-up / activation)  
+1. Cable Pec Minor Fly/Chest Fly ✅ (warm-up / activation)    
 2. Chest / Bench Press  
 3. Halo (shoulder mobility + stability)  
 4. Shoulder Press  
