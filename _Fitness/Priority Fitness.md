@@ -129,8 +129,14 @@ The general principles of **training phases** like strength and hypertrophy appl
 
 
 ### Back Injury Prevention
+Must have In Session
+
+Upper Body
+Halo
+
 Full body day 
 Clean jerk press
+Halo
 Prone leg curl 
 Sled
 
@@ -139,9 +145,12 @@ Deadlift
 Prone leg curl 
 Hip thrust
 
+Upper body 
+Halo
 
-full body day
+Full body day
 Back extension
+Halo
 Prone leg curl 
 Sled
 
