@@ -197,52 +197,41 @@ Star anise in beef stock
 - Always start with **Cable Pec Minor Fly** and **Prone Leg Curl**.  
 - Maintain strong **core + posterior chain focus** to protect spine.  
 
-## 🔹 Full Body Day Part 1
+## 🔹 Full Body Day Part 1 Saturday
 1. Cable Pec Minor Fly ✅  
 2. Prone Leg Curl ✅  
 3. Clean & Jerk Press (explosive power)  
 4. Halo  
-5. Pallof Press  
-6. Row Machine (horizontal pull)  
-7. Sled Push/Pull (conditioning + legs)  
-8. Reverse Crunch / Dragonfly  
+5. Row Machine (horizontal pull)  
+6. Sled Push/Pull (conditioning + legs)  
+7. Reverse Crunch / Dragonfly  
+8. Pallof Press (anti-rotation core)
+9. Cable Single Leg RDL
 
-## 🔹 Lower Body Day Part 1
-1. Cable Pec Minor Fly ✅  
-2. Prone Leg Curl ✅  
-3. Back Extension (posterior chain, low back protection)  
-4. Dumbbell Bulgarian Split Squat  
-   - *alt:* Walking Barbell Lunge / Zercher Lunge  
-5. Deadlift  
-6. Hack Squat *or* Leg Press (depending on recovery)  
-7. Hip Thrust (glutes focus)  
-8. Trap Bar Squat Jump (power finisher)  
-
-
-## 🔹 Upper Body Day Part 1
-1. Cable Pec Minor Fly ✅ (warm-up / activation)  
-2. Chest / Bench Press  
-3. Halo (shoulder mobility + stability)  
-4. Kneeling Cable Crunch  
-5. Pallof Press (anti-rotation core)  
-6. Shoulder Press  
-7. Super ROM Six-Ways Raise (deltoid health)  
-8. Zottman Curl (biceps + forearms)  
-
-
-## 🔹 Full Body Day Part 2 Saturday
+## 🔹 Full Body Day Part 2 Sunday
 1. Cable Pec Minor Fly ✅  
 2. Prone Leg Curl ✅  
 3. Back Extension (posterior chain, low back protection)  
 4. Halo  
-5. Pallof Press  
-6. Row Machine (horizontal pull)  
-7. Sled Push/Pull (conditioning + legs)  
-8. Reverse Crunch / Dragonfly  
-9. Zottman Curl (biceps + forearms)  
+5. Row Machine (horizontal pull)  
+6. Sled Push/Pull (conditioning + legs)  
+7. Reverse Crunch / Dragonfly  
+8. Zottman Curl (biceps + forearms)  
+9. Pallof Press (anti-rotation core)  
 
 
-## 🔹 Lower Body Day Part 2
+
+## 🔹 Upper Body Day Part 1 Monday
+1. Cable Pec Minor Fly ✅ (warm-up / activation)  
+2. Chest / Bench Press  
+3. Halo (shoulder mobility + stability)  
+4. Shoulder Press  
+5. Super ROM Six-Ways Raise (deltoid health)  
+6. Zottman Curl (biceps + forearms)  
+7. Kneeling Cable Crunch  
+8. Pallof Press (anti-rotation core)  
+
+## 🔹 Lower Body Day Part 1 Tuesday
 1. Cable Pec Minor Fly ✅  
 2. Prone Leg Curl ✅  
 3. Back Extension (posterior chain, low back protection)  
@@ -252,15 +241,26 @@ Star anise in beef stock
 6. Hack Squat *or* Leg Press (depending on recovery)  
 7. Hip Thrust (glutes focus)  
 8. Trap Bar Squat Jump (power finisher)  
+9. Kettlebell Leg Raise
 
-## 🔹 Upper Body Day Part 2
+
+
+## 🔹 Upper Body Day Part 2 Wensday
 1. Cable Pec Minor Fly ✅ (warm-up / activation)  
 2. Chest / Bench Press  
 3. Halo (shoulder mobility + stability)  
-4. Kneeling Cable Crunch  
-5. Pallof Press (anti-rotation core)  
-6. Shoulder Press  
-7. Super ROM Six-Ways Raise (deltoid health)  
+4. Shoulder Press  
+5. Super ROM Six-Ways Raise (deltoid health)  
+6. Kneeling Cable Crunch  
+7. Pallof Press (anti-rotation core)  
 
 
-
+## 🔹 Lower Body Day Part 2
+1. Prone Leg Curl ✅  
+2. Back Extension (posterior chain, low back protection)  
+3. Dumbbell Bulgarian Split Squat  
+   - *alt:* Walking Barbell Lunge / Zercher Lunge  
+5. Deadlift  
+6. Hack Squat *or* Leg Press (depending on recovery)  
+7. Trap Bar Squat Jump (power finisher)  
+8. Kettlebell Leg Raise

@@ -131,24 +131,8 @@ The general principles of **training phases** like strength and hypertrophy appl
 
 
 
-Lower body day
-Dumbbell Bulgarian Split Squat | Walking Barbell Lunge/Zercher Lunge
-Deadlift 
-Hack Squat
-Hip thrust
-Prone leg curl 
-Trap Bar Squat Jump
 
 
-
-
-lower body day
-Back extension
-Dumbbell Bulgarian Split Squat | Walking Barbell Lunge/Zercher Lunge
-Deadlift 
-Leg Press
-Prone leg curl 
-Trap Bar Squat Jump
 
 
 ## Body Part Specific Programs 
