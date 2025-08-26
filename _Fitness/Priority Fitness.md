@@ -93,19 +93,20 @@ The general principles of **training phases** like strength and hypertrophy appl
 
 ### Recovery
 #todo/BAU/Workout 
-- [ ] Follow [[Muscle Release Regimen |Muscle release regimen with tools]]
+- [ ] Follow [[Muscle Release Regimen |Muscle release regimen with tools]] & merge with [[Recovery]] along with [[Big Toe Flexibility]]
+- [ ] Also use [[Resistance Band Workout]]
 
 ## Regimen
 
-| Day      | Session Type                                                                               | Week 1 – Strength Focus                                                                    | Week 2 – Hypertrophy Focus                         | Week 3 – Explosive/Plyometrics Focus              | Week 4 – Free       | Best Order of Operations |
-| -------- | ------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------ | -------------------------------------------------- | ------------------------------------------------- | ------------------- | ------------------------ |
-| **Sat**  | Full Body + Sled + Clean Jerk Press                                                        | *Lower Strength* ***Upper [[Priority Fitness#Session 2 Pull Focus \|Pull]]  Hypertrophy*** | *Lower Hypertrophy*  ***Upper Pull Explosive***    | *Lower Explosive*  ***Upper Pull Strength***      | Cardio/Bag Work day | Glutes / Hamstrings      |
-| **Sun**  | Full Body + Sled + Clean Jerk Press                                                        | *Lower Hypertrophy* **Upper [[Priority Fitness#Session 1 Push Focus \|Push]] Strength**    | *Lower Strength*  **Upper Push Hypertrophy**       | *Lower Hypertrophy*  **Upper Push Explosive **    | Cable day           | Core                     |
-| **Mon**  | Lower + *Machine/Freeweight* [Dead Hang](https://www.youtube.com/watch?v=ShkBXOGK7A8)(MMA) | *Lower Strength*                                                                           | *Lower Hypertrophy*                                | *Lower Explosive*                                 | Landmine day        | Scapular & Upper Back    |
-| **Tues** | Upper + Run + Balance Board                                                                | ***Pull Strength**                                                                         | ***Pull *** *Explosive* → **Hypertrophy Finisher** | ***Pull*** *Explosive* → **Hypertrophy Finisher** |                     | Lats / Traps             |
-| **Wed**  | Lower +                *Cable Machine*     Dead Hang(MMA)                                  | *Lower Strength*                                                                           | *Lower Hypertrophy*                                | *Lower Explosive*                                 |                     | Quads                    |
-| **Thu**  | Upper + Run + Balance Board                                                                | **Push Strength**                                                                          | *Push Explosive* →   **Hypertrophy Finisher**      | *Push Explosive* →  **Hypertrophy Finisher**      |                     | Chest / Delts            |
-| **Fri**  | REST                                                                                       | Anything                                                                                   | Anything                                           | Anything                                          |                     | Arms                     |
+| Day      | Session Type                                                                               | Week 1 – Strength Focus                                                                    | Week 2 – Hypertrophy Focus                         | Week 3 – Explosive/Plyometrics Focus              | Week 4 – Free             | Best Order of Operations |
+| -------- | ------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------ | -------------------------------------------------- | ------------------------------------------------- | ------------------------- | ------------------------ |
+| **Sat**  | Full Body + Sled + Clean Jerk Press                                                        | *Lower Strength* ***Upper [[Priority Fitness#Session 2 Pull Focus \|Pull]]  Hypertrophy*** | *Lower Hypertrophy*  ***Upper Pull Explosive***    | *Lower Explosive*  ***Upper Pull Strength***      | Cardio/Sprint/BagWork day | Glutes / Hamstrings      |
+| **Sun**  | Full Body + Sled + Clean Jerk Press                                                        | *Lower Hypertrophy* **Upper [[Priority Fitness#Session 1 Push Focus \|Push]] Strength**    | *Lower Strength*  **Upper Push Hypertrophy**       | *Lower Hypertrophy*  **Upper Push Explosive **    | Cable day                 | Core                     |
+| **Mon**  | Lower + *Machine/Freeweight* [Dead Hang](https://www.youtube.com/watch?v=ShkBXOGK7A8)(MMA) | *Lower Strength*                                                                           | *Lower Hypertrophy*                                | *Lower Explosive*                                 | Landmine day              | Scapular & Upper Back    |
+| **Tues** | Upper + Run + Balance Board                                                                | ***Pull Strength**                                                                         | ***Pull *** *Explosive* → **Hypertrophy Finisher** | ***Pull*** *Explosive* → **Hypertrophy Finisher** |                           | Lats / Traps             |
+| **Wed**  | Lower +                *Cable Machine*     Dead Hang(MMA)                                  | *Lower Strength*                                                                           | *Lower Hypertrophy*                                | *Lower Explosive*                                 |                           | Quads                    |
+| **Thu**  | Upper + Run + Balance Board                                                                | **Push Strength**                                                                          | *Push Explosive* →   **Hypertrophy Finisher**      | *Push Explosive* →  **Hypertrophy Finisher**      |                           | Chest / Delts            |
+| **Fri**  | REST                                                                                       | Anything                                                                                   | Anything                                           | Anything                                          |                           | Arms                     |
 
 
 ## Session Breakdown  
@@ -131,7 +132,9 @@ Alternate each month keeping the week training phase in to account the weights f
 - [ ] Practice priming excercise movement like squat before squatting a bar or do push ups before bench press.
 - [ ]  Run all out 1 min then 1 min coasting so run then a slow walk then back to intense 1 min once able to do a minutes build to 4 min.
 
-Airodine Bike
+Airdyne Bike
+
+Band Hypertrophy and Explosive Phase 
 
 ### Full Body Day Part 1 Saturday
 1. Cable Pec Minor Fly/Chest Fly ✅ (warm-up / activation)  

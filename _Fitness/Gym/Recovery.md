@@ -262,6 +262,13 @@ Here’s a **clear list of what NOT to touch or do** during your foam rolling, l
     
 
 
+
+
+
+
+
+
+
 [The ONLY 2 Exercises You Need For A Thick Back - YouTube](https://youtu.be/JdjJC6eIk44?si=435iItkw0NEV0vrm)
 
 45 degree angle wide grip  low row for mid back forearms aligned with hands no outside or inside when pulling back lean back and brace core  to pull at a angle watch out and make sure it doesn't feel like a shrug keep back straight 
