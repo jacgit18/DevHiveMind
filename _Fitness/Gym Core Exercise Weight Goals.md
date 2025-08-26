@@ -23,17 +23,17 @@ Prioritize resistance bands for explosive phase they can be used for other phase
 
 > Speed is a skill—train it while fresh.
 
-| Exercise                             | Goal Setsx Reps | Weight (30–60% 1RM) | Timeline        |
-| ------------------------------------ | --------------- | ------------------- | --------------- |
-| **Hip Thrust**                       | 4x5             | 95–135 lbs          | 6–9 months      |
-| **Hack Squat Machine**               | 4x5             | 90–135 lbs          | 3–6 months      |
-| **Unsupported Squat**                | 4x5             | 70–120 lbs          | 3–6 months      |
-| ~~**Deadlift** (Trap/Conventional)~~ | ~~3x3~~         | ~~135–185 lbs~~     | ~~6–12 months~~ |
-| **Bench Press**                      | 4x5             | 75–95 lbs           | 6–9 months      |
-| **Overhead Press**                   | 4x5             | 45–65 lbs           | 6–9 months      |
-| **Weighted Pull-Ups**                | 3x6             | +10–20 lbs          | 6–9 months      |
-| **Single-Leg Leg Press**             | 3x8             | 20–30 lbs           | Immediately     |
-| **Tib Bar**                          | 3x10            | 25–40 lbs           | 3–6 months      |
+| Exercise                         | Goal Setsx Reps | Weight (30–60% 1RM) | Timeline    |
+| -------------------------------- | --------------- | ------------------- | ----------- |
+| **Hip Thrust**                   | 4x5             | 95–135 lbs          | 6–9 months  |
+| **Hack Squat Machine**           | 4x5             | 90–135 lbs          | 3–6 months  |
+| **Unsupported Squat**            | 4x5             | 70–120 lbs          | 3–6 months  |
+| **Deadlift** (Trap/Conventional) | 3x3             | 135–185 lbs         | 6–12 months |
+| **Bench Press**                  | 4x5             | 75–95 lbs           | 6–9 months  |
+| **Overhead Press**               | 4x5             | 45–65 lbs           | 6–9 months  |
+| **Weighted Pull-Ups**            | 3x6             | +10–20 lbs          | 6–9 months  |
+| **Single-Leg Leg Press**         | 3x8             | 20–30 lbs           | Immediately |
+| **Tib Bar**                      | 3x10            | 25–40 lbs           | 3–6 months  |
 
 
 ##### Strength Compound (CM Phase)
@@ -44,7 +44,7 @@ Prioritize resistance bands for explosive phase they can be used for other phase
 | **Hip Thrust**             | 2.5x            | **300 lbs**     | 9–12 months          | **375 lbs**     | 12–24 months        |
 | ~~**Hack Squat Machine**~~ | ~~2x~~          | ~~**240 lbs**~~ | ~~4–6 months~~       | ~~**300 lbs**~~ | ~~6–12 months~~     |
 | **Unsupported Squat**      | 1.67x           | **200 lbs**     | 4–6 months           | **250 lbs**     | 6–12 months         |
-| ~~**Deadlift**~~           | ~~2.5x~~        | ~~**300 lbs**~~ | ~~9–12 months~~      | ~~**375 lbs**~~ | ~~12–24 months~~    |
+| **Deadlift**           | 2.5x        | **300 lbs** | 9–12 months      | **375 lbs** | 12–24 months    |
 | **Bench Press**            | 1.5x            | **180 lbs**     | 6–8 months           | **225 lbs**     | 9–18 months         |
 | **Overhead Press**         | 1.0x            | **120 lbs**     | 6–8 months           | **150 lbs**     | 12–24 months        |
 | **Weighted Pull-Ups**      | +0.5x           | **+60 lbs**     | 6–9 months           | **+75 lbs**     | 9–18 months         |
@@ -62,7 +62,7 @@ Hypertrophy thrives on explosive lifts (1s), slow eccentrics (3s), 5 sets 15 rep
 | **Hip Thrust**           | 4x15        | 185–225 lbs     | 6–9 months      | 225–280 lbs     | 9–12 months         |
 | **Hack Squat Machine**   | 4x12        | 135–180 lbs     | 6 months        | 180–225 lbs     | 9–12 months         |
 | **Unsupported Squat**    | 4x12        | 110–160 lbs     | 6 months        | 160–200 lbs     | 9–12 months         |
-| ~~**Deadlift**~~         | ~~3x10~~    | ~~185–225 lbs~~ | ~~6–9 months~~  | ~~225–275 lbs~~ | ~~9–15 months~~     |
+| **Deadlift**         | 3x10    | 185–225 lbs | 6–9 months  | 225–275 lbs | 9–15 months     |
 | **Bench Press**          | 3x12        | 95–115 lbs      | 6–9 months      | 115–135 lbs     | 9–12 months         |
 | **Overhead Press**       | 3x10        | 65–75 lbs       | 6–9 months      | 75–95 lbs       | 9–12 months         |
 | **Weighted Pull-Ups**    | 3x8         | +15 lbs         | 6 months        | +30 lbs         | 9–12 months         |
