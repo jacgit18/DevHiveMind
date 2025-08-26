@@ -137,6 +137,8 @@ Airdyne Bike
 Band Hypertrophy and Explosive Phase 
 Cook Sunday Wednesday
 
+Increase weight as you train Hypertrophy and reduce the range of motion of the excercise as well to train to failure better.
+
 ### Full Body Day Part 1 Saturday
 1. Cable Pec Minor Fly/Chest Fly ✅ (warm-up / activation)  
 2. Prone Leg Curl ✅  
