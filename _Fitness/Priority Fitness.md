@@ -132,7 +132,6 @@ Alternate each month keeping the week training phase in to account the weights f
 - [ ] Practice priming excercise movement like squat before squatting a bar or do push ups before bench press.
 - [ ]  Run all out 1 min then 1 min coasting so run then a slow walk then back to intense 1 min once able to do a minutes build to 4 min.
 
-Airdyne Bike
 
 Band Hypertrophy and Explosive Phase 
 Cook Sunday Wednesday
@@ -146,25 +145,25 @@ Standing Dumbbell Over Head Extension
 2. Prone Leg Curl ✅  
 3. Clean & Jerk Press (explosive power)  
 4. Halo (shoulder mobility + stability)  
-***5. Row Machine (horizontal pull)***
-5. Sled Push/Pull (conditioning + legs)  
-6. Reverse Crunch / Dragonfly  
-7. Pallof Press (anti-rotation core) 📈
-8. Cable Assisted Pancake 📈
-9. Unilateral RDL 📈
+5. ***Airdyne Bike/Row Machine (horizontal pull)***
+6. Sled Push/Pull (conditioning + legs)  
+7. Reverse Crunch / Dragonfly  
+8. Pallof Press (anti-rotation core) 📈
+9. Cable Assisted Pancake 📈
+10. Unilateral RDL 📈
 
 ### Full Body Day Part 2 Sunday Sprint Day
 1. Cable Pec Minor Fly/Chest Fly ✅ (warm-up / activation)  
 2. Prone Leg Curl ✅  
 3. Back Extension (posterior chain, low back protection)  
 4. Halo (shoulder mobility + stability)  
-***5. Row Machine (horizontal pull)*** 
-5. Sled Push/Pull (conditioning + legs)  
-6. Reverse Crunch / Dragonfly  
-7. Zottman Curl (biceps + forearms)  - No Chin-ups on this day 
-8. Pallof Press (anti-rotation core)  📈
-9. Cable Assisted Pancake 📈
-10. Unilateral RDL 📈
+5. ***Airdyne Bike/Row Machine (horizontal pull)***
+6. Sled Push/Pull (conditioning + legs)  
+7. Reverse Crunch / Dragonfly  
+8. Zottman Curl (biceps + forearms)  - No Chin-ups on this day 
+9. Pallof Press (anti-rotation core)  📈
+10. Cable Assisted Pancake 📈
+11. Unilateral RDL 📈
 
 ### Lower Body Day Part 1 Monday
 1. Cable Pec Minor Fly/Chest Fly ✅ (warm-up / activation)  
@@ -236,7 +235,7 @@ Anything not on this list is most likely a bad excercise or not worth doing base
 - **[Trap Bar Deadlift](https://youtu.be/zDRgPfiHJ_c?si=hnoOefbzidE4bw4f)**(green/black band) - 20lb/30lb/50lb
 - ~~**Barbell Standing [Good Mornings](https://youtu.be/dEJ0FTm-CEk?si=LAPsPziQZQNGBvph)**~~ ~~not worth doing~~
 
-#### Row Machine Program
+#### Airdyne Bike/Row Machine Program
 - **Workout 1: 1 Minute On, 1 Minute Off**
 - **Workout 2: All-Out in a Minute**
 - **Workout 3: 10 to 20 Alternation** - for 20 min or less alt from 10 to 20 strokes per minute
