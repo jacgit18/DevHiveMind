@@ -10,7 +10,7 @@
 
 
 
-
+Use ground turkey first is a hassle to vacuum seal also do the same for maybe ground chicken depending on the consistency if it's the same as ground turkey
 
 
 
