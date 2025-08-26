@@ -88,7 +88,4 @@ You’re **only "losing money" by not spending $15k on food if**:
 
 ---
 
-Would you like a breakdown of **how to maximize food spending ROI** at different income levels?
-```
-
-Let me know if you want this turned into a downloadable `.md` file or stylized for a blog or Notion post.
+W
