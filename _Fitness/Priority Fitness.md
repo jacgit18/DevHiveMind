@@ -135,6 +135,7 @@ Alternate each month keeping the week training phase in to account the weights f
 Airdyne Bike
 
 Band Hypertrophy and Explosive Phase 
+Cook Sunday Wednesday
 
 ### Full Body Day Part 1 Saturday
 1. Cable Pec Minor Fly/Chest Fly ✅ (warm-up / activation)  
