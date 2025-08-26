@@ -131,6 +131,7 @@ Alternate each month keeping the week training phase in to account the weights f
 - [ ] Practice priming excercise movement like squat before squatting a bar or do push ups before bench press.
 - [ ]  Run all out 1 min then 1 min coasting so run then a slow walk then back to intense 1 min once able to do a minutes build to 4 min.
 
+Airodine Bike
 
 ### Full Body Day Part 1 Saturday
 1. Cable Pec Minor Fly/Chest Fly ✅ (warm-up / activation)  
@@ -298,6 +299,7 @@ All leg cable excercise are done at a low angle. Avoid squatting with running sh
 3. **Hip Thrust(Unilateral/Bilateral-Perform with Medium Band)** - 50lb /60lb/90lb | 50lb/90lb/130lb 
 4. **Tib Bar Raise** – 5lb/5lb/5lb 
 
+
 #### **Session 3: Stability, Mobility, and Accessories (Control + Balance)**
 1. **Trap Bar Squat Jump** - 20lb/40lb/50lb
 2. **Cable Side Kick** – 20lb/20lb/20lb
@@ -305,6 +307,25 @@ All leg cable excercise are done at a low angle. Avoid squatting with running sh
 4. **Abduction Machine (Outer Thigh)** – 60lb/80lb/130lb
 5. **Band Scarecrow Raises** - 20lb/20lb/20lb
 6. **Leg Extension** – 60lb/90lb/120lb
+
+### End Session Depending Session Type
+#### Core
+1. **[Kneeling Cable Crunch](https://www.youtube.com/watch?v=3qjoXDTuyOE)**(Top Angle) - 50lb/50lb/50lb 
+2. **[Pallof Press](https://www.youtube.com/watch?v=ma2OjgP5XDc&pp=ygUMUGFsbG9mIFByZXNz)** to **[Lateral Walk](https://youtu.be/nw8NjG2YOLY?si=KAo4G6B3_5Av1s_t)**(Wrist Height) - 20lb/20lb/20lb
+#### Leg
+1. ***[Cable Single Leg RDL](https://youtu.be/2M1Mikqf5lY?si=1Me7DqZvB5XL1Orm(15lb)***(Low Angle) - 20lb/20lb/20lb
+2. **Kettlebell Leg Raise**  – 15lb/15lb/15lb
+##### Priority Static Stretch to develop splits
+*Perform Static Stretch at end of workout 4 times a week 30 sec each*
+- Butterfly
+- Standing Hamstring stretch
+- Elevated Pigeon Stretch - On [incline bench](https://youtu.be/szFOKnVgGpQ?si=r0IMfaQKljbJeS6P) then progress to [flat bench](https://youtu.be/BmVEn3LfHcg?si=ZDSdN6h4TePiPIj8) or stick to floor (30 sec per side) 
+- [Cossack Squat](https://youtu.be/fyAl4o1BGVo?si=OalBzfY8-KxgS7qA)
+- [Forward Fold Stretch](https://youtu.be/goN4rWbQUn4?si=pPni5D3dJWgLUboT) 
+- [Standing Pancake](https://youtu.be/4TU9K40LZ6A?si=kWxpXgb7wdZ35HQO)
+- **[Cable Assisted Pancake](https://youtu.be/n6N2-hhbQmw?si=ljxeT4mgAdF0ls8K)**(Low Angle) /[Regular Pancake](https://youtu.be/B1_YA47gtm0?si=_oBDpaLBejKI-8mV) - 50lb/50lb/50lb
+- [Full split](https://youtu.be/hsNvqUmCAAo?si=SbGmouCgXsZ44_tJ) 
+- [Supine Figure 4 Stretch](https://youtu.be/xVq2-g_leTI?si=ww6BkkfN_oYEWmdC)(Not Required for Split) - keep back flat do at start for running days and at end for non running days.
 
 #### Build to Doing Safely
 ##### Full Body
@@ -339,25 +360,8 @@ All leg cable excercise are done at a low angle. Avoid squatting with running sh
 	2. Box Elevated Raising pistol squat
 	3. hand on wall pistol squat
 	4. **Barbell Pistol Squat**
+5. **Dumbbell ATG Split Squat** - 10lb/10lb/10lb 
 
-### End Session Depending Session Type
-#### Core
-1. **[Kneeling Cable Crunch](https://www.youtube.com/watch?v=3qjoXDTuyOE)**(Top Angle) - 50lb/50lb/50lb 
-2. **[Pallof Press](https://www.youtube.com/watch?v=ma2OjgP5XDc&pp=ygUMUGFsbG9mIFByZXNz)** to **[Lateral Walk](https://youtu.be/nw8NjG2YOLY?si=KAo4G6B3_5Av1s_t)**(Wrist Height) - 20lb/20lb/20lb
-#### Leg
-1. ***[Cable Single Leg RDL](https://youtu.be/2M1Mikqf5lY?si=1Me7DqZvB5XL1Orm(15lb)***(Low Angle) - 20lb/20lb/20lb
-2. **Kettlebell Leg Raise**  – 15lb/15lb/15lb
-##### Priority Static Stretch to develop splits
-*Perform Static Stretch at end of workout 4 times a week 30 sec each*
-- Butterfly
-- Standing Hamstring stretch
-- Elevated Pigeon Stretch - On [incline bench](https://youtu.be/szFOKnVgGpQ?si=r0IMfaQKljbJeS6P) then progress to [flat bench](https://youtu.be/BmVEn3LfHcg?si=ZDSdN6h4TePiPIj8) or stick to floor (30 sec per side) 
-- [Cossack Squat](https://youtu.be/fyAl4o1BGVo?si=OalBzfY8-KxgS7qA)
-- [Forward Fold Stretch](https://youtu.be/goN4rWbQUn4?si=pPni5D3dJWgLUboT) 
-- [Standing Pancake](https://youtu.be/4TU9K40LZ6A?si=kWxpXgb7wdZ35HQO)
-- **[Cable Assisted Pancake](https://youtu.be/n6N2-hhbQmw?si=ljxeT4mgAdF0ls8K)**(Low Angle) /[Regular Pancake](https://youtu.be/B1_YA47gtm0?si=_oBDpaLBejKI-8mV) - 50lb/50lb/50lb
-- [Full split](https://youtu.be/hsNvqUmCAAo?si=SbGmouCgXsZ44_tJ) 
-- [Supine Figure 4 Stretch](https://youtu.be/xVq2-g_leTI?si=ww6BkkfN_oYEWmdC)(Not Required for Split) - keep back flat do at start for running days and at end for non running days.
 
 #### Optimal Exercise Pairing
 ##### Best Pairing - Push
