@@ -124,7 +124,7 @@ Alternate each month keeping the week training phase in to account the weights f
 
 #todo/BAU/Workout 
 - [ ] Start with [[Stretch Regimen]]
-- [ ] Hit heavy bag at Crunch once a week also be aware of how you use row machine since can fall into cardio.
+- [ ] Hit heavy bag at Crunch once a week also be aware of how you use row machine/Airdyne bike since can fall into cardio.
 - [ ] Cycle in warm up doing  lunges to kicks, knees, and teeps
 - [ ] For hypertrophy week switch to mid day or after work on week days(Mon to Thurs)
 - [ ] Swap out some Leg stuff next year with cable excercise or some hybrid of the two
@@ -138,6 +138,8 @@ Band Hypertrophy and Explosive Phase
 Cook Sunday Wednesday
 
 Increase weight as you train Hypertrophy and reduce the range of motion of the excercise as well to train to failure better.
+
+Standing Dumbbell Over Head Extension 
 
 ### Full Body Day Part 1 Saturday
 1. Cable Pec Minor Fly/Chest Fly ✅ (warm-up / activation)  
@@ -333,7 +335,7 @@ All leg cable excercise are done at a low angle. Avoid squatting with running sh
 - [Full split](https://youtu.be/hsNvqUmCAAo?si=SbGmouCgXsZ44_tJ) 
 - [Supine Figure 4 Stretch](https://youtu.be/xVq2-g_leTI?si=ww6BkkfN_oYEWmdC)(Not Required for Split) - keep back flat do at start for running days and at end for non running days.
 
-#### Build to Doing Safely
+### Build to Doing Safely
 ##### Full Body
 - ~~**[Turkish Get-Up](https://youtu.be/jFK8FOiLa_M?si=L8oB-1-BZ8M6Wfsp)** - 10lb to 15lb~~
 - **[Single-Leg Snatch (RDL, Plate, Hip Lock)](https://youtu.be/L9hk1LiqGsU?si=-dJyrtt3Mq7XezCu)** - 25lb/25lb/25lb
