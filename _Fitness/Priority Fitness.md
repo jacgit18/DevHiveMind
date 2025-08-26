@@ -94,7 +94,7 @@ The general principles of **training phases** like strength and hypertrophy appl
 ### Recovery
 #todo/BAU/Workout 
 - [ ] Follow [[Muscle Release Regimen |Muscle release regimen with tools]] & merge with [[Recovery]] along with [[Big Toe Flexibility]]
-- [ ] Also use [[Resistance Band Workout]]
+- [ ] Also use [[Resistance Band Workout]] in this doc or merge and reduce note 
 
 ## Regimen
 
