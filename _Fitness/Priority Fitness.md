@@ -84,6 +84,7 @@ The general principles of **training phases** like strength and hypertrophy appl
 #todo/BAU/Workout 
 - [ ] Keep [[Gym Core Exercise Weight Goals]] in mind.
 - [ ] Add reps first for workout on each phase then adjust explosive power and hypertrophy phase in relation to strength max weight change, then go back to original reps with new weight.
+- [ ] Increase weight as you train Hypertrophy and reduce the range of motion of the excercise as well to train to failure better.
 
 
 - **Explosive**: adjust along with changes in max 3x10
@@ -94,7 +95,7 @@ The general principles of **training phases** like strength and hypertrophy appl
 ### Recovery
 #todo/BAU/Workout 
 - [ ] Follow [[Muscle Release Regimen |Muscle release regimen with tools]] & merge with [[Recovery]] along with [[Big Toe Flexibility]]
-- [ ] Also use [[Resistance Band Workout]] in this doc or merge and reduce note 
+- [ ] Also use [[Resistance Band Workout]] in this doc or merge and reduce note resistance band use only for explosive training or Hypertrophy
 
 ## Regimen
 
@@ -124,55 +125,61 @@ Alternate each month keeping the week training phase in to account the weights f
 
 #todo/BAU/Workout 
 - [ ] Start with [[Stretch Regimen]]
-- [ ] Hit heavy bag at Crunch once a week also be aware of how you use row machine/Airdyne bike since can fall into cardio.
+- [ ] Hit heavy bag at Crunch once a week also be aware of how you use row machine/Airdyne bike since can fall into cardio use it to rev up the engine then do cardio on days where you want to.
 - [ ] Cycle in warm up doing  lunges to kicks, knees, and teeps
 - [ ] For hypertrophy week switch to mid day or after work on week days(Mon to Thurs)
 - [ ] Swap out some Leg stuff next year with cable excercise or some hybrid of the two
 - [ ] Train hypertrophy by song duration and beat to simplify and no 1 min break between sets
 - [ ] Practice priming excercise movement like squat before squatting a bar or do push ups before bench press.
+- [ ] Can do 2 ✅  but pick one 📈 depending on day then choose few others for that day session max excercise in session can maybe be 7 each day maybe lower if an MMA day.
 - [ ]  Run all out 1 min then 1 min coasting so run then a slow walk then back to intense 1 min once able to do a minutes build to 4 min.
 
 
-Band Hypertrophy and Explosive Phase 
+
 Cook Sunday Wednesday
 
-Increase weight as you train Hypertrophy and reduce the range of motion of the excercise as well to train to failure better.
+
 
 Standing Dumbbell Over Head Extension 
 
 
 
-### Full Body Day Part 1 Saturday
-1. Cable Pec Minor Fly/Chest Fly ✅ (warm-up / activation)  
-2. Prone Leg Curl ✅  
-3. Halo (shoulder mobility + stability)  
-4. Clean & Jerk Press (explosive power)  
-5. ***Airdyne Bike/Row Machine (horizontal pull)***
-6. Sled Push/Pull (conditioning + legs)  
-7. Reverse Crunch / Dragonfly  
-8. Ab Roller
-9. Pallof Press (anti-rotation core) 📈
-10. Cable Assisted Pancake 📈
-11. Unilateral RDL 📈
+### Full Body Day Part 1 Saturday(Optional MMA) - Meal Prep Day 1
+1. ***Airdyne Bike/Row Machine (horizontal pull)***
+2. **Dynamic Stretching**
+3. Cable Pec Minor Fly/Chest Fly ✅ (warm-up / activation)  
+4. Prone Leg Curl ✅  
+5. Halo (shoulder mobility + stability)  
+6. Clean & Jerk Press (explosive power)  
+7. Sled Push/Pull (conditioning + legs)  
+8. Reverse Crunch / Dragonfly  
+9. Ab Roller 📈
+10. Pallof Press (anti-rotation core) 📈
+11. Cable Assisted Pancake 📈
+12. Unilateral RDL 📈
 
 ### Full Body Day Part 2 Sunday Sprint Day
-1. Cable Pec Minor Fly/Chest Fly ✅ (warm-up / activation)  
-2. Prone Leg Curl ✅  
-3. Back Extension (posterior chain, low back protection)  
-4. Halo (shoulder mobility + stability)  
-5. ***Airdyne Bike/Row Machine (horizontal pull)***
-6. Sled Push/Pull (conditioning + legs)  
-7. Reverse Crunch / Dragonfly  
+1. ***Airdyne Bike/Row Machine (horizontal pull)***
+2. **Dynamic Stretching**
+3. Cable Pec Minor Fly/Chest Fly ✅ (warm-up / activation)  
+4. Prone Leg Curl ✅  
+5. Back Extension (posterior chain, low back protection)  
+6. Halo (shoulder mobility + stability)  
+7. Sled Push/Pull (conditioning + legs)  
 8. Zottman Curl (biceps + forearms)  - No Chin-ups on this day 
-9. Pallof Press (anti-rotation core)  📈
-10. Cable Assisted Pancake 📈
-11. Unilateral RDL 📈
+9. Reverse Crunch / Dragonfly  
+10. Ab Roller 📈
+11. Pallof Press (anti-rotation core)  📈
+12. Cable Assisted Pancake 📈
+13. Unilateral RDL 📈
 
-### Lower Body Day Part 1 Monday
-1. Cable Pec Minor Fly/Chest Fly ✅ (warm-up / activation)  
-2. Prone Leg Curl ✅  
-3. Back Extension (posterior chain, low back protection)  
-4. Dumbbell Bulgarian Split Squat  
+### Lower Body Day Part 1 Monday(MMA)
+1. ***Airdyne Bike/Row Machine (horizontal pull)***
+2. **Dynamic Stretching**
+3. Cable Pec Minor Fly/Chest Fly ✅ (warm-up / activation)  
+4. Prone Leg Curl ✅  
+5. Back Extension (posterior chain, low back protection)  
+6. Dumbbell Bulgarian Split Squat  
    - *alt:* Walking Barbell Lunge / Zercher Lunge  
 5. Deadlift  
 6. Hack Squat *or* Leg Press (depending on recovery)  
@@ -180,37 +187,43 @@ Standing Dumbbell Over Head Extension
 8. Trap Bar Squat Jump (power finisher)  
 9. Kettlebell Leg Raise📈
 
-### Upper Body Day Part 1 Tuesday Sprint Day
-1. Cable Pec Minor Fly/Chest Fly ✅ (warm-up / activation)  
-2. Chest/Bench Press  
-3. Tricep Dip
-4. Halo (shoulder mobility + stability)  | | Super ROM Six-Ways Raise (deltoid health)  
-5. Shoulder Press | | Suitcase Bottom Up March
-6. Zottman Curl (biceps + forearms)  - No Chin-ups on this day 
-7. Cable Assisted Pancake 📈
-8. Kneeling Cable Crunch  📈
-9. Pallof Press (anti-rotation core)  📈
+### Upper Body Day Part 1 Tuesday Sprint Day -
+1. ***Airdyne Bike/Row Machine (horizontal pull)***
+2. **Dynamic Stretching**
+3. Cable Pec Minor Fly/Chest Fly ✅ (warm-up / activation)  
+4. Chest/Bench Press  
+5. Tricep Dip
+6. Halo (shoulder mobility + stability)  | | Super ROM Six-Ways Raise (deltoid health)  
+7. Shoulder Press | | Suitcase Bottom Up March
+8. Zottman Curl (biceps + forearms)  - No Chin-ups on this day 
+9. Cable Assisted Pancake 📈
+10. Kneeling Cable Crunch  📈
+11. Pallof Press (anti-rotation core)  📈
 
-### Lower Body Day Part 2 Wednesday
-1. Prone Leg Curl ✅  
-2. Back Extension (posterior chain, low back protection)  
-3. Dumbbell Bulgarian Split Squat  
+### Lower Body Day Part 2 Wednesday(Optional MMA)
+1. ***Airdyne Bike/Row Machine (horizontal pull)***
+2. **Dynamic Stretching**
+3. Prone Leg Curl ✅  
+4. Back Extension (posterior chain, low back protection)  
+5. Dumbbell Bulgarian Split Squat  
    - *alt:* Walking Barbell Lunge / Zercher Lunge  
 5. Deadlift  
 6. Hack Squat *or* Leg Press (depending on recovery)  
 7. Trap Bar Squat Jump (power finisher)  
 8. Kettlebell Leg Raise 📈
 
-### Upper Body Day Part 2 Thursday Sprint Day
-1. Cable Pec Minor Fly/Chest Fly ✅ (warm-up / activation)    
-2. Chest/Bench Press  
-3. Chin-up/Pull-up
-4. Tricep Dip
-5. Halo (shoulder mobility + stability)  | | Super ROM Six-Ways Raise (deltoid health)  
-6. Shoulder Press | | Suitcase Bottom Up March
-7. Cable Assisted Pancake 📈
-8. Kneeling Cable Crunch  📈
-9. Pallof Press (anti-rotation core)  📈
+### Upper Body Day Part 2 Thursday Sprint Day(Optional MMA)
+1. ***Airdyne Bike/Row Machine (horizontal pull)***
+2. **Dynamic Stretching**
+3. Cable Pec Minor Fly/Chest Fly ✅ (warm-up / activation)    
+4. Chest/Bench Press  
+5. Chin-up/Pull-up
+6. Tricep Dip
+7. Halo (shoulder mobility + stability)  | | Super ROM Six-Ways Raise (deltoid health)  
+8. Shoulder Press | | Suitcase Bottom Up March
+9. Cable Assisted Pancake 📈
+10. Kneeling Cable Crunch  📈
+11. Pallof Press (anti-rotation core)  📈
 
 
 
