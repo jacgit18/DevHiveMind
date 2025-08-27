@@ -48,6 +48,13 @@ color purple
 #todo/Med/Dev 
 - [ ] Revisit and edit chart switch to table with current top exercises of focus
 
+[Patrick Step - YouTube](https://youtu.be/jAbO12BipQU?si=baSPYfaK9FNNmPXa)
+High rep since short range of movement also try on wedge down stairs 
+
+
+[Shin Splints Stretches And Exercises - Feel Better FAST! - YouTube](https://youtu.be/olpUrL-w2qg?si=MqXCdiId_KdLBn2I)
+
+
 | Body  | Exercise                                                 | Tried | Focus  | Type       | W(lb/kg) |                      | Priority | Duration | Sets | AltType    | Tried | Alt W(lb/kg) |
 | ----- | -------------------------------------------------------- | ----- | ------ | ---------- | -------- | -------------------- | -------- | -------- | ---- | ---------- | ----- | ------------ |
 | Core  | [[Core#^6516d4\|Russian Twists]]                         | Yes   | RC     | Kettlebell | 20       | Rotational           | Highest  | 00:00:20 | 3    | MediBall   |       | 0            |
