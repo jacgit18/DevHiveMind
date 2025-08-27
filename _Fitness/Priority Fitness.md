@@ -99,15 +99,15 @@ The general principles of **training phases** like strength and hypertrophy appl
 
 ## Regimen
 
-| Day      | Session Type                                                                               | Week 1 – Strength Focus                                                                    | Week 2 – Hypertrophy Focus                         | Week 3 – Explosive/Plyometrics Focus              | Week 4 –  New Skills           | Best Order of Operations |
-| -------- | ------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------ | -------------------------------------------------- | ------------------------------------------------- | ------------------------------ | ------------------------ |
-| **Sat**  | Full Body + Sled + Clean Jerk Press                                                        | *Lower Strength* ***Upper [[Priority Fitness#Session 2 Pull Focus \|Pull]]  Hypertrophy*** | *Lower Hypertrophy*  ***Upper Pull Explosive***    | *Lower Explosive*  ***Upper Pull Strength***      | Cardio/Sprint/BagWork day      | Glutes / Hamstrings      |
-| **Sun**  | Full Body + Sled + Clean Jerk Press                                                        | *Lower Hypertrophy* **Upper [[Priority Fitness#Session 1 Push Focus \|Push]] Strength**    | *Lower Strength*  **Upper Push Hypertrophy**       | *Lower Hypertrophy*  **Upper Push Explosive **    | Cable day                      | Core                     |
-| **Mon**  | Lower + *Machine/Freeweight* [Dead Hang](https://www.youtube.com/watch?v=ShkBXOGK7A8)(MMA) | *Lower Strength*                                                                           | *Lower Hypertrophy*                                | *Lower Explosive*                                 | Anything including Plyometrics | Scapular & Upper Back    |
-| **Tues** | Upper + Run + Balance Board                                                                | ***Pull Strength**                                                                         | ***Pull *** *Explosive* → **Hypertrophy Finisher** | ***Pull*** *Explosive* → **Hypertrophy Finisher** | Home Resistance Band day       | Lats / Traps             |
-| **Wed**  | Lower +                *Cable Machine*     Dead Hang(MMA)                                  | *Lower Strength*                                                                           | *Lower Hypertrophy*                                | *Lower Explosive*                                 | TRX Eventually                 | Quads                    |
-| **Thu**  | Upper + Run + Balance Board                                                                | **Push Strength**                                                                          | *Push Explosive* →   **Hypertrophy Finisher**      | *Push Explosive* →  **Hypertrophy Finisher**      | Landmine day                   | Chest / Delts            |
-| **Fri**  | REST                                                                                       |                                                                                            |                                                    |                                                   |                                | Arms                     |
+| Day      | Session Type                                                                               | Week 1 – Strength Focus                                                                    | Week 2 – Hypertrophy Focus                         | Week 3 – Explosive/Plyometrics Focus              | Week 4 –  New Skills               | Best Order of Operations |
+| -------- | ------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------ | -------------------------------------------------- | ------------------------------------------------- | ---------------------------------- | ------------------------ |
+| **Sat**  | Full Body + Sled + Clean Jerk Press                                                        | *Lower Strength* ***Upper [[Priority Fitness#Session 2 Pull Focus \|Pull]]  Hypertrophy*** | *Lower Hypertrophy*  ***Upper Pull Explosive***    | *Lower Explosive*  ***Upper Pull Strength***      | Cardio/Sprint/BagWork day          | Glutes / Hamstrings      |
+| **Sun**  | Full Body + Sled + Clean Jerk Press                                                        | *Lower Hypertrophy* **Upper [[Priority Fitness#Session 1 Push Focus \|Push]] Strength**    | *Lower Strength*  **Upper Push Hypertrophy**       | *Lower Hypertrophy*  **Upper Push Explosive **    | Cable day                          | Core                     |
+| **Mon**  | Lower + *Machine/Freeweight* [Dead Hang](https://www.youtube.com/watch?v=ShkBXOGK7A8)(MMA) | *Lower Strength*                                                                           | *Lower Hypertrophy*                                | *Lower Explosive*                                 | Anything including Plyometrics     | Scapular & Upper Back    |
+| **Tues** | Upper + Run + Balance Board                                                                | ***Pull Strength**                                                                         | ***Pull *** *Explosive* → **Hypertrophy Finisher** | ***Pull*** *Explosive* → **Hypertrophy Finisher** | Home Resistance Band/Tower 200 day | Lats / Traps             |
+| **Wed**  | Lower +                *Cable Machine*     Dead Hang(MMA)                                  | *Lower Strength*                                                                           | *Lower Hypertrophy*                                | *Lower Explosive*                                 | TRX Eventually                     | Quads                    |
+| **Thu**  | Upper + Run + Balance Board                                                                | **Push Strength**                                                                          | *Push Explosive* →   **Hypertrophy Finisher**      | *Push Explosive* →  **Hypertrophy Finisher**      | Landmine day                       | Chest / Delts            |
+| **Fri**  | REST                                                                                       |                                                                                            |                                                    |                                                   |                                    | Arms                     |
 
 
 ## Session Breakdown  
@@ -125,18 +125,15 @@ Alternate each month keeping the week training phase in to account the weights f
 
 #todo/BAU/Workout 
 - [ ] Start with [[Stretch Regimen]]
+- [ ] Limit sprinting on Hypertrophy week 
 - [ ] Hit heavy bag at Crunch once a week also be aware of how you use row machine/Airdyne bike since can fall into cardio use it to rev up the engine then do cardio on days where you want to.
 - [ ] Cycle in warm up doing  lunges to kicks, knees, and teeps
 - [ ] For hypertrophy week switch to mid day or after work on week days(Mon to Thurs)
 - [ ] Swap out some Leg stuff next year with cable excercise or some hybrid of the two
 - [ ] Train hypertrophy by song duration and beat to simplify and no 1 min break between sets
 - [ ] Practice priming excercise movement like squat before squatting a bar or do push ups before bench press.
-- [ ] Can do 2 ✅  but pick one 📈 depending on day then choose few others for that day session max excercise in session can maybe be 7 each day maybe lower if an MMA day.
+- [ ] Can do 2 ✅  but pick one 📈 depending on day then choose few others for that day session max excercise in session can maybe be 7 each day maybe lower if an MMA day. Maybe Each week pick something different for  📈 to try each one on a more consistent basis.
 - [ ]  Run all out 1 min then 1 min coasting so run then a slow walk then back to intense 1 min once able to do a minutes build to 4 min.
-
-
-
-Cook Sunday Wednesday
 
 
 
@@ -168,10 +165,9 @@ Standing Dumbbell Over Head Extension
 7. Sled Push/Pull (conditioning + legs)  
 8. Zottman Curl (biceps + forearms)  - No Chin-ups on this day 
 9. Reverse Crunch / Dragonfly  
-10. Ab Roller 📈
-11. Pallof Press (anti-rotation core)  📈
-12. Cable Assisted Pancake 📈
-13. Unilateral RDL 📈
+10. Pallof Press (anti-rotation core)  📈
+11. Cable Assisted Pancake 📈
+12. Unilateral RDL 📈
 
 ### Lower Body Day Part 1 Monday(MMA)
 1. ***Airdyne Bike/Row Machine (horizontal pull)***
@@ -187,7 +183,7 @@ Standing Dumbbell Over Head Extension
 8. Trap Bar Squat Jump (power finisher)  
 9. Kettlebell Leg Raise📈
 
-### Upper Body Day Part 1 Tuesday Sprint Day -
+### Upper Body Day Part 1 Tuesday Sprint Day - Meal Prep Day 2
 1. ***Airdyne Bike/Row Machine (horizontal pull)***
 2. **Dynamic Stretching**
 3. Cable Pec Minor Fly/Chest Fly ✅ (warm-up / activation)  
@@ -221,9 +217,10 @@ Standing Dumbbell Over Head Extension
 6. Tricep Dip
 7. Halo (shoulder mobility + stability)  | | Super ROM Six-Ways Raise (deltoid health)  
 8. Shoulder Press | | Suitcase Bottom Up March
-9. Cable Assisted Pancake 📈
-10. Kneeling Cable Crunch  📈
-11. Pallof Press (anti-rotation core)  📈
+9. Ab Roller 📈
+10. Cable Assisted Pancake 📈
+11. Kneeling Cable Crunch  📈
+12. Pallof Press (anti-rotation core)  📈
 
 
 
