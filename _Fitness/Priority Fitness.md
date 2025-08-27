@@ -112,8 +112,6 @@ The general principles of **training phases** like strength and hypertrophy appl
 
 ## Session Breakdown  
 **In-Session Musts for Back Injury Prevention**  
-> Can do 2 of ✅  but pick one of 📈 depending on day then choose few others for that day session max excercise in session can maybe be 7 each day maybe lower if an MMA day. Maybe Each week pick something different for  📈 to try each one on a more consistent basis.
-
 #### Schedule for Alternating Variation in Exercises
 Alternate each month keeping the week training phase in to account the weights follow like this when alternating phase in session **explosive** to **hypertrophy** | **explosive** to **strength** | **strength** to **hypertrophy** also weights follow ***explosive/hypertrophy/strength***.
 
@@ -125,20 +123,16 @@ Alternate each month keeping the week training phase in to account the weights f
 
 #todo/BAU/Workout 
 - [ ] Start with [[Stretch Regimen]]
-- [ ] Limit sprinting on Hypertrophy week 
-- [ ] Hit heavy bag at Crunch once a week also be aware of how you use row machine/Airdyne bike since can fall into cardio use it to rev up the engine then do cardio on days where you want to.
+- [ ] Limit sprinting on ***Hypertrophy week*** for non leg days
 - [ ] Cycle in warm up doing  lunges to kicks, knees, and teeps
-- [ ] For hypertrophy week switch to mid day or after work on week days(Mon to Thurs)
+- [ ] Anything outside of best parings you do make it a light day instead of a intense day because best paring are for injury mitigation. also orange is very high priority out of all excercise here below.
+- [ ] Hit heavy bag at Crunch once a week also be aware of how you use row machine/Airdyne bike since can fall into cardio use it to rev up the engine then do cardio on days where you want to.
+- [ ] For hypertrophy week switch to mid day or after work on weekdays(Mon to Thurs)
 - [ ] Swap out some Leg stuff next year with cable excercise or some hybrid of the two
 - [ ] Train hypertrophy by song duration and beat to simplify and no 1 min break between sets
 - [ ] Practice priming excercise movement like squat before squatting a bar or do push ups before bench press.
-- [ ]  Run all out 1 min then 1 min coasting so run then a slow walk then back to intense 1 min once able to do a minutes build to 4 min.
-
-
-
-Standing Dumbbell Over Head Extension 
-
-
+- [ ] Can do 2 of ✅  but pick one of 📈 depending on day then choose few others for that day session max excercise in session can maybe be 7 each day maybe lower if an MMA day. Maybe Each week pick something different for  📈 to try each one on a more consistent basis.
+- [ ] Run all out 1 min then 1 min coasting so run then a slow walk then back to intense 1 min once able to do a minutes build to 4 min.
 
 ### Full Body Day Part 1 Saturday(Optional MMA) - Meal Prep Day 1
 1. ***Airdyne Bike/Row Machine (horizontal pull)***
@@ -153,7 +147,7 @@ Standing Dumbbell Over Head Extension
 10. Pallof Press (anti-rotation core) 📈
 11. Cable Assisted Pancake 📈
 12. Unilateral RDL 📈
-13. **Stat Stretching**
+13. **Static Stretching**
 
 ### Full Body Day Part 2 Sunday Sprint Day
 1. ***Airdyne Bike/Row Machine (horizontal pull)***
@@ -168,7 +162,7 @@ Standing Dumbbell Over Head Extension
 10. Pallof Press (anti-rotation core)  📈
 11. Cable Assisted Pancake 📈
 12. Unilateral RDL 📈
-
+13. **Static Stretching**
 ### Lower Body Day Part 1 Monday(MMA)
 1. ***Airdyne Bike/Row Machine (horizontal pull)***
 2. **Dynamic Stretching**
@@ -182,7 +176,7 @@ Standing Dumbbell Over Head Extension
 7. Hip Thrust (glutes focus)  
 8. Trap Bar Squat Jump (power finisher)  
 9. Kettlebell Leg Raise📈
-
+10. **Static Stretching**
 ### Upper Body Day Part 1 Tuesday Sprint Day - Meal Prep Day 2
 1. ***Airdyne Bike/Row Machine (horizontal pull)***
 2. **Dynamic Stretching**
@@ -221,13 +215,11 @@ Standing Dumbbell Over Head Extension
 10. Cable Assisted Pancake 📈
 11. Kneeling Cable Crunch  📈
 12. Pallof Press (anti-rotation core)  📈
-
+13. **Static Stretching**
 
 
 ## Body Part Specific Programs 
 > For each excercise allowed to do 3 times a week max. Also each fixed gym machine has a freeweight variations you can pivot to if not available.
-
-- [ ] Anything outside of best parings you do make it a light day instead of a intense day because best paring are for injury mitigation. also orange is very high priority out of all excercise here below.
 
 ![[muscle-anatomy-chart.jpg]]
 
@@ -295,6 +287,7 @@ Allowed to practice each excercise *here* max twice a week.
 11. **[Low Cable Goblet Squat](https://youtu.be/f6eI0JI9AYA?si=TTKH4FrAivJYEyd0)**  - 40lb/40lb/40lb
 12. Seated or Standing [Seated Y Cable Raises](https://youtu.be/-yL_BS28hcY?si=oO9QrIO_sv2SF5K1)(Seat Height Low Angle) - 0lb/0lb/0lb
 13. Standing [Cable FreeMotion Front Shoulder Raise](https://youtu.be/_bzJ1Yb4XCU?si=v0UUNLSilV6NVM76)(Low Angle) - 0lb/0lb/0lb
+14. Seated or Standing [DB Overhead Tricep Extension](https://youtube.com/shorts/b_r_LW4HEcM?si=B1_Zz_2olhNHmPwY) - 0lb/0lb/0lb
 
 
 ### Leg Programming 
