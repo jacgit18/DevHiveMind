@@ -46,6 +46,14 @@ Broth and Stock
 Onion carrots celery
 
 Pepper corn 
+
+Freezing cook meat reduces the shelf life when vacuum sealing to like 3 months
+
+When doing marinades in vaccum seal don't put too much otherwise it gets sucked out the bag
+
+  
+
+Freeze burgers before vacuum Sealing also use parchment paper on scale
   
 
 | Quantity/Type                                           | Days Covered | Serving   | Protein for Individ | Cal for Individ | Wieght | Cost     |

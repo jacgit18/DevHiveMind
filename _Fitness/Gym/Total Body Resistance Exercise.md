@@ -19,6 +19,10 @@ dg-publish:
   
 ---  
   
+
+Bjj roll rock to box jump
+
+
 ## **TRX Workout Plan (3-4x Weekly)**  
 *(45-60 mins/session)*  
   
