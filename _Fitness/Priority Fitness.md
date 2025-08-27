@@ -112,15 +112,15 @@ The general principles of **training phases** like strength and hypertrophy appl
 
 ## Session Breakdown  
 **In-Session Musts for Back Injury Prevention**  
+> Can do 2 of ✅  but pick one of 📈 depending on day then choose few others for that day session max excercise in session can maybe be 7 each day maybe lower if an MMA day. Maybe Each week pick something different for  📈 to try each one on a more consistent basis.
 
 #### Schedule for Alternating Variation in Exercises
 Alternate each month keeping the week training phase in to account the weights follow like this when alternating phase in session **explosive** to **hypertrophy** | **explosive** to **strength** | **strength** to **hypertrophy** also weights follow ***explosive/hypertrophy/strength***.
 
-| Month           | Sled                             | Back Extension                                                     | Upper Body                      |                        | Leg Focus                |           | ROM       | ROM            |
-| --------------- | -------------------------------- | ------------------------------------------------------------------ | ------------------------------- | ---------------------- | ------------------------ | --------- | --------- | -------------- |
-| 1 (Odd months)  | Push to Lateral(left/right) Pull | Unilateral back ext 2x8 with 5 sec ISO & Roman Chair Hip abduction | Unilateral Arm(were it applies) | Chin-up                | Unilateral-leg variation | Leg Press | Halo      | Bottom Ups     |
-| 2 (Even months) | Push to Pull                     | Bilateral Back ext 4x8 with 10 sec ISO                             | Bilateral Arm                   | Neutral/Narrow Pull-up | Bilateral variation      | HackSmith | Super ROM | Shoulder Press |
-|                 |                                  |                                                                    |                                 |                        |                          |           |           |                |
+| Month           | Back Extension                                                     | Upper Body                      |                        | Leg Focus                |           | Sled                             | ROM       | ROM            |
+| --------------- | ------------------------------------------------------------------ | ------------------------------- | ---------------------- | ------------------------ | --------- | -------------------------------- | --------- | -------------- |
+| 1 (Odd months)  | Unilateral back ext 2x8 with 5 sec ISO & Roman Chair Hip abduction | Unilateral Arm(were it applies) | Chin-up                | Unilateral-leg variation | Leg Press | Push to Lateral(left/right) Pull | Halo      | Bottom Ups     |
+| 2 (Even months) | Bilateral Back ext 4x8 with 10 sec ISO & Side Lateral QL Extension | Bilateral Arm                   | Neutral/Narrow Pull-up | Bilateral variation      | HackSmith | Push to Pull                     | Super ROM | Shoulder Press |
 
 
 #todo/BAU/Workout 
@@ -132,7 +132,6 @@ Alternate each month keeping the week training phase in to account the weights f
 - [ ] Swap out some Leg stuff next year with cable excercise or some hybrid of the two
 - [ ] Train hypertrophy by song duration and beat to simplify and no 1 min break between sets
 - [ ] Practice priming excercise movement like squat before squatting a bar or do push ups before bench press.
-- [ ] Can do 2 ✅  but pick one 📈 depending on day then choose few others for that day session max excercise in session can maybe be 7 each day maybe lower if an MMA day. Maybe Each week pick something different for  📈 to try each one on a more consistent basis.
 - [ ]  Run all out 1 min then 1 min coasting so run then a slow walk then back to intense 1 min once able to do a minutes build to 4 min.
 
 
@@ -154,6 +153,7 @@ Standing Dumbbell Over Head Extension
 10. Pallof Press (anti-rotation core) 📈
 11. Cable Assisted Pancake 📈
 12. Unilateral RDL 📈
+13. **Stat Stretching**
 
 ### Full Body Day Part 2 Sunday Sprint Day
 1. ***Airdyne Bike/Row Machine (horizontal pull)***
