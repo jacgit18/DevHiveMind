@@ -145,12 +145,13 @@ Alternate each month keeping the week training phase in to account the weights f
 7. Sled Push/Pull (conditioning + legs)  
 8. Bench Reverse Crunch / Dragonfly / Cable Reverse Crunch
 9. Cable WoodChopper
-10. KB Jefferson Curls/Reverse Jefferson Curls - Keep weight & reps low 
-11. Ab Roller 📈
-12. Pallof Press (anti-rotation core) - can be done with bands  📈
-13. Cable Assisted Pancake 📈
-14. Unilateral RDL 📈
-15. **[[Personal Trainer#Priority Static Stretch to develop splits| Static Stretching]]**
+10. KB Around the World
+11. KB Jefferson Curls/Reverse Jefferson Curls - Keep weight & reps low 
+12. Ab Roller 📈
+13. Pallof Press (anti-rotation core) - can be done with bands  📈
+14. Cable Assisted Pancake 📈
+15. Unilateral RDL 📈
+16. **[[Personal Trainer#Priority Static Stretch to develop splits| Static Stretching]]**
 
 ### Full Body Day Part 2 Sunday Sprint Day
 1. **Dynamic Stretching**
@@ -173,7 +174,7 @@ Alternate each month keeping the week training phase in to account the weights f
 4. Dumbbell Bulgarian Split Squat  
    - *alt:* Walking Barbell Lunge / Zercher Lunge  
 5. Deadlift  
-6. Hack Squat *or* Leg Press (depending on recovery)  
+6. Hack Squat *or* Leg Press | | 
 7. Hip Thrust (glutes focus)  
 8. Trap Bar Squat Jump (power finisher)  
 9. Kettlebell Leg Raise📈
@@ -182,13 +183,14 @@ Alternate each month keeping the week training phase in to account the weights f
 1. **Dynamic Stretching**
 2. Cable Pec Minor Fly/Chest Fly ✅ (warm-up / activation)  
 3. Halo (shoulder mobility + stability)  | | Super ROM Six-Ways Raise (deltoid health)  ✅
-4. Chest/Bench Press  
-5. Tricep Dip
-6. Shoulder Press | | Suitcase Bottom Up March
-7. Zottman Curl (biceps + forearms)  - No Chin-ups on this day 
-8. Cable Assisted Pancake 📈
-9. Kneeling Cable Crunch  📈
-10. Pallof Press (anti-rotation core) - can be done with bands  📈
+4. KB Around the World
+5. Chest/Bench Press  
+6. Tricep Dip
+7. Shoulder Press | | Suitcase Bottom Up March
+8. Zottman Curl (biceps + forearms)  - No Chin-ups on this day 
+9. Cable Assisted Pancake 📈
+10. Kneeling Cable Crunch  📈
+11. Pallof Press (anti-rotation core) - can be done with bands  📈
 
 ### Lower Body Day Part 2 Wednesday(Optional MMA)
 1. ***Airdyne Bike/Row Machine (horizontal pull)***
@@ -207,16 +209,17 @@ Alternate each month keeping the week training phase in to account the weights f
 2. **Dynamic Stretching**
 3. Cable Pec Minor Fly/Chest Fly ✅ (warm-up / activation)    
 4. Halo (shoulder mobility + stability)  | | Super ROM Six-Ways Raise (deltoid health)  ✅
-5. Chest/Bench Press  
-6. Chin-up/Pull-up
-7. Tricep Dip
-8. Shoulder Press | | Suitcase Bottom Up March
-9. Bench Reverse Crunch / Dragonfly / Cable Reverse Crunch
-10. Ab Roller 📈
-11. Cable Assisted Pancake 📈
-12. Kneeling Cable Crunch  📈
-13. Pallof Press (anti-rotation core) - can be done with bands  📈
-14. **Static Stretching**
+5. KB Around the World
+6. Chest/Bench Press  
+7. Chin-up/Pull-up
+8. Tricep Dip
+9. Shoulder Press | | Suitcase Bottom Up March
+10. Bench Reverse Crunch / Dragonfly / Cable Reverse Crunch
+11. Ab Roller 📈
+12. Cable Assisted Pancake 📈
+13. Kneeling Cable Crunch  📈
+14. Pallof Press (anti-rotation core) - can be done with bands  📈
+15. **Static Stretching**
 
 
 ## Body Part Specific Programs 
@@ -235,6 +238,7 @@ Anything not on this list is most likely a bad excercise or not worth doing base
 - ***[Banded Suitcase](https://youtu.be/J7RX1IemJVE?si=P10xiFwSvUb2sU61) Carry/[March](https://www.youtube.com/watch?v=a9HkuLYNyJ0)*** - 5lb/10lb/20lb(Start with then transition to farmer)
 - Farmer [Carry](https://www.youtube.com/watch?v=8OtwXwrJizk)/[March](https://www.youtube.com/watch?v=C2I_HsdDVCE) - 5lb/10lb/20lb
 - ~~**Kettlebell Swing** -5lb/10lb/20lb
+- **[KB Around the World](https://www.youtube.com/watch?v=N4mMVG8S5Kg)** - 15lb/15lb/15lb
 - **[Hanging Knee Raise](https://youtu.be/RD_A-Z15ER4?si=BT3gkNFch2bOdEvx)** - bodyweight
 - ***Sled***(try rope pull variation on explosive week **1x10/2x8**) - 20lb/50lb/70lb 
 	- **[Crossover Step Lateral Sled Drag](https://youtu.be/rGtYmX2aeAA?si=PnniyFsIluLeViKa)** 
