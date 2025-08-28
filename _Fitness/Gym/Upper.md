@@ -19,47 +19,47 @@ dg-publish:
 
 
 - Band Lateral Raise  ^61234b
-	- ![Resistance Band Lateral Raises - YouTube](https://www.youtube.com/watch?v=QqyKKd3dXGk)
+	- [Resistance Band Lateral Raises - YouTube](https://www.youtube.com/watch?v=QqyKKd3dXGk)
 
 
 
 ### Weights
 - Bench Press (_Barbell_) ^bcb0df
-	- ![](https://www.youtube.com/watch?v=SCVCLChPQFY&list=TLPQMTUxMjIwMjRImOBFVXK6uQ&index=2)
+	- [](https://www.youtube.com/watch?v=SCVCLChPQFY&list=TLPQMTUxMjIwMjRImOBFVXK6uQ&index=2)
 - Chest Fly bring range closer to front Rear Fly
 	For rear when pulling stop when both arms are straight don't go past shoulders  ^238b6e
 
-	- ![](https://www.youtube.com/watch?v=H4mVGHaK2f4)
+	- [](https://www.youtube.com/watch?v=H4mVGHaK2f4)
 	Front Fly with Dumbbell ^ef7d41
-	- ![](https://www.youtube.com/watch?v=Nhvz9EzdJ4U)
+	- [](https://www.youtube.com/watch?v=Nhvz9EzdJ4U)
 	Rear/ reverse Fly with Dumbbell 
-		- ![Exercise Index - Bent Over Dumbbell Rear Delt Raise - YouTube](https://youtu.be/73WpaOMnhSU?si=HXTqn-ncBpk57ADz)
+		- [Exercise Index - Bent Over Dumbbell Rear Delt Raise - YouTube](https://youtu.be/73WpaOMnhSU?si=HXTqn-ncBpk57ADz)
  ^98fc91
-	- ![Dumbbell](https://www.youtube.com/watch?v=nlkF7_2O_Lw)
+	- [Dumbbell](https://www.youtube.com/watch?v=nlkF7_2O_Lw)
 - Shoulder Press - Avoid behind-the-head; stick to pressing in front.
 - Chest Press (Machine or Free Weights)
 - Plyometric Chest Pass (Medicine Ball)
 - Explosive Overhead Throw (Medicine Ball)
 - Bottoms Up (**Kettlebell**) ^9def13
-	- ![](https://www.youtube.com/watch?v=TJjRZBpY75I)
+	- [](https://www.youtube.com/watch?v=TJjRZBpY75I)
 - Cable Bicep Curl/ CurlBar Curl - keep elbows in front of hips 
 	- More engaging straight bar can be better in-terms of muscle engagement 
-	- ![](https://www.youtube.com/watch?v=2MUEL4nL6hA&list=TLPQMTUxMjIwMjTU6oT9G9b_2w&index=7)
+	- [](https://www.youtube.com/watch?v=2MUEL4nL6hA&list=TLPQMTUxMjIwMjTU6oT9G9b_2w&index=7)
 - Cable Tricep Pushdown
-	- ![](https://www.youtube.com/watch?v=6Fzep104f0s)
+	- [](https://www.youtube.com/watch?v=6Fzep104f0s)
 - Cable Woodchopper ^a7be5a
-	- ![](https://www.youtube.com/watch?v=mvvu8imyMFs)
+	- [Cable Woodchopper](https://www.youtube.com/watch?v=mvvu8imyMFs)
 - Back lateral raise ^971765
 	- [Behind The Back Cable Lateral Raise \| How To - YouTube](https://www.youtube.com/watch?v=y4Djk_G0yEg)
 - Over head tricep extension  ^05b651
-	- ![OVERHEAD LOW ROPE TRICEP EXTENSION - YouTube](https://www.youtube.com/watch?v=MegBRxtR14I)
+	- [OVERHEAD LOW ROPE TRICEP EXTENSION - YouTube](https://www.youtube.com/watch?v=MegBRxtR14I)
 - Single-Arm Row (**Kettlebell**)
 - Reverse Grip Curl (_Curl Bar_)
 - Overhead Press (_**Dumbbell**_)
 - Barbell Incline Bench Press ^3f7ed5
-	- ![How to PROPERLY Incline Barbell Bench Press (FIX YOUR FORM NOW) - YouTube](https://www.youtube.com/watch?v=5kyLUGVq_pk)
+	- [How to PROPERLY Incline Barbell Bench Press (FIX YOUR FORM NOW) - YouTube](https://www.youtube.com/watch?v=5kyLUGVq_pk)
 
-![￼Best Bench Press Tutorial Ever Made - YouTube](https://youtu.be/EdDqD4aKwxM?si=_AANsohPdgl8jWwb)
+[￼Best Bench Press Tutorial Ever Made - YouTube](https://youtu.be/EdDqD4aKwxM?si=_AANsohPdgl8jWwb)
 
 
 - Bent-Over Row (Low Priority)
@@ -67,10 +67,10 @@ dg-publish:
 	- ![How to do Lat Pulldowns (AVOID MISTAKES!) - YouTube](https://www.youtube.com/watch?v=SALxEARiMkw&list=TLPQMjcwNDIwMjWOBRc2Cey09g&index=3)
 	- ![Single Arm Cable Lat Pulldown Machine - YouTube](https://youtu.be/HBC5s98wXko?si=qOBbyPwLaogAZVYI)
 - Dumbbell Overhead Extension  ^f128a8
-	- ![Dumbbell Overhead Tricep Extension - YouTube](https://www.youtube.com/watch?v=4--u52sHZPs)
+	- [Dumbbell Overhead Tricep Extension - YouTube](https://www.youtube.com/watch?v=4--u52sHZPs)
 
 - Dumbbell wide curl ^60f95e
-	- ![Biceps Dumbbell Wide Curl - YouTube](https://www.youtube.com/watch?v=hB_aZSSi7mA)
+	- [Biceps Dumbbell Wide Curl - YouTube](https://www.youtube.com/watch?v=hB_aZSSi7mA)
 
 - Single Arm Incline Preacher Curl ^6d88c7
 	- ![Incline Bench Preacher Curl - YouTube](https://www.youtube.com/watch?v=02TvQZiVdic)
@@ -93,10 +93,10 @@ dg-publish:
 	- ![Super ROM Lateral Raises - YouTube](https://www.youtube.com/watch?v=IxHCPaByyE0)
 
 - Two Arm Dumbbell ^cf2720
-	- ![How To Do Two Arm Dumbbell Row \| Exercise Demo - YouTube](https://www.youtube.com/watch?v=VsRqipqJ6ng)
+	- [How To Do Two Arm Dumbbell Row \| Exercise Demo - YouTube](https://www.youtube.com/watch?v=VsRqipqJ6ng)
 
 
-![How To Perform HAMMER CURLS \| Biceps Exercise Tutorial - YouTube](https://youtu.be/BRVDS6HVR9Q?si=1ZzT73ed4fM-vwLt) ^eddf76
+[How To Perform HAMMER CURLS \| Biceps Exercise Tutorial - YouTube](https://youtu.be/BRVDS6HVR9Q?si=1ZzT73ed4fM-vwLt) ^eddf76
 
 
 
@@ -127,7 +127,7 @@ Reverse Preacher Curl(3:14)
 	- [Dead Hang](https://www.youtube.com/watch?v=ShkBXOGK7A8)
 - **Pull-Up Bar Variations
 	- Wide Grip  ^bf9596
-		- ![](https://www.youtube.com/watch?v=dAScZVF5o9k)
+		- [](https://www.youtube.com/watch?v=dAScZVF5o9k)
 
 	
 - Tricep Dip ^a56816
@@ -141,7 +141,7 @@ Reverse Preacher Curl(3:14)
 
 
 
-![How to Pike Push Up \| Pike Push Up Progressions - YouTube](https://www.youtube.com/watch?v=Ajna6AxQdtw) ^4a9cd1
+[How to Pike Push Up \| Pike Push Up Progressions - YouTube](https://www.youtube.com/watch?v=Ajna6AxQdtw) ^4a9cd1
 
 
 

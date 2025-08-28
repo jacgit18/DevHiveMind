@@ -66,8 +66,8 @@ _~2–3 minutes total – pick 2–3_ or pick one to do for the whole time.
 - [**Side-Lying Bicycles**](https://www.youtube.com/watch?v=CYmpb7fw1Gc) – Pedal your top leg like a bike in the air to raise HR slightly and warm up hips.
 
 ##### **Grounded On Front**
-- [[Upper#^4a9cd1 |Pike Push-Ups]] – **6–8 reps**
-- [[Core#^60b781 |Tuck Jumps to Plank]]– **6 reps**
+- [Pike Push Up](https://www.youtube.com/watch?v=Ajna6AxQdtw) – **6–8 reps**
+- [Tuck Jump](https://www.youtube.com/watch?v=LCF6rkH9R30)– **6 reps**
 
 ##### **Standing** 
 *Skip and pogo hop if in a hurry before sprinting*
@@ -93,12 +93,13 @@ _~2–3 minutes total – pick 4–5_
 - [Dead Bug ](https://youtu.be/VRpXreaHz7w?si=MSTm2UNzlRLyQt3E)(Anti-extension) - hand pushed against wall alternating pushing heals down. Try [BJJ Variation](https://youtu.be/M14fmjvDXMo?si=KpG6WH6nQ5Qdl8Bm) keeping core engaged and upper and lower body connected extended foot alternating height of foot to the ground or keep a block between arms and legs then alternating leg while holding the block with the other leg. 
 
 ##### **Grounded On Side**
-- [[Core#^5805af |Side Plank Hip dip]] (floor or bench feet on ground or bench) - **10–12 reps** - Lateral flexion
+- [Elevated Side Plank Hip Dip](https://www.youtube.com/watch?v=7qfH2ff6GsQ)(floor or bench feet on ground or bench) - **10–12 reps** - Lateral flexion
 - **Side-Lying Leg Lifts** – Top leg lifts straight up and down; targets glute medius.
 - **Side-Lying Hip Circles** – Lift top leg and draw slow circles in the air.
 - **Side Plank Leg Raises** – From a side plank, lift top leg up/down; glutes + core activation.
 - ***Rotational Side Plank*** -  3–4 slow rotations per side
 ##### **Grounded On Front**
+- [Reverse Nordic](https://youtu.be/x2K8uH7dcqg?si=XvJ6HMTCCVyXnpTX) 
 - [[Lower#^01867f |Quadruped Kickbacks]] – **8–10 reps/side**
 - Plank Shoulder Taps – **8–12 taps**
 - Push-Up Hold (top and bottom) – **10s each**
@@ -153,8 +154,8 @@ _~3–4 minutes total – choose a flow or 3–5 moves_
 - BirdDog
 - **Inchworms** – Stand → walk hands to plank → back up, 5–8 reps
 - **World’s Greatest Stretch** – Deep lunge + rotation opposite side arm in relation to front kneeling knee, 3–5 per side
-- [[Lower#^9744bc |Dynamic Cat-Cow]] → Hold Cat-Cow Stretch 
-- Dynamic Hip Flexor Swings -> [[Lower#^357346 |Lizard Pose ]] (Just a lower to the ground version with elbows down) – **6 swings + 10s hold/side**
+- [Dynamic Cat Cow](https://www.youtube.com/watch?v=ESJ6Ghvgr6k) → Hold Cat-Cow Stretch 
+- Dynamic Hip Flexor Swings -> [Lizard Pose](https://www.youtube.com/watch?v=gyS68CiPNcY)(Just a lower to the ground version with elbows down) – **6 swings + 10s hold/side**
 	- For dynamic part lift your back knee off the ground if it was resting begin rocking forward and backward, shifting your weight between your front foot and back toes.
 - [Dive Bomber Push-Up](https://www.youtube.com/watch?v=mvNcSF-nXg4)
 - [Band Assisted Thoracic Rotation](https://www.youtube.com/watch?v=3NgyG2JImfw)

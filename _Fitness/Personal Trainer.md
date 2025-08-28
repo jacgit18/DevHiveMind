@@ -115,14 +115,15 @@ The general principles of **training phases** like strength and hypertrophy appl
 #### Schedule for Alternating Variation in Exercises
 Alternate each month keeping the week training phase in to account the weights follow like this when alternating phase in session **explosive** to **hypertrophy** | **explosive** to **strength** | **strength** to **hypertrophy** also weights follow ***explosive/hypertrophy/strength***.
 
-| Month           | Back Extension                                                     | Upper Body                      |                        | Leg Focus                |           | Sled                             | ROM       | ROM            |
-| --------------- | ------------------------------------------------------------------ | ------------------------------- | ---------------------- | ------------------------ | --------- | -------------------------------- | --------- | -------------- |
-| 1 (Odd months)  | Unilateral back ext 2x8 with 5 sec ISO & Roman Chair Hip abduction | Unilateral Arm(were it applies) | Chin-up                | Unilateral-leg variation | Leg Press | Push to Lateral(left/right) Pull | Halo      | Bottom Ups     |
-| 2 (Even months) | Bilateral Back ext 4x8 with 10 sec ISO & Side Lateral QL Extension | Bilateral Arm                   | Neutral/Narrow Pull-up | Bilateral variation      | HackSmith | Push to Pull                     | Super ROM | Shoulder Press |
+| Month           | Back Extension                                                     | Upper Body                      |                        | Leg Focus                |           | Sled                             | ROM       | Suitcase/Farmer                 | ROM            |
+| --------------- | ------------------------------------------------------------------ | ------------------------------- | ---------------------- | ------------------------ | --------- | -------------------------------- | --------- | ------------------------------- | -------------- |
+| 1 (Odd months)  | Unilateral back ext 2x8 with 5 sec ISO & Roman Chair Hip abduction | Unilateral Arm(were it applies) | Chin-up                | Unilateral-leg variation | Leg Press | Push to Lateral(left/right) Pull | Halo      | Suitcase Bottom Ups             | Bottom Ups     |
+| 2 (Even months) | Bilateral Back ext 4x8 with 10 sec ISO & Side Lateral QL Extension | Bilateral Arm                   | Neutral/Narrow Pull-up | Bilateral variation      | HackSmith | Push to Pull                     | Super ROM | Banded Suitcase or Farmer Carry | Shoulder Press |
 
 
 #todo/BAU/Workout 
 - [ ] Start with [[Stretch Regimen]]
+- [ ] Maybe have a free up month with no specific structure at end of each quarter.
 - [ ] Limit sprinting on ***Hypertrophy week*** for non leg days
 - [ ] Cycle in warm up doing  lunges to kicks, knees, and teeps
 - [ ] Anything outside of best parings you do make it a light day instead of a intense day because best paring are for injury mitigation. also orange is very high priority out of all excercise here below.
@@ -131,7 +132,7 @@ Alternate each month keeping the week training phase in to account the weights f
 - [ ] Swap out some Leg stuff next year with cable excercise or some hybrid of the two
 - [ ] Train hypertrophy by song duration and beat to simplify and no 1 min break between sets
 - [ ] Practice priming excercise movement like squat before squatting a bar or do push ups before bench press.
-- [ ] Can do 2 of ✅  but pick one of 📈 depending on day then choose few others for that day session max excercise in session can maybe be 7 each day maybe lower if an MMA day. Maybe Each week pick something different for  📈 to try each one on a more consistent basis.
+- [ ] Can do 2 of ✅  but pick one of 📈 depending on day then choose few others for that day session max excercise in session can maybe be 7 each day maybe lower if an MMA day. Maybe Each week pick something different for  📈 to try each one on a more consistent basis but also keep [[Exercise Best Pairing]] in mind.
 - [ ] Run all out 1 min then 1 min coasting so run then a slow walk then back to intense 1 min once able to do a minutes build to 4 min.
 
 ### Full Body Day Part 1 Saturday(Optional MMA) - Meal Prep Day 1
@@ -139,35 +140,37 @@ Alternate each month keeping the week training phase in to account the weights f
 2. **Dynamic Stretching**
 3. Cable Pec Minor Fly/Chest Fly ✅ (warm-up / activation)  
 4. Prone Leg Curl ✅  
-5. Halo (shoulder mobility + stability)  
+5. Halo (shoulder mobility + stability)  | | Super ROM Six-Ways Raise (deltoid health)  ✅
 6. Clean & Jerk Press (explosive power)  
 7. Sled Push/Pull (conditioning + legs)  
-8. Reverse Crunch / Dragonfly  
-9. Ab Roller 📈
-10. Pallof Press (anti-rotation core) 📈
-11. Cable Assisted Pancake 📈
-12. Unilateral RDL 📈
-13. **Static Stretching**
+8. Bench Reverse Crunch / Dragonfly / Cable Reverse Crunch
+9. Cable WoodChopper
+10. KB Jefferson Curls/Reverse Jefferson Curls -  - Keep weight low 
+11. Ab Roller 📈
+12. Pallof Press (anti-rotation core) - can be done with bands  📈
+13. Cable Assisted Pancake 📈
+14. Unilateral RDL 📈
+15. **[[Personal Trainer#Priority Static Stretch to develop splits| Static Stretching]]**
 
 ### Full Body Day Part 2 Sunday Sprint Day
 1. **Dynamic Stretching**
 2. Cable Pec Minor Fly/Chest Fly ✅ (warm-up / activation)  
 3. Prone Leg Curl ✅  
-4. Back Extension (posterior chain, low back protection)  
-5. Halo (shoulder mobility + stability)  
+4. Halo (shoulder mobility + stability)  | | Super ROM Six-Ways Raise (deltoid health)  ✅
+5. Back Extension (posterior chain, low back protection)  
 6. Sled Push/Pull (conditioning + legs)  
 7. Zottman Curl (biceps + forearms)  - No Chin-ups on this day 
-8. Reverse Crunch / Dragonfly  
-9. Pallof Press (anti-rotation core)  📈
-10. Cable Assisted Pancake 📈
-11. Unilateral RDL 📈
-12. **Static Stretching**
+8. Bench Reverse Crunch / Dragonfly / Cable Reverse Crunch
+9. Cable WoodChopper
+10. Pallof Press (anti-rotation core) - can be done with bands  📈
+11. Cable Assisted Pancake 📈
+12. Unilateral RDL 📈
+13. **Static Stretching**
 ### Lower Body Day Part 1 Monday(MMA)
 1. **Dynamic Stretching**
-2. Cable Pec Minor Fly/Chest Fly ✅ (warm-up / activation)  
-3. Prone Leg Curl ✅  
-4. Back Extension (posterior chain, low back protection)  
-5. Dumbbell Bulgarian Split Squat  
+2. Prone Leg Curl ✅  
+3. Back Extension (posterior chain, low back protection)  
+4. Dumbbell Bulgarian Split Squat  
    - *alt:* Walking Barbell Lunge / Zercher Lunge  
 5. Deadlift  
 6. Hack Squat *or* Leg Press (depending on recovery)  
@@ -178,14 +181,14 @@ Alternate each month keeping the week training phase in to account the weights f
 ### Upper Body Day Part 1 Tuesday Sprint Day - Meal Prep Day 2
 1. **Dynamic Stretching**
 2. Cable Pec Minor Fly/Chest Fly ✅ (warm-up / activation)  
-3. Chest/Bench Press  
-4. Tricep Dip
-5. Halo (shoulder mobility + stability)  | | Super ROM Six-Ways Raise (deltoid health)  
+3. Halo (shoulder mobility + stability)  | | Super ROM Six-Ways Raise (deltoid health)  ✅
+4. Chest/Bench Press  
+5. Tricep Dip
 6. Shoulder Press | | Suitcase Bottom Up March
 7. Zottman Curl (biceps + forearms)  - No Chin-ups on this day 
 8. Cable Assisted Pancake 📈
 9. Kneeling Cable Crunch  📈
-10. Pallof Press (anti-rotation core)  📈
+10. Pallof Press (anti-rotation core) - can be done with bands  📈
 
 ### Lower Body Day Part 2 Wednesday(Optional MMA)
 1. ***Airdyne Bike/Row Machine (horizontal pull)***
@@ -203,16 +206,17 @@ Alternate each month keeping the week training phase in to account the weights f
 1. ***Airdyne Bike/Row Machine (horizontal pull)***
 2. **Dynamic Stretching**
 3. Cable Pec Minor Fly/Chest Fly ✅ (warm-up / activation)    
-4. Chest/Bench Press  
-5. Chin-up/Pull-up
-6. Tricep Dip
-7. Halo (shoulder mobility + stability)  | | Super ROM Six-Ways Raise (deltoid health)  
+4. Halo (shoulder mobility + stability)  | | Super ROM Six-Ways Raise (deltoid health)  ✅
+5. Chest/Bench Press  
+6. Chin-up/Pull-up
+7. Tricep Dip
 8. Shoulder Press | | Suitcase Bottom Up March
-9. Ab Roller 📈
-10. Cable Assisted Pancake 📈
-11. Kneeling Cable Crunch  📈
-12. Pallof Press (anti-rotation core)  📈
-13. **Static Stretching**
+9. Bench Reverse Crunch / Dragonfly / Cable Reverse Crunch
+10. Ab Roller 📈
+11. Cable Assisted Pancake 📈
+12. Kneeling Cable Crunch  📈
+13. Pallof Press (anti-rotation core) - can be done with bands  📈
+14. **Static Stretching**
 
 
 ## Body Part Specific Programs 
@@ -228,13 +232,13 @@ Anything not on this list is most likely a bad excercise or not worth doing base
 - [***Barbell Clean Jerk Press*** ](https://www.youtube.com/watch?v=8IYt7AtP8BI) - 20lb/20lb/20lb
 - **[Base Rows](https://youtu.be/Qmw9TKnQ9NY?si=gNe_2K45P71UKz5y)** - 10lb/20lb/30lb
 - **[Suitcase Bottom Up March](https://www.youtube.com/watch?v=TJjRZBpY75I)**(**1x10/2x8**) - 5lb/10lb/20lb 
-- ***Banded Suitcase Carry/[March](https://www.youtube.com/watch?v=a9HkuLYNyJ0)*** - 5lb/10lb/20lb(Start with then transition to farmer)
+- ***[Banded Suitcase](https://youtu.be/J7RX1IemJVE?si=P10xiFwSvUb2sU61) Carry/[March](https://www.youtube.com/watch?v=a9HkuLYNyJ0)*** - 5lb/10lb/20lb(Start with then transition to farmer)
 - Farmer Carry/March - 5lb/10lb/20lb
 - ~~**Kettlebell Swing** -5lb/10lb/20lb
 - ***Sled***(try rope pull variation on explosive week **1x10/2x8**) - 20lb/50lb/70lb 
 	- **[Crossover Step Lateral Sled Drag](https://youtu.be/rGtYmX2aeAA?si=PnniyFsIluLeViKa)** 
 	- Follow Super ROM excercise cadence with less sets and reps for higher weight. 
-- **[Trap Bar Deadlift](https://youtu.be/zDRgPfiHJ_c?si=hnoOefbzidE4bw4f)**(green/black band) - 20lb/30lb/50lb
+- **[Trap Bar Deadlift](https://youtu.be/zDRgPfiHJ_c?si=hnoOefbzidE4bw4f)**(green/black band) - 20lb/30lb/50lb - try deficit version standing on plate with strength phase
 - ~~**Barbell Standing [Good Mornings](https://youtu.be/dEJ0FTm-CEk?si=LAPsPziQZQNGBvph)**~~ ~~not worth doing~~
 
 #### Airdyne Bike/Row Machine Program
@@ -270,21 +274,23 @@ Allowed to practice each excercise *here* max twice a week.
 #### **Session 2: Pull Focus**
 1. ***Narrow-Grip Chin-Up*** - bodyweight/10lb/10lb/10lb
 2. **Narrow-Grip Pull-Up**/**Neutral-Grip Pull-Up** - bodyweight/10lb/10lb/10lb
-3. **Zottman Curl Standing(Easiest)/[Seated](https://youtu.be/cnEcZiOeFO0?si=4nSqffNzqQyAvXBj)(hardest- *build more strength for it*)** - 15lb to 20lb/20lb/20lb
+3. **Zottman Curl Standing(Easiest)/[Seated](https://youtu.be/cnEcZiOeFO0?si=4nSqffNzqQyAvXBj)(hardest- *build more strength for it*)** - 15lb to 20lb/20lb/20lb - try wide curl up
 4. **Super ROM [6 Ways for Shoulder Raise](https://www.youtube.com/watch?v=nvEE4u3qfJY) With Wrist Curl**  – 5lb/5lb/5lb 
 	1. Strength phase 2x8 since like 5 exercises in one
 	2. Hypertrophy 3x10 and avoid explosive phase 
 	3. Prime shoulder with bands
 5. **Halo** 15lb/15lb/20lb
 6. **Reverse Bench Crunch** - Bodyweight 
-7. **Rear Delt Fly/[DB Chest Supported Rear Delt Fly](https://youtu.be/iCbVhDNpG-Y?si=g-puZtoYX7u57LwT)** - 30lb/50lb/70lb | 20lb/20lb/20lb
-8. **[Incline Prone Lateral Raise](https://youtu.be/Wz1C8NzWg5A?si=epnUd7OS6WC75u1Y&t=112)**/**[Seated Cable Pec Minor Fly](https://youtu.be/sC91H2XLtJc?si=bSV_IhpBVbdADHz2&t=286)**(Better ROM then chest fly Top Angle) - 20lb/20lb/20lb(Machine 5 and 5)
-9. **[Lateral Head Single Arm Tricep Extension](https://www.youtube.com/watch?v=vVW9LwaahNw)**(Top Angle) – 20lb/20lb/20lb
-10. **Back Extension**(try Isometric holds) - bodyweight/15lb/15lb/15lb  
-11. **[Low Cable Goblet Squat](https://youtu.be/f6eI0JI9AYA?si=TTKH4FrAivJYEyd0)**  - 40lb/40lb/40lb
-12. Seated or Standing [Seated Y Cable Raises](https://youtu.be/-yL_BS28hcY?si=oO9QrIO_sv2SF5K1)(Seat Height Low Angle) - 0lb/0lb/0lb
-13. Standing [Cable FreeMotion Front Shoulder Raise](https://youtu.be/_bzJ1Yb4XCU?si=v0UUNLSilV6NVM76)(Low Angle) - 0lb/0lb/0lb
-14. Seated or Standing [DB Overhead Tricep Extension](https://youtube.com/shorts/b_r_LW4HEcM?si=B1_Zz_2olhNHmPwY) - 0lb/0lb/0lb
+7. **[Cable Woodchopper](https://www.youtube.com/watch?v=mvvu8imyMFs)** - 0lb/0lb/0lb
+8. **[Bayesian Cable Curl](https://youtu.be/4O24gFksZ04?si=poa8Lr-ymzw1-QrR)** - 0lb/0lb/0lb
+9. **Rear Delt Fly/[DB Chest Supported Rear Delt Fly](https://youtu.be/iCbVhDNpG-Y?si=g-puZtoYX7u57LwT)** - 30lb/50lb/70lb | 20lb/20lb/20lb
+10. **[Incline Prone Lateral Raise](https://youtu.be/Wz1C8NzWg5A?si=epnUd7OS6WC75u1Y&t=112)**/**[Seated Cable Pec Minor Fly](https://youtu.be/sC91H2XLtJc?si=bSV_IhpBVbdADHz2&t=286)**(Better ROM then chest fly Top Angle) - 20lb/20lb/20lb(Machine 5 and 5)
+11. **[Lateral Head Single Arm Tricep Extension](https://www.youtube.com/watch?v=vVW9LwaahNw)**(Top Angle) – 20lb/20lb/20lb
+12. **Back Extension**(try Isometric holds) - bodyweight/15lb/15lb/15lb  
+13. **[Low Cable Goblet Squat](https://youtu.be/f6eI0JI9AYA?si=TTKH4FrAivJYEyd0)**  - 40lb/40lb/40lb
+14. Seated or Standing [Seated Y Cable Raises](https://youtu.be/-yL_BS28hcY?si=oO9QrIO_sv2SF5K1)(Seat Height Low Angle) - 0lb/0lb/0lb
+15. Standing [Cable FreeMotion Front Shoulder Raise](https://youtu.be/_bzJ1Yb4XCU?si=v0UUNLSilV6NVM76)(Low Angle) - 0lb/0lb/0lb
+16. Seated or Standing [DB Overhead Tricep Extension](https://youtube.com/shorts/b_r_LW4HEcM?si=B1_Zz_2olhNHmPwY) - 0lb/0lb/0lb
 
 
 ### Leg Programming 
@@ -293,13 +299,13 @@ All leg cable excercise are done at a low angle. Avoid squatting with running sh
 #### Session 1: Main Compound Squat & Lunge Patterns
 [How to PROPERLY Squat for Growth (4 Easy Steps)](https://youtu.be/gcNh17Ckjgg?si=L0Lmos_bpSJcs9u1)
 *Make Squats Narrow and Deep to improve pistol squat and set bar height to 13 for anything Zercher*
-1. **Hack Squat** – 90lb/180lb/300lb - if ankles begin to lift move feet up
+1. **Hack Squat**(Back/Front) – 90lb/180lb/300lb - if ankles begin to lift move feet up
 2. **Barbell Squat/Zercher B-Squat** - Incline High Bar(on trap muscle)  - 50lb
 3. **Dumbbell Bulgarian Split Squat/Prone Leg Curl** (Try [elevated](https://youtu.be/DXK-VbFE6ic?si=NHqOeitXD0h_YQsr) front leg variation also use [leg curl roller](https://youtu.be/VC5kbLSuo30?si=NLitkOhL50votRUC)) - 20lb/60lb half sets
 4. **Kneeling Squat on toes with curlbar/Dumbbell behind** - 45lb maybe higher
 5. **Unilateral/Bilateral Leg Press** – 90lb/180lb/180lb | 180lb/360lb/500lb
 6. **Walking Barbell Lunge/Zercher Lunge** – 20lb
-7. **Kettlebell B-Squat/Sumo** - 20lb
+7. **Kettlebell [B Stance Squat](https://youtu.be/5uFUvFXhp7U?si=3PGzZ_XSqbFGPbqN)/Sumo** - 20lb
 8. **[Roman Chair Hip Abduction](https://youtu.be/j5HWZOfIePI?si=EsYf8Gg0rFO16y-p)** - Bodyweight/10lb/10lb/10lb 
 9. ~~[Elevated Smith Machine Lunge](https://youtu.be/Yp5O9Cz6Ajg?si=bFGCfbzNqt_JobTA) - try [Elevated Lunge](https://youtu.be/OVFHK2Iev70?si=oiRNDNHznSrNP_RC) with dumbbell at max 40lb to 60lb then switch to free barbell~~
 
@@ -314,9 +320,10 @@ All leg cable excercise are done at a low angle. Avoid squatting with running sh
 1. **Trap Bar Squat Jump** - 20lb/40lb/50lb
 2. **Cable Side Kick** – 20lb/20lb/20lb
 3. **Cable Hip Flexion** – 30lb/30lb/30lb
-4. **Abduction Machine (Outer Thigh)** – 60lb/80lb/130lb
-5. **Band Scarecrow Raises** - 20lb/20lb/20lb
-6. **Leg Extension** – 60lb/90lb/120lb
+4. [Cable Reverse Crunch](https://www.youtube.com/watch?v=b8oUb_6POhQ) - 0lb/0lb/0lb
+5. **Abduction Machine (Outer Thigh)** – 60lb/80lb/130lb
+6. **Band Scarecrow Raises** - 20lb/20lb/20lb
+7. **Leg Extension** – 60lb/90lb/120lb
 
 ### End Session Depending Session Type
 #### Core
@@ -327,14 +334,15 @@ All leg cable excercise are done at a low angle. Avoid squatting with running sh
 2. **Kettlebell Leg Raise**  – 15lb/15lb/15lb
 ##### Priority Static Stretch to develop splits
 *Perform Static Stretch at end of workout 4 times a week 30 sec each*
-Static stretches can be active or passive with external force like maybe a plank with a plate on the back
-- Butterfly
+Static stretches can be active or passive with external force like maybe a plank with a plate on the back. Follow excercise from [Pancake Stretch Progression](https://youtu.be/iO1tsB5ygMg?si=YRVgj1ZB-Z_TRNvb) which are spread across this document.
+
+- Butterfly(Try doing weighted butterfly with weight on each knee)
 - Standing Hamstring stretch
 - Elevated Pigeon Stretch - On [incline bench](https://youtu.be/szFOKnVgGpQ?si=r0IMfaQKljbJeS6P) then progress to [flat bench](https://youtu.be/BmVEn3LfHcg?si=ZDSdN6h4TePiPIj8) or stick to floor (30 sec per side) 
 - [Cossack Squat](https://youtu.be/fyAl4o1BGVo?si=OalBzfY8-KxgS7qA)
 - [Forward Fold Stretch](https://youtu.be/goN4rWbQUn4?si=pPni5D3dJWgLUboT) 
 - [Standing Pancake](https://youtu.be/4TU9K40LZ6A?si=kWxpXgb7wdZ35HQO)
-- **[Cable Assisted Pancake](https://youtu.be/n6N2-hhbQmw?si=ljxeT4mgAdF0ls8K)**(Low Angle) /[Regular Pancake](https://youtu.be/B1_YA47gtm0?si=_oBDpaLBejKI-8mV) - 50lb/50lb/50lb
+- **[Cable Assisted Pancake](https://youtu.be/xgU1YYHwprQ?si=N0aX9UVVJqDLvvrS)**(Low Angle) /[Regular Pancake](https://youtu.be/B1_YA47gtm0?si=_oBDpaLBejKI-8mV) - 50lb/50lb/50lb
 - [Full split](https://youtu.be/hsNvqUmCAAo?si=SbGmouCgXsZ44_tJ) 
 - [Supine Figure 4 Stretch](https://youtu.be/xVq2-g_leTI?si=ww6BkkfN_oYEWmdC)(Not Required for Split) - keep back flat do at start for running days and at end for non running days.
 
@@ -362,7 +370,7 @@ Static stretches can be active or passive with external force like maybe a plank
 	- After building up from single leg back extension and doing this consistently then do [rotating variation](https://youtu.be/KJwARxV9a6g?si=4C--YLWJnUcFaMmx) once doing consistent strength PR.
 	- Besides doing on back extension machine can do [Lateral Flexion on Stability Ball](https://youtu.be/FrohQ--m7fs?si=Z4akKJnru0ut8S8X)
 - **[Single-Arm Behind-Back Cable Lateral Raise](https://www.youtube.com/watch?v=y4Djk_G0yEg)**(Low Angle) – 10lb/10lb/10lb
-- **Jefferson Curl Barbell/Kettlebell** - 20lb/20lb/20lb
+- **[KB Jefferson Curls](https://www.youtube.com/watch?v=y80cxEpuYEU)/[Reverse Jefferson Curls](https://www.youtube.com/watch?v=RhE5EIb-ZMg)** - 10lb/10lb/10lb
 
 ##### Lower
 - **[Nordic Hamstring Curl](https://youtu.be/PcxNRBnfBd0?si=_EnPiuwgF3Rx0uo4)** (Practice on incline bench with tib bar 45lb) - Bodyweight
@@ -372,50 +380,6 @@ Static stretches can be active or passive with external force like maybe a plank
 	3. hand on wall pistol squat
 	4. **Barbell Pistol Squat**
 5. **Dumbbell ATG Split Squat** - 10lb/10lb/10lb 
-
-
-#### Optimal Exercise Pairing
-##### Best Pairing - Push
-- **Landmine Z Press** + **Single-Arm Chest Press** + **Landmine Anti-Rotations** 
-- **Arnold Press** + **Landmine Russian Twist** 
-- **Incline Dumbbell Bench/Floor Press** + **Landmine Rotational Press** + **Barbell Clean Jerk Press** 
-- **Wide Dip** + **Chest Fly**
-
-##### Best Pairing - Pull
-- **Single-Leg RDL** + **Narrow-Grip Pull-Up/Chin-Up** + **Back Extension** 
-- **Zottman Curl** + **Super ROM**  + **Kneeling Cable Crunch** 
-- **Lateral Head Single-Arm Tricep Extension** + **Single-Arm Behind-Back Cable Lateral Raise** + **Cable Pancake Stretch**  
-- **Rear Delt Fly** +  **Pallof Press** + **Single-Leg RDL**
-- **Rear Delt Fly** + **Narrow-Grip Pull-Up/Chin-Up** + **Back Extension** 
-- **Reverse Crunch** + **Zottman Curl** + **Super ROM**
-- **Rear Delt Fly** + **Single-Arm Behind-Back Cable Lateral Raise** +  **Lateral Head Single-Arm Tricep Extension**
-
-##### Best Pairing - Legs
-###### Session 1
-- **Hack Squat**  + **Bulgarian Split Squat**  + **Band Single-Leg Barbell Squat**
-- **Kettlebell Sumo Squat** + **Walking Barbell/Zercher Lunge** + **B-Squat**
-- **Hack Squat**/**Kettlebell Sumo Squat**  + **Band Single-Leg Squat** + **Single Leg Press**
-- **B-Squat** + **Walking Barbell/Zercher Lunge** + **Band Single-Leg Barbell Squat** 
-
-###### Session 2
-- **Cable Pull Through** + **Tib Bar Raise
-- **Hip Thrust** + **Cable Hip Extension** + **Tib Bar Raise**
-
-###### Session 3
-- **Trap Bar Squat Jump** + **Cable Side Kick** + **Band Scarecrow Raises** 
-- **Cable Hip Flexion** + **Abduction Machine** + **Leg Extension** 
-
-##### Best Pairing - Full Body
-- **Trap Bar Squat Jump** + **Clean Jerk Press** + **Sled Lateral Pull** + **Pallof Press**
-- **B-Squat / Single-Leg Press** + **Arnold Press** + **Kettlebell Base Row** + **Reverse Crunch**
-- **Single-Leg RDL** + **Dumbbell Floor Press**/**Incline Dumbbell Bench Press** + **Single-Arm Tricep Extension** + **Landmine Anti-Rotations** or **Pallof Press** + **Super ROM**
-- **Hack Squat / Cable Goblet Sumo Squat** + **Incline Dumbbell Bench Press** + **Suitcase March** + **Landmine Anti-Rotations**
-- **Hip Thrust / Cable Hip Extension** + **Wide Dip** + **Rear Delt Fly** + **Bottom-Up Kettlebell Carry**
-- **Bulgarian Split Squat / Walking Zercher Lunge** + **Single-Arm Chest Press** + **Pull-Up/Chin-Up** + **Back Extension**
-
-##### Best Pairing - To Build Too
-- **Cable Pancake Stretch** + **Side Lateral QL Extension** + **Jefferson Curl**
-
 
 ## Home Training 
 ##### Balance Board Programming  

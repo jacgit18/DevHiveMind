@@ -55,6 +55,14 @@ High rep since short range of movement also try on wedge down stairs
 [Shin Splints Stretches And Exercises - Feel Better FAST! - YouTube](https://youtu.be/olpUrL-w2qg?si=MqXCdiId_KdLBn2I)
 
 
+[🎥 Reverse Hyperextensions - Incline Bench - YouTube](https://www.youtube.com/watch?v=Vr3FYsX6zRE)
+
+[Glute ham raise on back extension - YouTube](https://www.youtube.com/watch?v=-DLrUNl30U4)
+
+
+
+[How To Perform HAMMER CURLS \| Biceps Exercise Tutorial - YouTube](https://youtu.be/BRVDS6HVR9Q?si=1ZzT73ed4fM-vwLt) 
+
 | Body  | Exercise                                                 | Tried | Focus  | Type       | W(lb/kg) |                      | Priority | Duration | Sets | AltType    | Tried | Alt W(lb/kg) |
 | ----- | -------------------------------------------------------- | ----- | ------ | ---------- | -------- | -------------------- | -------- | -------- | ---- | ---------- | ----- | ------------ |
 | Core  | [[Core#^6516d4\|Russian Twists]]                         | Yes   | RC     | Kettlebell | 20       | Rotational           | Highest  | 00:00:20 | 3    | MediBall   |       | 0            |
