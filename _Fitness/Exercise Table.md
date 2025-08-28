@@ -51,6 +51,11 @@ color purple
 [Patrick Step - YouTube](https://youtu.be/jAbO12BipQU?si=baSPYfaK9FNNmPXa)
 High rep since short range of movement also try on wedge down stairs 
 
+ [Kettlebell Snatch](https://www.youtube.com/embed/Pm-b2XFeABA?feature=oembed)
+
+ [Curtsy Lunge](https://www.youtube.com/watch?v=RvDcKx9KsD8)
+
+ [Halo Lunge Twist](https://www.youtube.com/watch?v=kt97CnwNZrE&list=TLPQMTUxMjIwMjSqjLz-Yp-KTQ&index=3)
 
 [Shin Splints Stretches And Exercises - Feel Better FAST! - YouTube](https://youtu.be/olpUrL-w2qg?si=MqXCdiId_KdLBn2I)
 

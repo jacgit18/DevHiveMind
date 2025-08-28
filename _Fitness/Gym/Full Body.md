@@ -29,7 +29,7 @@ dg-publish:
 - Around the World  
     - [KB Around the World](https://www.youtube.com/watch?v=N4mMVG8S5Kg)
 - Zercher Squat ^765b0b
-	- ![](https://www.youtube.com/watch?v=nwx6Ip7hd3I)
+	- [](https://www.youtube.com/watch?v=nwx6Ip7hd3I)
 
 
 [B-Stance Zercher Squat](https://youtu.be/71l8K2Q9_6s?si=ojVXnGw-JDK4va5N)
@@ -38,15 +38,15 @@ dg-publish:
 - Zercher Deadlift ^b30c79
 	- [](https://www.youtube.com/watch?v=lPfveuUIkQY)
 - Zercher Lunge ^4b1677
-	- ![](https://www.youtube.com/watch?v=VOpO2BjcJSU)
+	- [](https://www.youtube.com/watch?v=VOpO2BjcJSU)
 - Halo Lunge Twist(**Kettlebell**) ^7ecf05
-	- ![](https://www.youtube.com/watch?v=kt97CnwNZrE&list=TLPQMTUxMjIwMjSqjLz-Yp-KTQ&index=3)
+	- [Halo Lunge Twist](https://www.youtube.com/watch?v=kt97CnwNZrE&list=TLPQMTUxMjIwMjSqjLz-Yp-KTQ&index=3)
 - Curtsy Lunge(_**Dumbbell**_)
-	- ![](https://www.youtube.com/watch?v=RvDcKx9KsD8)
+	- [Curtsy Lunge](https://www.youtube.com/watch?v=RvDcKx9KsD8)
 - Landmine Press
 	- ![](https://www.youtube.com/watch?v=6cSTRPhpubs)
 - Kettlebell Snatch   ^8b48af
-    - ![Kettlebell Snatch](https://www.youtube.com/embed/Pm-b2XFeABA?feature=oembed)
+    - [Kettlebell Snatch](https://www.youtube.com/embed/Pm-b2XFeABA?feature=oembed)
 - Seated Cable Rowing  ^05e3ec
 	- [](https://www.youtube.com/watch?v=fxfhQMbATCw&list=TLPQMTUxMjIwMjSCoRXDSuxPzQ&index=8)
 	- Weighted
