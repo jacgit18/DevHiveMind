@@ -59,7 +59,9 @@ High rep since short range of movement also try on wedge down stairs
 
 [Glute ham raise on back extension - YouTube](https://www.youtube.com/watch?v=-DLrUNl30U4)
 
+[Banded Deadbug - YouTube](https://youtu.be/bmB-QsTNTMQ?si=B0JBSDbD2_300rEB)
 
+[Hanging Knee Raise - YouTube](https://youtu.be/RD_A-Z15ER4?si=sgl3EuUCG3gCZl60)
 
 [How To Perform HAMMER CURLS \| Biceps Exercise Tutorial - YouTube](https://youtu.be/BRVDS6HVR9Q?si=1ZzT73ed4fM-vwLt) 
 
