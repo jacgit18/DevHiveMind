@@ -154,24 +154,26 @@ Alternate each month keeping the week training phase in to account the weights f
 16. **[[Personal Trainer#Priority Static Stretch to develop splits| Static Stretching]]**
 
 ### Full Body Day Part 2 Sunday Sprint Day
-1. **Dynamic Stretching**
-2. Cable Pec Minor Fly/Chest Fly ✅ (warm-up / activation)  
-3. Prone Leg Curl ✅  
-4. Halo (shoulder mobility + stability)  | | Super ROM Six-Ways Raise (deltoid health)  ✅
-5. Back Extension (posterior chain, low back protection)  
-6. Sled Push/Pull (conditioning + legs)  
-7. Zottman Curl (biceps + forearms)  - No Chin-ups on this day 
-8. Bench Reverse Crunch / Dragonfly / Cable Reverse Crunch
-9. Cable WoodChopper
-10. Pallof Press (anti-rotation core) - can be done with bands  📈
-11. Cable Assisted Pancake 📈
-12. Unilateral RDL 📈
-13. **Static Stretching**
+1. ***Airdyne Bike/Row Machine (horizontal pull)***
+2. **Dynamic Stretching**
+3. Cable Pec Minor Fly/Chest Fly ✅ (warm-up / activation)  
+4. Prone Leg Curl ✅  
+5. Halo (shoulder mobility + stability)  | | Super ROM Six-Ways Raise (deltoid health)  ✅
+6. Back Extension (posterior chain, low back protection)  
+7. Sled Push/Pull (conditioning + legs)  
+8. Zottman Curl (biceps + forearms)  - No Chin-ups on this day 
+9. Bench Reverse Crunch / Dragonfly / Cable Reverse Crunch
+10. Cable WoodChopper
+11. Pallof Press (anti-rotation core) - can be done with bands  📈
+12. Cable Assisted Pancake 📈
+13. Unilateral RDL 📈
+14. **Static Stretching**
 ### Lower Body Day Part 1 Monday(MMA)
-1. **Dynamic Stretching**
-2. Prone Leg Curl ✅  
-3. Back Extension (posterior chain, low back protection)  
-4. Dumbbell Bulgarian Split Squat  
+1. ***Airdyne Bike/Row Machine (horizontal pull)***
+2. **Dynamic Stretching**
+3. Prone Leg Curl ✅  
+4. Back Extension (posterior chain, low back protection)  
+5. Dumbbell Bulgarian Split Squat  
    - *alt:* Walking Barbell Lunge / Zercher Lunge  
 5. Deadlift  
 6. Hack Squat *or* Leg Press | | Curlbar Behind Back Kneeling Squat on Toes || B-Stance Zercher Squat
@@ -180,17 +182,18 @@ Alternate each month keeping the week training phase in to account the weights f
 9. Kettlebell Leg Raise📈
 10. **Static Stretching**
 ### Upper Body Day Part 1 Tuesday Sprint Day - Meal Prep Day 2
-1. **Dynamic Stretching**
-2. Cable Pec Minor Fly/Chest Fly ✅ (warm-up / activation)  
-3. Halo (shoulder mobility + stability)  | | Super ROM Six-Ways Raise (deltoid health)  ✅
-4. KB Around the World
-5. Chest/Bench Press  
-6. Tricep Dip
-7. Shoulder Press | | Suitcase Bottom Up March
-8. Zottman Curl (biceps + forearms)  - No Chin-ups on this day 
-9. Cable Assisted Pancake 📈
-10. Kneeling Cable Crunch  📈
-11. Pallof Press (anti-rotation core) - can be done with bands  📈
+1. ***Airdyne Bike/Row Machine (horizontal pull)***
+2. **Dynamic Stretching**
+3. Cable Pec Minor Fly/Chest Fly ✅ (warm-up / activation)  
+4. Halo (shoulder mobility + stability)  | | Super ROM Six-Ways Raise (deltoid health)  ✅
+5. KB Around the World
+6. Chest/Bench Press  
+7. Tricep Dip
+8. Shoulder Press | | Suitcase Bottom Up March
+9. Zottman Curl (biceps + forearms)  - No Chin-ups on this day 
+10. Cable Assisted Pancake 📈
+11. Kneeling Cable Crunch  📈
+12. Pallof Press (anti-rotation core) - can be done with bands  📈
 
 ### Lower Body Day Part 2 Wednesday(Optional MMA)
 1. ***Airdyne Bike/Row Machine (horizontal pull)***

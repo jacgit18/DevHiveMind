@@ -34,17 +34,17 @@ Get to your reps to 15 sec each try to extend for 45 sec MAX
 	- [How to PROPERLY Deadlift for Growth (5 Easy Steps) - YouTube](https://www.youtube.com/watch?v=XxWcirHIwVo&t=315s)
 	- [How to Perform a Deficit Deadlift - YouTube](https://www.youtube.com/watch?v=hnuPZZfeRzs)
 - Sumo Squat
-	- ![](https://www.youtube.com/watch?v=vBA3vyOxJv0)
+	- [](https://www.youtube.com/watch?v=vBA3vyOxJv0)
 
 
-![How To Preform The Double Racked Kettlebell B Stance Squat - YouTube](https://youtu.be/7On3si5XswU?si=goXbSM5ndEYNu-Qe) ^eadbc3
+[How To Preform The Double Racked Kettlebell B Stance Squat - YouTube](https://youtu.be/7On3si5XswU?si=goXbSM5ndEYNu-Qe) ^eadbc3
 
 [B Stance Squat](https://youtu.be/5uFUvFXhp7U?si=3PGzZ_XSqbFGPbqN)
 
 - Hip Thrust (_Barbell_) ^2559bb
 	- [](https://www.youtube.com/watch?v=76t0z3Tdx6Q)
 - Kettlebell Rotational Clean
-	- ![](https://www.youtube.com/watch?v=Iofsc9ssQPE)
+	- [](https://www.youtube.com/watch?v=Iofsc9ssQPE)
 - Bulgarian Split Squat  
     - [Bulgarian Split Squat](https://www.youtube.com/watch?v=vgn7bSXkgkA)
 - Kettlebell Deadlift
