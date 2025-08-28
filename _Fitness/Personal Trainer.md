@@ -303,10 +303,10 @@ All leg cable excercise are done at a low angle. Avoid squatting with running sh
 1. **Hack Squat**(Back/Front) – 90lb/180lb/300lb - if ankles begin to lift move feet up
 2. **Barbell Squat/Zercher B-Squat** - Incline High Bar(on trap muscle)  - 50lb
 3. **Dumbbell Bulgarian Split Squat/Prone Leg Curl** (Try [elevated](https://youtu.be/DXK-VbFE6ic?si=NHqOeitXD0h_YQsr) front leg variation also use [leg curl roller](https://youtu.be/VC5kbLSuo30?si=NLitkOhL50votRUC)) - 20lb/60lb half sets
-4. **Kneeling Squat on toes with curlbar/Dumbbell behind** - 45lb maybe higher
+4. **Kneeling Squat on toes with curlbar/Dumbbell behind** - 45lb/45lb/45lb
 5. **Unilateral/Bilateral Leg Press** – 90lb/180lb/180lb | 180lb/360lb/500lb
-6. **Walking Barbell Lunge/Zercher Lunge** – 20lb
-7. **Kettlebell [B Stance Squat](https://youtu.be/5uFUvFXhp7U?si=3PGzZ_XSqbFGPbqN)/Sumo** - 20lb
+6. **Walking Barbell Lunge/Zercher Lunge** – 20lb/20lb/20lb
+7. **Kettlebell [B Stance Squat](https://youtu.be/5uFUvFXhp7U?si=3PGzZ_XSqbFGPbqN)/Sumo** - 20lb/20lb/20lb
 8. **[Roman Chair Hip Abduction](https://youtu.be/j5HWZOfIePI?si=EsYf8Gg0rFO16y-p)** - Bodyweight/10lb/10lb/10lb 
 9. ~~[Elevated Smith Machine Lunge](https://youtu.be/Yp5O9Cz6Ajg?si=bFGCfbzNqt_JobTA) - try [Elevated Lunge](https://youtu.be/OVFHK2Iev70?si=oiRNDNHznSrNP_RC) with dumbbell at max 40lb to 60lb then switch to free barbell~~
 
