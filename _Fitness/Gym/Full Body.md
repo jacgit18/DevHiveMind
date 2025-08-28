@@ -32,7 +32,7 @@ dg-publish:
 	- ![](https://www.youtube.com/watch?v=nwx6Ip7hd3I)
 
 
-![B-Stance Zercher Squat - YouTube](https://youtu.be/71l8K2Q9_6s?si=ojVXnGw-JDK4va5N)
+[B-Stance Zercher Squat](https://youtu.be/71l8K2Q9_6s?si=ojVXnGw-JDK4va5N)
 
 
 - Zercher Deadlift ^b30c79

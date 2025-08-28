@@ -174,7 +174,7 @@ Alternate each month keeping the week training phase in to account the weights f
 4. Dumbbell Bulgarian Split Squat  
    - *alt:* Walking Barbell Lunge / Zercher Lunge  
 5. Deadlift  
-6. Hack Squat *or* Leg Press | | 
+6. Hack Squat *or* Leg Press | | Curlbar Behind Back Kneeling Squat on Toes || B-Stance Zercher Squat
 7. Hip Thrust (glutes focus)  
 8. Trap Bar Squat Jump (power finisher)  
 9. Kettlebell Leg Raise📈
@@ -309,7 +309,7 @@ All leg cable excercise are done at a low angle. Avoid squatting with running sh
 4. **Kneeling Squat on toes with curlbar/Dumbbell behind** - 45lb/45lb/45lb
 5. **Unilateral/Bilateral Leg Press** – 90lb/180lb/180lb | 180lb/360lb/500lb
 6. **Walking Barbell Lunge/Zercher Lunge** – 20lb/20lb/20lb
-7. **Kettlebell [B Stance Squat](https://youtu.be/5uFUvFXhp7U?si=3PGzZ_XSqbFGPbqN)/Sumo** - 20lb/20lb/20lb
+7. **KB [B Stance Squat](https://youtu.be/5uFUvFXhp7U?si=3PGzZ_XSqbFGPbqN)/Sumo [Zercher](https://www.youtube.com/watch?v=71l8K2Q9_6s)** - 20lb/20lb/20lb
 8. **[Roman Chair Hip Abduction](https://youtu.be/j5HWZOfIePI?si=EsYf8Gg0rFO16y-p)** - Bodyweight/10lb/10lb/10lb 
 9. ~~[Elevated Smith Machine Lunge](https://youtu.be/Yp5O9Cz6Ajg?si=bFGCfbzNqt_JobTA) - try [Elevated Lunge](https://youtu.be/OVFHK2Iev70?si=oiRNDNHznSrNP_RC) with dumbbell at max 40lb to 60lb then switch to free barbell~~
 
