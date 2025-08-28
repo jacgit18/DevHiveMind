@@ -15,7 +15,10 @@ dg-publish:
 
 ![THE COMPLETE RESISTANCE BAND EXERCISE GUIDE](https://www.youtube.com/watch?v=L08vWPkMftQ&utm_source=chatgpt.com)
 
+[Resistance Band Russian Twists - YouTube](https://www.youtube.com/watch?v=kI2H5xGnxcM)
 
+
+[Russian Twists](https://www.youtube.com/watch?v=7XUglHKRyMo)
 ## **General Notes:**
 - Many of these movements can be done with either bands or cables.
 - For **alternating limb** exercises, use **time-based sets** (e.g., 1 minute).

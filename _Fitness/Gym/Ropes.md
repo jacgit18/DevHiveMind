@@ -17,9 +17,9 @@ dg-publish:
 
 ### Cardio Calisthenic
 - Rope Slams
-	- ![](https://www.youtube.com/watch?v=o_1l_6D21z8)
+	- [](https://www.youtube.com/watch?v=o_1l_6D21z8)
 - Alternating Waves(Battle Ropes) ^64091e
-	- ![](https://www.youtube.com/watch?v=ZujykKeVZpM&list=TLPQMTUxMjIwMjSCoRXDSuxPzQ&index=12)
+	- [](https://www.youtube.com/watch?v=ZujykKeVZpM&list=TLPQMTUxMjIwMjSCoRXDSuxPzQ&index=12)
 - Side-to-Side Waves(Battle Ropes) ^164e0e
 	- ![](https://www.youtube.com/watch?v=k4sUC6B2nJo&list=TLPQMTUxMjIwMjSCoRXDSuxPzQ&index=13)
 - Rope Burpees
@@ -29,7 +29,21 @@ dg-publish:
 - Lateral Shuffles with Waves
 	- ![](https://www.youtube.com/watch?v=rifQ2I9iY_o)
 - Battle Rope Jacks
-	- ![](https://www.youtube.com/watch?v=r7Ndi0YYZ-0)
+	- [](https://www.youtube.com/watch?v=r7Ndi0YYZ-0)
 
 
 
+Battle Rope Slams with Squat
+	- ![](https://www.youtube.com/watch?v=NvYlFIawdgk)
+- Lunge with Rope Waves
+	- ![](https://www.youtube.com/watch?v=bPCZY_sG5eA&list=TLPQMTUxMjIwMjTU6oT9G9b_2w&index=3)
+
+
+Core
+
+Rope Circles
+	- ![](https://www.youtube.com/watch?v=O2HVcPD3wKQ)
+- Side Plank Waves
+	- ![](https://www.youtube.com/watch?v=p5y6aMLNFb4)
+- Russian Twist Rope Slams ^fdacde
+	- ![](https://www.youtube.com/watch?v=JBz7PUxDyE4)

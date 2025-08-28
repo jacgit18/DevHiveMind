@@ -14,13 +14,7 @@ dg-publish:
 ---
 ### Dynamic Isometric Calisthenics (No Weights)
 Get to your reps to 15 sec each try to extend for 45 sec MAX
-- Rope Circles
-	- ![](https://www.youtube.com/watch?v=O2HVcPD3wKQ)
-- Side Plank Waves
-	- ![](https://www.youtube.com/watch?v=p5y6aMLNFb4)
-- Russian Twist Rope Slams ^fdacde
-	- ![](https://www.youtube.com/watch?v=JBz7PUxDyE4)
-- Tuck Jumps to Plank ^60b781
+- - Tuck Jumps to Plank ^60b781
 	- [](https://www.youtube.com/watch?v=LCF6rkH9R30)
 - Supine Spinal Twist ^66bd94
 	- ![](https://www.youtube.com/watch?v=mNdJti7ZwKI&pp=ygUMU3BpbmFsIFR3aXN0)
@@ -32,11 +26,11 @@ Get to your reps to 15 sec each try to extend for 45 sec MAX
 	
 - Russian Twists (Medicine Ball/**Kettlebell**) ^6516d4
 	- Levitate heels off floor elbows to back on twist
-	- ![](https://www.youtube.com/watch?v=7XUglHKRyMo)
+	- [Russian Twists](https://www.youtube.com/watch?v=7XUglHKRyMo)
 
 ### Plyometrics(Jumps) Calisthenics
 - V-Up (Medicine Ball)
-	- ![](https://www.youtube.com/watch?v=xuTgCKRSy04)
+	- [](https://www.youtube.com/watch?v=xuTgCKRSy04)
 
 
 
@@ -89,4 +83,4 @@ Get to your reps to 15 sec each try to extend for 45 sec MAX
 
 [Reverse Jefferson Curls](https://www.youtube.com/watch?v=RhE5EIb-ZMg)
 
-![Resistance Band Russian Twists - YouTube](https://www.youtube.com/watch?v=kI2H5xGnxcM) ^c16b16
+[Resistance Band Russian Twists - YouTube](https://www.youtube.com/watch?v=kI2H5xGnxcM) ^c16b16

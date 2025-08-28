@@ -77,12 +77,7 @@ Get to your reps to 15 sec each try to extend for 45 sec MAX
 	 - ![](https://www.youtube.com/watch?v=7yC-oCnWIRc)
 - High Kick Crossover
 	 - ![](https://www.youtube.com/watch?v=w6AlcHbLU7k&pp=ygUSU3F1YXQgdG8gSnVtcCBLaWNr)
-- Battle Rope Slams with Squat
-	- ![](https://www.youtube.com/watch?v=NvYlFIawdgk)
-- Lunge with Rope Waves
-	- ![](https://www.youtube.com/watch?v=bPCZY_sG5eA&list=TLPQMTUxMjIwMjTU6oT9G9b_2w&index=3)
-
-
+- 
 
 
 ![90/90 Hip Switch (Improve Hip Health & Mobility) - YouTube](https://www.youtube.com/watch?v=qq_Z7sAmVrA) ^ee779f
