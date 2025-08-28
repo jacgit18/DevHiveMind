@@ -233,7 +233,7 @@ Anything not on this list is most likely a bad excercise or not worth doing base
 - **[Base Rows](https://youtu.be/Qmw9TKnQ9NY?si=gNe_2K45P71UKz5y)** - 10lb/20lb/30lb
 - **[Suitcase Bottom Up March](https://www.youtube.com/watch?v=TJjRZBpY75I)**(**1x10/2x8**) - 5lb/10lb/20lb 
 - ***[Banded Suitcase](https://youtu.be/J7RX1IemJVE?si=P10xiFwSvUb2sU61) Carry/[March](https://www.youtube.com/watch?v=a9HkuLYNyJ0)*** - 5lb/10lb/20lb(Start with then transition to farmer)
-- Farmer Carry/March - 5lb/10lb/20lb
+- Farmer [Carry](https://www.youtube.com/watch?v=8OtwXwrJizk)/[March](https://www.youtube.com/watch?v=C2I_HsdDVCE) - 5lb/10lb/20lb
 - ~~**Kettlebell Swing** -5lb/10lb/20lb
 - **[Hanging Knee Raise](https://youtu.be/RD_A-Z15ER4?si=BT3gkNFch2bOdEvx)** - bodyweight
 - ***Sled***(try rope pull variation on explosive week **1x10/2x8**) - 20lb/50lb/70lb 

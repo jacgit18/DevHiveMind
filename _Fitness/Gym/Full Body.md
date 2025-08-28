@@ -16,16 +16,16 @@ dg-publish:
 
 ### Weights
 - Turkish Get-Up  ^7d58d7
-    - ![Turkish Get-Up](https://www.youtube.com/embed/sgd8n917Zv0?feature=oembed)
+    - [Turkish Get-Up](https://www.youtube.com/embed/sgd8n917Zv0?feature=oembed)
 
 - Farmer’s Walk(**Kettlebell** / _Barbell_) ^775bc4
-	- ![](https://www.youtube.com/watch?v=8OtwXwrJizk)
+	- [Carry](https://www.youtube.com/watch?v=8OtwXwrJizk)
 - Renegade Row (**Kettlebell**/_**Dumbbell**_) - anti rotation if you don't wont a rotational exercise do
-	- ![](https://www.youtube.com/watch?v=bi1Nf5G86gU)
+	- [](https://www.youtube.com/watch?v=bi1Nf5G86gU)
 - Kettlebell Swing ^bb1837
-	- ![](https://www.youtube.com/watch?v=YSxHifyI6s8)
+	- [](https://www.youtube.com/watch?v=YSxHifyI6s8)
 - Arnold Press(_Barbell_) ^569c1a
-	- ![](https://www.youtube.com/watch?v=6Z15_WdXmVw&list=TLPQMTUxMjIwMjQFyJJPDyr2Nw&index=1)
+	- [](https://www.youtube.com/watch?v=6Z15_WdXmVw&list=TLPQMTUxMjIwMjQFyJJPDyr2Nw&index=1)
 - Around the World  
     - ![Around the World](https://www.youtube.com/watch?v=N4mMVG8S5Kg)
 - Zercher Squat ^765b0b
@@ -36,7 +36,7 @@ dg-publish:
 
 
 - Zercher Deadlift ^b30c79
-	- ![](https://www.youtube.com/watch?v=lPfveuUIkQY)
+	- [](https://www.youtube.com/watch?v=lPfveuUIkQY)
 - Zercher Lunge ^4b1677
 	- ![](https://www.youtube.com/watch?v=VOpO2BjcJSU)
 - Halo Lunge Twist(**Kettlebell**) ^7ecf05
@@ -48,20 +48,20 @@ dg-publish:
 - Kettlebell Snatch   ^8b48af
     - ![Kettlebell Snatch](https://www.youtube.com/embed/Pm-b2XFeABA?feature=oembed)
 - Seated Cable Rowing  ^05e3ec
-	- ![](https://www.youtube.com/watch?v=fxfhQMbATCw&list=TLPQMTUxMjIwMjSCoRXDSuxPzQ&index=8)
+	- [](https://www.youtube.com/watch?v=fxfhQMbATCw&list=TLPQMTUxMjIwMjSCoRXDSuxPzQ&index=8)
 	- Weighted
 	- ![](https://www.youtube.com/watch?v=UCXxvVItLoM&list=TLPQMTUxMjIwMjSCoRXDSuxPzQ&index=9)
 
 
 - Sled push  ^03bc4f
-	- ![](https://www.youtube.com/watch?v=9XRRXaUpnLk)
+	- [](https://www.youtube.com/watch?v=9XRRXaUpnLk)
 	- ![TOP 7 Prowler Sled Exercises for MAX Muscle & Power - YouTube](https://www.youtube.com/watch?v=QN9bI-3ZLCI)
 
-- ![Dumbbell Farmers March - YouTube](https://www.youtube.com/watch?v=C2I_HsdDVCE) ^0c52b2
+- [Farmers March](https://www.youtube.com/watch?v=C2I_HsdDVCE) ^0c52b2
 
 
-- ![Overhead SQUAT: Full Guide & Tips in Just 2 Min - YouTube](https://www.youtube.com/watch?v=fArbuOoXCOI) ^cbb17a
-- ![Fix your overhead squat mobility fast! - YouTube](https://www.youtube.com/watch?v=7dazkuWGOa8)
+- [Overhead SQUAT: Full Guide & Tips in Just 2 Min - YouTube](https://www.youtube.com/watch?v=fArbuOoXCOI) ^cbb17a
+- [Fix your overhead squat mobility fast! - YouTube](https://www.youtube.com/watch?v=7dazkuWGOa8)
 
 
 - ![How to do a Kettlebell Goblet Squat - YouTube](https://www.youtube.com/watch?v=MWHIs0zxkCU) ^dec99b
