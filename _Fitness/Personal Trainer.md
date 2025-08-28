@@ -145,7 +145,7 @@ Alternate each month keeping the week training phase in to account the weights f
 7. Sled Push/Pull (conditioning + legs)  
 8. Bench Reverse Crunch / Dragonfly / Cable Reverse Crunch
 9. Cable WoodChopper
-10. KB Jefferson Curls/Reverse Jefferson Curls -  - Keep weight low 
+10. KB Jefferson Curls/Reverse Jefferson Curls - Keep weight & reps low 
 11. Ab Roller 📈
 12. Pallof Press (anti-rotation core) - can be done with bands  📈
 13. Cable Assisted Pancake 📈
