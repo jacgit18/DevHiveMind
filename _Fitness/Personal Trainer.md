@@ -155,7 +155,7 @@ Alternate each month keeping the week training phase in to account the weights f
 
 
 ### Full Body Day Part 1 Saturday(Optional MMA) 
-1. ***Airdyne Bike/Row Machine (horizontal pull)***
+1. ***Airdyne Bike || Row Machine (horizontal pull) || Sprint***
 2. **Dynamic Stretching**
 3. Cable Pec Minor Fly/Chest Fly ✅ (warm-up / activation)  
 4. Prone Leg Curl ✅  
@@ -174,7 +174,7 @@ Alternate each month keeping the week training phase in to account the weights f
 17. **[[Personal Trainer#Priority Static Stretch to develop splits| Static Stretching]]**
 
 ### Full Body Day Part 2 Sunday Sprint Day
-1. ***Airdyne Bike/Row Machine (horizontal pull)***
+1. ***Airdyne Bike || Row Machine (horizontal pull) || Sprint***
 2. **Dynamic Stretching**
 3. Cable Pec Minor Fly/Chest Fly ✅ (warm-up / activation)  
 4. Prone Leg Curl ✅  
@@ -190,7 +190,7 @@ Alternate each month keeping the week training phase in to account the weights f
 14. Unilateral RDL 📈
 15. **Static Stretching**
 ### Lower Body Day Part 1 Monday(MMA)
-1. ***Airdyne Bike/Row Machine (horizontal pull)***
+1. ***Airdyne Bike || Row Machine (horizontal pull)***
 2. **Dynamic Stretching**
 3. Prone Leg Curl ✅  
 4. Back Extension (posterior chain, low back protection)  
@@ -202,7 +202,7 @@ Alternate each month keeping the week training phase in to account the weights f
 10. Kettlebell Leg Raise📈
 11. **Static Stretching**
 ### Upper Body Day Part 1 Tuesday Sprint Day - Meal Prep Day 2
-1. ***Airdyne Bike/Row Machine (horizontal pull)***
+1. ***Airdyne Bike || Row Machine (horizontal pull) || Sprint***
 2. **Dynamic Stretching**
 3. Cable Pec Minor Fly/Chest Fly ✅ (warm-up / activation)  
 4. Halo (shoulder mobility + stability)  | | Super ROM Six-Ways Raise (deltoid health)  ✅
@@ -218,7 +218,7 @@ Alternate each month keeping the week training phase in to account the weights f
 14. Pallof Press (anti-rotation core) - can be done with bands  📈
 
 ### Lower Body Day Part 2 Wednesday(Optional MMA)
-1. ***Airdyne Bike/Row Machine (horizontal pull)***
+1. ***Airdyne Bike || Row Machine (horizontal pull)***
 2. **Dynamic Stretching**
 3. Prone Leg Curl ✅  
 4. Back Extension (posterior chain, low back protection)  
@@ -229,7 +229,7 @@ Alternate each month keeping the week training phase in to account the weights f
 9. Kettlebell Leg Raise 📈
 
 ### Upper Body Day Part 2 Thursday Sprint Day(Optional MMA)
-1. ***Airdyne Bike/Row Machine (horizontal pull)***
+1. ***Airdyne Bike || Row Machine (horizontal pull)***
 2. **Dynamic Stretching**
 3. Cable Pec Minor Fly/Chest Fly ✅ (warm-up / activation)    
 4. Halo (shoulder mobility + stability)  | | Super ROM Six-Ways Raise (deltoid health)  ✅
