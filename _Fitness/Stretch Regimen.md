@@ -53,15 +53,6 @@ Start with a dynamic stretch to Improve blood flow and flexibility. End with a s
 
 Aim for 2x8 for most stretches
 
-[High Kick Crossover](https://www.youtube.com/watch?v=w6AlcHbLU7k&pp=ygUSU3F1YXQgdG8gSnVtcCBLaWNr)
-
-[Box Step-Ups](https://www.youtube.com/watch?v=7yC-oCnWIRc)
-
-[Depth Jump](https://www.youtube.com/watch?v=NvSkuYwNxco)
-
-[Broad Jumps](https://www.youtube.com/watch?v=uhz-ia-2UcM)
-
-[Jump Squat Slams](https://www.youtube.com/watch?v=QqQaBu2SzUU)
 
 #### **1. Raise (Increase Body Temp & Heart Rate)**
 _~2–3 minutes total – pick 2–3_ or pick one to do for the whole time.
@@ -236,3 +227,14 @@ _~1–2 minutes total – pick 2_
 - **Muscle-Ups** – progression from explosive pull-ups (for full-body coordination)
 - **Front Lever Progressions** – strengthen posterior chain and core
 - [14 Calisthenics Exercises on Gymnastics Rings](https://www.gornation.com/blogs/news/exercises-gymnastics-rings) 
+
+
+[High Kick Crossover](https://www.youtube.com/watch?v=w6AlcHbLU7k&pp=ygUSU3F1YXQgdG8gSnVtcCBLaWNr)
+
+[Box Step-Ups](https://www.youtube.com/watch?v=7yC-oCnWIRc)
+
+[Depth Jump](https://www.youtube.com/watch?v=NvSkuYwNxco)
+
+[Broad Jumps](https://www.youtube.com/watch?v=uhz-ia-2UcM)
+
+[Jump Squat Slams](https://www.youtube.com/watch?v=QqQaBu2SzUU)
