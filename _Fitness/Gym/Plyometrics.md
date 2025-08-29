@@ -23,18 +23,3 @@ dg-publish:
 - Split Squat Jumps ^aad169
 	- ![](https://www.youtube.com/watch?v=4DMvFDaqIys&list=TLPQMTUxMjIwMjS6La21EtiX1w&index=6)
 
-- Jump Squat Slams
-	- ![](https://www.youtube.com/watch?v=QqQaBu2SzUU)
-- Broad Jumps
-	- ![](https://www.youtube.com/watch?v=uhz-ia-2UcM)
-- Depth Jump
-	 - ![](https://www.youtube.com/watch?v=NvSkuYwNxco)
-- Plyometric Step-Ups
-	 - ![](https://www.youtube.com/watch?v=7yC-oCnWIRc)
-- High Kick Crossover
-	 - ![](https://www.youtube.com/watch?v=w6AlcHbLU7k&pp=ygUSU3F1YXQgdG8gSnVtcCBLaWNr)
-- 
-
-
-
-Dynamic 2x8
