@@ -19,21 +19,15 @@ dg-publish:
 
 
 - Lat Pull Down  ^ba48ce
-	- ![How to do Lat Pulldowns (AVOID MISTAKES!) - YouTube](https://www.youtube.com/watch?v=SALxEARiMkw&list=TLPQMjcwNDIwMjWOBRc2Cey09g&index=3)
+	- [How to do Lat Pulldowns (AVOID MISTAKES!) - YouTube](https://www.youtube.com/watch?v=SALxEARiMkw&list=TLPQMjcwNDIwMjWOBRc2Cey09g&index=3)
 	- ![Single Arm Cable Lat Pulldown Machine - YouTube](https://youtu.be/HBC5s98wXko?si=qOBbyPwLaogAZVYI)
 
-
-- Single Arm Incline Preacher Curl ^6d88c7
-	- ![Incline Bench Preacher Curl - YouTube](https://www.youtube.com/watch?v=02TvQZiVdic)
 
 
 
 
 
 ![Incline Dumbbell Row - YouTube](https://www.youtube.com/watch?v=tZUYS7X50so&list=WL&index=10) ^4b1e6d
-
-Reverse Preacher Curl(3:14)
-![The ONLY 2 Exercises You Need For Massive Arms - YouTube](https://youtu.be/WvlDMlMx1Ok?si=01WmA2xTJVWDG5WI&t=194) ^b1905f
 
 
 
@@ -49,18 +43,15 @@ Reverse Preacher Curl(3:14)
 
 
 
-### Plyometrics(Jumps) Calisthenics
-- Clap push-ups
-
-
-![Equipment Demo - The Landmine Twist - YouTube](https://www.youtube.com/watch?v=SDLLsi98xJY) ^b8a4b6
 
 
 
 
 
 
+Reverse Preacher Curl(3:14)
+![The ONLY 2 Exercises You Need For Massive Arms - YouTube](https://youtu.be/WvlDMlMx1Ok?si=01WmA2xTJVWDG5WI&t=194) ^b1905f
 
-[Dumbbell Skull Crusher - OPEX Exercise Library - YouTube](https://www.youtube.com/watch?v=jO2Jl9eZpXk) ^6beb70
 
-
+- Single Arm Incline Preacher Curl ^6d88c7
+	- ![Incline Bench Preacher Curl - YouTube](https://www.youtube.com/watch?v=02TvQZiVdic)

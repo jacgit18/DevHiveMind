@@ -164,7 +164,7 @@ Alternate each month keeping the week training phase in to account the weights f
 7. Clean & Jerk Press (explosive power)  
 8. Sled Push/Pull (conditioning + legs)  
 9. Bench Reverse Crunch / Dragonfly / Cable Reverse Crunch
-10. Cable WoodChopper
+10. Cable WoodChopper || Landmine Twist
 11. KB Around the World
 12. KB Jefferson Curls/Reverse Jefferson Curls - Keep weight & reps low 
 13. Ab Roller 📈
@@ -184,7 +184,7 @@ Alternate each month keeping the week training phase in to account the weights f
 8. Sled Push/Pull (conditioning + legs)  
 9. Zottman Curl (biceps + forearms)  - No Chin-ups on this day 
 10. Bench Reverse Crunch / Dragonfly / Cable Reverse Crunch
-11. Cable WoodChopper
+11. Cable WoodChopper || Landmine Twist
 12. Pallof Press (anti-rotation core) - can be done with bands  📈
 13. Cable Assisted Pancake 📈
 14. Unilateral RDL 📈
@@ -390,6 +390,7 @@ Static stretches can be active or passive with external force like maybe a plank
 ###### Push
 -  **[Landmine Shoulder Z Press](https://youtu.be/app94pzXOuU?si=kOpaa_oC9HkpkRNv)** - 10lb/10lb/10lb 
 -  **[Landmine Russian Twist](https://youtu.be/Zb-l68-4KFM?si=I8zR3VtIppuQNJk_)** || KB Russian Twist  || [Rope Russian Twist](https://www.youtube.com/watch?v=JBz7PUxDyE4) - 10lb/10lb/10lb
+- **[Landmine Twist](https://www.youtube.com/watch?v=M93HfnAVIl8)** - 10lb/10lb/10lb
 -  ***[Landmine Rotational Press](https://www.youtube.com/watch?v=ONDeomDVlbE) - 10lb/10lb/10lb***
 
 
