@@ -100,7 +100,7 @@ _~2–3 minutes total – pick 4–5_
 - ***Rotational Side Plank*** -  3–4 slow rotations per side
 ##### **Grounded On Front**
 - [Reverse Nordic](https://youtu.be/x2K8uH7dcqg?si=XvJ6HMTCCVyXnpTX) 
-- [[Plyometrics#^01867f|Quadruped Kickbacks]] – **8–10 reps/side**
+- [Quadruped Kickbacks](https://www.youtube.com/watch?v=GO4ZH3L72ck) – **8–10 reps/side**
 - Plank Shoulder Taps – **8–12 taps**
 - Push-Up Hold (top and bottom) – **10s each**
 - [Scapular Push-Ups ](https://www.youtube.com/watch?v=FTpVhBkyIzk&list=TLPQMTUxMjIwMjT8Ie0IftYKYw&index=3) – **10–12 reps with deep breathing**

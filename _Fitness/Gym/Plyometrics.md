@@ -37,19 +37,4 @@ dg-publish:
 
 
 
-
-
-
-[90/90 Hip Switch](https://www.youtube.com/watch?v=qq_Z7sAmVrA) ^ee779f
-
-
-
-[Open Book Stretch](https://www.youtube.com/watch?v=k8bDrMMP9H0) ^4158ea
-
-
-
-
-
-![Quadruped Kickbacks - YouTube](https://www.youtube.com/watch?v=GO4ZH3L72ck) ^01867f
-
-
+Dynamic 2x8
