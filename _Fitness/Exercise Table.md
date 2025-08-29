@@ -49,6 +49,19 @@ color purple
 - [ ] Revisit and edit chart switch to table with current top exercises of focus
 
 
+
+
+Reverse Preacher Curl(3:14)
+
+
+![The ONLY 2 Exercises You Need For Massive Arms - YouTube](https://youtu.be/WvlDMlMx1Ok?si=zkQUEy6z-KkU5OqJ&t=196)
+
+- Single Arm Incline Preacher Curl ^6d88c7
+	- ![Incline Bench Preacher Curl - YouTube](https://www.youtube.com/watch?v=02TvQZiVdic)
+
+
+
+
 [KB Cossack Squat](https://www.youtube.com/watch?v=hDIiCBIM6tE)
 
 [Patrick Step - YouTube](https://youtu.be/jAbO12BipQU?si=baSPYfaK9FNNmPXa)
