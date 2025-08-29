@@ -76,14 +76,14 @@ dg-publish:
 	- ![Incline Bench Preacher Curl - YouTube](https://www.youtube.com/watch?v=02TvQZiVdic)
 
 - Single arm cable curl ^42bc7c
-	- ![Single arm cable bicep curl (D handle) - YouTube](https://www.youtube.com/watch?v=9ZUCFkp-5BI&list=TLPQMjcwNDIwMjVLR3WBrXZbKQ&index=2)
+	- [Single arm cable bicep curl (D handle) - YouTube](https://www.youtube.com/watch?v=9ZUCFkp-5BI&list=TLPQMjcwNDIwMjVLR3WBrXZbKQ&index=2)
 
 
 - Lateral Head Single Arm Cable Tricep Extension
 	- [Lateral Head Single Arm Cable Tricep Extension - YouTube](https://www.youtube.com/watch?v=vVW9LwaahNw) ^88a124
 
 
-![Half Kneeling 1 Arm Thorax Cable Row Coaching and Cues - YouTube](https://youtu.be/afE9JabFqR4?si=Q7eXtrCmYCcxOV_T) ^0a983d
+[Half Kneeling Arm Row](https://youtu.be/afE9JabFqR4?si=Q7eXtrCmYCcxOV_T) ^0a983d
 
 
 
@@ -133,7 +133,7 @@ Reverse Preacher Curl(3:14)
 - Tricep Dip ^a56816
 	- [Bodyweight Tricep Dip](https://www.youtube.com/watch?v=p5Lx2BeVKR4&t=186s)
 
-![CONCENTRATION CURL - YouTube](https://youtu.be/VMbDQ8PZazY?si=P0KE-GIfGr7KOoto) ^40500c
+[CONCENTRATION CURL - YouTube](https://youtu.be/VMbDQ8PZazY?si=P0KE-GIfGr7KOoto) ^40500c
 
 
 [STOP Doing Dumbbell Press Like This (5 Mistakes Slowing Your Chest Gains) - YouTube](https://youtu.be/QsYre__-aro?si=Rnp1pgNN4f3aO-fX) ^db98b7

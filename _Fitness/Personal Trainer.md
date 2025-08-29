@@ -157,19 +157,20 @@ Alternate each month keeping the week training phase in to account the weights f
 1. ***Airdyne Bike/Row Machine (horizontal pull)***
 2. **Dynamic Stretching**
 3. Cable Pec Minor Fly/Chest Fly ✅ (warm-up / activation)  
-4. Prone Leg Curl ✅  
-5. Halo (shoulder mobility + stability)  | | Super ROM Six-Ways Raise (deltoid health)  ✅
-6. Clean & Jerk Press (explosive power)  
-7. Sled Push/Pull (conditioning + legs)  
-8. Bench Reverse Crunch / Dragonfly / Cable Reverse Crunch
-9. Cable WoodChopper
-10. KB Around the World
-11. KB Jefferson Curls/Reverse Jefferson Curls - Keep weight & reps low 
-12. Ab Roller 📈
-13. Pallof Press (anti-rotation core) - can be done with bands  📈
-14. Cable Assisted Pancake 📈
-15. Unilateral RDL 📈
-16. **[[Personal Trainer#Priority Static Stretch to develop splits| Static Stretching]]**
+4. DB Switch Catch ✅ - 1 min
+5. Prone Leg Curl ✅  
+6. Halo (shoulder mobility + stability)  | | Super ROM Six-Ways Raise (deltoid health)  ✅
+7. Clean & Jerk Press (explosive power)  
+8. Sled Push/Pull (conditioning + legs)  
+9. Bench Reverse Crunch / Dragonfly / Cable Reverse Crunch
+10. Cable WoodChopper
+11. KB Around the World
+12. KB Jefferson Curls/Reverse Jefferson Curls - Keep weight & reps low 
+13. Ab Roller 📈
+14. Pallof Press (anti-rotation core) - can be done with bands  📈
+15. Cable Assisted Pancake 📈
+16. Unilateral RDL 📈
+17. **[[Personal Trainer#Priority Static Stretch to develop splits| Static Stretching]]**
 
 ### Full Body Day Part 2 Sunday Sprint Day
 1. ***Airdyne Bike/Row Machine (horizontal pull)***
@@ -330,7 +331,8 @@ All leg cable excercise are done at a low angle. Avoid squatting with running sh
 6. **Walking Barbell Lunge/Zercher Lunge** – 20lb/20lb/20lb
 7. **KB [B Stance Squat](https://youtu.be/5uFUvFXhp7U?si=3PGzZ_XSqbFGPbqN)/Sumo [Zercher](https://www.youtube.com/watch?v=71l8K2Q9_6s)** - 20lb/20lb/20lb
 8. **[Roman Chair Hip Abduction](https://youtu.be/j5HWZOfIePI?si=EsYf8Gg0rFO16y-p)** - Bodyweight/10lb/10lb/10lb 
-9. ~~[Elevated Smith Machine Lunge](https://youtu.be/Yp5O9Cz6Ajg?si=bFGCfbzNqt_JobTA) - try [Elevated Lunge](https://youtu.be/OVFHK2Iev70?si=oiRNDNHznSrNP_RC) with dumbbell at max 40lb to 60lb then switch to free barbell~~
+9. **[Half Kneeling Arm Row](https://youtu.be/afE9JabFqR4?si=Q7eXtrCmYCcxOV_T)** - 10lb/10lb/10lb 
+10. ~~[Elevated Smith Machine Lunge](https://youtu.be/Yp5O9Cz6Ajg?si=bFGCfbzNqt_JobTA) - try [Elevated Lunge](https://youtu.be/OVFHK2Iev70?si=oiRNDNHznSrNP_RC) with dumbbell at max 40lb to 60lb then switch to free barbell~~
 
 #### **Session 2: Hinge + Posterior Chain (Glutes, Hamstrings, Core)**
 1. **Cable/[Sled](https://youtu.be/kZyoyXUYYnQ?si=g3JDFGSTlRTOKzbi) Pull Through** – 30lb/30lb/30lb
