@@ -50,8 +50,9 @@ dg-publish:
 
 
 Reverse Preacher Curl(3:14)
-![The ONLY 2 Exercises You Need For Massive Arms - YouTube](https://youtu.be/WvlDMlMx1Ok?si=01WmA2xTJVWDG5WI&t=194) ^b1905f
 
+
+![The ONLY 2 Exercises You Need For Massive Arms - YouTube](https://youtu.be/WvlDMlMx1Ok?si=zkQUEy6z-KkU5OqJ&t=196)
 
 - Single Arm Incline Preacher Curl ^6d88c7
 	- ![Incline Bench Preacher Curl - YouTube](https://www.youtube.com/watch?v=02TvQZiVdic)
