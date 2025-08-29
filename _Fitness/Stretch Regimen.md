@@ -100,7 +100,7 @@ _~2–3 minutes total – pick 4–5_
 - ***Rotational Side Plank*** -  3–4 slow rotations per side
 ##### **Grounded On Front**
 - [Reverse Nordic](https://youtu.be/x2K8uH7dcqg?si=XvJ6HMTCCVyXnpTX) 
-- [[Lower#^01867f |Quadruped Kickbacks]] – **8–10 reps/side**
+- [[Plyometrics#^01867f|Quadruped Kickbacks]] – **8–10 reps/side**
 - Plank Shoulder Taps – **8–12 taps**
 - Push-Up Hold (top and bottom) – **10s each**
 - [Scapular Push-Ups ](https://www.youtube.com/watch?v=FTpVhBkyIzk&list=TLPQMTUxMjIwMjT8Ie0IftYKYw&index=3) – **10–12 reps with deep breathing**
@@ -116,10 +116,10 @@ _~2–3 minutes total – pick 4–5_
 - Calf Raises - on steps also leaning on bead on toes
 - [Patrick Step](https://youtu.be/jAbO12BipQU?si=oWN-xGlMG-rAokpl)
 - Shoulder Band Pull-Aparts
-- Standing [[Lower#^b0a0df|TIB Raise]]
-- [[Lower#^8a3d01|ISO Calf Raise with Lunge]]
-- [[Lower#^58f942|Lunge ISO Heel Raise]]
-- [[Lower#^da4cd0|Banded Joint Mobilizations]]
+- Standing [[Plyometrics#^b0a0df|TIB Raise]]
+- [[Plyometrics#^8a3d01|ISO Calf Raise with Lunge]]
+- [[Plyometrics#^58f942|Lunge ISO Heel Raise]]
+- [[Plyometrics#^da4cd0|Banded Joint Mobilizations]]
 - Twisted arms
 - [Heel to Toe Rock](https://www.youtube.com/watch?v=FMZX3mpffeE) & [Walk](https://www.youtube.com/watch?v=oQ_-LIbhYgo) 
 - [Knee Circles](https://youtu.be/ROiyq3-2ljY?si=jmBGQDk3fKu4mPAt)
@@ -137,12 +137,12 @@ _~2–3 minutes total – pick 4–5_
 _~3–4 minutes total – choose a flow or 3–5 moves_
 
 ##### **Grounded On Back**
-- [[Lower#^4158ea |“Open Book” Thoracic Twist]] – **6 reps/side**
+- [[Plyometrics#^4158ea|“Open Book” Thoracic Twist]] – **6 reps/side**
 - Dynamic [Supine Windshield Wipers](https://www.youtube.com/watch?v=XxLVEIpb9oY) – **4–6 transitions + 10s pose**
 
 ##### Seated
 - **[Supine Spinal Twist](https://www.youtube.com/watch?v=mNdJti7ZwKI&pp=ygUMU3BpbmFsIFR3aXN0)** - 30 sec
-- [[Lower#^ee779f |90/90 Transitions ]] – **8 reps**
+- [[Plyometrics#^ee779f|90/90 Transitions ]] – **8 reps**
 - Butterfly Hip Rocks → Butterfly Stretch – **8 rocks + 10s stretch**
 
 

@@ -12,54 +12,10 @@ Relates:
 Peer Reviewed: 0
 dg-publish:
 ---
-### Dynamic Isometric Calisthenics (No Weights)
-Get to your reps to 15 sec each try to extend for 45 sec MAX
-- Lizard Pose ^357346
-	- [](https://www.youtube.com/watch?v=gyS68CiPNcY)
+![](https://www.youtube.com/watch?v=lXvA8exxWmE)
 
 
-### Weights
-- Romanian Deadlift(_Barbell_) - focused on levitating  ^308171
-	- [](https://www.youtube.com/watch?v=7j-2w4-P14I)
-- KB Cossack Squat ^3ae11e
-	- [KB Cossack Squat](https://www.youtube.com/watch?v=hDIiCBIM6tE)
-- Kettlebell Step-Up ^c9d45f
-	- ![](https://www.youtube.com/watch?v=lXvA8exxWmE)
 
-- Deadlift(_**Dumbbell**_) 
-	- [](https://www.youtube.com/watch?v=gLogcYIvgRA)
-
-
-- DeadLift ^1260ed
-	- [How to PROPERLY Deadlift for Growth (5 Easy Steps) - YouTube](https://www.youtube.com/watch?v=XxWcirHIwVo&t=315s)
-	- [How to Perform a Deficit Deadlift - YouTube](https://www.youtube.com/watch?v=hnuPZZfeRzs)
-- Sumo Squat
-	- [](https://www.youtube.com/watch?v=vBA3vyOxJv0)
-
-
-[How To Preform The Double Racked Kettlebell B Stance Squat - YouTube](https://youtu.be/7On3si5XswU?si=goXbSM5ndEYNu-Qe) ^eadbc3
-
-[B Stance Squat](https://youtu.be/5uFUvFXhp7U?si=3PGzZ_XSqbFGPbqN)
-
-- Hip Thrust (_Barbell_) ^2559bb
-	- [](https://www.youtube.com/watch?v=76t0z3Tdx6Q)
-- Kettlebell Rotational Clean
-	- [](https://www.youtube.com/watch?v=Iofsc9ssQPE)
-- Bulgarian Split Squat  
-    - [Bulgarian Split Squat](https://www.youtube.com/watch?v=vgn7bSXkgkA)
-- Kettlebell Deadlift
-    - [Deadlift (Kettlebell)](https://www.youtube.com/embed/hinonqqzatk?feature=oembed)
-- Leg Press 
-- Nordic Hamstring Curl
-	- [Nordic Hamstring Curl - YouTube](https://www.youtube.com/watch?v=kjv4WQXWl_A) ^4e02bb
-
-
-- Hack Squat  ^1de02b
-	- [Hack Squat - YouTube](https://www.youtube.com/watch?v=rYgNArpwE7E)
-
-	- [Reverse Hack Squat vs Front Squat \| Difference in Exercises - YouTube](https://www.youtube.com/watch?v=fJhhnCldVks)
-
-### Plyometrics(Jumps) Calisthenics
 - Box Jumps ^3b9f2c
 	- ![](https://www.youtube.com/watch?v=NBY9-kTuHEk)
 - Lateral Skater Jumps ^afd7a0

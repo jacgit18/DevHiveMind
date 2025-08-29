@@ -173,14 +173,13 @@ Alternate each month keeping the week training phase in to account the weights f
 2. **Dynamic Stretching**
 3. Prone Leg Curl ✅  
 4. Back Extension (posterior chain, low back protection)  
-5. Dumbbell Bulgarian Split Squat  
-   - *alt:* Walking Barbell Lunge / Zercher Lunge  
-5. Deadlift  
-6. Hack Squat *or* Leg Press | | Curlbar Behind Back Kneeling Squat on Toes || B-Stance Zercher Squat
-7. Hip Thrust (glutes focus)  
-8. Trap Bar Squat Jump (power finisher)  
-9. Kettlebell Leg Raise📈
-10. **Static Stretching**
+5. DB Bulgarian Split Squat  || Walking Barbell Zercher Lunge 
+6. Deadlift  
+7. Hack Squat *or* Leg Press | | Curlbar Behind Back Kneeling Squat on Toes || B-Stance Zercher Squat
+8. Hip Thrust (glutes focus)  
+9. Trap Bar Squat Jump (power finisher)  
+10. Kettlebell Leg Raise📈
+11. **Static Stretching**
 ### Upper Body Day Part 1 Tuesday Sprint Day - Meal Prep Day 2
 1. ***Airdyne Bike/Row Machine (horizontal pull)***
 2. **Dynamic Stretching**
@@ -200,7 +199,7 @@ Alternate each month keeping the week training phase in to account the weights f
 2. **Dynamic Stretching**
 3. Prone Leg Curl ✅  
 4. Back Extension (posterior chain, low back protection)  
-5. Dumbbell Bulgarian Split Squat  || Walking Barbell Zercher Lunge 
+5. DB Bulgarian Split Squat  || Walking Barbell Zercher Lunge 
 6. Deadlift  
 7. Hack Squat *or* Leg Press (depending on recovery)  
 8. Trap Bar Squat Jump (power finisher)  
