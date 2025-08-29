@@ -198,7 +198,8 @@ _~3–4 minutes total – choose a flow or 3–5 moves_
 - ***Quarter-Kneeling Cossack V Reach*** - keep back leg hovering off floor in a split squat position rotating down towards back foot at a downward angle into the ground.
 
 
-### Plyometrics
+### Plyometrics jumps
+3x10
 #### **4. Potentiate (Prep for Explosive Work)**
 _~1–2 minutes total – pick 2_
 ##### **Grounded On Side**

@@ -21,6 +21,11 @@ dg-publish:
 
 ### Cardio Calisthenic
 
+Jump Rope 
+Shadow boxing 
+bike
+Row machine 
+
 - Side-to-Side Waves(Battle Ropes) ^164e0e
 	- ![](https://www.youtube.com/watch?v=k4sUC6B2nJo&list=TLPQMTUxMjIwMjSCoRXDSuxPzQ&index=13)
 - Rope Burpees

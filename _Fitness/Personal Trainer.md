@@ -315,7 +315,7 @@ Allowed to practice each excercise *here* max twice a week.
 	1. Strength phase 2x8 since like 5 exercises in one
 	2. Hypertrophy 3x10 and avoid explosive phase 
 	3. Prime shoulder with bands
-5. **Halo** 15lb/15lb/20lb
+5. **Halo** - 15lb/15lb/20lb
 6. **Reverse Bench Crunch** - Bodyweight 
 7. **[Cable Woodchopper](https://www.youtube.com/watch?v=mvvu8imyMFs)** - 10lb/10lb/10lb
 8. **[Bayesian Cable Curl](https://youtu.be/4O24gFksZ04?si=poa8Lr-ymzw1-QrR)** - 10lb/10lb/10lb (2 width, 8 height)

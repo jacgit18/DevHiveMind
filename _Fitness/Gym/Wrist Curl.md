@@ -104,3 +104,9 @@ Here’s a **balanced weekly forearm and grip regimen** using the **3 wrist curl
 ![How To: Reverse Seated Wrist Curl - YouTube](https://youtu.be/FW7URAaC-vE?si=rrbZUiV0loPicJB1)
 
 
+
+
+
+![Dumbbell Bench Wrist Curl - YouTube](https://youtu.be/2wPpcJBe03o?si=2jksy77b1xc4f5Pr) ^1156ec
+
+

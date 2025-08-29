@@ -51,6 +51,12 @@ color purple
 
 
 
+
+
+![Incline Dumbbell Row - YouTube](https://www.youtube.com/watch?v=tZUYS7X50so&list=WL&index=10) ^4b1e6d
+
+
+
 Reverse Preacher Curl(3:14)
 
 
@@ -102,14 +108,10 @@ High rep since short range of movement also try on wedge down stairs
 | Full  | [[Plyometrics#^eadbc3\|B-Stance Squat]]                  |       | CM     | Kettlebell | 20       |                      | Highest  | 01:00:00 | 3    | Dumbbell   |       | *20*<br>     |
 | Upper | [[Upper#^b1e482 \|Dead Hang]]                            | Yes   | PG     | Bodyweight | 0        |                      | Highest  | 00:00:30 | 1    | Bodyweight |       | 0            |
 | Upper | Switch Catch                                             | Yes   | EP     | Dumbbell   | 5        |                      | Highest  | 01:00:00 | 1    | Dumbbell   |       | *5*          |
-| Lower | [[Plyometrics#^3b9f2c\|Box Jumps]]                       |       | EP     | Jump       | 0        |                      | Highest  | 00:00:20 | 3    | Jump       |       | *0*          |
 | Upper | [[Upper#^f49369 \|VMX Rope Trainer]]                     |       | PG     | Fixed      | 0        |                      | Highest  | 01:00:00 |      | Fixed      |       | 0            |
 | Upper | Seated Band Row                                          | Yes   | PG     | Band       | 0        |                      | High     | 00:00:20 | 3    | Fixed      | yes   | *0*          |
 | Upper | [[Cardio#^05e3ec\|Seated Cable Row]]                     | Yes   | PG     | Fixed      | 0        |                      | High     | 00:00:20 | 3    | Fixed      | yes   | *0*          |
 | Full  | Jump Rope                                                |       | Cardio | Rope       | 0        |                      | High     | 00:00:20 | 3    | Jump       |       | *0*          |
-| Lower | [[Plyometrics#^aad169\|Split Squat Jumps]]               |       | EP     | Jump       | 0        |                      | Med      | 00:00:20 | 3    | Jump       |       | *0*          |
-| Lower | [[Plyometrics#^afd7a0\|Lateral Skater Jumps]]            |       | EP     | Jump       | 0        |                      | Med      | 00:00:20 | 3    | Jump       |       | *0*          |
-| Full  | [[Upper#^d58de0 \|Rotational Slam]]                      |       | RC     | MediBall   | 20       |                      | Low      | 00:00:20 | 3    | MediBall   |       | 20           |
 | Full  | [[Cardio#^64091e\| Alternating Waves]]                   |       | Cardio | Rope       | 0        |                      | Low      | 00:00:20 | 3    | Rope       |       | *0*          |
 | Full  | [[Cardio#^164e0e\| Side-to-Side Waves]]                  |       | Cardio | Rope       | 0        |                      | Low      | 00:00:20 | 3    | Rope       |       | *0*          |
 ^duration
