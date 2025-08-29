@@ -157,9 +157,9 @@ Alternate each month keeping the week training phase in to account the weights f
 1. ***Airdyne Bike/Row Machine (horizontal pull)***
 2. **Dynamic Stretching**
 3. Cable Pec Minor Fly/Chest Fly ✅ (warm-up / activation)  
-4. DB Switch Catch ✅ - 1 min
-5. Prone Leg Curl ✅  
-6. Halo (shoulder mobility + stability)  | | Super ROM Six-Ways Raise (deltoid health)  ✅
+4. Prone Leg Curl ✅  
+5. Halo (shoulder mobility + stability)  | | Super ROM Six-Ways Raise (deltoid health)  ✅
+6. DB Switch Catch ✅ - 1 min
 7. Clean & Jerk Press (explosive power)  
 8. Sled Push/Pull (conditioning + legs)  
 9. Bench Reverse Crunch / Dragonfly / Cable Reverse Crunch
@@ -178,15 +178,16 @@ Alternate each month keeping the week training phase in to account the weights f
 3. Cable Pec Minor Fly/Chest Fly ✅ (warm-up / activation)  
 4. Prone Leg Curl ✅  
 5. Halo (shoulder mobility + stability)  | | Super ROM Six-Ways Raise (deltoid health)  ✅
-6. Back Extension (posterior chain, low back protection)  
-7. Sled Push/Pull (conditioning + legs)  
-8. Zottman Curl (biceps + forearms)  - No Chin-ups on this day 
-9. Bench Reverse Crunch / Dragonfly / Cable Reverse Crunch
-10. Cable WoodChopper
-11. Pallof Press (anti-rotation core) - can be done with bands  📈
-12. Cable Assisted Pancake 📈
-13. Unilateral RDL 📈
-14. **Static Stretching**
+6. DB Switch Catch ✅ - 1 min
+7. Back Extension (posterior chain, low back protection)  
+8. Sled Push/Pull (conditioning + legs)  
+9. Zottman Curl (biceps + forearms)  - No Chin-ups on this day 
+10. Bench Reverse Crunch / Dragonfly / Cable Reverse Crunch
+11. Cable WoodChopper
+12. Pallof Press (anti-rotation core) - can be done with bands  📈
+13. Cable Assisted Pancake 📈
+14. Unilateral RDL 📈
+15. **Static Stretching**
 ### Lower Body Day Part 1 Monday(MMA)
 1. ***Airdyne Bike/Row Machine (horizontal pull)***
 2. **Dynamic Stretching**
@@ -204,14 +205,15 @@ Alternate each month keeping the week training phase in to account the weights f
 2. **Dynamic Stretching**
 3. Cable Pec Minor Fly/Chest Fly ✅ (warm-up / activation)  
 4. Halo (shoulder mobility + stability)  | | Super ROM Six-Ways Raise (deltoid health)  ✅
-5. KB Around the World
-6. Chest/Bench Press  
-7. Tricep Dip
-8. Arnold Press || Suitcase Bottom Up March || Landmine Shoulder Z Press
-9. Zottman Curl (biceps + forearms)  - No Chin-ups on this day 
-10. Cable Assisted Pancake 📈
-11. Kneeling Cable Crunch  📈
-12. Pallof Press (anti-rotation core) - can be done with bands  📈
+5. DB Switch Catch ✅ - 1 min
+6. KB Around the World
+7. Chest/Bench Press  
+8. Tricep Dip
+9. Arnold Press || Suitcase Bottom Up March || Landmine Shoulder Z Press
+10. Zottman Curl (biceps + forearms)  - No Chin-ups on this day 
+11. Cable Assisted Pancake 📈
+12. Kneeling Cable Crunch  📈
+13. Pallof Press (anti-rotation core) - can be done with bands  📈
 
 ### Lower Body Day Part 2 Wednesday(Optional MMA)
 1. ***Airdyne Bike/Row Machine (horizontal pull)***
@@ -229,17 +231,18 @@ Alternate each month keeping the week training phase in to account the weights f
 2. **Dynamic Stretching**
 3. Cable Pec Minor Fly/Chest Fly ✅ (warm-up / activation)    
 4. Halo (shoulder mobility + stability)  | | Super ROM Six-Ways Raise (deltoid health)  ✅
-5. KB Around the World
-6. Chest/Bench Press  
-7. Chin-up/Pull-up
-8. Tricep Dip
-9. Arnold Press || Suitcase Bottom Up March || Landmine Shoulder Z Press
-10. Bench Reverse Crunch / Dragonfly / Cable Reverse Crunch
-11. Ab Roller 📈
-12. Cable Assisted Pancake 📈
-13. Kneeling Cable Crunch  📈
-14. Pallof Press (anti-rotation core) - can be done with bands  📈
-15. **Static Stretching**
+5. DB Switch Catch ✅ - 1 min
+6. KB Around the World
+7. Chest/Bench Press  
+8. Chin-up/Pull-up
+9. Tricep Dip
+10. Arnold Press || Suitcase Bottom Up March || Landmine Shoulder Z Press
+11. Bench Reverse Crunch / Dragonfly / Cable Reverse Crunch
+12. Ab Roller 📈
+13. Cable Assisted Pancake 📈
+14. Kneeling Cable Crunch  📈
+15. Pallof Press (anti-rotation core) - can be done with bands  📈
+16. **Static Stretching**
 
 
 ## Body Part Specific Programs 
