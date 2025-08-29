@@ -103,7 +103,7 @@ _~2–3 minutes total – pick 4–5_
 ##### **Grounded On Front**
 - [Reverse Nordic](https://youtu.be/x2K8uH7dcqg?si=XvJ6HMTCCVyXnpTX) 
 - [Quadruped Kickbacks](https://www.youtube.com/watch?v=GO4ZH3L72ck) – **8–10 reps/side**
-- Plank Shoulder Taps – **8–12 taps**
+- Plank Shoulder Taps(Also Feet on Swiss-ball variation Anti Rotation) – **8–12 taps**
 - Push-Up Hold (top and bottom) – **10s each**
 - [Scapular Push-Ups ](https://www.youtube.com/watch?v=FTpVhBkyIzk&list=TLPQMTUxMjIwMjT8Ie0IftYKYw&index=3) – **10–12 reps with deep breathing**
 	- Breathe deeply as you push your chest outward, squeezing your shoulder blades together. Then, reverse the motion by pulling your chest inward and separating your shoulder blades, keeping your elbows straight throughout the movement.
@@ -153,7 +153,7 @@ _~3–4 minutes total – choose a flow or 3–5 moves_
 - [T Stand Push Up](https://www.youtube.com/watch?v=9MkDQjuGcxw)
 - [Side Plank with Knee Drive](https://www.youtube.com/watch?v=4ydfLjw8aWE)
 ##### **Grounded On Front**
-- BirdDog
+- BirdDog || [Bird Dog on Swiss Ball](https://www.youtube.com/watch?v=uQpqxubnzPM)(Anti Rotation)
 - **Inchworms** – Stand → walk hands to plank → back up, 5–8 reps
 - **World’s Greatest Stretch** – Deep lunge + rotation opposite side arm in relation to front kneeling knee, 3–5 per side
 - [Dynamic Cat Cow](https://www.youtube.com/watch?v=ESJ6Ghvgr6k) → Hold Cat-Cow Stretch 

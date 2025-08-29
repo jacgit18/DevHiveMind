@@ -85,12 +85,6 @@ dg-publish:
 
 
 
-## **7. BJJ-Specific Anti-Rotation & Base Work** _(Priority: 2–3 – Core reactions to pressure)_
-
-- **Bird Dog with Knee on Ball** – **2**
-- ![Bird Dog on Swiss Ball - YouTube](https://www.youtube.com/watch?v=uQpqxubnzPM)
-
-- **Plank Elbow Taps with Feet on Ball** – **3**
 
 
 
