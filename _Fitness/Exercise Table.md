@@ -48,6 +48,9 @@ color purple
 #todo/Med/Dev 
 - [ ] Revisit and edit chart switch to table with current top exercises of focus
 
+
+[KB Cossack Squat](https://www.youtube.com/watch?v=hDIiCBIM6tE)
+
 [Patrick Step - YouTube](https://youtu.be/jAbO12BipQU?si=baSPYfaK9FNNmPXa)
 High rep since short range of movement also try on wedge down stairs 
 

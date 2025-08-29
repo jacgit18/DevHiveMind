@@ -189,7 +189,7 @@ Alternate each month keeping the week training phase in to account the weights f
 5. KB Around the World
 6. Chest/Bench Press  
 7. Tricep Dip
-8. Shoulder Press | | Suitcase Bottom Up March
+8. Arnold Press || Suitcase Bottom Up March || Landmine Shoulder Z Press
 9. Zottman Curl (biceps + forearms)  - No Chin-ups on this day 
 10. Cable Assisted Pancake 📈
 11. Kneeling Cable Crunch  📈
@@ -200,12 +200,11 @@ Alternate each month keeping the week training phase in to account the weights f
 2. **Dynamic Stretching**
 3. Prone Leg Curl ✅  
 4. Back Extension (posterior chain, low back protection)  
-5. Dumbbell Bulgarian Split Squat  
-   - *alt:* Walking Barbell Lunge / Zercher Lunge  
-5. Deadlift  
-6. Hack Squat *or* Leg Press (depending on recovery)  
-7. Trap Bar Squat Jump (power finisher)  
-8. Kettlebell Leg Raise 📈
+5. Dumbbell Bulgarian Split Squat  || Walking Barbell Zercher Lunge 
+6. Deadlift  
+7. Hack Squat *or* Leg Press (depending on recovery)  
+8. Trap Bar Squat Jump (power finisher)  
+9. Kettlebell Leg Raise 📈
 
 ### Upper Body Day Part 2 Thursday Sprint Day(Optional MMA)
 1. ***Airdyne Bike/Row Machine (horizontal pull)***
@@ -216,7 +215,7 @@ Alternate each month keeping the week training phase in to account the weights f
 6. Chest/Bench Press  
 7. Chin-up/Pull-up
 8. Tricep Dip
-9. Shoulder Press | | Suitcase Bottom Up March
+9. Arnold Press || Suitcase Bottom Up March || Landmine Shoulder Z Press
 10. Bench Reverse Crunch / Dragonfly / Cable Reverse Crunch
 11. Ab Roller 📈
 12. Cable Assisted Pancake 📈

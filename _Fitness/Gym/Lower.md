@@ -21,8 +21,8 @@ Get to your reps to 15 sec each try to extend for 45 sec MAX
 ### Weights
 - Romanian Deadlift(_Barbell_) - focused on levitating  ^308171
 	- [](https://www.youtube.com/watch?v=7j-2w4-P14I)
-- Cossack Squat ^3ae11e
-	- ![](https://www.youtube.com/watch?v=hDIiCBIM6tE)
+- KB Cossack Squat ^3ae11e
+	- [KB Cossack Squat](https://www.youtube.com/watch?v=hDIiCBIM6tE)
 - Kettlebell Step-Up ^c9d45f
 	- ![](https://www.youtube.com/watch?v=lXvA8exxWmE)
 
