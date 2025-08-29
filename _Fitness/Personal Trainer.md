@@ -210,11 +210,12 @@ Alternate each month keeping the week training phase in to account the weights f
 6. KB Around the World
 7. Chest/Bench Press  
 8. Tricep Dip
-9. Arnold Press || Suitcase Bottom Up March || Landmine Shoulder Z Press
-10. Zottman Curl (biceps + forearms)  - No Chin-ups on this day 
-11. Cable Assisted Pancake 📈
-12. Kneeling Cable Crunch  📈
-13. Pallof Press (anti-rotation core) - can be done with bands  📈
+9. Single Arm Lat Pulldown
+10. Arnold Press || Suitcase Bottom Up March || Landmine Shoulder Z Press
+11. Zottman Curl (biceps + forearms)  - No Chin-ups on this day 
+12. Cable Assisted Pancake 📈
+13. Kneeling Cable Crunch  📈
+14. Pallof Press (anti-rotation core) - can be done with bands  📈
 
 ### Lower Body Day Part 2 Wednesday(Optional MMA)
 1. ***Airdyne Bike/Row Machine (horizontal pull)***
@@ -237,13 +238,14 @@ Alternate each month keeping the week training phase in to account the weights f
 7. Chest/Bench Press  
 8. Chin-up/Pull-up
 9. Tricep Dip
-10. Arnold Press || Suitcase Bottom Up March || Landmine Shoulder Z Press
-11. Bench Reverse Crunch / Dragonfly / Cable Reverse Crunch
-12. Ab Roller 📈
-13. Cable Assisted Pancake 📈
-14. Kneeling Cable Crunch  📈
-15. Pallof Press (anti-rotation core) - can be done with bands  📈
-16. **Static Stretching**
+10. Single Arm Lat Pulldown
+11. Arnold Press || Suitcase Bottom Up March || Landmine Shoulder Z Press
+12. Bench Reverse Crunch / Dragonfly / Cable Reverse Crunch
+13. Ab Roller 📈
+14. Cable Assisted Pancake 📈
+15. Kneeling Cable Crunch  📈
+16. Pallof Press (anti-rotation core) - can be done with bands  📈
+17. **Static Stretching**
 
 
 ### Nobody Day Friday  - Meal Prep Day 1
@@ -319,12 +321,13 @@ Allowed to practice each excercise *here* max twice a week.
 8. **[Bayesian Cable Curl](https://youtu.be/4O24gFksZ04?si=poa8Lr-ymzw1-QrR)** - 10lb/10lb/10lb (2 width, 8 height)
 9. **Rear Delt Fly/[DB Chest Supported Rear Delt Fly](https://youtu.be/iCbVhDNpG-Y?si=g-puZtoYX7u57LwT)** - 30lb/50lb/70lb | 20lb/20lb/20lb
 10. **[Incline Prone Lateral Raise](https://youtu.be/Wz1C8NzWg5A?si=epnUd7OS6WC75u1Y&t=112)**/**[Seated Cable Pec Minor Fly](https://youtu.be/sC91H2XLtJc?si=bSV_IhpBVbdADHz2&t=286)**(Better ROM then chest fly Top Angle) - 20lb/20lb/20lb(Machine 5 and 5)
-11. **[Lateral Head Single Arm Tricep Extension](https://www.youtube.com/watch?v=vVW9LwaahNw)**(Top Angle) – 20lb/20lb/20lb
-12. **Back Extension**(try Isometric holds) - bodyweight/15lb/15lb/15lb  
-13. **[Low Cable Goblet Squat](https://youtu.be/f6eI0JI9AYA?si=TTKH4FrAivJYEyd0)**  - 40lb/40lb/40lb
-14. Seated or Standing [Seated Y Cable Raises](https://youtu.be/-yL_BS28hcY?si=oO9QrIO_sv2SF5K1)(Seat Height Low Angle) - 10lb/10lb/10lb(6 width)
-15. Standing [Cable FreeMotion Front Shoulder Raise](https://youtu.be/_bzJ1Yb4XCU?si=v0UUNLSilV6NVM76)(Low Angle) - 10lb/10lb/10lb
-16. Seated or Standing [Bilateral DB Overhead Tricep Extension](https://youtube.com/shorts/b_r_LW4HEcM?si=B1_Zz_2olhNHmPwY) | [Unilateral DB Overhead Tricep Extension](https://youtu.be/F3w6m0aENVQ?si=S2vDhXvRxVRh1MgE) - 20lb/20lb/20lb | 10lb/10lb/10lb 
+11. **[Single Arm Lat Pulldown](https://www.youtube.com/watch?v=SALxEARiMkw&list=TLPQMjcwNDIwMjWOBRc2Cey09g&index=3)** - 40lb/40lb/40lb
+12. **[Lateral Head Single Arm Tricep Extension](https://www.youtube.com/watch?v=vVW9LwaahNw)**(Top Angle) – 20lb/20lb/20lb
+13. **Back Extension**(try Isometric holds) - bodyweight/15lb/15lb/15lb  
+14. **[Low Cable Goblet Squat](https://youtu.be/f6eI0JI9AYA?si=TTKH4FrAivJYEyd0)**  - 40lb/40lb/40lb
+15. Seated or Standing [Seated Y Cable Raises](https://youtu.be/-yL_BS28hcY?si=oO9QrIO_sv2SF5K1)(Seat Height Low Angle) - 10lb/10lb/10lb(6 width)
+16. Standing [Cable FreeMotion Front Shoulder Raise](https://youtu.be/_bzJ1Yb4XCU?si=v0UUNLSilV6NVM76)(Low Angle) - 10lb/10lb/10lb
+17. Seated or Standing [Bilateral DB Overhead Tricep Extension](https://youtube.com/shorts/b_r_LW4HEcM?si=B1_Zz_2olhNHmPwY) | [Unilateral DB Overhead Tricep Extension](https://youtu.be/F3w6m0aENVQ?si=S2vDhXvRxVRh1MgE) - 20lb/20lb/20lb | 10lb/10lb/10lb 
 
 ### Leg Programming 
 All leg cable excercise are done at a low angle. Avoid squatting with running shoes and squat wider as well if issues in squatting form.

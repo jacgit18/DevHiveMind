@@ -18,14 +18,6 @@ dg-publish:
 
 
 
-- Lat Pull Down  ^ba48ce
-	- [How to do Lat Pulldowns (AVOID MISTAKES!) - YouTube](https://www.youtube.com/watch?v=SALxEARiMkw&list=TLPQMjcwNDIwMjWOBRc2Cey09g&index=3)
-	- ![Single Arm Cable Lat Pulldown Machine - YouTube](https://youtu.be/HBC5s98wXko?si=qOBbyPwLaogAZVYI)
-
-
-
-
-
 
 ![Incline Dumbbell Row - YouTube](https://www.youtube.com/watch?v=tZUYS7X50so&list=WL&index=10) ^4b1e6d
 
@@ -37,22 +29,7 @@ dg-publish:
 
 ![Dumbbell Bench Wrist Curl - YouTube](https://youtu.be/2wPpcJBe03o?si=2jksy77b1xc4f5Pr) ^1156ec
 
-![FOREARMS (FLEXORS) - Seated Side Wrist Curls - YouTube](https://youtu.be/9IJfwmjy4xc?si=7wVY7AckqtwIK92c)
-
-![How To: Reverse Seated Wrist Curl - YouTube](https://youtu.be/FW7URAaC-vE?si=rrbZUiV0loPicJB1)
 
 
 
 
-
-
-
-
-
-Reverse Preacher Curl(3:14)
-
-
-![The ONLY 2 Exercises You Need For Massive Arms - YouTube](https://youtu.be/WvlDMlMx1Ok?si=zkQUEy6z-KkU5OqJ&t=196)
-
-- Single Arm Incline Preacher Curl ^6d88c7
-	- ![Incline Bench Preacher Curl - YouTube](https://www.youtube.com/watch?v=02TvQZiVdic)

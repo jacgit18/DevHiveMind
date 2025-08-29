@@ -95,3 +95,12 @@ Here’s a **balanced weekly forearm and grip regimen** using the **3 wrist curl
 - Increase **reps**, then **sets**, then weight over weeks
     
 - Focus on **tempo**: slow down the lowering phase (eccentric)
+
+
+
+
+![FOREARMS (FLEXORS) - Seated Side Wrist Curls - YouTube](https://youtu.be/9IJfwmjy4xc?si=7wVY7AckqtwIK92c)
+
+![How To: Reverse Seated Wrist Curl - YouTube](https://youtu.be/FW7URAaC-vE?si=rrbZUiV0loPicJB1)
+
+
