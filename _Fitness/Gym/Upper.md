@@ -87,10 +87,10 @@ dg-publish:
 
 
 
-![How to Perform Zottman Curls \| Bicep / Forearms Exercise Tutorial - YouTube](https://youtu.be/D7bMA4WEKMI?si=HGj50ikErJzjCp47) ^bee68f
+[How to Perform Zottman Curls \| Bicep / Forearms Exercise Tutorial - YouTube](https://youtu.be/D7bMA4WEKMI?si=HGj50ikErJzjCp47) ^bee68f
 
 - Super Rom Lateral ^767e47
-	- ![Super ROM Lateral Raises - YouTube](https://www.youtube.com/watch?v=IxHCPaByyE0)
+	- [Super ROM Lateral Raises - YouTube](https://www.youtube.com/watch?v=IxHCPaByyE0)
 
 - Two Arm Dumbbell ^cf2720
 	- [How To Do Two Arm Dumbbell Row \| Exercise Demo - YouTube](https://www.youtube.com/watch?v=VsRqipqJ6ng)
@@ -149,19 +149,6 @@ Reverse Preacher Curl(3:14)
 
 ### Plyometrics(Jumps) Calisthenics
 - Clap push-ups
-- Rotational Slam (Medicine Ball) ^d58de0
-	- ![](https://www.youtube.com/watch?v=k67D95cDohc&list=TLPQMTUxMjIwMjSCoRXDSuxPzQ&index=7)
-- Slams (Medicine Ball)
-	- ![](https://www.youtube.com/watch?v=k9W6g9LvXDI&list=TLPQMTUxMjIwMjSCoRXDSuxPzQ&index=6)
-- Wall Chest Throws (Medicine Ball)
-	- ![](https://www.youtube.com/watch?v=VFyQExZjs70&list=TLPQMTUxMjIwMjTU6oT9G9b_2w&index=10)
-- Rotational Throws(Medicine Ball)
-	- ![](https://www.youtube.com/watch?v=o9BC7lgN1bo&list=TLPQMTUxMjIwMjTU6oT9G9b_2w&index=11)
-- Double Arm Waves(Battle Ropes)
-	- ![](https://www.youtube.com/watch?v=u5k-9NLlBZc&list=TLPQMTUxMjIwMjTU6oT9G9b_2w&index=12)
-- Seated Waves(Battle Ropes)
-	- ![](https://www.youtube.com/watch?v=BMS0bK7w4Io&list=TLPQMTUxMjIwMjTU6oT9G9b_2w&index=13)
-
 
 
 ![Equipment Demo - The Landmine Twist - YouTube](https://www.youtube.com/watch?v=SDLLsi98xJY) ^b8a4b6

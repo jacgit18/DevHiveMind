@@ -26,7 +26,6 @@ dg-publish:
 	- [ ] For Lower body focus on 80% strength training and 20% hypertrophy. 
 	- [ ] For Upper body focus on 20% strength training and 80% hypertrophy training to failure with high volume.
 - [ ] Cycle in different exercises every **8-12 weeks** to avoid stagnation also limit range of exercises per session to 11 excercise and limit phone usage to preserve performance.
-- [ ] Do 10 empty explosive reps to reduce injury before doing excercise and for light days focus on bands and cycling in things like [[Stability Ball Workout Plan]] for core strengthening, flexibility, and stretching.
 - [ ] Focus on solo arm exercises until next year also on the on and off days when drained or finding it hard to get moving take Amino Acid.
 - [ ] Practice [[Grip Strength Training]] trying out explosive and strength phases.
 - [ ] If you're not **feeling the target muscle** during an exercise, **reduce momentum** and slow down the movement to improve control and mind-muscle connection and If you feel **off balance**, try **making a fist**—this creates full-body tension and enhances stability during the lift also try **Isometric Holds** like on concentric and eccentric of different exercises.
@@ -106,6 +105,10 @@ The general principles of **training phases** like strength and hypertrophy appl
 - **Hypertrophy**: Add 1 extra song or +2.5 lbs weekly 
 - **Strength**: +5 lbs/week (upper), +10 lbs (lower) 4x8
 - **Injury Rule**: If pain >2/10, regress load or variation
+
+
+### Stability Training 
+- [ ] Follow [[Stability Ball Workout Plan]] to build stability.
 
 ### Recovery
 #todo/BAU/Workout 
@@ -402,10 +405,11 @@ Static stretches can be active or passive with external force like maybe a plank
 5. **Dumbbell ATG Split Squat** - 10lb/10lb/10lb 
 
 ## Home Training 
-##### Balance Board Programming  
+##### Balance Board Stability Program
 - **Beginners:** 2-3x/week (5-10 mins/session) or 2 songs length.
 - **Intermediate/Advanced:** 3-4x/week (10-15 mins/session) 4 songs. 
 - **Elite (MMA/Gymnasts):** 5x/week (integrated into warm-ups or cooldowns).
+
 
 #####  [O2 Trainer Routine](https://www.youtube.com/watch?v=-Es3HOd0PT8&list=PL8NG4An03Sa_ZvEIyHFojC65BhMV08qr1&index=5)
 

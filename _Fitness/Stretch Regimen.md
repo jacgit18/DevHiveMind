@@ -245,8 +245,35 @@ _~1–2 minutes total – pick 2_
 
 - Box Jumps ^3b9f2c
 	- ![](https://www.youtube.com/watch?v=NBY9-kTuHEk)
-- Lateral Skater Jumps ^afd7a0
+
+Lateral Skater Jumps ^afd7a0
 	- ![](https://www.youtube.com/watch?v=Xz27DudBfSs&list=TLPQMTUxMjIwMjS6La21EtiX1w&index=2)
+
+
 - Split Squat Jumps ^aad169
 	- ![](https://www.youtube.com/watch?v=4DMvFDaqIys&list=TLPQMTUxMjIwMjS6La21EtiX1w&index=6)
+
+
+
+- Rotational Slam (Medicine Ball) ^d58de0
+	- ![](https://www.youtube.com/watch?v=k67D95cDohc&list=TLPQMTUxMjIwMjSCoRXDSuxPzQ&index=7)
+
+
+- Slams (Medicine Ball)
+	- ![](https://www.youtube.com/watch?v=k9W6g9LvXDI&list=TLPQMTUxMjIwMjSCoRXDSuxPzQ&index=6)
+
+
+- Wall Chest Throws (Medicine Ball)
+	- ![](https://www.youtube.com/watch?v=VFyQExZjs70&list=TLPQMTUxMjIwMjTU6oT9G9b_2w&index=10)
+
+
+- Rotational Throws(Medicine Ball)
+	- ![](https://www.youtube.com/watch?v=o9BC7lgN1bo&list=TLPQMTUxMjIwMjTU6oT9G9b_2w&index=11)
+
+
+- Double Arm Waves(Battle Ropes)
+	- ![](https://www.youtube.com/watch?v=u5k-9NLlBZc&list=TLPQMTUxMjIwMjTU6oT9G9b_2w&index=12)
+
+- Seated Waves(Battle Ropes)
+	- ![](https://www.youtube.com/watch?v=BMS0bK7w4Io&list=TLPQMTUxMjIwMjTU6oT9G9b_2w&index=13)
 
