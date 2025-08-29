@@ -164,7 +164,7 @@ Alternate each month keeping the week training phase in to account the weights f
 7. Clean & Jerk Press (explosive power)  
 8. Sled Push/Pull (conditioning + legs)  
 9. Bench Reverse Crunch / Dragonfly / Cable Reverse Crunch
-10. Cable WoodChopper || Landmine Twist
+10. Cable WoodChopper || **Landmine Twist**
 11. KB Around the World
 12. KB Jefferson Curls/Reverse Jefferson Curls - Keep weight & reps low 
 13. Ab Roller 📈
@@ -209,7 +209,7 @@ Alternate each month keeping the week training phase in to account the weights f
 5. DB Switch Catch ✅ - 1 min
 6. KB Around the World
 7. Chest/Bench Press  
-8. Tricep Dip
+8. Tricep Dip || **Incline Bilateral/Unilateral DB Overhead Tricep Extension** 
 9. Single Arm Lat Pulldown
 10. Arnold Press || Suitcase Bottom Up March || Landmine Shoulder Z Press
 11. Zottman Curl (biceps + forearms)  - No Chin-ups on this day 
@@ -310,6 +310,7 @@ Allowed to practice each excercise *here* max twice a week.
 6. **Wide Seated Tricep Dip/[Bodyweight Tricep Dip](https://www.youtube.com/watch?v=p5Lx2BeVKR4&t=186s)** - 70lb/90/145lb
 7. **Chest Fly** - 50lb/70lb/100lb
 8. ***[Landmine Anti Rotations](https://www.youtube.com/watch?v=8aXStDm3cOs) - 10lb/10lb/10lb***
+9. Barbell Z Press
 
 
 #### **Session 2: Pull Focus**
@@ -332,7 +333,7 @@ Allowed to practice each excercise *here* max twice a week.
 14. **[Low Cable Goblet Squat](https://youtu.be/f6eI0JI9AYA?si=TTKH4FrAivJYEyd0)**  - 40lb/40lb/40lb
 15. Seated or Standing [Seated Y Cable Raises](https://youtu.be/-yL_BS28hcY?si=oO9QrIO_sv2SF5K1)(Seat Height Low Angle) - 10lb/10lb/10lb(6 width)
 16. Standing [Cable FreeMotion Front Shoulder Raise](https://youtu.be/_bzJ1Yb4XCU?si=v0UUNLSilV6NVM76)(Low Angle) - 10lb/10lb/10lb
-17. Seated or Standing [Bilateral DB Overhead Tricep Extension](https://youtube.com/shorts/b_r_LW4HEcM?si=B1_Zz_2olhNHmPwY) | [Unilateral DB Overhead Tricep Extension](https://youtu.be/F3w6m0aENVQ?si=S2vDhXvRxVRh1MgE) - 20lb/20lb/20lb | 10lb/10lb/10lb 
+17. Seated Incline or Standing [Bilateral DB Overhead Tricep Extension](https://youtube.com/shorts/b_r_LW4HEcM?si=B1_Zz_2olhNHmPwY) | [Unilateral DB Overhead Tricep Extension](https://youtu.be/F3w6m0aENVQ?si=S2vDhXvRxVRh1MgE) - 20lb/20lb/20lb | 10lb/10lb/10lb 
 
 ### Leg Programming 
 All leg cable excercise are done at a low angle. Avoid squatting with running shoes and squat wider as well if issues in squatting form.
