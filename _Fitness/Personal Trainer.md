@@ -237,7 +237,7 @@ Alternate each month keeping the week training phase in to account the weights f
 6. KB Around the World
 7. Chest/Bench Press  
 8. Chin-up/Pull-up
-9. Tricep Dip
+9. Tricep Dip || **Incline Bilateral/Unilateral DB Overhead Tricep Extension** 
 10. Single Arm Lat Pulldown
 11. Arnold Press || Suitcase Bottom Up March || Landmine Shoulder Z Press
 12. Bench Reverse Crunch / Dragonfly / Cable Reverse Crunch
