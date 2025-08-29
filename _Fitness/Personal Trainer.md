@@ -49,10 +49,17 @@ dg-publish:
 - [ ] Between reps and excercise work on visualizing, breathing, moving around, and do mobility excercise or things like squats if doing upper body work. 
 
 ## Current Stack
+Maybe try Transparent Labs EAA and Electrolytes or buy both once a year.   
+
 - Transparent Labs Mass Gainer
 - Sports Research Creatine 
-- Sports Research Salmon Oil 
+- Sports Research Wild Alaskan Sockeye Salmon Oil
 - Sports Research Vitamin D3 + K2 with Coconut MCT Oil
+- Thorne Advanced Testosterone Support
+- Thorne Collagen Fit
+- Thorne Magnesium CitraMate
+- Thorne Multi Vitamin 
+- Thorne Theanine
 
 # Exercises
 >**Barbell Exercises: Upper vs Lower Body Considerations**
