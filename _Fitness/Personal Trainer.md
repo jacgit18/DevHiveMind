@@ -253,6 +253,11 @@ Alternate each month keeping the week training phase in to account the weights f
 - Financial Research 
 - Etc....
 
+## Special Free Week
+### Explosive Plyometric Day
+
+
+
 ## Body Part Specific Programs 
 > For each excercise allowed to do 3 times a week max. Also each fixed gym machine has a freeweight variations you can pivot to if not available.
 
