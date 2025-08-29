@@ -51,7 +51,7 @@ dg-publish:
 ## Current Stack
 Maybe try Transparent Labs EAA and Electrolytes or buy both once a year.   
 
-- Transparent Labs Mass Gainer
+- Transparent Labs Mass Gainer 
 - Sports Research Creatine 
 - Sports Research Wild Alaskan Sockeye Salmon Oil
 - Sports Research Vitamin D3 + K2 with Coconut MCT Oil
@@ -60,6 +60,8 @@ Maybe try Transparent Labs EAA and Electrolytes or buy both once a year.
 - Thorne Magnesium CitraMate
 - Thorne Multi Vitamin 
 - Thorne Theanine
+
+No green band or use something tighter or move higher up leg for deadlift
 
 # Exercises
 >**Barbell Exercises: Upper vs Lower Body Considerations**
