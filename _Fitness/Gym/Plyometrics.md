@@ -36,11 +36,15 @@ dg-publish:
 - 
 
 
-![90/90 Hip Switch (Improve Hip Health & Mobility) - YouTube](https://www.youtube.com/watch?v=qq_Z7sAmVrA) ^ee779f
 
 
 
-![Open Book Stretch for Upper Back Tightness - YouTube](https://www.youtube.com/watch?v=k8bDrMMP9H0) ^4158ea
+
+[90/90 Hip Switch](https://www.youtube.com/watch?v=qq_Z7sAmVrA) ^ee779f
+
+
+
+[Open Book Stretch](https://www.youtube.com/watch?v=k8bDrMMP9H0) ^4158ea
 
 
 
@@ -49,18 +53,3 @@ dg-publish:
 ![Quadruped Kickbacks - YouTube](https://www.youtube.com/watch?v=GO4ZH3L72ck) ^01867f
 
 
-
-![Tib Raise with Eversion Inversion - YouTube](https://youtu.be/5AIrfsgYdKY?si=Q17wxWTyWFty_W_8) ^b0a0df
-
-
-![Iso Calf Raise with Lunge - YouTube](https://youtu.be/I8EfBzUFyMo?si=7LAxf79F9CnMSAxC) ^8a3d01
-
-![Lunge ISO Heel Raise - YouTube](https://youtu.be/Zwy4h0NukbQ?si=AYz0q6ZnrqsT7T6W) ^58f942
-
-![Banded Joint Mobilizations for Stiff Ankles - YouTube](https://youtu.be/ILSbK8RnGdI?si=86ONU_PSK-td-Nlm) ^da4cd0
-
-![Deep Squat w/ Band Single Arm Reach - YouTube](https://www.youtube.com/watch?v=VpBlbi7TNUc) ^ab16e7
-
-![How to do a Sky Squat Reach stretch - YouTube](https://www.youtube.com/watch?v=Zv1wILGzeec)
-
-![T-spine band rotation mobility - YouTube](https://youtu.be/qQCc_zulZpg?si=2iUqiuZb0Zy8DUC8)

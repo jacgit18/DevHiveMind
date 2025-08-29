@@ -137,12 +137,12 @@ _~2–3 minutes total – pick 4–5_
 _~3–4 minutes total – choose a flow or 3–5 moves_
 
 ##### **Grounded On Back**
-- [[Plyometrics#^4158ea|“Open Book” Thoracic Twist]] – **6 reps/side**
+- [Open Book Stretch](https://www.youtube.com/watch?v=k8bDrMMP9H0) – **6 reps/side**
 - Dynamic [Supine Windshield Wipers](https://www.youtube.com/watch?v=XxLVEIpb9oY) – **4–6 transitions + 10s pose**
 
 ##### Seated
 - **[Supine Spinal Twist](https://www.youtube.com/watch?v=mNdJti7ZwKI&pp=ygUMU3BpbmFsIFR3aXN0)** - 30 sec
-- [[Plyometrics#^ee779f|90/90 Transitions ]] – **8 reps**
+- [90/90 Hip Switch](https://www.youtube.com/watch?v=qq_Z7sAmVrA) – **8 reps**
 - Butterfly Hip Rocks → Butterfly Stretch – **8 rocks + 10s stretch**
 
 

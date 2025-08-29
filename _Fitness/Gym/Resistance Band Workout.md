@@ -18,7 +18,13 @@ dg-publish:
 [Resistance Band Russian Twists - YouTube](https://www.youtube.com/watch?v=kI2H5xGnxcM)
 
 
-[Russian Twists](https://www.youtube.com/watch?v=7XUglHKRyMo)
+[Banded Joint Mobilizations for Stiff Ankles - YouTube](https://youtu.be/ILSbK8RnGdI?si=86ONU_PSK-td-Nlm) ^da4cd0
+
+[Deep Squat w/ Band Single Arm Reach - YouTube](https://www.youtube.com/watch?v=VpBlbi7TNUc) ^ab16e7
+
+[How to do a Sky Squat Reach stretch - YouTube](https://www.youtube.com/watch?v=Zv1wILGzeec)
+
+[T-spine band rotation mobility - YouTube](https://youtu.be/qQCc_zulZpg?si=2iUqiuZb0Zy8DUC8)
 ## **General Notes:**
 - Many of these movements can be done with either bands or cables.
 - For **alternating limb** exercises, use **time-based sets** (e.g., 1 minute).

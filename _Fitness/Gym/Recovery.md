@@ -300,3 +300,15 @@ standing chest supported upright low row pulling motion kind of like a reverse d
 
 
 [Rotator cuff 90 degrees external rotation with dumbbell - YouTube](https://youtu.be/EUMsYC_W3aI?si=GFgIUffRsKjwesZU)
+
+
+
+
+
+![Tib Raise with Eversion Inversion - YouTube](https://youtu.be/5AIrfsgYdKY?si=Q17wxWTyWFty_W_8) ^b0a0df
+
+
+![Iso Calf Raise with Lunge - YouTube](https://youtu.be/I8EfBzUFyMo?si=7LAxf79F9CnMSAxC) ^8a3d01
+
+![Lunge ISO Heel Raise - YouTube](https://youtu.be/Zwy4h0NukbQ?si=AYz0q6ZnrqsT7T6W) ^58f942
+
