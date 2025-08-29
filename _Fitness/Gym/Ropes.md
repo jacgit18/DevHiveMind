@@ -41,7 +41,3 @@ Rope Circles
 
 - Side Plank Rope Waves
 	- ![Side Plank Rope Waves](https://www.youtube.com/watch?v=p5y6aMLNFb4)
-
-
-- Russian Twist Rope Slams ^fdacde
-	- ![](https://www.youtube.com/watch?v=JBz7PUxDyE4)
