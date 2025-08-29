@@ -156,7 +156,7 @@ Reverse Preacher Curl(3:14)
 
 
 
-![Marpo Rope Pulling Machine - YouTube](https://youtu.be/hP_xdsp7Ojk?si=HPTb9E4H-3t8iqK_) ^f49369
+
 
 
 ![Dumbbell Skull Crusher - OPEX Exercise Library - YouTube](https://www.youtube.com/watch?v=jO2Jl9eZpXk) ^6beb70

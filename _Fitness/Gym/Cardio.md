@@ -15,6 +15,10 @@ dg-publish:
 
 
 
+
+
+
+
 ### Cardio Calisthenic
 
 - Side-to-Side Waves(Battle Ropes) ^164e0e
@@ -41,3 +45,7 @@ Rope Circles
 
 - Side Plank Rope Waves
 	- ![Side Plank Rope Waves](https://www.youtube.com/watch?v=p5y6aMLNFb4)
+
+
+
+![Marpo Rope Pulling Machine - YouTube](https://youtu.be/hP_xdsp7Ojk?si=HPTb9E4H-3t8iqK_) ^f49369
