@@ -197,6 +197,8 @@ _~3–4 minutes total – choose a flow or 3–5 moves_
 - ***Walking Lunges with Reach*** - Step into lunge, drive *up* powerfully through the front heel, reaching both arms overhead tall. Keep torso upright. (Focuses on extension, hip flexor stretch).
 - ***Quarter-Kneeling Cossack V Reach*** - keep back leg hovering off floor in a split squat position rotating down towards back foot at a downward angle into the ground.
 
+
+### Plyometrics
 #### **4. Potentiate (Prep for Explosive Work)**
 _~1–2 minutes total – pick 2_
 ##### **Grounded On Side**
@@ -238,3 +240,13 @@ _~1–2 minutes total – pick 2_
 [Broad Jumps](https://www.youtube.com/watch?v=uhz-ia-2UcM)
 
 [Jump Squat Slams](https://www.youtube.com/watch?v=QqQaBu2SzUU)
+
+
+
+- Box Jumps ^3b9f2c
+	- ![](https://www.youtube.com/watch?v=NBY9-kTuHEk)
+- Lateral Skater Jumps ^afd7a0
+	- ![](https://www.youtube.com/watch?v=Xz27DudBfSs&list=TLPQMTUxMjIwMjS6La21EtiX1w&index=2)
+- Split Squat Jumps ^aad169
+	- ![](https://www.youtube.com/watch?v=4DMvFDaqIys&list=TLPQMTUxMjIwMjS6La21EtiX1w&index=6)
+

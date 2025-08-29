@@ -75,6 +75,8 @@ High rep since short range of movement also try on wedge down stairs
 
 [How To Perform HAMMER CURLS \| Biceps Exercise Tutorial - YouTube](https://youtu.be/BRVDS6HVR9Q?si=1ZzT73ed4fM-vwLt) 
 
+![](https://www.youtube.com/watch?v=lXvA8exxWmE)
+
 | Body  | Exercise                                                 | Tried | Focus  | Type       | W(lb/kg) |                      | Priority | Duration | Sets | AltType    | Tried | Alt W(lb/kg) |
 | ----- | -------------------------------------------------------- | ----- | ------ | ---------- | -------- | -------------------- | -------- | -------- | ---- | ---------- | ----- | ------------ |
 | Core  | [[Core#^6516d4\|Russian Twists]]                         | Yes   | RC     | Kettlebell | 20       | Rotational           | Highest  | 00:00:20 | 3    | MediBall   |       | 0            |
