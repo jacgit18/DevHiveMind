@@ -153,7 +153,8 @@ Alternate each month keeping the week training phase in to account the weights f
 - [ ] Can do 2 of ✅  but pick one of 📈 depending on day then choose few others for that day session max excercise in session can maybe be 7 each day maybe lower if an MMA day. Maybe Each week pick something different for  📈 to try each one on a more consistent basis but also keep [[Exercise Best Pairing]] in mind.
 - [ ] Run all out 1 min then 1 min coasting so run then a slow walk then back to intense 1 min once able to do a minutes build to 4 min.
 
-### Full Body Day Part 1 Saturday(Optional MMA) - Meal Prep Day 1
+
+### Full Body Day Part 1 Saturday(Optional MMA) 
 1. ***Airdyne Bike/Row Machine (horizontal pull)***
 2. **Dynamic Stretching**
 3. Cable Pec Minor Fly/Chest Fly ✅ (warm-up / activation)  
@@ -244,6 +245,11 @@ Alternate each month keeping the week training phase in to account the weights f
 15. Pallof Press (anti-rotation core) - can be done with bands  📈
 16. **Static Stretching**
 
+
+### Nobody Day Friday  - Meal Prep Day 1
+- Mental Organization day 
+- Financial Research 
+- Etc....
 
 ## Body Part Specific Programs 
 > For each excercise allowed to do 3 times a week max. Also each fixed gym machine has a freeweight variations you can pivot to if not available.

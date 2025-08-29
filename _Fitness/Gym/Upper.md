@@ -47,7 +47,7 @@ Reverse Preacher Curl(3:14)
 
 ![How To: Reverse Seated Wrist Curl - YouTube](https://youtu.be/FW7URAaC-vE?si=rrbZUiV0loPicJB1)
 
-[The Push Press - YouTube](https://www.youtube.com/watch?v=iaBVSJm78ko) ^98dc6c
+
 
 ### Plyometrics(Jumps) Calisthenics
 - Clap push-ups
@@ -61,7 +61,6 @@ Reverse Preacher Curl(3:14)
 
 
 
-![Dumbbell Skull Crusher - OPEX Exercise Library - YouTube](https://www.youtube.com/watch?v=jO2Jl9eZpXk) ^6beb70
+[Dumbbell Skull Crusher - OPEX Exercise Library - YouTube](https://www.youtube.com/watch?v=jO2Jl9eZpXk) ^6beb70
 
 
-[Cable Rope Facepull - YouTube](https://youtu.be/-MODnZdnmAQ?si=0nMt_vSzAvhDLWC6)
