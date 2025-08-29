@@ -48,6 +48,12 @@ dg-publish:
 - [ ] 45 degree Incline bench press over flat bench for my body type as well as **Larsen bench press** on flat bench or incline bench hovering or keeping straight legs to focus more on core.
 - [ ] Between reps and excercise work on visualizing, breathing, moving around, and do mobility excercise or things like squats if doing upper body work. 
 
+## Current Stack
+- Transparent Labs Mass Gainer
+- Sports Research Creatine 
+- Sports Research Salmon Oil 
+- Sports Research Vitamin D3 + K2 with Coconut MCT Oil
+
 # Exercises
 >**Barbell Exercises: Upper vs Lower Body Considerations**
 Upper body barbell exercises—like the bench press—can sometimes place unnecessary strain on the wrists due to the fixed, straight bar grip. If the grip doesn’t align naturally with your wrist and shoulder joints, it can cause discomfort or even injury over time.
@@ -325,10 +331,9 @@ All leg cable excercise are done at a low angle. Avoid squatting with running sh
 1. **Trap Bar Squat Jump** - 20lb/40lb/50lb
 2. **Cable Side Kick** – 20lb/20lb/20lb
 3. **Cable Hip Flexion** – 30lb/30lb/30lb
-4. [Cable Reverse Crunch](https://www.youtube.com/watch?v=b8oUb_6POhQ) - 0lb/0lb/0lb
-5. **Abduction Machine (Outer Thigh)** – 60lb/80lb/130lb
-6. **Band Scarecrow Raises** - 20lb/20lb/20lb
-7. **Leg Extension** – 60lb/90lb/120lb
+4. **Abduction Machine (Outer Thigh)** – 60lb/80lb/130lb
+5. **Band Scarecrow Raises** - 20lb/20lb/20lb
+6. **Leg Extension** – 60lb/90lb/120lb
 
 ### End Session Depending Session Type
 #### Core
@@ -376,6 +381,7 @@ Static stretches can be active or passive with external force like maybe a plank
 	- Besides doing on back extension machine can do [Lateral Flexion on Stability Ball](https://youtu.be/FrohQ--m7fs?si=Z4akKJnru0ut8S8X)
 - **[Single-Arm Behind-Back Cable Lateral Raise](https://www.youtube.com/watch?v=y4Djk_G0yEg)**(Low Angle) – 10lb/10lb/10lb
 - **[KB Jefferson Curls](https://www.youtube.com/watch?v=y80cxEpuYEU)/[Reverse Jefferson Curls](https://www.youtube.com/watch?v=RhE5EIb-ZMg)** - 10lb/10lb/10lb
+- [Cable Reverse Crunch](https://www.youtube.com/watch?v=b8oUb_6POhQ) - 10lb/10lb/10lb
 
 ##### Lower
 - **[Nordic Hamstring Curl](https://youtu.be/PcxNRBnfBd0?si=_EnPiuwgF3Rx0uo4)** (Practice on incline bench with tib bar 45lb) - Bodyweight
