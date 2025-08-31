@@ -337,10 +337,13 @@ Allowed to practice each excercise *here* max twice a week.
 11. **[Single Arm Lat Pulldown](https://www.youtube.com/watch?v=SALxEARiMkw&list=TLPQMjcwNDIwMjWOBRc2Cey09g&index=3)** - 40lb/40lb/40lb
 12. **[Lateral Head Single Arm Tricep Extension](https://www.youtube.com/watch?v=vVW9LwaahNw)**(Top Angle) – 20lb/20lb/20lb
 13. **Back Extension**(try Isometric holds) - bodyweight/15lb/15lb/15lb  
-14. **[Low Cable Goblet Squat](https://youtu.be/f6eI0JI9AYA?si=TTKH4FrAivJYEyd0)**  - 40lb/40lb/40lb
-15. Seated or Standing [Seated Y Cable Raises](https://youtu.be/-yL_BS28hcY?si=oO9QrIO_sv2SF5K1)(Seat Height Low Angle) - 10lb/10lb/10lb(6 width)
-16. Standing [Cable FreeMotion Front Shoulder Raise](https://youtu.be/_bzJ1Yb4XCU?si=v0UUNLSilV6NVM76)(Low Angle) - 10lb/10lb/10lb
-17. Seated Incline or Standing [Bilateral DB Overhead Tricep Extension](https://youtube.com/shorts/b_r_LW4HEcM?si=B1_Zz_2olhNHmPwY) | [Unilateral DB Overhead Tricep Extension](https://youtu.be/F3w6m0aENVQ?si=S2vDhXvRxVRh1MgE) - 20lb/20lb/20lb | 10lb/10lb/10lb 
+
+14. [ball](https://youtu.be/b_Iri5nayDk)
+
+15. **[Low Cable Goblet Squat](https://youtu.be/f6eI0JI9AYA?si=TTKH4FrAivJYEyd0)**  - 40lb/40lb/40lb
+16. Seated or Standing [Seated Y Cable Raises](https://youtu.be/-yL_BS28hcY?si=oO9QrIO_sv2SF5K1)(Seat Height Low Angle) - 10lb/10lb/10lb(6 width)
+17. Standing [Cable FreeMotion Front Shoulder Raise](https://youtu.be/_bzJ1Yb4XCU?si=v0UUNLSilV6NVM76)(Low Angle) - 10lb/10lb/10lb
+18. Seated Incline or Standing [Bilateral DB Overhead Tricep Extension](https://youtube.com/shorts/b_r_LW4HEcM?si=B1_Zz_2olhNHmPwY) | [Unilateral DB Overhead Tricep Extension](https://youtu.be/F3w6m0aENVQ?si=S2vDhXvRxVRh1MgE) - 20lb/20lb/20lb | 10lb/10lb/10lb 
 
 ### Leg Programming 
 All leg cable excercise are done at a low angle. Avoid squatting with running shoes and squat wider as well if issues in squatting form.
