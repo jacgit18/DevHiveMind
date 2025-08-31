@@ -70,7 +70,7 @@ _~5–10 minutes total – pick 3–5 each position_
 - Dynamic [Supine Windshield Wipers](https://www.youtube.com/watch?v=XxLVEIpb9oY) 
 
 ###### Glutes
-- Glute Bridges(Try) 
+- Glute Bridges(Try with [Yoga ball](https://youtu.be/Jxyf92ciPdk) and with band single leg variations) 
 - [Supine Figure 4 Stretch](https://youtu.be/xVq2-g_leTI?si=ww6BkkfN_oYEWmdC)(Not Required for Split) - keep back flat do at start for running days and at end for non running days.
 
 
