@@ -21,6 +21,13 @@ Seven strawberries per smoothie
 | **Mixed Week** (Pasta/Potatoes/Grain) | Mix of Pasta, Potatoes, Grains | Other veggies mentioned (from all previous weeks)                                | Chicken, Pork, Ground Meat |
 | Premade Main Carbs                    | Gnocchi, etc...                |                                                                                  |                            |
 
+if Sweet sauce marinade bake the meat
+
+But  Bake in general to cook your meat and family meat in general for  chicken and pork 
+
+
+
+
 cooking tips and recipes 
 
 multi potato week more versatile 

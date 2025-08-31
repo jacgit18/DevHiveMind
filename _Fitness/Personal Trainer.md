@@ -52,7 +52,7 @@ dg-publish:
 Trader Joes twice a month
 Bjs Once a month
 Whole Foods twice a week
-Any Vegetable market once a month
+Maybe any Vegetable market once a month
 
 ## Current Stack
 Maybe try Transparent Labs EAA and Electrolytes or buy both once a year.   
