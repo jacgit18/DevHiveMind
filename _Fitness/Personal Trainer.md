@@ -47,6 +47,12 @@ dg-publish:
 - [ ] 45 degree Incline bench press over flat bench for my body type as well as **Larsen bench press** on flat bench or incline bench hovering or keeping straight legs to focus more on core.
 - [ ] Between reps and excercise work on visualizing, breathing, moving around, and do mobility excercise or things like squats if doing upper body work. 
 
+
+## Grocery Haul Schedule
+Trader joes twice a month
+Bjs Once a month
+Whole Foods twice a week
+
 ## Current Stack
 Maybe try Transparent Labs EAA and Electrolytes or buy both once a year.   
 
@@ -155,7 +161,7 @@ Alternate each month keeping the week training phase in to account the weights f
 
 
 ### Full Body Day Part 1 Saturday(Optional MMA) 
-1. ***Airdyne Bike || Row Machine (horizontal pull) || Sprint***
+1. ***Airdyne Bike || Row Machine || Sprint || Jump Rope***
 2. **Dynamic Stretching**
 3. Cable Pec Minor Fly/Chest Fly ✅ (warm-up / activation)  
 4. Prone Leg Curl ✅  
@@ -174,7 +180,7 @@ Alternate each month keeping the week training phase in to account the weights f
 17. **[[Personal Trainer#Priority Static Stretch to develop splits| Static Stretching]]**
 
 ### Full Body Day Part 2 Sunday Sprint Day
-1. ***Airdyne Bike || Row Machine (horizontal pull) || Sprint***
+1. ***Airdyne Bike || Row Machine || Sprint || Jump Rope***
 2. **Dynamic Stretching**
 3. Cable Pec Minor Fly/Chest Fly ✅ (warm-up / activation)  
 4. Prone Leg Curl ✅  
@@ -190,7 +196,7 @@ Alternate each month keeping the week training phase in to account the weights f
 14. Unilateral RDL 📈
 15. **Static Stretching**
 ### Lower Body Day Part 1 Monday(MMA)
-1. ***Airdyne Bike || Row Machine (horizontal pull)***
+1. ***Airdyne Bike || Row Machine || Sprint || Jump Rope***
 2. **Dynamic Stretching**
 3. Prone Leg Curl ✅  
 4. Back Extension (posterior chain, low back protection)  
@@ -202,7 +208,7 @@ Alternate each month keeping the week training phase in to account the weights f
 10. Kettlebell Leg Raise📈
 11. **Static Stretching**
 ### Upper Body Day Part 1 Tuesday Sprint Day - Meal Prep Day 2
-1. ***Airdyne Bike || Row Machine (horizontal pull) || Sprint***
+1. ***Airdyne Bike || Row Machine || Sprint || Jump Rope***
 2. **Dynamic Stretching**
 3. Cable Pec Minor Fly/Chest Fly ✅ (warm-up / activation)  
 4. Halo (shoulder mobility + stability)  | | Super ROM Six-Ways Raise (deltoid health)  ✅
@@ -218,7 +224,7 @@ Alternate each month keeping the week training phase in to account the weights f
 14. Pallof Press (anti-rotation core) - can be done with bands  📈
 
 ### Lower Body Day Part 2 Wednesday(Optional MMA)
-1. ***Airdyne Bike || Row Machine (horizontal pull)***
+1. ***Airdyne Bike || Row Machine || Sprint || Jump Rope***
 2. **Dynamic Stretching**
 3. Prone Leg Curl ✅  
 4. Back Extension (posterior chain, low back protection)  
@@ -229,7 +235,7 @@ Alternate each month keeping the week training phase in to account the weights f
 9. Kettlebell Leg Raise 📈
 
 ### Upper Body Day Part 2 Thursday Sprint Day(Optional MMA)
-1. ***Airdyne Bike || Row Machine (horizontal pull)***
+1. ***Airdyne Bike || Row Machine || Sprint || Jump Rope***
 2. **Dynamic Stretching**
 3. Cable Pec Minor Fly/Chest Fly ✅ (warm-up / activation)    
 4. Halo (shoulder mobility + stability)  | | Super ROM Six-Ways Raise (deltoid health)  ✅
@@ -386,7 +392,7 @@ Static stretches can be active or passive with external force like maybe a plank
 - [Standing Pancake](https://youtu.be/4TU9K40LZ6A?si=kWxpXgb7wdZ35HQO)
 - **[Cable Assisted Pancake](https://youtu.be/xgU1YYHwprQ?si=N0aX9UVVJqDLvvrS)**(Low Angle) /[Regular Pancake](https://youtu.be/B1_YA47gtm0?si=_oBDpaLBejKI-8mV) - 50lb/50lb/50lb
 - [Full split](https://youtu.be/hsNvqUmCAAo?si=SbGmouCgXsZ44_tJ) 
-- [Supine Figure 4 Stretch](https://youtu.be/xVq2-g_leTI?si=ww6BkkfN_oYEWmdC)(Not Required for Split) - keep back flat do at start for running days and at end for non running days.
+
 
 ### Build to Doing Safely
 ##### Full Body

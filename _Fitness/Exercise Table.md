@@ -73,13 +73,13 @@ Reverse Preacher Curl(3:14)
 [Patrick Step - YouTube](https://youtu.be/jAbO12BipQU?si=baSPYfaK9FNNmPXa)
 High rep since short range of movement also try on wedge down stairs 
 
- [Kettlebell Snatch](https://www.youtube.com/embed/Pm-b2XFeABA?feature=oembed)
+[Kettlebell Snatch](https://www.youtube.com/embed/Pm-b2XFeABA?feature=oembed)
 
 [Seated Cable Row](https://www.youtube.com/watch?v=UCXxvVItLoM&list=TLPQMTUxMjIwMjSCoRXDSuxPzQ&index=9)
 
- [Curtsy Lunge](https://www.youtube.com/watch?v=RvDcKx9KsD8)
+[Curtsy Lunge](https://www.youtube.com/watch?v=RvDcKx9KsD8)
 
- [Halo Lunge Twist](https://www.youtube.com/watch?v=kt97CnwNZrE&list=TLPQMTUxMjIwMjSqjLz-Yp-KTQ&index=3)
+[Halo Lunge Twist](https://www.youtube.com/watch?v=kt97CnwNZrE&list=TLPQMTUxMjIwMjSqjLz-Yp-KTQ&index=3)
 
 [Shin Splints Stretches And Exercises - Feel Better FAST! - YouTube](https://youtu.be/olpUrL-w2qg?si=MqXCdiId_KdLBn2I)
 
@@ -88,7 +88,7 @@ High rep since short range of movement also try on wedge down stairs
 
 [Glute ham raise on back extension - YouTube](https://www.youtube.com/watch?v=-DLrUNl30U4)
 
-[Banded Deadbug - YouTube](https://youtu.be/bmB-QsTNTMQ?si=B0JBSDbD2_300rEB)
+
 
 [Hanging Knee Raise - YouTube](https://youtu.be/RD_A-Z15ER4?si=sgl3EuUCG3gCZl60)
 
@@ -96,7 +96,9 @@ High rep since short range of movement also try on wedge down stairs
 
 [CONCENTRATION CURL - YouTube](https://youtu.be/VMbDQ8PZazY?si=P0KE-GIfGr7KOoto) 
 
-![](https://www.youtube.com/watch?v=lXvA8exxWmE)
+- [14 Calisthenics Exercises on Gymnastics Rings](https://www.gornation.com/blogs/news/exercises-gymnastics-rings) 
+
+
 
 | Body  | Exercise                                                 | Tried | Focus  | Type       | W(lb/kg) |                      | Priority | Duration | Sets | AltType    | Tried | Alt W(lb/kg) |
 | ----- | -------------------------------------------------------- | ----- | ------ | ---------- | -------- | -------------------- | -------- | -------- | ---- | ---------- | ----- | ------------ |

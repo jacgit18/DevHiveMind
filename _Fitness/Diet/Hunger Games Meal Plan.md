@@ -112,6 +112,10 @@ need money for non meat as well and occasional seasoning etc...
 
 
 
+5oz asparagus 30cal so 2 bags from trader joes
+
+Cook extra bulk for fam
+
 
   
 

@@ -17,6 +17,7 @@ dg-publish:
 
 [Resistance Band Russian Twists - YouTube](https://www.youtube.com/watch?v=kI2H5xGnxcM)
 
+[Banded Seated Rows - YouTube](https://youtu.be/jix2wqu2MfE?si=cvxRf_x7I2azIG0E)
 
 [Banded Joint Mobilizations for Stiff Ankles - YouTube](https://youtu.be/ILSbK8RnGdI?si=86ONU_PSK-td-Nlm) ^da4cd0
 

@@ -20,10 +20,7 @@ dg-publish:
     
 - **Ball Pike (feet on ball)** – **1**
 - ![How To Do A SWISS BALL PIKE \| Exercise Demonstration Video and Guide - YouTube](https://www.youtube.com/watch?v=Aj1uNRy1q1k)
-    
-- **Dead Bug with Ball Press (ball between arms & knees)** – **1**
-- ![How to Do Dead Bug Hold with Stability Ball \| Core Stability & Full-Body Tension Exercise - YouTube](https://www.youtube.com/watch?v=GLOnqZOmiLM)
-    
+
 - **Ball Rollouts (knees or toes on ground)** – **2**
 - ![Swiss ball rollouts on knees (Strength) - YouTube](https://www.youtube.com/watch?v=h9lAFK2-058)
     
