@@ -49,9 +49,10 @@ dg-publish:
 
 
 ## Grocery Haul Schedule
-Trader joes twice a month
+Trader Joes twice a month
 Bjs Once a month
 Whole Foods twice a week
+Any Vegetable market once a month
 
 ## Current Stack
 Maybe try Transparent Labs EAA and Electrolytes or buy both once a year.   
@@ -66,7 +67,7 @@ Maybe try Transparent Labs EAA and Electrolytes or buy both once a year.
 - Thorne Multi Vitamin 
 - Thorne Theanine
 
-No green band or use something tighter or move higher up leg for deadlift
+
 
 # Exercises
 >**Barbell Exercises: Upper vs Lower Body Considerations**

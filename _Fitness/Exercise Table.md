@@ -65,7 +65,7 @@ Reverse Preacher Curl(3:14)
 - Single Arm Incline Preacher Curl ^6d88c7
 	- ![Incline Bench Preacher Curl - YouTube](https://www.youtube.com/watch?v=02TvQZiVdic)
 
-
+No green band or use something tighter or move higher up leg for deadlift
 
 
 [KB Cossack Squat](https://www.youtube.com/watch?v=hDIiCBIM6tE)

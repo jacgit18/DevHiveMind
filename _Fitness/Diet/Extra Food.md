@@ -11,7 +11,7 @@ Relates:
 Peer Reviewed: 0
 dg-publish:
 ---
-
+Seven strawberries per smoothie
 
 | Week Type                             | Main Carb/Focus                | Vegetables                                                                       | Protein Options            |
 | ------------------------------------- | ------------------------------ | -------------------------------------------------------------------------------- | -------------------------- |
@@ -19,6 +19,7 @@ dg-publish:
 | **Potato Week**                       | Potatoes                       | Broccoli, Brussels Sprouts, Green Beans, Asparagus, Carrots, Beets, Bell Peppers | Steak                      |
 | **Grain (Rice/Quinoa) Week**          | Rice or Quinoa                 | Other veggies mentioned (from Pasta & Potato weeks)                              | Chicken, Pork, Ground Meat |
 | **Mixed Week** (Pasta/Potatoes/Grain) | Mix of Pasta, Potatoes, Grains | Other veggies mentioned (from all previous weeks)                                | Chicken, Pork, Ground Meat |
+| Premade Main Carbs                    | Gnocchi, etc...                |                                                                                  |                            |
 
 cooking tips and recipes 
 
