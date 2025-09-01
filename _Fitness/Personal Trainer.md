@@ -68,8 +68,6 @@ Maybe try Transparent Labs EAA and Electrolytes or buy both once a year.
 - Thorne Multi Vitamin 
 - Thorne Theanine
 
-
-
 # Exercises
 >**Barbell Exercises: Upper vs Lower Body Considerations**
 Upper body barbell exercises—like the bench press—can sometimes place unnecessary strain on the wrists due to the fixed, straight bar grip. If the grip doesn’t align naturally with your wrist and shoulder joints, it can cause discomfort or even injury over time.
@@ -148,7 +146,7 @@ Alternate each month keeping the week training phase in to account the weights f
 
 
 #todo/BAU/Workout 
-- [ ] Start with [[Stretch Regimen]]
+- [ ] Start with dynamic [[Stretch Regimen]]
 - [ ] Maybe have a free up month with no specific structure at end of each quarter.
 - [ ] Limit sprinting on ***Hypertrophy week*** for non leg days
 - [ ] Cycle in warm up doing  lunges to kicks, knees, and teeps
@@ -338,7 +336,6 @@ Allowed to practice each excercise *here* max twice a week.
 11. **[Single Arm Lat Pulldown](https://www.youtube.com/watch?v=SALxEARiMkw&list=TLPQMjcwNDIwMjWOBRc2Cey09g&index=3)** - 40lb/40lb/40lb
 12. **[Lateral Head Single Arm Tricep Extension](https://www.youtube.com/watch?v=vVW9LwaahNw)**(Top Angle) – 20lb/20lb/20lb
 13. **[Back Extension on Yoga Ball](https://youtu.be/b_Iri5nayDk)(with bar/Stick)/Back Extension**(try Isometric holds) - bodyweight/15lb/15lb/15lb  
-
 14. **[Low Cable Goblet Squat](https://youtu.be/f6eI0JI9AYA?si=TTKH4FrAivJYEyd0)**  - 40lb/40lb/40lb
 15. Seated or Standing [Seated Y Cable Raises](https://youtu.be/-yL_BS28hcY?si=oO9QrIO_sv2SF5K1)(Seat Height Low Angle) - 10lb/10lb/10lb(6 width)
 16. Standing [Cable FreeMotion Front Shoulder Raise](https://youtu.be/_bzJ1Yb4XCU?si=v0UUNLSilV6NVM76)(Low Angle) - 10lb/10lb/10lb

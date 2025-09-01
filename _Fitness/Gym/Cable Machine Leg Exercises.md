@@ -20,6 +20,8 @@ dg-publish:
 - **How to Do It:** Attach ankle strap; drive knee upward and forward.
 - **Variation:** Use slow eccentrics to improve control.
 
+3
+0lb
 
 ![Watch on YouTube](https://www.youtube.com/watch?v=MUvXfV97-Us) ^6dcf9a
 
@@ -30,6 +32,8 @@ dg-publish:
 - **Mimics:** Rear leg drive, base-building during clinch or stand-ups
 - **How to Do It:** Kick leg straight back, squeezing the glutes.
 - **Tip:** Keep your spine neutral—don’t overarch your lower back.
+
+50lb
 
 
 ![Watch on YouTube](https://www.youtube.com/watch?v=Fr6fdKPdyfM) ^d00f82
@@ -43,8 +47,9 @@ dg-publish:
 - **Variations:**
     - Perform slow for control
     - Perform fast for explosiveness
-    - Try Cable Hip Adduction for inner thigh strength (shorten range of motion)
+	- Try Cable Hip Adduction for inner thigh strength (shorten range of motion)
 
+20lb
 
 ![Watch on YouTube](https://www.youtube.com/watch?v=jYuN92LGzpA) ^dc7113
 
@@ -55,23 +60,27 @@ dg-publish:
 - **Mimics:** Glute engagement in rear kicks, stability when shifting stances
 - **How to Do It:** Drive heel backward, maintain balance through your core.
 
+20lb
+
 
 ![Watch on YouTube](https://www.youtube.com/watch?v=SqO-VUEak2M) ^0552eb
 
 
 
-#### **5. Cable Step-Through Lunges (Forward/Rear)**
-
-- **Mimics:** Weight shifts during kicks, explosive scrambles
-- **How to Do It:** Anchor cable behind you, step forward or backward under tension.
-- **Bonus:** Builds coordination, core stability, and dynamic balance.
-
-
-![Watch on YouTube](https://www.youtube.com/watch?v=qTLKDojZJsU) ^62416f
-
-
 
 
   
-![How to properly perform cable pull through - YouTube](https://www.youtube.com/watch?v=IU-ERkjTKXA)
-   ^8ca0fd
+[Cable Pull Through](https://www.youtube.com/watch?v=IU-ERkjTKXA)
+
+
+
+
+[Cable Snap Downs](https://www.youtube.com/shorts/IW40KjCwNmA) 20lb
+
+
+[[CableWolverine.gif|Cable Wolverine]] 20lb
+
+
+[[CableBalloonAbduction.gif |Cable Balloon Abduction]]  20lb
+
+[[CableFloorFly.gif |Cable Floor Fly]] - 20lb
