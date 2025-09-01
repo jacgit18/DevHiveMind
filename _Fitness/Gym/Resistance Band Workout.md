@@ -19,9 +19,8 @@ dg-publish:
 
 [Banded Seated Rows - YouTube](https://youtu.be/jix2wqu2MfE?si=cvxRf_x7I2azIG0E)
 
-[Banded Joint Mobilizations for Stiff Ankles - YouTube](https://youtu.be/ILSbK8RnGdI?si=86ONU_PSK-td-Nlm) ^da4cd0
 
-[Deep Squat w/ Band Single Arm Reach - YouTube](https://www.youtube.com/watch?v=VpBlbi7TNUc) ^ab16e7
+[Deep Squat w/ Band Single Arm Reach - YouTube](https://www.youtube.com/watch?v=VpBlbi7TNUc) 
 
 [How to do a Sky Squat Reach stretch - YouTube](https://www.youtube.com/watch?v=Zv1wILGzeec)
 

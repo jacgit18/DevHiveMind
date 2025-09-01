@@ -36,6 +36,7 @@ dg-publish:
 
 ## Workout Tips
 #todo/BAU/Workout  
+- [ ] Do high reps when doing stretches or excercise with short range of movement. 
 - [ ] **Prone Leg curl** before any **squatting** excercise.
 - [ ] Rotate your **thumb internally** to end of range for **barbell bench press**.
 - [ ] Hover in more of a standing position for **Abduction Leg Squeezing** machine 70 to 80 lb.
@@ -52,7 +53,7 @@ dg-publish:
 Trader Joes twice a month
 Bjs Once a month
 Whole Foods twice a week
-Maybe any Vegetable market once a month
+Maybe any Vegetable market twice a month 
 
 ## Current Stack
 Maybe try Transparent Labs EAA and Electrolytes or buy both once a year.   

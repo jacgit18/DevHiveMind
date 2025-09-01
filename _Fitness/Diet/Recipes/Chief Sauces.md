@@ -10,10 +10,6 @@ Started:
 EditDate: 
 Relates:
 ---
-Here’s a **comprehensive guide** to classic sauces, including their ingredients, preparation methods, and best uses in cooking:
-
----
-
 ## **1. Béchamel (White Sauce)**  
 **Ingredients:**  
 - 2 tbsp butter  

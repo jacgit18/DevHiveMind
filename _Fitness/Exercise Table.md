@@ -49,6 +49,11 @@ color purple
 - [ ] Revisit and edit chart switch to table with current top exercises of focus
 
 
+find for stretches
+
+
+- [[Plyometrics#^8a3d01|ISO Calf Raise with Lunge]]
+- [[Plyometrics#^58f942|Lunge ISO Heel Raise]]
 
 
 
@@ -70,8 +75,9 @@ No green band or use something tighter or move higher up leg for deadlift
 
 [KB Cossack Squat](https://www.youtube.com/watch?v=hDIiCBIM6tE)
 
-[Patrick Step - YouTube](https://youtu.be/jAbO12BipQU?si=baSPYfaK9FNNmPXa)
-High rep since short range of movement also try on wedge down stairs 
+
+
+
 
 [Kettlebell Snatch](https://www.youtube.com/embed/Pm-b2XFeABA?feature=oembed)
 
@@ -100,23 +106,6 @@ High rep since short range of movement also try on wedge down stairs
 
 
 
-| Body  | Exercise                                                 | Tried | Focus  | Type       | W(lb/kg) |                      | Priority | Duration | Sets | AltType    | Tried | Alt W(lb/kg) |
-| ----- | -------------------------------------------------------- | ----- | ------ | ---------- | -------- | -------------------- | -------- | -------- | ---- | ---------- | ----- | ------------ |
-| Core  | [[Core#^6516d4\|Russian Twists]]                         | Yes   | RC     | Kettlebell | 20       | Rotational           | Highest  | 00:00:20 | 3    | MediBall   |       | 0            |
-| Core  | [[Core#^fdacde \|Russian Twists]]                        |       | RC     | Rope       | 0        | Rotational           | Highest  | 00:00:20 | 3    | Rope       |       | *0*          |
-| Full  | [[Cardio#^775bc4\|Farmer’s Walk]]                        |       | CM     | Kettlebell | 20       | Anti Lateral Flexion | Highest  | 00:00:20 | 3    | Dumbbell   |       | *20*         |
-| Full  | [[Cardio#^0c52b2\|Farmers March]]                        |       | CM     | Kettlebell | 20       | Anti Lateral Flexion | Highest  | 00:00:20 | 3    | Dumbbell   |       | *20*         |
-| Full  | [Suit Case](https://www.youtube.com/watch?v=a9HkuLYNyJ0) |       | CM     | Kettlebell | 20       | Anti Lateral Flexion | Highest  | 00:00:20 | 3    | Dumbbell   |       | *20*         |
-| Full  | [[Plyometrics#^eadbc3\|B-Stance Squat]]                  |       | CM     | Kettlebell | 20       |                      | Highest  | 01:00:00 | 3    | Dumbbell   |       | *20*<br>     |
-| Upper | [[Upper#^b1e482 \|Dead Hang]]                            | Yes   | PG     | Bodyweight | 0        |                      | Highest  | 00:00:30 | 1    | Bodyweight |       | 0            |
-| Upper | Switch Catch                                             | Yes   | EP     | Dumbbell   | 5        |                      | Highest  | 01:00:00 | 1    | Dumbbell   |       | *5*          |
-| Upper | [[Upper#^f49369 \|VMX Rope Trainer]]                     |       | PG     | Fixed      | 0        |                      | Highest  | 01:00:00 |      | Fixed      |       | 0            |
-| Upper | Seated Band Row                                          | Yes   | PG     | Band       | 0        |                      | High     | 00:00:20 | 3    | Fixed      | yes   | *0*          |
-| Upper | [[Cardio#^05e3ec\|Seated Cable Row]]                     | Yes   | PG     | Fixed      | 0        |                      | High     | 00:00:20 | 3    | Fixed      | yes   | *0*          |
-| Full  | Jump Rope                                                |       | Cardio | Rope       | 0        |                      | High     | 00:00:20 | 3    | Jump       |       | *0*          |
-| Full  | [[Cardio#^64091e\| Alternating Waves]]                   |       | Cardio | Rope       | 0        |                      | Low      | 00:00:20 | 3    | Rope       |       | *0*          |
-| Full  | [[Cardio#^164e0e\| Side-to-Side Waves]]                  |       | Cardio | Rope       | 0        |                      | Low      | 00:00:20 | 3    | Rope       |       | *0*          |
-^duration
 
 
 

@@ -67,27 +67,3 @@ Instructions:
 8. Cool and Serve: Let the cornbread cool in the skillet for at least 10-15 minutes before slicing and serving. It's best served warm with a pat of butter and a drizzle of honey.
 
   
-
----
-
-  
-
-Recipe Variations & Tips:
-
-  
-
-· Buttermilk Version: For a more traditional, tangy flavor, substitute the whole milk for 1 ¼ cups of buttermilk. If you use buttermilk, add ½ teaspoon of baking soda to the dry ingredients. The acid in the buttermilk reacts with the baking soda, making the bread extra light and fluffy.
-
-· Jalapeño Cheddar: Fold in 1 cup of shredded sharp cheddar cheese and 1-2 finely diced jalapeños (seeds removed for less heat) into the batter just before pouring it into the skillet.
-
-· Add Corn: For extra texture and sweetness, fold in 1 cup of fresh, canned (drained), or frozen (thawed) corn kernels into the batter.
-
-· No Cast Iron Skillet? No problem! Grease a 9x9 inch baking pan or a standard muffin tin (fill cups 2/3 full, bake for 15-18 mins). You don't need to preheat the pan.
-
-· The Resting Step: Letting the batter rest for 5-10 minutes allows the cornmeal to hydrate, resulting in a more tender final product.
-
-· Storage: Store leftover cornbread in an airtight container at room temperature for up to 2 days, or in the refrigerator for up to a week. It can also be frozen for up to 3 months.
-
-  
-
-Enjoy your homemade cornbread

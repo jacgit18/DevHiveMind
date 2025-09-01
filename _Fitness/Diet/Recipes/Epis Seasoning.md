@@ -21,7 +21,7 @@ Limit things to 3 spices or premade spice/sauce from store for meats
 - **3-4 scallions** (also known as green onions)
 - **4-5 garlic cloves** (peeled)
 - **1 small bell pepper** (preferably red or green)
-- **1-2 hot peppers** (like Scotch bonnet or habanero, adjust to taste for heat)
+- **1-2 hot peppers** (like Scotch bonnet or habanero, adjust to taste for heat)/ something mild these peppers to spicy
 - **2 tablespoons fresh parsley**
 - **2 tablespoons fresh cilantro**
 - **1/2 teaspoon black pepper** (adjust to taste)

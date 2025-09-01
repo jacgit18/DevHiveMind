@@ -52,7 +52,6 @@ Start with a dynamic stretch to Improve blood flow and flexibility. End with a s
 ---
 > **Start off Back like a baby and progress to standing then running**
 
-
 #### Activate Muscle & Mobilize Range of Motion
 _~5–10 minutes total – pick 3–5 each position_ 
 
@@ -61,6 +60,8 @@ _~5–10 minutes total – pick 3–5 each position_
 - [ ] Squat push shoulder to end of range
 - [ ] Hip up grab heels look up
 - [ ] Stand flex upper body into body while bent at hip repeat
+- [ ] [Body Waves](https://youtu.be/kBFg1mgCe0A?si=VyoasKccy3rlSq5D)
+- [ ] [Spinal Waves](https://youtu.be/KCfh_wCssK8?si=QaERnrtYGrEVxAsZ)
 
 ##### **Grounded On Back**
 ###### Upper Back 
@@ -72,7 +73,6 @@ _~5–10 minutes total – pick 3–5 each position_
 ###### Glutes
 - Glute Bridges(Try with [Yoga ball](https://youtu.be/Jxyf92ciPdk) and with band single leg variations) 
 - [Supine Figure 4 Stretch](https://youtu.be/xVq2-g_leTI?si=ww6BkkfN_oYEWmdC)(Not Required for Split) - keep back flat do at start for running days and at end for non running days.
-
 
 ###### Core
 - Descending flutter kicks
@@ -94,11 +94,15 @@ _~5–10 minutes total – pick 3–5 each position_
 
 ##### **Grounded On Front**
 
+###### Ankle
+- [Banded Joint Mobilizations for Stiff Ankles](https://www.youtube.com/watch?v=ILSbK8RnGdI)
+
 ###### Back & Neck
 - [Band Assisted Thoracic Rotation](https://www.youtube.com/watch?v=3NgyG2JImfw)
 
 ###### Core
 - BirdDog || [Bird Dog on Swiss Ball](https://www.youtube.com/watch?v=uQpqxubnzPM)(Anti Rotation)
+
 
 ###### Shoulder - Pick One Each Month
 - Plank Shoulder Taps(Also Feet on Swiss-ball variation Anti Rotation) 
@@ -122,56 +126,56 @@ _~5–10 minutes total – pick 3–5 each position_
 - Dynamic Hip Flexor Swings -> [Lizard Pose](https://www.youtube.com/watch?v=gyS68CiPNcY)(Just a lower to the ground version with elbows down)
 	- For dynamic part lift your back knee off the ground if it was resting begin rocking forward and backward, shifting your weight between your front foot and back toes.
 - **World’s Greatest Stretch** – Deep lunge + rotation opposite side arm in relation to front kneeling knee
-###### Quads 
-- [Reverse Nordic](https://youtu.be/x2K8uH7dcqg?si=XvJ6HMTCCVyXnpTX) 
 
 ##### **Standing**
 *Skip and pogo jump if in a hurry before sprinting*
-- Calf Raises - on steps also leaning on bead on toes
-- [Patrick Step](https://youtu.be/jAbO12BipQU?si=oWN-xGlMG-rAokpl)
-- Shoulder Band Pull-Aparts
-- Standing [[Plyometrics#^b0a0df|TIB Raise]]
-- [[Plyometrics#^8a3d01|ISO Calf Raise with Lunge]]
-- [[Plyometrics#^58f942|Lunge ISO Heel Raise]]
-- [[Plyometrics#^da4cd0|Banded Joint Mobilizations]]
-- Twisted arms
-- **Inchworms** – Stand → walk hands to plank → back up
+
+###### Core
+- [Offset Walk](https://www.youtube.com/watch?v=Fc-27p17TPE)
+
+###### Knee
+- [Knee Circles](https://youtu.be/ROiyq3-2ljY?si=jmBGQDk3fKu4mPAt)
+
+
 ###### Foot
 - [Heel to Toe Rock](https://www.youtube.com/watch?v=FMZX3mpffeE) & [Walk](https://www.youtube.com/watch?v=oQ_-LIbhYgo) 
-
-- [Knee Circles](https://youtu.be/ROiyq3-2ljY?si=jmBGQDk3fKu4mPAt)
-- [Dumbbell Side Raise with Single Leg Balance](https://youtu.be/7cfhwCU2-y0?si=CxwXSgm6RWSQF8Ah)
-- [Offset Walk](https://www.youtube.com/watch?v=Fc-27p17TPE)
-- [Hip Airplane](https://youtu.be/2hIL15iGuNA?si=4F-c9pubcVK9mTze)
 - [Pogo Jumps](https://youtu.be/iU-TKr4YesM?si=--xrqvN2fMHZOnea) 
-
-
-#todo/BAU/Workout/try 
-- [ ] [Body Waves](https://youtu.be/kBFg1mgCe0A?si=VyoasKccy3rlSq5D)
-- [ ] [Spinal Waves](https://youtu.be/KCfh_wCssK8?si=QaERnrtYGrEVxAsZ)
-
-- ***Free Flow Skipping*** at or on the way to gym.
-- **Shoulder Rolls** – Forward & backward.
-- **Torso Twists** – Controlled rotation side-to-side like throwing hook
-- **Neck Rolls** – Slow circles, 5 reps each direction
-- [Cross leg Lateral Flexion](https://youtu.be/HxZjsIYVPd4?si=8zxedkghLRZMA7ln)
 - PVC Walk
-- **[Couch Stretch](https://youtu.be/Fg-lwNBzVV8?si=dVeSmrUB9MDLOurz)**
-- ***Scapular Wall Slides*** – Slide arms up/down while back touches wall
+
+###### Hip
 - ***Leg Swings*** – Front/back & side-to-side
-- ***Walking Lunges + Reach*** – Forward lunge + arms overhead
+- [Hip Airplane](https://youtu.be/2hIL15iGuNA?si=4F-c9pubcVK9mTze)
 - ***Hip Circles / Openers*** – Knee lift and rotate out
-- ***Knee Hugs to Calf Raise*** – Alternate legs, balance & stretch
-- High Knees + Butt Kicks 
-- [Lateral Skips](https://youtu.be/UtK0K5gz1g8?si=6m7I7g9e-5fwzOBD)(gallop)  
-- Arm Swings (Hugs) 
-- Jumping Jacks 
+
+###### Multi
 - [Arm Circles](https://www.youtube.com/watch?v=YGXgpcr7UY4)
+- Arm Swings (Hugs) 
+- Calf Raises - on steps also leaning on bead on toes
+- **[Couch Stretch](https://youtu.be/Fg-lwNBzVV8?si=dVeSmrUB9MDLOurz)**
+- [Cross leg Lateral Flexion](https://youtu.be/HxZjsIYVPd4?si=8zxedkghLRZMA7ln)
+- **Inchworms** – Stand → walk hands to plank → back up
+- High Knees + Butt Kicks 
+- Jumping Jacks 
+- [Lateral Skips](https://youtu.be/UtK0K5gz1g8?si=6m7I7g9e-5fwzOBD)(gallop)  
+- Standing [[Plyometrics#^b0a0df|TIB Raise]]
+
+###### Neck
+- **Neck Rolls** – Slow circles, 5 reps each direction
+
+###### Shoulder
+- Twisted arms
+- **Torso Twists** – Controlled rotation side-to-side like throwing hook
+- **Shoulder Rolls** – Forward & backward
+- Shoulder Band Pull-Aparts
+###### Leg
+- [Patrick Step](https://youtu.be/jAbO12BipQU?si=oWN-xGlMG-rAokpl)(try on wedge down stairs)
+- [Reverse Nordic](https://youtu.be/x2K8uH7dcqg?si=XvJ6HMTCCVyXnpTX) 
 
 
 ##### Sprinting  Specific 
 - ***Backward Walking & Skipping***
 - ***Carioca***
+- ***Free Flow Skipping*** at or on the way to gym.
 - ***High Knee Circles***
 * ***Internal/External Ankle Circles***
 * ***Lateral Leg Swings (side-to-side)***
