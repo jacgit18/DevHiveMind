@@ -70,17 +70,17 @@ dg-publish:
 
 
   
-[Cable Pull Through](https://www.youtube.com/watch?v=IU-ERkjTKXA)
+[Cable Pull Through](https://www.youtube.com/watch?v=IU-ERkjTKXA) 30lb
 
 
 
 
-[Cable Snap Downs](https://www.youtube.com/shorts/IW40KjCwNmA) 20lb
+[Cable Snap Downs](https://www.youtube.com/shorts/IW40KjCwNmA) 20lb Top
 
 
 [[CableWolverine.gif|Cable Wolverine]] 20lb
 
 
-[[CableBalloonAbduction.gif |Cable Balloon Abduction]]  20lb
+[[CableBalloonAbduction.gif |Cable Balloon Abduction]]  20lb Top
 
-[[CableFloorFly.gif |Cable Floor Fly]] - 20lb
+[[CableFloorFly.gif |Cable Floor Fly]] - 20lb Top
