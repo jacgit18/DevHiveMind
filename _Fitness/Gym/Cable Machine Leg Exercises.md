@@ -81,6 +81,6 @@ dg-publish:
 [[CableWolverine.gif|Cable Wolverine]] 20lb
 
 
-[[CableBalloonAbduction.gif |Cable Balloon Abduction]]  20lb Top
+[[CableBalloonAbduction.gif |Cable Balloon Abduction]]  20lb 
 
 [[CableFloorFly.gif |Cable Floor Fly]] - 20lb Top
