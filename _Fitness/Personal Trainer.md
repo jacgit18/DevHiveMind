@@ -165,7 +165,7 @@ Alternate each month keeping the week training phase in to account the weights f
 2. **Dynamic Stretching**
 3. Cable Pec Minor Fly/Chest Fly ✅ (warm-up / activation)  
 4. Prone Leg Curl ✅  
-5. Halo (shoulder mobility + stability)  | | Super ROM Six-Ways Raise (deltoid health)  ✅
+5. Halo (shoulder mobility + stability)  ✅
 6. DB Switch Catch ✅ - 1 min
 7. Clean & Jerk Press (explosive power)  
 8. Sled Push/Pull (conditioning + legs)  
@@ -184,13 +184,13 @@ Alternate each month keeping the week training phase in to account the weights f
 2. **Dynamic Stretching**
 3. Cable Pec Minor Fly/Chest Fly ✅ (warm-up / activation)  
 4. Prone Leg Curl ✅  
-5. Halo (shoulder mobility + stability)  | | Super ROM Six-Ways Raise (deltoid health)  ✅
+5. Halo (shoulder mobility + stability)  ✅
 6. DB Switch Catch ✅ - 1 min
 7. Back Extension (posterior chain, low back protection)  
 8. Sled Push/Pull (conditioning + legs)  
 9. Zottman Curl (biceps + forearms)  - No Chin-ups on this day 
 10. Bench Reverse Crunch / Dragonfly / Cable Reverse Crunch
-11. Cable WoodChopper || Landmine Twist
+11. Cable WoodChopper || **Landmine Twist**
 12. Pallof Press (anti-rotation core) - can be done with bands  📈
 13. Cable Assisted Pancake 📈
 14. Unilateral RDL 📈
@@ -211,7 +211,7 @@ Alternate each month keeping the week training phase in to account the weights f
 1. ***Airdyne Bike || Row Machine || Sprint || Jump Rope***
 2. **Dynamic Stretching**
 3. Cable Pec Minor Fly/Chest Fly ✅ (warm-up / activation)  
-4. Halo (shoulder mobility + stability)  | | Super ROM Six-Ways Raise (deltoid health)  ✅
+4. Super ROM Six-Ways Raise (deltoid health)  ✅
 5. DB Switch Catch ✅ - 1 min
 6. KB Around the World
 7. Chest/Bench Press  
@@ -238,7 +238,7 @@ Alternate each month keeping the week training phase in to account the weights f
 1. ***Airdyne Bike || Row Machine || Sprint || Jump Rope***
 2. **Dynamic Stretching**
 3. Cable Pec Minor Fly/Chest Fly ✅ (warm-up / activation)    
-4. Halo (shoulder mobility + stability)  | | Super ROM Six-Ways Raise (deltoid health)  ✅
+4. Super ROM Six-Ways Raise (deltoid health)  ✅
 5. DB Switch Catch ✅ - 1 min
 6. KB Around the World
 7. Chest/Bench Press  
