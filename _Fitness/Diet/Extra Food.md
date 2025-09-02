@@ -11,7 +11,74 @@ Relates:
 Peer Reviewed: 0
 dg-publish:
 ---
-Seven strawberries per smoothie
+Seven strawberries per smoothie 2 servings in trader joes pack 50 cal total
+
+Bulk vegetable purchase before BJ Hall to freeze better and store
+
+For watercrests and cilantro blend Into something than freeze
+
+For fresh basil clean olive oil free
+
+Submerge onions in cold water to stop crying
+
+
+
+look into buying new fridge
+
+
+
+
+Extra protein - try to get 120G each day from this stuff
+
+### **Legumes & Beans**
+
+- **Lentils** – 18g per cooked cup
+    
+- **Chickpeas** – 15g per cooked cup
+    
+- **Black beans** – 15g per cooked cup
+    
+- **Kidney beans** – 15g per cooked cup
+    
+- **Soybeans (edamame)** – 31g per cooked cup
+    
+
+---
+
+### **Dairy & Eggs (if you include them)**
+
+- **Cottage cheese (low-fat)** – 27g per cup
+    
+- **Greek yogurt (plain, nonfat)** – 20g per cup
+
+---
+
+### **Grains & Seeds**
+
+    
+- **Buckwheat** – 6g per cooked cup
+    
+- **Oats** – 11g per cup (dry)
+    
+- **Hemp seeds** – 10g per 3 tbsp
+    
+- **Chia seeds** – 6g per 2 tbsp
+    
+- **Pumpkin seeds** – 9g per ¼ cup
+    
+- **Sunflower seeds** – 6g per ¼ cup
+    
+
+---
+
+### **Nuts & Nut Butters**
+
+- **Almonds** – 6g per ounce (~23 nuts)
+    
+- **Peanuts** – 7g per ounce
+    
+- **Peanut butter** – 8g per 2 tbsp
+
 
 | Week Type                             | Main Carb/Focus                | Vegetables                                                                       | Protein Options            |
 | ------------------------------------- | ------------------------------ | -------------------------------------------------------------------------------- | -------------------------- |
