@@ -26,7 +26,7 @@ Bjj roll rock to box jump
 ## **TRX Workout Plan (3-4x Weekly)**  
 *(45-60 mins/session)*  
   
-### **1. Warm-Up (5-10 mins)**  
+### **1. Warm-Up (5-10 mins)**  Highest
 - **TRX Arm Circles** (Shoulder mobility)   
 - ![TRX Plank with Arm Circles - YouTube](https://www.youtube.com/watch?v=PNJ3SLDpllE)
  ^661445
@@ -40,18 +40,18 @@ Bjj roll rock to box jump
 
    ^723ad2
 ### **2. Strength & Power (Priority Exercises)**  
-#### **A. Upper Body (Clinch/Grip/Pulling Strength)**  
+#### **A. Upper Body (Clinch/Grip/Pulling Strength)**  Highest
 1. **TRX Atomic Push-Ups**  
 - *Why?* Builds chest, shoulders, and **core compression** (for swimming turns and grappling scrambles).  
 - ![TRX Atomic Push Up - YouTube](https://www.youtube.com/watch?v=kdoWKTEEc6g) ^9a11d1
-2. **TRX Rows (Single-Arm, Rotational)**   
+1. **TRX Rows (Single-Arm, Rotational)**   Highest
 - *Why?* Unilateral strength for **swimming pulls** and **gi grip endurance**.  
 - ![How to perform: Single arm TRX row w/ rotation - YouTube](https://www.youtube.com/watch?v=xlvYxStAL8M) ^0f0cba
 3. **TRX Biceps Curl to Y-Fly**  
 - *Why?* Combines arm flexion (BJJ grips) with scapular stability (swimming).  
 - ![TRX Y Fly + Biceps Curls - YouTube](https://www.youtube.com/watch?v=HOp5_Of1fzE)
    ^2f8cfd
-#### **B. Lower Body (Explosiveness/Kicking Base)**  
+#### **B. Lower Body (Explosiveness/Kicking Base)**  - Highest
 1. **TRX Pistol Squats (Assisted)**  
 - *Why?* Single-leg strength for **kicks (Muay Thai) and takedown defense (Judo)**.  
 - ![How To TRX Assisted Pistol Squat - YouTube](https://www.youtube.com/watch?v=HqCHXb91yMQ) ^0c4d25
@@ -75,7 +75,7 @@ Bjj roll rock to box jump
   
   
    ^45141d
-### **3. Sport-Specific Conditioning (Metabolic Finisher)**  
+### **3. Sport-Specific Conditioning (Metabolic Finisher)**  Highest
 *(Pick 1-2 rounds, 3-5 exercises, 30s work/15s rest)*  
 - **TRX Burpee** (Grappling sprawl → explosive stand-up)  
 - ![TRX Burpee Level 3 - YouTube](https://www.youtube.com/watch?v=C_rKVEucJak) ^3dcd4e
