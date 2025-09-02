@@ -200,7 +200,7 @@ Alternate each month keeping the week training phase in to account the weights f
 2. **Dynamic Stretching**
 3. Prone Leg Curl ✅  
 4. Back Extension (posterior chain, low back protection)  
-5. DB Bulgarian Split Squat  || Walking Barbell Zercher Lunge 
+5. DB Bulgarian Split Squat || Walking Barbell Zercher Lunge 
 6. Deadlift  
 7. Hack Squat *or* Leg Press | | Curlbar Behind Back Kneeling Squat on Toes || B-Stance Zercher Squat
 8. Hip Thrust (glutes focus)  
