@@ -26,17 +26,15 @@ No green band or use something tighter or move higher up leg for deadlift
 
 
 
-[Incline Bench Preacher Curl - YouTube](https://www.youtube.com/watch?v=02TvQZiVdic)
 
 
 
-[Reverse Preacher Curl](https://youtu.be/h8LVaKRAFY0?si=ix3lKao_fRA33nqU)
+
+
 
 
 [KB Cossack Squat](https://www.youtube.com/watch?v=hDIiCBIM6tE)
 
-
-Lat/Plate Pull down 65
 
 Mid Row 165
 
