@@ -20,7 +20,9 @@ dg-publish:
 ---  
   
 
-Bjj roll rock to box jump
+
+
+- [14 Calisthenics Exercises on Gymnastics Rings](https://www.gornation.com/blogs/news/exercises-gymnastics-rings) 
 
 
 ## **TRX Workout Plan (3-4x Weekly)**  
