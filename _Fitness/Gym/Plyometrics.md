@@ -64,3 +64,35 @@ Do 3x10 across all 3x5 for individual alternating legs
 - **Muscle-Ups** – progression from explosive pull-ups (for full-body coordination)
 - **Front Lever Progressions** – strengthen posterior chain and core
 
+
+
+
+
+
+No green band or use something tighter or move higher up leg for deadlift
+
+
+
+Mid Row 165
+
+[Incline Dumbbell Row](https://www.youtube.com/watch?v=tZUYS7X50so&list=WL&index=10) 
+
+
+[KB Cossack Squat](https://www.youtube.com/watch?v=hDIiCBIM6tE)
+
+[Kettlebell Snatch](https://www.youtube.com/embed/Pm-b2XFeABA?feature=oembed)
+
+[Seated Cable Row](https://www.youtube.com/watch?v=UCXxvVItLoM&list=TLPQMTUxMjIwMjSCoRXDSuxPzQ&index=9)
+
+[Curtsy Lunge](https://www.youtube.com/watch?v=RvDcKx9KsD8)
+
+[Halo Lunge Twist](https://www.youtube.com/watch?v=kt97CnwNZrE&list=TLPQMTUxMjIwMjSqjLz-Yp-KTQ&index=3)
+
+[Shin Splints Stretches Exercises](https://youtu.be/olpUrL-w2qg?si=MqXCdiId_KdLBn2I)
+
+
+[Reverse Hyper extensions - Incline Bench](https://www.youtube.com/watch?v=Vr3FYsX6zRE)
+
+[Hanging Knee Raise](https://youtu.be/RD_A-Z15ER4?si=sgl3EuUCG3gCZl60)
+
+
