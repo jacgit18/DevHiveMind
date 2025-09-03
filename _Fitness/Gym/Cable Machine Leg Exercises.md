@@ -12,9 +12,6 @@ Peer Reviewed: 0
 dg-publish:
 ---
 
-![THE COMPLETE RESISTANCE BAND EXERCISE GUIDE](https://www.youtube.com/watch?v=L08vWPkMftQ&utm_source=chatgpt.com)
-
-
 
 [How to do a Sky Squat Reach stretch](https://www.youtube.com/watch?v=Zv1wILGzeec) || [T-spine band rotation mobility](https://youtu.be/qQCc_zulZpg?si=2iUqiuZb0Zy8DUC8) || [Deep Squat w/ Band Single Arm Reach](https://www.youtube.com/watch?v=VpBlbi7TNUc) 
 
@@ -38,6 +35,8 @@ Band roll-ups & unrolls - 20lb/20lb/20lb
 
 [Resistance band donkey kick - YouTube](https://youtu.be/vHS9HF1Ucuw) 20lb/20lb/20lb
 
+
+[How To Perform A Dumbbell Cross Body Raise Exercise - YouTube](https://youtu.be/mK2xrdqf_cU) || [Cross Body Upper Chest Fly With Resistance Bands - No Attaching - YouTube](https://youtu.be/TM-VhSRr4XU) - 20lb/20lb/20lb
 
 
 ### **Cable Machine Leg Exercises for Kicks**
