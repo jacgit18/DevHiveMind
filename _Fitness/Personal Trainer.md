@@ -119,7 +119,7 @@ The general principles of **training phases** like strength and hypertrophy appl
 ### Recovery
 #todo/BAU/Workout 
 - [ ] Follow [[Muscle Release Regimen |Muscle release regimen with tools]] & merge with [[Recovery]] along with [[Small Joints Muscle]]
-- [ ] Also use [[Resistance Band Workout]] in this doc or merge and reduce note resistance band use only for explosive training or Hypertrophy
+- [ ] Use only resistance bands for only explosive or hypertrophy training.
 
 ## Regimen
 
