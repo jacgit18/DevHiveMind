@@ -322,8 +322,8 @@ Allowed to practice each excercise *here* max twice a week.
 
 
 #### **Session 2: Pull Focus**
-1. ***Narrow-Grip Chin-Up*** - bodyweight/10lb/10lb/10lb
-2. **Narrow-Grip Pull-Up**/**Neutral-Grip Pull-Up** - bodyweight/10lb/10lb/10lb
+1. ***[Narrow-Grip Chin-Up](https://www.youtube.com/watch?v=mRy9m2Q9_1I)*** - bodyweight/10lb/10lb/10lb
+2. **Narrow-Grip Pull-Up**/**[Neutral-Grip Pull-Up](https://www.youtube.com/watch?v=djTQ1C_pvYw&list=TLPQMTQxMjIwMjQ2MGDLyOWw0w&index=3)** - bodyweight/10lb/10lb/10lb
 3. **Zottman Curl Standing(Easiest)/[Seated](https://youtu.be/cnEcZiOeFO0?si=4nSqffNzqQyAvXBj)(hardest- *build more strength for it*)** - 15lb to 20lb/20lb/20lb - try wide curl up
 4. **Super ROM [6 Ways for Shoulder Raise](https://www.youtube.com/watch?v=nvEE4u3qfJY) With Wrist Curl**  – 5lb/5lb/5lb 
 	1. Strength phase 2x8 since like 5 exercises in one
