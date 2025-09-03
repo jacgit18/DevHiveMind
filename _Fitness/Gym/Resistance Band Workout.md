@@ -31,7 +31,6 @@ dg-publish:
 | 10         | 20     | Face pulls                       | _Highest | Bands | Upper  | Back Rear Delts           | Yes   | Grounded | Above Ankle Under Foot   | **N/A** | CM    |
 | 10         | 20     | Front & lateral raise            | _Highest | Bands | Upper  | Shoulder                  | Yes   | Standing | Narrow                   | **N/A** | CM    |
 | 10         | 20     | Front/Lateral Raise              | _Highest | Bands | Upper  | Front Mid Delts           | Yes   | Standing | Narrow                   | **N/A** | CM    |
-| 20         | 30     | Hex Chest Press                  | _Highest | Bands | Upper  | M of Chest                | Yes   | Standing | Wide                     | 4       | CM    |
 | 10         | 20     | Overhead Tricep extensions       | _Highest | Bands | Upper  | Tricep Long Head          | Yes   | Standing | Back Leg                 | **N/A** | CM    |
 | 10         | 30     | Squatting forearm curls          | _Highest | Bands | Upper  | Forearm                   | Yes   | Standing | U Under Feet             | **N/A** | CM    |
 | 10         | 20     | Upright row                      | _Highest | Bands | Upper  | Front Mid Delts/Traps     | Yes   | Standing | Wide Pull Middle         | **N/A** | CM    |
