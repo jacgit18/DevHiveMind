@@ -24,7 +24,18 @@ dg-publish:
 [Crank The Mower With Resistance Bands - No Attaching - YouTube](https://youtu.be/9VkPCVQc-Z0) - 30lb/30lb/30lb
 
 
-Band roll-ups & unrolls 20lb/20lb/20lb
+Band roll-ups & unrolls - 20lb/20lb/20lb
+
+
+[Band Upright Row - YouTube](https://youtu.be/VhpnXlphu88)  - 20lb/20lb/20lb
+
+
+[Band Front Raise - YouTube](https://youtu.be/bcVKR_IPz4U) - 20lb/20lb/20lb
+
+
+[Band V Raise - YouTube](https://youtu.be/5WBdE0TSoUQ)- 20lb/20lb/20lb
+
+
 ### **Cable Machine Leg Exercises for Kicks**
 
 
