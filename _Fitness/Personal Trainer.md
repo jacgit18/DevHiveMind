@@ -118,7 +118,7 @@ The general principles of **training phases** like strength and hypertrophy appl
 
 ### Recovery
 #todo/BAU/Workout 
-- [ ] Follow [[Muscle Release Regimen |Muscle release regimen with tools]] & merge with [[Recovery]] along with [[Big Toe Flexibility]]
+- [ ] Follow [[Muscle Release Regimen |Muscle release regimen with tools]] & merge with [[Recovery]] along with [[Small Joints Muscle]]
 - [ ] Also use [[Resistance Band Workout]] in this doc or merge and reduce note resistance band use only for explosive training or Hypertrophy
 
 ## Regimen
@@ -314,7 +314,7 @@ Allowed to practice each excercise *here* max twice a week.
 	2. Use close grip bench press for top of movement.
 	3. For the middle overhead press in the clean jerk press will help with this.
 4. **Arnold Press**/**Shoulder Press**(alternate) – 20lb/20lb/20lb  
-5. ~~**[Cable Wrist Curl pronated](https://youtu.be/UbfzCh0oJ5E?si=KtTGfiJfP5ep3CkD)/[supinated](https://youtu.be/WVAaKJvToe0?si=r9TKMQbLs1xmpiL0)**(Consider **[[Wrist Curl]]** regimen/[variations](https://www.youtube.com/watch?v=nvJ-1suJCTU)) – 10lb
+5. ~~**[Cable Wrist Curl pronated](https://youtu.be/UbfzCh0oJ5E?si=KtTGfiJfP5ep3CkD)/[supinated](https://youtu.be/WVAaKJvToe0?si=r9TKMQbLs1xmpiL0)**(Consider **[[Small Joints Muscle#Wrist Curl| Wrist Curl]]** regimen/[variations](https://www.youtube.com/watch?v=nvJ-1suJCTU)) – 10lb
 6. **Wide Seated Tricep Dip/[Bodyweight Tricep Dip](https://www.youtube.com/watch?v=p5Lx2BeVKR4&t=186s)** - 70lb/90/145lb
 7. **Chest Fly** - 50lb/70lb/100lb
 8. ***[Landmine Anti Rotations](https://www.youtube.com/watch?v=8aXStDm3cOs) - 10lb/10lb/10lb***
