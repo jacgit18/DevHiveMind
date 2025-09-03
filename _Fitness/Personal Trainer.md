@@ -331,7 +331,7 @@ Allowed to practice each excercise *here* max twice a week.
 	3. Prime shoulder with bands
 5. **Halo** - 15lb/15lb/20lb
 6. **Reverse Bench Crunch** - Bodyweight 
-7. **[Cable Woodchopper](https://www.youtube.com/watch?v=mvvu8imyMFs)** - 10lb/10lb/10lb
+7. **[Cable Woodchopper](https://www.youtube.com/watch?v=mvvu8imyMFs)**(Low Angle)  - 10lb/10lb/10lb
 8. **[Bayesian Cable Curl](https://youtu.be/4O24gFksZ04?si=poa8Lr-ymzw1-QrR)** - 10lb/10lb/10lb (2 width, 8 height)
 9. **[Incline Bench Preacher Curl](https://www.youtube.com/watch?v=02TvQZiVdic)/[Reverse Preacher Curl](https://youtu.be/h8LVaKRAFY0?si=ix3lKao_fRA33nqU)**- 20lb/20lb/20lb
 10. **Rear Delt Fly/[DB Chest Supported Rear Delt Fly](https://youtu.be/iCbVhDNpG-Y?si=g-puZtoYX7u57LwT)** - 30lb/50lb/70lb | 20lb/20lb/20lb
