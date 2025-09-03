@@ -30,10 +30,14 @@ Band roll-ups & unrolls - 20lb/20lb/20lb
 [Band Upright Row - YouTube](https://youtu.be/VhpnXlphu88)  - 20lb/20lb/20lb
 
 
-[Band Front Raise - YouTube](https://youtu.be/bcVKR_IPz4U) - 20lb/20lb/20lb
+
+[Band V Raise - YouTube](https://youtu.be/5WBdE0TSoUQ)(hypertrophy)- 20lb/20lb/20lb
+
+[Standing Scarecrow With Resistance Bands - No Attaching - YouTube](https://youtu.be/qzNQ3_TQHDs)(Imbalance) - 20lb/20lb/20lb
 
 
-[Band V Raise - YouTube](https://youtu.be/5WBdE0TSoUQ)- 20lb/20lb/20lb
+[Resistance band donkey kick - YouTube](https://youtu.be/vHS9HF1Ucuw) 20lb/20lb/20lb
+
 
 
 ### **Cable Machine Leg Exercises for Kicks**
