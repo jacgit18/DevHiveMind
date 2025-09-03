@@ -407,7 +407,7 @@ Static stretches can be active or passive with external force like maybe a plank
 ##### Upper
 ###### Push
 -  **[Landmine Shoulder Z Press](https://youtu.be/app94pzXOuU?si=kOpaa_oC9HkpkRNv)** - 10lb/10lb/10lb 
--  **[Landmine Russian Twist](https://youtu.be/Zb-l68-4KFM?si=I8zR3VtIppuQNJk_)** || KB Russian Twist  || [Rope Russian Twist](https://www.youtube.com/watch?v=JBz7PUxDyE4) - 10lb/10lb/10lb
+-  **[Landmine](https://youtu.be/Zb-l68-4KFM?si=I8zR3VtIppuQNJk_)** || KB || [Resistance Band](https://www.youtube.com/watch?v=kI2H5xGnxcM) || [Rope](https://www.youtube.com/watch?v=JBz7PUxDyE4)  Russian Twist- 10lb/10lb/10lb
 - **[Landmine Twist](https://www.youtube.com/watch?v=M93HfnAVIl8)** - 10lb/10lb/10lb
 -  ***[Landmine Rotational Press](https://www.youtube.com/watch?v=ONDeomDVlbE) - 10lb/10lb/10lb***
 

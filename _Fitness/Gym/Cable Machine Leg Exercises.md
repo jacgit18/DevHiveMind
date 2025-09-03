@@ -11,6 +11,15 @@ Relates:
 Peer Reviewed: 0
 dg-publish:
 ---
+
+![THE COMPLETE RESISTANCE BAND EXERCISE GUIDE](https://www.youtube.com/watch?v=L08vWPkMftQ&utm_source=chatgpt.com)
+
+
+
+[How to do a Sky Squat Reach stretch](https://www.youtube.com/watch?v=Zv1wILGzeec) || [T-spine band rotation mobility](https://youtu.be/qQCc_zulZpg?si=2iUqiuZb0Zy8DUC8) || [Deep Squat w/ Band Single Arm Reach](https://www.youtube.com/watch?v=VpBlbi7TNUc) 
+
+
+
 ### **Cable Machine Leg Exercises for Kicks**
 
 
@@ -20,8 +29,7 @@ dg-publish:
 - **How to Do It:** Attach ankle strap; drive knee upward and forward.
 - **Variation:** Use slow eccentrics to improve control.
 
-3
-0lb
+30lb
 
 ![Watch on YouTube](https://www.youtube.com/watch?v=MUvXfV97-Us) ^6dcf9a
 
