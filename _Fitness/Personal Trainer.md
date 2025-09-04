@@ -186,12 +186,12 @@ Alternate each month keeping the week training phase in to account the weights f
 4. Prone Leg Curl ✅  
 5. Halo (shoulder mobility + stability)  ✅
 6. DB Switch Catch ✅ - 1 min
-7. Back Extension (posterior chain, low back protection)  
-8. Sled Push/Pull (conditioning + legs)  
-9. Zottman Curl (biceps + forearms)  - No Chin-ups on this day 
-10. Bayesian Cable Curl || Incline Bench Preacher Curl/Reverse Preacher Curl
-11. Bench Reverse Crunch / Dragonfly / Cable Reverse Crunch
-12. Cable WoodChopper || **Landmine Twist**
+7. Sled Push/Pull (conditioning + legs)  
+8. Zottman Curl (biceps + forearms)  - No Chin-ups on this day 
+9. Bayesian Cable Curl || Incline Bench Preacher Curl/Reverse Preacher Curl
+10. Bench Reverse Crunch / Dragonfly / Cable Reverse Crunch
+11. Cable WoodChopper || **Landmine Twist**
+12. Back Extension (posterior chain, low back protection)  📈
 13. Pallof Press (anti-rotation core) - can be done with bands  📈
 14. Cable Assisted Pancake 📈
 15. Unilateral RDL 📈
@@ -200,12 +200,12 @@ Alternate each month keeping the week training phase in to account the weights f
 1. ***Airdyne Bike || Row Machine || Sprint || Jump Rope***
 2. **Dynamic Stretching**
 3. Prone Leg Curl ✅  
-4. Back Extension (posterior chain, low back protection)  
-5. DB Bulgarian Split Squat || Walking Barbell Zercher Lunge 
-6. Deadlift  
-7. Hack Squat *or* Leg Press | | Curlbar Behind Back Kneeling Squat on Toes || B-Stance Zercher Squat
-8. Hip Thrust (glutes focus)  
-9. Trap Bar Squat Jump (power finisher)  
+4. DB Bulgarian Split Squat || Walking Barbell Zercher Lunge 
+5. Deadlift  
+6. Hack Squat *or* Leg Press | | Curlbar Behind Back Kneeling Squat on Toes || B-Stance Zercher Squat
+7. Hip Thrust (glutes focus)  
+8. Trap Bar Squat Jump (power finisher)  
+9. Back Extension (posterior chain, low back protection)  📈
 10. Kettlebell Leg Raise📈
 11. **Static Stretching**
 ### Upper Body Day Part 1 Tuesday Sprint Day - Meal Prep Day 2
@@ -229,11 +229,11 @@ Alternate each month keeping the week training phase in to account the weights f
 1. ***Airdyne Bike || Row Machine || Sprint || Jump Rope***
 2. **Dynamic Stretching**
 3. Prone Leg Curl ✅  
-4. Back Extension (posterior chain, low back protection)  
-5. DB Bulgarian Split Squat  || Walking Barbell Zercher Lunge 
-6. Deadlift  
-7. Hack Squat *or* Leg Press (depending on recovery)  
-8. Trap Bar Squat Jump (power finisher)  
+4. DB Bulgarian Split Squat  || Walking Barbell Zercher Lunge 
+5. Deadlift  
+6. Hack Squat *or* Leg Press (depending on recovery)  
+7. Trap Bar Squat Jump (power finisher)  
+8. Back Extension (posterior chain, low back protection)  📈
 9. Kettlebell Leg Raise 📈
 
 ### Upper Body Day Part 2 Thursday Sprint Day(Optional MMA)
