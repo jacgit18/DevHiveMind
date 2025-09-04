@@ -754,3 +754,96 @@ Got it! Here are **high-calorie, high-protein yogurt recipes without protein pow
 9. **Cashews** – 157 kcal, 5g protein (≈ 18 nuts)  
 
 ---
+
+
+
+Alright, let’s sharpen this. Right now you’ve got a **grab bag of foods**, but not much clarity on **why** they help or how they fit into an MMA training cycle. I’ll refine your categories into **performance roles**, point out gaps, and challenge your assumptions:
+
+---
+
+### **1. Steady Fuel (long-lasting energy)**
+
+Your picks (avocados, oats, PB sandwich) are solid, but:
+
+- **Avocados** → mostly fat, so _slow-burning_, better for baseline meals not _pre-training_.
+    
+- **Oats** → low-GI carbs, good 1–2 hrs before training.
+    
+- **PB sandwich** → carb + fat + protein combo, but careful with digestion if eaten right before.
+    
+
+🔧 Refined: _Oats, quinoa, sweet potato, whole-grain bread + nut butter, avocado with eggs._  
+👉 Goal: _Stable glucose + satiety without a crash._
+
+---
+
+### **2. Recovery (rebuild + rehydrate)**
+
+You said _milk better than sports drinks_ — partially true.
+
+- **Milk** (esp. chocolate milk): great carb + protein combo → muscle glycogen + repair.
+    
+- **Sports drinks**: mainly fluid + electrolytes, useful _during/after_ long sweat-heavy sessions, not for protein recovery.
+    
+
+🔧 Refined: _Chocolate milk, tart cherry juice (anti-inflammatory), Greek yogurt + fruit, whey shake + banana, coconut water (hydration)._  
+👉 Goal: _Protein + carbs + electrolytes within 30–60 min post-training._
+
+---
+
+### **3. Endurance Support (extend gas tank)**
+
+Your picks: nuts, honey, beets, bananas.
+
+- **Nuts** → more for satiety; fats don’t fuel high-intensity efforts well. Better between sessions than pre-sparring.
+    
+- **Honey** → fast carbs, great for _between rounds_ or mid-training.
+    
+- **Beets** → nitric oxide booster → improved blood flow/efficiency.
+    
+- **Bananas** → potassium + quick carbs, good pre or mid-training.
+    
+
+🔧 Refined: _Beet juice (2–3 hrs before training), banana + honey for quick energy, raisins/dates as portable glucose bombs, nuts only for slower fuel between sessions._  
+👉 Goal: _Fast-digesting carbs + vasodilation for prolonged effort._
+
+---
+
+### **4. (Missing) Anti-Inflammatory & Joint Protection**
+
+MMA = constant microtrauma. You left this out.
+
+- **Turmeric + black pepper, oily fish (salmon, sardines), berries, olive oil, green tea** → reduce systemic inflammation, protect joints.
+    
+
+---
+
+### **5. (Missing) Hydration & Electrolytes**
+
+- MMA training = sweat loss. Water alone won’t cut it.
+    
+- _Coconut water, electrolyte tabs, watermelon, cucumbers, broth._
+    
+
+---
+
+### Refined Categories
+
+- **Steady Fuel (baseline meals):** oats, quinoa, sweet potatoes, avocado, eggs, nut butter.
+    
+- **Recovery (post-training):** chocolate milk, tart cherry juice, yogurt + fruit, whey + banana.
+    
+- **Endurance (pre/during training):** beet juice, banana + honey, raisins/dates.
+    
+- **Anti-Inflammatory Support:** salmon, turmeric, berries, olive oil.
+    
+- **Hydration/Electrolytes:** coconut water, broth, watermelon, electrolyte drinks.
+    
+
+---
+
+👉 Right now, you’re leaning too heavily on **fats (avocado, nuts, PB)** as if they’re performance fuel — but for MMA’s explosive intervals, **fast carbs + hydration** matter far more. Fats should anchor meals, not power sparring.
+
+---
+
+Do you want me to build you a **sample fight-camp day of eating** (morning, pre-training, intra, post, evening) that integrates all of this? That’d show exactly how to time these foods for max effect.
