@@ -167,9 +167,9 @@ Alternate each month keeping the week training phase in to account the weights f
 4. DB Switch Catch ✅ - 1 min
 5. Cable Pec Minor Fly/Chest Fly 
 6. DB Cross Body Fly
-7. Clean & Jerk Press (explosive power)  
-8. Sled Push/Pull (conditioning + legs)  
-9. Bench Reverse Crunch / Dragonfly / Cable Reverse Crunch
+7. **Clean & Jerk Press** (explosive power)  
+8. **Sled Push/Pull** (conditioning + legs)  
+9. *Bench Reverse Crunch || Dragonfly ||  Cable Reverse Crunch*
 10. Cable WoodChopper || **Landmine Twist**
 11. KB Around the World
 12. KB Jefferson Curls/Reverse Jefferson Curls - Keep weight & reps low 
