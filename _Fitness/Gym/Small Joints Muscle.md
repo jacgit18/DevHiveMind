@@ -22,16 +22,16 @@ dg-publish:
 [Crank The Mower With Resistance Bands - No Attaching - YouTube](https://youtu.be/9VkPCVQc-Z0) - 30lb/30lb/30lb
 
 
-Band roll-ups & unrolls - 20lb/20lb/20lb
 
 
-**[Band Upright Row](https://youtu.be/VhpnXlphu88)**  - 20lb/20lb/20lb
+Band - Upright Row | V Rais
 
 
 
-**[Band V Raise - YouTube](https://youtu.be/5WBdE0TSoUQ)**(hypertrophy)- 20lb/20lb/20lb
 
-**[Banded Scarecrow](https://youtu.be/qzNQ3_TQHDs)**(Imbalance) - 20lb/20lb/20lb
+
+
+
 
 
 Baking soda beet juice for hypertrophy week
@@ -70,6 +70,8 @@ Here’s a **balanced weekly forearm and grip regimen** using the **3 wrist curl
 - Finger Extensions – 20 reps (open/close fast)
     
 - Towel Squeeze – 20 sec hold x 2
+
+- Band roll-ups & unrolls - 20lb/20lb/20lb
     
 
 **Main Sets (Use Moderate Weight)**
