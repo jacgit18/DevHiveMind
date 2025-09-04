@@ -147,8 +147,9 @@ Alternate each month keeping the week training phase in to account the weights f
 
 #todo/BAU/Workout 
 - [ ] Start with dynamic [[Stretch Regimen]]
+- [ ] Max excercise to do per session should be 8
 - [ ] Maybe have a free up month with no specific structure at end of each quarter.
-- [ ] Limit sprinting on ***Hypertrophy week*** for non leg days
+- [ ] Limit sprinting on ***Hypertrophy week*** for non leg days and drink beet juice with baking soda. 
 - [ ] Cycle in warm up doing  lunges to kicks, knees, and teeps
 - [ ] Anything outside of best parings you do make it a light day instead of a intense day because best paring are for injury mitigation. also orange is very high priority out of all excercise here below.
 - [ ] Hit heavy bag at Crunch once a week also be aware of how you use row machine/Airdyne bike since can fall into cardio use it to rev up the engine then do cardio on days where you want to.
@@ -167,17 +168,18 @@ Alternate each month keeping the week training phase in to account the weights f
 4. DB Switch Catch ✅ - 1 min
 5. Cable Pec Minor Fly/Chest Fly 
 6. DB Cross Body Fly
-7. **Clean & Jerk Press** (explosive power)  
-8. **Sled Push/Pull** (conditioning + legs)  
-9. *Bench Reverse Crunch || Dragonfly ||  Cable Reverse Crunch*
-10. Cable WoodChopper || **Landmine Twist**
-11. KB Around the World
-12. KB Jefferson Curls/Reverse Jefferson Curls - Keep weight & reps low 
-13. Ab Roller 📈
-14. Pallof Press (anti-rotation core) - can be done with bands  📈
-15. Cable Assisted Pancake 📈
-16. Unilateral RDL 📈
-17. **[[Personal Trainer#Priority Static Stretch to develop splits| Static Stretching]]**
+7. Band - Upright Row | V Raise | Scarecrow
+8. **Clean & Jerk Press** (explosive power)  
+9. **Sled Push/Pull** (conditioning + legs)  
+10. *Bench Reverse Crunch || Dragonfly ||  Cable Reverse Crunch*
+11. Cable WoodChopper || **Landmine Twist**
+12. KB Around the World
+13. KB Jefferson Curls/Reverse Jefferson Curls - Keep weight & reps low 
+14. Ab Roller 📈
+15. Pallof Press (anti-rotation core) - can be done with bands  📈
+16. Cable Assisted Pancake 📈
+17. Unilateral RDL 📈
+18. **[[Personal Trainer#Priority Static Stretch to develop splits| Static Stretching]]**
 
 ### Full Body Day Part 2 Sunday Sprint Day
 1. ***Airdyne Bike || Row Machine || Sprint || Jump Rope***
@@ -313,11 +315,12 @@ Allowed to practice each excercise *here* max twice a week.
 	2. Use close grip bench press for top of movement.
 	3. For the middle overhead press in the clean jerk press will help with this.
 4. **Arnold Press**/**Shoulder Press**(alternate) – 20lb/20lb/20lb  
-5. ~~**[Cable Wrist Curl pronated](https://youtu.be/UbfzCh0oJ5E?si=KtTGfiJfP5ep3CkD)/[supinated](https://youtu.be/WVAaKJvToe0?si=r9TKMQbLs1xmpiL0)**(Consider **[[Small Joints Muscle#Wrist Curl| Wrist Curl]]** regimen/[variations](https://www.youtube.com/watch?v=nvJ-1suJCTU)) – 10lb
-6. **Wide Seated Tricep Dip/[Bodyweight Tricep Dip](https://www.youtube.com/watch?v=p5Lx2BeVKR4&t=186s)** - 70lb/90/145lb
-7. **Chest Fly** - 50lb/70lb/100lb
-8. ***[Landmine Anti Rotations](https://www.youtube.com/watch?v=8aXStDm3cOs) - 10lb/10lb/10lb***
-9. Barbell Z Press
+5. **[Band Chest Hex Press](https://youtu.be/e_wdE5rtZfA)** - 30lb/30lb/30lb
+6. ~~**[Cable Wrist Curl pronated](https://youtu.be/UbfzCh0oJ5E?si=KtTGfiJfP5ep3CkD)/[supinated](https://youtu.be/WVAaKJvToe0?si=r9TKMQbLs1xmpiL0)**(Consider **[[Small Joints Muscle#Wrist Curl| Wrist Curl]]** regimen/[variations](https://www.youtube.com/watch?v=nvJ-1suJCTU)) – 10lb
+7. **Wide Seated Tricep Dip/[Bodyweight Tricep Dip](https://www.youtube.com/watch?v=p5Lx2BeVKR4&t=186s)** - 70lb/90/145lb
+8. **Chest Fly** - 50lb/70lb/100lb
+9. ***[Landmine Anti Rotations](https://www.youtube.com/watch?v=8aXStDm3cOs) - 10lb/10lb/10lb***
+10. Barbell Z Press
 
 
 #### **Session 2: Pull Focus**
@@ -330,23 +333,21 @@ Allowed to practice each excercise *here* max twice a week.
 	3. Prime shoulder with bands
 5. **Halo** - 15lb/15lb/20lb
 6. **Reverse Bench Crunch** - Bodyweight 
-7. **[Band Upright Row](https://youtu.be/VhpnXlphu88)**  - 20lb/20lb/20lb
-8. **[Band V Raise](https://youtu.be/5WBdE0TSoUQ)**(hypertrophy)- 20lb/20lb/20lb
-9. **[Banded Scarecrow](https://youtu.be/qzNQ3_TQHDs)**(Imbalance) - 20lb/20lb/20lb
-10. **[DB Cross Body Fly](https://youtu.be/mK2xrdqf_cU)** || **[Band Cross Body Chest Fly](https://youtu.be/TM-VhSRr4XU)** - 20lb/20lb/20lb
-11. **[Cable Woodchopper](https://www.youtube.com/watch?v=mvvu8imyMFs)**(Low Angle)  - 10lb/10lb/10lb
-12. **[Cable Snap Downs](https://www.youtube.com/shorts/IW40KjCwNmA)**(Top Angle)  - 10lb/10lb/10lb
-13. **[Bayesian Cable Curl](https://youtu.be/4O24gFksZ04?si=poa8Lr-ymzw1-QrR)** - 10lb/10lb/10lb (2 width, 8 height)
-14. **[Incline Bench Preacher Curl](https://www.youtube.com/watch?v=02TvQZiVdic)/[Reverse Preacher Curl](https://youtu.be/h8LVaKRAFY0?si=ix3lKao_fRA33nqU)**- 20lb/20lb/20lb
-15. **Rear Delt Fly/[DB Chest Supported Rear Delt Fly](https://youtu.be/iCbVhDNpG-Y?si=g-puZtoYX7u57LwT)** - 30lb/50lb/70lb | 20lb/20lb/20lb
-16. **[Incline Prone Lateral Raise](https://youtu.be/Wz1C8NzWg5A?si=epnUd7OS6WC75u1Y&t=112)**/**[Seated Cable Pec Minor Fly](https://youtu.be/sC91H2XLtJc?si=bSV_IhpBVbdADHz2&t=286)**(Better ROM then chest fly Top Angle) - 20lb/20lb/20lb(Machine 5 and 5)
-17. **[Single Arm Lat Pulldown](https://www.youtube.com/watch?v=SALxEARiMkw&list=TLPQMjcwNDIwMjWOBRc2Cey09g&index=3)** - 65lb/65lb/65lb
-18. **[Lateral Head Single Arm Tricep Extension](https://www.youtube.com/watch?v=vVW9LwaahNw)**(Top Angle) – 20lb/20lb/20lb
-19. **[Back Extension on Yoga Ball](https://youtu.be/b_Iri5nayDk)(with bar/Stick)/Back Extension**(try Isometric holds) - bodyweight/15lb/15lb/15lb  
-20. **[Low Cable Goblet Squat](https://youtu.be/f6eI0JI9AYA?si=TTKH4FrAivJYEyd0)**  - 40lb/40lb/40lb
-21. Seated or Standing [Seated Y Cable Raises](https://youtu.be/-yL_BS28hcY?si=oO9QrIO_sv2SF5K1)(Seat Height Low Angle) - 10lb/10lb/10lb(6 width)
-22. Standing [Cable FreeMotion Front Shoulder Raise](https://youtu.be/_bzJ1Yb4XCU?si=v0UUNLSilV6NVM76)(Low Angle) - 10lb/10lb/10lb
-23. Seated Incline or Standing [Bilateral DB Overhead Tricep Extension](https://youtube.com/shorts/b_r_LW4HEcM?si=B1_Zz_2olhNHmPwY) | [Unilateral DB Overhead Tricep Extension](https://youtu.be/F3w6m0aENVQ?si=S2vDhXvRxVRh1MgE) - 20lb/20lb/20lb | 10lb/10lb/10lb 
+7. **[Band Upright Row](https://youtu.be/VhpnXlphu88)** || **[Band V Raise](https://youtu.be/5WBdE0TSoUQ)**(hypertrophy) || **[Banded Scarecrow](https://youtu.be/qzNQ3_TQHDs)**(Imbalance) - 20lb/20lb/20lb
+8. **[DB Cross Body Fly](https://youtu.be/mK2xrdqf_cU)** || **[Band Cross Body Chest Fly](https://youtu.be/TM-VhSRr4XU)** - 20lb/20lb/20lb
+9. **[Cable Woodchopper](https://www.youtube.com/watch?v=mvvu8imyMFs)**(Low Angle)  - 10lb/10lb/10lb
+10. **[Cable Snap Downs](https://www.youtube.com/shorts/IW40KjCwNmA)**(Top Angle)  - 10lb/10lb/10lb
+11. **[Bayesian Cable Curl](https://youtu.be/4O24gFksZ04?si=poa8Lr-ymzw1-QrR)** - 10lb/10lb/10lb (2 width, 8 height)
+12. **[Incline Bench Preacher Curl](https://www.youtube.com/watch?v=02TvQZiVdic)/[Reverse Preacher Curl](https://youtu.be/h8LVaKRAFY0?si=ix3lKao_fRA33nqU)**- 20lb/20lb/20lb
+13. **Rear Delt Fly/[DB Chest Supported Rear Delt Fly](https://youtu.be/iCbVhDNpG-Y?si=g-puZtoYX7u57LwT)** - 30lb/50lb/70lb | 20lb/20lb/20lb
+14. **[Incline Prone Lateral Raise](https://youtu.be/Wz1C8NzWg5A?si=epnUd7OS6WC75u1Y&t=112)**/**[Seated Cable Pec Minor Fly](https://youtu.be/sC91H2XLtJc?si=bSV_IhpBVbdADHz2&t=286)**(Better ROM then chest fly Top Angle) - 20lb/20lb/20lb(Machine 5 and 5)
+15. **[Single Arm Lat Pulldown](https://www.youtube.com/watch?v=SALxEARiMkw&list=TLPQMjcwNDIwMjWOBRc2Cey09g&index=3)** - 65lb/65lb/65lb
+16. **[Lateral Head Single Arm Tricep Extension](https://www.youtube.com/watch?v=vVW9LwaahNw)**(Top Angle) – 20lb/20lb/20lb
+17. **[Back Extension on Yoga Ball](https://youtu.be/b_Iri5nayDk)(with bar/Stick)/Back Extension**(try Isometric holds) - bodyweight/15lb/15lb/15lb  
+18. **[Low Cable Goblet Squat](https://youtu.be/f6eI0JI9AYA?si=TTKH4FrAivJYEyd0)**  - 40lb/40lb/40lb
+19. Seated or Standing [Seated Y Cable Raises](https://youtu.be/-yL_BS28hcY?si=oO9QrIO_sv2SF5K1)(Seat Height Low Angle) - 10lb/10lb/10lb(6 width)
+20. Standing [Cable FreeMotion Front Shoulder Raise](https://youtu.be/_bzJ1Yb4XCU?si=v0UUNLSilV6NVM76)(Low Angle) - 10lb/10lb/10lb
+21. Seated Incline or Standing [Bilateral DB Overhead Tricep Extension](https://youtube.com/shorts/b_r_LW4HEcM?si=B1_Zz_2olhNHmPwY) | [Unilateral DB Overhead Tricep Extension](https://youtu.be/F3w6m0aENVQ?si=S2vDhXvRxVRh1MgE) - 20lb/20lb/20lb | 10lb/10lb/10lb 
 
 ### Leg Programming 
 All leg cable excercise are done at a low angle. Avoid squatting with running shoes and squat wider as well if issues in squatting form.
