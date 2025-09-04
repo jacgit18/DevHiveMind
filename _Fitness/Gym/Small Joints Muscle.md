@@ -14,13 +14,6 @@ dg-publish:
 ## Wrist Curl
 
 
-[How to do a Sky Squat Reach stretch](https://www.youtube.com/watch?v=Zv1wILGzeec) || [T-spine band rotation mobility](https://youtu.be/qQCc_zulZpg?si=2iUqiuZb0Zy8DUC8) || [Deep Squat w/ Band Single Arm Reach](https://www.youtube.com/watch?v=VpBlbi7TNUc) 
-
-
-
-
-
-
 Here’s a **balanced weekly forearm and grip regimen** using the **3 wrist curl variations** — **neutral**, **palm-up**, and **palm-down** — with minimal equipment (dumbbells, resistance bands, or even water bottles/backpack). Designed for **2–3x per week**, 20 minutes max.
 
 ---
