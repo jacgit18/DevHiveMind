@@ -163,10 +163,10 @@ Alternate each month keeping the week training phase in to account the weights f
 ### Full Body Day Part 1 Saturday(Optional MMA) 
 1. ***Airdyne Bike || Row Machine || Sprint || Jump Rope***
 2. **Dynamic Stretching**
-3. Cable Pec Minor Fly/Chest Fly ✅ (warm-up / activation)  
-4. Prone Leg Curl ✅  
-5. Halo (shoulder mobility + stability)  ✅
-6. DB Switch Catch ✅ - 1 min
+3. Halo (shoulder mobility + stability)  ✅
+4. DB Switch Catch ✅ - 1 min
+5. Cable Pec Minor Fly/Chest Fly ✅
+6. Prone Leg Curl ✅  
 7. Clean & Jerk Press (explosive power)  
 8. Sled Push/Pull (conditioning + legs)  
 9. Bench Reverse Crunch / Dragonfly / Cable Reverse Crunch
@@ -182,10 +182,10 @@ Alternate each month keeping the week training phase in to account the weights f
 ### Full Body Day Part 2 Sunday Sprint Day
 1. ***Airdyne Bike || Row Machine || Sprint || Jump Rope***
 2. **Dynamic Stretching**
-3. Cable Pec Minor Fly/Chest Fly ✅ (warm-up / activation)  
-4. Prone Leg Curl ✅  
-5. Halo (shoulder mobility + stability)  ✅
-6. DB Switch Catch ✅ - 1 min
+3. Halo (shoulder mobility + stability)  ✅
+4. DB Switch Catch ✅ - 1 min
+5. Cable Pec Minor Fly/Chest Fly ✅ 
+6. Prone Leg Curl ✅  
 7. Sled Push/Pull (conditioning + legs)  
 8. Zottman Curl (biceps + forearms)  - No Chin-ups on this day 
 9. Bayesian Cable Curl || Incline Bench Preacher Curl/Reverse Preacher Curl
@@ -211,15 +211,15 @@ Alternate each month keeping the week training phase in to account the weights f
 ### Upper Body Day Part 1 Tuesday Sprint Day - Meal Prep Day 2
 1. ***Airdyne Bike || Row Machine || Sprint || Jump Rope***
 2. **Dynamic Stretching**
-3. Cable Pec Minor Fly/Chest Fly ✅ (warm-up / activation)  
-4. Super ROM Six-Ways Raise (deltoid health)  ✅
-5. DB Switch Catch ✅ - 1 min
-6. KB Around the World
-7. Chest/Bench Press  
-8. Tricep Dip || **Incline Bilateral/Unilateral DB Overhead Tricep Extension** 
-9. Single Arm Lat Pulldown
-10. Arnold Press || Suitcase Bottom Up March || Landmine Shoulder Z Press
-11. Zottman Curl (biceps + forearms)  - No Chin-ups on this day 
+3. Super ROM Six-Ways Raise (deltoid health)  ✅
+4. DB Switch Catch ✅ - 1 min
+5. Cable Pec Minor Fly/Chest Fly ✅ 
+6. Chest/Bench Press  
+7. Tricep Dip || **Incline Bilateral/Unilateral DB Overhead Tricep Extension** 
+8. Single Arm Lat Pulldown
+9. Arnold Press || Suitcase Bottom Up March || Landmine Shoulder Z Press
+10. Zottman Curl (biceps + forearms)  - No Chin-ups on this day 
+11. KB Around the World
 12. Bayesian Cable Curl || Incline Bench Preacher Curl/Reverse Preacher Curl
 13. Cable Assisted Pancake 📈
 14. Kneeling Cable Crunch  📈
@@ -239,16 +239,16 @@ Alternate each month keeping the week training phase in to account the weights f
 ### Upper Body Day Part 2 Thursday Sprint Day(Optional MMA)
 1. ***Airdyne Bike || Row Machine || Sprint || Jump Rope***
 2. **Dynamic Stretching**
-3. Cable Pec Minor Fly/Chest Fly ✅ (warm-up / activation)    
-4. Super ROM Six-Ways Raise (deltoid health)  ✅
-5. DB Switch Catch ✅ - 1 min
-6. KB Around the World
-7. Chest/Bench Press  
-8. Chin-up/Pull-up
-9. Tricep Dip || **Incline Bilateral/Unilateral DB Overhead Tricep Extension** 
-10. Single Arm Lat Pulldown
-11. Arnold Press || Suitcase Bottom Up March || Landmine Shoulder Z Press
-12. Bench Reverse Crunch / Dragonfly / Cable Reverse Crunch
+3. Super ROM Six-Ways Raise (deltoid health)  ✅
+4. DB Switch Catch ✅ - 1 min
+5. Cable Pec Minor Fly/Chest Fly ✅
+6. Chest/Bench Press  
+7. Chin-up/Pull-up
+8. Tricep Dip || **Incline Bilateral/Unilateral DB Overhead Tricep Extension** 
+9. Single Arm Lat Pulldown
+10. Arnold Press || Suitcase Bottom Up March || Landmine Shoulder Z Press
+11. Bench Reverse Crunch / Dragonfly / Cable Reverse Crunch
+12. KB Around the World
 13. Ab Roller 📈
 14. Cable Assisted Pancake 📈
 15. Kneeling Cable Crunch  📈
