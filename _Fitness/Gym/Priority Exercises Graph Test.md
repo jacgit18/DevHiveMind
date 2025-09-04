@@ -61,7 +61,7 @@ color purple
 | Exercise                            | Old Weight | Weight | Body  | Type       | Body Part               | Position   | Sets | Reps | Priority |
 | ----------------------------------- | ---------- | ------ | ----- | ---------- | ----------------------- | ---------- | ---- | ---- | -------- |
 | Pallof Press                        | 20         | 30     | Core  | Cable      | Obliques Side Abdominal | _Middle    | 4    | 8    | _Highest |
-| Deadlift                            | 20         | 40     | Full  | Barbell    | Multi                   | Standing   | 4    | 8    | _Highest |
+| Deadlift                            | 40         | 50     | Full  | Barbell    | Multi                   | Standing   | 4    | 8    | _Highest |
 | Power Sled                          | 40         | 50     | Full  | Sled       | Multi                   | Standing   | 4    | 8    | _Highest |
 | Bench Press                         | 30         | 40     | Upper | Barbell    | Chest                   | Incline    | 4    | 8    | _Highest |
 | Bench Press                         | 10         | 15     | Upper | Dumbbell   | Chest                   | Incline    | 4    | 8    | _Highest |

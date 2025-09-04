@@ -310,5 +310,20 @@ standing chest supported upright low row pulling motion kind of like a reverse d
 
 ![Iso Calf Raise with Lunge - YouTube](https://youtu.be/I8EfBzUFyMo?si=7LAxf79F9CnMSAxC) ^8a3d01
 
-![Lunge ISO Heel Raise - YouTube](https://youtu.be/Zwy4h0NukbQ?si=AYz0q6ZnrqsT7T6W) ^58f942
+![Lunge ISO Heel Raise - YouTube](https://youtu.be/Zwy4h0NukbQ?si=AYz0q6ZnrqsT7T6W) 
+
+
+
+
+
+do toe band exercises on a elevated surface 
+
+also [foot bridges](https://youtu.be/swio6RF4YZY?si=zP3QTUKg0SsN8Hvh) stepping on two bricks and keeping foot intact not flex to train toes
+
+
+[Resistance Band Exercises For Healthy Feet & Toe Alignment](https://youtu.be/GdlUz4eA_ec?si=Wx33lKEPDLW93Y43)
+
+
+
+
 

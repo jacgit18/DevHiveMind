@@ -158,8 +158,7 @@ Alternate each month keeping the week training phase in to account the weights f
 - [ ] Practice priming excercise movement like squat before squatting a bar or do push ups before bench press.
 - [ ] Can do 2 of ✅  but pick one of 📈 depending on day then choose few others for that day session max excercise in session can maybe be 7 each day maybe lower if an MMA day. Maybe Each week pick something different for  📈 to try each one on a more consistent basis but also keep [[Exercise Best Pairing]] in mind.
 - [ ] Run all out 1 min then 1 min coasting so run then a slow walk then back to intense 1 min once able to do a minutes build to 4 min.
-
-M
+- [ ] For DB exercises alternate every 2 months to improve at the excercise then after doing each switch back to picking which one you feel like doing depending on how you feel.
 
 ### Full Body Day Part 1 Saturday(Optional MMA) 
 1. ***Airdyne Bike || Row Machine || Sprint || Jump Rope***
