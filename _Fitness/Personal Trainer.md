@@ -360,20 +360,20 @@ All leg cable excercise are done at a low angle. Avoid squatting with running sh
 10. ~~[Elevated Smith Machine Lunge](https://youtu.be/Yp5O9Cz6Ajg?si=bFGCfbzNqt_JobTA) - try [Elevated Lunge](https://youtu.be/OVFHK2Iev70?si=oiRNDNHznSrNP_RC) with dumbbell at max 40lb to 60lb then switch to free barbell~~
 
 #### **Session 2: Hinge + Posterior Chain (Glutes, Hamstrings, Core)**
-1. **Cable/[Sled](https://youtu.be/kZyoyXUYYnQ?si=g3JDFGSTlRTOKzbi) Pull Through** – 30lb/30lb/30lb
-2. **Cable Hip Extension** – 50lb/50lb/50lb 
+1. **[Cable](https://www.youtube.com/watch?v=IU-ERkjTKXA)/[Sled](https://youtu.be/kZyoyXUYYnQ?si=g3JDFGSTlRTOKzbi) Pull Through** – 30lb/30lb/30lb
+2. **[Cable Hip Extension](https://www.youtube.com/watch?v=Fr6fdKPdyfM)** – 50lb/50lb/50lb 
 3. **Hip Thrust(Unilateral/Bilateral-Perform with Medium Band)** - 50lb /60lb/90lb | 50lb/90lb/130lb 
 4. **Tib Bar Raise** – 5lb/5lb/5lb 
 
 
 #### **Session 3: Stability, Mobility, and Accessories (Control + Balance)**
 1. **Trap Bar Squat Jump** - 20lb/40lb/50lb
-2. **Cable Side Kick** – 20lb/20lb/20lb
-3. **Cable Hip Flexion** – 30lb/30lb/30lb
+2. **[Cable Side Kicks](https://www.youtube.com/watch?v=jYuN92LGzpA)** – 20lb/20lb/20lb
+3. **[Cable Hip Flexion](https://www.youtube.com/watch?v=MUvXfV97-Us)** – 30lb/30lb/30lb
 4. **Abduction Machine (Outer Thigh)** – 60lb/80lb/130lb
 5. **Band Scarecrow Raises** - 20lb/20lb/20lb
 6. **Leg Extension** – 60lb/90lb/120lb
-
+7. **[Cable Kickback](https://www.youtube.com/watch?v=SqO-VUEak2M)** – 20lb/20lb/20lb
 ### End Session Depending Session Type
 #### Core
 1. **[Kneeling Cable Crunch](https://www.youtube.com/watch?v=3qjoXDTuyOE)**(Top Angle) - 50lb/50lb/50lb 
@@ -429,8 +429,8 @@ Static stretches can be active or passive with external force like maybe a plank
 	1. Box Elevated Lowering pistol squat
 	2. Box Elevated Raising pistol squat
 	3. hand on wall pistol squat
-	4. **Barbell Pistol Squat**
-5. **Dumbbell ATG Split Squat** - 10lb/10lb/10lb 
+	4. **[Barbell Pistol Squat](https://youtu.be/G-neztXXSCA?si=M3l8EqL0Y4O9ANtC)** - 10lb/10lb/10lb 
+5. **[Dumbbell ATG Split Squat](https://youtu.be/j39uGbXnbYw?si=DSL98N7FTt1xr8O1)** - 10lb/10lb/10lb 
 
 ## Home Training 
 ##### Balance Board Stability Program
