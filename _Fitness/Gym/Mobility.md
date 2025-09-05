@@ -13,6 +13,15 @@ dg-publish:
 ---
 ### Mobility Training
 
+##### Multi Mobility Flow Exercise
+#todo/BAU/Workout/try 
+- [ ] Squat push shoulder to end of range
+- [ ] Hip up grab heels look up
+- [ ] Stand flex upper body into body while bent at hip repeat
+
+
+
+
 #### Arms
 - [ ] [Elevated Prayer Stretch](https://youtu.be/c7cnNg6rBes?si=fo9zL9t_O3WrLgrR)
 

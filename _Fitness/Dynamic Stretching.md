@@ -57,13 +57,6 @@ Start with a dynamic stretch to Improve blood flow and flexibility. End with a s
 #### Activate Muscle & Mobilize Range of Motion
 _~5–10 minutes total – pick 3–5 each position_ 
 
-##### Multi Mobility Flow Exercise
-#todo/BAU/Workout/try 
-- [ ] Squat push shoulder to end of range
-- [ ] Hip up grab heels look up
-- [ ] Stand flex upper body into body while bent at hip repeat
-
-
 ##### **Grounded On Back**
 ###### Upper Back 
 - [Open Book Stretch](https://www.youtube.com/watch?v=k8bDrMMP9H0) 
