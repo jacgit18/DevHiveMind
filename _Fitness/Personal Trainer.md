@@ -165,7 +165,7 @@ Alternate each month keeping the week training phase in to account the weights f
 ### Full Body Day Part 1 Saturday(Optional MMA) 
 1. ***Airdyne Bike || Row Machine || Sprint || Jump Rope***
 2. **[[Dynamic Stretching]]**
-3. Halo (shoulder mobility + stability)  ✅
+3.   
 4. Cable Pec Minor Fly/Chest Fly 
 5. DB Cross Body Fly
 6. Band - V Raise | **Scarecrow**
