@@ -290,10 +290,10 @@ standing chest supported upright low row pulling motion kind of like a reverse d
 
 
 
-[Supine Shoulder Slides - Hooklying Position - YouTube](https://youtu.be/ODc0f0ZPeOE?si=ssRpY3rY2AlblSXx)
 
 
-[Rotator cuff 90 degrees external rotation with dumbbell - YouTube](https://youtu.be/EUMsYC_W3aI?si=GFgIUffRsKjwesZU)
+
+
 
 
 

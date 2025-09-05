@@ -17,8 +17,8 @@ dg-publish:
 #todo/BAU/Workout/try 
 - [ ] Squat push shoulder to end of range
 - [ ] Hip up grab heels look up
-- [ ] Stand flex upper body into body while bent at hip repeat
-
+- [ ] Stand flex upper body into body while bent at hip repeat 
+- [ ] [Sky Squat Reach](https://www.youtube.com/watch?v=Zv1wILGzeec) || [T-spine band rotation mobility](https://youtu.be/qQCc_zulZpg?si=2iUqiuZb0Zy8DUC8) || [Deep Squat w/ Band Single Arm Reach](https://www.youtube.com/watch?v=VpBlbi7TNUc) 
 
 
 
