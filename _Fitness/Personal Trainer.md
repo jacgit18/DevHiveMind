@@ -143,7 +143,7 @@ Alternate each month keeping the week training phase in to account the weights f
 
 | Month           | Back Extension                                                                                                         | ROM                                                 | Upper Body                      |                        | Leg Focus                |           | Sled                             | Suitcase/Farmer                 | ROM            |
 | --------------- | ---------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------- | ------------------------------- | ---------------------- | ------------------------ | --------- | -------------------------------- | ------------------------------- | -------------- |
-| 1 (Odd months)  | Unilateral back ext 2x8 with 5 sec ISO & Roman Chair Hip abduction                                                     | Halo + [Scarecrow](https://youtu.be/qzNQ3_TQHDs)    | Unilateral Arm(were it applies) | Chin-up                | Unilateral-leg variation | Leg Press | Push to Lateral(left/right) Pull | Suitcase Bottom Ups             | Bottom Ups     |
+| 1 (Odd months)  | Unilateral back ext 2x8 with 5 sec ISO & [Roman Chair Hip Abduction](https://youtu.be/j5HWZOfIePI?si=EsYf8Gg0rFO16y-p) | Halo + [Scarecrow](https://youtu.be/qzNQ3_TQHDs)    | Unilateral Arm(were it applies) | Chin-up                | Unilateral-leg variation | Leg Press | Push to Lateral(left/right) Pull | Suitcase Bottom Ups             | Bottom Ups     |
 | 2 (Even months) | Bilateral Back ext 4x8 with 10 sec ISO & [Side Lateral QL Extension](https://youtu.be/UaydER2VIUc?si=wkQxbIqiz7lJQF_7) | Super ROM + [V Raise](https://youtu.be/5WBdE0TSoUQ) | Bilateral Arm                   | Neutral/Narrow Pull-up | Bilateral variation      | HackSmith | Push to Pull                     | Banded Suitcase or Farmer Carry | Shoulder Press |
 
 
@@ -410,7 +410,7 @@ Static stretches can be active or passive with external force like maybe a plank
 ##### Upper
 ###### Push
 -  **[Landmine Shoulder Z Press](https://youtu.be/app94pzXOuU?si=kOpaa_oC9HkpkRNv)** - 10lb/10lb/10lb 
--  **[Landmine](https://youtu.be/Zb-l68-4KFM?si=I8zR3VtIppuQNJk_)** || KB || [Resistance Band](https://www.youtube.com/watch?v=kI2H5xGnxcM) || [Rope](https://www.youtube.com/watch?v=JBz7PUxDyE4)  Russian Twist- 10lb/10lb/10lb
+-  **[Landmine](https://youtu.be/Zb-l68-4KFM?si=I8zR3VtIppuQNJk_)** || KB || [Resistance Band](https://www.youtube.com/watch?v=kI2H5xGnxcM) || [Rope](https://www.youtube.com/watch?v=JBz7PUxDyE4) Russian Twist- 10lb/10lb/10lb
 - **[Landmine Twist](https://www.youtube.com/watch?v=M93HfnAVIl8)** - 10lb/10lb/10lb
 -  ***[Landmine Rotational Press](https://www.youtube.com/watch?v=ONDeomDVlbE) - 10lb/10lb/10lb***
 
