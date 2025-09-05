@@ -122,6 +122,14 @@ _~5–10 minutes total – pick 3–5 each position_
 ##### **Standing**
 *Skip and pogo jump if in a hurry before sprinting*
 
+###### Multi Mobility Flow Exercise
+#todo/BAU/Workout/try 
+- [ ] Squat push shoulder to end of range
+- [ ] Hip up grab heels look up
+- [ ] Stand flex upper body into body while bent at hip repeat 
+- [ ] [Sky Squat Reach](https://www.youtube.com/watch?v=Zv1wILGzeec) || [Deep Squat Band Single Arm Reach](https://youtu.be/qQCc_zulZpg?si=2iUqiuZb0Zy8DUC8)
+
+
 ###### Core
 - [Offset Walk](https://www.youtube.com/watch?v=Fc-27p17TPE)
 
@@ -154,6 +162,12 @@ _~5–10 minutes total – pick 3–5 each position_
 
 ###### Neck
 - **Neck Rolls** – Slow circles, 5 reps each direction
+
+###### Spine
+- [Body Waves](https://youtu.be/kBFg1mgCe0A?si=VyoasKccy3rlSq5D)
+- [Spinal Waves](https://youtu.be/KCfh_wCssK8?si=QaERnrtYGrEVxAsZ)
+-  [Half Kneeling Thoracic Spine Rotation with Foam Roller & MediBall](https://youtu.be/xkiQPLWeLZo?si=tUY19TzqQ5pJxqdi)
+-  [Foam Roller Thoracic Extension](https://youtu.be/9Y11Kc0E0og?si=VLP-WKR1BoKK7fA1)
 
 ###### Shoulder
 - Twisted arms
