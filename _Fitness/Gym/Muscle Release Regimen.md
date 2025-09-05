@@ -22,7 +22,7 @@ dg-publish:
 
 ---
 
-### 🦶 **FEET & LOWER LEG & [[Small Joints Muscle|Toes]]**
+### 🦶 **FEET & LOWER LEG & Toes**
 
 |Area|Tool|Duration|Notes|
 |---|---|---|---|

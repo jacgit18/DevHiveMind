@@ -52,17 +52,6 @@ Start with a dynamic stretch to Improve blood flow and flexibility. End with a s
 ---
 > **Start off Back like a baby and progress to standing then running**
 
-### Mobility Training
-
-#### Shoulder
-- [ ] [Elevated Prayer Stretch](https://youtu.be/c7cnNg6rBes?si=fo9zL9t_O3WrLgrR)
-- [ ] Halo
-
-#### Spine
-- [ ] [Half Kneeling Thoracic Spine Rotation with Foam Roller & MediBall](https://youtu.be/xkiQPLWeLZo?si=tUY19TzqQ5pJxqdi)
-- [ ] [Foam Roller Thoracic Extension](https://youtu.be/9Y11Kc0E0og?si=VLP-WKR1BoKK7fA1)
-
-
 
 
 #### Activate Muscle & Mobilize Range of Motion
