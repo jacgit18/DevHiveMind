@@ -165,7 +165,7 @@ Alternate each month keeping the week training phase in to account the weights f
 ### Full Body Day Part 1 Saturday(Optional MMA) 
 1. ***Airdyne Bike || Row Machine || Sprint || Jump Rope***
 2. **[[Dynamic Stretching]]**(Includes mobility stretches)
-3. Mobility: ROM in Table above ✅
+3. Mobility: ROM in table above 2x8 each excercise✅
 4. Cable Pec Minor Fly/Chest Fly 
 5. DB Cross Body Fly
 6. **Clean & Jerk Press** (explosive power)  
