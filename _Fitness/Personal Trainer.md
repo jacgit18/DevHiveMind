@@ -141,10 +141,10 @@ The general principles of **training phases** like strength and hypertrophy appl
 #### Schedule for Alternating Variation in Exercises
 Alternate each month keeping the week training phase in to account the weights follow like this when alternating phase in session **explosive** to **hypertrophy** | **explosive** to **strength** | **strength** to **hypertrophy** also weights follow ***explosive/hypertrophy/strength***.
 
-| Month           | Back Extension                                                     | Upper Body                      |                        | Leg Focus                |           | Sled                             | ROM                 | Suitcase/Farmer                 | ROM            |
-| --------------- | ------------------------------------------------------------------ | ------------------------------- | ---------------------- | ------------------------ | --------- | -------------------------------- | ------------------- | ------------------------------- | -------------- |
-| 1 (Odd months)  | Unilateral back ext 2x8 with 5 sec ISO & Roman Chair Hip abduction | Unilateral Arm(were it applies) | Chin-up                | Unilateral-leg variation | Leg Press | Push to Lateral(left/right) Pull | Halo + Scarecrow    | Suitcase Bottom Ups             | Bottom Ups     |
-| 2 (Even months) | Bilateral Back ext 4x8 with 10 sec ISO & Side Lateral QL Extension | Bilateral Arm                   | Neutral/Narrow Pull-up | Bilateral variation      | HackSmith | Push to Pull                     | Super ROM + V Raise | Banded Suitcase or Farmer Carry | Shoulder Press |
+| Month           | Back Extension                                                     | Upper Body                      |                        | Leg Focus                |           | ROM                 | Sled                             | Suitcase/Farmer                 | ROM            |
+| --------------- | ------------------------------------------------------------------ | ------------------------------- | ---------------------- | ------------------------ | --------- | ------------------- | -------------------------------- | ------------------------------- | -------------- |
+| 1 (Odd months)  | Unilateral back ext 2x8 with 5 sec ISO & Roman Chair Hip abduction | Unilateral Arm(were it applies) | Chin-up                | Unilateral-leg variation | Leg Press | Halo + Scarecrow    | Push to Lateral(left/right) Pull | Suitcase Bottom Ups             | Bottom Ups     |
+| 2 (Even months) | Bilateral Back ext 4x8 with 10 sec ISO & Side Lateral QL Extension | Bilateral Arm                   | Neutral/Narrow Pull-up | Bilateral variation      | HackSmith | Super ROM + V Raise | Push to Pull                     | Banded Suitcase or Farmer Carry | Shoulder Press |
 
 
 #todo/BAU/Workout 
@@ -164,8 +164,8 @@ Alternate each month keeping the week training phase in to account the weights f
 
 ### Full Body Day Part 1 Saturday(Optional MMA) 
 1. ***Airdyne Bike || Row Machine || Sprint || Jump Rope***
-2. **[[Dynamic Stretching]]**
-3. ROM 
+2. **[[Dynamic Stretching]]**(Includes mobility stretches)
+3. Mobility: ROM
 4. Cable Pec Minor Fly/Chest Fly 
 5. DB Cross Body Fly
 6. **Clean & Jerk Press** (explosive power)  
@@ -392,7 +392,6 @@ All leg cable excercise are done at a low angle. Avoid squatting with running sh
 Static stretches can be active or passive with external force like maybe a plank with a plate on the back. Follow excercise from [Pancake Stretch Progression](https://youtu.be/iO1tsB5ygMg?si=YRVgj1ZB-Z_TRNvb) which are spread across this document.
 
 - Butterfly(Try doing weighted butterfly with weight on each knee)
-- Standing Hamstring stretch
 - Elevated Pigeon Stretch - On [incline bench](https://youtu.be/szFOKnVgGpQ?si=r0IMfaQKljbJeS6P) then progress to [flat bench](https://youtu.be/BmVEn3LfHcg?si=ZDSdN6h4TePiPIj8) or stick to floor (30 sec per side) 
 - [Cossack Squat](https://youtu.be/fyAl4o1BGVo?si=OalBzfY8-KxgS7qA)
 - [Forward Fold Stretch](https://youtu.be/goN4rWbQUn4?si=pPni5D3dJWgLUboT) 
