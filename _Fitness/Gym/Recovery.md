@@ -288,7 +288,7 @@ standing chest supported upright low row pulling motion kind of like a reverse d
 
 
 
-[Elevated Prayer Stretch - YouTube](https://youtu.be/c7cnNg6rBes?si=fo9zL9t_O3WrLgrR)
+
 
 [Supine Shoulder Slides - Hooklying Position - YouTube](https://youtu.be/ODc0f0ZPeOE?si=ssRpY3rY2AlblSXx)
 
