@@ -178,13 +178,12 @@ Alternate each month keeping the week training phase in to account the weights f
 13. Pallof Press (anti-rotation core) - can be done with bands  📈
 14. Cable Assisted Pancake 📈
 15. Unilateral RDL 📈
-16. *Stability Swiss Ball Training*(Pick One)
-17. **[[Personal Trainer#Priority Static Stretch to develop splits| Static Stretching]]**
+16. **[[Personal Trainer#Priority Static Stretch to develop splits| Static Stretching]]**
 
 ### Full Body Day Part 2 Sunday Sprint Day
 1. ***Airdyne Bike || Row Machine || Sprint || Jump Rope***
 2. **Dynamic Stretching**
-3. Halo (shoulder mobility + stability)  ✅
+3. Mobility: Halo (shoulder mobility + stability)  ✅
 4. Cable Pec Minor Fly/Chest Fly 
 5. Sled Push/Pull (conditioning + legs)  
 6. Zottman Curl (biceps + forearms)  - No Chin-ups on this day 
@@ -195,19 +194,22 @@ Alternate each month keeping the week training phase in to account the weights f
 11. Pallof Press (anti-rotation core) - can be done with bands  📈
 12. Cable Assisted Pancake 📈
 13. Unilateral RDL 📈
-14. **Static Stretching**
+14. Stability: *Swiss Ball Training*(Pick One)
+15. **Static Stretching**
 ### Lower Body Day Part 1 Monday(MMA)
 1. ***Airdyne Bike || Row Machine || Sprint || Jump Rope***
 2. **Dynamic Stretching**
-3. Prone Leg Curl ✅  
-4. DB Bulgarian Split Squat || Walking Barbell Zercher Lunge 
-5. Deadlift  
-6. Hack Squat *or* Leg Press | | Curlbar Behind Back Kneeling Squat on Toes || B-Stance Zercher Squat
-7. Hip Thrust (glutes focus)  
-8. Trap Bar Squat Jump (power finisher)  
-9. Back Extension (posterior chain, low back protection)  📈
-10. Kettlebell Leg Raise📈
-11. **Static Stretching**
+3. Mobility: Hal  ✅
+4. Prone Leg Curl ✅  
+5. DB Bulgarian Split Squat || Walking Barbell Zercher Lunge 
+6. Deadlift  
+7. Hack Squat *or* Leg Press | | Curlbar Behind Back Kneeling Squat on Toes || B-Stance Zercher Squat
+8. Hip Thrust (glutes focus)  
+9. Trap Bar Squat Jump (power finisher)  
+10. Back Extension (posterior chain, low back protection)  📈
+11. Kettlebell Leg Raise📈
+12. Stability: *Swiss Ball Training*(Pick One)
+13. **Static Stretching**
 ### Upper Body Day Part 1 Tuesday Sprint Day - Meal Prep Day 2
 1. ***Airdyne Bike || Row Machine || Sprint || Jump Rope***
 2. **Dynamic Stretching**
