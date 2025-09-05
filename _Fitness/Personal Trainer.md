@@ -199,7 +199,7 @@ Alternate each month keeping the week training phase in to account the weights f
 ### Lower Body Day Part 1 Monday(MMA)
 1. ***Airdyne Bike || Row Machine || Sprint || Jump Rope***
 2. **Dynamic Stretching**
-3. Mobility: Hal  ✅
+3. Mobility:   ✅
 4. Prone Leg Curl ✅  
 5. DB Bulgarian Split Squat || Walking Barbell Zercher Lunge 
 6. Deadlift  
