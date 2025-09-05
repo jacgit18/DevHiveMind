@@ -116,6 +116,12 @@ The general principles of **training phases** like strength and hypertrophy appl
 ### Stability Training 
 - [ ] Follow [[Stability Ball Workout Plan]] to build stability.
 
+### Mobility Training
+
+#### Spine
+- [ ] [Half Kneeling Thoracic Spine Rotation with Foam Roller & MediBall](https://youtu.be/xkiQPLWeLZo?si=tUY19TzqQ5pJxqdi)
+- [ ] [Foam Roller Thoracic Extension](https://youtu.be/9Y11Kc0E0og?si=VLP-WKR1BoKK7fA1)
+
 ### Recovery
 #todo/BAU/Workout 
 - [ ] Follow [[Muscle Release Regimen |Muscle release regimen with tools]] & merge with [[Recovery]] along with [[Small Joints Muscle]]

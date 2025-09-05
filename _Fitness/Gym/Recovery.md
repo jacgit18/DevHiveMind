@@ -44,7 +44,7 @@ Adjust intensity based on your goals: _maintenance vs. injury recovery_.
     
 - **Thoracic Spine (1 min):** Roll upper/mid-back with hands behind head.  
     _Tip:_ Extend over roller to open chest.
-    
+
 
 ---
 
@@ -245,12 +245,12 @@ Here’s a **clear list of what NOT to touch or do** during your foam rolling, l
 
 ## **✅ Safe Alternatives for Problem Areas**
 
-|**Area to Avoid**|**Safer Alternative**|
-|---|---|
-|Lower Back|Swiss ball pelvic tilts|
-|IT Band|Foam roll quads/glutes|
-|Front of Shin|Calf rolling + manual massage|
-|Neck|Peanut ball suboccipital release|
+| Area to Avoid | Safer Alternative                |
+| ------------- | -------------------------------- |
+| Lower Back    | Swiss ball pelvic tilts          |
+| IT Band       | Foam roll quads/glutes           |
+| Front of Shin | Calf rolling + manual massage    |
+| Neck          | Peanut ball suboccipital release |
 
 ---
 
@@ -284,15 +284,9 @@ standing chest supported upright low row pulling motion kind of like a reverse d
 
 
 
-[Half Kneeling Thoracic Spine Rotation with a Foam Roller](https://youtu.be/xkiQPLWeLZo?si=tUY19TzqQ5pJxqdi)
-
-[Half Kneeling Thoracic Windmill (Open) - YouTube](https://youtu.be/pFqBNPIhNtA?si=Vgvf_AI_JRIaTTsM)
 
 
-[Thoracic Seated Rotation + Side Flexion - YouTube](https://youtu.be/-Mpiy5qa8B8?si=F0Kb_DUluXDODs4L)
 
-
-[Foam Roller Thoracic Extension - YouTube](https://youtu.be/9Y11Kc0E0og?si=VLP-WKR1BoKK7fA1)
 
 [Elevated Prayer Stretch - YouTube](https://youtu.be/c7cnNg6rBes?si=fo9zL9t_O3WrLgrR)
 
