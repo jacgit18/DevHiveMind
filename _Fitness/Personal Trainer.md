@@ -112,7 +112,7 @@ The general principles of **training phases** like strength and hypertrophy appl
 - **Strength**: +5 lbs/week (upper), +10 lbs (lower) 4x8
 - **Injury Rule**: If pain >2/10, regress load or variation
 
-
+## Pre Workout
 ### Stability Training 
 - [ ] Follow [[Stability Ball Workout Plan]] to build stability.
 
