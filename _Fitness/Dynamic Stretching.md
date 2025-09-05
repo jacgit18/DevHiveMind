@@ -62,8 +62,7 @@ _~5–10 minutes total – pick 3–5 each position_
 - [ ] Squat push shoulder to end of range
 - [ ] Hip up grab heels look up
 - [ ] Stand flex upper body into body while bent at hip repeat
-- [ ] [Body Waves](https://youtu.be/kBFg1mgCe0A?si=VyoasKccy3rlSq5D)
-- [ ] [Spinal Waves](https://youtu.be/KCfh_wCssK8?si=QaERnrtYGrEVxAsZ)
+
 
 ##### **Grounded On Back**
 ###### Upper Back 
