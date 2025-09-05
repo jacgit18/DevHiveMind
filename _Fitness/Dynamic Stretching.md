@@ -92,6 +92,7 @@ _~5–10 minutes total – pick 3–5 each position_
 
 ###### Back & Neck
 - [Band Assisted Thoracic Rotation](https://www.youtube.com/watch?v=3NgyG2JImfw)
+- [Elevated Prayer Stretch](https://youtu.be/c7cnNg6rBes?si=fo9zL9t_O3WrLgrR)
 
 ###### Core
 - BirdDog || [Bird Dog on Swiss Ball](https://www.youtube.com/watch?v=uQpqxubnzPM)(Anti Rotation)
@@ -105,13 +106,10 @@ _~5–10 minutes total – pick 3–5 each position_
 	- Breathe deeply as you push your chest outward, squeezing your shoulder blades together. Then, reverse the motion by pulling your chest inward and separating your shoulder blades, keeping your elbows straight throughout the movement.
 - [Dive Bomber Push-Up](https://www.youtube.com/watch?v=mvNcSF-nXg4)
 - [Pike Push Up](https://www.youtube.com/watch?v=Ajna6AxQdtw) 
+- [Mike Tyson Pushup](https://www.youtube.com/watch?v=j-oSVFU2eMc)
 - Single Arm Pushup 
 
-###### Glutes
-- [Quadruped Kickbacks](https://www.youtube.com/watch?v=GO4ZH3L72ck) 
-
 ###### Multi 
-- [Mike Tyson Pushup](https://www.youtube.com/watch?v=j-oSVFU2eMc)
 - ***[Scorpion Stretch](https://youtu.be/uNDfgnWN2G0?si=EpYL2roS_qd9LBPy)*** 
 - ***Supine lower body*** - t position leg raise to opposite hand (6 reps/side)
 - [Tuck Jump to L Sit](https://youtu.be/vnr7epVV6YE?si=IZJNc7a61GR9Tloo)(can limit [range](https://www.youtube.com/watch?v=LCF6rkH9R30)) - do this but start push up position and go to seated position keeping hands down without the hold and go back to push up position
@@ -137,9 +135,10 @@ _~5–10 minutes total – pick 3–5 each position_
 - PVC Walk
 
 ###### Hip
-- ***Leg Swings*** – Front/back & side-to-side
 - [Hip Airplane](https://youtu.be/2hIL15iGuNA?si=4F-c9pubcVK9mTze)
 - ***Hip Circles / Openers*** – Knee lift and rotate out
+- ***Leg Swings*** – Front/back & side-to-side
+
 
 ###### Multi
 - [Arm Circles](https://www.youtube.com/watch?v=YGXgpcr7UY4)

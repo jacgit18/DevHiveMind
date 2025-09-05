@@ -23,12 +23,8 @@ dg-publish:
 
 
 #### Arms
-- [ ] [Elevated Prayer Stretch](https://youtu.be/c7cnNg6rBes?si=fo9zL9t_O3WrLgrR)
 
 
-- [ ] Halo
-- [ ] Band - V Raise | **Scarecrow**
-- [ ] Super ROM Six-Ways Raise
 
 #### Spine
 - [ ] [Body Waves](https://youtu.be/kBFg1mgCe0A?si=VyoasKccy3rlSq5D)
