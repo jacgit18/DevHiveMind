@@ -116,14 +116,7 @@ The general principles of **training phases** like strength and hypertrophy appl
 ### Stability Training 
 - [ ] Follow [[Stability Ball Workout Plan]] to build stability.
 
-### Mobility Training
 
-#### Shoulder
-- [ ] [Elevated Prayer Stretch](https://youtu.be/c7cnNg6rBes?si=fo9zL9t_O3WrLgrR)
-
-#### Spine
-- [ ] [Half Kneeling Thoracic Spine Rotation with Foam Roller & MediBall](https://youtu.be/xkiQPLWeLZo?si=tUY19TzqQ5pJxqdi)
-- [ ] [Foam Roller Thoracic Extension](https://youtu.be/9Y11Kc0E0og?si=VLP-WKR1BoKK7fA1)
 
 ### Recovery
 #todo/BAU/Workout 
@@ -155,7 +148,6 @@ Alternate each month keeping the week training phase in to account the weights f
 
 
 #todo/BAU/Workout 
-- [ ] Start with dynamic [[Stretch Regimen]]
 - [ ] Max excercise to do per session should be 8
 - [ ] Maybe have a free up month with no specific structure at end of each quarter.
 - [ ] Limit sprinting on ***Hypertrophy week*** for non leg days and drink beet juice with baking soda. 
@@ -172,41 +164,39 @@ Alternate each month keeping the week training phase in to account the weights f
 
 ### Full Body Day Part 1 Saturday(Optional MMA) 
 1. ***Airdyne Bike || Row Machine || Sprint || Jump Rope***
-2. **Dynamic Stretching**
+2. **[[Dynamic Stretching]]**
 3. Halo (shoulder mobility + stability)  ✅
-4. DB Switch Catch ✅ - 1 min
-5. Cable Pec Minor Fly/Chest Fly 
-6. DB Cross Body Fly
-7. Band - Upright Row | V Raise | **Scarecrow**
-8. **Clean & Jerk Press** (explosive power)  
-9. **Sled Push/Pull** (conditioning + legs)  
-10. *Bench Reverse Crunch || Dragonfly ||  Cable Reverse Crunch*
-11. Cable WoodChopper || **Landmine Twist**
-12. KB Around the World
-13. KB Jefferson Curls/Reverse Jefferson Curls - Keep weight & reps low 
-14. Ab Roller 📈
-15. Pallof Press (anti-rotation core) - can be done with bands  📈
-16. Cable Assisted Pancake 📈
-17. Unilateral RDL 📈
-18. *Stability Swiss Ball Training*(Pick One)
-19. **[[Personal Trainer#Priority Static Stretch to develop splits| Static Stretching]]**
+4. Cable Pec Minor Fly/Chest Fly 
+5. DB Cross Body Fly
+6. Band - V Raise | **Scarecrow**
+7. **Clean & Jerk Press** (explosive power)  
+8. **Sled Push/Pull** (conditioning + legs)  
+9. *Bench Reverse Crunch || Dragonfly ||  Cable Reverse Crunch*
+10. Cable WoodChopper || **Landmine Twist**
+11. KB Around the World
+12. KB Jefferson Curls/Reverse Jefferson Curls - Keep weight & reps low 
+13. Ab Roller 📈
+14. Pallof Press (anti-rotation core) - can be done with bands  📈
+15. Cable Assisted Pancake 📈
+16. Unilateral RDL 📈
+17. *Stability Swiss Ball Training*(Pick One)
+18. **[[Personal Trainer#Priority Static Stretch to develop splits| Static Stretching]]**
 
 ### Full Body Day Part 2 Sunday Sprint Day
 1. ***Airdyne Bike || Row Machine || Sprint || Jump Rope***
 2. **Dynamic Stretching**
 3. Halo (shoulder mobility + stability)  ✅
-4. DB Switch Catch ✅ - 1 min
-5. Cable Pec Minor Fly/Chest Fly 
-6. Sled Push/Pull (conditioning + legs)  
-7. Zottman Curl (biceps + forearms)  - No Chin-ups on this day 
-8. Bayesian Cable Curl || Incline Bench Preacher Curl/Reverse Preacher Curl
-9. Bench Reverse Crunch / Dragonfly / Cable Reverse Crunch
-10. Cable WoodChopper || **Landmine Twist**
-11. Back Extension (posterior chain, low back protection)  📈
-12. Pallof Press (anti-rotation core) - can be done with bands  📈
-13. Cable Assisted Pancake 📈
-14. Unilateral RDL 📈
-15. **Static Stretching**
+4. Cable Pec Minor Fly/Chest Fly 
+5. Sled Push/Pull (conditioning + legs)  
+6. Zottman Curl (biceps + forearms)  - No Chin-ups on this day 
+7. Bayesian Cable Curl || Incline Bench Preacher Curl/Reverse Preacher Curl
+8. Bench Reverse Crunch / Dragonfly / Cable Reverse Crunch
+9. Cable WoodChopper || **Landmine Twist**
+10. Back Extension (posterior chain, low back protection)  📈
+11. Pallof Press (anti-rotation core) - can be done with bands  📈
+12. Cable Assisted Pancake 📈
+13. Unilateral RDL 📈
+14. **Static Stretching**
 ### Lower Body Day Part 1 Monday(MMA)
 1. ***Airdyne Bike || Row Machine || Sprint || Jump Rope***
 2. **Dynamic Stretching**
@@ -223,18 +213,17 @@ Alternate each month keeping the week training phase in to account the weights f
 1. ***Airdyne Bike || Row Machine || Sprint || Jump Rope***
 2. **Dynamic Stretching**
 3. Super ROM Six-Ways Raise (deltoid health)  ✅
-4. DB Switch Catch ✅ - 1 min
-5. Cable Pec Minor Fly/Chest Fly 
-6. Chest/Bench Press  
-7. Tricep Dip || **Incline Bilateral/Unilateral DB Overhead Tricep Extension** 
-8. Single Arm Lat Pulldown
-9. Arnold Press || Suitcase Bottom Up March || Landmine Shoulder Z Press
-10. Zottman Curl (biceps + forearms)  - No Chin-ups on this day 
-11. KB Around the World
-12. Bayesian Cable Curl || Incline Bench Preacher Curl/Reverse Preacher Curl
-13. Cable Assisted Pancake 📈
-14. Kneeling Cable Crunch  📈
-15. Pallof Press (anti-rotation core) - can be done with bands  📈
+4. Cable Pec Minor Fly/Chest Fly 
+5. Chest/Bench Press  
+6. Tricep Dip || **Incline Bilateral/Unilateral DB Overhead Tricep Extension** 
+7. Single Arm Lat Pulldown
+8. Arnold Press || Suitcase Bottom Up March || Landmine Shoulder Z Press
+9. Zottman Curl (biceps + forearms)  - No Chin-ups on this day 
+10. KB Around the World
+11. Bayesian Cable Curl || Incline Bench Preacher Curl/Reverse Preacher Curl
+12. Cable Assisted Pancake 📈
+13. Kneeling Cable Crunch  📈
+14. Pallof Press (anti-rotation core) - can be done with bands  📈
 
 ### Lower Body Day Part 2 Wednesday(Optional MMA)
 1. ***Airdyne Bike || Row Machine || Sprint || Jump Rope***
@@ -251,20 +240,19 @@ Alternate each month keeping the week training phase in to account the weights f
 1. ***Airdyne Bike || Row Machine || Sprint || Jump Rope***
 2. **Dynamic Stretching**
 3. Super ROM Six-Ways Raise (deltoid health)  ✅
-4. DB Switch Catch ✅ - 1 min
-5. Cable Pec Minor Fly/Chest Fly ✅
-6. Chest/Bench Press  
-7. Chin-up/Pull-up
-8. Tricep Dip || **Incline Bilateral/Unilateral DB Overhead Tricep Extension** 
-9. Single Arm Lat Pulldown
-10. Arnold Press || Suitcase Bottom Up March || Landmine Shoulder Z Press
-11. Bench Reverse Crunch / Dragonfly / Cable Reverse Crunch
-12. KB Around the World
-13. Ab Roller 📈
-14. Cable Assisted Pancake 📈
-15. Kneeling Cable Crunch  📈
-16. Pallof Press (anti-rotation core) - can be done with bands  📈
-17. **Static Stretching**
+4. Cable Pec Minor Fly/Chest Fly ✅
+5. Chest/Bench Press  
+6. Chin-up/Pull-up
+7. Tricep Dip || **Incline Bilateral/Unilateral DB Overhead Tricep Extension** 
+8. Single Arm Lat Pulldown
+9. Arnold Press || Suitcase Bottom Up March || Landmine Shoulder Z Press
+10. Bench Reverse Crunch / Dragonfly / Cable Reverse Crunch
+11. KB Around the World
+12. Ab Roller 📈
+13. Cable Assisted Pancake 📈
+14. Kneeling Cable Crunch  📈
+15. Pallof Press (anti-rotation core) - can be done with bands  📈
+16. **Static Stretching**
 
 
 ### Nobody Day Friday  - Meal Prep Day 1
@@ -274,7 +262,7 @@ Alternate each month keeping the week training phase in to account the weights f
 
 ## Special Free Week
 ### Explosive Plyometric Day
-
+1. DB Switch Catch ✅ - 1 min
 
 
 ## Body Part Specific Programs 
