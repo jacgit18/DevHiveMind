@@ -177,7 +177,7 @@ Alternate each month keeping the week training phase in to account the weights f
 4. DB Switch Catch ✅ - 1 min
 5. Cable Pec Minor Fly/Chest Fly 
 6. DB Cross Body Fly
-7. Band - Upright Row | V Raise | Scarecrow
+7. Band - Upright Row | V Raise | **Scarecrow**
 8. **Clean & Jerk Press** (explosive power)  
 9. **Sled Push/Pull** (conditioning + legs)  
 10. *Bench Reverse Crunch || Dragonfly ||  Cable Reverse Crunch*
@@ -188,7 +188,8 @@ Alternate each month keeping the week training phase in to account the weights f
 15. Pallof Press (anti-rotation core) - can be done with bands  📈
 16. Cable Assisted Pancake 📈
 17. Unilateral RDL 📈
-18. **[[Personal Trainer#Priority Static Stretch to develop splits| Static Stretching]]**
+18. *Stability Swiss Ball Training*(Pick One)
+19. **[[Personal Trainer#Priority Static Stretch to develop splits| Static Stretching]]**
 
 ### Full Body Day Part 2 Sunday Sprint Day
 1. ***Airdyne Bike || Row Machine || Sprint || Jump Rope***
