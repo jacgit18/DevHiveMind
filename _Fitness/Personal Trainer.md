@@ -214,12 +214,11 @@ Alternate each month keeping the week training phase in to account the weights f
 5. Chest/Bench Press  
 6. Tricep Dip || **Incline Bilateral/Unilateral DB Overhead Tricep Extension** 
 7. Single Arm Lat Pulldown
-8. Arnold Press || Landmine Shoulder Z Press
-9. Zottman Curl 
-10. Bayesian Cable Curl || Incline Bench Preacher Curl/Reverse Preacher Curl
-11. Cable Assisted Pancake 📈
-12. Kneeling Cable Crunch  📈
-13. Pallof Press 📈
+8. Arnold Press || **Landmine Shoulder Z Press**
+9. **Zottman Curl** || Bayesian Cable Curl || Incline Bench Preacher Curl/Reverse Preacher Curl
+10. Cable Assisted Pancake 📈
+11. Kneeling Cable Crunch  📈
+12. Pallof Press 📈
 
 ### Lower Body Day Part 2 Wednesday(Optional MMA)
 1. ***Airdyne Bike || Row Machine || Sprint || Jump Rope***
@@ -228,7 +227,7 @@ Alternate each month keeping the week training phase in to account the weights f
 4. Prone Leg Curl ✅  
 5. DB Bulgarian Split Squat  || Walking Barbell Zercher Lunge 
 6. Clean & Jerk Press || **Deadlift**    
-7. Hack Squat *or* Leg Press
+7. Hack Squat *or* Leg Press | | Curlbar Behind Back Kneeling Squat on Toes || B-Stance Zercher Squat
 8. Trap Bar Squat Jump 
 9. Back Extension 📈
 10. Unilateral RDL 📈
@@ -243,7 +242,7 @@ Alternate each month keeping the week training phase in to account the weights f
 6. Chin-up || Pull-up
 7. Tricep Dip || **Incline Bilateral/Unilateral DB Overhead Tricep Extension** 
 8. Single Arm Lat Pulldown
-9. Arnold Press || Landmine Shoulder Z Press
+9. **Arnold Press** || Landmine Shoulder Z Press
 10. Bench Reverse Crunch / Dragonfly / Cable Reverse Crunch
 11. Ab Roller 📈
 12. Cable Assisted Pancake 📈
