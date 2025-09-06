@@ -141,10 +141,10 @@ The general principles of **training phases** like strength and hypertrophy appl
 #### Schedule for Alternating Variation in Exercises
 Alternate each month keeping the week training phase in to account the weights follow like this when alternating phase in session **explosive** to **hypertrophy** | **explosive** to **strength** | **strength** to **hypertrophy** also weights follow ***explosive/hypertrophy/strength***.
 
-| Month           | Back Extension                                                                                                         | ROM                                                 | Upper Body                      |                        | Leg Focus                |           | Sled                             | Suitcase/Farmer                 | ROM            |
-| --------------- | ---------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------- | ------------------------------- | ---------------------- | ------------------------ | --------- | -------------------------------- | ------------------------------- | -------------- |
-| 1 (Odd months)  | Unilateral back ext 2x8 with 5 sec ISO & [Roman Chair Hip Abduction](https://youtu.be/j5HWZOfIePI?si=EsYf8Gg0rFO16y-p) | Halo + [Scarecrow](https://youtu.be/qzNQ3_TQHDs)    | Unilateral Arm(were it applies) | Chin-up                | Unilateral-leg variation | Leg Press | Push to Lateral(left/right) Pull | Suitcase Bottom Ups             | Bottom Ups     |
-| 2 (Even months) | Bilateral Back ext 4x8 with 10 sec ISO & [Side Lateral QL Extension](https://youtu.be/UaydER2VIUc?si=wkQxbIqiz7lJQF_7) | Super ROM + [V Raise](https://youtu.be/5WBdE0TSoUQ) | Bilateral Arm                   | Neutral/Narrow Pull-up | Bilateral variation      | HackSmith | Push to Pull                     | Banded Suitcase or Farmer Carry | Shoulder Press |
+| Month           | Back Extension                                                                                                         | ROM                                                                       | Leg ROM | Upper Body                      |                        | Leg Focus                |           | Sled                             | Suitcase/Farmer                 |
+| --------------- | ---------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------- | ------- | ------------------------------- | ---------------------- | ------------------------ | --------- | -------------------------------- | ------------------------------- |
+| 1 (Odd months)  | Unilateral back ext 2x8 with 5 sec ISO & [Roman Chair Hip Abduction](https://youtu.be/j5HWZOfIePI?si=EsYf8Gg0rFO16y-p) | Halo + [Scarecrow](https://youtu.be/qzNQ3_TQHDs) + KB Around the World    |         | Unilateral Arm(were it applies) | Chin-up                | Unilateral-leg variation | Leg Press | Push to Lateral(left/right) Pull | Suitcase Bottom Ups             |
+| 2 (Even months) | Bilateral Back ext 4x8 with 10 sec ISO & [Side Lateral QL Extension](https://youtu.be/UaydER2VIUc?si=wkQxbIqiz7lJQF_7) | Super ROM + [V Raise](https://youtu.be/5WBdE0TSoUQ) + KB Around the World |         | Bilateral Arm                   | Neutral/Narrow Pull-up | Bilateral variation      | HackSmith | Push to Pull                     | Banded Suitcase or Farmer Carry |
 
 
 #todo/BAU/Workout 
@@ -165,95 +165,91 @@ Alternate each month keeping the week training phase in to account the weights f
 ### Full Body Day Part 1 Saturday(Optional MMA) 
 1. ***Airdyne Bike || Row Machine || Sprint || Jump Rope***
 2. **[[Dynamic Stretching]]**(Includes mobility stretches)
-3. Mobility: ROM in table above 2x8 each excercise✅
-4. Cable Pec Minor Fly/Chest Fly 
-5. DB Cross Body Fly
-6. **Clean & Jerk Press** (explosive power)  
-7. **Sled Push/Pull** (conditioning + legs)  
-8. *Bench Reverse Crunch || Dragonfly ||  Cable Reverse Crunch*
-9. Cable WoodChopper || **Landmine Twist**
-10. KB Around the World
-11. KB Jefferson Curls/Reverse Jefferson Curls - Keep weight & reps low 
-12. Ab Roller 📈
-13. Pallof Press (anti-rotation core) - can be done with bands  📈
-14. Cable Assisted Pancake 📈
-15. Unilateral RDL 📈
-16. **[[Personal Trainer#Priority Static Stretch to develop splits| Static Stretching]]**
+3. **Mobility**: ROM in table above 2x8 each excercise(3 excercise for each month) ✅ 
+4. Cable Pec Minor Fly || Chest Fly || **DB Cross Body Fly**
+5. **Clean & Jerk Press** || Deadlift  
+6. Sled Push/Pull
+7. Cable WoodChopper || **Landmine Twist** || Bottom Up Suitcase/Farmer Carry 
+8. Hanging Knee Raise
+9. **Pallof Press** - can be done with bands  📈
+10. **Bench/Cable Reverse Crunch || Dragonfly || Ab Roller 📈** (Pick One) 
+11. Cable Assisted Pancake 📈
+12. Cable || Kettlebell || Landmine - Unilateral RDL 📈
+13. **[[Personal Trainer#Priority Static Stretch to develop splits| Static Stretching]]**
 
 ### Full Body Day Part 2 Sunday Sprint Day
 1. ***Airdyne Bike || Row Machine || Sprint || Jump Rope***
 2. **Dynamic Stretching**
-3. Mobility: Halo (shoulder mobility + stability)  ✅
-4. Cable Pec Minor Fly/Chest Fly 
-5. Sled Push/Pull (conditioning + legs)  
-6. Zottman Curl (biceps + forearms)  - No Chin-ups on this day 
-7. Bayesian Cable Curl || Incline Bench Preacher Curl/Reverse Preacher Curl
-8. Bench Reverse Crunch / Dragonfly / Cable Reverse Crunch
-9. Cable WoodChopper || **Landmine Twist**
-10. Back Extension (posterior chain, low back protection)  📈
-11. Pallof Press (anti-rotation core) - can be done with bands  📈
-12. Cable Assisted Pancake 📈
-13. Unilateral RDL 📈
-14. Stability: *Swiss Ball Training*(Pick One)
-15. **Static Stretching**
+3. **Mobility**: ROM in table above ✅
+4. Cable Pec Minor Fly || Chest Fly || **DB Cross Body Fly**
+5. **Sled Push/Pull**  
+6. **Zottman Curl** || Bayesian Cable Curl || Incline Bench Preacher Curl/Reverse Preacher Curl
+7. **Bench Reverse Crunch || Dragonfly ||  Cable Reverse Crunch || Ab Roller 📈** 
+8. Cable WoodChopper || **Landmine Twist** || Bottom Up Suitcase/Farmer Carry 
+9. Back Extension 📈
+10. **Pallof Press**  📈
+11. Cable Assisted Pancake 📈
+12. **Stability**:  *Swiss Ball Training*(Pick One)
+13. **Static Stretching**
 ### Lower Body Day Part 1 Monday(MMA)
 1. ***Airdyne Bike || Row Machine || Sprint || Jump Rope***
 2. **Dynamic Stretching**
-3. Mobility:   ✅
+3. **Mobility**:  Leg ROM in table above ✅
 4. Prone Leg Curl ✅  
 5. DB Bulgarian Split Squat || Walking Barbell Zercher Lunge 
-6. Deadlift  
+6. Clean & Jerk Press || **Deadlift**  
 7. Hack Squat *or* Leg Press | | Curlbar Behind Back Kneeling Squat on Toes || B-Stance Zercher Squat
-8. Hip Thrust (glutes focus)  
-9. Trap Bar Squat Jump (power finisher)  
-10. Back Extension (posterior chain, low back protection)  📈
-11. Kettlebell Leg Raise📈
-12. Stability: *Swiss Ball Training*(Pick One)
-13. **Static Stretching**
+8. Hip Thrust 
+9. Trap Bar Squat Jump 
+10. Back Extension  📈
+11. Unilateral RDL 📈
+12. Kettlebell Leg Raise 📈
+13. **Stability**:  *Swiss Ball Training*(Pick One)
+14. **Static Stretching**
 ### Upper Body Day Part 1 Tuesday Sprint Day - Meal Prep Day 2
 1. ***Airdyne Bike || Row Machine || Sprint || Jump Rope***
 2. **Dynamic Stretching**
-3. Super ROM Six-Ways Raise (deltoid health)  ✅
-4. Cable Pec Minor Fly/Chest Fly 
+3. **Mobility**: ROM in table above ✅
+4. Cable Pec Minor Fly || Chest Fly || **DB Cross Body Fly**
 5. Chest/Bench Press  
 6. Tricep Dip || **Incline Bilateral/Unilateral DB Overhead Tricep Extension** 
 7. Single Arm Lat Pulldown
-8. Arnold Press || Suitcase Bottom Up March || Landmine Shoulder Z Press
-9. Zottman Curl (biceps + forearms)  - No Chin-ups on this day 
-10. KB Around the World
-11. Bayesian Cable Curl || Incline Bench Preacher Curl/Reverse Preacher Curl
-12. Cable Assisted Pancake 📈
-13. Kneeling Cable Crunch  📈
-14. Pallof Press (anti-rotation core) - can be done with bands  📈
+8. Arnold Press || Landmine Shoulder Z Press
+9. Zottman Curl 
+10. Bayesian Cable Curl || Incline Bench Preacher Curl/Reverse Preacher Curl
+11. Cable Assisted Pancake 📈
+12. Kneeling Cable Crunch  📈
+13. Pallof Press 📈
 
 ### Lower Body Day Part 2 Wednesday(Optional MMA)
 1. ***Airdyne Bike || Row Machine || Sprint || Jump Rope***
 2. **Dynamic Stretching**
-3. Prone Leg Curl ✅  
-4. DB Bulgarian Split Squat  || Walking Barbell Zercher Lunge 
-5. Deadlift  
-6. Hack Squat *or* Leg Press (depending on recovery)  
-7. Trap Bar Squat Jump (power finisher)  
-8. Back Extension (posterior chain, low back protection)  📈
-9. Kettlebell Leg Raise 📈
+3. **Mobility**:  Leg ROM in table above ✅
+4. Prone Leg Curl ✅  
+5. DB Bulgarian Split Squat  || Walking Barbell Zercher Lunge 
+6. Clean & Jerk Press || **Deadlift**    
+7. Hack Squat *or* Leg Press
+8. Trap Bar Squat Jump 
+9. Back Extension 📈
+10. Unilateral RDL 📈
+11. Kettlebell Leg Raise 📈
 
 ### Upper Body Day Part 2 Thursday Sprint Day(Optional MMA)
 1. ***Airdyne Bike || Row Machine || Sprint || Jump Rope***
 2. **Dynamic Stretching**
-3. Super ROM Six-Ways Raise (deltoid health)  ✅
-4. Cable Pec Minor Fly/Chest Fly ✅
+3. **Mobility**: ROM in table above ✅
+4. Cable Pec Minor Fly || Chest Fly || **DB Cross Body Fly**
 5. Chest/Bench Press  
-6. Chin-up/Pull-up
+6. Chin-up || Pull-up
 7. Tricep Dip || **Incline Bilateral/Unilateral DB Overhead Tricep Extension** 
 8. Single Arm Lat Pulldown
-9. Arnold Press || Suitcase Bottom Up March || Landmine Shoulder Z Press
+9. Arnold Press || Landmine Shoulder Z Press
 10. Bench Reverse Crunch / Dragonfly / Cable Reverse Crunch
-11. KB Around the World
-12. Ab Roller 📈
-13. Cable Assisted Pancake 📈
-14. Kneeling Cable Crunch  📈
-15. Pallof Press (anti-rotation core) - can be done with bands  📈
-16. **Static Stretching**
+11. Ab Roller 📈
+12. Cable Assisted Pancake 📈
+13. Kneeling Cable Crunch  📈
+14. Pallof Press  📈
+15. **Static Stretching**
 
 
 ### Nobody Day Friday  - Meal Prep Day 1
@@ -274,22 +270,22 @@ Alternate each month keeping the week training phase in to account the weights f
 ### Full Body Program 
 > Skip hypertrophy for some of these excercise were doing a lot of lifting since it can be dangerous but should be safe for something like sled pulls and pushes. Also for excercise session frequency reduce frequency to one time a week as you go up in max weight for strength phase.
 
-Anything not on this list is most likely a bad excercise or not worth doing based on research.
+Anything not on this list is most likely a bad excercise or not worth doing based on research. Also for 
 
+**Everything here uses modified set/rep 3x5 for strength phase 4x8, hypertrophy phase, and 2x5 explosive**
 - [***Barbell Clean Jerk Press*** ](https://www.youtube.com/watch?v=8IYt7AtP8BI) - 20lb/20lb/20lb
 - **[Base Rows](https://youtu.be/Qmw9TKnQ9NY?si=gNe_2K45P71UKz5y)** - 10lb/20lb/30lb
-- **[Suitcase Bottom Up March](https://www.youtube.com/watch?v=TJjRZBpY75I)**(**1x10/2x8**) - 5lb/10lb/20lb 
-- ***[Banded Suitcase](https://youtu.be/J7RX1IemJVE?si=P10xiFwSvUb2sU61) Carry/[March](https://www.youtube.com/watch?v=a9HkuLYNyJ0)*** - 5lb/10lb/20lb(Start with then transition to farmer)
-- Farmer [Carry](https://www.youtube.com/watch?v=8OtwXwrJizk)/[March](https://www.youtube.com/watch?v=C2I_HsdDVCE) - 5lb/10lb/20lb
-- ~~**Kettlebell Swing** -5lb/10lb/20lb
-- **[KB Around the World](https://www.youtube.com/watch?v=N4mMVG8S5Kg)** - 15lb/15lb/15lb
+- **[KB Around the World](https://www.youtube.com/watch?v=N4mMVG8S5Kg)** - 20lb/20lb/20lb
 - **[Hanging Knee Raise](https://youtu.be/RD_A-Z15ER4?si=BT3gkNFch2bOdEvx)** - bodyweight
-- ***Sled***(try rope pull variation on explosive week **1x10/2x8**) - 20lb/50lb/70lb 
+- ***Sled***(try rope pull variation on explosive week) - 20lb/50lb/70lb 
 	- **[Crossover Step Lateral Sled Drag](https://youtu.be/rGtYmX2aeAA?si=PnniyFsIluLeViKa)** 
 	- Follow Super ROM excercise cadence with less sets and reps for higher weight. 
-- **[Trap Bar Deadlift](https://youtu.be/zDRgPfiHJ_c?si=hnoOefbzidE4bw4f)**(green/black band) - 20lb/30lb/50lb - try deficit version standing on plate with strength phase
-- ~~**Barbell Standing [Good Mornings](https://youtu.be/dEJ0FTm-CEk?si=LAPsPziQZQNGBvph)**~~ ~~not worth doing~~
+- **[Trap Bar Deadlift](https://youtu.be/zDRgPfiHJ_c?si=hnoOefbzidE4bw4f)**(green/black band) - 50lb/70lb/90lb - try deficit version standing on plate with strength phase
 
+ **Exclusively strength training this at 2x8**
+- **[Suitcase Bottom Up March](https://www.youtube.com/watch?v=TJjRZBpY75I)** - 5lb/10lb/20lb 
+- ***[Banded Suitcase](https://youtu.be/J7RX1IemJVE?si=P10xiFwSvUb2sU61) Carry/[March](https://www.youtube.com/watch?v=a9HkuLYNyJ0)*** - 5lb/10lb/20lb(Start with then transition to farmer)
+- Farmer [Carry](https://www.youtube.com/watch?v=8OtwXwrJizk)/[March](https://www.youtube.com/watch?v=C2I_HsdDVCE) - 5lb/10lb/20lb
 #### Airdyne Bike/Row Machine Program
 - **Workout 1: 1 Minute On, 1 Minute Off**
 - **Workout 2: All-Out in a Minute**
@@ -425,7 +421,7 @@ Static stretches can be active or passive with external force like maybe a plank
 	- After building up from single leg back extension and doing this consistently then do [rotating variation](https://youtu.be/KJwARxV9a6g?si=4C--YLWJnUcFaMmx) once doing consistent strength PR.
 	- Besides doing on back extension machine can do [Lateral Flexion on Stability Ball](https://youtu.be/FrohQ--m7fs?si=Z4akKJnru0ut8S8X)
 - **[Single-Arm Behind-Back Cable Lateral Raise](https://www.youtube.com/watch?v=y4Djk_G0yEg)**(Low Angle) – 10lb/10lb/10lb
-- **[KB Jefferson Curls](https://www.youtube.com/watch?v=y80cxEpuYEU)/[Reverse Jefferson Curls](https://www.youtube.com/watch?v=RhE5EIb-ZMg)** - 10lb/10lb/10lb
+- **[KB Jefferson Curls](https://www.youtube.com/watch?v=y80cxEpuYEU)/[Reverse Jefferson Curls](https://www.youtube.com/watch?v=RhE5EIb-ZMg)** - 10lb/10lb/10lb - Keep weight & reps low 
 - [Cable Reverse Crunch](https://www.youtube.com/watch?v=b8oUb_6POhQ) - 10lb/10lb/10lb
 
 ##### Lower

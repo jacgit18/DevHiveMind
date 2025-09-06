@@ -16,11 +16,10 @@ dg-publish:
 ## **1. Core Stability & Control** _(Priority: 1 – Foundational for both sports)_
 
 - **Stir the Pot (on forearms)** – **1**
-- ![Stir the Pot - YouTube](https://www.youtube.com/watch?v=ss8v02Yfw0Q)
+- [Stir the Pot](https://www.youtube.com/watch?v=ss8v02Yfw0Q)
     
 - **Ball Pike (feet on ball)** – **1**
-- ![How To Do A SWISS BALL PIKE \| Exercise Demonstration Video and Guide - YouTube](https://www.youtube.com/watch?v=Aj1uNRy1q1k)
-
+- 
 - **Ball Rollouts (knees or toes on ground)** – **2**
 - ![Swiss ball rollouts on knees (Strength) - YouTube](https://www.youtube.com/watch?v=h9lAFK2-058)
     

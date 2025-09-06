@@ -105,7 +105,7 @@ _~5–10 minutes total – pick 3–5 each position_
 - [Scapular Push up on Elbows](https://www.youtube.com/watch?v=DKkgzXfcXMQ) > [Scapular Push-Ups ](https://www.youtube.com/watch?v=FTpVhBkyIzk&list=TLPQMTUxMjIwMjT8Ie0IftYKYw&index=3) 
 	- Breathe deeply as you push your chest outward, squeezing your shoulder blades together. Then, reverse the motion by pulling your chest inward and separating your shoulder blades, keeping your elbows straight throughout the movement.
 - [Dive Bomber Push-Up](https://www.youtube.com/watch?v=mvNcSF-nXg4)
-- [Pike Push Up](https://www.youtube.com/watch?v=Ajna6AxQdtw) 
+- [Pike Push Up](https://www.youtube.com/watch?v=Ajna6AxQdtw) || [Swiss Ball Pike](https://www.youtube.com/watch?v=Aj1uNRy1q1k)
 - [Mike Tyson Pushup](https://www.youtube.com/watch?v=j-oSVFU2eMc)
 - Single Arm Pushup 
 
