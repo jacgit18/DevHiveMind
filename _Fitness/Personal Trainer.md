@@ -166,16 +166,16 @@ Alternate each month keeping the week training phase in to account the weights f
 1. ***Airdyne Bike || Row Machine || Sprint || Jump Rope***
 2. **[[Dynamic Stretching]]**(Includes mobility stretches)
 3. **Mobility**: ROM in table above 2x8 each excercise(3 excercise for each month) ✅ 
-4. Cable WoodChopper || **[Landmine Twist](https://youtu.be/M93HfnAVIl8?si=7KtnpfDB0GYobD9Z)** || Bottom Up Suitcase/Farmer Carry 
-5. Cable Pec Minor Fly || Chest Fly || **DB Cross Body Fly**
+4. [Cable Woodchopper](https://www.youtube.com/watch?v=mvvu8imyMFs) || **[Landmine Twist](https://youtu.be/M93HfnAVIl8?si=7KtnpfDB0GYobD9Z)** || Bottom Up Suitcase/Farmer Carry 
+5. [Cable Pec Minor Fly](https://youtu.be/sC91H2XLtJc?si=bSV_IhpBVbdADHz2&t=286) || Chest Fly || **[DB Cross Body Fly](https://youtu.be/mK2xrdqf_cU?si=jNrPZCLCgUNFki9v)**
 6. Sled Push/Pull
 7. **Clean & Jerk Press** || Deadlift  
 8. [Hanging Knee Raise](https://youtu.be/RD_A-Z15ER4?si=h0fyUA7SXg4vWE2a)
 9. **Pallof Press** - can be done with bands  📈
 10. **Bench/Cable Reverse Crunch || Dragonfly || Ab Roller 📈** (Pick One) 
-11. Cable Assisted Pancake 📈
+11. [Cable Assisted Pancake](https://youtu.be/xgU1YYHwprQ?si=N0aX9UVVJqDLvvrS) 📈
 12. Cable || Kettlebell || Landmine - Unilateral RDL 📈
-13. **Stability**:  *TRX Training*
+13. **Stability**: *TRX Training*
 	1. [TRX Push Up](https://youtu.be/jk4MGqOmjn4?si=lzlBdn4390KOOyNg)/Suspended TRX Pushup(harder)
 	2. [Single arm TRX row w/ rotation](https://www.youtube.com/watch?v=xlvYxStAL8M)
 14. **[[Personal Trainer#Priority Static Stretch to develop splits| Static Stretching]]**
