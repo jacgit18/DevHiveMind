@@ -171,10 +171,11 @@ Alternate each month keeping the week training phase in to account the weights f
 11. **Bench/Cable Reverse Crunch || Dragonfly || Ab Roller 📈** (Pick One) 
 12. [Cable Assisted Pancake](https://youtu.be/xgU1YYHwprQ?si=N0aX9UVVJqDLvvrS) 📈
 13. [Cable](https://youtu.be/2M1Mikqf5lY?si=sIX0t_7UkiioAffp) || [Kettlebell](https://youtu.be/SuNgD0x2U6U?si=0oE-W6Zv_5pABcMv) - Unilateral RDL 📈
-14. **Stability**: *TRX Training*
+14. **Stability**: *TRX/SwissBall Training* - focus on one a month or something
 	1. [TRX Push Up](https://youtu.be/jk4MGqOmjn4?si=lzlBdn4390KOOyNg)/TRX Suspended Pushup(harder)
 	2. [Single arm TRX row w/ rotation](https://www.youtube.com/watch?v=xlvYxStAL8M)
 	3. [TRX  Inverted Row](https://youtu.be/v4zbFQr4LwA?si=qZnYivFFbLA0XSLx)
+	4. [Stability Ball Flutter Kicks](https://www.youtube.com/watch?v=W_we2PmocxE)
 15. **[[Personal Trainer#Priority Static Stretch to develop splits| Static Stretching]]**
 
 ### Full Body Day Part 2 Sunday Sprint Day
@@ -230,8 +231,8 @@ Alternate each month keeping the week training phase in to account the weights f
 9. **Back Extension** 📈
 10. Cable || Kettlebell - Unilateral RDL 📈
 11. Kettlebell Leg Raise 📈
-12. **Stability**:  *Swiss Ball Training*
-	1. [Stability Ball Flutter Kicks](https://www.youtube.com/watch?v=W_we2PmocxE)
+
+
 
 ### Upper Body Day Part 2 Thursday Sprint Day(Optional MMA)
 1. ***Airdyne Bike || Row Machine || Sprint || Jump Rope***
@@ -247,8 +248,8 @@ Alternate each month keeping the week training phase in to account the weights f
 11. Cable Assisted Pancake 📈
 12. Kneeling Cable Crunch  📈
 13. **Pallof Press**  📈
-14. **Stability**:  *Swiss Ball Training*
-	1. [Stir the Pot](https://www.youtube.com/watch?v=ss8v02Yfw0Q)
+
+
 15. **Static Stretching**
 
 
