@@ -169,14 +169,16 @@ Alternate each month keeping the week training phase in to account the weights f
 12. [Cable Assisted Pancake](https://youtu.be/xgU1YYHwprQ?si=N0aX9UVVJqDLvvrS) 📈
 13. [Cable](https://youtu.be/2M1Mikqf5lY?si=sIX0t_7UkiioAffp) || [Kettlebell](https://youtu.be/SuNgD0x2U6U?si=0oE-W6Zv_5pABcMv) - Unilateral RDL 📈
 14. **Stability**: *TRX/SwissBall Training* - focus on one a month or something
-	1. [TRX Assisted Pistol Squat](https://www.youtube.com/watch?v=HqCHXb91yMQ) 
-	2. [TRX Push Up](https://youtu.be/jk4MGqOmjn4?si=lzlBdn4390KOOyNg)/TRX Suspended Pushup(harder)
-	3. [Single arm TRX row w/ rotation](https://www.youtube.com/watch?v=xlvYxStAL8M)
-	4.  [TRX T spine Rotation](https://www.youtube.com/watch?v=Z5ftr88omuc) 
-	5. [TRX  Inverted Row](https://youtu.be/v4zbFQr4LwA?si=qZnYivFFbLA0XSLx)
-	6. [TRX Y Fly + Biceps Curls ](https://www.youtube.com/watch?v=HOp5_Of1fzE)
-	7. [SwissBall Flutter Kicks](https://www.youtube.com/watch?v=W_we2PmocxE)
-	8. [SwissBall stir the pot](https://www.youtube.com/watch?v=ss8v02Yfw0Q)
+	1. [TRX Burpee Level 3](https://www.youtube.com/watch?v=C_rKVEucJak)
+	2. [TRX Assisted Pistol Squat](https://www.youtube.com/watch?v=HqCHXb91yMQ) 
+	3. [TRX Push Up](https://youtu.be/jk4MGqOmjn4?si=lzlBdn4390KOOyNg)/TRX Suspended Pushup(harder)
+	4. [TRX single arm row w/ rotation](https://www.youtube.com/watch?v=xlvYxStAL8M)
+	5. [TRX T spine Rotation](https://www.youtube.com/watch?v=Z5ftr88omuc) 
+	6. [TRX  Inverted Row](https://youtu.be/v4zbFQr4LwA?si=qZnYivFFbLA0XSLx)
+	7. [TRX Y Fly + Biceps Curls ](https://www.youtube.com/watch?v=HOp5_Of1fzE)
+	8. [TRX Plank into Rotations](https://www.youtube.com/watch?v=TT2jUlSOZNc)
+	9. [SwissBall Flutter Kicks](https://www.youtube.com/watch?v=W_we2PmocxE)
+	10. [SwissBall stir the pot](https://www.youtube.com/watch?v=ss8v02Yfw0Q)
 15. **[[Personal Trainer#Priority Static Stretch to develop splits| Static Stretching]]**
 
 ### Full Body Day Part 2 Sunday Sprint Day
@@ -405,7 +407,7 @@ Static stretches can be active or passive with external force like maybe a plank
 ##### Upper
 ###### Push
 -  **[Landmine Shoulder Z Press](https://youtu.be/app94pzXOuU?si=kOpaa_oC9HkpkRNv)** - 10lb/10lb/10lb 
--  **[Landmine](https://youtu.be/Zb-l68-4KFM?si=I8zR3VtIppuQNJk_)** || KB || [Resistance Band](https://www.youtube.com/watch?v=kI2H5xGnxcM) || [Rope](https://www.youtube.com/watch?v=JBz7PUxDyE4) Russian Twist- 10lb/10lb/10lb
+-  **[Landmine](https://youtu.be/Zb-l68-4KFM?si=I8zR3VtIppuQNJk_)** || KB || [Resistance Band](https://www.youtube.com/watch?v=kI2H5xGnxcM) || [Rope](https://www.youtube.com/watch?v=JBz7PUxDyE4) || [TRX Standing](https://www.youtube.com/watch?v=7zpXipLThLI) Russian Twist- 10lb/10lb/10lb
 - **[Landmine Twist](https://www.youtube.com/watch?v=M93HfnAVIl8)** - 10lb/10lb/10lb
 -  ***[Landmine Rotational Press](https://www.youtube.com/watch?v=ONDeomDVlbE) - 10lb/10lb/10lb***
 
