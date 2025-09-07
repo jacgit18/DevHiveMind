@@ -174,7 +174,7 @@ Alternate each month keeping the week training phase in to account the weights f
 9. **Pallof Press** - can be done with bands  📈
 10. **Bench/Cable Reverse Crunch || Dragonfly || Ab Roller 📈** (Pick One) 
 11. [Cable Assisted Pancake](https://youtu.be/xgU1YYHwprQ?si=N0aX9UVVJqDLvvrS) 📈
-12. Cable || [Kettlebell](https://youtu.be/SuNgD0x2U6U?si=0oE-W6Zv_5pABcMv) || [Landmine](https://youtu.be/Bqjice9TgtI?si=U0hURhacT2jpa7e5) - Unilateral RDL 📈
+12. [Cable](https://youtu.be/2M1Mikqf5lY?si=sIX0t_7UkiioAffp) || [Kettlebell](https://youtu.be/SuNgD0x2U6U?si=0oE-W6Zv_5pABcMv) - Unilateral RDL 📈
 13. **Stability**: *TRX Training*
 	1. [TRX Push Up](https://youtu.be/jk4MGqOmjn4?si=lzlBdn4390KOOyNg)/Suspended TRX Pushup(harder)
 	2. [Single arm TRX row w/ rotation](https://www.youtube.com/watch?v=xlvYxStAL8M)
