@@ -148,7 +148,7 @@ Alternate each month keeping the week training phase in to account the weights f
 
 
 #todo/BAU/Workout 
-- [ ] Max excercise to do per session should be 8
+- [ ] Max excercise to do per session should be 9
 - [ ] Maybe have a free up month with no specific structure at end of each quarter.
 - [ ] Limit sprinting on ***Hypertrophy week*** for non leg days and drink beet juice with baking soda. 
 - [ ] Cycle in warm up doing  lunges to kicks, knees, and teeps
