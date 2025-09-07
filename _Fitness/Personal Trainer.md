@@ -105,17 +105,12 @@ The general principles of **training phases** like strength and hypertrophy appl
 - [ ] Keep [[Gym Core Exercise Weight Goals]] in mind.
 - [ ] Add reps first for workout on each phase then adjust explosive power and hypertrophy phase in relation to strength max weight change, then go back to original reps with new weight.
 - [ ] Increase weight as you train Hypertrophy and reduce the range of motion of the excercise as well to train to failure better.
-
+- [ ] After going in and stabilizing everything dedicate and go high volume to a specific part of the body to improve on it like shoulders Etc.
 
 - **Explosive**: adjust along with changes in max 3x10
 - **Hypertrophy**: Add 1 extra song or +2.5 lbs weekly 
 - **Strength**: +5 lbs/week (upper), +10 lbs (lower) 4x8
 - **Injury Rule**: If pain >2/10, regress load or variation
-
-## Pre Workout
-### Stability Training 
-- [ ] Follow [[Stability Ball Workout Plan]] to build stability.
-
 
 
 ### Recovery
@@ -166,38 +161,40 @@ Alternate each month keeping the week training phase in to account the weights f
 1. ***Airdyne Bike || Row Machine || Sprint || Jump Rope***
 2. **[[Dynamic Stretching]]**(Includes mobility stretches)
 3. **Mobility**: ROM in table above 2x8 each excercise(3 excercise for each month) ✅ 
-4. [Cable Woodchopper](https://www.youtube.com/watch?v=mvvu8imyMFs) || **[Landmine Twist](https://youtu.be/M93HfnAVIl8?si=7KtnpfDB0GYobD9Z)** || Bottom Up Suitcase/Farmer Carry 
-5. [Cable Pec Minor Fly](https://youtu.be/sC91H2XLtJc?si=bSV_IhpBVbdADHz2&t=286) || Chest Fly || **[DB Cross Body Fly](https://youtu.be/mK2xrdqf_cU?si=jNrPZCLCgUNFki9v)**
-6. Sled Push/Pull
-7. **Clean & Jerk Press** || Deadlift  
-8. [Hanging Knee Raise](https://youtu.be/RD_A-Z15ER4?si=h0fyUA7SXg4vWE2a)
-9. **Pallof Press** - can be done with bands  📈
-10. **Bench/Cable Reverse Crunch || Dragonfly || Ab Roller 📈** (Pick One) 
-11. [Cable Assisted Pancake](https://youtu.be/xgU1YYHwprQ?si=N0aX9UVVJqDLvvrS) 📈
-12. [Cable](https://youtu.be/2M1Mikqf5lY?si=sIX0t_7UkiioAffp) || [Kettlebell](https://youtu.be/SuNgD0x2U6U?si=0oE-W6Zv_5pABcMv) - Unilateral RDL 📈
-13. **Stability**: *TRX Training*
+4. [Cable Woodchopper](https://www.youtube.com/watch?v=mvvu8imyMFs) || **[Landmine Twist](https://youtu.be/M93HfnAVIl8?si=7KtnpfDB0GYobD9Z)** 
+5. Bottom Up Suitcase/Farmer Carry 
+6. [Cable Pec Minor Fly](https://youtu.be/sC91H2XLtJc?si=bSV_IhpBVbdADHz2&t=286) || Chest Fly([variations](https://youtube.com/shorts/0LJ-JujImCs?si=LgyKSn87TMCarM-y)) || **[DB Cross Body Fly](https://youtu.be/mK2xrdqf_cU?si=jNrPZCLCgUNFki9v)**
+7. Sled Push/Pull
+8. **Clean & Jerk Press** || Deadlift  
+9. [Hanging Knee Raise](https://youtu.be/RD_A-Z15ER4?si=h0fyUA7SXg4vWE2a)
+10. **Pallof Press** - can be done with bands  📈
+11. **Bench/Cable Reverse Crunch || Dragonfly || Ab Roller 📈** (Pick One) 
+12. [Cable Assisted Pancake](https://youtu.be/xgU1YYHwprQ?si=N0aX9UVVJqDLvvrS) 📈
+13. [Cable](https://youtu.be/2M1Mikqf5lY?si=sIX0t_7UkiioAffp) || [Kettlebell](https://youtu.be/SuNgD0x2U6U?si=0oE-W6Zv_5pABcMv) - Unilateral RDL 📈
+14. **Stability**: *TRX Training*
 	1. [TRX Push Up](https://youtu.be/jk4MGqOmjn4?si=lzlBdn4390KOOyNg)/TRX Suspended Pushup(harder)
 	2. [Single arm TRX row w/ rotation](https://www.youtube.com/watch?v=xlvYxStAL8M)
 	3. [TRX  Inverted Row](https://youtu.be/v4zbFQr4LwA?si=qZnYivFFbLA0XSLx)
-14. **[[Personal Trainer#Priority Static Stretch to develop splits| Static Stretching]]**
+15. **[[Personal Trainer#Priority Static Stretch to develop splits| Static Stretching]]**
 
 ### Full Body Day Part 2 Sunday Sprint Day
 1. ***Airdyne Bike || Row Machine || Sprint || Jump Rope***
 2. **Dynamic Stretching**
 3. **Mobility**: ROM in table above ✅
-4. Cable WoodChopper || Landmine Twist || **Bottom Up Suitcase/Farmer Carry**
-5. Cable Pec Minor Fly || Chest Fly || **DB Cross Body Fly**
-6. **Sled Push/Pull**  
-7. **Zottman Curl** || Bayesian Cable Curl || Incline Bench Preacher Curl/Reverse Preacher Curl
-8. **Bench/Cable Reverse Crunch || Dragonfly || Ab Roller 📈** 
-9. Back Extension 📈
-10. Cable Assisted Pancake 📈
-11. **Static Stretching**
+4. Cable WoodChopper || Landmine Twist 
+5. **Bottom Up Suitcase/Farmer Carry**
+6. Cable Pec Minor Fly || Chest Fly || **DB Cross Body Fly**
+7. **Sled Push/Pull**  
+8. **Zottman Curl** || Bayesian Cable Curl || Incline Bench Preacher Curl/Reverse Preacher Curl
+9. **Bench/Cable Reverse Crunch || Dragonfly || Ab Roller 📈** 
+10. Back Extension 📈
+11. Cable Assisted Pancake 📈
+12. **Static Stretching**
 ### Lower Body Day Part 1 Monday(MMA)
 1. ***Airdyne Bike || Row Machine || Sprint || Jump Rope***
 2. **Dynamic Stretching**
 3. **Mobility**:  Leg ROM in table above ✅
-4. **Prone Leg Curl** ✅  
+4. **Prone Leg Curl** - Strength phase only ✅  
 5. Clean & Jerk Press || **Deadlift**  
 6. **DB Bulgarian Split Squat** || Walking Barbell Zercher Lunge || B-Stance Zercher Squat
 7. Hack Squat *or* Leg Press | | Curlbar Behind Back Kneeling Squat on Toes 
@@ -245,7 +242,7 @@ Alternate each month keeping the week training phase in to account the weights f
 6. Chin-up || Pull-up
 7. Tricep Dip || **Incline Bilateral/Unilateral DB Overhead Tricep Extension** 
 8. Single Arm Lat Pulldown
-9. **Arnold Press** || Landmine Shoulder Z Press
+9. **Arnold Press** || Landmine Shoulder Press
 10. **Bench/Cable Reverse Crunch || Dragonfly || Ab Roller 📈** 
 11. Cable Assisted Pancake 📈
 12. Kneeling Cable Crunch  📈
@@ -354,7 +351,7 @@ All leg cable excercise are done at a low angle. Avoid squatting with running sh
 *Make Squats Narrow and Deep to improve pistol squat and set bar height to 13 for anything Zercher*
 1. **Hack Squat**(Back/Front) – 90lb/180lb/300lb - if ankles begin to lift move feet up
 2. **Barbell Squat/Zercher B-Squat** - Incline High Bar(on trap muscle)  - 50lb
-3. **Dumbbell Bulgarian Split Squat/Prone Leg Curl** (Try [elevated](https://youtu.be/DXK-VbFE6ic?si=NHqOeitXD0h_YQsr) front leg variation also use [leg curl roller](https://youtu.be/VC5kbLSuo30?si=NLitkOhL50votRUC)) - 20lb/60lb half sets
+3. **Dumbbell Bulgarian Split Squat/Prone Leg Curl** - set to 3rd hole and exclusively train only strength phase(can use [leg extension machine](https://youtu.be/VC5kbLSuo30?si=ssky4p0p0X2BdUEy)) - 20lb/60lb 
 4. **Kneeling Squat on toes with curlbar/Dumbbell behind** - 45lb/45lb/45lb
 5. **Unilateral/Bilateral Leg Press** – 90lb/180lb/180lb | 180lb/360lb/500lb
 6. **Walking Barbell Lunge/Zercher Lunge** – 20lb/20lb/20lb
