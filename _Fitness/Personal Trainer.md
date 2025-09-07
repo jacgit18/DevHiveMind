@@ -169,11 +169,14 @@ Alternate each month keeping the week training phase in to account the weights f
 12. [Cable Assisted Pancake](https://youtu.be/xgU1YYHwprQ?si=N0aX9UVVJqDLvvrS) 📈
 13. [Cable](https://youtu.be/2M1Mikqf5lY?si=sIX0t_7UkiioAffp) || [Kettlebell](https://youtu.be/SuNgD0x2U6U?si=0oE-W6Zv_5pABcMv) - Unilateral RDL 📈
 14. **Stability**: *TRX/SwissBall Training* - focus on one a month or something
-	1. [TRX Push Up](https://youtu.be/jk4MGqOmjn4?si=lzlBdn4390KOOyNg)/TRX Suspended Pushup(harder)
-	2. [Single arm TRX row w/ rotation](https://www.youtube.com/watch?v=xlvYxStAL8M)
-	3. [TRX  Inverted Row](https://youtu.be/v4zbFQr4LwA?si=qZnYivFFbLA0XSLx)
-	4. [SwissBall Flutter Kicks](https://www.youtube.com/watch?v=W_we2PmocxE)
-	5. [SwissBall stir the pot](https://www.youtube.com/watch?v=ss8v02Yfw0Q)
+	1. [TRX Assisted Pistol Squat](https://www.youtube.com/watch?v=HqCHXb91yMQ) 
+	2. [TRX Push Up](https://youtu.be/jk4MGqOmjn4?si=lzlBdn4390KOOyNg)/TRX Suspended Pushup(harder)
+	3. [Single arm TRX row w/ rotation](https://www.youtube.com/watch?v=xlvYxStAL8M)
+	4.  [TRX T spine Rotation](https://www.youtube.com/watch?v=Z5ftr88omuc) 
+	5. [TRX  Inverted Row](https://youtu.be/v4zbFQr4LwA?si=qZnYivFFbLA0XSLx)
+	6. [TRX Y Fly + Biceps Curls ](https://www.youtube.com/watch?v=HOp5_Of1fzE)
+	7. [SwissBall Flutter Kicks](https://www.youtube.com/watch?v=W_we2PmocxE)
+	8. [SwissBall stir the pot](https://www.youtube.com/watch?v=ss8v02Yfw0Q)
 15. **[[Personal Trainer#Priority Static Stretch to develop splits| Static Stretching]]**
 
 ### Full Body Day Part 2 Sunday Sprint Day
@@ -426,7 +429,8 @@ Static stretches can be active or passive with external force like maybe a plank
 	1. Box Elevated Lowering pistol squat
 	2. Box Elevated Raising pistol squat
 	3. hand on wall pistol squat
-	4. **[Barbell Pistol Squat](https://youtu.be/G-neztXXSCA?si=M3l8EqL0Y4O9ANtC)** - 10lb/10lb/10lb 
+	4. [TRX Assisted Pistol Squat](https://www.youtube.com/watch?v=HqCHXb91yMQ) 
+	5. **[Barbell Pistol Squat](https://youtu.be/G-neztXXSCA?si=M3l8EqL0Y4O9ANtC)** - 10lb/10lb/10lb 
 5. **[Dumbbell ATG Split Squat](https://youtu.be/j39uGbXnbYw?si=DSL98N7FTt1xr8O1)** - 10lb/10lb/10lb 
 
 ## Home Training 
