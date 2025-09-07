@@ -176,7 +176,7 @@ Alternate each month keeping the week training phase in to account the weights f
 11. [Cable Assisted Pancake](https://youtu.be/xgU1YYHwprQ?si=N0aX9UVVJqDLvvrS) 📈
 12. [Cable](https://youtu.be/2M1Mikqf5lY?si=sIX0t_7UkiioAffp) || [Kettlebell](https://youtu.be/SuNgD0x2U6U?si=0oE-W6Zv_5pABcMv) - Unilateral RDL 📈
 13. **Stability**: *TRX Training*
-	1. [TRX Push Up](https://youtu.be/jk4MGqOmjn4?si=lzlBdn4390KOOyNg)/Suspended TRX Pushup(harder)
+	1. [TRX Push Up](https://youtu.be/jk4MGqOmjn4?si=lzlBdn4390KOOyNg)/TRX Suspended Pushup(harder)
 	2. [Single arm TRX row w/ rotation](https://www.youtube.com/watch?v=xlvYxStAL8M)
 	3. [TRX  Inverted Row](https://youtu.be/v4zbFQr4LwA?si=qZnYivFFbLA0XSLx)
 14. **[[Personal Trainer#Priority Static Stretch to develop splits| Static Stretching]]**
@@ -204,7 +204,7 @@ Alternate each month keeping the week training phase in to account the weights f
 8. **Hip Thrust** 
 9. Trap Bar Squat Jump 
 10. **Back Extension**  📈
-11. Unilateral RDL 📈
+11. Cable || Kettlebell - Unilateral RDL 📈
 12. Kettlebell Leg Raise 📈
 13. **Static Stretching**
 ### Upper Body Day Part 1 Tuesday Sprint Day - Meal Prep Day 2
@@ -231,7 +231,7 @@ Alternate each month keeping the week training phase in to account the weights f
 7. Trap Bar Squat Jump 
 8. Clean & Jerk Press || **Deadlift**    
 9. **Back Extension** 📈
-10. Unilateral RDL 📈
+10. Cable || Kettlebell - Unilateral RDL 📈
 11. Kettlebell Leg Raise 📈
 12. **Stability**:  *Swiss Ball Training*
 	1. [Stability Ball Flutter Kicks](https://www.youtube.com/watch?v=W_we2PmocxE)
