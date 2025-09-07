@@ -19,7 +19,7 @@ dg-publish:
 - Lacrosse ball or massage ball
 - Optional: peanut ball, massage stick, yoga block
 
-[TRX  Inverted Row](https://youtu.be/v4zbFQr4LwA?si=qZnYivFFbLA0XSLx)
+
 
 ---
 
