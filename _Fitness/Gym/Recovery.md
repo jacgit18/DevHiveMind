@@ -109,11 +109,35 @@ Adjust intensity based on your goals: _maintenance vs. injury recovery_.
 
 ## ✅ **Routine Summary**
 
-|**Tool**|**Focus Area**|**Time**|**Key Benefit**|
-|---|---|---|---|
-|Foam Roller|Lower/Upper Body|5–6 min|Myofascial release|
-|Lacrosse Ball|Trigger Points|4–5 min|Deep pain relief|
-|Swiss Ball|Mobility / Core|4–5 min|Dynamic stability + posture|
+
+|General Area|Area|Tool|Duration|Notes|
+|---|---|---|---|---|
+|**General Tools**|Foam Roller|5–6 min|Myofascial release||
+||Lacrosse Ball|4–5 min|Deep pain relief||
+||Swiss Ball|4–5 min|Dynamic stability + posture||
+|**Feet**|Plantar Fascia|Lacrosse Ball|1 min/foot|Roll from heel to toe ball slowly|
+|**Lower Leg**|Calves|Foam Roller|1–2 min/leg|Prop up other leg for deeper pressure, dorsiflex foot while rolling|
+||Peroneals (outer shin)|Lacrosse Ball|1 min/side|Sit and dig along outer shin/calf|
+|**Thigh**|Quads|Foam Roller|2 min|Go top to bottom; lean to target vastus lateralis|
+||IT Band / TFL|Foam Roller|1 min|Roll gently, don’t stay long — aim to release tension, not torture|
+||Adductors|Lacrosse Ball / Foam Roller|1 min/side|Lie face-down, place ball inside thigh, bend and straighten knee slowly|
+|**Hips / Glutes**|Glute Max/Med|Lacrosse Ball|1–2 min/side|Cross ankle over opposite knee to open up|
+||Piriformis|Lacrosse Ball|1 min|Slightly deeper — target top outer butt|
+||Hip Flexors|Lacrosse Ball|1 min/side|Lie face-down, find point near ASIS (hip bone), press gently|
+|**Lower Back**|Thoracolumbar Fascia|Foam Roller|1–2 min|Avoid direct lumbar pressure — roll gently above sacrum|
+||QL (lower back side)|Lacrosse Ball|1 min/side|Lean into wall/ball, breathe deeply into tension|
+|**Upper Back**|Thoracic Spine|Foam Roller|2 min|Hug yourself, roll from mid-back to top of shoulders|
+||Rhomboids / Traps|Peanut Ball / Lacrosse Ball|1–2 min|Lie on ball between spine and shoulder blade|
+||Lats|Foam Roller / Ball|1 min/side|Lay on side, reach arm overhead, roll slowly from armpit to mid-ribcage|
+|**Shoulders / Chest**|Rear Delt|Lacrosse Ball|1 min|Lie on ball or use wall, move arm across body while rolling|
+||Pec Minor|Lacrosse Ball|1 min/side|Place ball just below collarbone, press against wall/floor and move arm in circles|
+||Front Delt|Lacrosse Ball|1 min|Use wall or floor pressure, sweep arm gently for active release|
+|**Arms**|Biceps|Lacrosse Ball|1 min/side|Roll on bench or floor, rotate hand palm-up/down|
+||Triceps|Lacrosse Ball|1 min/side|Prop on edge of bench or wall, work from elbow up|
+||Forearms|Lacrosse Ball|1–2 min each|Roll both flexor (palm side) and extensor sides|
+|**Neck / Jaw**|Upper Traps|Lacrosse Ball|1 min/side|Lean against wall, move head side-to-side slowly|
+||Suboccipitals|Peanut Ball (floor)|1–2 min|Lie on back, place ball under skull base, gently nod head|
+||Jaw (Masseter)|Fingers / Soft Ball|30s–1 min|Gentle pressure near cheekbone while opening jaw slowly|
 
 🕒 **Total Time:** ~15 Minutes
 
@@ -260,80 +284,6 @@ Here’s a **clear list of what NOT to touch or do** during your foam rolling, l
     
 - Too **aggressive** → _Lighten pressure._
     
-
-
-
-
-
-
-
-
-
-[The ONLY 2 Exercises You Need For A Thick Back - YouTube](https://youtu.be/JdjJC6eIk44?si=435iItkw0NEV0vrm)
-
-45 degree angle wide grip  low row for mid back forearms aligned with hands no outside or inside when pulling back lean back and brace core  to pull at a angle watch out and make sure it doesn't feel like a shrug keep back straight 
-
-let back open up while fully extend and contract on concentric
-
-alt use incline bench for chested supported row pushing chest through bench
-
-standing chest supported upright low row pulling motion kind of like a reverse dip motion
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-[How to do a Stability Ball Backbend - YouTube](https://www.youtube.com/watch?v=lVlV9bylxBk)
-
-
-
-
-[Swiss Ball Side Flexion - Level 1 - GymCalc.com - YouTube](https://youtu.be/kFty8-wF69k?si=uAMaVNjSfn33ebzw)
-
-[Swiss Ball Side Flexion - Level 2 - GymCalc.com - YouTube](https://youtu.be/68eJEt4NQqc?si=_sbeTFGs2b3DVm9t)
-
-[Swiss Ball Side Flexion - Level 3 - GymCalc.com - YouTube](https://youtu.be/-W02_G1f0aM?si=ERpJXiz8LvGJ7885)
-
-
-[Swiss Ball Side Flexion - Level 4 - GymCalc.com - YouTube](https://youtu.be/2VCOHVeRdKs?si=U5aowRV0FRbtSK2b)
-
-[Swiss Ball Side Flexion - Level 5 - GymCalc.com - YouTube](https://youtu.be/ltuv2fYMXqk?si=IkiMMxr0jMaj7n0P)
-
-
-
-
-
-![Tib Raise with Eversion Inversion - YouTube](https://youtu.be/5AIrfsgYdKY?si=Q17wxWTyWFty_W_8) ^b0a0df
-
-
-![Iso Calf Raise with Lunge - YouTube](https://youtu.be/I8EfBzUFyMo?si=7LAxf79F9CnMSAxC) ^8a3d01
-
-![Lunge ISO Heel Raise - YouTube](https://youtu.be/Zwy4h0NukbQ?si=AYz0q6ZnrqsT7T6W) 
-
-
-
-
-
-do toe band exercises on a elevated surface 
-
-also [foot bridges](https://youtu.be/swio6RF4YZY?si=zP3QTUKg0SsN8Hvh) stepping on two bricks and keeping foot intact not flex to train toes
-
-
-[Resistance Band Exercises For Healthy Feet & Toe Alignment](https://youtu.be/GdlUz4eA_ec?si=Wx33lKEPDLW93Y43)
-
-
 
 
 

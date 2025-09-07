@@ -115,7 +115,6 @@ The general principles of **training phases** like strength and hypertrophy appl
 
 ### Recovery
 #todo/BAU/Workout 
-- [ ] Follow [[Muscle Release Regimen |Muscle release regimen with tools]] & merge with [[Recovery]] along with [[Small Joints Muscle]]
 - [ ] Use only resistance bands for only explosive or hypertrophy training.
 
 ## Regimen
@@ -175,7 +174,8 @@ Alternate each month keeping the week training phase in to account the weights f
 	1. [TRX Push Up](https://youtu.be/jk4MGqOmjn4?si=lzlBdn4390KOOyNg)/TRX Suspended Pushup(harder)
 	2. [Single arm TRX row w/ rotation](https://www.youtube.com/watch?v=xlvYxStAL8M)
 	3. [TRX  Inverted Row](https://youtu.be/v4zbFQr4LwA?si=qZnYivFFbLA0XSLx)
-	4. [Stability Ball Flutter Kicks](https://www.youtube.com/watch?v=W_we2PmocxE)
+	4. [SwissBall Flutter Kicks](https://www.youtube.com/watch?v=W_we2PmocxE)
+	5. [SwissBall stir the pot](https://www.youtube.com/watch?v=ss8v02Yfw0Q)
 15. **[[Personal Trainer#Priority Static Stretch to develop splits| Static Stretching]]**
 
 ### Full Body Day Part 2 Sunday Sprint Day
@@ -248,9 +248,7 @@ Alternate each month keeping the week training phase in to account the weights f
 11. Cable Assisted Pancake 📈
 12. Kneeling Cable Crunch  📈
 13. **Pallof Press**  📈
-
-
-15. **Static Stretching**
+14. **Static Stretching**
 
 
 ### Nobody Day Friday  - Meal Prep Day 1
