@@ -166,11 +166,11 @@ Alternate each month keeping the week training phase in to account the weights f
 1. ***Airdyne Bike || Row Machine || Sprint || Jump Rope***
 2. **[[Dynamic Stretching]]**(Includes mobility stretches)
 3. **Mobility**: ROM in table above 2x8 each excercise(3 excercise for each month) ✅ 
-4. Cable WoodChopper || **Landmine Twist** || Bottom Up Suitcase/Farmer Carry 
+4. Cable WoodChopper || **[Landmine Twist](https://youtu.be/M93HfnAVIl8?si=7KtnpfDB0GYobD9Z)** || Bottom Up Suitcase/Farmer Carry 
 5. Cable Pec Minor Fly || Chest Fly || **DB Cross Body Fly**
 6. Sled Push/Pull
 7. **Clean & Jerk Press** || Deadlift  
-8. Hanging Knee Raise
+8. [Hanging Knee Raise](https://youtu.be/RD_A-Z15ER4?si=h0fyUA7SXg4vWE2a)
 9. **Pallof Press** - can be done with bands  📈
 10. **Bench/Cable Reverse Crunch || Dragonfly || Ab Roller 📈** (Pick One) 
 11. Cable Assisted Pancake 📈
@@ -214,7 +214,7 @@ Alternate each month keeping the week training phase in to account the weights f
 5. Chest/Bench Press  
 6. Tricep Dip || **Incline Bilateral/Unilateral DB Overhead Tricep Extension** 
 7. Single Arm Lat Pulldown
-8. Arnold Press || **Landmine Shoulder Z Press**
+8. Arnold Press || **Landmine Shoulder Press**
 9. **Zottman Curl** || Bayesian Cable Curl || Incline Bench Preacher Curl/Reverse Preacher Curl
 10. Cable Assisted Pancake 📈
 11. Kneeling Cable Crunch  📈
@@ -317,7 +317,6 @@ Allowed to practice each excercise *here* max twice a week.
 7. **Wide Seated Tricep Dip/[Bodyweight Tricep Dip](https://www.youtube.com/watch?v=p5Lx2BeVKR4&t=186s)** - 70lb/90/145lb
 8. **Chest Fly** - 50lb/70lb/100lb
 9. ***[Landmine Anti Rotations](https://www.youtube.com/watch?v=8aXStDm3cOs) - 10lb/10lb/10lb***
-10. Barbell Z Press
 
 
 #### **Session 2: Pull Focus**
