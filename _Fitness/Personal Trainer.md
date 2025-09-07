@@ -166,46 +166,46 @@ Alternate each month keeping the week training phase in to account the weights f
 1. ***Airdyne Bike || Row Machine || Sprint || Jump Rope***
 2. **[[Dynamic Stretching]]**(Includes mobility stretches)
 3. **Mobility**: ROM in table above 2x8 each excercise(3 excercise for each month) ✅ 
-4. Cable Pec Minor Fly || Chest Fly || **DB Cross Body Fly**
-5. **Clean & Jerk Press** || Deadlift  
+4. Cable WoodChopper || **Landmine Twist** || Bottom Up Suitcase/Farmer Carry 
+5. Cable Pec Minor Fly || Chest Fly || **DB Cross Body Fly**
 6. Sled Push/Pull
-7. Cable WoodChopper || **Landmine Twist** || Bottom Up Suitcase/Farmer Carry 
+7. **Clean & Jerk Press** || Deadlift  
 8. Hanging Knee Raise
 9. **Pallof Press** - can be done with bands  📈
 10. **Bench/Cable Reverse Crunch || Dragonfly || Ab Roller 📈** (Pick One) 
 11. Cable Assisted Pancake 📈
 12. Cable || Kettlebell || Landmine - Unilateral RDL 📈
-13. **[[Personal Trainer#Priority Static Stretch to develop splits| Static Stretching]]**
+13. **Stability**:  *TRX Training*
+	1. [TRX Push Up](https://youtu.be/jk4MGqOmjn4?si=lzlBdn4390KOOyNg)/Suspended TRX Pushup(harder)
+	2. [Single arm TRX row w/ rotation](https://www.youtube.com/watch?v=xlvYxStAL8M)
+14. **[[Personal Trainer#Priority Static Stretch to develop splits| Static Stretching]]**
 
 ### Full Body Day Part 2 Sunday Sprint Day
 1. ***Airdyne Bike || Row Machine || Sprint || Jump Rope***
 2. **Dynamic Stretching**
 3. **Mobility**: ROM in table above ✅
-4. Cable Pec Minor Fly || Chest Fly || **DB Cross Body Fly**
-5. **Sled Push/Pull**  
-6. **Zottman Curl** || Bayesian Cable Curl || Incline Bench Preacher Curl/Reverse Preacher Curl
-7. **Bench Reverse Crunch || Dragonfly ||  Cable Reverse Crunch || Ab Roller 📈** 
-8. Cable WoodChopper || **Landmine Twist** || Bottom Up Suitcase/Farmer Carry 
+4. Cable WoodChopper || Landmine Twist || **Bottom Up Suitcase/Farmer Carry**
+5. Cable Pec Minor Fly || Chest Fly || **DB Cross Body Fly**
+6. **Sled Push/Pull**  
+7. **Zottman Curl** || Bayesian Cable Curl || Incline Bench Preacher Curl/Reverse Preacher Curl
+8. **Bench/Cable Reverse Crunch || Dragonfly || Ab Roller 📈** 
 9. Back Extension 📈
-10. **Pallof Press**  📈
-11. Cable Assisted Pancake 📈
-12. **Stability**:  *Swiss Ball Training*(Pick One)
-13. **Static Stretching**
+10. Cable Assisted Pancake 📈
+11. **Static Stretching**
 ### Lower Body Day Part 1 Monday(MMA)
 1. ***Airdyne Bike || Row Machine || Sprint || Jump Rope***
 2. **Dynamic Stretching**
 3. **Mobility**:  Leg ROM in table above ✅
-4. Prone Leg Curl ✅  
-5. DB Bulgarian Split Squat || Walking Barbell Zercher Lunge 
-6. Clean & Jerk Press || **Deadlift**  
-7. Hack Squat *or* Leg Press | | Curlbar Behind Back Kneeling Squat on Toes || B-Stance Zercher Squat
-8. Hip Thrust 
+4. **Prone Leg Curl** ✅  
+5. Clean & Jerk Press || **Deadlift**  
+6. **DB Bulgarian Split Squat** || Walking Barbell Zercher Lunge || B-Stance Zercher Squat
+7. Hack Squat *or* Leg Press | | Curlbar Behind Back Kneeling Squat on Toes 
+8. **Hip Thrust** 
 9. Trap Bar Squat Jump 
-10. Back Extension  📈
+10. **Back Extension**  📈
 11. Unilateral RDL 📈
 12. Kettlebell Leg Raise 📈
-13. **Stability**:  *Swiss Ball Training*(Pick One)
-14. **Static Stretching**
+13. **Static Stretching**
 ### Upper Body Day Part 1 Tuesday Sprint Day - Meal Prep Day 2
 1. ***Airdyne Bike || Row Machine || Sprint || Jump Rope***
 2. **Dynamic Stretching**
@@ -218,20 +218,22 @@ Alternate each month keeping the week training phase in to account the weights f
 9. **Zottman Curl** || Bayesian Cable Curl || Incline Bench Preacher Curl/Reverse Preacher Curl
 10. Cable Assisted Pancake 📈
 11. Kneeling Cable Crunch  📈
-12. Pallof Press 📈
+12. **Pallof Press** 📈
 
 ### Lower Body Day Part 2 Wednesday(Optional MMA)
 1. ***Airdyne Bike || Row Machine || Sprint || Jump Rope***
 2. **Dynamic Stretching**
 3. **Mobility**:  Leg ROM in table above ✅
-4. Prone Leg Curl ✅  
-5. DB Bulgarian Split Squat  || Walking Barbell Zercher Lunge 
-6. Clean & Jerk Press || **Deadlift**    
-7. Hack Squat *or* Leg Press | | Curlbar Behind Back Kneeling Squat on Toes || B-Stance Zercher Squat
-8. Trap Bar Squat Jump 
-9. Back Extension 📈
+4. **Prone Leg Curl** ✅  
+5. **DB Bulgarian Split Squat** || Walking Barbell Zercher Lunge || B-Stance Zercher Squat
+6. Hack Squat *or* Leg Press | | Curlbar Behind Back Kneeling Squat on Toes 
+7. Trap Bar Squat Jump 
+8. Clean & Jerk Press || **Deadlift**    
+9. **Back Extension** 📈
 10. Unilateral RDL 📈
 11. Kettlebell Leg Raise 📈
+12. **Stability**:  *Swiss Ball Training*
+	1. [Stability Ball Flutter Kicks](https://www.youtube.com/watch?v=W_we2PmocxE)
 
 ### Upper Body Day Part 2 Thursday Sprint Day(Optional MMA)
 1. ***Airdyne Bike || Row Machine || Sprint || Jump Rope***
@@ -243,11 +245,12 @@ Alternate each month keeping the week training phase in to account the weights f
 7. Tricep Dip || **Incline Bilateral/Unilateral DB Overhead Tricep Extension** 
 8. Single Arm Lat Pulldown
 9. **Arnold Press** || Landmine Shoulder Z Press
-10. Bench Reverse Crunch / Dragonfly / Cable Reverse Crunch
-11. Ab Roller 📈
-12. Cable Assisted Pancake 📈
-13. Kneeling Cable Crunch  📈
-14. Pallof Press  📈
+10. **Bench/Cable Reverse Crunch || Dragonfly || Ab Roller 📈** 
+11. Cable Assisted Pancake 📈
+12. Kneeling Cable Crunch  📈
+13. **Pallof Press**  📈
+14. **Stability**:  *Swiss Ball Training*
+	1. [Stir the Pot](https://www.youtube.com/watch?v=ss8v02Yfw0Q)
 15. **Static Stretching**
 
 

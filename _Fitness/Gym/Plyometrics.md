@@ -13,6 +13,9 @@ dg-publish:
 ---
 Do 3x10 across all 3x5 for individual alternating legs
 
+- [14 Calisthenics Exercises on Gymnastics Rings](https://www.gornation.com/blogs/news/exercises-gymnastics-rings) 
+
+
 ### Non Alternating Leg
 
 

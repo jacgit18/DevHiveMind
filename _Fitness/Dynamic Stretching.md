@@ -102,7 +102,7 @@ _~5–10 minutes total – pick 3–5 each position_
 - Plank Shoulder Taps(Also Feet on Swiss-ball variation Anti Rotation) 
 - Push-Up Hold (top and bottom) 
 - Push-Up all the way down with a hand release at the bottom and then push back up.
-- [Scapular Push up on Elbows](https://www.youtube.com/watch?v=DKkgzXfcXMQ) > [Scapular Push-Ups ](https://www.youtube.com/watch?v=FTpVhBkyIzk&list=TLPQMTUxMjIwMjT8Ie0IftYKYw&index=3) 
+- [Scapular Push up on Elbows](https://www.youtube.com/watch?v=DKkgzXfcXMQ) > [Scapular Push-Ups ](https://www.youtube.com/watch?v=FTpVhBkyIzk&list=TLPQMTUxMjIwMjT8Ie0IftYKYw&index=3) > [Scap Push Up on Stability Ball](https://www.youtube.com/watch?v=QPOpxQxItYU)
 	- Breathe deeply as you push your chest outward, squeezing your shoulder blades together. Then, reverse the motion by pulling your chest inward and separating your shoulder blades, keeping your elbows straight throughout the movement.
 - [Dive Bomber Push-Up](https://www.youtube.com/watch?v=mvNcSF-nXg4)
 - [Pike Push Up](https://www.youtube.com/watch?v=Ajna6AxQdtw) || [Swiss Ball Pike](https://www.youtube.com/watch?v=Aj1uNRy1q1k)

@@ -22,25 +22,13 @@ dg-publish:
 
 
 
-- [14 Calisthenics Exercises on Gymnastics Rings](https://www.gornation.com/blogs/news/exercises-gymnastics-rings) 
+
 
 
 ## **TRX Workout Plan (3-4x Weekly)**  
 *(45-60 mins/session)*  
   
-### **1. Warm-Up (5-10 mins)**  Highest
-- **TRX Arm Circles** (Shoulder mobility)   
-- ![TRX Plank with Arm Circles - YouTube](https://www.youtube.com/watch?v=PNJ3SLDpllE)
- ^661445
-- **TRX Jump Squats** (Explosiveness)  
-- ![Marines Force Fitness-TRX Jump Squat - YouTube](https://www.youtube.com/watch?v=XYDLa82kmOw)
- ^726153
-- **TRX Hip Openers** (Grappling prep)  Looks dangerous
-- ![TRX Wide Hip Opener (mobilitetstræning) - YouTube](https://www.youtube.com/watch?v=NNsT1ojHuy8)
 
-
-
-   ^723ad2
 ### **2. Strength & Power (Priority Exercises)**  
 #### **A. Upper Body (Clinch/Grip/Pulling Strength)**  Highest
 1. **TRX Atomic Push-Ups**  
@@ -48,8 +36,8 @@ dg-publish:
 - ![TRX Atomic Push Up - YouTube](https://www.youtube.com/watch?v=kdoWKTEEc6g) ^9a11d1
 1. **TRX Rows (Single-Arm, Rotational)**   Highest
 - *Why?* Unilateral strength for **swimming pulls** and **gi grip endurance**.  
-- ![How to perform: Single arm TRX row w/ rotation - YouTube](https://www.youtube.com/watch?v=xlvYxStAL8M) ^0f0cba
-3. **TRX Biceps Curl to Y-Fly**  
+- [Single arm TRX row w/ rotation](https://www.youtube.com/watch?v=xlvYxStAL8M) ^0f0cba
+1. **TRX Biceps Curl to Y-Fly**  
 - *Why?* Combines arm flexion (BJJ grips) with scapular stability (swimming).  
 - ![TRX Y Fly + Biceps Curls - YouTube](https://www.youtube.com/watch?v=HOp5_Of1fzE)
    ^2f8cfd

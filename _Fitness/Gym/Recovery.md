@@ -295,6 +295,22 @@ standing chest supported upright low row pulling motion kind of like a reverse d
 
 
 
+[How to do a Stability Ball Backbend - YouTube](https://www.youtube.com/watch?v=lVlV9bylxBk)
+
+
+
+
+[Swiss Ball Side Flexion - Level 1 - GymCalc.com - YouTube](https://youtu.be/kFty8-wF69k?si=uAMaVNjSfn33ebzw)
+
+[Swiss Ball Side Flexion - Level 2 - GymCalc.com - YouTube](https://youtu.be/68eJEt4NQqc?si=_sbeTFGs2b3DVm9t)
+
+[Swiss Ball Side Flexion - Level 3 - GymCalc.com - YouTube](https://youtu.be/-W02_G1f0aM?si=ERpJXiz8LvGJ7885)
+
+
+[Swiss Ball Side Flexion - Level 4 - GymCalc.com - YouTube](https://youtu.be/2VCOHVeRdKs?si=U5aowRV0FRbtSK2b)
+
+[Swiss Ball Side Flexion - Level 5 - GymCalc.com - YouTube](https://youtu.be/ltuv2fYMXqk?si=IkiMMxr0jMaj7n0P)
+
 
 
 
