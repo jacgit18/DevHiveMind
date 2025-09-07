@@ -103,6 +103,8 @@ The general principles of **training phases** like strength and hypertrophy appl
 ### Progression Rules
 #todo/BAU/Workout 
 - [ ] Keep [[Gym Core Exercise Weight Goals]] in mind.
+- [ ] Follow [[Recovery]] regimen for soreness or injury. 
+- [ ] Use only resistance bands for only explosive or hypertrophy training.
 - [ ] Add reps first for workout on each phase then adjust explosive power and hypertrophy phase in relation to strength max weight change, then go back to original reps with new weight.
 - [ ] Increase weight as you train Hypertrophy and reduce the range of motion of the excercise as well to train to failure better.
 - [ ] After going in and stabilizing everything dedicate and go high volume to a specific part of the body to improve on it like shoulders Etc.
@@ -112,10 +114,6 @@ The general principles of **training phases** like strength and hypertrophy appl
 - **Strength**: +5 lbs/week (upper), +10 lbs (lower) 4x8
 - **Injury Rule**: If pain >2/10, regress load or variation
 
-
-### Recovery
-#todo/BAU/Workout 
-- [ ] Use only resistance bands for only explosive or hypertrophy training.
 
 ## Regimen
 
