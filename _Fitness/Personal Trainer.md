@@ -393,6 +393,9 @@ Static stretches can be active or passive with external force like maybe a plank
 - **[Cable Assisted Pancake](https://youtu.be/xgU1YYHwprQ?si=N0aX9UVVJqDLvvrS)**(Low Angle) /[Regular Pancake](https://youtu.be/B1_YA47gtm0?si=_oBDpaLBejKI-8mV) - 50lb/50lb/50lb
 - [Full split](https://youtu.be/hsNvqUmCAAo?si=SbGmouCgXsZ44_tJ) 
 
+##### Small Muscle Stretches
+- [Tib Raise with Eversion Inversion](https://youtu.be/5AIrfsgYdKY?si=Q17wxWTyWFty_W_8)
+
 
 ### Build to Doing Safely
 ##### Full Body
