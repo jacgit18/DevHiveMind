@@ -125,7 +125,7 @@ The general principles of **training phases** like strength and hypertrophy appl
 | **Mon**  | Lower + *Machine/Freeweight* [Dead Hang](https://www.youtube.com/watch?v=ShkBXOGK7A8)(MMA) | *Lower Strength*                                                                          | *Lower Hypertrophy*                                | *Lower Explosive*                                 | Anything including Plyometrics/MediBall                     | Scapular & Upper Back    |
 | **Tues** | Upper + Run + Balance Board                                                                | ***Pull Strength***                                                                       | ***Pull *** *Explosive* → **Hypertrophy Finisher** | ***Pull*** *Explosive* → **Hypertrophy Finisher** | Home/Gym Resistance Band/Tower 200/Cable stability Ball day | Lats / Traps             |
 | **Wed**  | Lower +                *Cable Machine*     Dead Hang(MMA)                                  | *Lower Strength*                                                                          | *Lower Hypertrophy*                                | *Lower Explosive*                                 | TRX Eventually                                              | Quads                    |
-| **Thu**  | Upper + Run + Balance Board                                                                | **Push Strength**                                                                         | *Push Explosive* →   **Hypertrophy Finisher**      | *Push Explosive* →  **Hypertrophy Finisher**      | Landmine day                                                | Chest / Delts            |
+| **Thu**  | Upper + Run + Balance Board                                                                | **Push Strength**                                                                         | *Push Explosive* →   **Hypertrophy Finisher**      | *Push Explosive* →  **Hypertrophy Finisher**      |                                                             | Chest / Delts            |
 | **Fri**  | REST                                                                                       |                                                                                           |                                                    |                                                   |                                                             | Arms                     |
 
 
@@ -134,10 +134,10 @@ The general principles of **training phases** like strength and hypertrophy appl
 #### Schedule for Alternating Variation in Exercises
 Alternate each month keeping the week training phase in to account the weights follow like this when alternating phase in session **explosive** to **hypertrophy** | **explosive** to **strength** | **strength** to **hypertrophy** also weights follow ***explosive/hypertrophy/strength***.
 
-| Month           | Back Extension                                                                                                         | ROM                                                                       | Leg ROM | Upper Body                      |                        | Leg Focus                |           | Sled                             | Suitcase/Farmer                 |
-| --------------- | ---------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------- | ------- | ------------------------------- | ---------------------- | ------------------------ | --------- | -------------------------------- | ------------------------------- |
-| 1 (Odd months)  | Unilateral back ext 2x8 with 5 sec ISO & [Roman Chair Hip Abduction](https://youtu.be/j5HWZOfIePI?si=EsYf8Gg0rFO16y-p) | Halo + [Scarecrow](https://youtu.be/qzNQ3_TQHDs) + KB Around the World    |         | Unilateral Arm(were it applies) | Chin-up                | Unilateral-leg variation | Leg Press | Push to Lateral(left/right) Pull | Suitcase Bottom Ups             |
-| 2 (Even months) | Bilateral Back ext 4x8 with 10 sec ISO & [Side Lateral QL Extension](https://youtu.be/UaydER2VIUc?si=wkQxbIqiz7lJQF_7) | Super ROM + [V Raise](https://youtu.be/5WBdE0TSoUQ) + KB Around the World |         | Bilateral Arm                   | Neutral/Narrow Pull-up | Bilateral variation      | HackSmith | Push to Pull                     | Banded Suitcase or Farmer Carry |
+| Month           | Back Extension                                                                                                         | ROM                                                                       | Suitcase/Farmer                 | Leg ROM | Upper Body                      |                        | Leg Focus                |           | Sled                             |
+| --------------- | ---------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------- | ------------------------------- | ------- | ------------------------------- | ---------------------- | ------------------------ | --------- | -------------------------------- |
+| 1 (Odd months)  | Unilateral back ext 2x8 with 5 sec ISO & [Roman Chair Hip Abduction](https://youtu.be/j5HWZOfIePI?si=EsYf8Gg0rFO16y-p) | Halo + [Scarecrow](https://youtu.be/qzNQ3_TQHDs) + KB Around the World    | Suitcase Bottom Ups             |         | Unilateral Arm(were it applies) | Chin-up                | Unilateral-leg variation | Leg Press | Push to Lateral(left/right) Pull |
+| 2 (Even months) | Bilateral Back ext 4x8 with 10 sec ISO & [Side Lateral QL Extension](https://youtu.be/UaydER2VIUc?si=wkQxbIqiz7lJQF_7) | Super ROM + [V Raise](https://youtu.be/5WBdE0TSoUQ) + KB Around the World | Banded Suitcase or Farmer Carry |         | Bilateral Arm                   | Neutral/Narrow Pull-up | Bilateral variation      | HackSmith | Push to Pull                     |
 
 
 #todo/BAU/Workout 
@@ -159,8 +159,8 @@ Alternate each month keeping the week training phase in to account the weights f
 1. ***Airdyne Bike || Row Machine || Sprint || Jump Rope***
 2. **[[Dynamic Stretching]]**(Includes mobility stretches)
 3. **Mobility**: ROM in table above 2x8 each excercise(3 excercise for each month) ✅ 
-4. [Cable Woodchopper](https://www.youtube.com/watch?v=mvvu8imyMFs) || **[Landmine Twist](https://youtu.be/M93HfnAVIl8?si=7KtnpfDB0GYobD9Z)** 
-5. Bottom Up Suitcase/Farmer Carry 
+4. Bottom Up Suitcase/Farmer Carry 
+5. [Cable Woodchopper](https://www.youtube.com/watch?v=mvvu8imyMFs) || **[Landmine Twist](https://youtu.be/M93HfnAVIl8?si=7KtnpfDB0GYobD9Z)** 
 6. [Cable Pec Minor Fly](https://youtu.be/sC91H2XLtJc?si=bSV_IhpBVbdADHz2&t=286) || Chest Fly([variations](https://youtube.com/shorts/0LJ-JujImCs?si=LgyKSn87TMCarM-y)) || **[DB Cross Body Fly](https://youtu.be/mK2xrdqf_cU?si=jNrPZCLCgUNFki9v)**
 7. Sled Push/Pull
 8. **Clean & Jerk Press** || Deadlift  
@@ -182,12 +182,12 @@ Alternate each month keeping the week training phase in to account the weights f
 	10. [SwissBall stir the pot](https://www.youtube.com/watch?v=ss8v02Yfw0Q)
 15. **[[Personal Trainer#Priority Static Stretch to develop splits| Static Stretching]]**
 
-### Full Body Day Part 2 Sunday Sprint Day
+### Full Body Day Part 2 Sunday 
 1. ***Airdyne Bike || Row Machine || Sprint || Jump Rope***
 2. **Dynamic Stretching**
 3. **Mobility**: ROM in table above ✅
-4. Cable WoodChopper || Landmine Twist 
-5. **Bottom Up Suitcase/Farmer Carry**
+4. **Bottom Up Suitcase/Farmer Carry**
+5. **Cable WoodChopper** || Landmine Twist 
 6. Cable Pec Minor Fly || Chest Fly || **DB Cross Body Fly**
 7. **Sled Push/Pull**  
 8. **Zottman Curl** || Bayesian Cable Curl || Incline Bench Preacher Curl/Reverse Preacher Curl
