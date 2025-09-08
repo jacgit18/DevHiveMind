@@ -394,8 +394,9 @@ Static stretches can be active or passive with external force like maybe a plank
 - [Full split](https://youtu.be/hsNvqUmCAAo?si=SbGmouCgXsZ44_tJ) 
 
 ##### Small Muscle Stretches
+- [Lunge ISO Heel Raise](https://youtu.be/Zwy4h0NukbQ?si=AYz0q6ZnrqsT7T6W) 
+- [ISO Calf Raise with Lunge](https://youtu.be/I8EfBzUFyMo?si=7LAxf79F9CnMSAxC) 
 - [Tib Raise with Eversion Inversion](https://youtu.be/5AIrfsgYdKY?si=Q17wxWTyWFty_W_8)
-
 
 ### Build to Doing Safely
 ##### Full Body

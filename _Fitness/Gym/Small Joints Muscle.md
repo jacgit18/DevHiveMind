@@ -130,27 +130,26 @@ standing chest supported upright low row pulling motion kind of like a reverse d
 
 
 
-[Swiss Ball Side Flexion - Level 1 - GymCalc.com - YouTube](https://youtu.be/kFty8-wF69k?si=uAMaVNjSfn33ebzw)
+[Swiss Ball Side Flexion - Level 1](https://youtu.be/kFty8-wF69k?si=uAMaVNjSfn33ebzw)
 
-[Swiss Ball Side Flexion - Level 2 - GymCalc.com - YouTube](https://youtu.be/68eJEt4NQqc?si=_sbeTFGs2b3DVm9t)
+[Swiss Ball Side Flexion - Level 2](https://youtu.be/68eJEt4NQqc?si=_sbeTFGs2b3DVm9t)
 
-[Swiss Ball Side Flexion - Level 3 - GymCalc.com - YouTube](https://youtu.be/-W02_G1f0aM?si=ERpJXiz8LvGJ7885)
-
-
-[Swiss Ball Side Flexion - Level 4 - GymCalc.com - YouTube](https://youtu.be/2VCOHVeRdKs?si=U5aowRV0FRbtSK2b)
-
-[Swiss Ball Side Flexion - Level 5 - GymCalc.com - YouTube](https://youtu.be/ltuv2fYMXqk?si=IkiMMxr0jMaj7n0P)
+[Swiss Ball Side Flexion - Level 3](https://youtu.be/-W02_G1f0aM?si=ERpJXiz8LvGJ7885)
 
 
+[Swiss Ball Side Flexion - Level 4](https://youtu.be/2VCOHVeRdKs?si=U5aowRV0FRbtSK2b)
+
+[Swiss Ball Side Flexion - Level 5](https://youtu.be/ltuv2fYMXqk?si=IkiMMxr0jMaj7n0P)
 
 
 
 
 
 
-![Iso Calf Raise with Lunge - YouTube](https://youtu.be/I8EfBzUFyMo?si=7LAxf79F9CnMSAxC) 
 
-![Lunge ISO Heel Raise - YouTube](https://youtu.be/Zwy4h0NukbQ?si=AYz0q6ZnrqsT7T6W) 
+
+
+
 
 
 
