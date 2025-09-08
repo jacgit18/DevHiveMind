@@ -315,7 +315,7 @@ Allowed to practice each excercise *here* max twice a week.
 	3. For the middle overhead press in the clean jerk press will help with this.
 4. **Arnold Press**/**Shoulder Press**(alternate) – 20lb/20lb/20lb  
 5. **[Band Chest Hex Press](https://youtu.be/e_wdE5rtZfA)** - 30lb/30lb/30lb
-6. ~~**[Cable Wrist Curl pronated](https://youtu.be/UbfzCh0oJ5E?si=KtTGfiJfP5ep3CkD)/[supinated](https://youtu.be/WVAaKJvToe0?si=r9TKMQbLs1xmpiL0)**(Consider **[[Small Joints Muscle#Wrist Curl| Wrist Curl]]** regimen/[variations](https://www.youtube.com/watch?v=nvJ-1suJCTU)) – 10lb
+6. ~~**[Cable Wrist Curl pronated](https://youtu.be/UbfzCh0oJ5E?si=KtTGfiJfP5ep3CkD)/[supinated](https://youtu.be/WVAaKJvToe0?si=r9TKMQbLs1xmpiL0)**(Consider **Wrist Curl** [variations](https://www.youtube.com/watch?v=nvJ-1suJCTU)) – 10lb
 7. **Wide Seated Tricep Dip/[Bodyweight Tricep Dip](https://www.youtube.com/watch?v=p5Lx2BeVKR4&t=186s)** - 70lb/90/145lb
 8. **Chest Fly** - 50lb/70lb/100lb
 9. ***[Landmine Anti Rotations](https://www.youtube.com/watch?v=8aXStDm3cOs) - 10lb/10lb/10lb***
@@ -446,6 +446,19 @@ Static stretches can be active or passive with external force like maybe a plank
 - **Beginners:** 2-3x/week (5-10 mins/session) or 2 songs length.
 - **Intermediate/Advanced:** 3-4x/week (10-15 mins/session) 4 songs. 
 - **Elite (MMA/Gymnasts):** 5x/week (integrated into warm-ups or cooldowns).
+
+##### Wrist Curl
+
+| Exercise                              | Sets | Reps       | Rest      |
+| ------------------------------------- | ---- | ---------- | --------- |
+| Band roll-ups & unrolls               | 1    | 8–10 reps  | 60 sec    |
+| Finger Extensions                     | 1    | 8–10 reps  | 60 sec    |
+| Wrist Circles                         | 1    | 8–10 reps  | 60 sec    |
+| Towel Squeeze                         | 1    | 8–10 reps  | 60 sec    |
+| Neutral Wrist Curls (Hammer Grip)     | 3    | 8–10 reps  | 60 sec    |
+| Palm-Up Wrist Curls (Supinated Grip)  | 3    | 10–12 reps | 45–60 sec |
+| Palm-Down Wrist Curls (Pronated Grip) | 3    | 10–12 reps | 45–60 sec |
+| Plate or Book Pinch Hold (1–2 books)  | 3    | 10–12 reps | 45–60 sec |
 
 
 #####  [O2 Trainer Routine](https://www.youtube.com/watch?v=-Es3HOd0PT8&list=PL8NG4An03Sa_ZvEIyHFojC65BhMV08qr1&index=5)
