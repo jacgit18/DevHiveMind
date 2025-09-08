@@ -195,7 +195,7 @@ Alternate each month keeping the week training phase in to account the weights f
 6. Cable Pec Minor Fly || Chest Fly || **DB Cross Body Fly**
 7. **Sled Push/Pull**  
 8. **Zottman Curl** || Bayesian Cable Curl || Incline Bench Preacher Curl/Reverse Preacher Curl
-9. **Bench/Cable Reverse Crunch || Dragonfly || Ab Roller 📈** 
+9. **Bench/Cable Reverse Crunch || Dragonfly || Ab Roller ||  Hanging Knee Raise 📈** (Pick One) 
 10. **Back Extension** 📈
 11. Cable Assisted Pancake 📈
 12. **Static Stretching**
@@ -248,7 +248,7 @@ Alternate each month keeping the week training phase in to account the weights f
 6. Chin-up || Pull-up
 7. Tricep Dip || **Incline Bilateral/Unilateral DB Overhead Tricep Extension** 
 8. **Single Arm Lat Pulldown** || Arnold Press
-9. **Bench/Cable Reverse Crunch || Dragonfly || Ab Roller 📈** 
+9. **Bench/Cable Reverse Crunch || Dragonfly || Ab Roller ||  Hanging Knee Raise 📈** (Pick One) 
 10. Cable Assisted Pancake 📈
 11. Kneeling Cable Crunch  📈
 12. **Pallof Press**  📈
