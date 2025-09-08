@@ -31,13 +31,14 @@ dg-publish:
 - [ ] If you're not **feeling the target muscle** during an exercise, **reduce momentum** and slow down the movement to improve control and mind-muscle connection and If you feel **off balance**, try **making a fist**—this creates full-body tension and enhances stability during the lift also try **Isometric Holds** like on concentric and eccentric of different exercises.
 - [ ] Once at solid baseline switch to a **Seasonal Training Strategy** while also integrating workout phases aiming for **7 workouts per week in the winter/fall** were your body tends to **retain more weight during the colder months** (September to February), making it an ideal time to **increase training frequency** and build mass or strength. Then In the **warmer months**, when energy is often spent on outdoor activities and appetite may decrease, **4 to 5 workouts per week** can be more sustainable.
 - [ ] For **hypertrophy week** weight lift in the afternoon or mid day, **skip weight lifting**, and do MMA on Thursday or Saturday.
+- [ ] Train explosive or strength on the Monday of hypertrophy week.
 - [ ] On hypertrophy week alternate between spreading hypertrophy across excercise in session doing less set training to overall failure. Then on other days try reducing the variation of exercises focusing on a few excercise training those to failure but keeping original sets and reps you have planned. 
 - [ ] Can swap make explosive week optional or move it around and supplement with extra Strength or Hypertrophy week play by ear.
 
 ## Workout Tips
 #todo/BAU/Workout  
 - [ ] Do high reps when doing stretches or excercise with short range of movement. 
-- [ ] **Prone Leg curl** before any **squatting** excercise.
+- [ ] **Prone Leg curl** first before any leg excercise.
 - [ ] Rotate your **thumb internally** to end of range for **barbell bench press**.
 - [ ] Hover in more of a standing position for **Abduction Leg Squeezing** machine 70 to 80 lb.
 - [ ] Do 1 minute rest between reps and 2 min between exercises especially if going heavy.
