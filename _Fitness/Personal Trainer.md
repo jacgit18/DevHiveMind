@@ -92,6 +92,7 @@ The general principles of **training phases** like strength and hypertrophy appl
 - [Felix Bar](https://youtu.be/mkRDoV83Y0M?si=BSPRPBericJza2p_) can be a  good arm warm up.
 - Use [[Tower 200.pdf |Tower 200]] for practicing cable machine exercises the weight ranges from 25 to 45 lb.
 - Use cables which are best for isolation of muscle so maybe focus hypertrophy days around cable [properly](https://youtu.be/JUDTGZh4rhg?si=rsQZQsKYSnAV1XkB). 
+- Use grip and [[Hand Exercise.pdf | finger trainer]] to improve grip.
 - Use **barbells** for added weight when building strength.
 - Use **dumbbells** for greater range of motion and correcting muscle imbalances.
 - Any **curlbar** exercise can be done with barbell.

@@ -38,9 +38,7 @@ Here’s a **balanced weekly forearm and grip regimen** using the **3 wrist curl
 
 ---
 
-## 🔄 **Core Regimen (Day 1 – Strength & Control)**
-
-
+## Wrist Curl
 
 | Exercise                              | Sets | Reps       | Rest      |
 | ------------------------------------- | ---- | ---------- | --------- |
@@ -51,6 +49,10 @@ Here’s a **balanced weekly forearm and grip regimen** using the **3 wrist curl
 | Neutral Wrist Curls (Hammer Grip)     | 3    | 8–10 reps  | 60 sec    |
 | Palm-Up Wrist Curls (Supinated Grip)  | 3    | 10–12 reps | 45–60 sec |
 | Palm-Down Wrist Curls (Pronated Grip) | 3    | 10–12 reps | 45–60 sec |
+| Plate or Book Pinch Hold (1–2 books)  | 3    | 10–12 reps | 45–60 sec |
+
+
+
 
 ---
 
@@ -70,12 +72,12 @@ Here’s a **balanced weekly forearm and grip regimen** using the **3 wrist curl
 
 **Tools**: Band, towel, weight
 
-| Exercise                             | Sets | Time / Reps          | Notes                     |
-| ------------------------------------ | ---- | -------------------- | ------------------------- |
-| Plate or Book Pinch Hold (1–2 books) | 3    | 20–30 sec            | Fingers only              |
-| Band-Resisted Wrist Extension        | 2    | 12–15 reps           | Controlled pace           |
-| Finger Extensions (with rubber band) | 3    | 20 reps              | Burnout at the end        |
-| Neutral Wrist Curl + Pause at Top    | 2    | 8 reps + 2 sec pause | Add control challenge     |
+| Exercise                             | Sets | Time / Reps          | Notes                 |
+| ------------------------------------ | ---- | -------------------- | --------------------- |
+| Plate or Book Pinch Hold (1–2 books) | 3    | 20–30 sec            | Fingers only          |
+| Band-Resisted Wrist Extension        | 2    | 12–15 reps           | Controlled pace       |
+| Finger Extensions (with rubber band) | 3    | 20 reps              | Burnout at the end    |
+| Neutral Wrist Curl + Pause at Top    | 2    | 8 reps + 2 sec pause | Add control challenge |
 
 ---
 
@@ -90,7 +92,7 @@ Here’s a **balanced weekly forearm and grip regimen** using the **3 wrist curl
 
 ## Grip Training
 
-![[Hand Exercise.pdf]]
+
 
 
 
