@@ -164,12 +164,7 @@ Alternate each month keeping the week training phase in to account the weights f
 6. [Cable Pec Minor Fly](https://youtu.be/sC91H2XLtJc?si=bSV_IhpBVbdADHz2&t=286) || Chest Fly([variations](https://youtube.com/shorts/0LJ-JujImCs?si=LgyKSn87TMCarM-y)) || **[DB Cross Body Fly](https://youtu.be/mK2xrdqf_cU?si=jNrPZCLCgUNFki9v)**
 7. Sled Push/Pull
 8. **Clean & Jerk Press** || Deadlift  
-9. [Hanging Knee Raise](https://youtu.be/RD_A-Z15ER4?si=h0fyUA7SXg4vWE2a)
-10. **Pallof Press** - can be done with bands  📈
-11. **Bench/Cable Reverse Crunch || Dragonfly || Ab Roller 📈** (Pick One) 
-12. [Cable Assisted Pancake](https://youtu.be/xgU1YYHwprQ?si=N0aX9UVVJqDLvvrS) 📈
-13. [Cable](https://youtu.be/2M1Mikqf5lY?si=sIX0t_7UkiioAffp) || [Kettlebell](https://youtu.be/SuNgD0x2U6U?si=0oE-W6Zv_5pABcMv) - Unilateral RDL 📈
-14. **Stability**: *TRX/SwissBall Training* - focus on one a month or something
+9. **Stability**: *TRX/SwissBall Training* - focus on one a month or something
 	1. [TRX Burpee Level 3](https://www.youtube.com/watch?v=C_rKVEucJak)
 	2. [TRX Assisted Pistol Squat](https://www.youtube.com/watch?v=HqCHXb91yMQ) 
 	3. [TRX Push Up](https://youtu.be/jk4MGqOmjn4?si=lzlBdn4390KOOyNg)/TRX Suspended Pushup(harder)
@@ -185,7 +180,11 @@ Alternate each month keeping the week training phase in to account the weights f
 	13. [Swiss Ball Side Flexion - Level 3](https://youtu.be/-W02_G1f0aM?si=ERpJXiz8LvGJ7885)
 	14. [Swiss Ball Side Flexion - Level 4](https://youtu.be/2VCOHVeRdKs?si=U5aowRV0FRbtSK2b)
 	15. [Swiss Ball Side Flexion - Level 5](https://youtu.be/ltuv2fYMXqk?si=IkiMMxr0jMaj7n0P)
-15. **[[Personal Trainer#Priority Static Stretch to develop splits| Static Stretching]]**
+10. **Pallof Press** - can be done with bands  📈
+11. **Bench/Cable Reverse Crunch || Dragonfly || Ab Roller ||  [Hanging Knee Raise](https://youtu.be/RD_A-Z15ER4?si=h0fyUA7SXg4vWE2a)📈** (Pick One) 
+12. [Cable Assisted Pancake](https://youtu.be/xgU1YYHwprQ?si=N0aX9UVVJqDLvvrS) 📈
+13. [Cable](https://youtu.be/2M1Mikqf5lY?si=sIX0t_7UkiioAffp) || [Kettlebell](https://youtu.be/SuNgD0x2U6U?si=0oE-W6Zv_5pABcMv) - Unilateral RDL 📈
+14. **[[Personal Trainer#Priority Static Stretch to develop splits| Static Stretching]]**
 
 ### Full Body Day Part 2 Sunday 
 1. ***Airdyne Bike || Row Machine || Sprint || Jump Rope***

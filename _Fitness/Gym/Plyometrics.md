@@ -63,6 +63,20 @@ Do 3x10 across all 3x5 for individual alternating legs
 - [Medicine Ball Wall Chest Throw](https://www.youtube.com/watch?v=VFyQExZjs70&list=TLPQMTUxMjIwMjTU6oT9G9b_2w&index=10)
 - [Medicine Ball Rotational Throw](https://www.youtube.com/watch?v=o9BC7lgN1bo&list=TLPQMTUxMjIwMjTU6oT9G9b_2w&index=11)
 
+
+#### PushUps - Pick One Each Month
+- Plank Shoulder Taps(Also Feet on Swiss-ball variation Anti Rotation) 
+- Push-Up Hold (top and bottom) 
+- Push-Up all the way down with a hand release at the bottom and then push back up.
+- [Scapular Push up on Elbows](https://www.youtube.com/watch?v=DKkgzXfcXMQ) > [Scapular Push-Ups ](https://www.youtube.com/watch?v=FTpVhBkyIzk&list=TLPQMTUxMjIwMjT8Ie0IftYKYw&index=3) > [Scap Push Up on Stability Ball](https://www.youtube.com/watch?v=QPOpxQxItYU)
+	- Breathe deeply as you push your chest outward, squeezing your shoulder blades together. Then, reverse the motion by pulling your chest inward and separating your shoulder blades, keeping your elbows straight throughout the movement.
+- [Dive Bomber Push-Up](https://www.youtube.com/watch?v=mvNcSF-nXg4)
+- [Pike Push Up](https://www.youtube.com/watch?v=Ajna6AxQdtw) || [Swiss Ball Pike](https://www.youtube.com/watch?v=Aj1uNRy1q1k)
+- [Mike Tyson Pushup](https://www.youtube.com/watch?v=j-oSVFU2eMc)
+- Single Arm Pushup 
+- Also look at [[Build Crazy Unilateral Strength]]
+
+
 ###### Build to
 - **Muscle-Ups** – progression from explosive pull-ups (for full-body coordination)
 - **Front Lever Progressions** – strengthen posterior chain and core
