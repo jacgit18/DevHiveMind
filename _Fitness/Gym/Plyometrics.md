@@ -13,6 +13,8 @@ dg-publish:
 ---
 Do 3x10 across all 3x5 for individual alternating legs
 
+maybe add a cardio day to hypertrophy week 
+
 - [14 Calisthenics Exercises on Gymnastics Rings](https://www.gornation.com/blogs/news/exercises-gymnastics-rings) 
 
 
@@ -82,6 +84,15 @@ Do 3x10 across all 3x5 for individual alternating legs
 - **Front Lever Progressions** – strengthen posterior chain and core
 
 
+### Cardio Ropes
+- [Rope Burpees](https://www.youtube.com/watch?v=ggREbG6w6hY&list=TLPQMTUxMjIwMjSqjLz-Yp-KTQ&index=9)
+- [Rope Snakes](https://www.youtube.com/watch?v=6QJVwZoYz7U&list=TLPQMTUxMjIwMjSqjLz-Yp-KTQ&index=11)
+- [Side-to-Side Waves](https://www.youtube.com/watch?v=k4sUC6B2nJo&list=TLPQMTUxMjIwMjSCoRXDSuxPzQ&index=13)
+- [Lateral Shuffles with Waves](https://www.youtube.com/watch?v=rifQ2I9iY_o)
+- [Lunge with Rope Waves](https://www.youtube.com/watch?v=bPCZY_sG5eA&list=TLPQMTUxMjIwMjTU6oT9G9b_2w&index=3)
+-  [Rope Circles](https://www.youtube.com/watch?v=O2HVcPD3wKQ)
+- 
+- [Marpo Rope Pulling Machine](https://youtu.be/hP_xdsp7Ojk?si=HPTb9E4H-3t8iqK_) 
 
 
 

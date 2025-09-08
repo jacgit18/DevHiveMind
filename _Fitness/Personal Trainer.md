@@ -157,7 +157,7 @@ Alternate each month keeping the week training phase in to account the weights f
 - [ ] For DB exercises alternate every 2 months to improve at the excercise then after doing each switch back to picking which one you feel like doing depending on how you feel maybe do this in pairs picking to Dumbbell exercises.
 
 ### Full Body Day Part 1 Saturday(Optional MMA) 
-1. ***Airdyne Bike || Row Machine || Sprint || Jump Rope***
+1. ***Airdyne Bike || Row Machine || Sprint || Jump Rope || Shadow Boxing***
 2. **[[Dynamic Stretching]]**(Includes mobility stretches)
 3. **Mobility**: ROM in table above 2x8 each excercise(3 excercise for each month) ✅ 
 4. Bottom Up Suitcase/Farmer Carry 
@@ -188,7 +188,7 @@ Alternate each month keeping the week training phase in to account the weights f
 14. **[[Personal Trainer#Priority Static Stretch to develop splits| Static Stretching]]**
 
 ### Full Body Day Part 2 Sunday 
-1. ***Airdyne Bike || Row Machine || Sprint || Jump Rope***
+1. ***Airdyne Bike || Row Machine || Sprint || Jump Rope || Shadow Boxing***
 2. **Dynamic Stretching**
 3. **Mobility**: ROM in table above ✅
 4. **Bottom Up Suitcase/Farmer Carry**
@@ -201,7 +201,7 @@ Alternate each month keeping the week training phase in to account the weights f
 11. Cable Assisted Pancake 📈
 12. **Static Stretching**
 ### Lower Body Day Part 1 Monday(MMA)
-1. ***Airdyne Bike || Row Machine || Sprint || Jump Rope***
+1. ***Airdyne Bike || Row Machine || Sprint || Jump Rope || Shadow Boxing***
 2. **Dynamic Stretching**
 3. **Mobility**:  Leg ROM in table above ✅
 4. **Prone Leg Curl** - Strength phase only ✅  
@@ -215,7 +215,7 @@ Alternate each month keeping the week training phase in to account the weights f
 12. Kettlebell Leg Raise 📈
 13. **Static Stretching**
 ### Upper Body Day Part 1 Tuesday Sprint Day - Meal Prep Day 2
-1. ***Airdyne Bike || Row Machine || Sprint || Jump Rope***
+1. ***Airdyne Bike || Row Machine || Sprint || Jump Rope || Shadow Boxing***
 2. **Dynamic Stretching**
 3. **Mobility**: ROM in table above ✅
 4. Cable Pec Minor Fly || Chest Fly || **DB Cross Body Fly**
@@ -228,7 +228,7 @@ Alternate each month keeping the week training phase in to account the weights f
 11. **Pallof Press** 📈
 
 ### Lower Body Day Part 2 Wednesday(Optional MMA)
-1. ***Airdyne Bike || Row Machine || Sprint || Jump Rope***
+1. ***Airdyne Bike || Row Machine || Sprint || Jump Rope || Shadow Boxing***
 2. **Dynamic Stretching**
 3. **Mobility**:  Leg ROM in table above ✅
 4. **Prone Leg Curl** ✅  
@@ -241,7 +241,7 @@ Alternate each month keeping the week training phase in to account the weights f
 
 
 ### Upper Body Day Part 2 Thursday Sprint Day(Optional MMA)
-1. ***Airdyne Bike || Row Machine || Sprint || Jump Rope***
+1. ***Airdyne Bike || Row Machine || Sprint || Jump Rope || Shadow Boxing***
 2. **Dynamic Stretching**
 3. **Mobility**: ROM in table above ✅
 4. Cable Pec Minor Fly || Chest Fly || **DB Cross Body Fly**
