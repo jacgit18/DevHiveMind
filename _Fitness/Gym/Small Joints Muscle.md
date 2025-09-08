@@ -53,12 +53,13 @@ Here’s a **balanced weekly forearm and grip regimen** using the **3 wrist curl
 
 **Main Sets (Use Moderate Weight)**
 
-|Exercise|Sets|Reps|Rest|
-|---|---|---|---|
-|Neutral Wrist Curls (Hammer Grip)|3|8–10 reps|60 sec|
-|Palm-Up Wrist Curls (Supinated Grip)|3|10–12 reps|45–60 sec|
-|Palm-Down Wrist Curls (Pronated Grip)|3|10–12 reps|45–60 sec|
-|Standing Finger Roll Wrist Curls|2|8–10 reps|60 sec|
+| Exercise                              | Sets | Reps       | Rest      |
+| ------------------------------------- | ---- | ---------- | --------- |
+| Neutral Wrist Curls (Hammer Grip)     | 3    | 8–10 reps  | 60 sec    |
+| Palm-Up Wrist Curls (Supinated Grip)  | 3    | 10–12 reps | 45–60 sec |
+| Palm-Down Wrist Curls (Pronated Grip) | 3    | 10–12 reps | 45–60 sec |
+| Standing Finger Roll Wrist Curls      | 2    | 8–10 reps  | 60 sec    |
+|                                       |      |            |           |
 
 **Optional Finisher**:
 
