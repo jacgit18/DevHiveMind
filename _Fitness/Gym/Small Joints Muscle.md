@@ -40,31 +40,17 @@ Here’s a **balanced weekly forearm and grip regimen** using the **3 wrist curl
 
 ## 🔄 **Core Regimen (Day 1 – Strength & Control)**
 
-**Warm-Up (3–4 min)**
 
-- Wrist Circles – 10 each way
-    
-- Finger Extensions – 20 reps (open/close fast)
-    
-- Towel Squeeze – 20 sec hold x 2
-
-- Band roll-ups & unrolls - 20lb/20lb/20lb
-    
-
-**Main Sets (Use Moderate Weight)**
 
 | Exercise                              | Sets | Reps       | Rest      |
 | ------------------------------------- | ---- | ---------- | --------- |
+| Band roll-ups & unrolls               | 1    | 8–10 reps  | 60 sec    |
+| Finger Extensions                     | 1    | 8–10 reps  | 60 sec    |
+| Wrist Circles                         | 1    | 8–10 reps  | 60 sec    |
+| Towel Squeeze                         | 1    | 8–10 reps  | 60 sec    |
 | Neutral Wrist Curls (Hammer Grip)     | 3    | 8–10 reps  | 60 sec    |
 | Palm-Up Wrist Curls (Supinated Grip)  | 3    | 10–12 reps | 45–60 sec |
 | Palm-Down Wrist Curls (Pronated Grip) | 3    | 10–12 reps | 45–60 sec |
-| Standing Finger Roll Wrist Curls      | 2    | 8–10 reps  | 60 sec    |
-|                                       |      |            |           |
-
-**Optional Finisher**:
-
-- **Farmer’s Carry Hold** (with dumbbells or heavy bag) – 2 x 30 sec hold
-    
 
 ---
 
