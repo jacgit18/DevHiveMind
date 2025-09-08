@@ -187,12 +187,12 @@ Alternate each month keeping the week training phase in to account the weights f
 2. **Dynamic Stretching**
 3. **Mobility**: ROM in table above ✅
 4. **Bottom Up Suitcase/Farmer Carry**
-5. **Cable WoodChopper** || Landmine Twist 
+5. Cable WoodChopper || Landmine Twist 
 6. Cable Pec Minor Fly || Chest Fly || **DB Cross Body Fly**
 7. **Sled Push/Pull**  
 8. **Zottman Curl** || Bayesian Cable Curl || Incline Bench Preacher Curl/Reverse Preacher Curl
 9. **Bench/Cable Reverse Crunch || Dragonfly || Ab Roller 📈** 
-10. Back Extension 📈
+10. **Back Extension** 📈
 11. Cable Assisted Pancake 📈
 12. **Static Stretching**
 ### Lower Body Day Part 1 Monday(MMA)
@@ -216,12 +216,11 @@ Alternate each month keeping the week training phase in to account the weights f
 4. Cable Pec Minor Fly || Chest Fly || **DB Cross Body Fly**
 5. Chest/Bench Press  
 6. Tricep Dip || **Incline Bilateral/Unilateral DB Overhead Tricep Extension** 
-7. Single Arm Lat Pulldown
-8. Arnold Press || **Landmine Shoulder Press**
-9. **Zottman Curl** || Bayesian Cable Curl || Incline Bench Preacher Curl/Reverse Preacher Curl
-10. Cable Assisted Pancake 📈
-11. Kneeling Cable Crunch  📈
-12. **Pallof Press** 📈
+7. Single Arm Lat Pulldown || **Arnold Press**
+8. **Zottman Curl** || Bayesian Cable Curl || Incline Bench Preacher Curl/Reverse Preacher Curl
+9. Cable Assisted Pancake 📈
+10. Kneeling Cable Crunch  📈
+11. **Pallof Press** 📈
 
 ### Lower Body Day Part 2 Wednesday(Optional MMA)
 1. ***Airdyne Bike || Row Machine || Sprint || Jump Rope***
@@ -231,11 +230,9 @@ Alternate each month keeping the week training phase in to account the weights f
 5. **DB Bulgarian Split Squat** || Walking Barbell Zercher Lunge || B-Stance Zercher Squat
 6. Hack Squat *or* Leg Press | | Curlbar Behind Back Kneeling Squat on Toes 
 7. Trap Bar Squat Jump 
-8. Clean & Jerk Press || **Deadlift**    
-9. **Back Extension** 📈
-10. Cable || Kettlebell - Unilateral RDL 📈
-11. Kettlebell Leg Raise 📈
-
+8. **Back Extension** 📈
+9. Cable || Kettlebell - Unilateral RDL 📈
+10. Kettlebell Leg Raise 📈
 
 
 ### Upper Body Day Part 2 Thursday Sprint Day(Optional MMA)
@@ -246,13 +243,12 @@ Alternate each month keeping the week training phase in to account the weights f
 5. Chest/Bench Press  
 6. Chin-up || Pull-up
 7. Tricep Dip || **Incline Bilateral/Unilateral DB Overhead Tricep Extension** 
-8. Single Arm Lat Pulldown
-9. **Arnold Press** || Landmine Shoulder Press
-10. **Bench/Cable Reverse Crunch || Dragonfly || Ab Roller 📈** 
-11. Cable Assisted Pancake 📈
-12. Kneeling Cable Crunch  📈
-13. **Pallof Press**  📈
-14. **Static Stretching**
+8. **Single Arm Lat Pulldown** || Arnold Press
+9. **Bench/Cable Reverse Crunch || Dragonfly || Ab Roller 📈** 
+10. Cable Assisted Pancake 📈
+11. Kneeling Cable Crunch  📈
+12. **Pallof Press**  📈
+13. **Static Stretching**
 
 
 ### Nobody Day Friday  - Meal Prep Day 1
