@@ -108,6 +108,7 @@ _~5–10 minutes total – pick 3–5 each position_
 - [Pike Push Up](https://www.youtube.com/watch?v=Ajna6AxQdtw) || [Swiss Ball Pike](https://www.youtube.com/watch?v=Aj1uNRy1q1k)
 - [Mike Tyson Pushup](https://www.youtube.com/watch?v=j-oSVFU2eMc)
 - Single Arm Pushup 
+- Also look at [[Build Crazy Unilateral Strength]]
 
 ###### Multi 
 - ***[Scorpion Stretch](https://youtu.be/uNDfgnWN2G0?si=EpYL2roS_qd9LBPy)*** 

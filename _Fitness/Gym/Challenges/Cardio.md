@@ -12,19 +12,14 @@ Relates:
 Peer Reviewed: 0
 dg-publish:
 ---
-
-
-
-
-
-
-
 ### Cardio Calisthenic
 
 Jump Rope 
 Shadow boxing 
 bike
 Row machine 
+
+maybe add a cardio day to hypertrophy week 
 
 - Side-to-Side Waves(Battle Ropes) ^164e0e
 	- ![](https://www.youtube.com/watch?v=k4sUC6B2nJo&list=TLPQMTUxMjIwMjSCoRXDSuxPzQ&index=13)
