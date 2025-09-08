@@ -109,19 +109,6 @@ Here’s a **balanced weekly forearm and grip regimen** using the **3 wrist curl
 
 
 
-[The ONLY 2 Exercises You Need For A Thick Back - YouTube](https://youtu.be/JdjJC6eIk44?si=435iItkw0NEV0vrm)
-
-45 degree angle wide grip  low row for mid back forearms aligned with hands no outside or inside when pulling back lean back and brace core  to pull at a angle watch out and make sure it doesn't feel like a shrug keep back straight 
-
-let back open up while fully extend and contract on concentric
-
-alt use incline bench for chested supported row pushing chest through bench
-
-standing chest supported upright low row pulling motion kind of like a reverse dip motion
-
-
-
-
 
 
 
