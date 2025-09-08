@@ -27,7 +27,6 @@ dg-publish:
 	- [ ] For Upper body focus on 20% strength training and 80% hypertrophy training to failure with high volume.
 - [ ] Cycle in different exercises every **8-12 weeks** to avoid stagnation also limit range of exercises per session to 11 excercise and limit phone usage to preserve performance.
 - [ ] Focus on solo arm exercises until next year also on the on and off days when drained or finding it hard to get moving take Amino Acid.
-- [ ] Practice [[Grip Strength Training]] trying out explosive and strength phases.
 - [ ] If you're not **feeling the target muscle** during an exercise, **reduce momentum** and slow down the movement to improve control and mind-muscle connection and If you feel **off balance**, try **making a fist**—this creates full-body tension and enhances stability during the lift also try **Isometric Holds** like on concentric and eccentric of different exercises.
 - [ ] Once at solid baseline switch to a **Seasonal Training Strategy** while also integrating workout phases aiming for **7 workouts per week in the winter/fall** were your body tends to **retain more weight during the colder months** (September to February), making it an ideal time to **increase training frequency** and build mass or strength. Then In the **warmer months**, when energy is often spent on outdoor activities and appetite may decrease, **4 to 5 workouts per week** can be more sustainable.
 - [ ] For **hypertrophy week** weight lift in the afternoon or mid day, **skip weight lifting**, and do MMA on Thursday or Saturday.
@@ -180,6 +179,11 @@ Alternate each month keeping the week training phase in to account the weights f
 	8. [TRX Plank into Rotations](https://www.youtube.com/watch?v=TT2jUlSOZNc)
 	9. [SwissBall Flutter Kicks](https://www.youtube.com/watch?v=W_we2PmocxE)
 	10. [SwissBall stir the pot](https://www.youtube.com/watch?v=ss8v02Yfw0Q)
+	11. [Swiss Ball Side Flexion - Level 1](https://youtu.be/kFty8-wF69k?si=uAMaVNjSfn33ebzw)
+	12. [Swiss Ball Side Flexion - Level 2](https://youtu.be/68eJEt4NQqc?si=_sbeTFGs2b3DVm9t)
+	13. [Swiss Ball Side Flexion - Level 3](https://youtu.be/-W02_G1f0aM?si=ERpJXiz8LvGJ7885)
+	14. [Swiss Ball Side Flexion - Level 4](https://youtu.be/2VCOHVeRdKs?si=U5aowRV0FRbtSK2b)
+	15. [Swiss Ball Side Flexion - Level 5](https://youtu.be/ltuv2fYMXqk?si=IkiMMxr0jMaj7n0P)
 15. **[[Personal Trainer#Priority Static Stretch to develop splits| Static Stretching]]**
 
 ### Full Body Day Part 2 Sunday 

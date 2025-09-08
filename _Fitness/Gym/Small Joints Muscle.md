@@ -13,9 +13,6 @@ dg-publish:
 ---
 ## Wrist Curl
 
-[[Grip Strength Training]]
-
-
 Here’s a **balanced weekly forearm and grip regimen** using the **3 wrist curl variations** — **neutral**, **palm-up**, and **palm-down** — with minimal equipment (dumbbells, resistance bands, or even water bottles/backpack). Designed for **2–3x per week**, 20 minutes max.
 
 ---
@@ -104,8 +101,9 @@ Here’s a **balanced weekly forearm and grip regimen** using the **3 wrist curl
 - Focus on **tempo**: slow down the lowering phase (eccentric)
 
 
+## Grip Training
 
-
+![[Hand Exercise.pdf]]
 
 
 
@@ -130,16 +128,16 @@ standing chest supported upright low row pulling motion kind of like a reverse d
 
 
 
-[Swiss Ball Side Flexion - Level 1](https://youtu.be/kFty8-wF69k?si=uAMaVNjSfn33ebzw)
-
-[Swiss Ball Side Flexion - Level 2](https://youtu.be/68eJEt4NQqc?si=_sbeTFGs2b3DVm9t)
-
-[Swiss Ball Side Flexion - Level 3](https://youtu.be/-W02_G1f0aM?si=ERpJXiz8LvGJ7885)
 
 
-[Swiss Ball Side Flexion - Level 4](https://youtu.be/2VCOHVeRdKs?si=U5aowRV0FRbtSK2b)
 
-[Swiss Ball Side Flexion - Level 5](https://youtu.be/ltuv2fYMXqk?si=IkiMMxr0jMaj7n0P)
+
+
+
+
+
+
+
 
 
 
