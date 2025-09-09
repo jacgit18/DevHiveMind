@@ -21,11 +21,8 @@ Since you can already do decent push-ups, your foundation is solid — but this 
 ## Phase 1: Build Foundational Strength (2–4 Weeks)
 *Target: Strengthen weak links*
 
-1. **Uneven Push-Ups**  
-   - One hand on a *book/block* (3–4" high), the other on the floor.  
-   - 3× 8–10 reps/side.  
-   - *Goal:* Shift 70% weight to the lower hand.
-
+1. **Uneven Push-Ups** - One hand on a *book/block* (3–4" high), the other on the floor.  
+   
 2. **Archer Push-Ups**  
    - Wide hand position; bend one arm while keeping the other straight.  
    - Lower until chest touches bent arm’s wrist.  
