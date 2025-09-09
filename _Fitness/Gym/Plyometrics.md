@@ -66,10 +66,13 @@ maybe add a cardio day to hypertrophy week
 - [Medicine Ball Rotational Throw](https://www.youtube.com/watch?v=o9BC7lgN1bo&list=TLPQMTUxMjIwMjTU6oT9G9b_2w&index=11)
 
 
-#### PushUps - Pick One Each Month
+#### PushUps - Pick One Each Month 
+Experiment adding plate on back for each variation
 
 - Push-Up Hold (top and bottom) 
 - Push-Up all the way down with a hand release at the bottom and then push back up.
+- [Uneven Pushups](https://youtu.be/4cMVGTW6hqw?si=naIh1_-4frSiXvJQ) - One hand on a *book/block* (3–4" high), the other on the floor.  
+
 
 
 - [Scapular Push up on Elbows](https://www.youtube.com/watch?v=DKkgzXfcXMQ) > [Scapular Push-Ups ](https://www.youtube.com/watch?v=FTpVhBkyIzk&list=TLPQMTUxMjIwMjT8Ie0IftYKYw&index=3) > [Scap Push Up on Stability Ball](https://www.youtube.com/watch?v=QPOpxQxItYU)
