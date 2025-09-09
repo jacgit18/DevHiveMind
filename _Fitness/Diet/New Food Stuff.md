@@ -1,3 +1,10 @@
+Wholefoods bread one mighty mill  $7 makes 9 sandwiches
+
+4 packs 28 for 36 sandwiches 
+
+
+
+
 ## Budget Summary
 
 - **Monthly Meat Budget:**
