@@ -22,8 +22,7 @@ Since you can already do decent push-ups, your foundation is solid — but this 
 *Target: Strengthen weak links*
 
 
-   
-2. **Archer Push-Ups** - Wide hand position; bend one arm while keeping the other straight. Lower until chest touches bent arm’s wrist.  
+   ush-Ups** - Wide hand position; bend one arm while keeping the other straight. Lower until chest touches bent arm’s wrist.  
 
 
 

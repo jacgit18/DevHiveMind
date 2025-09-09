@@ -72,6 +72,9 @@ Experiment adding plate on back for each variation
 - Push-Up Hold (top and bottom) 
 - Push-Up all the way down with a hand release at the bottom and then push back up.
 - [Uneven Pushups](https://youtu.be/4cMVGTW6hqw?si=naIh1_-4frSiXvJQ) - One hand on a *book/block* (3–4" high), the other on the floor.  
+- [Archer Push Ups](https://youtu.be/MxVbNel13Ek?si=SbhaD_UvN-B2TmCy) - Wide hand position; bend one arm while keeping the other straight. Lower until chest touches bent arm’s wrist.  
+- Elevated Single-Arm Push-Ups
+
 
 
 
