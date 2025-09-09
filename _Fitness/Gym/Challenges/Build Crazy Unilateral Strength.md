@@ -23,10 +23,8 @@ Since you can already do decent push-ups, your foundation is solid — but this 
 
 1. **Uneven Push-Ups** - One hand on a *book/block* (3–4" high), the other on the floor.  
    
-2. **Archer Push-Ups**  
-   - Wide hand position; bend one arm while keeping the other straight.  
-   - Lower until chest touches bent arm’s wrist.  
-   - 3× 5–8 reps/side.
+2. **Archer Push-Ups** - Wide hand position; bend one arm while keeping the other straight. Lower until chest touches bent arm’s wrist.  
+
 
 3. **Weighted Push-Ups**  
    - Wear a backpack with books/weights.  
