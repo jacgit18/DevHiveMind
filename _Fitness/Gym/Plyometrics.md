@@ -28,8 +28,9 @@ maybe add a cardio day to hypertrophy week
 - Bjj Roll rock to box jump
 ##### **Grounded On Side**
 - **Side Plank with Knee Drive** – From a side plank, explosively drive the top knee toward the chest, mimicking sprint mechanics.
-##### **Grounded On Front**
-###### PushUps - Pick One Each Month 
+
+##### Grounded On Front  - Pick One Each Month
+###### PushUps 
 Experiment adding plate on back for each variation
 
 - Push-Up Hold (top and bottom) 
