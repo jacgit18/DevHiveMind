@@ -10171,7 +10171,7 @@
       "active": "ccc14a9fa54b368e",
       "mtime": "2025-03-30T15:47:19-04:00"
     },
-    "fit": {
+    "fit2": {
       "main": {
         "id": "5324373015726ba8",
         "type": "split",
@@ -10193,27 +10193,28 @@
                   "icon": "lucide-file",
                   "title": "Personal Trainer"
                 }
+              },
+              {
+                "id": "fa1aacce379697ed",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "_Fitness/Gym/Plyometrics.md",
+                    "mode": "preview",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "Plyometrics"
+                }
               }
-            ]
+            ],
+            "currentTab": 1
           },
           {
             "id": "31f31699c3336b92",
             "type": "tabs",
             "children": [
-              {
-                "id": "e0a007a0148dfb2d",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "_Fitness/Gym/Challenges/Cardio.md",
-                    "mode": "preview",
-                    "source": false
-                  },
-                  "icon": "lucide-file",
-                  "title": "Cardio"
-                }
-              },
               {
                 "id": "34491defd95b3d11",
                 "type": "leaf",
@@ -10241,9 +10242,23 @@
                   "icon": "lucide-file",
                   "title": "Plyometrics"
                 }
+              },
+              {
+                "id": "a3d2da75e0d8ccdb",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "_Fitness/Personal Trainer.md",
+                    "mode": "preview",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "Personal Trainer"
+                }
               }
             ],
-            "currentTab": 1
+            "currentTab": 2
           }
         ],
         "direction": "vertical"
@@ -10317,10 +10332,10 @@
                 "state": {
                   "type": "file-properties",
                   "state": {
-                    "file": "_Fitness/Gym/Challenges/Cardio.md"
+                    "file": "_Fitness/Personal Trainer.md"
                   },
                   "icon": "lucide-info",
-                  "title": "File properties for Cardio"
+                  "title": "File properties for Personal Trainer"
                 }
               },
               {
@@ -10554,8 +10569,8 @@
           "card-board:CardBoard": false
         }
       },
-      "active": "e0a007a0148dfb2d",
-      "mtime": "2025-09-08T15:48:51-04:00"
+      "active": "a3d2da75e0d8ccdb",
+      "mtime": "2025-09-10T09:07:15-04:00"
     }
   },
   "active": "fit"

@@ -102,25 +102,3 @@ dg-publish:
   - Regular optometrist checkups (rule out other issues).  
 
   
-
----
-
-  
-
-### **Critical Notes**  
-
-- **Not a Cure:** It won’t replace glasses/contacts but can improve how your eyes function.  
-
-- **For Best Results:** Combine with:  
-
-  - Proper screen ergonomics (arm’s length distance).  
-
-  - Blue-light filters at night.  
-
-  
-
-If your myopia is worsening rapidly, see an **optometrist specializing in myopia management** (they may suggest ortho-k lenses or low-dose atropine).  
-
-  
-
-Want a printable cheat sheet for your exercises? I can draft one!
