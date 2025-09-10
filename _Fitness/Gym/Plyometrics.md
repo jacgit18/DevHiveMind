@@ -29,7 +29,37 @@ maybe add a cardio day to hypertrophy week
 ##### **Grounded On Side**
 - **Side Plank with Knee Drive** – From a side plank, explosively drive the top knee toward the chest, mimicking sprint mechanics.
 ##### **Grounded On Front**
+###### PushUps - Pick One Each Month 
+Experiment adding plate on back for each variation
+
+- Push-Up Hold (top and bottom) 
+- Push-Up all the way down with a hand release at the bottom and then push back up.
 - Clap Push-Ups or Explosive Incline Push-Ups 
+- [Uneven Pushups](https://youtu.be/4cMVGTW6hqw?si=naIh1_-4frSiXvJQ) - One hand on a *book/block* (3–4" high), the other on the floor.  
+- [Archer Push Ups](https://youtu.be/MxVbNel13Ek?si=SbhaD_UvN-B2TmCy) - Wide hand position; bend one arm while keeping the other straight. Lower until chest touches bent arm’s wrist.  
+- Elevated Single-Arm Push-Ups - Hands on a *bench/table* (waist height). Shift weight to one arm, cross free foot behind ankle. 
+
+
+- [Scapular Push up on Elbows](https://www.youtube.com/watch?v=DKkgzXfcXMQ) > [Scapular Push-Ups ](https://www.youtube.com/watch?v=FTpVhBkyIzk&list=TLPQMTUxMjIwMjT8Ie0IftYKYw&index=3) > [Scap Push Up on Stability Ball](https://www.youtube.com/watch?v=QPOpxQxItYU)
+	- Breathe deeply as you push your chest outward, squeezing your shoulder blades together. Then, reverse the motion by pulling your chest inward and separating your shoulder blades, keeping your elbows straight throughout the movement.
+
+- [Band-Assisted Single-Arm Push-Ups](https://youtu.be/_BgVxA_B4cA?si=d75stB2yZ_vhRNAG) - Resistance band around waist, anchored above (e.g., pull-up bar).  
+  
+
+- [Negative Single-Arm Push-Ups](https://youtu.be/3eG7bw-5LP0?si=0v2rMRT71HLh7VmV) - Start at the top position (one arm, feet wide).  
+
+- [Floor-Assisted Single-Arm Push-Ups](https://youtu.be/waSkSp7b5Uc?si=db7L68JOseDARxM9) - Free hand on *small ball/water bottle* for balance only. Gradually reduce pressure until ready to lift it entirely.
+
+###### Extra
+- [Dive Bomber Push-Up](https://www.youtube.com/watch?v=mvNcSF-nXg4)
+- [Pike Push Up](https://www.youtube.com/watch?v=Ajna6AxQdtw) || [Swiss Ball Pike](https://www.youtube.com/watch?v=Aj1uNRy1q1k)
+- [Mike Tyson Pushup](https://www.youtube.com/watch?v=j-oSVFU2eMc)
+
+- Plank Shoulder Taps on Swiss-ball
+
+- Single Arm Pushup 
+
+
 
 ##### **Standing** 
 - **[Box Jump](https://www.youtube.com/watch?v=NBY9-kTuHEk)**(emphasize controlled landings)
@@ -66,36 +96,6 @@ maybe add a cardio day to hypertrophy week
 - [Medicine Ball Rotational Throw](https://www.youtube.com/watch?v=o9BC7lgN1bo&list=TLPQMTUxMjIwMjTU6oT9G9b_2w&index=11)
 
 
-#### PushUps - Pick One Each Month 
-Experiment adding plate on back for each variation
-
-- Push-Up Hold (top and bottom) 
-- Push-Up all the way down with a hand release at the bottom and then push back up.
-- [Uneven Pushups](https://youtu.be/4cMVGTW6hqw?si=naIh1_-4frSiXvJQ) - One hand on a *book/block* (3–4" high), the other on the floor.  
-- [Archer Push Ups](https://youtu.be/MxVbNel13Ek?si=SbhaD_UvN-B2TmCy) - Wide hand position; bend one arm while keeping the other straight. Lower until chest touches bent arm’s wrist.  
-- Elevated Single-Arm Push-Ups - Hands on a *bench/table* (waist height). Shift weight to one arm, cross free foot behind ankle. 
-
-
-
-
-- [Scapular Push up on Elbows](https://www.youtube.com/watch?v=DKkgzXfcXMQ) > [Scapular Push-Ups ](https://www.youtube.com/watch?v=FTpVhBkyIzk&list=TLPQMTUxMjIwMjT8Ie0IftYKYw&index=3) > [Scap Push Up on Stability Ball](https://www.youtube.com/watch?v=QPOpxQxItYU)
-	- Breathe deeply as you push your chest outward, squeezing your shoulder blades together. Then, reverse the motion by pulling your chest inward and separating your shoulder blades, keeping your elbows straight throughout the movement.
-
-- [Band-Assisted Single-Arm Push-Ups](https://youtu.be/_BgVxA_B4cA?si=d75stB2yZ_vhRNAG) - Resistance band around waist, anchored above (e.g., pull-up bar).  
-  
-
-- [Negative Single-Arm Push-Ups](https://youtu.be/3eG7bw-5LP0?si=0v2rMRT71HLh7VmV) - Start at the top position (one arm, feet wide).  
-
-- [Floor-Assisted Single-Arm Push-Ups](https://youtu.be/waSkSp7b5Uc?si=db7L68JOseDARxM9) - Free hand on *small ball/water bottle* for balance only. Gradually reduce pressure until ready to lift it entirely.
-
-##### Extra
-- [Dive Bomber Push-Up](https://www.youtube.com/watch?v=mvNcSF-nXg4)
-- [Pike Push Up](https://www.youtube.com/watch?v=Ajna6AxQdtw) || [Swiss Ball Pike](https://www.youtube.com/watch?v=Aj1uNRy1q1k)
-- [Mike Tyson Pushup](https://www.youtube.com/watch?v=j-oSVFU2eMc)
-
-- Plank Shoulder Taps on Swiss-ball
-
-- Single Arm Pushup 
 
 
 
