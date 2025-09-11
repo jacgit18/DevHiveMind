@@ -5,6 +5,17 @@ Wholefoods bread one mighty mill  $7 makes 9 sandwiches
 
 
 
+
+
+
+
+
+
+ **Beef & Quinoa Stir-Fry**  
+- Lean ground beef + quinoa + bell peppers + soy sauce + sesame oil  
+- *Cook 3 lbs beef + 2 cups quinoa for 5 meals.*  
+
+
 ## Budget Summary
 
 - **Monthly Meat Budget:**

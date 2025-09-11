@@ -24,54 +24,13 @@ Soak nut for like 4 hours then drain and blend adding water there you go
 
 
 
-Try
 
 
 
 
 
 
-carrots in protein shake 
 
-
-**Lentil Stew**
-- Lentils + carrots + potatoes + coconut milk (for creaminess)  
-- *Freeze extras.*  
-
-
- **Beef & Quinoa Stir-Fry**  
-- Lean ground beef + quinoa + bell peppers + soy sauce + sesame oil  
-- *Cook 3 lbs beef + 2 cups quinoa for 5 meals.*  
-
-Pasta w/ Chickpeas
-Turkey Chili
-
-Chili
-
-Macadamia Oil
-### **Trader Joe's**
-
-- Gnocchi, pesto, gluten-free pasta, turkey chili
-    
-- Garlic salt, coconut flour, canned tomatoes
-    
-- Bagels, coconut yogurt, nuts
-
-#### Sandwich  have one a day 
-
-Peanut Butter Banana Protein Sandwich  
-  
-Ingredients: 2 slices whole grain bread, 2 tbsp peanut butter, ½ sliced banana, sprinkle of protein powder  
-  
-~20g protein | ~400–500 kcal
-
-
-
-Cottage Cheese & Honey Sandwich  
-  
-Ingredients: ½ cup cottage cheese (in a sandwich thin), drizzle of honey or jam  
-  
-~15g protein | ~300–350 kcal
 
 
 
