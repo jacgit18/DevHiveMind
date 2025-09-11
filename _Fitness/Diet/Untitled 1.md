@@ -3,7 +3,7 @@
 
 
 
-[15+ High-Protein Breakfast Recipes for Better Gut Health](https://www.eatingwell.com/high-protein-breakfast-recipes-for-better-gut-health-11746773)
+
 
 
 
@@ -26,15 +26,10 @@ Soak nut for like 4 hours then drain and blend adding water there you go
 
 Try
 
-Corn bread
 
-tofu
 
-Sauerkraut 
 
-kimchi
 
-french toast
 
 carrots in protein shake 
 
