@@ -48,6 +48,7 @@ use different nuts to make creamy sauces mixing with yogurt or cottage cheese
 
 ## Soups 
 
+onion soup 
 
 **Lentil Stew**
 - Lentils + carrots + potatoes + coconut milk (for creaminess)  
