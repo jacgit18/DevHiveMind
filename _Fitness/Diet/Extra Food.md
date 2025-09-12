@@ -15,7 +15,7 @@ Seven strawberries per smoothie 2 servings in trader joes pack 50 cal total
 
 Bulk vegetable purchase before BJ Hall to freeze better and store
 
-For watercrests and cilantro blend Into something than freeze
+For watercrests and cilantro blend Into something than freeze like [[Epis Seasoning]]
 
 For fresh basil clean olive oil free
 
@@ -24,6 +24,21 @@ Submerge onions in cold water to stop crying
 
 
 look into buying new fridge
+
+
+
+
+Star anise in beef stock
+
+
+rice Thyme butter garlic salt
+
+
+
+ **Beef & Quinoa Stir-Fry**  
+- Lean ground beef + quinoa + bell peppers + soy sauce + sesame oil  
+- *Cook 3 lbs beef + 2 cups quinoa for 5 meals.*  
+
 
 
 
