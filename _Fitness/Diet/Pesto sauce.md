@@ -11,14 +11,6 @@ Relates:
 Peer Reviewed: 0
 dg-publish:
 ---
-Making **pesto sauce** is quick, easy, and requires just a few fresh ingredients. Here’s a classic **basil pesto recipe** (with variations for dietary preferences):
-
-  
-
----
-
-  
-
 ### **Classic Basil Pesto Sauce**  
 
 *(Makes ~1 cup)*  
@@ -101,4 +93,3 @@ Making **pesto sauce** is quick, easy, and requires just a few fresh ingredients
 
   
 
-Enjoy! 🌿 Let me know if you’d like a different twist (e.g., sun-dried tomato pesto).

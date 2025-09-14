@@ -16,9 +16,9 @@ Use ground turkey first is a hassle to vacuum seal also do the same for maybe gr
 
 ## Carbs
 pasta
-plantains
+plantain - Flash freeze sweet plantain straight don't blanch
 
-Potato
+Potato- can make mash potatoes in zip lock bag once cooked
 
 Rice 
 Quinoa 
@@ -71,6 +71,9 @@ Frozen Fruit
 ## Sauces
 Soak nut for like 4 hours then drain and blend adding water there you go
 use different nuts to make creamy sauces mixing with yogurt or cottage cheese  
+
+
+[[Pesto sauce]]
 
 
 ## Soups 
