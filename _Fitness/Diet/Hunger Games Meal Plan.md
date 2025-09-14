@@ -46,7 +46,7 @@ Roast asparagus in toaster oven
 
   
 
-Sear zucchini in oil
+Saute zucchini in oil
 
   
   
