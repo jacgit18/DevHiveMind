@@ -5,7 +5,7 @@ If food budget cost exceed 600 that is subtracted from monthly fun money of 1250
 
 
 ## Schedule 
-Make Chili once a month maybe with cornbread
+Make Chili once or twice a month maybe with cornbread
 
 ## Tips
 Use ground turkey first is a hassle to vacuum seal also do the same for maybe ground chicken depending on the consistency if it's the same as ground turkey
