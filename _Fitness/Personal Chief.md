@@ -1,6 +1,9 @@
 
 # Cooking Framework
 
+If food budget cost exceed 600 that is subtracted from monthly fun money of 1250 the 600 includes mass gainer which is 144 then protein/meat which ranges from 160 to 200 then non food and non meat is another 180  
+
+
 ## Schedule 
 Make Chili once a month maybe with cornbread
 
@@ -19,6 +22,9 @@ Potato
 
 Rice 
 Quinoa 
+
+
+Bean porridge with cinnamon and apple and what ever sweetener
 
 ### Premade Frozen Food 
 - Gnocchi
