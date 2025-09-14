@@ -77,8 +77,8 @@ Mac cost Vegitables and fruit $40 Max
 ### Month Itemized Breakdown: 
 
 #todo/BAU 
-- [ ] Buy 4 bottles of Kiefer every two weeks
-- [ ] 2 bags of bread 
+- [x] Buy 4 bottles of Kiefer every two weeks ✅ 2025-09-14
+- [x] 2 bags of bread ✅ 2025-09-14
 - [ ] Increase main dinner meat, Quinoa, or deli meat when eggs aren't available 
 - [ ] Make meal prep effortless as possible 
 - [ ] Update weekly totals

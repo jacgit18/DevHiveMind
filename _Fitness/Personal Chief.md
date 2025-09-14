@@ -1,6 +1,9 @@
 
 # Cooking Framework
 
+#todo/BAU/cooking
+- [ ] look into buying new fridge
+
 If food budget cost exceed 600 that is subtracted from monthly fun money of 1250 the 600 includes mass gainer which is 144 then protein/meat which ranges from 160 to 200 then non food and non meat is another 180 the max allowed to spend a month in terms of fun and all this 1750
 
 
@@ -8,7 +11,46 @@ If food budget cost exceed 600 that is subtracted from monthly fun money of 1250
 Make Chili once or twice a month maybe with cornbread
 
 ## Tips
+Cook for 4 days then for the rest of the 3 days of the week on that 4th day 
+
+
 Use ground turkey first is a hassle to vacuum seal also do the same for maybe ground chicken depending on the consistency if it's the same as ground turkey
+
+
+Bulk vegetable purchase before BJ Hall to freeze better and store
+
+If egg floats throw away
+
+Boil then fry potatoes for another meal like with ground meat
+
+
+Broth is made with Meats along with bones
+
+Stock is only bones
+
+
+Can freeze Bones from chicken as well as chicken feet after eating and watch rinsing them and stuff then use to make chicken broth when you have enough
+
+
+
+Freezing cook meat reduces the shelf life when vacuum sealing to like 3 months
+
+When doing marinades in vaccum seal don't put too much otherwise it gets sucked out the bag
+
+
+Meat that touches other meat even in vacuum browns
+  
+
+Freeze burgers before vacuum Sealing also use parchment paper on scale
+
+If seasoning just do marinades when it comes to vacuum sealing nothing else like salt or black pepper alone
+
+
+## Recipe 
+ **Beef & Quinoa Stir-Fry**  
+- Lean ground beef + quinoa + bell peppers + soy sauce + sesame oil  
+- *Cook 3 lbs beef + 2 cups quinoa for 5 meals.*  
+
 
 ## Baking 
 
@@ -58,9 +100,12 @@ Macadamia Oil
 
 ## Seasoning
 
-[[Epis Seasoning]]
+[[Epis Seasoning]] for watercress and cilantro you can make this seasoning to freeze and not waste anything
 
+Fresh basil clean then mix with olive oil and vacuum seal 
 
+- rice Thyme butter garlic salt
+- Star anise in beef stock
 
 ## Shakes 
 kiefer
