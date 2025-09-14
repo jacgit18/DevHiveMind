@@ -86,13 +86,13 @@ onion soup
 
 
 ## Protein 
-3 or 4 eggs daily 
-tuna
-chicken thigh
-Pork Loin Chop
-Steak
-Ground turkey 
-Ground beef 
+- 3 or 4 eggs daily 
+- tuna
+- chicken thigh
+- Pork Loin Chop
+- Steak
+- Ground beef/turkey burgers/ chili or some type of protein bowl  with rice or some pasta 
+
 ### Performance Food 
 
 - **Steady Fuel (baseline meals):** oats, quinoa, sweet potatoes, avocado, eggs, nut butter.
