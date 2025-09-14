@@ -105,11 +105,11 @@ Mac cost Vegitables and fruit $40 Max
 - [x] Exclude mass gainer from cost calculation below only include in calories and protein calculation ✅ 2025-09-14
 - [x] Eggs, Quinoa, Chicken, Steak, Turkey, Pork ✅ 2025-09-14
 - [ ] Look for quality **Deli Meats** choose nitrate-free turkey/roast beef brands
-- [ ] Not always getting eggs since in house a lot and can exclude Wonder beets
-- [ ] Make 4 day meal plan the rest of days premade food 
-- [ ] Go to Ditmas health food spot once a month, Aldi and trader Joe's twice a week  
+- [x] Not always getting eggs since in house a lot and can exclude Wonder beets ✅ 2025-09-14
+- [x] Make 4 day meal plan the rest of days premade food ✅ 2025-09-14
+- [x] Go to Ditmas health food spot once a month, Aldi and trader Joe's twice a week ✅ 2025-09-14
 - [ ] Maybe do [Chia pudding](https://youtu.be/jRu2aFdRL54?si=QwMBArCKrPHB3PPp) instead of throwing in shake get a healthy milk maybe from whole foods and include yogurt etc...
-- [ ] Add extra healthy stuff in sandwich to increase calories 
+- [x] Add extra healthy stuff in sandwich to increase calories ✅ 2025-09-14
 - [x] Try taking Theanine before bed ✅ 2025-09-14
 - [x] check rice price and quality rice like black or brown rice ✅ 2025-09-14
 - [x] try peanut butter and avocado in shake ✅ 2025-09-14

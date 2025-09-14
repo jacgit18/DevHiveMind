@@ -3,7 +3,8 @@
 ## 1. Budget Gate
 
 - **Food Cap:** $600/month.
-- If food > $600 → subtract from $1,250 fun money.
+- If food > $600 → subtract from $1,150 fun money max total is 1,750
+- Annually total is $21,000 roughly 
     
 - Breakdown:
     - Mass gainer: $144
