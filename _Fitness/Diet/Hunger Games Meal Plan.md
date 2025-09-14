@@ -37,7 +37,21 @@ dg-publish:
 |        |        |            |
 | 12     | 150    |            |
 
+Tin foil as alt lid steam broccoli and other greens.
 
+  
+  
+
+Roast asparagus in toaster oven
+
+  
+
+Sear zucchini in oil
+
+  
+  
+
+If frying sauteing potatoes boiled in partially or steam them then do the frying / sauteing
 
 
 Mac cost Vegitables and fruit $40 Max

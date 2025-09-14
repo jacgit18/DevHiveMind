@@ -46,7 +46,7 @@
 ### Proteins
 
 - Eggs (3–4 daily)
-- Chicken thighs
+- Chicken thighs cook slower to 185
 - Ground turkey / beef
 - Steak
 - Pork loin chop
@@ -106,7 +106,7 @@
     
 - Rice: 
 	- thyme + butter + garlic + salt
-	- Chicken stock + butter 
+	- Chicken stock + butter + garlic + salt + cilantro + paprika + thyme + onion
     
 - Beef stock: use star anise
 
@@ -122,7 +122,7 @@
 
 ### Sauces
 
-- Nut-based sauces (soak → blend w/ water)
+- Nut-based sauces (soak 4 hours → blend w/ water)
     
 - Add yogurt or cottage cheese for creaminess with the nut sauce
     
