@@ -6,7 +6,7 @@ kanban-plugin: board
 
 ## ##### Standing on business
 
-- [ ] [[Striking Approach]]
+- [ ] [[Personal Hands]]
 - [ ] [[Personal Trainer]]
 - [ ] I rob banks first TD, now Capital One who is next 👀
 - [ ] Imagine being a senoir software engineer and using other people work copy first create later
