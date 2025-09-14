@@ -1,6 +1,8 @@
 
-## Cooking Framework
+# Cooking Framework
 
+## Schedule 
+Make Chili once a month maybe with cornbread
 
 ## Tips
 Use ground turkey first is a hassle to vacuum seal also do the same for maybe ground chicken depending on the consistency if it's the same as ground turkey
@@ -15,7 +17,11 @@ plantains
 
 Potato
 
-Grain
+Rice 
+Quinoa 
+
+### Premade Frozen Food 
+- Gnocchi
 
 
 
@@ -70,8 +76,7 @@ onion soup
 - *Freeze extras.*  
 
 
-## Premade Frozen Food 
-- Gnocchi
+
 
 
 ## Protein 

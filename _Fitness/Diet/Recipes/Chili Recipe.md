@@ -26,24 +26,27 @@ This recipe yields a hearty, medium-spiced, bean-inclusive chili. The instructio
 **The Aromatics & Base:**
 *   2 tbsp vegetable or olive oil
 *   1 large yellow onion, diced
+*   Carrot
+*   Celery
 *   1 large bell pepper (any color), diced
+*  1 Bay leaf
 *   **4 cloves garlic,** minced
 
 **The Spice Blend:**
-*   2 tbsp chili powder
-*   1 tbsp ground cumin
-*   1 tsp smoked paprika
-*   1 tsp dried oregano
-*   **½ - 1 tsp cayenne pepper** (adjust for heat level)
+*   chili powder - MAKE IT YOURSELF - toast it in pan also 
+	*  1 tbsp ground cumin
+	*   1 tsp smoked paprika
+	*   1 tsp Coriander 
+	*   1 tsp dried oregano
+	*   **½ - 1 tsp cayenne pepper** (adjust for heat level)
+	*   ½ tsp black pepper
 *   1 tsp salt, plus more to taste
-*   ½ tsp black pepper
+
 
 **The Protein & Tomatoes:**
 *   **2 lbs ground beef** (80/20 lean/fat is ideal)
 *   1 (12 oz) bottle or can of beer, water, or beef broth *(deglazing liquid)*
 *   1 (28 oz) can crushed tomatoes
-*   1 (15 oz) can tomato sauce
-*   1 (15 oz) can diced tomatoes, undrained
 *   2 tbsp tomato paste
 
 **The Beans & Final Touch:**
