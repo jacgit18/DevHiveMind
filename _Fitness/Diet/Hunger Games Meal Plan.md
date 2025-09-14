@@ -102,17 +102,17 @@ Mac cost Vegitables and fruit $40 Max
 - [x] Buy meat, pasta, etc..  for a better idea on average monthly cost ✅ 2025-08-25
 - [ ] Finalize before end of year to add weight more effectively and control spending 
 - [ ] Once finalized build recipes around grocery list like a restaurant would  
-- [ ] Exclude mass gainer from cost calculation below only include in calories and protein calculation
-- [ ] Eggs, Quinoa, Chicken, Steak, Turkey, Pork  
+- [x] Exclude mass gainer from cost calculation below only include in calories and protein calculation ✅ 2025-09-14
+- [x] Eggs, Quinoa, Chicken, Steak, Turkey, Pork ✅ 2025-09-14
 - [ ] Look for quality **Deli Meats** choose nitrate-free turkey/roast beef brands
 - [ ] Not always getting eggs since in house a lot and can exclude Wonder beets
 - [ ] Make 4 day meal plan the rest of days premade food 
 - [ ] Go to Ditmas health food spot once a month, Aldi and trader Joe's twice a week  
 - [ ] Maybe do [Chia pudding](https://youtu.be/jRu2aFdRL54?si=QwMBArCKrPHB3PPp) instead of throwing in shake get a healthy milk maybe from whole foods and include yogurt etc...
 - [ ] Add extra healthy stuff in sandwich to increase calories 
-- [ ] Try taking Theanine before bed
-- [ ] check rice price and quality rice like black or brown rice
-- [ ] try peanut butter and avocado in shake
+- [x] Try taking Theanine before bed ✅ 2025-09-14
+- [x] check rice price and quality rice like black or brown rice ✅ 2025-09-14
+- [x] try peanut butter and avocado in shake ✅ 2025-09-14
 
 #todo/BAU/Supplements
 - [ ] Try doing 10g to 15g of creatine  for the high end try when networking or doing something important for work.
