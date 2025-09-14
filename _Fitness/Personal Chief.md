@@ -12,6 +12,17 @@
     - Staples/other: ~$180
 
 
+
+Tin foil as alt lid steam broccoli and other greens.
+
+Roast asparagus in toaster oven
+
+Saute zucchini in oil
+
+If frying sauteing potatoes boiled in partially or steam them then do the frying / sauteing
+
+
+
 ## 2. Weekly Flow
 
 **Day 1 (Prep Anchor):**
@@ -51,7 +62,7 @@
 - Ground turkey / beef
 - Steak
 - Pork loin chop
-- Tuna
+- [[Canned tuna]]
 
 ### Carbs
 
@@ -101,7 +112,7 @@
 
 ### Seasoning & Flavor
 
-- Epis seasoning (freeze in cubes)
+- [[Epis Seasoning]] (freeze in cubes)
     
 - Basil + olive oil packs
     

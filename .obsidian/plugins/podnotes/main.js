@@ -4622,6 +4622,7 @@ function NoteTemplateEngine(template, episode) {
     return (0, import_obsidian9.htmlToMarkdown)(episode.content);
   });
   addTag("safetitle", replaceIllegalFileNameCharactersInString(episode.title));
+  addTag("stream", episode.streamUrl);
   addTag("url", episode.url);
   addTag("date", (format2) => episode.episodeDate ? window.moment(episode.episodeDate).format(format2 ?? "YYYY-MM-DD") : "");
   addTag("podcast", replaceIllegalFileNameCharactersInString(episode.podcastName));
