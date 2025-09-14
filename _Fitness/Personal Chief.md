@@ -1,7 +1,7 @@
 
 # Cooking Framework
 
-If food budget cost exceed 600 that is subtracted from monthly fun money of 1250 the 600 includes mass gainer which is 144 then protein/meat which ranges from 160 to 200 then non food and non meat is another 180  
+If food budget cost exceed 600 that is subtracted from monthly fun money of 1250 the 600 includes mass gainer which is 144 then protein/meat which ranges from 160 to 200 then non food and non meat is another 180 the max allowed to spend a month in terms of fun and all this 1750
 
 
 ## Schedule 
