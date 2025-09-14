@@ -1,58 +1,170 @@
+# Minimal-Effort Cooking Framework (Ingredient Focus)
 
-# Cooking Framework
+## 1. Budget Gate
 
-## Budget & Rules
-
-- **Monthly ceiling:** $1,750 total → $1,250 fun money + $600 food budget.
+- **Food Cap:** $600/month.
+- If food > $600 → subtract from $1,250 fun money.
     
-- **Overage rule:** If food > $600, subtract the difference from fun money.
-    
-- **Breakdown:**
-    
+- Breakdown:
     - Mass gainer: $144
-        
     - Protein/meat: $160–200
-        
-    - Other food/non-meat: ~$180
-        
+    - Staples/other: ~$180
 
----
 
-## Cooking Rhythm
+## 2. Weekly Flow
 
-- Cook **4 days’ worth** of meals at a time starting Friday start whatever prep needed day before then cook again on Tuesday preparing day before or Sunday.
+**Day 1 (Prep Anchor):**
+- Cook 4 days’ worth of food.
+- Portion & vacuum-seal.
+
+**Day 4:**
+- Cook again for 3 days.
+- Keep it lighter (variety, leftover management).
+
+
+## 3. Prep & Storage Rules
+
+- Use ground turkey/chicken first (harder to freeze).
     
-- Make **chili (with cornbread/rice/etc...)** once or twice monthly.
+- Buy bulk veg → freeze immediately.
     
-- Use ground turkey first (vac-sealing hassle) → ground chicken if texture is similar.
+- **Egg test:** float = trash.
+    
+- Potatoes: boil → fry OR mash + bag.
+    
+- Save bones/chicken feet → broth/stock.
+    
+- Freeze burgers before sealing (parchment under).
+    
+- Cooked, vacuum-sealed meat = ~3 months.
+    
+- Only marinades pre-seal (no dry seasonings).
+
+
+## 4. Ingredient Categories
+
+### Proteins
+
+- Eggs (3–4 daily)
+- Chicken thighs
+- Ground turkey / beef
+- Steak
+- Pork loin chop
+- Tuna
+
+### Carbs
+
+- Rice
+- Quinoa
+- Pasta
+- Potatoes (mash or fry after boil)
+- Plantain (flash-freeze sweet, no blanch)
+- Bean porridge (cinnamon, apple, sweetener)
+- Premade frozen gnocchi
+
+### Vegetables
+
+- Bulk-purchased & frozen (rotating staples: onions, carrots, peppers, leafy greens)
     
 
----
+### Dairy
 
-## Prep & Storage Tips
+- Feta
+- Kefir (also shake base)
+- Rice Pudding
 
-- Buy bulk vegetables (e.g., BJ’s, Hall’s) → freeze.
+### Fats
+- Macadamia oil
+- Irish Butter
+
+### Nuts (per serving, kcal/protein)
+
+- Macadamia – 204 / 2g
     
-- **Egg test:** if it floats, toss it.
+- Pecans – 200 / 3g
     
-- **Potatoes:** boil → fry, or cook and store mashed in zip-locks.
+- Pine nuts – 190 / 4g
     
-- **Broth:** meat + bones. **Stock:** bones only. Save bones + chicken feet in freezer.
+- Brazil nuts – 187 / 4g
     
-- Cooked, vacuum-sealed meat = ~3 months freezer life.
+- Walnuts – 185 / 4g
     
-- Marinades in vacuum-seal bags: don’t overfill (sucks out).
+- Almonds – 165 / 6g
     
-- Meat-to-meat contact in vacuum bags causes browning.
+- Pistachios – 160 / 6g
     
-- Freeze burgers before sealing; parchment paper on scale helps.
+- Peanuts – 161 / 7.3g
     
-- Only add marinades before sealing — avoid dry seasonings like salt/pepper.
+- Cashews – 157 / 5g
     
 
----
+### Seasoning & Flavor
 
-## Core Recipes
+- Epis seasoning (freeze in cubes)
+    
+- Basil + olive oil packs
+    
+- Rice: 
+	- thyme + butter + garlic + salt
+	- Chicken stock + butter 
+    
+- Beef stock: use star anise
+
+- Chicken Seasoning:
+	- soy sauce
+	- honey
+	- salt
+	- black pepper
+	- garlic
+	- chives
+	- tumeric or ginger
+    
+
+### Sauces
+
+- Nut-based sauces (soak → blend w/ water)
+    
+- Add yogurt or cottage cheese for creaminess with the nut sauce
+    
+- [[Pesto sauce]]
+    
+
+### Shakes
+
+- Base: kefir
+- Add: carrots, frozen fruit, protein powder
+
+
+## 5. Performance Nutrition Layer
+
+- **Steady Fuel:** oats, quinoa, avocado, nut butter, eggs.
+    
+- **Recovery:** chocolate milk, tart cherry juice, yogurt + fruit, whey + banana.
+    
+- **Endurance:** beet juice, banana + honey, raisins/dates.
+    
+- **Anti-Inflammatory:** salmon, turmeric, berries, olive oil.
+    
+- **Hydration/Electrolytes:** coconut water, broth, watermelon, electrolyte drinks.
+
+
+## 6. Execution Shortcut
+
+When cooking, follow **Ingredient Matrix**:
+
+1. Pick a **protein**.
+    
+2. Pair with a **carb**.
+    
+3. Add **veg** (bulk-frozen stash).
+    
+4. Layer **fat/nuts** or **sauce/seasoning**.
+    
+5. Portion → vacuum-seal → freeze overflow.
+    
+
+
+## Recipes
 
 - **Beef & Quinoa Stir-Fry**
     
@@ -69,131 +181,7 @@
 - **Onion Soup**
     
 
----
-
 ## Baking
 
 (placeholder — expand when you actually bake something)
 
----
-
-## Carbs
-
-- Pasta
-    
-- Plantain → flash freeze sweet plantains (no blanching).
-    
-- Potatoes (boil/fry, mash bags).
-    
-- Rice
-    
-- Quinoa
-    
-- Bean porridge (cinnamon, apple, sweetener).
-    
-- **Premade frozen:** gnocchi.
-    
-
----
-
-## Dairy
-
-- Feta
-    
-- Kiefer (also shake base).
-    
-
----
-
-## Fats
-
-- Macadamia oil
-    
-
----
-
-## Nuts (kcal & protein per serving)
-
-1. Macadamia – 204 / 2g
-    
-2. Pecans – 200 / 3g
-    
-3. Pine nuts – 190 / 4g
-    
-4. Brazil nuts – 187 / 4g
-    
-5. Walnuts – 185 / 4g
-    
-6. Almonds – 165 / 6g
-    
-7. Pistachios – 160 / 6g
-    
-8. Peanuts – 161 / 7.3g
-    
-9. Cashews – 157 / 5g
-    
-
----
-
-## Seasoning
-
-- **Epis seasoning** (watercress + cilantro → freeze).
-    
-- Fresh basil + olive oil → vacuum seal.
-    
-- Rice: thyme + butter + garlic + salt.
-    
-- Beef stock: add star anise.
-    
-
----
-
-## Shakes
-
-- Base: kefir, frozen fruit, carrots.
-    
-- Protein powder + variations.
-    
-
----
-
-## Sauces
-
-- Nut sauces: soak 4 hrs → drain → blend with water.
-    
-- Variations: add yogurt or cottage cheese.
-    
-- [[Pesto sauce]]
-    
-
----
-
-## Protein Sources
-
-- 3–4 eggs daily
-    
-- Tuna
-    
-- Chicken thigh
-    
-- Pork loin chop
-    
-- Steak
-    
-- Ground beef/turkey burgers, chili, protein bowls
-    
-
----
-
-## Performance Food Framework
-
-- **Steady Fuel (baseline):** oats, quinoa, sweet potatoes, avocado, eggs, nut butter.
-    
-- **Recovery (post-training):** chocolate milk, tart cherry juice, yogurt + fruit, whey + banana.
-    
-- **Endurance (pre/during):** beet juice, banana + honey, raisins/dates.
-    
-- **Anti-inflammatory:** salmon, turmeric, berries, olive oil.
-    
-- **Hydration/electrolytes:** coconut water, broth, watermelon, electrolyte drinks.
-    
