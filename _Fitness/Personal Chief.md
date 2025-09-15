@@ -74,6 +74,8 @@ If frying sauteing potatoes boiled in partially or steam them then do the frying
 - Bean porridge (cinnamon, apple, sweetener)
 - Premade frozen gnocchi
 
+For excess Potatoes and  Plantain make waffles with them and freeze them 
+
 ### Vegetables
 
 - Bulk-purchased & frozen (rotating staples: onions, carrots, peppers, leafy greens)
