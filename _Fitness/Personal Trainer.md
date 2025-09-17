@@ -61,11 +61,11 @@ Maybe try Transparent Labs EAA and Electrolytes or buy both once a year.
 
 - Transparent Labs Mass Gainer 
 - Sports Research Creatine 
-- Sports Research Wild Alaskan Sockeye Salmon Oil
+- Sports Research [Omega-3 Fish Oil from Wild Alaska Pollock](https://store.sportsresearch.com/products/omega-3-fish-oil-alaskaomegar-1250mg?variant=42500073324744)
 - Sports Research Vitamin D3 + K2 with Coconut MCT Oil
 - Thorne Advanced Testosterone Support
 - Thorne Collagen Fit
-- Thorne Magnesium CitraMate
+- Thorne Magnesium Glycinate
 - Thorne Multi Vitamin 
 - Thorne Theanine
 
@@ -122,7 +122,7 @@ The general principles of **training phases** like strength and hypertrophy appl
 | Day      | Session Type                                                                               | Week 1 – Strength Focus                                                                   | Week 2 – Hypertrophy Focus                         | Week 3 – Explosive/Plyometrics Focus              | Week 4 –  New Skills                                        | Best Order of Operations |
 | -------- | ------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------- | -------------------------------------------------- | ------------------------------------------------- | ----------------------------------------------------------- | ------------------------ |
 | **Sat**  | Full Body + Sled + Clean Jerk Press                                                        | *Lower Strength* ***Upper [[Personal Trainer#Session 2 Pull Focus\|Pull]]  Hypertrophy*** | *Lower Hypertrophy*  ***Upper Pull Explosive***    | *Lower Explosive*  ***Upper Pull Strength***      | Cardio/Sprint/BagWork/Rope day                              | Glutes / Hamstrings      |
-| **Sun**  | Full Body + Sled + Clean Jerk Press                                                        | *Lower Hypertrophy* **Upper [[Personal Trainer#Session 1 Push Focus\|Push]] Strength**    | *Lower Strength*  **Upper Push Hypertrophy**       | *Lower Hypertrophy*  **Upper Push Explosive **    | Cable day                                                   | Core                     |
+| **Sun**  | Full Body + Sled + Clean Jerk Press                                                        | *Lower Hypertrophy* **Upper [[Personal Trainer#Session 1 Push Focus\|Push]] Strength**    | *Lower Strength*  **Upper Push Hypertrophy**       | *Lower Hypertrophy*  **Upper Push Explosive **    |                                                             | Core                     |
 | **Mon**  | Lower + *Machine/Freeweight* [Dead Hang](https://www.youtube.com/watch?v=ShkBXOGK7A8)(MMA) | *Lower Strength*                                                                          | *Lower Hypertrophy*                                | *Lower Explosive*                                 | Anything including Plyometrics/MediBall                     | Scapular & Upper Back    |
 | **Tues** | Upper + Run + Balance Board                                                                | ***Pull Strength***                                                                       | ***Pull *** *Explosive* → **Hypertrophy Finisher** | ***Pull*** *Explosive* → **Hypertrophy Finisher** | Home/Gym Resistance Band/Tower 200/Cable stability Ball day | Lats / Traps             |
 | **Wed**  | Lower +                *Cable Machine*     Dead Hang(MMA)                                  | *Lower Strength*                                                                          | *Lower Hypertrophy*                                | *Lower Explosive*                                 | TRX Eventually                                              | Quads                    |
@@ -135,10 +135,10 @@ The general principles of **training phases** like strength and hypertrophy appl
 #### Schedule for Alternating Variation in Exercises
 Alternate each month keeping the week training phase in to account the weights follow like this when alternating phase in session **explosive** to **hypertrophy** | **explosive** to **strength** | **strength** to **hypertrophy** also weights follow ***explosive/hypertrophy/strength***.
 
-| Month           | Back Extension                                                                                                         | ROM                                                                       | Suitcase/Farmer                 | Leg ROM | Upper Body                      |                        | Leg Focus                |           | Sled                             |
-| --------------- | ---------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------- | ------------------------------- | ------- | ------------------------------- | ---------------------- | ------------------------ | --------- | -------------------------------- |
-| 1 (Odd months)  | Unilateral back ext 2x8 with 5 sec ISO & [Roman Chair Hip Abduction](https://youtu.be/j5HWZOfIePI?si=EsYf8Gg0rFO16y-p) | Halo + [Scarecrow](https://youtu.be/qzNQ3_TQHDs) + KB Around the World    | Suitcase Bottom Ups             |         | Unilateral Arm(were it applies) | Chin-up                | Unilateral-leg variation | Leg Press | Push to Lateral(left/right) Pull |
-| 2 (Even months) | Bilateral Back ext 4x8 with 10 sec ISO & [Side Lateral QL Extension](https://youtu.be/UaydER2VIUc?si=wkQxbIqiz7lJQF_7) | Super ROM + [V Raise](https://youtu.be/5WBdE0TSoUQ) + KB Around the World | Banded Suitcase or Farmer Carry |         | Bilateral Arm                   | Neutral/Narrow Pull-up | Bilateral variation      | HackSmith | Push to Pull                     |
+| Month           | Back Extension                                                                                                         | ROM                                                                       | Suitcase/Farmer                 | Leg ROM           | Upper Body                      |                        | Leg Focus                |           | Sled                             |
+| --------------- | ---------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------- | ------------------------------- | ----------------- | ------------------------------- | ---------------------- | ------------------------ | --------- | -------------------------------- |
+| 1 (Odd months)  | Unilateral back ext 2x8 with 5 sec ISO & [Roman Chair Hip Abduction](https://youtu.be/j5HWZOfIePI?si=EsYf8Gg0rFO16y-p) | Halo + [Scarecrow](https://youtu.be/qzNQ3_TQHDs) + KB Around the World    | Suitcase Bottom Ups             | Cable Leg day     | Unilateral Arm(were it applies) | Chin-up                | Unilateral-leg variation | Leg Press | Push to Lateral(left/right) Pull |
+| 2 (Even months) | Bilateral Back ext 4x8 with 10 sec ISO & [Side Lateral QL Extension](https://youtu.be/UaydER2VIUc?si=wkQxbIqiz7lJQF_7) | Super ROM + [V Raise](https://youtu.be/5WBdE0TSoUQ) + KB Around the World | Banded Suitcase or Farmer Carry | Non Cable leg day | Bilateral Arm                   | Neutral/Narrow Pull-up | Bilateral variation      | HackSmith | Push to Pull                     |
 
 
 #todo/BAU/Workout 
@@ -261,7 +261,14 @@ Alternate each month keeping the week training phase in to account the weights f
 - Financial Research 
 - Etc....
 
-## Special Free Week
+## Special Sessions
+
+### Lower Body Cable Day Part 1 Monday(MMA)
+
+
+### Lower Body Day Cable Part 2 Wednesday(Optional MMA)
+
+
 ### Explosive Plyometric Day
 1. DB Switch Catch ✅ - 1 min
 
