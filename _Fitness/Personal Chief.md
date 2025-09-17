@@ -10,6 +10,8 @@
     - Mass gainer: $144
     - Protein/meat: $160–200
     - Staples/other: ~$180
+    - Quarterly supplement order monthly avg: $27.00
+- Total right not about $550 but can round to $600 limit still have about $1,150 for fun
 
 
 
@@ -21,6 +23,7 @@ Saute zucchini in oil
 
 If frying sauteing potatoes boiled in partially or steam them then do the frying / sauteing
 
+freeze chili also maybe exclude beans to avoid messing up stomach to eat it more make meal prep easier
 
 
 ## 2. Weekly Flow
