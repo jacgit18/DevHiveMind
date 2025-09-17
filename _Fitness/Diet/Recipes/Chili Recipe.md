@@ -107,5 +107,3 @@ Add any of these with the tomatoes in step 5:
 *   **Acidity/Brightness:** A splash of **apple cider vinegar** or the juice of **½ a lime** stirred in at the very end.
 *   **Earthiness:** 1 tsp **instant coffee granules** or **espresso powder**.
 
-### **Dietary Note:**
-This recipe is naturally **gluten-free**. Just ensure your spice blends and beer (if using) are certified gluten-free if that is a concern.
