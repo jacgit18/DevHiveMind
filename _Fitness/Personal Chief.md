@@ -9,9 +9,10 @@
 - Breakdown:
     - Mass gainer: $144
     - Protein/meat: $160–200
-    - Staples/other: ~$180
-    - Quarterly supplement order monthly avg: $27.00
-- Total right not about $550 but can round to $600 limit still have about $1,150 for fun
+    - Non Meat/Non food: ~$180
+    - Quarterly supplement order monthly avg: $100ish something
+- Total right not about $550 but can round to $600 to $700 if i update supplement to $470 still have about $1,050 for fun
+
 
 
 
