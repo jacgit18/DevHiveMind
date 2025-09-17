@@ -51,6 +51,7 @@ dg-publish:
 
 
 ## Grocery Haul Schedule
+Wednesday and Saturdays are best days 
 Trader Joes twice a month
 Bjs Once a month
 Whole Foods twice a week
