@@ -266,7 +266,7 @@ Alternate each month keeping the week training phase in to account the weights f
 #todo/BAU/Workout 
 - [ ] Build Cable variation for leg day
 - [ ] Finalize, refine, reduce, and prioritize exercises in [[Plyometrics]] program
-- [ ] 
+
 ### Explosive Plyometric Day
 1. DB Switch Catch ✅ - 1 min
 
