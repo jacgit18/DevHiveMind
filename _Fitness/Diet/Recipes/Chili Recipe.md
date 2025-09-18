@@ -49,7 +49,7 @@ This recipe yields a hearty, medium-spiced, bean-inclusive chili. The instructio
 *   1 (28 oz) can crushed tomatoes
 *   2 tbsp tomato paste
 
-**The Beans & Final Touch:**(exclude to stat out of bathroom)
+**The Beans & Final Touch:**(exclude to stay out of bathroom)
 *   2 (15 oz) cans beans (kidney, pinto, or black), drained and rinsed
 *   **1-2 tbsp brown sugar** or maple syrup *(to balance acidity)*
 

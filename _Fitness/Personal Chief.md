@@ -117,7 +117,7 @@ For excess Potatoes and  Plantain make waffles with them and freeze them
     
 
 ### Seasoning & Flavor
-Limit things to 3 spices or premade spice/sauce from store for meats
+Limit seasoning to 3 spices if experimenting with flavors or use premade spice/sauce from store for meats
 
 - Haitian Epis Seasoning(freeze in cubes) 
 	- **2 tablespoons fresh thyme** (or 1 tablespoon dried thyme)
