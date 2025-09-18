@@ -60,10 +60,10 @@ Maybe any Vegetable market twice a month
 ## Current Stack
 Maybe try Transparent Labs EAA and Electrolytes or buy both once a year.   
 
-- Transparent Labs Mass Gainer 
 - Sports Research Creatine 
 - Sports Research [Omega-3 Fish Oil from Wild Alaska Pollock](https://store.sportsresearch.com/products/omega-3-fish-oil-alaskaomegar-1250mg?variant=42500073324744)
 - Sports Research Vitamin D3 + K2 with Coconut MCT Oil
+- Transparent Labs Mass Gainer 
 - Thorne Advanced Testosterone Support
 - Thorne Collagen Fit
 - Thorne Magnesium Glycinate
