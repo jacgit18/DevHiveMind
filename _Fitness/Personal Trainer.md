@@ -228,7 +228,9 @@ Alternate each month keeping the week training phase in to account the weights f
 10. Kneeling Cable Crunch  📈
 11. **Pallof Press** 📈
 
-### Lower Body Day Part 2 Wednesday(Optional MMA)
+### Lower Body Day Part 2 Wednesday(MMA) 
+Go to MMA at least twice a month on this day if not all the time to stop at Trader Joes and whole foods.
+
 1. ***Airdyne Bike || Row Machine || Sprint || Jump Rope || Shadow Boxing***
 2. **Dynamic Stretching**
 3. **Mobility**:  Leg ROM in table above ✅
