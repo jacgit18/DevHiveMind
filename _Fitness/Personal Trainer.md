@@ -165,7 +165,7 @@ Alternate each month keeping the week training phase in to account the weights f
 5. [Cable Woodchopper](https://www.youtube.com/watch?v=mvvu8imyMFs) || **[Landmine Twist](https://youtu.be/M93HfnAVIl8?si=7KtnpfDB0GYobD9Z)** 
 6. [Cable Pec Minor Fly](https://youtu.be/sC91H2XLtJc?si=bSV_IhpBVbdADHz2&t=286) || Chest Fly([variations](https://youtube.com/shorts/0LJ-JujImCs?si=LgyKSn87TMCarM-y)) || **[DB Cross Body Fly](https://youtu.be/mK2xrdqf_cU?si=jNrPZCLCgUNFki9v)**
 7. Sled Push/Pull
-8. **Clean & Jerk Press** || Deadlift  
+8. **Clean & Jerk Press** || Deadlift(Prioritize deadlift until imbalance is gone)  
 9. **Stability**: *TRX/SwissBall Training* - focus on one a month or something
 	1. [TRX Burpee Level 3](https://www.youtube.com/watch?v=C_rKVEucJak)
 	2. [TRX Assisted Pistol Squat](https://www.youtube.com/watch?v=HqCHXb91yMQ) 
