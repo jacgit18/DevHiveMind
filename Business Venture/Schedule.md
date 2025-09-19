@@ -22,8 +22,6 @@ reduce when more money is being made to cook less
 
 7am - gym
 
-8am - Vegetable market(probably do this at end of prior month on this day)
-
 10am - Bjs Haul
 
 12am to 3pm - Vacuum seal and meal prep pre work for future meals 
@@ -43,6 +41,7 @@ reduce when more money is being made to cook less
 
 ### Tues
 
+
 ### Wens
 
 5am - gym
@@ -52,6 +51,7 @@ reduce when more money is being made to cook less
 8pm Trader Joes and Whole Food
 
 ### Thurs
+
 
 ### Fri
 
@@ -107,7 +107,7 @@ reduce when more money is being made to cook less
 ### Sat
 7am - gym
 
-8am - Vegetable market & vacuum seal 
+9am - Vegetable market & vacuum seal 
 
 ### Sun 
 
