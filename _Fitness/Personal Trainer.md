@@ -50,13 +50,6 @@ dg-publish:
 - [ ] Between reps and excercise work on visualizing, breathing, moving around, and do mobility excercise or things like squats if doing upper body work. 
 
 
-## Grocery Haul Schedule
-Wednesday and Saturdays are best days 
-Trader Joes twice a month
-Bjs Once a month
-Whole Foods twice a week
-Maybe any Vegetable market twice a month 
-
 ## Current Stack
 Maybe try Transparent Labs EAA and Electrolytes or buy both once a year.   
 
