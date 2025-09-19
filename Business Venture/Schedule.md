@@ -11,10 +11,13 @@ Relates:
 Peer Reviewed: 0
 dg-publish:
 ---
-Monthly Schedule
+# Monthly Schedule
 
 reduce when more money is being made to cook less 
 
+Money Mondays look into the market learn something financial  
+
+Avoid networking on Wednesday if possible if not limit it to two Wednesday out of the month but try and aim for after Wednesday 
 
 ## Week 1 
 Strength training week 
