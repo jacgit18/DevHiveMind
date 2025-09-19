@@ -13,127 +13,146 @@ dg-publish:
 ---
 # Monthly Schedule
 
-reduce when more money is being made to cook less 
+**General Guidelines**
 
-Money Mondays look into the market learn something financial  
-
-Avoid networking on Wednesday if possible if not limit it to two Wednesday out of the month but try and aim for after Wednesday 
-
-## Week 1 
-Strength training week 
-
-### Sat
-
-7am - gym
-
-10am - Bjs Haul
-
-12am to 3pm - Vacuum seal and meal prep pre work for future meals 
-
-### Sun 
-
-7am - gym
-
-### Mon
-5am - Light gym
-
-6pm to 9pm - MMA
-
-### Tues
-5am - gym
-
-### Wens
-
-5am - light gym
-
-6pm to 8pm - MMA
-
-8pm Trader Joes and Whole Food
-
-### Thurs
-5am - gym
-
-### Fri
+- Cook more when money is tight; reduce cooking load as income grows.
+    
+- **Money Mondays**: review markets, learn something financial.
+    
+- Avoid networking on Wednesdays when possible; if needed, limit to **2 Wednesdays/month**, preferably after mid-month.
 
 
-## Week 2 
-Explosive or strength training week 
+### **Daily Micro-Habits**
+
+- **1hr Skill Stack (Morning or Lunch):** Rotate between
+	 - **AI tool**: research actual spend money in this process if you see value 
+
+    - **Crypto/Options Trading:** focus on structured study + paper trading.
+    
+    - **Software Income Expansion:** learn frameworks/tools in demand (AI/ML integration, cloud infra, data pipelines).
+    
+    - **Alt Industry Exploration:** e.g., healthcare tech, fintech, cybersecurity — fields that hire engineers differently.
+    
+- **Daily 30m “Hustle Block”:** Explore freelance, consulting, or in-person gigs (NY has insane opportunities: tutoring, coding bootcamp mentoring, delivery, or even odd jobs to hedge income).
 
 
-### Sat
-7am - gym
+## Week 1 – Strength Training Focus
 
-### Sun 
-7am - gym
+**Sat**
 
-### Mon
-5am - gym
+- 7am – Gym
+    
+- 10am – BJ’s haul
+    
+- 12pm–3pm – Vacuum seal + meal prep for future weeks
+    
 
-### Tues
-5am - gym
+**Sun**
 
-### Wens
-5am - light gym
+- 7am – Gym
+    
 
-### Thurs
-5am - gym
+**Mon**
 
-### Fri
+- 5am – Light gym
+    
+- 6pm–9pm – MMA
+    
 
+**Tues**
 
-## Week 3
-Hypertrophy training week 
+- 5am – Gym
+    
 
-### Sat
-7am - gym
+**Wed**
 
-### Sun 
-7am - gym
+- 5am – Light gym
+    
+- 6pm–8pm – MMA
+    
+- 8pm – Trader Joe’s + Whole Foods
+    
 
-### Mon
-5am - no gym
-6pm to 9pm - MMA
+**Thurs**
 
-### Tues
+- 5am – Gym
+    
 
-12pm or 5pm after work  
+**Fri**
 
-### Wens
-
-5am - no gym
-
-6pm to 8pm - MMA
-
-8pm Trader Joes and Whole Food
-
-### Thurs
-12pm or 5pm after work  
-
-### Fri
-12pm or 5pm after work  
+- (open)
+    
 
 
-## Week 4
-free form, hypertrophy, explosive or strength training week  
 
-### Sat
-7am - gym
+## Week 2 – Explosive / Strength Focus
 
-9am - Vegetable market & vacuum seal 
+**Sat** 
+- 7am Gym  
+**Sun** 
+- 7am Gym  
+**Mon** 
+- 5am Gym  
+**Tues** 
+- 5am Gym  
+**Wed** 
+- 5am Light gym  
+**Thurs** 
+- 5am Gym  
+**Fri** 
+- 
 
-### Sun 
-7am - gym
 
-### Mon
-5am - light or no gym
+## Week 3 – Hypertrophy Focus
 
-### Tues
-5am - gym
+**Sat** – 7am Gym  
+**Sun** – 7am Gym
 
-### Wens
-5am - light or no gym
+**Mon**
 
-### Thurs
-5am - gym
+- 5am – No gym
+    
+- 6pm–9pm – MMA
+    
 
-### Fri
+**Tues**
+
+- 12pm or 5pm – Gym (after work)
+    
+
+**Wed**
+
+- 5am – No gym
+    
+- 6pm–8pm – MMA
+    
+- 8pm – Trader Joe’s + Whole Foods
+    
+
+**Thurs**
+
+- 12pm or 5pm – Gym (after work)
+    
+
+**Fri**
+
+- 12pm or 5pm – Gym (after work)
+    
+
+
+## Week 4 – Free Form (Hypertrophy / Explosive / Strength)
+
+**Sat**
+
+- 7am – Gym
+    
+- 9am – Vegetable market + vacuum seal
+    
+
+**Sun** – 7am Gym
+
+**Mon** – 5am Light or no gym  
+**Tues** – 5am Gym  
+**Wed** – 5am Light or no gym  
+**Thurs** – 5am Gym  
+**Fri** – (open)
