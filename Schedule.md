@@ -59,7 +59,7 @@ dg-publish:
 - 6pm–9pm – MMA
     
 
-**Tues**
+**Tues** - cook day
 
 - 5am – Gym
     
@@ -78,7 +78,7 @@ dg-publish:
 - 5am – Gym
     
 
-**Fri**
+**Fri** - cook day
 
 - (open)
     
@@ -93,13 +93,13 @@ dg-publish:
 - 7am Gym  
 **Mon** 
 - 5am Gym  
-**Tues** 
+**Tues** - cook day 
 - 5am Gym  
 **Wed** 
 - 5am Light gym  
 **Thurs** 
 - 5am Gym  
-**Fri** 
+**Fri** - cook day
 - 
 
 
@@ -115,7 +115,7 @@ dg-publish:
 - 6pm–9pm – MMA
     
 
-**Tues**
+**Tues** - cook day
 
 - 12pm or 5pm – Gym (after work)
     
@@ -134,7 +134,7 @@ dg-publish:
 - 12pm or 5pm – Gym (after work)
     
 
-**Fri**
+**Fri** - cook day
 
 - 12pm or 5pm – Gym (after work)
     
@@ -149,10 +149,16 @@ dg-publish:
 - 9am – Vegetable market + vacuum seal
     
 
-**Sun** – 7am Gym
+**Sun** 
+- 7am Gym
 
-**Mon** – 5am Light or no gym  
-**Tues** – 5am Gym  
-**Wed** – 5am Light or no gym  
-**Thurs** – 5am Gym  
-**Fri** – (open)
+**Mon** 
+- 5am Light or no gym  
+**Tues** – cook day
+- 5am Gym  
+**Wed** 
+- 5am Light or no gym  
+**Thurs** 
+- 5am Gym  
+**Fri** - cook day
+- 
