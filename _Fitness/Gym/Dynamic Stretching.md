@@ -80,6 +80,7 @@ _~5–10 minutes total – pick 3–5 each position_
 ###### Hip
 - ***Rotational Side Plank*** 
 - [Elevated Side Plank Hip Dip](https://www.youtube.com/watch?v=7qfH2ff6GsQ)(floor or bench feet on ground or bench) - Lateral flexion
+- [Copenhagen Plank](https://youtu.be/HOmsC6HEiFU)
 - [**Side-Lying Bicycles**](https://www.youtube.com/watch?v=CYmpb7fw1Gc) – Pedal your top leg like a bike in the air to raise HR slightly and warm up hips.
 - **Side-Lying Leg Lifts** – Top leg lifts straight up and down; targets glute medius.
 - **Side Plank Leg Raises** – From a side plank, lift top leg up/down; glutes + core activation.
