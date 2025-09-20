@@ -16,6 +16,7 @@ dg-publish:
 **General Guidelines**
 
 - Cook more when money is tight; reduce cooking load as income grows.
+- Mondays and Tuesdays sister stops at Trader Joe's
     
 - **Money Mondays**: review markets, learn something financial.
     
