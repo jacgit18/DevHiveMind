@@ -294,6 +294,7 @@ Anything not on this list is most likely a bad excercise or not worth doing base
 	- **[Crossover Step Lateral Sled Drag](https://youtu.be/rGtYmX2aeAA?si=PnniyFsIluLeViKa)** 
 	- Follow Super ROM excercise cadence with less sets and reps for higher weight. 
 - **[Trap Bar Deadlift](https://youtu.be/zDRgPfiHJ_c?si=hnoOefbzidE4bw4f)**(green/black band) - 50lb/70lb/90lb - try deficit version standing on plate with strength phase
+- [Zercher Reverse Lunge with Twist](https://youtu.be/KhLhr26-i84?si=6nP6lkyfrbVzr1Qi)
 
  **Exclusively strength training this at 2x8**
 - **[Suitcase Bottom Up March](https://www.youtube.com/watch?v=TJjRZBpY75I)** - 5lb/10lb/20lb 
