@@ -19,7 +19,7 @@
 - So $1,000 for drinks, restaurants, etc... use fidelity card to track fun spending can also pull from this fund for vacation fund so maybe split fund in half and adjust when other things pop up but send other half to vacation fund.
 
 
-
+1 then 2 pack per month 
 
 Tin foil as alt lid steam broccoli and other greens.
 
