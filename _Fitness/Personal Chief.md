@@ -3,15 +3,20 @@
 ## 1. Budget Gate
 
 - **Food Cap:** $600/month.
-- If food > $600 → subtract from $1,150 fun money max total is 1,750
-- Annually total is $21,000 roughly 
+- If food > $600 → subtract from fun money the max monthly fun money is $2,000
+- Annually total is $24,000 excluding future utilities and rent this max allowed to spend 
     
 - Breakdown:
     - Mass gainer: $144
     - Protein/meat: $160–200
     - Non Meat/Non food: ~$180
-    - Quarterly supplement order monthly avg: $100ish something
-- Total right not about $550 but can round to $600 to $700 if i update supplement to $470 still have about $1,050 for fun
+    - Quarterly supplement order monthly avg: $147
+    - Quarterly Insurance monthly avg: $25.37
+    - Headstone $45
+    - Gym $33.34
+    - MMA Gym $180
+- Total: $955 round to $1,000
+- So $1,000 for drinks, restaurants, etc... use fidelity card to track fun spending can also pull from this fund for vacation fund so maybe split fund in half and adjust when other things pop up but send other half to vacation fund.
 
 
 
