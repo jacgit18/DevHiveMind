@@ -33,6 +33,7 @@ Prioritize HSA and Roth once emergence fund is full established then set aside a
 	- $2,700 Individual Brokerage fund 
 - Overall between just investment here not a business need to make capital gains of $1 each month 
 - Also consider moving vacation savings bucket to S&P 500 investment to borrow against for vacation as a long term strategy but get investment account to 100k first then see if you can negotiate favorable rates 
+- Need to make 4,100  to 6,000 a month in terms of investments to retire in 20 years 
 
 
 Total Expenses excluding future rent and utilities: $51,000
