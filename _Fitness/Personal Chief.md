@@ -18,6 +18,9 @@
 - Total: $955 round to $1,000
 - So $1,000 for drinks, restaurants, etc... use fidelity card to track fun spending can also pull from this fund for vacation fund so maybe split fund in half and adjust when other things pop up but send other half to vacation fund.
 
+#todo/BAU 
+- [ ] If over spending deduct from next month. also adjust supplement purchase based on reward points 
+
 
 1 then 2 pack per month 
 
