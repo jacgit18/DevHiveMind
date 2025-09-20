@@ -17,6 +17,7 @@
     - MMA Gym $180
 - Total: $955 round to $1,000
 - So $1,000 for drinks, restaurants, etc... use fidelity card to track fun spending can also pull from this fund for vacation fund so maybe split fund in half and adjust when other things pop up but send other half to vacation fund.
+- Any extra thing or luxury items like gaming related stuff or any other stuff comes out of fun budget
 
 #todo/BAU 
 - [ ] If over spending deduct from next month. also adjust supplement purchase based on reward points 
@@ -28,8 +29,10 @@ Prioritize HSA and Roth once emergence fund is full established then set aside a
 	- $10,000 for real estate
 	- $7,000 for Roth IRA(adjust to contribution limit)
 	- $3,000 for speculation like gold, and crypto
-	- $4,300 HSA (depends on insurance type)
+	- $4,300 HSA (depends on insurance type adjust to contribution limit)
 	- $2,700 Individual Brokerage fund 
+- Overall between just investment here not a business need to make capital gains of $1 each month 
+- Also consider moving vacation savings bucket to S&P 500 investment to borrow against for vacation as a long term strategy but get investment account to 100k first then see if you can negotiate favorable rates 
 
 
 Total Expenses excluding future rent and utilities: $51,000
@@ -44,7 +47,7 @@ at minimum excluding a car and paying for rent by myself need to make at least $
 
 
 
-1 then 2 pack per month 
+
 
 Tin foil as alt lid steam broccoli and other greens.
 
