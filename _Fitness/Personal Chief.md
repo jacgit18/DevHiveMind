@@ -18,14 +18,30 @@
 - Total: $955 round to $1,000
 - So $1,000 for drinks, restaurants, etc... use fidelity card to track fun spending can also pull from this fund for vacation fund so maybe split fund in half and adjust when other things pop up but send other half to vacation fund.
 
-- Annual Investment Fund: $24,000
-	- $12,000 for real estate
-	- $7,000 for Roth IRA(adjust to contribution limit)
-	- $4,000 for speculation like gold, and crypto
-	- $4,300 HSA 
-
 #todo/BAU 
 - [ ] If over spending deduct from next month. also adjust supplement purchase based on reward points 
+- [ ] update [[Finance Calulator]] based on all this info
+
+Prioritize HSA and Roth once emergence fund is full established then set aside and automate transfers for other asset funds.
+
+- Annual Investment Fund: $27,000
+	- $10,000 for real estate
+	- $7,000 for Roth IRA(adjust to contribution limit)
+	- $3,000 for speculation like gold, and crypto
+	- $4,300 HSA (depends on insurance type)
+	- $2,700 Individual Brokerage fund 
+
+
+Total Expenses excluding future rent and utilities: $51,000
+
+Anticipated rent: $1,700 = $20,400 annually 
+
+Anticipated util:  $300 = $3,600 anuaally
+
+Anticipated total expenses:   $24,000
+
+at minimum excluding a car and paying for rent by myself need to make at least $80,000 obvious aiming for more  
+
 
 
 1 then 2 pack per month 
