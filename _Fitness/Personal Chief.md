@@ -18,6 +18,12 @@
 - Total: $955 round to $1,000
 - So $1,000 for drinks, restaurants, etc... use fidelity card to track fun spending can also pull from this fund for vacation fund so maybe split fund in half and adjust when other things pop up but send other half to vacation fund.
 
+- Annual Investment Fund: $24,000
+	- $12,000 for real estate
+	- $7,000 for Roth IRA(adjust to contribution limit)
+	- $4,000 for speculation like gold, and crypto
+	- $4,300 HSA 
+
 #todo/BAU 
 - [ ] If over spending deduct from next month. also adjust supplement purchase based on reward points 
 
