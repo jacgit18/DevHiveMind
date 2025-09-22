@@ -329,6 +329,7 @@ Allowed to practice each excercise *here* max twice a week.
 7. **Wide Seated Tricep Dip/[Bodyweight Tricep Dip](https://www.youtube.com/watch?v=p5Lx2BeVKR4&t=186s)** - 70lb/90/145lb
 8. **Chest Fly** - 50lb/70lb/100lb
 9. ***[Landmine Anti Rotations](https://www.youtube.com/watch?v=8aXStDm3cOs) - 10lb/10lb/10lb***
+10. [Wrist Twists](https://youtu.be/uxOVXpwYKv0)
 
 
 #### **Session 2: Pull Focus**
