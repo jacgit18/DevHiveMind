@@ -366,7 +366,7 @@ All leg cable excercise are done at a low angle. Avoid squatting with running sh
 *Make Squats Narrow and Deep to improve pistol squat and set bar height to 13 for anything Zercher*
 1. **Hack Squat**(Back/Front) – 90lb/180lb/300lb - if ankles begin to lift move feet up
 2. **Barbell Squat/Zercher B-Squat** - Incline High Bar(on trap muscle)  - 50lb
-3. **Dumbbell Bulgarian Split Squat/Prone Leg Curl** - set to 3rd hole and exclusively train only strength phase(can use [leg extension machine](https://youtu.be/VC5kbLSuo30?si=ssky4p0p0X2BdUEy)) - 20lb/60lb 
+3. **Dumbbell Bulgarian Split Squat/Prone Leg Curl** - set to 3rd hole and exclusively train only strength phase(can use [leg extension machine](https://youtu.be/VC5kbLSuo30?si=ssky4p0p0X2BdUEy)) - 20lb/20lb/25lb can do on a cube too
 4. **Kneeling Squat on toes with curlbar/Dumbbell behind** - 45lb/45lb/45lb
 5. **Unilateral/Bilateral Leg Press** – 90lb/180lb/180lb | 180lb/360lb/500lb
 6. **Walking Barbell Lunge/Zercher Lunge** – 20lb/20lb/20lb
