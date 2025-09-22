@@ -5,7 +5,7 @@
       {
         "title": "Look at this [[Codebase Interview Question]]",
         "time": "2025-03-05",
-        "rowNumber": 45
+        "rowNumber": 46
       }
     ]
   },
@@ -26,7 +26,12 @@
     "useCustomEmojiForTasksPlugin": false,
     "removeTagsForTasksPlugin": false,
     "enableKanbanPluginReminderFormat": false,
+    "yearMonthDisplayFormat": "YYYY, MMMM",
+    "monthDayDisplayFormat": "MM/DD",
+    "shortDateWithWeekdayDisplayFormat": "M/DD (ddd)",
+    "timeDisplayFormat": "HH:mm",
     "editDetectionSec": 10,
-    "reminderCheckIntervalSec": 5
+    "reminderCheckIntervalSec": 5,
+    "weekStart": "0"
   }
 }

@@ -24,6 +24,8 @@ dg-publish:
 - Make Rest day Tuesday, Thursday, or Friday and in general can do in person co-working meetup session on these days also try and avoid networking events on these days. If going on non rest days Wednesday would be the best day    
 
 
+
+
 ### **Daily Micro-Habits**
 
 - **1hr Skill Stack (Morning or Lunch):** Rotate between
