@@ -21,6 +21,7 @@ dg-publish:
 - **Money Mondays**: review markets, learn something financial.
     
 - Avoid networking on Wednesdays when possible; if needed, limit to **2 Wednesdays/month**, preferably after mid-month.
+- Make Rest day Tuesday, Thursday, or Friday and in general can do in person co-working meetup session on these days also try and avoid networking events on these days. If going on non rest days Wednesday would be the best day    
 
 
 ### **Daily Micro-Habits**

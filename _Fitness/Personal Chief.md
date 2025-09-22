@@ -19,6 +19,7 @@
 - So $1,000 for drinks, restaurants, etc... use fidelity card to track fun spending can also pull from this fund for vacation fund so maybe split fund in half and adjust when other things pop up but send other half to vacation fund.
 - Any extra thing or luxury items like gaming related stuff or any other stuff comes out of fun budget
 
+
 #todo/BAU 
 - [ ] If over spending deduct from next month. also adjust supplement purchase based on reward points 
 - [ ] update [[Finance Calulator]] based on all this info
