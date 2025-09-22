@@ -268,28 +268,13 @@ Alternate each month keeping the week training phase in to account the weights f
 1. ***Airdyne Bike || Row Machine || Sprint || Jump Rope || Shadow Boxing***
 2. **Dynamic Stretching**
 3. **Mobility**:  Leg ROM in table above ✅
-4. **Prone Leg Curl** - Strength phase only ✅  
-5. **[Cable Hip Extension](https://www.youtube.com/watch?v=Fr6fdKPdyfM)** 
-6. **[Cable Side Kicks](https://www.youtube.com/watch?v=jYuN92LGzpA)** 
-7. **[Cable Kickback](https://www.youtube.com/watch?v=SqO-VUEak2M)
-8. Trap Bar Squat Jump 
-9. **Back Extension**  📈
-10. Cable || Kettlebell - Unilateral RDL 📈
-
-#### Lower Body Day Cable Part 2 Wednesday(Optional MMA)
-
-1. ***Airdyne Bike || Row Machine || Sprint || Jump Rope || Shadow Boxing***
-2. **Dynamic Stretching**
-3. **Mobility**:  Leg ROM in table above ✅
-4. **Prone Leg Curl** ✅  
-5. **DB Bulgarian Split Squat** || Walking Barbell Zercher Lunge || B-Stance Zercher Squat
-6. Hack Squat *or* Leg Press | | Curlbar Behind Back Kneeling Squat on Toes 
+4. **[Cable Hip Extension](https://www.youtube.com/watch?v=Fr6fdKPdyfM)** 
+5. **[Cable Side Kicks](https://www.youtube.com/watch?v=jYuN92LGzpA)** 
+6. **[Cable Kickback](https://www.youtube.com/watch?v=SqO-VUEak2M)
 7. Trap Bar Squat Jump 
-8. **Back Extension** 📈
-9. Cable || Kettlebell - Unilateral RDL 📈
-10. Kettlebell Leg Raise 📈
-
-
+8. **Back Extension**  📈
+9. Kettlebell Leg Raise 📈
+10. Cable || Kettlebell - Unilateral RDL 📈
 
 
 ## Body Part Specific Programs 
