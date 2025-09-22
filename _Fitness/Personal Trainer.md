@@ -222,8 +222,6 @@ Alternate each month keeping the week training phase in to account the weights f
 11. **Pallof Press** 📈
 
 ### Lower Body Day Part 2 Wednesday(MMA) 
-Go to MMA at least twice a month on this day if not all the time to stop at Trader Joes and whole foods.
-
 1. ***Airdyne Bike || Row Machine || Sprint || Jump Rope || Shadow Boxing***
 2. **Dynamic Stretching**
 3. **Mobility**:  Leg ROM in table above ✅
@@ -265,12 +263,31 @@ Go to MMA at least twice a month on this day if not all the time to stop at Trad
 ### Explosive Plyometric Day
 1. DB Switch Catch ✅ - 1 min
 
-### Cable Day
-#### Lower Body Cable Day Part 1 Monday(MMA)
 
+#### Lower Body Cable Day 
+1. ***Airdyne Bike || Row Machine || Sprint || Jump Rope || Shadow Boxing***
+2. **Dynamic Stretching**
+3. **Mobility**:  Leg ROM in table above ✅
+4. **Prone Leg Curl** - Strength phase only ✅  
+5. **[Cable Hip Extension](https://www.youtube.com/watch?v=Fr6fdKPdyfM)** 
+6. **[Cable Side Kicks](https://www.youtube.com/watch?v=jYuN92LGzpA)** 
+7. **[Cable Kickback](https://www.youtube.com/watch?v=SqO-VUEak2M)
+8. Trap Bar Squat Jump 
+9. **Back Extension**  📈
+10. Cable || Kettlebell - Unilateral RDL 📈
 
 #### Lower Body Day Cable Part 2 Wednesday(Optional MMA)
 
+1. ***Airdyne Bike || Row Machine || Sprint || Jump Rope || Shadow Boxing***
+2. **Dynamic Stretching**
+3. **Mobility**:  Leg ROM in table above ✅
+4. **Prone Leg Curl** ✅  
+5. **DB Bulgarian Split Squat** || Walking Barbell Zercher Lunge || B-Stance Zercher Squat
+6. Hack Squat *or* Leg Press | | Curlbar Behind Back Kneeling Squat on Toes 
+7. Trap Bar Squat Jump 
+8. **Back Extension** 📈
+9. Cable || Kettlebell - Unilateral RDL 📈
+10. Kettlebell Leg Raise 📈
 
 
 
