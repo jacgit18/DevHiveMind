@@ -149,6 +149,7 @@ Alternate each month keeping the week training phase in to account the weights f
 - [ ] Can do 2 of ✅  but pick one of 📈 depending on day then choose few others for that day session max excercise in session can maybe be 7 each day maybe lower if an MMA day. Maybe Each week pick something different for  📈 to try each one on a more consistent basis but also keep [[Exercise Best Pairing]] in mind.
 - [ ] Run all out 1 min then 1 min coasting so run then a slow walk then back to intense 1 min once able to do a minutes build to 4 min.
 - [ ] For DB exercises alternate every 2 months to improve at the excercise then after doing each switch back to picking which one you feel like doing depending on how you feel maybe do this in pairs picking to Dumbbell exercises.
+- [ ] Train 30 to 45 min Monday through Friday with one day Off and reserve Maybe Friday as well as Saturday and Sunday for Hypertrophy training to avoid burn out during work week. 
 
 ### Full Body Day Part 1 Saturday(Optional MMA) 
 1. ***Airdyne Bike || Row Machine || Sprint || Jump Rope || Shadow Boxing***
@@ -427,7 +428,7 @@ Static stretches can be active or passive with external force like maybe a plank
 ###### Push
 -  **[Landmine Shoulder Z Press](https://youtu.be/app94pzXOuU?si=kOpaa_oC9HkpkRNv)** - 10lb/10lb/10lb 
 -  **[Landmine](https://youtu.be/Zb-l68-4KFM?si=I8zR3VtIppuQNJk_)** || KB || [Resistance Band](https://www.youtube.com/watch?v=kI2H5xGnxcM) || [Rope](https://www.youtube.com/watch?v=JBz7PUxDyE4) || [TRX Standing](https://www.youtube.com/watch?v=7zpXipLThLI) Russian Twist- 10lb/10lb/10lb
-- **[Landmine Twist](https://www.youtube.com/watch?v=M93HfnAVIl8)** - 10lb/10lb/10lb
+- **[Landmine Twist](https://www.youtube.com/watch?v=M93HfnAVIl8)** - 10lb/10lb/20lb
 -  ***[Landmine Rotational Press](https://www.youtube.com/watch?v=ONDeomDVlbE) - 10lb/10lb/10lb***
 
 
