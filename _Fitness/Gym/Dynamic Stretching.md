@@ -118,6 +118,7 @@ _~5–10 minutes total – pick 3–5 each position_
 - [ ] Hip up grab heels look up
 - [ ] Stand flex upper body into body while bent at hip repeat 
 - [ ] [Sky Squat Reach](https://www.youtube.com/watch?v=Zv1wILGzeec) || [Deep Squat Band Single Arm Reach](https://youtu.be/qQCc_zulZpg?si=2iUqiuZb0Zy8DUC8)
+- [ ] Duck walk with plate
 
 
 ###### Core

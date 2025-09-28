@@ -57,7 +57,6 @@ Maybe try Transparent Labs EAA and Electrolytes or buy both once a year.
 - Sports Research [Omega-3 Fish Oil from Wild Alaska Pollock](https://store.sportsresearch.com/products/omega-3-fish-oil-alaskaomegar-1250mg?variant=42500073324744)
 - Sports Research Vitamin D3 + K2 with Coconut MCT Oil
 - Transparent Labs Mass Gainer 
-- Thorne Advanced Testosterone Support
 - Thorne Collagen Fit
 - Thorne Magnesium Glycinate
 - Thorne Multi Vitamin 
@@ -149,6 +148,7 @@ Alternate each month keeping the week training phase in to account the weights f
 - [ ] Can do 2 of ✅  but pick one of 📈 depending on day then choose few others for that day session max excercise in session can maybe be 7 each day maybe lower if an MMA day. Maybe Each week pick something different for  📈 to try each one on a more consistent basis but also keep [[Exercise Best Pairing]] in mind.
 - [ ] Run all out 1 min then 1 min coasting so run then a slow walk then back to intense 1 min once able to do a minutes build to 4 min.
 - [ ] For DB exercises alternate every 2 months to improve at the excercise then after doing each switch back to picking which one you feel like doing depending on how you feel maybe do this in pairs picking to Dumbbell exercises.
+- [ ] Maybe try heavy gym week then light gym week with less days but more MMA days
 - [ ] Train 30 to 45 min Monday through Friday with one day Off and reserve Maybe Friday as well as Saturday and Sunday for Hypertrophy training to avoid burn out during work week. 
 
 ### Full Body Day Part 1 Saturday(Optional MMA) 
@@ -390,9 +390,10 @@ All leg cable excercise are done at a low angle. Avoid squatting with running sh
 2. **[Cable Side Kicks](https://www.youtube.com/watch?v=jYuN92LGzpA)** – 20lb/20lb/20lb
 3. **[Cable Hip Flexion](https://www.youtube.com/watch?v=MUvXfV97-Us)** – 30lb/30lb/30lb
 4. **Abduction Machine (Outer Thigh)** – 60lb/80lb/130lb
-5. **Band Scarecrow Raises** - 20lb/20lb/20lb
-6. **Leg Extension** – 60lb/90lb/120lb
-7. **[Cable Kickback](https://www.youtube.com/watch?v=SqO-VUEak2M)/[Banded Donkey Kick](https://youtu.be/vHS9HF1Ucuw)** – 20lb/20lb/20lb
+5. **Adduction Machine (Inner Thigh)** – 60lb/80lb/100lb
+6. **Band Scarecrow Raises** - 20lb/20lb/20lb
+7. **Leg Extension** – 60lb/90lb/120lb
+8. **[Cable Kickback](https://www.youtube.com/watch?v=SqO-VUEak2M)/[Banded Donkey Kick](https://youtu.be/vHS9HF1Ucuw)** – 20lb/20lb/20lb
 ### End Session Depending Session Type
 #### Core
 1. **[Kneeling Cable Crunch](https://www.youtube.com/watch?v=3qjoXDTuyOE)**(Top Angle) - 50lb/50lb/50lb 
