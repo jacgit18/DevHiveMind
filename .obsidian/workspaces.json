@@ -10571,7 +10571,853 @@
       },
       "active": "a3d2da75e0d8ccdb",
       "mtime": "2025-09-10T09:07:15-04:00"
+    },
+    "nkk": {
+      "main": {
+        "id": "5324373015726ba8",
+        "type": "split",
+        "children": [
+          {
+            "id": "4509724f8bf84da7",
+            "type": "tabs",
+            "dimension": 64.85943775100401,
+            "children": [
+              {
+                "id": "e7a7b303c61786dc",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "_Fitness/Personal Trainer.md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "Personal Trainer"
+                }
+              },
+              {
+                "id": "a30493af49783ea9",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "_Fitness/Personal Chief.md",
+                    "mode": "preview",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "Personal Chief"
+                }
+              },
+              {
+                "id": "38675f9e9bd3b4c1",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "_Fitness/Gym/Plyometrics.md",
+                    "mode": "preview",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "Plyometrics"
+                }
+              },
+              {
+                "id": "d134d57a9560d4f8",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "_Fitness/Gym/Dynamic Stretching.md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "Dynamic Stretching"
+                }
+              }
+            ],
+            "currentTab": 1
+          },
+          {
+            "id": "480b3d3004733f4f",
+            "type": "tabs",
+            "dimension": 35.140562248995984,
+            "children": [
+              {
+                "id": "e02b9ae69a343369",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "_Fitness/Personal Trainer.md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "Personal Trainer"
+                }
+              },
+              {
+                "id": "177435c4f9dfec35",
+                "type": "leaf",
+                "state": {
+                  "type": "webviewer",
+                  "state": {
+                    "url": "http://127.0.0.1:8384/",
+                    "title": "pop-os | Syncthing",
+                    "mode": "webview"
+                  },
+                  "icon": "globe-2",
+                  "title": "pop-os | Syncthing"
+                }
+              },
+              {
+                "id": "30d65ff514c049bf",
+                "type": "leaf",
+                "state": {
+                  "type": "empty",
+                  "state": {},
+                  "icon": "lucide-file",
+                  "title": "New tab"
+                }
+              }
+            ],
+            "currentTab": 2
+          }
+        ],
+        "direction": "vertical"
+      },
+      "left": {
+        "id": "25d07a4f8307e30a",
+        "type": "split",
+        "children": [
+          {
+            "id": "0ee18ba8f838b73c",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "62d2738c8ec9ae78",
+                "type": "leaf",
+                "state": {
+                  "type": "file-explorer",
+                  "state": {
+                    "sortOrder": "alphabetical",
+                    "autoReveal": false
+                  },
+                  "icon": "lucide-folder-closed",
+                  "title": "Files"
+                }
+              },
+              {
+                "id": "381a89071adb230b",
+                "type": "leaf",
+                "state": {
+                  "type": "search",
+                  "state": {
+                    "query": "Dead bug",
+                    "matchingCase": false,
+                    "explainSearch": false,
+                    "collapseAll": true,
+                    "extraContext": false,
+                    "sortOrder": "alphabetical"
+                  },
+                  "icon": "lucide-search",
+                  "title": "Search"
+                }
+              },
+              {
+                "id": "e12d4e2fc2bb5ad2",
+                "type": "leaf",
+                "state": {
+                  "type": "bookmarks",
+                  "state": {},
+                  "icon": "lucide-bookmark",
+                  "title": "Bookmarks"
+                }
+              }
+            ]
+          }
+        ],
+        "direction": "horizontal",
+        "width": 466.5
+      },
+      "right": {
+        "id": "b5ea247522179402",
+        "type": "split",
+        "children": [
+          {
+            "id": "584aafd2742fea53",
+            "type": "tabs",
+            "dimension": 40.05681818181819,
+            "children": [
+              {
+                "id": "e794f1fda7c1a1f5",
+                "type": "leaf",
+                "state": {
+                  "type": "file-properties",
+                  "state": {
+                    "file": "_Fitness/Personal Trainer.md"
+                  },
+                  "icon": "lucide-info",
+                  "title": "File properties for Personal Trainer"
+                }
+              },
+              {
+                "id": "119408eca5171204",
+                "type": "leaf",
+                "state": {
+                  "type": "reminder-list",
+                  "state": {},
+                  "icon": "clock",
+                  "title": "Reminders"
+                }
+              },
+              {
+                "id": "7159a69de638fd57",
+                "type": "leaf",
+                "pinned": true,
+                "state": {
+                  "type": "podcast_player_view",
+                  "state": {},
+                  "pinned": true,
+                  "icon": "play-circle",
+                  "title": "Podcast Player"
+                }
+              },
+              {
+                "id": "72dca0273219d1ab",
+                "type": "leaf",
+                "pinned": true,
+                "state": {
+                  "type": "custom-frames-google-keep",
+                  "state": {},
+                  "pinned": true,
+                  "icon": "lucide-files",
+                  "title": "Google Keep"
+                }
+              }
+            ],
+            "currentTab": 3
+          },
+          {
+            "id": "d1235854646d74f7",
+            "type": "tabs",
+            "dimension": 39.58333333333333,
+            "children": [
+              {
+                "id": "442323dcd9dfef22",
+                "type": "leaf",
+                "pinned": true,
+                "state": {
+                  "type": "outline",
+                  "state": {
+                    "file": "Home Dashboard.md",
+                    "followCursor": false,
+                    "showSearch": false,
+                    "searchQuery": ""
+                  },
+                  "pinned": true,
+                  "icon": "lucide-list",
+                  "title": "Outline of Home Dashboard"
+                }
+              },
+              {
+                "id": "9ee71897ebb55942",
+                "type": "leaf",
+                "pinned": true,
+                "state": {
+                  "type": "side-panel-control-view",
+                  "state": {},
+                  "pinned": true,
+                  "icon": "viewIcon",
+                  "title": "Markdown-Autocomplete"
+                }
+              },
+              {
+                "id": "71a2a86b225196f6",
+                "type": "leaf",
+                "pinned": true,
+                "state": {
+                  "type": "backlink",
+                  "state": {
+                    "file": "Home Dashboard.md",
+                    "collapseAll": false,
+                    "extraContext": false,
+                    "sortOrder": "alphabetical",
+                    "showSearch": false,
+                    "searchQuery": "",
+                    "backlinkCollapsed": false,
+                    "unlinkedCollapsed": true
+                  },
+                  "pinned": true,
+                  "icon": "links-coming-in",
+                  "title": "Backlinks for Home Dashboard"
+                }
+              },
+              {
+                "id": "ccc14a9fa54b368e",
+                "type": "leaf",
+                "state": {
+                  "type": "git-view",
+                  "state": {},
+                  "icon": "git-pull-request",
+                  "title": "Source Control"
+                }
+              },
+              {
+                "id": "ac6ff17f4c3cbb25",
+                "type": "leaf",
+                "pinned": true,
+                "state": {
+                  "type": "outgoing-link",
+                  "state": {
+                    "file": "Home Dashboard.md",
+                    "linksCollapsed": false,
+                    "unlinkedCollapsed": true
+                  },
+                  "pinned": true,
+                  "icon": "links-going-out",
+                  "title": "Outgoing links from Home Dashboard"
+                }
+              }
+            ],
+            "currentTab": 3
+          },
+          {
+            "id": "cf5e2cd4f83cc97a",
+            "type": "tabs",
+            "dimension": 20.359848484848484,
+            "children": [
+              {
+                "id": "b3cfc2653a5cba01",
+                "type": "leaf",
+                "pinned": true,
+                "state": {
+                  "type": "todo",
+                  "state": {},
+                  "pinned": true,
+                  "icon": "checkmark",
+                  "title": "Todo List"
+                }
+              },
+              {
+                "id": "5493e04468ddac9b",
+                "type": "leaf",
+                "pinned": true,
+                "state": {
+                  "type": "all-properties",
+                  "state": {
+                    "sortOrder": "frequency",
+                    "showSearch": false,
+                    "searchQuery": ""
+                  },
+                  "pinned": true,
+                  "icon": "lucide-archive",
+                  "title": "All properties"
+                }
+              },
+              {
+                "id": "8c3a0e2d9aae24e2",
+                "type": "leaf",
+                "state": {
+                  "type": "tag",
+                  "state": {
+                    "sortOrder": "frequency",
+                    "useHierarchy": true,
+                    "showSearch": false,
+                    "searchQuery": ""
+                  },
+                  "icon": "lucide-tags",
+                  "title": "Tags"
+                }
+              },
+              {
+                "id": "32979ed8fe27c039",
+                "type": "leaf",
+                "state": {
+                  "type": "calendar",
+                  "state": {},
+                  "icon": "calendar-with-checkmark",
+                  "title": "Calendar"
+                }
+              },
+              {
+                "id": "d64fc540a9faff39",
+                "type": "leaf",
+                "state": {
+                  "type": "Strange New Worlds",
+                  "state": {},
+                  "icon": "file-digit",
+                  "title": "Strange New Worlds"
+                }
+              }
+            ],
+            "currentTab": 4
+          }
+        ],
+        "direction": "horizontal",
+        "width": 382.5
+      },
+      "left-ribbon": {
+        "hiddenItems": {
+          "bases:Create new base": false,
+          "obsidian-excalidraw-plugin:New drawing": false,
+          "obsidian-markdown-formatting-assistant-plugin:Open Markdown Formatting Assistant": false,
+          "obsidian-read-it-later:ReadItLater: Create from clipboard": false,
+          "homepage:Open homepage": false,
+          "obsidian-git:Open Git source control": false,
+          "switcher:Open quick switcher": false,
+          "graph:Open graph view": false,
+          "canvas:Create new canvas": false,
+          "daily-notes:Open today's daily note": false,
+          "templates:Insert template": false,
+          "command-palette:Open command palette": false,
+          "markdown-importer:Open format converter": false,
+          "audio-recorder:Start/stop recording": false,
+          "workspaces:Manage workspace layouts": false,
+          "templater-obsidian:Templater": false,
+          "obsidian-spaced-repetition:Review flashcards": false,
+          "obsidian-rich-links:Rich Links": false,
+          "darlal-switcher-plus:Open in Headings Mode": false,
+          "darlal-switcher-plus:Open Symbols for the active editor": false,
+          "obsidian-projects:Open projects": false,
+          "obsidian-kanban:Create new board": false,
+          "janitor:Janitor: scan vault": false,
+          "digitalgarden:Digital Garden Publication Center": false,
+          "obsidian-book-search-plugin:Create new book note": false,
+          "table-editor-obsidian:Advanced Tables Toolbar": false,
+          "obsidian-advanced-slides:Show Slide Preview": false,
+          "obsidian42-brat:BRAT": false,
+          "sheet-plus:Create excel file": false,
+          "mermaid-tools:Open Mermaid Toolbar": false,
+          "periodic-notes:Open today": false,
+          "card-board:CardBoard": false
+        }
+      },
+      "active": "30d65ff514c049bf",
+      "mtime": "2025-09-29T02:10:11-04:00"
+    },
+    "hjsd": {
+      "main": {
+        "id": "5324373015726ba8",
+        "type": "split",
+        "children": [
+          {
+            "id": "4509724f8bf84da7",
+            "type": "tabs",
+            "dimension": 64.85943775100401,
+            "children": [
+              {
+                "id": "e7a7b303c61786dc",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "_Fitness/Personal Trainer.md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "Personal Trainer"
+                }
+              },
+              {
+                "id": "a30493af49783ea9",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "_Fitness/Personal Chief.md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "Personal Chief"
+                }
+              },
+              {
+                "id": "38675f9e9bd3b4c1",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "_Fitness/Gym/Plyometrics.md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "Plyometrics"
+                }
+              },
+              {
+                "id": "d134d57a9560d4f8",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "_Fitness/Gym/Dynamic Stretching.md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "Dynamic Stretching"
+                }
+              }
+            ],
+            "currentTab": 2
+          },
+          {
+            "id": "480b3d3004733f4f",
+            "type": "tabs",
+            "dimension": 35.140562248995984,
+            "children": [
+              {
+                "id": "e02b9ae69a343369",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "_Fitness/Personal Trainer.md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "Personal Trainer"
+                }
+              },
+              {
+                "id": "4a80ca42fd85a420",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "_Fitness/Gym/Plyometrics.md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "Plyometrics"
+                }
+              }
+            ],
+            "currentTab": 1
+          }
+        ],
+        "direction": "vertical"
+      },
+      "left": {
+        "id": "25d07a4f8307e30a",
+        "type": "split",
+        "children": [
+          {
+            "id": "0ee18ba8f838b73c",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "62d2738c8ec9ae78",
+                "type": "leaf",
+                "state": {
+                  "type": "file-explorer",
+                  "state": {
+                    "sortOrder": "alphabetical",
+                    "autoReveal": false
+                  },
+                  "icon": "lucide-folder-closed",
+                  "title": "Files"
+                }
+              },
+              {
+                "id": "381a89071adb230b",
+                "type": "leaf",
+                "state": {
+                  "type": "search",
+                  "state": {
+                    "query": "Dead bug",
+                    "matchingCase": false,
+                    "explainSearch": false,
+                    "collapseAll": true,
+                    "extraContext": false,
+                    "sortOrder": "alphabetical"
+                  },
+                  "icon": "lucide-search",
+                  "title": "Search"
+                }
+              },
+              {
+                "id": "e12d4e2fc2bb5ad2",
+                "type": "leaf",
+                "state": {
+                  "type": "bookmarks",
+                  "state": {},
+                  "icon": "lucide-bookmark",
+                  "title": "Bookmarks"
+                }
+              }
+            ]
+          }
+        ],
+        "direction": "horizontal",
+        "width": 466.5
+      },
+      "right": {
+        "id": "b5ea247522179402",
+        "type": "split",
+        "children": [
+          {
+            "id": "584aafd2742fea53",
+            "type": "tabs",
+            "dimension": 40.05681818181819,
+            "children": [
+              {
+                "id": "e794f1fda7c1a1f5",
+                "type": "leaf",
+                "state": {
+                  "type": "file-properties",
+                  "state": {
+                    "file": "_Fitness/Personal Trainer.md"
+                  },
+                  "icon": "lucide-info",
+                  "title": "File properties for Personal Trainer"
+                }
+              },
+              {
+                "id": "119408eca5171204",
+                "type": "leaf",
+                "state": {
+                  "type": "reminder-list",
+                  "state": {},
+                  "icon": "clock",
+                  "title": "Reminders"
+                }
+              },
+              {
+                "id": "7159a69de638fd57",
+                "type": "leaf",
+                "pinned": true,
+                "state": {
+                  "type": "podcast_player_view",
+                  "state": {},
+                  "pinned": true,
+                  "icon": "play-circle",
+                  "title": "Podcast Player"
+                }
+              },
+              {
+                "id": "72dca0273219d1ab",
+                "type": "leaf",
+                "pinned": true,
+                "state": {
+                  "type": "custom-frames-google-keep",
+                  "state": {},
+                  "pinned": true,
+                  "icon": "lucide-files",
+                  "title": "Google Keep"
+                }
+              }
+            ],
+            "currentTab": 3
+          },
+          {
+            "id": "d1235854646d74f7",
+            "type": "tabs",
+            "dimension": 39.58333333333333,
+            "children": [
+              {
+                "id": "442323dcd9dfef22",
+                "type": "leaf",
+                "pinned": true,
+                "state": {
+                  "type": "outline",
+                  "state": {
+                    "file": "Home Dashboard.md",
+                    "followCursor": false,
+                    "showSearch": false,
+                    "searchQuery": ""
+                  },
+                  "pinned": true,
+                  "icon": "lucide-list",
+                  "title": "Outline of Home Dashboard"
+                }
+              },
+              {
+                "id": "9ee71897ebb55942",
+                "type": "leaf",
+                "pinned": true,
+                "state": {
+                  "type": "side-panel-control-view",
+                  "state": {},
+                  "pinned": true,
+                  "icon": "viewIcon",
+                  "title": "Markdown-Autocomplete"
+                }
+              },
+              {
+                "id": "71a2a86b225196f6",
+                "type": "leaf",
+                "pinned": true,
+                "state": {
+                  "type": "backlink",
+                  "state": {
+                    "file": "Home Dashboard.md",
+                    "collapseAll": false,
+                    "extraContext": false,
+                    "sortOrder": "alphabetical",
+                    "showSearch": false,
+                    "searchQuery": "",
+                    "backlinkCollapsed": false,
+                    "unlinkedCollapsed": true
+                  },
+                  "pinned": true,
+                  "icon": "links-coming-in",
+                  "title": "Backlinks for Home Dashboard"
+                }
+              },
+              {
+                "id": "ccc14a9fa54b368e",
+                "type": "leaf",
+                "state": {
+                  "type": "git-view",
+                  "state": {},
+                  "icon": "git-pull-request",
+                  "title": "Source Control"
+                }
+              },
+              {
+                "id": "ac6ff17f4c3cbb25",
+                "type": "leaf",
+                "pinned": true,
+                "state": {
+                  "type": "outgoing-link",
+                  "state": {
+                    "file": "Home Dashboard.md",
+                    "linksCollapsed": false,
+                    "unlinkedCollapsed": true
+                  },
+                  "pinned": true,
+                  "icon": "links-going-out",
+                  "title": "Outgoing links from Home Dashboard"
+                }
+              }
+            ],
+            "currentTab": 3
+          },
+          {
+            "id": "cf5e2cd4f83cc97a",
+            "type": "tabs",
+            "dimension": 20.359848484848484,
+            "children": [
+              {
+                "id": "b3cfc2653a5cba01",
+                "type": "leaf",
+                "pinned": true,
+                "state": {
+                  "type": "todo",
+                  "state": {},
+                  "pinned": true,
+                  "icon": "checkmark",
+                  "title": "Todo List"
+                }
+              },
+              {
+                "id": "5493e04468ddac9b",
+                "type": "leaf",
+                "pinned": true,
+                "state": {
+                  "type": "all-properties",
+                  "state": {
+                    "sortOrder": "frequency",
+                    "showSearch": false,
+                    "searchQuery": ""
+                  },
+                  "pinned": true,
+                  "icon": "lucide-archive",
+                  "title": "All properties"
+                }
+              },
+              {
+                "id": "8c3a0e2d9aae24e2",
+                "type": "leaf",
+                "state": {
+                  "type": "tag",
+                  "state": {
+                    "sortOrder": "frequency",
+                    "useHierarchy": true,
+                    "showSearch": false,
+                    "searchQuery": ""
+                  },
+                  "icon": "lucide-tags",
+                  "title": "Tags"
+                }
+              },
+              {
+                "id": "32979ed8fe27c039",
+                "type": "leaf",
+                "state": {
+                  "type": "calendar",
+                  "state": {},
+                  "icon": "calendar-with-checkmark",
+                  "title": "Calendar"
+                }
+              },
+              {
+                "id": "d64fc540a9faff39",
+                "type": "leaf",
+                "state": {
+                  "type": "Strange New Worlds",
+                  "state": {},
+                  "icon": "file-digit",
+                  "title": "Strange New Worlds"
+                }
+              }
+            ],
+            "currentTab": 4
+          }
+        ],
+        "direction": "horizontal",
+        "width": 382.5
+      },
+      "left-ribbon": {
+        "hiddenItems": {
+          "bases:Create new base": false,
+          "obsidian-excalidraw-plugin:New drawing": false,
+          "obsidian-markdown-formatting-assistant-plugin:Open Markdown Formatting Assistant": false,
+          "obsidian-read-it-later:ReadItLater: Create from clipboard": false,
+          "homepage:Open homepage": false,
+          "obsidian-git:Open Git source control": false,
+          "switcher:Open quick switcher": false,
+          "graph:Open graph view": false,
+          "canvas:Create new canvas": false,
+          "daily-notes:Open today's daily note": false,
+          "templates:Insert template": false,
+          "command-palette:Open command palette": false,
+          "markdown-importer:Open format converter": false,
+          "audio-recorder:Start/stop recording": false,
+          "workspaces:Manage workspace layouts": false,
+          "templater-obsidian:Templater": false,
+          "obsidian-spaced-repetition:Review flashcards": false,
+          "obsidian-rich-links:Rich Links": false,
+          "darlal-switcher-plus:Open in Headings Mode": false,
+          "darlal-switcher-plus:Open Symbols for the active editor": false,
+          "obsidian-projects:Open projects": false,
+          "obsidian-kanban:Create new board": false,
+          "janitor:Janitor: scan vault": false,
+          "digitalgarden:Digital Garden Publication Center": false,
+          "obsidian-book-search-plugin:Create new book note": false,
+          "table-editor-obsidian:Advanced Tables Toolbar": false,
+          "obsidian-advanced-slides:Show Slide Preview": false,
+          "obsidian42-brat:BRAT": false,
+          "sheet-plus:Create excel file": false,
+          "mermaid-tools:Open Mermaid Toolbar": false,
+          "periodic-notes:Open today": false,
+          "card-board:CardBoard": false
+        }
+      },
+      "active": "4a80ca42fd85a420",
+      "mtime": "2025-09-29T02:51:31-04:00"
     }
   },
-  "active": "fit2"
+  "active": "hjsd"
 }
