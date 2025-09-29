@@ -58,6 +58,7 @@ Maybe try Transparent Labs EAA and Electrolytes or buy both once a year.
 - Sports Research Vitamin D3 + K2 with Coconut MCT Oil
 - Transparent Labs Mass Gainer 
 - Thorne Collagen Fit
+- Thorne GABA
 - Thorne Magnesium Glycinate
 - Thorne Multi Vitamin 
 - Thorne Theanine
@@ -261,7 +262,7 @@ Alternate each month keeping the week training phase in to account the weights f
 - [ ] Build Cable variation for leg day
 - [ ] Finalize, refine, reduce, and prioritize exercises in [[Plyometrics]] program
 
-### Explosive Plyometric Day
+#### Explosive Plyometric Day
 1. DB Switch Catch ✅ - 1 min
 
 
@@ -320,7 +321,7 @@ Anything not on this list is most likely a bad excercise or not worth doing base
 ### Right to Bare Arms Program
 Allowed to practice each excercise *here* max twice a week. 
 #### **Session 1: Push Focus**
-1. **Single Arm Chest Press** - 30lb/50lb/70lb
+1. **Single Arm Chest Press** - 30lb/50lb/80lb
 2. **Dumbbell Floor** or **Incline Dumbbell Bench** or [Banded Dumbbell Bench](https://youtu.be/nzPvCtwkETM?si=ayLMQYM4NFk1FKbE)([Helps with form](https://youtu.be/QsYre__-aro?si=7PEG01LFDkV1D8ks&t=70)) Press– 20lb/20lb/20lb
 3. **Barbell Bench Press**([Use proper form](https://youtu.be/4Y2ZdHCOXok?si=uSEuLn5DQpCemOoT&t=424) also warm up with empty bar shifting to max weight) - 10lb/20lb/30lb
 	1. Use explosive Phase variation to improve at bottom of movement as well 
@@ -397,7 +398,7 @@ All leg cable excercise are done at a low angle. Avoid squatting with running sh
 ### End Session Depending Session Type
 #### Core
 1. **[Kneeling Cable Crunch](https://www.youtube.com/watch?v=3qjoXDTuyOE)**(Top Angle) - 50lb/50lb/50lb 
-2. **[Pallof Press](https://www.youtube.com/watch?v=ma2OjgP5XDc&pp=ygUMUGFsbG9mIFByZXNz)** to **[Lateral Walk](https://youtu.be/nw8NjG2YOLY?si=KAo4G6B3_5Av1s_t)**(Wrist Height) - 20lb/20lb/20lb
+2. **[Pallof Press](https://www.youtube.com/watch?v=ma2OjgP5XDc&pp=ygUMUGFsbG9mIFByZXNz)** to **[Lateral Walk](https://youtu.be/nw8NjG2YOLY?si=KAo4G6B3_5Av1s_t)**(Wrist Height) - 20lb/27lb/27lb
 #### Leg
 1. ***[Cable Single Leg RDL](https://youtu.be/2M1Mikqf5lY?si=1Me7DqZvB5XL1Orm(15lb)***(Low Angle) - 20lb/20lb/20lb
 2. **Kettlebell Leg Raise**  – 15lb/15lb/15lb
