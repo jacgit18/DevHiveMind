@@ -62,6 +62,12 @@ If frying sauteing potatoes boiled in partially or steam them then do the frying
 freeze chili also maybe exclude beans to avoid messing up stomach to eat it more make meal prep easier
 
 
+buy 3 or 4 bags of rice for a year
+
+One ice cube tray of ice cube chicken stock which is about two cups
+
+Kale ginger celery garlic pear kiefer
+
 ## 2. Weekly Flow
 
 **Day 1 (Prep Anchor):**

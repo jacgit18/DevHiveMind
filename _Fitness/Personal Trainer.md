@@ -331,10 +331,10 @@ Allowed to practice each excercise *here* max twice a week.
 5. **[Band Chest Hex Press](https://youtu.be/e_wdE5rtZfA)** - 30lb/30lb/30lb
 6. ~~**[Cable Wrist Curl pronated](https://youtu.be/UbfzCh0oJ5E?si=KtTGfiJfP5ep3CkD)/[supinated](https://youtu.be/WVAaKJvToe0?si=r9TKMQbLs1xmpiL0)**(Consider **Wrist Curl** [variations](https://www.youtube.com/watch?v=nvJ-1suJCTU)) – 10lb
 7. **Wide Seated Tricep Dip/[Bodyweight Tricep Dip](https://www.youtube.com/watch?v=p5Lx2BeVKR4&t=186s)** - 70lb/90/145lb
-8. **Chest Fly** - 50lb/70lb/100lb
-9. ***[Landmine Anti Rotations](https://www.youtube.com/watch?v=8aXStDm3cOs) - 10lb/10lb/10lb***
-10. [Wrist Twists](https://youtu.be/uxOVXpwYKv0)
-
+8. **Rear Delt Fly/[DB Chest Supported Rear Delt Fly](https://youtu.be/iCbVhDNpG-Y?si=g-puZtoYX7u57LwT)** - 30lb/50lb/70lb | 20lb/20lb/20lb
+9. **[Side rear Delt Fly](https://youtu.be/P81mH8n68h4?si=eGoGz-v2JIxxjTfB)** - 30lb/30lb/45lb
+10. ***[Landmine Anti Rotations](https://www.youtube.com/watch?v=8aXStDm3cOs) - 10lb/10lb/10lb***
+11. [Wrist Twists](https://youtu.be/uxOVXpwYKv0)
 
 #### **Session 2: Pull Focus**
 1. ***[Narrow-Grip Chin-Up](https://www.youtube.com/watch?v=mRy9m2Q9_1I)*** - bodyweight/10lb/10lb/10lb
@@ -351,10 +351,10 @@ Allowed to practice each excercise *here* max twice a week.
 9. **[Cable Woodchopper](https://www.youtube.com/watch?v=mvvu8imyMFs)**(Low Angle)  - 10lb/10lb/10lb
 10. **[Cable Snap Downs](https://www.youtube.com/shorts/IW40KjCwNmA)**(Top Angle)  - 10lb/10lb/10lb
 11. **[Bayesian Cable Curl](https://youtu.be/4O24gFksZ04?si=poa8Lr-ymzw1-QrR)** - 10lb/10lb/10lb (2 width, 8 height)
-12. **[Incline Bench Preacher Curl](https://www.youtube.com/watch?v=02TvQZiVdic)/[Reverse Preacher Curl](https://youtu.be/h8LVaKRAFY0?si=ix3lKao_fRA33nqU)**- 20lb/20lb/20lb
-13. **Rear Delt Fly/[DB Chest Supported Rear Delt Fly](https://youtu.be/iCbVhDNpG-Y?si=g-puZtoYX7u57LwT)** - 30lb/50lb/70lb | 20lb/20lb/20lb
-14. **[Incline Prone Lateral Raise](https://youtu.be/Wz1C8NzWg5A?si=epnUd7OS6WC75u1Y&t=112)**/**[Seated Cable Pec Minor Fly](https://youtu.be/sC91H2XLtJc?si=bSV_IhpBVbdADHz2&t=286)**(Better ROM then chest fly Top Angle) - 20lb/20lb/20lb(Machine 5 and 5)
-15. **[Single Arm Lat Pulldown](https://www.youtube.com/watch?v=SALxEARiMkw&list=TLPQMjcwNDIwMjWOBRc2Cey09g&index=3)** - 65lb/65lb/65lb
+12. **[Incline Bench Preacher Curl](https://www.youtube.com/watch?v=02TvQZiVdic)/[Reverse Preacher Curl](https://youtu.be/h8LVaKRAFY0?si=ix3lKao_fRA33nqU)**- 20lb/20lb/20lb 
+13. **[Incline Prone Lateral Raise](https://youtu.be/Wz1C8NzWg5A?si=epnUd7OS6WC75u1Y&t=112)**/**[Seated Cable Pec Minor Fly](https://youtu.be/sC91H2XLtJc?si=bSV_IhpBVbdADHz2&t=286)**(Better ROM then chest fly Top Angle) - 20lb/20lb/20lb(Machine 5 and 5)
+14. **[Single Arm Lat Pulldown](https://www.youtube.com/watch?v=SALxEARiMkw&list=TLPQMjcwNDIwMjWOBRc2Cey09g&index=3)** - 25lb/35lb/65lb
+15. **Chest Fly** - 50lb/70lb/100lb
 16. **[Lateral Head Single Arm Tricep Extension](https://www.youtube.com/watch?v=vVW9LwaahNw)**(Top Angle) – 20lb/20lb/20lb
 17. **[Back Extension on Yoga Ball](https://youtu.be/b_Iri5nayDk)**(with bar/Stick)/**Back Extension**(try Isometric holds) - bodyweight/15lb/15lb/15lb  
 18. **[Low Cable Goblet Squat](https://youtu.be/f6eI0JI9AYA?si=TTKH4FrAivJYEyd0)**  - 40lb/40lb/40lb
