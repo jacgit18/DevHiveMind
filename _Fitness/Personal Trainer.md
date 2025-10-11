@@ -151,6 +151,7 @@ Alternate each month keeping the week training phase in to account the weights f
 - [ ] For DB exercises alternate every 2 months to improve at the excercise then after doing each switch back to picking which one you feel like doing depending on how you feel maybe do this in pairs picking to Dumbbell exercises.
 - [ ] Maybe try heavy gym week then light gym week with less days but more MMA days
 - [ ] Train 30 to 45 min Monday through Friday with one day Off and reserve Maybe Friday as well as Saturday and Sunday for Hypertrophy training to avoid burn out during work week. 
+- [ ] For hypertrophy week exclude full body compound movement can keep deadlifts and maybe pull ups also avoid these exercises on MMA days in general can cycle back in for non hypertrophy week and MMA specific days in general to limit fatigue.
 
 ### Full Body Day Part 1 Saturday(Optional MMA) 
 1. ***Airdyne Bike || Row Machine || Sprint || Jump Rope || Shadow Boxing***
@@ -277,6 +278,8 @@ Alternate each month keeping the week training phase in to account the weights f
 8. **Back Extension**  📈
 9. Kettlebell Leg Raise 📈
 10. Cable || Kettlebell - Unilateral RDL 📈
+
+
 
 
 ## Body Part Specific Programs 

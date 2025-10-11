@@ -68,6 +68,9 @@ One ice cube tray of ice cube chicken stock which is about two cups
 
 Kale ginger celery garlic pear kiefer
 
+
+$75,000 overall in terms of projected cost of living with investment fund and rent included 
+
 ## 2. Weekly Flow
 
 **Day 1 (Prep Anchor):**
