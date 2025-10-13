@@ -112,6 +112,9 @@ The general principles of **training phases** like strength and hypertrophy appl
 
 
 ## Regimen
+Hypertrophy week now spread across Friday to Sunday for the month
+
+Antagonistic super-sets
 
 | Day      | Session Type                                                                               | Week 1 – Strength Focus                                                                   | Week 2 – Hypertrophy Focus                         | Week 3 – Explosive/Plyometrics Focus              | Week 4 –  New Skills                                        | Best Order of Operations |
 | -------- | ------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------- | -------------------------------------------------- | ------------------------------------------------- | ----------------------------------------------------------- | ------------------------ |
