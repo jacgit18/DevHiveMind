@@ -121,6 +121,7 @@ kanban-plugin: board
 - [ ] [Notes Use Case](https://chatgpt.com/share/680087c1-71ec-800d-8e0c-5f0ca827511a)
 - [ ] [Buy and Sell Online Businesses, Websites, Apps & Domains - Flippa](https://flippa.com)
 - [ ] [BizBuySell - The Internet's Largest Business for Sale & Franchise for Sale Marketplace](https://www.bizbuysell.com)
+- [ ] [ChatGPT - Claiming 15000 as filer](https://chatgpt.com/share/68f00d76-4e24-800d-8c0f-5f70bc1218c5)
 
 
 ## #todo/gymPrompt

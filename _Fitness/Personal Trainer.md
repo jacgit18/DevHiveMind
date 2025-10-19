@@ -56,7 +56,8 @@ Maybe try Transparent Labs EAA and Electrolytes or buy both once a year.
 - Sports Research Creatine 
 - Sports Research [Omega-3 Fish Oil from Wild Alaska Pollock](https://store.sportsresearch.com/products/omega-3-fish-oil-alaskaomegar-1250mg?variant=42500073324744)
 - Sports Research Vitamin D3 + K2 with Coconut MCT Oil
-- Transparent Labs Mass Gainer 
+- ~~Transparent Labs Mass Gainer~~ 
+- Muscle Tech Mass Gainer
 - Thorne Collagen Fit
 - Thorne GABA
 - Thorne Magnesium Glycinate
@@ -114,7 +115,19 @@ The general principles of **training phases** like strength and hypertrophy appl
 ## Regimen
 Hypertrophy week now spread across Friday to Sunday for the month
 
+4 duck walks half distance
+
+Bag work for 7 songs
+
+
 Antagonistic super-sets
+pair excercise with dumbbell exercises since easy to bring along 
+decide on what excercise to pair with maybe sled, defiantly landmine, cable machine and dumbbell as well  
+
+adduction machine 145lb
+
+Farmer walk like 35lb but can do 45lb but grip to weak
+
 
 | Day      | Session Type                                                                               | Week 1 – Strength Focus                                                                   | Week 2 – Hypertrophy Focus                         | Week 3 – Explosive/Plyometrics Focus              | Week 4 –  New Skills                                        | Best Order of Operations |
 | -------- | ------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------- | -------------------------------------------------- | ------------------------------------------------- | ----------------------------------------------------------- | ------------------------ |
@@ -163,9 +176,8 @@ Alternate each month keeping the week training phase in to account the weights f
 4. Bottom Up Suitcase/Farmer Carry 
 5. [Cable Woodchopper](https://www.youtube.com/watch?v=mvvu8imyMFs) || **[Landmine Twist](https://youtu.be/M93HfnAVIl8?si=7KtnpfDB0GYobD9Z)** 
 6. [Cable Pec Minor Fly](https://youtu.be/sC91H2XLtJc?si=bSV_IhpBVbdADHz2&t=286) || Chest Fly([variations](https://youtube.com/shorts/0LJ-JujImCs?si=LgyKSn87TMCarM-y)) || **[DB Cross Body Fly](https://youtu.be/mK2xrdqf_cU?si=jNrPZCLCgUNFki9v)**
-7. Sled Push/Pull
-8. **Clean & Jerk Press** || Deadlift(Prioritize deadlift until imbalance is gone)  
-9. **Stability**: *TRX/SwissBall Training* - focus on one a month or something
+7. [Lateral Head Single Arm Tricep Extension](https://www.youtube.com/watch?v=vVW9LwaahNw)
+8. **Stability**: *TRX/SwissBall Training* - focus on one a month or something
 	1. [TRX Burpee Level 3](https://www.youtube.com/watch?v=C_rKVEucJak)
 	2. [TRX Assisted Pistol Squat](https://www.youtube.com/watch?v=HqCHXb91yMQ) 
 	3. [TRX Push Up](https://youtu.be/jk4MGqOmjn4?si=lzlBdn4390KOOyNg)/TRX Suspended Pushup(harder)
@@ -181,11 +193,16 @@ Alternate each month keeping the week training phase in to account the weights f
 	13. [Swiss Ball Side Flexion - Level 3](https://youtu.be/-W02_G1f0aM?si=ERpJXiz8LvGJ7885)
 	14. [Swiss Ball Side Flexion - Level 4](https://youtu.be/2VCOHVeRdKs?si=U5aowRV0FRbtSK2b)
 	15. [Swiss Ball Side Flexion - Level 5](https://youtu.be/ltuv2fYMXqk?si=IkiMMxr0jMaj7n0P)
-10. **Pallof Press** - can be done with bands  📈
-11. **Bench/Cable Reverse Crunch || Dragonfly || Ab Roller ||  [Hanging Knee Raise](https://youtu.be/RD_A-Z15ER4?si=h0fyUA7SXg4vWE2a)📈** (Pick One) 
-12. [Cable Assisted Pancake](https://youtu.be/xgU1YYHwprQ?si=N0aX9UVVJqDLvvrS) 📈
-13. [Cable](https://youtu.be/2M1Mikqf5lY?si=sIX0t_7UkiioAffp) || [Kettlebell](https://youtu.be/SuNgD0x2U6U?si=0oE-W6Zv_5pABcMv) - Unilateral RDL 📈
-14. **[[Personal Trainer#Priority Static Stretch to develop splits| Static Stretching]]**
+
+CARDIO Demanding avoid if doing various excercise or training hypertrophy  
+9. Sled Push/Pull
+10. **Clean & Jerk Press** || Deadlift(Prioritize deadlift until imbalance is gone)  
+
+11. **Pallof Press** - can be done with bands  📈
+12. **Bench/Cable Reverse Crunch || Dragonfly || Ab Roller ||  [Hanging Knee Raise](https://youtu.be/RD_A-Z15ER4?si=h0fyUA7SXg4vWE2a)📈** (Pick One) 
+13. [Cable Assisted Pancake](https://youtu.be/xgU1YYHwprQ?si=N0aX9UVVJqDLvvrS) 📈
+14. [Cable](https://youtu.be/2M1Mikqf5lY?si=sIX0t_7UkiioAffp) || [Kettlebell](https://youtu.be/SuNgD0x2U6U?si=0oE-W6Zv_5pABcMv) - Unilateral RDL 📈
+15. **[[Personal Trainer#Priority Static Stretch to develop splits| Static Stretching]]**
 
 ### Full Body Day Part 2 Sunday 
 1. ***Airdyne Bike || Row Machine || Sprint || Jump Rope || Shadow Boxing***
@@ -328,7 +345,7 @@ Anything not on this list is most likely a bad excercise or not worth doing base
 Allowed to practice each excercise *here* max twice a week. 
 #### **Session 1: Push Focus**
 1. **Single Arm Chest Press** - 30lb/50lb/80lb
-2. **Dumbbell Floor** or **Incline Dumbbell Bench** or [Banded Dumbbell Bench](https://youtu.be/nzPvCtwkETM?si=ayLMQYM4NFk1FKbE)([Helps with form](https://youtu.be/QsYre__-aro?si=7PEG01LFDkV1D8ks&t=70)) Press– 20lb/20lb/20lb
+2. **Dumbbell Floor** or **Incline Dumbbell Bench** or [Banded Dumbbell Bench](https://youtu.be/nzPvCtwkETM?si=ayLMQYM4NFk1FKbE)([Helps with form](https://youtu.be/QsYre__-aro?si=7PEG01LFDkV1D8ks&t=70)) Press– 20lb/25lb/25lb
 3. **Barbell Bench Press**([Use proper form](https://youtu.be/4Y2ZdHCOXok?si=uSEuLn5DQpCemOoT&t=424) also warm up with empty bar shifting to max weight) - 10lb/20lb/30lb
 	1. Use explosive Phase variation to improve at bottom of movement as well 
 	2. Use close grip bench press for top of movement.
@@ -350,7 +367,7 @@ Allowed to practice each excercise *here* max twice a week.
 	1. Strength phase 2x8 since like 5 exercises in one
 	2. Hypertrophy 3x10 and avoid explosive phase 
 	3. Prime shoulder with bands
-5. **Halo** - 15lb/15lb/20lb
+5. **Halo** - 15lb/15lb/20lb || Single arm 15lb
 6. **Reverse Bench Crunch** - Bodyweight 
 7. **[Band Upright Row](https://youtu.be/VhpnXlphu88)** || **[Band V Raise](https://youtu.be/5WBdE0TSoUQ)**(hypertrophy) || **[Banded Scarecrow](https://youtu.be/qzNQ3_TQHDs)**(Imbalance) - 20lb/20lb/20lb
 8. **[DB Cross Body Fly](https://youtu.be/mK2xrdqf_cU)** || **[Band Cross Body Chest Fly](https://youtu.be/TM-VhSRr4XU)** - 20lb/20lb/20lb
@@ -367,7 +384,7 @@ Allowed to practice each excercise *here* max twice a week.
 19. Seated or Standing [Seated Y Cable Raises](https://youtu.be/-yL_BS28hcY?si=oO9QrIO_sv2SF5K1)(Seat Height Low Angle) - 10lb/10lb/10lb(6 width)
 20. Standing [Cable FreeMotion Front Shoulder Raise](https://youtu.be/_bzJ1Yb4XCU?si=v0UUNLSilV6NVM76)(Low Angle) - 10lb/10lb/10lb
 21. Seated Incline or Standing [Bilateral DB Overhead Tricep Extension](https://youtube.com/shorts/b_r_LW4HEcM?si=B1_Zz_2olhNHmPwY) | [Unilateral DB Overhead Tricep Extension](https://youtu.be/F3w6m0aENVQ?si=S2vDhXvRxVRh1MgE) - 20lb/20lb/20lb | 10lb/10lb/10lb 
-
+22. **[Half Kneeling Arm Row](https://youtu.be/afE9JabFqR4?si=Q7eXtrCmYCcxOV_T)** - 10lb/10lb/10lb 
 ### Leg Programming 
 All leg cable excercise are done at a low angle. Avoid squatting with running shoes and squat wider as well if issues in squatting form.
 
@@ -382,8 +399,7 @@ All leg cable excercise are done at a low angle. Avoid squatting with running sh
 6. **Walking Barbell Lunge/Zercher Lunge** – 20lb/20lb/20lb
 7. **KB [B Stance Squat](https://youtu.be/5uFUvFXhp7U?si=3PGzZ_XSqbFGPbqN)/Sumo [Zercher](https://www.youtube.com/watch?v=71l8K2Q9_6s)** - 20lb/20lb/20lb
 8. **[Roman Chair Hip Abduction](https://youtu.be/j5HWZOfIePI?si=EsYf8Gg0rFO16y-p)** - Bodyweight/10lb/10lb/10lb 
-9. **[Half Kneeling Arm Row](https://youtu.be/afE9JabFqR4?si=Q7eXtrCmYCcxOV_T)** - 10lb/10lb/10lb 
-10. ~~[Elevated Smith Machine Lunge](https://youtu.be/Yp5O9Cz6Ajg?si=bFGCfbzNqt_JobTA) - try [Elevated Lunge](https://youtu.be/OVFHK2Iev70?si=oiRNDNHznSrNP_RC) with dumbbell at max 40lb to 60lb then switch to free barbell~~
+9. ~~[Elevated Smith Machine Lunge](https://youtu.be/Yp5O9Cz6Ajg?si=bFGCfbzNqt_JobTA) - try [Elevated Lunge](https://youtu.be/OVFHK2Iev70?si=oiRNDNHznSrNP_RC) with dumbbell at max 40lb to 60lb then switch to free barbell~~
 
 #### **Session 2: Hinge + Posterior Chain (Glutes, Hamstrings, Core)**
 1. **[Cable](https://www.youtube.com/watch?v=IU-ERkjTKXA)/[Sled](https://youtu.be/kZyoyXUYYnQ?si=g3JDFGSTlRTOKzbi) Pull Through** – 30lb/30lb/30lb

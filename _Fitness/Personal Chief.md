@@ -163,13 +163,14 @@ For excess Potatoes and  Plantain make waffles with them and freeze them
 ### Seasoning & Flavor
 Limit seasoning to 3 spices if experimenting with flavors or use premade spice/sauce from store for meats
 
-- Haitian Epis Seasoning(freeze in cubes) 
+- Haitian Epis Seasoning(freeze in cubes)  ^b692cb
 	- **2 tablespoons fresh thyme** (or 1 tablespoon dried thyme)
 	- **3-4 scallions** (also known as green onions)
 	- **4-5 garlic cloves** (peeled)
 	- **1 small bell pepper** (preferably red or green)
 	- **2 tablespoons fresh parsley**
 	- **2 tablespoons fresh cilantro**
+	- **Cloves**(aromatic flower buds)
 	- **1/2 teaspoon black pepper** (adjust to taste)
 	- **2-3 tablespoons olive oil** (or your preferred cooking oil, like vegetable or coconut oil)
 - Use for marinade for meat, stews, rice and beans, egg, vegetables,  
