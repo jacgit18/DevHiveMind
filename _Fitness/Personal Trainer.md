@@ -115,8 +115,6 @@ The general principles of **training phases** like strength and hypertrophy appl
 ## Regimen
 Hypertrophy week now spread across Friday to Sunday for the month
 
-4 duck walks half distance
-
 Bag work for 7 songs
 
 Seated wide dip 145lb
