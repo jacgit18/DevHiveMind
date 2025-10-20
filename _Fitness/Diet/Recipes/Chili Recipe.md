@@ -24,14 +24,12 @@ This recipe yields a hearty, medium-spiced, bean-inclusive chili. The instructio
 #### **Ingredients**
 
 **The Aromatics & Base:**
-* 2 tbsp vegetable or olive oil
-* 1 large yellow onion, diced
 * Carrot
-* Chicken Stock
-*  Celery
-* 1 large bell pepper (any color), diced
+* Chicken Stock or beef stock
+* Sriracha
+* Celery
 * 1 Bay leaf
-*  **4 cloves garlic,** minced or [[Personal Chief#^b692cb | Haitian Seasoning ]]might already have onions in it 
+*  [[Personal Chief#^b692cb | Haitian Seasoning]]
 
 **The Spice Blend:**
 *   chili powder - MAKE IT YOURSELF - toast it in pan also 

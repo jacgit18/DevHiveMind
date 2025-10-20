@@ -167,6 +167,7 @@ Limit seasoning to 3 spices if experimenting with flavors or use premade spice/s
 	- **2 tablespoons fresh thyme** (or 1 tablespoon dried thyme)
 	- **3-4 scallions** (also known as green onions)
 	- **4-5 garlic cloves** (peeled)
+	- **Onion**
 	- **1 small bell pepper** (preferably red or green)
 	- **2 tablespoons fresh parsley**
 	- **2 tablespoons fresh cilantro**

@@ -119,6 +119,9 @@ Hypertrophy week now spread across Friday to Sunday for the month
 
 Bag work for 7 songs
 
+Seated wide dip 145lb
+
+[Half Kneeling Cable Rotation - YouTube](https://youtu.be/Xj8qeQ3cr74?si=RI3KuSuNtcC0n1jM)
 
 Antagonistic super-sets
 pair excercise with dumbbell exercises since easy to bring along 
@@ -128,6 +131,18 @@ adduction machine 145lb
 
 Farmer walk like 35lb but can do 45lb but grip to weak
 
+Landmine twist with  Zottman curl
+
+230 leg press added 25 each side
+
+
+Hanging abb curl over dead hang basically doing both is more efficient 
+
+
+Alternate weight ratios so one day heavier on landmine next day heavier on dumbbells and lighter on landline for supersets
+
+
+[Ball Calf Raise - YouTube](https://youtu.be/GKfUSgvVYSw?si=RHDfbc5LE0vRQT4J)
 
 | Day      | Session Type                                                                               | Week 1 – Strength Focus                                                                   | Week 2 – Hypertrophy Focus                         | Week 3 – Explosive/Plyometrics Focus              | Week 4 –  New Skills                                        | Best Order of Operations |
 | -------- | ------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------- | -------------------------------------------------- | ------------------------------------------------- | ----------------------------------------------------------- | ------------------------ |
@@ -167,7 +182,10 @@ Alternate each month keeping the week training phase in to account the weights f
 - [ ] For DB exercises alternate every 2 months to improve at the excercise then after doing each switch back to picking which one you feel like doing depending on how you feel maybe do this in pairs picking to Dumbbell exercises.
 - [ ] Maybe try heavy gym week then light gym week with less days but more MMA days
 - [ ] Train 30 to 45 min Monday through Friday with one day Off and reserve Maybe Friday as well as Saturday and Sunday for Hypertrophy training to avoid burn out during work week. 
-- [ ] For hypertrophy week exclude full body compound movement can keep deadlifts and maybe pull ups also avoid these exercises on MMA days in general can cycle back in for non hypertrophy week and MMA specific days in general to limit fatigue.
+- [ ] For hypertrophy week exclude full body compound movement can keep deadlifts and other excercise based on day for variation also avoid these exercises on MMA days in general can cycle back in for non hypertrophy week and MMA specific days in general to limit fatigue.
+- [ ] For strength and explosive week can reduce number of exercises and include compound excercise like clean jerk press etc...
+- [ ] Overhead Press and pull ups for hypertrophy training keep at end 
+
 
 ### Full Body Day Part 1 Saturday(Optional MMA) 
 1. ***Airdyne Bike || Row Machine || Sprint || Jump Rope || Shadow Boxing***
@@ -193,15 +211,12 @@ Alternate each month keeping the week training phase in to account the weights f
 	13. [Swiss Ball Side Flexion - Level 3](https://youtu.be/-W02_G1f0aM?si=ERpJXiz8LvGJ7885)
 	14. [Swiss Ball Side Flexion - Level 4](https://youtu.be/2VCOHVeRdKs?si=U5aowRV0FRbtSK2b)
 	15. [Swiss Ball Side Flexion - Level 5](https://youtu.be/ltuv2fYMXqk?si=IkiMMxr0jMaj7n0P)
-
-CARDIO Demanding avoid if doing various excercise or training hypertrophy  
-9. Sled Push/Pull
-10. **Clean & Jerk Press** || Deadlift(Prioritize deadlift until imbalance is gone)  
-
-11. **Pallof Press** - can be done with bands  📈
-12. **Bench/Cable Reverse Crunch || Dragonfly || Ab Roller ||  [Hanging Knee Raise](https://youtu.be/RD_A-Z15ER4?si=h0fyUA7SXg4vWE2a)📈** (Pick One) 
-13. [Cable Assisted Pancake](https://youtu.be/xgU1YYHwprQ?si=N0aX9UVVJqDLvvrS) 📈
-14. [Cable](https://youtu.be/2M1Mikqf5lY?si=sIX0t_7UkiioAffp) || [Kettlebell](https://youtu.be/SuNgD0x2U6U?si=0oE-W6Zv_5pABcMv) - Unilateral RDL 📈
+9. **Pallof Press** - can be done with bands  
+10. **Bench/Cable Reverse Crunch || Dragonfly || Ab Roller ||  [Hanging Knee Raise](https://youtu.be/RD_A-Z15ER4?si=h0fyUA7SXg4vWE2a)📈** (Pick One) 
+11. [Cable Assisted Pancake](https://youtu.be/xgU1YYHwprQ?si=N0aX9UVVJqDLvvrS) 📈
+12. [Cable](https://youtu.be/2M1Mikqf5lY?si=sIX0t_7UkiioAffp) || [Kettlebell](https://youtu.be/SuNgD0x2U6U?si=0oE-W6Zv_5pABcMv) - Unilateral RDL 📈
+13. **Sled Push/Pull** 📈
+14. **Clean & Jerk Press** || Deadlift(Prioritize deadlift until imbalance is gone)  📈
 15. **[[Personal Trainer#Priority Static Stretch to develop splits| Static Stretching]]**
 
 ### Full Body Day Part 2 Sunday 
@@ -242,7 +257,8 @@ CARDIO Demanding avoid if doing various excercise or training hypertrophy
 8. **Zottman Curl** || Bayesian Cable Curl || Incline Bench Preacher Curl/Reverse Preacher Curl
 9. Cable Assisted Pancake 📈
 10. Kneeling Cable Crunch  📈
-11. **Pallof Press** 📈
+11. **Pallof Press** 
+12. Chin-up || Pull-up 📈
 
 ### Lower Body Day Part 2 Wednesday(MMA) 
 1. ***Airdyne Bike || Row Machine || Sprint || Jump Rope || Shadow Boxing***
@@ -263,13 +279,13 @@ CARDIO Demanding avoid if doing various excercise or training hypertrophy
 3. **Mobility**: ROM in table above ✅
 4. Cable Pec Minor Fly || Chest Fly || **DB Cross Body Fly**
 5. Chest/Bench Press  
-6. Chin-up || Pull-up
-7. Tricep Dip || **Incline Bilateral/Unilateral DB Overhead Tricep Extension** 
-8. **Single Arm Lat Pulldown** || Arnold Press
-9. **Bench/Cable Reverse Crunch || Dragonfly || Ab Roller ||  Hanging Knee Raise 📈** (Pick One) 
-10. Cable Assisted Pancake 📈
-11. Kneeling Cable Crunch  📈
-12. **Pallof Press**  📈
+6. Tricep Dip || **Incline Bilateral/Unilateral DB Overhead Tricep Extension** 
+7. **Single Arm Lat Pulldown** || Arnold Press
+8. **Bench/Cable Reverse Crunch || Dragonfly || Ab Roller ||  Hanging Knee Raise 📈** (Pick One) 
+9. Cable Assisted Pancake 📈
+10. Kneeling Cable Crunch  📈
+11. **Pallof Press**  📈
+12. Chin-up || Pull-up 📈
 13. **Static Stretching**
 
 
@@ -326,7 +342,7 @@ Anything not on this list is most likely a bad excercise or not worth doing base
  **Exclusively strength training this at 2x8**
 - **[Suitcase Bottom Up March](https://www.youtube.com/watch?v=TJjRZBpY75I)** - 5lb/10lb/20lb 
 - ***[Banded Suitcase](https://youtu.be/J7RX1IemJVE?si=P10xiFwSvUb2sU61) Carry/[March](https://www.youtube.com/watch?v=a9HkuLYNyJ0)*** - 5lb/10lb/20lb(Start with then transition to farmer)
-- Farmer [Carry](https://www.youtube.com/watch?v=8OtwXwrJizk)/[March](https://www.youtube.com/watch?v=C2I_HsdDVCE) - 5lb/10lb/20lb
+- Farmer [Carry](https://www.youtube.com/watch?v=8OtwXwrJizk)/[March](https://www.youtube.com/watch?v=C2I_HsdDVCE) - 10lb/20lb/35lb
 #### Airdyne Bike/Row Machine Program
 - **Workout 1: 1 Minute On, 1 Minute Off**
 - **Workout 2: All-Out in a Minute**
@@ -355,7 +371,7 @@ Allowed to practice each excercise *here* max twice a week.
 6. ~~**[Cable Wrist Curl pronated](https://youtu.be/UbfzCh0oJ5E?si=KtTGfiJfP5ep3CkD)/[supinated](https://youtu.be/WVAaKJvToe0?si=r9TKMQbLs1xmpiL0)**(Consider **Wrist Curl** [variations](https://www.youtube.com/watch?v=nvJ-1suJCTU)) – 10lb
 7. **Wide Seated Tricep Dip/[Bodyweight Tricep Dip](https://www.youtube.com/watch?v=p5Lx2BeVKR4&t=186s)** - 70lb/90/145lb
 8. **Rear Delt Fly/[DB Chest Supported Rear Delt Fly](https://youtu.be/iCbVhDNpG-Y?si=g-puZtoYX7u57LwT)** - 30lb/50lb/70lb | 20lb/20lb/20lb
-9. **[Side rear Delt Fly](https://youtu.be/P81mH8n68h4?si=eGoGz-v2JIxxjTfB)** - 30lb/30lb/45lb
+9. **[Side rear Delt Fly](https://youtu.be/P81mH8n68h4?si=eGoGz-v2JIxxjTfB)** - 30lb/30lb/50lb
 10. ***[Landmine Anti Rotations](https://www.youtube.com/watch?v=8aXStDm3cOs) - 10lb/10lb/10lb***
 11. [Wrist Twists](https://youtu.be/uxOVXpwYKv0)
 
@@ -376,7 +392,7 @@ Allowed to practice each excercise *here* max twice a week.
 11. **[Bayesian Cable Curl](https://youtu.be/4O24gFksZ04?si=poa8Lr-ymzw1-QrR)** - 10lb/10lb/10lb (2 width, 8 height)
 12. **[Incline Bench Preacher Curl](https://www.youtube.com/watch?v=02TvQZiVdic)/[Reverse Preacher Curl](https://youtu.be/h8LVaKRAFY0?si=ix3lKao_fRA33nqU)**- 20lb/20lb/20lb 
 13. **[Incline Prone Lateral Raise](https://youtu.be/Wz1C8NzWg5A?si=epnUd7OS6WC75u1Y&t=112)**/**[Seated Cable Pec Minor Fly](https://youtu.be/sC91H2XLtJc?si=bSV_IhpBVbdADHz2&t=286)**(Better ROM then chest fly Top Angle) - 20lb/20lb/20lb(Machine 5 and 5)
-14. **[Single Arm Lat Pulldown](https://www.youtube.com/watch?v=SALxEARiMkw&list=TLPQMjcwNDIwMjWOBRc2Cey09g&index=3)** - 25lb/35lb/65lb
+14. **[Single Arm Lat Pulldown](https://www.youtube.com/watch?v=SALxEARiMkw&list=TLPQMjcwNDIwMjWOBRc2Cey09g&index=3)** - 25lb/35lb/80lb
 15. **Chest Fly** - 50lb/70lb/100lb
 16. **[Lateral Head Single Arm Tricep Extension](https://www.youtube.com/watch?v=vVW9LwaahNw)**(Top Angle) – 20lb/20lb/20lb
 17. **[Back Extension on Yoga Ball](https://youtu.be/b_Iri5nayDk)**(with bar/Stick)/**Back Extension**(try Isometric holds) - bodyweight/15lb/15lb/15lb  
@@ -386,7 +402,7 @@ Allowed to practice each excercise *here* max twice a week.
 21. Seated Incline or Standing [Bilateral DB Overhead Tricep Extension](https://youtube.com/shorts/b_r_LW4HEcM?si=B1_Zz_2olhNHmPwY) | [Unilateral DB Overhead Tricep Extension](https://youtu.be/F3w6m0aENVQ?si=S2vDhXvRxVRh1MgE) - 20lb/20lb/20lb | 10lb/10lb/10lb 
 22. **[Half Kneeling Arm Row](https://youtu.be/afE9JabFqR4?si=Q7eXtrCmYCcxOV_T)** - 10lb/10lb/10lb 
 ### Leg Programming 
-All leg cable excercise are done at a low angle. Avoid squatting with running shoes and squat wider as well if issues in squatting form.
+All leg cable excercise are done at a low angle. Avoid squatting with running shoes and squat wider as well if issues in squatting form and always on toes.
 
 #### Session 1: Main Compound Squat & Lunge Patterns
 [How to PROPERLY Squat for Growth (4 Easy Steps)](https://youtu.be/gcNh17Ckjgg?si=L0Lmos_bpSJcs9u1)
