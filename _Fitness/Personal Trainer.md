@@ -18,17 +18,28 @@ Relates:
 Peer Reviewed: 0
 dg-publish:
 ---
-![[ChatGPT Image Jul 3, 2025, 04_58_45 PM.png]]
+
 ## Best Practices
 #todo/BAU/Workout  
 - [ ] After you've built a solid training foundation (about 2 years or more of consistent training), consider **shifting your focus in multi-week blocks** so alternating phase every 6 weeks because it gets harder to make gains after a certain point.
 - [ ] Advance stage shift focus of phases:
 	- [ ] For Lower body focus on 80% strength training and 20% hypertrophy. 
 	- [ ] For Upper body focus on 20% strength training and 80% hypertrophy training to failure with high volume.
+- [ ] Also for excercise session frequency reduce frequency to one time a week as you go up in max weight for strength phase.
+
+- [ ] Between reps and excercise work on visualizing, breathing, moving around, and do mobility excercise or things like squats if doing upper body work otherwise **Antagonistic super-sets** to fill in gap between reps.
 - [ ] Cycle in different exercises every **8-12 weeks** to avoid stagnation also limit range of exercises per session to 11 excercise and limit phone usage to preserve performance.
-- [ ] Focus on solo arm exercises until next year also on the on and off days when drained or finding it hard to get moving take Amino Acid.
-- [ ] If you're not **feeling the target muscle** during an exercise, **reduce momentum** and slow down the movement to improve control and mind-muscle connection and If you feel **off balance**, try **making a fist**—this creates full-body tension and enhances stability during the lift also try **Isometric Holds** like on concentric and eccentric of different exercises.
+- [ ] If you feel **off balance**, try **making a fist**—this creates full-body tension and enhances stability during the lift doing  **Isometric Holds**.
+- [ ] If you're not **feeling the target muscle** during an exercise, **reduce momentum** and slow down on the eccentric(lengthen) phase of the movement for strength training to improve control and mind-muscle connection but you can also slow down on the concentric(shortening) phase of movement.
 - [ ] Once at solid baseline switch to a **Seasonal Training Strategy** while also integrating workout phases aiming for **7 workouts per week in the winter/fall** were your body tends to **retain more weight during the colder months** (September to February), making it an ideal time to **increase training frequency** and build mass or strength. Then In the **warmer months**, when energy is often spent on outdoor activities and appetite may decrease, **4 to 5 workouts per week** can be more sustainable.
+
+Bag work for 7 songs
+
+Don't need to alternate as much for between hypertrophy reps for Antagonistic super-sets since following song duration 
+
+Alternate weight ratios so one day heavier on landmine next day heavier on dumbbells and lighter on landline for super-sets.
+
+- [ ] Do 1 minute rest between reps and 2 min between exercises especially if going heavy.
 - [ ] For **hypertrophy week** weight lift in the afternoon or mid day, **skip weight lifting**, and do MMA on Thursday or Saturday.
 - [ ] Train explosive or strength on the Monday of hypertrophy week.
 - [ ] On hypertrophy week alternate between spreading hypertrophy across excercise in session doing less set training to overall failure. Then on other days try reducing the variation of exercises focusing on a few excercise training those to failure but keeping original sets and reps you have planned. 
@@ -37,32 +48,14 @@ dg-publish:
 ## Workout Tips
 #todo/BAU/Workout  
 - [ ] Do high reps when doing stretches or excercise with short range of movement. 
-- [ ] **Prone Leg curl** first before any leg excercise.
 - [ ] Rotate your **thumb internally** to end of range for **barbell bench press**.
 - [ ] Hover in more of a standing position for **Abduction Leg Squeezing** machine 70 to 80 lb.
-- [ ] Do 1 minute rest between reps and 2 min between exercises especially if going heavy.
 - [ ] For [row](https://www.youtube.com/watch?v=JdjJC6eIk44) Pull from a low angle like 45 degrees to a high angle keeping wrist aligned with elbows  almost like your riding a motorcycle or posing  to goal is to maximize the use of back.
 - [ ] Lean forward a little on [lunge/squat](https://youtu.be/DfGu48vMmlU?si=DbDYi5Wq3JKopM3P) keeping neutral spine specifically dumbbell to simulate shooting a take down. 
 - [ ] Rotate your **pinky externally** to where you are at the end of the range where your hands are facing **palm up** when it comes to **curls**.
-- [ ] Lat pull down pull elbow near hip not chest same for row get up close pull to hip.
-- [ ] Keep elbows high above head and alt cable height at hip and foot level for Overhead extension.
 - [ ] 45 degree Incline bench press over flat bench for my body type as well as **Larsen bench press** on flat bench or incline bench hovering or keeping straight legs to focus more on core.
-- [ ] Between reps and excercise work on visualizing, breathing, moving around, and do mobility excercise or things like squats if doing upper body work. 
 
 
-## Current Stack
-Maybe try Transparent Labs EAA and Electrolytes or buy both once a year.   
-
-- Sports Research Creatine 
-- Sports Research [Omega-3 Fish Oil from Wild Alaska Pollock](https://store.sportsresearch.com/products/omega-3-fish-oil-alaskaomegar-1250mg?variant=42500073324744)
-- Sports Research Vitamin D3 + K2 with Coconut MCT Oil
-- ~~Transparent Labs Mass Gainer~~ 
-- Muscle Tech Mass Gainer
-- Thorne Collagen Fit
-- Thorne GABA
-- Thorne Magnesium Glycinate
-- Thorne Multi Vitamin 
-- Thorne Theanine
 
 # Exercises
 >**Barbell Exercises: Upper vs Lower Body Considerations**
@@ -106,62 +99,13 @@ The general principles of **training phases** like strength and hypertrophy appl
 - [ ] Increase weight as you train Hypertrophy and reduce the range of motion of the excercise as well to train to failure better.
 - [ ] After going in and stabilizing everything dedicate and go high volume to a specific part of the body to improve on it like shoulders Etc.
 
+## Session Breakdown  
+**In-Session Musts for Back Injury Prevention**  
+
 - **Explosive**: adjust along with changes in max 3x10
 - **Hypertrophy**: Add 1 extra song or +2.5 lbs weekly 
 - **Strength**: +5 lbs/week (upper), +10 lbs (lower) 4x8
 - **Injury Rule**: If pain >2/10, regress load or variation
-
-
-## Regimen
-Hypertrophy week now spread across Friday to Sunday for the month
-
-Bag work for 7 songs
-
-Seated wide dip 145lb
-
-[Half Kneeling Cable Rotation - YouTube](https://youtu.be/Xj8qeQ3cr74?si=RI3KuSuNtcC0n1jM)
-
-Antagonistic super-sets
-pair excercise with dumbbell exercises since easy to bring along 
-decide on what excercise to pair with maybe sled, defiantly landmine, cable machine and dumbbell as well  
-
-adduction machine 145lb
-
-Farmer walk like 35lb but can do 45lb but grip to weak
-
-Landmine twist with  Zottman curl
-
-230 leg press added 25 each side
-
-
-Hanging abb curl over dead hang basically doing both is more efficient 
-
-
-Alternate weight ratios so one day heavier on landmine next day heavier on dumbbells and lighter on landline for supersets
-
-
-[Ball Calf Raise - YouTube](https://youtu.be/GKfUSgvVYSw?si=RHDfbc5LE0vRQT4J)
-
-| Day      | Session Type                                                                               | Week 1 – Strength Focus                                                                   | Week 2 – Hypertrophy Focus                         | Week 3 – Explosive/Plyometrics Focus              | Week 4 –  New Skills                                        | Best Order of Operations |
-| -------- | ------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------- | -------------------------------------------------- | ------------------------------------------------- | ----------------------------------------------------------- | ------------------------ |
-| **Sat**  | Full Body + Sled + Clean Jerk Press                                                        | *Lower Strength* ***Upper [[Personal Trainer#Session 2 Pull Focus\|Pull]]  Hypertrophy*** | *Lower Hypertrophy*  ***Upper Pull Explosive***    | *Lower Explosive*  ***Upper Pull Strength***      | Cardio/Sprint/BagWork/Rope day                              | Glutes / Hamstrings      |
-| **Sun**  | Full Body + Sled + Clean Jerk Press                                                        | *Lower Hypertrophy* **Upper [[Personal Trainer#Session 1 Push Focus\|Push]] Strength**    | *Lower Strength*  **Upper Push Hypertrophy**       | *Lower Hypertrophy*  **Upper Push Explosive **    | TRX Eventually                                              | Core                     |
-| **Mon**  | Lower + *Machine/Freeweight* [Dead Hang](https://www.youtube.com/watch?v=ShkBXOGK7A8)(MMA) | *Lower Strength*                                                                          | *Lower Hypertrophy*                                | *Lower Explosive*                                 | Cable day                                                   | Scapular & Upper Back    |
-| **Tues** | Upper + Run + Balance Board                                                                | ***Pull Strength***                                                                       | ***Pull *** *Explosive* → **Hypertrophy Finisher** | ***Pull*** *Explosive* → **Hypertrophy Finisher** | Anything including Plyometrics/MediBall                     | Lats / Traps             |
-| **Wed**  | Lower +                *Cable Machine*     Dead Hang(MMA)                                  | *Lower Strength*                                                                          | *Lower Hypertrophy*                                | *Lower Explosive*                                 | Cable day                                                   | Quads                    |
-| **Thu**  | Upper + Run + Balance Board                                                                | **Push Strength**                                                                         | *Push Explosive* →   **Hypertrophy Finisher**      | *Push Explosive* →  **Hypertrophy Finisher**      | Home/Gym Resistance Band/Tower 200/Cable stability Ball day | Chest / Delts            |
-| **Fri**  | REST                                                                                       |                                                                                           |                                                    |                                                   |                                                             | Arms                     |
-
-
-## Session Breakdown  
-**In-Session Musts for Back Injury Prevention**  
-#### Schedule for Alternating Variation in Exercises
-Alternate each month keeping the week training phase in to account the weights follow like this when alternating phase in session **explosive** to **hypertrophy** | **explosive** to **strength** | **strength** to **hypertrophy** also weights follow ***explosive/hypertrophy/strength***.
-
-| Month           | Back Extension                                                                                                         | ROM                                                                       | Suitcase/Farmer                 | Leg ROM                                        | Upper Body                      |                        | Leg Focus                |           | Sled                             |
-| --------------- | ---------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------- | ------------------------------- | ---------------------------------------------- | ------------------------------- | ---------------------- | ------------------------ | --------- | -------------------------------- |
-| 1 (Odd months)  | Unilateral back ext 2x8 with 5 sec ISO & [Roman Chair Hip Abduction](https://youtu.be/j5HWZOfIePI?si=EsYf8Gg0rFO16y-p) | Halo + [Scarecrow](https://youtu.be/qzNQ3_TQHDs) + KB Around the World    | Suitcase Bottom Ups or Suitcase | [[Personal Trainer#Cable Day \|Cable Leg day]] | Unilateral Arm(were it applies) | Chin-up                | Unilateral-leg variation | Leg Press | Push to Lateral(left/right) Pull |
-| 2 (Even months) | Bilateral Back ext 4x8 with 10 sec ISO & [Side Lateral QL Extension](https://youtu.be/UaydER2VIUc?si=wkQxbIqiz7lJQF_7) | Super ROM + [V Raise](https://youtu.be/5WBdE0TSoUQ) + KB Around the World | Banded Farmer or Farmer Carry   | Non Cable leg day                              | Bilateral Arm                   | Neutral/Narrow Pull-up | Bilateral variation      | HackSmith | Push to Pull                     |
 
 
 #todo/BAU/Workout 
@@ -178,140 +122,8 @@ Alternate each month keeping the week training phase in to account the weights f
 - [ ] Can do 2 of ✅  but pick one of 📈 depending on day then choose few others for that day session max excercise in session can maybe be 7 each day maybe lower if an MMA day. Maybe Each week pick something different for  📈 to try each one on a more consistent basis but also keep [[Exercise Best Pairing]] in mind.
 - [ ] Run all out 1 min then 1 min coasting so run then a slow walk then back to intense 1 min once able to do a minutes build to 4 min.
 - [ ] For DB exercises alternate every 2 months to improve at the excercise then after doing each switch back to picking which one you feel like doing depending on how you feel maybe do this in pairs picking to Dumbbell exercises.
-- [ ] Maybe try heavy gym week then light gym week with less days but more MMA days
-- [ ] Train 30 to 45 min Monday through Friday with one day Off and reserve Maybe Friday as well as Saturday and Sunday for Hypertrophy training to avoid burn out during work week. 
 - [ ] For hypertrophy week exclude full body compound movement can keep deadlifts and other excercise based on day for variation also avoid these exercises on MMA days in general can cycle back in for non hypertrophy week and MMA specific days in general to limit fatigue.
 - [ ] For strength and explosive week can reduce number of exercises and include compound excercise like clean jerk press etc...
-- [ ] Overhead Press and pull ups for hypertrophy training keep at end 
-
-
-### Full Body Day Part 1 Saturday(Optional MMA) 
-1. ***Airdyne Bike || Row Machine || Sprint || Jump Rope || Shadow Boxing***
-2. **[[Dynamic Stretching]]**(Includes mobility stretches)
-3. **Mobility**: ROM in table above 2x8 each excercise(3 excercise for each month) ✅ 
-4. Bottom Up Suitcase/Farmer Carry 
-5. [Cable Woodchopper](https://www.youtube.com/watch?v=mvvu8imyMFs) || **[Landmine Twist](https://youtu.be/M93HfnAVIl8?si=7KtnpfDB0GYobD9Z)** 
-6. [Cable Pec Minor Fly](https://youtu.be/sC91H2XLtJc?si=bSV_IhpBVbdADHz2&t=286) || Chest Fly([variations](https://youtube.com/shorts/0LJ-JujImCs?si=LgyKSn87TMCarM-y)) || **[DB Cross Body Fly](https://youtu.be/mK2xrdqf_cU?si=jNrPZCLCgUNFki9v)**
-7. [Lateral Head Single Arm Tricep Extension](https://www.youtube.com/watch?v=vVW9LwaahNw)
-8. **Stability**: *TRX/SwissBall Training* - focus on one a month or something
-	1. [TRX Burpee Level 3](https://www.youtube.com/watch?v=C_rKVEucJak)
-	2. [TRX Assisted Pistol Squat](https://www.youtube.com/watch?v=HqCHXb91yMQ) 
-	3. [TRX Push Up](https://youtu.be/jk4MGqOmjn4?si=lzlBdn4390KOOyNg)/TRX Suspended Pushup(harder)
-	4. [TRX single arm row w/ rotation](https://www.youtube.com/watch?v=xlvYxStAL8M)
-	5. [TRX T spine Rotation](https://www.youtube.com/watch?v=Z5ftr88omuc) 
-	6. [TRX  Inverted Row](https://youtu.be/v4zbFQr4LwA?si=qZnYivFFbLA0XSLx)
-	7. [TRX Y Fly + Biceps Curls ](https://www.youtube.com/watch?v=HOp5_Of1fzE)
-	8. [TRX Plank into Rotations](https://www.youtube.com/watch?v=TT2jUlSOZNc)
-	9. [SwissBall Flutter Kicks](https://www.youtube.com/watch?v=W_we2PmocxE)
-	10. [SwissBall stir the pot](https://www.youtube.com/watch?v=ss8v02Yfw0Q)
-	11. [Swiss Ball Side Flexion - Level 1](https://youtu.be/kFty8-wF69k?si=uAMaVNjSfn33ebzw)
-	12. [Swiss Ball Side Flexion - Level 2](https://youtu.be/68eJEt4NQqc?si=_sbeTFGs2b3DVm9t)
-	13. [Swiss Ball Side Flexion - Level 3](https://youtu.be/-W02_G1f0aM?si=ERpJXiz8LvGJ7885)
-	14. [Swiss Ball Side Flexion - Level 4](https://youtu.be/2VCOHVeRdKs?si=U5aowRV0FRbtSK2b)
-	15. [Swiss Ball Side Flexion - Level 5](https://youtu.be/ltuv2fYMXqk?si=IkiMMxr0jMaj7n0P)
-9. **Pallof Press** - can be done with bands  
-10. **Bench/Cable Reverse Crunch || Dragonfly || Ab Roller ||  [Hanging Knee Raise](https://youtu.be/RD_A-Z15ER4?si=h0fyUA7SXg4vWE2a)📈** (Pick One) 
-11. [Cable Assisted Pancake](https://youtu.be/xgU1YYHwprQ?si=N0aX9UVVJqDLvvrS) 📈
-12. [Cable](https://youtu.be/2M1Mikqf5lY?si=sIX0t_7UkiioAffp) || [Kettlebell](https://youtu.be/SuNgD0x2U6U?si=0oE-W6Zv_5pABcMv) - Unilateral RDL 📈
-13. **Sled Push/Pull** 📈
-14. **Clean & Jerk Press** || Deadlift(Prioritize deadlift until imbalance is gone)  📈
-15. **[[Personal Trainer#Priority Static Stretch to develop splits| Static Stretching]]**
-
-### Full Body Day Part 2 Sunday 
-1. ***Airdyne Bike || Row Machine || Sprint || Jump Rope || Shadow Boxing***
-2. **Dynamic Stretching**
-3. **Mobility**: ROM in table above ✅
-4. **Bottom Up Suitcase/Farmer Carry**
-5. Cable WoodChopper || Landmine Twist 
-6. Cable Pec Minor Fly || Chest Fly || **DB Cross Body Fly**
-7. **Sled Push/Pull**  
-8. **Zottman Curl** || Bayesian Cable Curl || Incline Bench Preacher Curl/Reverse Preacher Curl
-9. **Bench/Cable Reverse Crunch || Dragonfly || Ab Roller ||  Hanging Knee Raise 📈** (Pick One) 
-10. **Back Extension** 📈
-11. Cable Assisted Pancake 📈
-12. **Static Stretching**
-### Lower Body Day Part 1 Monday(MMA)
-1. ***Airdyne Bike || Row Machine || Sprint || Jump Rope || Shadow Boxing***
-2. **Dynamic Stretching**
-3. **Mobility**:  Leg ROM in table above ✅
-4. **Prone Leg Curl** - Strength phase only ✅  
-5. Clean & Jerk Press || **Deadlift**  
-6. **DB Bulgarian Split Squat** || Walking Barbell Zercher Lunge || B-Stance Zercher Squat
-7. Hack Squat *or* Leg Press | | Curlbar Behind Back Kneeling Squat on Toes 
-8. **Hip Thrust** 
-9. Trap Bar Squat Jump 
-10. **Back Extension**  📈
-11. Cable || Kettlebell - Unilateral RDL 📈
-12. Kettlebell Leg Raise 📈
-13. **Static Stretching**
-### Upper Body Day Part 1 Tuesday Sprint Day - Meal Prep Day 2
-1. ***Airdyne Bike || Row Machine || Sprint || Jump Rope || Shadow Boxing***
-2. **Dynamic Stretching**
-3. **Mobility**: ROM in table above ✅
-4. Cable Pec Minor Fly || Chest Fly || **DB Cross Body Fly**
-5. Chest/Bench Press  
-6. Tricep Dip || **Incline Bilateral/Unilateral DB Overhead Tricep Extension** 
-7. Single Arm Lat Pulldown || **Arnold Press**
-8. **Zottman Curl** || Bayesian Cable Curl || Incline Bench Preacher Curl/Reverse Preacher Curl
-9. Cable Assisted Pancake 📈
-10. Kneeling Cable Crunch  📈
-11. **Pallof Press** 
-12. Chin-up || Pull-up 📈
-
-### Lower Body Day Part 2 Wednesday(MMA) 
-1. ***Airdyne Bike || Row Machine || Sprint || Jump Rope || Shadow Boxing***
-2. **Dynamic Stretching**
-3. **Mobility**:  Leg ROM in table above ✅
-4. **Prone Leg Curl** ✅  
-5. **DB Bulgarian Split Squat** || Walking Barbell Zercher Lunge || B-Stance Zercher Squat
-6. Hack Squat *or* Leg Press | | Curlbar Behind Back Kneeling Squat on Toes 
-7. Trap Bar Squat Jump 
-8. **Back Extension** 📈
-9. Cable || Kettlebell - Unilateral RDL 📈
-10. Kettlebell Leg Raise 📈
-
-
-### Upper Body Day Part 2 Thursday Sprint Day(Optional MMA)
-1. ***Airdyne Bike || Row Machine || Sprint || Jump Rope || Shadow Boxing***
-2. **Dynamic Stretching**
-3. **Mobility**: ROM in table above ✅
-4. Cable Pec Minor Fly || Chest Fly || **DB Cross Body Fly**
-5. Chest/Bench Press  
-6. Tricep Dip || **Incline Bilateral/Unilateral DB Overhead Tricep Extension** 
-7. **Single Arm Lat Pulldown** || Arnold Press
-8. **Bench/Cable Reverse Crunch || Dragonfly || Ab Roller ||  Hanging Knee Raise 📈** (Pick One) 
-9. Cable Assisted Pancake 📈
-10. Kneeling Cable Crunch  📈
-11. **Pallof Press**  📈
-12. Chin-up || Pull-up 📈
-13. **Static Stretching**
-
-
-### Nobody Day Friday  - Meal Prep Day 1
-- Mental Organization day 
-- Financial Research 
-- Etc....
-
-## Special Sessions
-#todo/BAU/Workout 
-- [ ] Build Cable variation for leg day
-- [ ] Finalize, refine, reduce, and prioritize exercises in [[Plyometrics]] program
-
-#### Explosive Plyometric Day
-1. DB Switch Catch ✅ - 1 min
-
-
-#### Lower Body Cable Day 
-1. ***Airdyne Bike || Row Machine || Sprint || Jump Rope || Shadow Boxing***
-2. **Dynamic Stretching**
-3. **Mobility**:  Leg ROM in table above ✅
-4. **[Cable Hip Extension](https://www.youtube.com/watch?v=Fr6fdKPdyfM)** 
-5. **[Cable Side Kicks](https://www.youtube.com/watch?v=jYuN92LGzpA)** 
-6. **[Cable Kickback](https://www.youtube.com/watch?v=SqO-VUEak2M)
-7. Trap Bar Squat Jump 
-8. **Back Extension**  📈
-9. Kettlebell Leg Raise 📈
-10. Cable || Kettlebell - Unilateral RDL 📈
 
 
 
@@ -322,11 +134,10 @@ Alternate each month keeping the week training phase in to account the weights f
 ![[muscle-anatomy-chart.jpg]]
 
 ### Full Body Program 
-> Skip hypertrophy for some of these excercise were doing a lot of lifting since it can be dangerous but should be safe for something like sled pulls and pushes. Also for excercise session frequency reduce frequency to one time a week as you go up in max weight for strength phase.
+> Skip hypertrophy for some of these excercise were doing a lot of lifting since it can be dangerous but should be safe for something like sled pulls and pushes.
 
-Anything not on this list is most likely a bad excercise or not worth doing based on research. Also for 
+Anything not on this list is most likely a bad excercise or not worth doing based on research.**Everything here uses modified set/rep 3x5 for strength phase 4x8, hypertrophy phase, and 2x5 explosive** since full body compound movements.
 
-**Everything here uses modified set/rep 3x5 for strength phase 4x8, hypertrophy phase, and 2x5 explosive**
 - [***Barbell Clean Jerk Press*** ](https://www.youtube.com/watch?v=8IYt7AtP8BI) - 20lb/20lb/20lb
 - **[Base Rows](https://youtu.be/Qmw9TKnQ9NY?si=gNe_2K45P71UKz5y)** - 10lb/20lb/30lb
 - **[KB Around the World](https://www.youtube.com/watch?v=N4mMVG8S5Kg)** - 20lb/20lb/20lb
@@ -341,19 +152,7 @@ Anything not on this list is most likely a bad excercise or not worth doing base
 - **[Suitcase Bottom Up March](https://www.youtube.com/watch?v=TJjRZBpY75I)** - 5lb/10lb/20lb 
 - ***[Banded Suitcase](https://youtu.be/J7RX1IemJVE?si=P10xiFwSvUb2sU61) Carry/[March](https://www.youtube.com/watch?v=a9HkuLYNyJ0)*** - 5lb/10lb/20lb(Start with then transition to farmer)
 - Farmer [Carry](https://www.youtube.com/watch?v=8OtwXwrJizk)/[March](https://www.youtube.com/watch?v=C2I_HsdDVCE) - 10lb/20lb/35lb
-#### Airdyne Bike/Row Machine Program
-- **Workout 1: 1 Minute On, 1 Minute Off**
-- **Workout 2: All-Out in a Minute**
-- **Workout 3: 10 to 20 Alternation** - for 20 min or less alt from 10 to 20 strokes per minute
-- **Workout 4: Power Strokes**
-- **Workout 5:  Rounds 1 to 4**
-	- Round 1: Row one minute, then rest for 90 seconds.
-	- Round 2: Row two minutes, then rest for three minutes.
-	- Round 3: Row three minutes, then rest for four minutes and 30 seconds.
-	- Round 4: Row four minutes, then rest for six minutes.
-	- Round 5: Row three minutes, then rest for four minutes and 30 seconds.
-	- Round 6: Row two minutes, then rest for three minutes.
-	- Round 7: Row for one minute.
+
 
 ### Right to Bare Arms Program
 Allowed to practice each excercise *here* max twice a week. 
@@ -399,6 +198,7 @@ Allowed to practice each excercise *here* max twice a week.
 20. Standing [Cable FreeMotion Front Shoulder Raise](https://youtu.be/_bzJ1Yb4XCU?si=v0UUNLSilV6NVM76)(Low Angle) - 10lb/10lb/10lb
 21. Seated Incline or Standing [Bilateral DB Overhead Tricep Extension](https://youtube.com/shorts/b_r_LW4HEcM?si=B1_Zz_2olhNHmPwY) | [Unilateral DB Overhead Tricep Extension](https://youtu.be/F3w6m0aENVQ?si=S2vDhXvRxVRh1MgE) - 20lb/20lb/20lb | 10lb/10lb/10lb 
 22. **[Half Kneeling Arm Row](https://youtu.be/afE9JabFqR4?si=Q7eXtrCmYCcxOV_T)** - 10lb/10lb/10lb 
+23. [Half Kneeling Cable Rotation](https://youtu.be/Xj8qeQ3cr74?si=RI3KuSuNtcC0n1jM)- 0lb/0lb/0lb 
 ### Leg Programming 
 All leg cable excercise are done at a low angle. Avoid squatting with running shoes and squat wider as well if issues in squatting form and always on toes.
 
@@ -409,7 +209,7 @@ All leg cable excercise are done at a low angle. Avoid squatting with running sh
 2. **Barbell Squat/Zercher B-Squat** - Incline High Bar(on trap muscle)  - 50lb
 3. **Dumbbell Bulgarian Split Squat/Prone Leg Curl** - set to 3rd hole and exclusively train only strength phase(can use [leg extension machine](https://youtu.be/VC5kbLSuo30?si=ssky4p0p0X2BdUEy)) - 20lb/20lb/25lb can do on a cube too
 4. **Kneeling Squat on toes with curlbar/Dumbbell behind** - 45lb/45lb/45lb
-5. **Unilateral/Bilateral Leg Press** – 90lb/180lb/180lb | 180lb/360lb/500lb
+5. **Unilateral/Bilateral Leg Press** – 90lb/180lb/250lb | 180lb/360lb/500lb
 6. **Walking Barbell Lunge/Zercher Lunge** – 20lb/20lb/20lb
 7. **KB [B Stance Squat](https://youtu.be/5uFUvFXhp7U?si=3PGzZ_XSqbFGPbqN)/Sumo [Zercher](https://www.youtube.com/watch?v=71l8K2Q9_6s)** - 20lb/20lb/20lb
 8. **[Roman Chair Hip Abduction](https://youtu.be/j5HWZOfIePI?si=EsYf8Gg0rFO16y-p)** - Bodyweight/10lb/10lb/10lb 
@@ -493,69 +293,10 @@ Static stretches can be active or passive with external force like maybe a plank
 	5. **[Barbell Pistol Squat](https://youtu.be/G-neztXXSCA?si=M3l8EqL0Y4O9ANtC)** - 10lb/10lb/10lb 
 5. **[Dumbbell ATG Split Squat](https://youtu.be/j39uGbXnbYw?si=DSL98N7FTt1xr8O1)** - 10lb/10lb/10lb 
 
-## Home Training 
-##### Balance Board Stability Program
-- **Beginners:** 2-3x/week (5-10 mins/session) or 2 songs length.
-- **Intermediate/Advanced:** 3-4x/week (10-15 mins/session) 4 songs. 
-- **Elite (MMA/Gymnasts):** 5x/week (integrated into warm-ups or cooldowns).
-
-##### Wrist Curl
-
-| Exercise                              | Sets | Reps       | Rest      |
-| ------------------------------------- | ---- | ---------- | --------- |
-| Band roll-ups & unrolls               | 1    | 8–10 reps  | 60 sec    |
-| Finger Extensions                     | 1    | 8–10 reps  | 60 sec    |
-| Wrist Circles                         | 1    | 8–10 reps  | 60 sec    |
-| Towel Squeeze                         | 1    | 8–10 reps  | 60 sec    |
-| Neutral Wrist Curls (Hammer Grip)     | 3    | 8–10 reps  | 60 sec    |
-| Palm-Up Wrist Curls (Supinated Grip)  | 3    | 10–12 reps | 45–60 sec |
-| Palm-Down Wrist Curls (Pronated Grip) | 3    | 10–12 reps | 45–60 sec |
-| Plate or Book Pinch Hold (1–2 books)  | 3    | 10–12 reps | 45–60 sec |
 
 
-#####  [O2 Trainer Routine](https://www.youtube.com/watch?v=-Es3HOd0PT8&list=PL8NG4An03Sa_ZvEIyHFojC65BhMV08qr1&index=5)
-
-###### **Signs to Reduce Frequency/Overtraining**  
-- Dizziness or lightheadedness.  
-- Excessive ribcage/diaphragm soreness.  
-- No improvement in endurance after 2–3 weeks.  
-###### **Frequency:**  
-- **Days Per Week:** **4–5 days** (allow 2–3 rest days for recovery). 
-- **Sessions Per Day:** **1–2 times daily** (morning + pre/post-workout).  
-###### **Duration & Sets:**  
-- **Start Light:**  
-- **Week 1:** 2–3 sets of **30 sec – 1 min** per session (low resistance if needed).  
-- **Week 2+:** 3–4 sets of **1–2 min** per session (progress to max resistance).  
-- **Max Session Time:** **10–15 mins total daily** (avoid overfatiguing respiratory muscles).  
 
 
-#### Tower 200 Programming  – With Adequate Space
-#### Cable at Top Angle
-- **Kneeling Cable Crunch** – Great for weighted ab work.
-- **Single-Arm Lateral Head Pushdown** – Targets the lateral (outer) head of the triceps.
 
-#### Cable at Low Angle
-- **Cable Curl** – Classic biceps isolation.
-- **Single-Arm Back Cable Lateral Raise** – Hits rear delts with a unique angle.
-- **Cable Pull-Through** – Glute and hamstring focus.
-- **Cable Lunge**  – Adds resistance to unilateral leg training.
-- **Cable Woodchopper** – Engages the obliques and rotational core strength.
-- **Two-Handed Overhead Raise or Extension** – Can target shoulders or triceps depending on form.
-- **Pancake Stretch with Resistance** – Potential for loaded stretching or active mobility.
-
-### Tib Bar Protocol
-
-| Training Goal | Sets x Reps | Tempo                    | Recommended Weight                                 | Rest Between Sets | Key Focus         |
-| ------------- | ----------- | ------------------------ | -------------------------------------------------- | ----------------- | ----------------- |
-| **Strength**  | 3–4 × 10–15 | 2–3 sec up, 2–3 sec down | Moderate (last 2–3 reps feel tough but controlled) | 60 sec            | Full ROM, control |
-| **Explosive** | 2–3 × 5–8   | Fast, "snap" at the top  | Light (30–50% of strength weight)                  | 45–60 sec         | Speed, max intent |
-
-#### Example Progression (6-Week Plan)
-
-| Week | Strength (3×15) | Explosive (3×5) | Notes                               |
-| ---- | --------------- | --------------- | ----------------------------------- |
-| 1–2  | 15 lbs          | 5 lbs           | Master form and control             |
-| 3–4  | 20 lbs          | 8 lbs           | Add weight if reps feel easy        |
-| 5–6  | 25 lbs          | 10 lbs          | Focus on explosive intent/retention |
 
 

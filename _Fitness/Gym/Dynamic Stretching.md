@@ -45,8 +45,8 @@ Start with a dynamic stretch to Improve blood flow and flexibility. End with a s
     - ✅ **Mobility/Activation**: Use **bodyweight only**
     - ✅ **Strength/Endurance/Burnout**: Add **light weights** (only if form stays clean)
 
-⏱️ **Total Time:** 5–15 minutes(about 7 min at home and gym)
-🎯 **Each Exercise:** 10–15 reps or 20–30 seconds unless noted
+- ⏱️ **Total Time:** 5–15 minutes(about 7 min at home and gym)
+- 🎯 **Each Exercise:** 10–15 reps or 20–30 seconds unless noted
 
 
 ---
@@ -129,6 +129,7 @@ _~5–10 minutes total – pick 3–5 each position_
 
 
 ###### Foot
+- [Ball Calf Raise - YouTube](https://youtu.be/GKfUSgvVYSw?si=RHDfbc5LE0vRQT4J)
 - [Heel to Toe Rock](https://www.youtube.com/watch?v=FMZX3mpffeE) & [Walk](https://www.youtube.com/watch?v=oQ_-LIbhYgo) 
 - [Pogo Jumps](https://youtu.be/iU-TKr4YesM?si=--xrqvN2fMHZOnea) 
 - PVC Walk
