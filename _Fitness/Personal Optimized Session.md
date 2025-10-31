@@ -61,18 +61,27 @@ Alternate each month keeping the week training phase in to account the weights f
 
 ### Friday  - Meal Prep Day 1
 
+#### **Antagonistic super-sets**
+5. **Prone Leg Curl** to **DB Bulgarian Split Squat** || Walking Barbell Zercher Lunge
+6. **Hip thrust** to **Chest press**
+7. **Leg press** to **Chest press**(prefer) 
+8. **Pallof Press**(bands/cables) to **[Half Kneeling/Standing Arm Row](https://youtu.be/afE9JabFqR4?si=Q7eXtrCmYCcxOV_T)** 
+9. Wide Tricep Dip to [Hanging Knee Raise](https://youtu.be/RD_A-Z15ER4?si=h0fyUA7SXg4vWE2a) 📈
+#### **Regular sets**
+9. **Trap Bar Squat Jump** 
+10. **[Side rear Delt Fly](https://youtu.be/P81mH8n68h4?si=eGoGz-v2JIxxjTfB)** 
+
 
 ### Saturday
 #### **Antagonistic super-sets**
 5. [Cable Woodchopper](https://www.youtube.com/watch?v=mvvu8imyMFs)(Low angle) || **[Landmine Twist](https://youtu.be/M93HfnAVIl8?si=7KtnpfDB0GYobD9Z)** to Kettlebell Leg Raise
 6. [Lateral Head Single Arm Tricep Extension](https://www.youtube.com/watch?v=vVW9LwaahNw)(High angle) -> **Unilateral DB Overhead Tricep Extension** to **Kneeling Cable Crunch**
-7. Wide Tricep Dip to [Hanging Knee Raise](https://youtu.be/RD_A-Z15ER4?si=h0fyUA7SXg4vWE2a)
+7. **Pallof Press**(bands/cables) to **[Half Kneeling/Standing Arm Row](https://youtu.be/afE9JabFqR4?si=Q7eXtrCmYCcxOV_T)** 
 
 #### **Regular sets**
-8. **Pallof Press**(bands/cables)  
 9. **[Side rear Delt Fly](https://youtu.be/P81mH8n68h4?si=eGoGz-v2JIxxjTfB)** 
-10. **Sled Push/Pull** 📈
-
+10. **Clean & Jerk Press** 📈
+11. **Sled Push/Pull** 📈
 
 ### Sunday 
 #### **Antagonistic super-sets**
@@ -93,10 +102,8 @@ Use Isometric holds for strength week which aids in stability. Do DB switch catc
 #### **Antagonistic super-sets**
 5. [Cable Woodchopper](https://www.youtube.com/watch?v=mvvu8imyMFs)(Low angle) || **[Landmine Twist](https://youtu.be/M93HfnAVIl8?si=7KtnpfDB0GYobD9Z)** to Kettlebell Leg Raise
 6. [Lateral Head Single Arm Tricep Extension](https://www.youtube.com/watch?v=vVW9LwaahNw)(High angle) -> **Unilateral DB Overhead Tricep Extension** to **Kneeling Cable Crunch**
-7. Wide Tricep Dip to [Hanging Knee Raise](https://youtu.be/RD_A-Z15ER4?si=h0fyUA7SXg4vWE2a)
-8. **Walk**: half distance *farmer/suitcase* to *Arnold press*/plyometric 
-9. **Back Extension** to **Zottman Curl** ||  **[Bayesian Cable Curl](https://youtu.be/4O24gFksZ04?si=poa8Lr-ymzw1-QrR)** || **[Incline Bench Preacher Curl](https://www.youtube.com/watch?v=02TvQZiVdic)/[Reverse Preacher Curl](https://youtu.be/h8LVaKRAFY0?si=ix3lKao_fRA33nqU)**
-
+7. **Walk**: half distance *farmer/suitcase* to *Arnold press*/plyometric 
+8. **Back Extension** to **Zottman Curl** ||  **[Bayesian Cable Curl](https://youtu.be/4O24gFksZ04?si=poa8Lr-ymzw1-QrR)** || **[Incline Bench Preacher Curl](https://www.youtube.com/watch?v=02TvQZiVdic)/[Reverse Preacher Curl](https://youtu.be/h8LVaKRAFY0?si=ix3lKao_fRA33nqU)**
 
 #### **Regular sets**
 10. **Bench Reverse Crunch || [Dragon Flag](https://youtu.be/U5pviWt7sMo?si=bTziyFRf9FBf40sF) || Ab Roller 📈** 
@@ -110,13 +117,13 @@ Use Isometric holds for strength week which aids in stability. Do DB switch catc
 5. **Prone Leg Curl** to **DB Bulgarian Split Squat** || Walking Barbell Zercher Lunge
 6. **Hip thrust** to **Chest press**
 7. **Leg press** to **Chest press**(prefer) 
-8. **Trap Bar Squat Jump** 
-
+8. **Pallof Press**(bands/cables) to **[Half Kneeling/Standing Arm Row](https://youtu.be/afE9JabFqR4?si=Q7eXtrCmYCcxOV_T)** 
+9. Wide Tricep Dip to [Hanging Knee Raise](https://youtu.be/RD_A-Z15ER4?si=h0fyUA7SXg4vWE2a) 📈
 #### **Regular sets**
 9. Hack Squat
-10. **[Single-Arm Behind-Back Cable Lateral Raise](https://www.youtube.com/watch?v=y4Djk_G0yEg)**(Low Angle) 
-11. [Cable Assisted Pancake](https://youtu.be/xgU1YYHwprQ?si=N0aX9UVVJqDLvvrS)(Low Angle) 
-12. **Pallof Press**(bands/cables)  
+10. **Trap Bar Squat Jump** 
+11. **[Single-Arm Behind-Back Cable Lateral Raise](https://www.youtube.com/watch?v=y4Djk_G0yEg)**(Low Angle) 
+12. [Cable Assisted Pancake](https://youtu.be/xgU1YYHwprQ?si=N0aX9UVVJqDLvvrS)(Low Angle) 
 13. **[Side rear Delt Fly](https://youtu.be/P81mH8n68h4?si=eGoGz-v2JIxxjTfB)** 
 14. **Deadlift** 📈
 
@@ -138,32 +145,19 @@ have at least one free form day like this  every week since following this new p
 5. [Cable Woodchopper](https://www.youtube.com/watch?v=mvvu8imyMFs)(Low angle) || **[Landmine Twist](https://youtu.be/M93HfnAVIl8?si=7KtnpfDB0GYobD9Z)** to Kettlebell Leg Raise
 6. [[Plyometrics]]
 7. **Back Extension** to **Zottman Curl** || **[Bayesian Cable Curl](https://youtu.be/4O24gFksZ04?si=poa8Lr-ymzw1-QrR)** || **[Incline Bench Preacher Curl](https://www.youtube.com/watch?v=02TvQZiVdic)/[Reverse Preacher Curl](https://youtu.be/h8LVaKRAFY0?si=ix3lKao_fRA33nqU)**
-
+8. **Pallof Press**(bands/cables) to **[Half Kneeling/Standing Arm Row](https://youtu.be/afE9JabFqR4?si=Q7eXtrCmYCcxOV_T)** 
 #### **Regular sets**
-8. [Cable](https://youtu.be/2M1Mikqf5lY?si=sIX0t_7UkiioAffp) || [Kettlebell](https://youtu.be/SuNgD0x2U6U?si=0oE-W6Zv_5pABcMv) - Unilateral RDL 
-9. **[Half Kneeling Arm Row](https://youtu.be/afE9JabFqR4?si=Q7eXtrCmYCcxOV_T)** 
+9. [Cable](https://youtu.be/2M1Mikqf5lY?si=sIX0t_7UkiioAffp) || [Kettlebell](https://youtu.be/SuNgD0x2U6U?si=0oE-W6Zv_5pABcMv) - Unilateral RDL 
 10. [Cable Pec Minor Fly](https://youtu.be/sC91H2XLtJc?si=bSV_IhpBVbdADHz2&t=286) || Chest Fly([variations](https://youtube.com/shorts/0LJ-JujImCs?si=LgyKSn87TMCarM-y)) || **[DB Cross Body Fly](https://youtu.be/mK2xrdqf_cU?si=jNrPZCLCgUNFki9v)**
 11. **Kneeling Squat on toes with DB behind** 
 12. **Bench Reverse Crunch || [Dragon Flag](https://youtu.be/U5pviWt7sMo?si=bTziyFRf9FBf40sF) || Ab Roller 📈** 
 13. Chin-up || Pull-up 📈
 14. **Deadlift** || **Sled Push/Pull** || **Clean & Jerk Press** 📈
 
-
-
 ### Thursday(Pre prep for meal prep) 
 
-#### **Antagonistic super-sets**
-5. **Prone Leg Curl** to **DB Bulgarian Split Squat** || Walking Barbell Zercher Lunge
-6. **Hip thrust** to **Chest press**
-7. **Leg press** to **Chest press**(prefer) 
-8. **Trap Bar Squat Jump** 
 
-#### **Regular sets**
-9. **Pallof Press**(bands/cables)  
-10. **[Side rear Delt Fly](https://youtu.be/P81mH8n68h4?si=eGoGz-v2JIxxjTfB)** 
-11. **Clean & Jerk Press** 📈
-
-#### Airdyne Bike/Row Machine Program
+### Airdyne Bike/Row Machine Program
 - **Workout 1: 1 Minute On, 1 Minute Off**
 - **Workout 2: All-Out in a Minute**
 - **Workout 3: 10 to 20 Alternation** - for 20 min or less alt from 10 to 20 strokes per minute
