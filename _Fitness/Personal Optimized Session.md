@@ -85,15 +85,15 @@ Maybe deadlift with landmine 7 height for kneeling arm row.
 
 ### Sunday 
 #### **Antagonistic super-sets**
-5. **Walk**: half distance *farmer/suitcase* to *Arnold press*/plyometric 
-6. **Back Extension** to **Zottman Curl** || **[Bayesian Cable Curl](https://youtu.be/4O24gFksZ04?si=poa8Lr-ymzw1-QrR)** || **[Incline Bench Preacher Curl](https://www.youtube.com/watch?v=02TvQZiVdic)/[Reverse Preacher Curl](https://youtu.be/h8LVaKRAFY0?si=ix3lKao_fRA33nqU)**
+5. **Walk**: half distance *farmer/suitcase* to *Arnold press*/plyometric 25lb to 25lb
+6. **Back Extension** to **Zottman Curl** || **[Bayesian Cable Curl](https://youtu.be/4O24gFksZ04?si=poa8Lr-ymzw1-QrR)** || **[Incline Bench Preacher Curl](https://www.youtube.com/watch?v=02TvQZiVdic)/[Reverse Preacher Curl](https://youtu.be/h8LVaKRAFY0?si=ix3lKao_fRA33nqU)** 10lb to 20lb
 
 #### **Regular sets**
 7. **[Single-Arm Behind-Back Cable Lateral Raise](https://www.youtube.com/watch?v=y4Djk_G0yEg)**(Low Angle) - 13lb
 8. [Cable Assisted Pancake](https://youtu.be/xgU1YYHwprQ?si=N0aX9UVVJqDLvvrS)(Low Angle) 
-9. **Single Arm Lat Pulldown** 
-10. Inner Thigh Abduction
-11. Outer Thigh Adduction
+9. **Single Arm Lat Pulldown** - 80lb
+10. Inner Thigh Abduction - 100lb
+11. Outer Thigh Adduction - 130lb
 12. **Bench Reverse Crunch || [Dragon Flag](https://youtu.be/U5pviWt7sMo?si=bTziyFRf9FBf40sF) || Ab Roller 📈** 
 13. Chin-up || Pull-up 📈
 
