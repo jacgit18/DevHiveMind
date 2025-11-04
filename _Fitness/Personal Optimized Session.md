@@ -24,6 +24,8 @@ Thursday or Friday rest day if multiple rest days 1 from each phase section. Als
 
 #todo/BAU/Workout 
 - [ ] Finalize, refine, reduce, and prioritize exercises in [[Plyometrics]] program
+- [ ] Add in [Good Morning](https://youtu.be/nWyx81AfTos?si=ReJqMdB_wh9t4yRs) after improving back extension and RDL
+
 
 #### Schedule for Alternating Variation in Exercises
 Alternate each month keeping the week training phase in to account the weights follow like this when alternating phase in session **explosive** to **hypertrophy** | **explosive** to **strength** | **strength** to **hypertrophy** also weights follow ***explosive/hypertrophy/strength***.

@@ -28,7 +28,8 @@ MMA has shorter combos because of takedowns. When kicking use high knee elevatio
 
 > Purpose: Train and fight to stop fighting self and fight the world
 
-Keep sparing for Muay Thai down to 2 or 3 times a month for safety and quality.  
+With striking and jujitsu i'm navigating uncertainty getting things thrown at me that i cant tell the what is coming towards me or the timing of what is coming at me as well providing uncertainty to the other person in the way i move and time things
+
 
 #todo/BAU/MMA/Drill 
 - [ ] Work on close range 
@@ -36,6 +37,7 @@ Keep sparing for Muay Thai down to 2 or 3 times a month for safety and quality.
 - [ ] Alternate between skateboard and lanes
 - [ ] Practice and improve on short combinations also alternating and improving on Long combinations
 - [ ] Try tying resistance bands to leg practice kicks to improve speed.
+- [ ] Keep sparing for Muay Thai down to 2 or 3 times a month for safety and quality.  
 - [ ] Direct at punches at forehead 
 - [ ] Hold on in place and wait while you're moving to throw a strike sooner than later instead of pulling back and having to work to time a counter.
 - [ ] Use Philly shell in Muay Thai for fainting and baiting your opponent to throw things and also maybe getting into a clinch.
