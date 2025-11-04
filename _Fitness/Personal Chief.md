@@ -59,6 +59,8 @@ Saute zucchini in oil
 
 If frying sauteing potatoes boiled in partially or steam them then do the frying / sauteing
 
+Limit potatoes they tend to be more filling
+
 freeze chili also maybe exclude beans to avoid messing up stomach to eat it more make meal prep easier
 
 

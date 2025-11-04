@@ -81,7 +81,7 @@ Maybe deadlift with landmine 7 height for kneeling arm row.
 
 #### **Regular sets**
 8. **[Side rear Delt Fly](https://youtu.be/P81mH8n68h4?si=eGoGz-v2JIxxjTfB)** 
-9. **Deadlift** || **Sled Push/Pull** || **Clean & Jerk Press** 📈
+9. **Deadlift** || **Sled Push/Pull** || **Clean & Jerk Press** - 45lb || 35lb || 20lb 📈
 
 ### Sunday 
 #### **Antagonistic super-sets**

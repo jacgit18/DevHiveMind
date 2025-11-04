@@ -8,6 +8,7 @@ kanban-plugin: board
 
 - [ ] [[Personal Hands]]
 - [ ] [[Personal Trainer]]
+- [ ] Think in multiple drafts quality comes in time
 - [ ] I rob banks first TD, now Capital One who is next 👀
 - [ ] Imagine being a senoir software engineer and using other people work copy first create later
 - [ ] Be smart about buying time and pay the price more for things that matter and have an unavoidable cost

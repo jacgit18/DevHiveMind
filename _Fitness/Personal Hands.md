@@ -32,6 +32,7 @@ Keep sparing for Muay Thai down to 2 or 3 times a month for safety and quality.
 
 #todo/BAU/MMA/Drill 
 - [ ] Work on close range 
+- [ ] Uppercut the side of the body of the extended arm following it as it retracts.
 - [ ] Alternate between skateboard and lanes
 - [ ] Practice and improve on short combinations also alternating and improving on Long combinations
 - [ ] Try tying resistance bands to leg practice kicks to improve speed.
