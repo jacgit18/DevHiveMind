@@ -67,3 +67,74 @@ Instructions:
 8. Cool and Serve: Let the cornbread cool in the skillet for at least 10-15 minutes before slicing and serving. It's best served warm with a pat of butter and a drizzle of honey.
 
   
+
+## Waffles 
+  
+  
+
+2 large very ripe (black or mostly black) plantains, peeled and mashed (~400g peeled weight) - ~500 calories
+
+1 ½ cups (180g) all-purpose flour - ~655 calories
+
+2 large eggs - ~140 calories
+
+1 cup (240ml) milk (any kind) - ~125 calories
+
+3 tablespoons (42g) melted butter or coconut oil - ~305 calories
+
+2 tablespoons (25g) brown sugar - ~105 calories
+
+1 teaspoon vanilla extract - ~12 calories
+
+1 ½ teaspoons baking powder - ~5 calories
+
+½ teaspoon ground cinnamon - ~3 calories
+
+¼ teaspoon salt - ~0 calories
+
+  
+  
+
+1.5 cups (~360g) mashed, cooked, and cooled sweet potato - ~310 calories
+
+1 ¼ cups (150g) all-purpose flour - ~545 calories
+
+2 large eggs - ~140 calories
+
+¾ cup (180ml) milk (any kind) - ~95 calories
+
+3 tablespoons (42g) melted butter or coconut oil - ~305 calories
+
+2 tablespoons (30ml) pure maple syrup or honey - ~100 calories
+
+1 teaspoon vanilla extract - ~12 calories
+
+2 teaspoons baking powder - ~5 calories
+
+1 teaspoon ground cinnamon - ~6 calories
+
+¼ teaspoon ground nutmeg (optional, but recommended) - ~3 calories
+
+¼ teaspoon salt - ~0 calories
+
+  
+
+  
+
+¾ cup (105g) fine or medium-grind cornmeal - ~365 calories
+
+¾ cup (90g) all-purpose flour - ~327 calories
+
+1 tablespoon baking powder - ~15 calories
+
+1 tablespoon granulated sugar (optional, for a hint of sweetness) - ~45 calories
+
+½ teaspoon salt - ~0 calories
+
+1 ¼ cups (300ml) buttermilk (or 1 cup milk + 1 tbsp vinegar, let sit 5 mins) - ~150 calories
+
+2 large eggs - ~140 calories
+
+¼ cup (56g) butter, melted and slightly cooled - ~200 calories
+
+2 tablespoons (30ml) vegetable oil (for extra crispiness) - ~240 calories

@@ -35,6 +35,8 @@ dg-publish:
 
 Bag work for 7 songs
 
+Functional strength adds rotation to exercises or exercise selection in terms of picking exercises with rotation in them
+
 Don't need to alternate as much for between hypertrophy reps for Antagonistic super-sets since following song duration 
 
 Alternate weight ratios so one day heavier on landmine next day heavier on dumbbells and lighter on landline for super-sets.

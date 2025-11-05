@@ -25,6 +25,8 @@ Thursday or Friday rest day if multiple rest days 1 from each phase section. Als
 #todo/BAU/Workout 
 - [ ] Finalize, refine, reduce, and prioritize exercises in [[Plyometrics]] program
 - [ ] Add in [Good Morning](https://youtu.be/nWyx81AfTos?si=ReJqMdB_wh9t4yRs) after improving back extension and RDL
+- [ ] Eventually switch to sand bags from DB
+- [ ] Try Camberbered bar chest press
 
 
 #### Schedule for Alternating Variation in Exercises
