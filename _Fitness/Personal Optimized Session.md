@@ -167,63 +167,63 @@ have at least one free form day like this  every week since following this new p
 
 | Body  | Exercise(Unilateral/Bilateral)                 | One Rep Max | Strength | Hypertrophy | Explosive |
 | ----- | ---------------------------------------------- | ----------- | -------- | ----------- | --------- |
-| Arm   | Scarecrow                                      |             |          |             |           |
-| Arm   | V Raise                                        |             |          |             |           |
-| Arm   | Lateral Head Unilateral Tricep Ext             |             | 17       |             |           |
-| Arm   | Unilateral Behind the Back Cable Lateral Raise |             | 13       |             |           |
-| Arm   | Side Rear Delt Fly                             |             | 50       |             |           |
-| Arm   | DB Overhead Tricep Extension                   |             | 20       |             |           |
-| Arm   | Lat Pull Down                                  | 200/100     | 160/80   | 100/50      | 25        |
-| Arm   | Super ROM(2x8)                                 | n/a         | 10       | 5           | 5         |
-| Arm   | Zottman Curl                                   | 20          | 20       | 15          | n/a       |
-| Arm   | Narrow/Neutral Pull Up                         |             |          |             |           |
+| Arms  | Arnold Press                                   | 30          | 30       | 15          | 15        |
 | Arm   | Bayesian Cable Curl                            |             |          |             |           |
-| Arm   | Incline Bench Preacher Curl                    |             |          |             |           |
+| Arm   | Cable Pec Minor/Chest - Fly                    |             |          |             |           |
+| Arms  | Cable RDL                                      |             |          |             |           |
+| Arm   | Chin Up                                        |             |          |             |           |
+| Arm   | Narrow/Neutral Pull Up                         |             |          |             |           |
+| Arm   | DB Cross Body Fly                              |             |          |             |           |
+| Arm   | DB Overhead Tricep Extension                   |             | 20       |             |           |
 | Arm   | Front Preacher Bench Reverse Curl              |             |          |             |           |
+| Arm   | Incline Bench Preacher Curl                    |             |          |             |           |
+| Arm   | Lateral Head Unilateral Tricep Ext             |             | 17       |             |           |
+| Arm   | Lat Pull Down                                  | 200/100     | 160/80   | 100/50      | 25        |
+| Arm   | Scarecrow                                      | n/a         |          |             |           |
+| Arm   | Side Rear Delt Fly                             |             | 50       |             |           |
 | Arm   | Kneeling Arm Row                               |             | 30       |             |           |
 | Arm   | Standing Arm Row                               |             | 50       |             |           |
-| Arm   | Cable Pec Minor/Chest - Fly                    |             |          |             |           |
-| Arm   | Chin Up                                        |             |          |             |           |
-| Arm   | DB Cross Body Fly                              |             |          |             |           |
-| Arms  | Arnold Press                                   | 30          | 30       | 15          | 15        |
-| Arms  | Cable RDL                                      |             |          |             |           |
+| Arm   | Super ROM(2x8)                                 | n/a         | 10       | 5           | 5         |
+| Arm   | V Raise                                        | n/a         |          |             |           |
+| Arm   | Unilateral Behind the Back Cable Lateral Raise |             | 13       |             |           |
+| Arm   | Zottman Curl                                   | 20          | 20       | 15          | n/a       |
 | Back  | Back Extension                                 | n/a         | 10/5     | 10/5        | n/a       |
 | Chest | Camberbered Bench Press                        |             |          |             |           |
 | Chest | Dumbbell Chest Press                           | 30          | 25       | 20          | 15        |
 | Chest | Seated Wide Dip                                | 165         | 145      | 100         | 80        |
-| Core  | Hanging Knee Raise                             |             |          |             |           |
-| Core  | PallofPress                                    |             | 20       |             |           |
-| Core  | Kneeling Cable Crunch                          |             | 50       |             |           |
-| Core  | Bench Reverse Crunch                           |             |          |             |           |
-| Core  | Dragon Flag                                    |             |          |             |           |
-| Core  | Cable Assisted Pancake                         |             |          |             |           |
 | Core  | Ab Roller                                      |             |          |             |           |
-| Leg   | KB Leg Raise                                   |             | 20       |             |           |
-| Leg   | DB/Trap Bar Squat Jump                         |             | 25       |             |           |
-| Leg   | Pistol Hack Squat                              |             | 25       |             |           |
-| Leg   | Leg Press                                      | 500/300     | 300/270  | 180/90      | 90        |
-| Leg   | Prone Leg Curl                                 | 90/50       | 80/30    | 50/20       | 20        |
+| Core  | Bench Reverse Crunch                           | n/a         |          |             |           |
+| Core  | Cable Assisted Pancake                         |             |          |             |           |
+| Core  | Dragon Flag                                    | n/a         |          |             |           |
+| Core  | Hanging Knee Raise                             | n/a         |          |             |           |
+| Core  | Kneeling Cable Crunch                          |             | 50       |             |           |
+| Core  | PallofPress                                    |             | 20       |             |           |
+| Leg   | Cable Hip Extension                            |             |          |             |           |
 | Leg   | Cable Kickback                                 |             |          |             |           |
-| Leg   | Inner Thigh Abduction(90 widest)               |             | 120      |             |           |
-| Leg   | Outer Thigh Adduction                          |             | 130      |             |           |
 | Leg   | Cable Side Kicks                               |             |          |             |           |
 | Leg   | DB Bulgarian Split Squat                       |             | 25       |             |           |
-| Leg   | Cable Hip Extension                            |             |          |             |           |
-| Multi | KB RDL                                         |             |          |             |           |
-| Multi | Roman Chair Hip Abduction                      |             |          |             |           |
-| Multi | Side Lateral QL Extension                      |             |          |             |           |
-| Multi | Farmer Carry                                   |             | 30       |             |           |
-| Multi | Suitcase Bottom Ups                            |             | 20       |             |           |
-| Multi | Suitcase                                       |             | 30       |             |           |
-| Multi | Hip Thrust                                     |             | 145      |             |           |
+| Leg   | DB/Trap Bar Squat Jump                         |             | 25       |             |           |
+| Leg   | KB Leg Raise                                   |             | 20       |             |           |
+| Leg   | Leg Press                                      | 500/300     | 300/270  | 180/90      | 90        |
+| Leg   | Inner Thigh Abduction(90 widest)               |             | 120      |             |           |
+| Leg   | Outer Thigh Adduction                          |             | 130      |             |           |
+| Leg   | Pistol Hack Squat                              |             | 25       |             |           |
+| Leg   | Prone Leg Curl                                 | 90/50       | 80/30    | 50/20       | 20        |
+| Multi | Cable Woodchopper                              |             |          |             |           |
 | Multi | Clean Jerk Press(2x8)                          |             | 10       |             |           |
 | Multi | Deadlift                                       |             | 45       |             |           |
+| Multi | Farmer Carry                                   |             | 30       |             |           |
 | Multi | Halo                                           |             | 20       |             |           |
+| Multi | Hip Thrust                                     |             | 145      |             |           |
+| Multi | KB RDL                                         |             | 20       |             |           |
+| Multi | Landmine Twist                                 |             | 25       |             |           |
+| Multi | Side Lateral QL Extension                      | n/a         |          |             |           |
 | Multi | Sled Push to Alternating Lateral Pull          |             | 35       |             |           |
 | Multi | Sled Push to Pull                              |             | 35       |             |           |
-| Multi | Landmine Twist                                 |             | 25       |             |           |
+| Multi | Suitcase Bottom Ups                            |             | 20       |             |           |
+| Multi | Suitcase                                       |             | 30       |             |           |
+| Multi | Roman Chair Hip Abduction                      |             |          |             |           |
 | Multi | Walking Barbell Zercher Lunge                  |             |          |             |           |
-| Multi | Cable Woodchopper                              |             |          |             |           |
 
 
 
