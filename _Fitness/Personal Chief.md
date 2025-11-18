@@ -181,6 +181,7 @@ Limit seasoning to 3 spices if experimenting with flavors or use premade spice/s
 	- **1/2 teaspoon black pepper** (adjust to taste)
 	- **2-3 tablespoons olive oil** (or your preferred cooking oil, like vegetable or coconut oil)
 - Use for marinade for meat, stews, rice and beans, egg, vegetables,  
+- 2 cubes of this seasoning for rice
 
 - Basil + olive oil packs
     

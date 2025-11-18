@@ -95,5 +95,19 @@ You’ll need **~1,100 more calories/day** to reach your target (likely through 
 
 1100 cal more in the day
 
-- Sandwich(bread 200 cal) PB(190) 390
-- Eggs 210 cal 
+
+
+
+
+
+390 mix tuna + 160 cal oil if mayonnaise included average out roughly guesstimation
+
+200 cal bread
+
+750
+
+
+
+- Sandwich(bread 200 cal) PB(190) 390 cal 10 days
+- Eggs 210 cal 3 eggs one pack 4 days
+- Rice pudding 120 cal 4 packs a month 20 days
