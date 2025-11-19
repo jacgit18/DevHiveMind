@@ -142,7 +142,6 @@ Anything not on this list is most likely a bad excercise or not worth doing base
 
 - [***Barbell Clean Jerk Press*** ](https://www.youtube.com/watch?v=8IYt7AtP8BI) - 20lb/20lb/20lb
 - **[Base Rows](https://youtu.be/Qmw9TKnQ9NY?si=gNe_2K45P71UKz5y)** - 10lb/20lb/30lb
-- **[KB Around the World](https://www.youtube.com/watch?v=N4mMVG8S5Kg)** - 20lb/20lb/20lb
 - **[Hanging Knee Raise](https://youtu.be/RD_A-Z15ER4?si=BT3gkNFch2bOdEvx)** - bodyweight
 - ***Sled***(try rope pull variation on explosive week) - 20lb/50lb/70lb 
 	- **[Crossover Step Lateral Sled Drag](https://youtu.be/rGtYmX2aeAA?si=PnniyFsIluLeViKa)** 
