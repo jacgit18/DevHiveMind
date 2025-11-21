@@ -172,12 +172,12 @@ have at least one free form day like this  every week since following this new p
 | Arm   | Cable Pec Minor                                  | 30/30       | 20/20    | 15/15       | 15/15     | N/A              |
 | Arm   | Chest - Fly                                      | 100/80      | 80/80    | 60/60       | 40/40     | N/A              |
 | Arms  | Cable RDL                                        | 20/20       | 20/20    | 20/20       | 10/10     | N/A              |
-| Arm   | *Chin Up*                                        |             |          |             |           | N/A              |
-| Arm   | *Narrow/Neutral Pull Up*                         |             |          |             |           | N/A              |
-| Arm   | DB Cross Body Fly                                |             |          |             |           | N/A              |
-| Arm   | DB Overhead Tricep Extension                     |             | 20/20    |             |           | N/A              |
-| Arm   | Front Preacher Bench Reverse Curl                |             |          |             |           | N/A              |
-| Arm   | Incline Bench Preacher Curl                      |             |          |             |           | N/A              |
+| Arm   | *Chin Up*                                        | 10/10       | 10/10    | 10/10       | 10/10     | N/A              |
+| Arm   | *Narrow/Neutral Pull Up*                         | 10/10       | 10/10    | 10/10       | 10/10     | N/A              |
+| Arm   | DB Cross Body Fly                                | 30/30       | 20/20    | 20/20       | N/A       | N/A              |
+| Arm   | DB Overhead Tricep Extension                     | 30/30       | 20/20    | 20/20       | N/A       | N/A              |
+| Arm   | Front Preacher Bench Reverse Curl                | 30/30       | 20/20    | 20/20       | N/A       | N/A              |
+| Arm   | Incline Bench Preacher Curl                      | 30/30       | 20/20    | 20/20       | N/A       | N/A              |
 | Arm   | *Lateral Head Unilateral Tricep Ext*             | 17/17       | 17/17    | 17/17       | 17/17     | N/A              |
 | Arm   | *Lat Pull Down*                                  | 200/100     | 160/80   | 100/50      | 25/25     | N/A              |
 | Arm   | Scarecrow                                        | 20/20       | 20/20    | 20/20       | 20/20     | N/A              |
@@ -194,38 +194,38 @@ have at least one free form day like this  every week since following this new p
 | Chest | *Seated Wide Dip/Body Wide Dip*                  | 165/165     | 145/145  | 100/100     | 80/80     | N/A              |
 | Core  | Ab Roller                                        | N/A         | N/A      | N/A         | N/A       | N/A              |
 | Core  | *Bench Reverse Crunch*                           | N/A         | N/A      | N/A         | N/A       | N/A              |
-| Core  | Cable Assisted Pancake                           |             |          |             |           | N/A              |
+| Core  | Cable Assisted Pancake                           | 60/60       | 50/50    | 30/30       | N/A       | N/A              |
 | Core  | *Dragon Flag*                                    | N/A         | N/A      | N/A         | N/A       | N/A              |
 | Core  | *Hanging Knee Raise*                             | N/A         | N/A      | N/A         | N/A       | N/A              |
 | Core  | *Kneeling Cable Crunch*                          | 70/70       | 50/50    | 30/30       | 30/30     | N/A              |
-| Core  | *PallofPress*                                    |             | 20/20    |             |           | N/A              |
-| Leg   | Cable Hip Extension                              |             |          |             |           | N/A              |
-| Leg   | Cable Kickback                                   |             |          |             |           | N/A              |
-| Leg   | Cable Side Kicks                                 |             |          |             |           | N/A              |
-| Leg   | *DB Bulgarian Split Squat*                       |             | 25/25    |             |           | N/A              |
-| Leg   | DB/Trap Bar Squat Jump                           |             | 25/25    |             |           | ***2x8***        |
-| Leg   | *KB Leg Raise*                                   |             | 20/20    |             |           | N/A              |
+| Core  | *PallofPress*                                    | 30/30       | 20/20    | 15/15       | 15/15     | N/A              |
+| Leg   | Cable Hip Extension                              | 60/60       | 50/50    | 30/30       | 15/15     | N/A              |
+| Leg   | Cable Kickback                                   | 30/30       | 20/20    | 15/15       | 15/15     | N/A              |
+| Leg   | Cable Side Kicks                                 | 30/30       | 20/20    | 15/15       | 15/15     | N/A              |
+| Leg   | *DB Bulgarian Split Squat*                       | 40/40       | 25/25    | 20/20       | 15/15     | N/A              |
+| Leg   | DB/Trap Bar Squat Jump                           | 35/35       | 25/25    | 20/20       | 15/15     | ***2x8***        |
+| Leg   | *KB Leg Raise*                                   | 30/30       | 20/20    | 15/15       | 15/15     | N/A              |
 | Leg   | Leg Press                                        | 500/300     | 300/270  | 180/90      | 90/90     | N/A              |
-| Leg   | *Inner Thigh Abduction*(90 widest)               |             | 120/120  |             |           | N/A              |
-| Leg   | *Outer Thigh Adduction*                          |             | 130/130  |             |           | N/A              |
-| Leg   | *Pistol Hack Squat*                              |             | 25/25    |             |           | N/A              |
+| Leg   | *Inner Thigh Abduction*(90 widest)               | 140/140     | 120/120  | 70/70       | 50/50     | N/A              |
+| Leg   | *Outer Thigh Adduction*                          | 150/150     | 130/130  | 80/80       | 60/60     | N/A              |
+| Leg   | *Pistol Hack Squat*                              | 30/30       | 25/25    | 15/15       | 10/10     | N/A              |
 | Leg   | *Prone Leg Curl*                                 | 90/50       | 80/30    | 50/20       | 20/20     | N/A              |
-| Multi | Cable Woodchopper                                |             |          |             |           | N/A              |
-| Multi | Clean Jerk Press                                 |             | 10/10    |             |           | ***2x8***        |
-| Multi | *Deadlift*                                       |             | 45/45    |             |           | N/A              |
-| Multi | *Farmer Carry*                                   |             | 30/30    |             |           | N/A              |
-| Multi | *Halo*                                           | 40/40       | 20/20    |             |           | ***1x8***        |
-| Multi | *Hip Thrust*                                     | 180/180     | 145/145  |             |           | N/A              |
-| Multi | KB RDL                                           |             | 20       |             |           | N/A              |
-| Multi | *Landmine Twist*                                 |             | 25       |             |           | N/A              |
-| Multi | Side Lateral QL Extension                        | 25/25       | 10/10    |             |           | N/A              |
-| Multi | *Sled Push to Alternating Lateral Pull*          |             | 35       |             |           | 1/2 of ***1x8*** |
-| Multi | *Sled Push to Pull*                              |             | 35       |             |           | 1/2 of ***1x8*** |
-| Multi | *Suitcase Bottom Ups*                            |             | 20       |             |           | 1/2 of ***1x8*** |
+| Multi | Cable Woodchopper                                | 30/30       | 20/20    | 15/15       | 15/15     | N/A              |
+| Multi | Clean Jerk Press                                 | 20/20       | 10/10    | 10/10       | 10/10     | ***2x8***        |
+| Multi | *Deadlift*                                       | 55/55       | 45/45    | 25/25       | 20/20     | N/A              |
+| Multi | *Farmer Carry*                                   | 40/40       | 30/30    | 20/20       | N/A       | N/A              |
+| Multi | *Halo*                                           | 40/40       | 20/20    | 20/20       | N/A       | ***1x8***        |
+| Multi | *Hip Thrust*                                     | 180/180     | 145/145  | 100/100     | 70/70     | N/A              |
+| Multi | KB RDL                                           | 30/30       | 20/20    | 15/15       | 10/10     | N/A              |
+| Multi | *Landmine Twist*                                 | 45/45       | 25/25    | 10/10       | 10/10     | N/A              |
+| Multi | Side Lateral QL Extension                        | 25/25       | 10/10    | 10/10       | 10/10     | N/A              |
+| Multi | *Sled Push to Alternating Lateral Pull*          | 50/50       | 35/35    | 25/25       | 10/10     | 1/2 of ***1x8*** |
+| Multi | *Sled Push to Pull*                              | 50/50       | 35/35    | 25/25       | 10/10     | 1/2 of ***1x8*** |
+| Multi | *Suitcase Bottom Ups*                            | 30/30       | 20/20    | 15/15       | N/A       | 1/2 of ***1x8*** |
 | Multi | Super ROM                                        | N/A         | 10/10    | 5/5         | 5/5       | ***2x8***        |
-| Multi | Suitcase                                         |             | 30       |             |           | 1/2 of ***1x8*** |
-| Multi | Roman Chair Hip Abduction                        |             |          |             |           | N/A              |
-| Multi | Walking Barbell Zercher Lunge                    |             |          |             |           | 1/2 of ***1x8*** |
+| Multi | Suitcase                                         | 40/40       | 30/30    | 20/20       | N/A       | 1/2 of ***1x8*** |
+| Multi | Roman Chair Hip Abduction                        | 10/10       | 10/10    | 10/10       | N/A       | N/A              |
+| Multi | Walking Barbell Zercher Lunge                    | 40/40       | 20/20    | 20/20       | 20/20     | 1/2 of ***1x8*** |
 
 
 
