@@ -20,10 +20,10 @@ dg-publish:
 ---
 ![[ChatGPT Image Jul 3, 2025, 04_58_45 PM.png]]
 # Session Breakdown 
-Thursday or Friday rest day if multiple rest days 1 from each phase section. Also for antagonistic sets hypertrophy follow 10x3 song long, strength follows 8x8, and explosive follow 3x6 for non antagonistic super set compound lifts modify sets hypertrophy follow 10x1 song long, strength follows 4x8, and explosive follow 3x4
+Thursday or Friday rest day if multiple rest days 1 from each phase section. Also for antagonistic sets hypertrophy follow 10x6 song long, strength follows 8x8, and explosive follow 6x5. For non antagonistic super set compound lifts modify sets hypertrophy follow 10x1 song long, strength follows 4x8, and explosive follow 3x4
 
 #todo/BAU/Workout 
-- [ ] Finalize, refine, reduce, and prioritize exercises in [[Plyometrics]] program
+- [ ] Finalize, refine, reduce, and prioritize exercises in [[Plyometrics]] and Stability program 
 - [ ] Add in [Good Morning](https://youtu.be/nWyx81AfTos?si=ReJqMdB_wh9t4yRs) after improving back extension and RDL
 - [ ] Eventually switch to sand bags from DB
 - [ ] Use one set of halo's each direction, and kettlebell leg raises at lighter weight for exercises with out super sets.  
@@ -42,7 +42,7 @@ Alternate each month keeping the week training phase in to account the weights f
 1. ***Airdyne Bike || Row Machine || Sprint || Jump Rope || Run || Shadow Boxing*** ✅ 
 2. **[[Dynamic Stretching]]** ✅ 
 3. **Mobility**: ROM 2x8 each excercise(3 excercise for each month) ✅ 
-4. **Stability**: *TRX/SwissBall Training* - focus on one a month or something
+4. **Stability**: *TRX/SwissBall Training* - focus on one a month or something when cycling into program
 	1. [TRX Burpee Level 3](https://www.youtube.com/watch?v=C_rKVEucJak)
 	2. [TRX Assisted Pistol Squat](https://www.youtube.com/watch?v=HqCHXb91yMQ) 
 	3. [TRX Push Up](https://youtu.be/jk4MGqOmjn4?si=lzlBdn4390KOOyNg)/TRX Suspended Pushup(harder)
@@ -182,8 +182,8 @@ have at least one free form day like this  every week since following this new p
 | *Lat Pull Down*                                  | 200/100     | 160/80   | 100/50      | 25/25     | Arm   | N/A              |
 | Scarecrow                                        | 20/20       | 20/20    | 20/20       | 20/20     | Arm   | N/A              |
 | *Side Rear Delt Fly*                             | 70/70       | 60/60    | 40/40       | 20/20     | Arm   | N/A              |
-| Kneeling Arm Row                                 | 50/50       | 30/30    | 20/20       | 10/10     | Arm   | N/A              |
-| Standing Arm Row                                 | 60/60       | 50/50    | 20/20       | 10/10     | Arm   | N/A              |
+| *Kneeling Arm Row*                               | 50/50       | 30/30    | 20/20       | 10/10     | Arm   | N/A              |
+| *Standing Arm Row*                               | 60/60       | 50/50    | 20/20       | 10/10     | Arm   | N/A              |
 | V Raise                                          | 20/20       | 20/20    | 20/20       | 20/20     | Arm   | N/A              |
 | *Unilateral Behind the Back Cable Lateral Raise* | 20/20       | 13/13    | 13/13       | 10/10     | Arm   | N/A              |
 | *Zottman Curl*                                   | 20/20       | 20/20    | 15/15       | N/A       | Arm   | N/A              |
