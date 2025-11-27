@@ -4,6 +4,8 @@ Eat bigger meals instead of multiple frequent meal to slow down metabolism
 
 Second cook day during work week cook full meal in day instead of just protein and stuff after
 
+Vaccum seal cooked chicken breast when you dont feel like eating all back to back
+
 ## 1. Budget Gate
 
 - **Food Cap:** $600/month.
