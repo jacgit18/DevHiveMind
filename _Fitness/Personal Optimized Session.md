@@ -28,21 +28,24 @@ Thursday or Friday rest day if multiple rest days 1 from each phase section. Als
 - [ ] Eventually switch to sand bags from DB
 - [ ] Use one set of halo's each direction, and kettlebell leg raises at lighter weight for exercises with out super sets.  
 - [ ] Barbell or chest press fixed for explosive phase training
+- [ ] Do Standing arm rows for strength and Kneeling for hypertrophy
+- [ ] Maybe deadlift with landmine
+- [ ] Maybe **Trap Bar/DB Squat Jump** to sled push
 
 
 #### Schedule for Alternating Variation in Exercises
 Alternate each month keeping the week training phase in to account the weights follow like this when alternating phase in session **explosive** to **hypertrophy** | **explosive** to **strength** | **strength** to **hypertrophy** also weights follow ***explosive/hypertrophy/strength***.
 
 
-| Month           | Back Extension                                                                                                         | ROM                                                        | Walk                            | Leg ROM                                        | Upper Body                      |                                                                     | Leg Focus                | Sled                             |
-| --------------- | ---------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------- | ------------------------------- | ---------------------------------------------- | ------------------------------- | ------------------------------------------------------------------- | ------------------------ | -------------------------------- |
-| 1 (Odd months)  | Unilateral back ext 2x8 with 5 sec ISO & [Roman Chair Hip Abduction](https://youtu.be/j5HWZOfIePI?si=EsYf8Gg0rFO16y-p) | Super ROM + [Scarecrow](https://youtu.be/qzNQ3_TQHDs)      | Suitcase Bottom Ups or Suitcase | [[Personal Trainer#Cable Day \|Cable Leg day]] | Unilateral Arm(were it applies) | -ChinUp   -Kneeling arm row  - Behind the Back Raise                | Unilateral-leg variation | Push to Lateral(left/right) Pull |
-| 2 (Even months) | Bilateral Back ext 4x8 with 10 sec ISO & [Side Lateral QL Extension](https://youtu.be/UaydER2VIUc?si=wkQxbIqiz7lJQF_7) | Super ROM + [V Raise](https://youtu.be/5WBdE0TSoUQ)(cross) | Banded Farmer or Farmer Carry   | Non Cable leg day                              | Bilateral Arm                   | -Narrow PullUp     -Standing arm row  - Unilateral Tricep Extension | Bilateral variation      | Push to Pull                     |
+| Month           | Back Extension                                                                                                         | ROM                                                        | Walk                            | Leg ROM                                        | Upper Body                      |                                                                              | Leg Focus                | Sled                             |
+| --------------- | ---------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------- | ------------------------------- | ---------------------------------------------- | ------------------------------- | ---------------------------------------------------------------------------- | ------------------------ | -------------------------------- |
+| 1 (Odd months)  | Unilateral back ext 2x8 with 5 sec ISO & [Roman Chair Hip Abduction](https://youtu.be/j5HWZOfIePI?si=EsYf8Gg0rFO16y-p) | Super ROM + [Scarecrow](https://youtu.be/qzNQ3_TQHDs)      | Suitcase Bottom Ups or Suitcase | [[Personal Trainer#Cable Day \|Cable Leg day]] | Unilateral Arm(were it applies) | -ChinUp   -Kneeling arm row  - Behind the Back Raise                         | Unilateral-leg variation | Push to Lateral(left/right) Pull |
+| 2 (Even months) | Bilateral Back ext 4x8 with 10 sec ISO & [Side Lateral QL Extension](https://youtu.be/UaydER2VIUc?si=wkQxbIqiz7lJQF_7) | Super ROM + [V Raise](https://youtu.be/5WBdE0TSoUQ)(cross) | Banded Farmer or Farmer Carry   | Non Cable leg day                              | Bilateral Arm                   | -Narrow PullUp     -Standing arm row  - Unilateral Overhead Tricep Extension | Bilateral variation      | Push to Pull                     |
 
 
 1. ***Airdyne Bike || Row Machine || Sprint || Jump Rope || Run || Shadow Boxing*** ✅ 
 2. **[[Dynamic Stretching]]** ✅ 
-3. **Mobility**: ROM 2x8 each excercise(3 excercise for each month) ✅ 
+3. **Mobility**: ROM 10 reps each excercise(2 excercise for each month) ✅ 
 4. **Stability**: *TRX/SwissBall Training* - focus on one a month or something when cycling into program
 	1. [TRX Burpee Level 3](https://www.youtube.com/watch?v=C_rKVEucJak)
 	2. [TRX Assisted Pistol Squat](https://www.youtube.com/watch?v=HqCHXb91yMQ) 
@@ -64,8 +67,7 @@ Alternate each month keeping the week training phase in to account the weights f
 7. At Home [[Personal Optimized Session#[O2 Trainer Routine](https //www.youtube.com/watch?v=-Es3HOd0PT8&list=PL8NG4An03Sa_ZvEIyHFojC65BhMV08qr1&index=5)|O2 Trainer]] 
 
 ## Hypertrophy
-Do Standing arm rows for strength and Kneeling for hypertrophy
-Maybe deadlift with landmine 7 height for kneeling arm row.
+
 ### Friday  - Meal Prep Day 1
 #### **Antagonistic super-sets**
 1. **Prone Leg Curl** to **DB Bulgarian Split Squat** || Walking Barbell Zercher Lunge 
@@ -83,7 +85,7 @@ Maybe deadlift with landmine 7 height for kneeling arm row.
 
 #### **Antagonistic super-sets**
 1. **[Cable Woodchopper](https://www.youtube.com/watch?v=mvvu8imyMFs)**(Low angle) || **[Landmine Twist](https://youtu.be/M93HfnAVIl8?si=7KtnpfDB0GYobD9Z)** to Kettlebell Leg Raise 
-2. **[Behind the Back Lateral Raise](https://www.youtube.com/watch?v=y4Djk_G0yEg)**(Low Angle)  || **[Unilateral Tricep Extension](https://www.youtube.com/watch?v=vVW9LwaahNw)**(High angle) to **Kneeling Cable Crunch** 
+2. **[Behind the Back Lateral Raise](https://www.youtube.com/watch?v=y4Djk_G0yEg)**  || **[Unilateral Cable/DB  Overhead Tricep Extension](https://youtu.be/FE_AsjcTImc?si=gzyVqZ88Yq9KTRiG)**(Low Angle) to **Kneeling Cable Crunch**(High Angle) 
 3. **Pallof Press**(bands/cables) to **[Half Kneeling/Standing Arm Row](https://youtu.be/afE9JabFqR4?si=Q7eXtrCmYCcxOV_T)** 
 
 #### **Regular sets**
@@ -96,7 +98,7 @@ Maybe deadlift with landmine 7 height for kneeling arm row.
 2. **Back Extension** to **Halo** || **[Bayesian Cable Curl](https://youtu.be/4O24gFksZ04?si=poa8Lr-ymzw1-QrR)** || **[Incline Bench Preacher Curl](https://www.youtube.com/watch?v=02TvQZiVdic)/[Reverse Preacher Curl](https://youtu.be/h8LVaKRAFY0?si=ix3lKao_fRA33nqU)** 
 
 #### **Regular sets**
-3. **[Behind the Back Lateral Raise](https://www.youtube.com/watch?v=y4Djk_G0yEg)**(Low Angle)  || **[Unilateral Tricep Extension](https://www.youtube.com/watch?v=vVW9LwaahNw)**(High angle) to **Kneeling Cable Crunch** 
+3. **[Behind the Back Lateral Raise](https://www.youtube.com/watch?v=y4Djk_G0yEg)**  || **[Unilateral Cable/DB  Overhead Tricep Extension](https://youtu.be/FE_AsjcTImc?si=gzyVqZ88Yq9KTRiG)**(Low Angle) to **Kneeling Cable Crunch**(High Angle) 
 4. **[Cable Assisted Pancake](https://youtu.be/xgU1YYHwprQ?si=N0aX9UVVJqDLvvrS)**(Low Angle) 
 5. **Single Arm Lat Pulldown** 
 6. **Inner Thigh Abduction**
@@ -134,7 +136,7 @@ Use Isometric holds for strength week which aids in stability. Do DB switch catc
 
 #### **Antagonistic super-sets**
 1. **[Cable Woodchopper](https://www.youtube.com/watch?v=mvvu8imyMFs)**(Low angle) || **[Landmine Twist](https://youtu.be/M93HfnAVIl8?si=7KtnpfDB0GYobD9Z)** to Kettlebell Leg Raise 
-2. **[Behind the Back Lateral Raise](https://www.youtube.com/watch?v=y4Djk_G0yEg)**(Low Angle)  || **[Unilateral Tricep Extension](https://www.youtube.com/watch?v=vVW9LwaahNw)**(High angle) to **Kneeling Cable Crunch** 
+2. **[Behind the Back Lateral Raise](https://www.youtube.com/watch?v=y4Djk_G0yEg)**  || **[Unilateral Cable/DB  Overhead Tricep Extension](https://youtu.be/FE_AsjcTImc?si=gzyVqZ88Yq9KTRiG)**(Low Angle) to **Kneeling Cable Crunch**(High Angle) 
 3. **Walk**: half distance **farmer/suitcase** to **Arnold press**/plyometric
 4. **Back Extension** to **Halo** ||  **[Bayesian Cable Curl](https://youtu.be/4O24gFksZ04?si=poa8Lr-ymzw1-QrR)** || **[Incline Bench Preacher Curl](https://www.youtube.com/watch?v=02TvQZiVdic)/[Reverse Preacher Curl](https://youtu.be/h8LVaKRAFY0?si=ix3lKao_fRA33nqU)**
 
@@ -147,7 +149,7 @@ Use Isometric holds for strength week which aids in stability. Do DB switch catc
 10. **Deadlift** || **Sled Push/Pull** || **Clean & Jerk Press** 📈
 
 ### Wednesday
-have at least one free form day like this  every week since following this new program structure doesn't need to follow other days and can sprinkle in a little plyometric work here or there don't need to stress it.
+have at least one free form day like this every week since following this new program structure doesn't need to follow other days and can sprinkle in a little plyometric work here or there don't need to stress it.
 
 #### **Antagonistic super-sets**
 1. **[Cable Woodchopper](https://www.youtube.com/watch?v=mvvu8imyMFs)**(Low angle) || **[Landmine Twist](https://youtu.be/M93HfnAVIl8?si=7KtnpfDB0GYobD9Z)** to Kettlebell Leg Raise 
