@@ -33,6 +33,7 @@ With striking and jujitsu i'm navigating uncertainty getting things thrown at me
 
 #todo/BAU/MMA/Drill 
 - [ ] Work on close range 
+- [ ] Establish a rhythm in your movement and commit with fluidity
 - [ ] Uppercut the side of the body of the extended arm following it as it retracts.
 - [ ] Alternate between skateboard and lanes
 - [ ] Practice and improve on short combinations also alternating and improving on Long combinations
