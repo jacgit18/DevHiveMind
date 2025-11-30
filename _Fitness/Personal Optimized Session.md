@@ -31,16 +31,17 @@ Thursday or Friday rest day if multiple rest days 1 from each phase section. Als
 - [ ] Do Standing arm rows for strength and Kneeling for hypertrophy
 - [ ] Maybe deadlift with landmine
 - [ ] Maybe **Trap Bar/DB Squat Jump** to sled push
+- [ ] Eventually add [Rope Flow: Movement](https://youtu.be/ItVf97YhFL4?si=_Bo9m9TxxWgy6au0) and [Mace exercises](https://youtu.be/TdatDbqb8TY?si=QXCZiZTyP676wf32)
 
 
 #### Schedule for Alternating Variation in Exercises
 Alternate each month keeping the week training phase in to account the weights follow like this when alternating phase in session **explosive** to **hypertrophy** | **explosive** to **strength** | **strength** to **hypertrophy** also weights follow ***explosive/hypertrophy/strength***.
 
 
-| Month           | Back Extension                                                                                                         | ROM                                                        | Walk                            | Leg ROM                                        | Upper Body                      |                                                                              | Leg Focus                | Sled                             |
-| --------------- | ---------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------- | ------------------------------- | ---------------------------------------------- | ------------------------------- | ---------------------------------------------------------------------------- | ------------------------ | -------------------------------- |
-| 1 (Odd months)  | Unilateral back ext 2x8 with 5 sec ISO & [Roman Chair Hip Abduction](https://youtu.be/j5HWZOfIePI?si=EsYf8Gg0rFO16y-p) | Super ROM + [Scarecrow](https://youtu.be/qzNQ3_TQHDs)      | Suitcase Bottom Ups or Suitcase | [[Personal Trainer#Cable Day \|Cable Leg day]] | Unilateral Arm(were it applies) | -ChinUp   -Kneeling arm row  - Behind the Back Raise                         | Unilateral-leg variation | Push to Lateral(left/right) Pull |
-| 2 (Even months) | Bilateral Back ext 4x8 with 10 sec ISO & [Side Lateral QL Extension](https://youtu.be/UaydER2VIUc?si=wkQxbIqiz7lJQF_7) | Super ROM + [V Raise](https://youtu.be/5WBdE0TSoUQ)(cross) | Banded Farmer or Farmer Carry   | Non Cable leg day                              | Bilateral Arm                   | -Narrow PullUp     -Standing arm row  - Unilateral Overhead Tricep Extension | Bilateral variation      | Push to Pull                     |
+| Month           | Back Extension                                                                                                         | ROM                                                        | Walk                            | Leg ROM                                                               | Upper Body                      |                                                                              | Leg Focus                | Sled                             |
+| --------------- | ---------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------- | ------------------------------- | --------------------------------------------------------------------- | ------------------------------- | ---------------------------------------------------------------------------- | ------------------------ | -------------------------------- |
+| 1 (Odd months)  | Unilateral back ext 2x8 with 5 sec ISO & [Roman Chair Hip Abduction](https://youtu.be/j5HWZOfIePI?si=EsYf8Gg0rFO16y-p) | Super ROM + [Scarecrow](https://youtu.be/qzNQ3_TQHDs)      | Suitcase Bottom Ups or Suitcase | [[Personal Optimized Session#Cable leg day variation\|Cable Leg day]] | Unilateral Arm(were it applies) | -ChinUp   -Kneeling arm row  - Behind the Back Raise                         | Unilateral-leg variation | Push to Lateral(left/right) Pull |
+| 2 (Even months) | Bilateral Back ext 4x8 with 10 sec ISO & [Side Lateral QL Extension](https://youtu.be/UaydER2VIUc?si=wkQxbIqiz7lJQF_7) | Super ROM + [V Raise](https://youtu.be/5WBdE0TSoUQ)(cross) | Banded Farmer or Farmer Carry   | Non Cable leg day                                                     | Bilateral Arm                   | -Narrow PullUp     -Standing arm row  - Unilateral Overhead Tricep Extension | Bilateral variation      | Push to Pull                     |
 
 
 1. ***Airdyne Bike || Row Machine || Sprint || Jump Rope || Run || Shadow Boxing*** ✅ 
@@ -73,7 +74,7 @@ Alternate each month keeping the week training phase in to account the weights f
 1. **Prone Leg Curl** to **DB Bulgarian Split Squat** || Walking Barbell Zercher Lunge 
 2. **Hip thrust** to **Chest press** 
 3. **Leg press** to **Chest press**(prefer)
-4. **Pistol Hack Squat** to **Zottman Curl**
+4. **[Pistol Hack Squat](https://www.youtube.com/watch?v=w-LKHuNiiTc)** to **Zottman Curl**
 5. **Pallof Press**(bands/cables) to **[Half Kneeling/Standing Arm Row](https://youtu.be/afE9JabFqR4?si=Q7eXtrCmYCcxOV_T)** 
 6. **Wide Tricep Dip** to **[Hanging Knee Raise](https://youtu.be/RD_A-Z15ER4?si=h0fyUA7SXg4vWE2a)** 📈
 #### **Regular sets**
