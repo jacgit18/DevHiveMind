@@ -43,6 +43,7 @@ Alternate each month keeping the week training phase in to account the weights f
 | --------------- | ---------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------- | ------------------------------- | --------------------------------------------------------------------- | ------------------------------- | ---------------------------------------------------------------------------- | ------------------------ | -------------------------------- |
 | 1 (Odd months)  | Unilateral back ext 2x8 with 5 sec ISO & [Roman Chair Hip Abduction](https://youtu.be/j5HWZOfIePI?si=EsYf8Gg0rFO16y-p) | Super ROM + [Scarecrow](https://youtu.be/qzNQ3_TQHDs)      | Suitcase Bottom Ups or Suitcase | [[Personal Optimized Session#Cable leg day variation\|Cable Leg day]] | Unilateral Arm(were it applies) | -ChinUp   -Kneeling arm row  - Behind the Back Raise                         | Unilateral-leg variation | Push to Lateral(left/right) Pull |
 | 2 (Even months) | Bilateral Back ext 4x8 with 10 sec ISO & [Side Lateral QL Extension](https://youtu.be/UaydER2VIUc?si=wkQxbIqiz7lJQF_7) | Super ROM + [V Raise](https://youtu.be/5WBdE0TSoUQ)(cross) | Banded Farmer or Farmer Carry   | Non Cable leg day                                                     | Bilateral Arm                   | -Narrow PullUp     -Standing arm row  - Unilateral Overhead Tricep Extension | Bilateral variation      | Push to Pull                     |
+|                 |                                                                                                                        | DB switch catch instead for explosive week                 |                                 |                                                                       |                                 |                                                                              |                          |                                  |
 
 
 1. ***Airdyne Bike || Row Machine || Sprint || Jump Rope || Run || Shadow Boxing*** ✅ 
@@ -129,7 +130,7 @@ Use Isometric holds for strength week which aids in stability. Do DB switch catc
 1. **Back Extension**
 2. **[Cable Hip Extension](https://www.youtube.com/watch?v=Fr6fdKPdyfM)** 
 3. **[Cable Side Kicks](https://www.youtube.com/watch?v=jYuN92LGzpA)** 
-4. **[Cable Kickback](https://www.youtube.com/watch?v=SqO-VUEak2M)
+4. **[Cable Kickback](https://www.youtube.com/watch?v=SqO-VUEak2M)**
 5. **Sled Push/Pull**  to **Deadlift** || **Trap Bar/DB Squat Jump** 📈
 6. **[Cable](https://youtu.be/2M1Mikqf5lY?si=sIX0t_7UkiioAffp)** || **[Kettlebell](https://youtu.be/SuNgD0x2U6U?si=0oE-W6Zv_5pABcMv)** - Unilateral RDL 📈
 
