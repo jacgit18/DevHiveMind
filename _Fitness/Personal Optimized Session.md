@@ -26,12 +26,13 @@ Thursday or Friday rest day if multiple rest days 1 from each phase section. Als
 - [ ] Finalize, refine, reduce, and prioritize exercises in [[Plyometrics]] and Stability program 
 - [ ] Add in [Good Morning](https://youtu.be/nWyx81AfTos?si=ReJqMdB_wh9t4yRs) after improving back extension and RDL
 - [ ] Eventually switch to sand bags from DB
-- [ ] Use one set of halo's each direction, and kettlebell leg raises at lighter weight for exercises with out super sets.  
 - [ ] Barbell or chest press fixed for explosive phase training
 - [ ] Do Standing arm rows for strength and Kneeling for hypertrophy
 - [ ] Maybe deadlift with landmine
-- [ ] Maybe **Trap Bar/DB Squat Jump** to sled push
+- [ ] Squat on Toes  for upper body regular set exercises 
+- [ ] Use one set of halo's each direction, and kettlebell leg raises at lighter weight for exercises with out super sets.  
 - [ ] Eventually add [Rope Flow: Movement](https://youtu.be/ItVf97YhFL4?si=_Bo9m9TxxWgy6au0) and [Mace exercises](https://youtu.be/TdatDbqb8TY?si=QXCZiZTyP676wf32)
+- [ ] Learn [How to Jump Rope (Beginner to Expert) - YouTube](https://youtu.be/wqN5bRkZPK0?si=zxXLzzBXywde4piE)
 
 
 #### Schedule for Alternating Variation in Exercises
@@ -71,35 +72,35 @@ Alternate each month keeping the week training phase in to account the weights f
 
 ### Friday  - Meal Prep Day 1
 #### **Antagonistic super-sets**
-1. **Prone Leg Curl** to **DB Bulgarian Split Squat** || Walking Barbell Zercher Lunge 
+1. **Prone Leg Curl** to **DB Bulgarian Split Squat** 
 2. **Hip thrust** to **Chest press** 
-3. **Leg press** to **Chest press**(prefer)
-4. **[Pistol Hack Squat](https://www.youtube.com/watch?v=w-LKHuNiiTc)** to **Zottman Curl**
-5. **Pallof Press**(bands/cables) to **[Half Kneeling/Standing Arm Row](https://youtu.be/afE9JabFqR4?si=Q7eXtrCmYCcxOV_T)** 
-6. **Wide Tricep Dip** to **[Hanging Knee Raise](https://youtu.be/RD_A-Z15ER4?si=h0fyUA7SXg4vWE2a)** 📈
+3. **Leg press** to **Chest press** || **[Pistol Hack Squat](https://www.youtube.com/watch?v=w-LKHuNiiTc)** to **Zottman Curl**
+4. **Pallof Press**(bands/cables) to **[Half Kneeling/Standing Arm Row](https://youtu.be/afE9JabFqR4?si=Q7eXtrCmYCcxOV_T)** 
+5. **Wide Tricep Dip** to **[Hanging Knee Raise](https://youtu.be/RD_A-Z15ER4?si=h0fyUA7SXg4vWE2a)** 📈
+6. **Sled Push/Pull**  to **Deadlift** || **Trap Bar/DB Squat Jump** 📈
 #### **Regular sets**
-7. **Trap Bar/DB Squat Jump** 
-8. **[Side rear Delt Fly](https://youtu.be/P81mH8n68h4?si=eGoGz-v2JIxxjTfB)** 
+7. **[Side rear Delt Fly](https://youtu.be/P81mH8n68h4?si=eGoGz-v2JIxxjTfB)** 
 
 
 ### Saturday
 
 #### **Antagonistic super-sets**
 1. **[Cable Woodchopper](https://www.youtube.com/watch?v=mvvu8imyMFs)**(Low angle) || **[Landmine Twist](https://youtu.be/M93HfnAVIl8?si=7KtnpfDB0GYobD9Z)** to Kettlebell Leg Raise 
-2. **[Behind the Back Lateral Raise](https://www.youtube.com/watch?v=y4Djk_G0yEg)**  || **[Unilateral Cable/DB  Overhead Tricep Extension](https://youtu.be/FE_AsjcTImc?si=gzyVqZ88Yq9KTRiG)**(Low Angle) to **Kneeling Cable Crunch**(High Angle) 
+2. **[Behind the Back Lateral Raise](https://www.youtube.com/watch?v=y4Djk_G0yEg)**  || **[Unilateral Overhead Tricep Extension](https://youtu.be/FE_AsjcTImc?si=gzyVqZ88Yq9KTRiG)**(Low Angle) to **Kneeling Cable Crunch**(High Angle) 
 3. **Pallof Press**(bands/cables) to **[Half Kneeling/Standing Arm Row](https://youtu.be/afE9JabFqR4?si=Q7eXtrCmYCcxOV_T)** 
 
 #### **Regular sets**
 4. **[Side rear Delt Fly](https://youtu.be/P81mH8n68h4?si=eGoGz-v2JIxxjTfB)** 
-5. **Deadlift** || **Sled Push/Pull** || **Clean & Jerk Press** 📈
+
 
 ### Sunday 
 #### **Antagonistic super-sets**
-1. **Walk**: half distance **farmer/suitcase** to **Arnold press**/plyometric
-2. **Back Extension** to **Halo** || **[Bayesian Cable Curl](https://youtu.be/4O24gFksZ04?si=poa8Lr-ymzw1-QrR)** || **[Incline Bench Preacher Curl](https://www.youtube.com/watch?v=02TvQZiVdic)/[Reverse Preacher Curl](https://youtu.be/h8LVaKRAFY0?si=ix3lKao_fRA33nqU)** 
+1. **[Behind the Back Lateral Raise](https://www.youtube.com/watch?v=y4Djk_G0yEg)**  || **[Unilateral Overhead Tricep Extension](https://youtu.be/FE_AsjcTImc?si=gzyVqZ88Yq9KTRiG)**(Low Angle) to **Kneeling Cable Crunch**(High Angle) 
+2. **Walk**: half distance **farmer/suitcase** || **Walking Barbell Zercher Lunge** to **Arnold press**/plyometric
+
 
 #### **Regular sets**
-3. **[Behind the Back Lateral Raise](https://www.youtube.com/watch?v=y4Djk_G0yEg)**  || **[Unilateral Cable/DB  Overhead Tricep Extension](https://youtu.be/FE_AsjcTImc?si=gzyVqZ88Yq9KTRiG)**(Low Angle) to **Kneeling Cable Crunch**(High Angle) 
+3. **Back Extension** 
 4. **[Cable Assisted Pancake](https://youtu.be/xgU1YYHwprQ?si=N0aX9UVVJqDLvvrS)**(Low Angle) 
 5. **Single Arm Lat Pulldown** 
 6. **Inner Thigh Abduction**
@@ -115,39 +116,38 @@ Use Isometric holds for strength week which aids in stability. Do DB switch catc
 #### **Antagonistic super-sets**
 1. **Prone Leg Curl** to **DB Bulgarian Split Squat** || Walking Barbell Zercher Lunge
 2. **Hip thrust** to **Chest press**
-3. **Leg press** to **Chest press**(prefer) 
-4. **Pistol Hack Squat** to **Zottman Curl** 
-5. **Pallof Press**(bands/cables) to **[Half Kneeling/Standing Arm Row](https://youtu.be/afE9JabFqR4?si=Q7eXtrCmYCcxOV_T)** 
-6. **Wide Tricep Dip** to **[Hanging Knee Raise](https://youtu.be/RD_A-Z15ER4?si=h0fyUA7SXg4vWE2a)** 📈
+3. **Leg press** to **Chest press** || **[Pistol Hack Squat](https://www.youtube.com/watch?v=w-LKHuNiiTc)** to **Zottman Curl**
+4. **Pallof Press**(bands/cables) to **[Half Kneeling/Standing Arm Row](https://youtu.be/afE9JabFqR4?si=Q7eXtrCmYCcxOV_T)** 
+5. **Wide Tricep Dip** to **[Hanging Knee Raise](https://youtu.be/RD_A-Z15ER4?si=h0fyUA7SXg4vWE2a)** 📈
+6. **Sled Push/Pull**  to **Deadlift** || **Trap Bar/DB Squat Jump** 📈
 #### **Regular sets**
-7. **Trap Bar/DB Squat Jump** 
-8. **[Cable Assisted Pancake](https://youtu.be/xgU1YYHwprQ?si=N0aX9UVVJqDLvvrS)**(Low Angle) 
-9. **[Side rear Delt Fly](https://youtu.be/P81mH8n68h4?si=eGoGz-v2JIxxjTfB)** 
-10. **Deadlift** 📈
+7. **[Cable Assisted Pancake](https://youtu.be/xgU1YYHwprQ?si=N0aX9UVVJqDLvvrS)**(Low Angle) 
+8. **[Side rear Delt Fly](https://youtu.be/P81mH8n68h4?si=eGoGz-v2JIxxjTfB)** 
+
 
 #### Cable leg day variation
-1. **Back Extension** to **Halo** ||  **[Bayesian Cable Curl](https://youtu.be/4O24gFksZ04?si=poa8Lr-ymzw1-QrR)** || **[Incline Bench Preacher Curl](https://www.youtube.com/watch?v=02TvQZiVdic)/[Reverse Preacher Curl](https://youtu.be/h8LVaKRAFY0?si=ix3lKao_fRA33nqU)**
+1. **Back Extension**
 2. **[Cable Hip Extension](https://www.youtube.com/watch?v=Fr6fdKPdyfM)** 
 3. **[Cable Side Kicks](https://www.youtube.com/watch?v=jYuN92LGzpA)** 
 4. **[Cable Kickback](https://www.youtube.com/watch?v=SqO-VUEak2M)
-5. **Trap Bar/DB Squat Jump** 
+5. **Sled Push/Pull**  to **Deadlift** || **Trap Bar/DB Squat Jump** 📈
 6. **[Cable](https://youtu.be/2M1Mikqf5lY?si=sIX0t_7UkiioAffp)** || **[Kettlebell](https://youtu.be/SuNgD0x2U6U?si=0oE-W6Zv_5pABcMv)** - Unilateral RDL 📈
 
 ### Tuesday  - Meal Prep Day 2
 
 #### **Antagonistic super-sets**
 1. **[Cable Woodchopper](https://www.youtube.com/watch?v=mvvu8imyMFs)**(Low angle) || **[Landmine Twist](https://youtu.be/M93HfnAVIl8?si=7KtnpfDB0GYobD9Z)** to Kettlebell Leg Raise 
-2. **[Behind the Back Lateral Raise](https://www.youtube.com/watch?v=y4Djk_G0yEg)**  || **[Unilateral Cable/DB  Overhead Tricep Extension](https://youtu.be/FE_AsjcTImc?si=gzyVqZ88Yq9KTRiG)**(Low Angle) to **Kneeling Cable Crunch**(High Angle) 
-3. **Walk**: half distance **farmer/suitcase** to **Arnold press**/plyometric
-4. **Back Extension** to **Halo** ||  **[Bayesian Cable Curl](https://youtu.be/4O24gFksZ04?si=poa8Lr-ymzw1-QrR)** || **[Incline Bench Preacher Curl](https://www.youtube.com/watch?v=02TvQZiVdic)/[Reverse Preacher Curl](https://youtu.be/h8LVaKRAFY0?si=ix3lKao_fRA33nqU)**
+2. **[Behind the Back Lateral Raise](https://www.youtube.com/watch?v=y4Djk_G0yEg)**  || **[Unilateral Overhead Tricep Extension](https://youtu.be/FE_AsjcTImc?si=gzyVqZ88Yq9KTRiG)**(Low Angle) to **Kneeling Cable Crunch**(High Angle) 
+3. **Walk**: half distance **farmer/suitcase** || **Walking Barbell Zercher Lunge** to **Arnold press**/plyometric
 
 #### **Regular sets**
+4. **Back Extension** 
 5. **Inner Thigh Abduction**
 6. **Outer Thigh Adduction** 
 7. **Single Arm Lat Pulldown**
 8. **Bench Reverse Crunch || [Dragon Flag](https://youtu.be/U5pviWt7sMo?si=bTziyFRf9FBf40sF) || Ab Roller 📈** 
 9. **Chin-up** || **Pull-up** 📈
-10. **Deadlift** || **Sled Push/Pull** || **Clean & Jerk Press** 📈
+10. **Clean & Jerk Press** 📈
 
 ### Wednesday
 have at least one free form day like this every week since following this new program structure doesn't need to follow other days and can sprinkle in a little plyometric work here or there don't need to stress it.
@@ -155,81 +155,83 @@ have at least one free form day like this every week since following this new pr
 #### **Antagonistic super-sets**
 1. **[Cable Woodchopper](https://www.youtube.com/watch?v=mvvu8imyMFs)**(Low angle) || **[Landmine Twist](https://youtu.be/M93HfnAVIl8?si=7KtnpfDB0GYobD9Z)** to Kettlebell Leg Raise 
 2. [[Plyometrics]]
-3. **Back Extension** to **Halo** || **[Bayesian Cable Curl](https://youtu.be/4O24gFksZ04?si=poa8Lr-ymzw1-QrR)** || **[Incline Bench Preacher Curl](https://www.youtube.com/watch?v=02TvQZiVdic)/[Reverse Preacher Curl](https://youtu.be/h8LVaKRAFY0?si=ix3lKao_fRA33nqU)**
-4. **Pallof Press**(bands/cables) to **[Half Kneeling/Standing Arm Row](https://youtu.be/afE9JabFqR4?si=Q7eXtrCmYCcxOV_T)** 
+3. **Pallof Press**(bands/cables) to **[Half Kneeling/Standing Arm Row](https://youtu.be/afE9JabFqR4?si=Q7eXtrCmYCcxOV_T)** 
+4. **Sled Push/Pull**  to **Deadlift** || **Trap Bar/DB Squat Jump** 📈
+
 #### **Regular sets**
+3. **Back Extension** 
+4. **Kneeling Squat on toes with DB behind** 
+5. **[Cable Pec Minor Fly](https://youtu.be/sC91H2XLtJc?si=bSV_IhpBVbdADHz2&t=286)** || **Chest Fly(**[variations](https://youtube.com/shorts/0LJ-JujImCs?si=LgyKSn87TMCarM-y)) || **[DB Cross Body Fly](https://youtu.be/mK2xrdqf_cU?si=jNrPZCLCgUNFki9v)**
 6. **[Cable](https://youtu.be/2M1Mikqf5lY?si=sIX0t_7UkiioAffp)** || **[Kettlebell](https://youtu.be/SuNgD0x2U6U?si=0oE-W6Zv_5pABcMv)** - Unilateral RDL 📈
-7. **[Cable Pec Minor Fly](https://youtu.be/sC91H2XLtJc?si=bSV_IhpBVbdADHz2&t=286)** || **Chest Fly(**[variations](https://youtube.com/shorts/0LJ-JujImCs?si=LgyKSn87TMCarM-y)) || **[DB Cross Body Fly](https://youtu.be/mK2xrdqf_cU?si=jNrPZCLCgUNFki9v)**
-8. **Kneeling Squat on toes with DB behind** 
-9. **Bench Reverse Crunch || [Dragon Flag](https://youtu.be/U5pviWt7sMo?si=bTziyFRf9FBf40sF) || Ab Roller 📈** 
-10. **Chin-up** || **Pull-up** 📈
-11. **Deadlift** || **Sled Push/Pull** || **Clean & Jerk Press** 📈
+7. **Bench Reverse Crunch || [Dragon Flag](https://youtu.be/U5pviWt7sMo?si=bTziyFRf9FBf40sF) || Ab Roller 📈** 
+8. **Chin-up** || **Pull-up** 📈
+
 
 ### Thursday(Pre prep for meal prep) 
 
 
 
-| Unilateral/Bilateral                             | One Rep Max | Strength | Hypertrophy | Explosive | Body  | Cust             |
-| ------------------------------------------------ | ----------- | -------- | ----------- | --------- | ----- | ---------------- |
-| *Arnold Press*                                   | 40/40       | 30/30    | 15/15       | 15/15     | Arms  | N/A              |
-| Bayesian Cable Curl                              | 30/30       | 20/20    | 15/15       | 15/15     | Arm   | N/A              |
-| Cable Pec Minor                                  | 30/30       | 20/20    | 15/15       | 15/15     | Arm   | N/A              |
-| Chest - Fly                                      | 100/80      | 80/80    | 60/60       | 40/40     | Arm   | N/A              |
-| Cable RDL                                        | 20/20       | 20/20    | 20/20       | 10/10     | Arms  | N/A              |
-| *Chin Up*                                        | 10/10       | 10/10    | 10/10       | 10/10     | Arm   | N/A              |
-| *Narrow/Neutral Pull Up*                         | 10/10       | 10/10    | 10/10       | 10/10     | Arm   | N/A              |
-| DB Cross Body Fly                                | 30/30       | 20/20    | 20/20       | N/A       | Arm   | N/A              |
-| DB Overhead Tricep Extension                     | 30/30       | 20/20    | 20/20       | N/A       | Arm   | N/A              |
-| Front Preacher Bench Reverse Curl                | 30/30       | 20/20    | 20/20       | N/A       | Arm   | N/A              |
-| Incline Bench Preacher Curl                      | 30/30       | 20/20    | 20/20       | N/A       | Arm   | N/A              |
-| *Lateral Head Unilateral Tricep Ext*             | 17/17       | 17/17    | 17/17       | 17/17     | Arm   | N/A              |
-| *Lat Pull Down*                                  | 200/100     | 160/80   | 100/50      | 25/25     | Arm   | N/A              |
-| Scarecrow                                        | 20/20       | 20/20    | 20/20       | 20/20     | Arm   | N/A              |
-| *Side Rear Delt Fly*                             | 70/70       | 60/60    | 40/40       | 20/20     | Arm   | N/A              |
-| *Kneeling Arm Row*                               | 50/50       | 30/30    | 20/20       | 10/10     | Arm   | N/A              |
-| *Standing Arm Row*                               | 60/60       | 50/50    | 20/20       | 10/10     | Arm   | N/A              |
-| V Raise                                          | 20/20       | 20/20    | 20/20       | 20/20     | Arm   | N/A              |
-| *Unilateral Behind the Back Cable Lateral Raise* | 10/10       | 7/7      | 10/10       | 7/7       | Arm   | N/A              |
-| *Zottman Curl*                                   | 20/20       | 20/20    | 15/15       | N/A       | Arm   | N/A              |
-| *Back Extension*                                 | N/A         | 10/5     | 10/5        | N/A       | Back  | N/A              |
-| **Barbel Good Morning**                          | N/A         | 10/10    | N/A         | N/A       | Back  | N/A              |
-| Camberbered Bench Press                          | 30/30       | 20/20    | 15/15       | 10/10     | Chest | N/A              |
-| *Dumbbell Chest Press*                           | 30/30       | 25/25    | 20/20       | 15/15     | Chest | N/A              |
-| *Seated Wide Dip/Body Wide Dip*                  | 165/165     | 145/145  | 100/100     | 80/80     | Chest | N/A              |
-| Ab Roller                                        | N/A         | N/A      | N/A         | N/A       | Core  | N/A              |
-| *Bench Reverse Crunch*                           | N/A         | N/A      | N/A         | N/A       | Core  | N/A              |
-| Cable Assisted Pancake                           | 60/60       | 50/50    | 30/30       | N/A       | Core  | N/A              |
-| *Dragon Flag*                                    | N/A         | N/A      | N/A         | N/A       | Core  | N/A              |
-| *Hanging Knee Raise*                             | N/A         | N/A      | N/A         | N/A       | Core  | N/A              |
-| *Kneeling Cable Crunch*                          | 70/70       | 50/50    | 30/30       | 30/30     | Core  | N/A              |
-| *PallofPress*                                    | 30/30       | 20/20    | 15/15       | 15/15     | Core  | N/A              |
-| Cable Hip Extension                              | 60/60       | 50/50    | 30/30       | 15/15     | Leg   | N/A              |
-| Cable Kickback                                   | 30/30       | 20/20    | 15/15       | 15/15     | Leg   | N/A              |
-| Cable Side Kicks                                 | 30/30       | 20/20    | 15/15       | 15/15     | Leg   | N/A              |
-| *DB Bulgarian Split Squat*                       | 40/40       | 25/25    | 20/20       | 15/15     | Leg   | N/A              |
-| DB/Trap Bar Squat Jump                           | 35/35       | 25/25    | 20/20       | 15/15     | Leg   | ***2x8***        |
-| *KB Leg Raise*                                   | 30/30       | 20/20    | 15/15       | 15/15     | Leg   | N/A              |
-| Leg Press                                        | 500/300     | 300/270  | 180/90      | 90/90     | Leg   | N/A              |
-| *Inner Thigh Abduction*(90 widest)               | 140/140     | 120/120  | 70/70       | 50/50     | Leg   | N/A              |
-| *Outer Thigh Adduction*                          | 150/150     | 130/130  | 80/80       | 60/60     | Leg   | N/A              |
-| *Pistol Hack Squat*                              | 75/75       | 45/45    | 25/25       | 25/25     | Leg   | N/A              |
-| *Prone Leg Curl*                                 | 90/50       | 80/30    | 50/20       | 20/20     | Leg   | N/A              |
-| Cable Woodchopper                                | 30/30       | 20/20    | 15/15       | 15/15     | Multi | N/A              |
-| Clean Jerk Press                                 | 20/20       | 10/10    | 10/10       | 10/10     | Multi | ***2x8***        |
-| *Deadlift*                                       | 55/55       | 45/45    | 25/25       | 20/20     | Multi | N/A              |
-| *Farmer Carry*                                   | 40/40       | 30/30    | 20/20       | N/A       | Multi | N/A              |
-| *Halo*                                           | 40/40       | 20/20    | 20/20       | N/A       | Multi | ***1x8***        |
-| *Hip Thrust*                                     | 180/180     | 145/145  | 100/100     | 70/70     | Multi | N/A              |
-| KB RDL                                           | 30/30       | 20/20    | 15/15       | 10/10     | Multi | N/A              |
-| *Landmine Twist*                                 | 45/45       | 25/25    | 10/10       | 10/10     | Multi | N/A              |
-| Side Lateral QL Extension                        | 25/25       | 10/10    | 10/10       | 10/10     | Multi | N/A              |
-| *Sled Push to Alternating Lateral Pull*          | 50/50       | 35/35    | 25/25       | 10/10     | Multi | 1/2 of ***1x8*** |
-| *Sled Push to Pull*                              | 50/50       | 35/35    | 25/25       | 10/10     | Multi | 1/2 of ***1x8*** |
-| *Suitcase Bottom Ups*                            | 30/30       | 20/20    | 15/15       | N/A       | Multi | 1/2 of ***1x8*** |
-| Super ROM                                        | N/A         | 10/10    | 5/5         | 5/5       | Multi | ***2x8***        |
-| Suitcase                                         | 40/40       | 30/30    | 20/20       | N/A       | Multi | 1/2 of ***1x8*** |
-| Roman Chair Hip Abduction                        | 10/10       | 10/10    | 10/10       | N/A       | Multi | N/A              |
-| Walking Barbell Zercher Lunge                    | 40/40       | 20/20    | 20/20       | 20/20     | Multi | 1/2 of ***1x8*** |
+| Unilateral/Bilateral                                                                      | One Rep Max | Strength | Hypertrophy | Explosive | Body  | Cust             |
+| ----------------------------------------------------------------------------------------- | ----------- | -------- | ----------- | --------- | ----- | ---------------- |
+| *Arnold Press*                                                                            | 40/40       | 30/30    | 15/15       | 15/15     | Arms  | N/A              |
+| **[Bayesian Cable Curl](https://youtu.be/4O24gFksZ04?si=poa8Lr-ymzw1-QrR)**               | 30/30       | 20/20    | 15/15       | 15/15     | Arm   | N/A              |
+| Cable Pec Minor                                                                           | 30/30       | 20/20    | 15/15       | 15/15     | Arm   | N/A              |
+| Chest - Fly                                                                               | 100/80      | 80/80    | 60/60       | 40/40     | Arm   | N/A              |
+| Cable RDL                                                                                 | 20/20       | 20/20    | 20/20       | 10/10     | Arms  | N/A              |
+| *Chin Up*                                                                                 | 10/10       | 10/10    | 10/10       | 10/10     | Arm   | N/A              |
+| *Narrow/Neutral Pull Up*                                                                  | 10/10       | 10/10    | 10/10       | 10/10     | Arm   | N/A              |
+| DB Cross Body Fly                                                                         | 30/30       | 20/20    | 20/20       | N/A       | Arm   | N/A              |
+| Cable/DB Overhead Tricep Extension                                                        | 20/20       | 10/10    | 10/10       | N/A       | Arm   | N/A              |
+| **[Front Preacher Bench Reverse Curl](https://youtu.be/h8LVaKRAFY0?si=ix3lKao_fRA33nqU)** | 30/30       | 20/20    | 20/20       | N/A       | Arm   | N/A              |
+| **[Incline Bench Preacher Curl](https://www.youtube.com/watch?v=02TvQZiVdic)**            | 30/30       | 20/20    | 20/20       | N/A       | Arm   | N/A              |
+| *Lateral Head Unilateral Tricep Ext*                                                      | 17/17       | 17/17    | 17/17       | 17/17     | Arm   | N/A              |
+| *Lat Pull Down*                                                                           | 200/100     | 160/80   | 100/50      | 25/25     | Arm   | N/A              |
+| Scarecrow                                                                                 | 20/20       | 20/20    | 20/20       | 20/20     | Arm   | N/A              |
+| *Side Rear Delt Fly*                                                                      | 70/70       | 60/60    | 40/40       | 20/20     | Arm   | N/A              |
+| *Kneeling Arm Row*                                                                        | 50/50       | 30/30    | 20/20       | 10/10     | Arm   | N/A              |
+| *Standing Arm Row*                                                                        | 60/60       | 50/50    | 20/20       | 10/10     | Arm   | N/A              |
+| V Raise                                                                                   | 20/20       | 20/20    | 20/20       | 20/20     | Arm   | N/A              |
+| *Unilateral Behind the Back Cable Lateral Raise*                                          | 10/10       | 7/7      | 10/10       | 7/7       | Arm   | N/A              |
+| *Zottman Curl*                                                                            | 20/20       | 20/20    | 15/15       | N/A       | Arm   | N/A              |
+| *Back Extension*                                                                          | N/A         | 10/5     | 10/5        | N/A       | Back  | N/A              |
+| **Barbel Good Morning**                                                                   | N/A         | 10/10    | N/A         | N/A       | Back  | N/A              |
+| Camberbered Bench Press                                                                   | 30/30       | 20/20    | 15/15       | 10/10     | Chest | N/A              |
+| *Dumbbell Chest Press*                                                                    | 30/30       | 25/25    | 20/20       | 15/15     | Chest | N/A              |
+| *Seated Wide Dip/Body Wide Dip*                                                           | 165/165     | 145/145  | 100/100     | 80/80     | Chest | N/A              |
+| Ab Roller                                                                                 | N/A         | N/A      | N/A         | N/A       | Core  | N/A              |
+| *Bench Reverse Crunch*                                                                    | N/A         | N/A      | N/A         | N/A       | Core  | N/A              |
+| Cable Assisted Pancake                                                                    | 60/60       | 50/50    | 30/30       | N/A       | Core  | N/A              |
+| *Dragon Flag*                                                                             | N/A         | N/A      | N/A         | N/A       | Core  | N/A              |
+| *Hanging Knee Raise*                                                                      | N/A         | N/A      | N/A         | N/A       | Core  | N/A              |
+| *Kneeling Cable Crunch*                                                                   | 70/70       | 50/50    | 30/30       | 30/30     | Core  | N/A              |
+| *PallofPress*                                                                             | 30/30       | 20/20    | 15/15       | 15/15     | Core  | N/A              |
+| Cable Hip Extension                                                                       | 60/60       | 50/50    | 30/30       | 15/15     | Leg   | N/A              |
+| Cable Kickback                                                                            | 30/30       | 20/20    | 15/15       | 15/15     | Leg   | N/A              |
+| Cable Side Kicks                                                                          | 30/30       | 20/20    | 15/15       | 15/15     | Leg   | N/A              |
+| *DB Bulgarian Split Squat*                                                                | 40/40       | 25/25    | 20/20       | 15/15     | Leg   | N/A              |
+| DB/Trap Bar Squat Jump                                                                    | 35/35       | 25/25    | 20/20       | 15/15     | Leg   | ***2x8***        |
+| *KB Leg Raise*                                                                            | 30/30       | 20/20    | 15/15       | 15/15     | Leg   | N/A              |
+| Leg Press                                                                                 | 500/300     | 300/270  | 180/90      | 90/90     | Leg   | N/A              |
+| *Inner Thigh Abduction*(90 widest)                                                        | 140/140     | 120/120  | 70/70       | 50/50     | Leg   | N/A              |
+| *Outer Thigh Adduction*                                                                   | 150/150     | 130/130  | 80/80       | 60/60     | Leg   | N/A              |
+| *Pistol Hack Squat*                                                                       | 75/75       | 45/45    | 25/25       | 25/25     | Leg   | N/A              |
+| *Prone Leg Curl*                                                                          | 90/50       | 80/30    | 50/20       | 20/20     | Leg   | N/A              |
+| Cable Woodchopper                                                                         | 30/30       | 20/20    | 15/15       | 15/15     | Multi | N/A              |
+| Clean Jerk Press                                                                          | 20/20       | 10/10    | 10/10       | 10/10     | Multi | ***2x8***        |
+| *Deadlift*                                                                                | 55/55       | 45/45    | 25/25       | 20/20     | Multi | N/A              |
+| *Farmer Carry*                                                                            | 40/40       | 30/30    | 20/20       | N/A       | Multi | N/A              |
+| *Halo*                                                                                    | 40/40       | 20/20    | 20/20       | N/A       | Multi | ***1x8***        |
+| *Hip Thrust*                                                                              | 180/180     | 145/145  | 100/100     | 70/70     | Multi | N/A              |
+| KB RDL                                                                                    | 30/30       | 20/20    | 15/15       | 10/10     | Multi | N/A              |
+| *Landmine Twist*                                                                          | 45/45       | 25/25    | 10/10       | 10/10     | Multi | N/A              |
+| Side Lateral QL Extension                                                                 | 25/25       | 10/10    | 10/10       | 10/10     | Multi | N/A              |
+| *Sled Push to Alternating Lateral Pull*                                                   | 50/50       | 35/35    | 25/25       | 10/10     | Multi | 1/2 of ***1x8*** |
+| *Sled Push to Pull*                                                                       | 50/50       | 35/35    | 25/25       | 10/10     | Multi | 1/2 of ***1x8*** |
+| *Suitcase Bottom Ups*                                                                     | 30/30       | 20/20    | 15/15       | N/A       | Multi | 1/2 of ***1x8*** |
+| Super ROM                                                                                 | N/A         | 10/10    | 5/5         | 5/5       | Multi | ***2x8***        |
+| Suitcase                                                                                  | 40/40       | 30/30    | 20/20       | N/A       | Multi | 1/2 of ***1x8*** |
+| Roman Chair Hip Abduction                                                                 | 10/10       | 10/10    | 10/10       | N/A       | Multi | N/A              |
+| Walking Barbell Zercher Lunge                                                             | 40/40       | 20/20    | 20/20       | 20/20     | Multi | 1/2 of ***1x8*** |
 
 
 

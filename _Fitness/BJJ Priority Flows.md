@@ -24,6 +24,8 @@ dg-publish:
 Dig through the ground and reach for the sky and break them down to ground
 #### Road to Fourth Strip
 #todo/BAU/MMA/Drill 
+- [ ] Don't let them get chest to chest
+- [ ] Keep hips off the mat and get there hips on the mat
 - [ ] Prioritize protecting neck over framing
 - [ ] For rear naked choke address the top hand and control one arm pulling it across your body towards the side of your body being locked up with both opponents legs to disrupt stuff submission.
 - [ ] Bridge with single far leg went inside control to create space and get under
