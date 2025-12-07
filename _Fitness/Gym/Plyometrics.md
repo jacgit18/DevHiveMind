@@ -18,6 +18,7 @@ maybe add a cardio day to hypertrophy week
 - [14 Calisthenics Exercises on Gymnastics Rings](https://www.gornation.com/blogs/news/exercises-gymnastics-rings) 
 
 
+5lb at 1 min
 ### Non Alternating Leg
 
 
