@@ -197,7 +197,7 @@ have at least one free form day like this every week since following this new pr
 | V Raise                                                                                   | 20/20       | 20/20    | 20/20       | 20/20     | Arm   | N/A              |
 | *Unilateral Behind the Back Cable Lateral Raise*                                          | 10/10       | 7/7      | 10/10       | 7/7       | Arm   | N/A              |
 | *Zottman Curl*                                                                            | 20/20       | 20/20    | 15/15       | N/A       | Arm   | N/A              |
-| *Back Extension*                                                                          | N/A         | 10/5     | 10/5        | N/A       | Back  | N/A              |
+| *Back Extension*                                                                          | N/A         | 10/10    | 10/10       | N/A       | Back  | N/A              |
 | **Barbel Good Morning**                                                                   | N/A         | 10/10    | N/A         | N/A       | Back  | N/A              |
 | Camberbered Bench Press                                                                   | 30/30       | 20/20    | 15/15       | 10/10     | Chest | N/A              |
 | *Dumbbell Chest Press*                                                                    | 30/30       | 25/25    | 20/20       | 15/15     | Chest | N/A              |
@@ -208,7 +208,7 @@ have at least one free form day like this every week since following this new pr
 | *Dragon Flag*                                                                             | N/A         | N/A      | N/A         | N/A       | Core  | N/A              |
 | *Hanging Knee Raise*                                                                      | N/A         | N/A      | N/A         | N/A       | Core  | N/A              |
 | *Kneeling Cable Crunch*                                                                   | 70/70       | 50/50    | 30/30       | 30/30     | Core  | N/A              |
-| *PallofPress*                                                                             | 30/30       | 20/20    | 15/15       | 15/15     | Core  | N/A              |
+| *PallofPress*                                                                             | 30/30       | 23/23    | 15/15       | 15/15     | Core  | N/A              |
 | Cable Hip Extension                                                                       | 60/60       | 50/50    | 30/30       | 15/15     | Leg   | N/A              |
 | Cable Kickback                                                                            | 30/30       | 20/20    | 15/15       | 15/15     | Leg   | N/A              |
 | Cable Side Kicks                                                                          | 30/30       | 20/20    | 15/15       | 15/15     | Leg   | N/A              |
@@ -226,8 +226,8 @@ have at least one free form day like this every week since following this new pr
 | *Farmer Carry*                                                                            | 15/15       | 15/15    | 15/15       | N/A       | Multi | N/A              |
 | *Suitcase Bottom Ups*                                                                     | 30/30       | 20/20    | 15/15       | N/A       | Multi | 1/2 of ***1x8*** |
 | Suitcase                                                                                  | 40/40       | 30/30    | 20/20       | N/A       | Multi | 1/2 of ***1x8*** |
-| *Halo*                                                                                    | 40/40       | 20/20    | 20/20       | N/A       | Multi | ***1x8***        |
-| *Hip Thrust*                                                                              | 180/180     | 145/145  | 100/100     | 70/70     | Multi | N/A              |
+| *Halo*                                                                                    | 45/45       | 25/25    | 25/25       | N/A       | Multi | ***1x8***        |
+| *Hip Thrust*                                                                              | 180/180     | 160/160  | 100/100     | 70/70     | Multi | N/A              |
 | KB RDL                                                                                    | 30/30       | 20/20    | 15/15       | 10/10     | Multi | N/A              |
 | *Landmine Twist*                                                                          | 45/45       | 25/25    | 10/10       | 10/10     | Multi | N/A              |
 | Side Lateral QL Extension                                                                 | 25/25       | 10/10    | 10/10       | 10/10     | Multi | N/A              |
