@@ -248,7 +248,7 @@ Static stretches can be active or passive with external force like maybe a plank
 - [Cossack Squat](https://youtu.be/fyAl4o1BGVo?si=OalBzfY8-KxgS7qA)
 - [Forward Fold Stretch](https://youtu.be/goN4rWbQUn4?si=pPni5D3dJWgLUboT) 
 - [Standing Pancake](https://youtu.be/4TU9K40LZ6A?si=kWxpXgb7wdZ35HQO)
-- **[Cable Assisted Pancake](https://youtu.be/xgU1YYHwprQ?si=N0aX9UVVJqDLvvrS)**(Low Angle) /[Regular Pancake](https://youtu.be/B1_YA47gtm0?si=_oBDpaLBejKI-8mV) - 50lb/50lb/50lb
+- [Regular Pancake](https://youtu.be/B1_YA47gtm0?si=_oBDpaLBejKI-8mV) 
 - [Full split](https://youtu.be/hsNvqUmCAAo?si=SbGmouCgXsZ44_tJ) 
 
 ##### Small Muscle Stretches

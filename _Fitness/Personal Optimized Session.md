@@ -20,7 +20,7 @@ dg-publish:
 ---
 ![[ChatGPT Image Jul 3, 2025, 04_58_45 PM.png]]
 # Session Breakdown 
-Thursday or Friday rest day if multiple rest days 1 from each phase section. Also for antagonistic sets hypertrophy follow 10x6 song long, strength follows 8x8, and explosive follow 6x5. For non antagonistic super set compound lifts modify sets hypertrophy follow 10x1 song long, strength follows 4x8, and explosive follow 3x4
+Thursday or Friday rest day if multiple rest days 1 from each phase section. 
 
 #todo/BAU/Workout 
 - [ ] Finalize, refine, reduce, and prioritize exercises in [[Plyometrics]] and Stability program 
@@ -39,11 +39,11 @@ Thursday or Friday rest day if multiple rest days 1 from each phase section. Als
 Alternate each month keeping the week training phase in to account the weights follow like this when alternating phase in session **explosive** to **hypertrophy** | **explosive** to **strength** | **strength** to **hypertrophy** also weights follow ***explosive/hypertrophy/strength***.
 
 
-| Month           | Back Extension                                                                                                         | ROM                                                             | Walk                            | Leg ROM                                                               | Upper Body                      |                                                                              | Leg Focus                | Sled                             |
-| --------------- | ---------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------- | ------------------------------- | --------------------------------------------------------------------- | ------------------------------- | ---------------------------------------------------------------------------- | ------------------------ | -------------------------------- |
-| 1 (Odd months)  | Unilateral back ext 2x8 with 5 sec ISO & [Roman Chair Hip Abduction](https://youtu.be/j5HWZOfIePI?si=EsYf8Gg0rFO16y-p) | Super ROM + [Scarecrow](https://youtu.be/qzNQ3_TQHDs)           | Suitcase Bottom Ups or Suitcase | [[Personal Optimized Session#Cable leg day variation\|Cable Leg day]] | Unilateral Arm(were it applies) | -ChinUp   -Kneeling arm row  - Behind the Back Raise                         | Unilateral-leg variation | Push to Lateral(left/right) Pull |
-| 2 (Even months) | Bilateral Back ext 4x8 with 10 sec ISO & [Side Lateral QL Extension](https://youtu.be/UaydER2VIUc?si=wkQxbIqiz7lJQF_7) | Super ROM + [V Raise](https://youtu.be/5WBdE0TSoUQ)(cross)      | Banded Farmer or Farmer Carry   | Non Cable leg day                                                     | Bilateral Arm                   | -Narrow PullUp     -Standing arm row  - Unilateral Overhead Tricep Extension | Bilateral variation      | Push to Pull                     |
-|                 |                                                                                                                        | DB switch catch instead for explosive week 10lb 1 min or 1 song |                                 |                                                                       |                                 |                                                                              |                          |                                  |
+| Month           | Back Extension                                                                                                         | ROM                                                            | Walk                            | Leg ROM                                                               | Upper Body                      |                                                                              | Leg Focus                | Sled                             |
+| --------------- | ---------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------- | ------------------------------- | --------------------------------------------------------------------- | ------------------------------- | ---------------------------------------------------------------------------- | ------------------------ | -------------------------------- |
+| 1 (Odd months)  | Unilateral back ext 2x8 with 5 sec ISO & [Roman Chair Hip Abduction](https://youtu.be/j5HWZOfIePI?si=EsYf8Gg0rFO16y-p) | Super ROM + [Scarecrow](https://youtu.be/qzNQ3_TQHDs)          | Suitcase Bottom Ups or Suitcase | [[Personal Optimized Session#Cable leg day variation\|Cable Leg day]] | Unilateral Arm(were it applies) | -ChinUp   -Kneeling arm row  - Behind the Back Raise                         | Unilateral-leg variation | Push to Lateral(left/right) Pull |
+| 2 (Even months) | Bilateral Back ext 4x8 with 10 sec ISO & [Side Lateral QL Extension](https://youtu.be/UaydER2VIUc?si=wkQxbIqiz7lJQF_7) | Super ROM + [V Raise](https://youtu.be/5WBdE0TSoUQ)(cross)     | Banded Farmer or Farmer Carry   | Non Cable leg day                                                     | Bilateral Arm                   | -Narrow PullUp     -Standing arm row  - Unilateral Overhead Tricep Extension | Bilateral variation      | Push to Pull                     |
+|                 |                                                                                                                        | DB switch catch instead for explosive week 5lb 1 min or 1 song |                                 |                                                                       |                                 |                                                                              |                          |                                  |
 
 
 1. ***Airdyne Bike || Row Machine || Sprint || Jump Rope || Run || Shadow Boxing*** ✅ 
@@ -72,15 +72,17 @@ Alternate each month keeping the week training phase in to account the weights f
 ## Hypertrophy
 
 ### Friday  - Meal Prep Day 1
-#### **Antagonistic super-sets**
+#### **Antagonistic super-sets** -Hypertrophy(10x6)/Strength(8x8)/Explosive(6x5)
+
 1. **Prone Leg Curl** to **DB Bulgarian Split Squat** 
 2. **Hip thrust** to **Chest press** 
 3. **Leg press** to **Chest press** || **[Pistol Hack Squat](https://www.youtube.com/watch?v=w-LKHuNiiTc)** to **Zottman Curl**
 4. **Pallof Press**(bands/cables) to **[Half Kneeling/Standing Arm Row](https://youtu.be/afE9JabFqR4?si=Q7eXtrCmYCcxOV_T)** 
 5. **Sled Push/Pull**  to **Deadlift** || **Trap Bar/DB Squat Jump** 📈
-#### **Regular sets**
-7. **[Side rear Delt Fly](https://youtu.be/P81mH8n68h4?si=eGoGz-v2JIxxjTfB)** 
+#### **Regular sets** -                                        Hypertrophy(10x1) for multiple songs long, Strength(4x8), Explosive(3x4)
 
+7. **[Side rear Delt Fly](https://youtu.be/P81mH8n68h4?si=eGoGz-v2JIxxjTfB)** 
+8. **[Cable Assisted Pancake](https://youtu.be/yxXD_5RGakM?si=vFxPzJFnswWk71Zy)**(Low Angle) 📈
 
 ### Saturday
 
@@ -98,17 +100,17 @@ Alternate each month keeping the week training phase in to account the weights f
 
 ### Sunday 
 #### **Antagonistic super-sets**
-1. **[Behind the Back Lateral Raise](https://www.youtube.com/watch?v=y4Djk_G0yEg)**  || **[Unilateral Overhead Tricep Extension](https://youtu.be/FE_AsjcTImc?si=gzyVqZ88Yq9KTRiG)**(Low Angle) to **Kneeling Cable Crunch**(High Angle) 
+1. **[Behind the Back Lateral Raise](https://www.youtube.com/watch?v=y4Djk_G0yEg)** || **[Unilateral Overhead Tricep Extension](https://youtu.be/FE_AsjcTImc?si=gzyVqZ88Yq9KTRiG)**(Low Angle) to **Kneeling Cable Crunch**(High Angle) 
 2. **Walk**: half distance **farmer/suitcase** || **Walking Barbell Zercher Lunge** to **Arnold press**/plyometric
 3. **Leg press** to **Chest press** || **[Pistol Hack Squat](https://www.youtube.com/watch?v=w-LKHuNiiTc)** to **Zottman Curl**
 
 #### **Regular sets**
-3. **Back Extension** 
-4. **[Cable Assisted Pancake](https://youtu.be/xgU1YYHwprQ?si=N0aX9UVVJqDLvvrS)**(Low Angle) 
+4. **Back Extension** 
 5. **Inner Thigh Abduction**
 6. **Outer Thigh Adduction** 
-7. **Bench Reverse Crunch || [Dragon Flag](https://youtu.be/U5pviWt7sMo?si=bTziyFRf9FBf40sF) || Ab Roller 📈** 
-8. **Chin-up** || **Pull-up** 📈
+7. **[Cable Assisted Pancake](https://youtu.be/yxXD_5RGakM?si=vFxPzJFnswWk71Zy)**(Low Angle) 📈
+8. **Bench Reverse Crunch || [Dragon Flag](https://youtu.be/U5pviWt7sMo?si=bTziyFRf9FBf40sF) || Ab Roller** to **Chest press** 📈
+9. **Chin-up** || **Pull-up** 📈
 
 ## Explosive/Strength
 Use Isometric holds for strength week which aids in stability. Do DB switch catch on explosive week which is one week out of the month. 
@@ -123,9 +125,8 @@ Use Isometric holds for strength week which aids in stability. Do DB switch catc
 5. **Wide Tricep Dip** to **[Hanging Knee Raise](https://youtu.be/RD_A-Z15ER4?si=h0fyUA7SXg4vWE2a)** 📈
 6. **Sled Push/Pull**  to **Deadlift** || **Trap Bar/DB Squat Jump** 📈
 #### **Regular sets**
-7. **[Cable Assisted Pancake](https://youtu.be/xgU1YYHwprQ?si=N0aX9UVVJqDLvvrS)**(Low Angle) 
-8. **[Side rear Delt Fly](https://youtu.be/P81mH8n68h4?si=eGoGz-v2JIxxjTfB)** 
-
+7. **[Side rear Delt Fly](https://youtu.be/P81mH8n68h4?si=eGoGz-v2JIxxjTfB)** 
+8. **[Cable Assisted Pancake](https://youtu.be/yxXD_5RGakM?si=vFxPzJFnswWk71Zy)**(Low Angle) 📈
 
 #### Cable leg day variation
 1. **Back Extension**
@@ -147,7 +148,7 @@ Use Isometric holds for strength week which aids in stability. Do DB switch catc
 5. **Inner Thigh Abduction**
 6. **Outer Thigh Adduction** 
 7. **Single Arm Lat Pulldown**
-8. **Bench Reverse Crunch || [Dragon Flag](https://youtu.be/U5pviWt7sMo?si=bTziyFRf9FBf40sF) || Ab Roller 📈** 
+8. **Bench Reverse Crunch || [Dragon Flag](https://youtu.be/U5pviWt7sMo?si=bTziyFRf9FBf40sF) || Ab Roller** to **Chest press** 📈
 9. **Chin-up** || **Pull-up** 📈
 10. **Clean & Jerk Press** 📈
 
@@ -166,9 +167,9 @@ have at least one free form day like this every week since following this new pr
 5. **Kneeling Squat on toes with DB behind** 
 6. **[Cable Pec Minor Fly](https://youtu.be/sC91H2XLtJc?si=bSV_IhpBVbdADHz2&t=286)** || **Chest Fly(**[variations](https://youtube.com/shorts/0LJ-JujImCs?si=LgyKSn87TMCarM-y)) || **[DB Cross Body Fly](https://youtu.be/mK2xrdqf_cU?si=jNrPZCLCgUNFki9v)**
 7. **[Cable](https://youtu.be/2M1Mikqf5lY?si=sIX0t_7UkiioAffp)** || **[Kettlebell](https://youtu.be/SuNgD0x2U6U?si=0oE-W6Zv_5pABcMv)** - Unilateral RDL 📈
-8. **Bench Reverse Crunch || [Dragon Flag](https://youtu.be/U5pviWt7sMo?si=bTziyFRf9FBf40sF) || Ab Roller 📈** 
+8. **Bench Reverse Crunch || [Dragon Flag](https://youtu.be/U5pviWt7sMo?si=bTziyFRf9FBf40sF) || Ab Roller** to **Chest press** 📈
 9. **Chin-up** || **Pull-up** 📈
-
+10. **[Cable Assisted Pancake](https://youtu.be/yxXD_5RGakM?si=vFxPzJFnswWk71Zy)**(Low Angle) 📈
 
 ### Thursday(Pre prep for meal prep) 
 
@@ -203,7 +204,7 @@ have at least one free form day like this every week since following this new pr
 | *Seated Wide Dip/Body Wide Dip*                                                           | 165/165     | 145/145  | 100/100     | 80/80     | Chest | N/A              |
 | Ab Roller                                                                                 | N/A         | N/A      | N/A         | N/A       | Core  | N/A              |
 | *Bench Reverse Crunch*                                                                    | N/A         | N/A      | N/A         | N/A       | Core  | N/A              |
-| Cable Assisted Pancake                                                                    | 60/60       | 50/50    | 30/30       | N/A       | Core  | N/A              |
+| Cable Assisted Pancake                                                                    | 40/40       | 30/30    | 30/30       | N/A       | Core  | N/A              |
 | *Dragon Flag*                                                                             | N/A         | N/A      | N/A         | N/A       | Core  | N/A              |
 | *Hanging Knee Raise*                                                                      | N/A         | N/A      | N/A         | N/A       | Core  | N/A              |
 | *Kneeling Cable Crunch*                                                                   | 70/70       | 50/50    | 30/30       | 30/30     | Core  | N/A              |
@@ -222,7 +223,9 @@ have at least one free form day like this every week since following this new pr
 | Cable Woodchopper                                                                         | 30/30       | 20/20    | 15/15       | 15/15     | Multi | N/A              |
 | Clean Jerk Press                                                                          | 20/20       | 10/10    | 10/10       | 10/10     | Multi | ***2x8***        |
 | *Deadlift*                                                                                | 55/55       | 45/45    | 25/25       | 20/20     | Multi | N/A              |
-| *Farmer Carry*                                                                            | 40/40       | 30/30    | 20/20       | N/A       | Multi | N/A              |
+| *Farmer Carry*                                                                            | 15/15       | 15/15    | 15/15       | N/A       | Multi | N/A              |
+| *Suitcase Bottom Ups*                                                                     | 30/30       | 20/20    | 15/15       | N/A       | Multi | 1/2 of ***1x8*** |
+| Suitcase                                                                                  | 40/40       | 30/30    | 20/20       | N/A       | Multi | 1/2 of ***1x8*** |
 | *Halo*                                                                                    | 40/40       | 20/20    | 20/20       | N/A       | Multi | ***1x8***        |
 | *Hip Thrust*                                                                              | 180/180     | 145/145  | 100/100     | 70/70     | Multi | N/A              |
 | KB RDL                                                                                    | 30/30       | 20/20    | 15/15       | 10/10     | Multi | N/A              |
@@ -230,9 +233,7 @@ have at least one free form day like this every week since following this new pr
 | Side Lateral QL Extension                                                                 | 25/25       | 10/10    | 10/10       | 10/10     | Multi | N/A              |
 | *Sled Push to Alternating Lateral Pull*                                                   | 50/50       | 35/35    | 25/25       | 10/10     | Multi | 1/2 of ***1x8*** |
 | *Sled Push to Pull*                                                                       | 50/50       | 35/35    | 25/25       | 10/10     | Multi | 1/2 of ***1x8*** |
-| *Suitcase Bottom Ups*                                                                     | 30/30       | 20/20    | 15/15       | N/A       | Multi | 1/2 of ***1x8*** |
 | Super ROM                                                                                 | N/A         | 10/10    | 5/5         | 5/5       | Multi | ***2x8***        |
-| Suitcase                                                                                  | 40/40       | 30/30    | 20/20       | N/A       | Multi | 1/2 of ***1x8*** |
 | Roman Chair Hip Abduction                                                                 | 10/10       | 10/10    | 10/10       | N/A       | Multi | N/A              |
 | Walking Barbell Zercher Lunge                                                             | 40/40       | 20/20    | 20/20       | 20/20     | Multi | 1/2 of ***1x8*** |
 
