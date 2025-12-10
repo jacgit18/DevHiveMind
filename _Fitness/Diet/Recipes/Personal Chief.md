@@ -6,6 +6,9 @@ Second cook day during work week cook full meal in day instead of just protein a
 
 Vaccum seal cooked chicken breast when you dont feel like eating all back to back
 
+new calories target 2500
+
+Use cottage cheese in waffles
 ## 1. Budget Gate
 
 - **Food Cap:** $600/month.

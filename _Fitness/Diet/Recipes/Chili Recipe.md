@@ -21,6 +21,7 @@ This recipe yields a hearty, medium-spiced, bean-inclusive chili. The instructio
 
 ---
 
+
 #### **Ingredients**
 
 **The Aromatics & Base:**

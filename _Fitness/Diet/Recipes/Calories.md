@@ -1,5 +1,14 @@
 ### **Calorie Plan (Approximate Daily & Monthly Breakdown)**
 
+
+#### Spaghetti alla Carbonara
+- Spaghetti
+- Freshly cracked black pepper
+- Eggs (primarily yolks)
+- Guanciale _(preferred)_ → Pancetta _(acceptable)_ → Bacon or ground meat _(last resort)_
+- Pecorino Romano cheese
+- _(Optional, minimal)_ olive oil — only if the guanciale isn’t fatty enough
+
 #### **Base Shake – ~500 Calories**
 
 - Made with kefir (4 bottles = 32 days)
