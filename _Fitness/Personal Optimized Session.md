@@ -207,7 +207,7 @@ have at least one free form day like this every week since following this new pr
 | **[Front Preacher Bench Reverse Curl](https://youtu.be/h8LVaKRAFY0?si=ix3lKao_fRA33nqU)** | 30/30       | 20/20     | 20/20       | N/A       | Arm   | N/A              |
 | **[Incline Bench Preacher Curl](https://www.youtube.com/watch?v=02TvQZiVdic)**            | 30/30       | 20/20     | 20/20       | N/A       | Arm   | N/A              |
 | *Lateral Head Unilateral Tricep Ext*                                                      | 17/17       | 17/17     | 17/17       | 17/17     | Arm   | N/A              |
-| *Lat Pull Down*                                                                           | 200/100     | 160/80    | 100/50      | 25/25     | Arm   | N/A              |
+| *Lat Pull Down*                                                                           | 200/100     | 160/80    | 160/80      | 100/50    | Arm   | N/A              |
 | Scarecrow                                                                                 | 20/20       | 20/20     | 20/20       | 20/20     | Arm   | N/A              |
 | *Side Rear Delt Fly*                                                                      | 70/70       | 60/60     | 40/40       | 20/20     | Arm   | N/A              |
 | *Kneeling Arm Row*                                                                        | 50/50       | 30/30     | 20/20       | 10/10     | Arm   | N/A              |
