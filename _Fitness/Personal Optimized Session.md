@@ -35,10 +35,11 @@ Thursday or Friday rest day if multiple rest days 1 from each phase section.
 - [ ] Learn [How to Jump Rope (Beginner to Expert) - YouTube](https://youtu.be/wqN5bRkZPK0?si=zxXLzzBXywde4piE)
 - [ ] Build to Zercher lunge
 - [ ] DB switch catch instead for explosive week 5lb 1 min or 1 song
-- [ ] Add Isometric Overcoming to regimen maybe explosive week
+- [ ] Add Isometric Overcoming to regimen maybe explosive week place it early in session
 	- [ ] Overcoming Zercher Lunge or Squat 
 	- [ ] Overcoming Lateral wall push
 	- [ ] Overcoming deadlift different leg levels from Shin knee and thigh
+- [ ] Yielding isometric late in session be selective with which excercise you do it with
 
 ISO bilateral days maybe
 
@@ -49,7 +50,7 @@ ISO bilateral days maybe
 
 
 
-Overcoming early and yielding late
+
 #### Schedule for Alternating Variation in Exercises
 Alternate each month keeping the week training phase in to account the weights follow like this when alternating phase in session **explosive** to **hypertrophy** | **explosive** to **strength** | **strength** to **hypertrophy** also weights follow ***explosive/hypertrophy/strength***.
 
