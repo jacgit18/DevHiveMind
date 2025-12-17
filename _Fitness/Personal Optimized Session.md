@@ -33,12 +33,23 @@ Thursday or Friday rest day if multiple rest days 1 from each phase section.
 - [ ] Use one set of halo's each direction, and kettlebell leg raises at lighter weight for exercises with out super sets.  
 - [ ] Eventually add [Rope Flow: Movement](https://youtu.be/ItVf97YhFL4?si=_Bo9m9TxxWgy6au0) and [Mace exercises](https://youtu.be/TdatDbqb8TY?si=QXCZiZTyP676wf32)
 - [ ] Learn [How to Jump Rope (Beginner to Expert) - YouTube](https://youtu.be/wqN5bRkZPK0?si=zxXLzzBXywde4piE)
+- [ ] Build to Zercher lunge
 - [ ] DB switch catch instead for explosive week 5lb 1 min or 1 song
 - [ ] Add Isometric Overcoming to regimen maybe explosive week
 	- [ ] Overcoming Zercher Lunge or Squat 
 	- [ ] Overcoming Lateral wall push
 	- [ ] Overcoming deadlift different leg levels from Shin knee and thigh
 
+ISO bilateral days maybe
+
+4 sets 3 sec per rep at 60% to 70% effort
+
+2 sets 10 sec per rep at 100% effort
+
+
+
+
+Overcoming early and yielding late
 #### Schedule for Alternating Variation in Exercises
 Alternate each month keeping the week training phase in to account the weights follow like this when alternating phase in session **explosive** to **hypertrophy** | **explosive** to **strength** | **strength** to **hypertrophy** also weights follow ***explosive/hypertrophy/strength***.
 
@@ -181,67 +192,67 @@ have at least one free form day like this every week since following this new pr
 
 
 
-| Unilateral/Bilateral                                                                      | One Rep Max | Strength | Hypertrophy | Explosive | Body  | Cust             |
-| ----------------------------------------------------------------------------------------- | ----------- | -------- | ----------- | --------- | ----- | ---------------- |
-| *Arnold Press*                                                                            | 40/40       | 30/30    | 15/15       | 15/15     | Arms  | N/A              |
-| **[Bayesian Cable Curl](https://youtu.be/4O24gFksZ04?si=poa8Lr-ymzw1-QrR)**               | 30/30       | 20/20    | 15/15       | 15/15     | Arm   | N/A              |
-| Cable Pec Minor                                                                           | 30/30       | 20/20    | 15/15       | 15/15     | Arm   | N/A              |
-| Chest - Fly                                                                               | 100/80      | 80/80    | 60/60       | 40/40     | Arm   | N/A              |
-| Cable RDL                                                                                 | 20/20       | 20/20    | 20/20       | 10/10     | Arms  | N/A              |
-| *Chin Up*                                                                                 | 10/10       | 10/10    | 10/10       | 10/10     | Arm   | N/A              |
-| *Narrow/Neutral Pull Up*                                                                  | 10/10       | 10/10    | 10/10       | 10/10     | Arm   | N/A              |
-| DB Cross Body Fly                                                                         | 30/30       | 20/20    | 20/20       | N/A       | Arm   | N/A              |
-| Cable/DB Overhead Tricep Extension                                                        | 20/20       | 10/10    | 10/10       | N/A       | Arm   | N/A              |
-| **[Front Preacher Bench Reverse Curl](https://youtu.be/h8LVaKRAFY0?si=ix3lKao_fRA33nqU)** | 30/30       | 20/20    | 20/20       | N/A       | Arm   | N/A              |
-| **[Incline Bench Preacher Curl](https://www.youtube.com/watch?v=02TvQZiVdic)**            | 30/30       | 20/20    | 20/20       | N/A       | Arm   | N/A              |
-| *Lateral Head Unilateral Tricep Ext*                                                      | 17/17       | 17/17    | 17/17       | 17/17     | Arm   | N/A              |
-| *Lat Pull Down*                                                                           | 200/100     | 160/80   | 100/50      | 25/25     | Arm   | N/A              |
-| Scarecrow                                                                                 | 20/20       | 20/20    | 20/20       | 20/20     | Arm   | N/A              |
-| *Side Rear Delt Fly*                                                                      | 70/70       | 60/60    | 40/40       | 20/20     | Arm   | N/A              |
-| *Kneeling Arm Row*                                                                        | 50/50       | 30/30    | 20/20       | 10/10     | Arm   | N/A              |
-| *Standing Arm Row*                                                                        | 60/60       | 50/50    | 20/20       | 10/10     | Arm   | N/A              |
-| V Raise                                                                                   | 20/20       | 20/20    | 20/20       | 20/20     | Arm   | N/A              |
-| *Unilateral Behind the Back Cable Lateral Raise*                                          | 10/10       | 7/7      | 10/10       | 7/7       | Arm   | N/A              |
-| *Zottman Curl*                                                                            | 20/20       | 20/20    | 15/15       | N/A       | Arm   | N/A              |
-| *Back Extension*                                                                          | N/A         | 10/10    | 10/10       | N/A       | Back  | N/A              |
-| **Barbel Good Morning**                                                                   | N/A         | 10/10    | N/A         | N/A       | Back  | N/A              |
-| Camberbered Bench Press                                                                   | 30/30       | 20/20    | 15/15       | 10/10     | Chest | N/A              |
-| *Dumbbell Chest Press*                                                                    | 30/30       | 25/25    | 20/20       | 15/15     | Chest | N/A              |
-| *Seated Wide Dip/Body Wide Dip*                                                           | 165/165     | 145/145  | 100/100     | 80/80     | Chest | N/A              |
-| Ab Roller                                                                                 | N/A         | N/A      | N/A         | N/A       | Core  | N/A              |
-| *Bench Reverse Crunch*                                                                    | N/A         | N/A      | N/A         | N/A       | Core  | N/A              |
-| Cable Assisted Pancake                                                                    | 40/40       | 30/30    | 30/30       | N/A       | Core  | N/A              |
-| *Dragon Flag*                                                                             | N/A         | N/A      | N/A         | N/A       | Core  | N/A              |
-| *Hanging Knee Raise*                                                                      | N/A         | N/A      | N/A         | N/A       | Core  | N/A              |
-| *Kneeling Cable Crunch*                                                                   | 70/70       | 50/50    | 30/30       | 30/30     | Core  | N/A              |
-| *PallofPress*                                                                             | 30/30       | 23/23    | 15/15       | 15/15     | Core  | N/A              |
-| Cable Hip Extension                                                                       | 60/60       | 50/50    | 30/30       | 15/15     | Leg   | N/A              |
-| Cable Kickback                                                                            | 30/30       | 20/20    | 15/15       | 15/15     | Leg   | N/A              |
-| Cable Side Kicks                                                                          | 30/30       | 20/20    | 15/15       | 15/15     | Leg   | N/A              |
-| *DB Bulgarian Split Squat*                                                                | 40/40       | 25/25    | 20/20       | 15/15     | Leg   | N/A              |
-| DB/Trap Bar Squat Jump                                                                    | 35/35       | 25/25    | 20/20       | 15/15     | Leg   | ***2x8***        |
-| *KB Leg Raise*                                                                            | 30/30       | 20/20    | 15/15       | 15/15     | Leg   | N/A              |
-| Leg Press                                                                                 | 500/300     | 300/270  | 180/90      | 90/90     | Leg   | N/A              |
-| *Inner Thigh Abduction*(90 widest)                                                        | 140/140     | 120/120  | 70/70       | 50/50     | Leg   | N/A              |
-| *Outer Thigh Adduction*                                                                   | 150/150     | 130/130  | 80/80       | 60/60     | Leg   | N/A              |
-| *Pistol Hack Squat*                                                                       | 75/75       | 45/45    | 25/25       | 25/25     | Leg   | N/A              |
-| *Prone Leg Curl*                                                                          | 90/50       | 80/30    | 50/20       | 20/20     | Leg   | N/A              |
-| Cable Woodchopper                                                                         | 30/30       | 20/20    | 15/15       | 15/15     | Multi | N/A              |
-| Clean Jerk Press                                                                          | 20/20       | 10/10    | 10/10       | 10/10     | Multi | ***2x8***        |
-| *Deadlift*                                                                                | 55/55       | 45/45    | 25/25       | 20/20     | Multi | N/A              |
-| *Farmer Carry*                                                                            | 15/15       | 15/15    | 15/15       | N/A       | Multi | N/A              |
-| *Suitcase Bottom Ups*                                                                     | 30/30       | 20/20    | 15/15       | N/A       | Multi | 1/2 of ***1x8*** |
-| Suitcase                                                                                  | 40/40       | 30/30    | 20/20       | N/A       | Multi | 1/2 of ***1x8*** |
-| *Halo*                                                                                    | 45/45       | 25/25    | 25/25       | N/A       | Multi | ***1x8***        |
-| *Hip Thrust*                                                                              | 180/180     | 160/160  | 100/100     | 70/70     | Multi | N/A              |
-| KB RDL                                                                                    | 30/30       | 20/20    | 15/15       | 10/10     | Multi | N/A              |
-| *Landmine Twist*                                                                          | 45/45       | 25/25    | 10/10       | 10/10     | Multi | N/A              |
-| Side Lateral QL Extension                                                                 | 25/25       | 10/10    | 10/10       | 10/10     | Multi | N/A              |
-| *Sled Push to Alternating Lateral Pull*                                                   | 50/50       | 35/35    | 25/25       | 10/10     | Multi | 1/2 of ***1x8*** |
-| *Sled Push to Pull*                                                                       | 50/50       | 35/35    | 25/25       | 10/10     | Multi | 1/2 of ***1x8*** |
-| Super ROM                                                                                 | N/A         | 10/10    | 5/5         | 5/5       | Multi | ***2x8***        |
-| Roman Chair Hip Abduction                                                                 | 10/10       | 10/10    | 10/10       | N/A       | Multi | N/A              |
-| Walking Barbell Zercher Lunge                                                             | 40/40       | 20/20    | 20/20       | 20/20     | Multi | 1/2 of ***1x8*** |
+| Unilateral/Bilateral                                                                      | One Rep Max | Strength  | Hypertrophy | Explosive | Body  | Cust             |
+| ----------------------------------------------------------------------------------------- | ----------- | --------- | ----------- | --------- | ----- | ---------------- |
+| *Arnold Press*                                                                            | 40/40       | 30/30     | 15/15       | 15/15     | Arms  | N/A              |
+| **[Bayesian Cable Curl](https://youtu.be/4O24gFksZ04?si=poa8Lr-ymzw1-QrR)**               | 30/30       | 20/20     | 15/15       | 15/15     | Arm   | N/A              |
+| Cable Pec Minor                                                                           | 30/30       | 20/20     | 15/15       | 15/15     | Arm   | N/A              |
+| Chest - Fly                                                                               | 100/80      | 80/80     | 60/60       | 40/40     | Arm   | N/A              |
+| Cable RDL                                                                                 | 20/20       | 20/20     | 20/20       | 10/10     | Arms  | N/A              |
+| *Chin Up*                                                                                 | 10/10       | 10/10     | 10/10       | 10/10     | Arm   | N/A              |
+| *Narrow/Neutral Pull Up*                                                                  | 10/10       | 10/10     | 10/10       | 10/10     | Arm   | N/A              |
+| DB Cross Body Fly                                                                         | 30/30       | 20/20     | 20/20       | N/A       | Arm   | N/A              |
+| Cable/DB Overhead Tricep Extension                                                        | 20/20       | 10/10     | 10/10       | N/A       | Arm   | N/A              |
+| **[Front Preacher Bench Reverse Curl](https://youtu.be/h8LVaKRAFY0?si=ix3lKao_fRA33nqU)** | 30/30       | 20/20     | 20/20       | N/A       | Arm   | N/A              |
+| **[Incline Bench Preacher Curl](https://www.youtube.com/watch?v=02TvQZiVdic)**            | 30/30       | 20/20     | 20/20       | N/A       | Arm   | N/A              |
+| *Lateral Head Unilateral Tricep Ext*                                                      | 17/17       | 17/17     | 17/17       | 17/17     | Arm   | N/A              |
+| *Lat Pull Down*                                                                           | 200/100     | 160/80    | 100/50      | 25/25     | Arm   | N/A              |
+| Scarecrow                                                                                 | 20/20       | 20/20     | 20/20       | 20/20     | Arm   | N/A              |
+| *Side Rear Delt Fly*                                                                      | 70/70       | 60/60     | 40/40       | 20/20     | Arm   | N/A              |
+| *Kneeling Arm Row*                                                                        | 50/50       | 30/30     | 20/20       | 10/10     | Arm   | N/A              |
+| *Standing Arm Row*                                                                        | 60/60       | 50/50     | 20/20       | 10/10     | Arm   | N/A              |
+| V Raise                                                                                   | 20/20       | 20/20     | 20/20       | 20/20     | Arm   | N/A              |
+| *Unilateral Behind the Back Cable Lateral Raise*                                          | 10/10       | 7/7       | 10/10       | 7/7       | Arm   | N/A              |
+| *Zottman Curl*                                                                            | 20/20       | 20/20     | 15/15       | N/A       | Arm   | N/A              |
+| *Back Extension*                                                                          | N/A         | 10/10     | 10/10       | N/A       | Back  | N/A              |
+| **Barbel Good Morning**                                                                   | N/A         | 10/10     | N/A         | N/A       | Back  | N/A              |
+| Camberbered Bench Press                                                                   | 30/30       | 20/20     | 15/15       | 10/10     | Chest | N/A              |
+| *Dumbbell Chest Press*                                                                    | 30/30       | 27.5/27.5 | 20/20       | 15/15     | Chest | N/A              |
+| *Seated Wide Dip/Body Wide Dip*                                                           | 165/165     | 145/145   | 100/100     | 80/80     | Chest | N/A              |
+| Ab Roller                                                                                 | N/A         | N/A       | N/A         | N/A       | Core  | N/A              |
+| *Bench Reverse Crunch*                                                                    | N/A         | N/A       | N/A         | N/A       | Core  | N/A              |
+| Cable Assisted Pancake                                                                    | 40/40       | 30/30     | 30/30       | N/A       | Core  | N/A              |
+| *Dragon Flag*                                                                             | N/A         | N/A       | N/A         | N/A       | Core  | N/A              |
+| *Hanging Knee Raise*                                                                      | N/A         | N/A       | N/A         | N/A       | Core  | N/A              |
+| *Kneeling Cable Crunch*                                                                   | 70/70       | 50/50     | 30/30       | 30/30     | Core  | N/A              |
+| *PallofPress*                                                                             | 30/30       | 27/27     | 20/20       | 15/15     | Core  | N/A              |
+| Cable Hip Extension                                                                       | 60/60       | 50/50     | 30/30       | 15/15     | Leg   | N/A              |
+| Cable Kickback                                                                            | 30/30       | 20/20     | 15/15       | 15/15     | Leg   | N/A              |
+| Cable Side Kicks                                                                          | 30/30       | 20/20     | 15/15       | 15/15     | Leg   | N/A              |
+| *DB Bulgarian Split Squat*                                                                | 40/40       | 25/25     | 20/20       | 15/15     | Leg   | N/A              |
+| DB/Trap Bar Squat Jump                                                                    | 35/35       | 25/25     | 20/20       | 15/15     | Leg   | ***2x8***        |
+| *KB Leg Raise*                                                                            | 30/30       | 20/20     | 15/15       | 15/15     | Leg   | N/A              |
+| Leg Press                                                                                 | 500/300     | 300/270   | 180/90      | 90/90     | Leg   | N/A              |
+| *Inner Thigh Abduction*(90 widest)                                                        | 140/140     | 120/120   | 70/70       | 50/50     | Leg   | N/A              |
+| *Outer Thigh Adduction*                                                                   | 150/150     | 130/130   | 80/80       | 60/60     | Leg   | N/A              |
+| *Pistol Hack Squat*                                                                       | 75/75       | 45/45     | 25/25       | 25/25     | Leg   | N/A              |
+| *Prone Leg Curl*                                                                          | 90/50       | 80/30     | 50/20       | 20/20     | Leg   | N/A              |
+| Cable Woodchopper                                                                         | 30/30       | 20/20     | 15/15       | 15/15     | Multi | N/A              |
+| Clean Jerk Press                                                                          | 20/20       | 10/10     | 10/10       | 10/10     | Multi | ***2x8***        |
+| *Deadlift*                                                                                | 55/55       | 45/45     | 25/25       | 20/20     | Multi | N/A              |
+| *Farmer Carry*                                                                            | 15/15       | 15/15     | 15/15       | N/A       | Multi | N/A              |
+| *Suitcase Bottom Ups*                                                                     | 30/30       | 20/20     | 15/15       | N/A       | Multi | 1/2 of ***1x8*** |
+| Suitcase                                                                                  | 40/40       | 30/30     | 20/20       | N/A       | Multi | 1/2 of ***1x8*** |
+| *Halo*                                                                                    | 45/45       | 25/25     | 25/25       | N/A       | Multi | ***1x8***        |
+| *Hip Thrust*                                                                              | 300/300     | 200/200   | 130/130     | 70/70     | Multi | N/A              |
+| KB RDL                                                                                    | 30/30       | 20/20     | 15/15       | 10/10     | Multi | N/A              |
+| *Landmine Twist*                                                                          | 45/45       | 25/25     | 10/10       | 10/10     | Multi | N/A              |
+| Side Lateral QL Extension                                                                 | 25/25       | 10/10     | 10/10       | 10/10     | Multi | N/A              |
+| *Sled Push to Alternating Lateral Pull*                                                   | 50/50       | 35/35     | 25/25       | 10/10     | Multi | 1/2 of ***1x8*** |
+| *Sled Push to Pull*                                                                       | 50/50       | 35/35     | 25/25       | 10/10     | Multi | 1/2 of ***1x8*** |
+| Super ROM                                                                                 | N/A         | 10/10     | 5/5         | 5/5       | Multi | ***2x8***        |
+| Roman Chair Hip Abduction                                                                 | 10/10       | 10/10     | 10/10       | N/A       | Multi | N/A              |
+| Walking Barbell Zercher Lunge                                                             | 20/20       | 20/20     | 20/20       | 20/20     | Multi | 1/2 of ***1x8*** |
 
 
 
