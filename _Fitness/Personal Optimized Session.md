@@ -41,7 +41,6 @@ Thursday or Friday rest day if multiple rest days 1 from each phase section.
 	- [ ] Overcoming deadlift different leg levels from Shin knee and thigh
 - [ ] Yielding isometric late in session be selective with which excercise you do it with
 
-ISO bilateral days maybe
 
 4 sets 3 sec per rep at 60% to 70% effort
 
@@ -95,8 +94,8 @@ Alternate each month keeping the week training phase in to account the weights f
 2. **Hip thrust** to **Chest press** 
 3. **Leg press** to **Chest press** || **[Pistol Hack Squat](https://www.youtube.com/watch?v=w-LKHuNiiTc)** to **Zottman Curl**
 4. **Pallof Press**(bands/cables) to **[Half Kneeling/Standing Arm Row](https://youtu.be/afE9JabFqR4?si=Q7eXtrCmYCcxOV_T)** 
-5. **Sled Push/Pull**  to **Deadlift** || **Trap Bar/DB Squat Jump** 📈
-#### **Regular sets** -                                        Hypertrophy(10x1) for multiple songs long, Strength(4x8), Explosive(3x4)
+5. **Sled Push/Pull** to **Farmer/Suitcase**  📈
+#### **Regular sets** -  Hypertrophy(10x1) for multiple songs long, Strength(4x8), Explosive(3x4)
 
 7. **[Side rear Delt Fly](https://youtu.be/P81mH8n68h4?si=eGoGz-v2JIxxjTfB)** 
 8. **[Cable Assisted Pancake](https://youtu.be/yxXD_5RGakM?si=vFxPzJFnswWk71Zy)**(Low Angle) 📈
@@ -118,8 +117,10 @@ Alternate each month keeping the week training phase in to account the weights f
 ### Sunday 
 #### **Antagonistic super-sets**
 1. **[Behind the Back Lateral Raise](https://www.youtube.com/watch?v=y4Djk_G0yEg)** || **[Unilateral Overhead Tricep Extension](https://youtu.be/FE_AsjcTImc?si=gzyVqZ88Yq9KTRiG)**(Low Angle) to **Kneeling Cable Crunch**(High Angle) 
-2. **Walk**: half distance **farmer/suitcase** to **Arnold press**/plyometric || **Barbell Zercher Lunge**  to **Overhead Press**
-3. **Leg press** to **Chest press** || **[Pistol Hack Squat](https://www.youtube.com/watch?v=w-LKHuNiiTc)** to **Zottman Curl**
+2. **Sled Push/Pull** to **Farmer/Suitcase**  📈
+3. **Arnold press** to 
+4. **Barbell Zercher Lunge**  to **Overhead Press**
+5. **Leg press** to **Chest press** || **[Pistol Hack Squat](https://www.youtube.com/watch?v=w-LKHuNiiTc)** to **Zottman Curl**
 
 #### **Regular sets**
 4. **Back Extension** 
@@ -209,7 +210,7 @@ have at least one free form day like this every week since following this new pr
 | *Lateral Head Unilateral Tricep Ext*                                                      | 17/17       | 17/17     | 17/17       | 17/17     | Arm   | N/A              |
 | *Lat Pull Down*                                                                           | 200/100     | 160/80    | 160/80      | 100/50    | Arm   | N/A              |
 | Scarecrow                                                                                 | 20/20       | 20/20     | 20/20       | 20/20     | Arm   | N/A              |
-| *Side Rear Delt Fly*                                                                      | 70/70       | 60/60     | 40/40       | 20/20     | Arm   | N/A              |
+| *Side Rear Delt Fly*                                                                      | 80/80       | 70/70     | 60/60       | 30/30     | Arm   | N/A              |
 | *Kneeling Arm Row*                                                                        | 50/50       | 30/30     | 20/20       | 10/10     | Arm   | N/A              |
 | *Standing Arm Row*                                                                        | 60/60       | 50/50     | 20/20       | 10/10     | Arm   | N/A              |
 | V Raise                                                                                   | 20/20       | 20/20     | 20/20       | 20/20     | Arm   | N/A              |
