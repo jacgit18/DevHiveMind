@@ -19,6 +19,10 @@ If together around 1,100 max monthly
 Avoid maxing it out to that amount
 
 
+[Brooklyn man says auto repair shop held his car hostage - YouTube](https://youtu.be/2H5Cz38I9Ic?si=1QHMRTLLhHfN0DoR)
+
+
+[Driving from NYC to the Hamptons \| New York's WEALTHIEST Summer Community - YouTube](https://youtu.be/15l746AVWU0?si=kWWCRxYr3rufPWmE)
 ### Cost categories of your car
 
 Depreciation  
