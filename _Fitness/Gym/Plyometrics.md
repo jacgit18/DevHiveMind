@@ -59,7 +59,9 @@ Experiment adding plate on back for each variation
 - **[Curtsy Lateral Bound to Box Jump](https://youtu.be/0rVHnVFBliY?si=2oUKjvjmW2vcRkcJ)**
 - **Lateral Bound to Stick** – 2x4/side (stabilize on landing)
 - **[Depth Drops](https://youtu.be/GZLyZCqF8BQ?si=nBlSwsv1gYkI-E7G) to  [Broad Jumps](https://youtu.be/c6Etg7bpFfI?si=OiQycPSYIMS67gHu)**
-- **[Depth Jump](https://www.youtube.com/watch?v=NvSkuYwNxco)** – focus on minimal ground contact time jump intimidate on impact.  
+- **[Depth Jump](https://www.youtube.com/watch?v=NvSkuYwNxco)** – focus on minimal ground contact time jump intimidate on impact. 
+- Pogo hops
+- [Reverse Lunge Knee Drive](https://youtu.be/bwZKXTk7wNg?si=oEZjcqjm6Yeztdzq)
 - **[Duck Walks](https://www.youtube.com/watch?v=qM3GNLKI9rg)**(maybe with mediball) – **2 passes across gym or 30–45 seconds** 
 - **Single-Leg Hops**(focus on stability and balance)
 - **[Split Squat Jumps](https://www.youtube.com/watch?v=4DMvFDaqIys&t=13s)** – focus on vertical drive and soft landings.
