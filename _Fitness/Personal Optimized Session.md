@@ -46,10 +46,12 @@ Thursday or Friday rest day if multiple rest days 1 from each phase section.
 
 2 sets 10 sec per rep at 100% effort
 
+[I Reveal DEAD HANG Secrets for Maximum Full Body Strength - YouTube](https://youtu.be/ZeFGPBxKc2A?si=iUGaSbNqgLDae_8K)
 
 
+[Sculpt your lower back - YouTube](https://youtu.be/ayxOIbhl48I?si=iDI5tTZBOtlUzZDp)
 
-
+[Knees over Toes Lunge - YouTube](https://youtu.be/5RmrHINDYl8?si=wU_FV0a0Znqn0kbS)
 #### Schedule for Alternating Variation in Exercises
 Alternate each month keeping the week training phase in to account the weights follow like this when alternating phase in session **explosive** to **hypertrophy** | **explosive** to **strength** | **strength** to **hypertrophy** also weights follow ***explosive/hypertrophy/strength***.
 
@@ -111,7 +113,7 @@ Alternate each month keeping the week training phase in to account the weights f
 6. **Back Extension** 
 7. **Inner Thigh Abduction**
 8. **Outer Thigh Adduction** 
-9. **[Side rear Delt Fly](https://youtu.be/P81mH8n68h4?si=eGoGz-v2JIxxjTfB)** 
+
 
 
 ### Sunday 
@@ -131,7 +133,6 @@ Alternate each month keeping the week training phase in to account the weights f
 9. **Chin-up** || **Pull-up** 📈
 
 ## Explosive/Strength
-Use Isometric holds for strength week which aids in stability. Do DB switch catch on explosive week which is one week out of the month. 
 
 ### Monday(Pre prep for meal prep) 
 

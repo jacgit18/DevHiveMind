@@ -23,6 +23,22 @@ Avoid maxing it out to that amount
 
 
 [Driving from NYC to the Hamptons \| New York's WEALTHIEST Summer Community - YouTube](https://youtu.be/15l746AVWU0?si=kWWCRxYr3rufPWmE)
+
+
+[What is the BEST Fuel to Use in Your Car or Truck and WHY - YouTube](https://youtu.be/Bb5VfiFy0kY?si=tkH1HQYE57CzX2Aa)
+
+
+[If you're buying a used car in 2026, you NEED to watch this.. - YouTube](https://youtu.be/s2ZgVyD9C1k?si=pIqfEwesDQ3gvs8O)
+
+
+[6 Rules That Will Make Your Car Last 300,000 Miles - A Parts Guy's Maintenance Schedule. - YouTube](https://youtu.be/8Ote9sLF0Jw?si=5dZia5nxC0RgHhOo)
+
+
+[Tips to save on your car insurance premium - YouTube](https://youtu.be/9Gm1eCKuMlA?si=-QOp1MpA_ndJtWGF)
+
+
+[I Just Bought The CHEAPEST Tesla Model X In The Country! - YouTube](https://youtu.be/v_IZ6Z7jFO0?si=5e6pEdiF7fpl-Yww)
+
 ### Cost categories of your car
 
 Depreciation  
