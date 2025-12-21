@@ -37,7 +37,12 @@ Avoid maxing it out to that amount
 [Tips to save on your car insurance premium - YouTube](https://youtu.be/9Gm1eCKuMlA?si=-QOp1MpA_ndJtWGF)
 
 
-[I Just Bought The CHEAPEST Tesla Model X In The Country! - YouTube](https://youtu.be/v_IZ6Z7jFO0?si=5e6pEdiF7fpl-Yww)
+[I Just Bought The CHEAPEST Tesla Model X In The Country! - YouTube
+](https://youtu.be/v_IZ6Z7jFO0?si=5e6pEdiF7fpl-Yww)
+
+
+[How to Get the LOWEST Car Insurance Rate (Insider Secret) - YouTube](https://youtu.be/mhV5fGkAoBI?si=vlmiJvU1VoisxTbl)
+
 
 ### Cost categories of your car
 

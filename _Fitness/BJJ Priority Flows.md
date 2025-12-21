@@ -39,6 +39,27 @@ Dig through the ground and reach for the sky and break them down to ground
 - [ ] Look into Knee-on-Belly and add stuff here
 - [ ] Keep chin close to chest in general when person tries to get arm behind neck for control and keep you flat on black.
 
+keep elbows in and tight be small in general when grappling 
+
+[HOW TO avoid KNEE REAP INJURY - YouTube](https://youtu.be/wYTpl43MNvE?si=IIBkt7___EJ5fzL4)
+
+[Framing for effective Side Control Escapes - YouTube](https://youtu.be/ary963VdmqY?si=T6xhx6yLhlj2S0Db)
+
+[Shrimp crawl with a resistance cord - YouTube](https://youtu.be/1OM9QJQHZiQ?si=LjCB0h83xAL7NT73)
+
+[Mikey Musumeci Warm up for Jiu Jitsu \| COBRINHA BJJ #bjj #nogi - YouTube](https://youtu.be/gqrw5UuKy3o?si=HjxOpgAP7VTC7odC)
+
+
+[How To Use Lockdown to Escape a Tight Half Guard Smasher in BJJ - YouTube](https://youtu.be/tcS7oBdpRW0?si=oQ3dg8NOV01CJmsp)
+
+
+[Two on one arm isolation to an unnamed uncomfortable position - YouTube](https://youtu.be/d12ZOY3TgvY?si=3ywjXljUAuNDsSH-)
+
+
+[How to Generate Momentum When You're Stuck on the Ground - YouTube](https://youtu.be/zvH5eAsLyw0?si=eC2FgeLYQoWL_m7R)
+
+[Best Warm-Up for Jiu-Jitsu: Cameron Shayne's Budokan (Full B-Team Class) - YouTube](https://youtu.be/eKVcygzipiE?si=OOF7MTuI3TPyHHto)
+
 #todo/purchases 
 - [ ] [Neck Exercise Equipment](https://neckslevel.com/?srsltid=AfmBOop5fT_Vv8l5LRpyCbvCpA1c5eqQy_aHAuAeLX2zwNFjMtC1X-Y0)
 

@@ -9,6 +9,37 @@ Vaccum seal cooked chicken breast when you dont feel like eating all back to bac
 new calories target 2500
 
 Use cottage cheese in waffles
+
+
+  
+
+Toasted sweet plantain 
+
+  
+
+Sauce 
+
+Lemon
+
+Brown suger 
+
+Ginger
+
+  
+
+Plantain yellow 
+
+Cut in the middle half leave peel on 
+
+350 30 min in oven
+
+  
+
+Then 10 more min or more with sauce
+
+
+
+
 ## 1. Budget Gate
 
 - **Food Cap:** $600/month.
