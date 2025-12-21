@@ -58,12 +58,10 @@ Thursday or Friday rest day if multiple rest days 1 from each phase section.
 
 Chest press alt arm one pushing one iso holding
 
-  
 
 Waited pull up then iso knee raise
 
-  
-  
+
 
 Iso hold to explode
 
