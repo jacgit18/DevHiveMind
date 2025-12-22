@@ -9,6 +9,60 @@
 - Pecorino Romano cheese
 - _(Optional, minimal)_ olive oil — only if the guanciale isn’t fatty enough
 
+
+Cook potatoes and onions partially with oil and some salt
+
+then cook meat adding season
+
+add potatoes back and add water and coconut milk 
+
+then add spinach and peas
+
+  
+
+Inspired Keema Curry
+
+∙30g (2T) oil
+
+∙225g (1½c) onion, medium dice
+
+∙225g (1½c) potato, medium dice
+
+∙450g (1lb) ground beef
+
+∙25g (1½T) tomato paste
+
+∙5g (1t) cumin
+
+∙5g (1t) curry powder 
+
+∙3g (½t) garam masala (or sub more curry)
+
+∙200g (¾c) water
+
+∙400g (1 can) full-fat coconut milk
+
+∙150g (1c) frozen peas
+
+∙150g (5oz) baby spinach, chopped
+
+∙5–10g (1–2t) salt, divided
+
+1 Heat large nonstick with oil over med-high. Sauté onion, potato, pinch salt in oil 5 min till browned. Move to bowl
+
+2 Brown beef + pinch salt 5–6 min till crumbly.
+
+3 Add tomato paste + spices. Stir 30 sec.
+
+4 Add potato mix back to pan with water, coconut milk, pinch salt. Simmer 5–8 min to reduce.
+
+5 Add peas + spinach. Stir 1 min. Serve with rice.
+
+
+
+
+
+
 #### **Base Shake – ~500 Calories**
 
 - Made with kefir (4 bottles = 32 days)
