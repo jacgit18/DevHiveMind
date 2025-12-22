@@ -41,13 +41,22 @@ Dig through the ground and reach for the sky and break them down to ground
 
 keep elbows in and tight be small in general when grappling 
 
+[Jiu-Jitsu Physio Ball Core Workout (Video 1 of 3) - YouTube](https://youtu.be/7iqeYRney2Q?si=EnB0MEe1C0Udiewf)
+
+[Jiu-Jitsu Physio Ball Core Workout (Video 2 of 3) - YouTube](https://youtu.be/u-ImHVvEW24?si=6sHPVCTuQfL-heLn)
+
+[Jiu-Jitsu Physio Ball Core Workout (Video 3 of 3) - YouTube](https://youtu.be/cSnRYggk6nY?si=Rc1HnpCPYQLwPnbc)
+
+
+[13 Solo Drills With Exercise Ball to boost Your Endurance for BJJ - YouTube](https://youtu.be/12soMZyeZng?si=SFNoPMSM4dX9PJTy)
+
 [HOW TO avoid KNEE REAP INJURY - YouTube](https://youtu.be/wYTpl43MNvE?si=IIBkt7___EJ5fzL4)
 
 [Framing for effective Side Control Escapes - YouTube](https://youtu.be/ary963VdmqY?si=T6xhx6yLhlj2S0Db)
 
 [Shrimp crawl with a resistance cord - YouTube](https://youtu.be/1OM9QJQHZiQ?si=LjCB0h83xAL7NT73)
 
-[Mikey Musumeci Warm up for Jiu Jitsu \| COBRINHA BJJ #bjj #nogi - YouTube](https://youtu.be/gqrw5UuKy3o?si=HjxOpgAP7VTC7odC)
+[Mikey Musumeci Warm up for Jiu Jitsu \| COBRINHA BJJ- YouTube](https://youtu.be/gqrw5UuKy3o?si=HjxOpgAP7VTC7odC)
 
 
 [How To Use Lockdown to Escape a Tight Half Guard Smasher in BJJ - YouTube](https://youtu.be/tcS7oBdpRW0?si=oQ3dg8NOV01CJmsp)

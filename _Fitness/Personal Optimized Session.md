@@ -42,6 +42,8 @@ Thursday or Friday rest day if multiple rest days 1 from each phase section.
 	- [ ] Overcoming deadlift different leg levels from Shin knee and thigh
 - [ ] Yielding isometric late in session be selective with which excercise you do it with
 
+Pilates are just slow controled precise movement 
+
 
 4 sets 3 sec per rep at 60% to 70% effort
 
