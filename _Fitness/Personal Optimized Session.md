@@ -68,7 +68,7 @@ Waited pull up then iso knee raise
 Iso hold to explode
 
 
-
+limit presses twice a week  
 
 
 
