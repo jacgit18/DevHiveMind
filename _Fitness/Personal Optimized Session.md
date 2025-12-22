@@ -354,3 +354,4 @@ have at least one free form day like this every week since following this new pr
 | Plate or Book Pinch Hold (1–2 books)  | 3    | 10–12 reps | 45–60 sec |
 
 
+![[anatomychart1.jpg]]
