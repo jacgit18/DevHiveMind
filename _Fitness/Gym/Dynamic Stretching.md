@@ -22,6 +22,9 @@ dg-publish:
 
 Start with a dynamic stretch to Improve blood flow and flexibility. End with a static stretch targeting major muscle groups. Basically any static stretch has a dynamic variation with movement. 
 
+[Stretching Exercises with Ball - YouTube](https://youtu.be/w8Yzri4Ap3k?si=TjJK6xPLiCEqLAix)
+
+
 #todo/BAU/Workout 
 - [ ] Aim for like 10 to 20 reps for most stretches and 5 to 10 if alternating sides else 30sec duration if rapid movement.
 - [ ] Avoid cold water baths close to workouts especially post maybe consider doing it a few hours before sleeping make sure you really stretch to warm up again to reduce injury from cold muscle.
