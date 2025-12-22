@@ -1,5 +1,29 @@
 ### **Calorie Plan (Approximate Daily & Monthly Breakdown)**
 
+Starchy Carbs
+Plantain 
+potato
+
+
+
+Paprika
+
+Garlic 
+
+Chili powder 
+
+Whatever cheese for macaroni 
+
+  
+  
+
+Dijon 
+
+Milk 
+
+Cheese
+
+
 
 #### Spaghetti alla Carbonara
 - Spaghetti
@@ -59,6 +83,107 @@ Inspired Keema Curry
 5 Add peas + spinach. Stir 1 min. Serve with rice.
 
 
+
+
+
+Halal rice and chicken
+
+  
+
+White sauce
+
+Mayo 100 grams
+
+Greek yogurt 50 grams
+
+White vinegar 15 G
+
+Paprika
+
+Oregano
+
+Black pepper
+
+Garlic powder
+
+Lemon juice
+
+Salt
+
+  
+  
+
+Chicken marinade
+
+Mayonnaise
+
+Cumin seed
+
+5 Cloves
+
+Oregano
+
+Black pepper
+
+Garlic
+
+Lemon
+
+  
+
+Halal rice slightly toast ingredients
+
+Butter
+
+Cumin seed
+
+Onion
+
+Turmeric
+
+Smoke paprika
+
+Bay leaf
+
+  
+
+Add basmati rice toasting it as well mixing it with stuff until yellow
+
+Then add water
+
+  
+  
+
+Use Sriracha or something in place of red sauce
+
+
+
+
+  
+
+Toasted sweet plantain 
+
+  
+
+Sauce 
+
+Lemon
+
+Brown suger 
+
+Ginger
+
+  
+
+Plantain yellow 
+
+Cut in the middle half leave peel on 
+
+350 30 min in oven
+
+  
+
+Then 10 more min or more with sauce
 
 
 
