@@ -47,6 +47,8 @@ Publish message to pager duty in the future
 
 When using sns in localstack with sns it wont send an actual email
 
+![[_NoteAssets/Images To Move/2025-12-23 16.03.02 www.youtube.com 300a7d8173d9.png]]
+
 
 
 Java isn't good for serverless in comparison to other languages
