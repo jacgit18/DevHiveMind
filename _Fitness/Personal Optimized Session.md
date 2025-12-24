@@ -72,6 +72,8 @@ limit presses twice a week
 
 
 
+[How to Juggle 3 Balls IN TWO MINUTES (Step by Step Tutorial) - YouTube](https://youtu.be/p4_IUMS4yc8?si=NfVKkklqBmDF1tQy)
+
 #### Schedule for Alternating Variation in Exercises
 Alternate each month keeping the week training phase in to account the weights follow like this when alternating phase in session **explosive** to **hypertrophy** | **explosive** to **strength** | **strength** to **hypertrophy** also weights follow ***explosive/hypertrophy/strength***.
 
