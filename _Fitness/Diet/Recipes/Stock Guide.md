@@ -14,6 +14,10 @@ Relates:
 
 ---
 
+[Braising liquid formula and core ingredients \| Claude](https://claude.ai/share/cb2d2ed9-393d-4077-8e4c-a92667f6e569)
+
+
+[ChatGPT - Whole Cow Meat NYC](https://chatgpt.com/share/686b18ec-97dc-800d-ad17-a213c1220fee)
 ## **📌 Key Differences at a Glance**  
 | **Factor**          | **Chicken Stock**                          | **Beef Stock**                          |
 |---------------------|------------------------------------------|----------------------------------------|
