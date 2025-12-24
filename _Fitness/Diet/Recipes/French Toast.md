@@ -11,6 +11,7 @@ Relates: "[[Bread]]"
 ---
 Here's a revised version of the high-calorie French toast recipes with average calorie counts for each ingredient, including calories per slice of whole-grain bread:
 
+
 ---
 
 ### **1. Peanut Butter and Honey French Toast**
