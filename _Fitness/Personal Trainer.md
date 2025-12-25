@@ -45,7 +45,7 @@ Pilates are just slow controlled precise movement
 
 ISO hold to explode
 
-Limit presses twice a week  
+
 
 
 - [ ] Do 1 minute rest between reps and 2 min between exercises especially if going heavy.
