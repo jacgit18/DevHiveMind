@@ -93,7 +93,7 @@ Alternate each month keeping the week training phase in to account the weights f
 2. **Hip thrust** to **Chest press** 
 3. **Leg press** to **Chest press** || **[Pistol Hack Squat](https://www.youtube.com/watch?v=w-LKHuNiiTc)** to **Arnold press**
 4. **Pallof Press**(bands/cables) to **[Half Kneeling/Standing Arm Row](https://youtu.be/afE9JabFqR4?si=Q7eXtrCmYCcxOV_T)** 
-5. **Sled Push/Pull**  to **Farmer/Suitcase** || **Trap Bar/DB Squat Jump** 📈
+5. **Sled Push/Pull** to **Farmer/Suitcase**||**Trap Bar/DB Squat Jump** 📈
 #### **Regular sets** -  Hypertrophy(10x1) for multiple songs long, Strength(4x8), Explosive(3x4)
 
 6. **[Side rear Delt Fly](https://youtu.be/P81mH8n68h4?si=eGoGz-v2JIxxjTfB)** 
@@ -102,7 +102,7 @@ Alternate each month keeping the week training phase in to account the weights f
 ### Saturday
 
 #### **Antagonistic super-sets**
-1. **[Cable Woodchopper](https://www.youtube.com/watch?v=mvvu8imyMFs)**(Low angle) || **[Landmine Twist](https://youtu.be/M93HfnAVIl8?si=7KtnpfDB0GYobD9Z)** to **Kettlebell Leg Raise** 
+1. **[Cable Woodchopper](https://www.youtube.com/watch?v=mvvu8imyMFs)**(Low angle)||**[Landmine Twist](https://youtu.be/M93HfnAVIl8?si=7KtnpfDB0GYobD9Z)** to **Kettlebell Leg Raise** 
 2. **Pallof Press**(bands/cables) to **[Half Kneeling/Standing Arm Row](https://youtu.be/afE9JabFqR4?si=Q7eXtrCmYCcxOV_T)** 
 3. **Wide Tricep Dip** to **[Hanging Knee Raise](https://youtu.be/RD_A-Z15ER4?si=h0fyUA7SXg4vWE2a)** 📈
 #### **Regular sets**
@@ -115,9 +115,9 @@ Alternate each month keeping the week training phase in to account the weights f
 ### Sunday 
 #### **Antagonistic super-sets**
 1. **[Behind the Back Lateral Raise](https://www.youtube.com/watch?v=y4Djk_G0yEg)** || **[Unilateral Overhead Tricep Extension](https://youtu.be/FE_AsjcTImc?si=gzyVqZ88Yq9KTRiG)**(Low Angle) to **Kneeling Cable Crunch**(High Angle) 
-2. **Barbell Zercher Lunge**  to **Overhead Press**
+2. **Barbell Zercher Lunge** to **Overhead Press**
 3. **Leg press** to **Chest press** || **[Pistol Hack Squat](https://www.youtube.com/watch?v=w-LKHuNiiTc)** to **Arnold press**
-4. **Sled Push/Pull**  to **Farmer/Suitcase** || **Trap Bar/DB Squat Jump** 📈
+4. **Sled Push/Pull** to **Farmer/Suitcase**||**Trap Bar/DB Squat Jump** 📈
 5. **Bench Reverse Crunch || [Dragon Flag](https://youtu.be/U5pviWt7sMo?si=bTziyFRf9FBf40sF) || Ab Roller** to **Chest press** 📈
 #### **Regular sets**
 6. **Back Extension** 
@@ -136,7 +136,7 @@ Alternate each month keeping the week training phase in to account the weights f
 3. **Leg press** to **Chest press** || **[Pistol Hack Squat](https://www.youtube.com/watch?v=w-LKHuNiiTc)** to **Arnold press**
 4. **Pallof Press**(bands/cables) to **[Half Kneeling/Standing Arm Row](https://youtu.be/afE9JabFqR4?si=Q7eXtrCmYCcxOV_T)** 
 5. **Wide Tricep Dip** to **[Hanging Knee Raise](https://youtu.be/RD_A-Z15ER4?si=h0fyUA7SXg4vWE2a)** 📈
-6. **Sled Push/Pull**  to **Farmer/Suitcase** || **Trap Bar/DB Squat Jump** 📈
+6. **Sled Push/Pull** to **Farmer/Suitcase**||**Trap Bar/DB Squat Jump** 📈
 #### **Regular sets**
 7. **[Side rear Delt Fly](https://youtu.be/P81mH8n68h4?si=eGoGz-v2JIxxjTfB)** 
 8. **Zottman Curl**
@@ -154,8 +154,8 @@ Alternate each month keeping the week training phase in to account the weights f
 #### **Antagonistic super-sets**
 1. **[Cable Woodchopper](https://www.youtube.com/watch?v=mvvu8imyMFs)**(Low angle) || **[Landmine Twist](https://youtu.be/M93HfnAVIl8?si=7KtnpfDB0GYobD9Z)** to **Kettlebell Leg Raise** 
 2. **[Behind the Back Lateral Raise](https://www.youtube.com/watch?v=y4Djk_G0yEg)**  || **[Unilateral Overhead Tricep Extension](https://youtu.be/FE_AsjcTImc?si=gzyVqZ88Yq9KTRiG)**(Low Angle) to **Kneeling Cable Crunch**(High Angle) 
-3. **Barbell Zercher Lunge**  to **Overhead Press**
-4. **Sled Push/Pull**  to **Farmer/Suitcase** || **Trap Bar/DB Squat Jump** 📈
+3. **Barbell Zercher Lunge** to **Overhead Press**
+4. **Sled Push/Pull** to **Farmer/Suitcase**||**Trap Bar/DB Squat Jump** 📈
 5. **Bench Reverse Crunch || [Dragon Flag](https://youtu.be/U5pviWt7sMo?si=bTziyFRf9FBf40sF) || Ab Roller** to **Chest press** 📈
 #### **Regular sets**
 6. **Back Extension** 
@@ -172,8 +172,8 @@ have at least one free form day like this every week since following this new pr
 1. **[Cable Woodchopper](https://www.youtube.com/watch?v=mvvu8imyMFs)**(Low angle) || **[Landmine Twist](https://youtu.be/M93HfnAVIl8?si=7KtnpfDB0GYobD9Z)** to **Kettlebell Leg Raise** 
 2. [[Plyometrics]]
 3. **Pallof Press**(bands/cables) to **[Half Kneeling/Standing Arm Row](https://youtu.be/afE9JabFqR4?si=Q7eXtrCmYCcxOV_T)** 
-4. **Barbell Zercher Lunge**  to **Overhead Press**
-5. **Sled Push/Pull**  to **Farmer/Suitcase** || **Trap Bar/DB Squat Jump** 📈
+4. **Barbell Zercher Lunge** to **Overhead Press**
+5. **Sled Push/Pull** to **Farmer/Suitcase**||**Trap Bar/DB Squat Jump** 📈
 6. **Bench Reverse Crunch || [Dragon Flag](https://youtu.be/U5pviWt7sMo?si=bTziyFRf9FBf40sF) || Ab Roller** to **Chest press** 📈
 #### **Regular sets**
 7. **Back Extension** 
