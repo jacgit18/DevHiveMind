@@ -19,6 +19,10 @@ console.log("User input:", userInput);
 }
 ```
 
+How does executing look like and what is the prep work involved and the process of showing your work for the things that matter that will increase your chances of success
+
+
+
 Do more riskier things when you at the beginning of your company to get notice obviously nothing illegal and bad looking but get what I mean
 
 When stuck during session ask and call in coworker
