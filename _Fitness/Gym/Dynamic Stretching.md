@@ -22,7 +22,10 @@ dg-publish:
 
 Start with a dynamic stretch to Improve blood flow and flexibility. End with a static stretch targeting major muscle groups. Basically any static stretch has a dynamic variation with movement. 
 
-[Stretching Exercises with Ball - YouTube](https://youtu.be/w8Yzri4Ap3k?si=TjJK6xPLiCEqLAix)
+[Stretching Exercises with Ball](https://youtu.be/w8Yzri4Ap3k?si=TjJK6xPLiCEqLAix)
+
+Add to warm up for [lower back](https://youtu.be/ayxOIbhl48I?si=iDI5tTZBOtlUzZDp)
+
 
 
 #todo/BAU/Workout 

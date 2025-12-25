@@ -41,6 +41,13 @@ Don't need to alternate as much for between hypertrophy reps for Antagonistic su
 
 Alternate weight ratios so one day heavier on landmine next day heavier on dumbbells and lighter on landline for super-sets.
 
+Pilates are just slow controlled precise movement 
+
+ISO hold to explode
+
+Limit presses twice a week  
+
+
 - [ ] Do 1 minute rest between reps and 2 min between exercises especially if going heavy.
 - [ ] For **hypertrophy week** weight lift in the afternoon or mid day, **skip weight lifting**, and do MMA on Thursday or Saturday.
 - [ ] Train explosive or strength on the Monday of hypertrophy week.

@@ -26,53 +26,28 @@ Thursday or Friday rest day if multiple rest days 1 from each phase section.
 - [ ] Finalize, refine, reduce, and prioritize exercises in [[Plyometrics]] and Stability program 
 - [ ] Add in [Good Morning](https://youtu.be/nWyx81AfTos?si=ReJqMdB_wh9t4yRs) after improving back extension and RDL
 - [ ] Eventually switch to sand bags from DB
+- [ ] Try Waited pull up then ISO knee raise while holding the pull up
+- [ ] Try [Knees over Toes Lunge](https://youtu.be/5RmrHINDYl8?si=wU_FV0a0Znqn0kbS)
+- [ ] Try [How to Juggle 3 Balls IN TWO MINUTES](https://youtu.be/p4_IUMS4yc8?si=NfVKkklqBmDF1tQy)
+- [ ] Chest press alt arm one pushing one ISO holding
 - [ ] Barbell or chest press fixed for explosive phase training
-- [ ] Do Standing arm rows for strength and Kneeling for hypertrophy
 - [ ] Maybe deadlift with landmine
 - [ ] Squat on Toes  for upper body regular set exercises 
 - [ ] Use one set of halo's each direction, and kettlebell leg raises at lighter weight for exercises with out super sets.  
 - [ ] Alternate between Deadlift and clean jerk every 6 months 
 - [ ] Eventually add [Rope Flow: Movement](https://youtu.be/ItVf97YhFL4?si=_Bo9m9TxxWgy6au0) and [Mace exercises](https://youtu.be/TdatDbqb8TY?si=QXCZiZTyP676wf32)
-- [ ] Learn [How to Jump Rope (Beginner to Expert) - YouTube](https://youtu.be/wqN5bRkZPK0?si=zxXLzzBXywde4piE)
+- [ ] Learn [How to Jump Rope](https://youtu.be/wqN5bRkZPK0?si=zxXLzzBXywde4piE)
+- [ ] Try advance [dead hang variations](https://youtu.be/ZeFGPBxKc2A?si=iUGaSbNqgLDae_8K)  
 - [ ] Build to Zercher lunge
 - [ ] DB switch catch instead for explosive week 5lb 1 min or 1 song
 - [ ] Add Isometric Overcoming to regimen maybe explosive week place it early in session
 	- [ ] Overcoming Zercher Lunge or Squat 
 	- [ ] Overcoming Lateral wall push
 	- [ ] Overcoming deadlift different leg levels from Shin knee and thigh
-- [ ] Yielding isometric late in session be selective with which excercise you do it with
+- [ ] 4 sets 3 sec per rep at 60% to 70% effort
+- [ ] 2 sets 10 sec per rep at 100% effort
+- [ ] Yielding isometric late in session be selective with which exercise you do it with
 
-Pilates are just slow controled precise movement 
-
-
-4 sets 3 sec per rep at 60% to 70% effort
-
-2 sets 10 sec per rep at 100% effort
-
-[I Reveal DEAD HANG Secrets for Maximum Full Body Strength - YouTube](https://youtu.be/ZeFGPBxKc2A?si=iUGaSbNqgLDae_8K)
-
-
-[Sculpt your lower back - YouTube](https://youtu.be/ayxOIbhl48I?si=iDI5tTZBOtlUzZDp)
-
-[Knees over Toes Lunge - YouTube](https://youtu.be/5RmrHINDYl8?si=wU_FV0a0Znqn0kbS)
-
-
-
-Chest press alt arm one pushing one iso holding
-
-
-Waited pull up then iso knee raise
-
-
-
-Iso hold to explode
-
-
-limit presses twice a week  
-
-
-
-[How to Juggle 3 Balls IN TWO MINUTES (Step by Step Tutorial) - YouTube](https://youtu.be/p4_IUMS4yc8?si=NfVKkklqBmDF1tQy)
 
 #### Schedule for Alternating Variation in Exercises
 Alternate each month keeping the week training phase in to account the weights follow like this when alternating phase in session **explosive** to **hypertrophy** | **explosive** to **strength** | **strength** to **hypertrophy** also weights follow ***explosive/hypertrophy/strength***.
