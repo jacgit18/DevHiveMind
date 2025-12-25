@@ -51,7 +51,7 @@ Limit presses twice a week
 - [ ] Do 1 minute rest between reps and 2 min between exercises especially if going heavy.
 - [ ] For **hypertrophy week** weight lift in the afternoon or mid day, **skip weight lifting**, and do MMA on Thursday or Saturday.
 - [ ] Train explosive or strength on the Monday of hypertrophy week.
-- [ ] On hypertrophy week alternate between spreading hypertrophy across excercise in session doing less set training to overall failure. Then on other days try reducing the variation of exercises focusing on a few excercise training those to failure but keeping original sets and reps you have planned. 
+- [ ] On hypertrophy week alternate between spreading hypertrophy across exercise in session doing less set training to overall failure. Then on other days try reducing the variation of exercises focusing on a few exercise training those to failure but keeping original sets and reps you have planned. 
 - [ ] Can swap make explosive week optional or move it around and supplement with extra Strength or Hypertrophy week play by ear.
 
 ## Workout Tips
