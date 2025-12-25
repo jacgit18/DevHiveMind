@@ -14,6 +14,10 @@ EditDate: 2024-03-03
 Relates: "[[Economic Trends to Track]]"
 dg-publish:
 ---
+Layoffs equal stock price increase
+
+By more etfs in inflationary environment
+
 **Strategic Sector Rotation in Economic Cycles: A Guided Approach**
 
 In navigating the cyclical nature of financial markets, a strategic sector rotation can be a prudent move. Timing is crucial, and a systematic approach can help optimize investment decisions.
