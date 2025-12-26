@@ -145,13 +145,13 @@ The general principles of **training phases** like strength and hypertrophy appl
 
 Anything not on this list is most likely a bad excercise or not worth doing based on research.**Everything here uses modified set/rep 3x5 for strength phase 4x8, hypertrophy phase, and 2x5 explosive** since full body compound movements.
 
-- [***Barbell Clean Jerk Press*** ](https://www.youtube.com/watch?v=8IYt7AtP8BI) - 20lb/20lb/20lb
-- **[Base Rows](https://youtu.be/Qmw9TKnQ9NY?si=gNe_2K45P71UKz5y)** - 10lb/20lb/30lb
-- **[Hanging Knee Raise](https://youtu.be/RD_A-Z15ER4?si=BT3gkNFch2bOdEvx)** - bodyweight
-- ***Sled***(try rope pull variation on explosive week) - 20lb/50lb/70lb 
+- [***Barbell Clean Jerk Press*** ](https://www.youtube.com/watch?v=8IYt7AtP8BI) 
+- **[Base Rows](https://youtu.be/Qmw9TKnQ9NY?si=gNe_2K45P71UKz5y)** 
+- **[Hanging Knee Raise](https://youtu.be/RD_A-Z15ER4?si=BT3gkNFch2bOdEvx)** - 
+- ***Sled***(try rope pull variation on explosive week)
 	- **[Crossover Step Lateral Sled Drag](https://youtu.be/rGtYmX2aeAA?si=PnniyFsIluLeViKa)** 
 	- Follow Super ROM excercise cadence with less sets and reps for higher weight. 
-- **[Trap Bar Deadlift](https://youtu.be/zDRgPfiHJ_c?si=hnoOefbzidE4bw4f)**(green/black band) - 50lb/70lb/90lb - try deficit version standing on plate with strength phase
+- **[Trap Bar Deadlift](https://youtu.be/zDRgPfiHJ_c?si=hnoOefbzidE4bw4f)**(green/black band) try deficit version standing on plate with strength phase
 - [Zercher Reverse Lunge with Twist](https://youtu.be/KhLhr26-i84?si=6nP6lkyfrbVzr1Qi)
 
  **Exclusively strength training this at 2x8**

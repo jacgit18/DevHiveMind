@@ -79,7 +79,7 @@ Alternate each month keeping the week training phase in to account the weights f
 7. At Home [[Personal Optimized Session#[O2 Trainer Routine](https //www.youtube.com/watch?v=-Es3HOd0PT8&list=PL8NG4An03Sa_ZvEIyHFojC65BhMV08qr1&index=5)|O2 Trainer]] 
 
 ## Hypertrophy
-for sled 3 reps and other excercise paired with it at 10
+Do 3 reps of sled push/pull to 10 reps of farmer/suitcase for 6 sets
 
 ### Friday  - Meal Prep Day 1
 #### **Antagonistic super-sets** -Hypertrophy(10x6)/Strength(8x8)/Explosive(6x5)
@@ -122,6 +122,7 @@ for sled 3 reps and other excercise paired with it at 10
 10. **Chin-up** || **Pull-up** 📈
 
 ## Explosive/Strength
+Do 2 reps of sled push/pull to 6 reps of farmer/suitcase for 8 sets
 
 ### Monday(Pre prep for meal prep) 
 
