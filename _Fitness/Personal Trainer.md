@@ -118,7 +118,7 @@ The general principles of **training phases** like strength and hypertrophy appl
 
 
 #todo/BAU/Workout 
-- [ ] Max excercise to do per session should be 9
+- [x] Max excercise to do per session should be 9 ✅ 2025-12-26
 - [ ] Maybe have a free up month with no specific structure at end of each quarter.
 - [ ] Limit sprinting on ***Hypertrophy week*** for non leg days and drink beet juice with baking soda. 
 - [ ] Cycle in warm up doing  lunges to kicks, knees, and teeps
@@ -140,7 +140,7 @@ The general principles of **training phases** like strength and hypertrophy appl
 ## Body Part Specific Programs 
 > For each excercise allowed to do 3 times a week max. Also each fixed gym machine has a freeweight variations you can pivot to if not available.
 
-![[muscle-anatomy-chart.jpg]]
+![[anatomychart1.jpg]]
 
 ### Full Body Program 
 > Skip hypertrophy for some of these excercise were doing a lot of lifting since it can be dangerous but should be safe for something like sled pulls and pushes.
