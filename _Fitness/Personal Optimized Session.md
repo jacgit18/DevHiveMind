@@ -37,7 +37,7 @@ Thursday or Friday rest day if multiple rest days 1 from each phase section.
 
 
 
-- [ ] Squat on Toes  for upper body regular set exercises 
+
 - [ ] Use one set of halo's each direction, and kettlebell leg raises at lighter weight for exercises with out super sets.  
 - [ ] Alternate between Deadlift and clean jerk every 6 months 
 - [ ] Eventually add [Rope Flow: Movement](https://youtu.be/ItVf97YhFL4?si=_Bo9m9TxxWgy6au0) and [Mace exercises](https://youtu.be/TdatDbqb8TY?si=QXCZiZTyP676wf32)
