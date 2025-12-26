@@ -24,27 +24,16 @@ Thursday or Friday rest day if multiple rest days 1 from each phase section.
 
 #todo/BAU/Workout 
 - [ ] Finalize, refine, reduce, and prioritize exercises in [[Plyometrics]] and Stability program 
-
-
 - [ ] Learn [How to Jump Rope](https://youtu.be/wqN5bRkZPK0?si=zxXLzzBXywde4piE)
 - [ ] Try advance [dead hang variations](https://youtu.be/ZeFGPBxKc2A?si=iUGaSbNqgLDae_8K)  
 - [ ] Eventually switch to sand bags from DB
 - [ ] Try [How to Juggle 3 Balls IN TWO MINUTES](https://youtu.be/p4_IUMS4yc8?si=NfVKkklqBmDF1tQy)
 - [ ] Try Chest press alt arm one pushing one ISO holding
+- [ ] Eventually add [Rope Flow: Movement](https://youtu.be/ItVf97YhFL4?si=_Bo9m9TxxWgy6au0) and [Mace exercises](https://youtu.be/TdatDbqb8TY?si=QXCZiZTyP676wf32)
+- [ ] Try DB switch catch on explosive week 5lb 1 min or 1 song
 - [ ] Try Waited pull up then ISO knee raise while holding the pull up
 - [ ] Try and add in [Good Morning](https://youtu.be/nWyx81AfTos?si=ReJqMdB_wh9t4yRs) after improving back extension and RDL
-
-
-
-
-
 - [ ] Use one set of halo's each direction, and kettlebell leg raises at lighter weight for exercises with out super sets.  
-- [ ] Alternate between Deadlift and clean jerk every 6 months 
-- [ ] Eventually add [Rope Flow: Movement](https://youtu.be/ItVf97YhFL4?si=_Bo9m9TxxWgy6au0) and [Mace exercises](https://youtu.be/TdatDbqb8TY?si=QXCZiZTyP676wf32)
-
-
-
-- [ ] DB switch catch instead for explosive week 5lb 1 min or 1 song
 - [ ] Add Isometric Overcoming to regimen maybe explosive week place it early in session
 	- [ ] Overcoming Zercher Lunge or Squat 
 	- [ ] Overcoming Lateral wall push
