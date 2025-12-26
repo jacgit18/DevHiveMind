@@ -26,7 +26,7 @@ Start with a dynamic stretch to Improve blood flow and flexibility. End with a s
 
 Add to warm up for [lower back](https://youtu.be/ayxOIbhl48I?si=iDI5tTZBOtlUzZDp)
 
-
+- [ ] Try [Knees over Toes Lunge](https://youtu.be/5RmrHINDYl8?si=wU_FV0a0Znqn0kbS)
 
 #todo/BAU/Workout 
 - [ ] Aim for like 10 to 20 reps for most stretches and 5 to 10 if alternating sides else 30sec duration if rapid movement.

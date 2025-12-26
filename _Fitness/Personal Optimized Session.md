@@ -27,7 +27,7 @@ Thursday or Friday rest day if multiple rest days 1 from each phase section.
 - [ ] Add in [Good Morning](https://youtu.be/nWyx81AfTos?si=ReJqMdB_wh9t4yRs) after improving back extension and RDL
 - [ ] Eventually switch to sand bags from DB
 - [ ] Try Waited pull up then ISO knee raise while holding the pull up
-- [ ] Try [Knees over Toes Lunge](https://youtu.be/5RmrHINDYl8?si=wU_FV0a0Znqn0kbS)
+
 - [ ] Try [How to Juggle 3 Balls IN TWO MINUTES](https://youtu.be/p4_IUMS4yc8?si=NfVKkklqBmDF1tQy)
 - [ ] Chest press alt arm one pushing one ISO holding
 - [ ] Barbell or chest press fixed for explosive phase training
@@ -38,14 +38,14 @@ Thursday or Friday rest day if multiple rest days 1 from each phase section.
 - [ ] Eventually add [Rope Flow: Movement](https://youtu.be/ItVf97YhFL4?si=_Bo9m9TxxWgy6au0) and [Mace exercises](https://youtu.be/TdatDbqb8TY?si=QXCZiZTyP676wf32)
 - [ ] Learn [How to Jump Rope](https://youtu.be/wqN5bRkZPK0?si=zxXLzzBXywde4piE)
 - [ ] Try advance [dead hang variations](https://youtu.be/ZeFGPBxKc2A?si=iUGaSbNqgLDae_8K)  
-- [ ] Build to Zercher lunge
+
 - [ ] DB switch catch instead for explosive week 5lb 1 min or 1 song
 - [ ] Add Isometric Overcoming to regimen maybe explosive week place it early in session
 	- [ ] Overcoming Zercher Lunge or Squat 
 	- [ ] Overcoming Lateral wall push
 	- [ ] Overcoming deadlift different leg levels from Shin knee and thigh
-- [ ] 4 sets 3 sec per rep at 60% to 70% effort
-- [ ] 2 sets 10 sec per rep at 100% effort
+- 4 sets 3 sec per rep at 60% to 70% effort
+- 2 sets 10 sec per rep at 100% effort
 - [ ] Yielding isometric late in session be selective with which exercise you do it with
 
 
@@ -57,8 +57,8 @@ Alternate each month keeping the week training phase in to account the weights f
 | --------------- | ---------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------- | ------------------------------- | --------------------------------------------------------------------- | ------------------------------- | ---------------------------------------------------------------------------- | ------------------------ | -------------------------------- |
 | 1 (Odd months)  | Unilateral back ext 2x8 with 5 sec ISO & [Roman Chair Hip Abduction](https://youtu.be/j5HWZOfIePI?si=EsYf8Gg0rFO16y-p) | Super ROM + [Scarecrow](https://youtu.be/qzNQ3_TQHDs)      | Suitcase Bottom Ups or Suitcase | [[Personal Optimized Session#Cable leg day variation\|Cable Leg day]] | Unilateral Arm(were it applies) | -ChinUp   -Kneeling arm row  - Behind the Back Raise                         | Unilateral-leg variation | Push to Lateral(left/right) Pull |
 | 2 (Even months) | Bilateral Back ext 4x8 with 10 sec ISO & [Side Lateral QL Extension](https://youtu.be/UaydER2VIUc?si=wkQxbIqiz7lJQF_7) | Super ROM + [V Raise](https://youtu.be/5WBdE0TSoUQ)(cross) | Banded Farmer or Farmer Carry   | Non Cable leg day                                                     | Bilateral Arm                   | -Narrow PullUp     -Standing arm row  - Unilateral Overhead Tricep Extension | Bilateral variation      | Push to Pull                     |
-| Month 3         | Strength Isometric Yielding                                                                                            | Like 10 sec holds or longer just doing one set like 30 sec |                                 |                                                                       |                                 |                                                                              |                          |                                  |
-| Month 4         | Strength Isometric Yielding                                                                                            | Swap in place of regular strength training                 |                                 |                                                                       |                                 |                                                                              |                          |                                  |
+| Month 3         | Unilateral Strength Isometric Yielding                                                                                 | Like 10 sec holds or longer just doing one set like 30 sec |                                 |                                                                       |                                 |                                                                              |                          |                                  |
+| Month 4         | Bilateral Strength Isometric Yielding                                                                                  | Swap in place of regular strength training                 |                                 |                                                                       |                                 |                                                                              |                          |                                  |
 
 
 1. ***Airdyne Bike || Row Machine || Sprint || Jump Rope || Run || Shadow Boxing*** ✅ 
@@ -115,7 +115,7 @@ Alternate each month keeping the week training phase in to account the weights f
 ### Sunday 
 #### **Antagonistic super-sets**
 1. **[Behind the Back Lateral Raise](https://www.youtube.com/watch?v=y4Djk_G0yEg)** || **[Unilateral Overhead Tricep Extension](https://youtu.be/FE_AsjcTImc?si=gzyVqZ88Yq9KTRiG)**(Low Angle) to **Kneeling Cable Crunch**(High Angle) 
-2. **Barbell Zercher Lunge** to **Overhead Press**
+2. **Barbell Zercher Lunge**(build too) to **Overhead Press**
 3. **Leg press** to **Chest press** || **[Pistol Hack Squat](https://www.youtube.com/watch?v=w-LKHuNiiTc)** to **Arnold press**
 4. **Sled Push/Pull** to **Farmer/Suitcase**||**Trap Bar/DB Squat Jump** 📈
 5. **Bench Reverse Crunch || [Dragon Flag](https://youtu.be/U5pviWt7sMo?si=bTziyFRf9FBf40sF) || Ab Roller** to **Chest press** 📈
