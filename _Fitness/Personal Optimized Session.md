@@ -36,7 +36,7 @@ Thursday or Friday rest day if multiple rest days 1 from each phase section.
 - [ ] Use one set of halo's each direction, and kettlebell leg raises at lighter weight for exercises with out super sets.  
 - [ ] Add Isometric Overcoming to regimen maybe explosive week place it early in session
 	- [ ] Overcoming Zercher Lunge or Squat 
-	- [ ] Overcoming Lateral wall push
+	- [ ] [Overcoming Lateral wall push](https://youtu.be/tIFjnucY09Q?si=85yMrvYak0z5Qn5K)
 	- [ ] Overcoming deadlift different leg levels from Shin knee and thigh
 - 4 sets 3 sec per rep at 60% to 70% effort
 - 2 sets 10 sec per rep at 100% effort
@@ -79,6 +79,7 @@ Alternate each month keeping the week training phase in to account the weights f
 7. At Home [[Personal Optimized Session#[O2 Trainer Routine](https //www.youtube.com/watch?v=-Es3HOd0PT8&list=PL8NG4An03Sa_ZvEIyHFojC65BhMV08qr1&index=5)|O2 Trainer]] 
 
 ## Hypertrophy
+for sled 3 reps and other excercise paired with it at 10
 
 ### Friday  - Meal Prep Day 1
 #### **Antagonistic super-sets** -Hypertrophy(10x6)/Strength(8x8)/Explosive(6x5)

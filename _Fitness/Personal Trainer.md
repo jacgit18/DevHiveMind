@@ -26,10 +26,8 @@ dg-publish:
 	- [ ] For Lower body focus on 80% strength training and 20% hypertrophy. 
 	- [ ] For Upper body focus on 20% strength training and 80% hypertrophy training to failure with high volume.
 - [ ] Also for excercise session frequency reduce frequency to one time a week as you go up in max weight for strength phase.
-
-- [ ] Between reps and excercise work on visualizing, breathing, moving around, and do mobility excercise or things like squats if doing upper body work otherwise **Antagonistic super-sets** to fill in gap between reps.
 - [ ] Cycle in different exercises every **8-12 weeks** to avoid stagnation also limit range of exercises per session to 11 excercise and limit phone usage to preserve performance.
-- [ ] If you feel **off balance**, try **making a fist**—this creates full-body tension and enhances stability during the lift doing  **Isometric Holds**.
+- [ ] If you feel **off balance**, try **making a fist** this creates full-body tension and enhances stability.
 - [ ] If you're not **feeling the target muscle** during an exercise, **reduce momentum** and slow down on the eccentric(lengthen) phase of the movement for strength training to improve control and mind-muscle connection but you can also slow down on the concentric(shortening) phase of movement.
 - [ ] Once at solid baseline switch to a **Seasonal Training Strategy** while also integrating workout phases aiming for **7 workouts per week in the winter/fall** were your body tends to **retain more weight during the colder months** (September to February), making it an ideal time to **increase training frequency** and build mass or strength. Then In the **warmer months**, when energy is often spent on outdoor activities and appetite may decrease, **4 to 5 workouts per week** can be more sustainable.
 
@@ -41,7 +39,7 @@ Don't need to alternate as much for between hypertrophy reps for Antagonistic su
 
 Alternate weight ratios so one day heavier on landmine next day heavier on dumbbells and lighter on landline for super-sets.
 
-Pilates are just slow controlled precise movement 
+
 
 ISO hold to explode
 
