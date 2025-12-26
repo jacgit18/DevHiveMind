@@ -39,18 +39,11 @@ Don't need to alternate as much for between hypertrophy reps for Antagonistic su
 
 Alternate weight ratios so one day heavier on landmine next day heavier on dumbbells and lighter on landline for super-sets.
 
-
-
-ISO hold to explode
-
-
-
-
 - [ ] Do 1 minute rest between reps and 2 min between exercises especially if going heavy.
-- [ ] For **hypertrophy week** weight lift in the afternoon or mid day, **skip weight lifting**, and do MMA on Thursday or Saturday.
-- [ ] Train explosive or strength on the Monday of hypertrophy week.
+
+
 - [ ] On hypertrophy week alternate between spreading hypertrophy across exercise in session doing less set training to overall failure. Then on other days try reducing the variation of exercises focusing on a few exercise training those to failure but keeping original sets and reps you have planned. 
-- [ ] Can swap make explosive week optional or move it around and supplement with extra Strength or Hypertrophy week play by ear.
+
 
 ## Workout Tips
 #todo/BAU/Workout  

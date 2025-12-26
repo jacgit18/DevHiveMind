@@ -121,9 +121,10 @@ Do 3 reps of sled push/pull to 10 reps of farmer/suitcase for 6 sets
 9. **[Cable Assisted Pancake](https://youtu.be/yxXD_5RGakM?si=vFxPzJFnswWk71Zy)**(Low Angle) 📈
 10. **Chin-up** || **Pull-up** 📈
 
-## Explosive/Strength
+## Explosive/Strength(Compound Movement)
 Do 2 reps of sled push/pull to 6 reps of farmer/suitcase for 8 sets
 
+Practice ISO hold to explosive movement 
 ### Monday(Pre prep for meal prep) 
 
 #### **Antagonistic super-sets**
