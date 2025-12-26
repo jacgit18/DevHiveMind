@@ -26,6 +26,9 @@ Start with a dynamic stretch to Improve blood flow and flexibility. End with a s
 
 Add to warm up for [lower back](https://youtu.be/ayxOIbhl48I?si=iDI5tTZBOtlUzZDp)
 
+[Video posted by Home Workouts (@fitworkout.day)](https://www.threads.com/@fitworkout.day/post/DOch5WlE7G5/media?xmt=AQF0a2-KH1ko1KEEsERzlcFmcyZLhFQfqmtJejlHzCPjpA)
+
+
 - [ ] Try [Knees over Toes Lunge](https://youtu.be/5RmrHINDYl8?si=wU_FV0a0Znqn0kbS)
 
 #todo/BAU/Workout 
