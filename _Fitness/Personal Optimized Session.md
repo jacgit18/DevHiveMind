@@ -35,7 +35,7 @@ Thursday or Friday rest day if multiple rest days 1 from each phase section.
 - [ ] Try and add in [Good Morning](https://youtu.be/nWyx81AfTos?si=ReJqMdB_wh9t4yRs) after improving back extension and RDL
 - [ ] Use one set of halo's each direction, and kettlebell leg raises at lighter weight for exercises with out super sets.  
 - [ ] Add Isometric Overcoming to regimen maybe explosive week place it early in session
-	- [ ] Overcoming Zercher Lunge or Squat 
+	- [ ] Overcoming Zercher Squat 
 	- [ ] [Overcoming Lateral wall push](https://youtu.be/tIFjnucY09Q?si=85yMrvYak0z5Qn5K)
 	- [ ] Overcoming deadlift different leg levels from Shin knee and thigh
 - 4 sets 3 sec per rep at 60% to 70% effort
@@ -132,7 +132,6 @@ Begin priority exercises first
 ##### Focus on Other Phases
 2. **[Behind the Back Lateral Raise](https://www.youtube.com/watch?v=y4Djk_G0yEg)**|| **[Unilateral Overhead Tricep Extension](https://youtu.be/FE_AsjcTImc?si=gzyVqZ88Yq9KTRiG)**(Low Angle) to **Kneeling Cable Crunch**(High Angle) 
 3. **Barbell Zercher Lunge**(build too) to **Overhead Press**
-
 4. **Sled Push/Pull** to **Farmer/Suitcase**||**Trap Bar/DB Squat Jump** 📈
 5. **Bench Reverse Crunch || [Dragon Flag](https://youtu.be/U5pviWt7sMo?si=bTziyFRf9FBf40sF) || Ab Roller** to **Chest press** 📈
 #### **Regular sets**
@@ -140,10 +139,10 @@ Begin priority exercises first
 6. **Single Arm Lat Pulldown**
 
 ##### Focus on Other Phases
-6. **Back Extension** 
-7. **Inner Thigh Abduction**
-8. **Outer Thigh Adduction** 
-9. **[Cable Assisted Pancake](https://youtu.be/yxXD_5RGakM?si=vFxPzJFnswWk71Zy)**(Low Angle) 📈
+7. **Back Extension** 
+8. **Inner Thigh Abduction**
+9. **Outer Thigh Adduction** 
+10. **[Cable Assisted Pancake](https://youtu.be/yxXD_5RGakM?si=vFxPzJFnswWk71Zy)**(Low Angle) 📈
 
 
 ## Explosive/Strength(Compound Movement)
