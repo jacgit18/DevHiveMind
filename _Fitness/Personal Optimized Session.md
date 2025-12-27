@@ -88,57 +88,51 @@ Begin priority exercises first
 2. **Hip thrust** to **Chest press** 
 3. **[Behind the Back Lateral Raise](https://www.youtube.com/watch?v=y4Djk_G0yEg)** || **[Unilateral Overhead Tricep Extension](https://youtu.be/FE_AsjcTImc?si=gzyVqZ88Yq9KTRiG)**(Low Angle) to **[Half Kneeling/Standing Arm Row](https://youtu.be/afE9JabFqR4?si=Q7eXtrCmYCcxOV_T)** 
 
-
 ##### Focus on Other Phases(Last week Explosive)
-4. **Pallof Press**(bands/cables) to **Kneeling Cable Crunch**(High Angle) 
-5. **Prone Leg Curl** to **DB Bulgarian Split Squat** 
-6. **Sled Push/Pull** to **Trap Bar/DB Squat Jump** 📈
-
+4. **Prone Leg Curl** to **DB Bulgarian Split Squat** 
+5. **Sled Push/Pull** to **Trap Bar/DB Squat Jump** 📈
 
 #### **Regular sets** -  Hypertrophy(10x1) for multiple songs long, Strength(4x8), Explosive(3x4)
 
 ##### Hypertrophy Priority
-7. **[Side rear Delt Fly](https://youtu.be/P81mH8n68h4?si=eGoGz-v2JIxxjTfB)**
+6. **[Side rear Delt Fly](https://youtu.be/P81mH8n68h4?si=eGoGz-v2JIxxjTfB)**
 
 ##### Focus on Other Phases
-8. **[Cable Assisted Pancake](https://youtu.be/yxXD_5RGakM?si=vFxPzJFnswWk71Zy)**(Low Angle) 📈
+7. **[Cable Assisted Pancake](https://youtu.be/yxXD_5RGakM?si=vFxPzJFnswWk71Zy)**(Low Angle) 📈
 
 
 ### Saturday
 
 #### **Antagonistic super-sets**
+##### Hypertrophy Priority
+1. **Wide Tricep Dip** to **[Hanging Knee Raise](https://youtu.be/RD_A-Z15ER4?si=h0fyUA7SXg4vWE2a)** 📈
 ##### Focus on Other Phases
-1. **[Cable Woodchopper](https://www.youtube.com/watch?v=mvvu8imyMFs)**(Low angle)||**[Landmine Twist](https://youtu.be/M93HfnAVIl8?si=7KtnpfDB0GYobD9Z)** to **Kettlebell Leg Raise** 
-2. **[Behind the Back Lateral Raise](https://www.youtube.com/watch?v=y4Djk_G0yEg)** || **[Unilateral Overhead Tricep Extension](https://youtu.be/FE_AsjcTImc?si=gzyVqZ88Yq9KTRiG)**(Low Angle) to **[Half Kneeling/Standing Arm Row](https://youtu.be/afE9JabFqR4?si=Q7eXtrCmYCcxOV_T)** 
-3. **Wide Tricep Dip** to **[Hanging Knee Raise](https://youtu.be/RD_A-Z15ER4?si=h0fyUA7SXg4vWE2a)** 📈
+2. **[Cable Woodchopper](https://www.youtube.com/watch?v=mvvu8imyMFs)**(Low angle)||**[Landmine Twist](https://youtu.be/M93HfnAVIl8?si=7KtnpfDB0GYobD9Z)** to **Kettlebell Leg Raise** 
 
 #### **Regular sets**
 ##### Hypertrophy Priority
-4. **Zottman Curl**
+3. **Zottman Curl**
+4. **Inner Thigh Abduction**
+5. **Outer Thigh Adduction** 
 ##### Focus on Other Phases
-5. **Back Extension** 
-6. **Inner Thigh Abduction**
-7. **Outer Thigh Adduction** 
-
+6. **Back Extension** 
 
 ### Sunday 
 #### **Antagonistic super-sets**
 ##### Hypertrophy Priority
 1. **[Pistol Hack Squat](https://www.youtube.com/watch?v=w-LKHuNiiTc)** to **Arnold press**
-
+2. **[Behind the Back Lateral Raise](https://www.youtube.com/watch?v=y4Djk_G0yEg)** || **[Unilateral Overhead Tricep Extension](https://youtu.be/FE_AsjcTImc?si=gzyVqZ88Yq9KTRiG)**(Low Angle) to **[Half Kneeling/Standing Arm Row](https://youtu.be/afE9JabFqR4?si=Q7eXtrCmYCcxOV_T)** 
 ##### Focus on Other Phases
-2. **[Behind the Back Lateral Raise](https://www.youtube.com/watch?v=y4Djk_G0yEg)**|| **[Unilateral Overhead Tricep Extension](https://youtu.be/FE_AsjcTImc?si=gzyVqZ88Yq9KTRiG)**(Low Angle) to **Kneeling Cable Crunch**(High Angle) 
-3. **Barbell Zercher Lunge**(build too) to **Overhead Press**
-4. **Bench Reverse Crunch || [Dragon Flag](https://youtu.be/U5pviWt7sMo?si=bTziyFRf9FBf40sF) || Ab Roller** to **Chest press** 📈
+
+2. **Barbell Zercher Lunge**(build too) to **Overhead Press**
+3. **Bench Reverse Crunch || [Dragon Flag](https://youtu.be/U5pviWt7sMo?si=bTziyFRf9FBf40sF) || Ab Roller** to **Chest press** 📈
 #### **Regular sets**
 ##### Hypertrophy Priority
 5. **Chin-up** || **Pull-up** 📈
 
 ##### Focus on Other Phases
 6. **Back Extension** 
-7. **Inner Thigh Abduction**
-8. **Outer Thigh Adduction** 
-9. **[Cable Assisted Pancake](https://youtu.be/yxXD_5RGakM?si=vFxPzJFnswWk71Zy)**(Low Angle) 📈
+7. **[Cable Assisted Pancake](https://youtu.be/yxXD_5RGakM?si=vFxPzJFnswWk71Zy)**(Low Angle) 📈
 
 
 ## Strength(Compound Movement)
@@ -166,7 +160,7 @@ Do 2 reps of sled push/pull to 6 reps of farmer/suitcase for 8 sets
 4. **[Cable Kickback](https://www.youtube.com/watch?v=SqO-VUEak2M)**
 5. **[Cable](https://youtu.be/2M1Mikqf5lY?si=sIX0t_7UkiioAffp)** || **[Kettlebell](https://youtu.be/SuNgD0x2U6U?si=0oE-W6Zv_5pABcMv)** - Unilateral RDL 📈
 
-### Tuesday  - Meal Prep Day 2
+### Tuesday - Meal Prep Day 2
 
 #### **Antagonistic super-sets**
 1. **[Cable Woodchopper](https://www.youtube.com/watch?v=mvvu8imyMFs)**(Low angle) || **[Landmine Twist](https://youtu.be/M93HfnAVIl8?si=7KtnpfDB0GYobD9Z)** to **Kettlebell Leg Raise** 
