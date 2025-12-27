@@ -113,30 +113,38 @@ Begin priority exercises first
 
 
 #### **Regular sets**
-##### Hypertrophy Priority(space Out)
+##### Hypertrophy Priority
 5. **Zottman Curl**
-6. **Single Arm Lat Pulldown**
+6. **Chin-up** || **Pull-up** 📈
 
 
 ##### Focus on Other Phases
-4. **Back Extension** 
-5. **Inner Thigh Abduction**
-6. **Outer Thigh Adduction** 
+7. **Back Extension** 
+8. **Inner Thigh Abduction**
+9. **Outer Thigh Adduction** 
 
 
 ### Sunday 
 #### **Antagonistic super-sets**
-1. **[Behind the Back Lateral Raise](https://www.youtube.com/watch?v=y4Djk_G0yEg)**|| **[Unilateral Overhead Tricep Extension](https://youtu.be/FE_AsjcTImc?si=gzyVqZ88Yq9KTRiG)**(Low Angle) to **Kneeling Cable Crunch**(High Angle) 
-2. **Barbell Zercher Lunge**(build too) to **Overhead Press**
-3. **[Pistol Hack Squat](https://www.youtube.com/watch?v=w-LKHuNiiTc)** to **Arnold press**
+##### Hypertrophy Priority
+1. **[Pistol Hack Squat](https://www.youtube.com/watch?v=w-LKHuNiiTc)** to **Arnold press**
+
+##### Focus on Other Phases
+2. **[Behind the Back Lateral Raise](https://www.youtube.com/watch?v=y4Djk_G0yEg)**|| **[Unilateral Overhead Tricep Extension](https://youtu.be/FE_AsjcTImc?si=gzyVqZ88Yq9KTRiG)**(Low Angle) to **Kneeling Cable Crunch**(High Angle) 
+3. **Barbell Zercher Lunge**(build too) to **Overhead Press**
+
 4. **Sled Push/Pull** to **Farmer/Suitcase**||**Trap Bar/DB Squat Jump** 📈
 5. **Bench Reverse Crunch || [Dragon Flag](https://youtu.be/U5pviWt7sMo?si=bTziyFRf9FBf40sF) || Ab Roller** to **Chest press** 📈
 #### **Regular sets**
+##### Hypertrophy Priority
+6. **Single Arm Lat Pulldown**
+
+##### Focus on Other Phases
 6. **Back Extension** 
 7. **Inner Thigh Abduction**
 8. **Outer Thigh Adduction** 
 9. **[Cable Assisted Pancake](https://youtu.be/yxXD_5RGakM?si=vFxPzJFnswWk71Zy)**(Low Angle) 📈
-10. **Chin-up** || **Pull-up** 📈
+
 
 ## Explosive/Strength(Compound Movement)
 Do 2 reps of sled push/pull to 6 reps of farmer/suitcase for 8 sets
