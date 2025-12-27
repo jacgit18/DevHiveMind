@@ -78,7 +78,8 @@ Alternate each month keeping the week training phase in to account the weights f
 6. **[[Personal Trainer#Priority Static Stretch to develop splits|Static Stretching]]** - 2 days under hypertrophy and 2 days in other phase days
 7. At Home [[Personal Optimized Session#[O2 Trainer Routine](https //www.youtube.com/watch?v=-Es3HOd0PT8&list=PL8NG4An03Sa_ZvEIyHFojC65BhMV08qr1&index=5)|O2 Trainer]] 
 
-## Hypertrophy
+## Hypertrophy 
+Begin priority exercises first
 
 ### Friday  - Meal Prep Day 1
 #### **Antagonistic super-sets** -Hypertrophy(10x6)/Strength(8x8)/Explosive(6x5)
@@ -105,15 +106,23 @@ Alternate each month keeping the week training phase in to account the weights f
 ### Saturday
 
 #### **Antagonistic super-sets**
+##### Focus on Other Phases
 1. **[Cable Woodchopper](https://www.youtube.com/watch?v=mvvu8imyMFs)**(Low angle)||**[Landmine Twist](https://youtu.be/M93HfnAVIl8?si=7KtnpfDB0GYobD9Z)** to **Kettlebell Leg Raise** 
 2. **Pallof Press**(bands/cables) to **[Half Kneeling/Standing Arm Row](https://youtu.be/afE9JabFqR4?si=Q7eXtrCmYCcxOV_T)** 
 3. **Wide Tricep Dip** to **[Hanging Knee Raise](https://youtu.be/RD_A-Z15ER4?si=h0fyUA7SXg4vWE2a)** 📈
+
+
 #### **Regular sets**
-4. **Single Arm Lat Pulldown**
-5. **Back Extension** 
-6. **Inner Thigh Abduction**
-7. **Outer Thigh Adduction** 
-8. **Zottman Curl**
+##### Hypertrophy Priority(space Out)
+5. **Zottman Curl**
+6. **Single Arm Lat Pulldown**
+
+
+##### Focus on Other Phases
+4. **Back Extension** 
+5. **Inner Thigh Abduction**
+6. **Outer Thigh Adduction** 
+
 
 ### Sunday 
 #### **Antagonistic super-sets**
