@@ -84,11 +84,14 @@ Do 3 reps of sled push/pull to 10 reps of farmer/suitcase for 6 sets
 ### Friday  - Meal Prep Day 1
 #### **Antagonistic super-sets** -Hypertrophy(10x6)/Strength(8x8)/Explosive(6x5)
 
-1. **Prone Leg Curl** to **DB Bulgarian Split Squat** 
-2. **Hip thrust** to **Chest press** 
-3. **Leg press** to **Chest press** || **[Pistol Hack Squat](https://www.youtube.com/watch?v=w-LKHuNiiTc)** to **Arnold press**
+3. **[Pistol Hack Squat](https://www.youtube.com/watch?v=w-LKHuNiiTc)** to **Arnold press**
 4. **Pallof Press**(bands/cables) to **[Half Kneeling/Standing Arm Row](https://youtu.be/afE9JabFqR4?si=Q7eXtrCmYCcxOV_T)** 
-5. **Sled Push/Pull** to **Farmer/Suitcase**||**Trap Bar/DB Squat Jump** 📈
+
+5. **Prone Leg Curl** to **DB Bulgarian Split Squat** 
+
+
+
+7. **Sled Push/Pull** to **Farmer/Suitcase**||**Trap Bar/DB Squat Jump** 📈
 #### **Regular sets** -  Hypertrophy(10x1) for multiple songs long, Strength(4x8), Explosive(3x4)
 
 6. **[Side rear Delt Fly](https://youtu.be/P81mH8n68h4?si=eGoGz-v2JIxxjTfB)** 
@@ -109,9 +112,9 @@ Do 3 reps of sled push/pull to 10 reps of farmer/suitcase for 6 sets
 
 ### Sunday 
 #### **Antagonistic super-sets**
-1. **[Behind the Back Lateral Raise](https://www.youtube.com/watch?v=y4Djk_G0yEg)** || **[Unilateral Overhead Tricep Extension](https://youtu.be/FE_AsjcTImc?si=gzyVqZ88Yq9KTRiG)**(Low Angle) to **Kneeling Cable Crunch**(High Angle) 
+1. **[Behind the Back Lateral Raise](https://www.youtube.com/watch?v=y4Djk_G0yEg)**|| **[Unilateral Overhead Tricep Extension](https://youtu.be/FE_AsjcTImc?si=gzyVqZ88Yq9KTRiG)**(Low Angle) to **Kneeling Cable Crunch**(High Angle) 
 2. **Barbell Zercher Lunge**(build too) to **Overhead Press**
-3. **Leg press** to **Chest press** || **[Pistol Hack Squat](https://www.youtube.com/watch?v=w-LKHuNiiTc)** to **Arnold press**
+3. **[Pistol Hack Squat](https://www.youtube.com/watch?v=w-LKHuNiiTc)** to **Arnold press**
 4. **Sled Push/Pull** to **Farmer/Suitcase**||**Trap Bar/DB Squat Jump** 📈
 5. **Bench Reverse Crunch || [Dragon Flag](https://youtu.be/U5pviWt7sMo?si=bTziyFRf9FBf40sF) || Ab Roller** to **Chest press** 📈
 #### **Regular sets**
@@ -130,7 +133,7 @@ Practice ISO hold to explosive movement
 #### **Antagonistic super-sets**
 1. **Prone Leg Curl** to **DB Bulgarian Split Squat** 
 2. **Hip thrust** to **Chest press**
-3. **Leg press** to **Chest press** || **[Pistol Hack Squat](https://www.youtube.com/watch?v=w-LKHuNiiTc)** to **Arnold press**
+3. **[Pistol Hack Squat](https://www.youtube.com/watch?v=w-LKHuNiiTc)** to **Arnold press**
 4. **Pallof Press**(bands/cables) to **[Half Kneeling/Standing Arm Row](https://youtu.be/afE9JabFqR4?si=Q7eXtrCmYCcxOV_T)** 
 5. **Wide Tricep Dip** to **[Hanging Knee Raise](https://youtu.be/RD_A-Z15ER4?si=h0fyUA7SXg4vWE2a)** 📈
 6. **Sled Push/Pull** to **Farmer/Suitcase**||**Trap Bar/DB Squat Jump** 📈
@@ -150,7 +153,7 @@ Practice ISO hold to explosive movement
 
 #### **Antagonistic super-sets**
 1. **[Cable Woodchopper](https://www.youtube.com/watch?v=mvvu8imyMFs)**(Low angle) || **[Landmine Twist](https://youtu.be/M93HfnAVIl8?si=7KtnpfDB0GYobD9Z)** to **Kettlebell Leg Raise** 
-2. **[Behind the Back Lateral Raise](https://www.youtube.com/watch?v=y4Djk_G0yEg)**  || **[Unilateral Overhead Tricep Extension](https://youtu.be/FE_AsjcTImc?si=gzyVqZ88Yq9KTRiG)**(Low Angle) to **Kneeling Cable Crunch**(High Angle) 
+2. **[Behind the Back Lateral Raise](https://www.youtube.com/watch?v=y4Djk_G0yEg)** || **[Unilateral Overhead Tricep Extension](https://youtu.be/FE_AsjcTImc?si=gzyVqZ88Yq9KTRiG)**(Low Angle) to **Kneeling Cable Crunch**(High Angle) 
 3. **Barbell Zercher Lunge** to **Overhead Press**
 4. **Sled Push/Pull** to **Farmer/Suitcase**||**Trap Bar/DB Squat Jump** 📈
 5. **Bench Reverse Crunch || [Dragon Flag](https://youtu.be/U5pviWt7sMo?si=bTziyFRf9FBf40sF) || Ab Roller** to **Chest press** 📈

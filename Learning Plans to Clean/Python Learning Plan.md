@@ -155,18 +155,3 @@ Building APIs with FastAPI by Aaron Bassett ([https://testdriven.io/courses/fast
 Other resources:  
 Full Stack Python ([https://www.fullstackpython.com/web-development.html](https://www.fullstackpython.com/web-development.html)) - a comprehensive guide to Python web development  
 Real Python ([https://realpython.com/](https://realpython.com/)) - a website with many articles and tutorials on Python web development
-
-
-## Popular Python certifications you may consider: 
-
-1.  Certified Associate in Python Programming (PCAP): PCAP is a certification from the Python Institute that covers basic Python programming concepts and is aimed at entry-level Python programmers. 
-    
-2.  Professional Certificate in Python Programming (PCPP): PCPP is a certification from the Python Institute that covers intermediate Python programming concepts and is aimed at professionals with some experience in Python programming. 
-    
-3.  Microsoft Certified: Microsoft Certified: Azure Developer Associate: This certification covers developing, managing and deploying applications in Azure and includes a module on Python. 
-    
-4.  Certified Expert in Python Programming (CEPP): CEPP is a certification from the Python Institute that covers advanced Python programming concepts and is aimed at experienced Python programmers who want to demonstrate their expertise. 
-    
-5.  Google Certified Professional – Data Engineer: This certification covers designing, building, maintaining, and troubleshooting data processing systems with an emphasis on Google Cloud Platform. It includes a module on Python. 
-    
-
