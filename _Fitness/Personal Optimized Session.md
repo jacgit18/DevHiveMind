@@ -91,7 +91,7 @@ Begin priority exercises first
 ##### Focus on Other Phases
 3. **Pallof Press**(bands/cables) to **[Half Kneeling/Standing Arm Row](https://youtu.be/afE9JabFqR4?si=Q7eXtrCmYCcxOV_T)** 
 4. **Prone Leg Curl** to **DB Bulgarian Split Squat** 
-5. **Sled Push/Pull** to **Farmer/Suitcase**||**Trap Bar/DB Squat Jump** 📈
+5. **Sled Push/Pull** to **Trap Bar/DB Squat Jump** 📈
 
 
 #### **Regular sets** -  Hypertrophy(10x1) for multiple songs long, Strength(4x8), Explosive(3x4)
@@ -100,7 +100,7 @@ Begin priority exercises first
 6. **[Side rear Delt Fly](https://youtu.be/P81mH8n68h4?si=eGoGz-v2JIxxjTfB)**
 
 ##### Focus on Other Phases
-6. **[Cable Assisted Pancake](https://youtu.be/yxXD_5RGakM?si=vFxPzJFnswWk71Zy)**(Low Angle) 📈
+7. **[Cable Assisted Pancake](https://youtu.be/yxXD_5RGakM?si=vFxPzJFnswWk71Zy)**(Low Angle) 📈
 
 
 ### Saturday
@@ -114,14 +114,14 @@ Begin priority exercises first
 
 #### **Regular sets**
 ##### Hypertrophy Priority
-5. **Zottman Curl**
-6. **Chin-up** || **Pull-up** 📈
+4. **Zottman Curl**
+5. **Chin-up** || **Pull-up** 📈
 
 
 ##### Focus on Other Phases
-7. **Back Extension** 
-8. **Inner Thigh Abduction**
-9. **Outer Thigh Adduction** 
+5. **Back Extension** 
+6. **Inner Thigh Abduction**
+7. **Outer Thigh Adduction** 
 
 
 ### Sunday 
@@ -132,17 +132,16 @@ Begin priority exercises first
 ##### Focus on Other Phases
 2. **[Behind the Back Lateral Raise](https://www.youtube.com/watch?v=y4Djk_G0yEg)**|| **[Unilateral Overhead Tricep Extension](https://youtu.be/FE_AsjcTImc?si=gzyVqZ88Yq9KTRiG)**(Low Angle) to **Kneeling Cable Crunch**(High Angle) 
 3. **Barbell Zercher Lunge**(build too) to **Overhead Press**
-4. **Sled Push/Pull** to **Farmer/Suitcase**||**Trap Bar/DB Squat Jump** 📈
-5. **Bench Reverse Crunch || [Dragon Flag](https://youtu.be/U5pviWt7sMo?si=bTziyFRf9FBf40sF) || Ab Roller** to **Chest press** 📈
+4. **Bench Reverse Crunch || [Dragon Flag](https://youtu.be/U5pviWt7sMo?si=bTziyFRf9FBf40sF) || Ab Roller** to **Chest press** 📈
 #### **Regular sets**
 ##### Hypertrophy Priority
-6. **Single Arm Lat Pulldown**
+5. **Single Arm Lat Pulldown**
 
 ##### Focus on Other Phases
-7. **Back Extension** 
-8. **Inner Thigh Abduction**
-9. **Outer Thigh Adduction** 
-10. **[Cable Assisted Pancake](https://youtu.be/yxXD_5RGakM?si=vFxPzJFnswWk71Zy)**(Low Angle) 📈
+6. **Back Extension** 
+7. **Inner Thigh Abduction**
+8. **Outer Thigh Adduction** 
+9. **[Cable Assisted Pancake](https://youtu.be/yxXD_5RGakM?si=vFxPzJFnswWk71Zy)**(Low Angle) 📈
 
 
 ## Explosive/Strength(Compound Movement)
@@ -155,13 +154,12 @@ Practice ISO hold to explosive movement
 1. **Prone Leg Curl** to **DB Bulgarian Split Squat** 
 2. **Hip thrust** to **Chest press**
 3. **[Pistol Hack Squat](https://www.youtube.com/watch?v=w-LKHuNiiTc)** to **Arnold press**
-4. **Pallof Press**(bands/cables) to **[Half Kneeling/Standing Arm Row](https://youtu.be/afE9JabFqR4?si=Q7eXtrCmYCcxOV_T)** 
-5. **Wide Tricep Dip** to **[Hanging Knee Raise](https://youtu.be/RD_A-Z15ER4?si=h0fyUA7SXg4vWE2a)** 📈
-6. **Sled Push/Pull** to **Farmer/Suitcase**||**Trap Bar/DB Squat Jump** 📈
+4. **Wide Tricep Dip** to **[Hanging Knee Raise](https://youtu.be/RD_A-Z15ER4?si=h0fyUA7SXg4vWE2a)** 📈
+5. **Sled Push/Pull** to **Farmer/Suitcase** 📈
 #### **Regular sets**
-7. **[Side rear Delt Fly](https://youtu.be/P81mH8n68h4?si=eGoGz-v2JIxxjTfB)** 
-8. **Zottman Curl**
-9. **[Cable Assisted Pancake](https://youtu.be/yxXD_5RGakM?si=vFxPzJFnswWk71Zy)**(Low Angle) 📈
+6. **[Side rear Delt Fly](https://youtu.be/P81mH8n68h4?si=eGoGz-v2JIxxjTfB)** 
+7. **Zottman Curl**
+8. **[Cable Assisted Pancake](https://youtu.be/yxXD_5RGakM?si=vFxPzJFnswWk71Zy)**(Low Angle) 📈
 
 #### Cable leg day variation
 1. **Back Extension**
@@ -176,15 +174,14 @@ Practice ISO hold to explosive movement
 1. **[Cable Woodchopper](https://www.youtube.com/watch?v=mvvu8imyMFs)**(Low angle) || **[Landmine Twist](https://youtu.be/M93HfnAVIl8?si=7KtnpfDB0GYobD9Z)** to **Kettlebell Leg Raise** 
 2. **[Behind the Back Lateral Raise](https://www.youtube.com/watch?v=y4Djk_G0yEg)** || **[Unilateral Overhead Tricep Extension](https://youtu.be/FE_AsjcTImc?si=gzyVqZ88Yq9KTRiG)**(Low Angle) to **Kneeling Cable Crunch**(High Angle) 
 3. **Barbell Zercher Lunge** to **Overhead Press**
-4. **Sled Push/Pull** to **Farmer/Suitcase**||**Trap Bar/DB Squat Jump** 📈
+4. **Sled Push/Pull** to **Farmer/Suitcase** 📈
 5. **Bench Reverse Crunch || [Dragon Flag](https://youtu.be/U5pviWt7sMo?si=bTziyFRf9FBf40sF) || Ab Roller** to **Chest press** 📈
 #### **Regular sets**
 6. **Back Extension** 
 7. **Inner Thigh Abduction**
 8. **Outer Thigh Adduction** 
 9. **Single Arm Lat Pulldown**
-10. **Chin-up** || **Pull-up** 📈
-11. **Clean & Jerk Press** || **Deadlift** 📈
+10. **Clean & Jerk Press** 📈
 
 ### Wednesday
 have at least one free form day like this every week since following this new program structure doesn't need to follow other days and can sprinkle in a little plyometric work here or there don't need to stress it.
