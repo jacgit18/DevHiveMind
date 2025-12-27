@@ -26,6 +26,7 @@ Thursday or Friday rest day if multiple rest days 1 from each phase section.
 - [ ] Finalize, refine, reduce, and prioritize exercises in [[Plyometrics]] and Stability program 
 - [ ] Learn [How to Jump Rope](https://youtu.be/wqN5bRkZPK0?si=zxXLzzBXywde4piE)
 - [ ] Try advance [dead hang variations](https://youtu.be/ZeFGPBxKc2A?si=iUGaSbNqgLDae_8K)  
+- [ ] Practice ISO hold to explosive movement 
 - [ ] Eventually switch to sand bags from DB
 - [ ] Try [How to Juggle 3 Balls IN TWO MINUTES](https://youtu.be/p4_IUMS4yc8?si=NfVKkklqBmDF1tQy)
 - [ ] Try Chest press alt arm one pushing one ISO holding
@@ -88,7 +89,7 @@ Begin priority exercises first
 1. **[Pistol Hack Squat](https://www.youtube.com/watch?v=w-LKHuNiiTc)** to **Arnold press**
 2. **Hip thrust** to **Chest press** 
 
-##### Focus on Other Phases
+##### Focus on Other Phases(Last week Explosive)
 3. **Pallof Press**(bands/cables) to **[Half Kneeling/Standing Arm Row](https://youtu.be/afE9JabFqR4?si=Q7eXtrCmYCcxOV_T)** 
 4. **Prone Leg Curl** to **DB Bulgarian Split Squat** 
 5. **Sled Push/Pull** to **Trap Bar/DB Squat Jump** 📈
@@ -111,13 +112,9 @@ Begin priority exercises first
 2. **Pallof Press**(bands/cables) to **[Half Kneeling/Standing Arm Row](https://youtu.be/afE9JabFqR4?si=Q7eXtrCmYCcxOV_T)** 
 3. **Wide Tricep Dip** to **[Hanging Knee Raise](https://youtu.be/RD_A-Z15ER4?si=h0fyUA7SXg4vWE2a)** 📈
 
-
 #### **Regular sets**
 ##### Hypertrophy Priority
 4. **Zottman Curl**
-5. **Chin-up** || **Pull-up** 📈
-
-
 ##### Focus on Other Phases
 5. **Back Extension** 
 6. **Inner Thigh Abduction**
@@ -135,7 +132,7 @@ Begin priority exercises first
 4. **Bench Reverse Crunch || [Dragon Flag](https://youtu.be/U5pviWt7sMo?si=bTziyFRf9FBf40sF) || Ab Roller** to **Chest press** 📈
 #### **Regular sets**
 ##### Hypertrophy Priority
-5. **Single Arm Lat Pulldown**
+5. **Chin-up** || **Pull-up** 📈
 
 ##### Focus on Other Phases
 6. **Back Extension** 
@@ -144,10 +141,10 @@ Begin priority exercises first
 9. **[Cable Assisted Pancake](https://youtu.be/yxXD_5RGakM?si=vFxPzJFnswWk71Zy)**(Low Angle) 📈
 
 
-## Explosive/Strength(Compound Movement)
+## Strength(Compound Movement)
 Do 2 reps of sled push/pull to 6 reps of farmer/suitcase for 8 sets
 
-Practice ISO hold to explosive movement 
+
 ### Monday(Pre prep for meal prep) 
 
 #### **Antagonistic super-sets**
