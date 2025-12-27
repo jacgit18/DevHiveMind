@@ -79,23 +79,25 @@ Alternate each month keeping the week training phase in to account the weights f
 7. At Home [[Personal Optimized Session#[O2 Trainer Routine](https //www.youtube.com/watch?v=-Es3HOd0PT8&list=PL8NG4An03Sa_ZvEIyHFojC65BhMV08qr1&index=5)|O2 Trainer]] 
 
 ## Hypertrophy
-Do 3 reps of sled push/pull to 10 reps of farmer/suitcase for 6 sets
 
 ### Friday  - Meal Prep Day 1
 #### **Antagonistic super-sets** -Hypertrophy(10x6)/Strength(8x8)/Explosive(6x5)
 
-3. **[Pistol Hack Squat](https://www.youtube.com/watch?v=w-LKHuNiiTc)** to **Arnold press**
-4. **Pallof Press**(bands/cables) to **[Half Kneeling/Standing Arm Row](https://youtu.be/afE9JabFqR4?si=Q7eXtrCmYCcxOV_T)** 
+##### Hypertrophy Priority
+1. **[Pistol Hack Squat](https://www.youtube.com/watch?v=w-LKHuNiiTc)** to **Arnold press**
+2. **Hip thrust** to **Chest press** 
 
-5. **Prone Leg Curl** to **DB Bulgarian Split Squat** 
+##### If energy left Train but focus on Other Phases
+1. **Pallof Press**(bands/cables) to **[Half Kneeling/Standing Arm Row](https://youtu.be/afE9JabFqR4?si=Q7eXtrCmYCcxOV_T)** 
+2. **Prone Leg Curl** to **DB Bulgarian Split Squat** 
+3. **Sled Push/Pull** to **Farmer/Suitcase**||**Trap Bar/DB Squat Jump** 📈
 
 
-
-7. **Sled Push/Pull** to **Farmer/Suitcase**||**Trap Bar/DB Squat Jump** 📈
 #### **Regular sets** -  Hypertrophy(10x1) for multiple songs long, Strength(4x8), Explosive(3x4)
 
 6. **[Side rear Delt Fly](https://youtu.be/P81mH8n68h4?si=eGoGz-v2JIxxjTfB)** 
 7. **[Cable Assisted Pancake](https://youtu.be/yxXD_5RGakM?si=vFxPzJFnswWk71Zy)**(Low Angle) 📈
+
 
 ### Saturday
 
