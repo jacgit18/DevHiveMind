@@ -131,12 +131,11 @@ Begin priority exercises first
 5. **Chin-up** || **Pull-up** 📈
 
 ##### Focus on Other Phases
-6. **Back Extension** 
-7. **[Cable Assisted Pancake](https://youtu.be/yxXD_5RGakM?si=vFxPzJFnswWk71Zy)**(Low Angle) 📈
+6. **[Cable Assisted Pancake](https://youtu.be/yxXD_5RGakM?si=vFxPzJFnswWk71Zy)**(Low Angle) 📈
 
 
 ## Strength(Compound Movement)
-Do 2 reps of sled push/pull to 6 reps of farmer/suitcase for 8 sets
+Do 3 reps of sled push/pull to 6 reps of farmer/suitcase for 8 sets
 
 
 ### Monday(Pre prep for meal prep) 
@@ -149,16 +148,15 @@ Do 2 reps of sled push/pull to 6 reps of farmer/suitcase for 8 sets
 5. **Wide Tricep Dip** to **[Hanging Knee Raise](https://youtu.be/RD_A-Z15ER4?si=h0fyUA7SXg4vWE2a)** 📈
 6. **Sled Push/Pull** to **Farmer/Suitcase** 📈
 #### **Regular sets**
-6. **[Side rear Delt Fly](https://youtu.be/P81mH8n68h4?si=eGoGz-v2JIxxjTfB)** 
-7. **Zottman Curl**
-8. **[Cable Assisted Pancake](https://youtu.be/yxXD_5RGakM?si=vFxPzJFnswWk71Zy)**(Low Angle) 📈
+7. **[Side rear Delt Fly](https://youtu.be/P81mH8n68h4?si=eGoGz-v2JIxxjTfB)** 
+8. **Zottman Curl**
+
 
 #### Cable leg day variation
-1. **Back Extension**
-2. **[Cable Hip Extension](https://www.youtube.com/watch?v=Fr6fdKPdyfM)** 
-3. **[Cable Side Kicks](https://www.youtube.com/watch?v=jYuN92LGzpA)** 
-4. **[Cable Kickback](https://www.youtube.com/watch?v=SqO-VUEak2M)**
-5. **[Cable](https://youtu.be/2M1Mikqf5lY?si=sIX0t_7UkiioAffp)** || **[Kettlebell](https://youtu.be/SuNgD0x2U6U?si=0oE-W6Zv_5pABcMv)** - Unilateral RDL 📈
+1. **[Cable Hip Extension](https://www.youtube.com/watch?v=Fr6fdKPdyfM)** 
+2. **[Cable Side Kicks](https://www.youtube.com/watch?v=jYuN92LGzpA)** 
+3. **[Cable Kickback](https://www.youtube.com/watch?v=SqO-VUEak2M)**
+4. **[Cable](https://youtu.be/2M1Mikqf5lY?si=sIX0t_7UkiioAffp)** || **[Kettlebell](https://youtu.be/SuNgD0x2U6U?si=0oE-W6Zv_5pABcMv)** - Unilateral RDL 📈
 
 ### Tuesday - Meal Prep Day 2
 
@@ -179,22 +177,20 @@ Do 2 reps of sled push/pull to 6 reps of farmer/suitcase for 8 sets
 have at least one free form day like this every week since following this new program structure doesn't need to follow other days and can sprinkle in a little plyometric work here or there don't need to stress it.
 
 #### **Antagonistic super-sets**
-1. **[Cable Woodchopper](https://www.youtube.com/watch?v=mvvu8imyMFs)**(Low angle) || **[Landmine Twist](https://youtu.be/M93HfnAVIl8?si=7KtnpfDB0GYobD9Z)** to **Kettlebell Leg Raise** 
-2. [[Plyometrics]]
-3. **Pallof Press**(bands/cables) to **Kneeling Cable Crunch**(High Angle) 
-4. **Barbell Zercher Lunge** to **Overhead Press**
-5. **Sled Push/Pull** to **Farmer/Suitcase**📈
-6. **Bench Reverse Crunch || [Dragon Flag](https://youtu.be/U5pviWt7sMo?si=bTziyFRf9FBf40sF) || Ab Roller** to **Chest press** 📈
+1. [[Plyometrics]]
+2. **Pallof Press**(bands/cables) to **Kneeling Cable Crunch**(High Angle) 
+3. **Barbell Zercher Lunge** to **Overhead Press**
+4. **Sled Push/Pull** to **Farmer/Suitcase**📈
+5. **Bench Reverse Crunch || [Dragon Flag](https://youtu.be/U5pviWt7sMo?si=bTziyFRf9FBf40sF) || Ab Roller** to **Chest press** 📈
 #### **Regular sets**
-7. **Back Extension** 
-8. **Single Arm Lat Pulldown**
-9. **Zottman Curl**
-10. **Kneeling Squat on toes with DB behind** 
-11. **[Cable Pec Minor Fly](https://youtu.be/sC91H2XLtJc?si=bSV_IhpBVbdADHz2&t=286)** || **Chest Fly(**[variations](https://youtube.com/shorts/0LJ-JujImCs?si=LgyKSn87TMCarM-y)) || **[DB Cross Body Fly](https://youtu.be/mK2xrdqf_cU?si=jNrPZCLCgUNFki9v)**
-12. **[Cable](https://youtu.be/2M1Mikqf5lY?si=sIX0t_7UkiioAffp)** || **[Kettlebell](https://youtu.be/SuNgD0x2U6U?si=0oE-W6Zv_5pABcMv)** - Unilateral RDL 📈
-13. **Chin-up** || **Pull-up** 📈
-14. **[Cable Assisted Pancake](https://youtu.be/yxXD_5RGakM?si=vFxPzJFnswWk71Zy)**(Low Angle) 📈
-15. **Clean & Jerk Press** 📈
+
+6. **Single Arm Lat Pulldown**
+7. **Kneeling Squat on toes with DB behind** 
+8. **[Cable Pec Minor Fly](https://youtu.be/sC91H2XLtJc?si=bSV_IhpBVbdADHz2&t=286)** || **Chest Fly(**[variations](https://youtube.com/shorts/0LJ-JujImCs?si=LgyKSn87TMCarM-y)) || **[DB Cross Body Fly](https://youtu.be/mK2xrdqf_cU?si=jNrPZCLCgUNFki9v)**
+9. **[Cable](https://youtu.be/2M1Mikqf5lY?si=sIX0t_7UkiioAffp)** || **[Kettlebell](https://youtu.be/SuNgD0x2U6U?si=0oE-W6Zv_5pABcMv)** - Unilateral RDL 📈
+10. **Chin-up** || **Pull-up** 📈
+11. **[Cable Assisted Pancake](https://youtu.be/yxXD_5RGakM?si=vFxPzJFnswWk71Zy)**(Low Angle) 📈
+
 ### Thursday(Pre prep for meal prep) 
 
 
