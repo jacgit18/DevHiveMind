@@ -30,7 +30,6 @@ dg-publish:
 - [ ] Try [How to Juggle 3 Balls IN TWO MINUTES](https://youtu.be/p4_IUMS4yc8?si=NfVKkklqBmDF1tQy)
 - [ ] Try Chest press alt arm one pushing one ISO holding
 - [ ] Eventually add [Rope Flow: Movement](https://youtu.be/ItVf97YhFL4?si=_Bo9m9TxxWgy6au0) and [Mace exercises](https://youtu.be/TdatDbqb8TY?si=QXCZiZTyP676wf32)
-- [ ] Try DB switch catch on explosive week 5lb 1 min or 1 song
 - [ ] Try Waited pull up then ISO knee raise while holding the pull up
 - [ ] Try and add in [Good Morning](https://youtu.be/nWyx81AfTos?si=ReJqMdB_wh9t4yRs) after improving back extension and RDL
 - [ ] Use one set of halo's each direction, and kettlebell leg raises at lighter weight for exercises with out super sets.  
@@ -64,9 +63,9 @@ dg-publish:
 	13. [Swiss Ball Side Flexion - Level 3](https://youtu.be/-W02_G1f0aM?si=ERpJXiz8LvGJ7885)
 	14. [Swiss Ball Side Flexion - Level 4](https://youtu.be/2VCOHVeRdKs?si=U5aowRV0FRbtSK2b)
 	15. [Swiss Ball Side Flexion - Level 5](https://youtu.be/ltuv2fYMXqk?si=IkiMMxr0jMaj7n0P)
-5. Day of  week excercise(**clean jerk & press on explosive week**)
-6. **[[Personal Trainer#Priority Static Stretch to develop splits|Static Stretching]]** - 2 days under hypertrophy and 2 days in other phase days
-7. At Home [[Personal Optimized Session#[O2 Trainer Routine](https //www.youtube.com/watch?v=-Es3HOd0PT8&list=PL8NG4An03Sa_ZvEIyHFojC65BhMV08qr1&index=5)|O2 Trainer]] 
+5. **[[Personal Trainer#Priority Static Stretch to develop splits|Static Stretching]]** - 2 days under hypertrophy and 2 days in other phase days
+6. At Home [[Personal Optimized Session#[O2 Trainer Routine](https //www.youtube.com/watch?v=-Es3HOd0PT8&list=PL8NG4An03Sa_ZvEIyHFojC65BhMV08qr1&index=5)|O2 Trainer]] 
+7. Work on [[Recovery]] playing by ear
 
 ## Hypertrophy 
 
@@ -168,21 +167,20 @@ Do 3 reps of sled push/pull to 6 reps of farmer/suitcase for 8 sets
 7. **Outer Thigh Adduction** 
 8. **Zottman Curl**
 
-### Wednesday
-have at least one free form day like this every week since following this new program structure doesn't need to follow other days and can sprinkle in a little plyometric work here or there don't need to stress it.
+### Wednesday - free flex day
 
 ##### Overcoming Isometrics at Start 
 1. Zercher Squat 
 2. [Lateral wall push](https://youtu.be/tIFjnucY09Q?si=85yMrvYak0z5Qn5K)
 3. Deadlift - different leg levels from Shin knee and thigh
 
-- 4 sets 3 sec per rep at 60% to 70% effort
-- 2 sets 10 sec per rep at 100% effort
+	- 4 sets 3 sec per rep at 60% to 70% effort
+	- 2 sets 10 sec per rep at 100% effort
 #### **Antagonistic super-sets**
 4. [[Plyometrics]]
 5. **Pallof Press**(bands/cables) to **Kneeling Cable Crunch**(High Angle) 
 6. **Sled Push/Pull** to **Farmer/Suitcase**📈
-7. **Bench Reverse Crunch || [Dragon Flag](https://youtu.be/U5pviWt7sMo?si=bTziyFRf9FBf40sF) || Ab Roller** to **Chest press** 📈
+7. DB switch catch(5lb) - 1 min 
 #### **Regular sets**
 8. **Kneeling Squat on toes with DB behind** 
 9. **[Cable](https://youtu.be/2M1Mikqf5lY?si=sIX0t_7UkiioAffp)** || **[Kettlebell](https://youtu.be/SuNgD0x2U6U?si=0oE-W6Zv_5pABcMv)** - Unilateral RDL 📈
