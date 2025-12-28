@@ -190,6 +190,7 @@ have at least one free form day like this every week since following this new pr
 5. **Bench Reverse Crunch || [Dragon Flag](https://youtu.be/U5pviWt7sMo?si=bTziyFRf9FBf40sF) || Ab Roller** to **Chest press** 📈
 #### **Regular sets**
 
+##### Yielding Isometrics at End 
 6. **Single Arm Lat Pulldown**
 7. **Kneeling Squat on toes with DB behind** 
 8. **[Cable Pec Minor Fly](https://youtu.be/sC91H2XLtJc?si=bSV_IhpBVbdADHz2&t=286)** || **Chest Fly(**[variations](https://youtube.com/shorts/0LJ-JujImCs?si=LgyKSn87TMCarM-y)) || **[DB Cross Body Fly](https://youtu.be/mK2xrdqf_cU?si=jNrPZCLCgUNFki9v)**
@@ -257,8 +258,8 @@ have at least one free form day like this every week since following this new pr
 | KB RDL                                                                                    | 30/30       | 20/20     | 15/15       | 10/10     | Multi | N/A              |
 | *Landmine Twist*                                                                          | 45/45       | 25/25     | 10/10       | 10/10     | Multi | N/A              |
 | Side Lateral QL Extension                                                                 | 25/25       | 10/10     | 10/10       | 10/10     | Multi | N/A              |
-| *Sled Push to Alternating Lateral Pull*                                                   | 50/50       | 35/35     | 25/25       | 10/10     | Multi | 1/2 of ***1x8*** |
-| *Sled Push to Pull*                                                                       | 50/50       | 35/35     | 25/25       | 10/10     | Multi | 1/2 of ***1x8*** |
+| *Sled Push to Alternating Lateral Pull*                                                   | 180/180     | 45/45     | 25/25       | 10/10     | Multi | 1/2 of ***1x8*** |
+| *Sled Push to Pull*                                                                       | 180/180     | 45/45     | 25/25       | 10/10     | Multi | 1/2 of ***1x8*** |
 | Super ROM                                                                                 | N/A         | 10/10     | 5/5         | 5/5       | Multi | ***2x8***        |
 | Roman Chair Hip Abduction                                                                 | 10/10       | 10/10     | 10/10       | N/A       | Multi | N/A              |
 | Walking Barbell Zercher Lunge                                                             | 20/20       | 20/20     | 20/20       | 20/20     | Multi | 1/2 of ***1x8*** |
