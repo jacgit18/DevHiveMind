@@ -152,7 +152,8 @@ Do 3 reps of sled push/pull to 6 reps of farmer/suitcase for 8 sets
 
 #### **Regular sets**
 7. **[Side rear Delt Fly](https://youtu.be/P81mH8n68h4?si=eGoGz-v2JIxxjTfB)** 
-8. **Zottman Curl**
+8. **Single Arm Lat Pulldown**
+9. **Zottman Curl**
 
 
 #### Cable leg day variation
@@ -166,8 +167,7 @@ Do 3 reps of sled push/pull to 6 reps of farmer/suitcase for 8 sets
 #### **Antagonistic super-sets**
 1. **[Cable Woodchopper](https://www.youtube.com/watch?v=mvvu8imyMFs)**(Low angle) || **[Landmine Twist](https://youtu.be/M93HfnAVIl8?si=7KtnpfDB0GYobD9Z)** to **Kettlebell Leg Raise** 
 2. **Barbell Zercher Lunge** to **Overhead Press**
-3. **Sled Push/Pull** to **Farmer/Suitcase** 📈
-4. **Bench Reverse Crunch || [Dragon Flag](https://youtu.be/U5pviWt7sMo?si=bTziyFRf9FBf40sF) || Ab Roller** to **Chest press** 📈
+3. **Bench Reverse Crunch || [Dragon Flag](https://youtu.be/U5pviWt7sMo?si=bTziyFRf9FBf40sF) || Ab Roller** to **Chest press** 📈
 
 ##### Yielding Isometrics at End 
 5. **Pallof Press**(bands/cables) to **Kneeling Cable Crunch**(High Angle) 
@@ -175,7 +175,7 @@ Do 3 reps of sled push/pull to 6 reps of farmer/suitcase for 8 sets
 6. **Back Extension** 
 7. **Inner Thigh Abduction**
 8. **Outer Thigh Adduction** 
-9. **Single Arm Lat Pulldown**
+
 
 
 ### Wednesday
@@ -187,11 +187,11 @@ have at least one free form day like this every week since following this new pr
 3. **Sled Push/Pull** to **Farmer/Suitcase**📈
 4. **Bench Reverse Crunch || [Dragon Flag](https://youtu.be/U5pviWt7sMo?si=bTziyFRf9FBf40sF) || Ab Roller** to **Chest press** 📈
 #### **Regular sets**
-6. **Kneeling Squat on toes with DB behind** 
-7. **[Cable](https://youtu.be/2M1Mikqf5lY?si=sIX0t_7UkiioAffp)** || **[Kettlebell](https://youtu.be/SuNgD0x2U6U?si=0oE-W6Zv_5pABcMv)** - Unilateral RDL 📈
-8. **Clean & Jerk Press** 📈
+5. **Kneeling Squat on toes with DB behind** 
+6. **[Cable](https://youtu.be/2M1Mikqf5lY?si=sIX0t_7UkiioAffp)** || **[Kettlebell](https://youtu.be/SuNgD0x2U6U?si=0oE-W6Zv_5pABcMv)** - Unilateral RDL 📈
+7. **Clean & Jerk Press** 📈
 ##### Yielding Isometrics at End 
-11. **Single Arm Lat Pulldown**
+8. **Single Arm Lat Pulldown**
 
 
 ### Thursday(Pre prep for meal prep) 
