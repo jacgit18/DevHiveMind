@@ -141,20 +141,15 @@ Do 3 reps of sled push/pull to 6 reps of farmer/suitcase for 8 sets
 ### Monday(Pre prep for meal prep) 
 
 #### **Antagonistic super-sets**
-
-
 1. **Prone Leg Curl** to **DB Bulgarian Split Squat** 
 2. **Hip thrust** to **Chest press**
-
 3. **[Behind the Back Lateral Raise](https://www.youtube.com/watch?v=y4Djk_G0yEg)** || **[Unilateral Overhead Tricep Extension](https://youtu.be/FE_AsjcTImc?si=gzyVqZ88Yq9KTRiG)**(Low Angle) to **[Half Kneeling/Standing Arm Row](https://youtu.be/afE9JabFqR4?si=Q7eXtrCmYCcxOV_T)** 
 
 4. **Wide Tricep Dip** to **[Hanging Knee Raise](https://youtu.be/RD_A-Z15ER4?si=h0fyUA7SXg4vWE2a)** 📈
 5. **Sled Push/Pull** to **Farmer/Suitcase** 📈
 
 ##### Yielding Isometrics at End 
-2–3 holds × 30–45s
-
-3. **[Pistol Hack Squat](https://www.youtube.com/watch?v=w-LKHuNiiTc)** to **Arnold press**
+6. **[Pistol Hack Squat](https://www.youtube.com/watch?v=w-LKHuNiiTc)** to **Arnold press**
 
 #### **Regular sets**
 7. **[Side rear Delt Fly](https://youtu.be/P81mH8n68h4?si=eGoGz-v2JIxxjTfB)** 
@@ -171,10 +166,12 @@ Do 3 reps of sled push/pull to 6 reps of farmer/suitcase for 8 sets
 
 #### **Antagonistic super-sets**
 1. **[Cable Woodchopper](https://www.youtube.com/watch?v=mvvu8imyMFs)**(Low angle) || **[Landmine Twist](https://youtu.be/M93HfnAVIl8?si=7KtnpfDB0GYobD9Z)** to **Kettlebell Leg Raise** 
-2. **Pallof Press**(bands/cables) to **Kneeling Cable Crunch**(High Angle) 
-3. **Barbell Zercher Lunge** to **Overhead Press**
-4. **Sled Push/Pull** to **Farmer/Suitcase** 📈
-5. **Bench Reverse Crunch || [Dragon Flag](https://youtu.be/U5pviWt7sMo?si=bTziyFRf9FBf40sF) || Ab Roller** to **Chest press** 📈
+2. **Barbell Zercher Lunge** to **Overhead Press**
+3. **Sled Push/Pull** to **Farmer/Suitcase** 📈
+4. **Bench Reverse Crunch || [Dragon Flag](https://youtu.be/U5pviWt7sMo?si=bTziyFRf9FBf40sF) || Ab Roller** to **Chest press** 📈
+
+##### Yielding Isometrics at End 
+5. **Pallof Press**(bands/cables) to **Kneeling Cable Crunch**(High Angle) 
 #### **Regular sets**
 6. **Back Extension** 
 7. **Inner Thigh Abduction**
