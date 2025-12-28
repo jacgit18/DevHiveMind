@@ -31,7 +31,7 @@ dg-publish:
 - [ ] If you're not **feeling the target muscle** during an exercise, **reduce momentum** and slow down on the eccentric(lengthen) phase of the movement for strength training to improve control and mind-muscle connection but you can also slow down on the concentric(shortening) phase of movement.
 - [ ] Once at solid baseline switch to a **Seasonal Training Strategy** while also integrating workout phases aiming for **7 workouts per week in the winter/fall** were your body tends to **retain more weight during the colder months** (September to February), making it an ideal time to **increase training frequency** and build mass or strength. Then In the **warmer months**, when energy is often spent on outdoor activities and appetite may decrease, **4 to 5 workouts per week** can be more sustainable.
 
-Bag work for 7 songs
+
 
 Functional strength adds rotation to exercises or exercise selection in terms of picking exercises with rotation in them
 
@@ -104,8 +104,6 @@ The general principles of **training phases** like strength and hypertrophy appl
 
 
 #todo/BAU/Workout 
-- [x] Max excercise to do per session should be 9 ✅ 2025-12-26
-- [ ] Maybe have a free up month with no specific structure at end of each quarter.
 - [ ] Drink beet juice with baking soda. 
 - [ ] Cycle in warm up doing  lunges to kicks, knees, and teeps
 - [ ] Anything outside of best parings you do make it a light day instead of a intense day because best paring are for injury mitigation. also orange is very high priority out of all excercise here below.
@@ -198,11 +196,11 @@ All leg cable excercise are done at a low angle. Avoid squatting with running sh
 #### Session 1: Main Compound Squat & Lunge Patterns
 [How to PROPERLY Squat for Growth (4 Easy Steps)](https://youtu.be/gcNh17Ckjgg?si=L0Lmos_bpSJcs9u1)
 *Make Squats Narrow and Deep to improve pistol squat and set bar height to 13 for anything Zercher*
-1. **Hack Squat**(Back/Front) – 90lb/180lb/300lb - if ankles begin to lift move feet up
+1. **Hack Squat**(Back/Front) 
 2. **Barbell Squat/Zercher B-Squat** - Incline High Bar(on trap muscle)  - 50lb
 3. **Dumbbell Bulgarian Split Squat/Prone Leg Curl** - set to 3rd hole and exclusively train only strength phase(can use [leg extension machine](https://youtu.be/VC5kbLSuo30?si=ssky4p0p0X2BdUEy)) - 20lb/20lb/25lb can do on a cube too
-4. **Kneeling Squat on toes with curlbar/Dumbbell behind** - 45lb/45lb/45lb
-5. **Unilateral/Bilateral Leg Press** – 90lb/180lb/250lb | 180lb/360lb/500lb
+4. **Kneeling Squat on toes with curlbar/Dumbbell behind** 
+5. **Unilateral/Bilateral Leg Press** 
 6. **Walking Barbell Lunge/Zercher Lunge** 
 7. **KB [B Stance Squat](https://youtu.be/5uFUvFXhp7U?si=3PGzZ_XSqbFGPbqN)/Sumo [Zercher](https://www.youtube.com/watch?v=71l8K2Q9_6s)** 
 8. **[Roman Chair Hip Abduction](https://youtu.be/j5HWZOfIePI?si=EsYf8Gg0rFO16y-p)**  
@@ -211,12 +209,7 @@ All leg cable excercise are done at a low angle. Avoid squatting with running sh
 
 
 ### End Session Depending Session Type
-#### Core
-1. **[Kneeling Cable Crunch](https://www.youtube.com/watch?v=3qjoXDTuyOE)**(Top Angle) 
-2. **[Pallof Press](https://www.youtube.com/watch?v=ma2OjgP5XDc&pp=ygUMUGFsbG9mIFByZXNz)** to **[Lateral Walk](https://youtu.be/nw8NjG2YOLY?si=KAo4G6B3_5Av1s_t)**(Wrist Height) 
-#### Leg
-1. ***[Cable Single Leg RDL](https://youtu.be/2M1Mikqf5lY?si=1Me7DqZvB5XL1Orm(15lb)***(Low Angle) 
-2. **Kettlebell Leg Raise** 
+
 ##### Priority Static Stretch to develop splits
 *Perform Static Stretch at end of workout 4 times a week 30 sec each*
 Static stretches can be active or passive with external force like maybe a plank with a plate on the back. Follow excercise from [Pancake Stretch Progression](https://youtu.be/iO1tsB5ygMg?si=YRVgj1ZB-Z_TRNvb) which are spread across this document.
