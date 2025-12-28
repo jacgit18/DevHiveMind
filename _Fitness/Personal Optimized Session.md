@@ -33,7 +33,7 @@ dg-publish:
 - [ ] Try Waited pull up then ISO knee raise while holding the pull up
 - [ ] Try and add in [Good Morning](https://youtu.be/nWyx81AfTos?si=ReJqMdB_wh9t4yRs) after improving back extension and RDL
 - [ ] Use one set of halo's each direction, and kettlebell leg raises at lighter weight for exercises with out super sets.  
-- [ ] Add Isometric Overcoming to regimen maybe explosive week place it early in session
+- [ ] Add Overcoming Isometric to regimen maybe explosive week place it early in session
 	- [ ] Overcoming Zercher Squat 
 	- [ ] [Overcoming Lateral wall push](https://youtu.be/tIFjnucY09Q?si=85yMrvYak0z5Qn5K)
 	- [ ] Overcoming deadlift different leg levels from Shin knee and thigh
@@ -90,7 +90,7 @@ Begin priority exercises first
 
 ##### Focus on Other Phases(Last week Explosive)
 4. **Prone Leg Curl** to **DB Bulgarian Split Squat** 
-5. **Sled Push/Pull** to **Trap Bar/DB Squat Jump** 📈
+5. **Sled Push/Pull** to **Trap Bar/DB Squat Jump** 📈 (explosive)
 
 #### **Regular sets** -  Hypertrophy(10x1) for multiple songs long, Strength(4x8), Explosive(3x4)
 
@@ -144,7 +144,6 @@ Do 3 reps of sled push/pull to 6 reps of farmer/suitcase for 8 sets
 1. **Prone Leg Curl** to **DB Bulgarian Split Squat** 
 2. **Hip thrust** to **Chest press**
 3. **[Behind the Back Lateral Raise](https://www.youtube.com/watch?v=y4Djk_G0yEg)** || **[Unilateral Overhead Tricep Extension](https://youtu.be/FE_AsjcTImc?si=gzyVqZ88Yq9KTRiG)**(Low Angle) to **[Half Kneeling/Standing Arm Row](https://youtu.be/afE9JabFqR4?si=Q7eXtrCmYCcxOV_T)** 
-
 4. **Wide Tricep Dip** to **[Hanging Knee Raise](https://youtu.be/RD_A-Z15ER4?si=h0fyUA7SXg4vWE2a)** 📈
 5. **Sled Push/Pull** to **Farmer/Suitcase** 📈
 
@@ -177,7 +176,7 @@ Do 3 reps of sled push/pull to 6 reps of farmer/suitcase for 8 sets
 7. **Inner Thigh Abduction**
 8. **Outer Thigh Adduction** 
 9. **Single Arm Lat Pulldown**
-10. **Clean & Jerk Press** 📈
+
 
 ### Wednesday
 have at least one free form day like this every week since following this new program structure doesn't need to follow other days and can sprinkle in a little plyometric work here or there don't need to stress it.
@@ -185,16 +184,12 @@ have at least one free form day like this every week since following this new pr
 #### **Antagonistic super-sets**
 1. [[Plyometrics]]
 2. **Pallof Press**(bands/cables) to **Kneeling Cable Crunch**(High Angle) 
-3. **Barbell Zercher Lunge** to **Overhead Press**
-4. **Sled Push/Pull** to **Farmer/Suitcase**📈
-5. **Bench Reverse Crunch || [Dragon Flag](https://youtu.be/U5pviWt7sMo?si=bTziyFRf9FBf40sF) || Ab Roller** to **Chest press** 📈
+3. **Sled Push/Pull** to **Farmer/Suitcase**📈
+4. **Bench Reverse Crunch || [Dragon Flag](https://youtu.be/U5pviWt7sMo?si=bTziyFRf9FBf40sF) || Ab Roller** to **Chest press** 📈
 #### **Regular sets**
 6. **Kneeling Squat on toes with DB behind** 
-7. **[Cable Pec Minor Fly](https://youtu.be/sC91H2XLtJc?si=bSV_IhpBVbdADHz2&t=286)** || **Chest Fly(**[variations](https://youtube.com/shorts/0LJ-JujImCs?si=LgyKSn87TMCarM-y)) || **[DB Cross Body Fly](https://youtu.be/mK2xrdqf_cU?si=jNrPZCLCgUNFki9v)**
-8. **[Cable](https://youtu.be/2M1Mikqf5lY?si=sIX0t_7UkiioAffp)** || **[Kettlebell](https://youtu.be/SuNgD0x2U6U?si=0oE-W6Zv_5pABcMv)** - Unilateral RDL 📈
-9. **Chin-up** || **Pull-up** 📈
-10. **[Cable Assisted Pancake](https://youtu.be/yxXD_5RGakM?si=vFxPzJFnswWk71Zy)**(Low Angle) 📈
-
+7. **[Cable](https://youtu.be/2M1Mikqf5lY?si=sIX0t_7UkiioAffp)** || **[Kettlebell](https://youtu.be/SuNgD0x2U6U?si=0oE-W6Zv_5pABcMv)** - Unilateral RDL 📈
+8. **Clean & Jerk Press** 📈
 ##### Yielding Isometrics at End 
 11. **Single Arm Lat Pulldown**
 
