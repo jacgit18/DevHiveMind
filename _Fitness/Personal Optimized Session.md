@@ -23,6 +23,7 @@ dg-publish:
 #todo/BAU/Workout 
 - [ ] Finalize, refine, reduce, and prioritize exercises in [[Plyometrics]] and Stability program 
 - [ ] Alternate grips on sled pull
+- [ ] Can only do each excercise twice a week max
 - [ ] Learn [How to Jump Rope](https://youtu.be/wqN5bRkZPK0?si=zxXLzzBXywde4piE)
 - [ ] Try advance [dead hang variations](https://youtu.be/ZeFGPBxKc2A?si=iUGaSbNqgLDae_8K)  
 - [ ] Practice ISO hold to explosive movement 

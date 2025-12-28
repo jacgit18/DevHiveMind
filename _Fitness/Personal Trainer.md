@@ -64,11 +64,7 @@ In contrast, barbell movements for the lower body (like squats and deadlifts) or
 
 The general principles of **training phases** like strength and hypertrophy apply to most exercises. However, when training **smaller muscles and stabilizers**, it's often better to prioritize **tempo and control over intensity** example calf raises and wrist curls should be done with a slow tempo about 3x15.  You should also limit combination exercises since focused on adding weight also over time muscle tightening and timing will tighten in the right spots automatically or faster or at least take less effort when bracing for impact.
 
-| Goal                            | Sets | Reps   | Tempo                                | **Rest**  |
-| ------------------------------- | ---- | ------ | ------------------------------------ | --------- |
-| **CM** - Compound Movement(Str) | 3–4  | 6–10   | Controlled (2-1-2)                   | 60–90 sec |
-| **EP** - Explosive Power        | 3–5  | 3–6    | Explosive concentric, slow eccentric | 2–3 min   |
-| **Hypertrophy / Endurance**     | 2–4  | 12–20+ | Smooth and rhythmic (1-0-1 or 2-0-2) | 30–60 sec |
+
 
 ### Breathing & Core Engagement in Exercise
 - **Inhale** during the **eccentric phase** (_lowering the weight_).
@@ -77,7 +73,6 @@ The general principles of **training phases** like strength and hypertrophy appl
 - No matter the movement—whether lifting, lowering, or holding—**keep your core engaged the entire time**. A braced core provides essential stability and protects your spine during all phases of the exercise.
 
 ### Equipment Tips
-- [Felix Bar](https://youtu.be/mkRDoV83Y0M?si=BSPRPBericJza2p_) can be a  good arm warm up.
 - Use [[Tower 200.pdf |Tower 200]] for practicing cable machine exercises the weight ranges from 25 to 45 lb.
 - Use cables which are best for isolation of muscle so maybe focus hypertrophy days around cable [properly](https://youtu.be/JUDTGZh4rhg?si=rsQZQsKYSnAV1XkB). 
 - Use grip and [[Hand Exercise.pdf | finger trainer]] to improve grip.
@@ -111,7 +106,7 @@ The general principles of **training phases** like strength and hypertrophy appl
 #todo/BAU/Workout 
 - [x] Max excercise to do per session should be 9 ✅ 2025-12-26
 - [ ] Maybe have a free up month with no specific structure at end of each quarter.
-- [ ] Limit sprinting on ***Hypertrophy week*** for non leg days and drink beet juice with baking soda. 
+- [ ] Drink beet juice with baking soda. 
 - [ ] Cycle in warm up doing  lunges to kicks, knees, and teeps
 - [ ] Anything outside of best parings you do make it a light day instead of a intense day because best paring are for injury mitigation. also orange is very high priority out of all excercise here below.
 - [ ] Hit heavy bag at Crunch once a week also be aware of how you use row machine/Airdyne bike since can fall into cardio use it to rev up the engine then do cardio on days where you want to.
@@ -129,7 +124,6 @@ The general principles of **training phases** like strength and hypertrophy appl
 
 
 ## Body Part Specific Programs 
-> For each excercise allowed to do 3 times a week max. Also each fixed gym machine has a freeweight variations you can pivot to if not available.
 
 ![[anatomychart1.jpg]]
 
