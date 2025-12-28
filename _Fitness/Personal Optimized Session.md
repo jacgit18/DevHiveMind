@@ -178,7 +178,7 @@ Do 3 reps of sled push/pull to 6 reps of farmer/suitcase for 8 sets
 	- 2 sets 10 sec per rep at 100% effort
 #### **Antagonistic super-sets**
 4. [[Plyometrics]]
-5. **Pallof Press**(bands/cables) to **Kneeling Cable Crunch**(High Angle) 
+5. **Pallof Press**(bands/cables) to **[Lateral Walk](https://youtu.be/nw8NjG2YOLY?si=KAo4G6B3_5Av1s_t)**
 6. **Sled Push/Pull** to **Farmer/Suitcase**📈
 7. DB switch catch(5lb) - 1 min 
 #### **Regular sets**

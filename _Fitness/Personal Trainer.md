@@ -214,21 +214,8 @@ All leg cable excercise are done at a low angle. Avoid squatting with running sh
 8. **[Roman Chair Hip Abduction](https://youtu.be/j5HWZOfIePI?si=EsYf8Gg0rFO16y-p)**  
 9. ~~[Elevated Smith Machine Lunge](https://youtu.be/Yp5O9Cz6Ajg?si=bFGCfbzNqt_JobTA) - try [Elevated Lunge](https://youtu.be/OVFHK2Iev70?si=oiRNDNHznSrNP_RC) with dumbbell at max 40lb to 60lb then switch to free barbell~~
 
-#### **Session 2: Hinge + Posterior Chain (Glutes, Hamstrings, Core)**
-1. **[Cable](https://www.youtube.com/watch?v=IU-ERkjTKXA)/[Sled](https://youtu.be/kZyoyXUYYnQ?si=g3JDFGSTlRTOKzbi) Pull Through** 
-2. **[Cable Hip Extension](https://www.youtube.com/watch?v=Fr6fdKPdyfM)** 
-3. **Hip Thrust(Unilateral/Bilateral-Perform with Medium Band)** 
-4. **Tib Bar Raise** 
 
-#### **Session 3: Stability, Mobility, and Accessories (Control + Balance)**
-1. **Trap Bar Squat Jump** 
-2. **[Cable Side Kicks](https://www.youtube.com/watch?v=jYuN92LGzpA)** 
-3. **[Cable Hip Flexion](https://www.youtube.com/watch?v=MUvXfV97-Us)** 
-4. **Abduction Machine (Outer Thigh)** 
-5. **Adduction Machine (Inner Thigh)** 
-6. **Band Scarecrow Raises** 
-7. **Leg Extension** 
-8. **[Cable Kickback](https://www.youtube.com/watch?v=SqO-VUEak2M)/[Banded Donkey Kick](https://youtu.be/vHS9HF1Ucuw)** 
+
 ### End Session Depending Session Type
 #### Core
 1. **[Kneeling Cable Crunch](https://www.youtube.com/watch?v=3qjoXDTuyOE)**(Top Angle) 
