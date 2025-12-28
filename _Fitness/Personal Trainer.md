@@ -262,22 +262,22 @@ Static stretches can be active or passive with external force like maybe a plank
 
 ##### Upper
 ###### Push
--  **[Landmine Shoulder Z Press](https://youtu.be/app94pzXOuU?si=kOpaa_oC9HkpkRNv)** - 10lb/10lb/10lb 
--  **[Landmine](https://youtu.be/Zb-l68-4KFM?si=I8zR3VtIppuQNJk_)** || KB || [Resistance Band](https://www.youtube.com/watch?v=kI2H5xGnxcM) || [Rope](https://www.youtube.com/watch?v=JBz7PUxDyE4) || [TRX Standing](https://www.youtube.com/watch?v=7zpXipLThLI) Russian Twist- 10lb/10lb/10lb
-- **[Landmine Twist](https://www.youtube.com/watch?v=M93HfnAVIl8)** - 10lb/10lb/20lb
--  ***[Landmine Rotational Press](https://www.youtube.com/watch?v=ONDeomDVlbE) - 10lb/10lb/10lb***
+- **[Landmine Shoulder Z Press](https://youtu.be/app94pzXOuU?si=kOpaa_oC9HkpkRNv)**
+- **[Landmine](https://youtu.be/Zb-l68-4KFM?si=I8zR3VtIppuQNJk_)** || KB || [Resistance Band](https://www.youtube.com/watch?v=kI2H5xGnxcM) || [Rope](https://www.youtube.com/watch?v=JBz7PUxDyE4) || [TRX Standing](https://www.youtube.com/watch?v=7zpXipLThLI) Russian Twist
+- **[Landmine Twist](https://www.youtube.com/watch?v=M93HfnAVIl8)** 
+- ***[Landmine Rotational Press](https://www.youtube.com/watch?v=ONDeomDVlbE)***
 
 
 ###### Pull
 - **[Dragon Flag](https://youtu.be/U5pviWt7sMo?si=bTziyFRf9FBf40sF)** 
 - Bench press accessory excercise to strengthening rotator cuff
-	1. ~~**Butler Tricep Cable Extension**(Top Angle) - 20lb/20lb/20lb pull down from mid back pinky down palms away from back~~
-	2. **Flat Bench Shoulder Press** - 5lb/5lb/5lb
-- ***Band/Barbell/[Cable](https://youtu.be/2M1Mikqf5lY?si=1Me7DqZvB5XL1Orm)/Dumbbell/[Landmine Single-Leg RDL](https://www.youtube.com/watch?v=wZJERqVNY98) /[Kettlebell](https://youtu.be/b9bHy3ojQWA?si=4WkDrYdZGXFY-GAX) - 20lb/20lb/20lb***
-- **[Side Lateral QL Extension](https://youtu.be/UaydER2VIUc?si=wkQxbIqiz7lJQF_7)** - 15lb/15lb/15lb 
+	1. ~~**Butler Tricep Cable Extension**(Top Angle) pull down from mid back pinky down palms away from back~~
+	2. **Flat Bench Shoulder Press**
+- ***Band/Barbell/[Cable](https://youtu.be/2M1Mikqf5lY?si=1Me7DqZvB5XL1Orm)/Dumbbell/[Landmine Single-Leg RDL](https://www.youtube.com/watch?v=wZJERqVNY98) /[Kettlebell](https://youtu.be/b9bHy3ojQWA?si=4WkDrYdZGXFY-GAX)***
+- **[Side Lateral QL Extension](https://youtu.be/UaydER2VIUc?si=wkQxbIqiz7lJQF_7)** 
 	- After building up from single leg back extension and doing this consistently then do [rotating variation](https://youtu.be/KJwARxV9a6g?si=4C--YLWJnUcFaMmx) once doing consistent strength PR.
 	- Besides doing on back extension machine can do [Lateral Flexion on Stability Ball](https://youtu.be/FrohQ--m7fs?si=Z4akKJnru0ut8S8X)
-- **[Single-Arm Behind-Back Cable Lateral Raise](https://www.youtube.com/watch?v=y4Djk_G0yEg)**(Low Angle) 
+
 - **[KB Jefferson Curls](https://www.youtube.com/watch?v=y80cxEpuYEU)/[Reverse Jefferson Curls](https://www.youtube.com/watch?v=RhE5EIb-ZMg)** - Keep weight & reps low 
 - [Cable Reverse Crunch](https://www.youtube.com/watch?v=b8oUb_6POhQ) 
 
