@@ -209,34 +209,33 @@ All leg cable excercise are done at a low angle. Avoid squatting with running sh
 3. **Dumbbell Bulgarian Split Squat/Prone Leg Curl** - set to 3rd hole and exclusively train only strength phase(can use [leg extension machine](https://youtu.be/VC5kbLSuo30?si=ssky4p0p0X2BdUEy)) - 20lb/20lb/25lb can do on a cube too
 4. **Kneeling Squat on toes with curlbar/Dumbbell behind** - 45lb/45lb/45lb
 5. **Unilateral/Bilateral Leg Press** – 90lb/180lb/250lb | 180lb/360lb/500lb
-6. **Walking Barbell Lunge/Zercher Lunge** – 20lb/20lb/20lb
-7. **KB [B Stance Squat](https://youtu.be/5uFUvFXhp7U?si=3PGzZ_XSqbFGPbqN)/Sumo [Zercher](https://www.youtube.com/watch?v=71l8K2Q9_6s)** - 20lb/20lb/20lb
-8. **[Roman Chair Hip Abduction](https://youtu.be/j5HWZOfIePI?si=EsYf8Gg0rFO16y-p)** - Bodyweight/10lb/10lb/10lb 
+6. **Walking Barbell Lunge/Zercher Lunge** 
+7. **KB [B Stance Squat](https://youtu.be/5uFUvFXhp7U?si=3PGzZ_XSqbFGPbqN)/Sumo [Zercher](https://www.youtube.com/watch?v=71l8K2Q9_6s)** 
+8. **[Roman Chair Hip Abduction](https://youtu.be/j5HWZOfIePI?si=EsYf8Gg0rFO16y-p)**  
 9. ~~[Elevated Smith Machine Lunge](https://youtu.be/Yp5O9Cz6Ajg?si=bFGCfbzNqt_JobTA) - try [Elevated Lunge](https://youtu.be/OVFHK2Iev70?si=oiRNDNHznSrNP_RC) with dumbbell at max 40lb to 60lb then switch to free barbell~~
 
 #### **Session 2: Hinge + Posterior Chain (Glutes, Hamstrings, Core)**
-1. **[Cable](https://www.youtube.com/watch?v=IU-ERkjTKXA)/[Sled](https://youtu.be/kZyoyXUYYnQ?si=g3JDFGSTlRTOKzbi) Pull Through** – 30lb/30lb/30lb
-2. **[Cable Hip Extension](https://www.youtube.com/watch?v=Fr6fdKPdyfM)** – 50lb/50lb/50lb 
-3. **Hip Thrust(Unilateral/Bilateral-Perform with Medium Band)** - 50lb /60lb/90lb | 50lb/90lb/130lb 
-4. **Tib Bar Raise** – 5lb/5lb/5lb 
-
+1. **[Cable](https://www.youtube.com/watch?v=IU-ERkjTKXA)/[Sled](https://youtu.be/kZyoyXUYYnQ?si=g3JDFGSTlRTOKzbi) Pull Through** 
+2. **[Cable Hip Extension](https://www.youtube.com/watch?v=Fr6fdKPdyfM)** 
+3. **Hip Thrust(Unilateral/Bilateral-Perform with Medium Band)** 
+4. **Tib Bar Raise** 
 
 #### **Session 3: Stability, Mobility, and Accessories (Control + Balance)**
-1. **Trap Bar Squat Jump** - 20lb/40lb/50lb
-2. **[Cable Side Kicks](https://www.youtube.com/watch?v=jYuN92LGzpA)** – 20lb/20lb/20lb
-3. **[Cable Hip Flexion](https://www.youtube.com/watch?v=MUvXfV97-Us)** – 30lb/30lb/30lb
-4. **Abduction Machine (Outer Thigh)** – 60lb/80lb/130lb
-5. **Adduction Machine (Inner Thigh)** – 60lb/80lb/100lb
-6. **Band Scarecrow Raises** - 20lb/20lb/20lb
-7. **Leg Extension** – 60lb/90lb/120lb
-8. **[Cable Kickback](https://www.youtube.com/watch?v=SqO-VUEak2M)/[Banded Donkey Kick](https://youtu.be/vHS9HF1Ucuw)** – 20lb/20lb/20lb
+1. **Trap Bar Squat Jump** 
+2. **[Cable Side Kicks](https://www.youtube.com/watch?v=jYuN92LGzpA)** 
+3. **[Cable Hip Flexion](https://www.youtube.com/watch?v=MUvXfV97-Us)** 
+4. **Abduction Machine (Outer Thigh)** 
+5. **Adduction Machine (Inner Thigh)** 
+6. **Band Scarecrow Raises** 
+7. **Leg Extension** 
+8. **[Cable Kickback](https://www.youtube.com/watch?v=SqO-VUEak2M)/[Banded Donkey Kick](https://youtu.be/vHS9HF1Ucuw)** 
 ### End Session Depending Session Type
 #### Core
-1. **[Kneeling Cable Crunch](https://www.youtube.com/watch?v=3qjoXDTuyOE)**(Top Angle) - 50lb/50lb/50lb 
-2. **[Pallof Press](https://www.youtube.com/watch?v=ma2OjgP5XDc&pp=ygUMUGFsbG9mIFByZXNz)** to **[Lateral Walk](https://youtu.be/nw8NjG2YOLY?si=KAo4G6B3_5Av1s_t)**(Wrist Height) - 20lb/27lb/27lb
+1. **[Kneeling Cable Crunch](https://www.youtube.com/watch?v=3qjoXDTuyOE)**(Top Angle) 
+2. **[Pallof Press](https://www.youtube.com/watch?v=ma2OjgP5XDc&pp=ygUMUGFsbG9mIFByZXNz)** to **[Lateral Walk](https://youtu.be/nw8NjG2YOLY?si=KAo4G6B3_5Av1s_t)**(Wrist Height) 
 #### Leg
-1. ***[Cable Single Leg RDL](https://youtu.be/2M1Mikqf5lY?si=1Me7DqZvB5XL1Orm(15lb)***(Low Angle) - 20lb/20lb/20lb
-2. **Kettlebell Leg Raise**  – 15lb/15lb/15lb
+1. ***[Cable Single Leg RDL](https://youtu.be/2M1Mikqf5lY?si=1Me7DqZvB5XL1Orm(15lb)***(Low Angle) 
+2. **Kettlebell Leg Raise** 
 ##### Priority Static Stretch to develop splits
 *Perform Static Stretch at end of workout 4 times a week 30 sec each*
 Static stretches can be active or passive with external force like maybe a plank with a plate on the back. Follow excercise from [Pancake Stretch Progression](https://youtu.be/iO1tsB5ygMg?si=YRVgj1ZB-Z_TRNvb) which are spread across this document.
@@ -270,7 +269,7 @@ Static stretches can be active or passive with external force like maybe a plank
 
 
 ###### Pull
-- **[Dragon Flag](https://youtu.be/U5pviWt7sMo?si=bTziyFRf9FBf40sF)** - Bodyweight
+- **[Dragon Flag](https://youtu.be/U5pviWt7sMo?si=bTziyFRf9FBf40sF)** 
 - Bench press accessory excercise to strengthening rotator cuff
 	1. ~~**Butler Tricep Cable Extension**(Top Angle) - 20lb/20lb/20lb pull down from mid back pinky down palms away from back~~
 	2. **Flat Bench Shoulder Press** - 5lb/5lb/5lb
@@ -278,19 +277,19 @@ Static stretches can be active or passive with external force like maybe a plank
 - **[Side Lateral QL Extension](https://youtu.be/UaydER2VIUc?si=wkQxbIqiz7lJQF_7)** - 15lb/15lb/15lb 
 	- After building up from single leg back extension and doing this consistently then do [rotating variation](https://youtu.be/KJwARxV9a6g?si=4C--YLWJnUcFaMmx) once doing consistent strength PR.
 	- Besides doing on back extension machine can do [Lateral Flexion on Stability Ball](https://youtu.be/FrohQ--m7fs?si=Z4akKJnru0ut8S8X)
-- **[Single-Arm Behind-Back Cable Lateral Raise](https://www.youtube.com/watch?v=y4Djk_G0yEg)**(Low Angle) – 10lb/10lb/10lb
-- **[KB Jefferson Curls](https://www.youtube.com/watch?v=y80cxEpuYEU)/[Reverse Jefferson Curls](https://www.youtube.com/watch?v=RhE5EIb-ZMg)** - 10lb/10lb/10lb - Keep weight & reps low 
-- [Cable Reverse Crunch](https://www.youtube.com/watch?v=b8oUb_6POhQ) - 10lb/10lb/10lb
+- **[Single-Arm Behind-Back Cable Lateral Raise](https://www.youtube.com/watch?v=y4Djk_G0yEg)**(Low Angle) 
+- **[KB Jefferson Curls](https://www.youtube.com/watch?v=y80cxEpuYEU)/[Reverse Jefferson Curls](https://www.youtube.com/watch?v=RhE5EIb-ZMg)** - Keep weight & reps low 
+- [Cable Reverse Crunch](https://www.youtube.com/watch?v=b8oUb_6POhQ) 
 
 ##### Lower
-- **[Nordic Hamstring Curl](https://youtu.be/PcxNRBnfBd0?si=_EnPiuwgF3Rx0uo4)** (Practice on incline bench with tib bar 45lb) - Bodyweight
+- **[Nordic Hamstring Curl](https://youtu.be/PcxNRBnfBd0?si=_EnPiuwgF3Rx0uo4)** (Practice on incline bench with tib bar 45lb) - Body-weight
 - **Pistol Squat**
 	1. Box Elevated Lowering pistol squat
 	2. Box Elevated Raising pistol squat
 	3. hand on wall pistol squat
 	4. [TRX Assisted Pistol Squat](https://www.youtube.com/watch?v=HqCHXb91yMQ) 
-	5. **[Barbell Pistol Squat](https://youtu.be/G-neztXXSCA?si=M3l8EqL0Y4O9ANtC)** - 10lb/10lb/10lb 
-5. **[Dumbbell ATG Split Squat](https://youtu.be/j39uGbXnbYw?si=DSL98N7FTt1xr8O1)** - 10lb/10lb/10lb 
+	5. **[Barbell Pistol Squat](https://youtu.be/G-neztXXSCA?si=M3l8EqL0Y4O9ANtC)** 
+5. **[Dumbbell ATG Split Squat](https://youtu.be/j39uGbXnbYw?si=DSL98N7FTt1xr8O1)** 
 
 
 
