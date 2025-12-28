@@ -22,6 +22,7 @@ dg-publish:
 # Session Breakdown 
 #todo/BAU/Workout 
 - [ ] Finalize, refine, reduce, and prioritize exercises in [[Plyometrics]] and Stability program 
+- [ ] Alternate grips on sled pull
 - [ ] Learn [How to Jump Rope](https://youtu.be/wqN5bRkZPK0?si=zxXLzzBXywde4piE)
 - [ ] Try advance [dead hang variations](https://youtu.be/ZeFGPBxKc2A?si=iUGaSbNqgLDae_8K)  
 - [ ] Practice ISO hold to explosive movement 
@@ -33,12 +34,6 @@ dg-publish:
 - [ ] Try Waited pull up then ISO knee raise while holding the pull up
 - [ ] Try and add in [Good Morning](https://youtu.be/nWyx81AfTos?si=ReJqMdB_wh9t4yRs) after improving back extension and RDL
 - [ ] Use one set of halo's each direction, and kettlebell leg raises at lighter weight for exercises with out super sets.  
-- [ ] Add Overcoming Isometric to regimen maybe explosive week place it early in session
-	- [ ] Overcoming Zercher Squat 
-	- [ ] [Overcoming Lateral wall push](https://youtu.be/tIFjnucY09Q?si=85yMrvYak0z5Qn5K)
-	- [ ] Overcoming deadlift different leg levels from Shin knee and thigh
-- 4 sets 3 sec per rep at 60% to 70% effort
-- 2 sets 10 sec per rep at 100% effort
 - [ ] Yielding isometric late in session be selective with which exercise you do with it can even switch out each month what you focus on. 
 
 
@@ -50,8 +45,6 @@ Alternate each month keeping the week training phase in to account the weights f
 | --------------- | ---------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------- | ------------------------------- | --------------------------------------------------------------------- | ------------------------------- | ---------------------------------------------------------------------------- | ------------------------ | -------------------------------- |
 | 1 (Odd months)  | Unilateral back ext 2x8 with 5 sec ISO & [Roman Chair Hip Abduction](https://youtu.be/j5HWZOfIePI?si=EsYf8Gg0rFO16y-p) | Super ROM + [Scarecrow](https://youtu.be/qzNQ3_TQHDs)      | Suitcase Bottom Ups or Suitcase | [[Personal Optimized Session#Cable leg day variation\|Cable Leg day]] | Unilateral Arm(were it applies) | -ChinUp   -Kneeling arm row  - Behind the Back Raise                         | Unilateral-leg variation | Push to Lateral(left/right) Pull |
 | 2 (Even months) | Bilateral Back ext 4x8 with 10 sec ISO & [Side Lateral QL Extension](https://youtu.be/UaydER2VIUc?si=wkQxbIqiz7lJQF_7) | Super ROM + [V Raise](https://youtu.be/5WBdE0TSoUQ)(cross) | Banded Farmer or Farmer Carry   | Non Cable leg day                                                     | Bilateral Arm                   | -Narrow PullUp     -Standing arm row  - Unilateral Overhead Tricep Extension | Bilateral variation      | Push to Pull                     |
-| Month 3         | Unilateral Strength Isometric Yielding                                                                                 | Like 10 sec holds or longer just doing one set like 30 sec |                                 |                                                                       |                                 |                                                                              |                          |                                  |
-| Month 4         | Bilateral Strength Isometric Yielding                                                                                  | Swap in place of regular strength training                 |                                 |                                                                       |                                 |                                                                              |                          |                                  |
 
 
 1. ***Airdyne Bike || Row Machine || Sprint || Jump Rope || Run || Shadow Boxing*** ✅ 
@@ -153,8 +146,6 @@ Do 3 reps of sled push/pull to 6 reps of farmer/suitcase for 8 sets
 #### **Regular sets**
 7. **[Side rear Delt Fly](https://youtu.be/P81mH8n68h4?si=eGoGz-v2JIxxjTfB)** 
 8. **Single Arm Lat Pulldown**
-9. **Zottman Curl**
-
 
 #### Cable leg day variation
 1. **[Cable Hip Extension](https://www.youtube.com/watch?v=Fr6fdKPdyfM)** 
@@ -175,23 +166,29 @@ Do 3 reps of sled push/pull to 6 reps of farmer/suitcase for 8 sets
 6. **Back Extension** 
 7. **Inner Thigh Abduction**
 8. **Outer Thigh Adduction** 
-
-
+9. **Zottman Curl**
 
 ### Wednesday
 have at least one free form day like this every week since following this new program structure doesn't need to follow other days and can sprinkle in a little plyometric work here or there don't need to stress it.
 
+##### Overcoming Isometrics at Start 
+1. Zercher Squat 
+2. [Lateral wall push](https://youtu.be/tIFjnucY09Q?si=85yMrvYak0z5Qn5K)
+3. Deadlift - different leg levels from Shin knee and thigh
+
+- 4 sets 3 sec per rep at 60% to 70% effort
+- 2 sets 10 sec per rep at 100% effort
 #### **Antagonistic super-sets**
-1. [[Plyometrics]]
-2. **Pallof Press**(bands/cables) to **Kneeling Cable Crunch**(High Angle) 
-3. **Sled Push/Pull** to **Farmer/Suitcase**📈
-4. **Bench Reverse Crunch || [Dragon Flag](https://youtu.be/U5pviWt7sMo?si=bTziyFRf9FBf40sF) || Ab Roller** to **Chest press** 📈
+4. [[Plyometrics]]
+5. **Pallof Press**(bands/cables) to **Kneeling Cable Crunch**(High Angle) 
+6. **Sled Push/Pull** to **Farmer/Suitcase**📈
+7. **Bench Reverse Crunch || [Dragon Flag](https://youtu.be/U5pviWt7sMo?si=bTziyFRf9FBf40sF) || Ab Roller** to **Chest press** 📈
 #### **Regular sets**
-5. **Kneeling Squat on toes with DB behind** 
-6. **[Cable](https://youtu.be/2M1Mikqf5lY?si=sIX0t_7UkiioAffp)** || **[Kettlebell](https://youtu.be/SuNgD0x2U6U?si=0oE-W6Zv_5pABcMv)** - Unilateral RDL 📈
-7. **Clean & Jerk Press** 📈
+8. **Kneeling Squat on toes with DB behind** 
+9. **[Cable](https://youtu.be/2M1Mikqf5lY?si=sIX0t_7UkiioAffp)** || **[Kettlebell](https://youtu.be/SuNgD0x2U6U?si=0oE-W6Zv_5pABcMv)** - Unilateral RDL 📈
+10. **Clean & Jerk Press** 📈
 ##### Yielding Isometrics at End 
-8. **Single Arm Lat Pulldown**
+11. **Single Arm Lat Pulldown**
 
 
 ### Thursday(Pre prep for meal prep) 
