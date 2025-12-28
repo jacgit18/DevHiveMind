@@ -69,21 +69,22 @@ dg-publish:
 7. At Home [[Personal Optimized Session#[O2 Trainer Routine](https //www.youtube.com/watch?v=-Es3HOd0PT8&list=PL8NG4An03Sa_ZvEIyHFojC65BhMV08qr1&index=5)|O2 Trainer]] 
 
 ## Hypertrophy 
-Begin priority exercises first
 
-### Friday  - Meal Prep Day 1
-#### **Antagonistic super-sets** -Hypertrophy(10x6)/Strength(8x8)/Explosive(6x5)
+### Friday - Meal Prep Day 1
+#### **Antagonistic super-sets** 
+Hypertrophy(10x6)/Strength(8x8)/Explosive(6x5)
 
 ##### Hypertrophy Priority
 1. **[Pistol Hack Squat](https://www.youtube.com/watch?v=w-LKHuNiiTc)** to **Arnold press**
 2. **Hip thrust** to **Chest press** 
 3. **[Behind the Back Lateral Raise](https://www.youtube.com/watch?v=y4Djk_G0yEg)** || **[Unilateral Overhead Tricep Extension](https://youtu.be/FE_AsjcTImc?si=gzyVqZ88Yq9KTRiG)**(Low Angle) to **[Half Kneeling/Standing Arm Row](https://youtu.be/afE9JabFqR4?si=Q7eXtrCmYCcxOV_T)** 
 
-##### Focus on Other Phases(Last week Explosive)
+##### Focus on Other Phases
 4. **Prone Leg Curl** to **DB Bulgarian Split Squat** 
 5. **Sled Push/Pull** to **Trap Bar/DB Squat Jump** 📈 (explosive)
 
-#### **Regular sets** -  Hypertrophy(10x1) for multiple songs long, Strength(4x8), Explosive(3x4)
+#### **Regular sets**  
+Hypertrophy(10x1) for multiple songs long, Strength(4x8), Explosive(3x4)
 
 ##### Hypertrophy Priority
 6. **[Side rear Delt Fly](https://youtu.be/P81mH8n68h4?si=eGoGz-v2JIxxjTfB)**
@@ -91,6 +92,12 @@ Begin priority exercises first
 ##### Focus on Other Phases
 7. **[Cable Assisted Pancake](https://youtu.be/yxXD_5RGakM?si=vFxPzJFnswWk71Zy)**(Low Angle) 📈
 
+
+##### Cable leg day variation
+1. **[Cable Hip Extension](https://www.youtube.com/watch?v=Fr6fdKPdyfM)** 
+2. **[Cable Side Kicks](https://www.youtube.com/watch?v=jYuN92LGzpA)** 
+3. **[Cable Kickback](https://www.youtube.com/watch?v=SqO-VUEak2M)**
+4. **[Cable](https://youtu.be/2M1Mikqf5lY?si=sIX0t_7UkiioAffp)** || **[Kettlebell](https://youtu.be/SuNgD0x2U6U?si=0oE-W6Zv_5pABcMv)** - Unilateral RDL 📈
 
 ### Saturday
 
@@ -113,10 +120,10 @@ Begin priority exercises first
 ##### Hypertrophy Priority
 1. **[Pistol Hack Squat](https://www.youtube.com/watch?v=w-LKHuNiiTc)** to **Arnold press**
 2. **[Behind the Back Lateral Raise](https://www.youtube.com/watch?v=y4Djk_G0yEg)** || **[Unilateral Overhead Tricep Extension](https://youtu.be/FE_AsjcTImc?si=gzyVqZ88Yq9KTRiG)**(Low Angle) to **[Half Kneeling/Standing Arm Row](https://youtu.be/afE9JabFqR4?si=Q7eXtrCmYCcxOV_T)** 
-##### Focus on Other Phases
 
-2. **Barbell Zercher Lunge**(build too) to **Overhead Press**
-3. **Bench Reverse Crunch || [Dragon Flag](https://youtu.be/U5pviWt7sMo?si=bTziyFRf9FBf40sF) || Ab Roller** to **Chest press** 📈
+##### Focus on Other Phases
+3. **Barbell Zercher Lunge**(build too) to **Overhead Press**
+4. **Bench Reverse Crunch || [Dragon Flag](https://youtu.be/U5pviWt7sMo?si=bTziyFRf9FBf40sF) || Ab Roller** to **Chest press** 📈
 #### **Regular sets**
 ##### Hypertrophy Priority
 5. **Chin-up** || **Pull-up** 📈
@@ -145,11 +152,6 @@ Do 3 reps of sled push/pull to 6 reps of farmer/suitcase for 8 sets
 7. **[Side rear Delt Fly](https://youtu.be/P81mH8n68h4?si=eGoGz-v2JIxxjTfB)** 
 8. **Single Arm Lat Pulldown**
 
-#### Cable leg day variation
-1. **[Cable Hip Extension](https://www.youtube.com/watch?v=Fr6fdKPdyfM)** 
-2. **[Cable Side Kicks](https://www.youtube.com/watch?v=jYuN92LGzpA)** 
-3. **[Cable Kickback](https://www.youtube.com/watch?v=SqO-VUEak2M)**
-4. **[Cable](https://youtu.be/2M1Mikqf5lY?si=sIX0t_7UkiioAffp)** || **[Kettlebell](https://youtu.be/SuNgD0x2U6U?si=0oE-W6Zv_5pABcMv)** - Unilateral RDL 📈
 
 ### Tuesday - Meal Prep Day 2
 
@@ -159,12 +161,12 @@ Do 3 reps of sled push/pull to 6 reps of farmer/suitcase for 8 sets
 3. **Bench Reverse Crunch || [Dragon Flag](https://youtu.be/U5pviWt7sMo?si=bTziyFRf9FBf40sF) || Ab Roller** to **Chest press** 📈
 
 ##### Yielding Isometrics at End 
-5. **Pallof Press**(bands/cables) to **Kneeling Cable Crunch**(High Angle) 
+4. **Pallof Press**(bands/cables) to **Kneeling Cable Crunch**(High Angle) 
 #### **Regular sets**
-6. **Back Extension** 
-7. **Inner Thigh Abduction**
-8. **Outer Thigh Adduction** 
-9. **Zottman Curl**
+5. **Back Extension** 
+6. **Inner Thigh Abduction**
+7. **Outer Thigh Adduction** 
+8. **Zottman Curl**
 
 ### Wednesday
 have at least one free form day like this every week since following this new program structure doesn't need to follow other days and can sprinkle in a little plyometric work here or there don't need to stress it.
