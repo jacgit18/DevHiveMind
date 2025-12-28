@@ -39,7 +39,7 @@ dg-publish:
 	- [ ] Overcoming deadlift different leg levels from Shin knee and thigh
 - 4 sets 3 sec per rep at 60% to 70% effort
 - 2 sets 10 sec per rep at 100% effort
-- [ ] Yielding isometric late in session be selective with which exercise you do it with
+- [ ] Yielding isometric late in session be selective with which exercise you do with it can even switch out each month what you focus on. 
 
 
 #### Schedule for Alternating Variation in Exercises
@@ -189,14 +189,15 @@ have at least one free form day like this every week since following this new pr
 4. **Sled Push/Pull** to **Farmer/Suitcase**📈
 5. **Bench Reverse Crunch || [Dragon Flag](https://youtu.be/U5pviWt7sMo?si=bTziyFRf9FBf40sF) || Ab Roller** to **Chest press** 📈
 #### **Regular sets**
+6. **Kneeling Squat on toes with DB behind** 
+7. **[Cable Pec Minor Fly](https://youtu.be/sC91H2XLtJc?si=bSV_IhpBVbdADHz2&t=286)** || **Chest Fly(**[variations](https://youtube.com/shorts/0LJ-JujImCs?si=LgyKSn87TMCarM-y)) || **[DB Cross Body Fly](https://youtu.be/mK2xrdqf_cU?si=jNrPZCLCgUNFki9v)**
+8. **[Cable](https://youtu.be/2M1Mikqf5lY?si=sIX0t_7UkiioAffp)** || **[Kettlebell](https://youtu.be/SuNgD0x2U6U?si=0oE-W6Zv_5pABcMv)** - Unilateral RDL 📈
+9. **Chin-up** || **Pull-up** 📈
+10. **[Cable Assisted Pancake](https://youtu.be/yxXD_5RGakM?si=vFxPzJFnswWk71Zy)**(Low Angle) 📈
 
 ##### Yielding Isometrics at End 
-6. **Single Arm Lat Pulldown**
-7. **Kneeling Squat on toes with DB behind** 
-8. **[Cable Pec Minor Fly](https://youtu.be/sC91H2XLtJc?si=bSV_IhpBVbdADHz2&t=286)** || **Chest Fly(**[variations](https://youtube.com/shorts/0LJ-JujImCs?si=LgyKSn87TMCarM-y)) || **[DB Cross Body Fly](https://youtu.be/mK2xrdqf_cU?si=jNrPZCLCgUNFki9v)**
-9. **[Cable](https://youtu.be/2M1Mikqf5lY?si=sIX0t_7UkiioAffp)** || **[Kettlebell](https://youtu.be/SuNgD0x2U6U?si=0oE-W6Zv_5pABcMv)** - Unilateral RDL 📈
-10. **Chin-up** || **Pull-up** 📈
-11. **[Cable Assisted Pancake](https://youtu.be/yxXD_5RGakM?si=vFxPzJFnswWk71Zy)**(Low Angle) 📈
+11. **Single Arm Lat Pulldown**
+
 
 ### Thursday(Pre prep for meal prep) 
 
