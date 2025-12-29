@@ -35,6 +35,7 @@ dg-publish:
 - [ ] Eventually add [Rope Flow: Movement](https://youtu.be/ItVf97YhFL4?si=_Bo9m9TxxWgy6au0) and [Mace exercises](https://youtu.be/TdatDbqb8TY?si=QXCZiZTyP676wf32)
 - [ ] Try Waited pull up then ISO knee raise while holding the pull up
 - [ ] Try and add in [Good Morning](https://youtu.be/nWyx81AfTos?si=ReJqMdB_wh9t4yRs) after improving back extension and RDL
+- [ ] Avoid training hypertrophy for functional strength training which is strength training with rotation in the excercise movement.
 - [ ] Use one set of halo's each direction, and kettlebell leg raises at lighter weight for exercises with out super sets.  
 - [ ] Yielding isometric late in session be selective with which exercise you do with it can even switch out each month what you focus on. 
 
@@ -186,8 +187,15 @@ Do 3 reps of sled push/pull to 6 reps of farmer/suitcase for 8 sets
 7. DB switch catch(5lb) - 1 min 
 #### **Regular sets**
 8. **Kneeling Squat on toes with DB behind** 
-9. **[Cable](https://youtu.be/2M1Mikqf5lY?si=sIX0t_7UkiioAffp)** || **[Kettlebell](https://youtu.be/SuNgD0x2U6U?si=0oE-W6Zv_5pABcMv)** - Unilateral RDL 📈
-10. **Clean & Jerk Press** 📈
+9. **Pistol Squat**
+	1. Box Elevated Lowering pistol squat
+	2. Box Elevated Raising pistol squat
+	3. hand on wall pistol squat
+	4. [TRX Assisted Pistol Squat](https://www.youtube.com/watch?v=HqCHXb91yMQ) 
+	5. **[Barbell Pistol Squat](https://youtu.be/G-neztXXSCA?si=M3l8EqL0Y4O9ANtC)** 
+
+10. **[Cable](https://youtu.be/2M1Mikqf5lY?si=sIX0t_7UkiioAffp)** || **[Kettlebell](https://youtu.be/SuNgD0x2U6U?si=0oE-W6Zv_5pABcMv)** - Unilateral RDL 📈
+11. **Clean & Jerk Press** 📈
 ##### Yielding Isometrics at End 
 11. **Single Arm Lat Pulldown**
 

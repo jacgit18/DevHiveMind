@@ -33,7 +33,7 @@ dg-publish:
 
 
 
-Functional strength adds rotation to exercises or exercise selection in terms of picking exercises with rotation in them
+
 
 Don't need to alternate as much for between hypertrophy reps for Antagonistic super-sets since following song duration 
 
@@ -42,7 +42,6 @@ Alternate weight ratios so one day heavier on landmine next day heavier on dumbb
 - [ ] Do 1 minute rest between reps and 2 min between exercises especially if going heavy.
 
 
-- [ ] On hypertrophy week alternate between spreading hypertrophy across exercise in session doing less set training to overall failure. Then on other days try reducing the variation of exercises focusing on a few exercise training those to failure but keeping original sets and reps you have planned. 
 
 
 ## Workout Tips
