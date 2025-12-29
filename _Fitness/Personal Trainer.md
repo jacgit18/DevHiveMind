@@ -237,12 +237,7 @@ Static stretches can be active or passive with external force like maybe a plank
 
 ##### Lower
 - **[Nordic Hamstring Curl](https://youtu.be/PcxNRBnfBd0?si=_EnPiuwgF3Rx0uo4)** (Practice on incline bench with tib bar 45lb) - Body-weight
-- **Pistol Squat**
-	1. Box Elevated Lowering pistol squat
-	2. Box Elevated Raising pistol squat
-	3. hand on wall pistol squat
-	4. [TRX Assisted Pistol Squat](https://www.youtube.com/watch?v=HqCHXb91yMQ) 
-	5. **[Barbell Pistol Squat](https://youtu.be/G-neztXXSCA?si=M3l8EqL0Y4O9ANtC)** 
+
 
 
 
