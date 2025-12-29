@@ -21,11 +21,11 @@ dg-publish:
 
 ## Best Practices
 #todo/BAU/Workout  
-- [ ] After you've built a solid training foundation (about 2 years or more of consistent training), consider **shifting your focus in multi-week blocks** so alternating phase every 6 weeks because it gets harder to make gains after a certain point.
+
 - [ ] Advance stage shift focus of phases:
 	- [ ] For Lower body focus on 80% strength training and 20% hypertrophy. 
 	- [ ] For Upper body focus on 20% strength training and 80% hypertrophy training to failure with high volume.
-- [ ] Also for excercise session frequency reduce frequency to one time a week as you go up in max weight for strength phase.
+
 - [ ] Cycle in different exercises every **8-12 weeks** to avoid stagnation also limit range of exercises per session to 11 excercise and limit phone usage to preserve performance.
 - [ ] If you feel **off balance**, try **making a fist** this creates full-body tension and enhances stability.
 - [ ] If you're not **feeling the target muscle** during an exercise, **reduce momentum** and slow down on the eccentric(lengthen) phase of the movement for strength training to improve control and mind-muscle connection but you can also slow down on the concentric(shortening) phase of movement.

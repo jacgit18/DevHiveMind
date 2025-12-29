@@ -25,7 +25,7 @@ dg-publish:
 - [ ] Bag work for 6 songs
 - [ ] Set bar height to 13 for anything Zercher
 - [ ] Alternate  15  sec each bilaterally when yielding isometrics if not alternating 30 sec max 
-- [ ] Can only do each excercise twice a week max
+- [ ] Can only do each excercise twice a week max then once a week as you increase max weight
 - [ ] Learn [How to Jump Rope](https://youtu.be/wqN5bRkZPK0?si=zxXLzzBXywde4piE)
 - [ ] Try advance [dead hang variations](https://youtu.be/ZeFGPBxKc2A?si=iUGaSbNqgLDae_8K)  
 - [ ] Practice ISO hold to explosive movement 
@@ -39,7 +39,7 @@ dg-publish:
 - [ ] Use one set of halo's each direction, and kettlebell leg raises at lighter weight for exercises with out super sets.  
 - [ ] Yielding isometric late in session be selective with which exercise you do with it can even switch out each month what you focus on. 
 - [ ] Full body compound movements **here uses modified set/rep 3x5 for strength phase 4x8, hypertrophy phase, and 2x5 explosive**
-
+- [ ] After you've built a solid training foundation (about 2 years or more of consistent training), consider **shifting your focus in multi-week blocks** so alternating phase every 6 weeks because it gets harder to make gains after a certain point.
 
 #### Schedule for Alternating Variation in Exercises
 
