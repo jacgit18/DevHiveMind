@@ -33,6 +33,14 @@ Add to warm up for [lower back](https://youtu.be/ayxOIbhl48I?si=iDI5tTZBOtlUzZDp
 
 - [ ] Try [Knees over Toes Lunge](https://youtu.be/5RmrHINDYl8?si=wU_FV0a0Znqn0kbS)
 
+
+
+##### Small Muscle Stretches
+- [Lunge ISO Heel Raise](https://youtu.be/Zwy4h0NukbQ?si=AYz0q6ZnrqsT7T6W) 
+- [ISO Calf Raise with Lunge](https://youtu.be/I8EfBzUFyMo?si=7LAxf79F9CnMSAxC) 
+- [Tib Raise with Eversion Inversion](https://youtu.be/5AIrfsgYdKY?si=Q17wxWTyWFty_W_8)
+
+
 #todo/BAU/Workout 
 - [ ] Aim for like 10 to 20 reps for most stretches and 5 to 10 if alternating sides else 30sec duration if rapid movement.
 - [ ] Avoid cold water baths close to workouts especially post maybe consider doing it a few hours before sleeping make sure you really stretch to warm up again to reduce injury from cold muscle.

@@ -188,23 +188,6 @@ All leg cable excercise are done at a low angle. Avoid squatting with running sh
 
 ### End Session Depending Session Type
 
-##### Priority Static Stretch to develop splits
-*Perform Static Stretch at end of workout 4 times a week 30 sec each*
-Static stretches can be active or passive with external force like maybe a plank with a plate on the back. Follow excercise from [Pancake Stretch Progression](https://youtu.be/iO1tsB5ygMg?si=YRVgj1ZB-Z_TRNvb) which are spread across this document.
-
-- Butterfly(Try doing weighted butterfly with weight on each knee)
-- Elevated Pigeon Stretch - On [incline bench](https://youtu.be/szFOKnVgGpQ?si=r0IMfaQKljbJeS6P) then progress to [flat bench](https://youtu.be/BmVEn3LfHcg?si=ZDSdN6h4TePiPIj8) or stick to floor (30 sec per side) 
-- [Cossack Squat](https://youtu.be/fyAl4o1BGVo?si=OalBzfY8-KxgS7qA)
-- [Forward Fold Stretch](https://youtu.be/goN4rWbQUn4?si=pPni5D3dJWgLUboT) 
-- [Standing Pancake](https://youtu.be/4TU9K40LZ6A?si=kWxpXgb7wdZ35HQO)
-- [Regular Pancake](https://youtu.be/B1_YA47gtm0?si=_oBDpaLBejKI-8mV) 
-- [Full split](https://youtu.be/hsNvqUmCAAo?si=SbGmouCgXsZ44_tJ) 
-
-##### Small Muscle Stretches
-- [Lunge ISO Heel Raise](https://youtu.be/Zwy4h0NukbQ?si=AYz0q6ZnrqsT7T6W) 
-- [ISO Calf Raise with Lunge](https://youtu.be/I8EfBzUFyMo?si=7LAxf79F9CnMSAxC) 
-- [Tib Raise with Eversion Inversion](https://youtu.be/5AIrfsgYdKY?si=Q17wxWTyWFty_W_8)
-
 ### Build to Doing Safely
 ##### Full Body
 - ~~**[Turkish Get-Up](https://youtu.be/jFK8FOiLa_M?si=L8oB-1-BZ8M6Wfsp)**

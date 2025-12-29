@@ -66,7 +66,7 @@ dg-publish:
 	13. [Swiss Ball Side Flexion - Level 3](https://youtu.be/-W02_G1f0aM?si=ERpJXiz8LvGJ7885)
 	14. [Swiss Ball Side Flexion - Level 4](https://youtu.be/2VCOHVeRdKs?si=U5aowRV0FRbtSK2b)
 	15. [Swiss Ball Side Flexion - Level 5](https://youtu.be/ltuv2fYMXqk?si=IkiMMxr0jMaj7n0P)
-5. **[[Personal Trainer#Priority Static Stretch to develop splits|Static Stretching]]** - 2 days under hypertrophy and 2 days in other phase days
+5. **[[Personal Optimized Session#Priority Static Stretch to develop splits|Static Stretching]]** - 2 days under hypertrophy and 2 days in other phase days
 6. At Home [[Personal Optimized Session#[O2 Trainer Routine](https //www.youtube.com/watch?v=-Es3HOd0PT8&list=PL8NG4An03Sa_ZvEIyHFojC65BhMV08qr1&index=5)|O2 Trainer]] 
 7. Work on [[Recovery]] playing by ear
 
@@ -282,6 +282,22 @@ Do 3 reps of sled push/pull to 6 reps of farmer/suitcase for 8 sets
 	- Round 5: Row three minutes, then rest for four minutes and 30 seconds.
 	- Round 6: Row two minutes, then rest for three minutes.
 	- Round 7: Row for one minute.
+
+
+##### Priority Static Stretch to develop splits
+*Perform Static Stretch at end of workout 4 times a week 30 sec each*
+Static stretches can be active or passive with external force like maybe a plank with a plate on the back. Follow excercise from [Pancake Stretch Progression](https://youtu.be/iO1tsB5ygMg?si=YRVgj1ZB-Z_TRNvb) which are spread across this document.
+
+- Butterfly(Try doing weighted butterfly with weight on each knee)
+- Elevated Pigeon Stretch - On [incline bench](https://youtu.be/szFOKnVgGpQ?si=r0IMfaQKljbJeS6P) then progress to [flat bench](https://youtu.be/BmVEn3LfHcg?si=ZDSdN6h4TePiPIj8) or stick to floor (30 sec per side) 
+- [Cossack Squat](https://youtu.be/fyAl4o1BGVo?si=OalBzfY8-KxgS7qA)
+- [Forward Fold Stretch](https://youtu.be/goN4rWbQUn4?si=pPni5D3dJWgLUboT) 
+- [Standing Pancake](https://youtu.be/4TU9K40LZ6A?si=kWxpXgb7wdZ35HQO)
+- [Regular Pancake](https://youtu.be/B1_YA47gtm0?si=_oBDpaLBejKI-8mV) 
+- [Full split](https://youtu.be/hsNvqUmCAAo?si=SbGmouCgXsZ44_tJ) 
+
+
+
 
 ## Home Training 
 
