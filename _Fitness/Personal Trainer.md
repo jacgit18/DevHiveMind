@@ -163,29 +163,21 @@ Allowed to practice each excercise *here* max twice a week.
 9. ***[Landmine Anti Rotations](https://www.youtube.com/watch?v=8aXStDm3cOs) - 10lb/10lb/10lb***
 10. [Wrist Twists](https://youtu.be/uxOVXpwYKv0)
 
-#### **Session 2: Pull Focus**
-1. **Super ROM [6 Ways for Shoulder Raise](https://www.youtube.com/watch?v=nvEE4u3qfJY) With Wrist Curl** 
-	1. Strength phase 2x8 since like 5 exercises in one
-	2. Hypertrophy 3x10 and avoid explosive phase 
-	3. Prime shoulder with bands
 
 
-2. **[Band Upright Row](https://youtu.be/VhpnXlphu88)** || **[Band V Raise](https://youtu.be/5WBdE0TSoUQ)**(hypertrophy) || **[Banded Scarecrow](https://youtu.be/qzNQ3_TQHDs)**(Imbalance) - 20lb/20lb/20lb
-3. **[DB Cross Body Fly](https://youtu.be/mK2xrdqf_cU)** || **[Band Cross Body Chest Fly](https://youtu.be/TM-VhSRr4XU)** - 20lb/20lb/20lb
+11. **[Band Upright Row](https://youtu.be/VhpnXlphu88)** || **[Band V Raise](https://youtu.be/5WBdE0TSoUQ)**(hypertrophy) || **[Banded Scarecrow](https://youtu.be/qzNQ3_TQHDs)**(Imbalance) 
+12. **[DB Cross Body Fly](https://youtu.be/mK2xrdqf_cU)** || **[Band Cross Body Chest Fly](https://youtu.be/TM-VhSRr4XU)**
+13. **[Cable Snap Downs](https://www.youtube.com/shorts/IW40KjCwNmA)**(Top Angle)  
 
-4. **[Cable Snap Downs](https://www.youtube.com/shorts/IW40KjCwNmA)**(Top Angle)  - 10lb/10lb/10lb
-5. **[Bayesian Cable Curl](https://youtu.be/4O24gFksZ04?si=poa8Lr-ymzw1-QrR)** - 10lb/10lb/10lb (2 width, 8 height)
-6. **[Incline Bench Preacher Curl](https://www.youtube.com/watch?v=02TvQZiVdic)/[Reverse Preacher Curl](https://youtu.be/h8LVaKRAFY0?si=ix3lKao_fRA33nqU)**- 20lb/20lb/20lb 
-7. **[Incline Prone Lateral Raise](https://youtu.be/Wz1C8NzWg5A?si=epnUd7OS6WC75u1Y&t=112)**/**[Seated Cable Pec Minor Fly](https://youtu.be/sC91H2XLtJc?si=bSV_IhpBVbdADHz2&t=286)**(Better ROM then chest fly Top Angle) - 20lb/20lb/20lb(Machine 5 and 5)
+14. **[Incline Bench Preacher Curl](https://www.youtube.com/watch?v=02TvQZiVdic)/[Reverse Preacher Curl](https://youtu.be/h8LVaKRAFY0?si=ix3lKao_fRA33nqU)**
 
+15. **[Incline Prone Lateral Raise](https://youtu.be/Wz1C8NzWg5A?si=epnUd7OS6WC75u1Y&t=112)**/**[Seated Cable Pec Minor Fly](https://youtu.be/sC91H2XLtJc?si=bSV_IhpBVbdADHz2&t=286)**(Better ROM then chest fly Top Angle) - 20lb/20lb/20lb(Machine 5 and 5)
 
+16. **[Low Cable Goblet Squat](https://youtu.be/f6eI0JI9AYA?si=TTKH4FrAivJYEyd0)**  - 40lb/40lb/40lb
+17. Seated or Standing [Seated Y Cable Raises](https://youtu.be/-yL_BS28hcY?si=oO9QrIO_sv2SF5K1)(Seat Height Low Angle) (6 width)
+18. Standing [Cable FreeMotion Front Shoulder Raise](https://youtu.be/_bzJ1Yb4XCU?si=v0UUNLSilV6NVM76)(Low Angle) 
 
-8. **[Back Extension on Yoga Ball](https://youtu.be/b_Iri5nayDk)**(with bar/Stick)/**Back Extension**(try Isometric holds) - bodyweight/15lb/15lb/15lb  
-9. **[Low Cable Goblet Squat](https://youtu.be/f6eI0JI9AYA?si=TTKH4FrAivJYEyd0)**  - 40lb/40lb/40lb
-10. Seated or Standing [Seated Y Cable Raises](https://youtu.be/-yL_BS28hcY?si=oO9QrIO_sv2SF5K1)(Seat Height Low Angle) - 10lb/10lb/10lb(6 width)
-11. Standing [Cable FreeMotion Front Shoulder Raise](https://youtu.be/_bzJ1Yb4XCU?si=v0UUNLSilV6NVM76)(Low Angle) - 10lb/10lb/10lb
-12. Seated Incline or Standing [Bilateral DB Overhead Tricep Extension](https://youtube.com/shorts/b_r_LW4HEcM?si=B1_Zz_2olhNHmPwY) | [Unilateral DB Overhead Tricep Extension](https://youtu.be/F3w6m0aENVQ?si=S2vDhXvRxVRh1MgE) - 20lb/20lb/20lb | 10lb/10lb/10lb 
-13. [Half Kneeling Cable Rotation](https://youtu.be/Xj8qeQ3cr74?si=RI3KuSuNtcC0n1jM)- 0lb/0lb/0lb 
+19. [Half Kneeling Cable Rotation](https://youtu.be/Xj8qeQ3cr74?si=RI3KuSuNtcC0n1jM)
 ### Leg Programming 
 All leg cable excercise are done at a low angle. Avoid squatting with running shoes and squat wider as well if issues in squatting form and always on toes.
 
@@ -235,13 +227,10 @@ Static stretches can be active or passive with external force like maybe a plank
 
 
 ###### Pull
-- **[Dragon Flag](https://youtu.be/U5pviWt7sMo?si=bTziyFRf9FBf40sF)** 
-- Bench press accessory excercise to strengthening rotator cuff
-	1. ~~**Butler Tricep Cable Extension**(Top Angle) pull down from mid back pinky down palms away from back~~
-	2. **Flat Bench Shoulder Press**
-- ***Band/Barbell/[Cable](https://youtu.be/2M1Mikqf5lY?si=1Me7DqZvB5XL1Orm)/Dumbbell/[Landmine Single-Leg RDL](https://www.youtube.com/watch?v=wZJERqVNY98) /[Kettlebell](https://youtu.be/b9bHy3ojQWA?si=4WkDrYdZGXFY-GAX)***
+
 - **[Side Lateral QL Extension](https://youtu.be/UaydER2VIUc?si=wkQxbIqiz7lJQF_7)** 
 	- After building up from single leg back extension and doing this consistently then do [rotating variation](https://youtu.be/KJwARxV9a6g?si=4C--YLWJnUcFaMmx) once doing consistent strength PR.
+
 	- Besides doing on back extension machine can do [Lateral Flexion on Stability Ball](https://youtu.be/FrohQ--m7fs?si=Z4akKJnru0ut8S8X)
 
 - **[KB Jefferson Curls](https://www.youtube.com/watch?v=y80cxEpuYEU)/[Reverse Jefferson Curls](https://www.youtube.com/watch?v=RhE5EIb-ZMg)** - Keep weight & reps low 
