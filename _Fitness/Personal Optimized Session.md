@@ -114,7 +114,7 @@ Hypertrophy(10x1) for multiple songs long, Strength(4x8), Explosive(3x4)
 4. **Inner Thigh Abduction**
 5. **Outer Thigh Adduction** 
 ##### Focus on Other Phases
-6. **[Back Extension](https://youtu.be/b_Iri5nayDk?si=fmDrmQK-NREQZpF5)** 
+6. **[Back Extension](https://youtu.be/b_Iri5nayDk?si=fmDrmQK-NREQZpF5)**(progress to [rotating variation](https://youtu.be/KJwARxV9a6g?si=4C--YLWJnUcFaMmx)) 
 
 ### Sunday 
 #### **Antagonistic super-sets**
@@ -193,13 +193,25 @@ Do 3 reps of sled push/pull to 6 reps of farmer/suitcase for 8 sets
 	4. [TRX Assisted Pistol Squat](https://www.youtube.com/watch?v=HqCHXb91yMQ) 
 	5. **[Barbell Pistol Squat](https://youtu.be/G-neztXXSCA?si=M3l8EqL0Y4O9ANtC)** 
 
-10. **[Cable](https://youtu.be/2M1Mikqf5lY?si=sIX0t_7UkiioAffp)** || **[Kettlebell](https://youtu.be/SuNgD0x2U6U?si=0oE-W6Zv_5pABcMv)** - Unilateral RDL 📈
-11. **Clean & Jerk Press** 📈
+10. **[Landmine](https://youtu.be/Zb-l68-4KFM?si=I8zR3VtIppuQNJk_)** || KB || [Resistance Band](https://www.youtube.com/watch?v=kI2H5xGnxcM) || [Rope](https://www.youtube.com/watch?v=JBz7PUxDyE4) || [TRX Standing](https://www.youtube.com/watch?v=7zpXipLThLI) Russian Twist
+11. ***[Landmine Rotational Press](https://www.youtube.com/watch?v=ONDeomDVlbE)***
+12. **[Cable](https://youtu.be/2M1Mikqf5lY?si=sIX0t_7UkiioAffp)** || **[Kettlebell](https://youtu.be/SuNgD0x2U6U?si=0oE-W6Zv_5pABcMv)** - Unilateral RDL 📈
+13. **Clean & Jerk Press** 📈
 ##### Yielding Isometrics at End 
-11. **Single Arm Lat Pulldown**
+14. **Single Arm Lat Pulldown**
 
 
 ### Thursday(Pre prep for meal prep) 
+
+#### Future Exercises to Cycle in
+##### Build to Doing Safely
+
+1. **[Nordic Hamstring Curl](https://youtu.be/PcxNRBnfBd0?si=_EnPiuwgF3Rx0uo4)** (Practice on incline bench with tib bar 45lb) 
+2. **[KB Jefferson Curls](https://www.youtube.com/watch?v=y80cxEpuYEU)/[Reverse Jefferson Curls](https://www.youtube.com/watch?v=RhE5EIb-ZMg)** - Keep weight & reps low 
+3. ~~**[Turkish Get-Up](https://youtu.be/jFK8FOiLa_M?si=L8oB-1-BZ8M6Wfsp)**
+4. **[Single-Leg Snatch (RDL, Plate, Hip Lock)](https://youtu.be/L9hk1LiqGsU?si=-dJyrtt3Mq7XezCu)** 
+5. [Dumbbell Man Maker](https://youtu.be/rXjJ46zoQrM?si=XtGPVO8zeVQeapj6)(Easier) 
+6. [Kettlebell Man Maker](https://youtu.be/P4BIVAgJbZY?si=_gnVpDS6HX7WgacW)(Harder) 
 
 
 
