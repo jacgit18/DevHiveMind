@@ -117,30 +117,24 @@ The general principles of **training phases** like strength and hypertrophy appl
 
 ## Body Part Specific Programs 
 
-![[anatomychart1.jpg]]
-
 ### Full Body Program 
-> Skip hypertrophy for some of these excercise were doing a lot of lifting since it can be dangerous but should be safe for something like sled pulls and pushes.
 
-Anything not on this list is most likely a bad excercise or not worth doing based on research.**Everything here uses modified set/rep 3x5 for strength phase 4x8, hypertrophy phase, and 2x5 explosive** since full body compound movements.
-
-- [***Barbell Clean Jerk Press*** ](https://www.youtube.com/watch?v=8IYt7AtP8BI) 
 - **[Base Rows](https://youtu.be/Qmw9TKnQ9NY?si=gNe_2K45P71UKz5y)** 
-- **[Hanging Knee Raise](https://youtu.be/RD_A-Z15ER4?si=BT3gkNFch2bOdEvx)** - 
+
 - ***Sled***(try rope pull variation on explosive week)
 	- **[Crossover Step Lateral Sled Drag](https://youtu.be/rGtYmX2aeAA?si=PnniyFsIluLeViKa)** 
-	- Follow Super ROM excercise cadence with less sets and reps for higher weight. 
-- **[Trap Bar Deadlift](https://youtu.be/zDRgPfiHJ_c?si=hnoOefbzidE4bw4f)**(green/black band) try deficit version standing on plate with strength phase
-- [Zercher Reverse Lunge with Twist](https://youtu.be/KhLhr26-i84?si=6nP6lkyfrbVzr1Qi)
+
+
+
 
  **Exclusively strength training this at 2x8**
-- **[Suitcase Bottom Up March](https://www.youtube.com/watch?v=TJjRZBpY75I)** - 5lb/10lb/20lb 
+- **[Suitcase Bottom Up March](https://www.youtube.com/watch?v=TJjRZBpY75I)** 
+
+
 - ***[Banded Suitcase](https://youtu.be/J7RX1IemJVE?si=P10xiFwSvUb2sU61) Carry/[March](https://www.youtube.com/watch?v=a9HkuLYNyJ0)*** - 5lb/10lb/20lb(Start with then transition to farmer)
+
+
 - Farmer [Carry](https://www.youtube.com/watch?v=8OtwXwrJizk)/[March](https://www.youtube.com/watch?v=C2I_HsdDVCE) - 10lb/20lb/35lb
 
-
-### Right to Bare Arms Program
-Allowed to practice each excercise *here* max twice a week. 
-#### **Session 1: Push Focus**
 
 

@@ -18,6 +18,7 @@ A **comprehensive routine** combining **foam rolling, lacrosse ball, and Swiss b
 
 
 
+![[anatomychart1.jpg]]
 
 
 ## ✅ **Routine Summary**
