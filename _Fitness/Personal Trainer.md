@@ -171,40 +171,35 @@ Allowed to practice each excercise *here* max twice a week.
 	1. Strength phase 2x8 since like 5 exercises in one
 	2. Hypertrophy 3x10 and avoid explosive phase 
 	3. Prime shoulder with bands
-5. **Halo** - 15lb/15lb/20lb || Single arm 15lb
-6. **Reverse Bench Crunch** - Bodyweight 
-7. **[Band Upright Row](https://youtu.be/VhpnXlphu88)** || **[Band V Raise](https://youtu.be/5WBdE0TSoUQ)**(hypertrophy) || **[Banded Scarecrow](https://youtu.be/qzNQ3_TQHDs)**(Imbalance) - 20lb/20lb/20lb
-8. **[DB Cross Body Fly](https://youtu.be/mK2xrdqf_cU)** || **[Band Cross Body Chest Fly](https://youtu.be/TM-VhSRr4XU)** - 20lb/20lb/20lb
-9. **[Cable Woodchopper](https://www.youtube.com/watch?v=mvvu8imyMFs)**(Low Angle)  - 10lb/10lb/10lb
-10. **[Cable Snap Downs](https://www.youtube.com/shorts/IW40KjCwNmA)**(Top Angle)  - 10lb/10lb/10lb
-11. **[Bayesian Cable Curl](https://youtu.be/4O24gFksZ04?si=poa8Lr-ymzw1-QrR)** - 10lb/10lb/10lb (2 width, 8 height)
-12. **[Incline Bench Preacher Curl](https://www.youtube.com/watch?v=02TvQZiVdic)/[Reverse Preacher Curl](https://youtu.be/h8LVaKRAFY0?si=ix3lKao_fRA33nqU)**- 20lb/20lb/20lb 
-13. **[Incline Prone Lateral Raise](https://youtu.be/Wz1C8NzWg5A?si=epnUd7OS6WC75u1Y&t=112)**/**[Seated Cable Pec Minor Fly](https://youtu.be/sC91H2XLtJc?si=bSV_IhpBVbdADHz2&t=286)**(Better ROM then chest fly Top Angle) - 20lb/20lb/20lb(Machine 5 and 5)
-14. **[Single Arm Lat Pulldown](https://www.youtube.com/watch?v=SALxEARiMkw&list=TLPQMjcwNDIwMjWOBRc2Cey09g&index=3)** - 25lb/35lb/80lb
-15. **Chest Fly** - 50lb/70lb/100lb
-16. **[Lateral Head Single Arm Tricep Extension](https://www.youtube.com/watch?v=vVW9LwaahNw)**(Top Angle) – 20lb/20lb/20lb
-17. **[Back Extension on Yoga Ball](https://youtu.be/b_Iri5nayDk)**(with bar/Stick)/**Back Extension**(try Isometric holds) - bodyweight/15lb/15lb/15lb  
-18. **[Low Cable Goblet Squat](https://youtu.be/f6eI0JI9AYA?si=TTKH4FrAivJYEyd0)**  - 40lb/40lb/40lb
-19. Seated or Standing [Seated Y Cable Raises](https://youtu.be/-yL_BS28hcY?si=oO9QrIO_sv2SF5K1)(Seat Height Low Angle) - 10lb/10lb/10lb(6 width)
-20. Standing [Cable FreeMotion Front Shoulder Raise](https://youtu.be/_bzJ1Yb4XCU?si=v0UUNLSilV6NVM76)(Low Angle) - 10lb/10lb/10lb
-21. Seated Incline or Standing [Bilateral DB Overhead Tricep Extension](https://youtube.com/shorts/b_r_LW4HEcM?si=B1_Zz_2olhNHmPwY) | [Unilateral DB Overhead Tricep Extension](https://youtu.be/F3w6m0aENVQ?si=S2vDhXvRxVRh1MgE) - 20lb/20lb/20lb | 10lb/10lb/10lb 
-22. **[Half Kneeling Arm Row](https://youtu.be/afE9JabFqR4?si=Q7eXtrCmYCcxOV_T)** - 20lb/20lb/50lb 
-23. [Half Kneeling Cable Rotation](https://youtu.be/Xj8qeQ3cr74?si=RI3KuSuNtcC0n1jM)- 0lb/0lb/0lb 
+
+
+5. **[Band Upright Row](https://youtu.be/VhpnXlphu88)** || **[Band V Raise](https://youtu.be/5WBdE0TSoUQ)**(hypertrophy) || **[Banded Scarecrow](https://youtu.be/qzNQ3_TQHDs)**(Imbalance) - 20lb/20lb/20lb
+6. **[DB Cross Body Fly](https://youtu.be/mK2xrdqf_cU)** || **[Band Cross Body Chest Fly](https://youtu.be/TM-VhSRr4XU)** - 20lb/20lb/20lb
+
+7. **[Cable Snap Downs](https://www.youtube.com/shorts/IW40KjCwNmA)**(Top Angle)  - 10lb/10lb/10lb
+8. **[Bayesian Cable Curl](https://youtu.be/4O24gFksZ04?si=poa8Lr-ymzw1-QrR)** - 10lb/10lb/10lb (2 width, 8 height)
+9. **[Incline Bench Preacher Curl](https://www.youtube.com/watch?v=02TvQZiVdic)/[Reverse Preacher Curl](https://youtu.be/h8LVaKRAFY0?si=ix3lKao_fRA33nqU)**- 20lb/20lb/20lb 
+10. **[Incline Prone Lateral Raise](https://youtu.be/Wz1C8NzWg5A?si=epnUd7OS6WC75u1Y&t=112)**/**[Seated Cable Pec Minor Fly](https://youtu.be/sC91H2XLtJc?si=bSV_IhpBVbdADHz2&t=286)**(Better ROM then chest fly Top Angle) - 20lb/20lb/20lb(Machine 5 and 5)
+
+
+11. **[Lateral Head Single Arm Tricep Extension](https://www.youtube.com/watch?v=vVW9LwaahNw)**(Top Angle) – 20lb/20lb/20lb
+12. **[Back Extension on Yoga Ball](https://youtu.be/b_Iri5nayDk)**(with bar/Stick)/**Back Extension**(try Isometric holds) - bodyweight/15lb/15lb/15lb  
+13. **[Low Cable Goblet Squat](https://youtu.be/f6eI0JI9AYA?si=TTKH4FrAivJYEyd0)**  - 40lb/40lb/40lb
+14. Seated or Standing [Seated Y Cable Raises](https://youtu.be/-yL_BS28hcY?si=oO9QrIO_sv2SF5K1)(Seat Height Low Angle) - 10lb/10lb/10lb(6 width)
+15. Standing [Cable FreeMotion Front Shoulder Raise](https://youtu.be/_bzJ1Yb4XCU?si=v0UUNLSilV6NVM76)(Low Angle) - 10lb/10lb/10lb
+16. Seated Incline or Standing [Bilateral DB Overhead Tricep Extension](https://youtube.com/shorts/b_r_LW4HEcM?si=B1_Zz_2olhNHmPwY) | [Unilateral DB Overhead Tricep Extension](https://youtu.be/F3w6m0aENVQ?si=S2vDhXvRxVRh1MgE) - 20lb/20lb/20lb | 10lb/10lb/10lb 
+17. [Half Kneeling Cable Rotation](https://youtu.be/Xj8qeQ3cr74?si=RI3KuSuNtcC0n1jM)- 0lb/0lb/0lb 
 ### Leg Programming 
 All leg cable excercise are done at a low angle. Avoid squatting with running shoes and squat wider as well if issues in squatting form and always on toes.
 
 #### Session 1: Main Compound Squat & Lunge Patterns
 [How to PROPERLY Squat for Growth (4 Easy Steps)](https://youtu.be/gcNh17Ckjgg?si=L0Lmos_bpSJcs9u1)
 *Make Squats Narrow and Deep to improve pistol squat and set bar height to 13 for anything Zercher*
-1. **Hack Squat**(Back/Front) 
-2. **Barbell Squat/Zercher B-Squat** - Incline High Bar(on trap muscle)  - 50lb
-3. **Dumbbell Bulgarian Split Squat/Prone Leg Curl** - set to 3rd hole and exclusively train only strength phase(can use [leg extension machine](https://youtu.be/VC5kbLSuo30?si=ssky4p0p0X2BdUEy)) - 20lb/20lb/25lb can do on a cube too
-4. **Kneeling Squat on toes with curlbar/Dumbbell behind** 
-5. **Unilateral/Bilateral Leg Press** 
-6. **Walking Barbell Lunge/Zercher Lunge** 
-7. **KB [B Stance Squat](https://youtu.be/5uFUvFXhp7U?si=3PGzZ_XSqbFGPbqN)/Sumo [Zercher](https://www.youtube.com/watch?v=71l8K2Q9_6s)** 
-8. **[Roman Chair Hip Abduction](https://youtu.be/j5HWZOfIePI?si=EsYf8Gg0rFO16y-p)**  
-9. ~~[Elevated Smith Machine Lunge](https://youtu.be/Yp5O9Cz6Ajg?si=bFGCfbzNqt_JobTA) - try [Elevated Lunge](https://youtu.be/OVFHK2Iev70?si=oiRNDNHznSrNP_RC) with dumbbell at max 40lb to 60lb then switch to free barbell~~
+
+1. **Barbell Squat/Zercher B-Squat** - Incline High Bar(on trap muscle)  
+2. **KB [B Stance Squat](https://youtu.be/5uFUvFXhp7U?si=3PGzZ_XSqbFGPbqN)/Sumo [Zercher](https://www.youtube.com/watch?v=71l8K2Q9_6s)** 
+3. **[Roman Chair Hip Abduction](https://youtu.be/j5HWZOfIePI?si=EsYf8Gg0rFO16y-p)**  
+4. ~~[Elevated Smith Machine Lunge](https://youtu.be/Yp5O9Cz6Ajg?si=bFGCfbzNqt_JobTA) - try [Elevated Lunge](https://youtu.be/OVFHK2Iev70?si=oiRNDNHznSrNP_RC) with dumbbell at max 40lb to 60lb then switch to free barbell~~
 
 
 
@@ -263,7 +258,7 @@ Static stretches can be active or passive with external force like maybe a plank
 	3. hand on wall pistol squat
 	4. [TRX Assisted Pistol Squat](https://www.youtube.com/watch?v=HqCHXb91yMQ) 
 	5. **[Barbell Pistol Squat](https://youtu.be/G-neztXXSCA?si=M3l8EqL0Y4O9ANtC)** 
-5. **[Dumbbell ATG Split Squat](https://youtu.be/j39uGbXnbYw?si=DSL98N7FTt1xr8O1)** 
+
 
 
 

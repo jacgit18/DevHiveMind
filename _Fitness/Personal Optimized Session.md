@@ -24,6 +24,7 @@ dg-publish:
 - [ ] Finalize, refine, reduce, and prioritize exercises in [[Plyometrics]] and Stability program 
 - [ ] Alternate grips on sled pull
 - [ ] Bag work for 6 songs
+- [ ] Alternate  15  sec each bilaterally when yielding isometrics if not alternating 30 sec max 
 - [ ] Can only do each excercise twice a week max
 - [ ] Learn [How to Jump Rope](https://youtu.be/wqN5bRkZPK0?si=zxXLzzBXywde4piE)
 - [ ] Try advance [dead hang variations](https://youtu.be/ZeFGPBxKc2A?si=iUGaSbNqgLDae_8K)  
@@ -161,7 +162,7 @@ Do 3 reps of sled push/pull to 6 reps of farmer/suitcase for 8 sets
 2. **Barbell Zercher Lunge** to **Overhead Press**
 3. **Bench Reverse Crunch || [Dragon Flag](https://youtu.be/U5pviWt7sMo?si=bTziyFRf9FBf40sF) || Ab Roller** to **Chest press** 📈
 
-##### Yielding Isometrics at End 
+##### Yielding Isometrics at End
 4. **Pallof Press**(bands/cables) to **Kneeling Cable Crunch**(High Angle) 
 #### **Regular sets**
 5. **Back Extension** 
