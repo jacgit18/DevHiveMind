@@ -34,11 +34,6 @@ dg-publish:
 
 
 
-
-Don't need to alternate as much for between hypertrophy reps for Antagonistic super-sets since following song duration 
-
-Alternate weight ratios so one day heavier on landmine next day heavier on dumbbells and lighter on landline for super-sets.
-
 - [ ] Do 1 minute rest between reps and 2 min between exercises especially if going heavy.
 
 
@@ -87,7 +82,7 @@ The general principles of **training phases** like strength and hypertrophy appl
 ### Progression Rules
 #todo/BAU/Workout 
 - [ ] Keep [[Gym Core Exercise Weight Goals]] in mind.
-- [ ] Follow [[Recovery]] regimen for soreness or injury. 
+
 - [ ] Use only resistance bands for only explosive or hypertrophy training.
 - [ ] Add reps first for workout on each phase then adjust explosive power and hypertrophy phase in relation to strength max weight change, then go back to original reps with new weight.
 - [ ] Increase weight as you train Hypertrophy and reduce the range of motion of the excercise as well to train to failure better.
@@ -212,14 +207,14 @@ Static stretches can be active or passive with external force like maybe a plank
 
 ### Build to Doing Safely
 ##### Full Body
-- ~~**[Turkish Get-Up](https://youtu.be/jFK8FOiLa_M?si=L8oB-1-BZ8M6Wfsp)** - 10lb to 15lb~~
+- ~~**[Turkish Get-Up](https://youtu.be/jFK8FOiLa_M?si=L8oB-1-BZ8M6Wfsp)**
 - **[Single-Leg Snatch (RDL, Plate, Hip Lock)](https://youtu.be/L9hk1LiqGsU?si=-dJyrtt3Mq7XezCu)** - 25lb/25lb/25lb
 - [Dumbbell Man Maker](https://youtu.be/rXjJ46zoQrM?si=XtGPVO8zeVQeapj6)(Easier) -10lb/10lb/10lb
 - [Kettlebell Man Maker](https://youtu.be/P4BIVAgJbZY?si=_gnVpDS6HX7WgacW)(Harder) -10lb/10lb/10lb 
 
 ##### Upper
 ###### Push
-- **[Landmine Shoulder Z Press](https://youtu.be/app94pzXOuU?si=kOpaa_oC9HkpkRNv)**
+- ~~**[Landmine Shoulder Z Press](https://youtu.be/app94pzXOuU?si=kOpaa_oC9HkpkRNv)**~~
 - **[Landmine](https://youtu.be/Zb-l68-4KFM?si=I8zR3VtIppuQNJk_)** || KB || [Resistance Band](https://www.youtube.com/watch?v=kI2H5xGnxcM) || [Rope](https://www.youtube.com/watch?v=JBz7PUxDyE4) || [TRX Standing](https://www.youtube.com/watch?v=7zpXipLThLI) Russian Twist
 - **[Landmine Twist](https://www.youtube.com/watch?v=M93HfnAVIl8)** 
 - ***[Landmine Rotational Press](https://www.youtube.com/watch?v=ONDeomDVlbE)***
@@ -230,9 +225,11 @@ Static stretches can be active or passive with external force like maybe a plank
 - **[Side Lateral QL Extension](https://youtu.be/UaydER2VIUc?si=wkQxbIqiz7lJQF_7)** 
 	- After building up from single leg back extension and doing this consistently then do [rotating variation](https://youtu.be/KJwARxV9a6g?si=4C--YLWJnUcFaMmx) once doing consistent strength PR.
 
-	- Besides doing on back extension machine can do [Lateral Flexion on Stability Ball](https://youtu.be/FrohQ--m7fs?si=Z4akKJnru0ut8S8X)
+
 
 - **[KB Jefferson Curls](https://www.youtube.com/watch?v=y80cxEpuYEU)/[Reverse Jefferson Curls](https://www.youtube.com/watch?v=RhE5EIb-ZMg)** - Keep weight & reps low 
+
+
 - [Cable Reverse Crunch](https://www.youtube.com/watch?v=b8oUb_6POhQ) 
 
 ##### Lower
