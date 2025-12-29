@@ -21,7 +21,6 @@ dg-publish:
 ![[ChatGPT Image Jul 3, 2025, 04_58_45 PM.png]]
 # Session Breakdown 
 #todo/BAU/Workout 
-- [ ] Finalize, refine, reduce, and prioritize exercises in [[Plyometrics]] and Stability program 
 - [ ] Alternate grips on sled pull
 - [ ] Bag work for 6 songs
 - [ ] Alternate  15  sec each bilaterally when yielding isometrics if not alternating 30 sec max 
@@ -181,7 +180,8 @@ Do 3 reps of sled push/pull to 6 reps of farmer/suitcase for 8 sets
 	- 4 sets 3 sec per rep at 60% to 70% effort
 	- 2 sets 10 sec per rep at 100% effort
 #### **Antagonistic super-sets**
-4. [[Plyometrics]]
+#todo/BAU/Workout 
+- [ ] 4. Finalize, refine, reduce, and prioritize exercises in [[Plyometrics]] 
 5. **Pallof Press**(bands/cables) to **[Lateral Walk](https://youtu.be/nw8NjG2YOLY?si=KAo4G6B3_5Av1s_t)**
 6. **Sled Push/Pull** to **Farmer/Suitcase**📈
 7. DB switch catch(5lb) - 1 min 
