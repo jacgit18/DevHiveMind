@@ -23,6 +23,7 @@ dg-publish:
 #todo/BAU/Workout 
 - [ ] Alternate grips on sled pull
 - [ ] Bag work for 6 songs
+- [ ] Set bar height to 13 for anything Zercher
 - [ ] Alternate  15  sec each bilaterally when yielding isometrics if not alternating 30 sec max 
 - [ ] Can only do each excercise twice a week max
 - [ ] Learn [How to Jump Rope](https://youtu.be/wqN5bRkZPK0?si=zxXLzzBXywde4piE)

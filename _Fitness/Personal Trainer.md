@@ -32,7 +32,7 @@ dg-publish:
 - [ ] Once at solid baseline switch to a **Seasonal Training Strategy** while also integrating workout phases aiming for **7 workouts per week in the winter/fall** were your body tends to **retain more weight during the colder months** (September to February), making it an ideal time to **increase training frequency** and build mass or strength. Then In the **warmer months**, when energy is often spent on outdoor activities and appetite may decrease, **4 to 5 workouts per week** can be more sustainable.
 
 
-
+All leg cable excercise are done at a low angle.
 
 - [ ] Do 1 minute rest between reps and 2 min between exercises especially if going heavy.
 
@@ -142,48 +142,5 @@ Anything not on this list is most likely a bad excercise or not worth doing base
 ### Right to Bare Arms Program
 Allowed to practice each excercise *here* max twice a week. 
 #### **Session 1: Push Focus**
-
-1. **Dumbbell Floor** or **Incline Dumbbell Bench** or [Banded Dumbbell Bench](https://youtu.be/nzPvCtwkETM?si=ayLMQYM4NFk1FKbE)([Helps with form](https://youtu.be/QsYre__-aro?si=7PEG01LFDkV1D8ks&t=70)) Press– 20lb/25lb/25lb
-2. **Barbell Bench Press**([Use proper form](https://youtu.be/4Y2ZdHCOXok?si=uSEuLn5DQpCemOoT&t=424) also warm up with empty bar shifting to max weight) - 10lb/20lb/30lb
-	1. Use explosive Phase variation to improve at bottom of movement as well 
-	2. Use close grip bench press for top of movement.
-	3. For the middle overhead press in the clean jerk press will help with this.
-
-3. **[Band Chest Hex Press](https://youtu.be/e_wdE5rtZfA)** - 30lb/30lb/30lb
-4. ~~**[Cable Wrist Curl pronated](https://youtu.be/UbfzCh0oJ5E?si=KtTGfiJfP5ep3CkD)/[supinated](https://youtu.be/WVAaKJvToe0?si=r9TKMQbLs1xmpiL0)**(Consider **Wrist Curl** [variations](https://www.youtube.com/watch?v=nvJ-1suJCTU)) – 10lb
-
-
-
-7. ***[Landmine Anti Rotations](https://www.youtube.com/watch?v=8aXStDm3cOs) - 10lb/10lb/10lb***
-8. [Wrist Twists](https://youtu.be/uxOVXpwYKv0)
-
-
-
-9. **[Band Upright Row](https://youtu.be/VhpnXlphu88)** || **[Band V Raise](https://youtu.be/5WBdE0TSoUQ)**(hypertrophy) || **[Banded Scarecrow](https://youtu.be/qzNQ3_TQHDs)**(Imbalance) 
-10. **[DB Cross Body Fly](https://youtu.be/mK2xrdqf_cU)** || **[Band Cross Body Chest Fly](https://youtu.be/TM-VhSRr4XU)**
-11. **[Cable Snap Downs](https://www.youtube.com/shorts/IW40KjCwNmA)**(Top Angle)  
-
-12. **[Incline Bench Preacher Curl](https://www.youtube.com/watch?v=02TvQZiVdic)/[Reverse Preacher Curl](https://youtu.be/h8LVaKRAFY0?si=ix3lKao_fRA33nqU)**
-
-13. **[Incline Prone Lateral Raise](https://youtu.be/Wz1C8NzWg5A?si=epnUd7OS6WC75u1Y&t=112)**/**[Seated Cable Pec Minor Fly](https://youtu.be/sC91H2XLtJc?si=bSV_IhpBVbdADHz2&t=286)**(Better ROM then chest fly Top Angle) - 20lb/20lb/20lb(Machine 5 and 5)
-
-14. **[Low Cable Goblet Squat](https://youtu.be/f6eI0JI9AYA?si=TTKH4FrAivJYEyd0)**  - 40lb/40lb/40lb
-15. Seated or Standing [Seated Y Cable Raises](https://youtu.be/-yL_BS28hcY?si=oO9QrIO_sv2SF5K1)(Seat Height Low Angle) (6 width)
-16. Standing [Cable FreeMotion Front Shoulder Raise](https://youtu.be/_bzJ1Yb4XCU?si=v0UUNLSilV6NVM76)(Low Angle) 
-
-17. [Half Kneeling Cable Rotation](https://youtu.be/Xj8qeQ3cr74?si=RI3KuSuNtcC0n1jM)
-### Leg Programming 
-All leg cable excercise are done at a low angle. Avoid squatting with running shoes and squat wider as well if issues in squatting form and always on toes.
-
-#### Session 1: Main Compound Squat & Lunge Patterns
-[How to PROPERLY Squat for Growth (4 Easy Steps)](https://youtu.be/gcNh17Ckjgg?si=L0Lmos_bpSJcs9u1)
-*Make Squats Narrow and Deep to improve pistol squat and set bar height to 13 for anything Zercher*
-
-1. **Barbell Squat/Zercher B-Squat** - Incline High Bar(on trap muscle)  
-2. **KB [B Stance Squat](https://youtu.be/5uFUvFXhp7U?si=3PGzZ_XSqbFGPbqN)/Sumo [Zercher](https://www.youtube.com/watch?v=71l8K2Q9_6s)** 
-3. **[Roman Chair Hip Abduction](https://youtu.be/j5HWZOfIePI?si=EsYf8Gg0rFO16y-p)**  
-4. ~~[Elevated Smith Machine Lunge](https://youtu.be/Yp5O9Cz6Ajg?si=bFGCfbzNqt_JobTA) - try [Elevated Lunge](https://youtu.be/OVFHK2Iev70?si=oiRNDNHznSrNP_RC) with dumbbell at max 40lb to 60lb then switch to free barbell~~
-
-
 
 
