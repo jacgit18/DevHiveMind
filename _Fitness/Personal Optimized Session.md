@@ -23,6 +23,8 @@ dg-publish:
 #todo/BAU/Workout 
 - [ ] Alternate grips on sled pull
 - [ ] Bag work for 6 songs
+- [ ] Stay away from barbell bench press and other barbell exercises with certain grips. 
+- [ ] Keep [[Gym Core Exercise Weight Goals]] in mind.
 - [ ] Set bar height to 13 for anything Zercher
 - [ ] Alternate  15  sec each bilaterally when yielding isometrics if not alternating 30 sec max.
 - [ ] If you feel **off balance**, try **making a fist** this creates full-body tension and enhances stability.
@@ -43,8 +45,10 @@ dg-publish:
 - [ ] Full body compound movements **here uses modified set/rep 3x5 for strength phase 4x8, hypertrophy phase, and 2x5 explosive**
 - [ ] After you've built a solid training foundation (about 2 years or more of consistent training), consider **shifting your focus in multi-week blocks** so alternating phase every 6 weeks because it gets harder to make gains after a certain point.
 - [ ] If you're not **feeling the target muscle** during an exercise, **reduce momentum** and slow down on the eccentric(lengthen) phase of the movement for strength training to improve control and mind-muscle connection but you can also slow down on the concentric(shortening) phase of movement.
-- [ ] Cycle in different exercises every **8-12 weeks** to avoid stagnation also limit range of exercises per session to 11 excercise and limit phone usage to preserve performance.
+- [ ] Cycle in different exercises every **8-12 weeks** to avoid stagnation.
 - [ ] Once at solid baseline switch to a **Seasonal Training Strategy** while also integrating workout phases aiming for **7 workouts per week in the winter/fall** were your body tends to **retain more weight during the colder months** (September to February), making it an ideal time to **increase training frequency** and build mass or strength. Then In the **warmer months**, when energy is often spent on outdoor activities and appetite may decrease, **4 to 5 workouts per week** can be more sustainable.
+- [ ] The general principles of **training phases** like strength and hypertrophy apply to most exercises. However, when training **smaller muscles and stabilizers**, it's often better to prioritize **tempo and control over intensity** example calf raises and wrist curls should be done with a slow tempo about 3x15. You should also limit combination exercises since focused on adding weight also over time muscle tightening and timing will tighten in the right spots automatically or faster or at least take less effort when bracing for impact.
+
 
 
 

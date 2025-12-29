@@ -19,17 +19,6 @@ Peer Reviewed: 0
 dg-publish:
 ---
 
-## Best Practices
-#todo/BAU/Workout  
-
-
-
-- [ ] Cycle in different exercises every **8-12 weeks** to avoid stagnation also limit range of exercises per session to 11 excercise and limit phone usage to preserve performance.
-- [ ] Once at solid baseline switch to a **Seasonal Training Strategy** while also integrating workout phases aiming for **7 workouts per week in the winter/fall** were your body tends to **retain more weight during the colder months** (September to February), making it an ideal time to **increase training frequency** and build mass or strength. Then In the **warmer months**, when energy is often spent on outdoor activities and appetite may decrease, **4 to 5 workouts per week** can be more sustainable.
-
-
-
-
 
 
 
@@ -39,11 +28,8 @@ dg-publish:
 
 
 # Exercises
->**Barbell Exercises: Upper vs Lower Body Considerations**
-Upper body barbell exercises—like the bench press—can sometimes place unnecessary strain on the wrists due to the fixed, straight bar grip. If the grip doesn’t align naturally with your wrist and shoulder joints, it can cause discomfort or even injury over time.
-In contrast, barbell movements for the lower body (like squats and deadlifts) or full-body lifts often allow for a more natural grip or distribute load in a way that’s generally better tolerated.
 
-The general principles of **training phases** like strength and hypertrophy apply to most exercises. However, when training **smaller muscles and stabilizers**, it's often better to prioritize **tempo and control over intensity** example calf raises and wrist curls should be done with a slow tempo about 3x15.  You should also limit combination exercises since focused on adding weight also over time muscle tightening and timing will tighten in the right spots automatically or faster or at least take less effort when bracing for impact.
+
 
 
 
@@ -68,7 +54,7 @@ The general principles of **training phases** like strength and hypertrophy appl
 
 ### Progression Rules
 #todo/BAU/Workout 
-- [ ] Keep [[Gym Core Exercise Weight Goals]] in mind.
+
 
 - [ ] Use only resistance bands for only explosive or hypertrophy training.
 - [ ] Add reps first for workout on each phase then adjust explosive power and hypertrophy phase in relation to strength max weight change, then go back to original reps with new weight.
