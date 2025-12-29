@@ -32,9 +32,9 @@ dg-publish:
 - [ ] Once at solid baseline switch to a **Seasonal Training Strategy** while also integrating workout phases aiming for **7 workouts per week in the winter/fall** were your body tends to **retain more weight during the colder months** (September to February), making it an ideal time to **increase training frequency** and build mass or strength. Then In the **warmer months**, when energy is often spent on outdoor activities and appetite may decrease, **4 to 5 workouts per week** can be more sustainable.
 
 
-All leg cable excercise are done at a low angle.
 
-- [ ] Do 1 minute rest between reps and 2 min between exercises especially if going heavy.
+
+
 
 
 

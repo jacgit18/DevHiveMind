@@ -24,8 +24,9 @@ dg-publish:
 - [ ] Alternate grips on sled pull
 - [ ] Bag work for 6 songs
 - [ ] Set bar height to 13 for anything Zercher
-- [ ] Alternate  15  sec each bilaterally when yielding isometrics if not alternating 30 sec max 
-- [ ] Can only do each excercise twice a week max then once a week as you increase max weight
+- [ ] Alternate  15  sec each bilaterally when yielding isometrics if not alternating 30 sec max.
+- [ ] Aim to do 1 minute rest between reps and 2 min between exercises especially if going heavy.
+- [ ] Can only do each excercise twice a week max then once a week as you increase max weight at after a certain point.
 - [ ] Learn [How to Jump Rope](https://youtu.be/wqN5bRkZPK0?si=zxXLzzBXywde4piE)
 - [ ] Try advance [dead hang variations](https://youtu.be/ZeFGPBxKc2A?si=iUGaSbNqgLDae_8K)  
 - [ ] Practice ISO hold to explosive movement 
@@ -96,7 +97,7 @@ Hypertrophy(10x1) for multiple songs long, Strength(4x8), Explosive(3x4)
 7. **[Cable Assisted Pancake](https://youtu.be/yxXD_5RGakM?si=vFxPzJFnswWk71Zy)**(Low Angle) 📈
 
 
-##### Cable leg day variation
+##### Cable leg day variation(all low angle)
 1. **[Cable Hip Extension](https://www.youtube.com/watch?v=Fr6fdKPdyfM)** 
 2. **[Cable Side Kicks](https://www.youtube.com/watch?v=jYuN92LGzpA)** 
 3. **[Cable Kickback](https://www.youtube.com/watch?v=SqO-VUEak2M)**
