@@ -52,20 +52,19 @@ dg-publish:
 3. **Mobility**: ROM 10 reps each excercise(2 excercise for each month) ✅ 
 4. **Stability**: *TRX/SwissBall Training* - focus on one a month or something when cycling into program
 	1. [TRX Burpee Level 3](https://www.youtube.com/watch?v=C_rKVEucJak)
-	2. [TRX Assisted Pistol Squat](https://www.youtube.com/watch?v=HqCHXb91yMQ) 
-	3. [TRX Push Up](https://youtu.be/jk4MGqOmjn4?si=lzlBdn4390KOOyNg)/TRX Suspended Pushup(harder)
-	4. [TRX single arm row w/ rotation](https://www.youtube.com/watch?v=xlvYxStAL8M)
-	5. [TRX T spine Rotation](https://www.youtube.com/watch?v=Z5ftr88omuc) 
-	6. [TRX  Inverted Row](https://youtu.be/v4zbFQr4LwA?si=qZnYivFFbLA0XSLx)
-	7. [TRX Y Fly + Biceps Curls ](https://www.youtube.com/watch?v=HOp5_Of1fzE)
-	8. [TRX Plank into Rotations](https://www.youtube.com/watch?v=TT2jUlSOZNc)
-	9. [SwissBall Flutter Kicks](https://www.youtube.com/watch?v=W_we2PmocxE)
-	10. [SwissBall stir the pot](https://www.youtube.com/watch?v=ss8v02Yfw0Q)
-	11. [Swiss Ball Side Flexion - Level 1](https://youtu.be/kFty8-wF69k?si=uAMaVNjSfn33ebzw)
-	12. [Swiss Ball Side Flexion - Level 2](https://youtu.be/68eJEt4NQqc?si=_sbeTFGs2b3DVm9t)
-	13. [Swiss Ball Side Flexion - Level 3](https://youtu.be/-W02_G1f0aM?si=ERpJXiz8LvGJ7885)
-	14. [Swiss Ball Side Flexion - Level 4](https://youtu.be/2VCOHVeRdKs?si=U5aowRV0FRbtSK2b)
-	15. [Swiss Ball Side Flexion - Level 5](https://youtu.be/ltuv2fYMXqk?si=IkiMMxr0jMaj7n0P)
+	2. [TRX Push Up](https://youtu.be/jk4MGqOmjn4?si=lzlBdn4390KOOyNg)/TRX Suspended Pushup(harder)
+	3. [TRX single arm row w/ rotation](https://www.youtube.com/watch?v=xlvYxStAL8M)
+	4. [TRX T spine Rotation](https://www.youtube.com/watch?v=Z5ftr88omuc) 
+	5. [TRX  Inverted Row](https://youtu.be/v4zbFQr4LwA?si=qZnYivFFbLA0XSLx)
+	6. [TRX Y Fly + Biceps Curls ](https://www.youtube.com/watch?v=HOp5_Of1fzE)
+	7. [TRX Plank into Rotations](https://www.youtube.com/watch?v=TT2jUlSOZNc)
+	8. [SwissBall Flutter Kicks](https://www.youtube.com/watch?v=W_we2PmocxE)
+	9. [SwissBall stir the pot](https://www.youtube.com/watch?v=ss8v02Yfw0Q)
+	10. [Swiss Ball Side Flexion - Level 1](https://youtu.be/kFty8-wF69k?si=uAMaVNjSfn33ebzw)
+	11. [Swiss Ball Side Flexion - Level 2](https://youtu.be/68eJEt4NQqc?si=_sbeTFGs2b3DVm9t)
+	12. [Swiss Ball Side Flexion - Level 3](https://youtu.be/-W02_G1f0aM?si=ERpJXiz8LvGJ7885)
+	13. [Swiss Ball Side Flexion - Level 4](https://youtu.be/2VCOHVeRdKs?si=U5aowRV0FRbtSK2b)
+	14. [Swiss Ball Side Flexion - Level 5](https://youtu.be/ltuv2fYMXqk?si=IkiMMxr0jMaj7n0P)
 5. **[[Personal Optimized Session#Priority Static Stretch to develop splits|Static Stretching]]** - 2 days under hypertrophy and 2 days in other phase days
 6. At Home [[Personal Optimized Session#[O2 Trainer Routine](https //www.youtube.com/watch?v=-Es3HOd0PT8&list=PL8NG4An03Sa_ZvEIyHFojC65BhMV08qr1&index=5)|O2 Trainer]] 
 7. Work on [[Recovery]] playing by ear
