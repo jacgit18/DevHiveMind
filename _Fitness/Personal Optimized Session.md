@@ -25,6 +25,7 @@ dg-publish:
 - [ ] Bag work for 6 songs
 - [ ] Set bar height to 13 for anything Zercher
 - [ ] Alternate  15  sec each bilaterally when yielding isometrics if not alternating 30 sec max.
+- [ ] If you feel **off balance**, try **making a fist** this creates full-body tension and enhances stability.
 - [ ] Aim to do 1 minute rest between reps and 2 min between exercises especially if going heavy.
 - [ ] Can only do each excercise twice a week max then once a week as you increase max weight at after a certain point.
 - [ ] Learn [How to Jump Rope](https://youtu.be/wqN5bRkZPK0?si=zxXLzzBXywde4piE)
@@ -41,13 +42,18 @@ dg-publish:
 - [ ] Yielding isometric late in session be selective with which exercise you do with it can even switch out each month what you focus on. 
 - [ ] Full body compound movements **here uses modified set/rep 3x5 for strength phase 4x8, hypertrophy phase, and 2x5 explosive**
 - [ ] After you've built a solid training foundation (about 2 years or more of consistent training), consider **shifting your focus in multi-week blocks** so alternating phase every 6 weeks because it gets harder to make gains after a certain point.
+- [ ] If you're not **feeling the target muscle** during an exercise, **reduce momentum** and slow down on the eccentric(lengthen) phase of the movement for strength training to improve control and mind-muscle connection but you can also slow down on the concentric(shortening) phase of movement.
+- [ ] Cycle in different exercises every **8-12 weeks** to avoid stagnation also limit range of exercises per session to 11 excercise and limit phone usage to preserve performance.
+- [ ] Once at solid baseline switch to a **Seasonal Training Strategy** while also integrating workout phases aiming for **7 workouts per week in the winter/fall** were your body tends to **retain more weight during the colder months** (September to February), making it an ideal time to **increase training frequency** and build mass or strength. Then In the **warmer months**, when energy is often spent on outdoor activities and appetite may decrease, **4 to 5 workouts per week** can be more sustainable.
+
+
 
 #### Schedule for Alternating Variation in Exercises
 
-| Month           | Back Extension                                                                                                         | ROM                                                                                                       | Walk                            | Leg ROM                                                               | Upper Body                      |                                                                              | Leg Focus                | Sled                             |
-| --------------- | ---------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------- | ------------------------------- | --------------------------------------------------------------------- | ------------------------------- | ---------------------------------------------------------------------------- | ------------------------ | -------------------------------- |
-| 1 (Odd months)  | Unilateral back ext 2x8 with 5 sec ISO & [Roman Chair Hip Abduction](https://youtu.be/j5HWZOfIePI?si=EsYf8Gg0rFO16y-p) | [Super ROM ](https://www.youtube.com/watch?v=nvEE4u3qfJY)(2x8)+ [Scarecrow](https://youtu.be/qzNQ3_TQHDs) | Suitcase Bottom Ups or Suitcase | [[Personal Optimized Session#Cable leg day variation\|Cable Leg day]] | Unilateral Arm(were it applies) | -ChinUp   -Kneeling arm row  - Behind the Back Raise                         | Unilateral-leg variation | Push to Lateral(left/right) Pull |
-| 2 (Even months) | Bilateral Back ext 4x8 with 10 sec ISO & [Side Lateral QL Extension](https://youtu.be/UaydER2VIUc?si=wkQxbIqiz7lJQF_7) | Super ROM + [V Raise](https://youtu.be/5WBdE0TSoUQ)(cross)                                                | Banded Farmer or Farmer Carry   | Non Cable leg day                                                     | Bilateral Arm                   | -Narrow PullUp     -Standing arm row  - Unilateral Overhead Tricep Extension | Bilateral variation      | Push to Pull                     |
+| Month           | Back Extension                                                                                                         | ROM                                                                                                       | Walk                                                                               | Leg ROM                                                               | Upper Body                      |                                                                              | Leg Focus                | Sled                                                                                 |
+| --------------- | ---------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------- | --------------------------------------------------------------------- | ------------------------------- | ---------------------------------------------------------------------------- | ------------------------ | ------------------------------------------------------------------------------------ |
+| 1 (Odd months)  | Unilateral back ext 2x8 with 5 sec ISO & [Roman Chair Hip Abduction](https://youtu.be/j5HWZOfIePI?si=EsYf8Gg0rFO16y-p) | [Super ROM ](https://www.youtube.com/watch?v=nvEE4u3qfJY)(2x8)+ [Scarecrow](https://youtu.be/qzNQ3_TQHDs) | Suitcase [Bottom Ups](https://www.youtube.com/watch?v=TJjRZBpY75I) or Suitcase 2x8 | [[Personal Optimized Session#Cable leg day variation\|Cable Leg day]] | Unilateral Arm(were it applies) | -ChinUp   -Kneeling arm row  - Behind the Back Raise                         | Unilateral-leg variation | Push to [Lateral](https://youtu.be/rGtYmX2aeAA?si=PnniyFsIluLeViKa)(left/right) Pull |
+| 2 (Even months) | Bilateral Back ext 4x8 with 10 sec ISO & [Side Lateral QL Extension](https://youtu.be/UaydER2VIUc?si=wkQxbIqiz7lJQF_7) | Super ROM + [V Raise](https://youtu.be/5WBdE0TSoUQ)(cross)                                                | Banded Farmer Carry or Farmer March                                                | Non Cable leg day                                                     | Bilateral Arm                   | -Narrow PullUp     -Standing arm row  - Unilateral Overhead Tricep Extension | Bilateral variation      | Push to Pull                                                                         |
 
 
 1. ***Airdyne Bike || Row Machine || Sprint || Jump Rope || Run || Shadow Boxing*** ✅ 
@@ -210,26 +216,27 @@ Do 3 reps of sled push/pull to 6 reps of farmer/suitcase for 8 sets
 ##### Build to Doing Safely
 
 1. **[Nordic Hamstring Curl](https://youtu.be/PcxNRBnfBd0?si=_EnPiuwgF3Rx0uo4)** (Practice on incline bench with tib bar 45lb) 
-2. **[KB Jefferson Curls](https://www.youtube.com/watch?v=y80cxEpuYEU)/[Reverse Jefferson Curls](https://www.youtube.com/watch?v=RhE5EIb-ZMg)** - Keep weight & reps low 
-3. ~~**[Turkish Get-Up](https://youtu.be/jFK8FOiLa_M?si=L8oB-1-BZ8M6Wfsp)**
-4. **[Single-Leg Snatch (RDL, Plate, Hip Lock)](https://youtu.be/L9hk1LiqGsU?si=-dJyrtt3Mq7XezCu)** 
-5. [Dumbbell Man Maker](https://youtu.be/rXjJ46zoQrM?si=XtGPVO8zeVQeapj6)(Easier) 
-6. [Kettlebell Man Maker](https://youtu.be/P4BIVAgJbZY?si=_gnVpDS6HX7WgacW)(Harder) 
+2. **[Base Rows](https://youtu.be/Qmw9TKnQ9NY?si=gNe_2K45P71UKz5y)** 
+3. **[KB Jefferson Curls](https://www.youtube.com/watch?v=y80cxEpuYEU)/[Reverse Jefferson Curls](https://www.youtube.com/watch?v=RhE5EIb-ZMg)** - Keep weight & reps low 
+4. ~~**[Turkish Get-Up](https://youtu.be/jFK8FOiLa_M?si=L8oB-1-BZ8M6Wfsp)**
+5. **[Single-Leg Snatch (RDL, Plate, Hip Lock)](https://youtu.be/L9hk1LiqGsU?si=-dJyrtt3Mq7XezCu)** 
+6. [Dumbbell Man Maker](https://youtu.be/rXjJ46zoQrM?si=XtGPVO8zeVQeapj6)(Easier) 
+7. [Kettlebell Man Maker](https://youtu.be/P4BIVAgJbZY?si=_gnVpDS6HX7WgacW)(Harder) 
 
-7. **[Band Chest Hex Press](https://youtu.be/e_wdE5rtZfA)** - 30lb/30lb/30lb
-8. [Wrist Twists](https://youtu.be/uxOVXpwYKv0)
-9. **[Band Upright Row](https://youtu.be/VhpnXlphu88)** || **[Band V Raise](https://youtu.be/5WBdE0TSoUQ)**(hypertrophy) ||
-10. **[DB Cross Body Fly](https://youtu.be/mK2xrdqf_cU)** || **[Band Cross Body Chest Fly](https://youtu.be/TM-VhSRr4XU)**
-11. **[Cable Snap Downs](https://www.youtube.com/shorts/IW40KjCwNmA)**(Top Angle)  
+8. **[Band Chest Hex Press](https://youtu.be/e_wdE5rtZfA)** - 30lb/30lb/30lb
+9. [Wrist Twists](https://youtu.be/uxOVXpwYKv0)
+10. **[Band Upright Row](https://youtu.be/VhpnXlphu88)** || **[Band V Raise](https://youtu.be/5WBdE0TSoUQ)**(hypertrophy) ||
+11. **[DB Cross Body Fly](https://youtu.be/mK2xrdqf_cU)** || **[Band Cross Body Chest Fly](https://youtu.be/TM-VhSRr4XU)**
+12. **[Cable Snap Downs](https://www.youtube.com/shorts/IW40KjCwNmA)**(Top Angle)  
 
-12. **[Incline Bench Preacher Curl](https://www.youtube.com/watch?v=02TvQZiVdic)/[Reverse Preacher Curl](https://youtu.be/h8LVaKRAFY0?si=ix3lKao_fRA33nqU)**
+13. **[Incline Bench Preacher Curl](https://www.youtube.com/watch?v=02TvQZiVdic)/[Reverse Preacher Curl](https://youtu.be/h8LVaKRAFY0?si=ix3lKao_fRA33nqU)**
 
-13. **[Incline Prone Lateral Raise](https://youtu.be/Wz1C8NzWg5A?si=epnUd7OS6WC75u1Y&t=112)**/**[Seated Cable Pec Minor Fly](https://youtu.be/sC91H2XLtJc?si=bSV_IhpBVbdADHz2&t=286)**(Better ROM then chest fly Top Angle) - 20lb/20lb/20lb(Machine 5 and 5)
+14. **[Incline Prone Lateral Raise](https://youtu.be/Wz1C8NzWg5A?si=epnUd7OS6WC75u1Y&t=112)**/**[Seated Cable Pec Minor Fly](https://youtu.be/sC91H2XLtJc?si=bSV_IhpBVbdADHz2&t=286)**(Better ROM then chest fly Top Angle) - 20lb/20lb/20lb(Machine 5 and 5)
 
-14. **[Low Cable Goblet Squat](https://youtu.be/f6eI0JI9AYA?si=TTKH4FrAivJYEyd0)**  - 40lb/40lb/40lb
-15. Seated or Standing [Seated Y Cable Raises](https://youtu.be/-yL_BS28hcY?si=oO9QrIO_sv2SF5K1)(Seat Height Low Angle) (6 width)
-16. Standing [Cable FreeMotion Front Shoulder Raise](https://youtu.be/_bzJ1Yb4XCU?si=v0UUNLSilV6NVM76)(Low Angle) 
-17. [Half Kneeling Cable Rotation](https://youtu.be/Xj8qeQ3cr74?si=RI3KuSuNtcC0n1jM)
+15. **[Low Cable Goblet Squat](https://youtu.be/f6eI0JI9AYA?si=TTKH4FrAivJYEyd0)**  - 40lb/40lb/40lb
+16. Seated or Standing [Seated Y Cable Raises](https://youtu.be/-yL_BS28hcY?si=oO9QrIO_sv2SF5K1)(Seat Height Low Angle) (6 width)
+17. Standing [Cable FreeMotion Front Shoulder Raise](https://youtu.be/_bzJ1Yb4XCU?si=v0UUNLSilV6NVM76)(Low Angle) 
+18. [Half Kneeling Cable Rotation](https://youtu.be/Xj8qeQ3cr74?si=RI3KuSuNtcC0n1jM)
 
 
 
@@ -392,3 +399,11 @@ Static stretches can be active or passive with external force like maybe a plank
 | Plate or Book Pinch Hold (1–2 books)  | 3    | 10–12 reps | 45–60 sec |
 
 
+## Workout Tips
+#todo/BAU/Workout  
+- [ ] Rotate your **thumb internally** to end of range for **barbell bench press**.
+- [ ] Hover in more of a standing position for **Abduction Leg Squeezing** machine 70 to 80 lb.
+- [ ] For [row](https://www.youtube.com/watch?v=JdjJC6eIk44) Pull from a low angle like 45 degrees to a high angle keeping wrist aligned with elbows  almost like your riding a motorcycle or posing  to goal is to maximize the use of back.
+- [ ] Lean forward a little on [lunge/squat](https://youtu.be/DfGu48vMmlU?si=DbDYi5Wq3JKopM3P) keeping neutral spine specifically dumbbell to simulate shooting a take down. 
+- [ ] Rotate your **pinky externally** to where you are at the end of the range where your hands are facing **palm up** when it comes to **curls**.
+- [ ] 45 degree Incline bench press over flat bench for my body type as well as **Larsen bench press** on flat bench or incline bench hovering or keeping straight legs to focus more on core.

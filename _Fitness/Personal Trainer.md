@@ -22,13 +22,9 @@ dg-publish:
 ## Best Practices
 #todo/BAU/Workout  
 
-- [ ] Advance stage shift focus of phases:
-	- [ ] For Lower body focus on 80% strength training and 20% hypertrophy. 
-	- [ ] For Upper body focus on 20% strength training and 80% hypertrophy training to failure with high volume.
+
 
 - [ ] Cycle in different exercises every **8-12 weeks** to avoid stagnation also limit range of exercises per session to 11 excercise and limit phone usage to preserve performance.
-- [ ] If you feel **off balance**, try **making a fist** this creates full-body tension and enhances stability.
-- [ ] If you're not **feeling the target muscle** during an exercise, **reduce momentum** and slow down on the eccentric(lengthen) phase of the movement for strength training to improve control and mind-muscle connection but you can also slow down on the concentric(shortening) phase of movement.
 - [ ] Once at solid baseline switch to a **Seasonal Training Strategy** while also integrating workout phases aiming for **7 workouts per week in the winter/fall** were your body tends to **retain more weight during the colder months** (September to February), making it an ideal time to **increase training frequency** and build mass or strength. Then In the **warmer months**, when energy is often spent on outdoor activities and appetite may decrease, **4 to 5 workouts per week** can be more sustainable.
 
 
@@ -39,15 +35,6 @@ dg-publish:
 
 
 
-## Workout Tips
-#todo/BAU/Workout  
-- [ ] Do high reps when doing stretches or excercise with short range of movement. 
-- [ ] Rotate your **thumb internally** to end of range for **barbell bench press**.
-- [ ] Hover in more of a standing position for **Abduction Leg Squeezing** machine 70 to 80 lb.
-- [ ] For [row](https://www.youtube.com/watch?v=JdjJC6eIk44) Pull from a low angle like 45 degrees to a high angle keeping wrist aligned with elbows  almost like your riding a motorcycle or posing  to goal is to maximize the use of back.
-- [ ] Lean forward a little on [lunge/squat](https://youtu.be/DfGu48vMmlU?si=DbDYi5Wq3JKopM3P) keeping neutral spine specifically dumbbell to simulate shooting a take down. 
-- [ ] Rotate your **pinky externally** to where you are at the end of the range where your hands are facing **palm up** when it comes to **curls**.
-- [ ] 45 degree Incline bench press over flat bench for my body type as well as **Larsen bench press** on flat bench or incline bench hovering or keeping straight legs to focus more on core.
 
 
 
@@ -106,35 +93,13 @@ The general principles of **training phases** like strength and hypertrophy appl
 - [ ] Swap out some Leg stuff next year with cable excercise or some hybrid of the two
 - [ ] Train hypertrophy by song duration and beat to simplify and no 1 min break between sets
 - [ ] Practice priming excercise movement like squat before squatting a bar or do push ups before bench press.
-- [ ] Can do 2 of ✅  but pick one of 📈 depending on day then choose few others for that day session max excercise in session can maybe be 7 each day maybe lower if an MMA day. Maybe Each week pick something different for  📈 to try each one on a more consistent basis but also keep [[Exercise Best Pairing]] in mind.
+
 - [ ] Run all out 1 min then 1 min coasting so run then a slow walk then back to intense 1 min once able to do a minutes build to 4 min.
 - [ ] For DB exercises alternate every 2 months to improve at the excercise then after doing each switch back to picking which one you feel like doing depending on how you feel maybe do this in pairs picking to Dumbbell exercises.
 - [ ] For hypertrophy week exclude full body compound movement can keep deadlifts and other excercise based on day for variation also avoid these exercises on MMA days in general can cycle back in for non hypertrophy week and MMA specific days in general to limit fatigue.
 - [ ] For strength and explosive week can reduce number of exercises and include compound excercise like clean jerk press etc...
 
 
-
-
-## Body Part Specific Programs 
-
-### Full Body Program 
-
-- **[Base Rows](https://youtu.be/Qmw9TKnQ9NY?si=gNe_2K45P71UKz5y)** 
-
-- ***Sled***(try rope pull variation on explosive week)
-	- **[Crossover Step Lateral Sled Drag](https://youtu.be/rGtYmX2aeAA?si=PnniyFsIluLeViKa)** 
-
-
-
-
- **Exclusively strength training this at 2x8**
-- **[Suitcase Bottom Up March](https://www.youtube.com/watch?v=TJjRZBpY75I)** 
-
-
-- ***[Banded Suitcase](https://youtu.be/J7RX1IemJVE?si=P10xiFwSvUb2sU61) Carry/[March](https://www.youtube.com/watch?v=a9HkuLYNyJ0)*** - 5lb/10lb/20lb(Start with then transition to farmer)
-
-
-- Farmer [Carry](https://www.youtube.com/watch?v=8OtwXwrJizk)/[March](https://www.youtube.com/watch?v=C2I_HsdDVCE) - 10lb/20lb/35lb
 
 
 
