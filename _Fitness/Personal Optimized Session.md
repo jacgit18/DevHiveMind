@@ -82,7 +82,7 @@ dg-publish:
 	12. [Swiss Ball Side Flexion - Level 3](https://youtu.be/-W02_G1f0aM?si=ERpJXiz8LvGJ7885)
 	13. [Swiss Ball Side Flexion - Level 4](https://youtu.be/2VCOHVeRdKs?si=U5aowRV0FRbtSK2b)
 	14. [Swiss Ball Side Flexion - Level 5](https://youtu.be/ltuv2fYMXqk?si=IkiMMxr0jMaj7n0P)
-5. **[[Personal Optimized Session#Priority Static Stretch to develop splits|Static Stretching]]** - 2 days under hypertrophy and 2 days in other phase days
+5. **[[Personal Optimized Session#Priority Static Stretch to develop splits |Static Stretching]]** - Friday to Monday
 6. At Home [[Personal Optimized Session#[O2 Trainer Routine](https //www.youtube.com/watch?v=-Es3HOd0PT8&list=PL8NG4An03Sa_ZvEIyHFojC65BhMV08qr1&index=5)|O2 Trainer]] 
 7. Work on [[Recovery]] playing by ear
 
@@ -344,7 +344,7 @@ Do 3 reps of sled push/pull to 6 reps of farmer/suitcase for 8 sets
 - Use grip and [[Hand Exercise.pdf | finger trainer]] to improve grip.
 - Use **barbells** for added weight when building strength.
 - Use **dumbbells** for greater range of motion and correcting muscle imbalances.
-- You can use **heavy resistance bands combined with a weight plate** to create a **pseudo weighted vest**. This setup can be used for exercises like **pull-ups, dips, and other bodyweight movements** to add resistance without needing an actual vest.
+- You can use **heavy resistance bands combined with a weight plate** to create a **pseudo weighted vest**. This setup can be used for exercises like **pull-ups, dips, and other body weight movements** to add resistance without needing an actual vest.
 - For resistance band exercises focus on **Explosive Power** or **Hypertrophy**,  you can still do strength if your still weak in certain area's but you will eventually plateau you can also mix up bands clipping multiple ones together.
 - Any exercises with deficit like deficit deadlift helps gets you into a deeper position and exploding out of it and increase range of motion but build to it.
 

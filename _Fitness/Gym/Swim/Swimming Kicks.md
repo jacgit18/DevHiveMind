@@ -45,14 +45,3 @@ When it comes to swimming, the type of kick you use often depends on the stroke,
 The choice between a two-beat and six-beat kick largely depends on your goals (speed vs. endurance) and the specific stroke you’re swimming.
 
 
-### **Phase One: Swimming Lessons**
-#todo/purchases 
-- [ ] get swim lessons
-- **Private Lessons:**
-    - YMCA Cost: **$250–$300** for 8 classes.
-    
-- **Chelsea Parks & Recreation Membership (Pool & Gym):**
-    - **Annual Fee:** $150
-    - **Six-Month Membership:** $75
-    - **With IDNYC Discount:** $67.50
-
