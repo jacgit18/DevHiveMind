@@ -324,6 +324,14 @@ Do 3 reps of sled push/pull to 6 reps of farmer/suitcase for 8 sets
 	- Round 7: Row for one minute.
 
 
+### Breathing & Core Engagement in Exercise
+- **Inhale** during the **eccentric phase** (_lowering the weight_).
+- **Exhale** during the **concentric phase** (_lifting the weight_), which is typically the more strenuous part of the movement.
+- While performing static holds like a **plank**, focus on **slow, steady breathing** throughout the duration of the hold.
+- No matter the movement—whether lifting, lowering, or holding—**keep your core engaged the entire time**. A braced core provides essential stability and protects your spine during all phases of the exercise.
+
+
+
 ##### Priority Static Stretch to develop splits
 *Perform Static Stretch at end of workout 4 times a week 30 sec each*
 Static stretches can be active or passive with external force like maybe a plank with a plate on the back. Follow excercise from [Pancake Stretch Progression](https://youtu.be/iO1tsB5ygMg?si=YRVgj1ZB-Z_TRNvb) which are spread across this document.
@@ -362,7 +370,7 @@ Static stretches can be active or passive with external force like maybe a plank
 - **Week 2+:** 3–4 sets of **1–2 min** per session (progress to max resistance).  
 - **Max Session Time:** **10–15 mins total daily** (avoid overfatiguing respiratory muscles).  
 
-#### Tower 200 Programming  – With Adequate Space
+#### [[Tower 200.pdf |Tower 200]] Programming – With Adequate Space ranges from 25 to 45lb
 #### Cable at Top Angle
 - **Kneeling Cable Crunch** – Great for weighted ab work.
 - **Single-Arm Lateral Head Pushdown** – Targets the lateral (outer) head of the triceps.

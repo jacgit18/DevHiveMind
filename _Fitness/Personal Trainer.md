@@ -33,19 +33,12 @@ dg-publish:
 
 
 
-### Breathing & Core Engagement in Exercise
-- **Inhale** during the **eccentric phase** (_lowering the weight_).
-- **Exhale** during the **concentric phase** (_lifting the weight_), which is typically the more strenuous part of the movement.
-- While performing static holds like a **plank**, focus on **slow, steady breathing** throughout the duration of the hold.
-- No matter the movement—whether lifting, lowering, or holding—**keep your core engaged the entire time**. A braced core provides essential stability and protects your spine during all phases of the exercise.
 
 ### Equipment Tips
-- Use [[Tower 200.pdf |Tower 200]] for practicing cable machine exercises the weight ranges from 25 to 45 lb.
 - Use cables which are best for isolation of muscle so maybe focus hypertrophy days around cable [properly](https://youtu.be/JUDTGZh4rhg?si=rsQZQsKYSnAV1XkB). 
 - Use grip and [[Hand Exercise.pdf | finger trainer]] to improve grip.
 - Use **barbells** for added weight when building strength.
 - Use **dumbbells** for greater range of motion and correcting muscle imbalances.
-- Any **curlbar** exercise can be done with barbell.
 - You can use **heavy resistance bands combined with a weight plate** to create a **pseudo weighted vest**. This setup can be used for exercises like **pull-ups, dips, and other bodyweight movements** to add resistance without needing an actual vest.
 - For resistance band exercises focus on **Explosive Power** or **Hypertrophy**,  you can still do strength if your still weak in certain area's but you will eventually plateau you can also mix up bands clipping multiple ones together.
 - Any exercises with deficit like deficit deadlift helps gets you into a deeper position and exploding out of it and increase range of motion but build to it.
