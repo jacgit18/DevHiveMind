@@ -21,13 +21,11 @@ dg-publish:
 ![[ChatGPT Image Jul 3, 2025, 04_58_45 PM.png]]
 # Session Breakdown 
 #todo/BAU/Workout 
-- [ ] Alternate grips on sled pull
 - [ ] Bag work for 6 songs
-- [ ] Stay away from barbell bench press and other barbell exercises with certain grips. 
 - [ ] Keep [[Gym Core Exercise Weight Goals]] in mind.
-- [ ] Set bar height to 13 for anything Zercher
-- [ ] Alternate  15  sec each bilaterally when yielding isometrics if not alternating 30 sec max.
-- [ ] If you feel **off balance**, try **making a fist** this creates full-body tension and enhances stability.
+
+
+
 - [ ] Aim to do 1 minute rest between reps and 2 min between exercises especially if going heavy.
 - [ ] Can only do each excercise twice a week max then once a week as you increase max weight at after a certain point.
 - [ ] Learn [How to Jump Rope](https://youtu.be/wqN5bRkZPK0?si=zxXLzzBXywde4piE)
@@ -442,8 +440,13 @@ Static stretches can be active or passive with external force like maybe a plank
 
 ## Workout Tips
 #todo/BAU/Workout  
+- [ ] Alternate grips on sled pull
+- [ ] Set bar height to 13 for anything Zercher
 - [ ] Rotate your **thumb internally** to end of range for **barbell bench press**.
+- [ ] If you feel **off balance**, try **making a fist** this creates full-body tension and enhances stability.
+- [ ] Stay away from barbell bench press and other barbell exercises with certain grips. 
 - [ ] Hover in more of a standing position for **Abduction Leg Squeezing** machine 70 to 80 lb.
+- [ ] Alternate  15  sec each bilaterally when yielding isometrics if not alternating 30 sec max if doing laterally.
 - [ ] For [row](https://www.youtube.com/watch?v=JdjJC6eIk44) Pull from a low angle like 45 degrees to a high angle keeping wrist aligned with elbows  almost like your riding a motorcycle or posing  to goal is to maximize the use of back.
 - [ ] Lean forward a little on [lunge/squat](https://youtu.be/DfGu48vMmlU?si=DbDYi5Wq3JKopM3P) keeping neutral spine specifically dumbbell to simulate shooting a take down. 
 - [ ] Rotate your **pinky externally** to where you are at the end of the range where your hands are facing **palm up** when it comes to **curls**.
