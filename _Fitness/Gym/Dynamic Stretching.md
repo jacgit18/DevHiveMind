@@ -33,7 +33,7 @@ Add to warm up for [lower back](https://youtu.be/ayxOIbhl48I?si=iDI5tTZBOtlUzZDp
 
 - [ ] Try [Knees over Toes Lunge](https://youtu.be/5RmrHINDYl8?si=wU_FV0a0Znqn0kbS)
 
-
+- [ ] Cycle in warm up doing lunges to kicks, knees, and teeps
 
 ##### Small Muscle Stretches
 - [Lunge ISO Heel Raise](https://youtu.be/Zwy4h0NukbQ?si=AYz0q6ZnrqsT7T6W) 

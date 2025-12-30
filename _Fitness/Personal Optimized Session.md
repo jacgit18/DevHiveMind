@@ -21,40 +21,24 @@ dg-publish:
 ![[ChatGPT Image Jul 3, 2025, 04_58_45 PM.png]]
 # Session Breakdown 
 #todo/BAU/Workout 
+- [ ] Drink beet juice with baking soda for performance. 
 - [ ] Bag work for 6 songs
-- [ ] Keep [[Gym Core Exercise Weight Goals]] in mind.
-
-
-
-- [ ] Aim to do 1 minute rest between reps and 2 min between exercises especially if going heavy.
-- [ ] Can only do each excercise twice a week max then once a week as you increase max weight at after a certain point.
 - [ ] Learn [How to Jump Rope](https://youtu.be/wqN5bRkZPK0?si=zxXLzzBXywde4piE)
 - [ ] Try advance [dead hang variations](https://youtu.be/ZeFGPBxKc2A?si=iUGaSbNqgLDae_8K)  
 - [ ] Practice ISO hold to explosive movement 
 - [ ] Eventually switch to sand bags from DB
 - [ ] Try [How to Juggle 3 Balls IN TWO MINUTES](https://youtu.be/p4_IUMS4yc8?si=NfVKkklqBmDF1tQy)
 - [ ] Try Chest press alt arm one pushing one ISO holding
+- [ ] Try and add in [Good Morning](https://youtu.be/nWyx81AfTos?si=ReJqMdB_wh9t4yRs) after improving back extension and RDL
 - [ ] Eventually add [Rope Flow: Movement](https://youtu.be/ItVf97YhFL4?si=_Bo9m9TxxWgy6au0) and [Mace exercises](https://youtu.be/TdatDbqb8TY?si=QXCZiZTyP676wf32)
 - [ ] Try Waited pull up then ISO knee raise while holding the pull up
-- [ ] Try and add in [Good Morning](https://youtu.be/nWyx81AfTos?si=ReJqMdB_wh9t4yRs) after improving back extension and RDL
-- [ ] Avoid training hypertrophy for functional strength training which is strength training with rotation in the excercise movement.
-- [ ] Use one set of halo's each direction, and kettlebell leg raises at lighter weight for exercises with out super sets.  
-- [ ] Yielding isometric late in session be selective with which exercise you do with it can even switch out each month what you focus on. 
-- [ ] Full body compound movements **here uses modified set/rep 3x5 for strength phase 4x8, hypertrophy phase, and 2x5 explosive**
-- [ ] After you've built a solid training foundation (about 2 years or more of consistent training), consider **shifting your focus in multi-week blocks** so alternating phase every 6 weeks because it gets harder to make gains after a certain point.
-- [ ] If you're not **feeling the target muscle** during an exercise, **reduce momentum** and slow down on the eccentric(lengthen) phase of the movement for strength training to improve control and mind-muscle connection but you can also slow down on the concentric(shortening) phase of movement.
-- [ ] Cycle in different exercises every **8-12 weeks** to avoid stagnation.
-- [ ] Once at solid baseline switch to a **Seasonal Training Strategy** while also integrating workout phases aiming for **7 workouts per week in the winter/fall** were your body tends to **retain more weight during the colder months** (September to February), making it an ideal time to **increase training frequency** and build mass or strength. Then In the **warmer months**, when energy is often spent on outdoor activities and appetite may decrease, **4 to 5 workouts per week** can be more sustainable.
-- [ ] The general principles of **training phases** like strength and hypertrophy apply to most exercises. However, when training **smaller muscles and stabilizers**, it's often better to prioritize **tempo and control over intensity** example calf raises and wrist curls should be done with a slow tempo about 3x15. You should also limit combination exercises since focused on adding weight also over time muscle tightening and timing will tighten in the right spots automatically or faster or at least take less effort when bracing for impact.
-- [ ] Drink beet juice with baking soda. 
-- [ ] Cycle in warm up doing lunges to kicks, knees, and teeps
-- [ ] Hit heavy bag at Crunch once a week also be aware of how you use row machine/Airdyne bike since can fall into cardio use it to rev up the engine then do cardio on days where you want to.
-- [ ] Practice priming excercise movement like squat before squatting a bar or do push ups before bench press.
-- [ ] Run all out 1 min then 1 min coasting so run then a slow walk then back to intense 1 min once able to do a minutes build to 4 min.
+- [ ] Keep [[Gym Core Exercise Weight Goals]] in mind.
+- [ ] Aim to do 1 minute rest between reps and 2 min between exercises especially if going heavy.
+- [ ] Can only do each excercise twice a week max then once a week as you increase max weight at after a certain point.
 - [ ] For DB exercises alternate every 2 months to improve at the excercise then after doing each switch back to picking which one you feel like doing depending on how you feel maybe do this in pairs picking to Dumbbell exercises.
-
-
-
+- [ ] Use one set of halo's each direction, and kettlebell leg raises at lighter weight for exercises with out super sets.  
+- [ ] Run all out 1 min then 1 min coasting so run then a slow walk then back to intense 1 min once able to do a minutes build to 4 min.
+- [ ] Yielding isometric late in session be selective with which exercise you do with it can even switch out each month what you focus on. 
 
 ### Progression Rules
 
@@ -66,10 +50,12 @@ dg-publish:
 
 #todo/BAU/Workout 
 - [ ] Use only resistance bands for only explosive or hypertrophy training.
+- [ ] Cycle in different exercises every **8-12 weeks** to avoid stagnation.
 - [ ] Add reps first for workout on each phase then adjust explosive power and hypertrophy phase in relation to strength max weight change, then go back to original reps with new weight.
 - [ ] Increase weight as you train Hypertrophy and reduce the range of motion of the excercise as well to train to failure better.
 - [ ] After going in and stabilizing everything dedicate and go high volume to a specific part of the body to improve on it like shoulders Etc.
-
+- [ ] Avoid training hypertrophy for functional strength training which is strength training with rotation in the excercise movement.
+- [ ] After you've built a solid training foundation (about 2 years or more of consistent training), consider **shifting your focus in multi-week blocks** so alternating phase every 6 weeks because it gets harder to make gains after a certain point.
 #### Schedule for Alternating Variation in Exercises
 
 | Month           | Back Extension                                                                                                         | ROM                                                                                                       | Walk                                                                               | Leg ROM                                                               | Upper Body                      |                                                                              | Leg Focus                | Sled                                                                                 |
@@ -234,7 +220,8 @@ Do 3 reps of sled push/pull to 6 reps of farmer/suitcase for 8 sets
 
 ### Thursday(Pre prep for meal prep) 
 
-#### Future Exercises to Cycle in
+
+### Future Exercises to Cycle in
 ##### Build to Doing Safely
 
 1. **[Nordic Hamstring Curl](https://youtu.be/PcxNRBnfBd0?si=_EnPiuwgF3Rx0uo4)** (Practice on incline bench with tib bar 45lb) 
@@ -328,6 +315,9 @@ Do 3 reps of sled push/pull to 6 reps of farmer/suitcase for 8 sets
 
 
 ### Airdyne Bike/Row Machine Program
+#todo/BAU/Workout  
+- [ ] Be aware of how you use row machine/Airdyne bike since can fall into cardio use it to rev up the engine then do cardio on days where you want to.
+
 - **Workout 1: 1 Minute On, 1 Minute Off**
 - **Workout 2: All-Out in a Minute**
 - **Workout 3: 10 to 20 Alternation** - for 20 min or less alt from 10 to 20 strokes per minute
@@ -370,8 +360,6 @@ Static stretches can be active or passive with external force like maybe a plank
 - [Standing Pancake](https://youtu.be/4TU9K40LZ6A?si=kWxpXgb7wdZ35HQO)
 - [Regular Pancake](https://youtu.be/B1_YA47gtm0?si=_oBDpaLBejKI-8mV) 
 - [Full split](https://youtu.be/hsNvqUmCAAo?si=SbGmouCgXsZ44_tJ) 
-
-
 
 
 ## Home Training 
@@ -446,8 +434,13 @@ Static stretches can be active or passive with external force like maybe a plank
 - [ ] If you feel **off balance**, try **making a fist** this creates full-body tension and enhances stability.
 - [ ] Stay away from barbell bench press and other barbell exercises with certain grips. 
 - [ ] Hover in more of a standing position for **Abduction Leg Squeezing** machine 70 to 80 lb.
+- [ ] Full body compound movements **here uses modified set/rep 3x5 for strength phase 4x8, hypertrophy phase, and 2x5 explosive**.
 - [ ] Alternate  15  sec each bilaterally when yielding isometrics if not alternating 30 sec max if doing laterally.
+- [ ] Practice priming excercise movement like squat before squatting a bar or do push ups before bench press if no stretching.
 - [ ] For [row](https://www.youtube.com/watch?v=JdjJC6eIk44) Pull from a low angle like 45 degrees to a high angle keeping wrist aligned with elbows  almost like your riding a motorcycle or posing  to goal is to maximize the use of back.
 - [ ] Lean forward a little on [lunge/squat](https://youtu.be/DfGu48vMmlU?si=DbDYi5Wq3JKopM3P) keeping neutral spine specifically dumbbell to simulate shooting a take down. 
 - [ ] Rotate your **pinky externally** to where you are at the end of the range where your hands are facing **palm up** when it comes to **curls**.
 - [ ] 45 degree Incline bench press over flat bench for my body type as well as **Larsen bench press** on flat bench or incline bench hovering or keeping straight legs to focus more on core.
+- [ ] If you're not **feeling the target muscle** during an exercise, **reduce momentum** and slow down on the eccentric(lengthen) phase of the movement for strength training to improve control and mind-muscle connection but you can also slow down on the concentric(shortening) phase of movement.
+- [ ] The general principles of **training phases** like strength and hypertrophy apply to most exercises. However, when training **smaller muscles and stabilizers**, it's often better to prioritize **tempo and control over intensity** example calf raises and wrist curls should be done with a slow tempo about 3x15. You should also limit combination exercises since focused on adding weight also over time muscle tightening and timing will tighten in the right spots automatically or faster or at least take less effort when bracing for impact.
+- [ ] Once at solid baseline switch to a **Seasonal Training Strategy** while also integrating workout phases aiming for **7 workouts per week in the winter/fall** were your body tends to **retain more weight during the colder months** (September to February), making it an ideal time to **increase training frequency** and build mass or strength. Then In the **warmer months**, when energy is often spent on outdoor activities and appetite may decrease, **4 to 5 workouts per week** can be more sustainable.
