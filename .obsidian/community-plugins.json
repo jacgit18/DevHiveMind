@@ -70,5 +70,7 @@
   "data-files-editor",
   "vault-2-book",
   "flowershow",
-  "obsidian-mkdocs-publisher"
+  "obsidian-mkdocs-publisher",
+  "epub-importer",
+  "obsidian-epub-plugin"
 ]
