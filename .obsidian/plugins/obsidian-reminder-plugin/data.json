@@ -5,12 +5,7 @@
       {
         "title": "Look at this [[Codebase Interview Question]]",
         "time": "2025-03-05",
-        "rowNumber": 41
-      },
-      {
-        "title": "[[Clipboard#Email To Send]] on",
-        "time": "2025-06-01",
-        "rowNumber": 38
+        "rowNumber": 47
       }
     ]
   },
@@ -31,7 +26,12 @@
     "useCustomEmojiForTasksPlugin": false,
     "removeTagsForTasksPlugin": false,
     "enableKanbanPluginReminderFormat": false,
+    "yearMonthDisplayFormat": "YYYY, MMMM",
+    "monthDayDisplayFormat": "MM/DD",
+    "shortDateWithWeekdayDisplayFormat": "M/DD (ddd)",
+    "timeDisplayFormat": "HH:mm",
     "editDetectionSec": 10,
-    "reminderCheckIntervalSec": 5
+    "reminderCheckIntervalSec": 5,
+    "weekStart": "0"
   }
 }

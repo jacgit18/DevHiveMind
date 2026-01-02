@@ -24971,6 +24971,12 @@ var SharedEntity = class {
   static getAll() {
     return Object.assign([], this._sharedEntites);
   }
+  /**
+   * Initialize the Y.Doc with default values
+   * Should be called by subclasses after the Y.Doc is created
+   */
+  initializeYDoc() {
+  }
   initServerYDoc(folderKey) {
     return new Promise((resolve3) => {
       const tempId = createRandomId();
@@ -25684,9 +25690,28 @@ var handleUpdate = (ev, tx, folder, plugin) => {
   });
 };
 var _SharedFolder = class _SharedFolder extends SharedEntity {
+  constructor(root, plugin, ydoc) {
+    super(plugin);
+    this._fileExtensions = /* @__PURE__ */ new Set(["md", "canvas", "MD"]);
+    this.root = root;
+    this._path = root.path;
+    this.yDoc = ydoc != null ? ydoc : new Doc();
+    this.initializeYDoc();
+    this.getDocsFragment().observe((ev, tx) => {
+      handleUpdate(ev, tx, this, plugin);
+    });
+    this.yDoc.on("update", (update2, origin, yDoc, tr) => {
+      if (tr.local && this.shareId) {
+        plugin.serverSync.sendUpdate(this, update2);
+      }
+    });
+    _SharedFolder._sharedEntites.push(this);
+    addIsSharedClass(this.path, plugin);
+  }
   static async fromTFolder(root, plugin) {
     showNotice(`Inititializing share for ${root.path}.`);
-    const files = this.getAllFilesInFolder(root);
+    const sharedFolder = new this(root, plugin);
+    const files = sharedFolder.getFilesInFolder(root);
     for (const file of files) {
       if (SharedDocument.findByPath(file.path)) {
         showNotice("You can not share a directory that already has shared files in it (right now).");
@@ -25703,20 +25728,19 @@ var _SharedFolder = class _SharedFolder extends SharedEntity {
         permanent: true
       }, plugin);
     }));
-    const folder = new _SharedFolder(root, plugin);
     for (const doc2 of docs) {
       if (doc2) {
-        folder.addDocument(doc2);
+        sharedFolder.addDocument(doc2);
       }
     }
-    folder.yDoc.getText("originalFoldername").insert(0, root.name);
-    await folder.initServerYDoc();
-    await add(folder, plugin);
-    await folder.startIndexedDBSync();
-    folder.startWebRTCSync();
-    navigator.clipboard.writeText(plugin.settings.basePath + "/team/" + folder.shareId);
-    showNotice(`Folder ${folder.path} with ${docs.length} documents shared. URL copied to your clipboard.`, 0);
-    return folder;
+    sharedFolder.yDoc.getText("originalFoldername").insert(0, root.name);
+    await sharedFolder.initServerYDoc();
+    await add(sharedFolder, plugin);
+    await sharedFolder.startIndexedDBSync();
+    sharedFolder.startWebRTCSync();
+    navigator.clipboard.writeText(plugin.settings.basePath + "/team/" + sharedFolder.shareId);
+    showNotice(`Folder ${sharedFolder.path} with ${docs.length} documents shared. URL copied to your clipboard.`, 0);
+    return sharedFolder;
   }
   getShareURL() {
     return this.plugin.settings.basePath + "/team/" + this.shareId;
@@ -25833,22 +25857,6 @@ var _SharedFolder = class _SharedFolder extends SharedEntity {
       if (folder.isPathSubPath(normalizedPath)) return folder;
     }
   }
-  constructor(root, plugin, ydoc) {
-    super(plugin);
-    this.root = root;
-    this._path = root.path;
-    this.yDoc = ydoc != null ? ydoc : new Doc();
-    this.getDocsFragment().observe((ev, tx) => {
-      handleUpdate(ev, tx, this, plugin);
-    });
-    this.yDoc.on("update", (update2, origin, yDoc, tr) => {
-      if (tr.local && this.shareId) {
-        plugin.serverSync.sendUpdate(this, update2);
-      }
-    });
-    _SharedFolder._sharedEntites.push(this);
-    addIsSharedClass(this.path, plugin);
-  }
   getDocsFragment() {
     return this.yDoc.getMap("documents");
   }
@@ -25914,17 +25922,47 @@ var _SharedFolder = class _SharedFolder extends SharedEntity {
     const relativePath = relative(this.root.path, folder);
     return !relativePath.startsWith("..");
   }
-  static getAllFilesInFolder(folder) {
+  get fileExtensions() {
+    if (this.yDoc) {
+      const extensions = this.yDoc.getArray("fileExtensions");
+      if (extensions.length > 0) {
+        return new Set(extensions.toArray());
+      }
+    }
+    return this._fileExtensions;
+  }
+  setFileExtensions(extensions) {
+    const normalized = extensions.map((ext) => ext.startsWith(".") ? ext.slice(1) : ext);
+    this._fileExtensions = new Set(normalized);
+    if (this.yDoc) {
+      const yExtensions = this.yDoc.getArray("fileExtensions");
+      yExtensions.delete(0, yExtensions.length);
+      yExtensions.push(normalized);
+    }
+  }
+  static getAllFilesInFolder(folder, allowedExtensions) {
     const files = folder.children.flatMap((child) => {
       if (child instanceof import_obsidian9.TFile) {
-        return child;
+        const ext = child.extension.toLowerCase();
+        return allowedExtensions.has(ext) ? [child] : [];
       }
       if (child instanceof import_obsidian9.TFolder) {
-        return this.getAllFilesInFolder(child);
+        return this.getAllFilesInFolder(child, allowedExtensions);
       }
       return [];
     });
     return files;
+  }
+  getFilesInFolder(folder) {
+    return _SharedFolder.getAllFilesInFolder(folder, this.fileExtensions);
+  }
+  initializeYDoc() {
+    super.initializeYDoc();
+    if (!this.yDoc) return;
+    const yExtensions = this.yDoc.getArray("fileExtensions");
+    if (yExtensions.length === 0) {
+      yExtensions.push(["md", "MD", "canvas"]);
+    }
   }
   async setNewFolderLocation(folder) {
     const oldPath = this._path;
@@ -27972,7 +28010,6 @@ var _SharedDocument = class _SharedDocument extends SharedEntity {
       plugin.activeStreamClient.add([doc2.shareId]);
     }
     const leaf = await openFileInNewTab(file, plugin.app.workspace);
-    doc2.addStatusBarEntry();
     if (leaf.view.getViewType() === "markdown") {
       doc2.addExtensionToLeaf(leaf.id);
     }
@@ -28011,7 +28048,6 @@ var _SharedDocument = class _SharedDocument extends SharedEntity {
   }
   static async fromTFile(file, opts, plugin) {
     var _a;
-    if (!["md", "MD", "canvas"].contains(file.extension)) return;
     const existing = _SharedDocument.findByPath(file.path);
     if (existing) return existing;
     if (!(plugin.serverSync.authenticated || opts.folder)) {
@@ -28928,7 +28964,7 @@ var PeerdraftWebsocketProvider = class extends ObservableV2 {
     return new Promise((resolve3) => {
       const handler = (sessionId) => {
         if (sessionId === id2) {
-          this.off("new-session-confirmed", handler);
+          this.off("stop-session-confirmed", handler);
           resolve3(id2);
         }
       };
@@ -29091,6 +29127,228 @@ var SharedFolderOptionsModal = class extends import_obsidian17.Modal {
       btn.onClick(() => {
         navigator.clipboard.writeText(this.folder.getShareURL());
         showNotice("Link copied to clipboard.");
+      });
+    });
+    const extensions = new import_obsidian17.Setting(this.contentEl);
+    extensions.setName("File Extensions");
+    extensions.setDesc("Comma-separated list of file extensions to sync (without leading .)");
+    const extensionsValue = Array.from(this.folder.fileExtensions).join(", ");
+    let currentExtensions = extensionsValue;
+    let inputEl = null;
+    let errorEl = null;
+    let updateButton = null;
+    let isValid = true;
+    const validateExtensions = (value) => {
+      if (!value.trim()) {
+        return { valid: false, message: "Please enter at least one file extension" };
+      }
+      const extensions2 = value.split(",").map((ext) => ext.trim()).filter((ext) => ext.length > 0);
+      if (extensions2.length === 0) {
+        return { valid: false, message: "Please enter at least one file extension" };
+      }
+      const invalidChars = /[^a-zA-Z0-9]/;
+      const invalidExts = extensions2.filter((ext) => invalidChars.test(ext));
+      if (invalidExts.length > 0) {
+        return {
+          valid: false,
+          message: `Invalid characters in extensions: ${invalidExts.join(", ")}`
+        };
+      }
+      return { valid: true };
+    };
+    const updateInputValidation = (value) => {
+      if (!inputEl) {
+        console.error("Input element not found");
+        return;
+      }
+      const { valid, message } = validateExtensions(value);
+      isValid = valid;
+      console.log("Input validation - valid:", valid, "value:", value);
+      if (!valid) {
+        inputEl.style.borderColor = "var(--text-error)";
+        inputEl.style.backgroundColor = "rgba(224, 49, 49, 0.05)";
+        inputEl.animate([
+          { transform: "translateX(0)" },
+          { transform: "translateX(-3px)" },
+          { transform: "translateX(3px)" },
+          { transform: "translateX(0)" }
+        ], {
+          duration: 300,
+          iterations: 1
+        });
+      } else {
+        inputEl.style.borderColor = "var(--background-modifier-border)";
+        inputEl.style.backgroundColor = "var(--background-primary)";
+      }
+      if (!valid && message) {
+        if (!errorEl) {
+          errorEl = extensions.descEl.createEl("div");
+          errorEl.style.cssText = `
+            color: var(--text-error);
+            font-size: 0.85em;
+            margin: 6px 0 0 2px;
+            line-height: 1.4;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            gap: 4px;
+          `;
+          const icon = document.createElement("span");
+          icon.textContent = "\u26A0\uFE0F";
+          icon.style.fontSize = "0.9em";
+          errorEl.appendChild(icon);
+          const messageEl = document.createElement("span");
+          messageEl.textContent = message;
+          errorEl.appendChild(messageEl);
+        } else {
+          const messageEl = errorEl.querySelector("span:last-child");
+          if (messageEl) {
+            messageEl.textContent = message;
+          }
+        }
+      } else if (errorEl) {
+        errorEl.remove();
+        errorEl = null;
+      }
+      if (updateButton) {
+        updateButton.disabled = !valid;
+        updateButton.style.opacity = valid ? "1" : "0.7";
+        updateButton.style.cursor = valid ? "pointer" : "not-allowed";
+      }
+    };
+    extensions.addText((text3) => {
+      inputEl = text3.inputEl;
+      text3.setValue(extensionsValue);
+      Object.assign(text3.inputEl.style, {
+        width: "100%",
+        marginBottom: "4px",
+        padding: "6px 8px",
+        borderRadius: "4px",
+        border: "2px solid var(--background-modifier-border)",
+        backgroundColor: "var(--background-primary)",
+        transition: "all 0.2s ease-in-out",
+        boxSizing: "border-box"
+      });
+      text3.inputEl.addEventListener("focus", () => {
+        text3.inputEl.style.borderColor = "var(--interactive-accent)";
+        text3.inputEl.style.boxShadow = "0 0 0 2px var(--background-modifier-border-hover)";
+        text3.inputEl.style.outline = "none";
+      });
+      text3.inputEl.addEventListener("blur", () => {
+        text3.inputEl.style.boxShadow = "";
+        if (isValid) {
+          text3.inputEl.style.borderColor = "var(--background-modifier-border)";
+        }
+      });
+      text3.inputEl.addEventListener("input", (e) => {
+        const value = e.target.value;
+        currentExtensions = value;
+        updateInputValidation(value);
+      });
+      updateInputValidation(extensionsValue);
+    });
+    extensions.addButton((button) => {
+      updateButton = button.buttonEl;
+      button.setButtonText("Update Extensions");
+      button.setDisabled(!isValid);
+      button.onClick(async () => {
+        if (!isValid || !inputEl) return;
+        const newExtensions = new Set(
+          currentExtensions.split(",").map((ext) => ext.trim()).filter((ext) => ext)
+        );
+        const files = this.app.vault.getFiles().filter((file) => file.path.startsWith(this.folder.root.path));
+        const currentExts = this.folder.fileExtensions;
+        const addedFiles = [];
+        const removedFiles = [];
+        files.forEach((file) => {
+          const ext = file.extension.toLowerCase();
+          const currentlyIncluded = currentExts.has(ext);
+          const willBeIncluded = newExtensions.has(ext);
+          if (!currentlyIncluded && willBeIncluded) {
+            addedFiles.push(file.path);
+          } else if (currentlyIncluded && !willBeIncluded) {
+            removedFiles.push(file.path);
+          }
+        });
+        if (addedFiles.length > 0 || removedFiles.length > 0) {
+          const modal = new import_obsidian17.Modal(this.app);
+          modal.titleEl.setText("Confirm File Sharing Changes");
+          const content = modal.contentEl.createEl("div");
+          content.createEl("p", {
+            text: "The following changes will be made to shared files:"
+          });
+          if (addedFiles.length > 0) {
+            const addedSection = content.createEl("div");
+            addedSection.createEl("h4", {
+              text: `Files that will be SHARED (${addedFiles.length}):`
+            });
+            const addedList = addedSection.createEl("ul");
+            addedFiles.slice(0, 10).forEach((file) => {
+              addedList.createEl("li", { text: file });
+            });
+            if (addedFiles.length > 10) {
+              addedSection.createEl("p", {
+                text: `...and ${addedFiles.length - 10} more files`
+              });
+            }
+          }
+          if (removedFiles.length > 0) {
+            const removedSection = content.createEl("div");
+            removedSection.createEl("h4", {
+              text: `Files that will be UNSHARED (${removedFiles.length}):`
+            });
+            const removedList = removedSection.createEl("ul");
+            removedFiles.slice(0, 10).forEach((file) => {
+              removedList.createEl("li", { text: file });
+            });
+            if (removedFiles.length > 10) {
+              removedSection.createEl("p", {
+                text: `...and ${removedFiles.length - 10} more files`
+              });
+            }
+          }
+          const buttonContainer = content.createEl("div", {
+            cls: "pd-button-container"
+          });
+          buttonContainer.createEl("button", {
+            text: "Cancel",
+            cls: "mod-warning"
+          }).addEventListener("click", () => {
+            modal.close();
+          });
+          const confirmBtn = buttonContainer.createEl("button", {
+            text: "Confirm Changes",
+            cls: "mod-cta"
+          });
+          confirmBtn.addEventListener("click", async () => {
+            modal.close();
+            const oldExtensions = this.folder.fileExtensions;
+            this.folder.setFileExtensions(Array.from(newExtensions));
+            const files2 = this.app.vault.getFiles().filter((file) => file.path.startsWith(this.folder.root.path));
+            for (const file of files2) {
+              const ext = file.extension.toLowerCase();
+              const wasIncluded = oldExtensions.has(ext);
+              const isNowIncluded = newExtensions.has(ext);
+              if (isNowIncluded && !wasIncluded) {
+                const doc2 = await SharedDocument.fromTFile(file, { permanent: true }, this.folder.plugin);
+                if (doc2) {
+                  this.folder.addDocument(doc2);
+                }
+              } else if (!isNowIncluded && wasIncluded) {
+                const doc2 = SharedDocument.findByPath(file.path);
+                if (doc2) {
+                  this.folder.removeDocument(doc2);
+                  doc2.unshare();
+                }
+              }
+            }
+            showNotice("File extensions and sharing settings updated successfully");
+          });
+          modal.open();
+        } else {
+          this.folder.setFileExtensions(Array.from(newExtensions));
+          showNotice("File extensions updated");
+        }
       });
     });
   }
@@ -30915,11 +31173,13 @@ var PeerdraftPlugin9 = class extends import_obsidian21.Plugin {
           if (oldPathInFolder === newPathInFolder) {
             oldPathInFolder.updatePath(oldPath, file.path);
           } else {
-            const newDoc = await SharedDocument.fromTFile(file, { permanent: true, folder: newPathInFolder.shareId }, plugin);
-            if (newDoc) {
-              newPathInFolder.addDocument(newDoc);
-              const prop = newPathInFolder.getAutoFillProperty();
-              if (prop) newDoc.updateProperty(prop, newDoc.getShareURL());
+            if (newPathInFolder.fileExtensions.has(file.extension)) {
+              const newDoc = await SharedDocument.fromTFile(file, { permanent: true, folder: newPathInFolder.shareId }, plugin);
+              if (newDoc) {
+                newPathInFolder.addDocument(newDoc);
+                const prop = newPathInFolder.getAutoFillProperty();
+                if (prop) newDoc.updateProperty(prop, newDoc.getShareURL());
+              }
             }
             if (doc2) {
             }
@@ -30937,11 +31197,13 @@ var PeerdraftPlugin9 = class extends import_obsidian21.Plugin {
             doc2.syncWithServer();
           }
         } else if (!oldPathInFolder && newPathInFolder) {
-          const doc3 = await SharedDocument.fromTFile(file, { permanent: true, folder: newPathInFolder.shareId }, plugin);
-          if (doc3) {
-            newPathInFolder.addDocument(doc3);
-            const prop = newPathInFolder.getAutoFillProperty();
-            if (prop) doc3.updateProperty(prop, doc3.getShareURL());
+          if (newPathInFolder.fileExtensions.has(file.extension)) {
+            const doc3 = await SharedDocument.fromTFile(file, { permanent: true, folder: newPathInFolder.shareId }, plugin);
+            if (doc3) {
+              newPathInFolder.addDocument(doc3);
+              const prop = newPathInFolder.getAutoFillProperty();
+              if (prop) doc3.updateProperty(prop, doc3.getShareURL());
+            }
           }
         }
       } else if (file instanceof import_obsidian21.TFolder) {
@@ -30976,6 +31238,7 @@ var PeerdraftPlugin9 = class extends import_obsidian21.Plugin {
           if (folder.isFileInSyncObject(file)) return;
           if (SharedDocument.findByPath(file.path)) return;
           if (plugin.settings.serverShares.files.has((0, import_obsidian21.normalizePath)(file.path))) return;
+          if (!folder.fileExtensions.has(file.extension)) return;
           const doc2 = await SharedDocument.fromTFile(file, {
             permanent: true,
             folder: folder.shareId

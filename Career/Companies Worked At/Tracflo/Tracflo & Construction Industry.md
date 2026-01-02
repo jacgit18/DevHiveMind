@@ -52,9 +52,12 @@ Tracflo's innovative solution involves a platform that eliminates change orders 
 
 | Payment | Company_user  | Material_type  | Equipment_type  | Project | Contact  |
 |------|--------|--------|------|------|---------|
- 
+
+
 | Break_material | Break_equipment | Letter  | Proj_user  | Proj | Proj_subcontractor |
 |------|--------|--------|------|------|---------|
+
+
 
 | Chg_order | Rev_letter | Labor_type | Rev_chg_order | Break_labor | Rev_tick | history |
 |--------------|------------|------------|------------------|-------------|------------|---------|

@@ -152,6 +152,7 @@ kanban-plugin: board
 
 ## ## Side Hustle
 
+- [ ] [Google Search Ticker Tags](https://www.google.com/search?q=ticker+tags&sourceid=chrome&ie=UTF-8)
 - [ ] Maybe create a company like make lab that 3D prints things for startups who don't want to invest in a 3D printer
 - [ ] sell cars at a dealership
 - [ ] Carpet cleaning
@@ -163,12 +164,37 @@ kanban-plugin: board
 - [ ] Virtual receptionist
 - [ ] [Study pool](<[Studypool - Homework Help](https://www.studypool.com)>)
 - [ ] [Visual interpreter for the blind](<[https://aira.io/](https://aira.io/)>)
+- [ ] [#1 Bundle: All-in-one Personal Finance Package – Spread Sheet Max](https://spreadsheetmax.com/products/1-bundle-all-in-one-personal-finance-package?utm_medium=VID+3&utm_campaign=USA+LOOKALIKE+WB&utm_content=Lookalike+%28US%2C+7%25+to+8%25%29+-+WB+-+180+D&fbclid=PAZXh0bgNhZW0BMABhZGlkAasWJom0kH0BpsGUduguxP63hekWAmg5jSfischbcXw7lGDj8DxlrennZLwFFQnzodJ-Mw_aem_Bm9Ae1G9LXax2ZbPMbnCrA&utm_source=facebook&campaign_id=120214169698120493&ad_id=120214169820250493&variant=51726711718211)
+
+
+## ## Activities
+
+- [ ] ## Classes
+- [ ] [Flatbush BJJ \| BJJ Classes Flatbush \| Brazilian Jiu Jitsu Flatbush \| Pillar Jiu Jitsu](https://pillarjiujitsu.com)
+- [ ] [Beginner Salsa - NYC Tickets, Tue, Aug 27, 2024 at 6:00 PM \| Eventbrite](https://www.eventbrite.com/e/beginner-salsa-nyc-tickets-974109065437?aff=ebdssbdestsearch)
+- [ ] [Woodworking Classes in Brooklyn - Craftsman Ave](https://craftsmanave.com/woodworking-classes/)
+- [ ] sign up for 202 and 302
+- [ ] [Bike New York](https://bikenewyork.enmotive.com/users/orders)
+- [ ] [NYC DOT - Bicycle Maps](https://www.nyc.gov/html/dot/html/bicyclists/bikemaps.shtml)
+- [ ] [Bike New York Events - 22 Upcoming Activities and Tickets \| Eventbrite](https://www.eventbrite.com/o/bike-new-york-13403125692#collections)
+- [ ] ## Stuff
+- [ ] [Special Waste Disposal · NYC311](https://portal.311.nyc.gov/article/?kanumber=KA-01973)
+- [ ] [Directions — DOWNTOWN TENNIS CLUB](https://downtowntennisnyc.com/directions)
+- [ ] [Home \| Brooklyn — VITAL Climbing Gym](https://www.vitalclimbinggym.com/brooklyn)
+- [ ] [classes – New York City Kendo Club](https://www.nyckendoclub.com/classes/)
+- [ ] [New York City City Guide \| ClassPass](https://classpass.com/locations/new-york)
+- [ ] [New York City Kendo Club \| New York NY \| Facebook](https://www.facebook.com/kendoclubnyc/)
+- [ ] [Area 53 - Your Guide to Unlimited Entertainment in NYC](https://area53nyc.com)
+- [ ] [Epic Laser Tag & Mini Bowling - Area 53 NYC](https://area53nyc.com/dumbo/)
+- [ ] ## Road Trip
+- [ ] [MAKE MY DRIVE FUN](https://makemydrivefun.com)
+- [ ] [Airbnb \| Pocono Mountains - Vacation Rentals & Places to Stay](https://www.airbnb.com/s/Pocono-Mountains--PA/homes?refinement_paths%5B%5D=%2Fhomes&place_id=ChIJDa0vIgq9xIkRvRIDApq1P0w&checkin=2025-01-16&checkout=2025-01-17&adults=2)
 
 
 
 
 %% kanban:settings
 ```
-{"kanban-plugin":"board","list-collapse":[false,false,false,false,false,false,false,false,false]}
+{"kanban-plugin":"board","list-collapse":[false,false,false,false,false,false,false,false,false,false]}
 ```
 %%

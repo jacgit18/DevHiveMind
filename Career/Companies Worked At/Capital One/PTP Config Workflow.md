@@ -1,4 +1,84 @@
-rebase
+## Dev tip 
+
+Mention Just a nit pick in pr
+
+mention TBD  in code for debug giving brief description
+
+Documenting can cause or help with identifying flaws in logic
+
+
+If you're working on something like how you were with the step functions always look for opportunities where there are people who are working on something similar or that may start out similar to copy off of their work instead of doing the effort
+
+
+
+This isnt a logic question its a decision question 
+
+Long story short 
+
+Sorry im trying to formulate my thought
+  
+
+"Then" in gurken are treated as assertion
+
+
+
+**Only push placeholder code if it's actively helping you solve a problem or you're stuck and need to share context with teammates.**  
+Avoid pushing placeholders that serve no functional purpose or are just there to "fill in space." These can clutter the codebase, cause confusion during reviews, and make the commit history harder to follow. If something is incomplete but you're working through a problem or need feedback on your approach, a clearly labeled placeholder with a meaningful comment is acceptable. Otherwise, it's better to keep local stubs or notes to yourself until the implementation is ready or necessary.
+
+
+When you think you are done with implementing whatever feature Etc then raise the pr avoid raising it when you are experimenting and you have like placeholders and 100% sure on the requirements if so ask for help ask questions to get clarification then when you think it's actually what it needs to be then raise PR instead of using it for people to read your code and you to correct it accordingly without thinking
+
+## June
+
+7ps capital one testing platform will be doing behavior driven test
+
+
+Make file that creates aws resources in local stack
+
+
+
+
+## May Notes
+
+Working under customer resiliency specifically credit card
+
+
+
+No response from ptp  
+  
+Should be synchrous after payment then ptp call regardless out failure  
+  
+Ama(Relates to Auditing) is done doing cloudwatch  
+  
+  
+Maybe delet payments from payment scheduler Rt which is a second call but also fulfillment can check  
+  
+Ptp send a response for bff weather payment is successful
+
+
+
+
+Data lambda pass thru update  
+  
+  
+Bff call payments and payments invoke ptp  
+  
+  
+Ptp is legacy track agent metric  
+  
+Short term use case  
+  
+Will eventually phased out but agents need it  
+  
+  
+Ptp called after payments  
+  
+Originally doing manual payments which ptp is apart of
+
+
+
+
+
 ### **PTP Configuration Workflow Notes**
 
 

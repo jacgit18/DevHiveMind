@@ -66,5 +66,11 @@
   "obsidian-auto-link-title",
   "ink",
   "obsidian-markdown-formatting-assistant-plugin",
-  "code-emitter"
+  "code-emitter",
+  "data-files-editor",
+  "vault-2-book",
+  "flowershow",
+  "obsidian-mkdocs-publisher",
+  "epub-importer",
+  "obsidian-epub-plugin"
 ]
