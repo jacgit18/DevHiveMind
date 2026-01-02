@@ -6,12 +6,15 @@ kanban-plugin: board
 
 ## ##### Standing on business
 
-- [ ] [[Striking Approach]]
-- [ ] [[Priority Exercises]]
+- [ ] [[Personal Hands]]
+- [ ] [[Personal Trainer]]
+- [ ] Think in multiple drafts quality comes in time
 - [ ] I rob banks first TD, now Capital One who is next 👀
+- [ ] Imagine being a senoir software engineer and using other people work copy first create later
 - [ ] Be smart about buying time and pay the price more for things that matter and have an unavoidable cost
 - [ ] ###### Treat your attention like its money
 - [ ] Best practices aren't set practices
+- [ ] Build projects tailored to the industry you are trying to enter so if you're trying to be a software engineer in banking build something related to payments and banking
 - [ ] Your the only person who can do the job of changing things
 - [ ] [Fuck Leetcode](https://www.interviewcoder.co/#pricing)
 - [ ] Always assume sub optimal environment Its not there job to believe its you'res
@@ -33,10 +36,13 @@ kanban-plugin: board
 
 ## #todo/CapitalOne
 
+- [ ] Create Milestones to avoid being overwhelmed
+- [ ] Revist [[Job Hunt Strategy]]
+- [ ] [Renting an Apartment in New York City Registration, Wed, May 21, 2025 at 12:00 PM \| Eventbrite](https://www.eventbrite.com/e/renting-an-apartment-in-new-york-city-registration-1336815604459?aff=ebemoffollowpublishemail)
 - [ ] [[PTP Config Workflow]]
 - [ ] [[Work LOB and arch notes to clean]]
 - [ ] possible logging flow CloudWatch Logs → Kinesis Firehose → Splunk HEC
-- [ ] [[Clipboard#Email To Send]] on (@2025-06-01)
+- [x] [[Clipboard#Email To Send]] on (@2025-06-01)
 - [ ] Update Resume with [[Clipboard#Resume Placeholder Experience]]
 - [ ] ###### Try to get put on a team that manages this [Capital One Auto Navigator](https://www.capitalone.com/cars/)
 - [ ] Look at this [[Codebase Interview Question]] (@2025-03-05)
@@ -66,6 +72,12 @@ kanban-plugin: board
 
 ## #todo/BAU/Career
 
+- [ ] ##### Look and work with AI with no guardrails focusing on Psychology
+- [ ] ##### Build high value skill per quarter as of now dedicate this to non-technical skills
+- [ ] ##### Send voice notes for networking on LinkedIn to stand out Try a Little experiments in general outside of this and outside of job stuff just in general experiment
+- [ ] [AI Application Research](https://chatgpt.com/share/68704988-e2f8-800d-878c-8728b49d5276)
+- [ ] [ChatGPT - Stakeholder Requirements Questions](https://chatgpt.com/share/683c0e6e-e31c-800d-9b48-9bf72b235bbd)
+- [ ] Try using [[Requirements to Code Skeleton]]
 - [ ] Be willing to start over
 - [ ] Learn the right things
 - [ ] Give your self 3 days before making any decisions
@@ -89,12 +101,12 @@ kanban-plugin: board
 - [ ] [ChatGPT - Capital One Role Positioning](https://chatgpt.com/share/67edf3f1-c90c-800d-8e7f-bcf4a316ba2d)
 - [ ] [Cloud & Business Logic](https://chatgpt.com/share/67e6b77a-a5b4-800d-be3b-eb68a719d1b5)
 - [ ] [Credit Card Data Advantage](https://chatgpt.com/share/680a5be4-9274-800d-858f-0847742b1e90)
+- [ ] look into [[Psychological AI Project]]
 
 
 ## #todo/finLifePrompt
 
 - [ ] [Top Drone Companies 2025](https://chatgpt.com/share/67fae67a-ee8c-800d-9804-f74a0520d0bd)
-- [ ] Check out Tickets for [Linkin Park](https://www.ticketmaster.com/event/3000616CBC102456?irgwc=1&clickid=yb%3A3dyX9lxyKRQ8QFvUZ3UK-UkszbDzFySChSM0&camefrom=CFC_BUYAT_1387536&impradid=1387536&REFERRAL_ID=tmfeedbuyat1387536&wt.mc_id=aff_BUYAT_1387536&utm_source=1387536-Seated&impradname=Seated&utm_medium=affiliate&ircid=4272)
 - [ ] [Apartment Lessons](https://chatgpt.com/share/67e6c049-4900-800d-b280-cf247f2a0454)
 - [ ] [CDL Process and Costs](https://chatgpt.com/share/67e6cc4f-f5f0-800d-8e07-fe3b96a8e5e4)
 - [ ] [Becoming a Startup Investor](https://chatgpt.com/share/67e6c8eb-37d4-800d-93d2-2a77066f5668)
@@ -109,6 +121,7 @@ kanban-plugin: board
 - [ ] [Notes Use Case](https://chatgpt.com/share/680087c1-71ec-800d-8e0c-5f0ca827511a)
 - [ ] [Buy and Sell Online Businesses, Websites, Apps & Domains - Flippa](https://flippa.com)
 - [ ] [BizBuySell - The Internet's Largest Business for Sale & Franchise for Sale Marketplace](https://www.bizbuysell.com)
+- [ ] [ChatGPT - Claiming 15000 as filer](https://chatgpt.com/share/68f00d76-4e24-800d-8c0f-5f70bc1218c5)
 
 
 ## #todo/gymPrompt
@@ -116,7 +129,11 @@ kanban-plugin: board
 - [ ] [ChatGPT - BJJ Hip Abductor Training](https://chatgpt.com/share/67fc25d3-3a7c-800d-9d47-64755453bd61)
 
 
+***
 
+## Archive
+
+- [ ] Check out Tickets for [Linkin Park](https://www.ticketmaster.com/event/3000616CBC102456?irgwc=1&clickid=yb%3A3dyX9lxyKRQ8QFvUZ3UK-UkszbDzFySChSM0&camefrom=CFC_BUYAT_1387536&impradid=1387536&REFERRAL_ID=tmfeedbuyat1387536&wt.mc_id=aff_BUYAT_1387536&utm_source=1387536-Seated&impradname=Seated&utm_medium=affiliate&ircid=4272)
 
 %% kanban:settings
 ```

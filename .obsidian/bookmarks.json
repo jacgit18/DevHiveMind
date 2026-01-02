@@ -33,9 +33,42 @@
       "title": "Google Keep"
     },
     {
+      "type": "url",
+      "ctime": 1746924279766,
+      "url": "http://127.0.0.1:8384/",
+      "title": "Note Sync"
+    },
+    {
+      "type": "url",
+      "ctime": 1746925441616,
+      "url": "https://github.com/jacgit18/DevHiveMind",
+      "title": "jacgit18/DevHiveMind: DevHiveMind a software developer Encyclopedia."
+    },
+    {
+      "type": "url",
+      "ctime": 1747292559235,
+      "url": "https://www.youtube.com/",
+      "title": "YouTube"
+    },
+    {
       "type": "file",
-      "ctime": 1737449967471,
-      "path": "_Fitness/Priority Exercises.md"
+      "ctime": 1747429809698,
+      "path": "_Fitness/Gym/Optimal Order by Exercise Type.md"
+    },
+    {
+      "type": "file",
+      "ctime": 1747429792053,
+      "path": "_Fitness/Personal Hands.md"
+    },
+    {
+      "type": "file",
+      "ctime": 1747623105563,
+      "path": "_Fitness/Diet/Hunger Games Meal Plan.md"
+    },
+    {
+      "type": "file",
+      "ctime": 1752532678151,
+      "path": "_Fitness/Personal Trainer.md"
     }
   ]
 }

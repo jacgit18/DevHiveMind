@@ -1,1 +1,0 @@
-Subleasing is a process where a tenant rents out part or all of their leased space to another party, known as the subtenant. The original tenant, or sublessor, remains responsible for the lease agreement with the landlord. Subleasing is typically subject to the terms and conditions outlined in the original lease, and it requires the landlord's approval in many cases.
