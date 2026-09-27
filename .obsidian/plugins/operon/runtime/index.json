@@ -1,0 +1,5372 @@
+{
+	"version": 7,
+	"workflowStatusSemanticsSignature": "[[\"Project\",\"Brainstorming\",false,false],[\"Project\",\"Dropped\",false,true],[\"Project\",\"Finished\",true,false],[\"Project\",\"InProgress\",false,false],[\"Project\",\"Paused\",false,false],[\"Project\",\"Planned\",false,false]]",
+	"lastFullReindex": "2026-07-19T17:29:28.680Z",
+	"tasks": {
+		"qg2t2tx": {
+			"operonId": "qg2t2tx",
+			"description": "Day 1 - Configure Operon Foundations",
+			"checkbox": "open",
+			"fieldValues": {
+				"operonId": "qg2t2tx",
+				"status": "Project.Planned",
+				"priority": "A",
+				"dateScheduled": "2026-07-15",
+				"totalEstimate": "10200",
+				"parentTask": "bui5bdb",
+				"progress": "0",
+				"directSubtaskCount": "6",
+				"directDoneSubtaskCount": "0",
+				"directOpenSubtaskCount": "6",
+				"treeDescendantCount": "6",
+				"treeDoneDescendantCount": "0",
+				"treeOpenDescendantCount": "6",
+				"taskIcon": "settings-2",
+				"taskColor": "2563eb",
+				"note": "Builds a clean foundation so every task created later uses the right language, location, and workflow.",
+				"datetimeCreated": "2026-07-14T12:08:17",
+				"datetimeModified": "2026-07-14T12:08:19"
+			},
+			"tags": [
+				"operon-demo",
+				"vault-setup"
+			],
+			"primary": {
+				"filePath": "Operon/Demo Workspace/Set Up Your Obsidian Vault with Operon.md",
+				"lineNumber": 19,
+				"format": "inline"
+			},
+			"datetimeModified": "2026-07-14T12:08:19",
+			"tier": "hot"
+		},
+		"6iadtu8": {
+			"operonId": "6iadtu8",
+			"description": "Review your Operon key mappings",
+			"checkbox": "open",
+			"fieldValues": {
+				"operonId": "6iadtu8",
+				"status": "Project.Planned",
+				"priority": "A",
+				"taskIcon": "settings-2",
+				"taskColor": "2563eb",
+				"dateScheduled": "2026-07-15",
+				"estimate": "1800",
+				"note": "Aligns Operon fields with the property names you want to see before tasks begin spreading across notes.",
+				"parentTask": "qg2t2tx",
+				"datetimeCreated": "2026-07-14T12:08:17",
+				"datetimeModified": "2026-07-14T12:08:17"
+			},
+			"tags": [
+				"operon-demo",
+				"settings"
+			],
+			"primary": {
+				"filePath": "Operon/Demo Workspace/Set Up Your Obsidian Vault with Operon.md",
+				"lineNumber": 20,
+				"format": "inline"
+			},
+			"datetimeModified": "2026-07-14T12:08:17",
+			"tier": "hot"
+		},
+		"j0wllky": {
+			"operonId": "j0wllky",
+			"description": "Choose the priority levels you will actually use",
+			"checkbox": "open",
+			"fieldValues": {
+				"operonId": "j0wllky",
+				"status": "Project.Planned",
+				"priority": "A",
+				"taskIcon": "settings-2",
+				"taskColor": "2563eb",
+				"dateScheduled": "2026-07-15",
+				"estimate": "1800",
+				"note": "Keeps priority meaningful so important work does not become hidden inside another crowded list.",
+				"parentTask": "qg2t2tx",
+				"datetimeCreated": "2026-07-14T12:08:17",
+				"datetimeModified": "2026-07-14T12:08:17"
+			},
+			"tags": [
+				"operon-demo",
+				"settings"
+			],
+			"primary": {
+				"filePath": "Operon/Demo Workspace/Set Up Your Obsidian Vault with Operon.md",
+				"lineNumber": 21,
+				"format": "inline"
+			},
+			"datetimeModified": "2026-07-14T12:08:17",
+			"tier": "hot"
+		},
+		"zn8m4ng": {
+			"operonId": "zn8m4ng",
+			"description": "Review your project workflow pipeline",
+			"checkbox": "open",
+			"fieldValues": {
+				"operonId": "zn8m4ng",
+				"status": "Project.Planned",
+				"priority": "A",
+				"taskIcon": "settings-2",
+				"taskColor": "2563eb",
+				"dateScheduled": "2026-07-15",
+				"estimate": "2400",
+				"note": "Makes statuses match the way you think about work from planning through active work and completion.",
+				"parentTask": "qg2t2tx",
+				"datetimeCreated": "2026-07-14T12:08:17",
+				"datetimeModified": "2026-07-14T12:08:17"
+			},
+			"tags": [
+				"operon-demo",
+				"settings"
+			],
+			"primary": {
+				"filePath": "Operon/Demo Workspace/Set Up Your Obsidian Vault with Operon.md",
+				"lineNumber": 22,
+				"format": "inline"
+			},
+			"datetimeModified": "2026-07-14T12:08:17",
+			"tier": "hot"
+		},
+		"ta21a77": {
+			"operonId": "ta21a77",
+			"description": "Set where new inline tasks should be created",
+			"checkbox": "open",
+			"fieldValues": {
+				"operonId": "ta21a77",
+				"status": "Project.Planned",
+				"priority": "B",
+				"taskIcon": "settings-2",
+				"taskColor": "2563eb",
+				"dateScheduled": "2026-07-15",
+				"estimate": "1200",
+				"note": "Gives quick tasks a predictable home so small commitments do not scatter across random notes.",
+				"parentTask": "qg2t2tx",
+				"datetimeCreated": "2026-07-14T12:08:17",
+				"datetimeModified": "2026-07-14T12:08:17"
+			},
+			"tags": [
+				"operon-demo",
+				"settings"
+			],
+			"primary": {
+				"filePath": "Operon/Demo Workspace/Set Up Your Obsidian Vault with Operon.md",
+				"lineNumber": 23,
+				"format": "inline"
+			},
+			"datetimeModified": "2026-07-14T12:08:17",
+			"tier": "hot"
+		},
+		"gc9gfty": {
+			"operonId": "gc9gfty",
+			"description": "Set where new file tasks should be created",
+			"checkbox": "open",
+			"fieldValues": {
+				"operonId": "gc9gfty",
+				"status": "Project.Planned",
+				"priority": "B",
+				"taskIcon": "settings-2",
+				"taskColor": "2563eb",
+				"dateScheduled": "2026-07-15",
+				"estimate": "1200",
+				"note": "Gives larger outcomes a stable folder before they become full working notes with context and subtasks.",
+				"parentTask": "qg2t2tx",
+				"datetimeCreated": "2026-07-14T12:08:17",
+				"datetimeModified": "2026-07-14T12:08:17"
+			},
+			"tags": [
+				"operon-demo",
+				"settings"
+			],
+			"primary": {
+				"filePath": "Operon/Demo Workspace/Set Up Your Obsidian Vault with Operon.md",
+				"lineNumber": 24,
+				"format": "inline"
+			},
+			"datetimeModified": "2026-07-14T12:08:17",
+			"tier": "hot"
+		},
+		"em0p2lt": {
+			"operonId": "em0p2lt",
+			"description": "Decide which task fields should stay visible",
+			"checkbox": "open",
+			"fieldValues": {
+				"operonId": "em0p2lt",
+				"status": "Project.Planned",
+				"priority": "B",
+				"taskIcon": "settings-2",
+				"taskColor": "2563eb",
+				"dateScheduled": "2026-07-15",
+				"estimate": "1800",
+				"note": "Keeps task surfaces readable while preserving the metadata that actually helps you decide what to do.",
+				"parentTask": "qg2t2tx",
+				"datetimeCreated": "2026-07-14T12:08:17",
+				"datetimeModified": "2026-07-14T12:08:17"
+			},
+			"tags": [
+				"operon-demo",
+				"settings"
+			],
+			"primary": {
+				"filePath": "Operon/Demo Workspace/Set Up Your Obsidian Vault with Operon.md",
+				"lineNumber": 25,
+				"format": "inline"
+			},
+			"datetimeModified": "2026-07-14T12:08:17",
+			"tier": "hot"
+		},
+		"dt0s583": {
+			"operonId": "dt0s583",
+			"description": "Day 2 - Build Core Filters",
+			"checkbox": "open",
+			"fieldValues": {
+				"operonId": "dt0s583",
+				"status": "Project.Planned",
+				"priority": "A",
+				"dateScheduled": "2026-07-16",
+				"totalEstimate": "12900",
+				"parentTask": "bui5bdb",
+				"progress": "0",
+				"directSubtaskCount": "6",
+				"directDoneSubtaskCount": "0",
+				"directOpenSubtaskCount": "6",
+				"treeDescendantCount": "6",
+				"treeDoneDescendantCount": "0",
+				"treeOpenDescendantCount": "6",
+				"taskIcon": "funnel",
+				"taskColor": "7c3aed",
+				"note": "Creates reusable views before Calendar and Kanban work so the user knows which tasks matter first.",
+				"datetimeCreated": "2026-07-14T12:08:17",
+				"datetimeModified": "2026-07-14T12:08:19"
+			},
+			"tags": [
+				"operon-demo",
+				"vault-setup"
+			],
+			"primary": {
+				"filePath": "Operon/Demo Workspace/Set Up Your Obsidian Vault with Operon.md",
+				"lineNumber": 29,
+				"format": "inline"
+			},
+			"datetimeModified": "2026-07-14T12:08:19",
+			"tier": "hot"
+		},
+		"3ffnwip": {
+			"operonId": "3ffnwip",
+			"description": "Create a daily focus filter",
+			"checkbox": "open",
+			"fieldValues": {
+				"operonId": "3ffnwip",
+				"status": "Project.Planned",
+				"priority": "A",
+				"taskIcon": "funnel",
+				"taskColor": "7c3aed",
+				"dateScheduled": "2026-07-16",
+				"estimate": "2400",
+				"note": "Shows only the work that matters today and reduces dashboard noise before the day begins.",
+				"parentTask": "dt0s583",
+				"datetimeCreated": "2026-07-14T12:08:17",
+				"datetimeModified": "2026-07-14T12:08:17"
+			},
+			"tags": [
+				"operon-demo",
+				"filters"
+			],
+			"primary": {
+				"filePath": "Operon/Demo Workspace/Set Up Your Obsidian Vault with Operon.md",
+				"lineNumber": 30,
+				"format": "inline"
+			},
+			"datetimeModified": "2026-07-14T12:08:17",
+			"tier": "hot"
+		},
+		"idzw9r2": {
+			"operonId": "idzw9r2",
+			"description": "Create a weekly planning filter",
+			"checkbox": "open",
+			"fieldValues": {
+				"operonId": "idzw9r2",
+				"status": "Project.Planned",
+				"priority": "A",
+				"taskIcon": "funnel",
+				"taskColor": "7c3aed",
+				"dateScheduled": "2026-07-16",
+				"estimate": "2400",
+				"note": "Gives a practical view for deciding what can realistically fit inside the current week.",
+				"parentTask": "dt0s583",
+				"datetimeCreated": "2026-07-14T12:08:17",
+				"datetimeModified": "2026-07-14T12:08:17"
+			},
+			"tags": [
+				"operon-demo",
+				"filters"
+			],
+			"primary": {
+				"filePath": "Operon/Demo Workspace/Set Up Your Obsidian Vault with Operon.md",
+				"lineNumber": 31,
+				"format": "inline"
+			},
+			"datetimeModified": "2026-07-14T12:08:17",
+			"tier": "hot"
+		},
+		"jicdgin": {
+			"operonId": "jicdgin",
+			"description": "Create an overdue review filter for the last 3 or 7 days",
+			"checkbox": "open",
+			"fieldValues": {
+				"operonId": "jicdgin",
+				"status": "Project.Planned",
+				"priority": "A",
+				"taskIcon": "funnel",
+				"taskColor": "7c3aed",
+				"dateScheduled": "2026-07-16",
+				"estimate": "1800",
+				"note": "Catches slipped commitments before they disappear into old notes or become silent backlog.",
+				"parentTask": "dt0s583",
+				"datetimeCreated": "2026-07-14T12:08:17",
+				"datetimeModified": "2026-07-14T12:08:17"
+			},
+			"tags": [
+				"operon-demo",
+				"filters"
+			],
+			"primary": {
+				"filePath": "Operon/Demo Workspace/Set Up Your Obsidian Vault with Operon.md",
+				"lineNumber": 32,
+				"format": "inline"
+			},
+			"datetimeModified": "2026-07-14T12:08:17",
+			"tier": "hot"
+		},
+		"m2gi815": {
+			"operonId": "m2gi815",
+			"description": "Create an active projects filter",
+			"checkbox": "open",
+			"fieldValues": {
+				"operonId": "m2gi815",
+				"status": "Project.Planned",
+				"priority": "B",
+				"taskIcon": "funnel",
+				"taskColor": "7c3aed",
+				"dateScheduled": "2026-07-16",
+				"estimate": "1800",
+				"note": "Makes ongoing project work visible without manually browsing folders or remembering every note path.",
+				"parentTask": "dt0s583",
+				"datetimeCreated": "2026-07-14T12:08:17",
+				"datetimeModified": "2026-07-14T12:08:17"
+			},
+			"tags": [
+				"operon-demo",
+				"filters"
+			],
+			"primary": {
+				"filePath": "Operon/Demo Workspace/Set Up Your Obsidian Vault with Operon.md",
+				"lineNumber": 33,
+				"format": "inline"
+			},
+			"datetimeModified": "2026-07-14T12:08:17",
+			"tier": "hot"
+		},
+		"d5qyfon": {
+			"operonId": "d5qyfon",
+			"description": "Create a high-priority open tasks filter",
+			"checkbox": "open",
+			"fieldValues": {
+				"operonId": "d5qyfon",
+				"status": "Project.Planned",
+				"priority": "B",
+				"taskIcon": "funnel",
+				"taskColor": "7c3aed",
+				"dateScheduled": "2026-07-16",
+				"estimate": "1800",
+				"note": "Helps important unfinished work surface before it becomes buried under easier tasks.",
+				"parentTask": "dt0s583",
+				"datetimeCreated": "2026-07-14T12:08:17",
+				"datetimeModified": "2026-07-14T12:08:17"
+			},
+			"tags": [
+				"operon-demo",
+				"filters"
+			],
+			"primary": {
+				"filePath": "Operon/Demo Workspace/Set Up Your Obsidian Vault with Operon.md",
+				"lineNumber": 34,
+				"format": "inline"
+			},
+			"datetimeModified": "2026-07-14T12:08:17",
+			"tier": "hot"
+		},
+		"nqmmi1b": {
+			"operonId": "nqmmi1b",
+			"description": "Advanced - create an Eisenhower matrix filter with contexts or tags",
+			"checkbox": "open",
+			"fieldValues": {
+				"operonId": "nqmmi1b",
+				"status": "Project.Planned",
+				"priority": "C",
+				"taskIcon": "funnel",
+				"taskColor": "7c3aed",
+				"dateScheduled": "2026-07-16",
+				"estimate": "2700",
+				"note": "Separates urgent, important, delegated, and low-value work so attention follows decision quality instead of list order.",
+				"parentTask": "dt0s583",
+				"datetimeCreated": "2026-07-14T12:08:17",
+				"datetimeModified": "2026-07-14T12:08:17"
+			},
+			"tags": [
+				"operon-demo",
+				"filters",
+				"advanced"
+			],
+			"primary": {
+				"filePath": "Operon/Demo Workspace/Set Up Your Obsidian Vault with Operon.md",
+				"lineNumber": 35,
+				"format": "inline"
+			},
+			"datetimeModified": "2026-07-14T12:08:17",
+			"tier": "hot"
+		},
+		"bco2vgu": {
+			"operonId": "bco2vgu",
+			"description": "Day 3 - Connect Projects To Work",
+			"checkbox": "open",
+			"fieldValues": {
+				"operonId": "bco2vgu",
+				"status": "Project.Planned",
+				"priority": "B",
+				"dateScheduled": "2026-07-17",
+				"totalEstimate": "11700",
+				"parentTask": "bui5bdb",
+				"progress": "0",
+				"directSubtaskCount": "6",
+				"directDoneSubtaskCount": "0",
+				"directOpenSubtaskCount": "6",
+				"treeDescendantCount": "6",
+				"treeDoneDescendantCount": "0",
+				"treeOpenDescendantCount": "6",
+				"taskIcon": "folder-tree",
+				"taskColor": "0f766e",
+				"note": "Turns loose actions into project-aware work that can be found, filtered, and reviewed in context.",
+				"datetimeCreated": "2026-07-14T12:08:17",
+				"datetimeModified": "2026-07-14T12:08:19"
+			},
+			"tags": [
+				"operon-demo",
+				"vault-setup"
+			],
+			"primary": {
+				"filePath": "Operon/Demo Workspace/Set Up Your Obsidian Vault with Operon.md",
+				"lineNumber": 39,
+				"format": "inline"
+			},
+			"datetimeModified": "2026-07-14T12:08:19",
+			"tier": "hot"
+		},
+		"sxawf2x": {
+			"operonId": "sxawf2x",
+			"description": "Identify one active outcome that deserves a project file task",
+			"checkbox": "open",
+			"fieldValues": {
+				"operonId": "sxawf2x",
+				"status": "Project.Planned",
+				"priority": "A",
+				"taskIcon": "folder-tree",
+				"taskColor": "0f766e",
+				"dateScheduled": "2026-07-17",
+				"estimate": "1800",
+				"note": "Helps distinguish a real project from a small action so larger work gets enough context.",
+				"parentTask": "bco2vgu",
+				"datetimeCreated": "2026-07-14T12:08:17",
+				"datetimeModified": "2026-07-14T12:08:17"
+			},
+			"tags": [
+				"operon-demo",
+				"projects"
+			],
+			"primary": {
+				"filePath": "Operon/Demo Workspace/Set Up Your Obsidian Vault with Operon.md",
+				"lineNumber": 40,
+				"format": "inline"
+			},
+			"datetimeModified": "2026-07-14T12:08:17",
+			"tier": "hot"
+		},
+		"saeaded": {
+			"operonId": "saeaded",
+			"description": "Create a project file task for that outcome",
+			"checkbox": "open",
+			"fieldValues": {
+				"operonId": "saeaded",
+				"status": "Project.Planned",
+				"priority": "A",
+				"taskIcon": "folder-tree",
+				"taskColor": "0f766e",
+				"dateScheduled": "2026-07-17",
+				"estimate": "2400",
+				"note": "Gives the outcome a dedicated note where decisions, context, and child tasks can live together.",
+				"parentTask": "bco2vgu",
+				"datetimeCreated": "2026-07-14T12:08:17",
+				"datetimeModified": "2026-07-14T12:08:17"
+			},
+			"tags": [
+				"operon-demo",
+				"projects"
+			],
+			"primary": {
+				"filePath": "Operon/Demo Workspace/Set Up Your Obsidian Vault with Operon.md",
+				"lineNumber": 41,
+				"format": "inline"
+			},
+			"datetimeModified": "2026-07-14T12:08:17",
+			"tier": "hot"
+		},
+		"bdezwyz": {
+			"operonId": "bdezwyz",
+			"description": "Add project-specific tasks under that project",
+			"checkbox": "open",
+			"fieldValues": {
+				"operonId": "bdezwyz",
+				"status": "Project.Planned",
+				"priority": "B",
+				"taskIcon": "folder-tree",
+				"taskColor": "0f766e",
+				"dateScheduled": "2026-07-17",
+				"estimate": "2700",
+				"note": "Keeps related actions connected to the outcome they support instead of scattering them through the vault.",
+				"parentTask": "bco2vgu",
+				"datetimeCreated": "2026-07-14T12:08:17",
+				"datetimeModified": "2026-07-14T12:08:17"
+			},
+			"tags": [
+				"operon-demo",
+				"projects"
+			],
+			"primary": {
+				"filePath": "Operon/Demo Workspace/Set Up Your Obsidian Vault with Operon.md",
+				"lineNumber": 42,
+				"format": "inline"
+			},
+			"datetimeModified": "2026-07-14T12:08:17",
+			"tier": "hot"
+		},
+		"2y0zajg": {
+			"operonId": "2y0zajg",
+			"description": "Practice finding existing work with Task Finder",
+			"checkbox": "open",
+			"fieldValues": {
+				"operonId": "2y0zajg",
+				"status": "Project.Planned",
+				"priority": "B",
+				"taskIcon": "folder-tree",
+				"taskColor": "0f766e",
+				"dateScheduled": "2026-07-17",
+				"estimate": "1800",
+				"note": "Builds confidence that any task can be found quickly without remembering where it was written.",
+				"parentTask": "bco2vgu",
+				"datetimeCreated": "2026-07-14T12:08:17",
+				"datetimeModified": "2026-07-14T12:08:17"
+			},
+			"tags": [
+				"operon-demo",
+				"task-finder"
+			],
+			"primary": {
+				"filePath": "Operon/Demo Workspace/Set Up Your Obsidian Vault with Operon.md",
+				"lineNumber": 43,
+				"format": "inline"
+			},
+			"datetimeModified": "2026-07-14T12:08:17",
+			"tier": "hot"
+		},
+		"g80q0jb": {
+			"operonId": "g80q0jb",
+			"description": "Create a project filter for the active outcome",
+			"checkbox": "open",
+			"fieldValues": {
+				"operonId": "g80q0jb",
+				"status": "Project.Planned",
+				"priority": "B",
+				"taskIcon": "folder-tree",
+				"taskColor": "0f766e",
+				"dateScheduled": "2026-07-17",
+				"estimate": "1800",
+				"note": "Gives the project its own reusable command center instead of relying on one global task list.",
+				"parentTask": "bco2vgu",
+				"datetimeCreated": "2026-07-14T12:08:17",
+				"datetimeModified": "2026-07-14T12:08:17"
+			},
+			"tags": [
+				"operon-demo",
+				"filters"
+			],
+			"primary": {
+				"filePath": "Operon/Demo Workspace/Set Up Your Obsidian Vault with Operon.md",
+				"lineNumber": 44,
+				"format": "inline"
+			},
+			"datetimeModified": "2026-07-14T12:08:17",
+			"tier": "hot"
+		},
+		"e8n9syy": {
+			"operonId": "e8n9syy",
+			"description": "Embed the project filter inside the project note",
+			"checkbox": "open",
+			"fieldValues": {
+				"operonId": "e8n9syy",
+				"status": "Project.Planned",
+				"priority": "C",
+				"taskIcon": "folder-tree",
+				"taskColor": "0f766e",
+				"dateScheduled": "2026-07-17",
+				"estimate": "1200",
+				"note": "Lets a project note become both the source of context and a live view of the work it owns.",
+				"parentTask": "bco2vgu",
+				"datetimeCreated": "2026-07-14T12:08:17",
+				"datetimeModified": "2026-07-14T12:08:17"
+			},
+			"tags": [
+				"operon-demo",
+				"filters"
+			],
+			"primary": {
+				"filePath": "Operon/Demo Workspace/Set Up Your Obsidian Vault with Operon.md",
+				"lineNumber": 45,
+				"format": "inline"
+			},
+			"datetimeModified": "2026-07-14T12:08:17",
+			"tier": "hot"
+		},
+		"fzqn0nb": {
+			"operonId": "fzqn0nb",
+			"description": "Day 4 - Plan Work Across Time",
+			"checkbox": "open",
+			"fieldValues": {
+				"operonId": "fzqn0nb",
+				"status": "Project.Planned",
+				"priority": "A",
+				"dateScheduled": "2026-07-18",
+				"totalEstimate": "11700",
+				"parentTask": "bui5bdb",
+				"progress": "0",
+				"directSubtaskCount": "5",
+				"directDoneSubtaskCount": "0",
+				"directOpenSubtaskCount": "5",
+				"treeDescendantCount": "5",
+				"treeDoneDescendantCount": "0",
+				"treeOpenDescendantCount": "5",
+				"taskIcon": "calendar-days",
+				"taskColor": "ea580c",
+				"note": "Turns filtered work into a realistic weekly plan without filling the Calendar with vague intentions.",
+				"datetimeCreated": "2026-07-14T12:08:17",
+				"datetimeModified": "2026-07-14T12:08:19"
+			},
+			"tags": [
+				"operon-demo",
+				"vault-setup"
+			],
+			"primary": {
+				"filePath": "Operon/Demo Workspace/Set Up Your Obsidian Vault with Operon.md",
+				"lineNumber": 49,
+				"format": "inline"
+			},
+			"datetimeModified": "2026-07-14T12:08:19",
+			"tier": "hot"
+		},
+		"p2aiva9": {
+			"operonId": "p2aiva9",
+			"description": "Have you checked your pinned focus tasks today",
+			"checkbox": "open",
+			"fieldValues": {
+				"operonId": "p2aiva9",
+				"status": "Project.Planned",
+				"priority": "A",
+				"taskIcon": "calendar-days",
+				"taskColor": "ea580c",
+				"dateScheduled": "2026-07-18",
+				"estimate": "900",
+				"note": "Keeps the few tasks that deserve attention visible while you move through notes, filters, and planning views.",
+				"parentTask": "fzqn0nb",
+				"datetimeCreated": "2026-07-14T12:08:17",
+				"datetimeModified": "2026-07-14T12:08:17"
+			},
+			"tags": [
+				"operon-demo",
+				"pinned"
+			],
+			"primary": {
+				"filePath": "Operon/Demo Workspace/Set Up Your Obsidian Vault with Operon.md",
+				"lineNumber": 50,
+				"format": "inline"
+			},
+			"datetimeModified": "2026-07-14T12:08:17",
+			"tier": "hot"
+		},
+		"sxt6flq": {
+			"operonId": "sxt6flq",
+			"description": "Choose which tasks deserve calendar time this week",
+			"checkbox": "open",
+			"fieldValues": {
+				"operonId": "sxt6flq",
+				"status": "Project.Planned",
+				"priority": "A",
+				"taskIcon": "calendar-days",
+				"taskColor": "ea580c",
+				"dateScheduled": "2026-07-18",
+				"estimate": "1800",
+				"note": "Protects the Calendar from clutter by scheduling only the work that benefits from time commitment.",
+				"parentTask": "fzqn0nb",
+				"datetimeCreated": "2026-07-14T12:08:17",
+				"datetimeModified": "2026-07-14T12:08:17"
+			},
+			"tags": [
+				"operon-demo",
+				"calendar"
+			],
+			"primary": {
+				"filePath": "Operon/Demo Workspace/Set Up Your Obsidian Vault with Operon.md",
+				"lineNumber": 51,
+				"format": "inline"
+			},
+			"datetimeModified": "2026-07-14T12:08:17",
+			"tier": "hot"
+		},
+		"4eyp4he": {
+			"operonId": "4eyp4he",
+			"description": "Reserve focus blocks for the highest-value tasks",
+			"checkbox": "open",
+			"fieldValues": {
+				"operonId": "4eyp4he",
+				"status": "Project.Planned",
+				"priority": "A",
+				"taskIcon": "calendar-days",
+				"taskColor": "ea580c",
+				"dateScheduled": "2026-07-18",
+				"datetimeStart": "2026-07-18T09:00:00",
+				"datetimeEnd": "2026-07-18T10:30:00",
+				"estimate": "5400",
+				"note": "Turns important work into protected time instead of letting it compete with a loose list.",
+				"parentTask": "fzqn0nb",
+				"datetimeCreated": "2026-07-14T12:08:17",
+				"datetimeModified": "2026-07-14T12:08:17"
+			},
+			"tags": [
+				"operon-demo",
+				"calendar"
+			],
+			"primary": {
+				"filePath": "Operon/Demo Workspace/Set Up Your Obsidian Vault with Operon.md",
+				"lineNumber": 52,
+				"format": "inline"
+			},
+			"datetimeModified": "2026-07-14T12:08:17",
+			"tier": "hot"
+		},
+		"upbc24k": {
+			"operonId": "upbc24k",
+			"description": "Review unscheduled work after planning the week",
+			"checkbox": "open",
+			"fieldValues": {
+				"operonId": "upbc24k",
+				"status": "Project.Planned",
+				"priority": "B",
+				"taskIcon": "calendar-days",
+				"taskColor": "ea580c",
+				"dateScheduled": "2026-07-18",
+				"estimate": "1800",
+				"note": "Keeps lower-priority work visible without forcing every task onto the Calendar.",
+				"parentTask": "fzqn0nb",
+				"datetimeCreated": "2026-07-14T12:08:17",
+				"datetimeModified": "2026-07-14T12:08:17"
+			},
+			"tags": [
+				"operon-demo",
+				"calendar"
+			],
+			"primary": {
+				"filePath": "Operon/Demo Workspace/Set Up Your Obsidian Vault with Operon.md",
+				"lineNumber": 53,
+				"format": "inline"
+			},
+			"datetimeModified": "2026-07-14T12:08:17",
+			"tier": "hot"
+		},
+		"s23wbms": {
+			"operonId": "s23wbms",
+			"description": "Adjust the weekly plan after seeing available capacity",
+			"checkbox": "open",
+			"fieldValues": {
+				"operonId": "s23wbms",
+				"status": "Project.Planned",
+				"priority": "B",
+				"taskIcon": "calendar-days",
+				"taskColor": "ea580c",
+				"dateScheduled": "2026-07-18",
+				"estimate": "1800",
+				"note": "Helps you plan realistically instead of overcommitting and carrying silent failure into the next day.",
+				"parentTask": "fzqn0nb",
+				"datetimeCreated": "2026-07-14T12:08:17",
+				"datetimeModified": "2026-07-14T12:08:17"
+			},
+			"tags": [
+				"operon-demo",
+				"calendar"
+			],
+			"primary": {
+				"filePath": "Operon/Demo Workspace/Set Up Your Obsidian Vault with Operon.md",
+				"lineNumber": 54,
+				"format": "inline"
+			},
+			"datetimeModified": "2026-07-14T12:08:17",
+			"tier": "hot"
+		},
+		"2vgf4ge": {
+			"operonId": "2vgf4ge",
+			"description": "Day 5 - Operate From Kanban",
+			"checkbox": "open",
+			"fieldValues": {
+				"operonId": "2vgf4ge",
+				"status": "Project.Planned",
+				"priority": "B",
+				"dateScheduled": "2026-07-19",
+				"totalEstimate": "7800",
+				"parentTask": "bui5bdb",
+				"progress": "0",
+				"directSubtaskCount": "4",
+				"directDoneSubtaskCount": "0",
+				"directOpenSubtaskCount": "4",
+				"treeDescendantCount": "4",
+				"treeDoneDescendantCount": "0",
+				"treeOpenDescendantCount": "4",
+				"taskIcon": "columns-3",
+				"taskColor": "db2777",
+				"note": "Turns project work into a board that shows movement, friction, and decisions across the week.",
+				"datetimeCreated": "2026-07-14T12:08:17",
+				"datetimeModified": "2026-07-14T12:08:19"
+			},
+			"tags": [
+				"operon-demo",
+				"vault-setup"
+			],
+			"primary": {
+				"filePath": "Operon/Demo Workspace/Set Up Your Obsidian Vault with Operon.md",
+				"lineNumber": 58,
+				"format": "inline"
+			},
+			"datetimeModified": "2026-07-14T12:08:19",
+			"tier": "hot"
+		},
+		"crrlnxx": {
+			"operonId": "crrlnxx",
+			"description": "Create a Kanban view for active project work",
+			"checkbox": "open",
+			"fieldValues": {
+				"operonId": "crrlnxx",
+				"status": "Project.Planned",
+				"priority": "B",
+				"taskIcon": "columns-3",
+				"taskColor": "db2777",
+				"dateScheduled": "2026-07-19",
+				"estimate": "2400",
+				"note": "Shows how work moves through statuses across the vault without requiring a separate board system.",
+				"parentTask": "2vgf4ge",
+				"datetimeCreated": "2026-07-14T12:08:17",
+				"datetimeModified": "2026-07-14T12:08:17"
+			},
+			"tags": [
+				"operon-demo",
+				"kanban"
+			],
+			"primary": {
+				"filePath": "Operon/Demo Workspace/Set Up Your Obsidian Vault with Operon.md",
+				"lineNumber": 59,
+				"format": "inline"
+			},
+			"datetimeModified": "2026-07-14T12:08:17",
+			"tier": "hot"
+		},
+		"odzx6bd": {
+			"operonId": "odzx6bd",
+			"description": "Review active paused and blocked work separately",
+			"checkbox": "open",
+			"fieldValues": {
+				"operonId": "odzx6bd",
+				"status": "Project.Planned",
+				"priority": "A",
+				"taskIcon": "columns-3",
+				"taskColor": "db2777",
+				"dateScheduled": "2026-07-19",
+				"estimate": "1800",
+				"note": "Makes stalled work easier to notice before it quietly becomes forgotten work.",
+				"parentTask": "2vgf4ge",
+				"datetimeCreated": "2026-07-14T12:08:17",
+				"datetimeModified": "2026-07-14T12:08:17"
+			},
+			"tags": [
+				"operon-demo",
+				"kanban"
+			],
+			"primary": {
+				"filePath": "Operon/Demo Workspace/Set Up Your Obsidian Vault with Operon.md",
+				"lineNumber": 60,
+				"format": "inline"
+			},
+			"datetimeModified": "2026-07-14T12:08:17",
+			"tier": "hot"
+		},
+		"vk5l5zm": {
+			"operonId": "vk5l5zm",
+			"description": "Use statuses to keep project state honest",
+			"checkbox": "open",
+			"fieldValues": {
+				"operonId": "vk5l5zm",
+				"status": "Project.Planned",
+				"priority": "B",
+				"taskIcon": "columns-3",
+				"taskColor": "db2777",
+				"dateScheduled": "2026-07-19",
+				"estimate": "1800",
+				"note": "Keeps filters, Kanban, Calendar, and project progress aligned around the same source of truth.",
+				"parentTask": "2vgf4ge",
+				"datetimeCreated": "2026-07-14T12:08:17",
+				"datetimeModified": "2026-07-14T12:08:17"
+			},
+			"tags": [
+				"operon-demo",
+				"kanban"
+			],
+			"primary": {
+				"filePath": "Operon/Demo Workspace/Set Up Your Obsidian Vault with Operon.md",
+				"lineNumber": 61,
+				"format": "inline"
+			},
+			"datetimeModified": "2026-07-14T12:08:17",
+			"tier": "hot"
+		},
+		"e7rr9vp": {
+			"operonId": "e7rr9vp",
+			"description": "Decide what should move forward before the week ends",
+			"checkbox": "open",
+			"fieldValues": {
+				"operonId": "e7rr9vp",
+				"status": "Project.Planned",
+				"priority": "B",
+				"taskIcon": "columns-3",
+				"taskColor": "db2777",
+				"dateScheduled": "2026-07-19",
+				"estimate": "1800",
+				"note": "Turns the board into a planning surface where the next useful action becomes clear.",
+				"parentTask": "2vgf4ge",
+				"datetimeCreated": "2026-07-14T12:08:17",
+				"datetimeModified": "2026-07-14T12:08:17"
+			},
+			"tags": [
+				"operon-demo",
+				"kanban"
+			],
+			"primary": {
+				"filePath": "Operon/Demo Workspace/Set Up Your Obsidian Vault with Operon.md",
+				"lineNumber": 62,
+				"format": "inline"
+			},
+			"datetimeModified": "2026-07-14T12:08:17",
+			"tier": "hot"
+		},
+		"v0a5bww": {
+			"operonId": "v0a5bww",
+			"description": "Day 6 - Add Rhythm",
+			"checkbox": "open",
+			"fieldValues": {
+				"operonId": "v0a5bww",
+				"status": "Project.Planned",
+				"priority": "B",
+				"dateScheduled": "2026-07-20",
+				"totalEstimate": "6600",
+				"parentTask": "bui5bdb",
+				"progress": "0",
+				"directSubtaskCount": "4",
+				"directDoneSubtaskCount": "0",
+				"directOpenSubtaskCount": "4",
+				"treeDescendantCount": "4",
+				"treeDoneDescendantCount": "0",
+				"treeOpenDescendantCount": "4",
+				"taskIcon": "repeat-2",
+				"taskColor": "0891b2",
+				"note": "Converts one-time setup work into repeatable maintenance habits that keep the system useful.",
+				"datetimeCreated": "2026-07-14T12:08:17",
+				"datetimeModified": "2026-07-14T12:08:19"
+			},
+			"tags": [
+				"operon-demo",
+				"vault-setup"
+			],
+			"primary": {
+				"filePath": "Operon/Demo Workspace/Set Up Your Obsidian Vault with Operon.md",
+				"lineNumber": 66,
+				"format": "inline"
+			},
+			"datetimeModified": "2026-07-14T12:08:19",
+			"tier": "hot"
+		},
+		"7gcfkdi": {
+			"operonId": "7gcfkdi",
+			"description": "Create a recurring weekly review task",
+			"checkbox": "open",
+			"fieldValues": {
+				"operonId": "7gcfkdi",
+				"status": "Project.Planned",
+				"priority": "A",
+				"taskIcon": "repeat-2",
+				"taskColor": "0891b2",
+				"dateScheduled": "2026-07-20",
+				"estimate": "1800",
+				"repeat": "mode=schedule|freq=week|interval=1",
+				"note": "Makes system maintenance repeatable so the vault does not depend on memory or motivation.",
+				"parentTask": "v0a5bww",
+				"datetimeCreated": "2026-07-14T12:08:17",
+				"datetimeModified": "2026-07-14T12:08:17"
+			},
+			"tags": [
+				"operon-demo",
+				"recurring"
+			],
+			"primary": {
+				"filePath": "Operon/Demo Workspace/Set Up Your Obsidian Vault with Operon.md",
+				"lineNumber": 67,
+				"format": "inline"
+			},
+			"datetimeModified": "2026-07-14T12:08:17",
+			"tier": "hot"
+		},
+		"uzjjm1e": {
+			"operonId": "uzjjm1e",
+			"description": "Create a recurring inbox cleanup task",
+			"checkbox": "open",
+			"fieldValues": {
+				"operonId": "uzjjm1e",
+				"status": "Project.Planned",
+				"priority": "B",
+				"taskIcon": "repeat-2",
+				"taskColor": "0891b2",
+				"dateScheduled": "2026-07-20",
+				"estimate": "1200",
+				"repeat": "mode=schedule|freq=week|interval=1",
+				"note": "Keeps capture surfaces from becoming a second forgotten backlog.",
+				"parentTask": "v0a5bww",
+				"datetimeCreated": "2026-07-14T12:08:17",
+				"datetimeModified": "2026-07-14T12:08:17"
+			},
+			"tags": [
+				"operon-demo",
+				"recurring"
+			],
+			"primary": {
+				"filePath": "Operon/Demo Workspace/Set Up Your Obsidian Vault with Operon.md",
+				"lineNumber": 68,
+				"format": "inline"
+			},
+			"datetimeModified": "2026-07-14T12:08:17",
+			"tier": "hot"
+		},
+		"ljoz60i": {
+			"operonId": "ljoz60i",
+			"description": "Review tasks missing priority, date, or parent",
+			"checkbox": "open",
+			"fieldValues": {
+				"operonId": "ljoz60i",
+				"status": "Project.Planned",
+				"priority": "B",
+				"taskIcon": "repeat-2",
+				"taskColor": "0891b2",
+				"dateScheduled": "2026-07-20",
+				"estimate": "1800",
+				"note": "Improves task quality so filters, Calendar, and project views stay useful over time.",
+				"parentTask": "v0a5bww",
+				"datetimeCreated": "2026-07-14T12:08:17",
+				"datetimeModified": "2026-07-14T12:08:17"
+			},
+			"tags": [
+				"operon-demo",
+				"review"
+			],
+			"primary": {
+				"filePath": "Operon/Demo Workspace/Set Up Your Obsidian Vault with Operon.md",
+				"lineNumber": 69,
+				"format": "inline"
+			},
+			"datetimeModified": "2026-07-14T12:08:17",
+			"tier": "hot"
+		},
+		"ltqfqus": {
+			"operonId": "ltqfqus",
+			"description": "Capture follow-up work from this setup project",
+			"checkbox": "open",
+			"fieldValues": {
+				"operonId": "ltqfqus",
+				"status": "Project.Planned",
+				"priority": "B",
+				"taskIcon": "repeat-2",
+				"taskColor": "0891b2",
+				"dateScheduled": "2026-07-20",
+				"estimate": "1800",
+				"note": "Prevents setup insights from disappearing after the first pass and turns them into next actions.",
+				"parentTask": "v0a5bww",
+				"datetimeCreated": "2026-07-14T12:08:17",
+				"datetimeModified": "2026-07-14T12:08:17"
+			},
+			"tags": [
+				"operon-demo",
+				"review"
+			],
+			"primary": {
+				"filePath": "Operon/Demo Workspace/Set Up Your Obsidian Vault with Operon.md",
+				"lineNumber": 70,
+				"format": "inline"
+			},
+			"datetimeModified": "2026-07-14T12:08:17",
+			"tier": "hot"
+		},
+		"vi8fh1k": {
+			"operonId": "vi8fh1k",
+			"description": "Day 7 - Review The System",
+			"checkbox": "open",
+			"fieldValues": {
+				"operonId": "vi8fh1k",
+				"status": "Project.Planned",
+				"priority": "B",
+				"taskIcon": "badge-check",
+				"taskColor": "64748b",
+				"dateScheduled": "2026-07-21",
+				"note": "Closes the adaptation week by turning what worked into a simple operating rhythm for the next week.",
+				"parentTask": "bui5bdb",
+				"datetimeCreated": "2026-07-14T12:08:17",
+				"datetimeModified": "2026-07-14T12:08:20",
+				"progress": "0",
+				"directSubtaskCount": "5",
+				"directDoneSubtaskCount": "0",
+				"directOpenSubtaskCount": "5",
+				"treeDescendantCount": "5",
+				"treeDoneDescendantCount": "0",
+				"treeOpenDescendantCount": "5",
+				"totalEstimate": "6600"
+			},
+			"tags": [
+				"operon-demo",
+				"vault-setup"
+			],
+			"primary": {
+				"filePath": "Operon/Demo Workspace/Set Up Your Obsidian Vault with Operon.md",
+				"lineNumber": 74,
+				"format": "inline"
+			},
+			"datetimeModified": "2026-07-14T12:08:20",
+			"tier": "hot"
+		},
+		"hoxds0s": {
+			"operonId": "hoxds0s",
+			"description": "Review what changed in the vault this week",
+			"checkbox": "open",
+			"fieldValues": {
+				"operonId": "hoxds0s",
+				"status": "Project.Planned",
+				"priority": "A",
+				"taskIcon": "badge-check",
+				"taskColor": "64748b",
+				"dateScheduled": "2026-07-21",
+				"estimate": "1800",
+				"note": "Makes the value of the Operon setup visible as a concrete before and after instead of an abstract system tweak.",
+				"parentTask": "vi8fh1k",
+				"datetimeCreated": "2026-07-14T12:08:17",
+				"datetimeModified": "2026-07-14T12:08:17"
+			},
+			"tags": [
+				"operon-demo",
+				"review"
+			],
+			"primary": {
+				"filePath": "Operon/Demo Workspace/Set Up Your Obsidian Vault with Operon.md",
+				"lineNumber": 75,
+				"format": "inline"
+			},
+			"datetimeModified": "2026-07-14T12:08:17",
+			"tier": "hot"
+		},
+		"8ivau6r": {
+			"operonId": "8ivau6r",
+			"description": "Move unfinished setup work into next week",
+			"checkbox": "open",
+			"fieldValues": {
+				"operonId": "8ivau6r",
+				"status": "Project.Planned",
+				"priority": "B",
+				"taskIcon": "badge-check",
+				"taskColor": "64748b",
+				"dateScheduled": "2026-07-21",
+				"estimate": "1200",
+				"note": "Keeps momentum without pretending every part of the system must be finished immediately.",
+				"parentTask": "vi8fh1k",
+				"datetimeCreated": "2026-07-14T12:08:17",
+				"datetimeModified": "2026-07-14T12:08:17"
+			},
+			"tags": [
+				"operon-demo",
+				"review"
+			],
+			"primary": {
+				"filePath": "Operon/Demo Workspace/Set Up Your Obsidian Vault with Operon.md",
+				"lineNumber": 76,
+				"format": "inline"
+			},
+			"datetimeModified": "2026-07-14T12:08:17",
+			"tier": "hot"
+		},
+		"pefj40h": {
+			"operonId": "pefj40h",
+			"description": "Cancel or archive setup tasks that no longer matter",
+			"checkbox": "open",
+			"fieldValues": {
+				"operonId": "pefj40h",
+				"status": "Project.Planned",
+				"priority": "C",
+				"taskIcon": "badge-check",
+				"taskColor": "64748b",
+				"dateScheduled": "2026-07-21",
+				"estimate": "1200",
+				"note": "Protects the system from stale commitments before the demo project becomes clutter.",
+				"parentTask": "vi8fh1k",
+				"datetimeCreated": "2026-07-14T12:08:17",
+				"datetimeModified": "2026-07-14T12:08:17"
+			},
+			"tags": [
+				"operon-demo",
+				"review"
+			],
+			"primary": {
+				"filePath": "Operon/Demo Workspace/Set Up Your Obsidian Vault with Operon.md",
+				"lineNumber": 77,
+				"format": "inline"
+			},
+			"datetimeModified": "2026-07-14T12:08:17",
+			"tier": "hot"
+		},
+		"ntn044n": {
+			"operonId": "ntn044n",
+			"description": "Write a short weekly operating rhythm",
+			"checkbox": "open",
+			"fieldValues": {
+				"operonId": "ntn044n",
+				"status": "Project.Planned",
+				"priority": "B",
+				"taskIcon": "badge-check",
+				"taskColor": "64748b",
+				"dateScheduled": "2026-07-21",
+				"estimate": "1800",
+				"note": "Turns the first-week setup into a repeatable personal workflow that can survive normal busy weeks.",
+				"parentTask": "vi8fh1k",
+				"datetimeCreated": "2026-07-14T12:08:17",
+				"datetimeModified": "2026-07-14T12:08:17"
+			},
+			"tags": [
+				"operon-demo",
+				"review"
+			],
+			"primary": {
+				"filePath": "Operon/Demo Workspace/Set Up Your Obsidian Vault with Operon.md",
+				"lineNumber": 78,
+				"format": "inline"
+			},
+			"datetimeModified": "2026-07-14T12:08:17",
+			"tier": "hot"
+		},
+		"vr079k6": {
+			"operonId": "vr079k6",
+			"description": "Celebrate your first Operon-powered week",
+			"checkbox": "open",
+			"fieldValues": {
+				"operonId": "vr079k6",
+				"status": "Project.Planned",
+				"priority": "C",
+				"taskIcon": "badge-check",
+				"taskColor": "64748b",
+				"dateScheduled": "2026-07-21",
+				"estimate": "600",
+				"note": "You gave your existing workflow a new layer of structure and visibility. That deserves coffee, cake, a tiny dance, or at least a very smug checkbox.",
+				"parentTask": "vi8fh1k",
+				"datetimeCreated": "2026-07-14T12:08:17",
+				"datetimeModified": "2026-07-14T12:08:17"
+			},
+			"tags": [
+				"operon-demo",
+				"review"
+			],
+			"primary": {
+				"filePath": "Operon/Demo Workspace/Set Up Your Obsidian Vault with Operon.md",
+				"lineNumber": 79,
+				"format": "inline"
+			},
+			"datetimeModified": "2026-07-14T12:08:17",
+			"tier": "hot"
+		},
+		"bui5bdb": {
+			"operonId": "bui5bdb",
+			"description": "Set Up Your Obsidian Vault with Operon",
+			"checkbox": "open",
+			"fieldValues": {
+				"operonId": "bui5bdb",
+				"status": "Project.Planned",
+				"priority": "A",
+				"dateScheduled": "2026-07-15",
+				"dateDue": "2026-07-21",
+				"taskIcon": "vault",
+				"taskColor": "0f766e",
+				"note": "A one week realistic adaptation project for shaping an Obsidian vault around Operon workflows",
+				"datetimeCreated": "2026-07-14T12:08:17",
+				"datetimeModified": "2026-07-14T12:08:19",
+				"progress": "0",
+				"directSubtaskCount": "7",
+				"directDoneSubtaskCount": "0",
+				"directOpenSubtaskCount": "7",
+				"treeDescendantCount": "43",
+				"treeDoneDescendantCount": "0",
+				"treeOpenDescendantCount": "43",
+				"totalEstimate": "67500"
+			},
+			"tags": [],
+			"primary": {
+				"filePath": "Operon/Demo Workspace/Set Up Your Obsidian Vault with Operon.md",
+				"lineNumber": 0,
+				"format": "yaml"
+			},
+			"datetimeModified": "2026-07-14T12:08:19",
+			"tier": "hot"
+		},
+		"j9svbz2": {
+			"operonId": "j9svbz2",
+			"description": "Start Here",
+			"checkbox": "open",
+			"fieldValues": {
+				"operonId": "j9svbz2",
+				"status": "Project.Planned",
+				"priority": "B",
+				"parentTask": "l1dk70s",
+				"progress": "0",
+				"directSubtaskCount": "3",
+				"directDoneSubtaskCount": "0",
+				"directOpenSubtaskCount": "3",
+				"treeDescendantCount": "3",
+				"treeDoneDescendantCount": "0",
+				"treeOpenDescendantCount": "3",
+				"taskIcon": "compass",
+				"taskColor": "2563EB",
+				"note": "Gives you a low-risk place to open, edit, and complete real Operon tasks before using your own work.",
+				"datetimeCreated": "2026-07-14T12:08:17",
+				"datetimeModified": "2026-07-14T12:08:19"
+			},
+			"tags": [
+				"operon-demo",
+				"operon-demo-section"
+			],
+			"primary": {
+				"filePath": "Operon/Demo Workspace/Operon Basics Project.md",
+				"lineNumber": 26,
+				"format": "inline"
+			},
+			"datetimeModified": "2026-07-14T12:08:19",
+			"tier": "hot"
+		},
+		"wpc09ju": {
+			"operonId": "wpc09ju",
+			"description": "Open this task in the Task Editor",
+			"checkbox": "open",
+			"fieldValues": {
+				"operonId": "wpc09ju",
+				"status": "Project.Planned",
+				"priority": "C",
+				"taskIcon": "compass",
+				"taskColor": "2563EB",
+				"note": "Shows where a task's full context lives when the inline line is too small for real planning.",
+				"parentTask": "j9svbz2",
+				"datetimeCreated": "2026-07-14T12:08:17",
+				"datetimeModified": "2026-07-14T12:08:17"
+			},
+			"tags": [
+				"operon-demo"
+			],
+			"primary": {
+				"filePath": "Operon/Demo Workspace/Operon Basics Project.md",
+				"lineNumber": 27,
+				"format": "inline"
+			},
+			"datetimeModified": "2026-07-14T12:08:17",
+			"tier": "hot"
+		},
+		"w55g8jk": {
+			"operonId": "w55g8jk",
+			"description": "Adjust this task priority",
+			"checkbox": "open",
+			"fieldValues": {
+				"operonId": "w55g8jk",
+				"status": "Project.Planned",
+				"priority": "C",
+				"taskIcon": "compass",
+				"taskColor": "2563EB",
+				"note": "Makes priority feel like a decision tool, not just a label sitting beside the task.",
+				"parentTask": "j9svbz2",
+				"datetimeCreated": "2026-07-14T12:08:17",
+				"datetimeModified": "2026-07-14T12:08:17"
+			},
+			"tags": [
+				"operon-demo"
+			],
+			"primary": {
+				"filePath": "Operon/Demo Workspace/Operon Basics Project.md",
+				"lineNumber": 28,
+				"format": "inline"
+			},
+			"datetimeModified": "2026-07-14T12:08:17",
+			"tier": "hot"
+		},
+		"9m01gqg": {
+			"operonId": "9m01gqg",
+			"description": "Complete this task from the inline controls",
+			"checkbox": "open",
+			"fieldValues": {
+				"operonId": "9m01gqg",
+				"status": "Project.Planned",
+				"priority": "C",
+				"taskIcon": "compass",
+				"taskColor": "2563EB",
+				"note": "Shows the fastest path from action to done without opening a full editor.",
+				"parentTask": "j9svbz2",
+				"datetimeCreated": "2026-07-14T12:08:17",
+				"datetimeModified": "2026-07-14T12:08:17"
+			},
+			"tags": [
+				"operon-demo"
+			],
+			"primary": {
+				"filePath": "Operon/Demo Workspace/Operon Basics Project.md",
+				"lineNumber": 29,
+				"format": "inline"
+			},
+			"datetimeModified": "2026-07-14T12:08:17",
+			"tier": "hot"
+		},
+		"48dankx": {
+			"operonId": "48dankx",
+			"description": "Capture And Edit Tasks",
+			"checkbox": "open",
+			"fieldValues": {
+				"operonId": "48dankx",
+				"status": "Project.Planned",
+				"priority": "B",
+				"parentTask": "l1dk70s",
+				"progress": "0",
+				"directSubtaskCount": "3",
+				"directDoneSubtaskCount": "0",
+				"directOpenSubtaskCount": "3",
+				"treeDescendantCount": "3",
+				"treeDoneDescendantCount": "0",
+				"treeOpenDescendantCount": "3",
+				"taskIcon": "pen-line",
+				"taskColor": "7C3AED",
+				"note": "Shows how quick thoughts become manageable tasks without leaving the note you are already using.",
+				"datetimeCreated": "2026-07-14T12:08:17",
+				"datetimeModified": "2026-07-14T12:08:19"
+			},
+			"tags": [
+				"operon-demo",
+				"operon-demo-section"
+			],
+			"primary": {
+				"filePath": "Operon/Demo Workspace/Operon Basics Project.md",
+				"lineNumber": 33,
+				"format": "inline"
+			},
+			"datetimeModified": "2026-07-14T12:08:19",
+			"tier": "hot"
+		},
+		"1s0c0kl": {
+			"operonId": "1s0c0kl",
+			"description": "Create a new inline task below this section",
+			"checkbox": "open",
+			"fieldValues": {
+				"operonId": "1s0c0kl",
+				"status": "Project.Planned",
+				"priority": "C",
+				"taskIcon": "pen-line",
+				"taskColor": "7C3AED",
+				"note": "Turns a small captured thought into a real task that can be filtered, planned, and completed later.",
+				"parentTask": "48dankx",
+				"datetimeCreated": "2026-07-14T12:08:17",
+				"datetimeModified": "2026-07-14T12:08:17"
+			},
+			"tags": [
+				"operon-demo"
+			],
+			"primary": {
+				"filePath": "Operon/Demo Workspace/Operon Basics Project.md",
+				"lineNumber": 34,
+				"format": "inline"
+			},
+			"datetimeModified": "2026-07-14T12:08:17",
+			"tier": "hot"
+		},
+		"86kj7zc": {
+			"operonId": "86kj7zc",
+			"description": "Edit this task description in the Task Editor",
+			"checkbox": "open",
+			"fieldValues": {
+				"operonId": "86kj7zc",
+				"status": "Project.Planned",
+				"priority": "C",
+				"taskIcon": "pen-line",
+				"taskColor": "7C3AED",
+				"note": "Keeps the task wording clear enough that the next action is still obvious later.",
+				"parentTask": "48dankx",
+				"datetimeCreated": "2026-07-14T12:08:17",
+				"datetimeModified": "2026-07-14T12:08:17"
+			},
+			"tags": [
+				"operon-demo"
+			],
+			"primary": {
+				"filePath": "Operon/Demo Workspace/Operon Basics Project.md",
+				"lineNumber": 35,
+				"format": "inline"
+			},
+			"datetimeModified": "2026-07-14T12:08:17",
+			"tier": "hot"
+		},
+		"552w7i9": {
+			"operonId": "552w7i9",
+			"description": "Add a note to this task",
+			"checkbox": "open",
+			"fieldValues": {
+				"operonId": "552w7i9",
+				"status": "Project.Planned",
+				"priority": "C",
+				"taskIcon": "pen-line",
+				"taskColor": "7C3AED",
+				"note": "Keeps the reason behind the task close to the task, so your future self does not have to rebuild the context.",
+				"parentTask": "48dankx",
+				"datetimeCreated": "2026-07-14T12:08:17",
+				"datetimeModified": "2026-07-14T12:08:17"
+			},
+			"tags": [
+				"operon-demo"
+			],
+			"primary": {
+				"filePath": "Operon/Demo Workspace/Operon Basics Project.md",
+				"lineNumber": 36,
+				"format": "inline"
+			},
+			"datetimeModified": "2026-07-14T12:08:17",
+			"tier": "hot"
+		},
+		"su51jgp": {
+			"operonId": "su51jgp",
+			"description": "Organize With Fields",
+			"checkbox": "open",
+			"fieldValues": {
+				"operonId": "su51jgp",
+				"status": "Project.Planned",
+				"priority": "B",
+				"totalEstimate": "1800",
+				"parentTask": "l1dk70s",
+				"progress": "0",
+				"directSubtaskCount": "3",
+				"directDoneSubtaskCount": "0",
+				"directOpenSubtaskCount": "3",
+				"treeDescendantCount": "3",
+				"treeDoneDescendantCount": "0",
+				"treeOpenDescendantCount": "3",
+				"taskIcon": "sliders-horizontal",
+				"taskColor": "0F766E",
+				"note": "Connects task metadata to decisions about urgency, size, and workflow state.",
+				"datetimeCreated": "2026-07-14T12:08:17",
+				"datetimeModified": "2026-07-14T12:08:19"
+			},
+			"tags": [
+				"operon-demo",
+				"operon-demo-section"
+			],
+			"primary": {
+				"filePath": "Operon/Demo Workspace/Operon Basics Project.md",
+				"lineNumber": 40,
+				"format": "inline"
+			},
+			"datetimeModified": "2026-07-14T12:08:19",
+			"tier": "hot"
+		},
+		"mrcqyel": {
+			"operonId": "mrcqyel",
+			"description": "Set a due date for this task",
+			"checkbox": "open",
+			"fieldValues": {
+				"operonId": "mrcqyel",
+				"status": "Project.Planned",
+				"priority": "B",
+				"taskIcon": "sliders-horizontal",
+				"taskColor": "0F766E",
+				"dateDue": "2026-07-21",
+				"note": "Turns a loose commitment into something Operon can surface before it becomes easy to miss.",
+				"parentTask": "su51jgp",
+				"datetimeCreated": "2026-07-14T12:08:17",
+				"datetimeModified": "2026-07-14T12:08:17"
+			},
+			"tags": [
+				"operon-demo"
+			],
+			"primary": {
+				"filePath": "Operon/Demo Workspace/Operon Basics Project.md",
+				"lineNumber": 41,
+				"format": "inline"
+			},
+			"datetimeModified": "2026-07-14T12:08:17",
+			"tier": "hot"
+		},
+		"3i150bn": {
+			"operonId": "3i150bn",
+			"description": "Add an estimate to this task",
+			"checkbox": "open",
+			"fieldValues": {
+				"operonId": "3i150bn",
+				"status": "Project.Planned",
+				"priority": "B",
+				"taskIcon": "sliders-horizontal",
+				"taskColor": "0F766E",
+				"estimate": "1800",
+				"note": "Makes the size of the work visible before it quietly takes more room than expected.",
+				"parentTask": "su51jgp",
+				"datetimeCreated": "2026-07-14T12:08:17",
+				"datetimeModified": "2026-07-14T12:08:17"
+			},
+			"tags": [
+				"operon-demo"
+			],
+			"primary": {
+				"filePath": "Operon/Demo Workspace/Operon Basics Project.md",
+				"lineNumber": 42,
+				"format": "inline"
+			},
+			"datetimeModified": "2026-07-14T12:08:17",
+			"tier": "hot"
+		},
+		"4n62215": {
+			"operonId": "4n62215",
+			"description": "Change this task's workflow status",
+			"checkbox": "open",
+			"fieldValues": {
+				"operonId": "4n62215",
+				"status": "Project.Brainstorming",
+				"priority": "C",
+				"taskIcon": "sliders-horizontal",
+				"taskColor": "0F766E",
+				"note": "Shows how status can describe the real stage of work instead of leaving every task in the same bucket.",
+				"parentTask": "su51jgp",
+				"datetimeCreated": "2026-07-14T12:08:17",
+				"datetimeModified": "2026-07-14T12:08:17"
+			},
+			"tags": [
+				"operon-demo"
+			],
+			"primary": {
+				"filePath": "Operon/Demo Workspace/Operon Basics Project.md",
+				"lineNumber": 43,
+				"format": "inline"
+			},
+			"datetimeModified": "2026-07-14T12:08:17",
+			"tier": "hot"
+		},
+		"pnqei6v": {
+			"operonId": "pnqei6v",
+			"description": "Plan On The Calendar",
+			"checkbox": "open",
+			"fieldValues": {
+				"operonId": "pnqei6v",
+				"status": "Project.Planned",
+				"priority": "B",
+				"totalEstimate": "3600",
+				"parentTask": "l1dk70s",
+				"progress": "0",
+				"directSubtaskCount": "3",
+				"directDoneSubtaskCount": "0",
+				"directOpenSubtaskCount": "3",
+				"treeDescendantCount": "3",
+				"treeDoneDescendantCount": "0",
+				"treeOpenDescendantCount": "3",
+				"taskIcon": "calendar-days",
+				"taskColor": "EA580C",
+				"note": "Turns task lists into time-aware planning without forcing every task onto the calendar.",
+				"datetimeCreated": "2026-07-14T12:08:17",
+				"datetimeModified": "2026-07-14T12:08:19"
+			},
+			"tags": [
+				"operon-demo",
+				"operon-demo-section"
+			],
+			"primary": {
+				"filePath": "Operon/Demo Workspace/Operon Basics Project.md",
+				"lineNumber": 47,
+				"format": "inline"
+			},
+			"datetimeModified": "2026-07-14T12:08:19",
+			"tier": "hot"
+		},
+		"3nutws8": {
+			"operonId": "3nutws8",
+			"description": "Reschedule this task from the Calendar",
+			"checkbox": "open",
+			"fieldValues": {
+				"operonId": "3nutws8",
+				"status": "Project.Planned",
+				"priority": "B",
+				"taskIcon": "calendar-days",
+				"taskColor": "EA580C",
+				"dateScheduled": "2026-07-15",
+				"dateDue": "2026-07-21",
+				"note": "Shows how planned work can move when the day changes without losing the task itself.",
+				"parentTask": "pnqei6v",
+				"datetimeCreated": "2026-07-14T12:08:17",
+				"datetimeModified": "2026-07-14T12:08:17"
+			},
+			"tags": [
+				"operon-demo",
+				"calendar"
+			],
+			"primary": {
+				"filePath": "Operon/Demo Workspace/Operon Basics Project.md",
+				"lineNumber": 48,
+				"format": "inline"
+			},
+			"datetimeModified": "2026-07-14T12:08:17",
+			"tier": "hot"
+		},
+		"u2jsba0": {
+			"operonId": "u2jsba0",
+			"description": "Move this timed task to another time block",
+			"checkbox": "open",
+			"fieldValues": {
+				"operonId": "u2jsba0",
+				"status": "Project.Planned",
+				"priority": "A",
+				"taskIcon": "calendar-days",
+				"taskColor": "EA580C",
+				"dateScheduled": "2026-07-17",
+				"datetimeStart": "2026-07-17T09:00:00",
+				"datetimeEnd": "2026-07-17T10:00:00",
+				"estimate": "3600",
+				"note": "Shows how scheduled work can move with the day instead of becoming stale the moment plans change.",
+				"parentTask": "pnqei6v",
+				"datetimeCreated": "2026-07-14T12:08:17",
+				"datetimeModified": "2026-07-14T12:08:17"
+			},
+			"tags": [
+				"operon-demo",
+				"calendar"
+			],
+			"primary": {
+				"filePath": "Operon/Demo Workspace/Operon Basics Project.md",
+				"lineNumber": 49,
+				"format": "inline"
+			},
+			"datetimeModified": "2026-07-14T12:08:17",
+			"tier": "hot"
+		},
+		"40g6s5s": {
+			"operonId": "40g6s5s",
+			"description": "Clear the scheduled date from this task",
+			"checkbox": "open",
+			"fieldValues": {
+				"operonId": "40g6s5s",
+				"status": "Project.Planned",
+				"priority": "C",
+				"taskIcon": "calendar-days",
+				"taskColor": "EA580C",
+				"dateScheduled": "2026-07-18",
+				"note": "Separates useful planning from forced scheduling when a task no longer needs a calendar slot.",
+				"parentTask": "pnqei6v",
+				"datetimeCreated": "2026-07-14T12:08:17",
+				"datetimeModified": "2026-07-14T12:08:17"
+			},
+			"tags": [
+				"operon-demo",
+				"calendar"
+			],
+			"primary": {
+				"filePath": "Operon/Demo Workspace/Operon Basics Project.md",
+				"lineNumber": 50,
+				"format": "inline"
+			},
+			"datetimeModified": "2026-07-14T12:08:17",
+			"tier": "hot"
+		},
+		"qaafddt": {
+			"operonId": "qaafddt",
+			"description": "Move Work On Kanban",
+			"checkbox": "open",
+			"fieldValues": {
+				"operonId": "qaafddt",
+				"status": "Project.Planned",
+				"priority": "B",
+				"parentTask": "l1dk70s",
+				"progress": "0",
+				"directSubtaskCount": "3",
+				"directDoneSubtaskCount": "0",
+				"directOpenSubtaskCount": "3",
+				"treeDescendantCount": "3",
+				"treeDoneDescendantCount": "0",
+				"treeOpenDescendantCount": "3",
+				"taskIcon": "columns-3",
+				"taskColor": "DB2777",
+				"note": "Shows how task status becomes a visible board for project movement and bottlenecks.",
+				"datetimeCreated": "2026-07-14T12:08:17",
+				"datetimeModified": "2026-07-14T12:08:19"
+			},
+			"tags": [
+				"operon-demo",
+				"operon-demo-section"
+			],
+			"primary": {
+				"filePath": "Operon/Demo Workspace/Operon Basics Project.md",
+				"lineNumber": 54,
+				"format": "inline"
+			},
+			"datetimeModified": "2026-07-14T12:08:19",
+			"tier": "hot"
+		},
+		"57xf8ic": {
+			"operonId": "57xf8ic",
+			"description": "Move this card from Planned to InProgress",
+			"checkbox": "open",
+			"fieldValues": {
+				"operonId": "57xf8ic",
+				"status": "Project.Planned",
+				"priority": "B",
+				"taskIcon": "columns-3",
+				"taskColor": "DB2777",
+				"note": "Connects task status to visible project movement, so the board reflects what is actually happening.",
+				"parentTask": "qaafddt",
+				"datetimeCreated": "2026-07-14T12:08:17",
+				"datetimeModified": "2026-07-14T12:08:17"
+			},
+			"tags": [
+				"operon-demo",
+				"kanban"
+			],
+			"primary": {
+				"filePath": "Operon/Demo Workspace/Operon Basics Project.md",
+				"lineNumber": 55,
+				"format": "inline"
+			},
+			"datetimeModified": "2026-07-14T12:08:17",
+			"tier": "hot"
+		},
+		"q56gr8c": {
+			"operonId": "q56gr8c",
+			"description": "Move this active card to Finished",
+			"checkbox": "open",
+			"fieldValues": {
+				"operonId": "q56gr8c",
+				"status": "Project.InProgress",
+				"priority": "A",
+				"taskIcon": "columns-3",
+				"taskColor": "DB2777",
+				"note": "Makes completion visible in the same workflow where active work is managed.",
+				"parentTask": "qaafddt",
+				"datetimeCreated": "2026-07-14T12:08:17",
+				"datetimeModified": "2026-07-14T12:08:17"
+			},
+			"tags": [
+				"operon-demo",
+				"kanban"
+			],
+			"primary": {
+				"filePath": "Operon/Demo Workspace/Operon Basics Project.md",
+				"lineNumber": 56,
+				"format": "inline"
+			},
+			"datetimeModified": "2026-07-14T12:08:17",
+			"tier": "hot"
+		},
+		"hzrwz86": {
+			"operonId": "hzrwz86",
+			"description": "Pause this task from the Kanban board",
+			"checkbox": "open",
+			"fieldValues": {
+				"operonId": "hzrwz86",
+				"status": "Project.Paused",
+				"priority": "C",
+				"taskIcon": "columns-3",
+				"taskColor": "DB2777",
+				"note": "Keeps paused work honest instead of letting it pretend to be active.",
+				"parentTask": "qaafddt",
+				"datetimeCreated": "2026-07-14T12:08:17",
+				"datetimeModified": "2026-07-14T12:08:17"
+			},
+			"tags": [
+				"operon-demo",
+				"kanban"
+			],
+			"primary": {
+				"filePath": "Operon/Demo Workspace/Operon Basics Project.md",
+				"lineNumber": 57,
+				"format": "inline"
+			},
+			"datetimeModified": "2026-07-14T12:08:17",
+			"tier": "hot"
+		},
+		"vqhq2hy": {
+			"operonId": "vqhq2hy",
+			"description": "Work With Subtasks",
+			"checkbox": "open",
+			"fieldValues": {
+				"operonId": "vqhq2hy",
+				"status": "Project.Planned",
+				"priority": "B",
+				"parentTask": "l1dk70s",
+				"progress": "0",
+				"directSubtaskCount": "3",
+				"directDoneSubtaskCount": "0",
+				"directOpenSubtaskCount": "3",
+				"treeDescendantCount": "3",
+				"treeDoneDescendantCount": "0",
+				"treeOpenDescendantCount": "3",
+				"taskIcon": "git-branch",
+				"taskColor": "16A34A",
+				"note": "Makes larger work easier to understand by connecting child actions to their parent outcome.",
+				"datetimeCreated": "2026-07-14T12:08:17",
+				"datetimeModified": "2026-07-14T12:08:19"
+			},
+			"tags": [
+				"operon-demo",
+				"operon-demo-section"
+			],
+			"primary": {
+				"filePath": "Operon/Demo Workspace/Operon Basics Project.md",
+				"lineNumber": 61,
+				"format": "inline"
+			},
+			"datetimeModified": "2026-07-14T12:08:19",
+			"tier": "hot"
+		},
+		"5dzjvve": {
+			"operonId": "5dzjvve",
+			"description": "Open the parent task and review its subtasks",
+			"checkbox": "open",
+			"fieldValues": {
+				"operonId": "5dzjvve",
+				"status": "Project.Planned",
+				"priority": "C",
+				"taskIcon": "git-branch",
+				"taskColor": "16A34A",
+				"note": "Makes the project structure visible, so individual actions stay connected to the larger outcome.",
+				"parentTask": "vqhq2hy",
+				"datetimeCreated": "2026-07-14T12:08:17",
+				"datetimeModified": "2026-07-14T12:08:17"
+			},
+			"tags": [
+				"operon-demo"
+			],
+			"primary": {
+				"filePath": "Operon/Demo Workspace/Operon Basics Project.md",
+				"lineNumber": 62,
+				"format": "inline"
+			},
+			"datetimeModified": "2026-07-14T12:08:17",
+			"tier": "hot"
+		},
+		"y8nw5tu": {
+			"operonId": "y8nw5tu",
+			"description": "Add a new subtask under this project",
+			"checkbox": "open",
+			"fieldValues": {
+				"operonId": "y8nw5tu",
+				"status": "Project.Planned",
+				"priority": "C",
+				"taskIcon": "git-branch",
+				"taskColor": "16A34A",
+				"note": "Shows how new work can be captured under the right parent instead of becoming an orphan task.",
+				"parentTask": "vqhq2hy",
+				"datetimeCreated": "2026-07-14T12:08:17",
+				"datetimeModified": "2026-07-14T12:08:17"
+			},
+			"tags": [
+				"operon-demo"
+			],
+			"primary": {
+				"filePath": "Operon/Demo Workspace/Operon Basics Project.md",
+				"lineNumber": 63,
+				"format": "inline"
+			},
+			"datetimeModified": "2026-07-14T12:08:17",
+			"tier": "hot"
+		},
+		"speq64q": {
+			"operonId": "speq64q",
+			"description": "Review project progress after completing a child task",
+			"checkbox": "open",
+			"fieldValues": {
+				"operonId": "speq64q",
+				"status": "Project.Planned",
+				"priority": "B",
+				"taskIcon": "git-branch",
+				"taskColor": "16A34A",
+				"note": "Shows how small completed actions roll up into a clearer picture of project progress.",
+				"parentTask": "vqhq2hy",
+				"datetimeCreated": "2026-07-14T12:08:17",
+				"datetimeModified": "2026-07-14T12:08:17"
+			},
+			"tags": [
+				"operon-demo"
+			],
+			"primary": {
+				"filePath": "Operon/Demo Workspace/Operon Basics Project.md",
+				"lineNumber": 64,
+				"format": "inline"
+			},
+			"datetimeModified": "2026-07-14T12:08:17",
+			"tier": "hot"
+		},
+		"4u53i5n": {
+			"operonId": "4u53i5n",
+			"description": "Use Dependencies",
+			"checkbox": "open",
+			"fieldValues": {
+				"operonId": "4u53i5n",
+				"status": "Project.Planned",
+				"priority": "B",
+				"parentTask": "l1dk70s",
+				"progress": "0",
+				"directSubtaskCount": "3",
+				"directDoneSubtaskCount": "0",
+				"directOpenSubtaskCount": "3",
+				"treeDescendantCount": "3",
+				"treeDoneDescendantCount": "0",
+				"treeOpenDescendantCount": "3",
+				"taskIcon": "workflow",
+				"taskColor": "DC2626",
+				"note": "Makes task order and handoffs explicit when one piece of work depends on another.",
+				"datetimeCreated": "2026-07-14T12:08:17",
+				"datetimeModified": "2026-07-14T12:08:19"
+			},
+			"tags": [
+				"operon-demo",
+				"operon-demo-section"
+			],
+			"primary": {
+				"filePath": "Operon/Demo Workspace/Operon Basics Project.md",
+				"lineNumber": 68,
+				"format": "inline"
+			},
+			"datetimeModified": "2026-07-14T12:08:19",
+			"tier": "hot"
+		},
+		"2ygfo2l": {
+			"operonId": "2ygfo2l",
+			"description": "Complete the blocking setup task first",
+			"checkbox": "open",
+			"fieldValues": {
+				"operonId": "2ygfo2l",
+				"status": "Project.Planned",
+				"priority": "A",
+				"taskIcon": "workflow",
+				"taskColor": "DC2626",
+				"blocking": "w9adqqw",
+				"note": "Shows how one task can intentionally unlock the next piece of work.",
+				"parentTask": "4u53i5n",
+				"datetimeCreated": "2026-07-14T12:08:17",
+				"datetimeModified": "2026-07-14T12:08:17"
+			},
+			"tags": [
+				"operon-demo",
+				"dependencies"
+			],
+			"primary": {
+				"filePath": "Operon/Demo Workspace/Operon Basics Project.md",
+				"lineNumber": 69,
+				"format": "inline"
+			},
+			"datetimeModified": "2026-07-14T12:08:17",
+			"tier": "hot"
+		},
+		"w9adqqw": {
+			"operonId": "w9adqqw",
+			"description": "Start this blocked task after setup is finished",
+			"checkbox": "open",
+			"fieldValues": {
+				"operonId": "w9adqqw",
+				"status": "Project.Planned",
+				"priority": "B",
+				"taskIcon": "workflow",
+				"taskColor": "DC2626",
+				"blockedBy": "2ygfo2l",
+				"blocking": "9guoq4z",
+				"note": "Makes waiting work visible without asking you to remember why it cannot move yet.",
+				"parentTask": "4u53i5n",
+				"datetimeCreated": "2026-07-14T12:08:17",
+				"datetimeModified": "2026-07-14T12:08:17"
+			},
+			"tags": [
+				"operon-demo",
+				"dependencies"
+			],
+			"primary": {
+				"filePath": "Operon/Demo Workspace/Operon Basics Project.md",
+				"lineNumber": 70,
+				"format": "inline"
+			},
+			"datetimeModified": "2026-07-14T12:08:17",
+			"tier": "hot"
+		},
+		"9guoq4z": {
+			"operonId": "9guoq4z",
+			"description": "Review the final handoff after dependencies clear",
+			"checkbox": "open",
+			"fieldValues": {
+				"operonId": "9guoq4z",
+				"status": "Project.Planned",
+				"priority": "C",
+				"taskIcon": "workflow",
+				"taskColor": "DC2626",
+				"blockedBy": "w9adqqw",
+				"note": "Shows how a chain of dependent tasks can end with a clean review point.",
+				"parentTask": "4u53i5n",
+				"datetimeCreated": "2026-07-14T12:08:17",
+				"datetimeModified": "2026-07-14T12:08:17"
+			},
+			"tags": [
+				"operon-demo",
+				"dependencies"
+			],
+			"primary": {
+				"filePath": "Operon/Demo Workspace/Operon Basics Project.md",
+				"lineNumber": 71,
+				"format": "inline"
+			},
+			"datetimeModified": "2026-07-14T12:08:17",
+			"tier": "hot"
+		},
+		"ndus7fz": {
+			"operonId": "ndus7fz",
+			"description": "Try Recurrence",
+			"checkbox": "open",
+			"fieldValues": {
+				"operonId": "ndus7fz",
+				"status": "Project.Planned",
+				"priority": "B",
+				"parentTask": "l1dk70s",
+				"progress": "0",
+				"directSubtaskCount": "3",
+				"directDoneSubtaskCount": "0",
+				"directOpenSubtaskCount": "3",
+				"treeDescendantCount": "3",
+				"treeDoneDescendantCount": "0",
+				"treeOpenDescendantCount": "3",
+				"taskIcon": "repeat-2",
+				"taskColor": "0891B2",
+				"note": "Turns repeated work into a maintained rhythm instead of a task you recreate by hand.",
+				"datetimeCreated": "2026-07-14T12:08:17",
+				"datetimeModified": "2026-07-14T12:08:19"
+			},
+			"tags": [
+				"operon-demo",
+				"operon-demo-section"
+			],
+			"primary": {
+				"filePath": "Operon/Demo Workspace/Operon Basics Project.md",
+				"lineNumber": 75,
+				"format": "inline"
+			},
+			"datetimeModified": "2026-07-14T12:08:19",
+			"tier": "hot"
+		},
+		"dj1nluj": {
+			"operonId": "dj1nluj",
+			"description": "Complete this weekly review task",
+			"checkbox": "open",
+			"fieldValues": {
+				"operonId": "dj1nluj",
+				"status": "Project.Planned",
+				"priority": "C",
+				"taskIcon": "repeat-2",
+				"taskColor": "0891B2",
+				"dateScheduled": "2026-07-21",
+				"repeat": "mode=schedule|freq=week|interval=1",
+				"note": "Shows how a repeated commitment can keep returning without being manually rebuilt.",
+				"parentTask": "ndus7fz",
+				"datetimeCreated": "2026-07-14T12:08:17",
+				"datetimeModified": "2026-07-14T12:08:17"
+			},
+			"tags": [
+				"operon-demo",
+				"recurring"
+			],
+			"primary": {
+				"filePath": "Operon/Demo Workspace/Operon Basics Project.md",
+				"lineNumber": 76,
+				"format": "inline"
+			},
+			"datetimeModified": "2026-07-14T12:08:17",
+			"tier": "hot"
+		},
+		"g74e80o": {
+			"operonId": "g74e80o",
+			"description": "Review the next generated occurrence",
+			"checkbox": "open",
+			"fieldValues": {
+				"operonId": "g74e80o",
+				"status": "Project.Planned",
+				"priority": "C",
+				"taskIcon": "repeat-2",
+				"taskColor": "0891B2",
+				"dateScheduled": "2026-07-22",
+				"note": "Builds trust that recurring work creates the next visible step instead of disappearing after completion.",
+				"parentTask": "ndus7fz",
+				"datetimeCreated": "2026-07-14T12:08:17",
+				"datetimeModified": "2026-07-14T12:08:17"
+			},
+			"tags": [
+				"operon-demo",
+				"recurring"
+			],
+			"primary": {
+				"filePath": "Operon/Demo Workspace/Operon Basics Project.md",
+				"lineNumber": 77,
+				"format": "inline"
+			},
+			"datetimeModified": "2026-07-14T12:08:17",
+			"tier": "hot"
+		},
+		"lp4hnck": {
+			"operonId": "lp4hnck",
+			"description": "Change the recurrence rule on this task",
+			"checkbox": "open",
+			"fieldValues": {
+				"operonId": "lp4hnck",
+				"status": "Project.Planned",
+				"priority": "C",
+				"taskIcon": "repeat-2",
+				"taskColor": "0891B2",
+				"repeat": "mode=schedule|freq=day|interval=1",
+				"note": "Shows how rhythm can be adjusted when a task needs a different cadence.",
+				"parentTask": "ndus7fz",
+				"datetimeCreated": "2026-07-14T12:08:17",
+				"datetimeModified": "2026-07-14T12:08:17"
+			},
+			"tags": [
+				"operon-demo",
+				"recurring"
+			],
+			"primary": {
+				"filePath": "Operon/Demo Workspace/Operon Basics Project.md",
+				"lineNumber": 78,
+				"format": "inline"
+			},
+			"datetimeModified": "2026-07-14T12:08:17",
+			"tier": "hot"
+		},
+		"vbm1g5y": {
+			"operonId": "vbm1g5y",
+			"description": "Track Time",
+			"checkbox": "open",
+			"fieldValues": {
+				"operonId": "vbm1g5y",
+				"status": "Project.Planned",
+				"priority": "B",
+				"totalEstimate": "3300",
+				"parentTask": "l1dk70s",
+				"progress": "0",
+				"directSubtaskCount": "3",
+				"directDoneSubtaskCount": "0",
+				"directOpenSubtaskCount": "3",
+				"treeDescendantCount": "3",
+				"treeDoneDescendantCount": "0",
+				"treeOpenDescendantCount": "3",
+				"taskIcon": "timer",
+				"taskColor": "CA8A04",
+				"note": "Connects task planning with the real time spent doing the work.",
+				"datetimeCreated": "2026-07-14T12:08:17",
+				"datetimeModified": "2026-07-14T12:08:19"
+			},
+			"tags": [
+				"operon-demo",
+				"operon-demo-section"
+			],
+			"primary": {
+				"filePath": "Operon/Demo Workspace/Operon Basics Project.md",
+				"lineNumber": 82,
+				"format": "inline"
+			},
+			"datetimeModified": "2026-07-14T12:08:19",
+			"tier": "hot"
+		},
+		"46atgsk": {
+			"operonId": "46atgsk",
+			"description": "Start the timer on this task",
+			"checkbox": "open",
+			"fieldValues": {
+				"operonId": "46atgsk",
+				"status": "Project.Planned",
+				"priority": "B",
+				"taskIcon": "timer",
+				"taskColor": "CA8A04",
+				"estimate": "900",
+				"note": "Turns an estimate into an active work session you can compare against later.",
+				"parentTask": "vbm1g5y",
+				"datetimeCreated": "2026-07-14T12:08:17",
+				"datetimeModified": "2026-07-14T12:08:17"
+			},
+			"tags": [
+				"operon-demo",
+				"time-tracking"
+			],
+			"primary": {
+				"filePath": "Operon/Demo Workspace/Operon Basics Project.md",
+				"lineNumber": 83,
+				"format": "inline"
+			},
+			"datetimeModified": "2026-07-14T12:08:17",
+			"tier": "hot"
+		},
+		"mms7r60": {
+			"operonId": "mms7r60",
+			"description": "Stop the timer and review the tracked session",
+			"checkbox": "open",
+			"fieldValues": {
+				"operonId": "mms7r60",
+				"status": "Project.Planned",
+				"priority": "B",
+				"taskIcon": "timer",
+				"taskColor": "CA8A04",
+				"estimate": "900",
+				"note": "Shows how tracked time becomes useful feedback instead of just another clock running.",
+				"parentTask": "vbm1g5y",
+				"datetimeCreated": "2026-07-14T12:08:17",
+				"datetimeModified": "2026-07-14T12:08:17"
+			},
+			"tags": [
+				"operon-demo",
+				"time-tracking"
+			],
+			"primary": {
+				"filePath": "Operon/Demo Workspace/Operon Basics Project.md",
+				"lineNumber": 84,
+				"format": "inline"
+			},
+			"datetimeModified": "2026-07-14T12:08:17",
+			"tier": "hot"
+		},
+		"6boruje": {
+			"operonId": "6boruje",
+			"description": "Try this task in FlowTime mode",
+			"checkbox": "open",
+			"fieldValues": {
+				"operonId": "6boruje",
+				"status": "Project.Planned",
+				"priority": "C",
+				"taskIcon": "timer",
+				"taskColor": "CA8A04",
+				"estimate": "1500",
+				"note": "Gives focused work a lightweight timer flow without turning the task into a separate system.",
+				"parentTask": "vbm1g5y",
+				"datetimeCreated": "2026-07-14T12:08:17",
+				"datetimeModified": "2026-07-14T12:08:17"
+			},
+			"tags": [
+				"operon-demo",
+				"time-tracking"
+			],
+			"primary": {
+				"filePath": "Operon/Demo Workspace/Operon Basics Project.md",
+				"lineNumber": 85,
+				"format": "inline"
+			},
+			"datetimeModified": "2026-07-14T12:08:17",
+			"tier": "hot"
+		},
+		"knvcrmd": {
+			"operonId": "knvcrmd",
+			"description": "Find And Filter Tasks",
+			"checkbox": "open",
+			"fieldValues": {
+				"operonId": "knvcrmd",
+				"status": "Project.Planned",
+				"priority": "B",
+				"parentTask": "l1dk70s",
+				"progress": "33",
+				"directSubtaskCount": "3",
+				"directDoneSubtaskCount": "1",
+				"directOpenSubtaskCount": "2",
+				"treeDescendantCount": "3",
+				"treeDoneDescendantCount": "1",
+				"treeOpenDescendantCount": "2",
+				"taskIcon": "search",
+				"taskColor": "4F46E5",
+				"note": "Shows how tasks remain findable after they spread across notes, filters, and project files.",
+				"datetimeCreated": "2026-07-14T12:08:17",
+				"datetimeModified": "2026-07-14T12:08:19"
+			},
+			"tags": [
+				"operon-demo",
+				"operon-demo-section"
+			],
+			"primary": {
+				"filePath": "Operon/Demo Workspace/Operon Basics Project.md",
+				"lineNumber": 89,
+				"format": "inline"
+			},
+			"datetimeModified": "2026-07-14T12:08:19",
+			"tier": "hot"
+		},
+		"au1u1fb": {
+			"operonId": "au1u1fb",
+			"description": "Search for demo tasks in Task Finder",
+			"checkbox": "open",
+			"fieldValues": {
+				"operonId": "au1u1fb",
+				"status": "Project.Planned",
+				"priority": "C",
+				"taskIcon": "search",
+				"taskColor": "4F46E5",
+				"note": "Builds confidence that tasks can be found from one place, even after they spread across different notes.",
+				"parentTask": "knvcrmd",
+				"datetimeCreated": "2026-07-14T12:08:17",
+				"datetimeModified": "2026-07-14T12:08:17"
+			},
+			"tags": [
+				"operon-demo"
+			],
+			"primary": {
+				"filePath": "Operon/Demo Workspace/Operon Basics Project.md",
+				"lineNumber": 90,
+				"format": "inline"
+			},
+			"datetimeModified": "2026-07-14T12:08:17",
+			"tier": "hot"
+		},
+		"rxso54t": {
+			"operonId": "rxso54t",
+			"description": "Open the Operon Basics Project filter",
+			"checkbox": "open",
+			"fieldValues": {
+				"operonId": "rxso54t",
+				"status": "Project.Planned",
+				"priority": "C",
+				"taskIcon": "search",
+				"taskColor": "4F46E5",
+				"note": "Shows how a saved filter can turn one project tree into a reusable working view.",
+				"parentTask": "knvcrmd",
+				"datetimeCreated": "2026-07-14T12:08:17",
+				"datetimeModified": "2026-07-14T12:08:17"
+			},
+			"tags": [
+				"operon-demo"
+			],
+			"primary": {
+				"filePath": "Operon/Demo Workspace/Operon Basics Project.md",
+				"lineNumber": 91,
+				"format": "inline"
+			},
+			"datetimeModified": "2026-07-14T12:08:17",
+			"tier": "hot"
+		},
+		"eo26anb": {
+			"operonId": "eo26anb",
+			"description": "Review this completed demo item in finished filters",
+			"checkbox": "done",
+			"fieldValues": {
+				"operonId": "eo26anb",
+				"status": "Project.Finished",
+				"priority": "C",
+				"taskIcon": "search",
+				"taskColor": "4F46E5",
+				"dateCompleted": "2026-07-14",
+				"note": "Shows that finished work stays visible when you need review history, without cluttering active lists.",
+				"parentTask": "knvcrmd",
+				"datetimeCreated": "2026-07-14T12:08:17",
+				"datetimeModified": "2026-07-14T12:08:17"
+			},
+			"tags": [
+				"operon-demo"
+			],
+			"primary": {
+				"filePath": "Operon/Demo Workspace/Operon Basics Project.md",
+				"lineNumber": 92,
+				"format": "inline"
+			},
+			"datetimeModified": "2026-07-14T12:08:17",
+			"tier": "warm"
+		},
+		"eqt8ryo": {
+			"operonId": "eqt8ryo",
+			"description": "Finish The Demo",
+			"checkbox": "open",
+			"fieldValues": {
+				"operonId": "eqt8ryo",
+				"status": "Project.Planned",
+				"priority": "B",
+				"parentTask": "l1dk70s",
+				"progress": "0",
+				"directSubtaskCount": "3",
+				"directDoneSubtaskCount": "0",
+				"directOpenSubtaskCount": "3",
+				"treeDescendantCount": "3",
+				"treeDoneDescendantCount": "0",
+				"treeOpenDescendantCount": "3",
+				"taskIcon": "badge-check",
+				"taskColor": "64748B",
+				"note": "Closes the basics loop by checking the main views after using real task interactions.",
+				"datetimeCreated": "2026-07-14T12:08:17",
+				"datetimeModified": "2026-07-14T12:08:19"
+			},
+			"tags": [
+				"operon-demo",
+				"operon-demo-section"
+			],
+			"primary": {
+				"filePath": "Operon/Demo Workspace/Operon Basics Project.md",
+				"lineNumber": 96,
+				"format": "inline"
+			},
+			"datetimeModified": "2026-07-14T12:08:19",
+			"tier": "hot"
+		},
+		"90yeobz": {
+			"operonId": "90yeobz",
+			"description": "Complete three demo tasks",
+			"checkbox": "open",
+			"fieldValues": {
+				"operonId": "90yeobz",
+				"status": "Project.Planned",
+				"priority": "B",
+				"taskIcon": "badge-check",
+				"taskColor": "64748B",
+				"note": "Turns the demo from reading into muscle memory by making a few real state changes.",
+				"parentTask": "eqt8ryo",
+				"datetimeCreated": "2026-07-14T12:08:17",
+				"datetimeModified": "2026-07-14T12:08:17"
+			},
+			"tags": [
+				"operon-demo"
+			],
+			"primary": {
+				"filePath": "Operon/Demo Workspace/Operon Basics Project.md",
+				"lineNumber": 97,
+				"format": "inline"
+			},
+			"datetimeModified": "2026-07-14T12:08:17",
+			"tier": "hot"
+		},
+		"gzb4dsu": {
+			"operonId": "gzb4dsu",
+			"description": "Open demo tasks on the Kanban board",
+			"checkbox": "open",
+			"fieldValues": {
+				"operonId": "gzb4dsu",
+				"status": "Project.Planned",
+				"priority": "C",
+				"taskIcon": "badge-check",
+				"taskColor": "64748B",
+				"note": "Connects the same tasks to a board view so status changes become easier to scan.",
+				"parentTask": "eqt8ryo",
+				"datetimeCreated": "2026-07-14T12:08:17",
+				"datetimeModified": "2026-07-14T12:08:17"
+			},
+			"tags": [
+				"operon-demo"
+			],
+			"primary": {
+				"filePath": "Operon/Demo Workspace/Operon Basics Project.md",
+				"lineNumber": 98,
+				"format": "inline"
+			},
+			"datetimeModified": "2026-07-14T12:08:17",
+			"tier": "hot"
+		},
+		"q2zbadp": {
+			"operonId": "q2zbadp",
+			"description": "Open scheduled demo tasks on the Calendar",
+			"checkbox": "open",
+			"fieldValues": {
+				"operonId": "q2zbadp",
+				"status": "Project.Planned",
+				"priority": "C",
+				"taskIcon": "badge-check",
+				"taskColor": "64748B",
+				"note": "Connects scheduled tasks to time planning so dates and timed blocks feel practical, not decorative.",
+				"parentTask": "eqt8ryo",
+				"datetimeCreated": "2026-07-14T12:08:17",
+				"datetimeModified": "2026-07-14T12:08:17"
+			},
+			"tags": [
+				"operon-demo"
+			],
+			"primary": {
+				"filePath": "Operon/Demo Workspace/Operon Basics Project.md",
+				"lineNumber": 99,
+				"format": "inline"
+			},
+			"datetimeModified": "2026-07-14T12:08:17",
+			"tier": "hot"
+		},
+		"l1dk70s": {
+			"operonId": "l1dk70s",
+			"description": "Operon Basics Project",
+			"checkbox": "open",
+			"fieldValues": {
+				"operonId": "l1dk70s",
+				"status": "Project.Planned",
+				"priority": "B",
+				"dateScheduled": "2026-07-14",
+				"dateDue": "2026-07-21",
+				"taskIcon": "sparkles",
+				"taskColor": "111827",
+				"datetimeCreated": "2026-07-14T12:08:17",
+				"datetimeModified": "2026-07-14T12:08:52",
+				"progress": "2",
+				"directSubtaskCount": "11",
+				"directDoneSubtaskCount": "0",
+				"directOpenSubtaskCount": "11",
+				"treeDescendantCount": "44",
+				"treeDoneDescendantCount": "1",
+				"treeOpenDescendantCount": "43",
+				"totalEstimate": "8700"
+			},
+			"tags": [],
+			"primary": {
+				"filePath": "Operon/Demo Workspace/Operon Basics Project.md",
+				"lineNumber": 0,
+				"format": "yaml"
+			},
+			"datetimeModified": "2026-07-14T12:08:52",
+			"tier": "hot"
+		}
+	},
+	"taskInstances": {
+		"inline:Operon/Demo Workspace/Set Up Your Obsidian Vault with Operon.md:19": {
+			"instanceKey": "inline:Operon/Demo Workspace/Set Up Your Obsidian Vault with Operon.md:19",
+			"operonId": "qg2t2tx",
+			"description": "Day 1 - Configure Operon Foundations",
+			"checkbox": "open",
+			"fieldValues": {
+				"operonId": "qg2t2tx",
+				"status": "Project.Planned",
+				"priority": "A",
+				"dateScheduled": "2026-07-15",
+				"totalEstimate": "10200",
+				"parentTask": "bui5bdb",
+				"progress": "0",
+				"directSubtaskCount": "6",
+				"directDoneSubtaskCount": "0",
+				"directOpenSubtaskCount": "6",
+				"treeDescendantCount": "6",
+				"treeDoneDescendantCount": "0",
+				"treeOpenDescendantCount": "6",
+				"taskIcon": "settings-2",
+				"taskColor": "2563eb",
+				"note": "Builds a clean foundation so every task created later uses the right language, location, and workflow.",
+				"datetimeCreated": "2026-07-14T12:08:17",
+				"datetimeModified": "2026-07-14T12:08:19"
+			},
+			"tags": [
+				"operon-demo",
+				"vault-setup"
+			],
+			"primary": {
+				"filePath": "Operon/Demo Workspace/Set Up Your Obsidian Vault with Operon.md",
+				"lineNumber": 19,
+				"format": "inline"
+			},
+			"datetimeModified": "2026-07-14T12:08:19",
+			"tier": "hot"
+		},
+		"inline:Operon/Demo Workspace/Set Up Your Obsidian Vault with Operon.md:20": {
+			"instanceKey": "inline:Operon/Demo Workspace/Set Up Your Obsidian Vault with Operon.md:20",
+			"operonId": "6iadtu8",
+			"description": "Review your Operon key mappings",
+			"checkbox": "open",
+			"fieldValues": {
+				"operonId": "6iadtu8",
+				"status": "Project.Planned",
+				"priority": "A",
+				"taskIcon": "settings-2",
+				"taskColor": "2563eb",
+				"dateScheduled": "2026-07-15",
+				"estimate": "1800",
+				"note": "Aligns Operon fields with the property names you want to see before tasks begin spreading across notes.",
+				"parentTask": "qg2t2tx",
+				"datetimeCreated": "2026-07-14T12:08:17",
+				"datetimeModified": "2026-07-14T12:08:17"
+			},
+			"tags": [
+				"operon-demo",
+				"settings"
+			],
+			"primary": {
+				"filePath": "Operon/Demo Workspace/Set Up Your Obsidian Vault with Operon.md",
+				"lineNumber": 20,
+				"format": "inline"
+			},
+			"datetimeModified": "2026-07-14T12:08:17",
+			"tier": "hot"
+		},
+		"inline:Operon/Demo Workspace/Set Up Your Obsidian Vault with Operon.md:21": {
+			"instanceKey": "inline:Operon/Demo Workspace/Set Up Your Obsidian Vault with Operon.md:21",
+			"operonId": "j0wllky",
+			"description": "Choose the priority levels you will actually use",
+			"checkbox": "open",
+			"fieldValues": {
+				"operonId": "j0wllky",
+				"status": "Project.Planned",
+				"priority": "A",
+				"taskIcon": "settings-2",
+				"taskColor": "2563eb",
+				"dateScheduled": "2026-07-15",
+				"estimate": "1800",
+				"note": "Keeps priority meaningful so important work does not become hidden inside another crowded list.",
+				"parentTask": "qg2t2tx",
+				"datetimeCreated": "2026-07-14T12:08:17",
+				"datetimeModified": "2026-07-14T12:08:17"
+			},
+			"tags": [
+				"operon-demo",
+				"settings"
+			],
+			"primary": {
+				"filePath": "Operon/Demo Workspace/Set Up Your Obsidian Vault with Operon.md",
+				"lineNumber": 21,
+				"format": "inline"
+			},
+			"datetimeModified": "2026-07-14T12:08:17",
+			"tier": "hot"
+		},
+		"inline:Operon/Demo Workspace/Set Up Your Obsidian Vault with Operon.md:22": {
+			"instanceKey": "inline:Operon/Demo Workspace/Set Up Your Obsidian Vault with Operon.md:22",
+			"operonId": "zn8m4ng",
+			"description": "Review your project workflow pipeline",
+			"checkbox": "open",
+			"fieldValues": {
+				"operonId": "zn8m4ng",
+				"status": "Project.Planned",
+				"priority": "A",
+				"taskIcon": "settings-2",
+				"taskColor": "2563eb",
+				"dateScheduled": "2026-07-15",
+				"estimate": "2400",
+				"note": "Makes statuses match the way you think about work from planning through active work and completion.",
+				"parentTask": "qg2t2tx",
+				"datetimeCreated": "2026-07-14T12:08:17",
+				"datetimeModified": "2026-07-14T12:08:17"
+			},
+			"tags": [
+				"operon-demo",
+				"settings"
+			],
+			"primary": {
+				"filePath": "Operon/Demo Workspace/Set Up Your Obsidian Vault with Operon.md",
+				"lineNumber": 22,
+				"format": "inline"
+			},
+			"datetimeModified": "2026-07-14T12:08:17",
+			"tier": "hot"
+		},
+		"inline:Operon/Demo Workspace/Set Up Your Obsidian Vault with Operon.md:23": {
+			"instanceKey": "inline:Operon/Demo Workspace/Set Up Your Obsidian Vault with Operon.md:23",
+			"operonId": "ta21a77",
+			"description": "Set where new inline tasks should be created",
+			"checkbox": "open",
+			"fieldValues": {
+				"operonId": "ta21a77",
+				"status": "Project.Planned",
+				"priority": "B",
+				"taskIcon": "settings-2",
+				"taskColor": "2563eb",
+				"dateScheduled": "2026-07-15",
+				"estimate": "1200",
+				"note": "Gives quick tasks a predictable home so small commitments do not scatter across random notes.",
+				"parentTask": "qg2t2tx",
+				"datetimeCreated": "2026-07-14T12:08:17",
+				"datetimeModified": "2026-07-14T12:08:17"
+			},
+			"tags": [
+				"operon-demo",
+				"settings"
+			],
+			"primary": {
+				"filePath": "Operon/Demo Workspace/Set Up Your Obsidian Vault with Operon.md",
+				"lineNumber": 23,
+				"format": "inline"
+			},
+			"datetimeModified": "2026-07-14T12:08:17",
+			"tier": "hot"
+		},
+		"inline:Operon/Demo Workspace/Set Up Your Obsidian Vault with Operon.md:24": {
+			"instanceKey": "inline:Operon/Demo Workspace/Set Up Your Obsidian Vault with Operon.md:24",
+			"operonId": "gc9gfty",
+			"description": "Set where new file tasks should be created",
+			"checkbox": "open",
+			"fieldValues": {
+				"operonId": "gc9gfty",
+				"status": "Project.Planned",
+				"priority": "B",
+				"taskIcon": "settings-2",
+				"taskColor": "2563eb",
+				"dateScheduled": "2026-07-15",
+				"estimate": "1200",
+				"note": "Gives larger outcomes a stable folder before they become full working notes with context and subtasks.",
+				"parentTask": "qg2t2tx",
+				"datetimeCreated": "2026-07-14T12:08:17",
+				"datetimeModified": "2026-07-14T12:08:17"
+			},
+			"tags": [
+				"operon-demo",
+				"settings"
+			],
+			"primary": {
+				"filePath": "Operon/Demo Workspace/Set Up Your Obsidian Vault with Operon.md",
+				"lineNumber": 24,
+				"format": "inline"
+			},
+			"datetimeModified": "2026-07-14T12:08:17",
+			"tier": "hot"
+		},
+		"inline:Operon/Demo Workspace/Set Up Your Obsidian Vault with Operon.md:25": {
+			"instanceKey": "inline:Operon/Demo Workspace/Set Up Your Obsidian Vault with Operon.md:25",
+			"operonId": "em0p2lt",
+			"description": "Decide which task fields should stay visible",
+			"checkbox": "open",
+			"fieldValues": {
+				"operonId": "em0p2lt",
+				"status": "Project.Planned",
+				"priority": "B",
+				"taskIcon": "settings-2",
+				"taskColor": "2563eb",
+				"dateScheduled": "2026-07-15",
+				"estimate": "1800",
+				"note": "Keeps task surfaces readable while preserving the metadata that actually helps you decide what to do.",
+				"parentTask": "qg2t2tx",
+				"datetimeCreated": "2026-07-14T12:08:17",
+				"datetimeModified": "2026-07-14T12:08:17"
+			},
+			"tags": [
+				"operon-demo",
+				"settings"
+			],
+			"primary": {
+				"filePath": "Operon/Demo Workspace/Set Up Your Obsidian Vault with Operon.md",
+				"lineNumber": 25,
+				"format": "inline"
+			},
+			"datetimeModified": "2026-07-14T12:08:17",
+			"tier": "hot"
+		},
+		"inline:Operon/Demo Workspace/Set Up Your Obsidian Vault with Operon.md:29": {
+			"instanceKey": "inline:Operon/Demo Workspace/Set Up Your Obsidian Vault with Operon.md:29",
+			"operonId": "dt0s583",
+			"description": "Day 2 - Build Core Filters",
+			"checkbox": "open",
+			"fieldValues": {
+				"operonId": "dt0s583",
+				"status": "Project.Planned",
+				"priority": "A",
+				"dateScheduled": "2026-07-16",
+				"totalEstimate": "12900",
+				"parentTask": "bui5bdb",
+				"progress": "0",
+				"directSubtaskCount": "6",
+				"directDoneSubtaskCount": "0",
+				"directOpenSubtaskCount": "6",
+				"treeDescendantCount": "6",
+				"treeDoneDescendantCount": "0",
+				"treeOpenDescendantCount": "6",
+				"taskIcon": "funnel",
+				"taskColor": "7c3aed",
+				"note": "Creates reusable views before Calendar and Kanban work so the user knows which tasks matter first.",
+				"datetimeCreated": "2026-07-14T12:08:17",
+				"datetimeModified": "2026-07-14T12:08:19"
+			},
+			"tags": [
+				"operon-demo",
+				"vault-setup"
+			],
+			"primary": {
+				"filePath": "Operon/Demo Workspace/Set Up Your Obsidian Vault with Operon.md",
+				"lineNumber": 29,
+				"format": "inline"
+			},
+			"datetimeModified": "2026-07-14T12:08:19",
+			"tier": "hot"
+		},
+		"inline:Operon/Demo Workspace/Set Up Your Obsidian Vault with Operon.md:30": {
+			"instanceKey": "inline:Operon/Demo Workspace/Set Up Your Obsidian Vault with Operon.md:30",
+			"operonId": "3ffnwip",
+			"description": "Create a daily focus filter",
+			"checkbox": "open",
+			"fieldValues": {
+				"operonId": "3ffnwip",
+				"status": "Project.Planned",
+				"priority": "A",
+				"taskIcon": "funnel",
+				"taskColor": "7c3aed",
+				"dateScheduled": "2026-07-16",
+				"estimate": "2400",
+				"note": "Shows only the work that matters today and reduces dashboard noise before the day begins.",
+				"parentTask": "dt0s583",
+				"datetimeCreated": "2026-07-14T12:08:17",
+				"datetimeModified": "2026-07-14T12:08:17"
+			},
+			"tags": [
+				"operon-demo",
+				"filters"
+			],
+			"primary": {
+				"filePath": "Operon/Demo Workspace/Set Up Your Obsidian Vault with Operon.md",
+				"lineNumber": 30,
+				"format": "inline"
+			},
+			"datetimeModified": "2026-07-14T12:08:17",
+			"tier": "hot"
+		},
+		"inline:Operon/Demo Workspace/Set Up Your Obsidian Vault with Operon.md:31": {
+			"instanceKey": "inline:Operon/Demo Workspace/Set Up Your Obsidian Vault with Operon.md:31",
+			"operonId": "idzw9r2",
+			"description": "Create a weekly planning filter",
+			"checkbox": "open",
+			"fieldValues": {
+				"operonId": "idzw9r2",
+				"status": "Project.Planned",
+				"priority": "A",
+				"taskIcon": "funnel",
+				"taskColor": "7c3aed",
+				"dateScheduled": "2026-07-16",
+				"estimate": "2400",
+				"note": "Gives a practical view for deciding what can realistically fit inside the current week.",
+				"parentTask": "dt0s583",
+				"datetimeCreated": "2026-07-14T12:08:17",
+				"datetimeModified": "2026-07-14T12:08:17"
+			},
+			"tags": [
+				"operon-demo",
+				"filters"
+			],
+			"primary": {
+				"filePath": "Operon/Demo Workspace/Set Up Your Obsidian Vault with Operon.md",
+				"lineNumber": 31,
+				"format": "inline"
+			},
+			"datetimeModified": "2026-07-14T12:08:17",
+			"tier": "hot"
+		},
+		"inline:Operon/Demo Workspace/Set Up Your Obsidian Vault with Operon.md:32": {
+			"instanceKey": "inline:Operon/Demo Workspace/Set Up Your Obsidian Vault with Operon.md:32",
+			"operonId": "jicdgin",
+			"description": "Create an overdue review filter for the last 3 or 7 days",
+			"checkbox": "open",
+			"fieldValues": {
+				"operonId": "jicdgin",
+				"status": "Project.Planned",
+				"priority": "A",
+				"taskIcon": "funnel",
+				"taskColor": "7c3aed",
+				"dateScheduled": "2026-07-16",
+				"estimate": "1800",
+				"note": "Catches slipped commitments before they disappear into old notes or become silent backlog.",
+				"parentTask": "dt0s583",
+				"datetimeCreated": "2026-07-14T12:08:17",
+				"datetimeModified": "2026-07-14T12:08:17"
+			},
+			"tags": [
+				"operon-demo",
+				"filters"
+			],
+			"primary": {
+				"filePath": "Operon/Demo Workspace/Set Up Your Obsidian Vault with Operon.md",
+				"lineNumber": 32,
+				"format": "inline"
+			},
+			"datetimeModified": "2026-07-14T12:08:17",
+			"tier": "hot"
+		},
+		"inline:Operon/Demo Workspace/Set Up Your Obsidian Vault with Operon.md:33": {
+			"instanceKey": "inline:Operon/Demo Workspace/Set Up Your Obsidian Vault with Operon.md:33",
+			"operonId": "m2gi815",
+			"description": "Create an active projects filter",
+			"checkbox": "open",
+			"fieldValues": {
+				"operonId": "m2gi815",
+				"status": "Project.Planned",
+				"priority": "B",
+				"taskIcon": "funnel",
+				"taskColor": "7c3aed",
+				"dateScheduled": "2026-07-16",
+				"estimate": "1800",
+				"note": "Makes ongoing project work visible without manually browsing folders or remembering every note path.",
+				"parentTask": "dt0s583",
+				"datetimeCreated": "2026-07-14T12:08:17",
+				"datetimeModified": "2026-07-14T12:08:17"
+			},
+			"tags": [
+				"operon-demo",
+				"filters"
+			],
+			"primary": {
+				"filePath": "Operon/Demo Workspace/Set Up Your Obsidian Vault with Operon.md",
+				"lineNumber": 33,
+				"format": "inline"
+			},
+			"datetimeModified": "2026-07-14T12:08:17",
+			"tier": "hot"
+		},
+		"inline:Operon/Demo Workspace/Set Up Your Obsidian Vault with Operon.md:34": {
+			"instanceKey": "inline:Operon/Demo Workspace/Set Up Your Obsidian Vault with Operon.md:34",
+			"operonId": "d5qyfon",
+			"description": "Create a high-priority open tasks filter",
+			"checkbox": "open",
+			"fieldValues": {
+				"operonId": "d5qyfon",
+				"status": "Project.Planned",
+				"priority": "B",
+				"taskIcon": "funnel",
+				"taskColor": "7c3aed",
+				"dateScheduled": "2026-07-16",
+				"estimate": "1800",
+				"note": "Helps important unfinished work surface before it becomes buried under easier tasks.",
+				"parentTask": "dt0s583",
+				"datetimeCreated": "2026-07-14T12:08:17",
+				"datetimeModified": "2026-07-14T12:08:17"
+			},
+			"tags": [
+				"operon-demo",
+				"filters"
+			],
+			"primary": {
+				"filePath": "Operon/Demo Workspace/Set Up Your Obsidian Vault with Operon.md",
+				"lineNumber": 34,
+				"format": "inline"
+			},
+			"datetimeModified": "2026-07-14T12:08:17",
+			"tier": "hot"
+		},
+		"inline:Operon/Demo Workspace/Set Up Your Obsidian Vault with Operon.md:35": {
+			"instanceKey": "inline:Operon/Demo Workspace/Set Up Your Obsidian Vault with Operon.md:35",
+			"operonId": "nqmmi1b",
+			"description": "Advanced - create an Eisenhower matrix filter with contexts or tags",
+			"checkbox": "open",
+			"fieldValues": {
+				"operonId": "nqmmi1b",
+				"status": "Project.Planned",
+				"priority": "C",
+				"taskIcon": "funnel",
+				"taskColor": "7c3aed",
+				"dateScheduled": "2026-07-16",
+				"estimate": "2700",
+				"note": "Separates urgent, important, delegated, and low-value work so attention follows decision quality instead of list order.",
+				"parentTask": "dt0s583",
+				"datetimeCreated": "2026-07-14T12:08:17",
+				"datetimeModified": "2026-07-14T12:08:17"
+			},
+			"tags": [
+				"operon-demo",
+				"filters",
+				"advanced"
+			],
+			"primary": {
+				"filePath": "Operon/Demo Workspace/Set Up Your Obsidian Vault with Operon.md",
+				"lineNumber": 35,
+				"format": "inline"
+			},
+			"datetimeModified": "2026-07-14T12:08:17",
+			"tier": "hot"
+		},
+		"inline:Operon/Demo Workspace/Set Up Your Obsidian Vault with Operon.md:39": {
+			"instanceKey": "inline:Operon/Demo Workspace/Set Up Your Obsidian Vault with Operon.md:39",
+			"operonId": "bco2vgu",
+			"description": "Day 3 - Connect Projects To Work",
+			"checkbox": "open",
+			"fieldValues": {
+				"operonId": "bco2vgu",
+				"status": "Project.Planned",
+				"priority": "B",
+				"dateScheduled": "2026-07-17",
+				"totalEstimate": "11700",
+				"parentTask": "bui5bdb",
+				"progress": "0",
+				"directSubtaskCount": "6",
+				"directDoneSubtaskCount": "0",
+				"directOpenSubtaskCount": "6",
+				"treeDescendantCount": "6",
+				"treeDoneDescendantCount": "0",
+				"treeOpenDescendantCount": "6",
+				"taskIcon": "folder-tree",
+				"taskColor": "0f766e",
+				"note": "Turns loose actions into project-aware work that can be found, filtered, and reviewed in context.",
+				"datetimeCreated": "2026-07-14T12:08:17",
+				"datetimeModified": "2026-07-14T12:08:19"
+			},
+			"tags": [
+				"operon-demo",
+				"vault-setup"
+			],
+			"primary": {
+				"filePath": "Operon/Demo Workspace/Set Up Your Obsidian Vault with Operon.md",
+				"lineNumber": 39,
+				"format": "inline"
+			},
+			"datetimeModified": "2026-07-14T12:08:19",
+			"tier": "hot"
+		},
+		"inline:Operon/Demo Workspace/Set Up Your Obsidian Vault with Operon.md:40": {
+			"instanceKey": "inline:Operon/Demo Workspace/Set Up Your Obsidian Vault with Operon.md:40",
+			"operonId": "sxawf2x",
+			"description": "Identify one active outcome that deserves a project file task",
+			"checkbox": "open",
+			"fieldValues": {
+				"operonId": "sxawf2x",
+				"status": "Project.Planned",
+				"priority": "A",
+				"taskIcon": "folder-tree",
+				"taskColor": "0f766e",
+				"dateScheduled": "2026-07-17",
+				"estimate": "1800",
+				"note": "Helps distinguish a real project from a small action so larger work gets enough context.",
+				"parentTask": "bco2vgu",
+				"datetimeCreated": "2026-07-14T12:08:17",
+				"datetimeModified": "2026-07-14T12:08:17"
+			},
+			"tags": [
+				"operon-demo",
+				"projects"
+			],
+			"primary": {
+				"filePath": "Operon/Demo Workspace/Set Up Your Obsidian Vault with Operon.md",
+				"lineNumber": 40,
+				"format": "inline"
+			},
+			"datetimeModified": "2026-07-14T12:08:17",
+			"tier": "hot"
+		},
+		"inline:Operon/Demo Workspace/Set Up Your Obsidian Vault with Operon.md:41": {
+			"instanceKey": "inline:Operon/Demo Workspace/Set Up Your Obsidian Vault with Operon.md:41",
+			"operonId": "saeaded",
+			"description": "Create a project file task for that outcome",
+			"checkbox": "open",
+			"fieldValues": {
+				"operonId": "saeaded",
+				"status": "Project.Planned",
+				"priority": "A",
+				"taskIcon": "folder-tree",
+				"taskColor": "0f766e",
+				"dateScheduled": "2026-07-17",
+				"estimate": "2400",
+				"note": "Gives the outcome a dedicated note where decisions, context, and child tasks can live together.",
+				"parentTask": "bco2vgu",
+				"datetimeCreated": "2026-07-14T12:08:17",
+				"datetimeModified": "2026-07-14T12:08:17"
+			},
+			"tags": [
+				"operon-demo",
+				"projects"
+			],
+			"primary": {
+				"filePath": "Operon/Demo Workspace/Set Up Your Obsidian Vault with Operon.md",
+				"lineNumber": 41,
+				"format": "inline"
+			},
+			"datetimeModified": "2026-07-14T12:08:17",
+			"tier": "hot"
+		},
+		"inline:Operon/Demo Workspace/Set Up Your Obsidian Vault with Operon.md:42": {
+			"instanceKey": "inline:Operon/Demo Workspace/Set Up Your Obsidian Vault with Operon.md:42",
+			"operonId": "bdezwyz",
+			"description": "Add project-specific tasks under that project",
+			"checkbox": "open",
+			"fieldValues": {
+				"operonId": "bdezwyz",
+				"status": "Project.Planned",
+				"priority": "B",
+				"taskIcon": "folder-tree",
+				"taskColor": "0f766e",
+				"dateScheduled": "2026-07-17",
+				"estimate": "2700",
+				"note": "Keeps related actions connected to the outcome they support instead of scattering them through the vault.",
+				"parentTask": "bco2vgu",
+				"datetimeCreated": "2026-07-14T12:08:17",
+				"datetimeModified": "2026-07-14T12:08:17"
+			},
+			"tags": [
+				"operon-demo",
+				"projects"
+			],
+			"primary": {
+				"filePath": "Operon/Demo Workspace/Set Up Your Obsidian Vault with Operon.md",
+				"lineNumber": 42,
+				"format": "inline"
+			},
+			"datetimeModified": "2026-07-14T12:08:17",
+			"tier": "hot"
+		},
+		"inline:Operon/Demo Workspace/Set Up Your Obsidian Vault with Operon.md:43": {
+			"instanceKey": "inline:Operon/Demo Workspace/Set Up Your Obsidian Vault with Operon.md:43",
+			"operonId": "2y0zajg",
+			"description": "Practice finding existing work with Task Finder",
+			"checkbox": "open",
+			"fieldValues": {
+				"operonId": "2y0zajg",
+				"status": "Project.Planned",
+				"priority": "B",
+				"taskIcon": "folder-tree",
+				"taskColor": "0f766e",
+				"dateScheduled": "2026-07-17",
+				"estimate": "1800",
+				"note": "Builds confidence that any task can be found quickly without remembering where it was written.",
+				"parentTask": "bco2vgu",
+				"datetimeCreated": "2026-07-14T12:08:17",
+				"datetimeModified": "2026-07-14T12:08:17"
+			},
+			"tags": [
+				"operon-demo",
+				"task-finder"
+			],
+			"primary": {
+				"filePath": "Operon/Demo Workspace/Set Up Your Obsidian Vault with Operon.md",
+				"lineNumber": 43,
+				"format": "inline"
+			},
+			"datetimeModified": "2026-07-14T12:08:17",
+			"tier": "hot"
+		},
+		"inline:Operon/Demo Workspace/Set Up Your Obsidian Vault with Operon.md:44": {
+			"instanceKey": "inline:Operon/Demo Workspace/Set Up Your Obsidian Vault with Operon.md:44",
+			"operonId": "g80q0jb",
+			"description": "Create a project filter for the active outcome",
+			"checkbox": "open",
+			"fieldValues": {
+				"operonId": "g80q0jb",
+				"status": "Project.Planned",
+				"priority": "B",
+				"taskIcon": "folder-tree",
+				"taskColor": "0f766e",
+				"dateScheduled": "2026-07-17",
+				"estimate": "1800",
+				"note": "Gives the project its own reusable command center instead of relying on one global task list.",
+				"parentTask": "bco2vgu",
+				"datetimeCreated": "2026-07-14T12:08:17",
+				"datetimeModified": "2026-07-14T12:08:17"
+			},
+			"tags": [
+				"operon-demo",
+				"filters"
+			],
+			"primary": {
+				"filePath": "Operon/Demo Workspace/Set Up Your Obsidian Vault with Operon.md",
+				"lineNumber": 44,
+				"format": "inline"
+			},
+			"datetimeModified": "2026-07-14T12:08:17",
+			"tier": "hot"
+		},
+		"inline:Operon/Demo Workspace/Set Up Your Obsidian Vault with Operon.md:45": {
+			"instanceKey": "inline:Operon/Demo Workspace/Set Up Your Obsidian Vault with Operon.md:45",
+			"operonId": "e8n9syy",
+			"description": "Embed the project filter inside the project note",
+			"checkbox": "open",
+			"fieldValues": {
+				"operonId": "e8n9syy",
+				"status": "Project.Planned",
+				"priority": "C",
+				"taskIcon": "folder-tree",
+				"taskColor": "0f766e",
+				"dateScheduled": "2026-07-17",
+				"estimate": "1200",
+				"note": "Lets a project note become both the source of context and a live view of the work it owns.",
+				"parentTask": "bco2vgu",
+				"datetimeCreated": "2026-07-14T12:08:17",
+				"datetimeModified": "2026-07-14T12:08:17"
+			},
+			"tags": [
+				"operon-demo",
+				"filters"
+			],
+			"primary": {
+				"filePath": "Operon/Demo Workspace/Set Up Your Obsidian Vault with Operon.md",
+				"lineNumber": 45,
+				"format": "inline"
+			},
+			"datetimeModified": "2026-07-14T12:08:17",
+			"tier": "hot"
+		},
+		"inline:Operon/Demo Workspace/Set Up Your Obsidian Vault with Operon.md:49": {
+			"instanceKey": "inline:Operon/Demo Workspace/Set Up Your Obsidian Vault with Operon.md:49",
+			"operonId": "fzqn0nb",
+			"description": "Day 4 - Plan Work Across Time",
+			"checkbox": "open",
+			"fieldValues": {
+				"operonId": "fzqn0nb",
+				"status": "Project.Planned",
+				"priority": "A",
+				"dateScheduled": "2026-07-18",
+				"totalEstimate": "11700",
+				"parentTask": "bui5bdb",
+				"progress": "0",
+				"directSubtaskCount": "5",
+				"directDoneSubtaskCount": "0",
+				"directOpenSubtaskCount": "5",
+				"treeDescendantCount": "5",
+				"treeDoneDescendantCount": "0",
+				"treeOpenDescendantCount": "5",
+				"taskIcon": "calendar-days",
+				"taskColor": "ea580c",
+				"note": "Turns filtered work into a realistic weekly plan without filling the Calendar with vague intentions.",
+				"datetimeCreated": "2026-07-14T12:08:17",
+				"datetimeModified": "2026-07-14T12:08:19"
+			},
+			"tags": [
+				"operon-demo",
+				"vault-setup"
+			],
+			"primary": {
+				"filePath": "Operon/Demo Workspace/Set Up Your Obsidian Vault with Operon.md",
+				"lineNumber": 49,
+				"format": "inline"
+			},
+			"datetimeModified": "2026-07-14T12:08:19",
+			"tier": "hot"
+		},
+		"inline:Operon/Demo Workspace/Set Up Your Obsidian Vault with Operon.md:50": {
+			"instanceKey": "inline:Operon/Demo Workspace/Set Up Your Obsidian Vault with Operon.md:50",
+			"operonId": "p2aiva9",
+			"description": "Have you checked your pinned focus tasks today",
+			"checkbox": "open",
+			"fieldValues": {
+				"operonId": "p2aiva9",
+				"status": "Project.Planned",
+				"priority": "A",
+				"taskIcon": "calendar-days",
+				"taskColor": "ea580c",
+				"dateScheduled": "2026-07-18",
+				"estimate": "900",
+				"note": "Keeps the few tasks that deserve attention visible while you move through notes, filters, and planning views.",
+				"parentTask": "fzqn0nb",
+				"datetimeCreated": "2026-07-14T12:08:17",
+				"datetimeModified": "2026-07-14T12:08:17"
+			},
+			"tags": [
+				"operon-demo",
+				"pinned"
+			],
+			"primary": {
+				"filePath": "Operon/Demo Workspace/Set Up Your Obsidian Vault with Operon.md",
+				"lineNumber": 50,
+				"format": "inline"
+			},
+			"datetimeModified": "2026-07-14T12:08:17",
+			"tier": "hot"
+		},
+		"inline:Operon/Demo Workspace/Set Up Your Obsidian Vault with Operon.md:51": {
+			"instanceKey": "inline:Operon/Demo Workspace/Set Up Your Obsidian Vault with Operon.md:51",
+			"operonId": "sxt6flq",
+			"description": "Choose which tasks deserve calendar time this week",
+			"checkbox": "open",
+			"fieldValues": {
+				"operonId": "sxt6flq",
+				"status": "Project.Planned",
+				"priority": "A",
+				"taskIcon": "calendar-days",
+				"taskColor": "ea580c",
+				"dateScheduled": "2026-07-18",
+				"estimate": "1800",
+				"note": "Protects the Calendar from clutter by scheduling only the work that benefits from time commitment.",
+				"parentTask": "fzqn0nb",
+				"datetimeCreated": "2026-07-14T12:08:17",
+				"datetimeModified": "2026-07-14T12:08:17"
+			},
+			"tags": [
+				"operon-demo",
+				"calendar"
+			],
+			"primary": {
+				"filePath": "Operon/Demo Workspace/Set Up Your Obsidian Vault with Operon.md",
+				"lineNumber": 51,
+				"format": "inline"
+			},
+			"datetimeModified": "2026-07-14T12:08:17",
+			"tier": "hot"
+		},
+		"inline:Operon/Demo Workspace/Set Up Your Obsidian Vault with Operon.md:52": {
+			"instanceKey": "inline:Operon/Demo Workspace/Set Up Your Obsidian Vault with Operon.md:52",
+			"operonId": "4eyp4he",
+			"description": "Reserve focus blocks for the highest-value tasks",
+			"checkbox": "open",
+			"fieldValues": {
+				"operonId": "4eyp4he",
+				"status": "Project.Planned",
+				"priority": "A",
+				"taskIcon": "calendar-days",
+				"taskColor": "ea580c",
+				"dateScheduled": "2026-07-18",
+				"datetimeStart": "2026-07-18T09:00:00",
+				"datetimeEnd": "2026-07-18T10:30:00",
+				"estimate": "5400",
+				"note": "Turns important work into protected time instead of letting it compete with a loose list.",
+				"parentTask": "fzqn0nb",
+				"datetimeCreated": "2026-07-14T12:08:17",
+				"datetimeModified": "2026-07-14T12:08:17"
+			},
+			"tags": [
+				"operon-demo",
+				"calendar"
+			],
+			"primary": {
+				"filePath": "Operon/Demo Workspace/Set Up Your Obsidian Vault with Operon.md",
+				"lineNumber": 52,
+				"format": "inline"
+			},
+			"datetimeModified": "2026-07-14T12:08:17",
+			"tier": "hot"
+		},
+		"inline:Operon/Demo Workspace/Set Up Your Obsidian Vault with Operon.md:53": {
+			"instanceKey": "inline:Operon/Demo Workspace/Set Up Your Obsidian Vault with Operon.md:53",
+			"operonId": "upbc24k",
+			"description": "Review unscheduled work after planning the week",
+			"checkbox": "open",
+			"fieldValues": {
+				"operonId": "upbc24k",
+				"status": "Project.Planned",
+				"priority": "B",
+				"taskIcon": "calendar-days",
+				"taskColor": "ea580c",
+				"dateScheduled": "2026-07-18",
+				"estimate": "1800",
+				"note": "Keeps lower-priority work visible without forcing every task onto the Calendar.",
+				"parentTask": "fzqn0nb",
+				"datetimeCreated": "2026-07-14T12:08:17",
+				"datetimeModified": "2026-07-14T12:08:17"
+			},
+			"tags": [
+				"operon-demo",
+				"calendar"
+			],
+			"primary": {
+				"filePath": "Operon/Demo Workspace/Set Up Your Obsidian Vault with Operon.md",
+				"lineNumber": 53,
+				"format": "inline"
+			},
+			"datetimeModified": "2026-07-14T12:08:17",
+			"tier": "hot"
+		},
+		"inline:Operon/Demo Workspace/Set Up Your Obsidian Vault with Operon.md:54": {
+			"instanceKey": "inline:Operon/Demo Workspace/Set Up Your Obsidian Vault with Operon.md:54",
+			"operonId": "s23wbms",
+			"description": "Adjust the weekly plan after seeing available capacity",
+			"checkbox": "open",
+			"fieldValues": {
+				"operonId": "s23wbms",
+				"status": "Project.Planned",
+				"priority": "B",
+				"taskIcon": "calendar-days",
+				"taskColor": "ea580c",
+				"dateScheduled": "2026-07-18",
+				"estimate": "1800",
+				"note": "Helps you plan realistically instead of overcommitting and carrying silent failure into the next day.",
+				"parentTask": "fzqn0nb",
+				"datetimeCreated": "2026-07-14T12:08:17",
+				"datetimeModified": "2026-07-14T12:08:17"
+			},
+			"tags": [
+				"operon-demo",
+				"calendar"
+			],
+			"primary": {
+				"filePath": "Operon/Demo Workspace/Set Up Your Obsidian Vault with Operon.md",
+				"lineNumber": 54,
+				"format": "inline"
+			},
+			"datetimeModified": "2026-07-14T12:08:17",
+			"tier": "hot"
+		},
+		"inline:Operon/Demo Workspace/Set Up Your Obsidian Vault with Operon.md:58": {
+			"instanceKey": "inline:Operon/Demo Workspace/Set Up Your Obsidian Vault with Operon.md:58",
+			"operonId": "2vgf4ge",
+			"description": "Day 5 - Operate From Kanban",
+			"checkbox": "open",
+			"fieldValues": {
+				"operonId": "2vgf4ge",
+				"status": "Project.Planned",
+				"priority": "B",
+				"dateScheduled": "2026-07-19",
+				"totalEstimate": "7800",
+				"parentTask": "bui5bdb",
+				"progress": "0",
+				"directSubtaskCount": "4",
+				"directDoneSubtaskCount": "0",
+				"directOpenSubtaskCount": "4",
+				"treeDescendantCount": "4",
+				"treeDoneDescendantCount": "0",
+				"treeOpenDescendantCount": "4",
+				"taskIcon": "columns-3",
+				"taskColor": "db2777",
+				"note": "Turns project work into a board that shows movement, friction, and decisions across the week.",
+				"datetimeCreated": "2026-07-14T12:08:17",
+				"datetimeModified": "2026-07-14T12:08:19"
+			},
+			"tags": [
+				"operon-demo",
+				"vault-setup"
+			],
+			"primary": {
+				"filePath": "Operon/Demo Workspace/Set Up Your Obsidian Vault with Operon.md",
+				"lineNumber": 58,
+				"format": "inline"
+			},
+			"datetimeModified": "2026-07-14T12:08:19",
+			"tier": "hot"
+		},
+		"inline:Operon/Demo Workspace/Set Up Your Obsidian Vault with Operon.md:59": {
+			"instanceKey": "inline:Operon/Demo Workspace/Set Up Your Obsidian Vault with Operon.md:59",
+			"operonId": "crrlnxx",
+			"description": "Create a Kanban view for active project work",
+			"checkbox": "open",
+			"fieldValues": {
+				"operonId": "crrlnxx",
+				"status": "Project.Planned",
+				"priority": "B",
+				"taskIcon": "columns-3",
+				"taskColor": "db2777",
+				"dateScheduled": "2026-07-19",
+				"estimate": "2400",
+				"note": "Shows how work moves through statuses across the vault without requiring a separate board system.",
+				"parentTask": "2vgf4ge",
+				"datetimeCreated": "2026-07-14T12:08:17",
+				"datetimeModified": "2026-07-14T12:08:17"
+			},
+			"tags": [
+				"operon-demo",
+				"kanban"
+			],
+			"primary": {
+				"filePath": "Operon/Demo Workspace/Set Up Your Obsidian Vault with Operon.md",
+				"lineNumber": 59,
+				"format": "inline"
+			},
+			"datetimeModified": "2026-07-14T12:08:17",
+			"tier": "hot"
+		},
+		"inline:Operon/Demo Workspace/Set Up Your Obsidian Vault with Operon.md:60": {
+			"instanceKey": "inline:Operon/Demo Workspace/Set Up Your Obsidian Vault with Operon.md:60",
+			"operonId": "odzx6bd",
+			"description": "Review active paused and blocked work separately",
+			"checkbox": "open",
+			"fieldValues": {
+				"operonId": "odzx6bd",
+				"status": "Project.Planned",
+				"priority": "A",
+				"taskIcon": "columns-3",
+				"taskColor": "db2777",
+				"dateScheduled": "2026-07-19",
+				"estimate": "1800",
+				"note": "Makes stalled work easier to notice before it quietly becomes forgotten work.",
+				"parentTask": "2vgf4ge",
+				"datetimeCreated": "2026-07-14T12:08:17",
+				"datetimeModified": "2026-07-14T12:08:17"
+			},
+			"tags": [
+				"operon-demo",
+				"kanban"
+			],
+			"primary": {
+				"filePath": "Operon/Demo Workspace/Set Up Your Obsidian Vault with Operon.md",
+				"lineNumber": 60,
+				"format": "inline"
+			},
+			"datetimeModified": "2026-07-14T12:08:17",
+			"tier": "hot"
+		},
+		"inline:Operon/Demo Workspace/Set Up Your Obsidian Vault with Operon.md:61": {
+			"instanceKey": "inline:Operon/Demo Workspace/Set Up Your Obsidian Vault with Operon.md:61",
+			"operonId": "vk5l5zm",
+			"description": "Use statuses to keep project state honest",
+			"checkbox": "open",
+			"fieldValues": {
+				"operonId": "vk5l5zm",
+				"status": "Project.Planned",
+				"priority": "B",
+				"taskIcon": "columns-3",
+				"taskColor": "db2777",
+				"dateScheduled": "2026-07-19",
+				"estimate": "1800",
+				"note": "Keeps filters, Kanban, Calendar, and project progress aligned around the same source of truth.",
+				"parentTask": "2vgf4ge",
+				"datetimeCreated": "2026-07-14T12:08:17",
+				"datetimeModified": "2026-07-14T12:08:17"
+			},
+			"tags": [
+				"operon-demo",
+				"kanban"
+			],
+			"primary": {
+				"filePath": "Operon/Demo Workspace/Set Up Your Obsidian Vault with Operon.md",
+				"lineNumber": 61,
+				"format": "inline"
+			},
+			"datetimeModified": "2026-07-14T12:08:17",
+			"tier": "hot"
+		},
+		"inline:Operon/Demo Workspace/Set Up Your Obsidian Vault with Operon.md:62": {
+			"instanceKey": "inline:Operon/Demo Workspace/Set Up Your Obsidian Vault with Operon.md:62",
+			"operonId": "e7rr9vp",
+			"description": "Decide what should move forward before the week ends",
+			"checkbox": "open",
+			"fieldValues": {
+				"operonId": "e7rr9vp",
+				"status": "Project.Planned",
+				"priority": "B",
+				"taskIcon": "columns-3",
+				"taskColor": "db2777",
+				"dateScheduled": "2026-07-19",
+				"estimate": "1800",
+				"note": "Turns the board into a planning surface where the next useful action becomes clear.",
+				"parentTask": "2vgf4ge",
+				"datetimeCreated": "2026-07-14T12:08:17",
+				"datetimeModified": "2026-07-14T12:08:17"
+			},
+			"tags": [
+				"operon-demo",
+				"kanban"
+			],
+			"primary": {
+				"filePath": "Operon/Demo Workspace/Set Up Your Obsidian Vault with Operon.md",
+				"lineNumber": 62,
+				"format": "inline"
+			},
+			"datetimeModified": "2026-07-14T12:08:17",
+			"tier": "hot"
+		},
+		"inline:Operon/Demo Workspace/Set Up Your Obsidian Vault with Operon.md:66": {
+			"instanceKey": "inline:Operon/Demo Workspace/Set Up Your Obsidian Vault with Operon.md:66",
+			"operonId": "v0a5bww",
+			"description": "Day 6 - Add Rhythm",
+			"checkbox": "open",
+			"fieldValues": {
+				"operonId": "v0a5bww",
+				"status": "Project.Planned",
+				"priority": "B",
+				"dateScheduled": "2026-07-20",
+				"totalEstimate": "6600",
+				"parentTask": "bui5bdb",
+				"progress": "0",
+				"directSubtaskCount": "4",
+				"directDoneSubtaskCount": "0",
+				"directOpenSubtaskCount": "4",
+				"treeDescendantCount": "4",
+				"treeDoneDescendantCount": "0",
+				"treeOpenDescendantCount": "4",
+				"taskIcon": "repeat-2",
+				"taskColor": "0891b2",
+				"note": "Converts one-time setup work into repeatable maintenance habits that keep the system useful.",
+				"datetimeCreated": "2026-07-14T12:08:17",
+				"datetimeModified": "2026-07-14T12:08:19"
+			},
+			"tags": [
+				"operon-demo",
+				"vault-setup"
+			],
+			"primary": {
+				"filePath": "Operon/Demo Workspace/Set Up Your Obsidian Vault with Operon.md",
+				"lineNumber": 66,
+				"format": "inline"
+			},
+			"datetimeModified": "2026-07-14T12:08:19",
+			"tier": "hot"
+		},
+		"inline:Operon/Demo Workspace/Set Up Your Obsidian Vault with Operon.md:67": {
+			"instanceKey": "inline:Operon/Demo Workspace/Set Up Your Obsidian Vault with Operon.md:67",
+			"operonId": "7gcfkdi",
+			"description": "Create a recurring weekly review task",
+			"checkbox": "open",
+			"fieldValues": {
+				"operonId": "7gcfkdi",
+				"status": "Project.Planned",
+				"priority": "A",
+				"taskIcon": "repeat-2",
+				"taskColor": "0891b2",
+				"dateScheduled": "2026-07-20",
+				"estimate": "1800",
+				"repeat": "mode=schedule|freq=week|interval=1",
+				"note": "Makes system maintenance repeatable so the vault does not depend on memory or motivation.",
+				"parentTask": "v0a5bww",
+				"datetimeCreated": "2026-07-14T12:08:17",
+				"datetimeModified": "2026-07-14T12:08:17"
+			},
+			"tags": [
+				"operon-demo",
+				"recurring"
+			],
+			"primary": {
+				"filePath": "Operon/Demo Workspace/Set Up Your Obsidian Vault with Operon.md",
+				"lineNumber": 67,
+				"format": "inline"
+			},
+			"datetimeModified": "2026-07-14T12:08:17",
+			"tier": "hot"
+		},
+		"inline:Operon/Demo Workspace/Set Up Your Obsidian Vault with Operon.md:68": {
+			"instanceKey": "inline:Operon/Demo Workspace/Set Up Your Obsidian Vault with Operon.md:68",
+			"operonId": "uzjjm1e",
+			"description": "Create a recurring inbox cleanup task",
+			"checkbox": "open",
+			"fieldValues": {
+				"operonId": "uzjjm1e",
+				"status": "Project.Planned",
+				"priority": "B",
+				"taskIcon": "repeat-2",
+				"taskColor": "0891b2",
+				"dateScheduled": "2026-07-20",
+				"estimate": "1200",
+				"repeat": "mode=schedule|freq=week|interval=1",
+				"note": "Keeps capture surfaces from becoming a second forgotten backlog.",
+				"parentTask": "v0a5bww",
+				"datetimeCreated": "2026-07-14T12:08:17",
+				"datetimeModified": "2026-07-14T12:08:17"
+			},
+			"tags": [
+				"operon-demo",
+				"recurring"
+			],
+			"primary": {
+				"filePath": "Operon/Demo Workspace/Set Up Your Obsidian Vault with Operon.md",
+				"lineNumber": 68,
+				"format": "inline"
+			},
+			"datetimeModified": "2026-07-14T12:08:17",
+			"tier": "hot"
+		},
+		"inline:Operon/Demo Workspace/Set Up Your Obsidian Vault with Operon.md:69": {
+			"instanceKey": "inline:Operon/Demo Workspace/Set Up Your Obsidian Vault with Operon.md:69",
+			"operonId": "ljoz60i",
+			"description": "Review tasks missing priority, date, or parent",
+			"checkbox": "open",
+			"fieldValues": {
+				"operonId": "ljoz60i",
+				"status": "Project.Planned",
+				"priority": "B",
+				"taskIcon": "repeat-2",
+				"taskColor": "0891b2",
+				"dateScheduled": "2026-07-20",
+				"estimate": "1800",
+				"note": "Improves task quality so filters, Calendar, and project views stay useful over time.",
+				"parentTask": "v0a5bww",
+				"datetimeCreated": "2026-07-14T12:08:17",
+				"datetimeModified": "2026-07-14T12:08:17"
+			},
+			"tags": [
+				"operon-demo",
+				"review"
+			],
+			"primary": {
+				"filePath": "Operon/Demo Workspace/Set Up Your Obsidian Vault with Operon.md",
+				"lineNumber": 69,
+				"format": "inline"
+			},
+			"datetimeModified": "2026-07-14T12:08:17",
+			"tier": "hot"
+		},
+		"inline:Operon/Demo Workspace/Set Up Your Obsidian Vault with Operon.md:70": {
+			"instanceKey": "inline:Operon/Demo Workspace/Set Up Your Obsidian Vault with Operon.md:70",
+			"operonId": "ltqfqus",
+			"description": "Capture follow-up work from this setup project",
+			"checkbox": "open",
+			"fieldValues": {
+				"operonId": "ltqfqus",
+				"status": "Project.Planned",
+				"priority": "B",
+				"taskIcon": "repeat-2",
+				"taskColor": "0891b2",
+				"dateScheduled": "2026-07-20",
+				"estimate": "1800",
+				"note": "Prevents setup insights from disappearing after the first pass and turns them into next actions.",
+				"parentTask": "v0a5bww",
+				"datetimeCreated": "2026-07-14T12:08:17",
+				"datetimeModified": "2026-07-14T12:08:17"
+			},
+			"tags": [
+				"operon-demo",
+				"review"
+			],
+			"primary": {
+				"filePath": "Operon/Demo Workspace/Set Up Your Obsidian Vault with Operon.md",
+				"lineNumber": 70,
+				"format": "inline"
+			},
+			"datetimeModified": "2026-07-14T12:08:17",
+			"tier": "hot"
+		},
+		"inline:Operon/Demo Workspace/Set Up Your Obsidian Vault with Operon.md:74": {
+			"instanceKey": "inline:Operon/Demo Workspace/Set Up Your Obsidian Vault with Operon.md:74",
+			"operonId": "vi8fh1k",
+			"description": "Day 7 - Review The System",
+			"checkbox": "open",
+			"fieldValues": {
+				"operonId": "vi8fh1k",
+				"status": "Project.Planned",
+				"priority": "B",
+				"taskIcon": "badge-check",
+				"taskColor": "64748b",
+				"dateScheduled": "2026-07-21",
+				"note": "Closes the adaptation week by turning what worked into a simple operating rhythm for the next week.",
+				"parentTask": "bui5bdb",
+				"datetimeCreated": "2026-07-14T12:08:17",
+				"datetimeModified": "2026-07-14T12:08:20",
+				"progress": "0",
+				"directSubtaskCount": "5",
+				"directDoneSubtaskCount": "0",
+				"directOpenSubtaskCount": "5",
+				"treeDescendantCount": "5",
+				"treeDoneDescendantCount": "0",
+				"treeOpenDescendantCount": "5",
+				"totalEstimate": "6600"
+			},
+			"tags": [
+				"operon-demo",
+				"vault-setup"
+			],
+			"primary": {
+				"filePath": "Operon/Demo Workspace/Set Up Your Obsidian Vault with Operon.md",
+				"lineNumber": 74,
+				"format": "inline"
+			},
+			"datetimeModified": "2026-07-14T12:08:20",
+			"tier": "hot"
+		},
+		"inline:Operon/Demo Workspace/Set Up Your Obsidian Vault with Operon.md:75": {
+			"instanceKey": "inline:Operon/Demo Workspace/Set Up Your Obsidian Vault with Operon.md:75",
+			"operonId": "hoxds0s",
+			"description": "Review what changed in the vault this week",
+			"checkbox": "open",
+			"fieldValues": {
+				"operonId": "hoxds0s",
+				"status": "Project.Planned",
+				"priority": "A",
+				"taskIcon": "badge-check",
+				"taskColor": "64748b",
+				"dateScheduled": "2026-07-21",
+				"estimate": "1800",
+				"note": "Makes the value of the Operon setup visible as a concrete before and after instead of an abstract system tweak.",
+				"parentTask": "vi8fh1k",
+				"datetimeCreated": "2026-07-14T12:08:17",
+				"datetimeModified": "2026-07-14T12:08:17"
+			},
+			"tags": [
+				"operon-demo",
+				"review"
+			],
+			"primary": {
+				"filePath": "Operon/Demo Workspace/Set Up Your Obsidian Vault with Operon.md",
+				"lineNumber": 75,
+				"format": "inline"
+			},
+			"datetimeModified": "2026-07-14T12:08:17",
+			"tier": "hot"
+		},
+		"inline:Operon/Demo Workspace/Set Up Your Obsidian Vault with Operon.md:76": {
+			"instanceKey": "inline:Operon/Demo Workspace/Set Up Your Obsidian Vault with Operon.md:76",
+			"operonId": "8ivau6r",
+			"description": "Move unfinished setup work into next week",
+			"checkbox": "open",
+			"fieldValues": {
+				"operonId": "8ivau6r",
+				"status": "Project.Planned",
+				"priority": "B",
+				"taskIcon": "badge-check",
+				"taskColor": "64748b",
+				"dateScheduled": "2026-07-21",
+				"estimate": "1200",
+				"note": "Keeps momentum without pretending every part of the system must be finished immediately.",
+				"parentTask": "vi8fh1k",
+				"datetimeCreated": "2026-07-14T12:08:17",
+				"datetimeModified": "2026-07-14T12:08:17"
+			},
+			"tags": [
+				"operon-demo",
+				"review"
+			],
+			"primary": {
+				"filePath": "Operon/Demo Workspace/Set Up Your Obsidian Vault with Operon.md",
+				"lineNumber": 76,
+				"format": "inline"
+			},
+			"datetimeModified": "2026-07-14T12:08:17",
+			"tier": "hot"
+		},
+		"inline:Operon/Demo Workspace/Set Up Your Obsidian Vault with Operon.md:77": {
+			"instanceKey": "inline:Operon/Demo Workspace/Set Up Your Obsidian Vault with Operon.md:77",
+			"operonId": "pefj40h",
+			"description": "Cancel or archive setup tasks that no longer matter",
+			"checkbox": "open",
+			"fieldValues": {
+				"operonId": "pefj40h",
+				"status": "Project.Planned",
+				"priority": "C",
+				"taskIcon": "badge-check",
+				"taskColor": "64748b",
+				"dateScheduled": "2026-07-21",
+				"estimate": "1200",
+				"note": "Protects the system from stale commitments before the demo project becomes clutter.",
+				"parentTask": "vi8fh1k",
+				"datetimeCreated": "2026-07-14T12:08:17",
+				"datetimeModified": "2026-07-14T12:08:17"
+			},
+			"tags": [
+				"operon-demo",
+				"review"
+			],
+			"primary": {
+				"filePath": "Operon/Demo Workspace/Set Up Your Obsidian Vault with Operon.md",
+				"lineNumber": 77,
+				"format": "inline"
+			},
+			"datetimeModified": "2026-07-14T12:08:17",
+			"tier": "hot"
+		},
+		"inline:Operon/Demo Workspace/Set Up Your Obsidian Vault with Operon.md:78": {
+			"instanceKey": "inline:Operon/Demo Workspace/Set Up Your Obsidian Vault with Operon.md:78",
+			"operonId": "ntn044n",
+			"description": "Write a short weekly operating rhythm",
+			"checkbox": "open",
+			"fieldValues": {
+				"operonId": "ntn044n",
+				"status": "Project.Planned",
+				"priority": "B",
+				"taskIcon": "badge-check",
+				"taskColor": "64748b",
+				"dateScheduled": "2026-07-21",
+				"estimate": "1800",
+				"note": "Turns the first-week setup into a repeatable personal workflow that can survive normal busy weeks.",
+				"parentTask": "vi8fh1k",
+				"datetimeCreated": "2026-07-14T12:08:17",
+				"datetimeModified": "2026-07-14T12:08:17"
+			},
+			"tags": [
+				"operon-demo",
+				"review"
+			],
+			"primary": {
+				"filePath": "Operon/Demo Workspace/Set Up Your Obsidian Vault with Operon.md",
+				"lineNumber": 78,
+				"format": "inline"
+			},
+			"datetimeModified": "2026-07-14T12:08:17",
+			"tier": "hot"
+		},
+		"inline:Operon/Demo Workspace/Set Up Your Obsidian Vault with Operon.md:79": {
+			"instanceKey": "inline:Operon/Demo Workspace/Set Up Your Obsidian Vault with Operon.md:79",
+			"operonId": "vr079k6",
+			"description": "Celebrate your first Operon-powered week",
+			"checkbox": "open",
+			"fieldValues": {
+				"operonId": "vr079k6",
+				"status": "Project.Planned",
+				"priority": "C",
+				"taskIcon": "badge-check",
+				"taskColor": "64748b",
+				"dateScheduled": "2026-07-21",
+				"estimate": "600",
+				"note": "You gave your existing workflow a new layer of structure and visibility. That deserves coffee, cake, a tiny dance, or at least a very smug checkbox.",
+				"parentTask": "vi8fh1k",
+				"datetimeCreated": "2026-07-14T12:08:17",
+				"datetimeModified": "2026-07-14T12:08:17"
+			},
+			"tags": [
+				"operon-demo",
+				"review"
+			],
+			"primary": {
+				"filePath": "Operon/Demo Workspace/Set Up Your Obsidian Vault with Operon.md",
+				"lineNumber": 79,
+				"format": "inline"
+			},
+			"datetimeModified": "2026-07-14T12:08:17",
+			"tier": "hot"
+		},
+		"yaml:Operon/Demo Workspace/Set Up Your Obsidian Vault with Operon.md:0": {
+			"instanceKey": "yaml:Operon/Demo Workspace/Set Up Your Obsidian Vault with Operon.md:0",
+			"operonId": "bui5bdb",
+			"description": "Set Up Your Obsidian Vault with Operon",
+			"checkbox": "open",
+			"fieldValues": {
+				"operonId": "bui5bdb",
+				"status": "Project.Planned",
+				"priority": "A",
+				"dateScheduled": "2026-07-15",
+				"dateDue": "2026-07-21",
+				"taskIcon": "vault",
+				"taskColor": "0f766e",
+				"note": "A one week realistic adaptation project for shaping an Obsidian vault around Operon workflows",
+				"datetimeCreated": "2026-07-14T12:08:17",
+				"datetimeModified": "2026-07-14T12:08:19",
+				"progress": "0",
+				"directSubtaskCount": "7",
+				"directDoneSubtaskCount": "0",
+				"directOpenSubtaskCount": "7",
+				"treeDescendantCount": "43",
+				"treeDoneDescendantCount": "0",
+				"treeOpenDescendantCount": "43",
+				"totalEstimate": "67500"
+			},
+			"tags": [],
+			"primary": {
+				"filePath": "Operon/Demo Workspace/Set Up Your Obsidian Vault with Operon.md",
+				"lineNumber": 0,
+				"format": "yaml"
+			},
+			"datetimeModified": "2026-07-14T12:08:19",
+			"tier": "hot"
+		},
+		"inline:Operon/Demo Workspace/Operon Basics Project.md:26": {
+			"instanceKey": "inline:Operon/Demo Workspace/Operon Basics Project.md:26",
+			"operonId": "j9svbz2",
+			"description": "Start Here",
+			"checkbox": "open",
+			"fieldValues": {
+				"operonId": "j9svbz2",
+				"status": "Project.Planned",
+				"priority": "B",
+				"parentTask": "l1dk70s",
+				"progress": "0",
+				"directSubtaskCount": "3",
+				"directDoneSubtaskCount": "0",
+				"directOpenSubtaskCount": "3",
+				"treeDescendantCount": "3",
+				"treeDoneDescendantCount": "0",
+				"treeOpenDescendantCount": "3",
+				"taskIcon": "compass",
+				"taskColor": "2563EB",
+				"note": "Gives you a low-risk place to open, edit, and complete real Operon tasks before using your own work.",
+				"datetimeCreated": "2026-07-14T12:08:17",
+				"datetimeModified": "2026-07-14T12:08:19"
+			},
+			"tags": [
+				"operon-demo",
+				"operon-demo-section"
+			],
+			"primary": {
+				"filePath": "Operon/Demo Workspace/Operon Basics Project.md",
+				"lineNumber": 26,
+				"format": "inline"
+			},
+			"datetimeModified": "2026-07-14T12:08:19",
+			"tier": "hot"
+		},
+		"inline:Operon/Demo Workspace/Operon Basics Project.md:27": {
+			"instanceKey": "inline:Operon/Demo Workspace/Operon Basics Project.md:27",
+			"operonId": "wpc09ju",
+			"description": "Open this task in the Task Editor",
+			"checkbox": "open",
+			"fieldValues": {
+				"operonId": "wpc09ju",
+				"status": "Project.Planned",
+				"priority": "C",
+				"taskIcon": "compass",
+				"taskColor": "2563EB",
+				"note": "Shows where a task's full context lives when the inline line is too small for real planning.",
+				"parentTask": "j9svbz2",
+				"datetimeCreated": "2026-07-14T12:08:17",
+				"datetimeModified": "2026-07-14T12:08:17"
+			},
+			"tags": [
+				"operon-demo"
+			],
+			"primary": {
+				"filePath": "Operon/Demo Workspace/Operon Basics Project.md",
+				"lineNumber": 27,
+				"format": "inline"
+			},
+			"datetimeModified": "2026-07-14T12:08:17",
+			"tier": "hot"
+		},
+		"inline:Operon/Demo Workspace/Operon Basics Project.md:28": {
+			"instanceKey": "inline:Operon/Demo Workspace/Operon Basics Project.md:28",
+			"operonId": "w55g8jk",
+			"description": "Adjust this task priority",
+			"checkbox": "open",
+			"fieldValues": {
+				"operonId": "w55g8jk",
+				"status": "Project.Planned",
+				"priority": "C",
+				"taskIcon": "compass",
+				"taskColor": "2563EB",
+				"note": "Makes priority feel like a decision tool, not just a label sitting beside the task.",
+				"parentTask": "j9svbz2",
+				"datetimeCreated": "2026-07-14T12:08:17",
+				"datetimeModified": "2026-07-14T12:08:17"
+			},
+			"tags": [
+				"operon-demo"
+			],
+			"primary": {
+				"filePath": "Operon/Demo Workspace/Operon Basics Project.md",
+				"lineNumber": 28,
+				"format": "inline"
+			},
+			"datetimeModified": "2026-07-14T12:08:17",
+			"tier": "hot"
+		},
+		"inline:Operon/Demo Workspace/Operon Basics Project.md:29": {
+			"instanceKey": "inline:Operon/Demo Workspace/Operon Basics Project.md:29",
+			"operonId": "9m01gqg",
+			"description": "Complete this task from the inline controls",
+			"checkbox": "open",
+			"fieldValues": {
+				"operonId": "9m01gqg",
+				"status": "Project.Planned",
+				"priority": "C",
+				"taskIcon": "compass",
+				"taskColor": "2563EB",
+				"note": "Shows the fastest path from action to done without opening a full editor.",
+				"parentTask": "j9svbz2",
+				"datetimeCreated": "2026-07-14T12:08:17",
+				"datetimeModified": "2026-07-14T12:08:17"
+			},
+			"tags": [
+				"operon-demo"
+			],
+			"primary": {
+				"filePath": "Operon/Demo Workspace/Operon Basics Project.md",
+				"lineNumber": 29,
+				"format": "inline"
+			},
+			"datetimeModified": "2026-07-14T12:08:17",
+			"tier": "hot"
+		},
+		"inline:Operon/Demo Workspace/Operon Basics Project.md:33": {
+			"instanceKey": "inline:Operon/Demo Workspace/Operon Basics Project.md:33",
+			"operonId": "48dankx",
+			"description": "Capture And Edit Tasks",
+			"checkbox": "open",
+			"fieldValues": {
+				"operonId": "48dankx",
+				"status": "Project.Planned",
+				"priority": "B",
+				"parentTask": "l1dk70s",
+				"progress": "0",
+				"directSubtaskCount": "3",
+				"directDoneSubtaskCount": "0",
+				"directOpenSubtaskCount": "3",
+				"treeDescendantCount": "3",
+				"treeDoneDescendantCount": "0",
+				"treeOpenDescendantCount": "3",
+				"taskIcon": "pen-line",
+				"taskColor": "7C3AED",
+				"note": "Shows how quick thoughts become manageable tasks without leaving the note you are already using.",
+				"datetimeCreated": "2026-07-14T12:08:17",
+				"datetimeModified": "2026-07-14T12:08:19"
+			},
+			"tags": [
+				"operon-demo",
+				"operon-demo-section"
+			],
+			"primary": {
+				"filePath": "Operon/Demo Workspace/Operon Basics Project.md",
+				"lineNumber": 33,
+				"format": "inline"
+			},
+			"datetimeModified": "2026-07-14T12:08:19",
+			"tier": "hot"
+		},
+		"inline:Operon/Demo Workspace/Operon Basics Project.md:34": {
+			"instanceKey": "inline:Operon/Demo Workspace/Operon Basics Project.md:34",
+			"operonId": "1s0c0kl",
+			"description": "Create a new inline task below this section",
+			"checkbox": "open",
+			"fieldValues": {
+				"operonId": "1s0c0kl",
+				"status": "Project.Planned",
+				"priority": "C",
+				"taskIcon": "pen-line",
+				"taskColor": "7C3AED",
+				"note": "Turns a small captured thought into a real task that can be filtered, planned, and completed later.",
+				"parentTask": "48dankx",
+				"datetimeCreated": "2026-07-14T12:08:17",
+				"datetimeModified": "2026-07-14T12:08:17"
+			},
+			"tags": [
+				"operon-demo"
+			],
+			"primary": {
+				"filePath": "Operon/Demo Workspace/Operon Basics Project.md",
+				"lineNumber": 34,
+				"format": "inline"
+			},
+			"datetimeModified": "2026-07-14T12:08:17",
+			"tier": "hot"
+		},
+		"inline:Operon/Demo Workspace/Operon Basics Project.md:35": {
+			"instanceKey": "inline:Operon/Demo Workspace/Operon Basics Project.md:35",
+			"operonId": "86kj7zc",
+			"description": "Edit this task description in the Task Editor",
+			"checkbox": "open",
+			"fieldValues": {
+				"operonId": "86kj7zc",
+				"status": "Project.Planned",
+				"priority": "C",
+				"taskIcon": "pen-line",
+				"taskColor": "7C3AED",
+				"note": "Keeps the task wording clear enough that the next action is still obvious later.",
+				"parentTask": "48dankx",
+				"datetimeCreated": "2026-07-14T12:08:17",
+				"datetimeModified": "2026-07-14T12:08:17"
+			},
+			"tags": [
+				"operon-demo"
+			],
+			"primary": {
+				"filePath": "Operon/Demo Workspace/Operon Basics Project.md",
+				"lineNumber": 35,
+				"format": "inline"
+			},
+			"datetimeModified": "2026-07-14T12:08:17",
+			"tier": "hot"
+		},
+		"inline:Operon/Demo Workspace/Operon Basics Project.md:36": {
+			"instanceKey": "inline:Operon/Demo Workspace/Operon Basics Project.md:36",
+			"operonId": "552w7i9",
+			"description": "Add a note to this task",
+			"checkbox": "open",
+			"fieldValues": {
+				"operonId": "552w7i9",
+				"status": "Project.Planned",
+				"priority": "C",
+				"taskIcon": "pen-line",
+				"taskColor": "7C3AED",
+				"note": "Keeps the reason behind the task close to the task, so your future self does not have to rebuild the context.",
+				"parentTask": "48dankx",
+				"datetimeCreated": "2026-07-14T12:08:17",
+				"datetimeModified": "2026-07-14T12:08:17"
+			},
+			"tags": [
+				"operon-demo"
+			],
+			"primary": {
+				"filePath": "Operon/Demo Workspace/Operon Basics Project.md",
+				"lineNumber": 36,
+				"format": "inline"
+			},
+			"datetimeModified": "2026-07-14T12:08:17",
+			"tier": "hot"
+		},
+		"inline:Operon/Demo Workspace/Operon Basics Project.md:40": {
+			"instanceKey": "inline:Operon/Demo Workspace/Operon Basics Project.md:40",
+			"operonId": "su51jgp",
+			"description": "Organize With Fields",
+			"checkbox": "open",
+			"fieldValues": {
+				"operonId": "su51jgp",
+				"status": "Project.Planned",
+				"priority": "B",
+				"totalEstimate": "1800",
+				"parentTask": "l1dk70s",
+				"progress": "0",
+				"directSubtaskCount": "3",
+				"directDoneSubtaskCount": "0",
+				"directOpenSubtaskCount": "3",
+				"treeDescendantCount": "3",
+				"treeDoneDescendantCount": "0",
+				"treeOpenDescendantCount": "3",
+				"taskIcon": "sliders-horizontal",
+				"taskColor": "0F766E",
+				"note": "Connects task metadata to decisions about urgency, size, and workflow state.",
+				"datetimeCreated": "2026-07-14T12:08:17",
+				"datetimeModified": "2026-07-14T12:08:19"
+			},
+			"tags": [
+				"operon-demo",
+				"operon-demo-section"
+			],
+			"primary": {
+				"filePath": "Operon/Demo Workspace/Operon Basics Project.md",
+				"lineNumber": 40,
+				"format": "inline"
+			},
+			"datetimeModified": "2026-07-14T12:08:19",
+			"tier": "hot"
+		},
+		"inline:Operon/Demo Workspace/Operon Basics Project.md:41": {
+			"instanceKey": "inline:Operon/Demo Workspace/Operon Basics Project.md:41",
+			"operonId": "mrcqyel",
+			"description": "Set a due date for this task",
+			"checkbox": "open",
+			"fieldValues": {
+				"operonId": "mrcqyel",
+				"status": "Project.Planned",
+				"priority": "B",
+				"taskIcon": "sliders-horizontal",
+				"taskColor": "0F766E",
+				"dateDue": "2026-07-21",
+				"note": "Turns a loose commitment into something Operon can surface before it becomes easy to miss.",
+				"parentTask": "su51jgp",
+				"datetimeCreated": "2026-07-14T12:08:17",
+				"datetimeModified": "2026-07-14T12:08:17"
+			},
+			"tags": [
+				"operon-demo"
+			],
+			"primary": {
+				"filePath": "Operon/Demo Workspace/Operon Basics Project.md",
+				"lineNumber": 41,
+				"format": "inline"
+			},
+			"datetimeModified": "2026-07-14T12:08:17",
+			"tier": "hot"
+		},
+		"inline:Operon/Demo Workspace/Operon Basics Project.md:42": {
+			"instanceKey": "inline:Operon/Demo Workspace/Operon Basics Project.md:42",
+			"operonId": "3i150bn",
+			"description": "Add an estimate to this task",
+			"checkbox": "open",
+			"fieldValues": {
+				"operonId": "3i150bn",
+				"status": "Project.Planned",
+				"priority": "B",
+				"taskIcon": "sliders-horizontal",
+				"taskColor": "0F766E",
+				"estimate": "1800",
+				"note": "Makes the size of the work visible before it quietly takes more room than expected.",
+				"parentTask": "su51jgp",
+				"datetimeCreated": "2026-07-14T12:08:17",
+				"datetimeModified": "2026-07-14T12:08:17"
+			},
+			"tags": [
+				"operon-demo"
+			],
+			"primary": {
+				"filePath": "Operon/Demo Workspace/Operon Basics Project.md",
+				"lineNumber": 42,
+				"format": "inline"
+			},
+			"datetimeModified": "2026-07-14T12:08:17",
+			"tier": "hot"
+		},
+		"inline:Operon/Demo Workspace/Operon Basics Project.md:43": {
+			"instanceKey": "inline:Operon/Demo Workspace/Operon Basics Project.md:43",
+			"operonId": "4n62215",
+			"description": "Change this task's workflow status",
+			"checkbox": "open",
+			"fieldValues": {
+				"operonId": "4n62215",
+				"status": "Project.Brainstorming",
+				"priority": "C",
+				"taskIcon": "sliders-horizontal",
+				"taskColor": "0F766E",
+				"note": "Shows how status can describe the real stage of work instead of leaving every task in the same bucket.",
+				"parentTask": "su51jgp",
+				"datetimeCreated": "2026-07-14T12:08:17",
+				"datetimeModified": "2026-07-14T12:08:17"
+			},
+			"tags": [
+				"operon-demo"
+			],
+			"primary": {
+				"filePath": "Operon/Demo Workspace/Operon Basics Project.md",
+				"lineNumber": 43,
+				"format": "inline"
+			},
+			"datetimeModified": "2026-07-14T12:08:17",
+			"tier": "hot"
+		},
+		"inline:Operon/Demo Workspace/Operon Basics Project.md:47": {
+			"instanceKey": "inline:Operon/Demo Workspace/Operon Basics Project.md:47",
+			"operonId": "pnqei6v",
+			"description": "Plan On The Calendar",
+			"checkbox": "open",
+			"fieldValues": {
+				"operonId": "pnqei6v",
+				"status": "Project.Planned",
+				"priority": "B",
+				"totalEstimate": "3600",
+				"parentTask": "l1dk70s",
+				"progress": "0",
+				"directSubtaskCount": "3",
+				"directDoneSubtaskCount": "0",
+				"directOpenSubtaskCount": "3",
+				"treeDescendantCount": "3",
+				"treeDoneDescendantCount": "0",
+				"treeOpenDescendantCount": "3",
+				"taskIcon": "calendar-days",
+				"taskColor": "EA580C",
+				"note": "Turns task lists into time-aware planning without forcing every task onto the calendar.",
+				"datetimeCreated": "2026-07-14T12:08:17",
+				"datetimeModified": "2026-07-14T12:08:19"
+			},
+			"tags": [
+				"operon-demo",
+				"operon-demo-section"
+			],
+			"primary": {
+				"filePath": "Operon/Demo Workspace/Operon Basics Project.md",
+				"lineNumber": 47,
+				"format": "inline"
+			},
+			"datetimeModified": "2026-07-14T12:08:19",
+			"tier": "hot"
+		},
+		"inline:Operon/Demo Workspace/Operon Basics Project.md:48": {
+			"instanceKey": "inline:Operon/Demo Workspace/Operon Basics Project.md:48",
+			"operonId": "3nutws8",
+			"description": "Reschedule this task from the Calendar",
+			"checkbox": "open",
+			"fieldValues": {
+				"operonId": "3nutws8",
+				"status": "Project.Planned",
+				"priority": "B",
+				"taskIcon": "calendar-days",
+				"taskColor": "EA580C",
+				"dateScheduled": "2026-07-15",
+				"dateDue": "2026-07-21",
+				"note": "Shows how planned work can move when the day changes without losing the task itself.",
+				"parentTask": "pnqei6v",
+				"datetimeCreated": "2026-07-14T12:08:17",
+				"datetimeModified": "2026-07-14T12:08:17"
+			},
+			"tags": [
+				"operon-demo",
+				"calendar"
+			],
+			"primary": {
+				"filePath": "Operon/Demo Workspace/Operon Basics Project.md",
+				"lineNumber": 48,
+				"format": "inline"
+			},
+			"datetimeModified": "2026-07-14T12:08:17",
+			"tier": "hot"
+		},
+		"inline:Operon/Demo Workspace/Operon Basics Project.md:49": {
+			"instanceKey": "inline:Operon/Demo Workspace/Operon Basics Project.md:49",
+			"operonId": "u2jsba0",
+			"description": "Move this timed task to another time block",
+			"checkbox": "open",
+			"fieldValues": {
+				"operonId": "u2jsba0",
+				"status": "Project.Planned",
+				"priority": "A",
+				"taskIcon": "calendar-days",
+				"taskColor": "EA580C",
+				"dateScheduled": "2026-07-17",
+				"datetimeStart": "2026-07-17T09:00:00",
+				"datetimeEnd": "2026-07-17T10:00:00",
+				"estimate": "3600",
+				"note": "Shows how scheduled work can move with the day instead of becoming stale the moment plans change.",
+				"parentTask": "pnqei6v",
+				"datetimeCreated": "2026-07-14T12:08:17",
+				"datetimeModified": "2026-07-14T12:08:17"
+			},
+			"tags": [
+				"operon-demo",
+				"calendar"
+			],
+			"primary": {
+				"filePath": "Operon/Demo Workspace/Operon Basics Project.md",
+				"lineNumber": 49,
+				"format": "inline"
+			},
+			"datetimeModified": "2026-07-14T12:08:17",
+			"tier": "hot"
+		},
+		"inline:Operon/Demo Workspace/Operon Basics Project.md:50": {
+			"instanceKey": "inline:Operon/Demo Workspace/Operon Basics Project.md:50",
+			"operonId": "40g6s5s",
+			"description": "Clear the scheduled date from this task",
+			"checkbox": "open",
+			"fieldValues": {
+				"operonId": "40g6s5s",
+				"status": "Project.Planned",
+				"priority": "C",
+				"taskIcon": "calendar-days",
+				"taskColor": "EA580C",
+				"dateScheduled": "2026-07-18",
+				"note": "Separates useful planning from forced scheduling when a task no longer needs a calendar slot.",
+				"parentTask": "pnqei6v",
+				"datetimeCreated": "2026-07-14T12:08:17",
+				"datetimeModified": "2026-07-14T12:08:17"
+			},
+			"tags": [
+				"operon-demo",
+				"calendar"
+			],
+			"primary": {
+				"filePath": "Operon/Demo Workspace/Operon Basics Project.md",
+				"lineNumber": 50,
+				"format": "inline"
+			},
+			"datetimeModified": "2026-07-14T12:08:17",
+			"tier": "hot"
+		},
+		"inline:Operon/Demo Workspace/Operon Basics Project.md:54": {
+			"instanceKey": "inline:Operon/Demo Workspace/Operon Basics Project.md:54",
+			"operonId": "qaafddt",
+			"description": "Move Work On Kanban",
+			"checkbox": "open",
+			"fieldValues": {
+				"operonId": "qaafddt",
+				"status": "Project.Planned",
+				"priority": "B",
+				"parentTask": "l1dk70s",
+				"progress": "0",
+				"directSubtaskCount": "3",
+				"directDoneSubtaskCount": "0",
+				"directOpenSubtaskCount": "3",
+				"treeDescendantCount": "3",
+				"treeDoneDescendantCount": "0",
+				"treeOpenDescendantCount": "3",
+				"taskIcon": "columns-3",
+				"taskColor": "DB2777",
+				"note": "Shows how task status becomes a visible board for project movement and bottlenecks.",
+				"datetimeCreated": "2026-07-14T12:08:17",
+				"datetimeModified": "2026-07-14T12:08:19"
+			},
+			"tags": [
+				"operon-demo",
+				"operon-demo-section"
+			],
+			"primary": {
+				"filePath": "Operon/Demo Workspace/Operon Basics Project.md",
+				"lineNumber": 54,
+				"format": "inline"
+			},
+			"datetimeModified": "2026-07-14T12:08:19",
+			"tier": "hot"
+		},
+		"inline:Operon/Demo Workspace/Operon Basics Project.md:55": {
+			"instanceKey": "inline:Operon/Demo Workspace/Operon Basics Project.md:55",
+			"operonId": "57xf8ic",
+			"description": "Move this card from Planned to InProgress",
+			"checkbox": "open",
+			"fieldValues": {
+				"operonId": "57xf8ic",
+				"status": "Project.Planned",
+				"priority": "B",
+				"taskIcon": "columns-3",
+				"taskColor": "DB2777",
+				"note": "Connects task status to visible project movement, so the board reflects what is actually happening.",
+				"parentTask": "qaafddt",
+				"datetimeCreated": "2026-07-14T12:08:17",
+				"datetimeModified": "2026-07-14T12:08:17"
+			},
+			"tags": [
+				"operon-demo",
+				"kanban"
+			],
+			"primary": {
+				"filePath": "Operon/Demo Workspace/Operon Basics Project.md",
+				"lineNumber": 55,
+				"format": "inline"
+			},
+			"datetimeModified": "2026-07-14T12:08:17",
+			"tier": "hot"
+		},
+		"inline:Operon/Demo Workspace/Operon Basics Project.md:56": {
+			"instanceKey": "inline:Operon/Demo Workspace/Operon Basics Project.md:56",
+			"operonId": "q56gr8c",
+			"description": "Move this active card to Finished",
+			"checkbox": "open",
+			"fieldValues": {
+				"operonId": "q56gr8c",
+				"status": "Project.InProgress",
+				"priority": "A",
+				"taskIcon": "columns-3",
+				"taskColor": "DB2777",
+				"note": "Makes completion visible in the same workflow where active work is managed.",
+				"parentTask": "qaafddt",
+				"datetimeCreated": "2026-07-14T12:08:17",
+				"datetimeModified": "2026-07-14T12:08:17"
+			},
+			"tags": [
+				"operon-demo",
+				"kanban"
+			],
+			"primary": {
+				"filePath": "Operon/Demo Workspace/Operon Basics Project.md",
+				"lineNumber": 56,
+				"format": "inline"
+			},
+			"datetimeModified": "2026-07-14T12:08:17",
+			"tier": "hot"
+		},
+		"inline:Operon/Demo Workspace/Operon Basics Project.md:57": {
+			"instanceKey": "inline:Operon/Demo Workspace/Operon Basics Project.md:57",
+			"operonId": "hzrwz86",
+			"description": "Pause this task from the Kanban board",
+			"checkbox": "open",
+			"fieldValues": {
+				"operonId": "hzrwz86",
+				"status": "Project.Paused",
+				"priority": "C",
+				"taskIcon": "columns-3",
+				"taskColor": "DB2777",
+				"note": "Keeps paused work honest instead of letting it pretend to be active.",
+				"parentTask": "qaafddt",
+				"datetimeCreated": "2026-07-14T12:08:17",
+				"datetimeModified": "2026-07-14T12:08:17"
+			},
+			"tags": [
+				"operon-demo",
+				"kanban"
+			],
+			"primary": {
+				"filePath": "Operon/Demo Workspace/Operon Basics Project.md",
+				"lineNumber": 57,
+				"format": "inline"
+			},
+			"datetimeModified": "2026-07-14T12:08:17",
+			"tier": "hot"
+		},
+		"inline:Operon/Demo Workspace/Operon Basics Project.md:61": {
+			"instanceKey": "inline:Operon/Demo Workspace/Operon Basics Project.md:61",
+			"operonId": "vqhq2hy",
+			"description": "Work With Subtasks",
+			"checkbox": "open",
+			"fieldValues": {
+				"operonId": "vqhq2hy",
+				"status": "Project.Planned",
+				"priority": "B",
+				"parentTask": "l1dk70s",
+				"progress": "0",
+				"directSubtaskCount": "3",
+				"directDoneSubtaskCount": "0",
+				"directOpenSubtaskCount": "3",
+				"treeDescendantCount": "3",
+				"treeDoneDescendantCount": "0",
+				"treeOpenDescendantCount": "3",
+				"taskIcon": "git-branch",
+				"taskColor": "16A34A",
+				"note": "Makes larger work easier to understand by connecting child actions to their parent outcome.",
+				"datetimeCreated": "2026-07-14T12:08:17",
+				"datetimeModified": "2026-07-14T12:08:19"
+			},
+			"tags": [
+				"operon-demo",
+				"operon-demo-section"
+			],
+			"primary": {
+				"filePath": "Operon/Demo Workspace/Operon Basics Project.md",
+				"lineNumber": 61,
+				"format": "inline"
+			},
+			"datetimeModified": "2026-07-14T12:08:19",
+			"tier": "hot"
+		},
+		"inline:Operon/Demo Workspace/Operon Basics Project.md:62": {
+			"instanceKey": "inline:Operon/Demo Workspace/Operon Basics Project.md:62",
+			"operonId": "5dzjvve",
+			"description": "Open the parent task and review its subtasks",
+			"checkbox": "open",
+			"fieldValues": {
+				"operonId": "5dzjvve",
+				"status": "Project.Planned",
+				"priority": "C",
+				"taskIcon": "git-branch",
+				"taskColor": "16A34A",
+				"note": "Makes the project structure visible, so individual actions stay connected to the larger outcome.",
+				"parentTask": "vqhq2hy",
+				"datetimeCreated": "2026-07-14T12:08:17",
+				"datetimeModified": "2026-07-14T12:08:17"
+			},
+			"tags": [
+				"operon-demo"
+			],
+			"primary": {
+				"filePath": "Operon/Demo Workspace/Operon Basics Project.md",
+				"lineNumber": 62,
+				"format": "inline"
+			},
+			"datetimeModified": "2026-07-14T12:08:17",
+			"tier": "hot"
+		},
+		"inline:Operon/Demo Workspace/Operon Basics Project.md:63": {
+			"instanceKey": "inline:Operon/Demo Workspace/Operon Basics Project.md:63",
+			"operonId": "y8nw5tu",
+			"description": "Add a new subtask under this project",
+			"checkbox": "open",
+			"fieldValues": {
+				"operonId": "y8nw5tu",
+				"status": "Project.Planned",
+				"priority": "C",
+				"taskIcon": "git-branch",
+				"taskColor": "16A34A",
+				"note": "Shows how new work can be captured under the right parent instead of becoming an orphan task.",
+				"parentTask": "vqhq2hy",
+				"datetimeCreated": "2026-07-14T12:08:17",
+				"datetimeModified": "2026-07-14T12:08:17"
+			},
+			"tags": [
+				"operon-demo"
+			],
+			"primary": {
+				"filePath": "Operon/Demo Workspace/Operon Basics Project.md",
+				"lineNumber": 63,
+				"format": "inline"
+			},
+			"datetimeModified": "2026-07-14T12:08:17",
+			"tier": "hot"
+		},
+		"inline:Operon/Demo Workspace/Operon Basics Project.md:64": {
+			"instanceKey": "inline:Operon/Demo Workspace/Operon Basics Project.md:64",
+			"operonId": "speq64q",
+			"description": "Review project progress after completing a child task",
+			"checkbox": "open",
+			"fieldValues": {
+				"operonId": "speq64q",
+				"status": "Project.Planned",
+				"priority": "B",
+				"taskIcon": "git-branch",
+				"taskColor": "16A34A",
+				"note": "Shows how small completed actions roll up into a clearer picture of project progress.",
+				"parentTask": "vqhq2hy",
+				"datetimeCreated": "2026-07-14T12:08:17",
+				"datetimeModified": "2026-07-14T12:08:17"
+			},
+			"tags": [
+				"operon-demo"
+			],
+			"primary": {
+				"filePath": "Operon/Demo Workspace/Operon Basics Project.md",
+				"lineNumber": 64,
+				"format": "inline"
+			},
+			"datetimeModified": "2026-07-14T12:08:17",
+			"tier": "hot"
+		},
+		"inline:Operon/Demo Workspace/Operon Basics Project.md:68": {
+			"instanceKey": "inline:Operon/Demo Workspace/Operon Basics Project.md:68",
+			"operonId": "4u53i5n",
+			"description": "Use Dependencies",
+			"checkbox": "open",
+			"fieldValues": {
+				"operonId": "4u53i5n",
+				"status": "Project.Planned",
+				"priority": "B",
+				"parentTask": "l1dk70s",
+				"progress": "0",
+				"directSubtaskCount": "3",
+				"directDoneSubtaskCount": "0",
+				"directOpenSubtaskCount": "3",
+				"treeDescendantCount": "3",
+				"treeDoneDescendantCount": "0",
+				"treeOpenDescendantCount": "3",
+				"taskIcon": "workflow",
+				"taskColor": "DC2626",
+				"note": "Makes task order and handoffs explicit when one piece of work depends on another.",
+				"datetimeCreated": "2026-07-14T12:08:17",
+				"datetimeModified": "2026-07-14T12:08:19"
+			},
+			"tags": [
+				"operon-demo",
+				"operon-demo-section"
+			],
+			"primary": {
+				"filePath": "Operon/Demo Workspace/Operon Basics Project.md",
+				"lineNumber": 68,
+				"format": "inline"
+			},
+			"datetimeModified": "2026-07-14T12:08:19",
+			"tier": "hot"
+		},
+		"inline:Operon/Demo Workspace/Operon Basics Project.md:69": {
+			"instanceKey": "inline:Operon/Demo Workspace/Operon Basics Project.md:69",
+			"operonId": "2ygfo2l",
+			"description": "Complete the blocking setup task first",
+			"checkbox": "open",
+			"fieldValues": {
+				"operonId": "2ygfo2l",
+				"status": "Project.Planned",
+				"priority": "A",
+				"taskIcon": "workflow",
+				"taskColor": "DC2626",
+				"blocking": "w9adqqw",
+				"note": "Shows how one task can intentionally unlock the next piece of work.",
+				"parentTask": "4u53i5n",
+				"datetimeCreated": "2026-07-14T12:08:17",
+				"datetimeModified": "2026-07-14T12:08:17"
+			},
+			"tags": [
+				"operon-demo",
+				"dependencies"
+			],
+			"primary": {
+				"filePath": "Operon/Demo Workspace/Operon Basics Project.md",
+				"lineNumber": 69,
+				"format": "inline"
+			},
+			"datetimeModified": "2026-07-14T12:08:17",
+			"tier": "hot"
+		},
+		"inline:Operon/Demo Workspace/Operon Basics Project.md:70": {
+			"instanceKey": "inline:Operon/Demo Workspace/Operon Basics Project.md:70",
+			"operonId": "w9adqqw",
+			"description": "Start this blocked task after setup is finished",
+			"checkbox": "open",
+			"fieldValues": {
+				"operonId": "w9adqqw",
+				"status": "Project.Planned",
+				"priority": "B",
+				"taskIcon": "workflow",
+				"taskColor": "DC2626",
+				"blockedBy": "2ygfo2l",
+				"blocking": "9guoq4z",
+				"note": "Makes waiting work visible without asking you to remember why it cannot move yet.",
+				"parentTask": "4u53i5n",
+				"datetimeCreated": "2026-07-14T12:08:17",
+				"datetimeModified": "2026-07-14T12:08:17"
+			},
+			"tags": [
+				"operon-demo",
+				"dependencies"
+			],
+			"primary": {
+				"filePath": "Operon/Demo Workspace/Operon Basics Project.md",
+				"lineNumber": 70,
+				"format": "inline"
+			},
+			"datetimeModified": "2026-07-14T12:08:17",
+			"tier": "hot"
+		},
+		"inline:Operon/Demo Workspace/Operon Basics Project.md:71": {
+			"instanceKey": "inline:Operon/Demo Workspace/Operon Basics Project.md:71",
+			"operonId": "9guoq4z",
+			"description": "Review the final handoff after dependencies clear",
+			"checkbox": "open",
+			"fieldValues": {
+				"operonId": "9guoq4z",
+				"status": "Project.Planned",
+				"priority": "C",
+				"taskIcon": "workflow",
+				"taskColor": "DC2626",
+				"blockedBy": "w9adqqw",
+				"note": "Shows how a chain of dependent tasks can end with a clean review point.",
+				"parentTask": "4u53i5n",
+				"datetimeCreated": "2026-07-14T12:08:17",
+				"datetimeModified": "2026-07-14T12:08:17"
+			},
+			"tags": [
+				"operon-demo",
+				"dependencies"
+			],
+			"primary": {
+				"filePath": "Operon/Demo Workspace/Operon Basics Project.md",
+				"lineNumber": 71,
+				"format": "inline"
+			},
+			"datetimeModified": "2026-07-14T12:08:17",
+			"tier": "hot"
+		},
+		"inline:Operon/Demo Workspace/Operon Basics Project.md:75": {
+			"instanceKey": "inline:Operon/Demo Workspace/Operon Basics Project.md:75",
+			"operonId": "ndus7fz",
+			"description": "Try Recurrence",
+			"checkbox": "open",
+			"fieldValues": {
+				"operonId": "ndus7fz",
+				"status": "Project.Planned",
+				"priority": "B",
+				"parentTask": "l1dk70s",
+				"progress": "0",
+				"directSubtaskCount": "3",
+				"directDoneSubtaskCount": "0",
+				"directOpenSubtaskCount": "3",
+				"treeDescendantCount": "3",
+				"treeDoneDescendantCount": "0",
+				"treeOpenDescendantCount": "3",
+				"taskIcon": "repeat-2",
+				"taskColor": "0891B2",
+				"note": "Turns repeated work into a maintained rhythm instead of a task you recreate by hand.",
+				"datetimeCreated": "2026-07-14T12:08:17",
+				"datetimeModified": "2026-07-14T12:08:19"
+			},
+			"tags": [
+				"operon-demo",
+				"operon-demo-section"
+			],
+			"primary": {
+				"filePath": "Operon/Demo Workspace/Operon Basics Project.md",
+				"lineNumber": 75,
+				"format": "inline"
+			},
+			"datetimeModified": "2026-07-14T12:08:19",
+			"tier": "hot"
+		},
+		"inline:Operon/Demo Workspace/Operon Basics Project.md:76": {
+			"instanceKey": "inline:Operon/Demo Workspace/Operon Basics Project.md:76",
+			"operonId": "dj1nluj",
+			"description": "Complete this weekly review task",
+			"checkbox": "open",
+			"fieldValues": {
+				"operonId": "dj1nluj",
+				"status": "Project.Planned",
+				"priority": "C",
+				"taskIcon": "repeat-2",
+				"taskColor": "0891B2",
+				"dateScheduled": "2026-07-21",
+				"repeat": "mode=schedule|freq=week|interval=1",
+				"note": "Shows how a repeated commitment can keep returning without being manually rebuilt.",
+				"parentTask": "ndus7fz",
+				"datetimeCreated": "2026-07-14T12:08:17",
+				"datetimeModified": "2026-07-14T12:08:17"
+			},
+			"tags": [
+				"operon-demo",
+				"recurring"
+			],
+			"primary": {
+				"filePath": "Operon/Demo Workspace/Operon Basics Project.md",
+				"lineNumber": 76,
+				"format": "inline"
+			},
+			"datetimeModified": "2026-07-14T12:08:17",
+			"tier": "hot"
+		},
+		"inline:Operon/Demo Workspace/Operon Basics Project.md:77": {
+			"instanceKey": "inline:Operon/Demo Workspace/Operon Basics Project.md:77",
+			"operonId": "g74e80o",
+			"description": "Review the next generated occurrence",
+			"checkbox": "open",
+			"fieldValues": {
+				"operonId": "g74e80o",
+				"status": "Project.Planned",
+				"priority": "C",
+				"taskIcon": "repeat-2",
+				"taskColor": "0891B2",
+				"dateScheduled": "2026-07-22",
+				"note": "Builds trust that recurring work creates the next visible step instead of disappearing after completion.",
+				"parentTask": "ndus7fz",
+				"datetimeCreated": "2026-07-14T12:08:17",
+				"datetimeModified": "2026-07-14T12:08:17"
+			},
+			"tags": [
+				"operon-demo",
+				"recurring"
+			],
+			"primary": {
+				"filePath": "Operon/Demo Workspace/Operon Basics Project.md",
+				"lineNumber": 77,
+				"format": "inline"
+			},
+			"datetimeModified": "2026-07-14T12:08:17",
+			"tier": "hot"
+		},
+		"inline:Operon/Demo Workspace/Operon Basics Project.md:78": {
+			"instanceKey": "inline:Operon/Demo Workspace/Operon Basics Project.md:78",
+			"operonId": "lp4hnck",
+			"description": "Change the recurrence rule on this task",
+			"checkbox": "open",
+			"fieldValues": {
+				"operonId": "lp4hnck",
+				"status": "Project.Planned",
+				"priority": "C",
+				"taskIcon": "repeat-2",
+				"taskColor": "0891B2",
+				"repeat": "mode=schedule|freq=day|interval=1",
+				"note": "Shows how rhythm can be adjusted when a task needs a different cadence.",
+				"parentTask": "ndus7fz",
+				"datetimeCreated": "2026-07-14T12:08:17",
+				"datetimeModified": "2026-07-14T12:08:17"
+			},
+			"tags": [
+				"operon-demo",
+				"recurring"
+			],
+			"primary": {
+				"filePath": "Operon/Demo Workspace/Operon Basics Project.md",
+				"lineNumber": 78,
+				"format": "inline"
+			},
+			"datetimeModified": "2026-07-14T12:08:17",
+			"tier": "hot"
+		},
+		"inline:Operon/Demo Workspace/Operon Basics Project.md:82": {
+			"instanceKey": "inline:Operon/Demo Workspace/Operon Basics Project.md:82",
+			"operonId": "vbm1g5y",
+			"description": "Track Time",
+			"checkbox": "open",
+			"fieldValues": {
+				"operonId": "vbm1g5y",
+				"status": "Project.Planned",
+				"priority": "B",
+				"totalEstimate": "3300",
+				"parentTask": "l1dk70s",
+				"progress": "0",
+				"directSubtaskCount": "3",
+				"directDoneSubtaskCount": "0",
+				"directOpenSubtaskCount": "3",
+				"treeDescendantCount": "3",
+				"treeDoneDescendantCount": "0",
+				"treeOpenDescendantCount": "3",
+				"taskIcon": "timer",
+				"taskColor": "CA8A04",
+				"note": "Connects task planning with the real time spent doing the work.",
+				"datetimeCreated": "2026-07-14T12:08:17",
+				"datetimeModified": "2026-07-14T12:08:19"
+			},
+			"tags": [
+				"operon-demo",
+				"operon-demo-section"
+			],
+			"primary": {
+				"filePath": "Operon/Demo Workspace/Operon Basics Project.md",
+				"lineNumber": 82,
+				"format": "inline"
+			},
+			"datetimeModified": "2026-07-14T12:08:19",
+			"tier": "hot"
+		},
+		"inline:Operon/Demo Workspace/Operon Basics Project.md:83": {
+			"instanceKey": "inline:Operon/Demo Workspace/Operon Basics Project.md:83",
+			"operonId": "46atgsk",
+			"description": "Start the timer on this task",
+			"checkbox": "open",
+			"fieldValues": {
+				"operonId": "46atgsk",
+				"status": "Project.Planned",
+				"priority": "B",
+				"taskIcon": "timer",
+				"taskColor": "CA8A04",
+				"estimate": "900",
+				"note": "Turns an estimate into an active work session you can compare against later.",
+				"parentTask": "vbm1g5y",
+				"datetimeCreated": "2026-07-14T12:08:17",
+				"datetimeModified": "2026-07-14T12:08:17"
+			},
+			"tags": [
+				"operon-demo",
+				"time-tracking"
+			],
+			"primary": {
+				"filePath": "Operon/Demo Workspace/Operon Basics Project.md",
+				"lineNumber": 83,
+				"format": "inline"
+			},
+			"datetimeModified": "2026-07-14T12:08:17",
+			"tier": "hot"
+		},
+		"inline:Operon/Demo Workspace/Operon Basics Project.md:84": {
+			"instanceKey": "inline:Operon/Demo Workspace/Operon Basics Project.md:84",
+			"operonId": "mms7r60",
+			"description": "Stop the timer and review the tracked session",
+			"checkbox": "open",
+			"fieldValues": {
+				"operonId": "mms7r60",
+				"status": "Project.Planned",
+				"priority": "B",
+				"taskIcon": "timer",
+				"taskColor": "CA8A04",
+				"estimate": "900",
+				"note": "Shows how tracked time becomes useful feedback instead of just another clock running.",
+				"parentTask": "vbm1g5y",
+				"datetimeCreated": "2026-07-14T12:08:17",
+				"datetimeModified": "2026-07-14T12:08:17"
+			},
+			"tags": [
+				"operon-demo",
+				"time-tracking"
+			],
+			"primary": {
+				"filePath": "Operon/Demo Workspace/Operon Basics Project.md",
+				"lineNumber": 84,
+				"format": "inline"
+			},
+			"datetimeModified": "2026-07-14T12:08:17",
+			"tier": "hot"
+		},
+		"inline:Operon/Demo Workspace/Operon Basics Project.md:85": {
+			"instanceKey": "inline:Operon/Demo Workspace/Operon Basics Project.md:85",
+			"operonId": "6boruje",
+			"description": "Try this task in FlowTime mode",
+			"checkbox": "open",
+			"fieldValues": {
+				"operonId": "6boruje",
+				"status": "Project.Planned",
+				"priority": "C",
+				"taskIcon": "timer",
+				"taskColor": "CA8A04",
+				"estimate": "1500",
+				"note": "Gives focused work a lightweight timer flow without turning the task into a separate system.",
+				"parentTask": "vbm1g5y",
+				"datetimeCreated": "2026-07-14T12:08:17",
+				"datetimeModified": "2026-07-14T12:08:17"
+			},
+			"tags": [
+				"operon-demo",
+				"time-tracking"
+			],
+			"primary": {
+				"filePath": "Operon/Demo Workspace/Operon Basics Project.md",
+				"lineNumber": 85,
+				"format": "inline"
+			},
+			"datetimeModified": "2026-07-14T12:08:17",
+			"tier": "hot"
+		},
+		"inline:Operon/Demo Workspace/Operon Basics Project.md:89": {
+			"instanceKey": "inline:Operon/Demo Workspace/Operon Basics Project.md:89",
+			"operonId": "knvcrmd",
+			"description": "Find And Filter Tasks",
+			"checkbox": "open",
+			"fieldValues": {
+				"operonId": "knvcrmd",
+				"status": "Project.Planned",
+				"priority": "B",
+				"parentTask": "l1dk70s",
+				"progress": "33",
+				"directSubtaskCount": "3",
+				"directDoneSubtaskCount": "1",
+				"directOpenSubtaskCount": "2",
+				"treeDescendantCount": "3",
+				"treeDoneDescendantCount": "1",
+				"treeOpenDescendantCount": "2",
+				"taskIcon": "search",
+				"taskColor": "4F46E5",
+				"note": "Shows how tasks remain findable after they spread across notes, filters, and project files.",
+				"datetimeCreated": "2026-07-14T12:08:17",
+				"datetimeModified": "2026-07-14T12:08:19"
+			},
+			"tags": [
+				"operon-demo",
+				"operon-demo-section"
+			],
+			"primary": {
+				"filePath": "Operon/Demo Workspace/Operon Basics Project.md",
+				"lineNumber": 89,
+				"format": "inline"
+			},
+			"datetimeModified": "2026-07-14T12:08:19",
+			"tier": "hot"
+		},
+		"inline:Operon/Demo Workspace/Operon Basics Project.md:90": {
+			"instanceKey": "inline:Operon/Demo Workspace/Operon Basics Project.md:90",
+			"operonId": "au1u1fb",
+			"description": "Search for demo tasks in Task Finder",
+			"checkbox": "open",
+			"fieldValues": {
+				"operonId": "au1u1fb",
+				"status": "Project.Planned",
+				"priority": "C",
+				"taskIcon": "search",
+				"taskColor": "4F46E5",
+				"note": "Builds confidence that tasks can be found from one place, even after they spread across different notes.",
+				"parentTask": "knvcrmd",
+				"datetimeCreated": "2026-07-14T12:08:17",
+				"datetimeModified": "2026-07-14T12:08:17"
+			},
+			"tags": [
+				"operon-demo"
+			],
+			"primary": {
+				"filePath": "Operon/Demo Workspace/Operon Basics Project.md",
+				"lineNumber": 90,
+				"format": "inline"
+			},
+			"datetimeModified": "2026-07-14T12:08:17",
+			"tier": "hot"
+		},
+		"inline:Operon/Demo Workspace/Operon Basics Project.md:91": {
+			"instanceKey": "inline:Operon/Demo Workspace/Operon Basics Project.md:91",
+			"operonId": "rxso54t",
+			"description": "Open the Operon Basics Project filter",
+			"checkbox": "open",
+			"fieldValues": {
+				"operonId": "rxso54t",
+				"status": "Project.Planned",
+				"priority": "C",
+				"taskIcon": "search",
+				"taskColor": "4F46E5",
+				"note": "Shows how a saved filter can turn one project tree into a reusable working view.",
+				"parentTask": "knvcrmd",
+				"datetimeCreated": "2026-07-14T12:08:17",
+				"datetimeModified": "2026-07-14T12:08:17"
+			},
+			"tags": [
+				"operon-demo"
+			],
+			"primary": {
+				"filePath": "Operon/Demo Workspace/Operon Basics Project.md",
+				"lineNumber": 91,
+				"format": "inline"
+			},
+			"datetimeModified": "2026-07-14T12:08:17",
+			"tier": "hot"
+		},
+		"inline:Operon/Demo Workspace/Operon Basics Project.md:92": {
+			"instanceKey": "inline:Operon/Demo Workspace/Operon Basics Project.md:92",
+			"operonId": "eo26anb",
+			"description": "Review this completed demo item in finished filters",
+			"checkbox": "done",
+			"fieldValues": {
+				"operonId": "eo26anb",
+				"status": "Project.Finished",
+				"priority": "C",
+				"taskIcon": "search",
+				"taskColor": "4F46E5",
+				"dateCompleted": "2026-07-14",
+				"note": "Shows that finished work stays visible when you need review history, without cluttering active lists.",
+				"parentTask": "knvcrmd",
+				"datetimeCreated": "2026-07-14T12:08:17",
+				"datetimeModified": "2026-07-14T12:08:17"
+			},
+			"tags": [
+				"operon-demo"
+			],
+			"primary": {
+				"filePath": "Operon/Demo Workspace/Operon Basics Project.md",
+				"lineNumber": 92,
+				"format": "inline"
+			},
+			"datetimeModified": "2026-07-14T12:08:17",
+			"tier": "warm"
+		},
+		"inline:Operon/Demo Workspace/Operon Basics Project.md:96": {
+			"instanceKey": "inline:Operon/Demo Workspace/Operon Basics Project.md:96",
+			"operonId": "eqt8ryo",
+			"description": "Finish The Demo",
+			"checkbox": "open",
+			"fieldValues": {
+				"operonId": "eqt8ryo",
+				"status": "Project.Planned",
+				"priority": "B",
+				"parentTask": "l1dk70s",
+				"progress": "0",
+				"directSubtaskCount": "3",
+				"directDoneSubtaskCount": "0",
+				"directOpenSubtaskCount": "3",
+				"treeDescendantCount": "3",
+				"treeDoneDescendantCount": "0",
+				"treeOpenDescendantCount": "3",
+				"taskIcon": "badge-check",
+				"taskColor": "64748B",
+				"note": "Closes the basics loop by checking the main views after using real task interactions.",
+				"datetimeCreated": "2026-07-14T12:08:17",
+				"datetimeModified": "2026-07-14T12:08:19"
+			},
+			"tags": [
+				"operon-demo",
+				"operon-demo-section"
+			],
+			"primary": {
+				"filePath": "Operon/Demo Workspace/Operon Basics Project.md",
+				"lineNumber": 96,
+				"format": "inline"
+			},
+			"datetimeModified": "2026-07-14T12:08:19",
+			"tier": "hot"
+		},
+		"inline:Operon/Demo Workspace/Operon Basics Project.md:97": {
+			"instanceKey": "inline:Operon/Demo Workspace/Operon Basics Project.md:97",
+			"operonId": "90yeobz",
+			"description": "Complete three demo tasks",
+			"checkbox": "open",
+			"fieldValues": {
+				"operonId": "90yeobz",
+				"status": "Project.Planned",
+				"priority": "B",
+				"taskIcon": "badge-check",
+				"taskColor": "64748B",
+				"note": "Turns the demo from reading into muscle memory by making a few real state changes.",
+				"parentTask": "eqt8ryo",
+				"datetimeCreated": "2026-07-14T12:08:17",
+				"datetimeModified": "2026-07-14T12:08:17"
+			},
+			"tags": [
+				"operon-demo"
+			],
+			"primary": {
+				"filePath": "Operon/Demo Workspace/Operon Basics Project.md",
+				"lineNumber": 97,
+				"format": "inline"
+			},
+			"datetimeModified": "2026-07-14T12:08:17",
+			"tier": "hot"
+		},
+		"inline:Operon/Demo Workspace/Operon Basics Project.md:98": {
+			"instanceKey": "inline:Operon/Demo Workspace/Operon Basics Project.md:98",
+			"operonId": "gzb4dsu",
+			"description": "Open demo tasks on the Kanban board",
+			"checkbox": "open",
+			"fieldValues": {
+				"operonId": "gzb4dsu",
+				"status": "Project.Planned",
+				"priority": "C",
+				"taskIcon": "badge-check",
+				"taskColor": "64748B",
+				"note": "Connects the same tasks to a board view so status changes become easier to scan.",
+				"parentTask": "eqt8ryo",
+				"datetimeCreated": "2026-07-14T12:08:17",
+				"datetimeModified": "2026-07-14T12:08:17"
+			},
+			"tags": [
+				"operon-demo"
+			],
+			"primary": {
+				"filePath": "Operon/Demo Workspace/Operon Basics Project.md",
+				"lineNumber": 98,
+				"format": "inline"
+			},
+			"datetimeModified": "2026-07-14T12:08:17",
+			"tier": "hot"
+		},
+		"inline:Operon/Demo Workspace/Operon Basics Project.md:99": {
+			"instanceKey": "inline:Operon/Demo Workspace/Operon Basics Project.md:99",
+			"operonId": "q2zbadp",
+			"description": "Open scheduled demo tasks on the Calendar",
+			"checkbox": "open",
+			"fieldValues": {
+				"operonId": "q2zbadp",
+				"status": "Project.Planned",
+				"priority": "C",
+				"taskIcon": "badge-check",
+				"taskColor": "64748B",
+				"note": "Connects scheduled tasks to time planning so dates and timed blocks feel practical, not decorative.",
+				"parentTask": "eqt8ryo",
+				"datetimeCreated": "2026-07-14T12:08:17",
+				"datetimeModified": "2026-07-14T12:08:17"
+			},
+			"tags": [
+				"operon-demo"
+			],
+			"primary": {
+				"filePath": "Operon/Demo Workspace/Operon Basics Project.md",
+				"lineNumber": 99,
+				"format": "inline"
+			},
+			"datetimeModified": "2026-07-14T12:08:17",
+			"tier": "hot"
+		},
+		"yaml:Operon/Demo Workspace/Operon Basics Project.md:0": {
+			"instanceKey": "yaml:Operon/Demo Workspace/Operon Basics Project.md:0",
+			"operonId": "l1dk70s",
+			"description": "Operon Basics Project",
+			"checkbox": "open",
+			"fieldValues": {
+				"operonId": "l1dk70s",
+				"status": "Project.Planned",
+				"priority": "B",
+				"dateScheduled": "2026-07-14",
+				"dateDue": "2026-07-21",
+				"taskIcon": "sparkles",
+				"taskColor": "111827",
+				"datetimeCreated": "2026-07-14T12:08:17",
+				"datetimeModified": "2026-07-14T12:08:52",
+				"progress": "2",
+				"directSubtaskCount": "11",
+				"directDoneSubtaskCount": "0",
+				"directOpenSubtaskCount": "11",
+				"treeDescendantCount": "44",
+				"treeDoneDescendantCount": "1",
+				"treeOpenDescendantCount": "43",
+				"totalEstimate": "8700"
+			},
+			"tags": [],
+			"primary": {
+				"filePath": "Operon/Demo Workspace/Operon Basics Project.md",
+				"lineNumber": 0,
+				"format": "yaml"
+			},
+			"datetimeModified": "2026-07-14T12:08:52",
+			"tier": "hot"
+		}
+	}
+}
