@@ -1,0 +1,32 @@
+{
+	"version": 1,
+	"journal": {
+		"version": 1,
+		"runId": "table-files-20260714160803",
+		"status": "failed",
+		"destinationFolder": "Operon/Tables",
+		"backupFolder": ".obsidian/plugins/operon/data/migrations/table-presets-v1/table-files-20260714160803",
+		"legacyIndexFingerprint": "4d4a6243",
+		"items": [
+			{
+				"presetId": "table-preset-my-first-table",
+				"presetName": "My First Table",
+				"legacyPath": ".obsidian/plugins/operon/data/table-presets/table-preset-my-first-table.json",
+				"targetPath": "Operon/Tables/My First Table.table",
+				"sourceFingerprint": "{\"id\":\"table-preset-my-first-table\",\"name\":\"My First Table\",\"filterSetId\":null,\"columns\":[{\"key\":\"taskType\",\"kind\":\"task\",\"label\":null,\"widthPx\":null,\"hidden\":null,\"align\":\"center\",\"pinned\":null,\"colorMode\":null,\"durationDisplayMode\":null,\"displayMode\":\"icon\"},{\"key\":\"taskIcon\",\"kind\":\"task\",\"label\":null,\"widthPx\":null,\"hidden\":null,\"align\":\"center\",\"pinned\":null,\"colorMode\":null,\"durationDisplayMode\":null,\"displayMode\":\"icon\"},{\"key\":\"taskColor\",\"kind\":\"task\",\"label\":null,\"widthPx\":null,\"hidden\":null,\"align\":\"center\",\"pinned\":null,\"colorMode\":null,\"durationDisplayMode\":null,\"displayMode\":\"icon\"},{\"key\":\"description\",\"kind\":\"task\",\"label\":null,\"widthPx\":296,\"hidden\":null,\"align\":null,\"pinned\":null,\"colorMode\":null,\"durationDisplayMode\":null,\"displayMode\":null},{\"key\":\"note\",\"kind\":\"task\",\"label\":null,\"widthPx\":null,\"hidden\":null,\"align\":null,\"pinned\":null,\"colorMode\":null,\"durationDisplayMode\":null,\"displayMode\":\"icon\"},{\"key\":\"priority\",\"kind\":\"task\",\"label\":null,\"widthPx\":100,\"hidden\":null,\"align\":\"center\",\"pinned\":null,\"colorMode\":null,\"durationDisplayMode\":null,\"displayMode\":null},{\"key\":\"status\",\"kind\":\"task\",\"label\":null,\"widthPx\":201,\"hidden\":null,\"align\":null,\"pinned\":null,\"colorMode\":null,\"durationDisplayMode\":null,\"displayMode\":null},{\"key\":\"progress\",\"kind\":\"task\",\"label\":null,\"widthPx\":177,\"hidden\":null,\"align\":\"center\",\"pinned\":null,\"colorMode\":null,\"durationDisplayMode\":null,\"displayMode\":null},{\"key\":\"dateScheduled\",\"kind\":\"task\",\"label\":null,\"widthPx\":null,\"hidden\":null,\"align\":\"center\",\"pinned\":null,\"colorMode\":null,\"durationDisplayMode\":null,\"displayMode\":null},{\"key\":\"dateDue\",\"kind\":\"task\",\"label\":null,\"widthPx\":null,\"hidden\":null,\"align\":\"center\",\"pinned\":null,\"colorMode\":null,\"durationDisplayMode\":null,\"displayMode\":null},{\"key\":\"totalDuration\",\"kind\":\"task\",\"label\":null,\"widthPx\":null,\"hidden\":true,\"align\":\"right\",\"pinned\":null,\"colorMode\":null,\"durationDisplayMode\":null,\"displayMode\":null},{\"key\":\"duration\",\"kind\":\"task\",\"label\":null,\"widthPx\":145,\"hidden\":true,\"align\":\"right\",\"pinned\":null,\"colorMode\":null,\"durationDisplayMode\":null,\"displayMode\":null},{\"key\":\"estimate\",\"kind\":\"task\",\"label\":null,\"widthPx\":177,\"hidden\":true,\"align\":\"right\",\"pinned\":null,\"colorMode\":null,\"durationDisplayMode\":null,\"displayMode\":null},{\"key\":\"checkboxProgress\",\"kind\":\"task\",\"label\":null,\"widthPx\":179,\"hidden\":true,\"align\":\"center\",\"pinned\":null,\"colorMode\":null,\"durationDisplayMode\":null,\"displayMode\":null},{\"key\":\"location\",\"kind\":\"task\",\"label\":null,\"widthPx\":237,\"hidden\":true,\"align\":null,\"pinned\":null,\"colorMode\":\"taskColor\",\"durationDisplayMode\":null,\"displayMode\":null},{\"key\":\"parentTask\",\"kind\":\"task\",\"label\":null,\"widthPx\":290,\"hidden\":true,\"align\":null,\"pinned\":null,\"colorMode\":null,\"durationDisplayMode\":null,\"displayMode\":null},{\"key\":\"source\",\"kind\":\"task\",\"label\":null,\"widthPx\":null,\"hidden\":true,\"align\":null,\"pinned\":null,\"colorMode\":null,\"durationDisplayMode\":null,\"displayMode\":null},{\"key\":\"trackers\",\"kind\":\"task\",\"label\":null,\"widthPx\":369,\"hidden\":true,\"align\":null,\"pinned\":null,\"colorMode\":null,\"durationDisplayMode\":null,\"displayMode\":null},{\"key\":\"totalEstimate\",\"kind\":\"task\",\"label\":null,\"widthPx\":null,\"hidden\":true,\"align\":\"right\",\"pinned\":null,\"colorMode\":null,\"durationDisplayMode\":null,\"displayMode\":null},{\"key\":\"tags\",\"kind\":\"task\",\"label\":null,\"widthPx\":229,\"hidden\":true,\"align\":null,\"pinned\":null,\"colorMode\":\"randomColors\",\"durationDisplayMode\":null,\"displayMode\":null},{\"key\":\"sourceFormat\",\"kind\":\"task\",\"label\":null,\"widthPx\":null,\"hidden\":true,\"align\":null,\"pinned\":null,\"colorMode\":null,\"durationDisplayMode\":null,\"displayMode\":null},{\"key\":\"sourceLine\",\"kind\":\"task\",\"label\":null,\"widthPx\":null,\"hidden\":true,\"align\":\"right\",\"pinned\":null,\"colorMode\":null,\"durationDisplayMode\":null,\"displayMode\":null},{\"key\":\"checkbox\",\"kind\":\"task\",\"label\":null,\"widthPx\":null,\"hidden\":true,\"align\":\"center\",\"pinned\":null,\"colorMode\":null,\"durationDisplayMode\":null,\"displayMode\":\"icon\"}],\"sortRules\":[],\"groupBy\":null,\"groupOrder\":\"asc\",\"subgroupBy\":null,\"subgroupOrder\":\"asc\",\"summaries\":[],\"display\":{\"showSource\":true,\"density\":\"compact\"},\"search\":{\"scope\":{\"projectMode\":null,\"showOverdue\":false,\"showHappensToday\":false,\"showRecentModified\":false,\"includeInline\":true,\"includeFile\":true,\"includeCancelled\":true,\"includeFinished\":true},\"parent\":null}}",
+				"targetFingerprint": "aa56963f",
+				"classification": "create",
+				"outcome": "failed",
+				"attemptCount": 5,
+				"updatedAt": "2026-07-19T15:32:57.396Z",
+				"relatedPaths": [
+					"Operon/Tables/My First Table.table"
+				],
+				"error": "ENOENT: no such file or directory, open '/home/jac/PersonalBrain/Operon/Tables/My First Table.table.migrating-table-files-20260714160803'"
+			}
+		],
+		"startedAt": "2026-07-14T16:08:03.203Z",
+		"updatedAt": "2026-07-19T15:32:57.396Z",
+		"lastError": "ENOENT: no such file or directory, open '/home/jac/PersonalBrain/Operon/Tables/My First Table.table.migrating-table-files-20260714160803'"
+	}
+}

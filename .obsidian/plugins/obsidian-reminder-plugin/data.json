@@ -1,0 +1,71 @@
+{
+  "scanned": true,
+  "reminders": {
+    "Kanban/Daily Priority Low.md": [
+      {
+        "title": "Look at this [[Codebase On The Job Question]]",
+        "time": "2026-02-05",
+        "rowNumber": 66,
+        "muted": true
+      },
+      {
+        "title": "Renew [IDNYC](https://www.nyc.gov/site/idnyc/index.page)",
+        "time": "2031-02-28",
+        "rowNumber": 75,
+        "muted": false
+      }
+    ],
+    "Kanban/Habits.md": [
+      {
+        "title": "Supposed to get a router every 2 years but 5 years at the max",
+        "time": "2027-09-01",
+        "rowNumber": 101,
+        "muted": false
+      }
+    ]
+  },
+  "debug": false,
+  "dndUntil": null,
+  "settings": {
+    "reminderTime": "09:00",
+    "reminderTimeStep": 15,
+    "laters": "In 30 minutes\nIn 1 hour\nIn 3 hours\nTomorrow\nNext week",
+    "enableNotification": true,
+    "reNotifyMutedOnStartup": false,
+    "notificationPopupStyle": "toast",
+    "openNoteOnReminderClick": false,
+    "useSystemNotification": true,
+    "showPopupWithSystemNotification": false,
+    "keepSystemNotificationOnScreen": false,
+    "focusDoneButtonOnPopup": false,
+    "showOverdueCountInStatusBar": true,
+    "autoCompleteTrigger": "(@",
+    "convertNonTaskLines": true,
+    "primaryReminderFormat": "ReminderPluginReminderFormat",
+    "editorReminderDisplay": true,
+    "enableReminderPluginReminderFormat": true,
+    "dateFormat": "YYYY-MM-DD",
+    "dateTimeFormat": "YYYY-MM-DD HH:mm",
+    "strictDateFormat": false,
+    "linkDatesToDailyNotes": false,
+    "enableTasksPluginReminderFormat": false,
+    "useCustomEmojiForTasksPlugin": false,
+    "useReminderTimeFallbackForTasksPlugin": false,
+    "removeTagsForTasksPlugin": false,
+    "enableDataviewReminderFormat": false,
+    "dataviewReminderFieldName": "reminder",
+    "enableKanbanPluginReminderFormat": false,
+    "yearMonthDisplayFormat": "YYYY, MMMM",
+    "monthDayDisplayFormat": "MM/DD",
+    "shortDateWithWeekdayDisplayFormat": "M/DD (ddd)",
+    "timeDisplayFormat": "HH:mm",
+    "weekStart": "0",
+    "ntfyEnabled": false,
+    "ntfyServerUrl": "https://ntfy.sh",
+    "ntfyTopic": "",
+    "ntfyAccessToken": "",
+    "excludedPaths": "",
+    "editDetectionSec": 10,
+    "reminderCheckIntervalSec": 5
+  }
+}

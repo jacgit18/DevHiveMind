@@ -1,0 +1,11 @@
+{
+	"version": 1,
+	"presetIds": [
+		"table-preset-my-first-table"
+	],
+	"tableDefaultPresetId": "table-preset-my-first-table",
+	"tableEmbedVisibleRows": 20,
+	"tableShowLineNumbers": true,
+	"tableShowTaskIcon": false,
+	"tableShowTaskTypeIcon": false
+}
