@@ -1,7 +1,17 @@
 .git
 .smart-connections
+.smart-env
 .trash
 .obsidian/community-plugins.json
 .obsidian/graph.json
 .obsidian/workspace-mobile.json
 .obsidian/workspace.json
+/Architecture/
+/Business Venture/
+/Communication/
+/Dashboard/
+/Error Log/
+/Finance/
+/Philosphy/
+/_*/
+/EMERGENCY

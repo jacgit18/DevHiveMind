@@ -15,4 +15,10 @@
 .smart-connections
 
 
+.obsidian/plugins/edge-tts/temp
 
+
+/_Repos/
+
+# Ignore Smart Environment folder
+.smart-env
