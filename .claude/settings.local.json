@@ -1,0 +1,22 @@
+{
+  "permissions": {
+    "allow": [
+      "Skill(claude-api)",
+      "Skill(claude-api:*)",
+      "Bash(python3 -m venv venv)",
+      "Bash(./venv/bin/pip install *)",
+      "Bash(./venv/bin/python -c \"import anthropic; print\\('anthropic version:', anthropic.__version__\\)\")",
+      "Bash(unset ANTHROPIC_API_KEY)",
+      "Bash(./venv/bin/python main.py)",
+      "Bash(echo \"exit code: $?\")",
+      "Bash(command -v ant)",
+      "Bash(ant auth *)",
+      "Bash(./venv/bin/python -c \"import anthropic; print\\('ok', anthropic.__version__\\)\")",
+      "Bash(awk -F= '{print $1\"=\"substr\\($2,1,7\\)\"...  \\(len=\"length\\($2\\)\"\\)\"}' .env)",
+      "Bash(./venv/bin/python main.py *)",
+      "Bash(./venv/bin/python build_agent.py commit_message_agent)",
+      "Bash(./venv/bin/python -c \"import ast; ast.parse\\(open\\('agents/commit_message_agent.py'\\).read\\(\\)\\)\")",
+      "Bash(./venv/bin/python -c \"from agents.commit_message_agent import generate_commit_message; print\\(generate_commit_message\\(''\\)\\)\")"
+    ]
+  }
+}
