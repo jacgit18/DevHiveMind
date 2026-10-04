@@ -29,7 +29,13 @@ aggregation that doesn't reconcile with the ledger. Everything else is cosmetic 
 ## Pipeline placement
 
 - **PR CI:** unit + integration, budget < 3 min. `alembic upgrade head` against a scratch DB.
-- **Local / pre-release:** E2E smoke (no CI browser infra for the MVP).
+- **PR CI (from 2026-10-03, ADR-0023):** Playwright E2E + axe on every route against the production
+  build, API mocked in the page; screenshots regenerated and diffed against `main` on frontend changes.
+- **PR CI (real-stack job, from 2026-10-03):** the production compose stack with a throwaway database and
+  random login; one Playwright smoke path (browser → Caddy → FastAPI → Postgres) then Lighthouse on every
+  route, mobile and desktop, signed in. Locally: `scripts/real-stack.sh up`, load `.real-stack.env`,
+  `npm run e2e:real`, `npm run lighthouse:real`, `scripts/real-stack.sh down` (own project and port 8081,
+  safe beside the real prod stack).
 
 ## Technique & data
 

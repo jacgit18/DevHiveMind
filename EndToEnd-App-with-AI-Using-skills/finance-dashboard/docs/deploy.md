@@ -92,6 +92,14 @@ On drift, read the WARN lines and decide which side is right by hand before touc
 
 No migration (still 0005). Deploying it is a backend + frontend rebuild only: back up with `scripts/backup-db.sh`, then `scripts/prod.sh up -d --build`, and check `/health` and that `GET /api/budgets?month=2026-09` answers 401 without a session.
 
+## 2026-10-03 deploy: backend image on Python 3.14
+
+Backend rebuild only (`backend/Dockerfile` base `python:3.13-slim` → `python:3.14-slim`, to match local dev and CI). No migration (still 0005); the `db` and `web` containers were not recreated, so the database volume was untouched. Backed up first (`backups/finance-20261003-220707.sql.gz`), then `scripts/prod.sh up -d --build`.
+
+Verified: container Python 3.13.16 → 3.14.8; `alembic current` = 0005 (head); `GET /health` → `{"status":"ok","db":"connected"}` (the path is `/health`, not `/api/health`); unauthenticated `GET /api/budgets` → 401; `cloudflared` active; clean startup log. The owner then signed in through the public tunnel (first verified browser sign-in through it) and ran the reconcile script; its output is not recorded here.
+
+GitHub Actions CI now exists (`.github/workflows/ci.yml`: scripts smoke tests + lint, backend tests on a real Postgres with `REQUIRE_DB=1`, frontend tests + build). It reports on PRs and on pushes to `main`; `main` has no branch protection, so it does not block a merge.
+
 ## Error tracking (Sentry) — optional, free tier
 
 The backend initialises Sentry only when `SENTRY_DSN` is set; without it nothing is sent anywhere.

@@ -1,6 +1,6 @@
 # ADR 0015 — Frontend test tooling
 
-- **Status:** Accepted
+- **Status:** Accepted; E2E placement superseded by ADR-0023 (Playwright now runs in CI)
 - **Date:** 2026-09-10
 - **Deciders:** the owner
 - **Derived via:** `Architecture/tech-decision-walkthrough`, decision 13 (closeout audit)
