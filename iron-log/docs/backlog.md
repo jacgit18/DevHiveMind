@@ -1,51 +1,83 @@
 # TODO
 
-Work through these in order, one at a time, and check for bugs after each.
+Work through these from the top: bugs first, then the backend and its load-bearing decisions, then what follows them, then UX and optional ideas. Completed sections are at the bottom. Item numbers are labels only, not an order; check for bugs after each item.
 
-## Done
+**Convention: all new code is TypeScript** (`.ts`/`.tsx`, strict). Do not add `.js` or `.jsx` files; core types are in `src/types.ts` and `src/store/types.ts`. Run `npm run typecheck` with the other checks. _Last reviewed against the code: 2026-10-06 (see the review notes at the end)._
 
-- [x] Convert to React, meet WCAG 2.2 AAA, make it an installable offline PWA (#14)
+## Bugs
 
-## 1. Fix imports and pick one file format (before the backend)
+Found in the 2026-10-05 bug sweep and re-checked against the code on 2026-10-06 (all still present; the TypeScript conversion changed none of them, only renamed files). The high and medium ones are fixed (#67), plus import-replace atomicity and the empty-repo GitHub backup (PR in review). These are what's left.
 
-- [x] Excel import bug: no failing file turned up (the re-saved-dates bug was already fixed in #16). The real gap was that workbooks only brought back part of the data; see the next item.
-- [x] Make Excel (.xlsx) the one format for both export and import. Programs, saved versions, check-offs, config, sessions and body weight each have a sheet, and an exported workbook imports back the same as the JSON file.
-  - Still to do: remove the old partial-import path for workbooks made before this change, once nobody has those.
-- [x] Accept CSV as an import fallback only (sessions only).
-- [x] Keep JSON import until the backend exists, because it is the only full-detail backup for now. It gets removed in step 4.
-
-## 2. Board and exercise changes (before the backend)
-
-These change how days and exercises are stored. Do them together so the data structure is settled before it goes into a database.
-
-- [x] Add a Day 7 to the board. It starts empty, and exercises can be added whenever.
-- [x] Add a Rest day checkbox to each day. Ticking it inserts a rest day there and moves the later workouts one day later (blocked while Day 7 has exercises). A rest day counts as a complete day, and its exercises aren't in it, so volume numbers aren't inflated.
-- [x] Add an exercise to the current day from the board.
-- [x] Add stretches to the board, as a card type that doesn't need weight or reps.
-- [x] Add an optional video link to each exercise.
-- [x] Specify equipment for each exercise (dumbbell, bar, machine, bodyweight, etc.).
-- [x] Add a Filter to sort exercises on the board by muscle group.
-- [x] Set a default phase for an exercise that applies to all future instances of that exercise.
-- [x] Add spinal waves as a bodyweight mobility exercise.
+- [ ] Deleting a stretch and re-adding one with the same name brings old check-offs back in earlier weeks (ids are slugs of the name).
+- [ ] Merge-import orphans stretch check-offs when the stretch matches by name but has a different id.
+- [ ] `bestLift` can show the wrong date when entries aren't in date order (`addEntry` and `mergeEntries` sort; a JSON replace import and database snapshots do not, `normEntries` keeps the file's order). Simplest fix: sort in `normEntries`.
+- [ ] CSV export: a leading `=`, `+`, `-` or `@` in a note or exercise name runs as a formula in Excel. CSV import also drops the exercise id (`exId` column is empty), so a renamed custom exercise duplicates.
+- [ ] Rest timer: the manual Rest button uses `restSecs() || 90`, so a Rest setting of 0 runs 90 s while holds treat 0 as no rest. Decide which is intended.
+- [ ] Wake lock can leak if `stop()` or a restart lands before the lock request resolves (`src/store/useTimerStore.ts`). Track the pending promise.
+- [ ] Excel notes: an entry with both a note and `auto` loses `auto` on re-import (`noteOf` in `src/lib/export.ts`).
+- [ ] Small leaks: `UpdateBanner` hourly interval never cleared, `useTooltips` doesn't clear its hide timer, `initPwa` adds listeners on every call, theme-color meta doesn't follow an OS theme change.
+- [ ] GitHub rate-limit message always says "paste your token first", even when a token is set (`explain` in `src/lib/github.ts`).
+- [ ] `screenshots.yml` fails on fork PRs (read-only token on `git push`), and its `git clone || git init` fallback hides real clone errors.
+- [ ] Experiment excercises only show 5 days on dropdown
 
 ## 3. Backend, database and Google login (together)
 
-- [ ] Choose a backend. Firebase (Google sign-in plus Firestore) fits `src/lib/storage.js`, which already saves through an optional Firestore-like `db`. Supabase is the other option for a SQL database.
+- [x] Choose a backend. Accepted for now (2026-10-06): own API server in Docker on Neon Postgres, with a separate auth provider (ADR 001 draft, `architecture/decisions/001-backend-shape.md`, 2026-10-05). Firebase and Supabase were considered; Supabase is the fallback. This replaces the earlier Firebase lean once confirmed. Remaining stack decisions (datastore, sync, auth, language, framework, hosting) are still being walked.
+- [x] Pick the API language: TypeScript on Node (ADR 005). **Lean TypeScript:** the API can import `src/types.ts` and run the same `validate.ts` cleaners (`normEntry`, `normProgram`, `normLibrary`, `normBody`) and `normalizeData`/`DataFile` on the server, so client and server cannot disagree on a document's shape. The docs are already versioned (`SCHEMA_VERSION`) and stamped (`updatedAt`). Another language means re-implementing and re-testing all of that. Needs a shared types package or a monorepo layout.
 - [ ] Add Google login. Each user's data is tied to their account.
 - [ ] Keep it offline-first for gym use: queue saves and sync them later, building on `makeSaveQueue`.
-- [ ] Add a one-time "upload my existing data" step so data already on the phone isn't lost.
+- [ ] Add a one-time "upload my existing data" step so data already on the phone isn't lost. (Smaller now: `buildDataFile`/`normalizeData` already produce and check a typed `DataFile`, which is exactly what to upload.)
 - [ ] Possibly exercise catalog what api to use any free options
   - If the app goes multi-user this is close to required: use it to prefill muscles, equipment and video links so new users don't type every exercise.
+
+### Backend stack walkthrough (2026-10-06, one ADR per decision, free tiers only)
+
+Run with `/tech-decision-walkthrough`. Handoff: `iron-log/.claude/handoffs/handoff-backend-stack-walkthrough-2026-10-06.md`.
+
+- [x] 1. Backend shape: own API in Docker (ADR 001)
+- [x] 2. Datastore: Neon Postgres, database-first migrations (ADR 002)
+- [x] 3. Sync, ADR 003 `003-sync-versioned-rows.md` accepted (design B agreed: per-row server versions, stale edits refused and re-merged on the phone, `deletedAt` tombstones, idempotent client-id creates, server-stamped time, short history table, change-feed pull later). Failure-mode register done (`architecture/failure-modes/sync.md`, register only) and ADR 003 accepted. Was: failure-mode analysis (5x5 grid; inventory gaps to add: "error reporting (none yet)", "backups and restore" (check Neon's free restore window), "where sync errors show" (server logs plus a user-visible message when a write keeps failing)), then write ADR 003 and log any amendments to `backend-data-rules.md` section 7.
+- [x] 4. Auth: Better Auth inside our API, Google login first, email/password deferred (ADR 004 `004-auth-better-auth.md`). Own `users` table, provider id in one column, token check in one module; one admin flag with a logged path; row-level security backstop; sharing later via opt-in grants. Open spikes: iOS cookie behavior across sites (settle at decision 9) and Google OAuth in an installed iOS PWA.
+- [x] 5. Language/runtime: TypeScript (`strict`) on Node LTS, types and validation shared with the client (ADR 005 `005-language-typescript-node.md`). Go and Python lost on rule drift and Better Auth; revisit if footprint hurts at decision 9.
+- [x] 6. Web framework: Express 5, thin routes, rules in the shared framework-free module (ADR 007 `007-web-framework-express.md`). Hono is the fallback.
+- [x] 7. API style: command endpoints over plain JSON HTTP (`POST /api/commands/<name>`, `GET /api/sync?since=`), one response envelope, shared contract module (ADR 008 `008-api-style-commands-json-http.md`).
+- [x] 8. Data-access layer: Kysely typed query builder, raw `sql` escape hatch, types generated from the database, explicit transactions (ADR 009 `009-data-access-kysely.md`). Migration tool still open.
+- [x] 9. Hosting: Google Cloud Run (max one instance, budget alert), Express serves the PWA from one origin; Render free is the no-card fallback (ADR 010 `010-hosting-cloud-run.md`). Prices from aggregator sites, confirm on provider pages. Open spike: Google sign-in in an installed iOS PWA.
+- [x] 10. One-time upload: one `import-legacy` command, empty account only, dedupe by client id, check legacy hash collisions first (note in `architecture/stack-walkthrough.md`).
+- [x] 11. lb/kg storage unit: canonical pounds, `numeric` 4 dp in `weight_lb`-style columns, one conversion module, display-only toggle (ADR 006 `006-weight-unit-canonical-lb.md`). Table design is now unblocked.
+- [x] Table design via `relational-modeling`: `data-model/iron-log.md` written 2026-10-06 (bigint ids plus unique client id, jsonb documents, per-user change counter, history trigger, RLS). Open: tombstone purge window, refused-writes retention, migration tool.
+- [ ] Verify Neon free-tier numbers at neon.com (1 GB per project, 100 CU-hours per month; from aggregator pages)
+- [ ] Verify iOS Safari storage eviction for non-installed PWAs (offline up to about 2 days)
+- [x] Closeout (written in `architecture/stack-walkthrough.md`): summary table; cross-cutting obligations (HTTPS, rate limits, backups, CI, secrets, migrations tool, error reporting, privacy policy and data-deletion path); cost-cap check; deferred list; missed-decision audit
+- [ ] Then type `/system-design-communication` (once the stack is settled) and `/decision-journal` for any decision to revisit
+
+### Open after the backend stack walkthrough (2026-10-06; details in `architecture/stack-walkthrough.md`)
+
+Short ADRs still to write:
+- [x] Date and timezone policy (FM-12): local calendar dates as data, Sunday-start week, server validates (ADR 011 `011-date-and-week-policy.md`).
+- [x] Migration tool: dbmate, plain SQL files (ADR 012 `012-migrations-dbmate.md`).
+- [x] Error reporting and logging: Cloud Run logging plus our own client-error endpoint, Sentry as the upgrade (ADR 013 `013-error-reporting-cloud-logging.md`).
+- [x] Backend test tooling: Vitest plus a real Postgres in a throwaway container (ADR 014 `014-backend-test-tooling.md`).
+- [x] Shared code layout: one package, `src/shared/` plus `server/`, workspaces as the planned next step (ADR 015 `015-shared-code-layout.md`).
+
+Values to set:
+- [ ] Tombstone purge window and refused-writes retention (open in `data-model/iron-log.md`).
+
+Spikes and checks (do early):
+- [ ] Google sign-in inside an installed iOS PWA, on a real iPhone. If it fails, reopen ADR 004 and the same-origin choice in ADR 010.
+- [ ] Count legacy `k`+hash id collisions in a real export before building `import-legacy`.
+- [ ] Confirm on provider pages: Cloud Run quota and pricing, Neon free-tier numbers and restore window, Better Auth advisories (GitHub Security tab), current Express 5, Kysely and Better Auth versions.
+- [ ] Rehearse a Neon restore (FM-20, FM-24) and a failing migration on a Neon branch (FM-21).
 
 ### Multi-user readiness (if the app is opened to other people)
 
 The app began as a single-user gym app. These are the gaps that only matter once other people use it. Do them with step 3 unless noted.
 
 - [ ] Starter programs for new users (PPL, upper/lower, full body, 5x5) and a "build my own" flow, with a choice of days per week. The board currently assumes a fixed 7-day layout.
-- [ ] Check that no personal defaults (exercises, 1RMs, weight goals, phase names, Day 5/6 subtitles) leak into a new account's starting state.
+- [ ] Check that no personal defaults (exercises, 1RMs, weight goals, phase names, Day 5/6 subtitles) leak into a new account's starting state. Known ones in code: the built-in programs A/B and `EX` catalog (`data.ts`), `DEFAULT_CFG`, and the backup defaults `jacgit18/iron-log-data` (`backupCfg`) and `jacgit18/iron-log` (`ghCfg`) plus the `Composio For You` connector name in `export.ts`. The backup ones disappear with step 4.
 - [ ] Move the first-run guide (item 58) into this step instead of after the backend.
 - [ ] Explain jargon in the app (phase, superset, "Same as last", 1RM) with one-line tooltips or a glossary.
-- [ ] Auto-progression suggestions ("you hit 3×8, try +5 lb"). Builds on the plateau hint (75).
+- [x] Auto-progression suggestions ("you hit 3×8, try +5 lb"): `progressionOf`/`targetOf` suggest "up from N lb" after two full sessions, and a stalled lift gets a back-off (#76). Left: show it more prominently if wanted.
 - [ ] Account screen: profile, sign out, last-synced time and a visible offline/sync status.
 - [ ] Conflict handling when one account is used on two devices, so last-write-wins doesn't silently lose a workout.
 - [ ] Privacy policy and terms, with a clear data-deletion path (see step 4). Needed before launch because of Google login and body-weight data.
@@ -69,10 +101,10 @@ The app began as a single-user gym app. These are the gaps that only matter once
 - [ ] Google Fit API integration to pull activity and weight data.
 - [x] Weight goals feature (set targets and track progress).
 - [ ] Import medical records and add AI assessment of medical information. Decide whether to build this at all before multi-user launch: it brings health-data regulation, disclaimers and the highest risk of the list.
-- [ ] supplement log
+- [x] supplement log (Supplements tab with schedule and water log, #61, #79)
 - [ ] Warn when you skip an exercise too many times that's on your program.
-- [ ] Plateau/deload hint: flag lifts that haven't progressed in about 4 weeks (75).
-- [ ] Improve weight entry UX: catch and prevent common mistakes (e.g., wrong weight entered for an exercise).
+- [x] Plateau/deload hint: `stallOf` judges each lift per week and `backoffOf` suggests a back-off (#76).
+- [ ] Improve weight entry UX: catch and prevent common mistakes (e.g., wrong weight entered for an exercise). Partly done: range limits and messages for sets, body weight and 1RM are central in `validate.ts` (#77). Left: flag a weight that is far from the last session for that exercise.
 
 ## 6. UX improvements and fixes
 
@@ -83,6 +115,8 @@ The app began as a single-user gym app. These are the gaps that only matter once
 
 From a review of the current screens. None of these are committed to: pick what you want, and move it into the numbered steps above. The numbers match the list from that review so they can be referred to. Where each one goes relative to the backend (step 3):
 
+- [ ] Midnight behavior for check-offs (idea, not decided): a check-off belongs to the current day. If at least one item was ticked before midnight, flag the rest at midnight or move them to the next day where they can be skipped or kept, so exercises don't span multiple days. Today nothing is restricted. See ADR 011.
+
 - **Before the backend** if it changes what gets stored.
 - **Any time** if it is only how things look. These don't touch saving, so they can go before or after.
 - **After the backend** if it depends on the backend, or gets reshuffled by step 4.
@@ -90,10 +124,10 @@ From a review of the current screens. None of these are committed to: pick what 
 ### Before the backend (changes what is stored)
 
 - [x] 55. Exercise library page: every exercise with its equipment, video link, default phase, 1RM and muscle tags, edited in one place. On the Program tab. Per-exercise settings stay in `cfg.ex`, `cfg.exPh`, `cfg.rm` and `cfg.muscleMap`.
-- [ ] 38. A tick per set in the Log sheet (and start the rest timer between sets). Changes the shape of a logged entry.
+- [ ] 38. A tick per set in the Log sheet (and start the rest timer between sets). Changes the shape of a logged entry. Safer now: add the field to `LogSet` in `types.ts` and `tsc` lists every reader and writer; also update `normSet` in `validate.ts` and the Excel/CSV sheets.
 - [x] 33. Undo after unchecking something you logged: the board shows how many entries were removed with an Undo that puts back the entries and the tick.
 - [ ] 61. Per-exercise notes ("seat at 4, elbows tucked"), shown in the Log sheet. Adds a field to each exercise's stored settings.
-- [ ] 62. lb/kg unit toggle. Store one canonical unit and convert on display, so the choice has to be settled before the data goes into a database.
+- [ ] 62. lb/kg unit toggle. Canonical unit settled: pounds, stored as `numeric` 4 dp (ADR 006); the toggle is display and input only, and progression steps become unit-aware. Types do not enforce units (all are plain `number`), so list every `lb`/`Lb` place (limits in `validate.ts`, labels, exports, plate calculator) before starting; a branded `Lb`/`Kg` type is optional.
 
 ### Any time: phone and board layout (most useful first)
 
@@ -178,7 +212,7 @@ From a review of the current screens. None of these are committed to: pick what 
 - [ ] 68. PR celebration: a badge or toast on save when a set beats the best weight or estimated 1RM.
 - [ ] 70. Helpful empty states on Progress, Muscles and Trends instead of blank charts.
 - [ ] 71. React error boundary with a "Something went wrong, export your data" fallback, so a render error isn't a white screen.
-- [ ] 72. Code-split the heavy tabs and the xlsx library (lazy load) to keep the offline PWA's first load small.
+- [ ] 72. Code-split the heavy tabs (Progress, Muscles, Settings). The xlsx library is already lazy (`loadXLSX`, its own 160 kB gzip chunk). The main bundle is about 158 kB gzip and the app is cached offline, so the gain is small; low priority.
 - [ ] 73. Keyboard shortcuts on desktop (e.g. L to log, T for the timer) with a list in Settings.
 - [ ] 74. Printable week view, or share a session summary with `navigator.share`.
 
@@ -186,7 +220,53 @@ From a review of the current screens. None of these are committed to: pick what 
 
 - [ ] 54. Regroup Settings into Training, Data and App. Do this after step 4, because the Data section changes when GitHub backup and JSON import are removed. If the app goes multi-user, do it before launch, since an Account section will crowd Settings.
 - [ ] 58. First-run guide (pick a program, log a set, check a day). Do this once sign-in exists, so it can include signing in and syncing. If the app goes multi-user, it moves into the "Multi-user readiness" list under step 3.
+- [ ] Feature to add excercise to experiment and remove from program
 
 ## Anytime
 
 - [ ] Add a link to a Google feedback form in Settings.
+
+### TypeScript migration (leftovers; the main work is done, see `typescript-migration.md`)
+
+- [ ] Convert `App.jsx` and `main.jsx` to TypeScript, and change `index.html` to `/src/main.tsx` in the same PR. Gives a fully TypeScript source tree (apart from `fonts.js`, the tests and tooling).
+- [ ] Convert the remaining presentational components when next edited: `Daily`, `Medical`, `LineChart`, `Muscles`, `TimerBar`, `UpdateBanner`.
+- [ ] Try TypeScript lint rules to stop new `any` (`oxlint-tsgolint`): costs one dev dependency and some CI time; worth it now that component `any` is down to 2.
+- [ ] Tighten `any` in `lib/` and the store only when a function is edited anyway (38 in `lib/`, 37 in the store). Most are untrusted-input cleaners and the host's db/mcp handles, which should stay loose. `normWeek(w?: any)` could take a `RawWeek` type.
+- [ ] `SlotSheet`'s clone of a program slot is the last component `any`.
+- Decided against: converting tests, e2e, configs and scripts; `noUncheckedIndexedAccess` (321 new errors, little gain).
+
+## 1. Fix imports and pick one file format (before the backend)
+
+- [x] Excel import bug: no failing file turned up (the re-saved-dates bug was already fixed in #16). The real gap was that workbooks only brought back part of the data; see the next item.
+- [x] Make Excel (.xlsx) the one format for both export and import. Programs, saved versions, check-offs, config, sessions and body weight each have a sheet, and an exported workbook imports back the same as the JSON file.
+  - Still to do: remove the old partial-import path for workbooks made before this change, once nobody has those.
+- [x] Accept CSV as an import fallback only (sessions only).
+- [x] Keep JSON import until the backend exists, because it is the only full-detail backup for now. It gets removed in step 4.
+
+## 2. Board and exercise changes (before the backend)
+
+These change how days and exercises are stored. Do them together so the data structure is settled before it goes into a database.
+
+- [x] Add a Day 7 to the board. It starts empty, and exercises can be added whenever.
+- [x] Add a Rest day checkbox to each day. Ticking it inserts a rest day there and moves the later workouts one day later (blocked while Day 7 has exercises). A rest day counts as a complete day, and its exercises aren't in it, so volume numbers aren't inflated.
+- [x] Add an exercise to the current day from the board.
+- [x] Add stretches to the board, as a card type that doesn't need weight or reps.
+- [x] Add an optional video link to each exercise.
+- [x] Specify equipment for each exercise (dumbbell, bar, machine, bodyweight, etc.).
+- [x] Add a Filter to sort exercises on the board by muscle group.
+- [x] Set a default phase for an exercise that applies to all future instances of that exercise.
+- [x] Add spinal waves as a bodyweight mobility exercise.
+
+## Done
+
+- [x] Convert to React, meet WCAG 2.2 AAA, make it an installable offline PWA (#14)
+
+## Review notes (2026-10-06)
+
+Checked the feature, bug and architecture items against the code after the TypeScript migration (#80, #81, #82). The pure layout items (1-74) were not re-checked one by one, so a few of those may also be built already.
+
+- **Reduced by TypeScript:** backend language/shape work (shared types and validation, smaller upload step), per-set ticks (#38) and the unit toggle (#62) as refactors (the compiler lists what to change), and stale `.js` paths in the notes.
+- **Not reduced (types do not fix behavior or design):** every bug in the Bugs list, all layout and UX items (1-74 except the ones noted), Google login and sync, multi-user items, the stand-in removals in step 4, and error handling (#71 error boundary does not exist yet).
+- **Marked done (they were built but never ticked):** plateau/deload hint, auto-progression suggestions, supplement log.
+- **Spot-checked as not built:** feedback-form link, error boundary (#71), gym mode (#60), mark today (#4), first-run guide (#58), lb/kg (#62), skip-too-often warning, per-set ticks (#38).
+- **Worth doing early because they are small and unblock other work:** sort in `normEntries` (fixes the `bestLift` date), the rest-timer 0 decision, and the personal-defaults list before any multi-user work.
