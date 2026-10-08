@@ -7,7 +7,7 @@
 
 ## Context
 
-React + Vite SPA (ADR-0008). The test plan (`docs/testing/finance-dashboard.md`) already set
+React + Vite SPA (ADR-0008). The test plan ([[EndToEnd-App-with-AI-Using-skills/finance-dashboard/docs/testing/finance-dashboard|finance-dashboard]]) already set
 the mix — unit ~55%, integration ~40%, one Playwright E2E path (~5%). This decision picks the
 frontend unit/component layer and confirms the E2E tool. Backend tests are `pytest` (implied by
 ADR-0002/0006; not separately contested).

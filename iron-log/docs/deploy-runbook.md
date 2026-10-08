@@ -79,7 +79,7 @@ Then in a desktop browser: open the address, **Settings**, turn the sync flag on
 
 1. Make yourself admin, once, against production (owner URL, in psql): `update users set is_admin = true where auth_user_id = (select id::text from auth."user" where email = '<your email>');`
 2. Settings → Account → **Upload from an export file**: pick a **fresh** export from the GitHub Pages copy (made just before, so nothing newer is left behind).
-3. **iPhone** (the check everything has been waiting on): open the address in Safari, Share → Add to Home Screen, open it from the home screen, enable sync, sign in with Google. Record pass or fail in [[backlog]] (spikes: Google sign-in in an installed iOS PWA). If it fails, reopen ADR 004 and the same-origin choice in ADR 010.
+3. **iPhone** (the check everything has been waiting on): open the address in Safari, Share → Add to Home Screen, open it from the home screen, enable sync, sign in with Google. Record pass or fail in [[iron-log/docs/backlog|backlog]] (spikes: Google sign-in in an installed iOS PWA). If it fails, reopen ADR 004 and the same-origin choice in ADR 010.
 4. Watch the browser console on the installed app for CSP errors (not yet seen against a real PWA).
 
 ## 6. After it works

@@ -3,7 +3,7 @@
 - **Status:** Accepted
 - **Date:** 2026-09-25
 - **Deciders:** the owner
-- **Derived via:** `tech-decision-walkthrough` (Phase 7, S7 dashboard). Resolves the "charting library (lean Recharts)" item deferred in `spec.md` and ADR-0008.
+- **Derived via:** `tech-decision-walkthrough` (Phase 7, S7 dashboard). Resolves the "charting library (lean Recharts)" item deferred in [[spec]] and ADR-0008.
 
 ## Context
 

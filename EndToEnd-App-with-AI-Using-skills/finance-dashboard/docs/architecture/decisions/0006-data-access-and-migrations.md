@@ -25,7 +25,7 @@ not just plain CRUD.
   draft is reviewed and edited; append-only constraints, the balance trigger, and partial
   indexes are hand-written via `op.execute(...)`.
 - The walking skeleton ships the full data model as the initial Alembic migration (per
-  `docs/spec.md`), not `create_all()`.
+  [[spec]]), not `create_all()`.
 
 ## Alternatives considered
 

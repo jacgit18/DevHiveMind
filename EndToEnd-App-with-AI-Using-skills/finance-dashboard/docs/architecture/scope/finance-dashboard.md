@@ -79,10 +79,10 @@ chart library choice · dashboard aggregation query approach.
 
 ## Sequence
 
-1. `Business/user-story-decomposition` on the in-scope list → `docs/backlog.md` ✅
-2. `Testing/test-strategy` on the mix → `docs/testing/finance-dashboard.md` ✅
+1. `Business/user-story-decomposition` on the in-scope list → [[EndToEnd-App-with-AI-Using-skills/finance-dashboard/docs/backlog|backlog]] ✅
+2. `Testing/test-strategy` on the mix → [[EndToEnd-App-with-AI-Using-skills/finance-dashboard/docs/testing/finance-dashboard|finance-dashboard]] ✅
 3. `Architecture/tech-decision-walkthrough` on the stack → an ADR per decision under
    `../decisions/` (supersedes the archived `_archived/0001-…`).
-4. `Skill Development/spec-drift-gate` — fold the ADRs into `docs/spec.md`.
+4. `Skill Development/spec-drift-gate` — fold the ADRs into [[spec]].
 5. Build — `Skill Development/incremental-build-pacing`, walking skeleton first (see
-   `docs/spec.md`), then the backlog in MoSCoW order.
+   [[spec]]), then the backlog in MoSCoW order.

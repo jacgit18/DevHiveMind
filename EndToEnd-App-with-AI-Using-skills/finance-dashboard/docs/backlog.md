@@ -1,7 +1,7 @@
 # Backlog — Personal Finance Dashboard (v1)
 
 > Produced by `Business/user-story-decomposition` from the in-scope list in
-> `docs/architecture/scope/finance-dashboard.md`.
+> [[EndToEnd-App-with-AI-Using-skills/finance-dashboard/docs/architecture/scope/finance-dashboard|finance-dashboard]].
 
 - **Epic:** Personal budgeting dashboard (v1)
 - **Actor:** the account owner (single user)
@@ -117,7 +117,7 @@
 
 **Explicitly not covered:** rollover of unspent amounts, weekly/annual budgets, per-account budgets.
 
-**Built (2026-09-25):** PUT upsert, GET `?month=`, DELETE (clear), copy-forward that never overwrites and skips archived categories. Amount must be > 0 (clearing = no row). Budgets page in the UI. Owner confirmed the page works in a browser (2026-09-25); deployed to prod with Phase 7 (2026-09-25). See the drift log in `spec.md`.
+**Built (2026-09-25):** PUT upsert, GET `?month=`, DELETE (clear), copy-forward that never overwrites and skips archived categories. Amount must be > 0 (clearing = no row). Budgets page in the UI. Owner confirmed the page works in a browser (2026-09-25); deployed to prod with Phase 7 (2026-09-25). See the drift log in [[spec]].
 
 ---
 
@@ -137,7 +137,7 @@
 
 **Explicitly not covered:** chart→transactions drill-down, custom date ranges, dashboard export.
 
-**Built (2026-09-25):** `GET /api/dashboard?month=` and `/api/dashboard/trend?month=`, plus a `/dashboard` page (month picker, income/expense/net tiles, category-vs-budget bars, 6-month net chart, recent 10). Visx charts (ADR-0017), each with a text table of the API's own strings. Dashboard net is tested to equal the sum of that month's transactions. Owner-checked in a real browser on dev and on prod (2026-09-25); deployed to prod. See `phase7-spec.md` Progress.
+**Built (2026-09-25):** `GET /api/dashboard?month=` and `/api/dashboard/trend?month=`, plus a `/dashboard` page (month picker, income/expense/net tiles, category-vs-budget bars, 6-month net chart, recent 10). Visx charts (ADR-0017), each with a text table of the API's own strings. Dashboard net is tested to equal the sum of that month's transactions. Owner-checked in a real browser on dev and on prod (2026-09-25); deployed to prod. See [[phase7-spec]] Progress.
 
 ---
 

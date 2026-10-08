@@ -3,7 +3,7 @@
 - **Status:** Accepted
 - **Date:** 2026-09-25
 - **Deciders:** the owner
-- **Derived via:** `tech-decision-walkthrough` (Phase 7). Resolves the "component/UI library (lean Mantine/shadcn)" item deferred in `spec.md`.
+- **Derived via:** `tech-decision-walkthrough` (Phase 7). Resolves the "component/UI library (lean Mantine/shadcn)" item deferred in [[spec]].
 
 ## Context
 

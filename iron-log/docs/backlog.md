@@ -46,15 +46,15 @@ Run with `/tech-decision-walkthrough`. Handoff: `iron-log/.claude/handoffs/hando
 - [x] 7. API style: command endpoints over plain JSON HTTP (`POST /api/commands/<name>`, `GET /api/sync?since=`), one response envelope, shared contract module (ADR 008 [[008-api-style-commands-json-http]]).
 - [x] 8. Data-access layer: Kysely typed query builder, raw `sql` escape hatch, types generated from the database, explicit transactions (ADR 009 [[009-data-access-kysely]]). Migration tool still open.
 - [x] 9. Hosting: Google Cloud Run (max one instance, budget alert), Express serves the PWA from one origin; Render free is the no-card fallback (ADR 010 [[010-hosting-cloud-run]]). Prices from aggregator sites, confirm on provider pages. Open spike: Google sign-in in an installed iOS PWA.
-- [x] 10. One-time upload: one `import-legacy` command, empty account only, dedupe by client id, check legacy hash collisions first (note in [[stack-walkthrough]]).
+- [x] 10. One-time upload: one `import-legacy` command, empty account only, dedupe by client id, check legacy hash collisions first (note in [[iron-log/docs/architecture/stack-walkthrough|stack-walkthrough]]).
 - [x] 11. lb/kg storage unit: canonical pounds, `numeric` 4 dp in `weight_lb`-style columns, one conversion module, display-only toggle (ADR 006 [[006-weight-unit-canonical-lb]]). Table design is now unblocked.
 - [x] Table design via `relational-modeling`: [[data-model/iron-log]] written 2026-10-06 (bigint ids plus unique client id, jsonb documents, per-user change counter, history trigger, RLS). Open: tombstone purge window, refused-writes retention, migration tool.
 - [ ] Verify Neon free-tier numbers at neon.com (1 GB per project, 100 CU-hours per month; from aggregator pages)
 - [ ] Verify iOS Safari storage eviction for non-installed PWAs (offline up to about 2 days)
-- [x] Closeout (written in [[stack-walkthrough]]): summary table; cross-cutting obligations (HTTPS, rate limits, backups, CI, secrets, migrations tool, error reporting, privacy policy and data-deletion path); cost-cap check; deferred list; missed-decision audit
+- [x] Closeout (written in [[iron-log/docs/architecture/stack-walkthrough|stack-walkthrough]]): summary table; cross-cutting obligations (HTTPS, rate limits, backups, CI, secrets, migrations tool, error reporting, privacy policy and data-deletion path); cost-cap check; deferred list; missed-decision audit
 - [ ] Then type `/system-design-communication` (once the stack is settled) and `/decision-journal` for any decision to revisit
 
-### Open after the backend stack walkthrough (2026-10-06; details in [[stack-walkthrough]])
+### Open after the backend stack walkthrough (2026-10-06; details in [[iron-log/docs/architecture/stack-walkthrough|stack-walkthrough]])
 
 Short ADRs still to write:
 - [x] Date and timezone policy (FM-12): local calendar dates as data, Sunday-start week, server validates (ADR 011 [[011-date-and-week-policy]]).

@@ -106,12 +106,12 @@ The backend initialises Sentry only when `SENTRY_DSN` is set; without it nothing
 To turn it on: create a free account at sentry.io (no card should be needed — decline if asked),
 create a Python/FastAPI project, copy its DSN into `backend/.env.prod` as `SENTRY_DSN=https://...`,
 and restart the backend. Options are locked to finance-safe values: no request bodies, no PII, no
-tracing. Free-tier limits and the paid alternative are in [`paid-options.md`](paid-options.md).
+tracing. Free-tier limits and the paid alternative are in [[paid-options]].
 Without a DSN, `scripts/prod.sh logs backend` is the error log.
 
 ## If you were serious about this
 
-Every cost decision in the project is tracked in [`paid-options.md`](paid-options.md); this table is the deploy slice of it.
+Every cost decision in the project is tracked in [[paid-options]]; this table is the deploy slice of it.
 
 | Free choice here | Upgrade | Roughly |
 |---|---|---|

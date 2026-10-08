@@ -33,7 +33,7 @@ A few stack choices are also contested enough to record.
 5. **Packaging: `uv`** (not Poetry or bare `pip`). One tool for venv + install + lockfile.
 6. **Auth: single user from env vars → JWT** (no `user` table in v1).
 7. **Testing: no contract tests, no E2E in CI, BDD rejected.** See
-   `docs/testing/finance-dashboard.md`.
+   [[EndToEnd-App-with-AI-Using-skills/finance-dashboard/docs/testing/finance-dashboard|finance-dashboard]].
 
 ## Consequences
 

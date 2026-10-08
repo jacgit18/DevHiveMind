@@ -1,6 +1,6 @@
 # Iron Log backend build spec
 
-Drafted 2026-10-06 for `spec-drift-gate`. The decisions are in the ADRs (`architecture/decisions/001` to `015`) and [[stack-walkthrough]]; this file links to them and does not repeat them. Table design: [[data-model/iron-log]]. Code sketches (not run): [[code-samples]].
+Drafted 2026-10-06 for `spec-drift-gate`. The decisions are in the ADRs (`architecture/decisions/001` to `015`) and [[iron-log/docs/architecture/stack-walkthrough|stack-walkthrough]]; this file links to them and does not repeat them. Table design: [[data-model/iron-log]]. Code sketches (not run): [[code-samples]].
 
 ## 1. Problem
 

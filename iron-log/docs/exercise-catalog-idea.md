@@ -2,7 +2,7 @@
 
 Status: idea saved 2026-10-08 to revisit. No ADR yet. Not started.
 
-Back to [[backlog]]. Related: [[004-auth-better-auth]], [[backend-data-rules]], [[feature-map]], [[010-hosting-cloud-run]].
+Back to [[iron-log/docs/backlog|backlog]]. Related: [[004-auth-better-auth]], [[backend-data-rules]], [[feature-map]], [[010-hosting-cloud-run]].
 
 ## Question
 

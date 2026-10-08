@@ -1,7 +1,7 @@
 # Phase 9 spec — Plaid bank sync (sandbox first)
 
 Written 2026-10-03 via `spec-drift-gate`. Lives in the DevHiveMind copy of the docs (the repo
-copy is frozen as of this date). Builds **after Phase 8** (CI/CD); see `phase8-spec.md`.
+copy is frozen as of this date). Builds **after Phase 8** (CI/CD); see [[phase8-spec]].
 
 **Build has not started.** Decision on record: `decisions-log.md` entry
 `D-2026-10-03-plaid-over-webull` (Plaid over Webull, "probably", no confidence stated).
@@ -33,7 +33,7 @@ the standing axis, which is why sandbox counts as a win here.
 | Option | Why it lost / won |
 |---|---|
 | **Plaid sandbox, manual sync** (chosen) | Free, no real data leaves the machine, exercises the whole integration shape. |
-| Plaid live data from day one | Real transaction text and balances pass through a third party and tokens live on the VPS. Collides with the privacy line already drawn for Sentry (`paid-options.md`). Possible later, as an amendment. |
+| Plaid live data from day one | Real transaction text and balances pass through a third party and tokens live on the VPS. Collides with the privacy line already drawn for Sentry ([[paid-options]]). Possible later, as an amendment. |
 | Keep CSV only | Zero risk and zero cost, but no new capability or integration experience. |
 | Webull (brokerage) | Different product (holdings, not budgeting); owner chose Plaid. Not rejected forever. |
 | Scheduled background sync | Needs a worker/scheduler and failure handling the single-owner app has none of. Manual sync proves the pipeline first. |
@@ -48,7 +48,7 @@ the standing axis, which is why sandbox counts as a win here.
 - Frontend: "Linked accounts" page (Plaid Link, per-item sync, unlink) and a sync-status line
   on Import. Meets the AAA / Lighthouse rules in `.claude/rules/web-accessibility-and-lighthouse.md`.
 - Docs: new ADR (next number, 0023: Plaid as the bank-connectivity provider and how tokens
-  are stored), `paid-options.md` "Bank connectivity" row updated, `backlog.md` Phase 9 note.
+  are stored), [[paid-options]] "Bank connectivity" row updated, [[EndToEnd-App-with-AI-Using-skills/finance-dashboard/docs/backlog|backlog]] Phase 9 note.
 - Tests: backend (mocked Plaid), frontend, axe at 1280px and 320px for the new page.
 
 ### Out of scope (this phase)
@@ -80,7 +80,7 @@ behaves, and whether the dedupe key collides with Plaid rows.
 2. `plaid_items` migration, token encryption, config keys; ADR 0023.
 3. Link-token, exchange, sync and unlink endpoints with tests (Plaid mocked).
 4. "Linked accounts" page + Import status line; axe and Lighthouse on both.
-5. Docs closeout: `paid-options.md`, `backlog.md`, verification record; deliver per
+5. Docs closeout: [[paid-options]], [[EndToEnd-App-with-AI-Using-skills/finance-dashboard/docs/backlog|backlog]], verification record; deliver per
    `incremental-build-pacing`.
 
 ## Tripwires (stop and ask)

@@ -12,7 +12,7 @@ register (part 3) before changing anything on the board, the log, or an import p
 header date in the same PR; when a PR changes how two features interact, add or edit a conflict entry.
 
 **Related docs in this folder**
-- [[backlog]] — what is planned and in what order. The source of truth for intent.
+- [[iron-log/docs/backlog|backlog]] — what is planned and in what order. The source of truth for intent.
 - [[backend-data-rules]] — the storage, identity, uniqueness and merge rules a server must
   enforce. The source of truth for data semantics; this doc links into it rather than restating it.
 - [[feature-flags]] — flag concepts. Iron Log has no runtime flag system (see 1.12).
@@ -388,7 +388,7 @@ next session. *Decide:* is this intended? If not, `lastLog` needs an auto filter
 after overriding a week silently discards the override, and the value stays in storage. Merge rules fill `prog` only
 when the local week has none, so a stale `prog` can also arrive from another device and sit unused.
 
-### C9 — Stretch ids are name slugs · open (listed in [[backlog]] Bugs)
+### C9 — Stretch ids are name slugs · open (listed in [[iron-log/docs/backlog|backlog]] Bugs)
 `newStretchId` slugs the name, so deleting a stretch and re-adding one with the same name resurrects its old
 check-offs in earlier weeks. The same identity choice orphans stretch check-offs on merge import when a stretch
 matches by name but carries a different id. Fix is an opaque id plus a name index; it is a data migration.
@@ -455,7 +455,7 @@ check-off in the new phase. Logging the other option of an either/or drops the f
 
 ## Part 4: Planned work that will create new conflicts
 
-From [[backlog]]. Each of these collides with something above; note it here when the work starts.
+From [[iron-log/docs/backlog|backlog]]. Each of these collides with something above; note it here when the work starts.
 
 | Planned | Collides with | Why |
 |---|---|---|
@@ -501,7 +501,7 @@ identity (C9).
    [[backend-data-rules]].
 3. Two features start or stop interacting → add, edit or close a conflict entry. Closing one means moving it to the
    drift log below with the PR number, not deleting it.
-4. A bug from [[backlog]]'s Bugs list is fixed → close the matching C-entry (C9, C15–C19 map onto it).
+4. A bug from [[iron-log/docs/backlog|backlog]]'s Bugs list is fixed → close the matching C-entry (C9, C15–C19 map onto it).
 5. Either way: bump the **Last verified against** commit in the header.
 
 **Numbering.** C-numbers are permanent. Never reuse one; closed entries move to the log below.

@@ -1,6 +1,6 @@
 # Phase 7 verification record (S7 dashboard)
 
-Closes the gap noted in `phase7-spec.md` slices 5b/5c ("no detailed per-figure record kept").
+Closes the gap noted in [[phase7-spec]] slices 5b/5c ("no detailed per-figure record kept").
 
 ## What can be verified from the repo
 
@@ -26,4 +26,4 @@ Pick one month with real data and fill this in. It takes about five minutes and 
 |---|---|---|---|---|---|---|---|
 | | | | | | | | |
 
-Mark any mismatch as a tripwire per `phase7-spec.md` (stop and ask).
+Mark any mismatch as a tripwire per [[phase7-spec]] (stop and ask).

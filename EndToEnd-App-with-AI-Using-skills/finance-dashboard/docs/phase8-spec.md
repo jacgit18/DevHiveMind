@@ -41,8 +41,8 @@ need (ADR-0020's rejection of AWS EKS as the production target).
   serve the real finance-dashboard traffic.
 - **Pre-commit config** (mentioned in the prior handoff): fast local mirror of the CI lint/
   typecheck steps, informational only — CI stays the authority.
-- **Docs**: `docs/architecture/stack-walkthrough.md` gets a Phase 8 row; `backlog.md` gets a
-  Phase 8 "Built" note once slices land; `paid-options.md` already updated with this phase's
+- **Docs**: [[EndToEnd-App-with-AI-Using-skills/finance-dashboard/docs/architecture/stack-walkthrough|stack-walkthrough]] gets a Phase 8 row; [[EndToEnd-App-with-AI-Using-skills/finance-dashboard/docs/backlog|backlog]] gets a
+  Phase 8 "Built" note once slices land; [[paid-options]] already updated with this phase's
   free/paid lines (done in the ADR PR, #103).
 
 ### Out of scope (this phase)

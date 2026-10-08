@@ -70,7 +70,7 @@ tunable during implementation.
 ## Consequences
 
 - **Spec amendment:** backlog **S4** changes from "add, edit and delete transactions" to
-  **add + void** (a void posts a reversing entry). Recorded in `docs/spec.md` drift log; S4
+  **add + void** (a void posts a reversing entry). Recorded in [[spec]] drift log; S4
   text to be reworded at build time.
 - Every money value in code is `Decimal`; a stray `float(amount)` is a reviewable bug and a
   test failure.

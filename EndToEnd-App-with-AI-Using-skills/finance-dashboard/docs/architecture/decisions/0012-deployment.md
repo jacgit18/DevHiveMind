@@ -94,7 +94,7 @@ reaching a particular feature milestone.
 **What changed from the decision above.** The VPS was replaced by the owner's own machine, reached
 through a Cloudflare named tunnel on a free domain (`findash.us.ci`), to keep the cost at $0.
 Everything else (Compose, Caddy, Postgres, migrations on start) is as decided. Operating detail
-is in `docs/deploy.md`.
+is in [[deploy]].
 
 ### What was learned
 
@@ -106,7 +106,7 @@ is in `docs/deploy.md`.
   manual ones, and the restore was never exercised. An untested backup is a hope, not a recovery plan.
   - **Restore drill:** restore the newest dump into a scratch database (never over live data),
     then check it matches: row counts per table, and one known dashboard figure for a month,
-    against prod. Record the date, the dump used and the result in `docs/deploy.md`. Repeat on a
+    against prod. Record the date, the dump used and the result in [[deploy]]. Repeat on a
     schedule, and always after changing the backup script or the schema tooling.
 - **A restore drill measures two things:** that the data comes back, and how long it takes
   (the real recovery time, which nobody knows until they have done it once).
@@ -117,7 +117,7 @@ is in `docs/deploy.md`.
   connection dropped. The domain, its nameservers and the tunnel token are now single points of
   failure with no support behind them.
 - **Verification records need numbers written down at the time.** The Phase 7 dashboard check
-  has no per-figure values and cannot be reconstructed (`docs/phase7-verification.md`).
+  has no per-figure values and cannot be reconstructed ([[phase7-verification]]).
 
 ### Hobby-grade prod vs real-world prod
 

@@ -382,7 +382,7 @@ Prometheus/Grafana deferred — nothing to chart at one user; add later as a lea
 | 14 | CI provider | GitHub Actions | 0016 | routine |
 
 **Spec amendments made during the walkthrough:** S4 (edit/delete → add + void, ADR-0005);
-S1 (JWT → session cookie, ADR-0010). Both in the `docs/spec.md` drift log.
+S1 (JWT → session cookie, ADR-0010). Both in the [[spec]] drift log.
 
 **Cross-cutting requirements surfaced:** HTTPS/Let's Encrypt + login rate-limiting (from auth,
 land with deployment); CSRF token on state-changing requests; the reconciliation job; `pg_dump`
