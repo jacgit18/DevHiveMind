@@ -7,13 +7,13 @@ Depth class: load-bearing
 
 Backlog step 3 needs a place for each user's data, with login, and it must keep working offline at the gym. The app will be opened to other users, partly to get production experience. Free tiers only. The client is a React 19 + Vite PWA that saves through `src/lib/storage.js` and a save queue.
 
-`backend-data-rules.md` already specifies what the server must enforce: one row per entry, uniqueness rules, soft delete (`deletedAt`), merge rules, and stale-write rejection.
+[[backend-data-rules]] already specifies what the server must enforce: one row per entry, uniqueness rules, soft delete (`deletedAt`), merge rules, and stale-write rejection.
 
 ## Decision
 
 Build and run our own API server (in Docker) on top of a Neon Postgres database, with a separate auth provider. Do not use Firebase or Supabase as the backend.
 
-The server is authoritative: the client sends intent, the server re-validates and applies the rules from `backend-data-rules.md` in a transaction. Client rule checks stay as UX and for offline use.
+The server is authoritative: the client sends intent, the server re-validates and applies the rules from [[backend-data-rules]] in a transaction. Client rule checks stay as UX and for offline use.
 
 ## Alternatives considered
 

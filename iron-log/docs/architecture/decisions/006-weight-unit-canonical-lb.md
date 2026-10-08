@@ -7,7 +7,7 @@ Depth class: load-bearing
 
 Backlog item 62 adds a lb/kg toggle, and the stored unit has to be fixed before table design. Changing it later means rewriting every weight row, which is a conflict-prone bulk edit with offline phones and per-row versions (ADR 003).
 
-Today every weight is a plain `number` in pounds, "lb" is hard-coded in about 20 labels and sheets, the limits in `backend-data-rules.md` are in pounds (set weight under 5000 lb, body weight under 1500 lb, lift goal under 5000 lb), and the progression logic assumes pound steps (`round()` snaps to 2.5 or 5 lb; `step()` is 2.5 under 50 lb, else 5). The only existing data is in pounds. Sharing between users with different units is a planned feature (ADR 004).
+Today every weight is a plain `number` in pounds, "lb" is hard-coded in about 20 labels and sheets, the limits in [[backend-data-rules]] are in pounds (set weight under 5000 lb, body weight under 1500 lb, lift goal under 5000 lb), and the progression logic assumes pound steps (`round()` snaps to 2.5 or 5 lb; `step()` is 2.5 under 50 lb, else 5). The only existing data is in pounds. Sharing between users with different units is a planned feature (ADR 004).
 
 ## Decision
 
@@ -43,4 +43,4 @@ Four parts, one ADR:
 
 ## Spec amendment
 
-Backlog item 62 (lb/kg toggle) is amended: "store one canonical unit" is now fixed as pounds, stored as `numeric(.., 4)`, with a display-only toggle. `backend-data-rules.md` limits stay in pounds.
+Backlog item 62 (lb/kg toggle) is amended: "store one canonical unit" is now fixed as pounds, stored as `numeric(.., 4)`, with a display-only toggle. [[backend-data-rules]] limits stay in pounds.

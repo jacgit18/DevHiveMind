@@ -5,7 +5,7 @@ Depth class: load-bearing
 
 ## Context
 
-ADR 001 and 002 chose our own API on Neon Postgres. Today's sync is whole-document, last writer wins, with no deletion merge (`backend-data-rules.md` sections 4 and 5). User priorities (2026-10-06): no lost workouts over a rare duplicate; phone is the main device but computers are used too; offline up to about 2 days; assume iOS worst case. Failure modes: `failure-modes/sync.md` (24 modes, 4 red).
+ADR 001 and 002 chose our own API on Neon Postgres. Today's sync is whole-document, last writer wins, with no deletion merge ([[backend-data-rules]] sections 4 and 5). User priorities (2026-10-06): no lost workouts over a rare duplicate; phone is the main device but computers are used too; offline up to about 2 days; assume iOS worst case. Failure modes: [[failure-modes/sync]] (24 modes, 4 red).
 
 ## Decision
 

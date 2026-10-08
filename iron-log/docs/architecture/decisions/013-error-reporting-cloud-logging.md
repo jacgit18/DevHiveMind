@@ -40,4 +40,4 @@ ADR 003 (FM-22) requires detection from day one: server structured logs, a refus
 
 ## Spec amendment
 
-Closes the "error reporting (none yet)" inventory gap in `architecture/failure-modes/sync.md` and backlog "crash reporting" in part (opt-in analytics stays separate).
+Closes the "error reporting (none yet)" inventory gap in [[failure-modes/sync]] and backlog "crash reporting" in part (opt-in analytics stays separate).

@@ -6,7 +6,7 @@ Depth class: structural
 ## Context
 
 Gate answers (routed through `data-access-layer`):
-- **Source of truth:** database-first on Neon Postgres, migrations in the repo (ADR 002). Tables are designed in `data-model/iron-log.md`.
+- **Source of truth:** database-first on Neon Postgres, migrations in the repo (ADR 002). Tables are designed in [[data-model/iron-log]].
 - **Language:** TypeScript `strict` on Node (ADR 005), so the whole spectrum is available.
 - **Team SQL fluency:** low; the user wants to learn it.
 - **Query-shape mix (estimate, confirmed):** about 40% plain CRUD by key, 25% filtered lists (the `seq` pull feed), 5% reports, 30% database-specific (the `change_seq` bump with `UPDATE ... RETURNING`, `ON CONFLICT` for idempotent creates, partial unique indexes, `jsonb`, row-level security). The 30% is roughly 6 to 8 distinct queries reused by every command, not 30% of the code.

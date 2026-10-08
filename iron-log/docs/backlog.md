@@ -22,9 +22,12 @@ Found in the 2026-10-05 bug sweep and re-checked against the code on 2026-10-06 
 
 ## 3. Backend, database and Google login (together)
 
-- [x] Choose a backend. Accepted for now (2026-10-06): own API server in Docker on Neon Postgres, with a separate auth provider (ADR 001 draft, `architecture/decisions/001-backend-shape.md`, 2026-10-05). Firebase and Supabase were considered; Supabase is the fallback. This replaces the earlier Firebase lean once confirmed. Remaining stack decisions (datastore, sync, auth, language, framework, hosting) are still being walked.
+- [x] Choose a backend. Accepted for now (2026-10-06): own API server in Docker on Neon Postgres, with a separate auth provider (ADR 001 draft, [[001-backend-shape]], 2026-10-05). Firebase and Supabase were considered; Supabase is the fallback. This replaces the earlier Firebase lean once confirmed. Remaining stack decisions (datastore, sync, auth, language, framework, hosting) are still being walked.
 - [x] Pick the API language: TypeScript on Node (ADR 005). **Lean TypeScript:** the API can import `src/types.ts` and run the same `validate.ts` cleaners (`normEntry`, `normProgram`, `normLibrary`, `normBody`) and `normalizeData`/`DataFile` on the server, so client and server cannot disagree on a document's shape. The docs are already versioned (`SCHEMA_VERSION`) and stamped (`updatedAt`). Another language means re-implementing and re-testing all of that. Needs a shared types package or a monorepo layout.
 - [ ] Add Google login. Each user's data is tied to their account.
+  - [ ] **S0 iPhone test (parked 2026-10-07; the user will do it later).** Google login passed on the desktop locally, and the spike also ran on Cloud Run. **The Cloud Run service and its four secrets were deleted on 2026-10-07**, so the test needs one redeploy first: on the local branch `spike-s0-signin` (the spike code exists only there, never pushed) fill `spike/.env`, run `./spike/deploy.sh`, then `BASE_URL_OVERRIDE=<service URL> ./spike/deploy.sh`; the OAuth client already allows `https://iron-log-spike-1088998530888.us-central1.run.app`. Then on the iPhone, in Safari: Add to Home Screen, launch from the icon (page must say `display-mode standalone: true`), sign in with Google, note where you land afterwards, check `/api/me`, close and reopen the app, check `/api/me` again, and record the iOS version. Pass/fail rules are in [[build-spec]] section 4. Record the result in ADR 004 and 010. If it fails, try popup versus redirect and Google's ID-token flow before reopening the same-origin choice.
+  - [ ] **S0 cleanup, what is left (done 2026-10-07: Cloud Run service and 4 secrets).** After the iPhone test: delete the Artifact Registry repo `cloud-run-source-deploy` (about 345 MB of images, a small storage cost), the Neon `spike-s0` branch, the local branch `spike-s0-signin` (never merge it), consider deleting the `iron-log-spike` project, and rotate or delete the Google OAuth client secret. Keep the budget alert.
+  - [ ] **Not a gate any more (2026-10-07):** we assume iPhone sign-in works and verify it at the first real deploy (see the build spec drift log). B1 stays open until that result is recorded. (Earlier wording follows.) B1 stays open until the iPhone result is recorded. B2 (real sign-in in the API) needs it, so Phase B is blocked on this. Phase C does not need it.
 - [ ] Keep it offline-first for gym use: queue saves and sync them later, building on `makeSaveQueue`.
 - [ ] Add a one-time "upload my existing data" step so data already on the phone isn't lost. (Smaller now: `buildDataFile`/`normalizeData` already produce and check a typed `DataFile`, which is exactly what to upload.)
 - [ ] Possibly exercise catalog what api to use any free options
@@ -36,36 +39,36 @@ Run with `/tech-decision-walkthrough`. Handoff: `iron-log/.claude/handoffs/hando
 
 - [x] 1. Backend shape: own API in Docker (ADR 001)
 - [x] 2. Datastore: Neon Postgres, database-first migrations (ADR 002)
-- [x] 3. Sync, ADR 003 `003-sync-versioned-rows.md` accepted (design B agreed: per-row server versions, stale edits refused and re-merged on the phone, `deletedAt` tombstones, idempotent client-id creates, server-stamped time, short history table, change-feed pull later). Failure-mode register done (`architecture/failure-modes/sync.md`, register only) and ADR 003 accepted. Was: failure-mode analysis (5x5 grid; inventory gaps to add: "error reporting (none yet)", "backups and restore" (check Neon's free restore window), "where sync errors show" (server logs plus a user-visible message when a write keeps failing)), then write ADR 003 and log any amendments to `backend-data-rules.md` section 7.
-- [x] 4. Auth: Better Auth inside our API, Google login first, email/password deferred (ADR 004 `004-auth-better-auth.md`). Own `users` table, provider id in one column, token check in one module; one admin flag with a logged path; row-level security backstop; sharing later via opt-in grants. Open spikes: iOS cookie behavior across sites (settle at decision 9) and Google OAuth in an installed iOS PWA.
-- [x] 5. Language/runtime: TypeScript (`strict`) on Node LTS, types and validation shared with the client (ADR 005 `005-language-typescript-node.md`). Go and Python lost on rule drift and Better Auth; revisit if footprint hurts at decision 9.
-- [x] 6. Web framework: Express 5, thin routes, rules in the shared framework-free module (ADR 007 `007-web-framework-express.md`). Hono is the fallback.
-- [x] 7. API style: command endpoints over plain JSON HTTP (`POST /api/commands/<name>`, `GET /api/sync?since=`), one response envelope, shared contract module (ADR 008 `008-api-style-commands-json-http.md`).
-- [x] 8. Data-access layer: Kysely typed query builder, raw `sql` escape hatch, types generated from the database, explicit transactions (ADR 009 `009-data-access-kysely.md`). Migration tool still open.
-- [x] 9. Hosting: Google Cloud Run (max one instance, budget alert), Express serves the PWA from one origin; Render free is the no-card fallback (ADR 010 `010-hosting-cloud-run.md`). Prices from aggregator sites, confirm on provider pages. Open spike: Google sign-in in an installed iOS PWA.
-- [x] 10. One-time upload: one `import-legacy` command, empty account only, dedupe by client id, check legacy hash collisions first (note in `architecture/stack-walkthrough.md`).
-- [x] 11. lb/kg storage unit: canonical pounds, `numeric` 4 dp in `weight_lb`-style columns, one conversion module, display-only toggle (ADR 006 `006-weight-unit-canonical-lb.md`). Table design is now unblocked.
-- [x] Table design via `relational-modeling`: `data-model/iron-log.md` written 2026-10-06 (bigint ids plus unique client id, jsonb documents, per-user change counter, history trigger, RLS). Open: tombstone purge window, refused-writes retention, migration tool.
+- [x] 3. Sync, ADR 003 [[003-sync-versioned-rows]] accepted (design B agreed: per-row server versions, stale edits refused and re-merged on the phone, `deletedAt` tombstones, idempotent client-id creates, server-stamped time, short history table, change-feed pull later). Failure-mode register done ([[failure-modes/sync]], register only) and ADR 003 accepted. Was: failure-mode analysis (5x5 grid; inventory gaps to add: "error reporting (none yet)", "backups and restore" (check Neon's free restore window), "where sync errors show" (server logs plus a user-visible message when a write keeps failing)), then write ADR 003 and log any amendments to [[backend-data-rules]] section 7.
+- [x] 4. Auth: Better Auth inside our API, Google login first, email/password deferred (ADR 004 [[004-auth-better-auth]]). Own `users` table, provider id in one column, token check in one module; one admin flag with a logged path; row-level security backstop; sharing later via opt-in grants. Open spikes: iOS cookie behavior across sites (settle at decision 9) and Google OAuth in an installed iOS PWA.
+- [x] 5. Language/runtime: TypeScript (`strict`) on Node LTS, types and validation shared with the client (ADR 005 [[005-language-typescript-node]]). Go and Python lost on rule drift and Better Auth; revisit if footprint hurts at decision 9.
+- [x] 6. Web framework: Express 5, thin routes, rules in the shared framework-free module (ADR 007 [[007-web-framework-express]]). Hono is the fallback.
+- [x] 7. API style: command endpoints over plain JSON HTTP (`POST /api/commands/<name>`, `GET /api/sync?since=`), one response envelope, shared contract module (ADR 008 [[008-api-style-commands-json-http]]).
+- [x] 8. Data-access layer: Kysely typed query builder, raw `sql` escape hatch, types generated from the database, explicit transactions (ADR 009 [[009-data-access-kysely]]). Migration tool still open.
+- [x] 9. Hosting: Google Cloud Run (max one instance, budget alert), Express serves the PWA from one origin; Render free is the no-card fallback (ADR 010 [[010-hosting-cloud-run]]). Prices from aggregator sites, confirm on provider pages. Open spike: Google sign-in in an installed iOS PWA.
+- [x] 10. One-time upload: one `import-legacy` command, empty account only, dedupe by client id, check legacy hash collisions first (note in [[stack-walkthrough]]).
+- [x] 11. lb/kg storage unit: canonical pounds, `numeric` 4 dp in `weight_lb`-style columns, one conversion module, display-only toggle (ADR 006 [[006-weight-unit-canonical-lb]]). Table design is now unblocked.
+- [x] Table design via `relational-modeling`: [[data-model/iron-log]] written 2026-10-06 (bigint ids plus unique client id, jsonb documents, per-user change counter, history trigger, RLS). Open: tombstone purge window, refused-writes retention, migration tool.
 - [ ] Verify Neon free-tier numbers at neon.com (1 GB per project, 100 CU-hours per month; from aggregator pages)
 - [ ] Verify iOS Safari storage eviction for non-installed PWAs (offline up to about 2 days)
-- [x] Closeout (written in `architecture/stack-walkthrough.md`): summary table; cross-cutting obligations (HTTPS, rate limits, backups, CI, secrets, migrations tool, error reporting, privacy policy and data-deletion path); cost-cap check; deferred list; missed-decision audit
+- [x] Closeout (written in [[stack-walkthrough]]): summary table; cross-cutting obligations (HTTPS, rate limits, backups, CI, secrets, migrations tool, error reporting, privacy policy and data-deletion path); cost-cap check; deferred list; missed-decision audit
 - [ ] Then type `/system-design-communication` (once the stack is settled) and `/decision-journal` for any decision to revisit
 
-### Open after the backend stack walkthrough (2026-10-06; details in `architecture/stack-walkthrough.md`)
+### Open after the backend stack walkthrough (2026-10-06; details in [[stack-walkthrough]])
 
 Short ADRs still to write:
-- [x] Date and timezone policy (FM-12): local calendar dates as data, Sunday-start week, server validates (ADR 011 `011-date-and-week-policy.md`).
-- [x] Migration tool: dbmate, plain SQL files (ADR 012 `012-migrations-dbmate.md`).
-- [x] Error reporting and logging: Cloud Run logging plus our own client-error endpoint, Sentry as the upgrade (ADR 013 `013-error-reporting-cloud-logging.md`).
-- [x] Backend test tooling: Vitest plus a real Postgres in a throwaway container (ADR 014 `014-backend-test-tooling.md`).
-- [x] Shared code layout: one package, `src/shared/` plus `server/`, workspaces as the planned next step (ADR 015 `015-shared-code-layout.md`).
+- [x] Date and timezone policy (FM-12): local calendar dates as data, Sunday-start week, server validates (ADR 011 [[011-date-and-week-policy]]).
+- [x] Migration tool: dbmate, plain SQL files (ADR 012 [[012-migrations-dbmate]]).
+- [x] Error reporting and logging: Cloud Run logging plus our own client-error endpoint, Sentry as the upgrade (ADR 013 [[013-error-reporting-cloud-logging]]).
+- [x] Backend test tooling: Vitest plus a real Postgres in a throwaway container (ADR 014 [[014-backend-test-tooling]]).
+- [x] Shared code layout: one package, `src/shared/` plus `server/`, workspaces as the planned next step (ADR 015 [[015-shared-code-layout]]).
 
 Values to set:
-- [ ] Tombstone purge window and refused-writes retention (open in `data-model/iron-log.md`).
+- [ ] Tombstone purge window and refused-writes retention (open in [[data-model/iron-log]]).
 
 Spikes and checks (do early):
 - [ ] Google sign-in inside an installed iOS PWA, on a real iPhone. If it fails, reopen ADR 004 and the same-origin choice in ADR 010.
-- [ ] Count legacy `k`+hash id collisions in a real export before building `import-legacy`.
+- [x] Count legacy `k`+hash id collisions in a real export before building `import-legacy`. (2026-10-08: the 2026-10-07 export has 53 entries and 0 collisions; the old `iron-log-data.json` has 1, `dip` and `kneeraise` on 2026-09-28: the hash ignores the exercise and ids are unique per user across exercises, so the importer gives the later one a `-2` suffix in input order.)
 - [ ] Confirm on provider pages: Cloud Run quota and pricing, Neon free-tier numbers and restore window, Better Auth advisories (GitHub Security tab), current Express 5, Kysely and Better Auth versions.
 - [ ] Rehearse a Neon restore (FM-20, FM-24) and a failing migration on a Neon branch (FM-21).
 
@@ -78,7 +81,7 @@ The app began as a single-user gym app. These are the gaps that only matter once
 - [ ] Move the first-run guide (item 58) into this step instead of after the backend.
 - [ ] Explain jargon in the app (phase, superset, "Same as last", 1RM) with one-line tooltips or a glossary.
 - [x] Auto-progression suggestions ("you hit 3×8, try +5 lb"): `progressionOf`/`targetOf` suggest "up from N lb" after two full sessions, and a stalled lift gets a back-off (#76). Left: show it more prominently if wanted.
-- [ ] Account screen: profile, sign out, last-synced time and a visible offline/sync status.
+- [x] Account screen: profile, sign out, last-synced time and a visible offline/sync status. (B2e: Settings → Account and Sync; PR #118.)
 - [ ] Conflict handling when one account is used on two devices, so last-write-wins doesn't silently lose a workout.
 - [ ] Privacy policy and terms, with a clear data-deletion path (see step 4). Needed before launch because of Google login and body-weight data.
 - [ ] In-app "report a problem" that attaches the app version and sync state (alongside the feedback form link at the bottom).
@@ -86,6 +89,7 @@ The app began as a single-user gym app. These are the gaps that only matter once
 - [ ] Screen-reader testing of the log flow with real devices.
 - [ ] Opt-in, privacy-respecting analytics and crash reporting, so problems new users hit are visible.
 - [ ] Test the install prompt and update banner with people unfamiliar with the app.
+- [ ] Exercise catalog (revisit; idea saved 2026-10-08, see [[exercise-catalog-idea]]): keep private custom exercises, add a read-only global catalog imported from a free dataset (check licenses), and maybe a suggest-and-approve step later. Needs stable exercise ids first (ids are name slugs today), and an ADR before building.
 - [ ] Optional, only for growth: share or import a program by link or file; coach or training-partner view. Skip public profiles and leaderboards until the basics work.
 
 ## 4. Remove the stand-in features (only once the backend is working)
@@ -226,7 +230,7 @@ From a review of the current screens. None of these are committed to: pick what 
 
 - [ ] Add a link to a Google feedback form in Settings.
 
-### TypeScript migration (leftovers; the main work is done, see `typescript-migration.md`)
+### TypeScript migration (leftovers; the main work is done, see [[typescript-migration]])
 
 - [ ] Convert `App.jsx` and `main.jsx` to TypeScript, and change `index.html` to `/src/main.tsx` in the same PR. Gives a fully TypeScript source tree (apart from `fonts.js`, the tests and tooling).
 - [ ] Convert the remaining presentational components when next edited: `Daily`, `Medical`, `LineChart`, `Muscles`, `TimerBar`, `UpdateBanner`.

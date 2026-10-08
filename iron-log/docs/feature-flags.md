@@ -25,4 +25,6 @@ A browser extension, a `?flag=foo` query param, a localStorage value, or a hidde
 
 ## In iron-log
 
-For a solo app, a flag is usually a constant, an env var, or a localStorage boolean. TODO: find the flag already created and note its type and how it is toggled.
+For a solo app, a flag is usually a constant, an env var, or a localStorage boolean. The one flag is **API sync** (`src/sync/flag.ts`): a release flag, off by default, on at build time with
+`VITE_API_SYNC=true` or in one browser with `localStorage` `ironlog:flag:apiSync` = `true` (`false` forces it off). It is
+removed once syncing is trusted. See [[feature-map]] 1.25 and 1.27.

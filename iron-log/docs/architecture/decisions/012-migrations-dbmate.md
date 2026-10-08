@@ -41,4 +41,4 @@ Conventions:
 
 ## Spec amendment
 
-None. Closes the "migration tool" open item in `data-model/iron-log.md` and ADR 002 decision 3.
+None. Closes the "migration tool" open item in [[data-model/iron-log]] and ADR 002 decision 3.

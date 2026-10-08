@@ -5,7 +5,7 @@ Depth class: structural
 
 ## Context
 
-The API (ADR 001) needs a language before the web framework, API style and data-access layer are chosen. The client is already TypeScript (`src/types.ts`, `validate.ts` cleaners, store types). ADR 003 and `backend-data-rules.md` require the server to re-validate every write with the same rules the client uses, and a client/server mismatch can reject or lose a workout (FM-02). ADR 004 chose Better Auth, which is TypeScript-only. Free tiers only.
+The API (ADR 001) needs a language before the web framework, API style and data-access layer are chosen. The client is already TypeScript (`src/types.ts`, `validate.ts` cleaners, store types). ADR 003 and [[backend-data-rules]] require the server to re-validate every write with the same rules the client uses, and a client/server mismatch can reject or lose a workout (FM-02). ADR 004 chose Better Auth, which is TypeScript-only. Free tiers only.
 
 ## Decision
 

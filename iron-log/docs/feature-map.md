@@ -12,10 +12,10 @@ register (part 3) before changing anything on the board, the log, or an import p
 header date in the same PR; when a PR changes how two features interact, add or edit a conflict entry.
 
 **Related docs in this folder**
-- [`backlog.md`](backlog.md) — what is planned and in what order. The source of truth for intent.
-- [`backend-data-rules.md`](backend-data-rules.md) — the storage, identity, uniqueness and merge rules a server must
+- [[backlog]] — what is planned and in what order. The source of truth for intent.
+- [[backend-data-rules]] — the storage, identity, uniqueness and merge rules a server must
   enforce. The source of truth for data semantics; this doc links into it rather than restating it.
-- [`feature-flags.md`](feature-flags.md) — flag concepts. Iron Log has no runtime flag system (see 1.12).
+- [[feature-flags]] — flag concepts. Iron Log has no runtime flag system (see 1.12).
 
 ---
 
@@ -111,7 +111,7 @@ and Mobility log hold seconds instead of reps. "Same as last" repeats the previo
 `From check-off`, carrying `slot` and `wk`, so it appears in Progress. Logging real numbers replaces it. Unticking
 removes the week's entries for that card — the check-off's *and* yours (`removeLogged`) — and shows a notice naming
 what was unchecked, how many entries went, and an Undo that restores both. Uniqueness and replacement rules are
-specified in [`backend-data-rules.md` §3](backend-data-rules.md).
+specified in [[backend-data-rules]] §3.
 
 **Entry identity**: `id` = `L<base36 time><random>`; legacy id-less entries are addressed by `'k' + hash(sameKey)`.
 Edits and deletes go by id, never by position, and refuse a stale target ("That session changed meanwhile").
@@ -247,7 +247,7 @@ kept and loading a version saves the current one first.
 Import has two modes: **Add to my data** (merge) and **Replace my data** (all-or-nothing: plan, apply, then delete
 old documents only if every write succeeded, #68). The review sheet lets you pick sections (board, progress,
 muscles, program, stretches, supplements, settings — `IMPORT_SECTIONS`). SheetJS is loaded lazily, only on first
-Excel use. Merge semantics are specified in [`backend-data-rules.md` §4](backend-data-rules.md) and tested in
+Excel use. Merge semantics are specified in [[backend-data-rules]] §4 and tested in
 `lib/mergeRules.test.js` and `store/logData.test.js`. The two backup paths are selected by `get().mcp`
 (`canBackup` / `backupNow` / `lastBackup`, `useAppStore.js:820–822`) — see C11.
 
@@ -255,7 +255,7 @@ Excel use. Merge semantics are specified in [`backend-data-rules.md` §4](backen
 
 `lib/validate.js` is the single gate: every entry point (load, import, store mutation) normalizes through it as of
 #77. Bad dates reject a whole entry; bad numbers inside a valid entry become null; unknown fields are dropped;
-prototype keys are refused. Limits table: [`backend-data-rules.md` §6](backend-data-rules.md).
+prototype keys are refused. Limits table: [[backend-data-rules]] §6.
 
 ### 1.25 Storage, offline and sync
 
@@ -264,6 +264,38 @@ database (`window.claude.use('db')`) when available, otherwise `localStorage`. W
 coalesced to the latest value while offline; a refused write goes to a "not saved" list and is retried; permanent
 errors drop that one write and surface it. Incoming snapshots are applied except for a path still being written
 locally. Deletion is a `{__delete: true}` whole-document write — **there are no tombstones** (C12).
+
+**Third backend, behind the flag (Phase D, `src/sync/`):** the API. `createApiDb()` has the same `doc(path).set / delete /
+onSnapshot` and `collection(name).onSnapshot / get` shape the store already uses, so the store, the queue and the protected
+board and log write paths are unchanged. A save is kept in the browser first (the outbox) and only then sent; sending compares
+the document with the phone's copy of the server's rows (the mirror) and posts the smallest list of commands. An unreachable
+server, a sign-in problem or an out-of-date app **pauses** the write and retries with backoff; it is never dropped. A write the
+server refuses goes to a quarantine that survives reloads. Pulls run on start, on focus and when the network returns, and
+every minute while visible; the first snapshot waits for the first pull. Deletions are tombstones on the server, so C12 no
+longer holds for this backend. Conflicts between phones follow ADR 003 (D4): this device wins a stale edit, a card ticked
+elsewhere beats a skip, a delete never wins silently over a later edit, one check-off per card and week. An app older than the
+API's `MIN_CLIENT_VERSION` (the unix time of its commit) is refused with 426: it stops sending, keeps its changes, and the
+board shows an "Update needed" notice with a Reload button (D5).
+
+**Sync screen (D6, flag on only):** Settings → **Sync** (top of the right column) says in words what sync is doing (synced, syncing,
+offline, server not answering, sign-in needed, too old, loading, storage full), with **Sync now**. **Not sent** lists the writes the
+server would not take, each with the reason and time, and **Try again** (refused for a path with a newer unsent document), **Download**
+(JSON with the whole document) and **Discard** (two presses, only the user can do it); a refused write is never dropped. **Notes** lists
+what happened because another device went first, with **Clear**. A notice under the header appears when changes are waiting because the
+server cannot be reached, or when anything was set aside; with sync on, the older "Not saved… storage is full" notice is not shown (it
+would be wrong: nothing is lost on reload).
+
+**Accounts (B2e, flag on only):** Settings → **Account** (above Sync) says who is signed in (`GET /api/me`) with **Sign out**, or "Not signed in"
+with **Sign in with Google**; a failed check says "Could not check", never "not signed in". When the server answers 401 a card under the
+header says "Sign in to sync" (changes are kept on this device) instead of an endless "Loading…". The first account to sync owns the
+device's data (`localStorage` `ironlog:sync/owner`). If a different account signs in and the device holds data or unsent changes, sync
+pauses with reason **account** (nothing pulled or sent) and a card offers **Download this device's data** (everything it held, incl. unsent
+and set-aside), **Wipe it and continue** (two presses, forgets mirror + outbox + set-aside list, then reloads), or **Sign out**. A device
+with no data is handed to the new account silently. Conflicts: none with the board/log write paths (sync-only layer).
+
+**Upload of data from before accounts (Phase E, flag on only):** a card under the header, "Upload this device's data?", appears when the browser holds old per-path documents (`ironlog:logs/*`, `weeks/*`, `body/main`, ...), the account is signed in and caught up, and this device holds nothing of the account yet. **Upload** sends every row in one `import-legacy` request (creates only, run by the server in one transaction, only for an account that has never held a row, all or nothing); **Not now** hides it until the next reload. Entries with old hash ids that collide across exercises get `-2`, `-3` (input order); a check-off that a hand-logged session already replaces, or a second check-off for one card and week, is left out; the GitHub backup settings never leave the device. Once anything new is logged (or the account has data) the card instead says the old data cannot be added automatically (**Got it** remembers). The old documents are never deleted; Settings → Sync notes when the upload happened. Conflicts: none with the board/log write paths (it only creates rows, through the same handlers).
+
+**Upload from an export file (Phase E, flag on, signed in):** Settings → Account → **Upload from an export file** (the way from another address, such as the old GitHub Pages copy, whose browser storage a new address cannot see). **Choose export file…** reads an Iron Log JSON (same checks as Import: not JSON, not an Iron Log file, a newer format and an empty file each say so), shows what it holds and when it was exported, then **Upload to my account** (or **Cancel**) sends it through the same all-or-nothing `import-legacy` road, with the same id and check-off rules. Offered only while the account is empty and this device holds nothing of it; otherwise the section says to use Export & import, which merges. Conflicts: Export & import (1.23) merges into an account that has data; this one is all-or-nothing into an empty one.
 
 ### 1.26 PWA, updates, erase, appearance, accessibility
 
@@ -278,11 +310,12 @@ locally. Deletion is a `{__delete: true}` whole-document write — **there are n
 
 ### 1.27 Feature flags
 
-**None.** There is no flag system, no env-var gate and no kill switch. The only runtime branch is capability
-detection — `window.claude` for storage (1.25) and `mcp` for the backup path (1.23) — which is not a flag: nothing
-outside the code sets it. `feature-flags.md`'s TODO ("find the flag already created") should be closed as "there
-isn't one". If a flag is ever wanted, the realistic shape for this app is a `localStorage` boolean read once at
-startup.
+**One: syncing through the API** (`src/sync/flag.ts`). A release flag, **off by default**. On, the store's database handle is
+backed by the API (1.25) instead of the browser's own storage. Two ways to turn it on: build time (`VITE_API_SYNC=true`), or
+in one browser (`localStorage` `ironlog:flag:apiSync` = `true`, or `false` to force it off against a build that has it on).
+In a development build the dev sign-in user is `ironlog:flag:apiUser` (a JSON string; default `dev`). Removed when syncing
+is trusted and the stand-in storage goes (backlog step 4). `window.claude` (the host database) still takes precedence over
+the flag, and `mcp` for the backup path (1.23) is capability detection, not a flag.
 
 ---
 
@@ -336,7 +369,7 @@ edited together.
 At most one check-off per `(exercise, slot, wk)`. A hand-logged session replaces the check-off; it never replaces
 another hand-logged session. "Same as last" refuses when a non-auto entry already exists. On merge, an incoming
 hand-logged session removes the local check-off — the only case where a merge deletes a local entry. Full rules:
-[`backend-data-rules.md` §3](backend-data-rules.md). Tests: `logData.test.js` F3–F8.
+[[backend-data-rules]] §3. Tests: `logData.test.js` F3–F8.
 
 ### C6 — Uncheck vs. skip, for entries you logged yourself · by design
 Unchecking removes the week's log entries for that card, yours included (`removeLogged: true`), with an Undo.
@@ -355,7 +388,7 @@ next session. *Decide:* is this intended? If not, `lastLog` needs an auto filter
 after overriding a week silently discards the override, and the value stays in storage. Merge rules fill `prog` only
 when the local week has none, so a stale `prog` can also arrive from another device and sit unused.
 
-### C9 — Stretch ids are name slugs · open (listed in `backlog.md` Bugs)
+### C9 — Stretch ids are name slugs · open (listed in [[backlog]] Bugs)
 `newStretchId` slugs the name, so deleting a stretch and re-adding one with the same name resurrects its old
 check-offs in earlier weeks. The same identity choice orphans stretch check-offs on merge import when a stretch
 matches by name but carries a different id. Fix is an opaque id plus a name index; it is a data migration.
@@ -385,7 +418,7 @@ local-copy-is-newer rule. Fix is per-entry rows plus `updatedAt`, which is also 
 ### C14 — No `updatedAt` or schema version on entries · open
 Stale-write detection exists in the UI ("That session changed meanwhile") but has nothing to compare on the server.
 `DATA_FORMAT` versions the file, not the rows. The `entry-timestamps` branch appears to be addressing this — fold
-the outcome back into this entry and into `backend-data-rules.md` §7.
+the outcome back into this entry and into [[backend-data-rules]] §7.
 
 ### C15 — Excel round-trip loses `auto` when an entry also has a note · open (bug list)
 `noteOf` in `lib/export.js` writes one note column, so an entry with both a user note and `auto: true` re-imports as
@@ -422,7 +455,7 @@ check-off in the new phase. Logging the other option of an either/or drops the f
 
 ## Part 4: Planned work that will create new conflicts
 
-From [`backlog.md`](backlog.md). Each of these collides with something above; note it here when the work starts.
+From [[backlog]]. Each of these collides with something above; note it here when the work starts.
 
 | Planned | Collides with | Why |
 |---|---|---|
@@ -465,10 +498,10 @@ identity (C9).
 
 1. A feature is added, removed or renamed → its row in part 1, plus the tab inventory if navigation moved.
 2. A storage path, config key or entry field changes → part 1's table for that feature **and**
-   [`backend-data-rules.md`](backend-data-rules.md).
+   [[backend-data-rules]].
 3. Two features start or stop interacting → add, edit or close a conflict entry. Closing one means moving it to the
    drift log below with the PR number, not deleting it.
-4. A bug from `backlog.md`'s Bugs list is fixed → close the matching C-entry (C9, C15–C19 map onto it).
+4. A bug from [[backlog]]'s Bugs list is fixed → close the matching C-entry (C9, C15–C19 map onto it).
 5. Either way: bump the **Last verified against** commit in the header.
 
 **Numbering.** C-numbers are permanent. Never reuse one; closed entries move to the log below.
@@ -481,7 +514,7 @@ and they are where drift shows up first.
 
 - `README.md` describes **Muscles** as its own tab; it is a view inside Progress
   (`components/progress/Progress.jsx:144`). The tab list is Board / Daily / Progress / Program / Settings.
-- `feature-flags.md` ends with a TODO to find an existing flag. There is none (1.27); close the TODO.
+- [[feature-flags]] ends with a TODO to find an existing flag. There is none (1.27); close the TODO.
 - `lib/supplements.js` models scheduled supplements (morning/noon/night, `taken`) that no UI exposes. Either a
   planned feature or dead code — decide and record it.
 

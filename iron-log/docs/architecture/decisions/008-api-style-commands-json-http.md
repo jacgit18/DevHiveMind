@@ -35,7 +35,7 @@ Use **command endpoints over plain JSON HTTP**, plus one pull endpoint.
 - Per-command logs, rate limits and refused-writes rows are keyed by command name (FM-22).
 - Adding an action means adding a command to the shared contract, not a table route.
 - Plain HTTP and JSON transfer to any stack, so switching framework (ADR 007) stays cheap.
-- The command list itself is fixed during build from `backend-data-rules.md`, not here.
+- The command list itself is fixed during build from [[backend-data-rules]], not here.
 - No recurring cost, so no paid alternative to record.
 
 ## Revisit when
@@ -46,3 +46,29 @@ Use **command endpoints over plain JSON HTTP**, plus one pull endpoint.
 ## Spec amendment
 
 None. Backlog step 3 item "API style" is settled.
+
+## Amendment 2026-10-08: the phone queues documents, not commands
+
+Decision 1 of the Phase D brief ([[phase-d-brief]], sections 3 and 6, confirmed by the user 2026-10-07) changes one sentence of this ADR: the line
+"The offline queue stores `{ name, clientId, baseVersion, input }` and replays it unchanged." is **not** how the phone is built.
+
+**What was built instead.** The store already writes whole documents through a small database handle (`doc(path).set / delete / onSnapshot`).
+`src/sync/apiDb.ts` is that handle backed by the API. A save is kept in the browser first (the outbox, one latest document per path) and then
+compared with the phone's copy of the server's rows (the mirror, with their versions and tombstones). The smallest list of commands that makes
+them equal is planned at send time (`plan.ts`) and sent one at a time. **The commands on the wire are exactly the ones this ADR lists**
+(`log-session`, `tick-card`, `delete-entry`, and the document commands); the server, the contract and the one-transaction rule are unchanged.
+
+**Why.** A command log in the store means every store action enqueues a command, in a 1,000-line store whose reorder and log paths are the most
+protected code in the repo. The adapter reaches the same server state with one new module and leaves the store, its tests and the "no exercise
+lost or duplicated" paths alone.
+
+**What it gives up.** The queue holds documents plus a mirror, not an ordered list of user intents. "Why" information is not kept (for example
+that an untick also removed what the user had logged). The server still ends in the right state because the server's rules (rule 2, one check-off
+per card and week) and the planner agree, and the end-to-end tests check it against the real API.
+
+**What it needed in the commands.** A command is now sometimes planned from a changed document rather than from one action, so: a log entry that
+comes back after a delete (the board's Undo) is restored by a write that names the tombstone's own version (`log-session`, `tick-card`), never by
+a create with no version, so a late duplicate cannot undo a delete; the document commands revive a deleted row on a create with no version.
+
+**Revisit when** a user-visible feature needs the intent behind a change (an activity feed, an audit of "who unticked what"): then record the
+intent as a separate event, not by turning the queue back into a command log.

@@ -86,3 +86,17 @@ Entities to model:    users, accounts/sessions (Better Auth), later share_grants
 ## Spec amendment
 
 Backlog step 3 "Auth: Clerk vs a self-run library" is settled to Better Auth. The Account screen item (sign out, last-synced time) now has a concrete provider. No backlog item changes scope.
+
+## What was built (B2a to B2e, 2026-10-08; PRs #114 to #118)
+
+Where the build differs from, or adds to, the decision above:
+
+- **Version and plugins:** Better Auth 1.7.7 pinned, no plugins. Session cookie HttpOnly, SameSite=Lax, 30 days, Secure (`__Secure-` prefix) over https. Google is the only provider; email and password exists only in a test configuration, and the server refuses to start with it outside development and test.
+- **Identity:** our `users` row is found or made from the Better Auth user id by `ensure_user()` (a security-definer function, the one door). A failure to look the session up is a **503, never a 401**, so a database problem cannot look like being signed out.
+- **Authorization backstop:** row-level security on every table (migration 009), the API connects as the restricted `ironlog_app` role and refuses to run in production as a superuser, BYPASSRLS role or table owner. The policy function and admin read path are **not built yet**; `is_admin` is set by hand (B2f follow-up).
+- **Hardening (B2d):** an Origin check on state-changing requests, security headers, `trust proxy` on Cloud Run, an in-memory rate limit on the auth routes (per instance; Better Auth's own limiter is not used because it gives up on a multi-hop `X-Forwarded-For`).
+- **Dev header:** a development or test API accepts `X-Dev-User`; the production build of the app never sends it, and a production API refuses it.
+- **Client (B2e):** the Account panel and the sign-in card use `/api/me`, Better Auth's social sign-in and sign-out, all same-origin, so the cookie and the Origin check need no extra setup. A 401 pauses sync ("sign-in needed") and keeps every change; the app asks who is signed in before any pull or send.
+- **One device, one account at a time (new, not in the original decision):** the first account to sync owns the device's local data (`sync/owner`). If another account signs in on a device with data or unsent changes, nothing is pulled or sent until the user downloads a copy and wipes the device, or signs out. Without this, the pull cursor and mirror of one user would be mixed with another's, and an unsent change of the first could be sent as the second's.
+
+**Still unverified:** the Google redirect in an installed iPhone PWA, the CSP against a real installed PWA, and the cookie on the real Cloud Run origin. All three are checked at the first deploy (Phase F).

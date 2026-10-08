@@ -5,7 +5,7 @@ Depth class: load-bearing
 
 ## Context
 
-ADR 001 chose our own API server. It needs a database that can enforce `backend-data-rules.md`: one row per entry, unique `(user, id)`, a partial unique index for check-offs, check constraints for the validation limits, soft delete (`deletedAt`), transactions for "a hand-logged session replaces the check-off", and stale-write rejection.
+ADR 001 chose our own API server. It needs a database that can enforce [[backend-data-rules]]: one row per entry, unique `(user, id)`, a partial unique index for check-offs, check constraints for the validation limits, soft delete (`deletedAt`), transactions for "a hand-logged session replaces the check-off", and stale-write rejection.
 
 Facts (user's words, 2026-10-06): the only consumer is the Iron Log web app through our API; only the API touches the database; private for now (nothing exposed across a boundary); the shape is mostly stable, with additive data later from free exercise-library APIs. Free tiers only. Estimated about 1 MB per user per year (estimate, not measured).
 
@@ -17,7 +17,7 @@ Free-tier terms checked 2026-10-06 (from aggregator pages; confirm at neon.com):
 2. **Source of truth:** database-first. The ordered migration files in the repo are authoritative; the live schema is their result. Raw SQL is used inside migrations where a builder cannot express a rule (partial unique index, check constraints).
 3. **Migration tool:** deferred until the language is chosen (Knex if Node; Alembic if Python; dbmate or Flyway for any language).
 4. **Application access (ORM, query builder, raw SQL):** deferred to the data-access decision.
-5. **Validation:** the server re-validates everything per `backend-data-rules.md`; database constraints are the second line.
+5. **Validation:** the server re-validates everything per [[backend-data-rules]]; database constraints are the second line.
 6. **Mapping:** database row -> domain object -> API response. Outside exercise APIs are mapped into our own shape at an import step and are not stored raw as truth.
 7. **No formal API contract now.** Revisit if a second consumer appears.
 

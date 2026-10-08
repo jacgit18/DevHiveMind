@@ -23,12 +23,12 @@ Run 2026-10-06 with `/tech-decision-walkthrough`. One ADR per decision except de
 | 15 | Backend test tooling | Vitest plus real Postgres in a throwaway container | 014 | structural |
 | 16 | Shared code layout | One package, `src/shared/` plus `server/` | 015 | structural |
 
-Table design: `data-model/iron-log.md`. Code sketches: `architecture/code-samples.md`.
+Table design: [[data-model/iron-log]]. Code sketches: [[code-samples]].
 
 ## Decision 10 (routine): one-time upload of phone data
 
 - **One `import-legacy` command**, same envelope as the others (ADR 008), one transaction, **only on an empty account** (refused with a reason if the user already has rows). That blocks a second run or a second device (FM-11) from stamping real edits out of order.
-- **Dedupe by client id only**, never by content match (FM-10, `backend-data-rules.md` section 7). Legacy `k`+hash ids load into `client_id` unchanged. Replays are safe because of `UNIQUE(user_id, client_id)`.
+- **Dedupe by client id only**, never by content match (FM-10, [[backend-data-rules]] section 7). Legacy `k`+hash ids load into `client_id` unchanged. Replays are safe because of `UNIQUE(user_id, client_id)`.
 - **Collision risk to check before building:** two genuine identical sessions have identical values, so they hash to the **same** legacy id and the second would be dropped. Count collisions in the real export first; if any, give the later ones a deterministic suffix (for example `-2`) in input order.
 - The phone keeps its export file until the server confirms the counts match; it marks local data synced only after that.
 - Imported rows get version 1 and one `seq` per import; original date and week fields are kept as data, server time is only the stamp.
@@ -53,7 +53,7 @@ Table design: `data-model/iron-log.md`. Code sketches: `architecture/code-sample
 
 ## Spec amendments
 
-Backlog step 3 items for all ten decisions are ticked and cross-linked. ADR 001 replaced the earlier Firebase lean. ADR 006 added the lb/kg storage rule. `backend-data-rules.md` section 7 carries the queue and import-id rules. No other upstream requirement changed.
+Backlog step 3 items for all ten decisions are ticked and cross-linked. ADR 001 replaced the earlier Firebase lean. ADR 006 added the lb/kg storage rule. [[backend-data-rules]] section 7 carries the queue and import-id rules. No other upstream requirement changed.
 
 ## Missed-decision audit
 

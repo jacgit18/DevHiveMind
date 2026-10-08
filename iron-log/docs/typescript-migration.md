@@ -41,7 +41,7 @@ Real bugs-in-waiting the types surfaced (all handled without behavior change): s
 | 4 | **DONE.** **Typed `LIMITS` and `Cfg`**. `LIMITS` is `Record<string, Record<string, number>>`, so a misspelled key compiles. `Cfg` lists only keys the logic reads; backup/import code adds more. | **Yes, small.** Make `LIMITS` an `as const` object and widen `Cfg` as keys appear. One short PR. | |
 | 5 | **`noUncheckedIndexedAccess`** (flags `logs[id]`, `arr[0]` as possibly undefined). | **Not now.** Measured: 321 new errors, nearly all in code that already checks (`cols[d]`, `DAYS[i]`). Fixing them means `!` or guards everywhere, which adds noise and little safety. If wanted, enable it for `lib/` and `store/` only, after #1 and #2. | |
 | 6 | **TypeScript lint rules** (flag new `any`, unused types). | **Maybe.** oxlint can run type-aware rules via `oxlint-tsgolint`; it would stop `any` growing. Cost: a new dev dependency and CI time. Worth it only once #1 and #2 shrink the count, so the rule is not drowned in existing hits. | |
-| 7 | **Update `feature-map.md`**. | **No.** No feature or interaction changed. | |
+| 7 | **Update [[feature-map]]**. | **No.** No feature or interaction changed. | |
 
 Suggested order: #1 and #2 together (per component group), then #4, then decide on #6. Skip #3 and #5.
 
