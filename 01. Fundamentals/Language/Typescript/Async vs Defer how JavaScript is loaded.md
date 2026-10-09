@@ -15,6 +15,8 @@ dg-publish:
 ---
 When working with script tags in HTML, it's essential to consider various attributes for optimal performance and functionality. Here are some best practices:
 
+![[jsExp.gif]]
+
 #### 1. **Positioning and Defer Attribute:**
    - **Position at the Bottom:**
      - Typically, it's recommended to place script tags at the bottom of the HTML document, just before the closing `</body>` tag. This ensures that HTML content is rendered before scripts are executed.

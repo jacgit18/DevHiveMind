@@ -43,6 +43,9 @@ views:
     order:
       - file.name
       - formula.section
+    sort:
+      - property: formula.section
+        direction: ASC
   - type: cards
     name: Unlinked gallery
     filters:

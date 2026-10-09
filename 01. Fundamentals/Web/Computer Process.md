@@ -13,3 +13,5 @@ Peer Reviewed: 0
 dg-publish:
 ---
 ![[Computer Process.jpeg]]
+
+![[Computer System Flow.gif]]
