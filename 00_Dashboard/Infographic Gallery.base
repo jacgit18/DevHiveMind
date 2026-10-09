@@ -43,3 +43,14 @@ views:
     order:
       - file.name
       - formula.section
+  - type: cards
+    name: Unlinked gallery
+    filters:
+      and:
+        - file.backlinks.length == 0
+    groupBy:
+      property: formula.section
+      direction: ASC
+    order:
+      - file.name
+    image: file.path
