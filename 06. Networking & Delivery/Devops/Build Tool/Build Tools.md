@@ -14,7 +14,7 @@ Relates:
 Peer Reviewed: 0
 dg-publish:
 ---
-![[01. Fundamentals/Language/_Infographic/Java/Maven v Gradle.png]]
+![[Maven v Gradle.png]]
 ***Maven*** and ***Gradle*** belong to the realm of [[06. Networking & Delivery/Devops/Build]] tools, serving to automate the process of transforming application source code into publishable artifacts.
 
 In the JavaScript ecosystem, analogous tools include ***Yarn, NPM, PNPM, webpack bundler, gulp, babel, parcel, browserify, grunt, or requireJS.*** The term "build" corresponds to a diverse set of tools and processes, with the outfolder serving as a build folder for code execution in IntelliJ.
@@ -57,11 +57,11 @@ Testing was conducted across two project types, and an average of three results 
 
 ### Small Java project 
 10 subprojects each with 50 main classes and 50 test classes. 1,000 class total. 
-![[01. Fundamentals/Language/_Infographic/Java/Small build performance.png]]
+![[Small build performance.png]]
 
 ### Medium Java project
 100 subprojects each with 100 main classes and 100 test classes. 20,000 class total. 
-![[01. Fundamentals/Language/_Infographic/Java/Medium build performance.png]]
+![[Medium build performance.png]]
 
 Both Maven and Gradle necessitate a build file for project configuration. Below, the Maven's pom.xml and Gradle's Groovy build.gradle for a simple Java Spring Boot application are compared.
 
@@ -111,13 +111,13 @@ Maven's pom.xml is 62 lines, nearly twice the length of the 35-line build.gradle
 - **Artifact Output:** Maven creates build artifacts within a `target` directory, whereas Gradle utilizes a `build` directory.
 
 This usability comparison highlights Gradle's convenience with its wrapper script, succinct syntax, and streamlined processes for project building and dependency management.
-![[01. Fundamentals/Language/_Infographic/Java/Build Workflow.png]]
+![[Build Workflow.png]]
 
 The console output for Maven shows all info level log statements and test output. Gradle has a dynamic console, which shows only the task it’s currently working on with a final success/failure message.
 
 Which console is better is subjective, but some may find Gradle’s console easier to read as it’s more concise. If detailed output is needed, you can enable it via the command line options.
 
-![[01. Fundamentals/Language/_Infographic/Java/Maven-vs-gradle-build-run.gif]]
+![[Maven-vs-gradle-build-run.gif]]
 
 When seeking ongoing support with Maven, finding the right avenues may not be straightforward. Issues cannot be raised directly on the GitHub repository, and the Slack channel is exclusively for contributors.
 
@@ -183,6 +183,6 @@ This usability comparison emphasizes Gradle's user-friendly support options, wra
 
 ## Side-by-side feature comparison
 
-![[01. Fundamentals/Language/_Infographic/Java/Maven & Gradle Comparison.png]]
+![[Maven & Gradle Comparison.png]]
 
-![[01. Fundamentals/Language/_Infographic/Java/Maven and Gradle Technical.png]]
+![[Maven and Gradle Technical.png]]

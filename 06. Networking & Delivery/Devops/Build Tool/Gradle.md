@@ -43,7 +43,7 @@ Gradle employs a domain-specific language (DSL) rather than XML, a departure fro
 
 Hans Dockter, Gradle's founder, envisioned a modern build tool with a code-based build script, incremental builds, and an easily customizable build model, addressing Maven's limitations and contributing to improved performance.
 
-![[01. Fundamentals/Language/_Infographic/Java/Gradle Timeline.png]]
+![[Gradle Timeline.png]]
 
 Gradle operates within the JVM and natively supports building Java, Groovy, Scala, and even C++ applications. Third-party plugins extend its capabilities to languages like Kotlin.
 

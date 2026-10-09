@@ -27,7 +27,7 @@ The POM file is Maven's fundamental unit of work, represented in XML format. It 
 2. **Standardization of build process:** Maven standardized the build process by defining a default lifecycle with phases like compile, test, and package. This allows developers to build projects using a consistent approach on the Maven CLI.
 
 3. **External storage of dependencies:** Maven shifted the practice of storing dependencies externally, moving them out of version control and into a remote repository, commonly known as Maven Central. This simplifies the process of updating dependency versions.
-![[01. Fundamentals/Language/_Infographic/Java/Maven Timeline.png]]
+![[Maven Timeline.png]]
 
 **Maven's Functionality and Extensibility:**
 
