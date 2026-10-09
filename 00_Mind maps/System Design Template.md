@@ -375,9 +375,9 @@ Client VPN ^2LmZTsXP
 
 beb88a937223c5cb69030dd35c828863fccfaf0d: [[SnowMobile.svg]]
 
-771414176e1fd0a7d30561e012f4b84d283adcaa: [[04. Backing Service Options/Cloud/graphicsToIntergrate/GetImage (11).png]]
+771414176e1fd0a7d30561e012f4b84d283adcaa: [[GetImage (11).png]]
 
-d149fa07d18dfe5949cd6a5cd51cd17343f74e52: [[04. Backing Service Options/Cloud/graphicsToIntergrate/GetImage (12).png]]
+d149fa07d18dfe5949cd6a5cd51cd17343f74e52: [[GetImage (12).png]]
 
 %%
 ## Drawing

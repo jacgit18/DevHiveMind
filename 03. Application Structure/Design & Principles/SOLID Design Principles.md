@@ -16,7 +16,7 @@ Relates:
 Peer Reviewed: 0
 dg-publish:
 ---
-![[04. Backing Service Options/Databases/_Infographic/DataBuisness.png]]
+![[DataBuisness.png]]
 #todo/Med/Dev 
 - [ ] Find out were to put this infographic and were it makes sense to place also is used in [[Data Work]] note
 

@@ -1,10 +1,10 @@
 {
 	"nodes":[
 		{"id":"36aa8d0ae4ba3c83","type":"group","x":-500,"y":620,"width":1216,"height":400,"label":"Application Layer is Decoupled into Query & command"},
-		{"type":"file","file":"Architecture/03. Application Structure/Layers/User.md","id":"bd2319cd61cd2488","x":-200,"y":-75,"width":400,"height":151},
-		{"id":"fec86ccf81614402","type":"file","file":"Architecture/03. Application Structure/Layers/Presentation.md","x":-374,"y":160,"width":749,"height":295},
+		{"type":"file","file":"03. Application Structure/Layers/User.md","id":"bd2319cd61cd2488","x":-200,"y":-75,"width":400,"height":151},
+		{"id":"fec86ccf81614402","type":"file","file":"03. Application Structure/Layers/Presentation.md","x":-374,"y":160,"width":749,"height":295},
 		{"id":"1b222ce5807f6d1b","type":"text","text":"# Data Flow","x":591,"y":-49,"width":250,"height":125,"color":"2"},
-		{"id":"18e7df9d3827c332","type":"file","file":"Architecture/03. Application Structure/Layers/Domain stuff.md","x":180,"y":1100,"width":360,"height":420},
+		{"id":"18e7df9d3827c332","type":"file","file":"03. Application Structure/Layers/Domain stuff.md","x":180,"y":1100,"width":360,"height":420},
 		{"id":"c330140d62001286","type":"text","text":"# Data Access","x":-500,"y":1620,"width":330,"height":60},
 		{"id":"dabf86722d8b7468","type":"text","text":"# Persistence","x":180,"y":1620,"width":250,"height":60},
 		{"id":"71be98c19317f32c","type":"text","text":"<center>\n  <h4 style=\"font-size: 50px; -webkit-text-stroke: 1px green; -webkit-text-fill-color: transparent;\"> Options </h4>\n</center>\n\n","x":-880,"y":1880,"width":1800,"height":120},
