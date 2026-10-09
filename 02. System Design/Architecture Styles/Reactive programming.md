@@ -9,7 +9,7 @@ Purpose: This documentation discusses Reactive programming.
 Status: Refinement
 Started: 2023-09-01
 EditDate:
-Relates: "[[Architecture/01. Fundamentals/Language Overlap/Declarative Coding]]"
+Relates: "[[01. Fundamentals/Language Overlap/Declarative Coding]]"
 Peer Reviewed: 0
 dg-publish:
 ---

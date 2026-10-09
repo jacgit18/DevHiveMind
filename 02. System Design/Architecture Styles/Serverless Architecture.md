@@ -18,7 +18,7 @@ dg-publish:
 ---
 
 ![[Serverless.gif]]
-In serverless architecture, you typically use functions as a service ([[Architecture/04. Backing Service Options/Cloud/Cloud Service Model#FAAS|FAAS]]). Here's a simple example using AWS Lambda and JavaScript:  
+In serverless architecture, you typically use functions as a service ([[04. Backing Service Options/Cloud/Cloud Service Model#FAAS|FAAS]]). Here's a simple example using AWS Lambda and JavaScript:  
   
 ```javascript  
 // index.js  
@@ -68,7 +68,7 @@ Serverless architecture, also known as Function as a Service (FaaS), offers vari
 # Excalidraw Data
 
 ## Text Elements
-[[Architecture/04. Backing Service Options/API/API Gateway]] ^xvYqFZyd
+[[04. Backing Service Options/API/API Gateway]] ^xvYqFZyd
 
 DynamoDB ^fVII0mcA
 

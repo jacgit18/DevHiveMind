@@ -11,7 +11,7 @@ Purpose: This documentation discusses backend  server and proxy server.
 Status: Refinement
 Started:
 EditDate: 2024-03-06
-Relates: "[[Architecture/01. Fundamentals/Web/Proxy]]"
+Relates: "[[01. Fundamentals/Web/Proxy]]"
 Peer Reviewed: 0
 dg-publish:
 ---

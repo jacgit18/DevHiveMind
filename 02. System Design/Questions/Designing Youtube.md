@@ -7,7 +7,7 @@ Purpose: This documentation discusses
 Status: Draft
 Started: 2024-04-12
 EditDate:
-Relates: "[[Architecture/02. System Design/System Design Thought Process Flow]]"
+Relates: "[[02. System Design/System Design Thought Process Flow]]"
 Peer Reviewed: 0
 dg-publish:
 ---
@@ -16,5 +16,5 @@ dg-publish:
 In the context of a platform like YouTube, users on platforms like YouTube typically engage in more content consumption through watching videos (reads) than content creation through uploading videos (writes). This results in a high ratio of reads to writes, such as 10:1 or 100:1, where for every video uploaded, there are 10 or 100 videos watched.
 
 
-[[Architecture/02. System Design/Questions/Designing YouTube Upload]]
-[[Architecture/02. System Design/Questions/Designing YouTube Recommendation Engine]]
+[[02. System Design/Questions/Designing YouTube Upload]]
+[[02. System Design/Questions/Designing YouTube Recommendation Engine]]

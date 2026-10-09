@@ -61,7 +61,7 @@ Stateless architectures are often simpler and less expensive to deploy and maint
 Stateful architectures may require more infrastructure and operational overhead to manage data persistence, replication, and synchronization.  
 
 
-### [[Architecture/02. System Design/Fault Tolerance]]
+### [[02. System Design/Fault Tolerance]]
 Stateless processes are more resilient to failures since they don't rely on specific instances or data stores. If one instance fails, another can seamlessly take over.
 
 

@@ -12,7 +12,7 @@ Purpose: This documentation discusses scaling at the codebase level.
 Status: Refinement
 Started:
 EditDate: 2024-02-25
-Relates: "[[Architecture/02. System Design/Vertical vs Horizontal Scaling]]"
+Relates: "[[02. System Design/Vertical vs Horizontal Scaling]]"
 Peer Reviewed: 0
 dg-publish:
 ---

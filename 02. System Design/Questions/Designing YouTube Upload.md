@@ -251,8 +251,8 @@ User Table ^zmns1Vak
 
 ## Element Links
 cqasGqqJ: [[_System Design Template#Table 1]]
-Mf9OBUwN: [[Architecture/02. System Design/Questions/Designing YouTube Upload#Table User]]
-gPBXehTo: [[Architecture/02. System Design/Questions/Designing YouTube Upload#Table Region]]
+Mf9OBUwN: [[02. System Design/Questions/Designing YouTube Upload#Table User]]
+gPBXehTo: [[02. System Design/Questions/Designing YouTube Upload#Table Region]]
 
 %%
 ## Drawing

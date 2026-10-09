@@ -7,7 +7,7 @@ Purpose: This documentation discusses
 Status:
 Started: 2024-04-04
 EditDate:
-Relates: "[[Architecture/02. System Design/Questions/Designing Youtube]]"
+Relates: "[[02. System Design/Questions/Designing Youtube]]"
 Peer Reviewed: 0
 dg-publish:
 ---

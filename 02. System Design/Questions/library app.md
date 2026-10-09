@@ -303,8 +303,8 @@ API ^EhJ0BLrM
 API ^qj7dnRO7
 
 ## Element Links
-nHQ1vcRE: [[Architecture/02. System Design/Questions/library app#Table 1]]
-7s5CxVST: [[Architecture/02. System Design/Questions/library app#Table 2]]
+nHQ1vcRE: [[02. System Design/Questions/library app#Table 1]]
+7s5CxVST: [[02. System Design/Questions/library app#Table 2]]
 
 %%
 ## Drawing

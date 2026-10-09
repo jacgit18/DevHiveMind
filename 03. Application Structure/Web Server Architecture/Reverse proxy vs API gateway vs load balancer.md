@@ -18,14 +18,14 @@ dg-publish:
 
 As modern websites and applications are like busy beehives, we use a variety of tools to manage the buzz. Here we'll explore three superheroes: Reverse Proxy, API Gateway, and Load Balancer.  
 
-## [[Architecture/04. Backing Service Options/API/API Gateway]]: postman  
+## [[04. Backing Service Options/API/API Gateway]]: postman  
 - Delivers requests to the right services.  
 - Ideal for bustling applications with numerous intercommunicating services.  
 
-## [[Architecture/Delivery/Load Balancer]]: traffic cop
+## [[06. Networking & Delivery/Load Balancer]]: traffic cop
 - Directs traffic evenly across servers, preventing bottlenecks  
 - Essential for popular websites with heavy traffic and high demand.  
-## [[Architecture/01. Fundamentals/Web/Proxy|Reverse Proxy]]: change identity  
+## [[01. Fundamentals/Web/Proxy|Reverse Proxy]]: change identity  
 - Fetching data secretly, keeping servers hidden. 
 - Perfect for shielding sensitive websites from cyber-attacks and prying eyes.  
   

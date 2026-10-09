@@ -8,7 +8,7 @@ Purpose: This documentation discusses MVVM pattern and how it interacts with app
 Status: Done
 Started:
 EditDate: 2024-02-26
-Relates: "[[Architecture/Design & Principles/Model Patterns]]"
+Relates: "[[02. System Design/Architecture Styles/Model Patterns]]"
 Peer Reviewed: 0
 dg-publish:
 ---

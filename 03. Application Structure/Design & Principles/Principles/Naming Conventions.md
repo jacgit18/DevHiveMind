@@ -14,7 +14,7 @@ Relates:
 Peer Reviewed: 0
 dg-publish:
 ---
-![[Architecture/01. Fundamentals/Language Overlap/_Infographic/Camel Case.png]]
+![[01. Fundamentals/Language Overlap/_Infographic/Camel Case.png]]
 Be cognizant of naming convention  
 
 like for a method that check truth value name it with the word "IS" at the beginning and a proper name like "isFunctionName"   

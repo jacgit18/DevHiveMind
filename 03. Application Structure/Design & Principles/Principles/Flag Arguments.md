@@ -11,7 +11,7 @@ Purpose: This documentation discusses flag arguments.
 Status: Refinement
 Started:
 EditDate: 2024-03-07
-Relates: "[[Architecture/01. Fundamentals/Language Overlap/Parameters vs Arguments]]"
+Relates: "[[01. Fundamentals/Language Overlap/Parameters vs Arguments]]"
 Peer Reviewed: 0
 dg-publish:
 ---

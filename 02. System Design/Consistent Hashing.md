@@ -10,7 +10,7 @@ Purpose: This documentation discusses
 Status: Refinement
 Started: 2024-03-28
 EditDate:
-Relates: "[[Architecture/Delivery/Load Balancer]]"
+Relates: "[[06. Networking & Delivery/Load Balancer]]"
 Peer Reviewed: 0
 dg-publish:
 ---

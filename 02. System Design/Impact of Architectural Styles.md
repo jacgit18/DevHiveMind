@@ -21,7 +21,7 @@ dg-publish:
 ![[evolution of arch.gif]]
 When it comes to architectural styles they can man have a major effect on the components of a system. 
 
-A lot of these styles leverage event driven architecture which is discussed here [[Architecture/Decisions/Event-driven Architectural Pattern Decisions]].
+A lot of these styles leverage event driven architecture which is discussed here [[02. System Design/Architecture Styles/Event-driven Architectural Pattern Decisions]].
 
 The chosen architecture significantly influences how different components interact, scale, and maintainability.
 

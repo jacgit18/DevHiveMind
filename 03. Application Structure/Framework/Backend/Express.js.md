@@ -13,7 +13,7 @@ Relates:
 Peer Reviewed: 0
 dg-publish: true
 ---
-Express.js is a minimal and flexible [[Architecture/01. Fundamentals/Language/Typescript/Node.js]] web application framework that provides a set of robust features to develop web and mobile applications. It simplifies the process of building web servers and handling HTTP requests by offering a straightforward, unopinionated structure.
+Express.js is a minimal and flexible [[01. Fundamentals/Language/Typescript/Node.js]] web application framework that provides a set of robust features to develop web and mobile applications. It simplifies the process of building web servers and handling HTTP requests by offering a straightforward, unopinionated structure.
 
 Key features of Express.js include:
 

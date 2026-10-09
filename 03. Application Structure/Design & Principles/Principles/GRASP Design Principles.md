@@ -49,7 +49,7 @@ And if so, it would seem to make sense to nominate those objects as taking that�
 
 > A common design pattern that applies this principle is called [Factory Pattern](http://en.wikipedia.org/wiki/Factory_(object-oriented_programming)).
 
-## Low [[Architecture/01. Fundamentals/Language Overlap/Types of coupling|Coupling]]
+## Low [[01. Fundamentals/Language Overlap/Types of coupling|Coupling]]
 
 It means you try to reduce the dependency between your objects.
 
@@ -59,7 +59,7 @@ Lots of dependencies meaning lots of potential for breaking things if you make a
 
 Now _low_ coupling does not mean no coupling. Objects do need to know about each other, but as much as possible they should do what they can with the minimum of dependencies.
 
-## High [[Architecture/01. Fundamentals/Language Overlap/Types of Cohesion|Cohesion]]
+## High [[01. Fundamentals/Language Overlap/Types of Cohesion|Cohesion]]
 
 The more you have a class that has relevant and focused responsibilities, the higher cohesion you will have.
 
@@ -93,7 +93,7 @@ If you have multiple objects that need to talk to each other, it’s very easy t
 
 And what we can do instead is reduce those direct connections by putting an **indirection object** between them to simplify the amount of connections that each object has to make.
 
-[[Architecture/01. Fundamentals/Language Overlap/Polymorphism]] is another design principle
+[[01. Fundamentals/Language Overlap/Polymorphism]] is another design principle
 
 
 ## Protected Variations

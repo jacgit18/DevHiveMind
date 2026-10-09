@@ -8,7 +8,7 @@ Purpose: This documentation discusses
 Status:
 Started: 2024-04-13
 EditDate:
-Relates: "[[Architecture/01. Fundamentals/Language Overlap/Race Condition]]"
+Relates: "[[01. Fundamentals/Language Overlap/Race Condition]]"
 Peer Reviewed: 0
 dg-publish:
 ---

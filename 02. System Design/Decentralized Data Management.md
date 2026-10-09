@@ -17,7 +17,7 @@ Relates: "[[Microservices VS Monolithic Architecture |Microservices]]"
 Peer Reviewed: 0
 dg-publish: true
 ---
-![[Architecture/02. System Design/_Infographic/Decentralized Data.png]]
+![[02. System Design/_Infographic/Decentralized Data.png]]
 As per Decentralized Data Management principle, each Microservice should manage its own data, without relying on other Microservice, to ensure scalability and reliability. For example, each Microservice could have its own database that it uses to store data.
 
 Sharing Database with other Microservices violate this principle and should be avoided as it will make it difficult to troubleshoot and can result in data inconsistency.

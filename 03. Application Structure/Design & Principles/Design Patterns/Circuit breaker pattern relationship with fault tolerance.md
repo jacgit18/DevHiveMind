@@ -10,7 +10,7 @@ Purpose: This documentation discusses Circuit breaker pattern in relationship wi
 Status: Refinement
 Started:
 EditDate: 2024-03-06
-Relates: "[[Architecture/02. System Design/Fault Tolerance]]"
+Relates: "[[02. System Design/Fault Tolerance]]"
 Peer Reviewed: 0
 dg-publish:
 ---

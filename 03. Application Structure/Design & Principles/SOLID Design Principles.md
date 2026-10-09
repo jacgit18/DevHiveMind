@@ -16,17 +16,17 @@ Relates:
 Peer Reviewed: 0
 dg-publish:
 ---
-![[Architecture/04. Backing Service Options/Databases/_Infographic/DataBuisness.png]]
+![[04. Backing Service Options/Databases/_Infographic/DataBuisness.png]]
 #todo/Med/Dev 
 - [ ] Find out were to put this infographic and were it makes sense to place also is used in [[Data Work]] note
 
 merging data with interfaces and integrating business logic backed by requirements probably codebase 
 
-- [[Architecture/03. Application Structure/Design & Principles/Principles/_S_ingle Responsibility Principle]]
-- [[Architecture/03. Application Structure/Design & Principles/Principles/_O_pen Closed Design Principle]]
-- [[Architecture/03. Application Structure/Design & Principles/Principles/_L_iskov Substitution Principle]]
-- [[Architecture/03. Application Structure/Design & Principles/Principles/_I_nterface Segregation Principle]]
-- [[Architecture/03. Application Structure/Design & Principles/Principles/_D_ependency Inversion]]
+- [[03. Application Structure/Design & Principles/Principles/_S_ingle Responsibility Principle]]
+- [[03. Application Structure/Design & Principles/Principles/_O_pen Closed Design Principle]]
+- [[03. Application Structure/Design & Principles/Principles/_L_iskov Substitution Principle]]
+- [[03. Application Structure/Design & Principles/Principles/_I_nterface Segregation Principle]]
+- [[03. Application Structure/Design & Principles/Principles/_D_ependency Inversion]]
 
 The SOLID principles are a set of five principles aimed at making software designs more understandable, flexible, and maintainable. Here's an example of TypeScript code that incorporates all the SOLID principles:
 

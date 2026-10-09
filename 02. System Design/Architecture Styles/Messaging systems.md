@@ -33,11 +33,11 @@ The significance of messaging systems in backend development lies in their abili
 
 There are diverse types of messaging systems, including message brokers, message queues, and message buses:
 
-- **Message Brokers:** These act as intermediaries between message producers and consumers, offering routing, filtering, transforming, and aggregating capabilities to manage message flow. [[Architecture/04. Backing Service Options/Library/03.Backend/Apache Kafka]] and RabbitMQ are popular brokers, commonly found in event-driven architectures and microservices.
+- **Message Brokers:** These act as intermediaries between message producers and consumers, offering routing, filtering, transforming, and aggregating capabilities to manage message flow. [[04. Backing Service Options/Library/03.Backend/Apache Kafka]] and RabbitMQ are popular brokers, commonly found in event-driven architectures and microservices.
 
 - **Message Buses:** Connecting various system components through a common communication channel, they provide functionalities like broadcasting, subscribing, and publishing for event-driven communication.
 
-- **Message Queues:** Message queues are crucial components for storing messages in a first-in, first-out (FIFO) order until they are consumed. They offer a range of features such as message buffering, [[Architecture/04. Backing Service Options/Dynamic Scaling|Load balancing]], [[Architecture/02. System Design/Fault Tolerance]], and more, to effectively manage message loads. Message queues are widely used for sending messages within or between applications and services [[Architecture/01. Fundamentals/Language Overlap/Asynchronous Programming|asynchronously]]. Some popular options in this category include RabbitMQ, Apache Kafka, and Apache ActiveMQ. The typical use cases of messaging queues tend to send clients notifications. These notifications can be alerts, emails, messages, etc.
+- **Message Queues:** Message queues are crucial components for storing messages in a first-in, first-out (FIFO) order until they are consumed. They offer a range of features such as message buffering, [[04. Backing Service Options/Dynamic Scaling|Load balancing]], [[02. System Design/Fault Tolerance]], and more, to effectively manage message loads. Message queues are widely used for sending messages within or between applications and services [[01. Fundamentals/Language Overlap/Asynchronous Programming|asynchronously]]. Some popular options in this category include RabbitMQ, Apache Kafka, and Apache ActiveMQ. The typical use cases of messaging queues tend to send clients notifications. These notifications can be alerts, emails, messages, etc.
 
 
 Backend developers must carefully select a messaging system that aligns with their project's requirements, considering factors like latency, throughput, consistency, and availability. Additionally, they need to become proficient in utilizing messaging frameworks or libraries, which simplify the development of messaging systems.
@@ -48,13 +48,13 @@ Further, specific messaging system categories and examples include:
 
 1. **Publish-Subscribe Systems:** These distribute messages to multiple subscribers based on topics or channels. MQTT and Apache Pulsar are noteworthy examples.
 
-2. **[[Architecture/01. Fundamentals/Web/WebSockets]]:** Enabling real-time, bidirectional communication in web applications.
+2. **[[01. Fundamentals/Web/WebSockets]]:** Enabling real-time, bidirectional communication in web applications.
 
 3. **HTTP/REST APIs:** While not traditional messaging systems, they are widely used for web application and web service communication.
 
 4. **Socket.io:** Facilitating real-time, bidirectional communication in web applications and games.
 
-5. **[[Architecture/01. Fundamentals/Web/gRPC]]:** A high-performance, language-agnostic framework for building remote procedure call (RPC) systems, often used for microservices communication.
+5. **[[01. Fundamentals/Web/gRPC]]:** A high-performance, language-agnostic framework for building remote procedure call (RPC) systems, often used for microservices communication.
 
 6. **AMQP (Advanced Message Queuing Protocol):** An open standard for message-oriented middleware, used in message queuing and publish-subscribe scenarios.
 

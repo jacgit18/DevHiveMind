@@ -971,13 +971,13 @@ AI ^BDzzMuI5
 Machine Learning ^817PQ3Oo
 
 ## Element Links
-cfVAGpj7: [[Architecture/02. System Design/Questions/Designing YouTube Recommendation Engine#Table 1]]
+cfVAGpj7: [[02. System Design/Questions/Designing YouTube Recommendation Engine#Table 1]]
 
-TsXzxI5r: [[Architecture/02. System Design/Questions/Designing YouTube Recommendation Engine#Table 2]]
+TsXzxI5r: [[02. System Design/Questions/Designing YouTube Recommendation Engine#Table 2]]
 
-zrOOXy2q: [[Architecture/02. System Design/Questions/Designing YouTube Recommendation Engine#Table 3]]
+zrOOXy2q: [[02. System Design/Questions/Designing YouTube Recommendation Engine#Table 3]]
 
-D6RNpTN3: [[Architecture/04. Backing Service Options/Cloud/Integration of AI and Machine Learning Services#Amazon Rekognition]]
+D6RNpTN3: [[04. Backing Service Options/Cloud/Integration of AI and Machine Learning Services#Amazon Rekognition]]
 
 ## Embedded Files
 0e77320ba2cdfffa54ed944064dc676677a1c426: [[Github Actions.png]]
@@ -990,7 +990,7 @@ d751345c2cc691e74f0ca6a58a00573821ffaf18: [[Pasted Image 20240504132918_569.jpg]
 
 1783f5979612d3a2cc2fb5fd72db9d035ac8b63e: [[Pasted Image 20240427103411_923.png]]
 
-644b7b1e21dc8120d7db5393f0af1e3673b6e0b3: [[Architecture/04. Backing Service Options/Cloud/graphicsToIntergrate/GetImage (16).png]]
+644b7b1e21dc8120d7db5393f0af1e3673b6e0b3: [[04. Backing Service Options/Cloud/graphicsToIntergrate/GetImage (16).png]]
 
 c6547e8f61187a9a32c5bd62deb2b2aedbcc1c75: [[Pasted Image 20240518111346_327.gif]]
 

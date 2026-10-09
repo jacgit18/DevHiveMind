@@ -11,7 +11,7 @@ Purpose: This documentation discusses Scaling.
 Status: Refinement
 Started:
 EditDate: 2024-02-25
-Relates: "[[Architecture/04. Backing Service Options/Dynamic Scaling]]"
+Relates: "[[04. Backing Service Options/Dynamic Scaling]]"
 Peer Reviewed: 0
 dg-publish:
 ---
@@ -31,7 +31,7 @@ Scaling is easier from a hardware perspective - All horizontal scaling requires 
 
 Fewer periods of downtime - Because you’re adding a machine, you don’t have to switch the old machine off while scaling. If done effectively, there may never be a need for downtime and clients are less likely to be impacted. 
 
-Increased resilience and [[Architecture/02. System Design/Fault Tolerance]] - Relying on a single node for all your data and operations puts you at a high risk of losing it all when it fails. Distributing it among several nodes saves you from losing it all.  
+Increased resilience and [[02. System Design/Fault Tolerance]] - Relying on a single node for all your data and operations puts you at a high risk of losing it all when it fails. Distributing it among several nodes saves you from losing it all.  
 
 Increased performance - If you are using horizontal scaling to manage your network traffic, it allows for more endpoints for connections, considering that the load will be delegated among multiple machines.    
 
