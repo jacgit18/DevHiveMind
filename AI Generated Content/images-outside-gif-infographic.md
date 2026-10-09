@@ -1,0 +1,292 @@
+# Images outside any Gif/Infographic folder
+
+| Type | Count | Unlinked |
+|---|---|---|
+| .png | 123 | 77 |
+| .gif | 82 | 69 |
+| .jpeg | 27 | 19 |
+| .svg | 20 | 13 |
+| .jpg | 16 | 13 |
+
+## .png (123)
+
+- `00_Files/_PDF/Cheatsheet/Languages/Typescript Cheat-sheet 1.png` → **not linked**
+- `00_Files/_PDF/Cheatsheet/Languages/Typescript Cheat-sheet 2.png` → **not linked**
+- `00_Files/_PDF/Cheatsheet/Languages/Typescript Cheat-sheet 3.png` → **not linked**
+- `00_Files/_PDF/Cheatsheet/Languages/Typescript Cheat-sheet 4.png` → **not linked**
+- `00_Mind maps/UML/UML Monitor Project.png` → **not linked**
+- `00_NoteAssets/Images To Move/2024-04-26 13.29.08 www.youtube.com 44858d0d7095.png` → `02. System Design/System Design Thought Process Flow.md`
+- `00_NoteAssets/Images To Move/2024-04-29 08.48.38 ole03.yourlearning.ibm.com 56db9bc4e512.png` → `04. Backing Service Options/Databases/5 V's of Data.md`
+- `00_NoteAssets/Images To Move/2024-04-29 09.19.37 ole03.yourlearning.ibm.com 3498cf71ef62.png` → `04. Backing Service Options/Databases/5 V's of Data.md`
+- `00_NoteAssets/Images To Move/2024-04-29 09.20.51 ole03.yourlearning.ibm.com 7506435756b1.png` → `04. Backing Service Options/Databases/5 V's of Data.md`
+- `00_NoteAssets/Images To Move/2024-04-29 12.17.59 ole03.yourlearning.ibm.com bbc37cca3a46.png` → `04. Backing Service Options/Databases/5 V's of Data.md`
+- `00_NoteAssets/Images To Move/2024-04-29 12.29.34 ole03.yourlearning.ibm.com d5aa41266def.png` → `04. Backing Service Options/Databases/5 V's of Data.md`
+- `00_NoteAssets/Images To Move/2024-04-29 12.32.39 ole03.yourlearning.ibm.com 70d109272946.png` → `04. Backing Service Options/Databases/5 V's of Data.md`
+- `00_NoteAssets/Images To Move/2024-04-29 12.35.41 ole03.yourlearning.ibm.com 978b0783f224.png` → `04. Backing Service Options/Databases/5 V's of Data.md`
+- `00_NoteAssets/Images To Move/2024-12-16 23.37.27 mail.google.com e969d966655b.png` → **not linked**
+- `00_NoteAssets/Images To Move/2025-03-15 14.39.09 online.vitalsource.com 6cf82326d082.png` → `04. Backing Service Options/Cloud/AWS Labs/Lab 2.md`
+- `00_NoteAssets/Images To Move/2025-12-23 16.03.02 www.youtube.com 300a7d8173d9.png` → `00 Stuff/_Tech Clipboard.md`
+- `00_NoteAssets/Images To Move/Aws Trust Advisor.png` → `00_Mind maps/System Design Template.md`; `02. System Design/System Design Thought Process Flow.md`
+- `00_NoteAssets/Images To Move/EBS.png` → `00_Mind maps/System Design Template.md`; `02. System Design/System Design Thought Process Flow.md`
+- `00_NoteAssets/Images To Move/Github Actions.png` → `02. System Design/Questions/Designing YouTube Recommendation Engine.md`; `02. System Design/System Design Thought Process Flow.md`
+- `00_NoteAssets/Images To Move/Infographics/Work Process.png` → **not linked**
+- `00_NoteAssets/Images To Move/Pasted Image 20240427103411_923.png` → `02. System Design/Questions/Designing YouTube Recommendation Engine.md`; `02. System Design/System Design Thought Process Flow.md`
+- `00_NoteAssets/Images To Move/Pasted image 20240429084212.png` → `04. Backing Service Options/Databases/Choosing Database.md`
+- `00_NoteAssets/Images To Move/Pasted image 20240620142902.png` → **not linked**
+- `00_NoteAssets/Images To Move/Pasted image 20250726231248.png` → **not linked**
+- `00_NoteAssets/Images To Move/Pasted image 20260530132601.png` → **not linked**
+- `00_NoteAssets/Images To Move/Pasted image 20260608155558.png` → **not linked**
+- `00_NoteAssets/Images To Move/crisis-skills-flow.png` → **not linked**
+- `00_NoteAssets/Images To Move/linesStuff.png` → **not linked**
+- `00_NoteAssets/Images To Move/nextjs-visuals-2024.png` → `03. Application Structure/Framework/Frontend/Next.js.md`
+- `00_NoteAssets/Images To Move/proper.png` → **not linked**
+- `00_NoteAssets/Images To Move/unnamed.png` → `04. Backing Service Options/Databases/5 V's of Data.md`
+- `00_NoteAssets/Template/Whiteboard.png` → `01. Fundamentals/Language Overlap/Algorithms & Data Structures/Problem Solving Regimen.md`
+- `01. Fundamentals/Language Overlap/Algorithms & Data Structures/_Coding Whiteboard/209Alt.png` → **not linked**
+- `01. Fundamentals/Language Overlap/Algorithms & Data Structures/_Coding Whiteboard/Backtrack Robo Path.png` → **not linked**
+- `01. Fundamentals/Language Overlap/Algorithms & Data Structures/_Coding Whiteboard/DlLL.png` → **not linked**
+- `01. Fundamentals/Language Overlap/Algorithms & Data Structures/_Coding Whiteboard/DoubleLL.png` → **not linked**
+- `01. Fundamentals/Language Overlap/Algorithms & Data Structures/_Coding Whiteboard/DoublyQueueLinkedList.png` → **not linked**
+- `01. Fundamentals/Language Overlap/Algorithms & Data Structures/_Coding Whiteboard/FibClosureMemiozation.png` → `01. Fundamentals/Language Overlap/Algorithms & Data Structures/Algorithms/Memoization.md`
+- `01. Fundamentals/Language Overlap/Algorithms & Data Structures/_Coding Whiteboard/Fibonacci.png` → **not linked**
+- `01. Fundamentals/Language Overlap/Algorithms & Data Structures/_Coding Whiteboard/FlattenaDictionary.png` → **not linked**
+- `01. Fundamentals/Language Overlap/Algorithms & Data Structures/_Coding Whiteboard/GraphGen.png` → **not linked**
+- `01. Fundamentals/Language Overlap/Algorithms & Data Structures/_Coding Whiteboard/LInkedListGen.png` → **not linked**
+- `01. Fundamentals/Language Overlap/Algorithms & Data Structures/_Coding Whiteboard/Linked List to Tree to Graph.png` → **not linked**
+- `01. Fundamentals/Language Overlap/Algorithms & Data Structures/_Coding Whiteboard/Memoize.png` → **not linked**
+- `01. Fundamentals/Language Overlap/Algorithms & Data Structures/_Coding Whiteboard/TreeGen.png` → **not linked**
+- `01. Fundamentals/Language Overlap/Algorithms & Data Structures/_Coding Whiteboard/bfsRecursive.png` → **not linked**
+- `01. Fundamentals/Language Overlap/Algorithms & Data Structures/_Coding Whiteboard/cyclicSort.png` → **not linked**
+- `01. Fundamentals/Language Overlap/Algorithms & Data Structures/_Coding Whiteboard/fibBottomUpDPForward vs fibBottomUpDPBackward.png` → `01. Fundamentals/Language Overlap/Algorithms & Data Structures/Algorithms/Dynamic programming Patterns.md`
+- `01. Fundamentals/Language Overlap/Algorithms & Data Structures/_Coding Whiteboard/graph.png` → **not linked**
+- `01. Fundamentals/Language Overlap/Algorithms & Data Structures/_Coding Whiteboard/lc101.png` → **not linked**
+- `01. Fundamentals/Language Overlap/Algorithms & Data Structures/_Coding Whiteboard/lc102.png` → **not linked**
+- `01. Fundamentals/Language Overlap/Algorithms & Data Structures/_Coding Whiteboard/lc11.png` → **not linked**
+- `01. Fundamentals/Language Overlap/Algorithms & Data Structures/_Coding Whiteboard/lc121.png` → **not linked**
+- `01. Fundamentals/Language Overlap/Algorithms & Data Structures/_Coding Whiteboard/lc1721.png` → **not linked**
+- `01. Fundamentals/Language Overlap/Algorithms & Data Structures/_Coding Whiteboard/lc1721ALT.png` → **not linked**
+- `01. Fundamentals/Language Overlap/Algorithms & Data Structures/_Coding Whiteboard/lc2.png` → **not linked**
+- `01. Fundamentals/Language Overlap/Algorithms & Data Structures/_Coding Whiteboard/lc202.png` → **not linked**
+- `01. Fundamentals/Language Overlap/Algorithms & Data Structures/_Coding Whiteboard/lc237.png` → **not linked**
+- `01. Fundamentals/Language Overlap/Algorithms & Data Structures/_Coding Whiteboard/lc242.png` → **not linked**
+- `01. Fundamentals/Language Overlap/Algorithms & Data Structures/_Coding Whiteboard/lc268.png` → **not linked**
+- `01. Fundamentals/Language Overlap/Algorithms & Data Structures/_Coding Whiteboard/lc3.png` → **not linked**
+- `01. Fundamentals/Language Overlap/Algorithms & Data Structures/_Coding Whiteboard/lc3nw.png` → **not linked**
+- `01. Fundamentals/Language Overlap/Algorithms & Data Structures/_Coding Whiteboard/lc424Pointer.png` → **not linked**
+- `01. Fundamentals/Language Overlap/Algorithms & Data Structures/_Coding Whiteboard/lc424Window.png` → **not linked**
+- `01. Fundamentals/Language Overlap/Algorithms & Data Structures/_Coding Whiteboard/lc438Conditions.png` → **not linked**
+- `01. Fundamentals/Language Overlap/Algorithms & Data Structures/_Coding Whiteboard/lc448.png` → **not linked**
+- `01. Fundamentals/Language Overlap/Algorithms & Data Structures/_Coding Whiteboard/lc49.png` → **not linked**
+- `01. Fundamentals/Language Overlap/Algorithms & Data Structures/_Coding Whiteboard/lc56.png` → **not linked**
+- `01. Fundamentals/Language Overlap/Algorithms & Data Structures/_Coding Whiteboard/lc57.png` → **not linked**
+- `01. Fundamentals/Language Overlap/Algorithms & Data Structures/_Coding Whiteboard/lc57Alt.png` → **not linked**
+- `01. Fundamentals/Language Overlap/Algorithms & Data Structures/_Coding Whiteboard/lc637.png` → **not linked**
+- `01. Fundamentals/Language Overlap/Algorithms & Data Structures/_Coding Whiteboard/lc647.png` → **not linked**
+- `01. Fundamentals/Language Overlap/Algorithms & Data Structures/_Coding Whiteboard/lc704.png` → **not linked**
+- `01. Fundamentals/Language Overlap/Algorithms & Data Structures/_Coding Whiteboard/lc744.png` → **not linked**
+- `01. Fundamentals/Language Overlap/Algorithms & Data Structures/_Coding Whiteboard/lc904.png` → **not linked**
+- `01. Fundamentals/Language Overlap/Algorithms & Data Structures/_Coding Whiteboard/lc92-p2.png` → **not linked**
+- `01. Fundamentals/Language Overlap/Algorithms & Data Structures/_Coding Whiteboard/lc986.png` → **not linked**
+- `01. Fundamentals/Language Overlap/Algorithms & Data Structures/_Coding Whiteboard/maxIHeapInsertFunc.png` → **not linked**
+- `01. Fundamentals/Language Overlap/Algorithms & Data Structures/_Coding Whiteboard/mergeSort.png` → `01. Fundamentals/Language Overlap/Algorithms & Data Structures/Sorts/Merge sort.md`
+- `01. Fundamentals/Language Overlap/Algorithms & Data Structures/_Coding Whiteboard/minIHeapInsertFunc.png` → **not linked**
+- `01. Fundamentals/Language Overlap/Algorithms & Data Structures/_Coding Whiteboard/minMaxHeapRemoveFunc.png` → **not linked**
+- `01. Fundamentals/Language Overlap/Algorithms & Data Structures/_Coding Whiteboard/postOrderHieghCheck.png` → **not linked**
+- `01. Fundamentals/Language Overlap/Algorithms & Data Structures/_Coding Whiteboard/quicksort.png` → `01. Fundamentals/Language Overlap/Algorithms & Data Structures/Sorts/Quick Sort.md`
+- `01. Fundamentals/Language Overlap/Algorithms & Data Structures/_Coding Whiteboard/singleyQueueLinkedList.png` → **not linked**
+- `01. Fundamentals/Language Overlap/Algorithms & Data Structures/_Coding Whiteboard/treeStruc.png` → **not linked**
+- `04. Backing Service Options/Cloud/AWS Labs/cloudOpt.png` → `04. Backing Service Options/Cloud/On Premises Private Cloud.md`
+- `04. Backing Service Options/Cloud/graphicsToIntergrate/GetImage (11).png` → `00_Mind maps/System Design Template.md`; `02. System Design/System Design Thought Process Flow.md`
+- `04. Backing Service Options/Cloud/graphicsToIntergrate/GetImage (12).png` → `00_Mind maps/System Design Template.md`; `02. System Design/System Design Thought Process Flow.md`
+- `04. Backing Service Options/Cloud/graphicsToIntergrate/GetImage (13).png` → `04. Backing Service Options/Cloud/AWS/AWS Shield.md`
+- `04. Backing Service Options/Cloud/graphicsToIntergrate/GetImage (15).png` → `02. System Design/System Design Thought Process Flow.md`
+- `04. Backing Service Options/Cloud/graphicsToIntergrate/GetImage (16).png` → `02. System Design/Questions/Designing YouTube Recommendation Engine.md`; `02. System Design/System Design Thought Process Flow.md`
+- `04. Backing Service Options/Cloud/graphicsToIntergrate/GetImage (6).png` → **not linked**
+- `04. Backing Service Options/Cloud/graphicsToIntergrate/GetImage (7).png` → **not linked**
+- `04. Backing Service Options/Cloud/graphicsToIntergrate/websocket-api-integration-with-ecs.png` → `04. Backing Service Options/API/rest & Websockets.md`
+- `04. Backing Service Options/Databases/_Schemas/1NF.png` → `04. Backing Service Options/Databases/Normalization & Denormalization.md`
+- `04. Backing Service Options/Databases/_Schemas/2NF.png` → `04. Backing Service Options/Databases/Normalization & Denormalization.md`
+- `04. Backing Service Options/Databases/_Schemas/3NF.png` → `04. Backing Service Options/Databases/Normalization & Denormalization.md`
+- `04. Backing Service Options/Databases/_Schemas/4NF part 1.png` → `04. Backing Service Options/Databases/Normalization & Denormalization.md`
+- `04. Backing Service Options/Databases/_Schemas/4NF part 2.png` → `04. Backing Service Options/Databases/Normalization & Denormalization.md`
+- `04. Backing Service Options/Databases/_Schemas/4NF part 3.png` → `04. Backing Service Options/Databases/Normalization & Denormalization.md`
+- `04. Backing Service Options/Databases/_Schemas/4NF.png` → `04. Backing Service Options/Databases/Normalization & Denormalization.md`
+- `04. Backing Service Options/Databases/_Schemas/Association Relationship.png` → `04. Backing Service Options/Databases/Fact Table.md`
+- `04. Backing Service Options/Databases/_Schemas/Column Relatioships.png` → `04. Backing Service Options/Databases/Normalization & Denormalization.md`
+- `04. Backing Service Options/Databases/_Schemas/Employee relationship.png` → `04. Backing Service Options/Databases/Normalization & Denormalization.md`
+- `04. Backing Service Options/Databases/_Schemas/Exam relationship.png` → `04. Backing Service Options/Databases/Normalization & Denormalization.md`
+- `04. Backing Service Options/Databases/_Schemas/Functional Dependencies.png` → `04. Backing Service Options/Databases/Functional Dependencies.md`
+- `04. Backing Service Options/Databases/_Schemas/Relationship Example Three.png` → `04. Backing Service Options/Databases/Database Table Relationship Types.md`
+- `04. Backing Service Options/Databases/_Schemas/Relationship Example Two.png` → `04. Backing Service Options/Databases/Database Table Relationship Types.md`
+- `04. Backing Service Options/Databases/_Schemas/Relationship Example.png` → `04. Backing Service Options/Databases/Database Table Relationship Types.md`
+- `04. Backing Service Options/Databases/_Schemas/Self-joining.png` → `04. Backing Service Options/Databases/Self-joining relationships.md`
+- `04. Backing Service Options/Databases/_Schemas/relational model.png` → `04. Backing Service Options/Databases/Relationship Reading.md`
+- `06. Networking & Delivery/Devops/Docker/GetImage (8).png` → **not linked**
+- `06. Networking & Delivery/Devops/Docker/GetImage (9).png` → **not linked**
+- `iron-log/docs/images/banner.png` → **not linked**
+- `iron-log/docs/images/board-dark.png` → **not linked**
+- `iron-log/docs/images/board.png` → **not linked**
+- `iron-log/docs/images/editor.png` → **not linked**
+- `iron-log/docs/images/mobile-board.png` → **not linked**
+- `iron-log/docs/images/mobile-log.png` → **not linked**
+- `iron-log/docs/images/mobile-timer.png` → **not linked**
+- `iron-log/docs/images/muscles-detail.png` → **not linked**
+- `iron-log/docs/images/muscles.png` → **not linked**
+- `iron-log/docs/images/progress.png` → **not linked**
+
+## .gif (82)
+
+- `00_NoteAssets/Images To Move/1716391309164.gif` → `04. Backing Service Options/API/API Design Consideration.md`
+- `00_NoteAssets/Images To Move/1716556944362.gif` → `04. Backing Service Options/Library/03.Backend/Apache Kafka.md`
+- `00_NoteAssets/Images To Move/1716911122351.gif` → `02. System Design/System Design Thought Process Flow.md`
+- `00_NoteAssets/Images To Move/1718898320706.gif` → `01. Fundamentals/Web/Idempotent.md`
+- `00_NoteAssets/Images To Move/1718947920180.gif` → `01. Fundamentals/Language Overlap/CPUs.md`
+- `00_NoteAssets/Images To Move/1718967708783.gif` → **not linked**
+- `00_NoteAssets/Images To Move/DBLocking.gif` → `04. Backing Service Options/Databases/Transaction Locking.md`
+- `00_NoteAssets/Images To Move/Database Sharding.gif` → `04. Backing Service Options/Databases/Database Sharding.md`
+- `00_NoteAssets/Images To Move/Gif/Gaara.gif` → **not linked**
+- `00_NoteAssets/Images To Move/Gif/Journey.gif` → **not linked**
+- `00_NoteAssets/Images To Move/Gif/Researching.gif` → **not linked**
+- `00_NoteAssets/Images To Move/Gif/StepByStep.gif` → **not linked**
+- `00_NoteAssets/Images To Move/Gif/Steps.gif` → **not linked**
+- `00_NoteAssets/Images To Move/Gif/Things Todo.gif` → **not linked**
+- `00_NoteAssets/Images To Move/Gif/air.gif` → **not linked**
+- `00_NoteAssets/Images To Move/Gif/airbend.gif` → **not linked**
+- `00_NoteAssets/Images To Move/Gif/attain.gif` → **not linked**
+- `00_NoteAssets/Images To Move/Gif/day.gif` → `00_NoteAssets/Template/OKR/Daily.md`
+- `00_NoteAssets/Images To Move/Gif/dscs.gif` → **not linked**
+- `00_NoteAssets/Images To Move/Gif/eFree.gif` → **not linked**
+- `00_NoteAssets/Images To Move/Gif/earth.gif` → **not linked**
+- `00_NoteAssets/Images To Move/Gif/errhrh.gif` → **not linked**
+- `00_NoteAssets/Images To Move/Gif/factory.gif` → **not linked**
+- `00_NoteAssets/Images To Move/Gif/fear.gif` → **not linked**
+- `00_NoteAssets/Images To Move/Gif/fluid.gif` → **not linked**
+- `00_NoteAssets/Images To Move/Gif/gfb.gif` → **not linked**
+- `00_NoteAssets/Images To Move/Gif/hands.gif` → **not linked**
+- `00_NoteAssets/Images To Move/Gif/liar.gif` → **not linked**
+- `00_NoteAssets/Images To Move/Gif/loose.gif` → **not linked**
+- `00_NoteAssets/Images To Move/Gif/mask.gif` → **not linked**
+- `00_NoteAssets/Images To Move/Gif/medi.gif` → **not linked**
+- `00_NoteAssets/Images To Move/Gif/move.gif` → **not linked**
+- `00_NoteAssets/Images To Move/Gif/pain.gif` → **not linked**
+- `00_NoteAssets/Images To Move/Gif/path.gif` → **not linked**
+- `00_NoteAssets/Images To Move/Gif/prac.gif` → **not linked**
+- `00_NoteAssets/Images To Move/Gif/redirection.gif` → **not linked**
+- `00_NoteAssets/Images To Move/Gif/room.gif` → **not linked**
+- `00_NoteAssets/Images To Move/Gif/rvhrhr.gif` → **not linked**
+- `00_NoteAssets/Images To Move/Gif/steaming.gif` → **not linked**
+- `00_NoteAssets/Images To Move/Gif/text.gif` → **not linked**
+- `00_NoteAssets/Images To Move/Gif/theFuck.gif` → **not linked**
+- `00_NoteAssets/Images To Move/Gif/vis.gif` → **not linked**
+- `00_NoteAssets/Images To Move/Gif/water.gif` → **not linked**
+- `00_NoteAssets/Images To Move/Infographics/Cookie vs session.gif` → **not linked**
+- `00_NoteAssets/Images To Move/Infographics/Data Science Path.gif` → **not linked**
+- `00_NoteAssets/Images To Move/Infographics/Data Stores.gif` → **not linked**
+- `00_NoteAssets/Images To Move/Infographics/Linux Boot Process.gif` → **not linked**
+- `00_NoteAssets/Images To Move/Infographics/Linux File Permissions.gif` → **not linked**
+- `00_NoteAssets/Images To Move/Infographics/Linux File System.gif` → **not linked**
+- `00_NoteAssets/Images To Move/Infographics/Notification System.gif` → **not linked**
+- `00_NoteAssets/Images To Move/Infographics/Python v Java.gif` → **not linked**
+- `00_NoteAssets/Images To Move/Infographics/Rest API Cheatsheet.gif` → **not linked**
+- `00_NoteAssets/Images To Move/Infographics/Rest V Graph.gif` → **not linked**
+- `00_NoteAssets/Images To Move/Infographics/gen app eco.gif` → **not linked**
+- `00_NoteAssets/Images To Move/Pasted Image 20240518111346_327.gif` → `02. System Design/Questions/Designing YouTube Recommendation Engine.md`
+- `00_NoteAssets/Images To Move/Pasted Image 20240520155148_559.gif` → `02. System Design/System Design Thought Process Flow.md`
+- `00_NoteAssets/Images To Move/Peek 2025-05-10 16-19.gif` → **not linked**
+- `00_NoteAssets/Images To Move/WarriorLean.gif` → **not linked**
+- `00_NoteAssets/Images To Move/comp.gif` → **not linked**
+- `00_NoteAssets/Images To Move/ipv4viPV6.gif` → `01. Fundamentals/Web/Protocols/IP Address Structure.md`
+- `00_NoteAssets/Images To Move/tomoe.gif` → **not linked**
+- `00_NoteAssets/_Main/2Osh.gif` → **not linked**
+- `00_NoteAssets/_Main/Banner.gif` → `00_NoteAssets/Template/_Regular  Note.md`; `02. System Design/Failure Modes.md`; `02. System Design/Level Overview/Boundaries of LLD and HLD.md`; `04. Backing Service Options/API/API Contract.md`; `04. Backing Service Options/Databases/DB Stuff.md`; `05. AI/AI Engineering Framework.md`; `05. AI/Agents.md`; `05. AI/COre decesion points.md`; `05. AI/SKills.md`; `05. AI/auto gen agents.md`; `06. Networking & Delivery/Devops/Git Case Sensitivity.md`; `EMERGENCY.md`
+- `00_NoteAssets/_Main/Brain-Patterns-Illustration.gif` → **not linked**
+- `00_NoteAssets/_Main/Dataview.gif` → **not linked**
+- `00_NoteAssets/_Main/Hive Banner.gif` → `Home Dashboard.md`
+- `01. Fundamentals/Language Overlap/1716306326408.gif` → **not linked**
+- `01. Fundamentals/Language/Typescript/jsExp.gif` → **not linked**
+- `02. System Design/piliarsOfsystemDesign.gif` → **not linked**
+- `02. System Design/secureSystemCheatsheet.gif` → **not linked**
+- `02. System Design/systemIntergration.gif` → **not linked**
+- `04. Backing Service Options/API/1736144777562.gif` → **not linked**
+- `04. Backing Service Options/API/API sec.gif` → **not linked**
+- `04. Backing Service Options/Cloud/graphicsToIntergrate/adopt cloud native .gif` → **not linked**
+- `04. Backing Service Options/Cloud/graphicsToIntergrate/cloudMessaging Pattern.gif` → **not linked**
+- `04. Backing Service Options/Cloud/graphicsToIntergrate/ezgif.com-crop.gif` → **not linked**
+- `04. Backing Service Options/ElasticSearchUse.gif` → **not linked**
+- `04. Backing Service Options/Library/Memory/Redis persist data.gif` → **not linked**
+- `04. Backing Service Options/Library/Memory/Redis.gif` → **not linked**
+- `05. AI/1718807887307.gif` → **not linked**
+- `05. AI/Periodic Table.gif` → **not linked**
+- `05. AI/machineLearning.gif` → **not linked**
+
+## .jpeg (27)
+
+- `00_Files/_PDF/Cheatsheet/AI/ChatGpt.jpeg` → **not linked**
+- `00_Files/_PDF/Cheatsheet/Version Control/Git Cheatsheet.jpeg` → **not linked**
+- `00_NoteAssets/Images To Move/1717343041720.jpeg` → `04. Backing Service Options/Cloud/AWS/Cloud Storage.md`
+- `00_NoteAssets/Images To Move/1750593133641.jpeg` → `02. System Design/System Design Thought Process Flow.md`
+- `00_NoteAssets/Images To Move/Data Work.jpeg` → **not linked**
+- `00_NoteAssets/Images To Move/DataTool.jpeg` → **not linked**
+- `00_NoteAssets/Images To Move/Infographics/Cookies.jpeg` → **not linked**
+- `00_NoteAssets/Images To Move/Infographics/Data Transmission.jpeg` → **not linked**
+- `00_NoteAssets/Images To Move/Infographics/Domain Flow.jpeg` → **not linked**
+- `00_NoteAssets/Images To Move/Infographics/Memory&HHD.jpeg` → **not linked**
+- `00_NoteAssets/Images To Move/Infographics/OOP.jpeg` → **not linked**
+- `00_NoteAssets/Images To Move/Infographics/Payment System.jpeg` → **not linked**
+- `00_NoteAssets/Images To Move/Infographics/Piliars Of OOP.jpeg` → **not linked**
+- `00_NoteAssets/Images To Move/Infographics/Process and Thread.jpeg` → **not linked**
+- `00_NoteAssets/Images To Move/Infographics/Proxy v Gateway v Balancer .jpeg` → `03. Application Structure/Web Server Architecture/Reverse proxy vs API gateway vs load balancer.md`
+- `00_NoteAssets/Images To Move/Infographics/chatgpt.jpeg` → **not linked**
+- `00_NoteAssets/Images To Move/open-stance.jpeg` → **not linked**
+- `02. System Design/notification Sys.jpeg` → **not linked**
+- `04. Backing Service Options/API/safe Api.jpeg` → **not linked**
+- `04. Backing Service Options/Databases/_Schemas/3.5NF.jpeg` → `04. Backing Service Options/Databases/Normalization & Denormalization.md`
+- `04. Backing Service Options/Databases/_Schemas/5NF part 1.jpeg` → `04. Backing Service Options/Databases/Normalization & Denormalization.md`
+- `04. Backing Service Options/Databases/_Schemas/5NF part 2.jpeg` → `04. Backing Service Options/Databases/Normalization & Denormalization.md`
+- `04. Backing Service Options/Databases/_Schemas/5NF part 3.jpeg` → `04. Backing Service Options/Databases/Normalization & Denormalization.md`
+- `04. Backing Service Options/Databases/_Schemas/DB UML relationship types.jpeg` → `04. Backing Service Options/Databases/Database Table Relationship Types.md`
+- `04. Backing Service Options/Library/Memory/redisUse.jpeg` → **not linked**
+- `05. AI/1785912439899.jpeg` → **not linked**
+- `05. AI/cluadeGuide.jpeg` → **not linked**
+
+## .svg (20)
+
+- `00_Mind maps/UML/Class Cases Robust P1.svg` → `00_Mind maps/UML & User Stories Flow/Use Case vs User Story.md`
+- `00_Mind maps/UML/Class Cases Robust P2.svg` → `00_Mind maps/UML & User Stories Flow/Use Case vs User Story.md`
+- `00_Mind maps/UML/Class Cases Robust P3.svg` → `00_Mind maps/UML & User Stories Flow/Use Case vs User Story.md`
+- `00_Mind maps/UML/Layer to Package Diagram.svg` → **not linked**
+- `00_Mind maps/UML/Lucidchart App Map.svg` → **not linked**
+- `00_Mind maps/UML/Package Diagram with No-classes.svg` → **not linked**
+- `00_Mind maps/UML/Package Diagram with classes.svg` → **not linked**
+- `00_Mind maps/UML/Park Alert Activity Diagram.svg` → **not linked**
+- `00_Mind maps/UML/Requirement life cycle.svg` → **not linked**
+- `00_NoteAssets/Images To Move/Glaciar.svg` → `00_Mind maps/System Design Template.md`; `02. System Design/System Design Thought Process Flow.md`
+- `00_NoteAssets/Images To Move/Ink/Writing/2025.2.2 - 8.42am.svg` → `00 Stuff/_Tech Clipboard.md`
+- `00_NoteAssets/Images To Move/SnowMobile.svg` → `00_Mind maps/System Design Template.md`; `02. System Design/System Design Thought Process Flow.md`
+- `00_NoteAssets/Images To Move/Snowball.svg` → `00_Mind maps/System Design Template.md`; `02. System Design/System Design Thought Process Flow.md`
+- `00_NoteAssets/Images To Move/test.svg` → **not linked**
+- `02. System Design/Questions/Designing YouTube Recommendation Engine.svg` → **not linked**
+- `02. System Design/Questions/Designing YouTube Upload.svg` → **not linked**
+- `02. System Design/System Design Thought Process Flow.svg` → **not linked**
+- `_Excalidraw/Scripts/Downloaded/Auto Draw for Pen.svg` → **not linked**
+- `_Excalidraw/Scripts/Downloaded/Create DrawIO file.svg` → **not linked**
+- `_Excalidraw/Scripts/Downloaded/Slideshow.svg` → **not linked**
+
+## .jpg (16)
+
+- `00_Files/_PDF/Cheatsheet/AI/Prompt.jpg` → **not linked**
+- `00_Files/_PDF/Cheatsheet/Excel Formulas Cheat Sheet.jpg` → **not linked**
+- `00_Files/_PDF/Cheatsheet/OS/Excel Shortcut.jpg` → **not linked**
+- `00_NoteAssets/Images To Move/Gif/ERadiation.jpg` → **not linked**
+- `00_NoteAssets/Images To Move/IMG-20190314-WA0000.jpg` → **not linked**
+- `00_NoteAssets/Images To Move/Infographics/NPR System.jpg` → **not linked**
+- `00_NoteAssets/Images To Move/Infographics/StackOverflow.jpg` → **not linked**
+- `00_NoteAssets/Images To Move/Infographics/System Design BluePrint.jpg` → `02. System Design/System Design Thought Process Flow.md`
+- `00_NoteAssets/Images To Move/Pasted Image 20240504132918_569.jpg` → `02. System Design/Questions/Designing YouTube Recommendation Engine.md`
+- `00_NoteAssets/Images To Move/anatomychart1.jpg` → **not linked**
+- `00_NoteAssets/Images To Move/gettyimages-1332961304-612x612.jpg` → **not linked**
+- `00_NoteAssets/Images To Move/hivemind.jpg` → **not linked**
+- `00_NoteAssets/Images To Move/mirroAllign.jpg` → **not linked**
+- `00_NoteAssets/Images To Move/nlnll.jpg` → **not linked**
+- `00_NoteAssets/_Main/Archetecture.jpg` → `00_Dashboard/_Architecture Dashboard.md`
+- `04. Backing Service Options/Cloud/graphicsToIntergrate/Screen Shot 2022-01-27 at 3.40.13 PM.jpg` → **not linked**

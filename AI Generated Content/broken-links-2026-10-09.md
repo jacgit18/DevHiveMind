@@ -1,6 +1,6 @@
 # Broken wikilinks — 2026-10-09
 
-Scanned 1002 notes (skipped .stversions, templates). 16 distinct broken targets.
+Scanned 1003 notes (skipped .stversions, templates). 16 distinct broken targets.
 
 ## Auto-fixable: target exists at a new path (0)
 
