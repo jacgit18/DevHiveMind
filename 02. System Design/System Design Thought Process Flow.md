@@ -54,7 +54,7 @@ Throughout the designing of the system you can discuss [[02. System Design/Fault
 ### Step 1: Requirements Gathering 
 > Establish a Understanding and Design Scope of problem (3 - 10 minutes)
 
-During this phase, it's pivotal to establish the system's scope while gathering both [[Business Requirements Life cycle#Requirement Types |functional and non-functional business requirements]] prioritizing functional also for more senior roles your interviewing for you will need to get better at non-functional requirements for system design interviews.
+During this phase, it's pivotal to establish the system's scope while gathering both functional and non-functional business requirements prioritizing functional also for more senior roles your interviewing for you will need to get better at non-functional requirements for system design interviews.
 
 For instance, when tasked with designing an Instagram Reels feature, it's essential to deconstruct the problem into distinct use cases, delineating interactions among system components. Key requirements such as anticipated traffic, data volume, latency, and scalability should be identified. Inquire about the [[02. System Design/Userbase]] type, as this insight aids in resource estimation and governance considerations, especially regarding scalability implications, such as underage user base scenarios. Understanding potential constraints and bottlenecks that may emerge with an expanding user base is imperative. This insight informs decisions regarding database considerations, determining whether a NoSQL or SQL database aligns with specific needs and data characteristics.
 

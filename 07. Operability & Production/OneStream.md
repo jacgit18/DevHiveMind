@@ -10,7 +10,7 @@ Purpose: This documentation discusses work done at current company.
 Status: Perpetual
 Started: 2023-12-14
 EditDate:
-Relates: "[[RTIC General AWS Infrastructure]]"
+Relates: "RTIC General AWS Infrastructure"
 dg-publish:
 ---
 # OneStream Overview  

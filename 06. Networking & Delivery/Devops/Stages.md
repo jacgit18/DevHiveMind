@@ -24,7 +24,7 @@ In essence, DevOps aims to harmonize and enhance the entire software development
 
 ![[Development Stages to Production.png]]
 
-DevOps facilitates rapid releases, but for stability, the role of a [[Site Reliability Engineer]]is crucial.
+DevOps facilitates rapid releases, but for stability, the role of a Site Reliability Engineeris crucial.
 
 **Feedback Loop:**
 A feedback loop is exemplified when unit tests within the pipeline identify issues, signaling that the code isn't production-ready.

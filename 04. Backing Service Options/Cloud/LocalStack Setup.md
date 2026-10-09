@@ -11,7 +11,7 @@ Purpose: This documentation discusses
 Status:
 Started: 2025-02-25
 EditDate:
-Relates: "[[PTP Config Workflow]]"
+Relates: "PTP Config Workflow"
 Peer Reviewed: 0
 dg-publish:
 ---

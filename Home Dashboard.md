@@ -13,7 +13,7 @@ dg-publish: true
 > **Even if we only did what we were capable of, we'd astound ourselves.** Start with small, incremental steps, build a consistent rhythm, sustain it, then adapt your tempo to the task at hand.
 
 ## Jump To
-[[Architecture Dashboard|🏛️ Architecture]] · [[Goal Dashboard|🎯 Goals]] · [[_Tech Clipboard|📋 Tech Clipboard]] · [[README|📖 README]]
+[[Architecture Dashboard|🏛️ Architecture]] · 🎯 Goals · [[_Tech Clipboard|📋 Tech Clipboard]] · [[README|📖 README]]
 
 ⌨️ `Ctrl+O` switcher (recent files first) · `Ctrl+Shift+F` search · `Ctrl+G` graph
 

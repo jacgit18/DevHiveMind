@@ -10,7 +10,7 @@ Purpose: This documentation discusses Microservices and Monolithic architecture.
 Status: Refinement
 Started: 
 EditDate: 2024-03-07
-Relates: "[[Project Structure]]"
+Relates: "Project Structure"
 Peer Reviewed: 0
 dg-publish: true
 ---
