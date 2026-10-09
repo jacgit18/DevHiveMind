@@ -14,7 +14,7 @@ Purpose: This documentation discusses Sharding & Pagination relationship.
 Status: Refinement
 Started:
 EditDate:
-Relates: "[[Architecture/04. Backing Service Options/Databases/Database Sharding]]"
+Relates: "[[04. Backing Service Options/Databases/Database Sharding]]"
 Peer Reviewed: 0
 dg-publish:
 ---

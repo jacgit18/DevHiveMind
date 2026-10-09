@@ -18,7 +18,7 @@ dg-publish:
 ---
 ### Using Context in React:
 
-When dealing with nested components and the need to pass props to deeply nested components, manual [[Architecture/04. Backing Service Options/Library/02.Frontend/React/Props#Prop-Drilling and Modification|prop drilling]] can lead to performance issues. This process, known as prop drilling, can become cumbersome.
+When dealing with nested components and the need to pass props to deeply nested components, manual [[04. Backing Service Options/Library/02.Frontend/React/Props#Prop-Drilling and Modification|prop drilling]] can lead to performance issues. This process, known as prop drilling, can become cumbersome.
 
 **Context API and useContext Hook:**
 

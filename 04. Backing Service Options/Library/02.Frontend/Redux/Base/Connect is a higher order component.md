@@ -15,7 +15,7 @@ Purpose: This documentation is a code snippet showing connect higher order compo
 Status: Final
 Started:
 EditDate: 2024-02-07
-Relates: "[[Architecture/04. Backing Service Options/Library/02.Frontend/React/Props#Higher Order Components (HOC) and Render Prop Pattern|HOC]]"
+Relates: "[[04. Backing Service Options/Library/02.Frontend/React/Props#Higher Order Components (HOC) and Render Prop Pattern|HOC]]"
 Peer Reviewed: 1
 dg-publish:
 ---

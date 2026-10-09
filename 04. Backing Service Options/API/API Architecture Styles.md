@@ -12,7 +12,7 @@ Relates:
 Peer Reviewed: 0
 dg-publish:
 ---
-![[Architecture/04. Backing Service Options/API/_Infographic/API Architectural Styles.gif]]
+![[04. Backing Service Options/API/_Infographic/API Architectural Styles.gif]]
 
 #todo/High/Dev 
 - [ ] find notes related and condense and remove repetitiveness in vault  

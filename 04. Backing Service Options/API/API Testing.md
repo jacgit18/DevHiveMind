@@ -13,7 +13,7 @@ Relates:
 Peer Reviewed: 0
 dg-publish: true
 ---
-![[Architecture/04. Backing Service Options/API/_Infographic/Api Testing.gif]]
+![[04. Backing Service Options/API/_Infographic/Api Testing.gif]]
 
 API (Application Programming Interface) testing involves assessing the functionality, reliability, performance, and security of an application's programming interfaces. Here's a detailed breakdown:
 

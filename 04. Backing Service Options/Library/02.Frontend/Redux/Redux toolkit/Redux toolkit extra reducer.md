@@ -12,7 +12,7 @@ Purpose: This documentation is a code snippet showing how extra reducers work.
 Status: Final
 Started:
 EditDate: 2024-02-08
-Relates: "[[Architecture/04. Backing Service Options/Library/02.Frontend/Redux/Multiple reducers/cakeReducer]]"
+Relates: "[[04. Backing Service Options/Library/02.Frontend/Redux/Multiple reducers/cakeReducer]]"
 Peer Reviewed: 1
 dg-publish:
 ---

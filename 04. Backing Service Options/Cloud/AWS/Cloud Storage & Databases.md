@@ -7,11 +7,11 @@ Purpose: This documentation discusses
 Status:
 Started:
 EditDate:
-Relates: "[[Architecture/02. System Design/Questions/Designing YouTube Recommendation Engine]]"
+Relates: "[[02. System Design/Questions/Designing YouTube Recommendation Engine]]"
 Peer Reviewed: 0
 dg-publish:
 ---
-## [[Architecture/04. Backing Service Options/Cloud/AWS/Cloud Storage|S3]] vs Database
+## [[04. Backing Service Options/Cloud/AWS/Cloud Storage|S3]] vs Database
 
 The choice between using Amazon S3 and a database (such as MongoDB or PostgreSQL) depends on the specific requirements and characteristics of the data being stored. Here are scenarios where you might choose one over the other:
 

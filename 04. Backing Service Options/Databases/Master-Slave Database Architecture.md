@@ -10,7 +10,7 @@ author:
 Status: Refinement
 Started: 2024-01-08
 EditDate:
-Relates: "[[Architecture/02. System Design/Fault Tolerance]]"
+Relates: "[[02. System Design/Fault Tolerance]]"
 Purpose: This documentation discusses
 Peer Reviewed: 0
 dg-publish:

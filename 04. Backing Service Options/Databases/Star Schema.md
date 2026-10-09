@@ -9,13 +9,13 @@ Purpose: This documentation discusses Star schema.
 Status: Done
 Started:
 EditDate: 2024-03-06
-Relates: "[[Architecture/04. Backing Service Options/Databases/Normalization & Denormalization]]"
+Relates: "[[04. Backing Service Options/Databases/Normalization & Denormalization]]"
 Peer Reviewed: 0
 dg-publish:
 ---
-A star schema in data warehousing serves as an efficient organizational structure, primarily composed of  [[Architecture/04. Backing Service Options/Databases/Fact Table|Fact tables]] and [[Architecture/04. Backing Service Options/Databases/Dimension Table]]. Here's an in-depth exploration of its components, types of tables, and associated challenges:
+A star schema in data warehousing serves as an efficient organizational structure, primarily composed of  [[04. Backing Service Options/Databases/Fact Table|Fact tables]] and [[04. Backing Service Options/Databases/Dimension Table]]. Here's an in-depth exploration of its components, types of tables, and associated challenges:
 
-consider things like [[Architecture/04. Backing Service Options/Databases/Database Table Relationship Types]] and [[Architecture/04. Backing Service Options/Databases/DBMS Keys]]
+consider things like [[04. Backing Service Options/Databases/Database Table Relationship Types]] and [[04. Backing Service Options/Databases/DBMS Keys]]
 
 ##### Core Components of a Star Schema
 

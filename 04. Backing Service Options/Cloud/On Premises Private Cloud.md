@@ -6,11 +6,11 @@ Purpose: This documentation discusses
 Status: Done
 Started: 2024-03-21
 EditDate:
-Relates: "[[Architecture/04. Backing Service Options/Cloud/AWS/Cloud Storage#AWS Storage Gateway|AWS Storage Gateway]]"
+Relates: "[[04. Backing Service Options/Cloud/AWS/Cloud Storage#AWS Storage Gateway|AWS Storage Gateway]]"
 Peer Reviewed: 0
 dg-publish: true
 ---
-![[Architecture/04. Backing Service Options/Cloud/AWS Labs/cloudOpt.png]]
+![[04. Backing Service Options/Cloud/AWS Labs/cloudOpt.png]]
 Here are some technologies and steps commonly used to set up and manage an on-premises private cloud:
 
 1. **Virtualization Technology**: Utilize virtualization software such as VMware vSphere, Microsoft Hyper-V, or KVM (Kernel-based Virtual Machine) to create virtual instances of servers, storage, and networking components.

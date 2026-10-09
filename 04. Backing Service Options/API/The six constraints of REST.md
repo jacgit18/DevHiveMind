@@ -14,7 +14,7 @@ Relates:
 Peer Reviewed: 0
 dg-publish: true
 ---
-![[Architecture/04. Backing Service Options/API/_Gif/six-paths-of-pain-naruto-w2mrtj5sk0ccusoz.gif]]
+![[04. Backing Service Options/API/_Gif/six-paths-of-pain-naruto-w2mrtj5sk0ccusoz.gif]]
 
 ### Decoding the Relationship Between REST and HTTP
 

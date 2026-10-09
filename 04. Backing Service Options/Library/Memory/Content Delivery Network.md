@@ -10,7 +10,7 @@ Purpose: This documentation discusses Content Delivery Network.
 Status: Done
 Started:
 EditDate: 2024-03-06
-Relates: "[[Architecture/04. Backing Service Options/Library/Memory/Caches]]"
+Relates: "[[04. Backing Service Options/Library/Memory/Caches]]"
 Peer Reviewed: 0
 dg-publish: false
 ---

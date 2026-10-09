@@ -11,7 +11,7 @@ Purpose: This documentation discusses the intricacies of using props and states 
 Status: Done
 Started:
 EditDate: 2024-02-06
-Relates: "[[Architecture/04. Backing Service Options/Library/02.Frontend/React/Props]]"
+Relates: "[[04. Backing Service Options/Library/02.Frontend/React/Props]]"
 Peer Reviewed: 0
 dg-publish:
 ---

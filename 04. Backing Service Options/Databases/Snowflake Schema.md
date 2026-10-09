@@ -9,7 +9,7 @@ Purpose: This documentation discusses Snowflake Schema.
 Status: Done
 Started:
 EditDate: 2024-03-06
-Relates: "[[Architecture/04. Backing Service Options/Databases/Normalization & Denormalization]]"
+Relates: "[[04. Backing Service Options/Databases/Normalization & Denormalization]]"
 Peer Reviewed: 0
 dg-publish:
 ---
@@ -27,7 +27,7 @@ dg-publish:
 - Ideal for Data Warehouses: Well-suited for data warehousing environments where efficiency and maintenance are critical.
 
 #### Snowflake Schema:
-consider things like [[Architecture/04. Backing Service Options/Databases/Database Table Relationship Types]] and [[Architecture/04. Backing Service Options/Databases/DBMS Keys]]
+consider things like [[04. Backing Service Options/Databases/Database Table Relationship Types]] and [[04. Backing Service Options/Databases/DBMS Keys]]
 
 **Overview:**
 - Purpose: Normalize denormalized data in a star schema, addressing write command slowdowns.

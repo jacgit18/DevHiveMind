@@ -16,7 +16,7 @@ dg-publish:
 ---
 
 
-![[Architecture/04. Backing Service Options/Databases/_Schemas/Functional Dependencies.png]]
+![[04. Backing Service Options/Databases/_Schemas/Functional Dependencies.png]]
 
 A **functional dependency (FD)** defines a relationship between two sets of attributes in a relational database. Specifically, for any two tuples `t1` and `t2` in relation `r`, if `t1[X] = t2[X]`, then it follows that `t1[Y] = t2[Y]`. In essence, this implies that the value of the X component of a tuple uniquely determines the value of the Y component.
 

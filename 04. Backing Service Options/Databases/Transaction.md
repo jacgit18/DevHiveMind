@@ -13,7 +13,7 @@ Relates:
 Peer Reviewed: 0
 dg-publish: true
 ---
-A database transaction is  a sequence of operations that is performed on a database that can also be performed as a single unit of work typically through [[Architecture/04. Backing Service Options/Databases/Stored Procedure]] or alternative methods.
+A database transaction is  a sequence of operations that is performed on a database that can also be performed as a single unit of work typically through [[04. Backing Service Options/Databases/Stored Procedure]] or alternative methods.
 
 PostgreSQL ensures that all operations within a transaction either complete entirely or none of them do.
 
@@ -25,10 +25,10 @@ Transactions typically begin with a BEGIN command and end with a COMMIT or ROLLB
 - **Commit:** Marks the successful end of a transaction, indicating that changes should become permanent.
 - **Rollback:** Marks the unsuccessful end, discarding any changes made since the beginning of the transaction.
 
-### [[Architecture/04. Backing Service Options/Databases/Distributed Transactions]]
+### [[04. Backing Service Options/Databases/Distributed Transactions]]
 Distributed transactions are transactions that span multiple networked databases or resources. They ensure that a transaction affecting multiple systems can be completed as a single unit of work, maintaining data consistency and integrity across all involved systems.
 
-### [[Architecture/04. Backing Service Options/Databases/Transaction Locking]]
+### [[04. Backing Service Options/Databases/Transaction Locking]]
 Database transaction locking is a mechanism used to ensure data integrity and consistency when multiple transactions occur simultaneously in a database. 
 
 

@@ -9,11 +9,11 @@ Purpose: This documentation discusses locations in your code base were you can m
 Status: Done
 Started:
 EditDate: 2024-03-03
-Relates: "[[Architecture/Design & Principles/Model Patterns]]"
+Relates: "[[02. System Design/Architecture Styles/Model Patterns]]"
 Peer Reviewed: 0
 dg-publish: true
 ---
-When making [[Architecture/04. Backing Service Options/API/API Call]]  on the backend it is typically done in the controller and service layers, there are other layers in which it might make sense to make API calls based on the design and requirements of your application. Here are a few examples:
+When making [[04. Backing Service Options/API/API Call]]  on the backend it is typically done in the controller and service layers, there are other layers in which it might make sense to make API calls based on the design and requirements of your application. Here are a few examples:
 
 1. **Repository/Data Access Layer:**
    - In some architectures, especially those following the Repository pattern, API calls related to data retrieval and persistence can be placed in the repository or data access layer.

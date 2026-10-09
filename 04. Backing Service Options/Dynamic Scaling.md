@@ -13,7 +13,7 @@ Purpose: This documentation discusses Dynamic scaling.
 Status: Refinement
 Started: 2024-02-25
 EditDate: 2024-03-06
-Relates: "[[Architecture/02. System Design/Vertical vs Horizontal Scaling]]"
+Relates: "[[02. System Design/Vertical vs Horizontal Scaling]]"
 Peer Reviewed: 0
 dg-publish:
 ---

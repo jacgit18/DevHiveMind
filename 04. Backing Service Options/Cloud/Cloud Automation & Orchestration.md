@@ -21,7 +21,7 @@ This is a categorized breakdown of AWS services that **provision, automate, or m
 
 ---
 
-## **1. Infrastructure as Code ([[Architecture/Delivery/IAC|IAC]]) & Automation**
+## **1. Infrastructure as Code ([[06. Networking & Delivery/IAC|IAC]]) & Automation**
 
 Services that define, provision, and manage AWS resources through templates or automation.
 

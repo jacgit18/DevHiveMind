@@ -13,11 +13,11 @@ Purpose: This documentation discusses things to consider when deciding on a data
 Status: Done
 Started:
 EditDate: 2024-03-06
-Relates: "[[Architecture/04. Backing Service Options/Databases/Schema Design]]"
+Relates: "[[04. Backing Service Options/Databases/Schema Design]]"
 Peer Reviewed: 0
 dg-publish:
 ---
-![[Architecture/04. Backing Service Options/Databases/_Infographic/Star vs Snow.png]]
+![[04. Backing Service Options/Databases/_Infographic/Star vs Snow.png]]
 #### Factors to Consider:
 
 The decision between a snowflake and star schema for a supply and demand skills matrix depends on various factors:

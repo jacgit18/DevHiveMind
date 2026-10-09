@@ -25,7 +25,7 @@ A database schema, pronounced SKEE-mah, serves as the organization or structure 
 
 ![[DBModels.gif]]
 **Varieties of Database Schemas:**
-- Six types: flat model(Excel), hierarchical model(JSON or XML), network model, relational model, [[Architecture/04. Backing Service Options/Databases/Star Schema]] and [[Architecture/04. Backing Service Options/Databases/Snowflake Schema]].
+- Six types: flat model(Excel), hierarchical model(JSON or XML), network model, relational model, [[04. Backing Service Options/Databases/Star Schema]] and [[04. Backing Service Options/Databases/Snowflake Schema]].
 - Relational databases, common in SQL, primarily use the term "database schema."
 - Non-relational (NoSQL) databases lack a schema in the traditional sense but have an underlying structure.
   

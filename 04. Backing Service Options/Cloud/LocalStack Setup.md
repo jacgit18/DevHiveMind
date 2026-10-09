@@ -29,7 +29,7 @@ This allows for a more streamlined approach when defining IAM roles in LocalStac
 - [ ] [How to Setup AWS Locally Using LocalStack Without Spending a Buck \| by Ben Meehan \| Medium](https://medium.com/@ben.meehan_27368/how-to-setup-aws-locally-using-localstack-without-spending-a-buck-1c6e20bce8)
 - [ ] [A guide to using LocalStack — Running AWS Locally \| by Deepika Juneja \| Medium](https://deepikajuneja.medium.com/a-guide-to-using-localstack-running-aws-locally-cd68744e2c94)
 
-Follow [[Architecture/04. Backing Service Options/Cloud/AWS/Managing IAM]] structure when defining json files along with [[Architecture/04. Backing Service Options/Cloud/Cloud Security Best Practices]]
+Follow [[04. Backing Service Options/Cloud/AWS/Managing IAM]] structure when defining json files along with [[04. Backing Service Options/Cloud/Cloud Security Best Practices]]
 
 ## 1. Create a Lambda Function  
 - Packages a Python script (`lambda-function.py`) into a ZIP file.

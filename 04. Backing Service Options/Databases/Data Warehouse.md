@@ -11,11 +11,11 @@ Relates:
 Peer Reviewed: 0
 dg-publish:
 ---
-![[Architecture/04. Backing Service Options/Databases/_Infographic/Data.png]]
+![[04. Backing Service Options/Databases/_Infographic/Data.png]]
 
 A data warehouse is a centralized repository that integrates data from multiple sources within an organization. It is designed to support business intelligence (BI) and analytics applications by providing a comprehensive and unified view of an organization's data.
 
-![[Architecture/04. Backing Service Options/Databases/_Infographic/Data Concepts.gif]]
+![[04. Backing Service Options/Databases/_Infographic/Data Concepts.gif]]
 
 Data warehouses are important for several reasons:
 

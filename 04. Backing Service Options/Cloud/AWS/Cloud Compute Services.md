@@ -7,12 +7,12 @@ Purpose: This documentation discusses
 Status:
 Started: 2024-03-30
 EditDate:
-Relates: "[[Architecture/04. Backing Service Options/Cloud/Cloud Automation & Orchestration]]"
+Relates: "[[04. Backing Service Options/Cloud/Cloud Automation & Orchestration]]"
 Peer Reviewed: 0
 dg-publish:
 ---
 ## Amazon EC2
-![[Architecture/04. Backing Service Options/Cloud/_Infographic/Ec2 lifecycle.png]]
+![[04. Backing Service Options/Cloud/_Infographic/Ec2 lifecycle.png]]
 
 ## **Amazon EC2 Instance Types and Use Cases**
 

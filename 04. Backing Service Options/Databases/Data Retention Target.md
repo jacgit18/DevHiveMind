@@ -11,7 +11,7 @@ Purpose: This documentation discusses what retention targets are in system desig
 Status: Done
 Started:
 EditDate: 2024-03-06
-Relates: "[[Architecture/04. Backing Service Options/Databases/Database data governance]]"
+Relates: "[[04. Backing Service Options/Databases/Database data governance]]"
 Peer Reviewed: 0
 dg-publish:
 ---

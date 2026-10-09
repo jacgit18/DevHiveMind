@@ -11,7 +11,7 @@ Purpose: This documentation discusses componentWillUnmount() lifecycle method.
 Status: Done
 Started:
 EditDate: 2024-02-07
-Relates: "[[Architecture/04. Backing Service Options/Library/02.Frontend/React/Lifecycle methods]]"
+Relates: "[[04. Backing Service Options/Library/02.Frontend/React/Lifecycle methods]]"
 Peer Reviewed: 0
 dg-publish:
 ---

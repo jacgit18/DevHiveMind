@@ -10,7 +10,7 @@ Purpose: This documentation discusses
 Status:
 Started:
 EditDate:
-Relates: "[[Architecture/04. Backing Service Options/Cloud/Cloud Security Best Practices]]"
+Relates: "[[04. Backing Service Options/Cloud/Cloud Security Best Practices]]"
 Peer Reviewed: 0
 dg-publish:
 ---
@@ -22,7 +22,7 @@ Here’s a **detailed step-by-step guide** on **Managing AWS IAM Roles and Polic
 
 IAM policies define what **actions** a user, group, or role is **allowed or denied** to perform on AWS resources.
 
-A trust policy defines **who** can **assume** an IAM role. It specifies the **[[Architecture/04. Backing Service Options/Cloud/IAM Principles]]** (e.g., AWS services or users) allowed to assume the role and what actions they are allowed to perform once they have assumed the role.
+A trust policy defines **who** can **assume** an IAM role. It specifies the **[[04. Backing Service Options/Cloud/IAM Principles]]** (e.g., AWS services or users) allowed to assume the role and what actions they are allowed to perform once they have assumed the role.
 
 Trust policies are attached to **IAM roles**. When a service (like AWS Lambda, EC2, or an external user) needs to perform actions on your behalf, it needs to "assume" a role that has the necessary permissions.
 

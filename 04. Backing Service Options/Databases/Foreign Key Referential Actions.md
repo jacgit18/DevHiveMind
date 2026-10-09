@@ -13,7 +13,7 @@ Relates:
 Peer Reviewed: 0
 dg-publish:
 ---
-[[Architecture/04. Backing Service Options/Databases/Database Table Relationship Types#Referential Integrity|Referential integrity]]  is constrained by foreign keys, ensuring that values in a particular table match values that are found in a different table. 
+[[04. Backing Service Options/Databases/Database Table Relationship Types#Referential Integrity|Referential integrity]]  is constrained by foreign keys, ensuring that values in a particular table match values that are found in a different table. 
 
 These referential actions reinforce the integrity of the table structure, reducing the possibility of error by ensuring that referenced columns only contain unique sets of values. 
 

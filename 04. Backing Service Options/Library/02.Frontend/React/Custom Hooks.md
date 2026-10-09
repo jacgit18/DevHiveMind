@@ -13,11 +13,11 @@ Purpose: This documentation discusses what custom hooks are.
 Status: Done
 Started:
 EditDate: 2024-02-06
-Relates: "[[Architecture/04. Backing Service Options/Library/02.Frontend/React/Hooks]]"
+Relates: "[[04. Backing Service Options/Library/02.Frontend/React/Hooks]]"
 Peer Reviewed: 0
 dg-publish:
 ---
-A custom hook in JavaScript is essentially a function prefixed with "use." It has the flexibility to utilize other hooks as necessary. Custom hooks serve as a way to share logic between multiple components, offering an alternative to Higher-Order Components ([[Architecture/04. Backing Service Options/Library/02.Frontend/React/Props#Higher Order Components (HOC) and Render Prop Pattern|HOCs]]) and Render Props.
+A custom hook in JavaScript is essentially a function prefixed with "use." It has the flexibility to utilize other hooks as necessary. Custom hooks serve as a way to share logic between multiple components, offering an alternative to Higher-Order Components ([[04. Backing Service Options/Library/02.Frontend/React/Props#Higher Order Components (HOC) and Render Prop Pattern|HOCs]]) and Render Props.
 
 Here's an example of a custom hook that manages a simple counter:
 

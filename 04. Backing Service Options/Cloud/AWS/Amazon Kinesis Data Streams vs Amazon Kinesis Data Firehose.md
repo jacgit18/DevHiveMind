@@ -12,11 +12,11 @@ Purpose: This documentation discusses
 Status:
 Started: 2024-04-05
 EditDate:
-Relates: "[[Architecture/02. System Design/Questions/Designing YouTube Recommendation Engine]]"
+Relates: "[[02. System Design/Questions/Designing YouTube Recommendation Engine]]"
 Peer Reviewed: 0
 dg-publish:
 ---
-Both Amazon Kinesis Data Streams and Amazon Kinesis Data Firehose offer real-time data processing capabilities, but they serve slightly different use cases and have different pricing models. Also [[Architecture/04. Backing Service Options/Library/03.Backend/Apache Kafka]] is a alternative to these service. In the context of a youtube recommendation engine you can process data like video views, likes, dislikes, comments, and subscriptions.   
+Both Amazon Kinesis Data Streams and Amazon Kinesis Data Firehose offer real-time data processing capabilities, but they serve slightly different use cases and have different pricing models. Also [[04. Backing Service Options/Library/03.Backend/Apache Kafka]] is a alternative to these service. In the context of a youtube recommendation engine you can process data like video views, likes, dislikes, comments, and subscriptions.   
 
 Here's a comparison:
 

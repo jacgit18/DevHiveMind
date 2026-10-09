@@ -7,7 +7,7 @@ Purpose: This documentation discusses
 Status:
 Started:
 EditDate:
-Relates: "[[Architecture/04. Backing Service Options/Cloud/Cloud Service Model]]"
+Relates: "[[04. Backing Service Options/Cloud/Cloud Service Model]]"
 Peer Reviewed: 0
 dg-publish:
 ---

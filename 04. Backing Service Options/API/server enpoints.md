@@ -7,7 +7,7 @@ Purpose: This documentation discusses
 Status:
 Started: 2024-06-09
 EditDate:
-Relates: "[[Architecture/04. Backing Service Options/API/Non-API Endpoints]]"
+Relates: "[[04. Backing Service Options/API/Non-API Endpoints]]"
 Peer Reviewed: 0
 dg-publish:
 ---

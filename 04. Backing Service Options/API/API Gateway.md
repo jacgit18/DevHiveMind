@@ -15,7 +15,7 @@ Relates:
 Peer Reviewed: 0
 dg-publish: false
 ---
-![[Architecture/04. Backing Service Options/API/_Infographic/Api Gateway.gif]]
+![[04. Backing Service Options/API/_Infographic/Api Gateway.gif]]
 An API Gateway is a server that acts as an API front-end, receiving API requests, enforcing throttling and security policies, passing requests to the back-end service, and then passing the response back to the requester. It often acts as an entry point for microservices or other backend services. It also can be used to implement a [[System Design Interview An Insider’s Guide Volume 1.pdf#page=54&selection=0,79,4,23|Rate Limiter]]
   
 Here are some key functionalities and reasons for using an API Gateway:  
@@ -47,7 +47,7 @@ Here are some key functionalities and reasons for using an API Gateway:
 9. **Service Composition:**  
 - In some cases, API Gateways can aggregate data from multiple services into a single response. This is known as service composition and helps in reducing the number of requests clients need to make to fulfill a specific use case.  
 
-![[Architecture/04. Backing Service Options/API/_Infographic/GatewayFunction.gif]]
+![[04. Backing Service Options/API/_Infographic/GatewayFunction.gif]]
   
 In addition to these functionalities, API Gateways play a crucial role in maintaining consistency, security, and performance across an API ecosystem. They serve as a central point of control and management for API-related concerns in distributed and microservices architectures.
 

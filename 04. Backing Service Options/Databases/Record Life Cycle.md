@@ -9,7 +9,7 @@ Purpose: This documentation discusses database record life cycle.
 Status: Capture
 Started:
 EditDate:
-Relates: "[[Architecture/04. Backing Service Options/Databases/Database data governance]]"
+Relates: "[[04. Backing Service Options/Databases/Database data governance]]"
 Peer Reviewed: 0
 dg-publish:
 ---

@@ -11,7 +11,7 @@ Purpose: This documentation discusses rendering in react.
 Status: Done
 Started:
 EditDate: 2024-02-07
-Relates: "[[Architecture/04. Backing Service Options/Library/02.Frontend/React/Lifecycle methods]]"
+Relates: "[[04. Backing Service Options/Library/02.Frontend/React/Lifecycle methods]]"
 Peer Reviewed: 0
 dg-publish:
 ---
@@ -32,7 +32,7 @@ During the Render phase:
 
 As you go down the component tree there is a check that happens where components are flagged for re-render:
 
-- Components can self-flag for an update by calling [[Architecture/04. Backing Service Options/Library/02.Frontend/React/useState]] or [[Architecture/04. Backing Service Options/Library/02.Frontend/React/useReducer]].
+- Components can self-flag for an update by calling [[04. Backing Service Options/Library/02.Frontend/React/useState]] or [[04. Backing Service Options/Library/02.Frontend/React/useReducer]].
 - React invokes `createElement` for flagged components, converting them to React elements and stores that render output.
 - The new elements are compared with those from the last render.
 - A list of changes to the DOM is created and handed to the commit phase for application.
@@ -43,7 +43,7 @@ As you go down the component tree there is a check that happens where components
 
 In React, when updating state for objects or arrays, it's crucial to create a new copy rather than modifying the original directly. For objects, make a copy, update values, and then set state. Likewise, for arrays, clone the array, modify the copy, and use setState (with useState or useReducer). This approach ensures proper re-rendering and aligns with JavaScript's immutability principles, preventing unintended side effects.
 
-this relates to [[Architecture/01. Fundamentals/Language Overlap/Shallow Copy and Deep Copy(clone)]]
+this relates to [[01. Fundamentals/Language Overlap/Shallow Copy and Deep Copy(clone)]]
 
 ### Parent and Child Components
 

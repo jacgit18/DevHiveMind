@@ -11,7 +11,7 @@ Purpose: This documentation discusses
 Status:
 Started: 2025-05-10
 EditDate:
-Relates: "[[Architecture/04. Backing Service Options/Cloud/Testing Step Functions]]"
+Relates: "[[04. Backing Service Options/Cloud/Testing Step Functions]]"
 Peer Reviewed: 0
 dg-publish:
 ---

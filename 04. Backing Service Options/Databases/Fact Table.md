@@ -21,7 +21,7 @@ As a data engineer, understanding business requirements and data sources is para
 
 ##### General Guidelines for Fact Table Design
 
-![[Architecture/04. Backing Service Options/Databases/_Schemas/Association Relationship.png]]
+![[04. Backing Service Options/Databases/_Schemas/Association Relationship.png]]
 
 
 1. **Identify the Grain:**
@@ -41,7 +41,7 @@ As a data engineer, understanding business requirements and data sources is para
 
 ### Fact Table Types and Use Cases:
 
-![[Architecture/04. Backing Service Options/Databases/_Infographic/Aggregation and Composition.png]]
+![[04. Backing Service Options/Databases/_Infographic/Aggregation and Composition.png]]
 
 1. **Transact Fact Table:**
    - Ideal for detailed, transaction-level data.

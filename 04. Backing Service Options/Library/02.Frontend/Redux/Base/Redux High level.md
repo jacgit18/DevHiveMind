@@ -11,11 +11,11 @@ Purpose: This documentation discusses Redux.
 Status: Done
 Started:
 EditDate: 2024-02-07
-Relates: "[[Architecture/04. Backing Service Options/Library/02.Frontend/Redux/Base/StateChange(view)]]"
+Relates: "[[04. Backing Service Options/Library/02.Frontend/Redux/Base/StateChange(view)]]"
 Peer Reviewed: 0
 dg-publish:
 ---
-![[Architecture/04. Backing Service Options/Library/_Infographic/Redux state flow.gif]]
+![[04. Backing Service Options/Library/_Infographic/Redux state flow.gif]]
 
 A state management library that adheres to three fundamental principles:
 
@@ -25,7 +25,7 @@ A state management library that adheres to three fundamental principles:
 2. **Immutable and Read-Only State:**
    - The store, representing the entire application or website's state, is immutable, fostering predictability and minimizing unexpected errors. After each action, a new state is generated.
 
-3. **[[Architecture/01. Fundamentals/Language Overlap/Pure Functions vs Impure Functions|Pure Function]] for State Changes:**
+3. **[[01. Fundamentals/Language Overlap/Pure Functions vs Impure Functions|Pure Function]] for State Changes:**
    - Changes to the state occur solely through pure functions. These functions take input and produce output predictably. The flow typically involves User Action > Reducer > Store > State Changes.
 
 In the Redux architecture, actions trigger state changes through reducers, which are pure functions. This follows a Flux pattern: Action > Dispatcher > Store > View.

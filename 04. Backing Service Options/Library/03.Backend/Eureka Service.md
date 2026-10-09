@@ -31,13 +31,13 @@ Key features of Eureka:
    - Eureka includes a heartbeat mechanism where registered services periodically send heartbeats to the server. If a service fails to send heartbeats within a specified time, Eureka marks it as unavailable.
 
 4. **Load Balancing:**
-   - Eureka facilitates [[Architecture/Delivery/Load Balancer|Load Balancing]] by allowing services to distribute incoming requests among multiple instances of a service.
+   - Eureka facilitates [[06. Networking & Delivery/Load Balancer|Load Balancing]] by allowing services to distribute incoming requests among multiple instances of a service.
 
 5. **Client-Side Load Balancing:**
    - Clients, when querying for a service, can use information from Eureka to implement client-side load balancing strategies.
 
 6. **Fault Tolerance:**
-   - Eureka is designed with [[Architecture/02. System Design/Fault Tolerance]] in mind. If one Eureka server goes down, clients can still discover services by querying other available Eureka servers in the system.
+   - Eureka is designed with [[02. System Design/Fault Tolerance]] in mind. If one Eureka server goes down, clients can still discover services by querying other available Eureka servers in the system.
 
 7. **Integration with Spring Cloud:**
    - Eureka is commonly used in conjunction with Spring Cloud, a framework for building Java-based microservices. Spring Cloud provides seamless integration with Eureka for service discovery.

@@ -30,7 +30,7 @@ Joining the table with itself accomplishes a different or smaller dataset with 
 
 https://joins.spathon.com
 
-![[Architecture/04. Backing Service Options/Databases/_Schemas/Self-joining.png]]
+![[04. Backing Service Options/Databases/_Schemas/Self-joining.png]]
 
 In the following example, we will use the table EMPLOYEE twice and in order to do this we will use the alias of the table. To get the list of employees and their supervisor the following SQL statement has used: 
 
@@ -46,6 +46,6 @@ left join includes inconsistent records from the left excluding right
 right join is vise versa
 
 
-![[Architecture/04. Backing Service Options/Databases/_Infographic/Types of Joins.png]]
+![[04. Backing Service Options/Databases/_Infographic/Types of Joins.png]]
 
-![[Architecture/04. Backing Service Options/Databases/_Infographic/4 Type of Joins.gif]]
+![[04. Backing Service Options/Databases/_Infographic/4 Type of Joins.gif]]

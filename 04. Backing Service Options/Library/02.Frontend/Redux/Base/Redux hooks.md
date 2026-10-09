@@ -13,7 +13,7 @@ Purpose: This documentation discusses Redux hooks
 Status: Final
 Started:
 EditDate: 2024-02-08
-Relates: "[[Architecture/04. Backing Service Options/Library/02.Frontend/React/Hooks]]"
+Relates: "[[04. Backing Service Options/Library/02.Frontend/React/Hooks]]"
 Peer Reviewed: 1
 dg-publish:
 ---

@@ -23,6 +23,6 @@ While you could technically pass the store directly to the app as a prop, this a
 
 The `Provider` resolves this issue by eliminating the need to pass the store explicitly down the component tree on every occasion.
 
-On the other hand, the [[Architecture/04. Backing Service Options/Library/02.Frontend/Redux/Base/Connect is a higher order component|connect]] function, being a higher-order function, empowers a component to be "smart" or "connected" to the Redux state store. This means the component gains awareness of the state managed by Redux.
+On the other hand, the [[04. Backing Service Options/Library/02.Frontend/Redux/Base/Connect is a higher order component|connect]] function, being a higher-order function, empowers a component to be "smart" or "connected" to the Redux state store. This means the component gains awareness of the state managed by Redux.
 
 For those preferring a more modern approach, hooks provide an alternative to `connect`. Specifically, Redux includes hooks that offer a concise way to interact with the state. This can be a viable alternative to using `connect`, making the integration of Redux with React even more flexible and expressive.

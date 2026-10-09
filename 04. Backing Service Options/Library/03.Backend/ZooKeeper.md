@@ -11,7 +11,7 @@ Purpose: This documentation discusses Zookeeper service.
 Status: Refinement
 Started: 2023-09-04
 EditDate: 2024-02-03
-Relates: "[[Architecture/04. Backing Service Options/Library/03.Backend/Apache Kafka]]"
+Relates: "[[04. Backing Service Options/Library/03.Backend/Apache Kafka]]"
 Peer Reviewed: 0
 dg-publish: false
 ---

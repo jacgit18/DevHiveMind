@@ -16,7 +16,7 @@ Purpose: This documentation is a code snippet showing how add redux state to rea
 Status: Final
 Started:
 EditDate: 2024-02-07
-Relates: "[[Architecture/04. Backing Service Options/Library/02.Frontend/React/Props]]"
+Relates: "[[04. Backing Service Options/Library/02.Frontend/React/Props]]"
 Peer Reviewed: 1
 dg-publish:
 ---

@@ -15,9 +15,9 @@ Relates:
 Peer Reviewed: 0
 dg-publish: false
 ---
-![[Architecture/04. Backing Service Options/Databases/_Schemas/DB UML relationship types.jpeg]]
+![[04. Backing Service Options/Databases/_Schemas/DB UML relationship types.jpeg]]
 
-Database relationships are associations between tables that are created using join statements to retrieve data. [[Architecture/04. Backing Service Options/Databases/Self-joining relationships|Join]] statements are then used to retrieve data from multiple tables based on these relationships. There are different types of joins, such as INNER JOIN, LEFT JOIN, RIGHT JOIN, and FULL JOIN, which determine how data from related tables is combined.
+Database relationships are associations between tables that are created using join statements to retrieve data. [[04. Backing Service Options/Databases/Self-joining relationships|Join]] statements are then used to retrieve data from multiple tables based on these relationships. There are different types of joins, such as INNER JOIN, LEFT JOIN, RIGHT JOIN, and FULL JOIN, which determine how data from related tables is combined.
 
 ## Most Common Relationships
 The most prevalent relationships are many-to-one or vice versa, as well as one-to-many. In one-to-one relationships, both sides hold unique values, while in many-to-many relationships, both sides can contain duplicates.
@@ -37,7 +37,7 @@ While the term "many-to-one" is often used colloquially, in reality, it is still
 ### Flexibility in One-to-Many Relationships
 One-to-many relationships provide flexibility by allowing one record to be associated with many records in another table. This flexibility is useful for modeling various connections, such as tracking reservations, where each reservation is linked to a customer using a Foreign Key. This approach simplifies data maintenance and ensures the integrity of the database.
 
-![[Architecture/04. Backing Service Options/Databases/_Schemas/Relationship Example.png]]
+![[04. Backing Service Options/Databases/_Schemas/Relationship Example.png]]
 
 ### Many-to-Many Relationships
 In the scenario where many orders could have many dishes, and vice versa, a many-to-many relationship is represented by a line with a crow's foot on each end. However, most Database Management System (DBMS) tools do not directly support modeling many-to-many relationships. To address this, a linking table, such as "orders_dishes," is created. This linking table establishes one-to-many relationships with both the "orders" and "dishes" tables. It contains two columns, an order ID and a dish ID, with each row representing a specific dish included in a particular order. This approach keeps the "orders" table clean while allowing detailed recording of order contents. Many-to-many relationships can be applied to various scenarios, such as tracking customer preferences, managing ingredients, or associating customers with events.
@@ -47,7 +47,7 @@ In the scenario where many orders could have many dishes, and vice versa, a many
 Maintaining referential integrity in a database ensures that relationships between tables are preserved and prevents data modifications that would violate these relationships. The DBMS becomes aware of the relationships, preventing users from making changes that could compromise consistency. This practice contributes to the overall reliability and accuracy of the database. While designing a database with Entity-Relationship (ER) diagrams, it's important to recognize that the process is iterative, allowing for adjustments and improvements over time.
 
 
-![[Architecture/04. Backing Service Options/Databases/_Schemas/Relationship Example Two.png]]
+![[04. Backing Service Options/Databases/_Schemas/Relationship Example Two.png]]
 
 ## Junction Table
 A junction table encompasses multiple foreign keys, exemplified by, for instance, a movie rental table linking a rental table's primary key and a movie table's primary key.
@@ -59,5 +59,5 @@ An entity, defined as something with distinct and independent existence, is inte
 Consider the example of doctors and patients: a junction table might contain primary keys for both doctor and patient IDs. This setup allows for the creation of additional table relationships, such as those between doctors and appointments, as well as patients and procedures.
 
 
-![[Architecture/04. Backing Service Options/Databases/_Schemas/Relationship Example Three.png]]
+![[04. Backing Service Options/Databases/_Schemas/Relationship Example Three.png]]
 

@@ -11,7 +11,7 @@ Purpose: This documentation discusses
 Status:
 Started:
 EditDate:
-Relates: "[[Architecture/04. Backing Service Options/Cloud/AWS/DLQ]]"
+Relates: "[[04. Backing Service Options/Cloud/AWS/DLQ]]"
 Peer Reviewed: 0
 dg-publish:
 ---

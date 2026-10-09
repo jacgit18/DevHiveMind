@@ -13,7 +13,7 @@ Relates:
 Peer Reviewed: 0
 dg-publish: false
 ---
-![[Architecture/04. Backing Service Options/Cloud/_Infographic/Service Types.jpg]]
+![[04. Backing Service Options/Cloud/_Infographic/Service Types.jpg]]
 
 Cloud offers a range of services that fall under the categories of Infrastructure as a Service (IaaS), Platform as a Service (PaaS), and Software as a Service (SaaS). EC2 (Elastic Compute Cloud) is indeed an IaaS offering, providing virtual servers in the cloud, while Elastic Beanstalk is a higher-level service that abstracts away the infrastructure management and is classified as a PaaS. Other AWS services, such as S3 (Simple Storage Service), RDS (Relational Database Service), and Lambda, also fall into different categories within the spectrum of cloud service models.
 
@@ -118,7 +118,7 @@ SaaS, or Software as a Service, stands out as the most popular cloud computing m
 **Software as a Service:**
 - *Quick Wins:* Ideal for scenarios requiring quick launches without concerns about server or software issues.
 
-![[Architecture/04. Backing Service Options/Cloud/_Infographic/Service Types overlap.png]]
+![[04. Backing Service Options/Cloud/_Infographic/Service Types overlap.png]]
 
 ## **Key Attributes of Cloud Computing:**
 - _Elasticity:_ Adapts dynamically to changes in workload.
@@ -131,7 +131,7 @@ SaaS, or Software as a Service, stands out as the most popular cloud computing m
 
 
 ## **Cost Optimization Strategies:**
-![[Architecture/04. Backing Service Options/Cloud/_Infographic/Cloud Cost reduce.gif]]
+![[04. Backing Service Options/Cloud/_Infographic/Cloud Cost reduce.gif]]
 - _Right Sizing:_ Operate with the right amount of resources needed.
 - _Automation:_ Automate behaviors to reduce costs.
 - _Compliance Scope:_ Address actions dealing with data and legal requirements.

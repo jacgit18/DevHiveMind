@@ -12,11 +12,11 @@ Purpose: Guide to selecting a database.
 Status: Refinement
 Started:
 EditDate: 2024-01-02
-Relates: "[[Architecture/04. Backing Service Options/Databases/Choosing Schema]]"
+Relates: "[[04. Backing Service Options/Databases/Choosing Schema]]"
 Peer Reviewed: 0
 dg-publish:
 ---
-![[Architecture/04. Backing Service Options/Databases/_Infographic/Structured vs Unstructured Data.webp]]
+![[04. Backing Service Options/Databases/_Infographic/Structured vs Unstructured Data.webp]]
 
 Information can exist in both structured and unstructured forms. Refined information often refers to structured data, which is organized and formatted for specific purposes. Unrefined or unstructured data lacks a predefined format and organization or less of a predefined format that doesn't fit the standards of structured data.
 
@@ -26,15 +26,15 @@ Then you have Semi-structured data which is data that does not fit neatly into t
 
 Examples of semi-structured data include JSON (JavaScript Object Notation), XML (eXtensible Markup Language), and key-value pairs. These data formats allow for flexibility in representing information, and the structure can vary between different records. Databases that handle semi-structured data effectively are NoSQL databases. 
 
-[[Architecture/04. Backing Service Options/Databases/5 V's of Data]]
+[[04. Backing Service Options/Databases/5 V's of Data]]
 
-When selecting a database or determining the number of databases for your architecture, it's crucial to first identify the nature of your data—whether it's [[Architecture/04. Backing Service Options/Databases/Industry Structured & Unstructured Data|structured or unstructured]]. Once this is clarified, you can narrow down your choices between SQL and NoSQL databases. For instance, if you anticipate dealing with a substantial amount of email data, opting for a NoSQL database becomes more likely.
+When selecting a database or determining the number of databases for your architecture, it's crucial to first identify the nature of your data—whether it's [[04. Backing Service Options/Databases/Industry Structured & Unstructured Data|structured or unstructured]]. Once this is clarified, you can narrow down your choices between SQL and NoSQL databases. For instance, if you anticipate dealing with a substantial amount of email data, opting for a NoSQL database becomes more likely.
 
-Furthermore, leveraging the CAP theorem can help refine your database selection further. The CAP theorem addresses the trade-offs between Consistency, Availability, and Partition Tolerance, aiding in making informed decisions based on your specific application requirements and priorities. Another consideration could be using [[Architecture/04. Backing Service Options/Cloud/Cloud Databases]].
+Furthermore, leveraging the CAP theorem can help refine your database selection further. The CAP theorem addresses the trade-offs between Consistency, Availability, and Partition Tolerance, aiding in making informed decisions based on your specific application requirements and priorities. Another consideration could be using [[04. Backing Service Options/Cloud/Cloud Databases]].
 
 
 
-![[Architecture/04. Backing Service Options/Databases/_Infographic/CAP.png]]
+![[04. Backing Service Options/Databases/_Infographic/CAP.png]]
 ### **CAP Theorem and Fundamental Differences:**
 The CAP Theorem, representing Consistency, Availability, and Partition Tolerance, asserts that in database systems, achieving all three elements simultaneously is not possible. These components are pivotal in shaping a database's performance characteristics, and the selection of an appropriate combination is crucial based on specific requirements. Here's a breakdown of these elements:
 
@@ -71,7 +71,7 @@ Side note this relates to [[System Design Interview An Insider’s Guide Volume 
 
 4. **Durability:** Committed transactions persist permanently, surviving failures, providing reliability even in adverse conditions.
 
-![[Architecture/04. Backing Service Options/Databases/_Infographic/ACID.gif]]
+![[04. Backing Service Options/Databases/_Infographic/ACID.gif]]
 ### NoSQL
 NoSQL, diverse in data models, embraces BASE principles, offering flexibility and scalability:
 
@@ -87,7 +87,7 @@ NoSQL, diverse in data models, embraces BASE principles, offering flexibility an
     - Accepts temporary inconsistencies, resolving them gradually for adaptability in distributed environments.
 
 
-![[Architecture/04. Backing Service Options/Databases/_Infographic/DB Popularity.png]]
+![[04. Backing Service Options/Databases/_Infographic/DB Popularity.png]]
 
 The term NoSQL encompasses various non-relational databases, with four main types: key-value, document, wide-column, and graph databases.
 
@@ -112,7 +112,7 @@ The term NoSQL encompasses various non-relational databases, with four main type
 
 - **Vector Databases:** Vector databases, like Tile38 and Google's Bigtable, organize data as vectors or geometric shapes. Leveraging the power of vector representation, these databases excel in handling geospatial data with precision and efficiency. They are particularly suited for applications requiring real-time tracking, navigation systems, and dynamic mapping. By storing and processing vector data, these databases enable seamless manipulation of spatial information, making them essential for scenarios where accurate location-based insights and quick updates are crucial, such as logistics optimization and geospatial analytics.
 
-![[Architecture/04. Backing Service Options/Databases/_Infographic/Database Types.gif]]
+![[04. Backing Service Options/Databases/_Infographic/Database Types.gif]]
 ##### **Final Determination: Project Evaluation - Time, Money, Tech**
 
 When deciding between NoSQL and SQL databases, assess the team's expertise, project complexity, and economic factors. Consider the following:
@@ -122,7 +122,7 @@ When deciding between NoSQL and SQL databases, assess the team's expertise, proj
   
 ##### **2. Economic Considerations:**
 - **Cost of Training:** Evaluate training costs, factoring in the learning curve.
-- **Server Scaling:** Consider [[Architecture/02. System Design/Vertical vs Horizontal Scaling|scalability]] costs, especially when integrating NoSQL into an existing system.
+- **Server Scaling:** Consider [[02. System Design/Vertical vs Horizontal Scaling|scalability]] costs, especially when integrating NoSQL into an existing system.
 - **Overall System Complexity:** Assess the overall complexity and associated costs.
 
 ##### **3. Tech Considerations:**
@@ -133,7 +133,7 @@ When deciding between NoSQL and SQL databases, assess the team's expertise, proj
 ### **Final Determination: Choosing Between NoSQL and SQL**
 ![[Database Selection Process.webp]]
 
-![[Architecture/04. Backing Service Options/Databases/_Infographic/Database requirement.png]]
+![[04. Backing Service Options/Databases/_Infographic/Database requirement.png]]
 #### **NoSQL Databases:**
 - **Scalability:** Ideal for horizontal scalability, cost-effective for growing datasets.
 - **Flexibility:** Suited for rapid development, handling semi/unstructured data.
