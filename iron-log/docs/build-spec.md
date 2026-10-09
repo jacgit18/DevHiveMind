@@ -1,6 +1,6 @@
 # Iron Log backend build spec
 
-Drafted 2026-10-06 for `spec-drift-gate`. The decisions are in the ADRs (`architecture/decisions/001` to `015`) and [[iron-log/docs/architecture/stack-walkthrough|stack-walkthrough]]; this file links to them and does not repeat them. Table design: [[data-model/iron-log]]. Code sketches (not run): [[code-samples]].
+Drafted 2026-10-06 for `spec-drift-gate`. The decisions are in the ADRs (`architecture/decisions/001` to `015`) and [[iron-log/docs/architecture/stack-walkthrough|stack-walkthrough]]; this file links to them and does not repeat them. Table design: [[iron-log/docs/data-model/iron-log]]. Code sketches (not run): [[code-samples]].
 
 ## 1. Problem
 
@@ -15,7 +15,7 @@ Each choice has alternatives and the reason they lost in its ADR: backend shape 
 **In scope (backend v1):**
 - The API in `server/`, serving the built PWA from one origin (ADR 010).
 - Google login through Better Auth (ADR 004).
-- The tables in [[data-model/iron-log]], created by dbmate migrations (ADR 012).
+- The tables in [[iron-log/docs/data-model/iron-log]], created by dbmate migrations (ADR 012).
 - The command endpoints and the pull endpoint (ADR 008), with the commands drawn from [[backend-data-rules]].
 - The phone's sync client: persisted queue, replay, quarantine of refused writes (ADR 003).
 - `import-legacy` (decision 10 note), logging and the client-error endpoint (ADR 013), tests (ADR 014).

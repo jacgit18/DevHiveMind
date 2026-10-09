@@ -39,4 +39,4 @@ The user is the only user so far, has placed no restrictions on late-night ticki
 
 ## Spec amendment
 
-Backlog: add the midnight behavior as a UX idea; week-start setting stays in multi-user readiness. [[data-model/iron-log]] line 101 corrected from "Monday" to Sunday.
+Backlog: add the midnight behavior as a UX idea; week-start setting stays in multi-user readiness. [[iron-log/docs/data-model/iron-log]] line 101 corrected from "Monday" to Sunday.

@@ -6,10 +6,10 @@ Full source audit of iron-log, run with the `security-audit` skill. Source only 
 
 Commit `979f6ea920b44302abea3b394f402ebd66179c2e`, profile standard, whole repository. Result: no critical, high or medium finding; 2 confirmed low; 5 open leads that depend on live deployment facts; 5 candidates examined and rejected; about 40 hardening notes.
 
-- [[security-audit/run-1/REPORT|REPORT]]: summary, the two confirmed findings with fixes, the open leads, hardening notes, coverage.
-- [[security-audit/run-1/NEEDS-VALIDATION|NEEDS-VALIDATION]]: the five open leads with the exact blocker and a safe check for each.
-- [[security-audit/run-1/FINDINGS-DETAIL|FINDINGS-DETAIL]]: empty (nothing medium or above).
-- [[security-audit/run-1/architecture|architecture]]: the architecture summary the hunters worked from.
+- [[iron-log/docs/security-audit/run-1/REPORT|REPORT]]: summary, the two confirmed findings with fixes, the open leads, hardening notes, coverage.
+- [[iron-log/docs/security-audit/run-1/NEEDS-VALIDATION|NEEDS-VALIDATION]]: the five open leads with the exact blocker and a safe check for each.
+- [[iron-log/docs/security-audit/run-1/FINDINGS-DETAIL|FINDINGS-DETAIL]]: empty (nothing medium or above).
+- [[iron-log/docs/security-audit/run-1/architecture|architecture]]: the architecture summary the hunters worked from.
 - Machine-readable: `run-1/findings.json` (12 records), `run-1/coverage-ledger.json` (39 units), `run-1/run-metadata.json`.
 - Evidence: `run-1/agents/*/artifacts/out/` (the promoted sandbox outputs the findings cite), `run-1/candidates/` (what each verifier was given), `run-1/results/` (each verifier's decision).
 - `run-1/tools/`: the sandbox runner (`sbx.sh`), the evidence-promotion script (`promote.py`) and the ledger and prompt builders, so a second run can reuse them. Their paths point at `~/security-audit-skill/iron-log/run-1/`; change the `OUT` variable first.
@@ -18,7 +18,7 @@ Not kept here: the per-agent scratch copies of the source (about 58 MB) and the 
 
 ## What to do with it
 
-The follow-up work is in [[backlog]] under "Security audit follow-ups". The related existing docs are [[deploy-runbook]], [[data-model/iron-log]], [[build-spec]] and [[feature-flags]].
+The follow-up work is in [[backlog]] under "Security audit follow-ups". The related existing docs are [[deploy-runbook]], [[iron-log/docs/data-model/iron-log]], [[build-spec]] and [[feature-flags]].
 
 ## Limits to remember when reading it
 

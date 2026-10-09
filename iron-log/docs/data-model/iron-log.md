@@ -1,6 +1,6 @@
 # Iron Log data model (Neon Postgres)
 
-Design only, 2026-10-06. Migrations and data-access code are separate steps. Inputs: ADR 002 (Neon, database-first migrations), ADR 003 (versioned rows, tombstones, history, command per action), ADR 004 (own `users` table, RLS on `user_id`, Better Auth, share grants later), ADR 006 (pounds, `numeric` 4 dp), [[backend-data-rules]], `src/types.ts`, [[failure-modes/sync]].
+Design only, 2026-10-06. Migrations and data-access code are separate steps. Inputs: ADR 002 (Neon, database-first migrations), ADR 003 (versioned rows, tombstones, history, command per action), ADR 004 (own `users` table, RLS on `user_id`, Better Auth, share grants later), ADR 006 (pounds, `numeric` 4 dp), [[backend-data-rules]], `src/types.ts`, [[iron-log/docs/architecture/failure-modes/sync]].
 
 ## Design summary
 

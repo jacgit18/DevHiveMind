@@ -23,7 +23,7 @@ Run 2026-10-06 with `/tech-decision-walkthrough`. One ADR per decision except de
 | 15 | Backend test tooling | Vitest plus real Postgres in a throwaway container | 014 | structural |
 | 16 | Shared code layout | One package, `src/shared/` plus `server/` | 015 | structural |
 
-Table design: [[data-model/iron-log]]. Code sketches: [[code-samples]].
+Table design: [[iron-log/docs/data-model/iron-log]]. Code sketches: [[code-samples]].
 
 ## Decision 10 (routine): one-time upload of phone data
 

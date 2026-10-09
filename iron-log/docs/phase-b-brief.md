@@ -1,6 +1,6 @@
 # Phase B precision brief: real sign-in
 
-Drafted 2026-10-08. For [[build-spec]] §6a, Phase B (B2; B1 is no longer a gate). Decisions it rests on: ADR 004 (Better Auth, Google first), ADR 010 (one origin), ADR 003 (a 401 pauses the queue, never drops a write), [[data-model/iron-log]] (row-level security). **Nothing here is built yet. Section 6 is what I need from you; section 7 is what I need you to decide.**
+Drafted 2026-10-08. For [[build-spec]] §6a, Phase B (B2; B1 is no longer a gate). Decisions it rests on: ADR 004 (Better Auth, Google first), ADR 010 (one origin), ADR 003 (a 401 pauses the queue, never drops a write), [[iron-log/docs/data-model/iron-log]] (row-level security). **Nothing here is built yet. Section 6 is what I need from you; section 7 is what I need you to decide.**
 
 ## 1. Goal
 

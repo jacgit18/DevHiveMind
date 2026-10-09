@@ -1,6 +1,6 @@
 # Phase D precision brief: the phone talks to the API
 
-Drafted 2026-10-07. For [[build-spec]] §6a, Phase D. Decisions it rests on: ADR 003 (sync), 008 (commands), 010 (one origin), 015 (shared code); failure modes [[failure-modes/sync]]; rules [[backend-data-rules]] §3 to §5 and §8. **Nothing here is built yet. Section 6 lists what I need you to decide first.**
+Drafted 2026-10-07. For [[build-spec]] §6a, Phase D. Decisions it rests on: ADR 003 (sync), 008 (commands), 010 (one origin), 015 (shared code); failure modes [[iron-log/docs/architecture/failure-modes/sync]]; rules [[backend-data-rules]] §3 to §5 and §8. **Nothing here is built yet. Section 6 lists what I need you to decide first.**
 
 ## 1. Goal
 
