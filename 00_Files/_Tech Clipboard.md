@@ -12,7 +12,7 @@ let userInput = "Please enter something:";
 
 console.log("User input:", userInput);
 ```
- ![InkWriting](<00_NoteAssets/Images To Move/Ink/Writing/2025.2.2 - 8.42am.svg>) [Edit Writing](https://youtu.be/2arL1jh8ihA?type=inkWriting&aspectRatio=2.963)
+ ![InkWriting](<2025.2.2 - 8.42am.svg>) [Edit Writing](https://youtu.be/2arL1jh8ihA?type=inkWriting&aspectRatio=2.963)
 
 Mimio solo Library used in the logic of component test automation
 
