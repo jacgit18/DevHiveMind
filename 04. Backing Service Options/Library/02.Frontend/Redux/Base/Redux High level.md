@@ -15,7 +15,7 @@ Relates: "[[04. Backing Service Options/Library/02.Frontend/Redux/Base/StateChan
 Peer Reviewed: 0
 dg-publish:
 ---
-![[04. Backing Service Options/Library/_Infographic/Redux state flow.gif]]
+![[Redux state flow.gif]]
 
 A state management library that adheres to three fundamental principles:
 

@@ -22,7 +22,7 @@ DBMS stands as the cornerstone for managing data, providing a platform to store,
 
 A DBMS accommodates diverse data architectures, including relational databases (RDBMS), document stores, key-value stores, column-oriented databases, graph databases, and more. Well-known DBMSs encompass MongoDB, Cassandra, Redis, MySQL, Microsoft SQL Server, PostgreSQL, SQLite, Oracle, and numerous others.
 
-![[04. Backing Service Options/Databases/_Infographic/ID Generators.gif]]
+![[ID Generators.gif]]
 
 #### Primary Key
 A primary key, such as `ID` or `SSN`, uniquely identifies each record in a table. 

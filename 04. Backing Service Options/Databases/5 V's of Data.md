@@ -30,7 +30,7 @@ Destroy: Remove data from storage and delete any shared copies of the data.
 keep [[Data Visualization Choices.pdf]] in mind
 
 
-![[04. Backing Service Options/Databases/_Infographic/5 V.png]]
+![[5 V.png]]
 
 
 The 5 V's of data refer to five characteristics or dimensions that are used to describe and evaluate data:
@@ -49,7 +49,7 @@ By considering these five dimensions of data—volume, velocity, variety, veraci
 
 ## Quantitative & Qualitative Data
 
-![[04. Backing Service Options/Databases/_Infographic/Pasted image 20240429083438.png]]
+![[Pasted image 20240429083438.png]]
 
 
 Qualitative data:  

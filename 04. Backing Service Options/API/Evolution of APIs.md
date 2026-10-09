@@ -16,7 +16,7 @@ dg-publish: true
 APIs are a set of protocols that define how system components interact with each other. As architectural styles evolve, APIs have gained prominence in recent years. The diagram below shows how the rise of microservices and cloud-native applications brings further granularity to services. In-process calls in monolithic applications transition to inter-process calls in microservice and serverless applications. Additionally, each process might reside on a different physical server, and service calls can fail due to various network issues.
 
 Increased service complexity emphasizes the need for more disciplined API designs.
-![[04. Backing Service Options/API/_Infographic/mono to Servless .png]]
+![[mono to Servless .png]]
 
 ## Type of APIs
 1. **Data APIs (RESTful APIs):**  
@@ -44,7 +44,7 @@ Over the past decade, “API First” has emerged as a popular software developm
 
 The diagram below compares the “Code First” and “API First” approaches. In the “Code First” model, APIs are byproducts of system designs, often referred to as “documentation”. The "API First" model begins with API specifications and concludes with API-driven tests, making APIs the driving force behind the entire software development cycle.
 
-![[04. Backing Service Options/API/_Infographic/Api first.png]]
+![[Api first.png]]
 "API First" offers several advantages:
 
 1. Improved system integration. “API First” encourages developers to carefully consider system interactions from the project’s outset, reducing the need for ongoing modifications during development.

@@ -15,7 +15,7 @@ Relates:
 Peer Reviewed: 0
 dg-publish:
 ---
-![[04. Backing Service Options/Library/_Infographic/React Portal Modal.png]]
+![[React Portal Modal.png]]
 
 A modal serves as a predefined window within a website, commonly encountered when prompted to sign up on platforms like newspapers. React Portals provide a powerful capability to render components outside the root DOM tree, enabling the display of content in a different DOM node.
 

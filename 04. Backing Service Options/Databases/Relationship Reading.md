@@ -16,7 +16,7 @@ dg-publish: false
 ## Simple Relational Model Representation
 
 
-![[04. Backing Service Options/Databases/_Schemas/relational model.png]]
+![[relational model.png]]
 
 1. **Address - Customer:**
    - An Address can have a one-to-one relationship with a Customer.

@@ -13,7 +13,7 @@ Relates:
 Peer Reviewed: 0
 dg-publish: true
 ---
-![[04. Backing Service Options/API/_Infographic/APIVer.gif]]
+![[APIVer.gif]]
 > To make things simple v2 in this context would represent newest version of the same service v1 is the only difference besides potential deprecation you may have clients still on the older version path. Like in the instance were I was working at Tracflo on there new app but they still had there old Wordpress app running and supporting clients.
 
 API versioning is a critical strategy in software development, focusing on managing various iterations of an API effectively. It's essential for several reasoned:

@@ -29,7 +29,7 @@ Configure network settings to permit inbound HTTP traffic from the internet, ena
 
 ### Use Services like 
 
-![[04. Backing Service Options/Cloud/_Infographic/AWS Services.png]]
+![[AWS Services.png]]
 
 AWS Trusted Advisor service offers comprehensive insights into your AWS infrastructure, allowing you to assess and refine your setup against industry best practices. It enables evaluation across various facets including cost optimization, performance, security, fault tolerance, and adherence to service limits.
 
@@ -66,9 +66,9 @@ However, for more complex container management needs, Amazon ECS provides a robu
 When utilizing these services, selecting a compute engine is essential. You can opt for Amazon EC2 for manual instance management or AWS Fargate, a serverless compute engine seamlessly integrated with container orchestration services. With Fargate, you eliminate the need for manual scaling and instance management, simplifying the deployment and operation of containerized applications.
 
 
-![[04. Backing Service Options/Cloud/_Infographic/Cloud Services.gif]]
+![[Cloud Services.gif]]
 
-![[04. Backing Service Options/Cloud/_Infographic/Cloud Monitoring Services.jpeg]]
+![[Cloud Monitoring Services.jpeg]]
 
 
 

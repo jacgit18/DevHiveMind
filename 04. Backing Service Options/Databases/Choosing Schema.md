@@ -17,7 +17,7 @@ Relates: "[[04. Backing Service Options/Databases/Schema Design]]"
 Peer Reviewed: 0
 dg-publish:
 ---
-![[04. Backing Service Options/Databases/_Infographic/Star vs Snow.png]]
+![[Star vs Snow.png]]
 #### Factors to Consider:
 
 The decision between a snowflake and star schema for a supply and demand skills matrix depends on various factors:

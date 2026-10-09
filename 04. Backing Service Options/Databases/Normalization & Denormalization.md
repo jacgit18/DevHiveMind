@@ -106,7 +106,7 @@ In summary, normalization is a foundational concept in database design, essentia
 
 **Trade-offs**: Choosing a higher level of normalization may improve data integrity and reduce data inconsistencies but may also impact performance due to additional joins required.
 
-![[04. Backing Service Options/Databases/_Schemas/1NF.png]]
+![[1NF.png]]
 
 ## 2NF (Second Normal Form) Rules 
 -   Rule 1- Be in 1NF 
@@ -118,11 +118,11 @@ In summary, normalization is a foundational concept in database design, essentia
 
 **Trade-offs**: Choosing a higher level of normalization may result in slower performance and more complex queries.
 
-![[04. Backing Service Options/Databases/_Schemas/2NF.png]]
+![[2NF.png]]
 
-![[04. Backing Service Options/Databases/_Infographic/Dependencies.png]]
+![[Dependencies.png]]
 
-![[04. Backing Service Options/Databases/_Schemas/Column Relatioships.png]]
+![[Column Relatioships.png]]
 ## 3NF (Third Normal Form) Rules 
 *You can also break teacher out into its own table
 -   Rule 1- Be in 2NF 
@@ -137,14 +137,14 @@ To move our 2NF table into 3NF, we again need to again divide our table. 
 **Trade-offs**: Choosing a higher level of normalization may result in slower performance and more complex queries.
 
 
-![[04. Backing Service Options/Databases/_Schemas/3NF.png]]
+![[3NF.png]]
 
-![[04. Backing Service Options/Databases/_Infographic/Trans dependencies.png]]
+![[Trans dependencies.png]]
 
 
-![[04. Backing Service Options/Databases/_Schemas/Employee relationship.png]]
+![[Employee relationship.png]]
 
-![[04. Backing Service Options/Databases/_Schemas/Exam relationship.png]]
+![[Exam relationship.png]]
 
 
 ## BCNF (Boyce-Codd Normal Form) 
@@ -158,7 +158,7 @@ Sometimes is BCNF is also referred as ***3.5 Normal Form***. 
 
 **Trade-offs**: Choosing a higher level of normalization may result in slower performance and more complex queries.
 
-![[04. Backing Service Options/Databases/_Schemas/3.5NF.jpeg]]
+![[3.5NF.jpeg]]
 
 ## 4NF (Fourth Normal Form) Rules 
 If ***no*** database table instance contains(***we don’t want anywhere***) two or more, independent and ***multivalued(bad)*** data describing the relevant entity, then it is in 4th Normal Form. 
@@ -170,19 +170,19 @@ If ***no*** database table instance contains(***we don’t want anywhere***) t
 **Trade-offs**: Choosing a higher level of normalization may result in slower performance and more complex queries, and may require additional maintenance to ensure that the data remains consistent.
 
 
-![[04. Backing Service Options/Databases/_Schemas/4NF.png]]
+![[4NF.png]]
 
 Don’t want this it is better if separated  
 
 also to be considered multi value you need at <mark style="background: #FFF3A3A6;">least 3 columns</mark> the reason why is because with two columns you can fix the issue  in this example A1 is multivalued but we fixed by making independent rows the <mark style="background: #FFF3A3A6;">2nd rule to be multi value is column A have multiple relationships like how A1 maps to B1 and B2</mark>
 
-![[04. Backing Service Options/Databases/_Schemas/4NF part 1.png]]
+![[4NF part 1.png]]
 
 The last requirement to be considered multi valued after meeting 3 coulmn minimum is no <mark style="background: #FFF3A3A6;">relationship between b and c in this example</mark>
 
-![[04. Backing Service Options/Databases/_Schemas/4NF part 2.png]]
+![[4NF part 2.png]]
 
-![[04. Backing Service Options/Databases/_Schemas/4NF part 3.png]]
+![[4NF part 3.png]]
 
 ## 5NF (Fifth Normal Form) Rules 
 A table is in 5th Normal Form only if it is in 4NF and <mark style="background: #FFB86CA6;">it cannot be decomposed into any number of smaller tables without loss of data and no join dependencies. </mark>
@@ -207,11 +207,11 @@ Choosing a higher level of normalization can help to improve data integrity but 
 
 In summary, 5NF is a powerful tool for ensuring the consistency and quality of data. However, it can be complex to implement, and may have trade-offs in terms of query performance and storage requirements. Therefore, it is important to carefully consider the specific needs of the application and work with stakeholders to find the right balance between normalization, performance, and maintenance.
 
-![[04. Backing Service Options/Databases/_Schemas/5NF part 1.jpeg]]
+![[5NF part 1.jpeg]]
 
-![[04. Backing Service Options/Databases/_Schemas/5NF part 2.jpeg]]
+![[5NF part 2.jpeg]]
 
-![[04. Backing Service Options/Databases/_Schemas/5NF part 3.jpeg]]
+![[5NF part 3.jpeg]]
 
 <mark style="background: #FFB8EBA6;">Ford could have different supplier or you might be sold a different product the way things are separated on this table </mark>
 

@@ -51,7 +51,7 @@ We can use foreign key restraints to help maintain referential integrity of ou
 - Set default: The foreign key values in the child table are set to a default value if the parent table is altered/deleted 
 
 
-![[04. Backing Service Options/Databases/_Infographic/Database Processes.gif]]
+![[Database Processes.gif]]
 In the context of SQL and relational databases, DCL, DDL, DML, and DQL are the primary sub-languages that cover most of the operations related to database management. However, it's worth noting that there are some additional concepts or features that might be considered separate from these sub-languages:
 
 1. **TCL (Transaction Control Language):**
@@ -81,7 +81,7 @@ In the context of SQL and relational databases, DCL, DDL, DML, and DQL are the p
    ```
 
 While DCL, DDL, DML, and DQL are fundamental to SQL, TCL and session control statements are additional components that play roles in managing transactions and customizing the behavior of database sessions. The specific features and sub-languages may vary slightly among different database management systems, as some systems may have their own extensions or variations.
-![[04. Backing Service Options/Databases/_Infographic/Sql Exe Order.gif]]
+![[Sql Exe Order.gif]]
 ## Triggers
 In SQL, a trigger is a set of instructions or a set of actions that are automatically executed, or "triggered," in response to certain events on a particular table or view in a database. Triggers are used to enforce business rules, perform validation, maintain data integrity, or automate complex database operations. The events that can activate a trigger include INSERT, UPDATE, DELETE statements, or a combination of these.
 
@@ -133,5 +133,5 @@ Here are some key points about SQL triggers:
 
 Triggers should be used judiciously, as they introduce additional complexity to the database schema and operations. Poorly designed triggers can impact performance and maintainability. It's important to understand the specific requirements and implications before implementing triggers in a database system.
 
-![[04. Backing Service Options/Databases/_Infographic/Execution Order.jpg]]
+![[Execution Order.jpg]]
 

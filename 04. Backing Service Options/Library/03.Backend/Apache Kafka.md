@@ -17,13 +17,13 @@ Relates:
 Peer Reviewed: 0
 dg-publish: false
 ---
-![[04. Backing Service Options/Library/_Infographic/Apache Arch.gif]]
+![[Apache Arch.gif]]
 
 Apache Kafka is often categorized as a distributed streaming platform or event streaming platform rather than a traditional message queue or message broker. While it shares some similarities with message queues, Kafka is designed for high-throughput, [[02. System Design/Fault Tolerance|fault-tolerant]], and distributed event streaming. It allows you to publish and subscribe to streams of records, store those records in a fault-tolerant manner, and process them in real-time or batch.
-![[04. Backing Service Options/Library/_Infographic/Kafka Uses.gif]]
+![[Kafka Uses.gif]]
 
 ![[1716556944362.gif]]
 
-![[04. Backing Service Options/Library/_Infographic/Kafka Performance.jpeg]]
+![[Kafka Performance.jpeg]]
 
-![[04. Backing Service Options/Library/_Infographic/Kafaka101.gif]]
+![[Kafaka101.gif]]

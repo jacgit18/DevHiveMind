@@ -51,8 +51,8 @@ Cloud databases are categorized into different service models within cloud compu
 The benefits of cloud databases include performance at scale, security, high availability, and full management by the cloud provider. Additionally, they grant access to other cloud services, such as AWS CloudTrail, which aids in governance, compliance, and auditing of AWS account activities, ensuring operational transparency and risk management.
 
 When opting for the Infrastructure as a Service (IaaS) approach, you have the flexibility to utilize an EC2 instance and deploy your preferred database directly onto it. This grants you greater control over configuration and customization aspects.
-![[04. Backing Service Options/Databases/_Infographic/DB premises.png]]
+![[DB premises.png]]
 
 Alternatively, you can adopt more of a Software as a Service (SaaS) approach, where your focus shifts towards optimizing and configuring your application, rather than managing the underlying infrastructure. This can be achieved by leveraging managed services such as `RDS` which launches with AWS VPC by default or `DynamoDB` which is good for serverless architecture and can be used without a lot of setup, allowing you to offload the operational overhead of database management to AWS.
-![[04. Backing Service Options/Databases/_Infographic/Benefits of Managed DB.png]]
+![[Benefits of Managed DB.png]]
 

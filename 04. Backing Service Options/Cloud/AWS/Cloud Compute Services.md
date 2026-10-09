@@ -12,7 +12,7 @@ Peer Reviewed: 0
 dg-publish:
 ---
 ## Amazon EC2
-![[04. Backing Service Options/Cloud/_Infographic/Ec2 lifecycle.png]]
+![[Ec2 lifecycle.png]]
 
 ## **Amazon EC2 Instance Types and Use Cases**
 

@@ -15,7 +15,7 @@ Relates:
 Peer Reviewed: 0
 dg-publish:
 ---
-![[04. Backing Service Options/Library/_Infographic/React Icon.gif]]
+![[React Icon.gif]]
 React, a JavaScript library by Facebook, empowers developers to build reusable UI components and manage application state efficiently. Its declarative approach simplifies creating interactive web applications, updating the UI responsively to data changes.
 
 Key benefits of React include efficient UI updates through the virtual DOM, a [[04. Backing Service Options/Library/02.Frontend/React/Types of Component|component-based architecture]] for modular development, declarative syntax for clear UI descriptions, one-way data binding for simplified data flow, and reusability/composability of components.
