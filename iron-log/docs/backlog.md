@@ -4,6 +4,29 @@ Work through these from the top: bugs first, then the backend and its load-beari
 
 **Convention: all new code is TypeScript** (`.ts`/`.tsx`, strict). Do not add `.js` or `.jsx` files; core types are in `src/types.ts` and `src/store/types.ts`. Run `npm run typecheck` with the other checks. _Last reviewed against the code: 2026-10-06 (see the review notes at the end)._
 
+## Phase F follow-ups (added 2026-10-08, when Phase F was closed; see [[build-spec]], [[deploy-runbook]])
+
+Live since 2026-10-08: revision `iron-log-00005-wvl`, deployed by CI. These are what Phase F left behind.
+
+- [ ] **First installed-iPhone PWA sign-in** (open S0 item below). Add to Home Screen, open from the icon, sign in with Google, close and reopen, still signed in. If it fails, reopen ADR 004 and the same-origin choice in ADR 010.
+- [x] (checked 2026-10-08: the owner's row, id 1, already had `is_admin = true`; two other accounts have signed up, neither admin) Set `is_admin` on the owner's row in production by hand (B2f): `update users set is_admin = true where auth_user_id = (select id from auth."user" where email = '<email>')`. The app role cannot do this.
+- [ ] Update ADR 004 (sign-in) with what the deploy showed, and record the iPhone result.
+- [ ] Confirm the Neon **owner** password was rotated (it lives only in the local `.env`; the app and CI use `ironlog_app`).
+- [ ] Rehearse a Neon restore and a failing migration on a Neon branch (FM-20, FM-21, FM-24). Phase F listed both; they were not done.
+- [ ] Decide the tombstone purge window and the refused-writes retention (open in [[data-model/iron-log]]).
+- [ ] Required reviewers on the GitHub `production` environment, at least for the first few CI deploys.
+- [ ] Watch for a missed nightly backup: the alert cannot cover "no backup for a day". Look now and then at `PROJECT_ID=iron-log-jacgit18 scripts/backup-cloud-run.sh list`.
+- [ ] GitHub Actions: `ubuntu-latest` moves to Ubuntu 26 on 2026-10-19 (notice in the deploy log). Run the workflows once after that date, or pin `ubuntu-24.04`.
+- [ ] Turn on "Automatically delete head branches" in the GitHub repo settings, so merged branches stop piling up.
+- [ ] The README screenshots bot adds a commit to every PR branch even when only a few bytes of a PNG change (noise, and it makes the branch move under you: it rejected a push on #127). Only commit when the image really differs.
+- [ ] Flaky test: `src/lib/planOrder.test.js` "on random programs ..." takes about 6 s on this machine against the 5 s default. Give it a longer timeout (do not change what it checks: the reorder tests must stay).
+- [ ] The build warns that a chunk is over 500 kB; split the largest (lazy-load the tabs) if load time on a phone matters.
+- [ ] Lint: `Supplements.tsx:83` warns `set-state-in-effect` (known, one warning).
+- [ ] CI deploy rough edges found on the first run, now fixed (#128, #129): the Google sign-in file made the tree dirty; the deployer needed `storage.buckets.list`; the build ran as the Editor-role default account. Notes in [[deploy-runbook]] §10.
+- [ ] Spike clean-up (S0): delete the Artifact Registry repo `cloud-run-source-deploy` in `iron-log-spike` (about 345 MB: `gcloud artifacts repositories delete cloud-run-source-deploy --location us-central1 --project iron-log-spike`), the Neon `spike-s0` branch (Neon console, Branches; look at it first), and then consider deleting the `iron-log-spike` project (`gcloud projects delete iron-log-spike`; Google keeps a deleted project 30 days; do it last, the registry repo lives in it). The local `spike-s0-signin` branch is already deleted (2026-10-08; its commit was `70f1187`, never pushed). Before rotating or deleting a Google OAuth client secret, check which client production uses (secret `iron-log-google-client-id`); rotating that one signs everyone out until the secret is updated.
+- [x] Stale branches (done 2026-10-08): 89 remote and all local branches deleted, including the old `import-fixes`, `pwa`, `react-conversion`, `wcag-aaa` and the unpushed spike branch `spike-s0-signin`. Left on GitHub: `main`, `data` (backups), `pr-screenshots` (the screenshots workflow). Names and commit ids are in `restore_remote.txt` and `restore_local.txt` in this folder, if one is needed back.
+- [ ] Personal defaults must not leak into a new account (item under Multi-user readiness below). **Audit 2026-10-08, no code changed yet.** `DEFAULT_CFG` is clean. The leak is `PROGRAM_A`/`PROGRAM_B` and `EX` in `src/lib/data.ts` (about 65 cards with the owner's starting weights, boxing moves, the "Shadow box" warm-up), plus the default backup repo names in `export.ts`. A signed-in account with no `programs/A` document falls back to them (`loadProgram` -> `resolveProgram` -> `BUILTIN`, `useAppStore.ts` db-mode loader). **Why it is not a one-line change:** (1) `programs[k] !== BUILTIN[k]` means "unmodified" in six places (Editor, export, settingsSlice, editorSlice, ...) and the "Original program · built in" library row also offers the owner's program; (2) 16 test files use the built-ins; (3) **two other accounts already exist**, and unedited programs were never saved, so they are showing the built-in cards today and their logs point at those cards; blanking the fallback would make their cards vanish. Proposed order: first save the current program into those accounts' own documents (or only blank for accounts with no log entries), then add a blank program for new accounts, then make "Original" mean blank in sync mode, then remove the personal backup defaults. Decision recorded in [[016-new-account-starting-state]] (accepted 2026-10-08; the exercise library `EX` stays as it is for now).
+
 ## Bugs
 
 Found in the 2026-10-05 bug sweep and re-checked against the code on 2026-10-06 (all still present; the TypeScript conversion changed none of them, only renamed files). The high and medium ones are fixed (#67), plus import-replace atomicity and the empty-repo GitHub backup (PR in review). These are what's left.
@@ -21,6 +44,8 @@ Found in the 2026-10-05 bug sweep and re-checked against the code on 2026-10-06 
 - [ ] Experiment excercises only show 5 days on dropdown
 
 ## 3. Backend, database and Google login (together)
+
+> 2026-10-08: a landing page now hides the app from people who are not signed in (the deployed build only). Still to decide: the `plan` column (beta, free, paid), a signup cap, publishing the consent screen.
 
 - [x] Choose a backend. Accepted for now (2026-10-06): own API server in Docker on Neon Postgres, with a separate auth provider (ADR 001 draft, [[001-backend-shape]], 2026-10-05). Firebase and Supabase were considered; Supabase is the fallback. This replaces the earlier Firebase lean once confirmed. Remaining stack decisions (datastore, sync, auth, language, framework, hosting) are still being walked.
 - [x] Pick the API language: TypeScript on Node (ADR 005). **Lean TypeScript:** the API can import `src/types.ts` and run the same `validate.ts` cleaners (`normEntry`, `normProgram`, `normLibrary`, `normBody`) and `normalizeData`/`DataFile` on the server, so client and server cannot disagree on a document's shape. The docs are already versioned (`SCHEMA_VERSION`) and stamped (`updatedAt`). Another language means re-implementing and re-testing all of that. Needs a shared types package or a monorepo layout.
@@ -71,6 +96,7 @@ Spikes and checks (do early):
 - [x] Count legacy `k`+hash id collisions in a real export before building `import-legacy`. (2026-10-08: the 2026-10-07 export has 53 entries and 0 collisions; the old `iron-log-data.json` has 1, `dip` and `kneeraise` on 2026-09-28: the hash ignores the exercise and ids are unique per user across exercises, so the importer gives the later one a `-2` suffix in input order.)
 - [ ] Confirm on provider pages: Cloud Run quota and pricing, Neon free-tier numbers and restore window, Better Auth advisories (GitHub Security tab), current Express 5, Kysely and Better Auth versions.
 - [ ] Rehearse a Neon restore (FM-20, FM-24) and a failing migration on a Neon branch (FM-21).
+- [ ] Turn on Neon **branch protection** for `production`, if the Free plan allows it, so it cannot be deleted by hand in the console. Checked 2026-10-08: `production` is the default branch with no expiry (only `dev` and `spike-s0` expire, on 2026-10-14, from the 7-day rule in `neon.ts`) but shows `protected: false`. Plan availability is not verified: look for the toggle in the Neon console (branch settings) and, if it is paid-only, note that and rely on the nightly backups instead ([[iron-log/docs/deploy-runbook|deploy-runbook]] section 7).
 
 ### Multi-user readiness (if the app is opened to other people)
 
@@ -83,7 +109,7 @@ The app began as a single-user gym app. These are the gaps that only matter once
 - [x] Auto-progression suggestions ("you hit 3×8, try +5 lb"): `progressionOf`/`targetOf` suggest "up from N lb" after two full sessions, and a stalled lift gets a back-off (#76). Left: show it more prominently if wanted.
 - [x] Account screen: profile, sign out, last-synced time and a visible offline/sync status. (B2e: Settings → Account and Sync; PR #118.)
 - [ ] Conflict handling when one account is used on two devices, so last-write-wins doesn't silently lose a workout.
-- [ ] Privacy policy and terms, with a clear data-deletion path (see step 4). Needed before launch because of Google login and body-weight data.
+- [x] Privacy policy and terms, with a clear data-deletion path (see step 4). Needed before launch because of Google login and body-weight data. (2026-10-08, PR in review: `public/privacy.html` and `terms.html` drafted against GDPR/UK GDPR, CCPA and other US state laws and Washington's health-data law; Settings → Delete my data erases everything or deletes the account for good, backups age out in 30 days. **Still recommended before opening signup to the public: a lawyer's review, and a decision on the governing-law clause, which was left out on purpose.**)
 - [ ] In-app "report a problem" that attaches the app version and sync state (alongside the feedback form link at the bottom).
 - [ ] Week-start choice (Sunday or Monday) and locale date formats. lb/kg (62) becomes required, not optional.
 - [ ] Screen-reader testing of the log flow with real devices.
