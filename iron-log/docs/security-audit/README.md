@@ -18,7 +18,7 @@ Not kept here: the per-agent scratch copies of the source (about 58 MB) and the 
 
 ## What to do with it
 
-The follow-up work is in [[backlog]] under "Security audit follow-ups". The related existing docs are [[deploy-runbook]], [[iron-log/docs/data-model/iron-log]], [[build-spec]] and [[feature-flags]].
+The follow-up work is in [[Vault Backlog]] under "Security audit follow-ups". The related existing docs are [[deploy-runbook]], [[iron-log/docs/data-model/iron-log]], [[build-spec]] and [[feature-flags]].
 
 ## Limits to remember when reading it
 
