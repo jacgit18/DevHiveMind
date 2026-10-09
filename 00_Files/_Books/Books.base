@@ -1,0 +1,76 @@
+filters:
+  and:
+    - file.inFolder("00_Files/_PDF/Books Tracker")
+    - file.ext == "md"
+formulas:
+  state: if(Status, Status, if(Read == true, "Finished", "Unread"))
+  priority_rank: if(Priority == "High", 1, if(Priority == "Medium", 2, 3))
+  page_count: if(pages, number(pages), 0)
+properties:
+  pdf:
+    displayName: Book
+  author:
+    displayName: Author
+  category:
+    displayName: Genre
+  formula.state:
+    displayName: State
+  formula.page_count:
+    displayName: Pages
+  formula.priority_rank:
+    displayName: Priority rank
+views:
+  - type: table
+    name: To read
+    filters:
+      and:
+        - formula.state == "Unread"
+    order:
+      - pdf
+      - author
+      - category
+      - formula.page_count
+      - Priority
+    sort:
+      - property: formula.priority_rank
+        direction: ASC
+      - property: formula.page_count
+        direction: ASC
+  - type: table
+    name: Reading now
+    filters:
+      and:
+        - formula.state == "Reading"
+    order:
+      - pdf
+      - author
+      - formula.page_count
+      - Started
+      - Priority
+    sort:
+      - property: formula.priority_rank
+        direction: ASC
+  - type: table
+    name: Finished
+    filters:
+      and:
+        - formula.state == "Finished"
+    order:
+      - pdf
+      - author
+      - rating
+      - DateFinished
+    sort:
+      - property: DateFinished
+        direction: DESC
+  - type: cards
+    name: Shelf
+    groupBy:
+      property: category
+      direction: ASC
+    order:
+      - pdf
+      - author
+      - rating
+      - formula.state
+    image: cover

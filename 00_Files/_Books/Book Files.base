@@ -1,0 +1,72 @@
+filters:
+  and:
+    - file.inFolder("00_Files/_Books")
+    - '["pdf", "epub"].contains(file.ext)'
+formulas:
+  topic: file.folder.replace("00_Files/_Books/", "").split("/")[0]
+  size_mb: (file.size / 1048576).toFixed(1)
+  mentioned_in: file.backlinks.length
+properties:
+  file.name:
+    displayName: Book
+  formula.topic:
+    displayName: Topic
+  file.ext:
+    displayName: Type
+  formula.size_mb:
+    displayName: Size (MB)
+  formula.mentioned_in:
+    displayName: Linked from
+views:
+  - type: table
+    name: By topic
+    groupBy:
+      property: formula.topic
+      direction: ASC
+    order:
+      - file.name
+      - file.ext
+      - formula.size_mb
+      - formula.mentioned_in
+    sort:
+      - property: file.name
+        direction: ASC
+  - type: table
+    name: All books
+    order:
+      - file.name
+      - formula.topic
+      - file.ext
+      - formula.size_mb
+    sort:
+      - property: file.name
+        direction: ASC
+  - type: table
+    name: EPUB only
+    filters:
+      and:
+        - file.ext == "epub"
+    order:
+      - file.name
+      - formula.topic
+      - formula.size_mb
+  - type: table
+    name: PDF only
+    filters:
+      and:
+        - file.ext == "pdf"
+    order:
+      - file.name
+      - formula.topic
+      - formula.size_mb
+  - type: table
+    name: No tracker note
+    filters:
+      and:
+        - file.backlinks.length == 0
+    groupBy:
+      property: formula.topic
+      direction: ASC
+    order:
+      - file.name
+      - file.ext
