@@ -626,33 +626,33 @@ GitHub ^A6xYwXYY
 
 beb88a937223c5cb69030dd35c828863fccfaf0d: [[SnowMobile.svg]]
 
-7ccfb268a5c308cde972814110183ccd1b9b2a12: [[04. Backing Service Options/Cloud/_Infographic/aws Arch.gif]]
+7ccfb268a5c308cde972814110183ccd1b9b2a12: [[aws Arch.gif]]
 
-c89dd983ae880b0aa70621d39a337c3153956cd4: [[04. Backing Service Options/Cloud/_Infographic/Cloud Monitoring Services.jpeg]]
+c89dd983ae880b0aa70621d39a337c3153956cd4: [[Cloud Monitoring Services.jpeg]]
 
-3fef8d205aa5f7d4ef48324d3400f00b74231872: [[04. Backing Service Options/Cloud/_Infographic/AWS Service Arch Example.png]]
+3fef8d205aa5f7d4ef48324d3400f00b74231872: [[AWS Service Arch Example.png]]
 
-771414176e1fd0a7d30561e012f4b84d283adcaa: [[04. Backing Service Options/Cloud/graphicsToIntergrate/GetImage (11).png]]
+771414176e1fd0a7d30561e012f4b84d283adcaa: [[GetImage (11).png]]
 
-d149fa07d18dfe5949cd6a5cd51cd17343f74e52: [[04. Backing Service Options/Cloud/graphicsToIntergrate/GetImage (12).png]]
+d149fa07d18dfe5949cd6a5cd51cd17343f74e52: [[GetImage (12).png]]
 
-644b7b1e21dc8120d7db5393f0af1e3673b6e0b3: [[04. Backing Service Options/Cloud/graphicsToIntergrate/GetImage (16).png]]
+644b7b1e21dc8120d7db5393f0af1e3673b6e0b3: [[GetImage (16).png]]
 
-77b9f22c4ea027b8e26da61273572f8275d46505: [[04. Backing Service Options/Cloud/graphicsToIntergrate/GetImage (15).png]]
+77b9f22c4ea027b8e26da61273572f8275d46505: [[GetImage (15).png]]
 
-1fdd9dc139459466d23e7c9c116486b45329843d: [[04. Backing Service Options/Cloud/_Infographic/AWS Service Arch Example Two.png]]
+1fdd9dc139459466d23e7c9c116486b45329843d: [[AWS Service Arch Example Two.png]]
 
-b9a9463ea925bf6a1f2932e17326dbf4837cc7a0: [[04. Backing Service Options/Cloud/_Infographic/cloudfront.png]]
+b9a9463ea925bf6a1f2932e17326dbf4837cc7a0: [[cloudfront.png]]
 
-57731221f1cdfa153d9eef047ae735b35f93fad9: [[04. Backing Service Options/Cloud/_Infographic/Uses of Cloud front.png]]
+57731221f1cdfa153d9eef047ae735b35f93fad9: [[Uses of Cloud front.png]]
 
-99071e85bb3dbf68d80374c17ff8aae5f50676fd: [[04. Backing Service Options/Cloud/_Infographic/Vidoe on Demand.jpg]]
+99071e85bb3dbf68d80374c17ff8aae5f50676fd: [[Vidoe on Demand.jpg]]
 
-e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[04. Backing Service Options/Cloud/_Infographic/Live Streaming.png]]
+e3ca355214ce9addc2600cc937ec6fc0d47b66af: [[Live Streaming.png]]
 
-63134acd424e463450af857f65b5ea09b47abed6: [[04. Backing Service Options/Cloud/_Infographic/Service Types.jpg]]
+63134acd424e463450af857f65b5ea09b47abed6: [[Service Types.jpg]]
 
-92135ee6320c5b0a0290fc580327ab2a0b627cb8: [[04. Backing Service Options/Cloud/_Infographic/pririotyAWS.jpeg]]
+92135ee6320c5b0a0290fc580327ab2a0b627cb8: [[pririotyAWS.jpeg]]
 
 226f389b1a80c6bed444f39187a18cc93371fe57: [[data pipeline.gif]]
 
