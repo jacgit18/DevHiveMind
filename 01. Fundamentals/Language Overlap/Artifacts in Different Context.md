@@ -10,7 +10,7 @@ Purpose: This documentation discusses the term artifacts in different context.
 Status: Done
 Started:
 EditDate: 2024-03-03
-Relates: "[[Architecture/Delivery/Devops/Deployment Artifacts]]"
+Relates: "[[06. Networking & Delivery/Devops/Deployment Artifacts]]"
 Peer Reviewed: 0
 dg-publish:
 ---

@@ -13,7 +13,7 @@ Relates:
 Peer Reviewed: 0
 dg-publish: true
 ---
-![[Architecture/01. Fundamentals/Language Overlap/Algorithms & Data Structures/_Gif/tree.gif]]
+![[01. Fundamentals/Language Overlap/Algorithms & Data Structures/_Gif/tree.gif]]
 ## Tree 
 
 ^2c4475
@@ -53,7 +53,7 @@ Binary trees come in different variations, each with its unique properties and a
 The complexity of insertion, deletion, and traversal operations on binary trees is O(logN) for balanced trees but can degrade to O(N) for unbalanced ones. This logarithmic time complexity is related to the number of levels in the tree structure.
 
 # Binary Search Tree (BST)
-![[Architecture/01. Fundamentals/Language Overlap/Algorithms & Data Structures/_Infographic/BST.gif]]
+![[01. Fundamentals/Language Overlap/Algorithms & Data Structures/_Infographic/BST.gif]]
 
 A **binary search tree** extends the concept of a binary tree with a unique property: the binary-search-tree property. This property ensures that the values (or keys) of nodes follow a specific order.
 

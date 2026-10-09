@@ -9,7 +9,7 @@ Purpose: This documentation discusses Instantiation.
 Status: Done
 Started:
 EditDate: 2024-03-05
-Relates: "[[Architecture/01. Fundamentals/Language Overlap/Classes/Class Instance]]"
+Relates: "[[01. Fundamentals/Language Overlap/Classes/Class Instance]]"
 Peer Reviewed: 0
 dg-publish:
 ---

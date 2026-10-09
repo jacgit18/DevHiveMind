@@ -62,7 +62,7 @@ The Event Loop is one of the most important aspects to understand about Node.js.
 
 ## Inside the engine of Javascript
 
-![[Architecture/01. Fundamentals/Language/_Infographic/Typescript/Javascript Engine.jpeg]]
+![[01. Fundamentals/Language/_Infographic/Typescript/Javascript Engine.jpeg]]
 
 When you write a program, a syntax parser reads your code and then the compiler translates it into computer instructions(a lower-level language). 
 

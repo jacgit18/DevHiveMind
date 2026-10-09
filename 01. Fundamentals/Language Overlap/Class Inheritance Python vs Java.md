@@ -9,7 +9,7 @@ Purpose: This documentation discusses Class inheritance in the context of python
 Status: Done
 Started: 2023-11-21
 EditDate: 2024-03-04
-Relates: "[[Architecture/01. Fundamentals/Language Overlap/Fundamentals of Object-Oriented Concepts]]"
+Relates: "[[01. Fundamentals/Language Overlap/Fundamentals of Object-Oriented Concepts]]"
 Peer Reviewed: 0
 dg-publish:
 ---

@@ -9,7 +9,7 @@ Purpose: This documentation discusses Pipe functions.
 Status: Done
 Started:
 EditDate: 2024-03-02
-Relates: "[[Architecture/01. Fundamentals/Language Overlap/Algorithms & Data Structures/Algorithms/Algorithm Most Common Built in Functions]]"
+Relates: "[[01. Fundamentals/Language Overlap/Algorithms & Data Structures/Algorithms/Algorithm Most Common Built in Functions]]"
 Peer Reviewed: 0
 dg-publish: false
 ---

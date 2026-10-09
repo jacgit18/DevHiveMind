@@ -8,7 +8,7 @@ Purpose: This documentation discusses
 Status: Done
 Started:
 EditDate:
-Relates: "[[Architecture/01. Fundamentals/Language Overlap/Algorithms & Data Structures/Types of Trees]]"
+Relates: "[[01. Fundamentals/Language Overlap/Algorithms & Data Structures/Types of Trees]]"
 Peer Reviewed: 0
 dg-publish:
 ---
@@ -22,10 +22,10 @@ Non-binary trees, also known as non-binary trees or n-ary trees, are tree struct
   
 4. **B-tree:** A B-tree is a balanced tree structure that allows for a variable number of children per node. It is commonly used in databases and file systems to maintain sorted data efficiently.  
   
-5. **[[Architecture/01. Fundamentals/Language Overlap/Algorithms & Data Structures/Non-Linear Data Structures/Tree/Tries]] (Prefix Tree):** A trie is a tree-like data structure used for storing a dynamic set of strings or keys. It is commonly used in applications like IP routing, spell checkers, and implementing data structures like dictionaries.  
+5. **[[01. Fundamentals/Language Overlap/Algorithms & Data Structures/Non-Linear Data Structures/Tree/Tries]] (Prefix Tree):** A trie is a tree-like data structure used for storing a dynamic set of strings or keys. It is commonly used in applications like IP routing, spell checkers, and implementing data structures like dictionaries.  
   
-6. **[[Architecture/01. Fundamentals/Language Overlap/Algorithms & Data Structures/Types of Trees#^4d0f96| Splay Tree]]:** A splay tree is a self-adjusting binary search tree, but it can be considered a non-binary tree in the sense that nodes are restructured based on access patterns. It reshapes itself to bring frequently accessed elements closer to the root for faster future access.  
+6. **[[01. Fundamentals/Language Overlap/Algorithms & Data Structures/Types of Trees#^4d0f96| Splay Tree]]:** A splay tree is a self-adjusting binary search tree, but it can be considered a non-binary tree in the sense that nodes are restructured based on access patterns. It reshapes itself to bring frequently accessed elements closer to the root for faster future access.  
   
-7. **[[Architecture/01. Fundamentals/Language Overlap/Algorithms & Data Structures/Types of Trees#^2c4475| General Trees:]]** General trees are a broad category of trees where nodes can have any number of children. They do not have a fixed maximum number of children per node, making them very versatile for representing hierarchical data structures.  
+7. **[[01. Fundamentals/Language Overlap/Algorithms & Data Structures/Types of Trees#^2c4475| General Trees:]]** General trees are a broad category of trees where nodes can have any number of children. They do not have a fixed maximum number of children per node, making them very versatile for representing hierarchical data structures.  
   
 These are some common examples of non-binary trees, but there are many more variations and specialized tree structures used in various applications. The choice of non-binary tree depends on the specific problem and the nature of the data you need to represent or organize.

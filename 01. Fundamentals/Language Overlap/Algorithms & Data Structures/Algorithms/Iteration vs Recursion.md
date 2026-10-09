@@ -11,16 +11,16 @@ Purpose: This documentation discusses Linear Iteration vs Linear Recursion vs Bi
 Status: Done
 Started:
 EditDate: 2024-02-27
-Relates: "[[Architecture/01. Fundamentals/Language Overlap/Algorithms & Data Structures/Algorithms/Iterating vs Traversing]]"
+Relates: "[[01. Fundamentals/Language Overlap/Algorithms & Data Structures/Algorithms/Iterating vs Traversing]]"
 Peer Reviewed: 0
 dg-publish:
 ---
-![[Architecture/01. Fundamentals/Language Overlap/Algorithms & Data Structures/_Gif/many Ways.gif]]
+![[01. Fundamentals/Language Overlap/Algorithms & Data Structures/_Gif/many Ways.gif]]
 
 
 ## Linear iteration
 
-Linear iteration is a broader concept that refers to the process of sequentially visiting or processing each item in a collection/Data Structure, typically from the first item to the last, in a linear order.  It is not limited to searching for a specific value like a [[Architecture/01. Fundamentals/Language Overlap/Algorithms & Data Structures/Algorithms/Linear search vs Binary search#^d39416|Linear Search]]; it can involve various operations on each item in the collection, such as printing, modification, or computation.  
+Linear iteration is a broader concept that refers to the process of sequentially visiting or processing each item in a collection/Data Structure, typically from the first item to the last, in a linear order.  It is not limited to searching for a specific value like a [[01. Fundamentals/Language Overlap/Algorithms & Data Structures/Algorithms/Linear search vs Binary search#^d39416|Linear Search]]; it can involve various operations on each item in the collection, such as printing, modification, or computation.  
 
 ```javascript
 function linearIteration(arr) {

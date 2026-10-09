@@ -36,7 +36,7 @@ dg-publish:
 Two pointer and Sliding window can be interchangeable solution but one would just be more efficient then the other depending on the what the problem solution demands typically pointer is used for comparison while window is used for other action like adding or doing some other action with the elements in the range of the window but not specifically comparison of values.
 
 ## Two Pointer
-Problem [[Architecture/01. Fundamentals/Language Overlap/Algorithms & Data Structures/Patterns/Two Pointer Indicators|Indicators]]
+Problem [[01. Fundamentals/Language Overlap/Algorithms & Data Structures/Patterns/Two Pointer Indicators|Indicators]]
 *Right pointer doesn't always need to point to last element*
 
 don't always need to move both pointers one pointer can stay still

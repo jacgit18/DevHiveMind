@@ -10,7 +10,7 @@ Purpose: This documentation discusses DeMorgans law from discrete math and some 
 Status: Done
 Started:
 EditDate: 2024-02-27
-Relates: "[[Architecture/01. Fundamentals/Language Overlap/Algorithms & Data Structures/Discrete math]]"
+Relates: "[[01. Fundamentals/Language Overlap/Algorithms & Data Structures/Discrete math]]"
 Peer Reviewed: 0
 dg-publish:
 ---

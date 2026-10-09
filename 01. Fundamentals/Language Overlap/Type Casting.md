@@ -135,13 +135,13 @@ let length: number = parseInt(value as string); // or <string>value
 
 This code will correctly cast the string "42" to the number 42.
 
-##  [[Architecture/01. Fundamentals/Language Overlap/Boxing and Unboxing]]
+##  [[01. Fundamentals/Language Overlap/Boxing and Unboxing]]
 - Java also supports automatic conversion between primitive types and their corresponding wrapper classes, known as boxing and unboxing.
 - Boxing is the process of converting a primitive value to its corresponding wrapper class (e.g., `int` to `Integer`).
 - Unboxing is the reverse process, converting a wrapper class object to its corresponding primitive value.
 - Java performs boxing and unboxing automatically when needed, allowing seamless conversion between primitives and their wrapper classes.
 
-## [[Architecture/01. Fundamentals/Language Overlap/Boxing and Unboxing#Reference Type Casting Example|Reference Type Casting]]
+## [[01. Fundamentals/Language Overlap/Boxing and Unboxing#Reference Type Casting Example|Reference Type Casting]]
    - Reference type casting is used when working with objects and class hierarchies. It is applicable to classes and interfaces in Java. Reference type casting can be performed between two types related by inheritance or implementation.
 	   - Upcasting ([[#^3799d1 |implicit]] casting): It involves casting an object to one of its superclasses or implemented interfaces.
 		   - Upcasting is safe and can be done implicitly without an explicit cast.

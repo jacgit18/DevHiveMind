@@ -13,14 +13,14 @@ Relates:
 Peer Reviewed: 0
 dg-publish:
 ---
-![[Architecture/01. Fundamentals/Language Overlap/Algorithms & Data Structures/_Infographic/BigORecursion.png]]
+![[01. Fundamentals/Language Overlap/Algorithms & Data Structures/_Infographic/BigORecursion.png]]
 # Understanding Recursion
 
 Recursion is a powerful concept in computer science and mathematics. It is defined as a process where an entity is defined in terms of a smaller version of itself. In the realm of programming, any problem that can be tackled recursively can also be solved iteratively with a for loop, and vice versa. 
 
 ## Recursive Methods and Time Complexity
 
-Recursive methods offer readability but may lead to large stacks, potentially causing stack overflow errors. However, you can optimize recursive methods to have a time complexity of O(n) by using dynamic programming techniques like [[Architecture/01. Fundamentals/Language Overlap/Algorithms & Data Structures/Algorithms/Memoization]]. Recursive approaches are particularly useful in certain scenarios, such as when searching for solutions, working with trees, converting data into tree structures, sorting, and dynamic programming.
+Recursive methods offer readability but may lead to large stacks, potentially causing stack overflow errors. However, you can optimize recursive methods to have a time complexity of O(n) by using dynamic programming techniques like [[01. Fundamentals/Language Overlap/Algorithms & Data Structures/Algorithms/Memoization]]. Recursive approaches are particularly useful in certain scenarios, such as when searching for solutions, working with trees, converting data into tree structures, sorting, and dynamic programming.
 
 ## Different Ways to Implement Recursion
 

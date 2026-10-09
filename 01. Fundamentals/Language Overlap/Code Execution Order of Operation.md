@@ -11,7 +11,7 @@ Purpose: This documentation discusses Code Execution Order of Operation
 Status: Done
 Started:
 EditDate: 2024-03-04
-Relates: "[[Architecture/01. Fundamentals/Language Overlap/Asynchronous Programming]]"
+Relates: "[[01. Fundamentals/Language Overlap/Asynchronous Programming]]"
 Peer Reviewed: 0
 dg-publish:
 ---

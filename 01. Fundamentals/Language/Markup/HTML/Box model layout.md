@@ -13,7 +13,7 @@ Relates:
 Peer Reviewed: 0
 dg-publish: false
 ---
-![[Architecture/01. Fundamentals/Language/_Infographic/Markup/Box model layout.png]]
+![[01. Fundamentals/Language/_Infographic/Markup/Box model layout.png]]
 
 The **blue box**, symbolizing the content area, encapsulates the actual content like text, images, or video within the element. It is defined by the content width (or content-box width) and content height (or content-box height), often complemented by a background color or image.
 

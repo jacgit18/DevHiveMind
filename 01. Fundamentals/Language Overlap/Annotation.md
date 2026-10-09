@@ -121,7 +121,7 @@ public class BankAccount {
 
 The provided code snippet defines a custom annotation called `ProcessedBy` which is annotated with `@Target(ElementType.TYPE)`, specifying that this annotation can be applied only to types (e.g., classes).
 
-The `@Retention(RetentionPolicy.RUNTIME)` annotation indicates that the `ProcessedBy` annotation information should be retained at runtime, allowing [[Architecture/01. Fundamentals/Language Overlap/Introspection vs Reflection|reflection]] to access it.
+The `@Retention(RetentionPolicy.RUNTIME)` annotation indicates that the `ProcessedBy` annotation information should be retained at runtime, allowing [[01. Fundamentals/Language Overlap/Introspection vs Reflection|reflection]] to access it.
 
 The annotation has one element, `value()`, which is of type `Class<?>`. This implies that when you use `@ProcessedBy`, you need to provide a class as its value.
 

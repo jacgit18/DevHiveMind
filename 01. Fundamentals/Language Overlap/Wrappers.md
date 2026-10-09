@@ -9,7 +9,7 @@ Status: Done
 Purpose: This documentation discusses wrappers.
 Started:
 EditDate: 2024-03-06
-Relates: "[[Architecture/01. Fundamentals/Language Overlap/Primitive Wrappers Across Languages]]"
+Relates: "[[01. Fundamentals/Language Overlap/Primitive Wrappers Across Languages]]"
 Peer Reviewed: 0
 dg-publish: false
 ---

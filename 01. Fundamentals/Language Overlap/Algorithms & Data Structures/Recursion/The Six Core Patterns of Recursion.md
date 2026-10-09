@@ -12,7 +12,7 @@ Relates:
 Peer Reviewed: 0
 dg-publish:
 ---
-![[Architecture/01. Fundamentals/Language Overlap/Algorithms & Data Structures/_Gif/Recursion.gif]]
+![[01. Fundamentals/Language Overlap/Algorithms & Data Structures/_Gif/Recursion.gif]]
 
 ## Iteration and Recursion
 

@@ -13,7 +13,7 @@ Relates:
 Peer Reviewed: 0
 dg-publish:
 ---
-![[Architecture/01. Fundamentals/Language Overlap/Algorithms & Data Structures/_Infographic/DirectionalGraph.gif]]
+![[01. Fundamentals/Language Overlap/Algorithms & Data Structures/_Infographic/DirectionalGraph.gif]]
 
 
 1. **Graph Basics:**

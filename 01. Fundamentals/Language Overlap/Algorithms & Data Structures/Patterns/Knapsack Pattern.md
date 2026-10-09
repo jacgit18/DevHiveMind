@@ -8,7 +8,7 @@ Purpose: This documentation discusses Knapsack Pattern
 Status: Refinement
 Started: 2023-12-09
 EditDate:
-Relates: "[[Architecture/01. Fundamentals/Language Overlap/Algorithms & Data Structures/Algorithms/Dynamic programming Patterns]]"
+Relates: "[[01. Fundamentals/Language Overlap/Algorithms & Data Structures/Algorithms/Dynamic programming Patterns]]"
 Peer Reviewed: 0
 dg-publish:
 ---

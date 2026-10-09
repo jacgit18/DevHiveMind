@@ -12,7 +12,7 @@ Relates:
 Peer Reviewed: 0
 dg-publish:
 ---
-![[Architecture/01. Fundamentals/Language Overlap/Algorithms & Data Structures/_Gif/Thought.gif]]
+![[01. Fundamentals/Language Overlap/Algorithms & Data Structures/_Gif/Thought.gif]]
 
 you can use a regex statement with with some of the array methods but may not be the best in terms of runtime but if we were to go down that path you could first sort 
 which would be O(n log n) and to go even further you could utilize a binary search in combination with the regex statement and the runtime might be O(log n) if you implement it recursively which is the more easier path just in terms of implementation but if you go the iterative path it would be more efficient being O(1)  

@@ -11,11 +11,11 @@ Purpose: This documentation discusses different aspect of a algorithm to examine
 Status: Refinement
 Started:
 EditDate:
-Relates: "[[Architecture/01. Fundamentals/Language Overlap/Algorithms & Data Structures/Algorithms/Iteration vs Recursion]]"
+Relates: "[[01. Fundamentals/Language Overlap/Algorithms & Data Structures/Algorithms/Iteration vs Recursion]]"
 Peer Reviewed: 0
 dg-publish:
 ---
-![[Architecture/01. Fundamentals/Language Overlap/Algorithms & Data Structures/_Gif/paths.gif]]
+![[01. Fundamentals/Language Overlap/Algorithms & Data Structures/_Gif/paths.gif]]
 ## Problem Identification
 
 When approaching a problem, it's important to begin by identifying the core issue at hand. Rather than focusing too much on the desired output, consider the attributes and parameters involved, especially when multiple parameters are at play prioritize the parameter that is apart of the main functionality or main problem.
@@ -32,7 +32,7 @@ It's essential to consider the broader scope of a problem and its impact on the 
 
 
 ## Handling Numeric Values
-![[Architecture/01. Fundamentals/Language Overlap/Algorithms & Data Structures/_Infographic/numbers.png]]
+![[01. Fundamentals/Language Overlap/Algorithms & Data Structures/_Infographic/numbers.png]]
 **Numeric values can also be represented with ASCII values
 - For an array of numbers or numbers, consider attributes like:
   - Natural numbers (positive numbers)

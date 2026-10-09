@@ -9,7 +9,7 @@ Purpose: This documentation discusses Bitwise XOR.
 Status: Refinement
 Started:
 EditDate: 2024-02-27
-Relates: "[[Architecture/01. Fundamentals/Language Overlap/Algorithms & Data Structures/Algorithms/Bit-Binary]]"
+Relates: "[[01. Fundamentals/Language Overlap/Algorithms & Data Structures/Algorithms/Bit-Binary]]"
 Peer Reviewed: 0
 dg-publish:
 ---

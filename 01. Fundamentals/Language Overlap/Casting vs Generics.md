@@ -55,7 +55,7 @@ Type Casting:
 
 In general, it is recommended to use generics over type casting when possible. 
 
-Generics provide [[Architecture/01. Fundamentals/Language Overlap/Dynamic & Static Polymorphism#Static Polymorphism (Compile-time Polymorphism)|compile-time]] type safety and improve code readability. 
+Generics provide [[01. Fundamentals/Language Overlap/Dynamic & Static Polymorphism#Static Polymorphism (Compile-time Polymorphism)|compile-time]] type safety and improve code readability. 
 
 Type casting should be used sparingly, primarily in scenarios where you need to work with specific subclasses or implementing classes and cannot achieve the desired behavior with generics alone. When using type casting, ensure proper type checks and handle potential `ClassCastException` gracefully.
 

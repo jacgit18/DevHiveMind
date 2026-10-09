@@ -17,7 +17,7 @@ Peer Reviewed: 0
 dg-publish: false
 ---
 
-![[Architecture/01. Fundamentals/Language Overlap/Algorithms & Data Structures/_Infographic/SelectionSort.gif]]
+![[01. Fundamentals/Language Overlap/Algorithms & Data Structures/_Infographic/SelectionSort.gif]]
 
 Selection sort is a simple sorting algorithm. This sorting algorithm is an in-place comparison-based algorithm in which the list is divided into two parts, the sorted part at the left end and the unsorted part at the right end. Initially, the sorted part is empty and the unsorted part is the entire list.  
   

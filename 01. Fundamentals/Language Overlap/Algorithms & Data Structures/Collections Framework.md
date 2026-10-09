@@ -13,7 +13,7 @@ Relates:
 Peer Reviewed: 0
 dg-publish:
 ---
-![[Architecture/01. Fundamentals/Language/_Infographic/Java/Collections in Java.png]]
+![[01. Fundamentals/Language/_Infographic/Java/Collections in Java.png]]
 ### Background
 
 Introduced in Java 1.2, the Collections Framework revolutionized how Java objects are grouped, moving beyond the limited and non-extensible Array, Vector, and Hashtable classes. This framework provided a unified architecture for the representation and manipulation of collections, which are objects that group multiple elements, like a list of names or a jar of cookies.

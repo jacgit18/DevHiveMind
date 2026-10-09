@@ -11,7 +11,7 @@ Purpose: This documentation discusses URI a super-set of  URL, talking about que
 Status: Done
 Started:
 EditDate: 2024-01-30
-Relates: "[[Architecture/01. Fundamentals/Web/Structuring URL]]"
+Relates: "[[01. Fundamentals/Web/Structuring URL]]"
 Peer Reviewed: 0
 dg-publish: false
 ---

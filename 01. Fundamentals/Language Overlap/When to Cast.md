@@ -13,11 +13,11 @@ Relates:
 Peer Reviewed: 0
 dg-publish:
 ---
-[[Architecture/01. Fundamentals/Language Overlap/Type Casting]], in the context of system design, refers to the process of converting an object from one type to another in a programming language. It allows you to treat an object as an instance of a different class or interface temporarily. While casting can be a powerful tool in certain situations, it's important to use it judiciously and understand when it makes sense to cast and when to avoid it.
+[[01. Fundamentals/Language Overlap/Type Casting]], in the context of system design, refers to the process of converting an object from one type to another in a programming language. It allows you to treat an object as an instance of a different class or interface temporarily. While casting can be a powerful tool in certain situations, it's important to use it judiciously and understand when it makes sense to cast and when to avoid it.
 
 ## When it makes sense to cast:
 
-1. [[Architecture/01. Fundamentals/Language Overlap/Polymorphism]]: Casting is often used to achieve polymorphic behavior in object-oriented programming. Polymorphism allows objects of different types to be treated as instances of a common superclass or interface. Casting can be used to convert objects to the superclass or interface type, enabling you to invoke methods and access properties defined in the common type.
+1. [[01. Fundamentals/Language Overlap/Polymorphism]]: Casting is often used to achieve polymorphic behavior in object-oriented programming. Polymorphism allows objects of different types to be treated as instances of a common superclass or interface. Casting can be used to convert objects to the superclass or interface type, enabling you to invoke methods and access properties defined in the common type.
 
 2. Specific type access: Occasionally, you may need to access specific methods or properties of a class that are not present in its parent class or interface. In such cases, casting to the specific type that contains the desired functionality can be necessary to perform the required operations.
 

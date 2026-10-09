@@ -13,7 +13,7 @@ Relates:
 Peer Reviewed: 0
 dg-publish:
 ---
-![[Architecture/01. Fundamentals/Language Overlap/Algorithms & Data Structures/_Gif/Whiteboarding.gif]]
+![[01. Fundamentals/Language Overlap/Algorithms & Data Structures/_Gif/Whiteboarding.gif]]
 
 #todo/BAU/Interview 
 - [ ] The simplest way to pass more interviews: just ask to skip the automated coding assessment.  

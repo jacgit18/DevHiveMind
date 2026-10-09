@@ -9,11 +9,11 @@ Purpose: This documentation discusses
 Status: Refinement
 Started:
 EditDate: 2023-11-02
-Relates: "[[Architecture/01. Fundamentals/Language Overlap/Algorithms & Data Structures/Non-Linear Data Structures/Graphs/Graph]]"
+Relates: "[[01. Fundamentals/Language Overlap/Algorithms & Data Structures/Non-Linear Data Structures/Graphs/Graph]]"
 Peer Reviewed: 0
 dg-publish:
 ---
-![[Architecture/01. Fundamentals/Language Overlap/Algorithms & Data Structures/_Infographic/Graph.gif]]
+![[01. Fundamentals/Language Overlap/Algorithms & Data Structures/_Infographic/Graph.gif]]
 
 ## Graph
 

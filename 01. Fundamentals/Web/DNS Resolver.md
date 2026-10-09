@@ -9,11 +9,11 @@ Purpose: This documentation discusses DNS resolver implementation.
 Status: Done
 Started: 2024-02-01
 EditDate:
-Relates: "[[Architecture/01. Fundamentals/Web/DNS(Domain Name System)]]"
+Relates: "[[01. Fundamentals/Web/DNS(Domain Name System)]]"
 Peer Reviewed: 0
 dg-publish: false
 ---
-Implementing a DNS resolver in JavaScript involves making DNS queries and handling responses. You can use the `dns` module in [[Architecture/01. Fundamentals/Language/Typescript/Node.js]] for this purpose. If you have a [[Architecture/Delivery/Load Balancer]], it might handle DNS resolution itself, and you can connect to the load balancer's IP address.  
+Implementing a DNS resolver in JavaScript involves making DNS queries and handling responses. You can use the `dns` module in [[01. Fundamentals/Language/Typescript/Node.js]] for this purpose. If you have a [[06. Networking & Delivery/Load Balancer]], it might handle DNS resolution itself, and you can connect to the load balancer's IP address.  
   
 Here's a simple example using Node.js `dns` module:  
   
@@ -37,7 +37,7 @@ Keep in mind that browser-based JavaScript (client-side) is limited in making di
 
 ## DNS Resolver Implementation
 
-[[Architecture/Delivery/Load Balancer]] like HAProxy and NGINX don't typically include a built-in DNS resolver themselves. They rely on the underlying operating system's DNS resolution capabilities. However, these load balancers are designed to work seamlessly with DNS.  
+[[06. Networking & Delivery/Load Balancer]] like HAProxy and NGINX don't typically include a built-in DNS resolver themselves. They rely on the underlying operating system's DNS resolution capabilities. However, these load balancers are designed to work seamlessly with DNS.  
   
 In a typical setup, you configure your load balancer with the IP addresses or hostnames of your backend servers. DNS resolution for these backend servers is performed by the system running the load balancer. If you need dynamic updates or have changing backend server addresses, you may need an external mechanism to update the load balancer's configuration.  
   

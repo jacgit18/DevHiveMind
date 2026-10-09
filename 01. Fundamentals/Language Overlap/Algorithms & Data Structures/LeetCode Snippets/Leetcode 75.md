@@ -15,7 +15,7 @@ EditDate:
 Relates: 
 dg-publish:
 ---
-![[Architecture/01. Fundamentals/Language Overlap/Algorithms & Data Structures/LeetCode Snippets/Leetcode 75]]
+![[01. Fundamentals/Language Overlap/Algorithms & Data Structures/LeetCode Snippets/Leetcode 75]]
 Doesn't display since code snippets
 
 Ask yourself how many swap checks 
@@ -113,8 +113,8 @@ function sortArray(nums) {
 
 # Text Elements
 # Element Links
-MC6H74Ek: [[Architecture/01. Fundamentals/Language Overlap/Algorithms & Data Structures/LeetCode Snippets/Leetcode 75#Alt Section]]
-gv3QK9PC: [[Architecture/01. Fundamentals/Language Overlap/Algorithms & Data Structures/LeetCode Snippets/Leetcode 75#Attempt]]
+MC6H74Ek: [[01. Fundamentals/Language Overlap/Algorithms & Data Structures/LeetCode Snippets/Leetcode 75#Alt Section]]
+gv3QK9PC: [[01. Fundamentals/Language Overlap/Algorithms & Data Structures/LeetCode Snippets/Leetcode 75#Attempt]]
 
 %%
 # Drawing

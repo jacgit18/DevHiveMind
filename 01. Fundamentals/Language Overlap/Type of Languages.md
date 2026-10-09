@@ -12,7 +12,7 @@ Relates:
 Peer Reviewed: 0
 dg-publish:
 ---
-![[Architecture/01. Fundamentals/Language Overlap/_Infographic/Language Categories.png]]
+![[01. Fundamentals/Language Overlap/_Infographic/Language Categories.png]]
 
 
 ## [[_Tech Glossary#^acb92b|Typed Languages]]

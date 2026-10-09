@@ -18,7 +18,7 @@ dg-publish:
   
 2. **Counterexamples:** Try to find cases where your approach might fail. If you can identify scenarios where your intuition doesn't hold up, you may need to reconsider your approach.  
   
-3. **Proof by Induction:** If your intuition suggests a recursive approach, try proving its correctness using [[Architecture/01. Fundamentals/Language Overlap/Algorithms & Data Structures/Mathematical Induction]].  
+3. **Proof by Induction:** If your intuition suggests a recursive approach, try proving its correctness using [[01. Fundamentals/Language Overlap/Algorithms & Data Structures/Mathematical Induction]].  
   
 4. **Proof by Contradiction:** Assume that your approach is incorrect and then show that this assumption leads to a contradiction. If you can't find a contradiction, your approach might be valid.  
   

@@ -11,7 +11,7 @@ Purpose: This documentation discusses the world of sorting algorithms.
 Status: Refinement
 Started:
 EditDate: 2024-02-10
-Relates: "[[Architecture/01. Fundamentals/Language Overlap/Algorithms & Data Structures/Algorithms/Big O]]"
+Relates: "[[01. Fundamentals/Language Overlap/Algorithms & Data Structures/Algorithms/Big O]]"
 Peer Reviewed: 0
 dg-publish:
 ---
@@ -41,25 +41,25 @@ dg-publish:
 > [!important] On Interview you may be asked a question more so then actually implement also you can mention that you would use one sort or the other with reason why depending if it is relevant to problem your doing. 
 
 ### In-Place Sorting  
-When sorting is done in place, it means that the original input, such as an array, is modified directly during the sorting process, without creating a new sorted array. This relates to [[Architecture/01. Fundamentals/Language Overlap/Shallow Copy and Deep Copy(clone)]] also examples of this type of sort are Bubble, Insertion, Selection, Heap, and Cyclic sort.
+When sorting is done in place, it means that the original input, such as an array, is modified directly during the sorting process, without creating a new sorted array. This relates to [[01. Fundamentals/Language Overlap/Shallow Copy and Deep Copy(clone)]] also examples of this type of sort are Bubble, Insertion, Selection, Heap, and Cyclic sort.
 
 ### Merge Sort:
 
-[[Architecture/01. Fundamentals/Language Overlap/Algorithms & Data Structures/Sorts/Merge sort]]is a reliable sorting algorithm that falls under the category of  `divide and conquer `sorts. It is known for its consistent and linear time complexity.
+[[01. Fundamentals/Language Overlap/Algorithms & Data Structures/Sorts/Merge sort]]is a reliable sorting algorithm that falls under the category of  `divide and conquer `sorts. It is known for its consistent and linear time complexity.
 
 In the case of Merge Sort, the time complexity is typically `O(n log(n))`. However, Quick Sort can be more space-efficient, but it can have an unfavorable runtime in worst-case scenarios due to its pivot technique, which may lead to `exponential` time complexity.
 
 If you're concerned about worst-case scenarios, Merge Sort is a safer choice. But if you're sorting data in memory on your machine and space efficiency is a priority, Merge Sort can be more resource-intensive. For large data structures, Merge Sort is often a better choice. It's a stable sort and can be adapted for linked lists and large datasets stored on slower media like disks.
 
 ### Quick Sort:
-[[Architecture/01. Fundamentals/Language Overlap/Algorithms & Data Structures/Sorts/Quick Sort]] , on the other hand, is known for its space efficiency and good cache locality. It's an in-place sorting algorithm, meaning it doesn't require additional storage space for sorting. In the worst-case scenario, Quick Sort has a time complexity of` O(n^2)`, but this can be improved with techniques like randomized Quick Sort or careful pivot selection.
+[[01. Fundamentals/Language Overlap/Algorithms & Data Structures/Sorts/Quick Sort]] , on the other hand, is known for its space efficiency and good cache locality. It's an in-place sorting algorithm, meaning it doesn't require additional storage space for sorting. In the worst-case scenario, Quick Sort has a time complexity of` O(n^2)`, but this can be improved with techniques like randomized Quick Sort or careful pivot selection.
 
 Quick Sort is particularly efficient for smaller arrays or datasets and has good cache locality, making it faster in some cases, especially in a virtual memory environment.
 
 ### Heap Sort
-alternatively you can use [[Architecture/01. Fundamentals/Language Overlap/Algorithms & Data Structures/Sorts/Heap Sort]] but it is a little slower than quicksort but you don't have to worry about worst-case and it has a better space complexity than merge sort 
+alternatively you can use [[01. Fundamentals/Language Overlap/Algorithms & Data Structures/Sorts/Heap Sort]] but it is a little slower than quicksort but you don't have to worry about worst-case and it has a better space complexity than merge sort 
 
-### [[Architecture/01. Fundamentals/Language Overlap/Algorithms & Data Structures/Patterns/Key Base Attributes of  Grokking Algorithm patterns#^b310e2|Cyclic Sort]]
+### [[01. Fundamentals/Language Overlap/Algorithms & Data Structures/Patterns/Key Base Attributes of  Grokking Algorithm patterns#^b310e2|Cyclic Sort]]
 A sort under grokking algorithms
 
 
@@ -67,31 +67,31 @@ A sort under grokking algorithms
 
 ## Practice Sorts
 
-### [[Architecture/01. Fundamentals/Language Overlap/Algorithms & Data Structures/Sorts/Bubble sort]] & [[Architecture/01. Fundamentals/Language Overlap/Algorithms & Data Structures/Sorts/Selection sort]]
+### [[01. Fundamentals/Language Overlap/Algorithms & Data Structures/Sorts/Bubble sort]] & [[01. Fundamentals/Language Overlap/Algorithms & Data Structures/Sorts/Selection sort]]
 
 Practice with bubble and selection sort to understand basics don't use bubble or selection sort in your code or interview
 
 Bubble insertion and selection sort are typically the worst in terms of runtime which is exponential or `O(n^2) `but when it comes to insertion if best case which is small amounts of data then it can become O(n) or Ω(n) which is linear time
-### [[Architecture/01. Fundamentals/Language Overlap/Algorithms & Data Structures/Sorts/Insertion sort]]
+### [[01. Fundamentals/Language Overlap/Algorithms & Data Structures/Sorts/Insertion sort]]
 
 use insertion sort for small inputs that are partially sorted to get the LINEAR TIME `O(n)` and it uses little space  
 
 ## Non-Comparison Sorts
 
-### [[Architecture/01. Fundamentals/Language Overlap/Algorithms & Data Structures/Sorts/Bucket Sort]]
+### [[01. Fundamentals/Language Overlap/Algorithms & Data Structures/Sorts/Bucket Sort]]
 
 Bucket sort is mainly useful when dealing with numbers in different ranges
 
-## [[Architecture/01. Fundamentals/Language Overlap/Algorithms & Data Structures/Sorts/Counting Sort]]
+## [[01. Fundamentals/Language Overlap/Algorithms & Data Structures/Sorts/Counting Sort]]
 
 Counting sort also deals with numbers in different ranges
 
-### [[Architecture/01. Fundamentals/Language Overlap/Algorithms & Data Structures/Sorts/Radix Sort]](Not likely to be on interview)
+### [[01. Fundamentals/Language Overlap/Algorithms & Data Structures/Sorts/Radix Sort]](Not likely to be on interview)
 
 Radix Sort + Counting Sort are used for integers in a restricted range
 
 
-**Don't forget to Keep [[Architecture/01. Fundamentals/Language Overlap/Algorithms & Data Structures/Sorts/_Sort Implementation Focus]] in mind**
+**Don't forget to Keep [[01. Fundamentals/Language Overlap/Algorithms & Data Structures/Sorts/_Sort Implementation Focus]] in mind**
 
 # Summary
 
@@ -99,7 +99,7 @@ Radix Sort + Counting Sort are used for integers in a restricted range
 - Choose Quick Sort when space efficiency and speed for smaller datasets are your priorities.
 - Merge Sort is preferred for linked lists and scenarios where stability is crucial.
 - Quick Sort is preferred for arrays and can be optimized to be as efficient as Merge Sort in certain cases.
-- Both these sorts are usually implement [[Architecture/01. Fundamentals/Language Overlap/Algorithms & Data Structures/Recursion/Recursion & Recursion Runtime| Recursively]]
+- Both these sorts are usually implement [[01. Fundamentals/Language Overlap/Algorithms & Data Structures/Recursion/Recursion & Recursion Runtime| Recursively]]
 
 **Sorting Method:**
 

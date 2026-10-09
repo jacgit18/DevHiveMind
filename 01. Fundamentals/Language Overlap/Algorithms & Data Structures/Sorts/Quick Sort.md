@@ -15,7 +15,7 @@ Relates:
 Peer Reviewed: 0
 dg-publish: false
 ---
-![[Architecture/01. Fundamentals/Language Overlap/Algorithms & Data Structures/_Infographic/quickSort.gif]]
+![[01. Fundamentals/Language Overlap/Algorithms & Data Structures/_Infographic/quickSort.gif]]
 
 
 - **Quick Sort**: It's a divide and conquer algorithm, just like Merge Sort. It's known for being one of the fastest sorting algorithms on average but has some unfavorable worst-case behaviors.
@@ -34,7 +34,7 @@ dg-publish: false
 
 - **Worst-Case Scenario**: Quick Sort has a worst-case time complexity of O(n^2). To mitigate this, selecting a good pivot point is crucial.
 
-![[Architecture/01. Fundamentals/Language Overlap/Algorithms & Data Structures/_Coding Whiteboard/quicksort.png]]
+![[01. Fundamentals/Language Overlap/Algorithms & Data Structures/_Coding Whiteboard/quicksort.png]]
 
 ```typescript
 const numbers: number[] = [99, 44, 6, 2, 1, 5, 63, 87, 283, 4, 0];

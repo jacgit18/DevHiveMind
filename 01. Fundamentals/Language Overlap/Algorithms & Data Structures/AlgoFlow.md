@@ -9,11 +9,11 @@ Purpose: This documentation is a observation about the overall structure of a al
 Status: Refinement
 Started:
 EditDate:
-Relates: "[[Architecture/01. Fundamentals/Language Overlap/Flow of Control]]"
+Relates: "[[01. Fundamentals/Language Overlap/Flow of Control]]"
 Peer Reviewed: 0
 dg-publish:
 ---
-![[Architecture/01. Fundamentals/Language Overlap/Algorithms & Data Structures/_Infographic/AlgoFlow.png]]
+![[01. Fundamentals/Language Overlap/Algorithms & Data Structures/_Infographic/AlgoFlow.png]]
 
 ## When Reading Documentation
 
@@ -23,10 +23,10 @@ When delving into documentation about a framework, library, language, technology
 
 ### Coding Styles
 
--   [[Architecture/01. Fundamentals/Language Overlap/Declarative Coding]]
--   [[Architecture/01. Fundamentals/Language Overlap/Imperative Coding]]
+-   [[01. Fundamentals/Language Overlap/Declarative Coding]]
+-   [[01. Fundamentals/Language Overlap/Imperative Coding]]
 
-![[Architecture/01. Fundamentals/Language Overlap/Algorithms & Data Structures/_Infographic/paradigms.png]]
+![[01. Fundamentals/Language Overlap/Algorithms & Data Structures/_Infographic/paradigms.png]]
 
 ### High Level Example
 
@@ -38,7 +38,7 @@ Always keep scope in mind. Solving the right problems and understanding their im
 
 ## Storing Data in Data Structures
 
-In data structures, **[[Architecture/01. Fundamentals/Language Overlap/Algorithms & Data Structures/Non-Linear Data Structures/Key Value Pairs/Dictionaries]]** and **[[Architecture/01. Fundamentals/Language Overlap/Algorithms & Data Structures/Non-Linear Data Structures/Key Value Pairs/Map#Hashmap vs. Map|Hash Map]]** are valuable tools for efficient data storage, particularly when dealing with values that appear multiple times in an array. This is particularly useful to avoid nested for loops, which can lead to inefficient O(n^2) algorithms.
+In data structures, **[[01. Fundamentals/Language Overlap/Algorithms & Data Structures/Non-Linear Data Structures/Key Value Pairs/Dictionaries]]** and **[[01. Fundamentals/Language Overlap/Algorithms & Data Structures/Non-Linear Data Structures/Key Value Pairs/Map#Hashmap vs. Map|Hash Map]]** are valuable tools for efficient data storage, particularly when dealing with values that appear multiple times in an array. This is particularly useful to avoid nested for loops, which can lead to inefficient O(n^2) algorithms.
 
 - **Bubble Sort**: This algorithm repeatedly moves through the list, comparing adjacent elements and swapping them if they are in the wrong order. Worst case runtime is **O(n^2) 
 

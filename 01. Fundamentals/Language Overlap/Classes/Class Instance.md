@@ -52,7 +52,7 @@ public class Main {
 ```
 
 - Since these methods are called from the `main` method (which is static), they need to be static as well.
-- When a method is declared as [[Architecture/01. Fundamentals/Language Overlap/static Keyword|static]], it can be called on the class itself rather than on an instance of the class. This is why you can call `doWork(acct)` even though `acct` is an instance variable.
+- When a method is declared as [[01. Fundamentals/Language Overlap/static Keyword|static]], it can be called on the class itself rather than on an instance of the class. This is why you can call `doWork(acct)` even though `acct` is an instance variable.
 - In summary, the use of `static` in this context is due to the fact that the methods (`main`, `doWork`, and `showName`) are being called from a static context (the `main` method) and, therefore, need to be static themselves. If you were to create an instance of the `Main` class and call these methods on that instance, you might consider removing the `static` modifier from these methods.
 
 3. **Instances from String Name or Type Literal:**

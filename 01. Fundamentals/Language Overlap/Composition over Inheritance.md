@@ -123,7 +123,7 @@ public class InheritanceExample {
 
 
 #### Function inheritance
-In JavaScript, functions can participate in a form of inheritance through [[Architecture/01. Fundamentals/Language/Typescript/Prototypes]]. Every JavaScript object has a prototype, which is essentially a reference to another object. When you call a method or property on an object and it's not found on the object itself, JavaScript looks for it in the object's prototype chain.
+In JavaScript, functions can participate in a form of inheritance through [[01. Fundamentals/Language/Typescript/Prototypes]]. Every JavaScript object has a prototype, which is essentially a reference to another object. When you call a method or property on an object and it's not found on the object itself, JavaScript looks for it in the object's prototype chain.
 
 Functions in JavaScript are also objects, and they have prototypes. You can use the prototype property of a constructor function to add properties or methods that will be shared by all instances created with that constructor. This is often referred to as prototype-based inheritance.
 

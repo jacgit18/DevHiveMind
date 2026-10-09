@@ -14,13 +14,13 @@ Peer Reviewed: 0
 dg-publish:
 ---
 
-![[Architecture/01. Fundamentals/Language Overlap/Algorithms & Data Structures/_Gif/BigO.gif]]
+![[01. Fundamentals/Language Overlap/Algorithms & Data Structures/_Gif/BigO.gif]]
 
 In the realm of algorithm analysis, it's essential to understand the various factors that affect an algorithm's runtime. 
 
 Runtime can vary significantly across different cases, including **Worst**, **Average**, and **Best** scenarios, particularly when it comes to sorting algorithms.
 
-![[Architecture/01. Fundamentals/Language Overlap/Algorithms & Data Structures/_Infographic/Runtime Big O.png]]
+![[01. Fundamentals/Language Overlap/Algorithms & Data Structures/_Infographic/Runtime Big O.png]]
 <mark style="background: #FFB86CA6;">Scale Ascending from 🔼 EXCELLENT to WORST TIME 
 lower EXCELLENT runtime + higher WORST runtime = higher WORST runtime</mark>
 

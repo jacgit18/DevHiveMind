@@ -12,7 +12,7 @@ Relates:
 Peer Reviewed: 0
 dg-publish:
 ---
-![[Architecture/01. Fundamentals/Language Overlap/Algorithms & Data Structures/_Infographic/nonLinearRuntime.png]]
+![[01. Fundamentals/Language Overlap/Algorithms & Data Structures/_Infographic/nonLinearRuntime.png]]
 
 ### Set 
 **Insertion (CREATE/UPDATE) :
@@ -74,7 +74,7 @@ Binary Search Trees are data structures that maintain their elements in a way th
 # Graph
 ## 1. Storage:
    - **Category:** Access
-   - **Worst-Case Runtime Complexity:** This operation is not typically categorized with traditional runtime complexities, as it's related to the memory required to store the graph's structure. In the case of an [[Architecture/01. Fundamentals/Language Overlap/Algorithms & Data Structures/Non-Linear Data Structures/Graphs/Graph List & Matrix Type#^897f42| adjacency matrix]], it's `O(|V|^2)`, and for an [[Architecture/01. Fundamentals/Language Overlap/Algorithms & Data Structures/Non-Linear Data Structures/Graphs/Graph List & Matrix Type| adjacency list]], it's `O(|V| + |E|)`.
+   - **Worst-Case Runtime Complexity:** This operation is not typically categorized with traditional runtime complexities, as it's related to the memory required to store the graph's structure. In the case of an [[01. Fundamentals/Language Overlap/Algorithms & Data Structures/Non-Linear Data Structures/Graphs/Graph List & Matrix Type#^897f42| adjacency matrix]], it's `O(|V|^2)`, and for an [[01. Fundamentals/Language Overlap/Algorithms & Data Structures/Non-Linear Data Structures/Graphs/Graph List & Matrix Type| adjacency list]], it's `O(|V| + |E|)`.
    - **Average Runtime Complexity:** N/A (as it's memory-related)
    - Access action for graphs example: 
 	   `node.id` 

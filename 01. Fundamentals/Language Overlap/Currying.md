@@ -8,7 +8,7 @@ Purpose: This documentation discusses currying.
 Status: Done
 Started:
 EditDate: 2024-03-04
-Relates: "[[Architecture/01. Fundamentals/Language Overlap/Callback]]"
+Relates: "[[01. Fundamentals/Language Overlap/Callback]]"
 Peer Reviewed: 0
 dg-publish: false
 ---
@@ -36,7 +36,7 @@ let curriedSum = curry(sum);
 alert(curriedSum(1)(2)); // 3
 ```
 
-In this example, `curry(func)` returns a wrapper function, enabling both normal and partial function calls. [[Architecture/01. Fundamentals/Language Overlap/Use of closure & composition|Closure]] is being used to pass the function `sum` to `curry` as a callback. 
+In this example, `curry(func)` returns a wrapper function, enabling both normal and partial function calls. [[01. Fundamentals/Language Overlap/Use of closure & composition|Closure]] is being used to pass the function `sum` to `curry` as a callback. 
 
 More advanced implementations, like `_.curry` from the lodash library, provide additional flexibility:
 

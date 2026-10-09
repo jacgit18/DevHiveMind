@@ -9,7 +9,7 @@ Purpose: This documentation discusses static method reference.
 Status: Done
 Started:
 EditDate: 2024-03-04
-Relates: "[[Architecture/01. Fundamentals/Language Overlap/Back Pressure]]"
+Relates: "[[01. Fundamentals/Language Overlap/Back Pressure]]"
 Peer Reviewed: 0
 dg-publish:
 ---

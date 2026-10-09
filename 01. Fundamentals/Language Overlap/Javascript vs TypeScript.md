@@ -13,7 +13,7 @@ Relates:
 Peer Reviewed: 0
 dg-publish:
 ---
-![[Architecture/01. Fundamentals/Language Overlap/_Infographic/java-script Inner Working.gif]]
+![[01. Fundamentals/Language Overlap/_Infographic/java-script Inner Working.gif]]
 
 ### Evolution of JavaScript and Its Versatility
 
@@ -55,7 +55,7 @@ TypeScript types are mainly a development tool for enhancing developer productiv
 
 # Execution Context
 
-![[Architecture/01. Fundamentals/Language Overlap/_Infographic/Javascript/Global Exe Context.png]]![[Architecture/01. Fundamentals/Language Overlap/_Infographic/Javascript/javascript Scope inDeph.png]]
+![[01. Fundamentals/Language Overlap/_Infographic/Javascript/Global Exe Context.png]]![[01. Fundamentals/Language Overlap/_Infographic/Javascript/javascript Scope inDeph.png]]
 
 ### Components of Execution Context
 
@@ -92,7 +92,7 @@ The Global Object, along with the associated "this" keyword, is instantiated. Th
 Understanding the dynamics of the Execution Context, including its lexical environment, variable environment, "this" binding, and global execution setup, provides insights into how JavaScript code is structured and executed across different environments.
 
 
-![[Architecture/01. Fundamentals/Language Overlap/_Infographic/Javascript/Functions behind scenes.png]]
+![[01. Fundamentals/Language Overlap/_Infographic/Javascript/Functions behind scenes.png]]
 
 ### call(), apply(), and bind()
 

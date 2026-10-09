@@ -9,11 +9,11 @@ Purpose: This documentation discusses
 Status: Done
 Started:
 EditDate:
-Relates: "[[Architecture/01. Fundamentals/Language Overlap/Algorithms & Data Structures/Non-Linear Data Structures/Key Value Pairs/Hash Table Implementation]]"
+Relates: "[[01. Fundamentals/Language Overlap/Algorithms & Data Structures/Non-Linear Data Structures/Key Value Pairs/Hash Table Implementation]]"
 Peer Reviewed: 0
 dg-publish:
 ---
-![[Architecture/01. Fundamentals/Language Overlap/Algorithms & Data Structures/_Gif/HashCollision.gif]]
+![[01. Fundamentals/Language Overlap/Algorithms & Data Structures/_Gif/HashCollision.gif]]
 
 
 1. **Hash Collisions**:

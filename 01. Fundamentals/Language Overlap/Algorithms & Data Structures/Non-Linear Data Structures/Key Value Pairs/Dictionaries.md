@@ -12,7 +12,7 @@ Relates:
 Peer Reviewed: 0
 dg-publish:
 ---
-![[Architecture/01. Fundamentals/Language Overlap/Algorithms & Data Structures/_Gif/Dictionary.gif]]
+![[01. Fundamentals/Language Overlap/Algorithms & Data Structures/_Gif/Dictionary.gif]]
 
 "Dictionaries are an abstract data type that allows you to associate keys with values, enabling you to efficiently look up information, much like how you would use a physical dictionary to find the definition of a word. They can be implemented using various data structures, including arrays, linked lists, hash tables, tries, and others.
 

@@ -8,11 +8,11 @@ Purpose: This documentation discusses why you would want to use Byte Streams.
 Status: Done
 Started:
 EditDate: 2024-02-17
-Relates: "[[Architecture/01. Fundamentals/Language Overlap/Byte stream]]"
+Relates: "[[01. Fundamentals/Language Overlap/Byte stream]]"
 Peer Reviewed: 0
 dg-publish:
 ---
-Converting objects to byte streams, also known as [[Architecture/01. Fundamentals/Language Overlap/Serialization and Deserialization|serialization]], serves several purposes in Java programming. Here are a few reasons why you might want to convert objects to byte streams:
+Converting objects to byte streams, also known as [[01. Fundamentals/Language Overlap/Serialization and Deserialization|serialization]], serves several purposes in Java programming. Here are a few reasons why you might want to convert objects to byte streams:
 
 1. Object Persistence: By converting objects to byte streams, you can persist them to storage, such as a file or a database. This allows you to save the state of an object and retrieve it later, even across different program executions. Serialization enables data persistence and facilitates the storage and retrieval of complex data structures.
 

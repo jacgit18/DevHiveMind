@@ -13,7 +13,7 @@ Relates:
 Peer Reviewed: 0
 dg-publish:
 ---
-![[Architecture/01. Fundamentals/Language Overlap/Algorithms & Data Structures/_Gif/RuntimeProcess.gif]]
+![[01. Fundamentals/Language Overlap/Algorithms & Data Structures/_Gif/RuntimeProcess.gif]]
 
 I view data structures as diverse arrangements of key-value objects, each structured with unique advantages and drawbacks. Then you have algorithms were  you create a class with specialized functions to manipulate the structure. This class then acts as a wrapper, encapsulating both the data structure and its associated functionality. This conceptual approach embraces the principles of object-oriented programming, although the implementation specifics may vary depending on the particular data structure and programming language employed.
 
@@ -46,7 +46,7 @@ Accessing elements in data structures can have different worst-case and average-
 
 ### Searching 
 >[!note] 
->Searching and [[Architecture/01. Fundamentals/Language Overlap/Algorithms & Data Structures/Algorithms/Iterating vs Traversing#^5bf9d2| Traversing]] are common operations when working with data structures but have a slight distinction that searching involves looking for a specific element vs traversing is more broad visiting and inspecting all elements in a structure or proceess them. 
+>Searching and [[01. Fundamentals/Language Overlap/Algorithms & Data Structures/Algorithms/Iterating vs Traversing#^5bf9d2| Traversing]] are common operations when working with data structures but have a slight distinction that searching involves looking for a specific element vs traversing is more broad visiting and inspecting all elements in a structure or proceess them. 
 
 - Array: Worst: O(n), Average: O(n)
 - Stack: Worst: O(n), Average: O(n)

@@ -10,7 +10,7 @@ Purpose: This documentation discusses Partially Sorted arrays.
 Status: Done
 Started: 2024-02-19
 EditDate:
-Relates: "[[Architecture/01. Fundamentals/Language Overlap/Algorithms & Data Structures/Types of Arrays]]"
+Relates: "[[01. Fundamentals/Language Overlap/Algorithms & Data Structures/Types of Arrays]]"
 Peer Reviewed: 0
 dg-publish:
 ---

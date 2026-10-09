@@ -15,11 +15,11 @@ Relates:
 Peer Reviewed: 0
 dg-publish: false
 ---
-![[Architecture/01. Fundamentals/Language Overlap/Algorithms & Data Structures/_Infographic/BucketSort.gif]]
+![[01. Fundamentals/Language Overlap/Algorithms & Data Structures/_Infographic/BucketSort.gif]]
 
 Bucket sort is particularly effective when dealing with uniformly distributed input over a specified range. For example, imagine sorting a large set of floating-point numbers ranging from 0.0 to 1.0, distributed uniformly across this range. 
 
-If we were to employ a comparison-based sorting algorithm, such as Merge Sort, Heap Sort, or Quick Sort, we'd be bound by the lower limit of [[Architecture/01. Fundamentals/Language Overlap/Algorithms & Data Structures/Algorithms/Big O#^64043d| Ω]](n log n), which means they can't perform better than n log n in terms of time complexity.
+If we were to employ a comparison-based sorting algorithm, such as Merge Sort, Heap Sort, or Quick Sort, we'd be bound by the lower limit of [[01. Fundamentals/Language Overlap/Algorithms & Data Structures/Algorithms/Big O#^64043d| Ω]](n log n), which means they can't perform better than n log n in terms of time complexity.
 
 The challenge with applying counting sort is that it relies on keys as indices, and in this scenario, the keys are floating-point numbers.
 

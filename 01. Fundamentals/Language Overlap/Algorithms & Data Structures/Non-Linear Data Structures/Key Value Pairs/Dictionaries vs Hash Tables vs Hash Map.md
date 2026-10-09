@@ -29,7 +29,7 @@ dg-publish:
    - Unlike hash tables, they don't have the potential issue of collisions, which can degrade performance.
 
 4. **Hash Map**:
-   - A hash map is a specific data structure used to implement dictionaries using Hash Table that typically uses chaining to handle [[Architecture/01. Fundamentals/Language Overlap/Algorithms & Data Structures/Non-Linear Data Structures/Key Value Pairs/Hash Collision]]. It typically involves an array of buckets (indices) where each bucket can store a linked list or some other structure for handling collisions.
+   - A hash map is a specific data structure used to implement dictionaries using Hash Table that typically uses chaining to handle [[01. Fundamentals/Language Overlap/Algorithms & Data Structures/Non-Linear Data Structures/Key Value Pairs/Hash Collision]]. It typically involves an array of buckets (indices) where each bucket can store a linked list or some other structure for handling collisions.
    - The term "hash map" is often used interchangeably with "hash table."
 
 In summary, dictionaries are a broad concept, while hash tables are a specific way to implement dictionaries. Red-black trees provide an alternative method for implementing dictionaries, which guarantees a logarithmic lookup time. Hash maps, in the context of hash tables, use a combination of a hash function and an array to efficiently map keys to values.

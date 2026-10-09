@@ -9,7 +9,7 @@ Purpose: This documentation discusses best practices for sorting.
 Status: Done
 Started: 2023-11-01
 EditDate: 2024-02-27
-Relates: "[[Architecture/01. Fundamentals/Language Overlap/Algorithms & Data Structures/All Sorts of Sorts]]"
+Relates: "[[01. Fundamentals/Language Overlap/Algorithms & Data Structures/All Sorts of Sorts]]"
 Peer Reviewed: 0
 dg-publish: false
 ---
@@ -19,7 +19,7 @@ Sorting algorithms do not always need to return `void`. The return type of a sor
   
 2. **New Array/Collection**: Some sorting algorithms create a new sorted array or collection and return that sorted data, leaving the original data unchanged. In this case, the return type is typically the same as the type of the elements being sorted. 
 >[!note] 
->This is typically better practice but it seems when it comes to sorting. I try and do this instead of modify original value in general outside of sorting this relates to this note [[Architecture/01. Fundamentals/Language Overlap/Shallow Copy and Deep Copy(clone)]]
+>This is typically better practice but it seems when it comes to sorting. I try and do this instead of modify original value in general outside of sorting this relates to this note [[01. Fundamentals/Language Overlap/Shallow Copy and Deep Copy(clone)]]
   
 3. **Boolean**: Sorting algorithms can return a boolean value to indicate whether the sorting operation was successful or not.  
   

@@ -13,30 +13,30 @@ Relates:
 Peer Reviewed: 0
 dg-publish:
 ---
-![[Architecture/01. Fundamentals/Language/_Infographic/Java/streamline.png]]
+![[01. Fundamentals/Language/_Infographic/Java/streamline.png]]
 A stream is an ordered sequence of data in Java, serving as a common I/O model that abstracts the details of the underlying source or destination. Streams facilitate iteration in Java and can be categorized into two types: Byte streams, which interact with binary data (e.g., 01101110), and Text streams. Despite their distinct data representations, the general interaction remains the same for both stream types. Streams are unidirectional, meaning you either read from or write to a stream, providing a versatile mechanism for handling input and output operations.
 
 #todo/Low/Dev 
 - [ ] https://medium.com/java-content-hub/7-tricks-of-java-streams-4bc3c33a2f46
 
-![[Architecture/01. Fundamentals/Language/_Infographic/Java/Read & Write Streams.png]]
+![[01. Fundamentals/Language/_Infographic/Java/Read & Write Streams.png]]
 
-![[Architecture/01. Fundamentals/Language/_Infographic/Java/Stream Classes.png]]
+![[01. Fundamentals/Language/_Infographic/Java/Stream Classes.png]]
 
-![[Architecture/01. Fundamentals/Language/_Infographic/Java/Reader Classes.png]]
+![[01. Fundamentals/Language/_Infographic/Java/Reader Classes.png]]
 
-![[Architecture/01. Fundamentals/Language/_Infographic/Java/Reading one Byte.png]]
+![[01. Fundamentals/Language/_Infographic/Java/Reading one Byte.png]]
 
-![[Architecture/01. Fundamentals/Language/_Infographic/Java/Writing Byte.png]]
+![[01. Fundamentals/Language/_Infographic/Java/Writing Byte.png]]
 
 
-![[Architecture/01. Fundamentals/Language/_Infographic/Java/Reading one Character.png]]
+![[01. Fundamentals/Language/_Infographic/Java/Reading one Character.png]]
 
-![[Architecture/01. Fundamentals/Language/_Infographic/Java/Writing one Character.png]]
+![[01. Fundamentals/Language/_Infographic/Java/Writing one Character.png]]
 
-![[Architecture/01. Fundamentals/Language/_Infographic/Java/RAB.png]]
+![[01. Fundamentals/Language/_Infographic/Java/RAB.png]]
 
-![[Architecture/01. Fundamentals/Language/_Infographic/Java/RAC.png]]
+![[01. Fundamentals/Language/_Infographic/Java/RAC.png]]
 
 There are several types of stream operations in Java, including:
 
@@ -46,28 +46,28 @@ There are several types of stream operations in Java, including:
 4.  Stateful operations: They process the data elements in a non-linear, stateful manner and may produce different results for the same input. Example: distinct, peek, etc.
 5.  Collecting operations: They collect elements from a stream into a container such as a list, set, map, etc. Example: collect, toArray, toList, toSet, toMap, etc.
 
-![[Architecture/01. Fundamentals/Language/_Infographic/Java/clean.png]]
+![[01. Fundamentals/Language/_Infographic/Java/clean.png]]
 
-![[Architecture/01. Fundamentals/Language/_Infographic/Java/Chain stream.png]]
+![[01. Fundamentals/Language/_Infographic/Java/Chain stream.png]]
 
-![[Architecture/01. Fundamentals/Language/_Infographic/Java/Accessing files.png]]
+![[01. Fundamentals/Language/_Infographic/Java/Accessing files.png]]
 
-![[Architecture/01. Fundamentals/Language/_Infographic/Java/Buff Streams.jpg]]
+![[01. Fundamentals/Language/_Infographic/Java/Buff Streams.jpg]]
 
-![[Architecture/01. Fundamentals/Language/_Infographic/Java/Buff Streams code.jpg]]
+![[01. Fundamentals/Language/_Infographic/Java/Buff Streams code.jpg]]
 
-![[Architecture/01. Fundamentals/Language/_Infographic/Java/Buff Streams line Break.jpg]]
+![[01. Fundamentals/Language/_Infographic/Java/Buff Streams line Break.jpg]]
 
-![[Architecture/01. Fundamentals/Language/_Infographic/Java/Writing line Break.jpg]]
+![[01. Fundamentals/Language/_Infographic/Java/Writing line Break.jpg]]
 
-![[Architecture/01. Fundamentals/Language/_Infographic/Java/Reading line.jpg]]
+![[01. Fundamentals/Language/_Infographic/Java/Reading line.jpg]]
 
-![[Architecture/01. Fundamentals/Language/_Infographic/Java/Chaining Streams.jpg]]
+![[01. Fundamentals/Language/_Infographic/Java/Chaining Streams.jpg]]
 
-![[Architecture/01. Fundamentals/Language/_Infographic/Java/Path.jpg]]
+![[01. Fundamentals/Language/_Infographic/Java/Path.jpg]]
 
-![[Architecture/01. Fundamentals/Language/_Infographic/Java/Read all.jpg]]
+![[01. Fundamentals/Language/_Infographic/Java/Read all.jpg]]
 
-![[Architecture/01. Fundamentals/Language/_Infographic/Java/Buff Reader.jpg]]
+![[01. Fundamentals/Language/_Infographic/Java/Buff Reader.jpg]]
 
-![[Architecture/01. Fundamentals/Language/_Infographic/Java/nio package.jpg]]
+![[01. Fundamentals/Language/_Infographic/Java/nio package.jpg]]

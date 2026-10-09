@@ -10,7 +10,7 @@ Purpose: This documentation discusses type of errors.
 Status: Done
 Started:
 EditDate: 2024-11-11
-Relates: "[[Architecture/01. Fundamentals/Language Overlap/Exception Handling]]"
+Relates: "[[01. Fundamentals/Language Overlap/Exception Handling]]"
 Peer Reviewed: 0
 dg-publish: false
 ---

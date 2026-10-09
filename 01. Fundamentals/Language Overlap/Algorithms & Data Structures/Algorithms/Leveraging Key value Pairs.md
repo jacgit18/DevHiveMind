@@ -8,7 +8,7 @@ Purpose: This documentation discusses leetcode 20 checking for valid parentheses
 Status: Done
 Started:
 EditDate: 2024-02-29
-Relates: "[[Architecture/01. Fundamentals/Language Overlap/Algorithms & Data Structures/Non-Linear Data Structures/Key Value Pairs/Map]]"
+Relates: "[[01. Fundamentals/Language Overlap/Algorithms & Data Structures/Non-Linear Data Structures/Key Value Pairs/Map]]"
 Peer Reviewed: 0
 dg-publish:
 ---

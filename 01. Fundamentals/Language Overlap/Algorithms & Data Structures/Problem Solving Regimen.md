@@ -13,7 +13,7 @@ Relates:
 Peer Reviewed: 0
 dg-publish:
 ---
-![[Architecture/01. Fundamentals/Language Overlap/Algorithms & Data Structures/_Gif/Regimen.gif]]
+![[01. Fundamentals/Language Overlap/Algorithms & Data Structures/_Gif/Regimen.gif]]
 ## Prep  
 *Master algorithms get to the point were you can solve within 5 to 20 min or show your breath of knowledge within the time-frame of the interview  
 >[!note] 
@@ -23,28 +23,28 @@ dg-publish:
 	- Identify problem area.
 	- Pick one problem something simple like an array question or something.
 	- Read problems and break them down to understand, don't solve practice doing this until you feel comfortable then revisit and solve. 
-	- Keep in mind when to change [[Architecture/01. Fundamentals/Language Overlap/Algorithms & Data Structures/Algorithms/Approach Pivot|Approach]]
+	- Keep in mind when to change [[01. Fundamentals/Language Overlap/Algorithms & Data Structures/Algorithms/Approach Pivot|Approach]]
 	- ***Consider Pair Programming when you get to the point were your good at implementing Optimal solutions or Naive solutions or once you fill that you have enough repetition***
   
-2. [[Architecture/01. Fundamentals/Language Overlap/Algorithms & Data Structures/AlgoFlow#**Brute Force Algorithm**|Bruteforce]] **Solution**:  
+2. [[01. Fundamentals/Language Overlap/Algorithms & Data Structures/AlgoFlow#**Brute Force Algorithm**|Bruteforce]] **Solution**:  
 	- Come up with a Bruteforce solution to gain insight into the problem's dynamics.  
-	- Break the problem down until you understand it think about the [[Architecture/01. Fundamentals/Language Overlap/Algorithms & Data Structures/Algo pathway|Attributes of Data]] being passed.  
+	- Break the problem down until you understand it think about the [[01. Fundamentals/Language Overlap/Algorithms & Data Structures/Algo pathway|Attributes of Data]] being passed.  
   
-3. [[Architecture/01. Fundamentals/Language Overlap/Algorithms & Data Structures/AlgoFlow#**Naïve Algorithm**|Naive]] **Solution**:  
+3. [[01. Fundamentals/Language Overlap/Algorithms & Data Structures/AlgoFlow#**Naïve Algorithm**|Naive]] **Solution**:  
 	- Develop a naive solution, distinct from the Bruteforce approach.  
 	- Space out attempts, allowing time for fresh perspectives.
-	- The Naive solution can be done [[Architecture/01. Fundamentals/Language Overlap/Algorithms & Data Structures/Common Imperative Algorithms|Imperatively]] or [[Architecture/01. Fundamentals/Language Overlap/Algorithms & Data Structures/Common Declarative Algorithms|Declarative]] consider doing both ways to see if you can do it.
-	- Also think about [[Architecture/01. Fundamentals/Language Overlap/Algorithms & Data Structures/All Sorts of Sorts|Sorting]] algorithms in terms what can be applied, you don't necessarily need write one but you can use a pre-made sorting algorithm.
-	- Lastly consider runtime complexity and data structures brainstorming thinking about their application in terms of access, searching, insertion, and deletion both [[Architecture/01. Fundamentals/Language Overlap/Algorithms & Data Structures/Linear  Data Structures/Linear Data Structure Runtime Comparison|Linear]] and [[Architecture/01. Fundamentals/Language Overlap/Algorithms & Data Structures/Non-Linear Data Structures/Non-Linear Data Structure Runtime Comparison|Non-Linear]]
+	- The Naive solution can be done [[01. Fundamentals/Language Overlap/Algorithms & Data Structures/Common Imperative Algorithms|Imperatively]] or [[01. Fundamentals/Language Overlap/Algorithms & Data Structures/Common Declarative Algorithms|Declarative]] consider doing both ways to see if you can do it.
+	- Also think about [[01. Fundamentals/Language Overlap/Algorithms & Data Structures/All Sorts of Sorts|Sorting]] algorithms in terms what can be applied, you don't necessarily need write one but you can use a pre-made sorting algorithm.
+	- Lastly consider runtime complexity and data structures brainstorming thinking about their application in terms of access, searching, insertion, and deletion both [[01. Fundamentals/Language Overlap/Algorithms & Data Structures/Linear  Data Structures/Linear Data Structure Runtime Comparison|Linear]] and [[01. Fundamentals/Language Overlap/Algorithms & Data Structures/Non-Linear Data Structures/Non-Linear Data Structure Runtime Comparison|Non-Linear]]
 
   
-4. [[Architecture/01. Fundamentals/Language Overlap/Algorithms & Data Structures/AlgoFlow#**Optimal Algorithm**|Optimal]] **Solution & [[Architecture/01. Fundamentals/Language Overlap/Algorithms & Data Structures/Patterns/Key Base Attributes of  Grokking Algorithm patterns|Grokking Algorithm]] Patterns**:
+4. [[01. Fundamentals/Language Overlap/Algorithms & Data Structures/AlgoFlow#**Optimal Algorithm**|Optimal]] **Solution & [[01. Fundamentals/Language Overlap/Algorithms & Data Structures/Patterns/Key Base Attributes of  Grokking Algorithm patterns|Grokking Algorithm]] Patterns**:
 	- Develop a Optimal approach
-	- Consider experiment with looping [[Architecture/01. Fundamentals/Language Overlap/Algorithms & Data Structures/Algorithms/Iteration vs Recursion|iteratively]] and [[Architecture/01. Fundamentals/Language Overlap/Algorithms & Data Structures/Recursion/Recursion & Recursion Runtime|recursively]].  
+	- Consider experiment with looping [[01. Fundamentals/Language Overlap/Algorithms & Data Structures/Algorithms/Iteration vs Recursion|iteratively]] and [[01. Fundamentals/Language Overlap/Algorithms & Data Structures/Recursion/Recursion & Recursion Runtime|recursively]].  
 	- Delve into advanced algorithm patterns for solution. 
 	- Think about what patterns can be used for the problem which can be solved with many different patterns depending on the problem itself.
 	- Keep in mind that one pattern may be more Optimal then the other depending on the specifics of the problem.
-	- Create helper functions for code modularity also implementing proper [[Architecture/03. Application Structure/Design & Principles/Principles/Naming Conventions]]. 
+	- Create helper functions for code modularity also implementing proper [[03. Application Structure/Design & Principles/Principles/Naming Conventions]]. 
 
 
 ## Debug Regimen 
@@ -90,7 +90,7 @@ use while loop most of the time when number of iteration aren't known
 - [ ] Create a Queue Generator Method Using Linked Lists
 - [ ] Union find also known as Disjoint-Set Union https://www.youtube.com/watch?v=ayW5B2W9hfo
 - [ ] https://www.geeksforgeeks.org/kruskals-minimum-spanning-tree-algorithm-greedy-algo-2/
-- [ ] [[Architecture/01. Fundamentals/Language Overlap/Algorithms & Data Structures/Algorithms/Dijkstra + Bellman-Ford shortest path]]
+- [ ] [[01. Fundamentals/Language Overlap/Algorithms & Data Structures/Algorithms/Dijkstra + Bellman-Ford shortest path]]
 ## Problem Types to Focus On
 When tackling coding challenges, the emphasis is often on creating or solving functions (around 80% of the time) rather than dealing with Object Oriented (OO) problems, which occur less frequently in my experience. For a comprehensive interview preparation, allocate around 70-80% of your time to coding challenges, especially if you're new to technical interviews. System design interviews, comprising 20-30%, are more common in larger companies like Bloomberg, Spotify, Google, and Direct TV, while startups may have a different emphasis depending on the job level. Keep in mind that platforms like LeetCode cover a range of problems, including some that involve implementing classes or Object Oriented concepts. You may want to consider sometime for side projects or exploring some new technology as well this all depends on your level of proficiency and your current stage of your career like from my under standing senior developers don't get the standard Leetcode type interview. 
 

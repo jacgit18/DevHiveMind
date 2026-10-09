@@ -9,11 +9,11 @@ Purpose: This documentation discusses Memoization more in-depth.
 Status: Done
 Started:
 EditDate: 2024-02-29
-Relates: "[[Architecture/01. Fundamentals/Language Overlap/Algorithms & Data Structures/Algorithms/Dynamic programming Patterns]]"
+Relates: "[[01. Fundamentals/Language Overlap/Algorithms & Data Structures/Algorithms/Dynamic programming Patterns]]"
 Peer Reviewed: 0
 dg-publish:
 ---
-![[Architecture/01. Fundamentals/Language Overlap/Algorithms & Data Structures/_Gif/Memoization.gif]]
+![[01. Fundamentals/Language Overlap/Algorithms & Data Structures/_Gif/Memoization.gif]]
 
 Memoization is a valuable technique in computer science and Dynamic Programming Pattern. It involves caching and storing previously computed results of expensive function calls so that you can reuse them in future calls. This can significantly improve the performance of recursive or repetitive algorithms.
 
@@ -60,7 +60,7 @@ console.log(memoizedExpensiveOperation(3, 4)); // This result will be retrieved 
 console.log(memoizedExpensiveOperation(5, 6)); // This result will be cached separately
 ```
 
-![[Architecture/01. Fundamentals/Language Overlap/Algorithms & Data Structures/_Coding Whiteboard/FibClosureMemiozation.png]]
+![[01. Fundamentals/Language Overlap/Algorithms & Data Structures/_Coding Whiteboard/FibClosureMemiozation.png]]
 
 With memoization, you can save the results of expensive function calls and retrieve them quickly when the same inputs occur again, reducing computation time and improving overall performance.
 

@@ -14,7 +14,7 @@ Relates:
 Peer Reviewed: 0
 dg-publish:
 ---
-![[Architecture/01. Fundamentals/Language Overlap/_Infographic/Flow of control.gif]]
+![[01. Fundamentals/Language Overlap/_Infographic/Flow of control.gif]]
 
 The "flow of control" in computer programming refers to the order in which a program's instructions or statements are executed. It determines how a program progresses from one statement to another, making decisions, looping, and branching as necessary. Understanding the flow of control is fundamental to writing and understanding computer programs. Here are some key concepts related to the flow of control in programming:
 
@@ -106,7 +106,7 @@ function factorial(n: number): number {
 }
 ```
 
-7. [[Architecture/01. Fundamentals/Language Overlap/Exception Handling|Exception Handling]]: In cases of errors or exceptional situations, the flow of control can be redirected to an exception handling block to handle the error gracefully instead of terminating the program.
+7. [[01. Fundamentals/Language Overlap/Exception Handling|Exception Handling]]: In cases of errors or exceptional situations, the flow of control can be redirected to an exception handling block to handle the error gracefully instead of terminating the program.
 
 8. **Throwing Exception**: Execution of the current function will stop (the statements after throw won't be executed), and control will be passed to the first catch block in the call stack. If no catch block exists among caller functions, the program will terminate. 
 

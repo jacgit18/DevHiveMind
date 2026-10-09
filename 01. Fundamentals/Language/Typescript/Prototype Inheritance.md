@@ -9,7 +9,7 @@ Purpose: This documentation discusses Prototype Inheritance.
 Status: Capture
 Started: 2024-02-04
 EditDate: 2024-02-04
-Relates: "[[Architecture/01. Fundamentals/Language/Typescript/Prototypes]]"
+Relates: "[[01. Fundamentals/Language/Typescript/Prototypes]]"
 Peer Reviewed: 0
 dg-publish:
 ---

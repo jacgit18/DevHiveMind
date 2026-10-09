@@ -13,7 +13,7 @@ Relates:
 Peer Reviewed: 0
 dg-publish: true
 ---
-![[Architecture/01. Fundamentals/Language Overlap/Algorithms & Data Structures/_Gif/Space.gif]]
+![[01. Fundamentals/Language Overlap/Algorithms & Data Structures/_Gif/Space.gif]]
 ## Space Complexity and Its Determinants
 
 Space complexity, though often secondary to time complexity in optimization priorities, plays a crucial role in the efficiency of algorithms, especially in environments with limited memory resources. It is governed by Big O notation rules, similar to time complexity, but focuses on the amount of memory an algorithm needs to run as opposed to the time it takes to complete.
@@ -30,7 +30,7 @@ Space complexity is affected by several factors, primarily the data structures u
 
 - **Non-storage Operations:** Operations that do not involve storing data, such as printing to the console within a loop, are not considered to increase space complexity. Similarly, operations where a variable's size increases but remains a single numeric value also represent constant space usage.
 
-- **Linear Data Structures:** Strings, arrays, and objects, which grow in size directly proportional to their length or the amount of data they contain, have a linear space complexity of O(n). This linear relationship also extends to [[Architecture/01. Fundamentals/Language Overlap/Algorithms & Data Structures/Linear  Data Structures/Linear Data Structure Runtime Comparison|Linear Data Structure]] like linked lists, stacks, and queues, where the space required increases with each element added.
+- **Linear Data Structures:** Strings, arrays, and objects, which grow in size directly proportional to their length or the amount of data they contain, have a linear space complexity of O(n). This linear relationship also extends to [[01. Fundamentals/Language Overlap/Algorithms & Data Structures/Linear  Data Structures/Linear Data Structure Runtime Comparison|Linear Data Structure]] like linked lists, stacks, and queues, where the space required increases with each element added.
 
 ### Other Considerations
 

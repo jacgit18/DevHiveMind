@@ -12,7 +12,7 @@ Purpose: This documentation discusses types of coupling in software development.
 Status: Refinement
 Started:
 EditDate: 2024-03-06
-Relates: "[[Architecture/01. Fundamentals/Language Overlap/Coupling vs Cohesion]]"
+Relates: "[[01. Fundamentals/Language Overlap/Coupling vs Cohesion]]"
 Peer Reviewed: 0
 dg-publish:
 ---

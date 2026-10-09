@@ -17,7 +17,7 @@ Relates:
 Peer Reviewed: 0
 dg-publish:
 ---
-![[Architecture/01. Fundamentals/Language Overlap/Algorithms & Data Structures/_Infographic/TreeTraversal.gif]]
+![[01. Fundamentals/Language Overlap/Algorithms & Data Structures/_Infographic/TreeTraversal.gif]]
 
 **The essence of DFS and BFS lies in the order of operations and base cases, depending on the specific problem.**
 
@@ -216,7 +216,7 @@ Left Check = Recursive call with node.left as the parameter
 Right Check = Recursive call with node.right as the parameter
 ```
 
-![[Architecture/01. Fundamentals/Language Overlap/Algorithms & Data Structures/_Infographic/preOrder.gif]]
+![[01. Fundamentals/Language Overlap/Algorithms & Data Structures/_Infographic/preOrder.gif]]
 
 ```javascript
 function IterativePreOrder() {
@@ -267,7 +267,7 @@ Action
 Right Check = Recursive call with node.right as the parameter
 ```
 
-![[Architecture/01. Fundamentals/Language Overlap/Algorithms & Data Structures/_Infographic/inOrder.gif]]
+![[01. Fundamentals/Language Overlap/Algorithms & Data Structures/_Infographic/inOrder.gif]]
 
 
 ```javascript
@@ -320,7 +320,7 @@ Action Example: Get the height - `return Math.max(left, right) + 1;`
 Alternative action: Push the current node to a value array
 ```
 
-![[Architecture/01. Fundamentals/Language Overlap/Algorithms & Data Structures/_Infographic/postOrder.gif]]
+![[01. Fundamentals/Language Overlap/Algorithms & Data Structures/_Infographic/postOrder.gif]]
 
 ```javascript
 function IterativePostOrder() {

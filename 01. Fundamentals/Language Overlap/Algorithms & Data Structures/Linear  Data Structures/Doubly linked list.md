@@ -9,11 +9,11 @@ Purpose: This documentation discusses Doubly Linked List.
 Status: Refinement
 Started:
 EditDate:
-Relates: "[[Architecture/01. Fundamentals/Language Overlap/Algorithms & Data Structures/Type of Linked List]]"
+Relates: "[[01. Fundamentals/Language Overlap/Algorithms & Data Structures/Type of Linked List]]"
 Peer Reviewed: 0
 dg-publish:
 ---
-![[Architecture/01. Fundamentals/Language Overlap/Algorithms & Data Structures/_Infographic/DoubleLinkedLists.gif]]
+![[01. Fundamentals/Language Overlap/Algorithms & Data Structures/_Infographic/DoubleLinkedLists.gif]]
 
 Let you go backwards through the list  
   
@@ -23,6 +23,6 @@ Searching through the doubly link list can be more efficient
   
 Doubly linked list can take up more memory
 
-![[Architecture/01. Fundamentals/Language Overlap/Algorithms & Data Structures/_Infographic/DoubleLinkedListsStill.png]]
+![[01. Fundamentals/Language Overlap/Algorithms & Data Structures/_Infographic/DoubleLinkedListsStill.png]]
 
 

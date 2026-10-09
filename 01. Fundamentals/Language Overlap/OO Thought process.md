@@ -32,7 +32,7 @@ Seems like it also establishes new forms 
 
 At a system design level, storing new instances of classes in different objects and object types involves determining the appropriate data structures and design patterns to represent and manage the instances effectively. Here are some considerations:
 
-1. Object-Oriented Design: Before thinking about storage, it's important to design the classes and their relationships based on the problem [[Architecture/03. Application Structure/Design & Principles/Principles/Domain Driven Design/Domain-driven design| Domain]]. Identify the entities, their attributes, and behaviors. Define appropriate classes and establish inheritance and composition relationships as needed.
+1. Object-Oriented Design: Before thinking about storage, it's important to design the classes and their relationships based on the problem [[03. Application Structure/Design & Principles/Principles/Domain Driven Design/Domain-driven design| Domain]]. Identify the entities, their attributes, and behaviors. Define appropriate classes and establish inheritance and composition relationships as needed.
 
 2. Data Structures:
    - Arrays: If the number of instances is fixed or known in advance, an array can be used to store the instances. Arrays provide fast access to elements but have a fixed size.
@@ -40,7 +40,7 @@ At a system design level, storing new instances of classes in different objects 
    - Maps: If instances need to be stored and retrieved based on keys, maps like HashMap or TreeMap can be used. Maps provide efficient key-value lookups.
    - Sets: If instances need to be stored in an unordered collection without duplicates, sets like HashSet or TreeSet can be used.
 
-3. [[Architecture/01. Fundamentals/Language Overlap/Polymorphism]] and Inheritance:
+3. [[01. Fundamentals/Language Overlap/Polymorphism]] and Inheritance:
    - Polymorphism allows instances of different classes to be treated as instances of a common superclass or interface. This allows flexibility in storing and manipulating instances of different types in a uniform way.
    - Inheritance enables objects of derived classes to be stored and manipulated as objects of their superclass. This allows for a more generalized approach to handling different object types.
 

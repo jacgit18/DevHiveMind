@@ -8,7 +8,7 @@ Purpose: This documentation discusses use of closure and composition.
 Status: Done
 Started:
 EditDate: 2024-02-17
-Relates: "[[Architecture/01. Fundamentals/Language Overlap/Fundamentals of Object-Oriented Concepts#Composition over Inheritance Composition Example Composition|Composition]]"
+Relates: "[[01. Fundamentals/Language Overlap/Fundamentals of Object-Oriented Concepts#Composition over Inheritance Composition Example Composition|Composition]]"
 Peer Reviewed: 0
 dg-publish:
 ---

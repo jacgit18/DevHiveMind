@@ -28,7 +28,7 @@ Introspection and reflection are both concepts in computer science and programmi
 
 2. **Reflection:**
 
-   Reflection are [[Architecture/01. Fundamentals/Language Overlap/Polymorphism]] on steroids that is it is a specific form of introspection that allows a program to examine and modify its own structure and behavior at runtime. It is more powerful and dynamic than simple introspection and enables actions such as:
+   Reflection are [[01. Fundamentals/Language Overlap/Polymorphism]] on steroids that is it is a specific form of introspection that allows a program to examine and modify its own structure and behavior at runtime. It is more powerful and dynamic than simple introspection and enables actions such as:
 
    - Inspecting class metadata: You can access information about classes, such as their methods, fields, annotations, and interfaces.
    - Creating instances of classes: You can create new objects from classes dynamically, without knowing their types at compile-time.

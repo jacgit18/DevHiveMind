@@ -7,7 +7,7 @@ Purpose: This documentation discusses
 Status:
 Started:
 EditDate:
-Relates: "[[Architecture/04. Backing Service Options/API/server enpoints]]"
+Relates: "[[04. Backing Service Options/API/server enpoints]]"
 Peer Reviewed: 0
 dg-publish:
 ---

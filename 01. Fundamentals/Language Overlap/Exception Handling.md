@@ -68,7 +68,7 @@ public class ExceptionHandeling{
 ```
 
 Results
-![[Architecture/01. Fundamentals/Language/_Infographic/Java/Exception Result.png]]
+![[01. Fundamentals/Language/_Infographic/Java/Exception Result.png]]
 
 - Unchecked exceptions are not anticipated. They do not follow the catch or specify requirements. They have automatically propagated up the call stack until an appropriate exception handler is found; otherwise, the runtime terminates. 
 - RuntimeException or Error are unchecked exceptions. NullPointerException is an example of an unchecked exception.

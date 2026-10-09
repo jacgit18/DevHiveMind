@@ -24,7 +24,7 @@ dg-publish: false
 
 ## Class Diagram 
 This product class diagram can repurposed for functions which would increase number of tables.
-![[Architecture/01. Fundamentals/Language Overlap/_Infographic/Class Diagram.png]]
+![[01. Fundamentals/Language Overlap/_Infographic/Class Diagram.png]]
 ### ChatGpt Prompt
 #todo/prompts
 - [ ] Create a module functional programming structural model for a driving school website
@@ -48,7 +48,7 @@ where can protected classes be accessed;; package and subclass
 
 Which access modifier has more scope private or protected;; protected
 
-What UML sign is for access [[Architecture/01. Fundamentals/Language Overlap/Protected in Depth]] modifier;; hashtag
+What UML sign is for access [[01. Fundamentals/Language Overlap/Protected in Depth]] modifier;; hashtag
 
 What UML sign is for access private modifier;; minus
 
@@ -91,7 +91,7 @@ What UML sign is for static member for attributes and methods;; underline or bol
 > You could try to call the private method in a class that should have access and asserts that the call failed.
 
 
-- [[Architecture/01. Fundamentals/Language Overlap/Protected in Depth|Protected]] - member can only be accessed within its package and by a subclass of its class in another package used a lot with `UUID`.
+- [[01. Fundamentals/Language Overlap/Protected in Depth|Protected]] - member can only be accessed within its package and by a subclass of its class in another package used a lot with `UUID`.
 ```java
 # protected
 ```
@@ -113,7 +113,7 @@ What UML sign is for static member for attributes and methods;; underline or bol
 
 - **Final** - both cannot be overridden or modified. 
   
-- [[Architecture/01. Fundamentals/Language/Java/Static methods|Static]]- both belong to the class and not the object. also in uml is represented by being underlined and a little bold. static members are used so, there will be one and only one copy of the member.
+- [[01. Fundamentals/Language/Java/Static methods|Static]]- both belong to the class and not the object. also in uml is represented by being underlined and a little bold. static members are used so, there will be one and only one copy of the member.
  
 - **Transient** - both are skipped when serializing the object containing them. 
  

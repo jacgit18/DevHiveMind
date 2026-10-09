@@ -14,7 +14,7 @@ Relates:
 Peer Reviewed: 0
 dg-publish:
 ---
-![[Architecture/01. Fundamentals/Language Overlap/_Infographic/Call Stack.gif]]
+![[01. Fundamentals/Language Overlap/_Infographic/Call Stack.gif]]
 
 **Stacks and Heaps:**
 

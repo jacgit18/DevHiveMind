@@ -9,7 +9,7 @@ Purpose: This documentation discusses name space and order of the operations of 
 Status: Done
 Started:
 EditDate: 2024-03-05
-Relates: "[[Architecture/01. Fundamentals/Language Overlap/Flow of Control]]"
+Relates: "[[01. Fundamentals/Language Overlap/Flow of Control]]"
 Peer Reviewed: 0
 dg-publish:
 ---

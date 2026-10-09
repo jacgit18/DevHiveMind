@@ -111,7 +111,7 @@ When thinking about Modularity think about which section of the code can be reus
 >[!important] 
 > <h2>Properties of Data: </h2>
 >
->***Number***(has ascii values) numbers can apply to a lot of diff parms below. Don’t forget [[Architecture/01. Fundamentals/Language Overlap/Algorithms & Data Structures/Algorithms/Algorithm Most Common Built in Functions#Common Math| Math Func ]]
+>***Number***(has ascii values) numbers can apply to a lot of diff parms below. Don’t forget [[01. Fundamentals/Language Overlap/Algorithms & Data Structures/Algorithms/Algorithm Most Common Built in Functions#Common Math| Math Func ]]
 >
 > - String(***can iter in array like 2d array for letters ***)
 > 	- if string of various characters think ascii a little don't default to it  
@@ -120,7 +120,7 @@ When thinking about Modularity think about which section of the code can be reus
 > 	- **Empty string or spaces in string **
 > 	- **Unique or Specific Characters **
 > 	- **Unicode string (special characters) **
-> - Array of [[Architecture/01. Fundamentals/Language Overlap/Primitive Types]]
+> - Array of [[01. Fundamentals/Language Overlap/Primitive Types]]
 > 	- if array of nums check  particular range or DS length, order, type of nums like `Natural num(pos and 0)`, `Integers(Natural and neg)`,  `Rational num(decimal, fraction)`,` Min/Max` , `symmetry of relation(even/odd)`, decimal floor/ceiling, or decimal place 
 > 	- Think about what places to iterate from like the beginning, middle or end point
 > 	- When dealing with large ranges think about breaking things down to lower sub ranges to reduce iteration 
@@ -237,7 +237,7 @@ You don't need to code everything if you can mention there might be a cleaner or
 
 
 
-#### Talk about the overall `runtime` and [[Architecture/01. Fundamentals/Language Overlap/Algorithms & Data Structures/Spacetime Complexity| Spacetime]] complexity of your code at different steps or at end 
+#### Talk about the overall `runtime` and [[01. Fundamentals/Language Overlap/Algorithms & Data Structures/Spacetime Complexity| Spacetime]] complexity of your code at different steps or at end 
 
 O(1) + O(n) = O(n) worst runtime takes president when adding up runtime 
 

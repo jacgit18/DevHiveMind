@@ -9,7 +9,7 @@ Purpose: This documentation discusses lifecycle of local bindings.
 Status: Done
 Started:
 EditDate: 2024-02-17
-Relates: "[[Architecture/01. Fundamentals/Language Overlap/Javascript vs TypeScript]]"
+Relates: "[[01. Fundamentals/Language Overlap/Javascript vs TypeScript]]"
 Peer Reviewed: 0
 dg-publish:
 ---

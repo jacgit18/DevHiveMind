@@ -10,7 +10,7 @@ Purpose: This documentation discusses the difference between Synchronous, Asynch
 Status: Refinement
 Started:
 EditDate: 2024-03-06
-Relates: "[[Architecture/01. Fundamentals/Language Overlap/Asynchronous Programming]]"
+Relates: "[[01. Fundamentals/Language Overlap/Asynchronous Programming]]"
 Peer Reviewed: 0
 dg-publish:
 ---
@@ -38,7 +38,7 @@ async/await is syntactic sugar it looks Synchronous but is Asynchronous 
 
 
 
-![[Architecture/01. Fundamentals/Language Overlap/_Infographic/aysnc func generating task.png]]
+![[01. Fundamentals/Language Overlap/_Infographic/aysnc func generating task.png]]
 
 
 https://www.youtube.com/watch?v=0vFgKr5bjWI 

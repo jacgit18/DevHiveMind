@@ -13,7 +13,7 @@ Purpose: This documentation discusses abstract classes.
 Status: Done
 Started: 2023-10-29
 EditDate: 2024-03-04
-Relates: "[[Architecture/01. Fundamentals/Language Overlap/Fundamentals of Object-Oriented Concepts]]"
+Relates: "[[01. Fundamentals/Language Overlap/Fundamentals of Object-Oriented Concepts]]"
 Peer Reviewed: 0
 dg-publish:
 ---
@@ -47,7 +47,7 @@ Abstract classes, identified by the `abstract` keyword, are crucial in object-or
 
 Abstraction involves presenting essential information while concealing intricate details. Abstract classes or interfaces, using the "abstract" keyword, achieve this. Abstract classes allow access only through inheritance and consist of a mix of abstract and regular methods.
 
-![[Architecture/01. Fundamentals/Language Overlap/_Infographic/Abstract class Diagram.png]]
+![[01. Fundamentals/Language Overlap/_Infographic/Abstract class Diagram.png]]
 
 **Understanding Abstract Classes and Abstract Methods in Java:**
 

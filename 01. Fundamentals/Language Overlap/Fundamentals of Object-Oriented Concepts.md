@@ -14,7 +14,7 @@ Relates:
 Peer Reviewed: 0
 dg-publish:
 ---
-![[Architecture/01. Fundamentals/Language Overlap/_Infographic/Inheritance Class Diagram.png]]
+![[01. Fundamentals/Language Overlap/_Infographic/Inheritance Class Diagram.png]]
 
 
 In the realm of programming, inheritance serves as a gateway to accessing the functionalities of another class. It facilitates the reuse of code and allows a class to inherit attributes and methods from a parent class. This mechanism promotes code organization and fosters a hierarchical structure in object-oriented programming.
@@ -72,7 +72,7 @@ var BMW = new Car ("BMW", "Green", "90mph");
 
 3.Functional inheritance involves inheriting features with the use of an augmenting function to an object instance:
 
-### [[Architecture/01. Fundamentals/Language Overlap/Composition over Inheritance#Composition Example|Composition]]
+### [[01. Fundamentals/Language Overlap/Composition over Inheritance#Composition Example|Composition]]
 So, two classes are definitely connected, but are they connected via inheritance or composition? (Composition is when one class has a field with a reference to an object of another class).
 
 In this case, we’ll follow the Is-A-Has-A relationship guideline. Say that we have a few classes: Star, Color, and Shape. Star Is-A Shape, so it could be an inheritance relationship, but Star HAS-A Color, so it’s a composition. Shape is not-a Color, but maybe could have-a color if we’d be so inclined. Another very common example has a Car, Truck, and Engine classes - can you arrange these in possible hierarchies?

@@ -9,7 +9,7 @@ Purpose: This documentation discusses
 Status: Done
 Started: 2023-11-02
 EditDate:
-Relates: "[[Architecture/01. Fundamentals/Language Overlap/Algorithms & Data Structures/Non-Linear Data Structures/Graphs/Graph List & Matrix Type]]"
+Relates: "[[01. Fundamentals/Language Overlap/Algorithms & Data Structures/Non-Linear Data Structures/Graphs/Graph List & Matrix Type]]"
 Peer Reviewed: 0
 dg-publish:
 ---

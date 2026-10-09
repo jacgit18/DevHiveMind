@@ -8,7 +8,7 @@ Purpose: This documentation discusses Encoding and Parsing in the context of Des
 Status: Done
 Started:
 EditDate: 2024-02-17
-Relates: "[[Architecture/01. Fundamentals/Language Overlap/Serialization and Deserialization]]"
+Relates: "[[01. Fundamentals/Language Overlap/Serialization and Deserialization]]"
 Peer Reviewed: 0
 dg-publish:
 ---

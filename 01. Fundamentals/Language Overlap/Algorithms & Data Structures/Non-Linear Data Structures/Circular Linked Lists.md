@@ -9,13 +9,13 @@ Purpose: This documentation discusses
 Status: Refinement
 Started:
 EditDate: 2024-02-29
-Relates: "[[Architecture/01. Fundamentals/Language Overlap/Algorithms & Data Structures/Type of Linked List]]"
+Relates: "[[01. Fundamentals/Language Overlap/Algorithms & Data Structures/Type of Linked List]]"
 Peer Reviewed: 0
 dg-publish:
 ---
 
 
-![[Architecture/01. Fundamentals/Language Overlap/Algorithms & Data Structures/_Infographic/CircularLinkedLists.png]]
+![[01. Fundamentals/Language Overlap/Algorithms & Data Structures/_Infographic/CircularLinkedLists.png]]
 
 
 

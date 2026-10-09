@@ -38,7 +38,7 @@ In the realm of software, microservices should embody loose coupling. This ensur
 For instance, if one microservice encounters issues, others should continue functioning seamlessly. The diagram below illustrates the distinction between tightly coupled and loosely coupled [[Microservices VS Monolithic Architecture |Microservices]]:
 
 
-![[Architecture/01. Fundamentals/Language Overlap/_Infographic/coupling.jpg]]
+![[01. Fundamentals/Language Overlap/_Infographic/coupling.jpg]]
 
 While coupling deals with the dependencies between modules or classes, cohesion focuses on the relatedness of functions within a single module or class.
 

@@ -9,7 +9,7 @@ Purpose: This documentation discusses what Kotlin is.
 Status: Done
 Started:
 EditDate: 2024-03-03
-Relates: "[[Architecture/01. Fundamentals/Language/Java/Java Dependencies]]"
+Relates: "[[01. Fundamentals/Language/Java/Java Dependencies]]"
 Peer Reviewed: 0
 dg-publish:
 ---

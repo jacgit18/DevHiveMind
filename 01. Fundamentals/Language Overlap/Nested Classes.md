@@ -47,7 +47,7 @@ class OuterClass {
 ```
 
 In this example, `InnerClass` is a non-static nested class of `OuterClass`. Nested classes provide a structured way to organize and group related functionality within a class.
-![[Architecture/01. Fundamentals/Language/_Infographic/Java/classes.png]]
+![[01. Fundamentals/Language/_Infographic/Java/classes.png]]
 
 ### Inner Classes and Packages in Java:
 

@@ -13,7 +13,7 @@ Relates:
 Peer Reviewed: 0
 dg-publish:
 ---
-Serialization and deserialization are processes used in Java to convert objects into a [[Architecture/01. Fundamentals/Language Overlap/Byte stream]] and vice versa. These mechanisms allow objects to be saved to a file, transmitted over a network, or stored in a database. Another way to think about it is Serialization is like freezing your code in a snapshot, capturing a class's state. Deserialization then revives it with the same values. Be cautious, though – if you've made changes during deserialization, it might lead to compatibility issues and runtime errors. Stay in sync to avoid these hiccups.
+Serialization and deserialization are processes used in Java to convert objects into a [[01. Fundamentals/Language Overlap/Byte stream]] and vice versa. These mechanisms allow objects to be saved to a file, transmitted over a network, or stored in a database. Another way to think about it is Serialization is like freezing your code in a snapshot, capturing a class's state. Deserialization then revives it with the same values. Be cautious, though – if you've made changes during deserialization, it might lead to compatibility issues and runtime errors. Stay in sync to avoid these hiccups.
 
 In IntelliJ, use `Ctrl + Shift + A` and type "serialVersionUID" to locate the inspection that suggests adding serialVersionUID to a class that implements Serializable. This is a helpful reminder for classes missing the serialVersionUID field, which is crucial for versioning when serializing objects.
 

@@ -13,7 +13,7 @@ Relates:
 Peer Reviewed: 0
 dg-publish:
 ---
-### [[Architecture/01. Fundamentals/Language Overlap/Declarative Coding]] Example
+### [[01. Fundamentals/Language Overlap/Declarative Coding]] Example
 
 **Array Map Method:** is apart of array wrapper class don't confuse it with map data structure.
 

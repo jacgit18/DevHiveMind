@@ -9,7 +9,7 @@ Purpose: This documentation discusses Primitive Data Types.
 Status: Done
 Started:
 EditDate: 2024-03-05
-Relates: "[[Architecture/01. Fundamentals/Language Overlap/Primitive Types]]"
+Relates: "[[01. Fundamentals/Language Overlap/Primitive Types]]"
 Peer Reviewed: 0
 dg-publish:
 ---

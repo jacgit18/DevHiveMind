@@ -47,7 +47,7 @@ let min = Infinity                        
 Math.min(min...valueN) = min value  
 ```
 
-## Common [[Architecture/01. Fundamentals/Language Overlap/Primitive Types]]
+## Common [[01. Fundamentals/Language Overlap/Primitive Types]]
 
 ### Numbers
 
@@ -187,7 +187,7 @@ console.log(str.slice(-9, -5));
 
 
 
-### [[Architecture/01. Fundamentals/Language Overlap/Algorithms & Data Structures/Algorithms/Regular expression#Regular Expression|Regex]] 
+### [[01. Fundamentals/Language Overlap/Algorithms & Data Structures/Algorithms/Regular expression#Regular Expression|Regex]] 
 
 #### Match
 ```js
@@ -257,7 +257,7 @@ regex1.exec(str1)
 ```
 The string against which to match the regular expression. If the match succeeds, the exec() method returns an array or null if fail 
 
-# Common [[Architecture/01. Fundamentals/Language Overlap/Algorithms & Data Structures/Linear  Data Structures/Arrays|Array]] Functions  
+# Common [[01. Fundamentals/Language Overlap/Algorithms & Data Structures/Linear  Data Structures/Arrays|Array]] Functions  
 
 ### Array to String 
 ```javascript
@@ -495,7 +495,7 @@ const reversed = array1.reverse();
 // output: "reversed:" Array ["three", "two", "one"]
 ```
 
-## Array Func with [[Architecture/01. Fundamentals/Language Overlap/Callback]] Params
+## Array Func with [[01. Fundamentals/Language Overlap/Callback]] Params
 thisArg is a `optional` param for most built in functions that take in callback functions     
 
 #### Array Filter

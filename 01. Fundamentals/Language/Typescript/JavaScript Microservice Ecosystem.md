@@ -9,7 +9,7 @@ Purpose: This documentation discusses JavaScript
 Status: Done
 Started:
 EditDate: 2024-02-26
-Relates: "[[Architecture/04. Backing Service Options/Library/03.Backend/Eureka Service]]"
+Relates: "[[04. Backing Service Options/Library/03.Backend/Eureka Service]]"
 Peer Reviewed: 0
 dg-publish:
 ---

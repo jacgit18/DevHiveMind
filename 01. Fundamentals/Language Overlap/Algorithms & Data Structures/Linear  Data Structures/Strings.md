@@ -62,6 +62,6 @@ These advanced algorithms are fairly niche and only likely to be asked at FAANG 
 - [Boyer Moore](https://en.wikipedia.org/wiki/Boyer%E2%80%93Moore_string-search_algorithm)
 - [Rabin-Karp](https://en.wikipedia.org/wiki/Rabin%E2%80%93Karp_algorithm)
 
-### [[Architecture/01. Fundamentals/Language Overlap/Algorithms & Data Structures/Algorithms/Regular expression]]
+### [[01. Fundamentals/Language Overlap/Algorithms & Data Structures/Algorithms/Regular expression]]
 
 While it is unlikely that you will get a problem which can be solved directly with regular expressions, you should have a good idea of how regular expressions work. Leetcode questions with regular expression answers [do exist](https://leetcode.com/problems/solve-the-equation/description/), but are uncommon. If you're thinking of using regular expressions in your solution, you're probably over-complicating it. With that stated, it is still important to have familiarity with them. Consider playing with a site like [regex101.com](http://regex101.com/) to develop a better sense of regular expressions. Additionally, spend some time thinking through how to document a regular expression. Demonstrating not just an understanding of regular expressions but how to make them maintainable shows a certain coding maturity.

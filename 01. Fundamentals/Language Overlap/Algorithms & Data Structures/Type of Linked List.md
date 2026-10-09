@@ -13,7 +13,7 @@ Relates:
 Peer Reviewed: 0
 dg-publish: true
 ---
-## [[Architecture/01. Fundamentals/Language Overlap/Algorithms & Data Structures/Linear  Data Structures/Singly Linked List]]
+## [[01. Fundamentals/Language Overlap/Algorithms & Data Structures/Linear  Data Structures/Singly Linked List]]
 
 Linked lists, specifically nodes and the traversal of the list, serve as the foundation for other node-based data structures like trees and graphs. Linked lists differ in how their pointers are used, which can be either pointing to the next node or, in some cases, pointing to both the previous and next nodes, with the possibility of these pointers being null. On the other hand, data structures like binary search trees can have nodes that point to multiple child nodes, either two child nodes or a single child node with its own set of child nodes. Graphs, in a broader sense, can establish connections to numerous other nodes, often using an array to track these relationships.
 >[!important] 
@@ -29,9 +29,9 @@ Linked lists, specifically nodes and the traversal of the list, serve as the fou
 When it comes to iterating or traversing these data structures, it's often advantageous to iterate more extensively, especially in complex structures like trees and graphs, to explore all the relationships and data effectively. The choice of traversal algorithms can significantly impact the efficiency and functionality of these data structures.
 
 
-## [[Architecture/01. Fundamentals/Language Overlap/Algorithms & Data Structures/Linear  Data Structures/Doubly linked list]]
+## [[01. Fundamentals/Language Overlap/Algorithms & Data Structures/Linear  Data Structures/Doubly linked list]]
 
-## [[Architecture/01. Fundamentals/Language Overlap/Algorithms & Data Structures/Non-Linear Data Structures/Circular Linked Lists]]
+## [[01. Fundamentals/Language Overlap/Algorithms & Data Structures/Non-Linear Data Structures/Circular Linked Lists]]
 
 
 

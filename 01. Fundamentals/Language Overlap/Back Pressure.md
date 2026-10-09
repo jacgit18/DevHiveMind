@@ -10,7 +10,7 @@ Purpose: This documentation discusses back pleasure.
 Status: Done
 Started:
 EditDate: 2024-03-04
-Relates: "[[Architecture/01. Fundamentals/Language Overlap/Asynchronous Programming]]"
+Relates: "[[01. Fundamentals/Language Overlap/Asynchronous Programming]]"
 Peer Reviewed: 0
 dg-publish:
 ---
@@ -167,7 +167,7 @@ In this example:
 - The `simulateWork` method simulates some heavy computation or network call.  
 - We use a `sleep` method to allow the subscription to run for a certain period, demonstrating back pressure.  
 
-`BackPressureExample::processData`, represents a method reference. [[Architecture/01. Fundamentals/Language/Java/Static Method Reference|Method references]] are a shorthand way to refer to a method as a lambda expression for specific contexts, particularly when working with functional interfaces. In your example, `BackPressureExample::processData` accomplishes the following:
+`BackPressureExample::processData`, represents a method reference. [[01. Fundamentals/Language/Java/Static Method Reference|Method references]] are a shorthand way to refer to a method as a lambda expression for specific contexts, particularly when working with functional interfaces. In your example, `BackPressureExample::processData` accomplishes the following:
 
 1. **Reference to a Method:** It refers to the `processData` method of the `BackPressureExample` class.
 

@@ -13,7 +13,7 @@ Relates:
 Peer Reviewed: 1
 dg-publish:
 ---
-### [[Architecture/01. Fundamentals/Language Overlap/Imperative Coding]] Example
+### [[01. Fundamentals/Language Overlap/Imperative Coding]] Example
 
 ```javascript
 function LengthCheck(inputArray) {
