@@ -9,7 +9,7 @@ Purpose: This documentation discusses the process of gathering business requirem
 Status: Done
 Started: 2023-12-12
 EditDate: 2024-02-20
-Relates: "[[Business Requirements Life cycle]]"
+Relates: "Business Requirements Life cycle"
 dg-publish:
 ---
 1. **Gathering Requirements:**

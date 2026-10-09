@@ -31,7 +31,7 @@ This product class diagram can repurposed for functions which would increase num
 - [ ] Identify util functions in structural model
 - [ ] Create a object oriented programming structural model for a driving school website
 - [ ] Create a object oriented programming structural model combined with a functional programming structural model
-- [ ] try using chatGPT to convert [[User Stories]] into high level object oriented class map breakdown down structure like below 
+- [ ] try using chatGPT to convert User Stories into high level object oriented class map breakdown down structure like below 
 
 
 ## Flashcard

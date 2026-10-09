@@ -8,7 +8,7 @@ Purpose: This documentation discusses the distinction between use cases and user
 Status: Done
 Started: 2024-01-08
 EditDate: 
-Relates: "[[User Stories#User Stories Intricacies]]"
+Relates: "User Stories"
 dg-publish:
 ---
 Use cases and User stories are both techniques used in software development to capture and describe requirements, but they have some differences.
