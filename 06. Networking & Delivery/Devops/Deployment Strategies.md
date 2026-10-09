@@ -14,9 +14,9 @@ Relates:
 Peer Reviewed: 0
 dg-publish:
 ---
-![[06. Networking & Delivery/Devops/_Infographic/Deployment Patterns.jpeg]]
+![[Deployment Patterns.jpeg]]
 
-![[06. Networking & Delivery/Devops/_Infographic/Deployment strats.gif]]
+![[Deployment strats.gif]]
 
 When deploying a codebase, selecting the appropriate deployment strategy hinges on factors such as the application's architecture, development practices, team requirements, and infrastructure capabilities. Deployment patterns automate the introduction of new features to users, influencing downtime and the ability to roll out additional functionality. Some patterns enable feature testing with a select user group before a broader release. Options for deployment patterns include:
 

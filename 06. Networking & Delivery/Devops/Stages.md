@@ -13,7 +13,7 @@ Relates: "[[06. Networking & Delivery/Devops/Deployment Strategies]]"
 Peer Reviewed: 0
 dg-publish: true
 ---
-![[06. Networking & Delivery/Devops/_Infographic/Software Life Cycle.gif]]
+![[Software Life Cycle.gif]]
 
 Enhance the software development lifecycle by eliminating obstacles across ideation, implementation, testing, building, deployment, and system observation. This is achieved through the automation and streamlining of processes, optimizing the overall system.
 
@@ -22,7 +22,7 @@ Collaboration between developers and operations managers is pivotal in bridging 
 In essence, DevOps aims to harmonize and enhance the entire software development and deployment lifecycle through collaborative efforts and the adoption of streamlined, automated practices.
 
 
-![[06. Networking & Delivery/Devops/_Infographic/Development Stages to Production.png]]
+![[Development Stages to Production.png]]
 
 DevOps facilitates rapid releases, but for stability, the role of a [[Site Reliability Engineer]]is crucial.
 
