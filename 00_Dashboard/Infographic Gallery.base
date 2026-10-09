@@ -1,0 +1,45 @@
+filters:
+  and:
+    - file.folder.contains("_Infographic")
+    - '["png", "jpg", "jpeg", "gif", "webp"].contains(file.ext)'
+formulas:
+  section: file.folder.split("/")[0]
+  linked_from: file.backlinks.length
+properties:
+  file.name:
+    displayName: Image
+  formula.section:
+    displayName: Section
+  formula.linked_from:
+    displayName: Linked from
+  file.ext:
+    displayName: Type
+views:
+  - type: cards
+    name: Gallery
+    groupBy:
+      property: formula.section
+      direction: ASC
+    order:
+      - file.name
+      - formula.linked_from
+    image: file.path
+  - type: table
+    name: Table
+    order:
+      - file.name
+      - formula.section
+      - file.ext
+      - formula.linked_from
+      - file.size
+    sort:
+      - property: formula.section
+        direction: ASC
+  - type: table
+    name: Unlinked images
+    filters:
+      and:
+        - file.backlinks.length == 0
+    order:
+      - file.name
+      - formula.section

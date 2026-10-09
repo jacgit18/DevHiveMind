@@ -1,0 +1,62 @@
+filters:
+  and:
+    - file.ext == "md"
+    - file.hasTag("todo")
+formulas:
+  days_since_edit: (now() - file.mtime).days
+properties:
+  file.name:
+    displayName: Note
+  file.folder:
+    displayName: Folder
+  file.mtime:
+    displayName: Last edited
+  formula.days_since_edit:
+    displayName: Days since edit
+views:
+  - type: table
+    name: High priority
+    filters:
+      and:
+        - file.hasTag("todo/priority/High")
+    order:
+      - file.name
+      - file.folder
+      - file.mtime
+      - formula.days_since_edit
+    sort:
+      - property: file.mtime
+        direction: ASC
+  - type: table
+    name: Low priority
+    filters:
+      and:
+        - file.hasTag("todo/priority/Low")
+    order:
+      - file.name
+      - file.folder
+      - file.mtime
+      - formula.days_since_edit
+    sort:
+      - property: file.mtime
+        direction: ASC
+  - type: table
+    name: Legacy todo tags
+    filters:
+      and:
+        - '!file.hasTag("todo/priority")'
+    order:
+      - file.name
+      - file.folder
+      - file.mtime
+    sort:
+      - property: file.mtime
+        direction: DESC
+  - type: table
+    name: By folder
+    groupBy:
+      property: file.folder
+      direction: ASC
+    order:
+      - file.name
+      - file.mtime

@@ -1,0 +1,58 @@
+filters:
+  and:
+    - file.ext == "gif"
+formulas:
+  section: file.folder.split("/")[0]
+  linked_from: file.backlinks.length
+  size_mb: (file.size / 1048576).toFixed(2)
+properties:
+  file.name:
+    displayName: GIF
+  formula.section:
+    displayName: Section
+  formula.linked_from:
+    displayName: Linked from
+  formula.size_mb:
+    displayName: Size (MB)
+  file.mtime:
+    displayName: Added
+views:
+  - type: cards
+    name: Gallery
+    groupBy:
+      property: formula.section
+      direction: ASC
+    order:
+      - file.name
+      - formula.linked_from
+    image: file.path
+  - type: table
+    name: Table
+    order:
+      - file.name
+      - formula.section
+      - formula.linked_from
+      - formula.size_mb
+      - file.mtime
+    sort:
+      - property: formula.section
+        direction: ASC
+  - type: table
+    name: Largest
+    order:
+      - file.name
+      - formula.section
+      - formula.size_mb
+    sort:
+      - property: file.size
+        direction: DESC
+    limit: 20
+  - type: table
+    name: Unlinked
+    filters:
+      and:
+        - file.backlinks.length == 0
+    order:
+      - file.name
+      - formula.section
+      - formula.size_mb
