@@ -69,6 +69,7 @@ Drag on desktop, "Move to" on phone. Stores `moved[slot.id] = programDay`. On mo
 same exercise would land on the same day, the day before, or the day after; the heads-up offers "move it back" and
 `altDay`'s nearest clash-free column. Home cards and either/or cards never clash, and an exercise present on every
 workout day (the sled) is exempt (`countsForClash`, `dailyOf`).
+A moved card shows at the **top** of its new day (`currentLayout` puts cards with a `moved` entry first; the others keep program order). Derived, nothing stored; moving it back returns it to its program position. Conflicts: none with the board/log write paths (display order only).
 
 ### 1.5 One-week cards (`week.extra`)
 
