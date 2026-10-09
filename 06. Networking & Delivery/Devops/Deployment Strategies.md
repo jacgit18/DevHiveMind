@@ -14,15 +14,15 @@ Relates:
 Peer Reviewed: 0
 dg-publish:
 ---
-![[Architecture/Delivery/Devops/_Infographic/Deployment Patterns.jpeg]]
+![[06. Networking & Delivery/Devops/_Infographic/Deployment Patterns.jpeg]]
 
-![[Architecture/Delivery/Devops/_Infographic/Deployment strats.gif]]
+![[06. Networking & Delivery/Devops/_Infographic/Deployment strats.gif]]
 
 When deploying a codebase, selecting the appropriate deployment strategy hinges on factors such as the application's architecture, development practices, team requirements, and infrastructure capabilities. Deployment patterns automate the introduction of new features to users, influencing downtime and the ability to roll out additional functionality. Some patterns enable feature testing with a select user group before a broader release. Options for deployment patterns include:
 
 **CI/CD** which is the combination of continuous integration and deployment, where code changes are continuously integrated, tested, and deployed to production. It involves using automated build, test, and deployment pipelines to ensure that every code change is thoroughly validated before being deployed.
 
-## [[Architecture/Delivery/Devops/Continuous Integration]]
+## [[06. Networking & Delivery/Devops/Continuous Integration]]
 CI focuses on automating the integration of code changes from multiple developers into a shared repository (e.g., Git) multiple times a day. Each code change triggers an automated build process, compiling the code, running automated tests, and generating build artifacts (e.g., binaries, Docker images). The primary goal is to detect integration errors and bugs early in development, enabling swift issue resolution and maintaining a stable codebase. CI relies on automation to streamline build, test, and validation processes, ensuring thorough testing and validation of code changes before integration.
 
 - **Pros:**  
@@ -59,7 +59,7 @@ In a manual deployment process, code changes are deployed to the production envi
 	- Prone to human error and inconsistency.  
 	- May introduce delays and bottlenecks in the release process.
 
-## [[Architecture/Delivery/Devops/Staged Deployment]]
+## [[06. Networking & Delivery/Devops/Staged Deployment]]
 Staged deployment involves deploying the codebase in multiple stages or environments, such as development, testing, staging, and production. Each stage serves a specific purpose, such as testing new features, validating performance, or simulating production conditions. Code changes are deployed to each stage sequentially, allowing for thorough testing and validation before reaching the production environment.
 
 ## 𝗕𝗹𝘂𝗲/𝗴𝗿𝗲𝗲𝗻 𝗱𝗲𝗽𝗹𝗼𝘆𝗺𝗲𝗻𝘁𝘀

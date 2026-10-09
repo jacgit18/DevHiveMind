@@ -10,7 +10,7 @@ Purpose: This documentation discusses what a load balancer purpose.
 Status: Refinement
 Started: 2024-01-07
 EditDate: 2024-03-06
-Relates: "[[Architecture/04. Backing Service Options/Dynamic Scaling]]"
+Relates: "[[04. Backing Service Options/Dynamic Scaling]]"
 Peer Reviewed: 0
 dg-publish:
 ---

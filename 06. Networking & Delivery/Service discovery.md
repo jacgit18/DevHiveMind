@@ -7,7 +7,7 @@ Purpose: This documentation discusses
 Status:
 Started: 2024-04-27
 EditDate:
-Relates: "[[Architecture/04. Backing Service Options/Library/03.Backend/Eureka Service]]"
+Relates: "[[04. Backing Service Options/Library/03.Backend/Eureka Service]]"
 Peer Reviewed: 0
 dg-publish:
 ---

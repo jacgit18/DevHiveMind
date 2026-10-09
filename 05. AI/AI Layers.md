@@ -15,7 +15,7 @@ Relates:
 Peer Reviewed: 0
 dg-publish: true
 ---
-![[Architecture/AI/_Infographic/AI vs Machine vs Deep.png]]
+![[05. AI/_Infographic/AI vs Machine vs Deep.png]]
 
 #todo/Low/Dev 
 - [ ] Look into Conversational AI [Sesame](https://www.sesame.com)
@@ -54,6 +54,6 @@ dg-publish: true
 
 It's important to note that these layers are interconnected, and the distinctions between them can sometimes blur, especially in the context of deep learning, which is a subset of machine learning, which in turn is a subset of artificial intelligence. The layers mentioned here provide a conceptual breakdown of the components involved in these domains.
 
-![[Architecture/AI/_Infographic/AI Layers.jpeg]]
+![[05. AI/_Infographic/AI Layers.jpeg]]
 
-![[Architecture/AI/_Infographic/AI layer 2 .gif]]
+![[05. AI/_Infographic/AI layer 2 .gif]]

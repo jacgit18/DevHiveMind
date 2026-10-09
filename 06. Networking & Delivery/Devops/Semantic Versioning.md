@@ -13,7 +13,7 @@ Relates:
 Peer Reviewed: 0
 dg-publish: true
 ---
-![[Architecture/Delivery/Devops/_Infographic/Version.jpeg]]
+![[06. Networking & Delivery/Devops/_Infographic/Version.jpeg]]
 
 Semantic Versioning, often abbreviated as SemVer, is a versioning scheme designed to convey meaning about the underlying changes in software. 
 

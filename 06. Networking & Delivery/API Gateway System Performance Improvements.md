@@ -16,7 +16,7 @@ dg-publish:
   
 2. **Load Balancing**: API gateways can distribute incoming requests across multiple backend servers or services using load balancing algorithms. By spreading the workload evenly, API gateways can prevent individual servers from becoming overwhelmed and ensure that resources are utilized efficiently.  
   
-3. **[[Architecture/04. Backing Service Options/Databases/Connection Pooling]]**: API gateways can manage connection pooling to backend services, reducing the overhead of establishing and tearing down connections for each request. By maintaining a pool of reusable connections, API gateways can improve the efficiency of communication with backend systems and reduce latency.  
+3. **[[04. Backing Service Options/Databases/Connection Pooling]]**: API gateways can manage connection pooling to backend services, reducing the overhead of establishing and tearing down connections for each request. By maintaining a pool of reusable connections, API gateways can improve the efficiency of communication with backend systems and reduce latency.  
   
 4. **Protocol Optimization**: API gateways can optimize communication protocols between clients and backend services. For example, they can handle protocol translation or transformation to convert between different formats or standards. By optimizing protocols, API gateways can reduce overhead and improve performance.  
   

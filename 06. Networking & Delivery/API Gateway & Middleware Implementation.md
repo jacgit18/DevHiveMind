@@ -7,7 +7,7 @@ Purpose: This documentation discusses
 Status: Refinement
 Started:
 EditDate:
-Relates: "[[Architecture/04. Backing Service Options/API/API Gateway]]"
+Relates: "[[04. Backing Service Options/API/API Gateway]]"
 Peer Reviewed: 0
 dg-publish:
 ---

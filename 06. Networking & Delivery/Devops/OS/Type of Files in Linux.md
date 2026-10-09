@@ -18,7 +18,7 @@ dg-publish:
 - Regular files
 - Directories
 - Symbolic (soft) links/hard links
-- [[Architecture/Delivery/Devops/OS/Linux Pipe]]
+- [[06. Networking & Delivery/Devops/OS/Linux Pipe]]
 - Block/character
 - Socket
 

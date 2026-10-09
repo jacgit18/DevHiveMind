@@ -37,7 +37,7 @@ To meet CI/CD requirements, a dedicated server for running tasks minimizes unpre
    - Pros: Flexibility, control, extensive plugin support.
    - Cons: Complexity in setup, potential for boilerplate code, hardware failure risks.
 
-2. **[[Architecture/Delivery/Devops/Build Tool/GitHub Actions]] and Cloud-based Solutions:**
+2. **[[06. Networking & Delivery/Devops/Build Tool/GitHub Actions]] and Cloud-based Solutions:**
    - Pros: Simplified setup, no environment worries, easy configuration.
    - Cons: Limited customization for complex tasks, resource constraints, build time billing.
 

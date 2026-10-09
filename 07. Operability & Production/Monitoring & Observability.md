@@ -10,7 +10,7 @@ Purpose: This documentation discusses Monitoring & Observability
 Status: Done
 Started:
 EditDate: 2024-03-07
-Relates: "[[Architecture/01. System Design/Distributed Tracking & Monitoring]]"
+Relates: "[[07. Operability & Production/Distributed Tracking & Monitoring]]"
 Peer Reviewed: 0
 dg-publish:
 ---

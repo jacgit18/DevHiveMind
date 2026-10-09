@@ -11,7 +11,7 @@ Purpose: This documentation discusses ways to mitigate prototype pollution.
 Status: Done
 Started: 2024-02-04
 EditDate:
-Relates: "[[Architecture/01. Fundamentals/Language/Typescript/Prototypes]]"
+Relates: "[[01. Fundamentals/Language/Typescript/Prototypes]]"
 Peer Reviewed: 0
 dg-publish: false
 ---

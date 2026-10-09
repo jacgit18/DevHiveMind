@@ -8,11 +8,11 @@ Purpose: This documentation discusses the application run process.
 Status: Done
 Started:
 EditDate: 2024-02-22
-Relates: "[[Architecture/01. Fundamentals/Language Overlap/Runtime]]"
+Relates: "[[01. Fundamentals/Language Overlap/Runtime]]"
 Peer Reviewed: 0
 dg-publish: true
 ---
-Running an application signifies its operation in a production environment, accessible to end-users. This encompasses tasks such as configuring servers, databases, and infrastructure components to host the application. When the "run" command is initiated, it not only triggers the [[Architecture/Delivery/Devops/Build]] process but also executes your project, making it ready for real-world utilization.
+Running an application signifies its operation in a production environment, accessible to end-users. This encompasses tasks such as configuring servers, databases, and infrastructure components to host the application. When the "run" command is initiated, it not only triggers the [[06. Networking & Delivery/Devops/Build]] process but also executes your project, making it ready for real-world utilization.
 
 #### Application Running Process InDepth
 Steps to ensure its proper execution in a production environment.

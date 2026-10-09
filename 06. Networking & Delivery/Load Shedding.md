@@ -6,7 +6,7 @@ Purpose: This documentation discusses
 Status: Done
 Started: 2024-03-16
 EditDate:
-Relates: "[[Architecture/Delivery/Load Shedding Implementation]]"
+Relates: "[[06. Networking & Delivery/Load Shedding Implementation]]"
 Peer Reviewed: 0
 dg-publish:
 ---

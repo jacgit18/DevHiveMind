@@ -9,11 +9,11 @@ Purpose: This documentation discusses development stages.
 Status: Refinement
 Started:
 EditDate: 2024-02-22
-Relates: "[[Architecture/Delivery/Devops/Deployment Strategies]]"
+Relates: "[[06. Networking & Delivery/Devops/Deployment Strategies]]"
 Peer Reviewed: 0
 dg-publish: true
 ---
-![[Architecture/Delivery/Devops/_Infographic/Software Life Cycle.gif]]
+![[06. Networking & Delivery/Devops/_Infographic/Software Life Cycle.gif]]
 
 Enhance the software development lifecycle by eliminating obstacles across ideation, implementation, testing, building, deployment, and system observation. This is achieved through the automation and streamlining of processes, optimizing the overall system.
 
@@ -22,7 +22,7 @@ Collaboration between developers and operations managers is pivotal in bridging 
 In essence, DevOps aims to harmonize and enhance the entire software development and deployment lifecycle through collaborative efforts and the adoption of streamlined, automated practices.
 
 
-![[Architecture/Delivery/Devops/_Infographic/Development Stages to Production.png]]
+![[06. Networking & Delivery/Devops/_Infographic/Development Stages to Production.png]]
 
 DevOps facilitates rapid releases, but for stability, the role of a [[Site Reliability Engineer]]is crucial.
 
@@ -30,10 +30,10 @@ DevOps facilitates rapid releases, but for stability, the role of a [[Site Relia
 A feedback loop is exemplified when unit tests within the pipeline identify issues, signaling that the code isn't production-ready.
 
 **Components of an Excellent Pipeline:**
-A robust pipeline involves compiling and testing code ([[Architecture/Delivery/Devops/Continuous Integration]]), producing a [[Architecture/Delivery/Devops/Deployment Artifacts|deployable artifact]] (Continuous Delivery), and automatic application deployment (Continuous Deployment).
+A robust pipeline involves compiling and testing code ([[06. Networking & Delivery/Devops/Continuous Integration]]), producing a [[06. Networking & Delivery/Devops/Deployment Artifacts|deployable artifact]] (Continuous Delivery), and automatic application deployment (Continuous Deployment).
 
 **Automated Trigger:**
-The best pipelines automatically trigger upon code commits, either through [[Architecture/01. Fundamentals/Web/Webhooks vs Polling|Polling or Webhooks]], ensuring seamless and consistent execution.
+The best pipelines automatically trigger upon code commits, either through [[01. Fundamentals/Web/Webhooks vs Polling|Polling or Webhooks]], ensuring seamless and consistent execution.
 
 **Code Checkout:**
 The CI server checks out code from the source repository based on the triggered commit, initiating the pipeline.

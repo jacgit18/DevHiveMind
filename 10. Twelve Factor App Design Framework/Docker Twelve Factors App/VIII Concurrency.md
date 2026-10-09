@@ -18,11 +18,11 @@ dg-publish:
 ---
 Concurrency: The app should scale out horizontally by adding more processes, rather than increasing the size of individual processes. Docker's orchestration tools (Kubernetes, Nomad, Swarm, etc) can automatically manage the scaling of your app based on defined rules and resource utilization.
 
-In the context of the Springboot app from Cre8tive the [[Architecture/04. Backing Service Options/Library/03.Backend/Eureka Service]] helps with concurrency.
+In the context of the Springboot app from Cre8tive the [[04. Backing Service Options/Library/03.Backend/Eureka Service]] helps with concurrency.
 
 ## Relating Topics
-[[Architecture/02. System Design/Vertical vs Horizontal Scaling#Vertical Scaling Relationship with Concurrency|Horizontal Scaling Relationship with Concurrency]]
-[[Architecture/01. Fundamentals/Language Overlap/Concurrent programming]]
+[[02. System Design/Vertical vs Horizontal Scaling#Vertical Scaling Relationship with Concurrency|Horizontal Scaling Relationship with Concurrency]]
+[[01. Fundamentals/Language Overlap/Concurrent programming]]
 
 
 ![[Twelve Factor App Concurrency]]

@@ -8,7 +8,7 @@ Purpose: This documentation discusses build automation.
 Status: Done
 Started:
 EditDate: 2024-02-22
-Relates: "[[Architecture/Delivery/Devops/Deployment Strategies]]"
+Relates: "[[06. Networking & Delivery/Devops/Deployment Strategies]]"
 Peer Reviewed: 0
 dg-publish:
 ---

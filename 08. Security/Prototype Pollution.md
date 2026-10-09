@@ -10,7 +10,7 @@ Purpose: This documentation discusses prototype pollution.
 Status: Refinement
 Started: 2023-11-21
 EditDate:
-Relates: "[[Architecture/01. Fundamentals/Language/Typescript/Prototypes]]"
+Relates: "[[01. Fundamentals/Language/Typescript/Prototypes]]"
 Peer Reviewed: 0
 dg-publish: false
 ---

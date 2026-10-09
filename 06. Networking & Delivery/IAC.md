@@ -15,7 +15,7 @@ Peer Reviewed: 0
 dg-publish:
 ---
 # **Infrastructure as Code:**  
-- IaC is a methodology within [[Architecture/04. Backing Service Options/Cloud/Cloud Service Model]] to manage and provisioning infrastructure resources using machine-readable configuration files or scripts, rather than manually configuring infrastructure components through graphical user interfaces (GUIs) or command-line interfaces (CLIs).  
+- IaC is a methodology within [[04. Backing Service Options/Cloud/Cloud Service Model]] to manage and provisioning infrastructure resources using machine-readable configuration files or scripts, rather than manually configuring infrastructure components through graphical user interfaces (GUIs) or command-line interfaces (CLIs).  
 - With IaC, infrastructure configurations are defined in code (e.g., YAML, JSON, or programming languages like Terraform, CloudFormation, or Ansible). These configuration files or scripts describe the desired state of the infrastructure, including servers, networks, storage, security policies, and dependencies.  
 - IaC enables infrastructure to be treated as code, allowing for version control, code review, and automated testing of infrastructure changes. It also facilitates the automation of infrastructure provisioning and management, ensuring consistency, repeatability, and scalability.  
 - By adopting IaC practices, organizations can achieve infrastructure agility, improve collaboration between development and operations teams (DevOps), and accelerate the deployment of applications and services in a cloud environment.  

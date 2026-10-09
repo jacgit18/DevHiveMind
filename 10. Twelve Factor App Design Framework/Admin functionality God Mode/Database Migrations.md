@@ -10,7 +10,7 @@ Purpose: This documentation discusses admin process around database migrations p
 Status: Done
 Started:
 EditDate: 2024-03-06
-Relates: "[[Architecture/02. System Design/Migration Plan]]"
+Relates: "[[02. System Design/Migration Plan]]"
 Peer Reviewed: 0
 dg-publish:
 ---
