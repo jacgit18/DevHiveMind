@@ -1,0 +1,63 @@
+{
+ "decision": "rejected",
+ "record": {
+  "verdict": "rejected",
+  "fingerprint": "excelImport.readWeeks.warm.inherited-builtin-member-write",
+  "title": "Crafted .xlsx Check-offs 'warm' row writes onto an inherited Object.prototype member (in-memory only)",
+  "description": "In readWeeks, a Check-offs row with kind 'warm' and key 'hasOwnProperty/call' reaches (w.warm[day] = w.warm[day] || {})[item] = value. w.warm is a plain {} from normWeek, so w.warm['hasOwnProperty'] resolves to the inherited Object.prototype.hasOwnProperty function. The code then sets .call = true on that function. The UNSAFE_KEY denylist only covers __proto__, constructor and prototype. The primitive is real and I reproduced it in the sandbox: Object.prototype.hasOwnProperty.call then becomes true and calling it throws a TypeError. It does not amount to a vulnerability. The value written is only a boolean, no attacker string or object is written, nothing is persisted, and a reload clears it. It also needs the user to select a hostile .xlsx.",
+  "claimed_root_cause": "The warm-key denylist is incomplete. Keys that resolve to inherited Object.prototype members (hasOwnProperty, toString, valueOf and so on) are not blocked, and w.warm[day] is looked up on a normal-prototype object.",
+  "trace": [
+   {
+    "kind": "entrypoint",
+    "file": "src/store/settingsSlice.ts",
+    "line": 33,
+    "scope": "readImportFile",
+    "description": "The user picks an .xlsx file. It is parsed by parseExcelExport when the file is selected, before any confirm step."
+   },
+   {
+    "kind": "propagation",
+    "file": "src/lib/excelImport.ts",
+    "line": 167,
+    "scope": "readWeeks",
+    "description": "The row's kind and key are split on '/'. Only __proto__, constructor and prototype are rejected."
+   },
+   {
+    "kind": "propagation",
+    "file": "src/shared/week.ts",
+    "line": 22,
+    "scope": "normWeek",
+    "description": "normWeek builds the week with warm: {}, a plain object with a normal prototype."
+   },
+   {
+    "kind": "sink",
+    "file": "src/lib/excelImport.ts",
+    "line": 167,
+    "scope": "readWeeks",
+    "description": "The assignment (w.warm[day] = w.warm[day] || {})[item] = (v === 'Yes') sets a boolean property on the inherited function."
+   }
+  ],
+  "evidence": [
+   {
+    "file": "src/lib/excelImport.ts",
+    "line": 24,
+    "description": "UNSAFE_KEY is limited to __proto__, constructor and prototype."
+   },
+   {
+    "file": "src/lib/excelImport.ts",
+    "line": 167,
+    "description": "The warm branch does a plain-object lookup and assignment with attacker-chosen day and item."
+   },
+   {
+    "file": "src/shared/week.ts",
+    "line": 22,
+    "description": "normWeek's cleanMap/UNSAFE set also does not stop inherited names. A normal-prototype warm object is used afterwards."
+   },
+   {
+    "file": "agents/ver-v01/artifacts/out/check-1.txt",
+    "line": 1,
+    "description": "The sandbox run reproduced the write: own call=true, and hasOwnProperty.call({}, 'x') throws a TypeError."
+   }
+  ],
+  "reason": "The mutation is real, but there is no demonstrated cross-boundary impact. (1) It only writes the booleans true/false onto properties of built-in functions, so there is no attacker-controlled code, string or object, and no privilege or data crossing. (2) It is in-memory in the importing tab only. It is never stored in the DB, the store or the sync payload, and a reload clears it. (3) The user must choose to open a hostile workbook; an attacker who can get a hostile file imported can already inject arbitrary (validated) data through the normal merge. (4) The only consequence shown is a transient break of Object.prototype.hasOwnProperty.call in that tab, a self-inflicted nuisance. I found no application path that turns this into a security effect. Treat it as hardening: use Object.create(null) or Object.hasOwn checks, or a Map, for warm, and reject keys that exist on Object.prototype."
+ }
+}

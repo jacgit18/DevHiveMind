@@ -1,0 +1,51 @@
+{
+ "decision": "rejected",
+ "record": {
+  "verdict": "rejected",
+  "fingerprint": "health-db-before-api-rate-limit",
+  "title": "Unauthenticated /api/health/db runs select 1 ahead of the /api rate limiter (hardening only)",
+  "description": "GET /api/health/db is registered before rateLimit(limits.api), so any anonymous caller can trigger a trivial `select 1` on the shared pg pool with no per-IP limit. The source comment at app.ts L118 says an anonymous flood never reaches the database, which this route contradicts. The claim is accurate as source, but it is a deliberate liveness probe. Its cost is one constant-time query with no data access, no user-controlled input and no amplification. The extra exposure over the unlimited anonymous routes (/api/health, static files, SPA fallback) is marginal, and an attacker needs a network-level flood to matter. No confidentiality or integrity impact exists, and nothing demonstrates an availability impact beyond what a generic request flood already causes. The Neon scale-to-zero and cost angle depends on plan and quota facts outside the repository, so it is a hardening note, not a demonstrated vulnerability.",
+  "claimed_root_cause": "The DB-backed health route is mounted before the /api rate limiter and the sessionAuth gate, so anonymous requests reach the database pool unthrottled.",
+  "trace": [
+   {
+    "kind": "entrypoint",
+    "file": "server/app.ts",
+    "line": 98,
+    "scope": "createApp: app.get('/api/health/db')",
+    "description": "Anonymous GET handler, registered after the body parsers and before clientVersionGate, rateLimit(limits.api) and sessionAuth."
+   },
+   {
+    "kind": "propagation",
+    "file": "server/app.ts",
+    "line": 104,
+    "scope": "createApp: /api/health/db handler",
+    "description": "Runs the fixed statement `select 1` through Kysely on the shared pool; no request data is used in the query."
+   },
+   {
+    "kind": "sink",
+    "file": "server/db/connection.ts",
+    "line": 11,
+    "scope": "createDb: pg.Pool",
+    "description": "Shared pg pool with default size (about 10). Each probe holds a connection for roughly one round trip, and the pool queues extra requests."
+   }
+  ],
+  "evidence": [
+   {
+    "file": "server/app.ts",
+    "line": 118,
+    "description": "The comment says the per-address limit comes first so an anonymous flood never reaches the database. Order is L98 (health/db) then L119 (rateLimit). The comment overstates the guarantee, and the health route is a documented exception."
+   },
+   {
+    "file": "scripts/ci-deploy.sh",
+    "line": 28,
+    "description": "The deploy smoke test intentionally calls /api/health/db and requires 200 from it, so the endpoint is a purposeful deployment check, and moving it behind the limiter would risk smoke-test failures."
+   },
+   {
+    "file": "server/app.ts",
+    "line": 94,
+    "description": "Unlimited anonymous routes already exist (/api/health, static, SPA fallback). The architecture notes rate limits are in-memory per instance, so a flood at this layer is not meaningfully blocked even for other routes."
+   }
+  ],
+  "reason": "No meaningful cross-boundary impact is demonstrated. The query is a fixed trivial `select 1` with no data exposure or state change. Pool exhaustion needs a sustained flood, which also saturates the unlimited static and health routes and is better handled at the platform edge. The scale-to-zero and cost concern rests on unobservable Neon and Cloud Run settings, and the endpoint exists for the deploy smoke check. Treat it as a hardening suggestion: add a small per-IP limit or a short cached result for /api/health/db, and fix the misleading comment at app.ts L118. I did not run it in the sandbox because the conclusion is source-level."
+ }
+}

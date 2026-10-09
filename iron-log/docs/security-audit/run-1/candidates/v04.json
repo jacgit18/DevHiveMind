@@ -1,0 +1,16 @@
+{
+ "verifier_id": "v04",
+ "fingerprint": "auth-mount-unbounded-request-body",
+ "hunter_proposed_verdict": "needs_validation",
+ "hunter": "hunt-avail-cloud-w1",
+ "claim": "server/app.ts mounts the better-auth handler (app.all('/api/auth/*splat', toNodeHandler(auth))) before any express.json parser; adapter has no bodySizeLimit; better-call router buffers whole body via request.json(). Anonymous. Local: 32 MiB JSON body to POST /api/auth/sign-in/social accepted, +65 MB RSS, 3x16MiB concurrent +77 MB. Cloud Run 512Mi, max-instances 1, concurrency 40, so ~6-8 concurrent bodies might OOM the only instance.",
+ "trace_refs": [
+  "server/app.ts:83",
+  "server/app.ts:85",
+  "server/app.ts:91",
+  "node_modules/better-call/dist/router.mjs:67",
+  "scripts/deploy-cloud-run.sh:89"
+ ],
+ "hunter_artifact": "agents/hunt-avail-cloud-w1/artifacts/out/check-1.txt",
+ "notes": "Blockers: Cloud Run request-size cap (~32MiB HTTP/1), real OOM behavior under 512Mi. Consider promoting to confirmed only if a bounded local check shows memory growth proportional to body with no cap; severity must not exceed demonstrated impact."
+}

@@ -1,0 +1,61 @@
+{
+ "decision": "rejected",
+ "record": {
+  "verdict": "rejected",
+  "fingerprint": "auth-verification-oauth-state-rows-never-expire",
+  "title": "OAuth state rows in auth.verification claimed to never expire",
+  "description": "Claimed: anonymous POST /api/auth/sign-in/social inserts an auth.verification row (10 min expiresAt) that is only deleted if the state is consumed, with no sweeper or TTL in the repo, so rows accumulate without bound.",
+  "claimed_root_cause": "Database state strategy stores one verification row per sign-in start; the repo adds no TTL or cleanup, and the app rate limiter caps request rate but not retained rows.",
+  "trace": [
+   {
+    "kind": "entrypoint",
+    "file": "server/app.ts",
+    "line": 83,
+    "scope": "createApp auth routes",
+    "description": "Unauthenticated /api/auth/sign-in is rate limited and then handed to better-auth."
+   },
+   {
+    "kind": "propagation",
+    "file": "node_modules/better-auth/dist/oauth2/state.mjs",
+    "line": 23,
+    "scope": "generateState",
+    "description": "Builds state data with expiresAt = now + 10 min and calls generateGenericState."
+   },
+   {
+    "kind": "sink",
+    "file": "node_modules/better-auth/dist/state.mjs",
+    "line": 79,
+    "scope": "generateGenericState",
+    "description": "createVerificationValue inserts an auth-state:<rand> row into auth.verification."
+   }
+  ],
+  "evidence": [
+   {
+    "file": "node_modules/better-auth/dist/db/internal-adapter.mjs",
+    "line": 753,
+    "description": "findVerificationValue deletes every verification row with expiresAt < now unless options.verification.disableCleanup is set. server/auth/betterAuth.ts:47 sets only modelName for verification, so the sweep is active."
+   },
+   {
+    "file": "node_modules/better-auth/dist/state.mjs",
+    "line": 123,
+    "description": "parseGenericState calls findVerificationValue for any state value on the OAuth callback, so every callback hit (a legitimate Google redirect, or any request with an arbitrary state) sweeps all expired state rows."
+   },
+   {
+    "file": "node_modules/better-auth/dist/api/routes/callback.mjs",
+    "line": 77,
+    "description": "The callback route calls parseState before any other check, so the sweep runs on normal sign-ins and on invalid-state requests alike."
+   },
+   {
+    "file": "server/auth/betterAuth.ts",
+    "line": 47,
+    "description": "The verification table config does not disable cleanup."
+   },
+   {
+    "file": "db/migrations/20261008000001_auth_schema.sql",
+    "line": 49,
+    "description": "auth.verification has an expiresAt column and an identifier index. Nothing in the schema prevents the library sweep."
+   }
+  ],
+  "reason": "The 'no sweeper' premise is false. better-auth's findVerificationValue deletes all expired verification rows on every OAuth callback lookup, and cleanup is not disabled in this repo. Expired state rows are therefore removed on the next sign-in or callback. Residual growth is bounded by the 10/min/IP sign-in limiter over a 10-minute window between callbacks. The only unbounded part is the request body size on the auth routes, which is a separate root cause covered by v04, not this fingerprint. No meaningful cross-boundary impact is demonstrated, and Postgres-backed reproduction was not needed because source refutes the claim."
+ }
+}

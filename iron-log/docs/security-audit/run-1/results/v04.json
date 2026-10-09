@@ -1,0 +1,76 @@
+{
+ "decision": "needs_validation",
+ "record": {
+  "verdict": "needs_validation",
+  "fingerprint": "auth-mount-unbounded-request-body",
+  "title": "Anonymous unbounded request body on the better-auth mount may exhaust memory on the single 512Mi Cloud Run instance",
+  "description": "The better-auth handler is mounted at /api/auth/*splat before any express.json parser. The mount has no body-size cap, and better-call buffers the whole request body in memory before the route handler runs. An anonymous client can POST a very large JSON body to an /api/auth route such as /api/auth/sign-in/social. The hunter's local run accepted a 32 MiB body and server RSS rose by about 65 MB. Three concurrent 16 MiB bodies raised RSS by about 77 MB. Memory growth is therefore roughly proportional to body size, about 2x. The production service runs a single instance with 512Mi, concurrency 40 and max-instances 1, so a handful of concurrent large bodies could plausibly cause an out-of-memory restart of the only instance. Restart or OOM behaviour on Cloud Run, and the platform's own request-size cap (about 32 MiB on HTTP/1), cannot be observed from source or locally. Per-IP rate limits count requests rather than bytes, and a client can open 6-10 requests within the 10 per minute sign-in limit, so they do not prevent the burst. No crash was demonstrated, so no stronger result is claimed.",
+  "claimed_root_cause": "app.all('/api/auth/*splat', toNodeHandler(auth)) is mounted ahead of the body parsers. There is no pre-handler Content-Length or byte cap, and the better-auth adapter sets no bodySizeLimit. The better-call router awaits getBody(request), which buffers the full body. The other parsed routes are capped (4kb, 4mb and 100kb) but this mount is not.",
+  "trace": [
+   {
+    "kind": "entrypoint",
+    "file": "server/app.ts",
+    "line": 83,
+    "scope": "createApp /api/auth/sign-in rate limit",
+    "description": "Anonymous POST to /api/auth/sign-in/* passes originGuard (a missing Origin header is allowed) and a request-count rate limit of 10 per minute per IP. The limit does not consider body bytes."
+   },
+   {
+    "kind": "propagation",
+    "file": "server/app.ts",
+    "line": 85,
+    "scope": "createApp better-auth mount",
+    "description": "app.all('/api/auth/*splat', toNodeHandler(auth)) is registered before express.json, so no size limit applies and the raw stream goes straight to better-auth."
+   },
+   {
+    "kind": "propagation",
+    "file": "server/app.ts",
+    "line": 91,
+    "scope": "createApp body parsers",
+    "description": "express.json({limit:'100kb'}) is registered after the auth mount, so it never covers /api/auth. This shows the protection exists elsewhere but not here."
+   },
+   {
+    "kind": "sink",
+    "file": "node_modules/better-call/dist/router.mjs",
+    "line": 67,
+    "scope": "router handler context construction",
+    "description": "body: await getBody(request, allowedMediaTypes) reads and parses the entire request body into memory with no size cap, so heap and RSS grow with the attacker-chosen body size."
+   }
+  ],
+  "evidence": [
+   {
+    "file": "server/app.ts",
+    "line": 85,
+    "description": "I re-read the mount. It has no body cap and sits before every body parser, and the comment says better-auth reads the body itself."
+   },
+   {
+    "file": "server/app.ts",
+    "line": 44,
+    "description": "AUTH_LIMITS is {signIn:10/min, other:120/min} per IP and counts requests only. Bytes per request are not limited, and a few large requests fit inside the limit."
+   },
+   {
+    "file": "node_modules/better-call/dist/router.mjs",
+    "line": 67,
+    "description": "I confirmed that getBody is awaited before middleware and the handler run, with no size check (better-call 1.4.0, better-auth 1.7.7). A grep of server/auth/betterAuth.ts and server/auth.ts for bodyLimit or maxBody found nothing."
+   },
+   {
+    "file": "scripts/deploy-cloud-run.sh",
+    "line": 89,
+    "description": "Deploy uses --max-instances 1 --memory 512Mi --concurrency 40 --timeout 120, so one small instance serves all traffic and 40 requests can be in flight at once."
+   },
+   {
+    "file": "agents/hunt-avail-cloud-w1/artifacts/out/check-1.txt",
+    "line": 5,
+    "description": "Hunter's sandbox measurement on Node 20 with better-auth's in-memory adapter: a 32 MiB body returned 200 with a peak RSS delta of +65 MB. Three concurrent 16 MiB bodies gave +77 MB. Idle RSS was about 87 MB. I read this artifact and did not re-run it."
+   }
+  ],
+  "blockers": [
+   "Whether Cloud Run's front end rejects or buffers oversized requests before the container, and the exact cap (about 32 MiB for HTTP/1), cannot be observed from source or locally.",
+   "The real OOM threshold and restart behaviour under 512Mi, with the production Node 22 runtime, Neon pool and baseline RSS, is unmeasured. Local numbers (about 2x body size, about 90-150 MB idle) suggest roughly 5-8 concurrent 32 MiB bodies would be needed.",
+   "It is unknown whether a container restart causes user-visible downtime. min-instances is 0 and max-instances is 1, so the outage depends on cold-start time and on whether queued requests are retried."
+  ],
+  "validation_plan": {
+   "local": "Non-destructive: run the real server/app.ts createApp with the better-auth in-memory adapter and the Node 22 production Dockerfile image if available. Cap the process heap and memory to 512 MiB (for example a cgroup limit or --max-old-space-size). Send N concurrent 8-32 MiB bodies to POST /api/auth/sign-in/social over a unix socket with no Origin header. Record peak RSS and the N at which the process is killed or returns errors. Then add express.json-style or Content-Length pre-checks on /api/auth and confirm that oversized requests get 413 with no RSS growth.",
+   "deployment": "Owner-run on a staging Cloud Run service with the same 512Mi/concurrency-40 config, never production. Send a bounded set of 6-10 concurrent 20-30 MiB POSTs to /api/auth/sign-in/social from one test IP, and watch the Cloud Run memory-utilization and instance-restart metrics and /api/health responses. Also confirm what status Cloud Run returns for a body over 32 MiB."
+  }
+ }
+}

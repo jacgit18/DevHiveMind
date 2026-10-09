@@ -1,0 +1,17 @@
+{
+ "verifier_id": "v12",
+ "fingerprint": "import-legacy-20k-command-single-transaction-pins-shared-pool-connection",
+ "hunter_proposed_verdict": "needs_validation",
+ "hunter": "hunt-quota-w3",
+ "claim": "/api/commands/import-legacy accepts 4mb body with up to 20,000 commands (importLegacy.ts MAX_IMPORT_COMMANDS), each running the real handler (~5 queries) sequentially in one transaction on one pooled connection (pg.Pool default max 10, no connection/statement timeout) shared with sessionAuth; counts as one unit in 600/min and 10/h limiters; a failing last command rolls back leaving account empty so it can repeat. Several accounts could hold most of the pool.",
+ "trace_refs": [
+  "server/app.ts:90",
+  "server/commands/importLegacy.ts:50",
+  "server/commands/importLegacy.ts:82",
+  "server/db/connection.ts:11",
+  "server/app.ts:53",
+  "server/auth.ts:33"
+ ],
+ "hunter_artifact": null,
+ "notes": "Blockers: real pool/statement_timeout in deployed DATABASE_URL, Cloud Run->Neon latency; Postgres needed locally."
+}

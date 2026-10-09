@@ -1,0 +1,112 @@
+{
+ "verdict": "needs_validation",
+ "fingerprint": "import-legacy-20k-command-single-transaction-pins-shared-pool-connection",
+ "title": "import-legacy runs up to 20,000 commands in one transaction on one pooled DB connection with no timeouts, so a few concurrent requests from one signed-in account can exhaust the 10-connection pool",
+ "description": "POST /api/commands/import-legacy takes a body of up to 4 MB with up to 20,000 commands. Each command runs the real handler, several queries each, one after another, inside one inUserTransaction. That transaction holds one connection of a default pg.Pool (max 10, no connectionTimeout, statement_timeout or idle_in_transaction timeout configured in source). The same pool serves sessionAuth's ensure_user query on every /api request. The per-user import limiter allows 10 requests per hour, and concurrent requests are not limited. All of them check out a connection; the ones queued behind the first block on lockUser's `select ... for update` while still holding their connection. Ten parallel imports from one account can therefore hold the whole pool for as long as the first import runs. Other users' requests then wait indefinitely for a connection (no pool connectionTimeout), including sign-in lookups and /api/health/db. Making the last command invalid rolls the import back, so the account stays empty and can repeat in the next window. The source path is confirmed. How long a 20k-command import runs, and whether the deployed pooled Neon URL or role sets timeouts, cannot be observed from source. Postgres is unavailable in the sandbox, so I did not reproduce it.",
+ "claimed_root_cause": "The import is one unbounded-duration transaction on a shared, small, timeout-less pg pool, and the limiters count it as one request unit regardless of its cost or concurrency. There is no per-user in-flight cap, no statement or lock timeout, and no pool connectionTimeout.",
+ "trace": [
+  {
+   "kind": "entrypoint",
+   "file": "server/app.ts",
+   "line": 139,
+   "scope": "POST /api/commands/import-legacy handler",
+   "description": "Authenticated route; calls importLegacy with req.body. Any signed-in Google account (or dev header in dev/test) reaches it."
+  },
+  {
+   "kind": "propagation",
+   "file": "server/app.ts",
+   "line": 90,
+   "scope": "createApp body parser",
+   "description": "express.json limit raised to 4mb for this route only."
+  },
+  {
+   "kind": "propagation",
+   "file": "server/app.ts",
+   "line": 122,
+   "scope": "createApp rate limiters",
+   "description": "importLegacy limiter is 10 per hour per user (LIMITS at line 53) and counts requests, not concurrency or work done. The /api/commands limiter (600/min) also counts it as one unit."
+  },
+  {
+   "kind": "propagation",
+   "file": "server/commands/importLegacy.ts",
+   "line": 50,
+   "scope": "items()",
+   "description": "Accepts 1 to MAX_IMPORT_COMMANDS (20,000) commands whose names are in HANDLERS."
+  },
+  {
+   "kind": "propagation",
+   "file": "server/commands/importLegacy.ts",
+   "line": 79,
+   "scope": "importLegacy transaction",
+   "description": "lockUser does `select 1 from users ... for update` (support.ts:58-60); concurrent imports for the same user queue here while holding a pooled connection."
+  },
+  {
+   "kind": "sink",
+   "file": "server/commands/importLegacy.ts",
+   "line": 82,
+   "scope": "importLegacy loop",
+   "description": "Sequentially awaits each real handler inside one transaction on one pooled connection, with no time or work bound beyond the 20k count."
+  },
+  {
+   "kind": "propagation",
+   "file": "server/db/connection.ts",
+   "line": 11,
+   "scope": "createDb",
+   "description": "new pg.Pool({connectionString, types}) with default max 10 and no connectionTimeoutMillis, statement_timeout or idle_in_transaction_session_timeout."
+  },
+  {
+   "kind": "propagation",
+   "file": "server/auth.ts",
+   "line": 33,
+   "scope": "ensureUser/sessionAuth",
+   "description": "Every authenticated request needs a pool connection for ensure_user, so pool exhaustion blocks all users."
+  }
+ ],
+ "evidence": [
+  {
+   "file": "server/commands/importLegacy.ts",
+   "line": 37,
+   "description": "MAX_IMPORT_COMMANDS = 20_000, described as 'a mistake cannot become a flood'; there is no time budget."
+  },
+  {
+   "file": "server/commands/importLegacy.ts",
+   "line": 80,
+   "description": "The non-empty check happens inside the transaction. A run that aborts on its last command rolls back and leaves the account empty, so it is repeatable."
+  },
+  {
+   "file": "server/commands/importLegacy.ts",
+   "line": 96,
+   "description": "After an Abort, the refusal is written in a second transaction (another connection checkout)."
+  },
+  {
+   "file": "server/app.ts",
+   "line": 53,
+   "description": "importLegacy limit is max 10 per 60 min per user via byUser (rateLimit.ts:21-40 is a plain request counter with no in-flight tracking)."
+  },
+  {
+   "file": "server/db/connection.ts",
+   "line": 11,
+   "description": "No pool max, connectionTimeoutMillis or statement timeout is set in source."
+  },
+  {
+   "file": "scripts/deploy-cloud-run.sh",
+   "line": 10,
+   "description": "Deploys with max-instances=1, so one instance and one 10-connection pool serve all users. The APP_DATABASE_URL is the pooled Neon URL, whose options (statement_timeout, role settings) are not in the repo."
+  },
+  {
+   "file": "server/commands/bodyWeight.ts",
+   "line": 36,
+   "description": "Handlers call lockUser again and run several queries per command, so 20k commands means roughly 100k round trips."
+  }
+ ],
+ "blockers": [
+  "Import wall-clock time for a 20,000-command payload against the deployed Cloud Run to Neon pooled path is unknown. Per-query latency decides whether the pool is held for seconds or minutes.",
+  "The deployed APP_DATABASE_URL, role or database may set statement_timeout, lock_timeout or idle_in_transaction_session_timeout (outside the repo), which would bound or kill the held connections.",
+  "Local reproduction needs Postgres with the migrations applied; the sandbox has no network or database, so no run was possible.",
+  "Whether sign-up is open to arbitrary Google accounts (it determines the attacker population). Source shows only that any valid Better Auth session passes sessionAuth."
+ ],
+ "validation_plan": {
+  "local": "On a scratch local Postgres with migrations applied, using a dedicated test user and the dev header: build a 20,000-command payload of valid log-body-weight (or other cheap create) commands with distinct keys and an invalid last command. Time one import. Then start the app with a small pool, send 10 concurrent import requests as one test user, and measure latency of GET /api/health/db and /api/me from a second user while they run. Record whether it hangs or returns 503, and the pg_stat_activity states (idle in transaction, waiting on the users row lock). Touch no deployed service.",
+  "deployment": "Owner-observed and non-destructive: on a staging or throwaway Neon branch with the same role and pooled URL, run the same timing with one import only. Check `SHOW statement_timeout`, `SHOW lock_timeout` and `SHOW idle_in_transaction_session_timeout` for the ironlog_app role. Do not run concurrent imports on the production database. Fix direction: cap in-flight imports per user (and globally) with a mutex or semaphore before taking a connection; set pool max, connectionTimeoutMillis, statement_timeout and lock_timeout; and chunk the import or bound it by time."
+ }
+}

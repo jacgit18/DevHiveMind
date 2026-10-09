@@ -1,0 +1,77 @@
+{
+ "decision": "needs_validation",
+ "record": {
+  "verdict": "needs_validation",
+  "fingerprint": "backup-bucket-soft-delete-outlives-30day-erasure-promise",
+  "title": "Backup bucket soft-delete period is not set, so erased users' dumps may be recoverable past the promised 30 days",
+  "description": "scripts/backup-cloud-run.sh creates the private backup bucket and sets only an age-30 Delete lifecycle rule. It never sets or disables the Cloud Storage soft-delete retention (--soft-delete-duration=0). GCS gives new buckets a default soft-delete window, 7 days for buckets created after the March 2024 change. If that default applies to the live bucket, a dump removed by the lifecycle rule at day 30 stays recoverable for about 7 more days, roughly 37 days after creation. Those dumps hold rows for users who have since erased their data or deleted their account. The in-app notice (DeleteMyData.tsx) and the privacy policy (privacy.html) say backup copies are deleted automatically within 30 days. The mismatch is at most a few days, and the objects are readable only by project principals who hold restore/read rights; the job's service account has objectCreator only. This is a privacy-promise accuracy gap, not an unauthenticated or cross-tenant exposure. The live bucket's soft_delete_policy, and any project-level or organization-level override, cannot be observed from the repository.",
+  "claimed_root_cause": "The bucket-creation and lifecycle configuration in cmd_setup covers only object age. The backup-retention promise in the UI and policy is checked by server/legal.test.ts only against the RETENTION_DAYS constant in the script, so the soft-delete window is not part of the guarantee.",
+  "trace": [
+   {
+    "kind": "entrypoint",
+    "file": "src/components/settings/DeleteMyData.tsx",
+    "line": 85,
+    "scope": "DeleteMyData component, closing note",
+    "description": "User-facing statement that copies in the nightly backups are deleted automatically within 30 days after the user erases data or deletes the account."
+   },
+   {
+    "kind": "propagation",
+    "file": "public/privacy.html",
+    "line": 94,
+    "scope": "Section 8, retention table, 'Nightly backups' row",
+    "description": "Policy states backups are kept 30 days, then deleted automatically, so erased data is gone from backups within 30 days."
+   },
+   {
+    "kind": "propagation",
+    "file": "backup/run.sh",
+    "line": 25,
+    "scope": "pg_dump invocation",
+    "description": "Each nightly dump is a full pg_dump of the production database (sessions and verification data excluded) uploaded to the bucket, so it contains the live user data of every account at that time."
+   },
+   {
+    "kind": "propagation",
+    "file": "scripts/backup-cloud-run.sh",
+    "line": 34,
+    "scope": "cmd_setup, bucket creation",
+    "description": "gcloud storage buckets create sets only uniform access and public access prevention. It does not set --soft-delete-duration=0, so the platform default soft-delete window applies."
+   },
+   {
+    "kind": "sink",
+    "file": "scripts/backup-cloud-run.sh",
+    "line": 38,
+    "scope": "cmd_setup, lifecycle update",
+    "description": "The only expiry control is a Delete lifecycle rule with condition age=30 (built at line 37). Objects it deletes enter the soft-delete state and remain restorable for the soft-delete window, past the 30 days promised."
+   }
+  ],
+  "evidence": [
+   {
+    "file": "scripts/backup-cloud-run.sh",
+    "line": 37,
+    "description": "Lifecycle JSON contains a single Delete rule with age RETENTION_DAYS (30). No soft-delete, versioning, or retention-policy setting appears anywhere in the script (confirmed by grep for soft_delete/soft-delete across the repository: no hits in scripts/ or backup/)."
+   },
+   {
+    "file": "server/legal.test.ts",
+    "line": 12,
+    "description": "The policy-versus-system test asserts only that RETENTION_DAYS equals 30 and that the policy text says 30 days. It does not check bucket soft-delete, so the gap is untested."
+   },
+   {
+    "file": "public/privacy.html",
+    "line": 94,
+    "description": "The retention row promises that erased data is gone from backups within 30 days, a firm outer bound that a 7-day soft-delete tail would exceed."
+   },
+   {
+    "file": "scripts/backup-cloud-run.sh",
+    "line": 41,
+    "description": "The backup service account holds only roles/storage.objectCreator, so the extra recoverable copies are reachable only by privileged project operators, not by the app or other users. This bounds impact to low."
+   }
+  ],
+  "blockers": [
+   "The live bucket's soft_delete_policy (retentionDurationSeconds) cannot be observed from source. It may be the 7-day default, 0 if set out of band, or overridden by a project or organization default.",
+   "Whether the bucket was created before or after the platform change that made soft delete the default for new buckets is unknown."
+  ],
+  "validation_plan": {
+   "local": "No local reproduction is possible: this is Cloud Storage behaviour. Source review confirms nothing in the repository disables or sets the soft-delete duration.",
+   "deployment": "Project owner runs the read-only command `gcloud storage buckets describe gs://$BUCKET --format='value(soft_delete_policy)'` and checks for retentionDurationSeconds greater than 0. If it is non-zero, either run `gcloud storage buckets update gs://$BUCKET --clear-soft-delete` and add `--soft-delete-duration=0` to the create call in cmd_setup, or change the policy and DeleteMyData.tsx wording to 'within 37 days'. Optionally list soft-deleted objects with `gcloud storage ls --soft-deleted gs://$BUCKET` to see the tail. No data is modified by the check."
+  }
+ }
+}

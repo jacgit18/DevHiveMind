@@ -1,0 +1,7 @@
+normConfig keeps cfg.ex.a.url = "javascript:alert(1)"
+goodUrl("javascript:alert(1)")=false isVideoUrl=false stretchItem.url=undefined week.extra.url=undefined
+goodUrl("data:text/html,x")=false isVideoUrl=false stretchItem.url=undefined week.extra.url=undefined
+goodUrl(" javascript:alert(1)")=false isVideoUrl=false stretchItem.url=undefined week.extra.url=undefined
+goodUrl("HTTPS://x")=false isVideoUrl=false stretchItem.url=undefined week.extra.url=undefined
+goodUrl("https://x")=true isVideoUrl=true stretchItem.url="https://x" week.extra.url="https://x"
+react-dom render of a[href=javascript:...] => <a href="javascript:throw new Error(&#x27;React has blocked a javascript: URL as a security precaution.&#x27;)" target="_blank" rel="noopener noreferrer">x</a>

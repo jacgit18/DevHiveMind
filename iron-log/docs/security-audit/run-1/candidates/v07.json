@@ -1,0 +1,17 @@
+{
+ "verifier_id": "v07",
+ "fingerprint": "backup-bucket-soft-delete-outlives-30day-erasure-promise",
+ "hunter_proposed_verdict": "needs_validation",
+ "hunter": "hunt-backup-w2",
+ "claim": "scripts/backup-cloud-run.sh creates the backup bucket with only an age-30 Delete lifecycle; never sets --soft-delete-duration=0, so GCS default soft delete (7d on newer buckets) may keep lifecycle-deleted dumps (containing erased users' data) recoverable ~37 days, contradicting privacy.html and DeleteMyData.tsx promise of removal within 30 days. Readers are privileged operators only.",
+ "trace_refs": [
+  "src/components/settings/DeleteMyData.tsx:85",
+  "public/privacy.html:94",
+  "scripts/backup-cloud-run.sh:38",
+  "scripts/backup-cloud-run.sh:34",
+  "server/legal.test.ts:12",
+  "backup/run.sh:28"
+ ],
+ "hunter_artifact": null,
+ "notes": "Blocker: live bucket soft_delete_policy."
+}

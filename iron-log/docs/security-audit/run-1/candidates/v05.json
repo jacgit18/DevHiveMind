@@ -1,0 +1,16 @@
+{
+ "verifier_id": "v05",
+ "fingerprint": "health-db-before-api-rate-limit",
+ "hunter_proposed_verdict": "needs_validation",
+ "hunter": "hunt-avail-cloud-w1",
+ "claim": "GET /api/health/db (app.ts L98) runs select 1 against the shared pool for any anonymous caller, registered before rateLimit(limits.api) (L119); comment at L118 says anonymous floods never reach the DB. Keeps a scale-to-zero Neon compute awake / competes for 10-connection pool.",
+ "trace_refs": [
+  "server/app.ts:98",
+  "server/app.ts:104",
+  "server/app.ts:118",
+  "server/db/connection.ts:16",
+  "scripts/ci-deploy.sh:28"
+ ],
+ "hunter_artifact": null,
+ "notes": "Blockers: Neon plan/autosuspend/quota, existing uptime checks."
+}

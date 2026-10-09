@@ -1,0 +1,5 @@
+before: typeof hasOwnProperty.call = function
+parse error: none
+after: Object.prototype.hasOwnProperty.call = true
+own keys of Object.prototype now: 
+hasOwnProperty.call({}, x) -> TypeError: Object.prototype.hasOwnProperty.call is not a function

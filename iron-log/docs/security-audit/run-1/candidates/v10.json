@@ -1,0 +1,18 @@
+{
+ "verifier_id": "v10",
+ "fingerprint": "sync.apiDb.gate-verified-latch-cross-account-mixing",
+ "hunter_proposed_verdict": "confirmed",
+ "hunter": "hunt-client3-w3",
+ "claim": "src/sync/apiDb.ts gate() returns ok forever once verified=true (cleared only after 401/403 or account pause); if another tab of the same browser switches the Google session to another user without this tab seeing a 401, this tab sends the first user's new log entries to the second user's server account and pulls the second user's rows into the first user's mirror. Harness: fake server, entry 'ann-private' stored in bob's server, bob's week row visible in ann's snapshot, state idle.",
+ "trace_refs": [
+  "src/sync/apiDb.ts:381",
+  "src/sync/apiDb.ts:152",
+  "src/sync/apiDb.ts:292",
+  "src/sync/apiDb.ts:320",
+  "src/sync/apiDb.ts:139",
+  "src/sync/useGoogleSignIn.ts:1",
+  "src/store/useAppStore.ts:959"
+ ],
+ "hunter_artifact": "agents/hunt-client3-w3/artifacts/out/check-1.txt",
+ "notes": "Condition: sync flag on, two tabs, account switch in other tab. Verify whether other-tab sign-out/in causes any 401 or identity re-check in the stale tab (e.g. polling/wake/visibility), whether better-auth session cookie is shared, whether account panel handles it, and what a real browser would do."
+}

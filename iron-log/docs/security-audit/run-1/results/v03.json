@@ -1,0 +1,63 @@
+{
+ "decision": "rejected",
+ "record": {
+  "verdict": "rejected",
+  "fingerprint": "ci-deployer-run-developer-backup-job-override",
+  "title": "CI deployer service account holds roles/run.developer, which could in theory run the backup job with overridden args",
+  "description": "The candidate claims that the CI deployer service account has roles/run.developer at project scope. It further claims that the nightly backup Cloud Run job holds the owner-level BACKUP_DATABASE_URL secret on the postgres:18-alpine image, whose entrypoint execs any args. If run.jobs.runWithOverrides is in that role, the deployer could run the job with an args override and execute commands that hold the owner DB URL.",
+  "claimed_root_cause": "Project-wide roles/run.developer granted to the deployer SA is broader than the deploy needs. It also covers the backup job, which mounts a more privileged secret (the unpooled owner DB URL).",
+  "trace": [
+   {
+    "kind": "entrypoint",
+    "file": "scripts/ci-deploy-setup.sh",
+    "line": 49,
+    "scope": "ci-deploy-setup.sh role loop",
+    "description": "The deployer SA is granted roles/run.developer at project scope. The SA can be assumed only by GitHub OIDC tokens from this repository on refs/heads/main (provider attribute-condition at L40, binding at L45-46)."
+   },
+   {
+    "kind": "propagation",
+    "file": "scripts/backup-cloud-run.sh",
+    "line": 65,
+    "scope": "cmd_deploy",
+    "description": "The backup job is created or updated in the same project with a dedicated service account, so project-scope run.developer covers it."
+   },
+   {
+    "kind": "sink",
+    "file": "scripts/backup-cloud-run.sh",
+    "line": 66,
+    "scope": "cmd_deploy",
+    "description": "BACKUP_DATABASE_URL (the owner URL) is mounted into the job container from Secret Manager."
+   },
+   {
+    "kind": "sink",
+    "file": "backup/Dockerfile",
+    "line": 7,
+    "scope": "Dockerfile",
+    "description": "The image is FROM postgres:18-alpine and defines only CMD [\"/run.sh\"]. The base image's docker-entrypoint.sh therefore execs a non-postgres first argument as-is, so an args override would run arbitrary commands with the secret in its environment."
+   }
+  ],
+  "evidence": [
+   {
+    "file": "scripts/ci-deploy-setup.sh",
+    "line": 40,
+    "description": "The WIF provider attribute-condition restricts tokens to assertion.repository == GITHUB_REPO and assertion.ref == 'refs/heads/main'. No pull-request, fork or other lower-trust token can assume the deployer."
+   },
+   {
+    "file": ".github/workflows/deploy-cloud-run.yml",
+    "line": 12,
+    "description": "The only workflow that uses the deployer runs on workflow_run (Tests, branches: main) or workflow_dispatch, and uses environment: production. Its code comes from the repo's main branch."
+   },
+   {
+    "file": "scripts/ci-deploy-setup.sh",
+    "line": 49,
+    "description": "The same deployer already deploys arbitrary code as the runtime SA, which holds the app's DB and auth secrets. Whoever controls main already has code execution inside the production trust domain. The override path adds scope (the backup owner URL) but no new principal."
+   },
+   {
+    "file": "backup/Dockerfile",
+    "line": 7,
+    "description": "Only CMD is set, so the override mechanics are plausible in principle. Whether run.developer includes run.jobs.runWithOverrides is Google IAM role content and cannot be observed from the repo or locally."
+   }
+  ],
+  "reason": "There is no lower-trust party in the path. The deployer SA can be assumed only by this repository's main-branch workflow, whose code is controlled by the maintainer. A party that can run that workflow can already edit it or merge code to main, and so already deploys arbitrary code with production runtime secrets. Reaching the backup job's owner URL through args overrides crosses no new authority boundary. At most it widens the blast radius of an already-trusted CI identity, which is least-privilege hardening and not a vulnerability. The hunter's second blocker (whether the deploy job is reachable by a lower-trust party) is answered by source as no: WIF is limited to repo and main, and the repository's own CLAUDE.md and workflow show no PR-triggered path to the deployer. The first blocker, role contents, would only change how large the hardening gap is. Optional hardening: scope run.developer to the service with a resource-level binding instead of project scope, or add an IAM condition excluding the backup job."
+ }
+}

@@ -92,7 +92,18 @@
     "#todo/bau/career",
     "#todo/BAU/Career/Doc",
     "#todo/bau/clout-chase",
-    "#todo/bau/conversation"
+    "#todo/bau/conversation",
+    "#todo/bau/dev",
+    "#todo/bau/intergrate",
+    "#todo/bau/interview",
+    "#todo/bau/noterefine",
+    "#todo/bau/prompts",
+    "#todo/capitalone",
+    "#todo/high/dev",
+    "#todo/low/buisness",
+    "#todo/priority/high",
+    "#todo/priority/low",
+    "#todo/prompts"
   ],
   "_hiddenTags": []
 }

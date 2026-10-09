@@ -1,0 +1,9 @@
+../.. true https://api.github.com/contents/iron-log-data.json?ref=data
+./.. true https://api.github.com/contents/iron-log-data.json?ref=data
+a/.. true https://api.github.com/repos/contents/iron-log-data.json?ref=data
+owner/repo true https://api.github.com/repos/owner/repo/contents/iron-log-data.json?ref=data
+../x true https://api.github.com/x/contents/iron-log-data.json?ref=data
+a@evil.com/x false
+evil.com/x true
+a/b# false
+a/b?x false

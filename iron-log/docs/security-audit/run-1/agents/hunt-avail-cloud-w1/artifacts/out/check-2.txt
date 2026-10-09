@@ -1,0 +1,28 @@
+# check-2: mask() regex cost in server/clientErrors.ts L21-26 on bodies that fit the 4kb express.json cap
+# cmd: sbx.sh hunt-avail-cloud-w1 /usr/bin/node /work/h3.mjs
+plain_text len 4056 ms/call 0.10
+a_run len 4056 ms/call 20.63
+dash_run len 4056 ms/call 15.29
+word_at_word len 4056 ms/call 14.06
+dots_run len 4056 ms/call 14.38
+a31_dash len 4032 ms/call 0.22
+
+# --- harness source ---
+// The exact mask() regexes from server/clientErrors.ts L21-26, timed on bodies that fit the 4kb express.json cap.
+const mask = (text, max) => text
+  .replace(/[\w.+-]+@[\w-]+(\.[\w-]+)+/g, '[email]')
+  .replace(/\b(eyJ[\w-]{10,}|ghp_\w+|gho_\w+|github_pat_\w+|sk-\w{10,}|[A-Za-z0-9_-]{32,})\b/g, '[secret]')
+  .replace(/\d/g, '#').slice(0, max);
+const cap = 4096 - 40; // {"kind":"error","message":"..."} overhead
+const cases = {
+  plain_text: 'x '.repeat(cap / 2),
+  a_run: 'a'.repeat(cap),
+  dash_run: '-'.repeat(cap),
+  word_at_word: 'a'.repeat(cap / 2) + '@' + 'b'.repeat(cap / 2 - 1),
+  dots_run: '.'.repeat(cap),
+  a31_dash: ('a'.repeat(31) + '!').repeat(cap / 32),
+};
+for (const [k, v] of Object.entries(cases)) {
+  const t = process.hrtime.bigint(); for (let i = 0; i < 5; i++) mask(v, 300); const ms = Number(process.hrtime.bigint() - t) / 1e6 / 5;
+  console.log(k, 'len', v.length, 'ms/call', ms.toFixed(2));
+}

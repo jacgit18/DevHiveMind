@@ -325,6 +325,8 @@ In a development build there is no dev user until you choose one (landing page s
 is trusted and the stand-in storage goes (backlog step 4). `window.claude` (the host database) still takes precedence over
 the flag, and `mcp` for the backup path (1.23) is capability detection, not a flag.
 
+**Admin-only features (2026-10-09):** `src/features.ts` lists features by audience (`admin`, `all`, `off`); `useFeature(name)` is the check. An admin is an account on the server's `ADMIN_EMAILS` list; `/api/me` returns `account.isAdmin`; `server/admin.ts` has `requireAdmin` for routes. No feature is registered yet, so nothing visible changes. Details in [[feature-flags]]. Conflicts: none with the board/log write paths.
+
 ---
 
 ## Part 2: Cross-cutting rules worth knowing before you touch anything

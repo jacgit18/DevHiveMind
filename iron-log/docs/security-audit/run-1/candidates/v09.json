@@ -1,0 +1,16 @@
+{
+ "verifier_id": "v09",
+ "fingerprint": "export.buildCsv.csv-formula-injection-unneutralised-cells",
+ "hunter_proposed_verdict": "confirmed",
+ "hunter": "hunt-client3-w3",
+ "claim": "csvCell in src/lib/export.ts quotes only for , \" CR LF; notes and exercise names (length-capped only) beginning with = + - @ reach the CSV unneutralised; XLSX builders safe (SheetJS t:'s'). Reaches via imported data file/workbook. Hunter severity low.",
+ "trace_refs": [
+  "src/lib/export.ts:197",
+  "src/lib/export.ts:33",
+  "src/lib/export.ts:28",
+  "src/shared/validate.ts:84",
+  "src/store/useAppStore.ts:794"
+ ],
+ "hunter_artifact": "agents/hunt-client3-w3/artifacts/out/check-2.txt",
+ "notes": "Condition: victim imports hostile data then opens CSV in spreadsheet. Judge whether this crosses a trust boundary (lower-trust principal = the person supplying the file) and is more than self-impact."
+}

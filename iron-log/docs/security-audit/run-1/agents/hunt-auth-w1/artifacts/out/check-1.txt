@@ -1,0 +1,9 @@
+normal SPA route: GET /log -> 200 CSP=present ctype=text/html; charset=utf-8
+/dev/ prefix SPA route (prod-like, no dev page): GET /dev/anything -> 200 CSP=ABSENT ctype=text/html; charset=utf-8
+/dev/auth: GET /dev/auth -> 200 CSP=ABSENT ctype=text/html; charset=utf-8
+cross-origin: POST /api/commands/log-session -> 403 CSP=present ctype=application/json; charset=utf-8
+null origin: POST /api/commands/log-session -> 403 CSP=present ctype=application/json; charset=utf-8
+no origin: POST /api/commands/log-session -> 503 CSP=present ctype=application/json; charset=utf-8
+same host: POST /api/commands/log-session -> 503 CSP=present ctype=application/json; charset=utf-8
+allowed: POST /api/commands/log-session -> 503 CSP=present ctype=application/json; charset=utf-8
+host-header spoof origin==host: POST /api/commands/log-session -> 403 CSP=present ctype=application/json; charset=utf-8

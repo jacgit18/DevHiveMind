@@ -1,0 +1,4 @@
+--- git diff status:
+R080	db/migrations/20260101_a.sql	db/migrations/20260201_a2.sql
+--- gate:
+exit=0

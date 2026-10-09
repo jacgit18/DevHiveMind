@@ -1,0 +1,2 @@
+own call=true
+result=TypeError: Object.prototype.hasOwnProperty.call is not a function

@@ -1,0 +1,4632 @@
+[
+ {
+  "coverage_id": ".github%2Fworkflows%2Fdeploy-cloud-run.yml%23workflow_run%20Tests%20completed%20and%20workflow_dispatch::trigger%20gate%20to%20checkout%20of%20head_sha%20to%20repo%20scripts%20run%20with%20id-token%3Awrite%20under%20environment%20production::ci::SUPPLY-CHAIN-AND-RELEASE.md%23Untrusted%20code%20in%20a%20privileged%20workflow",
+  "canonical_refs": {
+   "surface": ".github/workflows/deploy-cloud-run.yml#workflow_run Tests completed and workflow_dispatch",
+   "boundary": "trigger gate to checkout of head_sha to repo scripts run with id-token:write under environment production",
+   "subsystem": "ci",
+   "attack_class": "SUPPLY-CHAIN-AND-RELEASE.md#Untrusted code in a privileged workflow"
+  },
+  "surface": ".github/workflows/deploy-cloud-run.yml#workflow_run Tests completed and workflow_dispatch",
+  "boundary": "trigger gate to checkout of head_sha to repo scripts run with id-token:write under environment production",
+  "subsystem": "ci",
+  "attack_class": "Untrusted code in a privileged workflow",
+  "starting_paths": [
+   ".github/workflows/deploy-cloud-run.yml",
+   ".github/workflows/test.yml",
+   "scripts/ci-deploy.sh",
+   "scripts/deploy-cloud-run.sh",
+   "cloudbuild.yaml",
+   "Dockerfile"
+  ],
+  "ordinary_attack_class_block": "ATTACK-CLASSES.md#Access control",
+  "selected_companion_blocks": [
+   "SUPPLY-CHAIN-AND-RELEASE.md#Core discipline",
+   "SUPPLY-CHAIN-AND-RELEASE.md#Untrusted code in a privileged workflow",
+   "SUPPLY-CHAIN-AND-RELEASE.md#Universal moves",
+   "SUPPLY-CHAIN-AND-RELEASE.md#Validation rules"
+  ],
+  "excluded_blocks": [
+   {
+    "block": "MEMORY-SAFETY-AND-BINARY.md#Core discipline",
+    "reason": "No native code."
+   },
+   {
+    "block": "AI-AND-LLM.md#Core discipline",
+    "reason": "No model surface."
+   },
+   {
+    "block": "PROTOCOLS-RPC-AND-MESSAGING.md#Core discipline",
+    "reason": "No custom protocol."
+   },
+   {
+    "block": "DESKTOP-MOBILE-AND-LOCAL-IPC.md#Core discipline",
+    "reason": "Web PWA only."
+   },
+   {
+    "block": "WEB-PROTOCOL-AND-AUTH.md#Core discipline",
+    "reason": "No HTTP principal in CI."
+   },
+   {
+    "block": "CLIENT-SIDE.md#Core discipline",
+    "reason": "No browser surface."
+   },
+   {
+    "block": "DATA-ISOLATION-AND-LIFECYCLE.md#Core discipline",
+    "reason": "Not the boundary for this unit."
+   },
+   {
+    "block": "RESOURCE-EXHAUSTION-AND-AVAILABILITY.md#Core discipline",
+    "reason": "Not the boundary for this unit."
+   },
+   {
+    "block": "CLOUD-AND-DEPLOYMENT.md#Core discipline",
+    "reason": "Cloud IAM side covered by the ci-deploy-setup unit; this unit is the workflow trigger/execution path."
+   }
+  ],
+  "prior_status": "none",
+  "attempts": [],
+  "wave": 6,
+  "status": "covered",
+  "agent_id": "hunt-ci-w6",
+  "reviewed_paths": [
+   ".dockerignore",
+   ".github/workflows/deploy-cloud-run.yml",
+   ".github/workflows/test.yml",
+   ".gitignore",
+   "Dockerfile",
+   "cloudbuild.yaml",
+   "scripts/ci-deploy.sh",
+   "scripts/deploy-cloud-run.sh"
+  ],
+  "local_checks": [
+   {
+    "agent_id": "hunt-ci-w6",
+    "reviewed_paths": [
+     ".github/workflows/deploy-cloud-run.yml",
+     ".github/workflows/test.yml"
+    ],
+    "invariant": "only successful push-to-main Tests run (or main dispatch) reaches checkout/id-token/production",
+    "method": "source",
+    "result": "if: requires push event, success, same repository; workflow_run uses default-branch workflow; held.",
+    "artifact": null
+   },
+   {
+    "agent_id": "hunt-ci-w6",
+    "reviewed_paths": [
+     ".github/workflows/deploy-cloud-run.yml",
+     "scripts/ci-deploy.sh",
+     "scripts/deploy-cloud-run.sh"
+    ],
+    "invariant": "no attacker-influenced expression interpolation into run: scripts",
+    "method": "source",
+    "result": "Only steps.live.outputs.sha/revision interpolated; deployer-written, charset-restricted.",
+    "artifact": null
+   },
+   {
+    "agent_id": "hunt-ci-w6",
+    "reviewed_paths": [
+     "scripts/ci-deploy.sh"
+    ],
+    "invariant": "pending-migration gate fails closed",
+    "method": "local",
+    "result": "--diff-filter=AM misses renamed migrations (R080 exits 0); needs commit rights on main; hardening.",
+    "artifact": "agents/hunt-ci-w6/artifacts/out/check-1.txt"
+   },
+   {
+    "agent_id": "hunt-ci-w6",
+    "reviewed_paths": [
+     "scripts/deploy-cloud-run.sh",
+     "cloudbuild.yaml",
+     "Dockerfile",
+     ".gitignore",
+     ".dockerignore"
+    ],
+    "invariant": "auth credential file cannot reach source upload or image",
+    "method": "source",
+    "result": "gha-creds-*.json in .gitignore and .dockerignore; no secrets baked.",
+    "artifact": null
+   }
+  ],
+  "result_fingerprints": [],
+  "unresolved": [],
+  "hunter_group": "h15",
+  "hardening": [
+   "ci-deploy.sh add --no-renames",
+   "refuse non-ancestor head_sha on re-run",
+   "pass steps outputs via env",
+   "configure production environment reviewers and WIF condition"
+  ]
+ },
+ {
+  "coverage_id": ".github%2Fworkflows%2Fdeploy.yml%23push%20main%20GitHub%20Pages%20build%20and%20publish::workflow-level%20pages%3Awrite%20and%20id-token%3Awrite%20inherited%20by%20build%20job::ci::SUPPLY-CHAIN-AND-RELEASE.md%23Untrusted%20code%20in%20a%20privileged%20workflow",
+  "canonical_refs": {
+   "surface": ".github/workflows/deploy.yml#push main GitHub Pages build and publish",
+   "boundary": "workflow-level pages:write and id-token:write inherited by build job",
+   "subsystem": "ci",
+   "attack_class": "SUPPLY-CHAIN-AND-RELEASE.md#Untrusted code in a privileged workflow"
+  },
+  "surface": ".github/workflows/deploy.yml#push main GitHub Pages build and publish",
+  "boundary": "workflow-level pages:write and id-token:write inherited by build job",
+  "subsystem": "ci",
+  "attack_class": "Untrusted code in a privileged workflow",
+  "starting_paths": [
+   ".github/workflows/deploy.yml",
+   "package.json",
+   "package-lock.json",
+   "vite.config.js"
+  ],
+  "ordinary_attack_class_block": "ATTACK-CLASSES.md#Access control",
+  "selected_companion_blocks": [
+   "SUPPLY-CHAIN-AND-RELEASE.md#Core discipline",
+   "SUPPLY-CHAIN-AND-RELEASE.md#Untrusted code in a privileged workflow",
+   "SUPPLY-CHAIN-AND-RELEASE.md#Universal moves",
+   "SUPPLY-CHAIN-AND-RELEASE.md#Validation rules"
+  ],
+  "excluded_blocks": [
+   {
+    "block": "MEMORY-SAFETY-AND-BINARY.md#Core discipline",
+    "reason": "No native/unsafe code."
+   },
+   {
+    "block": "AI-AND-LLM.md#Core discipline",
+    "reason": "No model/agent surface."
+   },
+   {
+    "block": "PROTOCOLS-RPC-AND-MESSAGING.md#Core discipline",
+    "reason": "Plain JSON over HTTP."
+   },
+   {
+    "block": "DESKTOP-MOBILE-AND-LOCAL-IPC.md#Core discipline",
+    "reason": "Web PWA only."
+   },
+   {
+    "block": "WEB-PROTOCOL-AND-AUTH.md#Core discipline",
+    "reason": "Not the source-visible boundary for this unit."
+   },
+   {
+    "block": "CLIENT-SIDE.md#Core discipline",
+    "reason": "Not the source-visible boundary for this unit."
+   },
+   {
+    "block": "DATA-ISOLATION-AND-LIFECYCLE.md#Core discipline",
+    "reason": "Not the source-visible boundary for this unit."
+   },
+   {
+    "block": "CLOUD-AND-DEPLOYMENT.md#Core discipline",
+    "reason": "Not the source-visible boundary for this unit."
+   },
+   {
+    "block": "RESOURCE-EXHAUSTION-AND-AVAILABILITY.md#Core discipline",
+    "reason": "Not the source-visible boundary for this unit."
+   }
+  ],
+  "prior_status": "none",
+  "attempts": [],
+  "wave": 4,
+  "status": "covered",
+  "agent_id": "hunt-pages-w4",
+  "reviewed_paths": [
+   ".github/workflows/deploy.yml",
+   "package-lock.json",
+   "package.json",
+   "vite.config.js"
+  ],
+  "local_checks": [
+   {
+    "agent_id": "hunt-pages-w4",
+    "reviewed_paths": [
+     ".github/workflows/deploy.yml"
+    ],
+    "invariant": "only trusted code runs in job holding pages:write/id-token:write",
+    "method": "source",
+    "result": "Triggers only push to main and workflow_dispatch; build job inherits write scopes it does not need (hardening).",
+    "artifact": null
+   },
+   {
+    "agent_id": "hunt-pages-w4",
+    "reviewed_paths": [
+     "package.json",
+     "package-lock.json",
+     "vite.config.js",
+     ".github/workflows/deploy.yml"
+    ],
+    "invariant": "resolved build inputs not influenced by lower-trust actor",
+    "method": "source",
+    "result": "npm ci from lockfile with integrity incl. xlsx tarball; setup-node cache disabled; tag-pinned actions (hardening).",
+    "artifact": null
+   }
+  ],
+  "result_fingerprints": [],
+  "unresolved": [],
+  "hunter_group": "h12",
+  "hardening": [
+   "move pages/id-token write to deploy job; SHA pins"
+  ]
+ },
+ {
+  "coverage_id": ".github%2Fworkflows%2Fscreenshots.yml%23pull_request%20and%20push%20non-main%20with%20contents%3Awrite::PR-head%20checkout%20running%20npm%20ci%20and%20playwright%20with%20write-scoped%20GITHUB_TOKEN%20then%20committing%20images%20and%20commenting::ci::SUPPLY-CHAIN-AND-RELEASE.md%23Untrusted%20code%20in%20a%20privileged%20workflow",
+  "canonical_refs": {
+   "surface": ".github/workflows/screenshots.yml#pull_request and push non-main with contents:write",
+   "boundary": "PR-head checkout running npm ci and playwright with write-scoped GITHUB_TOKEN then committing images and commenting",
+   "subsystem": "ci",
+   "attack_class": "SUPPLY-CHAIN-AND-RELEASE.md#Untrusted code in a privileged workflow"
+  },
+  "surface": ".github/workflows/screenshots.yml#pull_request and push non-main with contents:write",
+  "boundary": "PR-head checkout running npm ci and playwright with write-scoped GITHUB_TOKEN then committing images and commenting",
+  "subsystem": "ci",
+  "attack_class": "Untrusted code in a privileged workflow",
+  "starting_paths": [
+   ".github/workflows/screenshots.yml",
+   "package.json",
+   "playwright.config.js",
+   "e2e",
+   "tools/screenshots.mjs",
+   "tools/visual-diff.mjs"
+  ],
+  "ordinary_attack_class_block": "ATTACK-CLASSES.md#Access control",
+  "selected_companion_blocks": [
+   "SUPPLY-CHAIN-AND-RELEASE.md#Core discipline",
+   "SUPPLY-CHAIN-AND-RELEASE.md#Untrusted code in a privileged workflow",
+   "SUPPLY-CHAIN-AND-RELEASE.md#Universal moves",
+   "SUPPLY-CHAIN-AND-RELEASE.md#Validation rules"
+  ],
+  "excluded_blocks": [
+   {
+    "block": "MEMORY-SAFETY-AND-BINARY.md#Core discipline",
+    "reason": "No native code."
+   },
+   {
+    "block": "AI-AND-LLM.md#Core discipline",
+    "reason": "No model surface."
+   },
+   {
+    "block": "PROTOCOLS-RPC-AND-MESSAGING.md#Core discipline",
+    "reason": "No custom protocol."
+   },
+   {
+    "block": "DESKTOP-MOBILE-AND-LOCAL-IPC.md#Core discipline",
+    "reason": "Web PWA only."
+   },
+   {
+    "block": "WEB-PROTOCOL-AND-AUTH.md#Core discipline",
+    "reason": "No HTTP principal in CI."
+   },
+   {
+    "block": "CLIENT-SIDE.md#Core discipline",
+    "reason": "No browser surface."
+   },
+   {
+    "block": "DATA-ISOLATION-AND-LIFECYCLE.md#Core discipline",
+    "reason": "Not the boundary for this unit."
+   },
+   {
+    "block": "RESOURCE-EXHAUSTION-AND-AVAILABILITY.md#Core discipline",
+    "reason": "Not the boundary for this unit."
+   },
+   {
+    "block": "CLOUD-AND-DEPLOYMENT.md#Core discipline",
+    "reason": "Cloud IAM side covered by the ci-deploy-setup unit; this unit is the workflow trigger/execution path."
+   }
+  ],
+  "prior_status": "none",
+  "attempts": [],
+  "wave": 6,
+  "status": "covered",
+  "agent_id": "hunt-ci-w6",
+  "reviewed_paths": [
+   ".github/workflows/screenshots.yml",
+   ".github/workflows/test.yml"
+  ],
+  "local_checks": [
+   {
+    "agent_id": "hunt-ci-w6",
+    "reviewed_paths": [
+     ".github/workflows/screenshots.yml"
+    ],
+    "invariant": "fork code cannot run with write-scoped token",
+    "method": "source",
+    "result": "pull_request trigger; fork token read-only by GitHub default (setting not source-visible); no secrets.",
+    "artifact": null
+   },
+   {
+    "agent_id": "hunt-ci-w6",
+    "reviewed_paths": [
+     ".github/workflows/screenshots.yml"
+    ],
+    "invariant": "branch/PR context not interpolated into shell",
+    "method": "source",
+    "result": "BRANCH via env and quoted; checkout ref is a SHA.",
+    "artifact": null
+   },
+   {
+    "agent_id": "hunt-ci-w6",
+    "reviewed_paths": [
+     ".github/workflows/screenshots.yml",
+     ".github/workflows/test.yml"
+    ],
+    "invariant": "write-token job cannot poison caches/artifacts used by deploy paths",
+    "method": "source",
+    "result": "Branch-scoped caches unreadable from main; deploy path installs nothing from them.",
+    "artifact": null
+   }
+  ],
+  "result_fingerprints": [],
+  "unresolved": [],
+  "hunter_group": "h15",
+  "hardening": [
+   "namespace concurrency group by repo",
+   "gh pr list match head owner"
+  ]
+ },
+ {
+  "coverage_id": ".github%2Fworkflows%2Fscreenshots.yml%23pull_request::github-actions%23workflow-permissions::ci::SUPPLY-CHAIN-AND-RELEASE.md%23Untrusted%20code%20in%20a%20privileged%20workflow",
+  "canonical_refs": {
+   "surface": ".github/workflows/screenshots.yml#pull_request",
+   "boundary": "github-actions#workflow-permissions",
+   "subsystem": "ci",
+   "attack_class": "SUPPLY-CHAIN-AND-RELEASE.md#Untrusted code in a privileged workflow"
+  },
+  "surface": ".github/workflows/screenshots.yml#pull_request",
+  "boundary": "github-actions#workflow-permissions",
+  "subsystem": "ci",
+  "attack_class": "Untrusted code in a privileged workflow",
+  "starting_paths": [
+   ".github/workflows"
+  ],
+  "ordinary_attack_class_block": "ATTACK-CLASSES.md#Access control",
+  "selected_companion_blocks": [
+   "SUPPLY-CHAIN-AND-RELEASE.md#Core discipline",
+   "SUPPLY-CHAIN-AND-RELEASE.md#Untrusted code in a privileged workflow",
+   "SUPPLY-CHAIN-AND-RELEASE.md#Universal moves",
+   "SUPPLY-CHAIN-AND-RELEASE.md#Validation rules"
+  ],
+  "excluded_blocks": [
+   {
+    "block": "MEMORY-SAFETY-AND-BINARY.md#Core discipline",
+    "reason": "No native/unsafe code or binary parsers in repo (TypeScript only)."
+   },
+   {
+    "block": "AI-AND-LLM.md#Core discipline",
+    "reason": "No model, agent, or MCP server in the product; window.claude host handles are a trusted host surface."
+   },
+   {
+    "block": "PROTOCOLS-RPC-AND-MESSAGING.md#Core discipline",
+    "reason": "Transport is plain JSON over HTTP; no custom protocol, broker, or webhook."
+   },
+   {
+    "block": "DESKTOP-MOBILE-AND-LOCAL-IPC.md#Core discipline",
+    "reason": "No native shell, deep links, or local IPC; web PWA only."
+   },
+   {
+    "block": "WEB-PROTOCOL-AND-AUTH.md#Core discipline",
+    "reason": "Not the source-visible boundary for this unit; covered by another unit."
+   },
+   {
+    "block": "CLIENT-SIDE.md#Core discipline",
+    "reason": "Not the source-visible boundary for this unit; covered by another unit."
+   },
+   {
+    "block": "DATA-ISOLATION-AND-LIFECYCLE.md#Core discipline",
+    "reason": "Not the source-visible boundary for this unit; covered by another unit."
+   },
+   {
+    "block": "CLOUD-AND-DEPLOYMENT.md#Core discipline",
+    "reason": "Not the source-visible boundary for this unit; covered by another unit."
+   },
+   {
+    "block": "RESOURCE-EXHAUSTION-AND-AVAILABILITY.md#Core discipline",
+    "reason": "Not the source-visible boundary for this unit; covered by another unit."
+   }
+  ],
+  "prior_status": "none",
+  "attempts": [],
+  "wave": 1,
+  "status": "covered",
+  "agent_id": "hunt-supply-w1",
+  "reviewed_paths": [
+   ".github/workflows/deploy-cloud-run.yml",
+   ".github/workflows/screenshots.yml",
+   ".github/workflows/test.yml"
+  ],
+  "local_checks": [
+   {
+    "agent_id": "hunt-supply-w1",
+    "reviewed_paths": [
+     ".github/workflows/screenshots.yml"
+    ],
+    "invariant": "untrusted code does not run with write token/secrets on untrusted event",
+    "method": "source",
+    "result": "pull_request not _target; no secrets; fork tokens read-only by platform default; no inline expression injection.",
+    "artifact": null
+   },
+   {
+    "agent_id": "hunt-supply-w1",
+    "reviewed_paths": [
+     ".github/workflows/test.yml",
+     ".github/workflows/deploy-cloud-run.yml"
+    ],
+    "invariant": "pull_request path does not cross into deploy authority",
+    "method": "source",
+    "result": "deploy uses workflow_run from same-repo push on main; no artifact/cache handoff.",
+    "artifact": null
+   }
+  ],
+  "result_fingerprints": [],
+  "unresolved": [],
+  "hunter_group": "h5",
+  "hardening": [
+   "pin actions by SHA",
+   "persist-credentials false in screenshots.yml",
+   "base image digest"
+  ]
+ },
+ {
+  "coverage_id": "db%2Fmigrations%2F20261007000001_core_tables.sql%23record_row_history::SECURITY%20DEFINER%20trigger%20vs%20RLS%20and%20erase%2Fdelete::db%2Fmigrations::DATA-ISOLATION-AND-LIFECYCLE.md%23Stale%20authorization%20and%20derived%20copy%20use",
+  "canonical_refs": {
+   "surface": "db/migrations/20261007000001_core_tables.sql#record_row_history",
+   "boundary": "SECURITY DEFINER trigger vs RLS and erase/delete",
+   "subsystem": "db/migrations",
+   "attack_class": "DATA-ISOLATION-AND-LIFECYCLE.md#Stale authorization and derived copy use"
+  },
+  "surface": "db/migrations/20261007000001_core_tables.sql#record_row_history",
+  "boundary": "SECURITY DEFINER trigger vs RLS and erase/delete",
+  "subsystem": "db/migrations",
+  "attack_class": "Stale authorization and derived copy use",
+  "starting_paths": [
+   "db/migrations/20261007000001_core_tables.sql",
+   "db/migrations/20261008000002_row_level_security.sql",
+   "db/migrations/20261008000003_erase_and_delete_account.sql",
+   "server/commands/account.ts",
+   "server/commands/support.ts"
+  ],
+  "ordinary_attack_class_block": "ATTACK-CLASSES.md#Feature abuse and data leakage",
+  "selected_companion_blocks": [
+   "DATA-ISOLATION-AND-LIFECYCLE.md#Core discipline",
+   "DATA-ISOLATION-AND-LIFECYCLE.md#Stale authorization and derived copy use",
+   "DATA-ISOLATION-AND-LIFECYCLE.md#Universal moves",
+   "DATA-ISOLATION-AND-LIFECYCLE.md#Validation rules"
+  ],
+  "excluded_blocks": [
+   {
+    "block": "MEMORY-SAFETY-AND-BINARY.md#Core discipline",
+    "reason": "No native/unsafe code (TypeScript only)."
+   },
+   {
+    "block": "AI-AND-LLM.md#Core discipline",
+    "reason": "No model/agent/MCP surface in the product."
+   },
+   {
+    "block": "PROTOCOLS-RPC-AND-MESSAGING.md#Core discipline",
+    "reason": "Plain JSON over HTTP; no custom protocol or broker."
+   },
+   {
+    "block": "DESKTOP-MOBILE-AND-LOCAL-IPC.md#Core discipline",
+    "reason": "Web PWA only; no native shell or IPC."
+   },
+   {
+    "block": "WEB-PROTOCOL-AND-AUTH.md#Core discipline",
+    "reason": "Not the source-visible boundary for this unit; covered by another unit."
+   },
+   {
+    "block": "CLIENT-SIDE.md#Core discipline",
+    "reason": "Not the source-visible boundary for this unit; covered by another unit."
+   },
+   {
+    "block": "SUPPLY-CHAIN-AND-RELEASE.md#Core discipline",
+    "reason": "Not the source-visible boundary for this unit; covered by another unit."
+   },
+   {
+    "block": "CLOUD-AND-DEPLOYMENT.md#Core discipline",
+    "reason": "Not the source-visible boundary for this unit; covered by another unit."
+   },
+   {
+    "block": "RESOURCE-EXHAUSTION-AND-AVAILABILITY.md#Core discipline",
+    "reason": "Not the source-visible boundary for this unit; covered by another unit."
+   }
+  ],
+  "prior_status": "none",
+  "attempts": [
+   {
+    "wave": 2,
+    "status": "covered",
+    "agent_id": "hunt-server2-w2",
+    "reviewed_paths": [
+     "db/migrations/20261007000001_core_tables.sql",
+     "db/migrations/20261008000002_row_level_security.sql",
+     "db/migrations/20261008000003_erase_and_delete_account.sql",
+     "server/auth.ts",
+     "server/commands/account.ts"
+    ],
+    "local_checks": [
+     {
+      "agent_id": "hunt-server2-w2",
+      "reviewed_paths": [
+       "db/migrations/20261007000001_core_tables.sql",
+       "db/migrations/20261008000002_row_level_security.sql"
+      ],
+      "invariant": "record_row_history cannot write or expose another user's history",
+      "method": "source",
+      "result": "Trigger inserts old.user_id; app role has no grant on row_history; RLS enabled; FKs cascade.",
+      "artifact": null
+     },
+     {
+      "agent_id": "hunt-server2-w2",
+      "reviewed_paths": [
+       "db/migrations/20261008000003_erase_and_delete_account.sql",
+       "server/commands/account.ts",
+       "server/auth.ts"
+      ],
+      "invariant": "erase/delete remove row_history, refused_writes, sessions, tokens and revoke authorization",
+      "method": "source",
+      "result": "erase deletes 9 tables plus refused_writes and row_history; delete cascades and removes auth rows; no cookie cache.",
+      "artifact": null
+     }
+    ],
+    "result_fingerprints": [],
+    "unresolved": [],
+    "reassignment_reason": "Prior checks never tested search_path/object-resolution safety of the SECURITY DEFINER functions: record_row_history() is made SECURITY DEFINER in migration 20261008000002 L60 with no set search_path and inserts into unqualified row_history; other definer functions use search_path=public so pg_temp resolves first; TEMP privilege of ironlog_app unchecked."
+   }
+  ],
+  "wave": 4,
+  "status": "covered",
+  "agent_id": "hunt-definer-w4",
+  "reviewed_paths": [
+   "db/migrations/20261007000001_core_tables.sql",
+   "db/migrations/20261008000002_row_level_security.sql",
+   "db/migrations/20261008000003_erase_and_delete_account.sql",
+   "server/auth.ts",
+   "server/commands/account.ts",
+   "server/commands/importLegacy.ts",
+   "server/commands/support.ts",
+   "server/commands/sync.ts"
+  ],
+  "local_checks": [
+   {
+    "agent_id": "hunt-definer-w4",
+    "reviewed_paths": [
+     "db/migrations/20261008000002_row_level_security.sql",
+     "db/migrations/20261007000001_core_tables.sql"
+    ],
+    "invariant": "record_row_history definer resolves row_history to the real table",
+    "method": "source",
+    "result": "Migration L60-61 pins search_path=public (critic premise incorrect); pg_temp still searched first, only exploitable with caller DDL.",
+    "artifact": null
+   },
+   {
+    "agent_id": "hunt-definer-w4",
+    "reviewed_paths": [
+     "server/commands/account.ts",
+     "server/commands/support.ts",
+     "server/commands/sync.ts",
+     "server/commands/importLegacy.ts",
+     "server/auth.ts",
+     "db/migrations/20261008000003_erase_and_delete_account.sql"
+    ],
+    "invariant": "request-path user cannot run arbitrary SQL/DDL on ironlog_app connection",
+    "method": "source",
+    "result": "All raw sql fixed text with bound params or sql.table over constant list; no path to CREATE TEMP TABLE.",
+    "artifact": null
+   },
+   {
+    "agent_id": "hunt-definer-w4",
+    "reviewed_paths": [
+     "db/migrations/20261008000003_erase_and_delete_account.sql",
+     "db/migrations/20261008000002_row_level_security.sql",
+     "server/commands/account.ts"
+    ],
+    "invariant": "definer functions tenant-scoped, execute not PUBLIC, erase removes history",
+    "method": "source",
+    "result": "Verified; row_history RLS with no app policy.",
+    "artifact": null
+   }
+  ],
+  "result_fingerprints": [],
+  "unresolved": [],
+  "hunter_group": "h13",
+  "hardening": [
+   "search_path public,pg_temp and schema-qualify in definer functions; revoke TEMP"
+  ]
+ },
+ {
+  "coverage_id": "db%2Fmigrations%2F20261007000002..07%20per-table%20RLS%20and%20ownership::per-table%20RLS%20enablement%20and%20policies%20for%20later%20migrations%20plus%20CI%20guards::db%2Fmigrations::DATA-ISOLATION-AND-LIFECYCLE.md%23Policy%20and%20query%20disagreement",
+  "canonical_refs": {
+   "surface": "db/migrations/20261007000002..07 per-table RLS and ownership",
+   "boundary": "per-table RLS enablement and policies for later migrations plus CI guards",
+   "subsystem": "db/migrations",
+   "attack_class": "DATA-ISOLATION-AND-LIFECYCLE.md#Policy and query disagreement"
+  },
+  "surface": "db/migrations/20261007000002..07 per-table RLS and ownership",
+  "boundary": "per-table RLS enablement and policies for later migrations plus CI guards",
+  "subsystem": "db/migrations",
+  "attack_class": "Policy and query disagreement",
+  "starting_paths": [
+   "db/migrations/20261007000002_body_entries.sql",
+   "db/migrations/20261007000003_weeks.sql",
+   "db/migrations/20261007000004_supplement_days.sql",
+   "db/migrations/20261007000005_programs_config.sql",
+   "db/migrations/20261007000007_list_items.sql",
+   "db/migrations/20261008000002_row_level_security.sql",
+   "server/db/rls.test.ts",
+   "scripts/check-pooled-rls.mjs",
+   "scripts/check-migrations.mjs"
+  ],
+  "ordinary_attack_class_block": "ATTACK-CLASSES.md#Access control",
+  "selected_companion_blocks": [
+   "DATA-ISOLATION-AND-LIFECYCLE.md#Core discipline",
+   "DATA-ISOLATION-AND-LIFECYCLE.md#Policy and query disagreement",
+   "DATA-ISOLATION-AND-LIFECYCLE.md#Universal moves",
+   "DATA-ISOLATION-AND-LIFECYCLE.md#Validation rules"
+  ],
+  "excluded_blocks": [
+   {
+    "block": "MEMORY-SAFETY-AND-BINARY.md#Core discipline",
+    "reason": "No native code."
+   },
+   {
+    "block": "AI-AND-LLM.md#Core discipline",
+    "reason": "No model surface."
+   },
+   {
+    "block": "PROTOCOLS-RPC-AND-MESSAGING.md#Core discipline",
+    "reason": "No custom protocol."
+   },
+   {
+    "block": "DESKTOP-MOBILE-AND-LOCAL-IPC.md#Core discipline",
+    "reason": "Web PWA only."
+   },
+   {
+    "block": "WEB-PROTOCOL-AND-AUTH.md#Core discipline",
+    "reason": "Not the boundary for this unit."
+   },
+   {
+    "block": "CLIENT-SIDE.md#Core discipline",
+    "reason": "Not the boundary for this unit."
+   },
+   {
+    "block": "SUPPLY-CHAIN-AND-RELEASE.md#Core discipline",
+    "reason": "Not the boundary for this unit."
+   },
+   {
+    "block": "CLOUD-AND-DEPLOYMENT.md#Core discipline",
+    "reason": "Not the boundary for this unit."
+   },
+   {
+    "block": "RESOURCE-EXHAUSTION-AND-AVAILABILITY.md#Core discipline",
+    "reason": "Not the boundary for this unit."
+   }
+  ],
+  "prior_status": "none",
+  "attempts": [],
+  "wave": 7,
+  "status": "covered",
+  "agent_id": "hunt-sync3-w7",
+  "reviewed_paths": [
+   "db/migrations/20261007000002_body_entries.sql",
+   "db/migrations/20261007000003_weeks.sql",
+   "db/migrations/20261007000004_supplement_days.sql",
+   "db/migrations/20261007000005_programs_config.sql",
+   "db/migrations/20261007000006_library_items.sql",
+   "db/migrations/20261007000007_list_items.sql",
+   "db/migrations/20261008000001_auth_schema.sql",
+   "db/migrations/20261008000002_row_level_security.sql",
+   "db/migrations/20261008000003_erase_and_delete_account.sql",
+   "scripts/check-migrations.mjs",
+   "scripts/check-pooled-rls.mjs",
+   "server/db/rls.test.ts"
+  ],
+  "local_checks": [
+   {
+    "agent_id": "hunt-sync3-w7",
+    "reviewed_paths": [
+     "db/migrations/20261007000002_body_entries.sql",
+     "db/migrations/20261007000003_weeks.sql",
+     "db/migrations/20261007000004_supplement_days.sql",
+     "db/migrations/20261007000005_programs_config.sql",
+     "db/migrations/20261007000006_library_items.sql",
+     "db/migrations/20261007000007_list_items.sql",
+     "db/migrations/20261008000002_row_level_security.sql"
+    ],
+    "invariant": "every user-owned table has RLS and own_rows policy with USING and WITH CHECK",
+    "method": "source",
+    "result": "Migration 20261008000002 L36-49 loops log_entries plus 8 tables; fail closed on unset GUC; list matches rls.test.ts DATA_TABLES.",
+    "artifact": null
+   },
+   {
+    "agent_id": "hunt-sync3-w7",
+    "reviewed_paths": [
+     "db/migrations/20261008000001_auth_schema.sql",
+     "db/migrations/20261008000002_row_level_security.sql",
+     "db/migrations/20261008000003_erase_and_delete_account.sql"
+    ],
+    "invariant": "users/refused_writes/row_history RLS; definer functions tenant-scoped",
+    "method": "source",
+    "result": "users own_row; refused_writes insert-only; row_history default deny; definer fns use GUC, revoked from public.",
+    "artifact": null
+   },
+   {
+    "agent_id": "hunt-sync3-w7",
+    "reviewed_paths": [
+     "server/db/rls.test.ts",
+     "scripts/check-migrations.mjs",
+     "scripts/check-pooled-rls.mjs"
+    ],
+    "invariant": "CI guards fail when a table lacks RLS/policy",
+    "method": "source",
+    "result": "rls.test.ts dynamic relrowsecurity and policy-exists checks; predicates not asserted; check-migrations has no RLS assertion (hardening).",
+    "artifact": null
+   }
+  ],
+  "result_fingerprints": [],
+  "unresolved": [],
+  "hunter_group": "h16",
+  "hardening": [
+   "rls.test.ts should assert policy predicate",
+   "pooled RLS check covers only log_entries"
+  ]
+ },
+ {
+  "coverage_id": "db%2Fmigrations%2F20261008000002_row_level_security.sql%23grant%20on%20all%20tables%20in%20schema%20auth::request-path%20SQL%20as%20ironlog_app%20vs%20auth.session%2Fauth.account::server%2Fdb::DATA-ISOLATION-AND-LIFECYCLE.md%23Missing%20tenant%20or%20owner%20enforcement",
+  "canonical_refs": {
+   "surface": "db/migrations/20261008000002_row_level_security.sql#grant on all tables in schema auth",
+   "boundary": "request-path SQL as ironlog_app vs auth.session/auth.account",
+   "subsystem": "server/db",
+   "attack_class": "DATA-ISOLATION-AND-LIFECYCLE.md#Missing tenant or owner enforcement"
+  },
+  "surface": "db/migrations/20261008000002_row_level_security.sql#grant on all tables in schema auth",
+  "boundary": "request-path SQL as ironlog_app vs auth.session/auth.account",
+  "subsystem": "server/db",
+  "attack_class": "Missing tenant or owner enforcement",
+  "starting_paths": [
+   "db/migrations/20261008000002_row_level_security.sql",
+   "db/migrations/20261008000001_auth_schema.sql",
+   "server/auth.ts",
+   "server/auth/betterAuth.ts",
+   "server/commands/sync.ts",
+   "server/commands/importLegacy.ts",
+   "server/commands/account.ts",
+   "server/db/connection.ts"
+  ],
+  "ordinary_attack_class_block": "ATTACK-CLASSES.md#Access control",
+  "selected_companion_blocks": [
+   "DATA-ISOLATION-AND-LIFECYCLE.md#Core discipline",
+   "DATA-ISOLATION-AND-LIFECYCLE.md#Missing tenant or owner enforcement",
+   "DATA-ISOLATION-AND-LIFECYCLE.md#Universal moves",
+   "DATA-ISOLATION-AND-LIFECYCLE.md#Validation rules"
+  ],
+  "excluded_blocks": [
+   {
+    "block": "MEMORY-SAFETY-AND-BINARY.md#Core discipline",
+    "reason": "No native/unsafe code."
+   },
+   {
+    "block": "AI-AND-LLM.md#Core discipline",
+    "reason": "No model/agent surface."
+   },
+   {
+    "block": "PROTOCOLS-RPC-AND-MESSAGING.md#Core discipline",
+    "reason": "Plain JSON over HTTP."
+   },
+   {
+    "block": "DESKTOP-MOBILE-AND-LOCAL-IPC.md#Core discipline",
+    "reason": "Web PWA only."
+   },
+   {
+    "block": "WEB-PROTOCOL-AND-AUTH.md#Core discipline",
+    "reason": "Not the source-visible boundary for this unit."
+   },
+   {
+    "block": "CLIENT-SIDE.md#Core discipline",
+    "reason": "Not the source-visible boundary for this unit."
+   },
+   {
+    "block": "SUPPLY-CHAIN-AND-RELEASE.md#Core discipline",
+    "reason": "Not the source-visible boundary for this unit."
+   },
+   {
+    "block": "CLOUD-AND-DEPLOYMENT.md#Core discipline",
+    "reason": "Not the source-visible boundary for this unit."
+   },
+   {
+    "block": "RESOURCE-EXHAUSTION-AND-AVAILABILITY.md#Core discipline",
+    "reason": "Not the source-visible boundary for this unit."
+   }
+  ],
+  "prior_status": "none",
+  "attempts": [],
+  "wave": 4,
+  "status": "covered",
+  "agent_id": "hunt-authschema-w4",
+  "reviewed_paths": [
+   "db/migrations/20261008000001_auth_schema.sql",
+   "db/migrations/20261008000002_row_level_security.sql",
+   "db/migrations/20261008000003_erase_and_delete_account.sql",
+   "server/auth.ts",
+   "server/auth/betterAuth.ts",
+   "server/commands/account.ts",
+   "server/commands/importLegacy.ts",
+   "server/commands/sync.ts",
+   "server/db/connection.ts"
+  ],
+  "local_checks": [
+   {
+    "agent_id": "hunt-authschema-w4",
+    "reviewed_paths": [
+     "db/migrations/20261008000002_row_level_security.sql",
+     "db/migrations/20261008000001_auth_schema.sql",
+     "server/commands/sync.ts",
+     "server/commands/importLegacy.ts",
+     "server/db/connection.ts"
+    ],
+    "invariant": "no request-path SQL names auth.* with attacker-influenced identifier",
+    "method": "source",
+    "result": "Grant intentional (Better Auth shares process). Every dynamic identifier from hardcoded TABLES/HANDLERS; values bound; no sql.raw/ref/id in non-test server code.",
+    "artifact": null
+   },
+   {
+    "agent_id": "hunt-authschema-w4",
+    "reviewed_paths": [
+     "db/migrations/20261008000003_erase_and_delete_account.sql",
+     "server/commands/account.ts",
+     "server/auth.ts"
+    ],
+    "invariant": "definer functions act only on caller identity",
+    "method": "source",
+    "result": "erase/delete take no args, uid from app.user_id; ensure_user only called with validated session id or gated dev id.",
+    "artifact": null
+   },
+   {
+    "agent_id": "hunt-authschema-w4",
+    "reviewed_paths": [
+     "server/auth/betterAuth.ts",
+     "server/auth.ts"
+    ],
+    "invariant": "principal comes only from auth.api.getSession",
+    "method": "source",
+    "result": "userId only from ensureUser(session.user.id) or gated dev header.",
+    "artifact": null
+   }
+  ],
+  "result_fingerprints": [],
+  "unresolved": [],
+  "hunter_group": "h11",
+  "hardening": [
+   "ironlog_app full CRUD on auth schema; consider separate role"
+  ]
+ },
+ {
+  "coverage_id": "package.json%23dependencies%20and%20Dockerfile::package-lock.json%23integrity::build::SUPPLY-CHAIN-AND-RELEASE.md%23Mutable%20and%20unbound%20build%20inputs",
+  "canonical_refs": {
+   "surface": "package.json#dependencies and Dockerfile",
+   "boundary": "package-lock.json#integrity",
+   "subsystem": "build",
+   "attack_class": "SUPPLY-CHAIN-AND-RELEASE.md#Mutable and unbound build inputs"
+  },
+  "surface": "package.json#dependencies and Dockerfile",
+  "boundary": "package-lock.json#integrity",
+  "subsystem": "build",
+  "attack_class": "Mutable and unbound build inputs",
+  "starting_paths": [
+   "package.json",
+   "package-lock.json",
+   "Dockerfile",
+   ".dockerignore",
+   "scripts/build-server.mjs"
+  ],
+  "ordinary_attack_class_block": "ATTACK-CLASSES.md#Cryptography and secrets",
+  "selected_companion_blocks": [
+   "SUPPLY-CHAIN-AND-RELEASE.md#Core discipline",
+   "SUPPLY-CHAIN-AND-RELEASE.md#Mutable and unbound build inputs",
+   "SUPPLY-CHAIN-AND-RELEASE.md#Universal moves",
+   "SUPPLY-CHAIN-AND-RELEASE.md#Validation rules"
+  ],
+  "excluded_blocks": [
+   {
+    "block": "MEMORY-SAFETY-AND-BINARY.md#Core discipline",
+    "reason": "No native/unsafe code or binary parsers in repo (TypeScript only)."
+   },
+   {
+    "block": "AI-AND-LLM.md#Core discipline",
+    "reason": "No model, agent, or MCP server in the product; window.claude host handles are a trusted host surface."
+   },
+   {
+    "block": "PROTOCOLS-RPC-AND-MESSAGING.md#Core discipline",
+    "reason": "Transport is plain JSON over HTTP; no custom protocol, broker, or webhook."
+   },
+   {
+    "block": "DESKTOP-MOBILE-AND-LOCAL-IPC.md#Core discipline",
+    "reason": "No native shell, deep links, or local IPC; web PWA only."
+   },
+   {
+    "block": "WEB-PROTOCOL-AND-AUTH.md#Core discipline",
+    "reason": "Not the source-visible boundary for this unit; covered by another unit."
+   },
+   {
+    "block": "CLIENT-SIDE.md#Core discipline",
+    "reason": "Not the source-visible boundary for this unit; covered by another unit."
+   },
+   {
+    "block": "DATA-ISOLATION-AND-LIFECYCLE.md#Core discipline",
+    "reason": "Not the source-visible boundary for this unit; covered by another unit."
+   },
+   {
+    "block": "CLOUD-AND-DEPLOYMENT.md#Core discipline",
+    "reason": "Not the source-visible boundary for this unit; covered by another unit."
+   },
+   {
+    "block": "RESOURCE-EXHAUSTION-AND-AVAILABILITY.md#Core discipline",
+    "reason": "Not the source-visible boundary for this unit; covered by another unit."
+   }
+  ],
+  "prior_status": "none",
+  "attempts": [],
+  "wave": 1,
+  "status": "covered",
+  "agent_id": "hunt-supply-w1",
+  "reviewed_paths": [
+   ".dockerignore",
+   "Dockerfile",
+   "package-lock.json",
+   "package.json",
+   "scripts/build-server.mjs"
+  ],
+  "local_checks": [
+   {
+    "agent_id": "hunt-supply-w1",
+    "reviewed_paths": [
+     "package-lock.json",
+     "package.json"
+    ],
+    "invariant": "every package bound to integrity hash",
+    "method": "source",
+    "result": "All entries have integrity; only non-npm URL is xlsx tarball with sha512.",
+    "artifact": null
+   },
+   {
+    "agent_id": "hunt-supply-w1",
+    "reviewed_paths": [
+     "Dockerfile",
+     ".dockerignore",
+     "scripts/build-server.mjs"
+    ],
+    "invariant": "image build takes no unreviewed mutable inputs and leaks no secrets",
+    "method": "source",
+    "result": "Floating node:22-slim tag (hardening); runtime copies dist only, USER node; .dockerignore excludes .env*.",
+    "artifact": null
+   }
+  ],
+  "result_fingerprints": [],
+  "unresolved": [],
+  "hunter_group": "h5",
+  "hardening": [
+   "pin actions by SHA",
+   "persist-credentials false in screenshots.yml",
+   "base image digest"
+  ]
+ },
+ {
+  "coverage_id": "scripts%2Fbackup-cloud-run.sh%23backup%20job%20and%20bucket::backup%20job%20identity%2C%20bucket%20IAM%20and%20owner%20DB%20URL%20secret::deploy%2Fbackup::DATA-ISOLATION-AND-LIFECYCLE.md%23Export%20and%20backup%20scope%20expansion",
+  "canonical_refs": {
+   "surface": "scripts/backup-cloud-run.sh#backup job and bucket",
+   "boundary": "backup job identity, bucket IAM and owner DB URL secret",
+   "subsystem": "deploy/backup",
+   "attack_class": "DATA-ISOLATION-AND-LIFECYCLE.md#Export and backup scope expansion"
+  },
+  "surface": "scripts/backup-cloud-run.sh#backup job and bucket",
+  "boundary": "backup job identity, bucket IAM and owner DB URL secret",
+  "subsystem": "deploy/backup",
+  "attack_class": "Export and backup scope expansion",
+  "starting_paths": [
+   "scripts/backup-cloud-run.sh",
+   "backup/run.sh",
+   "backup/Dockerfile",
+   "scripts/restore-check.sh",
+   "scripts/alerts-cloud-run.sh",
+   "scripts/ci-deploy-setup.sh"
+  ],
+  "ordinary_attack_class_block": "ATTACK-CLASSES.md#Feature abuse and data leakage",
+  "selected_companion_blocks": [
+   "DATA-ISOLATION-AND-LIFECYCLE.md#Core discipline",
+   "DATA-ISOLATION-AND-LIFECYCLE.md#Export and backup scope expansion",
+   "DATA-ISOLATION-AND-LIFECYCLE.md#Backup and replication boundary drift",
+   "DATA-ISOLATION-AND-LIFECYCLE.md#Universal moves",
+   "DATA-ISOLATION-AND-LIFECYCLE.md#Validation rules"
+  ],
+  "excluded_blocks": [
+   {
+    "block": "MEMORY-SAFETY-AND-BINARY.md#Core discipline",
+    "reason": "No native/unsafe code (TypeScript only)."
+   },
+   {
+    "block": "AI-AND-LLM.md#Core discipline",
+    "reason": "No model/agent/MCP surface in the product."
+   },
+   {
+    "block": "PROTOCOLS-RPC-AND-MESSAGING.md#Core discipline",
+    "reason": "Plain JSON over HTTP; no custom protocol or broker."
+   },
+   {
+    "block": "DESKTOP-MOBILE-AND-LOCAL-IPC.md#Core discipline",
+    "reason": "Web PWA only; no native shell or IPC."
+   },
+   {
+    "block": "WEB-PROTOCOL-AND-AUTH.md#Core discipline",
+    "reason": "Not the source-visible boundary for this unit; covered by another unit."
+   },
+   {
+    "block": "CLIENT-SIDE.md#Core discipline",
+    "reason": "Not the source-visible boundary for this unit; covered by another unit."
+   },
+   {
+    "block": "SUPPLY-CHAIN-AND-RELEASE.md#Core discipline",
+    "reason": "Not the source-visible boundary for this unit; covered by another unit."
+   },
+   {
+    "block": "CLOUD-AND-DEPLOYMENT.md#Core discipline",
+    "reason": "Not the source-visible boundary for this unit; covered by another unit."
+   },
+   {
+    "block": "RESOURCE-EXHAUSTION-AND-AVAILABILITY.md#Core discipline",
+    "reason": "Not the source-visible boundary for this unit; covered by another unit."
+   }
+  ],
+  "prior_status": "none",
+  "attempts": [],
+  "wave": 2,
+  "status": "candidate",
+  "agent_id": "hunt-backup-w2",
+  "reviewed_paths": [
+   ".dockerignore",
+   ".gitignore",
+   "backup/Dockerfile",
+   "backup/run.sh",
+   "cloudbuild-backup.yaml",
+   "public/privacy.html",
+   "scripts/alerts-cloud-run.sh",
+   "scripts/backup-cloud-run.sh",
+   "scripts/ci-deploy-setup.sh",
+   "scripts/restore-check.sh",
+   "server/legal.test.ts",
+   "src/components/settings/DeleteMyData.tsx"
+  ],
+  "local_checks": [
+   {
+    "agent_id": "hunt-backup-w2",
+    "reviewed_paths": [
+     "scripts/backup-cloud-run.sh"
+    ],
+    "invariant": "backup job SA, bucket IAM and secret binding least-privilege and private",
+    "method": "source",
+    "result": "objectCreator only, secretAccessor on its secret, uniform access, public-access-prevention, 30-day lifecycle.",
+    "artifact": null
+   },
+   {
+    "agent_id": "hunt-backup-w2",
+    "reviewed_paths": [
+     "backup/run.sh",
+     "backup/Dockerfile",
+     "cloudbuild-backup.yaml"
+    ],
+    "invariant": "dump does not include live session credentials",
+    "method": "source",
+    "result": "session/verification data excluded; tokens encrypted; owner URL full snapshot is documented purpose.",
+    "artifact": null
+   },
+   {
+    "agent_id": "hunt-backup-w2",
+    "reviewed_paths": [
+     "scripts/restore-check.sh",
+     ".gitignore",
+     ".dockerignore"
+    ],
+    "invariant": "fetch/restore-check do not leak dumps",
+    "method": "source",
+    "result": "backups/ ignored by git and docker; throwaway container without published port.",
+    "artifact": null
+   },
+   {
+    "agent_id": "hunt-backup-w2",
+    "reviewed_paths": [
+     "scripts/alerts-cloud-run.sh",
+     "scripts/ci-deploy-setup.sh"
+    ],
+    "invariant": "alerting/CI setup do not widen backup access",
+    "method": "source",
+    "result": "Only monitoring policies; deployer gets storage.admin on _cloudbuild bucket only.",
+    "artifact": null
+   },
+   {
+    "agent_id": "hunt-backup-w2",
+    "reviewed_paths": [
+     "scripts/backup-cloud-run.sh",
+     "public/privacy.html",
+     "src/components/settings/DeleteMyData.tsx",
+     "server/legal.test.ts"
+    ],
+    "invariant": "stated 30-day erasure-from-backups guarantee holds for bucket as configured",
+    "method": "source",
+    "result": "Lifecycle age=30 only; soft-delete not disabled so window may extend ~7 days; live policy not source-visible.",
+    "artifact": null
+   }
+  ],
+  "result_fingerprints": [
+   "backup-bucket-soft-delete-outlives-30day-erasure-promise"
+  ],
+  "unresolved": [],
+  "hunter_group": "h8",
+  "hardening": [
+   "backup secret holds DB owner URL; use dedicated read role",
+   "re-assert bucket settings idempotently",
+   "CMEK and audit logs not configured",
+   "restore-check trusts newest name",
+   "privacy promise to re-apply deletions on restore has no tooling"
+  ]
+ },
+ {
+  "coverage_id": "scripts%2Fci-deploy-setup.sh%23workload%20identity::cloudbuild.yaml%23build::deploy::CLOUD-AND-DEPLOYMENT.md%23Workload%20identity%20overreach",
+  "canonical_refs": {
+   "surface": "scripts/ci-deploy-setup.sh#workload identity",
+   "boundary": "cloudbuild.yaml#build",
+   "subsystem": "deploy",
+   "attack_class": "CLOUD-AND-DEPLOYMENT.md#Workload identity overreach"
+  },
+  "surface": "scripts/ci-deploy-setup.sh#workload identity",
+  "boundary": "cloudbuild.yaml#build",
+  "subsystem": "deploy",
+  "attack_class": "Workload identity overreach",
+  "starting_paths": [
+   "scripts/ci-deploy-setup.sh",
+   "scripts/ci-deploy.sh",
+   "cloudbuild.yaml",
+   "backup/run.sh"
+  ],
+  "ordinary_attack_class_block": "ATTACK-CLASSES.md#Access control",
+  "selected_companion_blocks": [
+   "CLOUD-AND-DEPLOYMENT.md#Core discipline",
+   "CLOUD-AND-DEPLOYMENT.md#Workload identity overreach",
+   "CLOUD-AND-DEPLOYMENT.md#Universal moves",
+   "CLOUD-AND-DEPLOYMENT.md#Validation rules"
+  ],
+  "excluded_blocks": [
+   {
+    "block": "MEMORY-SAFETY-AND-BINARY.md#Core discipline",
+    "reason": "No native/unsafe code or binary parsers in repo (TypeScript only)."
+   },
+   {
+    "block": "AI-AND-LLM.md#Core discipline",
+    "reason": "No model, agent, or MCP server in the product; window.claude host handles are a trusted host surface."
+   },
+   {
+    "block": "PROTOCOLS-RPC-AND-MESSAGING.md#Core discipline",
+    "reason": "Transport is plain JSON over HTTP; no custom protocol, broker, or webhook."
+   },
+   {
+    "block": "DESKTOP-MOBILE-AND-LOCAL-IPC.md#Core discipline",
+    "reason": "No native shell, deep links, or local IPC; web PWA only."
+   },
+   {
+    "block": "WEB-PROTOCOL-AND-AUTH.md#Core discipline",
+    "reason": "Not the source-visible boundary for this unit; covered by another unit."
+   },
+   {
+    "block": "CLIENT-SIDE.md#Core discipline",
+    "reason": "Not the source-visible boundary for this unit; covered by another unit."
+   },
+   {
+    "block": "DATA-ISOLATION-AND-LIFECYCLE.md#Core discipline",
+    "reason": "Not the source-visible boundary for this unit; covered by another unit."
+   },
+   {
+    "block": "SUPPLY-CHAIN-AND-RELEASE.md#Core discipline",
+    "reason": "Not the source-visible boundary for this unit; covered by another unit."
+   },
+   {
+    "block": "RESOURCE-EXHAUSTION-AND-AVAILABILITY.md#Core discipline",
+    "reason": "Not the source-visible boundary for this unit; covered by another unit."
+   }
+  ],
+  "prior_status": "none",
+  "attempts": [],
+  "wave": 1,
+  "status": "candidate",
+  "agent_id": "hunt-avail-cloud-w1",
+  "reviewed_paths": [
+   ".github/workflows/deploy-cloud-run.yml",
+   "backup/Dockerfile",
+   "backup/run.sh",
+   "cloudbuild.yaml",
+   "scripts/backup-cloud-run.sh",
+   "scripts/ci-deploy-setup.sh",
+   "scripts/deploy-cloud-run.sh"
+  ],
+  "local_checks": [
+   {
+    "agent_id": "hunt-avail-cloud-w1",
+    "reviewed_paths": [
+     "scripts/ci-deploy-setup.sh",
+     ".github/workflows/deploy-cloud-run.yml"
+    ],
+    "invariant": "only main-branch tokens can impersonate the deployer SA",
+    "method": "source",
+    "result": "Provider condition repository+refs/heads/main; binding scoped to repository; workflow job if accepts only dispatch on main or same-repo successful Tests run.",
+    "artifact": null
+   },
+   {
+    "agent_id": "hunt-avail-cloud-w1",
+    "reviewed_paths": [
+     "scripts/ci-deploy-setup.sh",
+     "scripts/deploy-cloud-run.sh",
+     "scripts/backup-cloud-run.sh",
+     "backup/run.sh",
+     "backup/Dockerfile",
+     "cloudbuild.yaml"
+    ],
+    "invariant": "deployer SA cannot read database, secrets or backups",
+    "method": "source",
+    "result": "Project-scoped run.developer and cloudbuild.builds.editor may exceed documented boundary; depends on GCP defaults not in repo (needs_validation).",
+    "artifact": null
+   }
+  ],
+  "result_fingerprints": [
+   "ci-deployer-builds-editor-default-build-sa-escalation",
+   "ci-deployer-run-developer-backup-job-override"
+  ],
+  "unresolved": [],
+  "hunter_group": "h3",
+  "hardening": [
+   "slice before mask in clientErrors",
+   "provider update-oidc and repository_id binding",
+   "pin deploy-job actions",
+   "role.ts pg_has_role",
+   "--set-env-vars drops MIN_CLIENT_VERSION",
+   "two pg pools",
+   "BACKUP_BUCKET encoding"
+  ]
+ },
+ {
+  "coverage_id": "scripts%2Fdeploy-cloud-run.sh%23deploy::server%2Fdb%2Frole.ts%23checkDbRole::deploy::CLOUD-AND-DEPLOYMENT.md%23Security-control%20precedence%20drift",
+  "canonical_refs": {
+   "surface": "scripts/deploy-cloud-run.sh#deploy",
+   "boundary": "server/db/role.ts#checkDbRole",
+   "subsystem": "deploy",
+   "attack_class": "CLOUD-AND-DEPLOYMENT.md#Security-control precedence drift"
+  },
+  "surface": "scripts/deploy-cloud-run.sh#deploy",
+  "boundary": "server/db/role.ts#checkDbRole",
+  "subsystem": "deploy",
+  "attack_class": "Security-control precedence drift",
+  "starting_paths": [
+   "scripts/deploy-cloud-run.sh",
+   "server/index.ts",
+   "server/db/role.ts",
+   "Dockerfile",
+   ".env.example"
+  ],
+  "ordinary_attack_class_block": "ATTACK-CLASSES.md#Cryptography and secrets",
+  "selected_companion_blocks": [
+   "CLOUD-AND-DEPLOYMENT.md#Core discipline",
+   "CLOUD-AND-DEPLOYMENT.md#Security-control precedence drift",
+   "CLOUD-AND-DEPLOYMENT.md#Universal moves",
+   "CLOUD-AND-DEPLOYMENT.md#Validation rules"
+  ],
+  "excluded_blocks": [
+   {
+    "block": "MEMORY-SAFETY-AND-BINARY.md#Core discipline",
+    "reason": "No native/unsafe code or binary parsers in repo (TypeScript only)."
+   },
+   {
+    "block": "AI-AND-LLM.md#Core discipline",
+    "reason": "No model, agent, or MCP server in the product; window.claude host handles are a trusted host surface."
+   },
+   {
+    "block": "PROTOCOLS-RPC-AND-MESSAGING.md#Core discipline",
+    "reason": "Transport is plain JSON over HTTP; no custom protocol, broker, or webhook."
+   },
+   {
+    "block": "DESKTOP-MOBILE-AND-LOCAL-IPC.md#Core discipline",
+    "reason": "No native shell, deep links, or local IPC; web PWA only."
+   },
+   {
+    "block": "WEB-PROTOCOL-AND-AUTH.md#Core discipline",
+    "reason": "Not the source-visible boundary for this unit; covered by another unit."
+   },
+   {
+    "block": "CLIENT-SIDE.md#Core discipline",
+    "reason": "Not the source-visible boundary for this unit; covered by another unit."
+   },
+   {
+    "block": "DATA-ISOLATION-AND-LIFECYCLE.md#Core discipline",
+    "reason": "Not the source-visible boundary for this unit; covered by another unit."
+   },
+   {
+    "block": "SUPPLY-CHAIN-AND-RELEASE.md#Core discipline",
+    "reason": "Not the source-visible boundary for this unit; covered by another unit."
+   },
+   {
+    "block": "RESOURCE-EXHAUSTION-AND-AVAILABILITY.md#Core discipline",
+    "reason": "Not the source-visible boundary for this unit; covered by another unit."
+   }
+  ],
+  "prior_status": "none",
+  "attempts": [],
+  "wave": 1,
+  "status": "covered",
+  "agent_id": "hunt-avail-cloud-w1",
+  "reviewed_paths": [
+   "Dockerfile",
+   "db/migrations/20261008000002_row_level_security.sql",
+   "scripts/deploy-cloud-run.sh",
+   "server/auth.ts",
+   "server/auth/betterAuth.ts",
+   "server/db/role.ts",
+   "server/index.ts"
+  ],
+  "local_checks": [
+   {
+    "agent_id": "hunt-avail-cloud-w1",
+    "reviewed_paths": [
+     "scripts/deploy-cloud-run.sh",
+     "server/index.ts",
+     "server/db/role.ts",
+     "Dockerfile",
+     "server/auth/betterAuth.ts",
+     "server/auth.ts"
+    ],
+    "invariant": "deployed env cannot disable RLS role enforcement or enable dev/test sign-in",
+    "method": "source",
+    "result": "NODE_ENV=production via --set-env-vars and Dockerfile; checkDbRole throws in production on superuser/BYPASSRLS/owner; createAuth throws for test sign-in outside dev/test.",
+    "artifact": null
+   },
+   {
+    "agent_id": "hunt-avail-cloud-w1",
+    "reviewed_paths": [
+     "server/db/role.ts",
+     "db/migrations/20261008000002_row_level_security.sql"
+    ],
+    "invariant": "checkDbRole detects every RLS-inapplicable condition",
+    "method": "source",
+    "result": "Checks superuser, BYPASSRLS, owner of log_entries; hardening: tableowner=current_user misses inherited owner membership.",
+    "artifact": null
+   }
+  ],
+  "result_fingerprints": [],
+  "unresolved": [],
+  "hunter_group": "h3",
+  "hardening": [
+   "slice before mask in clientErrors",
+   "provider update-oidc and repository_id binding",
+   "pin deploy-job actions",
+   "role.ts pg_has_role",
+   "--set-env-vars drops MIN_CLIENT_VERSION",
+   "two pg pools",
+   "BACKUP_BUCKET encoding"
+  ]
+ },
+ {
+  "coverage_id": "scripts%2Fe2e-sync.mjs%23DATABASE_URL%20local-only%20guard%20before%20dbmate%20drop%20and%20drop%20role::operator%20DATABASE_URL%20hostname%20check%20vs%20libpq%2Fpg%20host%20actually%20used::scripts::SUPPLY-CHAIN-AND-RELEASE.md%23Untrusted%20code%20in%20a%20privileged%20workflow",
+  "canonical_refs": {
+   "surface": "scripts/e2e-sync.mjs#DATABASE_URL local-only guard before dbmate drop and drop role",
+   "boundary": "operator DATABASE_URL hostname check vs libpq/pg host actually used",
+   "subsystem": "scripts",
+   "attack_class": "SUPPLY-CHAIN-AND-RELEASE.md#Untrusted code in a privileged workflow"
+  },
+  "surface": "scripts/e2e-sync.mjs#DATABASE_URL local-only guard before dbmate drop and drop role",
+  "boundary": "operator DATABASE_URL hostname check vs libpq/pg host actually used",
+  "subsystem": "scripts",
+  "attack_class": "Untrusted code in a privileged workflow",
+  "starting_paths": [
+   "scripts/e2e-sync.mjs",
+   "scripts/check-pooled-rls.mjs",
+   "scripts/check-migrations.mjs",
+   "package.json"
+  ],
+  "ordinary_attack_class_block": "ATTACK-CLASSES.md#Access control",
+  "selected_companion_blocks": [
+   "SUPPLY-CHAIN-AND-RELEASE.md#Core discipline",
+   "SUPPLY-CHAIN-AND-RELEASE.md#Untrusted code in a privileged workflow",
+   "SUPPLY-CHAIN-AND-RELEASE.md#Universal moves",
+   "SUPPLY-CHAIN-AND-RELEASE.md#Validation rules"
+  ],
+  "excluded_blocks": [
+   {
+    "block": "MEMORY-SAFETY-AND-BINARY.md#Core discipline",
+    "reason": "No native code."
+   },
+   {
+    "block": "AI-AND-LLM.md#Core discipline",
+    "reason": "No model surface."
+   },
+   {
+    "block": "PROTOCOLS-RPC-AND-MESSAGING.md#Core discipline",
+    "reason": "No custom protocol."
+   },
+   {
+    "block": "DESKTOP-MOBILE-AND-LOCAL-IPC.md#Core discipline",
+    "reason": "Web PWA only."
+   },
+   {
+    "block": "WEB-PROTOCOL-AND-AUTH.md#Core discipline",
+    "reason": "Operator-run script, no HTTP principal."
+   },
+   {
+    "block": "CLIENT-SIDE.md#Core discipline",
+    "reason": "Node script, no browser surface."
+   },
+   {
+    "block": "DATA-ISOLATION-AND-LIFECYCLE.md#Core discipline",
+    "reason": "Not the source-visible boundary for this unit."
+   },
+   {
+    "block": "CLOUD-AND-DEPLOYMENT.md#Core discipline",
+    "reason": "Not the source-visible boundary for this unit."
+   },
+   {
+    "block": "RESOURCE-EXHAUSTION-AND-AVAILABILITY.md#Core discipline",
+    "reason": "Not the source-visible boundary for this unit."
+   }
+  ],
+  "prior_status": "none",
+  "attempts": [],
+  "wave": 5,
+  "status": "covered",
+  "agent_id": "hunt-ops-w5",
+  "reviewed_paths": [
+   "package.json",
+   "scripts/e2e-sync.mjs"
+  ],
+  "local_checks": [
+   {
+    "agent_id": "hunt-ops-w5",
+    "reviewed_paths": [
+     "scripts/e2e-sync.mjs",
+     "package.json"
+    ],
+    "invariant": "local-only guard decides the host pg/dbmate actually connect to",
+    "method": "local",
+    "result": "Guard checks URL.hostname only; pg-connection-string honours ?host= override (verified locally); operator-supplied URL, so self-inflicted bypass, hardening.",
+    "artifact": "agents/hunt-ops-w5/artifacts/out/check-1.txt"
+   }
+  ],
+  "result_fingerprints": [],
+  "unresolved": [],
+  "hunter_group": "h14",
+  "hardening": [
+   "reject host/hostaddr/service params and PGHOST env in e2e-sync.mjs guard"
+  ]
+ },
+ {
+  "coverage_id": "server%2Fapp.ts%23%2Fapi%2Fauth%2F%2A::server%2Fauth%2FbetterAuth.ts%23createAuth::server%2Fauth::WEB-PROTOCOL-AND-AUTH.md%23OAuth%2FOIDC%20request%20and%20callback%20binding",
+  "canonical_refs": {
+   "surface": "server/app.ts#/api/auth/*",
+   "boundary": "server/auth/betterAuth.ts#createAuth",
+   "subsystem": "server/auth",
+   "attack_class": "WEB-PROTOCOL-AND-AUTH.md#OAuth/OIDC request and callback binding"
+  },
+  "surface": "server/app.ts#/api/auth/*",
+  "boundary": "server/auth/betterAuth.ts#createAuth",
+  "subsystem": "server/auth",
+  "attack_class": "OAuth/OIDC request and callback binding",
+  "starting_paths": [
+   "server/auth/betterAuth.ts",
+   "server/app.ts",
+   "src/sync/useGoogleSignIn.ts",
+   "src/sync/account.ts"
+  ],
+  "ordinary_attack_class_block": "ATTACK-CLASSES.md#Access control",
+  "selected_companion_blocks": [
+   "WEB-PROTOCOL-AND-AUTH.md#Core discipline",
+   "WEB-PROTOCOL-AND-AUTH.md#OAuth/OIDC request and callback binding",
+   "WEB-PROTOCOL-AND-AUTH.md#Universal moves",
+   "WEB-PROTOCOL-AND-AUTH.md#Validation rules"
+  ],
+  "excluded_blocks": [
+   {
+    "block": "MEMORY-SAFETY-AND-BINARY.md#Core discipline",
+    "reason": "No native/unsafe code or binary parsers in repo (TypeScript only)."
+   },
+   {
+    "block": "AI-AND-LLM.md#Core discipline",
+    "reason": "No model, agent, or MCP server in the product; window.claude host handles are a trusted host surface."
+   },
+   {
+    "block": "PROTOCOLS-RPC-AND-MESSAGING.md#Core discipline",
+    "reason": "Transport is plain JSON over HTTP; no custom protocol, broker, or webhook."
+   },
+   {
+    "block": "DESKTOP-MOBILE-AND-LOCAL-IPC.md#Core discipline",
+    "reason": "No native shell, deep links, or local IPC; web PWA only."
+   },
+   {
+    "block": "CLIENT-SIDE.md#Core discipline",
+    "reason": "Not the source-visible boundary for this unit; covered by another unit."
+   },
+   {
+    "block": "DATA-ISOLATION-AND-LIFECYCLE.md#Core discipline",
+    "reason": "Not the source-visible boundary for this unit; covered by another unit."
+   },
+   {
+    "block": "SUPPLY-CHAIN-AND-RELEASE.md#Core discipline",
+    "reason": "Not the source-visible boundary for this unit; covered by another unit."
+   },
+   {
+    "block": "CLOUD-AND-DEPLOYMENT.md#Core discipline",
+    "reason": "Not the source-visible boundary for this unit; covered by another unit."
+   },
+   {
+    "block": "RESOURCE-EXHAUSTION-AND-AVAILABILITY.md#Core discipline",
+    "reason": "Not the source-visible boundary for this unit; covered by another unit."
+   }
+  ],
+  "prior_status": "none",
+  "attempts": [],
+  "wave": 1,
+  "status": "covered",
+  "agent_id": "hunt-auth-w1",
+  "reviewed_paths": [
+   "server/auth/betterAuth.ts",
+   "server/index.ts"
+  ],
+  "local_checks": [
+   {
+    "agent_id": "hunt-auth-w1",
+    "reviewed_paths": [
+     "server/auth/betterAuth.ts",
+     "server/index.ts"
+    ],
+    "invariant": "redirect_uri/callback origin fixed server-side; OAuth state session-bound, PKCE, idToken verified; no alternate login door in production",
+    "method": "source",
+    "result": "baseURL env-fixed; trustedOrigins single origin; better-auth 1.7.7 state/PKCE/idToken checks confirmed; email/password only with testSignIn and throws outside dev/test; Google sole provider.",
+    "artifact": null
+   }
+  ],
+  "result_fingerprints": [],
+  "unresolved": [],
+  "hunter_group": "h1",
+  "hardening": [
+   "Gate CSP skip to /dev/auth in development only",
+   "Require Origin when session cookie present",
+   "ensure_user race recreate empty users row",
+   "better-auth default XFF ip source"
+  ]
+ },
+ {
+  "coverage_id": "server%2Fapp.ts%23GET%20%2Fapi%2Fsync%20syncPage%20pull%20parseSince%20parseLimit::signed-in%20user%20to%20per-user%20pull%20feed%20enforced%20by%20RLS%20plus%20user_id%20filter::server%2Fcommands::DATA-ISOLATION-AND-LIFECYCLE.md%23Enumeration%20and%20aggregate%20oracles",
+  "canonical_refs": {
+   "surface": "server/app.ts#GET /api/sync syncPage pull parseSince parseLimit",
+   "boundary": "signed-in user to per-user pull feed enforced by RLS plus user_id filter",
+   "subsystem": "server/commands",
+   "attack_class": "DATA-ISOLATION-AND-LIFECYCLE.md#Enumeration and aggregate oracles"
+  },
+  "surface": "server/app.ts#GET /api/sync syncPage pull parseSince parseLimit",
+  "boundary": "signed-in user to per-user pull feed enforced by RLS plus user_id filter",
+  "subsystem": "server/commands",
+  "attack_class": "Enumeration and aggregate oracles",
+  "starting_paths": [
+   "server/app.ts",
+   "server/commands/sync.ts",
+   "server/commands/support.ts",
+   "db/migrations/20261008000002_row_level_security.sql"
+  ],
+  "ordinary_attack_class_block": "ATTACK-CLASSES.md#Access control",
+  "selected_companion_blocks": [
+   "DATA-ISOLATION-AND-LIFECYCLE.md#Core discipline",
+   "DATA-ISOLATION-AND-LIFECYCLE.md#Enumeration and aggregate oracles",
+   "DATA-ISOLATION-AND-LIFECYCLE.md#Universal moves",
+   "DATA-ISOLATION-AND-LIFECYCLE.md#Validation rules"
+  ],
+  "excluded_blocks": [
+   {
+    "block": "MEMORY-SAFETY-AND-BINARY.md#Core discipline",
+    "reason": "No native code."
+   },
+   {
+    "block": "AI-AND-LLM.md#Core discipline",
+    "reason": "No model surface."
+   },
+   {
+    "block": "PROTOCOLS-RPC-AND-MESSAGING.md#Core discipline",
+    "reason": "No custom protocol."
+   },
+   {
+    "block": "DESKTOP-MOBILE-AND-LOCAL-IPC.md#Core discipline",
+    "reason": "Web PWA only."
+   },
+   {
+    "block": "WEB-PROTOCOL-AND-AUTH.md#Core discipline",
+    "reason": "Not the boundary for this unit."
+   },
+   {
+    "block": "CLIENT-SIDE.md#Core discipline",
+    "reason": "Not the boundary for this unit."
+   },
+   {
+    "block": "SUPPLY-CHAIN-AND-RELEASE.md#Core discipline",
+    "reason": "Not the boundary for this unit."
+   },
+   {
+    "block": "CLOUD-AND-DEPLOYMENT.md#Core discipline",
+    "reason": "Not the boundary for this unit."
+   },
+   {
+    "block": "RESOURCE-EXHAUSTION-AND-AVAILABILITY.md#Core discipline",
+    "reason": "Not the boundary for this unit."
+   }
+  ],
+  "prior_status": "none",
+  "attempts": [],
+  "wave": 8,
+  "status": "covered",
+  "agent_id": "hunt-pull8-w8",
+  "reviewed_paths": [
+   "server/app.ts",
+   "server/commands/sync.ts"
+  ],
+  "local_checks": [
+   {
+    "agent_id": "hunt-pull8-w8",
+    "reviewed_paths": [
+     "server/app.ts",
+     "server/commands/sync.ts"
+    ],
+    "invariant": "GET /api/sync returns only caller rows and no cross-tenant oracle",
+    "method": "source",
+    "result": "userId from res.locals; every query user_id filtered inside inUserTransaction; since/limit bound params; per-user seq reveals nothing cross-tenant.",
+    "artifact": null
+   }
+  ],
+  "result_fingerprints": [],
+  "unresolved": [],
+  "hunter_group": "h20",
+  "hardening": [
+   "none"
+  ]
+ },
+ {
+  "coverage_id": "server%2Fapp.ts%23POST%20%2Fapi%2F%2A::server%2ForiginGuard.ts%23originGuard::server%2ForiginGuard::WEB-PROTOCOL-AND-AUTH.md%23Ordinary%20CSRF",
+  "canonical_refs": {
+   "surface": "server/app.ts#POST /api/*",
+   "boundary": "server/originGuard.ts#originGuard",
+   "subsystem": "server/originGuard",
+   "attack_class": "WEB-PROTOCOL-AND-AUTH.md#Ordinary CSRF"
+  },
+  "surface": "server/app.ts#POST /api/*",
+  "boundary": "server/originGuard.ts#originGuard",
+  "subsystem": "server/originGuard",
+  "attack_class": "Ordinary CSRF",
+  "starting_paths": [
+   "server/originGuard.ts",
+   "server/app.ts",
+   "server/clientVersion.ts"
+  ],
+  "ordinary_attack_class_block": "ATTACK-CLASSES.md#Access control",
+  "selected_companion_blocks": [
+   "WEB-PROTOCOL-AND-AUTH.md#Core discipline",
+   "WEB-PROTOCOL-AND-AUTH.md#Ordinary CSRF",
+   "WEB-PROTOCOL-AND-AUTH.md#Universal moves",
+   "WEB-PROTOCOL-AND-AUTH.md#Validation rules"
+  ],
+  "excluded_blocks": [
+   {
+    "block": "MEMORY-SAFETY-AND-BINARY.md#Core discipline",
+    "reason": "No native/unsafe code or binary parsers in repo (TypeScript only)."
+   },
+   {
+    "block": "AI-AND-LLM.md#Core discipline",
+    "reason": "No model, agent, or MCP server in the product; window.claude host handles are a trusted host surface."
+   },
+   {
+    "block": "PROTOCOLS-RPC-AND-MESSAGING.md#Core discipline",
+    "reason": "Transport is plain JSON over HTTP; no custom protocol, broker, or webhook."
+   },
+   {
+    "block": "DESKTOP-MOBILE-AND-LOCAL-IPC.md#Core discipline",
+    "reason": "No native shell, deep links, or local IPC; web PWA only."
+   },
+   {
+    "block": "CLIENT-SIDE.md#Core discipline",
+    "reason": "Not the source-visible boundary for this unit; covered by another unit."
+   },
+   {
+    "block": "DATA-ISOLATION-AND-LIFECYCLE.md#Core discipline",
+    "reason": "Not the source-visible boundary for this unit; covered by another unit."
+   },
+   {
+    "block": "SUPPLY-CHAIN-AND-RELEASE.md#Core discipline",
+    "reason": "Not the source-visible boundary for this unit; covered by another unit."
+   },
+   {
+    "block": "CLOUD-AND-DEPLOYMENT.md#Core discipline",
+    "reason": "Not the source-visible boundary for this unit; covered by another unit."
+   },
+   {
+    "block": "RESOURCE-EXHAUSTION-AND-AVAILABILITY.md#Core discipline",
+    "reason": "Not the source-visible boundary for this unit; covered by another unit."
+   }
+  ],
+  "prior_status": "none",
+  "attempts": [],
+  "wave": 1,
+  "status": "covered",
+  "agent_id": "hunt-auth-w1",
+  "reviewed_paths": [
+   "server/app.ts",
+   "server/clientVersion.ts",
+   "server/originGuard.ts"
+  ],
+  "local_checks": [
+   {
+    "agent_id": "hunt-auth-w1",
+    "reviewed_paths": [
+     "server/originGuard.ts",
+     "server/app.ts",
+     "server/clientVersion.ts"
+    ],
+    "invariant": "cross-site browser mutations refused",
+    "method": "local",
+    "result": "Real createApp on loopback in sbx: cross-origin and null Origin POST -> 403; same-host/allowed/missing Origin pass the guard (503 only because no db). SameSite=Lax and preflight-forcing header back the missing-Origin case.",
+    "artifact": "agents/hunt-auth-w1/artifacts/out/check-1.txt"
+   }
+  ],
+  "result_fingerprints": [],
+  "unresolved": [],
+  "hunter_group": "h1",
+  "hardening": [
+   "Gate CSP skip to /dev/auth in development only",
+   "Require Origin when session cookie present",
+   "ensure_user race recreate empty users row",
+   "better-auth default XFF ip source"
+  ]
+ },
+ {
+  "coverage_id": "server%2Fapp.ts%23POST%20%2Fapi%2Fcommands%2F%2A%20log%20and%20document%20write%20handlers%20%28tick-card%2C%20untick-card%2C%20log-session%2C%20delete-entry%2C%20body-weight%2C%20supplement-days%2C%20documents%29::client-supplied%20clientId%20and%20baseVersion%20vs%20stored%20row%20version%2C%20tombstone%20and%20per-user%20seq%20under%20lockUser::server%2Fcommands::DATA-ISOLATION-AND-LIFECYCLE.md%23Soft-delete%20and%20tombstone%20bypass",
+  "canonical_refs": {
+   "surface": "server/app.ts#POST /api/commands/* log and document write handlers (tick-card, untick-card, log-session, delete-entry, body-weight, supplement-days, documents)",
+   "boundary": "client-supplied clientId and baseVersion vs stored row version, tombstone and per-user seq under lockUser",
+   "subsystem": "server/commands",
+   "attack_class": "DATA-ISOLATION-AND-LIFECYCLE.md#Soft-delete and tombstone bypass"
+  },
+  "surface": "server/app.ts#POST /api/commands/* log and document write handlers (tick-card, untick-card, log-session, delete-entry, body-weight, supplement-days, documents)",
+  "boundary": "client-supplied clientId and baseVersion vs stored row version, tombstone and per-user seq under lockUser",
+  "subsystem": "server/commands",
+  "attack_class": "Soft-delete and tombstone bypass",
+  "starting_paths": [
+   "server/commands/tickCard.ts",
+   "server/commands/untickCard.ts",
+   "server/commands/logSession.ts",
+   "server/commands/deleteEntry.ts",
+   "server/commands/bodyWeight.ts",
+   "server/commands/supplementDays.ts",
+   "server/commands/documents.ts",
+   "server/commands/support.ts",
+   "db/migrations/20261007000001_core_tables.sql"
+  ],
+  "ordinary_attack_class_block": "ATTACK-CLASSES.md#Business logic",
+  "selected_companion_blocks": [
+   "DATA-ISOLATION-AND-LIFECYCLE.md#Core discipline",
+   "DATA-ISOLATION-AND-LIFECYCLE.md#Soft-delete and tombstone bypass",
+   "DATA-ISOLATION-AND-LIFECYCLE.md#Universal moves",
+   "DATA-ISOLATION-AND-LIFECYCLE.md#Validation rules"
+  ],
+  "excluded_blocks": [
+   {
+    "block": "MEMORY-SAFETY-AND-BINARY.md#Core discipline",
+    "reason": "No native code."
+   },
+   {
+    "block": "AI-AND-LLM.md#Core discipline",
+    "reason": "No model surface."
+   },
+   {
+    "block": "PROTOCOLS-RPC-AND-MESSAGING.md#Core discipline",
+    "reason": "No custom protocol."
+   },
+   {
+    "block": "DESKTOP-MOBILE-AND-LOCAL-IPC.md#Core discipline",
+    "reason": "Web PWA only."
+   },
+   {
+    "block": "WEB-PROTOCOL-AND-AUTH.md#Core discipline",
+    "reason": "Not the boundary for this unit."
+   },
+   {
+    "block": "CLIENT-SIDE.md#Core discipline",
+    "reason": "Not the boundary for this unit."
+   },
+   {
+    "block": "SUPPLY-CHAIN-AND-RELEASE.md#Core discipline",
+    "reason": "Not the boundary for this unit."
+   },
+   {
+    "block": "CLOUD-AND-DEPLOYMENT.md#Core discipline",
+    "reason": "Not the boundary for this unit."
+   },
+   {
+    "block": "RESOURCE-EXHAUSTION-AND-AVAILABILITY.md#Core discipline",
+    "reason": "Not the boundary for this unit."
+   }
+  ],
+  "prior_status": "none",
+  "attempts": [],
+  "wave": 7,
+  "status": "covered",
+  "agent_id": "hunt-cmd7-w7",
+  "reviewed_paths": [
+   "db/migrations/20261007000001_core_tables.sql",
+   "server/commands/bodyWeight.ts",
+   "server/commands/deleteEntry.ts",
+   "server/commands/documents.ts",
+   "server/commands/importLegacy.ts",
+   "server/commands/logSession.ts",
+   "server/commands/supplementDays.ts",
+   "server/commands/support.ts",
+   "server/commands/tickCard.ts",
+   "server/commands/untickCard.ts"
+  ],
+  "local_checks": [
+   {
+    "agent_id": "hunt-cmd7-w7",
+    "reviewed_paths": [
+     "server/commands/support.ts",
+     "db/migrations/20261007000001_core_tables.sql",
+     "server/commands/tickCard.ts",
+     "server/commands/logSession.ts",
+     "server/commands/deleteEntry.ts",
+     "server/commands/untickCard.ts"
+    ],
+    "invariant": "clientId cannot read/revive/edit another tenant's row",
+    "method": "source",
+    "result": "Every lookup user_id filtered; unique (user_id,client_id); RLS second layer.",
+    "artifact": null
+   },
+   {
+    "agent_id": "hunt-cmd7-w7",
+    "reviewed_paths": [
+     "server/commands/tickCard.ts",
+     "server/commands/logSession.ts",
+     "server/commands/deleteEntry.ts",
+     "server/commands/untickCard.ts",
+     "db/migrations/20261007000001_core_tables.sql"
+    ],
+    "invariant": "restore/revive/replay never loses or duplicates an exercise within a tenant",
+    "method": "source",
+    "result": "Partial unique index one check-off per card+week; tick restore returns live row first; replay returns existing row.",
+    "artifact": null
+   },
+   {
+    "agent_id": "hunt-cmd7-w7",
+    "reviewed_paths": [
+     "server/commands/support.ts",
+     "server/commands/importLegacy.ts",
+     "server/commands/bodyWeight.ts",
+     "server/commands/supplementDays.ts",
+     "server/commands/documents.ts"
+    ],
+    "invariant": "per-user seq monotonic under lockUser; version checks enforced",
+    "method": "source",
+    "result": "lockUser before nextSeq everywhere; stale baseVersion gives 409.",
+    "artifact": null
+   }
+  ],
+  "result_fingerprints": [],
+  "unresolved": [],
+  "hunter_group": "h18",
+  "hardening": [
+   "replay asymmetry: document saves revive tombstones on null baseVersion",
+   "tick-card restore does not check auto flag"
+  ]
+ },
+ {
+  "coverage_id": "server%2Fapp.ts%23POST%20%2Fapi%2Fcommands%2F%2A::src%2Fshared%2Fvalidate.ts%23validators::server%2Fcommands::DATA-ISOLATION-AND-LIFECYCLE.md%23Missing%20tenant%20or%20owner%20enforcement",
+  "canonical_refs": {
+   "surface": "server/app.ts#POST /api/commands/*",
+   "boundary": "src/shared/validate.ts#validators",
+   "subsystem": "server/commands",
+   "attack_class": "DATA-ISOLATION-AND-LIFECYCLE.md#Missing tenant or owner enforcement"
+  },
+  "surface": "server/app.ts#POST /api/commands/*",
+  "boundary": "src/shared/validate.ts#validators",
+  "subsystem": "server/commands",
+  "attack_class": "Missing tenant or owner enforcement",
+  "starting_paths": [
+   "server/commands",
+   "src/shared",
+   "server/app.ts"
+  ],
+  "ordinary_attack_class_block": "ATTACK-CLASSES.md#Injection",
+  "selected_companion_blocks": [
+   "DATA-ISOLATION-AND-LIFECYCLE.md#Core discipline",
+   "DATA-ISOLATION-AND-LIFECYCLE.md#Missing tenant or owner enforcement",
+   "DATA-ISOLATION-AND-LIFECYCLE.md#Universal moves",
+   "DATA-ISOLATION-AND-LIFECYCLE.md#Validation rules"
+  ],
+  "excluded_blocks": [
+   {
+    "block": "MEMORY-SAFETY-AND-BINARY.md#Core discipline",
+    "reason": "No native/unsafe code or binary parsers in repo (TypeScript only)."
+   },
+   {
+    "block": "AI-AND-LLM.md#Core discipline",
+    "reason": "No model, agent, or MCP server in the product; window.claude host handles are a trusted host surface."
+   },
+   {
+    "block": "PROTOCOLS-RPC-AND-MESSAGING.md#Core discipline",
+    "reason": "Transport is plain JSON over HTTP; no custom protocol, broker, or webhook."
+   },
+   {
+    "block": "DESKTOP-MOBILE-AND-LOCAL-IPC.md#Core discipline",
+    "reason": "No native shell, deep links, or local IPC; web PWA only."
+   },
+   {
+    "block": "WEB-PROTOCOL-AND-AUTH.md#Core discipline",
+    "reason": "Not the source-visible boundary for this unit; covered by another unit."
+   },
+   {
+    "block": "CLIENT-SIDE.md#Core discipline",
+    "reason": "Not the source-visible boundary for this unit; covered by another unit."
+   },
+   {
+    "block": "SUPPLY-CHAIN-AND-RELEASE.md#Core discipline",
+    "reason": "Not the source-visible boundary for this unit; covered by another unit."
+   },
+   {
+    "block": "CLOUD-AND-DEPLOYMENT.md#Core discipline",
+    "reason": "Not the source-visible boundary for this unit; covered by another unit."
+   },
+   {
+    "block": "RESOURCE-EXHAUSTION-AND-AVAILABILITY.md#Core discipline",
+    "reason": "Not the source-visible boundary for this unit; covered by another unit."
+   }
+  ],
+  "prior_status": "none",
+  "attempts": [],
+  "wave": 1,
+  "status": "covered",
+  "agent_id": "hunt-data-w1",
+  "reviewed_paths": [
+   "server/app.ts",
+   "server/auth.ts",
+   "server/commands/bodyWeight.ts",
+   "server/commands/deleteEntry.ts",
+   "server/commands/documents.ts",
+   "server/commands/logSession.ts",
+   "server/commands/supplementDays.ts",
+   "server/commands/support.ts",
+   "server/commands/tickCard.ts",
+   "server/commands/untickCard.ts",
+   "src/shared/commands.ts",
+   "src/shared/config.ts",
+   "src/shared/validate.ts",
+   "src/shared/week.ts"
+  ],
+  "local_checks": [
+   {
+    "agent_id": "hunt-data-w1",
+    "reviewed_paths": [
+     "server/app.ts",
+     "server/auth.ts",
+     "server/commands/logSession.ts",
+     "server/commands/tickCard.ts",
+     "server/commands/untickCard.ts",
+     "server/commands/deleteEntry.ts",
+     "server/commands/bodyWeight.ts",
+     "server/commands/supplementDays.ts",
+     "server/commands/documents.ts",
+     "server/commands/support.ts"
+    ],
+    "invariant": "owner only from res.locals.userId; no body field supplies user_id",
+    "method": "source",
+    "result": "All 20 routes after sessionAuth; every select/update/insert user-scoped; RLS second layer.",
+    "artifact": null
+   },
+   {
+    "agent_id": "hunt-data-w1",
+    "reviewed_paths": [
+     "src/shared/commands.ts",
+     "src/shared/validate.ts",
+     "src/shared/config.ts",
+     "src/shared/week.ts"
+    ],
+    "invariant": "validators cannot carry identity/key-shaping fields",
+    "method": "source",
+    "result": "Explicit column maps; spreads only land in caller's own jsonb. Local vitest blocked by address-space limit; source conclusion.",
+    "artifact": null
+   }
+  ],
+  "result_fingerprints": [],
+  "unresolved": [],
+  "hunter_group": "h2",
+  "hardening": [
+   "erase/delete do not take users row lock",
+   "commands carry no data_epoch",
+   "normConfigDoc spreads unknown keys"
+  ]
+ },
+ {
+  "coverage_id": "server%2Fapp.ts%23authenticated%20write%20endpoints%20per-user%20quota::per-user%20storage%20and%20row%20growth%20vs%20jsonb%20size%20and%20rate%20limits::server%2Fcommands::RESOURCE-EXHAUSTION-AND-AVAILABILITY.md%23Quota-accounting%20scope%20and%20reset%20gaps",
+  "canonical_refs": {
+   "surface": "server/app.ts#authenticated write endpoints per-user quota",
+   "boundary": "per-user storage and row growth vs jsonb size and rate limits",
+   "subsystem": "server/commands",
+   "attack_class": "RESOURCE-EXHAUSTION-AND-AVAILABILITY.md#Quota-accounting scope and reset gaps"
+  },
+  "surface": "server/app.ts#authenticated write endpoints per-user quota",
+  "boundary": "per-user storage and row growth vs jsonb size and rate limits",
+  "subsystem": "server/commands",
+  "attack_class": "Quota-accounting scope and reset gaps",
+  "starting_paths": [
+   "server/app.ts",
+   "server/commands/logSession.ts",
+   "server/commands/documents.ts",
+   "server/commands/importLegacy.ts",
+   "server/commands/support.ts",
+   "server/rateLimit.ts",
+   "db/migrations/20261007000001_core_tables.sql",
+   "db/migrations/20261007000005_programs_config.sql",
+   "db/migrations/20261007000006_library_items.sql",
+   "db/migrations/20261007000007_list_items.sql"
+  ],
+  "ordinary_attack_class_block": "ATTACK-CLASSES.md#Business logic",
+  "selected_companion_blocks": [
+   "RESOURCE-EXHAUSTION-AND-AVAILABILITY.md#Core discipline",
+   "RESOURCE-EXHAUSTION-AND-AVAILABILITY.md#Quota-accounting scope and reset gaps",
+   "RESOURCE-EXHAUSTION-AND-AVAILABILITY.md#Universal moves",
+   "RESOURCE-EXHAUSTION-AND-AVAILABILITY.md#Validation rules"
+  ],
+  "excluded_blocks": [
+   {
+    "block": "MEMORY-SAFETY-AND-BINARY.md#Core discipline",
+    "reason": "No native/unsafe code (TypeScript only)."
+   },
+   {
+    "block": "AI-AND-LLM.md#Core discipline",
+    "reason": "No model/agent/MCP surface in the product."
+   },
+   {
+    "block": "PROTOCOLS-RPC-AND-MESSAGING.md#Core discipline",
+    "reason": "Plain JSON over HTTP; no custom protocol or broker."
+   },
+   {
+    "block": "DESKTOP-MOBILE-AND-LOCAL-IPC.md#Core discipline",
+    "reason": "Web PWA only; no native shell or IPC."
+   },
+   {
+    "block": "WEB-PROTOCOL-AND-AUTH.md#Core discipline",
+    "reason": "Not the source-visible boundary for this unit; covered by another unit."
+   },
+   {
+    "block": "CLIENT-SIDE.md#Core discipline",
+    "reason": "Not the source-visible boundary for this unit; covered by another unit."
+   },
+   {
+    "block": "DATA-ISOLATION-AND-LIFECYCLE.md#Core discipline",
+    "reason": "Not the source-visible boundary for this unit; covered by another unit."
+   },
+   {
+    "block": "SUPPLY-CHAIN-AND-RELEASE.md#Core discipline",
+    "reason": "Not the source-visible boundary for this unit; covered by another unit."
+   },
+   {
+    "block": "CLOUD-AND-DEPLOYMENT.md#Core discipline",
+    "reason": "Not the source-visible boundary for this unit; covered by another unit."
+   }
+  ],
+  "prior_status": "none",
+  "attempts": [],
+  "wave": 3,
+  "status": "candidate",
+  "agent_id": "hunt-quota-w3",
+  "reviewed_paths": [
+   "db/migrations/20261007000001_core_tables.sql",
+   "db/migrations/20261007000006_library_items.sql",
+   "db/migrations/20261008000003_erase_and_delete_account.sql",
+   "server/app.ts",
+   "server/auth.ts",
+   "server/commands/documents.ts",
+   "server/commands/importLegacy.ts",
+   "server/commands/logSession.ts",
+   "server/commands/support.ts",
+   "server/db/connection.ts",
+   "server/rateLimit.ts",
+   "src/shared/commands.ts",
+   "src/shared/config.ts",
+   "src/shared/validate.ts"
+  ],
+  "local_checks": [
+   {
+    "agent_id": "hunt-quota-w3",
+    "reviewed_paths": [
+     "server/app.ts",
+     "server/rateLimit.ts",
+     "server/auth.ts"
+    ],
+    "invariant": "per-user quotas keyed on authenticated id and counted across all write paths",
+    "method": "source",
+    "result": "byUser key from session; request-count only; no byte/row/work accounting.",
+    "artifact": null
+   },
+   {
+    "agent_id": "hunt-quota-w3",
+    "reviewed_paths": [
+     "server/commands/documents.ts",
+     "server/commands/logSession.ts",
+     "server/commands/support.ts",
+     "db/migrations/20261007000001_core_tables.sql",
+     "db/migrations/20261007000006_library_items.sql",
+     "db/migrations/20261008000003_erase_and_delete_account.sql"
+    ],
+    "invariant": "per-user persistent storage bounded",
+    "method": "source",
+    "result": "No row/byte bound or retention for log_entries, library_items, list_items, row_history, refused_writes.",
+    "artifact": null
+   },
+   {
+    "agent_id": "hunt-quota-w3",
+    "reviewed_paths": [
+     "src/shared/commands.ts",
+     "src/shared/config.ts",
+     "src/shared/validate.ts"
+    ],
+    "invariant": "validators keep stored doc well below body limit",
+    "method": "local",
+    "result": "validateSaveConfig kept 100816 of 100868 bytes; distinct payloads accepted.",
+    "artifact": "agents/hunt-quota-w3/artifacts/out/check-1.txt"
+   },
+   {
+    "agent_id": "hunt-quota-w3",
+    "reviewed_paths": [
+     "server/commands/importLegacy.ts",
+     "server/db/connection.ts",
+     "server/app.ts"
+    ],
+    "invariant": "one import-legacy request bounded in DB work and hold time",
+    "method": "source",
+    "result": "Up to 20k commands (~100k queries) in one transaction on one pooled connection; default pool, no timeouts.",
+    "artifact": null
+   }
+  ],
+  "result_fingerprints": [
+   "per-user-unbounded-storage-row-history-refused-writes-no-retention",
+   "import-legacy-20k-command-single-transaction-pins-shared-pool-connection"
+  ],
+  "unresolved": [],
+  "hunter_group": "h10",
+  "hardening": [
+   "import-legacy 4mb parsed before IP limiter and sessionAuth",
+   "fixed-window 2x burst",
+   "erase/delete limiters separate"
+  ]
+ },
+ {
+  "coverage_id": "server%2Fapp.ts%23sessionAuth::server%2Fauth.ts%23sessionAuth::server%2Fauth::WEB-PROTOCOL-AND-AUTH.md%23Session%20fixation%20and%20invalidation",
+  "canonical_refs": {
+   "surface": "server/app.ts#sessionAuth",
+   "boundary": "server/auth.ts#sessionAuth",
+   "subsystem": "server/auth",
+   "attack_class": "WEB-PROTOCOL-AND-AUTH.md#Session fixation and invalidation"
+  },
+  "surface": "server/app.ts#sessionAuth",
+  "boundary": "server/auth.ts#sessionAuth",
+  "subsystem": "server/auth",
+  "attack_class": "Session fixation and invalidation",
+  "starting_paths": [
+   "server/auth.ts",
+   "server/index.ts",
+   "server/dev/authCheckPage.ts",
+   "src/sync/devUser.ts"
+  ],
+  "ordinary_attack_class_block": "ATTACK-CLASSES.md#Access control",
+  "selected_companion_blocks": [
+   "WEB-PROTOCOL-AND-AUTH.md#Core discipline",
+   "WEB-PROTOCOL-AND-AUTH.md#Session fixation and invalidation",
+   "WEB-PROTOCOL-AND-AUTH.md#Universal moves",
+   "WEB-PROTOCOL-AND-AUTH.md#Validation rules"
+  ],
+  "excluded_blocks": [
+   {
+    "block": "MEMORY-SAFETY-AND-BINARY.md#Core discipline",
+    "reason": "No native/unsafe code or binary parsers in repo (TypeScript only)."
+   },
+   {
+    "block": "AI-AND-LLM.md#Core discipline",
+    "reason": "No model, agent, or MCP server in the product; window.claude host handles are a trusted host surface."
+   },
+   {
+    "block": "PROTOCOLS-RPC-AND-MESSAGING.md#Core discipline",
+    "reason": "Transport is plain JSON over HTTP; no custom protocol, broker, or webhook."
+   },
+   {
+    "block": "DESKTOP-MOBILE-AND-LOCAL-IPC.md#Core discipline",
+    "reason": "No native shell, deep links, or local IPC; web PWA only."
+   },
+   {
+    "block": "CLIENT-SIDE.md#Core discipline",
+    "reason": "Not the source-visible boundary for this unit; covered by another unit."
+   },
+   {
+    "block": "DATA-ISOLATION-AND-LIFECYCLE.md#Core discipline",
+    "reason": "Not the source-visible boundary for this unit; covered by another unit."
+   },
+   {
+    "block": "SUPPLY-CHAIN-AND-RELEASE.md#Core discipline",
+    "reason": "Not the source-visible boundary for this unit; covered by another unit."
+   },
+   {
+    "block": "CLOUD-AND-DEPLOYMENT.md#Core discipline",
+    "reason": "Not the source-visible boundary for this unit; covered by another unit."
+   },
+   {
+    "block": "RESOURCE-EXHAUSTION-AND-AVAILABILITY.md#Core discipline",
+    "reason": "Not the source-visible boundary for this unit; covered by another unit."
+   }
+  ],
+  "prior_status": "none",
+  "attempts": [],
+  "wave": 1,
+  "status": "covered",
+  "agent_id": "hunt-auth-w1",
+  "reviewed_paths": [
+   "db/migrations/20261008000003_erase_and_delete_account.sql",
+   "server/auth.ts",
+   "server/commands/account.ts",
+   "server/dev/authCheckPage.ts",
+   "server/index.ts",
+   "src/sync/devUser.ts"
+  ],
+  "local_checks": [
+   {
+    "agent_id": "hunt-auth-w1",
+    "reviewed_paths": [
+     "server/auth.ts",
+     "server/index.ts",
+     "server/dev/authCheckPage.ts",
+     "src/sync/devUser.ts"
+    ],
+    "invariant": "X-Dev-User unreachable in production; session looked up per request",
+    "method": "source",
+    "result": "devAuthAllowed only for NODE_ENV development/test; Dockerfile and deploy script set production; no cookie cache so revocation immediate.",
+    "artifact": null
+   },
+   {
+    "agent_id": "hunt-auth-w1",
+    "reviewed_paths": [
+     "server/commands/account.ts",
+     "db/migrations/20261008000003_erase_and_delete_account.sql"
+    ],
+    "invariant": "account deletion invalidates sessions; login rotates session id",
+    "method": "source",
+    "result": "delete_my_account removes auth.session/account/verification/user; fresh session on OAuth callback; only residual is empty users-row re-creation race (hardening).",
+    "artifact": null
+   }
+  ],
+  "result_fingerprints": [],
+  "unresolved": [],
+  "hunter_group": "h1",
+  "hardening": [
+   "Gate CSP skip to /dev/auth in development only",
+   "Require Origin when session cookie present",
+   "ensure_user race recreate empty users row",
+   "better-auth default XFF ip source"
+  ]
+ },
+ {
+  "coverage_id": "server%2Fapp.ts%23static%20and%20SPA%20fallback::server%2FsecurityHeaders.ts%23securityHeaders::server%2Fstatic::WEB-PROTOCOL-AND-AUTH.md%23Host%20and%20forwarded-header%20trust",
+  "canonical_refs": {
+   "surface": "server/app.ts#static and SPA fallback",
+   "boundary": "server/securityHeaders.ts#securityHeaders",
+   "subsystem": "server/static",
+   "attack_class": "WEB-PROTOCOL-AND-AUTH.md#Host and forwarded-header trust"
+  },
+  "surface": "server/app.ts#static and SPA fallback",
+  "boundary": "server/securityHeaders.ts#securityHeaders",
+  "subsystem": "server/static",
+  "attack_class": "Host and forwarded-header trust",
+  "starting_paths": [
+   "server/securityHeaders.ts",
+   "server/app.ts",
+   "server/index.ts"
+  ],
+  "ordinary_attack_class_block": "ATTACK-CLASSES.md#Resource and file handling",
+  "selected_companion_blocks": [
+   "WEB-PROTOCOL-AND-AUTH.md#Core discipline",
+   "WEB-PROTOCOL-AND-AUTH.md#Host and forwarded-header trust",
+   "WEB-PROTOCOL-AND-AUTH.md#Universal moves",
+   "WEB-PROTOCOL-AND-AUTH.md#Validation rules"
+  ],
+  "excluded_blocks": [
+   {
+    "block": "MEMORY-SAFETY-AND-BINARY.md#Core discipline",
+    "reason": "No native/unsafe code or binary parsers in repo (TypeScript only)."
+   },
+   {
+    "block": "AI-AND-LLM.md#Core discipline",
+    "reason": "No model, agent, or MCP server in the product; window.claude host handles are a trusted host surface."
+   },
+   {
+    "block": "PROTOCOLS-RPC-AND-MESSAGING.md#Core discipline",
+    "reason": "Transport is plain JSON over HTTP; no custom protocol, broker, or webhook."
+   },
+   {
+    "block": "DESKTOP-MOBILE-AND-LOCAL-IPC.md#Core discipline",
+    "reason": "No native shell, deep links, or local IPC; web PWA only."
+   },
+   {
+    "block": "CLIENT-SIDE.md#Core discipline",
+    "reason": "Not the source-visible boundary for this unit; covered by another unit."
+   },
+   {
+    "block": "DATA-ISOLATION-AND-LIFECYCLE.md#Core discipline",
+    "reason": "Not the source-visible boundary for this unit; covered by another unit."
+   },
+   {
+    "block": "SUPPLY-CHAIN-AND-RELEASE.md#Core discipline",
+    "reason": "Not the source-visible boundary for this unit; covered by another unit."
+   },
+   {
+    "block": "CLOUD-AND-DEPLOYMENT.md#Core discipline",
+    "reason": "Not the source-visible boundary for this unit; covered by another unit."
+   },
+   {
+    "block": "RESOURCE-EXHAUSTION-AND-AVAILABILITY.md#Core discipline",
+    "reason": "Not the source-visible boundary for this unit; covered by another unit."
+   }
+  ],
+  "prior_status": "none",
+  "attempts": [],
+  "wave": 1,
+  "status": "covered",
+  "agent_id": "hunt-auth-w1",
+  "reviewed_paths": [
+   "server/app.ts",
+   "server/index.ts",
+   "server/securityHeaders.ts"
+  ],
+  "local_checks": [
+   {
+    "agent_id": "hunt-auth-w1",
+    "reviewed_paths": [
+     "server/securityHeaders.ts",
+     "server/app.ts",
+     "server/index.ts"
+    ],
+    "invariant": "Host/forwarded headers decide no absolute URL or authz identity; CSP on all non-dev responses",
+    "method": "local",
+    "result": "Forwarded headers feed only req.ip/req.secure. Local run: GET /dev/anything and /dev/auth return SPA index with no CSP (hardening: needs separate script sink).",
+    "artifact": "agents/hunt-auth-w1/artifacts/out/check-1.txt"
+   }
+  ],
+  "result_fingerprints": [],
+  "unresolved": [],
+  "hunter_group": "h1",
+  "hardening": [
+   "Gate CSP skip to /dev/auth in development only",
+   "Require Origin when session cookie present",
+   "ensure_user race recreate empty users row",
+   "better-auth default XFF ip source"
+  ]
+ },
+ {
+  "coverage_id": "server%2Fapp.ts%23unauthenticated%20endpoints::server%2FrateLimit.ts%23rateLimit::server%2FrateLimit::RESOURCE-EXHAUSTION-AND-AVAILABILITY.md%23Pre-authentication%20work%20imbalance",
+  "canonical_refs": {
+   "surface": "server/app.ts#unauthenticated endpoints",
+   "boundary": "server/rateLimit.ts#rateLimit",
+   "subsystem": "server/rateLimit",
+   "attack_class": "RESOURCE-EXHAUSTION-AND-AVAILABILITY.md#Pre-authentication work imbalance"
+  },
+  "surface": "server/app.ts#unauthenticated endpoints",
+  "boundary": "server/rateLimit.ts#rateLimit",
+  "subsystem": "server/rateLimit",
+  "attack_class": "Pre-authentication work imbalance",
+  "starting_paths": [
+   "server/rateLimit.ts",
+   "server/clientErrors.ts",
+   "server/app.ts"
+  ],
+  "ordinary_attack_class_block": "ATTACK-CLASSES.md#Business logic",
+  "selected_companion_blocks": [
+   "RESOURCE-EXHAUSTION-AND-AVAILABILITY.md#Core discipline",
+   "RESOURCE-EXHAUSTION-AND-AVAILABILITY.md#Pre-authentication work imbalance",
+   "RESOURCE-EXHAUSTION-AND-AVAILABILITY.md#Universal moves",
+   "RESOURCE-EXHAUSTION-AND-AVAILABILITY.md#Validation rules"
+  ],
+  "excluded_blocks": [
+   {
+    "block": "MEMORY-SAFETY-AND-BINARY.md#Core discipline",
+    "reason": "No native/unsafe code or binary parsers in repo (TypeScript only)."
+   },
+   {
+    "block": "AI-AND-LLM.md#Core discipline",
+    "reason": "No model, agent, or MCP server in the product; window.claude host handles are a trusted host surface."
+   },
+   {
+    "block": "PROTOCOLS-RPC-AND-MESSAGING.md#Core discipline",
+    "reason": "Transport is plain JSON over HTTP; no custom protocol, broker, or webhook."
+   },
+   {
+    "block": "DESKTOP-MOBILE-AND-LOCAL-IPC.md#Core discipline",
+    "reason": "No native shell, deep links, or local IPC; web PWA only."
+   },
+   {
+    "block": "WEB-PROTOCOL-AND-AUTH.md#Core discipline",
+    "reason": "Not the source-visible boundary for this unit; covered by another unit."
+   },
+   {
+    "block": "CLIENT-SIDE.md#Core discipline",
+    "reason": "Not the source-visible boundary for this unit; covered by another unit."
+   },
+   {
+    "block": "DATA-ISOLATION-AND-LIFECYCLE.md#Core discipline",
+    "reason": "Not the source-visible boundary for this unit; covered by another unit."
+   },
+   {
+    "block": "SUPPLY-CHAIN-AND-RELEASE.md#Core discipline",
+    "reason": "Not the source-visible boundary for this unit; covered by another unit."
+   },
+   {
+    "block": "CLOUD-AND-DEPLOYMENT.md#Core discipline",
+    "reason": "Not the source-visible boundary for this unit; covered by another unit."
+   }
+  ],
+  "prior_status": "none",
+  "attempts": [],
+  "wave": 1,
+  "status": "candidate",
+  "agent_id": "hunt-avail-cloud-w1",
+  "reviewed_paths": [
+   "scripts/deploy-cloud-run.sh",
+   "server/app.ts",
+   "server/auth.ts",
+   "server/auth/betterAuth.ts",
+   "server/clientErrors.ts",
+   "server/rateLimit.ts"
+  ],
+  "local_checks": [
+   {
+    "agent_id": "hunt-avail-cloud-w1",
+    "reviewed_paths": [
+     "server/app.ts",
+     "server/auth/betterAuth.ts",
+     "scripts/deploy-cloud-run.sh"
+    ],
+    "invariant": "every unauthenticated route has a byte bound before buffering",
+    "method": "local",
+    "result": "/api/auth mounted before parsers; 32 MiB JSON body accepted with +65 MB RSS; request-count limits only.",
+    "artifact": "agents/hunt-avail-cloud-w1/artifacts/out/check-1.txt"
+   },
+   {
+    "agent_id": "hunt-avail-cloud-w1",
+    "reviewed_paths": [
+     "server/rateLimit.ts",
+     "server/app.ts"
+    ],
+    "invariant": "limiter state bounded and per-request cost constant",
+    "method": "local",
+    "result": "Sweep only when size>10000 and only expired keys; per-request cost grows to 1.8ms at 120k keys.",
+    "artifact": "agents/hunt-avail-cloud-w1/artifacts/out/check-3.txt"
+   },
+   {
+    "agent_id": "hunt-avail-cloud-w1",
+    "reviewed_paths": [
+     "server/app.ts",
+     "server/auth.ts"
+    ],
+    "invariant": "anonymous requests cannot reach DB before limiter",
+    "method": "source",
+    "result": "GET /api/health/db registered before rateLimit(limits.api) and runs select 1.",
+    "artifact": null
+   },
+   {
+    "agent_id": "hunt-avail-cloud-w1",
+    "reviewed_paths": [
+     "server/clientErrors.ts",
+     "server/app.ts"
+    ],
+    "invariant": "client-errors scrubber bounded",
+    "method": "local",
+    "result": "14-21 ms per 4kB request; capped by 4kb and 20/min/IP; hardening.",
+    "artifact": "agents/hunt-avail-cloud-w1/artifacts/out/check-2.txt"
+   }
+  ],
+  "result_fingerprints": [
+   "auth-mount-unbounded-request-body",
+   "health-db-before-api-rate-limit",
+   "ratelimit-map-unbounded-fresh-keys-full-scan"
+  ],
+  "unresolved": [],
+  "hunter_group": "h3",
+  "hardening": [
+   "slice before mask in clientErrors",
+   "provider update-oidc and repository_id binding",
+   "pin deploy-job actions",
+   "role.ts pg_has_role",
+   "--set-env-vars drops MIN_CLIENT_VERSION",
+   "two pg pools",
+   "BACKUP_BUCKET encoding"
+  ]
+ },
+ {
+  "coverage_id": "server%2Fauth%2FbetterAuth.ts%23%2Fapi%2Fauth%2Fsign-in%2Fsocial%20limiter%20and%20auth.verification::better-auth%20rateLimit%20and%20verification%20storage%20vs%20server%2FrateLimit.ts::server%2Fauth::RESOURCE-EXHAUSTION-AND-AVAILABILITY.md%23Pre-authentication%20work%20imbalance",
+  "canonical_refs": {
+   "surface": "server/auth/betterAuth.ts#/api/auth/sign-in/social limiter and auth.verification",
+   "boundary": "better-auth rateLimit and verification storage vs server/rateLimit.ts",
+   "subsystem": "server/auth",
+   "attack_class": "RESOURCE-EXHAUSTION-AND-AVAILABILITY.md#Pre-authentication work imbalance"
+  },
+  "surface": "server/auth/betterAuth.ts#/api/auth/sign-in/social limiter and auth.verification",
+  "boundary": "better-auth rateLimit and verification storage vs server/rateLimit.ts",
+  "subsystem": "server/auth",
+  "attack_class": "Pre-authentication work imbalance",
+  "starting_paths": [
+   "server/auth/betterAuth.ts",
+   "server/app.ts",
+   "server/rateLimit.ts",
+   "db/migrations/20261008000001_auth_schema.sql"
+  ],
+  "ordinary_attack_class_block": "ATTACK-CLASSES.md#Business logic",
+  "selected_companion_blocks": [
+   "RESOURCE-EXHAUSTION-AND-AVAILABILITY.md#Core discipline",
+   "RESOURCE-EXHAUSTION-AND-AVAILABILITY.md#Pre-authentication work imbalance",
+   "RESOURCE-EXHAUSTION-AND-AVAILABILITY.md#Universal moves",
+   "RESOURCE-EXHAUSTION-AND-AVAILABILITY.md#Validation rules"
+  ],
+  "excluded_blocks": [
+   {
+    "block": "MEMORY-SAFETY-AND-BINARY.md#Core discipline",
+    "reason": "No native/unsafe code (TypeScript only)."
+   },
+   {
+    "block": "AI-AND-LLM.md#Core discipline",
+    "reason": "No model/agent/MCP surface in the product."
+   },
+   {
+    "block": "PROTOCOLS-RPC-AND-MESSAGING.md#Core discipline",
+    "reason": "Plain JSON over HTTP; no custom protocol or broker."
+   },
+   {
+    "block": "DESKTOP-MOBILE-AND-LOCAL-IPC.md#Core discipline",
+    "reason": "Web PWA only; no native shell or IPC."
+   },
+   {
+    "block": "WEB-PROTOCOL-AND-AUTH.md#Core discipline",
+    "reason": "Not the source-visible boundary for this unit; covered by another unit."
+   },
+   {
+    "block": "CLIENT-SIDE.md#Core discipline",
+    "reason": "Not the source-visible boundary for this unit; covered by another unit."
+   },
+   {
+    "block": "DATA-ISOLATION-AND-LIFECYCLE.md#Core discipline",
+    "reason": "Not the source-visible boundary for this unit; covered by another unit."
+   },
+   {
+    "block": "SUPPLY-CHAIN-AND-RELEASE.md#Core discipline",
+    "reason": "Not the source-visible boundary for this unit; covered by another unit."
+   },
+   {
+    "block": "CLOUD-AND-DEPLOYMENT.md#Core discipline",
+    "reason": "Not the source-visible boundary for this unit; covered by another unit."
+   }
+  ],
+  "prior_status": "none",
+  "attempts": [],
+  "wave": 2,
+  "status": "candidate",
+  "agent_id": "hunt-server2-w2",
+  "reviewed_paths": [
+   "db/migrations/20261008000001_auth_schema.sql",
+   "node_modules/better-auth/dist/db/internal-adapter.mjs",
+   "node_modules/better-auth/dist/oauth2/state.mjs",
+   "node_modules/better-auth/dist/state.mjs",
+   "server/app.ts",
+   "server/auth/betterAuth.ts",
+   "server/rateLimit.ts"
+  ],
+  "local_checks": [
+   {
+    "agent_id": "hunt-server2-w2",
+    "reviewed_paths": [
+     "server/app.ts",
+     "server/rateLimit.ts",
+     "server/auth/betterAuth.ts"
+    ],
+    "invariant": "anonymous sign-in bounded by app per-IP limiter before better-auth work",
+    "method": "source",
+    "result": "10/min/IP before toNodeHandler; better-auth internal limiter not relied on.",
+    "artifact": null
+   },
+   {
+    "agent_id": "hunt-server2-w2",
+    "reviewed_paths": [
+     "node_modules/better-auth/dist/state.mjs",
+     "node_modules/better-auth/dist/oauth2/state.mjs",
+     "node_modules/better-auth/dist/db/internal-adapter.mjs",
+     "db/migrations/20261008000001_auth_schema.sql"
+    ],
+    "invariant": "anonymous work leaves no unbounded persistent state",
+    "method": "source",
+    "result": "Each sign-in/social inserts one auth.verification row with attacker-controlled callbackURL/additionalData; removed only if consumed; no sweeper in repo.",
+    "artifact": null
+   }
+  ],
+  "result_fingerprints": [
+   "auth-verification-oauth-state-rows-never-expire"
+  ],
+  "unresolved": [],
+  "hunter_group": "h7",
+  "hardening": [
+   "SECURITY DEFINER search_path public,pg_temp",
+   "erase_my_data take users row lock",
+   "delete_my_account does not purge auth-state verification rows",
+   "MIN_CLIENT_VERSION not set by deploy script"
+  ]
+ },
+ {
+  "coverage_id": "server%2FclientVersion.ts%23clientVersionGate::426%20gate%20ordering%20and%20deploy%20env%20drift::server%2Fapp::CLOUD-AND-DEPLOYMENT.md%23Security-control%20precedence%20drift",
+  "canonical_refs": {
+   "surface": "server/clientVersion.ts#clientVersionGate",
+   "boundary": "426 gate ordering and deploy env drift",
+   "subsystem": "server/app",
+   "attack_class": "CLOUD-AND-DEPLOYMENT.md#Security-control precedence drift"
+  },
+  "surface": "server/clientVersion.ts#clientVersionGate",
+  "boundary": "426 gate ordering and deploy env drift",
+  "subsystem": "server/app",
+  "attack_class": "Security-control precedence drift",
+  "starting_paths": [
+   "server/clientVersion.ts",
+   "server/app.ts",
+   "scripts/deploy-cloud-run.sh",
+   "src/sync/transport.ts",
+   "vite.config.js"
+  ],
+  "ordinary_attack_class_block": "ATTACK-CLASSES.md#Business logic",
+  "selected_companion_blocks": [
+   "CLOUD-AND-DEPLOYMENT.md#Core discipline",
+   "CLOUD-AND-DEPLOYMENT.md#Security-control precedence drift",
+   "CLOUD-AND-DEPLOYMENT.md#Universal moves",
+   "CLOUD-AND-DEPLOYMENT.md#Validation rules"
+  ],
+  "excluded_blocks": [
+   {
+    "block": "MEMORY-SAFETY-AND-BINARY.md#Core discipline",
+    "reason": "No native/unsafe code (TypeScript only)."
+   },
+   {
+    "block": "AI-AND-LLM.md#Core discipline",
+    "reason": "No model/agent/MCP surface in the product."
+   },
+   {
+    "block": "PROTOCOLS-RPC-AND-MESSAGING.md#Core discipline",
+    "reason": "Plain JSON over HTTP; no custom protocol or broker."
+   },
+   {
+    "block": "DESKTOP-MOBILE-AND-LOCAL-IPC.md#Core discipline",
+    "reason": "Web PWA only; no native shell or IPC."
+   },
+   {
+    "block": "WEB-PROTOCOL-AND-AUTH.md#Core discipline",
+    "reason": "Not the source-visible boundary for this unit; covered by another unit."
+   },
+   {
+    "block": "CLIENT-SIDE.md#Core discipline",
+    "reason": "Not the source-visible boundary for this unit; covered by another unit."
+   },
+   {
+    "block": "DATA-ISOLATION-AND-LIFECYCLE.md#Core discipline",
+    "reason": "Not the source-visible boundary for this unit; covered by another unit."
+   },
+   {
+    "block": "SUPPLY-CHAIN-AND-RELEASE.md#Core discipline",
+    "reason": "Not the source-visible boundary for this unit; covered by another unit."
+   },
+   {
+    "block": "RESOURCE-EXHAUSTION-AND-AVAILABILITY.md#Core discipline",
+    "reason": "Not the source-visible boundary for this unit; covered by another unit."
+   }
+  ],
+  "prior_status": "none",
+  "attempts": [],
+  "wave": 2,
+  "status": "covered",
+  "agent_id": "hunt-server2-w2",
+  "reviewed_paths": [
+   "Dockerfile",
+   "scripts/deploy-cloud-run.sh",
+   "server/app.ts",
+   "server/clientVersion.ts",
+   "server/index.ts",
+   "src/sync/transport.ts",
+   "vite.config.js"
+  ],
+  "local_checks": [
+   {
+    "agent_id": "hunt-server2-w2",
+    "reviewed_paths": [
+     "server/clientVersion.ts",
+     "server/app.ts",
+     "server/index.ts"
+    ],
+    "invariant": "426 gate fails closed; dev bypass unusable in production",
+    "method": "source",
+    "result": "Missing/non-numeric -> 426 when min set; 'dev' passes only when devAuthAllowed; client-compat control not authz.",
+    "artifact": null
+   },
+   {
+    "agent_id": "hunt-server2-w2",
+    "reviewed_paths": [
+     "scripts/deploy-cloud-run.sh",
+     "Dockerfile",
+     "vite.config.js",
+     "src/sync/transport.ts"
+    ],
+    "invariant": "deploy env does not silently drop a security setting",
+    "method": "source",
+    "result": "--set-env-vars replaces env and never sets MIN_CLIENT_VERSION; gate off in prod (hardening, compatibility only).",
+    "artifact": null
+   }
+  ],
+  "result_fingerprints": [],
+  "unresolved": [],
+  "hunter_group": "h7",
+  "hardening": [
+   "SECURITY DEFINER search_path public,pg_temp",
+   "erase_my_data take users row lock",
+   "delete_my_account does not purge auth-state verification rows",
+   "MIN_CLIENT_VERSION not set by deploy script"
+  ]
+ },
+ {
+  "coverage_id": "server%2Fcommands%2Faccount.ts%23erase-data%20and%20delete::db%2Fmigrations%2F20261008000003_erase_and_delete_account.sql%23delete_my_account::server%2Fcommands::DATA-ISOLATION-AND-LIFECYCLE.md%23Soft-delete%20and%20tombstone%20bypass",
+  "canonical_refs": {
+   "surface": "server/commands/account.ts#erase-data and delete",
+   "boundary": "db/migrations/20261008000003_erase_and_delete_account.sql#delete_my_account",
+   "subsystem": "server/commands",
+   "attack_class": "DATA-ISOLATION-AND-LIFECYCLE.md#Soft-delete and tombstone bypass"
+  },
+  "surface": "server/commands/account.ts#erase-data and delete",
+  "boundary": "db/migrations/20261008000003_erase_and_delete_account.sql#delete_my_account",
+  "subsystem": "server/commands",
+  "attack_class": "Soft-delete and tombstone bypass",
+  "starting_paths": [
+   "server/commands/account.ts",
+   "db/migrations",
+   "server/commands/support.ts"
+  ],
+  "ordinary_attack_class_block": "ATTACK-CLASSES.md#Feature abuse and data leakage",
+  "selected_companion_blocks": [
+   "DATA-ISOLATION-AND-LIFECYCLE.md#Core discipline",
+   "DATA-ISOLATION-AND-LIFECYCLE.md#Soft-delete and tombstone bypass",
+   "DATA-ISOLATION-AND-LIFECYCLE.md#Universal moves",
+   "DATA-ISOLATION-AND-LIFECYCLE.md#Validation rules"
+  ],
+  "excluded_blocks": [
+   {
+    "block": "MEMORY-SAFETY-AND-BINARY.md#Core discipline",
+    "reason": "No native/unsafe code or binary parsers in repo (TypeScript only)."
+   },
+   {
+    "block": "AI-AND-LLM.md#Core discipline",
+    "reason": "No model, agent, or MCP server in the product; window.claude host handles are a trusted host surface."
+   },
+   {
+    "block": "PROTOCOLS-RPC-AND-MESSAGING.md#Core discipline",
+    "reason": "Transport is plain JSON over HTTP; no custom protocol, broker, or webhook."
+   },
+   {
+    "block": "DESKTOP-MOBILE-AND-LOCAL-IPC.md#Core discipline",
+    "reason": "No native shell, deep links, or local IPC; web PWA only."
+   },
+   {
+    "block": "WEB-PROTOCOL-AND-AUTH.md#Core discipline",
+    "reason": "Not the source-visible boundary for this unit; covered by another unit."
+   },
+   {
+    "block": "CLIENT-SIDE.md#Core discipline",
+    "reason": "Not the source-visible boundary for this unit; covered by another unit."
+   },
+   {
+    "block": "SUPPLY-CHAIN-AND-RELEASE.md#Core discipline",
+    "reason": "Not the source-visible boundary for this unit; covered by another unit."
+   },
+   {
+    "block": "CLOUD-AND-DEPLOYMENT.md#Core discipline",
+    "reason": "Not the source-visible boundary for this unit; covered by another unit."
+   },
+   {
+    "block": "RESOURCE-EXHAUSTION-AND-AVAILABILITY.md#Core discipline",
+    "reason": "Not the source-visible boundary for this unit; covered by another unit."
+   }
+  ],
+  "prior_status": "none",
+  "attempts": [],
+  "wave": 1,
+  "status": "covered",
+  "agent_id": "hunt-data-w1",
+  "reviewed_paths": [
+   "db/migrations/20261008000003_erase_and_delete_account.sql",
+   "server/app.ts",
+   "server/commands/account.ts",
+   "server/commands/documents.ts",
+   "server/commands/logSession.ts",
+   "server/commands/support.ts"
+  ],
+  "local_checks": [
+   {
+    "agent_id": "hunt-data-w1",
+    "reviewed_paths": [
+     "server/commands/account.ts",
+     "db/migrations/20261008000003_erase_and_delete_account.sql",
+     "server/app.ts"
+    ],
+    "invariant": "erase/delete act only on caller and remove every copy",
+    "method": "source",
+    "result": "SECURITY DEFINER fns use app.user_id only, search_path pinned; cascade and auth rows removed; exact confirm word.",
+    "artifact": null
+   },
+   {
+    "agent_id": "hunt-data-w1",
+    "reviewed_paths": [
+     "server/commands/support.ts",
+     "server/commands/logSession.ts",
+     "server/commands/documents.ts"
+    ],
+    "invariant": "tombstones not revivable by unauthorized/stale operation",
+    "method": "source",
+    "result": "Unique (user_id,client_id) incl. tombstones; revive only same-owner by design.",
+    "artifact": null
+   }
+  ],
+  "result_fingerprints": [],
+  "unresolved": [],
+  "hunter_group": "h2",
+  "hardening": [
+   "erase/delete do not take users row lock",
+   "commands carry no data_epoch",
+   "normConfigDoc spreads unknown keys"
+  ]
+ },
+ {
+  "coverage_id": "server%2Fcommands%2FimportLegacy.ts%23import-legacy::server%2Fcommands%2Fsync.ts%23sync::server%2Fcommands::DATA-ISOLATION-AND-LIFECYCLE.md%23Import%20and%20restore%20authority%20expansion",
+  "canonical_refs": {
+   "surface": "server/commands/importLegacy.ts#import-legacy",
+   "boundary": "server/commands/sync.ts#sync",
+   "subsystem": "server/commands",
+   "attack_class": "DATA-ISOLATION-AND-LIFECYCLE.md#Import and restore authority expansion"
+  },
+  "surface": "server/commands/importLegacy.ts#import-legacy",
+  "boundary": "server/commands/sync.ts#sync",
+  "subsystem": "server/commands",
+  "attack_class": "Import and restore authority expansion",
+  "starting_paths": [
+   "server/commands/importLegacy.ts",
+   "server/commands/sync.ts",
+   "server/commands/support.ts"
+  ],
+  "ordinary_attack_class_block": "ATTACK-CLASSES.md#Business logic",
+  "selected_companion_blocks": [
+   "DATA-ISOLATION-AND-LIFECYCLE.md#Core discipline",
+   "DATA-ISOLATION-AND-LIFECYCLE.md#Import and restore authority expansion",
+   "DATA-ISOLATION-AND-LIFECYCLE.md#Universal moves",
+   "DATA-ISOLATION-AND-LIFECYCLE.md#Validation rules"
+  ],
+  "excluded_blocks": [
+   {
+    "block": "MEMORY-SAFETY-AND-BINARY.md#Core discipline",
+    "reason": "No native/unsafe code or binary parsers in repo (TypeScript only)."
+   },
+   {
+    "block": "AI-AND-LLM.md#Core discipline",
+    "reason": "No model, agent, or MCP server in the product; window.claude host handles are a trusted host surface."
+   },
+   {
+    "block": "PROTOCOLS-RPC-AND-MESSAGING.md#Core discipline",
+    "reason": "Transport is plain JSON over HTTP; no custom protocol, broker, or webhook."
+   },
+   {
+    "block": "DESKTOP-MOBILE-AND-LOCAL-IPC.md#Core discipline",
+    "reason": "No native shell, deep links, or local IPC; web PWA only."
+   },
+   {
+    "block": "WEB-PROTOCOL-AND-AUTH.md#Core discipline",
+    "reason": "Not the source-visible boundary for this unit; covered by another unit."
+   },
+   {
+    "block": "CLIENT-SIDE.md#Core discipline",
+    "reason": "Not the source-visible boundary for this unit; covered by another unit."
+   },
+   {
+    "block": "SUPPLY-CHAIN-AND-RELEASE.md#Core discipline",
+    "reason": "Not the source-visible boundary for this unit; covered by another unit."
+   },
+   {
+    "block": "CLOUD-AND-DEPLOYMENT.md#Core discipline",
+    "reason": "Not the source-visible boundary for this unit; covered by another unit."
+   },
+   {
+    "block": "RESOURCE-EXHAUSTION-AND-AVAILABILITY.md#Core discipline",
+    "reason": "Not the source-visible boundary for this unit; covered by another unit."
+   }
+  ],
+  "prior_status": "none",
+  "attempts": [],
+  "wave": 1,
+  "status": "covered",
+  "agent_id": "hunt-data-w1",
+  "reviewed_paths": [
+   "server/app.ts",
+   "server/commands/importLegacy.ts",
+   "server/commands/support.ts",
+   "server/commands/sync.ts"
+  ],
+  "local_checks": [
+   {
+    "agent_id": "hunt-data-w1",
+    "reviewed_paths": [
+     "server/commands/importLegacy.ts",
+     "server/commands/support.ts",
+     "server/app.ts"
+    ],
+    "invariant": "import-legacy cannot write outside tenant, overwrite, or bypass validation",
+    "method": "source",
+    "result": "Dispatches through allowlisted HANDLERS with session userId; any non-201 rolls back; empty-account check under user lock; 20k/4MB caps.",
+    "artifact": null
+   },
+   {
+    "agent_id": "hunt-data-w1",
+    "reviewed_paths": [
+     "server/commands/sync.ts",
+     "server/app.ts"
+    ],
+    "invariant": "sync pull returns only caller rows",
+    "method": "source",
+    "result": "since/limit digit-bounded and bound as params; table names constant; all selects user_id filtered plus RLS.",
+    "artifact": null
+   }
+  ],
+  "result_fingerprints": [],
+  "unresolved": [],
+  "hunter_group": "h2",
+  "hardening": [
+   "erase/delete do not take users row lock",
+   "commands carry no data_epoch",
+   "normConfigDoc spreads unknown keys"
+  ]
+ },
+ {
+  "coverage_id": "server%2Fdb%2Fconnection.ts%23inUserTransaction::db%2Fmigrations%2F20261008000002_row_level_security.sql%23own_rows::server%2Fdb::DATA-ISOLATION-AND-LIFECYCLE.md%23Policy%20and%20query%20disagreement",
+  "canonical_refs": {
+   "surface": "server/db/connection.ts#inUserTransaction",
+   "boundary": "db/migrations/20261008000002_row_level_security.sql#own_rows",
+   "subsystem": "server/db",
+   "attack_class": "DATA-ISOLATION-AND-LIFECYCLE.md#Policy and query disagreement"
+  },
+  "surface": "server/db/connection.ts#inUserTransaction",
+  "boundary": "db/migrations/20261008000002_row_level_security.sql#own_rows",
+  "subsystem": "server/db",
+  "attack_class": "Policy and query disagreement",
+  "starting_paths": [
+   "server/db/role.ts",
+   "server/db/connection.ts",
+   "db/migrations",
+   "server/auth.ts"
+  ],
+  "ordinary_attack_class_block": "ATTACK-CLASSES.md#Access control",
+  "selected_companion_blocks": [
+   "DATA-ISOLATION-AND-LIFECYCLE.md#Core discipline",
+   "DATA-ISOLATION-AND-LIFECYCLE.md#Policy and query disagreement",
+   "DATA-ISOLATION-AND-LIFECYCLE.md#Universal moves",
+   "DATA-ISOLATION-AND-LIFECYCLE.md#Validation rules"
+  ],
+  "excluded_blocks": [
+   {
+    "block": "MEMORY-SAFETY-AND-BINARY.md#Core discipline",
+    "reason": "No native/unsafe code or binary parsers in repo (TypeScript only)."
+   },
+   {
+    "block": "AI-AND-LLM.md#Core discipline",
+    "reason": "No model, agent, or MCP server in the product; window.claude host handles are a trusted host surface."
+   },
+   {
+    "block": "PROTOCOLS-RPC-AND-MESSAGING.md#Core discipline",
+    "reason": "Transport is plain JSON over HTTP; no custom protocol, broker, or webhook."
+   },
+   {
+    "block": "DESKTOP-MOBILE-AND-LOCAL-IPC.md#Core discipline",
+    "reason": "No native shell, deep links, or local IPC; web PWA only."
+   },
+   {
+    "block": "WEB-PROTOCOL-AND-AUTH.md#Core discipline",
+    "reason": "Not the source-visible boundary for this unit; covered by another unit."
+   },
+   {
+    "block": "CLIENT-SIDE.md#Core discipline",
+    "reason": "Not the source-visible boundary for this unit; covered by another unit."
+   },
+   {
+    "block": "SUPPLY-CHAIN-AND-RELEASE.md#Core discipline",
+    "reason": "Not the source-visible boundary for this unit; covered by another unit."
+   },
+   {
+    "block": "CLOUD-AND-DEPLOYMENT.md#Core discipline",
+    "reason": "Not the source-visible boundary for this unit; covered by another unit."
+   },
+   {
+    "block": "RESOURCE-EXHAUSTION-AND-AVAILABILITY.md#Core discipline",
+    "reason": "Not the source-visible boundary for this unit; covered by another unit."
+   }
+  ],
+  "prior_status": "none",
+  "attempts": [],
+  "wave": 1,
+  "status": "covered",
+  "agent_id": "hunt-data-w1",
+  "reviewed_paths": [
+   "db/migrations/20261008000002_row_level_security.sql",
+   "server/app.ts",
+   "server/auth.ts",
+   "server/db/connection.ts",
+   "server/db/role.ts"
+  ],
+  "local_checks": [
+   {
+    "agent_id": "hunt-data-w1",
+    "reviewed_paths": [
+     "server/auth.ts",
+     "db/migrations/20261008000002_row_level_security.sql",
+     "server/app.ts"
+    ],
+    "invariant": "all tenant queries run in inUserTransaction with transaction-local app.user_id; RLS agrees with explicit filters",
+    "method": "source",
+    "result": "set_config is_local; unset GUC matches no rows; policies have USING and WITH CHECK on all 9 data tables, refused_writes, users.",
+    "artifact": null
+   },
+   {
+    "agent_id": "hunt-data-w1",
+    "reviewed_paths": [
+     "server/db/role.ts",
+     "server/db/connection.ts"
+    ],
+    "invariant": "no request path uses an RLS-bypassing client",
+    "method": "source",
+    "result": "Single pool; RLS not FORCEd so depends on connecting role being ironlog_app; production role not source-observable.",
+    "artifact": null
+   }
+  ],
+  "result_fingerprints": [],
+  "unresolved": [],
+  "hunter_group": "h2",
+  "hardening": [
+   "erase/delete do not take users row lock",
+   "commands carry no data_epoch",
+   "normConfigDoc spreads unknown keys"
+  ]
+ },
+ {
+  "coverage_id": "server%2Fscripts%2FseedTestUserCli.ts%23seed%3Atest-user%20with%20DATABASE_URL::operator%20CLI%20copying%20rows%20between%20auth%20ids%20over%20a%20non-RLS%20connection::server%2Fscripts::DATA-ISOLATION-AND-LIFECYCLE.md%23Stale%20authorization%20and%20derived%20copy%20use",
+  "canonical_refs": {
+   "surface": "server/scripts/seedTestUserCli.ts#seed:test-user with DATABASE_URL",
+   "boundary": "operator CLI copying rows between auth ids over a non-RLS connection",
+   "subsystem": "server/scripts",
+   "attack_class": "DATA-ISOLATION-AND-LIFECYCLE.md#Stale authorization and derived copy use"
+  },
+  "surface": "server/scripts/seedTestUserCli.ts#seed:test-user with DATABASE_URL",
+  "boundary": "operator CLI copying rows between auth ids over a non-RLS connection",
+  "subsystem": "server/scripts",
+  "attack_class": "Stale authorization and derived copy use",
+  "starting_paths": [
+   "server/scripts/seedTestUser.ts",
+   "server/scripts/seedTestUserCli.ts",
+   "package.json",
+   "db/migrations/20261008000002_row_level_security.sql",
+   "db/migrations/20261008000003_erase_and_delete_account.sql"
+  ],
+  "ordinary_attack_class_block": "ATTACK-CLASSES.md#Feature abuse and data leakage",
+  "selected_companion_blocks": [
+   "DATA-ISOLATION-AND-LIFECYCLE.md#Core discipline",
+   "DATA-ISOLATION-AND-LIFECYCLE.md#Stale authorization and derived copy use",
+   "DATA-ISOLATION-AND-LIFECYCLE.md#Universal moves",
+   "DATA-ISOLATION-AND-LIFECYCLE.md#Validation rules"
+  ],
+  "excluded_blocks": [
+   {
+    "block": "MEMORY-SAFETY-AND-BINARY.md#Core discipline",
+    "reason": "No native code."
+   },
+   {
+    "block": "AI-AND-LLM.md#Core discipline",
+    "reason": "No model surface."
+   },
+   {
+    "block": "PROTOCOLS-RPC-AND-MESSAGING.md#Core discipline",
+    "reason": "No custom protocol."
+   },
+   {
+    "block": "DESKTOP-MOBILE-AND-LOCAL-IPC.md#Core discipline",
+    "reason": "Web PWA only."
+   },
+   {
+    "block": "WEB-PROTOCOL-AND-AUTH.md#Core discipline",
+    "reason": "Operator-run script, no HTTP principal."
+   },
+   {
+    "block": "CLIENT-SIDE.md#Core discipline",
+    "reason": "Node script, no browser surface."
+   },
+   {
+    "block": "SUPPLY-CHAIN-AND-RELEASE.md#Core discipline",
+    "reason": "Not the source-visible boundary for this unit."
+   },
+   {
+    "block": "CLOUD-AND-DEPLOYMENT.md#Core discipline",
+    "reason": "Not the source-visible boundary for this unit."
+   },
+   {
+    "block": "RESOURCE-EXHAUSTION-AND-AVAILABILITY.md#Core discipline",
+    "reason": "Not the source-visible boundary for this unit."
+   }
+  ],
+  "prior_status": "none",
+  "attempts": [],
+  "wave": 5,
+  "status": "covered",
+  "agent_id": "hunt-ops-w5",
+  "reviewed_paths": [
+   "db/migrations/20261008000002_row_level_security.sql",
+   "package.json",
+   "server/scripts/seedTestUser.ts",
+   "server/scripts/seedTestUserCli.ts"
+  ],
+  "local_checks": [
+   {
+    "agent_id": "hunt-ops-w5",
+    "reviewed_paths": [
+     "server/scripts/seedTestUserCli.ts",
+     "server/scripts/seedTestUser.ts",
+     "package.json",
+     "db/migrations/20261008000002_row_level_security.sql"
+    ],
+    "invariant": "CLI copies only intended live rows between named users and is not reachable from HTTP",
+    "method": "source",
+    "result": "Operator-only tsx CLI; explicit user_id filters; live rows only; tombstone-aware not-exists; one transaction with target lock.",
+    "artifact": null
+   }
+  ],
+  "result_fingerprints": [],
+  "unresolved": [],
+  "hunter_group": "h14",
+  "hardening": [
+   "validate --to against auth.user in seedTestUser.ts"
+  ]
+ },
+ {
+  "coverage_id": "src%2Fcomponents%2Fboard%2FCard.tsx%23ex.url%20href::src%2Fshared%2FstretchWeek.ts%23goodUrl::src%2Fcomponents::CLIENT-SIDE.md%23DOM-based%20XSS",
+  "canonical_refs": {
+   "surface": "src/components/board/Card.tsx#ex.url href",
+   "boundary": "src/shared/stretchWeek.ts#goodUrl",
+   "subsystem": "src/components",
+   "attack_class": "CLIENT-SIDE.md#DOM-based XSS"
+  },
+  "surface": "src/components/board/Card.tsx#ex.url href",
+  "boundary": "src/shared/stretchWeek.ts#goodUrl",
+  "subsystem": "src/components",
+  "attack_class": "DOM-based XSS",
+  "starting_paths": [
+   "src/components",
+   "src/shared/stretchWeek.ts",
+   "src/shared/listItems.ts",
+   "src/store/useAppStore.ts"
+  ],
+  "ordinary_attack_class_block": "ATTACK-CLASSES.md#Injection",
+  "selected_companion_blocks": [
+   "CLIENT-SIDE.md#Core discipline",
+   "CLIENT-SIDE.md#DOM-based XSS",
+   "CLIENT-SIDE.md#Universal moves",
+   "CLIENT-SIDE.md#Validation rules"
+  ],
+  "excluded_blocks": [
+   {
+    "block": "MEMORY-SAFETY-AND-BINARY.md#Core discipline",
+    "reason": "No native/unsafe code or binary parsers in repo (TypeScript only)."
+   },
+   {
+    "block": "AI-AND-LLM.md#Core discipline",
+    "reason": "No model, agent, or MCP server in the product; window.claude host handles are a trusted host surface."
+   },
+   {
+    "block": "PROTOCOLS-RPC-AND-MESSAGING.md#Core discipline",
+    "reason": "Transport is plain JSON over HTTP; no custom protocol, broker, or webhook."
+   },
+   {
+    "block": "DESKTOP-MOBILE-AND-LOCAL-IPC.md#Core discipline",
+    "reason": "No native shell, deep links, or local IPC; web PWA only."
+   },
+   {
+    "block": "WEB-PROTOCOL-AND-AUTH.md#Core discipline",
+    "reason": "Not the source-visible boundary for this unit; covered by another unit."
+   },
+   {
+    "block": "DATA-ISOLATION-AND-LIFECYCLE.md#Core discipline",
+    "reason": "Not the source-visible boundary for this unit; covered by another unit."
+   },
+   {
+    "block": "SUPPLY-CHAIN-AND-RELEASE.md#Core discipline",
+    "reason": "Not the source-visible boundary for this unit; covered by another unit."
+   },
+   {
+    "block": "CLOUD-AND-DEPLOYMENT.md#Core discipline",
+    "reason": "Not the source-visible boundary for this unit; covered by another unit."
+   },
+   {
+    "block": "RESOURCE-EXHAUSTION-AND-AVAILABILITY.md#Core discipline",
+    "reason": "Not the source-visible boundary for this unit; covered by another unit."
+   }
+  ],
+  "prior_status": "none",
+  "attempts": [],
+  "wave": 1,
+  "status": "covered",
+  "agent_id": "hunt-client-w1",
+  "reviewed_paths": [
+   "server/securityHeaders.ts",
+   "src/components/board/Card.tsx",
+   "src/components/program/ExerciseLibrary.tsx",
+   "src/components/settings/Settings.tsx",
+   "src/lib/data.ts",
+   "src/shared/config.ts",
+   "src/shared/listItems.ts",
+   "src/shared/stretchWeek.ts"
+  ],
+  "local_checks": [
+   {
+    "agent_id": "hunt-client-w1",
+    "reviewed_paths": [
+     "src/shared/stretchWeek.ts",
+     "src/shared/listItems.ts",
+     "src/shared/config.ts",
+     "src/lib/data.ts"
+    ],
+    "invariant": "user URLs reaching href are http(s)-checked on all write paths",
+    "method": "local",
+    "result": "normConfig does not filter cfg.ex[].url; javascript: survives to href; react-dom 19 rewrites to throw stub (sandbox vitest).",
+    "artifact": "agents/hunt-client-w1/artifacts/out/check-2.txt"
+   },
+   {
+    "agent_id": "hunt-client-w1",
+    "reviewed_paths": [
+     "src/components/board/Card.tsx",
+     "src/components/program/ExerciseLibrary.tsx",
+     "src/components/settings/Settings.tsx",
+     "server/securityHeaders.ts"
+    ],
+    "invariant": "no HTML/eval sink and policy backs up URL check",
+    "method": "source",
+    "result": "No innerHTML/dangerouslySetInnerHTML; CSP script-src self blocks javascript: nav on server build; Pages build has only React's block (hardening).",
+    "artifact": null
+   }
+  ],
+  "result_fingerprints": [],
+  "unresolved": [],
+  "hunter_group": "h4",
+  "hardening": [
+   "normConfig does not apply goodUrl to cfg.ex[].url or backup.last.url",
+   "gh token key not cleared on account change",
+   "applyImport cfg[k]=v with __proto__",
+   "Pages build lacks CSP"
+  ]
+ },
+ {
+  "coverage_id": "src%2Fcomponents%2Fsheets%2FImportSheet.tsx%20and%20editorSlice%20and%20wellnessSlice%20and%20Daily%2FMedical%20views::untrusted%20file%20or%20persisted%20JSON%20into%20the%20zustand%20store%20and%20rendering::src%2Fstore::CLIENT-SIDE.md%23Prototype%20pollution%20and%20gadget%20chain",
+  "canonical_refs": {
+   "surface": "src/components/sheets/ImportSheet.tsx and editorSlice and wellnessSlice and Daily/Medical views",
+   "boundary": "untrusted file or persisted JSON into the zustand store and rendering",
+   "subsystem": "src/store",
+   "attack_class": "CLIENT-SIDE.md#Prototype pollution and gadget chain"
+  },
+  "surface": "src/components/sheets/ImportSheet.tsx and editorSlice and wellnessSlice and Daily/Medical views",
+  "boundary": "untrusted file or persisted JSON into the zustand store and rendering",
+  "subsystem": "src/store",
+  "attack_class": "Prototype pollution and gadget chain",
+  "starting_paths": [
+   "src/components/sheets/ImportSheet.tsx",
+   "src/store/editorSlice.ts",
+   "src/store/wellnessSlice.ts",
+   "src/components/daily",
+   "src/App.jsx",
+   "src/lib/supplements.ts",
+   "src/lib/viewState.ts"
+  ],
+  "ordinary_attack_class_block": "ATTACK-CLASSES.md#Injection",
+  "selected_companion_blocks": [
+   "CLIENT-SIDE.md#Core discipline",
+   "CLIENT-SIDE.md#Prototype pollution and gadget chain",
+   "CLIENT-SIDE.md#Universal moves",
+   "CLIENT-SIDE.md#Validation rules"
+  ],
+  "excluded_blocks": [
+   {
+    "block": "MEMORY-SAFETY-AND-BINARY.md#Core discipline",
+    "reason": "No native code."
+   },
+   {
+    "block": "AI-AND-LLM.md#Core discipline",
+    "reason": "No model surface."
+   },
+   {
+    "block": "PROTOCOLS-RPC-AND-MESSAGING.md#Core discipline",
+    "reason": "No custom protocol."
+   },
+   {
+    "block": "DESKTOP-MOBILE-AND-LOCAL-IPC.md#Core discipline",
+    "reason": "Web PWA only."
+   },
+   {
+    "block": "WEB-PROTOCOL-AND-AUTH.md#Core discipline",
+    "reason": "Not the boundary for this unit."
+   },
+   {
+    "block": "DATA-ISOLATION-AND-LIFECYCLE.md#Core discipline",
+    "reason": "Not the boundary for this unit."
+   },
+   {
+    "block": "SUPPLY-CHAIN-AND-RELEASE.md#Core discipline",
+    "reason": "Not the boundary for this unit."
+   },
+   {
+    "block": "CLOUD-AND-DEPLOYMENT.md#Core discipline",
+    "reason": "Not the boundary for this unit."
+   },
+   {
+    "block": "RESOURCE-EXHAUSTION-AND-AVAILABILITY.md#Core discipline",
+    "reason": "Not the boundary for this unit."
+   }
+  ],
+  "prior_status": "none",
+  "attempts": [],
+  "wave": 7,
+  "status": "covered",
+  "agent_id": "hunt-store7-w7",
+  "reviewed_paths": [
+   "src/components/daily/Daily.jsx",
+   "src/components/daily/Medical.jsx",
+   "src/components/sheets/ImportSheet.tsx",
+   "src/components/stretches/Stretches.tsx",
+   "src/lib/export.ts",
+   "src/lib/stretches.ts",
+   "src/lib/supplements.ts",
+   "src/lib/viewState.ts",
+   "src/lib/water.ts",
+   "src/shared/listItems.ts",
+   "src/shared/stretchWeek.ts",
+   "src/shared/supplementDay.ts",
+   "src/store/editorSlice.ts",
+   "src/store/settingsSlice.ts",
+   "src/store/wellnessSlice.ts"
+  ],
+  "local_checks": [
+   {
+    "agent_id": "hunt-store7-w7",
+    "reviewed_paths": [
+     "src/store/wellnessSlice.ts",
+     "src/lib/supplements.ts",
+     "src/lib/water.ts",
+     "src/shared/supplementDay.ts",
+     "src/shared/stretchWeek.ts",
+     "src/shared/listItems.ts",
+     "src/lib/stretches.ts",
+     "src/store/settingsSlice.ts"
+    ],
+    "invariant": "no recursive merge/path assignment reaches Object.prototype from imported JSON",
+    "method": "source",
+    "result": "No recursive merge helper; keys regex-validated or copied via spread/fromEntries; supplement id only trimmed.",
+    "artifact": null
+   },
+   {
+    "agent_id": "hunt-store7-w7",
+    "reviewed_paths": [
+     "src/components/sheets/ImportSheet.tsx",
+     "src/store/editorSlice.ts",
+     "src/lib/export.ts"
+    ],
+    "invariant": "import sheet/editor render file data without DOM sink",
+    "method": "source",
+    "result": "Renders counts and names as React text; Object.assign targets controlled.",
+    "artifact": null
+   },
+   {
+    "agent_id": "hunt-store7-w7",
+    "reviewed_paths": [
+     "src/lib/viewState.ts",
+     "src/components/daily/Daily.jsx",
+     "src/components/daily/Medical.jsx",
+     "src/components/stretches/Stretches.tsx"
+    ],
+    "invariant": "persisted view state and views give no gadget; URL sinks http(s) only",
+    "method": "source",
+    "result": "loadView whitelists; stretch URLs via goodUrl; no innerHTML.",
+    "artifact": null
+   }
+  ],
+  "result_fingerprints": [],
+  "unresolved": [],
+  "hunter_group": "h17",
+  "hardening": [
+   "supplement id charset/length",
+   "normTakenDay key restriction"
+  ]
+ },
+ {
+  "coverage_id": "src%2Flib%2Fexport.ts%23buildCsv%20and%20workbook%20builders%20%28CSV%2FExcel%20export%29::user-controlled%20names%2Fnotes%20to%20a%20file%20opened%20in%20Excel%2FSheets::src%2Flib%2Fexport::DATA-ISOLATION-AND-LIFECYCLE.md%23Export%20and%20backup%20scope%20expansion",
+  "canonical_refs": {
+   "surface": "src/lib/export.ts#buildCsv and workbook builders (CSV/Excel export)",
+   "boundary": "user-controlled names/notes to a file opened in Excel/Sheets",
+   "subsystem": "src/lib/export",
+   "attack_class": "DATA-ISOLATION-AND-LIFECYCLE.md#Export and backup scope expansion"
+  },
+  "surface": "src/lib/export.ts#buildCsv and workbook builders (CSV/Excel export)",
+  "boundary": "user-controlled names/notes to a file opened in Excel/Sheets",
+  "subsystem": "src/lib/export",
+  "attack_class": "Export and backup scope expansion",
+  "starting_paths": [
+   "src/lib/export.ts",
+   "src/components/settings/ExportUpload.tsx",
+   "src/lib/excelImport.ts"
+  ],
+  "ordinary_attack_class_block": "ATTACK-CLASSES.md#Injection",
+  "selected_companion_blocks": [
+   "DATA-ISOLATION-AND-LIFECYCLE.md#Core discipline",
+   "DATA-ISOLATION-AND-LIFECYCLE.md#Export and backup scope expansion",
+   "DATA-ISOLATION-AND-LIFECYCLE.md#Universal moves",
+   "DATA-ISOLATION-AND-LIFECYCLE.md#Validation rules"
+  ],
+  "excluded_blocks": [
+   {
+    "block": "MEMORY-SAFETY-AND-BINARY.md#Core discipline",
+    "reason": "No native/unsafe code (TypeScript only)."
+   },
+   {
+    "block": "AI-AND-LLM.md#Core discipline",
+    "reason": "No model/agent/MCP surface in the product."
+   },
+   {
+    "block": "PROTOCOLS-RPC-AND-MESSAGING.md#Core discipline",
+    "reason": "Plain JSON over HTTP; no custom protocol or broker."
+   },
+   {
+    "block": "DESKTOP-MOBILE-AND-LOCAL-IPC.md#Core discipline",
+    "reason": "Web PWA only; no native shell or IPC."
+   },
+   {
+    "block": "WEB-PROTOCOL-AND-AUTH.md#Core discipline",
+    "reason": "Not the source-visible boundary for this unit; covered by another unit."
+   },
+   {
+    "block": "CLIENT-SIDE.md#Core discipline",
+    "reason": "Not the source-visible boundary for this unit; covered by another unit."
+   },
+   {
+    "block": "SUPPLY-CHAIN-AND-RELEASE.md#Core discipline",
+    "reason": "Not the source-visible boundary for this unit; covered by another unit."
+   },
+   {
+    "block": "CLOUD-AND-DEPLOYMENT.md#Core discipline",
+    "reason": "Not the source-visible boundary for this unit; covered by another unit."
+   },
+   {
+    "block": "RESOURCE-EXHAUSTION-AND-AVAILABILITY.md#Core discipline",
+    "reason": "Not the source-visible boundary for this unit; covered by another unit."
+   }
+  ],
+  "prior_status": "none",
+  "attempts": [],
+  "wave": 3,
+  "status": "candidate",
+  "agent_id": "hunt-client3-w3",
+  "reviewed_paths": [
+   "src/components/settings/ExportUpload.tsx",
+   "src/lib/export.ts",
+   "src/shared/validate.ts",
+   "src/store/useAppStore.ts"
+  ],
+  "local_checks": [
+   {
+    "agent_id": "hunt-client3-w3",
+    "reviewed_paths": [
+     "src/lib/export.ts",
+     "src/shared/validate.ts",
+     "src/store/useAppStore.ts"
+    ],
+    "invariant": "user strings in CSV do not begin with a formula trigger",
+    "method": "local",
+    "result": "csvCell quotes only for , \" CR LF; imported note/name starting '=' emitted as leading-= cells; XLSX builders store strings as t:'s'.",
+    "artifact": "agents/hunt-client3-w3/artifacts/out/check-2.txt"
+   },
+   {
+    "agent_id": "hunt-client3-w3",
+    "reviewed_paths": [
+     "src/lib/export.ts",
+     "src/components/settings/ExportUpload.tsx"
+    ],
+    "invariant": "export contains only signed-in user's own snapshot",
+    "method": "source",
+    "result": "Builders use in-memory snapshot; data-file export clones cfg incl. ghBackup (own data).",
+    "artifact": null
+   }
+  ],
+  "result_fingerprints": [
+   "export.buildCsv.csv-formula-injection-unneutralised-cells"
+  ],
+  "unresolved": [],
+  "hunter_group": "h9",
+  "hardening": [
+   "export gh token in data file",
+   "outbox/mirror carry no owner id"
+  ]
+ },
+ {
+  "coverage_id": "src%2Flib%2Fgate.ts%20and%20account-switch%20UI%20%28Landing%2C%20SignInCard%2C%20OtherAccountCard%2C%20LegacyCard%2C%20AccountPanel%2C%20SyncPanel%29::session%2Fknown%20and%20sync%2Fowner%20localStorage%20keys%20to%20app%20vs%20landing%20decision%3B%20previous-owner%20on-device%20data%20vs%20newly%20signed-in%20account::src%2Flib::CLIENT-SIDE.md%23Browser-storage%20disclosure%20and%20stale%20authorization",
+  "canonical_refs": {
+   "surface": "src/lib/gate.ts and account-switch UI (Landing, SignInCard, OtherAccountCard, LegacyCard, AccountPanel, SyncPanel)",
+   "boundary": "session/known and sync/owner localStorage keys to app vs landing decision; previous-owner on-device data vs newly signed-in account",
+   "subsystem": "src/lib",
+   "attack_class": "CLIENT-SIDE.md#Browser-storage disclosure and stale authorization"
+  },
+  "surface": "src/lib/gate.ts and account-switch UI (Landing, SignInCard, OtherAccountCard, LegacyCard, AccountPanel, SyncPanel)",
+  "boundary": "session/known and sync/owner localStorage keys to app vs landing decision; previous-owner on-device data vs newly signed-in account",
+  "subsystem": "src/lib",
+  "attack_class": "Browser-storage disclosure and stale authorization",
+  "starting_paths": [
+   "src/lib/gate.ts",
+   "src/components/OtherAccountCard.tsx",
+   "src/components/LegacyCard.tsx",
+   "src/components/SignInCard.tsx",
+   "src/components/settings/AccountPanel.tsx",
+   "src/components/settings/SyncPanel.tsx",
+   "src/components/SyncNotice.tsx",
+   "src/components/Landing.tsx",
+   "src/sync/devUser.ts"
+  ],
+  "ordinary_attack_class_block": "ATTACK-CLASSES.md#Access control",
+  "selected_companion_blocks": [
+   "CLIENT-SIDE.md#Core discipline",
+   "CLIENT-SIDE.md#Browser-storage disclosure and stale authorization",
+   "CLIENT-SIDE.md#Universal moves",
+   "CLIENT-SIDE.md#Validation rules"
+  ],
+  "excluded_blocks": [
+   {
+    "block": "MEMORY-SAFETY-AND-BINARY.md#Core discipline",
+    "reason": "No native code."
+   },
+   {
+    "block": "AI-AND-LLM.md#Core discipline",
+    "reason": "No model surface."
+   },
+   {
+    "block": "PROTOCOLS-RPC-AND-MESSAGING.md#Core discipline",
+    "reason": "No custom protocol."
+   },
+   {
+    "block": "DESKTOP-MOBILE-AND-LOCAL-IPC.md#Core discipline",
+    "reason": "Web PWA only."
+   },
+   {
+    "block": "WEB-PROTOCOL-AND-AUTH.md#Core discipline",
+    "reason": "Not the boundary for this unit."
+   },
+   {
+    "block": "DATA-ISOLATION-AND-LIFECYCLE.md#Core discipline",
+    "reason": "Not the boundary for this unit."
+   },
+   {
+    "block": "SUPPLY-CHAIN-AND-RELEASE.md#Core discipline",
+    "reason": "Not the boundary for this unit."
+   },
+   {
+    "block": "CLOUD-AND-DEPLOYMENT.md#Core discipline",
+    "reason": "Not the boundary for this unit."
+   },
+   {
+    "block": "RESOURCE-EXHAUSTION-AND-AVAILABILITY.md#Core discipline",
+    "reason": "Not the boundary for this unit."
+   }
+  ],
+  "prior_status": "none",
+  "attempts": [],
+  "wave": 8,
+  "status": "covered",
+  "agent_id": "hunt-gate8-w8",
+  "reviewed_paths": [
+   "Dockerfile",
+   "scripts/deploy-cloud-run.sh",
+   "server/auth.ts",
+   "src/components/Landing.tsx",
+   "src/components/LegacyCard.tsx",
+   "src/components/OtherAccountCard.tsx",
+   "src/components/SignInCard.tsx",
+   "src/components/SyncNotice.tsx",
+   "src/components/settings/AccountPanel.tsx",
+   "src/components/settings/SyncPanel.tsx",
+   "src/lib/gate.ts",
+   "src/sync/devUser.ts",
+   "vite.config.js"
+  ],
+  "local_checks": [
+   {
+    "agent_id": "hunt-gate8-w8",
+    "reviewed_paths": [
+     "src/components/Landing.tsx",
+     "src/sync/devUser.ts",
+     "vite.config.js",
+     "server/auth.ts",
+     "Dockerfile",
+     "scripts/deploy-cloud-run.sh"
+    ],
+    "invariant": "dev skip path and x-dev-user unusable in production build or server",
+    "method": "source",
+    "result": "Landing skip wrapped in import.meta.env.DEV, eliminated from dist bundle (0 occurrences); devHeader folds to {}; server reads header only for NODE_ENV development/test.",
+    "artifact": null
+   },
+   {
+    "agent_id": "hunt-gate8-w8",
+    "reviewed_paths": [
+     "src/lib/gate.ts",
+     "src/components/OtherAccountCard.tsx",
+     "src/components/LegacyCard.tsx",
+     "src/components/SignInCard.tsx",
+     "src/components/settings/AccountPanel.tsx",
+     "src/components/settings/SyncPanel.tsx",
+     "src/components/SyncNotice.tsx"
+    ],
+    "invariant": "UI gate keys cannot expose previous owner's data to another account or grant server authority",
+    "method": "source",
+    "result": "Gate is presentation-only; account switch pauses sync with 'account'; OtherAccountCard wipe re-checks identity.",
+    "artifact": null
+   }
+  ],
+  "result_fingerprints": [],
+  "unresolved": [],
+  "hunter_group": "h19",
+  "hardening": [
+   "offline fallback after sign-out shows cached data (documented)",
+   "runtime assert in setDevUser"
+  ]
+ },
+ {
+  "coverage_id": "src%2Flib%2Fgithub.ts%23fetch%20api.github.com%20repos%20backup%20and%20restore::user-supplied%20repo%2Fpath%20and%20plaintext%20token%20to%20api.github.com%3B%20remote%20JSON%20back%20into%20restore%20importer::src%2Flib::DATA-ISOLATION-AND-LIFECYCLE.md%23Import%20and%20restore%20authority%20expansion",
+  "canonical_refs": {
+   "surface": "src/lib/github.ts#fetch api.github.com repos backup and restore",
+   "boundary": "user-supplied repo/path and plaintext token to api.github.com; remote JSON back into restore importer",
+   "subsystem": "src/lib",
+   "attack_class": "DATA-ISOLATION-AND-LIFECYCLE.md#Import and restore authority expansion"
+  },
+  "surface": "src/lib/github.ts#fetch api.github.com repos backup and restore",
+  "boundary": "user-supplied repo/path and plaintext token to api.github.com; remote JSON back into restore importer",
+  "subsystem": "src/lib",
+  "attack_class": "Import and restore authority expansion",
+  "starting_paths": [
+   "src/lib/github.ts",
+   "src/store/useAppStore.ts",
+   "src/store/settingsSlice.ts",
+   "src/lib/export.ts",
+   "src/components/settings/ExportUpload.tsx"
+  ],
+  "ordinary_attack_class_block": "ATTACK-CLASSES.md#Resource and file handling",
+  "selected_companion_blocks": [
+   "DATA-ISOLATION-AND-LIFECYCLE.md#Core discipline",
+   "DATA-ISOLATION-AND-LIFECYCLE.md#Import and restore authority expansion",
+   "DATA-ISOLATION-AND-LIFECYCLE.md#Universal moves",
+   "DATA-ISOLATION-AND-LIFECYCLE.md#Validation rules"
+  ],
+  "excluded_blocks": [
+   {
+    "block": "MEMORY-SAFETY-AND-BINARY.md#Core discipline",
+    "reason": "No native code."
+   },
+   {
+    "block": "AI-AND-LLM.md#Core discipline",
+    "reason": "No model surface."
+   },
+   {
+    "block": "PROTOCOLS-RPC-AND-MESSAGING.md#Core discipline",
+    "reason": "No custom protocol."
+   },
+   {
+    "block": "DESKTOP-MOBILE-AND-LOCAL-IPC.md#Core discipline",
+    "reason": "Web PWA only."
+   },
+   {
+    "block": "WEB-PROTOCOL-AND-AUTH.md#Core discipline",
+    "reason": "Not the boundary for this unit."
+   },
+   {
+    "block": "CLIENT-SIDE.md#Core discipline",
+    "reason": "Not the boundary for this unit."
+   },
+   {
+    "block": "SUPPLY-CHAIN-AND-RELEASE.md#Core discipline",
+    "reason": "Not the boundary for this unit."
+   },
+   {
+    "block": "CLOUD-AND-DEPLOYMENT.md#Core discipline",
+    "reason": "Not the boundary for this unit."
+   },
+   {
+    "block": "RESOURCE-EXHAUSTION-AND-AVAILABILITY.md#Core discipline",
+    "reason": "Not the boundary for this unit."
+   }
+  ],
+  "prior_status": "none",
+  "attempts": [],
+  "wave": 8,
+  "status": "covered",
+  "agent_id": "hunt-pull8-w8",
+  "reviewed_paths": [
+   "src/lib/export.ts",
+   "src/lib/github.ts",
+   "src/shared/config.ts",
+   "src/shared/validate.ts",
+   "src/store/settingsSlice.ts",
+   "src/store/useAppStore.ts"
+  ],
+  "local_checks": [
+   {
+    "agent_id": "hunt-pull8-w8",
+    "reviewed_paths": [
+     "src/lib/github.ts",
+     "src/store/useAppStore.ts",
+     "src/shared/validate.ts",
+     "src/lib/export.ts",
+     "src/shared/config.ts",
+     "src/store/settingsSlice.ts"
+    ],
+    "invariant": "token cannot go to non-api.github.com host; restore JSON gets same validation as local file",
+    "method": "local",
+    "result": "URL always starts https://api.github.com/repos/; validRepo accepts '..' but stays same host; restore uses parseDataFile+normalizeData like local import; ghBackup not importable.",
+    "artifact": "agents/hunt-pull8-w8/artifacts/out/check-1.txt"
+   }
+  ],
+  "result_fingerprints": [],
+  "unresolved": [],
+  "hunter_group": "h20",
+  "hardening": [
+   "validRepo reject dot segments",
+   "encode path in readFile",
+   "size cap before JSON.parse"
+  ]
+ },
+ {
+  "coverage_id": "src%2Flib%2Fstorage.ts%23localStorage%20and%20github%20token::src%2Flib%2Fgithub.ts%23github::src%2Flib::CLIENT-SIDE.md%23Browser-storage%20disclosure%20and%20stale%20authorization",
+  "canonical_refs": {
+   "surface": "src/lib/storage.ts#localStorage and github token",
+   "boundary": "src/lib/github.ts#github",
+   "subsystem": "src/lib",
+   "attack_class": "CLIENT-SIDE.md#Browser-storage disclosure and stale authorization"
+  },
+  "surface": "src/lib/storage.ts#localStorage and github token",
+  "boundary": "src/lib/github.ts#github",
+  "subsystem": "src/lib",
+  "attack_class": "Browser-storage disclosure and stale authorization",
+  "starting_paths": [
+   "src/lib/storage.ts",
+   "src/lib/github.ts",
+   "src/store/useAppStore.ts",
+   "src/sync",
+   "vite.config.js"
+  ],
+  "ordinary_attack_class_block": "ATTACK-CLASSES.md#Cryptography and secrets",
+  "selected_companion_blocks": [
+   "CLIENT-SIDE.md#Core discipline",
+   "CLIENT-SIDE.md#Browser-storage disclosure and stale authorization",
+   "CLIENT-SIDE.md#Universal moves",
+   "CLIENT-SIDE.md#Validation rules"
+  ],
+  "excluded_blocks": [
+   {
+    "block": "MEMORY-SAFETY-AND-BINARY.md#Core discipline",
+    "reason": "No native/unsafe code or binary parsers in repo (TypeScript only)."
+   },
+   {
+    "block": "AI-AND-LLM.md#Core discipline",
+    "reason": "No model, agent, or MCP server in the product; window.claude host handles are a trusted host surface."
+   },
+   {
+    "block": "PROTOCOLS-RPC-AND-MESSAGING.md#Core discipline",
+    "reason": "Transport is plain JSON over HTTP; no custom protocol, broker, or webhook."
+   },
+   {
+    "block": "DESKTOP-MOBILE-AND-LOCAL-IPC.md#Core discipline",
+    "reason": "No native shell, deep links, or local IPC; web PWA only."
+   },
+   {
+    "block": "WEB-PROTOCOL-AND-AUTH.md#Core discipline",
+    "reason": "Not the source-visible boundary for this unit; covered by another unit."
+   },
+   {
+    "block": "DATA-ISOLATION-AND-LIFECYCLE.md#Core discipline",
+    "reason": "Not the source-visible boundary for this unit; covered by another unit."
+   },
+   {
+    "block": "SUPPLY-CHAIN-AND-RELEASE.md#Core discipline",
+    "reason": "Not the source-visible boundary for this unit; covered by another unit."
+   },
+   {
+    "block": "CLOUD-AND-DEPLOYMENT.md#Core discipline",
+    "reason": "Not the source-visible boundary for this unit; covered by another unit."
+   },
+   {
+    "block": "RESOURCE-EXHAUSTION-AND-AVAILABILITY.md#Core discipline",
+    "reason": "Not the source-visible boundary for this unit; covered by another unit."
+   }
+  ],
+  "prior_status": "none",
+  "attempts": [],
+  "wave": 1,
+  "status": "covered",
+  "agent_id": "hunt-client-w1",
+  "reviewed_paths": [
+   "src/lib/export.ts",
+   "src/lib/github.ts",
+   "src/lib/storage.ts",
+   "src/shared/config.ts",
+   "src/store/settingsSlice.ts",
+   "src/store/useAppStore.ts",
+   "src/sync/account.ts",
+   "src/sync/apiDb.ts",
+   "src/sync/legacyMarker.ts",
+   "vite.config.js"
+  ],
+  "local_checks": [
+   {
+    "agent_id": "hunt-client-w1",
+    "reviewed_paths": [
+     "src/lib/storage.ts",
+     "src/lib/github.ts",
+     "src/store/useAppStore.ts",
+     "src/lib/export.ts",
+     "src/store/settingsSlice.ts",
+     "src/shared/config.ts"
+    ],
+    "invariant": "GitHub token stays out of backups/sync and cannot be redirected",
+    "method": "source",
+    "result": "Own localStorage key; sent only to api.github.com/repos/<validRepo>; stripped from exports and sync.",
+    "artifact": null
+   },
+   {
+    "agent_id": "hunt-client-w1",
+    "reviewed_paths": [
+     "src/sync/apiDb.ts",
+     "src/sync/legacyMarker.ts",
+     "src/sync/account.ts",
+     "vite.config.js"
+    ],
+    "invariant": "local data bound to owner; SW does not cache authenticated responses",
+    "method": "source",
+    "result": "OWNER_KEY gate and wipeForNewAccount; precache static assets only, /api denylisted.",
+    "artifact": null
+   }
+  ],
+  "result_fingerprints": [],
+  "unresolved": [],
+  "hunter_group": "h4",
+  "hardening": [
+   "normConfig does not apply goodUrl to cfg.ex[].url or backup.last.url",
+   "gh token key not cleared on account change",
+   "applyImport cfg[k]=v with __proto__",
+   "Pages build lacks CSP"
+  ]
+ },
+ {
+  "coverage_id": "src%2Fstore%2FsettingsSlice.ts%23readImportFile::src%2Flib%2Fexport.ts%23parseDataFile::src%2Flib::CLIENT-SIDE.md%23Prototype%20pollution%20and%20gadget%20chain",
+  "canonical_refs": {
+   "surface": "src/store/settingsSlice.ts#readImportFile",
+   "boundary": "src/lib/export.ts#parseDataFile",
+   "subsystem": "src/lib",
+   "attack_class": "CLIENT-SIDE.md#Prototype pollution and gadget chain"
+  },
+  "surface": "src/store/settingsSlice.ts#readImportFile",
+  "boundary": "src/lib/export.ts#parseDataFile",
+  "subsystem": "src/lib",
+  "attack_class": "Prototype pollution and gadget chain",
+  "starting_paths": [
+   "src/store/settingsSlice.ts",
+   "src/lib/excelImport.ts",
+   "src/lib/export.ts",
+   "src/shared/config.ts"
+  ],
+  "ordinary_attack_class_block": "ATTACK-CLASSES.md#Resource and file handling",
+  "selected_companion_blocks": [
+   "CLIENT-SIDE.md#Core discipline",
+   "CLIENT-SIDE.md#Prototype pollution and gadget chain",
+   "CLIENT-SIDE.md#Universal moves",
+   "CLIENT-SIDE.md#Validation rules"
+  ],
+  "excluded_blocks": [
+   {
+    "block": "MEMORY-SAFETY-AND-BINARY.md#Core discipline",
+    "reason": "No native/unsafe code or binary parsers in repo (TypeScript only)."
+   },
+   {
+    "block": "AI-AND-LLM.md#Core discipline",
+    "reason": "No model, agent, or MCP server in the product; window.claude host handles are a trusted host surface."
+   },
+   {
+    "block": "PROTOCOLS-RPC-AND-MESSAGING.md#Core discipline",
+    "reason": "Transport is plain JSON over HTTP; no custom protocol, broker, or webhook."
+   },
+   {
+    "block": "DESKTOP-MOBILE-AND-LOCAL-IPC.md#Core discipline",
+    "reason": "No native shell, deep links, or local IPC; web PWA only."
+   },
+   {
+    "block": "WEB-PROTOCOL-AND-AUTH.md#Core discipline",
+    "reason": "Not the source-visible boundary for this unit; covered by another unit."
+   },
+   {
+    "block": "DATA-ISOLATION-AND-LIFECYCLE.md#Core discipline",
+    "reason": "Not the source-visible boundary for this unit; covered by another unit."
+   },
+   {
+    "block": "SUPPLY-CHAIN-AND-RELEASE.md#Core discipline",
+    "reason": "Not the source-visible boundary for this unit; covered by another unit."
+   },
+   {
+    "block": "CLOUD-AND-DEPLOYMENT.md#Core discipline",
+    "reason": "Not the source-visible boundary for this unit; covered by another unit."
+   },
+   {
+    "block": "RESOURCE-EXHAUSTION-AND-AVAILABILITY.md#Core discipline",
+    "reason": "Not the source-visible boundary for this unit; covered by another unit."
+   }
+  ],
+  "prior_status": "none",
+  "attempts": [],
+  "wave": 1,
+  "status": "candidate",
+  "agent_id": "hunt-client-w1",
+  "reviewed_paths": [
+   "src/lib/excelImport.ts",
+   "src/lib/export.ts",
+   "src/shared/config.ts",
+   "src/shared/week.ts",
+   "src/store/settingsSlice.ts"
+  ],
+  "local_checks": [
+   {
+    "agent_id": "hunt-client-w1",
+    "reviewed_paths": [
+     "src/lib/excelImport.ts",
+     "src/store/settingsSlice.ts"
+    ],
+    "invariant": "attacker keys from xlsx/csv/JSON never write to Object.prototype or shared builtins",
+    "method": "local",
+    "result": "UNSAFE_KEY covers 3 names only; warm[day] with day=hasOwnProperty writes onto shared function; sandbox set hasOwnProperty.call=true; Object.prototype not polluted.",
+    "artifact": "agents/hunt-client-w1/artifacts/out/check-1.txt"
+   },
+   {
+    "agent_id": "hunt-client-w1",
+    "reviewed_paths": [
+     "src/lib/export.ts",
+     "src/shared/config.ts",
+     "src/shared/week.ts",
+     "src/store/settingsSlice.ts"
+    ],
+    "invariant": "JSON path has no recursive merge driven by file keys",
+    "method": "source",
+    "result": "JSON.parse own __proto__ safe; normConfig spread; no deep-merge gadget.",
+    "artifact": null
+   }
+  ],
+  "result_fingerprints": [
+   "excelImport.readWeeks.warm.inherited-builtin-member-write"
+  ],
+  "unresolved": [],
+  "hunter_group": "h4",
+  "hardening": [
+   "normConfig does not apply goodUrl to cfg.ex[].url or backup.last.url",
+   "gh token key not cleared on account change",
+   "applyImport cfg[k]=v with __proto__",
+   "Pages build lacks CSP"
+  ]
+ },
+ {
+  "coverage_id": "src%2Fsync%2FapiDb.ts%20and%20outbox.ts%20%28client%20sync%20engine%29::persisted%20outbox%2Fmirror%20vs%20server%20session%20identity%20and%20data%20epoch::src%2Fsync::DATA-ISOLATION-AND-LIFECYCLE.md%23Stale%20authorization%20and%20derived%20copy%20use",
+  "canonical_refs": {
+   "surface": "src/sync/apiDb.ts and outbox.ts (client sync engine)",
+   "boundary": "persisted outbox/mirror vs server session identity and data epoch",
+   "subsystem": "src/sync",
+   "attack_class": "DATA-ISOLATION-AND-LIFECYCLE.md#Stale authorization and derived copy use"
+  },
+  "surface": "src/sync/apiDb.ts and outbox.ts (client sync engine)",
+  "boundary": "persisted outbox/mirror vs server session identity and data epoch",
+  "subsystem": "src/sync",
+  "attack_class": "Stale authorization and derived copy use",
+  "starting_paths": [
+   "src/sync/apiDb.ts",
+   "src/sync/outbox.ts",
+   "src/sync/pull.ts",
+   "src/sync/plan.ts",
+   "src/sync/merge.ts",
+   "src/sync/documents.ts",
+   "src/sync/legacy.ts",
+   "src/sync/mirrorStore.ts",
+   "src/sync/transport.ts"
+  ],
+  "ordinary_attack_class_block": "ATTACK-CLASSES.md#Business logic",
+  "selected_companion_blocks": [
+   "DATA-ISOLATION-AND-LIFECYCLE.md#Core discipline",
+   "DATA-ISOLATION-AND-LIFECYCLE.md#Stale authorization and derived copy use",
+   "DATA-ISOLATION-AND-LIFECYCLE.md#Universal moves",
+   "DATA-ISOLATION-AND-LIFECYCLE.md#Validation rules"
+  ],
+  "excluded_blocks": [
+   {
+    "block": "MEMORY-SAFETY-AND-BINARY.md#Core discipline",
+    "reason": "No native/unsafe code (TypeScript only)."
+   },
+   {
+    "block": "AI-AND-LLM.md#Core discipline",
+    "reason": "No model/agent/MCP surface in the product."
+   },
+   {
+    "block": "PROTOCOLS-RPC-AND-MESSAGING.md#Core discipline",
+    "reason": "Plain JSON over HTTP; no custom protocol or broker."
+   },
+   {
+    "block": "DESKTOP-MOBILE-AND-LOCAL-IPC.md#Core discipline",
+    "reason": "Web PWA only; no native shell or IPC."
+   },
+   {
+    "block": "WEB-PROTOCOL-AND-AUTH.md#Core discipline",
+    "reason": "Not the source-visible boundary for this unit; covered by another unit."
+   },
+   {
+    "block": "CLIENT-SIDE.md#Core discipline",
+    "reason": "Not the source-visible boundary for this unit; covered by another unit."
+   },
+   {
+    "block": "SUPPLY-CHAIN-AND-RELEASE.md#Core discipline",
+    "reason": "Not the source-visible boundary for this unit; covered by another unit."
+   },
+   {
+    "block": "CLOUD-AND-DEPLOYMENT.md#Core discipline",
+    "reason": "Not the source-visible boundary for this unit; covered by another unit."
+   },
+   {
+    "block": "RESOURCE-EXHAUSTION-AND-AVAILABILITY.md#Core discipline",
+    "reason": "Not the source-visible boundary for this unit; covered by another unit."
+   }
+  ],
+  "prior_status": "none",
+  "attempts": [],
+  "wave": 3,
+  "status": "candidate",
+  "agent_id": "hunt-client3-w3",
+  "reviewed_paths": [
+   "src/store/useAppStore.ts",
+   "src/sync/apiDb.ts",
+   "src/sync/browser.ts",
+   "src/sync/mirrorStore.ts",
+   "src/sync/outbox.ts",
+   "src/sync/pull.ts",
+   "src/sync/transport.ts"
+  ],
+  "local_checks": [
+   {
+    "agent_id": "hunt-client3-w3",
+    "reviewed_paths": [
+     "src/sync/apiDb.ts",
+     "src/sync/browser.ts",
+     "src/sync/transport.ts",
+     "src/sync/pull.ts",
+     "src/sync/mirrorStore.ts",
+     "src/sync/outbox.ts",
+     "src/store/useAppStore.ts"
+    ],
+    "invariant": "nothing pulled/sent unless session identity equals device owner",
+    "method": "local",
+    "result": "gate() latches verified=true; fake-server harness: ann tab sent ann-private entry to bob's server and pulled bob's week row; state idle, never paused account.",
+    "artifact": "agents/hunt-client3-w3/artifacts/out/check-1.txt"
+   },
+   {
+    "agent_id": "hunt-client3-w3",
+    "reviewed_paths": [
+     "src/sync/apiDb.ts",
+     "src/sync/mirrorStore.ts",
+     "src/sync/pull.ts"
+    ],
+    "invariant": "data epoch change invalidates mirror before use",
+    "method": "source",
+    "result": "pull compares epoch each page and resets store; no violation.",
+    "artifact": null
+   },
+   {
+    "agent_id": "hunt-client3-w3",
+    "reviewed_paths": [
+     "src/sync/outbox.ts",
+     "src/sync/apiDb.ts"
+    ],
+    "invariant": "quarantined/pending docs bound to writing account",
+    "method": "source",
+    "result": "Binding is OWNER_KEY check in gate() plus wipe; only gap is the verified latch.",
+    "artifact": null
+   }
+  ],
+  "result_fingerprints": [
+   "sync.apiDb.gate-verified-latch-cross-account-mixing"
+  ],
+  "unresolved": [],
+  "hunter_group": "h9",
+  "hardening": [
+   "export gh token in data file",
+   "outbox/mirror carry no owner id"
+  ]
+ },
+ {
+  "coverage_id": "src%2Fsync%2Fmerge.ts%20and%20plan.ts%20and%20documents.ts%20and%20canon.ts%20and%20legacy.ts::local%20mirror%2Foutbox%20to%20server%20documents%3A%20conflict%20merge%2C%20legacy-data%20import%2C%20account%20switch::src%2Fsync::DATA-ISOLATION-AND-LIFECYCLE.md%23Stale%20authorization%20and%20derived%20copy%20use",
+  "canonical_refs": {
+   "surface": "src/sync/merge.ts and plan.ts and documents.ts and canon.ts and legacy.ts",
+   "boundary": "local mirror/outbox to server documents: conflict merge, legacy-data import, account switch",
+   "subsystem": "src/sync",
+   "attack_class": "DATA-ISOLATION-AND-LIFECYCLE.md#Stale authorization and derived copy use"
+  },
+  "surface": "src/sync/merge.ts and plan.ts and documents.ts and canon.ts and legacy.ts",
+  "boundary": "local mirror/outbox to server documents: conflict merge, legacy-data import, account switch",
+  "subsystem": "src/sync",
+  "attack_class": "Stale authorization and derived copy use",
+  "starting_paths": [
+   "src/sync/merge.ts",
+   "src/sync/plan.ts",
+   "src/sync/documents.ts",
+   "src/sync/canon.ts",
+   "src/sync/legacy.ts",
+   "src/sync/types.ts",
+   "src/sync/labels.ts",
+   "src/sync/flag.ts",
+   "src/sync/backoff.ts",
+   "src/sync/reportErrors.ts"
+  ],
+  "ordinary_attack_class_block": "ATTACK-CLASSES.md#Business logic",
+  "selected_companion_blocks": [
+   "DATA-ISOLATION-AND-LIFECYCLE.md#Core discipline",
+   "DATA-ISOLATION-AND-LIFECYCLE.md#Stale authorization and derived copy use",
+   "DATA-ISOLATION-AND-LIFECYCLE.md#Universal moves",
+   "DATA-ISOLATION-AND-LIFECYCLE.md#Validation rules"
+  ],
+  "excluded_blocks": [
+   {
+    "block": "MEMORY-SAFETY-AND-BINARY.md#Core discipline",
+    "reason": "No native code."
+   },
+   {
+    "block": "AI-AND-LLM.md#Core discipline",
+    "reason": "No model surface."
+   },
+   {
+    "block": "PROTOCOLS-RPC-AND-MESSAGING.md#Core discipline",
+    "reason": "No custom protocol."
+   },
+   {
+    "block": "DESKTOP-MOBILE-AND-LOCAL-IPC.md#Core discipline",
+    "reason": "Web PWA only."
+   },
+   {
+    "block": "WEB-PROTOCOL-AND-AUTH.md#Core discipline",
+    "reason": "Not the boundary for this unit."
+   },
+   {
+    "block": "CLIENT-SIDE.md#Core discipline",
+    "reason": "Not the boundary for this unit."
+   },
+   {
+    "block": "SUPPLY-CHAIN-AND-RELEASE.md#Core discipline",
+    "reason": "Not the boundary for this unit."
+   },
+   {
+    "block": "CLOUD-AND-DEPLOYMENT.md#Core discipline",
+    "reason": "Not the boundary for this unit."
+   },
+   {
+    "block": "RESOURCE-EXHAUSTION-AND-AVAILABILITY.md#Core discipline",
+    "reason": "Not the boundary for this unit."
+   }
+  ],
+  "prior_status": "none",
+  "attempts": [],
+  "wave": 7,
+  "status": "covered",
+  "agent_id": "hunt-sync3-w7",
+  "reviewed_paths": [
+   "src/sync/backoff.ts",
+   "src/sync/canon.ts",
+   "src/sync/documents.ts",
+   "src/sync/flag.ts",
+   "src/sync/legacy.ts",
+   "src/sync/merge.ts",
+   "src/sync/plan.ts",
+   "src/sync/reportErrors.ts"
+  ],
+  "local_checks": [
+   {
+    "agent_id": "hunt-sync3-w7",
+    "reviewed_paths": [
+     "src/sync/merge.ts",
+     "src/sync/plan.ts",
+     "src/sync/documents.ts",
+     "src/sync/canon.ts"
+    ],
+    "invariant": "planner/merge carry no identity and cannot resurrect deleted data",
+    "method": "source",
+    "result": "Pure functions over (document, mirror); identity bound by server session and RLS; tombstone revive requires version.",
+    "artifact": null
+   },
+   {
+    "agent_id": "hunt-sync3-w7",
+    "reviewed_paths": [
+     "src/sync/legacy.ts",
+     "src/sync/documents.ts"
+    ],
+    "invariant": "legacy import cannot reach another account's rows",
+    "method": "source",
+    "result": "Same desiredRows normalizers; ids deduped and capped; target account is signed-in session; no tenant selector in payload.",
+    "artifact": null
+   },
+   {
+    "agent_id": "hunt-sync3-w7",
+    "reviewed_paths": [
+     "src/sync/flag.ts",
+     "src/sync/backoff.ts",
+     "src/sync/reportErrors.ts"
+    ],
+    "invariant": "flag/backoff/error helpers do not fail open or leak data",
+    "method": "source",
+    "result": "Release flag only; pure delay; reportErrors sends message/stack/pathname/version, capped at 5.",
+    "artifact": null
+   }
+  ],
+  "result_fingerprints": [],
+  "unresolved": [],
+  "hunter_group": "h16",
+  "hardening": [
+   "none"
+  ]
+ },
+ {
+  "coverage_id": "src%2Fsync%2Frows.ts%23fromServerRow%20and%20applyRows::server%20row%20to%20mirror%20to%20store%20to%20DOM::src%2Fsync::CLIENT-SIDE.md%23DOM-based%20XSS",
+  "canonical_refs": {
+   "surface": "src/sync/rows.ts#fromServerRow and applyRows",
+   "boundary": "server row to mirror to store to DOM",
+   "subsystem": "src/sync",
+   "attack_class": "CLIENT-SIDE.md#DOM-based XSS"
+  },
+  "surface": "src/sync/rows.ts#fromServerRow and applyRows",
+  "boundary": "server row to mirror to store to DOM",
+  "subsystem": "src/sync",
+  "attack_class": "DOM-based XSS",
+  "starting_paths": [
+   "src/sync/rows.ts",
+   "src/sync/mirrorStore.ts",
+   "src/sync/apiDb.ts",
+   "src/sync/documents.ts",
+   "src/sync/merge.ts",
+   "src/sync/pull.ts",
+   "src/sync/plan.ts",
+   "src/sync/legacy.ts",
+   "src/sync/outbox.ts",
+   "src/sync/transport.ts",
+   "src/shared/stretchWeek.ts",
+   "src/shared/listItems.ts"
+  ],
+  "ordinary_attack_class_block": "ATTACK-CLASSES.md#Injection",
+  "selected_companion_blocks": [
+   "CLIENT-SIDE.md#Core discipline",
+   "CLIENT-SIDE.md#DOM-based XSS",
+   "CLIENT-SIDE.md#Universal moves",
+   "CLIENT-SIDE.md#Validation rules"
+  ],
+  "excluded_blocks": [
+   {
+    "block": "MEMORY-SAFETY-AND-BINARY.md#Core discipline",
+    "reason": "No native/unsafe code (TypeScript only)."
+   },
+   {
+    "block": "AI-AND-LLM.md#Core discipline",
+    "reason": "No model/agent/MCP surface in the product."
+   },
+   {
+    "block": "PROTOCOLS-RPC-AND-MESSAGING.md#Core discipline",
+    "reason": "Plain JSON over HTTP; no custom protocol or broker."
+   },
+   {
+    "block": "DESKTOP-MOBILE-AND-LOCAL-IPC.md#Core discipline",
+    "reason": "Web PWA only; no native shell or IPC."
+   },
+   {
+    "block": "WEB-PROTOCOL-AND-AUTH.md#Core discipline",
+    "reason": "Not the source-visible boundary for this unit; covered by another unit."
+   },
+   {
+    "block": "DATA-ISOLATION-AND-LIFECYCLE.md#Core discipline",
+    "reason": "Not the source-visible boundary for this unit; covered by another unit."
+   },
+   {
+    "block": "SUPPLY-CHAIN-AND-RELEASE.md#Core discipline",
+    "reason": "Not the source-visible boundary for this unit; covered by another unit."
+   },
+   {
+    "block": "CLOUD-AND-DEPLOYMENT.md#Core discipline",
+    "reason": "Not the source-visible boundary for this unit; covered by another unit."
+   },
+   {
+    "block": "RESOURCE-EXHAUSTION-AND-AVAILABILITY.md#Core discipline",
+    "reason": "Not the source-visible boundary for this unit; covered by another unit."
+   }
+  ],
+  "prior_status": "none",
+  "attempts": [],
+  "wave": 2,
+  "status": "covered",
+  "agent_id": "hunt-client2-w2",
+  "reviewed_paths": [
+   "src/components/program/ExerciseLibrary.tsx",
+   "src/components/program/StretchLibrary.tsx",
+   "src/components/stretches/Stretches.tsx",
+   "src/lib/data.ts",
+   "src/shared/config.ts",
+   "src/shared/listItems.ts",
+   "src/shared/stretchWeek.ts",
+   "src/shared/validate.ts",
+   "src/sync/mirrorStore.ts",
+   "src/sync/rows.ts"
+  ],
+  "local_checks": [
+   {
+    "agent_id": "hunt-client2-w2",
+    "reviewed_paths": [
+     "src/sync/rows.ts",
+     "src/sync/mirrorStore.ts"
+    ],
+    "invariant": "server rows applied to mirror/store reach no HTML or executable-URL sink with data another principal controls",
+    "method": "source",
+    "result": "Only the signed-in user's own rows (RLS+user_id); no innerHTML/eval/dangerouslySetInnerHTML sinks; React escapes text; self-injection only.",
+    "artifact": null
+   },
+   {
+    "agent_id": "hunt-client2-w2",
+    "reviewed_paths": [
+     "src/shared/stretchWeek.ts",
+     "src/shared/listItems.ts",
+     "src/shared/config.ts",
+     "src/shared/validate.ts",
+     "src/lib/data.ts",
+     "src/components/program/ExerciseLibrary.tsx",
+     "src/components/program/StretchLibrary.tsx",
+     "src/components/stretches/Stretches.tsx"
+    ],
+    "invariant": "every URL reaching an anchor after the mirror is http(s)-restricted",
+    "method": "source",
+    "result": "Stretch/list cleaners enforce goodUrl; fromServerRow fallbacks pass already-cleaned server JSON; cfg.ex[].url gap is self-only (covered by Card.tsx unit).",
+    "artifact": null
+   }
+  ],
+  "result_fingerprints": [],
+  "unresolved": [],
+  "hunter_group": "h6",
+  "hardening": [
+   "Add protocol check on out.url before location.assign",
+   "Apply goodUrl to cfg.ex[].url",
+   "Drop rows when cleaner returns null in rows.ts"
+  ]
+ },
+ {
+  "coverage_id": "src%2Fsync%2FuseGoogleSignIn.ts%23window.location.assign%28out.url%29::src%2Fsync%2Faccount.ts%23startGoogleSignIn%20response%20parsing::src%2Fsync::CLIENT-SIDE.md%23Client-side%20navigation%20confusion",
+  "canonical_refs": {
+   "surface": "src/sync/useGoogleSignIn.ts#window.location.assign(out.url)",
+   "boundary": "src/sync/account.ts#startGoogleSignIn response parsing",
+   "subsystem": "src/sync",
+   "attack_class": "CLIENT-SIDE.md#Client-side navigation confusion"
+  },
+  "surface": "src/sync/useGoogleSignIn.ts#window.location.assign(out.url)",
+  "boundary": "src/sync/account.ts#startGoogleSignIn response parsing",
+  "subsystem": "src/sync",
+  "attack_class": "Client-side navigation confusion",
+  "starting_paths": [
+   "src/sync/useGoogleSignIn.ts",
+   "src/sync/account.ts",
+   "src/sync/devUser.ts",
+   "server/auth/betterAuth.ts"
+  ],
+  "ordinary_attack_class_block": "ATTACK-CLASSES.md#Injection",
+  "selected_companion_blocks": [
+   "CLIENT-SIDE.md#Core discipline",
+   "CLIENT-SIDE.md#Client-side navigation confusion",
+   "CLIENT-SIDE.md#Universal moves",
+   "CLIENT-SIDE.md#Validation rules"
+  ],
+  "excluded_blocks": [
+   {
+    "block": "MEMORY-SAFETY-AND-BINARY.md#Core discipline",
+    "reason": "No native/unsafe code (TypeScript only)."
+   },
+   {
+    "block": "AI-AND-LLM.md#Core discipline",
+    "reason": "No model/agent/MCP surface in the product."
+   },
+   {
+    "block": "PROTOCOLS-RPC-AND-MESSAGING.md#Core discipline",
+    "reason": "Plain JSON over HTTP; no custom protocol or broker."
+   },
+   {
+    "block": "DESKTOP-MOBILE-AND-LOCAL-IPC.md#Core discipline",
+    "reason": "Web PWA only; no native shell or IPC."
+   },
+   {
+    "block": "WEB-PROTOCOL-AND-AUTH.md#Core discipline",
+    "reason": "Not the source-visible boundary for this unit; covered by another unit."
+   },
+   {
+    "block": "DATA-ISOLATION-AND-LIFECYCLE.md#Core discipline",
+    "reason": "Not the source-visible boundary for this unit; covered by another unit."
+   },
+   {
+    "block": "SUPPLY-CHAIN-AND-RELEASE.md#Core discipline",
+    "reason": "Not the source-visible boundary for this unit; covered by another unit."
+   },
+   {
+    "block": "CLOUD-AND-DEPLOYMENT.md#Core discipline",
+    "reason": "Not the source-visible boundary for this unit; covered by another unit."
+   },
+   {
+    "block": "RESOURCE-EXHAUSTION-AND-AVAILABILITY.md#Core discipline",
+    "reason": "Not the source-visible boundary for this unit; covered by another unit."
+   }
+  ],
+  "prior_status": "none",
+  "attempts": [],
+  "wave": 2,
+  "status": "covered",
+  "agent_id": "hunt-client2-w2",
+  "reviewed_paths": [
+   "src/main.jsx",
+   "src/sync/account.ts",
+   "src/sync/devUser.ts",
+   "src/sync/useGoogleSignIn.ts"
+  ],
+  "local_checks": [
+   {
+    "agent_id": "hunt-client2-w2",
+    "reviewed_paths": [
+     "src/sync/useGoogleSignIn.ts",
+     "src/sync/account.ts"
+    ],
+    "invariant": "navigation target only influenced by same-origin API",
+    "method": "source",
+    "result": "out.url from same-origin POST /api/auth/sign-in/social with fixed body; no scheme check (defense in depth); hostile value needs compromised API.",
+    "artifact": null
+   },
+   {
+    "agent_id": "hunt-client2-w2",
+    "reviewed_paths": [
+     "src/sync/devUser.ts",
+     "src/main.jsx"
+    ],
+    "invariant": "dev-only URL params cannot sign in or redirect a production browser",
+    "method": "source",
+    "result": "applyDevUserFromUrl returns unless import.meta.env.DEV.",
+    "artifact": null
+   }
+  ],
+  "result_fingerprints": [],
+  "unresolved": [],
+  "hunter_group": "h6",
+  "hardening": [
+   "Add protocol check on out.url before location.assign",
+   "Apply goodUrl to cfg.ex[].url",
+   "Drop rows when cleaner returns null in rows.ts"
+  ]
+ },
+ {
+  "coverage_id": "vite.config.js%23VitePWA%20workbox%20and%20service%20worker%20update::service-worker%20cache%20vs%20signed-in%20identity%20and%20%2Fapi::pwa::CLIENT-SIDE.md%23Service-worker%20cache%20and%20identity%20confusion",
+  "canonical_refs": {
+   "surface": "vite.config.js#VitePWA workbox and service worker update",
+   "boundary": "service-worker cache vs signed-in identity and /api",
+   "subsystem": "pwa",
+   "attack_class": "CLIENT-SIDE.md#Service-worker cache and identity confusion"
+  },
+  "surface": "vite.config.js#VitePWA workbox and service worker update",
+  "boundary": "service-worker cache vs signed-in identity and /api",
+  "subsystem": "pwa",
+  "attack_class": "Service-worker cache and identity confusion",
+  "starting_paths": [
+   "vite.config.js",
+   "src/main.jsx",
+   "src/App.jsx",
+   "public/privacy.html",
+   "public/terms.html",
+   "server/securityHeaders.ts",
+   "server/app.ts"
+  ],
+  "ordinary_attack_class_block": "ATTACK-CLASSES.md#Feature abuse and data leakage",
+  "selected_companion_blocks": [
+   "CLIENT-SIDE.md#Core discipline",
+   "CLIENT-SIDE.md#Service-worker cache and identity confusion",
+   "CLIENT-SIDE.md#Universal moves",
+   "CLIENT-SIDE.md#Validation rules"
+  ],
+  "excluded_blocks": [
+   {
+    "block": "MEMORY-SAFETY-AND-BINARY.md#Core discipline",
+    "reason": "No native/unsafe code (TypeScript only)."
+   },
+   {
+    "block": "AI-AND-LLM.md#Core discipline",
+    "reason": "No model/agent/MCP surface in the product."
+   },
+   {
+    "block": "PROTOCOLS-RPC-AND-MESSAGING.md#Core discipline",
+    "reason": "Plain JSON over HTTP; no custom protocol or broker."
+   },
+   {
+    "block": "DESKTOP-MOBILE-AND-LOCAL-IPC.md#Core discipline",
+    "reason": "Web PWA only; no native shell or IPC."
+   },
+   {
+    "block": "WEB-PROTOCOL-AND-AUTH.md#Core discipline",
+    "reason": "Not the source-visible boundary for this unit; covered by another unit."
+   },
+   {
+    "block": "DATA-ISOLATION-AND-LIFECYCLE.md#Core discipline",
+    "reason": "Not the source-visible boundary for this unit; covered by another unit."
+   },
+   {
+    "block": "SUPPLY-CHAIN-AND-RELEASE.md#Core discipline",
+    "reason": "Not the source-visible boundary for this unit; covered by another unit."
+   },
+   {
+    "block": "CLOUD-AND-DEPLOYMENT.md#Core discipline",
+    "reason": "Not the source-visible boundary for this unit; covered by another unit."
+   },
+   {
+    "block": "RESOURCE-EXHAUSTION-AND-AVAILABILITY.md#Core discipline",
+    "reason": "Not the source-visible boundary for this unit; covered by another unit."
+   }
+  ],
+  "prior_status": "none",
+  "attempts": [],
+  "wave": 2,
+  "status": "covered",
+  "agent_id": "hunt-client2-w2",
+  "reviewed_paths": [
+   "server/app.ts",
+   "vite.config.js"
+  ],
+  "local_checks": [
+   {
+    "agent_id": "hunt-client2-w2",
+    "reviewed_paths": [
+     "vite.config.js"
+    ],
+    "invariant": "SW never caches personalized /api responses across account switch",
+    "method": "source",
+    "result": "Only static precache, no runtimeCaching, /api denylisted.",
+    "artifact": null
+   },
+   {
+    "agent_id": "hunt-client2-w2",
+    "reviewed_paths": [
+     "server/app.ts"
+    ],
+    "invariant": "server cache headers keep SW and shell fresh, keep API out of shared caches",
+    "method": "source",
+    "result": "no-cache for index.html/sw.js/manifest; immutable only for hashed assets; unmatched /api returns JSON 404.",
+    "artifact": null
+   }
+  ],
+  "result_fingerprints": [],
+  "unresolved": [],
+  "hunter_group": "h6",
+  "hardening": [
+   "Add protocol check on out.url before location.assign",
+   "Apply goodUrl to cfg.ex[].url",
+   "Drop rows when cleaner returns null in rows.ts"
+  ]
+ }
+]

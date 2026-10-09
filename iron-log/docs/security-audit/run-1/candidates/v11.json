@@ -1,0 +1,18 @@
+{
+ "verifier_id": "v11",
+ "fingerprint": "per-user-unbounded-storage-row-history-refused-writes-no-retention",
+ "hunter_proposed_verdict": "needs_validation",
+ "hunter": "hunt-quota-w3",
+ "claim": "Per-user limit counts requests only (600/min commands). No byte/row cap or retention: record_row_history copies whole old row on every UPDATE; ~100kb config/program/library docs accepted per save (local: validateSaveConfig kept 100816 of 100868 bytes); refuse() stores up to 100kb payload per refusal in refused_writes; log_entries/library_items/list_items unlimited distinct client_ids; app role has no DELETE grant. One free Google account could add ~60MB/min of history to shared Neon.",
+ "trace_refs": [
+  "server/app.ts:123",
+  "server/commands/documents.ts:141",
+  "src/shared/config.ts:43",
+  "server/commands/support.ts:42",
+  "db/migrations/20261007000001_core_tables.sql:70",
+  "db/migrations/20261007000006_library_items.sql:13",
+  "db/migrations/20261008000003_erase_and_delete_account.sql:28"
+ ],
+ "hunter_artifact": "agents/hunt-quota-w3/artifacts/out/check-1.txt",
+ "notes": "Blockers: Neon plan storage ceiling; Postgres needed to measure growth."
+}

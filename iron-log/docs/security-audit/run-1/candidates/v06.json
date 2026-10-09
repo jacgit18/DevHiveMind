@@ -1,0 +1,16 @@
+{
+ "verifier_id": "v06",
+ "fingerprint": "ratelimit-map-unbounded-fresh-keys-full-scan",
+ "hunter_proposed_verdict": "needs_validation",
+ "hunter": "hunt-avail-cloud-w1",
+ "claim": "server/rateLimit.ts sweeps expired entries only when map size > 10_000, never evicts live keys, so unlimited fresh keys (req.ip full IPv6 address) grow the map and every request scans it once past 10k: measured 0.5us@5k, 238us@20k, 1.25ms@60k, 1.8ms@120k keys. Also gives fresh buckets per IPv6 address bypassing 10/min sign-in limit.",
+ "trace_refs": [
+  "server/app.ts:119",
+  "server/rateLimit.ts:18",
+  "server/rateLimit.ts:24",
+  "server/rateLimit.ts:26",
+  "server/index.ts:43"
+ ],
+ "hunter_artifact": "agents/hunt-avail-cloud-w1/artifacts/out/check-3.txt",
+ "notes": "Blockers: Cloud Run IPv6 reachability and XFF value; attacker needs >10k distinct source addresses in a window."
+}

@@ -1,0 +1,16 @@
+{
+ "verifier_id": "v02",
+ "fingerprint": "ci-deployer-builds-editor-default-build-sa-escalation",
+ "hunter_proposed_verdict": "needs_validation",
+ "hunter": "hunt-avail-cloud-w1",
+ "claim": "scripts/ci-deploy-setup.sh grants the GitHub-OIDC deployer SA roles/cloudbuild.builds.editor at project scope; the restricted iron-log-build SA is used only because scripts/deploy-cloud-run.sh passes --service-account voluntarily; a build submitted without it may run as the broad default build SA. Header comment L9-12 claims deployer cannot read DB/secrets/backups.",
+ "trace_refs": [
+  "scripts/ci-deploy-setup.sh:49",
+  "scripts/deploy-cloud-run.sh:79",
+  "scripts/ci-deploy-setup.sh:11",
+  "cloudbuild.yaml:15",
+  ".github/workflows/deploy-cloud-run.yml:50"
+ ],
+ "hunter_artifact": null,
+ "notes": "Blockers: default Cloud Build SA and its roles, org policy, whether deploy job reachable by lower-trust party (all deployment facts)."
+}

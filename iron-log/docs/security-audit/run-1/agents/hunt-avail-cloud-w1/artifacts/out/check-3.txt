@@ -1,0 +1,35 @@
+# check-3: rateLimit() from server/rateLimit.ts, cost per request as live distinct keys grow inside one window (sweep at size>10000 scans whole map when nothing has expired)
+# cmd: sbx.sh hunt-avail-cloud-w1 /usr/bin/node /work/h4.mjs
+{"liveKeys":5200,"microsecondsPerRequest":0.5,"maxRequestsPerSecondOneCore":1837864}
+{"liveKeys":20200,"microsecondsPerRequest":238,"maxRequestsPerSecondOneCore":4202}
+{"liveKeys":60200,"microsecondsPerRequest":1248.3,"maxRequestsPerSecondOneCore":801}
+{"liveKeys":120200,"microsecondsPerRequest":1803.5,"maxRequestsPerSecondOneCore":554}
+
+# --- harness source ---
+// server/rateLimit.ts rateLimit() logic copied verbatim (types stripped). Cost of one call as live distinct keys grow.
+function rateLimit({ max, windowMs }, now, key) {
+  const windows = new Map();
+  const h = (req, res, next) => {
+    const t = now();
+    if (windows.size > 10_000) for (const [k, w] of windows) if (t - w.start >= windowMs) windows.delete(k);
+    const who = key(req, res);
+    let w = windows.get(who);
+    if (!w || t - w.start >= windowMs) { w = { start: t, count: 0 }; windows.set(who, w); }
+    if (++w.count > max) { res.setHeader('Retry-After', '1'); res.status(429).json({}); return; }
+    next();
+  };
+  h.size = () => windows.size;
+  return h;
+}
+let clock = 1_000_000;
+const lim = rateLimit({ max: 1200, windowMs: 60_000 }, () => clock, req => req.ip);
+const res = { setHeader() {}, status() { return this; }, json() {} };
+let seq = 0;
+function feed(n) { for (let i = 0; i < n; i++) { seq++; lim({ ip: `2001:db8::${seq.toString(16)}` }, res, () => {}); } }
+for (const live of [5_000, 20_000, 60_000, 120_000]) {
+  // all keys within one window (clock fixed), so nothing is expired and every sweep scans the whole map
+  feed(live - lim.size());
+  const probes = 200; const t0 = process.hrtime.bigint(); feed(probes);
+  const us = Number(process.hrtime.bigint() - t0) / 1e3 / probes;
+  console.log(JSON.stringify({ liveKeys: lim.size(), microsecondsPerRequest: +us.toFixed(1), maxRequestsPerSecondOneCore: Math.round(1e6 / us) }));
+}

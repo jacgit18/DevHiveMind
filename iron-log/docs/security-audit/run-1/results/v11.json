@@ -1,0 +1,97 @@
+{
+ "decision": "needs_validation",
+ "record": {
+  "verdict": "needs_validation",
+  "fingerprint": "per-user-unbounded-storage-row-history-refused-writes-no-retention",
+  "title": "Signed-in user can grow shared Postgres storage without a byte, row or retention cap",
+  "description": "The per-user limit counts requests (600 commands/min). It does not count bytes or rows. Three paths let one signed-in Google account add unbounded data. First, every UPDATE on a synced table fires record_row_history, which copies the entire old row into row_history, and nothing prunes that table. Second, each refused write stores up to about 100 KB of payload in refused_writes. A malformed envelope can trigger this with only a session, and the payload is stored unscrubbed in that case. Third, log_entries, library_items and list_items accept unlimited distinct client_ids. At the 600/min limit and up to 100 KB per request, a single account could add on the order of tens of MB per minute. The documented ceiling on the shared Neon database is not observable from source. The hunter's local check confirmed that a 100,868-byte body is kept as a 100,816-byte document. The code shows no per-user storage cap or retention job. The user-facing erase_my_data function does remove a user's own history and refused rows, but an attacker would not call it.",
+  "claimed_root_cause": "Abuse control is request-rate only. The schema and commands have no per-user quota on rows or bytes, and no retention job for row_history or refused_writes. The history trigger copies the full row on every update, and the refusal path persists attacker-sized payloads.",
+  "trace": [
+   {
+    "kind": "entrypoint",
+    "file": "server/app.ts",
+    "line": 123,
+    "scope": "app.use('/api/commands', rateLimit(limits.commands, undefined, byUser))",
+    "description": "Any signed-in user may send 600 command requests per minute. The limit is on request count only and nothing limits bytes or stored rows."
+   },
+   {
+    "kind": "propagation",
+    "file": "server/commands/documents.ts",
+    "line": 141,
+    "scope": "save()",
+    "description": "An invalid envelope or input calls refuse() and stores the request body in refused_writes. Each successful save of an existing row runs an UPDATE, which fires the history trigger."
+   },
+   {
+    "kind": "propagation",
+    "file": "src/shared/config.ts",
+    "line": 43,
+    "scope": "normConfigDoc",
+    "description": "Config documents of about 100 KB are accepted. The hunter's local check kept 100,816 of 100,868 bytes. Nothing in the code caps the total document size beyond the 100 KB JSON body limit."
+   },
+   {
+    "kind": "sink",
+    "file": "server/commands/support.ts",
+    "line": 42,
+    "scope": "refuse()",
+    "description": "Inserts the JSON payload into refused_writes with no per-user cap, row cap or retention."
+   },
+   {
+    "kind": "sink",
+    "file": "db/migrations/20261007000001_core_tables.sql",
+    "line": 70,
+    "scope": "record_row_history() trigger function",
+    "description": "Inserts to_jsonb(old), the full old row, into row_history on every UPDATE. No pruning exists."
+   },
+   {
+    "kind": "propagation",
+    "file": "db/migrations/20261007000006_library_items.sql",
+    "line": 13,
+    "scope": "library_items table",
+    "description": "Unique key is (user_id, client_id) with client_id up to 100 characters. A user can create unlimited distinct keys. The row-history trigger is attached to this table too."
+   },
+   {
+    "kind": "propagation",
+    "file": "db/migrations/20261008000003_erase_and_delete_account.sql",
+    "line": 28,
+    "scope": "erase_my_data()",
+    "description": "The only deletion path is the user's own erase function, which uses SECURITY DEFINER. Nothing prunes data automatically."
+   }
+  ],
+  "evidence": [
+   {
+    "file": "server/app.ts",
+    "line": 51,
+    "description": "Per-user limits are request counts only: commands 600 per 60,000 ms, sync 120 per minute, importLegacy 10 per hour."
+   },
+   {
+    "file": "server/app.ts",
+    "line": 90,
+    "description": "JSON body limit is 100 KB, and import-legacy allows 4 MB. This sets the per-request size, and there is no cumulative limit."
+   },
+   {
+    "file": "server/commands/support.ts",
+    "line": 31,
+    "description": "scrubbed() only removes the entry.n note field. The bad-envelope branch passes { input: body } and the other branches pass the full envelope, so large payloads are persisted."
+   },
+   {
+    "file": "db/migrations/20261007000001_core_tables.sql",
+    "line": 70,
+    "description": "The trigger copies the whole old row into row_history. The only index on replaced_at exists for pruning, and no pruning job or code is present."
+   },
+   {
+    "file": "db/migrations/20261008000003_erase_and_delete_account.sql",
+    "line": 28,
+    "description": "erase_my_data deletes the user's own row_history and refused_writes. It is not a retention mechanism."
+   }
+  ],
+  "blockers": [
+   "The Neon plan's storage ceiling and quota behavior are not observable from source or the sandbox, and this decides whether growth becomes an outage, a cost spike or a throttle.",
+   "Measuring row_history and refused_writes growth needs a live Postgres, and the offline sandbox has none.",
+   "Sign-in is open to any Google account, as the architecture indicates. The production registration policy cannot be verified from source."
+  ],
+  "validation_plan": {
+   "local": "On a scratch Postgres with the migrations applied, create one dummy user. Save a roughly 100 KB config document 100 times and send 100 invalid envelopes. Then compare pg_total_relation_size for row_history and refused_writes before and after, and extrapolate to 600 requests per minute.",
+   "deployment": "The owner should check the Neon project's storage limit and alerting. They should also check whether sign-up is restricted to an allowlist, and whether a periodic prune of row_history and refused_writes by replaced_at / received_at exists outside the repo."
+  }
+ }
+}

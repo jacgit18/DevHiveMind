@@ -1,0 +1,17 @@
+{
+ "verifier_id": "v01",
+ "fingerprint": "excelImport.readWeeks.warm.inherited-builtin-member-write",
+ "hunter_proposed_verdict": "confirmed",
+ "hunter": "hunt-client-w1",
+ "claim": "Crafted .xlsx whole-backup import: Check-offs row kind='warm', key='hasOwnProperty/call' makes readWeeks do (w.warm[day]=w.warm[day]||{})[item]=value on an inherited Object.prototype function (denylist UNSAFE_KEY only has __proto__/constructor/prototype), setting Object.prototype.hasOwnProperty.call=true page-wide until reload. Hunter-proposed severity low.",
+ "trace_refs": [
+  "src/store/settingsSlice.ts:33",
+  "src/lib/excelImport.ts:136",
+  "src/lib/excelImport.ts:167",
+  "src/lib/excelImport.ts:181",
+  "src/lib/excelImport.ts:24",
+  "src/shared/week.ts:22"
+ ],
+ "hunter_artifact": "agents/hunt-client-w1/artifacts/out/check-1.txt",
+ "notes": "Condition: victim imports attacker workbook; impact in-memory only, cleared on reload."
+}

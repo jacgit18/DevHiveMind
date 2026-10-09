@@ -1,0 +1,48 @@
+# check-1: unauthenticated body size vs server memory, better-auth mount as in server/app.ts L85 (no body cap)
+# cmd: sbx.sh hunt-avail-cloud-w1 /usr/bin/node --expose-gc /work/h2.mjs   (node v20.20.2, in-memory better-auth adapter 1.7.7, unix socket, no network, dummy secrets)
+# server and client are separate processes; rssPeakMB is the server only. Statuses 200 = body fully accepted/read.
+node v20.20.2 idle rss MB 87
+{"bodyMB":1,"concurrent":1,"statuses":"[200]","rssBeforeMB":88,"rssPeakMB":95,"peakDeltaMB":7}
+{"bodyMB":8,"concurrent":1,"statuses":"[200]","rssBeforeMB":94,"rssPeakMB":116,"peakDeltaMB":22}
+{"bodyMB":16,"concurrent":1,"statuses":"[200]","rssBeforeMB":116,"rssPeakMB":155,"peakDeltaMB":40}
+{"bodyMB":32,"concurrent":1,"statuses":"[200]","rssBeforeMB":155,"rssPeakMB":220,"peakDeltaMB":65}
+{"bodyMB":16,"concurrent":3,"statuses":"[200,200,200]","rssBeforeMB":187,"rssPeakMB":264,"peakDeltaMB":77}
+
+# --- harness source ---
+// Unauthenticated body-size -> server memory in the better-auth mount exactly as server/app.ts L85 mounts it (no body cap before it).
+// Server and client are separate processes so only the server's RSS is measured. better-auth uses its in-memory adapter (no database).
+import http from 'node:http';
+import { spawn } from 'node:child_process';
+const SOCK = '/tmp/s2.sock';
+if (process.argv[2] === 'client') {
+  const mb = Number(process.argv[3]); const n = Number(process.argv[4] || 1);
+  const head = '{"provider":"google","pad":"', tail = '"}';
+  const chunk = Buffer.alloc(1024 * 1024, 'a');
+  const total = head.length + mb * 1024 * 1024 + tail.length;
+  const one = () => new Promise(res => {
+    const rq = http.request({ socketPath: SOCK, method: 'POST', path: '/api/auth/sign-in/social', headers: { 'content-type': 'application/json', 'content-length': total } }, r => { r.resume(); r.on('end', () => res(r.statusCode)); });
+    rq.on('error', e => res('err ' + e.code));
+    rq.write(head); let i = 0;
+    const pump = () => { while (i < mb) { i++; if (!rq.write(chunk)) { rq.once('drain', pump); return; } } rq.end(tail); };
+    pump();
+  });
+  const st = await Promise.all(Array.from({ length: n }, one)); console.log(JSON.stringify(st)); process.exit(0);
+}
+const { default: express } = await import('express');
+const { betterAuth } = await import('better-auth');
+const { memoryAdapter } = await import('better-auth/adapters/memory');
+const { toNodeHandler } = await import('better-auth/node');
+const auth = betterAuth({ baseURL: 'http://127.0.0.1:3999', secret: 'dummy-dummy-dummy-dummy-dummy-dummy-12', database: memoryAdapter({}), socialProviders: { google: { clientId: 'a', clientSecret: 'b' } } });
+const app = express();
+app.all('/api/auth/*splat', toNodeHandler(auth));
+const srv = app.listen(SOCK); await new Promise(r => srv.once('listening', r));
+let peak = 0; setInterval(() => { peak = Math.max(peak, process.memoryUsage().rss); }, 3).unref();
+const run = (mb, n) => new Promise(res => {
+  global.gc?.(); const before = process.memoryUsage().rss; peak = before;
+  const c = spawn(process.execPath, [new URL(import.meta.url).pathname, 'client', String(mb), String(n)], { stdio: ['ignore', 'pipe', 'inherit'] });
+  let out = ''; c.stdout.on('data', d => out += d);
+  c.on('close', () => setTimeout(() => { console.log(JSON.stringify({ bodyMB: mb, concurrent: n, statuses: out.trim(), rssBeforeMB: Math.round(before / 1048576), rssPeakMB: Math.round(peak / 1048576), peakDeltaMB: Math.round((peak - before) / 1048576) })); res(); }, 100));
+});
+console.log('node', process.version, 'idle rss MB', Math.round(process.memoryUsage().rss / 1048576));
+await run(1, 1); await run(8, 1); await run(16, 1); await run(32, 1); await run(16, 3);
+process.exit(0);

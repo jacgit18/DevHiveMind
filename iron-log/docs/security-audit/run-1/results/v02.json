@@ -1,0 +1,80 @@
+{
+ "decision": "rejected",
+ "record": {
+  "verdict": "rejected",
+  "fingerprint": "ci-deployer-builds-editor-default-build-sa-escalation",
+  "title": "CI deployer holds Cloud Build editor at project scope, so a build could run as the default build account",
+  "description": "scripts/ci-deploy-setup.sh grants the GitHub-OIDC deployer service account roles/cloudbuild.builds.editor on the whole project. The restricted iron-log-build account is used only because scripts/deploy-cloud-run.sh passes --service-account. A build submitted without that flag could run as the project's default build account, which the script's own comment says has the Editor role. The header comment says the deployer cannot read the database, secrets or backups. The candidate treats that as a privilege-escalation gap.",
+  "claimed_root_cause": "The least-privilege separation depends on a client-side flag in the deploy script. It is not enforced by IAM, because the deployer keeps project-wide builds.editor and nothing denies it the default build account.",
+  "trace": [
+   {
+    "kind": "entrypoint",
+    "file": ".github/workflows/deploy-cloud-run.yml",
+    "line": 36,
+    "scope": "deploy job condition",
+    "description": "The job runs only for workflow_dispatch on refs/heads/main, or for a workflow_run whose Tests run succeeded on a push to main of this same repository. The workflow definition comes from the default branch, and no fork or pull-request code reaches it."
+   },
+   {
+    "kind": "propagation",
+    "file": "scripts/ci-deploy-setup.sh",
+    "line": 41,
+    "scope": "Workload identity provider attribute-condition",
+    "description": "The identity provider only accepts tokens with repository == GITHUB_REPO and ref == refs/heads/main. Only someone who can already merge to main can run code as the deployer."
+   },
+   {
+    "kind": "propagation",
+    "file": "scripts/ci-deploy-setup.sh",
+    "line": 49,
+    "scope": "deployer role loop",
+    "description": "The deployer is granted roles/run.developer and roles/cloudbuild.builds.editor at project scope."
+   },
+   {
+    "kind": "propagation",
+    "file": "scripts/ci-deploy-setup.sh",
+    "line": 53,
+    "scope": "runtime SA actAs binding",
+    "description": "The deployer may act as iron-log-run, the runtime account that has secretAccessor on the database URL and the auth and Google OAuth secrets."
+   },
+   {
+    "kind": "sink",
+    "file": "scripts/deploy-cloud-run.sh",
+    "line": 79,
+    "scope": "cmd_deploy build_as",
+    "description": "The restricted build account is chosen by a script argument. Anyone who controls the main-branch workflow or script can drop the flag or run their own gcloud commands."
+   }
+  ],
+  "evidence": [
+   {
+    "file": ".github/workflows/deploy-cloud-run.yml",
+    "line": 36,
+    "description": "Deploy is gated to successful push-to-main Tests runs of the same repository, or a manual run on main. Fork pull requests cannot trigger it."
+   },
+   {
+    "file": "scripts/ci-deploy-setup.sh",
+    "line": 41,
+    "description": "The provider condition limits the deployer identity to this repository's main branch. The only party who can exploit the claimed gap is one who can already change the workflow code on main, which is the repository owner and the deploy authority."
+   },
+   {
+    "file": "scripts/ci-deploy-setup.sh",
+    "line": 53,
+    "description": "The deployer can deploy a Cloud Run revision with arbitrary code as iron-log-run, which holds the database and auth secrets. Anyone controlling the deployer can already read those secrets by deploying a revision that prints them. The escalation through the default build account therefore adds no authority the identity does not already have, and the header comment at L9-10 is already inaccurate on this point."
+   },
+   {
+    "file": "scripts/ci-deploy-setup.sh",
+    "line": 11,
+    "description": "The script documents the default-account fallback and the Editor risk, so this is a known and accepted design property."
+   },
+   {
+    "file": ".github/workflows/deploy-cloud-run.yml",
+    "line": 89,
+    "description": "CI passes BUILD_SA explicitly, so the shipped pipeline always builds as the restricted account."
+   },
+   {
+    "file": "cloudbuild.yaml",
+    "line": 15,
+    "description": "The build config is fixed in the repository and has no attacker-controlled input."
+   }
+  ],
+  "reason": "There is no lower-trust entrypoint. The deployer identity is reachable only from workflow code on this repository's main branch, so the attacker would already control the deploy authority. The shipped pipeline always passes the restricted build account. Even if that flag were bypassed, the same identity can already deploy arbitrary code as the runtime account that holds the database and OAuth secrets, so the default-account route adds no cross-boundary impact. Whether the default build account would be usable also depends on project facts that cannot be seen in the repository (age of the project, org policy, actAs requirements). What remains is a hardening and documentation item: the setup script's comment overstates the deployer's confinement. It could say so, or the deployer could be given tighter or conditioned roles."
+ }
+}

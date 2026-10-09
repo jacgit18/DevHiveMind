@@ -1,0 +1,142 @@
+{
+ "decision": "confirmed",
+ "record": {
+  "verdict": "confirmed",
+  "fingerprint": "sync.apiDb.gate-verified-latch-cross-account-mixing",
+  "title": "Sync gate latches 'verified' and never re-checks identity, so a tab keeps syncing after the browser's session switches to another account",
+  "description": "createApiDb checks who is signed in only until it sets verified=true. After that, gate() returns ok without calling identity() again. The flag is cleared only when sync pauses for 'auth' or 'account'. The session cookie is shared by every tab of the browser, and each request carries it with no user-id binding. If another tab of the same browser signs out and signs in as a different Google user, the already-open tab gets no 401. It does not reload, and its minute poll and wake events never re-run the identity check. From then on it sends the first user's unsent and new log entries to the second user's server account. It also pulls the second user's rows into the first user's mirror under the old cursor, and the status stays idle. The code's own comment at apiDb.ts:138-139 says this mixing is what the account check is meant to prevent. Impact is bounded: it needs a shared browser profile, the sync flag on, and a user-driven account switch in another tab.",
+  "claimed_root_cause": "",
+  "root_cause": "The account-ownership check is a one-time latch (verified) rather than a per-request or per-session binding. Requests authenticate by ambient cookie only. Neither the client nor the API ties a request to the userId that was verified when the latch was set, so a cookie swap by another tab goes undetected.",
+  "intended_behavior": "A device holding one account's data must never send it to another account or merge another account's rows. Any change of the signed-in user, including one made in another tab, should pause sync with reason 'account' before the next send or pull.",
+  "trace": [
+   {
+    "kind": "entrypoint",
+    "file": "src/sync/browser.ts",
+    "line": 13,
+    "scope": "createBrowserApiDb",
+    "description": "Browser wiring. The wake and visibility events, and the 60s poll, call syncNow(). The only identity source is account.me, which reads the shared cookie session."
+   },
+   {
+    "kind": "propagation",
+    "file": "src/sync/apiDb.ts",
+    "line": 152,
+    "scope": "gate",
+    "description": "Returns {ok:true} immediately when verified is true. identity() is not called again."
+   },
+   {
+    "kind": "propagation",
+    "file": "src/sync/apiDb.ts",
+    "line": 132,
+    "scope": "setState",
+    "description": "verified is reset to false only on a pause for 'auth' or 'account'. A cookie switch to another valid user produces neither."
+   },
+   {
+    "kind": "propagation",
+    "file": "src/sync/apiDb.ts",
+    "line": 238,
+    "scope": "pull",
+    "description": "Pull proceeds after the latched gate and merges the new session's rows into the old account's mirror."
+   },
+   {
+    "kind": "propagation",
+    "file": "src/sync/transport.ts",
+    "line": 97,
+    "scope": "send",
+    "description": "Requests carry only the ambient cookie plus a dev header. There is no per-request user binding, so the server answers as whoever the cookie now names."
+   },
+   {
+    "kind": "propagation",
+    "file": "src/sync/apiDb.ts",
+    "line": 292,
+    "scope": "flushPath",
+    "description": "Calls gate() on each loop pass. The latched gate passes and the outbox document is planned for sending."
+   },
+   {
+    "kind": "sink",
+    "file": "src/sync/apiDb.ts",
+    "line": 320,
+    "scope": "flushPath",
+    "description": "transport.command posts the first user's new log entry to the server under the second user's session. It is stored in the second user's account."
+   }
+  ],
+  "evidence": [
+   {
+    "file": "src/sync/apiDb.ts",
+    "line": 152,
+    "description": "if (!options.identity || verified) return { ok: true } is the short-circuit that skips the identity check."
+   },
+   {
+    "file": "src/sync/apiDb.ts",
+    "line": 138,
+    "description": "The comment states the intent: a different account must not mix rows under one cursor or receive the first account's unsent change."
+   },
+   {
+    "file": "src/sync/account.ts",
+    "line": 26,
+    "description": "identity is /api/me with the same-origin cookie, called only while verified is false."
+   },
+   {
+    "file": "src/sync/browser.ts",
+    "line": 18,
+    "description": "Wake handlers call wake()/syncNow() but nothing resets verified or re-queries identity."
+   },
+   {
+    "file": "agents/ver-v10/artifacts/out/check-1.txt",
+    "line": 3,
+    "description": "Independent re-run of the hunter's harness in the sandbox: the fake bob server holds client id 'ann-private'. Ann's mirror shows bob's week row (done 'bobsecret:0'). Status is idle with pausedBecause null."
+   }
+  ],
+  "conditions": [
+   {
+    "kind": "system_configuration",
+    "description": "The sync flag (apiSync) is on. It is off by default and on in the Cloud Run build."
+   },
+   {
+    "kind": "user_interaction",
+    "description": "The same browser profile has two tabs open. In the other tab the user signs out and signs in as a different Google account, or signs in again, while the first tab stays open and makes no failing request."
+   },
+   {
+    "kind": "data_state",
+    "description": "The first tab has new or unsent log entries, or simply polls, after the switch."
+   }
+  ],
+  "execution": {
+   "attacker_perspective": "A second person (or the same person using a second Google account) on a shared browser profile signs in as account B in a new tab while account A's tab is still open and was previously verified. No network attacker is involved.",
+   "payloads": [
+    "fake server pair (ann, bob); bob's server has a week row for 2026-10-04",
+    "db.doc('logs/squat').set({schema:1,entries:[{id:'ann-private',...}]})"
+   ],
+   "instructions": [
+    "Start createApiDb with identity returning ann and a transport bound to the ann server, then run start().",
+    "Switch the transport's session to the bob server and identity to bob. This simulates the shared cookie changing without any 401 in this tab.",
+    "Call set() on a log document, then syncNow().",
+    "Read the bob server's rows and the doc('weeks/2026-10-04') snapshot."
+   ],
+   "observed_result": "Re-run in the sandbox (vitest, src/sync/zz_v10.test.ts, copied from the hunter's test). Bob's server holds client id 'ann-private'. Ann's snapshot of weeks/2026-10-04 contains bob's data ({prog:'B',done:{'bobsecret:0':true}}). Sync state is idle with pausedBecause null, and no account pause was raised. The harness stands in for the browser cookie and does not drive a real browser; the source shows requests carry only the cookie, so the same behavior follows."
+  },
+  "remediation": {
+   "strategy": "Re-verify identity on every send and pull, or on wake. For example, clear verified in the wake and visibilitychange handlers, and re-check on a timer. Better, bind each request to the verified user: send an x-expected-user header and have the API return 409/401 when it does not match the session user. The client then pauses with 'account' and the outbox is not sent.",
+   "code_changes": [
+    {
+     "file_name": "src/sync/apiDb.ts",
+     "fixed_code": "// in start(): unwake = options.onWake?.(() => { verified = false; wake(); void syncNow(); }) ?? null;\n// and in tick(): verified = false before syncNow() so each poll re-checks /api/me"
+    }
+   ]
+  },
+  "severity": {
+   "likelihood": {
+    "score": "low",
+    "reason": "Needs the sync flag on, two tabs of one browser profile, and a manual account switch in the other tab while the first stays open. Shared-profile account switching is uncommon."
+   },
+   "impact": {
+    "score": "medium",
+    "reason": "Cross-account confidentiality and integrity break on the device. One user's private logs are written into another user's server account, and the other user's rows appear in the first user's mirror. The user who performs the switch is the person at the device, and the scope is one dataset."
+   },
+   "overall_severity": "low"
+  },
+  "confidence": {
+   "score": "high",
+   "reason": "The source path is unambiguous: gate() short-circuits on verified, and the latch is cleared only on auth or account pauses. The harness reproduction was independent and matches the hunter's. The residual uncertainty is that real-browser cross-tab cookie behavior was not driven directly, but cookie sharing across tabs is standard."
+  }
+ }
+}

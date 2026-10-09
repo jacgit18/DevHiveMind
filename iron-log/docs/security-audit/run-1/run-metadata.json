@@ -1,0 +1,32 @@
+{
+ "run_id": "iron-log-run-1",
+ "repo": "iron-log",
+ "target": "/home/jac/Videos/iron-log",
+ "source_ref": {
+  "commit": "979f6ea920b44302abea3b394f402ebd66179c2e",
+  "dirty": false
+ },
+ "profile": "standard",
+ "scope_paths": [
+  "."
+ ],
+ "budget": null,
+ "execution_policy": "sandboxed-source-and-local-only",
+ "selected_companion_files": [
+  "WEB-PROTOCOL-AND-AUTH.md",
+  "CLIENT-SIDE.md",
+  "DATA-ISOLATION-AND-LIFECYCLE.md",
+  "SUPPLY-CHAIN-AND-RELEASE.md",
+  "CLOUD-AND-DEPLOYMENT.md",
+  "RESOURCE-EXHAUSTION-AND-AVAILABILITY.md"
+ ],
+ "prior_run_paths": [],
+ "shared_file_owners": {
+  "all": "parent"
+ },
+ "sandbox": {
+  "tool": "tools/sbx.sh (bwrap --unshare-all, ro-bind /usr and node_modules, clearenv, scratch-only writes, prlimit cpu/as/fsize/nofile + timeout 180s; RLIMIT_NPROC is per-user so process-count limit is weak)",
+  "promotion": "tools/promote.py (dirfd no-follow, regular file, nlink 1, 1MiB/file, 4MiB total)"
+ },
+ "run_status": "complete"
+}

@@ -1,0 +1,76 @@
+{
+ "decision": "needs_validation",
+ "record": {
+  "verdict": "needs_validation",
+  "fingerprint": "ratelimit-map-unbounded-fresh-keys-full-scan",
+  "title": "In-memory rate limiter sweeps its whole map on every request once more than 10,000 live per-IP keys exist, and a rotating IPv6 source gets a fresh bucket each time",
+  "description": "rateLimit() keeps one Map entry per client address, and it only removes entries whose window has expired. Once the map holds more than 10,000 entries, every request walks the entire map. If none of the entries have expired, that walk is pure overhead. The key is the full req.ip, so a caller with a routable IPv6 prefix can create a new entry on every request. Expired entries are only deleted by the sweep, so as long as the attacker keeps adding fresh keys inside one 60-second window the map stays large and every request, legitimate or not, pays the full-map scan on the single Node event loop. The hunter measured about 238us per request at 20k keys, about 1.25ms at 60k and about 1.8ms at 120k, against about 0.5us below the threshold. I did not re-run those timings. The map code and the threshold are visible in source, so the cost model is plausible. The same fresh-address behaviour also means the per-address limits never trigger, including the 10 per minute sign-in limit (server/app.ts:83). Two facts decide whether this is a real availability problem and I cannot see either from source: whether the deployed Cloud Run service accepts IPv6 clients (or lets an attacker get 10k or more distinct source addresses), and what X-Forwarded-For value Cloud Run's front end exposes to Express with trust proxy set to 1. The amplification is also modest. A normal request costs a few hundred microseconds, and the attacker must send roughly one request per fresh key from many addresses. Cloud Run autoscaling and per-instance maps further dilute the effect. If it holds, the impact is slower responses or event-loop starvation on one instance, plus weaker per-address throttling. It does not give access to data or accounts.",
+  "claimed_root_cause": "server/rateLimit.ts sweeps expired windows only when windows.size exceeds 10_000. It never evicts live keys and has no size cap. It keys on the raw req.ip, so IPv6 addresses are not grouped into /64 prefixes. Many fresh live keys therefore make every request do an O(n) scan, and let a client with many source addresses bypass the per-address limit.",
+  "trace": [
+   {
+    "kind": "entrypoint",
+    "file": "server/app.ts",
+    "line": 119,
+    "scope": "createApp, anonymous /api middleware",
+    "description": "app.use('/api', rateLimit(limits.api)) runs before sessionAuth, so unauthenticated requests reach the limiter. Auth routes (app.ts:83-84) and /api/client-errors (app.ts:88) use their own per-IP limiters of the same type."
+   },
+   {
+    "kind": "propagation",
+    "file": "server/rateLimit.ts",
+    "line": 18,
+    "scope": "byIp",
+    "description": "The key is req.ip, the full address with no IPv6 prefix grouping, so one routable /64 yields effectively unlimited distinct keys."
+   },
+   {
+    "kind": "propagation",
+    "file": "server/index.ts",
+    "line": 43,
+    "scope": "trustProxy configuration",
+    "description": "On Cloud Run (K_SERVICE set) trust proxy is 1, so req.ip is taken from the proxy-supplied X-Forwarded-For. This is the dependency on the deployed front end that I could not check."
+   },
+   {
+    "kind": "sink",
+    "file": "server/rateLimit.ts",
+    "line": 26,
+    "scope": "rateLimit handler, sweep",
+    "description": "When windows.size is above 10_000, every request iterates the whole Map. Only expired entries are removed, so when all keys are inside the window the scan is full cost every time and the map never shrinks."
+   }
+  ],
+  "evidence": [
+   {
+    "file": "server/rateLimit.ts",
+    "line": 26,
+    "description": "Sweep condition and body: the full-map for loop, and deletion only of entries where t - w.start >= windowMs. Live entries are never evicted and there is no cap."
+   },
+   {
+    "file": "server/rateLimit.ts",
+    "line": 28,
+    "description": "A new Window is created for any unseen key at lines 28-32, so each distinct address adds one entry per limiter instance."
+   },
+   {
+    "file": "server/app.ts",
+    "line": 44,
+    "description": "AUTH_LIMITS: sign-in is 10 per 60s and other auth routes 120 per 60s. The api limiter is 1200 per 60s (app.ts:50). These per-address ceilings do not apply to a fresh address."
+   },
+   {
+    "file": "server/index.ts",
+    "line": 43,
+    "description": "trustProxy is 1 when K_SERVICE is set, so the client address comes from X-Forwarded-For as seen by the Cloud Run front end."
+   },
+   {
+    "file": "server/rateLimit.test.ts",
+    "line": 20,
+    "description": "The existing tests do not cover the map-size or sweep-cost behaviour."
+   }
+  ],
+  "blockers": [
+   "Whether the deployed Cloud Run URL accepts IPv6 clients, or whether an attacker can otherwise present more than 10,000 distinct req.ip values within one 60-second window. This is deployment and network routing, not visible in source.",
+   "What X-Forwarded-For the Cloud Run front end passes to the container, and whether an attacker-supplied value can end up as the last entry that Express trusts with trust proxy set to 1.",
+   "How much the measured scan cost (about 1.25ms per request at 60k keys) slows real traffic on a deployed instance, given its concurrency setting and autoscaling. The cost is per instance and the map is per process."
+  ],
+  "validation_plan": {
+   "local": "Start the real createApp with trustProxy set to 1 and a stubbed database, and use the existing server/rateLimit.test.ts pattern. Send requests with distinct X-Forwarded-For IPv6 values (2001:db8::N, N from 1 to 60000) in one fixed window, and record request latency before and after the map passes 10k keys. Confirm that sign-in requests from distinct addresses are never 429 while a repeated address is limited after 10 calls. Run it against a local instance only, with a small request count, no external network and no Postgres.",
+   "deployment": "The deployment owner checks the Cloud Run service's IPv6 reachability (for example whether the run.app hostname has AAAA records) and uses a harmless header-echo endpoint on a staging copy to see which X-Forwarded-For value the container receives. If either fact fails, close the finding. If both hold, cap the map size (for example evict the oldest entries when it exceeds a fixed bound) and key IPv6 addresses by /64 prefix."
+  }
+ }
+}

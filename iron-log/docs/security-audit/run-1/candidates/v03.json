@@ -1,0 +1,16 @@
+{
+ "verifier_id": "v03",
+ "fingerprint": "ci-deployer-run-developer-backup-job-override",
+ "hunter_proposed_verdict": "needs_validation",
+ "hunter": "hunt-avail-cloud-w1",
+ "claim": "Deployer SA has roles/run.developer at project scope; backup Cloud Run job (scripts/backup-cloud-run.sh) holds BACKUP_DATABASE_URL (owner URL) secret on postgres:18-alpine whose entrypoint execs args; if run.jobs.runWithOverrides is in the role, executing the job with args override would run commands with the owner URL.",
+ "trace_refs": [
+  "scripts/ci-deploy-setup.sh:49",
+  "scripts/backup-cloud-run.sh:61",
+  "scripts/backup-cloud-run.sh:65",
+  "backup/Dockerfile:6",
+  "backup/run.sh:29"
+ ],
+ "hunter_artifact": null,
+ "notes": "Blockers: whether run.developer contains run.jobs.runWithOverrides; whether the deploy job is reachable by lower-trust party."
+}
