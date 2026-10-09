@@ -42,6 +42,7 @@
 **Interfaces:**
 - Produces: `extraSlots(week)` → slot objects for `week.extra`; `weekSlots(prog, week)` → `[...slotsFor(prog), ...extraSlots(normWeek(week))]`; `normWeek` keeps a validated `extra`.
 
+#todo/priority/Low
 - [ ] **Step 1: Write the failing tests**
 
 Add `weekSlots` to the `./logic.js` import in `src/lib/logic.test.js` and append:
@@ -126,6 +127,7 @@ git commit -m "weekSlots: a week's cards are the program's plus its experiment c
 - Consumes: `weekSlots`, `dayAt`, `clearDone` (logic.js).
 - Produces: store state `experiments` (array) and ready flag `exp`; `saveExperiments()`; `setExperiments(list)`; `saveExperiment({ id?, ex | '__new', nn?, nu?, ph, note })` → error string or `null`; `deleteExperiment(id)`; `addToDay(entryId, column)` → boolean; `removeExtra(slotId)`; `activeSlots()` now returns `weekSlots(activeProgram, week)`; `snapshot()` includes `experiments`; `newExId(cfg, name, taken)` in data.js.
 
+#todo/priority/Low
 - [ ] **Step 1: Write the failing tests**
 
 In `src/store/useAppStore.test.js`: add `tally` to the dynamic `../lib/logic.js` import (follow how `currentLayout` is imported there) and append:
@@ -303,6 +305,7 @@ git commit -m "Store: experiment list, add to a day, remove from a week"
 - Consumes: `weekSlots(prog, week)` (Task 1).
 - Produces: added cards count in weekly history and trends, the Muscles live view, the week workbook's Plan sheet, and check-offs rebuilt from an imported workbook's sessions.
 
+#todo/priority/Low
 - [ ] **Step 1: Write the failing tests**
 
 `src/lib/trends.test.js`, inside `describe('weekSummary…')` (it has `cfg()` and `programs`; Day 2 holds card `c`):
@@ -395,6 +398,7 @@ git commit -m "Stats, Muscles, exports and Excel check-offs include experiment c
 - Consumes: `normWeek` with `extra` (Task 1); store `experiments`, `saveExperiments`, snapshot `experiments` (Task 2).
 - Produces: `normExperiments(list)` → valid, de-duplicated entries; data files and full workbooks carry `experiments`; weeks carry `extra` through JSON, Excel, merge and the fingerprint; import replace/merge handle the list.
 
+#todo/priority/Low
 - [ ] **Step 1: Write the failing tests**
 
 `src/lib/logic.test.js` (add `normExperiments` to the import):
@@ -526,6 +530,7 @@ git commit -m "Back up, restore, merge and import the Experiment list and added 
 
 There is no component test setup, so this task is verified by lint, tests, build and a manual run (Step 7). Read each file's current code before editing.
 
+#todo/priority/Low
 - [ ] **Step 1: The add/edit sheet**
 
 Create `src/components/sheets/ExperimentSheet.jsx`, modelled on `ItemFields` in `SlotSheet.jsx` (same field markup and classes):

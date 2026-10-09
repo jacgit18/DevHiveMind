@@ -10,6 +10,8 @@
 
 ---
 
+#todo/priority/High
+
 ## S1 — Login (Must)
 
 > As the owner, I want to log in with my configured credentials, so that the dashboard
@@ -30,6 +32,8 @@
 
 ---
 
+#todo/priority/High
+
 ## S2 — Manage accounts (Must)
 
 > As the owner, I want to create and edit accounts with a type and starting balance, so
@@ -47,6 +51,8 @@
 
 ---
 
+#todo/priority/High
+
 ## S3 — Category list (Must)
 
 > As the owner, I want a seeded category list I can add to and archive, so that spending
@@ -62,6 +68,8 @@
 *Built in Phase 3: seed (skeleton) + management API and page. A category picker on the transaction form arrives with S4.*
 
 ---
+
+#todo/priority/High
 
 ## S4 — Manual transactions (Must)
 
@@ -84,6 +92,8 @@
 
 ---
 
+#todo/priority/High
+
 ## S5 — CSV import (Must) — large, splittable
 
 > As the owner, I want to import a bank CSV by mapping its columns, so that I don't retype
@@ -105,6 +115,8 @@
 
 ---
 
+#todo/priority/Low
+
 ## S6 — Monthly budgets (Should)
 
 > As the owner, I want to set a monthly budget amount per category, so that I have
@@ -120,6 +132,8 @@
 **Built (2026-09-25):** PUT upsert, GET `?month=`, DELETE (clear), copy-forward that never overwrites and skips archived categories. Amount must be > 0 (clearing = no row). Budgets page in the UI. Owner confirmed the page works in a browser (2026-09-25); deployed to prod with Phase 7 (2026-09-25). See the drift log in [[spec]].
 
 ---
+
+#todo/priority/High
 
 ## S7 — Dashboard (Must) — large, splittable per widget
 

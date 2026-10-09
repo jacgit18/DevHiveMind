@@ -27,6 +27,8 @@ Order, one PR each, no behavior change inside a refactor:
 3. The empty-board first-run prompt ("Add your first exercise", pick days per week), which overlaps backlog "Starter programs for new users" and "first-run guide".
 4. Remove the personal defaults in `export.ts`.
 
+**Extension, 2026-10-09 (asked for by the user): stretches.** The default stretch routine is also the owner's (19 stretches with their links and notes), so it follows the same rule with the same protections. A stretch list with no saved document is empty when the account has **no log entries and no stretch-week records**, and the default routine when it has either; decided once the list, the logs and the stretch weeks have loaded, in the same update that marks them ready, in both directions; a saved or just-edited list is never replaced; no account is written to. The empty list shows a *Build your stretch routine* prompt. Supplements and the experiment lists have no owner defaults of this kind (not checked in detail; revisit if they do).
+
 ## Alternatives considered
 
 - **Empty `BUILTIN` for everyone.** Simplest to say, but it makes the two existing accounts lose their cards and touches every test. Lost on risk.

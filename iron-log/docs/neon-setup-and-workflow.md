@@ -65,6 +65,7 @@ Eight findings became three after PR #88 (`npm audit fix`, Testcontainers 11 to 
 
 ## Open items
 
+#todo/priority/Low
 - [ ] Create the Neon `dev` branch and move `.env` off production.
 - [ ] Decide how migrations get the unpooled URL (a small script or an `.env` variable).
 - [ ] Update the Neon CLI (8.0.11 to 8.0.12).

@@ -8,15 +8,19 @@ Work through these from the top: bugs first, then the backend and its load-beari
 
 Live since 2026-10-08: revision `iron-log-00005-wvl`, deployed by CI. These are what Phase F left behind.
 
-- [ ] **First installed-iPhone PWA sign-in** (open S0 item below). Add to Home Screen, open from the icon, sign in with Google, close and reopen, still signed in. If it fails, reopen ADR 004 and the same-origin choice in ADR 010.
 - [x] (checked 2026-10-08: the owner's row, id 1, already had `is_admin = true`; two other accounts have signed up, neither admin) Set `is_admin` on the owner's row in production by hand (B2f): `update users set is_admin = true where auth_user_id = (select id from auth."user" where email = '<email>')`. The app role cannot do this.
-- [ ] Update ADR 004 (sign-in) with what the deploy showed, and record the iPhone result.
+- [x] Stale branches (done 2026-10-08): 89 remote and all local branches deleted, including the old `import-fixes`, `pwa`, `react-conversion`, `wcag-aaa` and the unpushed spike branch `spike-s0-signin`. Left on GitHub: `main`, `data` (backups), `pr-screenshots` (the screenshots workflow). Names and commit ids are in `restore_remote.txt` and `restore_local.txt` in this folder, if one is needed back.
+#todo/priority/High
+- [ ] **First installed-iPhone PWA sign-in** (open S0 item below). Add to Home Screen, open from the icon, sign in with Google, close and reopen, still signed in. If it fails, reopen ADR 004 and the same-origin choice in ADR 010.
 - [ ] Confirm the Neon **owner** password was rotated (it lives only in the local `.env`; the app and CI use `ironlog_app`).
 - [ ] Rehearse a Neon restore and a failing migration on a Neon branch (FM-20, FM-21, FM-24). Phase F listed both; they were not done.
-- [ ] Decide the tombstone purge window and the refused-writes retention (open in [[data-model/iron-log]]).
-- [ ] Required reviewers on the GitHub `production` environment, at least for the first few CI deploys.
 - [ ] Watch for a missed nightly backup: the alert cannot cover "no backup for a day". Look now and then at `PROJECT_ID=iron-log-jacgit18 scripts/backup-cloud-run.sh list`.
 - [ ] GitHub Actions: `ubuntu-latest` moves to Ubuntu 26 on 2026-10-19 (notice in the deploy log). Run the workflows once after that date, or pin `ubuntu-24.04`.
+- [ ] Personal defaults must not leak into a new account (item under Multi-user readiness below). **Audit 2026-10-08, no code changed yet.** `DEFAULT_CFG` is clean. The leak is `PROGRAM_A`/`PROGRAM_B` and `EX` in `src/lib/data.ts` (about 65 cards with the owner's starting weights, boxing moves, the "Shadow box" warm-up), plus the default backup repo names in `export.ts`. A signed-in account with no `programs/A` document falls back to them (`loadProgram` -> `resolveProgram` -> `BUILTIN`, `useAppStore.ts` db-mode loader). **Why it is not a one-line change:** (1) `programs[k] !== BUILTIN[k]` means "unmodified" in six places (Editor, export, settingsSlice, editorSlice, ...) and the "Original program · built in" library row also offers the owner's program; (2) 16 test files use the built-ins; (3) **two other accounts already exist**, and unedited programs were never saved, so they are showing the built-in cards today and their logs point at those cards; blanking the fallback would make their cards vanish. Proposed order: first save the current program into those accounts' own documents (or only blank for accounts with no log entries), then add a blank program for new accounts, then make "Original" mean blank in sync mode, then remove the personal backup defaults. Decision recorded in [[016-new-account-starting-state]] (accepted 2026-10-08; the exercise library `EX` stays as it is for now).
+#todo/priority/Low
+- [ ] Update ADR 004 (sign-in) with what the deploy showed, and record the iPhone result.
+- [ ] Decide the tombstone purge window and the refused-writes retention (open in [[data-model/iron-log]]).
+- [ ] Required reviewers on the GitHub `production` environment, at least for the first few CI deploys.
 - [ ] Turn on "Automatically delete head branches" in the GitHub repo settings, so merged branches stop piling up.
 - [ ] The README screenshots bot adds a commit to every PR branch even when only a few bytes of a PNG change (noise, and it makes the branch move under you: it rejected a push on #127). Only commit when the image really differs.
 - [ ] Flaky test: `src/lib/planOrder.test.js` "on random programs ..." takes about 6 s on this machine against the 5 s default. Give it a longer timeout (do not change what it checks: the reorder tests must stay).
@@ -24,17 +28,17 @@ Live since 2026-10-08: revision `iron-log-00005-wvl`, deployed by CI. These are 
 - [ ] Lint: `Supplements.tsx:83` warns `set-state-in-effect` (known, one warning).
 - [ ] CI deploy rough edges found on the first run, now fixed (#128, #129): the Google sign-in file made the tree dirty; the deployer needed `storage.buckets.list`; the build ran as the Editor-role default account. Notes in [[deploy-runbook]] §10.
 - [ ] Spike clean-up (S0): delete the Artifact Registry repo `cloud-run-source-deploy` in `iron-log-spike` (about 345 MB: `gcloud artifacts repositories delete cloud-run-source-deploy --location us-central1 --project iron-log-spike`), the Neon `spike-s0` branch (Neon console, Branches; look at it first), and then consider deleting the `iron-log-spike` project (`gcloud projects delete iron-log-spike`; Google keeps a deleted project 30 days; do it last, the registry repo lives in it). The local `spike-s0-signin` branch is already deleted (2026-10-08; its commit was `70f1187`, never pushed). Before rotating or deleting a Google OAuth client secret, check which client production uses (secret `iron-log-google-client-id`); rotating that one signs everyone out until the secret is updated.
-- [x] Stale branches (done 2026-10-08): 89 remote and all local branches deleted, including the old `import-fixes`, `pwa`, `react-conversion`, `wcag-aaa` and the unpushed spike branch `spike-s0-signin`. Left on GitHub: `main`, `data` (backups), `pr-screenshots` (the screenshots workflow). Names and commit ids are in `restore_remote.txt` and `restore_local.txt` in this folder, if one is needed back.
-- [ ] Personal defaults must not leak into a new account (item under Multi-user readiness below). **Audit 2026-10-08, no code changed yet.** `DEFAULT_CFG` is clean. The leak is `PROGRAM_A`/`PROGRAM_B` and `EX` in `src/lib/data.ts` (about 65 cards with the owner's starting weights, boxing moves, the "Shadow box" warm-up), plus the default backup repo names in `export.ts`. A signed-in account with no `programs/A` document falls back to them (`loadProgram` -> `resolveProgram` -> `BUILTIN`, `useAppStore.ts` db-mode loader). **Why it is not a one-line change:** (1) `programs[k] !== BUILTIN[k]` means "unmodified" in six places (Editor, export, settingsSlice, editorSlice, ...) and the "Original program · built in" library row also offers the owner's program; (2) 16 test files use the built-ins; (3) **two other accounts already exist**, and unedited programs were never saved, so they are showing the built-in cards today and their logs point at those cards; blanking the fallback would make their cards vanish. Proposed order: first save the current program into those accounts' own documents (or only blank for accounts with no log entries), then add a blank program for new accounts, then make "Original" mean blank in sync mode, then remove the personal backup defaults. Decision recorded in [[016-new-account-starting-state]] (accepted 2026-10-08; the exercise library `EX` stays as it is for now).
 
 ## Bugs
 
 Found in the 2026-10-05 bug sweep and re-checked against the code on 2026-10-06 (all still present; the TypeScript conversion changed none of them, only renamed files). The high and medium ones are fixed (#67), plus import-replace atomicity and the empty-repo GitHub backup (PR in review). These are what's left.
 
-- [ ] Deleting a stretch and re-adding one with the same name brings old check-offs back in earlier weeks (ids are slugs of the name).
-- [ ] Merge-import orphans stretch check-offs when the stretch matches by name but has a different id.
+#todo/priority/High
 - [ ] `bestLift` can show the wrong date when entries aren't in date order (`addEntry` and `mergeEntries` sort; a JSON replace import and database snapshots do not, `normEntries` keeps the file's order). Simplest fix: sort in `normEntries`.
 - [ ] CSV export: a leading `=`, `+`, `-` or `@` in a note or exercise name runs as a formula in Excel. CSV import also drops the exercise id (`exId` column is empty), so a renamed custom exercise duplicates.
+#todo/priority/Low
+- [ ] Deleting a stretch and re-adding one with the same name brings old check-offs back in earlier weeks (ids are slugs of the name).
+- [ ] Merge-import orphans stretch check-offs when the stretch matches by name but has a different id.
 - [ ] Rest timer: the manual Rest button uses `restSecs() || 90`, so a Rest setting of 0 runs 90 s while holds treat 0 as no rest. Decide which is intended.
 - [ ] Wake lock can leak if `stop()` or a restart lands before the lock request resolves (`src/store/useTimerStore.ts`). Track the pending promise.
 - [ ] Excel notes: an entry with both a note and `auto` loses `auto` on re-import (`noteOf` in `src/lib/export.ts`).
@@ -49,12 +53,14 @@ Found in the 2026-10-05 bug sweep and re-checked against the code on 2026-10-06 
 
 - [x] Choose a backend. Accepted for now (2026-10-06): own API server in Docker on Neon Postgres, with a separate auth provider (ADR 001 draft, [[001-backend-shape]], 2026-10-05). Firebase and Supabase were considered; Supabase is the fallback. This replaces the earlier Firebase lean once confirmed. Remaining stack decisions (datastore, sync, auth, language, framework, hosting) are still being walked.
 - [x] Pick the API language: TypeScript on Node (ADR 005). **Lean TypeScript:** the API can import `src/types.ts` and run the same `validate.ts` cleaners (`normEntry`, `normProgram`, `normLibrary`, `normBody`) and `normalizeData`/`DataFile` on the server, so client and server cannot disagree on a document's shape. The docs are already versioned (`SCHEMA_VERSION`) and stamped (`updatedAt`). Another language means re-implementing and re-testing all of that. Needs a shared types package or a monorepo layout.
+#todo/priority/High
 - [ ] Add Google login. Each user's data is tied to their account.
   - [ ] **S0 iPhone test (parked 2026-10-07; the user will do it later).** Google login passed on the desktop locally, and the spike also ran on Cloud Run. **The Cloud Run service and its four secrets were deleted on 2026-10-07**, so the test needs one redeploy first: on the local branch `spike-s0-signin` (the spike code exists only there, never pushed) fill `spike/.env`, run `./spike/deploy.sh`, then `BASE_URL_OVERRIDE=<service URL> ./spike/deploy.sh`; the OAuth client already allows `https://iron-log-spike-1088998530888.us-central1.run.app`. Then on the iPhone, in Safari: Add to Home Screen, launch from the icon (page must say `display-mode standalone: true`), sign in with Google, note where you land afterwards, check `/api/me`, close and reopen the app, check `/api/me` again, and record the iOS version. Pass/fail rules are in [[build-spec]] section 4. Record the result in ADR 004 and 010. If it fails, try popup versus redirect and Google's ID-token flow before reopening the same-origin choice.
   - [ ] **S0 cleanup, what is left (done 2026-10-07: Cloud Run service and 4 secrets).** After the iPhone test: delete the Artifact Registry repo `cloud-run-source-deploy` (about 345 MB of images, a small storage cost), the Neon `spike-s0` branch, the local branch `spike-s0-signin` (never merge it), consider deleting the `iron-log-spike` project, and rotate or delete the Google OAuth client secret. Keep the budget alert.
   - [ ] **Not a gate any more (2026-10-07):** we assume iPhone sign-in works and verify it at the first real deploy (see the build spec drift log). B1 stays open until that result is recorded. (Earlier wording follows.) B1 stays open until the iPhone result is recorded. B2 (real sign-in in the API) needs it, so Phase B is blocked on this. Phase C does not need it.
 - [ ] Keep it offline-first for gym use: queue saves and sync them later, building on `makeSaveQueue`.
 - [ ] Add a one-time "upload my existing data" step so data already on the phone isn't lost. (Smaller now: `buildDataFile`/`normalizeData` already produce and check a typed `DataFile`, which is exactly what to upload.)
+#todo/priority/Low
 - [ ] Possibly exercise catalog what api to use any free options
   - If the app goes multi-user this is close to required: use it to prefill muscles, equipment and video links so new users don't type every exercise.
 
@@ -74,9 +80,10 @@ Run with `/tech-decision-walkthrough`. Handoff: `iron-log/.claude/handoffs/hando
 - [x] 10. One-time upload: one `import-legacy` command, empty account only, dedupe by client id, check legacy hash collisions first (note in [[iron-log/docs/architecture/stack-walkthrough|stack-walkthrough]]).
 - [x] 11. lb/kg storage unit: canonical pounds, `numeric` 4 dp in `weight_lb`-style columns, one conversion module, display-only toggle (ADR 006 [[006-weight-unit-canonical-lb]]). Table design is now unblocked.
 - [x] Table design via `relational-modeling`: [[data-model/iron-log]] written 2026-10-06 (bigint ids plus unique client id, jsonb documents, per-user change counter, history trigger, RLS). Open: tombstone purge window, refused-writes retention, migration tool.
+- [x] Closeout (written in [[iron-log/docs/architecture/stack-walkthrough|stack-walkthrough]]): summary table; cross-cutting obligations (HTTPS, rate limits, backups, CI, secrets, migrations tool, error reporting, privacy policy and data-deletion path); cost-cap check; deferred list; missed-decision audit
+#todo/priority/Low
 - [ ] Verify Neon free-tier numbers at neon.com (1 GB per project, 100 CU-hours per month; from aggregator pages)
 - [ ] Verify iOS Safari storage eviction for non-installed PWAs (offline up to about 2 days)
-- [x] Closeout (written in [[iron-log/docs/architecture/stack-walkthrough|stack-walkthrough]]): summary table; cross-cutting obligations (HTTPS, rate limits, backups, CI, secrets, migrations tool, error reporting, privacy policy and data-deletion path); cost-cap check; deferred list; missed-decision audit
 - [ ] Then type `/system-design-communication` (once the stack is settled) and `/decision-journal` for any decision to revisit
 
 ### Open after the backend stack walkthrough (2026-10-06; details in [[iron-log/docs/architecture/stack-walkthrough|stack-walkthrough]])
@@ -89,27 +96,32 @@ Short ADRs still to write:
 - [x] Shared code layout: one package, `src/shared/` plus `server/`, workspaces as the planned next step (ADR 015 [[015-shared-code-layout]]).
 
 Values to set:
+#todo/priority/Low
 - [ ] Tombstone purge window and refused-writes retention (open in [[data-model/iron-log]]).
 
 Spikes and checks (do early):
-- [ ] Google sign-in inside an installed iOS PWA, on a real iPhone. If it fails, reopen ADR 004 and the same-origin choice in ADR 010.
 - [x] Count legacy `k`+hash id collisions in a real export before building `import-legacy`. (2026-10-08: the 2026-10-07 export has 53 entries and 0 collisions; the old `iron-log-data.json` has 1, `dip` and `kneeraise` on 2026-09-28: the hash ignores the exercise and ids are unique per user across exercises, so the importer gives the later one a `-2` suffix in input order.)
-- [ ] Confirm on provider pages: Cloud Run quota and pricing, Neon free-tier numbers and restore window, Better Auth advisories (GitHub Security tab), current Express 5, Kysely and Better Auth versions.
+#todo/priority/High
+- [ ] Google sign-in inside an installed iOS PWA, on a real iPhone. If it fails, reopen ADR 004 and the same-origin choice in ADR 010.
 - [ ] Rehearse a Neon restore (FM-20, FM-24) and a failing migration on a Neon branch (FM-21).
+#todo/priority/Low
+- [ ] Confirm on provider pages: Cloud Run quota and pricing, Neon free-tier numbers and restore window, Better Auth advisories (GitHub Security tab), current Express 5, Kysely and Better Auth versions.
 - [ ] Turn on Neon **branch protection** for `production`, if the Free plan allows it, so it cannot be deleted by hand in the console. Checked 2026-10-08: `production` is the default branch with no expiry (only `dev` and `spike-s0` expire, on 2026-10-14, from the 7-day rule in `neon.ts`) but shows `protected: false`. Plan availability is not verified: look for the toggle in the Neon console (branch settings) and, if it is paid-only, note that and rely on the nightly backups instead ([[iron-log/docs/deploy-runbook|deploy-runbook]] section 7).
 
 ### Multi-user readiness (if the app is opened to other people)
 
 The app began as a single-user gym app. These are the gaps that only matter once other people use it. Do them with step 3 unless noted.
 
-- [ ] Starter programs for new users (PPL, upper/lower, full body, 5x5) and a "build my own" flow, with a choice of days per week. The board currently assumes a fixed 7-day layout.
-- [ ] Check that no personal defaults (exercises, 1RMs, weight goals, phase names, Day 5/6 subtitles) leak into a new account's starting state. Known ones in code: the built-in programs A/B and `EX` catalog (`data.ts`), `DEFAULT_CFG`, and the backup defaults `jacgit18/iron-log-data` (`backupCfg`) and `jacgit18/iron-log` (`ghCfg`) plus the `Composio For You` connector name in `export.ts`. The backup ones disappear with step 4.
-- [ ] Move the first-run guide (item 58) into this step instead of after the backend.
-- [ ] Explain jargon in the app (phase, superset, "Same as last", 1RM) with one-line tooltips or a glossary.
 - [x] Auto-progression suggestions ("you hit 3×8, try +5 lb"): `progressionOf`/`targetOf` suggest "up from N lb" after two full sessions, and a stalled lift gets a back-off (#76). Left: show it more prominently if wanted.
 - [x] Account screen: profile, sign out, last-synced time and a visible offline/sync status. (B2e: Settings → Account and Sync; PR #118.)
-- [ ] Conflict handling when one account is used on two devices, so last-write-wins doesn't silently lose a workout.
 - [x] Privacy policy and terms, with a clear data-deletion path (see step 4). Needed before launch because of Google login and body-weight data. (2026-10-08, PR in review: `public/privacy.html` and `terms.html` drafted against GDPR/UK GDPR, CCPA and other US state laws and Washington's health-data law; Settings → Delete my data erases everything or deletes the account for good, backups age out in 30 days. **Still recommended before opening signup to the public: a lawyer's review, and a decision on the governing-law clause, which was left out on purpose.**)
+#todo/priority/High
+- [ ] Check that no personal defaults (exercises, 1RMs, weight goals, phase names, Day 5/6 subtitles) leak into a new account's starting state. Known ones in code: the built-in programs A/B and `EX` catalog (`data.ts`), `DEFAULT_CFG`, and the backup defaults `jacgit18/iron-log-data` (`backupCfg`) and `jacgit18/iron-log` (`ghCfg`) plus the `Composio For You` connector name in `export.ts`. The backup ones disappear with step 4.
+- [ ] Conflict handling when one account is used on two devices, so last-write-wins doesn't silently lose a workout.
+#todo/priority/Low
+- [ ] Starter programs for new users (PPL, upper/lower, full body, 5x5) and a "build my own" flow, with a choice of days per week. The board currently assumes a fixed 7-day layout.
+- [ ] Move the first-run guide (item 58) into this step instead of after the backend.
+- [ ] Explain jargon in the app (phase, superset, "Same as last", 1RM) with one-line tooltips or a glossary.
 - [ ] In-app "report a problem" that attaches the app version and sync state (alongside the feedback form link at the bottom).
 - [ ] Week-start choice (Sunday or Monday) and locale date formats. lb/kg (62) becomes required, not optional.
 - [ ] Screen-reader testing of the log flow with real devices.
@@ -120,20 +132,29 @@ The app began as a single-user gym app. These are the gaps that only matter once
 
 ## 4. Remove the stand-in features (only once the backend is working)
 
+#todo/priority/High
+- [ ] Turn "Erase data" into "delete my account data". Launch-blocking if other people use the app.
+#todo/priority/Low
 - [ ] Remove GitHub backup and restore (#18).
 - [ ] Remove JSON import.
 - [ ] Stop using localStorage as the main place data is saved.
-- [ ] Turn "Erase data" into "delete my account data". Launch-blocking if other people use the app.
 - [ ] Update the README and the training skill with each removal so they stay in sync.
 
 ## 5. Advanced features and integrations (post-backend)
 
-- [ ] Google Fit API integration to pull activity and weight data.
 - [x] Weight goals feature (set targets and track progress).
-- [ ] Import medical records and add AI assessment of medical information. Decide whether to build this at all before multi-user launch: it brings health-data regulation, disclaimers and the highest risk of the list.
 - [x] supplement log (Supplements tab with schedule and water log, #61, #79)
-- [ ] Warn when you skip an exercise too many times that's on your program.
 - [x] Plateau/deload hint: `stallOf` judges each lift per week and `backoffOf` suggests a back-off (#76).
+#todo/priority/Low
+- [ ] Google Fit API integration to pull activity and weight data.
+- [ ] Import medical records and add AI assessment of medical information. Decide whether to build this at all before multi-user launch: it brings health-data regulation, disclaimers and the highest risk of the list.
+- [ ] **Social feed, privacy-light (idea saved 2026-10-08).** Let people follow friends and see short activity posts: "Sam trained 14 times this month", "Alex hit a new best on Hack Squat". It is less invasive than most fitness social features because it only says *that* someone lifted and how they did, never *where*: no gym, location, map, route or check-in, ever. Design notes so the idea is not lost:
+  - **Opt-in and private by default.** Nothing is shared until a person turns it on, and they choose who sees it. Sharing is a grant a person can revoke at any time, as ADR 004 already planned for sharing ([[004-auth-better-auth]]: a user-owned `share_grants(owner_id, viewer_id, scope)` row, one `canRead(viewer, row)` check, and a matching row-level-security read policy). No public profiles or leaderboards, in line with the "skip them" note under multi-user readiness.
+  - **Milestones and totals, not raw logs.** Posts are generated by the app from a person's own data (sessions this month, a new best on an exercise, a streak), so a friend sees the headline and not every set. **Body weight, notes and photos are never in a post.** Treat it as health-adjacent: it is not used for advertising or ranking people.
+  - **No location, by construction.** The app does not collect it, so a post cannot leak it; keep it that way (no gym names, no timestamps finer than the day, nothing from the device).
+  - **Before building it:** (1) update the privacy policy and terms: today they say data goes only to the service providers, so sharing with other users is a new purpose and needs the person's explicit consent (GDPR Art. 9 for health-related data); (2) add the safety basics: block, mute, report, and the ability to leave without a trace; (3) make delete-my-data and account deletion also remove a person's posts and grants everywhere, including from other people's feeds; (4) it is 16 and over only, as the terms already say; (5) decide whether it needs a moderation and abuse plan before more than a handful of friends use it; (6) check what the rate limits and the free-tier database can carry once feeds exist.
+  - **Cheapest first test:** a read-only "training partner" view for one person you invite, showing only the monthly session count and new bests, before any feed exists.
+- [ ] Warn when you skip an exercise too many times that's on your program.
 - [ ] Improve weight entry UX: catch and prevent common mistakes (e.g., wrong weight entered for an exercise). Partly done: range limits and messages for sets, body weight and 1RM are central in `validate.ts` (#77). Left: flag a weight that is far from the last session for that exercise.
 
 ## 6. UX improvements and fixes
@@ -145,6 +166,7 @@ The app began as a single-user gym app. These are the gaps that only matter once
 
 From a review of the current screens. None of these are committed to: pick what you want, and move it into the numbered steps above. The numbers match the list from that review so they can be referred to. Where each one goes relative to the backend (step 3):
 
+#todo/priority/Low
 - [ ] Midnight behavior for check-offs (idea, not decided): a check-off belongs to the current day. If at least one item was ticked before midnight, flag the rest at midnight or move them to the next day where they can be skipped or kept, so exercises don't span multiple days. Today nothing is restricted. See ADR 011.
 
 - **Before the backend** if it changes what gets stored.
@@ -154,13 +176,16 @@ From a review of the current screens. None of these are committed to: pick what 
 ### Before the backend (changes what is stored)
 
 - [x] 55. Exercise library page: every exercise with its equipment, video link, default phase, 1RM and muscle tags, edited in one place. On the Program tab. Per-exercise settings stay in `cfg.ex`, `cfg.exPh`, `cfg.rm` and `cfg.muscleMap`.
-- [ ] 38. A tick per set in the Log sheet (and start the rest timer between sets). Changes the shape of a logged entry. Safer now: add the field to `LogSet` in `types.ts` and `tsc` lists every reader and writer; also update `normSet` in `validate.ts` and the Excel/CSV sheets.
 - [x] 33. Undo after unchecking something you logged: the board shows how many entries were removed with an Undo that puts back the entries and the tick.
-- [ ] 61. Per-exercise notes ("seat at 4, elbows tucked"), shown in the Log sheet. Adds a field to each exercise's stored settings.
+#todo/priority/High
 - [ ] 62. lb/kg unit toggle. Canonical unit settled: pounds, stored as `numeric` 4 dp (ADR 006); the toggle is display and input only, and progression steps become unit-aware. Types do not enforce units (all are plain `number`), so list every `lb`/`Lb` place (limits in `validate.ts`, labels, exports, plate calculator) before starting; a branded `Lb`/`Kg` type is optional.
+#todo/priority/Low
+- [ ] 38. A tick per set in the Log sheet (and start the rest timer between sets). Changes the shape of a logged entry. Safer now: add the field to `LogSet` in `types.ts` and `tsc` lists every reader and writer; also update `normSet` in `validate.ts` and the Excel/CSV sheets.
+- [ ] 61. Per-exercise notes ("seat at 4, elbows tucked"), shown in the Log sheet. Adds a field to each exercise's stored settings.
 
 ### Any time: phone and board layout (most useful first)
 
+#todo/priority/Low
 - [ ] 1. Show the first exercise sooner on phones: less above the day tabs.
 - [ ] 2. Slim down the top of each day column (rest day, add buttons, swap arrows, warm-up).
 - [ ] 3. Stop the Rest timer button covering cards and the add buttons.
@@ -170,6 +195,7 @@ From a review of the current screens. None of these are committed to: pick what 
 
 ### Any time: header, week bar and notices
 
+#todo/priority/Low
 - [ ] 6. Remove the repeated program/mode between the header pills and the week bar.
 - [ ] 7. Move the mode dropdown into Settings.
 - [ ] 8. Put "Set by month" next to the A/B toggle it explains.
@@ -180,6 +206,7 @@ From a review of the current screens. None of these are committed to: pick what 
 
 ### Any time: body weight row and sort/filter
 
+#todo/priority/Low
 - [ ] 13. Make the body weight row compact on desktop.
 - [ ] 14. Once logged, show it as one line ("195 lb · −2 · Goal: 15 to go").
 - [ ] 15. Fix the body weight input showing "lb" twice.
@@ -189,6 +216,7 @@ From a review of the current screens. None of these are committed to: pick what 
 
 ### Any time: day columns and cards
 
+#todo/priority/Low
 - [ ] 19. Group the column controls (rest day, swap, only this week) into a "⋯" menu.
 - [ ] 20. Move "+ Add exercise" to the bottom of the column.
 - [ ] 21. Bigger or menu-based swap arrows.
@@ -208,6 +236,7 @@ From a review of the current screens. None of these are committed to: pick what 
 
 ### Any time: Log sheet and timer
 
+#todo/priority/Low
 - [ ] 34. Put rarely used fields (1RM, video link, equipment, default-phase boxes) under "More options".
 - [ ] 35. Date as a small "Today ▾" chip.
 - [ ] 36. Keep Save and Cancel pinned to the bottom of the sheet.
@@ -222,6 +251,7 @@ From a review of the current screens. None of these are committed to: pick what 
 
 ### Any time: Progress, Muscles and Program tabs
 
+#todo/priority/Low
 - [ ] 43. Fill the empty gap in the Progress layout.
 - [ ] 44. Move body weight and the goal up next to the other numbers.
 - [ ] 45. Draw the weight goal as a dashed target line on the chart.
@@ -237,27 +267,32 @@ From a review of the current screens. None of these are committed to: pick what 
 
 ### Any time: across the app
 
+#todo/priority/High
+- [ ] 71. React error boundary with a "Something went wrong, export your data" fallback, so a render error isn't a white screen.
+#todo/priority/Low
 - [ ] 57. Messages: short notices at the bottom of the screen, with Undo where it applies, instead of the easy-to-miss line under the header.
 - [ ] 59. Recheck dark mode and contrast for the newer pieces (Mobility purple, equipment labels, goal bar).
 - [ ] 68. PR celebration: a badge or toast on save when a set beats the best weight or estimated 1RM.
 - [ ] 70. Helpful empty states on Progress, Muscles and Trends instead of blank charts.
-- [ ] 71. React error boundary with a "Something went wrong, export your data" fallback, so a render error isn't a white screen.
 - [ ] 72. Code-split the heavy tabs (Progress, Muscles, Settings). The xlsx library is already lazy (`loadXLSX`, its own 160 kB gzip chunk). The main bundle is about 158 kB gzip and the app is cached offline, so the gain is small; low priority.
 - [ ] 73. Keyboard shortcuts on desktop (e.g. L to log, T for the timer) with a list in Settings.
 - [ ] 74. Printable week view, or share a session summary with `navigator.share`.
 
 ### After the backend
 
+#todo/priority/Low
 - [ ] 54. Regroup Settings into Training, Data and App. Do this after step 4, because the Data section changes when GitHub backup and JSON import are removed. If the app goes multi-user, do it before launch, since an Account section will crowd Settings.
 - [ ] 58. First-run guide (pick a program, log a set, check a day). Do this once sign-in exists, so it can include signing in and syncing. If the app goes multi-user, it moves into the "Multi-user readiness" list under step 3.
 - [ ] Feature to add excercise to experiment and remove from program
 
 ## Anytime
 
+#todo/priority/Low
 - [ ] Add a link to a Google feedback form in Settings.
 
 ### TypeScript migration (leftovers; the main work is done, see [[typescript-migration]])
 
+#todo/priority/Low
 - [ ] Convert `App.jsx` and `main.jsx` to TypeScript, and change `index.html` to `/src/main.tsx` in the same PR. Gives a fully TypeScript source tree (apart from `fonts.js`, the tests and tooling).
 - [ ] Convert the remaining presentational components when next edited: `Daily`, `Medical`, `LineChart`, `Muscles`, `TimerBar`, `UpdateBanner`.
 - [ ] Try TypeScript lint rules to stop new `any` (`oxlint-tsgolint`): costs one dev dependency and some CI time; worth it now that component `any` is down to 2.
