@@ -18,7 +18,7 @@ Relates:
 Peer Reviewed: 0
 dg-publish:
 ---
-![[01. Fundamentals/Language Overlap/Algorithms & Data Structures/_Infographic/graph Pathway.gif]]
+![[graph Pathway.gif]]
 
 # Choosing the Right Algorithm for Shortest Path Problems
 

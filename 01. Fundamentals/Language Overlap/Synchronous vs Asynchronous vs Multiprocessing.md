@@ -38,7 +38,7 @@ async/await is syntactic sugar it looks Synchronous but is Asynchronous 
 
 
 
-![[01. Fundamentals/Language Overlap/_Infographic/aysnc func generating task.png]]
+![[aysnc func generating task.png]]
 
 
 https://www.youtube.com/watch?v=0vFgKr5bjWI 

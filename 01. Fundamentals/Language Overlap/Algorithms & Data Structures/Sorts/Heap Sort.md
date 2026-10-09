@@ -15,7 +15,7 @@ Relates:
 Peer Reviewed: 0
 dg-publish: false
 ---
-![[01. Fundamentals/Language Overlap/Algorithms & Data Structures/_Infographic/HeapSort.gif]]
+![[HeapSort.gif]]
 
 
 The heapsort algorithm utilizes the heap data structure. Here's a refined summary of the process:

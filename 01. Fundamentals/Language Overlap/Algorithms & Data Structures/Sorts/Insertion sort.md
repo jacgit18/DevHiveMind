@@ -16,7 +16,7 @@ Relates:
 Peer Reviewed: 0
 dg-publish: false
 ---
-![[01. Fundamentals/Language Overlap/Algorithms & Data Structures/_Infographic/InsertionSort.gif]]
+![[InsertionSort.gif]]
 
 This is an in-place comparison-based sorting algorithm. Here, a sub-list is maintained which is always sorted. For example, the lower part of an array is maintained to be sorted. An element that is to be 'inserted in this sorted sub-list, has to find its appropriate place, and then it has to be inserted there. Hence the name, insertion sort.  
   

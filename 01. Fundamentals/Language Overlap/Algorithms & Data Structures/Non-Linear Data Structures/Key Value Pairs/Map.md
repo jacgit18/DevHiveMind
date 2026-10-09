@@ -25,7 +25,7 @@ In computer science, the term "map" refers to a data structure that stores colle
 
 In Java, a map is an interface with built-in methods, while a hashmap is a specific implementation of the map with its own set of methods. A hash table is another implementation of the map interface.
 
-![[01. Fundamentals/Language Overlap/Algorithms & Data Structures/_Infographic/Map Structure.png]]
+![[Map Structure.png]]
 
 ```java
 Map capitalCities = new HashMap();  
@@ -45,7 +45,7 @@ const capitalCities: Map<string, string> = new Map<string, string>();
 - Maps are ideal for key-value association mapping, such as dictionaries, zip codes to cities, manager-employee relationships, or classes and students.
 - Maps do not allow duplicate keys, but some implementations permit null keys and values. The order of a map depends on the specific implementation, with TreeMap and LinkedHashMap offering predictable orders, unlike HashMap.
 
-![[01. Fundamentals/Language Overlap/Algorithms & Data Structures/_Infographic/MapHeiarchyJava.png]]
+![[MapHeiarchyJava.png]]
 
 ## LinkedHashMap and TreeMap
 

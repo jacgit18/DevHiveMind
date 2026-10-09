@@ -24,7 +24,7 @@ dg-publish: false
 
 ## Class Diagram 
 This product class diagram can repurposed for functions which would increase number of tables.
-![[01. Fundamentals/Language Overlap/_Infographic/Class Diagram.png]]
+![[Class Diagram.png]]
 ### ChatGpt Prompt
 #todo/prompts
 - [ ] Create a module functional programming structural model for a driving school website

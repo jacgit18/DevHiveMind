@@ -13,7 +13,7 @@ Relates:
 Peer Reviewed: 0
 dg-publish:
 ---
-![[01. Fundamentals/Language Overlap/Algorithms & Data Structures/_Gif/RuntimeProcess.gif]]
+![[RuntimeProcess.gif]]
 
 I view data structures as diverse arrangements of key-value objects, each structured with unique advantages and drawbacks. Then you have algorithms were  you create a class with specialized functions to manipulate the structure. This class then acts as a wrapper, encapsulating both the data structure and its associated functionality. This conceptual approach embraces the principles of object-oriented programming, although the implementation specifics may vary depending on the particular data structure and programming language employed.
 

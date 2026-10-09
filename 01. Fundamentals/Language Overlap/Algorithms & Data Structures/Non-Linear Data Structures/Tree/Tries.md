@@ -12,7 +12,7 @@ Relates:
 Peer Reviewed: 0
 dg-publish:
 ---
-![[01. Fundamentals/Language Overlap/Algorithms & Data Structures/_Infographic/Trie.gif]]
+![[Trie.gif]]
 
 A **Trie**, pronounced as 'try' and also known as a prefix tree, is a specialized type of search tree used for efficient word storage and retrieval. In a Trie, data is organized in a stepwise fashion, where each step corresponds to a node in the Trie. This data structure is commonly employed for quick word lookups, such as in auto-complete features.
 

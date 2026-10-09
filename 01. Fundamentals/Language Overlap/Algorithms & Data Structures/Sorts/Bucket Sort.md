@@ -15,7 +15,7 @@ Relates:
 Peer Reviewed: 0
 dg-publish: false
 ---
-![[01. Fundamentals/Language Overlap/Algorithms & Data Structures/_Infographic/BucketSort.gif]]
+![[BucketSort.gif]]
 
 Bucket sort is particularly effective when dealing with uniformly distributed input over a specified range. For example, imagine sorting a large set of floating-point numbers ranging from 0.0 to 1.0, distributed uniformly across this range. 
 

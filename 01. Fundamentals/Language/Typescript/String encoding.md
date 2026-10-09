@@ -12,7 +12,7 @@ Relates:
 Peer Reviewed: 0
 dg-publish:
 ---
-![[01. Fundamentals/Language/_Infographic/encoding v encrypt v token.gif]]
+![[encoding v encrypt v token.gif]]
 #todo/Low/Dev 
 - [ ] figure out were to put infographic
 

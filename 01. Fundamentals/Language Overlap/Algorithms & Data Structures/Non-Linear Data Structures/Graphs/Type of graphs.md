@@ -13,7 +13,7 @@ Relates: "[[01. Fundamentals/Language Overlap/Algorithms & Data Structures/Non-L
 Peer Reviewed: 0
 dg-publish:
 ---
-![[01. Fundamentals/Language Overlap/Algorithms & Data Structures/_Infographic/Graph.gif]]
+![[Graph.gif]]
 
 ## Graph
 

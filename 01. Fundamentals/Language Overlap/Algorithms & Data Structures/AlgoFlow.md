@@ -13,7 +13,7 @@ Relates: "[[01. Fundamentals/Language Overlap/Flow of Control]]"
 Peer Reviewed: 0
 dg-publish:
 ---
-![[01. Fundamentals/Language Overlap/Algorithms & Data Structures/_Infographic/AlgoFlow.png]]
+![[AlgoFlow.png]]
 
 ## When Reading Documentation
 
@@ -26,7 +26,7 @@ When delving into documentation about a framework, library, language, technology
 -   [[01. Fundamentals/Language Overlap/Declarative Coding]]
 -   [[01. Fundamentals/Language Overlap/Imperative Coding]]
 
-![[01. Fundamentals/Language Overlap/Algorithms & Data Structures/_Infographic/paradigms.png]]
+![[paradigms.png]]
 
 ### High Level Example
 

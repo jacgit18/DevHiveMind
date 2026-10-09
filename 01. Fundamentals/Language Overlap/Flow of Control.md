@@ -14,7 +14,7 @@ Relates:
 Peer Reviewed: 0
 dg-publish:
 ---
-![[01. Fundamentals/Language Overlap/_Infographic/Flow of control.gif]]
+![[Flow of control.gif]]
 
 The "flow of control" in computer programming refers to the order in which a program's instructions or statements are executed. It determines how a program progresses from one statement to another, making decisions, looping, and branching as necessary. Understanding the flow of control is fundamental to writing and understanding computer programs. Here are some key concepts related to the flow of control in programming:
 

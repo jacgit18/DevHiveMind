@@ -14,7 +14,7 @@ Relates:
 Peer Reviewed: 0
 dg-publish: false
 ---
-![[01. Fundamentals/Language Overlap/Algorithms & Data Structures/_Infographic/MergeSort.gif]]
+![[MergeSort.gif]]
 
 
 - **Merge Sort**: This sorting technique is based on the divide and conquer method and is known for its worst-case time complexity of `Ο(n log n)` or *Linearithmic Time*, making it highly respected.
@@ -28,7 +28,7 @@ dg-publish: false
 - **External Sorting**: For scenarios where you have huge files that can't fit entirely in memory and need an external sorting process, Merge sort becomes suitable because space complexity matters less in such cases.
 
 
-![[01. Fundamentals/Language Overlap/Algorithms & Data Structures/_Coding Whiteboard/mergeSort.png]]
+![[mergeSort.png]]
 
 
 

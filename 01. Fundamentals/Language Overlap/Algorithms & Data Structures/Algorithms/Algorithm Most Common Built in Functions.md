@@ -257,7 +257,7 @@ regex1.exec(str1)
 ```
 The string against which to match the regular expression. If the match succeeds, the exec() method returns an array or null if fail 
 
-# Common [[01. Fundamentals/Language Overlap/Algorithms & Data Structures/Linear  Data Structures/Arrays|Array]] Functions  
+# Common [[Arrays|Array]] Functions  
 
 ### Array to String 
 ```javascript

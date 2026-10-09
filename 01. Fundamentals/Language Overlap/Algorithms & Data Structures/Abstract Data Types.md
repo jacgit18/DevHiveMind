@@ -14,7 +14,7 @@ Relates:
 Peer Reviewed: 0
 dg-publish:
 ---
-![[01. Fundamentals/Language Overlap/Algorithms & Data Structures/_Gif/Abstract Data.gif]]
+![[Abstract Data.gif]]
 
 #todo/BAU/noteRefine 
 - [ ] combine with other notes that make sense, or delete 

@@ -14,7 +14,7 @@ dg-publish:
 ---
 A linked list consists of nodes, with each node containing data and a pointer that links to the next node, creating a chain. The first node in the list is known as the head, and the last node, which points to null, is known as the tail.
 
-![[01. Fundamentals/Language Overlap/Algorithms & Data Structures/_Infographic/SingleyLinkedLists.png]]
+![[SingleyLinkedLists.png]]
 
 You can create a Linked List like this:
 

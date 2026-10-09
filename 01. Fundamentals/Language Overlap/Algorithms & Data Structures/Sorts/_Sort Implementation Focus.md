@@ -13,7 +13,7 @@ Relates:
 Peer Reviewed: 0
 dg-publish: false
 ---
-![[01. Fundamentals/Language Overlap/Algorithms & Data Structures/_Gif/Sorts.gif]]
+![[Sorts.gif]]
 #todo/BAU/noteRefine 
 - [ ] combine with other notes that make sense, or delete 
 

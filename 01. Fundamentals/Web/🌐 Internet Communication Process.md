@@ -15,7 +15,7 @@ Relates:
 Peer Reviewed: 0
 dg-publish: false
 ---
-![[01. Fundamentals/Web/_Infographic/Protocol.gif]]
+![[Protocol.gif]]
 
 #todo/BAU/noteRefine 
 - [ ] clean up
@@ -32,7 +32,7 @@ Sometimes the backend architecture requires real-time Bidirectional communicatio
 
 Ultimately, learning communication protocols is important for a backend engineer, and it is possible to go as deep as desired in any protocol. Maybe one day you will write an RFC proposing a new protocol.
 
-![[01. Fundamentals/Web/_Infographic/2025-12-23 17.38.10 photos.google.com 0d538aab8012.png]]
+![[2025-12-23 17.38.10 photos.google.com 0d538aab8012.png]]
 
 
 #### Website Hosting and Servers
@@ -71,11 +71,11 @@ Ultimately, learning communication protocols is important for a backend engineer
 
 
 
-![[01. Fundamentals/Web/_Infographic/Network Protocols.gif]]
+![[Network Protocols.gif]]
 
 
 
-![[01. Fundamentals/Web/_Infographic/OSI Layer.jpg]]
+![[OSI Layer.jpg]]
 <mark style="background: #BBFABBA6;">7 user levels with certain protocols are used  and data is created to be sent or is opened after received </mark>
 
 <mark style="background: #BBFABBA6;">6 data is formatted and encryption is handled here </mark>
@@ -91,11 +91,11 @@ Ultimately, learning communication protocols is important for a backend engineer
 <mark style="background: #FFB86CA6;">1 is like the Ethernet   </mark>
 
 
-![[01. Fundamentals/Web/_Infographic/OSI Layer.gif]]
+![[OSI Layer.gif]]
 
-![[01. Fundamentals/Web/_Infographic/Network security By Layer.gif]]
+![[Network security By Layer.gif]]
 
-![[01. Fundamentals/Web/_Infographic/Network Protocols Applied.jpeg]]
+![[Network Protocols Applied.jpeg]]
 
 
 

@@ -12,7 +12,7 @@ Relates:
 Peer Reviewed: 0
 dg-publish:
 ---
-![[01. Fundamentals/Language/_Infographic/Typescript/JavaScript Modules.gif]]
+![[JavaScript Modules.gif]]
 The explanation you provided is a good overview of the evolution of JavaScript module patterns, from immediately-invoked function expressions (IIFE) to the more modern module export and import syntax.
 
 To further refine the explanation:

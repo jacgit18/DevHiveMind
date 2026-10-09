@@ -13,7 +13,7 @@ Relates: "[[01. Fundamentals/Language Overlap/Algorithms & Data Structures/Type 
 Peer Reviewed: 0
 dg-publish:
 ---
-![[01. Fundamentals/Language Overlap/Algorithms & Data Structures/_Infographic/DoubleCircularLinkedLists.png]]
+![[DoubleCircularLinkedLists.png]]
 
 
 A circular doubly linked list is a mixture of a doubly linked list and a circular linked list. Like the doubly linked list, it has an extra pointer called the previous pointer, and similar to the circular linked list, its last node points at the head node. This type of linked list is the bi-directional list. So, you can traverse it in both directions.

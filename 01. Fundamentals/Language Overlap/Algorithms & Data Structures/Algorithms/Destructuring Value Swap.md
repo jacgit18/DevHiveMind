@@ -8,7 +8,7 @@ Purpose: This documentation discusses swapping values in an array.
 Status: Done
 Started:
 EditDate: 2024-02-29
-Relates: "[[01. Fundamentals/Language Overlap/Algorithms & Data Structures/Linear  Data Structures/Arrays]]"
+Relates: "[[Arrays]]"
 Peer Reviewed: 0
 dg-publish:
 ---

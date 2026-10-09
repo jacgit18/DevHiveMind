@@ -15,7 +15,7 @@ dg-publish:
 ---
 
 
-![[01. Fundamentals/Language Overlap/Algorithms & Data Structures/_Infographic/CircularLinkedLists.png]]
+![[CircularLinkedLists.png]]
 
 
 

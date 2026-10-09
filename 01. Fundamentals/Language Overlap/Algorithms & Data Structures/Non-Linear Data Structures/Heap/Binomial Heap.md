@@ -13,7 +13,7 @@ Relates:
 Peer Reviewed: 0
 dg-publish:
 ---
-![[01. Fundamentals/Language Overlap/Algorithms & Data Structures/_Infographic/bin.jpeg]]
+![[bin.jpeg]]
 
 A Binomial Heap is a collection of Binomial Trees, where each Binomial Tree adheres to the Min-Heap property, and there can be at most one Binomial Tree of any degree.
 

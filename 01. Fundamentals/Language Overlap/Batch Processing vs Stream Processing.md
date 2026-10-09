@@ -13,7 +13,7 @@ Relates:
 Peer Reviewed: 0
 dg-publish:
 ---
-![[01. Fundamentals/Language Overlap/_Infographic/Processing Types.png]]
+![[Processing Types.png]]
 
 ### Batch Processing
 - **Definition:** Batch processing involves the execution of a set of tasks or jobs at once, processing a fixed amount of data that accumulates data over a period or until a certain threshold is met before processing it as a single group.

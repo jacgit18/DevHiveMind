@@ -9,7 +9,7 @@ Purpose: This documentation discusses the different types of Arrays.
 Status: Done
 Started: 2024-02-29
 EditDate:
-Relates: "[[01. Fundamentals/Language Overlap/Algorithms & Data Structures/Linear  Data Structures/Arrays]]"
+Relates: "[[Arrays]]"
 Peer Reviewed: 0
 dg-publish: true
 ---
@@ -18,7 +18,7 @@ Exploring array structures in programming reveals a diverse spectrum of data org
 ### 1. **1D Array:**
 A one-dimensional array represents the simplest form of an array where elements are stored in a linear sequence. This structure is ideal for storing lists of items that can be accessed sequentially or via an index.
 
-![[01. Fundamentals/Language Overlap/Algorithms & Data Structures/_Infographic/1D Array.png]]
+![[1D Array.png]]
 
 - **Example:**
   ```javascript
@@ -27,7 +27,7 @@ A one-dimensional array represents the simplest form of an array where elements 
 
 ### 2. **2D Array:**
 Two-dimensional arrays extend the concept by incorporating an additional dimension, resembling a grid or matrix. This allows for a more complex organization, suitable for tabular data or spatial representations.
-![[01. Fundamentals/Language Overlap/Algorithms & Data Structures/_Infographic/2D Array.png]]
+![[2D Array.png]]
 
 - **Example:**
   ```javascript

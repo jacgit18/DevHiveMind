@@ -15,7 +15,7 @@ Relates: "[[01. Fundamentals/Language Overlap/Algorithms & Data Structures/Algor
 Peer Reviewed: 0
 dg-publish:
 ---
-![[01. Fundamentals/Language Overlap/Algorithms & Data Structures/_Gif/many Ways.gif]]
+![[many Ways.gif]]
 
 
 ## Linear iteration

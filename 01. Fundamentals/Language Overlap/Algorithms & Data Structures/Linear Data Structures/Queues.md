@@ -13,7 +13,7 @@ Relates:
 Peer Reviewed: 0
 dg-publish:
 ---
-![[01. Fundamentals/Language Overlap/Algorithms & Data Structures/_Gif/Standard queue.gif]]
+![[Standard queue.gif]]
 
 
 Queues are similar to stacks but follow a "first in, first out" (FIFO) order, much like a checkout line. Dynamic queues can grow in size and are particularly useful for background processes and task scheduling. They find extensive use in applications such as cron jobs, memory management, and various background activities.
@@ -47,4 +47,4 @@ Additionally, [[01. Fundamentals/Language Overlap/Algorithms & Data Structures/N
 Storing a binary heap as an array is advantageous due to lower memory usage, simpler memory management, and better locality of reference compared to a linked list implementation.
 
 
-![[01. Fundamentals/Language Overlap/Algorithms & Data Structures/_Infographic/Queues.gif]]
+![[Queues.gif]]

@@ -15,7 +15,7 @@ Relates:
 Peer Reviewed: 0
 dg-publish: true
 ---
-![[01. Fundamentals/Web/_Infographic/Polling vs Webhooks.png]]
+![[Polling vs Webhooks.png]]
 
 ### Polling vs. Webhooks: Models of Communication
 

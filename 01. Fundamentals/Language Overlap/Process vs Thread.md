@@ -30,7 +30,7 @@ Registers are used by the CPU when it's currently running a particular thread. W
 "There isn't a direct way to stop a thread in Java. Often, you have to wait for a thread to die when it finishes executing. If you need to manually kill a thread, you can use a Volatile boolean variable within a thread that throws an exception when triggered from another thread."
 
 Each parent thread Can have up to 4 Child thread  running concurrently 
-![[01. Fundamentals/Language/_Infographic/Java/Concurrencey.jpg]]
+![[Concurrencey.jpg]]
 
 
 Multithreading is used to run things in Parallel or Parallel Processing
@@ -59,22 +59,22 @@ writer.write("Total: " + total);
 
 ```
 
-![[01. Fundamentals/Language/_Infographic/Java/Adder classes.jpg]]
+![[Adder classes.jpg]]
 
 ## single thread usage
-![[01. Fundamentals/Language/_Infographic/Java/Using Adder classes.jpg]]
+![[Using Adder classes.jpg]]
 
-![[01. Fundamentals/Language/_Infographic/Java/Process on single thread.jpg]]
+![[Process on single thread.jpg]]
 
 **Main thread waits for other threads
-![[01. Fundamentals/Language/_Infographic/Java/Processing on multi thread.jpg]]
+![[Processing on multi thread.jpg]]
 
 ## Thread foundation type 
 
 Runnable interface
 - Represents a task to be run on a thread  
 - only member is the run method
-![[01. Fundamentals/Language/_Infographic/Java/Adder with thread.jpg]]
+![[Adder with thread.jpg]]
 
 
 Thread class
@@ -82,7 +82,7 @@ Thread class
 - Can interact with and effect thread state  
 - Begin execution with start method
 
-![[01. Fundamentals/Language/_Infographic/Java/Running Adder on thread.jpg]]
+![[Running Adder on thread.jpg]]
 
 ```Java 
 
@@ -100,7 +100,7 @@ thread.join(); // Blocks waiting for thread completion
 ```
 
 
-![[01. Fundamentals/Language/_Infographic/Java/Running Adder on thread Blocks.jpg]]
+![[Running Adder on thread Blocks.jpg]]
 
 ## Thread pool type  
   [[01. Fundamentals/Language Overlap/Thread pools]]
@@ -121,7 +121,7 @@ Executors class
 
 
 
-![[01. Fundamentals/Language/_Infographic/Java/Thread pool.jpg]]
+![[Thread pool.jpg]]
 
 ## Threading relationship Types 
 

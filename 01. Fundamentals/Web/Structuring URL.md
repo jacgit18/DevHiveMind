@@ -16,7 +16,7 @@ Relates: "[[03. Application Structure/Design & Principles/Principles/Naming Conv
 Peer Reviewed: 0
 dg-publish: false
 ---
-![[01. Fundamentals/Web/_Infographic/URL Structure.jpeg]]
+![[URL Structure.jpeg]]
 
 A URI, or Universal Resource Identifier, is a concise character sequence identifying an abstract or physical resource. It serves as a versatile method for naming and locating web resources. Official examples highlight that any character sequence identifying a resource is considered a URI. The whole thing is considered the URI so `scheme/protocol` to the`Anchor/Fragment` which is optional this identifies something specific as a function of the [[01. Fundamentals/Web/Structuring URL#Document|document]]. ^9e3d3d
 
@@ -26,7 +26,7 @@ A URN(Universal Resource Name), as another subset, functions as a distinctive na
 
 For example, a URN like `oasis:names:specification:docbook` differs from a resource name such as `linkedin.com/learning/instructors/morten-rand-hendrikson`. It's important to note that a URN can also function as a URL, but this is not mandatory. In the realm of REST APIs, the inclusive term URI is frequently employed, encompassing URLs, URNs, or a combination of both, offering flexibility in code implementations.
 
-![[01. Fundamentals/Web/_Infographic/Url Process.gif]]
+![[Url Process.gif]]
 
 > A side note on hostnames: A hostname is a composition of the subdomain, domain, and top-level domain (TLD). For instance, examples like www.youtube.com or mail.gmail.com illustrate this combination. The top-level domain represents the most generic domain in the Internet's hierarchical DNS (Domain Name System), including familiar endings like `com`, `org`, and various others.
 # URI Path Design Guidelines for REST APIs:

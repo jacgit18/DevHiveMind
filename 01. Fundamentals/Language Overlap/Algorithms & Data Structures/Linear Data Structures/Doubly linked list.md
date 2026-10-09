@@ -13,7 +13,7 @@ Relates: "[[01. Fundamentals/Language Overlap/Algorithms & Data Structures/Type 
 Peer Reviewed: 0
 dg-publish:
 ---
-![[01. Fundamentals/Language Overlap/Algorithms & Data Structures/_Infographic/DoubleLinkedLists.gif]]
+![[DoubleLinkedLists.gif]]
 
 Let you go backwards through the list  
   
@@ -23,6 +23,6 @@ Searching through the doubly link list can be more efficient
   
 Doubly linked list can take up more memory
 
-![[01. Fundamentals/Language Overlap/Algorithms & Data Structures/_Infographic/DoubleLinkedListsStill.png]]
+![[DoubleLinkedListsStill.png]]
 
 

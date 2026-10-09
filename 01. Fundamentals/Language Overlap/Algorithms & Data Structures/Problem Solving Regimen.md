@@ -13,7 +13,7 @@ Relates:
 Peer Reviewed: 0
 dg-publish:
 ---
-![[01. Fundamentals/Language Overlap/Algorithms & Data Structures/_Gif/Regimen.gif]]
+![[Regimen.gif]]
 ## Prep  
 *Master algorithms get to the point were you can solve within 5 to 20 min or show your breath of knowledge within the time-frame of the interview  
 >[!note] 
@@ -35,7 +35,7 @@ dg-publish:
 	- Space out attempts, allowing time for fresh perspectives.
 	- The Naive solution can be done [[01. Fundamentals/Language Overlap/Algorithms & Data Structures/Common Imperative Algorithms|Imperatively]] or [[01. Fundamentals/Language Overlap/Algorithms & Data Structures/Common Declarative Algorithms|Declarative]] consider doing both ways to see if you can do it.
 	- Also think about [[01. Fundamentals/Language Overlap/Algorithms & Data Structures/All Sorts of Sorts|Sorting]] algorithms in terms what can be applied, you don't necessarily need write one but you can use a pre-made sorting algorithm.
-	- Lastly consider runtime complexity and data structures brainstorming thinking about their application in terms of access, searching, insertion, and deletion both [[01. Fundamentals/Language Overlap/Algorithms & Data Structures/Linear  Data Structures/Linear Data Structure Runtime Comparison|Linear]] and [[01. Fundamentals/Language Overlap/Algorithms & Data Structures/Non-Linear Data Structures/Non-Linear Data Structure Runtime Comparison|Non-Linear]]
+	- Lastly consider runtime complexity and data structures brainstorming thinking about their application in terms of access, searching, insertion, and deletion both [[Linear Data Structure Runtime Comparison|Linear]] and [[01. Fundamentals/Language Overlap/Algorithms & Data Structures/Non-Linear Data Structures/Non-Linear Data Structure Runtime Comparison|Non-Linear]]
 
   
 4. [[01. Fundamentals/Language Overlap/Algorithms & Data Structures/AlgoFlow#**Optimal Algorithm**|Optimal]] **Solution & [[01. Fundamentals/Language Overlap/Algorithms & Data Structures/Patterns/Key Base Attributes of  Grokking Algorithm patterns|Grokking Algorithm]] Patterns**:

@@ -13,7 +13,7 @@ Relates:
 Peer Reviewed: 0
 dg-publish: true
 ---
-![[01. Fundamentals/Web/_Infographic/DNS resolve.png]]
+![[DNS resolve.png]]
 
 DNS, or Domain Name System, is a decentralized system that translates human-readable domain names (like www.example.com) into IP addresses used by computers to identify each other on a network. Essentially, DNS acts as a directory service for the internet, allowing users to access websites and other online resources using easily memorable names instead of numerical IP addresses.
 

@@ -13,7 +13,7 @@ Relates:
 Peer Reviewed: 0
 dg-publish:
 ---
-![[01. Fundamentals/Language Overlap/_GIF/Primitive.gif]]
+![[Primitive.gif]]
 
 In JavaScript, a primitive (primitive value, primitive data type) is data that is not an Object and has no methods.  
 

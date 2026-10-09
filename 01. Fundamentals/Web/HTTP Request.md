@@ -14,7 +14,7 @@ Relates:
 Peer Reviewed: 0
 dg-publish: true
 ---
-![[01. Fundamentals/Web/_Infographic/Http Request Method.gif]]
+![[Http Request Method.gif]]
 
 The process of navigating to a website involves a request from the application layer, which may traverse the transport and session layers before reaching the DNS.
 
@@ -49,7 +49,7 @@ Rule: POST must be used to execute controllers 
 Tunneling refers to any abuse of HTTP that masks or misrepresents a message’s intent and undermines the protocol’s transparency. A REST API must not compromise its design by misusing HTTP’s request methods in an effort to accommodate clients with limited HTTP vocabulary. Always make proper use of the HTTP methods as specified by the rules in this section.
 
 ## HTTP Request Structure
-![[01. Fundamentals/Web/_Infographic/Request Structure.png]]
+![[Request Structure.png]]
 
 The `fetch()` method is used to make network requests, resolving to a `Response` object once the server responds with headers. It defaults to a GET request but can be configured for other methods like POST. The promise does not reject on HTTP errors; you need to check `Response.ok` or `Response.status` in a `then()` handler.
 

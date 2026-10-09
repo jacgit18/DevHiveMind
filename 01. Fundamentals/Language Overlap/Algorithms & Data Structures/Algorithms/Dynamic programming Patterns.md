@@ -106,7 +106,7 @@ function fibonacciMaster2(n) { 
 ```
 
 
-![[01. Fundamentals/Language Overlap/Algorithms & Data Structures/_Coding Whiteboard/fibBottomUpDPForward vs fibBottomUpDPBackward.png]]
+![[fibBottomUpDPForward vs fibBottomUpDPBackward.png]]
 
 ### Key dynamic programming patterns
 

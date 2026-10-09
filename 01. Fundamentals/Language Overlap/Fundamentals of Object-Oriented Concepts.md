@@ -14,7 +14,7 @@ Relates:
 Peer Reviewed: 0
 dg-publish:
 ---
-![[01. Fundamentals/Language Overlap/_Infographic/Inheritance Class Diagram.png]]
+![[Inheritance Class Diagram.png]]
 
 
 In the realm of programming, inheritance serves as a gateway to accessing the functionalities of another class. It facilitates the reuse of code and allows a class to inherit attributes and methods from a parent class. This mechanism promotes code organization and fosters a hierarchical structure in object-oriented programming.

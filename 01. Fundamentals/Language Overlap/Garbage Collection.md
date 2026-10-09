@@ -12,7 +12,7 @@ Relates:
 Peer Reviewed: 0
 dg-publish:
 ---
-![[01. Fundamentals/Language Overlap/_Infographic/goodbye-im-out.gif]]
+![[goodbye-im-out.gif]]
 Making memory free is the process of garbage collection 
 
 In JavaScript you don't need to allocate memory because it's a high level language 
@@ -133,7 +133,7 @@ On object creation, every object is given, by the VM, a 1 bit marking value, ini
 
 The garbage collector doesn't scan each object individually, but insteads starts from "root" objects. Examples of root objects are; local variabes, static class fields, active Java threads, and JNI references. The below animation visualizes what the object mark phase looks like: 
 
-![[01. Fundamentals/Language Overlap/_Infographic/Object Scanning.gif]]
+![[Object Scanning.gif]]
 
 ## Sweep 
 
@@ -162,6 +162,6 @@ Just like there are different regions of heap memory, there are also different t
 
 The below animation visualizes what a garbage collection looks like: 
 
-![[01. Fundamentals/Language Overlap/_Infographic/Visual Garbage Collection.gif]]
+![[Visual Garbage Collection.gif]]
 
-![[01. Fundamentals/Language Overlap/_Infographic/gc-process.gif]]
+![[gc-process.gif]]
