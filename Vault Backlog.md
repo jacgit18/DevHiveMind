@@ -4,7 +4,7 @@ Global backlog for the vault. Project backlogs stay in each project's own `docs/
 
 ## Vault cleanup
 
-#todo/priority/Low
+#todo/project/priority/Low
 - [ ] rename and finish image reallocations
 - [ ] deploy to dev garden
 - [ ] Resolve the 16 broken wikilinks listed in `AI Generated Content/broken-links-2026-10-09.md` (5 with a fuzzy-match suggestion to verify, 11 with no match). Fix each by retargeting, creating the note, or removing the link.

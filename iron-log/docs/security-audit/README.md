@@ -8,7 +8,8 @@ Commit `979f6ea920b44302abea3b394f402ebd66179c2e`, profile standard, whole repos
 
 - [[iron-log/docs/security-audit/run-1/REPORT|REPORT]]: summary, the two confirmed findings with fixes, the open leads, hardening notes, coverage.
 - [[iron-log/docs/security-audit/run-1/NEEDS-VALIDATION|NEEDS-VALIDATION]]: the five open leads with the exact blocker and a safe check for each.
-- [[iron-log/docs/security-audit/run-1/FINDINGS-DETAIL|FINDINGS-DETAIL]]: empty (nothing medium or above).
+- [[iron-log/docs/security-audit/run-1/VALIDATION-2026-10-09|VALIDATION-2026-10-09]]: the follow-up the next day: the sync finding fixed on a branch, and the open leads measured on a local Postgres (the unbounded `/api/auth` body is **reproduced** and fixed on a branch; storage growth, `import-legacy` and the rate-limiter bypass are reproduced; the backup bucket check is still the owner's). Read this after the report: it changes the status of most open leads.
+- [[iron-log/docs/security-audit/run-1/FINDINGS-DETAIL|FINDINGS-DETAIL]]: empty (nothing medium or above) as of the first report; see the validation note for the one lead that now looks higher.
 - [[iron-log/docs/security-audit/run-1/architecture|architecture]]: the architecture summary the hunters worked from.
 - Machine-readable: `run-1/findings.json` (12 records), `run-1/coverage-ledger.json` (39 units), `run-1/run-metadata.json`.
 - Evidence: `run-1/agents/*/artifacts/out/` (the promoted sandbox outputs the findings cite), `run-1/candidates/` (what each verifier was given), `run-1/results/` (each verifier's decision).

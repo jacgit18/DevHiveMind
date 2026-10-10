@@ -45,7 +45,7 @@
 **Interfaces:**
 - Produces (all from `src/lib/data.js`): `DAY_COUNT` (number, 7); `hasValidDays(p)` → boolean (true for `p.days.length` 6 or 7); `withAllDays(prog)` → a copy of `prog` with `days` padded to 7 by `{ title: 'Day N', slots: [] }`; `padLibrary(items)` → library items with each valid `prog` padded; `resolveProgram` now pads.
 
-#todo/priority/Low
+#todo/project/priority/Low
 - [ ] **Step 1: Write the failing tests**
 
 Create `src/lib/days.test.js`:
@@ -164,7 +164,7 @@ git commit -m "Programs have 7 days; 6-day programs and backups get an empty Day
 - Consumes: `DAY_COUNT` from `data.js`.
 - Produces (from `logic.js`): `DAYS` (`[1..7]`); `shownDay(rest, d)` → displayed day for program day `d` (clamped to 7); `programDay(rest, d)` → program day shown at displayed day `d`, or `null` for the rest column; `dayTitle(dayDef, d)` → heading text; `restBlocked(week, slots)` → boolean; `currentLayout(week, slots)` → `{1..7: slots[]}` in displayed days; `normWeek` keeps `rest`.
 
-#todo/priority/Low
+#todo/project/priority/Low
 - [ ] **Step 1: Write the failing tests**
 
 Append to `src/lib/logic.test.js` (add `DAYS, shownDay, programDay, dayTitle, restBlocked, currentLayout, normWeek` to its existing `./logic.js` import, adding only the names not already imported):
@@ -281,7 +281,7 @@ git commit -m "Rest day layout helpers: shownDay, programDay, restBlocked, week.
 - Consumes: `DAYS`, `currentLayout`, `shownDay` from `logic.js`; `DAY_COUNT` from `data.js`.
 - Produces: `weekSummary(...).days` is now 7 entries (0 not started, 1 partly, 2 complete); the rest day is 2.
 
-#todo/priority/Low
+#todo/project/priority/Low
 - [ ] **Step 1: Write the failing tests**
 
 In `src/lib/trends.test.js`, change line 21 to `expect(r.days).toEqual([1, 0, 2, 0, 0, 0, 0]);` (keep the trailing comment) and line 35's array to `[0, 0, 0, 0, 0, 0, 0]`. Add inside the `describe('weekSummary…')` block:
@@ -353,7 +353,7 @@ git commit -m "Stats count seven days; the rest day counts as complete"
 - Consumes: `normWeek` keeping `rest` (Task 2), `shownDay` from `logic.js`.
 - Produces: a `rest` row kind in the `Check-offs` sheet (`[week, 'rest', '', N]`); `week.rest` survives JSON and Excel round trips; `mergeWeek` keeps a rest day from either side.
 
-#todo/priority/Low
+#todo/project/priority/Low
 - [ ] **Step 1: Write the failing tests**
 
 Add to `src/lib/workbookRoundTrip.test.js` inside its `describe`:
@@ -432,7 +432,7 @@ git commit -m "Back up and restore each week's rest day in JSON and Excel"
 - Consumes: `programDay`, `shownDay`, `restBlocked`, `currentLayout` from `logic.js`.
 - Produces: `setRestDay(n)` → boolean (toggles `week.rest`; refuses with the Global Constraints message when blocked); `moveSlot(slotId, shownDayNumber)` maps to a program day and refuses the rest day; `setWarm(shownDayNumber, wid, on)` stores under the program day; `moveNote` gains `fromShown`.
 
-#todo/priority/Low
+#todo/project/priority/Low
 - [ ] **Step 1: Write the failing tests**
 
 In `src/store/useAppStore.test.js`, add `currentLayout` to the dynamic imports (`let ... currentLayout;` and `({ DEFAULT_CFG, currentLayout } = await import('../lib/logic.js'));`) and append:
@@ -573,7 +573,7 @@ git commit -m "Store: set a rest day; moves and warm-ups follow the shifted days
 
 There is no component test setup, so each step here is verified by running the app (Step 5).
 
-#todo/priority/Low
+#todo/project/priority/Low
 - [ ] **Step 1: Board logic**
 
 `src/components/board/Board.jsx`:
@@ -689,7 +689,7 @@ git commit -m "Board: seven days and a Rest day checkbox"
 **Files:**
 - Modify: `TODO.md`
 
-#todo/priority/Low
+#todo/project/priority/Low
 - [ ] **Step 1: Update the roadmap**
 
 In `TODO.md` section 2, replace the two items "Add a Day 7 to the board…" and "Add a Rest lane…" (with its sub-bullet) with:

@@ -10,7 +10,7 @@
 
 ---
 
-#todo/priority/High
+#todo/project/priority/High
 
 ## S1 — Login (Must)
 
@@ -32,7 +32,7 @@
 
 ---
 
-#todo/priority/High
+#todo/project/priority/High
 
 ## S2 — Manage accounts (Must)
 
@@ -51,7 +51,7 @@
 
 ---
 
-#todo/priority/High
+#todo/project/priority/High
 
 ## S3 — Category list (Must)
 
@@ -69,7 +69,7 @@
 
 ---
 
-#todo/priority/High
+#todo/project/priority/High
 
 ## S4 — Manual transactions (Must)
 
@@ -92,7 +92,7 @@
 
 ---
 
-#todo/priority/High
+#todo/project/priority/High
 
 ## S5 — CSV import (Must) — large, splittable
 
@@ -115,7 +115,7 @@
 
 ---
 
-#todo/priority/Low
+#todo/project/priority/Low
 
 ## S6 — Monthly budgets (Should)
 
@@ -133,7 +133,7 @@
 
 ---
 
-#todo/priority/High
+#todo/project/priority/High
 
 ## S7 — Dashboard (Must) — large, splittable per widget
 

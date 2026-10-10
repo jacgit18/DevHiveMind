@@ -1,0 +1,10 @@
+import { execSync } from 'node:child_process';
+const [mib, n] = [Number(process.argv[2]), Number(process.argv[3])];
+const pad = 'x'.repeat(mib * 1024 * 1024);
+const body = Buffer.from(JSON.stringify({ provider: 'google', callbackURL: '/', pad }));
+let peak = 0; const mem = () => { try { const s = execSync("docker stats --no-stream --format '{{.MemUsage}}' audit-auth", { encoding: 'utf8' }).split('/')[0].trim(); const v = parseFloat(s); return s.includes('GiB') ? v * 1024 : v; } catch { return 0; } };
+const t = setInterval(() => { peak = Math.max(peak, mem()); }, 700);
+const res = await Promise.allSettled(Array.from({ length: n }, () => fetch('http://127.0.0.1:18080/api/auth/sign-out', { method: 'POST', headers: { 'content-type': 'application/json' }, body }).then(r => r.status)));
+clearInterval(t); peak = Math.max(peak, mem());
+const st = JSON.parse(execSync('docker inspect audit-auth --format "{{json .State}}"', { encoding: 'utf8' }));
+console.log(JSON.stringify({ bodyMiB: mib, concurrent: n, statuses: res.map(r => r.status === 'fulfilled' ? r.value : 'ERR:' + (r.reason?.cause?.code || r.reason?.message)), peakMemMiB: Math.round(peak), oomKilled: st.OOMKilled, running: st.Running, restarts: Number(execSync('docker inspect audit-auth --format "{{.RestartCount}}"', { encoding: 'utf8' })) }));

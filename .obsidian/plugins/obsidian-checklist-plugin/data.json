@@ -100,8 +100,8 @@
     "#todo/bau/prompts",
     "#todo/high/dev",
     "#todo/low/buisness",
-    "#todo/priority/high",
-    "#todo/priority/low",
+    "#todo/project/priority/high",
+    "#todo/project/priority/low",
     "#todo/prompts"
   ],
   "_hiddenTags": []

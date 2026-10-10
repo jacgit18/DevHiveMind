@@ -10,14 +10,14 @@ Live since 2026-10-08: revision `iron-log-00005-wvl`, deployed by CI. These are 
 
 - [x] (checked 2026-10-08: the owner's row, id 1, already had `is_admin = true`; two other accounts have signed up, neither admin) Set `is_admin` on the owner's row in production by hand (B2f): `update users set is_admin = true where auth_user_id = (select id from auth."user" where email = '<email>')`. The app role cannot do this.
 - [x] Stale branches (done 2026-10-08): 89 remote and all local branches deleted, including the old `import-fixes`, `pwa`, `react-conversion`, `wcag-aaa` and the unpushed spike branch `spike-s0-signin`. Left on GitHub: `main`, `data` (backups), `pr-screenshots` (the screenshots workflow). Names and commit ids are in `restore_remote.txt` and `restore_local.txt` in this folder, if one is needed back.
-#todo/priority/High
+#todo/project/priority/High
 - [ ] **First installed-iPhone PWA sign-in** (open S0 item below). Add to Home Screen, open from the icon, sign in with Google, close and reopen, still signed in. If it fails, reopen ADR 004 and the same-origin choice in ADR 010.
-- [ ] Confirm the Neon **owner** password was rotated (it lives only in the local `.env`; the app and CI use `ironlog_app`).
+- [ ] Confirm the Neon **owner** password was rotated (it lives only in the local `.env`; the app and CI use `ironlog_app`).j
 - [ ] Rehearse a Neon restore and a failing migration on a Neon branch (FM-20, FM-21, FM-24). Phase F listed both; they were not done.
 - [ ] Watch for a missed nightly backup: the alert cannot cover "no backup for a day". Look now and then at `PROJECT_ID=iron-log-jacgit18 scripts/backup-cloud-run.sh list`.
 - [ ] GitHub Actions: `ubuntu-latest` moves to Ubuntu 26 on 2026-10-19 (notice in the deploy log). Run the workflows once after that date, or pin `ubuntu-24.04`.
 - [ ] Personal defaults must not leak into a new account (also covers the same item under Multi-user readiness below). Decision in [[016-new-account-starting-state]]. **Status 2026-10-09:** steps 1 and 3 and the stretches extension are built on branch `f-no-board-until-loaded-2` (3 commits ahead of `main`, merge pending): a new account gets the blank program (`BLANK`, `settleStart`), a first-run prompt (`FirstRun.tsx`), an empty stretch list (`StretchFirstRun.tsx`), and no board is drawn until the data has loaded. Accounts with a log entry or a saved program keep what they had. **Left:** (step 2) the "Original program · built in" row in `Editor.tsx` still offers the owner's plan: make "Original" mean blank in sync mode, but only after the two existing accounts have been asked or checked; (step 4) remove `jacgit18/iron-log-data`, `jacgit18/iron-log` and `Composio For You` from `export.ts` (or remove the GitHub backup first, §4). The exercise library `EX` stays as it is for now. Supplements and experiment lists were not checked for owner defaults.
-#todo/priority/Low
+#todo/project/priority/Low
 - [ ] Update ADR 004 (sign-in) with what the deploy showed, and record the iPhone result.
 - [ ] Decide the tombstone purge window and the refused-writes retention (open in [[iron-log/docs/data-model/iron-log]]). The 2026-10-09 audit adds `row_history` to this and a per-account size limit; see "Security audit follow-ups".
 - [ ] **Deploy safeguards: options to pick from (noted 2026-10-09; nothing decided).** Today every merge to `main` deploys to production by itself once Tests pass ([[deploy-runbook]] §10): there is no approval step, so a merge with a green check is live in about two minutes, for real users (two other accounts exist besides the owner). What does stop a bad deploy: failing tests, the post-deploy smoke test with automatic rollback, and the migration stop. What does not: a change that passes the tests and the smoke test but is wrong in a way they do not check (the loading flash and the empty-account bugs of 2026-10-08/09 are examples: found by looking, not by a check). Options, smallest first:
@@ -36,20 +36,27 @@ Live since 2026-10-08: revision `iron-log-00005-wvl`, deployed by CI. These are 
 - [ ] CI deploy rough edges found on the first run, now fixed (#128, #129): the Google sign-in file made the tree dirty; the deployer needed `storage.buckets.list`; the build ran as the Editor-role default account. Notes in [[deploy-runbook]] §10.
 - [ ] Spike clean-up (S0): delete the Artifact Registry repo `cloud-run-source-deploy` in `iron-log-spike` (about 345 MB: `gcloud artifacts repositories delete cloud-run-source-deploy --location us-central1 --project iron-log-spike`), the Neon `spike-s0` branch (Neon console, Branches; look at it first), and then consider deleting the `iron-log-spike` project (`gcloud projects delete iron-log-spike`; Google keeps a deleted project 30 days; do it last, the registry repo lives in it). The local `spike-s0-signin` branch is already deleted (2026-10-08; its commit was `70f1187`, never pushed). Before rotating or deleting a Google OAuth client secret, check which client production uses (secret `iron-log-google-client-id`); rotating that one signs everyone out until the secret is updated.
 
-## Security audit follow-ups (added 2026-10-09; see [[security-audit/README|security-audit]] and [[iron-log/docs/security-audit/run-1/REPORT|run-1 report]])
+## Security audit follow-ups (added 2026-10-09; see [[iron-log/docs/security-audit/README|security-audit]] and [[iron-log/docs/security-audit/run-1/REPORT|run-1 report]])
 
 A full audit of commit `979f6ea` found nothing critical, high or medium. These are the fixes and checks it left, grouped by what to do first. "Open lead" items are unverified: the audit could not see the live system, so the first step is a read-only look, not a code change. One change per commit; add a regression test for each fix; update [[feature-map]] if an interaction changes.
 
-#todo/priority/High
-- [ ] **Sync: re-check who is signed in before every send and pull** (confirmed, low; `src/sync/apiDb.ts:152`). `gate()` checks identity once, then trusts it until a 401. If another tab signs out and in as someone else, the open tab sends its unsent log entries into the new account and pulls that account's rows into its own view. Re-verify on wake, on the minute poll and on visibility change, or clear `verified` there; better, send an expected-user header and make the API refuse a mismatch (409), so the client pauses with "account". Add a test with two fake servers like the audit's harness. Also store the owner id inside the outbox and mirror values so a later page load can reject them cheaply.
+**Triage (2026-10-09).** What sets the urgency is who can trigger it.
+- **Now:** merge PR #137 (the `/api/auth` body cap; anyone on the internet could crash the server, no account needed). Look once at the deployment facts below, especially required reviewers on the `production` environment (every merge deploys by itself) and whether the Google consent screen is published. Decide the backup soft-delete wording (a two-line change either way).
+- **Before opening sign-up** (each needs a signed-in account, and only three accounts exist today): the `import-legacy` pool timeouts and one-import-at-a-time, storage caps and retention (check Neon's storage limit first), the rate-limiter map cap and /64 keys, the expected-user header for sync, and the soft-delete wording if not done.
+- **Whenever:** merge PR #138 (sync re-check; low), and the five hardening bundles (CI, database, client input, server, operator scripts).
+
+#todo/project/priority/High
+- [ ] **Sync: re-check who is signed in before every send and pull** (confirmed, low; not urgent, merge PR #138 when convenient). **Status 2026-10-09: the client part is built and tested on branch `f-sync-recheck-identity`, PR #138 open ( also saved as a stash and as `security-audit/run-1/validation/sync-recheck-identity.patch`): `verified` is cleared on wake and on every poll. Left: the server-side expected-user header and 409 for the case of a visible tab edited while another window switches the account.** Original description ( `src/sync/apiDb.ts:152`). `gate()` checks identity once, then trusts it until a 401. If another tab signs out and in as someone else, the open tab sends its unsent log entries into the new account and pulls that account's rows into its own view. Re-verify on wake, on the minute poll and on visibility change, or clear `verified` there; better, send an expected-user header and make the API refuse a mismatch (409), so the client pauses with "account". Add a test with two fake servers like the audit's harness. Also store the owner id inside the outbox and mirror values so a later page load can reject them cheaply.
 - [ ] **CSV export formula guard** (confirmed, low; already listed under Bugs): in `csvCell` (`src/lib/export.ts:28`) prefix a `'` to text cells that start with `=`, `+`, `-`, `@`, tab or CR (text columns only, so negative weights stay numbers). Test: `=1+1` exports as `'=1+1`.
-- [ ] **Cap the body size on `/api/auth`** (open lead; `server/app.ts:85`). The better-auth handler is mounted before every body parser, so an anonymous caller can send a body of any size (a 32 MiB test body added about 65 MB of server memory; the service is one 512Mi instance). Add a small byte cap ahead of the mount (a `Content-Length` check that answers 413). Then, on a staging copy only, check what 6 to 10 large bodies do (Cloud Run memory and restart metrics) and what Cloud Run itself rejects (about 32 MiB).
-#todo/priority/Low
-- [ ] **Rate limiter** (open lead; `server/rateLimit.ts:26`): once the map passes 10,000 keys every request scans it, live keys are never evicted, and each distinct IPv6 address is its own bucket (so the sign-in limit of 10 a minute is bypassed). Put a hard cap on the map, key IPv6 by /64, sweep on a timer instead of per request. First check, on staging, whether the run.app URL accepts IPv6 clients and what `X-Forwarded-For` the app sees; if either is no, close the lead.
+- [ ] **Cap the body size on `/api/auth`** (**reproduced 2026-10-09: 16 concurrent 32 MiB anonymous bodies killed the production server in a 512 MiB container; fix `server/bodyLimit.ts` is on branch `f-auth-body-cap`, PR #137 open, with tests, and the same flood then got 413 with memory flat at about 50 MiB. Left: commit and PR it; check on staging what Cloud Run forwards (about 32 MiB) and look in the live logs for Better Auth's "could not determine a client IP" warning**; `server/app.ts:85`). The better-auth handler is mounted before every body parser, so an anonymous caller can send a body of any size (a 32 MiB test body added about 65 MB of server memory; the service is one 512Mi instance). Add a small byte cap ahead of the mount (a `Content-Length` check that answers 413). Then, on a staging copy only, check what 6 to 10 large bodies do (Cloud Run memory and restart metrics) and what Cloud Run itself rejects (about 32 MiB).
+#todo/project/priority/Low
+- [ ] **After PR #137 is deployed, one harmless live check** (needs your yes first): a single ~20 KiB `POST` to `/api/auth/sign-out` on the live URL should answer `413`. That confirms the body cap is live; do not send anything large. Also look once in the live logs for Better Auth's warning "could not determine a client IP and is falling back to a single shared per-path bucket" (it appeared locally when a request had no forwarded-address header); on Cloud Run the header should be there.
+- [ ] **Sync, the full fix: the server refuses a request from the wrong user.** The client sends `X-Expected-User` (the id it verified); `sessionAuth` answers `409` when it differs from the session's user, on `/api/commands/*`, `/api/sync` and `import-legacy`; the client pauses with "account" and sends nothing. Closes the gap PR #138 leaves (a visible tab edited while another window switches account, until the next poll). Needs a small ADR note (the contract changes) and a test with two users on one cookie jar. Before sign-up opens.
+- [ ] **Rate limiter** (bypass **reproduced 2026-10-09**: 25 of 25 requests from rotating IPv6 addresses passed a 20 a minute limit; the scan cost is small, 0.3 ms to 1.8 ms at 40,000 keys; still open: whether the live service sees IPv6 clients; `server/rateLimit.ts:26`): once the map passes 10,000 keys every request scans it, live keys are never evicted, and each distinct IPv6 address is its own bucket (so the sign-in limit of 10 a minute is bypassed). Put a hard cap on the map, key IPv6 by /64, sweep on a timer instead of per request. First check, on staging, whether the run.app URL accepts IPv6 clients and what `X-Forwarded-For` the app sees; if either is no, close the lead.
 - [ ] **`/api/health/db`** (rejected as a finding, kept as hardening; `server/app.ts:98`): give it its own small per-IP limit or a few seconds of cached result, and fix the comment at `app.ts:118` that says an anonymous caller never reaches the database. The deploy smoke test must still get a 200.
-- [ ] **Per-user storage limits and retention** (open lead; fold into "Decide the tombstone purge window and the refused-writes retention" above). Today only the request count is limited (600 a minute). Decide: a cap on rows and bytes per account, a prune of `row_history` by `replaced_at` and `refused_writes` by `received_at`, a size cap on what `refuse()` stores, and a cap on log, library and list rows. First look at the Neon storage limit and alerts, and whether sign-up is restricted.
-- [ ] **`import-legacy` can hold a database connection for a long time** (open lead; `server/commands/importLegacy.ts`): up to 20,000 commands in one transaction on a shared pool of 10 with no timeouts. Set pool `max`, `connectionTimeoutMillis`, `statement_timeout` and `lock_timeout`; allow one import in flight per user; consider a time budget or a smaller command cap. Measure one 2,000-command import on a local Postgres first.
-- [ ] **Backup bucket soft delete vs the 30-day promise** (open lead; `scripts/backup-cloud-run.sh:34`). Run `gcloud storage buckets describe gs://<project>-iron-log-backups --format='value(soft_delete_policy)'`. If it is above 0, add `--soft-delete-duration=0` to the create call and clear it on the live bucket, or change the wording in `privacy.html` and `DeleteMyData.tsx` to "within 37 days". Add a `server/legal.test.ts` check that the script sets an explicit soft-delete duration.
+- [ ] **Per-user storage limits and retention** (growth **reproduced 2026-10-09**: 100 saves of 52 KB added 5.7 MB to `row_history`, 100 refused 80 KB bodies added 8.5 MB to `refused_writes`, linear with no cap; still open: Neon's storage ceiling and whether sign-up is open; fold into "Decide the tombstone purge window and the refused-writes retention" above). Today only the request count is limited (600 a minute). Decide: a cap on rows and bytes per account, a prune of `row_history` by `replaced_at` and `refused_writes` by `received_at`, a size cap on what `refuse()` stores, and a cap on log, library and list rows. First look at the Neon storage limit and alerts, and whether sign-up is restricted.
+- [ ] **`import-legacy` can hold a database connection for a long time** (**reproduced 2026-10-09**: 2,000 commands hold a connection 4.4 s; one account sending 3 at once on a pool of 3 made another user wait 3.9 s; the repeat-after-rollback variant was not reproduced; production pool is 10; `server/commands/importLegacy.ts`): up to 20,000 commands in one transaction on a shared pool of 10 with no timeouts. Set pool `max`, `connectionTimeoutMillis`, `statement_timeout` and `lock_timeout`; allow one import in flight per user; consider a time budget or a smaller command cap. Measure one 2,000-command import on a local Postgres first.
+- [ ] **Backup bucket soft delete vs the 30-day promise** (confirmed on the live bucket 2026-10-09: soft delete is 7 days, so a dump could survive to about day 37 against a promise of 30). **Decided: keep the 7-day undo and delete at 23 days (23 + 7 = 30).** PR #139 sets `RETENTION_DAYS` 23 and pins `SOFT_DELETE_DAYS` 7 in `scripts/backup-cloud-run.sh`, with a policy test that they add up to 30. **Left after merging:** run `PROJECT_ID=iron-log-jacgit18 scripts/backup-cloud-run.sh setup` once (idempotent) and confirm with `gcloud storage buckets describe gs://iron-log-jacgit18-iron-log-backups --format='yaml(lifecycle_config,soft_delete_policy)'` that it says `age: 23` and `retentionDurationSeconds: '604800'`. Restore points then reach back 23 days, not 30.
 - [ ] **Deployment facts to look at once** (source cannot show them; none is a known problem): Cloud Run invoker policy and `NODE_ENV=production` on the live revision; the GitHub `production` environment's reviewers (already listed under Deploy safeguards) and branch rule; whether the Workload Identity provider's condition is bound to the repository id and the `production` environment, and that it was re-applied (the setup script never updates an existing provider); the live Neon role really is `ironlog_app` (not owner, no BYPASSRLS), and whether the pooler keeps `SET LOCAL app.user_id` (`scripts/check-pooled-rls.mjs --scratch` against a branch).
 - [ ] **Narrow the CI deployer's roles** (hardening; the audit rejected this as a vulnerability because only this repo's main branch can use the identity): give `run.developer` on the one service instead of the project, bind `builds.editor`/`builds.create` with a condition or set the project's default build account to `iron-log-build`, and correct the header comment in `scripts/ci-deploy-setup.sh` (it says the deployer cannot read the database, secrets or backups, which is not strictly true).
 - [ ] **CI and workflow hardening, one small PR** (all hardening): pin every action by commit SHA (and `ubuntu-24.04`, same item as the Ubuntu 26 note above); `persist-credentials: false` on the screenshots checkout; in `deploy.yml` move `pages: write` and `id-token: write` from the workflow to the deploy job; `scripts/ci-deploy.sh` use `--no-renames` so a renamed migration still stops the deploy; refuse a `head_sha` that is not an ancestor of `main` (a re-run of an old Tests run redeploys an old commit); pass `steps.live.outputs.*` through `env:`; key the screenshots concurrency group on the PR number; make `gh pr list --head` match the owner.
@@ -64,10 +71,10 @@ A full audit of commit `979f6ea` found nothing critical, high or medium. These a
 
 Found in the 2026-10-05 bug sweep and re-checked against the code on 2026-10-06 (all still present; the TypeScript conversion changed none of them, only renamed files). The high and medium ones are fixed (#67), plus import-replace atomicity and the empty-repo GitHub backup (PR in review). These are what's left.
 
-#todo/priority/High
+#todo/project/priority/High
 - [ ] `bestLift` can show the wrong date when entries aren't in date order (`addEntry` and `mergeEntries` sort; a JSON replace import and database snapshots do not, `normEntries` keeps the file's order). Simplest fix: sort in `normEntries`.
 - [ ] CSV export: a leading `=`, `+`, `-` or `@` in a note or exercise name runs as a formula in Excel (confirmed by the 2026-10-09 audit, severity low; fix described under "Security audit follow-ups"). CSV import also drops the exercise id (`exId` column is empty), so a renamed custom exercise duplicates.
-#todo/priority/Low
+#todo/project/priority/Low
 - [ ] Deleting a stretch and re-adding one with the same name brings old check-offs back in earlier weeks (ids are slugs of the name).
 - [ ] Merge-import orphans stretch check-offs when the stretch matches by name but has a different id.
 - [ ] Rest timer: the manual Rest button uses `restSecs() || 90`, so a Rest setting of 0 runs 90 s while holds treat 0 as no rest. Decide which is intended.
@@ -90,7 +97,7 @@ Found in the 2026-10-05 bug sweep and re-checked against the code on 2026-10-06 
   - [ ] **Not a gate any more (2026-10-07):** we assume iPhone sign-in works and verify it at the first real deploy (see the build spec drift log). B1 stays open until that result is recorded. (Earlier wording follows.) B1 stays open until the iPhone result is recorded. B2 (real sign-in in the API) needs it, so Phase B is blocked on this. Phase C does not need it.
 - [x] Keep it offline-first for gym use: queue saves and sync them later. (Phase D: persisted outbox, replay with a retry cap, quarantine; `src/sync/outbox.ts`.)
 - [x] (Phase E: `import-legacy`, `src/sync/legacy.ts`, Settings → Account → Upload from an export file) Add a one-time "upload my existing data" step so data already on the phone isn't lost. (Smaller now: `buildDataFile`/`normalizeData` already produce and check a typed `DataFile`, which is exactly what to upload.)
-#todo/priority/Low
+#todo/project/priority/Low
 - [ ] Possibly exercise catalog what api to use any free options
   - If the app goes multi-user this is close to required: use it to prefill muscles, equipment and video links so new users don't type every exercise.
 
@@ -111,7 +118,7 @@ Run with `/tech-decision-walkthrough`. Handoff: `iron-log/.claude/handoffs/hando
 - [x] 11. lb/kg storage unit: canonical pounds, `numeric` 4 dp in `weight_lb`-style columns, one conversion module, display-only toggle (ADR 006 [[006-weight-unit-canonical-lb]]). Table design is now unblocked.
 - [x] Table design via `relational-modeling`: [[iron-log/docs/data-model/iron-log]] written 2026-10-06 (bigint ids plus unique client id, jsonb documents, per-user change counter, history trigger, RLS). Open: tombstone purge window, refused-writes retention, migration tool.
 - [x] Closeout (written in [[iron-log/docs/architecture/stack-walkthrough|stack-walkthrough]]): summary table; cross-cutting obligations (HTTPS, rate limits, backups, CI, secrets, migrations tool, error reporting, privacy policy and data-deletion path); cost-cap check; deferred list; missed-decision audit
-#todo/priority/Low
+#todo/project/priority/Low
 - [ ] Verify Neon free-tier numbers at neon.com (1 GB per project, 100 CU-hours per month; from aggregator pages)
 - [ ] Verify iOS Safari storage eviction for non-installed PWAs (offline up to about 2 days)
 - [ ] Then type `/system-design-communication` (once the stack is settled) and `/decision-journal` for any decision to revisit
@@ -126,15 +133,15 @@ Short ADRs still to write:
 - [x] Shared code layout: one package, `src/shared/` plus `server/`, workspaces as the planned next step (ADR 015 [[015-shared-code-layout]]).
 
 Values to set:
-#todo/priority/Low
+#todo/project/priority/Low
 - (Tombstone purge window and refused-writes retention: tracked under Phase F follow-ups at the top.)
 
 Spikes and checks (do early):
 - [x] Count legacy `k`+hash id collisions in a real export before building `import-legacy`. (2026-10-08: the 2026-10-07 export has 53 entries and 0 collisions; the old `iron-log-data.json` has 1, `dip` and `kneeraise` on 2026-09-28: the hash ignores the exercise and ids are unique per user across exercises, so the importer gives the later one a `-2` suffix in input order.)
-#todo/priority/High
+#todo/project/priority/High
 - (Google sign-in in an installed iOS PWA: tracked under Phase F follow-ups at the top.)
 - (Neon restore and failing-migration rehearsals: tracked under Phase F follow-ups at the top.)
-#todo/priority/Low
+#todo/project/priority/Low
 - [ ] Confirm on provider pages: Cloud Run quota and pricing, Neon free-tier numbers and restore window, Better Auth advisories (GitHub Security tab), current Express 5, Kysely and Better Auth versions.
 - [ ] Turn on Neon **branch protection** for `production`, if the Free plan allows it, so it cannot be deleted by hand in the console. Checked 2026-10-08: `production` is the default branch with no expiry (only `dev` and `spike-s0` expire, on 2026-10-14, from the 7-day rule in `neon.ts`) but shows `protected: false`. Plan availability is not verified: look for the toggle in the Neon console (branch settings) and, if it is paid-only, note that and rely on the nightly backups instead ([[iron-log/docs/deploy-runbook|deploy-runbook]] section 7).
 
@@ -147,7 +154,7 @@ The app began as a single-user gym app. These are the gaps that only matter once
 - [x] Privacy policy and terms, with a clear data-deletion path (see step 4). Needed before launch because of Google login and body-weight data. (2026-10-08, PR in review: `public/privacy.html` and `terms.html` drafted against GDPR/UK GDPR, CCPA and other US state laws and Washington's health-data law; Settings → Delete my data erases everything or deletes the account for good, backups age out in 30 days. **Still recommended before opening signup to the public: a lawyer's review, and a decision on the governing-law clause, which was left out on purpose.**)
 - [x] Check that no personal defaults leak into a new account's starting state: audited 2026-10-08 and mostly fixed. The remaining work (ADR 016 steps 2 and 4) is tracked in the "Personal defaults" item under Phase F follow-ups at the top.
 - [x] Conflict handling when one account is used on two devices (ADR 003, Phase D): versioned rows, stale edits refused and re-merged, a tick beats a skip (`src/sync/merge.ts`), the replaced version kept in `row_history`. Anything else in a conflict is "this device wins" by design. Left: a real two-phone test, if wanted.
-#todo/priority/Low
+#todo/project/priority/Low
 - [ ] Starter programs for new users (PPL, upper/lower, full body, 5x5) and a "build my own" flow, with a choice of days per week. The board currently assumes a fixed 7-day layout.
 - [ ] Move the first-run guide (item 58) into this step instead of after the backend.
 - [ ] Explain jargon in the app (phase, superset, "Same as last", 1RM) with one-line tooltips or a glossary.
@@ -162,7 +169,7 @@ The app began as a single-user gym app. These are the gaps that only matter once
 ## 4. Remove the stand-in features (only once the backend is working)
 
 - [x] Turn "Erase data" into "delete my account data": Settings → Delete my data (PR #124). The old local "Erase data" panel is still in Settings for local mode.
-#todo/priority/Low
+#todo/project/priority/Low
 - [ ] Remove GitHub backup and restore (#18).
 - [ ] Remove JSON import.
 - [ ] Stop using localStorage as the main place data is saved.
@@ -173,7 +180,7 @@ The app began as a single-user gym app. These are the gaps that only matter once
 - [x] Weight goals feature (set targets and track progress).
 - [x] supplement log (Supplements tab with schedule and water log, #61, #79)
 - [x] Plateau/deload hint: `stallOf` judges each lift per week and `backoffOf` suggests a back-off (#76).
-#todo/priority/Low
+#todo/project/priority/Low
 - [ ] Google Fit API integration to pull activity and weight data.
 - [ ] Import medical records and add AI assessment of medical information. Decide whether to build this at all before multi-user launch: it brings health-data regulation, disclaimers and the highest risk of the list.
 - [ ] **Social feed, privacy-light (idea saved 2026-10-08).** Let people follow friends and see short activity posts: "Sam trained 14 times this month", "Alex hit a new best on Hack Squat". It is less invasive than most fitness social features because it only says *that* someone lifted and how they did, never *where*: no gym, location, map, route or check-in, ever. Design notes so the idea is not lost:
@@ -194,7 +201,7 @@ The app began as a single-user gym app. These are the gaps that only matter once
 
 From a review of the current screens. None of these are committed to: pick what you want, and move it into the numbered steps above. The numbers match the list from that review so they can be referred to. Where each one goes relative to the backend (step 3):
 
-#todo/priority/Low
+#todo/project/priority/Low
 - [ ] Midnight behavior for check-offs (idea, not decided): a check-off belongs to the current day. If at least one item was ticked before midnight, flag the rest at midnight or move them to the next day where they can be skipped or kept, so exercises don't span multiple days. Today nothing is restricted. See ADR 011.
 
 - **Before the backend** if it changes what gets stored.
@@ -205,15 +212,15 @@ From a review of the current screens. None of these are committed to: pick what 
 
 - [x] 55. Exercise library page: every exercise with its equipment, video link, default phase, 1RM and muscle tags, edited in one place. On the Program tab. Per-exercise settings stay in `cfg.ex`, `cfg.exPh`, `cfg.rm` and `cfg.muscleMap`.
 - [x] 33. Undo after unchecking something you logged: the board shows how many entries were removed with an Undo that puts back the entries and the tick.
-#todo/priority/High
+#todo/project/priority/High
 - [ ] 62. lb/kg unit toggle. Canonical unit settled: pounds, stored as `numeric` 4 dp (ADR 006); the toggle is display and input only, and progression steps become unit-aware. Types do not enforce units (all are plain `number`), so list every `lb`/`Lb` place (limits in `validate.ts`, labels, exports, plate calculator) before starting; a branded `Lb`/`Kg` type is optional.
-#todo/priority/Low
+#todo/project/priority/Low
 - [ ] 38. A tick per set in the Log sheet (and start the rest timer between sets). Changes the shape of a logged entry. Safer now: add the field to `LogSet` in `types.ts` and `tsc` lists every reader and writer; also update `normSet` in `validate.ts` and the Excel/CSV sheets.
 - [ ] 61. Per-exercise notes ("seat at 4, elbows tucked"), shown in the Log sheet. Adds a field to each exercise's stored settings.
 
 ### Any time: phone and board layout (most useful first)
 
-#todo/priority/Low
+#todo/project/priority/Low
 - [ ] 1. Show the first exercise sooner on phones: less above the day tabs.
 - [ ] 2. Slim down the top of each day column (rest day, add buttons, swap arrows, warm-up).
 - [ ] 3. Stop the Rest timer button covering cards and the add buttons.
@@ -223,7 +230,7 @@ From a review of the current screens. None of these are committed to: pick what 
 
 ### Any time: header, week bar and notices
 
-#todo/priority/Low
+#todo/project/priority/Low
 - [ ] 6. Remove the repeated program/mode between the header pills and the week bar.
 - [ ] 7. Move the mode dropdown into Settings.
 - [ ] 8. Put "Set by month" next to the A/B toggle it explains.
@@ -234,7 +241,7 @@ From a review of the current screens. None of these are committed to: pick what 
 
 ### Any time: body weight row and sort/filter
 
-#todo/priority/Low
+#todo/project/priority/Low
 - [ ] 13. Make the body weight row compact on desktop.
 - [ ] 14. Once logged, show it as one line ("195 lb · −2 · Goal: 15 to go").
 - [ ] 15. Fix the body weight input showing "lb" twice.
@@ -244,7 +251,7 @@ From a review of the current screens. None of these are committed to: pick what 
 
 ### Any time: day columns and cards
 
-#todo/priority/Low
+#todo/project/priority/Low
 - [ ] 19. Group the column controls (rest day, swap, only this week) into a "⋯" menu.
 - [ ] 20. Move "+ Add exercise" to the bottom of the column.
 - [ ] 21. Bigger or menu-based swap arrows.
@@ -264,7 +271,7 @@ From a review of the current screens. None of these are committed to: pick what 
 
 ### Any time: Log sheet and timer
 
-#todo/priority/Low
+#todo/project/priority/Low
 - [ ] 34. Put rarely used fields (1RM, video link, equipment, default-phase boxes) under "More options".
 - [ ] 35. Date as a small "Today ▾" chip.
 - [ ] 36. Keep Save and Cancel pinned to the bottom of the sheet.
@@ -279,7 +286,7 @@ From a review of the current screens. None of these are committed to: pick what 
 
 ### Any time: Progress, Muscles and Program tabs
 
-#todo/priority/Low
+#todo/project/priority/Low
 - [ ] 43. Fill the empty gap in the Progress layout.
 - [ ] 44. Move body weight and the goal up next to the other numbers.
 - [ ] 45. Draw the weight goal as a dashed target line on the chart.
@@ -295,9 +302,9 @@ From a review of the current screens. None of these are committed to: pick what 
 
 ### Any time: across the app
 
-#todo/priority/High
+#todo/project/priority/High
 - [ ] 71. React error boundary with a "Something went wrong, export your data" fallback, so a render error isn't a white screen.
-#todo/priority/Low
+#todo/project/priority/Low
 - [ ] 57. Messages: short notices at the bottom of the screen, with Undo where it applies, instead of the easy-to-miss line under the header.
 - [ ] 59. Recheck dark mode and contrast for the newer pieces (Mobility purple, equipment labels, goal bar).
 - [ ] 68. PR celebration: a badge or toast on save when a set beats the best weight or estimated 1RM.
@@ -308,19 +315,19 @@ From a review of the current screens. None of these are committed to: pick what 
 
 ### After the backend
 
-#todo/priority/Low
+#todo/project/priority/Low
 - [ ] 54. Regroup Settings into Training, Data and App. Do this after step 4, because the Data section changes when GitHub backup and JSON import are removed. If the app goes multi-user, do it before launch, since an Account section will crowd Settings.
 - [ ] 58. First-run guide (pick a program, log a set, check a day). Do this once sign-in exists, so it can include signing in and syncing. If the app goes multi-user, it moves into the "Multi-user readiness" list under step 3.
 - [ ] Feature to add excercise to experiment and remove from program
 
 ## Anytime
 
-#todo/priority/Low
+#todo/project/priority/Low
 - [ ] Add a link to a Google feedback form in Settings.
 
 ### TypeScript migration (leftovers; the main work is done, see [[typescript-migration]])
 
-#todo/priority/Low
+#todo/project/priority/Low
 - [ ] Convert `App.jsx` and `main.jsx` to TypeScript, and change `index.html` to `/src/main.tsx` in the same PR. Gives a fully TypeScript source tree (apart from `fonts.js`, the tests and tooling).
 - [ ] Convert the remaining presentational components when next edited: `Daily`, `Medical`, `LineChart`, `Muscles`, `TimerBar`, `UpdateBanner`.
 - [ ] Try TypeScript lint rules to stop new `any` (`oxlint-tsgolint`): costs one dev dependency and some CI time; worth it now that component `any` is down to 2.
