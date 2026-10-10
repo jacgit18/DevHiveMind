@@ -26,6 +26,41 @@ second level of navigation: Board → Workout | Stretches (`components/board/Boa
 Medical (`components/daily/Daily.jsx`). Muscles is **not** a top-level tab — it is a view inside Progress
 (`components/progress/Progress.jsx:144`), which the README still describes as its own tab (drift, see part 6).
 
+### Audience at a glance (2026-10-10)
+
+Who sees each feature. **Public** means no flag: every user. **Admin** means `'admin'` in `FEATURES` (`src/features.ts`, see 1.27). Add a row for every new feature; a feature that is not public must say so here.
+
+| Feature | Audience | Flag |
+|---|---|---|
+| 1.1 The weekly board | Public | none |
+| 1.2 Rest days | Public | none |
+| 1.3 Swap days (`week.order`) | Public | none |
+| 1.4 Move a card (`week.moved`) | Public | none |
+| 1.5 One-week cards (`week.extra`) | Public | none |
+| 1.6 Back-to-back repeat suggestions | Public | none |
+| 1.7 Skip, leftovers and the make-up day | Public | none |
+| 1.8 Logging, check-off entries and undo | Public | none |
+| 1.9 Targets, progression, stalls and back-off | Public | none |
+| 1.10 Phases | Public | none |
+| 1.11 Exercises, equipment, details, library | Public | none |
+| 1.12 Sort and filter | Public | none |
+| 1.13 Program rotation and modes | Public | none |
+| 1.14 Stretches | Public | none |
+| 1.15 Supplements (water log) | Public | none |
+| 1.16 Medical | Public | none |
+| 1.17 Body weight and the weight goal | Public | none |
+| 1.18 Lift weight goals | Public | none |
+| 1.19 Timers | Public | none |
+| 1.20 Progress | Public | none |
+| 1.21 Muscle map | Public | none |
+| 1.22 Program editor and the program library | Public | none |
+| 1.23 Export, import and backup | Public | none |
+| 1.24 Validation | Public | none |
+| 1.26 PWA, updates, erase, appearance, accessibility | Public | none |
+| 1.25 Storage, offline and sync | Public on Cloud Run (syncing on); the build-time flag `VITE_API_SYNC` / `ironlog:flag:apiSync` is separate (1.27) | `apiSync` |
+| Account pages: sign-in, landing page, delete my data, blank start and first-run prompt | Public | none |
+| **Admin-only features** | **None at the moment** | (`FEATURES` is empty) |
+
 ### 1.1 The weekly board
 
 | | |
@@ -507,7 +542,7 @@ identity (C9).
 
 **When to update.** In the same PR as the change, not later:
 
-1. A feature is added, removed or renamed → its row in part 1, plus the tab inventory if navigation moved.
+1. A feature is added, removed or renamed → its row in part 1, plus the tab inventory if navigation moved. A new feature also gets a row in "Audience at a glance" (admin until released); flipping it to `'all'` updates that row.
 2. A storage path, config key or entry field changes → part 1's table for that feature **and**
    [[backend-data-rules]].
 3. Two features start or stop interacting → add, edit or close a conflict entry. Closing one means moving it to the

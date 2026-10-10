@@ -34,7 +34,7 @@ removed once syncing is trusted. See [[feature-map]] 1.25 and 1.27.
 A second kind of flag: **who** sees a feature, not which build. `src/features.ts` has a registry, one line per feature that is not for everyone yet:
 
 ```ts
-export const FEATURES = { myNewThing: 'admin' } // 'admin' | 'all' | 'off'; not listed = everyone
+export const FEATURES = { myNewThing: 'admin' } // 'admin' | 'all' | 'off'; not listed = hidden from everyone
 ```
 
 In a component: `const on = useFeature('myNewThing')`. To open it to everyone, change `'admin'` to `'all'` (or delete the line and the check once you are done with it).
@@ -46,3 +46,5 @@ In a component: `const on = useFeature('myNewThing')`. To open it to everyone, c
 - **Local testing:** add `dev:owner` to `ADMIN_EMAILS` in `.env`, then `?devUser=owner` is an admin and `?devUser=guest` is not.
 
 **Development builds start as a stranger (2026-10-08).** With syncing on in a development build you get the landing page and the real Google sign-in, like a visitor to the live site. To get in without Google as a fake user, press **Skip: continue as the development user** on the landing page (development builds only), or open the app once at `http://localhost:3002/?devUser=dev` (or any plain lowercase name). `?devUser=off` goes back to being a stranger. The choice is kept in `ironlog:flag:apiUser`. The real Google sign-in works locally because `http://localhost:3002/api/auth/callback/google` is on the OAuth client. All of it needs the real API running against the **local** database: `DATABASE_URL='postgres://ironlog:ironlog@127.0.0.1:5433/ironlog?sslmode=disable' npm run dev:server`, never the production URL in `.env`. A production build ignores all of this.
+
+**Checks that keep the registry honest (2026-10-10).** `src/features.registry.test.ts` (runs in `npm test`) fails when a `useFeature` name is not in `FEATURES`, when a `FEATURES` entry is never used (a dead flag), or when a registry line has no `//` comment with its removal condition. `.github/workflows/pr-audience.yml` fails a pull request unless exactly one box under "Audience" in the PR description is ticked. These cannot tell whether a change is user-facing; the PR template and your own judgment do that. To make the PR check block merging, add **PR audience / audience** as a required status check in the repository's branch protection (a setting only you can change).

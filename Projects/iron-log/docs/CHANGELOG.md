@@ -2,6 +2,9 @@
 _Newest first. Grouped by date from merged PRs (#1 to #140, 2026-09-26 to 2026-10-09). Add an entry in the same PR as any change; use `git log --first-parent` for the full list._
 
 ## Unreleased
+- Registry checks (`src/features.registry.test.ts`) and a PR audience check (`pr-audience.yml`); `feature-map.md` audience table is per feature.
+- PR template asks for the audience (admin or everyone); `feature-map.md` has an "Audience at a glance" table.
+- A feature name missing from the `FEATURES` registry is now hidden from everyone (was shown to everyone), so a forgotten line fails closed.
 - Remove GitHub Pages deploy; README points at Cloud Run.
 - Warm-up moved from the workout board to the top of each Stretches day; its ticks are stored in the stretch week (`<day>:warm:<id>`).
 
