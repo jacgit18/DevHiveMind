@@ -86,6 +86,7 @@ Then in a desktop browser: open the address, **Settings**, turn the sync flag on
 
 - GitHub Pages keeps serving the old stand-alone copy until you decide otherwise; both can coexist. The new address is the real app.
 - Rollback: `gcloud run services update-traffic iron-log --project iron-log-jacgit18 --region us-central1 --to-revisions <previous>=100` (revisions: `gcloud run revisions list ...`). Data is untouched by a rollback.
+  - **A rollback pins traffic** to that revision: a later deploy would be ready but get no traffic. Undo it with `PROJECT_ID=iron-log-jacgit18 scripts/deploy-cloud-run.sh restore` once the fix is ready (the manual `deploy` command does this itself; the CI flow sets traffic explicitly each time). Added 2026-10-09, [[017-release-and-deployment-strategy]].
 - Cost check after a week: Billing → Reports for project `iron-log-jacgit18`.
 - Still to do in Phase F: CI deploy automation, rate limits on commands, client-error endpoint and logs (ADR 013), backups and a restore rehearsal, a failing-migration rehearsal on a Neon branch, retention values, privacy policy and delete-my-data.
 
@@ -144,7 +145,7 @@ Steps (each its own `!` command, from `main`):
 
 ## 10. Deploying from GitHub (CI deploy; written 2026-10-08)
 
-After a merge to `main`, the **Tests** workflow runs again on that exact commit; when it passes, **Deploy to Cloud Run** builds the image, deploys it, checks the new revision (API, database login, the app's files, an anonymous call refused) and **rolls back to the previous revision if that check fails**. No key is stored in GitHub: it signs in to Google by Workload Identity Federation, and Google only accepts this repository on its main branch. The deployer account can build, deploy and move traffic, and act as the app's runtime account; it cannot read the database, the secrets or the backups, or change who may call the service.
+After a merge to `main`, the **Tests** workflow runs again on that exact commit; when it passes, **Deploy to Cloud Run** waits for your approval (required reviewer on the `production` environment), then builds the image and deploys it as a **tagged revision with no traffic** (`scripts/deploy-cloud-run.sh candidate`). It checks that revision on its own address (API, database login, the app's files, an anonymous call refused). If the check fails the revision never gets traffic and nothing needs rolling back. If it passes, `promote` sends it all traffic, the live service is checked again, and **traffic goes back to the previous revision if that second check fails** (ADR 017, changed 2026-10-09). Sign-in does not work on the tagged address, so the first check is anonymous only. "What is live now" is the revision that has the traffic, not the latest one. No key is stored in GitHub: it signs in to Google by Workload Identity Federation, and Google only accepts this repository on its main branch. The deployer account can build, deploy and move traffic, and act as the app's runtime account; it cannot read the database, the secrets or the backups, or change who may call the service.
 
 **Migrations still come first, by hand.** CI never holds the database password. When migrations were added since the live revision, the workflow stops with "A database migration is waiting". Apply them (section 8), then Actions → Deploy to Cloud Run → Run workflow → tick "I have applied any new database migration".
 
@@ -164,3 +165,8 @@ The deployer also holds a custom role, **`ironLogBucketLister`** (only `storage.
 - "caller does not have permission to act as service account ...-compute@developer" — the build account is missing or `BUILD_SA` is not set; re-run `ci-deploy-setup.sh`.
 
 The manual command (`scripts/deploy-cloud-run.sh deploy`) keeps working, for emergencies or if GitHub is down.
+
+
+## 11. Measuring dropped requests during a deploy (added 2026-10-09)
+
+`scripts/deploy-probe.sh <service address> [seconds]` asks `/api/health` and `/api/health/db` once a second and prints each answer, marking any that is not 200 (`DROP`) or slower than 3 s, then a summary. Start it before approving a deploy and leave it until the deploy finishes. Record the result in [[017-release-and-deployment-strategy]]: if nothing dropped, say so; if something did, add a startup probe on `/api/health/db` to the deploy and measure again.

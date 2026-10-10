@@ -5,12 +5,12 @@ _Last reviewed 2026-10-09. About 150 files in this folder; roughly 100 are gener
 1. [[iron-log/docs/architecture/Iron Log Design Mind Map.canvas|Design mind map]] (`architecture/Iron Log Design Mind Map.canvas`): the whole design on one page, links out to everything below.
 2. [[iron-log/docs/backlog|backlog]]: source of truth for intent and what is next (Phase F follow-ups and security follow-ups at the top).
 3. [[iron-log/docs/feature-map|feature map]]: what the app does, where it lives in code, and the 21-entry conflict register. Read the conflicts before touching the board, log or imports.
-4. [[iron-log/docs/architecture/stack-walkthrough|stack walkthrough]]: all 16 backend decisions in one table, plus cross-cutting obligations.
+4. [[iron-log/docs/architecture/stack-walkthrough|stack walkthrough]]: all 16 backend decisions (ADR 017, release strategy, is newer) in one table, plus cross-cutting obligations.
 5. [[iron-log/docs/deploy-runbook|deploy runbook]]: how production runs (Cloud Run + Neon), who does which step.
 
 ## Read when you touch...
 - **Data or sync:** [[iron-log/docs/backend-data-rules|backend data rules]], [[iron-log/docs/data-model/iron-log|data model]], [[iron-log/docs/architecture/failure-modes/sync|sync failure modes]].
-- **A backend decision:** ADRs in `architecture/decisions/` (001 to 016); start with 003 (sync), 004 (auth), 009 (data access). [[iron-log/docs/build-spec|build spec]] links them all.
+- **A backend decision:** ADRs in `architecture/decisions/` (001 to 017); start with 003 (sync), 004 (auth), 009 (data access). [[iron-log/docs/build-spec|build spec]] links them all.
 - **Security:** [[iron-log/docs/security-audit/README|security audit README]] then [[iron-log/docs/security-audit/run-1/REPORT|run-1 REPORT]]; open leads in `NEEDS-VALIDATION.md`.
 - **Feature flags:** [[iron-log/docs/feature-flags|feature flags]].
 - **Tests:** [[iron-log/docs/playwright-implementation|Playwright guide]].
