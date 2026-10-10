@@ -123,6 +123,15 @@ Every cost decision in the project is tracked in [[paid-options]]; this table is
 ## Rate limiter and client IPs
 
 The login limiter keys on `request.client.host`. `Caddyfile.prod` trusts `X-Forwarded-For` from
-private ranges and `compose.prod.yaml` sets `FORWARDED_ALLOW_IPS="*"`, so uvicorn sees the real
-visitor. That `"*"` is only safe because the backend publishes no port — do not add a `ports:`
-entry to `backend`. Limiter state is in memory, so restarting the backend resets the counters.
+private ranges and `compose.prod.yaml` sets `FORWARDED_ALLOW_IPS` to the private ranges
+(`10.0.0.0/8,172.16.0.0/12,192.168.0.0/16,127.0.0.1`), so uvicorn walks the header right to left
+and takes the first non-private address: the visitor address Cloudflare appended.
+
+**Not `"*"`** (changed 2026-10-10, found by the codebase audit): with `"*"` uvicorn takes the
+*leftmost* entry, which the visitor controls, so a rotating `X-Forwarded-For` gave every login
+attempt a fresh bucket. `tests/test_rate_limit.py` pins the value. Do not add a `ports:` entry to
+`backend`. Limiter state is in memory (restart resets it); idle clients are swept once the table
+passes 1000 keys.
+
+Still to verify after the next prod deploy (needs an explicit "deploy to prod"): send 11 logins
+with varying `X-Forwarded-For` through the tunnel and confirm the 11th gets a 429.
