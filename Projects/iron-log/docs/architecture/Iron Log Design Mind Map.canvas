@@ -54,7 +54,8 @@
 		{"id":"l3n2","type":"text","text":"[[sync|Failure-mode register]]: FM-01…24, hub is FM-02 (queue drops a write)","x":-1030,"y":1218,"width":360,"height":114,"color":"6"},
 		{"id":"l3n3","type":"text","text":"Reconciliation invariant: after flush + pull, phone rows == server rows; ≤1 check-off per card & week","x":-1030,"y":1362,"width":360,"height":114,"color":"6"},
 		{"id":"l3n4","type":"text","text":"Docs: [[Projects/iron-log/docs/architecture/stack-walkthrough|stack walkthrough]] · [[build-spec|build spec]] · [[Projects/iron-log/docs/backlog|backlog]]","x":-1030,"y":1506,"width":360,"height":140,"color":"6"},
-		{"id":"l2n5","type":"text","text":"Release strategy: staging, then no-traffic revision, then approved promote ([[017-release-and-deployment-strategy|ADR 017]])","x":-1420,"y":418,"width":360,"height":128,"color":"2"}
+		{"id":"l2n5","type":"text","text":"Release strategy: staging, then no-traffic revision, then approved promote ([[017-release-and-deployment-strategy|ADR 017]])","x":-1420,"y":418,"width":360,"height":128,"color":"2"},
+		{"id":"l2n6","type":"text","text":"App updates: a waiting version applies itself when the app is idle (no timer, sheet, import, unsaved write, typing); banner while busy ([[018-auto-apply-updates-when-idle|ADR 018]])","x":-1810,"y":418,"width":360,"height":128,"color":"2"}
 	],
 	"edges":[
 		{"id":"e-r0","fromNode":"center","fromSide":"right","toNode":"r0","toSide":"left","color":"4"},
@@ -110,6 +111,7 @@
 		{"id":"e-l3n2","fromNode":"l3","fromSide":"left","toNode":"l3n2","toSide":"right","color":"6"},
 		{"id":"e-l3n3","fromNode":"l3","fromSide":"left","toNode":"l3n3","toSide":"right","color":"6"},
 		{"id":"e-l3n4","fromNode":"l3","fromSide":"left","toNode":"l3n4","toSide":"right","color":"6"},
-		{"id":"e-l2n5","fromNode":"l2n2","fromSide":"left","toNode":"l2n5","toSide":"right","color":"2"}
+		{"id":"e-l2n5","fromNode":"l2n2","fromSide":"left","toNode":"l2n5","toSide":"right","color":"2"},
+		{"id":"e-l2n6","fromNode":"l2n5","fromSide":"left","toNode":"l2n6","toSide":"right","color":"2"}
 	]
 }

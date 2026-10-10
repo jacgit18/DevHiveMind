@@ -18,7 +18,7 @@ _Last reviewed 2026-10-10. Classes are in `src/styles.css`; React files under `s
 | Charts | `LineChart.jsx`, `Trends.tsx` | one line per phase, tooltip on hover/focus |
 | Muscle map | `Muscles.jsx` | front/back, shaded by `--m0..m4`, selected muscle |
 | Progress bar | `.bar` | goal progress |
-| Banners | `UpdateBanner.tsx`, `SyncNotice.tsx` | update ready, sync error/quarantined |
+| Banners | `UpdateBanner.tsx`, `SyncNotice.tsx` | update ready (auto-applied when idle; banner while busy), sync error/quarantined |
 | First-run | `FirstRun.tsx`, `StretchFirstRun.tsx`, `Landing.tsx` | new account only |
 
 Loading: the view renders only when `ready` (Settings excepted); no skeletons.

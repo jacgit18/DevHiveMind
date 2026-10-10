@@ -343,8 +343,7 @@ with no data is handed to the new account silently. Conflicts: none with the boa
 
 ### 1.26 PWA, updates, erase, appearance, accessibility
 
-- `lib/pwa.js`, `components/UpdateBanner.jsx` — installable, fully offline including Excel export; an update waits
-  behind a banner rather than reloading mid-workout.
+- `lib/pwa.ts`, `components/UpdateBanner.tsx`, `lib/updateIdle.ts` — installable, fully offline including Excel export; a new version is applied by itself once the app is idle (no timer, sheet, import, unsaved write or focused text field, 15 s without a tap; [[018-auto-apply-updates-when-idle|ADR 018]], audience: everyone), and waits behind a *Reload now / Later* banner while it is in use. Conflicts: none with the board/log write paths.
 - **Erase data** (Settings) wipes selected sections after a confirm tap; display options, the GitHub token and
   backups already made survive (`useAppStore.js:703–708`).
 - `lib/appearance.js` — light / dark / system, roomier text spacing.
