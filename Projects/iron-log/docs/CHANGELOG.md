@@ -2,6 +2,7 @@
 _Newest first. Grouped by date from merged PRs (#1 to #140, 2026-09-26 to 2026-10-09). Add an entry in the same PR as any change; use `git log --first-parent` for the full list._
 
 ## Unreleased
+- `npm run check` (`scripts/check.mjs`) runs only the checks that fit the changed files (docs: none; tests: test + lint; styles: e2e; source: typecheck + test + lint + build or e2e; sync/server: adds e2e:sync + db:check; unknown or config files: everything). `CLAUDE.md` Checks section rewritten to match; CI still runs everything.
 - Registry checks (`src/features.registry.test.ts`) and a PR audience check (`pr-audience.yml`); `feature-map.md` audience table is per feature.
 - PR template asks for the audience (admin or everyone); `feature-map.md` has an "Audience at a glance" table.
 - A feature name missing from the `FEATURES` registry is now hidden from everyone (was shown to everyone), so a forgotten line fails closed.
