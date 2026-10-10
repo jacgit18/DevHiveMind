@@ -6,7 +6,7 @@ Who does what: **you** do the steps that spend money, create accounts or touch s
 
 ## 0. Before you start
 
-- A card is needed on the Google billing account (ADR 010). Spend should stay at $0 at this scale: `max-instances=1`, `min-instances=0`, and a budget alert. **A budget alert warns, it does not stop spending**; the instance cap is what limits it.
+- A card is needed on the Google billing account (ADR 010). Spend should stay at $0 at this scale: `max-instances=1`, `min-instances=0`, and a budget alert. To avoid the cold start on the first request after idle, deploy with `MIN_INSTANCES=1` (one always-warm instance, a small monthly cost; not on by default). **A budget alert warns, it does not stop spending**; the instance cap is what limits it.
 - Neon production already holds migrations 001-009 and the `ironlog_app` role (no login yet). Check: `dbmate status` against the **unpooled** owner URL shows nine applied. Do **not** run `dbmate up` there again unless a new migration exists.
 - `gcloud` is installed and logged in as joshuaxcarpentier@gmail.com (`gcloud auth list`). Its default project is still the old `iron-log-spike`; the script always passes `--project`, so it does not matter.
 

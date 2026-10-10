@@ -388,3 +388,9 @@ Checked the backend, multi-user and personal-defaults items against the code and
 ## Review notes (2026-10-06, continued)
 
 - **Worth doing early because they are small and unblock other work:** sort in `normEntries` (fixes the `bestLift` date), the rest-timer 0 decision, and the personal-defaults list before any multi-user work.
+
+## Traffic follow-ups (2026-10-10)
+
+Left out of the traffic-hardening branch on purpose; do both together, only when a second instance is needed.
+- [ ] Shared rate-limit counters (Redis/Memorystore, or Cloud Armor) in place of the per-instance in-memory map in `server/rateLimit.ts`. Until then each instance counts alone and a restart resets the counters; with `max-instances=1` the limits are exact.
+- [ ] Raise `max-instances` (about 3) in `scripts/deploy-cloud-run.sh` once the counters are shared.

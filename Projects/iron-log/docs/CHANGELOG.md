@@ -2,6 +2,7 @@
 _Newest first. Grouped by date from merged PRs (#1 to #140, 2026-09-26 to 2026-10-09). Add an entry in the same PR as any change; use `git log --first-parent` for the full list._
 
 ## Unreleased
+- Traffic hardening (branch `f-traffic-hardening`): responses are compressed (gzip/brotli via `compression`); `/api/health/db` is limited to 30 a minute per address and reuses its answer for 5 s; the 19 command routes register through one `command()` helper in `server/app.ts` (no behavior change); the first refused call over a rate limit logs one `rate limited` line (route, ip or user, no address); `MIN_INSTANCES` env var sets Cloud Run min-instances in `deploy-cloud-run.sh` (default 0, unchanged).
 - `npm run check` (`scripts/check.mjs`) runs only the checks that fit the changed files (docs: none; tests: test + lint; styles: e2e; source: typecheck + test + lint + build or e2e; sync/server: adds e2e:sync + db:check; unknown or config files: everything). `CLAUDE.md` Checks section rewritten to match; CI still runs everything.
 - Registry checks (`src/features.registry.test.ts`) and a PR audience check (`pr-audience.yml`); `feature-map.md` audience table is per feature.
 - PR template asks for the audience (admin or everyone); `feature-map.md` has an "Audience at a glance" table.
