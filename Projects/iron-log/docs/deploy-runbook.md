@@ -172,3 +172,11 @@ The manual command (`scripts/deploy-cloud-run.sh deploy`) keeps working, for eme
 ## 11. Measuring dropped requests during a deploy (added 2026-10-09)
 
 `scripts/deploy-probe.sh <service address> [seconds]` asks `/api/health` and `/api/health/db` once a second and prints each answer, marking any that is not 200 (`DROP`) or slower than 3 s, then a summary. Start it before approving a deploy and leave it until the deploy finishes. Record the result in [[017-release-and-deployment-strategy]]: if nothing dropped, say so; if something did, add a startup probe on `/api/health/db` to the deploy and measure again.
+
+## 12. Plans and the signup cap (added 2026-10-10, migration `20261010000001_users_plan`)
+
+- **Plan:** `users.plan` is `beta` (default; every existing account), `free` or `paid`. Nothing reads it yet. Change one by hand as the owner role: `update users set plan = 'free' where id = <id>;` (the API role cannot, like `is_admin`).
+- **Cap:** `SIGNUP_CAP` is the most accounts allowed (it counts `auth."user"`). Unset or empty means no cap. Emails in `ADMIN_EMAILS` may still sign up past it. Someone who already has an account always signs in. A bad value (not a whole number) turns sign-in off and logs why, so check the log after changing it. The count and insert are not one step, so two people at the same instant can overshoot by one.
+- **Set it** on the service, no rebuild: `gcloud run services update iron-log --region <region> --update-env-vars SIGNUP_CAP=25` (it makes a new revision; shows up as `sign-up refused: account cap reached` in the log when hit). Remove with `--remove-env-vars SIGNUP_CAP`.
+- **Not verified:** what the person sees when Google sign-in is refused (Better Auth's error page). Try it once with a second Google account on staging or after setting the cap to the current count.
+

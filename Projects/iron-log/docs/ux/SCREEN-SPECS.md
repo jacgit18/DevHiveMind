@@ -25,4 +25,6 @@ Log sheet (one row per set, prefilled, "Same as last"), exercise, details, impor
 ## Landing / sign-in (`Landing.tsx`, `SignInCard.tsx`)
 Signed-out visitors: H1 "A weekly training board that remembers your lifts.", a lead paragraph, a primary "Sign in with Google" button (label becomes "Opening Google…" while busy), an offline notice (role=status) and an error notice (role=alert), a development-only "continue as the development user" button, legal links with "Free during the beta. For people aged 16 and over.", a screenshot (`picture`), a "What it does" list of five points, and a not-medical-advice / no-tracking statement. Loading state: "Loading…" (role=status).
 
+Below the "What it does" list, a **Plans** section (h2, `landing-plans` grid): three cards, Beta, Free and Paid, each with Price, Limits and Features. Everything is "TBD" except Beta's price ("Free during the beta"). Placeholder until the tiers are decided; the names match `users.plan`.
+
 Flows: [[USERFLOW|userflow]]. Parts: [[COMPONENTS|components]]. Screenshots: `images/`.
