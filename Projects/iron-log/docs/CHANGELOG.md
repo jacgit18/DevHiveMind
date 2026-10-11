@@ -2,6 +2,7 @@
 _Newest first. Grouped by date from merged PRs (#1 to #140, 2026-09-26 to 2026-10-09). Add an entry in the same PR as any change; use `git log --first-parent` for the full list._
 
 ## Unreleased
+- Ops (no code): Neon restore and failing-migration rehearsal done on a scratch branch (FM-20, FM-21, FM-24), written up in [[deploy-runbook]] section 13. Merged branches cleaned up (26 local, 21 remote; names in `restore_local.txt` and `restore_remote.txt`).
 - Plan column and signup cap (branch `f-plan-and-signup-cap`, **no UI**): `users.plan` (`beta` default, `free`, `paid`; migration `20261010000001`) and a `SIGNUP_CAP` environment variable: once that many accounts exist a new Google account is refused (admins and existing accounts are not). Unset means no cap. See [[deploy-runbook]] section 12. The landing page gets a **Plans** section (Beta, Free, Paid) with price, limits and features all TBD, for everyone.
 - Two data bugs fixed (branch `f-data-bugs-sort-csv`): `normEntries` now sorts entries oldest first, so `bestLift` reports the first date a weight was lifted even after a JSON replace import or a database snapshot; CSV export prefixes `'` to text cells starting with `=`, `+`, `-`, `@`, tab or CR (numbers untouched), and CSV import strips it again.
 - Send feedback panel in Settings, **everyone** (app-wide feedback for the alpha): an *Open feedback form* link to a Google Form (hidden until `FEEDBACK_FORM_URL` is set). No server change.

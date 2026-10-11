@@ -180,3 +180,12 @@ The manual command (`scripts/deploy-cloud-run.sh deploy`) keeps working, for eme
 - **Set it** on the service, no rebuild: `gcloud run services update iron-log --region <region> --update-env-vars SIGNUP_CAP=25` (it makes a new revision; shows up as `sign-up refused: account cap reached` in the log when hit). Remove with `--remove-env-vars SIGNUP_CAP`.
 - **Not verified:** what the person sees when Google sign-in is refused (Better Auth's error page). Try it once with a second Google account on staging or after setting the cap to the current count.
 
+## 13. Restore and failing-migration rehearsal (done 2026-10-10; FM-20, FM-21, FM-24)
+
+On a Neon branch `rehearsal-2026-10-10` made from `production` (deleted afterwards):
+- **Restore:** row counts of all 11 tables (users, auth.user, log_entries, programs, weeks, config, body_entries, stretch_weeks, list_items, library_items, schema_migrations) matched production exactly. A Neon branch is the fastest restore path inside the 6-hour history window; past it, use the nightly dump (section 7, `restore-check.sh`).
+- **Failing migration:** `dbmate up` with the real `20261010000001_users_plan` followed by a migration that adds a column and then divides by zero. The plan migration stayed applied; the failing one left **nothing**: no column, no `schema_migrations` row. Each dbmate migration is its own transaction. **Watch out:** dbmate prints `Applied: <file>` *before* the `Error:` line for the failing file; trust the error and `dbmate status`, not that line.
+- **Rollback path:** `dbmate rollback` removed `users.plan` cleanly, and `up` re-applied it; row counts unchanged, every account `beta`.
+- Script used: build the branch URL from `.env`'s `DATABASE_URL_UNPOOLED` with the branch's host swapped in (never print it), copy `db/migrations` to a temp dir, add the failing file there, run `dbmate status / up / rollback / up`.
+- Repeat before any migration that changes or drops data, and every few months.
+

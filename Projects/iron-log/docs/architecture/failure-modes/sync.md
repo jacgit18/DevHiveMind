@@ -21,8 +21,8 @@ Date: 2026-10-06. Mode: register only (no sign-off gate, no acceptance log). Fee
 | FM-22 | C10 | Operational | No server logging or error reporting; sync bugs fail silently; amplifies every other row | 4 | 4 | Red | No |
 | FM-01 | C2 | Availability | iOS Safari evicts storage for a non-installed PWA (verify); unsynced workouts vanish | 5 | 2 | Amber | No |
 | FM-10 | I7 | Functional | Legacy `k`+hash id plus content-match rule drops a genuine second identical session on import | 5 | 2 | Amber | No |
-| FM-20 | C8 | Operational | Neon free restore window short (verify); corruption found after it is unrecoverable | 5 | 2 | Amber | No |
-| FM-21 | I8 | Operational | Half-applied or destructive migration, no rollback because the schema moved forward | 5 | 2 | Amber | No |
+| FM-20 | C8 | Operational | Neon free restore window short (verify); corruption found after it is unrecoverable | 5 | 2 | Amber | Rehearsed 2026-10-10 ([[deploy-runbook]] §13) |
+| FM-21 | I8 | Operational | Half-applied or destructive migration, no rollback because the schema moved forward | 5 | 2 | Amber | Rehearsed 2026-10-10 ([[deploy-runbook]] §13) |
 | FM-23 | C1 | Human | Phone unattended with unsynced data, user unaware, device lost; backlog step 4 removes the JSON export, the last escape hatch | 5 | 2 | Amber | Partly |
 | FM-03 | I1 | Integration | Cached old PWA sends old shape to newer API; unknown fields dropped; row rewritten without a new field | 4 | 3 | Amber | No |
 | FM-06 | C4/C5 | Consistency | Per-row versions do not cover cross-row rules (one check-off per card and week; hand-logged replaces check-off); two offline devices tick the same card, one write refused | 4 | 3 | Amber | No |
@@ -32,7 +32,7 @@ Date: 2026-10-06. Mode: register only (no sign-off gate, no acceptance log). Fee
 | FM-11 | I7 | Functional | Upload run twice or from two devices; server-now stamps order wrongly against real edits | 4 | 2 | Amber | No |
 | FM-13 | C1/C5 | Functional | lb/kg toggle ships before a stored unit exists; units mix silently | 4 | 2 | Amber | No |
 | FM-18 | C4/C7 | Security | DB URL or key in repo, image or logs; body weight in logs | 4 | 2 | Amber | No |
-| FM-24 | C9 | Human | One maintainer; restore never rehearsed | 4 | 2 | Amber | No |
+| FM-24 | C9 | Human | One maintainer; restore never rehearsed | 4 | 2 | Amber | Rehearsed 2026-10-10 ([[deploy-runbook]] §13) |
 | FM-12 | C1 | Functional | Week derived from phone local date; travel or post-midnight log lands in the wrong week and trips check-off uniqueness | 3 | 3 | Amber | No |
 | FM-14 | C5/C7 | Performance | Neon cold start, CU-hour cap (verify) or sleeping free host; sync stalls, phone still works | 3 | 3 | Amber | No |
 | FM-16 | I5 | Dependency | Token expires during 2 days offline, or auth provider down; writes 401; feeds FM-02 | 3 | 3 | Amber | Partly |
