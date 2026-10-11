@@ -18,6 +18,7 @@ _Last reviewed 2026-10-10. Classes are in `src/styles.css`; React files under `s
 | Charts | `LineChart.jsx`, `Trends.tsx` | one line per phase, tooltip on hover/focus |
 | Muscle map | `Muscles.jsx` | front/back, shaded by `--m0..m4`, selected muscle |
 | Progress bar | `.bar` | goal progress |
+| Grocery list (admin only) | `components/grocery/Grocery.tsx` | month nav, store cards, rows (tick, count, price, total), occasional card, edit mode (add item, stores) |
 | Banners | `UpdateBanner.tsx`, `SyncNotice.tsx` | update ready (auto-applied when idle; banner while busy), sync error/quarantined |
 | First-run | `FirstRun.tsx`, `StretchFirstRun.tsx`, `Landing.tsx` | new account only |
 

@@ -7,8 +7,8 @@ _Last reviewed 2026-10-10. Phone = ≤700px. Every screen also has a dark theme 
 - **Also:** rest-day checkbox, swap arrows, + Add exercise, experiments list, notices (clash, leftovers).
 - **Empty/first run:** first-run prompt; no board until loaded.
 
-## Daily (`Daily.jsx`)
-Stretches (`Stretches.tsx`: weekly grid, warm-up, own experiments), Supplements (water log: size buttons, goal bar, last 7 days, hot day), Medical (placeholder only: a heading and "Nothing here yet"; layout to be decided when there is data to track). Main action: tick a stretch or add water.
+## Daily (`Daily.tsx`)
+Stretches (`Stretches.tsx`: weekly grid, warm-up, own experiments), Supplements (water log: size buttons, goal bar, last 7 days, hot day), Medical (placeholder only: a heading and "Nothing here yet"; layout to be decided when there is data to track), Groceries (admin only, first button of the row, `Grocery.tsx`: month arrows, summary line, one card per store with tick / count / price / total rows, an Occasional card, Edit for adding items and stores; phone: the count and price wrap onto a second line under the name). Main action: tick a stretch or add water.
 
 ## Progress (`Progress.tsx`, `Trends.tsx`, `LiftGoal.tsx`)
 Headline numbers, sets per week, weight change by exercise, muscle-by-week heatmap, per-lift chart, body weight goal, lift goals. Main action: open a lift and set a goal. Phone: single column.

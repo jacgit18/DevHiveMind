@@ -15,7 +15,7 @@ Rest day checkbox (moves later days) · swap arrows (neighbour days) · move a c
 Progress tab → headline numbers → lift list (stall tags) → tap a lift for its chart and weight goal → body weight goal. Muscles heatmap by week.
 
 ## 5. Daily extras
-Daily tab → Stretches (tick routine), Supplements (water log, hot day / training minutes raise the goal), Medical.
+Daily tab → Stretches (tick routine), Supplements (water log, hot day / training minutes raise the goal), Medical, Groceries (admin only: tick items by store, set count and price, see the month's totals; each month starts again with the same items; occasional items are added when needed).
 
 ## 6. Program editing
 Program tab → editor (add, reorder, remove exercises; superset or either/or) → exercise library (search, filter, edit details) → saved versions.

@@ -21,6 +21,7 @@ _Last reviewed 2026-10-10. Index of the decision records. Agents: read the ADR b
 | [[016-new-account-starting-state\|016]] | New accounts | Start blank, no owner defaults |
 | [[017-release-and-deployment-strategy\|017]] | Releases | Staging, no-traffic candidate, smoke, promote, approval |
 | [[018-auto-apply-updates-when-idle\|018]] | App updates | Apply a waiting update by itself when idle; banner as fallback |
+| [[019-grocery-list-device-only\|019]] | Grocery list | Admin-only, device-only first; month derived from the catalogue |
 
 Not ADRs: TypeScript-only for new code ([[typescript-migration|migration notes]]); GitHub Pages deploy retired 2026-10-09 (no users).
 All 16 backend decisions with alternatives: [[Projects/iron-log/docs/architecture/stack-walkthrough|stack walkthrough]].

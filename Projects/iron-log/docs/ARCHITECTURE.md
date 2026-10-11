@@ -13,7 +13,7 @@ phone PWA ──queue/replay──▶ Cloud Run (Express: /api commands + one pu
 ## Where things live
 | Path | What |
 |---|---|
-| `src/components/` | UI by tab: board, stretches, supplements, progress, muscles, program, settings, sheets |
+| `src/components/` | UI by tab: board, stretches, supplements, grocery, progress, muscles, program, settings, sheets |
 | `src/store/` | zustand store and slices (`AppState` in `src/store/types.ts`) |
 | `src/lib/` | pure logic: targets, stalls, planning/reorder, trends, export/import, validation |
 | `src/sync/` | client sync: persisted queue, replay, conflicts, refused-write quarantine |

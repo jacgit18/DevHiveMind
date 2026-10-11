@@ -59,7 +59,8 @@ Who sees each feature. **Public** means no flag: every user. **Admin** means `'a
 | 1.26 PWA, updates, erase, appearance, accessibility | Public | none |
 | 1.25 Storage, offline and sync | Public on Cloud Run (syncing on); the build-time flag `VITE_API_SYNC` / `ironlog:flag:apiSync` is separate (1.27) | `apiSync` |
 | Account pages: sign-in, landing page, delete my data, blank start and first-run prompt | Public | none |
-| **Admin-only features** | **None at the moment** | (`FEATURES` is empty) |
+| 1.28 Grocery list (Daily tab) | **Admin** | `grocery` |
+| **Admin-only features** | **Groceries (1.28)** | `grocery` in `FEATURES` |
 
 ### 1.1 The weekly board
 
@@ -360,7 +361,17 @@ In a development build there is no dev user until you choose one (landing page s
 is trusted and the stand-in storage goes (backlog step 4). `window.claude` (the host database) still takes precedence over
 the flag, and `mcp` for the backup path (1.23) is capability detection, not a flag.
 
-**Admin-only features (2026-10-09):** `src/features.ts` lists features by audience (`admin`, `all`, `off`); `useFeature(name)` is the check. An admin is an account on the server's `ADMIN_EMAILS` list; `/api/me` returns `account.isAdmin`; `server/admin.ts` has `requireAdmin` for routes. No feature is registered yet, so nothing visible changes. Details in [[feature-flags]]. Conflicts: none with the board/log write paths.
+**Admin-only features (2026-10-09):** `src/features.ts` lists features by audience (`admin`, `all`, `off`); `useFeature(name)` is the check. An admin is an account on the server's `ADMIN_EMAILS` list; `/api/me` returns `account.isAdmin`; `server/admin.ts` has `requireAdmin` for routes. One feature is registered: `grocery` (1.28). Details in [[feature-flags]]. Conflicts: none with the board/log write paths.
+
+### 1.28 Grocery list (Daily tab, admin only, device-only)
+
+Daily → **Groceries** (`components/grocery/Grocery.tsx`, store in `store/grocerySlice.ts`, pure logic in `lib/grocery.ts`, [[019-grocery-list-device-only|ADR 019]]). Audience: **admin** (`grocery` in `FEATURES`); no API route, so no `requireAdmin`.
+- **Catalogue** (`grocery/main`): stores in order, items `{id, n, store, qty, cents, once}`. **Month** (`grocery/YYYY-MM`): `lines {id: {got, qty, cents}}`, `pulled [id]`. Both stay in the browser's storage and are not in the sync (`parsePath` is null for them). A month with no document is the regular items, nothing ticked: that is the monthly refresh.
+- Rows are grouped by store (then *Anywhere*); each has a tick, a count, a unit price and the line total. The summary line gives got of count, spent, expected and items without a price; each store card shows its own. Month arrows go back (never past this month). Groceries is the first button of the Daily section row; Supplements still opens first. Store drop-downs offer your stores, then suggested ones not yet used (`SUGGESTED_STORES`).
+- *Edit* adds items (name, store, count, price, occasional), renames, moves between stores, removes, and manages stores (a store goes only when empty). **Occasional** items are not on a month's list; *Add to this month* pulls one on, *Take off* removes it.
+- A price typed in the current month becomes the item's usual price; an old month's edit does not. Ticking records the count and price paid in that month. Totals use whole cents.
+- In the data file (`grocery`, left out when empty), import (Add keeps what is here; Replace matches the file) and both backups. *Delete my data* clears the device's list.
+- Conflicts: none with the board/log write paths. With syncing on, the list is per device (a phone and a laptop differ until the follow-up in backlog adds sync).
 
 ---
 
