@@ -339,7 +339,7 @@ From a review of the current screens. None of these are committed to: pick what 
 ## Anytime
 
 #todo/project/priority/Low
-- [ ] Add a link to a Google feedback form in Settings.
+- [x] Add a link to a Google feedback form in Settings. Done on `f-feedback-form` (PR 160): *Send feedback* panel in Settings for everyone, opening a Google Form.
 
 ### TypeScript migration (leftovers; the main work is done, see [[typescript-migration]])
 

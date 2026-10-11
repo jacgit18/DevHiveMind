@@ -60,6 +60,7 @@ Who sees each feature. **Public** means no flag: every user. **Admin** means `'a
 | 1.25 Storage, offline and sync | Public on Cloud Run (syncing on); the build-time flag `VITE_API_SYNC` / `ironlog:flag:apiSync` is separate (1.27) | `apiSync` |
 | Account pages: sign-in, landing page, delete my data, blank start and first-run prompt | Public | none |
 | 1.28 Grocery list (Daily tab) | **Admin** | `grocery` |
+| 1.29 Send feedback (Settings) | Public | none |
 | **Admin-only features** | **Groceries (1.28)** | `grocery` in `FEATURES` |
 
 ### 1.1 The weekly board
@@ -396,6 +397,11 @@ Daily → **Groceries** (`components/grocery/Grocery.tsx`, store in `store/groce
 
 Status key: **by design** (resolved, rule written down) · **open** (known, unfixed) · **watch** (works now, will
 break under a planned change).
+
+
+### 1.29 Send feedback (Settings, everyone)
+
+Settings → **Send feedback** (`components/settings/FeedbackPanel.tsx`, left column under *App on this device*). Audience: **everyone** (no flag); no API route. **Open feedback form** is a link (`FEEDBACK_FORM_URL` in `lib/feedback.ts`, https only) to a Google Form that opens in a new tab; the panel stays hidden while the URL is empty. Answers live in Google Forms, not in the app, and nothing is sent by the app. Conflicts: none.
 
 ### C1 — Rest days vs. moved cards vs. day 7 · by design
 Adding a rest day shifts later columns right, which can push a moved card past column 7. `restBlocked` refuses the

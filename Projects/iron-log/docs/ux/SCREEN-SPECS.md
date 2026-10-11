@@ -17,7 +17,7 @@ Headline numbers, sets per week, weight change by exercise, muscle-by-week heatm
 Day-by-day editor for programs A and B, exercise/stretch/supplement libraries (search, filter), saved versions, new program sheet. Main action: edit an exercise.
 
 ## Settings (`Settings.tsx`)
-Panels: account, sync status, export/upload, appearance, app install, timers, 1RMs, erase / delete my data. Grid stacks under 900px. Main action: export or sign in/out. Always available, even while loading.
+Panels: account, sync status, export/upload, appearance, app install, send feedback (a Google Form link), timers, 1RMs, erase / delete my data. Grid stacks under 900px. Main action: export or sign in/out. Always available, even while loading.
 
 ## Sheets (modals)
 Log sheet (one row per set, prefilled, "Same as last"), exercise, details, import review, new program, stretch/supplement, tag, help. Layout: centered ≤480px (bottom-aligned on phone), 18px padding. Main action: Save; Esc/scrim closes.
