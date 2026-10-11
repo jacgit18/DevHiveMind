@@ -370,7 +370,7 @@ Daily → **Groceries** (`components/grocery/Grocery.tsx`, store in `store/groce
 - Rows are grouped by store (then *Anywhere*); each has a tick, a count, a unit price and the line total. The summary line gives got of count, spent, expected and items without a price; each store card shows its own. Month arrows go back (never past this month). Groceries is the first button of the Daily section row; Supplements still opens first. Store drop-downs offer your stores, then suggested ones not yet used (`SUGGESTED_STORES`).
 - *Edit* adds items (name, store, count, price, occasional), renames, moves between stores, removes, and manages stores (a store goes only when empty). **Occasional** items are not on a month's list; *Add to this month* pulls one on, *Take off* removes it.
 - A price typed in the current month becomes the item's usual price; an old month's edit does not. Ticking records the count and price paid in that month. Totals use whole cents.
-- In the data file (`grocery`, left out when empty), import (Add keeps what is here; Replace matches the file) and both backups. *Delete my data* clears the device's list.
+- In the data file (`grocery`, left out when empty, and only for an admin), import (Add keeps what is here, matching items by name and store and mapping the file's month lines to them; Replace matches the file) and both backups. *Delete my data* clears the device's list, and so does the device being handed to another account (a plain sign-out and back in as the same account keeps it).
 - Conflicts: none with the board/log write paths. With syncing on, the list is per device (a phone and a laptop differ until the follow-up in backlog adds sync).
 
 ---
